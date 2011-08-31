@@ -1,0 +1,233 @@
+---
+DOWNLOAD_VERSION: 0.3.24
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bitcoin - P2P digital currency</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- scripting -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="lib/app.js"></script>
+
+
+    <!-- stylesheet -->
+    <link rel="stylesheet/less" href="lib/bootstrap.less">
+    <script src="lib/less.js"></script>
+
+    <!-- fav and touch icons -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <h3><a href="#"><img src="img/logo_small.png" id="thelogo"/>Bitcoin</a></h3>
+          <ul>
+            <li class="active"><a href="#masthead">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="masthead">
+      <div class="inner">
+        <div class="container">
+
+          <div class="row">
+              <div class="span11 primarybox">
+                <h1>Bitcoin <small>P2P Digital Currency</small></h1>
+                <p>
+                  Bitcoin is a peer-to-peer digital currency <a href="bitcoin.pdf">created in 2009 by Satoshi Nakamoto</a>.
+                  Peer-to-peer means that no central authority issues new money or manages transactions&mdash;these tasks are carried out collectively by the network.
+                  It is also the name of the open source software designed in order to use this currency.
+                </p>
+                <p>The <a href="https://en.bitcoin.it/wiki/Original_Bitcoin_client">software</a> is a community-driven open source project, released under the <a href="http://creativecommons.org/licenses/MIT/">MIT license</a>.</p>
+                <p>
+                  <a class="btn primary large" href="http://www.weusecoins.com/">Learn how to use Bitcoin &raquo;</a>
+                  &nbsp; &nbsp; &nbsp; &nbsp;
+                  <a class="btn primary large" href="#about">Learn about Bitcoin's technology &raquo;</a>
+                </p>
+              </div>
+
+              <div class="span5">
+                <section id="download">
+                  <h2>Download</h2>
+
+                  <p>
+                     <strong>Latest version:</strong> {{ page.DOWNLOAD_VERSION }}
+                  </p>
+
+                  <ul class="unstyled">
+                    <li><a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ page.DOWNLOAD_VERSION }}/bitcoin-{{ page.DOWNLOAD_VERSION }}-win32.zip/download">
+                      <img src="img/ico-win.png" class="icon"/>Windows (zip)</a> <small>5.8MB</small>
+                    </li>
+                    <li><a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ page.DOWNLOAD_VERSION }}/bitcoin-{{ page.DOWNLOAD_VERSION }}-win32-setup.exe/download">
+                      <img src="img/ico-win.png" class="icon"/>Windows (exe)</a> <small>5.8MB</small>
+                    </li>
+                    <li><a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ page.DOWNLOAD_VERSION }}/bitcoin-{{ page.DOWNLOAD_VERSION }}-linux.tar.gz/download">
+                      <img src="img/ico-tux.png" class="icon"/>Linux</a> <small>9.8MB</small>
+                    </li>
+                    <li><a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ page.DOWNLOAD_VERSION }}/bitcoin-{{ page.DOWNLOAD_VERSION }}-macosx.zip/download">
+                      <img src="img/ico-osx-uni.png" class="icon">Mac OS X</a> <small>7.7MB</small>
+                    </li>
+                    <li>or get the <a href="https://github.com/bitcoin/bitcoin">source code</a> (GitHub)</li>
+                  </ul>
+                </section>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overview">
+      <div class="container main">
+        <div class="row">
+          <div class="span4">
+            <h2>Resources</h2>
+
+            <ul>
+              <li><a href="http://www.weusecoins.com">We Use Coins. Start here!</a></li>
+              <li><a href="https://bitcoin.it/wiki/FAQ">FAQ</a></li>
+              <li><a href="https://bitcoin.it/">Wiki / Help</a></li>
+              <li><a href="http://www.google.com/?q=bitcoin+forums#sclient=psy&hl=en&site=&source=hp&q=bitcoin+forums&btnK=Google+Search&aq=f&aqi=&aql=&oq=bitcoin+forums">Forums</a></li>
+              <li><a href="https://bitcoin.it/wiki/Trade">Sites That Accept Bitcoin</a></li>
+              <li><a href="https://en.bitcoin.it/wiki/Merchant_Howto">Merchant Howto</a></li>
+              <li><a href="http://bitcoincharts.com/">Bitcoin Charts / Markets</a></li>
+            </ul>
+          </div>
+          <div class="span6">
+            <h2>Developers</h2>
+
+            <ul>
+              <li>Satoshi Nakamoto</li>
+              <li>Gavin Andresen - <img class="email" src="img/gavin.png"/> (<a href="/gavinandresen.txt">PGP</a>)</li>
+              <li>Amir Taaki - <img class="email" src="img/genjix.png"/> (<a href="/genjix.gpg">PGP</a>)</li>
+              <li>Pieter Wuille</li>
+              <li>Nils Schneider - <a href="mailto:nils.schneider@gmail.com">nils.schneider@gmail.com</a></li>
+              <li>Jeff Garzik - <a href="mailto:jgarzik@exmulti.com">jgarzik@exmulti.com</a> (<a href="jgarzik-exmulti.asc">PGP</a>)</li>
+            </ul>
+         </div>
+
+        <div class="span6">
+            <h2>Community</h2>
+            <ul>
+              <li>Visit the unofficial <a
+              href="http://www.google.com/?q=bitcoin+forums#sclient=psy&hl=en&site=&source=hp&q=bitcoin+forums&btnK=Google+Search&aq=f&aqi=&aql=&oq=bitcoin+forums">Bitcoin Forums</a></li>
+              <li>Join the project's lively IRC channels on the <a href="http://freenode.net/">FreeNode</a> network or use the <a href="http://webchat.freenode.net/?channels=bitcoin&uio=d4">FreeNode Web IRC</a>.
+                <ul>
+                  <li><strong>#bitcoin</strong> (General Bitcoin-related)</li>
+                  <li><strong>#bitcoin-dev</strong> (Development and technical)</li>
+                  <li><strong>#bitcoin-otc-foyer</strong>  (Over The Counter exchange)</li>
+                  <li><strong>#bitcoin-market</strong> (Live quotes from markets)</li>
+                  <li><strong>#bitcoin-mining</strong> (GPU mining related)</li>
+                </ul>
+              </li>
+              <li><a href="http://twitter.com/#!/search/bitcoin">Twitter Search</a></li>
+              <li><a href="https://www.facebook.com/pages/Bitcoin-P2P-Cryptocurrency/134466763256650">Facebook Page</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div> <!-- /container -->
+
+    </div> <!-- /overview -->
+
+    <div class="container">
+      <section id="about">
+        <h1>About Bitcoin</h1>
+        <div class="row">
+          <div class="span10">
+            <h2>Introduction</h2>
+
+            <p>Bitcoin is one of the first implementations of a concept called crypto-currency, which was first described in 1998 by Wei Dai on the cypherpunks mailing list. Building upon the notion that money is any object, or any sort of record, accepted as payment for goods and services and repayment of debts in a given country or socio-economic context, Bitcoin is designed around the idea of using cryptography to control the creation and transfer of money, rather than relying on central authorities.</p>
+
+          </div>
+
+          <div class="span6">
+            <h2>Technology</h2>
+
+            <p>If you are interested to learn more about the technical details of Bitcoin it is recommended to start with these documents:</p>
+
+            <ul>
+              <li><a href="bitcoin.pdf">Bitcoin: A Peer-to-Peer Electronic Cash System</a></li>
+              <li><a href="https://en.bitcoin.it/wiki/Protocol_rules">Protocol rules</a></li>
+              <li><a href="https://en.bitcoin.it/wiki/Category:Technical">Bitcoin wiki</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="features">
+        <h1>Features</h1>
+
+        <div class="row">
+          <div class="span12">
+
+            <p>These are the basic features of any Bitcoin-like network.</p>
+
+            <ul>
+              <li>Bitcoins can be transferred between arbitary nodes on the network.</li>
+              <li>Transactions are irreversible.</li>
+              <li>Double spending is prevented by using a <a href="https://en.bitcoin.it/wiki/Block_chain">block chain</a>.</li>
+              <li>Transactions are broadcasted within seconds and <a href="https://en.bitcoin.it/wiki/FAQ#Why_do_I_have_to_wait_10_minutes_before_I_can_spend_money_I_received.3F">verified within 10 to 60 minutes</a>.</li>
+              <li>Transactions are received while the computer is turned off.</li>
+            </ul>
+
+            <h2>Economic rules</h2>
+
+            <p>These rules are enforced collectively by the network. While they will not change for Bitcoin, other digital currencies using Bitcoin's technology may change them to suit their needs.</p>
+
+            <ul>
+              <li>Hard limit of 20999999.97690000 Bitcoins.</li>
+              <li>Bitcoins are divisible to 8 decimal places yielding a total of approx. 21×10<sup>14</sup> currency units.</li>
+              <li>Transactions are cheap, and mostly free (<a href="https://en.bitcoin.it/wiki/Transaction_fees">Transaction fees</a>).</li>
+            </ul>
+
+            <h2>Features of the Bitcoin network</h2>
+
+            <p>The network is running for more than 32 months yielding to some impressive security features.</p>
+
+            <ul>
+              <li>Long block chain (more than 140.000 blocks) with lots of processing power securing transactions.</li>
+              <li>Only one major <a href="https://en.bitcoin.it/wiki/Incidents#Value_overflow">incident</a> (fixed in August 2010).</li>
+            </ul>
+
+          </div>
+
+          <div class="span4">
+          </div>
+
+      </section>
+    </div>
+
+    <div class="container">
+      <footer>
+        <div class="inner">
+            <p>
+              &copy; Bitcoin Project 2009&ndash;2011<br/>
+              Released under the <a href="http://creativecommons.org/licenses/MIT/">MIT license</a>
+            </p>
+          </div>
+      </footer>
+    </div>
+
+  </body>
+</html>
