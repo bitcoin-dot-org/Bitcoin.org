@@ -1,5 +1,7 @@
 ---
 DOWNLOAD_VERSION: 0.3.24
+ALERT_CLASS:
+ALERT:
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +52,11 @@ DOWNLOAD_VERSION: 0.3.24
     <div id="masthead">
       <div class="inner">
         <div class="container">
-
+          {% if page.ALERT %}
+            <div class="alert-message {{ page.ALERT_CLASS }}">
+              {{ page.ALERT }}
+            </div>
+          {% endif %}
           <div class="row">
               <div class="span11 primarybox">
                 <h1>Bitcoin <small>P2P Digital Currency</small></h1>
