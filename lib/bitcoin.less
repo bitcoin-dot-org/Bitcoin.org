@@ -12,9 +12,12 @@ img.icon {
   color: #fff;
 }*/
 
+body {
+  padding-top: 40px;
+}
+
 .overview {
   background: #f5f5f5;
-  padding-top: 2em;
   border-bottom: 1px solid #eee;
 }
 
@@ -24,21 +27,20 @@ img.icon {
   .well;
 }
 
+#masthead + div {
+  padding-top: 2em;
+}
+
 #masthead {
   #gradient > .vertical(#004D9F, #049CD9);
 
   .inner {
     box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.1);
     background-image: url(innerbg.png);
+    padding-top: 2em;
   }
 
   color: #fff;
-}
-
-#masthead {
-  .inner {
-    padding-top: 60px;
-  }
 
   .primarybox {
     p {
@@ -54,28 +56,28 @@ img.icon {
       }
     }
 
-		a {
-			font-weight: bold;
-			color: #fff;
+    a {
+      font-weight: bold;
+      color: #fff;
 
-			&:hover {
-				color: #fff;
-			}
-		}
+      &:hover {
+        color: #fff;
+      }
+    }
   }
 }
 
 footer {
   padding-bottom: 6em;
 
-	background: transparent url(../img/blockchain.png) right 10px no-repeat;
+  background: transparent url(../img/blockchain.png) right 10px no-repeat;
 }
 
 img.logo {
-	vertical-align: middle;
-	position: absolute;
-	left: -80px;
-	z-index: 100;
+  vertical-align: middle;
+  position: absolute;
+  left: -80px;
+  z-index: 100;
 }
 
 section {
@@ -83,10 +85,10 @@ section {
 }
 
 .right {
-	float: right;
+  float: right;
 }
 
 #thelogo {
-	vertical-align: top;
-	margin-right: 4px;
+  vertical-align: top;
+  margin-right: 4px;
 }

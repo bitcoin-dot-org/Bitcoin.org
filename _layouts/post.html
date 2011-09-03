@@ -1,0 +1,40 @@
+---
+layout: base
+---
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <h3><a href="/"><img src="/img/logo_small.png" id="thelogo"/>Bitcoin</a></h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="masthead">
+      <div class="inner">
+        <div class="container primarybox">
+          <h1>News</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span5">
+          <ul class="unstyled">
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              {{ post.date | date:"%Y-%m-%d" }}
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+        <div class="span11">
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+        </div>
+      </div>
+    </div>

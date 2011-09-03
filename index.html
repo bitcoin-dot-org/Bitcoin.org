@@ -1,47 +1,17 @@
 ---
+layout: base
+title: P2P digital currency
 DOWNLOAD_VERSION: 0.3.24
 ALERT_CLASS:
 ALERT:
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Bitcoin - P2P digital currency</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- scripting -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src="lib/app.js"></script>
-
-
-    <!-- stylesheet -->
-    <link rel="stylesheet/less" href="lib/bootstrap.less">
-    <script src="lib/less.js"></script>
-
-    <!-- fav and touch icons -->
-    <link rel="shortcut icon" href="favicon.ico">
-    <!--
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-    -->
-  </head>
-
-  <body>
-
     <div class="topbar">
       <div class="fill">
         <div class="container">
           <h3><a href="#"><img src="img/logo_small.png" id="thelogo"/>Bitcoin</a></h3>
           <ul>
             <li class="active"><a href="#masthead">Home</a></li>
+            <li><a href="#news">News</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#features">Features</a></li>
           </ul>
@@ -157,6 +127,14 @@ ALERT:
     </div> <!-- /overview -->
 
     <div class="container">
+      <section id="news">
+        <h1>News</h1>
+        {% for post in site.posts limit: 1 %}
+        <h2><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date:"%e %B %Y" }}</small></h2>
+        {{ post.content }}
+        {% endfor %}
+        <p><a class="btn" href="news.html">News archive</a></p>
+      </section>
       <section id="about">
         <h1>About Bitcoin</h1>
         <div class="row">
@@ -223,17 +201,3 @@ ALERT:
 
       </section>
     </div>
-
-    <div class="container">
-      <footer>
-        <div class="inner">
-            <p>
-              &copy; Bitcoin Project 2009&ndash;2011<br/>
-              Released under the <a href="http://creativecommons.org/licenses/MIT/">MIT license</a>
-            </p>
-          </div>
-      </footer>
-    </div>
-
-  </body>
-</html>
