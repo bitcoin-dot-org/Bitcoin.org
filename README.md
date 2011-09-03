@@ -23,3 +23,25 @@ ALERT: <strong>Security alert:</strong> Please upgrade to 0.3.25 as soon as poss
 
 
 will produce a red alert box. Possible classes are: error (red), info (blue), success (green) and warning (yellow)
+
+### Release Notes
+
+Release notes should be placed in `_posts/releases/YEAR-MONTH-DAY-SHORTTITLE.md` and adhere to this format:
+
+```
+---
+layout: post
+title: Bitcoin version 0.3.24 released
+src: http://sourceforge.net/mailarchive/message.php?msg_id=27771039
+---
+
+Bitcoin v0.3.24 is now available for download at
+<https://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.24/>
+
+...
+```
+* `SHORTTITLE` is used to construct the URL. Something like `v0.3.24` will be fine
+* `layout: post` important for Jekyll
+* `title: ...` will be used as the title
+* `src: ...` (optional) link to full annoucement
+
