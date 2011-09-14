@@ -14,6 +14,7 @@ ALERT:
             <li><a href="#news">News</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#features">Features</a></li>
+            <li><a href="#contributors">Contributors</a></li>
           </ul>
         </div>
       </div>
@@ -207,5 +208,19 @@ ALERT:
           <div class="span4">
           </div>
 
+      </section>
+
+      <section id="contributors">
+        <h1>Contributors <small>ordered by number of commits</small></h1>
+
+
+        <table class="unstyled">
+          <tr>
+            {% for c in site.project.contributors %}
+            <td>{{ c.name }} ({{ c.contributions }})</td>
+          {% cycle nil, nil, nil, nil, '</tr><tr>' %}
+            {% endfor %}
+          </tr>
+        </table>
       </section>
     </div>
