@@ -16,7 +16,7 @@ git pull origin master
 
 git reset --hard
 
-git clean -x -f
+git clean -x -f -d
 
 $JEKYLL
 
