@@ -45,3 +45,21 @@ Bitcoin v0.3.24 is now available for download at
 * `title: ...` will be used as the title
 * `src: ...` (optional) link to full annoucement
 
+### Aliases for contributors
+
+Aliases for contributors are defined in ```_config.yml```.
+
+```
+aliases:
+  s_nakamoto: Satoshi Nakamoto
+  --author=Satoshi Nakamoto: Satoshi Nakamoto
+  gavinandresen: Gavin Andresen
+```
+
+# Requirements
+
+These ruby gems are required to build the website:
+
+* jekyll
+* json
+* aquarium
