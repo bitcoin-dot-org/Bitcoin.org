@@ -1,0 +1,18 @@
+<div class="topbar">
+  <div class="fill">
+    <div class="container">
+      <h3><a href="/"><img src="img/logo_small.png" id="thelogo"/>Bitcoin</a></h3>
+      <ul>
+        {% for link in site.navigation %}
+        {% assign active = nil %}
+        {% if page.url == link.url or page.layout == link.layout %}
+          {% assign active = 'active' %}
+        {% endif %}
+        <li{% if active %} class="{{ active }}"{% endif %}>
+          <a href="{{ link.url }}">{{ link.text }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

@@ -39,6 +39,15 @@ kramdown:
     coderay_bold_every: 10
     coderay_css: style
 
+navigation:
+- text: News
+  url: /news.html
+  layout: post
+- text: About
+  url: /about.html
+- text: Features
+  url: /features.html
+
 aliases:
   s_nakamoto: Satoshi Nakamoto
   --author=Satoshi Nakamoto: Satoshi Nakamoto
