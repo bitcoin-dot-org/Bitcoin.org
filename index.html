@@ -1,5 +1,6 @@
 ---
-layout: base
+layout: index
+section: index
 title: P2P digital currency
 DOWNLOAD_VERSION: 0.3.24
 ALERT_CLASS:
@@ -25,7 +26,7 @@ ALERT:
                 <p>
                   <a class="btn primary large" href="http://www.weusecoins.com/">Learn how to use Bitcoin &raquo;</a>
                   &nbsp; &nbsp; &nbsp; &nbsp;
-                  <a class="btn primary large" href="#about">Learn about Bitcoin's technology &raquo;</a>
+                  <a class="btn large" href="/about.html">Learn more about Bitcoin &raquo;</a>
                 </p>
               </div>
 
@@ -33,31 +34,36 @@ ALERT:
                 <section id="download">
                   <h2>Download</h2>
 
-                  <p>
-                     <strong>Latest version:</strong> {{ page.DOWNLOAD_VERSION }}
-                  </p>
+                  <div>
 
-                  <ul class="unstyled">
-                    <li><a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ page.DOWNLOAD_VERSION }}/bitcoin-{{ page.DOWNLOAD_VERSION }}-win32.zip/download">
-                      <img src="img/ico-win.png" class="icon"/>Windows (zip)</a> <small>~6MB</small>
-                    </li>
-                    <li><a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ page.DOWNLOAD_VERSION }}/bitcoin-{{ page.DOWNLOAD_VERSION }}-win32-setup.exe/download">
-                      <img src="img/ico-win.png" class="icon"/>Windows (exe)</a> <small>~6MB</small>
-                    </li>
-                    <li><a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ page.DOWNLOAD_VERSION }}/bitcoin-{{ page.DOWNLOAD_VERSION }}-linux.tar.gz/download">
-                      <img src="img/ico-tux.png" class="icon"/>Linux (tgz, 32/64-bit)</a> <small>~10MB</small>
-                    </li>
-                    <li><a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ page.DOWNLOAD_VERSION }}/bitcoin-{{ page.DOWNLOAD_VERSION }}-macosx.zip/download">
-                      <img src="img/ico-osx-uni.png" class="icon">Mac OS X</a> <small>~8MB</small>
-                    </li>
-                    <li>or get the <a href="https://github.com/bitcoin/bitcoin">source code</a> (GitHub)</li>
-                  </ul>
+                    <p>
+                       <strong>Latest version:</strong> {{ page.DOWNLOAD_VERSION }}
+                    </p>
+
+                    <ul class="unstyled">
+                      <li><a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ page.DOWNLOAD_VERSION }}/bitcoin-{{ page.DOWNLOAD_VERSION }}-win32.zip/download">
+                        <img src="img/ico-win.png" class="icon"/>Windows (zip)</a> <small>~6MB</small>
+                      </li>
+                      <li><a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ page.DOWNLOAD_VERSION }}/bitcoin-{{ page.DOWNLOAD_VERSION }}-win32-setup.exe/download">
+                        <img src="img/ico-win.png" class="icon"/>Windows (exe)</a> <small>~6MB</small>
+                      </li>
+                      <li><a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ page.DOWNLOAD_VERSION }}/bitcoin-{{ page.DOWNLOAD_VERSION }}-linux.tar.gz/download">
+                        <img src="img/ico-tux.png" class="icon"/>Linux (tgz, 32/64-bit)</a> <small>~10MB</small>
+                      </li>
+                      <li><a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{ page.DOWNLOAD_VERSION }}/bitcoin-{{ page.DOWNLOAD_VERSION }}-macosx.zip/download">
+                        <img src="img/ico-osx-uni.png" class="icon">Mac OS X</a> <small>~8MB</small>
+                      </li>
+                      <li>or get the <a href="https://github.com/bitcoin/bitcoin">source code</a> (GitHub)</li>
+                    </ul>
+                  </div>
                 </section>
               </div>
           </div>
         </div>
       </div>
     </div>
+
+    {% include nav.html %}
 
     <div class="overview">
       <div class="container main">
@@ -128,80 +134,5 @@ ALERT:
         {{ post.content }}
         {% endfor %}
         <p><a class="btn" href="news.html">News archive</a></p>
-      </section>
-      <section id="about">
-        <h1>About Bitcoin</h1>
-        <div class="row">
-          <div class="span10">
-            <h2>Introduction</h2>
-
-            <p>Bitcoin is one of the first implementations of a concept called crypto-currency, which was first described in 1998 by Wei Dai on the cypherpunks mailing list. Building upon the notion that money is any object, or any sort of record, accepted as payment for goods and services and repayment of debts in a given country or socio-economic context, Bitcoin is designed around the idea of using cryptography to control the creation and transfer of money, rather than relying on central authorities.</p>
-
-          </div>
-
-          <div class="span6">
-            <h2>Technology</h2>
-
-            <p>If you are interested to learn more about the technical details of Bitcoin it is recommended to start with these documents:</p>
-
-            <ul>
-              <li><a href="bitcoin.pdf">Bitcoin: A Peer-to-Peer Electronic Cash System</a></li>
-              <li><a href="https://en.bitcoin.it/wiki/Protocol_rules">Protocol rules</a></li>
-              <li><a href="https://en.bitcoin.it/wiki/Category:Technical">Bitcoin wiki</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="features">
-        <h1>Features</h1>
-
-        <div class="row">
-          <div class="span12">
-
-            <p>These are the basic features of any Bitcoin-like network.</p>
-
-            <ul>
-              <li>Bitcoins can be transferred between arbitary nodes on the network.</li>
-              <li>Transactions are irreversible.</li>
-              <li>Double spending is prevented by using a <a href="https://en.bitcoin.it/wiki/Block_chain">block chain</a>.</li>
-              <li>Transactions are broadcasted within seconds and <a href="https://en.bitcoin.it/wiki/FAQ#Why_do_I_have_to_wait_10_minutes_before_I_can_spend_money_I_received.3F">verified within 10 to 60 minutes</a>.</li>
-              <li>Transactions are received while the computer is turned off.</li>
-            </ul>
-
-            <h2>Economic rules</h2>
-
-            <p>These rules are enforced collectively by the network. While they will not change for Bitcoin, other digital currencies using Bitcoin's technology may change them to suit their needs.</p>
-
-            <ul>
-              <li>Hard limit of <a href="https://en.bitcoin.it/wiki/Controlled_Currency_Supply">about 21 million Bitcoins</a>.</li>
-              <li>Bitcoins are divisible to 8 decimal places yielding a total of approx. 21×10<sup>14</sup> currency units.</li>
-              <li>Transactions are cheap, and mostly free (<a href="https://en.bitcoin.it/wiki/Transaction_fees">Transaction fees</a>).</li>
-            </ul>
-
-            <h2>Features of the Bitcoin network</h2>
-
-            <p>The network is running for more than 32 months yielding to some impressive security features.</p>
-
-            <ul>
-              <li>Long block chain (more than 140.000 blocks) with lots of processing power securing transactions.</li>
-              <li>Only one major <a href="https://en.bitcoin.it/wiki/Incidents#Value_overflow">incident</a> (fixed in August 2010).</li>
-            </ul>
-
-          </div>
-        </div>
-      </section>
-
-      <section id="contributors">
-        <h1>Contributors <small>ordered by number of commits</small></h1>
-
-        <table class="unstyled">
-          <tr>
-            {% for c in site.project.contributors %}
-            <td>{{ c.name }} ({{ c.contributions }})</td>
-          {% cycle nil, nil, nil, nil, '</tr><tr>' %}
-            {% endfor %}
-          </tr>
-        </table>
       </section>
     </div>

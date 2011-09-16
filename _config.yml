@@ -40,13 +40,14 @@ kramdown:
     coderay_css: style
 
 navigation:
+- text: Home
+  url: /
+  section: index
 - text: News
   url: /news.html
-  layout: post
+  section: news
 - text: About
   url: /about.html
-- text: Features
-  url: /features.html
 
 aliases:
   s_nakamoto: Satoshi Nakamoto

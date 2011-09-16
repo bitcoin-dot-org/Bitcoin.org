@@ -12,8 +12,12 @@ img.icon {
   color: #fff;
 }*/
 
-.topbar + #masthead {
-  margin-top: 40px;
+#masthead .inner {
+  padding-top: 1.5em;
+}
+
+.overview + div {
+  padding-top: 2em;
 }
 
 .overview {
@@ -22,12 +26,28 @@ img.icon {
 }
 
 #download {
-  background: #fafafa;
+  background: #fff;
   color: #333;
   .well;
+  padding: 0;
+
+  h2 {
+    background: #f3f3f3;
+    border-bottom: 1px solid #eee;
+    padding: 0.25em 0.5em;
+    #gradient > .vertical(#ffffff, #e8e8e8);
+  }
+
+  div {
+    padding: 1em;
+  }
 }
 
-#masthead + div {
+.topbar + div {
+  margin-top: 40px;
+}
+
+#masthead + .container, .topbar + .container, .topbar + .overview {
   padding-top: 2em;
 }
 
@@ -57,7 +77,7 @@ img.icon {
       }
     }
 
-    a {
+    a:not(.btn) {
       font-weight: bold;
       color: #fff;
 
@@ -81,19 +101,15 @@ img.logo {
   z-index: 100;
 }
 
-section {
-  padding-top: 60px;
-}
-
 .right {
   float: right;
 }
 
-#thelogo {
-  vertical-align: top;
-  margin-right: 4px;
-}
-
 table.unstyled td {
   border: none;
+}
+
+.topbar {
+  position: absolute;
+  top: auto;
 }
