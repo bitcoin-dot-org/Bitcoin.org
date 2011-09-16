@@ -18,6 +18,8 @@ git reset --hard
 
 git clean -x -f -d
 
+mkdir _site/
+
 jekyll
 
 rsync --delete -a $WORKDIR/_site/ $DESTDIR
