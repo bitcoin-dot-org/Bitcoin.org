@@ -4,7 +4,7 @@ REPO=git://github.com/bitcoin/bitcoin.org.git
 WORKDIR=/tmp/bitcoin.org/
 DESTDIR=/var/www/
 
-JEKYLL=/var/lib/gems/1.8/bin/jekyll
+export PATH=/var/lib/gems/1.8/bin/:$PATH
 
 if test ! -d $WORKDIR; then
 	git clone $REPO $WORKDIR	
@@ -18,7 +18,7 @@ git reset --hard
 
 git clean -x -f -d
 
-$JEKYLL
+jekyll
 
 rsync --delete -a $WORKDIR/_site/ $DESTDIR
 
