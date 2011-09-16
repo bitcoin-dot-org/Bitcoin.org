@@ -63,5 +63,5 @@ These ruby gems are required to build the website:
 * jekyll
 * json
 * aquarium
+* less
 
-Additionally, ```lessc``` is required (in ```$PATH```).

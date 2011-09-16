@@ -31,7 +31,7 @@ module Jekyll
         choices = Dir['**/*'].reject { |x| File.symlink?(x) }
         if choices.include?(@file)
           source = File.read(@file)
-          f = IO.popen("lessc", "w+")
+          f = IO.popen("lessc -", "w+")
           f.write(source)
           f.close_write()
 
