@@ -1,6 +1,7 @@
 #!/bin/bash
 
 REPO=git://github.com/bitcoin/bitcoin.org.git
+DESTREPO=git@github.com:bitcoin/bitcoin.github.com.git
 WORKDIR=/tmp/bitcoin.org/
 DESTDIR=/var/www/
 
@@ -13,14 +14,27 @@ fi
 cd $WORKDIR
 
 git pull origin master
-
 git reset --hard
-
 git clean -x -f -d
-
 mkdir _site/
 
 jekyll
 
-rsync --delete -a $WORKDIR/_site/ $DESTDIR
+if test ! -d $DESTDIR/.git/; then
+	rm -r $DESTDIR/*
+	git clone $DESTREPO $DESTDIR
+fi
 
+COMMITMSG="jekyll build on `date -R` from `git log --oneline|head -n1`"
+
+cd $DESTDIR
+
+git pull origin master
+git reset --hard
+git clean -x -f -d
+
+rsync --exclude=.git/ --delete -a $WORKDIR/_site/ $DESTDIR
+
+git add .
+git commit -a -m "$COMMITMSG"
+git push origin master
