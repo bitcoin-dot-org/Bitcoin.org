@@ -7,7 +7,7 @@ section: news
         <div class="span5">
           <h5>News archive</h5>
           <ul class="unstyled">
-          {% for post in site.posts %}
+          {% for post in site.categories.releases %}
             <li>
               <a href="{{ post.url }}">{{ post.title }}</a>
               {{ post.date | date:"%Y-%m-%d" }}

@@ -124,16 +124,27 @@ ALERT:
     </div> <!-- /overview -->
 
     <div class="container">
-      <section id="news">
-        {% for post in site.posts limit: 1 %}
-        <h1><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date:"%e %B %Y" }}</small></h1>
-        {% if post.src %}
-        <p>
-          <a href="{{ post.src }}">Full announcement (including signatures)</a>
-        </p>
-        {% endif %}
-        {{ post.content }}
-        {% endfor %}
-        <p><a class="btn" href="news.html">News archive</a></p>
-      </section>
+      <div class="row">
+        <div class="span10">
+          <section id="news">
+            {% for post in site.categories.releases limit: 1 %}
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <p><em>{{ post.date | date:"%e %B %Y" }}</em></p>
+            {% if post.src %}
+            <p>
+              <a href="{{ post.src }}">Full announcement (including signatures)</a>
+            </p>
+            {% endif %}
+            {{ post.content }}
+            {% endfor %}
+            <p><a class="btn" href="news.html">News archive</a></p>
+          </section>
+        </div>
+        <div class="span6">
+          {% for event in site.categories.events limit: 1 %}
+          <h1>{{ event.title }}</a></h1>
+          {{ event.content }}
+          {% endfor %}
+        </div>
+      </div>
     </div>

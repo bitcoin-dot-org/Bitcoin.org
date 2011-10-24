@@ -33,6 +33,7 @@ Release notes should be placed in `_posts/releases/YEAR-MONTH-DAY-SHORTTITLE.md`
 layout: post
 title: Bitcoin version 0.3.24 released
 src: http://sourceforge.net/mailarchive/message.php?msg_id=27771039
+category: releases
 ---
 
 Bitcoin v0.3.24 is now available for download at
@@ -44,6 +45,9 @@ Bitcoin v0.3.24 is now available for download at
 * `layout: post` important for Jekyll
 * `title: ...` will be used as the title
 * `src: ...` (optional) link to full annoucement
+* `categorry: ...` category of post
+** `releases`
+** `events`
 
 ### Aliases for contributors
 
