@@ -2,14 +2,13 @@
 
 REPO=git://github.com/bitcoin/bitcoin.org.git
 DESTREPO=git@github.com:bitcoin/bitcoin.github.com.git
-WORKDIR=/tmp/bitcoin.org/
-DESTDIR=/var/www/
+
+WORKDIR=`mktemp -d`
+DESTDIR=`mktemp -d`
 
 export PATH=/var/lib/gems/1.8/bin/:$PATH
 
-if test ! -d $WORKDIR; then
-	git clone $REPO $WORKDIR	
-fi
+git clone $REPO $WORKDIR        
 
 cd $WORKDIR
 
@@ -20,10 +19,7 @@ mkdir _site/
 
 jekyll
 
-if test ! -d $DESTDIR/.git/; then
-	rm -r $DESTDIR/*
-	git clone $DESTREPO $DESTDIR
-fi
+git clone $DESTREPO $DESTDIR
 
 COMMITMSG="jekyll build on `date -R` from `git log --oneline|head -n1`"
 
@@ -38,3 +34,6 @@ rsync --exclude=.git/ --delete -a $WORKDIR/_site/ $DESTDIR
 git add .
 git commit -a -m "$COMMITMSG"
 git push origin master
+
+rm -rf $WORKDIR $DESTDIR
+
