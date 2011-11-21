@@ -1,6 +1,9 @@
 # Requirements
 
-Requires [Jekyll](https://github.com/mojombo/jekyll)
+Installing dependencies
+
+    aptitude install rubygems
+    gem install jekyll aquarium json less
 
 # Usage
 
