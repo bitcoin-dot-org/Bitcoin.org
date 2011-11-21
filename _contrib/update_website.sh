@@ -6,6 +6,12 @@ DESTREPO=git@github.com:bitcoin/bitcoin.github.com.git
 WORKDIR=`mktemp -d`
 DESTDIR=`mktemp -d`
 
+# Stop script in case a single command fails
+set -e
+
+# Cleanup on EXIT (even when a command fails)
+trap "rm -rf $WORKDIR $DESTDIR; exit 1" EXIT
+
 export PATH=/var/lib/gems/1.8/bin/:$PATH
 
 git clone $REPO $WORKDIR        
@@ -34,6 +40,4 @@ rsync --exclude=.git/ --delete -a $WORKDIR/_site/ $DESTDIR
 git add .
 git commit -a -m "$COMMITMSG"
 git push origin master
-
-rm -rf $WORKDIR $DESTDIR
 
