@@ -71,7 +71,15 @@ layout: simple
         <table class="unstyled">
           <tr>
             {% for c in site.project.contributors %}
-            <td>{{ c.name }} ({{ c.contributions }})</td>
+            <td>
+                {% if c.login %}
+                    <a href="http://github.com/{{c.login}}">
+                        {{ c.name }} ({{ c.contributions }})
+                    </a>
+                {% else %}
+                    {{ c.name }} ({{ c.contributions }})
+                {% endif %}
+            </td>
           {% cycle nil, nil, nil, nil, '</tr><tr>' %}
             {% endfor %}
           </tr>
