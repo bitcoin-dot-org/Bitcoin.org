@@ -1,0 +1,33 @@
+---
+layout: simple
+---
+    <div class="container">
+      <section id="feb20">
+        <h1>February 20, 2012 Protocol Changes</h1>
+	<p>
+In June 2010 the Bitcoin reference software version 0.2.10 introduced
+a change to the protocol: the 'version' messages exchanged by nodes
+at connection time would have a new format that included checksum
+values to detect corruption by broken networks.
+</p><p>
+All other messages already carry a checksum (for connections between
+nodes 0.2.9 and later) but the version messages themselves could not
+be changed in a compatible way, so this change was delayed and does not take effect until
+Midnight UTC on Feb 20th 2012 to leave users time to upgrade.
+</p><p>
+The developers of the Bitcoin reference software are unable to find
+any evidence of any nodes still running software prior to 0.2.10 on
+the network. If any nodes with software this old
+do still exist, they will no longer be able to connect to newer nodes
+after this date.
+</p><p>
+This switchover has been tested and no significant disruption is
+expected.  Nodes with incorrect clocks may have a difficult
+time making new connections for a brief period around the switchover
+time. 
+</p><p>
+If there are unexpected difficulties this page will be updated with
+relevant information.
+	</p>
+	</section>
+      </div>
