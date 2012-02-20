@@ -4,9 +4,6 @@ layout: simple
     <div class="container">
       <section id="feb20">
         <h1>February 20, 2012 Protocol Changes</h1>
-        <h4><b>Summary:</b> Nothing is required of you right now.<br/>
-        In the unlikely event that something breaks on/after February 20th, come back here.</h4>
-        <hr width="75%"/>
 	<p>
 In June 2010 the Bitcoin reference software version 0.2.10 introduced
 a change to the protocol: the 'version' messages exchanged by nodes
@@ -15,26 +12,30 @@ values to detect corruption by broken networks.
 </p><p>
 All other messages already carry a checksum (for connections between
 nodes 0.2.9 and later) but the version messages themselves could not
-be changed in a compatible way, so this change was delayed and does not take effect until
+be changed in a compatible way, so this change was delayed and did not take effect until
 <a href="http://www.timeanddate.com/worldclock/fixedtime.html?msg=Bitcoin+protocol+change&iso=20120220T00">midnight UTC on Feb 20th 2012</a>
 to leave users time to upgrade.
 </p><p>
 The developers of the Bitcoin reference software are unable to find
 any evidence of any nodes still running software prior to 0.2.10 on
 the network. If any nodes with software this old
-do still exist, they will no longer be able to connect to newer nodes
-after this date.
+do still exist, they will no longer be able to connect to newer nodes.
 </p><p>
 This switchover has been tested and no significant disruption is
-expected.  Nodes with incorrect clocks may have a difficult
+expected and none has been observed so far.
+Nodes with incorrect clocks may have a difficult
 time making new connections for a brief period around the switchover
 time. 
+</p><p>
+Please report any new connectivity issues to the <a
+href="http://webchat.freenode.net/?channels=bitcoin-dev&uio=d4">#bitcoin-dev
+channel</a> on Freenode IRC.
 </p><p>
 If there are unexpected difficulties this page will be updated with
 relevant information.
 </p>
 <div style="text-align:right">
-<i>This notice last updated: Sun Feb 19 18:56:58 UTC 2012</i>
+<i>This notice last updated: Mon Feb 20 00:10:00 UTC 2012</i>
 </div>
 </section>
 </div>
