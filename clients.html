@@ -1,0 +1,144 @@
+---
+layout: simple
+section: clients
+
+client_info:
+- id: name
+  text: Client
+  td: th
+  Bitcoin-Qt: best
+- id: start
+  text: Get Started
+- id: audience
+  text: Audience
+  Everyone: best
+  End-users: good
+- id: security
+  text: Wallet Security
+  Multisig: best
+  Encryption: good
+- id: nodetype
+  text: Network Security
+  Full: best
+- id: backups
+  text: Backups
+  One-time local: best
+  Automatic remote: good
+  Manual local: ugly
+- id: setuptime
+  text: Setup Time
+  Hours: ugly
+- id: disk
+  text: Disk Space
+  2+ GB: ugly
+- id: maturity
+  text: Maturity
+  Aug 2009: best
+  May 2011: good
+- id: license
+  text: License
+- id: multiuser
+  text: Multi-user
+
+clients:
+- name: Armory
+  name_uri: http://bitcoinarmory.com/
+  start_uri: http://bitcoinarmory.com/index.php/get-armory
+  start: Download
+  audience: Everyone
+  security: Encryption
+  nodetype: 
+  backups: One-time local
+  setuptime: 
+  disk: 
+  maturity: Jul 2011
+  license: AGPLv3
+  multiuser: Multi-wallet
+- name: Bitcoin-Qt
+  name_uri: 
+  start_uri: http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.6.0/
+  start: Download
+  audience: End-users
+  security: Encryption
+  nodetype: Full
+  backups: Manual local
+  setuptime: Hours
+  disk: 2+ GB
+  maturity: May 2011
+  license: MIT
+  multiuser: No
+- name: bitcoind
+  name_uri: 
+  start_uri: http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.6.0/
+  start: Download
+  audience: Developers
+  security: Encryption
+  nodetype: Full
+  backups: Manual local
+  setuptime: Hours
+  disk: 2+ GB
+  maturity: Aug 2009
+  license: MIT
+  multiuser: No
+- name: MultiBit
+  name_uri: http://multibit.org/
+  start_uri: http://multibit.org/releases.html
+  start: Download
+  audience: 
+  security: 
+  nodetype: 
+  backups: 
+  setuptime: 
+  disk: 
+  maturity: Jul 2011
+  license: 
+  multiuser: 
+- name: My Wallet
+  name_uri: https://blockchain.info/wallet
+  start_uri: https://blockchain.info/wallet/new
+  start: eWallet
+  audience: End-users
+  security: Encryption
+  nodetype: 
+  backups: Automatic remote
+  setuptime: 
+  disk: 
+  maturity: Dec 2011
+  license: 
+  multiuser: 
+- name: StrongCoin
+  name_uri: https://strongcoin.com/
+  start_uri: https://strongcoin.com/users/sign_up
+  start: eWallet
+  audience: 
+  security: Encryption
+  nodetype: 
+  backups: Automatic remote
+  setuptime: 
+  disk: 
+  maturity: Sep 2011
+  license: 
+  multiuser: 
+---
+    <div class="container">
+      <section id="clients">
+        <h1>Bitcoin Clients</h1>
+        <!-- yes, this is an abuse of tables, but really CSS doesn't provide any sane way to do the same thing :( -->
+        <table><tr>
+          <td style="border-right: 1px solid black; vertical-align: top">
+            <ul style="list-style-type: none">
+            <li>Android</li>
+            <li>Linux</li>
+            <li>Mac</li>
+            <li>Ubuntu</li>
+            <li>Windows</li>
+            </ul>
+          </td>
+          <td>
+            <table>
+            {% clients %}
+            </table>
+          </td>
+        </tr></table>
+      </section>
+    </div>
