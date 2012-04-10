@@ -10,13 +10,16 @@ module Jekyll
         hid = h['id']
         td = h.fetch('td', 'td')
         for c in page['clients']
+          if c.has_key?('incomplete')
+            next
+          end
           ci = c[hid]
           curi = c.fetch(hid + '_uri', nil)
-          r += '<' + td
+          r += '<' + td + ' class="clients ' + c['os']
           if h.has_key?(ci)
-            r += ' class="' + h[ci] + '"'
+            r += ' ' + h[ci]
           end
-          r += '>'
+          r += '">'
           if curi
             r += "<a href='" + curi + "'>" + ci + "</a>"
           elsif ci

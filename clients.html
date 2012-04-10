@@ -54,6 +54,22 @@ clients:
   maturity: Jul 2011
   license: AGPLv3
   multiuser: Multi-wallet
+  incomplete: missing automatic node integration
+  os: linux win
+- name: Bitcoin Wallet
+  name_uri: http://code.google.com/p/bitcoin-wallet/
+  start_uri: https://play.google.com/store/apps/details?id=de.schildbach.wallet
+  start: Download
+  audience: 
+  security: 
+  nodetype: 
+  backups: 
+  setuptime: 
+  disk: 
+  maturity: Mar 2011
+  license: GPLv3
+  multiuser: 
+  os: android
 - name: Bitcoin-Qt
   name_uri: 
   start_uri: http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.6.0/
@@ -67,6 +83,7 @@ clients:
   maturity: May 2011
   license: MIT
   multiuser: No
+  os: linux mac win
 - name: bitcoind
   name_uri: 
   start_uri: http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.6.0/
@@ -80,6 +97,49 @@ clients:
   maturity: Aug 2009
   license: MIT
   multiuser: No
+  os: linux win
+- name: BitcoinSpinner
+  name_uri: http://code.google.com/p/bitcoinspinner/
+  start_uri: https://play.google.com/store/apps/details?id=com.miracleas.bitcoin_spinner
+  start: Download
+  audience: 
+  security: 
+  nodetype: 
+  backups: 
+  setuptime: 
+  disk: 
+  maturity: Nov 2011
+  license: Apache2
+  multiuser: 
+  os: android
+- name: Blockchain
+  name_uri: https://blockchain.info/wallet/iphone-app
+  start_uri: https://blockchain.info/wallet/iphone-app#download-instructions-btn
+  start: Download
+  audience: End-users
+  security: Encryption
+  nodetype: 
+  backups: Automatic remote
+  setuptime: 
+  disk: 
+  maturity: Mar 2012
+  license: 
+  multiuser: 
+  os: ios
+- name: MtGox Mobile
+  name_uri: http://mtgoxlive.com/mobile/
+  start_uri: https://play.google.com/store/apps/details?id=com.mtgoxlive.trader
+  start: Download
+  audience: 
+  security: 
+  nodetype: 
+  backups: 
+  setuptime: 
+  disk: 
+  maturity: Jul 2011
+  license: 
+  multiuser: 
+  os: android
 - name: MultiBit
   name_uri: http://multibit.org/
   start_uri: http://multibit.org/releases.html
@@ -93,6 +153,7 @@ clients:
   maturity: Jul 2011
   license: 
   multiuser: 
+  os: linux mac win
 - name: My Wallet
   name_uri: https://blockchain.info/wallet
   start_uri: https://blockchain.info/wallet/new
@@ -106,6 +167,7 @@ clients:
   maturity: Dec 2011
   license: 
   multiuser: 
+  os: android linux mac win
 - name: StrongCoin
   name_uri: https://strongcoin.com/
   start_uri: https://strongcoin.com/users/sign_up
@@ -119,19 +181,61 @@ clients:
   maturity: Sep 2011
   license: 
   multiuser: 
+  os: android linux mac win
 ---
+    <script type="text/javascript">
+      var visiblerule = null;
+      var selrule = null;
+      function clientfilt(c) {
+        if (visiblerule) {
+          selrule.selectorText = '#' + c;
+          visiblerule.selectorText = '.clients.' + c;
+          return;
+        }
+        var ss = document.styleSheets[0];
+        var rules = ss.cssRules ? ss.cssRules : ss.rules;
+        if (ss.insertRule) {
+          ss.insertRule('.clients { display: none }');
+          ss.insertRule('#' + c + '{ background-color: #bfbfbf }', 0);
+          ss.insertRule('.clients.' + c + ' { display: table-cell }', 0);
+        } else {
+          ss.addRule('.clients', 'display: none');
+          ss.addRule('#' + c, 'background-color: #bfbfbf', 0);
+          ss.addRule('.clients.' + c, 'display: table-cell', 0);
+        }
+        visiblerule = rules[0];
+        selrule = rules[1];
+      }
+      (function(){
+        var av = navigator.appVersion;
+        if (av.indexOf('Android') != -1)
+          clientfilt('android');
+        else
+        if (av.indexOf('iPhone') != -1)
+          clientfilt('ios');
+        else
+        if (av.indexOf('Linux') != -1 || av.indexOf('X11') != -1)
+          clientfilt('linux');
+        else
+        if (av.indexOf('Mac') != -1)
+          clientfilt('mac');
+        else
+        if (av.indexOf('Win') != -1)
+          clientfilt('win');
+      })()
+    </script>
     <div class="container">
       <section id="clients">
         <h1>Bitcoin Clients</h1>
         <!-- yes, this is an abuse of tables, but really CSS doesn't provide any sane way to do the same thing :( -->
         <table><tr>
-          <td style="border-right: 1px solid black; vertical-align: top">
-            <ul style="list-style-type: none">
-            <li>Android</li>
-            <li>Linux</li>
-            <li>Mac</li>
-            <li>Ubuntu</li>
-            <li>Windows</li>
+          <td style="" id="oslist">
+            <ul>
+            <li><a id="android" href="javascript:clientfilt('android')"><img src="img/ico-android.png"> Android</a></li>
+            <li><a id="ios"     href="javascript:clientfilt('ios')"><img src="img/ico-ios.png"> iPhone</a></li>
+            <li><a id="linux"   href="javascript:clientfilt('linux')"><img src="img/ico-linux.png"> Linux</a></li>
+            <li><a id="mac"     href="javascript:clientfilt('mac')"><img src="img/ico-mac.png"> Mac OS X</a></li>
+            <li><a id="win"     href="javascript:clientfilt('win')"><img src="img/ico-win.png"> Windows</a></li>
             </ul>
           </td>
           <td>
