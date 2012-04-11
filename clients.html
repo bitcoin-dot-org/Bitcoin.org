@@ -17,16 +17,20 @@ client_info:
   text: Wallet Security
   Multisig: best
   Encryption: good
+  None: ugly
 - id: nodetype
   text: Network Security
   Full: best
+  Remote: ugly
 - id: backups
   text: Backups
   One-time local: best
   Automatic remote: good
-  Manual local: ugly
+  'No': ugly
 - id: setuptime
   text: Setup Time
+  Seconds: best
+  Minutes: good
   Hours: ugly
 - id: disk
   text: Disk Space
@@ -45,16 +49,15 @@ clients:
   name_uri: http://bitcoinarmory.com/
   start_uri: http://bitcoinarmory.com/index.php/get-armory
   start: Download
-  audience: Everyone
+  audience: Power users
   security: Encryption
-  nodetype: 
+  nodetype: Addon
   backups: One-time local
-  setuptime: 
-  disk: 
+  setuptime: Varies
+  disk: 2+ GB
   maturity: Jul 2011
   license: AGPLv3
   multiuser: Multi-wallet
-  incomplete: missing automatic node integration
   os: linux win
 - name: Bitcoin Wallet
   name_uri: http://code.google.com/p/bitcoin-wallet/
@@ -82,7 +85,7 @@ clients:
   disk: 2+ GB
   maturity: May 2011
   license: MIT
-  multiuser: No
+  multiuser: 'No'
   os: linux mac win
 - name: bitcoind
   name_uri: 
@@ -96,21 +99,21 @@ clients:
   disk: 2+ GB
   maturity: Aug 2009
   license: MIT
-  multiuser: No
+  multiuser: 'No'
   os: linux win
 - name: BitcoinSpinner
   name_uri: http://code.google.com/p/bitcoinspinner/
   start_uri: https://play.google.com/store/apps/details?id=com.miracleas.bitcoin_spinner
   start: Download
-  audience: 
-  security: 
+  audience: End-users
+  security: None
   nodetype: 
-  backups: 
-  setuptime: 
-  disk: 
+  backups: Manual QR-Code
+  setuptime: Seconds
+  disk: 2 MB
   maturity: Nov 2011
   license: Apache2
-  multiuser: 
+  multiuser: 'No'
   os: android
 - name: Blockchain
   name_uri: https://blockchain.info/wallet/iphone-app
@@ -118,10 +121,10 @@ clients:
   start: Download
   audience: End-users
   security: Encryption
-  nodetype: 
+  nodetype: Remote
   backups: Automatic remote
-  setuptime: 
-  disk: 
+  setuptime: 15 Minutes
+  disk: 2 MB
   maturity: Mar 2012
   license: 
   multiuser: 
@@ -130,59 +133,81 @@ clients:
   name_uri: http://mtgoxlive.com/mobile/
   start_uri: https://play.google.com/store/apps/details?id=com.mtgoxlive.trader
   start: Download
-  audience: 
-  security: 
-  nodetype: 
-  backups: 
-  setuptime: 
-  disk: 
+  audience: End-users
+  security: Remote
+  nodetype: Remote
+  backups: Automatic remote
+  setuptime: Minutes
+  disk: 3 MB
   maturity: Jul 2011
-  license: 
-  multiuser: 
+  license: WTFPL
+  multiuser: 'No'
   os: android
 - name: MultiBit
   name_uri: http://multibit.org/
   start_uri: http://multibit.org/releases.html
   start: Download
-  audience: 
-  security: 
-  nodetype: 
-  backups: 
-  setuptime: 
-  disk: 
+  audience: End-users
+  security: None
+  nodetype: Partial
+  backups: 'No'
+  setuptime: 1 hour
+  disk: 50 MB
   maturity: Jul 2011
-  license: 
-  multiuser: 
+  license: MIT
+  multiuser: Multi-wallet
   os: linux mac win
 - name: My Wallet
   name_uri: https://blockchain.info/wallet
   start_uri: https://blockchain.info/wallet/new
   start: eWallet
-  audience: End-users
+  audience: Everyone
   security: Encryption
-  nodetype: 
+  nodetype: Remote
   backups: Automatic remote
-  setuptime: 
-  disk: 
+  setuptime: Minutes
+  disk: None
   maturity: Dec 2011
   license: 
-  multiuser: 
-  os: android linux mac win
+  multiuser: 'Yes'
+  os: android ios linux mac win
 - name: StrongCoin
   name_uri: https://strongcoin.com/
   start_uri: https://strongcoin.com/users/sign_up
   start: eWallet
-  audience: 
+  audience: Power users
   security: Encryption
-  nodetype: 
+  nodetype: Remote
   backups: Automatic remote
-  setuptime: 
-  disk: 
+  setuptime: Minutes
+  disk: None
   maturity: Sep 2011
   license: 
-  multiuser: 
-  os: android linux mac win
+  multiuser: 'Yes'
+  os: linux mac win
 ---
+    <div class="container">
+      <section id="clients">
+        <h1>Bitcoin Clients</h1>
+        <!-- yes, this is an abuse of tables, but really CSS doesn't provide any sane way to do the same thing :( -->
+        <table><tr>
+          <td style="" id="oslist">
+            <ul>
+            <li><a id="android" href="javascript:clientfilt('android')"><img src="img/ico-android.png"> Android</a></li>
+            <li><a id="ios"     href="javascript:clientfilt('ios')"><img src="img/ico-ios.png"> iPhone</a></li>
+            <li><a id="linux"   href="javascript:clientfilt('linux')"><img src="img/ico-linux.png"> Linux</a></li>
+            <li><a id="mac"     href="javascript:clientfilt('mac')"><img src="img/ico-mac.png"> Mac OS X</a></li>
+            <li><a id="win"     href="javascript:clientfilt('win')"><img src="img/ico-win.png"> Windows</a></li>
+            </ul>
+          </td>
+          <td>
+            <table>
+            {% clients %}
+            </table>
+          </td>
+        </tr></table>
+      </section>
+    </div>
     <script type="text/javascript">
       var visiblerule = null;
       var selrule = null;
@@ -224,25 +249,3 @@ clients:
           clientfilt('win');
       })()
     </script>
-    <div class="container">
-      <section id="clients">
-        <h1>Bitcoin Clients</h1>
-        <!-- yes, this is an abuse of tables, but really CSS doesn't provide any sane way to do the same thing :( -->
-        <table><tr>
-          <td style="" id="oslist">
-            <ul>
-            <li><a id="android" href="javascript:clientfilt('android')"><img src="img/ico-android.png"> Android</a></li>
-            <li><a id="ios"     href="javascript:clientfilt('ios')"><img src="img/ico-ios.png"> iPhone</a></li>
-            <li><a id="linux"   href="javascript:clientfilt('linux')"><img src="img/ico-linux.png"> Linux</a></li>
-            <li><a id="mac"     href="javascript:clientfilt('mac')"><img src="img/ico-mac.png"> Mac OS X</a></li>
-            <li><a id="win"     href="javascript:clientfilt('win')"><img src="img/ico-win.png"> Windows</a></li>
-            </ul>
-          </td>
-          <td>
-            <table>
-            {% clients %}
-            </table>
-          </td>
-        </tr></table>
-      </section>
-    </div>
