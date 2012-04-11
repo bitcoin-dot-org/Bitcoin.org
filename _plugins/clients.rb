@@ -24,6 +24,10 @@ module Jekyll
             r += "<a href='" + curi + "'>" + ci + "</a>"
           elsif ci
             r += ci
+          elsif hid == '_os'
+            for os in c['os'].split(' ')
+              r += '<img class="icon" src="img/ico-' + os + '.png">'
+            end
           end
           r += "</" + td + ">"
         end
