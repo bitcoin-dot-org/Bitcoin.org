@@ -48,6 +48,10 @@ navigation:
   section: news
 - text: About
   url: /about.html
+  section: about
+- text: Clients
+  url: /clients.html
+  section: clients
 
 aliases:
   s_nakamoto: Satoshi Nakamoto
