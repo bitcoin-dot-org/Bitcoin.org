@@ -1,274 +1,54 @@
 ---
 layout: simple
-section: clients
-
-client_info:
-- id: name
-  text: Client
-  td: th
-  Bitcoin-Qt: best
-- id: start
-  text: Get Started
-- id: audience
-  text: Audience
-  Everyone: best
-  End-users: good
-- id: security
-  text: Wallet Security
-  Multisig: best
-  Encryption: good
-  None: ugly
-- id: nodetype
-  text: Network Security
-  Full: best
-  Remote: ugly
-- id: backups
-  text: Backups
-  One-time local: best
-  One-time memorized: best
-  Automatic remote: good
-  'No': ugly
-- id: setuptime
-  text: Setup Time
-  Seconds: best
-  Minutes: good
-  Hours: ugly
-- id: disk
-  text: Disk Space
-  2+ GB: ugly
-  '5 MB': good
-  '3 MB': good
-  '2 MB': good
-  None: best
-- id: maturity
-  text: Maturity
-  Aug 2009: best
-  May 2011: good
-- id: license
-  text: License
-  EULA: ugly
-  Proprietary: ugly
-- id: multiuser
-  text: Multi-user
-- id: _os
-  text: Available For
+title: Clients
 
 clients:
-- name: Armory
-  name_uri: http://bitcoinarmory.com/
-  start_uri: http://bitcoinarmory.com/index.php/get-armory
-  start: Download
-  audience: Power users
-  security: Encryption
-  nodetype: Addon
-  backups: One-time local
-  setuptime: Varies
-  disk: 2+ GB
-  maturity: Jul 2011
-  license: AGPLv3
-  multiuser: Multi-wallet
-  os: linux win
-- name: Bitcoin Wallet
-  name_uri: http://code.google.com/p/bitcoin-wallet/
-  start_uri: https://play.google.com/store/apps/details?id=de.schildbach.wallet
-  start: Download
-  audience: 
-  security: 
-  nodetype: 
-  backups: 
-  setuptime: 
-  disk: 
-  maturity: Mar 2011
-  license: GPLv3
-  multiuser: 
-  os: android
 - name: Bitcoin-Qt
-  name_uri: 
-  start_uri: http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.6.0/
-  start: Download
-  audience: End-users
-  security: Encryption
-  nodetype: Full
-  backups: Manual local
-  setuptime: Hours
-  disk: 2+ GB
-  maturity: May 2011
-  license: MIT
-  multiuser: 'No'
-  os: linux mac win
-- name: bitcoind
-  name_uri: 
-  start_uri: http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.6.0/
-  start: Download
-  audience: Developers
-  security: Encryption
-  nodetype: Full
-  backups: Manual local
-  setuptime: Hours
-  disk: 2+ GB
-  maturity: Aug 2009
-  license: MIT
-  multiuser: Virtual accounts
-  os: linux win
-- name: BitcoinSpinner
-  name_uri: http://code.google.com/p/bitcoinspinner/
-  start_uri: https://play.google.com/store/apps/details?id=com.miracleas.bitcoin_spinner
-  start: Download
-  audience: End-users
-  security: None
-  nodetype: 
-  backups: Manual QR-Code
-  setuptime: Seconds
-  disk: 2 MB
-  maturity: Nov 2011
-  license: Apache2
-  multiuser: 'No'
-  os: android
-- name: Blockchain
-  name_uri: https://blockchain.info/wallet/iphone-app
-  start_uri: https://blockchain.info/wallet/iphone-app#download-instructions-btn
-  start: Download
-  audience: End-users
-  security: Encryption
-  nodetype: Remote
-  backups: Automatic remote
-  setuptime: 15 Minutes
-  disk: 2 MB
-  maturity: Mar 2012
-  license: <img src="img/ico-android.png">GPL &#x2022; <img src="img/ico-ios.png">LGPL
-  multiuser: 
-  os: android ios
+  url: bitcoin.org
+  image: bitcoin-qt.png
+  description: Bitcoin-Qt is the frontend for the original code written by Satoshi. It replaced the aging wxWidgets version with a newer architecture that allows changes to be made easier and making the software more portable to different platforms. Bitcoin-Qt is well tested, and is a good starting point for any Bitcoin user looking for stability.
+- name: Armory
+  url: bitcoinarmory.com
+  image: armory.png
+  description: Armory is an advanced client that incorporates a number of wallet management features for security. It works in conjunction with the Satoshi codebase to leverage a platform which maintain multiple wallets with encryption with support for offline transactions. Armory is security oriented and targets the high end of the Bitcoin userbase.
 - name: Electrum
-  name_uri: http://ecdsa.org/electrum/
-  start_uri: http://ecdsa.org/electrum/
-  start: Download
-  audience: Power users
-  security: Encryption
-  nodetype: Minimal
-  backups: One-time memorized
-  setuptime: Minutes
-  disk: 5 MB
-  maturity: Nov 2011
-  license: GPLv3
-  multiuser: 'No'
-  os: linux win
-- name: MtGox Mobile
-  name_uri: http://mtgoxlive.com/mobile/
-  start_uri: https://play.google.com/store/apps/details?id=com.mtgoxlive.trader
-  start: Download
-  audience: End-users
-  security: Remote
-  nodetype: Remote
-  backups: Automatic remote
-  setuptime: Minutes
-  disk: 3 MB
-  maturity: Jul 2011
-  license: WTFPL
-  multiuser: 'No'
-  os: android
+  url: ecdsa.org/electrum
+  image: electrum.png
+  description: Electrum is a client that was designed to simplify the use of Bitcoin. Electrum does not download the blockchain and startup times are instant which it does by pooling remote blockchain servers. You do not need to perform regular backups of your wallet as your wallet can be recovered from a secret passphrase which you can memorize or write on a piece of paper.
 - name: MultiBit
-  name_uri: http://multibit.org/
-  start_uri: http://multibit.org/releases.html
-  start: Download
-  audience: End-users
-  security: None
-  nodetype: Partial
-  backups: 'No'
-  setuptime: 1 hour
-  disk: 50 MB
-  maturity: Jul 2011
-  license: MIT
-  multiuser: Multi-wallet
-  os: linux mac win
-- name: My Wallet
-  name_uri: https://blockchain.info/wallet
-  start_uri: https://blockchain.info/wallet/new
-  start: eWallet
-  audience: Everyone
-  security: Encryption
-  nodetype: Remote
-  backups: Automatic remote
-  setuptime: Minutes
-  disk: None
-  maturity: Dec 2011
-  license: BSD*
-  multiuser: 'Yes'
-  os: android ios linux mac win
-- name: StrongCoin
-  name_uri: https://strongcoin.com/
-  start_uri: https://strongcoin.com/users/sign_up
-  start: eWallet
-  audience: Power users
-  security: Encryption
-  nodetype: Remote
-  backups: Automatic remote
-  setuptime: Minutes
-  disk: None
-  maturity: Sep 2011
-  license: Proprietary
-  multiuser: 'Yes'
-  os: linux mac win
+  url: multibit.org
+  image: multibit.png
+  description: MultiBit is a Bitcoin client. It understands the Bitcoin protocol so it can send and receive bitcoins. It makes the job of sending and receiving bitcoins simple and quick. MultiBit can handle multiple wallets so you can maintain different Bitcoin "accounts" for different purposes. On the 'Your Wallets' screen you can see all your wallets and transactions. MultiBit provides features like different languages, single click payment and quicker access to new features.
 ---
+
     <div class="container">
-      <section id="clients">
-        <h1>Bitcoin Clients</h1>
-        <!-- yes, this is an abuse of tables, but really CSS doesn't provide any sane way to do the same thing :( -->
-        <table><tr>
-          <td style="" id="oslist">
-            <ul>
-            <li><a id="android" href="javascript:clientfilt('android')"><img src="img/ico-android.png"> Android</a></li>
-            <li><a id="ios"     href="javascript:clientfilt('ios')"><img src="img/ico-ios.png"> iPhone</a></li>
-            <li><a id="linux"   href="javascript:clientfilt('linux')"><img src="img/ico-linux.png"> Linux</a></li>
-            <li><a id="mac"     href="javascript:clientfilt('mac')"><img src="img/ico-mac.png"> Mac OS X</a></li>
-            <li><a id="win"     href="javascript:clientfilt('win')"><img src="img/ico-win.png"> Windows</a></li>
-            </ul>
-          </td>
-          <td>
-            <table>
-            {% clients %}
-            </table>
-          </td>
-        </tr></table>
+      <section id="graphical-interfaces">
+        <h1>Graphical Interfaces</h1>
+        <div class="row">
+          {% for client in page.clients %}
+            <div class="span5">
+              <h2><a href="http://{{ client.url }}">{{ client.name }}</a></h2>
+              <img src="img/clients/{{ client.image }}" />
+              <p>Website: <a href="http://{{ client.url }}">{{ client.url }}</a></p>
+              <p>{{ client.description }}</p>
+            </div>
+          {% endfor %}
+        </div>
       </section>
+
+    <!--
+      <section id="website-frontends">
+        <h1>Website Frontends</h1>
+        <div class="row">
+          <div class="span5">
+            <h2><a href="http://bitcoin.org">Bitcoin-Qt</a></h2>
+            <img src="img/bitcoin.png" />
+            <p>Website: <a href="http://bitcoin.org">bitcoin.org</a></p>
+            <p>Bitcoin is one of the first implementations of a concept called crypto-currency, which was first described in 1998 by Wei Dai on the cypherpunks mailing list. Building upon the notion that money is any object, or any sort of record, accepted as payment for goods and services and repayment of debts in a given country or socio-economic context, Bitcoin is designed around the idea of using cryptography to control the creation and transfer of money, rather than relying on central authorities.</p>
+          </div>
+          ...
+        </div>
+      </section>
+    -->
     </div>
-    <script type="text/javascript">
-      var visiblerule = null;
-      var selrule = null;
-      function clientfilt(c) {
-        if (visiblerule) {
-          selrule.selectorText = '#' + c;
-          visiblerule.selectorText = '.clients.' + c;
-          return;
-        }
-        var ss = document.styleSheets[0];
-        var rules = ss.cssRules ? ss.cssRules : ss.rules;
-        if (ss.insertRule) {
-          ss.insertRule('.clients { display: none }');
-          ss.insertRule('#' + c + '{ background-color: #bfbfbf }', 0);
-          ss.insertRule('.clients.' + c + ' { display: table-cell }', 0);
-        } else {
-          ss.addRule('.clients', 'display: none');
-          ss.addRule('#' + c, 'background-color: #bfbfbf', 0);
-          ss.addRule('.clients.' + c, 'display: table-cell', 0);
-        }
-        visiblerule = rules[0];
-        selrule = rules[1];
-      }
-      (function(){
-        var av = navigator.appVersion;
-        if (av.indexOf('Android') != -1)
-          clientfilt('android');
-        else
-        if (av.indexOf('iPhone') != -1)
-          clientfilt('ios');
-        else
-        if (av.indexOf('Linux') != -1 || av.indexOf('X11') != -1)
-          clientfilt('linux');
-        else
-        if (av.indexOf('Mac') != -1)
-          clientfilt('mac');
-        else
-        if (av.indexOf('Win') != -1)
-          clientfilt('win');
-      })()
-    </script>
+
