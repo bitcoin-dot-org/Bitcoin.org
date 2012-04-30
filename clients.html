@@ -1,0 +1,54 @@
+---
+layout: simple
+title: Clients
+
+clients:
+- name: Bitcoin-Qt
+  url: bitcoin.org
+  image: bitcoin-qt.png
+  description: Bitcoin-Qt is the frontend for the original code written by Satoshi. It replaced the aging wxWidgets version with a newer architecture that allows changes to be made easier and making the software more portable to different platforms. Bitcoin-Qt is well tested, and is a good starting point for any Bitcoin user looking for stability.
+- name: Armory
+  url: bitcoinarmory.com
+  image: armory.png
+  description: Armory is an advanced client that incorporates a number of wallet management features for security. It works in conjunction with the Satoshi codebase to leverage a platform which maintain multiple wallets with encryption with support for offline transactions. Armory is security oriented and targets the high end of the Bitcoin userbase.
+- name: Electrum
+  url: ecdsa.org/electrum
+  image: electrum.png
+  description: Electrum is a client that was designed to simplify the use of Bitcoin. Electrum does not download the blockchain and startup times are instant which it does by pooling remote blockchain servers. You do not need to perform regular backups of your wallet as your wallet can be recovered from a secret passphrase which you can memorize or write on a piece of paper.
+- name: MultiBit
+  url: multibit.org
+  image: multibit.png
+  description: MultiBit is a Bitcoin client. It understands the Bitcoin protocol so it can send and receive bitcoins. It makes the job of sending and receiving bitcoins simple and quick. MultiBit can handle multiple wallets so you can maintain different Bitcoin "accounts" for different purposes. On the 'Your Wallets' screen you can see all your wallets and transactions. MultiBit provides features like different languages, single click payment and quicker access to new features.
+---
+
+    <div class="container">
+      <section id="graphical-interfaces">
+        <h1>Graphical Interfaces</h1>
+        <div class="row">
+          {% for client in page.clients %}
+            <div class="span5">
+              <h2><a href="http://{{ client.url }}">{{ client.name }}</a></h2>
+              <img src="img/clients/{{ client.image }}" />
+              <p>Website: <a href="http://{{ client.url }}">{{ client.url }}</a></p>
+              <p>{{ client.description }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+
+    <!--
+      <section id="website-frontends">
+        <h1>Website Frontends</h1>
+        <div class="row">
+          <div class="span5">
+            <h2><a href="http://bitcoin.org">Bitcoin-Qt</a></h2>
+            <img src="img/bitcoin.png" />
+            <p>Website: <a href="http://bitcoin.org">bitcoin.org</a></p>
+            <p>Bitcoin is one of the first implementations of a concept called crypto-currency, which was first described in 1998 by Wei Dai on the cypherpunks mailing list. Building upon the notion that money is any object, or any sort of record, accepted as payment for goods and services and repayment of debts in a given country or socio-economic context, Bitcoin is designed around the idea of using cryptography to control the creation and transfer of money, rather than relying on central authorities.</p>
+          </div>
+          ...
+        </div>
+      </section>
+    -->
+    </div>
+
