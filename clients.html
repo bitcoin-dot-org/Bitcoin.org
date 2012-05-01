@@ -27,7 +27,7 @@ clients:
         <p>Short text describing what a bitcoin client is and why it is required to download one as opposed to, say, using a web service...</p>
         <div class="row">
           {% for client in page.clients %}
-          {% cycle '', '', '', '</div><br><div class="row">' %}
+          {% cycle '', '', '', '</div><br /><div class="row">' %}
             <div class="span-one-third">
               <h2><a href="http://{{ client.url }}">{{ client.name }}</a></h2>
               <img src="img/clients/{{ client.image }}" />
