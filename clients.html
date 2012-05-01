@@ -23,14 +23,16 @@ clients:
 
     <div class="container">
       <section id="graphical-interfaces">
-        <h1>Graphical Interfaces</h1>
+        <h1>Bitcoin Client Software</h1>
+        <p>Short text describing what a bitcoin client is and why it is required to download one as opposed to, say, using a web service...</p>
         <div class="row">
           {% for client in page.clients %}
-            <div class="span5">
+          {% cycle '', '', '', '</div><br><div class="row">' %}
+            <div class="span-one-third">
               <h2><a href="http://{{ client.url }}">{{ client.name }}</a></h2>
               <img src="img/clients/{{ client.image }}" />
-              <p>Website: <a href="http://{{ client.url }}">{{ client.url }}</a></p>
               <p>{{ client.description }}</p>
+              <p>Website: <a href="http://{{ client.url }}">{{ client.url }}</a></p>
             </div>
           {% endfor %}
         </div>
