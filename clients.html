@@ -7,18 +7,38 @@ clients:
   url: bitcoin.org
   image: bitcoin-qt.png
   description: Bitcoin-Qt is the frontend for the original code written by Satoshi. It replaced the aging wxWidgets version with a newer architecture that allows changes to be made easier and making the software more portable to different platforms. Bitcoin-Qt is well tested, and is a good starting point for any Bitcoin user looking for stability.
+  platforms:
+  - name: linux
+  - name: ubuntu
+  - name: win
+  - name: osx-uni
 - name: Armory
   url: bitcoinarmory.com
   image: armory.png
   description: Armory is an advanced client that incorporates a number of wallet management features for security. It works in conjunction with the Satoshi codebase to leverage a platform which maintain multiple wallets with encryption with support for offline transactions. Armory is security oriented and targets the high end of the Bitcoin userbase.
+  platforms:
+  - name: linux
+  - name: ubuntu
+  - name: win
 - name: Electrum
   url: ecdsa.org/electrum
   image: electrum.png
   description: Electrum is a client that was designed to simplify the use of Bitcoin. Electrum does not download the blockchain and startup times are instant which it does by pooling remote blockchain servers. You do not need to perform regular backups of your wallet as your wallet can be recovered from a secret passphrase which you can memorize or write on a piece of paper.
+  platforms:
+  - name: linux
+  - name: ubuntu
+  - name: win
+  - name: android
 - name: MultiBit
   url: multibit.org
   image: multibit.png
   description: MultiBit is a Bitcoin client. It understands the Bitcoin protocol so it can send and receive bitcoins. It makes the job of sending and receiving bitcoins simple and quick. MultiBit can handle multiple wallets so you can maintain different Bitcoin "accounts" for different purposes. On the 'Your Wallets' screen you can see all your wallets and transactions. MultiBit provides features like different languages, single click payment and quicker access to new features.
+  platforms:
+  - name: linux
+  - name: ubuntu
+  - name: win
+  - name: osx-uni
+  - name: ios
 ---
 
     <div class="container">
@@ -34,6 +54,11 @@ clients:
               <img src="img/clients/{{ client.image }}" />
               <p>{{ client.description }}</p>
               <p>Website: <a href="http://{{ client.url }}">{{ client.url }}</a></p>
+              <p>Platforms:
+                {% for platform in client.platforms %}
+                  <img src="img/ico-{{ platform.name }}.png" />
+                {% endfor %}
+              </p>
             </div>
           {% endfor %}
         </div>
