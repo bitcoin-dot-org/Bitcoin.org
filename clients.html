@@ -47,7 +47,7 @@ clients:
         <p>Bitcoin is a system of merchants, individuals, a network of participants and software. Together they maintain a mutually co-operating infrastructure without the need for authorities - a decentralised peer-to-peer system. A core layer of the Bitcoin system is the Bitcoin network through which people interact with it using Bitcoin client software. Below we list such software.</p>
         <div class="row">
           {% for client in page.clients %}
-          {% cycle '', '', '', '</div><br /><div class="row">' %}
+          {% cycle '', '', '', '</div><br><div class="row">' %}
             <div class="span-one-third">
               <h2><a href="http://{{ client.url }}">{{ client.name }}</a></h2>
               <img src="img/clients/{{ client.image }}" />
