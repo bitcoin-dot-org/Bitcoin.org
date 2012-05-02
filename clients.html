@@ -6,16 +6,26 @@ clients:
 - name: Bitcoin-Qt
   url: bitcoin.org
   image: bitcoin-qt.png
-  description: Bitcoin-Qt is the frontend for the original code written by Satoshi. It replaced the aging wxWidgets version with a newer architecture that allows changes to be made easier and making the software more portable to different platforms. Bitcoin-Qt is well tested, and is a good starting point for any Bitcoin user looking for stability.
+  description: The original software written by Satoshi Nakamoto, the projects founder. If you aren't sure which program to pick, this is a good bet. This application is a peer-to-peer client that builds the backbone of the Bitcoin network. It is suited for enthusiasts, merchants, miners, developers and people who want to help support the project. People who run Bitcoin-Qt are first class network citizens and have the highest levels of security, privacy and stability. However, it can be very resource intensive and you should be willing to leave it running in the background so other computers can connect to yours. If your computer is low powered or you aren't willing to tolerate a 24-hour+ initial start time, you should consider other clients. Cutting edge features tend to be implemented in other clients first. 
   platforms:
   - name: linux
   - name: ubuntu
   - name: win
   - name: osx-uni
+- name: MultiBit
+  url: multibit.org
+  image: multibit.png
+  description: MultiBit's primary focus is being fast and easy to use, even for people with no technical knowledge. It has a YouTube channel to help you learn the software, and includes helpful features such as an exchange rate ticker. MultiBit supports many languages such as German, Spanish and Greek. MultiBit synchronizes with the network much faster than Bitcoin-Qt and should be ready for you to use within a few minutes. This is a good choice for non technical users who want an easy to use experience, especially if you use a Mac.
+  platforms:
+  - name: linux
+  - name: ubuntu
+  - name: win
+  - name: osx-uni
+  - name: ios
 - name: Armory
   url: bitcoinarmory.com
   image: armory.png
-  description: Armory is an advanced client that incorporates a number of wallet management features for security. It works in conjunction with the Satoshi codebase to leverage a platform which maintain multiple wallets with encryption with support for offline transactions. Armory is security oriented and targets the high end of the Bitcoin userbase.
+  description: Armory has a focus on advanced wallet management features, such as the ability to construct transactions whilst disconnected from the internet. It operates in conjunction with a Bitcoin-Qt install. It requires a large amount of RAM to operate and if you use Windows, it requires a 64 bit version. It is a good choice for tech-savvy enthusiasts or merchants who want to try out cutting edge ideas in the Bitcoin world.
   platforms:
   - name: linux
   - name: ubuntu
@@ -23,22 +33,12 @@ clients:
 - name: Electrum
   url: ecdsa.org/electrum
   image: electrum.png
-  description: Electrum is a client that was designed to simplify the use of Bitcoin. Electrum does not download the blockchain and startup times are instant which it does by pooling remote blockchain servers. You do not need to perform regular backups of your wallet as your wallet can be recovered from a secret passphrase which you can memorize or write on a piece of paper.
+  description: Electrum's focus is speed, with low resource usage and making wallet backups easy. It operates in conjunction with remote servers that handle the most complicated parts of the Bitcoin system, which is why it's fast. However, by running this client you don't contribute your computers resources to the core network, and the remote servers that help give it good performance have the ability to see all your transactions and tie them together. Whilst you need provide no personal information to use Electrum (as is true for all Bitcoin apps), this means the privacy level is lower than for other clients. Merchants are recommended to use or other p2p clients. Electrum is not quite user friendly yet, making it more suited for tech-saavy individuals currently.
   platforms:
   - name: linux
   - name: ubuntu
   - name: win
   - name: android
-- name: MultiBit
-  url: multibit.org
-  image: multibit.png
-  description: MultiBit is a Bitcoin client. It understands the Bitcoin protocol so it can send and receive bitcoins. It makes the job of sending and receiving bitcoins simple and quick. MultiBit can handle multiple wallets so you can maintain different Bitcoin "accounts" for different purposes. On the 'Your Wallets' screen you can see all your wallets and transactions. MultiBit provides features like different languages, single click payment and quicker access to new features.
-  platforms:
-  - name: linux
-  - name: ubuntu
-  - name: win
-  - name: osx-uni
-  - name: ios
 ---
 
     <div class="container">
