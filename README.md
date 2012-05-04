@@ -2,8 +2,8 @@
 
 Installing dependencies
 
-    aptitude install rubygems
-    gem install jekyll aquarium json less
+    sudo apt-get install rubygems
+    sudo gem install jekyll aquarium json less therubyracer
 
 # Usage
 
