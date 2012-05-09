@@ -68,7 +68,8 @@ aliases:
 These ruby gems are required to build the website:
 
 * jekyll
-* json
 * aquarium
+* json
 * less
+* therubyracer
 
