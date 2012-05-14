@@ -1,0 +1,65 @@
+---
+layout: simple
+---
+    <div class="container">
+      <section id="dos">
+        <h1>CVE-2012-2459: Critical Vulnerability (denial-of-service)</h1>
+<p>
+A denial-of-service vulnerability that affects all versions of
+bitcoind and Bitcoin-Qt has been reported and fixed. An attacker
+could isolate a victim's node and cause the creation of blockchain
+forks.
+</p>
+<p>
+Because this bug could be exploited to severely disrupt the Bitcoin
+network we consider this a critical vulnerability, and encourage
+everybody to upgrade to the latest version: 0.6.2.
+</p>
+<p>
+Backports for older releases (0.5.5 and 0.4.6) are also available if
+you cannot upgrade to version 0.6.2.
+</p>
+<p>
+Full technical details are being withheld to give people the
+opportunity to upgrade.
+</p>
+<p>
+Thanks to Forrest Voight for discovering and reporting the vulnerability.
+</p>
+<p>
+Questions that might be frequently asked:
+</p>
+<p>
+How would I know if I am the victim of this attack?
+</p>
+<p>
+Your bitcoin process would stop processing blocks and would have a
+different block count from the rest of the network (you can see the
+current block count at websites like blockexplorer.com or
+blockchain.info).  Eventually it would display the message:
+</p>
+<blockquote>WARNING: Displayed transactions may not be correct!  You may need to
+upgrade, or other nodes may need to upgrade.</blockquote>
+<p>
+(note that this message is displayed whenever your bitcoin process
+detects that the rest of the network seems to have a different
+block count, which can happen for several reasons unrelated to
+this vulnerability).
+</p>
+<p>
+Could this bug be used to steal my wallet?
+</p>
+<p>
+No.
+</p>
+<p>
+Could this bug be used to install malware on my system?
+</p>
+<p>
+No.
+</p>
+        <div style="text-align:right">
+         <i>This notice last updated: Mon May 14 17:00:00 UTC 2012</i>
+        </div>
+      </section>
+    </div>
