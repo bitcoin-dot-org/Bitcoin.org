@@ -7,7 +7,7 @@ module Jekyll
 
 	class CategoryGenerator < Generator
 		def fetch_contributors
-			contributors = JSON.parse(open("http://github.com/api/v2/json/repos/show/bitcoin/bitcoin/contributors/anon").read)["contributors"]
+			contributors = JSON.parse(open("https://api.github.com/repos/bitcoin/bitcoin/contributors").read)
 
 			contributors.map do |x|
 				x['name'] = x['login'] unless x.has_key?('name')
@@ -37,7 +37,7 @@ module Jekyll
     
 		def generate(site)
 			@contributors = merge_contributors(fetch_contributors(), site.config['aliases']).sort_by{|c| - c['contributions']}
-			@primary_devs = JSON.parse(open("http://github.com/api/v2/json/repos/show/bitcoin/bitcoin/collaborators").read)["collaborators"]
+			@primary_devs = JSON.parse(open("https://api.github.com/repos/bitcoin/bitcoin/collaborators").read)
 
 			Aquarium::Aspects::Aspect.new :around, :invoking => :site_payload, :on_type => Site do |execution_point, site, *args|
 				result = execution_point.proceed
