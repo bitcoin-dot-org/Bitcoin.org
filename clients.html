@@ -76,6 +76,31 @@ clients:
   platforms:
   - name: linux
   - name: win
+
+proprietary-clients:
+- name: Bitcoin Wallet
+  url: play.google.com/store/apps/details?id=de.schildbach.wallet
+  image: bitcoin-wallet.png
+  description: |
+    Bitcoin Wallet is a standalone wallet for Android devices.
+    Its primary focus is security, ease of use and being independant
+    of centralized network components (servers). Thus, it uses the
+    SPV (simple payment verification) model. It supports
+    initiating transactions via QR code,  Bitcoin URIs or near-field
+    communication (NFC). It has a useful currency conversion
+    calculator and is localized to a dozen languages.
+  platforms:
+  - name: android
+
+website-frontends:
+- name: blockchain.info
+  url: blockchain.info
+  image: blockchain.info.png 
+  description: |
+    blockchain.info's My Wallet is a free service which you can use
+    to make worldwide, anonymous payments for less than at 1 cent per
+    transaction. They provide an easy interface for taking away the
+    complexity of managing your Bitcoin wallet.
 ---
 
     <div class="container">
@@ -105,34 +130,37 @@ clients:
         <h1>Proprietary Software</h1>
         <p><a href="http://en.wikipedia.org/wiki/Proprietary_software">Proprietary software</a> does not allow inspection of the sourcecode by users. These Bitcoin clients keep it hidden. This means users cannot examine how the program operates, and must trust the vendor to provide an authentic program. Users may be willing to eschew this security risk for any convenience and simplicity brought by placing responsibility with a vendor, instead of using <a href="http://en.wikipedia.org/wiki/Free_and_open_source_software">Free Software</a>.
         <div class="row">
-          <div class="span5">
-            <h2><a href="play.google.com/store/apps/details?id=de.schildbach.wallet">Bitcoin Wallet</a></h2>
-            <img src="img/clients/bitcoin-wallet.png" />
-            <p>Website: <a href="play.google.com/store/apps/details?id=de.schildbach.wallet">play.google.com</a></p>
-            <p>Bitcoin Wallet is a standalone wallet for Android devices.
-            Its primary focus is security, ease of use and being independant
-            of centralized network components (servers). Thus, it uses the
-            SPV (simple payment verification) model. It supports
-            initiating transactions via QR code,  Bitcoin URIs or near-field
-            communication (NFC). It has a useful currency conversion
-            calculator and is localized to a dozen languages.</p>
+          {% for client in page.proprietary-clients %}
+          {% cycle '', '', '', '</div><br><div class="row">' %}
+            <div class="span-one-third">
+              <h2><a href="http://{{ client.url }}">{{ client.name }}</a></h2>
+              <img src="img/clients/{{ client.image }}" />
+              <p>{{ client.description }}</p>
+              <p>Website: <a href="http://{{ client.url }}">{{ client.url }}</a></p>
               <p>Platforms:
-                  <img src="img/ico-android.png" />
+                {% for platform in client.platforms %}
+                  <img src="img/ico-{{ platform.name }}.png" />
+                {% endfor %}
               </p>
-          </div>
+            </div>
+          {% endfor %}
         </div>
       </section>
 
       <section id="website-frontends">
         <h1>Website Frontends</h1>
         <p>These websites act like banks holding funds on your behalf. They often provide convenience and ease of use, at the expense of security. You are always trusting the operators of these sites. Many such sites have been compromised before, so users are advised to do their due diligence.</p>
+        <p>This class of clients usually runs on all platforms, and only requires a web browser to operate them.</p>
         <div class="row">
-          <div class="span5">
-            <h2><a href="http://blockchain.info/">blockchain.info</a></h2>
-            <img src="img/clients/blockchain.info.png" />
-            <p>Website: <a href="http://blockchain.info/">blockchain.info</a></p>
-            <p>blockchain.info's My Wallet is a free service which you can use to make worldwide, anonymous payments for less than at 1 cent per transaction. They provide an easy interface for taking away the complexity of managing your Bitcoin wallet.</p>
-          </div>
+          {% for client in page.website-frontends %}
+          {% cycle '', '', '', '</div><br><div class="row">' %}
+            <div class="span-one-third">
+              <h2><a href="http://{{ client.url }}">{{ client.name }}</a></h2>
+              <img src="img/clients/{{ client.image }}" />
+              <p>{{ client.description }}</p>
+              <p>Website: <a href="http://{{ client.url }}">{{ client.url }}</a></p>
+            </div>
+          {% endfor %}
         </div>
       </section>
     </div>
