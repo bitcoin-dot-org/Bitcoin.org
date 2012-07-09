@@ -44,6 +44,21 @@ clients:
   - name: linux
   - name: win
   - name: osx-uni
+- name: Electrum
+  url: ecdsa.org/electrum
+  image: electrum.png
+  description: |
+    Electrum's focus is speed, with low resource usage and
+    simplifying Bitcoin. You do not need to perform regular
+    backups, because your wallet can be recovered from a secret
+    phrase that you can memorize or write on paper. Startup
+    times are instant because it operates in conjuction with
+    high-performance servers that handle the most complicated
+    parts of the Bitcoin system.
+  platforms:
+  - name: linux
+  - name: win
+  - name: android
 - name: Armory
   url: bitcoinarmory.com
   image: armory.png
@@ -61,22 +76,7 @@ clients:
   platforms:
   - name: linux
   - name: win
-- name: Electrum
-  url: ecdsa.org/electrum
-  image: electrum.png
-  description: |
-    Electrum's focus is speed, with low resource usage and
-    simplifying Bitcoin. You do not need to perform regular
-    backups, because your wallet can be recovered from a secret
-    phrase that you can memorize or write on paper. Startup
-    times are instant because it operates in conjuction with
-    high-performance servers that handle the most complicated
-    parts of the Bitcoin system.
-  platforms:
-  - name: linux
-  - name: win
-  - name: android
-- name: Bitcoin Wallet
+- name: Bitcoin Wallet (for Android)
   url: play.google.com/store/apps/details?id=de.schildbach.wallet
   image: bitcoin-wallet.png
   description: |
