@@ -44,6 +44,23 @@ clients:
   - name: linux
   - name: win
   - name: osx-uni
+- name: Armory
+  url: bitcoinarmory.com
+  image: armory.png
+  description: |
+    Armory is a Bitcoin client that works on top of
+    Bitcoin-Qt, expanding it with functionality for Bitcoin
+    power users. It focuses on advanced features and security
+    options, including "cold-storage" for maintaining Bitcoins
+    on an offline computer to protect your funds from online
+    threats. Armory supports multiple encrypted wallets, each
+    of which only needs to be backed up once using a printer or
+    removable media. Armory is a good choice for experienced
+    Bitcoin users, seeking additional flexibility and security
+    for managing their funds.
+  platforms:
+  - name: linux
+  - name: win
 - name: Electrum
   url: ecdsa.org/electrum
   image: electrum.png
@@ -72,37 +89,6 @@ clients:
     calculator and is localized to a dozen languages.
   platforms:
   - name: android
-- name: Armory
-  url: bitcoinarmory.com
-  image: armory.png
-  description: |
-    Armory is a Bitcoin client that works on top of
-    Bitcoin-Qt, expanding it with functionality for Bitcoin
-    power users. It focuses on advanced features and security
-    options, including "cold-storage" for maintaining Bitcoins
-    on an offline computer to protect your funds from online
-    threats. Armory supports multiple encrypted wallets, each
-    of which only needs to be backed up once using a printer or
-    removable media. Armory is a good choice for experienced
-    Bitcoin users, seeking additional flexibility and security
-    for managing their funds.
-  platforms:
-  - name: linux
-  - name: win
-
-proprietary-clients:
-
-website-frontends:
-- name: blockchain.info
-  url: blockchain.info
-  image: blockchain.info.png 
-  description: |
-    blockchain.info's My Wallet is a free service which you can use
-    to make worldwide payments for less than 1 cent per transaction.
-    They provide an easy interface for taking away the complexity
-    of managing your Bitcoin wallet.
-    Anonymous payments are possible using their recently unveiled
-    mixing service.
 ---
 
     <div class="container">
@@ -128,42 +114,19 @@ website-frontends:
         </div>
       </section>
 
-      <section id="proprietary">
-        <h1>Proprietary Software</h1>
-        <p><a href="http://en.wikipedia.org/wiki/Proprietary_software">Proprietary software</a> does not allow inspection of the sourcecode by users. These Bitcoin clients keep it hidden. This means users cannot examine how the program operates, and must trust the vendor to provide an authentic program. Users may be willing to eschew this security risk for any convenience and simplicity brought by placing responsibility with a vendor, instead of using <a href="http://en.wikipedia.org/wiki/Free_and_open_source_software">Free Software</a>.
-        <div class="row">
-          {% for client in page.proprietary-clients %}
-          {% cycle '', '', '', '</div><br><div class="row">' %}
-            <div class="span-one-third">
-              <h2><a href="http://{{ client.url }}">{{ client.name }}</a></h2>
-              <img src="img/clients/{{ client.image }}" />
-              <p>{{ client.description }}</p>
-              <p>Website: <a href="http://{{ client.url }}">{{ client.url }}</a></p>
-              <p>Platforms:
-                {% for platform in client.platforms %}
-                  <img src="img/ico-{{ platform.name }}.png" />
-                {% endfor %}
-              </p>
-            </div>
-          {% endfor %}
-        </div>
-      </section>
-
+    <!--
       <section id="website-frontends">
         <h1>Website Frontends</h1>
-        <p>These websites act like banks holding funds on your behalf. They often provide convenience and ease of use, at the expense of security. You are always trusting the operators of these sites. Many such sites have been compromised before, so users are advised to do their due diligence.</p>
-        <p>This class of clients usually runs on all platforms, and only requires a web browser to operate them.</p>
         <div class="row">
-          {% for client in page.website-frontends %}
-          {% cycle '', '', '', '</div><br><div class="row">' %}
-            <div class="span-one-third">
-              <h2><a href="http://{{ client.url }}">{{ client.name }}</a></h2>
-              <img src="img/clients/{{ client.image }}" />
-              <p>{{ client.description }}</p>
-              <p>Website: <a href="http://{{ client.url }}">{{ client.url }}</a></p>
-            </div>
-          {% endfor %}
+          <div class="span5">
+            <h2><a href="http://bitcoin.org">Bitcoin-Qt</a></h2>
+            <img src="img/bitcoin.png" />
+            <p>Website: <a href="http://bitcoin.org">bitcoin.org</a></p>
+            <p>Bitcoin is one of the first implementations of a concept called crypto-currency, which was first described in 1998 by Wei Dai on the cypherpunks mailing list. Building upon the notion that money is any object, or any sort of record, accepted as payment for goods and services and repayment of debts in a given country or socio-economic context, Bitcoin is designed around the idea of using cryptography to control the creation and transfer of money, rather than relying on central authorities.</p>
+          </div>
+          ...
         </div>
       </section>
+    -->
     </div>
 
