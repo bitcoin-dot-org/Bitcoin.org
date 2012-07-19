@@ -48,7 +48,7 @@ Bitcoin v0.3.24 is now available for download at
 * `layout: post` important for Jekyll
 * `title: ...` will be used as the title
 * `src: ...` (optional) link to full annoucement
-* `categorry: ...` category of post
+* `category: ...` category of post
 ** `releases`
 ** `events`
 
