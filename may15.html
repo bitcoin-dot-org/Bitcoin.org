@@ -1,0 +1,60 @@
+---
+layout: simple
+---
+    <div class="container">
+      <section id="upgrade">
+        <h1>15 May 2013 Upgrade Deadline</h1>
+        <h2>What is happening</h2>
+<p>
+If you are using Bitcoin-Qt/bitcoind version 0.7.2 or earlier, you must take action
+before 15 May, 2013. If you do nothing, you are likely to be left behind and
+will be out of sync with the rest of the Bitcoin network.
+</p>
+<p>
+We recommend that you
+<a href="https://sourceforge.net/projects/bitcoin/files/Bitcoin/">upgrade to version 0.8.1</a>
+before the 15'th of May to avoid any issues.  If you are a solo miner or mining pool operator,
+please see the the notes at the end of this page for how to upgrade safely.
+</p>
+        <h2>If you cannot upgrade to version 0.8.1</h2>
+<p>
+If you cannot upgrade to the latest version, you can still avoid the problem.
+Create a file called DB_CONFIG in the bitcoin data directory, containing
+these two lines:
+</p>
+<blockquote>
+<pre>
+set_lg_dir database
+set_lk_max_locks 50000
+</pre>
+</blockquote>
+<p>
+<a href="https://en.bitcoin.it/wiki/Data_directory">Look here</a> if you need help
+finding the bitcoin data directory.
+</p>
+        <h2>Miners/mining pool operators</h2>
+<p>
+If you are creating new blocks (you are a solo miner or mining pool operator), then
+you should be aware that upgrading from 0.7 to 0.8 requires a lengthy
+re-indexing operation; you <b>must</b> wait for the reindex to complete before
+serving work to miners.
+</p>
+<p>
+And if you are creating blocks and cannot upgrade to version 0.8.1 for some
+reason, you should <b>not</b> set_lk_max_locks in a DB_CONFIG file until
+May 15'th; if you increase locks before then you run the risk of creating
+or building on blocks incompatible with the rest of the network.
+</p>
+        <h2>Why this is necessary</h2>
+<p>
+A bug cause a <a href="chainfork.html">block chain fork on 11 March, 2013</a>.
+After investigating
+that bug, we determined that the bug can happen even if the entire network was
+still running old versions of Bitcoin-Qt/bitcoind. Therefore, the only option is to
+require everybody to either upgrade or workaround the bug.
+</p>
+        <div style="text-align:right">
+         <i>This notice last updated: 15 March 2013 23:00 UTC</i>
+        </div>
+      </section>
+    </div>
