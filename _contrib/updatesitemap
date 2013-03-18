@@ -1,0 +1,26 @@
+#!/bin/bash
+#Should be called each time a page is updated, added or removed to update sitemaps
+echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
+echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
+for l in *; do
+	if [[ ! -d $l || $l == "_site" || $l == "_layouts" ]]; then
+		continue
+	fi
+	files=`find ${l} -name "*.html" -type f`
+	for f in $files; do
+		c=(${f//"."/ })
+		c=${c[@]:0:1}
+		if [[ $c == "${l}/index" ]]; then
+			c=(${c//"/"/ })
+			c="${c[@]:0:1}/"
+		fi
+		t=$(stat -c "%y" ${f})
+		t=(${t//" "/ })
+		t=${t[@]:0:1}
+		echo "<url>" >> sitemap.xml
+		echo "	<loc>http://bitcoin.org/${c}</loc>" >> sitemap.xml
+		echo "	<lastmod>${t}</lastmod>" >> sitemap.xml
+		echo "</url>" >> sitemap.xml
+	done
+done
+echo '</urlset>' >> sitemap.xml

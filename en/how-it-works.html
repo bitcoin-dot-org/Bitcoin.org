@@ -1,0 +1,26 @@
+---
+layout: base-en
+title: How does Bitcoin work? - Bitcoin
+---
+<h1>How does Bitcoin work?</h1>
+
+<p>OK, this is a question that often causes confusion. Here's a quick explanation!
+
+<h2>The basics for a new user</h2>
+<p>As a new user, you only need to <a href="/en/choose-your-wallet">choose a wallet</a> that you will install on your computer or on your mobile phone. Once you have your wallet installed, it will generate your first Bitcoin address and you can create more whenever you need one. You can disclose one of your Bitcoin addresses to your friends so that they can pay you or vice versa, you can pay your friends if they give you their addresses. In fact, this is pretty similar to how email works. So all that is left to do at this point is to get some bitcoins and to <a href="/en/you-need-to-know">keep them safe</a>. In order to start using Bitcoin, you are not required to understand the technical details.</p>
+
+<p>However, if you want to know more, keep reading!</p>
+
+<p><br><img src="/en/img/bitcoin_at_a_glance.svg" alt="Bitcoin overview" /></p>
+
+<h2>Blockchain</h2>
+<p>The blockchain is a <b>shared public transaction log</b> on which the entire Bitcoin network relies. All confirmed transactions are included in the blockchain with no exception. This way, new transactions can be verified to be spending bitcoins that are actually owned by the spender. The integrity and the chronological order of the blockchain are enforced with <a href="/en/vocabulary#cryptography">cryptography</a>.</p>
+
+<h2>Transaction</h2>
+<p>A transaction is <b>a transfer of value between Bitcoin addresses</b> that gets included in the blockchain. Bitcoin wallets keep a secret piece of data called a <a href="/en/vocabulary#private-key"><i>private key</i></a> for each Bitcoin address. Private keys are used to sign transactions, providing a mathematical proof that they come from the owner of the addresses. The <a href="/en/vocabulary#signature"><i>signature</i></a> also prevents the transaction from being altered by anybody once it has been issued. All transactions are broadcast between users and confirmed by the network in the following minutes, through a process called <a href="/en/vocabulary#mining"><i>mining</i></a>.</p>
+
+<h2>Mining</h2>
+<p>Mining is a <b>distributed consensus system</b> that is used to <a href="/en/vocabulary#confirmation"><i>confirm</i></a> waiting transactions by including them in the blockchain. It enforces a chronological order in the blockchain, protects the neutrality of the network, and allows different computers to agree on the state of the system. To be confirmed, transactions must be packed in a <a href="/en/vocabulary#block"><i>block</i></a> that fits very strict cryptographic rules that will be verified by the network. These rules prevent any previous block from being modified because doing so would invalidate all following blocks. Mining also creates the equivalent of a competitive lottery that prevents any individual from easily adding new blocks consecutively in the blockchain. This way, no individuals can control what is included in the blockchain or replace parts of the blockchain to roll back their own spends.</p>
+
+<h2>Going down the rabbit hole</h2>
+<p>This is only a very short and concise summary of the system. If you want to get into the details, you can <a href="/bitcoin.pdf">read the original paper</a> that describes the system's design, and explore the <a href="https://en.bitcoin.it/wiki/Main_Page" target="_blank">Bitcoin wiki</a>.</p>

@@ -1,0 +1,25 @@
+function supportsSVG(){
+//Old FF 3.5 and Safari 3 versions have a very poor svg support
+//http://www.w3.org/TR/SVG11/feature#Image Defeat FF 3.5 only
+//http://www.w3.org/TR/SVG11/feature#Animation Defeat Saf 3 but also returns false in IE9
+//http://www.w3.org/TR/SVG11/feature#BasicGraphicsAttribute Defeat Saf 3 but also returns false in Chrome and safari4
+//http://www.w3.org/TR/SVG11/feature#Text Defeat Saf 3 but also returns false in FF and safari4
+if(!document.createElementNS||!document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect)return false;
+if(!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"))return false;
+if(!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicGraphicsAttribute","1.1")&&!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Animation","1.1")&&!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Text","1.1"))return false;
+return true;
+}
+function getStyle(a,b){
+if(window.getComputedStyle)return document.defaultView.getComputedStyle(a,null).getPropertyValue(b);
+var n=b.indexOf('-');
+if(n!==-1)b=b.substr(0,n)+b.substr(n+1,1).toUpperCase()+b.substr(n+2);
+return a.currentStyle[b];
+}
+function svgfallback(){
+if(supportsSVG())return;  
+for(var i=0,nd=document.getElementsByTagName('*'),n=nd.length;i<n;i++){
+	if(nd[i].nodeName=='IMG'&&/.*\.svg$/.test(nd[i].src))nd[i].src=nd[i].src.slice(0,-3)+'png';
+	if(/\.svg/.test(getStyle(nd[i],'background-image')))nd[i].style.backgroundImage=getStyle(nd[i],'background-image').replace('.svg','.png');
+	if(/\.svg/.test(getStyle(nd[i],'background')))nd[i].style.background=getStyle(nd[i],'background').replace('.svg','.png');
+}
+}
