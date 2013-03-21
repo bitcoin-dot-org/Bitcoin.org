@@ -41,7 +41,10 @@ module Jekyll
 
           css_file = digest + ".css"
           css_path = File.join(site.dest, css_file)
-
+          
+          if !Dir.exist?(site.dest)
+            Dir.mkdir(site.dest)
+          end
           File.open(css_path, "w") do |f|
             f.write(css)
           end

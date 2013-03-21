@@ -1,3 +1,13 @@
+DOWNLOAD_VERSION: 0.8.1
+ALERT_CLASS: 
+ALERT: 
+
+langs:
+- langcode: fr
+  langtext: Français
+- langcode: en
+  langtext: English
+  
 safe:        false
 auto:        false
 server:      false
@@ -38,21 +48,7 @@ kramdown:
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: style
-
-navigation:
-- text: Home
-  url: /
-  section: index
-- text: News
-  url: /news.html
-  section: news
-- text: About
-  url: /about.html
-  section: about
-- text: Clients
-  url: /clients.html
-  section: clients
-
+    
 aliases:
   s_nakamoto: Satoshi Nakamoto
   --author=Satoshi Nakamoto: Satoshi Nakamoto

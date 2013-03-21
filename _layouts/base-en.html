@@ -1,0 +1,95 @@
+---
+langcode: en
+langtext: English
+menufor:
+- text: Individuals
+  url: /en/bitcoin-for-individuals
+- text: Organizations
+  url: /en/bitcoin-for-organizations
+- text: Developers
+  url: /en/bitcoin-for-developers
+- text: Enthusiasts
+  url: /en/bitcoin-for-enthusiasts
+menu:
+- text: How it works
+  url: /en/how-it-works
+- text: Vocabulary
+  url: /en/vocabulary
+- text: Resources
+  url: /en/resources
+- text: Community
+  url: /en/community
+- text: Development
+  url: /en/development
+- text: Foundation
+  url: /en/foundation
+- text: About
+  url: /en/about
+---
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="{{ page.langcode }}">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>{{ page.title }}</title>
+{% lesscss bootstrap.less %}
+<script type="text/javascript" src="/js/main.js"></script>
+<link rel="shortcut icon" href="/favicon.png">
+{% for lang in site.langs %}{% if lang.langcode != page.langcode %}
+<link rel="alternate" hreflang="{{ lang.langcode }}" href="/{{ lang.langcode }}" />
+{% endif %}{% endfor %}
+</head>
+<body>
+{% if site.ALERT or site.ALERT_en %}
+  {% if site.ALERT_CLASS %}{% assign class = site.ALERT_CLASS%}{% endif %}{% if site.ALERT_CLASS_en %}{% assign class = site.ALERT_CLASS_en%}{% endif %}
+  {% if site.ALERT %}{% assign alert = site.ALERT%}{% endif %}{% if site.ALERT_en %}{% assign alert = site.ALERT_en%}{% endif %}
+  <div class="alert-message {{ class }}">
+    <div><div>{{ alert }}</div></div>
+  </div>
+{% endif %}
+  <div id="head">
+    <div class="wrap">
+    <ul id="lang">
+      <li><a href="javascript:void();">{{ page.langtext }}</a>
+      <ul>
+        {% for lang in site.langs %}{% if lang.langcode != page.langcode %}
+        <li><a href="/{{ lang.langcode }}/">{{ lang.langtext }}</a></li>
+        {% endif %}{% endfor %}
+      </ul>
+      </li>
+    </ul>
+    <div id="logo"><a href="/{{ page.langcode }}/"><span>Bitcoin</span></a></div>
+    <ul id="menufor">
+      {% for link in page.menufor %}{% assign active = nil %}{% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
+      <li{% if active %} class="{{ active }}"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+      {% endfor %}
+    </ul>
+    </div>
+    <ul id="menu" class="wrap">
+        {% for link in page.menu %}{% assign active = nil %}{% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
+        <li{% if active %} class="{{ active }}"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+        {% endfor %}
+    </ul>
+  </div>
+  <div id="body">
+    <div class="wrap">
+      <div id="content">
+    {{ content }}
+      </div>
+      <div id="rightbox">
+        <div id="choose">
+          <a href="/en/choose-your-wallet"><img src="/img/but_start.svg" alt="Choose your wallet">Choose your wallet</a>
+        </div>
+        <div id="before">
+          <a href="/en/you-need-to-know"><img src="/img/but_warn.svg" alt="You need to know">You need to know</a>
+        </div>
+        <div id="support">
+          <a href="/en/support-bitcoin"><img src="/img/but_involve.svg" alt="Support Bitcoin">Support Bitcoin</a>
+        </div>
+      </div>
+      <div id="footer"><div>© <a href="https://bitcoinfoundation.org/" target="_blank">The Bitcoin Foundation</a> 2009–2013 Released under the <a href="http://creativecommons.org/licenses/MIT/" target="_blank">MIT license</a></div></div>
+    </div>
+  </div>
+  <script type="text/javascript">svgfallback();</script>
+</body>
+
+</html>
