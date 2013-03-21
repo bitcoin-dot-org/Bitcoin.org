@@ -1,16 +1,22 @@
 ---
+layout: base-en
+title: Bitcoin
 ---
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<title>Bitcoin</title>
-<meta name="description" content="An open source P2P digital currency. Bitcoin is a currency, a protocol and software that enables instant peer to peer transactions, worldwide payments, low or zero processing fees and much more!" />
 <script>
+//Auto redirect to the appropriate language
 var langs={};{% for lang in site.langs %}{% if lang.langcode != page.langcode %}langs['{{ lang.langcode }}']=true;{% endif %}{% endfor %}
 var lang=(navigator.language)?navigator.language:navigator.userLanguage;
 lang=lang.split('_')[0];
 if(!langs[lang])lang='en';
 window.location.href='/'+lang+'/';
 </script>
-</head>
-</html>
+<h1>An open source P2P digital currency</h1>
+<p style="font-size:20px;">Bitcoin is a currency, a protocol, and a software that enables
+<ul style="font-size:20px;">
+  <li style="padding:4px 0px;">Instant peer to peer transactions</li>
+  <li style="padding:4px 0px;">Worldwide payments</li>
+  <li style="padding:4px 0px;">Low or zero processing fees</li>
+  <li style="padding:4px 0px;">And much more!</li>
+</ul>
+<p>Bitcoin uses peer to peer technology to operate with no central authority; managing transactions and issuing Bitcoins are carried out <b>collectively by the network</b>. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment systems.</p>
+<p>The software is a community-driven <a href="http://www.fsf.org/about/what-is-free-software">free open source</a> project, released under the <a href="http://creativecommons.org/licenses/MIT/">MIT license</a>.</p>
