@@ -1,4 +1,4 @@
-# Requirements
+﻿# Requirements
 
 Installing dependencies
 
@@ -85,3 +85,4 @@ These ruby gems are required to build the website:
 * less
 * therubyracer
 
+[![Code Climate](https://codeclimate.com/github/bitcoin/bitcoin.org.png)](https://codeclimate.com/github/bitcoin/bitcoin.org)
