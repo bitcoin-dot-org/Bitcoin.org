@@ -35,5 +35,6 @@ for(var i=0,nd=document.getElementsByTagName('*'),n=nd.length;i<n;i++){
 	for(var ii=0,as=d.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==d.parentNode){var dd=as[ii];break;}}
 	for(var ii=0,as=s.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==s.parentNode){var ss=as[ii];break;}}
 	dd.innerHTML=ss.innerHTML;
+	dd.href=ss.href;
 }
 }
