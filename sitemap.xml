@@ -1,7 +1,8 @@
 ---
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{% for sect in site.section %}{% for lang in sect[1] %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml">{% for sect in site.section %}{% for lang in sect[1] %}
 <url>
   <loc>http://bitcoin.org/{{ lang[0] }}/{{ lang[1] }}</loc>{% for lan in sect[1] %}{% if lang[0] != lan[0] %}
   <xhtml:link
