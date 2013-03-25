@@ -374,12 +374,12 @@ position:relative;
 .previewrow>h2{
 font-size:18px;
 }
-.previewrow>span>a>img{
+.previewrow>div>a>img{
 display:block;
 margin:auto;
 margin-bottom:10px;
 }
-.previewrow>span>a,.previewrow>span>a:visited,.previewrow>span>a:link,.previewrow>span>a:active{
+.previewrow>div>a,.previewrow>div>a:visited,.previewrow>div>a:link,.previewrow>div>a:active{
 font-size:14px;
 text-align:center;
 text-decoration:none;
@@ -389,7 +389,7 @@ height:110px;
 display:inline-block;
 vertical-align:top;
 }
-.previewrow>span>span{
+.previewrow>div>div{
 opacity:0;
 transition:opacity 400ms ease-out;
 -moz-transition:opacity 400ms ease-out;
@@ -406,42 +406,44 @@ background:url(/img/bubble.svg) bottom center no-repeat;
 z-index:1000;
 overflow:hidden;
 }
-.previewrow>span>span>h2{
+.previewrow>div>div>h2{
 margin-top:20px;
 }
-.previewrow>span:hover>span{
+.previewrow>div:hover>div{
 opacity:1;
 width:auto;
 height:280px;
 }
-.previewrow>span{
+.previewrow>div{
 display:inline-block;
+zoom:1;*display:inline;/*IE7 support*/
 position:relative;
 margin-right:22px;
 margin-bottom:22px;
+vertical-align:top;
 }
-.previewrow>span.lastspan{
+.previewrow>div.last{
 margin-right:0px;
 }
-.previewrow>span>span>div{
+.previewrow>div>div>span{
 position:absolute;
-top:28px;
+top:24px;
 right:30px;
 }
-.previewrow>span>span>div>img{
+.previewrow>div>div>span>img{
 margin-left:4px;
 }
-.previewrow>span>span>h2:first-child+div+p{
+.previewrow>div>div>h2:first-child+span+p{
 font-size:15px;
 }
-.previewrow>span>span>h2:first-child+div+p+p{
+.previewrow>div>div>h2:first-child+span+p+p{
 text-align:center;
 position:absolute;
 width:290px;
 top:190px;
 left:0px;
 }
-.previewrow>span>span a,.previewrow>span>span a:link,.previewrow>span>span a:visited,.previewrow>span>span a:active{
+.previewrow>div>div a,.previewrow>div>div a:link,.previewrow>div>div a:visited,.previewrow>div>div a:active{
 font-weight:bold;
 text-decoration:none;
 font-size:20px;
