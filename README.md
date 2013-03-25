@@ -28,6 +28,7 @@ Installing dependencies
 4. Sitemap, Add links to your translated pages in _config.yml under their equivalent english version.
 5. Images, Update the few images that contain text with any vector image editing software like Inkscape.
 6. Languages, Make sure that the languages are listed in alphabetical order in _config.yml
+7. Post, Remove sections that use _posts such as "version-history" and "news". Those are not meant to be translated yet.
 
 * A tips for translators, you can preview your work in a simple Google chrome browser with no HTTP server. Just go to the existing english page, open the javascript console with CTRL + SHIFT + J and use the following command to make the page editable : document.body.contentEditable=true
 
