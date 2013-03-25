@@ -8,18 +8,32 @@ Installing dependencies
 # Usage
 
 * update DOWNLOAD\_VERSION in _config.yml
-* run ./_contrib/updatesitemap if you changed a page
 * run jekyll
 * output will be in \_site/
 
-# Translation
+## Translation
 
-* Find the two letter ISO 639-1 code for your language (fr, en, jp)
-* Run ./_contrib/translate (language code) (language name)
-* Make sure that languages are listed in alphabetical order in _config.yml
-* Rename html files in (lang)/ according to your language. And update links in _layouts/base-(lang).html and (lang)/*.html to reflect your changes.
-* Translate all .html and images files in (lang)/ and _layouts/base-(lang).html
+### Guidelines
+
+* You must be a native speaker for the language you choose to translate.
+* At least one other reviewer might be required and is highly recommanded.
+* Try to avoid changing the meaning of any statements. If you need to change the meaning of anything, make a note of it and list that in the pull request.
+* Sentences and popular expressions should be adapted so that they sound native in your language.
+
+### How to translate
+
+1. Begin, Run ./_contrib/translate (ISO 639-1 language code) (language name) to create your language. Ex : ./_contrib/translate fr "Français"
+2. Texts, Open .html files in the appropriate folder and in _layouts and translate all human readable english dialogs (without touching the html tags and the page id).
+3. Links, Update the name of each .html file so that it reflects your language and update the links in the .html files accordingly.
+4. Sitemap, Add links to your translated pages in _config.yml under their equivalent english version.
+5. Images, Update the few images that contain text with any vector image editing software like Inkscape.
+6. Languages, Make sure that the languages are listed in alphabetical order in _config.yml
+
 * A tips for translators, you can preview your work in a simple Google chrome browser with no HTTP server. Just go to the existing english page, open the javascript console with CTRL + SHIFT + J and use the following command to make the page editable : document.body.contentEditable=true
+
+### Update
+
+All changes made in the english version can be easily tracked on github.
 
 ## Advanced Usage
 

@@ -12,12 +12,9 @@ sed -i "s_href=\"/en/_href=\"/${1}/_g" ${1}/*.html
 sed -i "s_src=\"/en/_src=\"/${1}/_g" ${1}/*.html
 sed -i "s_href=\"/en/_href=\"/${1}/_g" _layouts/base-${1}.html
 sed -i "s_src=\"/en/_src=\"/${1}/_g" _layouts/base-${1}.html
-sed -i "s_langcode: en_langcode: ${1}_g" _layouts/base-${1}.html
-sed -i "s_langtext: English_langtext: ${2}_g" _layouts/base-${1}.html
+sed -i "s_lang: en_lang: ${1}_g" _layouts/base-${1}.html
 sed -i "s/ALERT_CLASS_en/ALERT_CLASS_${1}/g" _layouts/base-${1}.html
 sed -i "s/ALERT_en/ALERT_${1}/g" _layouts/base-${1}.html
-sed -i "/langcode: ${1}/d" _config.yml
-sed -i "/langtext: ${2}/d" _config.yml
-sed -i "/langs:/a - langtext: ${2}" _config.yml
-sed -i "/langs:/a - langcode: ${1}" _config.yml
-sed -i "s_- langtext: ${2}_  langtext: ${2}_g" _config.yml
+sed -i "/${1}: ${2}/d" _config.yml
+sed -i "/langs:/a - ${1}: ${2}" _config.yml
+sed -i "s_- ${1}: ${2}_  ${1}: ${2}_g" _config.yml
