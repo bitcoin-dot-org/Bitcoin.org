@@ -77,7 +77,7 @@ cursor:pointer;
 #lang{
 position:absolute;
 right:0px;
-height:28px;
+height:30px;
 border-left:1px solid transparent;
 border-right:1px solid transparent;
 border-top:1px solid transparent;
@@ -85,10 +85,11 @@ border-top:1px solid transparent;
 #lang>li>ul{
 display:none;
 right:-1px;
-top:26px;
+top:28px;
 position:absolute;
 background-color:#fff;
 margin-left:-5px;
+padding-bottom:4px;
 border-radius-bottom-right:5px;
 -webkit-border-radius-bottom-right:5px;
 border-radius-bottom-left:5px;
@@ -107,8 +108,11 @@ background-color:#fff;
 #lang>li:hover>ul{
 display:block;
 }
-#lang a,#lang a:link,#lang a:visited,#lang a:active{
+#lang>li>a,#lang>li>a:link,#lang>li>a:visited,#lang>li>a:active{
 padding:4px 8px;
+}
+#lang a,#lang a:link,#lang a:visited,#lang a:active{
+padding:2px 8px;
 text-decoration:none;
 color:#000;
 font-size:18px;
