@@ -1,44 +1,38 @@
 ---
-ALERT_CLASS:
-ALERT:
-langcode: fr
-langtext: Français
+lang: fr
 menufor:
 - text: Particuliers
-  url: /fr/bitcoin-pour-particuliers
+  url: bitcoin-pour-particuliers
 - text: Organisations
-  url: /fr/bitcoin-pour-organisations
+  url: bitcoin-pour-organisations
 - text: Développeurs
-  url: /fr/bitcoin-pour-developpeurs
+  url: bitcoin-pour-developpeurs
 - text: Passionnés
-  url: /fr/bitcoin-pour-passionnes
+  url: bitcoin-pour-passionnes
 menu:
 - text: Comment ça marche
-  url: /fr/comment-ca-marche
+  url: comment-ca-marche
 - text: Vocabulaire
-  url: /fr/vocabulaire
+  url: vocabulaire
 - text: Ressources
-  url: /fr/ressources
+  url: ressources
 - text: Communauté
-  url: /fr/communaute
+  url: communaute
 - text: Développement
-  url: /fr/developpement
+  url: developpement
 - text: Fondation
-  url: /fr/fondation
+  url: fondation
 - text: À propos
-  url: /fr/a-propos
+  url: a-propos
 ---
 <!DOCTYPE HTML>
-<html lang="{{ page.langcode }}">
+<html lang="{{ page.lang }}">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>{{ page.title }}</title>
 {% lesscss bootstrap.less %}
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
-{% for lang in site.langs %}{% if lang.langcode != page.langcode %}
-<link rel="alternate" hreflang="{{ lang.langcode }}" href="/{{ lang.langcode }}" />
-{% endif %}{% endfor %}
 </head>
 <body>
 {% if site.ALERT or site.ALERT_fr %}
@@ -51,24 +45,24 @@ menu:
   <div id="head">
     <div class="wrap">
     <ul id="lang">
-      <li><a href="#" onclick="return false;">{{ page.langtext }}</a>
+      <li><a href="#" onclick="return false;">{{ site.langs[page.lang] }}</a>
       <ul>
-        {% for lang in site.langs %}{% if lang.langcode != page.langcode %}
-        <li><a href="/{{ lang.langcode }}/">{{ lang.langtext }}</a></li>
+        {% for lang in site.langs %}{% if lang[0] != page.lang %}{% assign la = lang[0]%}
+        <li><a href="/{{ lang[0] }}/{{ site.section[page.id][la] }}">{{ lang[1] }}</a></li>
         {% endif %}{% endfor %}
       </ul>
       </li>
     </ul>
-    <div id="logo"><a href="/{{ page.langcode }}/"><span>Bitcoin</span></a></div>
+    <div id="logo"><a href="/{{ page.lang }}/"><span>Bitcoin</span></a></div>
     <ul id="menufor">
-      {% for link in page.menufor %}{% assign active = nil %}{% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
-      <li{% if active %} class="{{ active }}"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+      {% for link in page.menufor %}{% assign active = nil %}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
+      <li{% if active %} class="{{ active }}"{% endif %}><a href="/{{ page.lang }}/{{ link.url }}">{{ link.text }}</a></li>
       {% endfor %}
     </ul>
     </div>
     <ul id="menu" class="wrap">
-        {% for link in page.menu %}{% assign active = nil %}{% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
-        <li{% if active %} class="{{ active }}"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+        {% for link in page.menu %}{% assign active = nil %}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
+        <li{% if active %} class="{{ active }}"{% endif %}><a href="/{{ page.lang }}/{{ link.url }}">{{ link.text }}</a></li>
         {% endfor %}
     </ul>
   </div>

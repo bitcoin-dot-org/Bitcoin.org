@@ -1,42 +1,38 @@
 ---
-langcode: en
-langtext: English
+lang: en
 menufor:
 - text: Individuals
-  url: /en/bitcoin-for-individuals
+  url: bitcoin-for-individuals
 - text: Organizations
-  url: /en/bitcoin-for-organizations
+  url: bitcoin-for-organizations
 - text: Developers
-  url: /en/bitcoin-for-developers
+  url: bitcoin-for-developers
 - text: Enthusiasts
-  url: /en/bitcoin-for-enthusiasts
+  url: bitcoin-for-enthusiasts
 menu:
 - text: How it works
-  url: /en/how-it-works
+  url: how-it-works
 - text: Vocabulary
-  url: /en/vocabulary
+  url: vocabulary
 - text: Resources
-  url: /en/resources
+  url: resources
 - text: Community
-  url: /en/community
+  url: community
 - text: Development
-  url: /en/development
+  url: development
 - text: Foundation
-  url: /en/foundation
+  url: foundation
 - text: About
-  url: /en/about
+  url: about
 ---
 <!DOCTYPE HTML>
-<html lang="{{ page.langcode }}">
+<html lang="{{ page.lang }}">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>{{ page.title }}</title>
 {% lesscss bootstrap.less %}
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
-{% for lang in site.langs %}{% if lang.langcode != page.langcode %}
-<link rel="alternate" hreflang="{{ lang.langcode }}" href="/{{ lang.langcode }}" />
-{% endif %}{% endfor %}
 </head>
 <body>
 {% if site.ALERT or site.ALERT_en %}
@@ -49,24 +45,24 @@ menu:
   <div id="head">
     <div class="wrap">
     <ul id="lang">
-      <li><a href="#" onclick="return false;">{{ page.langtext }}</a>
+      <li><a href="#" onclick="return false;">{{ site.langs[page.lang] }}</a>
       <ul>
-        {% for lang in site.langs %}{% if lang.langcode != page.langcode %}
-        <li><a href="/{{ lang.langcode }}/">{{ lang.langtext }}</a></li>
+        {% for lang in site.langs %}{% if lang[0] != page.lang %}{% assign la = lang[0]%}
+        <li><a href="/{{ lang[0] }}/{{ site.section[page.id][la] }}">{{ lang[1] }}</a></li>
         {% endif %}{% endfor %}
       </ul>
       </li>
     </ul>
-    <div id="logo"><a href="/{{ page.langcode }}/"><span>Bitcoin</span></a></div>
+    <div id="logo"><a href="/{{ page.lang }}/"><span>Bitcoin</span></a></div>
     <ul id="menufor">
-      {% for link in page.menufor %}{% assign active = nil %}{% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
-      <li{% if active %} class="{{ active }}"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+      {% for link in page.menufor %}{% assign active = nil %}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
+      <li{% if active %} class="{{ active }}"{% endif %}><a href="/{{ page.lang }}/{{ link.url }}">{{ link.text }}</a></li>
       {% endfor %}
     </ul>
     </div>
     <ul id="menu" class="wrap">
-        {% for link in page.menu %}{% assign active = nil %}{% capture fullurl %}{{ link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
-        <li{% if active %} class="{{ active }}"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+        {% for link in page.menu %}{% assign active = nil %}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
+        <li{% if active %} class="{{ active }}"{% endif %}><a href="/{{ page.lang }}/{{ link.url }}">{{ link.text }}</a></li>
         {% endfor %}
     </ul>
   </div>
