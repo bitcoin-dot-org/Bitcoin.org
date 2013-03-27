@@ -3,7 +3,7 @@
 Installing dependencies
 
     sudo apt-get install rubygems ruby1.9.1-dev build-essential
-    sudo gem install jekyll aquarium json less therubyracer
+    sudo gem install jekyll json less therubyracer
 
 # Usage
 
@@ -95,7 +95,6 @@ aliases:
 These ruby gems are required to build the website:
 
 * jekyll
-* aquarium
 * json
 * less
 * therubyracer

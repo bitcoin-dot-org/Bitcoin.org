@@ -1,6 +1,5 @@
 require 'open-uri'
 require 'json'
-require 'aquarium'
 require 'yaml'
 
 module Jekyll
@@ -34,21 +33,24 @@ module Jekyll
 				end
 			}.flatten
 		end
-    
-		def generate(site)
-			@contributors = merge_contributors(fetch_contributors(), site.config['aliases']).sort_by{|c| - c['contributions']}
-			@primary_devs = JSON.parse(open("https://api.github.com/repos/bitcoin/bitcoin/collaborators").read)
 
-			Aquarium::Aspects::Aspect.new :around, :invoking => :site_payload, :on_type => Site do |execution_point, site, *args|
-				result = execution_point.proceed
-				result['site']['project'] = {
-						"primary_devs" => @primary_devs,
-						"contributors" => @contributors
-					}
-				result
+		def generate(site)
+			class << site
+				attr_accessor :primary_devs, :contributors
+
+				def site_payload
+					result = super
+					result['site']['project'] = {
+							"primary_devs" => self.primary_devs,
+							"contributors" => self.contributors
+						}
+					result
+				end
 			end
 
-  	end
+			site.primary_devs = JSON.parse(open("https://api.github.com/repos/bitcoin/bitcoin/collaborators").read)
+			site.contributors = merge_contributors(fetch_contributors(), site.config['aliases']).sort_by{|c| - c['contributions']}
+		end
 
 	end
 
