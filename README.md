@@ -89,13 +89,3 @@ aliases:
   --author=Satoshi Nakamoto: Satoshi Nakamoto
   gavinandresen: Gavin Andresen
 ```
-
-# Requirements
-
-These ruby gems are required to build the website:
-
-* jekyll
-* json
-* less
-* therubyracer
-
