@@ -1,63 +1,62 @@
 ---
 layout: base-es
 id: vocabulary
-title: Vocabulary - Bitcoin
+title: Vocabulario - Bitcoin
 ---
-<h1>Some Bitcoin words you might hear</h1>
-<p>Bitcoin provides a new approach to payments and as such, there are some new words that might become a part of your vocabulary. Don't worry, even the humble television created new words!</p>
-<h2>Table of contents</h2>
+<h1>Algunas palabras en Bitcoin usted puede escuchar</h1>
+<p>Bitcoin ofrece un nuevo enfoque a los pagos y, como tal, hay algunas palabras nuevas que podrían convertirse en una parte de su vocabulario. No te preocupes, incluso la humilde televisión crea nuevas palabras!</p>
+<h2>Tabla de contenidos</h2>
 <div class="index">
-<a href="#address">Address</a>
-<a href="#blockchain">Blockchain</a>
-<a href="#block">Block</a>
+<a href="#direccion">Dirección</a>
+<a href="#cadena-de-bloques">Cadena de bloques</a>
+<a href="#bloque">Bloque</a>
 <a href="#btc">BTC</a>
-<a href="#confirmation">Confirmation</a>
-<a href="#cryptography">Cryptography</a>
-<a href="#double-spend">Double Spend</a>
-<a href="#hash-rate">Hash Rate</a>
-<a href="#mining">Mining</a>
-<a href="#p2p">P2P - Peer To Peer</a>
-<a href="#private-key">Private Key</a>
-<a href="#signature">Signature</a>
-<a href="#wallet">Wallet</a>
+<a href="#confirmacion">Confirmación</a>
+<a href="#criptografia">Criptografía</a>
+<a href="#gasto-doble">Gasto Doble</a>
+<a href="#velocidad-de-hash">Velocidad de Hash</a>
+<a href="#mineria">Minería</a>
+<a href="#p2p">P2P - Punto a Punto</a>
+<a href="#llave-privada">Llave Privada</a>
+<a href="#firma">Firma</a>
+<a href="#monedero">Mondero</a>
 </div>
 
-<h2><a name="address">Address</a></h2>
-<p>A Bitcoin address is <b>like a physical address or an email</b>. It is the only information you need to provide for someone to pay you with Bitcoin.</p>
+<h2><a name="direccion">Dirección</a></h2>
+<p>Una dirección Bitcoin es <b> como una dirección física o un correo electrónico </ b>. Es la única información que debe proporcionar para que alguien le pague a usted con Bitcoin.</p>
 
-<h2><a name="blockchain">Blockchain</a></h2>
-<p>The blockchain is a <b>public record of all Bitcoin transactions</b>, in chronological order. The blockchain is shared between all Bitcoin users. It is used to verify the balance of Bitcoin addresses and to prevent <a href="#double-spend">double spending</a>.</p>
+<h2><a name="cadena-de-bloques">Cadena de bloques</a></h2>
+<p>La cadena de bloques es un <b>registro publico de todas las transacciones de Bitcoin</b> en orden cronologico. La cadena de bloques se comparte entre todos los usuarios de Bitcoin. Se utiliza para verificar el balance de direcciones Bitcoin y para prevenir el <a href="#doble-gasto">doble gasto</a>.</p>
 
-<h2><a name="block">Block</a></h2>
-<p>A block is a <b>record in the blockchain that contains and confirms many waiting transactions</b>. Roughly every 10 minutes on average, a new block including transactions is appended to the <a href="#blockchain">blockchain</a> through <a href="#mining">mining</a>.</p>
+<h2><a name="bloque">Bloque</a></h2>
+<p>Un bloque es <b>un registro en la cadena de bloques y que contiene confirmaciones de transacciones pendientes</b>. Aproximadamente en promedio cada 10 minutos, un nuevo bloque incluyendo las transacciones y se anexa a la <a href="#cadena-de-bloques">cadena de bloques</a> a traves de la <a href="#mineria">mineria</a>.</p>
 
 <h2><a name="btc">BTC</a></h2>
-<p>BTC is the unofficial three letter code for Bitcoin. It can be used as an abbreviation, like USD for US dollar.</p>
+<p>BTC es el código de tres letras, no oficial, de Bitcoin. Puede ser utilizado como una abreviatura, como USD para el dólar estadounidense.</p>
 
-<h2><a name="confirmation">Confirmation</a></h2>
-<p>Confirmation means that a transaction has been <b>verified by the network and is highly unlikely to be reversed</b>. One confirmation is pretty secure. Though for larger amounts ( ex. 1000 $USD and above ), one can wait for a transaction to have more confirmations - 6 is a frequently chosen number. Each new confirmation decreases the risk of a reversal exponentially.</p>
+<h2><a name="confirmacion">Confirmación</a></h2>
+<p>La confirmacion significa que una transaccion ha sido <b>verificada por la red y es muy poco probable que se revierta</b>. Una confirmación es bastante seguro. Aunque para grandes montos (por ejemplo, 1000 $USD o más), uno puede esperar a que una transacción tenga varias confirmaciones - 6 es el número de confirmaciones con frecuencia elegido. Cada nueva confirmación, disminuye el riesgo de que se revierta exponencialmente.</p>
 
-<h2><a name="cryptography">Cryptography</a></h2>
-<p>Cryptography is the branch of mathematics that lets us create <b>mathematical proofs that provide high levels of security</b>. Online commerce and banking already uses cryptography. In the case of Bitcoin, cryptography is used to make it impossible for anybody to spend funds from another user's wallet or to corrupt the <a href="#blockchain">blockchain</a>. It can also be used to encrypt a wallet, so that it cannot be used without a password.</p>
+<h2><a name="criptografia">Criptografía</a></h2>
+<p>La criptografía es la rama de las matemáticas que nos permite crear <b>pruebas matemáticas que proporcionan altos niveles de seguridad</b>. El comercio en línea y los bancos ya utilizan criptografía. En el caso de Bitcoin, la criptografía se utiliza para hacer imposible que alguien pueda gastar los fondos del monedero de otro usuario o para corromper la <a href="#cadena-de-bloques">cadena de bloques</a>. También se utilizada para encriptar un monedero, de manera que no se pueda utilizar sin una contraseña.</p>
 
-<h2><a name="double-spend">Double Spend</a></h2>
-<p>If a malicious user tries to <b>spend their bitcoins to two different recipients at the same time</b>, this is double spending. Bitcoin <a href="#mining">mining</a> and the <a href="#blockchain">blockchain</a> are there to create a consensus on the network about which of the two transactions will win.</p>
-</p>
+<h2><a name="gasto-doble">Gasto Doble</a></h2>
+<p>Si un usuario malintencionado intenta gaster <b>sus bitcoins en dos lugares diferentes al mismo tiempo</b>, se produce un gasto doble. La <a href="#mineria">minería</a> en Bitcoin y la <a href="#cadena-de-bloques">cadena de bloques</a> están ahí para crear un consenso en la red acerca de cuál de las dos transacciones ganará.</p>
 
-<h2><a name="hash-rate">Hash Rate</a></h2>
-<p>The hash rate is the <b>measuring unit of the processing power of the Bitcoin network</b>. The Bitcoin network must make intensive mathematical operations for security purposes. When the network reaches a hash rate of 10 TH/s, it means it can make ten trillion calculations per second.</p>
+<h2><a name="velocidad-de-hash">Velocidad Hash</a></h2>
+<p>La velocidad hash es <b>la unidad de medida de la potencia de procesamiento de la red Bitcoin</b>. La red Bitcoin debe hacer uso intensivo de operaciones matemáticas por razones de seguridad. Cuando la red alcanza una velcoidad de hash de 10 TH/s, esto significa que puede hacer diez billones de cálculos por segundo.</p>
 
-<h2><a name="mining">Mining</a></h2>
-<p>Bitcoin mining is the process of <b>making computer hardware do mathematical calculations for the Bitcoin network to confirm transactions</b> and increase security. As a reward for their services, Bitcoin miners can collect transaction fees for the transactions they confirm along with newly created bitcoins. Mining is a specialized and competitive market where the rewards are divided up according to how much calculation is done. Not all Bitcoin users do Bitcoin mining and it is not an easy way to make money.</p>
+<h2><a name="mineria">Minería</a></h2>
+<p>La mineria en Bitcoin es el proceso de <b>realizar calculos matematicos mediante computadoras para confirmar las transacciones en la red Bitcoin</b> e incrementar la seguridad. Como recompensa por sus servicios, los mineros Bitcoin pueden cobrar costos de transacción para las transacciones que confirman junto con bitcoins nuevos que se crean. La minería es un mercado especializado y competitivo en el que los beneficios se reparten de acuerdo a la cantidad de cálculo que se hace. No todos los usuarios de Bitcoin realizan minería y no es una manera fácil de hacer dinero.</p>
 
-<h2><a name="p2p">P2P</a></h2>
-<p>Peer to peer refers to <b>systems that work like an organized collective</b> by allowing each individual to interact directly with the others. In the case of Bitcoin, the network is built in such a way that each user is broadcasting transactions of other users. And crucially, no bank is required as a third party.</p>
+<h2><a name="p2p">P2P - Punto a Punto</a></h2>
+<p>Punto a punto se refiere a los <b>sistemas que trabajan como una organizacion colectiva</b> permitiendo que cada individuo interactue directamente con otros. En el caso de Bitcoin, la red se construye de tal manera que cada usuario está transmitiendo transacciones de otros usuarios. Y algo muy importante, ningún banco se requiere como intermediario.</p>
 
-<h2><a name="private-key">Private Key</a></h2>
-<p>A private key is a <b>secret piece of data that proves your right to spends Bitcoin from a specific Bitcoin address</b> through a cryptographic <a href="#signature">signature</a>. Each <a href="#address">Bitcoin address</a> has its own unique private key. Your private keys are stored in your computer if you use a software wallet while they are stored on some remote servers if you use a web wallet. Private keys must never be revealed as they allow you to spend bitcoins for their respective Bitcoin addresses.</p>
+<h2><a name="llave-privada">Llave Privada</a></h2>
+<p>Una llave privada es <b>una parte secreta de datos que acredite su derecho a gastar Bitcoins en una dirección Bitcoin</b> a través de una <a href="#firma">firma</a> criptográfica. Cada <a href="#direccion">dirección Bitcoin</a> tiene su propia llave privada única. Sus llaves privadas se almacenan en su computador si utilizas un program de monedero, mientras que si utilizas un monedero web son almacenadas en servidores remotos del provedor. Las llaves privadas nunca debe ser compartidas, ya que permitirias que se puedan transferir bitcoins desde dichas direcciones.</p>
 
-<h2><a name="signature">Signature</a></h2>
-<p>A <a href="#cryptography">cryptographic</a> signature is <b>a mathematical mechanism that allows someone to prove ownership</b>. In the case of Bitcoin, a <a href="#address">Bitcoin address</a> and its <a href="#private-key">private key</a> are linked by some mathematical magic. When your Bitcoin software signs a transaction with the appropriate private key, the whole network can see that the signature matches the Bitcoin address. However, there is no way for the world to guess your private key to steal your hard-earned bitcoins.</p>
+<h2><a name="firma">Firma</a></h2>
+<p>Una firma <a href="#criptografia">criptografica</a> es <b>un mecanismo matematico que permite a alguien demostrar su propiedad</b>. En el caso de Bitcoin, una <a href="#direccion">dirección Bitcoin</a> y su <a href="#llave-privada">llave privada</a> estan vinculadas por un tipo de magia matemática. Cuando su program de Bitcoin firma una transacción con la llave privada correspondiente, toda la red puede ver que la firma coincide con la dirección Bitcoin. Sin embargo, no hay forma de que el mundo descubra la llave privada para robar sus bitcoins.</p>
 
-<h2><a name="wallet">Wallet</a></h2>
-<p>A Bitcoin wallet refers to <b>the equivalent of a physical wallet on the Bitcoin network</b>. Each Bitcoin wallet can show you the total balance of all <a href="#address">Bitcoin addresses</a> it contains. Just like you can count the money in your real wallet. And in the same way, a Bitcoin wallet allows you to pay a specific amount to a specific person. This is different to credit cards where you are charged by the merchant.</p>
+<h2><a name="monedero">Mondero</a></h2>
+<p>Un monedero Bitcoin se refiere al <b>equivalente a un monedero físico en la red Bitcoin</b>. Cada monedero Bitcoin puede mostrar el balance total de todas las <a href="#direcciones">direcciones Bitcoin</a> que contiene. Al igual, que cuando suma el dinero en su monedero real. Y de la misma manera, un monedero Bitcoin te permite pagar una cantidad específica a una persona específica. Esto es diferente a las tarjetas de crédito en la que se el negocio te cobra.</p>
