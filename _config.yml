@@ -3,9 +3,9 @@ ALERT_CLASS:
 ALERT: 
 
 langs:
-  es: Español
-  fr: Français
   en: English
+  fr: Français
+  es: Español
   
 section:
   index:
