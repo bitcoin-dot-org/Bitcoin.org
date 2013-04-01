@@ -1,3 +1,4 @@
+function cancelEvent(e){if(!e)var e=window.event;(e.preventDefault)?e.preventDefault():e.returnValue=false;}
 function supportsSVG(){
 //Old FF 3.5 and Safari 3 versions have a very poor svg support
 //http://www.w3.org/TR/SVG11/feature#Image Defeat FF 3.5 only
@@ -34,7 +35,17 @@ for(var i=0,nd=document.getElementsByTagName('*'),n=nd.length;i<n;i++){
 	if(d.style.backgroundImage!='')d.style.backgroundImage=d.style.backgroundImage.replace('bubblewarn','bubble');
 	for(var ii=0,as=d.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==d.parentNode){var dd=as[ii];break;}}
 	for(var ii=0,as=s.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==s.parentNode){var ss=as[ii];break;}}
-	dd.href=ss.href;
 	dd.innerHTML=ss.innerHTML;
 }
+}
+function mobileshow(e){
+cancelEvent(e);
+var mm=document.getElementById('menu');
+var mf=document.getElementById('menufor');
+var ml=document.getElementById('langselect');
+var t=document.getElementById('menumobile');
+if(mf.style.display=='block'){mf.style.display='';mm.style.display='';ml.style.display='';}
+else{mf.style.display='block';mm.style.display='block';ml.style.display='inline-block';}
+t.parentNode.removeChild(t);
+return false;
 }
