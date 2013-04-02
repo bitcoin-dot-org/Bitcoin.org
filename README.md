@@ -19,6 +19,7 @@ Installing dependencies
 * At least one other reviewer might be required and is highly recommanded.
 * Try to avoid changing the meaning of any statements. If you need to change the meaning of anything, make a note of it and list that in the pull request.
 * Sentences and popular expressions should be adapted so that they sound native in your language.
+* You must save your work with UTF-8 encoding.
 
 ### How to translate
 
@@ -29,8 +30,7 @@ Installing dependencies
 5. Images, Update the few images that contain text with any vector image editing software like Inkscape.
 6. Languages, Make sure that the languages are listed in alphabetical order in _config.yml
 7. Post, Remove sections that use _posts such as "version-history" and "news". Those are not meant to be translated yet.
-
-* A tips for translators, you can preview your work in a simple Google chrome browser with no HTTP server. Just go to the existing english page, open the javascript console with CTRL + SHIFT + J and use the following command to make the page editable : document.body.contentEditable=true
+8. Preview, Check that fixed size texts don't overflow. For example, each wallet description, right side buttons and some titles have height or width restrictions. You can preview your work without building the website. Just visit the existing english page, open the javascript console of your browser (CTRL + SHIFT + J on Google Chrome) and copy the following command to make the page editable : document.body.contentEditable=true . This will allow you to edit and preview the page in your browser like a document.
 
 ### Update
 
