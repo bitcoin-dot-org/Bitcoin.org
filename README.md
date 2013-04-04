@@ -38,7 +38,7 @@ Installing dependencies on older Ubuntu and Debian distributions
 
 ### Update
 
-All changes made in the english version can be easily tracked on github.
+Each time that a commit needs to be translated in other languages, a link to this commit must be added to https://github.com/bitcoin/bitcoin.org/wiki/Translations-tracking with all current languages listed under it. When a translation is updated through a pull request, all occurences of this language can be removed from the translations tracking page.
 
 ## Advanced Usage
 
