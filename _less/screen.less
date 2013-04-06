@@ -275,40 +275,30 @@ li{
 }
 
 #menu{
-padding:0px;
-margin:36px auto 0px 32px;
+	padding:0px;
+	margin:36px auto 0px 32px;
 }
 #menu li{
-list-style:none;
-float:left;
-padding:0px;
-border:1px solid transparent;
-border-radius:3px;
--webkit-border-radius:3px;
+	list-style:none;
+	float:left;
+	margin-right: 5px;
 }
 #menu li a,#menu li a:active,#menu li a:visited,#menu li a:link{
-font-family:'Ubuntu', sans-serif;
-display:block;
-color:#6a6a6a;
-text-decoration:none;
-padding: 8px 10px;
+	font-family:'Ubuntu', sans-serif;
+	display:block;
+	color:#6a6a6a;
+	text-decoration:none;
+	padding: 8px 10px;
+	border: 1px solid transparent;
 }
 #menu li:hover a,#menu li.active a{
-color:#000;
+	color:#000;
+	background-color:#fff;
+	border:1px solid #d8d8d8;
+	border-radius:3px;
+	-webkit-border-radius:3px;
 }
-#menu li:hover {
-background-color:#fff;
-border:1px solid #d8d8d8;
-}
-#menu li.active {
-	font-weight: bold;
-}
-#menu li.active:hover {
-	background: none;
-	border: none;
-	padding: 1px
-}
-
+	
 #content{
 	position:relative;
 	padding:20px 250px 20px 20px;
@@ -321,7 +311,6 @@ border:1px solid #d8d8d8;
 	-moz-border-radius: 6px;  
 	margin: 20px;
 }
-
 #rightbox{
 	width:210px;
 	position:absolute;
@@ -627,7 +616,6 @@ border:1px solid #d8d8d8;
 		top:0px;
 		height:auto;
 		margin:0px 0px 5px 0px;
-
 	}
 	#menu li{
 		float:none;
