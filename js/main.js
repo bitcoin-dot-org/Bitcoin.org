@@ -1,4 +1,5 @@
 function cancelEvent(e){if(!e)var e=window.event;(e.preventDefault)?e.preventDefault():e.returnValue=false;}
+function getEventTarget(e){if(!e)var e=window.event;return (e.target&&e.target.nodeType==3)?e.target.parentNode:(e.target)?e.target:e.srcElement;}
 function supportsSVG(){
 //Old FF 3.5 and Safari 3 versions have a very poor svg support
 //http://www.w3.org/TR/SVG11/feature#Image Defeat FF 3.5 only
@@ -15,6 +16,26 @@ if(window.getComputedStyle)return document.defaultView.getComputedStyle(a,null).
 var n=b.indexOf('-');
 if(n!==-1)b=b.substr(0,n)+b.substr(n+1,1).toUpperCase()+b.substr(n+2);
 return a.currentStyle[b];
+}
+function getWidth(a){
+var w=getStyle(a,'width');
+if(w.indexOf('px')!==-1)return parseInt(w.replace('px',''));
+var p=[getStyle(a,'padding-top'),getStyle(a,'padding-right'),getStyle(a,'padding-bottom'),getStyle(a,'padding-left')];
+for(var i=0;i<4;i++){
+	if(p[i].indexOf('px')!==-1)p[i]=parseInt(p[i]);
+	else p[i]=0;
+}
+return Math.max(0,a.offsetWidth-p[1]-p[3]);
+}
+function getHeight(a){
+var h=getStyle(a,'height');
+if(h.indexOf('px')!==-1)return parseInt(h.replace('px',''));
+var p=[getStyle(a,'padding-top'),getStyle(a,'padding-right'),getStyle(a,'padding-bottom'),getStyle(a,'padding-left')];
+for(var i=0;i<4;i++){
+	if(p[i].indexOf('px')!==-1)p[i]=parseInt(p[i]);
+	else p[i]=0;
+}
+return Math.max(0,a.offsetHeight-p[0]-p[2]);
 }
 function svgfallback(){
 if(supportsSVG())return;  
@@ -39,7 +60,6 @@ for(var i=0,nd=document.getElementsByTagName('*'),n=nd.length;i<n;i++){
 }
 }
 function mobileshow(e){
-cancelEvent(e);
 var mm=document.getElementById('menu');
 var mf=document.getElementById('menufor');
 var ml=document.getElementById('langselect');
@@ -47,5 +67,18 @@ var t=document.getElementById('menumobile');
 if(mf.style.display=='block'){mf.style.display='';mm.style.display='';ml.style.display='';}
 else{mf.style.display='block';mm.style.display='block';ml.style.display='inline-block';}
 t.parentNode.removeChild(t);
-return false;
+cancelEvent(e);
+}
+function boxshow(e){
+var p=t=getEventTarget(e);
+while(p.nodeName!='DIV')p=p.parentNode;
+var pp=p.cloneNode(true);
+pp.style.visibility='hidden';
+pp.style.height='auto';
+p.parentNode.appendChild(pp);
+var nhe=getHeight(pp);
+pp.parentNode.removeChild(pp);
+p.style.height=nhe+'px';
+t.removeAttribute('href');
+cancelEvent(e);
 }
