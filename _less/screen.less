@@ -451,6 +451,17 @@ li{
 .previewrow>h2{
 	font-size:115%;
 }
+.previewrow>div{
+	display:inline-block;
+	zoom:1;*display:inline;/*IE7 support*/
+	position:relative;
+	margin-right:17px;
+	margin-bottom:12px;
+	vertical-align:top;
+}
+.previewrow>div.last{
+	margin-right:0px;
+}
 .previewrow>div>a>img{
 	display:block;
 	margin:auto;
@@ -477,63 +488,69 @@ li{
 	position:absolute;
 	left:-110px;
 	right:-110px;
-	padding:0px 30px;
-	margin-top:-270px;
-	background:url(/img/bubble.svg) bottom center no-repeat;
+	bottom:100px;
+	padding:0px;
 	z-index:1000;
 	overflow:hidden;
-}
-.previewrow>div>div>h2{
-	margin-top:20px;
 }
 .previewrow>div:hover>div{
 	opacity:1;
 	width:auto;
-	height:280px;
+	height:auto;
 }
-.previewrow>div{
-	display:inline-block;
-	zoom:1;*display:inline;/*IE7 support*/
-	position:relative;
-	margin-right:18px;
-	margin-bottom:12px;
-	vertical-align:top;
+.previewrow>div>div>div:first-child{
+	background:url(/img/bubbletop.svg) bottom center no-repeat;
+	height:10px;
 }
-.previewrow>div.last{
-	margin-right:0px;
+.previewrow>div>div>div:first-child+div{
+	background:url(/img/bubblemiddle.svg) bottom center repeat-y;
+	padding:0px 30px;
 }
-.previewrow>div>div>span{
+.previewrow>div>div>div:first-child+div+div{
+	background:url(/img/bubblebottom.svg) bottom center no-repeat;
+	height:64px;
+}
+.previewrow>div>div>div>span{
 	position:absolute;
 	top:24px;
 	right:30px;
 }
-.previewrow>div>div>span>img{
+.previewrow>div>div>div>h2{
+	margin:0px;
+	padding-top:10px;
+}
+.previewrow>div>div>div>span>img{
 	margin-left:4px;
 }
-.previewrow>div>div>h2:first-child+span+p{
+.previewrow>div>div>div>h2:first-child+span+p{
 	font-size:95%;
-	line-height: 1.2em;
+	line-height:1.2em;
+	margin:0px;
+	padding:10px 0px;
 }
-.previewrow>div>div>h2:first-child+span+p+p{
-	text-align:center;
-	position:absolute;
-	width:290px;
-	top:190px;
-	left:0px;
+.previewrow>div>div>div>h2:first-child+span+p+p{
+	text-align: center;
+	margin:0px;
+	padding:0px;
+	position:relative;
+	bottom:-10px;
 }
 .previewrow>div>div a,.previewrow>div>div a:link,.previewrow>div>div a:visited,.previewrow>div>div a:active{
 	font-weight:bold;
 	text-decoration:none;
 	font-size:125%;
 }
+.previewrow .walletwarning>div:first-child{
+	background:url(/img/bubblewarntop.svg) bottom center no-repeat;
+}
+.previewrow .walletwarning>div:first-child+div{
+	background:url(/img/bubblewarnmiddle.svg) bottom center repeat-y;
+}
+.previewrow .walletwarning>div:first-child+div+div{
+	background:url(/img/bubblewarnbottom.svg) bottom center no-repeat;
+}
 .previewrow .walletwarning a,.previewrow .walletwarning a:link,.previewrow .walletwarning a:visited,.previewrow .walletwarning a:active{
 	color:#b95357;
-}
-.previewrow .walletwarning{
-	background:url(/img/bubblewarn.svg) bottom center no-repeat;
-}
-.previewrow .walletnormal{
-	background:url(/img/bubble.svg) bottom center no-repeat;
 }
 
 .versiontext{
