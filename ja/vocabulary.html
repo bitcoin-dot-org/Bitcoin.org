@@ -1,63 +1,62 @@
 ---
 layout: base-en
 id: vocabulary
-title: Vocabulary - Bitcoin
+title: 用語 - ビットコイン
 ---
-<h1>Some Bitcoin words you might hear</h1>
-<p>Bitcoin provides a new approach to payments and as such, there are some new words that might become a part of your vocabulary. Don't worry, even the humble television created new words!</p>
-<h2>Table of contents</h2>
+<h1>ビットコイン用語</h1>
+<p>ビットコインは、決済の新しいアプローチを提供します。そのため、いくつか新しい用語があります。テレビですら新しい用語を作ったのですから心配いりません。</p>
+<h2>目次</h2>
 <div class="index">
-<a href="#address">Address</a>
-<a href="#blockchain">Blockchain</a>
-<a href="#block">Block</a>
+<a href="#address">アドレス</a>
+<a href="#blockchain">ブロックチェーン</a>
+<a href="#block">ブロック</a>
 <a href="#btc">BTC</a>
-<a href="#confirmation">Confirmation</a>
-<a href="#cryptography">Cryptography</a>
-<a href="#double-spend">Double Spend</a>
-<a href="#hash-rate">Hash Rate</a>
-<a href="#mining">Mining</a>
-<a href="#p2p">P2P - Peer To Peer</a>
-<a href="#private-key">Private Key</a>
-<a href="#signature">Signature</a>
-<a href="#wallet">Wallet</a>
+<a href="#confirmation">承認</a>
+<a href="#cryptography">暗号化</a>
+<a href="#double-spend">二重支払い</a>
+<a href="#hash-rate">ハッシュレート</a>
+<a href="#mining">マイニング（採掘）</a>
+<a href="#p2p">P2P - ピアツーピア</a>
+<a href="#private-key">秘密鍵</a>
+<a href="#signature">署名</a>
+<a href="#wallet">ウォレット（財布）</a>
 </div>
 
-<h2><a name="address">Address</a></h2>
-<p>A Bitcoin address is <b>like a physical address or an email</b>. It is the only information you need to provide for someone to pay you with Bitcoin.</p>
+<h2><a name="address">アドレス</a></h2>
+<p>ビットコインアドレスは、<b>住所やメールアドレスのようなもの</b>です。誰かからビットコインで支払いを受ける場合は、この情報だけ伝える必要があります。</p>
 
-<h2><a name="blockchain">Blockchain</a></h2>
-<p>The blockchain is a <b>public record of all Bitcoin transactions</b>, in chronological order. The blockchain is shared between all Bitcoin users. It is used to verify the balance of Bitcoin addresses and to prevent <a href="#double-spend">double spending</a>.</p>
+<h2><a name="blockchain">ブロックチェーン</a></h2>
+<p>ブロックチェーンは、<b>すべてのビットコイン取引の公開履歴</b>で、時系列順になっています。ブロックチェーンは、全ビットコインユーザで共有されます。これはビットコインアドレスの残高の検証と<a href="#double-spend">二重支払い</a>防止に利用されます。</p>
 
-<h2><a name="block">Block</a></h2>
-<p>A block is a <b>record in the blockchain that contains and confirms many waiting transactions</b>. Roughly every 10 minutes on average, a new block including transactions is appended to the <a href="#blockchain">blockchain</a> through <a href="#mining">mining</a>.</p>
+<h2><a name="block">ブロック</a></h2>
+<p>ブロックは、<b>多くの待機中取引を含み承認する、ブロックチェーンのレコード</b>です。約10分毎に<a href="#mining">マイニング</a>によって複数の取引を含む新しいブロックが<a href="#blockchain">ブロックチェーン</a>に追加されます。</p>
 
 <h2><a name="btc">BTC</a></h2>
-<p>BTC is the unofficial three letter code for Bitcoin. It can be used as an abbreviation, like USD for US dollar.</p>
+<p>BTCは、非公式のビットコインを表す3文字の記号です。米ドルを表すUSDのように省略形として使えます。</p>
 
-<h2><a name="confirmation">Confirmation</a></h2>
-<p>Confirmation means that a transaction has been <b>verified by the network and is highly unlikely to be reversed</b>. One confirmation is pretty secure. Though for larger amounts ( ex. 1000 $USD and above ), one can wait for a transaction to have more confirmations - 6 is a frequently chosen number. Each new confirmation decreases the risk of a reversal exponentially.</p>
+<h2><a name="confirmation">承認</a></h2>
+<p>承認とは、<b>取引がネットワークに検証され、取り消される可能性の低いということ</b>です。1つでも承認があれば、非常に安全です。しかし、高額の場合(例えば10万円以上)は、さらに多くの承認を待った方が安全でしょう。(よく使われるのは6承認です。) 承認数が増えるごとに、取り消しのリスクは指数関数的に激減します。</p>
 
-<h2><a name="cryptography">Cryptography</a></h2>
-<p>Cryptography is the branch of mathematics that lets us create <b>mathematical proofs that provide high levels of security</b>. Online commerce and banking already uses cryptography. In the case of Bitcoin, cryptography is used to make it impossible for anybody to spend funds from another user's wallet or to corrupt the <a href="#blockchain">blockchain</a>. It can also be used to encrypt a wallet, so that it cannot be used without a password.</p>
+<h2><a name="cryptography">暗号化</a></h2>
+<p>暗号化は、数学の分野で<b>高レベルの安全性を数学的に証明</b>します。オンラインコマースやオンラインバンキングでは、すでに暗号化が使われています。ビットコインでは、他人がウォレットの資金を使えないようにするためと、<a href="#blockchain">ブロックチェーン</a>を改変されないために利用されます。ウォレットの暗号化にも利用でき、その場合、ウォレットを利用するにはパスワードが必須となります。</p>
 
-<h2><a name="double-spend">Double Spend</a></h2>
-<p>If a malicious user tries to <b>spend their bitcoins to two different recipients at the same time</b>, this is double spending. Bitcoin <a href="#mining">mining</a> and the <a href="#blockchain">blockchain</a> are there to create a consensus on the network about which of the two transactions will win.</p>
-</p>
+<h2><a name="double-spend">二重支払い</a></h2>
+<p>悪意のあるユーザが、<b>あるビットコインを2つの異なる宛先に同時に送金すること</b>。これが二重支払いです。ビットコイン<a href="#mining">マイニング</a>と<a href="#blockchain">ブロックチェーン</a>は、ネットワーク上でどちらの取引が勝ちか、合意を形成します。</p>
 
-<h2><a name="hash-rate">Hash Rate</a></h2>
-<p>The hash rate is the <b>measuring unit of the processing power of the Bitcoin network</b>. The Bitcoin network must make intensive mathematical operations for security purposes. When the network reaches a hash rate of 10 TH/s, it means it can make ten trillion calculations per second.</p>
+<h2><a name="hash-rate">ハッシュレート</a></h2>
+<p>ハッシュレートは、<b>ビットコインネットワークの計算量を計測しているものです。</b>ビットコインネットワークは、安全性のために多量の数学的処理を行います。ネットワークがハッシュレート 10 TH/s に達したということは、一秒あたり1兆(trillion)回計算されたということです。</p>
 
-<h2><a name="mining">Mining</a></h2>
-<p>Bitcoin mining is the process of <b>making computer hardware do mathematical calculations for the Bitcoin network to confirm transactions</b> and increase security. As a reward for their services, Bitcoin miners can collect transaction fees for the transactions they confirm along with newly created bitcoins. Mining is a specialized and competitive market where the rewards are divided up according to how much calculation is done. Not all Bitcoin users do Bitcoin mining and it is not an easy way to make money.</p>
+<h2><a name="mining">マイニング（採掘）</a></h2>
+<p>ビットコインマイニングとは、 <b>ビットコインネットワークで取引を承認し、安全性を上げるための数学的計算を、コンピュータハードウェアで行う処理</b> です。その仕事に対する報酬として、ビットコインマイナー（採掘者）は、新しく生成されたビットコインで行われるその後の取引の、承認を得るために支払われる取引手数料を受け取ることができます。マイニングは、計算量によって報酬が割り振られる、高度化した競争市場です。すべてのビットコインユーザがマイニングをしているわけではなく、マイニングで稼ぐのは簡単ではありません。</p>
 
 <h2><a name="p2p">P2P</a></h2>
-<p>Peer to peer refers to <b>systems that work like an organized collective</b> by allowing each individual to interact directly with the others. In the case of Bitcoin, the network is built in such a way that each user is broadcasting transactions of other users. And crucially, no bank is required as a third party.</p>
+<p>ピアツーピア(Peer to peer)とは、個々の端末が互いに直接通信し合うことで、<b>組織化された集合体のように動作するシステム</b>を言います。ビットコインでは、各ユーザが取引を他のユーザにブロードキャストすることでネットワークを構築しています。そして重要なことは、第三者機関である銀行が不要だということです。</p>
 
-<h2><a name="private-key">Private Key</a></h2>
-<p>A private key is a <b>secret piece of data that proves your right to spends Bitcoin from a specific Bitcoin address</b> through a cryptographic <a href="#signature">signature</a>. Each <a href="#address">Bitcoin address</a> has its own unique private key. Your private keys are stored in your computer if you use a software wallet while they are stored on some remote servers if you use a web wallet. Private keys must never be revealed as they allow you to spend bitcoins for their respective Bitcoin addresses.</p>
+<h2><a name="private-key">秘密鍵</a></h2>
+<p>秘密鍵は、<b>あるビットコインアドレスから所有者によって送金されたことを、暗号化<a href="#signature">署名</a>によって証明するための秘密のデータ</b>です。各<a href="#address">ビットコインアドレス</a>は、対応する固有の秘密鍵を持っています。秘密鍵は、ソフトウェアウォレットの場合は手元のコンピュータに、Webウォレットの場合はサーバに保存されます。 決して秘密鍵を他人に渡さないでください。対応するビットコインアドレスにあるビットコインが盗まれる可能性があります。</p>
 
-<h2><a name="signature">Signature</a></h2>
-<p>A <a href="#cryptography">cryptographic</a> signature is <b>a mathematical mechanism that allows someone to prove ownership</b>. In the case of Bitcoin, a <a href="#address">Bitcoin address</a> and its <a href="#private-key">private key</a> are linked by some mathematical magic. When your Bitcoin software signs a transaction with the appropriate private key, the whole network can see that the signature matches the Bitcoin address. However, there is no way for the world to guess your private key to steal your hard-earned bitcoins.</p>
+<h2><a name="signature">署名</a></h2>
+<p>A <a href="#cryptography">暗号化</a>署名は、<b>所有権を証明できる数学的メカニズム</b>です。 ビットコインの場合は、<a href="#address">ビットコインアドレス</a>とその<a href="#private-key">秘密鍵</a>が、数学的マジックでリンクされます。 ビットコインソフトウェアが正しい秘密鍵で取引に署名すると、ネットワーク全体から署名とビットコインアドレスがマッチしているか確認することができます。しかし、苦労して稼いだビットコインを盗むために、秘密鍵を推測する方法はどこにもありません。</p>
 
-<h2><a name="wallet">Wallet</a></h2>
-<p>A Bitcoin wallet refers to <b>the equivalent of a physical wallet on the Bitcoin network</b>. Each Bitcoin wallet can show you the total balance of all <a href="#address">Bitcoin addresses</a> it contains. Just like you can count the money in your real wallet. And in the same way, a Bitcoin wallet allows you to pay a specific amount to a specific person. This is different to credit cards where you are charged by the merchant.</p>
+<h2><a name="wallet">ウォレット（財布）</a></h2>
+<p>ビットコインウォレットは、<b>ビットコインネットワークにおいて実際の財布と同等</b>のものと言えます。各ビットコインウォレットは、それに含まれる全<a href="#address">ビットコインアドレス</a>の合計残高を表示します。 ちょうど実際の財布のお金を数えるのと同じです。そして同様に、ビットコインウォレットで特定の人へ特定の金額を支払うことができます。これは、店から請求されるクレジットカードとは異なります。</p>
