@@ -1,27 +1,27 @@
 ---
 layout: base-it
 id: how-it-works
-title: How does Bitcoin work? - Bitcoin
+title: Come funziona Bitcoin? - Bitcoin
 ---
-<h1>How does Bitcoin work?</h1>
+<h1>Come funziona Bitcoin?</h1>
 
-<p>OK, this is a question that often causes confusion. Here's a quick explanation!
+<p>Ok, questa è una domanda che spesso crea confusione. Ecco una breve spiegazione!</p>
 
-<h2>The basics for a new user</h2>
-<p>As a new user, you only need to <a href="/it/choose-your-wallet">choose a wallet</a> that you will install on your computer or on your mobile phone. Once you have your wallet installed, it will generate your first Bitcoin address and you can create more whenever you need one. You can disclose one of your Bitcoin addresses to your friends so that they can pay you or vice versa, you can pay your friends if they give you their addresses. In fact, this is pretty similar to how email works. So all that is left to do at this point is to get some bitcoins and to <a href="/it/you-need-to-know">keep them safe</a>. In order to start using Bitcoin, you are not required to understand the technical details.</p>
+<h2>Nozioni di base per un nuovo utente</h2>
+<p>Come nuovo utente devi solo <a href="/it/choose-your-wallet">scegliere un portafoglio</a> da installare sul tuo computer o dispositivo mobile (smartphone, tablet o simili). Una volta installato, il portafoglio genererà il tuo primo indirizzo Bitcoin, e puoi crearne di altri ogni qualvolta ne avrai bisogno. Puoi rivelare uno dei tuoi indirizzi Bitcoin ai tuoi amici cosicché possano pagarti o, viceversa, puoi pagare i tuoi amici se loro ti rivelano i loro indirizzi. E' molto simile a come funzionano le email. Quel che resta da fare a questo punto è ottenere alcuni bitcoin e <a href="/it/you-need-to-know">tenerli al sicuro</a>. Per poter iniziare ad utilizzare Bitcoin non è necessario che tu capisca i dettagli tecnici.</p>
 
-<p>However, if you want to know more, keep reading!</p>
+<p>Tuttavia, se vuoi saperne di più, continua a leggere!</p>
 
-<p><br><img src="/it/img/bitcoin_at_a_glance.svg" alt="Bitcoin overview" /></p>
+<p><br><img src="/it/img/bitcoin_at_a_glance.svg" alt="Panoramica su Bitcoin" /></p>
 
 <h2>Blockchain</h2>
-<p>The blockchain is a <b>shared public transaction log</b> on which the entire Bitcoin network relies. All confirmed transactions are included in the blockchain with no exception. This way, new transactions can be verified to be spending bitcoins that are actually owned by the spender. The integrity and the chronological order of the blockchain are enforced with <a href="/it/vocabulary#cryptography">cryptography</a>.</p>
+<p>La <a href="https://en.bitcoin.it/wiki/Block_chain">blockchain</a> è un registro delle transazioni, pubblico e condiviso, a cui si affida l'intera rete Bitcoin. Tutte le transazioni confermate vengono incluse nella blockchain senza nessuna eccezione. In questo modo si può verificare che chi esegue una nuova transazione impieghi dei bitcoin effettivamente posseduti. La <a href="/it/vocabulary#cryptography">crittografia</a> è impiegata per mantenere l'integrità e l'ordine cronologico della blockchain.</p>
 
-<h2>Transaction</h2>
-<p>A transaction is <b>a transfer of value between Bitcoin addresses</b> that gets included in the blockchain. Bitcoin wallets keep a secret piece of data called a <a href="/it/vocabulary#private-key"><i>private key</i></a> for each Bitcoin address. Private keys are used to sign transactions, providing a mathematical proof that they come from the owner of the addresses. The <a href="/it/vocabulary#signature"><i>signature</i></a> also prevents the transaction from being altered by anybody once it has been issued. All transactions are broadcast between users and confirmed by the network in the following minutes, through a process called <a href="/it/vocabulary#mining"><i>mining</i></a>.</p>
+<h2>Transazione</h2>
+<p>Una transazione è <b>un trasferimento di valore tra indirizzi Bitcoin</b> che viene incluso nella blockchain. I portafogli Bitcoin mantengono un pezzo segreto di dati, detto <a href="/it/vocabulary#private-key"><i>chiave privata</i></a>, per ogni indirizzo Bitcoin. Le chiavi private vengono utilizzate per firmare le transazioni, fornendo una prova matematica della loro provenienza dal possessore di un indirizzo. La <a href="/it/vocabulary#signature"><i>firma</i></a> impedisce inoltre una la transazione, una volta eseguita, venga alterata da qualcuno. Tutte la transazioni sono trasmesse tra gli utenti e confermate dalla rete nei successivi minuti, attraverso un processo chiamato <a href="/it/vocabulary#mining"><i>mining</i></a>.</p>
 
 <h2>Mining</h2>
-<p>Mining is a <b>distributed consensus system</b> that is used to <a href="/it/vocabulary#confirmation"><i>confirm</i></a> waiting transactions by including them in the blockchain. It enforces a chronological order in the blockchain, protects the neutrality of the network, and allows different computers to agree on the state of the system. To be confirmed, transactions must be packed in a <a href="/it/vocabulary#block"><i>block</i></a> that fits very strict cryptographic rules that will be verified by the network. These rules prevent any previous block from being modified because doing so would invalidate all following blocks. Mining also creates the equivalent of a competitive lottery that prevents any individual from easily adding new blocks consecutively in the blockchain. This way, no individuals can control what is included in the blockchain or replace parts of the blockchain to roll back their own spends.</p>
+<p>Il <a href="https://en.bitcoin.it/wiki/Mining">mining</a> (letteralmente: un processo minerario) è un <b>sistema di consenso distribuito</b> utilizzato per <a href="/it/vocabulary#confirmation"><i>confermare</i></a> le transazioni in attesa includendole nella blockchain. Questo mantiene un ordine cronologico nella blockchain, protegge la neutralità della rete, e consente a diversi computer di essere d'accordo sullo stato del sistema. Per essere confermate, le transazioni devono essere impacchettate in un <a href="/it/vocabulary#block"><i>blocco</i></a> che rispetti delle regole crittografiche molto rigide che verranno verificate dalla rete. Queste regole impediscono che qualunque blocco precedente  venga modificato, perché ciò invaliderebbe tutti i blocchi successivi. Il mining crea inoltre l'equivalente di una lotteria competitiva che impedisce a chiunque di aggiungere facilmente nuovi blocchi consecutivamente nella blockchain. In questo modo nessuno può controllare cosa è incluso nella blockchain o sostituire parti della blockchain in modo da riottenere quanto speso.</p>
 
-<h2>Going down the rabbit hole</h2>
-<p>This is only a very short and concise summary of the system. If you want to get into the details, you can <a href="/bitcoin.pdf">read the original paper</a> that describes the system's design, and explore the <a href="https://en.bitcoin.it/wiki/Main_Page">Bitcoin wiki</a>.</p>
+<h2>Scendendo nella tana del coniglio</h2>
+<p>Quanto esposto è soltanto un breve e conciso riassunto di come funziona il sistema. Se vuoi scendere nei dettagli, puoi <a href="/bitcoin.pdf">leggere il documento originale</a> che descrive il progetto del sistema, ed esplorare il <a href="https://en.bitcoin.it/wiki/Main_Page">wiki di Bitcoin</a>.</p>
