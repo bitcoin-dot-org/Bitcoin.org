@@ -1,0 +1,96 @@
+---
+lang: nl
+menufor:
+- text: Particulieren
+  url: bitcoin-voor-particulieren
+- text: Bedrijven
+  url: bitcoin-voor-bedrijven
+- text: Ontwikkelaars
+  url: bitcoin-voor-ontwikkelaars
+- text: Liefhebbers
+  url: bitcoin-voor-liefhebbers
+menu:
+- text: Hoe het werkt
+  url: hoe-het-werkt
+- text: Woordenlijst
+  url: woordenlijst
+- text: Hulpmiddelen
+  url: hulpmiddelen
+- text: Community
+  url: community
+- text: Ontwikkeling
+  url: ontwikkeling
+- text: Stichting
+  url: stichting
+- text: Over Bitcoin
+  url: over-bitcoin
+---
+<!DOCTYPE HTML>
+<html lang="{{ page.lang }}">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="http://bitcoin.org/img/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>{{ page.title }}</title>
+{% lesscss main.less %}
+<script type="text/javascript" src="/js/main.js"></script>
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
+</head>
+<body>
+{% if site.ALERT or site.ALERT_nl %}
+  {% if site.ALERT_CLASS %}{% assign class = site.ALERT_CLASS%}{% endif %}{% if site.ALERT_CLASS_nl %}{% assign class = site.ALERT_CLASS_nl%}{% endif %}
+  {% if site.ALERT %}{% assign alert = site.ALERT%}{% endif %}{% if site.ALERT_nl %}{% assign alert = site.ALERT_nl%}{% endif %}
+  <div class="alert-message {{ class }}">
+    <div><div>{{ alert }}</div></div>
+  </div>
+{% endif %}
+  <div id="head"><div>
+    <select id="langselect" onchange="window.location=this.value;">
+      {% for lang in site.langs %}{% assign la = lang[0]%}{% if lang[0] == page.lang %}{% assign active = ' selected="selected"'%}{% else %}{% assign active = ''%}{% endif %}
+      <option value="/{{ lang[0] }}/{{ site.section[page.id][la] }}"{{ active }}>{{ lang[1] }}</option>
+      {% endfor %}
+    </select>
+    <ul id="lang">
+      <li><a href="#" onclick="return false;">{{ site.langs[page.lang] }}</a>
+      <ul>
+        {% for lang in site.langs %}{% if lang[0] != page.lang %}{% assign la = lang[0]%}
+        <li><a href="/{{ lang[0] }}/{{ site.section[page.id][la] }}">{{ lang[1] }}</a></li>
+        {% endif %}{% endfor %}
+      </ul>
+      </li>
+    </ul>
+    <a id="logo" href="/{{ page.lang }}/"><img src="/img/logotop.svg" alt="Bitcoin"></a>
+    <a href="#" id="menumobile" onclick="mobileshow(event);"></a>
+    <ul id="menufor">
+      {% for link in page.menufor %}{% assign active = nil %}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
+      <li{% if active %} class="{{ active }}"{% endif %}><a href="/{{ page.lang }}/{{ link.url }}">{{ link.text }}</a></li>
+      {% endfor %}
+    </ul>
+    <ul id="menu">
+        {% for link in page.menu %}{% assign active = nil %}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
+        <li{% if active %} class="{{ active }}"{% endif %}><a href="/{{ page.lang }}/{{ link.url }}">{{ link.text }}</a></li>
+        {% endfor %}
+    </ul>
+  </div></div>
+  <div id="body">
+    <div id="content">
+    {{ content }}
+    </div>
+    <div id="rightbox">
+      <div id="choose">
+        <a href="/nl/kies-uw-wallet"><img src="/img/but_start.svg" alt="Choose your wallet">Kies uw wallet</a>
+      </div>
+      <div id="before">
+        <a href="/nl/wat-u-moet-weten"><img src="/img/but_warn.svg" alt="You need to know">Wat u moet weten</a>
+      </div>
+      <div id="support">
+        <a href="/nl/help-bitcoin"><img src="/img/but_involve.svg" alt="Support Bitcoin">Help Bitcoin</a>
+      </div>
+    </div>
+    <div id="footer"><div>© Bitcoin Project 2009–2013 Beschikbaar onder de <a href="http://creativecommons.org/licenses/MIT/" target="_blank">MIT-licentie</a></div></div>
+  </div>
+  <script type="text/javascript">svgfallback();</script>
+</body>
+
+</html>
