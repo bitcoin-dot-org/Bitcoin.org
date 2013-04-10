@@ -7,37 +7,37 @@ title: Glossario - Bitcoin
 <p>Bitcoin fornisce un nuovo approccio ai pagamenti, e per questo ci sono alcuni nuovi termini che potrebbero diventare parte del tuo vocabolario. Non c'è bisogno di preoccuparsi, persino l'umile televisione crea nuove parole!</p>
 <h2>Sommario</h2>
 <div class="index">
-<a href="#address">Indirizzo</a>
+<a href="#indirizzo">Indirizzo</a>
 <a href="#blockchain">Blockchain</a>
-<a href="#block">Blocco</a>
+<a href="#blocco">Blocco</a>
 <a href="#btc">BTC</a>
-<a href="#confirmation">Conferma</a>
-<a href="#cryptography">Crittografia</a>
+<a href="#conferma">Conferma</a>
+<a href="#crittografia">Crittografia</a>
 <a href="#double-spend">Double Spend</a>
 <a href="#hash-rate">Hash Rate</a>
 <a href="#mining">Mining</a>
 <a href="#p2p">P2P - Peer To Peer</a>
-<a href="#private-key">Chiave Privata</a>
-<a href="#signature">Firma</a>
-<a href="#wallet">Portafoglio</a>
+<a href="#chiave-privata">Chiave Privata</a>
+<a href="#firma">Firma</a>
+<a href="#portafoglio">Portafoglio</a>
 </div>
 
-<h2><a name="address">Indirizzo</a></h2>
+<h2><a name="indirizzo">Indirizzo</a></h2>
 <p>Un indirizzo Bitcoin è <b>come un indirizzo fisico o una email</b>. E' l'unica informazione da fornire per poter essere pagati da qualcuno con Bitcoin.</p>
 
 <h2><a name="blockchain">Blockchain</a></h2>
 <p>La blockchain è un <b>registro pubblico di tutte le transazioni Bitcoin</b>, in ordine cronologico. La blockchain è condivisa tra tutti gli utenti Bitcoin. E' impiegata per verificare il saldo degli indirizzi Bitcoin e per impedire il <a href="#double-spend">double spending</a>.</p>
 
-<h2><a name="block">Blocco</a></h2>
+<h2><a name="blocco">Blocco</a></h2>
 <p>Un blocco è una <b>parte costituente la blockchain che contiene e conferma molte transazioni in attesa</b>. In media, ogni 10 minuti circa un nuovo blocco, che include delle transazioni, viene aggiunto alla <a href="#blockchain">blockchain</a> attraverso il processo di <a href="#mining">mining</a>.</p>
 
 <h2><a name="btc">BTC</a></h2>
 <p>BTC è il codice di tre lettere, non ufficiale, per indicare BTC. Può essere usato come un'abbreviazione, come nel caso di USD per il dollaro americano (US dollar).</p>
 
-<h2><a name="confirmation">Conferma</a></h2>
+<h2><a name="conferma">Conferma</a></h2>
 <p>Per <i>conferma</i> si intende che una transazione è stata <b>verificata dalla rete ed è altamente improbabile che venga invertita</b>. Una sola conferma è abbastanza sicura. Ma per grandi somme (ad esempio 1000 € o di più) è possibile aspettare più di una conferma, solitamente 6. Ogni nuova conferma riduce esponenzialmente il rischio di inversione della transazione.</p>
 
-<h2><a name="cryptography">Crittografia</a></h2>
+<h2><a name="crittografia">Crittografia</a></h2>
 <p>La crittografia è quella branca della matematica che ci consente di creare <b>prove matematiche che forniscono elevati livelli di sicurezza</b>. Il commercio e le operazioni bancarie online impiegano già la crittografia. Nel caso di Bitcoin, la crittografia è impiegata per rendere impossibile a chiunque di spendere del denaro dal portafoglio di un altro utente o alterare la <a href="#blockchain">blockchain</a>. Può essere anche utilizzata per criptare un portafoglio, in modo che non possa essere usato senza una passowrd.</p>
 
 <h2><a name="double-spend">Double Spend</a></h2>
@@ -52,11 +52,11 @@ title: Glossario - Bitcoin
 <h2><a name="p2p">P2P</a></h2>
 <p>Per <i>peer to peer</i> (abbreviato in P2P) si intendono <b>i sistemi che funzionano come un collettivo organizzato</b> permettendo ad ogni individuo di interagire direttamente con gli altri. Nel caso di Bitcoin, la rete è costruita in modo che ogni utente trasmetta le transazioni degli altri utenti. E, di importanza cruciale, nessuna banca è richiesta come parte terza.</p>
 
-<h2><a name="private-key">Chiave Privata</a></h2>
-<p>Una chiave privata è un <b>segmento segreto di dati che dimostra il tuo diritto di spendere Bitcoin da uno specifico indirizzo Bitcoin</b> attraverso una <a href="#signature">firma</a> crittografica. Ogni <a href="#address">indirizzo Bitcoin</a> dispone di una sua propria chiave privata. Se utilizzi un programma portafoglio le tue chiavi private sono conservate sul tuo computer, mentre se utilizzi un portafoglio web le tue chiavi private sono salvate su alcuni server remoti. Le chiavi private non devono mai essere rivelate in quanto consentono di spendere Bitcoin dagli indirizzi ad esse associati.</p>
+<h2><a name="chiave-privata">Chiave Privata</a></h2>
+<p>Una chiave privata è un <b>segmento segreto di dati che dimostra il tuo diritto di spendere Bitcoin da uno specifico indirizzo Bitcoin</b> attraverso una <a href="#firma">firma</a> crittografica. Ogni <a href="#indirizzo">indirizzo Bitcoin</a> dispone di una sua propria chiave privata. Se utilizzi un programma portafoglio le tue chiavi private sono conservate sul tuo computer, mentre se utilizzi un portafoglio web le tue chiavi private sono salvate su alcuni server remoti. Le chiavi private non devono mai essere rivelate in quanto consentono di spendere Bitcoin dagli indirizzi ad esse associati.</p>
 
-<h2><a name="signature">Firma</a></h2>
-<p>Una firma <a href="#cryptography">crittografica</a> è <b>un meccanismo matematico che permette a qualcuno di comprovare la titolarità</b>. Nel caso di Bitcoin, un <a href="#address">indirizzo Bitcoin</a> e la sua <a href="#private-key">chiave privata</a> sono collegati da qualche magia matematica. Quando il tuo programma Bitcoin firma una transazione con l'appropriata chiave privata, l'intera rete può vedere che la firma corrisponde all'indirizzo Bitcoin. Tuttavia, non c'è alcun modo per il mondo intero di indovinare la tua chiave privata per rubare i tuoi sudati bitcoin.</p>
+<h2><a name="firma">Firma</a></h2>
+<p>Una firma <a href="#crittografia">crittografica</a> è <b>un meccanismo matematico che permette a qualcuno di comprovare la titolarità</b>. Nel caso di Bitcoin, un <a href="#indirizzo">indirizzo Bitcoin</a> e la sua <a href="#chiave-privata">chiave privata</a> sono collegati da qualche magia matematica. Quando il tuo programma Bitcoin firma una transazione con l'appropriata chiave privata, l'intera rete può vedere che la firma corrisponde all'indirizzo Bitcoin. Tuttavia, non c'è alcun modo per il mondo intero di indovinare la tua chiave privata per rubare i tuoi sudati bitcoin.</p>
 
-<h2><a name="wallet">Portafoglio</a></h2>
-<p>Per portafoglio Bitcoin si intende <b>l'equivalente di un portafoglio fisico sulla rete Bitcoin</b> Ogni portafoglio Bitcoin può mostrare il saldo totale di tutti gli <a href="#address">indirizzi Bitcoin</a> che contiene. Proprio come si contano i soldi in un portafoglio reale. Ed allo stesso modo, un portafoglio Bitcoin permette di pagare una specifica somma ad una specifica persona. E' diverso dalle carte di credito che invece vengono addebitate dai commercianti.</p>
+<h2><a name="portafoglio">Portafoglio</a></h2>
+<p>Per portafoglio Bitcoin si intende <b>l'equivalente di un portafoglio fisico sulla rete Bitcoin</b> Ogni portafoglio Bitcoin può mostrare il saldo totale di tutti gli <a href="#indirizzo">indirizzi Bitcoin</a> che contiene. Proprio come si contano i soldi in un portafoglio reale. Ed allo stesso modo, un portafoglio Bitcoin permette di pagare una specifica somma ad una specifica persona. E' diverso dalle carte di credito che invece vengono addebitate dai commercianti.</p>
