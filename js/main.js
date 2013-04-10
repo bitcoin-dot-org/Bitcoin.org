@@ -82,3 +82,16 @@ p.style.height=nhe+'px';
 t.removeAttribute('href');
 cancelEvent(e);
 }
+function faqshow(e){
+var p=t=getEventTarget(e);
+while(p.nodeType!=1||p.nodeName!='SPAN')p=p.nextSibling;
+var pp=p.cloneNode(true);
+pp.style.visibility='hidden';
+pp.style.height='auto';
+p.parentNode.appendChild(pp);
+var nhe=getHeight(pp);
+pp.parentNode.removeChild(pp);
+if(p.style.height!='0px'&&p.style.height!='')p.style.height='0px';
+else p.style.height=nhe+'px';
+cancelEvent(e);
+}
