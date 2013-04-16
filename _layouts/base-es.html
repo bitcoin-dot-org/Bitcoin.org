@@ -1,29 +1,29 @@
 ---
-lang: en
+lang: es
 menufor:
-- text: Individuals
-  url: bitcoin-for-individuals
-- text: Businesses
-  url: bitcoin-for-businesses
-- text: Developers
-  url: bitcoin-for-developers
-- text: Enthusiasts
-  url: bitcoin-for-enthusiasts
+- text: Personas
+  url: bitcoin-para-personas
+- text: Empresas
+  url: bitcoin-para-empresas
+- text: Desarrolladores
+  url: bitcoin-para-desarrolladores
+- text: Entusiastas
+  url: bitcoin-para-entusiastas
 menu:
-- text: How it works
-  url: how-it-works
-- text: Vocabulary
-  url: vocabulary
-- text: Resources
-  url: resources
-- text: Community
-  url: community
-- text: Development
-  url: development
-- text: Foundation
-  url: foundation
-- text: About
-  url: about
+- text: Como funciona
+  url: como-funciona
+- text: Vocabulario
+  url: vocabulario
+- text: Recursos
+  url: recursos
+- text: Comunidad
+  url: comunidad
+- text: Desarrollo
+  url: desarrollo
+- text: Fundación
+  url: fundacion
+- text: Acerca de
+  url: acerca-de
 ---
 <!DOCTYPE HTML>
 <html lang="{{ page.lang }}">
@@ -38,9 +38,9 @@ menu:
 <link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
 </head>
 <body>
-{% if site.ALERT or site.ALERT_en %}
-  {% if site.ALERT_CLASS %}{% assign class = site.ALERT_CLASS%}{% endif %}{% if site.ALERT_CLASS_en %}{% assign class = site.ALERT_CLASS_en%}{% endif %}
-  {% if site.ALERT %}{% assign alert = site.ALERT%}{% endif %}{% if site.ALERT_en %}{% assign alert = site.ALERT_en%}{% endif %}
+{% if site.ALERT or site.ALERT_es %}
+  {% if site.ALERT_CLASS %}{% assign class = site.ALERT_CLASS%}{% endif %}{% if site.ALERT_CLASS_es %}{% assign class = site.ALERT_CLASS_es%}{% endif %}
+  {% if site.ALERT %}{% assign alert = site.ALERT%}{% endif %}{% if site.ALERT_es %}{% assign alert = site.ALERT_es%}{% endif %}
   <div class="alert-message {{ class }}">
     <div><div>{{ alert }}</div></div>
   </div>
@@ -79,16 +79,16 @@ menu:
     </div>
     <div id="rightbox">
       <div id="choose">
-        <a href="/en/choose-your-wallet"><img src="/img/but_start.svg" alt="Choose your wallet">Choose your wallet</a>
+        <a href="/es/elige-tu-monedero"><img src="/img/but_start.svg" alt="Elige tu monedero">Elige tu monedero</a>
       </div>
       <div id="before">
-        <a href="/en/you-need-to-know"><img src="/img/but_warn.svg" alt="You need to know">You need to know</a>
+        <a href="/es/debes-saber"><img src="/img/but_warn.svg" alt="Debes saber">Debes saber</a>
       </div>
       <div id="support">
-        <a href="/en/support-bitcoin"><img src="/img/but_involve.svg" alt="Support Bitcoin">Support Bitcoin</a>
+        <a href="/es/apoya-bitcoin"><img src="/img/but_involve.svg" alt="Apoya Bitcoin">Apoya Bitcoin</a>
       </div>
     </div>
-    <div id="footer"><a href="http://bitcoin2013.com" class="conferencebanner"><img src="/img/bitcoin2013_banner.png" alt="Bitcoin conference"></a><div>© Bitcoin Project 2009–2013 Released under the <a href="http://creativecommons.org/licenses/MIT/" target="_blank">MIT license</a></div></div>
+    <div id="footer"><div>© Bitcoin Project 2009–2013 Publicado bajo la <a href="http://creativecommons.org/licenses/MIT/" target="_blank">licencia MIT</a></div></div>
   </div>
   <script type="text/javascript">svgfallback();</script>
 </body>

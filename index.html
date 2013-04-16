@@ -1,7 +1,7 @@
 ---
 layout: base-en
 id: index
-title: Bitcoin
+title: Bitcoin - Open source P2P digital currency
 ---
 <script>
 //Auto redirect to the appropriate language
@@ -9,10 +9,10 @@ var langs={};{% for lang in site.langs %}{% if lang[0] != page.lang %}langs['{{ 
 var lang=(navigator.language)?navigator.language:navigator.userLanguage;
 lang=lang.split('_')[0];
 if(!langs[lang])lang='en';
-window.location.href='/'+lang+'/';
+setTimeout(function(){window.location.href='/'+lang+'/';},200);
 </script>
 <h1>An open source P2P digital currency</h1>
-<p style="font-size:125%;">Bitcoin is a currency, a protocol, and a software that enables
+<p style="font-size:125%;">Bitcoin is a digital currency, a protocol, and a software that enables
 <ul style="font-size:125%">
   <li>Instant peer to peer transactions</li>
   <li>Worldwide payments</li>

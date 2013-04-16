@@ -141,13 +141,12 @@ li{
 }
 
 #head{
-	margin:10px 0px;
+	margin:22px 0px 10px 0px;
 }
 #head>div{
 	max-width:1050px;
 	margin:auto;
 	position:relative;
-	overflow:hidden;
 }
 #head.home {
 	text-align:center;
@@ -171,13 +170,13 @@ li{
 	margin:0px;
 	text-align:right;
 	cursor:pointer;
+	z-index:1000;
 }
 #lang{
 	position:absolute;
 	right:5px;
 	top:0px;
 	height:30px;
-	z-index: 1000;
 	border-left:1px solid transparent;
 	border-right:1px solid transparent;
 	border-top:1px solid transparent;
@@ -190,14 +189,9 @@ li{
 	background-color:#fff;
 	margin-left:-5px;
 	padding-bottom:4px;
-	border-radius-bottom-right:5px;
-	-webkit-border-radius-bottom-right:5px;
-	border-radius-bottom-left:5px;
-	-webkit-border-radius-bottom-left:5px;
 	border-left:1px solid #ebebeb;
 	border-right:1px solid #ebebeb;
 	border-bottom:1px solid #ebebeb;
-	z-index:100;
 }
 #lang:hover{
 	border-left:1px solid #ebebeb;
@@ -205,7 +199,7 @@ li{
 	border-top:1px solid #ebebeb;
 	background-color:#fff;
 }
-#lang>li:hover>ul{
+#lang:hover>li>ul{
 	display:block;
 }
 #lang>li>a,#lang>li>a:link,#lang>li>a:visited,#lang>li>a:active{
@@ -228,9 +222,7 @@ li{
 
 #logo{
 	display:block;
-	position:absolute;
-	left:40px;
-	top:12px;
+	margin-left:40px;
 	width:191px;
 	height:40px;
 }
@@ -240,9 +232,10 @@ li{
 }
 
 #menufor{
-	position:relative;
-	bottom:-18px;
-	margin:2px 0px 0px 250px;
+	margin:0px;
+	position:absolute;
+	top:8px;
+	left:250px;
 	padding:0px;
 	height:35px;
 }
@@ -273,12 +266,14 @@ li{
 
 #menu{
 	padding:0px;
-	margin:26px auto 0px 32px;
+	margin:12px auto 0px 32px;
 }
 #menu li{
 	list-style:none;
-	float:left;
-	margin-right: 5px;
+	display:inline-block;
+	zoom:1;
+	*display:inline;/*IE7 support*/
+	margin:0px;
 }
 #menu li a,#menu li a:active,#menu li a:visited,#menu li a:link{
 	font-family:'Ubuntu', sans-serif;
@@ -412,17 +407,17 @@ li{
 	display:inline-block;
 }
 
-.ressources li{
-	font-size:115%;
+.resources li{
 	padding-top:6px;
 }
-.ressources a,.ressources a:link,.ressources a:active,.ressources a:visited{
+.resources a,.resources a:link,.resources a:active,.resources a:visited{
 	text-decoration:none;
 }
-.ressources>li{
+.resources>li{
+	font-size:115%;
 	font-weight:bold;
 }
-.ressources>li>ul>li{
+.resources>li>ul>li{
 	font-weight:normal;
 }
 
@@ -576,6 +571,12 @@ li{
 	-webkit-border-radius:9px;
 }
 
+.conferencebanner{
+	position:absolute;
+	top:0px;
+	right:5px;
+}
+
 /*Styles specific to mobiles*/
 
 @media handheld, only screen and (max-device-height: 37em), only screen and (max-device-width: 50em){
@@ -584,6 +585,9 @@ li{
 	}
 	#head{
 		margin:0px;
+	}
+	#head>div{
+		overflow:hidden;
 	}
 	#langselect{
 		background-color:transparent;
@@ -609,7 +613,7 @@ li{
 	#menufor{
 		position:static;
 		bottom:0px;
-		margin:10px 0px 0px 10px;
+		margin:10px 0px 0px 0px;
 		height:auto;
 	}
 	#menufor li{
@@ -625,7 +629,7 @@ li{
 	#menu{
 		position:static;
 		height:auto;
-		margin:10px 0px 10px 10px;
+		margin:10px 0px 10px 0px;
 	}
 	#menu li{
 		float:none;
@@ -661,5 +665,10 @@ li{
 	}
 	.preview{
 		display:none;
+	}
+	.conferencebanner{
+		position:static;
+		display:inline-block;
+		margin:0px 0px 10px -5px;
 	}
 }
