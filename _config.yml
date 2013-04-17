@@ -5,7 +5,7 @@ ALERT:
 langs:
   en: English
   fr: Français
-  ru: Russian
+  ru: Русский
   
 section:
   index:
@@ -15,64 +15,65 @@ section:
   about:
     en: about
     fr: a-propos
-	ru: about
+	ru: описание
   bitcoin-for-developers:
     en: bitcoin-for-developers
     fr: bitcoin-pour-developpeurs
-	ru: bitcoin-for-developers
+	ru: биткоин-разработчикам
   bitcoin-for-enthusiasts:
     en: bitcoin-for-enthusiasts
     fr: bitcoin-pour-passionnes
-	ru: bitcoin-for-enthusiasts
+	ru: биткоин-энтузиастам
   bitcoin-for-individuals:
     en: bitcoin-for-individuals
     fr: bitcoin-pour-particuliers
-	ru: bitcoin-for-individuals
+	ru: биткоин-частным-лицам
   bitcoin-for-organizations:
     en: bitcoin-for-organizations
     fr: bitcoin-pour-organisations
-	ru: bitcoin-for-organizations
+	ru: биткоин-бизнесу
   choose-your-wallet:
     en: choose-your-wallet
     fr: choisir-votre-porte-monnaie
-	ru: choose-your-wallet
+	ru: выберите-свой-кошелек
   community:
     en: community
     fr: communaute
-	ru: community
+	ru: сообщество
   development:
     en: development
     fr: developpement
-	ru: development
+	ru: разработка
   download:
     en: download
     fr: telecharger
+	ru: загрузки
   foundation:
     en: foundation
     fr: fondation
-	ru: foundation
+	ru: фонд
   how-it-works:
     en: how-it-works
     fr: comment-ca-marche
-	ru: how-it-works
+	ru: как-это-работает
   resources:
     en: resources
     fr: ressources
-	ru: resources
+	ru: ресурсы
   support-bitcoin:
     en: support-bitcoin
     fr: supporter-bitcoin
-	ru: support-bitcoin
+	ru: поддержать-биткоин
   version-history:
     en: version-history
   vocabulary:
     en: vocabulary
     fr: vocabulaire
-	ru: vocabulary
+	ru: термины
   you-need-to-know:
     en: you-need-to-know
     fr: vous-devez-savoir
-	ru: you-need-to-know
+	ru: вам-нужно-знать
 
 safe:        false
 auto:        false
