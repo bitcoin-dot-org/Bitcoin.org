@@ -9,6 +9,8 @@ menufor:
   url: bitcoin-for-developers
 - text: Enthusiasts
   url: bitcoin-for-enthusiasts
+- text: Press
+  url: bitcoin-for-press
 menu:
 - text: How it works
   url: how-it-works
@@ -74,10 +76,10 @@ menu:
     </ul>
   </div></div>
   <div id="body">
-    <div id="content">
+    <div id="content"{% if page.mode == "wide" %} class="wide"{% endif %}>
     {{ content }}
     </div>
-    <div id="rightbox">
+    <div id="rightbox"{% if page.mode == "wide" %} class="wide"{% endif %}>
       <div id="choose">
         <a href="/en/choose-your-wallet"><img src="/img/but_start.svg" alt="Choose your wallet">Choose your wallet</a>
       </div>
