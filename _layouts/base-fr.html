@@ -74,10 +74,10 @@ menu:
     </ul>
   </div></div>
   <div id="body">
-    <div id="content">
+    <div id="content"{% if page.mode == "wide" %} class="wide"{% endif %}>
     {{ content }}
     </div>
-    <div id="rightbox">
+    <div id="rightbox"{% if page.mode == "wide" %} class="wide"{% endif %}>
       <div id="choose">
         <a href="/fr/choisir-votre-porte-monnaie"><img src="/img/but_start.svg" alt="Choisissez votre porte-monnaie">Choisissez votre porte-monnaie</a>
       </div>
