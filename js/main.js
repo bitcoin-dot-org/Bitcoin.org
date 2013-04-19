@@ -76,7 +76,6 @@ for(var i=0,nd=document.getElementsByTagName('*'),n=nd.length;i<n;i++){
 
 
 function mobileshow(e){
-cancelEvent(e);
 var mm=document.getElementById('menu');
 var mf=document.getElementById('menufor');
 var ml=document.getElementById('langselect');
@@ -84,7 +83,22 @@ var t=document.getElementById('menumobile');
 if(mf.style.display=='block'){mf.style.display='';mm.style.display='';ml.style.display='';}
 else{mf.style.display='block';mm.style.display='block';ml.style.display='inline-block';}
 t.parentNode.removeChild(t);
-return false;
+cancelEvent(e);
+}
+
+
+function boxshow(e){
+var p=t=getEventTarget(e);
+while(p.nodeName!='DIV')p=p.parentNode;
+var pp=p.cloneNode(true);
+pp.style.visibility='hidden';
+pp.style.height='auto';
+p.parentNode.appendChild(pp);
+var nhe=getHeight(pp);
+pp.parentNode.removeChild(pp);
+p.style.height=nhe+'px';
+t.removeAttribute('href');
+cancelEvent(e);
 }
 
 
