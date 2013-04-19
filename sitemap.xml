@@ -8,6 +8,6 @@
   <xhtml:link
     rel="alternate"
     hreflang="{{ lan[0] }}"
-    href="http://www.bitcoin.org/{{ lan[0] }}/{{ lan[1] }}" />{% endif %}{% endfor %}
+    href="http://bitcoin.org/{{ lan[0] }}/{{ lan[1] }}" />{% endif %}{% endfor %}
 </url>{% endfor %}{% endfor %}
 </urlset>
