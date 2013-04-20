@@ -594,14 +594,7 @@ li{
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 }
-.press-volunteer>p{
-	margin-top:0px;
-	margin-bottom:30px;
-}
-.press-volunteer>p>img{
-	vertical-align:bottom;
-}
-.press-volunteer>div{
+.press-volunteer>div>div{
 	width:400px;
 	height:150px;
 	display:inline-block;
@@ -610,23 +603,45 @@ li{
 	margin-bottom:30px;
 	vertical-align:top;
 }
-.press-volunteer>div>img{
+.press-volunteer>div>div>img{
 	float:left;
 	margin-right:30px;
 }
-.press-volunteer>div>img:first-child+p{
+.press-volunteer>div>div>img:first-child+p{
 	font-weight:bold;
 	color:#0d579b;
 	margin:0px;
 }
-.press-volunteer>div>img:first-child+p+p{
+.press-volunteer>div>div>img:first-child+p+p{
 	margin:0px;
 }
-.press-volunteer>div>img:first-child+p+p+p{
+.press-volunteer>div>div>img:first-child+p+p+p{
 	font-size:80%;
 }
-.press-volunteer>div>img:first-child+p+p+p+p{
+.press-volunteer>div>div>img:first-child+p+p+p+p{
 	margin:0px;
+}
+.press-volunteer>p>img{
+	vertical-align:bottom;
+}
+.press-volunteer>div:first-child+p{
+	margin-top:0px;
+	margin-bottom:10px;
+}
+.press-volunteer>div:first-child+p+p{
+	margin-top:0px;
+	margin-bottom:10px;
+}
+.press-volunteer>div:first-child+p+p+p{
+	height:0px;
+	overflow:hidden;
+	margin-top:0px;
+	margin-bottom:20px;
+	font-size:85%;
+	text-align:justify;
+	transition:height 400ms ease-out;
+	-moz-transition:height 400ms ease-out;
+	-webkit-transition:height 400ms ease-out;
 }
 
 .press-faq{
@@ -846,11 +861,11 @@ li{
 		padding-left:0px;
 		margin:auto;
 	}
-	.press-volunteer>div{
+	.press-volunteer>div>div{
 		width:200px;
 		height:auto;
 	}
-	.press-volunteer>div>img{
+	.press-volunteer>div>div>img{
 		float:none;
 		margin-right:0px;
 		margin-bottom:20px;
