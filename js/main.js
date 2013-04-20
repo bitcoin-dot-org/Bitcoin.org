@@ -117,3 +117,17 @@ else p.style.height=nhe+'px';
 t.style.display='none';
 cancelEvent(e);
 }
+
+
+function disclaimershow(e){
+var p=t=getEventTarget(e);
+while(p.nodeType!=1||p.nodeName!='P')p=p.parentNode;
+p=p.nextSibling;
+while(p.nodeType!=1||p.nodeName!='P')p=p.nextSibling;
+p.style.height='auto';
+var nhe=getHeight(p);
+p.style.height='0px';
+p.style.height=nhe+'px';
+t.parentNode.removeChild(t);
+cancelEvent(e);
+}
