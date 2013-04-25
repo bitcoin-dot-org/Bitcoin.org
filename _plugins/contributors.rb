@@ -6,7 +6,7 @@ module Jekyll
 
 	class CategoryGenerator < Generator
 		def fetch_contributors
-			contributors = JSON.parse(open("https://api.github.com/repos/bitcoin/bitcoin/contributors").read)
+			contributors = JSON.parse(open("https://api.github.com/repos/bitcoin/bitcoin/contributors","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
 
 			contributors.map do |x|
 				x['name'] = x['login'] unless x.has_key?('name')
