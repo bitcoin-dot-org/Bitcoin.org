@@ -8,10 +8,7 @@ fi
 cp -R en ${1}
 cp _layouts/base-en.html _layouts/base-${1}.html
 sed -i "s_layout: base-en_layout: base-${1}_g" ${1}/*.html
-sed -i "s_href=\"/en/_href=\"/${1}/_g" ${1}/*.html
-sed -i "s_src=\"/en/_src=\"/${1}/_g" ${1}/*.html
-sed -i "s_href=\"/en/_href=\"/${1}/_g" _layouts/base-${1}.html
-sed -i "s_src=\"/en/_src=\"/${1}/_g" _layouts/base-${1}.html
+sed -i "s_lang: en_lang: ${1}_g" ${1}/*.html
 sed -i "s_lang: en_lang: ${1}_g" _layouts/base-${1}.html
 sed -i "s/ALERT_CLASS_en/ALERT_CLASS_${1}/g" _layouts/base-${1}.html
 sed -i "s/ALERT_en/ALERT_${1}/g" _layouts/base-${1}.html
