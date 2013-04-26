@@ -14,7 +14,7 @@
    height="600"
    id="svg2985"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="bitcoin_at_a_glance.png">
+   sodipodi:docname="bitcoin_at_a_glance.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,8 +60,7 @@
     <path
        d="m 255.30409,-376.39244 91.99394,0.21031 c 0,0 0.22208,-14.14113 0.0201,-40.73312 -0.10037,-13.47647 -28.11908,-25.73828 -44.79565,-25.52656 -17.22086,0.21864 -46.95198,10.97155 -47.22032,24.04785 -0.72408,35.28228 0,42.00148 -9e-5,42.00152 z"
        id="path3767"
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:5.50831413;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       inkscape:connector-curvature="0" />
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:5.50831413;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <text
        x="280.09485"
        y="-325.73792"
@@ -83,15 +82,14 @@
          id="tspan3779-8"
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Medium">1sd9..</tspan></text>
     <text
-       x="285.52542"
+       x="289.82095"
        y="-386.98062"
        id="text3833"
        xml:space="preserve"
-       style="font-size:33.05439758px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Medium"
-       sodipodi:linespacing="125%"><tspan
-         x="285.52542"
+       style="font-size:33.05439758px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Medium"><tspan
+         x="289.82095"
          y="-386.98062"
-         id="tspan3835">Jij</tspan></text>
+         id="tspan3835">U</tspan></text>
     <rect
        width="20.965456"
        height="19.412464"
@@ -418,17 +416,5 @@
          x="414.87689"
          y="-334.21805"
          id="tspan3866-7-0">?</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="-39.40678"
-       y="127.11864"
-       id="text3090"
-       sodipodi:linespacing="125%"
-       transform="translate(0,-568)"><tspan
-         sodipodi:role="line"
-         id="tspan3092"
-         x="-39.40678"
-         y="127.11864" /></text>
   </g>
 </svg>
