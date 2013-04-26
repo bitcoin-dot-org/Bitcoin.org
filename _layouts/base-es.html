@@ -1,29 +1,23 @@
 ---
 lang: es
 menufor:
-- text: Personas
-  url: bitcoin-para-personas
-- text: Empresas
-  url: bitcoin-para-empresas
-- text: Desarrolladores
-  url: bitcoin-para-desarrolladores
-- text: Entusiastas
-  url: bitcoin-para-entusiastas
+  bitcoin-for-individuals: Personas
+  bitcoin-for-businesses: Empresas
+  bitcoin-for-developers: Desarrolladores
+  bitcoin-for-enthusiasts: Entusiastas
 menu:
-- text: Como funciona
-  url: como-funciona
-- text: Vocabulario
-  url: vocabulario
-- text: Recursos
-  url: recursos
-- text: Comunidad
-  url: comunidad
-- text: Desarrollo
-  url: desarrollo
-- text: Fundación
-  url: fundacion
-- text: Acerca de
-  url: acerca-de
+  how-it-works: Como funciona
+  vocabulary: Vocabulario
+  resources: Recursos
+  community: Comunidad
+  development: Desarrollo
+  foundation: Fundación
+  about: Acerca de
+button:
+  wallet: Elige tu monedero
+  know: Debes saber
+  support: Apoya Bitcoin
+footer: © Bitcoin Project 2009–2013 Publicado bajo la <a href="http://creativecommons.org/licenses/MIT/" target="_blank">licencia MIT</a>
 ---
 <!DOCTYPE HTML>
 <html lang="{{ page.lang }}">
@@ -63,13 +57,13 @@ menu:
     <a id="logo" href="/{{ page.lang }}/"><img src="/img/logotop.svg" alt="Bitcoin"></a>
     <a href="#" id="menumobile" onclick="mobileshow(event);"></a>
     <ul id="menufor">
-      {% for link in page.menufor %}{% assign active = nil %}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
-      <li{% if active %} class="{{ active }}"{% endif %}><a href="/{{ page.lang }}/{{ link.url }}">{{ link.text }}</a></li>
+      {% for link in page.menufor %}{% assign id = link[0]%}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:site.section[id][page.lang] | append:'.html' }}{% endcapture %}
+      <li{% if page.url == fullurl %} class="active"{% endif %}><a href="/{{ page.lang }}/{{ site.section[id][page.lang] }}">{{ link[1] }}</a></li>
       {% endfor %}
     </ul>
     <ul id="menu">
-        {% for link in page.menu %}{% assign active = nil %}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
-        <li{% if active %} class="{{ active }}"{% endif %}><a href="/{{ page.lang }}/{{ link.url }}">{{ link.text }}</a></li>
+        {% for link in page.menu %}{% assign id = link[0]%}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:site.section[id][page.lang] | append:'.html' }}{% endcapture %}
+        <li{% if page.url == fullurl %} class="active"{% endif %}><a href="/{{ page.lang }}/{{ site.section[id][page.lang] }}">{{ link[1] }}</a></li>
         {% endfor %}
     </ul>
   </div></div>
@@ -79,16 +73,16 @@ menu:
     </div>
     <div id="rightbox"{% if page.mode == "wide" %} class="wide"{% endif %}>
       <div id="choose">
-        <a href="/es/elige-tu-monedero"><img src="/img/but_start.svg" alt="Elige tu monedero">Elige tu monedero</a>
+        <a href="/{{page.lang}}/{{site.section.choose-your-wallet[page.lang]}}"><img src="/img/but_start.svg" alt="{{page.button.wallet}}">{{page.button.wallet}}</a>
       </div>
       <div id="before">
-        <a href="/es/debes-saber"><img src="/img/but_warn.svg" alt="Debes saber">Debes saber</a>
+        <a href="/{{page.lang}}/{{site.section.you-need-to-know[page.lang]}}"><img src="/img/but_warn.svg" alt="{{page.button.know}}">{{page.button.know}}</a>
       </div>
       <div id="support">
-        <a href="/es/apoya-bitcoin"><img src="/img/but_involve.svg" alt="Apoya Bitcoin">Apoya Bitcoin</a>
+        <a href="/{{page.lang}}/{{site.section.support-bitcoin[page.lang]}}"><img src="/img/but_involve.svg" alt="{{page.button.support}}">{{page.button.support}}</a>
       </div>
     </div>
-    <div id="footer"><div>© Bitcoin Project 2009–2013 Publicado bajo la <a href="http://creativecommons.org/licenses/MIT/" target="_blank">licencia MIT</a></div></div>
+    <div id="footer"><div>{{page.footer}}</div></div>
   </div>
   <script type="text/javascript">svgfallback();</script>
 </body>
