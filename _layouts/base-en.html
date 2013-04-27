@@ -1,19 +1,31 @@
 ---
 lang: en
 menufor:
-  bitcoin-for-individuals: Individuals
-  bitcoin-for-businesses: Businesses
-  bitcoin-for-developers: Developers
-  bitcoin-for-enthusiasts: Enthusiasts
-  bitcoin-for-press: Press
+- id: bitcoin-for-individuals
+  text: Individuals
+- id: bitcoin-for-businesses
+  text: Businesses
+- id: bitcoin-for-developers
+  text: Developers
+- id: bitcoin-for-enthusiasts
+  text: Enthusiasts
+- id: bitcoin-for-press
+  text: Press
 menu:
-  how-it-works: How it works
-  vocabulary: Vocabulary
-  resources: Resources
-  community: Community
-  development: Development
-  foundation: Foundation
-  about: About
+- id: how-it-works
+  text: How it works
+- id: vocabulary
+  text: Vocabulary
+- id: resources
+  text: Resources
+- id: community
+  text: Community
+- id: development
+  text: Development
+- id: foundation
+  text: Foundation
+- id: about
+  text: About
 button:
   wallet: Choose your wallet
   know: You need to know
@@ -58,13 +70,13 @@ footer: © Bitcoin Project 2009–2013 Released under the <a href="http://creati
     <a id="logo" href="/{{ page.lang }}/"><img src="/img/logotop.svg" alt="Bitcoin"></a>
     <a href="#" id="menumobile" onclick="mobileshow(event);"></a>
     <ul id="menufor">
-      {% for link in page.menufor %}{% assign id = link[0]%}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:site.section[id][page.lang] | append:'.html' }}{% endcapture %}
-      <li{% if page.url == fullurl %} class="active"{% endif %}><a href="/{{ page.lang }}/{{ site.section[id][page.lang] }}">{{ link[1] }}</a></li>
+      {% for link in page.menufor %}{% assign id = link.id%}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:site.section[id][page.lang] | append:'.html' }}{% endcapture %}
+      <li{% if page.url == fullurl %} class="active"{% endif %}><a href="/{{ page.lang }}/{{ site.section[id][page.lang] }}">{{ link.text }}</a></li>
       {% endfor %}
     </ul>
     <ul id="menu">
-        {% for link in page.menu %}{% assign id = link[0]%}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:site.section[id][page.lang] | append:'.html' }}{% endcapture %}
-        <li{% if page.url == fullurl %} class="active"{% endif %}><a href="/{{ page.lang }}/{{ site.section[id][page.lang] }}">{{ link[1] }}</a></li>
+        {% for link in page.menu %}{% assign id = link.id%}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:site.section[id][page.lang] | append:'.html' }}{% endcapture %}
+        <li{% if page.url == fullurl %} class="active"{% endif %}><a href="/{{ page.lang }}/{{ site.section[id][page.lang] }}">{{ link.text }}</a></li>
         {% endfor %}
     </ul>
   </div></div>
