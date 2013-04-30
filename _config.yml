@@ -2,6 +2,12 @@ DOWNLOAD_VERSION: 0.8.1
 ALERT_CLASS: 
 ALERT: 
 
+langsorder:
+- id: en
+- id: es
+- id: fr
+- id: nl
+
 langs:
   en: English
   es: Español

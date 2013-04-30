@@ -52,15 +52,15 @@ footer: © Bitcoin Project 2009–2013 Publié sous la <a href="http://creativec
 {% endif %}
   <div id="head"><div>
     <select id="langselect" onchange="window.location=this.value;">
-      {% for lang in site.langs %}{% assign la = lang[0]%}{% if lang[0] == page.lang %}{% assign active = ' selected="selected"'%}{% else %}{% assign active = ''%}{% endif %}
-      <option value="/{{ lang[0] }}/{{ site.section[page.id][la] }}"{{ active }}>{{ lang[1] }}</option>
+      {% for lang in site.langsorder %}{% if lang.id == page.lang %}{% assign active = ' selected="selected"'%}{% else %}{% assign active = ''%}{% endif %}
+      <option value="/{{ lang.id }}/{{ site.section[page.id][lang.id] }}"{{ active }}>{{ site.langs[lang.id] }}</option>
       {% endfor %}
     </select>
     <ul id="lang">
       <li><a href="#" onclick="return false;">{{ site.langs[page.lang] }}</a>
       <ul>
-        {% for lang in site.langs %}{% if lang[0] != page.lang %}{% assign la = lang[0]%}
-        <li><a href="/{{ lang[0] }}/{{ site.section[page.id][la] }}">{{ lang[1] }}</a></li>
+        {% for lang in site.langsorder %}{% if lang.id != page.lang %}
+        <li><a href="/{{ lang.id }}/{{ site.section[page.id][lang.id] }}">{{ site.langs[lang.id] }}</a></li>
         {% endif %}{% endfor %}
       </ul>
       </li>
