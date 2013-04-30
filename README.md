@@ -44,19 +44,22 @@ Each time that a commit needs to be translated in other languages, a link to thi
 
 ### Alerts
 
-You can easily put a global alert on the website by changing the ALERT and ALERT\_CLASS variables in _config.yml.
-And you can also set an alert specific to a language by appending the language code to the ALERT.
+You can easily put an alert on the website by changing the ALERT and ALERT\_CLASS variables in _config.yml.  
+You can both set one fallback alert for all languages and many translated alerts for specific languages.
 
 Example:
 
 ```
-ALERT_CLASS: error
-ALERT: <strong>Security alert:</strong> Please upgrade to 0.3.25 as soon as possible!
-ALERT_fr: <strong>Alerte de sécurité:</strong> Mettez Bitcoin à jour vers la version 0.3.25 sans délais!
+ALERT_CLASS:
+  all: <strong>Security alert:</strong> Please upgrade to 0.8.1 as soon as possible!
+  fr: <strong>Alerte de sécurité:</strong> Mettez Bitcoin à jour vers la version 0.8.1 sans délais!
+ALERT:
+  all: error
+  fr: error
 ```
 
-will produce an english red alert box for all languages, and a translated red alert box for french language.
-Possible classes are: error (red), info (blue), success (green) and warning (yellow)
+This will produce an english red alert box for all languages, and a translated red alert box for french language.  
+Possible classes are: **error** (red), **info** (blue), **success** (green) and **warning** (yellow)
 
 ### Release Notes
 

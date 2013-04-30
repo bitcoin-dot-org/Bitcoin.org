@@ -1,6 +1,18 @@
 DOWNLOAD_VERSION: 0.8.1
-ALERT_CLASS: 
-ALERT: 
+
+ALERT_CLASS:
+  all: 
+  en: 
+  es: 
+  fr: 
+  nl: 
+  
+ALERT:
+  all: 
+  en: 
+  es: 
+  fr: 
+  nl: 
 
 langsorder:
 - id: en
