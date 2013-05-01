@@ -141,7 +141,7 @@ while(p.nodeType!=1||p.nodeName!='P')p=p.nextSibling;
 p.style.height='auto';
 var nhe=getHeight(p);
 p.style.height='0px';
-p.style.height=nhe+'px';
+p.style.height=(nhe+10)+'px';
 t.parentNode.removeChild(t);
 cancelEvent(e);
 }
