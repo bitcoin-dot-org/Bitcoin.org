@@ -1,4 +1,5 @@
 ---
+lang: it
 layout: base-it
 id: development
 title: Sviluppo - Bitcoin
@@ -7,14 +8,14 @@ title: Sviluppo - Bitcoin
 
 <h2>La specifica</h2>
 <p>Se sei interessato a saperne di più circa i dettagli tecnici di Bitcoin, ti raccomandiamo di iniziare con questi documenti.</p>
-<ul class="list">
+<ul>
   <li><a href="/bitcoin.pdf">Bitcoin: A Peer-to-Peer Electronic Cash System (in inglese)</a></li>
   <li><a href="https://en.bitcoin.it/wiki/Protocol_rules">Regole del protocollo</a></li>
   <li><a href="https://en.bitcoin.it/wiki/Category:Technical">Bitcoin Wiki</a></li>
 </ul>
 
 <h2>Sviluppatori</h2>
-<ul class="list">
+<ul>
   <li>Satoshi Nakamoto</li>
   <li>Gavin Andresen - <a href="mailto:gavinandresen@gmail.com">gavinandresen@gmail.com</a> (<a href="/gavinandresen.asc">PGP</a>)</li>
   <li>Pieter Wuille - <a href="mailto:pieter.wuille@gmail.com">pieter.wuille@gmail.com</a> (<a href="/pieterwuille.asc">PGP</a>)</li>
@@ -28,8 +29,8 @@ title: Sviluppo - Bitcoin
 <p>Bitcoin è open source ed ogni sviluppatore può contribuire al progetto. Tutto ciò di cui si ha bisogno è nel <a href="https://github.com/bitcoin/bitcoin">repository Github</a>. Per favore assicurati di leggere e seguire il processo di sviluppo descritto nel README, di fornire codice di buona qualità e di rispettare tutte le linee guida.</p>
 
 <section id="contributors">
-        <h2>Collaboratori di Bitcoin-Qt</h2>
-        <p>(Ordinati per numero di commit)</p>
+  <h2>Collaboratori di Bitcoin-Qt</h2>
+  <p>(Ordinati per numero di commit)</p>
   <div class="contributors">{% for c in site.project.contributors %}
     <span>
       {% if c.gravatar_id %}<img class="icon" height="16" width="16" src="https://secure.gravatar.com/avatar/{{c.gravatar_id}}?s=140&amp;d=http%3A%2F%2Fbitcoin.org%2Fimg%2Fgravatar-140.png" alt="icon" />{% else %}<img class="icon" height="16" width="16" src="http://bitcoin.org/img/gravatar-140.png" alt="icon" />{% endif %}

@@ -13,7 +13,11 @@
    height="600"
    id="svg2985"
    version="1.1"
+<<<<<<< HEAD
    inkscape:version="0.48.3.1 r9886"
+=======
+   inkscape:version="0.48.4 r9939"
+>>>>>>> upstream/it
    sodipodi:docname="bitcoin_at_a_glance_src.svg"
    inkscape:export-filename="/media/X/bitcoin.org/bitcoin.org/en/img/blockchain.png"
    inkscape:export-xdpi="1687.5"
@@ -28,16 +32,28 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
+<<<<<<< HEAD
      inkscape:cx="250.88847"
      inkscape:cy="249.68459"
+=======
+     inkscape:cx="119.06454"
+     inkscape:cy="403.28758"
+>>>>>>> upstream/it
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
+<<<<<<< HEAD
      inkscape:window-width="1366"
      inkscape:window-height="709"
      inkscape:window-x="0"
      inkscape:window-y="27"
+=======
+     inkscape:window-width="1680"
+     inkscape:window-height="1026"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+>>>>>>> upstream/it
      inkscape:window-maximized="1" />
   <metadata
      id="metadata2990">
@@ -256,40 +272,68 @@
     <text
        xml:space="preserve"
        style="font-size:40.70894241px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+<<<<<<< HEAD
        x="220.13109"
+=======
+       x="216.59555"
+>>>>>>> upstream/it
        y="-104.91078"
        id="text4131"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4133"
+<<<<<<< HEAD
          x="220.13109"
+=======
+         x="216.59555"
+>>>>>>> upstream/it
          y="-104.91078">Blockchain</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20.35447121px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+<<<<<<< HEAD
        x="193.59749"
+=======
+       x="190.06195"
+>>>>>>> upstream/it
        y="-119.45261"
        id="text4135"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3064"
+<<<<<<< HEAD
          x="193.59749"
+=======
+         x="190.06195"
+>>>>>>> upstream/it
          y="-119.45261">la</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:18.24808121px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
        x="300.07578"
+<<<<<<< HEAD
        y="-80.435341"
+=======
+       y="-77.606911"
+>>>>>>> upstream/it
        id="text4139"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3068"
          x="300.07578"
+<<<<<<< HEAD
          y="-80.435341">un registro delle transazioni</tspan><tspan
          sodipodi:role="line"
          id="tspan3070"
          x="300.07578"
          y="-57.62524">pubblico e condiviso</tspan></text>
+=======
+         y="-77.606911">un registro delle transazioni</tspan><tspan
+         sodipodi:role="line"
+         id="tspan3070"
+         x="300.07578"
+         y="-54.796814">pubblico e condiviso</tspan></text>
+>>>>>>> upstream/it
     <rect
        style="opacity:0.98999999;fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:4.8866291;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3910-0"
@@ -416,13 +460,21 @@
     <text
        xml:space="preserve"
        style="font-size:12.77365685px;font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Medium Italic"
+<<<<<<< HEAD
        x="455.25226"
+=======
+       x="468.33374"
+>>>>>>> upstream/it
        y="-505.21854"
        id="text4492"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3054"
+<<<<<<< HEAD
          x="455.25226"
+=======
+         x="468.33374"
+>>>>>>> upstream/it
          y="-505.21854">Panoramica della rete</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:6.38682795;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -524,24 +576,42 @@
     <text
        xml:space="preserve"
        style="font-size:39.29824448px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+<<<<<<< HEAD
        x="154.29851"
        y="-63.745472"
+=======
+       x="161.36958"
+       y="-59.502831"
+>>>>>>> upstream/it
        id="text4083-7-0"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3093"
+<<<<<<< HEAD
          x="154.29851"
          y="-63.745472">(</tspan></text>
+=======
+         x="161.36958"
+         y="-59.502831">(</tspan></text>
+>>>>>>> upstream/it
     <text
        xml:space="preserve"
        style="font-size:39.29824448px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
        x="430.36981"
+<<<<<<< HEAD
        y="-63.745472"
+=======
+       y="-60.917046"
+>>>>>>> upstream/it
        id="text4083-7-0-6"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3116"
          x="430.36981"
+<<<<<<< HEAD
          y="-63.745472">)</tspan></text>
+=======
+         y="-60.917046">)</tspan></text>
+>>>>>>> upstream/it
   </g>
 </svg>
