@@ -1,71 +1,61 @@
 DOWNLOAD_VERSION: 0.8.1
 
 ALERT_CLASS:
-  all: 
-  en: 
-  es: 
-  fr: 
-  it:
-  nl: 
+  all:
+  en:
+  es:
+  fr:
+  nl:
   
 ALERT:
-  all: 
-  en: 
-  es: 
+  all:
+  en:
+  es:
   fr:
-  it: 
-  nl: 
+  nl:
 
 langsorder:
 - id: en
 - id: es
 - id: fr
-- id: it
 - id: nl
 
 langs:
   en: English
   es: Español
   fr: Français
-  it: Italiano
   nl: Nederlands
 
 section:
   index:
-    en: 
-    es: 
+    en:
+    es:
     fr:
-    it: 
     nl:
   about:
     en: about
     es: acerca-de
     fr: a-propos
-    it: a-proposito
     nl: over-bitcoin
   bitcoin-for-developers:
     en: bitcoin-for-developers
     es: bitcoin-para-desarrolladores
     fr: bitcoin-pour-developpeurs
-    it: bitcoin-per-sviluppatori
     nl: bitcoin-voor-ontwikkelaars
   bitcoin-for-enthusiasts:
     en: bitcoin-for-enthusiasts
     es: bitcoin-para-entusiastas
     fr: bitcoin-pour-passionnes
-    it: bitcoin-per-appassionati
     nl: bitcoin-voor-liefhebbers
   bitcoin-for-individuals:
     en: bitcoin-for-individuals
     es: bitcoin-para-personas
     fr: bitcoin-pour-particuliers
-    it: bitcoin-per-privati
     nl: bitcoin-voor-particulieren
   bitcoin-for-businesses:
     en: bitcoin-for-businesses
     es: bitcoin-para-empresas
     fr: bitcoin-pour-entreprises
-    it: bitcoin-per-imprese
     nl: bitcoin-voor-bedrijven
   bitcoin-for-press:
     en: bitcoin-for-press
@@ -73,52 +63,43 @@ section:
     en: choose-your-wallet
     es: elige-tu-monedero
     fr: choisir-votre-porte-monnaie
-    it: scegli-il-tuo-portafoglio
     nl: kies-uw-portemonnee
   community:
     en: community
     es: comunidad
     fr: communaute
-    it: comunita
     nl: community
   development:
     en: development
     es: desarrollo
     fr: developpement
-    it: sviluppo
     nl: ontwikkeling
   download:
     en: download
     es: descargar
     fr: telecharger
-    it: scarica
     nl: download
   foundation:
     en: foundation
     es: fundacion
     fr: fondation
-    it: fondazione
     nl: stichting
   how-it-works:
     en: how-it-works
     es: como-funciona
     fr: comment-ca-marche
-    it: come-funziona
     nl: hoe-het-werkt
   resources:
     en: resources
     es: recursos
     fr: ressources
-    it: risorse
     nl: hulpmiddelen
   secure-your-wallet:
     en: secure-your-wallet
-    it: proteggi-il-portafoglio
   support-bitcoin:
     en: support-bitcoin
     es: apoya-bitcoin
     fr: supporter-bitcoin
-    it: sostieni-bitcoin
     nl: help-bitcoin
   version-history:
     en: version-history
@@ -126,13 +107,11 @@ section:
     en: vocabulary
     es: vocabulario
     fr: vocabulaire
-    it: glossario
     nl: woordenlijst
   you-need-to-know:
     en: you-need-to-know
     es: debes-saber
     fr: vous-devez-savoir
-    it: da-sapere
     nl: wat-u-moet-weten
 
 vocabulary:
@@ -140,103 +119,90 @@ vocabulary:
     en: address
     es: direccion
     fr: adresse
-    it: indirizzo
     nl: bitcoin-adres
   block-chain:
     en: blockchain
     es: cadena-de-bloques
     fr: chaine-de-bloc
-    it: blockchain
     nl: blokketen
   block:
     en: block
     es: bloque
     fr: bloc
-    it: blocco
     nl: blok
   btc:
     en: btc
     es: btc
     fr: btc
-    it: btc
     nl: btc
   confirmation:
     en: confirmation
     es: confirmacion
     fr: confirmation
-    it: conferma
     nl: bevestiging
   cryptography:
     en: cryptography
     es: criptografia
     fr: cryptographie
-    it: crittografia
     nl: cryptografie
   double-spend:
     en: double-spend
     es: doble-gasto
     fr: double-depense
-    it: double-spend
     nl: dubbele-uitgaven
   hash-rate:
     en: hash-rate
     es: velocidad-de-hash
     fr: taux-de-hash
-    it: hash-rate
     nl: hashsnelheid
   mining:
     en: mining
     es: mineria
     fr: minage
-    it: mining
     nl: delven
   p2p:
     en: p2p
     es: p2p
     fr: p2p
-    it: p2p
     nl: p2p
   private-key:
     en: private-key
     es: llave-privada
     fr: cle-privee
-    it: chiave-rpivata
     nl: geheime-sleutel
   signature:
     en: signature
     es: firma
     fr: signature
-    it: firma
     nl: digitale-handtekening
   wallet:
     en: wallet
     es: monedero
     fr: porte-monnaie
-    it: portafoglio
     nl: portemonnee
 
-safe:        false
-auto:        false
-server:      false
+safe: false
+auto: false
+server: false
 server_port: 4000
-base-url:    /
+base-url: /
 
-source:      .
+source: .
 destination: ./_site
-plugins:     ./_plugins
+plugins: ./_plugins
 
-future:      true
-lsi:         false
-pygments:    false
-markdown:    maruku
-permalink:   date
+future: true
+lsi: false
+pygments: false
+markdown: maruku
+permalink: date
 
 maruku:
-  use_tex:    false
-  use_divs:   false
+  use_tex: false
+  use_divs: false
   png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
+  png_dir: images/latex
+  png_url: /images/latex
 
 rdiscount:
   extensions: []

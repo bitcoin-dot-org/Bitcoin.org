@@ -1,6 +1,10 @@
 # Requirements
 
-Installing dependencies
+Installing dependencies on Ubuntu 12.10
+
+    sudo apt-get install jekyll node-less
+
+Installing dependencies on older Ubuntu and Debian distributions
 
     sudo apt-get install rubygems ruby1.9.1-dev build-essential
     sudo gem install jekyll json less therubyracer
@@ -19,40 +23,43 @@ Installing dependencies
 * At least one other reviewer might be required and is highly recommanded.
 * Try to avoid changing the meaning of any statements. If you need to change the meaning of anything, make a note of it and list that in the pull request.
 * Sentences and popular expressions should be adapted so that they sound native in your language.
+* You must save your work with UTF-8 encoding.
 
 ### How to translate
 
 1. Begin, Run ./_contrib/translate (ISO 639-1 language code) (language name) to create your language. Ex : ./_contrib/translate fr "Français"
 2. Texts, Open .html files in the appropriate folder and in _layouts and translate all human readable english dialogs (without touching the html tags and the page id).
-3. Links, Update the name of each .html file so that it reflects your language and update the links in the .html files accordingly.
-4. Sitemap, Add links to your translated pages in _config.yml under their equivalent english version.
-5. Images, Update the few images that contain text with any vector image editing software like Inkscape.
-6. Languages, Make sure that the languages are listed in alphabetical order in _config.yml
-7. Post, Remove sections that use _posts such as "version-history" and "news". Those are not meant to be translated yet.
-
-* A tips for translators, you can preview your work in a simple Google chrome browser with no HTTP server. Just go to the existing english page, open the javascript console with CTRL + SHIFT + J and use the following command to make the page editable : document.body.contentEditable=true
+3. Links, Update the name of each .html file so that it reflects your language. Add translated links to your pages in _config.yml.
+4. Images, Update the few images that contain text with any vector image editing software like Inkscape.
+5. Languages, Make sure that the languages are listed in alphabetical order in _config.yml
+6. Post, Remove pages that use _posts such as "version-history" and "news". Those are not meant to be translated yet.
+7. Press, Remove "press coverage" and "interviewees" in the Press center. The rest can be translated.
+8. Preview, Check that texts that are limited in size display nicely. For example, right side buttons and some titles have height or width restrictions. You can preview your work without building the website. Just visit the existing english page, open the javascript console of your browser (CTRL + SHIFT + J on Google Chrome) and copy the following command to make the page editable : document.body.contentEditable=true . This will allow you to edit and preview the page in your browser like a document.
 
 ### Update
 
-All changes made in the english version can be easily tracked on github.
+Each time that a commit needs to be translated in other languages, a link to this commit must be added to https://github.com/bitcoin/bitcoin.org/wiki/Translations-tracking with all current languages listed under it. When a translation is updated through a pull request, all occurences of this language can be removed from the translations tracking page.
 
 ## Advanced Usage
 
 ### Alerts
 
-You can easily put a global alert on the website by changing the ALERT and ALERT\_CLASS variables in _config.yml.
-And you can also set an alert specific to a language by appending the language code to the ALERT.
+You can easily put an alert on the website by changing the ALERT and ALERT\_CLASS variables in _config.yml.  
+You can both set one fallback alert for all languages and many translated alerts for specific languages.
 
 Example:
 
 ```
-ALERT_CLASS: error
-ALERT: <strong>Security alert:</strong> Please upgrade to 0.3.25 as soon as possible!
-ALERT_fr: <strong>Alerte de sécurité:</strong> Mettez Bitcoin à jour vers la version 0.3.25 sans délais!
+ALERT_CLASS:
+  all: <strong>Security alert:</strong> Please upgrade to 0.8.1 as soon as possible!
+  fr: <strong>Alerte de sécurité:</strong> Mettez Bitcoin à jour vers la version 0.8.1 sans délais!
+ALERT:
+  all: error
+  fr: error
 ```
 
-will produce an english red alert box for all languages, and a translated red alert box for french language.
-Possible classes are: error (red), info (blue), success (green) and warning (yellow)
+This will produce an english red alert box for all languages, and a translated red alert box for french language.  
+Possible classes are: **error** (red), **info** (blue), **success** (green) and **warning** (yellow)
 
 ### Release Notes
 

@@ -1,90 +1,101 @@
 ---
 lang: en
 menufor:
-- text: Individuals
-  url: bitcoin-for-individuals
-- text: Organizations
-  url: bitcoin-for-organizations
-- text: Developers
-  url: bitcoin-for-developers
-- text: Enthusiasts
-  url: bitcoin-for-enthusiasts
+- id: bitcoin-for-individuals
+  text: Individuals
+- id: bitcoin-for-businesses
+  text: Businesses
+- id: bitcoin-for-developers
+  text: Developers
+- id: bitcoin-for-enthusiasts
+  text: Enthusiasts
+- id: bitcoin-for-press
+  text: Press
 menu:
-- text: How it works
-  url: how-it-works
-- text: Vocabulary
-  url: vocabulary
-- text: Resources
-  url: resources
-- text: Community
-  url: community
-- text: Development
-  url: development
-- text: Foundation
-  url: foundation
-- text: About
-  url: about
+- id: how-it-works
+  text: How it works
+- id: vocabulary
+  text: Vocabulary
+- id: resources
+  text: Resources
+- id: community
+  text: Community
+- id: development
+  text: Development
+- id: foundation
+  text: Foundation
+- id: about
+  text: About
+button:
+  wallet: Choose your wallet
+  know: You need to know
+  support: Support Bitcoin
+footer: © Bitcoin Project 2009–2013 Released under the <a href="http://creativecommons.org/licenses/MIT/" target="_blank">MIT license</a>
 ---
 <!DOCTYPE HTML>
 <html lang="{{ page.lang }}">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta property="og:image" content="http://bitcoin.org/img/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>{{ page.title }}</title>
-{% lesscss bootstrap.less %}
+{% lesscss main.less %}
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
 </head>
 <body>
-{% if site.ALERT or site.ALERT_en %}
-  {% if site.ALERT_CLASS %}{% assign class = site.ALERT_CLASS%}{% endif %}{% if site.ALERT_CLASS_en %}{% assign class = site.ALERT_CLASS_en%}{% endif %}
-  {% if site.ALERT %}{% assign alert = site.ALERT%}{% endif %}{% if site.ALERT_en %}{% assign alert = site.ALERT_en%}{% endif %}
+{% if site.ALERT.all or site.ALERT[page.lang] %}
+  {% if site.ALERT_CLASS.all %}{% assign class = site.ALERT_CLASS.all%}{% endif %}{% if site.ALERT_CLASS[page.lang] %}{% assign class = site.ALERT_CLASS[page.lang]%}{% endif %}
+  {% if site.ALERT.all %}{% assign alert = site.ALERT.all%}{% endif %}{% if site.ALERT[page.lang] %}{% assign alert = site.ALERT[page.lang]%}{% endif %}
   <div class="alert-message {{ class }}">
     <div><div>{{ alert }}</div></div>
   </div>
 {% endif %}
-  <div id="head">
-    <div class="wrap">
+  <div id="head"><div>
+    <select id="langselect" onchange="window.location=this.value;">
+      {% for lang in site.langsorder %}{% if lang.id == page.lang %}{% assign active = ' selected="selected"'%}{% else %}{% assign active = ''%}{% endif %}
+      <option value="/{{ lang.id }}/{{ site.section[page.id][lang.id] }}"{{ active }}>{{ site.langs[lang.id] }}</option>
+      {% endfor %}
+    </select>
     <ul id="lang">
       <li><a href="#" onclick="return false;">{{ site.langs[page.lang] }}</a>
       <ul>
-        {% for lang in site.langs %}{% if lang[0] != page.lang %}{% assign la = lang[0]%}
-        <li><a href="/{{ lang[0] }}/{{ site.section[page.id][la] }}">{{ lang[1] }}</a></li>
+        {% for lang in site.langsorder %}{% if lang.id != page.lang %}
+        <li><a href="/{{ lang.id }}/{{ site.section[page.id][lang.id] }}">{{ site.langs[lang.id] }}</a></li>
         {% endif %}{% endfor %}
       </ul>
       </li>
     </ul>
-    <div id="logo"><a href="/{{ page.lang }}/"><span>Bitcoin</span></a></div>
+    <a id="logo" href="/{{ page.lang }}/"><img src="/img/logotop.svg" alt="Bitcoin"></a>
+    <a href="#" id="menumobile" onclick="mobileshow(event);"></a>
     <ul id="menufor">
-      {% for link in page.menufor %}{% assign active = nil %}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
-      <li{% if active %} class="{{ active }}"{% endif %}><a href="/{{ page.lang }}/{{ link.url }}">{{ link.text }}</a></li>
+      {% for link in page.menufor %}{% assign id = link.id%}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:site.section[id][page.lang] | append:'.html' }}{% endcapture %}
+      <li{% if page.url == fullurl %} class="active"{% endif %}><a href="/{{ page.lang }}/{{ site.section[id][page.lang] }}">{{ link.text }}</a></li>
       {% endfor %}
     </ul>
-    </div>
-    <ul id="menu" class="wrap">
-        {% for link in page.menu %}{% assign active = nil %}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:link.url | append:'.html' }}{% endcapture %}{% if page.url == fullurl %}{% assign active = 'active' %}{% endif %}
-        <li{% if active %} class="{{ active }}"{% endif %}><a href="/{{ page.lang }}/{{ link.url }}">{{ link.text }}</a></li>
+    <ul id="menu">
+        {% for link in page.menu %}{% assign id = link.id%}{% capture fullurl %}{{ '/' | append:page.lang | append:'/' | append:site.section[id][page.lang] | append:'.html' }}{% endcapture %}
+        <li{% if page.url == fullurl %} class="active"{% endif %}><a href="/{{ page.lang }}/{{ site.section[id][page.lang] }}">{{ link.text }}</a></li>
         {% endfor %}
     </ul>
-  </div>
+  </div></div>
   <div id="body">
-    <div class="wrap">
-      <div id="content">
+    <div id="content"{% if page.mode == "wide" %} class="wide"{% endif %}>
     {{ content }}
-      </div>
-      <div id="rightbox">
-        <div id="choose">
-          <a href="/en/choose-your-wallet"><img src="/img/but_start.svg" alt="Choose your wallet">Choose your wallet</a>
-        </div>
-        <div id="before">
-          <a href="/en/you-need-to-know"><img src="/img/but_warn.svg" alt="You need to know">You need to know</a>
-        </div>
-        <div id="support">
-          <a href="/en/support-bitcoin"><img src="/img/but_involve.svg" alt="Support Bitcoin">Support Bitcoin</a>
-        </div>
-      </div>
-      <div id="footer"><div>© Bitcoin Project 2009–2013 Released under the <a href="http://creativecommons.org/licenses/MIT/" target="_blank">MIT license</a></div></div>
     </div>
+    <div id="rightbox"{% if page.mode == "wide" %} class="wide"{% endif %}>
+      <div id="choose">
+        <a href="/{{page.lang}}/{{site.section.choose-your-wallet[page.lang]}}"><img src="/img/but_start.svg" alt="{{page.button.wallet}}">{{page.button.wallet}}</a>
+      </div>
+      <div id="before">
+        <a href="/{{page.lang}}/{{site.section.you-need-to-know[page.lang]}}"><img src="/img/but_warn.svg" alt="{{page.button.know}}">{{page.button.know}}</a>
+      </div>
+      <div id="support">
+        <a href="/{{page.lang}}/{{site.section.support-bitcoin[page.lang]}}"><img src="/img/but_involve.svg" alt="{{page.button.support}}">{{page.button.support}}</a>
+      </div>
+    </div>
+    <div id="footer"><a href="http://bitcoin2013.com" class="conferencebanner"><img src="/img/bitcoin2013_banner.png" alt="Bitcoin conference"></a><div>{{page.footer}}</div></div>
   </div>
   <script type="text/javascript">svgfallback();</script>
 </body>

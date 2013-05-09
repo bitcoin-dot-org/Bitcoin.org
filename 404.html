@@ -1,0 +1,25 @@
+---
+layout: base-en
+id: index
+title: Bitcoin
+---
+<script>
+//Auto redirect to the appropriate language
+var langs={};{% for lang in site.langs %}{% if lang[0] != page.lang %}langs['{{ lang[0] }}']=true;{% endif %}{% endfor %}
+var lang=(navigator.language)?navigator.language:navigator.userLanguage;
+lang=lang.split('_')[0];
+if(!langs[lang])lang='en';
+window.location.href='/'+lang+'/';
+</script>
+<!--Fallback page, don't allow indexing-->
+<meta name="robots" content="noindex">
+<h1>An open source P2P digital currency</h1>
+<p style="font-size:125%;">Bitcoin is a currency, a protocol, and a software that enables
+<ul style="font-size:125%">
+  <li>Instant peer to peer transactions</li>
+  <li>Worldwide payments</li>
+  <li>Low or zero processing fees</li>
+  <li>And much more!</li>
+</ul>
+<p>Bitcoin uses peer to peer technology to operate with no central authority; managing transactions and issuing Bitcoins are carried out <b>collectively by the network</b>. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment systems.</p>
+<p>The software is a community-driven <a href="http://www.fsf.org/about/what-is-free-software">free open source</a> project, released under the <a href="http://creativecommons.org/licenses/MIT/">MIT license</a>.</p>

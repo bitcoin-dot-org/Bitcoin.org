@@ -6,7 +6,7 @@ module Jekyll
 
 	class CategoryGenerator < Generator
 		def fetch_contributors
-			contributors = JSON.parse(open("https://api.github.com/repos/bitcoin/bitcoin/contributors").read)
+			contributors = JSON.parse(open("https://api.github.com/repos/bitcoin/bitcoin/contributors","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
 
 			contributors.map do |x|
 				x['name'] = x['login'] unless x.has_key?('name')
@@ -48,7 +48,7 @@ module Jekyll
 				end
 			end
 
-			site.primary_devs = JSON.parse(open("https://api.github.com/repos/bitcoin/bitcoin/collaborators").read)
+			site.primary_devs = JSON.parse(open("https://api.github.com/repos/bitcoin/bitcoin/collaborators","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
 			site.contributors = merge_contributors(fetch_contributors(), site.config['aliases']).sort_by{|c| - c['contributions']}
 		end
 
