@@ -6,9 +6,15 @@ layout: base-en
         <h1>15 May 2013 Upgrade Deadline</h1>
         <h2>What is happening</h2>
 <p>
-If you are using Bitcoin-Qt/bitcoind version 0.7.2 or earlier, you must take action
-before 15 May, 2013. If you do nothing, you are likely to be left behind and
-will be out of sync with the rest of the Bitcoin network.
+If you are using an old version of Bitcoin-Qt (or bitcoind, the command-line bitcoin software),
+you must either upgrade to version 0.8.0 or later before May 15, 2013 or <a href="#workaround">modify a file</a> and
+restart bitcoin to work around a bug with the old software.
+</p>
+<p>This bug does not affect any bitcoins you already have, but if you do nothing you will
+be out of sync with the rest of the Bitcoin network and will be unable to receive
+bitcoins (payments sent to you will look like they never get confirmed, or will be confirmed
+very slowly). You also risk being the victim of a &quot;double-spend&quot; attack, where somebody sends
+you bitcoins that the rest of the network would reject as invalid.
 </p>
 <p>
 We recommend that you
@@ -16,7 +22,7 @@ We recommend that you
 before the 15th of May to avoid any issues.  If you are a solo miner or mining pool operator,
 please see the the notes at the end of this page for how to upgrade safely.
 </p>
-        <h2>If you cannot upgrade to version 0.8.1</h2>
+        <h2 id="workaround">If you cannot upgrade to version 0.8.1</h2>
 <p>
 If you cannot upgrade to the latest version, you can still avoid the problem.
 Create a file called DB_CONFIG in the bitcoin data directory, containing
@@ -24,8 +30,8 @@ these two lines:
 </p>
 <blockquote>
 <pre>
-set_lg_dir database
 set_lk_max_locks 120000
+set_lg_dir database
 </pre>
 </blockquote>
 <p>
@@ -54,7 +60,7 @@ still running old versions of Bitcoin-Qt/bitcoind. Therefore, the only option is
 require everybody to either upgrade or workaround the bug.
 </p>
         <div style="text-align:right">
-         <i>This notice last updated: 18 March 2013 16:15 UTC</i>
+         <i>This notice last updated: 10 May 2013 20:00 UTC</i>
         </div>
       </section>
     </div>
