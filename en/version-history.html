@@ -1,5 +1,26 @@
 ---
-layout: post
+layout: base-en
 id: version-history
 title: Version history
 ---
+<div class="versiontext">
+  <h1>Version history</h1>
+  <ul>
+  {% for post in site.categories.releases %}
+    <li>
+      {{ post.date | date:"%Y-%m-%d" }} - <a href="#{{ post.version }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+{% for post in site.categories.releases %}
+<div class="versiontext">
+  <h1><a name="{{ post.version }}">{{ post.title }} <small>{{ post.date | date:"%e %B %Y" }}</small></a></h1>
+  {% if post.src %}
+  <p>
+    <a href="{{ post.src }}">Full announcement (including signatures)</a>
+  </p>
+  {% endif %}
+  {{ post.content }}
+</div>
+{% endfor %}
