@@ -1,0 +1,44 @@
+---
+lang: de
+layout: base-de
+id: development
+title: Entwicklung - Bitcoin
+---
+<h1>Bitcoin Entwicklung</h1>
+
+<h2>Spezifikation</h2>
+<p>Wenn Sie an weiteren technischen Details über Bitcoin interessiert sind, sind diese Dokumente ein guter Startpunkt.</p>
+<ul>
+  <!-- translator's remark: no equivalent german page -->
+  <li><a href="/bitcoin.pdf">Bitcoin: A Peer-to-Peer Electronic Cash System (englisch)</a></li>
+  <!-- translator's remark: no equivalent german page -->
+  <li><a href="https://en.bitcoin.it/wiki/Protocol_rules">Protocol rules (englisch)</a></li>
+  <li><a href="https://de.bitcoin.it/wiki/Category:Technical">Bitcoin Wiki</a></li>
+</ul>
+
+<h2>Haupt-Entwickler</h2>
+<ul>
+  <li>Satoshi Nakamoto - (<a href="/satoshinakamoto.asc">PGP</a>)</li>
+  <li>Gavin Andresen - <a href="mailto:gavinandresen@gmail.com">gavinandresen@gmail.com</a> (<a href="/gavinandresen.asc">PGP</a>)</li>
+  <li>Pieter Wuille - <a href="mailto:pieter.wuille@gmail.com">pieter.wuille@gmail.com</a> (<a href="/pieterwuille.asc">PGP</a>)</li>
+  <li>Nils Schneider - <a href="mailto:nils.schneider@gmail.com">nils.schneider@gmail.com</a> (<a href="/schneider.asc">PGP</a>)</li>
+  <li>Jeff Garzik - <a href="mailto:jgarzik@exmulti.com">jgarzik@exmulti.com</a> (<a href="/jgarzik-exmulti.asc">PGP</a>)</li>
+  <li>Wladimir J. van der Laan - <a href="mailto:laanwj@gmail.com">laanwj@gmail.com</a> (<a href="/laanwj.asc">PGP</a>)</li>
+  <li>Gregory Maxwell - <a href="mailto:gmaxwell@gmail.com">gmaxwell@gmail.com</a> (<a href="/gmaxwell.asc">PGP</a>)</li>
+</ul>
+
+<h2>Mitmachen</h2>
+<p>Bitcoin-Entwicklung ist quelloffen und jeder Entwickler kann zu dem Projekt beitragen. Alles was Sie benötigen finden Sie im <a href="https://github.com/bitcoin/bitcoin">Github Repository</a>. Bitte lesen und befolgen Sie den in der README beschriebenen Entwicklungsprozess, liefern Sie Code von guter Qualität und respektieren Sie alle Richtlinien.</p>
+<p>Die Entwickler-Diskussion findet über Github und die <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development">bitcoin-development</a> Mailing List bei sourceforge statt. Weniger formale Entwickler-Diskussion gibt es unter irc.freenode.net #bitcoin-dev (&rarr;<a href="" onclick="document.getElementById('chatbox').innerHTML='<iframe style=width:98%;min-width:400px;height:600px src=\'http://webchat.freenode.net/?channels=bitcoin-dev\' />';return false;">Weboberfläche</a>; <a href="http://bitcoinstats.com/irc/bitcoin-dev/logs/">Logs</a>).</p>
+<div id="chatbox" style="text-align:center;"></div>
+
+<section id="contributors">
+  <h2>Bitcoin-Qt Mitwirkende</h2>
+  <p>(Sortiert nach Anzahl der Commits)</p>
+  <div class="contributors">{% for c in site.project.contributors %}
+    <span>
+      {% if c.gravatar_id %}<img class="icon" height="16" width="16" src="https://secure.gravatar.com/avatar/{{c.gravatar_id}}?s=140&amp;d=http%3A%2F%2Fbitcoin.org%2Fimg%2Fgravatar-140.png" alt="icon" />{% else %}<img class="icon" height="16" width="16" src="http://bitcoin.org/img/gravatar-140.png" alt="icon" />{% endif %}
+      {% if c.login %}<a href="http://github.com/{{c.login}}">{{ c.name }} ({{ c.contributions }})</a>{% else %}{{ c.name }} ({{ c.contributions }}){% endif %}
+    </span>{% endfor %}
+  </div>
+</section>
