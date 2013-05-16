@@ -1,0 +1,28 @@
+---
+lang: de
+layout: base-de
+id: how-it-works
+title: Wie funktioniert Bitcoin? - Bitcoin
+---
+<h1>Wie funktioniert Bitcoin?</h1>
+
+<p>Okay, diese Frage ruft oft Verwirrung hervor. Hier eine schnelle Erklärung!
+
+<h2>Grundlagen für neue Nutzer</h2>
+<p>Als neuer Nutzer müssen Sie lediglich <a href="/{{page.lang}}/{{site.section.choose-your-wallet[page.lang]}}">ein Wallet auswählen</a>, dass Sie dann auf Ihrem Computer oder Mobiltelefon installieren. Wenn Sie Ihr Wallet installiert haben, generiert es Ihre erste Bitcoin-Adresse, Sie können bei Bedarf jederzeit weitere erstellen. Sie können eine Ihrer Bitcoin-Adressen an Ihre Freunde weiter geben, so dass sie Geld an Sie senden können, oder umgekehrt: sie können Ihre Freunde bezahlen, wenn sie Ihnen ihre Adressen geben. Tatsächlich verhält sich dies ähnlich wie bei E-Mails. Nun müssen Sie nur noch an ein paar Bitcoins kommen und <a href="/{{page.lang}}/{{site.section.secure-your-wallet[page.lang]}}">sicher aufbewahren</a>. Um Bitcoin zu nutzen, müssen Sie die technischen Details nicht verstehen.</p>
+
+<p>Wenn Sie jedoch mehr wissen wollen: lesen Sie weiter!</p>
+
+<p><br><img src="/{{page.lang}}/img/bitcoin_at_a_glance.svg" alt="Bitcoin-Überblick" /></p>
+
+<h2>Bestände<a class="titlelight"> - Blockkette</a></h2>
+<p>Die Blockkette ist ein <b>geteiltes öffentliches Transaktions-Log</b>, auf das sich das gesamte Bitcoin-Netzwerk verlässt. Alle bestätigten Transaktion sind ausnahmslos in der Blockkette enthalten. Dadurch wird sicher gestellt, dass neue Transaktionen Bitcoins ausgeben, die tatsächlich Eigentum des ausgebenden sind. Die Integrität und die chronologische Reihenfolge der Blockkette werden durch <a href="/{{page.lang}}/{{site.section.vocabulary[page.lang]}}#{{site.vocabulary.cryptography[page.lang]}}">cryptography</a> sichergestellt.</p>
+
+<h2>Transaktionen<a class="titlelight"> - privater Schlüssel</a></h2>
+<p>Eine Transaktion ist <b>ein Transfer eines Betrags zwischen Bitcoin-Adressen</b>, der in die Blockkette eingetragen wird. Bitcoin Wallets haben einen geheimen Datenblock namens <a href="/{{page.lang}}/{{site.section.vocabulary[page.lang]}}#{{site.vocabulary.private-key[page.lang]}}"><i>privater Schlüssel</i></a> für jede Bitcoin-Adresse. Private Schlüssel werden genutzt um Transaktionen zu signieren, es wird ein mathematischer Beweis erbracht dass sie vom Eigentümer der Adressen kommen. Die <a href="/{{page.lang}}/{{site.section.vocabulary[page.lang]}}#{{site.vocabulary.signature[page.lang]}}"><i>Signatur</i></a> verhindert auch, dass die Transaktion nach dem Absenden von Dritten modifiziert werden kann. Alle Transaktionen werden zwischen den Nutzern übertragen und in den folgenden Minuten vom Netzwerk bestätigt, durch einen Prozess namens <a href="/{{page.lang}}/{{site.section.vocabulary[page.lang]}}#{{site.vocabulary.mining[page.lang]}}"><i>Mining</i></a>.</p>
+
+<h2>Verarbeitung<a class="titlelight"> - Mining</a></h2>
+<p>Mining ist ein <b>verteiltes Konsens-System</b> das verwendet wird, um wartende Transaktionen zu <a href="/{{page.lang}}/{{site.section.vocabulary[page.lang]}}#{{site.vocabulary.confirmation[page.lang]}}"><i>bestätigen</i></a>, indem sie in die Blockkette aufgenommen werden. Es erzwingt eine chronologische Reihenfolge der Blockkette, schützt die Neutralität des Netzwerks  und ermöglicht verschiedenen Computern, sich über den Status des Systems einig zu sein. Um bestätigt zu werden, müssen Transaktionen in einen <a href="/{{page.lang}}/{{site.section.vocabulary[page.lang]}}#{{site.vocabulary.block[page.lang]}}"><i>Block</i></a> gepackt werden. Dieser muss sehr strengen kryptographischen Regeln enstprechen, die durch das Netzwerk verifiziert werden. Die Regeln verhindert, dass vorherige Blöcke modifiziert werden können, denn eine Änderung würde alle folgenden Blöcke ungültig machen. Mining erzeugt auch das Equivalent einer Lotterie mit starker Konkurrenz, die verhindert, dass eine Einzelperson einfach neue aufeinanderfolgende Blöcke in die Blockkette einfügen kann. Auf diese Weise wird sichergestellt, dass keine Einzelpersonen kontrollieren können was in die Blockkette eingefügt wird, oder Teile der Blockkette modifizieren können, um eigene Ausgaben rückgängig zu machen.</p>
+
+<h2>Hinunter in den Kaninchenbau</h2>
+<p>Dies ist nur eine sehr kurze und knappe Zusammenfassung des Systems. Wenn Sie ins Details gehen wollen, können Sie die <a href="/bitcoin.pdf">Original-Abhandlung</a> lesen, die das Design des Systems beschreibt, und das <a href="https://de.bitcoin.it/wiki/Hauptseite">Bitcoin Wiki</a> erkunden.</p>

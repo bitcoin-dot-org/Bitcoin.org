@@ -2,6 +2,7 @@ DOWNLOAD_VERSION: 0.8.1
 
 ALERT_CLASS:
   all: 
+  de: 
   en: 
   es: 
   fr: 
@@ -9,18 +10,21 @@ ALERT_CLASS:
   
 ALERT:
   all: 
+  de: 
   en: 
   es: 
   fr: 
   nl: 
 
 langsorder:
+- id: de
 - id: en
 - id: es
 - id: fr
 - id: nl
 
 langs:
+  de: Deutsch
   en: English
   es: Español
   fr: Français
@@ -33,82 +37,100 @@ section:
     fr: 
     nl:
   about:
+    en: ueber
     en: about
     es: acerca-de
     fr: a-propos
     nl: over-bitcoin
   bitcoin-for-developers:
+    de: bitcoin-fuer-entwickler
     en: bitcoin-for-developers
     es: bitcoin-para-desarrolladores
     fr: bitcoin-pour-developpeurs
     nl: bitcoin-voor-ontwikkelaars
   bitcoin-for-enthusiasts:
+    en: bitcoin-fuer-enthusiasten
     en: bitcoin-for-enthusiasts
     es: bitcoin-para-entusiastas
     fr: bitcoin-pour-passionnes
     nl: bitcoin-voor-liefhebbers
   bitcoin-for-individuals:
+    de: bitcoin-fuer-einzelpersonen
     en: bitcoin-for-individuals
     es: bitcoin-para-personas
     fr: bitcoin-pour-particuliers
     nl: bitcoin-voor-particulieren
   bitcoin-for-businesses:
+    de: bitcoin-fuer-unternehmen
     en: bitcoin-for-businesses
     es: bitcoin-para-empresas
     fr: bitcoin-pour-entreprises
     nl: bitcoin-voor-bedrijven
   bitcoin-for-press:
+    de: bitcoin-fuer-presse
     en: bitcoin-for-press
   choose-your-wallet:
+    de: waehlen-sie-ihr-wallet
     en: choose-your-wallet
     es: elige-tu-monedero
     fr: choisir-votre-porte-monnaie
     nl: kies-uw-portemonnee
   community:
+    de: community
     en: community
     es: comunidad
     fr: communaute
     nl: community
   development:
+    de: entwicklung
     en: development
     es: desarrollo
     fr: developpement
     nl: ontwikkeling
   download:
+    de: download
     en: download
     es: descargar
     fr: telecharger
     nl: download
   foundation:
+    de: foundation
     en: foundation
     es: fundacion
     fr: fondation
     nl: stichting
   how-it-works:
+    de: wie-es-funktioniert
     en: how-it-works
     es: como-funciona
     fr: comment-ca-marche
     nl: hoe-het-werkt
   resources:
+    de: ressourcen
     en: resources
     es: recursos
     fr: ressources
     nl: hulpmiddelen
   secure-your-wallet:
+    de: sichern-sie-ihr-wallet
     en: secure-your-wallet
   support-bitcoin:
+    de: bitcoin-unterstuetzen
     en: support-bitcoin
     es: apoya-bitcoin
     fr: supporter-bitcoin
     nl: help-bitcoin
   version-history:
+    de: versionshistorie
     en: version-history
   vocabulary:
+    de: glossar
     en: vocabulary
     es: vocabulario
     fr: vocabulaire
     nl: woordenlijst
   you-need-to-know:
+    de: das-sollten-sie-wissen
     en: you-need-to-know
     es: debes-saber
     fr: vous-devez-savoir
@@ -116,66 +138,79 @@ section:
 
 vocabulary:
   address:
+    de: adresse
     en: address
     es: direccion
     fr: adresse
     nl: bitcoin-adres
   block-chain:
+    de: blockkette
     en: blockchain
     es: cadena-de-bloques
     fr: chaine-de-bloc
     nl: blokketen
   block:
+    de: block
     en: block
     es: bloque
     fr: bloc
     nl: blok
   btc:
+    de: btc
     en: btc
     es: btc
     fr: btc
     nl: btc
   confirmation:
+    de: bestaetigung
     en: confirmation
     es: confirmacion
     fr: confirmation
     nl: bevestiging
   cryptography:
+    de: kryptographie
     en: cryptography
     es: criptografia
     fr: cryptographie
     nl: cryptografie
   double-spend:
+    de: doppelausgabe
     en: double-spend
     es: doble-gasto
     fr: double-depense
     nl: dubbele-uitgaven
   hash-rate:
+    de: hash-rate
     en: hash-rate
     es: velocidad-de-hash
     fr: taux-de-hash
     nl: hashsnelheid
   mining:
+    de: mining
     en: mining
     es: mineria
     fr: minage
     nl: delven
   p2p:
+    de: p2p
     en: p2p
     es: p2p
     fr: p2p
     nl: p2p
   private-key:
+    de: privater-schluessel
     en: private-key
     es: llave-privada
     fr: cle-privee
     nl: geheime-sleutel
   signature:
+    de: signatur
     en: signature
     es: firma
     fr: signature
     nl: digitale-handtekening
   wallet:
+    de: wallet
     en: wallet
     es: monedero
     fr: porte-monnaie
