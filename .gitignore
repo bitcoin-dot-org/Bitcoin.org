@@ -7,3 +7,11 @@ _site/
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Ignore all bin directories
+bin
+# Ignore all files ending with ~
+*~
+# Ignore the target directory
+# Matches "target" in any subfolder
+target/ 
