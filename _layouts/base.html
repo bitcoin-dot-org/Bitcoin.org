@@ -1,0 +1,95 @@
+---
+menufor:
+- id: bitcoin-for-individuals
+- id: bitcoin-for-businesses
+- id: bitcoin-for-developers
+- id: bitcoin-for-enthusiasts
+- id: bitcoin-for-press
+menu:
+- id: how-it-works
+- id: vocabulary
+- id: resources
+- id: community
+- id: development
+- id: foundation
+- id: about
+---
+<!DOCTYPE HTML>
+<html lang="{{ page.lang }}">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="http://bitcoin.org/img/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
+{% lesscss main.less %}
+<script type="text/javascript" src="/js/main.js"></script>
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
+</head>
+<body>
+{% if site.ALERT.all or site.ALERT[page.lang] %}
+  {% if site.ALERT_CLASS.all %}{% assign class = site.ALERT_CLASS.all%}{% endif %}{% if site.ALERT_CLASS[page.lang] %}{% assign class = site.ALERT_CLASS[page.lang]%}{% endif %}
+  {% if site.ALERT.all %}{% assign alert = site.ALERT.all%}{% endif %}{% if site.ALERT[page.lang] %}{% assign alert = site.ALERT[page.lang] %}{% endif %}
+  <div class="alert-message {{ class }}">
+    <div><div>{{ alert }}</div></div>
+  </div>
+{% endif %}
+  <div id="head"><div>
+    <select id="langselect" onchange="window.location=this.value;">
+    {% for lang in site.langsorder %}{% if lang.id == page.lang %}{% assign active = ' selected="selected"'%}{% else %}{% assign active = ''%}{% endif %}
+      <option value="/{{ lang.id }}/{% translate {{page.id}} url {{lang.id}} %}"{{ active }}>{{ site.langs[lang.id] }}</option>
+    {% endfor %}
+    </select>
+    <ul id="lang">
+      <li><a href="#" onclick="return false;">{{ site.langs[page.lang] }}</a>
+      <ul>
+      {% for lang in site.langsorder %}{% if lang.id != page.lang %}
+        <li><a href="/{{ lang.id }}/{% translate {{page.id}} url {{lang.id}} %}">{{ site.langs[lang.id] }}</a></li>
+      {% endif %}{% endfor %}
+      </ul>
+      </li>
+    </ul>
+    <a id="logo" href="/{{ page.lang }}/"><img src="/img/logotop.svg" alt="Bitcoin"></a>
+    <a href="#" id="menumobile" onclick="mobileshow(event);"></a>
+    <ul id="menufor">
+    {% for link in page.menufor %}{% assign id = link.id%}{% capture url %}/{{ page.lang }}/{% translate {{id}} url %}{% endcapture %}
+      {%if id == 'bitcoin-for-press'%}
+        {% case page.lang %}
+        {% when 'es' %}
+        {% when 'fr' %}
+        {% when 'nl' %}
+        {% else %}
+        <li{% if page.id == id %} class="active"{% endif %}><a href="{{ url }}">{% translate menu-{{id}} layout %}</a></li>
+        {% endcase %}
+      {% else %}
+        <li{% if page.id == id %} class="active"{% endif %}><a href="{{ url }}">{% translate menu-{{id}} layout %}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    <ul id="menu">
+    {% for link in page.menu %}{% assign id = link.id%}{% capture url %}/{{ page.lang }}/{% translate {{id}} url %}{% endcapture %}
+      <li{% if page.id == id %} class="active"{% endif %}><a href="{{ url }}">{% translate menu-{{id}} layout %}</a></li>
+    {% endfor %}
+    </ul>
+  </div></div>
+  <div id="body">
+    <div id="content"{% if page.mode == "wide" %} class="wide"{% endif %}>
+    {{ content }}
+    </div>
+    <div id="rightbox"{% if page.mode == "wide" %} class="wide"{% endif %}>
+      <div id="choose">
+        <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}"><img src="/img/but_start.svg" alt="Icon">{% translate button-wallet layout %}</a>
+      </div>
+      <div id="before">
+        <a href="/{{ page.lang }}/{% translate you-need-to-know url %}"><img src="/img/but_warn.svg" alt="Icon">{% translate button-know layout %}</a>
+      </div>
+      <div id="support">
+        <a href="/{{ page.lang }}/{% translate support-bitcoin url %}"><img src="/img/but_involve.svg" alt="Icon">{% translate button-support layout %}</a>
+      </div>
+    </div>
+    <div id="footer"><div>{% translate footer layout %}</div></div>
+  </div>
+  <script type="text/javascript">svgfallback();</script>
+</body>
+
+</html>

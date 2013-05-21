@@ -17,28 +17,55 @@ Installing dependencies on older Ubuntu and Debian distributions
 
 ## Translation
 
-### Guidelines
-
-* You must be a native speaker for the language you choose to translate.
-* At least one other reviewer might be required and is highly recommanded.
-* Try to avoid changing the meaning of any statements. If you need to change the meaning of anything, make a note of it and list that in the pull request.
-* Sentences and popular expressions should be adapted so that they sound native in your language.
-* You must save your work with UTF-8 encoding.
-
 ### How to translate
 
-1. Begin, Run ./_contrib/translate (ISO 639-1 language code) (language name) to create your language. Ex : ./_contrib/translate fr "Français"
-2. Texts, Open .html files in the appropriate folder and in _layouts and translate all human readable english dialogs (without touching the html tags and the page id).
-3. Links, Update the name of each .html file so that it reflects your language. Add translated links to your pages in _config.yml.
-4. Images, Update the few images that contain text with any vector image editing software like Inkscape.
-5. Languages, Make sure that the languages are listed in alphabetical order in _config.yml
-6. Post, Remove pages that use _posts such as "version-history" and "news". Those are not meant to be translated yet.
-7. Press, Remove "press coverage" and "interviewees" in the Press center. The rest can be translated.
-8. Preview, Check that texts that are limited in size display nicely. For example, right side buttons and some titles have height or width restrictions. You can preview your work without building the website. Just visit the existing english page, open the javascript console of your browser (CTRL + SHIFT + J on Google Chrome) and copy the following command to make the page editable : document.body.contentEditable=true . This will allow you to edit and preview the page in your browser like a document.
+* Translations can be done on transifex https://www.transifex.com/projects/p/bitcoinorg/
+* You must be a native speaker for the language you choose to translate.
+* At least one other reviewer is required.
+* Changing the meaning of any statement should be avoided. In doubt, you can open a discussion on transifex.
+* Sentences and popular expressions should be adapted so that they sound native in your language.
 
-### Update
+### Add new translations
 
-Each time that a commit needs to be translated in other languages, a link to this commit must be added to https://github.com/bitcoin/bitcoin.org/wiki/Translations-tracking with all current languages listed under it. When a translation is updated through a pull request, all occurences of this language can be removed from the translations tracking page.
+1. Begin, Add language code where required in _config.yml.
+2. Import, Download the translated .yml file from transifex and put that file in _translations.
+3. Images, Translate the few images that contain text with a vector image editing software like Inkscape. Translations for these images are at the end of the imported .yml translation file. Make sure to convert all texts to paths when saving final svg files.
+4. Vocabulary, Add correct alphabetical order for your language in the vocabulary page.
+5. Preview, Check if all pages are complete, test each links, check that texts with a limited size display nicely. For example, right side buttons and some titles have height or width restrictions.
+
+### Update translations
+
+You can import all translations (complete and incomplete) from transifex using the transifex client:
+
+    tx init
+    tx set --auto-remote https://www.transifex.com/projects/p/bitcoinorg/
+    tx pull -a -s --skip
+    
+Then, you can overwrite any specific translation in the _translations folder by one of these files. You might also need to make sure that each .html files (including the layout) don't serve outdated content for those languages. You should also make sure that no urls or anchor has been changed.
+
+### Update source english strings
+
+Any change in the english texts can be done through a pull request on github. If your changes affect the html layout of a page, you should apply fallback html code for other languages until they are updated.
+
+    {% case page.lang %}
+    {% when 'fr' %}
+      (outdated french content)
+    {% else %}
+      (up to date english content)
+    {% endcase %}
+    
+### Update source strings on transifex
+
+**When translation is needed**: If you want all changes you've made to be re-translated, you can simply update the resource file (en.yml) on transifex.
+
+**When translation is not needed**: If you are only pushing typo fixes and that you don't want translators to redo all their work again, you can use the transifex client to pull translations, update en.yml and push back all translations at once:
+
+    tx init
+    tx set --auto-remote https://www.transifex.com/projects/p/bitcoinorg/
+    tx pull -a -s --skip
+    tx set --source -r bitcoinorg.bitcoinorg -l en translations/bitcoinorg.bitcoinorg/en.yml
+    (update en.yml)
+    tx push -s -t -f --skip --no-interactive
 
 ## Advanced Usage
 
