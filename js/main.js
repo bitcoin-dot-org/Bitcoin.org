@@ -145,3 +145,9 @@ p.style.height=(nhe+10)+'px';
 t.parentNode.removeChild(t);
 cancelEvent(e);
 }
+
+
+function freenodeShow(e){
+document.getElementById('chatbox').innerHTML='<iframe style=width:98%;min-width:400px;height:600px src="http://webchat.freenode.net/?channels=bitcoin-dev" />';
+cancelEvent(e);
+}

@@ -1,0 +1,77 @@
+---
+layout: base
+id: vocabulary
+
+order:
+  en:
+  - id: address
+  - id: blockchain
+  - id: block
+  - id: btc
+  - id: confirmation
+  - id: cryptography
+  - id: doublespend
+  - id: hashrate
+  - id: mining
+  - id: p2p
+  - id: privatekey
+  - id: signature
+  - id: wallet
+  es:
+  - id: block
+  - id: btc
+  - id: blockchain
+  - id: confirmation
+  - id: cryptography
+  - id: address
+  - id: doublespend
+  - id: signature
+  - id: privatekey
+  - id: mining
+  - id: wallet
+  - id: p2p
+  - id: hashrate
+  fr:
+  - id: address
+  - id: block
+  - id: btc
+  - id: blockchain
+  - id: confirmation
+  - id: privatekey
+  - id: cryptography
+  - id: doublespend
+  - id: mining
+  - id: p2p
+  - id: wallet
+  - id: signature
+  - id: hashrate
+  nl:
+  - id: confirmation
+  - id: address
+  - id: blockchain
+  - id: block
+  - id: btc
+  - id: cryptography
+  - id: mining
+  - id: signature
+  - id: doublespend
+  - id: privatekey
+  - id: hashrate
+  - id: p2p
+  - id: wallet
+
+---
+<h1>{% translate pagetitle %}</h1>
+<p>{% translate summary %}</p>
+<h2>{% translate table %}</h2>
+
+{% if page.order[page.lang] %}{%assign voc=page.order[page.lang]%}{%else%}{%assign voc=page.order.en%}{%endif%}
+
+<div class="index">
+{% for v in voc %}{%translate table{{v.id}}%}{%endfor%}
+</div>
+
+{% for v in voc %}
+<h2>{% translate {{v.id}} %}</h2>
+<p>{% translate {{v.id}}txt %}</p>
+{% endfor %}

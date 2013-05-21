@@ -1,0 +1,47 @@
+---
+layout: base
+id: development
+---
+<h1>{% translate pagetitle %}</h1>
+
+<h2>{% translate spec %}</h2>
+<p>{% translate spectxt %}</p>
+<ul>
+  <li>{% translate speclink1 %}</li>
+  <li>{% translate speclink2 %}</li>
+  <li>{% translate speclink3 %}</li>
+</ul>
+
+<h2>{% translate coredev %}</h2>
+<ul>
+  <li>Satoshi Nakamoto - (<a href="/satoshinakamoto.asc">PGP</a>)</li>
+  <li>Gavin Andresen - <a href="mailto:gavinandresen@gmail.com">gavinandresen@gmail.com</a> (<a href="/gavinandresen.asc">PGP</a>)</li>
+  <li>Pieter Wuille - <a href="mailto:pieter.wuille@gmail.com">pieter.wuille@gmail.com</a> (<a href="/pieterwuille.asc">PGP</a>)</li>
+  <li>Nils Schneider - <a href="mailto:nils.schneider@gmail.com">nils.schneider@gmail.com</a> (<a href="/schneider.asc">PGP</a>)</li>
+  <li>Jeff Garzik - <a href="mailto:jgarzik@exmulti.com">jgarzik@exmulti.com</a> (<a href="/jgarzik-exmulti.asc">PGP</a>)</li>
+  <li>Wladimir J. van der Laan - <a href="mailto:laanwj@gmail.com">laanwj@gmail.com</a> (<a href="/laanwj.asc">PGP</a>)</li>
+  <li>Gregory Maxwell - <a href="mailto:gmaxwell@gmail.com">gmaxwell@gmail.com</a> (<a href="/gmaxwell.asc">PGP</a>)</li>
+</ul>
+
+<h2>{% translate involve %}</h2>
+{% case page.lang %}
+{% when 'es' %}
+<p>El desarrollo de Bitcoin es de código abierto y cualquier desarrollador puede contribuir al proyecto. Todo lo que necesitas está en el <a href="https://github.com/bitcoin/bitcoin">repositorio en Github</a>. Por favor, asegúrese de leer y seguir el proceso de desarrollo que se describe en el archivo README, así como proporcionar el código con buena calidad y respetar todas las directrices.</p>
+{% when 'nl' %}
+<p>Bitcoin is een open-sourceproject en elke ontwikkelaar kan eraan bijdragen. Alles wat je nodig hebt is te vinden in de <a href="https://github.com/bitcoin/bitcoin">Github repository</a>. Lees vooral eerst het ontwikkelproces in de README, zorg voor code van hoge kwaliteit en respecteer de richtlijnen van het project.</p>
+{% else %}
+<p>{% translate involvetxt1 %}</p>
+<p>{% translate involvetxt2 %}</p>
+<div id="chatbox"></div>
+{% endcase %}
+
+<section id="contributors">
+  <h2>{% translate contributors %}</h2>
+  <p>{% translate contributorsorder %}</p>
+  <div class="contributors">{% for c in site.project.contributors %}
+    <span>
+      {% if c.gravatar_id %}<img class="icon" height="16" width="16" src="https://secure.gravatar.com/avatar/{{c.gravatar_id}}?s=140&amp;d=http%3A%2F%2Fbitcoin.org%2Fimg%2Fgravatar-140.png" alt="icon" />{% else %}<img class="icon" height="16" width="16" src="http://bitcoin.org/img/gravatar-140.png" alt="icon" />{% endif %}
+      {% if c.login %}<a href="http://github.com/{{c.login}}">{{ c.name }} ({{ c.contributions }})</a>{% else %}{{ c.name }} ({{ c.contributions }}){% endif %}
+    </span>{% endfor %}
+  </div>
+</section>

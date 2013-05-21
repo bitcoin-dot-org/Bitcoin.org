@@ -1,0 +1,30 @@
+---
+layout: base
+id: community
+---
+<h1>{% translate pagetitle %}</h1>
+<ul class="resources">
+<li>{% translate foundation %}</li>
+<li>{% translate stackexchange %}</li>
+<li>{% translate bitcointalk %}</li>
+<li>{% translate ircjoin %}
+  <ul>
+    <li><strong>#bitcoin</strong> {% translate chanbitcoin %}</li>
+    <li><strong>#bitcoin-dev</strong> {% translate chandev %}</li>
+    <li><strong>#bitcoin-otc</strong>  {% translate chanotc %}</li>
+    <li><strong>#bitcoin-market</strong> {% translate chanmarket %}</li>
+    <li><strong>#bitcoin-mining</strong> {% translate chanmining %}</li>
+    {% case page.lang %}
+    {% when 'fr' %}
+    <li><strong>#bitcoin-fr</strong> (Le Bitcoin en général, français)</li>
+    {% when 'es' %}
+    <li><strong>#bitcoin-ar</strong> (Comunidad Bitcoin Argentina)</li>
+    <li><strong>#bitcoin-es</strong> (Comunidad Bitcoin en español)</li>
+    <li><strong>#bitcoin-otc-ar</strong> (Mercado OTC de Bitcoin en Argentina)</li>
+    {% endcase %}
+  </ul>
+</li>
+<li>{% translate linktwitter %}</li>
+<li>{% translate facebook %}</li>
+<li>{% translate reddit %}</li>
+</ul>
