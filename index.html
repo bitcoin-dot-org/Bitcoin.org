@@ -1,7 +1,8 @@
 ---
-layout: base-en
+layout: base
+lang: en
 id: index
-title: Bitcoin - Open source P2P digital currency
+title: Bitcoin
 ---
 <script>
 //Auto redirect to the appropriate language
@@ -11,13 +12,13 @@ lang=lang.split('_')[0];
 if(!langs[lang])lang='en';
 setTimeout(function(){window.location.href='/'+lang+'/';},200);
 </script>
-<h1>An open source P2P digital currency</h1>
-<p style="font-size:125%;">Bitcoin is a digital currency, a protocol, and a software that enables
+<h1>{%translate pagetitle%}</h1>
+<p style="font-size:125%;">{%translate listintro%}</p>
 <ul style="font-size:125%;">
-  <li>Instant peer-to-peer transactions</li>
-  <li>Worldwide payments</li>
-  <li>Low or zero processing fees</li>
-  <li>And much more!</li>
+  <li>{%translate list1%}</li>
+  <li>{%translate list2%}</li>
+  <li>{%translate list3%}</li>
+  <li>{%translate list4%}</li>
 </ul>
-<p>Bitcoin uses peer-to-peer technology to operate with no central authority; managing transactions and the issuing of bitcoins is carried out <b>collectively by the network</b>. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment systems.</p>
-<p>The software is a community-driven, <a href="http://www.fsf.org/about/what-is-free-software">free, open-source</a> project released under the <a href="http://creativecommons.org/licenses/MIT/">MIT license</a>.</p>
+<p>{%translate desc%}</p>
+<p>{%translate license%}</p>

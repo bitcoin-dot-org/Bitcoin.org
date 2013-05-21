@@ -1,0 +1,42 @@
+---
+layout: base
+id: you-need-to-know 
+---
+<h1>{% translate pagetitle %}</h1>
+<p>{% translate summary %}</p>
+
+<h2><img src="/img/ico_key.svg" alt="Icon" />{% translate secure %}</h2>
+{% case page.lang %}
+{% when 'es' %}
+<p>Al igual que en la vida real, su monedero debe estar asegurado. Siempre recuerde que es su responsabilidad adoptar buenas prácticas con el fin de proteger su dinero. Estas son algunas de las opciones que usted debe considerar.</p>
+
+<div class="box">
+<h3>Respalde su monedero</h3>
+<p>Los servicios y programas relacionados con Bitcoin permiten realizar respaldos de su monedero, que se puede imprimir en papel o guardar en una unidad USB. Almacenándolos en un lugar seguro, un respaldo puede protegerlo contra cualquier falla de su computador y muchos errores humanos.</p>
+
+<h3>Encripte su monedero</h3>
+<p>Encriptar su monedero le permite establecer una contraseña para evitar que cualquiera trate de retirar los fondos. Esto le ayuda a protegerse contra ladrones y hackers, aunque no se puede proteger contra equipos o programas capturadores de teclado. Sin embargo, usted debe asegurarse de que nunca se le olvida la contraseña o sino sus fondos podrían perderse permanentemente. A diferencia de su banco, no hay opciones de recuperación de la contraseña con Bitcoin!</p>
+
+<h3>Tenga cuidado con los monederos en línea</h3>
+<p>Usar un monedero en línea es más o menos como usar un banco en línea. Usted está confiando en alguien más para proteger su dinero mientras que usted tiene que recordar y proteger la contraseña. Usted siempre debe elegir cuidadosamente estos servicios. Al día de hoy, ningún provedor de servicios de monedero web proporciona suficiente seguridad para almacenar sus valores como en un banco.</p>
+
+<h3>Use respaldos fuera de línea para su seguridad</h3>
+<p>Un resplado sin conexión de su monedero proporciona el más alto nivel de seguridad para su dinero. Requiere almacenar su monedero en papel y/o en llaves USB en diferentes lugares seguros que no están conectados a la red. Esta es una buena protección contra fallos informáticos, vulnerabilidades informáticas, robos y errores humanos. Al día de hoy, esta práctica require un cierto conocimiento técnico para realizarse correctamente.</p>
+</div>
+{% else %}
+<p>{% translate securetxt %}</p>
+{% endcase %}
+<h2><img src="/img/ico_market.svg" alt="Icon" />{% translate volatile %}</h2>
+<p>{% translate volatiletxt %}</p>
+
+<h2><img src="/img/ico_irreversible.svg" alt="Icon" />{% translate irreversible %}</h2>
+<p>{% translate irreversibletxt %}</p>
+
+<h2><img src="/img/ico_anon.svg" alt="Icon" />{% translate anonymous %}</h2>
+<p>{% translate anonymoustxt %}</p>
+
+<h2><img src="/img/ico_lab.svg" alt="Icon" />{% translate experimental %}</h2>
+<p>{% translate experimentaltxt %}</p>
+
+<h2><img src="/img/ico_invoice.svg" alt="Icon" />{% translate tax %}</h2>
+<p>{% translate taxtxt %}</p>
