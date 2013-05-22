@@ -27,4 +27,8 @@ id: community
 <li>{% translate linktwitter %}</li>
 <li>{% translate facebook %}</li>
 <li>{% translate reddit %}</li>
+{% case page.lang %}
+{% when 'es' %}
+<li><a href="http://www.forobtc.com/">Foro Bitcoin en Español</a></li>
+{% endcase %}
 </ul>
