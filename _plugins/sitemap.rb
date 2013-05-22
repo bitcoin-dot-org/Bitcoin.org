@@ -28,11 +28,11 @@ module Jekyll
         #Add translated pages with their alternative in each languages
         locs['en']['url'].each do |id,value|
           locs.each do |lang,value|
-            next if locs[lang]['url'][id].nil?
+            next if locs[lang]['url'][id].nil? or locs[lang]['url'][id] == ''
             sitemap.puts '<url>'
             sitemap.puts '  <loc>http://bitcoin.org/'+lang+'/'+locs[lang]['url'][id]+'</loc>'
             locs.each do |altlang,value|
-              next if locs[altlang]['url'][id].nil? or altlang == lang
+              next if locs[altlang]['url'][id].nil? or locs[altlang]['url'][id] == '' or altlang == lang
               sitemap.puts '  <xhtml:link'
               sitemap.puts '    rel="alternate"'
               sitemap.puts '    hreflang="'+altlang+'"'
