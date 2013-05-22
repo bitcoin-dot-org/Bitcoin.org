@@ -1,0 +1,99 @@
+/*Language specific styles that override default*/
+
+/*Styles for HTML tags*/
+body{
+	font-family:'DroidNaskh', sans-serif;
+	direction:rtl;
+}
+h1,h2{
+	font-family:'DroidNaskh', sans-serif;
+}
+h1,h2,h3{
+	text-align:right;
+}
+h1 img,h2 img,h3 img{
+	margin-right:auto;
+	margin-left:5px;
+}
+ul{
+	padding-right:20px;
+	padding-left:auto;
+}
+li{
+	text-align:right;
+}
+p{
+	line-height:2em;
+}
+
+/*Styles for whole website*/
+
+#head{
+	direction:ltr;
+}
+#lang{
+	font-family:"Helvetica Neue", "Liberation Sans", Arial, sans-serif;
+}
+#menufor li a,#menufor li a:active,#menufor li a:visited,#menufor li a:link{
+	font-family:'DroidNaskh', sans-serif;
+}
+#menu li a,#menu li a:active,#menu li a:visited,#menu li a:link{
+	font-family:'DroidNaskh', sans-serif;
+}
+#content{
+	padding:20px 30px 30px 265px;
+}
+#rightbox{
+	left:30px;
+	right:auto;
+	direction:ltr;
+}
+.previewrow>div{
+	margin-right:auto;
+	margin-left:17px;
+}
+.previewrow>div>a{
+	line-height:1.2em;
+}
+.previewrow>div.last{
+	margin-left:0px;
+}
+.previewrow>div>div>span{
+	right:auto;
+	left:30px;
+}
+.previewrow>div>div>div>h2{
+	text-align:left;
+}
+.previewrow>div>div>div>h2:first-child+span+p{
+	line-height:1.5em;
+}
+.index a,.index a:link,.index a:active,.index a:visited{
+	line-height:2em;
+}
+.floatimg{
+	float:right;
+	margin-right:auto;
+	margin-left:10px;
+}
+.press-faq li{
+	line-height:2em;
+}
+	
+/*Override UbuntuBold by Droid Naskh*/
+
+@font-face{font-family:'DroidNaskh';src:url('/ar/font/droidnaskh-regular.eot');font-weight:normal;font-style:normal;}
+@font-face{font-family:'DroidNaskh';src:url('/ar/font/droidnaskh-regular.ttf') format('truetype');font-weight:normal;font-style:normal;}
+
+/*Styles specific to mobiles*/
+
+@media handheld, only screen and (max-device-height: 37em), only screen and (max-device-width: 50em){
+#menufor{
+	bottom:0px;
+}
+#content{
+	position:static;
+	padding:15px 10px 20px 10px;
+	text-align:right;
+}
+}

@@ -22,6 +22,7 @@ menu:
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
 {% lesscss main.less %}
+{% case page.lang %}{% when 'ar' %}<link rel="stylesheet" type="text/css" href="/ar/css/main.css">{% endcase %}
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
@@ -55,6 +56,7 @@ menu:
     {% for link in page.menufor %}{% assign id = link.id%}{% capture url %}/{{ page.lang }}/{% translate {{id}} url %}{% endcapture %}
       {%if id == 'bitcoin-for-press'%}
         {% case page.lang %}
+        {% when 'ar' %}
         {% when 'es' %}
         {% when 'fr' %}
         {% when 'it' %}
