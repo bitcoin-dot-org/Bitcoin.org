@@ -22,7 +22,7 @@ menu:
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
 {% lesscss main.less %}
-{% case page.lang %}{% when 'ar' %}<link rel="stylesheet" type="text/css" href="/ar/css/main.css">{% when 'ru' %}<link rel="stylesheet" type="text/css" href="/ru/css/main.css" />{% endcase %}
+{% case page.lang %}{% when 'ar' %}<link rel="stylesheet" type="text/css" href="/ar/css/main.css">{% when 'fa' %}<link rel="stylesheet" type="text/css" href="/fa/css/main.css" />{% when 'ru' %}<link rel="stylesheet" type="text/css" href="/ru/css/main.css" />{% endcase %}
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
@@ -58,6 +58,7 @@ menu:
         {% case page.lang %}
         {% when 'ar' %}
         {% when 'es' %}
+        {% when 'fa' %}
         {% when 'fr' %}
         {% when 'it' %}
         {% when 'nl' %}
