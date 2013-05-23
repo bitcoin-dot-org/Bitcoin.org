@@ -60,7 +60,7 @@ en:
     invoice: "Bitcoin addresses to track invoices"
     invoicetext: "Bitcoin can create as many Bitcoin addresses as you want. So if you were to build a payment system associated with an invoice, you simply need to generate and monitor a Bitcoin address for each payment. You can also use the same addresses once the payment is done."
     security: "Most of the security is on client side"
-    securitytext: "Most parts of the security are handled by the protocol on the client and Bitcoin network side. Authenticity is verified through private keys, and double-spends are prevented through the Bitcoin network. That means no PCI compliance nor fraud detection. We love things that just work, don't we?"
+    securitytext: "Most parts of the security are handled by the protocol on the client and Bitcoin network side. Authenticity is verified through private keys, and double-spends are prevented through the Bitcoin network. That means no need for PCI compliance nor fraud detection. We love things that just work, don't we?"
     instant: "Instant transactions and confirmations"
     instanttext: "A Bitcoin transaction is usually received within a few seconds and confirmed within 10 minutes. Before that, the transaction can be considered authentic but reversible. If you really require instant transactions, it is recommended that you ask for a small transaction fee and use a double-spend detection system."
     micro: "Cheap micro payments"
