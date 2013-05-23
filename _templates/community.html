@@ -24,6 +24,16 @@ id: community
     {% endcase %}
   </ul>
 </li>
+{% case page.lang %}
+{% when 'ar' %}
+{% when 'es' %}
+{% when 'fr' %}
+{% when 'it' %}
+{% when 'nl' %}
+{% when 'ru' %}
+{% else %}
+<li>{% translate linkgoogle %}</li>
+{% endcase %}
 <li>{% translate linktwitter %}</li>
 <li>{% translate facebook %}</li>
 <li>{% translate reddit %}</li>
