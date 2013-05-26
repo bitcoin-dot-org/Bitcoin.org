@@ -52,6 +52,7 @@ module Jekyll
             end
           end
           next if !/\.html$/.match(file1)
+          next if file1 == 'index.html' || file1 == '404.html'
           sitemap.puts '<url>'
           sitemap.puts '  <loc>http://bitcoin.org/'+file1.gsub('.html','')+'</loc>'
           sitemap.puts '</url>'
