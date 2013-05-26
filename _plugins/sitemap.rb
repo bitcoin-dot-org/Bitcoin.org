@@ -47,19 +47,19 @@ module Jekyll
             Dir.foreach(file1) do |file2|
               next if !/\.html$/.match(file2)
               sitemap.puts '<url>'
-              sitemap.puts '  <loc>http://bitcoin.org/'+file1+'/'+file2+'</loc>'
+              sitemap.puts '  <loc>http://bitcoin.org/'+file1+'/'+file2.gsub('.html','')+'</loc>'
               sitemap.puts '</url>'
             end
           end
           next if !/\.html$/.match(file1)
           sitemap.puts '<url>'
-          sitemap.puts '  <loc>http://bitcoin.org/'+file1+'</loc>'
+          sitemap.puts '  <loc>http://bitcoin.org/'+file1.gsub('.html','')+'</loc>'
           sitemap.puts '</url>'
         end
         #Add posts
         site.posts.each do |post|
           sitemap.puts '<url>'
-          sitemap.puts '  <loc>http://bitcoin.org'+post.url+'</loc>'
+          sitemap.puts '  <loc>http://bitcoin.org'+post.url.gsub('.html','')+'</loc>'
           sitemap.puts '</url>'
         end
         #Close sitemap
