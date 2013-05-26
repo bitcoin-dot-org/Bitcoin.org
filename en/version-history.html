@@ -16,7 +16,7 @@ title: Bitcoin-Qt version history
 </div>
 {% for post in site.categories.releases %}
 <div class="versiontext">
-  <h1><a name="{{ post.version }}">{{ post.title }} <small>{{ post.date | date:"%e %B %Y" }}</small></a></h1>
+  <h1><a name="{{ post.version }}">{{ post.title }}<br><small>{{ post.date | date:"%e %B %Y" }}</small></a></h1>
   {% if post.src %}
   <p>
     <a href="{{ post.src }}">Full announcement (including signatures)</a>
