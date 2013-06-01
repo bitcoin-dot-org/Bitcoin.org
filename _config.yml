@@ -5,6 +5,7 @@ ALERT_CLASS:
   ar: 
   en: 
   es: 
+  fa: 
   fr: 
   it: 
   nl: 
@@ -15,6 +16,7 @@ ALERT:
   ar: 
   en: 
   es: 
+  fa: 
   fr: 
   it: 
   nl: 
@@ -28,14 +30,16 @@ langsorder:
 - id: nl
 - id: ru
 - id: ar
+- id: fa
 
 langs:
+  ar: ألعربية
   en: English
   es: Español
+  fa: فارسی
   fr: Français
   it: Italiano
   nl: Nederlands
-  ar: ألعربية
   ru: Русский
 
 safe:        false
