@@ -70,7 +70,7 @@ en:
     pagetitle: "Bitcoin for Enthusiasts"
     summary: "Bitcoin is changing the world of finance, by giving you control over your money."
     consensus: "Bitcoin is a worldwide consensus"
-    consensustext: "Because of its decentralized, open-source nature, Bitcoin is the first payment network that is powered by its users with no central authority. Even Bitcoin developers have no power to force updates in the protocol if enough users, developers, or miners disagree. <i>You</i> have exclusive control over your wallet."
+    consensustext: "Because of its decentralized, open-source nature, Bitcoin is the first payment network that is powered by its users with no central authority. Even Bitcoin developers have no power to force updates in the protocol if enough users, developers, or miners disagree. <i>You</i> have exclusive control over your money."
     network: "Digital money made for the Internet"
     networktext: "Bitcoin was born from the Internet, bringing the freedom of physical money to the virtual world while making payments easier and more secure in both worlds. Bitcoin can offer an alternative to previous cumbersome and costly systems, and it can increase online business access to developing countries."
     freedom: "Protecting individual rights and freedom"
@@ -296,7 +296,7 @@ en:
     list1: "Instant peer-to-peer transactions"
     list2: "Worldwide payments"
     list3: "Low or zero processing fees"
-    list4: "And much more!"
+    list4: "And much more"
     desc: "Bitcoin uses peer-to-peer technology to operate with no central authority; managing transactions and the issuing of bitcoins is carried out <b>collectively by the network</b>. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment systems."
     license: "The software is a community-driven, <a href=\"http://www.fsf.org/about/what-is-free-software\">free, open-source</a> project released under the <a href=\"http://creativecommons.org/licenses/MIT/\">MIT license</a>."
   resources:
