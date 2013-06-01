@@ -22,7 +22,7 @@ menu:
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
 {% lesscss main.less %}
-{% case page.lang %}{% when 'ar' %}<link rel="stylesheet" type="text/css" href="/ar/css/main.css">{% when 'ru' %}<link rel="stylesheet" type="text/css" href="/ru/css/main.css" />{% endcase %}
+{% if page.lang == 'ar' %}<link rel="stylesheet" type="text/css" href="/ar/css/main.css">{% endif %}{% if page.lang == 'fa' %}<link rel="stylesheet" type="text/css" href="/fa/css/main.css" />{% endif %}{% if page.lang == 'ru' %}<link rel="stylesheet" type="text/css" href="/ru/css/main.css" />{% endif %}
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
@@ -58,6 +58,7 @@ menu:
         {% case page.lang %}
         {% when 'ar' %}
         {% when 'es' %}
+        {% when 'fa' %}
         {% when 'fr' %}
         {% when 'it' %}
         {% when 'nl' %}
@@ -82,7 +83,7 @@ menu:
     </div>
     <div id="rightbox"{% if page.mode == "wide" %} class="wide"{% endif %}>
       <div id="choose">
-        <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}"><img src="/img/but_start.svg" alt="Icon">{% translate button-wallet layout %}</a>
+        <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}"><img src="/img/but_start{% if page.lang == 'ar' or page.lang == 'fa' %}_rev{% endif %}.svg" alt="Icon">{% translate button-wallet layout %}</a>
       </div>
       <div id="before">
         <a href="/{{ page.lang }}/{% translate you-need-to-know url %}"><img src="/img/but_warn.svg" alt="Icon">{% translate button-know layout %}</a>
