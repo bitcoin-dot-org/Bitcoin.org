@@ -458,6 +458,20 @@ li{
 	text-align:center;
 }
 
+.devprojectlist{
+	overflow:hidden;
+}
+.devprojectlist>li{
+	display:none;
+}
+.devprojectlist>li:first-child,.devprojectlist>li:first-child+li,.devprojectlist>li:first-child+li+li,.devprojectlist>li:first-child+li+li+li{
+	display:list-item;
+}
+.devprojectlist>a{
+	display:inline-block;
+	margin-top:5px;
+}
+
 .floatimg{
 	float:left;
 	margin-right:10px;
