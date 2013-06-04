@@ -147,6 +147,24 @@ cancelEvent(e);
 }
 
 
+function librariesShow(e){
+var p=t=getEventTarget(e);
+while(p.nodeType!=1||p.nodeName!='UL')p=p.parentNode;
+var sh=getHeight(p);
+for(var i=0,nds=p.getElementsByTagName('LI'),n=nds.length;i<n;i++)nds[i].style.display='list-item';
+t.parentNode.removeChild(t);
+var dh=getHeight(p);
+p.style.height=sh+'px';
+setTimeout(function(){
+	p.style.transition='height 400ms ease-out';
+	p.style.MozTransition='height 400ms ease-out';
+	p.style.WebkitTransition='height 400ms ease-out';
+	p.style.height=dh+'px';
+},1);
+cancelEvent(e);
+}
+
+
 function freenodeShow(e){
 document.getElementById('chatbox').innerHTML='<iframe style=width:98%;min-width:400px;height:600px src="http://webchat.freenode.net/?channels=bitcoin-dev" />';
 cancelEvent(e);
