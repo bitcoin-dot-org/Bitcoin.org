@@ -1,4 +1,5 @@
 require 'yaml'
+require 'open-uri'
 
 #translate( id [,category ,lang] )
 #Return translated string using translations files
@@ -52,18 +53,22 @@ module Jekyll
       if site['loc'][lang].has_key?(cat) && site['loc'][lang][cat].has_key?(id) && !site['loc'][lang][cat][id].nil?
         text = site['loc'][lang][cat][id]
       end
+      #urlencode if string is a url
+      if cat == 'url'
+        text=CGI::escape(text)
+      end
       #replace urls and anchors in string
       url = site['loc'][lang]['url']
       url.each do |key,value|
         if !value.nil?
-          text.gsub!("#"+key+"#",'/'+lang+'/'+value)
+          text.gsub!("#"+key+"#",'/'+lang+'/'+CGI::escape(value))
         end
       end
       anc = site['loc'][lang]['anchor']
       anc.each do |page,anch|
         anch.each do |key,value|
           if !value.nil?
-            text.gsub!("["+page+'.'+key+"]",value)
+            text.gsub!("["+page+'.'+key+"]",CGI::escape(value))
           end
         end
       end
