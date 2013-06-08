@@ -9,6 +9,7 @@ ALERT_CLASS:
   fr: 
   it: 
   nl: 
+  pl: 
   ru: 
   
 ALERT:
@@ -20,6 +21,7 @@ ALERT:
   fr: 
   it: 
   nl: 
+  pl: 
   ru: 
 
 langsorder:
@@ -28,6 +30,7 @@ langsorder:
 - id: fr
 - id: it
 - id: nl
+- id: pl
 - id: ru
 - id: ar
 - id: fa
@@ -40,6 +43,7 @@ langs:
   fr: Français
   it: Italiano
   nl: Nederlands
+  pl: Polski
   ru: Русский
 
 safe:        false

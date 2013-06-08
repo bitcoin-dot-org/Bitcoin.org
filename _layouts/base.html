@@ -22,7 +22,7 @@ menu:
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
 {% lesscss main.less %}
-{% if page.lang == 'ar' %}<link rel="stylesheet" type="text/css" href="/ar/css/main.css">{% endif %}{% if page.lang == 'fa' %}<link rel="stylesheet" type="text/css" href="/fa/css/main.css" />{% endif %}{% if page.lang == 'ru' %}<link rel="stylesheet" type="text/css" href="/ru/css/main.css" />{% endif %}
+{% if page.lang == 'ar' %}<link rel="stylesheet" type="text/css" href="/ar/css/main.css">{% endif %}{% if page.lang == 'fa' %}<link rel="stylesheet" type="text/css" href="/fa/css/main.css" />{% endif %}{% if page.lang == 'pl' %}<link rel="stylesheet" type="text/css" href="/pl/css/main.css" />{% endif %}{% if page.lang == 'ru' %}<link rel="stylesheet" type="text/css" href="/ru/css/main.css" />{% endif %}
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
@@ -62,6 +62,7 @@ menu:
         {% when 'fr' %}
         {% when 'it' %}
         {% when 'nl' %}
+        {% when 'pl' %}
         {% when 'ru' %}
         {% else %}
         <li{% if page.id == id %} class="active"{% endif %}><a href="{{ url }}">{% translate menu-{{id}} layout %}</a></li>
