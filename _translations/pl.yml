@@ -174,7 +174,7 @@ pl:
     downloadmac: "Pobierz dla Mac OS X"
     downloadsource: "Kod Źródłowy"
     versionhistory: "Pokaż historię wersji"
-    notelicense: "Aplikacja Bitcoin-QT jest tworzona przez społeczność jako <a href=\"http://www.fsf.org/about/what-is-free-software\">darmowy projekt o otwartym kodzie</a> źródłowym opublikowanych na zasadach <a href=\"http://creativecommons.org/licenses/MIT/\">licencji MIT</a>."
+    notelicense: "Aplikacja Bitcoin-QT jest tworzona przez społeczność jako <a href=\"http://www.fsf.org/about/what-is-free-software\">darmowy projekt o otwartym kodzie</a> źródłowym opublikowanym na zasadach <a href=\"http://creativecommons.org/licenses/MIT/\">licencji MIT</a>."
     notesync: "<b>Uwaga</b> : Początkowa synchronizacja Bitcoin-Qt może trwać dzień zanim zostanie ukończona. Upewnij się, że posiadasz wystarczająco pasma internetowego oraz przestrzeni dyskowej na <a href=\"http://blockchain.info/charts/blocks-size\">łańcuch bloku o pełnym rozmiarze</a>."
   foundation:
     title: "Fundacja Bitcoin - Bitcoin"
@@ -205,7 +205,7 @@ pl:
     list3: "Transakcje niemalże bez opłat"
     list4: "I wiele więcej"
     desc: "Bitcoin używa technologi P2P by operować bez centralnej administracji; zarządzanie transakcjami oraz wydawanie bitcoin jest <b>współprowadzone przez sieć</b>. Poprzez wiele unikalnych właściwości Bitcoin pozwala na ekscytujące zastosowania które nie mogły być pokryte poprzez uprzednie systemy płatności."
-    license: "Aplikacja jest tworzona przez społeczność jako<a href=\"http://www.fsf.org/about/what-is-free-software\">darmowy projekt o otwartym kodzie</a> źródłowym opublikowanych na zasadach<a href=\"http://creativecommons.org/licenses/MIT/\">licencji MIT</a>."
+    license: "Aplikacja jest tworzona przez społeczność jako <a href=\"http://www.fsf.org/about/what-is-free-software\">darmowy projekt o otwartym kodzie</a> źródłowym opublikowanym na zasadach <a href=\"http://creativecommons.org/licenses/MIT/\">licencji MIT</a>."
   resources:
     title: "Zasoby - Bitkoin"
     pagetitle: "Zasoby bitcoin"
