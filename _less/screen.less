@@ -76,6 +76,9 @@ li{
 	padding:5px 0px;
 	text-align:left;
 }
+li p{
+	margin:0px;
+}
 
 /*Styles for whole website*/
 
@@ -123,20 +126,20 @@ li{
 .alert-message{
 	background-color:#fff;
 }
-.alert-message>div{
+.alert-message div{
 	background-color:#fff;
 	background-color:#c5251f;
 }
-.alert-message.error>div{
+.alert-message.error div{
 	background-color:#c5251f;
 }
-.alert-message.success>div{
+.alert-message.success div{
 	background-color:#489e48;
 }
-.alert-message.info>div{
+.alert-message.info div{
 	background-color:#517ea7;
 }
-.alert-message>div>div{
+.alert-message div div{
 	margin:auto;
 	width:960px;
 	padding:10px;
@@ -186,7 +189,13 @@ li{
 	border-right:2px solid transparent;
 	border-top:2px solid transparent;
 }
-#lang>li>ul{
+#lang:hover{
+	border-left:2px solid #ebebeb;
+	border-right:2px solid #ebebeb;
+	border-top:2px solid #ebebeb;
+	background-color:#fff;
+}
+#lang li ul{
 	display:none;
 	right:-2px;
 	top:28px;
@@ -198,30 +207,23 @@ li{
 	border-right:2px solid #ebebeb;
 	border-bottom:2px solid #ebebeb;
 }
-#lang:hover{
-	border-left:2px solid #ebebeb;
-	border-right:2px solid #ebebeb;
-	border-top:2px solid #ebebeb;
-	background-color:#fff;
-}
-#lang:hover>li>ul{
+#lang:hover li ul{
 	display:block;
 }
-#lang>li>a,#lang>li>a:link,#lang>li>a:visited,#lang>li>a:active{
-	padding:4px 8px;
-}
-#lang a,#lang a:link,#lang a:visited,#lang a:active{
-	padding:2px 8px;
+#lang li a,#lang li a:link,#lang li a:visited,#lang li a:active{
 	text-decoration:none;
 	color:#000;
 	font-size:115%;
 	width:100px;
 	display:inline-block;
-}
-#lang>li>ul>li>a,#lang>li>ul>li>a:link,#lang>li>ul>li>a:visited,#lang>li>ul>li>a:active{
 	color:#5c5c5c;
+	padding:4px 8px;
 }
-#lang>li>ul>li:hover>a{
+#lang li ul li a,#lang li ul li a:link,#lang li ul li a:visited,#lang li ul li a:active{
+	padding:2px 8px;
+
+}
+#lang li ul li:hover a{
 	color:#000;
 }
 
@@ -261,10 +263,10 @@ li{
 	color:#2c6fad;
 	white-space:nowrap;
 }
-#menufor>li:hover,#menufor>li.active{
+#menufor li:hover,#menufor li.active{
 	background-color:#2c6fad;
 }
-#menufor>li:hover>a,#menufor>li.active>a{
+#menufor li:hover a,#menufor li.active a{
 	border-radius:5px;
 	-webkit-left-radius:5px;
 	color:#fff;
@@ -277,8 +279,6 @@ li{
 #menu li{
 	list-style:none;
 	display:inline-block;
-	zoom:1;
-	*display:inline;/*IE7 support*/
 	margin:0px;
 }
 #menu li a,#menu li a:active,#menu li a:visited,#menu li a:link{
@@ -329,7 +329,7 @@ li{
 	display:none;
 }
 
-#choose>a:first-child,#before>a:first-child,#support>a:first-child{
+#choose a,#before a,#support a{
 	padding:10px 8px 10px 48px;
 	color:#fff;
 	display:block;
@@ -345,7 +345,7 @@ li{
 	margin-right:8px;
 	margin-left:-40px;
 }
-#before>a:first-child,#support>a:first-child{
+#before a,#support a{
 	background-color:#2c6fad;
 	border:1px solid #20598f;
 	background-image:linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
@@ -354,7 +354,7 @@ li{
 	background-image:-webkit-linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
 	background-image:-ms-linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
 }
-#choose>a:first-child{
+#choose a{
 	padding:12px 8px 12px 48px;
 	background-color:#e78406;
 	border:1px solid #d57700;
@@ -364,7 +364,7 @@ li{
 	background-image:-webkit-linear-gradient(bottom, #d57700 14%, #e78406 70%);
 	background-image:-ms-linear-gradient(bottom, #d57700 14%, #e78406 70%);
 }
-#choose>a:first-child:hover,#before>a:first-child:hover,#support>a:first-child:hover{
+#choose a:hover,#before a:hover,#support a:hover{
 	background-image:none;
 }
 
@@ -376,7 +376,7 @@ li{
 	font-size:94%;
 	max-width:1050px;
 }
-#footer>div{
+#footer div{
 	padding-top:6px;
 }
 
@@ -392,13 +392,16 @@ li{
 	border:2px dashed #4892b2;
 	display:inline-block;
 }
-.index>li>a{
+.index li a{
 	font-weight:bold;
 }
-.index>ul{
+.index ul{
 	padding:20px 0px 20px 20px;
 }
-.index a,.index a:link,.index a:active,.index a:visited{
+.index a,
+.index a:link,
+.index a:active,
+.index a:visited{
 	display:block;
 	text-decoration:none;
 	line-height:1.5em;
@@ -409,13 +412,18 @@ li{
 	padding:0px 20px 0px 20px;
 }
 .boxexpand{
-	height:56px;
 	overflow:hidden;
-	transition:height 400ms ease-out;
-	-moz-transition:height 400ms ease-out;
-	-webkit-transition:height 400ms ease-out;
 }
-.boxexpand h3>a:link,.boxexpand h3>a:visited,.boxexpand h3>a:active{
+.boxexpand>*{
+	display:none;
+}
+.boxexpand>h3:first-child{
+	display:block;
+	margin:20px 0px;
+}
+.boxexpand>h3:first-child a:link,
+.boxexpand>h3:first-child a:visited,
+.boxexpand>h3:first-child a:active{
 	text-decoration:none;
 }
 
@@ -427,16 +435,20 @@ li{
 	width:900px;
 	text-align:left;
 }
-.contributors>span>a{
+.contributors span a{
 	font-size:80%;
 }
-.contributors>span{
+.contributors span{
 	padding:6px 0px;
 	width:170px;
 	overflow:hidden;
 	display:inline-block;
 }
 
+.resources{
+	font-size:115%;
+	font-weight:bold;
+}
 .resources ul{
 	padding-top:5px;
 }
@@ -446,11 +458,7 @@ li{
 .resources a,.resources a:link,.resources a:active,.resources a:visited{
 	text-decoration:none;
 }
-.resources>li{
-	font-size:115%;
-	font-weight:bold;
-}
-.resources>li>ul>li{
+.resources li ul li{
 	font-weight:normal;
 }
 
@@ -461,13 +469,19 @@ li{
 .devprojectlist{
 	overflow:hidden;
 }
-.devprojectlist>li{
+.devprojectlist li{
 	display:none;
 }
-.devprojectlist>li:first-child,.devprojectlist>li:first-child+li,.devprojectlist>li:first-child+li+li,.devprojectlist>li:first-child+li+li+li{
+.devprojectlist li:first-child,
+.devprojectlist li:first-child+li,
+.devprojectlist li:first-child+li+li,
+.devprojectlist li:first-child+li+li+li{
 	display:list-item;
 }
-.devprojectlist>a{
+.devprojectlist li.more{
+	display:block;
+}
+.devprojectlist a{
 	display:inline-block;
 	margin-top:5px;
 }
@@ -504,7 +518,6 @@ li{
 }
 .previewrow>div{
 	display:inline-block;
-	zoom:1;*display:inline;/*IE7 support*/
 	position:relative;
 	margin-right:17px;
 	margin-bottom:12px;
@@ -608,9 +621,6 @@ li{
 	text-align:left;
 	margin-bottom:40px;
 }
-.versiontext li>p{
-	margin:0px;
-}
 
 .download a{
 	font-size:125%;
@@ -645,7 +655,6 @@ li{
 	width:400px;
 	height:150px;
 	display:inline-block;
-	zoom:1;*display:inline;/*IE7 support*/
 	margin-right:30px;
 	margin-bottom:30px;
 	vertical-align:top;
@@ -696,7 +705,6 @@ li{
 .press-faq>div{
 	width:400px;
 	display:inline-block;
-	zoom:1;*display:inline;/*IE7 support*/
 	vertical-align:top;
 	text-align:left;
 	margin-bottom:15px;
@@ -736,7 +744,6 @@ li{
 }
 .press-materials>div{
 	display:inline-block;
-	zoom:1;*display:inline;/*IE7 support*/
 	width:300px;
 	vertical-align:top;
 	position:relative;

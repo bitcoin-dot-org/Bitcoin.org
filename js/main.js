@@ -59,12 +59,17 @@ for(var i=0,nd=document.getElementsByTagName('*'),n=nd.length;i<n;i++){
 }
 
 
-function walletshow(){
+function walletshow(e){
 for(var i=0,nd=document.getElementsByTagName('*'),n=nd.length;i<n;i++){
 	if(nd[i].getAttribute('data-id')===null||nd[i].getAttribute('data-id')=='')continue;
 	var d=nd[i].getElementsByTagName('DIV')[0];
 	var s=document.getElementById(nd[i].getAttribute('data-id')).getElementsByTagName('DIV')[0];
-	d.innerHTML=s.innerHTML;
+	d.getElementsByTagName('H2')[0].innerHTML=s.getElementsByTagName('H2')[0].innerHTML;
+	d.getElementsByTagName('SPAN')[0].innerHTML=s.getElementsByTagName('SPAN')[0].innerHTML;
+	d.getElementsByTagName('P')[0].innerHTML=s.getElementsByTagName('P')[0].innerHTML;
+	d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].innerHTML=s.getElementsByTagName('P')[1].getElementsByTagName('A')[0].innerHTML;
+	d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].href=s.getElementsByTagName('P')[1].getElementsByTagName('A')[0].href;
+	d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].onclick='';
 	d.className='';
 	//Workaround for browsers that don't handle re-rendering class styles and svg (they have backgroundImage hardcoded in HTML)
 	for(var ii=0,nn=d.childNodes.length;ii<nn;ii++){if(d.childNodes[ii].nodeType==1&&d.childNodes[ii].style.backgroundImage!='')d.childNodes[ii].style.backgroundImage=d.childNodes[ii].style.backgroundImage.replace('bubblewarn','bubble');}
@@ -72,6 +77,7 @@ for(var i=0,nd=document.getElementsByTagName('*'),n=nd.length;i<n;i++){
 	for(var ii=0,as=s.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==s.parentNode){var ss=as[ii];break;}}
 	dd.innerHTML=ss.innerHTML;
 }
+cancelEvent(e);
 }
 
 
@@ -90,14 +96,18 @@ cancelEvent(e);
 function boxshow(e){
 var p=t=getEventTarget(e);
 while(p.nodeName!='DIV')p=p.parentNode;
-var pp=p.cloneNode(true);
-pp.style.visibility='hidden';
-pp.style.height='auto';
-p.parentNode.appendChild(pp);
-var nhe=getHeight(pp);
-pp.parentNode.removeChild(pp);
-p.style.height=nhe+'px';
+var sh=getHeight(p);
+for(var i=0,nds=p.childNodes,n=nds.length;i<n;i++)if(nds[i].nodeType==1)nds[i].style.display='block';
 t.removeAttribute('href');
+t.onclick='';
+var dh=getHeight(p);
+p.style.height=sh+'px';
+setTimeout(function(){
+	p.style.transition='height 400ms ease-out';
+	p.style.MozTransition='height 400ms ease-out';
+	p.style.WebkitTransition='height 400ms ease-out';
+	setTimeout(function(){p.style.height=dh+'px';},20);
+},20);
 cancelEvent(e);
 }
 
@@ -152,15 +162,15 @@ var p=t=getEventTarget(e);
 while(p.nodeType!=1||p.nodeName!='UL')p=p.parentNode;
 var sh=getHeight(p);
 for(var i=0,nds=p.getElementsByTagName('LI'),n=nds.length;i<n;i++)nds[i].style.display='list-item';
-t.parentNode.removeChild(t);
+t.parentNode.parentNode.removeChild(t.parentNode);
 var dh=getHeight(p);
 p.style.height=sh+'px';
 setTimeout(function(){
 	p.style.transition='height 400ms ease-out';
 	p.style.MozTransition='height 400ms ease-out';
 	p.style.WebkitTransition='height 400ms ease-out';
-	p.style.height=dh+'px';
-},1);
+	setTimeout(function(){p.style.height=dh+'px';},20);
+},20);
 cancelEvent(e);
 }
 
