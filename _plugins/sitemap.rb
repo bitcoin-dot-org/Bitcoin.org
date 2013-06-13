@@ -48,13 +48,19 @@ module Jekyll
           if /^[a-z]{2}(_[A-Z]{2})?$/.match(file1) and File.directory?(file1)
             Dir.foreach(file1) do |file2|
               next if !/\.html$/.match(file2)
+              #Ignore static redirect pages
+              data = File.read(file1+'/'+file2)
+              next if !data.index('window.location.href=').nil?
               sitemap.puts '<url>'
               sitemap.puts '  <loc>http://bitcoin.org/'+file1+'/'+file2.gsub('.html','')+'</loc>'
               sitemap.puts '</url>'
             end
           end
           next if !/\.html$/.match(file1)
-          next if file1 == 'index.html' || file1 == '404.html'
+          next if file1 == 'index.html'
+          #Ignore static redirect pages and google webmaster tools
+          data = File.read(file1)
+          next if !data.index('window.location.href=').nil? or !data.index('google-site-verification:').nil?
           sitemap.puts '<url>'
           sitemap.puts '  <loc>http://bitcoin.org/'+file1.gsub('.html','')+'</loc>'
           sitemap.puts '</url>'
