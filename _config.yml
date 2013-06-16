@@ -3,6 +3,7 @@ DOWNLOAD_VERSION: 0.8.2
 ALERT_CLASS:
   all: 
   ar: 
+  de: 
   en: 
   es: 
   fa: 
@@ -15,6 +16,7 @@ ALERT_CLASS:
 ALERT:
   all: 
   ar: 
+  de: 
   en: 
   es: 
   fa: 
@@ -25,6 +27,7 @@ ALERT:
   ru: 
 
 langsorder:
+- id: de
 - id: en
 - id: es
 - id: fr
@@ -37,6 +40,7 @@ langsorder:
 
 langs:
   ar: ألعربية
+  de: Deutsch
   en: English
   es: Español
   fa: فارسی
