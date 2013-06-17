@@ -77,10 +77,10 @@ You can both set one fallback alert for all languages and many translated alerts
 Example:
 
 ```
-ALERT_CLASS:
+ALERT:
   all: <strong>Security alert:</strong> Please upgrade to 0.8.1 as soon as possible!
   fr: <strong>Alerte de sécurité:</strong> Mettez Bitcoin à jour vers la version 0.8.1 sans délais!
-ALERT:
+ALERT_CLASS:
   all: error
   fr: error
 ```
