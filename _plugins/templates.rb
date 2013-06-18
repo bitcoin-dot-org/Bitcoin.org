@@ -1,14 +1,13 @@
 module Jekyll
 
   class TranslatePage < Page
-    def initialize(site, base, lang, src, dst)
+    def initialize(site, base, lang, srcdir, src, dstdir, dst)
       @site = site
       @base = base
-      @dir = lang
+      @dir = '/'+dstdir
       @name = dst
-
       self.process(dst)
-      self.read_yaml(File.join(base, '_templates'), src)
+      self.read_yaml(File.join(base, srcdir), src)
       self.data['lang'] = lang
     end
   end
@@ -19,20 +18,21 @@ module Jekyll
       locs = {}
       Dir.foreach('_translations') do |file|
         next if file == '.' or file == '..'
-        lang=file.split('.')[0]
+        lang = file.split('.')[0]
         locs[lang] = YAML.load_file("_translations/"+file)[lang]
       end
       #generate each translated page based on templates
       locs.each do |lang,value|
-        Dir.foreach('_templates') do |src|
-          next if src == '.' or src == '..'
-          id=src.split('.')[0]
-          dst=locs[lang]['url'][id]
+        Dir.foreach('_templates') do |file|
+          next if file == '.' or file == '..'
+          id = file.split('.')[0]
+          dst = locs[lang]['url'][id]
           next if dst.nil?
-          dst=dst+'.html'
-          site.pages << TranslatePage.new(site, site.source, lang, src, dst)
+          src = file
+          dst = dst+'.html'
+          site.pages << TranslatePage.new(site, site.source, lang, '_templates', src, lang, dst)
         end
-        site.pages << TranslatePage.new(site, site.source, lang, 'index.html', 'index.html')
+        site.pages << TranslatePage.new(site, site.source, lang, '_templates', 'index.html', lang, 'index.html')
       end
     end
   end
