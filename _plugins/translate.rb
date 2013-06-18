@@ -1,5 +1,5 @@
 require 'yaml'
-require 'open-uri'
+require 'cgi'
 
 #translate( id [,category ,lang] )
 #Return translated string using translations files

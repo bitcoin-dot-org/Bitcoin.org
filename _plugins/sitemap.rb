@@ -1,4 +1,5 @@
-require 'open-uri'
+require 'yaml'
+require 'cgi'
 
 module Jekyll
 

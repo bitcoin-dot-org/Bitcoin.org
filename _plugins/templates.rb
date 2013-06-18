@@ -1,3 +1,9 @@
+require 'yaml'
+
+#This plugin generates all translated pages using templates in
+#_templates. The final file name of each page is defined in 
+#the url section of each translations in _translations.
+
 module Jekyll
 
   class TranslatePage < Page
