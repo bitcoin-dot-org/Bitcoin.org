@@ -71,7 +71,7 @@ Any change in the english texts can be done through a pull request on github. If
 
 ### Alerts
 
-You can easily put an alert on the website by changing the ALERT and ALERT\_CLASS variables in _config.yml.  
+You can easily put an alert on the website by changing the ALERT and ALERT\_CLASS variables in _config.yml.
 You can both set one fallback alert for all languages and many translated alerts for specific languages.
 
 Example:
@@ -85,7 +85,7 @@ ALERT_CLASS:
   fr: error
 ```
 
-This will produce an english red alert box for all languages, and a translated red alert box for french language.  
+This will produce an english red alert box for all languages, and a translated red alert box for french language.
 Possible classes are: **error** (red), **info** (blue), **success** (green) and **warning** (yellow)
 
 ### Release Notes
@@ -94,7 +94,7 @@ Release notes should be placed in `_posts/releases/YEAR-MONTH-DAY-SHORTTITLE.md`
 
 ```
 ---
-layout: post
+layout: releases
 title: Bitcoin version 0.3.24 released
 src: http://sourceforge.net/mailarchive/message.php?msg_id=27771039
 category: releases
@@ -106,7 +106,7 @@ Bitcoin v0.3.24 is now available for download at
 ...
 ```
 * `SHORTTITLE` is used to construct the URL. Something like `v0.3.24` will be fine
-* `layout: post` important for Jekyll
+* `layout: releases` important for Jekyll
 * `title: ...` will be used as the title
 * `src: ...` (optional) link to full annoucement
 * `category: ...` category of post
