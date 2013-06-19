@@ -21,6 +21,9 @@ h3 .ieimg{
 #footer{
 	width:800px;
 }
+#footer div a{
+	margin-right:expression(this.parentNode.nodeName=='DIV'?'15px':'');
+}
 #content{
   width: 690px;
   overflow:hidden;
