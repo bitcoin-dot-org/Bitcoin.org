@@ -66,6 +66,13 @@ module Jekyll
           sitemap.puts '  <loc>http://bitcoin.org/'+file1.gsub('.html','')+'</loc>'
           sitemap.puts '</url>'
         end
+        #Add english alerts pages
+        Dir.foreach('_alerts') do |file|
+          next if file == '.' or file == '..'
+          sitemap.puts '<url>'
+          sitemap.puts '  <loc>http://bitcoin.org/en/alert/'+file.gsub('.html','')+'</loc>'
+          sitemap.puts '</url>'
+        end
         #Add posts
         site.posts.each do |post|
           sitemap.puts '<url>'
