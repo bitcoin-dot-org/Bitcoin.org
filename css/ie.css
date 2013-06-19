@@ -22,46 +22,65 @@ h3 .ieimg{
 	width:800px;
 }
 #content{
-  width: 690px;
-  overflow:hidden;
+	width:690px;
+	overflow:hidden;
 }
 #lang{
 	border-left:2px solid #f7f7f7;
 	border-right:2px solid #f7f7f7;
 	border-top:2px solid #f7f7f7;
 }
+
+#menusimple li{
+	/*This one is also required for IE7*/
+	zoom:1;
+	display:inline;
+}
+#menusimple li a{
+	font-family:sans-serif;
+}
+#menusimple li:hover a,
+#menusimple li.active a{
+	color:#fff;
+}
+#menusimple li ul{
+	width:180px;
+	min-width:auto;
+}
+#menusimple li ul li a:hover,
+#menusimple li ul li.active a,
+#menusimple li ul li.active a:link,
+#menusimple li ul li.active a:visited,
+#menusimple li ul li.active a:active{
+	color:#fff;
+}
+
 #menu li{
 	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;
 }
 #menu li a,#menu li a:active,#menu li a:visited,#menu li a:link{
+	font-family:sans-serif;
 	border:2px solid #f7f7f7;
 }
-#menu li a:hover,
-#menu li a:active:hover,
-#menu li a:visited:hover,
-#menu li a:link:hover,
-#menu li.active a,
-#menu li.active a:active,
-#menu li.active a:visited,
-#menu li.active a:link {
+#menu li:hover a,
+#menu li.active a{
 	color: #000;
 	background-color: #fff;
 	border: 2px solid #ebebeb;
 }
 
-#menufor li a:hover,
-#menufor li a:active:hover,
-#menufor li a:visited:hover,
-#menufor li a:link:hover,
-#menufor li.active a,
-#menufor li.active a:active,
-#menufor li.active a:visited,
-#menufor li.active a:link{
+#menufor li a,#menufor li a:active,#menufor li a:visited,#menufor li a:link{
+	font-family:sans-serif;
+}
+#menufor li:hover a,
+#menufor li.active a{
 	color:#fff;
 }
-
+#choose a,#before a,#support a{
+	font-family:sans-serif;
+}
 #choose .ieimg,
 #before .ieimg,
 #support .ieimg {

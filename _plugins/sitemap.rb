@@ -19,6 +19,13 @@ module Jekyll
         lang=file.split('.')[0]
         locs[lang] = YAML.load_file('_translations/'+file)[lang]
       end
+      #Load redirections
+      redirects = YAML.load_file('_redirects.yml')['redirects']
+      rredirects = {}
+      redirects.each do |id,value|
+        dst = value['dst']
+        rredirects[dst] = id
+      end
       #Create destination directory if does not exists
       if !File.directory?(site.dest)
         Dir.mkdir(site.dest)
@@ -31,15 +38,25 @@ module Jekyll
         #Add translated pages with their alternative in each languages
         locs['en']['url'].each do |id,value|
           locs.each do |lang,value|
+            #Don't add a page if their url is not translated or if they are a redirection
             next if locs[lang]['url'][id].nil? or locs[lang]['url'][id] == ''
+            next if redirects.has_key?(id) and ( !redirects[id].has_key?('except') or !redirects[id]['except'].has_key?(lang) )
             sitemap.puts '<url>'
             sitemap.puts '  <loc>http://bitcoin.org/'+lang+'/'+CGI::escape(locs[lang]['url'][id])+'</loc>'
             locs.each do |altlang,value|
-              next if locs[altlang]['url'][id].nil? or locs[altlang]['url'][id] == '' or altlang == lang
+              #Find appropriate alternative page even with redirections that are not fully deployed in translations
+              altid = id
+              if redirects.has_key?(id) and redirects[id].has_key?('except') and !redirects[id]['except'].has_key?(altlang)
+                altid = redirects[id]['dst']
+              end
+              if rredirects.has_key?(id)
+                altid = rredirects[id]
+              end
+              next if locs[altlang]['url'][altid].nil? or locs[altlang]['url'][altid] == '' or altlang == lang
               sitemap.puts '  <xhtml:link'
               sitemap.puts '    rel="alternate"'
               sitemap.puts '    hreflang="'+altlang+'"'
-              sitemap.puts '    href="http://bitcoin.org/'+altlang+'/'+CGI::escape(locs[altlang]['url'][id])+'" />'
+              sitemap.puts '    href="http://bitcoin.org/'+altlang+'/'+CGI::escape(locs[altlang]['url'][altid])+'" />'
             end
             sitemap.puts '</url>'
           end

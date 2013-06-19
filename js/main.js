@@ -82,6 +82,17 @@ cancelEvent(e);
 
 
 function mobileshow(e){
+if(document.getElementById('menusimple')){
+var mm=document.getElementById('menusimple');
+var ml=document.getElementById('langselect');
+var t=document.getElementById('menumobile');
+if(mm.style.display=='block'){mm.style.display='';ml.style.display='';}
+else{mm.style.display='block';ml.style.display='inline-block';}
+t.parentNode.removeChild(t);
+cancelEvent(e);
+}
+else{
+//Will be deprecated when all translation will use the new menu
 var mm=document.getElementById('menu');
 var mf=document.getElementById('menufor');
 var ml=document.getElementById('langselect');
@@ -90,6 +101,7 @@ if(mf.style.display=='block'){mf.style.display='';mm.style.display='';ml.style.d
 else{mf.style.display='block';mm.style.display='block';ml.style.display='inline-block';}
 t.parentNode.removeChild(t);
 cancelEvent(e);
+}
 }
 
 
