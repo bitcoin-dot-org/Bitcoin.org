@@ -65,24 +65,6 @@ fr:
     instanttext: "Une transaction Bitcoin est normalement propagée en quelques secondes et confirmée dans les 10 minutes suivantes. Durant ce délai, la transaction peut être considérée comme authentique mais réversible. Si vous avez réellement besoin d'utiliser les transactions instantanées, il est recommandé d'exiger de petits frais de transaction et d'utiliser un système de détection des doubles-dépenses."
     micro: "Micro paiements bons marchés"
     microtext: "Bitcoin offre les frais de transaction les plus bas pour tout type de paiement, y compris les micro-paiements. Ce qui signifie qu'il peut aussi être utilisé pour concevoir et implémenter des nouveaux services en ligne créatifs qui ne pouvaient pas exister pour des raisons financières."
-  bitcoin-for-enthusiasts:
-    title: "Bitcoin pour les passionnés - Bitcoin"
-    pagetitle: "Bitcoin pour les passionnés"
-    summary: "Bitcoin change le monde de la finance en vous donnant le contrôle de votre argent."
-    consensus: "Bitcoin est un consensus mondial"
-    consensustext: "De par sa nature libre et décentralisée, Bitcoin est le premier réseau de paiement qui fonctionne uniquement grâce à ses utilisateurs et sans autorité centrale. Même les développeurs du Bitcoin n'ont aucun pouvoir de forcer une mise à jour dans le protocole si suffisamment d'utilisateurs, de développeurs ou de mineurs sont en désaccord. <i>Vous seul</i> avez le contrôle exclusif de votre porte-monnaie."
-    network: "Une monnaie virtuelle conçue pour Internet"
-    networktext: "Bitcoin est né de l'Internet, introduisant à son passage les libertés de la monnaie physique dans le monde du web, rendant les paiements plus faciles et sécurisés dans les deux mondes. Bitcoin peut offrir des alternatives concrètes à plusieurs systèmes anciens, lourds et coûteux et il peut augmenter l'accessibilité du commerce en ligne dans les pays en voie de développement."
-    freedom: "Protéger les droits et libertés individuelles"
-    freedomtext: "Bitcoin permet à chaque personne de stocker et échanger de la valeur de façon sécurisée sur un réseau qui ne peut être saisi, manipulé ou interrompu par aucune organisation ou individu. Il offre ainsi libre accès à des outils puissants qui peuvent jouer un rôle dans la protection des droits et libertés individuelles contre plusieurs formes de corruption."
-    global: "La première devise globale et neutre"
-    globaltext: "On ne peut que difficilement trouver une monnaie dans notre histoire qui ait déjà été libre de toute influence politique ou de toute économie nationale. Le Bitcoin pourrait-il devenir la première devise globale à traverser toutes les barrières entre les nations, les politiques et les cultures pour le bénéfice du bien commun ? Tout ça semble possible. Un pour tous, et tous pour un !"
-    transparency: "Promouvoir la transparence"
-    transparencytext: "Toutes les transactions Bitcoin sont publiques, mais les propriétaires et les destinataires de ces transactions restent inconnus. Les organisations peuvent choisir de révéler à certaines personnes qu'elles possèdent certaines adresses Bitcoin, ce qui permet à toute organisation de mettre en oeuvre d'excellentes pratiques de transparence adaptées à tout besoin."
-    secure: "Rendre l'argent plus sécurisé"
-    securetext: "Grâce à un usage ingénieux de règles cryptographiques strictes, Bitcoin offre un nombre impressionnant de dispositifs de sécurité. Non seulement les bitcoins sont impossibles à contrefaire ou à usurper mais le protocole est aussi conçu pour être très résistant à une liste impressionnante d'attaques informatiques comprenant les attaques par déni de service distribué."
-    trust: "Résoudre les problèmes de confiance dans les banques"
-    trusttext: "Bitcoin offre des solutions contre plusieurs problèmes liés à la confiance dans les banques grâce la transparence comptable sélective, les preuves par signature cryptographiques et les transactions irréversibles. Bitcoin augmente aussi les risques encourus par les banquiers malhonnêtes : Aucun nouveau bitcoin ne peut être créé pour les sauver de leurs propres erreurs aux frais des citoyens."
   bitcoin-for-individuals:
     title: "Bitcoin pour les particuliers - Bitcoin"
     pagetitle: "Bitcoin pour les particuliers"
@@ -206,6 +188,24 @@ fr:
     list4: "Et bien plus encore"
     desc: "Bitcoin utilise une technologie pair à pair pour fonctionner sans autorité centrale. Le traitement des transactions et la création des bitcoins est prise en charge <b>collectivement par le réseau</b>. Par le biais de ses propriétés uniques, Bitcoin rend possible des usages prometteurs qui ne pouvaient pas être couverts par les systèmes de paiement précédents."
     license: "Le logiciel Bitcoin est un <a href=\"http://www.fsf.org/about/what-is-free-software\">logiciel libre</a> développé par la communauté et publié sous la <a href=\"http://creativecommons.org/licenses/MIT/\">licence MIT</a>."
+  innovation:
+    title: "Innovation - Bitcoin"
+    pagetitle: "Pourquoi Bitcoin change le monde"
+    summary: "Bitcoin est une innovation importante qui vous donne le contrôle de votre argent. De même que ces inventions qui semblaient impossibles jusqu'à ce que leur temps soit venu, Bitcoin est réel et il pourrait changer notre vie de tous les jours. Un large éventail de nouvelles possibilités excitantes sont à découvrir au fil des années à venir."
+    consensus: "Bitcoin est un consensus mondial"
+    consensustext: "De par sa nature libre et décentralisée, Bitcoin est le premier réseau de paiement qui fonctionne uniquement grâce à ses utilisateurs et sans autorité centrale. Même les développeurs du Bitcoin n'ont aucun pouvoir de forcer une mise à jour dans le protocole si suffisamment d'utilisateurs, de développeurs ou de mineurs sont en désaccord. <i>Vous seul</i> avez le contrôle exclusif de votre porte-monnaie."
+    network: "Une monnaie virtuelle conçue pour Internet"
+    networktext: "Bitcoin est né de l'Internet, introduisant à son passage les libertés de la monnaie physique dans le monde du web, rendant les paiements plus faciles et sécurisés dans les deux mondes. Bitcoin peut offrir des alternatives concrètes à plusieurs systèmes anciens, lourds et coûteux et il peut augmenter l'accessibilité du commerce en ligne dans les pays en voie de développement."
+    freedom: "Protéger les droits et libertés individuelles"
+    freedomtext: "Bitcoin permet à chaque personne de stocker et échanger de la valeur de façon sécurisée sur un réseau qui ne peut être saisi, manipulé ou interrompu par aucune organisation ou individu. Il offre ainsi libre accès à des outils puissants qui peuvent jouer un rôle dans la protection des droits et libertés individuelles contre plusieurs formes de corruption."
+    global: "La première devise globale et neutre"
+    globaltext: "On ne peut que difficilement trouver une monnaie dans notre histoire qui ait déjà été libre de toute influence politique ou de toute économie nationale. Le Bitcoin pourrait-il devenir la première devise globale à traverser toutes les barrières entre les nations, les politiques et les cultures pour le bénéfice du bien commun ? Tout ça semble possible. Un pour tous, et tous pour un !"
+    transparency: "Promouvoir la transparence"
+    transparencytext: "Toutes les transactions Bitcoin sont publiques, mais les propriétaires et les destinataires de ces transactions restent inconnus. Les organisations peuvent choisir de révéler à certaines personnes qu'elles possèdent certaines adresses Bitcoin, ce qui permet à toute organisation de mettre en oeuvre d'excellentes pratiques de transparence adaptées à tout besoin."
+    secure: "Rendre l'argent plus sécurisé"
+    securetext: "Grâce à un usage ingénieux de règles cryptographiques strictes, Bitcoin offre un nombre impressionnant de dispositifs de sécurité. Non seulement les bitcoins sont impossibles à contrefaire ou à usurper mais le protocole est aussi conçu pour être très résistant à une liste impressionnante d'attaques informatiques comprenant les attaques par déni de service distribué."
+    trust: "Résoudre les problèmes de confiance dans les banques"
+    trusttext: "Bitcoin offre des solutions contre plusieurs problèmes liés à la confiance dans les banques grâce la transparence comptable sélective, les preuves par signature cryptographiques et les transactions irréversibles. Bitcoin augmente aussi les risques encourus par les banquiers malhonnêtes : Aucun nouveau bitcoin ne peut être créé pour les sauver de leurs propres erreurs aux frais des citoyens."
   resources:
     title: "Ressources - Bitcoin"
     pagetitle: "Ressources sur le Bitcoin"
@@ -295,6 +295,7 @@ fr:
     summary: "Bitcoin est une nouvelle approche des paiements en ligne. De fait, certains mots nouveaux pourraient entrer dans votre dictionnaire. Ne vous en faites pas, même la radio a un jour créé de nouveaux mots."
     table: "Table des matières"
     tableaddress: "<a href=\"#[vocabulary.address]\">Adresse</a>"
+    tablebitcoin: "<a href=\"#[vocabulary.bitcoin]\">Bitcoin</a>"
     tableblockchain: "<a href=\"#[vocabulary.block-chain]\">Chaîne de bloc</a>"
     tableblock: "<a href=\"#[vocabulary.block]\">Bloc</a>"
     tablebtc: "<a href=\"#[vocabulary.btc]\">BTC</a>"
@@ -309,6 +310,8 @@ fr:
     tablewallet: "<a href=\"#[vocabulary.wallet]\">Porte-monnaie</a>"
     address: "<a name=\"[vocabulary.address]\">Adresse</a>"
     addresstxt: "Une adresse Bitcoin est <b>comme une adresse physique ou une adresse email</b>. Il s'agit de la seule information que vous avez besoin de fournir pour qu'une personne vous paie avec des bitcoins."
+    bitcoin: "<a name=\"[vocabulary.bitcoin]\">Bitcoin</a>"
+    bitcointxt: "Bitcoin - avec capitalisation, est utilisé pour décrire le concept du Bitcoin ou le réseau lui-même. Ex. \"J'ai appris sur le protocole Bitcoin aujourd'hui.\" bitcoin - sans capitalisation, est utilisé pour désigner les bitcoins en tant qu'unité de compte. Ex. \"J'ai envoyé dix bitcoins aujourd'hui.\" "
     blockchain: "<a name=\"[vocabulary.block-chain]\">Chaîne de bloc</a>"
     blockchaintxt: "La chaîne de bloc est un <b>journal public de toutes les transactions Bitcoin</b> par ordre chronologique. Celle-ci est partagée entre tous les utilisateurs du réseau Bitcoin. Elle est utilisée pour vérifier le solde des adresses Bitcoin et pour empêcher la <a href=\"#[vocabulary.double-spend]\">double-dépense</a>."
     block: "<a name=\"[vocabulary.block]\">Bloc</a>"
@@ -356,16 +359,17 @@ fr:
     blockchain: la chaîne de bloc
     blockchaintxt: (un journal de transactions public partagé)
   layout:
+    menu-intro: Introduction
     menu-bitcoin-for-individuals: Particuliers
     menu-bitcoin-for-businesses: Entreprises
     menu-bitcoin-for-developers: Développeurs
-    menu-bitcoin-for-enthusiasts: Passionnés
-    menu-bitcoin-for-press: Presse
     menu-how-it-works: "Comment ça marche"
-    menu-vocabulary: Vocabulaire
     menu-resources: Ressources
+    menu-vocabulary: Vocabulaire
     menu-community: Communauté
     menu-development: Développement
+    menu-press: Presse
+    menu-innovation: Innovation
     menu-foundation: Fondation
     menu-about: À propos
     button-wallet: "Choisissez votre porte-monnaie"
@@ -385,6 +389,8 @@ fr:
     download: telecharger
     foundation: fondation
     how-it-works: comment-ca-marche
+    innovation: innovation
+    press: presse
     resources: ressources
     secure-your-wallet: securiser-porte-monnaie
     support-bitcoin: supporter-bitcoin
@@ -393,6 +399,7 @@ fr:
   anchor:
     vocabulary:
       address: adresse
+      bitcoin: bitcoin
       block-chain: chaine-de-bloc
       block: bloc
       btc: btc
