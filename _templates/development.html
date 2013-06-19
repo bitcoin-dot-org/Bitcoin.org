@@ -40,12 +40,7 @@ id: development
 {% endcase %}
 
 {% case page.lang %}
-{% when 'ar' %}
-{% when 'es' %}
-{% when 'fa' %}
-{% when 'it' %}
-{% when 'nl' %}
-{% when 'ru' %}
+{% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
 {% else %}
 <h2>{% translate more %}</h2>
 <ul class="devprojectlist">
