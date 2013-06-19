@@ -4,24 +4,14 @@ lang: en
 id: version-history
 title: Bitcoin-Qt version history
 ---
+<link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin-Qt releases">
 <div class="versiontext">
-  <h1>Bitcoin-Qt version history</h1>
+  <h1>Bitcoin-Qt version history<a type="application/rss+xml" href="/en/rss/releases.rss"><img src="/img/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
   <ul>
-  {% for post in site.categories.releases %}
+  {% catpage_for p in site.pages reversed sort_by:date category:release %}
     <li>
-      {{ post.date | date:"%Y-%m-%d" }} - <a href="#{{ post.version }}">{{ post.title }}</a>
+      {{ p.date | date:"%Y-%m-%d" }} - <a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a>
     </li>
-  {% endfor %}
+  {% endcatpage_for %}
   </ul>
 </div>
-{% for post in site.categories.releases %}
-<div class="versiontext">
-  <h1><a name="{{ post.version }}">{{ post.title }}<br><small>{{ post.date | date:"%e %B %Y" }}</small></a></h1>
-  {% if post.src %}
-  <p>
-    <a href="{{ post.src }}">Full announcement (including signatures)</a>
-  </p>
-  {% endif %}
-  {{ post.content }}
-</div>
-{% endfor %}

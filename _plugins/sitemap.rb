@@ -90,6 +90,19 @@ module Jekyll
           sitemap.puts '  <loc>http://bitcoin.org/en/alert/'+file.gsub('.html','')+'</loc>'
           sitemap.puts '</url>'
         end
+        #Add english releases pages
+        Dir.foreach('_releases') do |file|
+          next if file == '.' or file == '..'
+          file = file.split('-')
+          next if file.length < 4
+          file.shift()
+          file.shift()
+          file.shift()
+          file = file.join('-')
+          sitemap.puts '<url>'
+          sitemap.puts '  <loc>http://bitcoin.org/en/release/'+file.gsub('.md','').gsub('.html','')+'</loc>'
+          sitemap.puts '</url>'
+        end
         #Add posts
         site.posts.each do |post|
           sitemap.puts '<url>'
