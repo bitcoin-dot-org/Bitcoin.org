@@ -61,6 +61,9 @@ module Jekyll
           dst = redirect['dst']
           dst = locs[lang]['url'][dst]
           next if dst.nil?
+          if !File.directory?(site.dest + '/' + lang)
+            Dir.mkdir(site.dest + '/' + lang)
+          end
           File.open(site.dest + '/' + lang + '/' + src, 'w+') do |file|
             file.puts '<!DOCTYPE HTML>'
             file.puts '<html><head>'
