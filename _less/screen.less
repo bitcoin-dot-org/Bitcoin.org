@@ -149,7 +149,7 @@ li p{
 }
 
 #head{
-	margin:22px 0px 10px 0px;
+	margin:30px 0px 30px 0px;
 }
 #head>div{
 	max-width:1050px;
@@ -183,7 +183,7 @@ li p{
 #lang{
 	position:absolute;
 	right:5px;
-	top:0px;
+	top:5px;
 	height:30px;
 	border-left:2px solid transparent;
 	border-right:2px solid transparent;
@@ -238,6 +238,82 @@ li p{
 	display:none;
 }
 
+#menusimple{
+	margin:0px;
+	position:absolute;
+	top:8px;
+	left:250px;
+	padding:0px;
+	height:35px;
+}
+#menusimple li{
+	list-style:none;
+	display:inline-block;
+	position:relative;
+	padding:0px;
+	margin:0px 6px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+}
+#menusimple li:first-child,#menusimple li:first-child+li{
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+}
+#menusimple li a{
+	font-family:'Ubuntu', sans-serif;
+	font-weight:300;
+	font-size:110%;
+	display:block;
+	text-decoration:none;
+	padding:6px 10px 3px 10px;
+	color:#2c6fad;
+	white-space:nowrap;
+}
+#menusimple li:hover,
+#menusimple li.active{
+	background-color:#2c6fad;
+}
+#menusimple li:hover a,
+#menusimple li.active a{
+	color:#fff;
+}
+#menusimple li ul{
+	display:none;
+	position:absolute;
+	background-color:#fff;
+	border:1px solid #2c6fad;
+	min-width:120%;
+	padding:5px 0px;
+	margin:0px;
+}
+#menusimple li:hover ul{
+	display:block;
+}
+#menusimple li ul li{
+	padding:0px;
+	margin:0px;
+	display:block;
+	width:100%;
+	border-radius:0px;
+	-webkit-border-radius:0px;
+}
+#menusimple li ul li a,
+#menusimple li ul li a:active,
+#menusimple li ul li a:visited,
+#menusimple li ul li a:link{
+	display:block;
+	color:#2c6fad;
+	font-size:100%;
+	width:100%;
+	padding:6px 10px 3px 10px;
+}
+#menusimple li ul li:hover a,
+#menusimple li ul li.active a{
+	color:#fff;
+}
+
 #menufor{
 	margin:0px;
 	position:absolute;
@@ -275,7 +351,7 @@ li p{
 
 #menu{
 	padding:0px;
-	margin:12px auto 0px 32px;
+	margin:12px auto -12px 32px;
 }
 #menu li{
 	list-style:none;
@@ -333,7 +409,7 @@ li p{
 
 #choose a,#before a,#support a{
 	font-family:'Ubuntu', sans-serif;
-	font-weight:700;
+	font-weight:300;
 	padding:10px 8px 10px 48px;
 	color:#fff;
 	display:block;
@@ -847,9 +923,6 @@ li p{
 	#head{
 		margin:0px;
 	}
-	#head>div{
-		overflow:hidden;
-	}
 	#langselect{
 		background-color:transparent;
 		border:0px;
@@ -870,8 +943,27 @@ li p{
 		background-repeat:no-repeat;
 		background-position:center center;
 	}
-	#lang,#menufor,#menu{
+	#lang,
+	#menufor,
+	#menu,
+	#menusimple{
 		display:none;
+	}
+	#menusimple{
+		position:static;
+		bottom:0px;
+		margin:0px 0px 10px 0px;
+		height:auto;
+	}
+	#menusimple li a{
+		padding:6px 6px 3px 6px;
+	}
+	#menusimple li{
+		margin:6px;
+		position:static;
+	}
+	#menusimple li ul{
+		min-width:140px;
 	}
 	#menufor{
 		position:static;
