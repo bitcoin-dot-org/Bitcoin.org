@@ -5,6 +5,19 @@ id: community
 <h1>{% translate pagetitle %}</h1>
 <ul class="resources">
 <li>{% translate foundation %}</li>
+{% case page.lang %}
+{% when 'ar' %}
+{% when 'de' %}
+{% when 'es' %}
+{% when 'fa' %}
+{% when 'fr' %}
+{% when 'it' %}
+{% when 'nl' %}
+{% when 'pl' %}
+{% when 'ru' %}
+{% else %}
+<li>{% translate wikiportal %}</li>
+{% endcase %}
 <li>{% translate stackexchange %}</li>
 <li>{% translate bitcointalk %}</li>
 <li>{% translate ircjoin %}
