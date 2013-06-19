@@ -1,0 +1,14 @@
+redirects:
+  bitcoin-for-enthusiasts:
+    dst: innovation
+    except:
+      ar: true
+      es: true
+      fa: true
+      fr: true
+      it: true
+      nl: true
+      pl: true
+      ru: true
+  bitcoin-for-press:
+    dst: press

@@ -41,7 +41,7 @@ You can import all translations (complete and incomplete) from transifex using t
     tx set --auto-remote https://www.transifex.com/projects/p/bitcoinorg/
     tx pull -a -s --skip
     
-Then, you can overwrite any specific translation in the _translations folder by one of these files. You might also need to make sure that each .html files (including the layout) don't serve outdated content for those languages. You should also make sure that no urls or anchor has been changed.
+Then, you can overwrite any specific translation in the _translations folder by one of these files. You might also need to make sure that each .html files (in _layouts, _templates and _redirects.yml) don't serve outdated content for those languages. You should also make sure that no urls or anchor has been changed by translators.
 
 ### Update source english strings
 
