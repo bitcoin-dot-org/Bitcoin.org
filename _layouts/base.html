@@ -54,7 +54,7 @@ menu:
     <a href="#" id="menumobile" onclick="mobileshow(event);"></a>
     
     {% case page.lang %}
-    {% when 'ar' or 'de' or 'es' or 'fa' or 'it' or 'nl' or 'pl' or 'ru' %}
+    {% when 'ar' or 'de' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
     <ul id="menufor">
     {% for link in page.menufor %}{% assign id = link.id%}{% capture url %}/{{ page.lang }}/{% translate {{id}} url %}{% endcapture %}
       <li{% if page.id == id %} class="active"{% endif %}><a href="{{ url }}">{% translate menu-{{id}} layout %}</a></li>

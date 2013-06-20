@@ -65,24 +65,6 @@ pl:
     instanttext: "Transakcja Bitcoin jest zwykle wykonana w ciągu kilku sekund oraz potwierdzona w ciągu 10 minut. Przed upływem tego czasu transakcja może zostać uznana za autentyczną lecz odwracalną. Rekomendujemy byś zapytał o niewielką opłatę za transakcję oraz użycie systemu detekcji podwójnego wydatkowania."
     micro: "Tanie mikro-płatności"
     microtext: "Bitcoin oferuje najniższe opłaty za przeprowadzenie dowolnego rodzaju transakcji włączając w to mikro-płatności. To oznacza, że może zostać użyty przy zaplanowaniu oraz budowie nowego kreatywnego serwisu online który wcześniej nie miał racji bytu ze względu na ograniczenia finansowe."
-  bitcoin-for-enthusiasts:
-    title: "Bitcoin dla Entuzjastów - Bitcoin"
-    pagetitle: "Bitcoin dla Entuzjastów"
-    summary: "Bitcoin zmienia świat finansów poprzez oddanie tobie kontroli nad twoimi pieniędzmi."
-    consensus: "Bitcoin jest porozumieniem ogólnoświatowym"
-    consensustext: "Ze względu na swój zdecentralizowany model Bitcoin jest pierwszym systemem płatności nie posiadającym centralnej administracji. Nawet twórcy Bitcoin nie mają możliwości na wykonanie zmian w protokole jeśli wystarczająca grupa użytkowników czy programistów się na to nie zgodzi. <i>Ty</i> posiadasz kontrolę nad swoją portmonetką."
-    network: "Cyfrowe pieniądze zarobione przez Internet"
-    networktext: "Bitcoin powstał poprzez Internet uwalniając świat wirtualny od fizycznej gotówki co przynosi ze sobą łatwiejsze dokonywanie płatności w obu światach. Bitcoin oferuje alternatywę dla uprzednich nieefektywnych oraz kosztownych systemów oraz może zwiększyć dostępność biznesu prowadzonego przez Internet w krajach rozwijających się."
-    freedom: "Ochrona praw i wolności jednostki"
-    freedomtext: "Bitcoin pozwala ludziom na bezpieczne przechowywanie oraz wymianę zasobów które nie mogą być odebrane, zmanipulowane czy zatrzymane przez żadną organizację czy pojedynczą osobę. Daje w ten sposób użytkownikom wiele potężnych narzędzi chroniących jednostkę przed różnymi rodzajami korupcji."
-    global: "Pierwsza neutralna i globalna waluta"
-    globaltext: "Nie często w naszej historii pieniądze były odseparowane od ekonomii kraju czy systemu politycznego. Czy Bitcoin ma szanse stać się pierwszą globalną walutą która przekracza wszystkie granice pomiędzy krajami, polityką czy kulturami dla wspólnego dobra? Z pewnością wygląda że tak się może stać.\nJeden za wszystkich i wszyscy za jednego!"
-    transparency: "Promocja przejrzystości"
-    transparencytext: "Wszystkie transakcje Bitcoin są jawne, ale dokonujący transakcji czy je otrzymujący już nie. Organizacje mogą wybrać by ujawnić posiadanie części adresów Bitcoin dla swoich członków pozwalając im na wprowadzenie wysokiego poziomu przejrzystości."
-    secure: "Zabezpieczanie pieniędzy"
-    securetext: "Dzięki przemyślanemu użyciu rygorystycznych zasad kryptografii Bitcoin oferuje wspaniałą listę elementów bezpieczeństwa. Nie tylko, że nie ma możliwości podrobienia czy imitowania bitcoin, ale również protokół jest bardzo odporny na imponującą listę ataków włączając w to ataki polegające na zawieszeniu pracy systemu."
-    trust: "Rozwiązanie problemów z wiarą w banki"
-    trusttext: "Bitcoin oferuje rozwiązania dla wielu problemów z zaufaniem które są plagą w bankach poprzez wybiórczą transparentność księgowości, udowadnianie podpisów czy nieodwracalne transakcje. To także zwiększa ryzyko dla działania nieuczciwych bankierów: bitcoiny nie mogą być wykreowane by oszczędzić ich od ich własnych pomyłek kosztem pozostałych ludzi."
   bitcoin-for-individuals:
     title: "Bitcoin dla osób prywatnych - Bitcoin"
     pagetitle: "Bitcoin dla osób prywatnych"
@@ -206,6 +188,24 @@ pl:
     list4: "I wiele więcej"
     desc: "Bitcoin używa technologi P2P by operować bez centralnej administracji; zarządzanie transakcjami oraz wydawanie bitcoin jest <b>współprowadzone przez sieć</b>. Poprzez wiele unikalnych właściwości Bitcoin pozwala na ekscytujące zastosowania które nie mogły być pokryte poprzez uprzednie systemy płatności."
     license: "Aplikacja jest tworzona przez społeczność jako <a href=\"http://www.fsf.org/about/what-is-free-software\">darmowy projekt o otwartym kodzie</a> źródłowym opublikowanym na zasadach <a href=\"http://creativecommons.org/licenses/MIT/\">licencji MIT</a>."
+  innovation:
+    title: "Innowacje - Bitcoin"
+    pagetitle: "Dlaczego Bitcoin zmienia świat"
+    summary: "Bitcoin to przełomowy wynalazek który oddaje tobie kontrolę nad twoimi pieniędzmi. Tak jak i z wieloma innymi odkryciami które wydawały się niemożliwe do momentu aż nadszedł ich czas. Bitcoin jest rzeczywistością i może zmienić nasze życie codzienne. Szeroki zakres nowych możliwości nadal jest do odkrycia w nadchodzących latach."
+    consensus: "Bitcoin jest porozumieniem ogólnoświatowym"
+    consensustext: "Ze względu na swój zdecentralizowany model Bitcoin jest pierwszym systemem płatności nie posiadającym centralnej administracji. Nawet twórcy Bitcoin nie mają możliwości na wykonanie zmian w protokole jeśli wystarczająca grupa użytkowników czy programistów się na to nie zgodzi. <i>Ty</i> posiadasz kontrolę nad swoją portmonetką."
+    network: "Cyfrowe pieniądze zarobione przez Internet"
+    networktext: "Bitcoin powstał poprzez Internet uwalniając świat wirtualny od fizycznej gotówki co przynosi ze sobą łatwiejsze dokonywanie płatności w obu światach. Bitcoin oferuje alternatywę dla uprzednich nieefektywnych oraz kosztownych systemów oraz może zwiększyć dostępność biznesu prowadzonego przez Internet w krajach rozwijających się."
+    freedom: "Ochrona praw i wolności jednostki"
+    freedomtext: "Bitcoin pozwala ludziom na bezpieczne przechowywanie oraz wymianę zasobów które nie mogą być odebrane, zmanipulowane czy zatrzymane przez żadną organizację czy pojedynczą osobę. Daje w ten sposób użytkownikom wiele potężnych narzędzi chroniących jednostkę przed różnymi rodzajami korupcji."
+    global: "Pierwsza neutralna i globalna waluta"
+    globaltext: "Nie często w naszej historii pieniądze były odseparowane od ekonomii kraju czy systemu politycznego. Czy Bitcoin ma szanse stać się pierwszą globalną walutą która przekracza wszystkie granice pomiędzy krajami, polityką czy kulturami dla wspólnego dobra? Z pewnością wygląda że tak się może stać.\nJeden za wszystkich i wszyscy za jednego!"
+    transparency: "Promocja przejrzystości"
+    transparencytext: "Wszystkie transakcje Bitcoin są jawne, ale dokonujący transakcji czy je otrzymujący już nie. Organizacje mogą wybrać by ujawnić posiadanie części adresów Bitcoin dla swoich członków pozwalając im na wprowadzenie wysokiego poziomu przejrzystości."
+    secure: "Zabezpieczanie pieniędzy"
+    securetext: "Dzięki przemyślanemu użyciu rygorystycznych zasad kryptografii Bitcoin oferuje wspaniałą listę elementów bezpieczeństwa. Nie tylko, że nie ma możliwości podrobienia czy imitowania bitcoin, ale również protokół jest bardzo odporny na imponującą listę ataków włączając w to ataki polegające na zawieszeniu pracy systemu."
+    trust: "Rozwiązanie problemów z wiarą w banki"
+    trusttext: "Bitcoin oferuje rozwiązania dla wielu problemów z zaufaniem które są plagą w bankach poprzez wybiórczą transparentność księgowości, udowadnianie podpisów czy nieodwracalne transakcje. To także zwiększa ryzyko dla działania nieuczciwych bankierów: bitcoiny nie mogą być wykreowane by oszczędzić ich od ich własnych pomyłek kosztem pozostałych ludzi."
   resources:
     title: "Zasoby - Bitkoin"
     pagetitle: "Zasoby bitcoin"
@@ -295,6 +295,7 @@ pl:
     summary: "Bitcoin zapewnia nową metodę dokonywania opłat i jako takie może spowodować że nowe słowa zostaną dodane do słownika. Nie przejmuj się nawet skromna telewizja utworzyła nowe słowa!"
     table: "Spis zawartości"
     tableaddress: "<a href=\"#[vocabulary.address]\">Adres</a>"
+    tablebitcoin: "<a href=\"#[vocabulary.bitcoin]\">Bitcoin</a>"
     tableblockchain: "<a href=\"#[vocabulary.block-chain]\">Łańcuch Bloków</a>"
     tableblock: "<a href=\"#[vocabulary.block]\">Blok</a>"
     tablebtc: "<a href=\"#[vocabulary.btc]\">BTC</a>"
@@ -309,6 +310,8 @@ pl:
     tablewallet: "<a href=\"#[vocabulary.wallet]\">Portfel</a>"
     address: "<a name=\"[vocabulary.address]\">Adres</a>"
     addresstxt: "Adres Bitcoin jest <b>jak adres fizyczny lub e-mail</b>. Jest to jedyna informacja jaką musisz posiadać by ktoś zapłacił ci za pomocą Bitcoin."
+    bitcoin: "<a name=\"[vocabulary.bitcoin]\">Bitcoin</a>"
+    bitcointxt: "Bitcoin - pisany z dużej litery w przypadku opisywania koncepcji Bitcoin lub sieci jako całości. Np. \"Uczyłem się dziś o protokole Bitcoin.\" bitcoin - z małej litery jest używany by opisać bitcoiny jako jednostka obrachunkowa. Np. \"Wysłałem dziś dziesięć bitcoinów.\""
     blockchain: "<a name=\"[vocabulary.block-chain]\">Łańcuch Bloków</a>"
     blockchaintxt: "Łańcuch bloków jest <b>publicznym zapisem wszystkich transakcji Bitcoin</b>, w kolejności chronologicznej. Łańcuch ten jest współdzielony pomiędzy wszystkimi użytkownikami Bitcoin. Jest używany do sprawdzenia bilansu adresu Bitcoin oraz przeciwdziałania <a href=\"#[vocabulary.double-spend]\">podwójnemu wydatkowaniu</a>."
     block: "<a name=\"[vocabulary.block]\">Blok</a>"
@@ -356,16 +359,17 @@ pl:
     blockchain: Łańcuch kluczy
     blockchaintxt: (współdzielony publiczny zapis transakcji)
   layout:
+    menu-intro: Wprowadzenie
     menu-bitcoin-for-individuals: Osoby prywatne
     menu-bitcoin-for-businesses: Firmy
     menu-bitcoin-for-developers: Deweloperzy
-    menu-bitcoin-for-enthusiasts: Entuzjaści
-    menu-bitcoin-for-press: Prasa
     menu-how-it-works: "Jak to działa"
-    menu-vocabulary: Słownik
     menu-resources: Zasoby
+    menu-vocabulary: Słownik
     menu-community: Społeczność
     menu-development: Rozwój
+    menu-press: Prasa
+    menu-innovation: Innowacje
     menu-foundation: Fundacja
     menu-about: O bitcoinie
     button-wallet: "Wybierz swój portfel"
@@ -385,6 +389,8 @@ pl:
     download: pobieranie
     foundation: fundacja
     how-it-works: jak-to-dziala
+    innovation: innowacje
+    press: 
     resources: zasoby
     secure-your-wallet: zabezpiecz-swoj-portfel
     support-bitcoin: wesprzyj-bitcoin
@@ -393,6 +399,7 @@ pl:
   anchor:
     vocabulary:
       address: adres
+      bitcoin: bitcoin
       block-chain: lancuch-blokow
       block: blok
       btc: btc
