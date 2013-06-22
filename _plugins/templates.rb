@@ -53,6 +53,9 @@ module Jekyll
         end
         site.pages << TranslatePage.new(site, site.source, lang, '_templates', 'index.html', lang, 'index.html')
         #Generate each redirection page based on _redirects.yml
+        if !File.directory?(site.dest)
+          Dir.mkdir(site.dest)
+        end
         redirects.each do |id,redirect|
           next if redirect.has_key?('except') and redirect['except'].has_key?(lang)
           src = locs[lang]['url'][id]
