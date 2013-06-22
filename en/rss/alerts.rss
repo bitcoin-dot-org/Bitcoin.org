@@ -10,12 +10,12 @@
 		<url>http://bitcoin.org/img/logo_rss.png</url>
 		<link>http://bitcoin.org/en/alerts</link>
 	</image>
-	{% catpage_for p in site.pages reversed sort_by:date category:alert %}
+	{% filter_for p in site.pages reversed sort_by:date category:alert %}
         <item>
             <title>{{ p.title }}</title>
             <link>http://bitcoin.org{{ p.url | replace:'.html','' }}</link>
             <pubDate>{{ p.date | date: "%a, %d %b %Y" }}</pubDate>
         </item>
-	{% endcatpage_for %}
+	{% endfilter_for %}
 </channel>
 </rss>

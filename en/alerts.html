@@ -7,25 +7,25 @@ title: Network status and alerts - Bitcoin
 <link rel="alternate" type="application/rss+xml" href="/en/rss/alerts.rss" title="Bitcoin network status and alerts">
 <div class="versiontext">
   <h1>Network status and alerts<a type="application/rss+xml" href="/en/rss/alerts.rss"><img src="/img/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
-  {% assign active = false %}{% catpage_for p in site.pages reversed sort_by:date category:alert %}{% if p.active == true %}{% assign active = true %}{% endif %}{% endcatpage_for %}
+  {% assign active = false %}{% filter_for p in site.pages reversed sort_by:date category:alert %}{% if p.active == true %}{% assign active = true %}{% endif %}{% endfilter_for %}
   {% if active == false %}
   <div class="alertstatusinactive">There is no ongoing event on the Bitcoin network.</div>
   {% else %}
   <div class="alertstatusactive"">The following network event is ongoing.</div>
   <ul class="alertsactive">
-  {% catpage_for p in site.pages reversed sort_by:date category:alert %}{% if p.active == true %}
+  {% filter_for p in site.pages reversed sort_by:date category:alert %}{% if p.active == true %}
     <li>
       {{ p.date | date:"%Y-%m-%d" }} - <a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a>
     </li>
-  {% endif %}{% endcatpage_for %}
+  {% endif %}{% endfilter_for %}
   </ul>
   {% endif %}
   <ul class="alertsinactive">
-  {% catpage_for p in site.pages reversed sort_by:date category:alert %}{% if p.active == false %}
+  {% filter_for p in site.pages reversed sort_by:date category:alert %}{% if p.active == false %}
     <li>
       {{ p.date | date:"%Y-%m-%d" }} - <a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a>
     </li>
-  {% endif %}{% endcatpage_for %}
+  {% endif %}{% endfilter_for %}
   </ul>
   <p>See the complete <a href="https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures">CVE list</a>.</p>
 </div>

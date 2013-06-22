@@ -1,6 +1,8 @@
-#catpage_for allows to loop in site.pages sorted by custom page
-#variables and filtered by page.category.
-#Example : {% catpage_for p in site.pages sort_by:date category:release %}
+#filter_for allows to loop in site.pages sorted and filtered
+#by custom page variables. Example :
+#{% filter_for p in site.pages sort_by:date category:release lang:{{page.lang}} %}
+#  ..
+#{% endfilter_for %}
 
 module Jekyll
   module SortedForImpl
@@ -8,17 +10,23 @@ module Jekyll
       sorted_collection = collection_to_sort context
       return if sorted_collection.empty?
       sort_attr = @attributes['sort_by']
-      category_attr = @attributes['category']
-      #filter page by given category
+      @attributes.delete('sort_by')
+      #filter page by given attributes
       s = []
       for x in sorted_collection
-        if x.to_liquid.has_key?('category') && x.to_liquid['category'] == category_attr
+        catch :root do
+          @attributes.each do |at,atval|
+            atval = Liquid::Template.parse(atval).render context
+            throw :root unless x.to_liquid.has_key?(at) and x.to_liquid[at] == atval
+          end
           s.push(x)
         end
       end
       sorted_collection = s
       #sort collection by given variable
-      sorted_collection = sorted_collection.sort_by { |i| i.to_liquid[sort_attr] }
+      if sorted_collection.length > 1
+        sorted_collection = sorted_collection.sort_by { |i| i.to_liquid[sort_attr] }
+      end
       #return modified array
       original_name = @collection_name
       result = nil
@@ -41,9 +49,9 @@ module Jekyll
     end
  
     def end_tag
-      'endcatpage_for'
+      'endfilter_for'
     end
   end
 end
  
-Liquid::Template.register_tag('catpage_for', Jekyll::SortedForTag)
+Liquid::Template.register_tag('filter_for', Jekyll::SortedForTag)
