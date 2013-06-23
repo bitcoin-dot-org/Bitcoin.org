@@ -37,8 +37,13 @@ module Jekyll
         lang = file.split('.')[0]
         locs[lang] = YAML.load_file("_translations/"+file)[lang]
       end
-      #Load redirections
-      redirects = YAML.load_file('_redirects.yml')['redirects']
+      #Load redirections files
+      redirects = {}
+      Dir.foreach('_redirects') do |file|
+        next if file == '.' or file == '..'
+        id = file.split('.')[0]
+        redirects[id] = YAML.load_file("_redirects/" + file)
+      end
       #Generate each translated page based on templates
       locs.each do |lang,value|
         Dir.foreach('_templates') do |file|

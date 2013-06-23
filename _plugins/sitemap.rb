@@ -20,11 +20,13 @@ module Jekyll
         locs[lang] = YAML.load_file('_translations/'+file)[lang]
       end
       #Load redirections
-      redirects = YAML.load_file('_redirects.yml')['redirects']
+      redirects = {}
       rredirects = {}
-      redirects.each do |id,value|
-        dst = value['dst']
-        rredirects[dst] = id
+      Dir.foreach('_redirects') do |file|
+        next if file == '.' or file == '..'
+        id = file.split('.')[0]
+        redirects[id] = YAML.load_file("_redirects/" + file)
+        rredirects[redirects[id]['dst']] = id
       end
       #Create destination directory if does not exists
       if !File.directory?(site.dest)
@@ -44,12 +46,13 @@ module Jekyll
             sitemap.puts '<url>'
             sitemap.puts '  <loc>http://bitcoin.org/'+lang+'/'+CGI::escape(locs[lang]['url'][id])+'</loc>'
             locs.each do |altlang,value|
-              #Find appropriate alternative page even with redirections that are not fully deployed in translations
               altid = id
-              if redirects.has_key?(id) and redirects[id].has_key?('except') and !redirects[id]['except'].has_key?(altlang)
+              #If there is a redirection from this page, use the destination as alternate url
+              if redirects.has_key?(id) and ( !redirects[id].has_key?('except') or !redirects[id]['except'].has_key?(altlang) )
                 altid = redirects[id]['dst']
               end
-              if rredirects.has_key?(id)
+              #If there is a disabled redirection to this page, point to the source as alternate url
+              if rredirects.has_key?(id) and redirects[rredirects[id]].has_key?('except') and redirects[rredirects[id]]['except'].has_key?(altlang)
                 altid = rredirects[id]
               end
               next if locs[altlang]['url'][altid].nil? or locs[altlang]['url'][altid] == '' or altlang == lang
