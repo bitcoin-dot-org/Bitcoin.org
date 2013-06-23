@@ -66,6 +66,22 @@ id: secure-your-wallet
 <p>{% translate offlinetmptracetxt %}</p>
 </div>
 
+{% case page.lang %}
+{% when 'ar' %}
+{% when 'de' %}
+{% when 'es' %}
+{% when 'fa' %}
+{% when 'fr' %}
+{% when 'it' %}
+{% when 'nl' %}
+{% when 'pl' %}
+{% when 'ru' %}
+{% else %}
+<h2>{% translate hardwarewallet %}</h2>
+<p>{% translate hardwarewallettxt %}</p>
+<p>{% translate hardwarewalletsoon %}<br><a href="http://bitcointrezor.com/">Trezor</a> - ButterflyLabs BitSafe</p>
+{% endcase %}
+
 <h2>{% translate offlinemulti %}</h2>
 <p>{% translate offlinemultitxt %}</p>
 
