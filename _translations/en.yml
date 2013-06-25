@@ -160,7 +160,7 @@ en:
     notelicense: "Bitcoin-Qt is a community-driven <a href=\"http://www.fsf.org/about/what-is-free-software\">free open-source</a> project, released under the <a href=\"http://creativecommons.org/licenses/MIT/\">MIT license</a>."
     notesync: "<b>Note</b> : Bitcoin-Qt initial sync can take a day to complete. You should make sure that you have enough bandwidth and storage for the full <a href=\"http://blockchain.info/charts/blocks-size\">blockchain size</a>."
   events:
-    title: "Conference and events - Bitcoin"
+    title: "Conferences and events - Bitcoin"
     pagetitle: "Conferences and events"
     pagedesc: "Find interesting events and conferences held by different organizers all over the world."
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitcoin meetups on BitcoinTalk</a>"
