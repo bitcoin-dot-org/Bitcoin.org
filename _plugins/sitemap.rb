@@ -106,12 +106,6 @@ module Jekyll
           sitemap.puts '  <loc>http://bitcoin.org/en/release/'+file.gsub('.md','').gsub('.html','')+'</loc>'
           sitemap.puts '</url>'
         end
-        #Add posts
-        site.posts.each do |post|
-          sitemap.puts '<url>'
-          sitemap.puts '  <loc>http://bitcoin.org'+post.url.gsub('.html','')+'</loc>'
-          sitemap.puts '</url>'
-        end
         #Close sitemap
         sitemap.puts '</urlset>'
       end
