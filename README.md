@@ -133,6 +133,19 @@ Bitcoin v0.3.24 is now available for download at
 * `title: ...` will be used as the title
 * `src: ...` (optional) link to full annoucement
 
+### Events
+
+Events should be placed in `_events/YYYY-MM-DD-SHORTTITLE.md` and adhere to this format:
+
+```
+---
+title: "Bitcoin 2013 The future of payments"
+city: "San Jose"
+country: "United States"
+link: "http://bitcoin2013.com/"
+---
+```
+
 ### Aliases for contributors
 
 Aliases for contributors are defined in ```_config.yml```.
