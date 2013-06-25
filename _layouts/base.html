@@ -80,6 +80,7 @@ menu:
           <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a></li>
           <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
           <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
+          {% case page.lang %}{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' %}{% else %}<li{% if page.id == 'events' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>{% endcase %}
           {% case page.lang %}{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' %}{% else %}<li{% if page.id == 'press' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a></li>{% endcase %}
         </ul>
       </li>

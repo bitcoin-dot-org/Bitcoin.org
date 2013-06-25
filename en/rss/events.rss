@@ -1,0 +1,21 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+	<title>Bitcoin conferences and events</title>
+	<link>http://bitcoin.org/en/events</link>
+	<description>This RSS feed allows to follow Bitcoin events and conferences.</description>
+	<image>
+		<url>http://bitcoin.org/img/logo_rss.png</url>
+		<link>http://bitcoin.org/en/events</link>
+	</image>
+	{% filter_for p in site.pages sort_by:date category:event %}
+        <item>
+            <title>{{ p.title }}, {{ p.city }} - {{ p.country }}</title>
+            <link>{{ p.link }}</link>
+            <pubDate>{{ p.date | date: "%a, %d %b %Y" }}</pubDate>
+        </item>
+	{% endfilter_for %}
+</channel>
+</rss>
