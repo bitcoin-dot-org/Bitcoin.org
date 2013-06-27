@@ -104,7 +104,15 @@ menu:
         <a href="/{{ page.lang }}/{% translate support-bitcoin url %}"><img src="/img/but_involve.svg" alt="Icon">{% translate button-support layout %}</a>
       </div>
     </div>
-    <div id="footer"><div><a href="/en/alerts">Network Status</a><span>{% translate footer layout %}</span></div></div>
+    <div id="footer"><div>
+    <a href="/en/alerts">Network Status</a>
+    {% case page.lang %}
+    {% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' %}
+    {% else %}
+    <a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a>
+    {% endcase %}
+    <span>{% translate footer layout %}</span>
+    </div></div>
   </div>
   <script type="text/javascript">svgfallback();</script>
 </body>
