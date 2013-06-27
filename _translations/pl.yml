@@ -75,16 +75,17 @@ pl:
     internationaltext: "Bitcoiny mogą zostać przelane pomiędzy Afryką oraz Kanadą w przeciągu 10 minut. W procesie nie uczestniczy bank który by spowolnił przelew, zażądał skandalicznej opłaty czy wstrzymał transakcję. Możesz dokonać przelewu swojemu sąsiadowi dokładnie tak samo jak byś dokonał płatności swojemu krewnemu za granicą."
     simple: "Zadziała gdziekolwiek jesteś o dowolnej porze"
     simpletext: "Tak jak w przypadku poczty elektronicznej nie musisz zmuszać swojej rodziny by używała identycznego programu czy dostawcy. To nie jest problem gdyż wszystkie programy są ze sobą kompatybilne gdyż używają tej samej otwartej technologii. Sieć Bitcoin nigdy nie śpi, nawet na wakacjach!"
-    secure: "Bezpieczeństwo Transakcji"
-    securetext: "Transakcje zawarte poprzez Bitcoin są chronione kryptografią klasy wojskowej. Nikt nie może dokonać płatności za ciebie lub pobrać od ciebie pieniędzy bez posiadania kopii twojego portfelu. Także tak długo jak tylko będziesz postępował zgodnie z zasadami <a href=\"#secure-your-wallet#\">ochrony swojego portfelu</a> to Bitcoin będzie zapewniał odpowiedni poziom bezpieczeństwa przeciw szeregu różnym rodzajom oszustw."
+    secure: "Bezpieczeństwo i kontrola nad twoimi pieniędzmi"
+    securetext: "Transakcje zawarte poprzez Bitcoin są chronione kryptografią klasy wojskowej. Nikt nie może dokonać płatności za ciebie lub pobrać od ciebie pieniędzy. Także tak długo jak tylko będziesz postępował zgodnie z zasadami <a href=\"#secure-your-wallet#\">ochrony swojej portmonetki</a> to Bitcoin będzie zapewniał odpowiedni poziom bezpieczeństwa przeciw szeregu różnym rodzajom oszustw."
     lowfee: "Niemalże darmowy"
     lowfeetext: "Bitcoin pozwala byś mógł wysyłać oraz odbierać płatności bardzo niskim kosztem. Z wyjątkiem przypadków szczególnych jak mikro-płatności nie ma odgórnie wymaganej opłaty, niemniej możesz dokonać niewielkiej dobrowolnej płatności by przyspieszyć priorytet dla swojej transakcji oraz wynagrodzić ludzi którzy obsługują sieć Bitcoin."
-    anonymous: "Pseudo-anonimowe transakcje online"
-    anonymoustext: "Anonimowe płatności są codziennością gdyż większość dokonywanych transakcji jest wykonywana bez potrzeby podania stosownej identyfikacji. Bitcoin wprowadza identyczną wolność do świata online. Pozwala tobie na opłacenie serwisów oraz dokonanie dotacji bez obawy o prześwietlenie dokonanej transakcji. Jednakże proszę zauważ by osiągnąć <a href=\"#you-need-to-know#\"><b>pełną anonimowość wymaga to dodatkowego wysiłku</b></a>."
+    anonymous: "Chroń swoją tożsamość"
+    anonymoustext: "Wraz z Bitcoinem nie istnieje żaden numer karty kredytowej który mógłby posłużyć złośliwym osobom by móc się pod ciebie podszyć. W zasadzie jest nawet możliwe by dokonać płatności bez zdradzania swojej tożsamości tak jak z prawdziwymi pieniędzmi. Powinieneś jednak pamiętać, że pewne kroki są konieczne by <a href=\"#you-need-to-know#\">ochronić swoją prywatność</a>."
   community:
     title: "Społeczność - Bitcoin"
     pagetitle: "Społeczności Bitcoin"
     foundation: "<a href=\"https://bitcoinfoundation.org/forum/\">Forum Fundacji Bitcoin (tylko dla członków)</a>"
+    wikiportal: "<a href=\"https://en.bitcoin.it/wiki/Bitcoin:Community_portal\">Portal społecznościowy - Bitcoin Wiki</a>"
     stackexchange: "<a href=\"http://bitcoin.stackexchange.com/\">Bitcoin StackExchange (Q&amp;A)</a>"
     bitcointalk: "<a href=\"https://bitcointalk.org/\">Forum BitcoinTalk</a>"
     ircjoin: "Dołącz się do często uczęszczanych kanałów IRC w sieci <a href=\"http://freenode.net/\">FreeNode</a><br>lub użyj <a href=\"http://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">Dostępu WWW FreeNode IRC</a>."
@@ -158,6 +159,13 @@ pl:
     versionhistory: "Pokaż historię wersji"
     notelicense: "Aplikacja Bitcoin-QT jest tworzona przez społeczność jako <a href=\"http://www.fsf.org/about/what-is-free-software\">darmowy projekt o otwartym kodzie</a> źródłowym opublikowanym na zasadach <a href=\"http://creativecommons.org/licenses/MIT/\">licencji MIT</a>."
     notesync: "<b>Uwaga</b> : Początkowa synchronizacja Bitcoin-Qt może trwać dzień zanim zostanie ukończona. Upewnij się, że posiadasz wystarczająco pasma internetowego oraz przestrzeni dyskowej na <a href=\"http://blockchain.info/charts/blocks-size\">łańcuch bloku o pełnym rozmiarze</a>."
+  events:
+    title: "Konferencje i wydarzenia - Bitcoin"
+    pagetitle: "Konferencje i wydarzenia"
+    pagedesc: "Odnajdź interesujące wydarzenia i konferencje organizowane przez różnych organizatorów na całym świecie."
+    meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Spotkania Bitcoin na BitcoinTalk</a>"
+    meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Spotkania Bitcoin na Wiki</a>"
+    meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Grupy spotkaniowe Bitcoin</a>"
   foundation:
     title: "Fundacja Bitcoin - Bitcoin"
     pagetitle: "Fundacja Bitcoin"
@@ -263,6 +271,9 @@ pl:
     offlinetmpmisstxt: "Rozpoczęcie środowiska tymczasowego może spowodować że zostanie ono wczytane z innymi ustawieniami klawiatury niż te do których przywykliśmy. To z kolei może spowodować, że powstaną inne znaki od oczekiwanych co przy użyciu szyfrowania może prowadzić do niezgodności haseł. By sprawdzić czy to ma miejsce wypisz swoje hasło na ekranie komputera o może przeciwdziałać problemowi."
     offlinetmptrace: "Nie pozostawianie śladów"
     offlinetmptracetxt: "Tak długo jak tylko medium na którym zapisywane są dane jest podłączone do komputera istnieje niewielkie ryzyko, że ślady twoich kluczy prywatnych na nim pozostaną. By tego całkowicie uniknąć konieczne jest odłączenie dysku lub wyłączenie partycji tymczasowej/pliku wymiany przed wczytaniem swojego portfela."
+    hardwarewallet: "Portfele sprzętowe są przyszłością"
+    hardwarewallettxt: "Portmonetki sprzętowe są najlepszym balansem pomiędzy wysokim bezpieczeństwem oraz łatwością użytkowania. Są to niewielkie urządzenia które na starcie zostały zaprojektowane by służyć jako tylko i wyłącznie jako portfele i nic więcej. Żaden program nie może zostać na nich zainstalowany czyniąc je bardzo odpornymi na zagrożenia związane z komputerami oraz kradzieżami przez złodziei internetowych. Ponieważ pozwalają one na wykonanie kopii zapasowej możesz odtworzyć swoje fundusze w przypadku utraty urządzenia."
+    hardwarewalletsoon: "Na dzień dzisiejszy żadne sprzętowe portfele nie zostały wprowadzony do zastosowania produkcyjnego ale one niedługo nadejdą:"
     offlinemulti: "Multi-podpis chroniący przed kradzieżą"
     offlinemultitxt: "Bitcoin zawiera funkcjonalność multi-podpisu który pozwala by nim zlecenie transakcji zostało zawarte wymagało więcej jak jednego klucza prywatnego do jej podpisania. Na chwilę obecną jest wymagana większa wiedza techniczna by móc korzystać z tej możliwości, niemniej w przyszłości należy się spodziewać większej dostępności dla niej. Przykładowo multi-podpis pozwala organizacji na dostęp do funduszy jedynie pod warunkiem gdy 3 z 5ciu jej członków podpisze transakcję. Pozwala również by przyszłe portfele posiadały kilka adresów multi-podpisów by w ten sposób zamieszczać je na jednym z użytkowanych przez ciebie komputerów oraz drugi w sieci by złodziejowi chcącemu ukraść twoje fundusze nie wystarczył dostęp do jedynie jednego z nich."
     offlinemobile: "Niewielkie kwoty na twoim przenośnym telefonie"
@@ -368,7 +379,8 @@ pl:
     menu-vocabulary: Słownik
     menu-community: Społeczność
     menu-development: Rozwój
-    menu-press: Prasa
+    menu-events: Wydarzenia
+    menu-press: 
     menu-innovation: Innowacje
     menu-foundation: Fundacja
     menu-about: O bitcoinie
@@ -387,10 +399,11 @@ pl:
     community: spolecznosc
     development: rozwoj
     download: pobieranie
+    events: wydarzenia
     foundation: fundacja
     how-it-works: jak-to-dziala
     innovation: innowacje
-    press: 
+    press: prasa
     resources: zasoby
     secure-your-wallet: zabezpiecz-swoj-portfel
     support-bitcoin: wesprzyj-bitcoin

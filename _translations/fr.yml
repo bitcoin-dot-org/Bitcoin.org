@@ -75,16 +75,17 @@ fr:
     internationaltext: "Les bitcoins peuvent être transférés de l'Afrique au Canada en 10 minutes. Il n'y a aucune banque pour ralentir le processus, engloutir des frais substantiels ou geler vos transactions. Vous pouvez payer votre voisin de la même façon que vous pouvez payer un membre de votre famille dans un autre pays."
     simple: "Fonctionne partout, en tout temps"
     simpletext: "Tout comme les emails, vous n'avez pas besoin de forcer qui que ce soit à utiliser le même logiciel ou le même porte-monnaie que vous. Laissez à vos amis et à votre famille la liberté de choisir le service qui leur convient le mieux : tous les services Bitcoin sont compatibles entre eux puisqu'ils utilisent la même technologie ouverte. Le réseau Bitcoin ne dort jamais, même le dimanche !"
-    secure: "Transactions sécurisées"
-    securetext: "Les transactions Bitcoin sont sécurisées par une cryptographie de niveau militaire. Personne ne peut faire de paiement en votre nom ou prélever votre compte sans avoir une copie de votre porte-monnaie. Tant que vous faites le nécessaire pour <a href=\"#secure-your-wallet#\">protéger votre porte-monnaie</a>, Bitcoin offre un excellent niveau de protection contre différentes formes de fraudes."
+    secure: "Sécurité et contrôle de votre argent"
+    securetext: "Les transactions Bitcoin sont sécurisées par une cryptographie de niveau militaire. Personne ne peut prélever votre compte ou faire de paiement en votre nom. Tant que vous faites le nécessaire pour <a href=\"#secure-your-wallet#\">protéger votre porte-monnaie</a>, Bitcoin vous donne le contrôle de votre argent et un niveau de protection intéressant contre différentes formes de fraudes."
     lowfee: "Presque gratuit"
     lowfeetext: "Bitcoin permet d'envoyer et de recevoir des paiements à très peu de frais. À l'exception de cas spéciaux comme les très petits paiements, il n'y a aucun frais obligatoire. Il est toutefois recommandé de payer des frais de transaction pour une confirmation plus rapide de vos transactions et pour rémunérer les personnes qui font fonctionner le réseau Bitcoin."
-    anonymous: "Paiements en ligne pseudo-anonymes"
-    anonymoustext: "Les paiements anonymes font partie de notre vie de tous les jours. La plupart des achats faits en boutique sont complétés sans obligation de s'identifier. Bitcoin introduit la même liberté dans le monde du web, vous permettant d'acheter des services ou de faire des dons sans le désagrément d'être passé au rayon X. Toutefois, vous devez savoir que <a href=\"#you-need-to-know#\"><b>l'anonymat complet requiert des efforts particuliers</b></a>."
+    anonymous: "Protéger votre identité"
+    anonymoustext: "Avec Bitcoin, il n'y a pas de numéro de carte de crédit qu'un acteur malveillant peut collecter afin de voler votre identité. En fait, il est même possible d'envoyer un paiement sans révéler votre identité, de la même façon qu'avec de l'argent véritable. Vous devriez toutefois prendre en compte que certains efforts peuvent être requis pour <a href=\"#you-need-to-know#\">protéger votre vie privée</a>."
   community:
     title: "Communauté - Bitcoin"
     pagetitle: "Les communautés Bitcoin"
     foundation: "<a href=\"https://bitcoinfoundation.org/forum/\">Forum de la Fondation Bitcoin (membres seulement)</a>"
+    wikiportal: "<a href=\"https://en.bitcoin.it/wiki/Bitcoin:Community_portal\">Wiki Bitcoin - Portail de la communauté</a>"
     stackexchange: "<a href=\"http://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a> (questions-réponses, anglais)"
     bitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=13.0\">Forum BitcoinTalk, section francophone</a>"
     ircjoin: "Rejoignez les canaux IRC sur le réseau <a href=\"http://freenode.net/\">FreeNode</a> (anglais)<br>ou utilisez <a href=\"http://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">FreeNode Web IRC</a>."
@@ -120,7 +121,7 @@ fr:
     walletelectrum: "Electrum se concentre sur la rapidité et la simplicité. Electrum est très léger et utilise des serveurs distants pour augmenter ses performances. Il vous permet aussi de récupérer votre porte-monnaie à l'aide d'une phrase secrète."
     walletbitcoinwallet: "Bitcoin Wallet est un client léger pour Android et BlackBerry OS. Cette application n'a pas besoin d'être associée à un service en ligne. Et elle est compatible avec le scan de codes QR et la technologie NFC."
     walletblockchaininfomob: "Blockchain.info est un porte-monnaie web hybride pour téléphone portable. Il est disponible pour iPhone dans une version limitée afin de rester compatible avec les réglementations d'Apple. Il inclut plusieurs fonctionnalités de blockchain.info, par exemple les sauvegardes web."
-    walletblockchaininfo: "Blockchain.info est un porte-monnaie web hybride très simple d'utilisation. Le service conserve une version cryptée de votre porte-monnaie mais le déchiffrement se passe dans votre navigateur. Par mesure de sécurité, utilisez l'extension prévue pour votre navigateur et faites des sauvegardes par email."
+    walletblockchaininfo: "Blockchain.info est un porte-monnaie web hybride très simple d'utilisation. Le service conserve une version chiffrée de votre porte-monnaie mais le déchiffrement se passe dans votre navigateur. Par mesure de sécurité, utilisez l'extension prévue pour votre navigateur et faites des sauvegardes par email."
     walletpaytunia: "Paytunia est un porte-monnaie web offert par Paymium qui intéragit avec Bitcoin-central pour vous donner accès aux échanges de bitcoins depuis votre téléphone portable. Il est disponible pour iPhone et devrait supporter Android sous peu."
     walletbips: "BIPS est un porte-monnaie web édité par WalletBit qui permet d'acheter et de vendre des bitcoins facilement dans plusieurs pays. Il offre un service de stockage hors ligne, une fonction d'importation de porte-monnaie et plusieurs outils marchands."
     walletcoinbase: "Coinbase est un porte-monnaie web dont le but est d'être très facile à utiliser. Il offre aussi une application Android, des outils marchands et une intégration avec les comptes bancaires américains pour acheter et vendre des bitcoins."
@@ -158,6 +159,13 @@ fr:
     versionhistory: "Voir l'historique des versions"
     notelicense: "Le logiciel Bitcoin est un <a href=\"http://www.fsf.org/about/what-is-free-software\">logiciel libre</a> développé par la communauté et publié sous la <a href=\"http://creativecommons.org/licenses/MIT/\">licence MIT</a>."
     notesync: "<b>Note</b> : La synchronisation initiale peut prendre jusqu'à une journée pour se compléter. Assurez-vous de disposer de suffisamment de bande-passante et d'espace disque pour le téléchargement et le stockage de la <a href=\"http://blockchain.info/charts/blocks-size\">chaîne de blocs</a>."
+  events:
+    title: "Conférences et événements - Bitcoin"
+    pagetitle: "Conférences et événements"
+    pagedesc: "Trouvez des conférences et des événements tenus par différents organisateurs à travers le monde."
+    meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Rencontres sur le Bitcoin - BitcoinTalk</a>"
+    meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Rencontres sur le Bitcoin - Wiki</a>"
+    meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Groupes meetup de rencontre sur le Bitcoin</a>"
   foundation:
     title: "Fondation Bitcoin - Bitcoin"
     pagetitle: "La Fondation Bitcoin"
@@ -191,7 +199,7 @@ fr:
   innovation:
     title: "Innovation - Bitcoin"
     pagetitle: "Pourquoi Bitcoin change le monde"
-    summary: "Bitcoin est une innovation importante qui vous donne le contrôle de votre argent. De même que ces inventions qui semblaient impossibles jusqu'à ce que leur temps soit venu, Bitcoin est réel et il pourrait changer notre vie de tous les jours. Un large éventail de nouvelles possibilités excitantes sont à découvrir au fil des années à venir."
+    summary: "Bitcoin est une innovation majeure qui vous donne le contrôle de votre argent. De même que ces inventions qui semblaient impossibles jusqu'à ce que leur temps soit venu, Bitcoin est réel et il pourrait changer notre vie de tous les jours. Un large éventail de nouvelles possibilités excitantes sont à découvrir au fil des années à venir."
     consensus: "Bitcoin est un consensus mondial"
     consensustext: "De par sa nature libre et décentralisée, Bitcoin est le premier réseau de paiement qui fonctionne uniquement grâce à ses utilisateurs et sans autorité centrale. Même les développeurs du Bitcoin n'ont aucun pouvoir de forcer une mise à jour dans le protocole si suffisamment d'utilisateurs, de développeurs ou de mineurs sont en désaccord. <i>Vous seul</i> avez le contrôle exclusif de votre porte-monnaie."
     network: "Une monnaie virtuelle conçue pour Internet"
@@ -236,7 +244,7 @@ fr:
     backupwhole: "Sauvegarder tout son porte-monnaie"
     backupwholetxt: "Votre porte-monnaie contient plusieurs clés privées qui reçoivent le solde de vos transactions afin de protéger votre vie privée. Si vous n'avez qu'une sauvegarde de vos clés privées visibles, vous pourriez ne pas être en mesure de récupérer une grande partie de vos fonds à l'aide de votre sauvegarde."
     backuponline: "Chiffrez les sauvegardes en ligne"
-    backuponlinetxt: "Toute sauvegarde stockée en ligne est hautement vulnérable au vol. Même un ordinateur connecté sur Internet est vulnérable aux logiciels malveillants. De fait, crypter toute sauvegarde exposée au réseau est une bonne pratique de sécurité."
+    backuponlinetxt: "Toute sauvegarde stockée en ligne est hautement vulnérable au vol. Même un ordinateur connecté sur Internet est vulnérable aux logiciels malveillants. De fait, chiffrer toute sauvegarde exposée au réseau est une bonne pratique de sécurité."
     backupmany: "Utilisez plusieurs emplacements sécurisés"
     backupmanytxt: "Les points de défaillances uniques sont des risques de sécurité. Si votre sauvegarde ne dépend pas d'un seul emplacement, il y a moins de chances que vous ne puissiez pas récupérer votre porte-monnaie en cas d'évènements imprévus. Vous pouvez aussi considérer l'utilisation de différents médias tels que les clés USB, le papier et les CDs."
     backupregular: "Faites des sauvegardes régulières"
@@ -263,6 +271,9 @@ fr:
     offlinetmpmisstxt: "Démarrer dans un environnement temporaire peut assigner une configuration différente à votre clavier qui produira par la suite des caractères différents que prévu. Si vous utilisez le chiffrement, cela peut causer des différences dans les mots de passes que vous tapez. Vous pourriez avoir besoin de taper votre mot de passe à l'écran pour éviter des problèmes."
     offlinetmptrace: "Ne laisser aucune trace"
     offlinetmptracetxt: "Tant qu'une unité de stockage tel qu'un disque dur est connecté à l'ordinateur, un petit risque subsiste que des traces de vos clés privées persistent. Vous pourriez vouloir déconnecter tout disque dur ou désactiver toute partition swap avant de charger votre porte-monnaie."
+    hardwarewallet: "Les porte-monnaie matériels sont le futur"
+    hardwarewallettxt: "Les porte-monnaie matériels représentent le meilleur équilibre entre très haute sécurité et facilité d'utilisation. Ce sont de petits appareils conçus à la base pour être des porte-monnaie et rien d'autre. Aucun logiciel ne peut être installé sur ceux-ci, ce qui leur permet d'être très sécurisés contre les failles informatiques et les voleurs sur Internet. Puisque les sauvegardes sont aussi possibles, vous pouvez récupérer vos fonds si vous perdez votre appareil."
+    hardwarewalletsoon: "À ce jour, aucun porte-monnaie matériel n'est entré en production mais ils arrivent bientôt :"
     offlinemulti: "Les multi-signatures pour protéger contre le vol"
     offlinemultitxt: "Bitcoin inclut une fonctionnalité multi-signature qui permet à une transaction d'exiger la signature de plus d'une clé privée avant d'être dépensée. Cette fonctionnalité est toutefois seulement utilisable pour les utilisateurs expérimentés. Une disponibilité plus large peut être attendue dans le futur. La multi-signature peut permettre à une organisation de donner accès à sa trésorerie à ses membres tout en n'autorisant un retrait que si 3 membres sur 5 signent la transaction. Il peut aussi permettre à de futurs services de porte-monnaie en ligne de partager une adresse multi-signature avec ses utilisateurs, de telle sorte qu'un voleur aurait besoin de compromettre à la fois votre ordinateur et les serveurs en ligne du service pour pouvoir voler vos fonds."
     offlinemobile: "De petites sommes sur votre mobile"
@@ -311,7 +322,7 @@ fr:
     address: "<a name=\"[vocabulary.address]\">Adresse</a>"
     addresstxt: "Une adresse Bitcoin est <b>comme une adresse physique ou une adresse email</b>. Il s'agit de la seule information que vous avez besoin de fournir pour qu'une personne vous paie avec des bitcoins."
     bitcoin: "<a name=\"[vocabulary.bitcoin]\">Bitcoin</a>"
-    bitcointxt: "Bitcoin - avec capitalisation, est utilisé pour décrire le concept du Bitcoin ou le réseau lui-même. Ex. \"J'ai appris sur le protocole Bitcoin aujourd'hui.\" bitcoin - sans capitalisation, est utilisé pour désigner les bitcoins en tant qu'unité de compte. Ex. \"J'ai envoyé dix bitcoins aujourd'hui.\" "
+    bitcointxt: "Bitcoin - avec une majuscule, est utilisé pour décrire le concept du Bitcoin ou le réseau lui-même. Ex. \"Je me suis intéressé au protocole Bitcoin aujourd'hui.\" bitcoin - sans majuscule, est utilisé pour désigner les bitcoins en tant qu'unité de compte. Ex. \"J'ai envoyé dix bitcoins aujourd'hui.\" "
     blockchain: "<a name=\"[vocabulary.block-chain]\">Chaîne de bloc</a>"
     blockchaintxt: "La chaîne de bloc est un <b>journal public de toutes les transactions Bitcoin</b> par ordre chronologique. Celle-ci est partagée entre tous les utilisateurs du réseau Bitcoin. Elle est utilisée pour vérifier le solde des adresses Bitcoin et pour empêcher la <a href=\"#[vocabulary.double-spend]\">double-dépense</a>."
     block: "<a name=\"[vocabulary.block]\">Bloc</a>"
@@ -368,6 +379,7 @@ fr:
     menu-vocabulary: Vocabulaire
     menu-community: Communauté
     menu-development: Développement
+    menu-events: Événements
     menu-press: Presse
     menu-innovation: Innovation
     menu-foundation: Fondation
@@ -387,6 +399,7 @@ fr:
     community: communaute
     development: developpement
     download: telecharger
+    events: evenements
     foundation: fondation
     how-it-works: comment-ca-marche
     innovation: innovation
