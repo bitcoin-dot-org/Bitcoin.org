@@ -58,7 +58,7 @@ en:
     pci: "No PCI compliance required"
     pcitext: "Accepting credit cards online typically requires extensive security checks in order to comply with the PCI standard. While it is a good thing to protect credit cards, Bitcoin security is built in such a way that makes this approach obsolete. Your payments are secured by the network, not at your expense."
     instant: "Instant transactions for points-of-sale"
-    instanttext: "A Bitcoin transaction is usually deployed within a few seconds and confirmed within 10 minutes. During that time, a transaction can be considered authentic but still reversible. If you need instant transactions, it is recommended to ask for a small transaction fee and to use a double-spend detection system."
+    instanttext: "A Bitcoin transaction is usually deployed within a few seconds and confirmed within 10 minutes. During that time, a transaction can be considered authentic but still reversible. If you need instant transactions, it is recommended to ask for a small transaction fee and use a double-spend detection system."
     visibility: "Get some free visibility"
     visibilitytext: "Bitcoin is an emerging market of new customers who are searching for ways to spend their coins. Accepting them is a good way to get new customers and give your business some new visibility. Accepting a new payment method has always shown to be a clever practice for online businesses."
     multisig: "Multi-signature"
@@ -80,7 +80,7 @@ en:
     security: "Most of the security is on client side"
     securitytext: "Most parts of the security are handled by the protocol on the client and Bitcoin network side. Authenticity is verified through private keys, and double-spends are prevented through the Bitcoin network. That means no need for PCI compliance nor fraud detection. We love things that just work, don't we?"
     instant: "Instant transactions and confirmations"
-    instanttext: "A Bitcoin transaction is usually deployed within a few seconds and confirmed within 10 minutes. During that time, a transaction can be considered authentic but still reversible. If you need instant transactions, it is recommended to ask for a small transaction fee and to use a double-spend detection system."
+    instanttext: "A Bitcoin transaction is usually deployed within a few seconds and confirmed within 10 minutes. During that time, a transaction can be considered authentic but still reversible. If you need instant transactions, it is recommended to ask for a small transaction fee and use a double-spend detection system."
     micro: "Cheap micro payments"
     microtext: "Bitcoin offers the lowest payment processing fees for any type of transaction, including micro-payments. This means that it can also be used to design and implement new creative online services that could not exist before only because of financial limitations."
   bitcoin-for-individuals:
