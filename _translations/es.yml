@@ -386,44 +386,31 @@ es:
     pagetitle: "Algunas palabras en Bitcoin que usted puede escuchar"
     summary: "Bitcoin ofrece un nuevo enfoque a los pagos y, como tal, hay algunas palabras nuevas que podrían convertirse en una parte de su vocabulario. No te preocupes, incluso la humilde televisión crea nuevas palabras!"
     table: "Tabla de contenidos"
-    tableaddress: "<a href=\"#[vocabulary.address]\">Dirección</a>"
-    tableblockchain: "<a href=\"#[vocabulary.block-chain]\">Cadena de bloques</a>"
-    tableblock: "<a href=\"#[vocabulary.block]\">Bloque</a>"
-    tablebtc: "<a href=\"#[vocabulary.btc]\">BTC</a>"
-    tableconfirmation: "<a href=\"#[vocabulary.confirmation]\">Confirmación</a>"
-    tablecryptography: "<a href=\"#[vocabulary.cryptography]\">Criptografía</a>"
-    tabledoublespend: "<a href=\"#[vocabulary.double-spend]\">Doble gasto</a>"
-    tablehashrate: "<a href=\"#[vocabulary.hash-rate]\">Velocidad de Hash</a>"
-    tablemining: "<a href=\"#[vocabulary.mining]\">Minería</a>"
-    tablep2p: "<a href=\"#[vocabulary.p2p]\">P2P - Punto a Punto</a>"
-    tableprivatekey: "<a href=\"#[vocabulary.private-key]\">Llave Privada</a>"
-    tablesignature: "<a href=\"#[vocabulary.signature]\">Firma</a>"
-    tablewallet: "<a href=\"#[vocabulary.wallet]\">Monedero</a>"
-    address: "<a name=\"[vocabulary.address]\">Dirección</a>"
+    address: "Dirección"
     addresstxt: "Una dirección Bitcoin es <b>como una dirección física o un correo electrónico</b>. Es la única información que necesita proporcionar para que alguien le pague a usted con Bitcoin."
-    blockchain: "<a name=\"[vocabulary.block-chain]\">Cadena de bloques</a>"
+    blockchain: "Cadena de bloques"
     blockchaintxt: "La cadena de bloques es un <b>registro público de todas las transacciones de Bitcoin</b> en orden cronológico. La cadena de bloques se comparte entre todos los usuarios de Bitcoin. Se utiliza para verificar el balance de direcciones Bitcoin y para prevenir el <a href=\"#[vocabulary.double-spend]\">doble gasto</a>."
-    block: "<a name=\"[vocabulary.block]\">Bloque</a>"
+    block: "Bloque"
     blocktxt: "Un bloque es <b>un registro en la cadena de bloques que contiene confirmaciones de transacciones pendientes</b>. Aproximadamente cada 10 minutos, en promedio, un nuevo bloque que incluye nuevas transacciones se anexa a la <a href=\"#[vocabulary.block-chain]\">cadena de bloques</a> a traves de la <a href=\"#[vocabulary.mining]\">minería</a>."
-    btc: "<a name=\"[vocabulary.btc]\">BTC</a>"
+    btc: "BTC"
     btctxt: "BTC es el código de tres letras, no oficial, de Bitcoin. Puede ser utilizado como una abreviatura, como USD para el dólar estadounidense."
-    confirmation: "<a name=\"[vocabulary.confirmation]\">Confirmación</a>"
+    confirmation: "Confirmación"
     confirmationtxt: "La confirmacion significa que una transaccion ha sido <b>verificada por la red y es muy poco probable que se revierta</b>. Una confirmación proporciona bastante seguridad. Aunque para grandes montos (por ejemplo, 1000 $USD o más), es preferible esperar a que una transacción tenga varias confirmaciones - 6 es el número de confirmaciones con frecuencia elegido. Cada nueva confirmación disminuye exponencialmente el riesgo de que una transacción se revierta."
-    cryptography: "<a name=\"[vocabulary.cryptography]\">Criptografía</a>"
+    cryptography: "Criptografía"
     cryptographytxt: "La criptografía es la rama de las matemáticas que nos permite crear <b>pruebas matemáticas que proporcionan altos niveles de seguridad</b>. El comercio en línea y los bancos ya utilizan criptografía. En el caso de Bitcoin, la criptografía se utiliza para hacer imposible que alguien pueda gastar los fondos del monedero de otro usuario o que se pueda corromper la <a href=\"#[vocabulary.block-chain]\">cadena de bloques</a>. También se utilizada para encriptar un monedero, de manera que no se pueda utilizar sin una contraseña."
-    doublespend: "<a name=\"[vocabulary.double-spend]\">Doble gasto</a>"
+    doublespend: "Doble gasto"
     doublespendtxt: "Si un usuario malintencionado intenta gastar <b>sus bitcoins en dos lugares diferentes al mismo tiempo</b>, se produce un doble gasto. La <a href=\"#[vocabulary.mining]\">minería</a> en Bitcoin y la <a href=\"#[vocabulary.block-chain]\">cadena de bloques</a> permiten crear un consenso en la red acerca de cuál de las dos transacciones ganará."
-    hashrate: "<a name=\"[vocabulary.hash-rate]\">Velocidad Hash</a>"
+    hashrate: "Velocidad Hash"
     hashratetxt: "La velocidad hash es <b>la unidad de medida de la potencia de procesamiento de la red Bitcoin</b>. La red Bitcoin debe hacer uso intensivo de operaciones matemáticas por razones de seguridad. Cuando la red alcanza una velocidad de hash de 10 TH/s, esto significa que puede hacer diez billones de cálculos por segundo."
-    mining: "<a name=\"[vocabulary.mining]\">Minería</a>"
+    mining: "Minería"
     miningtxt: "La minería en Bitcoin es el proceso de <b>realizar cálculos matemáticos mediante computadoras para confirmar las transacciones en la red Bitcoin</b> e incrementar la seguridad. Como recompensa por sus servicios, los mineros Bitcoin pueden cobrar los costos de transacción de las transacciones que confirman junto con bitcoins nuevos que se crean en cada bloque. La minería es un mercado especializado y competitivo en el que los beneficios se reparten de acuerdo a la cantidad de cálculos que se hacen. No todos los usuarios de Bitcoin realizan minería y no es una manera fácil de hacer dinero."
-    p2p: "<a name=\"[vocabulary.p2p]\">P2P - Punto a Punto</a>"
+    p2p: "P2P - Punto a Punto"
     p2ptxt: "Punto a punto se refiere a los <b>sistemas que trabajan como una organización colectiva</b>, permitiendo que cada individuo interactúe directamente con otros. En el caso de Bitcoin, la red se construye de tal manera que cada usuario está transmitiendo transacciones de otros usuarios. Y algo muy importante, ningún banco se requiere como intermediario."
-    privatekey: "<a name=\"[vocabulary.private-key]\">Llave Privada</a>"
+    privatekey: "Llave Privada"
     privatekeytxt: "Una llave privada es <b>una pieza secreta de datos que acredita su derecho a gastar Bitcoins de una dirección Bitcoin</b> por medio de una <a href=\"#[vocabulary.signature]\">firma</a> criptográfica. Cada <a href=\"#[vocabulary.address]\">dirección Bitcoin</a> tiene su propia llave privada única. Sus llaves privadas se almacenan en su computador si utilizas un programa de monedero, mientras que si utilizas un monedero web son almacenadas en servidores remotos del provedor. Las llaves privadas nunca deben ser compartidas, ya que permitirías que se puedan transferir bitcoins desde dichas direcciones."
-    signature: "<a name=\"[vocabulary.signature]\">Firma</a>"
+    signature: "Firma"
     signaturetxt: "Una firma <a href=\"#[vocabulary.cryptography]\">criptográfica</a> es <b>un mecanismo matemático que permite a alguien demostrar su propiedad</b>. En el caso de Bitcoin, una <a href=\"#[vocabulary.address]\">dirección Bitcoin</a> y su <a href=\"#[vocabulary.private-key]\">llave privada</a> están vinculadas por un tipo de magia matemática. Cuando su program de Bitcoin firma una transacción con la llave privada correspondiente, toda la red puede ver que la firma coincide con la dirección Bitcoin. Sin embargo, no hay forma de que el mundo descubra la llave privada para robar sus bitcoins."
-    wallet: "<a name=\"[vocabulary.wallet]\">Monedero</a>"
+    wallet: "Monedero"
     wallettxt: "Un monedero Bitcoin se refiere al <b>equivalente a un monedero físico en la red Bitcoin</b>. Cada monedero Bitcoin puede mostrar el balance total de todas las <a href=\"#[vocabulary.address]\">direcciones Bitcoin</a> que contiene. Al igual que cuando suma el dinero en su monedero real. Y de la misma manera, un monedero Bitcoin te permite pagar una cantidad específica a una persona específica. Esto es diferente a las tarjetas de crédito en la que se el negocio te cobra."
   you-need-to-know:
     title: "Algunas cosas que debes saber - Bitcoin"
@@ -485,15 +472,15 @@ es:
   anchor:
     vocabulary:
       address: direccion
-      block-chain: cadena-de-bloques
+      blockchain: cadena-de-bloques
       block: bloque
       btc: btc
       confirmation: confirmacion
       cryptography: criptografia
-      double-spend: doble-gasto
-      hash-rate: velocidad-de-hash
+      doublespend: doble-gasto
+      hashrate: velocidad-de-hash
       mining: mineria
       p2p: p2p
-      private-key: llave-privada
+      privatekey: llave-privada
       signature: firma
       wallet: monedero

@@ -417,47 +417,33 @@ en:
     pagetitle: "Some Bitcoin words you might hear"
     summary: "Bitcoin provides a new approach to payments and, as such, there are some new words that might become a part of your vocabulary. Don't worry, even the humble television created new words!"
     table: "Table of contents"
-    tableaddress: "<a href=\"#[vocabulary.address]\">Address</a>"
-    tablebitcoin: "<a href=\"#[vocabulary.bitcoin]\">Bitcoin</a>"
-    tableblockchain: "<a href=\"#[vocabulary.block-chain]\">Block Chain</a>"
-    tableblock: "<a href=\"#[vocabulary.block]\">Block</a>"
-    tablebtc: "<a href=\"#[vocabulary.btc]\">BTC</a>"
-    tableconfirmation: "<a href=\"#[vocabulary.confirmation]\">Confirmation</a>"
-    tablecryptography: "<a href=\"#[vocabulary.cryptography]\">Cryptography</a>"
-    tabledoublespend: "<a href=\"#[vocabulary.double-spend]\">Double Spend</a>"
-    tablehashrate: "<a href=\"#[vocabulary.hash-rate]\">Hash Rate</a>"
-    tablemining: "<a href=\"#[vocabulary.mining]\">Mining</a>"
-    tablep2p: "<a href=\"#[vocabulary.p2p]\">P2P - Peer To Peer</a>"
-    tableprivatekey: "<a href=\"#[vocabulary.private-key]\">Private Key</a>"
-    tablesignature: "<a href=\"#[vocabulary.signature]\">Signature</a>"
-    tablewallet: "<a href=\"#[vocabulary.wallet]\">Wallet</a>"
-    address: "<a name=\"[vocabulary.address]\">Address</a>"
+    address: "Address"
     addresstxt: "A Bitcoin address is <b>like a physical address or an email</b>. It is the only information you need to provide for someone to pay you with Bitcoin."
-    bitcoin: "<a name=\"[vocabulary.bitcoin]\">Bitcoin</a>"
+    bitcoin: "Bitcoin"
     bitcointxt: "Bitcoin - with capitalization, is used when describing the concept of Bitcoin, or the entire network itself. e.g. \"I was learning about the Bitcoin protocol today.\" bitcoin - without capitalization, is used to describe bitcoins as a unit of account. e.g. \"I sent ten bitcoins today.\""
-    blockchain: "<a name=\"[vocabulary.block-chain]\">Block Chain</a>"
+    blockchain: "Block Chain"
     blockchaintxt: "The block chain is a <b>public record of all Bitcoin transactions</b>, in chronological order. The block chain is shared between all Bitcoin users. It is used to verify the balance of Bitcoin addresses and to prevent <a href=\"#[vocabulary.double-spend]\">double spending</a>."
-    block: "<a name=\"[vocabulary.block]\">Block</a>"
+    block: "Block"
     blocktxt: "A block is a <b>record in the block chain that contains and confirms many waiting transactions</b>. Roughly every 10 minutes, on average, a new block including transactions is appended to the <a href=\"#[vocabulary.block-chain]\">block chain</a> through <a href=\"#[vocabulary.mining]\">mining</a>."
-    btc: "<a name=\"[vocabulary.btc]\">BTC</a>"
+    btc: "BTC"
     btctxt: "BTC is the common unit of Bitcoin currency. It can be used in a similar way to USD for US dollar instead of B⃦ or $."
-    confirmation: "<a name=\"[vocabulary.confirmation]\">Confirmation</a>"
+    confirmation: "Confirmation"
     confirmationtxt: "Confirmation means that a transaction has been <b>verified by the network and is highly unlikely to be reversed</b>. One confirmation is pretty secure. Although for larger amounts (e.g. 1000 $USD and above), one can wait for a transaction to have more confirmations - six is a frequently chosen number. Each new confirmation decreases the risk of a reversal exponentially."
-    cryptography: "<a name=\"[vocabulary.cryptography]\">Cryptography</a>"
+    cryptography: "Cryptography"
     cryptographytxt: "Cryptography is the branch of mathematics that lets us create <b>mathematical proofs that provide high levels of security</b>. Online commerce and banking already uses cryptography. In the case of Bitcoin, cryptography is used to make it impossible for anybody to spend funds from another user's wallet or to corrupt the <a href=\"#[vocabulary.block-chain]\">block chain</a>. It can also be used to encrypt a wallet, so that it cannot be used without a password."
-    doublespend: "<a name=\"[vocabulary.double-spend]\">Double Spend</a>" 
+    doublespend: "Double Spend" 
     doublespendtxt: "If a malicious user tries to <b>spend their bitcoins to two different recipients at the same time</b>, this is double spending. Bitcoin <a href=\"#[vocabulary.mining]\">mining</a> and the <a href=\"#[vocabulary.block-chain]\">block chain</a> are there to create a consensus on the network about which of the two transactions will win."
-    hashrate: "<a name=\"[vocabulary.hash-rate]\">Hash Rate</a>"
+    hashrate: "Hash Rate"
     hashratetxt: "The hash rate is the <b>measuring unit of the processing power of the Bitcoin network</b>. The Bitcoin network must make intensive mathematical operations for security purposes. When the network reaches a hash rate of 10 TH/s, it means it can make 10 trillion calculations per second."
-    mining: "<a name=\"[vocabulary.mining]\">Mining</a>"
+    mining: "Mining"
     miningtxt: "Bitcoin mining is the process of <b>making computer hardware do mathematical calculations for the Bitcoin network to confirm transactions</b> and increase security. As a reward for their services, Bitcoin miners can collect transaction fees for the transactions they confirm, along with newly created bitcoins. Mining is a specialized and competitive market where the rewards are divided up according to how much calculation is done. Not all Bitcoin users do Bitcoin mining, and it is not an easy way to make money."
-    p2p: "<a name=\"[vocabulary.p2p]\">P2P</a>"
+    p2p: "P2P"
     p2ptxt: "Peer-to-peer refers to <b>systems that work like an organized collective</b> by allowing each individual to interact directly with the others. In the case of Bitcoin, the network is built in such a way that each user is broadcasting the transactions of other users. And, crucially, no bank is required as a third party."
-    privatekey: "<a name=\"[vocabulary.private-key]\">Private Key</a>"
+    privatekey: "Private Key"
     privatekeytxt: "A private key is a <b>secret piece of data that proves your right to spend bitcoins from a specific Bitcoin address</b> through a cryptographic <a href=\"#[vocabulary.signature]\">signature</a>. Each <a href=\"#[vocabulary.address]\">Bitcoin address</a> has its own unique private key. Your private keys are stored in your computer if you use a software wallet;  they are stored on some remote servers if you use a web wallet. Private keys must never be revealed as they allow you to spend bitcoins for their respective Bitcoin addresses."
-    signature: "<a name=\"[vocabulary.signature]\">Signature</a>"
+    signature: "Signature"
     signaturetxt: "A <a href=\"#[vocabulary.cryptography]\">cryptographic</a> signature is <b>a mathematical mechanism that allows someone to prove ownership</b>. In the case of Bitcoin, a <a href=\"#[vocabulary.address]\">Bitcoin address</a> and its <a href=\"#[vocabulary.private-key]\">private key</a> are linked by some mathematical magic. When your Bitcoin software signs a transaction with the appropriate private key, the whole network can see that the signature matches the Bitcoin address. However, there is no way for the world to guess your private key to steal your hard-earned bitcoins."
-    wallet: "<a name=\"[vocabulary.wallet]\">Wallet</a>"
+    wallet: "Wallet"
     wallettxt: "A Bitcoin wallet is loosely <b>the equivalent of a physical wallet on the Bitcoin network</b>. The wallet actually contains your <a href=\"#[vocabulary.private-key]\">private keys</a> which allow you to spend the bitcoins allocated to your <a href=\"#[vocabulary.address]\">Bitcoin addresses</a> in the <a href=\"#[vocabulary.block-chain]\">block chain</a>. Each Bitcoin wallet can show you the total balance of all Bitcoin addresses it contains and lets you pay a specific amount to a specific person, just like a real wallet. This is different to credit cards where you are charged by the merchant."
   you-need-to-know:
     title: "Some things you need to know - Bitcoin"
@@ -529,15 +515,15 @@ en:
     vocabulary:
       address: address
       bitcoin: bitcoin
-      block-chain: blockchain
+      blockchain: blockchain
       block: block
       btc: btc
       confirmation: confirmation
       cryptography: cryptography
-      double-spend: double-spend
-      hash-rate: hash-rate
+      doublespend: double-spend
+      hashrate: hash-rate
       mining: mining
       p2p: p2p
-      private-key: private-key
+      privatekey: private-key
       signature: signature
       wallet: wallet

@@ -305,47 +305,33 @@ fr:
     pagetitle: "Quelques mots que vous pourriez entendre"
     summary: "Bitcoin est une nouvelle approche des paiements en ligne. De fait, certains mots nouveaux pourraient entrer dans votre dictionnaire. Ne vous en faites pas, même la radio a un jour créé de nouveaux mots."
     table: "Table des matières"
-    tableaddress: "<a href=\"#[vocabulary.address]\">Adresse</a>"
-    tablebitcoin: "<a href=\"#[vocabulary.bitcoin]\">Bitcoin</a>"
-    tableblockchain: "<a href=\"#[vocabulary.block-chain]\">Chaîne de bloc</a>"
-    tableblock: "<a href=\"#[vocabulary.block]\">Bloc</a>"
-    tablebtc: "<a href=\"#[vocabulary.btc]\">BTC</a>"
-    tableconfirmation: "<a href=\"#[vocabulary.confirmation]\">Confirmation</a>"
-    tablecryptography: "<a href=\"#[vocabulary.cryptography]\">Cryptographie</a>"
-    tabledoublespend: "<a href=\"#[vocabulary.double-spend]\">Double dépense</a>"
-    tablehashrate: "<a href=\"#[vocabulary.hash-rate]\">Taux de hachage</a>"
-    tablemining: "<a href=\"#[vocabulary.mining]\">Minage</a>"
-    tablep2p: "<a href=\"#[vocabulary.p2p]\">P2P - Pair à pair</a>"
-    tableprivatekey: "<a href=\"#[vocabulary.private-key]\">Clé privée</a>"
-    tablesignature: "<a href=\"#[vocabulary.signature]\">Signature</a>"
-    tablewallet: "<a href=\"#[vocabulary.wallet]\">Porte-monnaie</a>"
-    address: "<a name=\"[vocabulary.address]\">Adresse</a>"
+    address: "Adresse"
     addresstxt: "Une adresse Bitcoin est <b>comme une adresse physique ou une adresse email</b>. Il s'agit de la seule information que vous avez besoin de fournir pour qu'une personne vous paie avec des bitcoins."
-    bitcoin: "<a name=\"[vocabulary.bitcoin]\">Bitcoin</a>"
+    bitcoin: "Bitcoin"
     bitcointxt: "Bitcoin - avec une majuscule, est utilisé pour décrire le concept du Bitcoin ou le réseau lui-même. Ex. \"Je me suis intéressé au protocole Bitcoin aujourd'hui.\" bitcoin - sans majuscule, est utilisé pour désigner les bitcoins en tant qu'unité de compte. Ex. \"J'ai envoyé dix bitcoins aujourd'hui.\" "
-    blockchain: "<a name=\"[vocabulary.block-chain]\">Chaîne de bloc</a>"
+    blockchain: "Chaîne de bloc"
     blockchaintxt: "La chaîne de bloc est un <b>journal public de toutes les transactions Bitcoin</b> par ordre chronologique. Celle-ci est partagée entre tous les utilisateurs du réseau Bitcoin. Elle est utilisée pour vérifier le solde des adresses Bitcoin et pour empêcher la <a href=\"#[vocabulary.double-spend]\">double-dépense</a>."
-    block: "<a name=\"[vocabulary.block]\">Bloc</a>"
+    block: "Bloc"
     blocktxt: "Un bloc est un <b>ajout dans la chaîne de bloc qui contient et confirme plusieurs transactions</b> en attente. Toutes les 10 minutes environ, un bloc est ajouté à la <a href=\"#[vocabulary.block-chain]\">chaîne de bloc</a> via le <a href=\"#[vocabulary.mining]\">minage</a>."
-    btc: "<a name=\"[vocabulary.btc]\">BTC</a>"
+    btc: "BTC"
     btctxt: "BTC est l'unité la plus courante pour la devise Bitcoin. Elle peut être utilisée de manière similaire à USD pour le dollar US plutôt que B⃦ ou $."
-    confirmation: "<a name=\"[vocabulary.confirmation]\">Confirmation</a>"
+    confirmation: "Confirmation"
     confirmationtxt: "Une confirmation signifie qu'une transaction a été <b>vérifiée par le réseau et que ses chances d'être renversée sont quasiment inexistantes</b>. Une seule confirmation offre un bon niveau de sécurité, bien que pour les paiements importants (ex. 1000 $USD et plus), il est prudent d'attendre qu'une transaction ait accumulé davantage de confirmations - 6 confirmations est le nombre le plus souvent utilisé. Chaque nouvelle confirmation diminue exponentiellement le risque d'un renversement."
-    cryptography: "<a name=\"[vocabulary.cryptography]\">Cryptographie</a>"
+    cryptography: "Cryptographie"
     cryptographytxt: "La cryptographie est une branche des mathématiques permettant de créer des <b>preuves mathématiques qui offrent un haut niveau de sécurité</b>. De nos jours, tout commerce ou banque en ligne utilise déjà la cryptographie. Avec le Bitcoin, la cryptographie est utilisée pour empêcher quiconque de dépenser les fonds d'un autre utilisateur et pour empêcher la corruption de la <a href=\"#[vocabulary.block-chain]\">chaîne de bloc</a>. Elle peut aussi être utilisée pour chiffrer un porte-monnaie, afin qu'il ne puisse être utilisé qu'avec un mot de passe."
-    doublespend: "<a name=\"[vocabulary.double-spend]\">Double dépense</a>"
+    doublespend: "Double dépense"
     doublespendtxt: "Si un utilisateur mal intentionné essaie de <b>donner les mêmes bitcoins à deux destinataires au même moment</b>, il s'agit d'une double-dépense. Le <a href=\"#[vocabulary.mining]\">minage</a> et la <a href=\"#[vocabulary.block-chain]\">chaîne de bloc</a> existent pour créer un consensus afin de décider laquelle des deux transactions sera confirmée."
-    hashrate: "<a name=\"[vocabulary.hash-rate]\">Taux de hachage</a>"
+    hashrate: "Taux de hachage"
     hashratetxt: "Le taux de hachage est l'<b>unité de mesure de la puissance de calcul du réseau Bitcoin</b>. Le réseau Bitcoin doit faire des calculs mathématiques intensifs pour des raisons de sécurité. Par exemple, un taux de hachage de 10 TH/s signifie que le réseau peut calculer 10 Tera empreintes par secondes, soit dix billions de calculs par seconde."
-    mining: "<a name=\"[vocabulary.mining]\">Minage</a>"
+    mining: "Minage"
     miningtxt: "Le minage de Bitcoin est <b>l'utilisation de matériel informatique pour effectuer des calculs mathématiques pour le réseau Bitcoin afin de confirmer des transactions</b> et augmenter la sécurité. Comme récompense pour leurs services, les mineurs de Bitcoin reçoivent les frais de transaction pour les transactions qu'ils confirment et les bitcoins nouvellement créés. Le minage est un marché compétitif où les revenus sont divisés en fonction du nombre de calculs effectués. Tous les utilisateurs du Bitcoin ne font pas de minage et il ne s'agit pas d'un moyen facile de gagner de l'argent."
-    p2p: "<a name=\"[vocabulary.p2p]\">P2P</a>"
+    p2p: "P2P"
     p2ptxt: "Pair à pair fait référence à un réseau ou <b>système qui fonctionne comme une collectivité organisée</b>, permettant à chaque individu d'interagir directement avec les autres. Dans le cas du Bitcoin, le réseau est construit de manière à ce que chaque utilisateur diffuse les transactions des autres utilisateurs. Chose cruciale, aucune banque n'est requise en tant que tierce partie."
-    privatekey: "<a name=\"[vocabulary.private-key]\">Clé privée</a>"
+    privatekey: "Clé privée"
     privatekeytxt: "Une clé privée est une <b>information secrète qui permet de prouver votre droit de dépenser des bitcoins à partir d'une adresse Bitcoin</b> définie grâce à une <a href=\"#[vocabulary.signature]\">signature</a> cryptographique. Chaque <a href=\"#[vocabulary.address]\">adresse Bitcoin</a> a sa propre clé privée unique. Vos clés privées sont stockées dans votre ordinateur si vous utilisez un porte-monnaie logiciel tandis qu'elles sont stockées sur des serveurs en ligne si vous utilisez un porte-monnaie en ligne. Les clés privées ne doivent jamais être révélées car elles permettent de dépenser les bitcoins des adresses Bitcoin auxquelles elles sont associées."
-    signature: "<a name=\"[vocabulary.signature]\">Signature</a>"
+    signature: "Signature"
     signaturetxt: "Une signature <a href=\"#[vocabulary.cryptography]\">cryptographique</a> est un <b>mécanisme mathématique qui permet de prouver son authenticité</b>. Dans le cas du Bitcoin, une <a href=\"#[vocabulary.address]\">adresse Bitcoin</a> et sa clé privée sont liées par la magie des mathématiques. Quand un logiciel Bitcoin signe une transaction avec la clé privée appropriée, le réseau Bitcoin peut vérifier que la signature correspond à l'adresse Bitcoin dans la transaction. Malgré tout, il n'existe aucun moyen de deviner quelle est la clé privée afin de voler des bitcoins durement gagnés."
-    wallet: "<a name=\"[vocabulary.wallet]\">Porte-monnaie</a>"
+    wallet: "Porte-monnaie"
     wallettxt: "Un porte-monnaie Bitcoin est l'<b>équivalent d'un porte-monnaie physique sur le réseau Bitcoin</b>. Un porte-monnaie contient en fait vos <a href=\"#[vocabulary.private-key]\">clés privées</a> qui vous permettent de dépenser les bitcoins associés à vos <a href=\"#[vocabulary.address]\">adresses Bitcoin</a> dans la <a href=\"#[vocabulary.block-chain]\">chaîne de blocs</a>. Chaque porte-monnaie peut afficher le solde des <a href=\"#[vocabulary.address]\">adresses Bitcoin</a> qu'il contient et vous permet de payer un montant spécifique à une personne spécifique, de la même façon qu'un vrai porte-monnaie. Ce qui est différent des cartes de crédit où le marchand peut directement prélever votre compte."
   you-need-to-know:
     title: "Ce que vous devez savoir - Bitcoin"
@@ -413,15 +399,15 @@ fr:
     vocabulary:
       address: adresse
       bitcoin: bitcoin
-      block-chain: chaine-de-bloc
+      blockchain: chaine-de-bloc
       block: bloc
       btc: btc
       confirmation: confirmation
       cryptography: cryptographie
-      double-spend: double-depense
-      hash-rate: taux-de-hash
+      doublespend: double-depense
+      hashrate: taux-de-hash
       mining: minage
       p2p: p2p
-      private-key: cle-privee
+      privatekey: cle-privee
       signature: signature
       wallet: porte-monnaie

@@ -113,10 +113,12 @@ order:
 {% if page.order[page.lang] %}{%assign voc=page.order[page.lang]%}{%else%}{%assign voc=page.order.en%}{%endif%}
 
 <div class="index">
-{% for v in voc %}{%translate table{{v.id}}%}{%endfor%}
+{% for v in voc %}
+<a href="#{% translate {{v.id}} anchor.vocabulary %}">{% translate {{v.id}} %}</a>
+{%endfor%}
 </div>
 
 {% for v in voc %}
-<h2>{% translate {{v.id}} %}</h2>
+<h2><a name="{% translate {{v.id}} anchor.vocabulary %}">{% translate {{v.id}} %}</a></h2>
 <p>{% translate {{v.id}}txt %}</p>
 {% endfor %}

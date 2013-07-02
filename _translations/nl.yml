@@ -386,44 +386,31 @@ nl:
     pagetitle: "Enkele regelmatig gehoorde Bitcoin-termen"
     summary: "Bitcoin is een geheel nieuwe manier van betalen en gaat als zodanig gepaard met termen die u misschien nog niet eerder gehoord heeft. Geen zorg, zelfs de televisie heeft heel wat woorden toegevoegd aan de internationale woordenschat!"
     table: "Inhoudsopgave"
-    tableaddress: "<a href=\"#[vocabulary.address]\">Bitcoin-adres</a>"
-    tableblockchain: "<a href=\"#[vocabulary.block-chain]\">Blokketen</a>"
-    tableblock: "<a href=\"#[vocabulary.block]\">Blok</a>"
-    tablebtc: "<a href=\"#[vocabulary.btc]\">BTC</a>"
-    tableconfirmation: "<a href=\"#[vocabulary.confirmation]\">Bevestiging</a>"
-    tablecryptography: "<a href=\"#[vocabulary.cryptography]\">Cryptografie</a>"
-    tabledoublespend: "<a href=\"#[vocabulary.double-spend]\">Dubbele uitgaven</a>"
-    tablehashrate: "<a href=\"#[vocabulary.hash-rate]\">Hashsnelheid</a>"
-    tablemining: "<a href=\"#[vocabulary.mining]\">Delven</a>"
-    tablep2p: "<a href=\"#[vocabulary.p2p]\">P2P - Peer To Peer</a>"
-    tableprivatekey: "<a href=\"#[vocabulary.private-key]\">Geheime sleutel</a>"
-    tablesignature: "<a href=\"#[vocabulary.signature]\">Digitale handtekening</a>"
-    tablewallet: "<a href=\"#[vocabulary.wallet]\">Portemonnee</a>"
-    address: "<a name=\"[vocabulary.address]\">Bitcoin-adres</a>"
+    address: "Bitcoin-adres"
     addresstxt: "Een Bitcoin-adres is <b>vergelijkbaar met een huis- of e-mailadres</b>. Het is het enige wat u aan anderen hoeft te geven om hen in staat te stellen betalingen aan u te sturen."
-    blockchain: "<a name=\"[vocabulary.block-chain]\">Blokketen</a>"
+    blockchain: "Blokketen"
     blockchaintxt: "De blokketen (Engels: block chain) is een <b>openbaar archief van alle Bitcoin-transacties</b>, in chronologische volgorde. De blokketen wordt gedeeld door alle Bitcoin-gebruikers. Het wordt gebruikt om het saldo van elk Bitcoin-adres te controleren en om <a href=\"#[vocabulary.double-spend]\">dubbele uitgaven</a> tegen te gaan."
-    block: "<a name=\"[vocabulary.block]\">Blok</a>"
+    block: "Blok"
     blocktxt: "Een blok (Engels: block) is een <b>verzameling van transacties die bevestigd moeten worden, en een schakel in de <a href=\"#[vocabulary.block-chain]\">blokketen</a></b>. Gemiddeld wordt elke 10 minuten een blok toegevoegd aan de blokketen - en daarmee een pakket transacties bevestigd - door middel van <a href=\"#[vocabulary.mining]\">delven</a>."
-    btc: "<a name=\"[vocabulary.btc]\">BTC</a>"
+    btc: "BTC"
     btctxt: "BTC is de officieuze drieletterige code voor de Bitcoin. Het wordt gebruikt als een afkorting, net als USD voor de US dollar of EUR voor Euro."
-    confirmation: "<a name=\"[vocabulary.confirmation]\">Bevestiging</a>"
+    confirmation: "Bevestiging"
     confirmationtxt: "Bevestiging betekent dat een transactie <b>geverifieerd is door het netwerk en (bijna) niet meer ongedaan kan worden gemaakt</b>. Eén bevestiging is behoorlijk veilig voor alledaagse transacties. Voor hogere bedragen (bijvoorbeeld €1000 en hoger) zou u kunnen wachten op meer dan één bevestiging - veel partijen kiezen voor 6 bevestigingen in zulke gevallen. Met elke bevestiging wordt het risico van terugdraaien exponentieel kleiner."
-    cryptography: "<a name=\"[vocabulary.cryptography]\">Cryptografie</a>"
+    cryptography: "Cryptografie"
     cryptographytxt: "Cryptografie is de tak van wiskunde die zorgt voor <b>wiskundig bewezen beveiliging</b>. Winkels en banken gebruiken cryptografie om hun transacties via internet te beveiligen. In het geval van Bitcoin wordt cryptografie gebruikt om te zorgen dat niemand geld kan uitgeven uit andermans <a href=\"#[vocabulary.wallet]\">portemonnee</a> en om te voorkomen dat iemand de integriteit van de <a href=\"#[vocabulary.block-chain]\">blokketen</a> kan aantasten. Het kan ook worden gebruikt om een portemonnee te versleutelen, zodat niemand erbij kan die het bijbehorende wachtwoord niet kent."
-    doublespend: "<a name=\"[vocabulary.double-spend]\">Dubbele uitgave</a>"
+    doublespend: "Dubbele uitgave"
     doublespendtxt: "Dubbele uitgaven (Engels: Double Spend) is een vorm van fraude waarbij iemand probeert zijn bitcoins op twee of meer plekken tegelijkertijd uit te geven, voordat het systeem in de gaten heeft dat de bitcoin al is uitgegeven. De manier waarop Bitcoin-<a href=\"#[vocabulary.mining]\">delven</a> en de <a href=\"#[vocabulary.block-chain]\">blokketen</a> werken, zorgen ervoor dat altijd maar één van de twee transacties door kan gaan."
-    hashrate: "<a name=\"[vocabulary.hash-rate]\">Hashsnelheid</a>"
+    hashrate: "Hashsnelheid"
     hashratetxt: "De hashsnelheid (Engels: hash rate) is de <b>maat voor de totale rekenkracht van het Bitcoin-netwerk</b>. Om veiligheidsredenen moet het Bitcoin-netwerk steeds intensieve wiskundige bewerkingen blijven uitvoeren. Als het netwerk bijvoorbeeld een hashsnelheid van 10 TH/s bereikt, betekent dat dat het 10 biljoen (ten trillion, 10.000.000.000.000) berekeningen per seconde kan maken."
-    mining: "<a name=\"[vocabulary.mining]\">Delven</a>"
+    mining: "Delven"
     miningtxt: "Bitcoin-delven (Engels: mining) is het <b>laten uitvoeren van wiskundige berekeningen door een computer om het Bitcoin-netwerk transacties te laten bevestigen</b> en om de veiligheid te waarborgen. Als beloning voor het verrichte werk krijgen Bitcoin-\"miners\" de commissie die op sommige van de transacties wordt meegegeven - en bovendien ook nieuwe \"gedolven\" bitcoins. Bitcoin-delven is tegenwoordig een gespecialiseerde markt, waarin de opbrengsten gedeeld worden onder de leden van gespecialiseerde groepen naar rato van hoeveel rekenkracht wordt ingebracht. Lang niet alle Bitcoin-gebruikers doen aan delven en het is geen gemakkelijke manier om aan bitcoins te komen."
-    p2p: "<a name=\"[vocabulary.p2p]\">P2P</a>"
+    p2p: "P2P"
     p2ptxt: "Een peer-to-peer-netwerk is <b>een systeem dat zich gedraagt als een georganiseerd collectief</b> waarin individuele systemen direct met elkaar communiceren, in plaats van via een centrale server. In het geval van Bitcoin is het netwerk zó georganiseerd, dat elke gebruiker de transacties waar hij weet van heeft, uitzendt naar alle andere gebruikers. Een belangrijke eigenschap van deze inrichting: er is geen bank of andere derde partij nodig."
-    privatekey: "<a name=\"[vocabulary.private-key]\">Geheime sleutel</a>"
+    privatekey: "Geheime sleutel"
     privatekeytxt: "Een geheime sleutel (Engels: Private Key) is een <b>geheim stuk data waarmee u kunt bewijzen dat de bitcoins die bij een bepaald Bitcoin-adres horen van u zijn</b> middels een cryptografische <a href=\"#[vocabulary.signature]\">digitale handtekening</a>. Elk <a href=\"#[vocabulary.address]\">Bitcoin-adres</a> heeft een eigen, unieke geheime sleutel. Uw geheime sleutels slaat u op in uw eigen computer als u een <a href=\"#[vocabulary.wallet]\">portemonnee</a>-programma gebruikt, of u bewaart ze op een server van een professionele partij als u de voorkeur geeft aan een web-portemonnee. U mag uw geheime sleutels nooit weggeven, want zij bepalen wie de zeggenschap heeft over de bitcoins die op de Bitcoin-adressen staan die ermee samenhangen."
-    signature: "<a name=\"[vocabulary.signature]\">Digitale handtekening</a>"
+    signature: "Digitale handtekening"
     signaturetxt: "Een digitale handtekening (Engels: signature) is <b>een wiskundig mechanisme waarmee bewezen kan worden van wie iets is</b>. In het geval van Bitcoin zijn een <a href=\"#[vocabulary.address]\">Bitcoin-adres</a> en de bijbehorende <a href=\"#[vocabulary.private-key]\">geheime sleutel</a> met elkaar verbonden door de wiskundige regels van het systeem. Zodra de Bitcoin-software een transactie ondertekent met uw geheime sleutel kan iedereen in het netwerk altijd controleren dat de digitale handtekening bij het adres hoort - maar toch kan nooit iemand uw geheime sleutel raden en zo de controle over uw bitcoins verwerven."
-    wallet: "<a name=\"[vocabulary.wallet]\">Portemonnee</a>"
+    wallet: "Portemonnee"
     wallettxt: "Een Bitcoin-portemonnee (Engels: wallet) is <b>de digitale versie van een gewone portemonnee</b>. Elke Bitcoin-portemonnee weet het totale saldo van alle <a href=\"#[vocabulary.address]\">Bitcoin-adressen</a> die erin zitten. Precies zoals u de verschillende biljetten en munten in uw echte portemonnee kunt tellen. En net als met cash bepaalt u met uw Bitcoin-portemonnee ook precies aan wie u hoeveel geld geeft. Dit is anders dan bij creditcards, waar de verkoper aangeeft hoeveel er van uw kaart wordt afgeschreven."
   you-need-to-know:
     title: "Wat u moet weten - Bitcoin"
@@ -485,15 +472,15 @@ nl:
   anchor:
     vocabulary:
       address: bitcoin-adres
-      block-chain: blokketen
+      blockchain: blokketen
       block: blok
       btc: btc
       confirmation: bevestiging
       cryptography: cryptografie
-      double-spend: dubbele-uitgaven
-      hash-rate: hashsnelheid
+      doublespend: dubbele-uitgaven
+      hashrate: hashsnelheid
       mining: delven
       p2p: p2p
-      private-key: geheime-sleutel
+      privatekey: geheime-sleutel
       signature: digitale-handtekening
       wallet: portemonnee
