@@ -105,7 +105,7 @@ fr:
     summary: "Votre porte-monnaie Bitcoin est ce qui vous permet de faire des transactions avec le monde. Il vous rend propriétaire d'adresses Bitcoin que vous pouvez utiliser pour recevoir des bitcoins d'autres utilisateurs et en envoyer. Comme les emails, vous pouvez recevoir des bitcoins lorsque vous êtes hors-ligne, et tous les porte-monnaies Bitcoin sont compatibles entre eux. Avant de commencer avec le Bitcoin, assurez-vous d'abord d'avoir lu <a href=\"#you-need-to-know#\"><b>ce que vous devez savoir</b></a>."
     getstarted: "Débutez rapidement et simplement"
     getstartedsum: "Si vous êtes un nouvel utilisateur, ces porte-monnaie sont un bon point de départ."
-    getstarteddesk: "<a href=\"#download#\"><b>Bitcoin-Qt</b></a> est un logiciel disponible pour Windows, Mac et Linux."
+    getstarteddesk: "<a href=\"https://multibit.org/\"><b>Multibit</b></a> est un logiciel disponible pour Windows, Mac et Linux."
     getstartedmobi: "<a href=\"https://play.google.com/store/apps/details?id=de.schildbach.wallet\"><b>Bitcoin Wallet</b></a> pour Android fonctionne sur smartphones et tablettes."
     bethenetwork: "Faites partie du réseau Bitcoin"
     bethenetworktxt: "Possédez-vous un ordinateur que vous gardez allumé en permanence ? Vous pouvez aider la communauté simplement en laissant fonctionner le <a href=\"#download#\"><b>client Bitcoin original</b></a> sur celui-ci. Le client Bitcoin original est plus gourmand en ressource et prendra une journée entière pour se synchroniser avec le réseau. Après quoi, votre ordinateur contribuera au réseau en vérifiant et relayant les transactions et en partageant la chaîne de bloc."

@@ -121,7 +121,7 @@ en:
     summary: "Your Bitcoin wallet is what allows you to transact with the world. It gives you ownership of Bitcoin <i>addresses</i> that you can use to receive coins from other users and then lets you send those coins onwards. Just like email, you can receive bitcoins when you are offline, and all wallets are compatible with each other. Before you start with Bitcoin, <b>be sure to read <a href=\"#you-need-to-know#\">what you need to know</a></b> first."
     getstarted: "Get started fast and easy"
     getstartedsum: "If you are new to Bitcoin, these wallets are a good place to begin."
-    getstarteddesk: "<a href=\"#download#\"><b>Bitcoin-Qt</b></a> is an app you can download for Windows, Mac, and Linux."
+    getstarteddesk: "<a href=\"https://multibit.org/\"><b>Multibit</b></a> is an app you can download for Windows, Mac, and Linux."
     getstartedmobi: "<a href=\"https://play.google.com/store/apps/details?id=de.schildbach.wallet\"><b>Bitcoin Wallet</b></a> for Android runs on your phone or tablet."
     bethenetwork: "Be part of the Bitcoin network"
     bethenetworktxt: "Do you have a computer that you keep switched on all the time, that's connected to the Internet? You can help the community by simply running the <a href=\"#download#\"><b>original Bitcoin client</b></a> on it. The original client is more resource intensive and will take a complete day to synchronize. After that your computer will contribute to the network by checking and relaying transactions."
