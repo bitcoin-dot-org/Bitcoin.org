@@ -22,7 +22,7 @@ menu:
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
 {% lesscss main.less %}
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
-{% if page.lang == 'ar' %}<link rel="stylesheet" type="text/css" href="/ar/css/main.css">{% endif %}{% if page.lang == 'fa' %}<link rel="stylesheet" type="text/css" href="/fa/css/main.css" />{% endif %}{% if page.lang == 'pl' %}<link rel="stylesheet" type="text/css" href="/pl/css/main.css" />{% endif %}{% if page.lang == 'ru' %}<link rel="stylesheet" type="text/css" href="/ru/css/main.css" />{% endif %}
+{% if page.lang == 'ar' or page.lang == 'fa' or page.lang == 'pl' or page.lang == 'ru' %}<link rel="stylesheet" type="text/css" href="/{{ page.lang }}/css/main.css">{% endif %}
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
