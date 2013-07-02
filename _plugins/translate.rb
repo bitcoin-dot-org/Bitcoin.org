@@ -50,8 +50,15 @@ module Jekyll
       end
       #get translated string
       text = ''
-      if site['loc'][lang].has_key?(cat) && site['loc'][lang][cat].has_key?(id) && !site['loc'][lang][cat][id].nil?
-        text = site['loc'][lang][cat][id]
+      keys = cat.split('.')
+      ar = site['loc'][lang]
+      #recursive loop to handle cases where category is like "anchor.vocabulary"
+      for key in keys do
+        break if !ar.is_a?(Hash) || !ar.has_key?(key) || !ar[key].is_a?(Hash)
+        ar = ar[key]
+      end
+      if ar.has_key?(id) && ar[id].is_a?(String)
+        text = ar[id]
       end
       #urlencode if string is a url
       if cat == 'url'
