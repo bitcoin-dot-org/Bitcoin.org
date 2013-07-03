@@ -27,6 +27,24 @@ fr:
     statstxt3: "Un volume de transaction quotidien de plusieurs millions de dollars américains échangés chaque jour à travers plus de 50'000 transactions."
     statstxt4: "La valeur totale de tous les bitcoins en circulation est supérieure à 1.3 milliards USD."
     statstxt5: "Seulement un <a href=\"https://en.bitcoin.it/wiki/Incidents#Value_overflow\">incident</a> majeur dans le protocole (corrigé en août 2010)."
+  about-us:
+    title: "À propos de bitcoin.org"
+    pagetitle: "À propos de bitcoin.org"
+    pagedesc: "Bitcoin.org a pour but de contribuer à pérenniser le Bitcoin."
+    own: "Qui possède bitcoin.org"
+    owntxt: "Bitcoin.org est le nom de domaine original utilisé par le premier site web sur le Bitcoin. Il a été enregistré et est encore géré par les <a href=\"#development#\">développeurs principaux</a> et par des membres additionnels de la communauté, avec l'aide des <a href=\"#community#\">communautés Bitcoin</a>. Bitcoin.org n'est pas un site web officiel. De la même façon que personne ne possède la technologie des emails, personne ne possède le réseau Bitcoin. En conséquence, personne ne peut parler avec autorité au nom du Bitcoin."
+    control: "Alors... qui contrôle le Bitcoin?"
+    controltxt: "Bitcoin est contrôlé par tous les utilisateurs Bitcoin à travers le monde. Les développeurs améliorent les logiciels mais il ne peuvent pas imposer un changement dans les règles du protocole Bitcoin car chaque utilisateur est libre de choisir quel logiciel il utilise. Afin de rester compatibles entre eux, tous les utilisateurs ont besoin d'utiliser des logiciels qui se conforment aux mêmes règles. Bitcoin ne peut fonctionner décemment qu'avec un consensus complet entre tous ses utilisateurs. En conséquence, tous les utilisateurs et développeurs ont un intérêt prédominant à adopter et à protéger ce consensus."
+    mission: "Mission"
+    missiontxt1: "Informer les utilisateurs afin de les protéger des erreurs communes."
+    missiontxt2: "Donner une description exacte des propriétés du Bitcoin, de ses utilisations potentielles et de ses limites."
+    missiontxt3: "Afficher des alertes et des événements touchant le réseau Bitcoin de façon transparente."
+    missiontxt4: "Inviter des humains talentueux à contribuer au développement du Bitcoin à différents niveaux."
+    missiontxt5: "Offrir de la visibilité à l'écosystème du Bitcoin à grande échelle."
+    missiontxt6: "Améliorer l'accessibilité mondiale du Bitcoin par l'internationalisation."
+    missiontxt7: "Demeurer une ressource d'information neutre à propos du Bitcoin."
+    help: "Aidez-nous"
+    helptxt: "Vous pouvez rapporter tout problème ou aider à améliorer bitcoin.org sur <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a> en ouvrant une \"issue\" ou une \"pull request\" en anglais. Lorsque vous soumettez une \"pull request\", veuillez prendre le temps nécessaire pour discuter vos changements et adapter votre travail. Vous pouvez aider à la traduction en rejoignant une équipe sur <a href=\"https://www.transifex.com/projects/p/bitcoinorg/\">Transifex</a>. Veuillez ne pas demander de publicité pour votre entreprise ou de votre site web personnel, sauf pour des cas spéciaux comme les conférences."
   bitcoin-for-businesses:
     title: "Bitcoin pour les entreprises - Bitcoin"
     pagetitle: "Bitcoin pour les entreprises"
@@ -40,7 +58,7 @@ fr:
     pci: "Aucune conformité PCI requise"
     pcitext: "Accepter les cartes de crédit en ligne requiert de pénibles et longues procédures de sécurité nécessaires pour se conformer à la norme PCI. Bien que protéger les cartes de crédit soit une bonne chose, la sécurité du Bitcoin est conçue de manière à rendre cette approche obsolète. Vos paiements sont sécurisés par le réseau, pas à vos frais."
     instant: "Transactions instantanées pour les points de vente"
-    instanttext: "Une transaction Bitcoin est normalement propagée en quelques secondes et confirmée en 10 minutes. Durant ce délai, cette transaction peut être considérée comme authentique mais réversible. Si vous avez vraiment besoin d'utiliser les transactions instantanées, il est recommandé d'exiger un léger frais de transaction et d'utiliser un système de détection des doubles-dépenses."
+    instanttext: "Une transaction Bitcoin est normalement propagée en quelques secondes et confirmée en 10 minutes. Durant ce délai, cette transaction peut être considérée comme authentique mais réversible. Si vous avez besoin d'utiliser les transactions instantanées, il est recommandé d'exiger un léger frais de transaction et d'utiliser un système de détection des doubles-dépenses."
     visibility: "Gagnez en visibilité avec peu d'effort"
     visibilitytext: "Le Bitcoin est un marché émergeant où de plus en plus de nouveaux consommateurs cherchent à dépenser leurs bitcoins pour des biens et des services. Les accepter est une bonne façon d'obtenir de nouveaux clients et de donner à votre entreprise plus de visibilité. Accepter de nouvelles formes de paiements s'est toujours avéré bénéfique pour les commerces en ligne."
     multisig: "Multi-signature"
@@ -61,8 +79,6 @@ fr:
     invoicetext: "Bitcoin peut virtuellement créer autant d'adresse Bitcoin qu'un utilisateur le désire. Ce qui signifie que si vous souhaitez développer un système de paiement associé à un numéro de facture, vous avez simplement besoin de générer et surveiller une adresse Bitcoin pour chaque paiement. Vous pouvez aussi ré-utiliser les même adresses une fois les paiements complétés."
     security: "Presque toute la sécurité est du côté du client"
     securitytext: "La plus grande partie de la sécurité est prise en charge par le protocole du côté du client et du côté du réseau Bitcoin. L'authenticité des créanciers est vérifiée grâce aux clés privées et la double-dépense est bloquée par le réseau Bitcoin. Ce qui signifie que vous n'avez pas à vous soucier d'être conforme avec la norme PCI ou d'implémenter des détections de fraudes. Bitcoin fonctionne, point à la ligne."
-    instant: "Transactions instantanées et confirmations"
-    instanttext: "Une transaction Bitcoin est normalement propagée en quelques secondes et confirmée dans les 10 minutes suivantes. Durant ce délai, la transaction peut être considérée comme authentique mais réversible. Si vous avez réellement besoin d'utiliser les transactions instantanées, il est recommandé d'exiger de petits frais de transaction et d'utiliser un système de détection des doubles-dépenses."
     micro: "Micro paiements bons marchés"
     microtext: "Bitcoin offre les frais de transaction les plus bas pour tout type de paiement, y compris les micro-paiements. Ce qui signifie qu'il peut aussi être utilisé pour concevoir et implémenter des nouveaux services en ligne créatifs qui ne pouvaient pas exister pour des raisons financières."
   bitcoin-for-individuals:
@@ -76,11 +92,11 @@ fr:
     simple: "Fonctionne partout, en tout temps"
     simpletext: "Tout comme les emails, vous n'avez pas besoin de forcer qui que ce soit à utiliser le même logiciel ou le même porte-monnaie que vous. Laissez à vos amis et à votre famille la liberté de choisir le service qui leur convient le mieux : tous les services Bitcoin sont compatibles entre eux puisqu'ils utilisent la même technologie ouverte. Le réseau Bitcoin ne dort jamais, même le dimanche !"
     secure: "Sécurité et contrôle de votre argent"
-    securetext: "Les transactions Bitcoin sont sécurisées par une cryptographie de niveau militaire. Personne ne peut prélever votre compte ou faire de paiement en votre nom. Tant que vous faites le nécessaire pour <a href=\"#secure-your-wallet#\">protéger votre porte-monnaie</a>, Bitcoin vous donne le contrôle de votre argent et un niveau de protection intéressant contre différentes formes de fraudes."
+    securetext: "Les transactions Bitcoin sont sécurisées par une cryptographie de niveau militaire. Personne ne peut ponctionner votre compte ou faire de paiement en votre nom. Tant que vous faites le nécessaire pour <a href=\"#secure-your-wallet#\">protéger votre porte-monnaie</a>, Bitcoin vous donne le contrôle de votre argent et un grand niveau de protection contre beaucoup de formes de fraudes."
     lowfee: "Presque gratuit"
     lowfeetext: "Bitcoin permet d'envoyer et de recevoir des paiements à très peu de frais. À l'exception de cas spéciaux comme les très petits paiements, il n'y a aucun frais obligatoire. Il est toutefois recommandé de payer des frais de transaction pour une confirmation plus rapide de vos transactions et pour rémunérer les personnes qui font fonctionner le réseau Bitcoin."
-    anonymous: "Protéger votre identité"
-    anonymoustext: "Avec Bitcoin, il n'y a pas de numéro de carte de crédit qu'un acteur malveillant peut collecter afin de voler votre identité. En fait, il est même possible d'envoyer un paiement sans révéler votre identité, de la même façon qu'avec de l'argent véritable. Vous devriez toutefois prendre en compte que certains efforts peuvent être requis pour <a href=\"#you-need-to-know#\">protéger votre vie privée</a>."
+    anonymous: "Protégez votre identité"
+    anonymoustext: "Avec Bitcoin, il n'y a pas de numéro de carte de crédit qu'un acteur malveillant peut collecter afin d'usurper votre identité. En fait, il est même possible d'effectuer un paiement sans révéler votre identité, de la même façon qu'avec de l'argent véritable. Vous devriez toutefois prendre en compte que certains efforts peuvent être requis pour <a href=\"#you-need-to-know#\">protéger votre vie privée</a>."
   community:
     title: "Communauté - Bitcoin"
     pagetitle: "Les communautés Bitcoin"
@@ -105,7 +121,7 @@ fr:
     summary: "Votre porte-monnaie Bitcoin est ce qui vous permet de faire des transactions avec le monde. Il vous rend propriétaire d'adresses Bitcoin que vous pouvez utiliser pour recevoir des bitcoins d'autres utilisateurs et en envoyer. Comme les emails, vous pouvez recevoir des bitcoins lorsque vous êtes hors-ligne, et tous les porte-monnaies Bitcoin sont compatibles entre eux. Avant de commencer avec le Bitcoin, assurez-vous d'abord d'avoir lu <a href=\"#you-need-to-know#\"><b>ce que vous devez savoir</b></a>."
     getstarted: "Débutez rapidement et simplement"
     getstartedsum: "Si vous êtes un nouvel utilisateur, ces porte-monnaie sont un bon point de départ."
-    getstarteddesk: "<a href=\"https://multibit.org/\"><b>MultiBit</b></a> est un logiciel disponible pour Windows, Mac et Linux."
+    getstarteddesk: "<a href=\"#download#\"><b>Bitcoin-Qt</b></a> est un logiciel disponible pour Windows, Mac et Linux."
     getstartedmobi: "<a href=\"https://play.google.com/store/apps/details?id=de.schildbach.wallet\"><b>Bitcoin Wallet</b></a> pour Android fonctionne sur smartphones et tablettes."
     bethenetwork: "Faites partie du réseau Bitcoin"
     bethenetworktxt: "Possédez-vous un ordinateur que vous gardez allumé en permanence ? Vous pouvez aider la communauté simplement en laissant fonctionner le <a href=\"#download#\"><b>client Bitcoin original</b></a> sur celui-ci. Le client Bitcoin original est plus gourmand en ressource et prendra une journée entière pour se synchroniser avec le réseau. Après quoi, votre ordinateur contribuera au réseau en vérifiant et relayant les transactions et en partageant la chaîne de bloc."
@@ -116,7 +132,7 @@ fr:
     walletweb: "Porte-monnaie web"
     walletwebtxt: "Les porte-monnaie web vous permettent d'utiliser vos bitcoins partout avec moins d'effort pour les protéger. Toutefois, vous devez choisir ces porte-monnaie avec prudence puisque ces services hébergent vos bitcoins."
     walletbitcoinqt: "Bitcoin-Qt est le logiciel Bitcoin original sur lequel s'appuie le réseau. Il offre le plus haut niveau de sécurité, de vie privée et de stabilité. Toutefois, il offre moins de fonctionnalités et prend beaucoup d'espace et de mémoire."
-    walletmultibit: "MultiBit est un client léger qui tâche d’être rapide et facile d'utilisation. Il se synchronise avec le réseau et est prêt en quelques minutes. MultiBit est disponibile en plusieurs langues. Un bon choix pour les novices."
+    walletmultibit: "Multibit est un client léger qui tâche d’être rapide et facile d'utilisation. Il se synchronise avec le réseau et est prêt en quelques minutes. Multibit est disponibile en plusieurs langues. Un bon choix pour les novices."
     walletarmory: "Armory est un client Bitcoin avancé qui élargit les fonctionnalités de Bitcoin-Qt pour les super-utilisateurs. Armory offre plusieurs formes de sauvegardes et de chiffrement et il permet une utilisation hors-ligne sécurisée."
     walletelectrum: "Electrum se concentre sur la rapidité et la simplicité. Electrum est très léger et utilise des serveurs distants pour augmenter ses performances. Il vous permet aussi de récupérer votre porte-monnaie à l'aide d'une phrase secrète."
     walletbitcoinwallet: "Bitcoin Wallet est un client léger pour Android et BlackBerry OS. Cette application n'a pas besoin d'être associée à un service en ligne. Et elle est compatible avec le scan de codes QR et la technologie NFC."
@@ -340,11 +356,13 @@ fr:
     secure: "Sécuriser son porte-monnaie"
     securetxt: "Comme dans la vraie vie, votre porte-monnaie doit être sécurisé. Bitcoin permet le transfert de valeur mondialement plus facilement que jamais. De telles fonctionnalités impliquent aussi des risques de sécurité importants. Malgré tout, Bitcoin peut offrir de très hauts niveaux de sécurité s'il est utilisé correctement. Rappelez vous qu'il est toujours de votre responsabilité d'adopter les mesures nécessaires à la protection de votre argent</b>. <a href=\"#secure-your-wallet#\"><b>En savoir plus afin de sécuriser votre porte-monnaie</b></a>."
     volatile: "Le prix du Bitcoin est volatile"
-    volatiletxt: "Le prix d'un bitcoin peut augmenter ou diminuer de façon imprévisible sur une courte période de temps en raison de sa jeune économie, sa nature inusitée et ses marchés parfois peu liquides. En conséquence, conserver vos économies avec Bitcoin n'est pas recommandé. Bitcoin doit être considéré comme un actif à haut risque et vous ne devriez jamais stocker en bitcoins de l'argent que vous ne pourriez pas vous permettre perdre. Si vous recevez des paiements en Bitcoin, beaucoup de fournisseurs de services vous permettent de transférer vos bitcoins instantanément dans votre devise."
+    volatiletxt: "Le prix d'un bitcoin peut augmenter ou diminuer de façon imprévisible sur une courte période de temps en raison de sa jeune économie, sa nature inusitée et ses marchés parfois peu liquides. En conséquence, conserver vos économies en bitcoins n'est pas recommandé pour le moment. Bitcoin doit être considéré comme un actif à haut risque et vous ne devriez jamais stocker en bitcoins de l'argent que vous ne pourriez pas vous permettre perdre. Si vous recevez des paiements en Bitcoin, beaucoup de fournisseurs de services vous permettent de transférer vos bitcoins instantanément dans votre devise."
     irreversible: "Les paiements Bitcoin sont irréversibles"
     irreversibletxt: "Toute transaction effectuée avec Bitcoin ne peut être renversée. Elles peuvent seulement être remboursées par la personne recevant les fonds. Ce qui signifie que vous devez vous assurer de faire commerce avec des entreprises et des personnes que vous connaissez et en qui vous pouvez avoir confiance. Mais ne vous en faites pas, Bitcoin peut détecter les erreurs de frappe et ne vous laissera généralement pas envoyer d'argent vers une adresse invalide."
     anonymous: "Bitcoin n'est pas anonyme"
     anonymoustxt: "Des efforts sont nécessaires afin de protéger votre vie privée avec Bitcoin. Toutes les transactions Bitcoin sont stockées de façon publique et permanente sur le réseau. Ce qui signifie que le solde et les transactions de chaque adresse Bitcoin peuvent être consultés par tout un chacun. Toutefois, il n'est pas possible d'associer une adresse Bitcoin à son propriétaire jusqu'à ce que des informations personnelles ne soient révélées par le propriétaire de l'adresse au cours d'une transaction. Pour cette raison, il est recommandé d'utiliser différentes adresses Bitcoin. En fait, vous devriez en utiliser une nouvelle chaque fois que vous recevez un paiement. Cette pratique est spécialement importante pour les utilisations publiques comme les sites web. Vous pouvez aussi considérer l'idée de cacher l'adresse IP de votre ordinateur avec un outil tel que <a href=\"https://www.torproject.org/\">Tor</a> afin qu'elle ne puisse pas être enregistrée."
+    instant: "Les transactions instantanées sont moins sécurisées"
+    instanttxt: "Une transaction Bitcoin est normalement propagée en quelques secondes et confirmée dans les 10 minutes suivantes. Durant ce délai, une transaction peut être considérée comme authentique mais toujours réversible. Des utilisateurs malhonnêtes pourraient essayer de tricher. Si vous ne pouvez pas attendre une confirmation, demander un petit frais de transaction ou utiliser un système de détection pour les transactions risquées peut augmenter la sécurité. Pour des montants plus importants comme 1000 $USD, attendre au moins 6 confirmations ou plus est une bonne pratique. Chaque confirmation diminue <i>exponentiellement</i> le risque d'une transaction renversée."
     experimental: "Bitcoin est encore expérimental"
     experimentaltxt: "Bitcoin est une nouvelle devise expérimentale dont le développement est très actif. Bien qu'elle devienne de moins en moins expérimentale chaque jour au fur et à mesure que son utilisation se répend, vous devez garder en tête que le Bitcoin est une invention nouvelle qui joue sur un terrain qui n'a jamais été exploré à ce jour. En conséquence, son futur est imprévisible."
     tax: "N'oubliez pas les taxes gouvernementales"
@@ -370,12 +388,14 @@ fr:
     menu-innovation: Innovation
     menu-foundation: Fondation
     menu-about: À propos
+    menu-about-us: "À propos de bitcoin.org"
     button-wallet: "Choisissez votre porte-monnaie"
     button-know: "Vous devez savoir"
     button-support: "Soutenir Bitcoin"
     footer: "© Bitcoin Project 2009–2013 Publié sous la <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">licence MIT</a>"
   url:
     about: a-propos
+    about-us: a-propos-de-nous
     bitcoin-for-developers: bitcoin-pour-developpeurs
     bitcoin-for-enthusiasts: bitcoin-pour-passionnes
     bitcoin-for-individuals: bitcoin-pour-particuliers
