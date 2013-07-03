@@ -12,6 +12,7 @@ ALERT_CLASS:
   nl: 
   pl: 
   ru: 
+  tr: 
   
 ALERT:
   all: 
@@ -25,6 +26,7 @@ ALERT:
   nl: 
   pl: 
   ru: 
+  tr: 
 
 langsorder:
 - id: de
@@ -35,6 +37,7 @@ langsorder:
 - id: nl
 - id: pl
 - id: ru
+- id: tr
 - id: ar
 - id: fa
 
@@ -49,6 +52,7 @@ langs:
   nl: Nederlands
   pl: Polski
   ru: Русский
+  tr: Türkçe
 
 safe:        false
 auto:        false
