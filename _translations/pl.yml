@@ -27,6 +27,24 @@ pl:
     statstxt3: "Ponad 50,000 transakcji dziennie o wartości milionów dolarów."
     statstxt4: "Pełna wartość wszystkich monet bitcoin w obiegu to 1,3 miliarda USD."
     statstxt5: "Jedyny znaczący <a href=\"https://en.bitcoin.it/wiki/Incidents#Value_overflow\">problem bezpieczeństwa</a> w protokole został naprawiony w sierpniu 2010."
+  about-us:
+    title: "O bitcoin.org"
+    pagetitle: "O bitcoin.org"
+    pagedesc: "Bitcoin.org jest dedykowany wsparciu stałego rozwoju Bitcoin."
+    own: "Kto posiada bitcoin.org"
+    owntxt: "Bitcoin.org jest oryginalną nazwą domeny używaną poprzez witrynę Bitcoin. Została zarejestrowana i nadal jest zarządzana poprzez <a href=\"#development#\">trzon deweloperów Bitcoin</a> oraz kolejnych członków społeczności skupionej wokół <a href=\"#community#\">społeczności Bitcoin</a>. Bitcoin.org nie jest oficjalną stroną. Nikt nie jest właścicielem sieci Bitcoin tak jak nikt nie jest właścicielem  technologii e-mail. Z tego względu nikt nie może mówić w imieniu Bitcoin z pozycji pełnomocnika."
+    control: "Tak więc... kto kontroluje Bitcoin?"
+    controltxt: "Bitcoin jest kontrolowany przez wszystkich użytkowników bitcoin na świecie. Deweloperzy rozwijają oprogramowanie, ale nie mogą wymóc zmiany w protokole każdy użytkownik może wybrać dowolną aplikację do użytkowania. By programy były ze sobą kompatybilne to wszyscy użytkownicy muszą używać oprogramowania zgodnego z identycznymi zasadami. Bitcoin może odpowiednio działać jedynie przy pełnej zgodności pomiędzy użytkownikami. Z tego względu wszyscy użytkownicy oraz deweloperzy są silnie zmotywowani by tą zgodność zaadoptować i chronić."
+    mission: "Misja"
+    missiontxt1: "Informowanie użytkowników by chronić ich przed popełnianiem powszechnie spotykanych błędów."
+    missiontxt2: "Przedstawienie rzetelnej informacji  o właściwościach, potencjalnych użyciach oraz limitacjach Bitcoin."
+    missiontxt3: "Transparentne przedstawienie ostrzeżeń oraz wydarzeń związanych z siecią Bitcoin."
+    missiontxt4: "Zapraszanie utalentowanych ludzi do pomocy z rozwojem Bitcoin na wielu poziomach."
+    missiontxt5: "Zapewnienie przeźroczystości dla środowiska Bitcoin w skali makro."
+    missiontxt6: "Zwiększenie dostępności Bitcoin na świecie wraz z tłumaczeniami."
+    missiontxt7: "Pozostanie neutralnym zasobem informacji o Bitcoin."
+    help: "Wesprzyj nas"
+    helptxt: "Możesz zgłosić dowolny problem lub pomóc ulepszyć bitcoin.org na <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a> poprzez zgłoszenie problemu lub przygotowanie prośby o dodanie kodu - pull request - w języku angielskim. Zgłaszając taką prośbę proszę poświęcić również wymagany czas na dyskusję nad wprowadzanymi zmianami w twoim kodzie. Możesz pomóc z tłumaczeniami dołączając do zespołu tłumaczy na <a href=\"https://www.transifex.com/projects/p/bitcoinorg/\">Transifex</a>.  Proszę nie pytaj o promocję swojej własnej strony lub biznesu poza wyjątkami jak organizowanie konferencji."
   bitcoin-for-businesses:
     title: "Bitcoin dla Biznesu - Bitcoin"
     pagetitle: "Bitcoin dla Biznesu"
@@ -61,8 +79,6 @@ pl:
     invoicetext: "Bitcoin może utworzyć tak wiele adresów Bitcoin jak tylko chcesz. Także jeśli zbudowałeś system płatności powiązany z fakturą musisz po prostu wygenerować oraz monitorować adres Bitcoin dla każdej płatności. Możesz również użyć takiego samego adresu dla kolejnych płatności."
     security: "Większość bezpieczeństwa jest po stronie klienta"
     securitytext: "Większa część zabezpieczeń jest wykonywana przez protokół po stronie klienta sieci Bitcoin. Autentyczność jest weryfikowana poprzez klucze prywatne, natomiast podwójne wydatkowanie jest sprawdzane oraz zapobieganie przez sieć Bitcoin. To wszystko oznacza brak konieczności dla użycia zgodności PCI czy detekcji oszustw. Kochamy kiedy coś po prostu działa, czy nie?"
-    instant: "Natychmiastowe transakcje i potwierdzenia"
-    instanttext: "Transakcja Bitcoin jest zwykle wykonana w ciągu kilku sekund oraz potwierdzona w ciągu 10 minut. Przed upływem tego czasu transakcja może zostać uznana za autentyczną lecz odwracalną. Rekomendujemy byś zapytał o niewielką opłatę za transakcję oraz użycie systemu detekcji podwójnego wydatkowania."
     micro: "Tanie mikro-płatności"
     microtext: "Bitcoin oferuje najniższe opłaty za przeprowadzenie dowolnego rodzaju transakcji włączając w to mikro-płatności. To oznacza, że może zostać użyty przy zaplanowaniu oraz budowie nowego kreatywnego serwisu online który wcześniej nie miał racji bytu ze względu na ograniczenia finansowe."
   bitcoin-for-individuals:
@@ -162,7 +178,7 @@ pl:
   events:
     title: "Konferencje i wydarzenia - Bitcoin"
     pagetitle: "Konferencje i wydarzenia"
-    pagedesc: "Odnajdź interesujące wydarzenia i konferencje organizowane przez różnych organizatorów na całym świecie."
+    pagedesc: "Odnajdź wydarzenia i konferencje przygotowane przez różnych organizatorów na całym świecie."
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Spotkania Bitcoin na BitcoinTalk</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Spotkania Bitcoin na Wiki</a>"
     meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Grupy spotkaniowe Bitcoin</a>"
@@ -321,7 +337,7 @@ pl:
     cryptographytxt: "Kryptografia jest działem matematyki który pozwala ci tworzyć <b>dowody matematyczne zawierające wysoki poziom bezpieczeństwa i pewności</b>. Handel sieciowy oraz bankowość już używa kryptografii. W przypadku Bitcoin kryptografia jest używana by zabezpieczyć portfel przed wycofaniem z niego funduszy przez osoby niepowołane czy przed zakłamaniem zapisów w <a href=\"#[vocabulary.blockchain]\">łańcuchu bloków</a>. Może być również użyta by zaszyfrować portfel by ten nie mógł zostać użyty bez hasła."
     doublespend: "Podwójne Wydatkowanie"
     doublespendtxt: "Jeśli ktoś złośliwy spróbuje <b>wydać swoje bitcoiny dwóm różnym odbiorcom jednocześnie</b>, To nazywamy to podwójnym wydatkowaniem. <a href=\"#[vocabulary.mining]\">Wydobycie</a> Bitcoin oraz <a href=\"#[vocabulary.blockchain]\">łańcuch bloków</a> są tam by w sieci powstała zgodność co do tego która transakcja powinna zostać sfinalizowana."
-    hashrate: "Prędkość Hashowania</a>"
+    hashrate: "Prędkość Hashowania"
     hashratetxt: "Prędkość haszowania jest <b>jednostką pomiarową siły obliczeniowej sieci Bitcoin</b>. Sieć Bitcoin musi poczynić wiele intensywnych obliczeń matematycznych ze względów bezpieczeństwa. Kiedy sieć osiągnie prędkość 10 TH/s oznacza że może wykonać 10 bilionów operacji na sekundę."
     mining: "Wydobycie"
     miningtxt: "Wydobywanie Bitcoin to proces <b>instruowania sprzętu komputerowego do wykonywania obliczeń matematycznych dla sieci Bitcoin potwierdzających transakcje</b> oraz zwiększających ich bezpieczeństwo. Niewielkie opłaty mogą być pobierane jako nagroda za wykonywanie usług wydobywczych wraz z nowo tworzonymi monetami bitcoin. Wydobywanie to wyspecjalizowany oraz konkurencyjny rynek gdzie nagrody są dzielone zgodnie z ilością wykonywanych transakcji. Nie wszyscy użytkownicy Bitcoin dokonują wydobywania oraz nie jest to łatwy sposób na zarobkowanie."
@@ -345,6 +361,8 @@ pl:
     irreversibletxt: "Żadna z transakcji zawartych poprzez Bitcoin nie może zostać odwrócona, lecz jedynie może być refundowana przez osobę która odebrała fundusze. To oznacza, że powinieneś prowadzić biznes z ludźmi lub organizacjami którym ufasz. Lecz nie martw się, Bitcoin potrafi odkryć literówki i zwykle nie pozwoli tobie przesłać pieniędzy na nieprawidłowy adres."
     anonymous: "Bitcoin jest anonimowy"
     anonymoustxt: "Pewien wysiłek jest włożony w to by chronić twoją prywatność wraz z Bitcoin. Wszystkie transakcje są przechowywane stale i publicznie w sieci co oznacza, że każdy może sprawdzić bilans i transakcje zawarte przez dany adres, jednakże tożsamość właściciela danego adresu jest nieznana do momentu gdy ten ujawni swoje dane osobiste podczas dokonywania transakcji. Z tego właśnie powodu rekomendujemy by użytkownicy Bitcoin używali wielu różnych adresów. Faktycznie powinieneś utworzyć nowy adres za każdym razem gdy otrzymujesz pieniądze. To jest bardzo ważne w przypadkach publicznego ich użytkowania jak strony internetowe. Rozważ również ukrycie adresu IP swojego komputera narzędziami jak <a href=\"https://www.torproject.org/\">Tor</a> by twoje działania nie mogły one zostać zalogowane."
+    instant: "Błyskawiczne transakcje są mniej bezpieczne"
+    instanttxt: "Transakcja Bitcoin jest zwykle wykonana w ciągu kilku sekund oraz potwierdzona w ciągu 10 minut. Przed upływem tego czasu transakcja może zostać uznana za autentyczną lecz odwracalną. Nieuczciwi użytkownicy mogą próbować oszukiwać. Jeśli nie możesz czekać na potwierdzenie bezpieczeństwo może zostać zwiększone poprzez zastosowanie niewielkiej opłaty za transakcję lub użycie systemu detekcji podwójnego wydatkowania. Dla większych transakcji powiedzmy o wartości 1000 USD warto poczekać na 6 lub więcej potwierdzeń. Każde potwierdzenie <i>wykładniczo</i> obniża ryzyko odwrócenia transakcji."
     experimental: "Bitcoin jest nadal eksperymentem"
     experimentaltxt: "Bitcoin jest eksperymentalną walutą która jest aktywnie rozwijana, Mimo, że z każdą kolejną chwilą gdy jego użytkowanie rośnie staje się mniej eksperymentalny to jednak pamiętać, że Bitcoin jest nowym wynalazkiem który eksploruje ideę która nigdy wcześniej nie została wypróbowana. Jako taki jego przyszłość nie może być przewidziana przez nikogo."
     tax: "Nie zapomnij o podatkach rządowych"
@@ -366,16 +384,18 @@ pl:
     menu-community: Społeczność
     menu-development: Rozwój
     menu-events: Wydarzenia
-    menu-press: 
+    menu-press: Prasa
     menu-innovation: Innowacje
     menu-foundation: Fundacja
     menu-about: O bitcoinie
+    menu-about-us: "O bitcoin.org"
     button-wallet: "Wybierz swój portfel"
     button-know: "Powinieneś wiedzieć"
     button-support: "Wesprzyj Bitcoin"
     footer: "© Projekt Bitcoin 2009–2013 Dostępny w ramach <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">licencji MIT</a>"
   url:
     about: o
+    about-us: o-nas
     bitcoin-for-developers: bitcoin-dla-deweloperow
     bitcoin-for-enthusiasts: bitcoin-dla-entuzjastow
     bitcoin-for-individuals: bitcoin-dla-osob-fizycznych
@@ -389,7 +409,7 @@ pl:
     foundation: fundacja
     how-it-works: jak-to-dziala
     innovation: innowacje
-    press: prasa
+    press: 
     resources: zasoby
     secure-your-wallet: zabezpiecz-swoj-portfel
     support-bitcoin: wesprzyj-bitcoin
