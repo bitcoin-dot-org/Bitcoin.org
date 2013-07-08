@@ -22,7 +22,7 @@ menu:
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
 {% lesscss main.less %}
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
-{% if page.lang == 'ar' or page.lang == 'fa' or page.lang == 'pl' or page.lang == 'ru' %}<link rel="stylesheet" type="text/css" href="/{{ page.lang }}/css/main.css">{% endif %}
+{% if page.lang == 'ar' or page.lang == 'fa' or page.lang == 'pl' or page.lang == 'ru' or page.lang == 'zh_TW' %}<link rel="stylesheet" type="text/css" href="/{{ page.lang }}/css/main.css">{% endif %}
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
@@ -81,7 +81,7 @@ menu:
           <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
           <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
           {% case page.lang %}{% when 'ar' or 'de' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}{% else %}<li{% if page.id == 'events' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>{% endcase %}
-          {% case page.lang %}{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' %}{% else %}<li{% if page.id == 'press' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a></li>{% endcase %}
+          {% case page.lang %}{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_TW' %}{% else %}<li{% if page.id == 'press' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a></li>{% endcase %}
         </ul>
       </li>
       <li{% if page.id == 'innovation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate innovation url %}">{% translate menu-innovation layout %}</a></li>
