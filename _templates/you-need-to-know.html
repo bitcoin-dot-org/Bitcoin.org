@@ -5,7 +5,7 @@ id: you-need-to-know
 <h1>{% translate pagetitle %}</h1>
 <p>{% translate summary %}</p>
 
-<h2><img src="/img/ico_key.svg" alt="Icon" />{% translate secure %}</h2>
+<h2><img class="titleicon" src="/img/ico_key.svg" alt="Icon" />{% translate secure %}</h2>
 {% case page.lang %}
 {% when 'ar' %}
 <p>كما في ألعالم ألحقيقي, محفظتك يجب أن تكون بأمان. دائما تذكر أنه من مسؤوليتك أن تتخذ ألإجراءات أللازمة لحماية نقودك. هذه بعض ألخيارات ألتي يجب أن تفكر بها.</p>
@@ -58,22 +58,22 @@ id: you-need-to-know
 {% else %}
 <p>{% translate securetxt %}</p>
 {% endcase %}
-<h2><img src="/img/ico_market.svg" alt="Icon" />{% translate volatile %}</h2>
+<h2><img class="titleicon" src="/img/ico_market.svg" alt="Icon" />{% translate volatile %}</h2>
 <p>{% translate volatiletxt %}</p>
 
-<h2><img src="/img/ico_irreversible.svg" alt="Icon" />{% translate irreversible %}</h2>
+<h2><img class="titleicon" src="/img/ico_irreversible.svg" alt="Icon" />{% translate irreversible %}</h2>
 <p>{% translate irreversibletxt %}</p>
 
-<h2><img src="/img/ico_anon.svg" alt="Icon" />{% translate anonymous %}</h2>
+<h2><img class="titleicon" src="/img/ico_anon.svg" alt="Icon" />{% translate anonymous %}</h2>
 <p>{% translate anonymoustxt %}</p>
 
 {% case page.lang %}{% when 'ar' or 'de' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}{% else %}
-<h2><img src="/img/ico_fast.svg" alt="Icon" />{% translate instant %}</h2>
+<h2><img class="titleicon" src="/img/ico_fast.svg" alt="Icon" />{% translate instant %}</h2>
 <p>{% translate instanttxt %}</p>
 {% endcase %}
 
-<h2><img src="/img/ico_lab.svg" alt="Icon" />{% translate experimental %}</h2>
+<h2><img class="titleicon" src="/img/ico_lab.svg" alt="Icon" />{% translate experimental %}</h2>
 <p>{% translate experimentaltxt %}</p>
 
-<h2><img src="/img/ico_invoice.svg" alt="Icon" />{% translate tax %}</h2>
+<h2><img class="titleicon" src="/img/ico_invoice.svg" alt="Icon" />{% translate tax %}</h2>
 <p>{% translate taxtxt %}</p>
