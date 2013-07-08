@@ -267,7 +267,7 @@ li p{
 	font-size:110%;
 	display:block;
 	text-decoration:none;
-	padding:6px 10px 3px 10px;
+	padding:6px 10px 4px 10px;
 	color:#2c6fad;
 	white-space:nowrap;
 }
@@ -287,10 +287,6 @@ li p{
 	min-width:120%;
 	padding:5px 0px;
 	margin:0px;
-	border-radius:5px;
-	-webkit-border-radius:5px;
-	border-top-left-radius:0px;
-	-webkit-border-top-left-radius:0px;
 }
 #menusimple li:hover ul{
 	display:block;
@@ -311,6 +307,7 @@ li p{
 	color:#2c6fad;
 	font-size:100%;
 	width:100%;
+	margin:1px 0px;
 	padding:6px 10px 3px 10px;
 }
 #menusimple li ul li:hover a,
@@ -971,15 +968,25 @@ h2 .rssicon{
 		margin:0px 0px 10px 0px;
 		height:auto;
 	}
-	#menusimple li a{
-		padding:6px 6px 3px 6px;
+	#menusimple li a,
+	#menusimple li ul li a,
+	#menusimple li ul li a:active,
+	#menusimple li ul li a:visited,
+	#menusimple li ul li a:link{
+		padding:10px 6px 8px 6px;
+		display:block;
 	}
 	#menusimple li{
-		margin:6px;
+		display:block;
+		margin:4px;
 		position:static;
 	}
 	#menusimple li ul{
-		min-width:140px;
+		min-width:0;
+		position:relative;
+	}
+	#menusimple ul.hover{
+		display:block;
 	}
 	#menufor{
 		position:static;

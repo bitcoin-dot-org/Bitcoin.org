@@ -105,6 +105,22 @@ cancelEvent(e);
 }
 
 
+function mobilehover(e){
+//Add a delay before hidding menu for mobiles to prevent accidental clicks
+var t=getEventTarget(e);
+while(t.nodeName!='LI'||!t.parentNode.id)t=t.parentNode;
+var p=t.getElementsByTagName('UL')[0];
+p.className='hover';
+setTimeout(function(){
+for(var i=0,nd=t.parentNode.getElementsByTagName('UL'),n=nd.length;i<n;i++){
+	if(nd[i]==p)continue;
+	nd[i].className='';
+}
+},1);
+cancelEvent(e);
+}
+
+
 function boxshow(e){
 var p=t=getEventTarget(e);
 while(p.nodeName!='DIV')p=p.parentNode;

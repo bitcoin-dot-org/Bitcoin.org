@@ -66,7 +66,7 @@ menu:
     </ul>
     {% else %}
     <ul id="menusimple">
-      <li><a href="#" onclick="return false;">{% translate menu-intro layout %}</a>
+      <li><a href="#" onclick="mobilehover(event);">{% translate menu-intro layout %}</a>
         <ul>
           <li{% if page.id == 'bitcoin-for-individuals' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a></li>
           <li{% if page.id == 'bitcoin-for-businesses' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a></li>
@@ -74,7 +74,7 @@ menu:
           <li{% if page.id == 'how-it-works' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate how-it-works url %}">{% translate menu-how-it-works layout %}</a></li>
         </ul>
       </li>
-      <li><a href="#" onclick="return false;">{% translate menu-resources layout %}</a>
+      <li><a href="#" onclick="mobilehover(event);">{% translate menu-resources layout %}</a>
         <ul>
           <li{% if page.id == 'vocabulary' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
           <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a></li>
