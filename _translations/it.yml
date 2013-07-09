@@ -237,7 +237,7 @@ it:
     walletbips: "BIPS è un servizio di portafogli online che permette di acquistare e vendere bitcoin facilmente in molti paesi. Offre inoltre <a href=\"https://en.bitcoin.it/wiki/Cold_storage\">cold storage</a> (archiviazione non in linea di bitcoin), importazione del portafoglio e molte funzionalità per i commercianti."
     walletcoinbase: "Coinbase è un servizio di portafogli online che mira ad essere il più facile da usare. E' disponibile anche come applicazione per Android, dispone di strumenti per i commercianti e fornisce un'integrazione con i conti bancari americani per acquistare e vendere bitcoin."
     walletdownload: "<a href=\"#download#\">Scarica</a>"
-    walletvisit: "<a href=\"http://electrum.org/\">Visita il sito web</a>"
+    walletvisit: "Visita il sito web"
     walletwebwarning: "Fai attenzione"
     walletwebwarningtxt: "I portafogli online ospitano i tuoi bitcoin. Ciò significa che questi possono perdere i tuoi bitcoin a seguito di un incidente. Ad oggi, nessun servizio di portafogli online fornisce sufficienti garanzie per conservare denaro come se fosse una banca."
     walletwebwarningok: "OK, ho capito"
