@@ -5,7 +5,7 @@ id: alerts
 title: Network status and alerts - Bitcoin
 ---
 <link rel="alternate" type="application/rss+xml" href="/en/rss/alerts.rss" title="Bitcoin network status and alerts">
-<div class="versiontext">
+<div class="alerttext">
   <h1>Network status and alerts<a type="application/rss+xml" href="/en/rss/alerts.rss"><img src="/img/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
   {% assign active = false %}{% filter_for p in site.pages reversed sort_by:date category:alert %}{% if p.active == true %}{% assign active = true %}{% endif %}{% endfilter_for %}
   {% if active == false %}
