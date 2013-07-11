@@ -58,29 +58,6 @@ h3 .ieimg{
 	color:#fff;
 }
 
-#menu li{
-	/*This one is also required for IE7*/
-	zoom:1;
-	display:inline;
-}
-#menu li a,#menu li a:active,#menu li a:visited,#menu li a:link{
-	font-family:sans-serif;
-	border:2px solid #f7f7f7;
-}
-#menu li:hover a,
-#menu li.active a{
-	color: #000;
-	background-color: #fff;
-	border: 2px solid #ebebeb;
-}
-
-#menufor li a,#menufor li a:active,#menufor li a:visited,#menufor li a:link{
-	font-family:sans-serif;
-}
-#menufor li:hover a,
-#menufor li.active a{
-	color:#fff;
-}
 #choose a,#before a,#support a{
 	font-family:sans-serif;
 }
@@ -363,4 +340,36 @@ h3 .ieimg{
 }
 .press-news div p{
 	font-size:80%;
+}
+
+/* Deprecated styles (should be removed when translations are updated) */
+
+#menu li{
+	/*This one is also required for IE7*/
+	zoom:1;
+	display:inline;
+}
+#menu li a,
+#menu li a:active,
+#menu li a:visited,
+#menu li a:link{
+	font-family:sans-serif;
+	border:2px solid #f7f7f7;
+}
+#menu li:hover a,
+#menu li.active a{
+	color: #000;
+	background-color: #fff;
+	border: 2px solid #ebebeb;
+}
+
+#menufor li a,
+#menufor li a:active,
+#menufor li a:visited,
+#menufor li a:link{
+	font-family:sans-serif;
+}
+#menufor li:hover a,
+#menufor li.active a{
+	color:#fff;
 }

@@ -314,68 +314,6 @@ li p{
 #menusimple li ul li.active a{
 	color:#fff;
 }
-
-#menufor{
-	margin:0px;
-	position:absolute;
-	top:8px;
-	left:250px;
-	padding:0px;
-	height:35px;
-}
-#menufor li{
-	list-style:none;
-	float:left;
-	padding:0px;
-	margin:0px 8px;
-	border-radius:5px;
-	-webkit-left-radius:5px;
-}
-#menufor li a,#menufor li a:active,#menufor li a:visited,#menufor li a:link{
-	font-family:'Ubuntu', sans-serif;
-	font-weight:700;
-	font-size:105%;
-	display:block;
-	text-decoration:none;
-	padding:6px 8px 3px 8px;
-	color:#2c6fad;
-	white-space:nowrap;
-}
-#menufor li:hover,#menufor li.active{
-	background-color:#2c6fad;
-}
-#menufor li:hover a,#menufor li.active a{
-	border-radius:5px;
-	-webkit-left-radius:5px;
-	color:#fff;
-}
-
-#menu{
-	padding:0px;
-	margin:12px auto -12px 32px;
-}
-#menu li{
-	list-style:none;
-	display:inline-block;
-	margin:0px;
-}
-#menu li a,#menu li a:active,#menu li a:visited,#menu li a:link{
-	font-family:'Ubuntu', sans-serif;
-	font-weight:300;
-	display:block;
-	color:#6a6a6a;
-	text-decoration:none;
-	padding: 8px 10px;
-	border: 2px solid transparent;
-	white-space:nowrap;
-}
-#menu li:hover a,#menu li.active a{
-	color:#000;
-	background-color:#fff;
-	border:2px solid #ebebeb;
-	border-radius:3px;
-	-webkit-border-radius:3px;
-}
 	
 #content{
 	position:relative;
@@ -985,8 +923,6 @@ h2 .rssicon{
 		background-position:center center;
 	}
 	#lang,
-	#menufor,
-	#menu,
 	#menusimple{
 		display:none;
 	}
@@ -1015,35 +951,6 @@ h2 .rssicon{
 	}
 	#menusimple ul.hover{
 		display:block;
-	}
-	#menufor{
-		position:static;
-		bottom:0px;
-		margin:10px 0px 0px 0px;
-		height:auto;
-	}
-	#menufor li{
-		float:none;
-		display:inline-block;
-	}
-	#menufor li a,#menufor li a:active,#menufor li a:visited,#menufor li a:link{
-		padding:6px 6px 3px 6px;
-	}
-	#menufor li{
-		margin:6px;
-	}
-	#menu{
-		position:static;
-		height:auto;
-		margin:10px 0px 10px 0px;
-	}
-	#menu li{
-		float:none;
-		display:inline-block;
-		padding: 5px;
-	}
-	#menu li a,#menu li a:active,#menu li a:visited,#menu li a:link{
-		padding:5px;
 	}
 	#logo{
 		position:static;
@@ -1111,5 +1018,117 @@ h2 .rssicon{
    		display:block;
    		margin:0px 0px 10px -5px;
    		text-align:center;
+	}
+}
+
+/* Deprecated styles (should be removed when translations are updated) */
+
+#menufor{
+	margin:0px;
+	position:absolute;
+	top:8px;
+	left:250px;
+	padding:0px;
+	height:35px;
+}
+#menufor li{
+	list-style:none;
+	float:left;
+	padding:0px;
+	margin:0px 8px;
+	border-radius:5px;
+	-webkit-left-radius:5px;
+}
+#menufor li a,
+#menufor li a:active,
+#menufor li a:visited,
+#menufor li a:link{
+	font-family:'Ubuntu', sans-serif;
+	font-weight:700;
+	font-size:105%;
+	display:block;
+	text-decoration:none;
+	padding:6px 8px 3px 8px;
+	color:#2c6fad;
+	white-space:nowrap;
+}
+#menufor li:hover,
+#menufor li.active{
+	background-color:#2c6fad;
+}
+#menufor li:hover a,
+#menufor li.active a{
+	border-radius:5px;
+	-webkit-left-radius:5px;
+	color:#fff;
+}
+
+#menu{
+	padding:0px;
+	margin:12px auto -12px 32px;
+}
+#menu li{
+	list-style:none;
+	display:inline-block;
+	margin:0px;
+}
+#menu li a,
+#menu li a:active,
+#menu li a:visited,
+#menu li a:link{
+	font-family:'Ubuntu', sans-serif;
+	font-weight:300;
+	display:block;
+	color:#6a6a6a;
+	text-decoration:none;
+	padding: 8px 10px;
+	border: 2px solid transparent;
+	white-space:nowrap;
+}
+#menu li:hover a,
+#menu li.active a{
+	color:#000;
+	background-color:#fff;
+	border:2px solid #ebebeb;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+/* Deprecated styles specific to mobiles (should be removed when translations are updated) */
+
+@media handheld, only screen and (max-device-height: 37em), only screen and (max-device-width: 50em){
+	#menufor,
+	#menu,
+	#menusimple{
+		display:none;
+	}
+	#menufor{
+		position:static;
+		bottom:0px;
+		margin:10px 0px 0px 0px;
+		height:auto;
+	}
+	#menufor li{
+		float:none;
+		display:inline-block;
+	}
+	#menufor li a,#menufor li a:active,#menufor li a:visited,#menufor li a:link{
+		padding:6px 6px 3px 6px;
+	}
+	#menufor li{
+		margin:6px;
+	}
+	#menu{
+		position:static;
+		height:auto;
+		margin:10px 0px 10px 0px;
+	}
+	#menu li{
+		float:none;
+		display:inline-block;
+		padding: 5px;
+	}
+	#menu li a,#menu li a:active,#menu li a:visited,#menu li a:link{
+		padding:5px;
 	}
 }

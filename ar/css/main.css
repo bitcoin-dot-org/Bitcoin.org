@@ -34,10 +34,10 @@ p{
 #lang{
 	font-family:"Helvetica Neue", "Liberation Sans", Arial, sans-serif;
 }
-#menufor li a,#menufor li a:active,#menufor li a:visited,#menufor li a:link{
-	font-family:'DroidNaskh', sans-serif;
-}
-#menu li a,#menu li a:active,#menu li a:visited,#menu li a:link{
+#menusimple li a,
+#menusimple li a:active,
+#menusimple li a:visited,
+#menusimple li a:link{
 	font-family:'DroidNaskh', sans-serif;
 }
 #content{
@@ -73,7 +73,7 @@ p{
 .previewrow>div.last{
 	margin-left:0px;
 }
-.previewrow>div>div>div>span {
+.previewrow>div>div>div>span{
 	right:auto;
 	left:30px;
 }
@@ -107,12 +107,32 @@ p{
 /*Styles specific to mobiles*/
 
 @media handheld, only screen and (max-device-height: 37em), only screen and (max-device-width: 50em){
-#menufor{
-	bottom:0px;
+	#content{
+		position:static;
+		padding:15px 10px 20px 10px;
+		text-align:right;
+	}
 }
-#content{
-	position:static;
-	padding:15px 10px 20px 10px;
-	text-align:right;
+
+/* Deprecated styles (should be removed when translations are updated) */
+
+#menufor li a,
+#menufor li a:active,
+#menufor li a:visited,
+#menufor li a:link{
+	font-family:'DroidNaskh', sans-serif;
 }
+#menu li a,
+#menu li a:active,
+#menu li a:visited,
+#menu li a:link{
+	font-family:'DroidNaskh', sans-serif;
+}
+
+/* Deprecated styles specific to mobiles (should be removed when translations are updated) */
+
+@media handheld, only screen and (max-device-height: 37em), only screen and (max-device-width: 50em){
+	#menufor{
+		bottom:0px;
+	}
 }
