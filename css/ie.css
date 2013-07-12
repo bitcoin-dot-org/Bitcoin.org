@@ -255,7 +255,7 @@ h3 .ieimg{
 }
 .press-volunteer div div p{
 	font-weight:expression((this.parentNode.getElementsByTagName('P')[0]==this)?'bold':'');
-	color:expression((this.parentNode.getElementsByTagName('P')[0]==this)?'#0d579b':'');
+	color:expression((this.parentNode.getElementsByTagName('P')[0]==this)?'#2c6fad':'');
 	margin:expression((this.parentNode.getElementsByTagName('P')[0]==this||this.parentNode.getElementsByTagName('P')[1]==this||this.parentNode.getElementsByTagName('P')[3]==this)?'0px':'');
 	font-size:expression((this.parentNode.getElementsByTagName('P')[2]==this)?'80%':'');
 }
