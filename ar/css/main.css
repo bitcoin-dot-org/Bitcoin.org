@@ -55,7 +55,12 @@ p{
 	left:30px;
 	right:auto;
 }
-#choose img,#before img,#support img{
+#choose img,
+#before img,
+#support img,
+#choose .ieimg,
+#before .ieimg,
+#support .ieimg{
 	margin-right:-40px;
 	margin-left:8px;
 }

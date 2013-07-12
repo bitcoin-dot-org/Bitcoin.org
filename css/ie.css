@@ -28,6 +28,9 @@ h3 .ieimg{
 	width:690px;
 	overflow:hidden;
 }
+#content.wide{
+	width:920px;
+}
 #lang{
 	border-left:2px solid #f7f7f7;
 	border-right:2px solid #f7f7f7;
