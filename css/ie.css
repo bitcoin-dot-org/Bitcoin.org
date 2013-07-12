@@ -69,6 +69,12 @@ h3 .ieimg{
 	margin-left:-40px;
 }
 
+.download span{
+	/*This one is also required for IE7*/
+	zoom:1;
+	display:inline;
+}
+
 .index{
 	/*This one is also required for IE7*/
 	zoom:1;
