@@ -230,102 +230,6 @@ en:
     securetext: "Thanks to a clever use of strict cryptographic rules, Bitcoin provides an amazing list of security features. Not only are bitcoins impossible to counterfeit or spoof, but the protocol is also built to be very resistant against an impressive list of attacks, including distributed denial of service."
     trust: "Solving issues with trust in banks"
     trusttext: "Bitcoin offers solutions to many of the trust problems that plague banks thanks to selective accounting transparency, signature proofs, and irreversible transactions. It also increases the risks for crooked bankers: no bitcoins can be created to save them from their own mistakes at the expense of the people."
-  press:
-    title: "Bitcoin Press Center - Bitcoin"
-    pagetitle: "Bitcoin Press Center"
-    summary: "Find potential interviewees and high quality press materials."
-    volunteer: "Contact Potential Interviewees"
-    volunteerdiscl: "Bitcoin has no official organization, individuals with authority, nor spokespeople. <a href=\"#\" onclick=\"disclaimershow(event);\">Read more</a>"
-    volunteerdiscltext: "The Bitcoin project is open-source and, likewise, no one can speak with authority for Bitcoin. The Bitcoin community contains individuals who hold a wide spectrum of business experience or involvement, political ideas, personal opinions, technical competency, and style. This list of potential interviewees has been curated by Bitcoin community members with the intent to include individuals possessing a wide spectrum of experience, ideas, and geography. The individuals listed have been involved in the Bitcoin community for a significant period making tangible contributions, have demonstrated competence and professionalism when discussing Bitcoin, are flexible and willing to assist members of the press in both objective and persuasive ways, and are generally respected by other members of the Bitcoin community. However, an individual's appearance here should not be misconstrued as a general endorsement, either by the Bitcoin community or any particular individuals with, regards to potential interviewees and any businesses they may operate, nor any political or personal ideas they may expound, including prognostications about Bitcoin or the price or any other topic."
-    faq: "Facts, FAQs and Myths"
-    faqwhat: "What is Bitcoin?"
-    faqwhattxt: "Bitcoin is an Internet protocol and open-source software platform that enables a new, completely digital and decentralized currency called bitcoins (BTC)."
-    faqacquire: "How does one acquire bitcoins?"
-    faqacquiretxt1: "Accept bitcoins as payment for goods or services."
-    faqacquiretxt2: "Buy bitcoins at one of the <a href=\"https://en.bitcoin.it/wiki/Buying_bitcoins\">Bitcoin Exchanges</a>."
-    faqacquiretxt3: "Trade traditional currency for bitcoins using one of several services."
-    faqacquiretxt4: "Trade traditional currency for bitcoins face to face using a <a href=\"https://en.bitcoin.it/wiki/Category:Directories\">local directory</a>."
-    faqacquiretxt5: "Earn bitcoins through competitive <a href=\"https://en.bitcoin.it/wiki/Mining\">mining</a>."
-    faqhow: "How does Bitcoin work?"
-    faqhowtxt: "Bitcoin is a <a href=\"http://financialcryptography.com/mt/archives/001325.html\">triple entry bookkeeping system</a> where a public ledger of every Bitcoin transaction is validated and distributed in real-time through the peer-to-peer Bitcoin network. The whole network is secured and regulated through cryptography. Anyone can process transactions using computer processing power, often with specialized hardware, and potentially earn a reward in bitcoins for this service. This is often called \"bitcoin mining\"."
-    faqmining: "How does Bitcoin mining work?"
-    faqminingtxt1: "Bitcoin miners perform a function that is analogous to gold mining, but very different. While gold miners deal with rocks, Bitcoin miners deal with data."
-    faqminingtxt2: "Bitcoin mining is the mechanism that keeps everyone in the system synchronized together. To mine, computers that take part listen for transactions (ledger transfer announcements) broadcast through the peer-to-peer network. The miners process and confirm these transactions by including them in a block and adding the block to the block chain."
-    faqminingtxt3: "Bitcoin miners perform this labor because miners that solve a block earn (1) any transaction fees paid by customers for faster transaction processing and (2) newly created coins, issued into existence according to a fixed formula."
-    faqminingtxt4: "Bitcoin mining is a very competitive market. Bitcoin miners are neither able to increase their own block reward beyond the rules in the protocol nor process fraudulent transactions that could corrupt the Bitcoin network. Because anyone can become a Bitcoin miner and the Bitcoin network is the largest distributed computer network in the world, it is extremely improbable that a malicious Bitcoin miner could compromise the block chain. Thus, Bitcoin mining is used to protect the neutrality and the consensus of the network, even if not all Bitcoin miners can be trusted."
-    faqdifficult: "How difficult is it to make a Bitcoin payment?"
-    faqdifficulttxt: "Bitcoin payments are easier to make than any existing banking or credit card process.  Payments are made from a wallet application, either on your computer or smartphone, by entering the recipient's address. This can be done by scanning a QR code, touching two phones together with NFC technology, or copying and pasting, entering the amount, and pressing send."
-    faqadvantage: "What are the advantages of Bitcoin?"
-    faqadvantagetxt1: "<em><b>Unrestrained payments</b></em> - It is possible to send and receive any amount of money anywhere in the world at any time. No bank holidays. No borders. No imposed limits."
-    faqadvantagetxt2: "<em><b>Low or zero fees</b></em> - Bitcoin payments are currently processed with either no fees or extremely small fees. Users may include fees with transactions to receive priority processing, which results in faster confirmation of transactions by the network. Additionally, merchant processors exist to assist merchants in processing transactions, converting bitcoins to fiat currencies with daily direct deposits to bank accounts, and to provide these services for much lower fees and less risk than with PayPal or credit card networks."
-    faqadvantagetxt3: "<em><b>Fewer fees and risks for merchants</b></em> - Bitcoin transactions are secure, irreversible, and do not contain customers’ sensitive or personal information. This protects merchants from losses caused by fraud or fraudulent chargebacks and there is no need for PCI compliance. Consequently, merchants can easily expand to new markets where either credit cards are not available or fraud rates are unacceptably high. The net results are lower fees, larger markets, and fewer administrative costs."
-    faqadvantagetxt4: "<em><b>More protection for consumers</b></em> - Bitcoin payments are made without needing the personal information tied to the transaction. This offers strong protection against identity theft. Users are in full control of their transactions, therefore it is impossible for merchants to force unwanted or unnoticed charges - this can happen with ACH debits, debit cards, PayPal, and credit cards."
-    faqadvantagetxt5: "<em><b>Transparency</b></em> - <a href=\"http://blockchain.info\">All information</a> concerning the Bitcoin money supply is readily available on the block chain for anybody to see, verify, measure, and use in real-time."
-    faqadvantagetxt6: "<em><b>Distributed</b></em> - The Bitcoin ledger, commonly called the block chain, is distributed throughout the world and stored by Bitcoin miners. This adds a level of resiliency and redundancy that is unmatched in the payments space and a payment processing network. For example, the Federal Reserve does all their payment processing at 100 Orchard Street, East Rutherford, New Jersey and it has back-up systems that can be brought online within 60-90 minutes at the Federal Reserve Banks of Richmond and Dallas. If those three centers were compromised or destroyed then the entire monetary system of the Federal Reserve would be greatly impaired and probably completely non-functional."
-    faqdisadvantage: "What are the disadvantages of Bitcoin?"
-    faqdisadvantagetxt1: "<em><b>Not widely accepted</b></em> - Many people are still unaware of Bitcoin.  Every day more businesses accept bitcoins because they want the advantages of doing so, but the list remains small and still needs to grow in order to gain improved usefulness through networking effects."
-    faqdisadvantagetxt2: "<em><b>Volatile</b></em> - The <a href=\"https://blockchain.info/charts/market-cap\">total value</a> of bitcoins in circulation and the number of businesses using Bitcoin are still very small compared to what they could be. Therefore, relatively small movements in the market can significantly affect the price. In theory, this volatility will persist as the market scrambles to determine a bitcoin’s price and as this new currency matures.  Never before has the world seen a start-up currency, so it is truly difficult (and exciting) to imagine how it will play out."
-    faqdisadvantagetxt3: "<em><b>For geeks</b></em> - Many of the user tools are still not ready for everyone and users still need to protect their money by themselves, or trust young online wallet services that still don’t offer any insurance against theft or other bad events. New tools and services are constantly being developed to make Bitcoin more accessible to the masses. From now, Bitcoin is a bright new invention that starts to meet the real world."
-    faqsecure: "Is Bitcoin secure?"
-    faqsecuretxt: "The Bitcoin technology - the protocol and the cryptography - has a strong security track record. Bitcoin's vulnerability is in user error. Bitcoin wallet files that store the necessary private keys can be accidentally deleted, lost, stolen, or compromised. Consequently, users need to employ <a href=\"#secure-your-wallet#\">security practices</a> to protect their money or use service providers that offer good levels of security and insurance. As more people have adopted Bitcoin, more service providers have appeared to make it easier, safer, and more convenient to use and safely secure bitcoins. Bitcoins are not covered by insurance schemes or depositor insurance like the FDIC, but users' wallets could be with a service provider that offers that provision."
-    faqlegal: "Is Bitcoin legal?"
-    faqlegaltxt1: "To the best of our knowledge, Bitcoin has not been made illegal by legislation in any jurisdiction."
-    faqlegaltxt2: "Additionally, regulators from various jurisdictions have taken steps to provide individuals and businesses with rules on how to integrate this new technology into businesses and other activities. For example, the United States' FinCEN has issued non-binding and non-determinative guidance on how it characterizes certain activities involving virtual currencies."
-    faqlegalresource: "Useful resources:"
-    faqtax: "What about Bitcoin and taxes?"
-    faqtaxtxt: "Bitcoin is not a fiat currency with legal tender status in any jurisdiction, but often tax liability accrues regardless of the medium used. There is a wide variety of legislation in many different jurisdictions which could cause income, sales, payroll, capital gains, or some other form of tax liability to arise with Bitcoin. Because all transactions are public record and stored permanently, it is a bad idea to attempt to use Bitcoin to evade taxes."
-    faqillegal: "Is Bitcoin useful for illegal activities?"
-    faqillegaltxt1: "Bitcoin is a censorship-resistant technology. This means transactions cannot be stopped. However, it is not anonymous, and the use of Bitcoin leaves extensive and permanent public records."
-    faqillegaltxt2: "The Federal Bureau of Investigation concluded on page two of the report <em>Bitcoin Virtual Currency: Unique Features Present Distinct Challenges for Deterring Illicit Activity</em> that ‘The FBI assesses with low confidence, based on current user and vendor acceptance, that malicious actors will exploit Bitcoin to launder money.’"
-    faqillegaltxt3: "Bitcoin prevents many criminals from being able to engage in illegal behavior. Because of the way Bitcoin works, customers do not need to reveal personal information to merchants. This decreases the amount of data available to illegal actors and acts as significant protection against identity theft, credit card fraud, and several other attack vectors. Bitcoin transactions are irreversible which prevents chargebacks or frauds, and transaction traceability means it is impossible to counterfeit bitcoins."
-    faqillegaltxt4: "Additionally, law enforcement authorities have already begun using sophisticated techniques to analyze Bitcoin transactions in their criminal investigations. So it may be that the Bitcoin software is not very attractive for criminal enterprises."
-    faqbubble: "Is Bitcoin a bubble?"
-    faqbubbletxt1: "A fast rise in price does not constitute a bubble.  An artificial over-valuation that will suddenly downward correct constitutes a bubble."
-    faqbubbletxt2: "Choices based on individual human action by hundreds of thousands of market participants is the cause for Bitcoin's price to fluctuate as the market seeks price discovery. Some reasons for this change in sentiment may be a loss of confidence in the currency, a large difference between value and price not based on the fundamentals of the Bitcoin economy, excessive press coverage stimulating speculative demand, fear of uncertainty, and just old-fashioned irrational exuberance and greed."
-    faqjune: "Why did Bitcoin’s price crash in June 2011?"
-    faqjunetxt: "Choices based on individual human action by hundreds of thousands of market participants was the cause for Bitcoin's price crash in June 2011. Some reasons for this change in sentiment may be a loss of confidence in the currency, the largest exchange, MtGox, having a security incident, a large difference between value and price from the large amount of press coverage which stimulated speculative demand not based on the fundamentals of the Bitcoin economy, and just old fashioned irrational exuberance and greed."
-    faqprice: "What determines Bitcoin’s price?"
-    faqpricetxt: "The price of bitcoins is determined by supply and demand. The supply is fixed at 21 million because of the rules of the Bitcoin protocol. There are two main types of demand: speculative and transactional. As more people use bitcoins for transactions, demand will increase and so will the price of bitcoins. Likewise, as more people speculate on the future of Bitcoin by saving or hoarding bitcoins, this increases the demand for bitcoins and the price. The result is an increase of network effects and increased adoption."
-    faqponzi: "Is Bitcoin a Ponzi scheme?"
-    faqponzitxt1: "A Ponzi scheme is a fraudulent investment operation that pays returns to its investors from their own money, or the money paid by subsequent investors, instead of from profit earned by the individual or organization running the operation."
-    faqponzitxt2: "Bitcoin is an open-source software project with no central authority and consequently no one is in a position to make fraudulent representations about investment returns. Like other major currencies such as gold, United States dollars, Euros, Yen, etc. there is no guaranteed purchasing power and the exchange rate freely floats. This can lead to volatility where owners of bitcoins can make or lose value."
-    faqponzitxt3: "Bitcoin is an innovative currency and payment system and not a Ponzi scheme. However, since Bitcoin transactions are irreversible it can be attractive for a Ponzi scam operator, and there have been several notable Ponzi scams which have failed and did use Bitcoin."
-    faqsatoshi: "Who is Satoshi Nakamoto, the creator of Bitcoin?"
-    faqsatoshitxt: "The creator of Bitcoin never revealed his real identity and simply left his invention to the world. Satoshi created the first Bitcoin implementation and remained active in the development for a few years before choosing to leave the project. Meanwhile, a strong community of developers, miners, users, and supporters have spontaneously emerged to continue the project."
-    faqworthless: "Can bitcoins become worthless?"
-    faqworthlesstxt1: "Yes. There are thousands of currencies in the fiat currency graveyard as a result of hyperinflation, such as the German Mark, United States gold and silver certificates, Argentine Peso, and, more recently, the Zimbabwe Dollar. Unlike a physical currency, such as gold, Bitcoin is a completely virtual currency. While Bitcoin was designed to be censorship-resistant, to enable it to continue existing if there were to be some type of technological problem of significant severity, it is still possible, although more unlikely every day, that Bitcoin could stop working as intended. Then all bitcoins could become worthless."
-    faqworthlesstxt2: "Being an open-source project allows anyone to contribute software code and those with value stored in bitcoins have a strong financial incentive in making sure Bitcoin continues to exist. For example, there has been only one major security incident in the protocol and it was fixed in August 2010. While there have been no major incidents since that does not preclude the possibility that there could be others. There was an unanticipated \"hard fork\" on 12 March 2013 which was quickly resolved with minimal impact on Bitcoin users. But the longer Bitcoin exists without a major security incident, or other unanticipated software bugs, then the more likely market participants will gain greater confidence in Bitcoin."
-    faqworthlesstxt3: "As a payment tool bitcoins are like gold because bitcoins are no-one’s liability, and Bitcoin transactions are not subject to the same counterparty risk like traditional banks engaged in fractional reserve banking. Thus, using Bitcoin can help protect merchants and users from bank failures and Cyprus-style problems. Bitcoin empowers its users to have exclusive control of their funds."
-    faqvirtual: "Is Bitcoin virtual and immaterial?"
-    faqvirtualtxt1: "Bitcoin is as virtual as the credit cards and online banking networks that people are using every day. They are both a balance stored in a network."
-    faqvirtualtxt2: "While Bitcoin is better suited for use on the Internet than other payment systems, Bitcoin can also be used to pay in physical stores, just like real money."
-    faqvirtualtxt3: "Bitcoin users have exclusive control over their funds. Bitcoin balances are stored in an extremely large, decentralized distributed computer network and they cannot be fraudulently altered by anybody. In other terms, bitcoins cannot vanish or be seized by any means. But they can be stolen or lost due to users' mistakes."
-    faqtrust: "Why do people trust Bitcoin?"
-    faqtrusttxt1: "Bitcoin is open-source software, which means that everyone has access to all of the source code all of the time. The rules of the system are embedded into the source code and the participants all impose those rules on each other simultaneously. To change the system would require everyone to switch to a new version of the software that used different rules, and because Bitcoin users are spread across the world, it is outside the power of any single jurisdictional authority to mandate such a change."
-    faqtrusttxt2: "Cryptography is well established and a fundamental technology used in online banking. But unlike fiat currency with central banks and online banking with heavily peer-reviewed cryptographic ciphers, Bitcoin has been able to construct a currency and payment network that removes the need to trust a central authority."
-    faqtrusttxt3: "Consequently, many people trust Bitcoin because it requires absolutely no trust at all."
-    faqanonymous: "Bitcoin is an anonymous currency?"
-    faqanonymoustxt1: "Bitcoin is a censorship-resistant technology. It is not anonymous but it is pseudo-anonymous. The use of Bitcoin leaves extensive and permanent public records for each transaction. All transactions can be traced since their origin and IP addresses are permanently logged by organizations listening on the network. All of this information can easily be accessed by competitors, law enforcement, or anyone else."
-    faqanonymoustxt2: "However, there are a few technically difficult and costly methods that can enable users to interact with Bitcoin in very private ways. The Federal Bureau of Investigation concluded on page two of the report <em>Bitcoin Virtual Currency: Unique Features Present Distinct Challenges for Deterring Illicit Activity</em> that ‘The FBI assesses with low confidence, based on current user and vendor acceptance, that malicious actors will exploit Bitcoin to launder money.’"
-    faqanonymoustxt3: "Transactions are difficult to conceal from best practices in network data analysis, data mining, and forensic accounting techniques. In most transactions, personal information must be revealed to receive the goods or services from an order. This makes keeping full anonymity with Bitcoin transactions very difficult or impossible."
-    faqmore: "For more FAQ on Bitcoin, please visit the <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
-    materialvideo: "Videos"
-    materialvideoformat: "More formats and languages"
-    materialvideoyoutube: "Video on Youtube"
-    materialvideomore: "More videos"
-    materialpicture: "Pictures"
-    materialpicturemore: "more pictures"
-    materialquote: "Quotes"
-    materialquotemore: "More quotes"
-    quotesatoshi: "<span>“With e-currency based on cryptographic proof, without the need to trust a third party middleman, money can be secure and transactions effortless.”</span><span>Satoshi Nakamoto, Bitcoin developer</span>"
-    quotetonygallippi: "<span>“Bitcoin is Money Over Internet Protocol.”</span><span>Tony Gallippi, BitInstant CEO</span>"
-    quotedankaminsky: "<span>“Entire classes of bugs are missing.”</span><span>Dan Kaminsky, Security Researcher</span>"
-    quotechrisdixon: "<span>“There are 3 eras of currency: Commodity based, politically based, and now, math based.”</span><span>Chris Dixon, Technology Investor</span>"
-    quotejeremyliew: "<span>“The potential for disruption is enormous.”</span><span>Jeremy Liew, Lightspeed Venture Partners</span>"
-    quotewencescasares: "<span>“Right now Bitcoin feels like the Internet before the browser.”</span><span>Wences Casares, Technology Entrepreneur</span>"
-    quotetylerwinklevoss: "<span>“We have elected to put our money and faith in a mathematical framework that is free of politics and human error.”</span><span>Tyler Winklevoss, Entrepreneur</span>"
-    quotemaxkeiser: "<span>“It's the cheapest way to <br>move money around.”</span><span>Max Keiser, Journalist & TV Host</span>"
-    presscoverage: "Press coverage"
   resources:
     title: "Resources - Bitcoin"
     pagetitle: "Bitcoin resources"
@@ -480,7 +384,6 @@ en:
     menu-community: Community
     menu-development: Development
     menu-events: Events
-    menu-press: Press
     menu-innovation: Innovation
     menu-foundation: Foundation
     menu-about: About
@@ -496,7 +399,6 @@ en:
     bitcoin-for-enthusiasts: bitcoin-for-enthusiasts
     bitcoin-for-individuals: bitcoin-for-individuals
     bitcoin-for-businesses: bitcoin-for-businesses
-    bitcoin-for-press: bitcoin-for-press
     choose-your-wallet: choose-your-wallet
     community: community
     development: development
@@ -505,7 +407,6 @@ en:
     foundation: foundation
     how-it-works: how-it-works
     innovation: innovation
-    press: press
     resources: resources
     secure-your-wallet: secure-your-wallet
     support-bitcoin: support-bitcoin
