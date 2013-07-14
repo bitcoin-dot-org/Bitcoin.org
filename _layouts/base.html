@@ -28,11 +28,9 @@ menu:
 <link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
 </head>
 <body>
-{% if site.ALERT.all or site.ALERT[page.lang] %}
-  {% if site.ALERT_CLASS.all %}{% assign class = site.ALERT_CLASS.all%}{% endif %}{% if site.ALERT_CLASS[page.lang] %}{% assign class = site.ALERT_CLASS[page.lang]%}{% endif %}
-  {% if site.ALERT.all %}{% assign alert = site.ALERT.all%}{% endif %}{% if site.ALERT[page.lang] %}{% assign alert = site.ALERT[page.lang] %}{% endif %}
-  <div class="alert-message {{ class }}">
-    <div><div>{{ alert }}</div></div>
+{% if site.ALERT %}
+  <div class="alert-message">
+    <div><div>{{ site.ALERT }}</div></div>
   </div>
 {% endif %}
   <div id="head"><div>

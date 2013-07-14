@@ -1,35 +1,5 @@
 DOWNLOAD_VERSION: 0.8.3
 
-ALERT_CLASS:
-  all: 
-  ar: 
-  de: 
-  en: 
-  es: 
-  fa: 
-  fr: 
-  it: 
-  nl: 
-  pl: 
-  ru: 
-  tr: 
-  zh_TW: 
-  
-ALERT:
-  all: 
-  ar: 
-  de: 
-  en: 
-  es: 
-  fa: 
-  fr: 
-  it: 
-  nl: 
-  pl: 
-  ru: 
-  tr: 
-  zh_TW: 
-
 langsorder:
 - id: de
 - id: en

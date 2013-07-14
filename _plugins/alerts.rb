@@ -17,6 +17,9 @@ module Jekyll
         self.data['redirect'] = src.split('.')[0]
       else
         self.data['category'] = 'alert'
+        if self.data.has_key?('banner') and !self.data['banner'].nil? and self.data['banner'].length>0
+          site.config['ALERT']='<a href="/'+dstdir+'/'+dst.gsub('.html','')+'">'+self.data['banner']+'</a>'
+        end
         if self.data.has_key?('alias')
           site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['alias']+'.html', date)
         end

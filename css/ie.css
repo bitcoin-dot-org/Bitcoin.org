@@ -72,6 +72,13 @@ h3 .ieimg{
 	margin-left:-40px;
 }
 
+.alert-message a:hover,
+.alert-message a:hover:link,
+.alert-message a:hover:active,
+.alert-message a:hover:visited{
+	color:#fff;
+}
+
 .download span{
 	/*This one is also required for IE7*/
 	zoom:1;

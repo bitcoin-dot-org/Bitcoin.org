@@ -70,26 +70,7 @@ Any change in the english texts can be done through a pull request on github. If
 
 ## Advanced Usage
 
-### Alert banner
-
-You can put an alert banner on the website by changing the ALERT and ALERT\_CLASS variables in _config.yml.
-You can both set one fallback alert for all languages and many translated alerts for specific languages.
-
-Example:
-
-```
-ALERT:
-  all: <strong>Security alert:</strong> Please upgrade to 0.8.1 as soon as possible!
-  fr: <strong>Alerte de sécurité:</strong> Mettez Bitcoin à jour vers la version 0.8.1 sans délais!
-ALERT_CLASS:
-  all: error
-  fr: error
-```
-
-This will produce an english red alert box for all languages, and a translated red alert box for french language.
-Possible classes are: **error** (red), **info** (blue), **success** (green) and **warning** (yellow)
-
-### Network alerts
+### Alerts
 
 Network alerts should be placed in `_alerts/YYYY-MM-DD-SHORTITLE.html` and adhere to this format:
 
@@ -99,6 +80,7 @@ title: "11/12 March 2013 Chain Fork"
 lastmod: "Fri Mar 16 22:58:00 UTC 2012"
 alias: "chainfork"
 active: true
+banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.8.0. Click here for more information."
 ---
 
 <p>
@@ -114,6 +96,7 @@ More information will follow.
 * `lastmod: ...` will be used as the last modification date in the layout.
 * `alias: ...` (optional) a short alias to be used for Bitcoin-Qt alerts. Ex. "dos" will produce /dos.html
 * `active: ...` (true or false) define if the alert should appear as ongoing in the network status page.
+* `banner: ...` (optional) a short text that will be displayed in a red alert banner and link to the alert page.
 
 ### Release Notes
 
