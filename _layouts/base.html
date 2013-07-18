@@ -52,7 +52,7 @@ menu:
     <a href="#" id="menumobile" onclick="mobileshow(event);"></a>
 
     {% case page.lang %}
-    {% when 'ar' or 'de' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
+    {% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
 
     <ul id="menufor">
     {% for link in page.menufor %}{% assign id = link.id%}{% capture url %}/{{ page.lang }}/{% translate {{id}} url %}{% endcapture %}
@@ -82,7 +82,7 @@ menu:
           <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a></li>
           <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
           <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
-          {% case page.lang %}{% when 'ar' or 'de' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}{% else %}<li{% if page.id == 'events' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>{% endcase %}
+          {% case page.lang %}{% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}{% else %}<li{% if page.id == 'events' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>{% endcase %}
           {% if page.lang == 'en' %}<li{% if page.id == 'press' %} class="active"{% endif %}><a href="/en/press">Press</a></li>{% endif %}
         </ul>
       </li>
@@ -112,7 +112,7 @@ menu:
     <div id="footer"><div>
     <a href="/en/alerts">Network Status</a>
     {% case page.lang %}
-    {% when 'ar' or 'de' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
+    {% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
     {% else %}
     <a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a>
     {% endcase %}

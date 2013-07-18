@@ -27,7 +27,7 @@ module Jekyll
       translated = []
       assoc = {}
       for key in sorted_collection do
-        next if !site['loc'][lang].has_key?(page) || !site['loc'][lang][page].has_key?(key) || site['loc'][lang][page][key].nil?
+        next if !site['loc'][lang].has_key?(page) || !site['loc'][lang][page].has_key?(key) || site['loc'][lang][page][key].nil? || site['loc'][lang][page][key] == ' '
         t = site['loc'][lang][page][key]
         translated.push(t)
         assoc[key] = t

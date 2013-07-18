@@ -27,6 +27,24 @@ de:
     statstxt3: "Täglicher Handelsumsatz von mehreren Millionen USD, verteilt über 50.000 Transaktionen."
     statstxt4: "Der Gesamtwert aller im Umlauf befindlichen Bitcoins beträgt über 1.3 Millarden USD."
     statstxt5: "Nur ein größerer <a href=\"https://en.bitcoin.it/wiki/Incidents#Value_overflow\">sicherheitsrelevanter Vorfall</a> im Protokoll, der im August 2010 behoben wurde."
+  about-us:
+    title: "Über bitcoin.org"
+    pagetitle: "Über bitcoin.org"
+    pagedesc: "Bitcoin.org ist einer nachhaltigen Entwicklung von Bitcoin gewidmet."
+    own: "Wer besitzt bitcoin.org"
+    owntxt: "Bitcoin.org ist der ursprünglich für die erste Bitcoin-Webseite benutzte Domainname. \nRegistriert und verwaltet wird er durch die <a href=\"#development#\">Bitcoin Hauptentwickler</a> und ergänzend durch Mitglieder der Community mit dem Beitrag durch die <a href=\"#community#\">Bitcoin Communities</a>. Bitcoin.org ist keine offizielle Webseite. Genauso wie niemand die E-Mail-Technologie besitzt, besitzt auch niemand das Bitcoin Netzwerk. Und somit kann niemand als Autorität im Namen von Bitcoin sprechen."
+    control: "Dann... wer kontrolliert Bitcoin?"
+    controltxt: "Bitcoin wird durch alle Bitcoin-Nutzer auf der ganzen Welt kontrolliert. Entwickler verbessern die Software, aber sie können keine Änderung der Regeln im Bitcoin-Protokoll erzwingen, da alle Nutzer die freie Wahl bei der Softwarenutzung haben. Um untereinander kompatibel zu bleiben, müssen alle Nutzer Software verwenden, die die selben Regeln befolgen. Bitcoin kann nur bei einem vollständigen Konsens zwischen allen Benutzern ordentlich arbeiten. Daher haben alle Benutzer und Entwickler einen starken Anreiz diesen Konsens anzunehmen und zu schützen."
+    mission: "Auftrag"
+    missiontxt1: "Benutzer informieren um sie von allgemeinen Fehlern zu schützen."
+    missiontxt2: "Eine genaue Beschreibung der Eigenschaften von Bitcoin, potentielle Einsatzmöglichkeiten und Limitierungen geben."
+    missiontxt3: "Alarme und Ereignisse in Bezug auf das Bitcoin Netzwerk anzeigen."
+    missiontxt4: "Talentierte Menschen einladen, um der Entwicklung von Bitcoin auf vielen Ebenen zu helfen."
+    missiontxt5: "Einblick in das umfangreiche Bitcoin-Ökosystem ermöglichen"
+    missiontxt6: "Die weltweite Erreichbarkeit von Bitcoin durch Internationalisierung verbessern."
+    missiontxt7: "Eine neutrale Informationsquelle über Bitcoin bleiben."
+    help: "Hilf uns"
+    helptxt: "Sie können jedes Problem durch Eröffnen eines \"Issues\" oder \"Pull Requests\" in englischer Sprache auf <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a> melden. Wenn sie ein \"Pull Request\" übermitteln, nehmen Sie sich bitte die nötigte Zeit, um die Änderungen zu diskutieren und ihre Arbeit anzupassen. Durch Beitritt zu einem Team auf <a href=\"https://www.transifex.com/projects/p/bitcoinorg/\">Transifex</a> können Sie mit den Übersetzungen helfen. Bitte fragen sie nicht nach Werbung für ihr persönliches Unternehmen oder ihre Website, außer in speziellen Fällen wie Konferenzen."
   bitcoin-for-businesses:
     title: "Bitcoin für Unternehmen - Bitcoin"
     pagetitle: "Bitcoin für Unternehmen"
@@ -61,28 +79,8 @@ de:
     invoicetext: "Bitcoin kann so viele Bitcoin-Adressen erstellen, wie Sie möchten. Wollen Sie ein Zahlungssystem entwickeln, das mit einer Rechnung verknüpft ist, müssen Sie nur für jede Zahlung eine Bitcoin-Adresse generieren und überwachen. Wenn die Zahlung erfolgt ist, können die Adressen auch wiederverwendet werden"
     security: "Die meiste Sicherheit ist auf Seite des Clients"
     securitytext: "Die Sicherheit wird zum Großteil von dem Protokoll auf dem \"Client\" und dem Bitcoin-Netzwerk getragen. Die Authenzität wird durch private Schlüssel verifiziert und Doppelausgaben werden durch das Bitcoin-Netzwerk verhindert. D.h. weder PCI-Konformität noch Betrugserkennung sind notwendig. Wir alle lieben Dinge die einfach funktionieren, oder?"
-    instant: "Sofort-Transaktionen und Bestätigungen"
-    instanttext: "Eine Bitcoin-Transaktion ist in der Regel innerhalb weniger Sekunden empfangen und innerhalb von 10 Minuten bestätigt. Vor dieser Bestätigung gilt die Transaktion als glaubwürdig, aber umkehrbar. Falls Sie tatsächlich eine sofortige, unumkehrbare Transaktion benötigen, sollten Sie eine kleine Transaktionsgebühr ansetzen und ein System verwenden, das Doppelausgaben erkennt."
     micro: "Günstige Micro-Payments"
     microtext: "Bitcoin bietet die geringsten Zahlungsabwicklungsgebühren für jede Art von Transaktion, inklusive Micro-Payments. D.h. es kann genutzt werden um neue kreative Online-Dienste zu entwerfen und zu implementieren, die vorher aufgrund von finanziellen Einschränkungen nicht möglich waren."
-  bitcoin-for-enthusiasts:
-    title: "Bitcoin für Enthusiasten - Bitcoin"
-    pagetitle: "Bitcoin für Enthusiasten"
-    summary: "Bitcoin verändert die Finanzwelt, indem es ihnen die Kontrolle über ihr Geld gibt."
-    consensus: "Bitcoin ist weltweiter Konsens"
-    consensustext: "Bitcoin ist dezentral und quelloffen, dadurch ist Bitcoin das erste Zahlungsnetzwerk, das von seinen Nutzern ohne zentrale Autorität betrieben wird. Selbst Bitcoin-Entwickler haben keine Möglichkeit, Neuerungen im Protokoll zu erzwingen, wenn genug Nutzer, Entwickler und Miner dagegen sind. Nur <i>Sie</i> haben Kontrolle über Ihr Geld."
-    network: "Digitales Geld - gemacht für das Internet"
-    networktext: "Bitcoin wurde aus dem Internet heraus geboren und bringt die Freiheit von physischem Geld in die virtuelle Welt, indem es Zahlungen in beiden Welten einfacher und sicherer macht. Bitcoin bietet eine Alternative zu vorherigen umständlichen und teuren Systemen, und kann Unternehmen den Online-Zugang zu Entwicklungsländern ebnen."
-    freedom: "Schutz der individuellen Rechte und Freiheit"
-    freedomtext: "Mit Bitcoin können Werte sicher in einem Netzwerk gespeichert und ausgetauscht werden, das nicht durch eine Organisation oder ein Individuum beschlagnahmt, manipuliert oder gestoppt werden kann. Es gibt den Menschen viele mächtige Werkzeuge in die Hand, so dass es einfacher ist, individuelle Rechte gegen verschiedene Arten von Korruption zu schützen."
-    global: "Die erste neutrale globale Währung"
-    globaltext: "Nicht oft in unserer Geschichte wurde Geld von jeglichem politischen Einfluss und nationaler Wirtschaft getrennt. Könnte Bitcoin die erste globale Währung sein, die sämtliche Grenzen zwischen Nationen, Politik und Kulturen im Sinne des Allgemeinwohls überschreitet? Es sieht ganz so aus als könnte dies passieren. Einer für alle und alle für einen!"
-    transparency: "Transparenz fördern"
-    transparencytext: "Alle Bitcoin-Transaktionen sind öffentlich, aber die Namen der Besitzer oder Empfänger der Transaktionen sind es nicht. Organisationen können ihren Mitgliedern einige ihrer Bitcoin-Adressen preisgeben, um so ein hohes Maß an Transparenz zu schaffen."
-    secure: "Geld sicherer machen"
-    securetext: "Durch geschickten Einsatz strikter kryptographischer Regeln bietet Bitcoin eine verblüffende Liste von Sicherheitsfunktionen. Bitcoins sind nicht nur unfälschbar und unmanipulierbar, das Protokoll ist auch auf Resistenz gegen eine beeindruckende Liste von Attacken ausgelegt, inklusive Distributed Denial of Service."
-    trust: "Vertrauen Sie Ihrer Bank?"
-    trusttext: "Durch selektive Konto-Transparenz, Signatur-Belege und unumkehrbare Transaktionen bietet Bitcoin Lösungen für viele Vertrauensprobleme, von denen Banken geplagt werden. Bitcoin erhöht auch das Risiko für betrügerische Banker: es können keine Bitcoins auf Kosten des Volkes erzeugt werden, um Banker vor ihren eigenen Fehlern zu retten."
   bitcoin-for-individuals:
     title: "Bitcoin für Einzelpersonen - Bitcoin"
     pagetitle: "Bitcoin für Einzelpersonen"
@@ -93,16 +91,17 @@ de:
     internationaltext: "Bitcoins können in 10 Minuten von Afrika nach Kanada transferiert werden. Es gibt keine Bank, die den Vorgang verlangsamt, überhöhte Gebühren verlangt oder den Transfer blockiert. Sie können einem Familienmitglied in einem anderen Land ebenso schnell Geld senden wie ihren Nachbarn."
     simple: "Funktioniert immer und überall"
     simpletext: "Genauso wie bei E-Mails, müssen Sie ihre Familie nicht zwingen, die gleiche Software oder die gleichen E-Mail-Anbieter zu verwenden. Jeder kann bei seinem Favoriten bleiben. Dies stellt auch kein Problem dar, denn allle sind miteinander kompatibel, da sie die selbe Open-Source Technologie verwenden. Das Bitcoin-Netzwerk schläft nie, auch nicht in den Ferien!"
-    secure: "Sichere Transaktionen"
-    securetext: "Bitcoin-Transaktionen sind durch Kryptographie auf militärischem Niveau verschlüsselt. Niemand kann eine Zahlung in Ihrem Namen machen oder Geld einziehen, ohne eine Kopie Ihres Wallets zu haben. Solang Sie die notwendigen Schritte zur <a href=\"#secure-your-wallet#\">Absicherung Ihrer Wallet</a> beachten, bietet Bitcoin guten Schutz gegen viele Arten des Betrugs."
+    secure: "Sicherheit und Kontrolle über ihr Geld"
+    securetext: "Bitcoin-Transaktionen sind durch Kryptographie auf militärischem Niveau verschlüsselt. Niemand kann eine Zahlung in Ihrem Namen machen oder Geld einziehen. Solange Sie die notwendigen Schritte zur <a href=\"#secure-your-wallet#\">Absicherung Ihres Wallets</a> beachten, bietet Bitcoin guten Schutz gegen viele Arten von Betrug."
     lowfee: "Fast kostenfrei nutzbar"
     lowfeetext: "Mit Bitcoin können Sie kostenlos Zahlungen senden und empfangen. Abgesehen von Spezialfällen wie sehr kleinen Micro-Payments, gibt es keine erzwungene Gebühr. Sie können aber eine kleine freiwillige Gebühr zahlen, um die Priorität Ihrer Transaktion zu erhöhen und die Personen zu honorieren, die das Bitcoin-Netzwerk betreiben."
-    anonymous: "Pseudo-anonyme Online-Zahlungen"
-    anonymoustext: "Anonyme Zahlungen sind Teil unseres Alltags - im realen Leben werden die meisten Kaufvorgänge ohne die Notwendigkeit einer Identifikation durchgeführt. Bitcoin führt diese Freiheit nun auch in der Online-Welt ein. Mit Bitcoin können Sie Dienstleistungen kaufen und Spenden tätigen, ohne komplett durchleuchtet zu werden. Sie sollten jedoch beachten, dass <a href=\"#you-need-to-know#\"><b>volle Anonymität spezielle Maßnahmen erfordert</b></a>."
+    anonymous: "Schützen Sie Ihre Identität"
+    anonymoustext: "Mit Bitcoin gibt es keine Kreditkartennummer, die böswillige Aktoren sammeln könnten, um sich als Sie auszugeben. Tatsächlich ist es sogar wie mit echtem Geld möglich eine Zahlung zu senden ohne Ihre Identität preiszugeben. Sie sollten aber beachten, dass es etwas Aufwand benötigt um <a href=\"#you-need-to-know#\">ihre Privatsphäre zu schützen</a>."
   community:
     title: "Community - Bitcoin"
     pagetitle: "Bitcoin Communities"
     foundation: "<a href=\"https://bitcoinfoundation.org/forum/\">Bitcoin Foundation Forum (nur Mitglieder, englisch)</a>"
+    wikiportal: "<a href=\"https://en.bitcoin.it/wiki/Bitcoin:Community_portal\">Bitcoin Wiki - Community Portal (englisch) </a>"
     stackexchange: "<a href=\"http://bitcoin.stackexchange.com/\">Bitcoin StackExchange (Frage/Antwort, englisch)</a>"
     bitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=16.0\">BitcoinTalk Forum</a>"
     ircjoin: "Kommen Sie in die lebhaften IRC channels des Projekts im <a href=\"http://freenode.net/\">FreeNode</a> Netzwerk<br>oder nutzen Sie <a href=\"http://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">FreeNode Web IRC</a>."
@@ -136,7 +135,7 @@ de:
     walletmultibit: "MultiBit ist ein leichtgewichtiger Client mit Schwerpunkt auf Geschwindigkeit und einfacher Nutzbarkeit. Er synchronisiert sich mit dem Netzwerk und ist in wenigen Minuten einsatzbereit. MultiBit unterstützt verschiedene Sprachen. Er ist eine gute Wahl für nicht-technische Nutzer."
     walletarmory: "Armory ist ein erweiterter Bitcoin-Client, der auf Bitcoin-Qt basiert, und die Funktionalitäten für Bitcoin-Power-User ergänzt. Es bietet viele Backup- und Verschlüsselungsfunktionen und ermöglicht Cold Storage auf Offline-Rechnern."
     walletelectrum: "Electrum ist auf Geschwindigkeit und Einfachheit fokussiert und benötigt wenig Ressourcen. Es verwendet entfernte Server um die kompliziertesten Teile des Bitcoin-Systems zu übernehmen und ermöglicht es, mit einer geheimen Phrase wieder Zugriff auf eine Wallet zu bekommen."
-    walletbitcoinwallet: "Bitcoin Wallet ist ein leichtgewichtiger mobiler Client für Android und Blackberry OS. Er muss nicht mit einem Onlineservice verbunden sein. Er ist kompatibel mit QR-Code-Scans und NFC."
+    walletbitcoinwallet: "Bitcoin Wallet ist ein leichtgewichtiger mobiler Client für Android und BlackBerry OS. Er muss nicht mit einem Onlineservice verbunden sein. Er ist kompatibel mit QR-Code-Scans und NFC."
     walletblockchaininfomob: "Die Hybrid-Wallet Blockchain.info unterstützt auch Smartphones. Es ist in einer eingeschränkten Version (um mit den Apple Richtlinien im Einklang zu sein) für das IPhone verfügbar. Es enthält viele Funktionen von blockchain.info, wie z.B. Web Wallet Backup."
     walletblockchaininfo: "Blockchain.info ist eine nutzerfreundliche Hybrid-Wallet. Es speichert eine verschlüsselte Version Ihrer Wallets online, aber die Entschlüsselung erfolgt in Ihrem Browser. Aus Sicherheitsgründen sollten Sie immer die Browser-Erweiterung und E-Mail-Backups verwenden."
     walletpaytunia: "Paytunia ist eine mobile Web-Wallet, basierend auf Paymium, und arbeitet mit Bitcoin-central um Ihnen direkt von Ihrem mobilen Gerät den Austausch von Bitcoins zu ermöglichen. Es ist erhältlich für iPhone, Unterstützung für Android kommt bald."
@@ -176,6 +175,13 @@ de:
     versionhistory: "Versionshistorie anzeigen"
     notelicense: "Bitcoin-Qt is ein gemeinschaftliches <a href=\"http://www.fsf.org/about/what-is-free-software\">freies quelloffenes</a> Projekt und wurde unter der <a href=\"http://creativecommons.org/licenses/MIT/\">MIT Lizenz</a> veröffentlicht."
     notesync: "<b>Hinwies</b> : Die erstmalige Initialisierung von Bitcoin-Qt kann einen kompletten Tag dauern. Sie sollten sicher stellen, dass Sie genug Bandbreite und Speicherplatz für die komplette <a href=\"http://blockchain.info/charts/blocks-size\">Größe der Blockkette</a> zur Verfügung haben."
+  events:
+    title: "Konferenzen und Events - Bitcoin"
+    pagetitle: "Konferenzen und Events"
+    pagedesc: "Finden Sie Events und Konferenzen, veranstaltet von unterschiedlichen Organisationen auf der ganzen Welt."
+    meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitcoin Zusammenkünfte auf BitcoinTalk (englisch)</a>"
+    meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitcoin Zusammenkünfte im Wiki (englisch; deutsche Version ungepflegt)</a>"
+    meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin Meetup Gruppen</a>"
   foundation:
     title: "Bitcoin Foundation"
     pagetitle: "Bitcoin Foundation"
@@ -206,6 +212,24 @@ de:
     list4: "Und vieles mehr"
     desc: "Bitcoin nutzt Peer-To-Peer-Technologie um ohne zentrale Autorität auszukommen; die Bearbeitung von Transaktionen und die Ausgabe von Bitcoins werden <b>kollektiv durch das Netzwerk</b> übernommen. Durch viele seiner einzigartigen Eigenschaften eröffnet Bitcoin aufregende Nutzungsmöglichkeiten, die durch keines der vorherigen Zahlungssysteme abgedeckt sind."
     license: "Die Software ist ein gemeinschaftlich entwickeltes, <a href=\"http://www.fsf.org/about/what-is-free-software\">freies, quelloffenes</a> Projekt, das unter der <a href=\"http://creativecommons.org/licenses/MIT/\">MIT Lizenz</a> veröffentlicht wurde."
+  innovation:
+    title: "Innovation - Bitcoin"
+    pagetitle: "Warum Bitcoin die Welt verändert"
+    summary: "Bitcoin ist eine bedeutende Innovation, die Ihnen die Kontrolle über ihr Geld gibt. Genau wie die Erfindungen, die unmöglich schienen bis ihre Zeit kam, ist Bitcoin real und kann Ihr tägliches Leben verändern. Eine große Auswahl spannender Möglichkeiten müssen noch immer in den nächsten Jahren entdeckt werden."
+    consensus: "Bitcoin ist weltweiter Konsens"
+    consensustext: "Bitcoin ist dezentral und quelloffen, dadurch ist Bitcoin das erste Zahlungsnetzwerk, das von seinen Nutzern ohne zentrale Autorität betrieben wird. Selbst Bitcoin-Entwickler haben keine Möglichkeit, Neuerungen im Protokoll zu erzwingen, wenn genug Nutzer, Entwickler und Miner dagegen sind. Nur <i>Sie</i> haben Kontrolle über Ihr Geld."
+    network: "Digitales Geld - gemacht für das Internet"
+    networktext: "Bitcoin wurde aus dem Internet heraus geboren und bringt die Freiheit von physischem Geld in die virtuelle Welt, indem es Zahlungen in beiden Welten einfacher und sicherer macht. Bitcoin bietet eine Alternative zu vorherigen umständlichen und teuren Systemen, und kann Unternehmen den Online-Zugang zu Entwicklungsländern ebnen."
+    freedom: "Schutz der individuellen Rechte und Freiheit"
+    freedomtext: "Mit Bitcoin können Werte sicher in einem Netzwerk gespeichert und ausgetauscht werden, das nicht durch eine Organisation oder ein Individuum beschlagnahmt, manipuliert oder gestoppt werden kann. Es gibt den Menschen viele mächtige Werkzeuge in die Hand, so dass es einfacher ist, individuelle Rechte gegen verschiedene Arten von Korruption zu schützen."
+    global: "Die erste neutrale globale Währung"
+    globaltext: "Nicht oft in unserer Geschichte wurde Geld von jeglichem politischen Einfluss und nationaler Wirtschaft getrennt. Könnte Bitcoin die erste globale Währung sein, die sämtliche Grenzen zwischen Nationen, Politik und Kulturen im Sinne des Allgemeinwohls überschreitet? Es sieht ganz so aus als könnte dies passieren. Einer für alle und alle für einen!"
+    transparency: "Transparenz fördern"
+    transparencytext: "Alle Bitcoin-Transaktionen sind öffentlich, aber die Namen der Besitzer oder Empfänger der Transaktionen sind es nicht. Organisationen können ihren Mitgliedern einige ihrer Bitcoin-Adressen preisgeben, um so ein hohes Maß an Transparenz zu schaffen."
+    secure: "Geld sicherer machen"
+    securetext: "Durch geschickten Einsatz strikter kryptographischer Regeln bietet Bitcoin eine verblüffende Liste von Sicherheitsfunktionen. Bitcoins sind nicht nur unfälschbar und unmanipulierbar, das Protokoll ist auch auf Resistenz gegen eine beeindruckende Liste von Attacken ausgelegt, inklusive Distributed Denial of Service."
+    trust: "Vertrauen Sie Ihrer Bank?"
+    trusttext: "Durch selektive Konto-Transparenz, Signatur-Belege und unumkehrbare Transaktionen bietet Bitcoin Lösungen für viele Vertrauensprobleme, von denen Banken geplagt werden. Bitcoin erhöht auch das Risiko für betrügerische Banker: es können keine Bitcoins auf Kosten des Volkes erzeugt werden, um Banker vor ihren eigenen Fehlern zu retten."
   resources:
     title: "Ressourcen - Bitcoin"
     pagetitle: "Ressourcen zu Bitcoin"
@@ -263,6 +287,9 @@ de:
     offlinetmpmisstxt: "Beim Hochfahren einer temporären Umgebung wird möglicherweise ein anderes Tastaturlayout aktiviert, so dass später andere Zeichen erstellt werden as erwartet. Wenn Sie Verschlüsselungen verwenden, kann dies zu falsch eingegebenen Passwörtern führen. Sie können aber versuchen, Ihr Passwort auf dem Bildschirm zu tippen, um solchen Problemen vorzubeugen."
     offlinetmptrace: "Keine Spuren hinterlassen"
     offlinetmptracetxt: "Wenn ein Speichermedium wie eine Festplatte an den Computer angeschlossen ist, besteht ein geringes Risiko, dass einige Spuren Ihrer privaten Schlüssel dort zurückbleiben. Trennen Sie ggf. die Verbindung zu allen Festplatten oder deaktivieren sie alle Auslagerungspartitionen bevor Sie Ihre Wallet laden."
+    hardwarewallet: "Hardware-Wallets sind die Zukunft"
+    hardwarewallettxt: "Hardware-Wallets bieten den besten Kompromiss aus sehr hoher Sicherheit und einfacher Handhabung. Es sind kleine Geräte, die von Grundauf dafür entworfen wurden nur eine Wallet und sonst nichts weiter zu sein. Keine Software kann auf ihnen installiert werden, was sie sehr sicher gegen Computerangriffe und Onlinediebe macht. Weil sie eine Sicherung ermöglichen, können Sie ihr Geld aus einem verlorenem Gerät wiederherstellen."
+    hardwarewalletsoon: "Im Moment befindet sich keine Hardware-Wallet in Produktion, aber das ändert sich bald:"
     offlinemulti: "Multi-Signatur zum Schutz vor Diebstahl"
     offlinemultitxt: "Bitcoin bietet eine Funktion namens Multi-Signatur, bei der die Signatur von mehr als einem privaten Schlüssel benötigt wird, um eine Transaktion zu tätigen. Aktuell kann es nur von technisch erfahrenen Nutzern verwendet werden, aber zukünftig wir die Nutzung wohl auf breiterer Basis erfolgen. Eine Organisation kann ihren Mitgliedern über die Multi-Signatur Zugriff auf ihr Vermögen geben und gleichzeitig Ausgaben nur zulassen, wenn 3 von 5 Mitgliedern die Transaktion signieren. Multi-Signatur ermöglicht zukünftigen Online-Wallets auch, eine Multi-Signatur-Adresse mit den entsprechenden Nutzern zu teilen, so dass ein Dieb sowohl den Computer des Nutzers als auch den Online-Wallet-Server kompromittieren müsste, um Geld zu stehlen."
     offlinemobile: "Geringe Beträge auf Ihrem mobilen Gerät"
@@ -296,6 +323,8 @@ de:
     table: "Inhalt"
     address: "Adresse"
     addresstxt: "Eine Bitcoin-Adresse ist <b>wie eine Haus- oder E-Mail-Adresse</b>. Es ist die einzige Information, die Sie weitergeben müssen, um Bitcoin-Zahlungen zu empfangen."
+    bitcoin: " "
+    bitcointxt: " "
     blockchain: "Blockkette"
     blockchaintxt: "Die Blockkette ist eine <b>öffentliche Liste aller Bitcoin-Transaktionen</b>, in chronologischer Reihenfolge. Alle Bitcoin-Nutzer teilen die Blockkette. Anhand Ihrer werden die Kontostände von Bitcoin-Adressen überprüft und <a href=\"#[vocabulary.doublespend]\">Doppelausgaben</a> verhindert."
     block: "Block"
@@ -332,6 +361,8 @@ de:
     irreversibletxt: "Zahlungen mit Bitcoin können nicht rückgängig gemacht werden, sie können nur durch den Empfänger zurückgezahlt werden. Daher sollten Sie nur mit Personen und Organisationen handeln, die Sie kennen und denen Sie vertrauen. Aber keine Sorge, Bitcoin kann Tippfehler erkennen und in der Regel können Sie kein Geld an eine ungültige Adresse senden."
     anonymous: "Bitcoin ist nicht anonym"
     anonymoustxt: "Wenn Sie Ihre Privatsphäre bei Bitcoin schützen wollen, ist ein wenig Aufwand erforderlich. Alle Bitcoin-Transkationen sind öffentlich und dauerhaft im Netzwerk gespeichert, was bedeutet, dass jeder den Kontostand und die Transaktionen jeder Bitcoin-Adresse einsehen kann. Die Identität des Besitzers kann aber nicht mit der Bitcoin-Adresse in Verbindung gebracht werden, solange der Besitzer im Rahmen eines Tauschs keine persönlichen Informationen preisgibt. Daher sollte jeder Bitcoin-Besitzer mehrere Bitcoin-Adressen verwenden; letztendlich sollten Sie für jeden neuen Zahlungseingang eine neue Adresse erstellen. Dies ist insbesondere bei öffentlicher Verwendung (z.B. auf Webseiten) wichtig. Gegebenenfalls wollen Sie eventuell die IP-Adresse Ihres Computers mit einem Tool wie <a href=\"https://www.torproject.org/\">Tor</a> verstecken, so dass sie nicht gespeichert werden kann."
+    instant: "Sofort-Transaktionen sind weniger sicher"
+    instanttxt: "Eine Bitcoin-Transaktion ist in der Regel in wenigen Sekunden verteilt und innerhalb von 10 Minuten bestätigt. Während dieser Zeit gilt die Transaktion als glaubwürdig, aber umkehrbar. Unehrliche Benutzer könnten versuchen zu betrügen. Falls Sie eine sofortige Bestätigung benötigen, sollten Sie eine kleine Transaktionsgebühr ansetzen, oder ein System verwenden welches unsichere Transaktionen erkennt um die Sicherheit zu erhöhen. Für größere Summen ab 1000€ empfiehlt es sich auf 6 Bestätigungen oder mehr zu warten. Jede Bestätigung verringert das Risiko einer umkehrbaren Transaktion <i>exponentiell</i>."
     experimental: "Bitcoin ist noch experimentell"
     experimentaltxt: "Bitcoin ist eine experimentelle neue Währung, und wird aktiv weiterentwickelt. Auch wenn es mit steigender Nutzung immer weniger experimentell wird, sollten Sie bedenken, dass Bitcoin eine neue Erfindung ist, die Ideen verfolgt, die vorher nie ausprobiert wurden. Daher kann die Zukunft von niemandem vorhergesagt werden."
     tax: "Vergessen Sie die Steuern nicht"
@@ -343,35 +374,39 @@ de:
     blockchain: die Blockkette
     blockchaintxt: (ein verteiltes, öffentliches Transaktions-Log)
   layout:
+    menu-intro: Einführung
     menu-bitcoin-for-individuals: Einzelpersonen
     menu-bitcoin-for-businesses: Unternehmen
     menu-bitcoin-for-developers: Entwickler
-    menu-bitcoin-for-enthusiasts: Enthusiasten
-    menu-bitcoin-for-press: Presse
     menu-how-it-works: "Wie es funktioniert"
-    menu-vocabulary: Glossar
     menu-resources: Ressourcen
+    menu-vocabulary: Glossar
     menu-community: Community
     menu-development: Entwicklung
+    menu-events: Ereignisse
+    menu-innovation: Innovation
     menu-foundation: Foundation
     menu-about: Über
+    menu-about-us: "Über bitcoin.org"
     button-wallet: "Wählen Sie Ihre Wallet"
     button-know: "Was Sie wissen sollten"
     button-support: "Bitcoin unterstützen"
     footer: "© Bitcoin Project 2009–2013 Veröffentlicht unter der <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">MIT Lizenz</a>"
   url:
     about: ueber
+    about-us: ueber-uns
     bitcoin-for-developers: bitcoin-fuer-entwickler
     bitcoin-for-enthusiasts: bitcoin-fuer-enthusiasten
     bitcoin-for-individuals: bitcoin-fuer-einzelpersonen
     bitcoin-for-businesses: bitcoin-fuer-unternehmen
-    bitcoin-for-press: 
     choose-your-wallet: waehlen-sie-ihre-wallet
     community: community
     development: entwicklung
     download: download
+    events: Events
     foundation: foundation
     how-it-works: wie-es-funktioniert
+    innovation: innovation
     resources: ressourcen
     secure-your-wallet: sichern-sie-ihre-wallet
     support-bitcoin: bitcoin-unterstuetzen
@@ -380,6 +415,7 @@ de:
   anchor:
     vocabulary:
       address: adresse
+      bitcoin: bitcoin
       blockchain: blockkette
       block: block
       btc: btc
