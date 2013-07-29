@@ -2,34 +2,21 @@ body{
 	/*Allows to use :hover on any html tag using javascript*/
 	behavior:url("/css/csshover.htc");
 }
-h1 .ieimg,
-h2 .ieimg,
-h3 .ieimg{
-	vertical-align:middle;
-	margin-right:5px;
-}
 
 #head div{
-	width:expression(this.parentNode.id&&this.parentNode.id=='head'?'1000px':'');
+	width:expression(this.parentNode.id&&this.parentNode.id=='head'?'940px':'');
 	margin:expression(this.parentNode.id&&this.parentNode.id=='head'?'auto':'');
 	position:expression(this.parentNode.id&&this.parentNode.id=='head'?'relative':'');
 	z-index:expression(this.parentNode.id&&this.parentNode.id=='head'?'100':'');
 }
 #body{
-	width:1000px;
+	width:940px;
 }
 #footer{
 	width:800px;
 }
 #footer div a{
 	margin-right:expression(this.parentNode.nodeName=='DIV'?'15px':'');
-}
-#content{
-	width:690px;
-	overflow:hidden;
-}
-#content.wide{
-	width:920px;
 }
 #lang{
 	border-left:2px solid #f7f7f7;
@@ -61,15 +48,121 @@ h3 .ieimg{
 	color:#fff;
 }
 
-#choose a,#before a,#support a{
-	font-family:sans-serif;
-}
-#choose .ieimg,
-#before .ieimg,
-#support .ieimg {
+.titleicon{
 	vertical-align:middle;
-	margin-right:8px;
-	margin-left:-40px;
+	margin-right:5px;
+}
+
+.mainlist div{
+	/*This one is also required for IE7*/
+	zoom:1;
+	display:inline;
+	width:250px;
+}
+.mainlist div div{
+	zoom:1;
+	display:inline;
+	line-height:1.5em;
+	text-align:left;
+	width:auto;
+}
+.mainlist div div{
+	text-align:left;
+}
+.mainlist div:first-child + div {
+	text-align:center;
+}
+.mainlist div:first-child + div + div {
+	text-align:right;
+}
+.mainlist .ieimg{
+	vertical-align:top;
+	position:relative;
+	top:4px;
+	margin-right:10px;
+	float:left;
+	height:48px;
+	width:48px;
+}
+
+.mainbutton a,
+.mainbutton a:link,
+.mainbutton a:visited,
+.mainbutton a:active{
+	/*This one is also required for IE7*/
+	zoom:1;
+	display:inline;
+}
+.mainbutton a:hover,
+.mainbutton a:link:hover,
+.mainbutton a:visited:hover,
+.mainbutton a:active:hover{
+	background-image:none;
+	color:#fff;
+}
+.mainbutton .ieimg{
+	margin-right:10px;
+	margin-left:-52px;
+	margin-bottom:-12px;
+	height:42px;
+	width:42px;
+}
+
+.start div{
+	border-top:expression((this.parentNode.getElementsByTagName('DIV')[5]==this)?'1px solid #fad296':'');
+}
+.start div div{
+	/*This one is also required for IE7*/
+	zoom:1;
+	display:inline;
+	padding-top:25px;
+	padding-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'40px':'');
+	padding-left:expression(this.parentNode.getElementsByTagName('DIV')[2]==this?'40px':'');
+	border-left:expression(this.parentNode.getElementsByTagName('DIV')[2]==this?'1px solid #fad296':'');
+}
+.start div div div{
+	padding-top:0px;
+}
+.start>div>div:first-child+div{
+	/*This one is for IE7 only*/
+	border-top:0px;
+}
+
+.resources div{
+	border-top:expression((this.parentNode.getElementsByTagName('DIV')[3]==this)?'1px solid #e0e0e0':'');
+}
+.resources div div{
+	/*This one is also required for IE7*/
+	zoom:1;
+	display:inline;
+	padding-top:25px;
+	padding-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'40px':'');
+	padding-left:expression(this.parentNode.getElementsByTagName('DIV')[1]==this?'40px':'');
+	border-left:expression(this.parentNode.getElementsByTagName('DIV')[1]==this?'1px solid #e0e0e0':'');
+}
+.resources>div>div:first-child+div{
+	/*This one is for IE7 only*/
+	border-top:0px;
+}
+
+.downloadbox{
+	/*This one is also required for IE7*/
+	zoom:1;
+	display:inline;
+}
+.downloadbox p{
+	margin-top:expression(this.parentNode.getElementsByTagName('P')[0]==this?'0px':'20px');
+	margin-bottom:expression(this.parentNode.getElementsByTagName('P')[0]==this?'20px':'0px');
+}
+.downloadbox a{
+	/*This one is also required for IE7*/
+	zoom:1;
+	display:inline;
+}
+.downloadbox span{
+	/*This one is also required for IE7*/
+	zoom:1;
+	display:inline;	
 }
 
 .alert-message a:hover,
@@ -255,13 +348,12 @@ h3 .ieimg{
 	border:1px solid #a04246;
 }
 
-
 .press-volunteer div div{
 	width: 400px;
 	height: 150px;
 	display: inline;
 	zoom:1;
-	margin-right: 30px;
+	margin-right: 20px;
 	margin-bottom: 30px;
 	vertical-align: top;
 }
@@ -292,7 +384,7 @@ h3 .ieimg{
 	vertical-align:top;
 	text-align:left;
 	margin-bottom:15px;
-	margin-right:30px;
+	margin-right:20px;
 }
 .press-faq div a{
 	display:inline;
@@ -321,7 +413,7 @@ h3 .ieimg{
 .press-materials div {
 	display:inline;
 	zoom:1;
-	width:300px;
+	width:278px;
 	vertical-align:top;
 	position:relative;
 }
@@ -360,32 +452,62 @@ h3 .ieimg{
 
 /* Deprecated styles (should be removed when translations are updated) */
 
-#menu li{
+body.old #menu li{
 	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;
 }
-#menu li a,
-#menu li a:active,
-#menu li a:visited,
-#menu li a:link{
+body.old #menu li a,
+body.old #menu li a:active,
+body.old #menu li a:visited,
+body.old #menu li a:link{
 	font-family:sans-serif;
 	border:2px solid #f7f7f7;
 }
-#menu li:hover a,
-#menu li.active a{
+body.old #menu li:hover a,
+body.old #menu li.active a{
 	color: #000;
 	background-color: #fff;
 	border: 2px solid #ebebeb;
 }
 
-#menufor li a,
-#menufor li a:active,
-#menufor li a:visited,
-#menufor li a:link{
+body.old #menufor li a,
+body.old #menufor li a:active,
+body.old #menufor li a:visited,
+body.old #menufor li a:link{
 	font-family:sans-serif;
 }
-#menufor li:hover a,
-#menufor li.active a{
+body.old #menufor li:hover a,
+body.old #menufor li.active a{
 	color:#fff;
+}
+body.old #choose a,
+body.old #before a,
+body.old #support a{
+	font-family:sans-serif;
+}
+body.old #choose .ieimg,
+body.old #before .ieimg,
+body.old #support .ieimg {
+	vertical-align:middle;
+	margin-right:8px;
+	margin-left:-40px;
+}
+body.old #content{
+	overflow:hidden;
+	width:690px;
+}
+body.old #content.wide{
+	width:920px;
+}
+body.old #head div{
+	width:expression(this.parentNode.id&&this.parentNode.id=='head'?'1000px':'');
+}
+body.old #body{
+	width:1000px;
+}
+body.old .downloadold span{
+	/*This one is also required for IE7*/
+	zoom:1;
+	display:inline;
 }

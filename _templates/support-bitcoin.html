@@ -17,6 +17,13 @@ id: support-bitcoin
 <h2><img class="titleicon" src="/img/ico_donate.svg" alt="Icon" />{% translate donation %}</h2>
 <p>{% translate donationtxt %}</p>
 
+{% case page.lang %}
+{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' %}
+{% else %}
+<h2><img class="titleicon" src="/img/ico_foundation.svg" alt="Icon" />{% translate foundation %}</h2>
+<p>{% translate foundationtxt %}</p>
+{% endcase %}
+
 <h2><img class="titleicon" src="/img/ico_spread.svg" alt="Icon" />{% translate spread %}</h2>
 <p>{% translate spreadtxt %}</p>
 

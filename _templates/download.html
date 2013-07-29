@@ -2,10 +2,13 @@
 layout: base
 id: download
 ---
+{% case page.lang %}
+{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' %}
+
 <link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin-Qt releases">
 <h1>{% translate pagetitle %}</h1>
 <h2>{% translate latestversion %}{{site.DOWNLOAD_VERSION}}<a type="application/rss+xml" href="/en/rss/releases.rss"><img src="/img/icon_rss.svg" alt="rss" class="rssicon"></a></h2>
-<p class="download">
+<p class="downloadold">
 <img src="/img/dow-win.png"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32.zip/download">{% translate downloadwinzip %}</a> <small>~13MB</small><br>
 <img src="/img/dow-win.png"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe/download">{% translate downloadwinexe %}</a> <small>~9MB</small><br>
 <img src="/img/dow-ubuntu.png"> <a href="https://launchpad.net/~bitcoin/+archive/bitcoin">{% translate downloadubu %}</a><br>
@@ -17,3 +20,38 @@ id: download
 <br>
 <p>{% translate notelicense %}</p>
 <p>{% translate notesync %}</p>
+
+{% else %}
+
+<link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin-Qt releases">
+<div class="download">
+  <h1>{% translate pagetitle %}</h1>
+  <h2>{% translate latestversion %}{{site.DOWNLOAD_VERSION}}<a type="application/rss+xml" href="/en/rss/releases.rss"><img src="/img/icon_rss.svg" alt="rss" class="rssicon"></a></h2>
+  <div class="mainbutton"><a id="downloadbutton" href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe/download"><img src="/img/but_windows.svg" alt="icon">{% translate download %}</a></div>
+  <div class="downloadbox">
+    <p>{% translate downloados %}</p>
+    <div><img src="/img/dow-win.png"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32.zip/download">{% translate downloadwinzip %}</a> <small>~13MB</small></div>
+    <div id="download_windows"><img src="/img/dow-win.png"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe/download">{% translate downloadwinexe %}</a> <small>~9MB</small></div>
+    <div><img src="/img/dow-ubuntu.png"> <a href="https://launchpad.net/~bitcoin/+archive/bitcoin">{% translate downloadubu %}</a> <small>~4MB</small></div>
+    <div><img src="/img/dow-linux.png"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-linux.tar.gz/download">{% translate downloadlin %}</a> <small>~12MB</small></div>
+    <div><img src="/img/dow-osx-uni.png"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-macosx.dmg/download">{% translate downloadmac %}</a> <small>~13MB</small></div>
+    <div><span></span> <a href="https://github.com/bitcoin/bitcoin">{% translate downloadsource %}</a> (GitHub)</div>
+    <p><a href="/en/version-history">{% translate versionhistory %}</a></p>
+  </div>
+  <p>{% translate notesync %}</p>
+  <p>{% translate notelicense %}</p>
+</div>
+<script type="text/javascript">
+var os='windows';
+if(navigator.userAgent.indexOf('Mac')!=-1)var os='mac'
+if(navigator.userAgent.indexOf('Linux')!=-1)var os='ubuntu';
+var but=document.getElementById('downloadbutton');
+but.getElementsByTagName('IMG')[0].src='/img/but_'+os+'.svg';
+switch(os){
+case 'windows':but.href='http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe/download';break;
+case 'ubuntu':but.href='https://launchpad.net/~bitcoin/+archive/bitcoin';break;
+case 'mac':but.href='http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-macosx.dmg/download';break;
+}
+</script>
+
+{% endcase %}

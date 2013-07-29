@@ -2,8 +2,11 @@
 layout: base
 id: community
 ---
+{% case page.lang %}
+{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' %}
+
 <h1>{% translate pagetitle %}</h1>
-<ul class="resources">
+<ul class="resourcesold">
 <li>{% translate foundation %}</li>
 {% case page.lang %}
 {% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
@@ -49,3 +52,55 @@ id: community
 <li><a href="http://forum.bitcoin.pl/">Polski portal bitcoin.pl</a></li>
 {% endcase %}
 </ul>
+
+{% else %}
+
+<h1>{% translate pagetitle %}</h1>
+<p class="summary">{% translate pagedesc %}</p>
+
+<div class="resources">
+<div>
+  <div>
+    <h2><img src="/img/ico_invoice.svg" class="titleicon" alt="Icon">{% translate forums %}</h2>
+    <p><a href="https://bitcoinfoundation.org/forum/">{% translate foundation %}</a></p>
+    <p>{% translate bitcointalk %}</p>
+    <p><a href="http://www.reddit.com/r/Bitcoin/">{% translate reddit %}</a></p>
+    <p><a href="http://bitcoin.stackexchange.com/">{% translate stackexchange %}</a></p>
+  </div>
+  <div>
+    <h2><img src="/img/ico_network.svg" class="titleicon" alt="Icon">{% translate social %}</h2>
+    <p>{% translate linkgoogle %}</p>
+    <p><a href="http://twitter.com/#!/search/bitcoin">{% translate linktwitter %}</a></p>
+    <p>{% translate facebook %}</p>
+  </div>
+</div>
+<div>
+  <div>
+    <h2><img src="/img/ico_multi.svg" class="titleicon" alt="Icon">{% translate meetups %}</h2>
+    <p><a href="/{{ page.lang }}/{% translate events url %}">{% translate meetupevents %}</a></p>
+    <p><a href="http://bitcoin.meetup.com/">{% translate meetupgroup %}</a></p>
+    <p><a href="https://bitcointalk.org/index.php?board=86.0">{% translate meetupbitcointalk %}</a></p>
+    <p><a href="https://en.bitcoin.it/wiki/Meetups">{% translate meetupwiki %}</a></p>
+  </div>
+  <div>
+    <h2><img src="/img/ico_help.svg" class="titleicon" alt="Icon">{% translate irc %}</h2>
+    <p>{% translate ircjoin %}</p>
+    <p>#bitcoin {% translate chanbitcoin %}</li>
+    <p>#bitcoin-dev {% translate chandev %}</li>
+    <p>#bitcoin-otc  {% translate chanotc %}</li>
+    <p>#bitcoin-market {% translate chanmarket %}</li>
+    <p>#bitcoin-mining {% translate chanmining %}</li>
+    {% case page.lang %}
+    {% when 'fr' %}
+    <p>#bitcoin-fr (Le Bitcoin en général, français)</li>
+    {% when 'es' %}
+    <p>#bitcoin-ar (Comunidad Bitcoin Argentina)</li>
+    <p>#bitcoin-es (Comunidad Bitcoin en español)</li>
+    <p>#bitcoin-otc-ar (Mercado OTC de Bitcoin en Argentina)</li>
+    {% endcase %}
+  </div>
+</div>
+</div>
+<div class="introlink">{% translate wikiportal %}</div>
+
+{% endcase %}

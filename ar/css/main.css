@@ -11,10 +11,6 @@ h1,h2{
 h1,h2,h3{
 	text-align:right;
 }
-h1 img,h2 img,h3 img{
-	margin-right:auto;
-	margin-left:5px;
-}
 ul{
 	padding-right:20px;
 	padding-left:auto;
@@ -40,33 +36,25 @@ p{
 #menusimple li a:link{
 	font-family:'DroidNaskh', sans-serif;
 }
-#content{
-	padding:20px 30px 30px 265px;
-}
-#rightbox{
-	left:30px;
-	right:auto;
-}
 #footer{
 	text-align:right;
 	padding:20px 40px 20px 0px;
 }
-#rightbox{
-	left:30px;
-	right:auto;
+#footer>div>a{
+	margin-right:0px;
+	margin-left:15px;
 }
-#choose img,
-#before img,
-#support img,
-#choose .ieimg,
-#before .ieimg,
-#support .ieimg{
-	margin-right:-40px;
-	margin-left:8px;
+.titleicon{
+	margin-right:auto;
+	margin-left:5px;
 }
-#choose>a:first-child,#before>a:first-child,#support>a:first-child{
-	text-align:right;
-	padding:10px 48px 10px 8px;
+h1 .rssicon{
+	margin-left:0px;
+	margin-right:10px;
+}
+h2 .rssicon{
+	margin-left:0px;
+	margin-right:10px;
 }
 .previewrow>div{
 	margin-right:auto;
@@ -78,7 +66,7 @@ p{
 .previewrow>div.last{
 	margin-left:0px;
 }
-.previewrow>div>div>div>span{
+.previewrow>div>div>div>span {
 	right:auto;
 	left:30px;
 }
@@ -121,23 +109,57 @@ p{
 
 /* Deprecated styles (should be removed when translations are updated) */
 
-#menufor li a,
-#menufor li a:active,
-#menufor li a:visited,
-#menufor li a:link{
+body.old #menufor li a,
+body.old #menufor li a:active,
+body.old #menufor li a:visited,
+body.old #menufor li a:link{
 	font-family:'DroidNaskh', sans-serif;
 }
-#menu li a,
-#menu li a:active,
-#menu li a:visited,
-#menu li a:link{
+body.old #menu li a,
+body.old #menu li a:active,
+body.old #menu li a:visited,
+body.old #menu li a:link{
 	font-family:'DroidNaskh', sans-serif;
+}
+body.old h1,body.old h2{
+	font-family:'DroidNaskh', sans-serif;
+}
+body.old h1,body.old h2,body.old h3{
+	text-align:right;
+}
+body.old .summary{
+	text-align:right;
+}
+body.old #content{
+	padding:20px 30px 30px 265px;
+}
+body.old #rightbox{
+	left:30px;
+	right:auto;
+}
+body.old #choose img,
+body.old #before img,
+body.old #support img,
+body.old #choose .ieimg,
+body.old #before .ieimg,
+body.old #support .ieimg{
+	margin-right:-40px;
+	margin-left:8px;
+}
+body.old #choose>a:first-child,
+body.old #before>a:first-child,
+body.old #support>a:first-child{
+	text-align:right;
+	padding:10px 48px 10px 8px;
 }
 
 /* Deprecated styles specific to mobiles (should be removed when translations are updated) */
 
 @media handheld, only screen and (max-device-height: 37em), only screen and (max-device-width: 50em){
-	#menufor{
+	body.old #menufor{
 		bottom:0px;
+	}
+	body.old #content{
+		padding:15px 10px 20px 10px;
 	}
 }
