@@ -12,13 +12,14 @@ lang=lang.split('_')[0];
 if(!langs[lang])lang='en';
 setTimeout(function(){window.location.href='/'+lang+'/';},200);
 </script>
-<h1>{%translate pagetitle%}</h1>
-<p style="font-size:125%;">{%translate listintro%}</p>
-<ul style="font-size:125%;">
-  <li>{%translate list1%}</li>
-  <li>{%translate list2%}</li>
-  <li>{%translate list3%}</li>
-  <li>{%translate list4%}</li>
-</ul>
-<p>{%translate desc%}</p>
-<p>{%translate license%}</p>
+<div class="mainsummary">{% translate listintro %}</div>
+<div class="mainvideo"><iframe src="//www.youtube.com/embed/Um63OQz3bjo{% if page.lang != 'en' %}?cc_load_policy=1{% endif %}" frameborder="0" allowfullscreen></iframe></div>
+<div class="mainlist">
+  <div><div><img src="/img/main_ico_instant.svg" alt="Icon"><div>{% translate list1 %}</div></div></div>
+  <div><div><img src="/img/main_ico_worldwide.svg" alt="Icon"><div>{% translate list2 %}</div></div></div>
+  <div><div><img src="/img/main_ico_lowfee.svg" alt="Icon"><div>{% translate list3 %}</div></div></div>
+</div>
+<div class="maindesc">{% translate desc %}</div>
+<div class="mainbutton"><a href="{% translate getting-started url %}"><img src="/img/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>
+<div class="mainoverview">{% translate overview %}</div>
+<div class="mainoverviews"><a href="{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a> <a href="{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a> <a href="{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a></div>

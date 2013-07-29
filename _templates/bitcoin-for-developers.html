@@ -22,3 +22,12 @@ id: bitcoin-for-developers
 
 <h2><img class="titleicon" src="/img/ico_micro.svg" alt="Icon" />{% translate micro %}</h2>
 <p>{% translate microtext %}</p>
+
+{% case page.lang %}
+{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' %}
+{% else %}
+<div class="introlink">{% translate serviceslist %}</div>
+<div class="introlink">{% translate apireference %}</div>
+<div class="mainbutton"><a href="{% translate getting-started url %}"><img src="/img/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>
+{% endcase %}
+
