@@ -65,6 +65,7 @@ en:
     multisigtext: "Bitcoin also includes a feature, not yet well known, which allows coins to be spent only if a subset of a group of people sign the transaction (so-called \"n of m\" transactions). This is the equivalent of the good old multi-signature cheque system that you might still use with banks today."
     transparency: "Accounting transparency"
     transparencytext: "Many organizations are required to produce accounting documents about their activity and to adopt good transparency practices. Using Bitcoin offers the highest level of transparency since your balance and your transactions are public for your members so long as you keep them aware of your Bitcoin addresses."
+    merchantintro: "Visit the <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses\">merchant introduction guide</a> on the wiki."
   bitcoin-for-developers:
     title: "Bitcoin for Developers - Bitcoin"
     pagetitle: "Bitcoin for Developers"
@@ -81,6 +82,8 @@ en:
     securitytext: "Most parts of the security are handled by the protocol on the client and Bitcoin network side. Authenticity is verified through private keys, and double-spends are prevented through the Bitcoin network. That means no need for PCI compliance nor fraud detection. We love things that just work, don't we?"
     micro: "Cheap micro payments"
     microtext: "Bitcoin offers the lowest payment processing fees for any type of transaction, including micro-payments. This means that it can also be used to design and implement new creative online services that could not exist before only because of financial limitations."
+    serviceslist: "Visit the <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services\">merchant services list</a> on the wiki."
+    apireference: "Or read Bitcoin-Qt <a href=\"https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)\">API reference</a> and <a href=\"https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list\">API calls list</a>."
   bitcoin-for-individuals:
     title: "Bitcoin for Individuals - Bitcoin"
     pagetitle: "Bitcoin for Individuals"
@@ -100,24 +103,32 @@ en:
   community:
     title: "Community - Bitcoin"
     pagetitle: "Bitcoin communities"
-    foundation: "<a href=\"https://bitcoinfoundation.org/forum/\">Bitcoin Foundation Forum (members only)</a>"
-    wikiportal: "<a href=\"https://en.bitcoin.it/wiki/Bitcoin:Community_portal\">Bitcoin Wiki - Community portal</a>"
-    stackexchange: "<a href=\"http://bitcoin.stackexchange.com/\">Bitcoin StackExchange (Q&amp;A)</a>"
+    pagedesc: "Find interesting people, groups and communities around Bitcoin."
+    forums: "Forums"
+    foundation: "Bitcoin Foundation Forum (members only)"
     bitcointalk: "<a href=\"https://bitcointalk.org/\">BitcoinTalk Forum</a>"
-    ircjoin: "Join the project's lively IRC channels on the <a href=\"http://freenode.net/\">FreeNode</a> network<br>or use the <a href=\"http://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">FreeNode Web IRC</a>."
+    reddit: "Reddit's Bitcoin Community"
+    stackexchange: "Bitcoin StackExchange (Q&amp;A)"
+    irc: "IRC Chat"
+    ircjoin: "IRC Channels on <a href=\"http://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">FreeNode</a>."
     chanbitcoin: "(General Bitcoin-related)"
     chandev: "(Development and technical)"
     chanotc: "(Over The Counter exchange)"
     chanmarket: "(Live quotes from markets)"
     chanmining: "(Bitcoin mining related)"
-    linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Google+ Bitcoin community</a>"
-    linktwitter: "<a href=\"http://twitter.com/#!/search/bitcoin\">Twitter Search</a>"
+    social: "Social networks"
+    linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Google+ Bitcoin Community</a>"
+    linktwitter: "Twitter Search"
     facebook: "<a href=\"https://www.facebook.com/pages/Bitcoin-P2P-Cryptocurrency/134466763256650\">Facebook Page</a>"
-    reddit: "<a href=\"http://www.reddit.com/r/Bitcoin/\">Reddit's Bitcoin community</a>"
-    linkmeetup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin Meetup Groups</a>"
+    meetups: "Meetups"
+    meetupevents: "Bitcoin Conferences And Events"
+    meetupgroup: "Bitcoin Meetup Groups"
+    meetupbitcointalk: "Bitcoin Meetups On BitcoinTalk"
+    meetupwiki: "Bitcoin Meetups On The Wiki"
+    wikiportal: "Visit the <a href=\"https://en.bitcoin.it/wiki/Bitcoin:Community_portal\">Community portal</a> on the wiki."
   choose-your-wallet:
     title: "Choose your wallet - Bitcoin"
-    pagetitle: "Choose your wallet"
+    pagetitle: "Choose your Bitcoin wallet"
     summary: "Your Bitcoin wallet is what allows you to transact with the world. It gives you ownership of Bitcoin <i>addresses</i> that you can use to receive coins from other users and then lets you send those coins onwards. Just like email, you can receive bitcoins when you are offline, and all wallets are compatible with each other. Before you start with Bitcoin, <b>be sure to read <a href=\"#you-need-to-know#\">what you need to know</a></b> first."
     getstarted: "Get started fast and easy"
     getstartedsum: "If you are new to Bitcoin, these wallets are a good place to begin."
@@ -149,6 +160,7 @@ en:
   development:
     title: "Development - Bitcoin"
     pagetitle: "Bitcoin development"
+    summary: "Find more information about current specification, software and developers."
     spec: "Specification"
     spectxt: "If you are interested in learning more about the technical details of Bitcoin, it is recommended you start with these documents."
     speclink1: "<a href=\"/bitcoin.pdf\">Bitcoin: A Peer-to-Peer Electronic Cash System</a>"
@@ -166,6 +178,8 @@ en:
     title: "Download - Bitcoin"
     pagetitle: "Download Bitcoin-Qt"
     latestversion: "Latest version : "
+    download: "Download Bitcoin-Qt"
+    downloados: "Or choose your operating system"
     downloadwinzip: "Download for Windows (zip)"
     downloadwinexe: "Download for Windows (exe)"
     downloadubu: "Download for Ubuntu (PPA)"
@@ -182,15 +196,26 @@ en:
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitcoin meetups on BitcoinTalk</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitcoin meetups on the Wiki</a>"
     meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin meetup groups</a>"
-  foundation:
-    title: "Bitcoin Foundation - Bitcoin"
-    pagetitle: "Bitcoin Foundation"
-    mission: "Bitcoin Foundation standardizes, protects, and promotes the use of Bitcoin cryptographic money for the benefit of users worldwide."
-    visit: "Visit Bitcoin Foundation Website"
+  getting-started:
+    title: "Getting started - Bitcoin"
+    pagetitle: "Getting started with Bitcoin"
+    pagedesc: "Using Bitcoin to pay and get paid anywhere is easy. No rocket science involved."
+    inform: "Inform yourself"
+    informtxt: "Bitcoin is different than what you know and use every day. Before you start using Bitcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls."
+    informbut: "Read more"
+    choose: "Choose your wallet"
+    choosetxt: "You can bring a Bitcoin wallet in your everyday life with your mobile or you can have a wallet only for online payments on your computer. In any case, choosing your wallet can be done in a minute."
+    choosebut: "Choose your wallet"
+    get: "Get bitcoins"
+    gettxt: "You can get bitcoins by accepting them as a payment for goods and services or by buying them from a friend or someone near you. You can also buy them directly from an exchange with your bank account."
+    getbut: "Find an exchange"
+    spend: "Spend bitcoins"
+    spendtxt: "There is a growing number of services and merchants accepting Bitcoin all over the world. You can use Bitcoin to pay them and rate your experience to help honest businesses to gain more visibility."
+    spendbut: "Find merchants"
   how-it-works:
     title: "How does Bitcoin work? - Bitcoin"
     pagetitle: "How does Bitcoin work?"
-    intro: "OK, this is a question that often causes confusion. Here's a quick explanation!"
+    intro: "This is a question that often causes confusion. Here's a quick explanation!"
     basics: "The basics for a new user"
     basicstxt1: "As a new user, you only need to <a href=\"#choose-your-wallet#\">choose a wallet</a> that you will install on your computer or on your mobile phone. Once you have your wallet installed, it will generate your first Bitcoin address and you can create more whenever you need one. You can disclose one of your Bitcoin addresses to your friends so that they can pay you or vice versa, you can pay your friends if they give you their addresses. In fact, this is pretty similar to how email works. So all that is left to do at this point is to get some bitcoins and to <a href=\"#secure-your-wallet#\">keep them safe</a>. In order to start using Bitcoin, you are not required to understand the technical details."
     basicstxt2: "However, if you want to know more, keep reading!"
@@ -203,15 +228,16 @@ en:
     readmore: "Going down the rabbit hole"
     readmoretxt: "This is only a very short and concise summary of the system. If you want to get into the details, you can <a href=\"/bitcoin.pdf\">read the original paper</a> that describes the system's design, and explore the <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>."
   index:
-    title: "Bitcoin - Open source P2P digital currency"
-    pagetitle: "An open source P2P digital currency"
-    listintro: "Bitcoin is a digital currency, a protocol, and a software that enables"
-    list1: "Instant peer-to-peer transactions"
-    list2: "Worldwide payments"
-    list3: "Almost no processing fees"
-    list4: "And much more"
-    desc: "Bitcoin uses peer-to-peer technology to operate with no central authority; managing transactions and the issuing of bitcoins is carried out <b>collectively by the network</b>. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment systems."
-    license: "The software is a community-driven, <a href=\"http://www.fsf.org/about/what-is-free-software\">free, open-source</a> project released under the <a href=\"http://creativecommons.org/licenses/MIT/\">MIT license</a>."
+    title: "Bitcoin - Open source P2P money"
+    listintro: "Bitcoin is an innovative payment network and a new kind of money."
+    list1: "Instant peer-to-peer<br>transactions"
+    list2: "Worldwide<br>payments"
+    list3: "Zero or low<br>processing fees"
+    desc: "Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. <b>Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part</b>. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system."
+    overview: "Or get a quick overview for"
+    individuals: "Individuals"
+    businesses: "Businesses"
+    developers: "Developers"
   innovation:
     title: "Innovation - Bitcoin"
     pagetitle: "Why Bitcoin is changing the world"
@@ -233,28 +259,22 @@ en:
   resources:
     title: "Resources - Bitcoin"
     pagetitle: "Bitcoin resources"
-    linkweusecoins: "<a href=\"http://www.weusecoins.com\">We Use Coins. Start here!</a>"
-    linkwallets: "<a href=\"#choose-your-wallet#\">Bitcoin wallets</a>"
-    linkwiki: "<a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin Wiki</a>"
-    linkwikifaq: "<a href=\"https://bitcoin.it/wiki/FAQ\">FAQ</a>"
-    linkwikisites: "<a href=\"https://bitcoin.it/wiki/Trade\">Sites That Accept Bitcoin</a>"
-    linkwikimerchant: "<a href=\"https://en.bitcoin.it/wiki/Merchant_Howto\">Merchant How-to</a>"
-    linkcharts: "Bitcoin Charts"
-    linkbitcoincharts: "<a href=\"http://bitcoincharts.com/\">Bitcoin Charts - Markets</a>"
-    linkblockchaininfo: "<a href=\"http://blockchain.info/charts\">Blockchain.info - Stats and graphics</a>"
-    linknews: "Bitcoin News"
-    linkbitcoinmagazine: "<a href=\"http://bitcoinmagazine.com/\">Bitcoin Magazine</a>"
-    linkbitcoinnews: "<a href=\"http://www.bitcoinnews.com/\">Bitcoin News</a>"
-    linkforumpress: "<a href=\"https://bitcointalk.org/index.php?board=77.0\">Bitcoin Forum / Press</a>"
-    linkspec: "Bitcoin Specification"
-    linkpdf: "<a href=\"/bitcoin.pdf\">Bitcoin: A Peer-to-Peer Electronic Cash System</a>"
-    linkprotocol: "<a href=\"https://en.bitcoin.it/wiki/Protocol_rules\">Protocol rules</a>"
+    pagedesc: "Find useful websites and resources about Bitcoin."
+    useful: "Useful places"
+    linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin Wiki</a>"
+    directories: "Directories"
+    linkwallets: "Wallets"
+    linkmerchants: "Merchants"
+    linkexchanges: "Exchanges"
+    linkmerchantstools: "Merchant tools"
+    charts: "Charts and statistics"
+    news: "News"
   secure-your-wallet:
     title: "Securing your wallet - Bitcoin"
     pagetitle: "Securing your wallet"
-    summary: "Like in real life, your wallet must be secured. Bitcoin allows the transfer of value worldwide easier than ever. Such great features also come with great security concerns. At the same time, Bitcoin can provide very high levels of security if used correctly. <b>Always remember that it is your responsibility to adopt good practices in order to protect your money</b>. Here are some things you should consider."
-    online: "Be careful with online wallets"
-    onlinetxt: "Online wallets look like online banks. You are trusting someone to store and protect your bitcoins while you have to remember your password. However, you should always choose such services carefully. As of today, no online wallet provides enough insurance and security to be used to store value like a bank. Using security features like two-factor authentication can also increase the security of your acccounts."
+    summary: "Like in real life, your wallet must be secured. Bitcoin makes it possible to transfer value anywhere in a very easy way and it allows you to be in control of your money. Such great features also come with great security concerns. At the same time, Bitcoin can provide very high levels of security if used correctly. <b>Always remember that it is your responsibility to adopt good practices in order to protect your money</b>."
+    online: "Be careful with online wallets and exchanges"
+    onlinetxt: "Online wallets and exchanges look like online banks. However, you should always choose such services carefully. As of today, these services generally don't provide enough insurance and security to be used to store your money like a bank. Using security features like two-factor authentication can help to increase the security of your acccounts."
     backup: "Backup your wallet"
     backuptxt: "Bitcoin services and software allow you to backup your wallet. Stored in a safe place, a backup can protect you against computer failures and many human mistakes."
     backupwhole: "Backup your entire wallet"
@@ -307,15 +327,17 @@ en:
     develop: "Development"
     developtxt: "Bitcoin is open-source. So if you are a developer, you can use your super-powers to do good and <a href=\"#development#\">improve Bitcoin</a>. Or you can build amazing new services or software that can use Bitcoin."
     donation: "Donation"
-    donationtxt: "The easiest way to help is to <a href=\"https://bitcoinfoundation.org/donate\">donate</a> a few bitcoins or to join the Bitcoin Foundation. The Foundation funds the salary for the maintainers of the core Bitcoin software, organizes conferences, and provides other important resources."
+    donationtxt: "The easiest way to help is to <a href=\"https://bitcoinfoundation.org/donate\">donate</a> a few bitcoins to the Bitcoin Foundation. Or you can help funding any project related to Bitcoin that you believe will be helpful in the future."
+    foundation: "Join the Foundation"
+    foundationtxt: "The <a href=\"https://bitcoinfoundation.org/\">Bitcoin Foundation</a> is one of the largest organizations dedicated to standardize, protect and promote Bitcoin. It funds the salary for Bitcoin software maintainers, organizes conferences, and provides many important resources."
     spread: "Spread"
     spreadtxt: "Speak about Bitcoin to interested people. Write about it on your blog. Tell your favorite shops you would like to pay with Bitcoin. Or be creative and make yourself a nice Bitcoin T-shirt."
     wiki: "Wiki"
     wikitxt: "The <a href=\"http://en.bitcoin.it/\">Bitcoin wiki</a> is full of useful and detailed information and we are constantly improving the information it contains - just like Wikipedia. You can help keep the wiki accurate and up-to-date."
     translate: "Translate"
     translatetxt: "You can help to increase Bitcoin availability by translating or improving translations inside important parts of the Bitcoin ecosystem. Just pick a project you would like to help."
-    help: "Help"
-    helptxt: "You can join Bitcoin <a href=\"#community#\">communities</a> to give help to new users. You can talk about Bitcoin with other people, and you can learn more about it every day."
+    help: "Meet the communities"
+    helptxt: "You can join Bitcoin <a href=\"#community#\">communities</a> and talk with other Bitcoin enthusiasts. You can learn more about Bitcoin every day, give help to new users and get involved in interesting projects."
   vocabulary:
     title: "Vocabulary - Bitcoin"
     pagetitle: "Some Bitcoin words you might hear"
@@ -352,9 +374,9 @@ en:
   you-need-to-know:
     title: "Some things you need to know - Bitcoin"
     pagetitle: "Some things you need to know"
-    summary: "If you are about to explore Bitcoin, there are a few things you should know. Bitcoin does not let you send emails or take pictures; it lets you exchange money and value. As such, Bitcoin must be treated with the same care as your regular wallet, or even more in some cases!"
+    summary: "If you are about to explore Bitcoin, there are a few things you should know. Bitcoin lets you exchange money in a different way than with usual banks. As such, you should take time to inform yourself before using Bitcoin for any serious transaction. Bitcoin should be treated with the same care as your regular wallet, or even more in some cases!"
     secure: "Securing your wallet"
-    securetxt: "Like in real life, your wallet must be secured. Bitcoin allows the transfer of value worldwide easier than ever. Such great features also come with great security concerns. At the same time, Bitcoin can provide very high levels of security if used correctly. Always remember that it is your responsibility to adopt good practices in order to protect your money. <a href=\"#secure-your-wallet#\"><b>Read more about securing your wallet</b></a>."
+    securetxt: "Like in real life, your wallet must be secured. Bitcoin makes it possible to transfer value anywhere in a very easy way and it allows you to be in control of your money. Such great features also come with great security concerns. At the same time, Bitcoin can provide very high levels of security if used correctly. Always remember that it is your responsibility to adopt good practices in order to protect your money. <a href=\"#secure-your-wallet#\"><b>Read more about securing your wallet</b></a>."
     volatile: "Bitcoin price is volatile"
     volatiletxt: "The price of a bitcoin can unpredictably increase or decrease over a short period of time due to its young economy, novel nature, and sometimes illiquid markets. Consequently, keeping your savings in bitcoin is not recommended at this point. Bitcoin should be considered as a high risk asset, and you should never store money that you cannot afford to lose with Bitcoin. If you receive payments with Bitcoin, many service providers allow you to convert them instantly to your local currency."
     irreversible: "Bitcoin payments are irreversible"
@@ -374,24 +396,25 @@ en:
     blockchain: the Block chain
     blockchaintxt: (a shared public transaction log)
   layout:
-    menu-intro: Introduction
-    menu-bitcoin-for-individuals: Individuals
+    menu-about: About
+    menu-about-us: "About bitcoin.org"
     menu-bitcoin-for-businesses: Businesses
     menu-bitcoin-for-developers: Developers
-    menu-how-it-works: "How it works"
-    menu-resources: Resources
-    menu-vocabulary: Vocabulary
+    menu-bitcoin-for-individuals: Individuals
     menu-community: Community
     menu-development: Development
     menu-events: Events
-    menu-innovation: Innovation
     menu-foundation: Foundation
-    menu-about: About
-    menu-about-us: "About bitcoin.org"
-    button-wallet: "Choose your wallet"
-    button-know: "You need to know"
-    button-support: "Support Bitcoin"
+    menu-getting-started: "Getting started"
+    menu-how-it-works: "How it works"
+    menu-innovation: Innovation
+    menu-intro: Introduction
+    menu-resources: Resources
+    menu-support-bitcoin: Participate
+    menu-vocabulary: Vocabulary
+    menu-you-need-to-know: "You need to know"
     footer: "© Bitcoin Project 2009–2013 Released under the <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">MIT license</a>"
+    getstarted: "Get started with Bitcoin"
   url:
     about: about
     about-us: about-us
@@ -405,6 +428,7 @@ en:
     download: download
     events: events
     foundation: foundation
+    getting-started: getting-started
     how-it-works: how-it-works
     innovation: innovation
     resources: resources

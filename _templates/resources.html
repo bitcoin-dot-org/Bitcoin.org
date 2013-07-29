@@ -2,8 +2,11 @@
 layout: base
 id: resources
 ---
+{% case page.lang %}
+{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' %}
+
 <h1>{% translate pagetitle %}</h1>
-<ul class="resources">
+<ul class="resourcesold">
 <li>{% translate linkweusecoins %}</li>
 <li>{% translate linkwallets %}</li>
 <li>{% translate linkwiki %}
@@ -22,7 +25,8 @@ id: resources
 <li><a>{% translate linknews %}</a>
 <ul>
   <li>{% translate linkbitcoinmagazine %}</li>
-  <li>{% translate linkbitcoinnews %}</li>
+  <li><a href="http://www.coindesk.com/">CoinDesk</a></li>
+  <li><a href="http://thegenesisblock.com/">The Genesis Block</a></li>
   <li>{% translate linkforumpress %}</li>
 </ul>
 </li>
@@ -33,3 +37,44 @@ id: resources
 </ul>
 </li>
 </ul>
+
+{% else %}
+
+<h1>{% translate pagetitle %}</h1>
+<p class="summary">{% translate pagedesc %}</p>
+
+<div class="resources">
+<div>
+  <div>
+    <h2><img src="/img/ico_simple.svg" class="titleicon" alt="Icon">{% translate useful %}</h2>
+    <p><a href="https://bitcoinfoundation.org/">Bitcoin Foundation</a></p>
+    <p>{% translate linkwiki %}</p>
+    <p><a href="https://weusecoins.com/">WeUseCoins.com</a></p>
+    <p><a href="http://bitcoinmining.com/">BitcoinMining.com</a></p>
+  </div>
+  <div>
+    <h2><img src="/img/ico_invoice.svg" class="titleicon" alt="Icon">{% translate directories %}</h2>
+    <p><a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate linkwallets %}</a> - bitcoin.org</p>
+    <p><a href="http://usebitcoins.info/">{% translate linkmerchants %}</a> - usebitcoins.info</p>
+    <p><a href="http://howtobuybitcoins.info/">{% translate linkexchanges %}</a> - howtobuybitcoins.info</p>
+    <p><a href="https://en.bitcoin.it/wiki/Category:Shopping_Cart_Interfaces">{% translate linkmerchantstools %}</a> - en.bitcoin.it</p>
+  </div>
+</div>
+<div>
+  <div>
+    <h2><img src="/img/ico_spread.svg" class="titleicon" alt="Icon">{% translate news %}</h2>
+    <p><a href="http://bitcoinmagazine.com/">Bitcoin Magazine</a></p>
+    <p><a href="http://www.coindesk.com/">CoinDesk</a></p>
+    <p><a href="http://thegenesisblock.com/">The Genesis Block</a></p>
+    <p><a href="http://letstalkbitcoin.com/">Let's Talk Bitcoin</a></p>
+    <p><a href="https://bitcointalk.org/index.php?board=77.0">Bitcoin Forum / Press</a></p>
+  </div>
+  <div>
+    <h2><img src="/img/ico_market.svg" class="titleicon" alt="Icon">{% translate charts %}</h2>
+    <p><a href="http://blockchain.info/charts">Blockchain.info</a></p>
+    <p><a href="http://bitcoincharts.com/charts/">Bitcoincharts.com</a></p>
+  </div>
+</div>
+</div>
+
+{% endcase %}

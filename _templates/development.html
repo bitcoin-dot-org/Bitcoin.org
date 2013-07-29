@@ -3,6 +3,11 @@ layout: base
 id: development
 ---
 <h1>{% translate pagetitle %}</h1>
+{% case page.lang %}
+{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' %}
+{% else %}
+<p class="summary">{% translate summary %}</p>
+{% endcase %}
 
 <h2>{% translate spec %}</h2>
 <p>{% translate spectxt %}</p>
