@@ -65,6 +65,7 @@ fr:
     multisigtext: "Bitcoin inclut également une fonctionnalité encore peu connue permettant d'empêcher la dépense de certains bitcoins à moins qu'un nombre défini de personnes au sein d'un groupe ne signe la transaction. C'est ce qu'on appelle les transactions \"n de m\". Ce système représente l'équivalent du bon vieux chèque à signatures multiples que vous utilisez peut-être encore aujourd'hui."
     transparency: "Comptabilité transparente"
     transparencytext: "Beaucoup d'organisations sont tenues de produire des documents sur leurs activités et d'adopter de bonnes pratiques de transparence. Utiliser le Bitcoin offre le plus haut niveau de transparence puisque votre solde et chacune de vos transactions peuvent être consultés en ligne par chaque personne à qui vous donnez vos adresses Bitcoin - par exemple vos membres."
+    merchantintro: "Visitez le <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses\">guide d'introduction pour les commerçants</a> sur le wiki."
   bitcoin-for-developers:
     title: "Bitcoin pour les développeurs - Bitcoin"
     pagetitle: "Bitcoin pour les développeurs"
@@ -81,6 +82,8 @@ fr:
     securitytext: "La plus grande partie de la sécurité est prise en charge par le protocole du côté du client et du côté du réseau Bitcoin. L'authenticité des créanciers est vérifiée grâce aux clés privées et la double-dépense est bloquée par le réseau Bitcoin. Ce qui signifie que vous n'avez pas à vous soucier d'être conforme avec la norme PCI ou d'implémenter des détections de fraudes. Bitcoin fonctionne, point à la ligne."
     micro: "Micro paiements bons marchés"
     microtext: "Bitcoin offre les frais de transaction les plus bas pour tout type de paiement, y compris les micro-paiements. Ce qui signifie qu'il peut aussi être utilisé pour concevoir et implémenter des nouveaux services en ligne créatifs qui ne pouvaient pas exister pour des raisons financières."
+    serviceslist: "Visitez la <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services\">liste des services pour commerçants</a> sur le wiki."
+    apireference: "Ou consultez la <a href=\"https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)\">référence de l'API</a> et la <a href=\"https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list\">liste des appels API</a> pour Bitcoin-Qt."
   bitcoin-for-individuals:
     title: "Bitcoin pour les particuliers - Bitcoin"
     pagetitle: "Bitcoin pour les particuliers"
@@ -100,24 +103,32 @@ fr:
   community:
     title: "Communauté - Bitcoin"
     pagetitle: "Les communautés Bitcoin"
-    foundation: "<a href=\"https://bitcoinfoundation.org/forum/\">Forum de la Fondation Bitcoin (membres seulement)</a>"
-    wikiportal: "<a href=\"https://en.bitcoin.it/wiki/Bitcoin:Community_portal\">Wiki Bitcoin - Portail de la communauté</a>"
-    stackexchange: "<a href=\"http://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a> (questions-réponses, anglais)"
+    pagedesc: "Trouvez des personnes, des groupes et des communautés autour du Bitcoin."
+    forums: "Forums"
+    foundation: "Forum de la Fondation Bitcoin (réservé aux membres)"
     bitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=13.0\">Forum BitcoinTalk, section francophone</a>"
-    ircjoin: "Rejoignez les canaux IRC sur le réseau <a href=\"http://freenode.net/\">FreeNode</a> (anglais)<br>ou utilisez <a href=\"http://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">FreeNode Web IRC</a>."
+    reddit: "Communauté Bitcoin sur Reddit (anglais)"
+    stackexchange: "Bitcoin StackExchange (questions-réponses, anglais)"
+    irc: "Chat IRC"
+    ircjoin: "Canaux IRC sur <a href=\"http://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">FreeNode</a>."
     chanbitcoin: "(Le Bitcoin en général, anglais)"
     chandev: "(Développement et détails techniques, anglais)"
     chanotc: "(Échange de bitcoins, anglais)"
     chanmarket: "(Évolution des marchés, anglais)"
     chanmining: "(Minage de bitcoins, anglais)"
-    linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Communauté Bitcoin sur Google+</a> (anglais)"
-    linktwitter: "<a href=\"http://twitter.com/#!/search/bitcoin\">Recherche Twitter</a>"
+    social: "Réseaux sociaux"
+    linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Communauté Bitcoin sur Google+ (anglais)</a>"
+    linktwitter: "Recherche Twitter"
     facebook: "<a href=\"https://www.facebook.com/pages/Bitcoin-P2P-Cryptocurrency/134466763256650\">Page Facebook</a> (anglais)"
-    reddit: "<a href=\"http://www.reddit.com/r/Bitcoin/\">Communauté Reddit</a> (anglais)"
-    linkmeetup: "<a href=\"http://bitcoin.meetup.com/\">Groupes Bitcoin Meetup</a>"
+    meetups: "Rencontres"
+    meetupevents: "Conférences et événements Bitcoin"
+    meetupgroup: "Groupes de rencontre Bitcoin"
+    meetupbitcointalk: "Rencontres sur le Bitcoin - BitcoinTalk"
+    meetupwiki: "Rencontres sur le Bitcoin - Wiki"
+    wikiportal: "Visitez le <a href=\"https://en.bitcoin.it/wiki/Bitcoin:Community_portal\">Portail de la communauté</a> sur le wiki."
   choose-your-wallet:
     title: "Choisissez votre porte-monnaie - Bitcoin"
-    pagetitle: "Choisissez votre porte-monnaie"
+    pagetitle: "Choisissez votre porte-monnaie Bitcoin"
     summary: "Votre porte-monnaie Bitcoin est ce qui vous permet de faire des transactions avec le monde. Il vous rend propriétaire d'adresses Bitcoin que vous pouvez utiliser pour recevoir des bitcoins d'autres utilisateurs et en envoyer. Comme les emails, vous pouvez recevoir des bitcoins lorsque vous êtes hors-ligne, et tous les porte-monnaies Bitcoin sont compatibles entre eux. Avant de commencer avec le Bitcoin, assurez-vous d'abord d'avoir lu <a href=\"#you-need-to-know#\"><b>ce que vous devez savoir</b></a>."
     getstarted: "Débutez rapidement et simplement"
     getstartedsum: "Si vous êtes un nouvel utilisateur, ces porte-monnaie sont un bon point de départ."
@@ -149,6 +160,7 @@ fr:
   development:
     title: "Développement - Bitcoin"
     pagetitle: "Développement du Bitcoin"
+    summary: "Trouvez plus d'informations sur les logiciels, la spécification et les développeurs actuels."
     spec: "Spécification"
     spectxt: "Si vous êtes intéressé à en apprendre davantage sur les détails techniques du Bitcoin, il est recommandé de commencer avec ces documents."
     speclink1: "<a href=\"/bitcoin.pdf\">Bitcoin: A Peer-to-Peer Electronic Cash System</a>"
@@ -166,6 +178,8 @@ fr:
     title: "Téléchargement - Bitcoin"
     pagetitle: "Télécharger Bitcoin-Qt"
     latestversion: "Dernière version : "
+    download: "Télécharger Bitcoin-Qt"
+    downloados: "Ou choisissez votre système d'exploitation"
     downloadwinzip: "Télécharger pour Windows (zip)"
     downloadwinexe: "Télécharger pour Windows (exe)"
     downloadubu: "Télécharger pour Ubuntu (PPA)"
@@ -178,15 +192,26 @@ fr:
   events:
     title: "Conférences et événements - Bitcoin"
     pagetitle: "Conférences et événements"
-    pagedesc: "Trouvez des conférences et des événements tenus par différents organisateurs à travers le monde."
+    pagedesc: "Trouvez des conférences et des événements tenus par des organisateurs à travers le monde."
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Rencontres sur le Bitcoin - BitcoinTalk</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Rencontres sur le Bitcoin - Wiki</a>"
     meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Groupes meetup de rencontre sur le Bitcoin</a>"
-  foundation:
-    title: "Fondation Bitcoin - Bitcoin"
-    pagetitle: "La Fondation Bitcoin"
-    mission: "La Fondation Bitcoin standardise, protège et promeut l'utilisation de la monnaie cryptographique Bitcoin au bénéfice de ses utilisateurs à travers le monde."
-    visit: "Visitez le site web de la Fondation"
+  getting-started:
+    title: "Débuter - Bitcoin"
+    pagetitle: "Débuter avec Bitcoin"
+    pagedesc: "Utiliser Bitcoin pour payer et être payé n'importe où est facile et accessible à tous."
+    inform: "Informez-vous"
+    informtxt: "Bitcoin est différent de ce que vous connaissez et utilisez tous les jours. Avant de commencer à effectuer des paiements à l'aide du réseau Bitcoin, il y a certaines choses que vous devez savoir pour être en mesure de l'utiliser en toute sécurité et éviter les problèmes les plus courants."
+    informbut: "En savoir plus"
+    choose: "Choisissez votre porte-monnaie"
+    choosetxt: "Vous pouvez emporter un porte-monnaie Bitcoin dans votre vie de tous les jours avec votre téléphone portable ou vous pouvez utiliser un porte-monnaie uniquement pour les paiements en ligne sur votre ordinateur. Dans tous les cas, choisir votre porte-monnaie peut être fait dans la minute."
+    choosebut: "Choisir votre porte-monnaie"
+    get: "Obtenez des bitcoins"
+    gettxt: "Vous pouvez obtenir des bitcoins en les acceptant en tant que paiement pour des biens ou des services ou en les achetant à un ami ou à quelqu'un à proximité de vous. Vous pouvez aussi les acheter directement sur une bourse d'échange en ligne à l'aide de votre compte bancaire."
+    getbut: "Trouver une bourse d'échange"
+    spend: "Dépensez des bitcoins"
+    spendtxt: "Il y a un nombre croissant de services et de commerces qui acceptent le Bitcoin partout à travers le monde. Vous pouvez utiliser Bitcoin pour payer ces commerces et vous pouvez laisser une évaluation sur votre expérience d'achat afin d'aider les entreprises honnêtes à gagner plus de visibilité."
+    spendbut: "Trouver des commerces"
   how-it-works:
     title: "Comment fonctionne Bitcoin ? - Bitcoin"
     pagetitle: "Comment fonctionne Bitcoin ?"
@@ -203,15 +228,16 @@ fr:
     readmore: "Aller plus loin"
     readmoretxt: "Tout cela n'est qu'un résumé très court et concis du système. Si vous voulez aller plus loin dans les détails, vous pouvez lire la <a href=\"/bitcoin.pdf\">spécification originale</a> ou explorer le <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Wiki Bitcoin</a>."
   index:
-    title: "Bitcoin - Devise virtuelle P2P libre et ouverte"
-    pagetitle: "Une devise virtuelle P2P libre et ouverte"
-    listintro: "Bitcoin est une devise virtuelle, un protocole et un logiciel qui rend possible :"
-    list1: "Transactions instantanées de pair à pair"
-    list2: "Paiements internationaux"
-    list3: "Presque aucun frais de transaction"
-    list4: "Et bien plus encore"
-    desc: "Bitcoin utilise une technologie pair à pair pour fonctionner sans autorité centrale. Le traitement des transactions et la création des bitcoins est prise en charge <b>collectivement par le réseau</b>. Par le biais de ses propriétés uniques, Bitcoin rend possible des usages prometteurs qui ne pouvaient pas être couverts par les systèmes de paiement précédents."
-    license: "Le logiciel Bitcoin est un <a href=\"http://www.fsf.org/about/what-is-free-software\">logiciel libre</a> développé par la communauté et publié sous la <a href=\"http://creativecommons.org/licenses/MIT/\">licence MIT</a>."
+    title: "Bitcoin - Argent P2P libre et ouvert"
+    listintro: "Bitcoin est un système de paiement novateur et une nouvelle forme d'argent."
+    list1: "Transactions rapides<br>de pair à pair"
+    list2: "Paiements à<br>travers le monde"
+    list3: "Aucun ou peu de<br>frais de traitement"
+    desc: "Bitcoin utilise une technologie pair à pair pour fonctionner sans autorité centrale. Le traitement des transactions et la création des bitcoins est prise en charge collectivement par le réseau. <b>Bitcoin est open-source, son fonctionnement est public, personne ne possède ni ne contrôle Bitcoin et le réseau est ouvert à tous</b>. Grâce à ses propriétés uniques, Bitcoin rend possible des usages prometteurs qui ne pouvaient pas être couverts par les précédents systèmes de paiement."
+    overview: "Ou obtenez une vue d'ensemble pour"
+    individuals: "Particuliers"
+    businesses: "Entreprises"
+    developers: "Développeurs"
   innovation:
     title: "Innovation - Bitcoin"
     pagetitle: "Pourquoi Bitcoin change le monde"
@@ -233,28 +259,22 @@ fr:
   resources:
     title: "Ressources - Bitcoin"
     pagetitle: "Ressources sur le Bitcoin"
-    linkweusecoins: "<a href=\"http://www.weusecoins.com/fr\">We Use Coins. Commencez ici !</a>"
-    linkwallets: "<a href=\"#choose-your-wallet#\">Choisissez votre porte-monnaie</a>"
-    linkwiki: "<a href=\"https://fr.bitcoin.it/wiki/Main_Page\">Wiki Bitcoin</a>"
-    linkwikifaq: "<a href=\"https://fr.bitcoin.it/wiki/FAQ\">FAQ</a>"
-    linkwikisites: "<a href=\"https://fr.bitcoin.it/wiki/Trade\">Sites qui acceptent le Bitcoin</a>"
-    linkwikimerchant: "<a href=\"https://en.bitcoin.it/wiki/Merchant_Howto\">Introduction pour les marchants (anglais)</a>"
-    linkcharts: "Graphiques Bitcoin"
-    linkbitcoincharts: "<a href=\"http://bitcoincharts.com/\">Bitcoin Charts - Graphiques des marchés</a>"
-    linkblockchaininfo: "<a href=\"http://blockchain.info/charts\">Blockchain.info - Statistiques et graphiques</a>"
-    linknews: "Bitcoin Nouvelles"
-    linkbitcoinmagazine: "<a href=\"http://bitcoinmagazine.com/\">Bitcoin Magazine</a> (anglais)"
-    linkbitcoinnews: "<a href=\"http://www.bitcoinnews.com/\">Bitcoin News</a> (anglais)"
-    linkforumpress: "<a href=\"https://bitcointalk.org/index.php?board=77.0\">Bitcoin Forum / Press</a> (anglais)"
-    linkspec: "Bitcoin Spécification"
-    linkpdf: "<a href=\"/bitcoin.pdf\">Bitcoin: A Peer-to-Peer Electronic Cash System</a>"
-    linkprotocol: "<a href=\"https://en.bitcoin.it/wiki/Protocol_rules\">Règles du protocole (anglais)</a>"
+    pagedesc: "Trouvez des sites internet utiles et des ressources à propos de Bitcoin."
+    useful: "Lieux utiles"
+    linkwiki: "<a href=\"https://fr.bitcoin.it/\">Wiki Bitcoin</a>"
+    directories: "Répertoires"
+    linkwallets: "Porte-monnaie"
+    linkmerchants: "Commerces"
+    linkexchanges: "Bourses d'échange"
+    linkmerchantstools: "Outils pour les commerçants"
+    charts: "Graphiques et statistiques"
+    news: "Actualités"
   secure-your-wallet:
     title: "Sécuriser son porte-monnaie - Bitcoin"
     pagetitle: "Sécuriser son porte-monnaie"
-    summary: "Comme dans la vie réelle, votre porte-monnaie doit être sécurisé. Bitcoin permet le transfert de valeur à travers le monde plus facilement que jamais. De telles fonctionnalités impliquent aussi des risques de sécurité importants. Heureusement, Bitcoin peut offrir de très hauts niveaux de sécurité s'il est utilisé correctement. <b>Rappelez vous qu'il est toujours de votre responsabilité d'adopter les mesures nécessaires afin de protéger votre argent</b>. Voici quelques points que vous devriez considérer."
-    online: "Soyez prudents avec les porte-monnaie en ligne"
-    onlinetxt: "Les porte-monnaie en ligne ressemblent à des banques en ligne. Vous faites confiance à un tiers pour protéger et stocker vos bitcoins tandis que vous devez vous souvenir de votre mot de passe. Toutefois, vous devriez toujours choisir de tels services avec précaution. À ce jour, aucun porte-monnaie n'offre assez d'assurance et de sécurité pour être utilisé pour entreposer de la valeur comme une banque. Utiliser des dispositifs de sécurité tels que l'authentification forte (authentification à deux facteurs) peut aussi augmenter la sécurité de vos comptes."
+    summary: "Comme dans la vraie vie, votre porte-monnaie doit être sécurisé. Bitcoin permet le transfert de valeur à travers le monde plus facilement que jamais et vous permet d'avoir le contrôle sur votre argent. De telles fonctionnalités impliquent aussi des risques de sécurité importants. Pour autant, Bitcoin peut offrir un très haut niveau de sécurité s'il est utilisé correctement. <b>Rappelez vous qu'il est toujours de votre responsabilité d'adopter les mesures nécessaires afin de protéger votre argent</b>."
+    online: "Soyez prudent avec les services en ligne"
+    onlinetxt: "Les porte-monnaie en ligne et les bourses d'échange ressemblent à des banques en ligne. Toutefois, vous devriez toujours choisir de tels services avec précaution. À ce jour, ces services n'offrent généralement pas assez de garanties et de sécurité pour être utilisé pour entreposer de l'argent comme une banque. Utiliser des dispositifs de sécurité tels que l'authentification en plusieurs étapes (two-factor authentication) peut aussi augmenter la sécurité de vos comptes."
     backup: "Sauvegarder votre porte-monnaie"
     backuptxt: "Les services et les logiciels Bitcoin vous permettent de sauvegarder votre porte-monnaie. Stockée dans un endroit sécurisé, une sauvegarde peut vous protéger contre les pannes informatiques et diverses formes d'erreurs humaines."
     backupwhole: "Sauvegarder tout son porte-monnaie"
@@ -307,15 +327,17 @@ fr:
     develop: "Développement"
     developtxt: "Le code source du Bitcoin est ouvert. Donc si vous êtes un développeur, vous pouvez utiliser vos super pouvoirs pour faire le bien et <a href=\"#development#\">améliorer Bitcoin</a>. Mais vous pouvez aussi construire des services ou des logiciels fantastiques qui fonctionneront avec Bitcoin."
     donation: "Dons"
-    donationtxt: "La manière la plus facile d'aider Bitcoin est de <a href=\"https://bitcoinfoundation.org/donate\">faire un don</a> de quelques bitcoins ou de rejoindre la fondation Bitcoin. La fondation offre un salaire aux développeurs qui font fonctionner le cœur du réseau Bitcoin, elle organise des conférences et elle fournit d'autres ressources importantes."
+    donationtxt: "La manière la plus facile d'aider Bitcoin est de <a href=\"https://bitcoinfoundation.org/donate\">donner</a> quelques bitcoins à la fondation Bitcoin. Vous pouvez aussi aider à financer tout projet lié au Bitcoin que vous jugez utile pour le futur."
+    foundation: "Rejoignez la Fondation"
+    foundationtxt: "La <a href=\"https://bitcoinfoundation.org/\">Fondation Bitcoin</a> est l'une des plus grandes organisations dédiée à la standardisation, la protection et la promotion du Bitcoin. Elle finance le salaire des responsables du logiciel Bitcoin, elle organise des conférences et elle fournit plusieurs autres ressources importantes."
     spread: "Passez le mot"
     spreadtxt: "Parlez du Bitcoin à des personnes intéressées. Écrivez à propos du Bitcoin dans votre blog. Dites à votre boutique favorite que vous aimeriez pouvoir payer en Bitcoin. Ou soyez créatifs et faites-vous imprimer un superbe t-shirt."
     wiki: "Wiki"
     wikitxt: "Le <a href=\"http://fr.bitcoin.it/\">Wiki Bitcoin</a> contient un nombre impressionnant d'informations détaillées et il est en constante recherche d'amélioration de la même manière que Wikipedia. Vous pouvez aider à tenir le wiki à jour et veiller à l'exactitude de chaque information."
     translate: "Traduction"
     translatetxt: "Vous pouvez aider à augmenter l'accessibilité au Bitcoin en traduisant ou en améliorant les traductions de plusieurs parties importantes de l'univers du Bitcoin. Choisissez simplement un projet auquel vous souhaitez participer."
-    help: "Aide"
-    helptxt: "Vous pouvez rejoindre les <a href=\"#community#\">communautés</a> Bitcoin pour aider et assister les nouveaux utilisateurs. Et vous pouvez discuter à propos du Bitcoin avec d'autres utilisateurs et en apprendre plus chaque jour."
+    help: "Rencontrez les communautés"
+    helptxt: "Vous pouvez rejoindre des <a href=\"#community#\">communautés</a> et discuter avec d'autres passionnés du Bitcoin. Vous pouvez en apprendre plus chaque jour, assister les nouveaux utilisateurs et vous impliquer dans des projets intéressants."
   vocabulary:
     title: "Vocabulaire - Bitcoin"
     pagetitle: "Quelques mots que vous pourriez entendre"
@@ -352,9 +374,9 @@ fr:
   you-need-to-know:
     title: "Ce que vous devez savoir - Bitcoin"
     pagetitle: "Ce que vous devez savoir"
-    summary: "Si vous êtes sur le point d'explorer le Bitcoin, il y a certaines choses que vous devez savoir. Bitcoin ne sert pas à envoyer des emails ou à prendre des photos; il vous permet d'échanger de l'argent, de la valeur. C'est pourquoi Bitcoin doit être traité avec la même prudence et le même soin que votre porte-monnaie... voire parfois plus !"
+    summary: "Si vous êtes sur le point d'explorer le Bitcoin, il y a certaines choses que vous devez savoir. Bitcoin vous permet d'échanger de l'argent d'une manière différente de celle utilisée par les banques traditionnelles. En conséquence, vous devez prendre le temps de vous informer avant d'utiliser Bitcoin pour des transactions importantes. Bitcoin doit être traité avec la même prudence et le même soin que votre porte-monnaie... voire parfois plus !"
     secure: "Sécuriser son porte-monnaie"
-    securetxt: "Comme dans la vraie vie, votre porte-monnaie doit être sécurisé. Bitcoin permet le transfert de valeur mondialement plus facilement que jamais. De telles fonctionnalités impliquent aussi des risques de sécurité importants. Malgré tout, Bitcoin peut offrir de très hauts niveaux de sécurité s'il est utilisé correctement. Rappelez vous qu'il est toujours de votre responsabilité d'adopter les mesures nécessaires à la protection de votre argent</b>. <a href=\"#secure-your-wallet#\"><b>En savoir plus afin de sécuriser votre porte-monnaie</b></a>."
+    securetxt: "Comme dans la vraie vie, votre porte-monnaie doit être sécurisé. Bitcoin rend possible le transfert de valeur n'importe où, très facilement, et vous permet d'avoir le contrôle sur votre argent. De telles fonctionnalités impliquent aussi des risques de sécurité importants. Malgré tout, Bitcoin peut offrir de très hauts niveaux de sécurité s'il est utilisé correctement. Rappelez vous qu'il est toujours de votre responsabilité d'adopter les mesures nécessaires afin de protéger votre argent. <a href=\"#secure-your-wallet#\"><b>En savoir plus afin de sécuriser votre porte-monnaie</b></a>."
     volatile: "Le prix du Bitcoin est volatile"
     volatiletxt: "Le prix d'un bitcoin peut augmenter ou diminuer de façon imprévisible sur une courte période de temps en raison de sa jeune économie, sa nature inusitée et ses marchés parfois peu liquides. En conséquence, conserver vos économies en bitcoins n'est pas recommandé pour le moment. Bitcoin doit être considéré comme un actif à haut risque et vous ne devriez jamais stocker en bitcoins de l'argent que vous ne pourriez pas vous permettre perdre. Si vous recevez des paiements en Bitcoin, beaucoup de fournisseurs de services vous permettent de transférer vos bitcoins instantanément dans votre devise."
     irreversible: "Les paiements Bitcoin sont irréversibles"
@@ -374,25 +396,25 @@ fr:
     blockchain: la chaîne de bloc
     blockchaintxt: (un journal de transactions public partagé)
   layout:
-    menu-intro: Introduction
-    menu-bitcoin-for-individuals: Particuliers
+    menu-about: À propos
+    menu-about-us: "À propos de bitcoin.org"
     menu-bitcoin-for-businesses: Entreprises
     menu-bitcoin-for-developers: Développeurs
-    menu-how-it-works: "Comment ça marche"
-    menu-resources: Ressources
-    menu-vocabulary: Vocabulaire
+    menu-bitcoin-for-individuals: Particuliers
     menu-community: Communauté
     menu-development: Développement
     menu-events: Événements
-    menu-press: Presse
-    menu-innovation: Innovation
     menu-foundation: Fondation
-    menu-about: À propos
-    menu-about-us: "À propos de bitcoin.org"
-    button-wallet: "Choisissez votre porte-monnaie"
-    button-know: "Vous devez savoir"
-    button-support: "Soutenir Bitcoin"
+    menu-getting-started: "Débuter"
+    menu-how-it-works: "Comment ça marche"
+    menu-innovation: Innovation
+    menu-intro: Introduction
+    menu-resources: Ressources
+    menu-support-bitcoin: Participer
+    menu-vocabulary: Vocabulaire
+    menu-you-need-to-know: "Vous devez savoir"
     footer: "© Bitcoin Project 2009–2013 Publié sous la <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">licence MIT</a>"
+    getstarted: "Débuter avec Bitcoin"
   url:
     about: a-propos
     about-us: a-propos-de-nous
@@ -400,16 +422,15 @@ fr:
     bitcoin-for-enthusiasts: bitcoin-pour-passionnes
     bitcoin-for-individuals: bitcoin-pour-particuliers
     bitcoin-for-businesses: bitcoin-pour-entreprises
-    bitcoin-for-press: 
     choose-your-wallet: choisir-votre-porte-monnaie
     community: communaute
     development: developpement
     download: telecharger
     events: evenements
     foundation: fondation
+    getting-started: debuter
     how-it-works: comment-ca-marche
     innovation: innovation
-    press: 
     resources: ressources
     secure-your-wallet: securiser-porte-monnaie
     support-bitcoin: supporter-bitcoin
