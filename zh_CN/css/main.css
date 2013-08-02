@@ -1,0 +1,7 @@
+h1,h2{
+	font-family:"Helvetica Neue", "Liberation Sans", Arial, sans-serif;
+	font-weight:bold;
+}
+#menusimple li a,#menusimple li a:active,#menusimple li a:visited,#menusimple li a:link{
+	font-family:"Helvetica Neue", "Liberation Sans", Arial, sans-serif;
+}
