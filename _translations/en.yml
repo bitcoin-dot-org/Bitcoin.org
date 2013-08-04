@@ -278,7 +278,7 @@ en:
     backup: "Backup your wallet"
     backuptxt: "Bitcoin services and software allow you to backup your wallet. Stored in a safe place, a backup can protect you against computer failures and many human mistakes."
     backupwhole: "Backup your entire wallet"
-    backupwholetxt: "Your wallet contains many private keys that receive the change of your transactions in order to protect your privacy. If you only have a backup of your visible private keys, you might not be able to recover a great part of your funds with your backup."
+    backupwholetxt: "Your wallet contains many private keys that receive the change of your transactions in order to protect your privacy. If you only have a backup of the private keys for your visible Bitcoin addresses, you might not be able to recover a great part of your funds with your backup."
     backuponline: "Encrypt online backups"
     backuponlinetxt: "Any backup that is stored online is highly vulnerable to theft. Even a computer that is connected to the Internet is vulnerable to malicious software. As such, encrypting any backup that is exposed to the network is a good security practice."
     backupmany: "Use many secure locations"
