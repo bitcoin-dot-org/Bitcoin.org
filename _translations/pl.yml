@@ -332,7 +332,7 @@ pl:
     btc: "BTC"
     btctxt: "BTC podstawową jednostką waluty Bitcoin. Może zostać użyta w podobny sposób do USD dla dolara amerykańskiego zamiast  B⃦ lub $."
     confirmation: "Potwierdzenie"
-    confirmationtxt: "Potwierdzenie oznacza, że transakcja została <b>zweryfikowana przez sieć i jest praktycznie niemożliwe by została zatrzymana</b>. Jedno potwierdzenie jest całkiem wystarczające jednakże dla większych kwot (przykładowo powyżej 1000 $USD) możliwe jest odczekanie by otrzymać większą ilość potwierdzeń - sześć jest najczęściej wybieraną ilością. Każde potwierdzenie wykładniczo obniża ryzyko odwrócenia transakcji."
+    confirmationtxt: "Potwierdzenie oznacza, że transakcja została <b>zweryfikowana przez sieć i jest praktycznie niemożliwe by została zatrzymana</b>. Jedno potwierdzenie jest całkiem wystarczające jednakże dla większych kwot (przykładowo powyżej 1000 US$) możliwe jest odczekanie by otrzymać większą ilość potwierdzeń - sześć jest najczęściej wybieraną ilością. Każde potwierdzenie wykładniczo obniża ryzyko odwrócenia transakcji."
     cryptography: "Kryptografia"
     cryptographytxt: "Kryptografia jest działem matematyki który pozwala ci tworzyć <b>dowody matematyczne zawierające wysoki poziom bezpieczeństwa i pewności</b>. Handel sieciowy oraz bankowość już używa kryptografii. W przypadku Bitcoin kryptografia jest używana by zabezpieczyć portfel przed wycofaniem z niego funduszy przez osoby niepowołane czy przed zakłamaniem zapisów w <a href=\"#[vocabulary.blockchain]\">łańcuchu bloków</a>. Może być również użyta by zaszyfrować portfel by ten nie mógł zostać użyty bez hasła."
     doublespend: "Podwójne Wydatkowanie"
