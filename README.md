@@ -77,7 +77,6 @@ Network alerts should be placed in `_alerts/YYYY-MM-DD-SHORTITLE.html` and adher
 ```
 ---
 title: "11/12 March 2013 Chain Fork"
-lastmod: "Fri Mar 16 22:58:00 UTC 2012"
 alias: "chainfork"
 active: true
 banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.8.0. Click here for more information."
@@ -89,12 +88,14 @@ A chain fork is happening. Please stop mining on bitcoin version 0.8.0. Your bit
 <p>
 More information will follow.
 </p>
+<div style="text-align:right">
+  <i>This notice last updated: Fri Mar 16 22:58:00 UTC 2012</i>
+</div>
 
 ```
 * `SHORTTITLE` is used to construct the URL.
 * `title: ...` will be used as the title in the layout.
-* `lastmod: ...` will be used as the last modification date in the layout.
-* `alias: ...` (optional) a short alias to be used for Bitcoin-Qt alerts. Ex. "dos" will produce /dos.html
+* `alias: ...` (optional) a short alias for Bitcoin-Qt alerts. Ex. "dos" will produce /dos.html
 * `active: ...` (true or false) define if the alert should appear as ongoing in the network status page.
 * `banner: ...` (optional) a short text that will be displayed in a red alert banner and link to the alert page.
 
