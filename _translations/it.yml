@@ -268,11 +268,6 @@ it:
     versionhistory: "Mostra cronologia delle versioni"
     notelicense: "Bitcoin-Qt è un progetto <a href=\"https://www.fsf.org/it/what-is-fs-ita\">libero ed a codice aperto</a> portato avanti dalla comunità e rilasciato sotto la <a href=\"https://it.wikipedia.org/wiki/Licenza_MIT\">licenza MIT</a>."
     notesync: "<b>Nota</b> : la sincronizzazione iniziale di Bitcoin-Qt può richiedere un giorno per essere completata. Dovresti essere certo di avere sufficiente larghezza di banda e spazio di archiviazione per poter ospitare le complete <a href=\"http://blockchain.info/charts/blocks-size\">dimensioni della blockchain</a>."
-  foundation:
-    title: "Fondazione Bitcoin"
-    pagetitle: "Fondazione Bitcoin"
-    mission: "La Fondazione Bitcoin standardizza, protegge e promuove l'utilizzo della moneta crittografica Bitcoin a beneficio degli utenti in tutto il mondo."
-    visit: "Visita il sito web della Fondazione Bitcoin"
   how-it-works:
     title: "Come funziona Bitcoin? - Bitcoin"
     pagetitle: "Come funziona Bitcoin?"
@@ -462,7 +457,6 @@ it:
     community: "comunita"
     development: "sviluppo"
     download: "scarica"
-    foundation: "fondazione"
     how-it-works: "come-funziona"
     resources: "risorse"
     secure-your-wallet: "proteggi-il-portafoglio"

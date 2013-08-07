@@ -182,11 +182,6 @@ zh_TW:
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">BitcoinTalk 上的 Bitcoin 聚會</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">維基上的 Bitcoin 聚會</a>"
     meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin 聚會團體</a>"
-  foundation:
-    title: "Bitcoin 基金會 - Bitcoin"
-    pagetitle: "Bitcoin 基金會"
-    mission: "Bitcoin 基金會制定標準、保護及推廣使用密碼學的金錢 Bitcoin，以促進全球使用者的利益。"
-    visit: "前往 Bitcoin 基金會網站"
   how-it-works:
     title: "Bitcoin 運作原理 - Bitcoin"
     pagetitle: "Bitcoin 運作原理"
@@ -406,7 +401,6 @@ zh_TW:
     development: development
     download: download
     events: events
-    foundation: foundation
     how-it-works: how-it-works
     innovation: innovation
     press: 

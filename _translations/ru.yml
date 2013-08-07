@@ -268,11 +268,6 @@ ru:
     versionhistory: "История версий"
     notelicense: "Bitcoin-Qt - разрабатываемый коллективно <a href=\"http://www.fsf.org/about/what-is-free-software\">свободный проект с открытым исходным кодом</a>, распространяемый под лицензией <a href=\"http://creativecommons.org/licenses/MIT/\">MIT</a>."
     notesync: "<b>Примечание</b> : Первая синхронизация Bitcoin-Qt с сетью может потребовать около одного дня. Вам следует заранее убедиться в достаточной пропускной способности интернет-канала и наличии свободного места в памяти для загрузки <a href=\"http://blockchain.info/charts/blocks-size\">всей цепочки блоков</a>."
-  foundation:
-    title: "Фонд Bitcoin Foundation"
-    pagetitle: "Bitcoin Foundation"
-    mission: "Фонд Bitcoin Foundation занимается стандартизацией, защитой и распространением криптовалютной системы Биткоин во благо всем пользователям."
-    visit: "Перейти на сайт Bitcoin Foundation"
   how-it-works:
     title: "Как это работает? - Bitcoin"
     pagetitle: "Как работает Биткоин?"
@@ -462,7 +457,6 @@ ru:
     community: "сообщество"
     development: "разработка"
     download: "загрузки"
-    foundation: "фонд"
     how-it-works: "как-это-работает"
     resources: "ресурсы"
     secure-your-wallet: ""

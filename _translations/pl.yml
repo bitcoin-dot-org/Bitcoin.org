@@ -182,11 +182,6 @@ pl:
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Spotkania Bitcoin na BitcoinTalk</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Spotkania Bitcoin na Wiki</a>"
     meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Grupy spotkaniowe Bitcoin</a>"
-  foundation:
-    title: "Fundacja Bitcoin - Bitcoin"
-    pagetitle: "Fundacja Bitcoin"
-    mission: "Fundacja Bitcoin standaryzuje, chroni oraz promuje użycie kryptograficznej waluty Bitcoin dla pożytku użytkowników na całym świecie."
-    visit: "Odwiedź Stronę Internetową Fundacji Bitcoin"
   how-it-works:
     title: "Jak Działa Bitcoin? - Bitcoin"
     pagetitle: "Jak Działa Bitcoin?"
@@ -406,7 +401,6 @@ pl:
     development: rozwoj
     download: pobieranie
     events: wydarzenia
-    foundation: fundacja
     how-it-works: jak-to-dziala
     innovation: innowacje
     press: 

@@ -173,11 +173,6 @@ fa:
     versionhistory: "نمایش تاریخچه ی نسخه"
     notelicense: "Bitcoin-Qt یک پروژه ی <a href=\"http://www.fsf.org/about/what-is-free-software\">متن باز رایگان</a> جامعه-محور است که تحت <a href=\"http://creativecommons.org/licenses/MIT/\"> گواهی نامه ی  MIT</a> منتشر شده است."
     notesync: "<b>توجه</b>: همگام سازی اولیه ی Bitcoin-Qt می تواند برای کامل شدن یک روز به طول انجامد. شما باید مطمئن شوید که پهنای باند و حافظه کافی برای کل <a href=\"http://blockchain.info/charts/blocks-size\"> سایز blockchain</a>  دارید."
-  foundation:
-    title: "بنیاد بیت کوین - بیت کوین"
-    pagetitle: "بنیاد بیت کوین"
-    mission: "بنیاد بیت کوین استاندارد سازی، محافظت، و ترویج استفاده از پول رمز نگاری شده بیت کوین برای منفعت کاربران جهان را بر عهده دارد."
-    visit: "وب سایت بنیاد بیت کوین را مشاهده کنید"
   how-it-works:
     title: "بیت کوین چگونه کار می کند؟ - بیت کوین"
     pagetitle: "بیت کوین چگونه کار می کند؟"
@@ -367,7 +362,6 @@ fa:
     community: انجمن
     development: توسعه
     download: دانلود
-    foundation: بنیاد
     how-it-works: چگونه-کار-می-کند
     resources: منابع
     secure-your-wallet: کیف-پولتان-را-ایمن-کنید

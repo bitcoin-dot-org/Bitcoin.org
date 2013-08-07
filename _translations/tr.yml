@@ -182,11 +182,6 @@ tr:
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">BitcoinTalk'ta Bitcoin toplantıları</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Viki'de Bitcoin toplantıları</a>"
     meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin toplantı grupları</a>"
-  foundation:
-    title: "Bitcoin Derneği -  Bitcoin"
-    pagetitle: "Bitcoin Derneği"
-    mission: "Bitcoin Derneği, Bitcoin kriptografik parasını tüm dünyadaki kullanıcılarının iyiliği için korur, standardize eder ve destekler."
-    visit: "Bitcoin Derneği'nın sitesini ziyaret edin"
   how-it-works:
     title: "Bitcoin nasıl çalışır? - Bitcoin"
     pagetitle: "Bitcoin nasıl çalışır?"
@@ -406,7 +401,6 @@ tr:
     development: gelistirme
     download: indir
     events: etkinlikler
-    foundation: dernek
     how-it-works: nasil-calisir
     innovation: yenilik
     press: 

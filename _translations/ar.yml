@@ -268,11 +268,6 @@ ar:
     versionhistory: "أظهر تاريخ ألإصدارات"
     notelicense: "Bitcoin-Qt مشروع <a href=\"http://www.fsf.org/about/what-is-free-software\">مجاني مفتوح ألمصدر</a> مساق لخدمة ألمجتمع منزل تحت <a href=\"http://creativecommons.org/licenses/MIT/\">رخصة MIT</a>."
     notesync: "<b>ملاحظة</b> : ألمزامنة ألأولية ل Bitcoin-Qt قد تتطلب يوم كامل لكي تكمل. يجب أن تتأكد أن لديك قوة شبكة إنترنت و مساحة خزن كافيين لغرض تحصيل <a href=\"http://blockchain.info/charts/blocks-size\">حجم سلسلة مجاميع</a> كامل."
-  foundation:
-    title: "مؤسسة ألبت كوين"
-    pagetitle: "مؤسسة ألبت كوين"
-    mission: "مؤسسة ألبت كوين توحّد, تحمي, و تروّج إستخدام نقود ألبت كوين ألمشفرة لمصلحة ألمستخدمين في كل أرجاء ألعالم."
-    visit: "قم بزيارة موقع مؤسسة ألبت كوين"
   how-it-works:
     title: "كيف يعمل ألبت كوين؟ - بت كوين"
     pagetitle: "كيف يعمل ألبت كوين؟"
@@ -462,7 +457,6 @@ ar:
     community: "مجتمع"
     development: "تطوير"
     download: "تحميل"
-    foundation: "مؤسسة"
     how-it-works: "كيف-يعمل"
     resources: "مصادر"
     secure-your-wallet: ""

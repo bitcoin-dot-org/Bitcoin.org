@@ -182,11 +182,6 @@ de:
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitcoin Zusammenkünfte auf BitcoinTalk (englisch)</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitcoin Zusammenkünfte im Wiki (englisch; deutsche Version ungepflegt)</a>"
     meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin Meetup Gruppen</a>"
-  foundation:
-    title: "Bitcoin Foundation"
-    pagetitle: "Bitcoin Foundation"
-    mission: "Die Bitcoin Foundation standardisiert, schützt und fördert die Benutzung von Bitcoin kryptographischem Geld im Interesse aller Nutzer weltweit."
-    visit: "Webseite der Bitcoin Foundation besuchen"
   how-it-works:
     title: "Wie funktioniert Bitcoin? - Bitcoin"
     pagetitle: "Wie funktioniert Bitcoin?"
@@ -404,7 +399,6 @@ de:
     development: entwicklung
     download: download
     events: Events
-    foundation: foundation
     how-it-works: wie-es-funktioniert
     innovation: innovation
     resources: ressourcen
