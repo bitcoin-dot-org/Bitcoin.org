@@ -141,3 +141,34 @@ aliases:
   --author=Satoshi Nakamoto: Satoshi Nakamoto
   gavinandresen: Gavin Andresen
 ```
+
+## Guidelines for press interviewees
+
+The press center displays a list of featured interviewees who
+demonstrate professional qualities when dealing with the press.
+Interviewees are accepted based on the following guidelines:
+
+1. **Guidelines** : Those guidelines are not hard rules and they aren't
+meant to be followed blindly. Choosing interviewees is a matter of open
+discussion and common sense.
+2. **Experience** : Interviewees must have done professional and good
+quality interviews or publications in the past.
+3. **Background** : Interviewees must be known or involved in the
+Bitcoin community or be involved in projects related to Bitcoin.
+4. **Accuracy** : Interviewees must have a good understanding of Bitcoin
+and provide accurate informations.
+5. **Relevancy** : Interviewees must be able to provide understandable
+answers that remain relevant to the questions.
+5. **Opinion** : Interviewees must differentiate facts and opinions in
+order to help journalists and their audience to understand Bitcoin and
+build their own opinion. Speaking in a way that makes people think that
+Bitcoin is exclusive to any school of thought does not honor the open
+nature of Bitcoin.
+6. **Felony** : Interviewees must not publicly encourage illegal
+behaviors in any way.
+7. **Diplomacy** : Interviewees must be able to maintain a diplomatic
+language and stay away from provocative or subversive language as much
+as possible. Interviewees role includes educating people and legislators
+about Bitcoin properties, qualities and innovations. Lack of diplomacy
+can go against this mission, create friction and interfere with other
+diplomatic efforts.
