@@ -54,28 +54,19 @@ id: secure-your-wallet
 <p>{% translate offlinetxtxt5 %}</p>
 </div>
 
-<br>
-<div class="box boxexpand">
-<h3><a href="#" onclick="boxshow(event);">{% translate offlinetmp %}</a></h3>
-<p>{% translate offlinetmptxt %}</p>
-<p><b>{% translate offlinetmplose %}</b></p>
-<p>{% translate offlinetmplosetxt %}</p>
-<p><b>{% translate offlinetmpmiss %}</b></p>
-<p>{% translate offlinetmpmisstxt %}</p>
-<p><b>{% translate offlinetmptrace %}</b></p>
-<p>{% translate offlinetmptracetxt %}</p>
-</div>
-
 {% case page.lang %}
 {% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
 {% else %}
-<h2>{% translate hardwarewallet %}</h2>
+<br>
+<div class="box boxexpand">
+<h3><a href="#" onclick="boxshow(event);">{% translate hardwarewallet %}</a></h3>
 <p>{% translate hardwarewallettxt %}</p>
 <p>{% translate hardwarewalletsoon %}</p>
 <p>
 <a href="http://bitcointrezor.com/">Trezor</a><br>
 ButterflyLabs BitSafe
 </p>
+</div>
 {% endcase %}
 
 <h2>{% translate offlinemulti %}</h2>
