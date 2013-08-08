@@ -57,14 +57,13 @@ tr:
     internationaltext: "Bitcoin'ler Afrika'dan Kanada'ya 10 dakika içerisinde transfer edilebilir. Aslında bitcoin'lerin fiziksel bir lokasyonu olmadığından herhangi bir miktarda herhangi bir yere limitlere, gecikmelere, aşırıya kaçan ücretlere mahal olmadan transfer edilebilir. Üç iş günü beklemeye zorlayacak aracı bankalar yoktur."
     pci: "PCI uygunluğu gerektirmez."
     pcitext: "Internet ortamında kredi kartı kabul etmek PCI standardına uyum sağlamak adına ekstra güvenlik önlemlerini gerektirir. Kredi kartlarını korumak iyi bir fikir olduğu halde, Bitcoin güvenliği öyle şekilde inşa edilmiştir ki bu yaklaşımı geçersiz kılar. Ödemeleriniz ağ tarafından güvenceye alınır, masraf sizin zararınınıza olmaz."
-    instant: "Satış noktasında anlık işlemler"
-    instanttext: "Bir Bitcoin işlemi genellikle birkaç saniye içinde gerçekleşir ve 10 dakika içerisinde onaylanır. Bundan önce, işlem gerçek sayılabilir fakat geri çevirilebilir. Eğer gerçekten anlık işlemlere gerek duyuyorsanız, tavsiye edilen ufak bir işlem ücreti almanız ve çift-ödeme tespit sistemi kullanmanızdır."
     visibility: "Ücretsiz görünürlülük kazanın"
     visibilitytext: "Bitcoin yeni müşterilerinin harcayabilecekleri yerler aradığı gelişmekte olan bir piyasadır. Ödeme şekli olarak benimsemek yeni müşterileri çekmek için iyi bir yoldur ve sizin işletmenize yeni görünürlülük katar. Yeni bir ödeme şeklini benimsemek internet tabanlı işletmeler için her zaman akıllıca bir pratik olmuştur."
     multisig: "Çoklu-imza"
     multisigtext: "Bitcoin'de ayrıca çok bilinmeyen bir özellik vardır ki ancak bir gruptan belli kişiler işleme imza atarsa paranın harcanmasına izin verir (buna \"m'in n'i\" işlemleri de denilir.) Bu hâla bankalarda kullanıyor olabileceğiniz çoklu-imza çek sisteminin karşılığıdır."
     transparency: "Muhasebe şeffaflığı"
     transparencytext: "Birçok kurumun faaliyetleri hakkında muhasebe belgeleri hazırlaması ve iyi şeffaflık uygulamalarını benimsemeleri gerekir. Bitcoin kullanmak en üst seviyede şeffaflık sağlar zira bakiyeniz ve mali işlemleriniz üyelerinizi kullandığınız Bitcoin adreslerinden haberdar ettiğiniz sürece halka açıktır."
+    merchantintro: "Viki'de <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses\">tüccarların tanıtım kılavuzunu</a> ziyaret edin."
   bitcoin-for-developers:
     title: "Geliştiriciler için Bitcoin - Bitcoin"
     pagetitle: "Geliştiriciler için Bitcoin"
@@ -81,6 +80,8 @@ tr:
     securitytext: "Güvenliğin çoğu kısmı istemci protokolü ve Bitcoin ağı tarafından halledilir. Sahicilik ise gizli anahtarlar yoluyla onaylanır ve iki kat harcamalar Bitcoin ağı tarafından önlenir. Dolayısıyla PCI uygunluğuna da dolandırıcılık tespitine de gerek yoktur. Düzgün çalışan şeyleri seviyoruz, değil mi?"
     micro: "Ucuz mikro ödemeler"
     microtext: "Bitcoin mikro-ödemeler dahil olmak üzere her türlü mali işlem için en düşük maliyet ücretini sunar. Bu şu anlama gelir ki aynı zamanda mali sınırlandırmalardan ötürü daha önce var olması mümkün olmayan yaratıcı online servislerin tasarımı ve uygulanması mümkün olur."
+    serviceslist: "Viki'de <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services\">tüccar servisleri listesini</a> ziyaret edin."
+    apireference: "Veya Bitcoin-Qt  <a href=\"https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)\">API referansını</a> ve <a href=\"https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list\">API çağrıları listesini</a> okuyun."
   bitcoin-for-individuals:
     title: "Bireyler için Bitcoin - Bitcoin"
     pagetitle: "Bireyler için Bitcoin"
@@ -100,24 +101,32 @@ tr:
   community:
     title: "Topluluk - Bitcoin"
     pagetitle: "Bitcoin toplulukları"
-    foundation: "<a href=\"https://bitcoinfoundation.org/forum/\">Bitcoin Dernek Forumu (üyelere özel)</a>"
-    wikiportal: "<a href=\"https://en.bitcoin.it/wiki/Bitcoin:Community_portal\">Bitcoin Wiki - Topluluk portalı</a>"
-    stackexchange: "<a href=\"http://bitcoin.stackexchange.com/\">Bitcoin StackExchange (Soru & Cevap)</a>"
+    pagedesc: "Bitcoin'le ilgi çekici kişi, grup ve toplulukları bulun."
+    forums: "Forumlar"
+    foundation: "Bitcoin Dernek Forumu (üyelere özel)"
     bitcointalk: "<a href=\"https://bitcointalk.org/\">BitcoinTalk Forumu</a>"
-    ircjoin: "Projenin canlı IRC kanallarına <a href=\"http://freenode.net/\">FreeNode</a> ağında katılın veya <a href=\"http://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">FreeNode Web IRC</a> kullanın."
+    reddit: "Reddit'in Bitcoin topluluğu"
+    stackexchange: "Bitcoin StackExchange (Soru & Cevap)"
+    irc: "IRC Sohbeti"
+    ircjoin: " <a href=\"http://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">FreeNode'da</a> ORC kanalları."
     chanbitcoin: "(Genel Bitcoin'le alakalı)"
     chandev: "(Geliştirme ve teknik)"
     chanotc: "(Tezgahın Üstünden alım-satım)"
     chanmarket: "(Marketlerden canlı alıntı)"
     chanmining: "(Bitcoin madenciliğiyle ilgili)"
-    linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Google+ Bitcoin topluluğu</a>"
-    linktwitter: "<a href=\"http://twitter.com/#!/search/bitcoin\">Twitter Arama</a>"
+    social: "Sosyal ağlar"
+    linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Google+ Bitcoin Topluluğu</a>"
+    linktwitter: "Twitter Arama"
     facebook: "<a href=\"https://www.facebook.com/pages/Bitcoin-P2P-Cryptocurrency/134466763256650\">Facebook Sayfası</a>"
-    reddit: "<a href=\"http://www.reddit.com/r/Bitcoin/\">Reddit'in Bitcoin topluluğu</a>"
-    linkmeetup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin Tanışma Grupları</a>"
+    meetups: "Toplantılar"
+    meetupevents: "Bitcoin Konferansları ve Etkinlikleri"
+    meetupgroup: "Bitcoin Toplanma Grupları"
+    meetupbitcointalk: "BitcoinTalk'ta Bitcoin Toplantıları"
+    meetupwiki: "Viki'de Bitcoin Toplantıları"
+    wikiportal: "Viki'de <a href=\"https://en.bitcoin.it/wiki/Bitcoin:Community_portal\">Topluluk portalını</a> ziyaret edin."
   choose-your-wallet:
     title: "Cüzdanınızı seçin - Bitcoin"
-    pagetitle: "Cüzdanınızı seçin"
+    pagetitle: "Bitcoin cüzdanınızı seçin"
     summary: "Dünyayla temas kurup işlem yapmanızı sağlayan Bitcoin cüzdanınınızdır. Size diğer kullanıcılardan para alıp vermenizi sağlayan Bitcoin <i>adresleri</i>ni oluşturur. Aynı e-posta gibi bitcoinleri de çevrimdışıyken alabilirsiniz, ve bütün cüzdanlar birbirleriyle uyumludur. Bitcoin'e başlamadan önce <b><a href=\"#you-need-to-know#\">bilmeniz gerekenleri okuyun</a></b>."
     getstarted: "Çabuk ve kolayca başlayın"
     getstartedsum: "Eğer Bitcoin'de yeniyseniz, bu cüzdanlar başlamak için iyi yerlerdir."
@@ -149,6 +158,7 @@ tr:
   development:
     title: "Geliştirme - Bitcoin"
     pagetitle: "Bitcoin geliştirme"
+    summary: "Şu anki belirtim, yazılım ve geliştiriciler hakkında daha fazla bilgi edinin."
     spec: "Belirtim"
     spectxt: "Bitcoin'in teknik detaylarını öğrenmek istiyorsanız bu belgelerle başlamanızı öneririz."
     speclink1: "<a href=\"/bitcoin.pdf\">Bitcoin: Eşten eşe bir elektronik nakit sistemi</a>"
@@ -166,6 +176,8 @@ tr:
     title: "İndir - Bitcoin"
     pagetitle: "Bitcoin-Qt indir"
     latestversion: "Son sürüm:"
+    download: "Bitcoin-Qt İndirin"
+    downloados: "Veya işletim sisteminizi seçin"
     downloadwinzip: "Windows için indir (zip)"
     downloadwinexe: "Windows için indir (exe)"
     downloadubu: "Ubuntu için indir (PPA)"
@@ -182,10 +194,26 @@ tr:
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">BitcoinTalk'ta Bitcoin toplantıları</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Viki'de Bitcoin toplantıları</a>"
     meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin toplantı grupları</a>"
+  getting-started:
+    title: "Yeni başlamak - Bitcoin"
+    pagetitle: "Bitcoin'e yeni başlamak"
+    pagedesc: "Bitcoin kullanarak ödeme yapmak ve ödenmek basit. Öğrenmesi çok kolay."
+    inform: "Kendinizi bilgilendirin"
+    informtxt: "Bitcoin her gün kullanıp bildiklerinizden biraz farklı. Bitcoin kullanmaya başlamadan önce bilmeniz gereken birkaç şey olacak ki güvenlice kullanın ve sıradan hatalara yakalanmayın."
+    informbut: "Daha fazlası"
+    choose: "Cüzdanınızı seçin"
+    choosetxt: "Bitcoin cüzdanınızı telefonunuzla günlük hayatınıza taşıyabilirsiniz veya sadece online ödemeler için bir cüzdanı bilgisayarınızda tutabilirsiniz. Her halükarda cüzdanınızı seçmek bir dakika kadar sürecektir."
+    choosebut: "Cüzdanınızı seçin"
+    get: "Bitcoin edinin"
+    gettxt: "Mal ve hizmet karşılığı bir ödeme olarak, arkadaşınızdan veya yakında tanıdıklarınızdan satın alarak bitcoin edinebilirsiniz. Direk banka hesabınızdan takasla da alabilirsiniz."
+    getbut: "Takas bulun"
+    spend: "Bitcoin harcayın"
+    spendtxt: "Bitcoin kabul eden hizmet ve tüccarların sayısı dünyanın her tarafında artıyor. Onlara Bitcoin'le ödeme yapabilir ve deneyiminizi sınıflandırarak bu tür işletmelerin daha görünür olmasını sağlayabilirsiniz."
+    spendbut: "Tüccar bulun"
   how-it-works:
     title: "Bitcoin nasıl çalışır? - Bitcoin"
     pagetitle: "Bitcoin nasıl çalışır?"
-    intro: "Tamam, bu soru çoğu zaman kafa karışıklığına yol açar. İşte basit bir açıklama!"
+    intro: "Bu sık sık kafa karıştıran bir soru. Hemen açıklayalım!"
     basics: "Yeni bir kullanıcı için temeller"
     basicstxt1: "Yeni bir kullanıcı olarak sadece bilgisayarınıza veya cep telefonunuza yükleyeceğiniz <a href=\"#choose-your-wallet#\">bir cüzdan seçmeniz</a> gerekiyor. Cüzdanınız yüklendiğinde ilk Bitcoin adresinizi oluşturacak ve ne zaman gerekirse yeni adresler oluşturabileceksiniz. Bitcoin adreslerinizden birini arkadaşlarınıza verebilirsiniz ki size ödeme yapsınlar, veya tersi olarak arkadaşlarınız size adreslerini verirlerse siz de onlara ödeme yapabilirsiniz. Aslında mantığı e-postaya benziyor. Yani artık yapmanız gereken tek şey birkaç bitcoin almanız ve <a href=\"#secure-your-wallet#\">onları güvende tutmanız</a>. Bitcoin kullanmaya başlamanız için teknik detayları anlamak zorunda değilsiniz. "
     basicstxt2: "Fakat, daha fazlasını öğrenmek isterseniz, okumaya devam edin!"
@@ -198,15 +226,16 @@ tr:
     readmore: "Tavşan deliğinden düşmek"
     readmoretxt: "Bu yalnızca sistemin kısa bir özetidir. Eğer detaylarına inmek isterseniz sistemin tasarımını tarif eden <a href=\"/bitcoin.pdf\">özgün makaleyi okuyabilirsiniz</a> ve de <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a> sayfasını inceleyebilirsiniz."
   index:
-    title: "Bitcoin - Açık kaynaklı P2P dijital para birimi"
-    pagetitle: "Açık kaynaklı bir P2P - eşten-eşe - para birimi"
-    listintro: "Bitcoin şunlara olanak tanıyan bir dijital para birimi, iletişim protokolu ve bir yazılımdır:"
-    list1: "Anlık eşten eşe işlemler"
-    list2: "Dünya çapında ödemeler"
-    list3: "Neredeyse hiç işlem ücreti yok"
-    list4: "Ve çok daha fazlası"
-    desc: "Bitcoin eşler arası teknolojiyi kullanarak ana otorite olmadan çalışır. İşlemlerin yönetimi ve bitcoinlerin dağıtımı <b>toplu olarak ağ tarafından</b> idare edilir. Bitcoin kendine has birçok özelliği sayesinde diğer ödeme yollarıyla yapılamayacak çok farklı ödemelerin üstesinden gelebilir."
-    license: "Bu yazılım <a href=\"http://creativecommons.org/licenses/MIT/\">MIT lisansıyla</a> yayımlanan, topluca yönetilen, <a href=\"http://www.fsf.org/about/what-is-free-software\">ücretsiz, açık-kaynak</a> bir projedir."
+    title: "Bitcoin - Açık kaynak P2P para"
+    listintro: "Bitcoin yaratıcı ödeme ağı ve yeni bir para birimidir."
+    list1: "Anında eşler arası<br>işlemler"
+    list2: "Dünya çapında<br>ödemeler"
+    list3: "Olmayan veya ucuz<br>işlenme ücretleri"
+    desc: "Bitcoin eşler arası teknolojiyi kullanarak ana otorite veya banka olmadan çalışır. İşlemlerin yönetimi ve bitcoinlerin dağıtımı toplu olarak ağ tarafından idare edilir. <b> Bitcoin açık kaynaklıdır; tasarımı halka açıktır, kimse Bitcoin'e sahip değildir ve onu kontrol edemez, herkes katılabilir. </b> Bitcoin kendine has birçok özelliği sayesinde diğer ödeme yollarıyla yapılamayacak çok farklı ödemelerin üstesinden gelebilir."
+    overview: "Veya şuna genel olarak bakın:"
+    individuals: "Bireyler"
+    businesses: "İşletmeler"
+    developers: "Geliştiriciler"
   innovation:
     title: "Yenilik - Bitcoin"
     pagetitle: "Bitcoin neden dünyayı değiştiriyor"
@@ -228,28 +257,22 @@ tr:
   resources:
     title: "Kaynaklar - Bitcoin"
     pagetitle: "Bitcoin kaynakları"
-    linkweusecoins: "<a href=\"http://www.weusecoins.com\">We Use Coins. Burdan başlayın!</a>"
-    linkwallets: "<a href=\"#choose-your-wallet#\">Bitcoin cüzdanları</a>"
-    linkwiki: "<a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin Wiki</a>"
-    linkwikifaq: "<a href=\"https://bitcoin.it/wiki/FAQ\">Sıkça Sorulan Sorular</a>"
-    linkwikisites: "<a href=\"https://bitcoin.it/wiki/Trade\">Bitcoin Kabul Eden Siteler</a>"
-    linkwikimerchant: "<a href=\"https://en.bitcoin.it/wiki/Merchant_Howto\">Tüccar Kılavuzu</a>"
-    linkcharts: "Bitcoin Tabloları"
-    linkbitcoincharts: "<a href=\"http://bitcoincharts.com/\">Bitcoin Grafikleri - Pazarlar</a>"
-    linkblockchaininfo: "<a href=\"http://blockchain.info/charts\">Blockchain.info - İstatistikler ve grafikler</a>"
-    linknews: "Bitcoin Haberleri"
-    linkbitcoinmagazine: "<a href=\"http://bitcoinmagazine.com/\">Bitcoin Dergisi</a>"
-    linkbitcoinnews: "<a href=\"http://www.bitcoinnews.com/\">Bitcoin Haberleri</a>"
-    linkforumpress: "<a href=\"https://bitcointalk.org/index.php?board=77.0\">Bitcoin Forumu / Medya</a>"
-    linkspec: "Bitcoin Belirtimi"
-    linkpdf: "<a href=\"/bitcoin.pdf\">Bitcoin: Eşten eşe bir elektronik nakit sistemi</a>"
-    linkprotocol: "<a href=\"https://en.bitcoin.it/wiki/Protocol_rules\">Protokol kuralları</a>"
+    pagedesc: "Bitcoin hakkında işe yarar siteler ve kaynaklar bulun."
+    useful: "Yararlı yerler"
+    linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin Wiki</a>"
+    directories: "Adres defterleri"
+    linkwallets: "Cüzdanlar"
+    linkmerchants: "Tüccarlar"
+    linkexchanges: "Takaslar"
+    linkmerchantstools: "Tüccar aletleri"
+    charts: "Çizelge ve istatistikler"
+    news: "Haberler"
   secure-your-wallet:
     title: "Cüzdanınızı güvene alın - Bitcoin"
     pagetitle: "Cüzdanınızı güvene alın"
-    summary: "Gerçek hayatta da olduğu gibi cüzdanınızı güvene almalısınız. Bitcoin dünyanın her yerinden alış-verişi çok kolaylaştırıyor. Tabii ki böyle önemli özellikler önemli güvenlik sorunlarını da beraberinde getirir. Bitcoin doğru kullanılırsa çok güvenli olabilir. <b>Unutmayın ki paranızı korumak için aldığınız güvenlik önlemleri sizin sorumluluğunuzdadır.</b> Düşünmeniz gereken birkaç şeyi sıraladık."
-    online: "Çevrimiçi cüzdanları dikkatlice kullanın"
-    onlinetxt: "Çevrimiçi cüzdanlar çevrimiçi bankalara benzer. Birisini sizin bitcoinlerinizi koruyup saklamakla görevlendiriyorsunuz ve siz de şifrenizi hatırlamalısınız. Ama bu servisleri dikkatle ve özenle seçmelisiniz. Şu anda hiç bir ağ cüzdanı banka gibi para tutacak kadar güvenlik ve sigorta sağlayamaz. İki yönlü kimlik denetimi gibi güvenlik önlemleri de hesabınızın güvenliğini artırabilir."
+    summary: "Gerçek hayatta da olduğu gibi cüzdanınızı güvene almalısınız. Bitcoin dünyanın her yerinden alış-verişi çok kolaylaştırıyor ve paranızı kontrol altına alabiliyorsunuz. Tabii ki böyle önemli özellikler önemli güvenlik sorunlarını da beraberinde getirir. Bitcoin doğru kullanılırsa çok güvenli olabilir. <b>Unutmayın ki paranızı korumak için aldığınız güvenlik önlemleri sizin sorumluluğunuzdadır.</b> "
+    online: "Online hizmetlerde dikkatli olun"
+    onlinetxt: "Çevrimiçi cüzdanlar ve takaslar çevrimiçi bankalara benzer. Ama bu servisleri dikkatle ve özenle seçmelisiniz. Şu anda bu tip hizmetler banka gibi para tutacak kadar güvenlik ve sigorta sağlayamaz. İki yönlü kimlik denetimi gibi güvenlik önlemleri de hesabınızın güvenliğini artırabilir."
     backup: "Cüzdanınızı yedekleyin"
     backuptxt: "Bitcoin servisleri ve yazılımları cüzdanınızı yedeklemenizi sağlar. Güvenli bir yerde depolanırsa yedeğiniz sizi bilgisayar sorunlarından ve insani hatalardan koruyabilir."
     backupwhole: "Bütün cüzdanınızı yedekleyin"
@@ -302,15 +325,17 @@ tr:
     develop: "Geliştirme"
     developtxt: "Bitcoin açık-kaynaktır. Eğer geliştiriciyseniz süper güçlerinizi iyiye kullanarak <a href=\"#development#\">Bitcoin'i geliştirebilir</a> veya Bitcoin kullanan yeni servis ve yazılımlar geliştirebilirsiniz."
     donation: "Bağış yapmak"
-    donationtxt: "Yardım etmenin en kolay yolu birkaç Bitcoin <a href=\"https://bitcoinfoundation.org/donate\">bağışı</a> yapmak veya Bitcoin Derneği'ne katılmaktır. Dernek, ana Bitcoin yazılımının geliştiricilerinin maaşını verir, konferanslar düzenler ve diğer önemli kaynakları sağlar."
+    donationtxt: "Yardım etmenin en kolay yolu Bitcoin Vakfı'na birkaç Bitcoin <a href=\"https://bitcoinfoundation.org/donate\">bağış</a> yapmaktır. Veya ilerde yardımcı olacağını düşündüğünüz Bitcoin'le alakalı proje varsa onlara da para verebilirsiniz."
+    foundation: "Vakfa Katılın"
+    foundationtxt: "<a href=\"https://bitcoinfoundation.org/\">Bitcoin Vakfı</a> Bitcoin'i standardize etmek, korumak ve yaymak amacında olan en büyük kuruluşlardan biridir. Bitcoin yazılımcılarının maaşlarını öder, konferansları düzenler ve birçok önemli kaynak sağlar."
     spread: "Yaymaya yardım edin"
     spreadtxt: "İlgi duyanlara Bitcoin'i anlatın. Blogunuzda bahsedin. Favori mağazalarınıza Bitcoin'le ödeme yapmak istediğinizi söyleyin. Ya da yaratıcı olun ve kendinize güzel bir Bitcoin tişörtü yapın."
     wiki: "Viki"
     wikitxt: "<a href=\"https://en.bitcoin.it/\">Bitcoin vikisi</a> yararlı ve detaylı bilgi dolu, ve biz de sürekli bilgileri geliştiriyoruz - aynı Vikipedya gibi. Vikiyi doğru ve güncel tutmaya yardım edebilirsiniz."
     translate: "Çeviri yapın"
     translatetxt: "Bitcoin ekosisteminin önemli kısımlarında çeviri yaparak ya da çevirileri düzelterek Bitcoin bulunulabilirliğini artırmaya yardımcı olabilirsiniz. Yardım etmek istediğiniz bir proje varsa seçin yeter."
-    help: "Yardım"
-    helptxt: "Bitcoin <a href=\"#community#\">topluluklarına</a> katılarak yeni kullanıcılara yardımcı olabilirsiniz. Diğer insanlarla Bitcoin hakkında konuşup her gün hakkında yeni şeyler öğrenebilirsiniz. "
+    help: "Topluluklarla tanışın"
+    helptxt: "Bitcoin <a href=\"#community#\">topluluklarına</a> katılıp diğer Bitcoin hayranlarıyla konuşabilirsiniz. Her gün Bitcoin hakkında yeni şeyler öğrenip yeni kullanıcılara yardım edebilir ve ilginç projelere katılabilirsiniz."
   vocabulary:
     title: "Kelime Haznesi - Bitcoin"
     pagetitle: "Duyabileceğiniz Bitcoin ile alakalı kelimeler"
@@ -347,9 +372,9 @@ tr:
   you-need-to-know:
     title: "Bilmeniz gereken bazı şeyler - Bitcoin"
     pagetitle: "Bilmeniz gereken bazı şeyler"
-    summary: "Bitcoin'i keşfetmek üzereyseniz bilmeniz gereken birkaç şey var. Bitcoin e-posta göndermeye ya da resim çekmeye yaramaz; para ve değer takas etmeye yarar. Dolayısıyla Bitcoin'e normal cüzdanınız kadar özen gösterin, hatta bazı durumlarda daha fazla bile!"
+    summary: "Bitcoin'i keşfetmek üzereyseniz bilmeniz gereken birkaç şey var. Bitcoin normal bankalardan farklı bir şekilde para transfer etmenizi sağlar. Dolayısıyla Bitcoin'i ciddi bir işlem için kullanmadan biraz bilgilenmelisiniz. Bitcoin normal cüzdanınız kadar, hatta bazı durumlarda daha da ciddi bir şekilde kullanılmalıdır!"
     secure: "Cüzdanınızı güvenli tutmak"
-    securetxt: "Gerçek hayatta olduğu gibi cüzdanınız güvende olmalı. Bitcoin dünyanın her tarafında kıymet takas etmeyi çok kolaylaştırır. Ama ne kadar özelliği varsa bir o kadar da güvenlik sorunu olabilir. Bitcoin doğru kullanıldığında yüksek derecede güvenlik sağlar. Unutmayın ki paranızın güvenliği sizin sorumluluğunuzdadır.  <a href=\"#secure-your-wallet#\"><b>Cüzdanınızı korumak hakkında daha fazla okuyun.</b></a>."
+    securetxt: "Gerçek hayatta da olduğu gibi cüzdanınızı güvene almalısınız. Bitcoin dünyanın her yerinden alış-verişi çok kolaylaştırıyor ve paranızı kontrol altına alabiliyorsunuz. Tabii ki böyle önemli özellikler önemli güvenlik sorunlarını da beraberinde getirir. Bitcoin doğru kullanılırsa çok güvenli olabilir. Unutmayın ki paranızı korumak için aldığınız güvenlik önlemleri sizin sorumluluğunuzdadır. <a href=\"#secure-your-wallet#\"><b>Cüzdanınızı korumak hakkında daha fazlasını okuyun.</b></a>."
     volatile: "Bitcoin değeri değişkendir"
     volatiletxt: "Genç ekonomisi, alışılmamış doğası ve bazen likit olmayan piyasası nedeniyle bir bitcoinin değeri kısa sürede kestirilemeyecek kadar artıp azalabilir. Bu yüzden birikimlerinizi bitcoin hâlinde tutmanızı önermeyiz. Bitcoin yüksek riskli mülk sayılmalıdır, ve kaybedemeyeceğiniz miktarda parayı asla Bitcoin olarak saklamamalısınız. Bitcoin hâlinde ödeniyorsanız çoğu hizmet sunucusu anında yerel para biriminize çevirir."
     irreversible: "Bitcoin ödemeleri geri alınamaz"
@@ -369,25 +394,25 @@ tr:
     blockchain: Blok zinciri
     blockchaintxt: (paylaşılan halka açık işlem günlüğü)
   layout:
-    menu-intro: Giriş
-    menu-bitcoin-for-individuals: Bireyler
+    menu-about: Hakkında
+    menu-about-us: "Bitcoin.org hakkında"
     menu-bitcoin-for-businesses: İşletmeler
     menu-bitcoin-for-developers: Geliştiriciler
-    menu-how-it-works: "Nasıl Çalışır"
-    menu-resources: Kaynaklar
-    menu-vocabulary: Kelime bilgisi
+    menu-bitcoin-for-individuals: Bireyler
     menu-community: Topluluk
     menu-development: Geliştirme
     menu-events: Etkinlikler
-    menu-press: Basın
-    menu-innovation: Yenilik
     menu-foundation: Dernek
-    menu-about: Hakkında
-    menu-about-us: "Bitcoin.org hakkında"
-    button-wallet: "Cüzdanınızı seçin"
-    button-know: "Bilmelisiniz"
-    button-support: "Bitcoin'i destekleyin"
+    menu-getting-started: "Yeni başlamak"
+    menu-how-it-works: "Nasıl Çalışır"
+    menu-innovation: Yenilik
+    menu-intro: Giriş
+    menu-resources: Kaynaklar
+    menu-support-bitcoin: Katılın
+    menu-vocabulary: Kelime bilgisi
+    menu-you-need-to-know: "Bilmeniz gerekenler"
     footer: "© Bitcoin Projesi 2009–2013 <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">MIT lisansı</a> altında yayılmaktadır"
+    getstarted: "Bitcoin'e başlayın"
   url:
     about: hakkinda
     about-us: hakkimizda
@@ -395,15 +420,14 @@ tr:
     bitcoin-for-enthusiasts: hevesliler-icin-bitcoin
     bitcoin-for-individuals: bireyler-icin-bitcoin
     bitcoin-for-businesses: isletmeler-icin-bitcoin
-    bitcoin-for-press: 
     choose-your-wallet: cuzdaninizi-secin
     community: topluluk
     development: gelistirme
     download: indir
     events: etkinlikler
+    getting-started: yeni-baslamak
     how-it-works: nasil-calisir
     innovation: yenilik
-    press: 
     resources: kaynaklar
     secure-your-wallet: cuzdaninizi-guvenceye-almak
     support-bitcoin: bitcoini-destekleyin
