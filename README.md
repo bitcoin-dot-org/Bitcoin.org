@@ -165,10 +165,9 @@ build their own opinion. Speaking in a way that makes people think that
 Bitcoin is exclusive to any school of thought does not honor the open
 nature of Bitcoin.
 6. **Felony** : Interviewees must not publicly encourage illegal
-behaviors in any way.
-7. **Diplomacy** : Interviewees must be able to maintain a diplomatic
-language and stay away from provocative or subversive language as much
-as possible. Interviewees role includes educating people and legislators
-about Bitcoin properties, qualities and innovations. Lack of diplomacy
-can go against this mission, create friction and interfere with other
-diplomatic efforts.
+behaviors.
+7. **Diplomacy** : Interviewees role includes objectively educating
+people and legislators about Bitcoin properties, qualities and
+innovations. Having a good level of argumentation and self control
+in debates and avoiding controversial answers are good strengths
+of a professional interviewee.
