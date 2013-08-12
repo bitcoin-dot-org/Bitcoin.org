@@ -89,7 +89,7 @@ A chain fork is happening. Please stop mining on bitcoin version 0.8.0. Your bit
 More information will follow.
 </p>
 <div style="text-align:right">
-  <i>This notice last updated: Fri Mar 16 22:58:00 UTC 2012</i>
+  <i>This notice last updated: Thu, 16 May 2013 01:37:00 UTC</i>
 </div>
 
 ```
@@ -98,6 +98,7 @@ More information will follow.
 * `alias: ...` (optional) a short alias for Bitcoin-Qt alerts. Ex. "dos" will produce /dos.html
 * `active: ...` (true or false) define if the alert should appear as ongoing in the network status page.
 * `banner: ...` (optional) a short text that will be displayed in a red alert banner and link to the alert page.
+* `last updated: ...` should be kept up to date and be in RFC 2822 format ( date -uR ).
 
 ### Release Notes
 
