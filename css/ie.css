@@ -217,12 +217,9 @@ body{
 	zoom:expression(this.parentNode.className=='previewrow'?'1':'');
 	display:expression(this.parentNode.className=='previewrow'?'inline':'');
 	position:expression(this.parentNode.className=='previewrow'?'relative':'');
-	margin-right:expression(this.parentNode.className=='previewrow'?'17px':'');
+	margin-right:expression(this.parentNode.className=='previewrow'?'12px':'');
 	margin-bottom:expression(this.parentNode.className=='previewrow'?'12px':'');
 	vertical-align:expression(this.parentNode.className=='previewrow'?'top':'');
-}
-.previewrow div.last{
-	margin-right:0px;
 }
 .previewrow div a,
 .previewrow div a:visited,
