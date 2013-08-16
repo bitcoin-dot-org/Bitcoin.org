@@ -344,6 +344,25 @@ body{
 	background-color:#b95357;
 	border:1px solid #a04246;
 }
+.previewrow .walletinfo .b1{
+	background-image:url(/img/bubblewarntop.png);
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bubbleinfotop.png', sizingMethod='scale');
+}
+.previewrow .walletinfo .b2{
+	background-image:url(/img/bubblewarnmiddle.png);
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bubbleinfomiddle.png', sizingMethod='scale');
+}
+.previewrow .walletinfo .b3{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bubbleinfobottom.png', sizingMethod='scale');
+}
+.previewrow .walletinfo div p a,
+.previewrow .walletinfo div p a:visited,
+.previewrow .walletinfo div p a:link,
+.previewrow .walletinfo div p a:active{
+	background-color:#ee9209;
+	border:1px solid #d57700;
+	
+}
 
 .press-volunteer div div{
 	width: 400px;
