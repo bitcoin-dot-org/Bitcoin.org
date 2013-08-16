@@ -72,7 +72,7 @@ d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].href=s.getElementsBy
 d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].onclick='';
 d.className='';
 //Workaround for browsers that don't handle re-rendering class styles and svg (they have backgroundImage hardcoded in HTML)
-for(var ii=0,nn=d.childNodes.length;ii<nn;ii++){if(d.childNodes[ii].nodeType==1&&d.childNodes[ii].style.backgroundImage!='')d.childNodes[ii].style.backgroundImage=d.childNodes[ii].style.backgroundImage.replace('bubblewarn','bubble');}
+for(var ii=0,nn=d.childNodes.length;ii<nn;ii++){if(d.childNodes[ii].nodeType==1&&d.childNodes[ii].style.backgroundImage!='')d.childNodes[ii].style.backgroundImage=d.childNodes[ii].style.backgroundImage.replace('bubblewarn','bubble').replace('bubbleinfo','bubble');}
 for(var ii=0,as=d.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==d.parentNode){var dd=as[ii];break;}}
 for(var ii=0,as=s.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==s.parentNode){var ss=as[ii];break;}}
 dd.innerHTML=ss.innerHTML;

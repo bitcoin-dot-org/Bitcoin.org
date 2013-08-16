@@ -75,6 +75,8 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-armory.png" alt="armory" />Armory</a>
 </div>
+{% case page.lang %}
+{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
 <div>
   <div>
     <div class="b1"></div>
@@ -88,6 +90,21 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-electrum.png" alt="electrum" />Electrum</a>
 </div>
+{% else %}
+<div data-id="electrum">
+  <div class="walletinfo">
+    <div class="b1"></div>
+    <div class="b2">
+      <h2>{% translate wallettrustinfo %}</h2>
+      <span></span>
+      <p>{% translate wallettrustinfotxt %}</p>
+      <p><a href="#" onclick="walletshow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+    <div class="b3"></div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-electrum.png" alt="electrum" /></a>
+</div>
+{% endcase %}
 </div>
 
 <div class="previewrow">
@@ -104,6 +121,8 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-bitcoinwallet.png" alt="bitcoin wallet" />Bitcoin<br>Wallet</a>
 </div>
+{% case page.lang %}
+{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
 <div data-id="blockchainmobile">
   <div class="walletwarning">
     <div class="b1"></div>
@@ -117,6 +136,21 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
 </div>
+{% else %}
+<div data-id="blockchainmobile">
+  <div class="walletinfo">
+    <div class="b1"></div>
+    <div class="b2">
+      <h2>{% translate wallettrustinfo %}</h2>
+      <span></span>
+      <p>{% translate wallettrustinfotxt %}</p>
+      <p><a href="#" onclick="walletshow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+    <div class="b3"></div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
+</div>
+{% endcase %}
 <!-- FIXME hidden until paytunia website goes back online on operation
 <div data-id="paytunia">
   <div class="walletwarning">
@@ -148,6 +182,8 @@ id: choose-your-wallet
 </div>
 
 <div class="previewrow">
+{% case page.lang %}
+{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
 <div data-id="blockchaindesktop">
   <div class="walletwarning">
     <div class="b1"></div>
@@ -161,6 +197,21 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
 </div>
+{% else %}
+<div data-id="blockchaindesktop">
+  <div class="walletinfo">
+    <div class="b1"></div>
+    <div class="b2">
+      <h2>{% translate wallettrustinfo %}</h2>
+      <span></span>
+      <p>{% translate wallettrustinfotxt %}</p>
+      <p><a href="#" onclick="walletshow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+    <div class="b3"></div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
+</div>
+{% endcase %}
 <div data-id="bips">
   <div class="walletwarning">
     <div class="b1"></div>
@@ -193,6 +244,19 @@ id: choose-your-wallet
 <div class="previewcol">.</div>
 
 <div class="previewrow" style="display:none;">
+<div id="electrum">
+  <div>
+    <div class="b1"></div>
+    <div class="b2">
+      <h2>Electrum</h2>
+      <span><img src="/img/dow-win.png" alt="Windows" title="Windows" /><img src="/img/dow-linux.png" alt="Linux" title="Linux" /><img src="/img/dow-osx-uni.png" alt="Mac OS X" title="Mac OS X" /><img src="/img/dow-android.png" alt="Android" title="Android" /></span>
+      <p>{% translate walletelectrum %}</p>
+      <p><a href="http://electrum.org/">{% translate walletvisit %}</a></p>
+    </div>
+    <div class="b3"></div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-electrum.png" alt="electrum" />Electrum</a>
+</div>
 <div id="blockchainmobile">
   <div>
     <div class="b1"></div>
