@@ -109,16 +109,19 @@ body{
 }
 
 .start div{
-	border-top:expression((this.parentNode.getElementsByTagName('DIV')[5]==this)?'1px solid #fad296':'');
+	border-top:expression((this.parentNode.getElementsByTagName('DIV')[5]==this)?'1px solid #e0e0e0':'');
 }
 .start div div{
 	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;
 	padding-top:25px;
+	position:relative;
 	padding-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'40px':'');
+	border-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'1px solid #e0e0e0':'');
 	padding-left:expression(this.parentNode.getElementsByTagName('DIV')[2]==this?'40px':'');
-	border-left:expression(this.parentNode.getElementsByTagName('DIV')[2]==this?'1px solid #fad296':'');
+	border-left:expression(this.parentNode.getElementsByTagName('DIV')[2]==this?'1px solid #e0e0e0':'');
+	margin-left:expression(this.parentNode.getElementsByTagName('DIV')[2]==this?'-1px':'');
 }
 .start div div div{
 	padding-top:0px;
@@ -136,9 +139,12 @@ body{
 	zoom:1;
 	display:inline;
 	padding-top:25px;
+	position:relative;
 	padding-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'40px':'');
+	border-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'1px solid #e0e0e0':'');
 	padding-left:expression(this.parentNode.getElementsByTagName('DIV')[1]==this?'40px':'');
 	border-left:expression(this.parentNode.getElementsByTagName('DIV')[1]==this?'1px solid #e0e0e0':'');
+	margin-left:expression(this.parentNode.getElementsByTagName('DIV')[1]==this?'-1px':'');
 }
 .resources>div>div:first-child+div{
 	/*This one is for IE7 only*/

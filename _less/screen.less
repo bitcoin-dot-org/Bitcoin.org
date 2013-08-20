@@ -450,21 +450,27 @@ li p{
 .start{
 	text-align:left;
 }
+.start div{
+	position:relative;
+}
 .start>div:first-child+div{
-	border-top:1px solid #fad296;
+	border-top:1px solid #e0e0e0;
 }
 .start div div{
 	display:inline-block;
 	width:380px;
 	vertical-align:top;
-	padding-bottom:15px;
+	padding-bottom:70px;
+	position:static;
 }
 .start>div>div:first-child{
 	padding-right:40px;
+	border-right:1px solid #e0e0e0;
 }
 .start>div>div:first-child+div{
 	padding-left:40px;
-	border-left:1px solid #fad296;
+	border-left:1px solid #e0e0e0;
+	margin-left:-1px;
 }
 .start div div div a,
 .start div div div a:link,
@@ -472,7 +478,6 @@ li p{
 .start div div div a:visited{
 	display:inline-block;
 	padding:6px 12px;
-	margin-bottom:10px;
 	font-size:115%;
 	color:#fff;
 	border:1px solid #d57700;
@@ -502,6 +507,9 @@ li p{
 .start div div div{
 	display:block;
 	width:auto;
+	padding-bottom:0px;
+	position:absolute;
+	bottom:35px;
 }
 
 .introlink{
@@ -598,10 +606,12 @@ li p{
 }
 .resources>div>div:first-child{
 	padding-right:40px;
+	border-right:1px solid #e0e0e0;
 }
 .resources>div>div:first-child+div{
 	padding-left:40px;
 	border-left:1px solid #e0e0e0;
+	margin-left:-1px;
 }
 .resources div div div{
 	display:block;
@@ -1219,20 +1229,29 @@ h2 .rssicon{
 	.mainlist>div:first-child,.mainlist>div:first-child+div,.mainlist>div:first-child+div+div{
 		text-align:left;
 	}
+	.start>div{
+		position:static;
+	}
 	.start>div:first-child+div{
 		border-top:0px;
 	}
 	.start div div{
 		display:block;
 		width:auto;
-		padding:0px;
+		padding:0px 0px 50px 0px;
+		position:relative;
 	}
 	.start>div>div:first-child{
+		border-right:0px;
 		padding-right:0px;
+	}
+	.start div div div{
+		bottom:15px;
 	}
 	.start>div>div:first-child+div{
 		border-left:0px;
 		padding-left:0px;
+		margin-left:0px;
 	}
 	.resources>div:first-child+div{
 		border-top:0px;
@@ -1245,10 +1264,12 @@ h2 .rssicon{
 	}
 	.resources>div>div:first-child{
 		padding-right:0px;
+		border-right:0px;
 	}
 	.resources>div>div:first-child+div{
 		border-left:0px;
 		padding-left:0px;
+		margin-left:0px;
 	}
 }
 
