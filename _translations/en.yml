@@ -1,32 +1,4 @@
 en:
-  about:
-    title: "About - Bitcoin"
-    pagetitle: "About Bitcoin"
-    history: "A bit of history"
-    historytxt1: "Bitcoin is one of the first implementations of a concept called crypto-currency, which was first described in 1998 by Wei Dai on the cypherpunks mailing list. Building upon the notion that money is any object, or any sort of record, accepted as payment for goods and services and repayment of debts in a given country or socio-economic context, Bitcoin is designed around the idea of a new form of money that uses cryptography to control its creation and transactions, rather than relying on central authorities."
-    historytxt2: "In 2009, the first Bitcoin specification and proof of concept was published in a cryptography mailing list by a member under the pseudonym of Satoshi Nakamoto. Towards the end of 2010 Satoshi left the project, saying he had moved on to other things. The creator of Bitcoin never revealed his identity and simply left his invention to the world. The origin and the motivation behind Bitcoin are still today a great source of mystery."
-    historytxt3: "Since 2010, the Bitcoin community has grown with many developers working on the project. During June and July 2011, Bitcoin suddenly gained media attention leading to a massive buy rally. The resulting bubble slowly deflated through the latter part of 2011, and since then the value of Bitcoin has slowly climbed once again back to its 2011 heights."
-    historytxt4: "On September 27th 2012, the Bitcoin Foundation was created in an effort to standardize, protect, and promote Bitcoin. Today, the Bitcoin economy is developing quickly with new users joining every day."
-    technical: "Technical features"
-    technicalintro: "These are the basic features of any Bitcoin-like network."
-    technicaltxt1: "Bitcoins can be transferred between arbitrary nodes on the network."
-    technicaltxt2: "Transactions are irreversible."
-    technicaltxt3: "Double spending is prevented by using a <a href=\"https://en.bitcoin.it/wiki/Block_chain\">block chain</a>."
-    technicaltxt4: "Transactions are broadcast within seconds and <a href=\"https://en.bitcoin.it/wiki/FAQ#Why_do_I_have_to_wait_10_minutes_before_I_can_spend_money_I_received.3F\">verified within 10 to 60 minutes</a>."
-    technicaltxt5: "Transaction processing and money issuance are carried out collectively through <a href=\"https://en.bitcoin.it/wiki/Mining\">mining</a>."
-    technicaltxt6: "Transactions can be received at any time, regardless of whether your computer is turned on or off."
-    economics: "Economic rules"
-    economicsintro: "These rules are enforced collectively by the Bitcoin network."
-    economicstxt1: "Hard limit of <a href=\"https://en.bitcoin.it/wiki/Controlled_Currency_Supply\">about 21 million bitcoins</a>."
-    economicstxt2: "Bitcoins are divisible to 8 decimal places, yielding a total of approximately 21×10<sup>14</sup> currency units."
-    economicstxt3: "Transactions are cheap and <a href=\"https://en.bitcoin.it/wiki/Transaction_fees\">mostly free</a>."
-    stats: "Statistics"
-    statsintro: "The Bitcoin network has been running continuously for more than 48 months, yielded impressive security features and grown significantly in the past year. As of April 2013:"
-    statstxt1: "Long block chain with more than 232,000 blocks."
-    statstxt2: "One of the largest distributed computing network in the world with more than 65 terahashes/s."
-    statstxt3: "Millions of US$ in daily trade volume distributed across 50,000 transactions."
-    statstxt4: "Total value of all bitcoins in circulation is over US$1.3 billion."
-    statstxt5: "Only one major <a href=\"https://en.bitcoin.it/wiki/Incidents#Value_overflow\">security incident</a> in the protocol which was fixed in August 2010."
   about-us:
     title: "About bitcoin.org"
     pagetitle: "About bitcoin.org"
@@ -196,6 +168,141 @@ en:
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitcoin meetups on BitcoinTalk</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitcoin meetups on the Wiki</a>"
     meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin meetup groups</a>"
+  faq:
+    title: "FAQ - Bitcoin"
+    pagetitle: "Frequently Asked Questions"
+    summary: "Find answers to recurring questions and myths about Bitcoin."
+    table: "Table of contents"
+    general: "General"    
+    whatisbitcoin: "What is Bitcoin?"
+    whatisbitcointxt1: "Bitcoin is a payment system and open-source software platform that enables a new, completely digital money called bitcoins (BTC). It is the first decentralized peer-to-peer payment network that is powered by its users with no central authority or middlemen and it can also be seen as a <a href=\"http://financialcryptography.com/mt/archives/001325.html\">triple entry bookkeeping system</a>."
+    creator: "Who created Bitcoin?"
+    creatortxt1: "Bitcoin is one of the first implementations of a concept called crypto-currency, which was first described in 1998 by Wei Dai on the cypherpunks mailing list, suggesting the idea of a new form of money that uses cryptography to control its creation and transactions, rather than relying on central authorities. The first Bitcoin specification and proof of concept was published in 2009 in a cryptography mailing list by Satoshi Nakamoto. By the end of 2010 Satoshi left the project without revealing much about him. Meanwhile, the community has grown with <a href=\"#development#\">many developers</a> working on Bitcoin."
+    creatortxt2: "The anonymity of Satoshi often raised unjustified concerns due to a misunderstanding of the open-source nature of Bitcoin. The protocol and software have been published is such a way that any developer around the world can review the code and make different Bitcoin software. Just like current developers, Satoshi had limited influence and he didn't control Bitcoin. Trying to find who invented Bitcoin today is probably as relevant as trying to find who invented paper."
+    whocontrols: "Who controls the Bitcoin network?"
+    whocontrolstxt1: "Just like nobody owns the technology behind email, nobody owns the Bitcoin network. Bitcoin is controlled by all Bitcoin users around the world. Developers are improving the software but they can't force a change in the Bitcoin protocol because all users are free to choose what software and version they use. In order to stay compatible with each other, all users need to use software complying with the same rules. Bitcoin can only work correctly with a complete consensus between all users. Therefore, all users and developers have strong incentives to adopt and protect this consensus. This also means that if something is wrong, all users and developers have incentives to help fixing the problem."
+    howitworks: "How does Bitcoin work?"
+    howitworkstxt1: "From a user perspective, Bitcoin is nothing more than a mobile app or computer program, that gives users Bitcoin addresses to send and receive bitcoins That pretty much sums up how Bitcoin works for the average user."
+    howitworkstxt2: "Behind the scenes, the whole Bitcoin network is sharing a public ledger called the block chain. This ledger contains every Bitcoin transaction ever processed on the network, allowing your computer to verify the validity of each transaction. All Bitcoin users can create Bitcoin addresses that are used to define where bitcoins are sent and where they come from. The authenticity of each transaction is protected by digital signatures, with each user having full control over his own Bitcoin addresses. Anyone can process transactions using the computing power of specialized hardware, and earn a reward in bitcoins for this service. This is often called \"mining\". To learn more about how Bitcoin works, you can consult the <a href=\"#how-it-works#\">dedicated page</a> and the <a href=\"http://bitcoin.org/bitcoin.pdf\">original paper</a>."
+    acquire: "How does one acquire bitcoins?"
+    acquireli1: "Accept bitcoins as payment for goods or services."
+    acquireli2: "Buy bitcoins at one of the <a href=\"http://howtobuybitcoins.info\">Bitcoin Exchanges</a>."
+    acquireli3: "Trade traditional currency for bitcoins with <a href=\"https://localbitcoins.com/\">someone near you</a>."
+    acquireli4: "Earn bitcoins through competitive <a href=\"http://www.bitcoinmining.com/\">mining</a>."
+    acquiretxt1: "While it is possible to find individuals who wish to sell bitcoins in exchange for a credit card or PayPal payment, most exchanges do not allow funding for these payment methods. This is due to repeated cases where someone pays for bitcoins with PayPal, receives their bitcoins, and then succesfully reverse the transaction."
+    makepayment: "How difficult is it to make a Bitcoin payment?"
+    makepaymenttxt1: "Bitcoin payments are easier to make than existing banking or credit card process. Payments are made from a wallet application, either on your computer or smartphone, by entering the recipient's address and the amount and pressing send. Recipient's address can be saved in your address book and you can get them by scanning a QR code, touching two phones together with NFC technology or simply with usual copy/paste."
+    advantages: "What are the advantages of Bitcoin?"
+    advantagesli1: "<em><b>Unrestrained payments</b></em> - It is possible to send and receive any amount of money instantly anywhere in the world at any time. No bank holidays. No borders. No imposed limits. Bitcoin allows its users to be in full control of their money."
+    advantagesli2: "<em><b>Low or zero fees</b></em> - Bitcoin payments are currently processed with either no fees or extremely small fees. Users may include fees with transactions to receive priority processing, which results in faster confirmation of transactions by the network. Additionally, merchant processors exist to assist merchants in processing transactions, converting bitcoins to fiat currencies with daily direct deposits to bank accounts, and to provide these services for much lower fees and less risk than with PayPal or credit card networks."
+    advantagesli3: "<em><b>Fewer risks for merchants</b></em> - Bitcoin transactions are secure, irreversible, and do not contain customers’ sensitive or personal information. This protects merchants from losses caused by fraud or fraudulent chargebacks and there is no need for PCI compliance. Consequently, merchants can easily expand to new markets where either credit cards are not available or fraud rates are unacceptably high. The net results are lower fees, larger markets, and fewer administrative costs."
+    advantagesli4: "<em><b>More protection for consumers</b></em> - Bitcoin users are in full control of their transactions, it is impossible for merchants to force unwanted or unnoticed charges that can happen with ACH debits, debit cards, PayPal, and credit cards. Bitcoin payments are made without needing the personal information tied to the transaction. This offers strong protection against identity theft."
+    advantagesli5: "<em><b>Transparent and neutral</b></em> - <a href=\"http://blockchain.info\">All information</a> concerning the Bitcoin money supply is readily available on the block chain for anybody to verify and use in real-time. No individual or organization can control or manipulate Bitcoin protocol. This allows the core of Bitcoin to be trusted for being fully neutral, transparent and predictable."
+    disadvantages: "What are the disadvantages of Bitcoin?"
+    disadvantagesli1: "<em><b>Not widely accepted</b></em> - Many people are still unaware of Bitcoin.  Every day more businesses accept bitcoins because they want the advantages of doing so, but the list remains small and still needs to grow in order to gain improved usefulness through networking effects."
+    disadvantagesli2: "<em><b>Volatile</b></em> - The <a href=\"https://blockchain.info/charts/market-cap\">total value</a> of bitcoins in circulation and the number of businesses using Bitcoin are still very small compared to what they could be. Therefore, relatively small movements in the market can significantly affect the price. In theory, this volatility will persist as the markets and technology matures. Never before has the world seen a start-up currency, so it is truly difficult (and exciting) to imagine how it will play out."
+    disadvantagesli3: "<em><b>Still in development</b></em> - New tools and services are constantly being developed to make Bitcoin more accessible to the masses but some user tools are still not ready for everyone. More intuitive and advanced security solutions are being developed, but are not currently used. Most Bitcoin businesses are new and most of them don't offer any insurance. In general, Bitcoin is still in the process of maturing."
+    trust: "Why do people trust Bitcoin?"
+    trusttxt1: "Many people trust Bitcoin because it requires absolutely no trust at all. Bitcoin is fully open-source. Everyone has access to all of the source code all of the time, allowing any developer in the world to verify what it does. All transactions and bitcoins issued into existence can be transparently consulted in real-time by anyone. All payments can be done without involving trust in a third party and the whole system is protected by heavily peer-reviewed cryptographic algorithms like those used in online banking. The network is decentralized; no organization or individual can control Bitcoin and the network remains secure even if not all of its users can be trusted."
+    makemoney: "Can I make money with Bitcoin?"
+    makemoneytxt1: "You should never expect to get rich with Bitcoin or any emerging technology. As a general rule, it is always important to be wary of anything that sounds too good to be true or disobeys to any basic economic rules."
+    makemoneytxt2: "Bitcoin just like any new market can offer various business opportunities that also include risks. There is no garantee that Bitcoin will continue to grow even though it developed at a very fast rate so far. Investing time and resources on anything related to Bitcoin requires entrepreneurship. There are various ways that people use to make money with Bitcoin such as mining, speculation or running new businesses. All of these methods are very competitive and cannot garantee a profit. It is up to each individual to make a proper evalution of the costs and the risks of such projects."
+    virtual: "Is Bitcoin fully virtual and immaterial?"
+    virtualtxt1: "Bitcoin is as virtual as the credit cards and online banking networks that people are using everyday. It can be used to pay online and in physical stores just like other forms of money. Bitcoins could actually also be exchanged as physical coins like the Casascius coins but paying with a mobile remains more convenient. Bitcoin balances are stored in a large distributed network and they cannot be fraudulently altered by anybody. In other terms, Bitcoin users have exclusive control over their funds and bitcoins cannot vanish because they are virtual."
+    anonymous: "Is Bitcoin anonymous?"
+    anonymoustxt1: "Bitcoin is designed to allow its users to send and receive payments with an acceptable level of privacy as well as any other legitimate form of money. It is however not anonymous and cannot offer the same level of privacy as cash. The use of Bitcoin leaves extensive public records. Various mechanisms exist or are being developed to protect users privacy. However, there is still work to be done before these features are used correctly by the majority of all Bitcoin users."
+    anonymoustxt2: "Some concerns have been raised that private transactions could be used for illegal purposes with Bitcoin. However, it is worth to note that Bitcoin is no more anonymous than cash and the use of Bitcoin will undoubtedly be subjected to similar regulations that are already in place inside existing financial systems. Additionally, Bitcoin is designed to prevent a large range of financial crimes and is not likely to prevent criminal investigations to be conducted."
+    lost: "What happens when bitcoins are lost?"
+    losttxt1: "When a user loses his wallet, it has the effect of removing money out of circulation. Lost bitcoins still remain in the block chain just like any other bitcoins. However, lost bitcoins remain dormant forever because there is no chance for anybody to find the private key that would allow to spend them again. Because of the law of supply and demand, when fewer bitcoins are available the ones that are left will be in higher demand. So, as bitcoins are lost, bitcoins will eventually increase in value to compensate. This can be seen as a global redistribution of wealth through deflation."
+    scale: "Can Bitcoin scale to become a major payment network?"
+    scaletxt1: "The Bitcoin network can already process a much higher number of transactions per second than today. It is however not entirely ready to scale to the level of a credit card network. Ongoing work is already being done to lift current limitations and future requirements are well known. Since its inception, every single part of the Bitcoin network has been in a continuous process of maturation, optimization and specialization and it should be expected to remain that way for years to come. As traffic grows and this becomes more critical, more Bitcoin users will use lightweight clients and full network nodes will become a more specialized service. For more details, see the <a href=\"https://en.bitcoin.it/wiki/Scalability\">Scalability</a> page on the Wiki."
+    legal: "Legal"
+    islegal: "Is Bitcoin legal?"
+    islegaltxt1: "To the best of our knowledge, Bitcoin has not been made illegal by legislation in any jurisdiction. However, some jurisdictions severely restrict or ban all foreign currency like Argentina."
+    islegaltxt2: "Additionally, regulators from various jurisdictions have taken steps to provide individuals and businesses with rules on how to integrate this new technology into businesses and other activities. For example, the United States' FinCEN has issued non-binding and non-determinative guidance on how it characterizes certain activities involving virtual currencies."
+    illegalactivities: "Is Bitcoin useful for illegal activities?"
+    illegalactivitiestxt1: "Bitcoin is money and money has always been used both for legal and illegal purposes. Cash, credit cards and traditional banking systems largely surpass Bitcoin in terms of financing crime. Bitcoin can bring significant innovation in payment systems and the benefits of those innovations are thought to be way beyond their potential drawbacks."
+    illegalactivitiestxt2: "Bitcoin is designed to be a huge step forward in making money more secure and could also act as significant protection against many forms of financial crime. For instance, bitcoins are completely impossible to counterfeit. Users are in full control of their payments and cannot receive unwanted charges like those used in credit card frauds. Bitcoin transactions are irreversible and immune to fraudulent chargebacks. Bitcoin allows money to be secured against theft and loss using very strong and useful mechanisms such as backups, encryption and multi-signature."
+    illegalactivitiestxt3: "Some concerns have been raised that Bitcoin could be more attractive for illegal actors because it can be used to make private and irreversible payments. However, these features already exist with cash and wire transfer, which are useful and perfectly legal. The use of Bitcoin will undoubtedly be subjected to similar regulations that are already in place inside existing financial systems and Bitcoin is not likely to prevent criminal investigations to be conducted. In general, it is common for important breakthroughs to be perceived as being controversial before their benefits are well understood. Internet is a good example among many others to illustrate this observation."
+    regulated: "Can Bitcoin be regulated?"
+    regulatedtxt1: "The Bitcoin protocol in itself cannot be modified against the will of its users because every user in the world is free to choose what software they use and what virtual currency they believe is the most useful. Therefore any attempt to take control of the network is doomed not to succeed and would rather end up creating a new competing virtual currency."
+    regulatedtxt2: "It is however possible to regulate the use of Bitcoin in a similar way than any other instrument. Just as the dollar, Bitcoin can be used for a wide range of reasons, some of which can be considered legitimate or not as per each jurisdiction laws. In this regard, Bitcoin is no different than any other tool or resource and can be subjected to different regulations in each country. The real challenge for regulators, as always, is to develop and apply efficient solutions while not impairing the growth of new emerging markets and businesses."
+    taxes: "What about Bitcoin and taxes?"
+    taxestxt1: "Bitcoin is not a fiat currency with legal tender status in any jurisdiction, but often tax liability accrues regardless of the medium used. There is a wide variety of legislation in many different jurisdictions which could cause income, sales, payroll, capital gains, or some other form of tax liability to arise with Bitcoin."
+    economy: "Economy"
+    bitcoinscreated: "How the bitcoins are being created?"
+    bitcoinscreatedtxt1: "New bitcoins are generated by a competitive and decentralized process called mining. This process involves that individuals are rewarded by the network for their services. More specifically, miners are processing transactions and securing the network using specialized hardware and are collecting new bitcoins in exchange."
+    bitcoinscreatedtxt2: "The Bitcoin protocol is designed in such a way that no more than a fixed amount of Bitcoin can be created approximately each 10 minutes. This makes Bitcoin mining a very competitive business. When more miners join the network, it becomes increasingly difficult to make a profit and miners must seek for efficiency to cut their operating costs. No central authority or developer has any power to control or manipulate the system to increase their profits. Every Bitcoin node in the world will reject anything that doesn't comply with the rules it expects the system to follow."
+    bitcoinscreatedtxt3: "Bitcoins are created at a decreasing and predictable rate. The number of new bitcoins created each year is automatically halved over time until bitcoins issuance completely halt with a market cap of 21 millions bitcoins in existence. At this point, Bitcoin miners will probably be supported exclusively by numerous small transaction fees."
+    whyvalue: "Why do bitcoins have value?"
+    whyvaluetxt1: "Bitcoins have value because they are useful and because they are scarce. Technically speaking, Bitcoin have all the attributes of money (fungibility, scarcity, divisibility, and recognizability) based on the properties of mathematics rather than relying on the physical properties of a rock like gold or trust in a politically issued currency. In short, Bitcoin is backed by mathematics. With these attributes, all that is required for a form of money to gain value is trust and acceptance. In the case of Bitcoin, this can be measured by its growing base of users, merchants and startups."
+    whatprice: "What determines Bitcoin’s price?"
+    whatpricetxt1: "The price of a bitcoin is determined by supply and demand. There is only a certain amount of bitcoins in circulation and this amount is owned and divided between all Bitcoin users. Therefore when there is more demand for bitcoins, the price increases and when there is less demand, the price decreases. New bitcoins are created at a predictable and decreasing rate, which means that demand must equate to this level of inflation to keep the price stable. Because Bitcoin still hold a relatively small market compared to what it could be, the price of a bitcoin is very volatile."
+    whatpriceimg1: "Bitcoin price, 2011 to 2013:"
+    worthless: "Can bitcoins become worthless?"
+    worthlesstxt1: "Yes. History is littered with currencies that failed and are no longer used, such as the <a href=\"http://en.wikipedia.org/wiki/German_gold_mark\">German Mark</a> during the Wiemar Republic or the <a href=\"http://en.wikipedia.org/wiki/Zimbabwean_dollar\">Zimbabwean dollar</a> more recently. Although previous currency failures were typically due to hyperinflation of a kind that Bitcoin makes impossible, there is always potential for technical failures, competing currencies, political issues and so on. As a basic rule of thumb, no currency should be considered absolutely safe from failures or hard times. Bitcoin prooved its reliability for a few years and there is a lot of potential for it continue to grow. However, no one is in a position to predict what will be the future for Bitcoin."
+    bubble: "Is Bitcoin a bubble?"
+    bubbletxt1: "A fast rise in price does not constitute a bubble. An artificial over-valuation that will suddenly downward correct constitutes a bubble. Choices based on individual human action by hundreds of thousands of market participants is the cause for bitcoin's price to fluctuate as the market seeks price discovery. Some reasons for this change in sentiment may be a loss of confidence in the currency, a large difference between value and price not based on the fundamentals of the Bitcoin economy, excessive press coverage stimulating speculative demand, fear of uncertainty, and just old-fashioned irrational exuberance and greed."
+    ponzi: "Is Bitcoin a Ponzi scheme?"
+    ponzitxt1: "A Ponzi scheme is a fraudulent investment operation that pays returns to its investors from their own money, or the money paid by subsequent investors, instead of from profit earned by the individual running the operation."
+    ponzitxt2: "Bitcoin is an open-source software project with no central authority and consequently no one is in a position to make fraudulent representations about investment returns. Like other major currencies such as gold, United States dollars, Euros, Yen, etc. there is no guaranteed purchasing power and the exchange rate freely floats. This can lead to volatility where owners of bitcoins can unpredictably make or lose money. Beyond speculation, Bitcoin is also a payment system with useful and competitive attributes that are being used by thousands of users and businesses."
+    earlyadopter: "Doesn't Bitcoin unfairly benefit early adopters?"
+    earlyadoptertxt1: "Some early adopters have a large number of bitcoins now because they took risks and invested time or resources on an unproven technology that was hardly used by anyone and that was much harder to secure properly. Many of them also spent a great part of their bitcoins quite a few times or bought only small amounts and didn't make huge gains. The Bitcoin market is a free market and there is no garantee that the price will increase or drop. This is very similar to investing in a early startup that is either gaining value through its usefulness and popularity over time, or just never break through. Bitcoin is still at its infancy and it has been designed with a very long-term view, it is hard to imagine how it could be less tilted towards early adopters and today's users might or might not be the early adopters of tomorrow."
+    finitelimitation: "Won't the finite amount of bitcoins be a limitation?"
+    finitelimitationtxt1: "Bitcoin is unique in that only 21 millions bitcoins will ever be created. However, this will never be a limitation because bitcoins can be divided up to 8 decimal places ( 0.000 000 01 BTC ) and potentially even smaller units if that is ever required in the future. As the average transaction size reduces, transactions can be denominated in sub-units of a bitcoin such as mBTC ( 0.001 BTC ), µBTC ( 0.000 001 BTC ) or satoshis ( 0.000 000 01 BTC )."
+    deflationaryspiral: "Won't Bitcoin fall in a deflationary spiral?"
+    deflationaryspiraltxt1: "The deflationary spiral theory says that if prices are expected to fall, people will move purchases into the future in order to benefit from the lower prices. That fall in demand will in turn cause merchants to lower their prices to try and stimulate demand, making the problem worse and leading to an economic depression."
+    deflationaryspiraltxt2: "Although this theory is a popular way to justify inflation amongst central bankers, it does not appear to always hold true and is considered controversial amongst economists. Consumer electronics are one example of a market where prices constantly fall and yet is not in depression. Likewise, over time the value of bitcoins have risen and yet the size of the Bitcoin economy has also grown dramatically along with it. Because both the value of the currency and size of its economy started at zero in January 2009, Bitcoin is an existence proof that the theory must sometimes be wrong."
+    deflationaryspiraltxt3: "Despite all this Bitcoin is not designed to be a deflationary currency. It is more accurate to say Bitcoin is intended to inflate in its early years, and become stable in the later years. The only time the quantity of bitcoins in circulation will drop is if people carelessly lose their wallets by failing to make backups. With a stable monetary base and a stable economy, the value of the currency should remain the same."
+    speculationvolatility: "Isn't speculation and volatility a problem for Bitcoin?"
+    speculationvolatilitytxt1: "This is a chicken and egg situation. For Bitcoin price to stabilize, a large scale economy needs to develop with more businesses and users. For a large scale economy to develop, businesses and users will seek for price stability."
+    speculationvolatilitytxt2: "Fortunately, it is possible for businesses to convert their payments in their local currency instantly, allowing them to profit of the advantages of Bitcoin without being subjected to price fluctuations. Since Bitcoin offers many useful and unique features and properties, many users also choose to use Bitcoin. With such solutions and incentives, it is possible that Bitcoin will succeed to mature and develop to a degree where price volatility will decrease."
+    buyall: "What if someone bought up all the existing Bitcoins?"
+    buyalltxt1: "Only a fraction of bitcoins issued to date are found on the exchange markets for sale. Bitcoin markets are competitive, meaning the price of a bitcoin will rise or fall depending on supply and demand. Additionally, new bitcoins will continue to be issued for decades. Therefore even the most determined buyer could not buy all bitcoins. This situation doesn't suggest, however, that the markets aren't vulnerable to price manipulation. It doesn't take significant amounts of money to move the market price up or down and thus Bitcoin remains a volatile asset."
+    bettercurrency: "What if someone creates a better digital currency?"
+    bettercurrencytxt1: "That can happen. As for now, Bitcoin remains by far the first and foremost private decentralized virtual currency but there can't be any guarantees that it will retain that position. There is already a set of alternative currencies inspired by Bitcoin. It is however probably correct to assume that significant improvements would be required for a new  currency to outrace Bitcoin in terms of esthablished market, even though this remains unpredictable."
+    transactions: "Transactions"
+    tenminutes: "Why do I have to wait 10 minutes?"
+    tenminutestxt1: "Receiving a payment is almost instant with Bitcoin. However, there is a 10 minutes delay on average before the network confirms your transaction by including it in a block and before you can spend the bitcoins you receive. A confirmation means that there is a consensus on the network that the bitcoins you received haven't been sent to anyone else and are considered your property. Once your transaction has been confirmed, it will continue to receive additional confirmations that will exponentially consolidate this consensus and decrease the risk of a reversed transaction."
+    fee: "How much will the transaction fee be?"
+    feetxt1: "Most transactions can be processed without fees but users are encouraged to pay a small fee by their own for faster confirmation of their transactions and to remunerate the miners. When fees are required, they generally don't exceed a few pennies in value. The most recent version of the Bitcoin client will estimate an appropriate fee when required."
+    feetxt2: "Transaction fees are used as a protection against users sending transactions to overload the network. The precise manner in which fees work is still being developed and will change over time. Because the fee is related to the amount of data in the transaction and not to the amount of bitcoins being sent, it may seem extremely low (0.0005 BTC for a 1,000 BTC transfer) or unfairly high (0.004 BTC for a 0.02 BTC payment). If you are receiving large number of tiny amounts, then fees when sending will be higher because this payment could be compared to paying a restaurant bill using only penny coins. If your activity follows the pattern of conventional transactions, the fees should remain very low."
+    poweredoff: "What if I receive a bitcoin when my computer is powered off?"
+    poweredofftxt1: "This works fine. The money will appear next time you start your wallet app. Bitcoins are not actually sent to your wallet in your computer, they are appended to a public ledger that is shared between all software on the network. If you are sent coins when your wallet client program is not running, and you later launch the wallet client program, it will download blocks and catch up with any transactions it did not already know about and the coins will eventually appear as if they were just received in the wallet. Your wallet is only needed when you wish to spend coins."
+    sync: "What does \"synchronizing\" means and why is it taking so long?"
+    synctxt1: "Long synchronization time is only required with full node clients like Bitcoin-Qt. Technically speaking, synchronizing is the process of downloading and verifying all previous Bitcoin transactions on the network. For a Bitcoin client to calculate the spendable balance of your Bitcoin addresses and make new transactions, it needs to be aware of all previous transactions that have been completed on the Bitcoin network. This step can be resource consuming and requires to have enough bandwidth and storage for the full <a href=\"http://blockchain.info/charts/blocks-size\">block chain size</a>. For Bitcoin to remain secure, enough people should keep using full node clients because they perform the task of validating and relaying transactions."
+    mining: "Mining"
+    whatismining: "What is Bitcoin mining?"
+    whatisminingtxt1: "Mining is the process of spending computation power to process transactions, secure the network and keeps everyone in the system synchronized together. It can be perceived like the Bitcoin data center except that it has been designed to be fully decentralized with miners in all countries and no individual having control over the network. Mining is called this way because it is also a temporary mechanism used to issue bitcoins in a very similar way to a scarse commodity like gold. However as opposed to gold, Bitcoin mining provides a reward in exchange of a useful work required to operate a secure payment network. Mining will still be required after the last bitcoin is issued."
+    howminingworks: "How does Bitcoin mining work?"
+    howminingworkstxt1: "Anybody can become a miner by running software with specialized hardware. Mining software is listening for transactions broadcast through the peer-to-peer network and perform appropriate tasks to process and confirm these transactions. Bitcoin miners perform this labor because miners can earn transaction fees paid by customers for faster transaction processing and newly created coins, issued into existence according to a fixed formula."
+    howminingworkstxt2: "For new transactions to be confirmed, they need to be included in a block along with mathematic proofs of work. Such proofs are very hard to generate because there is no way to create them other than trying millions of random calculations. Because of that, miners are forced to do these calculations before their blocks are accepted by the network and before they are rewarded. As more people start to mine, the difficulty of finding valid blocks is automatically increased by the network to ensure that the average time to find a block remains equal to 10 minutes on average. As a result, mining is a very competitive business where no miner can control what is included in the block chain."
+    howminingworkstxt3: "Proof of works are also designed to depend on the previous block to force a chronological order in the block chain. This makes it exponentially difficult to reverse previous transactions because this would require to recalculate the proof of works of all following blocks. Therefore, transactions become more secure each time they are confirmed by a new block."
+    howminingworkstxt4: "Bitcoin miners are neither able to cheat by increasing their own reward nor process fraudulent transactions that could corrupt the Bitcoin network because all Bitcoin node would reject any block that contains invalid data as per the rules of the protocol. Consequently, the network remains secure even if not all Bitcoin miners can be trusted."
+    miningwaste: "Isn't Bitcoin mining a waste of energy?"
+    miningwastetxt1: "Spending energy on securing and operating a payment system is hardly a waste. Like any other service, the use of Bitcoin is implying processing costs that are covered by the usefulness of the services offered. Services necessary for the operation of currently widespread monetary systems, such as banks and credit card companies, also spend a lot of energy. So does any goods or services people are using or buying every day. However as opposed to Bitcoin, this global energy consumption is not transparent and cannot be measured publicly."
+    miningwastetxt2: "Bitcoin mining has been designed to become more optimized over time with specialized hardware using less energy consumption and the operating costs of mining should continue to be proportional to the demand. When Bitcoin mining becomes unprofitable, some miners choose to stop their activities."
+    miningsecure: "How does mining help secure Bitcoin?"
+    miningsecuretxt1: "Mining creates the equivalence of a competitive lottery that makes it very difficult for anyone to consecutively add new blocks of transactions in the block chain. This allows to protect the neutrality of the network by preventing any individual to gain the power to block certain transactions. This also prevents any individual to replace parts of the block chain to roll back their own spends, which could be used to defraud other users. Additionally, mining makes it exponentially difficult to reverse previous transactions because it would require to rewrite all blocks following this transaction."
+    miningstart: "What do I need to start mining?"
+    miningstarttxt1: "In the early days, anyone could find new blocks using standard computers CPUs. As more and more people started mining, the difficulty of finding new blocks has greatly increased to the point where the only cost-effective method of mining is using specialized hardware (ASICs). You can visit <a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a> for more informations."
+    security: "Security"
+    secure: "Is Bitcoin secure?"
+    securetxt1: "The Bitcoin technology - the protocol and the cryptography - has a strong security track record and the Bitcoin network is probably the biggest distributed computing project in the world. Bitcoin's vulnerability is in user error. Bitcoin wallet files that store the necessary private keys can be accidentally deleted, lost or stolen. This is pretty similar to physical cash in a computer or mobile. Fortunately, users can employ <a href=\"#secure-your-wallet#\">security practices</a> to protect their money or use service providers that offer good levels of security and insurance. Bitcoins are not covered by insurance schemes or depositor insurance like the FDIC, but users' wallets could be with a service provider that offers that provision."
+    hacked: "Hasn't Bitcoin been hacked in the past?"
+    hackedtxt1: "The Bitcoin protocol in itself has never suffered from a security breach and is still working great after years, which is a fairly good indication that the concept is well designed. However, <a href=\"http://bitcoin.org/en/alerts\">security flaws</a> have been found and fixed over time in various software implementations. Like any other form of software, the security of Bitcoin software depends on the speed with which problems are found and fixed. The more such issues are discovered, the more Bitcoin is gaining maturity."
+    hackedtxt2: "There is often misconceptions about thefts and security breaches that happened on diverse exchanges and businesses. Although these events are unfortunate, in none of them Bitcoin has been hacked, just like a bank being robbed doesn't mean that the dollar is compromised. However it is true that a complete set of good practices and intuitive security solutions need to be developped around Bitcoin to help users having a better control and protection of their money and continue to reduce the general risk of theft and loss. Over the course of the last years, such security features developed at a fast rate like wallet encryption, offline wallets, multi-signature and hardware wallets."
+    collude: "Could users collude against Bitcoin?"
+    colludetxt1: "It isn't possible to change the Bitcoin protocol with a majority of users or miners. Any miner that doesn't comply with the protocol immediately generates a chain fork as the rest of the network is rejecting blocks from these miners, including all Bitcoin clients that are not mining. As per the current specification, no double spending is possible on the same block chain nor spending bitcoins without a valid signature. Consequently, it is not possible to generate uncontrolled amounts of bitcoins out of thin air, spend other users funds, corrupt the network or anything similar."
+    colludetxt2: "However, a majority of miners could arbirarily choose to block or reverse targeted recent transactions. This could be used for censorship purposes or to defraud targeted merchants. But this can also be used for legitimate purposes, like applying a collaborative emergency action to help fixing a problem with the network like the <a href=\"/en/alert/2013-03-11-chain-fork\">march 2013 chain fork</a>"
+    quantum: "Isn't Bitcoin vulnerable to quantum computing?"
+    quantumtxt1: "Yes, and so is all system relying on cryptography in general including current banking systems. However, quantum computers don't yet exist and probably won't for a while. In the event that quantum computing could be an imminent threat to Bitcoin, the protocol could be upgraded to use new algorithms. Given the importance that this update would have, it can be safely expected that it would be highly reviewed by developers and adopted by all Bitcoin users."
+    crackedshutdown: "Can't Bitcoin be cracked or shutdown?"
+    crackedshutdowntxt1: "Bitcoin has been designed to be a very resilient technology in order to be reliable as a global financial tool. The way it works is very similar to other decentralized networks such as the Internet, with no single point of failure. No individual or developer have control over Bitcoin and as long as some users and miners remain, the network will continue existing. This high level of resiliency and redundancy is unmatched in the payments space and can represent an important breakthrough for the protection of financial systems that are still highly dependent on a small number of data centers."
+    crackedshutdowntxt2: "Even though technical failures are possible, Bitcoin has demonstrated its ability to withstand various forms of attacks for years and the discovery of new technical issues would likely only lead to further improvements. Bitcoin use could however be made difficult by severe regulations, in which case it is hard to determine what percentage of users would keep using the technology. However, because Bitcoin is a global network that is deployed in every country, a government that would choose to censor Bitcoin or make it illegal would prevent businesses and markets to develop on its own territory and potentially fall behind other countries in terms of innovation with payment systems."
+    help: "Help"
+    morehelp: "I'd like to learn more. Where can I get help?"
+    morehelptxt1: "You can find more useful informations and help on the <a href=\"#resources#\">resources</a> and <a href=\"#community#\">community</a> pages or on the <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki FAQ</a>."
   getting-started:
     title: "Getting started - Bitcoin"
     pagetitle: "Getting started with Bitcoin"
@@ -388,7 +495,6 @@ en:
     blockchain: the Block chain
     blockchaintxt: (a shared public transaction log)
   layout:
-    menu-about: About
     menu-about-us: "About bitcoin.org"
     menu-bitcoin-for-businesses: Businesses
     menu-bitcoin-for-developers: Developers
@@ -396,6 +502,7 @@ en:
     menu-community: Community
     menu-development: Development
     menu-events: Events
+    menu-faq: FAQ
     menu-foundation: Foundation
     menu-getting-started: "Getting started"
     menu-how-it-works: "How it works"
@@ -419,6 +526,7 @@ en:
     development: development
     download: download
     events: events
+    faq: faq
     getting-started: getting-started
     how-it-works: how-it-works
     innovation: innovation
@@ -443,3 +551,56 @@ en:
       privatekey: private-key
       signature: signature
       wallet: wallet
+    faq:
+      general: general
+      whatisbitcoin: what-is-bitcoin
+      creator: who-created-bitcoin
+      whocontrols: who-controls-the-bitcoin-network
+      howitworks: how-does-bitcoin-work
+      acquire: how-does-one-acquire-bitcoins
+      makepayment: how-difficult-is-it-to-make-a-bitcoin-payment
+      advantages: what-are-the-advantages-of-bitcoin
+      disadvantages: what-are-the-disadvantages-of-bitcoin
+      trust: why-do-people-trust-bitcoin
+      makemoney: can-i-make-money-with-bitcoin
+      virtual: is-bitcoin-fully-virtual-and-immaterial
+      anonymous: is-bitcoin-anonymous
+      lost: what-happens-when-bitcoins-are-lost
+      scale: can-bitcoin-scale-to-become-a-major-payment-network
+      legal: legal
+      islegal: is-bitcoin-legal
+      illegalactivities: is-bitcoin-useful-for-illegal-activities
+      regulated: can-bitcoin-be-regulated
+      taxes: what-about-bitcoin-and-taxes
+      economy: economy
+      bitcoinscreated: how-the-bitcoins-are-being-created
+      whyvalue: why-do-bitcoins-have-value
+      whatprice: what-determines-bitcoins-price
+      worthless: can-bitcoins-become-worthless
+      bubble: is-bitcoin-a-bubble
+      ponzi: is-bitcoin-a-ponzi-scheme
+      earlyadopter: doesnt-bitcoin-unfairly-benefit-early-adopters
+      finitelimitation: wont-the-finite-amount-of-bitcoins-be-a-limitation
+      deflationaryspiral: wont-bitcoin-fall-in-a-deflationary-spiral
+      speculationvolatility: isnt-speculation-and-volatility-a-problem-for-bitcoin
+      buyall: what-if-someone-bought-up-all-the-existing-bitcoins
+      bettercurrency: what-if-someone-creates-a-better-digital-currency
+      transactions: transactions
+      tenminutes: why-do-i-have-to-wait-10-minutes
+      fee: how-much-will-the-transaction-fee-be
+      poweredoff: what-if-i-receive-a-bitcoin-when-my-computer-is-powered-off
+      sync: what-does-synchronizing-means-and-why-is-it-so-long
+      mining: mining
+      whatismining: what-is-bitcoin-mining
+      howminingworks: how-does-mining-work
+      miningwaste: isnt-bitcoin-mining-a-waste-of-energy
+      miningsecure: how-does-mining-help-secure-bitcoin
+      miningstart: what-do-i-need-to-start-mining
+      security: security
+      secure: is-bitcoin-secure
+      hacked: hasnt-bitcoin-been-hacked-in-the-past
+      collude: could-users-collude-against-bitcoin
+      quantum: isnt-bitcoin-vulnerable-to-quantum-computing
+      crackedshutdown: cant-bitcoin-be-cracked-or-shutdown
+      help: help
+      morehelp: more-help

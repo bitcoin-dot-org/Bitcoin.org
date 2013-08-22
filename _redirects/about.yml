@@ -1,0 +1,14 @@
+dst: faq
+except:
+  ar: true
+  de: true
+  es: true
+  fa: true
+  fr: true
+  it: true
+  nl: true
+  pl: true
+  ru: true
+  tr: true
+  zh_CN: true
+  zh_TW: true
