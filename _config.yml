@@ -2,6 +2,7 @@ DOWNLOAD_VERSION: 0.8.3
 
 langsorder:
 - id: de
+- id: id
 - id: en
 - id: es
 - id: fr
@@ -22,6 +23,7 @@ langs:
   es: Español
   fa: فارسی
   fr: Français
+  id: Bahasa Indonesia‬
   it: Italiano
   nl: Nederlands
   pl: Polski
