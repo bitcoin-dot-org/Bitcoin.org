@@ -301,6 +301,8 @@ en:
     hardwarewallet: "Hardware wallets"
     hardwarewallettxt: "Hardware wallets are the best balance between very high security and ease of use. They are little devices that are designed from the root to be a wallet and nothing else. No software can be installed on them, making them very secure against computer vulnerabilities and online thieves. Because they can allow backup, you can recover your funds if you lose the device."
     hardwarewalletsoon: "As of today, no hardware wallet has entered in production but they are coming soon:"
+    update: "Keep your software up to date"
+    updatetxt: "Using the latest version of your Bitcoin software allows you to receive important stability and security fixes. Updates can prevent problems of various severity, include new useful features and help keep your wallet safe. Installing updates for all other software on your computer or mobile is also important to keep your wallet environment safer."
     offlinemulti: "Multi-signature to protect against theft"
     offlinemultitxt: "Bitcoin includes a multi-signature feature that allows a transaction to require the signature of more than one private key to be spent. It is however only usable for technical users but a greater availability for this feature can be expected in the future. Multi-signature can allow an organization to give access to its treasury to its members while only allowing a withdrawal if 3 of 5 members sign the transaction. It can also allow future online wallets to share a multi-signature address with their users, so that a thief would need to compromise both your computer and the online wallet servers in order to steal your funds."
     offlinetestament: "Think about your testament"
