@@ -187,7 +187,7 @@ de:
     downloadmac: "Download für Mac OS X"
     downloadsource: "Quellcode"
     versionhistory: "Versionshistorie anzeigen"
-    notelicense: "Bitcoin-Qt is ein gemeinschaftliches <a href=\"http://www.fsf.org/about/what-is-free-software\">freies quelloffenes</a> Projekt und wurde unter der <a href=\"http://creativecommons.org/licenses/MIT/\">MIT Lizenz</a> veröffentlicht."
+    notelicense: "Bitcoin-Qt is ein gemeinschaftliches <a href=\"http://www.fsf.org/about/what-is-free-software\">freies quelloffenes</a> Projekt und wurde unter der <a href=\"http://opensource.org/licenses/mit-license.php\">MIT Lizenz</a> veröffentlicht."
     notesync: "<b>Hinwies</b> : Die erstmalige Initialisierung von Bitcoin-Qt kann einen kompletten Tag dauern. Sie sollten sicher stellen, dass Sie genug Bandbreite und Speicherplatz für die komplette <a href=\"http://blockchain.info/charts/blocks-size\">Größe der Blockkette</a> zur Verfügung haben."
   events:
     title: "Konferenzen und Events - Bitcoin"
@@ -405,7 +405,7 @@ de:
     menu-support-bitcoin: Mitmachen
     menu-vocabulary: Glossar
     menu-you-need-to-know: "Das sollten Sie wissen"
-    footer: "© Bitcoin Project 2009–2013 Veröffentlicht unter der <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">MIT Lizenz</a>"
+    footer: "© Bitcoin Project 2009–2013 Veröffentlicht unter der <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT Lizenz</a>"
     getstarted: "Erste Schritte mit Bitcoin"
   url:
     about: ueber

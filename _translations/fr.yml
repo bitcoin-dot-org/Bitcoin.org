@@ -186,7 +186,7 @@ fr:
     downloadmac: "Télécharger pour Mac OS X"
     downloadsource: "Code source"
     versionhistory: "Voir l'historique des versions"
-    notelicense: "Le logiciel Bitcoin est un <a href=\"http://www.fsf.org/about/what-is-free-software\">logiciel libre</a> développé par la communauté et publié sous la <a href=\"http://creativecommons.org/licenses/MIT/\">licence MIT</a>."
+    notelicense: "Le logiciel Bitcoin est un <a href=\"http://www.fsf.org/about/what-is-free-software\">logiciel libre</a> développé par la communauté et publié sous la <a href=\"http://opensource.org/licenses/mit-license.php\">licence MIT</a>."
     notesync: "<b>Note</b> : La synchronisation initiale peut prendre jusqu'à une journée pour se compléter. Assurez-vous de disposer de suffisamment de bande-passante et d'espace disque pour le téléchargement et le stockage de la <a href=\"http://blockchain.info/charts/blocks-size\">chaîne de blocs</a>."
   events:
     title: "Conférences et événements - Bitcoin"
@@ -404,7 +404,7 @@ fr:
     menu-support-bitcoin: Participer
     menu-vocabulary: Vocabulaire
     menu-you-need-to-know: "Vous devez savoir"
-    footer: "© Bitcoin Project 2009–2013 Publié sous la <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">licence MIT</a>"
+    footer: "© Bitcoin Project 2009–2013 Publié sous la <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licence MIT</a>"
     getstarted: "Débuter avec Bitcoin"
   url:
     about: a-propos

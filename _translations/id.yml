@@ -159,7 +159,7 @@ id:
     downloadmac: "Unduh untuk Mac OS X"
     downloadsource: "Kode sumber"
     versionhistory: "Tampilkan sejarah versi"
-    notelicense: "Bitcoin-Qt adalah proyek yang digerakkan oleh komunitas <a href=\"http://www.fsf.org/about/what-is-free-software\">sumber-terbuka gratis</a>, dirilis dibawah <a href=\"http://creativecommons.org/licenses/MIT/\">lisensi MIT</a>."
+    notelicense: "Bitcoin-Qt adalah proyek yang digerakkan oleh komunitas <a href=\"http://www.fsf.org/about/what-is-free-software\">sumber-terbuka gratis</a>, dirilis dibawah <a href=\"http://opensource.org/licenses/mit-license.php\">lisensi MIT</a>."
     notesync: "<b>Catatan</b> : Sinkronisasi awal Bitcoin-Qt bisa memakan waktu seharian untuk selesai. Anda harus memastikan bahwa Anda memiliki bandwidth dan penyimpanan yang cukup untuk <a href=\"http://blockchain.info/charts/blocks-size\">ukuran rantai-block</a>."
   events:
     title: "Konferensi dan acara - Bitcoin"
@@ -376,7 +376,7 @@ id:
     menu-support-bitcoin: Partisipasi
     menu-vocabulary: Kosa kata
     menu-you-need-to-know: "Yang perlu Anda ketahui"
-    footer: "© Proyek Bitcoin 2009–2013 Dirilis dibawah <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">Lisensi MIT</a>"
+    footer: "© Proyek Bitcoin 2009–2013 Dirilis dibawah <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">Lisensi MIT</a>"
     getstarted: "Memulai dengan Bitcoin"
   url:
     about-us: mengenai-kami

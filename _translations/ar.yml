@@ -207,7 +207,7 @@ ar:
     chanotc: "(تبادل عملات دون طرف وسيط)"
     chanmarket: "(تصريحات مباشرة من ألأسواق)"
     chanmining: "(متعلق بألتنقيب عن ألبت كوين)"
-    linktwitter: "<a href=\"http://twitter.com/#!/search/bitcoin\">ألبحث بألتويتر</a>"
+    linktwitter: "<a href=\"https://twitter.com/search?q=bitcoin\">ألبحث بألتويتر</a>"
     facebook: "<a href=\"https://www.facebook.com/pages/Bitcoin-P2P-Cryptocurrency/134466763256650\">صفحة ألفيسبوك</a> (بألإنكليزية)"
     reddit: "<a href=\"http://www.reddit.com/r/Bitcoin/\">مجتمع ألبت كوين على موقع ريديت</a> (بألإنكليزية)"
   choose-your-wallet:
@@ -266,7 +266,7 @@ ar:
     downloadmac: "تحميل للماك أو.إس X"
     downloadsource: "كود ألمصدر"
     versionhistory: "أظهر تاريخ ألإصدارات"
-    notelicense: "Bitcoin-Qt مشروع <a href=\"http://www.fsf.org/about/what-is-free-software\">مجاني مفتوح ألمصدر</a> مساق لخدمة ألمجتمع منزل تحت <a href=\"http://creativecommons.org/licenses/MIT/\">رخصة MIT</a>."
+    notelicense: "Bitcoin-Qt مشروع <a href=\"http://www.fsf.org/about/what-is-free-software\">مجاني مفتوح ألمصدر</a> مساق لخدمة ألمجتمع منزل تحت <a href=\"http://opensource.org/licenses/mit-license.php\">رخصة MIT</a>."
     notesync: "<b>ملاحظة</b> : ألمزامنة ألأولية ل Bitcoin-Qt قد تتطلب يوم كامل لكي تكمل. يجب أن تتأكد أن لديك قوة شبكة إنترنت و مساحة خزن كافيين لغرض تحصيل <a href=\"http://blockchain.info/charts/blocks-size\">حجم سلسلة مجاميع</a> كامل."
   how-it-works:
     title: "كيف يعمل ألبت كوين؟ - بت كوين"
@@ -292,7 +292,7 @@ ar:
     list3: "أجور معالجة قليلة أو منعدمة"
     list4: "و ألمزيد"
     desc: "ألبت كوين يستخدم تقنية ألنظير للنظير ليعمل بدون سلطة مركزية; إدارة ألمعاملات و إصدار ألبت كوينات تنفذ <b>بشكل جماعي من قبل ألشبكة</b>. من خلال خصائصه ألفريدة ألعديدة, ألبت كوين يسمح بإستخدامات مثيرة لم يكن من ألممكن تغطيتها من قبل أي نظام دفع سابق."
-    license: "ألمكون ألبرمجي هو مشروع <a href=\"http://www.fsf.org/about/what-is-free-software\">مجاني مفتوح ألمصدر</a> مساق بإعتبارات ألمجتمع, و مصدر تحت <a href=\"http://creativecommons.org/licenses/MIT/\">رخصة MIT</a>."
+    license: "ألمكون ألبرمجي هو مشروع <a href=\"http://www.fsf.org/about/what-is-free-software\">مجاني مفتوح ألمصدر</a> مساق بإعتبارات ألمجتمع, و مصدر تحت <a href=\"http://opensource.org/licenses/mit-license.php\">رخصة MIT</a>."
   resources:
     title: "مصادر - بت كوين"
     pagetitle: "مصادر ألبت كوين"
@@ -445,7 +445,7 @@ ar:
     button-wallet: "إختر محفظتك"
     button-know: "تحتاج أن تعلم"
     button-support: "إدعم ألبت كوين"
-    footer: "© Bitcoin Project 2009-2013 Released under the <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">MIT license</a>"
+    footer: "© Bitcoin Project 2009-2013 Released under the <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT license</a>"
   url:
     about: "عن"
     bitcoin-for-developers: "بت-كوين-للمطورين"

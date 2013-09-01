@@ -111,7 +111,7 @@ pl:
     chanmarket: "(Cytaty na żywo z rynku)"
     chanmining: "(Dotyczące wydobycia Bitcoin)"
     linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Społeczność Google+ Bitcoin</a>"
-    linktwitter: "<a href=\"http://twitter.com/#!/search/bitcoin\">Wyszukaj na Twitterze</a>"
+    linktwitter: "<a href=\"https://twitter.com/search?q=bitcoin\">Wyszukaj na Twitterze</a>"
     facebook: "<a href=\"https://www.facebook.com/pages/Bitcoin-P2P-Cryptocurrency/134466763256650\">Strona na Facebook</a>"
     reddit: "<a href=\"http://www.reddit.com/r/Bitcoin/\">Społeczność Reddit's Bitcoin</a>"
     linkmeetup: "<a href=\"http://bitcoin.meetup.com/\">Grupy spotkań Bitcoin</a>"
@@ -173,7 +173,7 @@ pl:
     downloadmac: "Pobierz dla Mac OS X"
     downloadsource: "Kod Źródłowy"
     versionhistory: "Pokaż historię wersji"
-    notelicense: "Aplikacja Bitcoin-QT jest tworzona przez społeczność jako <a href=\"http://www.fsf.org/about/what-is-free-software\">darmowy projekt o otwartym kodzie</a> źródłowym opublikowanym na zasadach <a href=\"http://creativecommons.org/licenses/MIT/\">licencji MIT</a>."
+    notelicense: "Aplikacja Bitcoin-QT jest tworzona przez społeczność jako <a href=\"http://www.fsf.org/about/what-is-free-software\">darmowy projekt o otwartym kodzie</a> źródłowym opublikowanym na zasadach <a href=\"http://opensource.org/licenses/mit-license.php\">licencji MIT</a>."
     notesync: "<b>Uwaga</b> : Początkowa synchronizacja Bitcoin-Qt może trwać dzień zanim zostanie ukończona. Upewnij się, że posiadasz wystarczająco pasma internetowego oraz przestrzeni dyskowej na <a href=\"http://blockchain.info/charts/blocks-size\">łańcuch bloku o pełnym rozmiarze</a>."
   events:
     title: "Konferencje i wydarzenia - Bitcoin"
@@ -206,7 +206,7 @@ pl:
     list3: "Transakcje niemalże bez opłat"
     list4: "I wiele więcej"
     desc: "Bitcoin używa technologi P2P by operować bez centralnej administracji; zarządzanie transakcjami oraz wydawanie bitcoin jest <b>współprowadzone przez sieć</b>. Poprzez wiele unikalnych właściwości Bitcoin pozwala na ekscytujące zastosowania które nie mogły być pokryte poprzez uprzednie systemy płatności."
-    license: "Aplikacja jest tworzona przez społeczność jako <a href=\"http://www.fsf.org/about/what-is-free-software\">darmowy projekt o otwartym kodzie</a> źródłowym opublikowanym na zasadach <a href=\"http://creativecommons.org/licenses/MIT/\">licencji MIT</a>."
+    license: "Aplikacja jest tworzona przez społeczność jako <a href=\"http://www.fsf.org/about/what-is-free-software\">darmowy projekt o otwartym kodzie</a> źródłowym opublikowanym na zasadach <a href=\"http://opensource.org/licenses/mit-license.php\">licencji MIT</a>."
   innovation:
     title: "Innowacje - Bitcoin"
     pagetitle: "Dlaczego Bitcoin zmienia świat"
@@ -387,7 +387,7 @@ pl:
     button-wallet: "Wybierz swój portfel"
     button-know: "Powinieneś wiedzieć"
     button-support: "Wesprzyj Bitcoin"
-    footer: "© Projekt Bitcoin 2009–2013 Dostępny w ramach <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">licencji MIT</a>"
+    footer: "© Projekt Bitcoin 2009–2013 Dostępny w ramach <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licencji MIT</a>"
   url:
     about: o
     about-us: o-nas

@@ -186,7 +186,7 @@ en:
     downloadmac: "Download for Mac OS X"
     downloadsource: "Source code"
     versionhistory: "Show version history"
-    notelicense: "Bitcoin-Qt is a community-driven <a href=\"http://www.fsf.org/about/what-is-free-software\">free open-source</a> project, released under the <a href=\"http://creativecommons.org/licenses/MIT/\">MIT license</a>."
+    notelicense: "Bitcoin-Qt is a community-driven <a href=\"http://www.fsf.org/about/what-is-free-software\">free open-source</a> project, released under the <a href=\"http://opensource.org/licenses/mit-license.php\">MIT license</a>."
     notesync: "<b>Note</b> : Bitcoin-Qt initial sync can take a day to complete. You should make sure that you have enough bandwidth and storage for the full <a href=\"http://blockchain.info/charts/blocks-size\">blockchain size</a>."
   events:
     title: "Conferences and events - Bitcoin"
@@ -406,7 +406,7 @@ en:
     menu-support-bitcoin: Participate
     menu-vocabulary: Vocabulary
     menu-you-need-to-know: "You need to know"
-    footer: "© Bitcoin Project 2009–2013 Released under the <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">MIT license</a>"
+    footer: "© Bitcoin Project 2009–2013 Released under the <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT license</a>"
     getstarted: "Get started with Bitcoin"
   url:
     about: about

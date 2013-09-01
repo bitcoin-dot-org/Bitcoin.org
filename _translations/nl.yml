@@ -207,7 +207,7 @@ nl:
     chanotc: "(Over The Counter uitwisseling)"
     chanmarket: "(Live quotes van verschillende markten)"
     chanmining: "(Over Bitcoin-delven)"
-    linktwitter: "<a href=\"http://twitter.com/#!/search/bitcoin\">Zoek op Twitter</a>"
+    linktwitter: "<a href=\"https://twitter.com/search?q=bitcoin\">Zoek op Twitter</a>"
     facebook: "<a href=\"https://www.facebook.com/pages/Bitcoin-P2P-Cryptocurrency/134466763256650\">Facebookpagina</a>"
     reddit: "<a href=\"http://www.reddit.com/r/Bitcoin/\">Bitcoin-community op Reddit</a>"
   choose-your-wallet:
@@ -266,7 +266,7 @@ nl:
     downloadmac: "Download voor Mac OS X"
     downloadsource: "Broncode"
     versionhistory: "Toon versiegeschiedenis"
-    notelicense: "Bitcoin-Qt is een  <a href=\"http://www.fsf.org/about/what-is-free-software\">\"vrij\"<a> open source project dat wordt ontwikkeld door de gemeenschap en verspreid onder de <a href=\"http://creativecommons.org/licenses/MIT/\">MIT-licentie</a>."
+    notelicense: "Bitcoin-Qt is een  <a href=\"http://www.fsf.org/about/what-is-free-software\">\"vrij\"<a> open source project dat wordt ontwikkeld door de gemeenschap en verspreid onder de <a href=\"http://opensource.org/licenses/mit-license.php\">MIT-licentie</a>."
     notesync: "<b>N.B.</b> : De initiële synchronisatie van Bitcoin-Qt kan wel een dag duren. Zorg ervoor dat u genoeg bandbreedte en opslagruimte hebt voor <a href=\"http://blockchain.info/charts/blocks-size\">de hele blokketen</a>."
   how-it-works:
     title: "Hoe werkt Bitcoin? - Bitcoin"
@@ -292,7 +292,7 @@ nl:
     list3: "Lage of geen transactiekosten"
     list4: "En nog veel meer"
     desc: "Bitcoin gebruikt peer-to-peer-technologie om zonder centrale instantie te kunnen werken; het verwerken van transacties en het uitgeven van Bitcoins gebeurt <b>collectief door het hele netwerk</b>. Dankzij haar unieke eigenschappen staat Bitcoin vele nieuwe gebruiksmogelijkheden toe die tot nog toe niet mogelijk waren met andere betalingssystemen."
-    license: "Deze software is een  <a href=\"http://www.fsf.org/about/what-is-free-software\">vrij<a> open source project dat wordt ontwikkeld door de gemeenschap en verspreid onder de <a href=\"http://creativecommons.org/licenses/MIT/\">MIT-licentie</a>."
+    license: "Deze software is een  <a href=\"http://www.fsf.org/about/what-is-free-software\">vrij<a> open source project dat wordt ontwikkeld door de gemeenschap en verspreid onder de <a href=\"http://opensource.org/licenses/mit-license.php\">MIT-licentie</a>."
   resources:
     title: "Hulpmiddelen - Bitcoin"
     pagetitle: "Hulpmiddelen voor Bitcoin"
@@ -445,7 +445,7 @@ nl:
     button-wallet: Kies uw portemonnee
     button-know: Wat u moet weten
     button-support: Help Bitcoin
-    footer: © Bitcoin Project 2009–2013 Beschikbaar onder de <a href=\"http://creativecommons.org/licenses/MIT/" target="_blank\">MIT-licentie</a>
+    footer: © Bitcoin Project 2009–2013 Beschikbaar onder de <a href=\"http://opensource.org/licenses/mit-license.php" target="_blank\">MIT-licentie</a>
   url:
     about: over-bitcoin
     bitcoin-for-developers: bitcoin-voor-ontwikkelaars

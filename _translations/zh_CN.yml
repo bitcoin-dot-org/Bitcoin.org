@@ -187,7 +187,7 @@ zh_CN:
     downloadmac: "下载适用于Mac OS X的版本"
     downloadsource: "源代码"
     versionhistory: "显示版本历史"
-    notelicense: "Bitcoin-Qt客户端是一个由社区驱动的<a href=\"http://www.fsf.org/about/what-is-free-software\">自由开源</a>项目，基于<a href=\"http://creativecommons.org/licenses/MIT/\">MIT协议</a>授权发布。"
+    notelicense: "Bitcoin-Qt客户端是一个由社区驱动的<a href=\"http://www.fsf.org/about/what-is-free-software\">自由开源</a>项目，基于<a href=\"http://opensource.org/licenses/mit-license.php\">MIT协议</a>授权发布。"
     notesync: "<b>注意</b>：Bitcoin-Qt客户端第一次同步可能要花上一整天的时间才能完成。应确保你有足够的带宽和磁盘空间存储完整的<a href=\"http://blockchain.info/charts/blocks-size\">块链</a>。"
   events:
     title: "会议和活动 - 比特币"
@@ -405,7 +405,7 @@ zh_CN:
     menu-support-bitcoin: 参与
     menu-vocabulary: 词汇表
     menu-you-need-to-know: "注意事项"
-    footer: "© Bitcoin项目 2009–2013  基于<a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">MIT协议</a>授权发布"
+    footer: "© Bitcoin项目 2009–2013  基于<a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT协议</a>授权发布"
     getstarted: "比特币入门指南"
   url:
     about: about

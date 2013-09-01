@@ -185,7 +185,7 @@ tr:
     downloadmac: "Mac OS X için indir"
     downloadsource: "Kaynak kodu"
     versionhistory: "Yazılım tarihini göster"
-    notelicense: "Bitcoin-Qt <a href=\"http://creativecommons.org/licenses/MIT/\">MIT lisansı</a> ile yayımlanan toplumsal <a href=\"http://www.fsf.org/about/what-is-free-software\">ücretsiz açık-kaynak</a> bir proje."
+    notelicense: "Bitcoin-Qt <a href=\"http://opensource.org/licenses/mit-license.php\">MIT lisansı</a> ile yayımlanan toplumsal <a href=\"http://www.fsf.org/about/what-is-free-software\">ücretsiz açık-kaynak</a> bir proje."
     notesync: "<b>Not</b> : Bitcoin-Qt'nin ilk senkronizasyonu bir gün kadar sürebilir. Tüm <a href=\"http://blockchain.info/charts/blocks-size\">blok zinciri boyuna</a> yetecek kadar boş alanınız ve bant genişliğiniz olduğundan emin olun."
   events:
     title: "Konferanslar ve etkinlikler - Bitcoin"
@@ -411,7 +411,7 @@ tr:
     menu-support-bitcoin: Katılın
     menu-vocabulary: Kelime bilgisi
     menu-you-need-to-know: "Bilmeniz gerekenler"
-    footer: "© Bitcoin Projesi 2009–2013 <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">MIT lisansı</a> altında yayılmaktadır"
+    footer: "© Bitcoin Projesi 2009–2013 <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT lisansı</a> altında yayılmaktadır"
     getstarted: "Bitcoin'e başlayın"
   url:
     about: hakkinda

@@ -207,7 +207,7 @@ it:
     chanotc: "(Discussioni riguardo gli scambi su Over The Counter)"
     chanmarket: "(Quotazioni in tempo reale dai mercati)"
     chanmining: "(Discussioni sul mining di Bitcoin)"
-    linktwitter: "<a href=\"http://twitter.com/#!/search/bitcoin\">Ricerca Twitter</a>"
+    linktwitter: "<a href=\"https://twitter.com/search?q=bitcoin\">Ricerca Twitter</a>"
     facebook: "<a href=\"https://www.facebook.com/pages/Bitcoin-P2P-Cryptocurrency/134466763256650\">Pagina Facebook</a>"
     reddit: "<a href=\"http://www.reddit.com/r/Bitcoin/\">Comunità Bitcoin su Reddit</a>"
   choose-your-wallet:
@@ -445,7 +445,7 @@ it:
     button-wallet: "Scegli il tuo portafoglio"
     button-know: "Da sapere"
     button-support: "Sostieni Bitcoin"
-    footer: "© Bitcoin Project 2009–2013 Rilasciato sotto <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">licenza MIT</a>"
+    footer: "© Bitcoin Project 2009–2013 Rilasciato sotto <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licenza MIT</a>"
   url:
     about: "a-proposito"
     bitcoin-for-developers: "bitcoin-per-sviluppatori"
