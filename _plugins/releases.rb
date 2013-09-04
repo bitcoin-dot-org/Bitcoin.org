@@ -17,6 +17,10 @@ module Jekyll
         self.data['redirect'] = dst.gsub('.md','')
       else
         self.data['category'] = 'release'
+        if !site.config.has_key?('DOWNLOAD_DATE') or site.config['DOWNLOAD_DATE'] < year + '-' + month + '-' + day
+          site.config['DOWNLOAD_DATE'] = year + '-' + month + '-' + day
+          site.config['DOWNLOAD_VERSION'] = dst.gsub('.md','').gsub(/[a-z]/,'')
+        end
         site.pages << ReleasePage.new(site, base, lang, srcdir, src, '/releases/' + year + '/' + month + '/' + day, dst, year, month, day)
       end
     end
