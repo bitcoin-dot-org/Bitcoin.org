@@ -28,6 +28,13 @@ id: development
   <li>Gregory Maxwell - <a href="mailto:greg@xiph.org">greg@xiph.org</a> - <a href="/gmaxwell.asc">PGP</a></li>
 </ul>
 
+{% case page.lang %}
+{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+<h2>{% translate disclosure %}</h2>
+<p>{% translate disclosuretxt %}</p>
+{% endcase %}
+
 <h2>{% translate involve %}</h2>
 {% case page.lang %}
 {% when 'es' %}
