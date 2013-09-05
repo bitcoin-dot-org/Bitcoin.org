@@ -3,13 +3,13 @@ layout: base
 id: community
 ---
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'pl' or 'ru' or 'zh_TW' %}
+{% when 'ar' or 'es' or 'fa' or 'it' or 'pl' or 'ru' or 'zh_TW' %}
 
 <h1>{% translate pagetitle %}</h1>
 <ul class="resourcesold">
 <li>{% translate foundation %}</li>
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
+{% when 'ar' or 'es' or 'fa' or 'it' or 'ru' %}
 {% else %}
 <li>{% translate wikiportal %}</li>
 {% endcase %}
@@ -31,7 +31,7 @@ id: community
   </ul>
 </li>
 {% case page.lang %}
-{% when 'ar' or 'es' or 'it' or 'nl' or 'ru' %}
+{% when 'ar' or 'es' or 'it' or 'ru' %}
 {% else %}
 <li>{% translate linkgoogle %}</li>
 {% endcase %}
@@ -39,7 +39,7 @@ id: community
 <li>{% translate facebook %}</li>
 <li>{% translate reddit %}</li>
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
+{% when 'ar' or 'es' or 'fa' or 'it' or 'ru' %}
 {% else %}
 <li>{% translate linkmeetup %}</li>
 {% endcase %}
