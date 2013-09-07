@@ -166,6 +166,8 @@ tr:
     speclink2: "<a href=\"https://en.bitcoin.it/wiki/Protocol_rules\">Protocol kuralları</a>"
     speclink3: "<a href=\"https://en.bitcoin.it/wiki/Category:Technical\">Bitcoin Viki</a>"
     coredev: "Ana geliştiriciler"
+    disclosure: "Sorumlu ifşa"
+    disclosuretxt: "Bitcoin'de bir güvenlik açığı bulursanız, çok önemli olmayanlarını İngilizce bir e-postayla ana geliştiricilerden birine veya özel <a href=\"mailto:bitcoin-security@lists.sourceforge.net\">bitcoin-security@lists.sourceforge.net</a> e-posta listesine bildirebilirsiniz. Önemli olmayan güvenlik açıklarına örnek olarak yapılması pahalı hizmet engelleme saldırıları verilebilir. Şifresiz e-postayla gönderilemeyecek kadar ciddi güvenlik açıkları ise bir veya birden fazla ana geliştiriciye PGP anahtarı(ları)yla şifrelenmiş bir e-postayla bildirilmelidir."
     involve: "Siz de katılın"
     involvetxt1: "Bitcoin geliştirimi açık kaynaktır ve herhangi bir geliştirici projeye katkı sağlayabilir. Gerek duyacağınız her şey <a href=\"https://github.com/bitcoin/bitcoin\">Github havuzundadır</a>. Lütfen BENİOKU'daki geliştirme sürecini okuyun ve takip edin, kaliteli kod sağlayın ve bütün yönergelere uyun."
     involvetxt2: "Geliştirme tartışmaları github'da ve sourceforge'da <a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">bitcoin-geliştirme</a> e-posta listesinde gerçekleşir. Daha az resmi tartışmalar ise irc.freedode.net #bitcoin-dev (&rarr;<a href=\"#\" onclick=\"freenodeShow(event);\" />web arayüzündedir</a>; <a href=\"http://bitcoinstats.com\">logs</a>)."
