@@ -5,6 +5,13 @@ id: secure-your-wallet
 <h1>{% translate pagetitle %}</h1>
 <p class="summarytxt">{% translate summary %}</p>
 
+{% case page.lang %}
+{% when 'ar' or 'es' or 'fa' or 'it' or 'pl' or 'ru' or 'zh_TW' %}
+{% else %}
+<h2>{% translate everyday %}</h2>
+<p>{% translate everydaytxt %}</p>
+{% endcase %}
+
 <h2>{% translate online %}</h2>
 <p>{% translate onlinetxt %}</p>
 
@@ -55,7 +62,7 @@ id: secure-your-wallet
 </div>
 
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
+{% when 'ar' or 'es' or 'fa' or 'it' or 'ru' %}
 {% else %}
 <br>
 <div class="box boxexpand">
@@ -69,11 +76,15 @@ ButterflyLabs BitSafe
 </div>
 {% endcase %}
 
+{% case page.lang %}
+{% when 'ar' or 'es' or 'fa' or 'it' or 'pl' or 'ru' or 'zh_TW' %}
+{% else %}
+<h2>{% translate update %}</h2>
+<p>{% translate updatetxt %}</p>
+{% endcase %}
+
 <h2>{% translate offlinemulti %}</h2>
 <p>{% translate offlinemultitxt %}</p>
-
-<h2>{% translate offlinemobile %}</h2>
-<p>{% translate offlinemobiletxt %}</p>
 
 <h2>{% translate offlinetestament %}</h2>
 <p>{% translate offlinetestamenttxt %}</p>

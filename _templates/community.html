@@ -3,13 +3,13 @@ layout: base
 id: community
 ---
 {% case page.lang %}
-{% when 'ar' or 'de' or 'es' or 'fa' or 'it' or 'nl' or 'pl' or 'ru' or 'zh_TW' %}
+{% when 'ar' or 'es' or 'fa' or 'it' or 'pl' or 'ru' or 'zh_TW' %}
 
 <h1>{% translate pagetitle %}</h1>
 <ul class="resourcesold">
 <li>{% translate foundation %}</li>
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
+{% when 'ar' or 'es' or 'fa' or 'it' or 'ru' %}
 {% else %}
 <li>{% translate wikiportal %}</li>
 {% endcase %}
@@ -23,8 +23,6 @@ id: community
     <li><strong>#bitcoin-market</strong> {% translate chanmarket %}</li>
     <li><strong>#bitcoin-mining</strong> {% translate chanmining %}</li>
     {% case page.lang %}
-    {% when 'fr' %}
-    <li><strong>#bitcoin-fr</strong> (Le Bitcoin en général, français)</li>
     {% when 'es' %}
     <li><strong>#bitcoin-ar</strong> (Comunidad Bitcoin Argentina)</li>
     <li><strong>#bitcoin-es</strong> (Comunidad Bitcoin en español)</li>
@@ -33,7 +31,7 @@ id: community
   </ul>
 </li>
 {% case page.lang %}
-{% when 'ar' or 'es' or 'it' or 'nl' or 'ru' %}
+{% when 'ar' or 'es' or 'it' or 'ru' %}
 {% else %}
 <li>{% translate linkgoogle %}</li>
 {% endcase %}
@@ -41,7 +39,7 @@ id: community
 <li>{% translate facebook %}</li>
 <li>{% translate reddit %}</li>
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
+{% when 'ar' or 'es' or 'fa' or 'it' or 'ru' %}
 {% else %}
 <li>{% translate linkmeetup %}</li>
 {% endcase %}
@@ -66,11 +64,10 @@ id: community
     <p>{% translate bitcointalk %}</p>
     <p><a href="http://www.reddit.com/r/Bitcoin/">{% translate reddit %}</a></p>
     <p><a href="http://bitcoin.stackexchange.com/">{% translate stackexchange %}</a></p>
-  </div>
-  <div>
+  </div><div>
     <h2><img src="/img/ico_network.svg" class="titleicon" alt="Icon">{% translate social %}</h2>
     <p>{% translate linkgoogle %}</p>
-    <p><a href="http://twitter.com/#!/search/bitcoin">{% translate linktwitter %}</a></p>
+    <p><a href="https://twitter.com/search?q=bitcoin">{% translate linktwitter %}</a></p>
     <p>{% translate facebook %}</p>
   </div>
 </div>
@@ -81,8 +78,7 @@ id: community
     <p><a href="http://bitcoin.meetup.com/">{% translate meetupgroup %}</a></p>
     <p><a href="https://bitcointalk.org/index.php?board=86.0">{% translate meetupbitcointalk %}</a></p>
     <p><a href="https://en.bitcoin.it/wiki/Meetups">{% translate meetupwiki %}</a></p>
-  </div>
-  <div>
+  </div><div>
     <h2><img src="/img/ico_help.svg" class="titleicon" alt="Icon">{% translate irc %}</h2>
     <p>{% translate ircjoin %}</p>
     <p>#bitcoin {% translate chanbitcoin %}</li>

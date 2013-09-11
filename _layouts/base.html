@@ -13,7 +13,7 @@ menu:
 - id: about
 ---
 {% case page.lang %}
-{% when 'ar' or 'de' or 'es' or 'fa' or 'it' or 'nl' or 'pl' or 'ru' or 'zh_TW' %}
+{% when 'ar' or 'es' or 'fa' or 'it' or 'pl' or 'ru' or 'zh_TW' %}
 
 <!DOCTYPE HTML>
 <html lang="{{ page.lang }}">
@@ -21,6 +21,7 @@ menu:
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta property="og:image" content="http://bitcoin.org/img/opengraph.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="robots" content="NOODP">
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
 {% lesscss main.less %}
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
@@ -54,7 +55,7 @@ menu:
     <a href="#" id="menumobile" onclick="mobileshow(event);"></a>
 
     {% case page.lang %}
-    {% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
+    {% when 'ar' or 'es' or 'fa' or 'it' or 'ru' %}
 
     <ul id="menufor">
     {% for link in page.menufor %}{% assign id = link.id%}{% capture url %}/{{ page.lang }}/{% translate {{id}} url %}{% endcapture %}
@@ -114,7 +115,7 @@ menu:
     <div id="footer"><div>
     <a href="/en/alerts">Network Status</a>
     {% case page.lang %}
-    {% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'ru' %}
+    {% when 'ar' or 'es' or 'fa' or 'it' or 'ru' %}
     {% else %}
     <a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a>
     {% endcase %}
@@ -188,7 +189,11 @@ menu:
       </li>
       <li{% if page.id == 'innovation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate innovation url %}">{% translate menu-innovation layout %}</a></li>
       <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a></li>
+      {% case page.lang %}
+      {% when 'ar' or 'de' or 'en' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
       <li{% if page.id == 'about' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate about url %}">{% translate menu-about layout %}</a></li>
+      {% else %}
+      {% endcase %}
     </ul>
   </div></div>
   <div id="body">

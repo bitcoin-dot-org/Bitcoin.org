@@ -207,7 +207,7 @@ es:
     chanotc: "(Sobre el mercado extrabursátil, en inglés)"
     chanmarket: "(Cotizaciones de los mercados en tiempo real, en inglés)"
     chanmining: "(Relacionado con la minería Bitcoin, en inglés)"
-    linktwitter: "<a href=\"http://twitter.com/#!/search/bitcoin\">Buscar en Twitter</a>"
+    linktwitter: "<a href=\"https://twitter.com/search?q=bitcoin\">Buscar en Twitter</a>"
     facebook: "<a href=\"https://www.facebook.com/pages/Bitcoin-P2P-Cryptocurrency/134466763256650\">Página de Facebook</a>"
     reddit: "<a href=\"http://www.reddit.com/r/Bitcoin/\">Comunidad Bitcoin en Reddit</a>"
   choose-your-wallet:
@@ -266,7 +266,7 @@ es:
     downloadmac: "Descargar para Mac OS X"
     downloadsource: "Código fuente"
     versionhistory: "Mostrar historial de versiones"
-    notelicense: "Bitcoin-Qt es un proyecto <a href=\"http://www.fsf.org/about/what-is-free-software\">gratuito de código abierto</a> impulsado por la comunidad, liberado bajo la licencia <a href=\"http://creativecommons.org/licenses/MIT/\">MIT</a>."
+    notelicense: "Bitcoin-Qt es un proyecto <a href=\"http://www.fsf.org/about/what-is-free-software\">gratuito de código abierto</a> impulsado por la comunidad, liberado bajo la licencia <a href=\"http://opensource.org/licenses/mit-license.php\">MIT</a>."
     notesync: "<b>Nota</b> : Inicialmente Bitcoin-Qt se sincroniza y puede tardar un día para terminar. Usted debe asegurarse de tener suficiente ancho de banda y almacenamiento para bajar todas las <a href=\"http://blockchain.info/charts/blocks-size\">cadena de bloques</a>."
   how-it-works:
     title: "¿Cómo funciona Bitcoin? - Bitcoin"
@@ -292,13 +292,13 @@ es:
     list3: "Bajos o cero costos de procesamiento"
     list4: "Y mucho más"
     desc: "Bitcoin utiliza tecnología punto a punto para operar sin una autoridad central; gestionando las transacciones y la emisión de Bitcoins que se llevan a cabo <b>conjuntamente por la red</b>. A través de muchas de sus propiedades únicas, Bitcoin permite usos interesantes que no pueden ser cubiertos por otros sistemas de pago."
-    license: "El software es un proyecto <a href=\"http://www.fsf.org/about/what-is-free-software\">libre de código abierto</a>, impulsado por la comunidad y liberado bajo la <a href=\"http://creativecommons.org/licenses/MIT/\">licencia MIT</a>."
+    license: "El software es un proyecto <a href=\"http://www.fsf.org/about/what-is-free-software\">libre de código abierto</a>, impulsado por la comunidad y liberado bajo la <a href=\"http://opensource.org/licenses/mit-license.php\">licencia MIT</a>."
   resources:
     title: "Recursos - Bitcoin"
     pagetitle: "Recursos de Bitcoin"
     linkweusecoins: "<a href=\"http://www.weusecoins.com\">We Use Coins. comenza aquí!</a>"
     linkwallets: "<a href=\"#choose-your-wallet#\">Monederos Bitcoin</a>"
-    linkwiki: "<a href=\"https://es.bitcoin.it/wiki/Main_Page\">Wiki de Bitcoin</a>"
+    linkwiki: "<a href=\"https://es.bitcoin.it/\">Wiki de Bitcoin</a>"
     linkwikifaq: "<a href=\"https://bitcoin.it/wiki/FAQ\">Preguntas más frecuentes</a>"
     linkwikisites: "<a href=\"https://bitcoin.it/wiki/Trade\">Sitios que aceptan Bitcoin</a>"
     linkwikimerchant: "<a href=\"https://en.bitcoin.it/wiki/Merchant_Howto\">Como hacer para Comerciantes</a>"
@@ -445,7 +445,7 @@ es:
     button-wallet: "Elige tu monedero"
     button-know: "Debes saber"
     button-support: "Apoya Bitcoin"
-    footer: "© Bitcoin Project 2009–2013 Publicado bajo la <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">licencia MIT</a>"
+    footer: "© Bitcoin Project 2009–2013 Publicado bajo la <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licencia MIT</a>"
   url:
     about: acerca-de
     bitcoin-for-developers: bitcoin-para-desarrolladores

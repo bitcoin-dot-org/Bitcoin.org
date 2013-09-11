@@ -112,7 +112,7 @@ fa:
     chanmarket: "(نقل قول زنده از بازارها)"
     chanmining: "(چیز های مرتبط با استخراج بیت کوین)"
     linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Google+ انجمن بیت کوین</a>"
-    linktwitter: "<a href=\"http://twitter.com/#!/search/bitcoin\">جست و جوی Twitter</a>"
+    linktwitter: "<a href=\"https://twitter.com/search?q=bitcoin\">جست و جوی Twitter</a>"
     facebook: "<a href=\"https://www.facebook.com/pages/Bitcoin-P2P-Cryptocurrency/134466763256650\">صفحه Facebook</a>"
     reddit: "<a href=\"http://www.reddit.com/r/Bitcoin/\">انجمن بیت کوین Reddit</a>"
   choose-your-wallet:
@@ -171,7 +171,7 @@ fa:
     downloadmac: "دانلود برای Mac OS X"
     downloadsource: "کد منبع"
     versionhistory: "نمایش تاریخچه ی نسخه"
-    notelicense: "Bitcoin-Qt یک پروژه ی <a href=\"http://www.fsf.org/about/what-is-free-software\">متن باز رایگان</a> جامعه-محور است که تحت <a href=\"http://creativecommons.org/licenses/MIT/\"> گواهی نامه ی  MIT</a> منتشر شده است."
+    notelicense: "Bitcoin-Qt یک پروژه ی <a href=\"http://www.fsf.org/about/what-is-free-software\">متن باز رایگان</a> جامعه-محور است که تحت <a href=\"http://opensource.org/licenses/mit-license.php\"> گواهی نامه ی  MIT</a> منتشر شده است."
     notesync: "<b>توجه</b>: همگام سازی اولیه ی Bitcoin-Qt می تواند برای کامل شدن یک روز به طول انجامد. شما باید مطمئن شوید که پهنای باند و حافظه کافی برای کل <a href=\"http://blockchain.info/charts/blocks-size\"> سایز blockchain</a>  دارید."
   how-it-works:
     title: "بیت کوین چگونه کار می کند؟ - بیت کوین"
@@ -197,7 +197,7 @@ fa:
     list3: "هزینه های پردازش کم ویا صفر"
     list4: "و قابلیت های خیلی بیشتر"
     desc: "بیت کوین از تکنولوژی نظیر به نظیر برای انجام عمل بدون هیچ قدرت مرکزی استفاده می کند;مدیریت معاملات و صدور بیت کوین <b>جمعی توسط شبکه انجام می شود.</b>از طریق بسیاری از ویژگی های منجصر به فرد آن،بیت کوین اجازه  استفاده های موجودی را میدهد که  توسط سیستم های پرداخت قبلی به هیچ عنوان قابل پوشش و پاسخ دهی نبود."
-    license: "این یک نرم افزار جامعه محور است<a href=\"http://www.fsf.org/about/what-is-free-software\">رایگان و متن باز</a>این پروژه تحت گواهینامه ی<a href=\"http://creativecommons.org/licenses/MIT/\">MIT</a> منتشر شده."
+    license: "این یک نرم افزار جامعه محور است<a href=\"http://www.fsf.org/about/what-is-free-software\">رایگان و متن باز</a>این پروژه تحت گواهینامه ی<a href=\"http://opensource.org/licenses/mit-license.php\">MIT</a> منتشر شده."
   resources:
     title: "منابع - بیت کوین"
     pagetitle: "منابع بیت کوین"
@@ -350,7 +350,7 @@ fa:
     button-wallet: "انتخاب کیف پول"
     button-know: "آن چه باید بدانید"
     button-support: "حمایت از بیت کوین"
-    footer: "© پروژه بیت کوین 2013-2009 منتشر شده تحت <a href=\"http://creativecommons.org/licenses/MIT/\" target=\"_blank\">MIT گواهینامه</a>"
+    footer: "© پروژه بیت کوین 2013-2009 منتشر شده تحت <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT گواهینامه</a>"
   url:
     about: درباره
     bitcoin-for-developers: بیت-کوین-برای-توسعه-دهندگان

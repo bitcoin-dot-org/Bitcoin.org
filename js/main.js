@@ -60,23 +60,22 @@ for(var i=0,nd=document.getElementsByTagName('*'),n=nd.length;i<n;i++){
 
 
 function walletshow(e){
-for(var i=0,nd=document.getElementsByTagName('*'),n=nd.length;i<n;i++){
-	if(nd[i].getAttribute('data-id')===null||nd[i].getAttribute('data-id')=='')continue;
-	var d=nd[i].getElementsByTagName('DIV')[0];
-	var s=document.getElementById(nd[i].getAttribute('data-id')).getElementsByTagName('DIV')[0];
-	d.getElementsByTagName('H2')[0].innerHTML=s.getElementsByTagName('H2')[0].innerHTML;
-	d.getElementsByTagName('SPAN')[0].innerHTML=s.getElementsByTagName('SPAN')[0].innerHTML;
-	d.getElementsByTagName('P')[0].innerHTML=s.getElementsByTagName('P')[0].innerHTML;
-	d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].innerHTML=s.getElementsByTagName('P')[1].getElementsByTagName('A')[0].innerHTML;
-	d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].href=s.getElementsByTagName('P')[1].getElementsByTagName('A')[0].href;
-	d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].onclick='';
-	d.className='';
-	//Workaround for browsers that don't handle re-rendering class styles and svg (they have backgroundImage hardcoded in HTML)
-	for(var ii=0,nn=d.childNodes.length;ii<nn;ii++){if(d.childNodes[ii].nodeType==1&&d.childNodes[ii].style.backgroundImage!='')d.childNodes[ii].style.backgroundImage=d.childNodes[ii].style.backgroundImage.replace('bubblewarn','bubble');}
-	for(var ii=0,as=d.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==d.parentNode){var dd=as[ii];break;}}
-	for(var ii=0,as=s.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==s.parentNode){var ss=as[ii];break;}}
-	dd.innerHTML=ss.innerHTML;
-}
+var t=getEventTarget(e);
+while(t.getAttribute('data-id')===null||t.getAttribute('data-id')=='')t=t.parentNode;
+var d=t.getElementsByTagName('DIV')[0];
+var s=document.getElementById(t.getAttribute('data-id')).getElementsByTagName('DIV')[0];
+d.getElementsByTagName('H2')[0].innerHTML=s.getElementsByTagName('H2')[0].innerHTML;
+d.getElementsByTagName('SPAN')[0].innerHTML=s.getElementsByTagName('SPAN')[0].innerHTML;
+d.getElementsByTagName('P')[0].innerHTML=s.getElementsByTagName('P')[0].innerHTML;
+d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].innerHTML=s.getElementsByTagName('P')[1].getElementsByTagName('A')[0].innerHTML;
+d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].href=s.getElementsByTagName('P')[1].getElementsByTagName('A')[0].href;
+d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].onclick='';
+d.className='';
+//Workaround for browsers that don't handle re-rendering class styles and svg (they have backgroundImage hardcoded in HTML)
+for(var ii=0,nn=d.childNodes.length;ii<nn;ii++){if(d.childNodes[ii].nodeType==1&&d.childNodes[ii].style.backgroundImage!='')d.childNodes[ii].style.backgroundImage=d.childNodes[ii].style.backgroundImage.replace('bubblewarn','bubble').replace('bubbleinfo','bubble');}
+for(var ii=0,as=d.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==d.parentNode){var dd=as[ii];break;}}
+for(var ii=0,as=s.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==s.parentNode){var ss=as[ii];break;}}
+dd.innerHTML=ss.innerHTML;
 cancelEvent(e);
 }
 

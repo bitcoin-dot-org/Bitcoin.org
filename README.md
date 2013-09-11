@@ -12,7 +12,6 @@ Installing dependencies on older Ubuntu and Debian distributions
 
 # Usage
 
-* update DOWNLOAD\_VERSION in _config.yml
 * run jekyll
 * output will be in \_site/
 
@@ -102,7 +101,7 @@ More information will follow.
 
 ### Release Notes
 
-Release notes should be placed in `_releases/YYYY-MM-DD-SHORTTITLE.md` and adhere to this format:
+Release notes should be placed in `_releases/YYYY-MM-DD-VERSION.md` and adhere to this format:
 
 ```
 ---
@@ -115,7 +114,7 @@ Bitcoin v0.3.24 is now available for download at
 
 ...
 ```
-* `SHORTTITLE` is used to construct the URL. Something like `v0.3.24` will be fine
+* `VERSION` is used to define the version and construct the URL. It should adhere to this format: `v0.3.24`.
 * `title: ...` will be used as the title
 * `src: ...` (optional) link to full annoucement
 
