@@ -4,7 +4,7 @@ id: development
 ---
 <h1>{% translate pagetitle %}</h1>
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'it' or 'pl' or 'ru' or 'zh_TW' %}
+{% when 'ar' or 'es' or 'fa' or 'pl' or 'ru' or 'zh_TW' %}
 {% else %}
 <p class="summary">{% translate summary %}</p>
 {% endcase %}
@@ -29,7 +29,7 @@ id: development
 </ul>
 
 {% case page.lang %}
-{% when 'ar' or 'de' or 'es' or 'fa' or 'id' or 'it' or 'pl' or 'ru' or 'zh_CN' or 'zh_TW' %}
+{% when 'ar' or 'de' or 'es' or 'fa' or 'id' or 'pl' or 'ru' or 'zh_CN' or 'zh_TW' %}
 {% else %}
 <h2>{% translate disclosure %}</h2>
 <p>{% translate disclosuretxt %}</p>
@@ -39,8 +39,6 @@ id: development
 {% case page.lang %}
 {% when 'es' %}
 <p>El desarrollo de Bitcoin es de código abierto y cualquier desarrollador puede contribuir al proyecto. Todo lo que necesitas está en el <a href="https://github.com/bitcoin/bitcoin">repositorio en Github</a>. Por favor, asegúrese de leer y seguir el proceso de desarrollo que se describe en el archivo README, así como proporcionar el código con buena calidad y respetar todas las directrices.</p>
-{% when 'it' %}
-<p>Bitcoin è open source ed ogni sviluppatore può contribuire al progetto. Tutto ciò di cui si ha bisogno è nel <a href="https://github.com/bitcoin/bitcoin">repository Github</a>. Per favore assicurati di leggere e seguire il processo di sviluppo descritto nel README, di fornire codice di buona qualità e di rispettare tutte le linee guida.</p>
 {% when 'ru' %}
 <p>Биткоин является open source проектом, любой разработчик может внести в него свой вклад. Все, что нужно для этого, находится в репозитории на <a href="https://github.com/bitcoin/bitcoin">Github</a>. Пожалуйста, прочтите и соблюдайте политику разработки, описанную в README, и конечно, отправляйте код хорошего качества.</p>
 {% else %}
@@ -50,7 +48,7 @@ id: development
 {% endcase %}
 
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'it' or 'ru' %}
+{% when 'ar' or 'es' or 'fa' or 'ru' %}
 {% else %}
 <h2>{% translate more %}</h2>
 <ul class="devprojectlist">
