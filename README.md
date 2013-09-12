@@ -12,40 +12,30 @@ Installing dependencies on older Ubuntu and Debian distributions
 
 # Usage
 
-* run jekyll
-* output will be in \_site/
+* Run jekyll (or "jekyll build" on older setups)
+* Output will be in \_site/
+
+If you have no http server, you can run jekyll --server (or "jekyll serve" on older setups). This server does not support clean urls and requires you to add a trailing ".html" by hand in your browser window.
 
 ## Translation
 
 ### How to translate
 
-* Translations can be done on transifex https://www.transifex.com/projects/p/bitcoinorg/
+* Translations can be done on Transifex https://www.transifex.com/projects/p/bitcoinorg/
 * You must be a native speaker for the language you choose to translate.
 * At least one other reviewer is required.
-* Changing the meaning of any statement should be avoided. In doubt, you can open a discussion on transifex.
+* Changing the meaning of any statement should be avoided. In doubt, you can open a discussion on Transifex.
 * Sentences and popular expressions should be adapted so that they sound native in your language.
 
-### Add new translations
+### Import translations
 
-1. Begin, Add language code where required in _config.yml.
-2. Import, Download the translated .yml file from transifex and put that file in _translations.
-3. Images, Translate the few images that contain text with a vector image editing software like Inkscape. Translations for these images are at the end of the imported .yml translation file. Make sure to convert all texts to paths when saving final svg files.
-4. Vocabulary, Add correct alphabetical order for your language in the vocabulary page.
-5. Preview, Check if all pages are complete, test each links, check that texts with a limited size display nicely. For example, right side buttons and some titles have height or width restrictions.
+**Update translations**: You can overwrite each language files in _translations by their updated version from Transifex. You should make sure that each .html files (in _layouts, _templates and _redirects) don't serve outdated content for those languages. You should also make sure that no url has been changed by translators.
 
-### Update translations
+**Adding a new language**: You can add the language file from Transifex in _translations and add the language in _config.yml in the order you want it to appear in the language bar. You should also make a translated version of the vector images using the translations at the end of the translation file. Make sure to convert all texts to paths when saving final svg files. Finally, make sure that all pages are complete and good looking.
 
-You can import all translations (complete and incomplete) from transifex using the transifex client:
+### Update english strings
 
-    tx init
-    tx set --auto-remote https://www.transifex.com/projects/p/bitcoinorg/
-    tx pull -a -s --skip
-    
-Then, you can overwrite any specific translation in the _translations folder by one of these files. You might also need to make sure that each .html files (in _layouts, _templates and _redirects) don't serve outdated content for those languages. You should also make sure that no urls or anchor has been changed by translators.
-
-### Update source english strings
-
-Any change in the english texts can be done through a pull request on github. If your changes affect the html layout of a page, you should apply fallback html code for other languages until they are updated.
+Any change in the english texts can be done through a pull request on GitHub. If your changes affect the html layout of a page, you should apply fallback html code for other languages until they are updated.
 
     {% case page.lang %}
     {% when 'fr' %}
@@ -53,12 +43,10 @@ Any change in the english texts can be done through a pull request on github. If
     {% else %}
       (up to date english content)
     {% endcase %}
-    
-### Update source strings on transifex
 
-**When translation is needed**: If you want all changes you've made to be re-translated, you can simply update the resource file (en.yml) on transifex.
+**When translation is needed**: If you want all changes you've made to be re-translated, you can simply update the resource file (en.yml) on Transifex.
 
-**When translation is not needed**: If you are only pushing typo fixes and that you don't want translators to redo all their work again, you can use the transifex client to pull translations, update en.yml and push back all translations at once:
+**When translation is not needed**: If you are only pushing typo fixes and that you don't want translators to redo all their work again, you can use the Transifex client to pull translations, update en.yml and push back all translations at once:
 
     tx init
     tx set --auto-remote https://www.transifex.com/projects/p/bitcoinorg/
