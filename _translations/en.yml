@@ -186,6 +186,7 @@ en:
     downloadubu: "Download for Ubuntu (PPA)"
     downloadlin: "Download for Linux (tgz, 32/64-bit)"
     downloadmac: "Download for Mac OS X"
+    downloadsig: "Verify release signatures"
     downloadsource: "Source code"
     versionhistory: "Show version history"
     notelicense: "Bitcoin-Qt is a community-driven <a href=\"http://www.fsf.org/about/what-is-free-software\">free open-source</a> project, released under the <a href=\"http://opensource.org/licenses/mit-license.php\">MIT license</a>."
