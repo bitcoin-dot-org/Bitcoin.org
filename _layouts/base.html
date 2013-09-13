@@ -190,9 +190,11 @@ menu:
       <li{% if page.id == 'innovation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate innovation url %}">{% translate menu-innovation layout %}</a></li>
       <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a></li>
       {% case page.lang %}
-      {% when 'ar' or 'de' or 'en' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+      {% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
       <li{% if page.id == 'about' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate about url %}">{% translate menu-about layout %}</a></li>
+      {% when 'id' %}
       {% else %}
+      <li{% if page.id == 'faq' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate faq url %}">{% translate menu-faq layout %}</a></li>
       {% endcase %}
     </ul>
   </div></div>
