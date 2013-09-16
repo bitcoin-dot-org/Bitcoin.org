@@ -155,7 +155,7 @@ de:
     walletwebwarningtxt: "Web Wallets lagern Ihre Bitcoins. Das heißt, dass es passieren kann, dass Ihre Bitcoins nach einem Vorfall in deren System verloren gehen. Derzeit bietet kein Web Wallet Dienstleister genug Versicherungsschutz, dass er zur Lagerung von Beträgen verwendet werden könnte wie eine Bank."
     walletwebwarningok: "OK, ich habe verstanden"
     wallettrustinfo: "von Dritten"
-    wallettrustinfotxt: "Diese Wallet setzt standartmäßig auf einen zentralisierten Dienst und erfordert ein gewisses Maß an Vertrauen gegenüber Dritten vorraus. Allerdings haben diese keine Kontrolle über ihre Wallet. Es ist immer angebracht falls möglich ein starkes Passwort und ein Backup zu verwenden."
+    wallettrustinfotxt: "Diese Wallet setzt standardmäßig auf einen zentralisierten Dienst und erfordert ein gewisses Maß an Vertrauen gegenüber Dritten. Allerdings haben diese keine Kontrolle über ihre Wallet. Es ist immer angebracht falls möglich ein starkes Passwort und ein Backup zu verwenden."
   development:
     title: "Entwicklung - Bitcoin"
     pagetitle: "Bitcoin Entwicklung"
