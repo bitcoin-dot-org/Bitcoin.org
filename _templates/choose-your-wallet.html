@@ -121,6 +121,23 @@ id: choose-your-wallet
   <a href="#" onclick="return false;"><img src="/img/clients/lo-bitcoinwallet.png" alt="bitcoin wallet" />Bitcoin<br>Wallet</a>
 </div>
 {% case page.lang %}
+{% when 'ar' or 'es' or 'fa' or 'fr' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+<div data-id="mycelium">
+  <div class="walletinfo">
+    <div class="b1"></div>
+    <div class="b2">
+      <h2>{% translate wallettrustinfo %}</h2>
+      <span></span>
+      <p>{% translate wallettrustinfotxt %}</p>
+      <p><a href="#" onclick="walletshow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+    <div class="b3"></div>
+  </div>
+<a href="#" onclick="return false;"><img src="/img/clients/lo-mycelium.png" alt="mycelium wallet" /></a>
+</div>
+{% endcase %}
+{% case page.lang %}
 {% when 'ar' or 'es' or 'fa' or 'pl' or 'ru' or 'zh_TW' %}
 <div data-id="blockchainmobile">
   <div class="walletwarning">
@@ -241,6 +258,23 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-electrum.png" alt="electrum" />Electrum</a>
 </div>
+{% case page.lang %}
+{% when 'ar' or 'es' or 'fa' or 'fr' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+<div id="mycelium">
+  <div>
+    <div class="b1"></div>
+    <div class="b2">
+      <h2>Mycelium Wallet</h2>
+      <span><img src="/img/dow-android.png" alt="Android" title="Android" /></span>
+      <p>{% translate walletmyceliumwallet %}</p>
+      <p><a href="https://play.google.com/store/apps/details?id=com.mycelium.wallet">{% translate walletvisit %}</a></p>
+    </div>
+    <div class="b3"></div>
+  </div>
+<a href="#" onclick="return false;"><img src="/img/clients/lo-mycelium.png" alt="mycelium wallet" />Mycelium<br>Wallet</a>
+</div>
+{% endcase %}
 <div id="blockchainmobile">
   <div>
     <div class="b1"></div>
