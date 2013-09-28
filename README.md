@@ -1,4 +1,10 @@
-# Requirements
+# Usage
+
+**Easy preview**: Simple changes in the texts can be previewed live on bitcoin.org with any recent browser. You only need to click anywhere on the page and hold your mouse button for one second. You'll then be able to edit the page just like a document. Changes will be lost as soon as the page is refreshed.
+
+**Real preview**: Install dependencies, edit the files, run jekyll (or "jekyll build" on older setups), and copy the output files from _site/ at the root of your web server. If you have no web server, run jekyll --server (or "jekyll serve" on older setups). This server requires you to add a trailing ".html" by hand in your browser window.
+
+## Requirements
 
 Installing dependencies on Ubuntu 12.10
 
@@ -9,13 +15,6 @@ Installing dependencies on older Ubuntu and Debian distributions
 
     sudo apt-get install rubygems ruby1.9.1-dev build-essential
     sudo gem install jekyll json less therubyracer ffi-icu
-
-# Usage
-
-* Run jekyll (or "jekyll build" on older setups)
-* Output will be in \_site/
-
-If you have no http server, you can run jekyll --server (or "jekyll serve" on older setups). This server does not support clean urls and requires you to add a trailing ".html" by hand in your browser window.
 
 ## Translation
 

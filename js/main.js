@@ -1,3 +1,9 @@
+function addEvent(a,b,c){return (a.addEventListener)?a.addEventListener(b,c,false):(a.attachEvent)?a.attachEvent('on'+b,c):false;}
+
+
+function removeEvent(a,b,c){return (a.removeEventListener)?a.removeEventListener(b,c,false):(a.detachEvent)?a.detachEvent('on'+b,c):false;}
+
+
 function cancelEvent(e){if(!e)var e=window.event;(e.preventDefault)?e.preventDefault():e.returnValue=false;}
 
 
@@ -206,3 +212,36 @@ function freenodeShow(e){
 document.getElementById('chatbox').innerHTML='<iframe style=width:98%;min-width:400px;height:600px src="http://webchat.freenode.net/?channels=bitcoin-dev" />';
 cancelEvent(e);
 }
+
+
+function makeEditable(e){
+//This function allows translators and writers to preview their work.
+//It works as an easter egg that makes the page editable when user hold their mouse button for one second.
+switch(e.type){
+case 'mousedown':
+addEvent(document.body,'mouseup',makeEditable);
+addEvent(document.body,'mousemove',makeEditable);
+document.body.setAttribute('timeoutEdit',setTimeout(function(){
+	removeEvent(document.body,'mouseup',makeEditable);
+	removeEvent(document.body,'mousemove',makeEditable);
+	var c=document.getElementById('content');
+	c.contentEditable=true;
+	c.style.borderColor='#bfbfbf';
+	setTimeout(function(){c.style.borderColor='';},200);
+},1000));
+break;
+case 'mouseup':
+case 'mousemove':
+removeEvent(document.body,'mouseup',makeEditable);
+removeEvent(document.body,'mousemove',makeEditable);
+clearTimeout(document.body.getAttribute('timeoutEdit'));
+break;
+}
+}
+
+//Add makeEditable event listener
+var xint=setInterval(function(){
+if(!document.body)return;
+addEvent(document.body,'mousedown',makeEditable);
+clearInterval(xint);
+},200);
