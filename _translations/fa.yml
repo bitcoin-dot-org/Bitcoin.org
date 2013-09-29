@@ -113,7 +113,7 @@ fa:
     chanmining: "(چیز های مرتبط با استخراج بیت کوین)"
     linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Google+ انجمن بیت کوین</a>"
     linktwitter: "<a href=\"https://twitter.com/search?q=bitcoin\">جست و جوی Twitter</a>"
-    facebook: "<a href=\"https://www.facebook.com/pages/Bitcoin-P2P-Cryptocurrency/134466763256650\">صفحه Facebook</a>"
+    facebook: "<a href=\"https://www.facebook.com/bitcoins\">صفحه Facebook</a>"
     reddit: "<a href=\"http://www.reddit.com/r/Bitcoin/\">انجمن بیت کوین Reddit</a>"
   choose-your-wallet:
     title: "کیف پولتان را انتخاب کنید - بیت کوین"
@@ -246,7 +246,7 @@ fa:
     offlinetxtxt2: "یک تراکنش جدید در یک کامپیوتر آنلاین بسازید و آن را در یک کلید USB ذخیره کنید."
     offlinetxtxt3: "یک تراکنش را با یک کامپیوتر آفلاین امضا کنید."
     offlinetxtxt4: "تراکنش امضا شده را با کامپیوتر آنلاین ارسال کنید."
-    offlinetxtxt5: "چون کامپیوتری که به شبکه متصل است نمی تواند تراکنش ها را امضا کند ، پس نمی تواند وجهی برداشت کند که حساب به خطر بیفتد. <a href=\"https://bitcoinarmory.com/using-offline-wallets-in-armory/\">Armory</a>\n می تواند برای انجام امضای تراکنش های آفلاین مورد استفاده قرار گیرد."
+    offlinetxtxt5: "چون کامپیوتری که به شبکه متصل است نمی تواند تراکنش ها را امضا کند ، پس نمی تواند وجهی برداشت کند که حساب به خطر بیفتد. <a href=\"http://bitcoinarmory.com/about/using-our-wallet/#offlinewallet\">Armory</a>\n می تواند برای انجام امضای تراکنش های آفلاین مورد استفاده قرار گیرد."
     offlinetmp: "محیط موقت"
     offlinetmptxt: "این روش بارگذاری یک کیف پول داخل یک محیط موقت را دربر می گیرد. برای مثال ، ممکن است در یک سی دی لایو لینوکس بوت کنید ، از طریق یک کلید USB یک کیف پول SPV سبک بارگذاری کنید و یک تراکنش انجام دهید. وقتی کامپیوتر از یک محیط read-only مطمئن که تنها بر روی حافظه بارگذاری شده است بوت شود ، کدهای مخرب از سیستم شما دور شده و ردپایی از کیف پول شما بر روی هارد درایو به جا نمی ماند. همچنین باید بسیار مراقب نکات زیر باشید."
     offlinetmplose: "از دست دادن دارایی"

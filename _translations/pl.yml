@@ -112,7 +112,7 @@ pl:
     chanmining: "(Dotyczące wydobycia Bitcoin)"
     linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Społeczność Google+ Bitcoin</a>"
     linktwitter: "<a href=\"https://twitter.com/search?q=bitcoin\">Wyszukaj na Twitterze</a>"
-    facebook: "<a href=\"https://www.facebook.com/pages/Bitcoin-P2P-Cryptocurrency/134466763256650\">Strona na Facebook</a>"
+    facebook: "<a href=\"https://www.facebook.com/bitcoins\">Strona na Facebook</a>"
     reddit: "<a href=\"http://www.reddit.com/r/Bitcoin/\">Społeczność Reddit's Bitcoin</a>"
     linkmeetup: "<a href=\"http://bitcoin.meetup.com/\">Grupy spotkań Bitcoin</a>"
   choose-your-wallet:
@@ -273,7 +273,7 @@ pl:
     offlinetxtxt2: "Rozpocznij nową transakcję na komputerze podłączonym do sieci oraz zapisz ją na kluczu USB."
     offlinetxtxt3: "Podpisz transakcję na komputerze nie podłączonym do sieci."
     offlinetxtxt4: "Prześlij podpisaną transakcję na komputer podłączony do sieci."
-    offlinetxtxt5: "Ponieważ komputer który jest podłączony do sieci nie może podpisywać transakcji to również nie może być użyty do wycofania z niego funduszy w przypadku gdyby został przejęty przez hackerów. <a href=\"https://bitcoinarmory.com/using-offline-wallets-in-armory/\">Arsenał</a> może zostać użyty do podpisywania transakcji bez dostępu do sieci."
+    offlinetxtxt5: "Ponieważ komputer który jest podłączony do sieci nie może podpisywać transakcji to również nie może być użyty do wycofania z niego funduszy w przypadku gdyby został przejęty przez hackerów. <a href=\"http://bitcoinarmory.com/about/using-our-wallet/#offlinewallet\">Arsenał</a> może zostać użyty do podpisywania transakcji bez dostępu do sieci."
     offlinetmp: "Środowisko tymczasowe"
     offlinetmptxt: "To podejście obejmuje wczytywanie portfela w środowisku tymczasowym. Dla przykładu możliwe jest by wystartować komputer z płyty Linux Live, wczytać portfel SPV wraz z konfiguracją z klucza USB oraz wydać transakcję. Zaletą startu z zaufanego środowiska tylko do odczytu jest to, że żaden nieznany kod zostanie wczytany oraz żaden ślad twojego portfela nie pozostanie na dysku w użytym komputerze. Powinieneś jednak uważać na następujące punkty."
     offlinetmplose: "Utrata funduszy"

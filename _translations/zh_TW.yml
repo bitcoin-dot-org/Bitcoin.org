@@ -112,7 +112,7 @@ zh_TW:
     chanmining: "(Bitcoin 挖礦相關)"
     linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Google+ Bitcoin 社群</a>"
     linktwitter: "<a href=\"https://twitter.com/search?q=bitcoin\">Twitter 搜尋</a>"
-    facebook: "<a href=\"https://www.facebook.com/pages/Bitcoin-P2P-Cryptocurrency/134466763256650\">Facebook 頁面</a>"
+    facebook: "<a href=\"https://www.facebook.com/bitcoins\">Facebook 頁面</a>"
     reddit: "<a href=\"http://www.reddit.com/r/Bitcoin/\">Reddit 的 Bitcoin 社群</a>"
     linkmeetup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin 聚會團體</a>"
   choose-your-wallet:
@@ -273,7 +273,7 @@ zh_TW:
     offlinetxtxt2: "在連線的電腦上建立新交易，並將交易存到 USB 随身碟。"
     offlinetxtxt3: "在離線電腦上簽署交易。"
     offlinetxtxt4: "以連線的電腦傳送已簽署的交易。"
-    offlinetxtxt5: "因為與網路連線的電腦無法簽署交易，所以可以避免遭到入侵與領取財產。<a href=\"https://bitcoinarmory.com/using-offline-wallets-in-armory/\">Armory</a>可以用來進行離線交易簽章。"
+    offlinetxtxt5: "因為與網路連線的電腦無法簽署交易，所以可以避免遭到入侵與領取財產。<a href=\"http://bitcoinarmory.com/about/using-our-wallet/#offlinewallet\">Armory</a>可以用來進行離線交易簽章。"
     offlinetmp: "暫存設備"
     offlinetmptxt: "這個作法是將錢包載入一個暫存的設備上。譬如用 Linux Live CD 開機，透過 USB 隨身碟來載入 light SPV 錢包軟體及設定，並且進行交易。當電腦使用可信任的唯讀設備開機，且該設備只有載入電腦記憶體，那麼惡意程式就無法入侵，而且你的錢包不會在硬碟上留下記錄。但下面有些你要特別留心的事項。"
     offlinetmplose: "丟失財產"
