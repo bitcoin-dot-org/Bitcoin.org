@@ -30,7 +30,7 @@ Installing dependencies on older Ubuntu and Debian distributions
 
 **Update translations**: You can overwrite each language files in _translations by their updated version from Transifex. You should make sure that each .html files (in _layouts, _templates and _redirects) don't serve outdated content for those languages. You should also make sure that no url has been changed by translators.
 
-**Adding a new language**: You can add the language file from Transifex in _translations and add the language in _config.yml in the order you want it to appear in the language bar. You should also make a translated version of the vector images using the translations at the end of the translation file. Make sure to convert all texts to paths when saving final svg files. Finally, make sure that all pages are complete and good looking.
+**Add a new language**: You can put the language file from Transifex in _translations and add the language in _config.yml in the right display order for the language bar. Make sure to review all pages and check all links.
 
 ### Update english strings
 

@@ -511,12 +511,6 @@ en:
     experimentaltxt: "Bitcoin is an experimental new currency that is in active development. Although it becomes less experimental as usage grows, you should keep in mind that Bitcoin is a new invention that is exploring ideas that have never been attempted before. As such, its future cannot be predicted by anyone."
     tax: "Don't forget government taxes"
     taxtxt: "Bitcoin is not an official currency. That said, most jurisdictions still require you to pay income, sales, payroll, and capital gains taxes on anything that has value, including Bitcoin."
-  images:
-    glance: Network at a glance
-    you: You
-    friend: Friend
-    blockchain: the Block chain
-    blockchaintxt: (a shared public transaction log)
   layout:
     menu-about-us: "About bitcoin.org"
     menu-bitcoin-for-businesses: Businesses
