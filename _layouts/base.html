@@ -119,6 +119,7 @@ menu:
     {% else %}
     <a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a>
     {% endcase %}
+    <a href="/en/legal">Legal</a>
     <span>{% translate footer layout %}</span>
     </div></div>
   </div>
@@ -205,6 +206,12 @@ menu:
     <div id="footer"><div>
     <a href="/en/alerts">Network Status</a>
     <a href="https://bitcoinfoundation.org/">{% translate menu-foundation layout %}</a>
+    {% case page.lang %}
+    {% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+    <a href="/en/legal">Legal</a>
+    {% else %}
+    <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
+    {% endcase %}
     <a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a>
     <span>{% translate footer layout %}</span>
     </div></div>
