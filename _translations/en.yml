@@ -366,6 +366,11 @@ en:
     securetext: "Thanks to a clever use of strict cryptographic rules, Bitcoin provides an amazing list of security features. Not only are bitcoins impossible to counterfeit or spoof, but the protocol is also built to be very resistant against an impressive list of attacks."
     trust: "Solving issues with trust in banks"
     trusttext: "Bitcoin offers solutions to many of the trust problems that plague banks thanks to selective accounting transparency, digital signature proofs, and irreversible transactions. It also increases the risks for crooked bankers: no bitcoins can be created to save them from their own mistakes at the expense of the public."
+  legal:
+    title: "Legal disclaimer - Bitcoin"
+    pagetitle: "Legal disclaimer"
+    termstxt1: "This website provides information and material of a general nature. This information is intended for informational purposes only. This website may contain information that addresses real or potential legal issues. This information is not a substitute for qualified legal counsel. You are not authorized and nor should you rely on this website for legal advice. In no way are the owners of, or contributors to, this website responsible for the actions, decisions, or other behavior taken or not taken by you in reliance upon this website. This includes but is not limited to legal or technological reasons. You act at your own risk in reliance on the contents of this website. Should you make a decision to act or not act you should contact a licensed attorney in the relevant jurisdiction in which you want or need help."
+    termstxt2: "This website may contain translations of the English version of content. These translations are provided only as a convenience. In the event of any conflict between the English language version and the translation version of content, the English language version takes precedence. If you notice any inconsistency, please report them on <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a>"
   protect-your-privacy:
     title: "Protect your privacy - Bitcoin"
     pagetitle: "Protect your privacy"
@@ -525,6 +530,7 @@ en:
     menu-how-it-works: "How it works"
     menu-innovation: Innovation
     menu-intro: Introduction
+    menu-legal: "Legal"
     menu-resources: Resources
     menu-support-bitcoin: Participate
     menu-vocabulary: Vocabulary
@@ -547,6 +553,7 @@ en:
     getting-started: getting-started
     how-it-works: how-it-works
     innovation: innovation
+    legal: legal
     protect-your-privacy: protect-your-privacy
     resources: resources
     secure-your-wallet: secure-your-wallet
