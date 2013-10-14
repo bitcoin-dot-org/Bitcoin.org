@@ -22,9 +22,17 @@ module Jekyll
     end
   end
 
-  class TranslateRedirect < StaticFile
-    def write(dest)
-      # do nothing
+  class PageRedirect < Page
+    def initialize(site, base, lang, srcdir, src, dstdir, dst, red)
+      @site = site
+      @base = base
+      @dir = '/'+dstdir
+      @name = dst
+      self.process(dst)
+      self.read_yaml(File.join(base, srcdir), src)
+      self.data['lang'] = lang
+      self.data['redirect'] = red
+      self.data['layout'] = 'redirect'
     end
   end
 
@@ -63,23 +71,16 @@ module Jekyll
         end
         redirects.each do |id,redirect|
           next if redirect.has_key?('except') and redirect['except'].has_key?(lang)
-          src = locs[lang]['url'][id]
-          next if src.nil? or src == ''
-          src = src+'.html'
-          dst = redirect['dst']
-          dst = locs[lang]['url'][dst]
+          src = redirect['dst']
+          src = src + '.html'
+          dst = locs[lang]['url'][id]
           next if dst.nil? or dst == ''
-          if !File.directory?(site.dest + '/' + lang)
-            Dir.mkdir(site.dest + '/' + lang)
-          end
-          File.open(site.dest + '/' + lang + '/' + src, 'w+') do |file|
-            file.puts '<!DOCTYPE HTML>'
-            file.puts '<html><head>'
-            file.puts '<meta name="robots" content="noindex">'
-            file.puts '<script>window.location.href=\'/'+lang+'/'+CGI::escape(dst)+'\';</script>'
-            file.puts '</head></html>'
-          end
-          site.static_files << TranslateRedirect.new(site, site.source, '', lang+'/'+src)
+          dst = dst + '.html'
+          red = redirect['dst']
+          red = locs[lang]['url'][red]
+          next if red.nil? or red == ''
+          red = '/' + lang + '/' + CGI::escape(red)
+          site.pages << PageRedirect.new(site, site.source, lang, '_templates', src, lang, dst, red)
         end
       end
     end

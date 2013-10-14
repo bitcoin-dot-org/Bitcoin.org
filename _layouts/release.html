@@ -2,10 +2,6 @@
 layout: base
 lang: en
 ---
-{% if page.redirect != nil %}
-<script>window.location.href='/en/release/{{ page.redirect }}';</script>
-<link rel="canonical" href="http://bitcoin.org/en/release/{{ page.redirect }}"/>
-{% endif %}
 <link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin-Qt releases">
 <div class="versiontext">
   <h1>{{ page.title }}<br><small>{{ page.date | date:"%e %B %Y" }}</small></h1>

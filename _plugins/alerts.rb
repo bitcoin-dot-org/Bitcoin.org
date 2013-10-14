@@ -14,7 +14,7 @@ module Jekyll
       self.data['date'] = date
       self.data['layout'] = 'alert'
       if dstdir == ''
-        self.data['redirect'] = src.split('.')[0]
+        self.data['canonical'] = '/en/alert/' + src.split('.')[0]
       else
         self.data['category'] = 'alert'
         if self.data.has_key?('banner') and !self.data['banner'].nil? and self.data['banner'].length>0

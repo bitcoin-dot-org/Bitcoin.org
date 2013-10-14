@@ -71,7 +71,7 @@ module Jekyll
               next if !/\.html$/.match(file2)
               #Ignore static redirect pages
               data = File.read(file1+'/'+file2)
-              next if !data.index('window.location.href=').nil?
+              next if !data.index('window.location.href=').nil? or !data.index('redirect:').nil?
               sitemap.puts '<url>'
               sitemap.puts '  <loc>http://bitcoin.org/'+file1+'/'+file2.gsub('.html','')+'</loc>'
               sitemap.puts '</url>'
@@ -81,7 +81,7 @@ module Jekyll
           next if file1 == 'index.html'
           #Ignore static redirect pages and google webmaster tools
           data = File.read(file1)
-          next if !data.index('window.location.href=').nil? or !data.index('google-site-verification:').nil?
+          next if !data.index('window.location.href=').nil? or !data.index('redirect:').nil? or !data.index('google-site-verification:').nil?
           sitemap.puts '<url>'
           sitemap.puts '  <loc>http://bitcoin.org/'+file1.gsub('.html','')+'</loc>'
           sitemap.puts '</url>'

@@ -14,7 +14,8 @@ module Jekyll
       self.data['date'] = year + '-' + month + '-' + day
       self.data['layout'] = 'release'
       if dstdir.index('/releases/') === 0
-        self.data['redirect'] = dst.gsub('.md','')
+        self.data['redirect'] = '/en/release/' + dst.gsub('.md','')
+        self.data['layout'] = 'redirect'
       else
         self.data['category'] = 'release'
         if !site.config.has_key?('DOWNLOAD_DATE') or site.config['DOWNLOAD_DATE'] < year + '-' + month + '-' + day
