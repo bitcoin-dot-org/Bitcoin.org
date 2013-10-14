@@ -51,7 +51,7 @@ module Jekyll
           id = file.split('.')[0]
           next if redirects.has_key?(id) and ( !redirects[id].has_key?('except') or !redirects[id]['except'].has_key?(lang) )
           dst = locs[lang]['url'][id]
-          next if dst.nil?
+          next if dst.nil? or dst == ''
           src = file
           dst = dst+'.html'
           site.pages << TranslatePage.new(site, site.source, lang, '_templates', src, lang, dst)
@@ -64,11 +64,11 @@ module Jekyll
         redirects.each do |id,redirect|
           next if redirect.has_key?('except') and redirect['except'].has_key?(lang)
           src = locs[lang]['url'][id]
-          next if src.nil?
+          next if src.nil? or src == ''
           src = src+'.html'
           dst = redirect['dst']
           dst = locs[lang]['url'][dst]
-          next if dst.nil?
+          next if dst.nil? or dst == ''
           if !File.directory?(site.dest + '/' + lang)
             Dir.mkdir(site.dest + '/' + lang)
           end
