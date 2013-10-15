@@ -217,8 +217,10 @@ cancelEvent(e);
 function makeEditable(e){
 //This function allows translators and writers to preview their work.
 //It works as an easter egg that makes the page editable when user hold their mouse button for one second.
+if(!e)var e=window.event;
 switch(e.type){
 case 'mousedown':
+if((e.which&&e.which==3)||(e.button&&e.button==2))return;
 addEvent(document.body,'mouseup',makeEditable);
 addEvent(document.body,'mousemove',makeEditable);
 document.body.setAttribute('timeoutEdit',setTimeout(function(){
