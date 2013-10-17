@@ -2,33 +2,6 @@
 layout: base
 id: download
 ---
-{% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'pl' or 'ru' or 'zh_TW' %}
-
-<link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin-Qt releases">
-<h1>{% translate pagetitle %}</h1>
-<h2>{% translate latestversion %}{{site.DOWNLOAD_VERSION}}<a type="application/rss+xml" href="/en/rss/releases.rss"><img src="/img/icon_rss.svg" alt="rss" class="rssicon"></a></h2>
-<p class="downloadold">
-<img src="/img/dow-win.png" alt="windows"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32.zip/download">{% translate downloadwinzip %}</a> <small>~13MB</small><br>
-<img src="/img/dow-win.png" alt="windows"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe/download">{% translate downloadwinexe %}</a> <small>~9MB</small><br>
-<img src="/img/dow-ubuntu.png" alt="ubuntu"> <a href="https://launchpad.net/~bitcoin/+archive/bitcoin">{% translate downloadubu %}</a><br>
-<img src="/img/dow-linux.png" alt="linux"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-linux.tar.gz/download">{% translate downloadlin %}</a> <small>~12MB</small><br>
-<img src="/img/dow-osx-uni.png" alt="osx"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-macosx.dmg/download">{% translate downloadmac %}</a> <small>~13MB</small><br>
-{% case page.lang %}
-{% when 'ar' or 'de' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
-<img src="/img/dow_sig.svg" alt="signature"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/SHA256SUMS.asc/view">{% translate downloadsig download en %}</a><br>
-{% else %}
-<img src="/img/dow_sig.svg" alt="signature"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/SHA256SUMS.asc/view">{% translate downloadsig %}</a><br>
-{% endcase %}
-<span></span> <a href="https://github.com/bitcoin/bitcoin">{% translate downloadsource %}</a> (GitHub)<br><br>
-<span></span> <a href="/en/version-history" style="font-weight:bold;">{% translate versionhistory %}</a>
-</p>
-<br>
-<p>{% translate notelicense %}</p>
-<p>{% translate notesync %}</p>
-
-{% else %}
-
 <link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin-Qt releases">
 <div class="download">
   <h1>{% translate pagetitle %}</h1>
@@ -65,5 +38,3 @@ case 'ubuntu':but.href='https://launchpad.net/~bitcoin/+archive/bitcoin';break;
 case 'mac':but.href='http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-macosx.dmg/download';break;
 }
 </script>
-
-{% endcase %}

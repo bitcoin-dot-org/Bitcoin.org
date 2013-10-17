@@ -164,6 +164,7 @@ fa:
     title: "دانلود - بیت کوین"
     pagetitle: "دانلود Bitcoin-Qt"
     latestversion: "آخرین نسخه :"
+    download: "دانلود Bitcoin-Qt"
     downloadwinzip: "دانلود برای ویندوز (zip)"
     downloadwinexe: "دانلود برای ویندوز (exe)"
     downloadubu: "دانلود برای اوبونتو (PPA)"
@@ -335,6 +336,7 @@ fa:
     blockchain: زنجیره ی بلاک
     blockchaintxt: (یک log تراکنش عمومی به اشتراک گذاشته شده)
   layout:
+    menu-intro: معرفی
     menu-bitcoin-for-individuals: افراد
     menu-bitcoin-for-businesses: کسب و کارها
     menu-bitcoin-for-developers: توسعه دهندگان
@@ -345,11 +347,11 @@ fa:
     menu-resources: منابع
     menu-community: انجمن
     menu-development: توسعه
+    menu-support-bitcoin: شرکت کردن
     menu-foundation: بنیاد
     menu-about: درباره
-    button-wallet: "انتخاب کیف پول"
-    button-know: "آن چه باید بدانید"
-    button-support: "حمایت از بیت کوین"
+    menu-choose-your-wallet: "انتخاب کیف پول"
+    menu-you-need-to-know: "آن چه باید بدانید"
     footer: "© پروژه بیت کوین 2013-2009 منتشر شده تحت <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT گواهینامه</a>"
   url:
     about: درباره

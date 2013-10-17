@@ -278,6 +278,7 @@ li p{
 	min-width:120%;
 	padding:5px 0px;
 	margin:0px;
+	left:0px;
 }
 #menusimple li:hover ul{
 	display:block;
@@ -297,7 +298,6 @@ li p{
 	display:block;
 	color:#2c6fad;
 	font-size:100%;
-	width:100%;
 	margin:1px 0px;
 	padding:6px 10px 3px 10px;
 }
@@ -593,7 +593,7 @@ li p{
 }
 
 .contributors{
-	width:900px;
+	width:890px;
 	text-align:left;
 }
 .contributors span a{
@@ -1321,274 +1321,23 @@ h2 .rssicon{
 
 /* Deprecated styles (should be removed when translations are updated) */
 
-body.old #menufor{
-	margin:0px;
-	position:absolute;
-	top:8px;
-	left:250px;
-	padding:0px;
-	height:35px;
-}
-body.old h1{
-	text-align:left;
-}
-body.old .summary{
-	text-align:left;
-}
-body.old .alert-message div div{
-	width:960px;
-}
-body.old #menufor li{
-	list-style:none;
-	float:left;
-	padding:0px;
-	margin:0px 8px;
-	border-radius:5px;
-	-webkit-left-radius:5px;
-}
-body.old #menufor li a,
-body.old #menufor li a:active,
-body.old #menufor li a:visited,
-body.old #menufor li a:link{
-	font-family:'Ubuntu', sans-serif;
-	font-weight:700;
-	font-size:105%;
-	display:block;
-	text-decoration:none;
-	padding:6px 8px 3px 8px;
-	color:#2c6fad;
-	white-space:nowrap;
-}
-body.old #menufor li:hover,
-body.old #menufor li.active{
-	background-color:#2c6fad;
-}
-body.old #menufor li:hover a,
-body.old #menufor li.active a{
-	border-radius:5px;
-	-webkit-left-radius:5px;
-	color:#fff;
-}
-body.old #menu{
-	padding:0px;
-	margin:12px auto -12px 32px;
-}
-body.old #menu li{
-	list-style:none;
-	display:inline-block;
-	margin:0px;
-}
-#menu li a,
-#menu li a:active,
-#menu li a:visited,
-#menu li a:link{
-	font-family:'Ubuntu', sans-serif;
-	font-weight:300;
-	display:block;
-	color:#6a6a6a;
-	text-decoration:none;
-	padding: 8px 10px;
-	border: 2px solid transparent;
-	white-space:nowrap;
-}
-body.old #menu li:hover a,
-body.old #menu li.active a{
-	color:#000;
-	background-color:#fff;
-	border:2px solid #ebebeb;
-	border-radius:3px;
-	-webkit-border-radius:3px;
-}
-body.old #head>div{
-	max-width:1050px;
-}
-
-body.old #body{
-	max-width:1050px;
-}
-
-body.old #content{
-	padding:20px 265px 30px 30px;
-}
-body.old #content.wide{
-	padding:20px 40px 30px 30px;
-	max-width:990px;
-}
-
-body.old #rightbox{
-	width:210px;
-	position:absolute;
-	right:30px;
-	top:20px;
-	border-radius:5px;
-	-webkit-border-radius:5px;
-	padding:5px;
-}
-body.old #rightbox.wide{
-	display:none;
-}
-
-body.old #choose a,
-body.old #before a,
-body.old #support a{
-	font-family:'Ubuntu', sans-serif;
-	font-weight:300;
-	padding:10px 8px 10px 48px;
-	color:#fff;
-	display:block;
-	text-align:left;
-	margin-bottom:10px;
-	text-decoration:none;
-	border-radius:5px;
-	-webkit-border-radius:5px;
-}
-body.old #choose img,
-body.old #before img,
-body.old #support img{
-	vertical-align:middle;
-	margin-right:8px;
-	margin-left:-40px;
-	width:32px;
-	height:32px;
-}
-body.old #before a,
-body.old #support a{
-	background-color:#2c6fad;
-	border:1px solid #20598f;
-	background-image:linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
-	background-image:-o-linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
-	background-image:-moz-linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
-	background-image:-webkit-linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
-	background-image:-ms-linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
-}
-body.old #choose a{
-	padding:12px 8px 12px 48px;
-	background-color:#e78406;
-	border:1px solid #d57700;
-	background-image:linear-gradient(bottom, #d57700 14%, #e78406 70%);
-	background-image:-o-linear-gradient(bottom, #d57700 14%, #e78406 70%);
-	background-image:-moz-linear-gradient(bottom, #d57700 14%, #e78406 70%);
-	background-image:-webkit-linear-gradient(bottom, #d57700 14%, #e78406 70%);
-	background-image:-ms-linear-gradient(bottom, #d57700 14%, #e78406 70%);
-}
-body.old #choose a:hover,
-body.old #before a:hover,
-body.old #support a:hover{
-	background-image:none;
-}
-
-body.old .downloadold a{
-	font-size:125%;
-	display:inline-block;
-	margin:5px 0px;
-}
-body.old .downloadold span{
-	width:16px;
-	height:16px;
-	display:inline-block;
-}
-
-body.old .preview{
-	margin-top:40px;
-}
-
-body.old #footer{
-	max-width:1050px;
-}
-body.old .foundation{
-	max-width:500px;
-	margin:40px auto;
-	border:2px dashed #dfdfdf;
-	padding:40px;
-	border-radius:9px;
-	-webkit-border-radius:9px;
-}
-body.old .preview{
-	width:880px;
-	padding-left:40px;
-	padding-top:15px;
-	border:2px solid #eee;
-	border-radius:8px;
-	-webkit-border-radius:8px;
-}
-body.old .resourcesold{
+.resourcesold{
 	font-size:115%;
 	font-weight:bold;
 }
-body.old .resourcesold ul{
+.resourcesold ul{
 	padding-top:5px;
 }
-body.old .resourcesold li{
+.resourcesold li{
 	padding-top:6px;
 	text-align:left;
 }
-body.old .resourcesold a,
-body.old .resourcesold a:link,
-body.old .resourcesold a:active,
-body.old .resourcesold a:visited{
+.resourcesold a,
+.resourcesold a:link,
+.resourcesold a:active,
+.resourcesold a:visited{
 	text-decoration:none;
 }
-body.old .resourcesold li ul li{
+.resourcesold li ul li{
 	font-weight:normal;
-}
-
-/* Deprecated styles specific to mobiles (should be removed when translations are updated) */
-
-@media handheld, only screen and (max-device-height: 37em), only screen and (max-device-width: 50em){
-	body.old #menufor,
-	body.old #menu{
-		display:none;
-	}
-	body.old #menufor{
-		position:static;
-		bottom:0px;
-		margin:10px 0px 0px 0px;
-		height:auto;
-	}
-	body.old #menufor li{
-		float:none;
-		display:inline-block;
-	}
-	body.old #menufor li a,
-	body.old #menufor li a:active,
-	body.old #menufor li a:visited,
-	body.old #menufor li a:link{
-		padding:6px 6px 3px 6px;
-	}
-	body.old #menufor li{
-		margin:6px;
-	}
-	body.old #menu{
-		position:static;
-		height:auto;
-		margin:10px 0px 10px 0px;
-	}
-	body.old #menu li{
-		float:none;
-		display:inline-block;
-		padding: 5px;
-	}
-	body.old #menu li a,
-	body.old #menu li a:active,
-	body.old #menu li a:visited,
-	body.old #menu li a:link{
-		padding:5px;
-	}
-	body.old #rightbox,
-	body.old #rightbox.wide{
-		display:block;
-		position:static;
-		margin:30px auto 20px auto;
-	}
-	body.old #content{
-		padding:15px 10px 20px 10px;
-	}
-	body.old #content.wide{
-		position:static;
-		margin:0px 5px;
-		padding:15px 10px 20px 10px;
-	}
-	body.old .foundation{
-		padding:20px;
-	}
 }

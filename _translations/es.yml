@@ -259,6 +259,7 @@ es:
     title: "Descargar - Bitcoin"
     pagetitle: "Descargar Bitcoin-Qt"
     latestversion: "Última versión : "
+    download: "Descargar Bitcoin-Qt"
     downloadwinzip: "Descargar para Windows (zip)"
     downloadwinexe: "Descargar para Windows (exe)"
     downloadubu: "Descargar para Ubuntu (PPA)"
@@ -430,6 +431,7 @@ es:
     blockchain: la Cadena de Bloques
     blockchaintxt: (un registro de transacciónes pública compartida)
   layout:
+    menu-intro: Introducción
     menu-bitcoin-for-individuals: Personas
     menu-bitcoin-for-businesses: Empresas
     menu-bitcoin-for-developers: Desarrolladores
@@ -440,11 +442,11 @@ es:
     menu-resources: Recursos
     menu-community: Comunidad
     menu-development: Desarrollo
+    menu-support-bitcoin: Participar
     menu-foundation: Fundación
     menu-about: "Acerca de"
-    button-wallet: "Elige tu monedero"
-    button-know: "Debes saber"
-    button-support: "Apoya Bitcoin"
+    menu-choose-your-wallet: "Elige tu monedero"
+    menu-you-need-to-know: "Debes saber"
     footer: "© Bitcoin Project 2009–2013 Publicado bajo la <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licencia MIT</a>"
   url:
     about: acerca-de

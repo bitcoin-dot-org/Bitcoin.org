@@ -166,6 +166,7 @@ zh_TW:
     title: "下載 - Bitcoin"
     pagetitle: "下載 Bitcoin-Qt"
     latestversion: "最新版本 : "
+    download: "下載 Bitcoin-Qt"
     downloadwinzip: "下載適用於 Windows 的版本 (zip)"
     downloadwinexe: "下載適用於 Windows 的版本 (exe)"
     downloadubu: "下載適用於 Ubuntu 的版本 (PPA)"
@@ -382,11 +383,11 @@ zh_TW:
     menu-press: 出版物
     menu-innovation: 創新
     menu-foundation: 基金會
+    menu-support-bitcoin: 參與
     menu-about: 關於
     menu-about-us: "關於 bitcoin.org"
-    button-wallet: "選擇你的錢包"
-    button-know: "Bitcoin 使用須知"
-    button-support: "支持 Bitcoin"
+    menu-choose-your-wallet: "選擇你的錢包"
+    menu-you-need-to-know: "Bitcoin 使用須知"
     footer: "© Bitcoin Project 2009–2013 以 <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT 授權</a>發佈"
   url:
     about: about

@@ -166,6 +166,7 @@ pl:
     title: "Ściągnij - Bitcoin"
     pagetitle: "Ściągnij - Bitcoin-QT"
     latestversion: "Najnowsza wersja:"
+    download: "Ściągnij - Bitcoin-QT"
     downloadwinzip: "Pobierz dla Windows (zip)"
     downloadwinexe: "Pobierz dla Windows (exe)"
     downloadubu: "Pobierz dla Ubuntu (PPA)"
@@ -381,12 +382,12 @@ pl:
     menu-events: Wydarzenia
     menu-press: Prasa
     menu-innovation: Innowacje
+    menu-support-bitcoin: Uczestniczyć
     menu-foundation: Fundacja
     menu-about: O bitcoinie
     menu-about-us: "O bitcoin.org"
-    button-wallet: "Wybierz swój portfel"
-    button-know: "Powinieneś wiedzieć"
-    button-support: "Wesprzyj Bitcoin"
+    menu-choose-your-wallet: "Wybierz swój portfel"
+    menu-you-need-to-know: "Powinieneś wiedzieć"
     footer: "© Projekt Bitcoin 2009–2013 Dostępny w ramach <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licencji MIT</a>"
   url:
     about: o

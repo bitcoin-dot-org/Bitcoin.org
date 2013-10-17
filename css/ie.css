@@ -37,7 +37,7 @@ body{
 	color:#fff;
 }
 #menusimple li ul{
-	width:180px;
+	width:190px;
 	min-width:auto;
 }
 #menusimple li ul li a:hover,
@@ -46,6 +46,7 @@ body{
 #menusimple li ul li.active a:visited,
 #menusimple li ul li.active a:active{
 	color:#fff;
+	width:100%;
 }
 
 .titleicon{

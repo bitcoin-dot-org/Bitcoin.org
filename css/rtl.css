@@ -1,6 +1,7 @@
 /*Language specific styles that override default*/
 
 /*Styles for HTML tags*/
+
 body{
 	font-family:'DroidNaskh', sans-serif;
 	direction:rtl;
@@ -8,15 +9,13 @@ body{
 h1,h2{
 	font-family:'DroidNaskh', sans-serif;
 }
-h1,h2,h3{
+h2,h3{
 	text-align:right;
 }
 ul{
 	padding-right:20px;
 	padding-left:auto;
-}
-li{
-	text-align:right;
+	margin-right:0px;
 }
 p{
 	line-height:2em;
@@ -27,14 +26,24 @@ p{
 #head{
 	direction:ltr;
 }
-#lang{
-	font-family:"Helvetica Neue", "Liberation Sans", Arial, sans-serif;
+#lang li ul li{
+	font-family:Arial, sans-serif;
 }
 #menusimple li a,
 #menusimple li a:active,
 #menusimple li a:visited,
 #menusimple li a:link{
 	font-family:'DroidNaskh', sans-serif;
+}
+#menusimple li ul{
+	right:0px;
+	left:auto;
+}
+#menusimple li ul li a,
+#menusimple li ul li a:active,
+#menusimple li ul li a:visited,
+#menusimple li ul li a:link{
+	text-align:right;
 }
 #footer{
 	text-align:right;
@@ -51,19 +60,43 @@ p{
 h1 .rssicon{
 	margin-left:0px;
 	margin-right:10px;
+	margin-bottom:12px;
 }
 h2 .rssicon{
 	margin-left:0px;
 	margin-right:10px;
+	margin-bottom:18px;
+}
+.mainbutton a,
+.mainbutton a:link,
+.mainbutton a:visited,
+.mainbutton a:active{
+	font-family:'DroidNaskh', sans-serif;
+	text-align:right;
+	padding:15px 68px 15px 20px;
+}
+.mainbutton img{
+	margin-left:10px;
+	margin-right:-52px;
+}
+.contributors{
+	text-align:right;
+}
+.contributors span{
+	direction:ltr;
+}
+.downloadbox div{
+	text-align:right;
 }
 .previewrow>div{
 	margin-right:auto;
-	margin-left:17px;
+	margin-left:15px;
 }
 .previewrow>div>a{
 	line-height:1.2em;
 }
-.previewrow>div.last{
+.previewrow>div:first-child+div+div,
+.previewrow>div:first-child+div+div+div+div+div{
 	margin-left:0px;
 }
 .previewrow>div>div>div>span {
@@ -76,20 +109,16 @@ h2 .rssicon{
 .previewrow>div>div>div>h2:first-child+span+p{
 	line-height:1.5em;
 }
-.index a,.index a:link,.index a:active,.index a:visited{
+.index a,
+.index a:link,
+.index a:active,
+.index a:visited{
 	line-height:2em;
 }
 .floatimg{
 	float:right;
 	margin-right:auto;
 	margin-left:10px;
-}
-.press-faq li{
-	line-height:2em;
-}
-.conferencebanner{
-	right:auto;
-	left:5px;
 }
 	
 /*Override UbuntuBold by Droid Naskh*/
@@ -100,6 +129,12 @@ h2 .rssicon{
 /*Styles specific to mobiles*/
 
 @media handheld, only screen and (max-device-height: 37em), only screen and (max-device-width: 50em){
+	h1{
+		text-align:right;
+	}
+	.summary{
+		text-align:right;
+	}
 	#content{
 		position:static;
 		padding:15px 10px 20px 10px;
@@ -109,57 +144,6 @@ h2 .rssicon{
 
 /* Deprecated styles (should be removed when translations are updated) */
 
-body.old #menufor li a,
-body.old #menufor li a:active,
-body.old #menufor li a:visited,
-body.old #menufor li a:link{
-	font-family:'DroidNaskh', sans-serif;
-}
-body.old #menu li a,
-body.old #menu li a:active,
-body.old #menu li a:visited,
-body.old #menu li a:link{
-	font-family:'DroidNaskh', sans-serif;
-}
-body.old h1,body.old h2{
-	font-family:'DroidNaskh', sans-serif;
-}
-body.old h1,body.old h2,body.old h3{
+.resourcesold li{
 	text-align:right;
-}
-body.old .summary{
-	text-align:right;
-}
-body.old #content{
-	padding:20px 30px 30px 265px;
-}
-body.old #rightbox{
-	left:30px;
-	right:auto;
-}
-body.old #choose img,
-body.old #before img,
-body.old #support img,
-body.old #choose .ieimg,
-body.old #before .ieimg,
-body.old #support .ieimg{
-	margin-right:-40px;
-	margin-left:8px;
-}
-body.old #choose>a:first-child,
-body.old #before>a:first-child,
-body.old #support>a:first-child{
-	text-align:right;
-	padding:10px 48px 10px 8px;
-}
-
-/* Deprecated styles specific to mobiles (should be removed when translations are updated) */
-
-@media handheld, only screen and (max-device-height: 37em), only screen and (max-device-width: 50em){
-	body.old #menufor{
-		bottom:0px;
-	}
-	body.old #content{
-		padding:15px 10px 20px 10px;
-	}
 }
