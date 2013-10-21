@@ -40,13 +40,18 @@ body{
 	width:190px;
 	min-width:auto;
 }
+#menusimple li ul li{
+	width:100%;
+}
+#menusimple li ul li a{
+	width:100%;
+}
 #menusimple li ul li a:hover,
 #menusimple li ul li.active a,
 #menusimple li ul li.active a:link,
 #menusimple li ul li.active a:visited,
 #menusimple li ul li.active a:active{
 	color:#fff;
-	width:100%;
 }
 
 .titleicon{
@@ -54,6 +59,9 @@ body{
 	margin-right:5px;
 }
 
+.maindesc{
+	width:760px;
+}
 .mainlist div{
 	/*This one is also required for IE7*/
 	zoom:1;
