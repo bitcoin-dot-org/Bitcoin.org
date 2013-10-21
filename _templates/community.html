@@ -22,12 +22,11 @@ id: community
     <li><strong>#bitcoin-otc</strong>  {% translate chanotc %}</li>
     <li><strong>#bitcoin-market</strong> {% translate chanmarket %}</li>
     <li><strong>#bitcoin-mining</strong> {% translate chanmining %}</li>
-    {% case page.lang %}
-    {% when 'es' %}
+    {% if page.lang == 'es' %}
     <li><strong>#bitcoin-ar</strong> (Comunidad Bitcoin Argentina)</li>
     <li><strong>#bitcoin-es</strong> (Comunidad Bitcoin en español)</li>
     <li><strong>#bitcoin-otc-ar</strong> (Mercado OTC de Bitcoin en Argentina)</li>
-    {% endcase %}
+    {% endif %}
   </ul>
 </li>
 {% case page.lang %}
@@ -43,12 +42,12 @@ id: community
 {% else %}
 <li>{% translate linkmeetup %}</li>
 {% endcase %}
-{% case page.lang %}
-{% when 'es' %}
+{% if page.lang == 'es' %}
 <li><a href="http://www.forobtc.com/">Foro Bitcoin en Español</a></li>
-{% when 'pl' %}
+{% endif %}
+{% if page.lang == 'pl' %}
 <li><a href="https://forum.bitcoin.pl/">Polski portal bitcoin.pl</a></li>
-{% endcase %}
+{% endif %}
 </ul>
 
 {% else %}
@@ -86,14 +85,14 @@ id: community
     <p>#bitcoin-otc  {% translate chanotc %}</li>
     <p>#bitcoin-market {% translate chanmarket %}</li>
     <p>#bitcoin-mining {% translate chanmining %}</li>
-    {% case page.lang %}
-    {% when 'fr' %}
+    {% if page.lang == 'fr' %}
     <p>#bitcoin-fr (Le Bitcoin en général, français)</li>
-    {% when 'es' %}
+    {% endif %}
+    {% if page.lang == 'es' %}
     <p>#bitcoin-ar (Comunidad Bitcoin Argentina)</li>
     <p>#bitcoin-es (Comunidad Bitcoin en español)</li>
     <p>#bitcoin-otc-ar (Mercado OTC de Bitcoin en Argentina)</li>
-    {% endcase %}
+    {% endif %}
   </div>
 </div>
 </div>

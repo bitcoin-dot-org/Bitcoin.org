@@ -99,7 +99,7 @@ h2 .rssicon{
 .previewrow>div:first-child+div+div+div+div+div{
 	margin-left:0px;
 }
-.previewrow>div>div>div>span {
+.previewrow>div>div>div>span{
 	right:auto;
 	left:30px;
 }

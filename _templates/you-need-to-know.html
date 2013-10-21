@@ -67,7 +67,9 @@ id: you-need-to-know
 <h2><img class="titleicon" src="/img/ico_anon.svg" alt="Icon" />{% translate anonymous %}</h2>
 <p>{% translate anonymoustxt %}</p>
 
-{% case page.lang %}{% when 'ar' or 'es' or 'fa' or 'ru' %}{% else %}
+{% case page.lang %}
+{% when 'ar' or 'es' or 'fa' or 'ru' %}
+{% else %}
 <h2><img class="titleicon" src="/img/ico_fast.svg" alt="Icon" />{% translate instant %}</h2>
 <p>{% translate instanttxt %}</p>
 {% endcase %}

@@ -70,10 +70,10 @@ body{
 .mainlist div div{
 	text-align:left;
 }
-.mainlist div:first-child + div {
+.mainlist div:first-child + div{
 	text-align:center;
 }
-.mainlist div:first-child + div + div {
+.mainlist div:first-child + div + div{
 	text-align:right;
 }
 .mainlist .ieimg{
@@ -271,7 +271,7 @@ body{
 	width:280px;
 	position:static;
 }
-.previewrow div:hover div {
+.previewrow div:hover div{
 	height:auto;
 }
 .previewcol .previewrow{
@@ -316,7 +316,7 @@ body{
 .previewrow div div div span img{
 	margin-left:4px;
 }
-.previewrow div div div p {
+.previewrow div div div p{
 	font-size:95%;
 	line-height:1.2em;
 	margin:0px;
@@ -379,17 +379,17 @@ body{
 }
 
 .press-volunteer div div{
-	width: 400px;
-	height: 150px;
-	display: inline;
+	width:400px;
+	height:150px;
+	display:inline;
 	zoom:1;
-	margin-right: 20px;
-	margin-bottom: 30px;
-	vertical-align: top;
+	margin-right:20px;
+	margin-bottom:30px;
+	vertical-align:top;
 }
 .press-volunteer div div img{
-	float: left;
-	margin-right: 30px;
+	float:left;
+	margin-right:30px;
 }
 .press-volunteer div div p{
 	font-weight:expression((this.parentNode.getElementsByTagName('P')[0]==this)?'bold':'');
@@ -398,7 +398,7 @@ body{
 	font-size:expression((this.parentNode.getElementsByTagName('P')[2]==this)?'80%':'');
 }
 .press-volunteer div p img{
-	vertical-align: bottom;
+	vertical-align:bottom;
 }
 .press-volunteer div p{
 	height:expression((this.parentNode.getElementsByTagName('P')[1]==this&&this.parentNode.parentNode.getElementsByTagName('DIV')[0]==this.parentNode&&this.parentNode.parentNode.parentNode.getElementsByTagName('DIV')[0]==this.parentNode.parentNode)?'0px':'');
@@ -436,11 +436,11 @@ body{
 	margin-bottom:0px;
 }
 
-.press-materials div a {
+.press-materials div a{
 	font-weight:bold;
 	font-size:110%;
 }
-.press-materials div {
+.press-materials div{
 	display:inline;
 	zoom:1;
 	width:278px;
@@ -451,7 +451,7 @@ body{
 	height:250px;
 	overflow:hidden;
 }
-.press-materials p a {
+.press-materials p a{
 	font-weight:normal;
 	font-size:100%;
 	margin-right:10px;
@@ -496,9 +496,9 @@ body.old #menu li a:link{
 }
 body.old #menu li:hover a,
 body.old #menu li.active a{
-	color: #000;
-	background-color: #fff;
-	border: 2px solid #ebebeb;
+	color:#000;
+	background-color:#fff;
+	border:2px solid #ebebeb;
 }
 
 body.old #menufor li a,
@@ -518,7 +518,7 @@ body.old #support a{
 }
 body.old #choose .ieimg,
 body.old #before .ieimg,
-body.old #support .ieimg {
+body.old #support .ieimg{
 	vertical-align:middle;
 	margin-right:8px;
 	margin-left:-40px;
