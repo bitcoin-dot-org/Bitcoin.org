@@ -30,10 +30,15 @@ module Jekyll
       Dir.chdir(less_dir) do
         choices = Dir['**/*'].reject { |x| File.symlink?(x) }
         if choices.include?(@file)
-          source = File.read(@file)
-          f = IO.popen("lessc -", "w+")
-          f.write(source)
-          f.close_write()
+
+          if /\.css$/.match(@file)
+            f = file = File.new(@file, "r")
+          else
+            source = File.read(@file)
+            f = IO.popen("lessc -", "w+")
+            f.write(source)
+            f.close_write()
+          end
 
           css = f.readlines().join()
 

@@ -20,9 +20,9 @@ menu:
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
 {% lesscss main.less %}
-<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/css/ie.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
-{% if page.lang == 'ar' or page.lang == 'fa' %}<link rel="stylesheet" type="text/css" href="/css/rtl.css">{% endif %}
-{% if page.lang == 'pl' or page.lang == 'ru' or page.lang == 'zh_CN' or page.lang == 'zh_TW' %}<link rel="stylesheet" type="text/css" href="/css/sans.css">{% endif %}
+<!--[if lt IE 8]>{% lesscss ie.css %}<script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+{% if page.lang == 'ar' or page.lang == 'fa' %}{% lesscss rtl.less %}{% endif %}
+{% if page.lang == 'pl' or page.lang == 'ru' or page.lang == 'zh_CN' or page.lang == 'zh_TW' %}{% lesscss sans.less %}{% endif %}
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
