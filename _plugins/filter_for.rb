@@ -1,10 +1,13 @@
 #filter_for allows to loop in site.pages sorted and filtered
-#by custom page variables. Example :
+#by custom page variables.
+
+#Example:
 #{% filter_for p in site.pages sort_by:date category:release lang:{{page.lang}} %}
 #  ..
 #{% endfilter_for %}
 
 module Jekyll
+
   module SortedForImpl
     def render(context)
       sorted_collection = collection_to_sort context
@@ -52,6 +55,7 @@ module Jekyll
       'endfilter_for'
     end
   end
+
 end
  
 Liquid::Template.register_tag('filter_for', Jekyll::SortedForTag)

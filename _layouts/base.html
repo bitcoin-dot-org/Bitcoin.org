@@ -49,9 +49,9 @@ menu:
       </li>
     </ul>
     <a id="logo" href="/{{ page.lang }}/"><img src="/img/logotop.svg" alt="Bitcoin"></a>
-    <a href="#" id="menumobile" onclick="mobileshow(event);"></a>
+    <a href="#" id="menumobile" onclick="mobileMenuShow(event);"></a>
     <ul id="menusimple">
-      <li><a href="#" onclick="mobilehover(event);">{% translate menu-intro layout %}</a>
+      <li><a href="#" onclick="mobileMenuHover(event);">{% translate menu-intro layout %}</a>
         <ul>
           <li{% if page.id == 'bitcoin-for-individuals' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a></li>
           <li{% if page.id == 'bitcoin-for-businesses' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a></li>
@@ -69,7 +69,7 @@ menu:
           <li{% if page.id == 'you-need-to-know' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a></li>
         </ul>
       </li>
-      <li><a href="#" onclick="mobilehover(event);">{% translate menu-resources layout %}</a>
+      <li><a href="#" onclick="mobileMenuHover(event);">{% translate menu-resources layout %}</a>
         <ul>
           <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a></li>
           <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
@@ -120,7 +120,7 @@ menu:
     <span>{% translate footer layout %}</span>
     </div></div>
   </div>
-  <script type="text/javascript">svgfallback();</script>
+  <script type="text/javascript">fallbackSVG();</script>
 </body>
 
 </html>

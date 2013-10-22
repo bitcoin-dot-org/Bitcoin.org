@@ -1,3 +1,6 @@
+#sitemap.rb generates a sitemap.xml file, which also includes
+#alternate hreflang for each translated version of each page.
+
 require 'yaml'
 require 'cgi'
 
@@ -11,7 +14,6 @@ module Jekyll
 
   class SitemapGenerator < Generator
     def generate(site)
-      
       #Load translations
       locs = {}
       Dir.foreach('_translations') do |file|
@@ -110,7 +112,6 @@ module Jekyll
         sitemap.puts '</urlset>'
       end
       site.static_files << SitemapFile.new(site, site.source, '', 'sitemap.xml')
-
     end
   end
 

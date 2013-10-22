@@ -1,37 +1,39 @@
-function addEvent(a,b,c){return (a.addEventListener)?a.addEventListener(b,c,false):(a.attachEvent)?a.attachEvent('on'+b,c):false;}
-
-
-function removeEvent(a,b,c){return (a.removeEventListener)?a.removeEventListener(b,c,false):(a.detachEvent)?a.detachEvent('on'+b,c):false;}
-
-
-function cancelEvent(e){if(!e)var e=window.event;(e.preventDefault)?e.preventDefault():e.returnValue=false;}
-
-
-function getEventTarget(e){if(!e)var e=window.event;return (e.target&&e.target.nodeType==3)?e.target.parentNode:(e.target)?e.target:e.srcElement;}
-
-
-function supportsSVG(){
-//Old FF 3.5 and Safari 3 versions have a very poor svg support
-//http://www.w3.org/TR/SVG11/feature#Image Defeat FF 3.5 only
-//http://www.w3.org/TR/SVG11/feature#Animation Defeat Saf 3 but also returns false in IE9
-//http://www.w3.org/TR/SVG11/feature#BasicGraphicsAttribute Defeat Saf 3 but also returns false in Chrome and safari4
-//http://www.w3.org/TR/SVG11/feature#Text Defeat Saf 3 but also returns false in FF and safari4
-if(!document.createElementNS||!document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect)return false;
-if(!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"))return false;
-if(!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicGraphicsAttribute","1.1")&&!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Animation","1.1")&&!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Text","1.1"))return false;
-return true;
+function addEvent(a,b,c){
+//Attach event to a DOM node.
+//Ex. addEvent(node,'click',function);
+return (a.addEventListener)?a.addEventListener(b,c,false):(a.attachEvent)?a.attachEvent('on'+b,c):false;
 }
 
+function removeEvent(a,b,c){
+//Detach event from a DOM node.
+//Ex. removeEvent(node,'click',function);
+return (a.removeEventListener)?a.removeEventListener(b,c,false):(a.detachEvent)?a.detachEvent('on'+b,c):false;
+}
+
+function cancelEvent(e){
+//Cancel current event.
+//Ex. cancelEvent(event);
+if(!e)var e=window.event;(e.preventDefault)?e.preventDefault():e.returnValue=false;
+}
+
+function getEventTarget(e){
+//Return target DOM node on which the event is triggered.
+//Ex. getEventTarget(event);
+if(!e)var e=window.event;return (e.target&&e.target.nodeType==3)?e.target.parentNode:(e.target)?e.target:e.srcElement;
+}
 
 function getStyle(a,b){
+//Return the value of the computed style on a DOM node.
+//Ex. getStyle(node,'padding-bottom');
 if(window.getComputedStyle)return document.defaultView.getComputedStyle(a,null).getPropertyValue(b);
 var n=b.indexOf('-');
 if(n!==-1)b=b.substr(0,n)+b.substr(n+1,1).toUpperCase()+b.substr(n+2);
 return a.currentStyle[b];
 }
 
-
 function getWidth(a){
+//Return the integer value of the computed width of a DOM node.
+//Ex. getWidth(node);
 var w=getStyle(a,'width');
 if(w.indexOf('px')!==-1)return parseInt(w.replace('px',''));
 var p=[getStyle(a,'padding-top'),getStyle(a,'padding-right'),getStyle(a,'padding-bottom'),getStyle(a,'padding-left')];
@@ -42,8 +44,9 @@ for(var i=0;i<4;i++){
 return Math.max(0,a.offsetWidth-p[1]-p[3]);
 }
 
-
 function getHeight(a){
+//Return the integer value of the computed height of a DOM node.
+//Ex. getHeight(node);
 var h=getStyle(a,'height');
 if(h.indexOf('px')!==-1)return parseInt(h.replace('px',''));
 var p=[getStyle(a,'padding-top'),getStyle(a,'padding-right'),getStyle(a,'padding-bottom'),getStyle(a,'padding-left')];
@@ -54,8 +57,22 @@ for(var i=0;i<4;i++){
 return Math.max(0,a.offsetHeight-p[0]-p[2]);
 }
 
+function supportsSVG(){
+//Return true if the browser supports SVG.
+//Ex. if(!supportsSVG()){..apply png fallback..}
+//Old FF 3.5 and Safari 3 versions have svg support, but a very poor one
+//http://www.w3.org/TR/SVG11/feature#Image Defeat FF 3.5 only
+//http://www.w3.org/TR/SVG11/feature#Animation Defeat Saf 3 but also returns false in IE9
+//http://www.w3.org/TR/SVG11/feature#BasicGraphicsAttribute Defeat Saf 3 but also returns false in Chrome and safari4
+//http://www.w3.org/TR/SVG11/feature#Text Defeat Saf 3 but also returns false in FF and safari4
+if(!document.createElementNS||!document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect)return false;
+if(!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"))return false;
+if(!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicGraphicsAttribute","1.1")&&!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Animation","1.1")&&!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Text","1.1"))return false;
+return true;
+}
 
-function svgfallback(){
+function fallbackSVG(){
+//Replace all images extensions from .svg to .png if browser doesn't support SVG files.
 if(supportsSVG())return;  
 for(var i=0,nd=document.getElementsByTagName('*'),n=nd.length;i<n;i++){
 	if(nd[i].nodeName=='IMG'&&/.*\.svg$/.test(nd[i].src))nd[i].src=nd[i].src.slice(0,-3)+'png';
@@ -64,8 +81,8 @@ for(var i=0,nd=document.getElementsByTagName('*'),n=nd.length;i<n;i++){
 }
 }
 
-
-function walletshow(e){
+function walletShow(e){
+//Replace a wallet disclaimer by the wallet description in the "Choose your wallet" page when the user click the button.
 var t=getEventTarget(e);
 while(t.getAttribute('data-id')===null||t.getAttribute('data-id')=='')t=t.parentNode;
 var d=t.getElementsByTagName('DIV')[0];
@@ -85,8 +102,8 @@ dd.innerHTML=ss.innerHTML;
 cancelEvent(e);
 }
 
-
-function mobileshow(e){
+function mobileMenuShow(e){
+//Show the mobile menu when the visitors touch the menu icon.
 var mm=document.getElementById('menusimple');
 var ml=document.getElementById('langselect');
 var t=document.getElementById('menumobile');
@@ -96,8 +113,7 @@ t.parentNode.removeChild(t);
 cancelEvent(e);
 }
 
-
-function mobilehover(e){
+function mobileMenuHover(e){
 //Add a delay before hidding menu for mobiles to prevent accidental clicks
 var t=getEventTarget(e);
 while(t.nodeName!='LI'||!t.parentNode.id)t=t.parentNode;
@@ -112,8 +128,8 @@ for(var i=0,nd=t.parentNode.getElementsByTagName('UL'),n=nd.length;i<n;i++){
 cancelEvent(e);
 }
 
-
-function boxshow(e){
+function boxShow(e){
+//Display the box content when the user click a box on the "Secure your wallet" page.
 var p=t=getEventTarget(e);
 while(p.nodeName!='DIV')p=p.parentNode;
 var sh=getHeight(p);
@@ -131,8 +147,8 @@ setTimeout(function(){
 cancelEvent(e);
 }
 
-
-function faqshow(e){
+function faqShow(e){
+//Display the content of a question in the FAQ at user request.
 var p=t=getEventTarget(e);
 while(p.nodeType!=1||p.nodeName!='DIV')p=p.nextSibling;
 var pp=p.cloneNode(true);
@@ -146,8 +162,8 @@ else p.style.height=nhe+'px';
 cancelEvent(e);
 }
 
-
-function materialshow(e){
+function materialShow(e){
+//Display more materials on the "Press center" page at user request.
 var p=t=getEventTarget(e);
 while(p.nodeType!=1||p.nodeName!='DIV')p=p.previousSibling;
 var pp=p.cloneNode(true);
@@ -162,8 +178,8 @@ t.style.display='none';
 cancelEvent(e);
 }
 
-
-function disclaimershow(e){
+function disclaimerShow(e){
+//Display the complete interviewees disclaimer on the "Press center" page at user request.
 var p=t=getEventTarget(e);
 while(p.nodeType!=1||p.nodeName!='P')p=p.parentNode;
 p=p.nextSibling;
@@ -176,8 +192,8 @@ t.parentNode.removeChild(t);
 cancelEvent(e);
 }
 
-
 function librariesShow(e){
+//Display more open source projects on the "Development" page at user request.
 var p=t=getEventTarget(e);
 while(p.nodeType!=1||p.nodeName!='UL')p=p.parentNode;
 var sh=getHeight(p);
@@ -194,16 +210,15 @@ setTimeout(function(){
 cancelEvent(e);
 }
 
-
 function freenodeShow(e){
+//Display freenode chat window on the "Development" page at user request.
 document.getElementById('chatbox').innerHTML='<iframe style=width:98%;min-width:400px;height:600px src="http://webchat.freenode.net/?channels=bitcoin-dev" />';
 cancelEvent(e);
 }
 
-
 function makeEditable(e){
-//This function allows translators and writers to preview their work.
-//It works as an easter egg that makes the page editable when user hold their mouse button for one second.
+//An easter egg that makes the page editable when user click on the page and hold their mouse button for one second.
+//This trick allows translators and writers to preview their work.
 if(!e)var e=window.event;
 switch(e.type){
 case 'mousedown':

@@ -1,3 +1,10 @@
+#events.rb generates blank hidden event pages using files
+#in _events and assign them the 'event' category.
+
+#This is later used to loop through site.pages in order
+#to display the event's list in chronological order, both
+#on the events RSS file and translated events pages.
+
 require 'yaml'
 
 module Jekyll
@@ -17,7 +24,6 @@ module Jekyll
 
   class EventPageGenerator < Generator
     def generate(site)
-      #generate each event page
       Dir.foreach('_events') do |file|
         next if file == '.' or file == '..'
         date = file.split('-')

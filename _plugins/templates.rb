@@ -1,12 +1,12 @@
-require 'yaml'
-require 'cgi'
-
-#This plugin generates all translated pages using templates in
+#templates.rb generates all translated pages using templates in
 #_templates. The final file name of each page is defined in 
 #the url section of each translations in _translations.
 
-#If a page is defined in _redirects.yml, this plugin will
+#If a page is defined in _redirects, this plugin will
 #generate a redirection instead of using the template.
+
+require 'yaml'
+require 'cgi'
 
 module Jekyll
 

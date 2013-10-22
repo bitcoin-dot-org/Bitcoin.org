@@ -1,3 +1,17 @@
+#releases.rb generates release pages using files in _releases
+#and assign them the 'release' category.
+
+#This is later used to loop through site.pages in order
+#to display the release's list in chronological order, both
+#on the "Version history" page and RSS file.
+
+#This plugin also set site.DOWNLOAD_VERSION to the latest
+#available version of Bitcoin-QT, which is used everywhere
+#in the download page.
+
+#Alias redirection pages are generated in /releases to avoid
+#breaking previous links in various websites.
+
 require 'yaml'
 
 module Jekyll

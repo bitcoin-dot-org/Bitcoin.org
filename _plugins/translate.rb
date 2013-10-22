@@ -1,6 +1,3 @@
-require 'yaml'
-require 'cgi'
-
 #translate( id [,category ,lang] )
 #Return translated string using translations files
 
@@ -17,7 +14,11 @@ require 'cgi'
 #/en/vocabulary#wallet when the page is in english or
 #/fr/vocabulaire#porte-monnaie when the page is in french.
 
+require 'yaml'
+require 'cgi'
+
 module Jekyll
+
   class TranslateTag < Liquid::Tag
 
     def initialize(tag_name, id, tokens)
@@ -82,6 +83,7 @@ module Jekyll
       text
     end
   end
+
 end
 
 Liquid::Template.register_tag('translate', Jekyll::TranslateTag)

@@ -1,13 +1,17 @@
-require 'yaml'
-require 'ffi-icu'
-
 #alphab_for allows to loop in an array sorted by the translated value of
-#each key using appropriate collation for the current language. Example :
+#each key using appropriate collation for the current language. In short,
+#this is used to generate translated table of contents.
+
+#Example:
 #{% alphab_for v in page.voc %}
 #  ..
 #{% endalphab_for %}
 
+require 'yaml'
+require 'ffi-icu'
+
 module Jekyll
+
   module AlphabForImpl
     def render(context)
       #load translations files
@@ -61,7 +65,6 @@ module Jekyll
  
   class AlphabForTag < Liquid::For
     include AlphabForImpl
- 
     def collection_to_sort(context)
       return context[@collection_name].dup
     end
@@ -70,6 +73,7 @@ module Jekyll
       'endalphab_for'
     end
   end
+
 end
  
 Liquid::Template.register_tag('alphab_for', Jekyll::AlphabForTag)

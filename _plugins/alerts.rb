@@ -1,7 +1,22 @@
+#alerts.rb generates alert pages using files in _alerts
+#and assign them the 'alert' category.
+
+#This is later used to loop through site.pages in order
+#to display the alert's list in chronological order, both
+#on the "Alerts" page and RSS file.
+
+#If "banner" variable is set in one alert file, site.ALERT
+#variable is set, allowing a clickable alert banner to be
+#displayed in _layouts/base.html .
+
+#If "alias" variable is set in one alert file, a short alias
+#file for the alert (like /android.html) is generated for
+#Bitcoin-Qt non-clickable alerts.
+
 require 'yaml'
 
 module Jekyll
-  
+
   class AlertPage < Page
     def initialize(site, base, lang, srcdir, src, dstdir, dst, date)
       @site = site
