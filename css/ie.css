@@ -3,56 +3,67 @@ body{
 	behavior:url("/css/csshover.htc");
 }
 
-#head div{
-	width:expression(this.parentNode.id&&this.parentNode.id=='head'?'940px':'');
-	margin:expression(this.parentNode.id&&this.parentNode.id=='head'?'auto':'');
-	position:expression(this.parentNode.id&&this.parentNode.id=='head'?'relative':'');
-	z-index:expression(this.parentNode.id&&this.parentNode.id=='head'?'100':'');
-}
-#body{
+.head div{
 	width:940px;
 }
-#footer{
+.body{
+	width:940px;
+}
+.footer{
 	width:800px;
 }
-#footer div a{
-	margin-right:expression(this.parentNode.nodeName=='DIV'?'15px':'');
-}
-#lang{
+.lang{
 	border-left:2px solid #f7f7f7;
 	border-right:2px solid #f7f7f7;
 	border-top:2px solid #f7f7f7;
 }
 
-#menusimple li{
+.menusimple li{
 	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;
 }
-#menusimple li a{
+.menusimple li a{
 	font-family:sans-serif;
 }
-#menusimple li:hover a,
-#menusimple li.active a{
+.menusimple li:hover a,
+.menusimple li.active a{
 	color:#fff;
 }
-#menusimple li ul{
+.menusimple li ul{
 	width:190px;
 	min-width:auto;
 }
-#menusimple li ul li{
+.menusimple li ul li{
 	width:100%;
 }
-#menusimple li ul li a{
+.menusimple li ul li a{
 	width:100%;
 }
-#menusimple li ul li a:hover,
-#menusimple li ul li.active a,
-#menusimple li ul li.active a:link,
-#menusimple li ul li.active a:visited,
-#menusimple li ul li.active a:active{
+.menusimple li ul li a:hover,
+.menusimple li ul li.active a,
+.menusimple li ul li.active a:link,
+.menusimple li ul li.active a:visited,
+.menusimple li ul li.active a:active{
 	color:#fff;
 }
+
+.index{
+	font-size:0;
+}
+.index li{
+	margin-left:-16px;
+}
+.index ul li{
+	margin-left:16px;
+}
+.index a,
+.index a:link,
+.index a:active,
+.index a:visited{
+	font-size:16px;
+}
+
 
 .titleicon{
 	vertical-align:middle;
@@ -133,11 +144,11 @@ body{
 	margin-left:expression(this.parentNode.getElementsByTagName('DIV')[2]==this?'-1px':'');
 }
 .start div div div{
-	padding-top:0px;
+	padding-top:0;
 }
 .start>div>div:first-child+div{
 	/*This one is for IE7 only*/
-	border-top:0px;
+	border-top:0;
 }
 
 .resources div{
@@ -157,7 +168,7 @@ body{
 }
 .resources>div>div:first-child+div{
 	/*This one is for IE7 only*/
-	border-top:0px;
+	border-top:0;
 }
 
 .downloadbox{
@@ -204,7 +215,7 @@ body{
 }
 .boxexpand h3{
 	display:expression((this.parentNode.nodeName=='DIV'&&this.parentNode.getElementsByTagName('H3')[0]==this)?'block':'');
-	margin:expression((this.parentNode.nodeName=='DIV'&&this.parentNode.getElementsByTagName('H3')[0]==this)?'20px 0px':'');
+	margin:expression((this.parentNode.nodeName=='DIV'&&this.parentNode.getElementsByTagName('H3')[0]==this)?'20px 0':'');
 }
 .boxexpand h3 a:link,
 .boxexpand h3 a:visited,
@@ -265,12 +276,12 @@ body{
 	height:72px;
 }
 .previewrow div div{
-	height:0px;
+	height:0;
 	position:absolute;
 	left:-105px;
 	right:-110px;
 	bottom:100px;
-	padding:0px;
+	padding:0;
 	z-index:1000;
 	overflow:hidden;
 	width:280px;
@@ -287,32 +298,27 @@ body{
 }
 .previewrow div div div.b1{
 	background:url(/img/bubbletop.png) bottom center no-repeat;
-	padding:0px;
+	padding:0;
 	height:10px;
 }
 .previewrow div div div.b2{
 	background:url(/img/bubblemiddle.png) bottom center repeat-y;
-	padding:0px;
+	padding:0;
 	padding-top:10px;
 }
 .previewrow div div div.b3{
 	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bubblebottom.png', sizingMethod='scale');
-	padding:0px;
+	padding:0;
 	height:64px;
 }
 .previewrow>div>div>div:first-child+div{
-	padding:0px;
-}
-.previewrow div div div p{
-	width:220px;
-	position:relative;
-	left:30px;
+	padding:0;
 }
 .previewrow div div div h2{
 	font-size:130%;
 	position:relative;
 	left:30px;
-	margin:0px;
+	margin:0;
 }
 .previewrow div div div span{
 	/*FIXME can't get to make it work on IE6-7*/
@@ -326,12 +332,13 @@ body{
 }
 .previewrow div div div p{
 	font-size:95%;
-	line-height:1.2em;
-	margin:0px;
-	padding:10px 0px;
-}
-.previewrow div div div p{
+	margin:0;
+	padding:10px 0;
 	text-align:expression((this.parentNode.getElementsByTagName('P')[1]==this)?'center':'');
+	width:220px;
+	position:relative;
+	left:30px;
+	line-height:1.5em;
 }
 .previewrow div div div p a,
 .previewrow div div div p a:visited,
@@ -434,14 +441,14 @@ body{
 	font-weight:normal;
 }
 .press-faq div div{
-	height:0px;
+	height:0;
 	width:auto;
-	margin:10px 0px 0px 0px;
+	margin:10px 0 0 0;
 	overflow:hidden;
 	text-align:justify;
 }
 .press-faq div span p{
-	margin-bottom:0px;
+	margin-bottom:0;
 }
 
 .press-materials div a{

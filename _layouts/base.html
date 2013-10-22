@@ -33,13 +33,13 @@ menu:
     <div><div>{{ site.ALERT }}</div></div>
   </div>
 {% endif %}
-  <div id="head"><div>
-    <select id="langselect" onchange="window.location=this.value;">
+  <div class="head"><div>
+    <select id="langselect" class="langselect" onchange="window.location=this.value;">
     {% for lang in site.langsorder %}{% if lang.id == page.lang %}{% assign active = ' selected="selected"'%}{% else %}{% assign active = ''%}{% endif %}
       <option value="/{{ lang.id }}/{% translate {{page.id}} url {{lang.id}} %}"{{ active }}>{{ site.langs[lang.id] }}</option>
     {% endfor %}
     </select>
-    <ul id="lang">
+    <ul class="lang">
       <li><a href="#" onclick="return false;">{{ site.langs[page.lang] }}</a>
       <ul>
       {% for lang in site.langsorder %}{% if lang.id != page.lang %}
@@ -48,9 +48,9 @@ menu:
       </ul>
       </li>
     </ul>
-    <a id="logo" href="/{{ page.lang }}/"><img src="/img/logotop.svg" alt="Bitcoin"></a>
-    <a href="#" id="menumobile" onclick="mobileMenuShow(event);"></a>
-    <ul id="menusimple">
+    <a class="logo" href="/{{ page.lang }}/"><img src="/img/logotop.svg" alt="Bitcoin"></a>
+    <a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" href="#"></a>
+    <ul id="menusimple" class="menusimple">
       <li><a href="#" onclick="mobileMenuHover(event);">{% translate menu-intro layout %}</a>
         <ul>
           <li{% if page.id == 'bitcoin-for-individuals' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a></li>
@@ -98,11 +98,11 @@ menu:
       {% endcase %}
     </ul>
   </div></div>
-  <div id="body">
-    <div id="content">
+  <div class="body">
+    <div id="content" class="content">
     {{ content }}
     </div>
-    <div id="footer"><div>
+    <div class="footer"><div>
     <a href="/en/alerts">Network Status</a>
     <a href="https://bitcoinfoundation.org/">{% translate menu-foundation layout %}</a>
     {% case page.lang %}

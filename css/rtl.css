@@ -15,7 +15,7 @@ h2,h3{
 ul{
 	padding-right:20px;
 	padding-left:auto;
-	margin-right:0px;
+	margin-right:0;
 }
 p{
 	line-height:2em;
@@ -23,34 +23,34 @@ p{
 
 /*Styles for whole website*/
 
-#head{
+.head{
 	direction:ltr;
 }
-#lang li ul li{
+.lang li ul li{
 	font-family:Arial, sans-serif;
 }
-#menusimple li a,
-#menusimple li a:active,
-#menusimple li a:visited,
-#menusimple li a:link{
+.menusimple li a,
+.menusimple li a:active,
+.menusimple li a:visited,
+.menusimple li a:link{
 	font-family:'DroidNaskh', sans-serif;
 }
-#menusimple li ul{
-	right:0px;
+.menusimple li ul{
+	right:0;
 	left:auto;
 }
-#menusimple li ul li a,
-#menusimple li ul li a:active,
-#menusimple li ul li a:visited,
-#menusimple li ul li a:link{
+.menusimple li ul li a,
+.menusimple li ul li a:active,
+.menusimple li ul li a:visited,
+.menusimple li ul li a:link{
 	text-align:right;
 }
-#footer{
+.footer{
 	text-align:right;
-	padding:20px 40px 20px 0px;
+	padding:20px 40px 20px 0;
 }
-#footer>div>a{
-	margin-right:0px;
+.footer>div>a{
+	margin-right:0;
 	margin-left:15px;
 }
 .titleicon{
@@ -58,12 +58,12 @@ p{
 	margin-left:5px;
 }
 h1 .rssicon{
-	margin-left:0px;
+	margin-left:0;
 	margin-right:10px;
 	margin-bottom:12px;
 }
 h2 .rssicon{
-	margin-left:0px;
+	margin-left:0;
 	margin-right:10px;
 	margin-bottom:18px;
 }
@@ -97,7 +97,7 @@ h2 .rssicon{
 }
 .previewrow>div:first-child+div+div,
 .previewrow>div:first-child+div+div+div+div+div{
-	margin-left:0px;
+	margin-left:0;
 }
 .previewrow>div>div>div>span{
 	right:auto;
@@ -135,7 +135,7 @@ h2 .rssicon{
 	.summary{
 		text-align:right;
 	}
-	#content{
+	.content{
 		position:static;
 		padding:15px 10px 20px 10px;
 		text-align:right;
