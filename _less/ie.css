@@ -245,6 +245,9 @@ body{
 .previewrow h2{
 	font-size:115%;
 }
+.previewrow p{
+	font-size:95%;
+}
 .previewrow div{
 	/*zoom and display are also required for IE7*/
 	zoom:expression(this.parentNode.className=='previewrow'?'1':'');
@@ -316,7 +319,6 @@ body{
 	padding:0;
 }
 .previewrow div div div h2{
-	font-size:130%;
 	position:relative;
 	left:30px;
 	margin:0;

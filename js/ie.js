@@ -34,4 +34,8 @@ if ((version >= 5.5) && (document.body.filters))
 }
 }
 
+//Let other scripts know browser is IE6-7
+legacyIE=true;
+
+//Render all transparent pngs
 window.onload=pngfix;

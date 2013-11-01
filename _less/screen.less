@@ -720,6 +720,9 @@ li p{
 .previewrow>h2{
 	font-size:115%;
 }
+.previewrow>p{
+	font-size:95%;
+}
 .previewrow>div{
 	display:inline-block;
 	position:relative;
@@ -777,7 +780,7 @@ li p{
 }
 .previewrow>div>div>div:first-child+div{
 	background:url(/img/bubblemiddle.svg) bottom center repeat-y;
-	padding:0 30px;
+	padding:0 25px;
 }
 .previewrow>div>div>div:first-child+div+div{
 	background:url(/img/bubblebottom.svg) bottom center no-repeat;
@@ -791,6 +794,7 @@ li p{
 .previewrow>div>div>div>h2{
 	margin:0;
 	padding-top:10px;
+	font-size:115%;
 }
 .previewrow>div>div>div>span>img{
 	margin-left:4px;
@@ -1233,8 +1237,14 @@ h2 .rssicon{
 	}
 	.content{
 		position:static;
-		margin:0 5px;
+		text-align:left;
+		margin:0;
 		padding:15px 10px 20px 10px;
+		border-right:0;
+		border-left:0;
+		-webkit-border-radius:0;
+		-moz-border-radius:0;
+		border-radius:0;
 	}
 	.footer{
 		padding:20px 0 20px 5px;
@@ -1287,10 +1297,19 @@ h2 .rssicon{
 		margin-right:0;
 		margin-bottom:20px;
 	}
+	.press-volunteer>div:first-child>p:first-child+p{
+		text-align:left;
+	}
 	.press-faq>div{
 		width:auto;
 		display:block;
 		margin-right:0;
+	}
+	.press-faq>div>div{
+		text-align:left;
+	}
+	.press-faq li{
+		text-align:left;
 	}
 	.press-news>div{
 		width:auto;
@@ -1325,6 +1344,9 @@ h2 .rssicon{
 	.mainlist>div:first-child,
 	.mainlist>div:first-child+div,
 	.mainlist>div:first-child+div+div{
+		text-align:left;
+	}
+	.start p{
 		text-align:left;
 	}
 	.start>div{
