@@ -43,7 +43,7 @@ en:
     simple: "The simplest of all payment systems"
     simpletext: "Unless payment needs to be associated with automatic invoices, accepting money is as simple as sending a bitcoin: link or displaying a QR code. This simple setup is within reach of any user and can fulfill the needs of a good range of clients. When done publicly, it is especially suitable for transparent donations and tips."
     api: "Many third party APIs"
-    apitext: "There are many third party payment processing services that provide APIs; you don't need to store bitcoins on your server and handle the security that this implies. Additionally, most of these APIs allow you to exchange your bitcoins into your local currency at competitive costs."
+    apitext: "There are many third party payment processing services that provide APIs; you don't need to store bitcoins on your server and handle the security that this implies. Additionally, most of these APIs allow you to process invoices and exchange your bitcoins into your local currency at competitive costs."
     own: "You can be your own financial system"
     owntext: "If you don't use any third party APIs, you can integrate a Bitcoin server directly in your applications, allowing you to become your own bank and payment processor. With all the responsibilities that this implies, you can build amazing systems that process Bitcoin transactions with almost no fees."
     invoice: "Bitcoin addresses to track invoices"
