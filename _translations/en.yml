@@ -41,7 +41,7 @@ en:
     pagetitle: "Bitcoin for Developers"
     summary: "Bitcoin can be used to build amazing things or just answer common needs."
     simple: "The simplest of all payment systems"
-    simpletext: "Unless payment needs to be associated with automatic invoices, accepting money is as simple as adding a Bitcoin address to a website as a bitcoin: link or QR code. This very simple setup is within reach of any user and can fulfill the needs of a good range of clients. It's especially suitable for donations."
+    simpletext: "Unless payment needs to be associated with automatic invoices, accepting money is as simple as sending a bitcoin: link or displaying a QR code. This simple setup is within reach of any user and can fulfill the needs of a good range of clients. When done publicly, it is especially suitable for transparent donations and tips."
     api: "Many third party APIs"
     apitext: "There are many third party payment processing services that provide APIs; you don't need to store bitcoins on your server and handle the security that this implies. Additionally, most of these APIs allow you to exchange your bitcoins into your local currency at competitive costs."
     own: "You can be your own financial system"
