@@ -138,9 +138,9 @@ body{
 	padding-top:25px;
 	position:relative;
 	padding-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'40px':'');
-	border-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'1px solid #e0e0e0':'');
+	border-right:expression(this.parentNode.parentNode.className=='start'&&this.parentNode.getElementsByTagName('DIV')[0]==this?'1px solid #e0e0e0':'');
 	padding-left:expression(this.parentNode.getElementsByTagName('DIV')[2]==this?'40px':'');
-	border-left:expression(this.parentNode.getElementsByTagName('DIV')[2]==this?'1px solid #e0e0e0':'');
+	border-left:expression(this.parentNode.parentNode.className=='start'&&this.parentNode.getElementsByTagName('DIV')[2]==this?'1px solid #e0e0e0':'');
 	margin-left:expression(this.parentNode.getElementsByTagName('DIV')[2]==this?'-1px':'');
 }
 .start div div div{
