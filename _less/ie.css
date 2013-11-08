@@ -19,7 +19,6 @@ body{
 }
 
 .menusimple li{
-	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;
 }
@@ -74,7 +73,6 @@ body{
 	width:760px;
 }
 .mainlist div{
-	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;
 	width:250px;
@@ -109,7 +107,6 @@ body{
 .mainbutton a:link,
 .mainbutton a:visited,
 .mainbutton a:active{
-	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;
 }
@@ -132,7 +129,6 @@ body{
 	border-top:expression((this.parentNode.getElementsByTagName('DIV')[5]==this)?'1px solid #e0e0e0':'');
 }
 .start div div{
-	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;
 	padding-top:25px;
@@ -155,7 +151,6 @@ body{
 	border-top:expression((this.parentNode.getElementsByTagName('DIV')[3]==this)?'1px solid #e0e0e0':'');
 }
 .resources div div{
-	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;
 	padding-top:25px;
@@ -172,7 +167,6 @@ body{
 }
 
 .downloadbox{
-	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;
 }
@@ -181,12 +175,10 @@ body{
 	margin-bottom:expression(this.parentNode.getElementsByTagName('P')[0]==this?'20px':'0px');
 }
 .downloadbox a{
-	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;
 }
 .downloadbox span{
-	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;	
 }
@@ -199,13 +191,11 @@ body{
 }
 
 .download span{
-	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;
 }
 
 .index{
-	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;
 }
@@ -224,7 +214,6 @@ body{
 }
 
 .tablehalf div{
-	/*This one is also required for IE7*/
 	zoom:1;
 	display:inline;
 	margin-bottom:30px;
@@ -249,7 +238,6 @@ body{
 	font-size:95%;
 }
 .previewrow div{
-	/*zoom and display are also required for IE7*/
 	zoom:expression(this.parentNode.className=='previewrow'?'1':'');
 	display:expression(this.parentNode.className=='previewrow'?'inline':'');
 	position:expression(this.parentNode.className=='previewrow'?'relative':'');
