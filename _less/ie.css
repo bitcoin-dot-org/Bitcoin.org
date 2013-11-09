@@ -148,7 +148,7 @@ body{
 }
 
 .resources div{
-	border-top:expression((this.parentNode.getElementsByTagName('DIV')[3]==this)?'1px solid #e0e0e0':'');
+	border-top:expression((this.parentNode!=this.parentNode.parentNode.getElementsByTagName('DIV')[0])?'1px solid #e0e0e0':'0');
 }
 .resources div div{
 	zoom:1;
