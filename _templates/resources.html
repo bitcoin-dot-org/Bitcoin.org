@@ -65,7 +65,6 @@ id: resources
     <p><a href="http://bitcoinmagazine.com/">Bitcoin Magazine</a></p>
     <p><a href="http://www.coindesk.com/">CoinDesk</a></p>
     <p><a href="http://thegenesisblock.com/">The Genesis Block</a></p>
-    <p><a href="http://letstalkbitcoin.com/">Let's Talk Bitcoin</a></p>
     <p><a href="https://bitcointalk.org/index.php?board=77.0">Bitcoin Forum / Press</a></p>
   </div><div>
     <h2><img src="/img/ico_market.svg" class="titleicon" alt="Icon">{% translate charts %}</h2>
@@ -74,6 +73,20 @@ id: resources
     <p><a href="http://bitcoincharts.com/charts/">Bitcoincharts.com</a></p>
   </div>
 </div>
+{% case page.lang %}
+{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+<div>
+  <div>
+    <h2><img src="/img/ico_doc.svg" class="titleicon" alt="Icon">{% translate documentaries %}</h2>
+    <p><a href="http://bitcoinfilm.org/">BitcoinFilm.org</a></p>
+  </div><div>
+    <h2><img src="/img/ico_solve.svg" class="titleicon" alt="Icon">{% translate learn %}</h2>
+    <p><a href="http://letstalkbitcoin.com/">Let's Talk Bitcoin</a></p>
+    <p><a href="https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/bitcoin/v/bitcoin-what-is-it">Khan Academy</a></p>
+  </div>
+</div>
+{% endcase %}
 </div>
 
 {% endcase %}
