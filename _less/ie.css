@@ -438,35 +438,24 @@ body{
 	overflow:hidden;
 	text-align:justify;
 }
-.press-faq div span p{
-	margin-bottom:0;
-}
 
-.press-materials div a{
-	font-weight:bold;
-	font-size:110%;
-}
-.press-materials div{
+.press-videos div{
 	display:inline;
 	zoom:1;
-	width:278px;
-	vertical-align:top;
-	position:relative;
 }
-.press-materials div div{
-	height:250px;
-	overflow:hidden;
-}
-.press-materials p a{
-	font-weight:normal;
-	font-size:100%;
-	margin-right:10px;
-	margin-bottom:10px;
+.press-videos div a{
+	display:inline;
 	zoom:1;
 }
-.press-materials div div p span{
+
+.press-quotes p{
+	display:inline;
+	zoom:1;
+}
+.press-quotes span{
 	font-weight:expression((this.parentNode.getElementsByTagName('SPAN')[0]==this)?'bold':'');
 	display:expression((this.parentNode.getElementsByTagName('SPAN')[0]==this)?'block':'');
+	margin-bottom:expression((this.parentNode.getElementsByTagName('SPAN')[0]==this)?'4px':'');
 }
 
 .press-news div{
