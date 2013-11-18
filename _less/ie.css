@@ -125,6 +125,10 @@ body{
 	width:42px;
 }
 
+.starttitle a{
+	zoom:1;
+	display:inline;
+}
 .start div{
 	border-top:expression((this.parentNode.getElementsByTagName('DIV')[5]==this)?'1px solid #e0e0e0':'');
 }
