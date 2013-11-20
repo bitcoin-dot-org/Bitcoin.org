@@ -87,19 +87,22 @@ var t=getEventTarget(e);
 while(t.getAttribute('data-id')===null||t.getAttribute('data-id')=='')t=t.parentNode;
 var d=t.getElementsByTagName('DIV')[0];
 var s=document.getElementById(t.getAttribute('data-id')).getElementsByTagName('DIV')[0];
-d.getElementsByTagName('H2')[0].innerHTML=s.getElementsByTagName('H2')[0].innerHTML;
-d.getElementsByTagName('SPAN')[0].innerHTML=s.getElementsByTagName('SPAN')[0].innerHTML;
-d.getElementsByTagName('P')[0].innerHTML=s.getElementsByTagName('P')[0].innerHTML;
-d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].innerHTML=s.getElementsByTagName('P')[1].getElementsByTagName('A')[0].innerHTML;
-d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].href=s.getElementsByTagName('P')[1].getElementsByTagName('A')[0].href;
-d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].onclick='';
-d.className='';
-//Workaround for browsers that don't handle re-rendering class styles and svg (they have backgroundImage hardcoded in HTML)
-for(var ii=0,nn=d.childNodes.length;ii<nn;ii++){if(d.childNodes[ii].nodeType==1&&d.childNodes[ii].style.backgroundImage!='')d.childNodes[ii].style.backgroundImage=d.childNodes[ii].style.backgroundImage.replace('bubblewarn','bubble').replace('bubbleinfo','bubble');}
-for(var ii=0,as=d.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==d.parentNode){var dd=as[ii];break;}}
-for(var ii=0,as=s.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==s.parentNode){var ss=as[ii];break;}}
-dd.innerHTML=ss.innerHTML;
 cancelEvent(e);
+//Add a delay before replacing wallet bubble for mobiles to prevent accidental clicks
+setTimeout(function(){
+	d.getElementsByTagName('H2')[0].innerHTML=s.getElementsByTagName('H2')[0].innerHTML;
+	d.getElementsByTagName('SPAN')[0].innerHTML=s.getElementsByTagName('SPAN')[0].innerHTML;
+	d.getElementsByTagName('P')[0].innerHTML=s.getElementsByTagName('P')[0].innerHTML;
+	d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].innerHTML=s.getElementsByTagName('P')[1].getElementsByTagName('A')[0].innerHTML;
+	d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].href=s.getElementsByTagName('P')[1].getElementsByTagName('A')[0].href;
+	d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].onclick='';
+	d.className='';
+	//Workaround for browsers that don't handle re-rendering class styles and svg (they have backgroundImage hardcoded in HTML)
+	for(var ii=0,nn=d.childNodes.length;ii<nn;ii++){if(d.childNodes[ii].nodeType==1&&d.childNodes[ii].style.backgroundImage!='')d.childNodes[ii].style.backgroundImage=d.childNodes[ii].style.backgroundImage.replace('bubblewarn','bubble').replace('bubbleinfo','bubble');}
+	for(var ii=0,as=d.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==d.parentNode){var dd=as[ii];break;}}
+	for(var ii=0,as=s.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==s.parentNode){var ss=as[ii];break;}}
+	dd.innerHTML=ss.innerHTML;
+},1);
 }
 
 function mobileMenuShow(e){
@@ -214,6 +217,34 @@ function freenodeShow(e){
 //Display freenode chat window on the "Development" page at user request.
 document.getElementById('chatbox').innerHTML='<iframe style=width:98%;min-width:400px;height:600px src="http://webchat.freenode.net/?channels=bitcoin-dev" />';
 cancelEvent(e);
+}
+
+function mobileWHover(e){
+//Display wallet bubbles for mobiles
+var div=t=getEventTarget(e);
+while(div.nodeName!='DIV')div=div.parentNode;
+//Hide bubbles when clicking outside of a bubble
+if(div.className.indexOf('previewmobile')!==-1)mobileWHide();
+//Show bubble when clicking on their icon
+if(div.parentNode.className.indexOf('previewmobile')!==-1){
+	mobileWHide();
+	t=div.getElementsByTagName('DIV')[0];
+	t.style.opacity=0;
+	t.style.display='block';
+	//Add a delay before displaying wallet for mobiles to prevent accidental clicks
+	setTimeout(function(){t.style.opacity=100;},1);
+	//Add event listener to hide bubble on scroll
+	addEvent(window,'scroll',mobileWHide);
+}
+}
+  
+function mobileWHide(){
+//Hide all wallet bubbles on mobiles
+for(var i=0,nds=document.getElementsByTagName('DIV'),n=nds.length;i<n;i++){
+	if(nds[i].parentNode&&nds[i].parentNode.parentNode&&nds[i].parentNode.parentNode.className.indexOf('previewmobile')!==-1){
+	nds[i].style.opacity=0;nds[i].style.display='none';}
+}
+removeEvent(window,'scroll',mobileWHide);
 }
 
 function makeEditable(e){

@@ -896,6 +896,9 @@ li p{
 .previewrow .walletinfo>div>h2:first-child+span+p+p a:hover{
 	background-image:none;
 }
+.previewmobile{
+	display:none;
+}
 
 h1 .rssicon{
 	vertical-align:bottom;
@@ -1350,6 +1353,57 @@ h2 .rssicon{
 		float:none;
 		padding-left:0;
 		margin:auto;
+	}
+	.previewrow.previewmobile{
+		display:block;
+	}
+	.previewrow{
+		width:auto;
+		text-align:left;
+	}
+	.previewrow>p{
+		font-size:100%;
+	}
+	.previewrow>div>div{
+		position:fixed;
+		right:10px;
+		left:10px;
+		top:10px;
+		bottom:auto;
+		border:2px solid #2c6faf;
+		background:#f1f8fb;
+		z-index:1000;
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		border-radius:5px;
+		display:none;
+	}
+	.previewrow>div>div>div{
+		padding:10px;
+	}
+	.previewrow>div>div>div:first-child{
+		background:none;
+		height:auto;
+	}
+	.previewrow>div>div>div>h2:first-child+span+p+p{
+		margin:10px 0;
+		position:static;
+	}
+	.previewrow .walletinfo{
+		border:2px solid #ee9209;
+		background-color:#fff8ea;
+	}
+	.previewrow .walletwarning{
+		border:2px solid #b95357;
+		background-color:#fff6f0;
+	}
+	.previewrow .walletwarning>div:first-child{
+		background:none;
+		height:auto;
+	}
+	.previewrow .walletinfo>div:first-child{
+		background:none;
+		height:auto;
 	}
 	.press-volunteer>div>div{
 		width:220px;

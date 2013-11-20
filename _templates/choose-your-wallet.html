@@ -13,6 +13,203 @@ id: choose-your-wallet
 <h2>{% translate bethenetwork %}</h2>
 <p><img src="/img/icon-be-the-network.svg" alt="Network" class="floatimg"/>{% translate bethenetworktxt %}</p>
 
+<div class="previewrow previewmobile" onclick="mobileWHover(event);">
+  
+<h2><img class="titleicon" src="/img/ico_mobile.svg" alt="mobile wallets" />{% translate walletmobi %}</h2>
+<p>{% translate walletmobitxt %}</p>
+
+<div>
+  <div>
+    <div>
+      <h2>Bitcoin Wallet</h2>
+      <span><img src="/img/dow-android.png" alt="Android" title="Android" /><img src="/img/dow-blackberry.png" alt="BlackBerry OS" title="BlackBerry OS" /></span>
+      <p>{% translate walletbitcoinwallet %}</p>
+      <p><a href="https://play.google.com/store/apps/details?id=de.schildbach.wallet">{% translate walletvisit %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-bitcoinwallet.png" alt="bitcoin wallet" />Bitcoin<br>Wallet</a>
+</div>
+{% case page.lang %}
+{% when 'ar' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+<div data-id="mycelium">
+  <div class="walletinfo">
+    <div>
+      <h2>{% translate wallettrustinfo %}</h2>
+      <span></span>
+      <p>{% translate wallettrustinfotxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+  </div>
+<a href="#" onclick="return false;"><img src="/img/clients/lo-mycelium.png" alt="mycelium wallet" /></a>
+</div>
+{% endcase %}
+{% case page.lang %}
+{% when 'ar' or 'es' or 'fa' or 'pl' or 'ru' or 'zh_TW' %}
+<div data-id="blockchainmobile">
+  <div class="walletwarning">
+    <div>
+      <h2>{% translate walletwebwarning %}</h2>
+      <span></span>
+      <p>{% translate walletwebwarningtxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
+</div>
+{% else %}
+<div data-id="blockchainmobile">
+  <div class="walletinfo">
+    <div>
+      <h2>{% translate wallettrustinfo %}</h2>
+      <span></span>
+      <p>{% translate wallettrustinfotxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
+</div>
+{% endcase %}
+<div data-id="bips-mobile">
+  <div class="walletwarning">
+    <div>
+      <h2>{% translate walletwebwarning %}</h2>
+      <span></span>
+      <p>{% translate walletwebwarningtxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-bips.png" alt="BIPS" /></a>
+</div>
+<div data-id="coinbase-mobile">
+  <div class="walletwarning">
+    <div>
+      <h2>{% translate walletwebwarning %}</h2>
+      <span></span>
+      <p>{% translate walletwebwarningtxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-coinbase.png" alt="coinbase" /></a>
+</div>
+
+<h2><img class="titleicon" src="/img/ico_software.svg" alt="Software wallets" />{% translate walletdesk %}</h2>
+<p>{% translate walletdesktxt %}</p>
+
+<div>
+  <div>
+    <div>
+      <h2>Bitcoin-Qt</h2>
+      <span><img src="/img/dow-win.png" alt="Windows" title="Windows" /><img src="/img/dow-linux.png" alt="Linux" title="Linux" /><img src="/img/dow-osx-uni.png" alt="Mac OS X" title="Mac OS X" /></span>
+      <p>{% translate walletbitcoinqt %}</p>
+      <p>{% translate walletdownload %}</p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-bitcoin.png" alt="bitcoin-qt" />Bitcoin-Qt</a>
+</div>
+<div>
+  <div>
+    <div>
+      <h2>MultiBit</h2>
+      <span><img src="/img/dow-win.png" alt="Windows" title="Windows" /><img src="/img/dow-linux.png" alt="Linux" title="Linux" /><img src="/img/dow-osx-uni.png" alt="Mac OS X" title="Mac OS X" /></span>
+      <p>{% translate walletmultibit %}</p>
+      <p><a href="https://multibit.org/">{% translate walletvisit %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-multibit.png" alt="multibit" />MultiBit</a>
+</div>
+<div>
+  <div>
+    <div>
+      <h2>Armory</h2>
+      <span><img src="/img/dow-win.png" alt="Windows" title="Windows" /><img src="/img/dow-linux.png" alt="Linux" title="Linux" /></span>
+      <p>{% translate walletarmory %}</p>
+      <p><a href="http://bitcoinarmory.com/">{% translate walletvisit %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-armory.png" alt="armory" />Armory</a>
+</div>
+{% case page.lang %}
+{% when 'ar' or 'es' or 'fa' or 'pl' or 'ru' or 'zh_TW' %}
+<div>
+  <div>
+    <div>
+      <h2>Electrum</h2>
+      <span><img src="/img/dow-win.png" alt="Windows" title="Windows" /><img src="/img/dow-linux.png" alt="Linux" title="Linux" /><img src="/img/dow-osx-uni.png" alt="Mac OS X" title="Mac OS X" /><img src="/img/dow-android.png" alt="Android" title="Android" /></span>
+      <p>{% translate walletelectrum %}</p>
+      <p><a href="http://electrum.org/">{% translate walletvisit %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-electrum.png" alt="electrum" />Electrum</a>
+</div>
+{% else %}
+<div data-id="electrum">
+  <div class="walletinfo">
+    <div>
+      <h2>{% translate wallettrustinfo %}</h2>
+      <span></span>
+      <p>{% translate wallettrustinfotxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-electrum.png" alt="electrum" /></a>
+</div>
+{% endcase %}
+
+<h2><img class="titleicon" src="/img/ico_international.svg" alt="web wallets" />{% translate walletweb %}</h2>
+<p>{% translate walletwebtxt %}</p>
+
+{% case page.lang %}
+{% when 'ar' or 'es' or 'fa' or 'pl' or 'ru' or 'zh_TW' %}
+<div data-id="blockchaindesktop">
+  <div class="walletwarning">
+    <div>
+      <h2>{% translate walletwebwarning %}</h2>
+      <span></span>
+      <p>{% translate walletwebwarningtxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
+</div>
+{% else %}
+<div data-id="blockchaindesktop">
+  <div class="walletinfo">
+    <div>
+      <h2>{% translate wallettrustinfo %}</h2>
+      <span></span>
+      <p>{% translate wallettrustinfotxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
+</div>
+{% endcase %}
+<div data-id="bips">
+  <div class="walletwarning">
+    <div>
+      <h2>{% translate walletwebwarning %}</h2>
+      <span></span>
+      <p>{% translate walletwebwarningtxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-bips.png" alt="bips" /></a>
+</div>
+<div data-id="coinbase">
+  <div class="walletwarning">
+    <div>
+      <h2>{% translate walletwebwarning %}</h2>
+      <span></span>
+      <p>{% translate walletwebwarningtxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-coinbase.png" alt="coinbase" /></a>
+</div>
+
+</div>
+
 <div class="preview">
 
 <div class="previewcol">
