@@ -96,6 +96,85 @@ id: community
   </div>
 </div>
 </div>
+
+{% case page.lang %}
+{% when 'ar' or 'de' or 'es' or 'fa' or 'fr' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+<h2>{% translate nonprofit community en %}</h2>
+{% else %}
+<h2>{% translate nonprofit %}</h2>
+{% endcase %}
+<div class="resourcesorg">
+<div>
+  <div>
+    <h3><img src="/img/flags/ALL.png">International</h3>
+    <p>
+      <a href="https://bitcoinfoundation.org/">The Bitcoin Foundation</a>
+    </p>
+  </div>
+  <div>
+    <h3><img src="/img/flags/AR.png">Argentina</h3>
+    <p>
+      <a href="http://www.bitcoinargentina.org/">Fundación Bitcoin Argentina</a>
+    </p>
+  </div>
+  <div>
+    <h3><img src="/img/flags/AU.png">Australia</h3>
+    <p>
+      <a href="https://plus.google.com/111744062512117128149/posts">The Bitcoin Association of Australia</a>
+    </p>
+  </div>
+</div>
+<div>
+  <div>
+    <h3><img src="/img/flags/AT.png">Autria</h3>
+    <p>
+      <a href="http://bitcoin-austria.at/">Bitcoin Austria</a>
+    </p>
+  </div>
+  <div>
+    <h3><img src="/img/flags/CA.png">Canada</h3>
+    <p>
+      <a href="http://bitcoinembassy.ca/">Bitcoin Embassy</a><br>
+      <a href="http://www.bitcoinalliance.ca/">Bitcoin Alliance of Canada</a>
+    </p>
+  </div>
+  <div>
+    <h3><img src="/img/flags/IL.png">Israel</h3>
+    <p>
+      <a href="http://www.bitcoin.org.il/">איגוד הביטקוין הישראלי</a>
+    </p>
+  </div>
+</div>
+<div>
+  <div>
+    <h3><img src="/img/flags/DE.png">Germany</h3>
+    <p>
+      <a href="http://www.bundesverband-bitcoin.de/">Bundesverband Bitcoin e.V.</a>
+    </p>
+  </div>
+  <div>
+    <h3><img src="/img/flags/IT.png">Italy</h3>
+    <p>
+      <a href="https://www.bitcoin-italia.org/">Bitcoin Foundation Italia</a>
+    </p>
+  </div>
+  <div>
+    <h3><img src="/img/flags/NL.png">Netherlands</h3>
+    <p>
+      <a href="http://stichtingbitcoin.nl/">Stichting Bitcoin Nederland</a>
+    </p>
+  </div>
+</div>
+<div>
+  <div>
+    <h3><img src="/img/flags/CH.png">Switzerland</h3>
+    <p>
+      <a href="http://bitcoinassociation.ch/">Bitcoin Association Switzerland</a>
+    </p>
+  </div>
+</div>
+</div>
+
 <div class="introlink">{% translate wikiportal %}</div>
 
 {% endcase %}

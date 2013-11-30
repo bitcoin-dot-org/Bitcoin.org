@@ -170,6 +170,15 @@ body{
 	border-top:0;
 }
 
+.resourcesorg div div{
+	zoom:1;
+	display:inline;
+	padding:20px 0;
+}
+.resourcesorg div{
+	border-top:expression(this.parentNode.className=='resourcesorg'&&this.parentNode.getElementsByTagName('DIV')[0]!=this?'1px solid #e0e0e0':'0');
+}
+
 .downloadbox{
 	zoom:1;
 	display:inline;
