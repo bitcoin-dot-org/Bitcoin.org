@@ -558,6 +558,12 @@ li p{
 	position:relative;
 	top:-2px;
 }
+.warningicon{
+	width:42px;
+	height:42px;
+	vertical-align:middle;
+	margin-right:6px;
+}
 
 .index,
 .index ul,
@@ -683,6 +689,31 @@ li p{
 .resources p{
 	font-size:115%;
 	margin:6px 0;
+}
+
+.resourcesorg{
+	margin-bottom:40px;
+	text-align:left;
+	font-size:0;
+}
+.resourcesorg div{
+	border-top:1px solid #e0e0e0;
+}
+.resourcesorg div:first-child,.resourcesorg div div{
+	border-top:0;
+}
+.resourcesorg div div{
+	width:278px;
+	font-size:16px;
+	display:inline-block;
+	vertical-align:top;
+}
+.resourcesorg img{
+	margin-right:5px;
+	width:24px;
+	height:24px;
+	position:relative;
+	bottom:-6px;
 }
 
 .chatbox{
@@ -961,6 +992,12 @@ h2 .rssicon{
 }
 
 .download{
+	text-align:center;
+}
+.download p{
+	text-align:justify;
+}
+.download div p{
 	text-align:center;
 }
 .download h1,
@@ -1510,6 +1547,16 @@ h2 .rssicon{
 		border-left:0;
 		padding-left:0;
 		margin-left:0;
+	}
+	.resourcesorg div div{
+		width:auto;
+		display:block;
+	}
+	.resourcesorg div{
+		border-top:0;
+	}
+	.download p{
+		text-align:left;
 	}
 }
 
