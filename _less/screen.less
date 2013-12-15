@@ -1009,7 +1009,6 @@ h2 .rssicon{
 }
 .downloadbox{
 	display:inline-block;
-	text-align:center;
 	border:2px solid #fad296;
 	padding:20px;
 	font-size:125%;
@@ -1019,30 +1018,39 @@ h2 .rssicon{
 	margin:0 auto 20px auto;
 }
 .downloadbox p{
-	margin:0;
-	margin-top:20px;
-	margin-bottom:0;
+	margin:20px 0 0 0;
 }
 .downloadbox p:first-child{
-	margin-top:0;
-	margin-bottom:20px;
+	margin:0 0 10px 0;
+}
+.downloadbox p a{
+	font-size:90%;
 }
 .downloadbox a{
 	display:inline-block;
 }
 .downloadbox div{
+	display:inline-block;
+	margin:0 10px;
+	vertical-align:top;
+}
+.downloadbox div div{
+	display:block;
+	width:180px;
 	margin:10px 0;
 	text-align:left;
 }
-.downloadbox span{
-	width:16px;
-	height:16px;
-	display:inline-block;
+.downloadbox img{
+	width:32px;
+	height:32px;
+	position:relative;
+	bottom:-22px;
 }
-.download span{
-	width:16px;
-	height:16px;
-	display:inline-block;
+.downloadbox small{
+	display:block;
+	position:relative;
+	left:40px;
+	margin-top:4px;
 }
 
 .summary{
@@ -1555,8 +1563,33 @@ h2 .rssicon{
 	.resourcesorg div{
 		border-top:0;
 	}
+	.download{
+		text-align:left;
+	}
 	.download p{
 		text-align:left;
+	}
+	.download div p{
+		text-align:left;
+	}
+	.download h1,
+	.download h2{
+		text-align:left;
+	}
+	.download .mainbutton{
+		display:none;
+	}
+	.downloadbox{
+		border:0;
+		padding:0;
+		text-align:left;
+	}
+	.downloadbox div div{
+		margin:0;
+		width:auto;
+	}
+	.downloadbox>p:first-child{
+		display:none;
 	}
 }
 

@@ -191,9 +191,16 @@ body{
 	zoom:1;
 	display:inline;
 }
-.downloadbox span{
+.downloadbox div{
 	zoom:1;
-	display:inline;	
+	display:inline;
+}
+.downloadbox div div{
+	display:block;
+}
+.download span{
+	zoom:1;
+	display:inline;
 }
 
 .alert-message a:hover,
@@ -201,11 +208,6 @@ body{
 .alert-message a:hover:active,
 .alert-message a:hover:visited{
 	color:#fff;
-}
-
-.download span{
-	zoom:1;
-	display:inline;
 }
 
 .index{
