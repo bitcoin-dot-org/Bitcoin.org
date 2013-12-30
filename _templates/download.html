@@ -9,24 +9,25 @@ id: download
   <div class="mainbutton"><a id="downloadbutton" href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe/download"><img src="/img/but_windows.svg" alt="icon">{% translate download %}</a></div>
   <div class="downloadbox">
     <p>{% translate downloados %}</p>
-    <div><img src="/img/dow-win.png" alt="windows"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32.zip/download">{% translate downloadwinzip %}</a> <small>~16MB</small></div>
-    <div id="download_windows"><img src="/img/dow-win.png" alt="windows"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe/download">{% translate downloadwinexe %}</a> <small>~12MB</small></div>
-    <div><img src="/img/dow-ubuntu.png" alt="ubuntu"> <a href="https://launchpad.net/~bitcoin/+archive/bitcoin">{% translate downloadubu %}</a> <small>~4MB</small></div>
-    <div><img src="/img/dow-linux.png" alt="linux"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-linux.tar.gz/download">{% translate downloadlin %}</a> <small>~16MB</small></div>
-    <div><img src="/img/dow-osx-uni.png" alt="osx"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-macosx.dmg/download">{% translate downloadmac %}</a> <small>~14MB</small></div>
-    {% case page.lang %}
-    {% when 'ar' or 'de' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
-    <div><img src="/img/dow_sig.svg" alt="signature"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/SHA256SUMS.asc/view">{% translate downloadsig download en %}</a></div>
-    {% else %}
-    <div><img src="/img/dow_sig.svg" alt="signature"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/SHA256SUMS.asc/view">{% translate downloadsig %}</a></div>
-    {% endcase %}
-    <div><span></span> <a href="https://github.com/bitcoin/bitcoin">{% translate downloadsource %}</a> (GitHub)</div>
-    <p><a href="/en/version-history">{% translate versionhistory %}</a></p>
+    <div>
+      <div id="download_windows"><img src="/img/os/med_win.png" alt="windows"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe/download">Windows (exe)</a> <small>~12MB</small></div>
+      <div><img src="/img/os/med_win.png" alt="windows"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32.zip/download">Windows (zip)</a> <small>~16MB</small></div>
+      <div><img src="/img/os/med_ubuntu.svg" alt="ubuntu"> <a href="https://launchpad.net/~bitcoin/+archive/bitcoin">Ubuntu (PPA)</a> <small>~4MB</small></div>
+    </div>
+    <div>
+      <div><img src="/img/os/med_osx.png" alt="osx"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-macosx.dmg/download">Mac OS X</a> <small>~14MB</small></div>
+      <div><img src="/img/os/med_linux.png" alt="linux"> <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-linux.tar.gz/download">Linux (tgz)</a> <small>~16MB</small></div>
+      <div><img src="/img/os/med_opensource.svg" alt="opensource"> <a href="https://github.com/bitcoin/bitcoin">Source code</a> <small>(GitHub)</small></div>
+    </div>
+    <p>
+      <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/SHA256SUMS.asc/view">{% case page.lang %}{% when 'ar' or 'de' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}{% translate downloadsig download en %}{% else %}{% translate downloadsig %}{% endcase %}</a><br>
+      <a href="/en/version-history">{% translate versionhistory %}</a>
+    </p>
   </div>
   {% case page.lang %}
   {% when 'ar' or 'de' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
   {% else %}
-  <h2><img src="/img/warning.svg" class="warningicon">{% translate patient %}</h2>
+  <h2><img src="/img/warning.svg" class="warningicon" alt="warning">{% translate patient %}</h2>
   {% endcase %}
   <p>{% translate notesync %}</p>
   <p>{% translate notelicense %}</p>
