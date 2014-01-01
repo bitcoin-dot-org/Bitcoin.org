@@ -20,12 +20,12 @@ id: download
       <div><img src="/img/os/med_opensource.svg" alt="opensource"> <a href="https://github.com/bitcoin/bitcoin">Source code</a> <small>(GitHub)</small></div>
     </div>
     <p>
-      <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/SHA256SUMS.asc/view">{% case page.lang %}{% when 'ar' or 'de' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}{% translate downloadsig download en %}{% else %}{% translate downloadsig %}{% endcase %}</a><br>
+      <a href="http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-{{site.DOWNLOAD_VERSION}}/SHA256SUMS.asc/view">{% case page.lang %}{% when 'ar' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}{% translate downloadsig download en %}{% else %}{% translate downloadsig %}{% endcase %}</a><br>
       <a href="/en/version-history">{% translate versionhistory %}</a>
     </p>
   </div>
   {% case page.lang %}
-  {% when 'ar' or 'de' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+  {% when 'ar' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
   {% else %}
   <h2><img src="/img/warning.svg" class="warningicon" alt="warning">{% translate patient %}</h2>
   {% endcase %}

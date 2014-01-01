@@ -101,7 +101,7 @@ if(typeof(legacyIE)==='undefined'){
       {% endcase %}
       <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a></li>
       {% case page.lang %}
-      {% when 'ar' or 'de' or 'es' or 'fa' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+      {% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
       <li{% if page.id == 'about' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate about url %}">{% translate menu-about layout %}</a></li>
       {% when 'id' %}
       {% else %}
@@ -117,7 +117,7 @@ if(typeof(legacyIE)==='undefined'){
     <a href="/en/alerts">Network Status</a>
     <a href="https://bitcoinfoundation.org/">{% translate menu-foundation layout %}</a>
     {% case page.lang %}
-    {% when 'ar' or 'de' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+    {% when 'ar' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
     <a href="/en/legal">Legal</a>
     {% else %}
     <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
