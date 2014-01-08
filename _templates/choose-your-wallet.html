@@ -118,8 +118,6 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-armory.png" alt="armory" />Armory</a>
 </div>
-{% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'pl' or 'ru' or 'zh_TW' %}
 <div>
   <div>
     <div>
@@ -131,19 +129,6 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-electrum.png" alt="electrum" />Electrum</a>
 </div>
-{% else %}
-<div data-id="electrum">
-  <div class="walletinfo">
-    <div>
-      <h2>{% translate wallettrustinfo %}</h2>
-      <span></span>
-      <p>{% translate wallettrustinfotxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-electrum.png" alt="electrum" /></a>
-</div>
-{% endcase %}
 
 <h2><img class="titleicon" src="/img/ico_international.svg" alt="web wallets" />{% translate walletweb %}</h2>
 <p>{% translate walletwebtxt %}</p>
@@ -249,8 +234,6 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-armory.png" alt="armory" />Armory</a>
 </div>
-{% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'pl' or 'ru' or 'zh_TW' %}
 <div>
   <div>
     <div class="b1"></div>
@@ -264,21 +247,6 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-electrum.png" alt="electrum" />Electrum</a>
 </div>
-{% else %}
-<div data-id="electrum">
-  <div class="walletinfo">
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>{% translate wallettrustinfo %}</h2>
-      <span></span>
-      <p class="hyphenate">{% translate wallettrustinfotxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-electrum.png" alt="electrum" /></a>
-</div>
-{% endcase %}
 </div>
 
 <div class="previewrow">
@@ -407,19 +375,6 @@ id: choose-your-wallet
 <div class="previewcol"><br><!--Prevent floating divs to overflow outside of the page.--></div>
 
 <div class="previewrow" style="display:none;">
-<div id="electrum">
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>Electrum</h2>
-      <span><img src="/img/os/win.png" alt="Windows" title="Windows" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /><img src="/img/os/osx-uni.png" alt="Mac OS X" title="Mac OS X" /><img src="/img/os/android.png" alt="Android" title="Android" /></span>
-      <p class="hyphenate">{% translate walletelectrum %}</p>
-      <p><a href="http://electrum.org/">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-electrum.png" alt="electrum" />Electrum</a>
-</div>
 {% case page.lang %}
 {% when 'ar' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
 {% else %}
