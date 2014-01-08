@@ -34,6 +34,7 @@ id: community
 {% else %}
 <li>{% translate linkgoogle %}</li>
 {% endcase %}
+{% if page.lang == 'ru' %}<li><a href="http://vk.com/bitcoin">Страница на ВКонтакте</a></li>{% endif %}
 <li>{% translate linktwitter %}</li>
 <li>{% translate facebook %}</li>
 <li>{% translate reddit %}</li>
@@ -64,6 +65,7 @@ id: community
     <p><a href="http://bitcoin.stackexchange.com/">{% translate stackexchange %}</a></p>
   </div><div>
     <h2><img src="/img/ico_network.svg" class="titleicon" alt="Icon">{% translate social %}</h2>
+    {% if page.lang == 'ru' %}<p><a href="http://vk.com/bitcoin">Страница на ВКонтакте</a></p>{% endif %}
     <p>{% translate linkgoogle %}</p>
     <p><a href="https://twitter.com/search?q=bitcoin">{% translate linktwitter %}</a></p>
     <p>{% translate facebook %}</p>
