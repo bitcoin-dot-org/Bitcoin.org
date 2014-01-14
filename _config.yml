@@ -9,6 +9,7 @@ langsorder:
 - id: pl
 - id: ru
 - id: tr
+- id: bg
 - id: zh_CN
 - id: zh_TW
 - id: ar
@@ -16,6 +17,7 @@ langsorder:
 
 langs:
   ar: ألعربية
+  bg: български
   de: Deutsch
   en: English
   es: Español
