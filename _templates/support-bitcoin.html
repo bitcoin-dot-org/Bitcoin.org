@@ -11,24 +11,12 @@ id: support-bitcoin
 <h2><img class="titleicon" src="/img/ico_network.svg" alt="Icon" />{% translate node %}</h2>
 <p>{% translate nodetxt %}</p>
 
-<h2><img class="titleicon" src="/img/ico_conf.svg" alt="Icon" />{% translate develop %}</h2>
-<p>{% translate developtxt %}</p>
-
-<h2><img class="titleicon" src="/img/ico_donate.svg" alt="Icon" />{% translate donation %}</h2>
-<p>{% translate donationtxt %}</p>
-
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'pl' or 'ru' or 'zh_TW' %}
+{% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
 {% else %}
-<h2><img class="titleicon" src="/img/ico_foundation.svg" alt="Icon" />{% translate foundation %}</h2>
-<p>{% translate foundationtxt %}</p>
+<h2><img class="titleicon" src="/img/ico_mining.svg" alt="Icon" />{% translate mining %}</h2>
+<p>{% translate miningtxt %}</p>
 {% endcase %}
-
-<h2><img class="titleicon" src="/img/ico_spread.svg" alt="Icon" />{% translate spread %}</h2>
-<p>{% translate spreadtxt %}</p>
-
-<h2><img class="titleicon" src="/img/ico_wiki.svg" alt="Icon" />{% translate wiki %}</h2>
-<p>{% translate wikitxt %}</a>
 
 <h2><img class="titleicon" src="/img/ico_translate.svg" alt="Icon" />{% translate translate %}</h2>
 <p>{% translate translatetxt %}</p>
@@ -37,6 +25,28 @@ id: support-bitcoin
 {% else %}
 <p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin-Qt</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://code.google.com/p/bitcoin-wallet/wiki/Translating">Bitcoin Wallet (Android)</a> - <a href="http://translate.multibit.org/">MultiBit</a> - <a href="http://crowdin.net/project/electrum">Electrum</a></p>
 {% endcase %}
+
+<h2><img class="titleicon" src="/img/ico_conf.svg" alt="Icon" />{% translate develop %}</h2>
+<p>{% translate developtxt %}</p>
+
+<h2><img class="titleicon" src="/img/ico_donate.svg" alt="Icon" />{% translate donation %}</h2>
+<p>{% translate donationtxt %}</p>
+
+{% case page.lang %}
+{% when 'ar' or 'es' or 'fa' or 'pl' or 'ru' or 'zh_TW' %}
+{% when 'bg' or 'de' or 'fr' or 'id' or 'it' or 'nl' or 'tr' or 'zh_CN' %}
+<h2><img class="titleicon" src="/img/ico_foundation.svg" alt="Icon" />{% translate foundation %}</h2>
+<p>{% translate foundationtxt %}</p>
+{% else %}
+<h2><img class="titleicon" src="/img/ico_law.svg" alt="Icon" />{% translate nonprofit %}</h2>
+<p>{% translate nonprofittxt %}</p>
+{% endcase %}
+
+<h2><img class="titleicon" src="/img/ico_spread.svg" alt="Icon" />{% translate spread %}</h2>
+<p>{% translate spreadtxt %}</p>
+
+<h2><img class="titleicon" src="/img/ico_wiki.svg" alt="Icon" />{% translate wiki %}</h2>
+<p>{% translate wikitxt %}</a>
 
 <h2><img class="titleicon" src="/img/ico_help.svg" alt="Icon" />{% translate help %}</h2>
 <p>{% translate helptxt %}</p>

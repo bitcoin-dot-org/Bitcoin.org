@@ -99,10 +99,10 @@ id: community
 </div>
 
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% when 'ar' or 'bg' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
 <h2>{% translate nonprofit community en %}</h2>
 {% else %}
-<h2>{% translate nonprofit %}</h2>
+<h2><a name="{% translate non-profit anchor.community %}">{% translate nonprofit %}</a></h2>
 {% endcase %}
 <div class="resourcesorg">
 <div>
