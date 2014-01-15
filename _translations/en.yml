@@ -467,17 +467,19 @@ en:
     pagetitle: "Support Bitcoin"
     summary: "Bitcoin is a protocol that was born from a small community and has grown fast since. There are a lot of things you can do to help Bitcoin to spread and improve over time."
     use: "Using Bitcoin"
-    usetxt: "Obviously, using Bitcoin is the first thing you can do to help its development. There are probably many cases where it can make your life easier. And you can accept payments with Bitcoin yourself."
+    usetxt: "<a href=\"#getting-started#\">Using Bitcoin</a> is the first thing you can do to support Bitcoin. There are probably many cases where it can make your life easier. You can accept payments and make purchases with Bitcoin."
     node: "Be the network"
-    nodetxt: "You can join the Bitcoin network by keeping <a href=\"#download#\">full node software</a> running on your computer. You can also do some Bitcoin mining to make the network more secure by helping to process transactions."
+    nodetxt: "You can join the Bitcoin network by keeping <a href=\"#download#\">full node software</a> running on your computer or dedicated server. Full nodes are securing and relaying all users' transactions. They can be compared to the backbone of the network."
+    mining: "Mining"
+    miningtxt: "You can start <a href=\"http://www.bitcoinmining.com/\">mining bitcoins</a> to help processing transactions. In order to protect the network, you should join <a href=\"https://blockchain.info/pools\">smaller mining pools</a> and prefer decentralized pools like <a href=\"http://p2pool.in/\">P2Pool</a> or <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> with getblocktemplate (GBT) support."
     develop: "Development"
     developtxt: "Bitcoin is free software. So if you are a developer, you can use your super-powers to do good and <a href=\"#development#\">improve Bitcoin</a>. Or you can build amazing new services or software that can use Bitcoin."
     donation: "Donation"
     donationtxt: "The easiest way to help is to <a href=\"https://bitcoinfoundation.org/donate\">donate</a> a few bitcoins to the Bitcoin Foundation. Or you can help directly fund any project related to Bitcoin that you believe will be helpful in the future."
-    foundation: "Join the Foundation"
-    foundationtxt: "The <a href=\"https://bitcoinfoundation.org/\">Bitcoin Foundation</a> is one of the largest organizations dedicated to standardize, protect and promote Bitcoin. It funds the salary for Bitcoin software developers, organizes conferences, and provides many important resources."
+    nonprofit: "Organizations"
+    nonprofittxt: "The <a href=\"https://bitcoinfoundation.org/\">Bitcoin Foundation</a> and many other <a href=\"#community##[community.non-profit]\">non-profit organizations</a> are dedicated to protecting and promoting Bitcoin. You can help these groups by joining them and taking part in their projects, discussions and events."
     spread: "Spread"
-    spreadtxt: "Speak about Bitcoin to interested people. Write about it on your blog. Tell your favorite shops you would like to pay with Bitcoin. Or be creative and make yourself a nice Bitcoin T-shirt."
+    spreadtxt: "Speak about Bitcoin to interested people. Write about it on your blog. Tell your favorite shops you would like to pay with Bitcoin. Help keeping <a href=\"http://usebitcoins.info/\">merchant directories</a> up to date. Or be creative and make yourself a nice Bitcoin T-shirt."
     wiki: "Wiki"
     wikitxt: "The <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> is full of useful and detailed information and we are constantly improving the information it contains - just like Wikipedia. You can help keep the wiki accurate and up-to-date."
     translate: "Translate"
@@ -580,6 +582,8 @@ en:
     vocabulary: vocabulary
     you-need-to-know: you-need-to-know
   anchor:
+    community:
+      non-profit: non-profit
     vocabulary:
       address: address
       bitcoin: bitcoin
