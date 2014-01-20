@@ -181,20 +181,6 @@ t.style.display='none';
 cancelEvent(e);
 }
 
-function disclaimerShow(e){
-//Display the complete interviewees disclaimer on the "Press center" page at user request.
-var p=t=getEventTarget(e);
-while(p.nodeType!=1||p.nodeName!='P')p=p.parentNode;
-p=p.nextSibling;
-while(p.nodeType!=1||p.nodeName!='P')p=p.nextSibling;
-p.style.height='auto';
-var nhe=getHeight(p);
-p.style.height='0px';
-p.style.height=(nhe+10)+'px';
-t.parentNode.removeChild(t);
-cancelEvent(e);
-}
-
 function librariesShow(e){
 //Display more open source projects on the "Development" page at user request.
 var p=t=getEventTarget(e);
