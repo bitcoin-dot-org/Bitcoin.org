@@ -13,8 +13,8 @@
    height="32px"
    id="svg4913"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   inkscape:export-filename="/media/X/bitcoin.org/bitcoin.org_icon/img/for_mobile.png"
+   inkscape:version="0.48.4 r9939"
+   inkscape:export-filename="/media/X/bitcoin.org/current/img/ico_mobile.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"
    sodipodi:docname="ico_mobile.svg">
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -56,23 +56,23 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer">
     <rect
-       style="opacity:0.98999999;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.47499257;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="opacity:0.98999999;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.49351057;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect4921"
-       width="18.239902"
-       height="26.89325"
-       x="6.5245485"
-       y="2.7353716"
-       ry="1.0198069"
-       transform="matrix(0.99999848,-0.00174534,0.00174534,0.99999848,0,0)" />
+       width="19.381687"
+       height="27.32081"
+       x="6.462266"
+       y="2.3872876"
+       ry="1.03602"
+       transform="matrix(0.99999861,-0.00166863,0.00182557,0.99999833,0,0)" />
     <rect
-       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.51979363;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.50169826;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect4923"
-       width="13.746132"
-       height="19.57445"
-       x="8.831171"
-       y="4.4849062"
-       ry="1.037932"
-       transform="matrix(0.99999848,-0.00174534,0.00174534,0.99999848,0,0)" />
+       width="13.461034"
+       height="18.621511"
+       x="9.481184"
+       y="5.1101866"
+       ry="0.98740274"
+       transform="matrix(0.99999856,-0.00169554,0.0017966,0.99999839,0,0)" />
     <path
        sodipodi:type="arc"
        style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -82,6 +82,6 @@
        sodipodi:rx="2.3338561"
        sodipodi:ry="2.3338561"
        d="m 18.497743,25.92738 a 2.3338561,2.3338561 0 1 1 -4.667712,0 2.3338561,2.3338561 0 1 1 4.667712,0 z"
-       transform="matrix(0.74683203,-0.00130346,0.00130346,0.74683203,3.9909799,7.8606135)" />
+       transform="matrix(0.84935655,-0.0014824,0.0014824,0.84935655,2.8298035,4.7727403)" />
   </g>
 </svg>
