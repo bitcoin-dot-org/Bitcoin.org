@@ -81,6 +81,21 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-coinbase.png" alt="coinbase" /></a>
 </div>
+{% case page.lang %}
+{% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+<div data-id="coinkite-mobile">
+  <div class="walletwarning">
+    <div>
+      <h2>{% translate walletwebwarning %}</h2>
+      <span></span>
+      <p>{% translate walletwebwarningtxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-coinkite.png" alt="coinkite" /></a>
+</div>
+{% endcase %}
 
 <h2><img class="titleicon" src="/img/ico_software.svg" alt="Software wallets" />{% translate walletdesk %}</h2>
 <p>{% translate walletdesktxt %}</p>
@@ -170,6 +185,21 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-coinbase.png" alt="coinbase" /></a>
 </div>
+{% case page.lang %}
+{% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+<div data-id="coinkite">
+  <div class="walletwarning">
+    <div>
+      <h2>{% translate walletwebwarning %}</h2>
+      <span></span>
+      <p>{% translate walletwebwarningtxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-coinkite.png" alt="coinkite" /></a>
+</div>
+{% endcase %}
 
 </div>
 
@@ -323,6 +353,23 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-coinbase.png" alt="coinbase" /></a>
 </div>
+{% case page.lang %}
+{% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+<div data-id="coinkite-mobile">
+  <div class="walletwarning">
+    <div class="b1"></div>
+    <div class="b2">
+      <h2>{% translate walletwebwarning %}</h2>
+      <span></span>
+      <p class="hyphenate">{% translate walletwebwarningtxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+    <div class="b3"></div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-coinkite.png" alt="coinkite" /></a>
+</div>
+{% endcase %}
 </div>
 
 <div class="previewrow">
@@ -369,6 +416,23 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-coinbase.png" alt="coinbase" /></a>
 </div>
+{% case page.lang %}
+{% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+<div data-id="coinkite">
+  <div class="walletwarning">
+    <div class="b1"></div>
+    <div class="b2">
+      <h2>{% translate walletwebwarning %}</h2>
+      <span></span>
+      <p class="hyphenate">{% translate walletwebwarningtxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+    <div class="b3"></div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-coinkite.png" alt="coinkite" /></a>
+</div>
+{% endcase %}
 </div>
 </div>
 
@@ -451,7 +515,7 @@ id: choose-your-wallet
       <h2>Coinkite</h2>
       <span></span>
       <p class="hyphenate">{% translate walletcoinkite %}</p>
-      <p><a href="https://coinkite.com/promo/bitcoin-org">{% translate walletvisit %}</a></p>
+      <p><a href="https://coinkite.com/">{% translate walletvisit %}</a></p>
     </div>
     <div class="b3"></div>
   </div>
@@ -464,7 +528,7 @@ id: choose-your-wallet
       <h2>Coinkite</h2>
       <span></span>
       <p class="hyphenate">{% translate walletcoinkite %}</p>
-      <p><a href="https://coinkite.com/promo/bitcoin-org">{% translate walletvisit %}</a></p>
+      <p><a href="https://coinkite.com/">{% translate walletvisit %}</a></p>
     </div>
     <div class="b3"></div>
   </div>
