@@ -399,35 +399,6 @@ body{
 	
 }
 
-.press-volunteer div div{
-	width:400px;
-	height:150px;
-	display:inline;
-	zoom:1;
-	margin-right:20px;
-	margin-bottom:30px;
-	vertical-align:top;
-}
-.press-volunteer div div img{
-	float:left;
-	margin-right:30px;
-}
-.press-volunteer div div p{
-	font-weight:expression((this.parentNode.getElementsByTagName('P')[0]==this)?'bold':'');
-	color:expression((this.parentNode.getElementsByTagName('P')[0]==this)?'#2c6fad':'');
-	margin:expression((this.parentNode.getElementsByTagName('P')[0]==this||this.parentNode.getElementsByTagName('P')[1]==this||this.parentNode.getElementsByTagName('P')[3]==this)?'0px':'');
-	font-size:expression((this.parentNode.getElementsByTagName('P')[2]==this)?'80%':'');
-}
-.press-volunteer div p img{
-	vertical-align:bottom;
-}
-.press-volunteer div p{
-	height:expression((this.parentNode.getElementsByTagName('P')[1]==this&&this.parentNode.parentNode.getElementsByTagName('DIV')[0]==this.parentNode&&this.parentNode.parentNode.parentNode.getElementsByTagName('DIV')[0]==this.parentNode.parentNode)?'0px':'');
-	overflow:expression((this.parentNode.getElementsByTagName('P')[1]==this&&this.parentNode.parentNode.getElementsByTagName('DIV')[0]==this.parentNode&&this.parentNode.parentNode.parentNode.getElementsByTagName('DIV')[0]==this.parentNode.parentNode)?'hidden':'');
-	font-size:expression((this.parentNode.getElementsByTagName('P')[1]==this&&this.parentNode.parentNode.getElementsByTagName('DIV')[0]==this.parentNode&&this.parentNode.parentNode.parentNode.getElementsByTagName('DIV')[0]==this.parentNode.parentNode)?'85%':'');
-	text-align:expression((this.parentNode.getElementsByTagName('P')[1]==this&&this.parentNode.parentNode.getElementsByTagName('DIV')[0]==this.parentNode&&this.parentNode.parentNode.parentNode.getElementsByTagName('DIV')[0]==this.parentNode.parentNode)?'justify':'');
-}
-
 .press-faq div{
 	width:400px;
 	display:inline;
