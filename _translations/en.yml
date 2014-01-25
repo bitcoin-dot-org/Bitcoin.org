@@ -109,7 +109,7 @@ en:
     walletmobi: "Mobile wallets"
     walletmobitxt: "Mobile wallets allow you to bring Bitcoin with you in your pocket. You can exchange coins easily and pay in physical stores by scanning a QR code or using NFC \"tap to pay\"."
     walletweb: "Web wallets"
-    walletwebtxt: "Web wallets allow you to use Bitcoin anywhere with less effort to protect your wallet. However, you must choose your web wallet with care as they host your bitcoins."
+    walletwebtxt: "Web wallets allow you to use Bitcoin on any browser or mobile and often offer additional services. However, you must choose your web wallet with care as they host your bitcoins."
     walletbitcoinqt: "Bitcoin-Qt is a full Bitcoin client and builds the backbone of the network. It offers the highest levels of security, privacy, and stability. However, it has fewer features and it takes a lot of space and memory."
     walletmultibit: "MultiBit is a lightweight client that focuses on being fast and easy to use. It synchronizes with the network and is ready to use in minutes. MultiBit also supports many languages. It is a good choice for non-technical users."
     walletarmory: "Armory is an advanced Bitcoin client that expands its features for Bitcoin power users. It offers many backup and encryption features, and it allows secure cold-storage on offline computers."
