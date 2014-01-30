@@ -246,7 +246,7 @@ es:
     pagetitle: "Desarrollo de Bitcoin"
     spec: "Especificación"
     spectxt: "Si usted está interesado en aprender más acerca de los detalles técnicos de Bitcoin, le recomendamos empezar con estos documentos."
-    speclink1: "<a href=\"/bitcoin.pdf\">Bitcoin: Un Sistema de Dinero Electrónico Punto a Punto</a>"
+    speclink1: "<a href=\"/bitcoin_es_latam.pdf\">Bitcoin: Un Sistema de Dinero Electrónico Punto a Punto</a>"
     speclink2: "<a href=\"https://en.bitcoin.it/wiki/Protocol_rules\">Reglas del protocolo</a>"
     speclink3: "<a href=\"https://es.bitcoin.it/wiki/Página_principal\">Wiki de Bitcoin </a>"
     coredev: "Desarrolladores"
@@ -283,7 +283,7 @@ es:
     processing: "Minería"
     processingtxt: "La minería es un <b>sistema de consenso distribuido</b> que se utiliza para <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>confirmar</i></a> las transacciones pendientes a ser incluidas en la cadena de bloques. Hace cumplir un orden cronológico en la cadena de bloques, protege la neutralidad de la red y permite un acuerde entre todos los equipos sobre el estado del sistema. Para confirmar las transacciones, deberán ser empacadas ​​en un <a href=\"#vocabulary##[vocabulary.block]\"><i>bloque</i></a> que se ajuste a estrictas normas de cifrado y que será verificado por la red. Estas normas impiden que cualquier bloque anterior se modifique, ya que hacerlo invalidaría todos los bloques siguientes. La minería también crea el equivalente a una lotería competitiva que impide que cualquier persona pueda fácilmente añadir nuevos bloques consecutivamente en la cadena de bloques. De esta manera, ninguna persona puede controlar lo que está incluido en la cadena de bloques o reemplazar partes de la cadena de bloques para revertir sus propios gastos."
     readmore: "¿ Hasta qué punto estás dispuesto a descubrir más ?"
-    readmoretxt: "Esto es sólo un resumen muy breve y conciso del sistema. Si quieres conocer mas los detalles, puedes leer el <a href=\"/bitcoin.pdf\">artículo original</a> que describe el diseño del sistema, y explorar el <a href=\"https://es.bitcoin.it/\">Wiki de Bitcoin</a>."
+    readmoretxt: "Esto es sólo un resumen muy breve y conciso del sistema. Si quieres conocer mas los detalles, puedes leer el <a href=\"/bitcoin_es_latam.pdf\">artículo original</a> que describe el diseño del sistema, y explorar el <a href=\"https://es.bitcoin.it/\">Wiki de Bitcoin</a>."
   index:
     title: "Bitcoin"
     pagetitle: "Una moneda digital P2P de código abierto"
@@ -311,7 +311,7 @@ es:
     linkbitcoinnews: "<a href=\"http://www.bitcoinnews.com/\">Noticias de Bitcoin</a>"
     linkforumpress: "<a href=\"https://bitcointalk.org/index.php?board=77.0\">Foro de Bitcoin / Prensa</a>"
     linkspec: "Especificación de Bitcoin"
-    linkpdf: "<a href=\"/bitcoin.pdf\">Bitcoin: sistema de dinero electrónico punto a punto</a>"
+    linkpdf: "<a href=\"/bitcoin_es_latam.pdf\">Bitcoin: sistema de dinero electrónico punto a punto</a>"
     linkprotocol: "<a href=\"https://en.bitcoin.it/wiki/Protocol_rules\">Reglas del protocolo</a>"
   secure-your-wallet:
     title: ""
