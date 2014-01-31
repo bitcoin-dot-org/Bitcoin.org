@@ -185,7 +185,7 @@ var Hyphenator = (function (window) {
                 i += 1;
                 t = s[i];
             }
-            return !!r ? r : 'http://hyphenator.googlecode.com/svn/trunk/';
+            return !!r ? r : 'https://hyphenator.googlecode.com/svn/trunk/';
         }()),
 
         /**
