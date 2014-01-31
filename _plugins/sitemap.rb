@@ -46,7 +46,7 @@ module Jekyll
             next if locs[lang]['url'][id].nil? or locs[lang]['url'][id] == ''
             next if redirects.has_key?(id) and ( !redirects[id].has_key?('except') or !redirects[id]['except'].has_key?(lang) )
             sitemap.puts '<url>'
-            sitemap.puts '  <loc>http://bitcoin.org/'+lang+'/'+CGI::escape(locs[lang]['url'][id])+'</loc>'
+            sitemap.puts '  <loc>https://bitcoin.org/'+lang+'/'+CGI::escape(locs[lang]['url'][id])+'</loc>'
             locs.each do |altlang,value|
               altid = id
               #If there is a redirection from this page, use the destination as alternate url
@@ -61,7 +61,7 @@ module Jekyll
               sitemap.puts '  <xhtml:link'
               sitemap.puts '    rel="alternate"'
               sitemap.puts '    hreflang="'+altlang+'"'
-              sitemap.puts '    href="http://bitcoin.org/'+altlang+'/'+CGI::escape(locs[altlang]['url'][altid])+'" />'
+              sitemap.puts '    href="https://bitcoin.org/'+altlang+'/'+CGI::escape(locs[altlang]['url'][altid])+'" />'
             end
             sitemap.puts '</url>'
           end
@@ -75,7 +75,7 @@ module Jekyll
               data = File.read(file1+'/'+file2)
               next if !data.index('window.location.href=').nil? or !data.index('redirect:').nil?
               sitemap.puts '<url>'
-              sitemap.puts '  <loc>http://bitcoin.org/'+file1+'/'+file2.gsub('.html','')+'</loc>'
+              sitemap.puts '  <loc>https://bitcoin.org/'+file1+'/'+file2.gsub('.html','')+'</loc>'
               sitemap.puts '</url>'
             end
           end
@@ -85,14 +85,14 @@ module Jekyll
           data = File.read(file1)
           next if !data.index('window.location.href=').nil? or !data.index('redirect:').nil? or !data.index('google-site-verification:').nil?
           sitemap.puts '<url>'
-          sitemap.puts '  <loc>http://bitcoin.org/'+file1.gsub('.html','')+'</loc>'
+          sitemap.puts '  <loc>https://bitcoin.org/'+file1.gsub('.html','')+'</loc>'
           sitemap.puts '</url>'
         end
         #Add english alerts pages
         Dir.foreach('_alerts') do |file|
           next if file == '.' or file == '..'
           sitemap.puts '<url>'
-          sitemap.puts '  <loc>http://bitcoin.org/en/alert/'+file.gsub('.html','')+'</loc>'
+          sitemap.puts '  <loc>https://bitcoin.org/en/alert/'+file.gsub('.html','')+'</loc>'
           sitemap.puts '</url>'
         end
         #Add english releases pages
@@ -105,7 +105,7 @@ module Jekyll
           file.shift()
           file = file.join('-')
           sitemap.puts '<url>'
-          sitemap.puts '  <loc>http://bitcoin.org/en/release/'+file.gsub('.md','').gsub('.html','')+'</loc>'
+          sitemap.puts '  <loc>https://bitcoin.org/en/release/'+file.gsub('.md','').gsub('.html','')+'</loc>'
           sitemap.puts '</url>'
         end
         #Close sitemap
