@@ -177,7 +177,7 @@ var Hyphenator = (function (window) {
             while (!!t) {
                 if (!!t.src) {
                     src = t.src;
-                    p = src.indexOf('Hyphenator.js');
+                    p = src.indexOf('hyphenator.js');
                     if (p !== -1) {
                         r = src.substring(0, p);
                     }
