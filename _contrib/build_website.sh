@@ -32,4 +32,4 @@ git clean -x -f -d
 
 # Build website
 jekyll
-rsync --delete -a $WORKDIR/_site/ $DESTDIR/
+rsync --exclude /bin/ --delete -a $WORKDIR/_site/ $DESTDIR/
