@@ -746,28 +746,34 @@ li p{
 }
 
 .preview{
-	margin-top:-5px;
+	margin-top:25px;
 }
 .previewcol{
 	clear:both;
 }
+.previewcol .previewrow{
+	padding-left:19px;
+	padding-right:20px;
+}
 .previewcol .previewrow:first-child{
 	padding-left:0;
+}
+.previewcol .previewrow:first-child+div{
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+.previewcol .previewrow:first-child+div+div{
+	padding-right:0;
 }
 .previewrow{
 	float:left;
 	width:255px;
 	text-align:left;
-	padding-left:16px;
-	padding-right:15px;
 	position:relative;
-}
-.previewrow:nth-child(2){
-	border-left:1px solid #ccc;
-	border-right:1px solid #ccc;
 }
 .previewrow>h2{
 	font-size:115%;
+	margin-top:0;
 }
 .previewrow>p{
 	font-size:95%;
@@ -1366,6 +1372,9 @@ h2 .rssicon{
 	}
 	.previewrow>p{
 		font-size:100%;
+	}
+	.previewrow>h2{
+		margin-top:20px;
 	}
 	.previewrow>div>div{
 		position:fixed;

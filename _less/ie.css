@@ -303,6 +303,9 @@ body{
 .previewcol .previewrow{
 	padding-left:expression(this.parentNode.firstChild==this?'0px':'');
 }
+.previewcol .previewrow:first-child+div{
+	border:0;
+}
 .previewrow div div div.b1{
 	background:url(/img/bubbletop.png) bottom center no-repeat;
 	padding:0;
