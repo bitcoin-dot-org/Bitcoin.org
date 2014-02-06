@@ -4,11 +4,11 @@
 <rss version="2.0">
 <channel>
 	<title>Bitcoin conferences and events</title>
-	<link>http://bitcoin.org/en/events</link>
+	<link>https://bitcoin.org/en/events</link>
 	<description>This RSS feed allows to follow Bitcoin events and conferences.</description>
 	<image>
-		<url>http://bitcoin.org/img/logo_rss.png</url>
-		<link>http://bitcoin.org/en/events</link>
+		<url>https://bitcoin.org/img/logo_rss.png</url>
+		<link>https://bitcoin.org/en/events</link>
 	</image>
 	{% filter_for p in site.pages sort_by:date category:event %}
         <item>
