@@ -136,7 +136,7 @@ zh_TW:
     walletarmory: "Armory 是執行於 Bitcoin-Qt 之上的一個進階客戶端，為 Bitcoin 專業使用者擴充許多功能。它提供多種備份與加密功能，也允許將安全性冷資料儲存放在離線的電腦。"
     walletelectrum: "Electrum 注重速度和簡單性，只佔用少量的資源。它將 Bitcoin 系統裡最複雜的計算留給遠端伺服器執行，也讓使用者可透過密語來還原錢包。"
     walletbitcoinwallet: "Bitcoin Wallet 是輕量的行動客戶端，支持 Android 和 BlackBerry OS 兩種版本。這個客戶端不需和任何線上服務綁定就可以運作。它 QR 碼掃瞄及 NFC 相容。"
-    walletblockchaininfomob: "Blockchain.info 是一個給行動裝置使用的綜合性網頁版錢包。它同時以限制模式支援 iPhone 的版本來符合 Apple 的政策。它包含許多 blockchain.info 的功能，譬如網頁版錢包備份。"
+    walletblockchaininfomob: "Blockchain.info 是一個給行動裝置使用的綜合性網頁版錢包。它包含許多 blockchain.info 的功能，譬如網頁版錢包備份。"
     walletblockchaininfo: "Blockchain.info 是一個方便使用的的綜合性錢包。它將錢包的加密版本儲存在線上，但在你的瀏覽器裡解密。為安全起見，你應該使用它的瀏覽器擴充套件，同時用 Email 來備份。"
     walletpaytunia: "Paytunia 是給行動裝置用的 Paymium 網頁版電子錢包，它與 Bitcoin-central 協作，讓你從行動裝置上就能存取 Bitcoin 交換器。目前有 iPhone 版本，預計不久後會有 Android 版本。"
     walletbips: "BIPS 是 WalletBit 的網頁版錢包，讓你能在許多不同國家輕易買賣 bitcoin。同時它提供冷資料儲存、錢包匯入和許多買賣工具的功能。"

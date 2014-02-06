@@ -144,7 +144,7 @@ zh_CN:
     walletarmory: "Armory客户端是运行于Bitcoin-Qt客户端之上的高级比特币客户端，为高级用户提供了更多的扩展功能，其中包括了很多关于备份和加密的功能，以及非常安全的线下冷存储。"
     walletelectrum: "Electrum客户端的主要特点是快、简单、占用资源少。它使用远程服务器来处理比特币系统中最复杂的部分，你还可以通过设定一个保密的短语用来还原钱包。"
     walletbitcoinwallet: "Bitcoin Wallet是为安卓和黑莓OS操作系统打造的一款轻量级移动客户端，它无需关联到任何在线服务，并且兼容二维码和NFC技术。"
-    walletblockchaininfomob: "Blockchain.info是一个为移动设备设计的混合式在线钱包。它同时也支持iPhone，但是为了符合Apple的政策而限制了某些功能。它包含了许多blockchain.info的功能，诸如在线钱包备份。"
+    walletblockchaininfomob: "Blockchain.info是一个为移动设备设计的混合式在线钱包。它包含了许多blockchain.info的功能，诸如在线钱包备份。"
     walletblockchaininfo: "Blockchain.info是一个用户友好的混合式在线钱包。它为你在线存储一个加密版本的钱包，但需要在你的浏览器内解密。为了安全起见，你应该总是使用浏览器扩展和电子邮件备份。"
     walletpaytunia: "Paytunia是一款由Paymium同Bitcoin-central合作研发的手机钱包，通过它可以让你用手机直接进入比特币交易平台。Paytunia目前支持iPhone，不久也将支持安卓。"
     walletbips: "BIPS是由WalletBit研发的一款在线钱包服务，很多国家的用户可以用它轻松地进行比特币买卖。BIPS还提供了冷存储机制、钱包导入和许多商家服务功能。"
