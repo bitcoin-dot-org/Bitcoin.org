@@ -1,6 +1,6 @@
 ---
 title: "Camp Bitcoin"
-city: "Black Rock City, Nevada"
+city: "Black Rock City, NV"
 country: "United States"
 link: "http://campbitcoin.hivewallet.com/"
 ---
