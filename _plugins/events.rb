@@ -6,6 +6,7 @@
 #on the events RSS file and translated events pages.
 
 require 'yaml'
+require 'cgi'
 
 module Jekyll
 
@@ -19,6 +20,13 @@ module Jekyll
       self.read_yaml(File.join(base, srcdir), src)
       self.data['date'] = date
       self.data['category'] = 'event'
+      # Get longitude / latitude from Google Geocoding API
+      self.data['geoloc'] = 'false'
+      address = CGI::escape(self.data['address'] + ', ' +self.data['city'] + ', ' + self.data['country'])
+      geoloc = JSON.parse(open("https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&sensor=false","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
+      if geoloc['status'] == 'OK'
+        self.data['geoloc'] = geoloc['results'][0]['geometry']['location']['lat'].to_s + ", " + geoloc['results'][0]['geometry']['location']['lng'].to_s
+      end
     end
   end
 

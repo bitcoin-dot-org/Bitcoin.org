@@ -111,10 +111,12 @@ Events should be placed in `_events/YYYY-MM-DD-SHORTTITLE.md` and adhere to this
 
 ```
 ---
-title: "Bitcoin 2013 The future of payments"
-city: "San Jose"
+title: "2014 Texas Bitcoin Conference"
+venue: "Circuit of the Americas™ - Technology and Conference Center"
+address: "9201 Circuit of the Americas Blvd"
+city: "Austin, TX"
 country: "United States"
-link: "http://bitcoin2013.com/"
+link: "http://texasbitcoinconference.com/"
 ---
 ```
 
