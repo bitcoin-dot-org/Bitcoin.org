@@ -153,6 +153,9 @@ id: faq
 
 <h2><a name="{% translate legal anchor.faq %}">{% translate legal %}</a></h2>
 
+{% case page.lang %}
+{% when 'ru' %}
+{% else %}
 <h3><a name="{% translate islegal anchor.faq %}">{% translate islegal %}</a></h3>
 <p>{% translate islegaltxt1 %}</p>
 <p>{% translate islegaltxt2 %}</p>
@@ -160,6 +163,7 @@ id: faq
   <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
   <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
 </ul>
+{% endcase %}
 
 <h3><a name="{% translate illegalactivities anchor.faq %}">{% translate illegalactivities %}</a></h3>
 <p>{% translate illegalactivitiestxt1 %}</p>
