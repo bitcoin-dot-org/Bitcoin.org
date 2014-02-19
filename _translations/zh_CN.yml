@@ -1,5 +1,5 @@
 zh_CN:
-  about:
+  faq:
     title: "关于 － 比特币"
     pagetitle: "关于比特币"
     history: "历史背景"
@@ -389,7 +389,7 @@ zh_CN:
     blockchain: 块链
     blockchaintxt: (一个公开共享的交易记录)
   layout:
-    menu-about: 关于我们
+    menu-faq: 关于我们
     menu-about-us: "关于bitcoin.org"
     menu-bitcoin-for-businesses: 商家
     menu-bitcoin-for-developers: 开发者
@@ -409,10 +409,9 @@ zh_CN:
     footer: "基于<a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT协议</a>授权发布"
     getstarted: "比特币入门指南"
   url:
-    about: about
+    faq: about
     about-us: about-us
     bitcoin-for-developers: bitcoin-for-developers
-    bitcoin-for-enthusiasts: bitcoin-for-enthusiasts
     bitcoin-for-individuals: bitcoin-for-individuals
     bitcoin-for-businesses: bitcoin-for-businesses
     choose-your-wallet: choose-your-wallet

@@ -21,15 +21,6 @@ module Jekyll
         lang=file.split('.')[0]
         locs[lang] = YAML.load_file('_translations/'+file)[lang]
       end
-      #Load redirections
-      redirects = {}
-      rredirects = {}
-      Dir.foreach('_redirects') do |file|
-        next if file == '.' or file == '..'
-        id = file.split('.')[0]
-        redirects[id] = YAML.load_file("_redirects/" + file)
-        rredirects[redirects[id]['dst']] = id
-      end
       #Create destination directory if does not exists
       if !File.directory?(site.dest)
         Dir.mkdir(site.dest)
@@ -42,26 +33,16 @@ module Jekyll
         #Add translated pages with their alternative in each languages
         locs['en']['url'].each do |id,value|
           locs.each do |lang,value|
-            #Don't add a page if their url is not translated or if they are a redirection
+            #Don't add a page if their url is not translated
             next if locs[lang]['url'][id].nil? or locs[lang]['url'][id] == ''
-            next if redirects.has_key?(id) and ( !redirects[id].has_key?('except') or !redirects[id]['except'].has_key?(lang) )
             sitemap.puts '<url>'
             sitemap.puts '  <loc>https://bitcoin.org/'+lang+'/'+CGI::escape(locs[lang]['url'][id])+'</loc>'
             locs.each do |altlang,value|
-              altid = id
-              #If there is a redirection from this page, use the destination as alternate url
-              if redirects.has_key?(id) and ( !redirects[id].has_key?('except') or !redirects[id]['except'].has_key?(altlang) )
-                altid = redirects[id]['dst']
-              end
-              #If there is a disabled redirection to this page, point to the source as alternate url
-              if rredirects.has_key?(id) and redirects[rredirects[id]].has_key?('except') and redirects[rredirects[id]]['except'].has_key?(altlang)
-                altid = rredirects[id]
-              end
-              next if locs[altlang]['url'][altid].nil? or locs[altlang]['url'][altid] == '' or altlang == lang
+              next if locs[altlang]['url'][id].nil? or locs[altlang]['url'][id] == '' or altlang == lang
               sitemap.puts '  <xhtml:link'
               sitemap.puts '    rel="alternate"'
               sitemap.puts '    hreflang="'+altlang+'"'
-              sitemap.puts '    href="https://bitcoin.org/'+altlang+'/'+CGI::escape(locs[altlang]['url'][altid])+'" />'
+              sitemap.puts '    href="https://bitcoin.org/'+altlang+'/'+CGI::escape(locs[altlang]['url'][id])+'" />'
             end
             sitemap.puts '</url>'
           end
@@ -71,9 +52,7 @@ module Jekyll
           if /^[a-z]{2}(_[A-Z]{2})?$/.match(file1) and File.directory?(file1)
             Dir.foreach(file1) do |file2|
               next if !/\.html$/.match(file2)
-              #Ignore static redirect pages
               data = File.read(file1+'/'+file2)
-              next if !data.index('window.location.href=').nil? or !data.index('redirect:').nil?
               sitemap.puts '<url>'
               sitemap.puts '  <loc>https://bitcoin.org/'+file1+'/'+file2.gsub('.html','')+'</loc>'
               sitemap.puts '</url>'
@@ -81,9 +60,9 @@ module Jekyll
           end
           next if !/\.html$/.match(file1)
           next if file1 == 'index.html'
-          #Ignore static redirect pages and google webmaster tools
+          #Ignore google webmaster tools
           data = File.read(file1)
-          next if !data.index('window.location.href=').nil? or !data.index('redirect:').nil? or !data.index('google-site-verification:').nil?
+          next if !data.index('google-site-verification:').nil?
           sitemap.puts '<url>'
           sitemap.puts '  <loc>https://bitcoin.org/'+file1.gsub('.html','')+'</loc>'
           sitemap.puts '</url>'

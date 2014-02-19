@@ -1,5 +1,5 @@
 zh_TW:
-  about:
+  faq:
     title: "關於 - Bitcoin"
     pagetitle: "關於 Bitcoin"
     history: "Bitcoin 簡史"
@@ -384,16 +384,15 @@ zh_TW:
     menu-innovation: 創新
     menu-foundation: 基金會
     menu-support-bitcoin: 參與
-    menu-about: 關於
+    menu-faq: 關於
     menu-about-us: "關於 bitcoin.org"
     menu-choose-your-wallet: "選擇你的錢包"
     menu-you-need-to-know: "Bitcoin 使用須知"
     footer: "以 <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT 授權</a>發佈"
   url:
-    about: about
+    faq: about
     about-us: about-us
     bitcoin-for-developers: bitcoin-for-developers
-    bitcoin-for-enthusiasts: bitcoin-for-enthusiasts
     bitcoin-for-individuals: bitcoin-for-individuals
     bitcoin-for-businesses: bitcoin-for-businesses
     bitcoin-for-press: 

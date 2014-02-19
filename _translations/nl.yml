@@ -1,5 +1,5 @@
 nl:
-  about:
+  faq:
     title: "Over Bitcoin - Bitcoin"
     pagetitle: "Over Bitcoin"
     history: "Eerst wat geschiedenis"
@@ -391,7 +391,7 @@ nl:
     blockchain: de blokketen
     blockchaintxt: (een gedeelde, openbare transactiegeschiedenis)
   layout:
-    menu-about: "Over Bitcoin"
+    menu-faq: "Over Bitcoin"
     menu-about-us: "Over bitcoin.org"
     menu-bitcoin-for-businesses: Bedrijven
     menu-bitcoin-for-developers: Ontwikkelaars
@@ -411,10 +411,9 @@ nl:
     footer: "Beschikbaar onder de <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-licentie</a>"
     getstarted: "Ga aan de slag met Bitcoin"
   url:
-    about: over-bitcoin
+    faq: over-bitcoin
     about-us: over-ons
     bitcoin-for-developers: bitcoin-voor-ontwikkelaars
-    bitcoin-for-enthusiasts: bitcoin-voor-liefhebbers
     bitcoin-for-individuals: bitcoin-voor-particulieren
     bitcoin-for-businesses: bitcoin-voor-bedrijven
     choose-your-wallet: kies-uw-portemonnee

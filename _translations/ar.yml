@@ -1,5 +1,5 @@
 ar:
-  about:
+  faq:
     title: "عن - بت كوين"
     pagetitle: "عن ألبت كوين"
     history: "نبذة تاريخية"
@@ -65,7 +65,7 @@ ar:
     instanttext: "عادة معاملات ألبت كوين يتم إستلامها بغضون ثواني قليلة و يتم تأكيدها خلال 10 دقائق. قبل هذا, عملية ألدفع ممكن إعتبارها موثّقة لكن قابلة للعكس. إذا كنت تتطلب بشدة عمليات دفع فورية, من ألمفضل أن تسأل لرسوم نقل بسيطة و تستخدم نظام لكشف ألدفع ألمزدوج."
     micro: "مدفوعات مصغرة رخيصة"
     microtext: "ألبت كوين يوفر أقل رسوم لمعالجة ألمدفوعات لأي نوع من عمليات ألتبادل, بضمنها ألمدفوعات ألمصغرة. معنى ذلك أنه ممكن أيضا إستخدامها لتصميم و إنجاز خدمات مبدعة جديدة على ألإنترنت لم تكن ممكنة قبلا لمجرد سبب حدود ألتمويل."
-  bitcoin-for-enthusiasts:
+  innovation:
     title: "بت كوين للهواة"
     pagetitle: "بت كوين للهواة"
     summary: "يقوم ألبت كوين ألأن بتغيير عالم ألتمويل, عن طريق منحك قدرة ألتحكم بنقودك."
@@ -435,7 +435,7 @@ ar:
     menu-bitcoin-for-individuals: "أفراد"
     menu-bitcoin-for-businesses: "أعمال"
     menu-bitcoin-for-developers: "مطورين"
-    menu-bitcoin-for-enthusiasts: "هواة"
+    menu-innovation: "ابتكار"
     menu-bitcoin-for-press: ""
     menu-how-it-works: "كيف يعمل"
     menu-vocabulary: "مفردات"
@@ -444,14 +444,14 @@ ar:
     menu-development: "تطوير"
     menu-support-bitcoin: "شارك"
     menu-foundation: "مؤسسة"
-    menu-about: "عن"
+    menu-faq: "عن"
     menu-choose-your-wallet: "إختر محفظتك"
     menu-you-need-to-know: "تحتاج أن تعلم"
     footer: "Released under the <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT license</a>"
   url:
-    about: "عن"
+    faq: "عن"
     bitcoin-for-developers: "بت-كوين-للمطورين"
-    bitcoin-for-enthusiasts: "بت-كوين-للهواة"
+    innovation: innovation
     bitcoin-for-individuals: "بت-كوين-للأفراد"
     bitcoin-for-businesses: "بت-كوين-للأعمال"
     bitcoin-for-press: ""

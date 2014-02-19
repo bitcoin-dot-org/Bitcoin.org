@@ -32,6 +32,33 @@ langs:
   zh_CN: ‪简体中文‬
   zh_TW: ‪繁體中文‬
 
+redirects:
+  /news: /en/version-history
+  /clients: /en/choose-your-wallet
+  /about: /en/faq
+  /de/ueber: /de/faq
+  /en/about: /en/faq
+  /es/acerca-de: /es/faq
+  /fr/a-propos: /fr/faq
+  /ru/описание: /ru/faq
+  /ar/بت-كوين-للهواة: /ar/innovation
+  /de/bitcoin-fuer-enthusiasten: /de/innovation
+  /en/bitcoin-for-enthusiasts: /en/innovation
+  /es/bitcoin-para-entusiastas: /es/innovacion
+  /fa/بیت-کوین-برای-علاقه-مندان: /fa/innovation
+  /fr/bitcoin-pour-passionnes: /fr/innovation
+  /it/bitcoin-per-appassionati: /it/innovazione
+  /nl/bitcoin-voor-liefhebbers: /nl/innovatie
+  /pl/bitcoin-dla-entuzjastow: /pl/innowacje
+  /ru/биткоин-энтузиастам: /ru/innovation
+  /en/bitcoin-for-press: /en/press
+
+aliases:
+  s_nakamoto: Satoshi Nakamoto
+  --author=Satoshi Nakamoto: Satoshi Nakamoto
+  gavinandresen: Gavin Andresen
+  tcatm: Nils Schneider
+
 safe:        false
 auto:        false
 server:      false
@@ -72,9 +99,3 @@ kramdown:
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: style
-
-aliases:
-  s_nakamoto: Satoshi Nakamoto
-  --author=Satoshi Nakamoto: Satoshi Nakamoto
-  gavinandresen: Gavin Andresen
-  tcatm: Nils Schneider

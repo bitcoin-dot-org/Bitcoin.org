@@ -1,5 +1,5 @@
 fa:
-  about:
+  faq:
     title: "درباره - بیت کوین"
     pagetitle: "درباره-بیت-کوین"
     history: "کمی از تاریخچه"
@@ -65,7 +65,7 @@ fa:
     instanttext: "یک تراکنش بیت کوین معمولاً در چند ثانیه می رسد و در حدود 10 دقیقه تایید می شود. قبل از آن ، تراکنش می تواند موفق اما قابل بازگشت در نظر گرفته شود. اگر واقعاً به تراکنش های مستقیم نیاز دارید ، پیشنهاد می شود که یک هزینه ی کم تراکنش درخواست کرده و از یک سیستم تشخیض پرداخت دوباره یا به عبارتی تکراری استفاده کنید."
     micro: "پرداخت های خرد ارزان"
     microtext: "بیت کوین پایین ترین هزینه های پردازش پرداخت را برای هر نوع از تراکنش ارائه می دهد ، که شامل پرداخت های مایکرو یا خرد هم می شود. این به معنای این است که می تواند برای طراحی و پیاده سازی سرویس های آنلاین سازنده ی جدیدی که قبلاً به دلیل محدودیت های مالی نمی توانستند وجود داشته باشند ، استفاده شود."
-  bitcoin-for-enthusiasts:
+  innovation:
     title: "بیت کوین برای علاقه مندان - بیت کوین"
     pagetitle: "بیت کوین برای علاقه مندان"
     summary: "بیت کوین با دادن قابلیت کنترل روی پولتان به شما، در حال تغییر دنیای سرمایه گذاری است."
@@ -340,8 +340,8 @@ fa:
     menu-bitcoin-for-individuals: افراد
     menu-bitcoin-for-businesses: کسب و کارها
     menu-bitcoin-for-developers: توسعه دهندگان
-    menu-bitcoin-for-enthusiasts: علاقه مندان
     menu-bitcoin-for-press: 
+    menu-innovation: بدعت
     menu-how-it-works: "چگونه کار می کند"
     menu-vocabulary: واژگان
     menu-resources: منابع
@@ -349,14 +349,14 @@ fa:
     menu-development: توسعه
     menu-support-bitcoin: شرکت کردن
     menu-foundation: بنیاد
-    menu-about: درباره
+    menu-faq: درباره
     menu-choose-your-wallet: "انتخاب کیف پول"
     menu-you-need-to-know: "آن چه باید بدانید"
     footer: "منتشر شده تحت <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT گواهینامه"
   url:
-    about: درباره
+    faq: درباره
     bitcoin-for-developers: بیت-کوین-برای-توسعه-دهندگان
-    bitcoin-for-enthusiasts: بیت-کوین-برای-علاقه-مندان
+    innovation: innovation
     bitcoin-for-individuals: بیت-کوین-برای-افراد
     bitcoin-for-businesses: بیت-کوین-برای-کسب-و-کار
     bitcoin-for-press: 

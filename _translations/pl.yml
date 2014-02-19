@@ -1,5 +1,5 @@
 pl:
-  about:
+  faq:
     title: "O Bitcoin"
     pagetitle: "O Bitcoin"
     history: "Kawałek historii"
@@ -384,16 +384,15 @@ pl:
     menu-innovation: Innowacje
     menu-support-bitcoin: Uczestniczyć
     menu-foundation: Fundacja
-    menu-about: O bitcoinie
+    menu-faq: O bitcoinie
     menu-about-us: "O bitcoin.org"
     menu-choose-your-wallet: "Wybierz swój portfel"
     menu-you-need-to-know: "Powinieneś wiedzieć"
     footer: "Dostępny w ramach <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licencji MIT</a>"
   url:
-    about: o
+    faq: o
     about-us: o-nas
     bitcoin-for-developers: bitcoin-dla-deweloperow
-    bitcoin-for-enthusiasts: bitcoin-dla-entuzjastow
     bitcoin-for-individuals: bitcoin-dla-osob-fizycznych
     bitcoin-for-businesses: bitcoin-dla-biznesu
     bitcoin-for-press: 

@@ -28,7 +28,7 @@ Installing dependencies on older Ubuntu and Debian distributions
 
 ### Import translations
 
-**Update translations**: You can overwrite each language files in _translations by their updated version from Transifex. You should make sure that each .html files (in _layouts, _templates and _redirects) don't serve outdated content for those languages. You should also make sure that no url has been changed by translators.
+**Update translations**: You can overwrite each language files in _translations by their updated version from Transifex. You should make sure that each .html files (in _layouts, _templates) don't serve outdated content for those languages. You should also make sure that no url has been changed by translators. If one page has been replaced or moved, a redirection can be added in _config.yml.
 
 **Add a new language**: You can put the language file from Transifex in _translations and add the language in _config.yml in the right display order for the language bar. Make sure to review all pages and check all links.
 

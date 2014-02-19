@@ -1,5 +1,5 @@
 tr:
-  about:
+  faq:
     title: "Hakkında - Bitcoin"
     pagetitle: "Bitcoin Hakkında"
     history: "Biraz tarih"
@@ -391,7 +391,7 @@ tr:
     blockchain: Blok zinciri
     blockchaintxt: (paylaşılan halka açık işlem günlüğü)
   layout:
-    menu-about: Hakkında
+    menu-faq: Hakkında
     menu-about-us: "Bitcoin.org hakkında"
     menu-bitcoin-for-businesses: İşletmeler
     menu-bitcoin-for-developers: Geliştiriciler
@@ -411,10 +411,9 @@ tr:
     footer: "<a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT lisansı</a> altında yayılmaktadır"
     getstarted: "Bitcoin'e başlayın"
   url:
-    about: hakkinda
+    faq: hakkinda
     about-us: hakkimizda
     bitcoin-for-developers: gelistiriciler-icin-bitcoin
-    bitcoin-for-enthusiasts: hevesliler-icin-bitcoin
     bitcoin-for-individuals: bireyler-icin-bitcoin
     bitcoin-for-businesses: isletmeler-icin-bitcoin
     choose-your-wallet: cuzdaninizi-secin

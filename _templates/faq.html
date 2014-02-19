@@ -2,6 +2,49 @@
 layout: base
 id: faq
 ---
+
+{% case page.lang %}
+{% when 'ar' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_CN' or 'zh_TW' %}
+
+<h1>{% translate pagetitle %}</h1>
+
+<h2>{% translate history %}</h2>
+<p>{% translate historytxt1 %}</p>
+<p>{% translate historytxt2 %}</p>
+<p>{% translate historytxt3 %}</p>
+<p>{% translate historytxt4 %}</p>
+
+<h2>{% translate technical %}</h2>
+<p>{% translate technicalintro %}</p>
+<ul>
+  <li>{% translate technicaltxt1 %}</li>
+  <li>{% translate technicaltxt2 %}</li>
+  <li>{% translate technicaltxt3 %}</li>
+  <li>{% translate technicaltxt4 %}</li>
+  <li>{% translate technicaltxt5 %}</li>
+  <li>{% translate technicaltxt6 %}</li>
+</ul>
+
+<h2>{% translate economics %}</h2>
+<p>{% translate economicsintro %}</p>
+<ul>
+  <li>{% translate economicstxt1 %}</li>
+  <li>{% translate economicstxt2 %}</li>
+  <li>{% translate economicstxt3 %}</li>
+</ul>
+
+<h2>{% translate stats %}</h2>
+<p>{% translate statsintro %}</p>
+<ul>
+  <li>{% translate statstxt1 %}</li>
+  <li>{% translate statstxt2 %}</li>
+  <li>{% translate statstxt3 %}</li>
+  <li>{% translate statstxt4 %}</li>
+  <li>{% translate statstxt5 %}</li>
+</ul>
+
+{% else %}
+
 <h1>{% translate pagetitle %}</h1>
 <p class="summary">{% translate summary %}</p>
 
@@ -284,3 +327,5 @@ id: faq
 
 <h3><a name="{% translate morehelp anchor.faq %}">{% translate morehelp %}</a></h3>
 <p>{% translate morehelptxt1 %}</p>
+
+{% endcase %}

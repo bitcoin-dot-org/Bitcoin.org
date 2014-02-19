@@ -1,5 +1,5 @@
 it:
-  about:
+  faq:
     title: "A proposito - Bitcoin"
     pagetitle: "A proposito di Bitcoin"
     history: "Un po' di storia"
@@ -391,7 +391,7 @@ it:
     blockchain: la Blockchain
     blockchaintxt: (un registro delle transazioni pubblico e condiviso)
   layout:
-    menu-about: A proposito
+    menu-faq: A proposito
     menu-about-us: "A proposito di Bitcoin"
     menu-bitcoin-for-businesses: Imprese
     menu-bitcoin-for-developers: Sviluppatori
@@ -411,10 +411,9 @@ it:
     footer: "Rilasciato sotto <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licenza MIT</a>"
     getstarted: "Come iniziare con Bitcoin"
   url:
-    about: a-proposito
+    faq: a-proposito
     about-us: chi-siamo
     bitcoin-for-developers: bitcoin-per-sviluppatori
-    bitcoin-for-enthusiasts: bitcoin-per-appassionati
     bitcoin-for-individuals: bitcoin-per-privati
     bitcoin-for-businesses: bitcoin-per-imprese
     choose-your-wallet: scegli-il-tuo-portafoglio
