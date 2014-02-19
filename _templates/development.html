@@ -4,7 +4,7 @@ id: development
 ---
 <h1>{% translate pagetitle %}</h1>
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'pl' or 'zh_TW' %}
+{% when 'ar' or 'fa' or 'pl' or 'zh_TW' %}
 {% else %}
 <p class="summary">{% translate summary %}</p>
 {% endcase %}
@@ -29,24 +29,19 @@ id: development
 </ul>
 
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'id' or 'pl' or 'zh_CN' or 'zh_TW' %}
+{% when 'ar' or 'fa' or 'id' or 'pl' or 'zh_CN' or 'zh_TW' %}
 {% else %}
 <h2>{% translate disclosure %}</h2>
 <p>{% translate disclosuretxt %}</p>
 {% endcase %}
 
 <h2>{% translate involve %}</h2>
-{% case page.lang %}
-{% when 'es' %}
-<p>El desarrollo de Bitcoin es de código abierto y cualquier desarrollador puede contribuir al proyecto. Todo lo que necesitas está en el <a href="https://github.com/bitcoin/bitcoin">repositorio en Github</a>. Por favor, asegúrese de leer y seguir el proceso de desarrollo que se describe en el archivo README, así como proporcionar el código con buena calidad y respetar todas las directrices.</p>
-{% else %}
 <p>{% translate involvetxt1 %}</p>
 <p>{% translate involvetxt2 %}</p>
 <div id="chatbox" class="chatbox"></div>
-{% endcase %}
 
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' %}
+{% when 'ar' or 'fa' %}
 {% else %}
 <h2>{% translate more %}</h2>
 <ul class="devprojectlist">

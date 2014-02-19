@@ -3,13 +3,13 @@ layout: base
 id: community
 ---
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' or 'pl' or 'zh_TW' %}
+{% when 'ar' or 'fa' or 'pl' or 'zh_TW' %}
 
 <h1>{% translate pagetitle %}</h1>
 <ul class="resourcesold">
 <li>{% translate foundation %}</li>
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' %}
+{% when 'ar' or 'fa' %}
 {% else %}
 <li>{% translate wikiportal %}</li>
 {% endcase %}
@@ -30,7 +30,7 @@ id: community
   </ul>
 </li>
 {% case page.lang %}
-{% when 'ar' or 'es' %}
+{% when 'ar' %}
 {% else %}
 <li>{% translate linkgoogle %}</li>
 {% endcase %}
@@ -39,7 +39,7 @@ id: community
 <li>{% translate facebook %}</li>
 <li>{% translate reddit %}</li>
 {% case page.lang %}
-{% when 'ar' or 'es' or 'fa' %}
+{% when 'ar' or 'fa' %}
 {% else %}
 <li>{% translate linkmeetup %}</li>
 {% endcase %}
@@ -99,7 +99,7 @@ id: community
 </div>
 
 {% case page.lang %}
-{% when 'ar' or 'bg' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% when 'ar' or 'bg' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_CN' or 'zh_TW' %}
 <h2>{% translate nonprofit community en %}</h2>
 {% else %}
 <h2><a name="{% translate non-profit anchor.community %}">{% translate nonprofit %}</a></h2>

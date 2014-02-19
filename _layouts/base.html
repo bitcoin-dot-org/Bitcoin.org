@@ -68,7 +68,7 @@ if(typeof(legacyIE)==='undefined'){
           <li{% if page.id == 'bitcoin-for-businesses' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a></li>
           <li{% if page.id == 'bitcoin-for-developers' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a></li>
           {% case page.lang %}
-          {% when 'ar' or 'es' or 'fa' %}
+          {% when 'ar' or 'fa' %}
           <li{% if page.id == 'bitcoin-for-enthusiasts' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-enthusiasts url %}">{% translate menu-bitcoin-for-enthusiasts layout %}</a></li>
           <li{% if page.id == 'choose-your-wallet' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate menu-choose-your-wallet layout %}</a></li>
           {% when 'pl' or 'zh_TW' %}
@@ -87,7 +87,7 @@ if(typeof(legacyIE)==='undefined'){
           <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
           <li{% if page.id == 'vocabulary' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
           {% case page.lang %}
-          {% when 'ar' or 'es' or 'fa' or 'pl' or 'zh_TW' %}
+          {% when 'ar' or 'fa' or 'pl' or 'zh_TW' %}
           {% else %}
           <li{% if page.id == 'events' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>
           {% endcase %}
@@ -95,13 +95,13 @@ if(typeof(legacyIE)==='undefined'){
         </ul>
       </li>
       {% case page.lang %}
-      {% when 'ar' or 'es' or 'fa' %}
+      {% when 'ar' or 'fa' %}
       {% else %}
       <li{% if page.id == 'innovation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate innovation url %}">{% translate menu-innovation layout %}</a></li>
       {% endcase %}
       <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a></li>
       {% case page.lang %}
-      {% when 'ar' or 'es' or 'fa' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_CN' or 'zh_TW' %}
+      {% when 'ar' or 'fa' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_CN' or 'zh_TW' %}
       <li{% if page.id == 'about' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate about url %}">{% translate menu-about layout %}</a></li>
       {% when 'id' %}
       {% else %}
@@ -117,13 +117,13 @@ if(typeof(legacyIE)==='undefined'){
     <a href="/en/alerts">Network Status</a>
     <a href="https://bitcoinfoundation.org/">{% translate menu-foundation layout %}</a>
     {% case page.lang %}
-    {% when 'ar' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_CN' or 'zh_TW' %}
+    {% when 'ar' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_CN' or 'zh_TW' %}
     <a href="/en/legal">Legal</a>
     {% else %}
     <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
     {% endcase %}
     {% case page.lang %}
-    {% when 'ar' or 'es' or 'fa' %}
+    {% when 'ar' or 'fa' %}
     <a href="/en/about-us">About bitcoin.org</a>
     {% else %}
     <a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a>
