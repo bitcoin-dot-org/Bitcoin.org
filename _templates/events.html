@@ -23,7 +23,7 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var markers = new L.MarkerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 20});
 {% filter_for p in site.pages sort_by:date category:event %}{% if p.geoloc != 'false' %}
-L.marker([{{ p.geoloc }}]).bindPopup('<b><a href="{{ p.link }}">{{ p.title }}</a></b><br>{{ p.date }}<br>{{ p.venue }}<br>{{ p.address }}<br>{{ p.city }}, {{ p.country }}').addTo(markers);
+L.marker([{{ p.geoloc }}]).bindPopup('<b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}').addTo(markers);
 {% endif %}{% endfilter_for %}
 map.addLayer(markers);
 </script>
@@ -31,7 +31,7 @@ map.addLayer(markers);
 <ul>
 {% filter_for p in site.pages sort_by:date category:event %}
   <li>
-    {{ p.date | date:"%Y-%m-%d" }} - <a href="{{ p.link }}">{{ p.title }}</a> - {{ p.city }}, {{ p.country }}
+    {{ p.date | date:"%Y-%m-%d" }} - <a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a> - {{ p.city | htmlescape }}, {{ p.country | htmlescape }}
   </li>
 {% endfilter_for %}
 </ul>
