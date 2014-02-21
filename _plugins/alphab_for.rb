@@ -14,12 +14,14 @@ module Jekyll
 
   module AlphabForImpl
     def render(context)
-      #load translations files
+      #Load translations
       site = context.registers[:site].config
       if !site.has_key?("loc")
         site['loc'] = {}
-        site['langs'].each do |key,value|
-          site['loc'][key] = YAML.load_file('_translations/'+key+'.yml')[key]
+        Dir.foreach('_translations') do |file|
+          next if file == '.' or file == '..'
+          lang=file.split('.')[0]
+          site['loc'][lang] = YAML.load_file('_translations/'+file)[lang]
         end
       end
       #load collection and context variables
