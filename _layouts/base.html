@@ -45,6 +45,13 @@ if(typeof(legacyIE)==='undefined'){
       </ul>
       </li>
     </ul>
+    {% if page.lang == 'ru' %}
+     <div class="warning-message">
+       <div>
+        <div>Имейте в виду, что использование Bitcoin не разрешено в России.</div>
+       </div>
+     </div>
+    {% endif %}
     <a class="logo" href="/{{ page.lang }}/"><img src="/img/logotop.svg" alt="Bitcoin"></a>
     <a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" href="#"></a>
     <ul id="menusimple" class="menusimple">
