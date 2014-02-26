@@ -537,8 +537,8 @@ en:
     instanttxt: "A Bitcoin transaction is usually deployed within a few seconds and begins to be confirmed in the following 10 minutes. During that time, a transaction can be considered authentic but still reversible. Dishonest users could try to cheat. If you can't wait for a confirmation, asking for a small transaction fee or using a detection system for unsafe transactions can increase security. For larger amounts like 1000 US$, it makes sense to wait for 6 confirmations or more. Each confirmation <i>exponentially</i> decreases the risk of a reversed transaction."
     experimental: "Bitcoin is still experimental"
     experimentaltxt: "Bitcoin is an experimental new currency that is in active development. Although it becomes less experimental as usage grows, you should keep in mind that Bitcoin is a new invention that is exploring ideas that have never been attempted before. As such, its future cannot be predicted by anyone."
-    tax: "Don't forget government taxes"
-    taxtxt: "Bitcoin is not an official currency. That said, most jurisdictions still require you to pay income, sales, payroll, and capital gains taxes on anything that has value, including bitcoins."
+    tax: "Government taxes and regulations"
+    taxtxt: "Bitcoin is not an official currency. That said, most jurisdictions still require you to pay income, sales, payroll, and capital gains taxes on anything that has value, including bitcoins. It is your responsibility to ensure that you adhere to tax and other legal or regulatory mandates issued by your government and/or local municipalities."
   layout:
     menu-about-us: "About bitcoin.org"
     menu-bitcoin-for-businesses: Businesses
