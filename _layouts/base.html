@@ -115,7 +115,6 @@ if(typeof(legacyIE)==='undefined'){
     </div>
     <div class="footer"><div>
     <a href="/en/alerts">Network Status</a>
-    <a href="https://bitcoinfoundation.org/">{% translate menu-foundation layout %}</a>
     {% case page.lang %}
     {% when 'ar' or 'es' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_CN' or 'zh_TW' %}
     <a href="/en/legal">Legal</a>
@@ -130,6 +129,14 @@ if(typeof(legacyIE)==='undefined'){
     {% endcase %}
     <span>© Bitcoin Project 2009-2014 {% translate footer layout %}</span>
     </div></div>
+  </div>
+  <div class="foundation-banner">
+    {% case page.lang %}
+    {% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+    <div>{% translate sponsor layout en %} <a href="https://bitcoinfoundation.org/"><img src="/img/logo_foundation.svg" alt="Foundation"> The Bitcoin Foundation</a></div>
+    {% else %}
+    <div>{% translate sponsor layout %} <a href="https://bitcoinfoundation.org/"><img src="/img/logo_foundation.svg" alt="Foundation"> The Bitcoin Foundation</a></div>
+    {% endcase %}
   </div>
   <script type="text/javascript">fallbackSVG();</script>
 </body>
