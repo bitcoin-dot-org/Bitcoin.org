@@ -548,7 +548,6 @@ en:
     menu-development: Development
     menu-events: Events
     menu-faq: FAQ
-    menu-foundation: Foundation
     menu-getting-started: "Getting started"
     menu-how-it-works: "How it works"
     menu-innovation: Innovation
@@ -559,6 +558,7 @@ en:
     menu-vocabulary: Vocabulary
     menu-you-need-to-know: "You need to know"
     footer: "Released under the <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT license</a>"
+    sponsor: "A community website sponsored by"
     getstarted: "Get started with Bitcoin"
   url:
     about-us: about-us
