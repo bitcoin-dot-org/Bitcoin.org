@@ -65,7 +65,7 @@ id: development
 <section id="contributors">
   <h2>{% translate contributors %}</h2>
   <p>{% translate contributorsorder %}</p>
-  <div class="contributors">{% for c in site.project.contributors %}
+  <div class="contributors">{% for c in site.contributors %}
     <span>
       {% if c.gravatar_id %}<img class="icon" height="16" width="16" src="https://secure.gravatar.com/avatar/{{c.gravatar_id}}?s=140&amp;d=http%3A%2F%2Fbitcoin.org%2Fimg%2Fgravatar-140.png" alt="icon" />{% else %}<img class="icon" height="16" width="16" src="http://i0.wp.com/bitcoin.org/img/gravatar-140.png" alt="icon" />{% endif %}
       {% if c.login %}<a href="http://github.com/{{c.login}}">{{ c.name }} ({{ c.contributions }})</a>{% else %}{{ c.name }} ({{ c.contributions }}){% endif %}

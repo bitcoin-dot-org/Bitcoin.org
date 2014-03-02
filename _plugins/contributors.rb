@@ -1,6 +1,6 @@
 #contributors.rb fetches Bitcoin-Qt contributors list and set
-#site.project.contributors array. This is later used to
-#display the list of contributors on the "Development" page.
+#site.contributors array. This is later used to display the
+#list of contributors on the "Development" page.
 
 require 'open-uri'
 require 'json'
@@ -40,19 +40,18 @@ module Jekyll
 
     def generate(site)
       class << site
-        attr_accessor :primary_devs, :contributors
+        attr_accessor :contributors
 
+        alias contrib_site_payload site_payload
         def site_payload
-          result = super
-          result['site']['project'] = {
-              "primary_devs" => self.primary_devs,
-              "contributors" => self.contributors
-            }
-          result
+          h = contrib_site_payload
+          payload = h["site"]
+          payload["contributors"] = self.contributors
+          h["site"] = payload
+          h
         end
       end
 
-      site.primary_devs = JSON.parse(open("https://api.github.com/repos/bitcoin/bitcoin/collaborators","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
       site.contributors = merge_contributors(fetch_contributors(), site.config['aliases']).sort_by{|c| - c['contributions']}
     end
 

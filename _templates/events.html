@@ -15,21 +15,31 @@ id: events
 <script>
 var zoom=2;
 if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))zoom=0;
-var map = L.map('eventmap').setView([20.00, 6.00], zoom);
+var map = L.map('eventmap').setView([20.00, 10.00], zoom);
 L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution: 'Data &copy; by <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.',
 	maxZoom: 18
 }).addTo(map);
 
 var markers = new L.MarkerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 20});
-{% filter_for p in site.pages sort_by:date category:event %}{% if p.geoloc != 'false' %}
+{% filter_for p in site.conferences sort_by:date %}{% if p.geoloc != 'false' %}
 L.marker([{{ p.geoloc }}]).bindPopup('<b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}').addTo(markers);
 {% endif %}{% endfilter_for %}
+
+{% filter_for p in site.meetups sort_by:date %}{% if p.geoloc != 'false' %}
+L.marker([{{ p.geoloc }}]).bindPopup('<b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}').addTo(markers);
+{% endif %}{% endfilter_for %}
+
 map.addLayer(markers);
 </script>
 
+{% case page.lang %}
+{% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+<h2>{% translate upcoming %}</h2>
+{% endcase %}
 <ul>
-{% filter_for p in site.pages sort_by:date category:event %}
+{% filter_for p in site.conferences sort_by:date %}
   <li>
     {{ p.date | date:"%Y-%m-%d" }} - <a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a> - {{ p.city | htmlescape }}, {{ p.country | htmlescape }}
   </li>
