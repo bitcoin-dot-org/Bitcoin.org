@@ -161,7 +161,8 @@ en:
   events:
     title: "Conferences and events - Bitcoin"
     pagetitle: "Conferences and events"
-    pagedesc: "Find events and conferences held by different organizers all over the world."
+    pagedesc: "Find events, conferences and meetups all over the world."
+    upcoming: "Upcoming events and conferences"
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitcoin meetups on BitcoinTalk</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitcoin meetups on the Wiki</a>"
     meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin meetup groups</a>"

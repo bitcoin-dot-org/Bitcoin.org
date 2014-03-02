@@ -10,7 +10,7 @@
 		<url>https://bitcoin.org/img/logo_rss.png</url>
 		<link>https://bitcoin.org/en/events</link>
 	</image>
-	{% filter_for p in site.pages sort_by:date category:event %}
+	{% filter_for p in site.conferences sort_by:date %}
         <item>
             <title>{{ p.title }}, {{ p.city }} - {{ p.country }}</title>
             <link>{{ p.link }}</link>
