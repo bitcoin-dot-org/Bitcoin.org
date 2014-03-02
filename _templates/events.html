@@ -21,7 +21,7 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 18
 }).addTo(map);
 
-var markers = new L.MarkerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 20});
+var markers = new L.MarkerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 40});
 {% filter_for p in site.conferences sort_by:date %}{% if p.geoloc != 'false' %}
 L.marker([{{ p.geoloc }}]).bindPopup('<b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}').addTo(markers);
 {% endif %}{% endfilter_for %}
