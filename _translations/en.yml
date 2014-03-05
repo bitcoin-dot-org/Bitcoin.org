@@ -431,7 +431,7 @@ en:
     everyday: "Small amounts for everyday uses"
     everydaytxt: "A Bitcoin wallet is like a wallet with cash. If you wouldn't keep a thousand dollars in your pocket, you might want to have the same consideration for your Bitcoin wallet. In general, it is a good practice to keep only small amounts of bitcoins on your computer, mobile, or server for everyday uses and to keep the remaining part of your funds in a safer environment."
     online: "Be careful with online services"
-    onlinetxt: "Online wallets and exchanges look like online banks. However, you should always choose such services carefully. As of today, these services generally don't provide enough insurance and security to be used to store your money like a bank. Using security features like two-factor authentication can help to increase the security of your accounts."
+    onlinetxt: "You should be wary of any service designed to store your money online. Many exchanges and online wallets suffered from security breaches in the past and such services generally still do not provide enough insurance and security to be used to store money like a bank. Accordingly, you might want to use other types of <a href=\"#choose-your-wallet#\">Bitcoin wallets</a>. Otherwise, you should choose such services very carefully. Additionally, using two-factor authentication is recommended."
     backup: "Backup your wallet"
     backuptxt: "Stored in a safe place, a backup of your wallet can protect you against computer failures and many human mistakes.  It can also allow you to recover your wallet after your mobile or computer was stolen if you keep your wallet encrypted."
     backupwhole: "Backup your entire wallet"
