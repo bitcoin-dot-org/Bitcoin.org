@@ -203,6 +203,11 @@ body{
 	display:inline;
 }
 
+.eventtable div div{
+	zoom:1;
+	display:inline;
+}
+
 .alert-message a:hover,
 .alert-message a:hover:link,
 .alert-message a:hover:active,

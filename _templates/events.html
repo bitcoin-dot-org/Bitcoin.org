@@ -38,13 +38,12 @@ map.addLayer(markers);
 {% else %}
 <h2>{% translate upcoming %}</h2>
 {% endcase %}
-<ul>
+<div class="eventtable">
 {% filter_for p in site.conferences sort_by:date %}
-  <li>
-    {{ p.date | date:"%Y-%m-%d" }} - <a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a> - {{ p.city | htmlescape }}, {{ p.country | htmlescape }}
+  <div><div>{{ p.date | date:"%Y-%m-%d" }}</div><div><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></div><div>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div></div>
   </li>
 {% endfilter_for %}
-</ul>
+</div>
 
 <ul>
   <li>{% translate meetupgroup %}</li>

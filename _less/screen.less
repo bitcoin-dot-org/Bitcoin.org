@@ -1091,6 +1091,28 @@ h2 .rssicon{
 	height:400px;
 	margin-bottom:25px;
 }
+.eventtable div{
+	padding:8px 0;
+	border-top:1px solid #E2E2E2;
+}
+.eventtable div:first-child{
+	border-top:0;
+}
+.eventtable div div{
+	display:inline-block;
+	padding:0;
+	border-top:0;
+	padding-right:20px;
+}
+.eventtable div div:first-child{
+	width:100px;
+}
+.eventtable div div:first-child+div{
+	width:300px;
+}
+.eventtable div div:first-child+div+div{
+	width:300px;
+}
 
 .summary{
 	font-size:125%;
@@ -1449,6 +1471,12 @@ h2 .rssicon{
 	.previewrow .walletinfo>div:first-child{
 		background:none;
 		height:auto;
+	}
+	.eventtable div div{
+		display:block;
+	}
+	.eventtable div div:first-child,.eventtable div div:first-child+div,.eventtable div div:first-child+div+div{
+		width:auto;
 	}
 	.press-faq>div{
 		width:auto;
