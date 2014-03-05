@@ -5,6 +5,7 @@ langsorder:
 - id: es
 - id: fr
 - id: it
+- id: hu
 - id: nl
 - id: pl
 - id: ru
@@ -23,6 +24,7 @@ langs:
   es: Español
   fa: فارسی
   fr: Français
+  hu: magyar
   id: Bahasa Indonesia‬
   it: Italiano
   nl: Nederlands
