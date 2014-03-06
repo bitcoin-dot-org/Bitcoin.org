@@ -2,57 +2,6 @@
 layout: base
 id: community
 ---
-{% case page.lang %}
-{% when 'ar' or 'fa' or 'pl' or 'zh_TW' %}
-
-<h1>{% translate pagetitle %}</h1>
-<ul class="resourcesold">
-<li>{% translate foundation %}</li>
-{% case page.lang %}
-{% when 'ar' or 'fa' %}
-{% else %}
-<li>{% translate wikiportal %}</li>
-{% endcase %}
-<li>{% translate stackexchange %}</li>
-<li>{% translate bitcointalk %}</li>
-<li>{% translate ircjoin %}
-  <ul>
-    <li><strong>#bitcoin</strong> {% translate chanbitcoin %}</li>
-    <li><strong>#bitcoin-dev</strong> {% translate chandev %}</li>
-    <li><strong>#bitcoin-otc</strong>  {% translate chanotc %}</li>
-    <li><strong>#bitcoin-market</strong> {% translate chanmarket %}</li>
-    <li><strong>#bitcoin-mining</strong> {% translate chanmining %}</li>
-    {% if page.lang == 'es' %}
-    <li><strong>#bitcoin-ar</strong> (Comunidad Bitcoin Argentina)</li>
-    <li><strong>#bitcoin-es</strong> (Comunidad Bitcoin en español)</li>
-    <li><strong>#bitcoin-otc-ar</strong> (Mercado OTC de Bitcoin en Argentina)</li>
-    {% endif %}
-  </ul>
-</li>
-{% case page.lang %}
-{% when 'ar' %}
-{% else %}
-<li>{% translate linkgoogle %}</li>
-{% endcase %}
-{% if page.lang == 'ru' %}<li><a href="http://vk.com/bitcoin">Страница на ВКонтакте</a></li>{% endif %}
-<li>{% translate linktwitter %}</li>
-<li>{% translate facebook %}</li>
-<li>{% translate reddit %}</li>
-{% case page.lang %}
-{% when 'ar' or 'fa' %}
-{% else %}
-<li>{% translate linkmeetup %}</li>
-{% endcase %}
-{% if page.lang == 'es' %}
-<li><a href="http://www.forobtc.com/">Foro Bitcoin en Español</a></li>
-{% endif %}
-{% if page.lang == 'pl' %}
-<li><a href="https://forum.bitcoin.pl/">Polski portal bitcoin.pl</a></li>
-{% endif %}
-</ul>
-
-{% else %}
-
 <h1>{% translate pagetitle %}</h1>
 <p class="summary">{% translate pagedesc %}</p>
 
@@ -60,6 +9,8 @@ id: community
 <div>
   <div>
     <h2><img src="/img/ico_invoice.svg" class="titleicon" alt="Icon">{% translate forums %}</h2>
+    {% if page.lang == 'es' %}<p><a href="http://www.forobtc.com/">Foro Bitcoin en Español</a></p>{% endif %}
+    {% if page.lang == 'pl' %}<p><a href="https://forum.bitcoin.pl/">Polski portal bitcoin.pl</a></p>{% endif %}
     <p>{% translate bitcointalk %}</p>
     <p><a href="http://www.reddit.com/r/Bitcoin/">{% translate reddit %}</a></p>
     <p><a href="http://bitcoin.stackexchange.com/">{% translate stackexchange %}</a></p>
@@ -81,18 +32,18 @@ id: community
   </div><div>
     <h2><img src="/img/ico_help.svg" class="titleicon" alt="Icon">{% translate irc %}</h2>
     <p>{% translate ircjoin %}</p>
-    <p>#bitcoin <small>{% translate chanbitcoin %}</small></li>
-    <p>#bitcoin-dev <small>{% translate chandev %}</small></li>
-    <p>#bitcoin-otc  <small>{% translate chanotc %}</small></li>
-    <p>#bitcoin-market <small>{% translate chanmarket %}</small></li>
-    <p>#bitcoin-mining <small>{% translate chanmining %}</small></li>
+    <p>#bitcoin <small>{% translate chanbitcoin %}</small></p>
+    <p>#bitcoin-dev <small>{% translate chandev %}</small></p>
+    <p>#bitcoin-otc  <small>{% translate chanotc %}</small></p>
+    <p>#bitcoin-market <small>{% translate chanmarket %}</small></p>
+    <p>#bitcoin-mining <small>{% translate chanmining %}</small></p>
     {% if page.lang == 'fr' %}
-    <p>#bitcoin-fr <small>(Le Bitcoin en général, français)</small></li>
+    <p>#bitcoin-fr <small>(Le Bitcoin en général, français)</small></p>
     {% endif %}
     {% if page.lang == 'es' %}
-    <p>#bitcoin-ar <small>(Comunidad Bitcoin Argentina)</small></li>
-    <p>#bitcoin-es <small>(Comunidad Bitcoin en español)</small></li>
-    <p>#bitcoin-otc-ar <small>(Mercado OTC de Bitcoin en Argentina)</small></li>
+    <p>#bitcoin-ar <small>(Comunidad Bitcoin Argentina)</small></p>
+    <p>#bitcoin-es <small>(Comunidad Bitcoin en español)</small></p>
+    <p>#bitcoin-otc-ar <small>(Mercado OTC de Bitcoin en Argentina)</small></p>
     {% endif %}
   </div>
 </div>
@@ -209,5 +160,3 @@ id: community
 </div>
 
 <div class="introlink">{% translate wikiportal %}</div>
-
-{% endcase %}

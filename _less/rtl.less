@@ -41,7 +41,6 @@ p{
 	left:auto;
 }
 .footer{
-	text-align:right;
 	padding:20px 40px 20px 0;
 }
 .footer>div>a{
@@ -120,6 +119,31 @@ h2 .rssicon{
 	margin-right:auto;
 	margin-left:10px;
 }
+.resources{
+	text-align:right;
+}
+.resources>div>div:first-child{
+	padding-right:0;
+	border-right:0;
+	padding-left:40px;
+	border-left:1px solid #e0e0e0;
+}
+.resources>div>div:first-child+div{
+	padding-left:0;
+	border-left:0;
+	margin-left:0;
+	padding-right:40px;
+	border-right:1px solid #e0e0e0;
+	margin-right:-1px;
+}
+.resourcesorg{
+	text-align:right;
+}
+.resourcesorg img{
+	margin-right:0;
+	margin-left:5px;
+	bottom:-6px;
+}
 .downloadbox a{
 	direction:ltr;
 }
@@ -154,6 +178,15 @@ h2 .rssicon{
 		padding:15px 10px 20px 10px;
 		text-align:right;
 	}
+	.resources>div>div:first-child{
+		padding-left:0;
+		border-left:0;
+	}
+	.resources>div>div:first-child+div{
+		border-right:0;
+		padding-right:0;
+		margin-right:0;
+	}
 	.download{
 		text-align:right;
 	}
@@ -170,10 +203,4 @@ h2 .rssicon{
 	.download div p{
 		text-align:right;
 	}
-}
-
-/* Deprecated styles (should be removed when translations are updated) */
-
-.resourcesold li{
-	text-align:right;
 }

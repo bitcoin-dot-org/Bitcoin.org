@@ -2,44 +2,6 @@
 layout: base
 id: resources
 ---
-{% case page.lang %}
-{% when 'ar' or 'fa' or 'pl' or 'zh_TW' %}
-
-<h1>{% translate pagetitle %}</h1>
-<ul class="resourcesold">
-<li>{% translate linkweusecoins %}</li>
-<li>{% translate linkwallets %}</li>
-<li>{% translate linkwiki %}
-<ul>
-  <li>{% translate linkwikifaq %}</li>
-  <li>{% translate linkwikisites %}</li>
-  <li>{% translate linkwikimerchant %}</li>
-</ul>
-</li>
-<li><a>{% translate linkcharts %}</a>
-<ul>
-  <li>{% translate linkbitcoincharts %}</li>
-  <li>{% translate linkblockchaininfo %}</li>
-</ul>
-</li>
-<li><a>{% translate linknews %}</a>
-<ul>
-  <li>{% translate linkbitcoinmagazine %}</li>
-  <li><a href="http://www.coindesk.com/">CoinDesk</a></li>
-  <li><a href="http://thegenesisblock.com/">The Genesis Block</a></li>
-  <li>{% translate linkforumpress %}</li>
-</ul>
-</li>
-<li><a>{% translate linkspec %}</a>
-<ul>
-  <li>{% translate linkpdf %}</li>
-  <li>{% translate linkprotocol %}</li>
-</ul>
-</li>
-</ul>
-
-{% else %}
-
 <h1>{% translate pagetitle %}</h1>
 <p class="summary">{% translate pagedesc %}</p>
 
@@ -74,7 +36,7 @@ id: resources
   </div>
 </div>
 {% case page.lang %}
-{% when 'ar' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% when 'ar' or 'fa' or 'id' or 'it' or 'nl' or 'tr' or 'zh_CN' or 'zh_TW' %}
 {% else %}
 <div>
   <div>
@@ -88,5 +50,3 @@ id: resources
 </div>
 {% endcase %}
 </div>
-
-{% endcase %}
