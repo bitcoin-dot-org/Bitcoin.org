@@ -1,8 +1,8 @@
 ---
 title: "Inside Bitcoins London"
-venue: "Grange St Paul's Hotel"
+venue: "The Grange"
 address: "10 Godliman St"
 city: "London"
 country: "England"
-link: "http://insidebitcoins.co.uk/?c=bcoinlonbcorg"
+link: "http://insidebitcoins.co.uk/"
 ---
