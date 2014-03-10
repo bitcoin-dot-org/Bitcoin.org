@@ -451,34 +451,32 @@ ar:
     menu-you-need-to-know: "تحتاج أن تعلم"
     footer: "Released under the <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT license</a>"
   url:
-    faq: "عن"
-    bitcoin-for-developers: "بت-كوين-للمطورين"
+    bitcoin-for-developers: bitcoin-for-developers
+    bitcoin-for-individuals: bitcoin-for-individuals
+    bitcoin-for-businesses: bitcoin-for-businesses
+    choose-your-wallet: choose-your-wallet
+    community: community
+    development: development
+    download: download
+    faq: faq
+    how-it-works: how-it-works
     innovation: innovation
-    bitcoin-for-individuals: "بت-كوين-للأفراد"
-    bitcoin-for-businesses: "بت-كوين-للأعمال"
-    bitcoin-for-press: ""
-    choose-your-wallet: "إختر-محفظتك"
-    community: "مجتمع"
-    development: "تطوير"
-    download: "تحميل"
-    how-it-works: "كيف-يعمل"
-    resources: "مصادر"
-    secure-your-wallet: ""
-    support-bitcoin: "إدعم-ألبت-كوين"
-    vocabulary: "مفردات"
-    you-need-to-know: "تحتاج-أن-تعلم"
+    resources: resources
+    support-bitcoin: support-bitcoin
+    vocabulary: vocabulary
+    you-need-to-know: you-need-to-know
   anchor:
     vocabulary:
-      address: "ألعنوان"
-      blockchain: "سلسلة-ألمجاميع"
-      block: "ألمجموعة"
-      btc: "btc"
-      confirmation: "ألتأكيد"
-      cryptography: "ألتشفير"
-      doublespend: "ألدفع-ألمزدوج"
-      hashrate: "معدل-ألهاش"
-      mining: "ألتنقيب"
-      p2p: "p2p"
-      privatekey: "ألمفتاح-ألخاص"
-      signature: "ألتوقيع"
-      wallet: "ألمحفظة"
+      address: address
+      blockchain: block-chain
+      block: block
+      btc: btc
+      confirmation: confirmation
+      cryptography: cryptography
+      doublespend: double-spend
+      hashrate: hash-rate
+      mining: mining
+      p2p: p2p
+      privatekey: private-key
+      signature: signature
+      wallet: wallet

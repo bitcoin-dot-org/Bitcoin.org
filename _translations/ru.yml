@@ -558,43 +558,43 @@ ru:
     getstarted: "Начало работы с Биткоин"
   url:
     about-us: about-us
-    bitcoin-for-developers: биткоин-разработчикам
-    bitcoin-for-individuals: биткоин-частным-лицам
-    bitcoin-for-businesses: биткоин-бизнесу
-    choose-your-wallet: выберите-свой-кошелек
-    community: сообщество
-    development: разработка
-    download: загрузки
+    bitcoin-for-developers: bitcoin-for-developers
+    bitcoin-for-individuals: bitcoin-for-individuals
+    bitcoin-for-businesses: bitcoin-for-businesses
+    choose-your-wallet: choose-your-wallet
+    community: community
+    development: development
+    download: download
     events: events
     faq: faq
     getting-started: getting-started
-    how-it-works: как-это-работает
+    how-it-works: how-it-works
     innovation: innovation
     legal: legal
     protect-your-privacy: protect-your-privacy
-    resources: ресурсы
+    resources: resources
     secure-your-wallet: secure-your-wallet
-    support-bitcoin: поддержать-биткоин
-    vocabulary: термины
-    you-need-to-know: вам-нужно-знать
+    support-bitcoin: support-bitcoin
+    vocabulary: vocabulary
+    you-need-to-know: you-need-to-know
   anchor:
     community:
       non-profit: non-profit
     vocabulary:
-      address: адрес
+      address: address
       bitcoin: bitcoin
-      blockchain: цепочка-блоков
-      block: блок
+      blockchain: block-chain
+      block: block
       btc: btc
-      confirmation: подтверждение
-      cryptography: криптография
-      doublespend: повторное-расходование
-      hashrate: хэшрейт
-      mining: майнинг
+      confirmation: confirmation
+      cryptography: cryptography
+      doublespend: double-spend
+      hashrate: hash-rate
+      mining: mining
       p2p: p2p
-      privatekey: приватный-ключ
-      signature: подпись
-      wallet: кошелек
+      privatekey: private-key
+      signature: signature
+      wallet: wallet
     faq:
       general: general
       whatisbitcoin: what-is-bitcoin

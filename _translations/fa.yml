@@ -356,34 +356,33 @@ fa:
     menu-you-need-to-know: "آن چه باید بدانید"
     footer: "منتشر شده تحت <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT گواهینامه"
   url:
-    faq: درباره
-    bitcoin-for-developers: بیت-کوین-برای-توسعه-دهندگان
+    bitcoin-for-developers: bitcoin-for-developers
+    bitcoin-for-individuals: bitcoin-for-individuals
+    bitcoin-for-businesses: bitcoin-for-businesses
+    choose-your-wallet: choose-your-wallet
+    community: community
+    development: development
+    download: download
+    faq: faq
+    how-it-works: how-it-works
     innovation: innovation
-    bitcoin-for-individuals: بیت-کوین-برای-افراد
-    bitcoin-for-businesses: بیت-کوین-برای-کسب-و-کار
-    bitcoin-for-press: 
-    choose-your-wallet: انتخاب-کیف-پول
-    community: انجمن
-    development: توسعه
-    download: دانلود
-    how-it-works: چگونه-کار-می-کند
-    resources: منابع
-    secure-your-wallet: کیف-پولتان-را-ایمن-کنید
-    support-bitcoin: حمایت-از-بیت-کوین
-    vocabulary: واژگان
-    you-need-to-know: آن-چه-باید-بدانید
+    resources: resources
+    secure-your-wallet: secure-your-wallet
+    support-bitcoin: support-bitcoin
+    vocabulary: vocabulary
+    you-need-to-know: you-need-to-know
   anchor:
     vocabulary:
-      address: ادرس
-      blockchain: زنجیره-بلاک
-      block: بلاک
+      address: address
+      blockchain: block-chain
+      block: block
       btc: btc
-      confirmation: تایید
-      cryptography: رمزنگاری
-      doublespend: پرداخت-تکراری
-      hashrate: نرخ-هش
-      mining: استخراج
+      confirmation: confirmation
+      cryptography: cryptography
+      doublespend: double-spend
+      hashrate: hash-rate
+      mining: mining
       p2p: p2p
-      privatekey: کلید-خصوصی
-      signature: امضا
-      wallet: کیف-پول
+      privatekey: private-key
+      signature: signature
+      wallet: wallet

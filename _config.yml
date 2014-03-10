@@ -38,22 +38,62 @@ redirects:
   /news: /en/version-history
   /clients: /en/choose-your-wallet
   /about: /en/faq
+  /ar/بت-كوين-للهواة: /ar/innovation
+  /ar/عن: /ar/faq
+  /ar/بت-كوين-للمطورين: /ar/bitcoin-for-developers
+  /ar/بت-كوين-للأفراد: /ar/bitcoin-for-individuals
+  /ar/إختر-محفظتك: /ar/choose-your-wallet
+  /ar/بت-كوين-للأعمال: /ar/bitcoin-for-businesses
+  /ar/إختر-محفظتك: /ar/choose-your-wallet
+  /ar/مجتمع: /ar/community
+  /ar/تطوير: /ar/development
+  /ar/تحميل: /ar/download
+  /ar/كيف-يعمل: /ar/how-it-works
+  /ar/مصادر: /ar/resources
+  /ar/إدعم-ألبت-كوين: /ar/support-bitcoin
+  /ar/مفردات: /ar/vocabulary
+  /ar/تحتاج-أن-تعلم: /ar/you-need-to-know
+  /fa/بیت-کوین-برای-علاقه-مندان: /fa/innovation
+  /fa/درباره: /fa/faq
+  /fa/بیت-کوین-برای-توسعه-دهندگان: /fa/bitcoin-for-developers
+  /fa/بیت-کوین-برای-افراد: /fa/bitcoin-for-individuals
+  /fa/بیت-کوین-برای-کسب-و-کار: /fa/bitcoin-for-businesses
+  /fa/انتخاب-کیف-پول: /fa/choose-your-wallet
+  /fa/انجمن: /fa/community
+  /fa/توسعه: /fa/development
+  /fa/دانلود: /fa/download
+  /fa/چگونه-کار-می-کند: /fa/how-it-works
+  /fa/منابع: /fa/resources
+  /fa/کیف-پولتان-را-ایمن-کنید: /fa/secure-your-wallet
+  /fa/حمایت-از-بیت-کوین: /fa/support-bitcoin
+  /fa/واژگان: /fa/vocabulary
+  /fa/آن-چه-باید-بدانید: /fa/you-need-to-know
+  /ru/биткоин-разработчикам: /ru/bitcoin-for-developers
+  /ru/биткоин-частным-лицам: /ru/bitcoin-for-individuals
+  /ru/биткоин-бизнесу: /ru/bitcoin-for-businesses
+  /ru/выберите-свой-кошелек: /ru/choose-your-wallet
+  /ru/сообщество: /ru/community
+  /ru/разработка: /ru/development
+  /ru/загрузки: /ru/download
+  /ru/как-это-работает: /ru/how-it-works
+  /ru/ресурсы: /ru/resources
+  /ru/поддержать-биткоин: /ru/support-bitcoin
+  /ru/термины: /ru/vocabulary
+  /ru/вам-нужно-знать: /ru/you-need-to-know
+  /ru/описание: /ru/faq
+  /ru/биткоин-энтузиастам: /ru/innovation
+  /en/bitcoin-for-press: /en/press
   /de/ueber: /de/faq
   /en/about: /en/faq
   /es/acerca-de: /es/faq
   /fr/a-propos: /fr/faq
-  /ru/описание: /ru/faq
-  /ar/بت-كوين-للهواة: /ar/innovation
   /de/bitcoin-fuer-enthusiasten: /de/innovation
   /en/bitcoin-for-enthusiasts: /en/innovation
   /es/bitcoin-para-entusiastas: /es/innovacion
-  /fa/بیت-کوین-برای-علاقه-مندان: /fa/innovation
   /fr/bitcoin-pour-passionnes: /fr/innovation
   /it/bitcoin-per-appassionati: /it/innovazione
   /nl/bitcoin-voor-liefhebbers: /nl/innovatie
   /pl/bitcoin-dla-entuzjastow: /pl/innowacje
-  /ru/биткоин-энтузиастам: /ru/innovation
-  /en/bitcoin-for-press: /en/press
 
 aliases:
   s_nakamoto: Satoshi Nakamoto
