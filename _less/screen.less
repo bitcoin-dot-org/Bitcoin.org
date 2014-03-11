@@ -1293,6 +1293,24 @@ h2 .rssicon{
 	font-size:80%;
 }
 
+/*Styles specific to printing*/
+
+@media print{
+	.head{
+		display:none;
+	}
+	.footer{
+		display:none;
+	}
+	.foundation-banner{
+		display:none;
+	}
+	.content{
+		padding:0;
+		border:0;
+	}
+}
+
 /*Styles specific to mobiles*/
 
 @media handheld, only screen and (max-device-height: 37em), only screen and (max-device-width: 50em){
