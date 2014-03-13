@@ -112,6 +112,7 @@ es:
     walletwebtxt: "Los monederos web le permiten utilizar Bitcoin en cualquier navegador o dispositivo móvil y a menudo ofrecen servicios adicionales. Sin embargo, debe elegir su monedero web con cuidado ya que contiene sus bitcoins."
     walletbitcoinqt: "Bitcoin-Qt es el cliente Bitcoin y la columna vertebral de la red. Ofrece un gran nivel de seguridad, privacidad y estabilidad. Sin embargo, tiene menos características y requiere mucho espacio en disco y memoria."
     walletmultibit: "MultiBit es un programa ligero que se centra en ser rápido y fácil de usar. Se sincroniza con la red y está listo para usarse en minutos. MultiBit también esta disponible en varios idiomas. Es una buena opción para los usuarios que no son técnicos."
+    wallethive: "Hive es un monedero Bitcoin para Mac OS X rápido y fácil de usar. Con un enfoque en la usabilidad, Hive está traducido a varios idiomas y  además tiene apps, por lo que es fácil interactuar con sus servicios y comerciantes Bitcoin favoritos."
     walletarmory: "Armory es un cliente avanzado de Bitcoin que amplia sus características para usuarios avanzados. Ofrece muchas opciones para respaldar, encriptar y permitir el almacenamiento de su monedero en ordenadores sin conexión."
     walletelectrum: "Electrum se enfoca en la sencillez y velocidad, con poco uso de recursos. Utiliza servidores remotos que se encargan de las partes más complejas del sistema Bitcoin, y le permite recuperar su monedero por medio de una frase secreta."
     walletbitcoinwallet: "El monedero Bitcoin para Android es fácil de usar y de confianza, además de segura y rápida. Su visión es la de descentralización y confianza cero: Ningún servicio central es necesario para las operaciones Bitcoin. La app es una buena opción para personas sin conocimientos técnicos. También esta disponible para BlackBerry."
@@ -160,7 +161,8 @@ es:
   events:
     title: "Conferencias y eventos - Bitcoin"
     pagetitle: "Conferencias y eventos"
-    pagedesc: "Encuentre eventos y conferencias llevadas a cabo por diferentes organizadores en todo el mundo"
+    pagedesc: "Encuentre eventos, conferencias y reuniones en todo el mundo."
+    upcoming: "Próximos eventos y conferencias"
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Encuentros Bitcoin en BitcoinTalk</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Encuentros Bitcoin en la Wiki</a>"
     meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Grupos de encuentros de Bitcoin</a>"
@@ -429,7 +431,7 @@ es:
     everyday: "Pequeñas cantidades para uso diario"
     everydaytxt: "Un monedero Bitcoin es como un monedero con dinero real. Por el mismo motivo que no guardaría mil dólares en efectivo en su bolsillo, tiene que tener el mismo cuidado con su monedero Bitcoin. En general, es aconsejable tener en su ordenador, móvil o servidor sólo pequeñas cantidades para uso diario y tener el resto de sus fondos en un lugar más seguro."
     online: "Tenga cuidado con servicios en línea"
-    onlinetxt: "Los monederos y los intercambios se parecen a los bancos online. No obstante, tiene que elegir estos servicios con mucho cuidado. A día de hoy, estos servicios no ofrecen suficiente seguridad y garantías para guardar en ellos su dinero como lo haría en un banco. El uso de funciones de seguridad tales como la autenticación de dos factores puede aumentar la seguridad de sus cuentas. "
+    onlinetxt: "Debe ser cuidadoso con cualquier servicio que guarde sus monedas online. Muchas casas de cambio y monederos online han tenido fallos de seguridad y no son una opción lo suficientemente segura para que guarde sus monedas como si de un banco se tratara. Por lo tanto, debería usar otros tipos de <a href=\"#choose-your-wallet#\">monederos Bitcoin</a>. Si no, intente elegir estos servicios con mucho cuidado. Adicionalmente, se recomienda usar una autenticación de dos factores."
     backup: "Realiza una copia de seguridad de tu billetera."
     backuptxt: "Si la guarda en un lugar seguro, la copias de seguridad de su monedero le puede proteger contra fallos de su ordenador o humanos. También le permite recuperar su monedero si le roban su móvil u ordenador, siempre que tenga su monedero encriptado."
     backupwhole: "Realiza una copia de seguridad completa de tu billera"
@@ -536,8 +538,8 @@ es:
     instanttxt: "Una transacción Bitcoin, por lo general, es recibida en pocos segundos y empieza a confirmarse en los 10 minutos siguientes. Durante este periodo, la transacción puede considerarse auténtica pero aún puede ser revertida. Usuarios fraudulentos podrían tratar de engañarle. Si no puede esperar a una confirmación, puede pagar una pequeña tasa o usar un sistema para detectar transacciones inseguras. Para cantidades mayores a 1000 USD, se debería esperar a tener 6 confirmaciones o más. Cada confirmación disminuye <i>exponencialmente</i> el riesgo de revertir una transacción."
     experimental: "Bitcoin todavía es experimental"
     experimentaltxt: "Bitcoin es una nueva moneda experimental que está en desarrollo activo. Aunque cada vez es menos experimental al crecer su uso, usted debe tener en cuenta que Bitcoin es una nueva invención que está explorando ideas que nunca antes se han intentado. Como tal, su futuro no se puede predecir por nadie."
-    tax: "No se olvide de sus impuestos al gobierno"
-    taxtxt: "Bitcoin no es una moneda oficial. Dicho esto, la mayoría de los territorios necesitan que pague sueldos, nóminas, ventas e impuestos sobre plusvalías en todo lo que tenga un valor, incluyendo bitcoins."
+    tax: "Impuestos y regulaciones"
+    taxtxt: "Bitcoin no es una moneda oficial. Dicho esto, en la mayoría de los territorios usted tendrá que pagar renta, nóminas y los impuestos sobre ganancias en todo lo que tenga valor, incluyendo bitcoins. Es su responsabilidad asegurarse de aplicar los impuestos y otras regulaciones publicadas por su gobierno o municipio."
   layout:
     menu-about-us: "Acerca de bitcoin.org"
     menu-bitcoin-for-businesses: Empresas
@@ -547,7 +549,6 @@ es:
     menu-development: Desarrollo
     menu-events: Eventos
     menu-faq: FAQ
-    menu-foundation: Fundación
     menu-getting-started: "Cómo empezar"
     menu-how-it-works: "Como funciona"
     menu-innovation: Innovación
@@ -558,12 +559,11 @@ es:
     menu-vocabulary: Vocabulario
     menu-you-need-to-know: "Cosas que necesita saber"
     footer: "Publicado bajo la <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licencia MIT</a>"
+    sponsor: "Una comunidad web patrocinada por"
     getstarted: "Cómo comenzar a usar Bitcoin"
   url:
-    about: acerca-de
     about-us: sobre-nosotros
     bitcoin-for-developers: bitcoin-para-desarrolladores
-    bitcoin-for-enthusiasts: bitcoin-para-entusiastas
     bitcoin-for-individuals: bitcoin-para-personas
     bitcoin-for-businesses: bitcoin-para-empresas
     choose-your-wallet: elige-tu-monedero
