@@ -35,6 +35,7 @@ module Jekyll
       for m in data['results']
         # Skip meetups with incomplete data
         next if !m.has_key?('time') or ( !m['time'].is_a?(String) and !m['time'].is_a?(Integer) and !m['time'].is_a?(Float) )
+        next if !m.has_key?('utc_offset') or ( !m['utc_offset'].is_a?(String) and !m['utc_offset'].is_a?(Integer) and !m['utc_offset'].is_a?(Float) )
         next if !m.has_key?('group') or !m['group'].is_a?(Hash)
         next if !m['group'].has_key?('name') or ( !m['group']['name'].is_a?(String) and !m['group']['name'].is_a?(Integer) and !m['group']['name'].is_a?(Float) )
         next if !m.has_key?('venue') or !m['venue'].is_a?(Hash)
@@ -47,6 +48,7 @@ module Jekyll
         next if !m.has_key?('event_url') or ( !m['event_url'].is_a?(String) and !m['event_url'].is_a?(Integer) and !m['event_url'].is_a?(Float) )
         # Assign variables
         time = m['time'].to_s
+        utfoffset = m['utc_offset'].to_s
         title = m['group']['name'].to_s
         venue = m['venue']['name'].to_s
         address = m['venue']['address_1'].to_s
@@ -67,7 +69,8 @@ module Jekyll
         next if !/^-?[0-9]{1,3}(\.[0-9]{1,15})?$/.match(lon) or ( lon.to_f < -180 and lon.to_f > 180 )
         next if lon.to_f == 0 and lat.to_f == 0
         # Format variables
-        time = Time.at(time.to_i/1000)
+        time = Time.at((time.to_i + utfoffset.to_i) / 1000)
+        time.utc
         date = time.year.to_s + '-' + time.month.to_s.rjust(2,'0') + '-' + time.day.to_s.rjust(2,'0')
         country = country.upcase
         geoloc = lat + ', ' + lon
