@@ -28,7 +28,7 @@ Installing dependencies on older Ubuntu and Debian distributions
 
 ### Import translations
 
-**Update translations**: You can update the relevant language file in \_translations/ and run ./\_contrib/updatetx.rb to update layouts and templates for this language. You should also make sure that no url has been changed by translators. If one page has been replaced or moved, a redirection can be added in \_config.yml.
+**Update translations**: You can update the relevant language file in \_translations/ and from the root of the git repository run ./\_contrib/updatetx.rb to update layouts and templates for this language. You should also make sure that no url has been changed by translators. If one page has been replaced or moved, a redirection can be added in \_config.yml.
 
 **Add a new language**: You can put the language file from Transifex in \_translations and add the language in \_config.yml in the right display order for the language bar. Make sure to review all pages and check all links.
 
