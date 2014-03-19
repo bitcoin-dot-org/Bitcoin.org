@@ -1,4 +1,4 @@
-#contributors.rb fetches Bitcoin-Qt contributors list and set
+#contributors.rb fetches Bitcoin Core contributors list and set
 #site.contributors array. This is later used to display the
 #list of contributors on the "Development" page.
 

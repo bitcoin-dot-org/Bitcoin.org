@@ -81,7 +81,7 @@ More information will follow.
 ```
 * `SHORTTITLE` is used to construct the URL.
 * `title: ...` will be used as the title in the layout.
-* `alias: ...` (optional) a short alias for Bitcoin-Qt alerts. Ex. "dos" will produce /dos.html
+* `alias: ...` (optional) a short alias for Bitcoin Core alerts. Ex. "dos" will produce /dos.html
 * `active: ...` (true or false) define if the alert should appear as ongoing in the network status page.
 * `banner: ...` (optional) a short text that will be displayed in a red alert banner and link to the alert page.
 * `last updated: ...` should be kept up to date and be in RFC 2822 format ( date -uR ).
@@ -92,12 +92,12 @@ Release notes should be placed in `_releases/YYYY-MM-DD-VERSION.md` and adhere t
 
 ```
 ---
-title: Bitcoin version 0.3.24 released
-src: http://sourceforge.net/mailarchive/message.php?msg_id=27771039
+title: Bitcoin Core version 0.9.0 released
+src: http://sourceforge.net/p/bitcoin/mailman/message/32119564/
 ---
 
-Bitcoin v0.3.24 is now available for download at
-<https://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.24/>
+Bitcoin Core v0.9.0 is now available for download at
+<https://bitcoin.org/bin/0.9.0/>
 
 ...
 ```
