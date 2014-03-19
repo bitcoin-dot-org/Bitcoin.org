@@ -35,7 +35,10 @@ id: download
 <script type="text/javascript">
 var os='windows32';
 if(navigator.userAgent.indexOf('Mac')!=-1)var os='mac'
-else if(navigator.userAgent.indexOf('Linux')!=-1)var os='ubuntu';
+else if(navigator.userAgent.indexOf('Linux')!=-1){
+	var os='linux';
+	if(navigator.userAgent.indexOf('Ubuntu')!=-1)var os='ubuntu';
+}
 else if(navigator.userAgent.indexOf('WOW64')!=-1||navigator.userAgent.indexOf('Win64')!=-1)var os='windows64';
 var but=document.getElementById('downloadbutton');
 switch(os){
@@ -46,6 +49,10 @@ break;
 case 'windows32':
   but.getElementsByTagName('IMG')[0].src='/img/but_windows.svg';
   but.href='/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe';
+break;
+case 'linux':
+  but.getElementsByTagName('IMG')[0].src='/img/but_linux.png';
+  but.href='/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-linux.tar.gz';
 break;
 case 'ubuntu':
   but.getElementsByTagName('IMG')[0].src='/img/but_ubuntu.svg';
