@@ -8,7 +8,12 @@ def prompt(*args)
     gets
 end
 
-lang = prompt "Language code: "
+if ARGV.empty?
+  lang = prompt "Language code: "
+else
+  lang = ARGV[0]
+end
+
 lang = lang.gsub(/[^a-z]/,'')
 
 if !File.exist?('_translations/' + lang + '.yml')
