@@ -14,8 +14,9 @@ id: events
 <div id="eventmap" class="eventmap"></div>
 <script>
 var zoom=2;
-if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))zoom=0;
-var map = L.map('eventmap').setView([20.00, 10.00], zoom);
+var minzoom=1;
+if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))var zoom=minzoom=0;
+var map = L.map('eventmap',{ 'zoom': zoom, 'minZoom': minzoom, 'center': [20.00, 10.00]});
 L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution: 'Data &copy; by <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.',
 	maxZoom: 18
