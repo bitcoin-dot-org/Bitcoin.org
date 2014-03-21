@@ -8,12 +8,12 @@
 
 Installing dependencies on Ubuntu 12.10
 
-    sudo apt-get install jekyll node-less ruby1.9.1-dev
+    sudo apt-get install jekyll node-less ruby1.9.1-dev libicu-dev
     sudo gem install ffi-icu
 
 Installing dependencies on older Ubuntu and Debian distributions
 
-    sudo apt-get install rubygems ruby1.9.1-dev build-essential
+    sudo apt-get install rubygems ruby1.9.1-dev build-essential libicu-dev
     sudo gem install jekyll json less therubyracer ffi-icu
 
 ## Translation
