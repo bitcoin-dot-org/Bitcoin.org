@@ -156,7 +156,7 @@ en:
     downloadsig: "Verify release signatures"
     versionhistory: "Show version history"
     notelicense: "Bitcoin Core is a community-driven <a href=\"http://www.fsf.org/about/what-is-free-software\">free software</a> project, released under the <a href=\"http://opensource.org/licenses/mit-license.php\">MIT license</a>."
-    notesync: "Bitcoin Core initial sync can take a very long time to complete. You should make sure that you have enough bandwidth and storage for the full <a href=\"http://blockchain.info/charts/blocks-size\">block chain size</a>. If you know how to download a torrent file, you can speed up this process by putting <a href=\"http://sourceforge.net/projects/bitcoin/files/Bitcoin/blockchain/bootstrap.dat.torrent/download\">bootstrap.dat</a> (a previous copy of the block chain) in the Bitcoin Core data directory before starting the software."
+    notesync: "Bitcoin Core initial sync can take a very long time to complete. You should make sure that you have enough bandwidth and storage for the full <a href=\"http://blockchain.info/charts/blocks-size\">block chain size</a>. If you know how to download a torrent file, you can speed up this process by putting <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (a previous copy of the block chain) in the Bitcoin Core data directory before starting the software."
     patient: "You will need to be patient"
   events:
     title: "Conferences and events - Bitcoin"

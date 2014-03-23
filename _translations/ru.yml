@@ -155,7 +155,7 @@ ru:
     downloadsig: "Сверить контрольные суммы релизов"
     versionhistory: "История версий"
     notelicense: "Bitcoin Core - разрабатываемый коллективно <a href=\"http://www.fsf.org/about/what-is-free-software\">свободный проект с открытым исходным кодом</a>, распространяемый под лицензией <a href=\"http://opensource.org/licenses/mit-license.php\">MIT</a>."
-    notesync: "<b>Примечание</b> : Первая синхронизация Bitcoin Core с сетью может потребовать около одного дня. Вам следует заранее убедиться в достаточной пропускной способности интернет-канала и наличии свободного места в памяти для загрузки <a href=\"http://blockchain.info/charts/blocks-size\">всей цепочки блоков</a>.\nЕсли вы умеете пользоваться торрентом, вы можете ускорить этот процесс путем скачивания <a href=\"http://sourceforge.net/projects/bitcoin/files/Bitcoin/blockchain/bootstrap.dat.torrent/download\">bootstrap.dat</a> (копию цепочки блоков) в директорию Bitcoin Core  перед запуском программы"
+    notesync: "<b>Примечание</b> : Первая синхронизация Bitcoin Core с сетью может потребовать около одного дня. Вам следует заранее убедиться в достаточной пропускной способности интернет-канала и наличии свободного места в памяти для загрузки <a href=\"http://blockchain.info/charts/blocks-size\">всей цепочки блоков</a>.\nЕсли вы умеете пользоваться торрентом, вы можете ускорить этот процесс путем скачивания <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (копию цепочки блоков) в директорию Bitcoin Core  перед запуском программы"
     patient: "Будьте терпеливыми"
   events:
     title: "Конференции и мероприятия - Биткоин"

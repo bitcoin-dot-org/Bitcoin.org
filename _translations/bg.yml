@@ -154,7 +154,7 @@ bg:
     downloadsig: "Проверете ключовете на версиите"
     versionhistory: "Покажи промените при различните версии"
     notelicense: "Bitcoin Core е <a href=\"http://www.fsf.org/about/what-is-free-software\">свободен софтуерен проект</a>, създаден от група хора, който е разпространен под  <a href=\"http://opensource.org/licenses/mit-license.php\">лиценза на Масачузетския технологичен институт</a>."
-    notesync: "Първоначалната синхронизация на Bitcoin Core може да отнеме много време. Проверете дали имате достатъчно дисково пространство и достатъчно бърза интернет връзка за целия <a href=\"http://blockchain.info/charts/blocks-size\">block chain</a>. Ако знаете как да изтеглите торент файл, може да ускорите процеса като съхраните <a href=\"http://sourceforge.net/projects/bitcoin/files/Bitcoin/blockchain/bootstrap.dat.torrent/download\">bootstrap.dat</a> (по-старо копие на block chain) в data директорията на Bitcoin Core преди статирането на софтуера."
+    notesync: "Първоначалната синхронизация на Bitcoin Core може да отнеме много време. Проверете дали имате достатъчно дисково пространство и достатъчно бърза интернет връзка за целия <a href=\"http://blockchain.info/charts/blocks-size\">block chain</a>. Ако знаете как да изтеглите торент файл, може да ускорите процеса като съхраните <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (по-старо копие на block chain) в data директорията на Bitcoin Core преди статирането на софтуера."
     patient: "Моля изчакайте"
   events:
     title: "Конференции и събития - Биткойн"

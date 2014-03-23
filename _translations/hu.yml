@@ -156,7 +156,7 @@ hu:
     downloadsig: "Kibocsátási aláírások megerősítése"
     versionhistory: "Korábbi verziók mutatása"
     notelicense: "A Bitcoin Core egy közösség által vezérelt, az <a href=\"http://opensource.org/licenses/mit-license.php\">MIT licence</a> alatt kibocsátott, <a href=\"http://www.fsf.org/about/what-is-free-software\">ingyenes szoftverprojekt</a>."
-    notesync: "A Bitcoin Core kezdeti szinkronizációja nagyon hosszú időt vehet igénybe. Győződjön meg róla, hogy elegendő sávszélessége és tárhelye van a teljes <a href=\"http://blockchain.info/charts/blocks-size\">blokklánc-mérethez</a>. Amennyiben tudja, hogy hogyan lehet torrentfájlt letölteni, felgyorsíthatja a folyamatot a szoftver elindítása előtt, <a href=\"http://sourceforge.net/projects/bitcoin/files/Bitcoin/blockchain/bootstrap.dat.torrent/download\">bootstrap.dat</a> (a blokklánc egy korábbi másolata) Bitcoin Core-adatkönyvtárhoz való hozzáadásával."
+    notesync: "A Bitcoin Core kezdeti szinkronizációja nagyon hosszú időt vehet igénybe. Győződjön meg róla, hogy elegendő sávszélessége és tárhelye van a teljes <a href=\"http://blockchain.info/charts/blocks-size\">blokklánc-mérethez</a>. Amennyiben tudja, hogy hogyan lehet torrentfájlt letölteni, felgyorsíthatja a folyamatot a szoftver elindítása előtt, <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (a blokklánc egy korábbi másolata) Bitcoin Core-adatkönyvtárhoz való hozzáadásával."
     patient: "Legyen türelemmel"
   events:
     title: "Konferenciák és egyéb rendezvények - Bitcoin"

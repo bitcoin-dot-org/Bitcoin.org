@@ -154,7 +154,7 @@ de:
     downloadsig: "Release-Signatur überprüfen"
     versionhistory: "Versionshistorie anzeigen"
     notelicense: "Bitcoin Core is ein gemeinschaftliches, <a href=\"http://www.fsf.org/about/what-is-free-software\">quelloffenes</a> Projekt und wurde unter der <a href=\"http://opensource.org/licenses/mit-license.php\">MIT Lizenz</a> veröffentlicht."
-    notesync: "Die anfängliche Synchronisierung von Bitcoin Core kann sehr lange dauern. Sie sollten sicherstellen, dass Sie ausreichend Bandbreite und Speicher für die volle <a href=\"http://blockchain.info/charts/blocks-size\">Größe der Blockkette</a> zur Verfügung haben. Falls Sie wissen wie man eine Torrent-Datei herunterlädt, dann können Sie den Prozess beschleunigen, indem Sie  <a href=\"http://sourceforge.net/projects/bitcoin/files/Bitcoin/blockchain/bootstrap.dat.torrent/download\">bootstrap.dat</a>(eine frühere Kopie der Bockkette) in das Bitcoin Core Verzeichniss speichern, bevor Sie die Software starten."
+    notesync: "Die anfängliche Synchronisierung von Bitcoin Core kann sehr lange dauern. Sie sollten sicherstellen, dass Sie ausreichend Bandbreite und Speicher für die volle <a href=\"http://blockchain.info/charts/blocks-size\">Größe der Blockkette</a> zur Verfügung haben. Falls Sie wissen wie man eine Torrent-Datei herunterlädt, dann können Sie den Prozess beschleunigen, indem Sie  <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a>(eine frühere Kopie der Bockkette) in das Bitcoin Core Verzeichniss speichern, bevor Sie die Software starten."
     patient: "Sie werden geduldig sein müssen"
   events:
     title: "Konferenzen und Events - Bitcoin"
