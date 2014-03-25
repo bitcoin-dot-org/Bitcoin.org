@@ -30,7 +30,7 @@ de:
     pci: "Keine PCI-Konformität nötig"
     pcitext: "Damit Online-Kreditkartenzahlungen akzeptiert werden können, sind normalerweise erhebliche Sicherheitsüberprüfungen nötig, um dem PCI-Standard zu entsprechen. Bitcoin erfordert zwar noch, dass Sie Ihre Zahlungsaufforderung und Ihre <a href=\"#secure-your-wallet#\">Wallet absichern</a>. Sie tragen aber nicht die Kosten und die Verantwortung, die mit der Verarbeitung von heiklen Informationen Ihrer Kunden, wie etwa Kreditkartennummern, einhergehen."
     visibility: "Vergrößern sie kostenlos ihren Bekanntheitsgrad"
-    visibilitytext: "Bitcoin ist ein Wachstumsmarkt voller neuer Kunden, die nach Möglichkeiten suchen, ihre Bitcoins auszugeben. Bitcoin als Zahlungsmittel zu akzeptieren ist ein einfacher Weg neue Kunden zu gewinnen und ihr Geschäft bekannter zu machen. Eine neue Zahlungsmethode zu akzeptieren hat sich schon immer als eine gute Entscheidung für Online-Unternehmen herausgestellt."
+    visibilitytext: "Bitcoin ist ein Wachstumsmarkt voller neuer Kunden, die nach Möglichkeiten suchen, ihre Bitcoins auszugeben. Bitcoin als Zahlungsmittel zu akzeptieren ist ein einfacher Weg neue Kunden zu gewinnen und ihr Geschäft bekannter zu machen. Eine neue Zahlungsmethode zu akzeptieren hat sich schon häufig als eine gute Entscheidung für Online-Unternehmen herausgestellt."
     multisig: "Multi-Signatur"
     multisigtext: "Bitcoin hat auch eine (eher unbekannte) Funktion, die das Ausgeben von Coins nur erlaubt, wenn ein Teil einer Gruppe von Personen die Transaktion signiert (sogenannte \"n von m\" Transaktionen). Dies ist vergleichbar mit dem guten alten Multi-Signatur-Scheck-System, das Sie eventuell heute noch bei Ihrer Bank nutzen."
     transparency: "Transparente Kontoführung"
@@ -104,21 +104,23 @@ de:
     getstartedmobi: "<a href=\"https://play.google.com/store/apps/details?id=de.schildbach.wallet\"><b>Bitcoin Wallet</b></a> für Android läuft auf Ihrem Telefon oder Tablet."
     bethenetwork: "Seien Sie Teil des Bitcoin-Netzwerks"
     bethenetworktxt: "Haben Sie einen Rechner, der ständig angeschaltet bleibt und mit dem Internet verbunden ist? Sie können der Community ganz einfach helfen, indem Sie den <a href=\"download\"><b>kompletten Bitcoin-Client</b></a> darauf verwenden. Der Original-Client ist ressourcenintensiver und wird einen kompletten Tag zur Synchronisation benötigen. Danach wird Ihr Computer zum Netzwerk beitragen, indem er Transaktionen prüft und weiterleitet."
-    walletdesk: "Software Wallets"
-    walletdesktxt: "Software Wallets werden auf Ihrem Computer installiert. Sie geben Ihnen die komplette Kontrolle über Ihr Wallet. Sie sind verantwortlich, Backups anzulegen und Ihr Geld zu schützen."
+    walletdesk: "Desktop Wallets"
+    walletdesktxt: "Desktop Wallets werden auf Ihrem Computer installiert. Sie geben Ihnen die komplette Kontrolle über Ihre Wallet. Sie sind dafür verantwortlich, Backups anzulegen und Ihr Geld zu schützen."
     walletmobi: "Mobile Wallets"
-    walletmobitxt: "Mit Hilfe mobiler Wallets können Sie Bitcoin in Ihrer Tasche mitnehmen. Sie können einfach Coins tauschen und in physischen Ladengeschäften zahlen, indem Sie einen QR code scannen oder NFC nutzen."
+    walletmobitxt: "Mit Hilfe mobiler Wallets können Sie Bitcoin in Ihrer Tasche mitnehmen. Sie können auf einfache Art und Weise Bitcoins tauschen und in Ladengeschäften damit zahlen, indem Sie einen QR Code scannen oder NFC nutzen."
     walletweb: "Web Wallets"
-    walletwebtxt: "Mit Web Wallets können Sie Bitcoin überall nutzen und haben weniger Aufwand, Ihr Wallet zu schützen. Sie müssen den Web-Wallet-Dienst jedoch sorgsam auswählen, da dieser Ihre Bitcoins lagert."
+    walletwebtxt: "Mit Web Wallets können Sie Bitcoin überall nutzen und meistens bieten diese zusätzliche Services. Sie müssen ihren Web-Wallet-Dienst jedoch sorgsam auswählen, da dieser Ihre Bitcoins lagert."
     walletbitcoinqt: "Bitcoin Core ist ein kompletter Bitcoin-Client und bildet das Rückgrat des Netzwerks. Er bietet ein Höchstmaß an Sicherheit, Privatsphäre und Stabilität. Er hat allerdings weniger Funktionen und benötigt viel Festplatten- und Arbeitsspeicher."
     walletmultibit: "MultiBit ist ein leichtgewichtiger Client mit Schwerpunkt auf Geschwindigkeit und einfacher Nutzbarkeit. Er synchronisiert sich mit dem Netzwerk und ist in wenigen Minuten einsatzbereit. MultiBit unterstützt verschiedene Sprachen. Er ist eine gute Wahl für nicht-technische Nutzer."
+    wallethive: "Hive ist eine schnelle, integrierte und nutzerfreundliche Bitcoin Wallet für Mac OS X. Mit dem Focus auf Benutzerfreundlichkeit, ist Hive in viele Sprachen übersetzt und bietet Apps, die es einfach machen, mit Ihren favorisierten Bitcoin-Service oder Händler zu interagieren."
     walletarmory: "Armory ist ein erweiterter Bitcoin-Client, der Funktionalitäten für Bitcoin-Power-User ergänzt. Er bietet viele Backup- und Verschlüsselungsfunktionen und ermöglicht sicheres Speichern auf Offline-Rechnern."
     walletelectrum: "Electrum ist auf Geschwindigkeit und Einfachheit fokussiert und benötigt wenig Ressourcen. Es verwendet entfernte Server um die kompliziertesten Teile des Bitcoin-Systems zu übernehmen und ermöglicht es, mit einer geheimen Phrase wieder Zugriff auf eine Wallet zu bekommen."
     walletbitcoinwallet: "Bitcoin Wallet ist einfach zu verwenden und zuverlässig, gleichzeitig aber sicher und schnell. Der Fokus ist auf Dezentralisierung und Zero Trust gerichtet: Kein zentraler Dienst wird für Bitcoin-bezogene Aktionen benötigt. Die App ist eine gute Wahl für technisch nicht versierte Menschen. Auch verfügbar für BlackBerry OS."
     walletmyceliumwallet: "Mycelium Bitcoin Wallet ist eine freie Android app die auf Sicherheit, Geschwindigkeit und einfache Benutzung ausgelegt ist. Sie hat einzigartige Funktionen für 'cold storage' und für die Verwaltung von Schlüsseln die es einfach machen Ihre Bitcoins sicher zu halten."
-    walletblockchaininfomob: "Die Hybrid-Wallet Blockchain.info unterstützt auch Smartphones. Es enthält viele Funktionen von blockchain.info, wie z.B. Web Wallet Backup."
+    walletblockchaininfomob: "Blockchain.info ist ein Hybrid Wallet Anbieter, der es ermöglicht, die selbe Wallet sowohl auf dem Smartphone als auch an einem Dekstop PC zu benutzen. Diese enthält viele blockchain.info Features wie Web Wallet Backups."
     walletblockchaininfo: "Blockchain.info ist eine nutzerfreundliche Hybrid-Wallet. Es speichert eine verschlüsselte Version Ihrer Wallets online, aber die Entschlüsselung erfolgt in Ihrem Browser. Aus Sicherheitsgründen sollten Sie immer die Browser-Erweiterung und E-Mail-Backups verwenden."
     walletcoinbase: "Coinbase ist ein Web-Wallet Anbieter mit dem Bestreben benutzerfreundlich zu sein. Er bietet auch eine Android Web Wallet App, Händler-Tools und eine Integration von US-Bankkonten zum Kauf oder Verkauf von Bitcoins an."
+    walletcoinkite: "Coinkite ist ein Web Wallet und Debitkarten-Dienst, der auf einfache Bedienbarkeit ausgelegt ist. Er funktioniert auch mit mobilen Browsern und bietet Händlertools sowie Bezahlterminals für Ladengeschäfte. Es handelt sich um einen Hybrid-Wallet und \"Full Reserve Vault\"."
     walletdownload: "<a href=\"#download#\">Download</a>"
     walletvisit: "Webseite besuchen"
     walletwebwarning: "Vorsicht"
@@ -142,7 +144,7 @@ de:
     involvetxt1: "Die Bitcoin-Entwicklung ist quelloffen und jeder Entwickler kann zu dem Projekt beitragen. Alles was Sie benötigen finden Sie im <a href=\"https://github.com/bitcoin/bitcoin\">GitHub Repository</a>. Bitte lesen und befolgen Sie den in der README beschriebenen Entwicklungsprozess, liefern Sie Codes von guter Qualität und respektieren Sie alle Richtlinien."
     involvetxt2: "Die Entwickler-Diskussion findet über GitHub und die <a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">bitcoin-development</a> Mailing List bei sourceforge statt. Weniger formale Entwickler-Diskussion gibt es unter irc.freenode.net #bitcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">Weboberfläche</a>, <a href=\"http://bitcoinstats.com\">Logs</a>)."
     more: "Mehr Open-Source Projekte"
-    moremore: "Mehr anzeigen.."
+    moremore: "Mehr anzeigen..."
     contributors: "Bitcoin Core Mitwirkende"
     contributorsorder: "(Sortiert nach Anzahl der Commits)"
   download:
@@ -154,12 +156,13 @@ de:
     downloadsig: "Release-Signatur überprüfen"
     versionhistory: "Versionshistorie anzeigen"
     notelicense: "Bitcoin Core is ein gemeinschaftliches, <a href=\"http://www.fsf.org/about/what-is-free-software\">quelloffenes</a> Projekt und wurde unter der <a href=\"http://opensource.org/licenses/mit-license.php\">MIT Lizenz</a> veröffentlicht."
-    notesync: "Die anfängliche Synchronisierung von Bitcoin Core kann sehr lange dauern. Sie sollten sicherstellen, dass Sie ausreichend Bandbreite und Speicher für die volle <a href=\"http://blockchain.info/charts/blocks-size\">Größe der Blockkette</a> zur Verfügung haben. Falls Sie wissen wie man eine Torrent-Datei herunterlädt, dann können Sie den Prozess beschleunigen, indem Sie  <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a>(eine frühere Kopie der Bockkette) in das Bitcoin Core Verzeichniss speichern, bevor Sie die Software starten."
-    patient: "Sie werden geduldig sein müssen"
+    notesync: "Die anfängliche Synchronisierung von Bitcoin Core kann sehr lange dauern. Sie sollten sicherstellen, dass Sie ausreichend Bandbreite und Speicher für die volle <a href=\"http://blockchain.info/charts/blocks-size\">Größe der Blockkette</a> zur Verfügung haben. Falls Sie wissen wie man eine Torrent-Datei herunterlädt, dann können Sie den Prozess beschleunigen, indem Sie  <a href=\"http://sourceforge.net/projects/bitcoin/files/Bitcoin/blockchain/bootstrap.dat.torrent/download\">bootstrap.dat</a>(eine frühere Kopie der Bockkette) in das Bitcoin Core Verzeichniss speichern, bevor Sie die Software starten."
+    patient: "Sie müssen geduldig sein"
   events:
     title: "Konferenzen und Events - Bitcoin"
     pagetitle: "Konferenzen und Events"
-    pagedesc: "Finden Sie Events und Konferenzen von verschiedenen Organisationen auf der ganzen Welt."
+    pagedesc: "Finden Sie Events und Konferenzen und Meetups auf der ganzen Welt."
+    upcoming: "Bevorstehende Events und Konferenzen"
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitcoin Meetups auf BitcoinTalk (englisch)</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitcoin Meetups im Wiki (englisch; deutsche Version ungepflegt)</a>"
     meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin Meetup Gruppen</a>"
@@ -178,7 +181,7 @@ de:
     whocontrolstxt1: "Niemand besitzt das Bitcoin Netzwerk, ebenso wenig wie jemand die Technik hinter der Email besitzt. Bitcoin wird durch alle Bitcoin-Nutzer auf der ganzen Welt kontrolliert. Obwohl die Entwickler die Software verbessern, können sie keine Änderung im Bitcoin-Protokoll erzwingen, da alle Nutzer die freie Wahl haben, welche Software und Version sie benutzen. Um miteinander kompatibel zu bleiben, ist es notwendig, dass Software benutzt wird, die sich an die gleichen Regeln hält. Bitcoin kann nur richtig funktionieren, wenn sich alle Nutzer komplett einig sind. Deshalb haben alle Nutzer und Entwickler ein starkes Interesse daran, diesen Konses zu erhalten."
     howitworks: "Wie funktioniert Bitcoin?"
     howitworkstxt1: "Aus der Nutzerperspektive betrachtet ist Bitcoin nicht viel mehr als eine App oder ein Computerprogramm, das einen persönlichen Bitcoin-Wallet zur Verfügung stellt und es Nutzern ermöglicht Bitcoins zu senden und zu empfangen.\nSo funktioniert Bitcoin für die meisten Anwender."
-    howitworkstxt2: "Hinter den Kulissen des Bitcoinnetzwerks gibt es ein öffentliches Buchungssystem, die so genannte \"Blockkette\". In diesem Buchungssystem wird jede Transaktion, die je über das Bitcoinnetzwerk gebucht wurde, gespeichert. Das ermöglicht dem Computer jedes Nutzers die Gültigkeit jeder Transaktion zu überprüfen. Die Echtheit jeder Transaktion ist durch eine digitale Signatur gesichert, die mit der Adresse des Senders übereinstimmt und jedem Nutzer die volle Kontrolle über Zahlungen von seiner Adresse aus gibt. Zusätzlich kann jeder selbst über spezielle Hardware Transaktionen am eigenen Rechner verarbeiten und dafür eine Vergütung in Form von Bitcoins bekommen. Dieser Prozess wird \"Mining\" genannt. Um mehr über Bitcoin zu erfahren können sie die <a href=\"#how-it-works#\">dazugehörige Webseite</a> und die <a href=\"/bitcoin.pdf\">ursprüngliche Veröffentlichung(PDF)</a> dazu lesen."
+    howitworkstxt2: "Hinter den Kulissen des Bitcoinnetzwerks gibt es ein öffentliches Buchungssystem, die so genannte \"Blockchain\". In diesem Buchungssystem wird jede Transaktion, die je über das Bitcoinnetzwerk gebucht wurde, gespeichert. Das ermöglicht dem Computer jedes Nutzers die Gültigkeit jeder Transaktion zu überprüfen. Die Echtheit jeder Transaktion ist durch eine digitale Signatur und der dazugehörigen Adresse des Senders gesichert; dies ermöglicht jedem Nutzer die volle Kontrolle über Zahlungen von seiner Adresse aus. Zusätzlich kann jeder selbst durch spezielle Hardware Transaktionen verarbeiten und dafür eine Vergütung in Form von Bitcoins erhalten. Dieser Prozess wird \"Mining\" genannt. Um mehr über Bitcoin zu erfahren können sie die <a href=\"#how-it-works#\">dazugehörige Webseite</a> und die <a href=\"/bitcoin.pdf\">ursprüngliche Veröffentlichung(PDF)</a> dazu lesen."
     used: "Wird Bitcoin tatsächlich von Personen verwendet?"
     usedtxt1: "Ja. Es existiert eine  <a href=\"http://usebitcoins.info/\"> wachsende Zahl von Geschäften </a> und Personen, die Bitcoin benutzen. Dies beinhaltet grundlegende Geschäfte wie Restaurants, Appartments, Rechtsanwaltskanzleien und populäre Dienste wie Namecheap, Wordpress, Reddit und Flattr. Obwohl Bitcoin eine relative neue Erscheinung ist, wächst es schnell. Ende August 2013 überschritt der <a href=\"http://bitcoincharts.com/bitcoin/\"> Wert aller im Umlauf befindlichen Bitcoins</a> 1.5 Milliarden US-Dollar mit einem Umsatz von täglich vielen Millionen Dollar."
     acquire: "Wie erhält man Bitcoins?"
@@ -215,7 +218,7 @@ de:
     scaletxt1: "Das Bitcoin Netzwerk kann bereits eine größere Anzahl von Transaktionen pro Sekunde verarbeiten, als es es im Moment der Fall ist. Trotzdem ist es noch nicht so weit, dass es das Niveau großer Kreditkartennetzwerke erreicht. An der Aufhebung aktueller Einschränkungen wird bereits gearbeitet und zukünftige Anforderungen sind bekannt. Seit der Einführung befindet sich alles im Bitcoinnetzwerk in einem ständigen Reife-, Verbesserungs- und Spezialisierungsprozess, und es muss davon ausgegangen werden, dass dieser noch einige Jahre andauert. Mit steigenden Wachstum werden mehr und mehr Nutzer leichtgewichtigere Clients nutzen und größere Netzwerkknoten werden eher zu spezialisierten Diensten. Weitere Informationen finden Sie im Wiki auf der Seite zur <a href=\"https://en.bitcoin.it/wiki/Scalability\">Skalierbarkeit</a>."
     legal: "Rechtliches"
     islegal: "Ist Bitcoin legal?"
-    islegaltxt1: "Unserem besten Wissen nach ist Bitcoin, dem Gesetz nach, in keinem Gerichtsstand illegal. Manche Gerichtsstände jedoch (wie Argentinien) beschränken oder verbieten Fremdwährungen komplett. Andere Gerichtsstände (wie Thailand) können die Lizensierung bestimmer Unternehmen wie Bitcoinbörsen begrenzen."
+    islegaltxt1: "Unserem besten Wissen nach ist Bitcoin, dem Gesetz nach, in keinem Gerichtsstand illegal. Manche Gerichtsstände (wie Argentinien und Russland) jedoch beschränken oder verbieten Fremdwährungen komplett. Andere Gerichtsstände (wie Thailand) können die Lizensierung bestimmer Unternehmen wie Bitcoinbörsen begrenzen."
     islegaltxt2: "Aufsichtsbehörden verschiedener Länder unternehmen Schritte, um Einzelpersonen und Firmen Regeln zur Verfügung zu stellen, wie diese neue Technologie in das formelle, regulierte Finanzsystem zu integrieren ist. Zum Beispiel hat das Financial Crimes Enforcement Network (FinCEN), eine Abteilung des Finanzministeriums der Vereinigten Staaten, unverbindliche Leitlinien herausgegeben, wie es bestimmte Aktivitäten virtuelle Währungen betreffend  charakterisiert."
     illegalactivities: "Ist Bitcoin nützlich für illegale Aktivitäten?"
     illegalactivitiestxt1: "Bitcoin ist Geld, und Geld wurde schon immer für legale und illegale Zwecke genutzt. Bargeld, Kreditkarten und das gewöhnliche Bankensystem übertreffen Bitcoin bei weitem, wenn es um den Nutzen, kriminelle Geschäfte zu finanzieren, geht. Bitcoin könnte den Zahlungsverkehr revolutionieren und es wird häufig angenommen, dass die Vorteile solcher Innovationen ihre möglichen Nachteile in den Schatten stellen."
@@ -306,7 +309,7 @@ de:
     pagedesc: "Bitcoin zu verwenden, um zu bezahlen und bezahlt zu werden ist leicht und für Jeden möglich."
     users: "Wie man Bitcoin verwendet"
     inform: "Informieren Sie sich"
-    informtxt: "Bitcoin ist anderes als die Dinge, die Sie kennen und jeden Tag benutzen. Bevor Sie Bitcoin benutzen, gibts es einige Sachen, die Sie wissen sollten um es sicher zu benutzen und geläufige Gefahren zu vermeiden."
+    informtxt: "Bitcoin ist anders als die Dinge, die Sie kennen und jeden Tag benutzen. Bevor Sie Bitcoin benutzen, gibt es einige Sachen, die Sie wissen sollten um es sicher zu benutzen und geläufige Gefahren zu vermeiden."
     informbut: "Weiterlesen"
     choose: "Wählen Sie ihre Wallet"
     choosetxt: "Sie können eine Bitcoin-Wallet auf ihrem Smartphone im alltäglichen Leben verwenden oder eine Wallet nur für Online-Zahlungen auf ihrem Computer haben. In jeden Fall dauert es weniger als eine Minute eine Wallet zu wählen."
@@ -350,7 +353,7 @@ de:
     list1: "Sofort-Peer-to-Peer<br>Transaktionen"
     list2: "Weltweite<br>Zahlungen"
     list3: "Geringe bis keine<br>Transaktionskosten"
-    desc: "Bitcoin nutzt Peer-To-Peer-Technologie um ohne zentrale Autorität auszukommen; die Bearbeitung von Transaktionen und die Ausgabe von Bitcoins werden kollektiv durch das Netzwerk übernommen.  <b>Bitcoin ist Open-Source; das Design ist öffentlich, Bitcoin gehört niemandem und wird von niemandem kontrolliert. <a href=\"#support-bitcoin#\">Jeder kann teilhaben</a></b>. Durch viele seiner einzigartigen Eigenschaften eröffnet Bitcoin aufregende Nutzungsmöglichkeiten, die durch keines der bisherigen Zahlungssysteme abgedeckt sind."
+    desc: "Bitcoin nutzt Peer-To-Peer-Technologie, um ohne zentrale Autorität auszukommen; die Bearbeitung von Transaktionen und die Ausgabe von Bitcoins werden kollektiv durch das Netzwerk übernommen.  <b>Bitcoin ist Open-Source; das Design ist öffentlich, Bitcoin gehört niemandem und wird von niemandem kontrolliert. <a href=\"#support-bitcoin#\">Jeder kann teilhaben</a></b>. Durch viele seiner einzigartigen Eigenschaften eröffnet Bitcoin aufregende Nutzungsmöglichkeiten, die durch keines der bisherigen Zahlungssysteme abgedeckt sind."
     overview: "Oder bekommen Sie einen schnellen Überblick für"
     individuals: "Einzelpersonen"
     businesses: "Unternehmen"
@@ -428,7 +431,7 @@ de:
     everyday: "Geringe Mengen für den täglichen Bedarf"
     everydaytxt: "Eine Bitcoin-Wallet is wie eine Geldbörse mit Bargeld. Falls Sie nicht mehrere tausend Euro in ihrem Geldbeutel aufbewahren würden, sollten Sie das auch bei ihrer Bitcoin-Wallet in Betracht ziehen. Überhaupt ist es ein bewährtes Verfahren nur kleine Mengen von Bitcoins für den täglichen Bedarf auf ihrem Computer oder Smartphone zu haben und den restlichen Teil ihres Vermögens an einem sicheren Ort zu verwahren."
     online: "Seien Sie vorsichtig mit Online-Services"
-    onlinetxt: "Online-Wallets und Börsen sehen aus wie Online-Banken. Trotzdem sollten Sie solche Dienstleister sorgfältig aussuchen. Derzeit bietet kein Dienstleister genug Schutz und Sicherheit, dass er zur Lagerung von Werten verwendet werden könnte, so wie eine Bank. Die Verwendung von Sicherheitsfunktionen, wie z.B. eine Zwei-Faktoren-Authentifizierung, kann die Sicherheit Ihrer Konten weiter erhöhen."
+    onlinetxt: "Sie sollten vorsichtig mit Services umgehen, die dazu entworfen sind Geld online aufzubewahren. Viele Wechselstuben und Online Wallets litten in jüngster Zeit unter Sicherheitslücken und allgemein bieten solche Dienste nicht genug Sicherheit, um dort sein Geld zu lagern wie bei einer Bank. Von daher sollten Sie andere Arten von <a href=\"#choose-your-wallet#\">Bitcoin Wallets</a> verwenden. Andernfalls sollen sie Online Services sehr sorgfältig auswählen.  Zusätzlich wird empfohlen, Zwei-Faktor Authentifizierung zu verwenden."
     backup: "Machen Sie Sicherheitskopien Ihrer Wallet"
     backuptxt: "Ein Backup ihrer Wallet, verwahrt an einem sicheren Ort, kann Sie vor Verlust durch Computerdefekte und menschliche Fehler schützen. Ein Backup ermöglicht es Ihnen aber auch ihre Wallet wiederherzustellen, nachdem ihr Smartphone oder Computer gestohlen wurde, falls Sie ihr Wallet verschlüsselt haben."
     backupwhole: "Legen Sie Sicherheitskopien Ihrer kompletten Wallet an"
@@ -467,19 +470,21 @@ de:
     pagetitle: "Bitcoin unterstützen"
     summary: "Das Bitcoin-Protokoll wurde in einer kleinen Community geboren und wächst seitdem sehr schnell. Es gibt viele Dinge, die Sie tun können, um bei der Verbreitung und Verbesserung von Bitcoin zu helfen."
     use: "Bitcoin verwenden"
-    usetxt: "Natürlich ist die Verwendung von Bitcoin die erste Möglichkeit, wie Sie der Weiterentwicklung helfen können. Wahrscheinlich gibt es viele Fälle, wo Bitcoin Ihr Leben einfacher machen kann. Und Sie selbst können Bitcoin-Zahlungen annehmen."
+    usetxt: "<a href=\"#getting-started#\">Bitcoin verwenden</a> ist das Erste was Sie tun können, um Bitcoin zu unterstützen. Es gibt vermutlich viele Fälle in denen es ihr Leben einfacher macht. Sie können Zahlungen akzeptieren, und Käufe in Bitcoin erledigen."
     node: "Seien Sie das Netzwerk"
-    nodetxt: "Sie können Teil des Bitcoin-Netzwerks werden, indem Sie die <a href=\"#download#\">Original-Software</a> auf Ihrem Computer laufen lassen. Ebenso können Sie Bitcoins minen, und so das Netzwerk sicherer machen, indem Sie bei der Verarbeitung von Transaktionen helfen."
+    nodetxt: "Sie können sich dem Bitcoin-Netzwerk anschließen indem Sie die <a href=\"#download#\">Original-Software</a> auf Ihrem Computer oder einem dedizierten Server laufen lassen. Vollständige Knoten machen das Netzwerk sicherer und leiten alle Transaktionen der Benutzer weiter. Sie können mit dem Backbone des Netzwerks verglichen werden."
+    mining: "Mining"
+    miningtxt: "Sie können damit beginnen <a href=\"http://www.bitcoinmining.com/\">Bitcoins zu minen</a>, um bei der Verarbeitung von Transaktionen zu helfen. Um das Netzwerk zu schützen, sollten Sie <a href=\"https://blockchain.info/de/pools\">kleineren Mining Pools</a> beitreten, und dezentrale Pools wie <a href=\"http://p2pool.in/\">P2Pool</a> oder <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">Pools</a>, mit Unterstützung von getblocktemplate (GBT), bevorzugen."
     develop: "Entwicklung"
     developtxt: "Bitcoin ist quelloffen. Wenn Sie ein Entwickler sind, können Sie Ihre Superkräfte nutzen um Gutes zu tun, um <a href=\"#development#\">Bitcoin zu verbessern</a>. Sie können auch beeindruckende neue Dienste oder Software bauen, die Bitcoin verwenden."
     donation: "Spenden"
     donationtxt: "Der einfachste Weg zu helfen ist, ein paar Bitcoins an die Bitcoin Foundation zu <a href=\"https://bitcoinfoundation.org/donate\">spenden</a>. Oder SIe können bei der Finanzierung von in der nahen Zukunft möglicherweise nützlichen Projekten helfen, die mit Bitcoin im Zusammenhang stehen."
-    foundation: "Tritt der Foundation bei"
-    foundationtxt: "Die <a href=\"https://bitcoinfoundation.org/\">Bitcoin Foundation</a> ist eine der größten Organisationen, die sich der Standardisierung, dem Schutz und der Förderung von Bitcoin widmet. Sie finanziert den Lohn der Bitcoin-Software Entwickler, organisiert Konferenzen und bietet viele wichtige Ressourcen."
+    nonprofit: "Organisationen"
+    nonprofittxt: "Die <a href=\"https://bitcoinfoundation.org/\">Bitcoin Foundation</a> und viele andere <a href=\"#community##[community.non-profit]\">gemeinnützige Organisationen</a> sind dem Schutz und der Förderung von Bitcoin gewidmet. Sie können diesen Gruppen helfen in dem Sie Ihnen beitreten und an den Projekten, Diskussionen und Ereignissen teilhaben."
     spread: "Weitersagen"
-    spreadtxt: "Sprechen Sie mit interessierten Menschen über Bitcoin. Schreiben Sie in Ihrem Blog darüber. Sagen Sie Ihrem Lieblingsgeschäft, dass Sie gerne mit Bitcoin bezahlen würden. Oder seien Sie kreativ und gestalten Sie sich selbst ein schönes Bitcoin-T-Shirt."
-    wiki: "Wiki"
-    wikitxt: "Das <a href=\"https://de.bitcoin.it/\">Bitcoin Wiki</a> enthält viele nützliche und detaillierte Informationen, und wir verbesseren die Inhalte laufend - genau wie Wikipedia. Sie können helfen, das Wiki akkurat und aktuell zu halten."
+    spreadtxt: "Sprechen Sie mit interessierten Menschen über Bitcoin. Schreiben Sie in Ihrem Blog darüber. Sagen Sie Ihrem Lieblingsgeschäft, dass Sie gerne mit Bitcoin bezahlen würden. Helfen Sie <a href=\"http://usebitcoins.info/\">Händlerverzeichnisse</a> aktuell zu halten. Oder seien Sie kreativ und gestalten Sie sich ein schönes Bitcoin-T-Shirt."
+    wiki: "Dokumentation"
+    wikitxt: "<a href=\"https://github.com/bitcoin/bitcoin.org#how-to-participate\">Bitcoin.org</a> und das <a href=\"https://de.bitcoin.it/\">Bitcoin Wiki</a>bieten viele nützliche und detaillierte Informationen, und wir verbesseren die Inhalte laufend - genau wie Wikipedia. Sie können helfen, das Wiki akkurat und aktuell zu halten."
     translate: "Übersetzen"
     translatetxt: "Sie können bei der Verbreitung von Bitcoin mithelfen, in dem Sie in wichtigen Bereichen des Bitcoin Ecosystems Übersetzungen machen oder verbessern. Suchen Sie sich einfach ein Projekt aus bei dem Sie helfen möchten."
     help: "Triff die Communities"
@@ -533,8 +538,8 @@ de:
     instanttxt: "Eine Bitcoin-Transaktion ist in der Regel innerhalb weniger Sekunden verteilt und innerhalb von 10 Minuten bestätigt. Innerhalb dieser Zeit gilt die Transaktion als glaubwürdig, aber umkehrbar. Unehrliche Nutzer könnten versuchen zu schummeln. Falls Sie nicht zu lange warten wollen, sollten Sie eine kleine Transaktionsgebühr ansetzen, oder ein System verwenden, welches unsichere Transaktionen erkennt, um die Sicherheit zu erhöhen. Für größere Summen ab 1000€ empfiehlt es sich auf 6 Bestätigungen oder mehr zu warten. Jede Bestätigung verringert das Risiko einer umkehrbaren Bestätigung <i>exponentiell</i>."
     experimental: "Bitcoin ist noch experimentell"
     experimentaltxt: "Bitcoin ist eine experimentelle neue Währung, und wird aktiv weiterentwickelt. Auch wenn es mit steigender Nutzung immer weniger experimentell wird, sollten Sie bedenken, dass Bitcoin eine neue Erfindung ist, die Ideen verfolgt, die vorher nie ausprobiert wurden. Daher kann die Zukunft von niemandem vorhergesagt werden."
-    tax: "Vergessen Sie die Steuern nicht"
-    taxtxt: "Bitcoin ist keine offizielle Währung. Allerdings sehen die meisten Gesetzgeber Einkommen-, Umsatz-, Lohn- und Kapitalertragssteuern auf alle Werte vor, inklusive Bitcoin."
+    tax: "Steuern und Regulierung"
+    taxtxt: "Bitcoin ist keine offizielle Währung. Allerdings sehen die meisten Gesetzgeber immer noch Einkommen-, Umsatz- und Lohnsteuer vor, sowie Kapitalertragssteuern auf alle Anlagen, inklusive Bitcoin. Es liegt in Ihrer Verantwortung sicherzustellen, dass Sie eventuell erforderliche Steuern bezahlen und andere von Ihrer Regierung und / oder Gemeinde beschlossenen rechtlichen oder regulatorischen Erlässe einhalten."
   layout:
     menu-about-us: "Über bitcoin.org"
     menu-bitcoin-for-businesses: Unternehmen
@@ -544,7 +549,6 @@ de:
     menu-development: Entwicklung
     menu-events: Ereignisse
     menu-faq: FAQ
-    menu-foundation: Foundation
     menu-getting-started: "Erste Schritte"
     menu-how-it-works: "Wie es funktioniert"
     menu-innovation: Innovation
@@ -555,6 +559,7 @@ de:
     menu-vocabulary: Glossar
     menu-you-need-to-know: "Das sollten Sie wissen"
     footer: "Veröffentlicht unter der <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT Lizenz</a>"
+    sponsor: "Eine Community Website gesponsert von"
     getstarted: "Legen Sie los mit Bitcoin"
   url:
     about-us: ueber-uns
@@ -578,6 +583,8 @@ de:
     vocabulary: glossar
     you-need-to-know: das-sollten-sie-wissen
   anchor:
+    community:
+      non-profit: non-profit
     vocabulary:
       address: adresse
       bitcoin: bitcoin
