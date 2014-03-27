@@ -6,7 +6,7 @@
 #on the "Version history" page and RSS file.
 
 #This plugin also set site.DOWNLOAD_VERSION to the latest
-#available version of Bitcoin-QT, which is used everywhere
+#available version of Bitcoin Core, which is used everywhere
 #in the download page.
 
 #Alias redirection pages are generated in /releases to avoid

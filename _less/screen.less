@@ -1070,7 +1070,7 @@ h2 .rssicon{
 }
 .downloadbox div div{
 	display:block;
-	width:180px;
+	width:190px;
 	margin:10px 0;
 	text-align:left;
 }
@@ -1100,6 +1100,9 @@ h2 .rssicon{
 }
 .eventtable div div{
 	display:inline-block;
+	vertical-align:middle;
+	text-align:left;
+	line-height:1.5em;
 	padding:0;
 	border-top:0;
 	padding-right:20px;
@@ -1288,6 +1291,24 @@ h2 .rssicon{
 }
 .press-news>div>a:first-child+a+a+p{
 	font-size:80%;
+}
+
+/*Styles specific to printing*/
+
+@media print{
+	.head{
+		display:none;
+	}
+	.footer{
+		display:none;
+	}
+	.foundation-banner{
+		display:none;
+	}
+	.content{
+		padding:0;
+		border:0;
+	}
 }
 
 /*Styles specific to mobiles*/

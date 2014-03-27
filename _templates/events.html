@@ -14,8 +14,9 @@ id: events
 <div id="eventmap" class="eventmap"></div>
 <script>
 var zoom=2;
-if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))zoom=0;
-var map = L.map('eventmap').setView([20.00, 10.00], zoom);
+var minzoom=1;
+if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))var zoom=minzoom=0;
+var map = L.map('eventmap',{ 'zoom': zoom, 'minZoom': minzoom, 'center': [20.00, 10.00]});
 L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution: 'Data &copy; by <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.',
 	maxZoom: 18
@@ -34,7 +35,7 @@ map.addLayer(markers);
 </script>
 
 {% case page.lang %}
-{% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% when 'ar' or 'bg' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
 {% else %}
 <h2>{% translate upcoming %}</h2>
 {% endcase %}

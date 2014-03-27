@@ -139,9 +139,9 @@ fa:
     walletmobitxt: "کیف پول های همراه این امکان را به شما می دهد که بیت کوین را در جیب خود همراه داشته باشید. شما میتوانید کوین های خود را به راحتی مبادله کنید و در فروشگاههای فیزیکی توسط اسکن یک کد QR یا با استفاده از NFC \" برای پرداخت فشار دهید\"  پرداخت کنید. "
     walletweb: "کیف پول های تحت وب"
     walletwebtxt: "کیف پول های تحت وب به شما اجازه می دهند که در هر مکانی با کمترین تلاش برای حفاظت از کیف پول خود از بیت کوین استفاده کنید. در هر صورت، شما باید سرویس کیف پول تحت وب خود را با مراقبت انتخاب کنید چون آن ها حافظ بیت کوین شما هستند."
-    walletbitcoinqt: "Bitcoin-Qt کلاینت اصلی بیت کوین است و ستون فقرات شبکه را می سازد. بالاترین سطح امنیت، حریم شخصی و پایداری را ارائه می دهد. هرچند ویژگی های کمتری دارد و مقدار زیادی فضا و حافظه اشغال می کند."
+    walletbitcoinqt: "Bitcoin Core کلاینت اصلی بیت کوین است و ستون فقرات شبکه را می سازد. بالاترین سطح امنیت، حریم شخصی و پایداری را ارائه می دهد. هرچند ویژگی های کمتری دارد و مقدار زیادی فضا و حافظه اشغال می کند."
     walletmultibit: "MultiBit یک کلاینت کم حجم است که روی استفاده سریع و آسان تمرکز دارد. با شبکه همگام می شود و در کمتر از چند دقیقه آماده استفاده است.  MultiBit همچنین از بسیاری از زبان ها از جمله پارسی پشتیبانی می کند. در نتیجه انتخاب خوبی برای کاربران غیر فنی است."
-    walletarmory: "Armory یک کلاینت پیشرفته بیت کوین است که روی Bitcoin-Qt اجرا می شود. ویژگی های آن را برای کاربران حرفه ای بیت کوین توسعه می دهد. ویژگی های پشتیبان گیری و رمزگذاری بسیاری را ارائه می دهد و اجازه می دهد روی کامپیوترهای Offline، یک Cold-Storage یا ذخیره سازی سرد امن انجام شود."
+    walletarmory: "Armory یک کلاینت پیشرفته بیت کوین است که روی Bitcoin Core اجرا می شود. ویژگی های آن را برای کاربران حرفه ای بیت کوین توسعه می دهد. ویژگی های پشتیبان گیری و رمزگذاری بسیاری را ارائه می دهد و اجازه می دهد روی کامپیوترهای Offline، یک Cold-Storage یا ذخیره سازی سرد امن انجام شود."
     walletelectrum: "Electrum روی سرعت و ساده سازی همراه با استفاده کمتر از منابع تمرکز دارد. از سرور های راه دور استفاده می کند تا به بیشتر قسمت های پیچیده سیستم بیت کوین رسیدگی کند و به شما اجازه می دهد تا کیف پول خود را از راه یک عبارت محرمانه بازیابی کنید."
     walletbitcoinwallet: "Bitcoin Wallet یک کلاینت کم حجم تلفن همراه برای اندروید وسیستم عامل BlackBerry است. این کلاینت نیازی به همراه داشتن سرویس Online برای کار کردن ندارد.  با اسکن کد QR و NFC سازگار است."
     walletblockchaininfomob: "Blockchain.info یک کیف پول هیبریدی تحت وب برای موبایل است. همچنین نسخه ای برای iPhone در حالت محدود متناسب با سیاست های اپل در دسترس است. این شامل بسیاری از ویژگی های اطلاعات زنجیره بلاک مانند پشتیبان گیری کیف پول تحت وب است."
@@ -166,13 +166,13 @@ fa:
     involve: "وارد بحث شوید"
     involvetxt1: "توسعه بیت کوین به صورت متن-باز است و هر توسعه دهنده ای می تواند به پروژه کمک کند. هر آنچه که شما لازم دارید در <a href=\"https://github.com/bitcoin/bitcoin\">انبار Github</a> وجود دارد. لطفا از خواندن و دنبال کردن فرایند توسعه که در README توضیح داده شده است، مطمئن شوید تا کدی با کیفیت ارائه دهید و تمام دستورالعمل ها را رعایت کرده باشید."
     involvetxt2: "بحث های توسعه در github و لیست نامه ای <a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">توسعه-بیت-کوین</a> در sourceforge انجام می پذیرد. بحث های نیمه رسمی توسعه در irc.freenode.net #bitcoin-dev (&rarr;<a href=\"#\" onclick=\"freenodeShow(event);\" />web interface</a>; <a href=\"http://bitcoinstats.com\">logs</a>) انجام می شود."
-    contributors: "همکاران Bitcoin-Qt"
+    contributors: "همکاران Bitcoin Core"
     contributorsorder: "(مرتب شده بر اساس تعداد متعهدین)"
   download:
     title: "دانلود - بیت کوین"
-    pagetitle: "دانلود Bitcoin-Qt"
+    pagetitle: "دانلود Bitcoin Core"
     latestversion: "آخرین نسخه :"
-    download: "دانلود Bitcoin-Qt"
+    download: "دانلود Bitcoin Core"
     downloadwinzip: "دانلود برای ویندوز (zip)"
     downloadwinexe: "دانلود برای ویندوز (exe)"
     downloadubu: "دانلود برای اوبونتو (PPA)"
@@ -180,8 +180,8 @@ fa:
     downloadmac: "دانلود برای Mac OS X"
     downloadsource: "کد منبع"
     versionhistory: "نمایش تاریخچه ی نسخه"
-    notelicense: "Bitcoin-Qt یک پروژه ی <a href=\"http://www.fsf.org/about/what-is-free-software\">متن باز رایگان</a> جامعه-محور است که تحت <a href=\"http://opensource.org/licenses/mit-license.php\"> گواهی نامه ی  MIT</a> منتشر شده است."
-    notesync: "<b>توجه</b>: همگام سازی اولیه ی Bitcoin-Qt می تواند برای کامل شدن یک روز به طول انجامد. شما باید مطمئن شوید که پهنای باند و حافظه کافی برای کل <a href=\"http://blockchain.info/charts/blocks-size\"> سایز blockchain</a>  دارید."
+    notelicense: "Bitcoin Core یک پروژه ی <a href=\"http://www.fsf.org/about/what-is-free-software\">متن باز رایگان</a> جامعه-محور است که تحت <a href=\"http://opensource.org/licenses/mit-license.php\"> گواهی نامه ی  MIT</a> منتشر شده است."
+    notesync: "<b>توجه</b>: همگام سازی اولیه ی Bitcoin Core می تواند برای کامل شدن یک روز به طول انجامد. شما باید مطمئن شوید که پهنای باند و حافظه کافی برای کل <a href=\"http://blockchain.info/charts/blocks-size\"> سایز blockchain</a>  دارید."
   how-it-works:
     title: "بیت کوین چگونه کار می کند؟ - بیت کوین"
     pagetitle: "بیت کوین چگونه کار می کند؟"
@@ -356,34 +356,33 @@ fa:
     menu-you-need-to-know: "آن چه باید بدانید"
     footer: "منتشر شده تحت <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT گواهینامه"
   url:
-    faq: درباره
-    bitcoin-for-developers: بیت-کوین-برای-توسعه-دهندگان
+    bitcoin-for-developers: bitcoin-for-developers
+    bitcoin-for-individuals: bitcoin-for-individuals
+    bitcoin-for-businesses: bitcoin-for-businesses
+    choose-your-wallet: choose-your-wallet
+    community: community
+    development: development
+    download: download
+    faq: faq
+    how-it-works: how-it-works
     innovation: innovation
-    bitcoin-for-individuals: بیت-کوین-برای-افراد
-    bitcoin-for-businesses: بیت-کوین-برای-کسب-و-کار
-    bitcoin-for-press: 
-    choose-your-wallet: انتخاب-کیف-پول
-    community: انجمن
-    development: توسعه
-    download: دانلود
-    how-it-works: چگونه-کار-می-کند
-    resources: منابع
-    secure-your-wallet: کیف-پولتان-را-ایمن-کنید
-    support-bitcoin: حمایت-از-بیت-کوین
-    vocabulary: واژگان
-    you-need-to-know: آن-چه-باید-بدانید
+    resources: resources
+    secure-your-wallet: secure-your-wallet
+    support-bitcoin: support-bitcoin
+    vocabulary: vocabulary
+    you-need-to-know: you-need-to-know
   anchor:
     vocabulary:
-      address: ادرس
-      blockchain: زنجیره-بلاک
-      block: بلاک
+      address: address
+      blockchain: block-chain
+      block: block
       btc: btc
-      confirmation: تایید
-      cryptography: رمزنگاری
-      doublespend: پرداخت-تکراری
-      hashrate: نرخ-هش
-      mining: استخراج
+      confirmation: confirmation
+      cryptography: cryptography
+      doublespend: double-spend
+      hashrate: hash-rate
+      mining: mining
       p2p: p2p
-      privatekey: کلید-خصوصی
-      signature: امضا
-      wallet: کیف-پول
+      privatekey: private-key
+      signature: signature
+      wallet: wallet

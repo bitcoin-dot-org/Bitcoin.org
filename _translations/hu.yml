@@ -16,7 +16,7 @@ hu:
     missiontxt6: "A Bitcoin világszintű hozzáférhetőségének nemzetköziesítésen keresztül történő biztosítása."
     missiontxt7: "Mindenkor pártatlan Bitcoin-információforrásként fellépni."
     help: "Segítsen nekünk"
-    helptxt: "A bitcoin.org-on tapasztalt bármilyen probléma jelentése vagy fejlesztési támogatás a <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a> weboldalán angol nyelvű, ún. issue vagy pull request segítségével kezdeményezhető. Pull request készítésekor, kérjük, szánjon megfelelő időt változtatásai megtárgyalására és munkája átalakítására. Segíthet fordítani a <a href=\"https://www.transifex.com/projects/p/bitcoinorg/\">Transifex</a> valamely csapatához csatlakozva. Kérjük, ne kérje saját vállalkozásának vagy weboldalának reklámozását, kivéve különleges esetekben - például konferenciák alkalmával."
+    helptxt: "A bitcoin.org-on tapasztalt bármilyen probléma jelentése vagy fejlesztési támogatás a <a href=\"https://github.com/bitcoin/bitcoin.org#how-to-participate\">GitHub</a> weboldalán angol nyelvű, ún. issue vagy pull request segítségével kezdeményezhető. Pull request készítésekor, kérjük, szánjon megfelelő időt változtatásai megtárgyalására és munkája átalakítására. Segíthet fordítani a <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Transifex</a> valamely csapatához csatlakozva. Kérjük, ne kérje saját vállalkozásának vagy weboldalának reklámozását, kivéve különleges esetekben - például konferenciák alkalmával."
   bitcoin-for-businesses:
     title: "Bitcoin vállalkozásoknak - Bitcoin"
     pagetitle: "Bitcoin vállalkozásoknak"
@@ -110,7 +110,7 @@ hu:
     walletmobitxt: "A mobilpénztárcák lehetővé teszik, hogy a Bitcoint a zsebében hordhassa. Egyszerűen válthatja fel a bitcoinokat, és fizethet az üzletekben QR-kód beolvasásával vagy NFC technológiát használó, \"tap to pay\" fizetési móddal."
     walletweb: "Webes pénztárcák"
     walletwebtxt: "A webes pénztárcák lehetőséget biztosítanak a Bitcoin böngészőből vagy mobiltelefonról történő használatára. Ugyanakkor gondosan kell megválasztania webes pénztárcáját, tekintve, hogy bitcoinjai gazdájává fog válni."
-    walletbitcoinqt: "A Bitcoin-Qt egy teljes Bitcoin-kliens, és a hálózat gerincét képzi. A legmagasabb szintű biztonságot, titkosságot és stabilitást kínálja. Azonban kevesebb szolgáltatást nyújt, illetve sok helyet és memóriát használ."
+    walletbitcoinqt: "A Bitcoin Core egy teljes Bitcoin-kliens, és a hálózat gerincét képzi. A legmagasabb szintű biztonságot, titkosságot és stabilitást kínálja. Azonban kevesebb szolgáltatást nyújt, illetve sok helyet és memóriát használ."
     walletmultibit: "A MultiBit egy pehelykönnyű kliens, amely a gyors működésre és az egyszerű használatra koncentrál. Szinkronizálódik a hálózattal, és percek alatt használatra kész. A MultiBit ugyanakkor számos nyelvet támogat. Jó választás számítástechnikai háttérrel nem rendelkező felhasználók számára."
     wallethive: "A Hive egy gyors, integrált, felhasználóbarát, Mac OS X-re letölthető Bitcoin-pénztárca. A Hive-ot a széles körű használatra fókuszálva számos nyelvre lefordították, valamint rendelkezik alkalmazásokkal, ezzel megkönnyítve a kedvenc Bitcoin-szolgáltatásokkal és kereskedőkkel való kapcsolattartást."
     walletarmory: "Az Armory egy haladó ismereteket igénylő Bitcoin-kliens, amely szolgáltatásaival a Bitcoin kiemelt felhasználóit célozza. Számos biztonsági mentési, valamint titkosítási szolgáltatást kínál, és lehetőséget teremt a hidegtárolások interneteléréssel nem rendelkező számítógépen való biztonságos elhelyezésére."
@@ -145,18 +145,18 @@ hu:
     involvetxt2: "A fejlesztéssel kapcsolatos megbeszélések a GitHub weboldalán és a sourceforge <a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">bitcoin-development</a>  levelezőlistáján történnek. A fejlesztéssel kapcsolatos, kevésbé formális megbeszélések az irc.freenode.net #bitcoin-dev hashtag alatt kapnak helyet (<a href=\"#\" onclick=\"freenodeShow(event);\">webes interfész</a>, <a href=\"http://bitcoinstats.com\">naplók</a>)."
     more: "Még több ingyenes szoftverprojekt"
     moremore: "Tovább..."
-    contributors: "Bitcoin-Qt közreműködők"
+    contributors: "Bitcoin Core közreműködők"
     contributorsorder: "(A hozzájárulások menyiségének sorrendjében:)"
   download:
     title: "Letöltés - Bitcoin"
-    pagetitle: "Töltse le a Bitcoin-Qt-t"
+    pagetitle: "Töltse le a Bitcoin Core-t"
     latestversion: "Legújabb verzió:"
-    download: "Töltse le a Bitcoin-Qt-t"
+    download: "Töltse le a Bitcoin Core-t"
     downloados: "Vagy válassza ki operációs rendszerét"
     downloadsig: "Kibocsátási aláírások megerősítése"
     versionhistory: "Korábbi verziók mutatása"
-    notelicense: "A Bitcoin-Qt egy közösség által vezérelt, az <a href=\"http://opensource.org/licenses/mit-license.php\">MIT licence</a> alatt kibocsátott, <a href=\"http://www.fsf.org/about/what-is-free-software\">ingyenes szoftverprojekt</a>."
-    notesync: "A Bitcoin-Qt kezdeti szinkronizációja nagyon hosszú időt vehet igénybe. Győződjön meg róla, hogy elegendő sávszélessége és tárhelye van a teljes <a href=\"http://blockchain.info/charts/blocks-size\">blokklánc-mérethez</a>. Amennyiben tudja, hogy hogyan lehet torrentfájlt letölteni, felgyorsíthatja a folyamatot a szoftver elindítása előtt, <a href=\"http://sourceforge.net/projects/bitcoin/files/Bitcoin/blockchain/bootstrap.dat.torrent/download\">bootstrap.dat</a> (a blokklánc egy korábbi másolata) Bitcoin-Qt-adatkönyvtárhoz való hozzáadásával."
+    notelicense: "A Bitcoin Core egy közösség által vezérelt, az <a href=\"http://opensource.org/licenses/mit-license.php\">MIT licence</a> alatt kibocsátott, <a href=\"http://www.fsf.org/about/what-is-free-software\">ingyenes szoftverprojekt</a>."
+    notesync: "A Bitcoin Core kezdeti szinkronizációja nagyon hosszú időt vehet igénybe. Győződjön meg róla, hogy elegendő sávszélessége és tárhelye van a teljes <a href=\"http://blockchain.info/charts/blocks-size\">blokklánc-mérethez</a>. Amennyiben tudja, hogy hogyan lehet torrentfájlt letölteni, felgyorsíthatja a folyamatot a szoftver elindítása előtt, <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (a blokklánc egy korábbi másolata) Bitcoin Core-adatkönyvtárhoz való hozzáadásával."
     patient: "Legyen türelemmel"
   events:
     title: "Konferenciák és egyéb rendezvények - Bitcoin"
@@ -273,7 +273,7 @@ hu:
     poweredoff: "Mi történik akkor, ha egy bitcoin fogadása közben megszűnik a számítógépem áramellátása?"
     poweredofftxt1: "Ez nem jelent problémát. A bitcoinok a pénztárca-alkalmazás legközelebbi elindításakor fognak megjelenni. A bitcoinokat igazából nem a számítógépén található szoftver fogadja, hanem egy nyilvános főkönyvön jelennek meg, amely a hálózaton található minden készülékkel meg van osztva. Amennyiben akkor küld bitcoinokat, amikor a pénztárca-alkalmazása ki van kapcsolva, akkor az alkalmazás legközelebbi elindításakor letölti a blokkokat, és frissíti az új tranzakciókat, így a bitcoinok végső soron úgy jelennek meg, mintha valós időben fogadta volna őket. A pénztárcájára csak akkor lesz szüksége, ha bitcoinjait el szeretné költeni."
     sync: "Mit jelent a \"szinkronizálás\", és miért tart ilyen hosszú ideig?"
-    synctxt1: "Hosszú szinkronizációt csak a teljes csomóponti kliensek - mint például a Bitcoin-Qt - igényelnek. Technikailag a szinkronizáció az összes korábbi Bitcoin-tranzakció hálózatról való letöltése és megerősítése. Néhány Bitcoin-kliensnek a Bitcoin-pénztárca elkölthető egyenlegének kiszámításához, valamint új tranzakciók létrehozásához ismernie kell az összes korábbi tranzakciót. Ez a lépés erőforrás-igényes lehet, és a <a href=\"http://blockchain.info/charts/blocks-size\">teljes blokklánc</a> elhelyezése elegendő sávszélességet és tárhelyet igényel. A Bitcoin biztonságának fenntartásához megfelelő számú személynek szükséges teljes csomóponti klienst használnia, mivel ők végzik a tranzakciók érvényesítését és továbbítását."
+    synctxt1: "Hosszú szinkronizációt csak a teljes csomóponti kliensek - mint például a Bitcoin Core - igényelnek. Technikailag a szinkronizáció az összes korábbi Bitcoin-tranzakció hálózatról való letöltése és megerősítése. Néhány Bitcoin-kliensnek a Bitcoin-pénztárca elkölthető egyenlegének kiszámításához, valamint új tranzakciók létrehozásához ismernie kell az összes korábbi tranzakciót. Ez a lépés erőforrás-igényes lehet, és a <a href=\"http://blockchain.info/charts/blocks-size\">teljes blokklánc</a> elhelyezése elegendő sávszélességet és tárhelyet igényel. A Bitcoin biztonságának fenntartásához megfelelő számú személynek szükséges teljes csomóponti klienst használnia, mivel ők végzik a tranzakciók érvényesítését és továbbítását."
     mining: "Bányászat"
     whatismining: "Mi az a Bitcoin-bányászat?"
     whatisminingtxt1: "A bányászat a számítógépek számítási kapacitásának tranzakció-feldolgozásra való használatának, a hálózat biztonsága megteremtésének, valamint a rendszer minden tagja szinkronban tartásának folyamata. Megközelíthető egyfajta Bitcoin-adatközpontként, kivéve, hogy úgy tervezték, hogy a világ minden táján dolgozó bányászok révén teljesen decentralizált legyen, és hogy senki se irányíthassa a rendszert. Erre a folyamatra \"bányászaként\" szokás utalni, az aranybányászat analógiájaként, mivel úgyszintén egy ideiglenes, ebben az esetben új bitcoinok kibocsátására szolgáló mechanizmusról van szó. Ugyanakkor - ellentétben az aranybányászattal - a Bitcoin-bányászat a fizetési hálózat biztonságának megteremtéséért végzett hasznos szolgálatokért cserébe jutalmat biztosít. A bányászat egészen az utolsó bitcoin kibocsátásáig szükséges tevékenység lesz."
@@ -408,7 +408,7 @@ hu:
     mixing: "A keverőszolgáltatások korlátai"
     mixingtxt: "Néhány, keverőszolgáltatásnak nevezett online szolgáltatás a nyomonkövethetőség felhasználók közötti összekeverését ajánlja független Bitcoin-címek használatával, azonos összeget fogadva és küldve e címekre. Fontos megjegyezni, hogy az effajta szolgáltatások legalitása változó, valamint eltérő szabályok alá vonják a különböző törvényalkotók. Az effajta szolgáltatások ezenkívül megkövetelik, hogy megbízzon az őket használó magánszemélyekben azzal kapcsolatban, hogy ne veszítsék vagy lopják el vagyonát, illetve ne naplózzák kérelmeit. Bár a keverőszolgáltatások megszakíthatják a nyomonkövethetőséget kisebb összegek esetén, nagyon összegek esetén ugyanez sokkal nehezebbé válik."
     future: "Jövőbeli fejlesztések"
-    futuretxt: "Számos fejlesztés várható a jövőben a személyes adatok védelemének javítása érdekében. Például a közösség jelenleg is erőfeszítéseket tesz a kifizetési üzenetek API-jában azért, hogy egy kifizetés során több cím \"szennyezése\" elkerülhetővé váljon. A Bitcoin-Qt-változáscímeket az idő előrehaladtával valószínűleg más pénztárcákba is implementálni lehet majd. A grafikus felhasználói felületek fejleszthetőek lesznek egy felhasználóbarát kifizetési kérelmi szolgáltatás megvalósítására, és a címek újrafelhasználásának gátlására. További munkák és kutatások folynak további potenciális, kiterjesztett, személyes adatok védelmével kapcsolatos szolgáltatások - mint például véletlenszerűen kiválasztott felhasználók tranzakcióinak összekapcsolása - megalkotására."
+    futuretxt: "Számos fejlesztés várható a jövőben a személyes adatok védelemének javítása érdekében. Például a közösség jelenleg is erőfeszítéseket tesz a kifizetési üzenetek API-jában azért, hogy egy kifizetés során több cím \"szennyezése\" elkerülhetővé váljon. A Bitcoin Core-változáscímeket az idő előrehaladtával valószínűleg más pénztárcákba is implementálni lehet majd. A grafikus felhasználói felületek fejleszthetőek lesznek egy felhasználóbarát kifizetési kérelmi szolgáltatás megvalósítására, és a címek újrafelhasználásának gátlására. További munkák és kutatások folynak további potenciális, kiterjesztett, személyes adatok védelmével kapcsolatos szolgáltatások - mint például véletlenszerűen kiválasztott felhasználók tranzakcióinak összekapcsolása - megalkotására."
   resources:
     title: "Információs anyagok - Bitcoin"
     pagetitle: "Bitcoin információs anyagok"
@@ -550,7 +550,7 @@ hu:
     menu-events: Rendezvények
     menu-faq: GYIK
     menu-getting-started: "Vágjon bele"
-    menu-how-it-works: "Hogyan működik?"
+    menu-how-it-works: "Hogyan működik"
     menu-innovation: Innováció
     menu-intro: Bevezetés
     menu-legal: "Jogi vonatkozások"
