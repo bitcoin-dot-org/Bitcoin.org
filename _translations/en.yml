@@ -121,6 +121,7 @@ en:
     walletblockchaininfo: "Blockchain.info is a user-friendly hybrid wallet. It stores an encrypted version of your wallet online but decryption happens in your browser. For security reasons, you should always use the browser extension and email backups."
     walletcoinbase: "Coinbase is a web wallet service that aims to be easy to use. It also provides an Android web wallet app, merchant tools and integration with US bank accounts to buy and sell bitcoins."
     walletcoinkite: "Coinkite is a web wallet &amp; debit card service that aims to be easy to use. It also works on mobile browsers, has merchant tools, point-of-sale payment terminals. It is a hybrid wallet and full reserve vault."
+    walletstrongcoin: "Strongcoin.com is an easy to use hybrid wallet. It stores an encrypted version of private keys online and decryption happens in your browser. For security reasons, keep your password safe and use the paper wallet backup feature."
     walletdownload: "<a href=\"#download#\">Download</a>"
     walletvisit: "Visit website"
     walletwebwarning: "Be careful"
