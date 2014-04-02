@@ -94,16 +94,11 @@ module Jekyll
       Dir.foreach('_events') do |file|
         # Skip events with malformed name
         next if file == '.' or file == '..'
-        date = file.split('-')
-        next if date.length < 4
-        next if !/^[0-9]{4}$/.match(date[0])
-        next if !/^[0-9]{2}$/.match(date[1])
-        next if !/^[0-9]{2}$/.match(date[2])
-        # Skip event if not in the future
-        next if Time.new.to_i > Time.new(date[0].to_i,date[1].to_i,date[2].to_i).to_i
         # Assign variables
         data = YAML.load_file('_events/'+file)
-        data['date'] = date[0] + '-' + date[1] + '-' + date[2]
+        # Skip event if it has started more than five days ago
+	date = data['date'].to_s.split('-')
+        next if Time.new.to_i > (Time.new(date[0].to_i,date[1].to_i,date[2].to_i).to_i + 432000)
         # Get geolocalisation data from Google Maps
         begin
           geoloc = JSON.parse(open("https://maps.googleapis.com/maps/api/geocode/json?address=" + CGI::escape(data['address'] + ', ' + data['city'] + ', ' + data['country']) + "&sensor=false","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)

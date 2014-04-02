@@ -1,4 +1,5 @@
 ---
+date: 2014-03-27
 title: "Bitcoin and Cryptocurrency Research Conference"
 venue: "Friend Center Convocation Room, Princeton University"
 address: "303 Sherrerd Hall"

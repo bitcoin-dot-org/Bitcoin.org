@@ -104,6 +104,7 @@ Events should be placed in `_events/YYYY-MM-DD-SHORTTITLE.md` and adhere to this
 
 ```
 ---
+date: 2014-02-21
 title: "2014 Texas Bitcoin Conference"
 venue: "Circuit of the Americas™ - Technology and Conference Center"
 address: "9201 Circuit of the Americas Blvd"

@@ -1,4 +1,5 @@
 ---
+date: 2014-03-21
 title: "Amsterdam MoneyLab: Coining Alternatives"
 venue: "Lab 111"
 address: "111 Arie Biemondstraat"

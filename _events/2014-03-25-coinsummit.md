@@ -1,4 +1,5 @@
 ---
+date: 2014-03-25
 title: "CoinSummit"
 venue: "Yerba Buena Center for the Arts"
 address: "701 Mission Street"

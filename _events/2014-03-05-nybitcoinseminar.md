@@ -1,4 +1,5 @@
 ---
+date: 2014-03-05
 title: "Bitcoin and Virtual Money"
 venue: "NYSSA Conference Center"
 address: "1540 Broadway"

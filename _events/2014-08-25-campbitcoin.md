@@ -1,4 +1,5 @@
 ---
+date: 2014-08-25
 title: "Camp Bitcoin"
 venue: "The Burning Man camp"
 address: ""

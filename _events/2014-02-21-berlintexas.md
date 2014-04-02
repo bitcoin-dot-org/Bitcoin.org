@@ -1,4 +1,5 @@
 ---
+date: 2014-02-21
 title: "Berlin, Texas: Bitcoin hackathon"
 venue: "c-base Raumstation"
 address: "Rungestraße 20, 10179"
