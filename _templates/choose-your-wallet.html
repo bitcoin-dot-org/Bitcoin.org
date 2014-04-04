@@ -44,32 +44,6 @@ id: choose-your-wallet
 <a href="#" onclick="return false;"><img src="/img/clients/lo-mycelium.png" alt="mycelium wallet" /></a>
 </div>
 {% endcase %}
-{% case page.lang %}
-{% when 'ar' or 'fa' or 'pl' or 'zh_TW' %}
-<div data-id="blockchainmobile">
-  <div class="walletwarning">
-    <div>
-      <h2>{% translate walletwebwarning %}</h2>
-      <span></span>
-      <p>{% translate walletwebwarningtxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
-</div>
-{% else %}
-<div data-id="blockchainmobile">
-  <div class="walletinfo">
-    <div>
-      <h2>{% translate wallettrustinfo %}</h2>
-      <span></span>
-      <p>{% translate wallettrustinfotxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
-</div>
-{% endcase %}
 
 <h2><img class="titleicon" src="/img/ico_desktop.svg" alt="Desktop wallets" />{% translate walletdesk %}</h2>
 <p>{% translate walletdesktxt %}</p>
@@ -331,36 +305,6 @@ id: choose-your-wallet
 <a href="#" onclick="return false;"><img src="/img/clients/lo-mycelium.png" alt="mycelium wallet" /></a>
 </div>
 {% endcase %}
-{% case page.lang %}
-{% when 'ar' or 'fa' or 'pl' or 'zh_TW' %}
-<div data-id="blockchainmobile">
-  <div class="walletwarning">
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>{% translate walletwebwarning %}</h2>
-      <span></span>
-      <p class="hyphenate">{% translate walletwebwarningtxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
-</div>
-{% else %}
-<div data-id="blockchainmobile">
-  <div class="walletinfo">
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>{% translate wallettrustinfo %}</h2>
-      <span></span>
-      <p class="hyphenate">{% translate wallettrustinfotxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
-</div>
-{% endcase %}
 </div>
 
 <div class="previewrow">
@@ -464,19 +408,6 @@ id: choose-your-wallet
 <a href="#" onclick="return false;"><img src="/img/clients/lo-mycelium.png" alt="mycelium wallet" />Mycelium<br>Wallet</a>
 </div>
 {% endcase %}
-<div id="blockchainmobile">
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>Blockchain.info</h2>
-      <span><img src="/img/os/android.png" alt="Android" title="Android" /></span>
-      <p class="hyphenate">{% translate walletblockchaininfomob %}</p>
-      <p><a href="https://blockchain.info/wallet">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain" />Blockchain<br>.info</a>
-</div>
 <div id="blockchaindesktop">
   <div>
     <div class="b1"></div>
