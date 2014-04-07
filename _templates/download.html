@@ -21,7 +21,12 @@ id: download
     </div>
     <p>
       <a href="/bin/{{site.DOWNLOAD_VERSION}}/SHA256SUMS.asc">{% case page.lang %}{% when 'ar' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_CN' or 'zh_TW' %}{% translate downloadsig download en %}{% else %}{% translate downloadsig %}{% endcase %}</a><br>
-      <a href="https://github.com/bitcoin/bitcoin">Get the source code</a><br>
+      {% case page.lang %}
+      {% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'hu' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+      <a href="https://github.com/bitcoin/bitcoin">{% translate sourcecode download en %}</a><br>
+      {% else %}
+      <a href="https://github.com/bitcoin/bitcoin">{% translate sourcecode %}</a><br>
+      {% endcase %}
       <a href="/en/version-history">{% translate versionhistory %}</a>
     </p>
   </div>
