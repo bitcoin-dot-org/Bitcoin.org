@@ -14,7 +14,7 @@ else
   lang = ARGV[0]
 end
 
-lang = lang.gsub(/[^a-z]/,'')
+lang = lang.gsub(/[^a-zA-Z_]/,'')
 
 if !File.exist?('_translations/' + lang + '.yml')
   print "Wrong language code. \n"
