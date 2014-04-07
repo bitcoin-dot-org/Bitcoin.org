@@ -36,7 +36,7 @@ dirs.each do |dir|
     contents.gsub!(Regexp.new("{% case page.lang %}(((?!{% when ).)*?){% endcase %}", Regexp::MULTILINE),'\1')
     # Drop language in statements applied to many languages ( e.g. {% when 'ar' or 'fr' .. %} )
     contents.gsub!(Regexp.new("{% when '" + lang + "' or (.*?) %}"),'{% when \1 %}')
-    contents.gsub!(Regexp.new("{% when (.*?) or '" + lang + "' (.*?) %}"),'{% when \1 \2 %}')
+    contents.gsub!(Regexp.new("{% when (.*?) or '" + lang + "' (.*?)%}"),'{% when \1 \2%}')
     File.open(dir + '/' + file, 'w') do |file|
       file.write(contents)
     end
