@@ -247,8 +247,9 @@ body{
 	display:expression((this.parentNode.childNodes[0]==this||this.parentNode.childNodes[1]==this||this.parentNode.childNodes[2]==this||this.parentNode.childNodes[3]==this)?'list-item':'');
 }
 
-.floatimg{
+.pleftfloat span{
 	position:relative;
+	float:left;
 }
 
 .previewrow h2{
