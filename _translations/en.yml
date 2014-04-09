@@ -121,6 +121,7 @@ en:
     walletcoinbase: "Coinbase is a web wallet service that aims to be easy to use. It also provides an Android web wallet app, merchant tools and integration with US bank accounts to buy and sell bitcoins."
     walletcoinkite: "Coinkite is a web wallet &amp; debit card service that aims to be easy to use. It also works on mobile browsers, has merchant tools, point-of-sale payment terminals. It is a hybrid wallet and full reserve vault."
     walletbitgo: "BitGo is a multi-signature wallet offering the highest levels of security. Every transaction requires two signatures, protecting your bitcoins from malware and server attacks. Private keys are held by the user such that BitGo cannot access the bitcoins. It is a good choice for non technical users."
+    walletgreenaddress: "GreenAddress is a user-friendly multi-signature wallet with improved security and privacy. At no time your keys are server side, not even encrypted. For security reasons, you should always use 2FA and the browser extension or Android App."
     walletdownload: "<a href=\"#download#\">Download</a>"
     walletvisit: "Visit website"
     walletwebwarning: "Be careful"

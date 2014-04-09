@@ -152,6 +152,21 @@ id: choose-your-wallet
   <a href="#" onclick="return false;"><img src="/img/clients/lo-bitgo.png" alt="coinkite" /></a>
 </div>
 {% endcase %}
+{% case page.lang %}
+{% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'hu' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+<div data-id="greenaddressweb">
+  <div class="walletinfo">
+    <div>
+      <h2>{% translate wallettrustinfo %}</h2>
+      <span></span>
+      <p>{% translate wallettrustinfotxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-greenaddress.png" alt="greenaddress" /></a>
+</div>
+{% endcase %}
 <div data-id="coinbase">
   <div class="walletwarning">
     <div>
@@ -355,6 +370,23 @@ id: choose-your-wallet
   <a href="#" onclick="return false;"><img src="/img/clients/lo-bitgo.png" alt="bitgo" /></a>
 </div>
 {% endcase %}
+{% case page.lang %}
+{% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'hu' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+<div data-id="greenaddressweb">
+  <div class="walletinfo">
+    <div class="b1"></div>
+    <div class="b2">
+      <h2>{% translate wallettrustinfo %}</h2>
+      <span></span>
+      <p class="hyphenate">{% translate wallettrustinfotxt %}</p>
+      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+    </div>
+    <div class="b3"></div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-greenaddress.png" alt="greenaddress" /></a>
+</div>
+{% endcase %}
 <div data-id="coinbase">
   <div class="walletwarning">
     <div class="b1"></div>
@@ -459,6 +491,19 @@ id: choose-your-wallet
     <div class="b3"></div>
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-bitgo.png" alt="bitgo" />BitGo</a>
+</div>
+<div id="greenaddressweb">
+  <div>
+    <div class="b1"></div>
+    <div class="b2">
+      <h2>GreenAddress</h2>
+      <span></span>
+      <p class="hyphenate">{% translate walletgreenaddress %}</p>
+      <p><a href="https://greenaddress.it/">{% translate walletvisit %}</a></p>
+    </div>
+    <div class="b3"></div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-greenaddress.png" alt="greenaddress" />Green<br>Address</a>
 </div>
 </div>
 
