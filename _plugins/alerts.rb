@@ -37,6 +37,8 @@ module Jekyll
         end
         if self.data.has_key?('alias')
           site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['alias']+'.html', date)
+          #FIXME temporary workaround to redirect /heartbleed/ to the appropriate alert page.
+          site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['alias']+'/index.html', date)
         end
       end
     end
