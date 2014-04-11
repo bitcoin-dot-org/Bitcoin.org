@@ -1,0 +1,45 @@
+---
+title: "OpenSSL Heartbleed vulnerability"
+alias: "heartbleed"
+active: true
+banner: ""
+---
+
+<h2>What happened</h2>
+ 
+<p>The version of OpenSSL used by Bitcoin Core software version 0.9.0 and earlier
+contains a bug that can reveal memory to a remote attacker. See 
+<a href="http://heartbleed.com/">http://heartbleed.com/</a>
+for details.
+</p>
+ 
+<h2>What you should do</h2>
+ 
+<p>Immediately upgrade to Bitcoin Core version 0.9.1 which is linked against
+OpenSSL version 1.0.1g. 
+ 
+If you use the official binaries, you can verify the version of OpenSSL being
+used from the Bitcoin Core GUI's Debug window (accessed from the Help menu).
+If you compiled Bitcoin Core yourself or use the Ubuntu PPA, update your
+system's OpenSSL.
+ 
+Linux users should also upgrade their system's version of OpenSSL.
+</p>
+ 
+<h2>How serious is the risk</h2>
+ 
+<p>If you are using the Windows version of the Bitcoin Core GUI without a wallet
+passphrase, it is possible that your wallet could be compromised by clicking
+on a bitcoin: payment request link.
+ 
+If you are using bitcoind (on Linux, OSX, or Windows),
+have enabled the -rpcssl option, and allow RPC connections
+from the Internet, an attacker from a whitelisted (-allowip) IP address can
+very likely discover the rpcpassword and the last rpc request. It is possible
+(but unlikely) private keys could be sent to the attacker.
+</p>
+ 
+ 
+<div style="text-align:right">
+  <i>This notice last updated: Tue, 11 April 2014 11:00:00 -0500</i>
+</div>
