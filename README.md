@@ -121,7 +121,6 @@ Release notes should be placed in `_releases/YYYY-MM-DD-VERSION.md` and adhere t
 ```
 ---
 title: Bitcoin Core version 0.9.0 released
-src: http://sourceforge.net/p/bitcoin/mailman/message/32119564/
 ---
 
 Bitcoin Core v0.9.0 is now available for download at
@@ -131,7 +130,6 @@ Bitcoin Core v0.9.0 is now available for download at
 ```
 * `VERSION` is used to define the version and construct the URL. It should adhere to this format: `v0.3.24`.
 * `title: ...` will be used as the title
-* `src: ...` (optional) link to full annoucement
 
 ### Alerts
 

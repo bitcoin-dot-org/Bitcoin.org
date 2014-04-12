@@ -5,11 +5,6 @@ lang: en
 <link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin Core releases">
 <div class="versiontext">
   <h1>{{ page.title }}<br><small>{{ page.date | date:"%e %B %Y" }}</small></h1>
-  {% if page.src %}
-  <p>
-    <a href="{{ page.src }}">Full announcement (including signatures)</a>
-  </p>
-  {% endif %}
   {{ content }}
 </div>
 <a href="/en/version-history">Go back to the version history</a>
