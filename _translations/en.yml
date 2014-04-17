@@ -103,7 +103,7 @@ en:
     getstarteddesk: "<a href=\"https://multibit.org/\"><b>MultiBit</b></a> is an app you can download for Windows, Mac and Linux."
     getstartedmobi: "<a href=\"https://play.google.com/store/apps/details?id=de.schildbach.wallet\"><b>Bitcoin Wallet</b></a> for Android runs on your phone or tablet."
     bethenetwork: "Why you should be part of the Bitcoin network"
-    bethenetworktxt: "Running a <a href="/en/download"> full Bitcoin client </a> strengthens the Bitcoin network which is comprised of thousands of full nodes. Doing so uses resources and can take a day or longer to synchronize. But there are benefits like significantly increasing privacy, greater security by not trusting other nodes and contributing to the network’s strength by checking and relaying transactions."
+    bethenetworktxt: "Running a <a href=\"#download#\"><b>full Bitcoin client</b> </a> strengthens the Bitcoin network which is comprised of thousands of full nodes. Doing so uses storage and bandwidth resources and can take a day or longer to synchronize. But there are benefits like significantly increasing privacy, greater security by not trusting other nodes and contributing to the network’s strength by checking and relaying transactions."
     walletdesk: "Desktop wallets"
     walletdesktxt: "Desktop wallets are installed on your computer. They give you complete control over your wallet. You are responsible for protecting your money and doing backups."
     walletmobi: "Mobile wallets"
