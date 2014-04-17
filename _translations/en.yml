@@ -98,7 +98,7 @@ en:
   choose-your-wallet:
     title: "Choose your wallet - Bitcoin"
     pagetitle: "Choose your Bitcoin wallet"
-    summary: "Your Bitcoin wallet is what allows you to transact with other users. It gives you ownership of a Bitcoin balance so that you can send and receive bitcoins. Just like email, all wallets can interoperate with each other. Before you start with Bitcoin, be sure to <b><a href=\"#you-need-to-know#\">read what you need to know</a></b> first."
+    summary: "<p>Before you start be sure to read <a href="/en/you-need-to-know">what you need to know</a>. Bitcoin wallets generate and store private keys which enable you to transact bitcoins with others on the Bitcoin network. Just like people use different email clients but can still communicate so likewise people can use different Bitcoin wallet clients and still send and receive transactions with others. It is essential to <a href="/en/secure-your-wallet">secure your wallet</a> to keep private keys secret since they can be compromised during either generation or storage.</p>"
     getstarted: "Get started fast and easy"
     getstarteddesk: "<a href=\"https://multibit.org/\"><b>MultiBit</b></a> is an app you can download for Windows, Mac and Linux."
     getstartedmobi: "<a href=\"https://play.google.com/store/apps/details?id=de.schildbach.wallet\"><b>Bitcoin Wallet</b></a> for Android runs on your phone or tablet."
