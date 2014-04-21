@@ -10,7 +10,19 @@ module Jekyll
 
   class CategoryGenerator < Generator
     def fetch_contributors
-      contributors = JSON.parse(open("https://api.github.com/repos/bitcoin/bitcoin/contributors","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
+      page = 1
+      contributors = []
+      while page < 10 do
+        begin
+          ar = JSON.parse(open("https://api.github.com/repos/bitcoin/bitcoin/contributors?page=#{page}&per_page=100","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
+        rescue
+          print 'GitHub API Call Failed!'
+          break
+        end
+        break if (ar.length == 0)
+        contributors.push(*ar)
+        page += 1
+      end
 
       contributors.map do |x|
         x['name'] = x['login'] unless x.has_key?('name')
