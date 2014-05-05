@@ -47,7 +47,6 @@ a:active img{
 }
 blockquote{
 	margin-left:0;
-	margin-bottom:18px;
 	border-left:5px solid #eee;
 	padding-left:15px;
 }
@@ -55,17 +54,32 @@ pre{
 	background-color:#f5f5f5;
 	display:block;
 	padding:17px;
-	margin:0 0 18px;
-	line-height:18px;
-	font-size:12px;
+	line-height:1.5em;
+	font-size:75%;
 	border:1px solid #ccc;
-	white-space:pre-wrap;
-	word-wrap:break-word;
+	white-space:pre;
+	overflow-y:auto;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 	border-radius:3px;
 }
-ul{
+pre code{
+	font-size:100%;
+	padding:0;
+	border:0;
+	white-space:pre;
+}
+code{
+	padding:2px 4px;
+	background-color:#f5f5f5;
+	font-size:85%;
+	white-space:nowrap;
+	border:1px solid #ccc;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+ul,ol{
 	padding-left:20px;
 	margin-left:0;
 }
@@ -73,10 +87,11 @@ ul ul{
 	list-style-type:disc;
 }
 li{
-	padding:5px 0;
+	margin:10px 0;
 }
-li p{
-	margin:0;
+table td,table th{
+	padding:10px;
+	border:1px solid #ddd;
 }
 
 /*Styles for whole website*/
@@ -593,17 +608,17 @@ li p{
 	margin:0;
 }
 .index{
-	padding:20px;
+	padding:10px 20px;
 	border:2px dashed #4892b2;
 	display:inline-block;
 }
 .index ul{
-	padding:10px 0;
+	margin:10px 0;
 }
-.index li{
+.index li a{
 	font-weight:bold;
 }
-.index ul li{
+.index ul ul li a{
 	font-weight:normal;
 }
 .index a,
