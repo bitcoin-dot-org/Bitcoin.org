@@ -240,6 +240,11 @@ if(!e)var e=window.event;
 switch(e.type){
 case 'mousedown':
 if((e.which&&e.which==3)||(e.button&&e.button==2))return;
+var t=getEventTarget(e);
+while(t.parentNode){
+	if(getStyle(t,'overflow')=='auto'||getStyle(t,'overflow-y')=='auto'||getStyle(t,'overflow-x')=='auto')return;
+	t=t.parentNode;
+}
 addEvent(document.body,'mouseup',makeEditable);
 addEvent(document.body,'mousemove',makeEditable);
 document.body.setAttribute('timeoutEdit',setTimeout(function(){
