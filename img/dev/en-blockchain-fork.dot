@@ -1,0 +1,55 @@
+digraph blockchain {
+
+size=6.66;
+
+//splines = "ortho";
+rankdir=LR;
+ranksep=0.1;
+
+subgraph cluster_extended {
+    block00 [ label = block0 ];
+    block01 [ label = block1 ];
+    block02 [ label = block2 ];
+    block03 [ label = block3 ];
+    block04 [ label = block4 ];
+    block05 [ label = block5 ];
+    block06 [ label = block6 ];
+
+    block02x [ label = block2 ];
+    block03x [ label = block3 ];
+    block04x [ label = block4 ];
+    block05x [ label = block5 ];
+
+    block01  -> block02x;
+    block02x -> block03x;
+    block03x -> block04x;
+    block04x -> block05x;
+
+
+    block00 -> block01 [label = "Header Hash"];
+    block01 -> block02;
+    block02 -> block03;
+    block03 -> block04;
+    block04 -> block05 
+    block05 -> block06;
+
+    label = "Rare Extended Forking";
+}
+
+subgraph cluster_normal {
+    block2x [ label = block2 ];
+    block5x [ label = block5 ];
+
+    block1 -> block2x;
+    block4 -> block5x;
+
+    block0 -> block1 [label = "Header Hash"];
+    block1 -> block2 [weight = 100];
+    block2 -> block3;
+    block3 -> block4;
+    block4 -> block5 [weight = 100];
+    block5 -> block6;
+
+    label = "Normal Occasional Forking";
+}
+}

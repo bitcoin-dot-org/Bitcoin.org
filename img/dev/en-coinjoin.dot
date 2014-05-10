@@ -1,0 +1,99 @@
+digraph paymentchannel {
+size=6.66;
+rankdir=LR;
+//splines = false;
+nodesep = 0.1;
+
+edge [ minlen = 1.33 ];
+node [ shape = box ];
+
+
+
+
+subgraph cluster_nemo {
+    label = "Nemo's UTXOs"
+
+    nemo_out1 [ label = "10 mBTC" ];
+    nemo_out2 [ label = "90 mBTC" ];
+}
+
+
+subgraph cluster_neminem {
+    label = "Neminem's UTXOs"
+
+    neminem_out1 [ label = "100 mBTC" ];
+
+}
+
+subgraph cluster_alice {
+    label = "AnonGirl's UTXOs"
+
+    alice_out1 [ label = "55 mBTC" ];
+    alice_out2 [ label = "25 mBTC" ];
+    alice_out3 [ label = "20 mBTC" ];
+
+}
+
+subgraph prevouts {
+    node [ style = invis, label="", width=0, height=0 ]
+
+    prevout3;
+    prevout4;
+    prevout5;
+    prevout0;
+    prevout1;
+    prevout2;
+
+}
+
+subgraph cluster_coinjoin {
+    label = "CoinJoin Transaction"
+
+    subgraph cluster_inputs {
+        label = "Inputs"
+        node [ label = "" ]
+        nemo_in1;
+        nemo_in2;
+        neminem_in1;
+        alice_in1;
+        alice_in2;
+        alice_in3;
+    }
+
+    subgraph cluster_outputs {
+        label = "Outputs"
+        node [ label = "100 mBTC" ];
+        out1;
+        out2;
+        out3;
+    }
+}
+
+utxo1 [ label = "Person 1" ];
+utxo2 [ label = "Person 2" ];
+utxo3 [ label = "Person 3" ];
+
+// prevouts
+
+prevout0 -> alice_out1 [ style = dashed, label = "From Bob" ];
+prevout1 -> alice_out2 [ style = dashed, label = "From Charlie" ];
+prevout2 -> alice_out3 [ style = dashed ];
+prevout3 -> nemo_out1 [ style = dashed ];
+prevout4 -> nemo_out2 [ style = dashed ];
+prevout5 -> neminem_out1 [ style = dashed ];
+
+alice_out1 -> alice_in1;
+alice_out2 -> alice_in2;
+alice_out3 -> alice_in3;
+nemo_out1 -> nemo_in1;
+nemo_out2 -> nemo_in2;
+neminem_out1 -> neminem_in1;
+
+
+out1 -> utxo1;
+out2 -> utxo2;
+out3 -> utxo3;
+
+
+label = "Example CoinJoin Transaction\nOnly the participants know who gets which output."
+}
