@@ -59,7 +59,7 @@ module Jekyll
             end
           end
           next if !/\.html$|\.md$/.match(file1)
-          next if file1 == 'index.html'
+          next if file1 == 'index.html' or file1 == '404.html' or file1 == 'README.md'
           #Ignore google webmaster tools
           data = File.read(file1)
           next if !data.index('google-site-verification:').nil?
