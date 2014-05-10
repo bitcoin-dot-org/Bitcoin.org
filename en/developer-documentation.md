@@ -22,7 +22,7 @@ title: "Developer Documentation - Bitcoin"
     </div><div>
       <h2><img src="/img/ico_micro.svg" class="titleicon" alt="Icon">Transactions</h2>
       <p><a href="/en/developer-guide#transactions">Transactions Guide</a></p>
-      <p><a href="/en/developer-reference#transaction">Transactions Reference</a></p>
+      <p><a href="/en/developer-reference#transactions">Transactions Reference</a></p>
     </div>
   </div>
   <div>
