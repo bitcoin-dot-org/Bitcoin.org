@@ -2,19 +2,12 @@
 
 {% autocrossref %}
 
-By making the system hard to understand, the complexity of transactions
-has so far worked against you. That changes with contracts. Contracts are
+Contracts are
 transactions which use the decentralized Bitcoin system to enforce financial
 agreements.
-
 Bitcoin contracts can often be crafted to minimize dependency on outside
 agents, such as the court system, which significantly decreases the risk
-of dealing with unknown entities in financial transactions. For example,
-Alice and Bob might only know each other casually over the Internet;
-they would never open a checking account together---one of them could
-pass bad checks, leaving the other on the hook. But with Bitcoin
-contracts, they can nearly eliminate the risk from their relationship
-and start a business even though they hardly know each other.
+of dealing with unknown entities in financial transactions. 
 
 The following subsections will describe a variety of Bitcoin contracts
 already in use. Because contracts deal with real people, not just
@@ -85,11 +78,11 @@ so she creates and signs a transaction with two outputs, one that spends 60%
 of the satoshis to Bob's public key and one that spends the remaining
 40% to Charlie's public key.
 
-In the input section of the script, Alice puts her signature, a 0x00
-placeholder byte, and a copy of the unhashed serialized redeemScript
+In the input section of the script, Alice puts her signature
+and a copy of the unhashed serialized redeemScript
 that Bob created.  She gives a copy of the incomplete transaction to
-both Bob and Charlie.  Either one of them can complete it by replacing
-the placeholder byte with his signature, creating the following input
+both Bob and Charlie.  Either one of them can complete it by adding
+his signature to create the following input
 script:
 
 {% endautocrossref %}

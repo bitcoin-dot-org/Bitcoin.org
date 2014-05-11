@@ -503,7 +503,7 @@ transaction should be made a few hours before the time lock expires.
 Previous versions of Bitcoin Core provided a feature which prevented
 transaction signers from using the method described above to cancel a
 time-locked transaction, but a necessary part of this feature was
-disabled to prevent DOS attacks. A legacy of this system are four-byte
+disabled to prevent denial of service attacks. A legacy of this system are four-byte
 [sequence numbers][sequence number]{:#term-sequence-number}{:.term} in every input. Sequence numbers were meant to allow
 multiple signers to agree to update a transaction; when they finished
 updating the transaction, they could agree to set every input's
@@ -615,7 +615,7 @@ fixed URI to which payments should be sent, please see the
 {% autocrossref %}
 
 None of Bitcoin's signature hash types protect the scriptSig, leaving
-the door open for a limited DOS attack called [transaction
+the door open for a limited denial of service attack called [transaction
 malleability][]{:.term}{:#term-transaction-malleability}. The scriptSig
 contains the signature, which can't sign itself, allowing attackers to
 make non-functional modifications to a transaction without rendering it

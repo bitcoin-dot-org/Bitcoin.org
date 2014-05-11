@@ -187,8 +187,8 @@ Merkle root field.
 
 Unlike `getblocktemplate`, miners using Stratum cannot inspect or add
 transactions to the block they're currently mining. Also unlike
-`getblocktemplate`, the Stratum protocol uses a two-way TCP socket which
-stays open, so miners don't need to use longpoll to ensure they receive
+`getblocktemplate`, the Stratum protocol uses a two-way TCP socket directly,
+so miners don't need to use HTTP longpoll to ensure they receive
 immediate updates from mining pools when a new block is broadcast to the
 peer-to-peer network.
 
