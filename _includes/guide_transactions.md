@@ -602,7 +602,7 @@ described below, with more general attacks hypothesized).
 
 1. Unique (non-reused) P2PH and P2SH addresses protect against the first
    type of attack by keeping ECDSA public keys hidden (hashed) until the
-   first time satoshis stored in those addresses are spent, so attacks
+   first time satoshis sent to those addresses are spent, so attacks
    are effectively useless unless they can reconstruct private keys in
    less than the hour or two it takes for a transaction to be well
    protected by the block chain.
@@ -610,9 +610,10 @@ described below, with more general attacks hypothesized).
 2. Unique (non-reused) private keys protect against the second type of
    attack by only generating one signature per private key, so attackers
    never get a subsequent signature to use in comparison-based attacks.
-   Existing comparison-based attacks are only practical today when there
-   is an error in the ECDSA implementation or a lack of entropy in one
-   of the values used for signing.
+   Existing comparison-based attacks are only practical today when 
+   insufficient entropy is used in signing or when the entropy used
+   is exposed by some means, such as a
+   [side-channel attack](https://en.wikipedia.org/wiki/Side_channel_attack).
 
 So, for both privacy and security, we encourage you to build your
 applications to avoid public key reuse and, when possible, to discourage
