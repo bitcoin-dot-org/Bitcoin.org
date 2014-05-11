@@ -340,10 +340,10 @@ scriptSig: OP_0 <sig> <sig> <redeemscript>
 
 **Pubkey**
 
-[Pubkey][]{:#term-pubkey}{:.term} scripts are a simplified form of the P2PH script; they’re used in all
-coinbase transactions, but they aren’t as convenient
-or secure as P2PH, so they generally
-aren’t used elsewhere.
+[Pubkey][]{:#term-pubkey}{:.term} scripts are a simplified form of the P2PH script,
+but they aren’t as
+secure as P2PH, so they generally
+aren’t used in new transactions anymore.
 
 {% endautocrossref %}
 
