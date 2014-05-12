@@ -74,7 +74,7 @@ wallet as spendable balances).
 {% autocrossref %}
 
 Adding a 2-of-3 P2SH multisig address to the "test account" by mixing
-two P2PH addresses and one full public key:
+two P2PKH addresses and one full public key:
 
 {% endautocrossref %}
 
@@ -266,7 +266,7 @@ provide public keys for any address not known to this wallet.
 
 {% autocrossref %}
 
-Creating a 2-of-3 P2SH multisig address by mixing two P2PH addresses and
+Creating a 2-of-3 P2SH multisig address by mixing two P2PKH addresses and
 one full public key:
 
 {% endautocrossref %}
@@ -310,7 +310,7 @@ createrawtransaction <previous output(s)> <new output(s)>
 {% autocrossref %}
 
 Create an unsigned transaction in hex rawtransaction format that spends a
-previous output to an new output with a P2PH or P2SH address. The
+previous output to an new output with a P2PKH or P2SH address. The
 transaction is not stored in the wallet or transmitted to the network.
 
 
@@ -332,11 +332,11 @@ output index number, called *vout* (number; required).
 ]
 ~~~
 
-**Argument #2: P2PH Or P2SH Addresses For New Outputs**
+**Argument #2: P2PKH Or P2SH Addresses For New Outputs**
 
 {% autocrossref %}
 
-*String; required:* A JSON object with P2PH or P2SH addresses to pay as
+*String; required:* A JSON object with P2PKH or P2SH addresses to pay as
 keys and the amount to pay each address as its value (number; required)
 in decimal bitcoins.
 
@@ -612,7 +612,7 @@ Decode a hex-encoded P2SH redeemScript.
 {% autocrossref %}
 
 A JSON object describing the redeemScript, with *asm* being the script
-in script-language psuedocode, *hex* being the a P2PH public key (if
+in script-language psuedocode, *hex* being the a P2PKH public key (if
 applicable), *type* being the output type (typically public key,
 multisig, or nonstandard), *reqSigs* being the required signatures,
 and the *addresses* array listing the addresses belonging to the

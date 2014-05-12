@@ -10,7 +10,7 @@
 <title>blockchain</title>
 <polygon fill="white" stroke="white" points="-4,5 -4,-292 553,-292 553,5 -4,5"/>
 <text text-anchor="middle" x="274" y="-25.4" font-family="Sans" font-size="14.00"> </text>
-<text text-anchor="middle" x="274" y="-8.4" font-family="Sans" font-size="14.00">Spending A P2PH Output</text>
+<text text-anchor="middle" x="274" y="-8.4" font-family="Sans" font-size="14.00">Spending A P2PKH Output</text>
 <g id="graph2" class="cluster"><title>cluster_tx2</title>
 <polygon fill="none" stroke="black" stroke-width="1.75" points="208,-50 208,-280 350,-280 350,-50 208,-50"/>
 </g>

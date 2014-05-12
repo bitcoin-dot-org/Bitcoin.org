@@ -9,7 +9,7 @@
 <g id="graph1" class="graph" transform="scale(0.722311 0.722311) rotate(0) translate(4 144)">
 <title>blockchain</title>
 <polygon fill="white" stroke="white" points="-4,5 -4,-144 620,-144 620,5 -4,5"/>
-<text text-anchor="middle" x="307.5" y="-8.4" font-family="Sans" font-size="14.00">Creating A P2PH Public Key Hash To Receive Payment</text>
+<text text-anchor="middle" x="307.5" y="-8.4" font-family="Sans" font-size="14.00">Creating A P2PKH Public Key Hash To Receive Payment</text>
 <g id="graph2" class="cluster"><title>cluster_bob</title>
 <polygon fill="none" stroke="black" stroke-width="1.75" points="8,-41 8,-124 334,-124 334,-41 8,-41"/>
 <text text-anchor="middle" x="171" y="-107.4" font-family="Sans" font-size="14.00">Bob&#39;s Computer</text>

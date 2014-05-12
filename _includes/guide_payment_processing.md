@@ -611,9 +611,9 @@ each payment.
 ## Amount of the request
 amount = 10000000  ## In satoshis
 
-## P2PH pubkey hash
+## P2PKH pubkey hash
 pubkey_hash = "2b14950b8d31620c6cc923c5408a701b1ec0a020"
-## P2PH output script entered as hex and converted to binary
+## P2PKH output script entered as hex and converted to binary
 # OP_DUP OP_HASH160 <push 20 bytes> <pubKey hash> OP_EQUALVERIFY OP_CHECKSIG
 #   76       a9            14       <pubKey hash>        88          ac
 hex_script = "76" + "a9" + "14" + pubkey_hash + "88" + "ac"
@@ -657,13 +657,13 @@ serialized_script = hex_script.decode("hex")
 
 `script`: (required) You must specify the output script you want the spender to
 pay---any valid script is acceptable. In this example, we'll request
-payment to a P2PH output script.  
+payment to a P2PKH output script.  
 
 First we get a pubkey hash. The hash above is the hash form of the
 address used in the URI examples throughout this section,
 mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN.
 
-Next, we plug that hash into the standard P2PH output script using hex,
+Next, we plug that hash into the standard P2PKH output script using hex,
 as illustrated by the code comments.
 
 Finally, we convert the output script from hex into its serialized form.

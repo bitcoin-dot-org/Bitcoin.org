@@ -1,13 +1,14 @@
 digraph blockchain {
 
-size=6.66;
+size=6.25;
 splines = "false";
 //rankdir=LR;
 //ranksep=0.1;
 //splines=ortho;
 
-node [ shape = box ];
-edge [ style = invis, minlen = 1 ];
+node [ fontname="Sans", shape = box ];
+edge [ fontname="Sans", style = invis, minlen = 1 ];
+graph [ fontname="Sans" ];
 //fixedsize
 nodesep = 0.05;
 //concentrate = true;
@@ -141,5 +142,5 @@ stack6_ophash -> stack6_pubkeyhash [ style = "" ];
 stack7_pubkey -> stack7_opchecksig [ style = "" ]; 
 stack7_sig -> stack7_pubkey [ style = "" ]; 
 
-label = "Evaluation Stack Over Time During Succesful P2PH Script Validation"
+label = "Evaluation Stack Over Time During Succesful P2PKH Script Validation"
 }

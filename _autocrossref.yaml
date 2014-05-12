@@ -120,7 +120,7 @@ orphan: orphaned
 outputs: output
 output:
 output index:
-p2ph:
+p2pkh:
 p2sh:
 p2sh multisig:
 parent chain code:
