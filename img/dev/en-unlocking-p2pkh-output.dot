@@ -9,8 +9,9 @@ rankdir=LR;
 overlap = false;
 nodesep = 0.1;
 
-node [ shape = box, penwidth = 1.75 ];
-edge [ penwidth = 1.75, minlen = 2 ];
+node [ fontname="Sans", shape = box, penwidth = 1.75 ];
+edge [ fontname="Sans", penwidth = 1.75, minlen = 2 ];
+graph [ fontname="Sans" ];
 penwidth = 1.75;
 
 subgraph cluster_tx2 {
@@ -43,5 +44,5 @@ tx1_pubkey_hash -> tx2_pubkey_hash;
     tx2_signature -> private_key [ style = "dashed" ];
 }
 
-label = " \nSpending A P2PH Output"
+label = " \nSpending A P2PKH Output"
 }

@@ -28,7 +28,7 @@ indicated whether or not the address is valid. If it is valid, the
 validated *address* is returned plus *ismine* to indicate whether or not
 it belongs to this wallet and *account* to indicate which account it
 belongs to. If it's a P2SH address, *isscript* will be true. If it's a
-P2PH address, *pubkey* will contain the public key and *compressed* will
+P2PKH address, *pubkey* will contain the public key and *compressed* will
 indicate whether or not the pubkey/address is compressed.
 
 {% endautocrossref %}

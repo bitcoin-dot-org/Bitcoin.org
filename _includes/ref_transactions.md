@@ -66,11 +66,11 @@ prevent the script from working as expected.
 
 {% autocrossref %}
 
-The hashes used in P2PH and P2SH outputs are commonly encoded as Bitcoin
+The hashes used in P2PKH and P2SH outputs are commonly encoded as Bitcoin
 addresses.  This is the procedure to encode those hashes and decode the
 addresses.
 
-First, get your hash.  For P2PH, you RIPEMD-160(SHA256()) hash a ECDSA
+First, get your hash.  For P2PKH, you RIPEMD-160(SHA256()) hash a ECDSA
 public key derived from your 256-bit ECDSA private key (random data).
 For P2SH, you RIPEMD-160(SHA256()) hash a redeemScript serialized in the
 format used in raw transactions (described in a [following
@@ -79,9 +79,9 @@ sub-section][raw transaction format]).  Taking the resulting hash:
 1. Add an address version byte in front of the hash.  The version
 bytes commonly used by Bitcoin are:
 
-    * 0x00 for P2PH addresses on the main Bitcoin network (mainnet)
+    * 0x00 for P2PKH addresses on the main Bitcoin network (mainnet)
 
-    * 0x6f for P2PH addresses on the Bitcoin testing network (testnet)
+    * 0x6f for P2PKH addresses on the Bitcoin testing network (testnet)
 
     * 0x05 for P2SH addresses on mainnet
 

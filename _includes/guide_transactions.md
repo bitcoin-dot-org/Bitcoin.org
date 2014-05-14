@@ -40,12 +40,12 @@ invalidating previous transactions.
 The figures below help illustrate the other transaction features by
 showing the workflow Alice uses to send Bob a transaction and which Bob
 later uses to spend that transaction. Both Alice and Bob will use the
-most common form of the standard Pay-To-Pubkey-Hash (P2PH) transaction
-type. [P2PH][]{:#term-p2ph}{:.term} lets Alice spend satoshis to a typical Bitcoin address,
+most common form of the standard Pay-To-Public-Key-Hash (P2PKH) transaction
+type. [P2PKH][]{:#term-p2pkh}{:.term} lets Alice spend satoshis to a typical Bitcoin address,
 and then lets Bob further spend those satoshis using a simple
 cryptographic key pair.
 
-![Creating A P2PH Public Key Hash To Receive Payment](/img/dev/en-creating-p2ph-output.svg)
+![Creating A P2PKH Public Key Hash To Receive Payment](/img/dev/en-creating-p2pkh-output.svg)
 
 Bob must first generate a private/public [key pair][]{:#term-key-pair}{:.term} before Alice can create the
 first transaction. Standard Bitcoin [private keys][private
@@ -76,7 +76,7 @@ into another format, such as a QR code containing a `bitcoin:`
 URI.
 
 Once Alice has the address and decodes it back into a standard hash, she
-can create the first transaction. She creates a standard P2PH
+can create the first transaction. She creates a standard P2PKH
 transaction output containing instructions which allow anyone to spend that
 output if they can prove they control the private key corresponding to
 Bob's hashed public key. These instructions are called the output [script][]{:#term-script}{:.term}.
@@ -92,11 +92,11 @@ index number ([output index][]{:#term-output-index}{:.term}). He must then creat
 collection of data parameters which satisfy the conditions Alice placed
 in the previous output's script.
 
-![Unlocking A P2PH Output For Spending](/img/dev/en-unlocking-p2ph-output.svg)
+![Unlocking A P2PKH Output For Spending](/img/dev/en-unlocking-p2pkh-output.svg)
 
 Bob does not need to communicate with Alice to do this; he must simply
 prove to the Bitcoin peer-to-peer network that he can satisfy the
-script's conditions.  For a P2PH-style output, Bob's scriptSig will
+script's conditions.  For a P2PKH-style output, Bob's scriptSig will
 contain the following two pieces of data:
 
 1. His full (unhashed) public key, so the script can check that it
@@ -129,11 +129,11 @@ transactions.
 
 {% endautocrossref %}
 
-### P2PH Script Validation
+### P2PKH Script Validation
 
 {% autocrossref %}
 
-The validation procedure requires evaluation of the script.  In a P2PH
+The validation procedure requires evaluation of the script.  In a P2PKH
 output, the script is:
 
 {% endautocrossref %}
@@ -145,7 +145,7 @@ OP_DUP OP_HASH160 <PubkeyHash> OP_EQUALVERIFY OP_CHECKSIG
 {% autocrossref %}
 
 The spender's scriptSig is evaluated and prefixed to the beginning of the
-script. In a P2PH transaction, the scriptSig contains a signature (sig)
+script. In a P2PKH transaction, the scriptSig contains a signature (sig)
 and full public key (pubkey), creating the following concatenation:
 
 {% endautocrossref %}
@@ -173,10 +173,10 @@ locations in stack descriptions. -harding -->
 To test whether the transaction is valid, scriptSig and script arguments
 are pushed to the stack one item at a time, starting with Bob's scriptSig
 and continuing to the end of Alice's script. The figure below shows the
-evaluation of a standard P2PH script; below the figure is a description
+evaluation of a standard P2PKH script; below the figure is a description
 of the process.
 
-![P2PH Stack Evaluation](/img/dev/en-p2ph-stack.svg)
+![P2PKH Stack Evaluation](/img/dev/en-p2pkh-stack.svg)
 
 * The signature (from Bob's scriptSig) is added (pushed) to an empty stack.
   Because it's just data, nothing is done except adding it to the stack.
@@ -231,7 +231,7 @@ currently spending. Receivers do care about the conditions imposed on
 the satoshis by the output script and, if they want, they can ask
 spenders to use a particular script. Unfortunately, custom scripts are
 less convenient than short Bitcoin addresses and more difficult to
-secure than P2PH pubkey hashes.
+secure than P2PKH pubkey hashes.
 
 To solve these problems, pay-to-script-hash
 ([P2SH][]{:#term-p2sh}{:.term}) transactions were created in 2012 to let
@@ -240,7 +240,7 @@ script][script hash]{:#term-script-hash}{:.term}, the
 [redeemScript][]{:#term-redeemscript}{:.term}.
 
 The basic P2SH workflow, illustrated below, looks almost identical to
-the P2PH workflow. Bob creates a redeemScript with whatever script he
+the P2PKH workflow. Bob creates a redeemScript with whatever script he
 wants, hashes the redeemScript, and provides the redeemScript
 hash to Alice. Alice creates a P2SH-style output containing
 Bob's redeemScript hash.
@@ -260,8 +260,8 @@ The hash of the redeemScript has the same properties as a pubkey
 hash---so it can be transformed into the standard Bitcoin address format
 with only one small change to differentiate it from a standard address.
 This makes collecting a P2SH-style address as simple as collecting a
-P2PH-style address. The hash also obfuscates any public keys in the
-redeemScript, so P2SH scripts are as secure as P2PH pubkey hashes.
+P2PKH-style address. The hash also obfuscates any public keys in the
+redeemScript, so P2SH scripts are as secure as P2PKH pubkey hashes.
 
 {% endautocrossref %}
 
@@ -272,9 +272,9 @@ redeemScript, so P2SH scripts are as secure as P2PH pubkey hashes.
 Care must be taken to avoid non-standard output scripts. As of Bitcoin Core
 0.9, the standard script types are:
 
-**Pubkey Hash (P2PH)**
+**Pubkey Hash (P2PKH)**
 
-P2PH is the most common form of script used to send a transaction to one
+P2PKH is the most common form of script used to send a transaction to one
 or multiple Bitcoin addresses.
 
 {% endautocrossref %}
@@ -340,9 +340,9 @@ scriptSig: OP_0 <sig> <sig> <redeemscript>
 
 **Pubkey**
 
-[Pubkey][]{:#term-pubkey}{:.term} scripts are a simplified form of the P2PH script,
+[Pubkey][]{:#term-pubkey}{:.term} scripts are a simplified form of the P2PKH script,
 but they aren’t as
-secure as P2PH, so they generally
+secure as P2PKH, so they generally
 aren’t used in new transactions anymore.
 
 {% endautocrossref %}
@@ -394,7 +394,7 @@ conditions:
   numbers must be 0xffffffff.
 
 * The transaction must be smaller than 100,000 bytes. That's around 200
-  times larger than a typical single-input, single-output P2PH
+  times larger than a typical single-input, single-output P2PKH
   transaction.
 
 * Each of the transaction's inputs must be smaller than 500 bytes.
@@ -563,10 +563,10 @@ people will have UTXOs that exactly match the amount they want to pay,
 so most transactions include a change output.
 
 [Change outputs][change output]{:#term-change-output}{:.term} are regular outputs which spend the surplus satoshis
-from the UTXOs back to the spender.  They can reuse the same P2PH pubkey hash
+from the UTXOs back to the spender.  They can reuse the same P2PKH pubkey hash
 or P2SH script hash as was used in the UTXO, but for the reasons
 described in the [next subsection](#avoiding-key-reuse), it is highly recommended that change
-outputs be sent to a new P2PH or P2SH address.
+outputs be sent to a new P2PKH or P2SH address.
 
 {% endautocrossref %}
 
@@ -600,7 +600,7 @@ allow reconstruction of private keys from public keys (hypothesized) or
 from signature comparisons (possible today under certain circumstances
 described below, with more general attacks hypothesized).
 
-1. Unique (non-reused) P2PH and P2SH addresses protect against the first
+1. Unique (non-reused) P2PKH and P2SH addresses protect against the first
    type of attack by keeping ECDSA public keys hidden (hashed) until the
    first time satoshis sent to those addresses are spent, so attacks
    are effectively useless unless they can reconstruct private keys in

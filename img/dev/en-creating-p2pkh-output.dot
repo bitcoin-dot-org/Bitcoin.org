@@ -7,8 +7,9 @@ rankdir=LR;
 //ranksep=0.1;
 //splines=ortho;
 
-node [ shape = box, penwidth = 1.75 ];
-edge [ penwidth = 1.75 ];
+node [ fontname="Sans", shape = box, penwidth = 1.75 ];
+edge [ fontname="Sans", penwidth = 1.75 ];
+graph [ fontname="Sans" ];
 penwidth = 1.75;
 
 subgraph cluster_bob {
@@ -37,5 +38,5 @@ private_key -> full_public_key -> pubkey_hash -> spender_pubkey_hash -> tx1_pubk
 
 
 
-label = "Creating A P2PH Public Key Hash To Receive Payment"
+label = "Creating A P2PKH Public Key Hash To Receive Payment"
 }
