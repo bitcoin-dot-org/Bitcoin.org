@@ -256,11 +256,11 @@ great-grandchild extended private keys.
 
 The HD protocol uses different index numbers to indicate
 whether a normal or hardened key should be generated. Index numbers from
-0x00 to 0x80000000 (0 to 2<sup>31</sup>) will generate a normal key; index
-numbers from 0x80000001 to 0x100000000 will generate a hardened key. To
+0x00 to 0x7fffffff (0 to 2<sup>31</sup>-1) will generate a normal key; index
+numbers from 0x80000000 to 0xffffffff will generate a hardened key. To
 make descriptions easy, many developers use the [prime symbol][] to indicate
 hardened keys, so the first normal key (0x00) is 0 and the first hardened
-key (0x80000001) is 0´.
+key (0x80000000) is 0´.
 
 (Bitcoin developers typically use the ASCII apostrophe rather than
 the unicode prime symbol, a convention we will henceforth follow.)
