@@ -8,6 +8,7 @@ langsorder:
 - id: hu
 - id: nl
 - id: pl
+- id: pt_BR
 - id: ru
 - id: tr
 - id: bg
@@ -29,6 +30,7 @@ langs:
   it: Italiano
   nl: Nederlands
   pl: Polski
+  pt_BR: Português Brasil
   ru: Русский
   tr: Türkçe
   zh_CN: ‪简体中文‬
