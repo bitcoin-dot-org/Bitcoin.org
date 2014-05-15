@@ -9,6 +9,7 @@ langsorder:
 - id: nl
 - id: pl
 - id: ru
+- id: sv
 - id: tr
 - id: bg
 - id: zh_CN
@@ -30,6 +31,7 @@ langs:
   nl: Nederlands
   pl: Polski
   ru: Русский
+  sv: Svenska
   tr: Türkçe
   zh_CN: ‪简体中文‬
   zh_TW: ‪繁體中文‬
