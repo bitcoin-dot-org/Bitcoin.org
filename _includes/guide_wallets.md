@@ -158,7 +158,7 @@ As illustrated above, HD key derivation takes four inputs<!--noref-->:
 * The [index][key index]{:#term-key-index}{:.term} number is a 32-bit integer specified by the program.
 
 In the normal form shown in the above illustration, the parent chain
-code and the index number are fed into a one-way cryptographic hash
+code, the parent public key, and the index number are fed into a one-way cryptographic hash
 ([HMAC-SHA512][]) to produce 512 bits of
 deterministically-generated-but-seemingly-random data. The
 seemingly-random 256 bits on the righthand side of the hash output are
@@ -218,14 +218,14 @@ which makes them special.
 Deriving [child extended keys][child extended key]{:#term-child-extended-key}{:.term} from parent extended keys is more nuanced
 than described earlier due to the presence of two extended private key
 derivation formulas. The normal formula, described above, combines
-together only the index number and the parent chain code to create the
+together the index number, the parent chain code, and the parent public key to create the
 child chain code and the integer value which is combined with the parent
 private key to create the child private key.
 
 ![Creating Child Public Keys From An Extended Private Key](/img/dev/en-hd-private-parent-to-private-child.svg)
 
 The hardened formula, illustrated above, combines together the index
-number, the parent chain code, and also the parent private key to create
+number, the parent chain code, and the parent private key to create
 the data used to generate the child chain code and child private key.
 This formula makes it impossible to create child public keys without
 knowing the parent private key. In other words, parent extended public
@@ -235,12 +235,21 @@ Because of that, a [hardened extended private
 key][]{:#term-hardened-extended-private-key}{:.term} is much less
 useful than a normal extended private key---however, it's more secure
 against multi-level key compromise. If an attacker gets a normal parent
-chain code, he can brute-force find all 2<sup>31</sup> normal chain
+chain code and parent public key, he can brute-force find all 2<sup>31</sup> normal chain
 codes deriving from it. If the attacker also obtains a child, grandchild, or
 further-descended private key, he can use the chain code to generate all
-of the extended private keys descending from that private key.
+of the extended private keys descending from that private key, as
+shown in the grandchild and great-grandchild generations of the illustration below.
 
 ![Cross-Generational Key Compromise](/img/dev/en-hd-cross-generational-key-compromise.svg)
+
+Perhaps worse, the attacker can reverse the normal child private key
+derivation formula and subtract a parent chain code from a child private
+key to recover the parent private key, as shown in the child and
+parent generations of the illustration above.  This means an attacker
+who acquires an extended public key and any private key descended from
+it can recover that public key's private key and all keys descended from
+it.
 
 For this reason, the chain code part of an extended public key should be
 better secured than standard public keys and users should be advised
