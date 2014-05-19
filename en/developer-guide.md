@@ -15,7 +15,7 @@ title: "Developer Guide - Bitcoin"
 {:toc}
 
 <ul class="goback"><li><a href="/en/developer-documentation">Return To Overview</a></li></ul>
-<ul class="reportissue"><li><a href="https://github.com/bitcoin/bitcoin.org/issues/new" onclick="issueReport(event);">Report An Issue</a></li></ul>
+<ul class="reportissue"><li><a href="https://github.com/bitcoin/bitcoin.org/issues/new" onmouseover="updateIssue(event);">Report An Issue</a></li></ul>
 
 </div></div>
 

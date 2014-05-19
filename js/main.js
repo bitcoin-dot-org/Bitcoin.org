@@ -361,10 +361,10 @@ addEvent(window,'load',evtimestamp);
 init();
 }
 
-function issueReport(e){
-//Open an issue on GitHub pre-filled with current page location
-cancelEvent(e);
-window.location.href='https://github.com/bitcoin/bitcoin.org/issues/new?body='+encodeURIComponent('Location: '+window.location.href.toString()+"\n\n")
+function updateIssue(e){
+//Update GitHub issue link with pre-filled with current page location
+var t=getEventTarget(e);
+t.href='https://github.com/bitcoin/bitcoin.org/issues/new?body='+encodeURIComponent('Location: '+window.location.href.toString()+"\n\n");
 }
 
 function makeEditable(e){
