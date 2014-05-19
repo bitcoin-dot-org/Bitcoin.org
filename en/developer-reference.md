@@ -22,7 +22,6 @@ title: "Developer Reference - Bitcoin"
 {% include ref_block_chain.md %}
 {% include ref_transactions.md %}
 {% include ref_wallets.md %}
-{% include ref_payment_processing.md %}
 
 ## Bitcoin Core APIs
 
