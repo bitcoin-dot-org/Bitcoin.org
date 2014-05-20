@@ -21,7 +21,6 @@
 [chain code]: /en/developer-guide#term-chain-code "In HD wallets, 256 bits of entropy added to the master public and private keys to help them generate secure child keys; the chain code is usually derived from a seed along with the master private key"
 [change address]: /en/developer-guide#term-change-output "An output used by a spender to send back to himself some of the satoshis from the inputs"
 [change output]: /en/developer-guide#term-change-output "An output used by a spender to send back to himself some of the satoshis from the inputs"
-[child extended key]: /en/developer-guide#term-child-extended-key "A child key extended with a chain code so that it can become a parent key and derive its own child keys"
 [child key]: /en/developer-guide#term-child-key "In HD wallets, a key derived from a parent key"
 [child public key]: /en/developer-guide#term-child-public-key "In HD wallets, a public key derived from a parent public key or a corresponding child private key"
 [coinbase field]: /en/developer-reference#term-coinbase-field "A special input-like field for coinbase transactions"
