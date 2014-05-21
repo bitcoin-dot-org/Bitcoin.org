@@ -109,14 +109,15 @@ aliases:
   tcatm: Nils Schneider
 
 safe:        false
-auto:        false
-server:      false
 server_port: 4000
 base-url:    /
 
 source:      .
 destination: ./_site
 plugins:     ./_plugins
+exclude:
+    - Gemfile
+    - Gemfile.lock
 
 future:      true
 lsi:         false
