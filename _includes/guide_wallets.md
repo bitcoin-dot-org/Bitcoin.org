@@ -215,27 +215,9 @@ which makes them special.
 
 {% autocrossref %}
 
-Deriving [child extended keys][child extended key]{:#term-child-extended-key}{:.term} from parent extended keys is more nuanced
-than described earlier due to the presence of two extended private key
-derivation formulas. The normal formula, described above, combines
-together the index number, the parent chain code, and the parent public key to create the
-child chain code and the integer value which is combined with the parent
-private key to create the child private key.
-
-![Creating Child Public Keys From An Extended Private Key](/img/dev/en-hd-private-parent-to-private-child.svg)
-
-The hardened formula, illustrated above, combines together the index
-number, the parent chain code, and the parent private key to create
-the data used to generate the child chain code and child private key.
-This formula makes it impossible to create child public keys without
-knowing the parent private key. In other words, parent extended public
-keys can't create hardened child public keys.
-
-Because of that, a [hardened extended private
-key][]{:#term-hardened-extended-private-key}{:.term} is much less
-useful than a normal extended private key---however, it's more secure
-against multi-level key compromise. If an attacker gets a normal parent
-chain code and parent public key, he can brute-force find all 2<sup>31</sup> normal chain
+Hardened extended keys fix a potential problem with normal extended keys.
+If an attacker gets a normal parent
+chain code and parent public key, he can brute-force find all chain
 codes deriving from it. If the attacker also obtains a child, grandchild, or
 further-descended private key, he can use the chain code to generate all
 of the extended private keys descending from that private key, as
@@ -256,7 +238,27 @@ better secured than standard public keys and users should be advised
 against exporting even non-extended private keys to
 possibly-untrustworthy environments.
 
-Hardened extended private keys create a firewall through which
+This can be fixed, with some tradeoffs, by replacing the the normal
+key derivation formula with a hardened key derivation formula.
+
+The normal key derivation formula, described in the section above, combines
+together the index number, the parent chain code, and the parent public key to create the
+child chain code and the integer value which is combined with the parent
+private key to create the child private key.
+
+![Creating Child Public Keys From An Extended Private Key](/img/dev/en-hd-private-parent-to-private-child.svg)
+
+The hardened formula, illustrated above, combines together the index
+number, the parent chain code, and the parent private key to create
+the data used to generate the child chain code and child private key.
+This formula makes it impossible to create child public keys without
+knowing the parent private key. In other words, parent extended public
+keys can't create hardened child public keys.
+
+Because of that, a [hardened extended private
+key][]{:#term-hardened-extended-private-key}{:.term} is much less
+useful than a normal extended private key---however, 
+hardened extended private keys create a firewall through which
 multi-level key derivation compromises cannot happen. Because hardened
 child extended public keys cannot generate grandchild chain codes on
 their own, the compromise of a parent extended public key cannot be
@@ -283,6 +285,13 @@ key. The following hierarchy illustrates prime notation and hardened key
 firewalls.
 
 ![Example HD Wallet Tree Using Prime Notation](/img/dev/en-hd-tree.svg)
+
+Wallets following the BIP32 HD protocol only create hardened children of
+the master private key (*m*) to prevent a compromised child key from
+compromising the master key. As there are no normal children for the
+master keys, the master public key is not used in HD wallets. All other
+keys can have normal children, so the corresponding extended public keys
+may be used instead.
 
 The HD protocol also describes a serialization format for extended
 public keys and extended private keys.  For details, please see the
