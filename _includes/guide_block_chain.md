@@ -179,7 +179,7 @@ are usually referenced by the SHA256(SHA256()) hash of their header.
 
 {% autocrossref %}
 
-Every block must include one or more transactions. Exactly one of these
+Every block must include one or more transactions. The first one of these
 transactions must be a coinbase transaction which should collect and
 spend the block reward and any transaction fees paid by transactions included in this block.
 
