@@ -27,7 +27,7 @@ As of version 2 blocks, each block consists of four root elements:
 
 4. One or more transactions.
 
-Every block must include a [coinbase transaction][]{:#term-coinbase-tx}{:.term} which should collect and
+The first transaction in a block must be a [coinbase transaction][]{:#term-coinbase-tx}{:.term} which should collect and
 spend any transaction fees paid by transactions included in this block.
 All blocks with a block height less than 6,930,000 are entitled to
 receive a [block reward][]{:#term-block-reward}{:.term} of newly created bitcoin value, which also
