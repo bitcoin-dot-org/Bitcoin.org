@@ -32,16 +32,18 @@ if(typeof(legacyIE)==='undefined'){
 {% endif %}
   <div class="head"><div>
     <select id="langselect" class="langselect" onchange="window.location=this.value;">
-    {% for lang in site.langsorder %}{% if lang.id == page.lang %}{% assign active = ' selected="selected"'%}{% else %}{% assign active = ''%}{% endif %}
-      <option value="/{{ lang.id }}/{% translate {{page.id}} url {{lang.id}} %}"{{ active }}>{{ site.langs[lang.id] }}</option>
+    {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{% endif %}
+          <option value="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"{{ active }}>{{ site.langs[lang] }}</option>
     {% endfor %}
     </select>
     <ul class="lang">
       <li><a href="#" onclick="return false;">{{ site.langs[page.lang] }}</a>
       <ul>
-      {% for lang in site.langsorder %}{% if lang.id != page.lang %}
-        <li><a href="/{{ lang.id }}/{% translate {{page.id}} url {{lang.id}} %}">{{ site.langs[lang.id] }}</a></li>
-      {% endif %}{% endfor %}
+        {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' class="active"'%}{% endif %}
+        {% cycle 'start': '<li><ul>', '', '', '', '', '', '', '', '', '' %}
+          <li><a href="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"{{ active }}>{{ site.langs[lang] }}</a></li>
+        {% cycle 'end': '', '', '', '', '', '', '', '', '', '</ul></li>' %}{% endfor %}
+        {% cycle 'end': '', '</ul></li>', '</ul></li>', '</ul></li>', '</ul></li>', '</ul></li>', '</ul></li>', '</ul></li>', '</ul></li>', '</ul></li>' %}
       </ul>
       </li>
     </ul>
