@@ -772,6 +772,48 @@ table td,table th{
 	color:#646464;
 }
 
+.develdocdisclaimer{
+	padding:30px 0;
+	background:#fff;
+	bottom:0;
+	position:fixed;
+	width:600px;
+	z-index:1000;
+	border-top:1px solid #e0e0e0;
+}
+.develdocdisclaimer div{
+	border:2px dashed #ee9209;
+	background:#fff8ea;
+	padding:10px;
+	line-height:1.5em;
+	position:relative;
+}
+.develdocdisclaimerclose,
+.develdocdisclaimerclose:visited,
+.develdocdisclaimerclose:link,
+.develdocdisclaimerclose:active{
+	display:block;
+	padding:1px 8px 0 8px;
+	color:#fff;
+	background-color:#ee9209;
+	position:absolute;
+	top:-14px;
+	right:-14px;
+	font-weight:bold;
+	cursor:pointer;
+	border:2px solid #fff;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+}
+.develdocdisclaimerclose:hover,
+.develdocdisclaimerclose:visited:hover,
+.develdocdisclaimerclose:link:hover,
+.develdocdisclaimerclose:active:hover{
+	border:2px solid #ee9209;
+	color:#fff;
+}
+
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
@@ -1544,6 +1586,9 @@ h2 .rssicon{
 	.toccontent{
 		width:auto;
 	}
+	.develdocdisclaimer{
+		display:none;
+	}
 }
 
 /*Styles specific to mobiles*/
@@ -1691,6 +1736,10 @@ h2 .rssicon{
 	.toccontent a.auto-link:link,
 	.toccontent a.auto-link:visited{
 		color:#2c6fad;
+	}
+	.develdocdisclaimer{
+		padding:15px;
+		width:auto;
 	}
 	.contributors{
 		width:auto;

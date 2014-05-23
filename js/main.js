@@ -367,6 +367,21 @@ var t=getEventTarget(e);
 t.href='https://github.com/bitcoin/bitcoin.org/issues/new?body='+encodeURIComponent('Location: '+window.location.href.toString()+"\n\n");
 }
 
+function disclaimerClose(e){
+//Auto close temporary disclaimer in devel-docs
+if(e)cancelEvent(e);
+var t=document.getElementById('develdocdisclaimer')
+t.parentNode.removeChild(t);
+if(typeof(Storage)==='undefined')return;
+sessionStorage.setItem('develdocdisclaimerclose','1');
+}
+
+function disclaimerAutoClose(){
+//Auto close temporary disclaimer in devel-docs if session says so
+if(typeof(Storage)==='undefined')return;
+if(sessionStorage.getItem('develdocdisclaimerclose')==='1')disclaimerClose();
+}
+
 function makeEditable(e){
 //An easter egg that makes the page editable when user click on the page and hold their mouse button for one second.
 //This trick allows translators and writers to preview their work.
