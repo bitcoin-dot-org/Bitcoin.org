@@ -1931,7 +1931,7 @@ Result:
 
 
 
-#### getmininginformation
+#### getmininginfo
 
 ~~~
 getmininginfo
