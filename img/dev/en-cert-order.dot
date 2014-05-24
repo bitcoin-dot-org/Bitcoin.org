@@ -1,0 +1,29 @@
+digraph paymentchannel {
+size=6.66;
+//rankdir=LR;
+//splines = true;
+//nodesep = 0.4;
+
+//edge [ minlen = 2 ];
+node [ shape = box ];
+
+
+subgraph cluster_signing {
+    btcorg [ label = "www.bitcoin.org" ]
+    rapidssl [ label = "RapidSSL CA" ]
+    geotrust [ label = "GeoTrust Global CA" ]
+
+    geotrust -> rapidssl -> btcorg
+    label = " Certificates In Signing Order \n "
+}
+
+subgraph cluster_loading {
+    one [ label = "    x509.certificate.append(bitcoin_org-cert) " ] 
+    two [ label = "    x509.certificate.append(rapidssl_ca-cert) " ] 
+    one -> two
+    label = "Certificates In Loading Order\n(Root CA Certificate Is Not Loaded)"
+}
+
+label = "(Certificates are loaded into X509Certificates() in reverse signing order)\n \nExample Certificate Loading Order For Payment Requests From Bitcoin.org"
+
+}

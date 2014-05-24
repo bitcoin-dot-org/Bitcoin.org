@@ -51,8 +51,6 @@ en:
     securitytext: "Most parts of the security are handled by the protocol. This means no need for PCI compliance and fraud detection is only required when services or products are delivered instantly. Storing your bitcoins in a <a href=\"#secure-your-wallet#\">secure environment</a> and securing payment requests displayed to the user should be your main concerns."
     micro: "Cheap micro payments"
     microtext: "Bitcoin offers the lowest payment processing fees and usually can be used to send micro payments as low as a few dollars in value. Bitcoin allows to design new creative online services that could not exist before only because of financial limitations. This includes various kinds of tipping systems and automated payment solutions."
-    serviceslist: "Visit the <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services\">merchant services list</a> on the wiki."
-    apireference: "Or read bitcoind's <a href=\"https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)\">API reference</a> and <a href=\"https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list\">API calls list</a>."
   bitcoin-for-individuals:
     title: "Bitcoin for Individuals - Bitcoin"
     pagetitle: "Bitcoin for Individuals"
@@ -135,6 +133,7 @@ en:
     summary: "Find more information about current specification, software and developers."
     spec: "Specification"
     spectxt: "If you are interested in learning more about the technical details of Bitcoin, it is recommended you start with these documents."
+    speclinkguide: "<a href=\"/en/developer-documentation\">Developer documentation</a>"
     speclink1: "<a href=\"/bitcoin.pdf\">Bitcoin: A Peer-to-Peer Electronic Cash System</a>"
     speclink2: "<a href=\"https://en.bitcoin.it/wiki/Protocol_rules\">Protocol rules</a>"
     speclink3: "<a href=\"https://en.bitcoin.it/wiki/Category:Technical\">Bitcoin Wiki</a>"
@@ -348,7 +347,7 @@ en:
     processing: "Processing<a class=\"titlelight\"> - mining</a>"
     processingtxt: "Mining is a <b>distributed consensus system</b> that is used to <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>confirm</i></a> waiting transactions by including them in the block chain. It enforces a chronological order in the block chain, protects the neutrality of the network, and allows different computers to agree on the state of the system. To be confirmed, transactions must be packed in a <a href=\"#vocabulary##[vocabulary.block]\"><i>block</i></a> that fits very strict cryptographic rules that will be verified by the network. These rules prevent previous blocks from being modified because doing so would invalidate all following blocks. Mining also creates the equivalent of a competitive lottery that prevents any individual from easily adding new blocks consecutively in the block chain. This way, no individuals can control what is included in the block chain or replace parts of the block chain to roll back their own spends."
     readmore: "Going down the rabbit hole"
-    readmoretxt: "This is only a very short and concise summary of the system. If you want to get into the details, you can <a href=\"/bitcoin.pdf\">read the original paper</a> that describes the system's design, and explore the <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>."
+    readmoretxt: "This is only a very short and concise summary of the system. If you want to get into the details, you can <a href=\"/bitcoin.pdf\">read the original paper</a> that describes the system's design, read the <a href=\"/en/developer-documentation\">developer documentation</a>, and explore the <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>."
   index:
     title: "Bitcoin - Open source P2P money"
     listintro: "Bitcoin is an innovative payment network and a new kind of money."

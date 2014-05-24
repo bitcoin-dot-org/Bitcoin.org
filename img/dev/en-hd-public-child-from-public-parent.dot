@@ -1,0 +1,39 @@
+digraph extended {
+
+size=6.25;
+rankdir=LR;
+penwidth=1.75;
+node [ penwidth = 1.75, shape = "box" ];
+edge [ penwidth = 1.75 ];
+nodesep=0.05;
+splines = ortho;
+ranksep = 1.0;
+
+subgraph cluster_norm {
+    //style = "invis"
+    //label = "Creation Of Normal Child Extended Keys (Key + Chain Code)\nFrom Parent Extended Keys"
+
+    subgraph cluster_n_public_extended_key {
+        n_parent_public_key [ label = "Parent Public Key" ];
+        n_parent_chain_code [ label = "Parent Chain Code" ];
+    }
+
+    subgraph cluster_child_extended_key_norm {
+        child_public_key_norm [ label = "Child Public Key" ];
+        child_chain_code_norm [ label = "Child Chain Code" ];
+    }
+    hmac_norm [ style = "diagonals", label = "One-Way\nHash" ];
+    i_norm [ label = "i (Normal)" ];
+
+    n_parent_chain_code -> hmac_norm;
+    i_norm -> hmac_norm;
+    hmac_norm -> child_public_key_norm;
+    hmac_norm -> child_chain_code_norm;
+    n_parent_public_key -> child_public_key_norm;
+
+    label = "Normal Public"
+}
+
+label = "Creation Of Child Extended Public Keys (Key, Chain Code)\n(Hardened Child Public Keys Cannot Be Created From A Parent Public Key)"
+
+}

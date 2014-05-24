@@ -163,18 +163,18 @@ body{
 }
 
 .resources div{
-	border-top:expression((this.parentNode!=this.parentNode.parentNode.getElementsByTagName('DIV')[0])?'1px solid #e0e0e0':'0');
+	border-top:expression(this.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'1px solid #e0e0e0':'0');
 }
 .resources div div{
 	zoom:1;
 	display:inline;
 	padding-top:25px;
 	position:relative;
-	padding-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'40px':'');
-	border-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'1px solid #e0e0e0':'');
-	padding-left:expression(this.parentNode.getElementsByTagName('DIV')[1]==this?'40px':'');
-	border-left:expression(this.parentNode.getElementsByTagName('DIV')[1]==this?'1px solid #e0e0e0':'');
-	margin-left:expression(this.parentNode.getElementsByTagName('DIV')[1]==this?'-1px':'');
+	padding-right:expression(this.parentNode.parentNode.className=='resources'&&this.parentNode.getElementsByTagName('DIV')[0]==this?'40px':'');
+	border-right:expression(this.parentNode.parentNode.className=='resources'&&this.parentNode.getElementsByTagName('DIV')[0]==this?'1px solid #e0e0e0':'');
+	padding-left:expression(this.parentNode.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'40px':'');
+	border-left:expression(this.parentNode.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'1px solid #e0e0e0':'');
+	margin-left:expression(this.parentNode.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'-1px':'');
 }
 .resources>div>div:first-child+div{
 	/*This one is for IE7 only*/
@@ -188,6 +188,12 @@ body{
 }
 .resourcesorg div{
 	border-top:expression(this.parentNode.className=='resourcesorg'&&this.parentNode.getElementsByTagName('DIV')[0]!=this?'1px solid #e0e0e0':'0');
+}
+
+.docreference a{
+	zoom:1;
+	display:inline;
+	width:200px;
 }
 
 .downloadbox{

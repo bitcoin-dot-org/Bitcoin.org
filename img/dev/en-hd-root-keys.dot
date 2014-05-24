@@ -1,0 +1,42 @@
+digraph extended {
+
+size=6.25;
+rankdir=LR;
+penwidth=1.75;
+node [ penwidth = 1.75, shape = "box" ];
+edge [ penwidth = 1.75 ];
+nodesep=0.2;
+ranksep=0.2;
+splines = ortho;
+
+entropy [ label = "128, 256,\nOr 512 Bits\nOf Entropy\n(The Seed)" ];
+hmac [ label = "512-Bit\nOne-Way\nHash", style = "diagonals" ];
+
+entropy -> hmac;
+hmac -> private_key [label = "256 Bits" ];
+hmac -> chain_code [label = "256 Bits" ];
+
+
+subgraph cluster_y {
+style = "invis"
+public_key [ label = "Master\nPublic Key" ];
+private_key [ label = "Master\nPrivate Key" ];
+chain_code [ label = "Master\nChain Code" ];
+}
+
+style = "invis"
+
+subgraph cluster_x {
+extended_private_key [ label = "Master\nExtended\nPrivate Key" ];
+extended_public_key [ label = "Master\nExtended\nPublic Key" ];
+}
+
+private_key -> public_key [ style = "dashed", constraint = 1 ];
+chain_code -> extended_private_key;
+chain_code -> extended_public_key;
+private_key -> extended_private_key;
+public_key -> extended_public_key;
+
+label = "Creation Of The Master Keys"
+
+}

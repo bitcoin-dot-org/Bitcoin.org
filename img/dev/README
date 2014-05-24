@@ -1,0 +1,36 @@
+The images are generated using dot from the graphviz package.  For
+assistance with these files, feel free to contact dave@dtrt.org.
+
+The following examples generate a .png or .svg file from a .dot file:
+
+dot -T svg file.dot -o file.svg
+dot -T png file.dot -o file.png
+
+You can change a .circo or .neato file into a .png or .svg using
+corresponding commands:
+
+circo -T svg file.circo -o file.svg
+neato -T png file.neato -o file.png
+
+Notice: Graphviz can be inconsistent across versions. All of the SVG and
+PNG images here were generated using graphviz version 2.26.3
+(20100126.1600) on Debian 7 using the following shell loop:
+
+    fn="fontname=Sans"
+    for f in *dot
+    do 
+        dot -N$fn -G$fn -E$fn -o ${f/.dot}.svg -T svg $f
+        dot -N$fn -G$fn -E$fn -o ${f/.dot}.png -T png $f
+        optipng -o7 ${f/.dot}.png
+    done
+
+For improved compatability between Graphviz versions, files created or
+updated after 6 May 2014 are recommend to include the following code
+near the top of the file:
+
+    edge [ fontname="Sans" ]
+    node [ fontname="Sans" ]
+    graph [ fontname="Sans" ]
+
+Also, splines=ortho should not be used in new or updated files until
+Graphviz fixes its post-2.26.3 ortho code.
