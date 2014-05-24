@@ -210,14 +210,12 @@ table td,table th{
 	list-style:none;
 	padding:0;
 	margin:0;
-	text-align:right;
 	cursor:pointer;
 }
 .lang{
 	position:absolute;
 	right:5px;
 	top:8px;
-	height:30px;
 	border-left:2px solid transparent;
 	border-right:2px solid transparent;
 	border-top:2px solid transparent;
@@ -231,16 +229,29 @@ table td,table th{
 .lang li ul{
 	display:none;
 	right:-2px;
-	top:28px;
 	position:absolute;
 	background-color:#fff;
-	margin-left:-5px;
-	padding-bottom:4px;
-	border-left:2px solid #ebebeb;
-	border-right:2px solid #ebebeb;
-	border-bottom:2px solid #ebebeb;
+	padding:20px;
+	border:2px solid #ebebeb;
+	white-space:nowrap;
 }
 .lang:hover li ul{
+	display:block;
+}
+.lang li ul li{
+	display:inline-block;
+	vertical-align:top;
+	text-align:left;
+	width:180px;
+}
+.lang li ul li ul{
+	position:relative;
+	margin:-4px 0;
+	padding:0;
+	border:0;
+	top:0;
+}
+.lang li ul li ul li{
 	display:block;
 }
 .lang li a,
@@ -249,7 +260,6 @@ table td,table th{
 .lang li a:active{
 	text-decoration:none;
 	font-size:115%;
-	width:100px;
 	display:inline-block;
 	color:#b8b8b8;
 	padding:4px 8px;
@@ -258,17 +268,16 @@ table td,table th{
 .lang li ul li a:link,
 .lang li ul li a:visited,
 .lang li ul li a:active{
-	padding:2px 8px;
-
+	padding:4px 0;
+	width:180px;
 }
-.lang:hover li a{
+.lang:hover li a,
+.lang li ul li ul li:hover a,
+.lang li ul li ul li a.active{
 	color:#666666;
 }
 .lang:hover li ul li a{
 	color:#b8b8b8;
-}
-.lang li ul li:hover a{
-	color:#666666;
 }
 
 .logo{

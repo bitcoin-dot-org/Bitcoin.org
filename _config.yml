@@ -1,23 +1,23 @@
 langsorder:
-- id: de
-- id: id
-- id: en
-- id: es
-- id: fr
-- id: it
-- id: hu
-- id: nl
-- id: pl
-- id: pt_BR
-- id: ru
-- id: ro
-- id: sv
-- id: tr
-- id: bg
-- id: zh_CN
-- id: zh_TW
-- id: ar
-- id: fa
+- de
+- en
+- es
+- fr
+- id
+- it
+- hu
+- nl
+- pl
+- pt_BR
+- ru
+- ro
+- sv
+- tr
+- bg
+- zh_CN
+- zh_TW
+- ar
+- fa
 
 langs:
   ar: ألعربية
