@@ -72,3 +72,12 @@ title: "Developer Documentation - Bitcoin"
     </div>
   </div>
 </div>
+
+<div class="resourcesmore"><div>
+  <h2><img src="/img/ico_wiki.svg" class="titleicon" alt="Icon">Additional resources</h2>
+  <p><a href="/bitcoin.pdf">Bitcoin: A Peer-to-Peer Electronic Cash System</a> - Satoshi Nakamoto</p>
+  <p><a href="https://github.com/bitcoin/bips#readme">Bitcoin Improvement Proposals</a> - GitHub</p>
+  <p><a href="http://enetium.com/resources/Bitcoin.pdf">Bitcoin Protocol Specification (working paper)</a> - Krzysztof Okupski</p>
+  <p><a href="https://bitcoinj.github.io/#documentation">Bitcoinj Developer Documentation</a> - bitcoinj.org</p>
+  <p><a href="https://en.bitcoin.it/wiki/Category:Technical">Technical Pages</a> - Wiki</p>
+</div></div>

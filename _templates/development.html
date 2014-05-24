@@ -11,17 +11,16 @@ id: development
 
 <h2>{% translate spec %}</h2>
 <p>{% translate spectxt %}</p>
+{% case page.lang %}
+{% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'hu' or 'id' or 'it' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'ru' or 'sv' or 'tr' or 'zh_CN' or 'zh_TW' %}
 <ul>
-  {% case page.lang %}
-  {% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'hu' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
-  <li>{% translate speclinkguide development en %}</li>
-  {% else %}
-  <li>{% translate speclinkguide %}</li>
-  {% endcase %}
+  <li><a href="/en/developer-documentation">Developer Documentation</a></li>
   <li>{% translate speclink1 %}</li>
   <li>{% translate speclink2 %}</li>
   <li>{% translate speclink3 %}</li>
 </ul>
+{% else %}
+{% endcase %}
 
 <h2>{% translate coredev %}</h2>
 <ul>

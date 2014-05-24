@@ -190,6 +190,11 @@ body{
 	border-top:expression(this.parentNode.className=='resourcesorg'&&this.parentNode.getElementsByTagName('DIV')[0]!=this?'1px solid #e0e0e0':'0');
 }
 
+.resourcesmore div{
+	zoom:1;
+	display:inline;
+}
+
 .docreference a{
 	zoom:1;
 	display:inline;
