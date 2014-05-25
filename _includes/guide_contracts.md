@@ -204,8 +204,7 @@ can each easily track those satoshis to learn what Bitcoin
 addresses she pays, how much she pays them, and possibly how many
 satoshis she has left.
 
-Because Alice isn't a criminal, she doesn't want to use some shady
-Bitcoin laundering service; she just wants plausible deniability about
+Alice isn't a criminal, she just wants plausible deniability about
 where she has spent her satoshis and how many she has left, so she
 starts up the Tor anonymity service on her computer and logs into an
 IRC chatroom as "AnonGirl."
