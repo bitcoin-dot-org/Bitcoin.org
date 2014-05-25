@@ -406,9 +406,8 @@ conditions:
   evaluation stack. It cannot push new OP codes, with the exception of
   OP codes which solely push data to the stack.
 
-* If any of the transaction's outputs spend less than a minimal value
-  (currently 546 satoshis), the transaction must pay
-  a minimum transaction fee (currently 10,000 satoshis).
+* The transaction must not include any outputs which receive fewer than
+  the defined minimum number of satoshis, currently 546.
 
 {% endautocrossref %}
 
@@ -550,8 +549,8 @@ based on their fee per byte, with higher-paying transactions being added
 in sequence until all of the available space is filled.
 
 As of Bitcoin Core 0.9, transactions which do not count as high-priority transactions
-need to pay a [minimum fee][]{:#term-minimum-fee}{:.term} of 10,000 satoshis to be
-broadcast across the network. Any transaction paying the minimum fee
+need to pay a [minimum fee][]{:#term-minimum-fee}{:.term} (currently 1,000 satoshis) to be
+broadcast across the network. Any transaction paying only the minimum fee
 should be prepared to wait a long time before there's enough spare space
 in a block to include it. Please see the [verifying payment section][section verifying payment]
 for why this could be important.
