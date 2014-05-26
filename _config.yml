@@ -1,24 +1,24 @@
 langsorder:
+- id
 - de
 - en
 - es
 - fr
-- id
 - it
 - hu
 - nl
 - pl
 - pt_BR
-- ru
 - ro
 - sv
 - tr
 - bg
+- ru
+- ar
+- fa
+- ko
 - zh_CN
 - zh_TW
-- ar
-- ko
-- fa
 
 langs:
   ar: ألعربية
@@ -33,9 +33,9 @@ langs:
   it: Italiano
   ko: 한국의
   nl: Nederlands
-  pl: Polski
+  pl: polski
   pt_BR: Português Brasil
-  ro: ‪română‬
+  ro: română
   ru: Русский
   sv: Svenska
   tr: Türkçe
