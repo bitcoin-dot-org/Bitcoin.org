@@ -361,6 +361,25 @@ addEvent(window,'load',evtimestamp);
 init();
 }
 
+function addAnchorLinks(){
+//Apply anchor links icon on each title displayed on CSS hover
+var nodes=[];
+var tags=['H2','H3','H4','H5','H6'];
+for(var i=0,n=tags.length;i<n;i++){
+	for(var ii=0,t=document.getElementsByTagName(tags[i]),nn=t.length;ii<nn;ii++)nodes.push(t[ii]);
+}
+for(var i=0,n=nodes.length;i<n;i++){
+	if(!nodes[i].id)continue;
+	if(nodes[i].getElementsByTagName('A').length>0)return;
+	var cl=nodes[i].className.split(' ');
+	cl.push('anchorAf')
+	nodes[i].className=cl.join(' ');
+	var anc=document.createElement('A');
+	anc.href='#'+nodes[i].id;
+	nodes[i].insertBefore(anc,nodes[i].firstChild);
+}
+}
+
 function updateIssue(e){
 //Update GitHub issue link with pre-filled with current page location
 var t=getEventTarget(e);
