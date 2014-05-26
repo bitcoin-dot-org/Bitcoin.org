@@ -192,6 +192,7 @@
 [MIME]: https://en.wikipedia.org/wiki/Internet_media_type
 [Merge Avoidance subsection]: /en/developer-guide#merge-avoidance
 [mozrootstore]: https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+[Payment Request Generator]: http://bitcoincore.org/~gavin/createpaymentrequest.php
 [Piotr Piasecki's testnet faucet]: https://tpfaucet.appspot.com/
 [prime symbol]: https://en.wikipedia.org/wiki/Prime_%28symbol%29
 [protobuf]: https://developers.google.com/protocol-buffers/
