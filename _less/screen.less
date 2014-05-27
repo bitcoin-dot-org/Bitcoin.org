@@ -1057,6 +1057,16 @@ table td,table th{
 	background:url(/img/mini_ico_link.svg) no-repeat 0 4px;
 }
 
+.coredevtable div div:first-child{
+	width:200px;
+}
+.coredevtable div div:first-child+div{
+	width:220px;
+}
+.coredevtable div div:first-child+div+div{
+	width:80px;
+}
+
 .chatbox{
 	text-align:center;
 }
@@ -1412,14 +1422,14 @@ h2 .rssicon{
 	height:400px;
 	margin-bottom:25px;
 }
-.eventtable div{
+.listtable div{
 	padding:8px 0;
 	border-top:1px solid #E2E2E2;
 }
-.eventtable div:first-child{
+.listtable div:first-child{
 	border-top:0;
 }
-.eventtable div div{
+.listtable div div{
 	display:inline-block;
 	vertical-align:middle;
 	text-align:left;
@@ -1884,10 +1894,17 @@ h2 .rssicon{
 		background:none;
 		height:auto;
 	}
-	.eventtable div div{
+	.listtable div div{
 		display:block;
 	}
-	.eventtable div div:first-child,.eventtable div div:first-child+div,.eventtable div div:first-child+div+div{
+	.eventtable div div:first-child,
+	.eventtable div div:first-child+div,
+	.eventtable div div:first-child+div+div{
+		width:auto;
+	}
+	.coredevtable div div:first-child,
+	.coredevtable div div:first-child+div,
+	.coredevtable div div:first-child+div+div{
 		width:auto;
 	}
 	.press-faq>div{
