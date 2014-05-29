@@ -39,11 +39,13 @@ if(typeof(legacyIE)==='undefined'){
     <ul class="lang">
       <li><a href="#" onclick="return false;">{{ site.langs[page.lang] }}</a>
       <ul>
+        <li><ul>
+        {% assign i == 0 %}
         {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' class="active"'%}{% endif %}
-        {% cycle 'start': '<li><ul>', '', '', '', '', '', '', '', '', '', '' %}
+        {% assign m = i | modulo:11 %}{% assign i = i | plus:1 %}{% if m == 0 and i != 1 %}</li></ul><li><ul>{% endif %}
           <li><a href="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"{{ active }}>{{ site.langs[lang] }}</a></li>
-        {% cycle 'end': '', '', '', '', '', '', '', '', '', '', '</ul></li>' %}{% endfor %}
-        {% cycle 'end': '', '</ul></li>', '</ul></li>', '</ul></li>', '</ul></li>', '</ul></li>', '</ul></li>', '</ul></li>', '</ul></li>', '</ul></li>', '</ul></li>' %}
+        {% endfor %}
+        </ul></li>
       </ul>
       </li>
     </ul>
