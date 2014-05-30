@@ -51,8 +51,6 @@ ko:
     securitytext: "대부분의 보안은 비트코인 프로토콜이 감당합니다. 이는 PCI 준수가 불필요하다는 것이고 또 서비스나 제품이 즉각배달 되었을 경우에만 부정적발이 필요하다는 뜻입니다. 유저는 비트코인을 <a href=\"#secure-your-wallet#\">안전한 환경</a>에 저장하고 지불요청서를 잘 관리하는 것에 주의하면 됩니다."
     micro: "저렴한 소액 결제"
     microtext: "비트코인은 가장 저렴한 지불처리요금을 제공하며 대부분 몇 달러 가치의 소액결제를 하는데 사용됩니다. 비트코인은 이전에는 재정의 한계에 의해 불가능했던 창의적인 온라인 서비스들을 설계하는 것을 가능하게 합니다. 이는 다양한 종류의 팁 시스템이나 자동결제시스템을 포함합니다."
-    serviceslist: "위키에 있는 <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services\">상인 서비스 리스트</a> 방문하기."
-    apireference: "또는 비트코인의 <a href=\"https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)\">API 레퍼런스</a> 및 <a href=\"https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list\">API 콜 리스트</a> 읽기."
   bitcoin-for-individuals:
     title: "개인을 위한 비트코인 - Bitcoin"
     pagetitle: "개인을 위한 비트코인"

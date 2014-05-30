@@ -51,8 +51,6 @@ zh_CN:
     securitytext: "大部分的安全性问题都由协议来处理。这意味着无需遵守PCI标准，而欺诈检测仅仅在服务或产品是即时到货的情况下才有必要。你关心的主要问题应该是将你的比特币存放在一个 <a href=\"#secure-your-wallet#\">安全环境</a>中并保护那些用户可见的支付请求信息。 "
     micro: "低廉的小额支付"
     microtext: "比特币提供最低的支付手续费并且通常可以用来支付小到几美元的金额。比特币允许用于设计和实现在过去由于金融限制根本不存在的具有创新的网上服务。其中包括各种各样的小费系统和自动化支付解决方案。"
-    serviceslist: "浏览比特币维基上的<a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services\">商户列表</a>。"
-    apireference: "或阅读bitcoind <a href=\"https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)\">API参考</a>及<a href=\"https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list\">API调用列表</a>。"
   bitcoin-for-individuals:
     title: "比特币的个人用途 - 比特币"
     pagetitle: "比特币的个人用途"

@@ -51,8 +51,6 @@ sv:
     securitytext: "De flesta delar av säkerheten är skött av protokollet. Det betyder att det inte finns någon användning att följa PCIs krav och bedrägeridetektering är bara ett krav när tjänster eller produkter är levererade omedelbart. Att lagra dina bitcoins på en <a href=\"#secure-your-wallet#\">säker plats</a> och att säkra betalningsförfrågningar ska vara ditt huvudsakliga bekymmer."
     micro: "Billiga mikrobetalningar"
     microtext: "Bitcoin erbjuder de lägsta betalningsavgifterna och kan användas för att skicka mikrobetalningar på bara några kronor. Bitcoins design tillåter nya kreativa nättjänster som inte har kunnat existera tidigare bara på grund av finansiella begränsningar. Detta inkluderar olika typer av drickssystem och automatiserade betalningslösningar.   "
-    serviceslist: "Besök <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services\">listan med handlartjänster</a> på Bitcoin-wikin."
-    apireference: "Eller läs bitcoins <a href=\"https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)\">API referens</a> och <a href=\"https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list\">API metodlista</a>."
   bitcoin-for-individuals:
     title: "Bitcoin för privatpersoner"
     pagetitle: "Bitcoin för privatpersoner "

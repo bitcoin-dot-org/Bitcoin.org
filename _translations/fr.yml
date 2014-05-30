@@ -51,8 +51,6 @@ fr:
     securitytext: "La plus grande partie de la sécurité est prise en charge par le protocole. Ce qui signifie que vous n'avez pas à vous soucier d'être conforme avec la norme PCI et la détection de fraudes n'est requise que si vous expédiez vos produits ou vos services sans délai. Conserver vos bitcoins dans un <a href=\"#secure-your-wallet#\">environnement sécurisé</a> et sécuriser les demandes de paiement affichées à l'utilisateur devraient être vos principales préoccupations."
     micro: "Micro paiements bon marché"
     microtext: "Bitcoin offre les frais de transaction les plus bas et peut être utilisé pour effectuer des micro paiements d'à peine quelques dollars. Bitcoin permet la conception de nouveaux services en ligne innovants qui ne pouvaient pas exister à cause de limites financières. Ceci inclut divers types de systèmes de pourboires et de paiements automatisés."
-    serviceslist: "Visitez la <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services\">liste des services pour commerçants</a> sur le wiki."
-    apireference: "Ou consultez la <a href=\"https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)\">référence de l'API</a> et la <a href=\"https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list\">liste des appels API</a> de bitcoind."
   bitcoin-for-individuals:
     title: "Bitcoin pour les particuliers - Bitcoin"
     pagetitle: "Bitcoin pour les particuliers"

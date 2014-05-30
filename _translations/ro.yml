@@ -51,8 +51,6 @@ ro:
     securitytext: "Protocolul se ocupă de aproape tot ce ţine de securitate. Asta înseamnă că nu este necesară conformarea standardelor PCI şi că detectarea fraudelor este necesară doar atunci când serviciile sau produsele sunt trimise instant. Păstrarea bitcoinilor într-un <a href=\"#secure-your-wallet#\">mediu sigur</a> şi securizarea cererilor de plată afişate utilizatorilor ar trebui să fie principalul obiectiv."
     micro: "Micro plăți ieftine"
     microtext: "Bitcoin oferă cele mai mici taxe de procesare ale tranzacţiilor şi de regulă poate fi folosit pentru a face micro-plăţi de ordinul a câţiva lei. Bitcoin permite proiectarea şi crearea de noi servicii oinline creative ce nu existau înainte din cauza limitărilor financiare. Acestea includ diferite sisteme de recompensare şi soluţii de plată automate."
-    serviceslist: " Vizitează <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services\">lista serviciilor de comercianţi</a> de pe Wiki."
-    apireference: "Sau citeşte <a href=\"https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)\">despre API-ul bitcoind</a> şi <a href=\"https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list\">lista de call-uri API</a>."
   bitcoin-for-individuals:
     title: "Bitcoin pentru persoane fizice - Bitcoin"
     pagetitle: "Bitcoin pentru persoane fizice"

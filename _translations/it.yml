@@ -80,8 +80,6 @@ it:
     securitytext: "La maggior parte della sicurezza è gestita dal protocollo sul client e sulla rete Bitcoin. L'autenticità è verificata tramite chiavi private e il <a href=\"https://en.bitcoin.it/wiki/Double-spending\">double-spend</a> (l'impiego di una stessa quantità di denaro per più di una volta) è impedito attraverso la rete Bitcoin. Non è necessario quindi rispettare gli <a href=\"https://en.wikipedia.org/wiki/PCI_DSS\">standard PCI</a> o impiegare sistemi di rilevamento frodi."
     micro: "Micro pagamenti convenienti"
     microtext: "Bitcoin offre i più bassi costi di elaborazione per qualunque tipo di transazione, inclusi i micro-pagamenti. Il che significa che Bitcoin può essere usato per progettare ed implementare servizi online innovativi che non potrebbero altrimenti esistere per limitazioni finanziarie."
-    serviceslist: "Visita la <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services\">lista dei servizi mercantili</a> sul wiki."
-    apireference: "Oppure leggi la Bitcoin Core <a href=\"https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)\">API reference</a> e la <a href=\"https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list\">API call list</a>."
   bitcoin-for-individuals:
     title: "Bitcoin per Privati - Bitcoin"
     pagetitle: "Bitcoin per Privati"
@@ -144,10 +142,7 @@ it:
     walletarmory: "Armory è un client Bitcoin avanzato che si basa su Bitcoin Core e presenta caratteristiche dedicate agli utenti più esperti. Offre molte funzionalità di backup e criptaggio, e consente una sicura archiviazione sui computer offline (cold storage)."
     walletelectrum: "Electrum punta alla velocità e semplicità, con un basso uso di risorse. Utilizza dei server remoti che gestiscono le parti più complicate del sistema Bitcoin, e permette il recupero del proprio portafoglio con una frase segreta."
     walletbitcoinwallet: "Bitcoin Wallet è un client leggero per sistemi Android e BlackBerry. Non ha bisogno di essere associato a nessun servizio online per funzionare. Permette la scansione dei codici QR e l'utilizzo della tecnologia radio NFC."
-    walletblockchaininfomob: "Blockchain.info è un portafoglio web ibrido per dispositivi mobili. Include molte funzionalità di blockchain.info come il backup per portafoglio web."
     walletblockchaininfo: "Blockchain.info è un portafoglio ibrido facile da usare. Conserva una versione criptata del tuo portafoglio online ma la decriptazione avviene sul tuo browser. Per motivi di sicurezza dovresti sempre usare l'estensione per browser e i backup via email."
-    walletpaytunia: "Paytunia è un portafoglio web per dispositivi mobili sviluppato da Paymium che funziona con Bitcoin-central per consentirti l'accesso agli scambi Bitcoin direttamente dal tuo dispositivo mobile. E' disponibile per iPhone ed a breve sarà supportato anche da Android."
-    walletbips: "BIPS è un servizio di portafogli online da WalletBit che permette di acquistare e vendere bitcoin facilmente in molti paesi. Offre inoltre cold storage (archiviazione non in linea di bitcoin), importazione del portafoglio e molte funzionalità per i commercianti."
     walletcoinbase: "Coinbase è un servizio di portafogli online che mira ad essere il più facile da usare. E' disponibile anche come applicazione per Android, dispone di strumenti per i commercianti e fornisce un'integrazione con i conti bancari americani per acquistare e vendere bitcoin."
     walletdownload: "<a href=\"#download#\">Scarica</a>"
     walletvisit: "Visita il sito web"
@@ -181,12 +176,6 @@ it:
     latestversion: "Ultima versione: "
     download: "Scarica Bitcoin Core"
     downloados: "O scegli il tuo sistema operativo"
-    downloadwinzip: "Scarica per Windows (zip)"
-    downloadwinexe: "Scarica per Windows (exe)"
-    downloadubu: "Scarica per Ubuntu (PPA)"
-    downloadlin: "Scarica per Linux (tgz, 32/64-bit)"
-    downloadmac: "Scarica per Mac OS X"
-    downloadsource: "Codice sorgente"
     versionhistory: "Mostra la cronologia delle versioni"
     notelicense: "Bitcoin Core è un progetto <a href=\"https://www.fsf.org/it/what-is-fs-ita\">libero e open-source</a> portato avanti dalla comunità e rilasciato sotto la <a href=\"https://it.wikipedia.org/wiki/Licenza_MIT\">licenza MIT</a>."
     notesync: "<b>Nota</b> : la sincronizzazione iniziale di Bitcoin Core può richiedere un giorno per essere completata. Dovresti assicurati di avere sufficiente larghezza di banda e spazio di archiviazione per poter ospitare la completa <a href=\"http://blockchain.info/charts/blocks-size\">dimensione della blockchain</a>."
@@ -219,7 +208,6 @@ it:
     intro: "Questa è una domanda che spesso causa confusione. Qui c'è una spiegazione veloce!"
     basics: "Le nozioni di base per un nuovo utente"
     basicstxt1: "Come nuovo utente, devi solo <a href=\"#choose-your-wallet#\">scegliere un portafoglio</a> da installare sul tuo computer o sul tuo cellulare. Una volta installato, il portafoglio genererà il tuo primo indirizzo Bitcoin e potrai crearne degli altri ogni volta che ne avrai bisogno. Puoi rivelare uno dei tuoi indirizzi Bitcoin ai tuoi amici cosicché possano pagarti o viceversa, puoi pagare i tuoi amici se ti rivelano i loro indirizzi. Infatti, il funzionamento è molto simile a quello delle e-mail. Così tutto quello che resta da fare a questo punto è ottenere alcuni bitcoin e <a href=\"#secure-your-wallet#\">tenerli al sicuro</a>. Per poter iniziare a utilizzare Bitcoin, non è necessario che tu capisca i dettagli tecnici."
-    basicstxt2: "Comunque, se vuoi saperne di più, continua a leggere!"
     balances: "Bilanci<a class=\"titlelight\">- block chain</a>"
     balancestxt: "La <a href=\"https://en.bitcoin.it/wiki/Block_chain\">blockchain</a> è <b>un registro delle transazioni, pubblico e condiviso</b>, a cui si affida l'intera rete Bitcoin. Tutte le transazioni confermate vengono incluse nella blockchain senza nessuna eccezione. In questo modo si può verificare che chi esegue una nuova transazione impieghi dei bitcoin effettivamente posseduti. La <a href=\"#vocabulary##[vocabulary.cryptography]\">crittografia</a> è impiegata per mantenere l'integrità e l'ordine cronologico della blockchain."
     transactions: "Transazioni<a class=\"titlelight\"> - chiavi private</a>"
@@ -384,12 +372,6 @@ it:
     experimentaltxt: "Bitcoin è una nuova valuta sperimentale in pieno sviluppo. Sebbene stia diventando sempre meno sperimentale con l'aumentare del suo impiego, si dovrebbe tener presente che Bitcoin è una nuova invenzione che sta esplorando idee mai tentate prima. Come tale, il suo futuro non può essere predetto da nessuno."
     tax: "Non dimenticare le imposte governative"
     taxtxt: "Bitcoin non è una valuta ufficiale. Detto questo, la maggior parte delle giurisdizioni richiede il pagamento di imposte sul redditto, sulle vendite, sui salari e sulle plusvalenze per qualunque cosa abbia valore, incluso Bitcoin."
-  images:
-    glance: Panoramica della rete
-    you: Tu
-    friend: Amico
-    blockchain: la Blockchain
-    blockchaintxt: (un registro delle transazioni pubblico e condiviso)
   layout:
     menu-faq: A proposito
     menu-about-us: "A proposito di Bitcoin"
@@ -399,7 +381,6 @@ it:
     menu-community: Comunità
     menu-development: Sviluppo
     menu-events: Eventi
-    menu-foundation: Fondazione
     menu-getting-started: "Come iniziare"
     menu-how-it-works: "Come funziona"
     menu-innovation: Innovazione

@@ -128,7 +128,6 @@ pl:
     pagetitle: "Wybierz swój portfel"
     summary: "Twój portfel Bitcoin pozwala ci na dokonywanie transakcji ze światem. Daje ci na własność <i>adres</i> Bitcoin który możesz używać do otrzymywania przelewów od innych użytkowników jak i je im wysyłać. Tak jak i w przypadku poczty e-mail możesz otrzymywać bitcoiny kiedy nie jesteś zalogowany. Portfele są również ze sobą kompatybilne. Zanim rozpoczniesz proszę <b>zapoznaj się wpierw z <a href=\"#you-need-to-know#\">co-powinieneś-wiedzieć</a></b>."
     getstarted: "Rozpocznij w sposób prosty oraz szybki"
-    getstartedsum: "Jeśli jesteś nowicjuszem w Bitcoin to te portfele są dobrym miejscem byś rozpoczął."
     getstarteddesk: "<a href=\"https://multibit.org/\"><b>MultiBit</b></a> jest popularną aplikacją dostępną dla Windows, Mac oraz Linux-a."
     getstartedmobi: "<a href=\"https://play.google.com/store/apps/details?id=de.schildbach.wallet\"><b>Portfel  Bitcoin</b></a> dla Androida działa na twoim telefonie i tablecie."
     bethenetwork: "Weź udział w sieci Bitcoin"
@@ -144,10 +143,7 @@ pl:
     walletarmory: "Armory - Sejf jest zaawansowanym klientem który działa wraz z Bitcoin Core dając szersze możliwości użytkownikom zaawansowanym. Oferuje wiele elementów szyfrowania oraz dokonywania kopii bezpieczeństwa oraz pozwala na bezpieczne przechowywanie na komputerach niepodłączonych do sieci."
     walletelectrum: "Electrum koncentruje się na szybkości oraz prostocie użycia przy niewielkim użyciu zasobów. Używa serwerów zdalnych które wykonują najbardziej skomplikowane zadania systemu Bitcoin oraz pozwala Ci na odtworzenie twojego portfela przy użyciu hasła."
     walletbitcoinwallet: "Bitcoin Wallet jest niewielką aplikacją mobilną dla systemów z Androidem czy BlackBerry. Nie musi być powiązany z żadnym serwisem online by móc działać. Jest kompatybilny ze skanerem kodów QR oraz NFC."
-    walletblockchaininfomob: "Blockchain.info jest portfelem sieciowym hybrydowym dla urządzeń przenośnych. Zawiera wiele funkcjonalności blockchain.info jak sieciowa kopia zapasowa portfela."
     walletblockchaininfo: "Blockchain.info jest przyjaznym dla użytkownika portfelem hybrydowym. Przechowuje zaszyfrowaną wersję portfela w sieci, a proces rozkodowywania następuje w twojej przeglądarce. Ze względów bezpieczeństwa powinieneś zawsze używać wtyczki do przeglądarki i wysyłać kopie zapasowe mailami."
-    walletpaytunia: "Paytunia jest mobilnym portfelem sieciowym użytkującym Paymium działającym wraz z Bitcoin-central byś mógł otrzymać dostęp do wymiany prosto z twojego telefonu. Jest dostępny na iPhone, a wsparcie dla Androida jest w drodze."
-    walletbips: "BIPS jest serwisem portfela sieciowego od WalletBit pozwalającego na zakup oraz sprzedaż bitcoinów w wielu krajach. Oferuję również przechowalnie poza-sieciowe, importowanie portfela i wiele innych użytecznych w handlu funkcjonalności."
     walletcoinbase: "Coinbase jest serwisem portfela sieciowego który mierzy w bycie najprostszym w użytkowaniu. Udostępnia również aplikację portfela sieciowego na Androida, narzędzia handlowe oraz integrację z kontami bankowymi w USA by umożliwić zakup oraz sprzedaż bitcoin."
     walletdownload: "<a href=\"#download#\">Pobierz</a>"
     walletvisit: "Odwiedź witrynę"
@@ -175,12 +171,6 @@ pl:
     pagetitle: "Ściągnij - Bitcoin Core"
     latestversion: "Najnowsza wersja:"
     download: "Ściągnij - Bitcoin Core"
-    downloadwinzip: "Pobierz dla Windows (zip)"
-    downloadwinexe: "Pobierz dla Windows (exe)"
-    downloadubu: "Pobierz dla Ubuntu (PPA)"
-    downloadlin: "Pobierz dla Linux (tgz, 32/64-bit)"
-    downloadmac: "Pobierz dla Mac OS X"
-    downloadsource: "Kod Źródłowy"
     versionhistory: "Pokaż historię wersji"
     notelicense: "Aplikacja Bitcoin Core jest tworzona przez społeczność jako <a href=\"http://www.fsf.org/about/what-is-free-software\">darmowy projekt o otwartym kodzie</a> źródłowym opublikowanym na zasadach <a href=\"http://opensource.org/licenses/mit-license.php\">licencji MIT</a>."
     notesync: "<b>Uwaga</b> : Początkowa synchronizacja Bitcoin Core może trwać dzień zanim zostanie ukończona. Upewnij się, że posiadasz wystarczająco pasma internetowego oraz przestrzeni dyskowej na <a href=\"http://blockchain.info/charts/blocks-size\">łańcuch bloku o pełnym rozmiarze</a>."
@@ -197,7 +187,6 @@ pl:
     intro: "W porządku, to jest pytanie które najczęściej powoduje zamieszanie. Tutaj krótkie wyjaśnienie!"
     basics: "Podstawy dla nowego użytkownika"
     basicstxt1: "Jako nowy użytkownik potrzebujesz jedynie <a href=\"#choose-your-wallet#\">wybrać swój portfel<a> który zainstalujesz na swoim komputerze. Kiedy już zostanie zainstalowany wygeneruje pierwszy adres Bitcoin i może wygenerować kolejne jeśli tylko potrzebujesz. Możesz ujawnić jeden ze swoich adresów swoim znajomym by mogli tobie zapłacić lub ty im gdy tylko oni przedstawią ci swój adres. De facto jest to bardzo podobny proces który znamy z komunikacji mailowej. Po założeniu adresu można już zbierać bitcoiny oraz <a href=\"#secure-your-wallet#\">przechowywać je w bezpieczny sposób</a>. Nie ma potrzeby zapoznawania się z technicznymi detalami przed rozpoczęciem używania Bitcoin."
-    basicstxt2: "Jeśli potrzebujesz wiedzieć więcej, czytaj dalej!"
     balances: "Saldo<a class=\"titlelight\"> - łańcuch bloków</a>"
     balancestxt: "Łańcuch bloków jest <b>współdzielonym zapisem transakcji</b> na którym polega cała sieć Bitcoin. Wszystkie potwierdzone transakcje są w nim zapisane bez żadnych wyjątków. W ten sposób transakcje mogą zostać zweryfikowane pod kątem posiadania odpowiedniej ilości bitcoin na koncie wydającego. Integralność oraz porządek chronologiczny łańcucha bloków jest wymuszony poprzez <a href=\"#vocabulary##[vocabulary.cryptography]\">kryptografię</a>."
     transactions: "Transakcje<a class=\"titlelight\"> - klucze prywatne</a>"
@@ -279,21 +268,11 @@ pl:
     offlinetxtxt3: "Podpisz transakcję na komputerze nie podłączonym do sieci."
     offlinetxtxt4: "Prześlij podpisaną transakcję na komputer podłączony do sieci."
     offlinetxtxt5: "Ponieważ komputer który jest podłączony do sieci nie może podpisywać transakcji to również nie może być użyty do wycofania z niego funduszy w przypadku gdyby został przejęty przez hackerów. <a href=\"http://bitcoinarmory.com/about/using-our-wallet/#offlinewallet\">Arsenał</a> może zostać użyty do podpisywania transakcji bez dostępu do sieci."
-    offlinetmp: "Środowisko tymczasowe"
-    offlinetmptxt: "To podejście obejmuje wczytywanie portfela w środowisku tymczasowym. Dla przykładu możliwe jest by wystartować komputer z płyty Linux Live, wczytać portfel SPV wraz z konfiguracją z klucza USB oraz wydać transakcję. Zaletą startu z zaufanego środowiska tylko do odczytu jest to, że żaden nieznany kod zostanie wczytany oraz żaden ślad twojego portfela nie pozostanie na dysku w użytym komputerze. Powinieneś jednak uważać na następujące punkty."
-    offlinetmplose: "Utrata funduszy"
-    offlinetmplosetxt: "Środowisko tymczasowe jest idealnym miejscem by stracić fundusze na zawsze. Jeśli twój portfel nie został wczytany z zapisywanego nośnika jak klucz USB to jakiekolwiek zmiany w twoim portfelu zostaną bezpowrotnie stracone włączając w to nowe adresy Bitcoin które mogłeś utworzyć podczas sesji tymczasowej by otrzymać zmiany z twoich ostatnich transakcji."
-    offlinetmpmiss: "Niezgodność haseł"
-    offlinetmpmisstxt: "Rozpoczęcie środowiska tymczasowego może spowodować że zostanie ono wczytane z innymi ustawieniami klawiatury niż te do których przywykliśmy. To z kolei może spowodować, że powstaną inne znaki od oczekiwanych co przy użyciu szyfrowania może prowadzić do niezgodności haseł. By sprawdzić czy to ma miejsce wypisz swoje hasło na ekranie komputera o może przeciwdziałać problemowi."
-    offlinetmptrace: "Nie pozostawianie śladów"
-    offlinetmptracetxt: "Tak długo jak tylko medium na którym zapisywane są dane jest podłączone do komputera istnieje niewielkie ryzyko, że ślady twoich kluczy prywatnych na nim pozostaną. By tego całkowicie uniknąć konieczne jest odłączenie dysku lub wyłączenie partycji tymczasowej/pliku wymiany przed wczytaniem swojego portfela."
     hardwarewallet: "Portfele sprzętowe są przyszłością"
     hardwarewallettxt: "Portmonetki sprzętowe są najlepszym balansem pomiędzy wysokim bezpieczeństwem oraz łatwością użytkowania. Są to niewielkie urządzenia które na starcie zostały zaprojektowane by służyć jako tylko i wyłącznie jako portfele i nic więcej. Żaden program nie może zostać na nich zainstalowany czyniąc je bardzo odpornymi na zagrożenia związane z komputerami oraz kradzieżami przez złodziei internetowych. Ponieważ pozwalają one na wykonanie kopii zapasowej możesz odtworzyć swoje fundusze w przypadku utraty urządzenia."
     hardwarewalletsoon: "Na dzień dzisiejszy żadne sprzętowe portfele nie zostały wprowadzony do zastosowania produkcyjnego ale one niedługo nadejdą:"
     offlinemulti: "Multi-podpis chroniący przed kradzieżą"
     offlinemultitxt: "Bitcoin zawiera funkcjonalność multi-podpisu który pozwala by nim zlecenie transakcji zostało zawarte wymagało więcej jak jednego klucza prywatnego do jej podpisania. Na chwilę obecną jest wymagana większa wiedza techniczna by móc korzystać z tej możliwości, niemniej w przyszłości należy się spodziewać większej dostępności dla niej. Przykładowo multi-podpis pozwala organizacji na dostęp do funduszy jedynie pod warunkiem gdy 3 z 5ciu jej członków podpisze transakcję. Pozwala również by przyszłe portfele posiadały kilka adresów multi-podpisów by w ten sposób zamieszczać je na jednym z użytkowanych przez ciebie komputerów oraz drugi w sieci by złodziejowi chcącemu ukraść twoje fundusze nie wystarczył dostęp do jedynie jednego z nich."
-    offlinemobile: "Niewielkie kwoty na twoim przenośnym telefonie"
-    offlinemobiletxt: "Portfel Bitcoin w twoim telefonie jest jak portfel z pieniędzmi. Jeśli nie trzymał być tysiąca dolarów w kieszeni to powinieneś rozważyć również podobne zachowanie w przypadku portfela Bitcoin. Zawsze możesz w prosty sposób zwiększyć na niej fundusze jeśli to będzie konieczne. W ten oto sposób możesz połączyć bezpieczeństwo z prostotą użytkowania."
     offlinetestament: "Pomyśl o swoim testamencie"
     offlinetestamenttxt: "Twoje bitcoiny zostaną na zawsze stracone jeśli nie posiadasz planu przekazania ich swoim znajomym i rodzinie. Jeśli lokalizacja twojego portfela oraz hasło do niego nie będą nieznane nikomu kiedy odejdziesz wówczas nie istnieje żadna nadzieja by twoje fundusze były kiedykolwiek odzyskane. Poświęcenie chwili czasu w tych kwestiach może oznaczać wielką różnicę."
   support-bitcoin:
@@ -367,12 +346,6 @@ pl:
     experimentaltxt: "Bitcoin jest eksperymentalną walutą która jest aktywnie rozwijana, Mimo, że z każdą kolejną chwilą gdy jego użytkowanie rośnie staje się mniej eksperymentalny to jednak pamiętać, że Bitcoin jest nowym wynalazkiem który eksploruje ideę która nigdy wcześniej nie została wypróbowana. Jako taki jego przyszłość nie może być przewidziana przez nikogo."
     tax: "Nie zapomnij o podatkach rządowych"
     taxtxt: "Bitcoin nie jest oficjalną walutą. Wiedząc to pamiętaj, że większość obszarów jurysdykcji nadal wymaga od ciebie opłacenia podatku dochodowego, od sprzedaży, kosztów płacy czy podatku od zysków ze sprzedaży towarów zawierających wartość włączając w to Bitcoin."
-  images:
-    glance: Sieć na tacy
-    you: Ty
-    friend: Przyjaciel
-    blockchain: Łańcuch kluczy
-    blockchaintxt: (współdzielony publiczny zapis transakcji)
   layout:
     menu-intro: Wprowadzenie
     menu-bitcoin-for-individuals: Osoby prywatne
@@ -387,7 +360,6 @@ pl:
     menu-press: Prasa
     menu-innovation: Innowacje
     menu-support-bitcoin: Uczestniczyć
-    menu-foundation: Fundacja
     menu-faq: O bitcoinie
     menu-about-us: "O bitcoin.org"
     menu-choose-your-wallet: "Wybierz swój portfel"
@@ -399,7 +371,6 @@ pl:
     bitcoin-for-developers: bitcoin-dla-deweloperow
     bitcoin-for-individuals: bitcoin-dla-osob-fizycznych
     bitcoin-for-businesses: bitcoin-dla-biznesu
-    bitcoin-for-press: 
     choose-your-wallet: wybierz-swoj-portfel
     community: spolecznosc
     development: rozwoj
