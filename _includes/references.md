@@ -181,6 +181,7 @@
 [core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
 [core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
 [DER]: https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
+[devguide]: /en/developer-guide
 [devguide wallets]: /en/developer-guide#wallets
 [devref wallets]: /en/developer-reference#wallets
 [docs issue]: https://github.com/bitcoin/bitcoin.org/issues
