@@ -280,10 +280,7 @@ standard transactions.
 Non-standard transactions---those that fail the test---may be accepted
 by nodes not using the default Bitcoin Core settings. If they are
 included in blocks, they will also avoid the isStandard test and be
-processed. However, miners who produce blocks with non-standard
-transactions put their block reward at risk---if a transaction
-produces a bug, the block which includes it will likely be orphaned by
-other miners.
+processed.
 
 Besides making it more difficult for someone to attack Bitcoin for
 free by broadcasting harmful transactions, the standard transaction
@@ -403,9 +400,12 @@ accept, broadcast, nor mine your transaction. When you try to broadcast
 your transaction to a peer running the default settings, you will
 receive an error.
 
-Unfortunately, if you create a redeemScript, hash it, and use the hash
+If you create a redeemScript, hash it, and use the hash
 in a P2SH output, the network sees only the hash, so it will accept the
-output as valid no matter what the redeemScript says. When you go to
+output as valid no matter what the redeemScript says.
+This allows
+payment to non-standard output scripts almost as easily as payment to
+standard output scripts. However, when you go to
 spend that output, peers and miners using the default settings will
 check the redeemScript to see whether or not it's a standard output
 script. If it isn't, they won't process it further---so it will be
