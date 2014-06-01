@@ -269,8 +269,30 @@ redeemScript, so P2SH scripts are as secure as P2PKH pubkey hashes.
 
 {% autocrossref %}
 
-Care must be taken to avoid non-standard output scripts. As of Bitcoin Core
-0.9, the standard script types are:
+After the discovery of several dangerous bugs in early versions of
+Bitcoin, a test was added which only accepted transactions from the
+network if they had an output script which matched a small set of
+believed-to-be-safe templates and if the rest of the transaction didn't
+violate another small set of rules enforcing good network behavior. This
+is the `isStandard()` test, and transactions which pass it are called
+standard transactions.
+
+Non-standard transactions---those that fail the test---may be accepted
+by nodes not using the default Bitcoin Core settings. If they are
+included in blocks, they will also avoid the isStandard test and be
+processed.
+
+Besides making it more difficult for someone to attack Bitcoin for
+free by broadcasting harmful transactions, the standard transaction
+test also helps prevent users from creating transactions today that
+would make adding new transaction features in the future more
+difficult. For example, as described above, each transaction includes
+a version number---if users started arbitrarily changing the version
+number, it would become useless as a tool for introducing
+backwards-incompatible features.
+
+
+As of Bitcoin Core 0.9, the standard script types are:
 
 **Pubkey Hash (P2PKH)**
 
@@ -378,13 +400,21 @@ accept, broadcast, nor mine your transaction. When you try to broadcast
 your transaction to a peer running the default settings, you will
 receive an error.
 
-Unfortunately, if you create a non-standard redeemScript, hash it, and use the hash
+If you create a redeemScript, hash it, and use the hash
 in a P2SH output, the network sees only the hash, so it will accept the
-output as valid no matter what the redeemScript says. When you go to
-spend that output, however, peers and miners using the default settings
-will see the non-standard redeemScript and reject it. It will be
+output as valid no matter what the redeemScript says.
+This allows
+payment to non-standard output scripts almost as easily as payment to
+standard output scripts. However, when you go to
+spend that output, peers and miners using the default settings will
+check the redeemScript to see whether or not it's a standard output
+script. If it isn't, they won't process it further---so it will be
 impossible to spend that output until you find a miner who disables the
 default settings.
+
+Note: standard transactions are designed to protect and help the
+network, not prevent you from making mistakes. It's easy to create
+standard transactions which make the satoshis sent to them unspendable.
 
 As of Bitcoin Core 0.9, standard transactions must also meet the following
 conditions:
