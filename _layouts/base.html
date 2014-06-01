@@ -99,7 +99,7 @@ if(typeof(legacyIE)==='undefined'){
     <div class="footermenu">
     <a href="/en/alerts">Network Status</a>
     {% case page.lang %}
-    {% when 'ar' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
+    {% when 'ar' or 'fa' or 'id' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
     <a href="/en/legal">Legal</a>
     {% else %}
     <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
@@ -116,7 +116,7 @@ if(typeof(legacyIE)==='undefined'){
   </div>
   <div class="foundation-banner">
     {% case page.lang %}
-    {% when 'ar' or 'bg' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
+    {% when 'ar' or 'bg' or 'fa' or 'id' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
     <div style="direction:ltr;">{% translate sponsor layout en %} <a href="https://bitcoinfoundation.org/"><img src="/img/brand/logo_foundation.svg" alt="Foundation"> The Bitcoin Foundation</a></div>
     {% else %}
     <div>{% translate sponsor layout %} <a href="https://bitcoinfoundation.org/"><img src="/img/brand/logo_foundation.svg" alt="Foundation"> The Bitcoin Foundation</a></div>
