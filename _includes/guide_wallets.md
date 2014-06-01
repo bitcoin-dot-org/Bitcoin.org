@@ -217,7 +217,7 @@ which makes them special.
 
 Hardened extended keys fix a potential problem with normal extended keys.
 If an attacker gets a normal parent
-chain code and parent public key, he can brute-force find all chain
+chain code and parent public key, he can brute-force all chain
 codes deriving from it. If the attacker also obtains a child, grandchild, or
 further-descended private key, he can use the chain code to generate all
 of the extended private keys descending from that private key, as
@@ -339,7 +339,14 @@ For implementation details, please see BIP39.
 
 {% autocrossref %}
 
-Loose-Key wallets, also called "Just a Bunch Of Keys (JBOK)", are a deprecated form of wallet that originated from the Bitcoin Core client wallet. The Bitcoin Core client wallet would create 100 private key/public key pairs automatically via a Pseudo-Random-Number Generator (PRNG) for later use. Once all these keys are consumed or the RPC call `keypoolrefill` is run, another 100 key pairs would be created. This created considerable difficulty<!--noref--> in backing up one’s keys, considering backups have to be run manually to save the newly-generated private keys. If a new key pair set is generated, used, and then lost prior to a backup, the stored satoshis are likely lost forever. Many older-style mobile wallets followed a similar format, but only generated a new private key upon user demand.
+Loose-Key wallets, also called "Just a Bunch Of Keys (JBOK)", are a deprecated form of wallet that originated from the Bitcoin Core client wallet. The Bitcoin Core client wallet would create 100 private key/public key pairs automatically via a Pseudo-Random-Number Generator (PRNG) for later use.
+
+These unused private keys are stored in a virtual "key pool", with new
+keys being generated whenever a previously-generated key was used,
+ensuring the pool maintained 100 unused keys. (If the wallet is
+encrypted, new keys are only generated while the wallet is unlocked.)
+
+This created considerable difficulty<!--noref--> in backing up one’s keys, considering backups have to be run manually to save the newly-generated private keys. If a new key pair set is generated, used, and then lost prior to a backup, the stored satoshis are likely lost forever. Many older-style mobile wallets followed a similar format, but only generated a new private key upon user demand.
 
 This wallet type is being actively phased out and discouraged from being used due to the backup hassle.
 
