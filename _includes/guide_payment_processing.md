@@ -150,8 +150,6 @@ or [millibits][]{:#term-millibits}{:.term} (mBTC). Choosing between BTC and mBTC
 but other software also lets its users select denomination amounts from
 some or all of the following options:
 
-{% endautocrossref %}
-
 | Bitcoins    | Unit (Abbreviation) |
 |-------------|---------------------|
 | 1.0         | bitcoin (BTC)       |
@@ -160,19 +158,7 @@ some or all of the following options:
 | 0.000001    | microbit (uBTC)     |
 | 0.00000001  | [satoshi][]{:#term-satoshi}{:.term}             |
 
-{% autocrossref %}
-
-Because of the widespread popularity of BTC and mBTC, it may be more
-useful to specify the amount in both denominations when the text is
-meant to be copied and pasted. For example:
-
 {% endautocrossref %}
-
-~~~
-Pay: mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN
-Amount: 100 BTC  (100000 mBTC)
-You must pay by: 2014-04-01 at 23:00 UTC
-~~~
 
 #### bitcoin: URI
 
@@ -191,37 +177,22 @@ bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN?amount=100
 
 {% autocrossref %}
 
-Only the address is required, and if it is the only thing specified,
-wallets will pre-fill a payment request with it and let the spender enter
-an amount.
+Only the address is required, and if it is the only thing
+specified, wallets will pre-fill a payment request with it and let
+the spender enter an amount. The amount specified is always in
+decimal bitcoins (BTC).
 
-The amount specified is always in decimal bitcoins (BTC), although requests
-only for whole bitcoins (as in the example above), may omit the decimal
-point. The amount field must not contain any commas. Fractional bitcoins
-may be specified with or without a leading zero; for example, either of
-the URIs below requesting one millibit are valid:
-
-{% endautocrossref %}
-
-~~~
-bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN?amount=.001
-bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN?amount=0.001
-~~~
-
-{% autocrossref %}
-
-Two other parameters are widely supported. The [`label`][label]{:#term-label}{:.term} parameter is
-generally used to provide wallet software with the recipient's name. The
-[`message`][message]{:#term-message}{:.term} parameter is generally used to describe the payment request to
-the spender. Both the label and the message are commonly stored by the
-spender's wallet software---but they are never added to the actual
-transaction, so other Bitcoin users cannot see them. Both the label and
-the message must be [URI encoded][].
+Two other parameters are widely supported. The
+[`label`][label]{:#term-label}{:.term} parameter is generally used to
+provide wallet software with the recipient's name. The
+[`message`][message]{:#term-message}{:.term} parameter is generally used
+to describe the payment request to the spender. Both the label and the
+message are commonly stored by the spender's wallet software---but they
+are never added to the actual transaction, so other Bitcoin users cannot
+see them. Both the label and the message must be [URI encoded][].
 
 All four parameters used together, with appropriate URI encoding, can be
 seen in the line-wrapped example below.
-
-{% endautocrossref %}
 
 ~~~
 bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
@@ -229,32 +200,6 @@ bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
 &label=Example+Merchant\
 &message=Order+of+flowers+%26+chocolates
 ~~~
-
-{% autocrossref %}
-
-The URI above could be encoded in HTML as follows, providing compatibility
-with wallet software which can't accept URI links and allowing you to
-specify an expiration date to the spender.
-
-{% endautocrossref %}
-
-~~~
-<a href="bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
-?amount=0.10\
-&label=Example+Merchant\
-&message=Order+of+flowers+%26+chocolates"
->Order flowers & chocolate using Bitcoin</a>
-(Pay 0.10 BTC [100 mBTC] to mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN by 2014-04-01 at 23:00 UTC)
-~~~
-
-Which produces:
-
-> <a href="bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN?amount=0.10&label=Example+Merchant&message=Order+of+flowers+%26+chocolates">Order flowers & chocolates using Bitcoin</a> (Pay 0.10 BTC [100 mBTC] to mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN by 2014-04-01 at 23:00 UTC)
-
-{% autocrossref %}
-
-Some payment processors use Javascript to display countdown timers
-indicating the number of minutes and seconds until the offer expires.
 
 The URI scheme can be extended, as will be seen in the payment protocol
 section below, with both new optional and required parameters. As of this
@@ -277,25 +222,12 @@ wallets, support scanning QR codes to pre-fill their payment screens.
 
 The figure below shows the same `bitcoin:` URI code encoded as four
 different [Bitcoin QR codes][URI QR code]{:#term-uri-qr-code}{:.term} at different error correction levels (described
-below the image). The QR code can include the `label` and `message`
+in the Developer Examples [QR Codes subsection][devex qr codes]). The QR code can include the `label` and `message`
 parameters---and any other optional parameters---but they were
 omitted here to keep the QR code small and easy to scan with unsteady
 or low-resolution mobile cameras.
 
 ![Bitcoin QR Codes](/img/dev/en-qr-code.svg)
-
-QR encoders offer four possible levels of error correction: 
-
-1. Low: corrects up to 7% damage
-
-2. Medium: corrects up to 15% damage but results in approximately 8%
-   larger images over low-level damage correction.
-
-3. Quartile: corrects corrects up to 25% damage but results in
-   approximately 20% larger images over low-level damage correction.
-
-4. High: corrects up to 30% damage but results in approximately 26%
-   larger images over low-level damage correction.
 
 The error correction is combined with a checksum to ensure the Bitcoin QR code
 cannot be successfully decoded with data missing or accidentally altered,
@@ -332,17 +264,13 @@ as "www.bitcoin.org".
 To request payment using the payment protocol, you use an extended (but
 backwards-compatible) `bitcoin:` URI.  For example:
 
-{% endautocrossref %}
-
 ~~~
 bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
 ?amount=0.10\
 &label=Example+Merchant\
 &message=Order+of+flowers+%26+chocolates\
-&r=http://example.com/pay.php/invoice%3Dda39a3ee
+&r=https://example.com/pay/mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN
 ~~~
-
-{% autocrossref %}
 
 None of the parameters provided above, except `r`, are required for the
 payment protocol---but your applications may include them for backwards
@@ -350,641 +278,128 @@ compatibility with wallet programs which don't yet handle the payment
 protocol. 
 
 The [`r`][r]{:#term-r-parameter}{:.term} parameter tells payment-protocol-aware wallet programs to ignore
-the other parameters and fetch a PaymentRequest from the URL provided.  If the
-request will be signed, which is recommended but not required, it can be
-fetched from an HTTP server---although fetching it from an HTTPS server
-would still be preferable.
-
+the other parameters and fetch a PaymentRequest from the URL provided.
 The browser, QR code reader, or other program processing the URI opens
-the spender's Bitcoin wallet program on the URI. If the wallet program is
-aware of the payment protocol, it accesses the URL specified in the `r`
-parameter, which should provide it with a serialized PaymentRequest
-served with the [MIME][] type `application/bitcoin-paymentrequest`<!--noref-->.
-
-{% endautocrossref %}
-
-##### PaymentRequest & PaymentDetails
-
-{% autocrossref %}
-
-The [PaymentRequest][]{:#term-paymentrequest}{:.term} is created with data structures built using
-Google's Protocol Buffers. BIP70 describes these data
-structures in the non-sequential way they're defined in the payment
-request protocol buffer code, but the text below will describe them in
-a more linear order using a simple (but functional) Python CGI
-program. (For brevity and clarity, many normal CGI best practices are
-not used in this program.)
-
-The full sequence of events is illustrated below, starting with the
-spender clicking a `bitcoin:` URI or scanning a `bitcoin:` QR code.
+the spender's Bitcoin wallet program on the URI. 
 
 ![BIP70 Payment Protocol](/img/dev/en-payment-protocol.svg)
 
-For the script to use the protocol buffer, you will need a copy of
-Google's Protocol Buffer compiler (`protoc`), which is available in most
-modern Linux package managers and [directly from Google.][protobuf] Non-Google
-protocol buffer compilers are available for a variety of
-programming languages. You will also need a copy of the PaymentRequest
-[Protocol Buffer description][core paymentrequest.proto] from the Bitcoin Core source code.
-
-###### Initialization Code
-
-With the Python code generated by `protoc`, we can start our simple
-CGI program.
-
-{% endautocrossref %}
-
-{% highlight python %}
-#!/usr/bin/env python
-
-## This is the code generated by protoc --python_out=./ paymentrequest.proto
-from paymentrequest_pb2 import *
-
-## Load some functions
-from time import time
-from sys import stdout
-from OpenSSL.crypto import FILETYPE_PEM, load_privatekey, sign
-
-## Copy three of the classes created by protoc into objects we can use
-details = PaymentDetails()
-request = PaymentRequest()
-x509 = X509Certificates()
-{% endhighlight %}
-
-{% autocrossref %}
-
-The startup code above is quite simple, requiring nothing but the epoch
-(Unix date) time function, the standard out file descriptor, a few
-functions from the OpenSSL library, and the data structures and
-functions created by `protoc`.
-
-{% endautocrossref %}
-
-###### Configuration Code
-
-{% autocrossref %}
-
-Next, we'll set configuration settings which will typically only change
-when the receiver wants to do something differently. The code pushes a
-few settings into the `request` (PaymentRequest) and `details`
-(PaymentDetails) objects. When we serialize them,
-[PaymentDetails][]{:#term-paymentdetails}{:.term} will be contained
-within the PaymentRequest.
-
-{% endautocrossref %}
-
-{% highlight python %}
-## SSL Signature method
-request.pki_type = "x509+sha256"  ## Default: none
-
-## Mainnet or Testnet?
-details.network = "test"  ## Default: main
-
-## Postback URL
-details.payment_url = "https://example.com/pay.py"
-
-## PaymentDetails version number
-request.payment_details_version = 1  ## Default: 1
-
-## Certificate chain
-x509.certificate.append(file("/etc/apache2/example.com-cert.der", "r").read())
-#x509.certificate.append(file("/some/intermediate/cert.der", "r").read())
-
-## Load private SSL key into memory for signing later
-priv_key = "/etc/apache2/example.com-key.pem"
-pw = "test"  ## Key password
-private_key = load_privatekey(FILETYPE_PEM, file(priv_key, "r").read(), pw)
-{% endhighlight %}
-
-Each line is described below.
-
-{% highlight python %}
-request.pki_type = "x509+sha256"  ## Default: none
-{% endhighlight %}
-
-{% autocrossref %}
-
-`pki_type`: (optional) tell the receiving wallet program what [Public-Key
-Infrastructure][PKI]{:#term-pki}{:.term} (PKI) type you're using to
-cryptographically sign your PaymentRequest so that it can't be modified
-by a man-in-the-middle attack. 
-
-If you don't want to sign the PaymentRequest, you can choose a
-[`pki_type`][pp pki type]{:#term-pp-pki-type}{:.term} of `none`
-(the default).
-
-If you do choose the sign the PaymentRequest, you currently have two
-options defined by BIP70: `x509+sha1` and `x509+sha256`.  Both options
-use the X.509 certificate system, the same system used for HTTP Secure
-(HTTPS).  To use either option, you will need a certificate signed by a
-certificate authority or one of their intermediaries. (A self-signed
-certificate will not work.)
-
-Each wallet program may choose which certificate authorities to trust,
-but it's likely that they'll trust whatever certificate authorities their
-operating system trusts.  If the wallet program doesn't have a full
-operating system, as might be the case for small hardware wallets, BIP70
-suggests they use the [Mozilla Root Certificate Store][mozrootstore]. In
-general, if a certificate works in your web browser when you connect to
-your webserver, it will work for your PaymentRequests.
-
-{% endautocrossref %}
-
-{% highlight python %}
-details.network = "test"  ## Default: main
-{% endhighlight %}
-
-{% autocrossref %}
-
-`network`:<!--noref--> (optional) tell the spender's wallet program what Bitcoin network you're
-using; BIP70 defines "main" for mainnet (actual payments) and "test" for
-testnet (like mainnet, but fake satoshis are used). If the wallet
-program doesn't run on the network you indicate, it will reject the
-PaymentRequest.
-
-{% endautocrossref %}
-
-{% highlight python %}
-details.payment_url = "https://example.com/pay.py"
-{% endhighlight %}
-
-{% autocrossref %}
-
-`payment_url`: (required) tell the spender's wallet program where to send the Payment
-message (described later). This can be a static URL, as in this example,
-or a variable URL such as `https://example.com/pay.py?invoice=123.`
-It should usually be an HTTPS address to prevent man-in-the-middle
-attacks from modifying the message.
-
-{% endautocrossref %}
-
-{% highlight python %}
-request.payment_details_version = 1  ## Default: 1
-{% endhighlight %}
-
-{% autocrossref %}
-
-`payment_details_version`: (optional) tell the spender's wallet program what version of the
-PaymentDetails you're using. As of this writing, the only version is
-version 1.
-
-{% endautocrossref %}
-
-{% highlight python %}
-## This is the pubkey/certificate corresponding to the private SSL key
-## that we'll use to sign:
-x509.certificate.append(file("/etc/apache2/example.com-cert.der", "r").read())
-{% endhighlight %}
-
-{% autocrossref %}
-
-`x509certificates`:<!--noref--> (required for signed PaymentRequests) you must
-provide the public SSL key/certificate corresponding to the private SSL
-key you'll use to sign the PaymentRequest. The certificate must be in
-ASN.1/DER format.
-
-{% endautocrossref %}
-
-{% highlight python %}
-## If the pubkey/cert above didn't have the signature of a root
-## certificate authority, we'd then append the intermediate certificate
-## which signed it:
-#x509.certificate.append(file("/some/intermediate/cert.der", "r").read())
-{% endhighlight %}
-
-{% autocrossref %}
-
-You must also provide any intermediate certificates necessary to link
-your certificate to the root certificate of a certificate authority
-trusted by the spender's software, such as a certificate from the
-Mozilla root store.
-
-The certificates must be provided in a specific order---the same order
-used by Apache's `SSLCertificateFile` directive and other server
-software.   The figure below shows the [certificate chain][]{:#term-certificate-chain}{:.term} of the
-www.bitcoin.org X.509 certificate and how each certificate (except the
-root certificate) would be loaded into the [X509Certificates][]{:#term-x509certificates}{:.term} protocol
-buffer message.
-
-![X509Certificates Loading Order](/img/dev/en-cert-order.svg)
-
-To be specific, the first certificate provided must be the
-X.509 certificate corresponding to the private SSL key which will make the
-signature<!--noref-->, called the [leaf certificate][]{:#term-leaf-certificate}{:.term}. Any [intermediate
-certificates][intermediate certificate]{:#term-intermediate-certificate}{:.term} necessary to link that signed public SSL
-key to the [root
-certificate][]{:#term-root-certificate}{:.term} (the certificate authority) are attached separately, with each
-certificate in DER format bearing the signature<!--noref--> of the certificate that
-follows it all the way to (but not including) the root certificate.
-
-{% endautocrossref %}
-
-{% highlight python %}
-priv_key = "/etc/apache2/example.com-key.pem"
-pw = "test"  ## Key password
-private_key = load_privatekey(FILETYPE_PEM, file(priv_key, "r").read(), pw)
-{% endhighlight %}
-
-{% autocrossref %}
-
-(Required for signed PaymentRequests) you will need a private SSL key in
-a format your SSL library supports (DER format is not required). In this
-program, we'll load it from a PEM file. (Embedding your passphrase in
-your CGI code, as done here, is obviously a bad idea in real life.)
-
-The private SSL key will not be transmitted with your request. We're
-only loading it into memory here so we can use it to sign the request
-later.
-
-{% endautocrossref %}
-
-###### Code Variables
-
-{% autocrossref %}
-
-Now let's look at the variables your CGI program will likely set for
-each payment.
-
-{% endautocrossref %}
-
-{% highlight python %}
-## Amount of the request
-amount = 10000000  ## In satoshis
-
-## P2PKH pubkey hash
-pubkey_hash = "2b14950b8d31620c6cc923c5408a701b1ec0a020"
-## P2PKH output script entered as hex and converted to binary
-# OP_DUP OP_HASH160 <push 20 bytes> <pubKey hash> OP_EQUALVERIFY OP_CHECKSIG
-#   76       a9            14       <pubKey hash>        88          ac
-hex_script = "76" + "a9" + "14" + pubkey_hash + "88" + "ac"
-serialized_script = hex_script.decode("hex")
-
-## Load amount and script into PaymentDetails
-details.outputs.add(amount = amount, script = serialized_script)
-
-## Memo to display to the spender
-details.memo = "Flowers & chocolates"
-
-## Data which should be returned to you with the payment
-details.merchant_data = "Invoice #123"
-{% endhighlight python %}
-
-Each line is described below.
-
-{% highlight python %}
-amount = 10000000  ## In satoshis (=100 mBTC)
-{% endhighlight %}
-
-{% autocrossref %}
-
-`amount`: (optional) the [amount][pp amount]{:#term-pp-amount}{:.term} you want the spender to pay. You'll probably get
-  this value from your shopping cart application or fiat-to-BTC exchange
-  rate conversion tool. If you leave the amount blank, the wallet
-  program will prompt the spender how much to pay (which can be useful
-  for donations).
-
-{% endautocrossref %}
-
-{% highlight python %}
-pubkey_hash = "2b14950b8d31620c6cc923c5408a701b1ec0a020"
-# OP_DUP OP_HASH160 <push 20 bytes> <pubKey hash> OP_EQUALVERIFY OP_CHECKSIG
-#   76       a9            14       <pubKey hash>        88          ac
-hex_script = "76" + "a9" + "14" + pubkey_hash + "88" + "ac"
-serialized_script = hex_script.decode("hex")
-{% endhighlight %}
-
-{% autocrossref %}
-
-`script`: (required) You must specify the output script you want the spender to
-pay---any valid script is acceptable. In this example, we'll request
-payment to a P2PKH output script.  
-
-First we get a pubkey hash. The hash above is the hash form of the
-address used in the URI examples throughout this section,
-mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN.
-
-Next, we plug that hash into the standard P2PKH output script using hex,
-as illustrated by the code comments.
-
-Finally, we convert the output script from hex into its serialized form.
-
-{% endautocrossref %}
-
-{% highlight python %}
-details.outputs.add(amount = amount, script = serialized_script)
-{% endhighlight %}
-
-{% autocrossref %}
-
-`outputs`:<!--noref--> (required) add the output script and (optional) amount to the
-PaymentDetails outputs<!--noref--> array. 
-
-It's possible to specify multiple [`scripts`][pp
-script]{:#term-pp-script}{:.term} and `amounts` as part of a merge
-avoidance strategy, described later in the [Merge Avoidance
-subsection][]. However, effective merge avoidance is not possible under
-the base BIP70 rules in which the spender pays each `script` the exact
-amount specified by its paired `amount`. If the amounts are omitted from
-all `amount`/`script` pairs, the spender will be prompted to choose an
-amount to pay.
-
-{% endautocrossref %}
-
-{% highlight python %}
-details.memo = "Flowers & chocolates"
-{% endhighlight %}
-
-{% autocrossref %}
-
-`memo`: (optional) add a memo which will be displayed to the spender as
-plain UTF-8 text. Embedded HTML or other markup will not be processed.
-
-{% endautocrossref %}
-
-{% highlight python %}
-details.merchant_data = "Invoice #123"
-{% endhighlight %}
-
-{% autocrossref %}
-
-`merchant_data`: (optional) add arbitrary data which should be sent back to the
-receiver when the invoice is paid. You can use this to track your
-invoices, although you can more reliably track payments by generating a
-unique address for each payment and then tracking when it gets paid. 
-
-The [`memo`][pp memo]{:#term-pp-memo}{:.term} field and the [`merchant_data`][pp merchant data]{:#term-pp-merchant-data}{:.term} field can be arbitrarily long,
-but if you make them too long, you'll run into the 50,000 byte limit on
-the entire PaymentRequest, which includes the often several kilobytes
-given over to storing the certificate chain. As will be described in a
-later subsection, the `memo` field can be used by the spender after
-payment as part of a cryptographically-proven receipt.
-
-{% endautocrossref %}
-
-###### Derivable Data
-
-{% autocrossref %}
-
-Next, let's look at some information your CGI program can
-automatically derive.
-
-{% endautocrossref %}
-
-{% highlight python %}
-## Request creation time
-details.time = int(time()) ## Current epoch (Unix) time
-
-## Request expiration time
-details.expires = int(time()) + 60 * 10  ## 10 minutes from now
-
-## PaymentDetails is complete; serialize it and store it in PaymentRequest
-request.serialized_payment_details = details.SerializeToString()
-
-## Serialized certificate chain
-request.pki_data = x509.SerializeToString()
-
-## Initialize signature field so we can sign the full PaymentRequest
-request.signature = ""
-
-## Sign PaymentRequest
-request.signature = sign(private_key, request.SerializeToString(), "sha256")
-{% endhighlight %}
-
-Each line is described below.
-
-{% highlight python %}
-details.time = int(time()) ## Current epoch (Unix) time
-{% endhighlight %}
-
-{% autocrossref %}
-
-`time`: (required) PaymentRequests must indicate when they were created
-in number of seconds elapsed since 1970-01-01T00:00 UTC (Unix
-epoch time format).
-
-{% endautocrossref %}
-
-{% highlight python %}
-details.expires = int(time()) + 60 * 10  ## 10 minutes from now
-{% endhighlight %}
-
-{% autocrossref %}
-
-`expires`: (optional) the PaymentRequest may also set an [`expires`][pp
-expires]{:#term-pp-expires}{:.term} time after
-which they're no longer valid. You probably want to give receivers
-the ability to configure the expiration time delta; here we used the
-reasonable choice of 10 minutes. If this request is tied to an order
-total based on a fiat-to-satoshis exchange rate, you probably want to
-base this on a delta from the time you got the exchange rate. 
-
-{% endautocrossref %}
-
-{% highlight python %}
-request.serialized_payment_details = details.SerializeToString()
-{% endhighlight %}
-
-{% autocrossref %}
-
-`serialized_payment_details`: (required) we've now set everything we need to create the
-PaymentDetails, so we'll use the SerializeToString function from the
-protocol buffer code to store the PaymentDetails in the appropriate
-field of the PaymentRequest.
-
-{% endautocrossref %}
-
-{% highlight python %}
-request.pki_data = x509.SerializeToString()
-{% endhighlight %}
-
-{% autocrossref %}
-
-`pki_data`: (required for signed PaymentRequests) serialize the certificate chain
-[PKI data][pp PKI data]{:#term-pp-pki-data}{:.term} and store it in the
-PaymentRequest
-
-{% endautocrossref %}
-
-{% highlight python %}
-request.signature = ""
-{% endhighlight %}
-
-{% autocrossref %}
-
-We've filled out everything in the PaymentRequest except the signature,
-but before we sign it, we have to initialize the signature field by
-setting it to a zero-byte placeholder.
-
-{% endautocrossref %}
-
-{% highlight python %}
-request.signature = sign(private_key, request.SerializeToString(), "sha256")
-{% endhighlight %}
-
-{% autocrossref %}
-
-`signature`:<!--noref--> (required for signed PaymentRequests) now we
-make the [signature][ssl signature]{:#term-ssl-signature}{:.term} by
-signing the completed and serialized PaymentRequest. We'll use the
-private key we stored in memory in the configuration section and the
-same hashing formula we specified in `pki_type` (sha256 in this case) 
-
-{% endautocrossref %}
-
-###### Output Code
-
-{% autocrossref %}
-
-Now that we have PaymentRequest all filled out, we can serialize it and
-send it along with the HTTP headers, as shown in the code below.
-
-{% endautocrossref %}
-
-{% highlight python %}
-print "Content-Type: application/bitcoin-paymentrequest"
-print "Content-Transfer-Encoding: binary"
-print ""
-{% endhighlight %}
-
-{% autocrossref %}
-
-(Required) BIP71 defines the content types for PaymentRequests,
-Payments, and PaymentACKs.
-
-{% endautocrossref %}
-
-{% highlight python %}
-file.write(stdout, request.SerializeToString())
-{% endhighlight %}
-
-{% autocrossref %}
-
-`request`: (required) now, to finish, we just dump out the serialized
-PaymentRequest (which contains the serialized PaymentDetails). The
-serialized data is in binary, so we can't use Python's print()
-because it would add an extraneous newline.
-
-The following screenshot shows how the authenticated PaymentDetails
-created by the program above appears in the GUI from Bitcoin Core 0.9.
+The Payment Protocol is described in depth in BIP70, BIP71, and BIP72.
+An example CGI program and description of all the parameters which can
+be used in the Payment Protocol is provided in the Developer Examples
+[Payment Protocol][devex payment protocol] subsection. In this
+subsection, we will briefly describe in story format how the Payment
+Protocol is typically used.
+
+Charlie, the client, is shopping on a website run by Bob, the
+businessman. Charlie adds a few items to his shopping cart and clicks
+the Checkout With Bitcoin button.
+
+Bob's server automatically adds the following information to its
+invoice database:
+
+* The details of Charlie's order, including items ordered and
+  shipping address.
+
+* An order total in satoshis, perhaps created by converting prices in
+  fiat to prices in satoshis.
+
+* An expiration time when that total will no longer be acceptable.
+
+* An output script to which Charlie should send payment. Typically this
+  will be a P2PKH or P2SH output script containing a unique (never
+  before used) public key.
+
+After adding all that information to the database, Bob's server displays
+a `bitcoin:` URI for Charlie to click to pay. 
+
+Charlie clicks on the `bitcoin:` URI in his browser. His browser's URI
+handler sends the URI to his wallet program. The wallet is aware of the
+Payment Protocol, so it parses the `r` parameter and sends an HTTP GET
+to that URL looking for a Payment Request.
+
+The Payment Request may include private information, such as Charlie's
+mailing address, but the wallet must be able to access it without using prior
+authentication, such as HTTP cookies, so a publicly-accessible HTTPS URL
+with a guess-resistant part is typically used. The
+unique public key created for the Payment Request can be used to create
+a unique identifier. This is why, in the example URI above, the Payment
+Request URL contains the P2PKH address:
+`https://example.com/pay/mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN`
+
+Upon receipt of the HTTP GET to the URL above, the Payment
+Request-generating CGI program on Bob's webserver takes the
+unique identifier from the URL and looks up the corresponding details in
+the database. It then creates a Payment Details message with the
+following information:
+
+* The amount of the order in satoshis and the output script to be paid.
+
+* A memo containing the list of items ordered, so Charlie knows what
+  he's paying for.  It may also include Charlie's mailing address so he can
+  double-check it.
+
+* The time the Payment Details message was created plus the time
+  it expires.
+
+* A URL to which Charlie's wallet should send its completed transaction.
+
+That Payment Details message is put inside a Payment Request message.
+The Payment Request lets Bob's server sign the entire Request with the
+server's X.509 SSL certificate.  (The Payment Protocol has been designed
+to allow other signing methods in the future.)  Bob's server sends the
+Payment Request to Charlie's wallet in the reply to the HTTP GET.
 
 ![Bitcoin Core Showing Validated Payment Request](/img/dev/en-btcc-payment-request.png)
 
-{% endautocrossref %}
+Charlie's wallet receives the Payment Request, checks its signature, and
+then displays the details from the Payment Details to Charlie. Charlie
+agrees to pay, so the wallet constructs a payment to the output script
+Bob's server provided. Unlike a traditional Bitcoin payment, Charlie's
+wallet doesn't necessarily automatically broadcast this payment to the
+network. Instead, the wallet constructs a Payment message and sends it to
+the URL provided in the Payment Details message as an HTTP POST. Among
+other things, the Payment message contains:
 
-##### Payment
+* The signed transaction in which Charlie pays Bob.
 
-{% autocrossref %}
+* An optional memo Charlie can send to Bob. (There's no guarantee that
+  Bob will read it.)
 
-If the spender declines to pay, the wallet program will not send any
-further messages to the receiver's server unless the spender clicks
-another URI pointing to that server.  If the spender does decide to pay,
-the wallet program will create at least one transaction paying each of
-the outputs in the PaymentDetails section. The wallet may broadcast
-the transaction or transactions, as Bitcoin Core 0.9 does, but it
-doesn't need to.
+* A refund address (output script) which Bob can pay if he needs to
+  return some or all of Charlie's satoshis.
 
-Whether or not it broadcasts the transaction or transactions, the wallet
-program composes a reply to the PaymentRequest; the reply is called the
-Payment. [Payment][pp payment]{:#term-pp-payment}{:.term} contains four fields:
+Bob's server receives the Payment message, verifies the transaction pays
+the requested amount to the address provided, and then broadcasts the
+transaction to the network. It also replies to the HTTP POSTed Payment
+message with a PaymentACK message, which includes an optional memo
+from Bob's server thanking Charlie for his patronage and providing other
+information about the order, such as the expected arrival date.
 
-* `merchant_data`: (optional) an exact copy of the
-  `merchant_data` from the PaymentDetails. This is
-  optional in the case that the PaymentDetails doesn't provide
-  `merchant_data`. Receivers should be aware that malicious spenders can
-  modify the merchant data before sending it back, so receivers may wish to
-  cryptographically sign it before giving it to the spender and then
-  validate it before relying on it.
+Charlie's wallet sees the PaymentACK and tells Charlie that the payment
+has been sent. The PaymentACK doesn't mean that Charlie has actually
+paid Bob---see the Verifying Payment subsection below---but it does mean
+that he can go do something else while the transaction gets confirmed.
+After Bob's server verifies from the block chain that Charlie's
+transaction has been suitably confirmed, it authorizes shipping
+Charlie's order.
 
-* [`transactions`][pp transactions]{:#term-pp-transactions}{:.term}: (required) one or more signed transactions which pay the outputs
-  specified in the PaymentDetails.
+In the case of a dispute, Charlie can generate a cryptgraphically-proven
+receipt out of the various signed or otherwise-proven information.
 
-<!-- BIP70 implies that refund_to is required (i.e. "one or more..."),
-but Mike Hearn implied on bitcoin-devel that it's optional (i.e. "wallets have
-to either never submit refund data, or always submit it"). 
-I'll use the BIP70 version here until I hear differently. -harding -->
+* The Payment Details message signed by Bob's webserver proves Charlie
+  received an invoice to pay a specified output script for a specified
+  number of satoshis for goods specified in the memo field.
 
-* [`refund_to`][pp refund to]{:#term-pp-refund-to}{:.term}: (required) one or more output scripts to which the
-  receiver can send a partial or complete refund. As of this writing, a
-  proposal is gaining traction to expire refund output scripts after a
-  certain amount of time (not defined yet) so spenders don't need to
-  worry about receiving refunds to addresses they no longer monitor.
+* The Bitcoin block chain can prove that the output script specified by
+  Bob was paid the specified number of satoshis.
 
-* `memo`: (optional) a plain UTF-8 text memo sent to the receiver. It
-  should not contain HTML or any other markup. Spenders should not depend
-  on receivers reading their memos.
-
-The Payment is sent to the [`payment_url`][pp payment
-url]{:#term-pp-payment-url}{:.term} provided in the PaymentDetails.
-The URL should be a HTTPS address to prevent a man-in-the-middle attack
-from modifying the spender's `refund_to` output scripts. When sending the
-Payment, the wallet program must set the following HTTP client headers:
-
-{% endautocrossref %}
-
-~~~
-Content-Type: application/bitcoin-payment
-Accept: application/bitcoin-paymentack
-~~~
-
-##### PaymentACK
-{% autocrossref %}
-
-The receiver's CGI program at the `payment_url` receives the Payment message and
-decodes it using its Protocol Buffers code. The `transactions` are
-checked to see if they pay the output scripts the receiver requested in
-PaymentDetails and are then broadcast to the network (unless the network
-already has them).
-
-The CGI program checks the `merchant_data` parameter if necessary and issues
-a [PaymentACK][]{:#term-paymentack}{:.term} (acknowledgment) with the following HTTP headers:
-
-{% endautocrossref %}
-
-~~~
-Content-Type: application/bitcoin-paymentack
-Content-Transfer-Encoding: binary
-~~~
-
-{% autocrossref %}
-
-Then it sends another Protocol-Buffers-encoded message with one or two
-fields:
-
-* `payment`: (required) A copy of the the entire Payment message (in
-  serialized form) which is being acknowledged.
-
-* `memo`: (optional) A plain UTF-8 text memo displayed to the spender
-  informing them about the status of their payment.  It should not
-  contain HTML or any other markup.  Receivers should not depend on
-  spenders reading their memos.
-
-The PaymentACK does not mean that the payment is final; it just means
-that everything seems to be correct. The payment is final once the
-payment transactions are block-chain confirmed to the receiver's
-satisfaction.
-
-However, the spender's wallet program should indicate to the spender that
-the payment was accepted for processing so the spender can direct his or
-her attention elsewhere.
-
-{% endautocrossref %}
-
-##### Receipts
-
-{% autocrossref %}
-
-Unlike PaymentRequest, PaymentDetails, [Payment][pp payment]{:.auto-link}, and PaymentACK, there is
-no specific [receipt][]{:#term-receipt}{:.term} object.  However, a cryptographically-verifiable
-receipt can be derived from a signed PaymentDetails and one or more confirmed
-transactions.
-
-A signed PaymentDetails indicates what output scripts should be paid
-(`script`), how much they should be paid (`amount`), and by when
-(`expires`). The Bitcoin block chain indicates whether those outputs
-were paid the requested amount and can provide a rough idea of when the
-transactions were generated.  Together, this information provides
-verifiable proof that the spender paid somebody with the
-receiver's private SSL key.
+If a refund needs to be issued, Bob's server can safely pay the
+refund-to output script provided by Charlie. (Note: a proposal has been
+discussed to give refund-to addresses an implicit expiration date so
+users and software don't need to worry about payments being sent to
+addresses which are no longer monitored.)  See the Refunds section below
+for more details.
 
 {% endautocrossref %}
 
