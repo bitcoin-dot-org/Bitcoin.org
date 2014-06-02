@@ -11,28 +11,27 @@ id: development
 
 <h2>{% translate spec %}</h2>
 <p>{% translate spectxt %}</p>
+{% case page.lang %}
+{% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'ko' or 'id' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'ru' or 'sv' or 'tr' or 'zh_CN' or 'zh_TW' %}
 <ul>
-  {% case page.lang %}
-  {% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'hu' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
-  <li>{% translate speclinkguide development en %}</li>
-  {% else %}
-  <li>{% translate speclinkguide %}</li>
-  {% endcase %}
+  <li><a href="/en/developer-documentation">Developer Documentation</a></li>
   <li>{% translate speclink1 %}</li>
   <li>{% translate speclink2 %}</li>
   <li>{% translate speclink3 %}</li>
 </ul>
+{% else %}
+{% endcase %}
 
 <h2>{% translate coredev %}</h2>
-<ul>
-  <li>Satoshi Nakamoto - <a href="/satoshinakamoto.asc">PGP</a></li>
-  <li>Gavin Andresen - <a href="mailto:gavinandresen@gmail.com">gavinandresen@gmail.com</a> - <a href="/gavinandresen.asc">PGP</a></li>
-  <li>Pieter Wuille - <a href="mailto:pieter.wuille@gmail.com">pieter.wuille@gmail.com</a> - <a href="/pieterwuille.asc">PGP</a></li>
-  <li>Nils Schneider - <a href="mailto:nils.schneider@gmail.com">nils.schneider@gmail.com</a> - <a href="/schneider.asc">PGP</a></li>
-  <li>Jeff Garzik - <a href="mailto:jgarzik@bitpay.com">jgarzik@bitpay.com</a> - <a href="/jgarzik-bitpay.asc">PGP</a></li>
-  <li>Wladimir J. van der Laan - <a href="mailto:laanwj@gmail.com">laanwj@gmail.com</a> - <a href="/laanwj.asc">PGP</a></li>
-  <li>Gregory Maxwell - <a href="mailto:greg@xiph.org">greg@xiph.org</a> - <a href="/gmaxwell.asc">PGP</a></li>
-</ul>
+<div class="listtable coredevtable">
+  <div><div>Wladimir J. van der Laan</div><div><a href="mailto:laanwj@gmail.com">laanwj@gmail.com</a></div><div><a href="/laanwj.asc">PGP</a></div></div>
+  <div><div>Gavin Andresen</div><div><a href="mailto:gavinandresen@gmail.com">gavinandresen@gmail.com</a></div><div><a href="/gavinandresen.asc">PGP</a></div></div>
+  <div><div>Jeff Garzik</div><div><a href="mailto:jgarzik@bitpay.com">jgarzik@bitpay.com</a></div><div><a href="/jgarzik-bitpay.asc">PGP</a></div></div>
+  <div><div>Gregory Maxwell</div><div><a href="mailto:greg@xiph.org">greg@xiph.org</a></div><div><a href="/gmaxwell.asc">PGP</a></div></div>
+  <div><div>Satoshi Nakamoto</div><div></div><div><a href="/satoshinakamoto.asc">PGP</a></div></div>
+  <div><div>Nils Schneider</div><div><a href="mailto:nils.schneider@gmail.com">nils.schneider@gmail.com</a></div><div><a href="/schneider.asc">PGP</a></div></div>
+  <div><div>Pieter Wuille</div><div><a href="mailto:pieter.wuille@gmail.com">pieter.wuille@gmail.com</a></div><div><a href="/pieterwuille.asc">PGP</a></div></div>
+</div>
 
 {% case page.lang %}
 {% when 'ar' or 'fa' or 'id' or 'pl' or 'zh_TW' %}
@@ -52,19 +51,22 @@ id: development
 {% else %}
 <h2>{% translate more %}</h2>
 <ul class="devprojectlist">
-  <li><a href="https://code.google.com/p/bitcoinj/">bitcoinj</a> - A Java implementation of a Bitcoin client-only node used in thin SPV Bitcoin clients.</li>
-  <li><a href="https://multibit.org/">MultiBit</a> - A thin SPV international Bitcoin client for desktops.</li>
-  <li><a href="https://github.com/schildbach/bitcoin-wallet/">Bitcoin Wallet for Android</a> - A thin SPV Bitcoin client for mobiles.</li>
   <li><a href="https://github.com/etotheipi/BitcoinArmory">Armory</a> - A Bitcoin client with enhanced security features.</li>
-  <li><a href="https://electrum.org/community.html">Electrum</a> - A fast Bitcoin client relying on remote servers to store the block chain.</li>
   <li><a href="http://bfgminer.com">BFGMiner</a> - Modular Bitcoin mining software.</li>
-  <li><a href="https://en.bitcoin.it/wiki/Libblkmaker#For_developers">libblkmaker and python-blkmaker</a> - Client side libraries for the getblocktemplate mining protocol.</li>
-  <li><a href="https://github.com/hivewallet">Hive</a> - A fast user-friendly SPV Bitcoin client.</li>
-  <li><a href="https://github.com/jgarzik/picocoin">picocoin</a> - A tiny bitcoin library, with lightweight client and utils.</li>
-  <li><a href="https://github.com/petertodd/python-bitcoinlib">python-bitcoinlib</a> - A Python2/3 Bitcoin library.</li>
+  <li><a href="https://code.google.com/p/bitcoinj/">bitcoinj</a> - A Java implementation of a Bitcoin client-only node used in thin SPV Bitcoin clients.</li>
+  <li><a href="https://github.com/schildbach/bitcoin-wallet/">Bitcoin Wallet for Android</a> - A thin SPV Bitcoin client for mobiles.</li>
   <li><a href="https://github.com/bitsofproof/supernode">Bits of Proof Enterprise Bitcoin Server</a> - A modular implementation of the Bitcoin protocol in Java.</li>
   <li><a href="https://github.com/conformal/btcd">btcd</a> - A full node bitcoin implementation written in Go.</li>
+  <li><a href="https://electrum.org/community.html">Electrum</a> - A fast Bitcoin client relying on remote servers to store the block chain.</li>
   <li><a href="https://gitorious.org/bitcoin/eloipool/">Eloipool</a> - A fast Python mining pool server software.</li>
+  <li><a href="https://github.com/hivewallet">Hive</a> - A fast user-friendly SPV Bitcoin client.</li>
+  <li><a href="https://github.com/libbitcoin/libbitcoin/">libbitcoin</a> - An asynchronous C++ library for Bitcoin.</li>
+  <li><a href="https://en.bitcoin.it/wiki/Libblkmaker#For_developers">libblkmaker and python-blkmaker</a> - Client side libraries for the getblocktemplate mining protocol.</li>
+  <li><a href="https://multibit.org/">MultiBit</a> - A thin SPV international Bitcoin client for desktops.</li>
+  <li><a href="https://github.com/libbitcoin/obelisk/">obelisk</a> - A libbitcoin-based blockchain query server.</li>
+  <li><a href="https://github.com/jgarzik/picocoin">picocoin</a> - A tiny bitcoin library, with lightweight client and utils.</li>
+  <li><a href="https://github.com/petertodd/python-bitcoinlib">python-bitcoinlib</a> - A Python2/3 Bitcoin library.</li>
+  <li><a href="https://sx.dyne.org/">sx</a> - Modular Bitcoin commandline utilities.</li>
   <li class="more"><a href="#" onclick="librariesShow(event)">{% translate moremore %}</a></li>
 </ul>
 {% endcase %}
@@ -74,7 +76,7 @@ id: development
   <p>{% translate contributorsorder %}</p>
   <div class="contributors">{% for c in site.contributors %}
     <span>
-      {% if c.gravatar_id %}<img class="icon" height="16" width="16" src="https://secure.gravatar.com/avatar/{{c.gravatar_id}}?s=140&amp;d=http%3A%2F%2Fbitcoin.org%2Fimg%2Fgravatar-140.png" alt="icon" />{% else %}<img class="icon" height="16" width="16" src="http://i0.wp.com/bitcoin.org/img/gravatar-140.png" alt="icon" />{% endif %}
+      {% if c.gravatar_id %}<img class="icon" height="16" width="16" src="https://secure.gravatar.com/avatar/{{c.gravatar_id}}?s=140&amp;d=mm" alt="icon" />{% else %}<img class="icon" height="16" width="16" alt="icon" />{% endif %}
       {% if c.login %}<a href="https://github.com/{{c.login}}">{{ c.name }} ({{ c.contributions }})</a>{% else %}{{ c.name }} ({{ c.contributions }}){% endif %}
     </span>{% endfor %}
   </div>

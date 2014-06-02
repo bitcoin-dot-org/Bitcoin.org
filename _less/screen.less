@@ -98,41 +98,41 @@ table td,table th{
 
 @font-face{
 	font-family:'Ubuntu';
-	src:url('/font/ubuntu-r-webfont.eot');
-	src:url('/font/ubuntu-r-webfont.eot?iefix') format('eot'),
-	url('/font/ubuntu-r-webfont.woff') format('woff'),
-	url('/font/ubuntu-r-webfont.ttf') format('truetype'),
-	url('/font/ubuntu-r-webfont.svg') format('svg');
+	src:url('/font/ubuntu/ubuntu-r-webfont.eot');
+	src:url('/font/ubuntu/ubuntu-r-webfont.eot?iefix') format('eot'),
+	url('/font/ubuntu/ubuntu-r-webfont.woff') format('woff'),
+	url('/font/ubuntu/ubuntu-r-webfont.ttf') format('truetype'),
+	url('/font/ubuntu/ubuntu-r-webfont.svg') format('svg');
 	font-weight:300;
 	font-style:normal;
 }
 @font-face{
 	font-family:'Ubuntu';
-	src:url('/font/ubuntu-ri-webfont.eot');
-	src:url('/font/ubuntu-ri-webfont.eot?iefix') format('eot'),
-	url('/font/ubuntu-ri-webfont.woff') format('woff'),
-	url('/font/ubuntu-ri-webfont.ttf') format('truetype'),
-	url('/font/ubuntu-ri-webfont.svg') format('svg');
+	src:url('/font/ubuntu/ubuntu-ri-webfont.eot');
+	src:url('/font/ubuntu/ubuntu-ri-webfont.eot?iefix') format('eot'),
+	url('/font/ubuntu/ubuntu-ri-webfont.woff') format('woff'),
+	url('/font/ubuntu/ubuntu-ri-webfont.ttf') format('truetype'),
+	url('/font/ubuntu/ubuntu-ri-webfont.svg') format('svg');
 	font-weight:300;
 	font-style:italic;
 }
 @font-face{
 	font-family:'Ubuntu';
-	src:url('/font/ubuntu-b-webfont.eot');
-	src:url('/font/ubuntu-b-webfont.eot?iefix') format('eot'),
-	url('/font/ubuntu-b-webfont.woff') format('woff'),
-	url('/font/ubuntu-b-webfont.ttf') format('truetype'),
-	url('/font/ubuntu-b-webfont.svg') format('svg');
+	src:url('/font/ubuntu/ubuntu-b-webfont.eot');
+	src:url('/font/ubuntu/ubuntu-b-webfont.eot?iefix') format('eot'),
+	url('/font/ubuntu/ubuntu-b-webfont.woff') format('woff'),
+	url('/font/ubuntu/ubuntu-b-webfont.ttf') format('truetype'),
+	url('/font/ubuntu/ubuntu-b-webfont.svg') format('svg');
 	font-weight:700;
 	font-style:normal;
 }
 @font-face{
 	font-family:'Ubuntu';
-	src:url('/font/ubuntu-bi-webfont.eot');
-	src:url('/font/ubuntu-bi-webfont.eot?iefix') format('eot'),
-	url('/font/ubuntu-bi-webfont.woff') format('woff'),
-	url('/font/ubuntu-bi-webfont.ttf') format('truetype'),
-	url('/font/ubuntu-bi-webfont.svg') format('svg');
+	src:url('/font/ubuntu/ubuntu-bi-webfont.eot');
+	src:url('/font/ubuntu/ubuntu-bi-webfont.eot?iefix') format('eot'),
+	url('/font/ubuntu/ubuntu-bi-webfont.woff') format('woff'),
+	url('/font/ubuntu/ubuntu-bi-webfont.ttf') format('truetype'),
+	url('/font/ubuntu/ubuntu-bi-webfont.svg') format('svg');
 	font-weight:700;
 	font-style:italic;
 }
@@ -158,6 +158,8 @@ table td,table th{
 
 .foundation-banner{
 	text-align:center;
+	width:940px;
+	margin:auto;
 }
 .foundation-banner div{
 	display:inline-block;
@@ -187,13 +189,13 @@ table td,table th{
 	margin:30px 0 30px 0;
 }
 .head div{
-	max-width:940px;
+	width:940px;
 	margin:auto;
 	position:relative;
 	z-index:100;
 }
 .body{
-	max-width:940px;
+	width:940px;
 	margin:auto;
 	position:relative;
 }
@@ -208,14 +210,12 @@ table td,table th{
 	list-style:none;
 	padding:0;
 	margin:0;
-	text-align:right;
 	cursor:pointer;
 }
 .lang{
 	position:absolute;
 	right:5px;
 	top:8px;
-	height:30px;
 	border-left:2px solid transparent;
 	border-right:2px solid transparent;
 	border-top:2px solid transparent;
@@ -229,16 +229,29 @@ table td,table th{
 .lang li ul{
 	display:none;
 	right:-2px;
-	top:28px;
 	position:absolute;
 	background-color:#fff;
-	margin-left:-5px;
-	padding-bottom:4px;
-	border-left:2px solid #ebebeb;
-	border-right:2px solid #ebebeb;
-	border-bottom:2px solid #ebebeb;
+	padding:20px;
+	border:2px solid #ebebeb;
+	white-space:nowrap;
 }
 .lang:hover li ul{
+	display:block;
+}
+.lang li ul li{
+	display:inline-block;
+	vertical-align:top;
+	text-align:left;
+	width:180px;
+}
+.lang li ul li ul{
+	position:relative;
+	margin:-4px 0;
+	padding:0;
+	border:0;
+	top:0;
+}
+.lang li ul li ul li{
 	display:block;
 }
 .lang li a,
@@ -247,7 +260,6 @@ table td,table th{
 .lang li a:active{
 	text-decoration:none;
 	font-size:115%;
-	width:100px;
 	display:inline-block;
 	color:#b8b8b8;
 	padding:4px 8px;
@@ -256,17 +268,16 @@ table td,table th{
 .lang li ul li a:link,
 .lang li ul li a:visited,
 .lang li ul li a:active{
-	padding:2px 8px;
-
+	padding:4px 0;
+	width:180px;
 }
-.lang:hover li a{
+.lang:hover li a,
+.lang li ul li ul li:hover a,
+.lang li ul li ul li a.active{
 	color:#666666;
 }
 .lang:hover li ul li a{
 	color:#b8b8b8;
-}
-.lang li ul li:hover a{
-	color:#666666;
 }
 
 .logo{
@@ -382,7 +393,7 @@ table td,table th{
 	position:relative;
 	padding:20px 0;
 	text-align:center;
-	max-width:940px;
+	width:940px;
 	font-size:94%;
 }
 .footermenu{
@@ -706,11 +717,14 @@ table td,table th{
 	font-weight:bold;
 	left:0px;
 }
-.toc ul+ul{
+.toc ul.goback{
 	padding-top:8px;
 }
-.toc ul+ul li{
+.toc ul.goback li{
 	background:url(/img/mini_ico_back.svg) no-repeat 0 3px;
+}
+.toc ul.reportissue li{
+	background:url(/img/mini_ico_report.svg) no-repeat 0 3px;
 }
 .toc a,
 .toc a:link,
@@ -783,6 +797,63 @@ table td,table th{
 	margin-bottom: -17px;
 }
 
+.anchorAf{
+	position:relative;
+}
+.anchorAf a{
+	display:none;
+	position:absolute;
+	width:24px;
+	left:-24px;
+	bottom:0;
+	top:0;
+	background:url(/img/mini_ico_anchor.svg) no-repeat center center;
+}
+.anchorAf:hover a{
+	display:block;
+}
+
+.develdocdisclaimer{
+	padding:30px 0;
+	background:#fff;
+	bottom:0;
+	position:fixed;
+	width:600px;
+	z-index:1000;
+	border-top:1px solid #e0e0e0;
+}
+.develdocdisclaimer div{
+	border:2px dashed #ee9209;
+	background:#fff8ea;
+	padding:10px;
+	line-height:1.5em;
+	position:relative;
+}
+.develdocdisclaimerclose,
+.develdocdisclaimerclose:visited,
+.develdocdisclaimerclose:link,
+.develdocdisclaimerclose:active{
+	display:block;
+	padding:1px 8px 0 8px;
+	color:#fff;
+	background-color:#ee9209;
+	position:absolute;
+	top:-14px;
+	right:-14px;
+	font-weight:bold;
+	cursor:pointer;
+	border:2px solid #fff;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+}
+.develdocdisclaimerclose:hover,
+.develdocdisclaimerclose:visited:hover,
+.develdocdisclaimerclose:link:hover,
+.develdocdisclaimerclose:active:hover{
+	border:2px solid #ee9209;
+	color:#fff;
+}
 
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
@@ -975,6 +1046,39 @@ table td,table th{
 	height:24px;
 	position:relative;
 	bottom:-6px;
+}
+
+.resourcesmore{
+	text-align:center;
+	margin-top:40px;
+}
+.resourcesmore div{
+	display:inline-block;
+	text-align:left;
+	padding:20px 40px;
+	border-top:1px solid #e0e0e0;
+	border-left:1px solid #e0e0e0;
+	border-right:1px solid #e0e0e0;
+}
+.resourcesmore div h2{
+	text-align:center;
+	margin-bottom:25px;
+}
+.resourcesmore div p{
+	font-size:115%;
+	margin:6px 0;
+	padding-left:24px;
+	background:url(/img/mini_ico_link.svg) no-repeat 0 4px;
+}
+
+.coredevtable div div:first-child{
+	width:200px;
+}
+.coredevtable div div:first-child+div{
+	width:220px;
+}
+.coredevtable div div:first-child+div+div{
+	width:80px;
 }
 
 .chatbox{
@@ -1332,14 +1436,14 @@ h2 .rssicon{
 	height:400px;
 	margin-bottom:25px;
 }
-.eventtable div{
+.listtable div{
 	padding:8px 0;
 	border-top:1px solid #E2E2E2;
 }
-.eventtable div:first-child{
+.listtable div:first-child{
 	border-top:0;
 }
-.eventtable div div{
+.listtable div div{
 	display:inline-block;
 	vertical-align:middle;
 	text-align:left;
@@ -1556,6 +1660,9 @@ h2 .rssicon{
 	.toccontent{
 		width:auto;
 	}
+	.develdocdisclaimer{
+		display:none;
+	}
 }
 
 /*Styles specific to mobiles*/
@@ -1572,6 +1679,12 @@ h2 .rssicon{
 	}
 	.head{
 		margin:0;
+	}
+	.head div{
+		width:auto;
+	}
+	.body{
+		width:auto;
 	}
 	.langselect{
 		background-color:transparent;
@@ -1641,10 +1754,14 @@ h2 .rssicon{
 	}
 	.footer{
 		line-height:1.5em;
+		width:auto;
 	}
 	.footermenu{
 		display:block;
 		margin-bottom:20px;
+	}
+	.foundation-banner{
+		width:auto;
 	}
 	.index{
 		padding:15px;
@@ -1691,7 +1808,10 @@ h2 .rssicon{
 	.toc ul li ul li a.active:before{
 		content:"";
 	}
-	.toc ul+ul li{
+	.toc ul.goback li{
+		background:none;
+	}
+	.toc ul.reportissue li{
 		background:none;
 	}
 	.toccontent{
@@ -1700,6 +1820,10 @@ h2 .rssicon{
 	.toccontent a.auto-link:link,
 	.toccontent a.auto-link:visited{
 		color:#2c6fad;
+	}
+	.develdocdisclaimer{
+		padding:15px;
+		width:auto;
 	}
 	.contributors{
 		width:auto;
@@ -1784,10 +1908,17 @@ h2 .rssicon{
 		background:none;
 		height:auto;
 	}
-	.eventtable div div{
+	.listtable div div{
 		display:block;
 	}
-	.eventtable div div:first-child,.eventtable div div:first-child+div,.eventtable div div:first-child+div+div{
+	.eventtable div div:first-child,
+	.eventtable div div:first-child+div,
+	.eventtable div div:first-child+div+div{
+		width:auto;
+	}
+	.coredevtable div div:first-child,
+	.coredevtable div div:first-child+div,
+	.coredevtable div div:first-child+div+div{
 		width:auto;
 	}
 	.press-faq>div{
@@ -1887,6 +2018,16 @@ h2 .rssicon{
 	}
 	.resourcesorg div{
 		border-top:0;
+	}
+	.resourcesmore{
+		margin-top:0;
+	}
+	.resourcesmore div{
+		padding:0;
+		border:0;
+	}
+	.resourcesmore div h2{
+		text-align:left;
 	}
 	.download{
 		text-align:left;

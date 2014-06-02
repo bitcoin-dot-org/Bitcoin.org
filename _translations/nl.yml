@@ -80,8 +80,6 @@ nl:
     securitytext: "De meeste veiligheidschecks worden gedaan door het protocol aan de clientkant van elke gebruiker in het netwerk. Authenticiteit wordt gecontroleerd door geheime sleutels en dubbele uitgaven worden voorkomen door het hele Bitcoin-netwerk. Er is dus geen PCI-compliance of fraudedetectie meer nodig. Is het niet fijn als iets gewoon goed werkt?"
     micro: "Goedkope microbetalingen"
     microtext: "Bitcoin biedt de laagste transactiekosten voor elk soort transactie, dus ook voor microbetalingen. Het kan daarom ook worden gebruikt voor nieuwe en creatieve online diensten die niet konden bestaan voordat dit soort goedkope betalingen mogelijk waren."
-    serviceslist: "Raadpleeg de <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services\">servicelijst voor verkopers</a> op de Wiki."
-    apireference: "Of lees de Bitcoin Core <a href=\"https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)\">API-referentie</a> en de <a href=\"https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list\">lijst met API-calls</a>."
   bitcoin-for-individuals:
     title: "Bitcoin voor particulieren - Bitcoin"
     pagetitle: "Bitcoin voor particulieren"
@@ -144,10 +142,7 @@ nl:
     walletarmory: "Armory is een geavanceerde Bitcoin-client die uitgebreide mogelijkheden voor powerusers aan Bitcoin Core toevoegt. Het biedt verschillende back-up- en encryptiemogelijkheden en \"cold-storage\" op offline computers."
     walletelectrum: "Electrum is gericht op snelheid en eenvoud en is zeer licht voor uw computer. Het laat de ingewikkeldere taken van het Bitcoin-systeem uitvoeren door servers elders en het biedt de mogelijkheid om uw portemonnee terug te vinden met behulp van een geheime zin."
     walletbitcoinwallet: "Bitcoin Wallet is een lichte mobiele client voor Android en BlackBerry OS. Deze client heeft geen online dienst nodig om te werken. Het kan QR-codes scannen en NFC gebruiken."
-    walletblockchaininfomob: "Blockchain.info is een hybride webportemonnee voor uw mobiele telefoon. Het biedt veel van de mogelijkheden van blockchain.info, zoals web wallet backup."
     walletblockchaininfo: "Blockchain.info is een gebruiksvriendelijke, hybride portemonnee. Het bewaart een versleutelde versie van uw portemonnee online, maar de ontsleuteling vindt plaats in uw browser. Gebruik om veiligheidsredenen altijd de browserextensie en e-mailback-ups."
-    walletpaytunia: "Paytunia is een mobiele webportemonnee van Paymium waarmee u op de beurs Bitcoin-Central direct met uw mobiele telefoon kunt handelen. Er is een versie voor iPhone en er komt er binnenkort ook één voor Android."
-    walletbips: "BIPS is een webportemonneedienst van WalletBit, waarmee u gemakkelijk in veel verschillende landen bitcoins kunt kopen en verkopen. Het biedt cold storage, portemonnee-importering en allerlei andere mogelijkheden voor verkopers."
     walletcoinbase: "Coinbase is een webportemonneedienst die erop gericht is de allereenvoudigste te zijn. Er zit ook een webportemonnee-app voor Android bij, hulpmiddelen voor verkopers en integratie met bankrekeningen in de VS."
     walletdownload: "<a href=\"#download#\">Download</a>"
     walletvisit: "Naar de website"
@@ -181,12 +176,6 @@ nl:
     latestversion: "Laatste versie:"
     download: "Download Bitcoin Core"
     downloados: "Of kies uw besturingssysteem"
-    downloadwinzip: "Download voor Windows (zip)"
-    downloadwinexe: "Download voor Windows (exe)"
-    downloadubu: "Download voor Ubuntu (PPA)"
-    downloadlin: "Download voor Linux (tgz, 32/64-bit)"
-    downloadmac: "Download voor Mac OS X"
-    downloadsource: "Broncode"
     versionhistory: "Toon versiegeschiedenis"
     notelicense: "Bitcoin Core is een <a href=\"http://www.fsf.org/about/what-is-free-software\">\"vrij\"<a> opensource-project dat wordt ontwikkeld door de community en verspreid onder de <a href=\"http://opensource.org/licenses/mit-license.php\">MIT-licentie</a>."
     notesync: "<b>N.B.</b>: De initiële synchronisatie van Bitcoin Core kan wel een dag duren. Zorg ervoor dat u genoeg bandbreedte en opslagruimte hebt voor <a href=\"http://blockchain.info/charts/blocks-size\">de hele blokketen</a>."
@@ -219,7 +208,6 @@ nl:
     intro: "Dit is een vraag die vaak tot verwarring leidt. Hier volgt een snelle uitleg!"
     basics: "De basis voor nieuwe gebruikers"
     basicstxt1: "Als nieuwe gebruiker hoeft u alleen maar <a href=\"#choose-your-wallet#\">een portemonnee te kiezen</a> om op uw computer of mobiele telefoon te installeren. Hebt u eenmaal een portemonnee geïnstalleerd, dan maakt die uw eerste Bitcoin-adres voor u aan. Uw portemonnee kan er later meer aanmaken, zodra u ze nodig hebt. U kunt één van uw Bitcoin-adressen aan uw contacten geven, zodat die u kunnen betalen. Andersom kunt u uw contacten betalen als zij u hun adressen geven. Dit lijkt eigenlijk heel erg op hoe e-mail werkt. Het enige wat u nu dus nog te doen staat, is een paar bitcoins verkrijgen en ze <a href=\"#secure-your-wallet#\">veilig bewaren</a>. U hoeft niet alle technische details te begrijpen om aan de slag te kunnen gaan met Bitcoin."
-    basicstxt2: "Maar wilt u dat wel, blijf dan vooral lezen!"
     balances: "Saldo's<a class=\"titlelight\"> - blokketen</a>"
     balancestxt: "De blokketen is een <b>openbare gedeelde transactiegeschiedenis</b> waar het hele Bitcoin-netwerk op is gebouwd. Alle bevestigde transacties zijn zonder uitzondering in de blokketen opgenomen. Zo kan worden gecontroleerd dat de bitcoins in een nieuwe transactie ook echt worden uitgegeven door de eigenaar. De integriteit en de chronologische volgorde van de blokketen worden intact gehouden door middel van <a href=\"#vocabulary##[vocabulary.cryptography]\">cryptografie</a>."
     transactions: "Transacties<a class=\"titlelight\"> - geheime sleutels</a>"
@@ -384,12 +372,6 @@ nl:
     experimentaltxt: "Bitcoin is een experimentele nieuwe valuta die actief wordt ontwikkeld. Hoewel het steeds minder experimenteel wordt naarmate het meer wordt gebruikt, moet u toch in gedachten houden dat Bitcoin een nieuwe uitvinding is. De ideeën die eraan ten grondslag liggen, zijn nog niet eerder geprobeerd in een dergelijk systeem. Hoe het experiment zal aflopen, kan dan ook niemand voorspellen."
     tax: "Vergeet de belastingen niet"
     taxtxt: "Bitcoin is geen officiële valuta. Dat gezegd hebbende, in de meeste landen moeten toch inkomsten-, vennootschaps-, vermogens- en omzetbelastingen worden betaald over alles wat waarde vertegenwoordigt, inclusief Bitcoin."
-  images:
-    glance: Netwerk in het kort
-    you: U
-    friend: Vriend
-    blockchain: de blokketen
-    blockchaintxt: (een gedeelde, openbare transactiegeschiedenis)
   layout:
     menu-faq: "Over Bitcoin"
     menu-about-us: "Over bitcoin.org"
@@ -399,7 +381,6 @@ nl:
     menu-community: Community
     menu-development: Ontwikkeling
     menu-events: Evenementen
-    menu-foundation: Foundation
     menu-getting-started: "Aan de slag"
     menu-how-it-works: "Hoe het werkt"
     menu-innovation: Innovatie

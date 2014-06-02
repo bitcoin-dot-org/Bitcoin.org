@@ -27,13 +27,13 @@ As of version 2 blocks, each block consists of four root elements:
 
 4. One or more transactions.
 
-Every block must include a [coinbase transaction][]{:#term-coinbase-tx}{:.term} which should collect and
+The first transaction in a block must be a [coinbase transaction][]{:#term-coinbase-tx}{:.term} which should collect and
 spend any transaction fees paid by transactions included in this block.
 All blocks with a block height less than 6,930,000 are entitled to
 receive a [block reward][]{:#term-block-reward}{:.term} of newly created bitcoin value, which also
 should be spent in the coinbase transaction. (The block reward started
-at 50 bitcoins and is being halved approximately every four years. As of
-April 2014, it's 25 bitcoins.) A coinbase transaction is invalid if it 
+at 50 bitcoins and is being halved every 210,000 blocks---approximately once every four years. As of
+June 2014, it's 25 bitcoins.) A coinbase transaction is invalid if it 
 tries to spend more value than is available from the transaction 
 fees and block reward.
 

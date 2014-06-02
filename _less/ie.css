@@ -14,6 +14,20 @@ body{
 	border-right:2px solid #f7f7f7;
 	border-top:2px solid #f7f7f7;
 }
+.lang li ul{
+	top:28px;
+}
+.lang li ul li{
+	zoom:1;
+	display:inline;
+}
+.lang li a,
+.lang li a:link,
+.lang li a:visited,
+.lang li a:active{
+	zoom:1;
+	display:inline;
+}
 
 .menusimple li{
 	zoom:1;
@@ -174,6 +188,11 @@ body{
 }
 .resourcesorg div{
 	border-top:expression(this.parentNode.className=='resourcesorg'&&this.parentNode.getElementsByTagName('DIV')[0]!=this?'1px solid #e0e0e0':'0');
+}
+
+.resourcesmore div{
+	zoom:1;
+	display:inline;
 }
 
 .docreference a{

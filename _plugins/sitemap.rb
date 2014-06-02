@@ -51,20 +51,20 @@ module Jekyll
         Dir.foreach('.') do |file1|
           if /^[a-z]{2}(_[A-Z]{2})?$/.match(file1) and File.directory?(file1)
             Dir.foreach(file1) do |file2|
-              next if !/\.html$/.match(file2)
+              next if !/\.html$|\.md$/.match(file2)
               data = File.read(file1+'/'+file2)
               sitemap.puts '<url>'
-              sitemap.puts '  <loc>https://bitcoin.org/'+file1+'/'+file2.gsub('.html','')+'</loc>'
+              sitemap.puts '  <loc>https://bitcoin.org/'+file1+'/'+file2.gsub('.html','').gsub('.md','')+'</loc>'
               sitemap.puts '</url>'
             end
           end
-          next if !/\.html$/.match(file1)
-          next if file1 == 'index.html'
+          next if !/\.html$|\.md$/.match(file1)
+          next if file1 == 'index.html' or file1 == '404.html' or file1 == 'README.md'
           #Ignore google webmaster tools
           data = File.read(file1)
           next if !data.index('google-site-verification:').nil?
           sitemap.puts '<url>'
-          sitemap.puts '  <loc>https://bitcoin.org/'+file1.gsub('.html','')+'</loc>'
+          sitemap.puts '  <loc>https://bitcoin.org/'+file1.gsub('.html','').gsub('.md','')+'</loc>'
           sitemap.puts '</url>'
         end
         #Add english alerts pages

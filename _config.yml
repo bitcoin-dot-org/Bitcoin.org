@@ -1,20 +1,25 @@
 langsorder:
-- id: de
-- id: id
-- id: en
-- id: es
-- id: fr
-- id: it
-- id: hu
-- id: nl
-- id: pl
-- id: ru
-- id: tr
-- id: bg
-- id: zh_CN
-- id: zh_TW
-- id: ar
-- id: fa
+- id
+- de
+- en
+- es
+- fr
+- it
+- hu
+- nl
+- pl
+- pt_BR
+- ro
+- sl
+- sv
+- tr
+- bg
+- ru
+- ar
+- fa
+- ko
+- zh_CN
+- zh_TW
 
 langs:
   ar: ألعربية
@@ -27,9 +32,14 @@ langs:
   hu: magyar
   id: Bahasa Indonesia‬
   it: Italiano
+  ko: 한국의
   nl: Nederlands
-  pl: Polski
+  pl: polski
+  pt_BR: Português Brasil
+  ro: română
   ru: Русский
+  sl: slovenščina
+  sv: Svenska
   tr: Türkçe
   zh_CN: ‪简体中文‬
   zh_TW: ‪繁體中文‬
@@ -88,6 +98,7 @@ redirects:
   /zh_CN/about: /zh_CN/faq
   /es/acerca-de: /es/faq
   /fr/a-propos: /fr/faq
+  /it/a-proposito: /it/faq
   /de/bitcoin-fuer-enthusiasten: /de/innovation
   /en/bitcoin-for-enthusiasts: /en/innovation
   /es/bitcoin-para-entusiastas: /es/innovacion
@@ -103,14 +114,15 @@ aliases:
   tcatm: Nils Schneider
 
 safe:        false
-auto:        false
-server:      false
 server_port: 4000
 base-url:    /
 
 source:      .
 destination: ./_site
 plugins:     ./_plugins
+exclude:
+    - Gemfile
+    - Gemfile.lock
 
 future:      true
 lsi:         false

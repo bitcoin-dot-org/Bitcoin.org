@@ -158,7 +158,7 @@ As illustrated above, HD key derivation takes four inputs<!--noref-->:
 * The [index][key index]{:#term-key-index}{:.term} number is a 32-bit integer specified by the program.
 
 In the normal form shown in the above illustration, the parent chain
-code and the index number are fed into a one-way cryptographic hash
+code, the parent public key, and the index number are fed into a one-way cryptographic hash
 ([HMAC-SHA512][]) to produce 512 bits of
 deterministically-generated-but-seemingly-random data. The
 seemingly-random 256 bits on the righthand side of the hash output are
@@ -215,17 +215,41 @@ which makes them special.
 
 {% autocrossref %}
 
-Deriving [child extended keys][child extended key]{:#term-child-extended-key}{:.term} from parent extended keys is more nuanced
-than described earlier due to the presence of two extended private key
-derivation formulas. The normal formula, described above, combines
-together only the index number and the parent chain code to create the
+Hardened extended keys fix a potential problem with normal extended keys.
+If an attacker gets a normal parent
+chain code and parent public key, he can brute-force all chain
+codes deriving from it. If the attacker also obtains a child, grandchild, or
+further-descended private key, he can use the chain code to generate all
+of the extended private keys descending from that private key, as
+shown in the grandchild and great-grandchild generations of the illustration below.
+
+![Cross-Generational Key Compromise](/img/dev/en-hd-cross-generational-key-compromise.svg)
+
+Perhaps worse, the attacker can reverse the normal child private key
+derivation formula and subtract a parent chain code from a child private
+key to recover the parent private key, as shown in the child and
+parent generations of the illustration above.  This means an attacker
+who acquires an extended public key and any private key descended from
+it can recover that public key's private key and all keys descended from
+it.
+
+For this reason, the chain code part of an extended public key should be
+better secured than standard public keys and users should be advised
+against exporting even non-extended private keys to
+possibly-untrustworthy environments.
+
+This can be fixed, with some tradeoffs, by replacing the the normal
+key derivation formula with a hardened key derivation formula.
+
+The normal key derivation formula, described in the section above, combines
+together the index number, the parent chain code, and the parent public key to create the
 child chain code and the integer value which is combined with the parent
 private key to create the child private key.
 
 ![Creating Child Public Keys From An Extended Private Key](/img/dev/en-hd-private-parent-to-private-child.svg)
 
 The hardened formula, illustrated above, combines together the index
-number, the parent chain code, and also the parent private key to create
+number, the parent chain code, and the parent private key to create
 the data used to generate the child chain code and child private key.
 This formula makes it impossible to create child public keys without
 knowing the parent private key. In other words, parent extended public
@@ -233,21 +257,8 @@ keys can't create hardened child public keys.
 
 Because of that, a [hardened extended private
 key][]{:#term-hardened-extended-private-key}{:.term} is much less
-useful than a normal extended private key---however, it's more secure
-against multi-level key compromise. If an attacker gets a normal parent
-chain code, he can brute-force find all 2<sup>31</sup> normal chain
-codes deriving from it. If the attacker also obtains a child, grandchild, or
-further-descended private key, he can use the chain code to generate all
-of the extended private keys descending from that private key.
-
-![Cross-Generational Key Compromise](/img/dev/en-hd-cross-generational-key-compromise.svg)
-
-For this reason, the chain code part of an extended public key should be
-better secured than standard public keys and users should be advised
-against exporting even non-extended private keys to
-possibly-untrustworthy environments.
-
-Hardened extended private keys create a firewall through which
+useful than a normal extended private key---however, 
+hardened extended private keys create a firewall through which
 multi-level key derivation compromises cannot happen. Because hardened
 child extended public keys cannot generate grandchild chain codes on
 their own, the compromise of a parent extended public key cannot be
@@ -274,6 +285,13 @@ key. The following hierarchy illustrates prime notation and hardened key
 firewalls.
 
 ![Example HD Wallet Tree Using Prime Notation](/img/dev/en-hd-tree.svg)
+
+Wallets following the BIP32 HD protocol only create hardened children of
+the master private key (*m*) to prevent a compromised child key from
+compromising the master key. As there are no normal children for the
+master keys, the master public key is not used in HD wallets. All other
+keys can have normal children, so the corresponding extended public keys
+may be used instead.
 
 The HD protocol also describes a serialization format for extended
 public keys and extended private keys.  For details, please see the
@@ -321,7 +339,14 @@ For implementation details, please see BIP39.
 
 {% autocrossref %}
 
-Loose-Key wallets, also called "Just a Bunch Of Keys (JBOK)", are a deprecated form of wallet that originated from the Bitcoin Core client wallet. The Bitcoin Core client wallet would create 100 private key/public key pairs automatically via a Pseudo-Random-Number Generator (PRNG) for later use. Once all these keys are consumed or the RPC call `keypoolrefill` is run, another 100 key pairs would be created. This created considerable difficulty<!--noref--> in backing up one’s keys, considering backups have to be run manually to save the newly-generated private keys. If a new key pair set is generated, used, and then lost prior to a backup, the stored satoshis are likely lost forever. Many older-style mobile wallets followed a similar format, but only generated a new private key upon user demand.
+Loose-Key wallets, also called "Just a Bunch Of Keys (JBOK)", are a deprecated form of wallet that originated from the Bitcoin Core client wallet. The Bitcoin Core client wallet would create 100 private key/public key pairs automatically via a Pseudo-Random-Number Generator (PRNG) for later use.
+
+These unused private keys are stored in a virtual "key pool", with new
+keys being generated whenever a previously-generated key was used,
+ensuring the pool maintained 100 unused keys. (If the wallet is
+encrypted, new keys are only generated while the wallet is unlocked.)
+
+This created considerable difficulty<!--noref--> in backing up one’s keys, considering backups have to be run manually to save the newly-generated private keys. If a new key pair set is generated, used, and then lost prior to a backup, the stored satoshis are likely lost forever. Many older-style mobile wallets followed a similar format, but only generated a new private key upon user demand.
 
 This wallet type is being actively phased out and discouraged from being used due to the backup hassle.
 

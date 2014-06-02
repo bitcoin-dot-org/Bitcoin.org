@@ -786,7 +786,9 @@ encryptwallet <passphrase>
 
 Encrypts the wallet with 'passphrase'. This is only to enable encryption
 for the first time.  After encryption is enabled, you will need to
-enter the passphrase to use private keys.
+enter the passphrase to use private keys (which includes generating
+additional new addresses once the keypool is exhausted---see
+`keypoolrefill`).
 
 *Warning:* there is no RPC to completely disable encryption.  If you
 want to return to an unencrypted wallet, you must create a new wallet
@@ -1929,7 +1931,7 @@ Result:
 
 
 
-#### getmininginformation
+#### getmininginfo
 
 ~~~
 getmininginfo
@@ -2657,8 +2659,7 @@ transactions with at least the indicated number of confirmations.
 {% autocrossref %}
 
 *String; required:* a Bitcoin address to check.  Must be an address 
-belonging to the wallet unless `txindex=1` was added to the `bitcoind`
-startup options.
+belonging to the wallet.
 
 {% endautocrossref %}
 

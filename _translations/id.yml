@@ -52,8 +52,6 @@ id:
     securitytext: "Banyak bagian dari keamanan ditangani oleh protokol di sisi klient dan jaringan BItcoin. Otentisitas diverifikasi melalui kunci-pribadi, dan pengeluaran-ganda dicegah melalui jaringan Bitcoin. Yang berarti tidak diperlukan untuk penyesuaian PCI ataupun deteksi kecurangan. Kami menyukai hal yang bekerja, bukan begitu?"
     micro: "Pembayaran mikro yang murah"
     microtext: "Bitcoin menawarkan biaya pemroses pembayaran yang terendah untuk transaksi jenis apapun, termasuk pembayaran-mikro. Ini berarti dapat digunakan untuk menrancang dan implementasikan kreatifitas layanan online baru yang mungkin belum pernah ada hanya karena keterbatasan keuangan."
-    serviceslist: "Kunjungi <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services\">daftar layanan penjualan</a> pada wiki."
-    apireference: "Atau baca <a href=\"https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)\">referensi API</a> dan <a href=\"https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list\">daftar panggilan API</a> Bitcoin Core."
   bitcoin-for-individuals:
     title: "Bitcoin untuk Perorangan - Bitcoin"
     pagetitle: "Bitcoin untuk Perorangan"
@@ -116,10 +114,7 @@ id:
     walletarmory: "Armory adalah klien Bitcoin canggih yang berjalan diatas Bitcoin Core. Mengekspansi fiturnya untuk pengguna ahli Bitcoin. Ia menawarkan banyak fitur pencadangan dan enskripsi, dan ia memungkinkan mengamankan \"cold-storage\" pada komputer offline."
     walletelectrum: "Electrum memfokus akan kecepatan dan kesederhanaan, dengan penggunaan sumber daya yang rendah, Ia menggunakan server jauh yang menangani bagian paling rumit pada sistem Bitcoin, dan ia memungkinkan Anda untuk memulihkan dompet Anda dengan frase rahasia."
     walletbitcoinwallet: "Bitcoin Wallet adalah klien ponsel yang ringan untuk Android dan BlackBerry OS. Klien ini tidak perlu terkait dengan layanan online apapun untuk berfungsi. Ia kompatibel dengan pemindaian kode QR dan NFC."
-    walletblockchaininfomob: "Blockchain.info adalah sebuah dompet web hibrida untuk ponsel. Ia mencakup banyak fitur blockchain.info seperti pencadangan dompet web."
     walletblockchaininfo: "Blockchain.info adalah dompet hibrida yang ramah untuk pengguna, Ia menyimpan sebuah versi terenkripsi dari dompet online Anda tetapi dekripsi terjadi pada peramban Anda. Untuk alasan keamanan, Anda harus selalu menggunakan ekstensi peramban dan cadangan email."
-    walletpaytunia: "Paytunia adalah sebuah dompet web ponsel yang didukung oleh Paymium yang bekerja dengan pusat-Bitcoin untuk memberi Anda akses ke pertukaran Bitcoin tepat dari ponsel Anda. Ia tersedia untuk iPhone dan akan segera untuk Android."
-    walletbips: "BIPS adalah layanan dompet web dari WalletBit yang memungkinkan untuk membeli dan menjual bitcoin dengan mudah di banyak negara. Ia juga menawarkan \"cold storage\", pengimpor dompet dan banyak fitur penjual."
     walletcoinbase: "Coinbase adalah layanan dompet web yang bertujuan menjadi yang paling mudah digunakan. Ia juga menyediakan sebuah Aplikasi dompet web Android, perangkat penjual, dan integrasi dengan rekening bank AS untuk membeli dan menjual bitcoin."
     walletdownload: "<a href=\"#download#\">Unduh</a>"
     walletvisit: "Kunjungi situs web"
@@ -151,12 +146,6 @@ id:
     latestversion: "Versi terbaru: "
     download: "Unduh Bitcoin Core"
     downloados: "Atau pilih sistem operasi Anda"
-    downloadwinzip: "Unduh untuk Windows (zip)"
-    downloadwinexe: "Unduh untuk Windows (exe)"
-    downloadubu: "Unduh untuk Ubuntu (PPA)"
-    downloadlin: "Unduh untuk Linux (tgz, 32/64-bit)"
-    downloadmac: "Unduh untuk Mac OS X"
-    downloadsource: "Kode sumber"
     versionhistory: "Tampilkan sejarah versi"
     notelicense: "Bitcoin Core adalah proyek yang digerakkan oleh komunitas <a href=\"http://www.fsf.org/about/what-is-free-software\">sumber-terbuka gratis</a>, dirilis dibawah <a href=\"http://opensource.org/licenses/mit-license.php\">lisensi MIT</a>."
     notesync: "<b>Catatan</b> : Sinkronisasi awal Bitcoin Core bisa memakan waktu seharian untuk selesai. Anda harus memastikan bahwa Anda memiliki bandwidth dan penyimpanan yang cukup untuk <a href=\"http://blockchain.info/charts/blocks-size\">ukuran rantai-block</a>."
@@ -189,7 +178,6 @@ id:
     intro: "Inilah pertanyaan yang biasa menyebabkan kebingungan. Ini dia penjelasan singkatnya!"
     basics: "Dasar untuk pengguna baru"
     basicstxt1: "Sebagai pengguna baru, Anda hanya diperlukan untuk <a href=\"#choose-your-wallet#\">memilih sebuah dompet</a> yang akan Anda instal pada komputer atau ponsel Anda. Ketika dompet Anda terinstal, ia akan menghasilkan alamat Bitcoin pertama Anda dan Anda bisa membuat lebih, kapanpun Anda membutuhkanya. Anda dapat memberikan alamat Bitcoin Anda kepada teman Anda sehingga mereka bisa membayar Anda atau sebaliknya, Anda bisa membayar teman Anda jika mereka memberi kepada Anda alamat mereka. Faktanya, ini mirip dengan cara kerja email. Jadi yang tersisa untuk dilakukan adalah mendapatkan beberapa bitcoin dan <a href=\"#secure-your-wallet#\">menjaga mereka tetap aman</a>. Untuk mulai menggunakan Bitcoin, Anda tidak diharuskan untuk memahami rincian teknisnya."
-    basicstxt2: "Bagaimanapun juga, jika Anda ingin mengetahui lebih banyak, teruslah membaca!"
     balances: "Saldo<a class=\"titlelight\"> - rantai-blok</a>"
     balancestxt: "Rantai-blok adalah sebuah <b>catatan transaksi umum bersama</b> dimana jaringan Bitcoin bersandar. Semua transaksi terkonfirmasi termasuk dalam rantai-blok tanpa pengecualian. Dengan ini, transaksi baru bisa diverifikasi untuk dibelanjakan yang benar-benar dimiliki oleh pembelanja. Integritas dan urutan kronologis rantai-blok berlakukan dengan <a href=\"#vocabulary##[vocabulary.cryptography]\">kriptografi</a>."
     transactions: "Transaksi<a class=\"titlelight\"> - kunci pribadi</a>"
@@ -354,12 +342,6 @@ id:
     experimentaltxt: "Bitcoin adalah mata uang baru experimental yang masih dalam pengembangan aktif, Meskipun menjadi kurang experimental seiring bertambahnya penggunaan, Anda perlu diingat bahwa Bitcoin adalah penemuan baru yang menjelajahi ide yang belum pernah dilakukan sebelumnya. Dengan demikian, masa depannya tidak bisa diprediksi oleh siapapun."
     tax: "Jangan melupakan pajak pemerintah"
     taxtxt: "Bitcoin bukanlah mata uang resmi. Yang mengatakan, kebanyakan yuridiksi memerlukan Anda untuk membayar pendapatan, penjualan, penggajian, dan pajak keuntungan modal pada sesuatu yang bernilai, termasuk Bitcoin."
-  images:
-    glance: Sekilas mengenai jaringan
-    you: Anda
-    friend: Teman
-    blockchain: Rantai-blok
-    blockchaintxt: (catatan transaksi umum bersama)
   layout:
     menu-about-us: "Mengenai bitcoin.org"
     menu-bitcoin-for-businesses: Bisnis
@@ -368,7 +350,6 @@ id:
     menu-community: Komunitas
     menu-development: Pengembangan
     menu-events: Acara
-    menu-foundation: Yayasan
     menu-getting-started: "Memulai"
     menu-how-it-works: "Cara kerja"
     menu-innovation: Inovasi

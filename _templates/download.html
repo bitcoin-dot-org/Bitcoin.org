@@ -20,9 +20,9 @@ id: download
       <div><img src="/img/os/med_ubuntu.svg" alt="ubuntu"> <a href="https://launchpad.net/~bitcoin/+archive/bitcoin">Ubuntu (PPA)</a> <small>~5MB</small></div>
     </div>
     <p>
-      <a href="/bin/{{site.DOWNLOAD_VERSION}}/SHA256SUMS.asc">{% case page.lang %}{% when 'ar' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}{% translate downloadsig download en %}{% else %}{% translate downloadsig %}{% endcase %}</a><br>
+      <a href="/bin/{{site.DOWNLOAD_VERSION}}/SHA256SUMS.asc">{% case page.lang %}{% when 'ar' or 'fa' or 'id' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}{% translate downloadsig download en %}{% else %}{% translate downloadsig %}{% endcase %}</a><br>
       {% case page.lang %}
-      {% when 'ar' or 'bg' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
+      {% when 'ar' or 'bg' or 'fa' or 'id' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
       <a href="https://github.com/bitcoin/bitcoin">{% translate sourcecode download en %}</a><br>
       {% else %}
       <a href="https://github.com/bitcoin/bitcoin">{% translate sourcecode %}</a><br>
@@ -31,7 +31,7 @@ id: download
     </p>
   </div>
   {% case page.lang %}
-  {% when 'ar' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
+  {% when 'ar' or 'fa' or 'id' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
   {% else %}
   <h2><img src="/img/warning.svg" class="warningicon" alt="warning">{% translate patient %}</h2>
   {% endcase %}

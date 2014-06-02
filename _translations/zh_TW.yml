@@ -127,7 +127,6 @@ zh_TW:
     pagetitle: "選擇你的錢包"
     summary: "有了 Bitcoin 錢包才能進行交易，它提供取得 Bitcoin <i>地址</i>的所有權，可以用來接受其他人匯款與匯出款項。用法跟 Email 類似，在離線時仍可以收到 bitcoin，所有的錢包也都彼此相容。另外，在開始使用 Bitcoin 之前，<b>請務必先看過 <a href=\"#you-need-to-know#\">Bitcoin 使用須知</a></b>。"
     getstarted: "快速上手指南"
-    getstartedsum: "如果你是 Bitcoin 新手，請先從了解這些錢包開始。"
     getstarteddesk: "<a href=\"https://multibit.org/\"><b>MultiBit</b></a> 提供 Windows、Mac、Linux 版本的 App 下載。"
     getstartedmobi: "<a href=\"https://play.google.com/store/apps/details?id=de.schildbach.wallet\"><b>Bitcoin Wallet</b></a> 提供 Android 版本，可在手機或平板電腦執行。"
     bethenetwork: "加入 Bitcoin 的網路"
@@ -143,10 +142,7 @@ zh_TW:
     walletarmory: "Armory 是執行於 Bitcoin Core 之上的一個進階客戶端，為 Bitcoin 專業使用者擴充許多功能。它提供多種備份與加密功能，也允許將安全性冷資料儲存放在離線的電腦。"
     walletelectrum: "Electrum 注重速度和簡單性，只佔用少量的資源。它將 Bitcoin 系統裡最複雜的計算留給遠端伺服器執行，也讓使用者可透過密語來還原錢包。"
     walletbitcoinwallet: "Bitcoin Wallet 是輕量的行動客戶端，支持 Android 和 BlackBerry OS 兩種版本。這個客戶端不需和任何線上服務綁定就可以運作。它 QR 碼掃瞄及 NFC 相容。"
-    walletblockchaininfomob: "Blockchain.info 是一個給行動裝置使用的綜合性網頁版錢包。它包含許多 blockchain.info 的功能，譬如網頁版錢包備份。"
     walletblockchaininfo: "Blockchain.info 是一個方便使用的的綜合性錢包。它將錢包的加密版本儲存在線上，但在你的瀏覽器裡解密。為安全起見，你應該使用它的瀏覽器擴充套件，同時用 Email 來備份。"
-    walletpaytunia: "Paytunia 是給行動裝置用的 Paymium 網頁版電子錢包，它與 Bitcoin-central 協作，讓你從行動裝置上就能存取 Bitcoin 交換器。目前有 iPhone 版本，預計不久後會有 Android 版本。"
-    walletbips: "BIPS 是 WalletBit 的網頁版錢包，讓你能在許多不同國家輕易買賣 bitcoin。同時它提供冷資料儲存、錢包匯入和許多買賣工具的功能。"
     walletcoinbase: "Coinbase 的目標是成為最容易使用的網頁版錢包。它提供 Android 用的網頁版錢包應用程式、買賣工具，並且能整合美國的銀行帳戶進行 bitcoin 買賣。"
     walletdownload: "<a href=\"#download#\">下載</a>"
     walletvisit: "前往網站"
@@ -174,12 +170,6 @@ zh_TW:
     pagetitle: "下載 Bitcoin Core"
     latestversion: "最新版本 : "
     download: "下載 Bitcoin Core"
-    downloadwinzip: "下載適用於 Windows 的版本 (zip)"
-    downloadwinexe: "下載適用於 Windows 的版本 (exe)"
-    downloadubu: "下載適用於 Ubuntu 的版本 (PPA)"
-    downloadlin: "下載適用於 Linux 的版本 (tgz，32/64 位元)"
-    downloadmac: "下載適用於 Mac OS X 的版本"
-    downloadsource: "原始碼"
     versionhistory: "顯示版本歷史"
     notelicense: "Bitcoin Core 是社群所推動的<a href=\"http://www.fsf.org/about/what-is-free-software\">自由開放原始碼</a>，以 <a href=\"http://opensource.org/licenses/mit-license.php\">MIT 授權</a> 發佈。"
     notesync: "<b>附註</b> : Bitcoin Core 初始同步可能要花費一天才能完成。請先確認你有足夠的頻寬和儲存容量來滿足完整的 <a href=\"http://blockchain.info/charts/blocks-size\">區塊鏈大小</a>。"
@@ -196,7 +186,6 @@ zh_TW:
     intro: "這是個常令人感到困惑的問題，以下是速成的解釋！"
     basics: "給新手的基礎知識"
     basicstxt1: "身為一個新手，你只需要<a href=\"#choose-your-wallet#\">選擇你的錢包</a>，然後安裝在自己的電腦或手機上。錢包安裝完成後，就會建立你的第一個 Bitcoin 地址，而你隨時都可以建立更多地址。你可以告訴朋友你的地址讓他們付款給你，反之亦然；這其實就類似 Email 的運作方式。現在你只需要取得一些 bitcoin，並<a href=\"#secure-your-wallet#\">確保它們的安全</a>。要開始使用 Bitcoin 的話，你根本不需要瞭解技術細節。"
-    basicstxt2: "不過，如果你想知道更多的話，請繼續閱讀！"
     balances: "餘額<a class=\"titlelight\"> - 區塊鏈</a>"
     balancestxt: "區塊鏈是整個 Bitcoin 網路所倚賴的<b>共享的公開交易紀錄</b>。所有經確認的交易都會存放在區塊鏈上，毫無例外。藉此我們可以確認新的交易確實是由 bitcoin 的所有人發出。區塊鏈的完整性及時間順序是由<a href=\"#vocabulary##[vocabulary.cryptography]\">密碼學</a>來執行的。"
     transactions: "交易<a class=\"titlelight\"> - 私密金鑰</a>"
@@ -276,21 +265,11 @@ zh_TW:
     offlinetxtxt3: "在離線電腦上簽署交易。"
     offlinetxtxt4: "以連線的電腦傳送已簽署的交易。"
     offlinetxtxt5: "因為與網路連線的電腦無法簽署交易，所以可以避免遭到入侵與領取財產。<a href=\"http://bitcoinarmory.com/about/using-our-wallet/#offlinewallet\">Armory</a>可以用來進行離線交易簽章。"
-    offlinetmp: "暫存設備"
-    offlinetmptxt: "這個作法是將錢包載入一個暫存的設備上。譬如用 Linux Live CD 開機，透過 USB 隨身碟來載入 light SPV 錢包軟體及設定，並且進行交易。當電腦使用可信任的唯讀設備開機，且該設備只有載入電腦記憶體，那麼惡意程式就無法入侵，而且你的錢包不會在硬碟上留下記錄。但下面有些你要特別留心的事項。"
-    offlinetmplose: "丟失財產"
-    offlinetmplosetxt: "暫存設備可能會讓財產永遠消失。如果你的錢包沒有正確地從外接的永久性儲存裝置 (譬如 USB 隨身碟) 載入的話，所有錢包已進行的變更都會永遠消失。其中包含用來接收最後一筆交易變更而新增的 Bitcoin 位址。"
-    offlinetmpmiss: "密碼不符"
-    offlinetmpmisstxt: "在暫存設備上所使用的鍵盤配置可能與實際鍵盤不同，因此會讓輸入內容也有所不同，在有加密的情況則會讓你輸入錯誤的密碼。你可以先在螢幕上輸入看看內容是否如你所想。"
-    offlinetmptrace: "不留記錄"
-    offlinetmptracetxt: "只要電腦有連接硬碟或其他儲存裝置，就有留下私密金鑰紀錄的風險。在載入錢包前，你可能要將先移除所有硬碟，或停用置換分割 (swap partition)。"
     hardwarewallet: "硬體錢包是未來趨勢"
     hardwarewallettxt: "硬體錢包平衡了高安全性與容易使用這兩方面的需求，這個小裝置最根本的設計即是錢包，而不具備其他功能。硬體錢包無法安裝軟體，所以可以對抗電腦安全性問題與網路小偷。硬體錢包還可以備份，即便你丟了它也能取回你的財產。"
     hardwarewalletsoon: "截止今日，還沒有任何硬體錢包量產，但它們很快就要上市了："
     offlinemulti: "防竊用多重簽章"
     offlinemultitxt: "Bitcoin 的多重簽章功能要求使用超過一組的私密金鑰簽章才能進行交易。雖然目前只有具備技術知識的使用者會使用，但未來這個應該會變得更容易使用。多重簽章功能可以允許組織的成員存取組織的財產，但需有五分之三的成員簽署交易才能提款。它也可以讓未來的網路錢包跟使用者分享多重簽章位址，所以小偷必須同時入侵你的電腦和網路錢包的伺服器才能竊取財產。"
-    offlinemobile: "行動裝置小額存款"
-    offlinemobiletxt: "在手機上的 Bitcoin 錢包就像真的皮夾一樣可以裝錢。因為你不會想沒事帶著大筆鈔票逛街，Bitcoin 錢包提供了類似的額度限制機制。你也可以隨時儲值行動裝置，這樣一來兼顧了安全與便利。"
     offlinetestament: "交代遺囑"
     offlinetestamenttxt: "當你離開人世後，如果沒有其他人知道你錢包存放的地點或密碼的話，裡頭的財產就永遠無法取出。你必須花時間想想如何處理這件事。"
   support-bitcoin:
@@ -364,12 +343,6 @@ zh_TW:
     experimentaltxt: "Bitcoin 是持續持續發展中的實驗性新貨幣。雖然它隨著使用時間的增長已經更成熟，但你仍須知道 Bitcoin 是一項新發明，它正探索著沒有人嘗試過的領域。因此，我們也無法預知它的未來走向。"
     tax: "別忘了納稅"
     taxtxt: "儘管 Bitcoin 並非官方貨幣，大部分的稽稅機關仍會要求你針對任何有價值的收入、營業所得、薪水、資產利得來納稅，包括 Bitcoin。"
-  images:
-    glance: 網路概覽
-    you: 你
-    friend: 朋友
-    blockchain: 區塊鏈
-    blockchaintxt: (共享的公開交易記錄)
   layout:
     menu-intro: 介紹
     menu-bitcoin-for-individuals: 個人
@@ -383,7 +356,6 @@ zh_TW:
     menu-events: 活動
     menu-press: 出版物
     menu-innovation: 創新
-    menu-foundation: 基金會
     menu-support-bitcoin: 參與
     menu-faq: 關於
     menu-about-us: "關於 bitcoin.org"
@@ -396,7 +368,6 @@ zh_TW:
     bitcoin-for-developers: bitcoin-for-developers
     bitcoin-for-individuals: bitcoin-for-individuals
     bitcoin-for-businesses: bitcoin-for-businesses
-    bitcoin-for-press: 
     choose-your-wallet: choose-your-wallet
     community: community
     development: development

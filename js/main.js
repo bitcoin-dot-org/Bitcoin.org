@@ -361,6 +361,46 @@ addEvent(window,'load',evtimestamp);
 init();
 }
 
+function addAnchorLinks(){
+//Apply anchor links icon on each title displayed on CSS hover
+var nodes=[];
+var tags=['H2','H3','H4','H5','H6'];
+for(var i=0,n=tags.length;i<n;i++){
+	for(var ii=0,t=document.getElementsByTagName(tags[i]),nn=t.length;ii<nn;ii++)nodes.push(t[ii]);
+}
+for(var i=0,n=nodes.length;i<n;i++){
+	if(!nodes[i].id)continue;
+	if(nodes[i].getElementsByTagName('A').length>0)return;
+	var cl=nodes[i].className.split(' ');
+	cl.push('anchorAf')
+	nodes[i].className=cl.join(' ');
+	var anc=document.createElement('A');
+	anc.href='#'+nodes[i].id;
+	nodes[i].insertBefore(anc,nodes[i].firstChild);
+}
+}
+
+function updateIssue(e){
+//Update GitHub issue link with pre-filled with current page location
+var t=getEventTarget(e);
+t.href='https://github.com/bitcoin/bitcoin.org/issues/new?body='+encodeURIComponent('Location: '+window.location.href.toString()+"\n\n");
+}
+
+function disclaimerClose(e){
+//Auto close temporary disclaimer in devel-docs
+if(e)cancelEvent(e);
+var t=document.getElementById('develdocdisclaimer')
+t.parentNode.removeChild(t);
+if(typeof(Storage)==='undefined')return;
+sessionStorage.setItem('develdocdisclaimerclose','1');
+}
+
+function disclaimerAutoClose(){
+//Auto close temporary disclaimer in devel-docs if session says so
+if(typeof(Storage)==='undefined')return;
+if(sessionStorage.getItem('develdocdisclaimerclose')==='1')disclaimerClose();
+}
+
 function makeEditable(e){
 //An easter egg that makes the page editable when user click on the page and hold their mouse button for one second.
 //This trick allows translators and writers to preview their work.

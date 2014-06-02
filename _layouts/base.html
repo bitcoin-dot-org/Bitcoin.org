@@ -8,8 +8,8 @@
 {% lesscss main.less %}
 <!--[if lt IE 8]>{% lesscss ie.css %}<script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 {% if page.lang == 'ar' or page.lang == 'fa' %}{% lesscss rtl.less %}{% endif %}
-{% if page.lang == 'bg' or page.lang == 'pl' or page.lang == 'ru' or page.lang == 'tr' or page.lang == 'zh_CN' or page.lang == 'zh_TW' %}{% lesscss sans.less %}{% endif %}
-<script type="text/javascript" src="/js/main.js"></script>
+{% if page.lang == 'bg' or page.lang == 'ko' or page.lang == 'pl' or page.lang == 'sl' or page.lang == 'ro' or page.lang == 'ru' or page.lang == 'tr' or page.lang == 'zh_CN' or page.lang == 'zh_TW' %}{% lesscss sans.less %}{% endif %}
+<script type="text/javascript" src="/js/main.js?1400954556"></script>
 {% if page.lang == 'de' or page.lang == 'es' or page.lang == 'hu' or page.lang == 'it' or page.lang == 'nl' or page.lang == 'pl' or page.lang == 'ru' or page.lang == 'tr' %}
 <script src="/js/hyphenator.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -32,16 +32,20 @@ if(typeof(legacyIE)==='undefined'){
 {% endif %}
   <div class="head"><div>
     <select id="langselect" class="langselect" onchange="window.location=this.value;">
-    {% for lang in site.langsorder %}{% if lang.id == page.lang %}{% assign active = ' selected="selected"'%}{% else %}{% assign active = ''%}{% endif %}
-      <option value="/{{ lang.id }}/{% translate {{page.id}} url {{lang.id}} %}"{{ active }}>{{ site.langs[lang.id] }}</option>
+    {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{% endif %}
+          <option value="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"{{ active }}>{{ site.langs[lang] }}</option>
     {% endfor %}
     </select>
     <ul class="lang">
       <li><a href="#" onclick="return false;">{{ site.langs[page.lang] }}</a>
       <ul>
-      {% for lang in site.langsorder %}{% if lang.id != page.lang %}
-        <li><a href="/{{ lang.id }}/{% translate {{page.id}} url {{lang.id}} %}">{{ site.langs[lang.id] }}</a></li>
-      {% endif %}{% endfor %}
+        <li><ul>
+        {% assign i = 0 %}{% assign c = site.langsorder.size | divided_by: 2 | plus: 1 %}
+        {% for lang in site.langsorder %}{% assign mod = i | modulo: c %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' class="active"'%}{% endif %}
+        {% if mod == 0 and i != 0 %}</li></ul><li><ul>{% endif %}
+          <li><a href="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"{{ active }}>{{ site.langs[lang] }}</a></li>
+        {% assign i = i | plus: 1 %}{% endfor %}
+        </ul></li>
       </ul>
       </li>
     </ul>
@@ -67,6 +71,7 @@ if(typeof(legacyIE)==='undefined'){
         <ul>
           <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a></li>
           <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
+          {% if page.lang == 'en' %}<li{% if page.id == 'developer-documentation' %} class="active"{% endif %}><a href="/en/developer-documentation">Documentation</a></li>{% endif %}
           <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
           <li{% if page.id == 'vocabulary' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
           {% case page.lang %}
@@ -80,7 +85,7 @@ if(typeof(legacyIE)==='undefined'){
       <li{% if page.id == 'innovation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate innovation url %}">{% translate menu-innovation layout %}</a></li>
       <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a></li>
       {% case page.lang %}
-      {% when 'id' %}
+      {% when 'id' or 'sv' %}
       {% else %}
       <li{% if page.id == 'faq' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate faq url %}">{% translate menu-faq layout %}</a></li>
       {% endcase %}
@@ -94,7 +99,7 @@ if(typeof(legacyIE)==='undefined'){
     <div class="footermenu">
     <a href="/en/alerts">Network Status</a>
     {% case page.lang %}
-    {% when 'ar' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
+    {% when 'ar' or 'fa' or 'id' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
     <a href="/en/legal">Legal</a>
     {% else %}
     <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
@@ -111,7 +116,7 @@ if(typeof(legacyIE)==='undefined'){
   </div>
   <div class="foundation-banner">
     {% case page.lang %}
-    {% when 'ar' or 'bg' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
+    {% when 'ar' or 'bg' or 'fa' or 'id' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
     <div style="direction:ltr;">{% translate sponsor layout en %} <a href="https://bitcoinfoundation.org/"><img src="/img/brand/logo_foundation.svg" alt="Foundation"> The Bitcoin Foundation</a></div>
     {% else %}
     <div>{% translate sponsor layout %} <a href="https://bitcoinfoundation.org/"><img src="/img/brand/logo_foundation.svg" alt="Foundation"> The Bitcoin Foundation</a></div>
