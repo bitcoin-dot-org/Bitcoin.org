@@ -327,7 +327,7 @@ a unique identifier. This is why, in the example URI above, the Payment
 Request URL contains the P2PKH address:
 `https://example.com/pay/mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN`
 
-Upon receipt of the HTTP GET to the URL above, the Payment
+After receiving the HTTP GET to the URL above, the Payment
 Request-generating CGI program on Bob's webserver takes the
 unique identifier from the URL and looks up the corresponding details in
 the database. It then creates a Payment Details message with the
@@ -385,7 +385,8 @@ transaction has been suitably confirmed, it authorizes shipping
 Charlie's order.
 
 In the case of a dispute, Charlie can generate a cryptgraphically-proven
-receipt out of the various signed or otherwise-proven information.
+[receipt][]{:#term-receipt}{:.term} out of the various signed or
+otherwise-proven information.
 
 * The Payment Details message signed by Bob's webserver proves Charlie
   received an invoice to pay a specified output script for a specified
