@@ -19,7 +19,10 @@ title: "Developer Examples - Bitcoin"
 </div></div>
 <div markdown="1" class="toccontent">
 
+{% include fragment_reviews_needed.md %}
+
 {% include example_transactions.md %}
+
 {% include example_payment_processing.md %}
 
 {% include references.md %}
@@ -27,3 +30,4 @@ title: "Developer Examples - Bitcoin"
 </div>
 
 <script>updateToc();</script>
+<script>addAnchorLinks();</script>
