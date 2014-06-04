@@ -3,12 +3,7 @@
 
 ## Example: ruby ./_contrib/comparelinks.rb master newbranch > ../diff
 
-WORKDIR = `mktemp -d`
-WORKDIR.gsub!("\n",'')
-
-at_exit {
-	`rm -fr "#{WORKDIR}"`
-}
+require 'tmpdir'
 
 def prompt(*args)
     print(*args)
@@ -52,43 +47,49 @@ def fetchlinks()
 
 end
 
-# Copy current repository to a temporary directory
-`rsync -a ./ "#{WORKDIR}/"`
+Dir.mktmpdir{|workdir|
 
-# Build both version of the website and fetch all links
-oldlinks = {}
-newlinks = {}
+	WORKDIR=workdir.gsub("\n",'')
 
-Dir.chdir(WORKDIR) do
+	# Copy current repository to a temporary directory
+	`rsync -a ./ "#{WORKDIR}/"`
 
-	`git checkout #{srcbr}`
-	`jekyll`
-	oldlinks = fetchlinks()
+	# Build both version of the website and fetch all links
+	oldlinks = {}
+	newlinks = {}
 
-	`git checkout #{dstbr}`
-	`jekyll`
-	newlinks = fetchlinks()
+	Dir.chdir(WORKDIR) do
 
-end
+		`git checkout #{srcbr}`
+		`jekyll`
+		oldlinks = fetchlinks()
 
-# Find added links, removed links
-diffaddlinks = []
-diffrmlinks = []
-newlinks.each { |link, etag|
-	next if oldlinks.has_key?(link)
-	diffaddlinks.push(link)
+		`git checkout #{dstbr}`
+		`jekyll`
+		newlinks = fetchlinks()
+
+	end
+
+	# Find added links, removed links
+	diffaddlinks = []
+	diffrmlinks = []
+	newlinks.each { |link, etag|
+		next if oldlinks.has_key?(link)
+		diffaddlinks.push(link)
+	}
+	oldlinks.each { |link, etag|
+		next if newlinks.has_key?(link)
+		diffrmlinks.push(link)
+	}
+
+	# Display resulting diff
+	diff = ''
+	if diffaddlinks.length > 0
+		diff = diff + "## links added\n\n" + diffaddlinks.join("\n") + "\n\n"
+	end
+	if diffrmlinks.length > 0
+		diff = diff + "## links removed\n\n" + diffrmlinks.join("\n") + "\n\n"
+	end
+	print diff
+
 }
-oldlinks.each { |link, etag|
-	next if newlinks.has_key?(link)
-	diffrmlinks.push(link)
-}
-
-# Display resulting diff
-diff = ''
-if diffaddlinks.length > 0
-	diff = diff + "## links added\n\n" + diffaddlinks.join("\n") + "\n\n"
-end
-if diffrmlinks.length > 0
-	diff = diff + "## links removed\n\n" + diffrmlinks.join("\n") + "\n\n"
-end
-print diff
