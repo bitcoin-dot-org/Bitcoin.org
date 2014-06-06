@@ -1,27 +1,6 @@
 ## Payment Processing
 
-### QR Code Error Correction
-
-{% autocrossref %}
-
-![Bitcoin QR Codes](/img/dev/en-qr-code.svg)
-
-QR encoders offer four possible levels of error correction: 
-
-1. Low: corrects up to 7% damage
-
-2. Medium: corrects up to 15% damage but results in approximately 8%
-   larger images over low-level damage correction.
-
-3. Quartile: corrects corrects up to 25% damage but results in
-   approximately 20% larger images over low-level damage correction.
-
-4. High: corrects up to 30% damage but results in approximately 26%
-   larger images over low-level damage correction.
-
-{% endautocrossref %}
-
-#### Payment Protocol
+### Payment Protocol
 
 {% autocrossref %}
 
@@ -44,7 +23,7 @@ served with the [MIME][] type `application/bitcoin-paymentrequest`<!--noref-->.
 
 {% endautocrossref %}
 
-##### PaymentRequest & PaymentDetails
+#### PaymentRequest & PaymentDetails
 
 {% autocrossref %}
 
@@ -70,7 +49,7 @@ programming languages. You will also need a copy of the PaymentRequest
 
 {% endautocrossref %}
 
-###### Initialization Code
+##### Initialization Code
 
 {% autocrossref %}
 
@@ -101,7 +80,7 @@ functions created by `protoc`.
 
 {% endautocrossref %}
 
-###### Configuration Code
+##### Configuration Code
 
 {% autocrossref %}
 
@@ -251,7 +230,7 @@ later.
 
 {% endautocrossref %}
 
-###### Code Variables
+##### Code Variables
 
 {% autocrossref %}
 
@@ -354,7 +333,7 @@ payment as part of a cryptographically-proven receipt.
 
 {% endautocrossref %}
 
-###### Derivable Data
+##### Derivable Data
 
 {% autocrossref %}
 
@@ -440,7 +419,7 @@ same hashing formula we specified in `pki_type` (sha256 in this case)
 
 {% endautocrossref %}
 
-###### Output Code
+##### Output Code
 
 {% autocrossref %}
 
@@ -469,104 +448,5 @@ The following screenshot shows how the authenticated PaymentDetails
 created by the program above appears in the GUI from Bitcoin Core 0.9.
 
 ![Bitcoin Core Showing Validated Payment Request](/img/dev/en-btcc-payment-request.png)
-
-{% endautocrossref %}
-
-##### Payment
-
-{% autocrossref %}
-
-If the spender declines to pay, the wallet program will not send any
-further messages to the receiver's server unless the spender clicks
-another URI pointing to that server.  If the spender does decide to pay,
-the wallet program will create at least one transaction paying each of
-the outputs in the PaymentDetails section. The wallet may broadcast
-the transaction or transactions, as Bitcoin Core 0.9 does, but it
-doesn't need to.
-
-Whether or not it broadcasts the transaction or transactions, the wallet
-program composes a reply to the PaymentRequest; the reply is called the
-Payment. [Payment][pp payment]{:#term-pp-payment}{:.term} contains four fields:
-
-* `merchant_data`: (optional) an exact copy of the
-  `merchant_data` from the PaymentDetails. This is
-  optional in the case that the PaymentDetails doesn't provide
-  `merchant_data`. Receivers should be aware that malicious spenders can
-  modify the merchant data before sending it back, so receivers may wish to
-  cryptographically sign it before giving it to the spender and then
-  validate it before relying on it.
-
-* [`transactions`][pp transactions]{:#term-pp-transactions}{:.term}: (required) one or more signed transactions which pay the outputs
-  specified in the PaymentDetails.
-
-<!-- BIP70 implies that refund_to is required (i.e. "one or more..."),
-but Mike Hearn implied on bitcoin-devel that it's optional (i.e. "wallets have
-to either never submit refund data, or always submit it"). 
-I'll use the BIP70 version here until I hear differently. -harding -->
-
-* [`refund_to`][pp refund to]{:#term-pp-refund-to}{:.term}: (required) one or more output scripts to which the
-  receiver can send a partial or complete refund. As of this writing, a
-  proposal is gaining traction to expire refund output scripts after a
-  certain amount of time (not defined yet) so spenders don't need to
-  worry about receiving refunds to addresses they no longer monitor.
-
-* `memo`: (optional) a plain UTF-8 text memo sent to the receiver. It
-  should not contain HTML or any other markup. Spenders should not depend
-  on receivers reading their memos.
-
-The Payment is sent to the [`payment_url`][pp payment
-url]{:#term-pp-payment-url}{:.term} provided in the PaymentDetails.
-The URL should be a HTTPS address to prevent a man-in-the-middle attack
-from modifying the spender's `refund_to` output scripts. When sending the
-Payment, the wallet program must set the following HTTP client headers:
-
-{% endautocrossref %}
-
-~~~
-Content-Type: application/bitcoin-payment
-Accept: application/bitcoin-paymentack
-~~~
-
-##### PaymentACK
-
-{% autocrossref %}
-
-The receiver's CGI program at the `payment_url` receives the Payment message and
-decodes it using its Protocol Buffers code. The `transactions` are
-checked to see if they pay the output scripts the receiver requested in
-PaymentDetails and are then broadcast to the network (unless the network
-already has them).
-
-The CGI program checks the `merchant_data` parameter if necessary and issues
-a [PaymentACK][]{:#term-paymentack}{:.term} (acknowledgment) with the following HTTP headers:
-
-{% endautocrossref %}
-
-~~~
-Content-Type: application/bitcoin-paymentack
-Content-Transfer-Encoding: binary
-~~~
-
-{% autocrossref %}
-
-Then it sends another Protocol-Buffers-encoded message with one or two
-fields:
-
-* `payment`: (required) A copy of the the entire Payment message (in
-  serialized form) which is being acknowledged.
-
-* `memo`: (optional) A plain UTF-8 text memo displayed to the spender
-  informing them about the status of their payment.  It should not
-  contain HTML or any other markup.  Receivers should not depend on
-  spenders reading their memos.
-
-The PaymentACK does not mean that the payment is final; it just means
-that everything seems to be correct. The payment is final once the
-payment transactions are block-chain confirmed to the receiver's
-satisfaction.
-
-However, the spender's wallet program should indicate to the spender that
-the payment was accepted for processing so the spender can direct his or
-her attention elsewhere.
 
 {% endautocrossref %}

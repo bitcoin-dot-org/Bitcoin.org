@@ -124,14 +124,11 @@ p2sh multisig:
 parent chain code:
 parent private key:
 parent public key:
-Payment message: pp payment
 payment protocol:
 "payment protocol's": payment protocol
-PaymentACK:
 PaymentDetails:
 PaymentRequest:
 PaymentRequests: paymentrequest
-'`payment_url`': pp payment url
 peer:
 peers: peer
 peer-to-peer network: network
@@ -157,7 +154,6 @@ recurrent rebilling:
 redeemScript:
 refund: 
 refunds: refund
-'`refund_to`': pp refund to
 root certificate:
 root seed:
 RPCs: rpc

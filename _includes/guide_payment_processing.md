@@ -221,8 +221,8 @@ images, or in videos. Most mobile Bitcoin wallet apps, and some desktop
 wallets, support scanning QR codes to pre-fill their payment screens.
 
 The figure below shows the same `bitcoin:` URI code encoded as four
-different [Bitcoin QR codes][URI QR code]{:#term-uri-qr-code}{:.term} at different error correction levels (described
-in the Developer Examples [QR Codes subsection][devex qr codes]). The QR code can include the `label` and `message`
+different [Bitcoin QR codes][URI QR code]{:#term-uri-qr-code}{:.term} at four
+different error correction levels. The QR code can include the `label` and `message`
 parameters---and any other optional parameters---but they were
 omitted here to keep the QR code small and easy to scan with unsteady
 or low-resolution mobile cameras.

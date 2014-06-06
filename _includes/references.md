@@ -89,7 +89,6 @@
 [parent private key]: /en/developer-guide#term-parent-private-key "A private key which has created child private keys"
 [parent public key]: /en/developer-guide#term-parent-public-key "A public key corresponding to a parent private key which has child private keys"
 [payment protocol]: /en/developer-guide#term-payment-protocol "The protocol defined in BIP70 which lets spenders get signed payment details from receivers"
-[PaymentACK]: /en/developer-examples#term-paymentack "The PaymentACK of the payment protocol which allows the receiver to indicate to the spender that the payment is being processed"
 [PaymentDetails]: /en/developer-examples#term-paymentdetails "The PaymentDetails of the payment protocol which allows the receiver to specify the payment details to the spender"
 [PaymentRequest]: /en/developer-examples#term-paymentrequest "The PaymentRequest of the payment protocol which contains and allows signing of the PaymentDetails"
 [PaymentRequests]: /en/developer-examples#term-paymentrequest "The PaymentRequest of the payment protocol which contains and allows signing of the PaymentDetails"
@@ -106,13 +105,9 @@
 [pp expires]: /en/developer-examples#term-pp-expires "The expires field of a PaymentDetails where the receiver tells the spender when the PaymentDetails expires"
 [pp memo]: /en/developer-examples#term-pp-memo "The memo fields of PaymentDetails, Payment, and PaymentACK which allow spenders and receivers to send each other memos"
 [pp merchant data]: /en/developer-examples#term-pp-merchant-data "The merchant_data part of PaymentDetails and Payment which allows the receiver to send arbitrary data to the spender in PaymentDetails and receive it back in Payments"
-[pp Payment]: /en/developer-examples#term-pp-payment "The Payment message of the PaymentProtocol which allows the spender to send payment details to the receiver"
 [pp PKI data]: /en/developer-examples#term-pp-pki-data "The pki_data field of a PaymentRequest which provides details such as certificates necessary to validate the request"
 [pp pki type]: /en/developer-examples#term-pp-pki-type "The PKI field of a PaymentRequest which tells spenders how to validate this request as being from a specific recipient"
-[pp refund to]: /en/developer-examples#term-pp-refund-to "The refund_to field of a Payment where the spender tells the receiver what outputs to send refunds to"
 [pp script]: /en/developer-examples#term-pp-script "The script field of a PaymentDetails where the receiver tells the spender what output scripts to pay"
-[pp transactions]: /en/developer-examples#term-pp-transactions "The transactions field of a Payment where the spender provides copies of signed transactions to the receiver"
-[pp payment url]: /en/developer-examples#term-pp-payment-url "The payment_url of the PaymentDetails which allows the receiver to specify where the sender should post payment"
 [proof of work]: /en/developer-guide#term-proof-of-work "Proof that computationally-difficult work was performed which helps secure blocks against modification, protecting transaction history"
 [Pubkey]: /en/developer-guide#term-pubkey "A standard output script which specifies the full public key to match a signature; used in coinbase transactions"
 [r]: /en/developer-guide#term-r-parameter "The payment request parameter in a bitcoin: URI" 
@@ -180,6 +175,7 @@
 [core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
 [core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
 [DER]: https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
+[devex payment protocol]: /en/developer-examples#payment-protocol
 [devguide]: /en/developer-guide
 [devguide wallets]: /en/developer-guide#wallets
 [devref wallets]: /en/developer-reference#wallets

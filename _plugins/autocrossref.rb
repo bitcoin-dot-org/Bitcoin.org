@@ -73,7 +73,7 @@ require 'yaml'
             (?!\w)  ## Don't match inside words
           /xmi, "[\\&][#{term[1]}]{:.auto-link}")
       }
-      output.gsub!('<!--noref-->','')  ## Remove all <!--noref--> comments
+      output.gsub!(/<!--.*?-->/m,'')  ## Remove all HTML comments
 
       output
     end
