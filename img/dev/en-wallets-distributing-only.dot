@@ -1,0 +1,50 @@
+digraph wallet_program {
+size="6.25";
+rankdir=LR;
+//ratio=fill;
+splines=true;
+fontname=Sans
+ranksep=0.3;
+penwidth=1.75;
+
+overlap = false;
+
+edge [ fontname=Sans, penwidth=1.75, style = "invis" ];
+node [ fontname=Sans, shape = box, penwidth=1.75 ];
+
+subgraph cluster_distributing {
+    penwidth=0;
+
+    distributing_priv [ label = "Create\nParent\nPrivate\nKey", style="invis" ];
+    distributing_pub [ label = "Derive\nChild\nPublic\nKeys" ];
+    distributing_distribute [ label = "Distribute\nPublic\nKeys" ];
+    distributing_monitor [ label = "Monitor\nFor\nOutputs", style="invis" ];
+    distributing_create [ label = "Create\nUnsigned\nTxes", style="invis" ];
+    distributing_sign [ label = "Sign\nTxes", style="invis" ];
+    distributing_broadcast [ label = "Broadcast\nTxes", style="invis" ];
+
+    distributing_priv -> distributing_pub -> distributing_distribute -> distributing_monitor -> distributing_create -> distributing_sign -> distributing_broadcast;
+    label = "Distributing-Only Wallet"
+}
+
+subgraph cluster_networked {
+    penwidth=0;
+
+    networked_priv [ label = "Create\nParent\nPrivate\nKey" ];
+    networked_pub [ label = "Derive\nParent\nPublic\nKey" ];
+    networked_distribute [ label = "Distribute\nPublic\nKeys", style="invis" ];
+    networked_monitor [ label = "Monitor\nFor\nOutputs" ];
+    networked_create [ label = "Create\nUnsigned\nTxes" ];
+    networked_sign [ label = "Sign\nTxes" ];
+    networked_broadcast [ label = "Broadcast\nTxes" ];
+
+    networked_priv -> networked_pub -> networked_distribute -> networked_monitor -> networked_create -> networked_sign -> networked_broadcast;
+    label = "       Other Wallet(s)"
+}
+
+networked_priv -> networked_pub [style=""];
+networked_pub -> distributing_pub [ constraint = false, style = ""];
+distributing_pub -> distributing_distribute -> networked_monitor -> networked_create -> networked_sign -> networked_broadcast [style=""];
+
+}
+

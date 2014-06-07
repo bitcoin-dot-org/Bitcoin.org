@@ -1,0 +1,30 @@
+digraph wallet_program {
+size="6.25";
+rankdir=LR;
+//ratio=fill;
+splines=true;
+fontname=Sans
+ranksep=0.3;
+penwidth=1.75;
+
+overlap = false;
+
+edge [ fontname=Sans, penwidth=1.75, style = "invis" ];
+node [ fontname=Sans, shape = box, penwidth=1.75 ];
+
+subgraph cluster_networked {
+    penwidth=0;
+    networked_priv [ label = "Create\nPrivate\nKeys" ];
+    networked_pub [ label = "Derive\nPublic\nKeys" ];
+    networked_distribute [ label = "Distribute\nPublic\nKeys" ];
+    networked_monitor [ label = "Monitor\nFor\nOutputs" ];
+    networked_create [ label = "Create\nUnsigned\nTxes" ];
+    networked_sign [ label = "Sign\nTxes" ];
+    networked_broadcast [ label = "Broadcast\nTxes" ];
+
+    networked_priv -> networked_pub -> networked_distribute -> networked_monitor -> networked_create -> networked_sign -> networked_broadcast [ style = "" ];
+    label = " \nFull-Service Wallet"
+}
+
+}
+
