@@ -252,6 +252,7 @@ mz6KvC4aoUeo6wSxtiVQTo7FDwPnkp6URG
 Get a new address to use in the raw transaction.
 
 {% highlight bash %}
+## Outputs - inputs = transaction fee, so always double-check your math!
 > bitcoin-cli -regtest createrawtransaction '''
     [
       {
@@ -498,6 +499,7 @@ n4LWXU59yM5MzQev7Jx7VNeq1BqZ85ZbLj
 For our two outputs, get two new addresses.
 
 {% highlight bash %}
+## Outputs - inputs = transaction fee, so always double-check your math!
 > bitcoin-cli -regtest createrawtransaction '''
     [
       {
@@ -761,6 +763,7 @@ mfdCHEFL2tW9eEUpizk7XLZJcnFM4hrp78
 Get a new address to spend the satoshis to.
 
 {% highlight bash %}
+## Outputs - inputs = transaction fee, so always double-check your math!
 > bitcoin-cli -regtest createrawtransaction '''
     [
       {
@@ -1130,6 +1133,7 @@ We generate a new P2PKH address to use in the output we're about to
 create.
 
 {% highlight bash %}
+## Outputs - inputs = transaction fee, so always double-check your math!
 > bitcoin-cli -regtest createrawtransaction '''
     [
       {
