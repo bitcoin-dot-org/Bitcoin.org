@@ -623,12 +623,20 @@ the block chain or memory pool.
 
 {% autocrossref %}
 
-
 We will now spend the transaction created in the Complex Raw Transaction
 subsection above without sending it to the local node first. This is the
 same basic process used by wallet programs for offline
 signing---which generally means signing a transaction without access
 to the current UTXO set.
+
+Offline signing is safe. However, in this example we will also be
+spending an output which is not part of the block chain because the
+transaction containing it has never been broadcast. That can be unsafe:
+
+**Warning:** transactions which spend outputs from unconfirmed
+transactions are vulnerable to transaction malleability. Be sure to read
+about transaction malleability and adopt good practices before spending
+unconfirmed transactions on mainnet.
 
 {% highlight bash %}
 > OLD_SIGNED_RAW_TX=0100000002f327e86da3e66bd20e1129b1fb36d07056\
