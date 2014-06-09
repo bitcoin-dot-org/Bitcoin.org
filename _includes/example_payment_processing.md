@@ -21,6 +21,9 @@ aware of the payment protocol, it accesses the URL specified in the `r`
 parameter, which should provide it with a serialized PaymentRequest
 served with the [MIME][] type `application/bitcoin-paymentrequest`<!--noref-->.
 
+**Resource:** Gavin Andresen's [Payment Request Generator][] generates
+custom example URIs and payment requests for use with testnet.
+
 {% endautocrossref %}
 
 #### PaymentRequest & PaymentDetails

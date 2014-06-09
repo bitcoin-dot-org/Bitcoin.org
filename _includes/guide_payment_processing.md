@@ -402,9 +402,6 @@ users and software don't need to worry about payments being sent to
 addresses which are no longer monitored.)  See the Refunds section below
 for more details.
 
-**Resource:** Gavin Andresen's [Payment Request Generator][] generates
-custom example URIs and payment requests for use with testnet.
-
 {% endautocrossref %}
 
 ### Verifying Payment
