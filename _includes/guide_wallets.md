@@ -34,6 +34,11 @@ system: a public key distribution program, a signing program, and a
 networked program.  In the subsections below, we will describe common
 combinations of these parts.
 
+Note: we speak about distributing public keys generically. In many
+cases, P2PKH or P2SH hashes will be distributed instead of public keys,
+with the actual public keys only being distributed when the outputs
+they control are spent.
+
 {% endautocrossref %}
 
 #### Full-Service Wallets
@@ -219,10 +224,13 @@ design these minimalist wallets:
 
 * Pre-populate a database with a number of public keys or addresses, and
   then distribute on request an output script or address using one of
-  the database entries.
+  the database entries. To [avoid key reuse][devguide avoiding key
+  resuse], webservers should keep track
+  of used keys and never run out of public keys. This can be made easier
+  by using parent public keys as suggested in the next method.
 
-* Use a parent public key to create child public keys. To [avoid key
-  reuse][devguide avoiding key reuse], a method must be used to ensure the same public key isn't
+* Use a parent public key to create child public keys. To avoid key
+  reuse, a method must be used to ensure the same public key isn't
   distributed twice. This can be a database entry for each key
   distributed or an incrementing pointer to the current child key
   index number.
@@ -349,7 +357,7 @@ sum divided by a global constant used by all Bitcoin software (*G*):
 
 This means that two or more independent programs which agree on a
 sequence of integers can create a series of unique [child key][]{:#term-child-key}{:.term} pairs from
-a single parent key pair without any further communication.
+a single [parent key][]{:#term-parent-key}{:.term} pair without any further communication.
 Moreover, the program which distributes new public keys for receiving
 payment can do so without any access to the private keys, allowing the
 public key distribution program to run on a possibly-insecure platform such as
