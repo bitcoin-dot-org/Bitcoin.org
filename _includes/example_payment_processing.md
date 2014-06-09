@@ -12,7 +12,7 @@ bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
 ?amount=0.10\
 &label=Example+Merchant\
 &message=Order+of+flowers+%26+chocolates\
-&r=http://example.com/pay.php/invoice%3Dda39a3ee
+&r=https://example.com/pay.php/invoice%3Dda39a3ee
 ~~~
 
 The browser, QR code reader, or other program processing the URI opens
