@@ -215,6 +215,8 @@ BIP21:
 BIP32:
 BIP39:
 BIP70:
+BIP71:
+BIP72:
 
 ## RPCs
 '`addmultisigaddress`': rpc addmultisigaddress
