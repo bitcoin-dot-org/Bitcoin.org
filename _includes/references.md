@@ -86,6 +86,7 @@
 [P2SH]: /en/developer-guide#term-p2sh "A script which Pays To Script Hashes (P2SH), allowing convenient spending of satoshis to an address referencing a script"
 [P2SH multisig]: /en/developer-guide#term-p2sh-multisig "A multisig script embedded in the redeemScript of a pay-to-script-hash (P2SH) transaction"
 [parent chain code]: /en/developer-guide#term-parent-chain-code "A chain code which has helped create child public or private keys"
+[parent key]: /en/developer-guide#term-parent-key "In HD wallets, a key capable of deriving child keys"
 [parent private key]: /en/developer-guide#term-parent-private-key "A private key which has created child private keys"
 [parent public key]: /en/developer-guide#term-parent-public-key "A public key corresponding to a parent private key which has child private keys"
 [payment protocol]: /en/developer-guide#term-payment-protocol "The protocol defined in BIP70 which lets spenders get signed payment details from receivers"
@@ -101,7 +102,6 @@
 [private keys]: /en/developer-guide#term-private-key "The private portion of a keypair which can create signatures which other people can verify using the public key"
 [pubkey hash]: /en/developer-guide#term-pubkey-hash "The hash of a public key which can be included in a P2PKH output"
 [public key]: /en/developer-guide#term-public-key "The public portion of a keypair which can be safely distributed to other people so they can verify a signature created with the corresponding private key"
-[public keys]: /en/developer-guide#term-public-key "The public portion of a keypair which can be safely distributed to other people so they can verify a signature created with the corresponding private key"
 [pp amount]: /en/developer-guide#term-pp-amount "Part of the Output part of the PaymentDetails part of a payment protocol where receivers can specify the amount of satoshis they want paid to a particular output script"
 [pp expires]: /en/developer-guide#term-pp-expires "The expires field of a PaymentDetails where the receiver tells the spender when the PaymentDetails expires"
 [pp memo]: /en/developer-guide#term-pp-memo "The memo fields of PaymentDetails, Payment, and PaymentACK which allow spenders and receivers to send each other memos"
@@ -180,6 +180,8 @@
 [core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
 [core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
 [DER]: https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
+[devguide avoiding key reuse]: /en/developer-guide#avoiding-key-reuse
+[devguide payment processing]: /en/developer-guide#payment-processing
 [devguide wallets]: /en/developer-guide#wallets
 [devref wallets]: /en/developer-reference#wallets
 [docs issue]: https://github.com/bitcoin/bitcoin.org/issues

@@ -36,6 +36,7 @@ change output:
 change outputs: change output
 child key:
 child keys: child key
+child private and public keys: child key
 child public key:
 child public keys: child public key
 coinbase: coinbase transaction
@@ -122,7 +123,9 @@ p2pkh:
 p2sh:
 p2sh multisig:
 parent chain code:
+parent key:
 parent private key:
+parent private and public keys: parent key
 parent public key:
 Payment message: pp payment
 payment protocol:
