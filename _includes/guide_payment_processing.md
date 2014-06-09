@@ -316,9 +316,9 @@ a `bitcoin:` URI for Charlie to click to pay.
 Charlie clicks on the `bitcoin:` URI in his browser. His browser's URI
 handler sends the URI to his wallet program. The wallet is aware of the
 Payment Protocol, so it parses the `r` parameter and sends an HTTP GET
-to that URL looking for a payment request.
+to that URL looking for a PaymentRequest message.
 
-The PaymentRequest message may include private information, such as Charlie's
+The PaymentRequest message returned may include private information, such as Charlie's
 mailing address, but the wallet must be able to access it without using prior
 authentication, such as HTTP cookies, so a publicly-accessible HTTPS URL
 with a guess-resistant part is typically used. The
@@ -327,8 +327,8 @@ a unique identifier. This is why, in the example URI above, the PaymentRequest
 URL contains the P2PKH address:
 `https://example.com/pay/mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN`
 
-After receiving the HTTP GET to the URL above, the Payment
-Request-generating CGI program on Bob's webserver takes the
+After receiving the HTTP GET to the URL above, the
+PaymentRequest-generating CGI program on Bob's webserver takes the
 unique identifier from the URL and looks up the corresponding details in
 the database. It then creates a PaymentDetails message with the
 following information:
@@ -352,7 +352,7 @@ payment request to Charlie's wallet in the reply to the HTTP GET.
 
 ![Bitcoin Core Showing Validated Payment Request](/img/dev/en-btcc-payment-request.png)
 
-Charlie's wallet receives the payment request, checks its signature, and
+Charlie's wallet receives the PaymentRequest message, checks its signature, and
 then displays the details from the PaymentDetails message to Charlie. Charlie
 agrees to pay, so the wallet constructs a payment to the output script
 Bob's server provided. Unlike a traditional Bitcoin payment, Charlie's
@@ -377,9 +377,9 @@ from Bob's server thanking Charlie for his patronage and providing other
 information about the order, such as the expected arrival date.
 
 Charlie's wallet sees the PaymentACK and tells Charlie that the payment
-has been sent. The PaymentACK doesn't mean that Charlie has actually
-paid Bob---see the Verifying Payment subsection below---but it does mean
-that he can go do something else while the transaction gets confirmed.
+has been sent. The PaymentACK doesn't mean that Bob has verified
+Charlie's payment---see the Verifying Payment subsection below---but it does mean
+that Charlie can go do something else while the transaction gets confirmed.
 After Bob's server verifies from the block chain that Charlie's
 transaction has been suitably confirmed, it authorizes shipping
 Charlie's order.
