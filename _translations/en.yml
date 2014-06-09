@@ -32,7 +32,7 @@ en:
     visibility: "Get some free visibility"
     visibilitytext: "Bitcoin is an emerging market of new customers who are searching for ways to spend their bitcoins. Accepting them is a good way to get new customers and give your business some new visibility. Accepting a new payment method has often shown to be a clever practice for online businesses."
     multisig: "Multi-signature"
-    multisigtext: "Bitcoin also includes a feature, not yet well known, which allows bitcoins to be spent only if a subset of a group of people sign the transaction (so-called \"n of m\" transactions). This is the equivalent of the good old multi-signature cheque system that you might still use with banks today."
+    multisigtext: "Bitcoin also includes a feature, not yet well known, which allows bitcoins to be spent only if a subset of a group of people sign the transaction (so-called \"m of n\" transactions). This is the equivalent of the good old multi-signature cheque system that you might still use with banks today."
     transparency: "Accounting transparency"
     transparencytext: "Many organizations are required to produce accounting documents about their activity. Using Bitcoin allows you to offer the highest level of transparency since you can provide information your members can use to verify your balances and transactions. Non-profit organizations can also allow the public to see how much they receive in donations."
   bitcoin-for-developers:
