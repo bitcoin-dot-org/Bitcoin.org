@@ -30,6 +30,21 @@ id: choose-your-wallet
   <a href="#" onclick="return false;"><img src="/img/clients/lo-bitcoinwallet.png" alt="bitcoin wallet" />Bitcoin<br>Wallet</a>
 </div>
 {% case page.lang %}
+{% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'hu' or 'id' or 'it' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'ru' or 'sv' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+<div>
+  <div>
+    <div>
+      <h2>Hive Android</h2>
+      <span><img src="/img/os/android.png" alt="Android" title="Android" /></span>
+      <p>{% translate wallethive-android %}</p>
+      <p><a href="https://www.hivewallet.com">{% translate walletvisit %}</a></p>
+    </div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-hive.png" alt="hive" />Hive<br>Android</a>
+</div>
+{% endcase %}
+{% case page.lang %}
 {% when 'ar' or 'fa' or 'id' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
 {% else %}
 <div data-id="mycelium">
@@ -76,13 +91,13 @@ id: choose-your-wallet
 <div>
   <div>
     <div>
-      <h2>Hive</h2>
+      <h2>Hive OS X</h2>
       <span><img src="/img/os/osx-uni.png" alt="Mac OS X" title="Mac OS X" /></span>
       <p>{% translate wallethive %}</p>
       <p><a href="https://www.hivewallet.com">{% translate walletvisit %}</a></p>
     </div>
   </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-hive.png" alt="hive" />Hive</a>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-hive.png" alt="hive" />Hive OS X</a>
 </div>
 {% endcase %}
 <div>
@@ -251,14 +266,14 @@ id: choose-your-wallet
   <div>
     <div class="b1"></div>
     <div class="b2">
-      <h2>Hive</h2>
+      <h2>Hive OS X</h2>
       <span><img src="/img/os/osx-uni.png" alt="Mac OS X" title="Mac OS X" /></span>
       <p class="hyphenate">{% translate wallethive %}</p>
       <p><a href="https://www.hivewallet.com">{% translate walletvisit %}</a></p>
     </div>
     <div class="b3"></div>
   </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-hive.png" alt="hive" />Hive</a>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-hive.png" alt="hive" />Hive OS X</a>
 </div>
 {% endcase %}
 <div>
@@ -303,6 +318,23 @@ id: choose-your-wallet
   </div>
   <a href="#" onclick="return false;"><img src="/img/clients/lo-bitcoinwallet.png" alt="bitcoin wallet" />Bitcoin<br>Wallet</a>
 </div>
+{% case page.lang %}
+{% when 'ar' or 'bg' or 'de' or 'es' or 'fa' or 'fr' or 'hu' or 'id' or 'it' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'ru' or 'sv' or 'tr' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+<div>
+  <div>
+    <div class="b1"></div>
+    <div class="b2">
+      <h2>Hive Android</h2>
+      <span><img src="/img/os/android.png" alt="Android" title="Android" /></span>
+      <p class="hyphenate">{% translate wallethive-android %}</p>
+      <p><a href="https://www.hivewallet.com">{% translate walletvisit %}</a></p>
+    </div>
+    <div class="b3"></div>
+  </div>
+  <a href="#" onclick="return false;"><img src="/img/clients/lo-hive.png" alt="hive" />Hive<br>Android</a>
+</div>
+{% endcase %}
 {% case page.lang %}
 {% when 'ar' or 'fa' or 'id' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
 {% else %}

@@ -112,6 +112,13 @@ aliases:
   --author=Satoshi Nakamoto: Satoshi Nakamoto
   gavinandresen: Gavin Andresen
   tcatm: Nils Schneider
+  gmaxwell: Gregory Maxwell
+  sipa: Pieter Wuille
+  jgarzik: Jeff Garzik
+  petertodd: Peter Todd
+  luke-jr: Luke-Jr
+  laanwj: Wladimir J. van der Laan
+  mikehearn: Mike Hearn
 
 safe:        false
 server_port: 4000

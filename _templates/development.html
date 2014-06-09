@@ -77,7 +77,7 @@ id: development
   <div class="contributors">{% for c in site.contributors %}
     <span>
       {% if c.gravatar_id %}<img class="icon" height="16" width="16" src="https://secure.gravatar.com/avatar/{{c.gravatar_id}}?s=140&amp;d=mm" alt="icon" />{% else %}<img class="icon" height="16" width="16" alt="icon" />{% endif %}
-      {% if c.login %}<a href="https://github.com/{{c.login}}">{{ c.name }} ({{ c.contributions }})</a>{% else %}{{ c.name }} ({{ c.contributions }}){% endif %}
+      {% if c.login %}<a href="https://github.com/{{c.login}}">{{ c.name | htmlescape }} ({{ c.contributions }})</a>{% else %}<a>{{ c.name | htmlescape }} ({{ c.contributions }})</a>{% endif %}
     </span>{% endfor %}
   </div>
 </section>
