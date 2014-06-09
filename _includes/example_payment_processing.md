@@ -12,7 +12,7 @@ bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
 ?amount=0.10\
 &label=Example+Merchant\
 &message=Order+of+flowers+%26+chocolates\
-&r=http://example.com/pay.php/invoice%3Dda39a3ee
+&r=https://example.com/pay.php/invoice%3Dda39a3ee
 ~~~
 
 The browser, QR code reader, or other program processing the URI opens
@@ -20,6 +20,9 @@ the spender's Bitcoin wallet program on the URI. If the wallet program is
 aware of the payment protocol, it accesses the URL specified in the `r`
 parameter, which should provide it with a serialized PaymentRequest
 served with the [MIME][] type `application/bitcoin-paymentrequest`<!--noref-->.
+
+**Resource:** Gavin Andresen's [Payment Request Generator][] generates
+custom example URIs and payment requests for use with testnet.
 
 {% endautocrossref %}
 

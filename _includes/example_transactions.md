@@ -89,7 +89,7 @@ Verify that we now have 50 bitcoins available to spend.
 Bitcoin Core provides several RPCs which handle all the details of
 spending, including creating change outputs and paying appropriate fees.
 Even advanced users should use these RPCs whenever possible to decrease
-the chance that satoshis will be lost to mistakes.
+the chance that satoshis will be lost by mistake.
 
 {% highlight bash %}
 > bitcoin-cli -regtest getnewaddress
@@ -400,7 +400,7 @@ variables.
 In this example, we'll create a transaction with two inputs and two
 outputs.  We'll sign each of the inputs separately, as might happen if
 the two inputs belonged to different people who agreed to create a
-transaction together (such as a Coinjoin transaction).
+transaction together (such as a CoinJoin transaction).
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
