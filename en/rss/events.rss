@@ -7,14 +7,16 @@
 	<link>https://bitcoin.org/en/events</link>
 	<description>This RSS feed allows to follow Bitcoin events and conferences.</description>
 	<image>
+		<title>Bitcoin conferences and events</title>
 		<url>https://bitcoin.org/img/logo_rss.png</url>
 		<link>https://bitcoin.org/en/events</link>
 	</image>
 	{% filter_for p in site.conferences sort_by:date %}
         <item>
-            <title>{{ p.title }}, {{ p.city }} - {{ p.country }}</title>
+            <title>{{ p.title | htmlescape }}, {{ p.city | htmlescape }} - {{ p.country | htmlescape }}</title>
             <link>{{ p.link }}</link>
-            <pubDate>{{ p.date | date: "%a, %d %b %Y" }}</pubDate>
+            <guid>{{ p.link }}</guid>
+            <pubDate>{{ p.date | date: "%a, %d %b %Y" }} 00:00:00 GMT</pubDate>
         </item>
 	{% endfilter_for %}
 </channel>

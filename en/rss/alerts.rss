@@ -7,14 +7,16 @@
 	<link>https://bitcoin.org/en/alerts</link>
 	<description>This RSS feed allows to follow events and alerts surrounding the Bitcoin network and software.</description>
 	<image>
+		<title>Bitcoin network status and alerts</title>
 		<url>https://bitcoin.org/img/logo_rss.png</url>
 		<link>https://bitcoin.org/en/alerts</link>
 	</image>
 	{% filter_for p in site.pages reversed sort_by:date category:alert %}
         <item>
-            <title>{{ p.title }}</title>
+            <title>{{ p.title | htmlescape }}</title>
             <link>https://bitcoin.org{{ p.url | replace:'.html','' }}</link>
-            <pubDate>{{ p.date | date: "%a, %d %b %Y" }}</pubDate>
+            <guid>https://bitcoin.org{{ p.url | replace:'.html','' }}</guid>
+            <pubDate>{{ p.date | date: "%a, %d %b %Y" }} 00:00:00 GMT</pubDate>
         </item>
 	{% endfilter_for %}
 </channel>
