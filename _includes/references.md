@@ -17,7 +17,7 @@
 [broadcast]: /en/developer-guide#transaction-broadcasting "Sending transactions or blocks to all other peers on the Bitcoin network (compare to privately transmitting to a single peer or partner"
 [broadcasts]: /en/developer-guide#transaction-broadcasting "Sending transactions or blocks to all other peers on the Bitcoin network (compare to privately transmitting to a single peer or partner"
 [broadcasting]: /en/developer-guide#transaction-broadcasting "Sending transactions or blocks to all other peers on the Bitcoin network (compare to privately transmitting to a single peer or partner)"
-[certificate chain]: /en/developer-guide#term-certificate-chain "A chain of certificates connecting a individual's leaf certificate to the certificate authority's root certificate"
+[certificate chain]: /en/developer-examples#term-certificate-chain "A chain of certificates connecting a individual's leaf certificate to the certificate authority's root certificate"
 [chain code]: /en/developer-guide#term-chain-code "In HD wallets, 256 bits of entropy added to the master public and private keys to help them generate secure child keys; the chain code is usually derived from a seed along with the master private key"
 [change address]: /en/developer-guide#term-change-output "An output used by a spender to send back to himself some of the satoshis from the inputs"
 [change output]: /en/developer-guide#term-change-output "An output used by a spender to send back to himself some of the satoshis from the inputs"
@@ -45,11 +45,11 @@
 [high-priority transactions]: /en/developer-guide#term-high-priority-transactions "Transactions which don't pay a transaction fee; only transactions spending long-idle outputs are eligible"
 [input]: /en/developer-guide#term-input "The input to a transaction linking to the output of a previous transaction which permits spending of satoshis"
 [inputs]: /en/developer-guide#term-input "The input to a transaction linking to the output of a previous transaction which permits spending of satoshis"
-[intermediate certificate]: /en/developer-guide#term-intermediate-certificate "A intermediate certificate authority certificate which helps connect a leaf (receiver) certificate to a root certificate authority"
+[intermediate certificate]: /en/developer-examples#term-intermediate-certificate "A intermediate certificate authority certificate which helps connect a leaf (receiver) certificate to a root certificate authority"
 [key index]: /en/developer-guide#term-key-index "An index number used in the HD wallet formula to generate child keys from a parent key" 
 [key pair]: /en/developer-guide#term-key-pair "A private key and its derived public key"
 [label]: /en/developer-guide#term-label "The label parameter of a bitcoin: URI which provides the spender with the receiver's name (unauthenticated)" 
-[leaf certificate]: /en/developer-guide#term-leaf-certificate "The end-node in a certificate chain; in the payment protocol, it is the certificate belonging to the receiver of satoshis"
+[leaf certificate]: /en/developer-examples#term-leaf-certificate "The end-node in a certificate chain; in the payment protocol, it is the certificate belonging to the receiver of satoshis"
 [locktime]: /en/developer-guide#term-locktime "Part of a transaction which indicates the earliest time or earliest block when that transaction can be added to the block chain"
 [long-term fork]: /en/developer-guide#term-long-term-fork "When a series of blocks have corresponding block heights, indicating a possibly serious problem"
 [mainnet]: /en/developer-guide#term-mainnet "The Bitcoin main network used to transfer satoshis (compare to testnet, the test network)"
@@ -90,29 +90,24 @@
 [parent private key]: /en/developer-guide#term-parent-private-key "A private key which has created child private keys"
 [parent public key]: /en/developer-guide#term-parent-public-key "A public key corresponding to a parent private key which has child private keys"
 [payment protocol]: /en/developer-guide#term-payment-protocol "The protocol defined in BIP70 which lets spenders get signed payment details from receivers"
-[PaymentACK]: /en/developer-guide#term-paymentack "The PaymentACK of the payment protocol which allows the receiver to indicate to the spender that the payment is being processed"
-[PaymentDetails]: /en/developer-guide#term-paymentdetails "The PaymentDetails of the payment protocol which allows the receiver to specify the payment details to the spender"
-[PaymentRequest]: /en/developer-guide#term-paymentrequest "The PaymentRequest of the payment protocol which contains and allows signing of the PaymentDetails"
-[PaymentRequests]: /en/developer-guide#term-paymentrequest "The PaymentRequest of the payment protocol which contains and allows signing of the PaymentDetails"
+[PaymentDetails]: /en/developer-examples#term-paymentdetails "The PaymentDetails of the payment protocol which allows the receiver to specify the payment details to the spender"
+[PaymentRequest]: /en/developer-examples#term-paymentrequest "The PaymentRequest of the payment protocol which contains and allows signing of the PaymentDetails"
+[PaymentRequests]: /en/developer-examples#term-paymentrequest "The PaymentRequest of the payment protocol which contains and allows signing of the PaymentDetails"
 [peer]: /en/developer-guide#term-peer "Peer on the P2P network who receives and broadcasts transactions and blocks"
 [peers]: /en/developer-guide#term-peer "Peers on the P2P network who receive and broadcast transactions and blocks"
-[PKI]: /en/developer-guide#term-pki "Public Key Infrastructure; usually meant to indicate the X.509 certificate system used for HTTP Secure (https)."
+[PKI]: /en/developer-examples#term-pki "Public Key Infrastructure; usually meant to indicate the X.509 certificate system used for HTTP Secure (https)."
 [point function]: /en/developer-guide#term-point-function "The ECDSA function used to create a public key from a private key"
 [private key]: /en/developer-guide#term-private-key "The private portion of a keypair which can create signatures which other people can verify using the public key"
 [private keys]: /en/developer-guide#term-private-key "The private portion of a keypair which can create signatures which other people can verify using the public key"
 [pubkey hash]: /en/developer-guide#term-pubkey-hash "The hash of a public key which can be included in a P2PKH output"
 [public key]: /en/developer-guide#term-public-key "The public portion of a keypair which can be safely distributed to other people so they can verify a signature created with the corresponding private key"
-[pp amount]: /en/developer-guide#term-pp-amount "Part of the Output part of the PaymentDetails part of a payment protocol where receivers can specify the amount of satoshis they want paid to a particular output script"
-[pp expires]: /en/developer-guide#term-pp-expires "The expires field of a PaymentDetails where the receiver tells the spender when the PaymentDetails expires"
-[pp memo]: /en/developer-guide#term-pp-memo "The memo fields of PaymentDetails, Payment, and PaymentACK which allow spenders and receivers to send each other memos"
-[pp merchant data]: /en/developer-guide#term-pp-merchant-data "The merchant_data part of PaymentDetails and Payment which allows the receiver to send arbitrary data to the spender in PaymentDetails and receive it back in Payments"
-[pp Payment]: /en/developer-guide#term-pp-payment "The Payment message of the PaymentProtocol which allows the spender to send payment details to the receiver"
-[pp PKI data]: /en/developer-guide#term-pp-pki-data "The pki_data field of a PaymentRequest which provides details such as certificates necessary to validate the request"
-[pp pki type]: /en/developer-guide#term-pp-pki-type "The PKI field of a PaymentRequest which tells spenders how to validate this request as being from a specific recipient"
-[pp refund to]: /en/developer-guide#term-pp-refund-to "The refund_to field of a Payment where the spender tells the receiver what outputs to send refunds to"
-[pp script]: /en/developer-guide#term-pp-script "The script field of a PaymentDetails where the receiver tells the spender what output scripts to pay"
-[pp transactions]: /en/developer-guide#term-pp-transactions "The transactions field of a Payment where the spender provides copies of signed transactions to the receiver"
-[pp payment url]: /en/developer-guide#term-pp-payment-url "The payment_url of the PaymentDetails which allows the receiver to specify where the sender should post payment"
+[pp amount]: /en/developer-examples#term-pp-amount "Part of the Output part of the PaymentDetails part of a payment protocol where receivers can specify the amount of satoshis they want paid to a particular output script"
+[pp expires]: /en/developer-examples#term-pp-expires "The expires field of a PaymentDetails where the receiver tells the spender when the PaymentDetails expires"
+[pp memo]: /en/developer-examples#term-pp-memo "The memo fields of PaymentDetails, Payment, and PaymentACK which allow spenders and receivers to send each other memos"
+[pp merchant data]: /en/developer-examples#term-pp-merchant-data "The merchant_data part of PaymentDetails and Payment which allows the receiver to send arbitrary data to the spender in PaymentDetails and receive it back in Payments"
+[pp PKI data]: /en/developer-examples#term-pp-pki-data "The pki_data field of a PaymentRequest which provides details such as certificates necessary to validate the request"
+[pp pki type]: /en/developer-examples#term-pp-pki-type "The PKI field of a PaymentRequest which tells spenders how to validate this request as being from a specific recipient"
+[pp script]: /en/developer-examples#term-pp-script "The script field of a PaymentDetails where the receiver tells the spender what output scripts to pay"
 [proof of work]: /en/developer-guide#term-proof-of-work "Proof that computationally-difficult work was performed which helps secure blocks against modification, protecting transaction history"
 [Pubkey]: /en/developer-guide#term-pubkey "A standard output script which specifies the full public key to match a signature; used in coinbase transactions"
 [r]: /en/developer-guide#term-r-parameter "The payment request parameter in a bitcoin: URI" 
@@ -121,7 +116,7 @@
 [recurrent rebilling]: /en/developer-guide#rebilling-recurring-payments "Billing a spender on a regular schedule"
 [redeemScript]: /en/developer-guide#term-redeemscript "A script created by the recipient, hashed, and given to the spender for use in a P2SH output"
 [refund]: /en/developer-guide#issuing-refunds "A transaction which refunds some or all satoshis received in a previous transaction"
-[root certificate]: /en/developer-guide#term-root-certificate "A certificate belonging to a certificate authority (CA)"
+[root certificate]: /en/developer-examples#term-root-certificate "A certificate belonging to a certificate authority (CA)"
 [root seed]: /en/developer-guide#term-root-seed "A potentially-short value used as a seed to generate a master private key and master chain code for an HD wallet"
 [satoshi]: /en/developer-guide#term-satoshi "The smallest unit of Bitcoin value; 0.00000001 bitcoins.  Also used generically for any value of bitcoins"
 [satoshis]: /en/developer-guide#term-satoshi "The smallest unit of Bitcoin value; 0.00000001 bitcoins.  Also used generically for any value of bitcoins"
@@ -140,7 +135,7 @@
 [signature]: /en/developer-guide#term-signature "The result of combining a private key and some data in an ECDSA signature operation which allows anyone with the corresponding public key to verify the signature"
 [signature hash]: /en/developer-guide#term-signature-hash "A byte appended onto signatures generated in Bitcoin which allows the signer to specify what data was signed, allowing modification of the unsigned data"
 [spv]: /en/developer-guide#simplified-payment-verification-spv "A method for verifying particular transactions were included in blocks without downloading the entire contents of the block chain"
-[ssl signature]: /en/developer-guide#term-ssl-signature "Signatures created and recognized by major SSL implementations such as OpenSSL"
+[ssl signature]: /en/developer-examples#term-ssl-signature "Signatures created and recognized by major SSL implementations such as OpenSSL"
 [stack]: /en/developer-guide#term-stack "An evaluation stack used in Bitcoin's script language"
 [standard script]: /en/developer-guide#standard-transactions "An output script which matches the isStandard() patterns specified in Bitcoin Core---or a transaction containing only standard outputs. Only standard transactions are mined or broadcast by peers running the default Bitcoin Core software"
 [target]: /en/developer-guide#term-target "The threshold below which a block header hash must be in order for the block to be added to the block chain"
@@ -163,13 +158,15 @@
 [wallet]: /en/developer-guide#wallets "Software which stores private keys to allow users to spend and receive satoshis"
 [Wallet Import Format]: /en/developer-guide#term-wallet-import-format "A private key specially formatted to allow easy import into a wallet"
 [wallets]: /en/developer-guide#wallets "Software which stores private keys to allow users to spend and receive satoshis"
-[X509Certificates]: /en/developer-guide#term-x509certificates
+[X509Certificates]: /en/developer-examples#term-x509certificates
 
 [BFGMiner]: https://github.com/luke-jr/bfgminer
 [BIP21]: https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki
 [BIP32]: https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
 [BIP39]: https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
 [BIP70]: https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki
+[BIP71]: https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki
+[BIP72]: https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki
 [bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation
 [bitcoinpdf]: https://bitcoin.org/bitcoin.pdf
 [block170]: http://blockexplorer.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
@@ -180,6 +177,8 @@
 [core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
 [core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
 [DER]: https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
+[devex payment protocol]: /en/developer-examples#payment-protocol
+[devguide]: /en/developer-guide
 [devguide avoiding key reuse]: /en/developer-guide#avoiding-key-reuse
 [devguide payment processing]: /en/developer-guide#payment-processing
 [devguide wallets]: /en/developer-guide#wallets

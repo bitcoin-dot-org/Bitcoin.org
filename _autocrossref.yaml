@@ -127,14 +127,11 @@ parent key:
 parent private key:
 parent private and public keys: parent key
 parent public key:
-Payment message: pp payment
 payment protocol:
 "payment protocol's": payment protocol
-PaymentACK:
 PaymentDetails:
 PaymentRequest:
 PaymentRequests: paymentrequest
-'`payment_url`': pp payment url
 peer:
 peers: peer
 peer-to-peer network: network
@@ -160,7 +157,6 @@ recurrent rebilling:
 redeemScript:
 refund: 
 refunds: refund
-'`refund_to`': pp refund to
 root certificate:
 root seed:
 RPCs: rpc
@@ -222,6 +218,8 @@ BIP21:
 BIP32:
 BIP39:
 BIP70:
+BIP71:
+BIP72:
 
 ## RPCs
 '`addmultisigaddress`': rpc addmultisigaddress

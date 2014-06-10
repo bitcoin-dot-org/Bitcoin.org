@@ -10,8 +10,9 @@ title: "Developer Documentation - Bitcoin"
 <p class="summary">Find useful resources, guides and reference material for developers.</p>
 
 <div class="docreference">
-<a href="/en/developer-guide"><img src="/img/main_ico_guide.svg" alt="icon"><span>Developer Guide</span><span>(How Bitcoin works)</span></a>
+<a href="/en/developer-guide"><img src="/img/main_ico_compass.svg" alt="icon"><span>Developer Guide</span><span>(How Bitcoin works)</span></a>
 <a href="/en/developer-reference"><img src="/img/main_ico_guide.svg" alt="icon"><span>Developer Reference</span><span>(Specifications and APIs)</span></a>
+<a href="/en/developer-examples"><img src="/img/main_ico_hash.svg" alt="icon"><span>Developer Examples</span><span>(Examples you can use)</span></a>
 </div>
 
 <div class="resources">
@@ -23,6 +24,7 @@ title: "Developer Documentation - Bitcoin"
       <h2><img src="/img/ico_micro.svg" class="titleicon" alt="Icon">Transactions</h2>
       <p><a href="/en/developer-guide#transactions">Transactions Guide</a></p>
       <p><a href="/en/developer-reference#transactions">Transactions Reference</a></p>
+      <p><a href="/en/developer-examples#transactions">Transaction Examples</a></p>
     </div>
   </div>
   <div>
@@ -47,6 +49,7 @@ title: "Developer Documentation - Bitcoin"
     <div>
       <h2><img src="/img/ico_bill.svg" class="titleicon" alt="Icon">Payment Processing</h2>
       <p><a href="/en/developer-guide#payment-processing">Payment Processing Guide</a></p>
+      <p><a href="/en/developer-examples#payment-processing">Payment Processing Examples</a></p>
       <div class="resourcesext">
         <p><a href="https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki">Payment Protocol</a> - BIP70</p>
       </div>

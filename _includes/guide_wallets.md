@@ -225,7 +225,7 @@ design these minimalist wallets:
 * Pre-populate a database with a number of public keys or addresses, and
   then distribute on request an output script or address using one of
   the database entries. To [avoid key reuse][devguide avoiding key
-  resuse], webservers should keep track
+  reuse], webservers should keep track
   of used keys and never run out of public keys. This can be made easier
   by using parent public keys as suggested in the next method.
 
