@@ -266,15 +266,19 @@ In order to make copying of private keys less prone to error, [Wallet Import For
 
 2. Add a 0x80 byte in front of it for mainnet addresses or 0xef for testnet addresses.
 
-3. Perform a SHA-256 hash on the extended key.<!--noref-->
+3. Append a 0x01 byte after it if it should be used with compressed
+   public keys (described in a later subsection). Nothing is appended if
+   it is used with uncompressed public keys.
 
-4. Perform a SHA-256 hash on result of SHA-256 hash.
+4. Perform a SHA-256 hash on the extended key.<!--noref-->
 
-5. Take the first four bytes of the second SHA-256 hash; this is the checksum.
+5. Perform a SHA-256 hash on result of SHA-256 hash.
 
-6. Add the four checksum bytes from point 5 at the end of the extended key<!--noref--> from point 2.
+6. Take the first four bytes of the second SHA-256 hash; this is the checksum.
 
-7. Convert the result from a byte string into a Base58 string using Base58Check encoding.
+7. Add the four checksum bytes from point 5 at the end of the extended key<!--noref--> from point 2.
+
+8. Convert the result from a byte string into a Base58 string using Base58Check encoding.
 
 The process is easily reversible, using the Base58 decoding function, and removing the padding.
 
@@ -298,6 +302,64 @@ Many implementations disallow the character '1' in the mini private key due to i
 
 **Resource:** A common tool to create and redeem these keys is the [Casascius Bitcoin Address Utility][casascius
 address utility].
+
+{% endautocrossref %}
+
+
+
+
+#### Public Key Formats
+
+{% autocrossref %}
+
+Bitcoin ECDSA public keys represent a point on a particular Elliptic
+Curve (EC) defined in secp256k1. In their traditional "uncompressed" form,
+public keys contain an identification byte, a 32-byte X coordinate, and
+a 32-byte Y coordinate. The extremely simplified illustration below
+shows such a point on the elliptic curve used by Bitcoin,
+x<sup>2</sup>&nbsp;=&nbsp;y<sup>3</sup>&nbsp;+&nbsp;7, over a field of
+contiguous numbers.
+
+![Point On ECDSA Curve](/img/dev/en-ecdsa-compressed-public-key.svg)
+
+(Secp256k1 actually modulos coordinates by a large prime, which produces a
+field of non-contiguous integers and a significantly less clear plot,
+although the principles are the same.)
+
+An almost 50% reduction in public key size can be realized without
+changing any fundamentals by dropping the Y coordinate. This is possible
+because only two points along the curve share any particular X
+coordinate, so the 32-byte Y coordinate can be replaced with a single
+bit indicating whether the point is on what appears in the illustration
+as the "top" side or the "bottom" side.
+
+No data is lost by creating these compressed public keys---only a small
+amount of CPU is necessary to reconstruct the Y coordinate and access
+the uncompressed public key. Both uncompressed and compressed public
+keys are supported by default in OpenSSL, the library Bitcoin Core and
+many other Bitcoin programs use.
+
+Because they're easy to use, and because they reduce almost by half
+the block chain space used to store public keys for every spent output,
+compressed public keys are the default in Bitcoin Core and are the
+recommended default for all Bitcoin software.
+
+However, Bitcoin Core prior to 0.6 used uncompressed keys.  This creates
+a few complications, as the hashed form of an uncompressed key is
+different than the hashed form of a compressed key, so the same key
+works with two different P2PKH addresses.   This also means that the key
+must be submitted in the correct format in the input scriptSig so it
+matches the hash in the previous output script.
+
+For this reason, Bitcoin Core uses several different identifier bytes to
+help programs identify how keys should be used:
+
+* Private keys meant to be used with compressed public keys have 0x01
+  appended to them before being Base-58 encoded. (See the private key
+  encoding section above.)
+
+* Uncompressed public keys start with 0x04; compressed public keys begin
+  with 0x03 or 0x02 depending on what side of the curve they're on.
 
 {% endautocrossref %}
 
