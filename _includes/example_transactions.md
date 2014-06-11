@@ -486,6 +486,13 @@ Use the `dumpprivkey` RPC to get the private keys corresponding to the
 public keys used in the two UTXOs out inputs we will be spending.  We need
 the private keys so we can sign each of the inputs separately.
 
+**Warning:** Users should never manually manage private keys on mainnet.
+As dangerous as raw transactions are (see warnings above), making a
+mistake with a private key can be much worse---as in the case of a HD
+wallet [cross-generational key compromise][devguide hardened keys].
+These examples are to help you learn, not for you to emulate on
+mainnet.
+
 {% highlight bash %}
 > bitcoin-cli -regtest getnewaddress
 n4puhBEeEWD2VvjdRC9kQuX2abKxSCMNqN
