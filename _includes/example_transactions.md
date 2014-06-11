@@ -1178,6 +1178,10 @@ transaction, the same way we got private keys in the Complex Raw
 Transaction subsection. Recall that we created a 2-of-3 multisig script,
 so signatures from two private keys are needed.
 
+**Reminder:** Users should never manually manage private keys on
+mainnet. See the warning in the [complex raw transaction section][devex
+complex raw transaction].
+
 <div markdown="1" class="multicode">
 {% highlight bash %}
 > bitcoin-cli -regtest signrawtransaction $RAW_TX '''
