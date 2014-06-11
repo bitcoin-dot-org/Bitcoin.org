@@ -54,23 +54,19 @@ In order to send a transaction to a peer, an `inv` message is sent. If a `getdat
 
 {% autocrossref %}
 
-Full peers keep track of unconfirmed transactions which are eligible to
+Full peers may keep track of unconfirmed transactions which are eligible to
 be included in the next block. This is essential for miners who will
 actually mine some or all of those transactions, but it's also useful
 for any peer who wants to keep track of unconfirmed transactions, such
-as the receiver of a payment.
+as peers serving unconfirmed transaction information to SPV clients.
 
 Because unconfirmed transactions have no permanent status in Bitcoin,
 Bitcoin Core stores them in non-persistent memory, calling them a memory
 pool or mempool. When a peer shuts down, its memory pool is lost except
 for any transactions stored by its wallet. This means that never-mined
 unconfirmed transactions tend to slowly disappear from the network as
-peers restart.
-
-Transactions which a peer will not relay or mine may still be added to
-its memory pool, possibly in modified form.  This can allow the peer to
-refuse double spends or child transactions, although this behavior is not
-used in Bitcoin Core as of this writing.
+peers restart or as they purge some transactions to make room in memory
+for others.
 
 SPV clients don't have a memory pool for the same reason they don't
 relay transactions. They can't independently verify that a transaction
