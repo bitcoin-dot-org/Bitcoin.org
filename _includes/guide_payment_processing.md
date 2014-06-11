@@ -116,7 +116,8 @@ payment requests is recommended.
    increased security, authentication of a receiver's identity using X.509 certificates,
    and other important features such as refunds.
 
-**Warning:** special care must be taken to avoid the theft of incoming
+![Warning icon](/img/icon_warning.svg)
+ **Warning:** Special care must be taken to avoid the theft of incoming
 payments. In particular, private keys should not be stored on web servers,
 and payment requests should be sent over HTTPS or other secure methods
 to prevent man-in-the-middle attacks from replacing your Bitcoin address
