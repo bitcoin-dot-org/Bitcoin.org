@@ -444,9 +444,10 @@ as 128 bits is the the only data the user needs to backup in order to
 derive every key created by a particular wallet program using
 particular settings.
 
-(**Warning:** as of this writing, HD wallet programs are not expected to
+![Warning icon](/img/icon_warning.svg)
+ **Warning:** As of this writing, HD wallet programs are not expected to
 be fully compatible, so users must only use the same HD wallet program
-with the same HD-related settings for a particular root seed.)
+with the same HD-related settings for a particular root seed.
 
 The root seed is hashed to create 512 bits of seemingly-random data,
 from which the master private key and master chain code are created
