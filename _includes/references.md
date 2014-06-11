@@ -177,9 +177,11 @@
 [core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
 [core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
 [DER]: https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
+[devex complex raw transaction]: /en/developer-examples#complex-raw-transaction
 [devex payment protocol]: /en/developer-examples#payment-protocol
 [devguide]: /en/developer-guide
 [devguide avoiding key reuse]: /en/developer-guide#avoiding-key-reuse
+[devguide hardened keys]: /en/developer-guide#hardened-keys
 [devguide payment processing]: /en/developer-guide#payment-processing
 [devguide wallets]: /en/developer-guide#wallets
 [devref wallets]: /en/developer-reference#wallets
