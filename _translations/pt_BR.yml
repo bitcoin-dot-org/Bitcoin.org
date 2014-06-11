@@ -32,7 +32,7 @@ pt_BR:
     visibility: "Ganhe visibilidade gratuitamente"
     visibilitytext: "O Bitcoin é um mercado em pleno crescimento, com novos consumidores buscando maneiras de gastar suas moedas. Aceitá-las é uma boa forma de conseguir novos clientes e dar mais visibilidade ao seu negócio. Aceitar um novo método de pagamento é sempre uma prática inteligente para expandir negócios online."
     multisig: "Multi-assinatura"
-    multisigtext: "Bitcoin possui uma característica, ainda pouco conhecida, que permite que moedas sejam gastas somente se um determinado número de pessoas de um grupo assinarem a transação (chamado de transação \"n de m\"). Isso equivale ao bom e velho sistema de multi-assinaturas de cheques que você provavelmente ainda usa nos bancos."
+    multisigtext: "Bitcoin possui uma característica, ainda pouco conhecida, que permite que moedas sejam gastas somente se um determinado número de pessoas de um grupo assinarem a transação (chamado de transação \"m de n\"). Isso equivale ao bom e velho sistema de multi-assinaturas de cheques que você provavelmente ainda usa nos bancos."
     transparency: "Transparência contábil"
     transparencytext: "Muitas organizações são obrigadas a apresentar documentos de contabilidade sobre a sua atividade. Usando Bitcoin permite-lhe oferecer o mais alto nível de transparência, já que você pode fornecer informações que os membros podem usar para verificar seus saldos e transações. Organizações sem fins lucrativos também podem permitir que o público veja o quanto eles recebem em doações."
   bitcoin-for-developers:

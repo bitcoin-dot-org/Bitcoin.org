@@ -32,7 +32,7 @@ it:
     visibility: "Ottieni maggiore visibilità"
     visibilitytext: "Sempre più utenti utilizzano i bitcoin e cercano un modo per spenderli. Accettarli è un buon modo per ottenere nuovi clienti e per dare un po' di visibilità in più alla propria attività. Per sviluppare un commercio online è spesso una buona scelta accettare un nuovo metodo di pagamento."
     multisig: "Multi-firma"
-    multisigtext: "Una funzionalità ancora non molto nota del sistema Bitcoin consente di spendere denaro solo se la transazione è firmata, cioè validata, da un sottoinsieme di un gruppo di persone (la cosiddetta transazione \"n di m\"). È l'equivalente del buon vecchio sistema di assegni a firme multiple che è ancora in uso oggi presso le banche."
+    multisigtext: "Una funzionalità ancora non molto nota del sistema Bitcoin consente di spendere denaro solo se la transazione è firmata, cioè validata, da un sottoinsieme di un gruppo di persone (la cosiddetta transazione \"m di n\"). È l'equivalente del buon vecchio sistema di assegni a firme multiple che è ancora in uso oggi presso le banche."
     transparency: "Trasparenza contabile"
     transparencytext: "A molte imprese è richiesto di produrre documenti contabili della propria attività. L'utilizzo di Bitcoin offre i più alti livelli di trasparenza: un'impresa che rende noto il proprio indirizzo Bitcoin ai suoi membri, consente loro di monitorarne bilancio e transazioni. Organizzazioni no-profit possono inoltre utilizzarlo per rendere pubblica la quantità ricevuta in donazioni."
   bitcoin-for-developers:

@@ -32,7 +32,7 @@ es:
     visibility: "Obtenga un poco de visibilidad gratis"
     visibilitytext: "Bitcoin es un mercado emergente con nuevos clientes que están buscando maneras de gastar sus bitcoins. Aceptar pagos con bitcoins es una buena forma de conseguir nuevos clientes y de dar a su negocio un poco de visibilidad. Aceptar una nueva forma de pago siempre ha demostrado ser una práctica inteligente para los negocios online."
     multisig: "Multi-firma"
-    multisigtext: "Bitcoin también incluye una característica que no es aún muy conocida, que permite que los bitcoins puedan ser utilizados sólo si un subconjunto de un grupo de personas firman la transacción (llamadas transacciones \"n de m\"). Este es el equivalente al sistema multi-firma que usan los bancos hoy en día."
+    multisigtext: "Bitcoin también incluye una característica que no es aún muy conocida, que permite que los bitcoins puedan ser utilizados sólo si un subconjunto de un grupo de personas firman la transacción (llamadas transacciones \"m de n\"). Este es el equivalente al sistema multi-firma que usan los bancos hoy en día."
     transparency: "Transparencia contable"
     transparencytext: "Muchas organizaciones están obligadas a presentar los documentos de contabilidad sobre sus actividades. Usar Bitcoin ofrece el más alto nivel de transparencia ya que puede proveer toda la información necesaria para que sus miembros verifiquen sus sueldos y transacciones. Las organizaciones sin ánimo de lucro también pueden publicar cuantas donaciones reciben."
   bitcoin-for-developers:

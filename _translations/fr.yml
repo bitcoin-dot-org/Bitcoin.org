@@ -32,7 +32,7 @@ fr:
     visibility: "Gagnez en visibilité, gratuitement"
     visibilitytext: "Bitcoin est un marché émergeant de nouveaux consommateurs cherchant à dépenser leurs bitcoins. Les accepter est une bonne façon d'obtenir de nouveaux clients et de donner plus de visibilité à votre commerce. Accepter de nouvelles formes de paiements s'est souvent avéré bénéfique pour les commerces en ligne."
     multisig: "Multi-signatures"
-    multisigtext: "Bitcoin inclut une fonction peu connue qui permet de dépenser des bitcoins seulement si la transaction est signée par un nombre défini de personnes au sein d'un groupe (ce qu'on appelle les transactions « n de m »). C'est l'équivalent du bon vieux chèque à signatures multiples que vous utilisez peut-être encore avec les banques aujourd'hui."
+    multisigtext: "Bitcoin inclut une fonction peu connue qui permet de dépenser des bitcoins seulement si la transaction est signée par un nombre défini de personnes au sein d'un groupe (ce qu'on appelle les transactions « m de n »). C'est l'équivalent du bon vieux chèque à signatures multiples que vous utilisez peut-être encore avec les banques aujourd'hui."
     transparency: "Comptabilité transparente"
     transparencytext: "Beaucoup d'organisations doivent produire des documents comptables sur leur activité. Utiliser Bitcoin permet d'offrir le plus haut niveau de transparence puisque vous pouvez fournir des informations que vos membres peuvent utiliser afin de vérifier vos soldes et vos transactions. Les organisations sans but lucratif peuvent aussi permettre au public de visualiser combien elles reçoivent en dons."
   bitcoin-for-developers:

@@ -62,7 +62,7 @@ zh_TW:
     visibility: "獲得免費曝光機會"
     visibilitytext: "Bitcoin 是快速成長的市場，許多新客戶正在尋找使用他們 Bitcoin 的管道。接受 Bitcoin 是個獲得新客戶的好方法，同時也讓你的企業有新的曝光機會。對於線上業務而言，採納新的支付方式一直都是聰明的作法。"
     multisig: "多重簽章"
-    multisigtext: "Bitcoin 還包含了一種不廣為人知的功能：在特定群體中的某些個人簽署交易後，才能支付 Bitcoin (稱為\"n of m\" 交易)。這等同於古老好用的多重簽章支票系統，或許你在現代的銀行還曾使用過。"
+    multisigtext: "Bitcoin 還包含了一種不廣為人知的功能：在特定群體中的某些個人簽署交易後，才能支付 Bitcoin (稱為\"m of n\" 交易)。這等同於古老好用的多重簽章支票系統，或許你在現代的銀行還曾使用過。"
     transparency: "會計透明度"
     transparencytext: "許多組織被要求提供關於他們活動的會計文件，並採用良好的透明度實務。使用 Bitcoin 可達到最高的透明度，只要你讓你的成員知道你的 Bitcoin 地址，他們就能知道帳戶的餘額和交易紀錄。"
   bitcoin-for-developers:

@@ -32,7 +32,7 @@ hu:
     visibility: "Tegyen szert némi ingyenes ismertségre"
     visibilitytext: "A Bitcoin új fogyasztók fejlődő piaca, akik bitcoinjaik elköltési módjait kutatják. A bitcoinok elfogadásával új fogyasztók szerezhetőek, valamint vállalkozása új ismertségre tehet szert. Egy új fizetési mód bevezetése gyakran bizonyul okos ötletnek az online vállalkozások számára."
     multisig: "Csoportos aláírás"
-    multisigtext: "A Bitcoinnak van egy olyan - jelenleg még nem igazán ismert - szolgáltatása, amely lehetővé teszi, hogy a bitcoinokat csak abban az esetben lehessen elkölteni, amennyiben személyek csoportjának egy részhalmaza írja alá a tranzakciót (úgy nevezett \"n-en az m-ből\" tranzakciók). Ez megfelel a jó öreg csoportos aláírást igénylő csekkek rendszerének, amelyet talán még jelenleg is használ a bankjában."
+    multisigtext: "A Bitcoinnak van egy olyan - jelenleg még nem igazán ismert - szolgáltatása, amely lehetővé teszi, hogy a bitcoinokat csak abban az esetben lehessen elkölteni, amennyiben személyek csoportjának egy részhalmaza írja alá a tranzakciót (úgy nevezett \"m-en az n-ből\" tranzakciók). Ez megfelel a jó öreg csoportos aláírást igénylő csekkek rendszerének, amelyet talán még jelenleg is használ a bankjában."
     transparency: "Könyvelési transzparencia"
     transparencytext: "Számos szervezetnek kötelessége könyvelési dokumentumokkal igazolnia működését. A Bitcoin használata a legmagasabb szintű transzparenciát biztosítja, mivel megadhat olyan információkat, amelyeket szervezetének tagjai felhasználhatnak egyenlegeinek és tranzakcióinak visszaigazolására. A nonprofit szervezetek is bemutathatják a nyilvánosságnak, hogy mekkora összegű adományhoz jutnak."
   bitcoin-for-developers:

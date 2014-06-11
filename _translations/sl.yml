@@ -32,7 +32,7 @@ sl:
     visibility: "Brezplačna prepoznavnost"
     visibilitytext: "Bitcoin je porarajoč se trg strank, ki iščejo načine, kako porabiti svoje novce. Sprejemanje plačil z bitcoini je dober način, da vaš posel pritegne nove stranke in pridobi na vidnosti. Sprejemanje novega plačilnega sredstva se je že večkrat izkazalo za pametno potezo v internetnem poslovanju."
     multisig: "Večstransko podpisovanje"
-    multisigtext: "Bitcoin omogoča tudi manj znano možnost, da je za izvršitev nakazila potrebnih več podpisov s strani nekaj članov vnaprej določene skupine ljudi (t.i. nakazila \"n od m\"). To je analogno večstranskim podpisom čekov, ki so še vedno v uporabi pri nekaterih bankah."
+    multisigtext: "Bitcoin omogoča tudi manj znano možnost, da je za izvršitev nakazila potrebnih več podpisov s strani nekaj članov vnaprej določene skupine ljudi (t.i. nakazila \"m od n\"). To je analogno večstranskim podpisom čekov, ki so še vedno v uporabi pri nekaterih bankah."
     transparency: "Računovodska preglednost"
     transparencytext: "Nekatere organizacije morajo izdajati računovodske dokumente, s katerimi prikazujejo svojo finančno aktivnost. Bitcoin vam omogoča doseči visoko stopnjo transparentnosti, saj vam omogoča dokazati stanje na računih in pretekla nakazila. Neprofitne organizacije lahko preverljivo objavijo zneske, ki jih prejemajo v donacijah."
   bitcoin-for-developers:

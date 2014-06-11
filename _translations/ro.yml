@@ -32,7 +32,7 @@ ro:
     visibility: "Câştig în vizibilitate cu efort minim"
     visibilitytext: "Bitcoin este o piaţă emergentă compusă din clienţi noi ce caută căi de a cheltui bitcoini. Acceptarea lor este un mod prielnic de a obţine noi clienţi şi de a oferi afacerii tale vizibilitate. Acceptarea unei noi metode de plată deseori s-a dovedit a fi o practică inteligentă pentru afaceri online."
     multisig: "Semnătură multiplă"
-    multisigtext: "Bitcoin mai include o caracteristică, neștiută încă foarte bine, ce permite monedelor să fie cheltuite numai dacă un grup de persoane semnează tranzacția (așa numita tranzacție \"n de m\"). Acesta este echivalentul vechiului sistem de cecuri cu semnături multiple, pe care îl mai utilizează încă unele bănci."
+    multisigtext: "Bitcoin mai include o caracteristică, neștiută încă foarte bine, ce permite monedelor să fie cheltuite numai dacă un grup de persoane semnează tranzacția (așa numita tranzacție \"m de n\"). Acesta este echivalentul vechiului sistem de cecuri cu semnături multiple, pe care îl mai utilizează încă unele bănci."
     transparency: "Contabilitate transparentă"
     transparencytext: "Multe organizaţii necesită ţinerea contabilităţii. Folosind Bitcoin se poate oferi cel mai înalt nivel de transparenţă din moment ce se pot oferi informaţii referitoare la sumele deținute şi tranzacţiile efectuate de către membri. Organizaţiile non-profit pot de asemenea lasă toată lumea să vadă câte donaţii au fost trimise."
   bitcoin-for-developers:

@@ -62,7 +62,7 @@ pl:
     visibility: "Uzyskaj odrobinę darmowej reklamy"
     visibilitytext: "Bitcoin jest wschodzącym rynkiem nowych klientów którzy poszukują sposobu na wydatkowanie swoich monet. Ich akceptacja jest dobrym sposobem na przyciągnięcie nowych klientów oraz uzyskanie pewnej nowej reklamy. Akceptacja nowego rodzaju płatności zawsze okazała się bardzo sprytną metodą dla biznesu online."
     multisig: "Multi-Podpis"
-    multisigtext: "Bitcoin zawiera również mało znaną funkcjonalność która pozwala na wydanie monet jedynie gdy pewna podgrupa wskazanej grupy ludzi podpisze transakcję (tak zwane transakcje \"n\" z \"m\"). Jest to odpowiednik starego dobrego systemu multi-podpisu czeków który może być w użyciu w bankach do dziś."
+    multisigtext: "Bitcoin zawiera również mało znaną funkcjonalność która pozwala na wydanie monet jedynie gdy pewna podgrupa wskazanej grupy ludzi podpisze transakcję (tak zwane transakcje \"m\" z \"n\"). Jest to odpowiednik starego dobrego systemu multi-podpisu czeków który może być w użyciu w bankach do dziś."
     transparency: "Przejrzystość księgowa"
     transparencytext: "Od wielu organizacji wymagane jest posiadanie dokumentacji wykonanych transakcji oraz adoptowanie odpowiednich standardów przejrzystości. Użycie Bitcoin zapewnia najwyższy stopień przejrzystości gdyż obecny balans oraz wszystkie transakcje są widoczne dla twoich członków jeśli tylko podasz im informację o swoim adresie Bitcoin."
   bitcoin-for-developers:
