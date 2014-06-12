@@ -272,9 +272,6 @@ saving each one of them a tiny amount of satoshis.
 
 **Resource:** An alpha-quality (as of this writing) implementation of decentralized
 CoinJoin is [CoinMux](http://coinmux.com/), available under the Apache
-license. A centralized version of purchaser CoinJoin is available at the
-[SharedCoin](https://sharedcoin.com/) website (part of Blockchain.info),
-whose [implementation](https://github.com/blockchain/Sharedcoin) is
-available under the 4-clause BSD license.
+license.
 
 {% endautocrossref %}
