@@ -13,67 +13,8 @@ transactions, but in any system, you will need to provide the same kinds
 of data to create transactions with the same attributes as those
 described below.
 
-You are encouraged to try the following examples on your own using the
-regtest mode described below.
-
-Note: as in other parts of the documentation, we wrap long strings with
-"\\" and indicate omissions with "[...]".
-
-{% endautocrossref %}
-
-#### Regtest Mode
-
-{% autocrossref %}
-
-Bitcoin's testnet provides an excellent way to test Bitcoin
-functionality without risking real satoshis. However, for situations
-where interaction with random peers and blocks is unnecessary or
-unwanted, Bitcoin Core's regression test (regtest) mode lets you
-instantly create a brand-new private block chain with the same basic
-rules as testnet---but one major difference: you choose when to create
-new blocks, so you have complete control over the environment.
-
-Many developers consider regtest mode the preferred way to develop new
-applications, and this tutorial will use it exclusively. 
-
-{% highlight bash %}
-> bitcoind -regtest -daemon
-Bitcoin server starting
-{% endhighlight %}
-
-Start `bitcoind` in regtest mode to create a private block chain.
-
-{% highlight bash %}
-> bitcoin-cli -regtest getbalance
-0.00000000
-{% endhighlight %}
-
-Check our starting balance with the `getbalance` RPC. Regtest wallets
-and block chain state (chainstate) are saved in the `regtest`
-subdirectory of the Bitcoin Core configuration directory. You can safely
-delete the `regtest` subdirectory and restart Bitcoin Core to start a
-new regtest. (See the [Guide Introduction][devguide] for default configuration
-directory locations on various operating systems. Always back up mainnet
-wallets before performing dangerous operations such as deleting.)
-
-~~~
-bitcoin-cli -regtest setgenerate true 101
-~~~
-
-Generate 101 blocks using a special version of the `setgenerate` RPC
-which is only available in regtest mode. This takes about 30 seconds on
-a generic PC. Because this is a new block chain using Bitcoin's default
-rules, the first 210,000 blocks pay a block reward of 50 bitcoins.
-However, a block must have 100 confirmations before that reward can be
-spent, so we generate 101 blocks to get access to the coinbase
-transaction from block #1.
-
-{% highlight bash %}
-bitcoin-cli -regtest getbalance
-50.00000000
-{% endhighlight %}
-
-Verify that we now have 50 bitcoins available to spend.
+In order to use this tutorial, you will need to setup [Bitcoin Core][core executable]
+and create a [regression test mode][] environment.
 
 {% endautocrossref %}
 
@@ -163,11 +104,11 @@ the spend to the address we provided. If we had spent those satoshis to
 someone else, that second transaction would not be displayed in our
 list of UTXOs.
 
-~~~
+{% highlight bash %}
 > bitcoin-cli -regtest setgenerate true 1
 
 > unset NEW_ADDRESS
-~~~
+{% endhighlight %}
 
 Create a new block to confirm the transaction above (takes less than a
 second) and clear the shell variable.
@@ -379,11 +320,11 @@ Send the signed transaction to the connected node using the
 would usually then broadcast it to other peers, but we're not currently
 connected to other peers because we started in regtest mode.
 
-~~~
+{% highlight bash %}
 > bitcoin-cli -regtest setgenerate true 1
 
 > unset UTXO_TXID UTXO_VOUT NEW_ADDRESS RAW_TX SIGNED_RAW_TX
-~~~
+{% endhighlight %}
 
 Generate a block to confirm the transaction and clear our shell
 variables.

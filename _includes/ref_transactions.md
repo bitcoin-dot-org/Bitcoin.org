@@ -101,8 +101,6 @@ Nolan provided the following example encoding algorithm to the Bitcoin
 Wiki [Base58Check
 encoding](https://en.bitcoin.it/wiki/Base58Check_encoding) page:
 
-{% endautocrossref %}
-
 {% highlight c %}
 code_string = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
 x = convert_bytes_to_big_integer(hash_result)
@@ -122,8 +120,6 @@ repeat(number_of_leading_zero_bytes_in_hash)
 
 output_string.reverse();
 {% endhighlight %}
-
-{% autocrossref %}
 
 Bitcoin's own code can be traced using the [base58 header
 file][core base58.h].
