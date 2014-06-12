@@ -313,7 +313,7 @@ address utility].
 {% autocrossref %}
 
 Bitcoin ECDSA public keys represent a point on a particular Elliptic
-Curve (EC) defined in secp256k1. In their traditional "uncompressed" form,
+Curve (EC) defined in secp256k1. In their traditional uncompressed form,
 public keys contain an identification byte, a 32-byte X coordinate, and
 a 32-byte Y coordinate. The extremely simplified illustration below
 shows such a point on the elliptic curve used by Bitcoin,
@@ -336,8 +336,8 @@ as the "top" side or the "bottom" side.
 No data is lost by creating these compressed public keys---only a small
 amount of CPU is necessary to reconstruct the Y coordinate and access
 the uncompressed public key. Both uncompressed and compressed public
-keys are supported by default in OpenSSL, the library Bitcoin Core and
-many other Bitcoin programs use.
+keys are described in official secp256k1 documentation and supported by
+default in the widely-used OpenSSL library.
 
 Because they're easy to use, and because they reduce almost by half
 the block chain space used to store public keys for every spent output,
@@ -359,7 +359,9 @@ help programs identify how keys should be used:
   encoding section above.)
 
 * Uncompressed public keys start with 0x04; compressed public keys begin
-  with 0x03 or 0x02 depending on what side of the curve they're on.
+  with 0x03 or 0x02 depending on whether they're greater or less than
+  the midpoint of the curve.  These prefix bytes are all used in
+  official secp256k1 documentation.
 
 {% endautocrossref %}
 
