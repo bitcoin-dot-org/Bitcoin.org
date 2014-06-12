@@ -68,6 +68,17 @@ unconfirmed transactions tend to slowly disappear from the network as
 peers restart or as they purge some transactions to make room in memory
 for others.
 
+Transactions which are mined into blocks that are later orphaned may be
+added back into the memory pool. These re-added transactions may be
+re-removed from the pool almost immediately if the replacement blocks
+include them. This is the case in Bitcoin Core, which removes orphaned
+blocks from the chain one by one, starting with the tip (highest block).
+As each block is removed, its transactions are added back to the memory
+pool. After all of the orphaned blocks are removed, the replacement
+blocks are added to the chain one by one, ending with the new tip. As
+each block is added, any transactions it confirms are removed from the
+memory pool.
+
 SPV clients don't have a memory pool for the same reason they don't
 relay transactions. They can't independently verify that a transaction
 hasn't yet been included in a block and that it only spends UTXOs, so
