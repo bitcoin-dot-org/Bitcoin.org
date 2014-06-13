@@ -18,8 +18,8 @@ where the satoshis spent have no real-world value. Testnet also relaxes some
 restrictions (such as standard transaction checks) so you can test functions
 which might currently be disabled by default on mainnet.
 
-To use testnet, use the argument <!--[-->`-testnet`<!--]--> with `bitcoin-cli`, `bitcoind` or `bitcoin-qt` or add
-<!--[-->`testnet=1`<!--]--> to your `bitcoin.conf` file.  To get
+To use testnet, use the argument `-testnet`<!--noref--> with `bitcoin-cli`, `bitcoind` or `bitcoin-qt` or add
+`testnet=1`<!--noref--> to your `bitcoin.conf` file.  To get
 free satoshis for testing, use [Piotr Piasecki's testnet faucet][].
 Testnet is a public resource provided for free by members of the
 community, so please don't abuse it.
@@ -79,11 +79,11 @@ bitcoin-cli -regtest getbalance
 
 Verify that we now have 50 bitcoins available to spend.
 
-You can now use Bitcoin Core RPCs prefixed with <!--[-->`bitcoin-cli -regtest`<!--]-->.
+You can now use Bitcoin Core RPCs prefixed with `bitcoin-cli -regtest`<!--noref-->.
 
-Regtest wallets and block chain state (chainstate) are saved in the <!--[-->`regtest`<!--]-->
+Regtest wallets and block chain state (chainstate) are saved in the `regtest`<!--noref-->
 subdirectory of the Bitcoin Core configuration directory. You can safely
-delete the <!--[-->`regtest`<!--]--> subdirectory and restart Bitcoin Core to
+delete the `regtest`<!--noref--> subdirectory and restart Bitcoin Core to
 start a new regtest. (See the [Developer Examples Introduction][devexamples] for default
 configuration directory locations on various operating systems. Always back up
 mainnet wallets before performing dangerous operations such as deleting.)

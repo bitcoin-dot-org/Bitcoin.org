@@ -1,6 +1,6 @@
 {% autocrossref %}
 
-The Developer Reference aims to provide specifications and APIs information
+The Developer Reference aims to provide specifications and API information
 to help you start building Bitcoin-based applications. To make the best use of
 this documentation, you may want to install the current version of Bitcoin
 Core, either from [source][core git] or from a [pre-compiled executable][core executable].

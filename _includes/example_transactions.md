@@ -14,7 +14,8 @@ of data to create transactions with the same attributes as those
 described below.
 
 In order to use this tutorial, you will need to setup [Bitcoin Core][core executable]
-and create a [regression test mode][] environment.
+and create a [regression test mode][] environment with 50 BTC in your test
+wallet.
 
 {% endautocrossref %}
 
