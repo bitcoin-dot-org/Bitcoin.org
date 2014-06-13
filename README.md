@@ -95,6 +95,30 @@ from _site/ to the root of your web server. If you have no web server, run
 http://127.0.0.1:4000/. This server requires you to add a trailing ".html"
 by hand in your browser address bar.
 
+#### Building With Make
+
+After you've installed Jekyll and the other depenencies, you can
+optionally use GNU Make to automatically build the site and run several
+tests. You will first need to install Make using your package manager;
+for example:
+
+    sudo apt-get install make
+
+Then in your local bitcoin.org repository, run one of the following
+commands:
+
+    ## To just build the site, the equivalent of: bundle exec jekyll build
+    make
+
+    ## After you build the site, you can run all of the tests (may take awhile)
+    make test
+
+    ## Or you can build the site and run some quick tests with one command:
+    make valid
+
+    ## Or build the site and run all tests
+    make all
+
 ## Developer Documentation
 
 Each part of the documentation can be found in the [_includes](https://github.com/bitcoin/bitcoin.org/tree/master/_includes)

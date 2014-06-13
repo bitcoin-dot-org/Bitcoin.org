@@ -134,6 +134,7 @@ plugins:     ./_plugins
 exclude:
     - Gemfile
     - Gemfile.lock
+    - Makefile
 
 future:      true
 lsi:         false
