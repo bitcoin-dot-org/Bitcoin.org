@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="600"
+   height="200"
+   viewBox="0 0 600 200"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="en-ecdsa-compressed-public-key.svg">
+  <metadata
+     id="metadata166">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs164">
+    <defs
+       id="defs11">
+      <circle
+         stroke-width="0.5"
+         r="0.5"
+         id="gpDot" />
+      <path
+         d="M-1,0 h2 M0,-1 v2"
+         stroke="currentColor"
+         stroke-width="0.222"
+         id="gpPt0" />
+      <path
+         d="M-1,-1 L1,1 M1,-1 L-1,1"
+         stroke="currentColor"
+         stroke-width="0.222"
+         id="gpPt1" />
+      <path
+         d="M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1"
+         stroke="currentColor"
+         stroke-width="0.222"
+         id="gpPt2" />
+      <rect
+         height="2"
+         width="2"
+         y="-1"
+         x="-1"
+         stroke="currentColor"
+         stroke-width="0.222"
+         id="gpPt3" />
+      <rect
+         height="2"
+         width="2"
+         y="-1"
+         x="-1"
+         fill="currentColor"
+         stroke="currentColor"
+         stroke-width="0.222"
+         id="gpPt4" />
+      <circle
+         r="1"
+         cy="0"
+         cx="0"
+         stroke="currentColor"
+         stroke-width="0.222"
+         id="gpPt5" />
+      <use
+         stroke="none"
+         fill="currentColor"
+         id="gpPt6"
+         xlink:href="#gpPt5" />
+      <path
+         d="M0,-1.33 L-1.33,0.67 L1.33,0.67 z"
+         stroke="currentColor"
+         stroke-width="0.222"
+         id="gpPt7" />
+      <use
+         stroke="none"
+         fill="currentColor"
+         id="gpPt8"
+         xlink:href="#gpPt7" />
+      <use
+         transform="rotate(180)"
+         stroke="currentColor"
+         id="gpPt9"
+         xlink:href="#gpPt7" />
+      <use
+         stroke="none"
+         fill="currentColor"
+         id="gpPt10"
+         xlink:href="#gpPt9" />
+      <use
+         transform="rotate(45)"
+         stroke="currentColor"
+         id="gpPt11"
+         xlink:href="#gpPt3" />
+      <use
+         stroke="none"
+         fill="currentColor"
+         id="gpPt12"
+         xlink:href="#gpPt11" />
+    </defs>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1278"
+     inkscape:window-height="616"
+     id="namedview162"
+     showgrid="false"
+     inkscape:zoom="1.7017703"
+     inkscape:cx="300"
+     inkscape:cy="100"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <title
+     id="title4">Gnuplot</title>
+  <desc
+     id="desc6">Produced by GNUPLOT 4.6 patchlevel 0 </desc>
+  <g
+     id="g3436">
+    <rect
+       x="0"
+       y="0"
+       width="600"
+       height="200"
+       id="rect9"
+       style="fill:none" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path31"
+       d="m 37.3,164 9,0 m 528.7,0 -9,0 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g33"
+       style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(29,168.5)">
+      <text
+         id="text35">-4</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path37"
+       d="m 37.3,145.6 9,0 m 528.7,0 -9,0 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g39"
+       style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(29,150.1)">
+      <text
+         id="text41">-3</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path43"
+       d="m 37.3,127.2 9,0 m 528.7,0 -9,0 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g45"
+       style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(29,131.7)">
+      <text
+         id="text47">-2</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path49"
+       d="m 37.3,108.8 9,0 m 528.7,0 -9,0 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g51"
+       style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(29,113.3)">
+      <text
+         id="text53">-1</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path55"
+       d="m 37.3,90.3 9,0 m 528.7,0 -9,0 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g57"
+       style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(29,94.8)">
+      <text
+         id="text59">0</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path61"
+       d="m 37.3,71.9 9,0 m 528.7,0 -9,0 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g63"
+       style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(29,76.4)">
+      <text
+         id="text65">1</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path67"
+       d="m 37.3,53.5 9,0 m 528.7,0 -9,0 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g69"
+       style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(29,58)">
+      <text
+         id="text71">2</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path73"
+       d="m 37.3,35.1 9,0 m 528.7,0 -9,0 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g75"
+       style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(29,39.6)">
+      <text
+         id="text77">3</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path79"
+       d="m 37.3,16.7 9,0 m 528.7,0 -9,0 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g81"
+       style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(29,21.2)">
+      <text
+         id="text83">4</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path85"
+       d="m 86.2,164 0,-9 m 0,-138.3 0,9 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g87"
+       style="font-size:15px;text-anchor:middle;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(86.2,186.5)">
+      <text
+         id="text89">-2</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path91"
+       d="m 183.9,164 0,-9 m 0,-138.3 0,9 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g93"
+       style="font-size:15px;text-anchor:middle;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(183.9,186.5)">
+      <text
+         id="text95">0</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path97"
+       d="m 281.7,164 0,-9 m 0,-138.3 0,9 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g99"
+       style="font-size:15px;text-anchor:middle;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(281.7,186.5)">
+      <text
+         id="text101">2</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path103"
+       d="m 379.5,164 0,-9 m 0,-138.3 0,9 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g105"
+       style="font-size:15px;text-anchor:middle;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(379.5,186.5)">
+      <text
+         id="text107">4</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path109"
+       d="m 477.2,164 0,-9 m 0,-138.3 0,9 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g111"
+       style="font-size:15px;text-anchor:middle;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(477.2,186.5)">
+      <text
+         id="text113">6</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path115"
+       d="m 575,164 0,-9 m 0,-138.3 0,9 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g117"
+       style="font-size:15px;text-anchor:middle;color:#000000;fill:#000000;stroke:none;font-family:Sans"
+       transform="translate(575,186.5)">
+      <text
+         id="text119">8</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path121"
+       d="m 37.3,16.7 0,147.3 537.7,0 0,-147.3 -537.7,0 z m 0,0 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <text
+       y="39.200001"
+       x="507.89999"
+       id="text130"
+       style="font-size:15px;text-anchor:end;color:#ff0000;fill:#000000;stroke:none;font-family:Sans">sqrt(x**3+7)</text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path132"
+       d="m 516.2,34.7 c 14.06667,0 28.13333,0 42.2,0 m -468,55.5 c 0.352232,-12.812635 5.514788,-21.069539 11.8,-28 7.93504,-7.938184 18.36934,-13.413369 31.1,-16.5 16.90037,-4.466298 38.65023,-4.083105 60,-4.1 19.24448,0.01695 36.8258,-1.772261 51.5,-6.3 13.29329,-3.834424 24.90667,-9.414857 35.8,-15.6 1.62302,-0.990121 3.41762,-1.981978 5.01,-3"
+       style="color:#ff0000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       transform="translate(507.9,57.2)"
+       style="font-size:15px;text-anchor:end;color:#008000;fill:#000000;stroke:none;font-family:Sans"
+       id="g139">
+      <text
+         id="text141">-sqrt(x**3+7)</text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path143"
+       d="m 516.2,52.7 c 14.06667,0 28.13333,0 42.2,0 m -468,37.8 c 0.361575,12.93593 5.607361,21.24742 12,28.2 8.60781,8.54641 20.16553,14.14328 34.3,17.1 17.63967,3.92699 39.92813,3.2052 61.4,3.3 14.63477,0.32288 28.5059,1.55907 40.4,4.6 15.50719,3.71561 28.7615,9.83685 41.1,16.7 1.9335,1.21462 4.0735,2.35799 6.01,3.6"
+       style="color:#008000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+    <g
+       id="g148"
+       style="color:#0000ff;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+      <g
+         id="g150"
+         style="font-size:15px;text-anchor:end;fill:#000000;stroke:none;font-family:Sans"
+         transform="translate(507.9,75.2)">
+        <text
+           id="text152">x,y=1.00,2.83</text>
+      </g>
+      <use
+         height="200"
+         width="600"
+         y="0"
+         x="0"
+         id="use154"
+         transform="matrix(4.5,0,0,4.5,232.8,38.2)"
+         xlink:href="#gpPt2" />
+      <use
+         height="200"
+         width="600"
+         y="0"
+         x="0"
+         id="use156"
+         transform="matrix(4.5,0,0,4.5,537.3,70.7)"
+         xlink:href="#gpPt2" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path160"
+       d="m 37.3,16.7 0,147.3 537.7,0 0,-147.3 -537.7,0 z m 0,0 h 0.01"
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  </g>
+</svg>

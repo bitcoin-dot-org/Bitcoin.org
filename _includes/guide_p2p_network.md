@@ -46,9 +46,49 @@ New blocks are also discovered as miners publish their found blocks, and these m
 
 {% autocrossref %}
 
-In order to send a transaction to a peer, an `inv` message is sent. If a `getdata` response message is received, the transaction is sent using `tx`. The peer receiving this transaction also forwards the transaction in the same manner, given that it is a valid transaction. If the transaction is not put into a block for an extended period of time, it will be dropped from mempool, and the client of origin will have to re-broadcast the message. 
+In order to send a transaction to a peer, an `inv` message is sent. If a `getdata` response message is received, the transaction is sent using `tx`. The peer receiving this transaction also forwards the transaction in the same manner, given that it is a valid transaction.
 
 {% endautocrossref %}
+
+#### Memory Pool
+
+{% autocrossref %}
+
+Full peers may keep track of unconfirmed transactions which are eligible to
+be included in the next block. This is essential for miners who will
+actually mine some or all of those transactions, but it's also useful
+for any peer who wants to keep track of unconfirmed transactions, such
+as peers serving unconfirmed transaction information to SPV clients.
+
+Because unconfirmed transactions have no permanent status in Bitcoin,
+Bitcoin Core stores them in non-persistent memory, calling them a memory
+pool or mempool. When a peer shuts down, its memory pool is lost except
+for any transactions stored by its wallet. This means that never-mined
+unconfirmed transactions tend to slowly disappear from the network as
+peers restart or as they purge some transactions to make room in memory
+for others.
+
+Transactions which are mined into blocks that are later orphaned may be
+added back into the memory pool. These re-added transactions may be
+re-removed from the pool almost immediately if the replacement blocks
+include them. This is the case in Bitcoin Core, which removes orphaned
+blocks from the chain one by one, starting with the tip (highest block).
+As each block is removed, its transactions are added back to the memory
+pool. After all of the orphaned blocks are removed, the replacement
+blocks are added to the chain one by one, ending with the new tip. As
+each block is added, any transactions it confirms are removed from the
+memory pool.
+
+SPV clients don't have a memory pool for the same reason they don't
+relay transactions. They can't independently verify that a transaction
+hasn't yet been included in a block and that it only spends UTXOs, so
+they can't know which transactions are eligible to be included in the
+next block.
+
+{% endautocrossref %}
+
+
+
 
 ### Misbehaving Nodes
 
