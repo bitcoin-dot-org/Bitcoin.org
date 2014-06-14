@@ -63,6 +63,18 @@ module Jekyll
       if ar.has_key?(id) && ar[id].is_a?(String)
         text = ar[id]
       end
+      #fallback to English if string is empty
+      if text == ''
+        lang = 'en'
+        ar = site['loc'][lang]
+        for key in keys do
+          break if !ar.is_a?(Hash) || !ar.has_key?(key) || !ar[key].is_a?(Hash)
+          ar = ar[key]
+        end
+        if ar.has_key?(id) && ar[id].is_a?(String)
+          text = ar[id]
+        end
+      end
       #replace urls and anchors in string
       url = site['loc'][lang]['url']
       url.each do |key,value|

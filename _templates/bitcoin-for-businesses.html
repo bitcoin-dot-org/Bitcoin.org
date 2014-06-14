@@ -28,7 +28,8 @@ id: bitcoin-for-businesses
 
 {% case page.lang %}
 {% when 'ar' or 'fa' or 'pl' or 'zh_TW' %}
+<div class="mainbutton"><a href="/en/{% translate getting-started url %}"><img src="/img/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>
 {% else %}
-<div class="mainbutton"><a href="{% translate getting-started url %}"><img src="/img/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>
+<div class="mainbutton"><a href="/{{ page.lang }}/{% translate getting-started url %}"><img src="/img/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>
 {% endcase %}
 

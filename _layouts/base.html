@@ -116,8 +116,8 @@ if(typeof(legacyIE)==='undefined'){
   </div>
   <div class="foundation-banner">
     {% case page.lang %}
-    {% when 'ar' or 'bg' or 'fa' or 'id' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
-    <div style="direction:ltr;">{% translate sponsor layout en %} <a href="https://bitcoinfoundation.org/"><img src="/img/brand/logo_foundation.svg" alt="Foundation"> The Bitcoin Foundation</a></div>
+    {% when 'ar' or 'fa' %}
+    <div style="direction:ltr;">{% translate sponsor layout %} <a href="https://bitcoinfoundation.org/"><img src="/img/brand/logo_foundation.svg" alt="Foundation"> The Bitcoin Foundation</a></div>
     {% else %}
     <div>{% translate sponsor layout %} <a href="https://bitcoinfoundation.org/"><img src="/img/brand/logo_foundation.svg" alt="Foundation"> The Bitcoin Foundation</a></div>
     {% endcase %}
