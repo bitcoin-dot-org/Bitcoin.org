@@ -22,6 +22,8 @@ title: "Developer Reference - Bitcoin"
 
 {% include fragment_reviews_needed.md %}
 
+{% include ref_intro.md %}
+
 {% include ref_block_chain.md %}
 
 {% include ref_transactions.md %}

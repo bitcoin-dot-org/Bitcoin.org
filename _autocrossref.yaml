@@ -157,6 +157,8 @@ recurrent rebilling:
 redeemScript:
 refund: 
 refunds: refund
+regression test mode:
+regtest: regression test mode
 root certificate:
 root seed:
 RPCs: rpc

@@ -52,7 +52,7 @@
 [leaf certificate]: /en/developer-examples#term-leaf-certificate "The end-node in a certificate chain; in the payment protocol, it is the certificate belonging to the receiver of satoshis"
 [locktime]: /en/developer-guide#term-locktime "Part of a transaction which indicates the earliest time or earliest block when that transaction can be added to the block chain"
 [long-term fork]: /en/developer-guide#term-long-term-fork "When a series of blocks have corresponding block heights, indicating a possibly serious problem"
-[mainnet]: /en/developer-guide#term-mainnet "The Bitcoin main network used to transfer satoshis (compare to testnet, the test network)"
+[mainnet]: /en/developer-examples#term-mainnet "The Bitcoin main network used to transfer satoshis (compare to testnet, the test network)"
 [master chain code]: /en/developer-guide#term-master-chain-code "The chain code derived from the root seed"
 [master private key]: /en/developer-guide#term-master-private-key "A private key derived from the root seed"
 [merge]: /en/developer-guide#term-merge "Spending, in the same transaction, multiple outputs which can be traced back to different previous spenders, leaking information about how many satoshis you control"
@@ -116,6 +116,7 @@
 [recurrent rebilling]: /en/developer-guide#rebilling-recurring-payments "Billing a spender on a regular schedule"
 [redeemScript]: /en/developer-guide#term-redeemscript "A script created by the recipient, hashed, and given to the spender for use in a P2SH output"
 [refund]: /en/developer-guide#issuing-refunds "A transaction which refunds some or all satoshis received in a previous transaction"
+[regression test mode]: /en/developer-examples#regtest-mode "A local testing environment in which developers can control blocks"
 [root certificate]: /en/developer-examples#term-root-certificate "A certificate belonging to a certificate authority (CA)"
 [root seed]: /en/developer-guide#term-root-seed "A potentially-short value used as a seed to generate a master private key and master chain code for an HD wallet"
 [satoshi]: /en/developer-guide#term-satoshi "The smallest unit of Bitcoin value; 0.00000001 bitcoins.  Also used generically for any value of bitcoins"
@@ -139,7 +140,7 @@
 [stack]: /en/developer-guide#term-stack "An evaluation stack used in Bitcoin's script language"
 [standard script]: /en/developer-guide#standard-transactions "An output script which matches the isStandard() patterns specified in Bitcoin Core---or a transaction containing only standard outputs. Only standard transactions are mined or broadcast by peers running the default Bitcoin Core software"
 [target]: /en/developer-guide#term-target "The threshold below which a block header hash must be in order for the block to be added to the block chain"
-[testnet]: /en/developer-guide#term-testnet "A Bitcoin-like network where the satoshis have no real-world value to allow risk-free testing"
+[testnet]: /en/developer-examples#testnet "A Bitcoin-like network where the satoshis have no real-world value to allow risk-free testing"
 [transaction fee]: /en/developer-guide#term-transaction-fee "The amount remaining when all outputs are subtracted from all inputs in a transaction; the fee is paid to the miner who includes that transaction in a block"
 [transaction fees]: /en/developer-guide#term-transaction-fee "The amount remaining when all outputs are subtracted from all inputs in a transaction; the fee is paid to the miner who includes that transaction in a block"
 [transaction malleability]: /en/developer-guide#transaction-malleability "The ability of an attacker to change the transaction identifier (txid) of unconfirmed transactions, making dependent transactions invalid"
@@ -179,6 +180,7 @@
 [DER]: https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
 [devex complex raw transaction]: /en/developer-examples#complex-raw-transaction
 [devex payment protocol]: /en/developer-examples#payment-protocol
+[devexamples]: /en/developer-examples
 [devguide]: /en/developer-guide
 [devguide avoiding key reuse]: /en/developer-guide#avoiding-key-reuse
 [devguide hardened keys]: /en/developer-guide#hardened-keys
@@ -200,7 +202,6 @@
 [prime symbol]: https://en.wikipedia.org/wiki/Prime_%28symbol%29
 [protobuf]: https://developers.google.com/protocol-buffers/
 [raw transaction format]: /en/developer-reference#raw-transaction-format
-[regression test mode]: https://bitcoinj.github.io/testing
 [rpc addmultisigaddress]: /en/developer-reference#addmultisigaddress
 [rpc addnode]: /en/developer-reference#addnode
 [rpc backupwallet]: /en/developer-reference#backupwallet

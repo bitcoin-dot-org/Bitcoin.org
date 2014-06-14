@@ -63,8 +63,8 @@ require 'yaml'
             (?![^\[]*\])  ## No subst if key inside [brackets]
             (?![^\{]*\})  ## No subst if key inside {braces}
             (?![^\s]*<!--noref-->)  ## No subst if <!--noref--> after key
-            (?![\S ]*<\/span>)      ## No subst on a line with a close span. This 
-                                    ## prevents matching in highlight blocks
+            (?!((?!<pre>).)*(<\/pre>))  ## No subst on a line with a closing pre tag. This 
+                                        ## prevents matching in {% highlight %} code blocks.
             (?![^\(]*(\.svg|\.png))  ## No subst if key inside an image name. This 
 		     ## simple regex has the side effect that we can't
 		     ## use .svg or .png in non-image base text; if that

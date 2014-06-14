@@ -7,6 +7,8 @@
 To request payment using the payment protocol, you use an extended (but
 backwards-compatible) `bitcoin:` URI.  For example:
 
+{% endautocrossref %}
+
 ~~~
 bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
 ?amount=0.10\
@@ -14,6 +16,8 @@ bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
 &message=Order+of+flowers+%26+chocolates\
 &r=https://example.com/pay.php/invoice%3Dda39a3ee
 ~~~
+
+{% autocrossref %}
 
 The browser, QR code reader, or other program processing the URI opens
 the spender's Bitcoin wallet program on the URI. If the wallet program is

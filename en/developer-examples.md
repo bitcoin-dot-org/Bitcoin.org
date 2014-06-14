@@ -22,6 +22,10 @@ title: "Developer Examples - Bitcoin"
 
 {% include fragment_reviews_needed.md %}
 
+{% include example_intro.md %}
+
+{% include example_testing.md %}
+
 {% include example_transactions.md %}
 
 {% include example_payment_processing.md %}
