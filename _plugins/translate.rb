@@ -63,10 +63,6 @@ module Jekyll
       if ar.has_key?(id) && ar[id].is_a?(String)
         text = ar[id]
       end
-      #urlencode if string is a url
-      if cat == 'url'
-        text=CGI::escape(text)
-      end
       #replace urls and anchors in string
       url = site['loc'][lang]['url']
       url.each do |key,value|
