@@ -508,6 +508,7 @@ hash types sign, including the procedure for inserting the subscript -->
 {% autocrossref %}
 
 One thing all signature hash types sign is the transaction's [locktime][]{:#term-locktime}{:.term}.
+(Called nLockTime in the Bitcoin Core source code.)
 The locktime indicates the earliest time a transaction can be added to
 the block chain.  
 
