@@ -972,16 +972,27 @@ table td,table th{
 .contributors{
 	width:890px;
 	text-align:left;
-}
-.contributors span a{
 	font-size:80%;
 }
-.contributors span{
+.contributors img{
+	width:16px;
+	height:16px;
+}
+.contributors div{
 	padding:8px 0;
 	width:170px;
 	overflow:hidden;
 	display:inline-block;
 	vertical-align:top;
+}
+.contributors div div{
+	width:auto;
+	padding:0;
+}
+.contributors div div:first-child+div{
+	max-width:100px;
+	margin:0 2px;
+	white-space:nowrap;
 }
 
 .resources{

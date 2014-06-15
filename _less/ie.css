@@ -260,6 +260,15 @@ body{
 	margin-bottom:30px;
 }
 
+.contributors div{
+	zoom:1;
+	display:inline;
+}
+.contributors span{
+	width:16px;
+	height:16px;
+}
+
 .foundation{
 	width:500px;
 }

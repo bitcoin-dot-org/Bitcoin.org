@@ -74,10 +74,13 @@ id: development
 <section id="contributors">
   <h2>{% translate contributors %}</h2>
   <p>{% translate contributorsorder %}</p>
-  <div class="contributors">{% for c in site.contributors %}
-    <span>
-      {% if c.gravatar_id %}<img class="icon" height="16" width="16" src="https://secure.gravatar.com/avatar/{{c.gravatar_id}}?s=140&amp;d=mm" alt="icon" />{% else %}<img class="icon" height="16" width="16" alt="icon" />{% endif %}
-      {% if c.login %}<a href="https://github.com/{{c.login}}">{{ c.name | htmlescape }} ({{ c.contributions }})</a>{% else %}<a>{{ c.name | htmlescape }} ({{ c.contributions }})</a>{% endif %}
-    </span>{% endfor %}
+  <div class="contributors">
+    {% for c in site.contributors %}
+    <div>
+      <div>{% if c.gravatar_id %}<img src="https://secure.gravatar.com/avatar/{{c.gravatar_id}}?s=140&amp;d=mm" alt="icon" />{% else %}<img alt="icon" />{% endif %}</div>
+      <div><a{% if c.login %} href="https://github.com/{{c.login}}"{% endif %}>{{ c.name | htmlescape }}</a></div>
+      <div>({{ c.contributions }})</div>
+    </div>
+    {% endfor %}
   </div>
 </section>
