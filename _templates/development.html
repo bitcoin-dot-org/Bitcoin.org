@@ -75,7 +75,7 @@ id: development
   <h2>{% translate contributors %}</h2>
   <p>{% translate contributorsorder %}</p>
   <div class="contributors">
-    {% for c in site.contributors %}
+    {% for c in site.corecontributors %}
     <div>
       <div>{% if c.gravatar_id %}<img src="https://secure.gravatar.com/avatar/{{c.gravatar_id}}?s=140&amp;d=mm" alt="icon" />{% else %}<img alt="icon" />{% endif %}</div>
       <div><a{% if c.login %} href="https://github.com/{{c.login}}"{% endif %}>{{ c.name | htmlescape }}</a></div>
