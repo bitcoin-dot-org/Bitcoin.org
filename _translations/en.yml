@@ -16,7 +16,11 @@ en:
     missiontxt6: "Improve Bitcoin worldwide accessibility with internationalization."
     missiontxt7: "Remain a neutral informative resource about Bitcoin."
     help: "Help us"
-    helptxt: "You can report any problem or help to improve bitcoin.org on <a href=\"https://github.com/bitcoin/bitcoin.org#how-to-participate\">GitHub</a> by opening an issue or a pull request in English. When submitting a pull request, please take required time to discuss your changes and adapt your work. You can help with translations by joining a team on <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Transifex</a>. Please don't ask for promotion for your personal business or website, except for special cases like conferences."
+    helptxt: "You can report any problem or help to improve bitcoin.org on <a href=\"https://github.com/bitcoin/bitcoin.org#how-to-participate\">GitHub</a> by opening an issue or a pull request in English. When submitting a pull request, please take required time to discuss your changes and adapt your work. You can help with translations by joining a team on <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Transifex</a>. Please don't ask for promotion for your personal business or website, except for special cases like conferences. Many thanks to all contributors who are spending time improving bitcoin.org!"
+    maintenance: "Maintenance"
+    documentation: "Documentation"
+    translation: "Translation"
+    github: "Contributors on GitHub"
   bitcoin-for-businesses:
     title: "Bitcoin for Businesses - Bitcoin"
     pagetitle: "Bitcoin for Businesses"

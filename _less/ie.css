@@ -269,6 +269,11 @@ body{
 	height:16px;
 }
 
+.credit p{
+	zoom:1;
+	display:inline;
+}
+
 .foundation{
 	width:500px;
 }

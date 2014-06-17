@@ -24,3 +24,41 @@ id: about-us
 
 <h2>{% translate help %}</h2>
 <p>{% translate helptxt %}</p>
+
+<h3>{% translate maintenance %}</h3>
+
+<div class="credit">
+  <p><a href="mailto:saivann@gmail.com">Saïvann Carignan</a><span>Website maintenance</span></p>
+  <p><a>Garland William Binns III</a><span>Translation maintenance</span></p>
+  <p><a href="http://dtrt.org/">David Harding</a><span>Documentation maintenance</span></p>
+</div>
+
+<h3>{% translate documentation %}</h3>
+
+<div class="credit">
+  <p><a href="http://dtrt.org/">David Harding</a><span>Coordination and writing</span></p>
+  <p><a>Greg Sanders</a><span>Writing</span></p>
+</div>
+
+<h3>{% translate translation %}</h3>
+
+<div class="credit">
+  <p><a>Garland William Binns III</a><span>Maintenance</span></p>
+  <p><a>Simon Alexander Hinterreiter</a><span>German</span></p>
+  <p><a>Matija Mazi</a><span>Slovenian</span></p>
+  <p><a>Mihai Onosie</a><span>Romanian</span></p>
+  <p><a>Boštjan Pirnar</a><span>Slovenian</span></p>
+  <p><a>Thomas Pryds</a><span>Danish</span></p>
+</div>
+
+<h3>{% translate github %}</h3>
+
+<div class="contributors">
+  {% for c in site.sitecontributors %}
+  <div>
+    <div>{% if c.gravatar_id %}<img src="https://secure.gravatar.com/avatar/{{c.gravatar_id}}?s=140&amp;d=mm" alt="icon" />{% else %}<img alt="icon" />{% endif %}</div>
+    <div><a{% if c.login %} href="https://github.com/{{c.login}}"{% endif %}>{{ c.name | htmlescape }}</a></div>
+    <div>({{ c.contributions }})</div>
+  </div>
+  {% endfor %}
+</div>

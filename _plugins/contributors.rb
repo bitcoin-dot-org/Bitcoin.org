@@ -9,14 +9,14 @@ module Jekyll
 
   class CategoryGenerator < Generator
 
-    def contributors(aliases)
+    def contributors(repo, aliases)
       contributors = []
       # Call GitHub API with 100 results per page
       page = 1
       data = []
       while page < 10 do
         begin
-          ar = JSON.parse(open("https://api.github.com/repos/bitcoin/bitcoin/contributors?page=#{page}&per_page=100","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
+          ar = JSON.parse(open("https://api.github.com/repos/"+repo+"/contributors?page=#{page}&per_page=100","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
         # Prevent any error to stop the build process, return an empty array instead
         rescue
           print 'GitHub API Call Failed!'
@@ -80,18 +80,21 @@ module Jekyll
     def generate(site)
       # Set site.contributors global variables for liquid/jekyll
       class << site
-        attr_accessor :contributors
+        attr_accessor :corecontributors
+        attr_accessor :sitecontributors
         alias contrib_site_payload site_payload
         def site_payload
           h = contrib_site_payload
           payload = h["site"]
-          payload["contributors"] = self.contributors
+          payload["corecontributors"] = self.corecontributors
+          payload["sitecontributors"] = self.sitecontributors
           h["site"] = payload
           h
         end
       end
-      # Populate site.contributors array
-      site.contributors = contributors(site.config['aliases'])
+      # Populate site.corecontributors and site.sitecontributors arrays
+      site.corecontributors = contributors('bitcoin/bitcoin',site.config['aliases'])
+      site.sitecontributors = contributors('bitcoin/bitcoin.org',site.config['aliases'])
     end
 
   end
