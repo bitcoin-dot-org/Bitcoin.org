@@ -8,12 +8,8 @@ id: secure-your-wallet
 <h2><img src="/img/ico_warning.svg" class="titleicon" alt="warning">{% translate online %}</h2>
 <p>{% translate onlinetxt %}</p>
 
-{% case page.lang %}
-{% when 'ar' or 'fa' or 'pl' or 'zh_TW' %}
-{% else %}
 <h2>{% translate everyday %}</h2>
 <p>{% translate everydaytxt %}</p>
-{% endcase %}
 
 <h2>{% translate backup %}</h2>
 <p>{% translate backuptxt %}</p>
@@ -61,9 +57,6 @@ id: secure-your-wallet
 <p>{% translate offlinetxtxt5 %}</p>
 </div>
 
-{% case page.lang %}
-{% when 'ar' or 'fa' %}
-{% else %}
 <br>
 <div class="box boxexpand">
 <h3><a href="#" onclick="boxShow(event);">{% translate hardwarewallet %}</a></h3>
@@ -74,14 +67,9 @@ id: secure-your-wallet
 <a href="http://www.butterflylabs.com/bitcoin-hardware-wallet/">ButterflyLabs BitSafe</a>
 </p>
 </div>
-{% endcase %}
 
-{% case page.lang %}
-{% when 'ar' or 'fa' or 'pl' or 'zh_TW' %}
-{% else %}
 <h2>{% translate update %}</h2>
 <p>{% translate updatetxt %}</p>
-{% endcase %}
 
 <h2>{% translate offlinemulti %}</h2>
 <p>{% translate offlinemultitxt %}</p>

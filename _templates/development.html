@@ -3,11 +3,7 @@ layout: base
 id: development
 ---
 <h1>{% translate pagetitle %}</h1>
-{% case page.lang %}
-{% when 'ar' or 'fa' or 'pl' or 'zh_TW' %}
-{% else %}
 <p class="summary">{% translate summary %}</p>
-{% endcase %}
 
 <h2>{% translate spec %}</h2>
 <p>{% translate spectxt %}</p>
@@ -33,22 +29,15 @@ id: development
   <div><div>Pieter Wuille</div><div><a href="mailto:pieter.wuille@gmail.com">pieter.wuille@gmail.com</a></div><div><a href="/pieterwuille.asc">PGP</a></div></div>
 </div>
 
-{% case page.lang %}
-{% when 'ar' or 'fa' or 'id' or 'pl' or 'zh_TW' %}
-{% else %}
 <h2>{% translate disclosure %}</h2>
 <p><a href="mailto:bitcoin-security@lists.sourceforge.net">bitcoin-security@lists.sourceforge.net</a></p>
 <p>{% translate disclosuretxt %}</p>
-{% endcase %}
 
 <h2>{% translate involve %}</h2>
 <p>{% translate involvetxt1 %}</p>
 <p>{% translate involvetxt2 %}</p>
 <div id="chatbox" class="chatbox"></div>
 
-{% case page.lang %}
-{% when 'ar' or 'fa' %}
-{% else %}
 <h2>{% translate more %}</h2>
 <ul class="devprojectlist">
   <li><a href="https://github.com/etotheipi/BitcoinArmory">Armory</a> - A Bitcoin client with enhanced security features.</li>
@@ -69,7 +58,6 @@ id: development
   <li><a href="https://sx.dyne.org/">sx</a> - Modular Bitcoin commandline utilities.</li>
   <li class="more"><a href="#" onclick="librariesShow(event)">{% translate moremore %}</a></li>
 </ul>
-{% endcase %}
 
 <section id="contributors">
   <h2>{% translate contributors %}</h2>
