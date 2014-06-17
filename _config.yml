@@ -112,20 +112,21 @@ redirects:
   /pl/bitcoin-dla-entuzjastow: /pl/innowacje
 
 aliases:
-  s_nakamoto: Satoshi Nakamoto
   --author=Satoshi Nakamoto: Satoshi Nakamoto
   gavinandresen: Gavin Andresen
-  tcatm: Nils Schneider
   gmaxwell: Gregory Maxwell
-  sipa: Pieter Wuille
-  jgarzik: Jeff Garzik
-  petertodd: Peter Todd
-  luke-jr: Luke-Jr
-  laanwj: Wladimir J. van der Laan
-  mikehearn: Mike Hearn
-  saivann: Saïvann Carignan
-  harding: David Harding
   gwb3: Garland William Binns III
+  harding: David Harding
+  jgarzik: Jeff Garzik
+  laanwj: Wladimir J. van der Laan
+  luke-jr: Luke-Jr
+  mikehearn: Mike Hearn
+  petertodd: Peter Todd
+  s_nakamoto: Satoshi Nakamoto
+  saivann: Saïvann Carignan
+  schildbach: Andreas Schildbach
+  sipa: Pieter Wuille
+  tcatm: Nils Schneider
 
 safe:        false
 server_port: 4000
