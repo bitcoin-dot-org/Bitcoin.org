@@ -28,7 +28,11 @@ id: community
 <div>
   <div>
     <h2><img src="/img/ico_multi.svg" class="titleicon" alt="Icon">{% translate meetups %}</h2>
+    {% case page.lang %}
+    {% when 'ar' or 'fa' %}
+    {% else %}
     <p><a href="/{{ page.lang }}/{% translate events url %}">{% translate meetupevents %}</a></p>
+    {% endcase %}
     <p><a href="http://bitcoin.meetup.com/">{% translate meetupgroup %}</a></p>
     <p><a href="https://bitcointalk.org/index.php?board=86.0">{% translate meetupbitcointalk %}</a></p>
     <p><a href="https://en.bitcoin.it/wiki/Meetups">{% translate meetupwiki %}</a></p>

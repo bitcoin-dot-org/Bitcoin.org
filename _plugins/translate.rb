@@ -38,6 +38,7 @@ module Jekyll
         end
       end
       #define id, category and lang
+      defaulten = true
       lang = Liquid::Template.parse("{{page.lang}}").render context
       cat = Liquid::Template.parse("{{page.id}}").render context
       id=@id.split(' ')
@@ -46,6 +47,7 @@ module Jekyll
       end
       if !id[2].nil?
         lang = Liquid::Template.parse(id[2]).render context
+        defaulten = false
       end
       id=Liquid::Template.parse(id[0]).render context
       if lang == ''
@@ -64,7 +66,7 @@ module Jekyll
         text = ar[id]
       end
       #fallback to English if string is empty
-      if text == ''
+      if text == '' and defaulten == true
         lang = 'en'
         ar = site['loc'][lang]
         for key in keys do
