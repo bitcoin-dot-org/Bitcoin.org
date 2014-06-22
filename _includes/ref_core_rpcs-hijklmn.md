@@ -591,9 +591,7 @@ block will be listed.
 {% autocrossref %}
 
 *Number; optional:* the minimum number of confirmations an incoming
-transaction must have before it is counted towards the balance. Outgoing
-transactions are counted regardless of the number of confirmations.
-Default is 1; use 0 to count unconfirmed transactions.
+transaction must have before it is displayed.  Default is 1.
 
 {% endautocrossref %}
 
