@@ -11,6 +11,7 @@ id: resources
     <h2><img src="/img/ico_simple.svg" class="titleicon" alt="Icon">{% translate useful %}</h2>
     <p><a href="https://bitcoinfoundation.org/">Bitcoin Foundation</a></p>
     <p>{% translate linkwiki %}</p>
+    {% if page.lang == 'fr' %}<p><a href="http://francebitcoin.com/">France Bitcoin</a></p>{% endif %}
     <p><a href="https://www.weusecoins.com/">WeUseCoins.com</a></p>
     <p><a href="http://www.bitcoinmining.com/">BitcoinMining.com</a></p>
   </div><div>
@@ -24,8 +25,9 @@ id: resources
 <div>
   <div>
     <h2><img src="/img/ico_spread.svg" class="titleicon" alt="Icon">{% translate news %}</h2>
+    {% if page.lang == 'fr' %}<p><a href="http://le-coin-coin.fr/">Le Coin Coin</a></p>{% endif %}
+    {% if page.lang == 'fr' %}<p><a href="http://www.bitcoin.fr/">Bitcoin.fr</a></p>{% endif %}
     {% if page.lang == 'bg' %}<p><a href="http://hash.bg/">Hash.bg</a></p>{% endif %}
-    {% if page.lang == 'fr' %}<p><a href="http://francebitcoin.com/">France Bitcoin</a></p>{% endif %}
     {% if page.lang == 'ru' %}<p><a href="http://btcrussia.ru/">BTCRussia</a></p>{% endif %}
     <p><a href="http://www.coindesk.com/">CoinDesk</a></p>
     <p><a href="http://bitcoinmagazine.com/">Bitcoin Magazine</a></p>
