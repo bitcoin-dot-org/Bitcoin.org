@@ -565,13 +565,14 @@ Result (truncated after first entry):
 #### listsinceblock
 
 ~~~
-listsinceblock [block hash] [confirmations]
+listsinceblock [block hash] [block depth]
 ~~~
 
 {% autocrossref %}
 
 Get all transactions affecting addresses in the wallet 
-which have occurred since a particular block.
+which have occurred since a particular block,
+plus the header hash of a block at a particular depth.
 
 {% endautocrossref %}
 
@@ -586,12 +587,16 @@ block will be listed.
 
 {% endautocrossref %}
 
-**Argument #2: Minimum Number Of Confirmations**
+**Argument #2: Block Depth For Header Hash**
 
 {% autocrossref %}
 
-*Number; optional:* the minimum number of confirmations an incoming
-transaction must have before it is displayed.  Default is 1.
+*Number; optional:* return the hash of a block header at a particular
+depth.  The default is 1, which will return the most recent block header
+hash (the same result as the `getbestblockhash` RPC).  
+
+Note: this argument does not affect which transactions are returned; it
+only changes the `lastblock` value in the returned data.
 
 {% endautocrossref %}
 
@@ -611,8 +616,9 @@ number indicating what number it was in the block (counting from one),
 the *txid*, the *time* and *timereceived* of the transaction, plus a
 *comment* and *to* (label) for the transaction, if set.
 
-Outside of the array, a *lastblock* value stores the last block hash
-used in the data set.
+Outside of the array, the *lastblock* value stores the header hash of
+a block at the depth indicated by the second argument, the most recent
+block by default.
 
 {% endautocrossref %}
 
@@ -642,8 +648,8 @@ used in the data set.
 
 {% autocrossref %}
 
-Get all transactions with at least six confirmations since a
-particular block:
+Get all transactions since a particular block and the header hash of the
+sixth most recent block.
 
 {% endautocrossref %}
 
