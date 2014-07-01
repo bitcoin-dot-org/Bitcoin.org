@@ -170,7 +170,7 @@
 [BIP72]: https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki
 [bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation
 [bitcoinpdf]: https://bitcoin.org/bitcoin.pdf
-[block170]: http://blockexplorer.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
+[block170]: https://www.biteasy.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
 [casascius address utility]: https://github.com/casascius/Bitcoin-Address-Utility
 [core base58.h]: https://github.com/bitcoin/bitcoin/blob/master/src/base58.h
 [core executable]: /en/download
