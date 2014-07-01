@@ -29,7 +29,7 @@ id: community
   <div>
     <h2><img src="/img/ico_multi.svg" class="titleicon" alt="Icon">{% translate meetups %}</h2>
     {% case page.lang %}
-    {% when 'ar' or 'fa' %}
+    {% when 'fa' %}
     {% else %}
     <p><a href="/{{ page.lang }}/{% translate events url %}">{% translate meetupevents %}</a></p>
     {% endcase %}
@@ -57,7 +57,7 @@ id: community
 </div>
 
 {% case page.lang %}
-{% when 'ar' or 'bg' or 'fa' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
+{% when 'bg' or 'fa' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
 <h2>{% translate nonprofit %}</h2>
 {% else %}
 <h2><a name="{% translate non-profit anchor.community %}">{% translate nonprofit %}</a></h2>
