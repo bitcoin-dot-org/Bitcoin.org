@@ -51,8 +51,8 @@ if(typeof(legacyIE)==='undefined'){
     </ul>
     <a class="logo" href="/{{ page.lang }}/"><img src="/img/logotop.svg" alt="Bitcoin"></a>
     <a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" href="#"></a>
-    <ul id="menusimple" class="menusimple">
-      <li><a href="#" onclick="mobileMenuHover(event);">{% translate menu-intro layout %}</a>
+    <ul id="menusimple" class="menusimple" onclick="mobileMenuHover(event);">
+      <li><a href="#" onclick="return false;">{% translate menu-intro layout %}</a>
         <ul>
           <li{% if page.id == 'bitcoin-for-individuals' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a></li>
           <li{% if page.id == 'bitcoin-for-businesses' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a></li>
@@ -67,7 +67,7 @@ if(typeof(legacyIE)==='undefined'){
           <li{% if page.id == 'you-need-to-know' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a></li>
         </ul>
       </li>
-      <li><a href="#" onclick="mobileMenuHover(event);">{% translate menu-resources layout %}</a>
+      <li><a href="#" onclick="return false;">{% translate menu-resources layout %}</a>
         <ul>
           <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a></li>
           <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>

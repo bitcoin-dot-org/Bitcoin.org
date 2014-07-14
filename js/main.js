@@ -93,6 +93,22 @@ function getWindowX(){
 return (window.innerWidth)?window.innerWidth:document.documentElement.clientWidth;
 }
 
+function addClass(node,data){
+//Add class to node.
+var cl=node.className.split(' ');
+for(var i=0,n=cl.length;i<n;i++){if(cl[i]==data)return;}
+cl.push(data);
+node.className=cl.join(' ');
+}
+
+function removeClass(node,data){
+//Remove class from node.
+var ocl=node.className.split(' ');
+var ncl=[];
+for(var i=0,n=ocl.length;i<n;i++){if(ocl[i]!=data)ncl.push(ocl[i]);}
+node.className=ncl.join(' ');
+}
+
 function supportsSVG(){
 //Return true if the browser supports SVG.
 //Ex. if(!supportsSVG()){..apply png fallback..}
@@ -153,18 +169,22 @@ cancelEvent(e);
 }
 
 function mobileMenuHover(e){
-//Add a delay before hidding menu for mobiles to prevent accidental clicks
-var t=getEventTarget(e);
-while(t.nodeName!='LI'||!t.parentNode.id)t=t.parentNode;
-var p=t.getElementsByTagName('UL')[0];
-p.className='hover';
+//Add a delay before hiding menu for mobiles to prevent accidental clicks
+var p=t=getEventTarget(e);
+if(t.nodeName!='A')return;
+while(p.parentNode.nodeName!='DIV')p=p.parentNode;
+while(t.nodeName!='LI'||t.parentNode!=p)t=t.parentNode;
+var ul=null;
+if(t.getElementsByTagName('UL').length>0){
+	var ul=t.getElementsByTagName('UL')[0];
+	addClass(ul,'hover');
+}
 setTimeout(function(){
-for(var i=0,nd=t.parentNode.getElementsByTagName('UL'),n=nd.length;i<n;i++){
-	if(nd[i]==p)continue;
-	nd[i].className='';
+for(var i=0,nd=p.getElementsByTagName('UL'),n=nd.length;i<n;i++){
+	if(nd[i]==ul)continue;
+	removeClass(nd[i],'hover');
 }
 },1);
-cancelEvent(e);
 }
 
 function boxShow(e){
@@ -314,21 +334,21 @@ var updatetoc=function(){
 	//Set bottom and top to fit within window and not overflow its parent node
 	var div=toc.getElementsByTagName('DIV')[0];
 	if(pageoffset>getTop(toc)){
-		div.className='scroll';
+		addClass(div,'scroll');
 		div.style.top='20px';
 		div.style.bottom=Math.max((pageoffset+windowy)-(getHeight(toc.parentNode)+getTop(toc.parentNode)),20)+'px';
 	}
-	else div.className='';
+	else removeClass(div,'scroll');
 	//Remove .active class from toc and find new active toc entry
 	var a=false;
 	for(var i=0,t=toc.getElementsByTagName('*'),n=t.length;i<n;i++){
-		if(t[i].className&&t[i].className.indexOf('active')!==-1)t[i].className='';
+		removeClass(t[i],'active');
 		if(t[i].nodeName=='A'&&t[i].getAttribute('href')=='#'+closer[0].id)a=t[i];
 	}
 	if(a===false)return;
 	//Set .active class on new active toc entry
 	while(a.parentNode.nodeName=='LI'||a.parentNode.nodeName=='UL'){
-		a.className='active';
+		addClass(a,'active');
 		a=a.parentNode;
 	}
 }
@@ -371,9 +391,7 @@ for(var i=0,n=tags.length;i<n;i++){
 for(var i=0,n=nodes.length;i<n;i++){
 	if(!nodes[i].id)continue;
 	if(nodes[i].getElementsByTagName('A').length>0)return;
-	var cl=nodes[i].className.split(' ');
-	cl.push('anchorAf')
-	nodes[i].className=cl.join(' ');
+	addClass(nodes[i],'anchorAf');
 	var anc=document.createElement('A');
 	anc.href='#'+nodes[i].id;
 	nodes[i].insertBefore(anc,nodes[i].firstChild);
