@@ -93,6 +93,12 @@ function getWindowX(){
 return (window.innerWidth)?window.innerWidth:document.documentElement.clientWidth;
 }
 
+function isMobile(){
+//Return true if the mobile CSS stylesheet is used.
+if(getStyle(document.getElementById('detectmobile'),'display')!='none')return true;
+return false;
+}
+
 function addClass(node,data){
 //Add class to node.
 var cl=node.className.split(' ');
@@ -420,8 +426,8 @@ if(t.parentNode.parentNode.parentNode.nodeName!='DIV'){
 	t.setAttribute('data-select','1');
 	addClass(t.parentNode,'select');
 }
-if(getStyle(document.getElementById('walletsmobile'),'display')!='none'){
-	if(t.parentNode.getElementsByTagName('UL').length==0)setTimeout(function(){scrollToNode(document.getElementById('wallets'));},10);
+if(isMobile()&&t.parentNode.getElementsByTagName('UL').length==0){
+	setTimeout(function(){scrollToNode(document.getElementById('wallets'));},10);
 }
 }
 
