@@ -157,7 +157,7 @@ en:
     checkpassprivacyrotate: "Minimum privacy"
     checkpassprivacyrotatetxt: "This wallet does not reuse addresses internally. This means this wallet makes it harder for people you transact with to spy your balance and payments. You should still take care to use a new Bitcoin address each time you request payment."
     checkfailprivacyreuse: "Weak privacy"
-    checkfailprivacyreusetxt: "This wallet re-uses Bitcoin addresses. This means people you transact with can spy on your balance and payments."
+    checkfailprivacyreusetxt: "This wallet reuses Bitcoin addresses. This means people you transact with can spy on your balance and payments."
     educate: "Take time to educate yourself"
     educatetxt: "Bitcoin is different from what you know and use every day. Before you start using Bitcoin for any serious transaction, be sure to read <a href=\"#you-need-to-know#\"><b>what you need to know</b></a> and take appropriate steps to <a href=\"#secure-your-wallet#\"><b>secure your wallet</b></a>. Always remember that it is your responsibility to choose your wallet carefully and adopt good practices in order to protect your money."
   development:
