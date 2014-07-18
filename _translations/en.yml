@@ -141,7 +141,7 @@ en:
     checkgoodtransparencydeterministic: "Complete transparency"
     checkgoodtransparencydeterministictxt: "This wallet is open-source and built deterministically. This means any developer in the world can audit the code and make sure the final software isn't hiding any secrets."
     checkpasstransparencyopensource: "Good transparency"
-    checkpasstransparencyopensourcetxt: "The developers of this wallet publish the source code. This means any developer in the world can audit the code. However, you still need to trust developers of this wallet when installing or updating the final software because it was not built deterministically like <a href=\"#download#\">Bitcoin Core</a>."
+    checkpasstransparencyopensourcetxt: "The developers of this wallet publish the source code for the client. This means any developer in the world can audit the code. However, you still need to trust developers of this wallet when installing or updating the final software because it was not built deterministically like <a href=\"#download#\">Bitcoin Core</a>."
     checkpasstransparencyclosedsource: "No transparency"
     checkpasstransparencyclosedsourcetxt: "This wallet is not open-source. This means it is not possible to audit the code and make sure the final software isn't hiding dangerous code or doing anything you wouldn't agree to."
     checkfailtransparencyremote: "Remote app"
