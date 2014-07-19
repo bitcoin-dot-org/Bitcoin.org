@@ -368,7 +368,7 @@ wallets:
   </ul>
 </div>
 
-<div class="wallets" id="wallets" onclick="walletMobileShow(event);">
+<div class="wallets" id="wallets" onclick="walletMobileShow(event);walletDisabledShow(event);">
 {% for wallet in page.wallets %}{% for wallet in wallet %}{% if wallet[1].platform.mobile %}{% assign platform = wallet[1].platform.mobile %}{% elsif wallet[1].platform.desktop %}{% assign platform = wallet[1].platform.desktop %}{% elsif wallet[1].platform.hardware %}{% assign platform = wallet[1].platform.hardware %}{% else %}{% assign platform = wallet[1].platform.web %}{% endif %}
 <div id="wallet-{{ wallet[0] }}" data-walletcompat="{{ wallet[1].compat }}" data-walletlevel="{{ wallet[1].level }}">
   <div>

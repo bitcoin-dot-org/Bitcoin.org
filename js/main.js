@@ -496,6 +496,36 @@ p.appendChild(t);
 scrollToNode(p);
 }
 
+function walletDisabledShow(e){
+//Show disabled wallet on click and disable wallet when mouse leaves the wallet.
+var t=getEventTarget(e);
+while(t.nodeName!='DIV'&&t.parentNode.id!='wallets'){
+	if(t.id=='wallets')return;
+	t=t.parentNode;
+}
+if(t.className.indexOf('disabled')===-1)return;
+removeClass(t,'disabled');
+addEvent(t,'mouseover',walletDisabledHide);
+addEvent(t,'mouseout',walletDisabledHide);
+}
+
+function walletDisabledHide(e){
+//Disable wallet when the mouse leaves the wallet bubble.
+var t=getEventTarget(e);
+while(t.nodeName!='DIV'||t.parentNode.id!='wallets'){
+	if(t.id=='wallets')return;
+	t=t.parentNode;
+}
+clearTimeout(t.getAttribute('data-disabletimeout'));
+if(e.type=='mouseover')return;
+t.setAttribute('data-disabletimeout',setTimeout(function(){
+	addClass(t,'disabled');
+	t.removeAttribute('data-disabletimeout');
+	removeEvent(t,'mouseout',walletDisabledHide);
+	removeEvent(t,'mouseover',walletDisabledHide);
+},1));
+}
+
 function makeEditable(e){
 //An easter egg that makes the page editable when user click on the page and hold their mouse button for one second.
 //This trick allows translators and writers to preview their work.
