@@ -22,7 +22,11 @@ wallets:
           decentralization: "checkgooddecentralizefullnode"
           transparency: "checkgoodtransparencydeterministic"
           environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacyrotate"
+          privacy: "checkgoodprivacyimproved"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkpassprivacydisclosurefullnode"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - multibit:
     title: "MultiBit"
     titleshort: "MultiBit"
@@ -42,7 +46,11 @@ wallets:
           decentralization: "checkpassdecentralizespv"
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
-          privacy: "checkfailprivacyreuse"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 - hive:
     title: "Hive"
     titleshort: "Hive"
@@ -60,7 +68,11 @@ wallets:
           decentralization: "checkpassdecentralizespv"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyreuse"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
       desktop:
         text: "wallethive"
         link: "https://hivewallet.com/#native"
@@ -72,7 +84,11 @@ wallets:
           decentralization: "checkpassdecentralizespv"
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
-          privacy: "checkfailprivacyreuse"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - armory:
     title: "Armory"
     titleshort: "Armory"
@@ -92,7 +108,11 @@ wallets:
           decentralization: "checkgooddecentralizefullnode"
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacyrotate"
+          privacy: "checkgoodprivacyimproved"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkpassprivacydisclosurefullnode"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - electrum:
     title: "Electrum"
     titleshort: "Electrum"
@@ -112,7 +132,11 @@ wallets:
           decentralization: "checkpassdecentralizespv"
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacyrotate"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurecentralized"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - bitcoinwallet:
     title: "Bitcoin Wallet"
     titleshort: "Bitcoin<br>Wallet"
@@ -131,7 +155,11 @@ wallets:
           decentralization: "checkpassdecentralizespv"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyreuse"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
       android:
         text: "walletbitcoinwallet"
         link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
@@ -144,7 +172,11 @@ wallets:
           decentralization: "checkpassdecentralizespv"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyreuse"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
       blackberry:
         text: "walletbitcoinwallet"
         link: "http://appworld.blackberry.com/webstore/content/23952882/"
@@ -157,7 +189,11 @@ wallets:
           decentralization: "checkpassdecentralizespv"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyreuse"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 - mycelium:
     title: "Mycelium"
     titleshort: "Mycelium"
@@ -175,7 +211,11 @@ wallets:
           decentralization: "checkfaildecentralizecentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyreuse"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurecentralized"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - blockchain:
     title: "Blockchain.info"
     titleshort: "Blockchain<br>.info"
@@ -193,7 +233,11 @@ wallets:
           decentralization: "checkfaildecentralizecentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyreuse"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
       desktop:
         text: "walletblockchaininfo"
         link: "https://chrome.google.com/webstore/detail/blockchain/glaohkkooicollgefkkmndjcbblominl"
@@ -207,7 +251,11 @@ wallets:
           decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
-          privacy: "checkfailprivacyreuse"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
       web:
         text: "walletblockchaininfo"
         link: "https://chrome.google.com/webstore/detail/blockchain/glaohkkooicollgefkkmndjcbblominl"
@@ -218,7 +266,11 @@ wallets:
           decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
-          privacy: "checkfailprivacyreuse"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - bitgo:
     title: "BitGo"
     titleshort: "BitGo"
@@ -235,7 +287,11 @@ wallets:
           decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkpassenvironmenttwofactor"
-          privacy: "checkpassprivacyrotate"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - greenaddress:
     title: "GreenAddress"
     titleshort: "Green<br>Address"
@@ -254,7 +310,11 @@ wallets:
           decentralization: "checkfaildecentralizecentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkpassprivacyrotate"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
       desktop:
         text: "walletgreenaddress"
         link: "https://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp"
@@ -268,7 +328,11 @@ wallets:
           decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacyrotate"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
       web:
         text: "walletgreenaddress"
         link: "https://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp"
@@ -279,7 +343,11 @@ wallets:
           decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacyrotate"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
       iphone:
         text: "walletgreenaddress"
         link: "https://itunes.apple.com/us/app/greenaddress/id889740745?ls=1&mt=8"
@@ -292,7 +360,11 @@ wallets:
           decentralization: "checkfaildecentralizecentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkpassprivacyrotate"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
       android:
         text: "walletgreenaddress"
         link: "https://play.google.com/store/apps/details?id=it.greenaddress.cordova"
@@ -305,7 +377,11 @@ wallets:
           decentralization: "checkfaildecentralizecentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkpassprivacyrotate"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 - coinbase:
     title: "Coinbase"
     titleshort: "Coinbase"
@@ -322,7 +398,11 @@ wallets:
           decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacyrotate"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - coinkite:
     title: "Coinkite"
     titleshort: "Coinkite"
@@ -339,7 +419,11 @@ wallets:
           decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacyrotate"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 ---
 
 <h1>{% translate pagetitle %}</h1>
@@ -371,12 +455,24 @@ wallets:
 <div class="wallets" id="wallets" onclick="walletMobileShow(event);walletDisabledShow(event);">
 {% for wallet in page.wallets %}{% for wallet in wallet %}{% if wallet[1].platform.mobile %}{% assign platform = wallet[1].platform.mobile %}{% elsif wallet[1].platform.desktop %}{% assign platform = wallet[1].platform.desktop %}{% elsif wallet[1].platform.hardware %}{% assign platform = wallet[1].platform.hardware %}{% else %}{% assign platform = wallet[1].platform.web %}{% endif %}
 <div id="wallet-{{ wallet[0] }}" data-walletcompat="{{ wallet[1].compat }}" data-walletlevel="{{ wallet[1].level }}">
+  <span></span>
   <div>
     <h2>{{ wallet[1].title }}</h2>
     <div>{% for os in platform.os %}<img src="/img/os/{{ os }}.png" alt="{{ os }}" title="{{ os }}" />{% endfor %}</div>
     <div>{% if platform.link contains '://' %}<a href="{{ platform.link }}">{% translate walletvisit %}</a>{% else %}{% translate {{platform.link}} %}{% endif %}</div>
     <div>
-      {% for check in platform.check %}<div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><p>{% translate {{check[1]}}txt %}</p><span></span></div></div>{% endfor %}
+      {% for check in platform.check %}{% if check[0] == 'privacy' %}
+      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><div>
+        {% for privacycheck in platform.privacycheck %}
+        <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains "checkgood" %}checkgood{% elsif privacycheck[1] contains "checkpass" %}checkpass{% else %}checkfail{% endif %}">
+          <p>{% translate {{privacycheck[1]}} %}</p>
+          <p>{% translate {{privacycheck[1]}}txt %}</p>
+        </div>
+        {% endfor %}
+      </div><span></span></div></div>
+      {% else %}
+      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><p>{% translate {{check[1]}}txt %}</p><span></span></div></div>
+      {% endif %}{% endfor %}
     </div>
     <p>{% translate {{platform.text}} %}</p>
     <div><img src="/img/screenshots/{{ platform.screenshot }}" alt="screenshot"></div>
@@ -389,12 +485,24 @@ wallets:
 <div class="wallets walletsswitch" id="walletsswitch">
 {% for wallet in page.wallets %}{% for wallet in wallet %}{% for platform in wallet[1].platform %}
 <div id="wallet-{{ wallet[0] }}-{{ platform[0] }}" data-walletcompat="{{ wallet[1].compat }}" data-walletlevel="{{ wallet[1].level }}">
+  <span></span>
   <div>
     <h2>{{ wallet[1].title }}</h2>
     <div>{% for os in platform[1].os %}<img src="/img/os/{{ os }}.png" alt="{{ os }}" title="{{ os }}" />{% endfor %}</div>
     <div>{% if platform[1].link contains '://' %}<a href="{{ platform[1].link }}">{% translate walletvisit %}</a>{% else %}{% translate {{platform[1].link}} %}{% endif %}</div>
     <div>
-      {% for check in platform[1].check %}<div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><p>{% translate {{check[1]}}txt %}</p><span></span></div></div>{% endfor %}
+      {% for check in platform[1].check %}{% if check[0] == 'privacy' %}
+      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><div>
+        {% for privacycheck in platform[1].privacycheck %}
+        <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains "checkgood" %}checkgood{% elsif privacycheck[1] contains "checkpass" %}checkpass{% else %}checkfail{% endif %}">
+          <p>{% translate {{privacycheck[1]}} %}</p>
+          <p>{% translate {{privacycheck[1]}}txt %}</p>
+        </div>
+        {% endfor %}
+      </div><span></span></div></div>
+      {% else %}
+      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><p>{% translate {{check[1]}}txt %}</p><span></span></div></div>
+      {% endif %}{% endfor %}
     </div>
     <p>{% translate {{platform[1].text}} %}</p>
     <div><img src="/img/screenshots/{{ platform[1].screenshot }}" alt="screenshot"></div>

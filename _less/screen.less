@@ -1302,7 +1302,8 @@ table td,table th{
 	width:72px;
 	height:72px;
 }
-.wallets>div>div{
+.wallets>div>div,
+.wallets>div>span{
 	opacity:0;
 	width:0;
 	height:0;
@@ -1311,12 +1312,14 @@ table td,table th{
 	display:inline-block;
 	position:absolute;
 	padding:20px;
-	border:solid 2px #2c6faf;
-	background-color:#f1f8fb;
-	z-index:100;
 	top:-352px;
 	left:-20px;
 	right:-20px;
+}
+.wallets>div>span{
+	z-index:100;
+	border:solid 2px #2c6faf;
+	background-color:#f1f8fb;
 	-moz-transition:opacity 400ms ease-out;
 	-webkit-transition:opacity 400ms ease-out;
 	transition:opacity 400ms ease-out;
@@ -1324,20 +1327,26 @@ table td,table th{
 	-moz-border-radius:4px;
 	border-radius:4px;
 }
-.wallets>div:hover>div{
+.wallets>div>div{
+	z-index:102;
+}
+.wallets>div:hover>div,
+.wallets>div:hover>span{
 	opacity:1;
 	width:auto;
 	height:350px;
 	visibility:visible;
 	overflow:visible;
 }
-.wallets>div.disabled:hover>div{
+.wallets>div.disabled:hover>div,
+.wallets>div.disabled:hover>span{
 	opacity:0;
 	width:0;
 	height:0;
 	visibility:hidden;
 }
-.wallets>div:nth-child(1n+7)>div{
+.wallets>div:nth-child(1n+7)>div,
+.wallets>div:nth-child(1n+7)>span{
 	top:-222px;
 }
 .wallets>div:first-child+div+div+div+div+div+div>div,
@@ -1345,11 +1354,18 @@ table td,table th{
 .wallets>div:first-child+div+div+div+div+div+div+div+div>div,
 .wallets>div:first-child+div+div+div+div+div+div+div+div+div>div,
 .wallets>div:first-child+div+div+div+div+div+div+div+div+div+div>div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div>div{
+.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div>div,
+.wallets>div:first-child+div+div+div+div+div+div>span,
+.wallets>div:first-child+div+div+div+div+div+div+div>span,
+.wallets>div:first-child+div+div+div+div+div+div+div+div>span,
+.wallets>div:first-child+div+div+div+div+div+div+div+div+div>span,
+.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div>span,
+.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div>span{
 	/*IE8 Support*/
 	top:-222px;
 }
-.wallets>div:nth-child(1n+13)>div{
+.wallets>div:nth-child(1n+13)>div,
+.wallets>div:nth-child(1n+13)>span{
 	top:-92px;
 }
 .wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div>div,
@@ -1357,7 +1373,13 @@ table td,table th{
 .wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div>div,
 .wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div>div,
 .wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div>div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div>div{
+.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div>div,
+.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div>span,
+.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div>span,
+.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div>span,
+.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div>span,
+.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div>span,
+.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div>span{
 	/*IE8 Support*/
 	top:-92px;
 }
@@ -1434,7 +1456,8 @@ table td,table th{
 .wallets>div>div>h2:first-child+div+div+div>div:hover>div>span{
 	display:block;
 }
-.wallets>div>div>h2:first-child+div+div+div>div>div>p{
+.wallets>div>div>h2:first-child+div+div+div>div>div>p,
+.wallets>div>div>h2:first-child+div+div+div>div>div>div{
 	opacity:0;
 	width:0;
 	height:0;
@@ -1442,11 +1465,8 @@ table td,table th{
 	border:1px solid;
 	visibility:hidden;
 	position:absolute;
-	font-size:85%;
 	background-color:#fff;
 	left:30px;
-	top:-30px;
-	padding:10px;
 	margin:0;
 	-moz-transition:opacity 400ms ease-out;
 	-webkit-transition:opacity 400ms ease-out;
@@ -1456,9 +1476,22 @@ table td,table th{
 	border-radius:4px;
 	z-index:90;
 }
-.wallets>div>div>h2:first-child+div+div+div>div:hover>div>p{
+.wallets>div>div>h2:first-child+div+div+div>div>div>p{
+	font-size:85%;
+	padding:10px;
+	top:-30px;
+}
+.wallets>div>div>h2:first-child+div+div+div>div>div>div{
+	padding:0 10px;
+	top:-80px;
+}
+.wallets>div>div>h2:first-child+div+div+div>div>div>div>div>p:first-child+p{
+	font-size:85%;
+}
+.wallets>div>div>h2:first-child+div+div+div>div:hover>div>p,
+.wallets>div>div>h2:first-child+div+div+div>div:hover>div>div{
 	opacity:1;
-	width:350px;
+	width:400px;
 	height:auto;
 	visibility:visible;
 }
@@ -1474,7 +1507,7 @@ table td,table th{
 	position:absolute;
 	top:20px;
 	right:20px;
-	height:350px;
+	height:400px;
 	width:250px;
 }
 .wallets>div>div>h2:first-child+div+div+div+p+div>img{
@@ -2234,17 +2267,30 @@ h2 .rssicon{
 	.wallets>div.disabled{
 		display:none;
 	}
-	.wallets>div>a,
-	.wallets>div>a:visited,
-	.wallets>div>a:link,
-	.wallets>div>a:active{
-		margin:0 13px 20px 13px;
+	.wallets>div:hover>span{
+		display:none;
+	}
+	.wallets>div>div{
+		border:solid 2px #2c6faf;
+		background-color:#f1f8fb;
+		-moz-transition:opacity 400ms ease-out;
+		-webkit-transition:opacity 400ms ease-out;
+		transition:opacity 400ms ease-out;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		border-radius:4px;
 	}
 	.wallets>div:hover>div{
 		opacity:0;
 		width:0;
 		height:0;
 		visibility:hidden;
+	}
+	.wallets>div>a,
+	.wallets>div>a:visited,
+	.wallets>div>a:link,
+	.wallets>div>a:active{
+		margin:0 13px 20px 13px;
 	}
 	.wallets>div:hover>a>span{
 		display:none;
@@ -2294,7 +2340,8 @@ h2 .rssicon{
 		margin-left:0;
 		margin-top:10px;
 	}
-	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div>div>p{
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div>div>p,
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div>div>div{
 		position:relative;
 		width:auto;
 		border:0;
