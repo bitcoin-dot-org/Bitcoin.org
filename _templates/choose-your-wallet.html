@@ -461,17 +461,17 @@ wallets:
     <div>{% for os in platform.os %}<img src="/img/os/{{ os }}.png" alt="{{ os }}" title="{{ os }}" />{% endfor %}</div>
     <div>{% if platform.link contains '://' %}<a href="{{ platform.link }}">{% translate walletvisit %}</a>{% else %}{% translate {{platform.link}} %}{% endif %}</div>
     <div>
-      {% for check in platform.check %}{% if check[0] == 'privacy' %}
-      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><div>
+      {% for check in platform.check %}{% if check[0] == 'privacy' and platform.privacycheck %}
+      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><div>
         {% for privacycheck in platform.privacycheck %}
-        <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains "checkgood" %}checkgood{% elsif privacycheck[1] contains "checkpass" %}checkpass{% else %}checkfail{% endif %}">
+        <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains "checkgood" %}checkgood{% elsif privacycheck[1] contains "checkpass" %}checkpass{% elsif privacycheck[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">
           <p>{% translate {{privacycheck[1]}} %}</p>
           <p>{% translate {{privacycheck[1]}}txt %}</p>
         </div>
         {% endfor %}
       </div><span></span></div></div>
       {% else %}
-      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><p>{% translate {{check[1]}}txt %}</p><span></span></div></div>
+      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><p>{% translate {{check[1]}}txt %}</p><span></span></div></div>
       {% endif %}{% endfor %}
     </div>
     <p>{% translate {{platform.text}} %}</p>
@@ -491,17 +491,17 @@ wallets:
     <div>{% for os in platform[1].os %}<img src="/img/os/{{ os }}.png" alt="{{ os }}" title="{{ os }}" />{% endfor %}</div>
     <div>{% if platform[1].link contains '://' %}<a href="{{ platform[1].link }}">{% translate walletvisit %}</a>{% else %}{% translate {{platform[1].link}} %}{% endif %}</div>
     <div>
-      {% for check in platform[1].check %}{% if check[0] == 'privacy' %}
-      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><div>
+      {% for check in platform[1].check %}{% if check[0] == 'privacy' and platform[1].privacycheck %}
+      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><div>
         {% for privacycheck in platform[1].privacycheck %}
-        <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains "checkgood" %}checkgood{% elsif privacycheck[1] contains "checkpass" %}checkpass{% else %}checkfail{% endif %}">
+        <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains "checkgood" %}checkgood{% elsif privacycheck[1] contains "checkpass" %}checkpass{% elsif privacycheck[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">
           <p>{% translate {{privacycheck[1]}} %}</p>
           <p>{% translate {{privacycheck[1]}}txt %}</p>
         </div>
         {% endfor %}
       </div><span></span></div></div>
       {% else %}
-      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><p>{% translate {{check[1]}}txt %}</p><span></span></div></div>
+      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><p>{% translate {{check[1]}}txt %}</p><span></span></div></div>
       {% endif %}{% endfor %}
     </div>
     <p>{% translate {{platform[1].text}} %}</p>
