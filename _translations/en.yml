@@ -172,7 +172,7 @@ en:
     checkfailprivacydisclosureaccount: "Discloses information to a third party"
     checkfailprivacydisclosureaccounttxt: "This service can associate your payments together, log your IP address and know your real identity if you provide personal information like your email, name or banking account."
     checkpassprivacynetworksupporttorproxy: "Tor can be used"
-    checkpassprivacynetworksupporttorproxytxt: "This wallet lets you setup and use Tor as a proxy to prevent attackers or Internet service providers from associating your payments with your IP address."
+    checkpassprivacynetworksupporttorproxytxt: "This wallet lets you setup and use <a href=\"https://www.torproject.org/\">Tor</a> as a proxy to prevent attackers or Internet service providers from associating your payments with your IP address."
     checkfailprivacynetworknosupporttor: "Tor not supported"
     checkfailprivacynetworknosupporttortxt: "This wallet does not let you use Tor to prevent attackers or Internet service providers from associating your payments with your IP address."
     educate: "Take time to educate yourself"
