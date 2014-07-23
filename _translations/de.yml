@@ -111,6 +111,7 @@ de:
     walletbitcoinqt: "Bitcoin Core ist ein kompletter Bitcoin-Client und bildet das Rückgrat des Netzwerks. Er bietet ein Höchstmaß an Sicherheit, Privatsphäre und Stabilität. Er hat allerdings weniger Funktionen und benötigt viel Festplatten- und Arbeitsspeicher."
     walletmultibit: "MultiBit ist ein leichtgewichtiger Client mit Schwerpunkt auf Geschwindigkeit und einfacher Nutzbarkeit. Er synchronisiert sich mit dem Netzwerk und ist in wenigen Minuten einsatzbereit. MultiBit unterstützt verschiedene Sprachen. Er ist eine gute Wahl für nicht-technische Nutzer."
     wallethive: "Hive ist eine schnelle, integrierte und nutzerfreundliche Bitcoin Wallet für Mac OS X. Mit dem Focus auf Benutzerfreundlichkeit, ist Hive in viele Sprachen übersetzt und bietet Apps, die es einfach machen, mit Ihren favorisierten Bitcoin-Service oder Händler zu interagieren."
+    wallethive-android: "Hive ist eine Standalone-Wallet für Android, die keine externen Server oder Benutzerkonten benötigt. Der Focus liegt auf Benutzerfreundlichkeit; dennoch wird ein Umfang an erweiterten Funktion, so wie Touch-to-Pay via NFC oder sichere Zahlungen über Bluetooth geboten. Hive Android ist durch Plugins erweiterbar"
     walletarmory: "Armory ist ein erweiterter Bitcoin-Client, der Funktionalitäten für Bitcoin-Power-User ergänzt. Er bietet viele Backup- und Verschlüsselungsfunktionen und ermöglicht sicheres Speichern auf Offline-Rechnern."
     walletelectrum: "Electrum ist auf Geschwindigkeit und Einfachheit fokussiert und benötigt wenig Ressourcen. Es verwendet entfernte Server um die kompliziertesten Teile des Bitcoin-Systems zu übernehmen und ermöglicht es, mit einer geheimen Phrase wieder Zugriff auf eine Wallet zu bekommen."
     walletbitcoinwallet: "Bitcoin Wallet ist einfach zu verwenden und zuverlässig, gleichzeitig aber sicher und schnell. Der Fokus ist auf Dezentralisierung und Zero Trust gerichtet: Kein zentraler Dienst wird für Bitcoin-bezogene Aktionen benötigt. Die App ist eine gute Wahl für technisch nicht versierte Menschen. Auch verfügbar für BlackBerry OS."
@@ -132,10 +133,7 @@ de:
     pagetitle: "Bitcoin Entwicklung"
     summary: "Finden Sie mehr Information über die gegenwärtige Spezifikation, Software und Entwickler."
     spec: "Dokumentation"
-    spectxt: "Wenn Sie an weiteren technischen Details über Bitcoin interessiert sind, sind diese Dokumente ein guter Startpunkt."
-    speclink1: "<a href=\"/bitcoin.pdf\">Bitcoin: Ein elektronisches Bezahlsystem auf Peer-to-Peer-Basis</a>"
-    speclink2: "<a href=\"https://en.bitcoin.it/wiki/Protocol_rules\">Protokoll-Regeln</a>"
-    speclink3: "<a href=\"https://en.bitcoin.it/wiki/Category:Technical\">Bitcoin Wiki</a>"
+    spectxt: "Falls Sie daran interessiert sind mehr über die technischen Details von Bitcoin zu erfahren und wie man existierende Tools und APIs verwendet, dann wird empfohlen bei der <a href=\"/en/developer-documentation\">Dokumentation für Entwickler</a> zu beginnen."
     coredev: "Haupt-Entwickler"
     disclosure: "Verantwortungsbewusste Aufdeckung"
     disclosuretxt: "Falls sie eine Schwachstelle im Zusammenhang mit Bitcoin finden; können nichtkritische Schwachstellen in Englisch an einen der Hauptentwickler gemailt oder an die oben erwähnte private Mailingliste gesendet werden. Ein Beispiel für eine nichtkritische Schwachstelle wäre ein nur mit extremen Kosten durchführbare Denial-of-Service-Angriff. Kritische Schwachstellen, die zu heikel für eine unverschlüsselte Email sind, sollten mit deren jeweiligen PGP Schlüssel(n) verschlüsselt an einen oder mehrere Hauptentwickler gesendet werden."
@@ -539,7 +537,7 @@ de:
     experimental: "Bitcoin ist noch experimentell"
     experimentaltxt: "Bitcoin ist eine experimentelle neue Währung, und wird aktiv weiterentwickelt. Auch wenn es mit steigender Nutzung immer weniger experimentell wird, sollten Sie bedenken, dass Bitcoin eine neue Erfindung ist, die Ideen verfolgt, die vorher nie ausprobiert wurden. Daher kann die Zukunft von niemandem vorhergesagt werden."
     tax: "Steuern und Regulierung"
-    taxtxt: "Bitcoin ist keine offizielle Währung. Allerdings sehen die meisten Gesetzgeber immer noch Einkommen-, Umsatz- und Lohnsteuer vor, sowie Kapitalertragssteuern auf alle Anlagen, inklusive Bitcoin. Es liegt in Ihrer Verantwortung sicherzustellen, dass Sie eventuell erforderliche Steuern bezahlen und andere von Ihrer Regierung und / oder Gemeinde beschlossenen rechtlichen oder regulatorischen Erlässe einhalten."
+    taxtxt: "Bitcoin ist keine offizielle Währung. Allerdings sehen die meisten Gesetzgeber immer noch Einkommen-, Umsatz- und Lohnsteuer vor, sowie Kapitalertragssteuern auf alle Anlagen, inklusive Bitcoin. Es liegt in Ihrer Verantwortung sicherzustellen, dass Sie <a href=\"http://bitlegal.io/\">eventuell erforderliche Steuern bezahlen</a> und andere von Ihrer Regierung und/oder Gemeinde beschlossenen rechtlichen oder regulatorischen Erlässe einhalten."
   layout:
     menu-about-us: "Über bitcoin.org"
     menu-bitcoin-for-businesses: Unternehmen
