@@ -93,6 +93,12 @@ function getWindowX(){
 return (window.innerWidth)?window.innerWidth:document.documentElement.clientWidth;
 }
 
+function isMobile(){
+//Return true if the mobile CSS stylesheet is used.
+if(getStyle(document.getElementById('detectmobile'),'display')!='none')return true;
+return false;
+}
+
 function addClass(node,data){
 //Add class to node.
 var cl=node.className.split(' ');
@@ -107,6 +113,29 @@ var ocl=node.className.split(' ');
 var ncl=[];
 for(var i=0,n=ocl.length;i<n;i++){if(ocl[i]!=data)ncl.push(ocl[i]);}
 node.className=ncl.join(' ');
+}
+
+function scrollToNode(t){
+//Scroll to any node on the page.
+if(document.body.getAttribute('data-scrollstatus')!=null){clearInterval(document.body.getAttribute('data-scrollstatus'));document.body.removeAttribute('data-scrollstatus');}
+var delay=800;
+var py=getPageYOffset();
+var fy=getTop(t)
+var dy=fy-py;
+var x=getPageXOffset();
+var oti=new Date().getTime();
+document.body.setAttribute('data-scrollstatus',setInterval(function(){
+	var nti=new Date().getTime()-oti;
+	if(nti>=delay){
+		window.scrollTo(x,fy);
+		clearInterval(document.body.getAttribute('data-scrollstatus'));
+		document.body.removeAttribute('data-scrollstatus');
+		return;
+	}
+	var p=nti/delay;
+	p=p*(1+(0.5*(1-p)));
+	window.scrollTo(x,(py+(dy*p)).toFixed(0));
+},10));
 }
 
 function supportsSVG(){
@@ -131,30 +160,6 @@ for(var i=0,nd=document.getElementsByTagName('*'),n=nd.length;i<n;i++){
 	if(/\.svg/.test(getStyle(nd[i],'background-image')))nd[i].style.backgroundImage=getStyle(nd[i],'background-image').replace('.svg','.png');
 	if(/\.svg/.test(getStyle(nd[i],'background')))nd[i].style.background=getStyle(nd[i],'background').replace('.svg','.png');
 }
-}
-
-function walletShow(e){
-//Replace a wallet disclaimer by the wallet description in the "Choose your wallet" page when the user click the button.
-var t=getEventTarget(e);
-while(t.getAttribute('data-id')===null||t.getAttribute('data-id')=='')t=t.parentNode;
-var d=t.getElementsByTagName('DIV')[0];
-var s=document.getElementById(t.getAttribute('data-id')).getElementsByTagName('DIV')[0];
-cancelEvent(e);
-//Add a delay before replacing wallet bubble for mobiles to prevent accidental clicks
-setTimeout(function(){
-	d.getElementsByTagName('H2')[0].innerHTML=s.getElementsByTagName('H2')[0].innerHTML;
-	d.getElementsByTagName('SPAN')[0].innerHTML=s.getElementsByTagName('SPAN')[0].innerHTML;
-	d.getElementsByTagName('P')[0].innerHTML=s.getElementsByTagName('P')[0].innerHTML;
-	d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].innerHTML=s.getElementsByTagName('P')[1].getElementsByTagName('A')[0].innerHTML;
-	d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].href=s.getElementsByTagName('P')[1].getElementsByTagName('A')[0].href;
-	d.getElementsByTagName('P')[1].getElementsByTagName('A')[0].onclick='';
-	d.className='';
-	//Workaround for browsers that don't handle re-rendering class styles and svg (they have backgroundImage hardcoded in HTML)
-	for(var ii=0,nn=d.childNodes.length;ii<nn;ii++){if(d.childNodes[ii].nodeType==1&&d.childNodes[ii].style.backgroundImage!='')d.childNodes[ii].style.backgroundImage=d.childNodes[ii].style.backgroundImage.replace('bubblewarn','bubble').replace('bubbleinfo','bubble');}
-	for(var ii=0,as=d.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==d.parentNode){var dd=as[ii];break;}}
-	for(var ii=0,as=s.parentNode.getElementsByTagName('A'),nn=as.length;ii<nn;ii++){if(as[ii].parentNode==s.parentNode){var ss=as[ii];break;}}
-	dd.innerHTML=ss.innerHTML;
-},1);
 }
 
 function mobileMenuShow(e){
@@ -259,34 +264,6 @@ function freenodeShow(e){
 //Display freenode chat window on the "Development" page at user request.
 document.getElementById('chatbox').innerHTML='<iframe style=width:98%;min-width:400px;height:600px src="http://webchat.freenode.net/?channels=bitcoin-dev" />';
 cancelEvent(e);
-}
-
-function mobileWHover(e){
-//Display wallet bubbles for mobiles
-var div=t=getEventTarget(e);
-while(div.nodeName!='DIV')div=div.parentNode;
-//Hide bubbles when clicking outside of a bubble
-if(div.className.indexOf('previewmobile')!==-1)mobileWHide();
-//Show bubble when clicking on their icon
-if(div.parentNode.className.indexOf('previewmobile')!==-1){
-	mobileWHide();
-	t=div.getElementsByTagName('DIV')[0];
-	t.style.opacity=0;
-	t.style.display='block';
-	//Add a delay before displaying wallet for mobiles to prevent accidental clicks
-	setTimeout(function(){t.style.opacity=100;},1);
-	//Add event listener to hide bubble on scroll
-	addEvent(window,'scroll',mobileWHide);
-}
-}
-  
-function mobileWHide(){
-//Hide all wallet bubbles on mobiles
-for(var i=0,nds=document.getElementsByTagName('DIV'),n=nds.length;i<n;i++){
-	if(nds[i].parentNode&&nds[i].parentNode.parentNode&&nds[i].parentNode.parentNode.className.indexOf('previewmobile')!==-1){
-	nds[i].style.opacity=0;nds[i].style.display='none';}
-}
-removeEvent(window,'scroll',mobileWHide);
 }
 
 function updateToc(){
@@ -417,6 +394,136 @@ function disclaimerAutoClose(){
 //Auto close temporary disclaimer in devel-docs if session says so
 if(typeof(Storage)==='undefined')return;
 if(sessionStorage.getItem('develdocdisclaimerclose')==='1')disclaimerClose();
+}
+
+function walletListener(e){
+//Listen events on the wallets categories menu and hide / show / select wallets accordingly.
+var t=getEventTarget(e);
+switch(e.type){
+case 'click':
+	if(t.nodeName=='A')walletSelectPlatform(t);
+break;
+case 'mouseover':
+	if(t.nodeName=='A')walletShowPlatform(t.getAttribute('data-walletcompat'));
+	if(t.nodeName=='A')clearTimeout(document.getElementById('walletmenu').getAttribute('data-wallettimeout'));
+break;
+case 'mouseout':
+	clearTimeout(document.getElementById('walletmenu').getAttribute('data-wallettimeout'));
+	document.getElementById('walletmenu').setAttribute('data-wallettimeout',setTimeout(walletFallbackPlatform,100));
+break;
+}
+}
+
+function walletSelectPlatform(t){
+//Select wallets platform when the mouse clicks on the menu.
+var p=t;
+while(p.nodeName!='DIV')p=p.parentNode;
+if(t.parentNode.parentNode.parentNode.nodeName!='DIV'){
+	for(var i=0,nds=p.getElementsByTagName('A'),n=nds.length;i<n;i++){
+		nds[i].removeAttribute('data-select');
+		removeClass(nds[i].parentNode,'select');
+	}
+	t.setAttribute('data-select','1');
+	addClass(t.parentNode,'select');
+}
+if(isMobile()&&t.parentNode.getElementsByTagName('UL').length==0){
+	setTimeout(function(){scrollToNode(document.getElementById('wallets'));},10);
+}
+}
+
+function walletFallbackPlatform(){
+//Show back wallets for selected platform when the mouse leaves the menu without selecting another platform.
+var select=null;
+var active=null;
+for(var i=0,nds=document.getElementById('walletmenu').getElementsByTagName('A'),n=nds.length;i<n;i++){
+	if(nds[i].getAttribute('data-select')=='1')select=nds[i];
+	if(nds[i].getAttribute('data-active')=='1')active=nds[i];
+}
+if(select===null||active===null)return;
+var selectp=select;
+var activep=active;
+while(selectp.parentNode.parentNode.nodeName!='DIV')selectp=selectp.parentNode;
+while(activep.parentNode.parentNode.nodeName!='DIV')activep=activep.parentNode;
+if(selectp!=activep)return;
+walletShowPlatform(select.getAttribute('data-walletcompat'));
+}
+
+function walletShowPlatform(platform){
+//Show wallets for given platform in the menu.
+for(var i=0,nds=document.getElementById('walletmenu').getElementsByTagName('A'),n=nds.length;i<n;i++){
+	nds[i].removeAttribute('data-active');
+	removeClass(nds[i].parentNode,'active');
+	if(nds[i].getAttribute('data-walletcompat')!=platform)continue;
+	var t=nds[i];
+}
+t.setAttribute('data-active','1');
+addClass(t.parentNode,'active');
+if(t.parentNode.parentNode.parentNode.nodeName=='LI')addClass(t.parentNode.parentNode.parentNode,'active');
+for(var i=0,nds=document.getElementById('wallets').childNodes,n=nds.length;i<n;i++){
+	if(nds[i].nodeType!=1)continue;
+	if(nds[i].getAttribute('data-walletcompat').indexOf(platform)!==-1)removeClass(nds[i],'disabled');
+	else addClass(nds[i],'disabled');
+	var id=nds[i].id.replace('wallet-','');
+	if(!document.getElementById('wallet-'+id+'-'+platform))continue;
+	nds[i].replaceChild(document.getElementById('wallet-'+id+'-'+platform).getElementsByTagName('DIV')[0].cloneNode(true),nds[i].getElementsByTagName('DIV')[0]);
+}
+}
+
+function walletRotate(){
+//Rotate wallets once a day.
+var ar={1:[],2:[],3:[],4:[]}
+for(var i=0,nds=document.getElementById('wallets').childNodes,n=nds.length;i<n;i++){
+	if(nds[i].nodeType!=1)continue;
+	ar[parseInt(nds[i].getAttribute('data-walletlevel'))].push(nds[i]);
+}
+var sum=Math.floor(new Date()/86400000);
+for(var k in ar){
+	var pre=ar[k][ar[k].length-1].nextSibling;
+	for(i=0,n=sum%ar[k].length;i<n;i++)ar[k][i].parentNode.insertBefore(ar[k][i],pre);
+}
+}
+
+function walletMobileShow(e){
+//Show selected wallet on mobiles and scroll to it.
+var t=getEventTarget(e);
+if(t.id=='wallets')return;
+while(t.parentNode.id!='wallets')t=t.parentNode;
+t=t.cloneNode(true);
+var p=document.getElementById('walletsmobile');
+if(getStyle(p,'display')=='none')return;
+p.innerHTML='';
+p.appendChild(t);
+scrollToNode(p);
+}
+
+function walletDisabledShow(e){
+//Show disabled wallet on click and disable wallet when mouse leaves the wallet.
+var t=getEventTarget(e);
+while(t.nodeName!='DIV'&&t.parentNode.id!='wallets'){
+	if(t.id=='wallets')return;
+	t=t.parentNode;
+}
+if(t.className.indexOf('disabled')===-1)return;
+removeClass(t,'disabled');
+addEvent(t,'mouseover',walletDisabledHide);
+addEvent(t,'mouseout',walletDisabledHide);
+}
+
+function walletDisabledHide(e){
+//Disable wallet when the mouse leaves the wallet bubble.
+var t=getEventTarget(e);
+while(t.nodeName!='DIV'||t.parentNode.id!='wallets'){
+	if(t.id=='wallets')return;
+	t=t.parentNode;
+}
+clearTimeout(t.getAttribute('data-disabletimeout'));
+if(e.type=='mouseover')return;
+t.setAttribute('data-disabletimeout',setTimeout(function(){
+	addClass(t,'disabled');
+	t.removeAttribute('data-disabletimeout');
+	removeEvent(t,'mouseout',walletDisabledHide);
+	removeEvent(t,'mouseover',walletDisabledHide);
+},1));
 }
 
 function makeEditable(e){

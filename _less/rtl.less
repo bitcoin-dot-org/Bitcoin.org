@@ -83,42 +83,11 @@ h2 .rssicon{
 .downloadbox div{
 	text-align:right;
 }
-.previewrow{
-	text-align:right;
-}
-.previewrow>div{
-	margin-right:auto;
-	margin-left:15px;
-}
-.previewrow>div>a{
-	line-height:1.2em;
-	font-family:Arial, sans-serif;
-}
-.previewrow>div:first-child+div+div,
-.previewrow>div:first-child+div+div+div+div+div{
-	margin-left:0;
-}
-.previewrow>div>div>div>span{
-	right:auto;
-	left:30px;
-}
-.previewrow>div>div>div>h2{
-	text-align:right;
-	font-family:Arial, sans-serif;
-}
-.previewrow>div>div>div>h2:first-child+span+p{
-	line-height:1.5em;
-}
 .index a,
 .index a:link,
 .index a:active,
 .index a:visited{
 	line-height:2em;
-}
-.pleftfloat img{
-	float:right;
-	margin-right:auto;
-	margin-left:10px;
 }
 .resources{
 	text-align:right;
@@ -224,6 +193,90 @@ h2 .rssicon{
 .tablehalf p{
 	text-align:right;
 }
+
+.walletmenu ul{
+	text-align:right;
+}
+.walletmenu ul li a{
+	padding:8px 42px 5px 10px;
+}
+.walletmenu ul li{
+	font-family:'DroidNaskh', sans-serif;
+	background-position:right 6px;
+}
+.walletmenu ul li.active,
+.walletmenu ul li.select{
+	background-position:right -62px;
+}
+.walletmenu ul li ul{
+	left:auto;
+	right:0;
+}
+.walletmenu ul li ul li.select a{
+	background-position:8px center;
+}
+
+.wallets{
+	text-align:right;
+}
+.wallets>div>a,
+.wallets>div>a:visited,
+.wallets>div>a:link,
+.wallets>div>a:active{
+	line-height:1.2em;
+}
+.wallets>div>div>h2:first-child+div{
+	margin-left:0;
+	margin-right:10px;
+}
+.wallets>div>div>h2:first-child+div+div{
+	margin:2px 0 8px 0;
+}
+.wallets>div>div>h2:first-child+div+div>a,
+.wallets>div>div>h2:first-child+div+div>a:visited,
+.wallets>div>div>h2:first-child+div+div>a:link,
+.wallets>div>div>h2:first-child+div+div>a:active{
+	padding:0 8px;
+}
+.wallets>div>div>h2:first-child+div+div+div+p{
+	padding-right:0;
+	padding-left:5px;
+}
+.wallets>div>div>h2:first-child+div+div+div>div{
+	padding:5px 22px 5px 0;
+	background-position:right 4px;
+}
+.wallets>div>div>h2:first-child+div+div+div>div>div{
+	margin-left:0;
+	margin-right:5px;
+}
+.wallets>div>div>h2:first-child+div+div+div>div>div>span{
+	left:0;
+	right:15px;
+}
+.wallets>div>div>h2:first-child+div+div+div>div>div>div,
+.wallets>div>div>h2:first-child+div+div+div>div>div>p{
+	left:auto;
+	right:30px
+}
+.wallets>div>div>h2:first-child+div+div+div+p+div{
+	right:auto;
+	left:20px;
+}
+.wallets .checkgood>div>span{
+	background-image:url(/img/checkbubble_pass_rtl.svg);
+}
+.wallets .checkpass>div>span{
+	background-image:url(/img/checkbubble_pass_rtl.svg);
+}
+.wallets .checkfail>div>span{
+	background-image:url(/img/checkbubble_fail_rtl.svg);
+}
+
+.warningicon{
+	margin-right:0;
+	margin-left:6px;
+}
 	
 /*Override UbuntuBold by Droid Naskh*/
 
@@ -255,6 +308,21 @@ h2 .rssicon{
 		border-right:0;
 		padding-right:0;
 		margin-right:0;
+	}
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div{
+		padding:8px 22px 8px 0;
+		background-position:right 7px;
+	}
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div:hover>div{
+		margin-right:0;
+	}
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div>div>div,
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div>div>p{
+		left:0;
+		right:-20px;
+	}
+	.walletsdisclaimer p{
+		text-align:right;
 	}
 	.download{
 		text-align:right;
