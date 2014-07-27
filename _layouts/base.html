@@ -89,7 +89,7 @@
     <div class="footermenu">
     <a href="/en/alerts">Network Status</a>
     {% case page.lang %}
-    {% when 'fa' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
+    {% when 'fa' or 'pl' or 'tr' or 'zh_TW' %}
     <a href="/en/legal">Legal</a>
     {% else %}
     <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
