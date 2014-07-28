@@ -80,8 +80,6 @@ tr:
     securitytext: "Güvenliğin çoğu kısmı istemci protokolü ve Bitcoin ağı tarafından halledilir. Sahicilik ise gizli anahtarlar yoluyla onaylanır ve iki kat harcamalar Bitcoin ağı tarafından önlenir. Dolayısıyla PCI uygunluğuna da dolandırıcılık tespitine de gerek yoktur. Düzgün çalışan şeyleri seviyoruz, değil mi?"
     micro: "Ucuz mikro ödemeler"
     microtext: "Bitcoin mikro-ödemeler dahil olmak üzere her türlü mali işlem için en düşük maliyet ücretini sunar. Bu şu anlama gelir ki aynı zamanda mali sınırlandırmalardan ötürü daha önce var olması mümkün olmayan yaratıcı online servislerin tasarımı ve uygulanması mümkün olur."
-    serviceslist: "Viki'de <a href=\"https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services\">tüccar servisleri listesini</a> ziyaret edin."
-    apireference: "Veya Bitcoin Core  <a href=\"https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)\">API referansını</a> ve <a href=\"https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list\">API çağrıları listesini</a> okuyun."
   bitcoin-for-individuals:
     title: "Bireyler için Bitcoin - Bitcoin"
     pagetitle: "Bireyler için Bitcoin"
@@ -108,7 +106,7 @@ tr:
     reddit: "Reddit'in Bitcoin topluluğu"
     stackexchange: "Bitcoin StackExchange (Soru & Cevap)"
     irc: "IRC Sohbeti"
-    ircjoin: " <a href=\"http://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">FreeNode'da</a> ORC kanalları."
+    ircjoin: " <a href=\"https://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">FreeNode'da</a> ORC kanalları."
     chanbitcoin: "(Genel Bitcoin'le alakalı)"
     chandev: "(Geliştirme ve teknik)"
     chanotc: "(Tezgahın Üstünden alım-satım)"
@@ -144,10 +142,7 @@ tr:
     walletarmory: "Armory, Bitcoin Core'ün üzerinde çalışan gelişmiş bir Bitcoin istemcisidir. Bitcoin'i çok kullanan, teknik bilgiye sahip kullanıcılar içindir ve çok özelliği vardır. Bir çok yedekleme ve şifreleme biçimi vardır ve çevrimdışı bilgisayarlarda güvenli soğuk-depolama sağlar."
     walletelectrum: "Electrum'un odağı hız ve basitliktir, az kaynak kullanır. Bitcoin sisteminin en karışık parçalarını halleden uzak bilgisayarları kullanır ve cüzdanınızı gizli bir deyimle kurtarmanızı sağlar."
     walletbitcoinwallet: "Bitcoin Wallet, Android ve BlackBerry için hafif bir cep istemcisidir. Bu istemcinin çalışması için herhangi bir çevrimiçi servise bağlanmasına gerek yoktur. QR kod taranması ve NFC ile uyumludur."
-    walletblockchaininfomob: "Blockchain.info cep cihazları için karma ağ cüzdanıdır. blockchain.info'nın ağ cüzdanı yedeklemesi gibi özelliklerinin çoğu vardır."
     walletblockchaininfo: "Blockchain.info kolay kullanılan karma bir cüzdandır. İnternette cüzdanınızın şifreli hâlini saklar ama çözümlenmesi tarayıcınızda olur. Güvenlik sebepleri nedeniyle her zaman tarayıcı eklentisini ve e-posta yedeklemesini kullanmalısınız."
-    walletpaytunia: "Paytunia, Paymium'un desteklediği Bitcoin-central'la çalışan bir cep ağ cüzdanıdır. Cebinizden Bitcoin alım-verimlerine erişmenizi sağlar. iPhone uygulaması vardır ve Android desteği yakında gelecektir."
-    walletbips: "BIPS, birçok ülkeden bitcoin alıp vermenizi sağlar ve WalletBit'ten bir ağ cüzdanı servisidir. Ayrıca soğuk depolama, cüzdan ithalatı ve birçok tüccar aleti özelliği de vardır."
     walletcoinbase: "Coinbase kullanılışı en kolay olmayı amaçlayan bir ağ cüzdanı servisidir. Android ağ cüzdanı uygulaması, tüccar aletleri ve bitcoin alım-verimi için ABD banka hesaplarıyla entegrasyonu vardır."
     walletdownload: "<a href=\"#download#\">İndir</a>"
     walletvisit: "Siteye git"
@@ -181,15 +176,9 @@ tr:
     latestversion: "Son sürüm:"
     download: "Bitcoin Core İndirin"
     downloados: "Veya işletim sisteminizi seçin"
-    downloadwinzip: "Windows için indir (zip)"
-    downloadwinexe: "Windows için indir (exe)"
-    downloadubu: "Ubuntu için indir (PPA)"
-    downloadlin: "Linux için indir (tgz, 32/64-bit)"
-    downloadmac: "Mac OS X için indir"
-    downloadsource: "Kaynak kodu"
     versionhistory: "Yazılım tarihini göster"
-    notelicense: "Bitcoin Core <a href=\"http://opensource.org/licenses/mit-license.php\">MIT lisansı</a> ile yayımlanan toplumsal <a href=\"http://www.fsf.org/about/what-is-free-software\">ücretsiz açık-kaynak</a> bir proje."
-    notesync: "<b>Not</b> : Bitcoin Core'nin ilk senkronizasyonu bir gün kadar sürebilir. Tüm <a href=\"http://blockchain.info/charts/blocks-size\">blok zinciri boyuna</a> yetecek kadar boş alanınız ve bant genişliğiniz olduğundan emin olun."
+    notelicense: "Bitcoin Core <a href=\"http://opensource.org/licenses/mit-license.php\">MIT lisansı</a> ile yayımlanan toplumsal <a href=\"https://www.fsf.org/about/what-is-free-software\">ücretsiz açık-kaynak</a> bir proje."
+    notesync: "<b>Not</b> : Bitcoin Core'nin ilk senkronizasyonu bir gün kadar sürebilir. Tüm <a href=\"https://blockchain.info/charts/blocks-size\">blok zinciri boyuna</a> yetecek kadar boş alanınız ve bant genişliğiniz olduğundan emin olun."
   events:
     title: "Konferanslar ve etkinlikler - Bitcoin"
     pagetitle: "Konferanslar ve etkinlikler"
@@ -219,7 +208,6 @@ tr:
     intro: "Bu sık sık kafa karıştıran bir soru. Hemen açıklayalım!"
     basics: "Yeni bir kullanıcı için temeller"
     basicstxt1: "Yeni bir kullanıcı olarak sadece bilgisayarınıza veya cep telefonunuza yükleyeceğiniz <a href=\"#choose-your-wallet#\">bir cüzdan seçmeniz</a> gerekiyor. Cüzdanınız yüklendiğinde ilk Bitcoin adresinizi oluşturacak ve ne zaman gerekirse yeni adresler oluşturabileceksiniz. Bitcoin adreslerinizden birini arkadaşlarınıza verebilirsiniz ki size ödeme yapsınlar, veya tersi olarak arkadaşlarınız size adreslerini verirlerse siz de onlara ödeme yapabilirsiniz. Aslında mantığı e-postaya benziyor. Yani artık yapmanız gereken tek şey birkaç bitcoin almanız ve <a href=\"#secure-your-wallet#\">onları güvende tutmanız</a>. Bitcoin kullanmaya başlamanız için teknik detayları anlamak zorunda değilsiniz. "
-    basicstxt2: "Fakat, daha fazlasını öğrenmek isterseniz, okumaya devam edin!"
     balances: "Bakiyeler<a class=\"titlelight\"> - blok zinciri</a>"
     balancestxt: "Blok zinciri tüm Bitcoin ağının dayandığı bir <b>genel toplumsal işlem günlüğü</b>dür. Tüm onaylanmış işlemler istisnasız blok zincirine dahil olur. Bu şekilde yeni işlemlerde harcanan bitcoinlerin harcayıcıya ait olduğundan emin olunur. Blok zincirinin bütünlüğü ve kronolojik sırası <a href=\"#vocabulary##[vocabulary.cryptography]\">kriptografi</a> ile desteklenir."
     transactions: "İşlemler<a class=\"titlelight\"> - kişisel anahtarlar</a>"
@@ -301,7 +289,7 @@ tr:
     offlinetxtxt2: "Çevrimiçi bilgisayarda yeni bir işlem oluşturun ve bir USB anahtarına kaydedin."
     offlinetxtxt3: "İşlemi çevrimdışı bilgisayarla imzalayın."
     offlinetxtxt4: "İmzalı işlemi çevrimiçi bilgisayarla gönderin."
-    offlinetxtxt5: "Çevrimiçi bilgisayar işlem imzalayamadığı için ele geçirilmesi durumunda ondan para çekilemez. <a href=\"http://bitcoinarmory.com/about/using-our-wallet/#offlinewallet\">Armory</a> kullanarak çevrimdışı işlem imzalayabilirsiniz."
+    offlinetxtxt5: "Çevrimiçi bilgisayar işlem imzalayamadığı için ele geçirilmesi durumunda ondan para çekilemez. <a href=\"https://bitcoinarmory.com/about/using-our-wallet/#offlinewallet\">Armory</a> kullanarak çevrimdışı işlem imzalayabilirsiniz."
     hardwarewallet: "Donanım cüzdanları"
     hardwarewallettxt: "Donanım cüzdanlar, yüksek güvenlik ve kullanılabilirlik arasında dengededir. Sadece ve sadece kökten cüzdan olmak amacıyla tasarlanmışlardır. Herhangi bir yazılım yüklenemez, dolayısıyla bilgisayar açıklarına ve online hırsızlara karşı güvenlidirler. Yedeklenebildikleri için aleti kaybetseniz de sermayenizi kaybetmezsiniz. "
     hardwarewalletsoon: "An itibarıyla hiç bir donanım cüzdanı üretimde değildir ama yakında geliyorlar:"
@@ -384,12 +372,6 @@ tr:
     experimentaltxt: "Bitcoin hâla etkin gelişim aşamasında olan deneysel bir para birimidir. Kullanımı arttıkça deneyselliği azalsa da unutmayın ki Bitcoin önceden denenmemiş fikirlere dalıyor. Bu yüzden geleceğini kimse tahmin edemez."
     tax: "Devlet vergilerini unutmayın"
     taxtxt: "Bitcoin resmi bir para birimi değildir. Buna rağmen, çoğu yetki alanı halen gelir,  satışlar, maaş bordrosu ve hisse senedi gibi bir değeri olan herşeyden vergi ödemenizi zorunlu kılar, buna Bitcoin de dahildir."
-  images:
-    glance: Bir bakışta Ağ
-    you: Siz
-    friend: Dostunuz
-    blockchain: Blok zinciri
-    blockchaintxt: (paylaşılan halka açık işlem günlüğü)
   layout:
     menu-faq: Hakkında
     menu-about-us: "Bitcoin.org hakkında"
@@ -399,7 +381,6 @@ tr:
     menu-community: Topluluk
     menu-development: Geliştirme
     menu-events: Etkinlikler
-    menu-foundation: Dernek
     menu-getting-started: "Yeni başlamak"
     menu-how-it-works: "Nasıl Çalışır"
     menu-innovation: Yenilik

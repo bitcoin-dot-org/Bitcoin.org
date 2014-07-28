@@ -4,20 +4,8 @@ lang: en
 id: index
 title: Bitcoin
 ---
-<script>
-//Auto redirect to the appropriate language
-var langs={};{% for lang in site.langs %}{% if lang[0] != page.lang %}langs['{{ lang[0] }}']=true;{% endif %}{% endfor %}
-var lang=(navigator.language)?navigator.language:navigator.userLanguage;
-lang=lang.split('_')[0];
-if(!langs[lang])lang='en';
-setTimeout(function(){window.location.href='/'+lang+'/';},200);
-</script>
 <p class="mainsummary">{% translate listintro %}</p>
-{% if page.lang == 'en' %}
 <div class="mainvideo"><iframe src="//www.youtube.com/embed/Gc2en3nHxA4?rel=0&showinfo=0&wmode=opaque{% if page.lang != 'en' %}&cc_load_policy=1&hl={{ page.lang }}&cc_lang_pref={{ page.lang }}{% endif %}" frameborder="0" allowfullscreen></iframe></div>
-{% else %}
-<div class="mainvideo"><iframe src="//www.youtube.com/embed/Um63OQz3bjo?rel=0&showinfo=0&wmode=opaque{% if page.lang != 'en' %}&cc_load_policy=1&hl={{ page.lang }}&cc_lang_pref={{ page.lang }}{% endif %}" frameborder="0" allowfullscreen></iframe></div>
-{% endif %}
 <div class="mainlist">
   <div><div><img src="/img/main_ico_instant.svg" alt="Icon"><div>{% translate list1 %}</div></div></div>
   <div><div><img src="/img/main_ico_worldwide.svg" alt="Icon"><div>{% translate list2 %}</div></div></div>

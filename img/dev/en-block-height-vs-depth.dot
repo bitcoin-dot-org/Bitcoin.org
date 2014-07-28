@@ -1,0 +1,39 @@
+digraph {
+size=6.25;
+rankdir=BT
+node [ shape = "box" ]
+
+subgraph cluster_height {
+    h0 [ label = "Block 0" ]
+    h1 [ label = "Block 1" ]
+    h100 [ label = "Block 100" ]
+    h101 [ label = "Block 101" ]
+    h102 [ label = "Block 102" ]
+
+    h0 -> h1
+    h1 -> h100 [ style = dotted ];
+    h100 -> h101 -> h102
+
+    label = "Block Height"
+    labelloc = b;
+}
+
+subgraph cluster_depth {
+    edge [ dir = "back" ];
+
+    d0 [ label = "Depth 101" ]
+    d1 [ label = "Depth 100" ]
+    d100 [ label = "Depth 3" ]
+    d101 [ label = "Depth 2" ]
+    d102 [ label = "Depth 1" ]
+
+    d0 -> d1
+    d1 -> d100 [ style = dotted];
+    d100 -> d101 -> d102
+
+    label = "Block Depth"
+    labelloc = b;
+}
+
+label = "Block Height Compared\nTo Block Depth"
+}

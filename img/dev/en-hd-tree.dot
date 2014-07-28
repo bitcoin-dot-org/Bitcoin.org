@@ -1,0 +1,66 @@
+digraph extended {
+
+size=6.25;
+rankdir=LR;
+penwidth=1.75;
+node [ penwidth = 1.75, shape = "box" ];
+edge [ penwidth = 1.75, style = "dashed" ];
+nodesep=0.15;
+splines = ortho;
+ranksep = 0.70;
+
+
+subgraph cluster_0p {
+    m0p [ label = "m/0'" ];
+    M0p [ label = "M/0'" ];
+    m0p -> M0p [ constraint = false ];
+
+    label = "Hardened"
+}
+
+
+// DEPTH 1
+subgraph cluster_0p_0 {
+    m0p_0 [ label = "m/0'/0" ];
+    M0p_0 [ label = "M/0'/0" ];
+    m0p_0 -> M0p_0 [ constraint = false ];
+
+    label = "Normal"
+}
+
+subgraph cluster_0p_1p {
+    m0p_1p [ label = "m/0'/1'" ];
+    M0p_1p [ label = "M/0'/1'" ];
+    m0p_1p -> M0p_1p [ constraint = false ];
+
+    label = "Hardened";
+}
+
+subgraph cluster_0p_0_0 {
+    m0p_0_0 [ label = "m/0'/0/0" ];
+    M0p_0_0 [ label = "M/0'/0/0" ];
+    m0p_0_0 -> M0p_0_0 [ constraint = false ];
+
+    label = "Normal"
+}
+
+subgraph cluster_0p_1p_0 {
+    m0p_1p_0 [ label = "m/0'/1'/0" ];
+    M0p_1p_0 [ label = "M/0'/1'/0" ];
+    m0p_1p_0 -> M0p_1p_0 [ constraint = false ];
+
+    label = "Normal"
+}
+
+
+m0p -> m0p_0;
+m0p -> m0p_1p;
+
+m0p_0 -> m0p_0_0;
+M0p_0 -> M0p_0_0 [ label = "Normal extended\npublic keys\ncan derive child\npublic keys" ];
+m0p_1p -> m0p_1p_0 [ label = "Only derivation from\nextended private keys\nis possible for\nhardened keys" ];
+
+
+label = "Hierarchical Deterministic Key Derivation"
+
+}

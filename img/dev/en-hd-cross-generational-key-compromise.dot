@@ -1,0 +1,75 @@
+digraph extended {
+
+size=6.25;
+rankdir=LR;
+penwidth=1.75;
+node [ fontname="Sans", penwidth = 1.75, shape = "box" ];
+edge [ fontname="Sans", penwidth = 1.75, style = "" ];
+graph [ fontname="Sans" ];
+nodesep=0.15;
+splines = false;
+ranksep = 0.7;
+
+subgraph cluster_parent {
+    parent_private_key [ label = "Private", style = "" ];
+    parent_chain_code [ label = "Chain", style = "filled" ];
+    parent_public_key [ label = "Public", style = "filled" ];
+
+    label = "Parent\n "
+}
+
+subgraph cluster_child {
+    child_private_key  [ label = "Private" ];
+    child_chain_code [ label = "Chain" ];
+    child_public_key [ label = "Public" ];
+
+    label = "Child\n "
+}
+
+subgraph cluster_grandchild {
+    grandchild_private_key [ label = "Private", style = "filled" ];
+    grandchild_chain_code [ label = "Chain" ];
+    grandchild_public_key [ label = "Public" ];
+
+    label = "Grandchild\n "
+}
+
+subgraph cluster_greatgrandchild {
+    greatgrandchild_private_key [ label = "Private" ];
+    greatgrandchild_chain_code [ label = "Chain" ];
+    greatgrandchild_public_key [ label = "Public" ];
+
+    label = "Great-\nGrandchild"
+}
+
+
+parent_public_key -> child_public_key;
+parent_public_key -> child_chain_code;
+parent_chain_code -> child_chain_code [ label = "Normal Child\nKey Derivation", weight = 100 ];
+parent_chain_code -> child_public_key;
+parent_chain_code -> child_private_key [ style = "invis" ];
+parent_private_key -> child_private_key [ dir = "back", style = "", label = "Parent Key\nDerivation" ];
+
+parent_chain_code -> parent_private_key [ constraint = false ];
+
+child_private_key -> grandchild_private_key [ dir = "back", style = "" ];
+child_public_key -> grandchild_chain_code;
+child_public_key  -> grandchild_public_key;
+child_chain_code -> grandchild_private_key [ style = "invis" ];
+child_chain_code -> grandchild_public_key;
+child_chain_code -> grandchild_chain_code [ weight = 100 ];
+
+child_chain_code -> child_private_key [ constraint = false ]
+
+grandchild_private_key -> greatgrandchild_private_key;
+grandchild_public_key -> greatgrandchild_chain_code;
+grandchild_public_key  -> greatgrandchild_public_key;
+grandchild_chain_code -> greatgrandchild_private_key;
+grandchild_chain_code -> greatgrandchild_public_key;
+grandchild_chain_code -> greatgrandchild_chain_code [ weight = 100 ];
+
+grandchild_chain_code -> grandchild_private_key [ constraint = false, style = "invis" ]
+greatgrandchild_chain_code -> greatgrandchild_private_key [ constraint = false, style = "invis" ]
+
+label = "Cross-Generational Key Compromise"
+}

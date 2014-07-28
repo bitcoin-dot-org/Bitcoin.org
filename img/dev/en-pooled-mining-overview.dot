@@ -1,0 +1,25 @@
+digraph {
+
+size=6.25;
+rankdir=LR
+node [ shape = "box" ]
+splines = ortho;
+//ranksep = 10;
+nodesep = 0.5;
+
+p2pnetwork [ label = "P2P\nNetwork" ]
+asic0 [ label = "ASIC" ];
+software [ label = "Mining\nSoftware" ]
+pool0 [ label = "Mining\nPool" ];
+
+pool0 -> software [ label = "Prototype\nBlock→" ];
+p2pnetwork -> pool0 [ label = "TXes→" ];
+pool0 -> p2pnetwork [ label = "←Blocks" ];
+
+software -> asic0 [ label = "Block\nHeaders &\nTargets→" ];
+asic0 -> software [ label = "←Headers\nBelow\nTarget" ];
+
+software -> pool0 [ constraint = false, label = "←Shares" ];
+
+label = "Pool-Based Bitcoin Mining Workflow"
+}

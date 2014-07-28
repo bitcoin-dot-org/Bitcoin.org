@@ -1,0 +1,55 @@
+digraph extended {
+
+size=6.25;
+rankdir=LR;
+penwidth=1.75;
+node [ fontname="Sans", penwidth = 1.75, shape = "box" ];
+edge [ fontname="Sans", penwidth = 1.75 ];
+graph [ fontname="Sans" ]
+nodesep=0.15;
+//splines = ortho;
+ranksep = 0.3;
+
+subgraph cluster_parent {
+style = "invis";
+parent_private_key [ label = "Parent Private Key" ];
+parent_chain_code [ label = "Parent Chain Code" ];
+parent_public_key [ label = "Parent Public Key" ];
+}
+
+child_private_key [ label = "Child Private Key" ];
+child_chain_code [ label = "Child Chain Code" ];
+child_public_key [ label = "Child Public Key" ];
+
+i_norm [ label = "Index Number" ];
+hmac [ label = "One-Way Hash", style = "diagonals" ];
+
+rel1 [ label = "Mathematical\nRelationship", shape = "none" ]
+rel2 [ label = "Derived\nMathematical\nRelationship", shape = "none" ]
+
+rel1 -> parent_private_key [ weight = "", dir = "back" ];
+rel1 -> parent_chain_code [ weight = "", style = "invis" ];
+rel1 -> parent_public_key [ weight = "" ];
+
+child_private_key -> rel2 [ ];
+child_chain_code -> rel2 [ style = "invis" ];
+child_public_key -> rel2 [ dir = "back" ];
+
+
+//parent_private_key -> parent_public_key [constraint = false, label = "Math Rel" ];
+//child_private_key -> child_public_key [constraint = false, minlen = 2];
+
+parent_private_key -> child_private_key;
+parent_public_key  -> child_public_key;
+
+parent_public_key -> hmac;
+parent_chain_code -> hmac;
+parent_private_key -> hmac [ style = "invis" ];
+i_norm            -> hmac;
+
+hmac -> child_public_key;
+hmac -> child_private_key;
+hmac -> child_chain_code;
+
+label = " \nNormal Hierarchical Deterministic (HD) Key Derivation (BIP32)"
+}

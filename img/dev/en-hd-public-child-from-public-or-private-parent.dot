@@ -1,0 +1,78 @@
+digraph extended {
+
+size=6.25;
+rankdir=LR;
+penwidth=1.75;
+node [ penwidth = 1.75, shape = "box" ];
+edge [ penwidth = 1.75 ];
+nodesep=0.05;
+splines = ortho;
+ranksep = 0.30;
+
+subgraph cluster_from_private {
+    //style = "invis"
+    //label = "Creation Of Normal Child Extended Keys (Key + Chain Code)\nFrom Parent Extended Keys"
+
+    subgraph cluster_fp_n_parent_extended_key {
+        fp_n_parent_private_key [ label = "Parent Private Key" ];
+        fp_n_parent_chain_code [ label = "Parent Chain Code" ];
+    }
+
+    subgraph cluster_fp_child_extended_key_norm {
+        fp_child_private_key_norm [ label = "Child Private Key" ];
+        fp_child_chain_code_norm [ label = "Child Chain Code" ];
+    }
+    subgraph cluster_fp_child_extended_key_pub {
+        fp_n_child_public_key_norm [ label = "Child Public Key" ];
+        fp_child_chain_code_norm1 [ label = "Child Chain Code" ];
+    }
+
+    fp_hmac_norm [ style = "diagonals", label = "One-Way\nHash" ];
+    fp_i_norm [ label = "i (Normal)" ];
+
+    fp_n_parent_chain_code -> fp_hmac_norm;
+    fp_i_norm -> fp_hmac_norm;
+    fp_hmac_norm -> fp_child_private_key_norm;
+    fp_hmac_norm -> fp_child_chain_code_norm;
+    fp_n_parent_private_key -> fp_child_private_key_norm;
+
+    fp_child_private_key_norm -> fp_n_child_public_key_norm;
+    fp_child_chain_code_norm -> fp_child_chain_code_norm1;
+
+    label = "From Parent Extended Private Key"
+}
+
+equiv [ label = "Equivalent For\nCorresponding\nExtended Keys\nAnd Same\nValue Of i", shape = "none" ];
+equiv -> fp_n_child_public_key_norm [ constraint = false, style = "dashed", dir = "back" ];
+child_public_key_hard -> equiv [ style = "dashed" ];
+
+subgraph cluster_from_public {
+
+    subgraph cluster_h_parent_extended_key {
+        h_parent_public_key [ label = "Parent Public Key" ];
+        h_parent_chain_code [ label = "Parent Chain Code" ];
+    }
+
+    subgraph cluster_child_extended_key_else {
+        child_public_key_hard [ label = "Child Public Key" ];
+        child_chain_code_hard [ label = "Child Chain Code" ];
+    }
+
+    hmac_hard [ style = "diagonals", label = "One-Way\nHash" ];
+    i_hard [ label = "i (Normal)" ];
+
+    h_parent_chain_code -> hmac_hard;
+
+    i_hard -> hmac_hard;
+
+    hmac_hard -> child_public_key_hard;
+    hmac_hard -> child_chain_code_hard;
+    h_parent_public_key -> child_public_key_hard;
+
+    label = "From Parent Extended Public Key"
+}
+
+
+label = "Creation Of Equivalent Child Extended Public Keys From\nEither Private Or Public Parent Keys"
+
+}

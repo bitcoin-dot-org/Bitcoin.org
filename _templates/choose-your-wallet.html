@@ -1,570 +1,523 @@
 ---
 layout: base
 id: choose-your-wallet
+
+wallets:
+- bitcoincore:
+    title: "Bitcoin Core"
+    titleshort: "Bitcoin<br>Core"
+    compat: "desktop windows mac linux"
+    level: 1
+    platform:
+      desktop:
+        text: "walletbitcoinqt"
+        link: "walletdownload"
+        screenshot: "bitcoincore.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkgooddecentralizefullnode"
+          transparency: "checkgoodtransparencydeterministic"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkgoodprivacyimproved"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkpassprivacydisclosurefullnode"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- multibit:
+    title: "MultiBit"
+    titleshort: "MultiBit"
+    compat: "desktop windows mac linux"
+    level: 2
+    platform:
+      desktop:
+        text: "walletmultibit"
+        link: "https://multibit.org"
+        screenshot: "multibit.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+- hive:
+    title: "Hive"
+    titleshort: "Hive"
+    compat: "mobile desktop android mac"
+    level: 2
+    platform:
+      mobile:
+        text: "wallethive-android"
+        link: "https://play.google.com/store/apps/details?id=com.hivewallet.androidclient.wallet"
+        screenshot: "hiveandroid.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      desktop:
+        text: "wallethive"
+        link: "https://hivewallet.com/#native"
+        screenshot: "hivemac.png"
+        os:
+        - mac
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- armory:
+    title: "Armory"
+    titleshort: "Armory"
+    compat: "desktop windows mac linux"
+    level: 2
+    platform:
+      desktop:
+        text: "walletarmory"
+        link: "https://bitcoinarmory.com"
+        screenshot: "armory.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkgooddecentralizefullnode"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkgoodprivacyimproved"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkpassprivacydisclosurefullnode"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- electrum:
+    title: "Electrum"
+    titleshort: "Electrum"
+    compat: "desktop windows mac linux"
+    level: 2
+    platform:
+      desktop:
+        text: "walletelectrum"
+        link: "https://electrum.org"
+        screenshot: "electrum.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurecentralized"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- bitcoinwallet:
+    title: "Bitcoin Wallet"
+    titleshort: "Bitcoin<br>Wallet"
+    compat: "mobile android blackberry"
+    level: 2
+    platform:
+      mobile:
+        text: "walletbitcoinwallet"
+        link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
+        screenshot: "bitcoinwalletandroid.png"
+        os:
+        - android
+        - blackberry
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "walletbitcoinwallet"
+        link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
+        screenshot: "bitcoinwalletandroid.png"
+        os:
+        - android
+        - blackberry
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      blackberry:
+        text: "walletbitcoinwallet"
+        link: "http://appworld.blackberry.com/webstore/content/23952882/"
+        screenshot: "bitcoinwalletandroid.png"
+        os:
+        - android
+        - blackberry
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+- mycelium:
+    title: "Mycelium"
+    titleshort: "Mycelium"
+    compat: "mobile android"
+    level: 3
+    platform:
+      mobile:
+        text: "walletmyceliumwallet"
+        link: "https://play.google.com/store/apps/details?id=com.mycelium.wallet"
+        screenshot: "mycelium.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurecentralized"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- blockchain:
+    title: "Blockchain.info"
+    titleshort: "Blockchain<br>.info"
+    compat: "mobile desktop web android windows mac linux"
+    level: 3
+    platform:
+      mobile:
+        text: "walletblockchaininfo"
+        link: "https://play.google.com/store/apps/details?id=piuk.blockchain.android"
+        screenshot: "blockchainandroid.png"
+        os:
+        - android
+        check:
+          control: "checkpasscontrolhybrid"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      desktop:
+        text: "walletblockchaininfo"
+        link: "https://chrome.google.com/webstore/detail/blockchain/glaohkkooicollgefkkmndjcbblominl"
+        screenshot: "blockchaindesktop.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkpasscontrolhybrid"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+      web:
+        text: "walletblockchaininfo"
+        link: "https://chrome.google.com/webstore/detail/blockchain/glaohkkooicollgefkkmndjcbblominl"
+        screenshot: "blockchaindesktop.png"
+        os:
+        check:
+          control: "checkpasscontrolhybrid"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- bitgo:
+    title: "BitGo"
+    titleshort: "BitGo"
+    compat: "web"
+    level: 3
+    platform:
+      web:
+        text: "walletbitgo"
+        link: "https://www.bitgo.com/"
+        screenshot: "bitgo.png"
+        os:
+        check:
+          control: "checkpasscontrolmulti"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- greenaddress:
+    title: "GreenAddress"
+    titleshort: "Green<br>Address"
+    compat: "mobile desktop web android iphone windows mac linux"
+    level: 3
+    platform:
+      mobile:
+        text: "walletgreenaddress"
+        link: "https://play.google.com/store/apps/details?id=it.greenaddress.cordova"
+        screenshot: "greenaddressandroid.png"
+        os:
+        - android
+        - iphone
+        check:
+          control: "checkpasscontrolmulti"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      desktop:
+        text: "walletgreenaddress"
+        link: "https://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp"
+        screenshot: "greenaddressdesktop.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkpasscontrolmulti"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+      web:
+        text: "walletgreenaddress"
+        link: "https://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp"
+        screenshot: "greenaddressdesktop.png"
+        os:
+        check:
+          control: "checkpasscontrolmulti"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+      iphone:
+        text: "walletgreenaddress"
+        link: "https://itunes.apple.com/us/app/greenaddress/id889740745?ls=1&mt=8"
+        screenshot: "greenaddressandroid.png"
+        os:
+        - android
+        - iphone
+        check:
+          control: "checkpasscontrolmulti"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "walletgreenaddress"
+        link: "https://play.google.com/store/apps/details?id=it.greenaddress.cordova"
+        screenshot: "greenaddressandroid.png"
+        os:
+        - android
+        - iphone
+        check:
+          control: "checkpasscontrolmulti"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+- coinbase:
+    title: "Coinbase"
+    titleshort: "Coinbase"
+    compat: "web"
+    level: 4
+    platform:
+      web:
+        text: "walletcoinbase"
+        link: "https://coinbase.com"
+        screenshot: "coinbase.png"
+        os:
+        check:
+          control: "checkfailcontrolthirdparty"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- coinkite:
+    title: "Coinkite"
+    titleshort: "Coinkite"
+    compat: "web"
+    level: 4
+    platform:
+      web:
+        text: "walletcoinkite"
+        link: "https://coinkite.com"
+        screenshot: "coinkite.png"
+        os:
+        check:
+          control: "checkfailcontrolthirdparty"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 ---
+
 <h1>{% translate pagetitle %}</h1>
-<p class="summarytxt">{% translate summary %}</p>
-<h2>{% translate getstarted %}</h2>
-<ul>
-  <li>{% translate getstarteddesk %}</li>
-  <li>{% translate getstartedmobi %}</li>
-</ul>
+<p class="summary">{% translate pagedesc %}</p>
 
-<h2>{% translate bethenetwork %}</h2>
-<p class="pleftfloat"><img src="/img/icon-be-the-network.svg" alt="Network" />{% translate bethenetworktxt %}</p>
+<div class="walletmenu" id="walletmenu" onmouseover="walletListener(event);" onmouseout="walletListener(event);" onclick="walletListener(event);">
+  <ul onclick="mobileMenuHover(event);">
+    <li class="wallet-mobile">
+    <a data-walletcompat="mobile">{% translate walletcatmobile %}</a>
+    <ul>
+      <li><a data-walletcompat="android">Android</a></li>
+      <li><a data-walletcompat="iphone">iPhone</a></li>
+      <li><a data-walletcompat="blackberry">BlackBerry</a></li>
+    </ul>
+    </li>
+    <li class="wallet-desktop">
+    <a data-walletcompat="desktop">{% translate walletcatdesktop %}</a>
+    <ul>
+      <li><a data-walletcompat="windows">Windows</a></li>
+      <li><a data-walletcompat="mac">Mac</a></li>
+      <li><a data-walletcompat="linux">Linux</a></li>
+    </ul>
+    </li>
+    <li class="wallet-hardware" style="display:none;"><a data-walletcompat="hardware">{% translate walletcathardware %}</a></li>
+    <li class="wallet-web"><a data-walletcompat="web">{% translate walletcatweb %}</a></li>
+  </ul>
+</div>
 
-<div class="previewrow previewmobile" onclick="mobileWHover(event);">
-
-<h2><img class="titleicon" src="/img/ico_mobile.svg" alt="mobile wallets" />{% translate walletmobi %}</h2>
-<p>{% translate walletmobitxt %}</p>
-
-<div>
+<div class="wallets" id="wallets" onclick="walletMobileShow(event);walletDisabledShow(event);">
+{% for wallet in page.wallets %}{% for wallet in wallet %}{% if wallet[1].platform.mobile %}{% assign platform = wallet[1].platform.mobile %}{% elsif wallet[1].platform.desktop %}{% assign platform = wallet[1].platform.desktop %}{% elsif wallet[1].platform.hardware %}{% assign platform = wallet[1].platform.hardware %}{% else %}{% assign platform = wallet[1].platform.web %}{% endif %}
+<div id="wallet-{{ wallet[0] }}" data-walletcompat="{{ wallet[1].compat }}" data-walletlevel="{{ wallet[1].level }}">
+  <span></span>
   <div>
+    <h2>{{ wallet[1].title }}</h2>
+    <div>{% for os in platform.os %}<img src="/img/os/{{ os }}.png" alt="{{ os }}" title="{{ os }}" />{% endfor %}</div>
+    <div>{% if platform.link contains '://' %}<a href="{{ platform.link }}">{% translate walletvisit %}</a>{% else %}{% translate {{platform.link}} %}{% endif %}</div>
     <div>
-      <h2>Bitcoin Wallet</h2>
-      <span><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/blackberry.png" alt="BlackBerry OS" title="BlackBerry OS" /></span>
-      <p>{% translate walletbitcoinwallet %}</p>
-      <p><a href="https://play.google.com/store/apps/details?id=de.schildbach.wallet">{% translate walletvisit %}</a></p>
+      {% for check in platform.check %}{% if check[0] == 'privacy' and platform.privacycheck %}
+      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><div>
+        {% for privacycheck in platform.privacycheck %}
+        <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains "checkgood" %}checkgood{% elsif privacycheck[1] contains "checkpass" %}checkpass{% elsif privacycheck[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">
+          <p>{% translate {{privacycheck[1]}} %}</p>
+          <p>{% translate {{privacycheck[1]}}txt %}</p>
+        </div>
+        {% endfor %}
+      </div><span></span></div></div>
+      {% else %}
+      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><p>{% translate {{check[1]}}txt %}</p><span></span></div></div>
+      {% endif %}{% endfor %}
     </div>
+    <p>{% translate {{platform.text}} %}</p>
+    <div><img src="/img/screenshots/{{ platform.screenshot }}" alt="screenshot"></div>
   </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-bitcoinwallet.png" alt="bitcoin wallet" />Bitcoin<br>Wallet</a>
+  <a href="#" onclick="return false;"><img src="/img/clients/{{ wallet[0] }}.png" alt="{{ wallet[1].title }}" />{{ wallet[1].titleshort }}<span></span></a>
 </div>
-{% case page.lang %}
-{% when 'ar' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
-{% else %}
-<div data-id="mycelium">
-  <div class="walletinfo">
+{% endfor %}{% endfor %}
+</div>
+
+<div class="wallets walletsswitch" id="walletsswitch">
+{% for wallet in page.wallets %}{% for wallet in wallet %}{% for platform in wallet[1].platform %}
+<div id="wallet-{{ wallet[0] }}-{{ platform[0] }}" data-walletcompat="{{ wallet[1].compat }}" data-walletlevel="{{ wallet[1].level }}">
+  <span></span>
+  <div>
+    <h2>{{ wallet[1].title }}</h2>
+    <div>{% for os in platform[1].os %}<img src="/img/os/{{ os }}.png" alt="{{ os }}" title="{{ os }}" />{% endfor %}</div>
+    <div>{% if platform[1].link contains '://' %}<a href="{{ platform[1].link }}">{% translate walletvisit %}</a>{% else %}{% translate {{platform[1].link}} %}{% endif %}</div>
     <div>
-      <h2>{% translate wallettrustinfo %}</h2>
-      <span></span>
-      <p>{% translate wallettrustinfotxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
+      {% for check in platform[1].check %}{% if check[0] == 'privacy' and platform[1].privacycheck %}
+      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><div>
+        {% for privacycheck in platform[1].privacycheck %}
+        <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains "checkgood" %}checkgood{% elsif privacycheck[1] contains "checkpass" %}checkpass{% elsif privacycheck[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">
+          <p>{% translate {{privacycheck[1]}} %}</p>
+          <p>{% translate {{privacycheck[1]}}txt %}</p>
+        </div>
+        {% endfor %}
+      </div><span></span></div></div>
+      {% else %}
+      <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><p>{% translate {{check[1]}}txt %}</p><span></span></div></div>
+      {% endif %}{% endfor %}
     </div>
+    <p>{% translate {{platform[1].text}} %}</p>
+    <div><img src="/img/screenshots/{{ platform[1].screenshot }}" alt="screenshot"></div>
   </div>
-<a href="#" onclick="return false;"><img src="/img/clients/lo-mycelium.png" alt="mycelium wallet" /></a>
+  <a href="#" onclick="return false;"><img src="/img/clients/{{ wallet[0] }}.png" alt="{{ wallet[1].title }}" />{{ wallet[1].titleshort }}<span></span></a>
 </div>
-{% endcase %}
-
-<h2><img class="titleicon" src="/img/ico_desktop.svg" alt="Desktop wallets" />{% translate walletdesk %}</h2>
-<p>{% translate walletdesktxt %}</p>
-
-<div>
-  <div>
-    <div>
-      <h2>Bitcoin Core</h2>
-      <span><img src="/img/os/win.png" alt="Windows" title="Windows" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /><img src="/img/os/osx-uni.png" alt="Mac OS X" title="Mac OS X" /></span>
-      <p>{% translate walletbitcoinqt %}</p>
-      <p>{% translate walletdownload %}</p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-bitcoin.png" alt="Bitcoin Core" />Bitcoin<br>Core</a>
-</div>
-<div>
-  <div>
-    <div>
-      <h2>MultiBit</h2>
-      <span><img src="/img/os/win.png" alt="Windows" title="Windows" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /><img src="/img/os/osx-uni.png" alt="Mac OS X" title="Mac OS X" /></span>
-      <p>{% translate walletmultibit %}</p>
-      <p><a href="https://multibit.org">{% translate walletvisit %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-multibit.png" alt="multibit" />MultiBit</a>
-</div>
-{% case page.lang %}
-{% when 'ar' or 'bg' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
-{% else %}
-<div>
-  <div>
-    <div>
-      <h2>Hive</h2>
-      <span><img src="/img/os/osx-uni.png" alt="Mac OS X" title="Mac OS X" /></span>
-      <p>{% translate wallethive %}</p>
-      <p><a href="https://www.hivewallet.com">{% translate walletvisit %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-hive.png" alt="hive" />Hive</a>
-</div>
-{% endcase %}
-<div>
-  <div>
-    <div>
-      <h2>Armory</h2>
-      <span><img src="/img/os/win.png" alt="Windows" title="Windows" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></span>
-      <p>{% translate walletarmory %}</p>
-      <p><a href="https://bitcoinarmory.com">{% translate walletvisit %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-armory.png" alt="armory" />Armory</a>
-</div>
-<div>
-  <div>
-    <div>
-      <h2>Electrum</h2>
-      <span><img src="/img/os/win.png" alt="Windows" title="Windows" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /><img src="/img/os/osx-uni.png" alt="Mac OS X" title="Mac OS X" /><img src="/img/os/android.png" alt="Android" title="Android" /></span>
-      <p>{% translate walletelectrum %}</p>
-      <p><a href="https://electrum.org">{% translate walletvisit %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-electrum.png" alt="electrum" />Electrum</a>
-</div>
-<div>
-  <div>
-    <div>
-      <h2>Xapo</h2>
-      <span><img src="/img/os/win.png" alt="Windows" title="Windows" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /><img src="/img/os/osx-uni.png" alt="Mac OS X" title="Mac OS X" /><img src="/img/os/android.png" alt="Android" title="Android" /></span>
-      <p>{% translate walletxapo %}</p>
-      <p><a href="https://xapo.com">{% translate walletvisit %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="../img/clients/lo-xapo.png" alt="xapo" />Xapo</a>
+{% endfor %}{% endfor %}{% endfor %}
 </div>
 
-<h2><img class="titleicon" src="/img/ico_international.svg" alt="web wallets" />{% translate walletweb %}</h2>
-<p>{% translate walletwebtxt %}</p>
+<div class="wallets walletsmobile" id="walletsmobile"></div>
 
-{% case page.lang %}
-{% when 'ar' or 'fa' or 'pl' or 'zh_TW' %}
-<div data-id="blockchaindesktop">
-  <div class="walletwarning">
-    <div>
-      <h2>{% translate walletwebwarning %}</h2>
-      <span></span>
-      <p>{% translate walletwebwarningtxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
-</div>
-{% else %}
-<div data-id="blockchaindesktop">
-  <div class="walletinfo">
-    <div>
-      <h2>{% translate wallettrustinfo %}</h2>
-      <span></span>
-      <p>{% translate wallettrustinfotxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
-</div>
-{% endcase %}
-{% case page.lang %}
-{% when 'ar' or 'bg' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
-{% else %}
-<div data-id="bitgo">
-  <div class="walletinfo">
-    <div>
-      <h2>{% translate wallettrustinfo %}</h2>
-      <span></span>
-      <p>{% translate wallettrustinfotxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-bitgo.png" alt="coinkite" /></a>
-</div>
-{% endcase %}
-{% case page.lang %}
-{% when 'ar' or 'bg' or 'es' or 'fa' or 'fr' or 'hu' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
-{% else %}
-<div data-id="greenaddressweb">
-  <div class="walletinfo">
-    <div>
-      <h2>{% translate wallettrustinfo %}</h2>
-      <span></span>
-      <p>{% translate wallettrustinfotxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-greenaddress.png" alt="greenaddress" /></a>
-</div>
-{% endcase %}
-<div data-id="coinbase">
-  <div class="walletwarning">
-    <div>
-      <h2>{% translate walletwebwarning %}</h2>
-      <span></span>
-      <p>{% translate walletwebwarningtxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-coinbase.png" alt="coinbase" /></a>
-</div>
-{% case page.lang %}
-{% when 'ar' or 'bg' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
-{% else %}
-<div data-id="coinkite">
-  <div class="walletwarning">
-    <div>
-      <h2>{% translate walletwebwarning %}</h2>
-      <span></span>
-      <p>{% translate walletwebwarningtxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-coinkite.png" alt="coinkite" /></a>
-</div>
-{% endcase %}
-<div data-id="xapo">
-  <div class="walletwarning">
-    <div>
-      <h2>{% translate walletwebwarning %}</h2>
-      <span></span>
-      <p>{% translate walletwebwarningtxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-  </div>
-  <a href="#" onclick="return false;"><img src="../img/clients/lo-xapo.png" alt="xapo" /></a>
-</div>
-</div>
+<script>if(isMobile())walletShowPlatform('mobile');else walletShowPlatform('desktop');</script>
+<script>walletRotate();</script>
 
-<div class="preview">
-
-<div class="previewcol">
-
-<div class="previewrow">
-  <h2><img class="titleicon" src="/img/ico_desktop.svg" alt="Desktop wallets" />{% translate walletdesk %}</h2>
-  <p class="hyphenate">{% translate walletdesktxt %}</p>
-</div>
-<div class="previewrow">
-  <h2><img class="titleicon" src="/img/ico_mobile.svg" alt="mobile wallets" />{% translate walletmobi %}</h2>
-  <p class="hyphenate">{% translate walletmobitxt %}</p>
-</div>
-<div class="previewrow">
-  <h2><img class="titleicon" src="/img/ico_international.svg" alt="web wallets" />{% translate walletweb %}</h2>
-  <p class="hyphenate">{% translate walletwebtxt %}</p>
-</div>
-
-</div>
-
-<div class="previewcol">
-
-<div class="previewrow">
-<div>
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>Bitcoin Core</h2>
-      <span><img src="/img/os/win.png" alt="Windows" title="Windows" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /><img src="/img/os/osx-uni.png" alt="Mac OS X" title="Mac OS X" /></span>
-      <p class="hyphenate">{% translate walletbitcoinqt %}</p>
-      <p>{% translate walletdownload %}</p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-bitcoin.png" alt="Bitcoin Core" />Bitcoin<br>Core</a>
-</div>
-<div>
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>MultiBit</h2>
-      <span><img src="/img/os/win.png" alt="Windows" title="Windows" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /><img src="/img/os/osx-uni.png" alt="Mac OS X" title="Mac OS X" /></span>
-      <p class="hyphenate">{% translate walletmultibit %}</p>
-      <p><a href="https://multibit.org">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-multibit.png" alt="multibit" />MultiBit</a>
-</div>
-{% case page.lang %}
-{% when 'ar' or 'bg' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
-{% else %}
-<div>
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>Hive</h2>
-      <span><img src="/img/os/osx-uni.png" alt="Mac OS X" title="Mac OS X" /></span>
-      <p class="hyphenate">{% translate wallethive %}</p>
-      <p><a href="https://www.hivewallet.com">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-hive.png" alt="hive" />Hive</a>
-</div>
-{% endcase %}
-<div>
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>Armory</h2>
-      <span><img src="/img/os/win.png" alt="Windows" title="Windows" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></span>
-      <p class="hyphenate">{% translate walletarmory %}</p>
-      <p><a href="https://bitcoinarmory.com">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-armory.png" alt="armory" />Armory</a>
-</div>
-<div>
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>Electrum</h2>
-      <span><img src="/img/os/win.png" alt="Windows" title="Windows" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /><img src="/img/os/osx-uni.png" alt="Mac OS X" title="Mac OS X" /><img src="/img/os/android.png" alt="Android" title="Android" /></span>
-      <p class="hyphenate">{% translate walletelectrum %}</p>
-      <p><a href="https://electrum.org">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-electrum.png" alt="electrum" />Electrum</a>
-</div>
-<div>
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>Xapo</h2>
-      <span><img src="../img/os/win.png" alt="Windows" title="Windows" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /><img src="/img/os/osx-uni.png" alt="Mac OS X" title="Mac OS X" /><img src="/img/os/android.png" alt="Android" title="Android" /></span>
-      <p class="hyphenate">{% translate walletxapo %}</p>
-      <p><a href="https://xapo.com">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="../img/clients/lo-xapo.png" alt="xapo" />Xapo</a>
-</div>
-</div>
-
-<div class="previewrow">
-<div>
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>Bitcoin Wallet</h2>
-      <span><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/blackberry.png" alt="BlackBerry OS" title="BlackBerry OS" /></span>
-      <p class="hyphenate">{% translate walletbitcoinwallet %}</p>
-      <p><a href="https://play.google.com/store/apps/details?id=de.schildbach.wallet">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-bitcoinwallet.png" alt="bitcoin wallet" />Bitcoin<br>Wallet</a>
-</div>
-{% case page.lang %}
-{% when 'ar' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
-{% else %}
-<div data-id="mycelium">
-  <div class="walletinfo">
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>{% translate wallettrustinfo %}</h2>
-      <span></span>
-      <p class="hyphenate">{% translate wallettrustinfotxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-<a href="#" onclick="return false;"><img src="/img/clients/lo-mycelium.png" alt="mycelium wallet" /></a>
-</div>
-{% endcase %}
-</div>
-
-<div class="previewrow">
-{% case page.lang %}
-{% when 'ar' or 'fa' or 'pl' or 'zh_TW' %}
-<div data-id="blockchaindesktop">
-  <div class="walletwarning">
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>{% translate walletwebwarning %}</h2>
-      <span></span>
-      <p class="hyphenate">{% translate walletwebwarningtxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
-</div>
-{% else %}
-<div data-id="blockchaindesktop">
-  <div class="walletinfo">
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>{% translate wallettrustinfo %}</h2>
-      <span></span>
-      <p class="hyphenate">{% translate wallettrustinfotxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain.info" /></a>
-</div>
-{% endcase %}
-{% case page.lang %}
-{% when 'ar' or 'bg' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
-{% else %}
-<div data-id="bitgo">
-  <div class="walletinfo">
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>{% translate wallettrustinfo %}</h2>
-      <span></span>
-      <p class="hyphenate">{% translate wallettrustinfotxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-bitgo.png" alt="bitgo" /></a>
-</div>
-{% endcase %}
-{% case page.lang %}
-{% when 'ar' or 'bg' or 'es' or 'fa' or 'fr' or 'hu' or 'id' or 'it' or 'nl' or 'pl' or 'ru' or 'tr' or 'zh_CN' or 'zh_TW' %}
-{% else %}
-<div data-id="greenaddressweb">
-  <div class="walletinfo">
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>{% translate wallettrustinfo %}</h2>
-      <span></span>
-      <p class="hyphenate">{% translate wallettrustinfotxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-greenaddress.png" alt="greenaddress" /></a>
-</div>
-{% endcase %}
-<div data-id="coinbase">
-  <div class="walletwarning">
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>{% translate walletwebwarning %}</h2>
-      <span></span>
-      <p class="hyphenate">{% translate walletwebwarningtxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-coinbase.png" alt="coinbase" /></a>
-</div>
-{% case page.lang %}
-{% when 'ar' or 'bg' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
-{% else %}
-<div data-id="coinkite">
-  <div class="walletwarning">
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>{% translate walletwebwarning %}</h2>
-      <span></span>
-      <p class="hyphenate">{% translate walletwebwarningtxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-coinkite.png" alt="coinkite" /></a>
-</div>
-{% endcase %}
-<div data-id="xapo">
-  <div class="walletwarning">
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>{% translate walletwebwarning %}</h2>
-      <span></span>
-      <p class="hyphenate">{% translate walletwebwarningtxt %}</p>
-      <p><a href="#" onclick="walletShow(event);">{% translate walletwebwarningok %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="../img/clients/lo-xapo.png" alt="xapo" /></a>
-</div>
-</div>
-</div>
-
-<div class="previewcol"><br><!--Prevent floating divs to overflow outside of the page.--></div>
-
-<div class="previewrow" style="display:none;">
-{% case page.lang %}
-{% when 'ar' or 'fa' or 'id' or 'it' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
-{% else %}
-<div id="mycelium">
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>Mycelium Wallet</h2>
-      <span><img src="/img/os/android.png" alt="Android" title="Android" /></span>
-      <p class="hyphenate">{% translate walletmyceliumwallet %}</p>
-      <p><a href="https://play.google.com/store/apps/details?id=com.mycelium.wallet">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-<a href="#" onclick="return false;"><img src="/img/clients/lo-mycelium.png" alt="mycelium wallet" />Mycelium<br>Wallet</a>
-</div>
-{% endcase %}
-<div id="blockchaindesktop">
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>Blockchain.info</h2>
-      <span></span>
-      <p class="hyphenate">{% translate walletblockchaininfo %}</p>
-      <p><a href="https://blockchain.info/wallet/chrome-extension">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-blockchain.png" alt="blockchain" />Blockchain<br>.info</a>
-</div>
-<div id="coinbase">
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>Coinbase</h2>
-      <span></span>
-      <p class="hyphenate">{% translate walletcoinbase %}</p>
-      <p><a href="https://coinbase.com">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-coinbase.png" alt="coinbase" />Coinbase</a>
-</div>
-<div id="coinkite">
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>Coinkite</h2>
-      <span></span>
-      <p class="hyphenate">{% translate walletcoinkite %}</p>
-      <p><a href="https://coinkite.com">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-coinkite.png" alt="coinkite" />Coinkite</a>
-</div>
-<div id="xapo">
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>Xapo</h2>
-      <span></span>
-      <p class="hyphenate">{% translate walletxapo %}</p>
-      <p><a href="http://xapo.com">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="../img/clients/lo-xapo.png" alt="xapo" />Xapo</a>
-</div>
-<div id="bitgo">
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>BitGo</h2>
-      <span></span>
-      <p class="hyphenate">{% translate walletbitgo %}</p>
-      <p><a href="https://www.bitgo.com/">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-bitgo.png" alt="bitgo" />BitGo</a>
-</div>
-<div id="greenaddressweb">
-  <div>
-    <div class="b1"></div>
-    <div class="b2">
-      <h2>GreenAddress</h2>
-      <span></span>
-      <p class="hyphenate">{% translate walletgreenaddress %}</p>
-      <p><a href="https://greenaddress.it/">{% translate walletvisit %}</a></p>
-    </div>
-    <div class="b3"></div>
-  </div>
-  <a href="#" onclick="return false;"><img src="/img/clients/lo-greenaddress.png" alt="greenaddress" />Green<br>Address</a>
-</div>
-</div>
-
+<div class="walletsdisclaimer">
+<h2><img src="/img/warning.svg" class="warningicon" alt="warning">{% translate educate %}</h2>
+<p>{% translate educatetxt %}</p>
 </div>

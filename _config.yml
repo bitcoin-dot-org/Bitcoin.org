@@ -1,35 +1,51 @@
 langsorder:
-- id: de
-- id: id
-- id: en
-- id: es
-- id: fr
-- id: it
-- id: hu
-- id: nl
-- id: pl
-- id: ru
-- id: tr
-- id: bg
-- id: zh_CN
-- id: zh_TW
-- id: ar
-- id: fa
+- id
+- da
+- de
+- en
+- es
+- fr
+- it
+- hu
+- nl
+- pl
+- pt_BR
+- ro
+- sl
+- sv
+- tr
+- bg
+- ru
+- ar
+- fa
+- hi
+- ko
+- ja
+- zh_CN
+- zh_TW
 
 langs:
   ar: ألعربية
   bg: български
+  da: Dansk
   de: Deutsch
   en: English
   es: Español
   fa: فارسی
   fr: Français
+  hi: हिन्दी
   hu: magyar
   id: Bahasa Indonesia‬
   it: Italiano
+  ja: 日本語
+  ko: 한국의
   nl: Nederlands
-  pl: Polski
+  pl: polski
+  pt_BR: Português Brasil
+  ro: română
   ru: Русский
+  sl: slovenščina
+  sv: Svenska
   tr: Türkçe
   zh_CN: ‪简体中文‬
   zh_TW: ‪繁體中文‬
@@ -88,6 +104,7 @@ redirects:
   /zh_CN/about: /zh_CN/faq
   /es/acerca-de: /es/faq
   /fr/a-propos: /fr/faq
+  /it/a-proposito: /it/faq
   /de/bitcoin-fuer-enthusiasten: /de/innovation
   /en/bitcoin-for-enthusiasts: /en/innovation
   /es/bitcoin-para-entusiastas: /es/innovacion
@@ -97,20 +114,33 @@ redirects:
   /pl/bitcoin-dla-entuzjastow: /pl/innowacje
 
 aliases:
-  s_nakamoto: Satoshi Nakamoto
   --author=Satoshi Nakamoto: Satoshi Nakamoto
   gavinandresen: Gavin Andresen
+  gmaxwell: Gregory Maxwell
+  gwb3: Garland William Binns III
+  harding: David Harding
+  jgarzik: Jeff Garzik
+  laanwj: Wladimir J. van der Laan
+  luke-jr: Luke-Jr
+  mikehearn: Mike Hearn
+  petertodd: Peter Todd
+  s_nakamoto: Satoshi Nakamoto
+  saivann: Saïvann Carignan
+  schildbach: Andreas Schildbach
+  sipa: Pieter Wuille
   tcatm: Nils Schneider
 
 safe:        false
-auto:        false
-server:      false
 server_port: 4000
 base-url:    /
 
 source:      .
 destination: ./_site
 plugins:     ./_plugins
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - Makefile
 
 future:      true
 lsi:         false

@@ -9,13 +9,24 @@ body{
 .body{
 	width:940px;
 }
-.footer{
-	width:800px;
-}
 .lang{
 	border-left:2px solid #f7f7f7;
 	border-right:2px solid #f7f7f7;
 	border-top:2px solid #f7f7f7;
+}
+.lang li ul{
+	top:28px;
+}
+.lang li ul li{
+	zoom:1;
+	display:inline;
+}
+.lang li a,
+.lang li a:link,
+.lang li a:visited,
+.lang li a:active{
+	zoom:1;
+	display:inline;
 }
 
 .menusimple li{
@@ -152,18 +163,18 @@ body{
 }
 
 .resources div{
-	border-top:expression((this.parentNode!=this.parentNode.parentNode.getElementsByTagName('DIV')[0])?'1px solid #e0e0e0':'0');
+	border-top:expression(this.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'1px solid #e0e0e0':'0');
 }
 .resources div div{
 	zoom:1;
 	display:inline;
 	padding-top:25px;
 	position:relative;
-	padding-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'40px':'');
-	border-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'1px solid #e0e0e0':'');
-	padding-left:expression(this.parentNode.getElementsByTagName('DIV')[1]==this?'40px':'');
-	border-left:expression(this.parentNode.getElementsByTagName('DIV')[1]==this?'1px solid #e0e0e0':'');
-	margin-left:expression(this.parentNode.getElementsByTagName('DIV')[1]==this?'-1px':'');
+	padding-right:expression(this.parentNode.parentNode.className=='resources'&&this.parentNode.getElementsByTagName('DIV')[0]==this?'40px':'');
+	border-right:expression(this.parentNode.parentNode.className=='resources'&&this.parentNode.getElementsByTagName('DIV')[0]==this?'1px solid #e0e0e0':'');
+	padding-left:expression(this.parentNode.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'40px':'');
+	border-left:expression(this.parentNode.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'1px solid #e0e0e0':'');
+	margin-left:expression(this.parentNode.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'-1px':'');
 }
 .resources>div>div:first-child+div{
 	/*This one is for IE7 only*/
@@ -177,6 +188,16 @@ body{
 }
 .resourcesorg div{
 	border-top:expression(this.parentNode.className=='resourcesorg'&&this.parentNode.getElementsByTagName('DIV')[0]!=this?'1px solid #e0e0e0':'0');
+}
+
+.resourcesmore div{
+	zoom:1;
+	display:inline;
+}
+
+.docreference a{
+	zoom:1;
+	display:inline;
 }
 
 .downloadbox{
@@ -203,7 +224,7 @@ body{
 	display:inline;
 }
 
-.eventtable div div{
+.listtable div div{
 	zoom:1;
 	display:inline;
 }
@@ -239,173 +260,26 @@ body{
 	margin-bottom:30px;
 }
 
+.contributors div{
+	zoom:1;
+	display:inline;
+}
+.contributors span{
+	width:16px;
+	height:16px;
+}
+
+.credit p{
+	zoom:1;
+	display:inline;
+}
+
 .foundation{
 	width:500px;
 }
 
 .devprojectlist li{
 	display:expression((this.parentNode.childNodes[0]==this||this.parentNode.childNodes[1]==this||this.parentNode.childNodes[2]==this||this.parentNode.childNodes[3]==this)?'list-item':'');
-}
-
-.pleftfloat span{
-	position:relative;
-	float:left;
-}
-
-.previewrow h2{
-	font-size:115%;
-}
-.previewrow p{
-	font-size:95%;
-}
-.previewrow div{
-	zoom:expression(this.parentNode.className=='previewrow'?'1':'');
-	display:expression(this.parentNode.className=='previewrow'?'inline':'');
-	position:expression(this.parentNode.className=='previewrow'?'relative':'');
-	margin-right:expression(this.parentNode.className=='previewrow'?'12px':'');
-	margin-bottom:expression(this.parentNode.className=='previewrow'?'12px':'');
-	vertical-align:expression(this.parentNode.className=='previewrow'?'top':'');
-}
-.previewrow div a,
-.previewrow div a:visited,
-.previewrow div a:link,
-.previewrow div a:active{
-	zoom:1;
-	display:inline;
-	font-size:94%;
-	text-align:center;
-	text-decoration:none;
-	font-weight:bold;
-	width:72px;
-	height:110px;
-	vertical-align:top;
-	white-space:normal;
-}
-.previewrow div a img{
-	display:block;
-	margin:auto;
-	margin-bottom:10px;
-	width:72px;
-	height:72px;
-}
-.previewrow div div{
-	height:0;
-	position:absolute;
-	left:-105px;
-	right:-110px;
-	bottom:100px;
-	padding:0;
-	z-index:1000;
-	overflow:hidden;
-	width:280px;
-}
-.previewrow div div div{
-	width:280px;
-	position:static;
-}
-.previewrow div:hover div{
-	height:auto;
-}
-.previewcol .previewrow{
-	padding-left:expression(this.parentNode.firstChild==this?'0px':'');
-}
-.previewcol .previewrow:first-child+div{
-	border:0;
-}
-.previewrow div div div.b1{
-	background:url(/img/bubbletop.png) bottom center no-repeat;
-	padding:0;
-	height:10px;
-}
-.previewrow div div div.b2{
-	background:url(/img/bubblemiddle.png) bottom center repeat-y;
-	padding:0;
-	padding-top:10px;
-}
-.previewrow div div div.b3{
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bubblebottom.png', sizingMethod='scale');
-	padding:0;
-	height:64px;
-}
-.previewrow>div>div>div:first-child+div{
-	padding:0;
-}
-.previewrow div div div h2{
-	position:relative;
-	left:30px;
-	margin:0;
-}
-.previewrow div div div span{
-	/*FIXME can't get to make it work on IE6-7*/
-	display:none;
-	position:absolute;
-	right:10px;
-	top:10px;
-}
-.previewrow div div div span img{
-	margin-left:4px;
-}
-.previewrow div div div p{
-	font-size:95%;
-	margin:0;
-	padding:10px 0;
-	text-align:expression((this.parentNode.getElementsByTagName('P')[1]==this)?'center':'');
-	width:220px;
-	position:relative;
-	left:30px;
-	line-height:1.5em;
-}
-.previewrow div div div p a,
-.previewrow div div div p a:visited,
-.previewrow div div div p a:link,
-.previewrow div div div p a:active{
-	display:inline;
-	zoom:1;
-	text-align:center;
-	width:auto;
-	height:auto;
-	font-weight:bold;
-	text-decoration:none;
-	padding:5px 10px;
-	color:#fff;
-	background-color:#2c6fad;
-}
-.previewrow .walletwarning .b1{
-	background-image:url(/img/bubblewarntop.png);
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bubblewarntop.png', sizingMethod='scale');
-}
-.previewrow .walletwarning .b2{
-	background-image:url(/img/bubblewarnmiddle.png);
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bubblewarnmiddle.png', sizingMethod='scale');
-}
-.previewrow .walletwarning .b3{
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bubblewarnbottom.png', sizingMethod='scale');
-}
-.previewrow .walletwarning div p a,
-.previewrow .walletwarning div p a:visited,
-.previewrow .walletwarning div p a:link,
-.previewrow .walletwarning div p a:active{
-	background-color:#b95357;
-	border:1px solid #a04246;
-}
-.previewrow .walletinfo .b1{
-	background-image:url(/img/bubblewarntop.png);
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bubbleinfotop.png', sizingMethod='scale');
-}
-.previewrow .walletinfo .b2{
-	background-image:url(/img/bubblewarnmiddle.png);
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bubbleinfomiddle.png', sizingMethod='scale');
-}
-.previewrow .walletinfo .b3{
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/bubbleinfobottom.png', sizingMethod='scale');
-}
-.previewrow .walletinfo div p a,
-.previewrow .walletinfo div p a:visited,
-.previewrow .walletinfo div p a:link,
-.previewrow .walletinfo div p a:active{
-	background-color:#ee9209;
-	border:1px solid #d57700;
-	
 }
 
 .press-faq div{

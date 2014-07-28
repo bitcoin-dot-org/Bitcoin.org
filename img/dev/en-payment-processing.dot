@@ -1,0 +1,29 @@
+graph unique {
+size="6.66";
+rankdir=LR;
+//ratio=fill;
+splines=ortho;
+
+overlap = false;
+
+edge [ dir = forward, penwidth=1.75 ];
+node [ shape = box, penwidth=1.75 ];
+
+submit_order [ style = invis, width=0, height=0, label = "", ];
+calc_total [ label = "Price\nOrder\nIn\nBTC" ]
+request_payment [ label = "Request\nPayment" ]
+verify_payment [ label = "Verify\nPayment\n& Fulfill\nOrder" ]
+issue_refund [ label = "Issue\nRefund\n(Sometimes)" ]
+pay_expenses [ label = "Disburse\nIncome\n(Optional)" ]
+rebill_recurring [ label = "Rebill\nRecurring\n(Optional)" ]
+
+
+submit_order -- calc_total [ label = "New\nOrder", minlen = 1 ]
+
+calc_total -- request_payment -- verify_payment [ weight = 100 ]
+verify_payment -- issue_refund -- pay_expenses  -- rebill_recurring [ style = dashed, weight = 100  ]
+rebill_recurring -- calc_total [ style = dashed  ]
+
+label = " \nPayment Processing With Bitcoin (From A Receiver's Perspective)"
+}
+

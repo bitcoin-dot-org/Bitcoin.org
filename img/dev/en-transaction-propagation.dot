@@ -1,0 +1,86 @@
+digraph blockchain {
+
+//splines = "ortho";
+rankdir=LR;
+ranksep=0.1;
+size=6.25;
+
+node [ shape = box ]
+
+subgraph cluster_tx0 {
+    label = "Transaction 0\n(TX 0)"
+
+    tx0_input0 [ label = "input0" ]
+
+    tx0_output0 [ label = "output0" ]
+    tx0_output1 [ label = "output1" ]
+}
+
+subgraph cluster_tx1 {
+    label = "TX 1"
+
+    tx1_input0 [ label = "input0" ]
+
+    tx1_output0 [ label = "output0" ]
+}
+
+subgraph cluster_tx2 {
+    label = "TX 2"
+
+    tx2_input0 [ label = "input0" ]
+
+    tx2_output0 [ label = "output0" ]
+    tx2_output1 [ label = "output1" ]
+}
+
+subgraph cluster_tx3 {
+    label = "TX 3"
+
+    tx3_input0 [ label = "input0" ]
+
+    tx3_output0 [ label = "output0" ]
+}
+
+subgraph cluster_tx4 {
+    label = "TX 4"
+
+    tx4_input0 [ label = "input0" ]
+
+    tx4_output0 [ label = "output0" ]
+}
+
+subgraph cluster_tx5 {
+    label = "TX 5"
+
+    tx5_input0 [ label = "input0" ]
+
+    tx5_output0 [ label = "output0" ]
+}
+
+subgraph cluster_tx6 {
+    label = "TX 6"
+
+    tx6_input0 [ label = "input0" ]
+    tx6_input1 [ label = "input1" ]
+
+    tx6_output0 [ label = "output0" ]
+}
+txold [ style = "invis", label = "", width = 0, height = 0 ];
+utxo0 [ style = "invis", label = "", width = 0, height = 0 ];
+//spacer0 [ style = "invis", label = "", width = 0, height = 0 ];
+//tx3_output0 -> spacer0 -> utxo0 [ style = invis ];
+//tx6_input0 -> utxo0 [style = invis];
+utxo1 [ style = "invis", label = "", width = 0, height = 0 ];
+
+txold -> tx0_input0 [ label = "100,000\n(100k)\nsatoshis", style = dotted ]
+tx0_output0 -> tx1_input0 [ label = "40k" ]
+tx0_output1 -> tx2_input0 [ label = "50k" ]
+tx1_output0 -> tx3_input0 [ label = "30k" ]
+tx2_output0 -> tx4_input0 [ label = "20k" ]
+tx2_output1 -> tx5_input0 [ label = "20k"]
+tx4_output0 -> tx6_input0 [ label = "10k" ]
+tx5_output0 -> tx6_input1 [ label = "10k" ]
+tx3_output0 -> utxo0 [ style=dashed, labelfloat = true, minlen = 2, label = "20k Unspent TX\nOutput (UTXO)" ]
+tx6_output0 -> utxo1 [ style=dashed, label = "10k\nUTXO" ]
+label = "Triple-Entry Bookkeeping (Transaction-To-Transaction Payments) As Used By Bitcoin"
+}

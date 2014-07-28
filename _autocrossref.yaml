@@ -1,0 +1,297 @@
+---
+## List of words to match with references in _includes/references.md
+## in developer documentation, used by autocrossref.rb plugin.
+## "pattern to match in file" => "reference to give it"
+
+51 percent attack:
+address: 
+addresses: address
+'`amount`': pp amount
+base-58: base58check
+base58: base58check
+base58check:
+## bitcoin -- Recommend against bitcoin (singular) because of confusion between protocol, software, denomination
+bitcoins: 
+bitcoin QR code: URI QR code
+bitcoin QR codes: URI QR code
+'`bitcoin:` URI': bitcoin uri
+'`bitcoin:` URIs': bitcoin uri
+block:
+block chain:
+block-chain: block chain
+block header:
+block height:
+block reward:
+block time:
+block version:
+blocks: block
+broadcast:
+broadcasts: broadcast
+broadcasting:
+certificate chain:
+chain code:
+change address:
+change addresses: change address
+change output:
+change outputs: change output
+child key:
+child keys: child key
+child private and public keys: child key
+child public key:
+child public keys: child public key
+coinbase: coinbase transaction
+coinbase transaction:
+coinbase transactions: coinbase transaction
+coinbase field:
+confirm:
+confirmed:
+confirmation:
+confirmations:
+confirmed transactions:
+denomination:
+denominations: denomination
+DER format: der
+DER-formatted: der
+difficulty:
+double spend:
+double-spend: double spend
+double spending: double spend
+double-spent: double spend
+ECDSA:
+escrow contract:
+'`expires`': pp expires
+extended key:
+extended keys: extended key
+extended private key:
+extended public key:
+fiat:
+fork: accidental fork
+genesis block:
+hardened extended private key:
+HD protocol:
+header nonce:
+high-priority transaction: high-priority transactions
+high-priority transactions:
+inputs: input
+input:
+intermediate certificate:
+intermediate certificates: intermediate certificate
+key index:
+key pair:
+'`label`': label
+leaf certificate:
+locktime:
+long-term fork:
+mainnet:
+master chain code:
+master private key:
+'`memo`': pp memo
+'`message`': message
+'`merchant_data`': pp merchant data
+merkle root:
+merkle tree:
+merge:
+Merge avoidance:
+micropayment channel:
+micropayment channels: micropayment channel
+mine:
+miner:
+miners: miner
+minimum fee:
+mining: mine
+millibit: millibits
+millibits:
+multisig:
+network:
+null data: 
+'`op_checkmultisig`': op_checkmultisig
+'`op_checksig`': op_checksig
+op code:
+op codes: op code
+'`op_dup`': op_dup
+'`op_equal`': op_equal
+'`op_equalverify`': op_equalverify
+'`op_hash160`': op_hash160
+'`op_return`': op_return
+'`op_verify`': op_verify
+orphan:
+orphaned: orphan
+outputs: output
+output:
+output index:
+p2pkh:
+p2sh:
+p2sh multisig:
+parent chain code:
+parent key:
+parent private key:
+parent private and public keys: parent key
+parent public key:
+payment protocol:
+"payment protocol's": payment protocol
+PaymentDetails:
+PaymentRequest:
+PaymentRequests: paymentrequest
+peer:
+peers: peer
+peer-to-peer network: network
+pki:
+'`pki_type`': pp pki type
+'`point()`': point function
+private key:
+private keys: private key
+proof of work:
+proof-of-work: proof of work
+protocol buffer: protobuf
+protocol buffers: protobuf
+pubkey hash:
+pubkey hashes: pubkey hash
+public key:
+public keys: public key
+public key infrastructure: pki
+'`r`': r
+raw format:
+rawtransaction format: raw format
+receipt:
+recurrent rebilling:
+redeemScript:
+refund: 
+refunds: refund
+regression test mode:
+regtest: regression test mode
+root certificate:
+root seed:
+RPCs: rpc
+RPC:
+satoshi:
+satoshis: satoshi
+script:
+'`script`': pp script
+script hash:
+scripts: script
+scriptSig:
+scriptSigs: scriptSig
+secp256k1:
+sequence number:
+sequence numbers: sequence number
+SIGHASH: signature hash
+'`SIGHASH_ANYONECANPAY`': shacp
+'`SIGHASH_ALL`': sighash_all
+'`SIGHASH_ALL|SIGHASH_ANYONECANPAY`': sha_shacp
+'`SIGHASH_NONE`': sighash_none
+'`SIGHASH_NONE|SIGHASH_ANYONECANPAY`': shn_shacp
+'`SIGHASH_SINGLE|SIGHASH_ANYONECANPAY`': shs_shacp
+signature:
+signature hash:
+signatures: signature
+SPV:
+stack:
+standard script:
+standard scripts: standard script
+standard transaction: standard script
+standard transactions: standard script
+target:
+testnet:
+#transaction -- Recommend we don't autocrossref this; it occurs too often
+transaction fee:
+transaction fees: transaction fee
+transaction malleability:
+transaction object format:
+transaction version number:
+'`transactions`': pp transactions
+txid:
+txids: txid
+unconfirmed:
+unconfirmed transactions:
+unique address: unique addresses
+unique addresses:
+utxo:
+utxos: utxo
+verified payments:
+version 2 blocks: v2 block
+wallet:
+wallets: wallet
+wallet import format:
+x.509: x509
+X509Certificates:
+
+## BIPS in numerical order; don't use padding zeros (e.g. BIP70 not BIP0070)
+BIP21:
+BIP32:
+BIP39:
+BIP70:
+BIP71:
+BIP72:
+
+## RPCs
+'`addmultisigaddress`': rpc addmultisigaddress
+'`addnode`': rpc addnode
+'`backupwallet`': rpc backupwallet
+'`createmultisig`': rpc createmultisig
+'`createrawtransaction`': rpc createrawtransaction
+'`decoderawtransaction`': rpc decoderawtransaction
+'`decodescript`': rpc decodescript
+'`dumpprivkey`': rpc dumpprivkey
+'`dumpwallet`': rpc dumpwallet
+'`getaccount`': rpc getaccount
+'`getaccountaddress`': rpc getaccountaddress
+'`getaddednodeinfo`': rpc getaddednodeinfo
+'`getaddressesbyaccount`': rpc getaddressesbyaccount
+'`getbalance`': rpc getbalance
+'`getbestblockhash`': rpc getbestblockhash
+'`getblock`': rpc getblock
+'`getblockcount`': rpc getblockcount
+'`getblockhash`': rpc getblockhash
+'`getblocktemplate`': rpc getblocktemplate
+'`getconnectioncount`': rpc getconnectioncount
+'`getdifficulty`': rpc getdifficulty
+'`getgenerate`': rpc getgenerate
+'`gethashespersec`': rpc gethashespersec
+'`getinfo`': rpc getinfo
+'`getmininginfo`': rpc getmininginfo
+'`getnettotals`': rpc getnettotals
+'`getnetworkhashps`': rpc getnetworkhashps
+'`getnewaddress`': rpc getnewaddress
+'`getpeerinfo`': rpc getpeerinfo
+'`getrawchangeaddress`': rpc getrawchangeaddress
+'`getrawmempool`': rpc getrawmempool
+'`getrawtransaction`': rpc getrawtransaction
+'`getreceivedbyaccount`': rpc getreceivedbyaccount
+'`getreceivedbyaddress`': rpc getreceivedbyaddress
+'`gettransaction`': rpc gettransaction
+'`gettxout`': rpc gettxout
+'`gettxoutsetinfo`': rpc gettxoutsetinfo
+'`getunconfirmedbalance`': rpc getunconfirmedbalance
+'`getwork`': rpc getwork
+'`help`': rpc help
+'`importprivkey`': rpc importprivkey
+'`importwallet`': rpc importwallet
+'`keypoolrefill`': rpc keypoolrefill
+'`listaccounts`': rpc listaccounts
+'`listaddressgroupings`': rpc listaddressgroupings
+'`listlockunspent`': rpc listlockunspent
+'`listreceivedbyaccount`': rpc listreceivedbyaccount
+'`listreceivedbyaddress`': rpc listreceivedbyaddress
+'`listsinceblock`': rpc listsinceblock
+'`listtransactions`': rpc listtransactions
+'`listunspent`': rpc listunspent
+'`lockunspent`': rpc lockunspent
+'`move`': rpc move
+'`ping`': rpc ping
+'`sendfrom`': rpc sendfrom
+'`sendmany`': rpc sendmany
+'`sendrawtransaction`': rpc sendrawtransaction
+'`sendtoaddress`': rpc sendtoaddress
+'`setaccount`': rpc setaccount
+'`setgenerate`': rpc setgenerate
+'`settxfee`': rpc settxfee
+'`signmessage`': rpc signmessage
+'`signrawtransaction`': rpc signrawtransaction
+'`stop`': rpc stop
+'`submitblock`': rpc submitblock
+'`validateaddress`': rpc validateaddress
+'`verifychain`': rpc verifychain
+'`verifymessage`': rpc verifymessage
+'`walletlock`': rpc walletlock
+'`walletpassphrase`': rpc walletpassphrase
+'`walletpassphrasechange`': rpc walletpassphrasechange

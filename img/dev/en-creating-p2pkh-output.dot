@@ -1,0 +1,42 @@
+digraph blockchain {
+
+size=6.25;
+
+//splines = "false";
+rankdir=LR;
+//ranksep=0.1;
+//splines=ortho;
+
+node [ fontname="Sans", shape = box, penwidth = 1.75 ];
+edge [ fontname="Sans", penwidth = 1.75 ];
+graph [ fontname="Sans" ];
+penwidth = 1.75;
+
+subgraph cluster_bob {
+    private_key [ label = "Private\nKey" ];
+    full_public_key [ label = "Full\nPublic Key" ];
+    pubkey_hash [ label = "Public Key\nHash" ];
+
+    label = "Bob's Computer"
+}
+
+subgraph cluster_alice {
+    spender_pubkey_hash [ label = "Copy Of\nPublic Key\nHash" ];
+
+    label = "Alice's Computer"
+}
+
+subgraph cluster_tx1 {
+    tx1_pubkey_hash [ label = "Copy Of\nPublic Key\nHash" ];
+
+    label = "TX 1"
+}
+
+
+private_key -> full_public_key -> pubkey_hash -> spender_pubkey_hash -> tx1_pubkey_hash;
+
+
+
+
+label = "Creating A P2PKH Public Key Hash To Receive Payment"
+}

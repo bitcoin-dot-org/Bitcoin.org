@@ -11,6 +11,7 @@ id: resources
     <h2><img src="/img/ico_simple.svg" class="titleicon" alt="Icon">{% translate useful %}</h2>
     <p><a href="https://bitcoinfoundation.org/">Bitcoin Foundation</a></p>
     <p>{% translate linkwiki %}</p>
+    {% if page.lang == 'fr' %}<p><a href="http://francebitcoin.com/">France Bitcoin</a></p>{% endif %}
     <p><a href="https://www.weusecoins.com/">WeUseCoins.com</a></p>
     <p><a href="http://www.bitcoinmining.com/">BitcoinMining.com</a></p>
   </div><div>
@@ -24,8 +25,9 @@ id: resources
 <div>
   <div>
     <h2><img src="/img/ico_spread.svg" class="titleicon" alt="Icon">{% translate news %}</h2>
+    {% if page.lang == 'fr' %}<p><a href="http://le-coin-coin.fr/">Le Coin Coin</a></p>{% endif %}
+    {% if page.lang == 'fr' %}<p><a href="http://www.bitcoin.fr/">Bitcoin.fr</a></p>{% endif %}
     {% if page.lang == 'bg' %}<p><a href="http://hash.bg/">Hash.bg</a></p>{% endif %}
-    {% if page.lang == 'fr' %}<p><a href="http://francebitcoin.com/">France Bitcoin</a></p>{% endif %}
     {% if page.lang == 'ru' %}<p><a href="http://btcrussia.ru/">BTCRussia</a></p>{% endif %}
     <p><a href="http://www.coindesk.com/">CoinDesk</a></p>
     <p><a href="http://bitcoinmagazine.com/">Bitcoin Magazine</a></p>
@@ -33,14 +35,11 @@ id: resources
   </div><div>
     <h2><img src="/img/ico_market.svg" class="titleicon" alt="Icon">{% translate charts %}</h2>
     <p><a href="http://blockchain.info/charts">Blockchain.info</a></p>
-    <p><a href="http://blockexplorer.com/">Blockexplorer.com</a></p>
-    <p><a href="http://thegenesisblock.com/">The Genesis Block</a></p>
+    <p><a href="https://www.biteasy.com/">Biteasy.com</a></p>
+    <p><a href="https://tradeblock.com/">Trade Block</a></p>
     <p><a href="http://bitcoincharts.com/charts/">Bitcoincharts.com</a></p>
   </div>
 </div>
-{% case page.lang %}
-{% when 'ar' or 'fa' or 'id' or 'it' or 'nl' or 'tr' or 'zh_TW' %}
-{% else %}
 <div>
   <div>
     <h2><img src="/img/ico_doc.svg" class="titleicon" alt="Icon">{% translate documentaries %}</h2>
@@ -51,5 +50,4 @@ id: resources
     <p><a href="https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/bitcoin/v/bitcoin-what-is-it">Khan Academy</a></p>
   </div>
 </div>
-{% endcase %}
 </div>
