@@ -219,15 +219,16 @@ wallets:
 - blockchain:
     title: "Blockchain.info"
     titleshort: "Blockchain<br>.info"
-    compat: "mobile desktop web android windows mac linux"
+    compat: "mobile desktop web android iphone windows mac linux"
     level: 3
     platform:
       mobile:
         text: "walletblockchaininfo"
-        link: "https://play.google.com/store/apps/details?id=piuk.blockchain.android"
-        screenshot: "blockchainandroid.png"
+        link: "https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309"
+        screenshot: "blockchainiphone.png"
         os:
         - android
+        - iphone
         check:
           control: "checkpasscontrolhybrid"
           decentralization: "checkfaildecentralizecentralized"
@@ -271,6 +272,41 @@ wallets:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
+      iphone:
+        text: "walletblockchaininfo"
+        link: "https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309"
+        screenshot: "blockchainiphone.png"
+        os:
+        - android
+        - iphone
+        check:
+          control: "checkpasscontrolhybrid"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "walletblockchaininfo"
+        link: "https://play.google.com/store/apps/details?id=piuk.blockchain.android"
+        screenshot: "blockchainandroid.png"
+        os:
+        - android
+        - iphone
+        check:
+          control: "checkpasscontrolhybrid"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+
 - bitgo:
     title: "BitGo"
     titleshort: "BitGo"
