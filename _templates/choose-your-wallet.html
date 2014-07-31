@@ -163,6 +163,46 @@ wallets:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
+- kncwallet:
+    title: "KnC Wallet"
+    titleshort: "KnC<br>Wallet"
+    compat: "mobile android"
+    level: 2
+    platform:
+      mobile:
+        text: "walletkncwallet"
+        link: "https://kncwallet.com/"
+        source: "https://github.com/kncgroup/bitcoin-wallet"
+        screenshot: "kncwalletandroid.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "walletkncwallet"
+        link: "https://kncwallet.com/"
+        source: "https://github.com/kncgroup/bitcoin-wallet"
+        screenshot: "kncwalletandroid.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 - hive:
     title: "Hive"
     titleshort: "Hive"
