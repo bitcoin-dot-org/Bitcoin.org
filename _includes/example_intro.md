@@ -28,6 +28,24 @@ application directory:
 
 * Linux: `$HOME/.bitcoin/`
 
+To use `bitcoind` and `bitcoin-cli`, you will need to add a RPC password
+to your `bitcoin.conf` file. Both programs will read from the same file
+if both run on the same system as the same user, so any long random
+password will work:
+
+~~~
+rpcpassword=change_this_to_a_long_random_password
+~~~~
+
+You should also make the `bitcoin.conf` file only readable to its
+owner.  On Linux, Mac OSX, and other Unix-like systems, this can be
+accomplished by running the following command in the Bitcoin application
+directory:
+
+~~~
+chmod 0600 bitcoin.conf
+~~~
+
 For development, it's safer and cheaper to use Bitcoin's test network (testnet)
 or regression test mode (regtest) described below.
 
