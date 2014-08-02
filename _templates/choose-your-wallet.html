@@ -56,8 +56,8 @@ wallets:
 - hive:
     title: "Hive"
     titleshort: "Hive"
-    compat: "mobile desktop android mac"
-    level: 2
+    compat: "mobile desktop web android mac"
+    level: 3
     platform:
       mobile:
         text: "wallethive-android"
@@ -92,6 +92,22 @@ wallets:
         privacycheck:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+      web:
+        text: "wallethive-web"
+        link: "https://hivewallet.com/"
+        source: "https://github.com/hivewallet/hive-js"
+        screenshot: "hiveweb.png"
+        os:
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - armory:
     title: "Armory"
