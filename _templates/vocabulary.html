@@ -30,6 +30,8 @@ voc:
 </div>
 
 {% alphab_for v in page.voc %}
-<h2><a name="{% translate {{v}} anchor.vocabulary %}">{% translate {{v}} %}</a></h2>
+<h2 id="{% translate {{v}} anchor.vocabulary %}">{% translate {{v}} %}</h2>
 <p>{% translate {{v}}txt %}</p>
 {% endalphab_for %}
+
+<script>addAnchorLinks();</script>
