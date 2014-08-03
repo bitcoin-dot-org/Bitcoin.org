@@ -147,6 +147,8 @@ en:
     checkpasstransparencyclosedsourcetxt: "This wallet is not open-source. This means it is not possible to audit the code and make sure the final software isn't hiding dangerous code or doing anything you wouldn't agree to."
     checkfailtransparencyremote: "Remote app"
     checkfailtransparencyremotetxt: "This wallet is loaded from a remote location. This means that whenever you use your wallet, you need to trust the developers not to steal or lose your bitcoins in an incident on their site. Using a browser extension or mobile app, if available, can reduce that risk."
+    checkfailtransparencynew: "New app"
+    checkfailtransparencynewtxt: "The developers of this wallet publish the source code for the client. However, this wallet still has a short track record and few public feedback, testing and reviews. This means this app might be more at risk of hiding dangerous code or doing something you wouldn't agree to."
     checkgoodenvironmenthardware: "Very secure environment"
     checkgoodenvironmenthardwaretxt: "This wallet is loaded from a secure specialized environment provided by the device. This provides very strong protection against computer vulnerabilities and malware since no software can be installed on this environment."
     checkpassenvironmentmobile: "Secure environment"
