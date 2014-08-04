@@ -138,7 +138,7 @@ en:
     checkpassdecentralizespv: "Decentralized"
     checkpassdecentralizespvtxt: "This wallet connects to the Bitcoin network. This means very little trust in third parties is required when verifying payments. However, it is not as secure as a full node like <a href=\"#download#\">Bitcoin Core</a>."
     checkpassdecentralizeservers: "Decentralized"
-    checkpassdecentralizeserverstxt: "This wallet connects to a random server from a list. This means very little trust in third parties is required when verifying payments. However, it is not as secure as a full node like <a href=\"#download#\">Bitcoin Core</a>."
+    checkpassdecentralizeserverstxt: "This wallet connects to a random server from a list. This means little trust in third parties is required when verifying payments. However, it is not as secure as a full node like <a href=\"#download#\">Bitcoin Core</a>."
     checkfaildecentralizecentralized: "Centralized"
     checkfaildecentralizecentralizedtxt: "This wallet relies on a centralized service by default. This means a third party must be trusted to not hide or simulate payments."
     checkgoodtransparencydeterministic: "Complete transparency"
