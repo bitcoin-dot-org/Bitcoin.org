@@ -121,6 +121,7 @@ en:
     walletgreenaddress: "GreenAddress is a user-friendly multi-signature wallet with improved security and privacy. At no time your keys are server side, not even encrypted. For security reasons, you should always use 2FA and the browser extension or Android App."
     walletdownload: "<a href=\"#download#\">Download</a>"
     walletvisit: "Visit website"
+    walletsourcecode: "Source code"
     checkgoodcontrolfull: "Control over your money"
     checkgoodcontrolfulltxt: "This wallet gives you full control over your bitcoins. This means no third party can freeze or lose your funds. You are however still responsible for securing and backing up your wallet."
     checkpasscontrolhybrid: "Hosted control over your money"

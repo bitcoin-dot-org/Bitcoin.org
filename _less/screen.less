@@ -1398,10 +1398,10 @@ table td,table th{
 	margin:10px 0 12px 0;
 	padding:0;
 }
-.wallets>div>div>h2:first-child+div+div>a,
-.wallets>div>div>h2:first-child+div+div>a:visited,
-.wallets>div>div>h2:first-child+div+div>a:link,
-.wallets>div>div>h2:first-child+div+div>a:active{
+.wallets>div>div>h2:first-child+div+div>a:first-child,
+.wallets>div>div>h2:first-child+div+div>a:first-child:visited,
+.wallets>div>div>h2:first-child+div+div>a:first-child:link,
+.wallets>div>div>h2:first-child+div+div>a:first-child:active{
 	display:inline-block;
 	font-weight:bold;
 	text-decoration:none;
@@ -1418,8 +1418,23 @@ table td,table th{
 	-moz-border-radius:4px;
 	border-radius:4px;
 }
-.wallets>div>div>h2:first-child+div+div>a:hover{
+.wallets>div>div>h2:first-child+div+div>a:first-child:hover{
 	background-image:none;
+}
+.wallets>div>div>h2:first-child+div+div>a:first-child+a,
+.wallets>div>div>h2:first-child+div+div>a:first-child+a:visited,
+.wallets>div>div>h2:first-child+div+div>a:first-child+a:link,
+.wallets>div>div>h2:first-child+div+div>a:first-child+a:active{
+	display:inline-block;
+	font-weight:normal;
+	text-decoration:none;
+	color:#255f96;
+	border:1px solid #255f96;
+	margin-left:10px;
+	padding:4px 8px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
 }
 .wallets>div>div>h2:first-child+div+div+div{
 	margin:5px 0;
