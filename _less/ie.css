@@ -228,6 +228,10 @@ body{
 	zoom:1;
 	display:inline;
 }
+.eventtable span a{
+	zoom:1;
+	display:inline;
+}
 
 .alert-message a:hover,
 .alert-message a:hover:link,

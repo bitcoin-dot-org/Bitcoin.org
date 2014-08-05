@@ -43,10 +43,9 @@ map.addLayer(markers);
 {% filter_for p in site.conferences sort_by:date %}
   <div><div>{{ p.date | date:"%Y-%m-%d" }}</div><div><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></div><div>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div></div>
 {% endfilter_for %}
+  <span><a href="https://github.com/bitcoin/bitcoin.org/issues/new?title=New%20event&amp;body=date%3A%20YYYY-MM-DD%0Atitle%3A%20%22%22%0Avenue%3A%20%22%22%0Aaddress%3A%20%22%22%0Acity%3A%20%22%22%0Acountry%3A%20%22%22%0Alink%3A%20%22%22">{% translate eventsubmit %}</a></span>
 </div>
 
-<ul>
-  <li>{% translate meetupgroup %}</li>
-  <li>{% translate meetupbitcointalk %}</li>
-  <li>{% translate meetupwiki %}</li>
-</ul>
+<p>{% translate meetupgroup %}</p>
+<p>{% translate meetupbitcointalk %}</p>
+<p>{% translate meetupwiki %}</p>
