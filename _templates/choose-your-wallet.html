@@ -511,17 +511,17 @@ wallets:
     <li class="wallet-mobile">
     <a data-walletcompat="mobile">{% translate walletcatmobile %}</a>
     <ul>
-      <li><a data-walletcompat="android">Android</a></li>
-      <li><a data-walletcompat="iphone">iPhone</a></li>
-      <li><a data-walletcompat="blackberry">BlackBerry</a></li>
+      <li><a data-walletcompat="android">{% translate platformandroid %}</a></li>
+      <li><a data-walletcompat="iphone">{% translate platformiphone %}</a></li>
+      <li><a data-walletcompat="blackberry">{% translate platformblackberry %}</a></li>
     </ul>
     </li>
     <li class="wallet-desktop">
     <a data-walletcompat="desktop">{% translate walletcatdesktop %}</a>
     <ul>
-      <li><a data-walletcompat="windows">Windows</a></li>
-      <li><a data-walletcompat="mac">Mac</a></li>
-      <li><a data-walletcompat="linux">Linux</a></li>
+      <li><a data-walletcompat="windows">{% translate platformwindows %}</a></li>
+      <li><a data-walletcompat="mac">{% translate platformmac %}</a></li>
+      <li><a data-walletcompat="linux">{% translate platformlinux %}</a></li>
     </ul>
     </li>
     <li class="wallet-hardware" style="display:none;"><a data-walletcompat="hardware">{% translate walletcathardware %}</a></li>
@@ -535,7 +535,7 @@ wallets:
   <span></span>
   <div>
     <h2>{{ wallet[1].title }}</h2>
-    <div>{% for os in platform.os %}<img src="/img/os/{{ os }}.png" alt="{{ os }}" title="{{ os }}" />{% endfor %}</div>
+    <div>{% for os in platform.os %}<img src="/img/os/{{ os }}.png" alt="{% translate platform{{os}} %}" title="{% translate platform{{os}} %}" />{% endfor %}</div>
     <div>{% if platform.link contains '://' %}<a href="{{ platform.link }}">{% translate walletvisit %}</a>{% else %}{% translate {{platform.link}} %}{% endif %}{% if platform.source %}<a href="{{ platform.source }}">{% translate walletsourcecode %}</a>{% endif %}</div>
     <div>
       {% for check in platform.check %}{% if check[0] == 'privacy' and platform.privacycheck %}
@@ -565,7 +565,7 @@ wallets:
   <span></span>
   <div>
     <h2>{{ wallet[1].title }}</h2>
-    <div>{% for os in platform[1].os %}<img src="/img/os/{{ os }}.png" alt="{{ os }}" title="{{ os }}" />{% endfor %}</div>
+    <div>{% for os in platform[1].os %}<img src="/img/os/{{ os }}.png" alt="{% translate platform{{os}} %}" title="{% translate platform{{os}} %}" />{% endfor %}</div>
     <div>{% if platform[1].link contains '://' %}<a href="{{ platform[1].link }}">{% translate walletvisit %}</a>{% else %}{% translate {{platform[1].link}} %}{% endif %}{% if platform[1].source %}<a href="{{ platform[1].source }}">{% translate walletsourcecode %}</a>{% endif %}</div>
     <div>
       {% for check in platform[1].check %}{% if check[0] == 'privacy' and platform[1].privacycheck %}
