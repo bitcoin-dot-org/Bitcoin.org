@@ -16,10 +16,16 @@
 <body>
 <div id="detectmobile" class="detectmobile"></div>
 {% if site.ALERT %}
-  <div class="alert-message">
+  <div class="banner-message alert">
     <div><div>{{ site.ALERT }}</div></div>
   </div>
 {% endif %}
+{% case page.lang %}
+{% when 'fa' or 'pl' or 'tr' or 'zh_TW' %}
+  <div class="banner-message info">
+    <div><div>{% translate banner-translate layout %}</div></div>
+  </div>
+{% endcase %}
   <div class="head"><div>
     <select id="langselect" class="langselect" onchange="window.location=this.value;">
     {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{% endif %}

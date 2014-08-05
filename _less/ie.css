@@ -233,10 +233,10 @@ body{
 	display:inline;
 }
 
-.alert-message a:hover,
-.alert-message a:hover:link,
-.alert-message a:hover:active,
-.alert-message a:hover:visited{
+.banner-message a:hover,
+.banner-message a:hover:link,
+.banner-message a:hover:active,
+.banner-message a:hover:visited{
 	color:#fff;
 }
 
