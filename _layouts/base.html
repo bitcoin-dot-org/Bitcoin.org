@@ -27,11 +27,6 @@
   </div>
 {% endcase %}
   <div class="head"><div>
-    <select id="langselect" class="langselect" onchange="window.location=this.value;">
-    {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{% endif %}
-          <option value="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"{{ active }}>{{ site.langs[lang] }}</option>
-    {% endfor %}
-    </select>
     <ul class="lang">
       <li><a href="#" onclick="return false;">{{ site.langs[page.lang] }}</a>
       <ul>
@@ -47,6 +42,11 @@
     </ul>
     <a class="logo" href="/{{ page.lang }}/"><img src="/img/logotop.svg" alt="Bitcoin"></a>
     <a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" href="#"></a>
+    <div id="langselect" class="langselect"><select onchange="window.location=this.value;">
+    {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{% endif %}
+          <option value="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"{{ active }}>{{ site.langs[lang] }}</option>
+    {% endfor %}
+    </select></div>
     <ul id="menusimple" class="menusimple" onclick="mobileMenuHover(event);">
       <li><a href="#" onclick="return false;">{% translate menu-intro layout %}</a>
         <ul>

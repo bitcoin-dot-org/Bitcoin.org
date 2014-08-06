@@ -168,7 +168,7 @@ var mm=document.getElementById('menusimple');
 var ml=document.getElementById('langselect');
 var t=document.getElementById('menumobile');
 if(mm.style.display=='block'){mm.style.display='';ml.style.display='';}
-else{mm.style.display='block';ml.style.display='inline-block';}
+else{mm.style.display='block';ml.style.display='block';}
 t.parentNode.removeChild(t);
 cancelEvent(e);
 }
