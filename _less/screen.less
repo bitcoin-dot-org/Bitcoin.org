@@ -1708,10 +1708,7 @@ h2 .rssicon{
 	margin:0 auto 20px auto;
 }
 .downloadbox p{
-	margin:20px 0 0 0;
-}
-.downloadbox p:first-child{
-	margin:0 0 10px 0;
+	margin:0;
 }
 .downloadbox p a{
 	font-size:90%;
@@ -1727,20 +1724,13 @@ h2 .rssicon{
 .downloadbox div div{
 	display:block;
 	width:190px;
-	margin:10px 0;
+	margin:25px 0;
 	text-align:left;
 }
 .downloadbox img{
 	width:32px;
 	height:32px;
-	position:relative;
-	bottom:-22px;
-}
-.downloadbox small{
-	display:block;
-	position:relative;
-	left:40px;
-	margin-top:4px;
+	vertical-align:middle;
 }
 
 .eventmap{
@@ -2446,11 +2436,18 @@ h2 .rssicon{
 		text-align:left;
 	}
 	.downloadbox div div{
-		margin:0;
+		margin:10px 0;
 		width:auto;
+	}
+	.downloadbox div{
+		margin:0;
+		display:block;
 	}
 	.downloadbox>p:first-child{
 		display:none;
+	}
+	.downloadbox>p+div+div+p{
+		margin-top:25px;
 	}
 	.eventmap{
 		height:200px;

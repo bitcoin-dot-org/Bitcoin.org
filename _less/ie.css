@@ -204,10 +204,6 @@ body{
 	zoom:1;
 	display:inline;
 }
-.downloadbox p{
-	margin-top:expression(this.parentNode.getElementsByTagName('P')[0]==this?'0px':'20px');
-	margin-bottom:expression(this.parentNode.getElementsByTagName('P')[0]==this?'20px':'0px');
-}
 .downloadbox a{
 	zoom:1;
 	display:inline;
