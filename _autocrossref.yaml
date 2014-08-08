@@ -240,6 +240,7 @@ BIP72:
 '`getbalance`': rpc getbalance
 '`getbestblockhash`': rpc getbestblockhash
 '`getblock`': rpc getblock
+'`getblockchaininfo`': rpc getblockchaininfo
 '`getblockcount`': rpc getblockcount
 '`getblockhash`': rpc getblockhash
 '`getblocktemplate`': rpc getblocktemplate
@@ -251,6 +252,7 @@ BIP72:
 '`getmininginfo`': rpc getmininginfo
 '`getnettotals`': rpc getnettotals
 '`getnetworkhashps`': rpc getnetworkhashps
+'`getnetworkinfo`': rpc getnetworkinfo
 '`getnewaddress`': rpc getnewaddress
 '`getpeerinfo`': rpc getpeerinfo
 '`getrawchangeaddress`': rpc getrawchangeaddress
@@ -262,6 +264,7 @@ BIP72:
 '`gettxout`': rpc gettxout
 '`gettxoutsetinfo`': rpc gettxoutsetinfo
 '`getunconfirmedbalance`': rpc getunconfirmedbalance
+'`getwalletinfo`': rpc getwalletinfo
 '`getwork`': rpc getwork
 '`help`': rpc help
 '`importprivkey`': rpc importprivkey
