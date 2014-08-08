@@ -229,7 +229,7 @@ wallets:
 - blockchain:
     title: "Blockchain.info"
     titleshort: "Blockchain<br>.info"
-    compat: "mobile desktop web android iphone windows mac linux"
+    compat: "mobile desktop web android ios windows mac linux"
     level: 3
     platform:
       mobile:
@@ -239,7 +239,7 @@ wallets:
         screenshot: "blockchainandroid.png"
         os:
         - android
-        - iphone
+        - ios
         check:
           control: "checkpasscontrolhybrid"
           decentralization: "checkfaildecentralizecentralized"
@@ -285,14 +285,14 @@ wallets:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
-      iphone:
+      ios:
         text: "walletblockchaininfo"
         link: "https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309"
         source: "https://github.com/blockchain/My-Wallet-iPhone"
         screenshot: "blockchainiphone.png"
         os:
         - android
-        - iphone
+        - ios
         check:
           control: "checkpasscontrolhybrid"
           decentralization: "checkfaildecentralizecentralized"
@@ -310,7 +310,7 @@ wallets:
         screenshot: "blockchainandroid.png"
         os:
         - android
-        - iphone
+        - ios
         check:
           control: "checkpasscontrolhybrid"
           decentralization: "checkfaildecentralizecentralized"
@@ -345,7 +345,7 @@ wallets:
 - greenaddress:
     title: "GreenAddress"
     titleshort: "Green<br>Address"
-    compat: "mobile desktop web android iphone windows mac linux"
+    compat: "mobile desktop web android ios windows mac linux"
     level: 3
     platform:
       mobile:
@@ -355,7 +355,7 @@ wallets:
         screenshot: "greenaddressandroid.png"
         os:
         - android
-        - iphone
+        - ios
         check:
           control: "checkpasscontrolmulti"
           decentralization: "checkpassdecentralizeservers"
@@ -401,14 +401,14 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
-      iphone:
+      ios:
         text: "walletgreenaddress"
         link: "https://itunes.apple.com/us/app/greenaddress/id889740745?ls=1&mt=8"
         source: "https://github.com/greenaddress/WalletCordova"
         screenshot: "greenaddressandroid.png"
         os:
         - android
-        - iphone
+        - ios
         check:
           control: "checkpasscontrolmulti"
           decentralization: "checkpassdecentralizeservers"
@@ -426,7 +426,7 @@ wallets:
         screenshot: "greenaddressandroid.png"
         os:
         - android
-        - iphone
+        - ios
         check:
           control: "checkpasscontrolmulti"
           decentralization: "checkpassdecentralizeservers"
@@ -512,7 +512,7 @@ wallets:
     <a data-walletcompat="mobile">{% translate walletcatmobile %}</a>
     <ul>
       <li class="wallet-android"><a data-walletcompat="android">{% translate platformandroid %}</a></li>
-      <li class="wallet-iphone"><a data-walletcompat="iphone">{% translate platformiphone %}</a></li>
+      <li class="wallet-ios"><a data-walletcompat="ios">{% translate platformios %}</a></li>
       <li class="wallet-blackberry"><a data-walletcompat="blackberry">{% translate platformblackberry %}</a></li>
     </ul>
     </li>
