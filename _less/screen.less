@@ -1176,7 +1176,8 @@ table td,table th{
 	border-bottom-right-radius:0;
 }
 .walletmenu ul li.active,
-.walletmenu ul li.select{
+.walletmenu ul li.select,
+.walletmenu ul li:hover{
 	background-position:left -62px;
 	background-color:#0d579b;
 	color:#fff;
@@ -1190,6 +1191,7 @@ table td,table th{
 .walletmenu ul li a{
 	padding:8px 10px 5px 42px;
 	display:block;
+	white-space:nowrap;
 }
 .walletmenu ul li ul{
 	display:none;
@@ -1210,15 +1212,20 @@ table td,table th{
 	display:block;
 	padding:0;
 	margin:0;
+	background-position:left 10px;
 	-webkit-border-radius:0px;
 	-moz-border-radius:0px;
 	border-radius:0px;
+}
+.walletmenu ul li ul li.select,
+.walletmenu ul li ul li:hover{
+	background-position:left -24px;
 }
 .walletmenu ul li ul li a{
 	background-image:url(/img/wallet_select.svg);
 	background-repeat:no-repeat;
 	background-position:-32px center;
-	padding:8px 10px 5px 10px;
+	padding:8px 32px 5px 32px;
 	margin:1px 0;
 }
 .walletmenu ul li ul li.select a{
@@ -1235,6 +1242,24 @@ table td,table th{
 }
 .walletmenu .wallet-web{
 	background-image:url(/img/wallet_menu_web.svg);
+}
+.walletmenu .wallet-blackberry{
+	background-image:url(/img/os/wallet_menu_blackberry.svg);
+}
+.walletmenu .wallet-iphone{
+	background-image:url(/img/os/wallet_menu_iphone.svg);
+}
+.walletmenu .wallet-android{
+	background-image:url(/img/os/wallet_menu_android.svg);
+}
+.walletmenu .wallet-windows{
+	background-image:url(/img/os/wallet_menu_windows.svg);
+}
+.walletmenu .wallet-mac{
+	background-image:url(/img/os/wallet_menu_mac.svg);
+}
+.walletmenu .wallet-linux{
+	background-image:url(/img/os/wallet_menu_linux.png);
 }
 
 .wallets{
