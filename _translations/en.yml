@@ -196,6 +196,7 @@ en:
     spec: "Documentation"
     spectxt: "If you are interested in learning more about the technical details of Bitcoin and how to use existing tools and APIs, it is recommended you start by exploring the <a href=\"/en/developer-documentation\">developer documentation</a>."
     coredev: "Core developers"
+    inventor: "The Bitcoin system was originally designed by Satoshi Nakamoto. His original Bitcoin codebase is now being maintained as Bitcoin Core by the following developers and a community of volunteers."
     disclosure: "Responsible disclosure"
     disclosuretxt: "If you find a vulnerability related to Bitcoin, non-critical vulnerabilities can be emailed in English to any of the core developers or sent to the private bitcoin-security mailing list listed above. An example of a non-critical vulnerability would be an expensive-to-carry-out denial of service attack. Critical vulnerabilities that are too sensitive for unencrypted email should be sent to one or more of the core developers, encrypted with their PGP key(s)."
     involve: "Get involved"
