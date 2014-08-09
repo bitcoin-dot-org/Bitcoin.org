@@ -1330,6 +1330,66 @@ Result:
 
 
 
+#### getblockchaininfo
+
+~~~
+getblockchaininfo
+~~~
+
+{% autocrossref %}
+
+Provides information about the current state of the block chain.  *This
+RPC was added in Bitcoin Core 0.9.2.*
+
+**Result**
+
+A JSON object containing several key/value pairs: *chain* telling you
+whether you're working on the main block chain or a testnet or regtest
+block chain, the number of *blocks* processed by the node, the *best
+block hash* (tip of the chain), the current network *difficulty*, an
+estimate of the *verification progress* (1 for 100% verified), and the
+total amount of *chain work* seen in the current chain (displayed in
+hexadecimal). *Note: verificationprogress may exceed 1 (100%) because it's
+just an estimate.*
+
+{% endautocrossref %}
+
+~~~
+{
+  "chain": "<name>",
+  "blocks": <integer>,
+  "bestblockhash": "<SHA256 hash>",
+  "difficulty": <decimal difficulty>,
+  "verificationprogress": <decimal>,
+  "chainwork": "<hexadecimal>"
+}
+~~~
+
+**Example**
+
+~~~
+bitcoin-cli -testnet getblockchaininfo
+~~~
+
+Result:
+
+~~~
+{
+    "chain" : "testnet3",
+    "blocks" : 272899,
+    "bestblockhash" : "00000000000047021429fb03107900637205c38b6\
+                       4ebd2400bfe5be18f78da5e",
+    "difficulty" : 110221.77693374,
+    "verificationprogress" : 0.99999913,
+    "chainwork" : "000000000000000000000000000000000000000000000\
+                   0001dc6696de16ca6c8"
+}
+~~~
+
+
+
+
+
 #### getblockcount
 
 ~~~
@@ -1866,6 +1926,11 @@ getinfo
 
 Prints various information about the node and the network.
 
+![Warning icon](/img/icon_warning.svg)
+**Warning:** `getinfo` will be removed in a later version of Bitcoin
+Core.  Use `getblockchaininfo`, `getnetworkinfo`, or `getwalletinfo`
+instead.
+
 {% endautocrossref %}
 
 **Result**
@@ -2103,6 +2168,74 @@ Result:
 
 ~~~
 79510076167
+~~~
+
+
+#### getnetworkinfo
+
+~~~
+getnetworkinfo
+~~~
+
+{% autocrossref %}
+
+Provides information about the node's connection to the network. *This
+RPC was added in Bitcoin Core 0.9.2.*
+
+**Result**
+
+A JSON object containing several key/value pairs: the server *version*,
+the *protocol version*, the server's *time offset* from the averaged network time,
+how many *connections* it has to other nodes, information about any
+*proxy* being used, the smallest *relay fee* per kilobyte this node will accept
+in order to relay transactions, and a JSON array of IP *addresses* and
+*port* numbers which the node is listening to along with a *score* for
+each (with the array with the highest score being the one returned to
+peers).
+
+{% endautocrossref %}
+
+~~~
+{
+  "version": <integer>,
+  "protocolversion": <integer>,
+  "timeoffset": <integer seconds>,
+  "connections": <integer>,
+  "proxy": "<host>:<port>",
+  "relayfee": <decimal bitcoins>,
+  "localaddresses": [
+    "address": "<address>",
+    "port": <port>,
+    "score": <integer>
+  ]
+}
+~~~
+
+**Example**
+
+
+~~~
+bitcoin-cli -testnet getnetworkinfo
+~~~
+
+Result:
+
+~~~
+{
+    "version" : 90200,
+    "protocolversion" : 70002,
+    "timeoffset" : 0,
+    "connections" : 12,
+    "proxy" : "",
+    "relayfee" : 0.00001000,
+    "localaddresses" : [
+        {
+            "address" : "68.39.150.9",
+            "port" : 18333,
+            "score" : 65
+        }
+    ]
+}
 ~~~
 
 
@@ -3023,6 +3156,60 @@ Result (no satoshis unconfirmed):
 0.00000000
 ~~~
 
+
+#### getwalletinfo
+
+~~~
+getwalletinfo
+~~~
+
+{% autocrossref %}
+
+Provides information about the wallet. *This RPC was added in Bitcoin
+Core 0.9.2.*
+
+**Result**
+
+A JSON object containing several key/value pairs: the *walletversion*
+number, the current wallet's *balance* (the same as `getbalance`), the
+number of transactions made by this wallet (*txcount*), the oldest
+pre-generated key in the keypool (*keypoololdest*), the number of keys
+in the keypool which have not received a transaction (*keypoolsize*),
+the time in seconds since 1 January 1970 (epoch time) when an encrypted wallet
+will become locked or 0 if the wallet is currently locked
+(*unlocked_until*)---see `walletpassphrase`.
+
+{% endautocrossref %}
+
+~~~
+{
+    "walletversion" : <integer>,
+    "balance" : <decimal bitcoins>,
+    "txcount" : <integer>,
+    "keypoololdest" : <epoch date>,
+    "keypoolsize" : <integer>,
+    "unlocked_until" : <epoch date>
+}
+~~~
+
+**Example**
+
+~~~
+bitcoin-cli -testnet getwalletinfo
+~~~
+
+Result:
+
+~~~
+{
+    "walletversion" : 60000,
+    "balance" : 1.45060000,
+    "txcount" : 17,
+    "keypoololdest" : 1398809500,
+    "keypoolsize" : 196,
+    "unlocked_until" : 0
+}
+~~~
 
 
 #### getwork

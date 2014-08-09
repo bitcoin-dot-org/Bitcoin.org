@@ -218,6 +218,7 @@
 [rpc getbalance]: /en/developer-reference#getbalance
 [rpc getbestblockhash]: /en/developer-reference#getbestblockhash
 [rpc getblock]: /en/developer-reference#getblock
+[rpc getblockchaininfo]: /en/developer-reference#getblockchaininfo
 [rpc getblockcount]: /en/developer-reference#getblockcount
 [rpc getblockhash]: /en/developer-reference#getblockhash
 [rpc getblocktemplate]: /en/developer-reference#getblocktemplate
@@ -229,6 +230,7 @@
 [rpc getmininginfo]: /en/developer-reference#getmininginfo
 [rpc getnettotals]: /en/developer-reference#getnettotals
 [rpc getnetworkhashps]: /en/developer-reference#getnetworkhashps
+[rpc getnetworkinfo]: /en/developer-reference#getnetworkinfo
 [rpc getnewaddress]: /en/developer-reference#getnewaddress
 [rpc getpeerinfo]: /en/developer-reference#getpeerinfo
 [rpc getrawchangeaddress]: /en/developer-reference#getrawchangeaddress
@@ -240,6 +242,7 @@
 [rpc gettxout]: /en/developer-reference#gettxout
 [rpc gettxoutsetinfo]: /en/developer-reference#gettxoutsetinfo
 [rpc getunconfirmedbalance]: /en/developer-reference#getunconfirmedbalance
+[rpc getwalletinfo]: /en/developer-reference#getwalletinfo
 [rpc getwork]: /en/developer-reference#getwork
 [rpc help]: /en/developer-reference#help
 [rpc importprivkey]: /en/developer-reference#importprivkey
