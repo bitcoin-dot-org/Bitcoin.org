@@ -194,6 +194,7 @@
 [HMAC-SHA512]: https://en.wikipedia.org/wiki/HMAC
 [HTTP longpoll]: https://en.wikipedia.org/wiki/Push_technology#Long_polling
 [irc channels]: https://en.bitcoin.it/wiki/IRC_channels
+[libblkmaker]: https://gitorious.org/bitcoin/libblkmaker
 [MIME]: https://en.wikipedia.org/wiki/Internet_media_type
 [Merge Avoidance subsection]: /en/developer-guide#merge-avoidance
 [mozrootstore]: https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
@@ -201,6 +202,7 @@
 [Piotr Piasecki's testnet faucet]: https://tpfaucet.appspot.com/
 [prime symbol]: https://en.wikipedia.org/wiki/Prime_%28symbol%29
 [protobuf]: https://developers.google.com/protocol-buffers/
+[python-blkmaker]: https://gitorious.org/bitcoin/python-blkmaker
 [raw transaction format]: /en/developer-reference#raw-transaction-format
 [rpc addmultisigaddress]: /en/developer-reference#addmultisigaddress
 [rpc addnode]: /en/developer-reference#addnode
