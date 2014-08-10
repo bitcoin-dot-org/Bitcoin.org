@@ -144,7 +144,7 @@ tr:
     walletbitcoinwallet: "Bitcoin Wallet, Android ve BlackBerry için hafif bir cep istemcisidir. Bu istemcinin çalışması için herhangi bir çevrimiçi servise bağlanmasına gerek yoktur. QR kod taranması ve NFC ile uyumludur."
     walletblockchaininfo: "Blockchain.info kolay kullanılan karma bir cüzdandır. İnternette cüzdanınızın şifreli hâlini saklar ama çözümlenmesi tarayıcınızda olur. Güvenlik sebepleri nedeniyle her zaman tarayıcı eklentisini ve e-posta yedeklemesini kullanmalısınız."
     walletcoinbase: "Coinbase kullanılışı en kolay olmayı amaçlayan bir ağ cüzdanı servisidir. Android ağ cüzdanı uygulaması, tüccar aletleri ve bitcoin alım-verimi için ABD banka hesaplarıyla entegrasyonu vardır."
-    walletdownload: "<a href=\"#download#\">İndir</a>"
+    walletdownload: "İndir"
     walletvisit: "Siteye git"
     walletwebwarning: "Dikkatli olun"
     walletwebwarningtxt: "Ağ cüzdanları bitcoinlerinizi barındırır. Bu demektir ki onların tarafındaki bir sorun sonucunda bitcoinlerinizin kaybedilmesi mümkündür. Şu anda hiç bir ağ cüzdan servisi banka gibi para saklamaya yetecek kadar sigorta sağlamaz."

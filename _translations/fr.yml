@@ -119,7 +119,7 @@ fr:
     walletcoinkite: "Coinkite est un portefeuille Web et un service de carte débit qui vise à être facile d'utilisation. Il fonctionne aussi sur les navigateurs de téléphones portables, offre des outils pour les commerces et des terminaux pour les points de vente. Coinkite est un portefeuille hybride et un coffre à réserve entière."
     walletbitgo: "BitGo est un portefeuille multi-signature qui offre le plus haut niveau de sécurité. Chaque transaction nécessite deux signatures, ce qui protège vos bitcoins contre les programmes malveillants et les attaques informatiques. Les clés privées sont contrôlées par l'utilisateur, de telle sorte à ce que BitGo ne puisse pas avoir accès aux bitcoins. Il s'agit d'un bon choix pour les utilisateurs non experimentés."
     walletgreenaddress: "GreenAddress est un portefeuille convivial et multi-signature offrant une confidentialité et une sécurité accrues. À aucun moment vos clefs ne se trouvent du côté du serveur, même cryptées. Pour des raisons de sécurité, vous devriez toujours utiliser 2FA et l'extension du navigateur ou l'application Android."
-    walletdownload: "<a href=\"#download#\">Télécharger</a>"
+    walletdownload: "Télécharger"
     walletvisit: "Visiter le site Web"
     walletsourcecode: "Code source"
     platformandroid: "Android"

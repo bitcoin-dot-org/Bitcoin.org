@@ -144,7 +144,7 @@ zh_TW:
     walletbitcoinwallet: "Bitcoin Wallet 是輕量的行動客戶端，支持 Android 和 BlackBerry OS 兩種版本。這個客戶端不需和任何線上服務綁定就可以運作。它 QR 碼掃瞄及 NFC 相容。"
     walletblockchaininfo: "Blockchain.info 是一個方便使用的的綜合性錢包。它將錢包的加密版本儲存在線上，但在你的瀏覽器裡解密。為安全起見，你應該使用它的瀏覽器擴充套件，同時用 Email 來備份。"
     walletcoinbase: "Coinbase 的目標是成為最容易使用的網頁版錢包。它提供 Android 用的網頁版錢包應用程式、買賣工具，並且能整合美國的銀行帳戶進行 bitcoin 買賣。"
-    walletdownload: "<a href=\"#download#\">下載</a>"
+    walletdownload: "下載"
     walletvisit: "前往網站"
     walletwebwarning: "請注意！"
     walletwebwarningtxt: "網頁版錢包託管了你的 Bitcoin，意味著它們有可能因為自身的意外而丟失了你的 Bitcoin。截至今日，與銀行相比之下，還沒有任何網頁版錢包服務能提供足夠保存錢包價值的保險。"

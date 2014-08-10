@@ -145,7 +145,7 @@ pl:
     walletbitcoinwallet: "Bitcoin Wallet jest niewielką aplikacją mobilną dla systemów z Androidem czy BlackBerry. Nie musi być powiązany z żadnym serwisem online by móc działać. Jest kompatybilny ze skanerem kodów QR oraz NFC."
     walletblockchaininfo: "Blockchain.info jest przyjaznym dla użytkownika portfelem hybrydowym. Przechowuje zaszyfrowaną wersję portfela w sieci, a proces rozkodowywania następuje w twojej przeglądarce. Ze względów bezpieczeństwa powinieneś zawsze używać wtyczki do przeglądarki i wysyłać kopie zapasowe mailami."
     walletcoinbase: "Coinbase jest serwisem portfela sieciowego który mierzy w bycie najprostszym w użytkowaniu. Udostępnia również aplikację portfela sieciowego na Androida, narzędzia handlowe oraz integrację z kontami bankowymi w USA by umożliwić zakup oraz sprzedaż bitcoin."
-    walletdownload: "<a href=\"#download#\">Pobierz</a>"
+    walletdownload: "Pobierz"
     walletvisit: "Odwiedź witrynę"
     walletwebwarning: "Bądź ostrożny"
     walletwebwarningtxt: "Portfele sieciowe przechowują twoje monety. To oznacza, że jest możliwe by straciły one twoje bitcoiny w wyniku incydentu po ich stronie. Na dzień dzisiejszy żaden serwis sieciowy nie świadczy wystarczającego bezpieczeństwa by chronić zawartość tak jak bank."
