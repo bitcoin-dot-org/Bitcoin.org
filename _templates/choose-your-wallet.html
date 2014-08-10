@@ -53,46 +53,6 @@ wallets:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
-- hive:
-    title: "Hive"
-    titleshort: "Hive"
-    compat: "mobile desktop android mac"
-    level: 2
-    platform:
-      mobile:
-        text: "wallethive-android"
-        link: "https://play.google.com/store/apps/details?id=com.hivewallet.androidclient.wallet"
-        source: "https://github.com/hivewallet/hive-android"
-        screenshot: "hiveandroid.png"
-        os:
-        - android
-        check:
-          control: "checkgoodcontrolfull"
-          decentralization: "checkpassdecentralizespv"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
-        privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
-      desktop:
-        text: "wallethive"
-        link: "https://hivewallet.com/#native"
-        source: "https://github.com/hivewallet/hive-osx"
-        screenshot: "hivemac.png"
-        os:
-        - mac
-        check:
-          control: "checkgoodcontrolfull"
-          decentralization: "checkpassdecentralizespv"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkfailprivacyweak"
-        privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - armory:
     title: "Armory"
     titleshort: "Armory"
@@ -203,6 +163,62 @@ wallets:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
+- hive:
+    title: "Hive"
+    titleshort: "Hive"
+    compat: "mobile desktop web android mac"
+    level: 3
+    platform:
+      mobile:
+        text: "wallethive-android"
+        link: "https://play.google.com/store/apps/details?id=com.hivewallet.androidclient.wallet"
+        source: "https://github.com/hivewallet/hive-android"
+        screenshot: "hiveandroid.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      desktop:
+        text: "wallethive"
+        link: "https://hivewallet.com/#native"
+        source: "https://github.com/hivewallet/hive-osx"
+        screenshot: "hivemac.png"
+        os:
+        - mac
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+      web:
+        text: "wallethive-web"
+        link: "https://hivewallet.com/"
+        source: "https://github.com/hivewallet/hive-js"
+        screenshot: "hiveweb.png"
+        os:
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - mycelium:
     title: "Mycelium"
     titleshort: "Mycelium"
