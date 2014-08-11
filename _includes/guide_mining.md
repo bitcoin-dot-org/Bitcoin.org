@@ -194,9 +194,9 @@ peer-to-peer network.
 
 <!-- SOMEDAY: describe p2pool -->
 
-**Resources:** For more information, please see the [BFGMiner][] mining
-software licensed under GPLv3 or the [Eloipool][] mining pool software
-licensed under AGPLv3. A number of other mining and pool programs
-exist, although many are forks of BFGMiner or Eloipool.
+**Resources:** The GPLv3 [BFGMiner][] mining software and AGPLv3
+[Eloipool][] mining pool software are widely-used among miners and
+pools. The [libblkmaker][] C library and [python-blkmaker][] library,
+both MIT licensed, can interpret GetBlockTemplate for your programs.
 
 {% endautocrossref %}
