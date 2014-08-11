@@ -121,7 +121,7 @@ es:
     walletcoinkite: "Coinkite es un monedero web además de una tarjeta de débito con el propósito de ser de fácil uso. También funciona en navegadores móviles, cuenta con herramientas comerciales y terminales de pago para puntos de venta. Se trata de un monedero híbrido y una caja fuerte a su disposición."
     walletbitgo: "BitGo es un monedero multi-firma que ofrece los niveles de seguridad más altos. Cada transacción necesita dos firmas, que protege su bitcoin de ataques de malware o contra servidores. El usuario mantiene control de las llaves, para que BitGo no pueda obtener acceso al bitcoin. Es una selección buena para los usuarios no técnicos."
     walletgreenaddress: "GreenAddress es una cartera de múltiples firmas, amigable con el usuario, con una seguridad y privacidad mejorada. En ningún momento tus llaves se encuentran en el lado del servidor, ni siquiera encriptadas. Por razones de seguridad, tu siempre debes utilizar 2FA y la extensión de tu navegador o la aplicación de Android."
-    walletdownload: "<a href=\"#download#\">Descargar</a>"
+    walletdownload: "Descargar"
     walletvisit: "Ir al sitio"
     walletwebwarning: "¡Ten cuidado!"
     walletwebwarningtxt: "Los monederos web almacenan tus bitcoins. Esto significa que pueden perder sus bitcoins si algo le ocurre a la web. Hoy en día, no existe ningún monedero web que proporcione suficiente seguridad para ser usado como un banco."

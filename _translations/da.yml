@@ -121,7 +121,7 @@ da:
     walletcoinkite: "Coinkite er en web-tegnebog- og debetkorttjeneste, som bestræber sig på at være nem at bruge. Den fungerer også på mobile browsere, den har værktøjer til handelsdrivende og betalingsterminaler til fysiske forretninger. Det er en hybridtegnebog med \"full reserve vault\""
     walletbitgo: "BitGo er en tegnebog med multi-signaturer, der tilbyder det højeste niveau af sikkerhed. Hver transaktion kræver to signaturer, hvilket beskytter dine bitcoin imod malware og serverangreb. Private nøgler opbevares hos brugeren, sådan at BitGo ikke har adgang til dine bitcoin. Den er et godt valg for ikke-tekniske brugere."
     walletgreenaddress: "GreenAddress er en brugervenlig tegnebog med multi-signaturer og forbedret sikkerhed og privatlivsbeskyttelse. På intet tidspunkt kommer dine nøgler i nærheden af serveren, heller ikke i krypteret tilstand. Af sikkerhedsårsager bør du altid benytte 2FA og browser-udvidelsen eller Android-app'en."
-    walletdownload: "<a href=\"#download#\">Hent</a>"
+    walletdownload: "Hent"
     walletvisit: "Besøg hjemmeside"
     walletwebwarning: "Vær forsigtig"
     walletwebwarningtxt: "Web-tegnebøger opbevarer dine bitcoins. Dette betyder, at det er muligt for dem at miste dine bitcoins som følge af en hændelse hos dem. P.t. tilbyder ingen web-tegnebog nok forsikring til at kunne bruges til opbevaring af værdier som en bank."

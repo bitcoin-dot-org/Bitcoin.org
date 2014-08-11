@@ -121,7 +121,7 @@ ro:
     walletcoinkite: "Coinkite este un portofel web şi card de debit cu scopul de a fi uşor de utilizat. Funcţionează de asemenea şi pe browserele mobile, are unelte de comerciant şi terminale de plata point-of-sale. Este un portofel hibrid şi un sistem de trezorerie."
     walletbitgo: "BitGo este un portofel multi-semnătură ce oferă cele mai înalte nivele de securitate. Fiecare tranzacţie necesită două semnături, protejându-ţi bitcoinii de malware şi de atacuri ale serverului. Cheile private sunt ţinute de utilizator aşa că BitGo nu îţi poate accesa bitcoinii. Este o alege bună pentru utilizatorii mai puţini tehnici."
     walletgreenaddress: "GreenAddress este un portofel cu semnătură multiplă uşor de utilizat având o securitate şi intimitate îmbunătăţită. Cheile tale nu sunt stocate deloc pe server, nici măcar criptate. Pentru motive de securitate, este recomandat să activezi 2FA şi extensia de browser sau aplicaţia pentru Android."
-    walletdownload: "<a href=\"#download#\">Download</a>"
+    walletdownload: "Download"
     walletvisit: "Vizitează site-ul web"
     walletwebwarning: "Fii atent!"
     walletwebwarningtxt: "Portofelele web găzduiesc bitcoinii tăi. Asta înseamnă că este posibil că ei să îţi piardă bitcoinii în urma unui incident nefericit. În momentul de faţă, nu există servicii de portofele web ce oferă destulă asigurare pentru a stoca valoare ca o bancă."

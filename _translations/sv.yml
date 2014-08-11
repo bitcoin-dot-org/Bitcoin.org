@@ -120,7 +120,7 @@ sv:
     walletcoinkite: "Coinkite är en webbplånbok och bankkortstjänst som siktar på att vara enkel att använda. Det fungerar också i mobilwebbläsare, har handlarverktyg och betalningsterminaler."
     walletbitgo: "BitGo är en multisignatursplånbok som erbjuder den högsta nivån av säkerhet. Varje transaktion kräver två signaturer, vilket skyddar dina bitcoins från virus och server attacker. Privata nycklar sparas av användare på ett sådant sätt att BitGo inte kan komma åt dina bitcoins. Det är ett bra val för icke tekniska användare."
     walletgreenaddress: "GreenAddress är en användarvänligt multisignatursplånbok med ökad säkerhet och integritet. Inte vid något tillfälle finns dina nycklar på deras servrar, inte ens krypterad. Av säkerhetsskäl borde du alltid använda 2FA och webbläsartillägget eller Android applikationen."
-    walletdownload: "<a href=\"#download#\">Ladda ner</a>"
+    walletdownload: "Ladda ner"
     walletvisit: "Besök hemsidan"
     walletwebwarning: "Var försiktig"
     walletwebwarningtxt: "Webb plånböcker lagrar dina bitcoins. Det betyder att det är möjligt för dem att förlora dina bitcoins ifall något händer. Just nu finns det inga sådana webb plånböcker som tillhandahåller tillräckligt med skydd för att spara större belopp som på en bank. "

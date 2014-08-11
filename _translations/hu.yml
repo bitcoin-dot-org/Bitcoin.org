@@ -119,7 +119,7 @@ hu:
     walletcoinkite: "A Coinkite egy webes pénztárca-, valamint hitelkártya-szolgáltatás, amely fő célja az egyszerű használatóság. Mobiltelefonos böngészőkből is működik, tartalmaz kereskedői eszközöket és POS fizetési terminálokat. Egy hibrid pénztárca és maximális (kész)pénztartású trezor."
     walletbitgo: "A BitGo egy csoportos aláírást igénylő pénztárca, amely igen magas szintű biztonságot garantál. Minden tranzakció két aláírást igényel, megvédve ezzel bitcoinjait a rosszindulatú szoftverektől és szervertámadásoktól. A privát kulcsokat a felhasználók birtokolják, ily módon a BitGo nem férhet hozzá a bitcoinokhoz. Jó választás a számítástechnikai ismeretekkel nem rendelkező felhasználók számára."
     walletgreenaddress: "A GreenAddress egy felhasználóbarát, csoportos aláírást igénylő pénztárca megnövelt biztonsággal és adatvédelemmel. A privát kulcsai sohasem lesznek szerveroldalon, még titkosított állapotban sem. Biztonsági okokból 2FA-t (kétszintű hitelesítést) és a böngészőkiterjesztést vagy Android-alkalmazást érdemes használnia."
-    walletdownload: "<a href=\"#download#\">Letöltés</a>"
+    walletdownload: "Letöltés"
     walletvisit: "Tovább a weboldalra"
     walletsourcecode: "Forráskód"
     platformandroid: "Android"

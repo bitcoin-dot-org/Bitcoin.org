@@ -120,7 +120,7 @@ sl:
     walletcoinkite: "Coinkite ponuja spletno denarnico ter debetne kartice s ciljem enostavnosti uporabe. Deluje tudi na mobilnih brskalnikih, ponujajo pa še orodja za trgovce, npr. POS-terminale. Deluje kot denarnica in hkrati trezor s polno rezervo."
     walletbitgo: "BitGo je denarnica z večstranskim podpisovanjem, ki nudi najvišjo stopnjo varnosti. Vsako nakazilo zahteva dva podpisa, kar ščiti vaša sredstva pred napadi na strežnike in zlonamerno programsko opremo. Uporabnik hrani zasebne ključe, zato BitGo ne more sam dostopati do uporabnikovih novcev. BitGo je dobra izbira za tehnično manj podkovane uporabnike."
     walletgreenaddress: "GreenAddress je uporabniku prijazna večpodpisna denarnica z višjo stopnjo varnosti in zasebnosti. Strežniki ponudnika nikoli ne vidijo vaših zasebnih ključev niti v šifrirani obliki. Za še večjo varnost svetujemo uporabo dvostopenjske overitve ter aplikacije za brskalnik ali Android."
-    walletdownload: "<a href=\"#download#\">Prenesi</a>"
+    walletdownload: "Prenesi"
     walletvisit: "Obiščite spletno stran"
     walletwebwarning: "Bodite previdni"
     walletwebwarningtxt: "Spletne denarnice v vašem imenu držijo vaša sredstva. To pomeni, da je mogoče, da izgubijo vaše novce, če pride do napake ali napada na njihovi strani. Trenutno ne obstajajo spletne denarnice, ki bi zagotavljale dovolj zavarovanja za hranjenje sredstev kot banke. "
