@@ -110,12 +110,12 @@
     <span>© Bitcoin Project 2009-2014 {% translate footer layout %}</span>
     </div>
   </div>
-  <div class="foundation-banner">
+  <div class="sponsor-banner">
     {% case page.lang %}
     {% when 'fa' %}
-    <div style="direction:ltr;">{% translate sponsor layout %} <a href="https://bitcoinfoundation.org/"><img src="/img/brand/logo_foundation.svg" alt="Foundation"> The Bitcoin Foundation</a></div>
+    <div style="direction:ltr;"><span>{% translate sponsor layout %}</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>
     {% else %}
-    <div>{% translate sponsor layout %} <a href="https://bitcoinfoundation.org/"><img src="/img/brand/logo_foundation.svg" alt="Foundation"> The Bitcoin Foundation</a></div>
+    <div><span>{% translate sponsor layout %}</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>
     {% endcase %}
   </div>
   <script type="text/javascript">fallbackSVG();</script>

@@ -274,8 +274,17 @@ body{
 	display:inline;
 }
 
-.foundation{
-	width:500px;
+.sponsor-banner div{
+	display:inline;
+	zoom:1;
+}
+.sponsor-banner span,
+.sponsor-banner a,
+.sponsor-banner a:link,
+.sponsor-banner a:active,
+.sponsor-banner a:visited{
+	display:inline;
+	zoom:1;
 }
 
 .devprojectlist li{
