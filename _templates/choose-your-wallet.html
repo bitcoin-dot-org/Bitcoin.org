@@ -206,7 +206,7 @@ wallets:
 - hive:
     title: "Hive"
     titleshort: "Hive"
-    compat: "mobile desktop web android mac"
+    compat: "mobile desktop web android ios mac"
     level: 3
     platform:
       mobile:
@@ -225,6 +225,40 @@ wallets:
         privacycheck:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "wallethive-android"
+        link: "https://play.google.com/store/apps/details?id=com.hivewallet.androidclient.wallet"
+        source: "https://github.com/hivewallet/hive-android"
+        screenshot: "hiveandroid.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      ios:
+        text: "wallethive-web"
+        link: "https://hivewallet.com/"
+        source: "https://github.com/hivewallet/hive-ios"
+        screenshot: "hiveios.png"
+        os:
+        - ios
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       desktop:
         text: "wallethive"
