@@ -1,5 +1,5 @@
 ---
-date: 2014-12-05
+date: 2014-12-11
 title: "Dubai Bitcoin Conference"
 venue: "Dubai International Financial Center"
 address: "Dubai International Financial Center"
