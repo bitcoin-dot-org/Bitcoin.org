@@ -17,7 +17,7 @@ id: download
     <div>
       <div><img src="/img/os/med_osx.png" alt="osx"> <a href="/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-osx.dmg">Mac OS X</a></div>
       <div><img src="/img/os/med_linux.png" alt="linux"> <a href="/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-linux.tar.gz">Linux (tgz)</a></div>
-      <div><img src="/img/os/med_ubuntu.svg" alt="ubuntu"> <a href="https://launchpad.net/~bitcoin/+archive/bitcoin">Ubuntu (PPA)</a></div>
+      <div><img src="/img/os/med_ubuntu.svg" alt="ubuntu"> <a href="https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin">Ubuntu (PPA)</a></div>
     </div>
     <p>
       <a href="/bin/{{site.DOWNLOAD_VERSION}}/SHA256SUMS.asc">{% translate downloadsig %}</a><br>
@@ -53,7 +53,7 @@ case 'linux':
 break;
 case 'ubuntu':
   but.getElementsByTagName('IMG')[0].src='/img/but_ubuntu.svg';
-  but.href='https://launchpad.net/~bitcoin/+archive/bitcoin';
+  but.href='https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin';
 break;
 case 'mac':
   but.getElementsByTagName('IMG')[0].src='/img/but_mac.svg';
