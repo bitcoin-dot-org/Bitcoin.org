@@ -97,7 +97,7 @@ by hand in your browser address bar.
 
 #### Building With Make
 
-After you've installed Jekyll and the other depenencies, you can
+After you've installed Jekyll and the other dependencies, you can
 optionally use GNU Make to automatically build the site and run several
 tests. You will first need to install Make using your package manager;
 for example:
