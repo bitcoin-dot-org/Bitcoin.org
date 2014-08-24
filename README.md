@@ -246,6 +246,55 @@ More information will follow.
 * `banner: ...` (optional) a short text that will be displayed in a red alert banner and link to the alert page.
 * `last updated: ...` should be kept up to date and be in RFC 2822 format ( date -uR ).
 
+## Wallets
+
+Wallets can be added in `_templates/choose-your-wallet.html`. Entries are ordered by levels and new wallets must be added after the last wallet on the same level.
+
+* Level 1 - Full nodes
+* Level 2 - SPV, Random servers
+* Level 3 - Hybrid, Multisig wallets
+* Level 4 - Web wallets
+
+**Screenshot**: The png files must go in `/img/screenshots`, be 250 X 350 px and optimized with `optipng -o7 file.png`.
+
+**Icon**: The png file must go in `/img/wallet`, be 144 X 144 px and optimized with `optipng -o7 file.png`. The icon must fit within 96 X 96 px inside the png, or 85 X 85 px for square icons.
+
+**Description**: The text must go in `_translations/en.yml` alongside other wallets' descriptions.
+
+### Score
+
+Each wallet is assigned a score for five criterias. For each of them, the appropriate text in `_translations/en.yml` needs to be choosen.
+
+**Control** - What control the user has over his bitcoins?
+
+To get a good score, the wallet must provide the user with full exclusive control over their bitcoins.
+
+To get a passing score, the wallet must provide the user with exclusive control over their bitcoins. Encrypted online backups are accepted so long as only the user can decrypt them. Multisig wallets are accepted so long as only the user can spend without the other party's permission.
+
+**Decentralization** - How secure and « zero trust » is payment processing?
+
+To get a good score, the wallet must be a full node and need no trust on other nodes.
+
+To get a passing score, the wallet must rely on random nodes, either by using the SPV model or a pre-populated list or servers.
+
+**Transparency** - How transparent and « zero trust » is the source code?
+
+To get a good score, the wallet must deserve a passing score and be built deterministically.
+
+To get a passing score, the wallet must be open-source, under version control and releases must be clearly identified (e.g. by tags or commits). The codebase must be public since at least 6 months and previous commits must remain unchanged.
+
+**Environment** - How secure is the environment of the wallet?
+
+To get a good score, the wallet must run from an environment where no apps can be installed.
+
+To get a passing score, the wallet must run from an environment that provides app isolation (e.g. Android, iOS), or require two-factor authentication for spending.
+
+**Privacy**: Does the wallet protect users' privacy?
+
+To get a good score, the wallet must rotate addresses, avoid disclosing information to peers or central servers and be compatible with Tor.
+
+To get a passing score, the wallet must rotate addresses.
+
 ## Advanced Usage
 
 ### Redirections
