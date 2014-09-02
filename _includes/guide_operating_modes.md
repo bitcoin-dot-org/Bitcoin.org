@@ -82,10 +82,10 @@ Bloom filters were standardized for use via [BIP37](https://github.com/bitcoin/b
 
 {% autocrossref %}
 
-There are future proposals such as Unused Output Tree (UOT) in the block chain to find a more satisfactory middle-ground for clients between needing a complete copy of the block chain, or trusting that a majority of your connected peers are not lying. UOT would enable a very secure client using a finite amount of storage using a data structure that is authenticated in the block chain. These type of proposals are, however, in very early stages, and will require soft forks in the network. 
+There are future proposals such as Unspent Transaction Output (UTXO) commitments in the block chain to find a more satisfactory middle-ground for clients between needing a complete copy of the block chain, or trusting that a majority of your connected peers are not lying. UTXO commitments would enable a very secure client using a finite amount of storage using a data structure that is authenticated in the block chain. These type of proposals are, however, in very early stages, and will require soft forks in the network.
 
 Until these types of operating modes are implemented, modes should be chosen based on the likely threat model, computing and bandwidth constraints, and liability in bitcoin value.
 
-**Resources:** [Original Thread on UOT](https://bitcointalk.org/index.php?topic=88208.0), [UOT Prefix Tree BIP Proposal](https://github.com/maaku/bips/blob/master/drafts/auth-trie.mediawiki)
+**Resources:** [Original Thread on UTXO Commitments](https://bitcointalk.org/index.php?topic=88208.0), [Authenticated Prefix Trees BIP Proposal](https://github.com/maaku/bips/blob/master/drafts/auth-trie.mediawiki)
 
 {% endautocrossref %}
