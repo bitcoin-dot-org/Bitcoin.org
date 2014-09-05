@@ -173,7 +173,7 @@ sl:
     checkpassprivacybasic: "Osnovna stopnja zasebnosti"
     checkfailprivacyweak: "Šibka zasebnost"
     checkpassprivacyaddressrotation: "Otežuje sledenje vašim plačilom"
-    checkpassprivacyaddressrotationtxt: "Ta denarnica otežuje sledenje stanju in nakazilom v vaši denarnici tako, da omogoča uporabo vedno novih naslovov. Še vedno pa morate sami paziti na to, da pri vsakem prejetem plačilu uporabite nov bitcoin naslov."
+    checkpassprivacyaddressrotationtxt: "Ta denarnica otežuje sledenje stanju in nakazilom v vaši denarnici tako, da menja naslove. Še vedno pa morate sami paziti na to, da pri vsakem prejetem plačilu uporabite nov bitcoin naslov."
     checkfailprivacyaddressrotation: "Dovoljuje spremljanje vaših plačil"
     checkfailprivacyaddressrotationtxt: "Ta denarnica omogoča vsakomur zelo enostavno spremljati stanje in plačila v vaši denarnici, ker en naslov uporablja večkrat."
     checkpassprivacydisclosurefullnode: "Izogiba se razkrivanju informacij"
