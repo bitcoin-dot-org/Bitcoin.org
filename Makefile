@@ -107,3 +107,10 @@ check-for-non-ascii-urls:
 	    ; do grep -H . $$file | sed -n -e '/url:/,$$p' \
 	    | grep -P '[^\x00-\x7f]|[a-z\-] [a-z\-]' \
 	; done | eval $(ERROR_ON_OUTPUT)
+
+._jekyll-environment: Dockerfile
+	docker build -t jekyll-environment .
+	touch ._jekyll-environment
+
+docker: ._jekyll-environment
+	docker run -i -t -v $(PWD):/root -w /root jekyll-environment /bin/bash
