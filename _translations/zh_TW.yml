@@ -160,7 +160,7 @@ zh_TW:
     coredev: "核心開發人員"
     involve: "參與開發"
     involvetxt1: "Bitcoin 屬於開放原始碼，任何開發者都能參與這個專案。你所需要的一切都在<a href=\"https://github.com/bitcoin/bitcoin\">Github repository</a>上。請確實閱讀並遵守 README 裡的開發流程、提供高品質的程式碼，以及遵守所有的指導方針。"
-    involvetxt2: "Bitcoin 的開發討論在 github 上進行，在 sourceforge 有<a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">bitcoin-development</a>的郵件清單。irc.freenode.net 上有非正式的開發討論 #bitcoin-dev (&rarr;<a href=\"#\" onclick=\"freenodeShow(event);\" />web 界面</a>; <a href=\"http://bitcoinstats.com\">日誌</a>)。 "
+    involvetxt2: "Bitcoin 的開發討論在 github 上進行，在 。irc.freenode.net 上有非正式的開發討論 #bitcoin-dev (&rarr;<a href=\"#\" onclick=\"freenodeShow(event);\" />web 界面</a>; <a href=\"http://bitcoinstats.com\">日誌</a>)。 "
     more: "更多開放原始碼計劃"
     moremore: "顯示更多..."
     contributors: "Bitcoin Core 貢獻者"
