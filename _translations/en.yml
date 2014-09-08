@@ -524,7 +524,6 @@ en:
     offlinetxtxt5: "Because the computer that is connected to the network cannot sign transactions, it cannot be used to withdraw any funds if it is compromised. <a href=\"https://bitcoinarmory.com/about/using-our-wallet/#offlinewallet\">Armory</a> can be used to do offline transaction signature."
     hardwarewallet: "Hardware wallets"
     hardwarewallettxt: "Hardware wallets are the best balance between very high security and ease of use. These are little devices that are designed from the root to be a wallet and nothing else. No software can be installed on them, making them very secure against computer vulnerabilities and online thieves. Because they can allow backup, you can recover your funds if you lose the device."
-    hardwarewalletsoon: "As of today, no hardware wallet has entered in production but they are coming soon:"
     update: "Keep your software up to date"
     updatetxt: "Using the latest version of your Bitcoin software allows you to receive important stability and security fixes. Updates can prevent problems of various severity, include new useful features and help keep your wallet safe. Installing updates for all other software on your computer or mobile is also important to keep your wallet environment safer."
     offlinemulti: "Multi-signature to protect against theft"
