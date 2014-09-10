@@ -203,6 +203,46 @@ wallets:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
+- breadwallet:
+    title: "breadwallet"
+    titleshort: "breadwallet"
+    compat: "mobile ios"
+    level: 2
+    platform:
+      mobile:
+        text: "walletbreadwallet"
+        link: "http://breadwallet.com/"
+        source: "https://github.com/voisine/breadwallet"
+        screenshot: "breadwallet.png"
+        os:
+        - ios
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkfailtransparencynew"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      ios:
+        text: "walletbreadwallet"
+        link: "http://breadwallet.com/"
+        source: "https://github.com/voisine/breadwallet"
+        screenshot: "breadwallet.png"
+        os:
+        - ios
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkfailtransparencynew"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 - hive:
     title: "Hive"
     titleshort: "Hive"
