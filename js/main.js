@@ -418,14 +418,12 @@ function walletSelectPlatform(t){
 //Select wallets platform when the mouse clicks on the menu.
 var p=t;
 while(p.nodeName!='DIV')p=p.parentNode;
-if(t.parentNode.parentNode.parentNode.nodeName!='DIV'){
-	for(var i=0,nds=p.getElementsByTagName('A'),n=nds.length;i<n;i++){
-		nds[i].removeAttribute('data-select');
-		removeClass(nds[i].parentNode,'select');
-	}
-	t.setAttribute('data-select','1');
-	addClass(t.parentNode,'select');
+for(var i=0,nds=p.getElementsByTagName('A'),n=nds.length;i<n;i++){
+	nds[i].removeAttribute('data-select');
+	removeClass(nds[i].parentNode,'select');
 }
+t.setAttribute('data-select','1');
+addClass(t.parentNode,'select');
 if(isMobile()&&t.parentNode.getElementsByTagName('UL').length==0){
 	setTimeout(function(){scrollToNode(document.getElementById('wallets'));},10);
 }
@@ -440,11 +438,6 @@ for(var i=0,nds=document.getElementById('walletmenu').getElementsByTagName('A'),
 	if(nds[i].getAttribute('data-active')=='1')active=nds[i];
 }
 if(select===null||active===null)return;
-var selectp=select;
-var activep=active;
-while(selectp.parentNode.parentNode.nodeName!='DIV')selectp=selectp.parentNode;
-while(activep.parentNode.parentNode.nodeName!='DIV')activep=activep.parentNode;
-if(selectp!=activep)return;
 walletShowPlatform(select.getAttribute('data-walletcompat'));
 }
 
@@ -463,6 +456,7 @@ for(var i=0,nds=document.getElementById('wallets').childNodes,n=nds.length;i<n;i
 	if(nds[i].nodeType!=1)continue;
 	if(nds[i].getAttribute('data-walletcompat').indexOf(platform)!==-1)removeClass(nds[i],'disabled');
 	else addClass(nds[i],'disabled');
+	addClass(nds[i],'nohover');
 	var id=nds[i].id.replace('wallet-','');
 	if(!document.getElementById('wallet-'+id+'-'+platform))continue;
 	nds[i].replaceChild(document.getElementById('wallet-'+id+'-'+platform).getElementsByTagName('DIV')[0].cloneNode(true),nds[i].getElementsByTagName('DIV')[0]);
@@ -503,7 +497,8 @@ while(t.nodeName!='DIV'&&t.parentNode.id!='wallets'){
 	if(t.id=='wallets')return;
 	t=t.parentNode;
 }
-if(t.className.indexOf('disabled')===-1)return;
+t.setAttribute('data-previousclass',t.className);
+removeClass(t,'nohover');
 removeClass(t,'disabled');
 addEvent(t,'mouseover',walletDisabledHide);
 addEvent(t,'mouseout',walletDisabledHide);
@@ -519,7 +514,7 @@ while(t.nodeName!='DIV'||t.parentNode.id!='wallets'){
 clearTimeout(t.getAttribute('data-disabletimeout'));
 if(e.type=='mouseover')return;
 t.setAttribute('data-disabletimeout',setTimeout(function(){
-	addClass(t,'disabled');
+	for(var i=0,nds=t.getAttribute('data-previousclass').split(' '),n=nds.length;i<n;i++)addClass(t,nds[i]);
 	t.removeAttribute('data-disabletimeout');
 	removeEvent(t,'mouseout',walletDisabledHide);
 	removeEvent(t,'mouseover',walletDisabledHide);
