@@ -161,7 +161,7 @@ fa:
     coredev: "توسعه دهندگان هسته اصلی"
     involve: "وارد بحث شوید"
     involvetxt1: "توسعه بیت کوین به صورت متن-باز است و هر توسعه دهنده ای می تواند به پروژه کمک کند. هر آنچه که شما لازم دارید در <a href=\"https://github.com/bitcoin/bitcoin\">انبار Github</a> وجود دارد. لطفا از خواندن و دنبال کردن فرایند توسعه که در README توضیح داده شده است، مطمئن شوید تا کدی با کیفیت ارائه دهید و تمام دستورالعمل ها را رعایت کرده باشید."
-    involvetxt2: "بحث های توسعه در github و لیست نامه ای  انجام می پذیرد. بحث های نیمه رسمی توسعه در irc.freenode.net #bitcoin-dev (&rarr;<a href=\"#\" onclick=\"freenodeShow(event);\" />web interface</a>; <a href=\"http://bitcoinstats.com\">logs</a>) انجام می شود."
+    involvetxt2: "بحث های توسعه در github و لیست نامه ای <a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">توسعه-بیت-کوین</a> در sourceforge انجام می پذیرد. بحث های نیمه رسمی توسعه در irc.freenode.net #bitcoin-dev (&rarr;<a href=\"#\" onclick=\"freenodeShow(event);\" />web interface</a>; <a href=\"http://bitcoinstats.com\">logs</a>) انجام می شود."
     contributors: "همکاران Bitcoin Core"
     contributorsorder: "(مرتب شده بر اساس تعداد متعهدین)"
   download:

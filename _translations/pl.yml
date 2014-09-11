@@ -161,7 +161,7 @@ pl:
     coredev: "Główni programiści"
     involve: "Weź udział"
     involvetxt1: "Bitcoin rozwijany jest jako projekt wolnego oprogramowania i każdy może przyczynić się do jego rozwoju. Wszystko czego potrzebujesz zawarte jest w <a href=\"https://github.com/bitcoin/bitcoin\">repozytorium Github</a>. Proszę upewnij się, że przeczytałeś oraz postępujesz zgodnie z procesem opisanym w pliku README oraz że przygotowujesz dobrej jakości kod respektując wszystkie wytyczne."
-    involvetxt2: "Dyskusja o rozwoju ma miejsce na github oraz na liście mailingowej. Mniej formalna dyskusja ma miejsce na irc.freenode.net na kanale #bitcoin-dev (&rarr;<a href=\"#\" onclick=\"freenodeShow(event);\" />interfejs sieciowy</a>; <a href=\"http://bitcoinstats.com\">logi</a>)."
+    involvetxt2: "Dyskusja o rozwoju ma miejsce na github oraz na liście mailingowej <a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">bitcoin-development</a> zamieszczonej na sourceforge. Mniej formalna dyskusja ma miejsce na irc.freenode.net na kanale #bitcoin-dev (&rarr;<a href=\"#\" onclick=\"freenodeShow(event);\" />interfejs sieciowy</a>; <a href=\"http://bitcoinstats.com\">logi</a>)."
     more: "Więcej projektów otwartego oprogramowania"
     moremore: "Pokaż więcej..."
     contributors: "Współautorzy Bitcoin Core"
