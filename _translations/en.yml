@@ -122,6 +122,7 @@ en:
     walletcoinkite: "Coinkite is a web wallet &amp; debit card service that aims to be easy to use. It also works on mobile browsers, has merchant tools, point-of-sale payment terminals. It is a hybrid wallet and full reserve vault."
     walletbitgo: "BitGo is a multi-signature wallet offering a high level of security. Every transaction requires two signatures, protecting your bitcoins from malware and server attacks. Private keys are held by the user such that BitGo cannot access the bitcoins. It is a good choice for non technical users."
     walletgreenaddress: "GreenAddress is a user-friendly multi-signature wallet with improved security and privacy. At no time your keys are server side, not even encrypted. For security reasons, you should always use 2FA and the browser extension or Android App."
+    walletquickwallet: "Quickwallet is a user-friendly multi-signaturewallet with two-factor authentication. Every transaction requires two private key signatures, one from the user and one from Quickwallet. This provides great security and convenience for non-technical users."
     walletdownload: "Install"
     walletvisit: "Visit website"
     walletsourcecode: "Source code"
