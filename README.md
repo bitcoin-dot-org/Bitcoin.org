@@ -281,7 +281,7 @@ To get a passing score, the wallet must rely on random nodes, either by using th
 
 To get a good score, the wallet must deserve a passing score and be built deterministically.
 
-To get a passing score, the wallet must be open-source, under version control and releases must be clearly identified (e.g. by tags or commits). The codebase must be public since at least 6 months and previous commits must remain unchanged.
+To get a passing score, the wallet must be open-source, under version control and releases must be clearly identified (e.g. by tags or commits). The codebase and final releases must be public since at least 6 months and previous commits must remain unchanged.
 
 **Environment** - How secure is the environment of the wallet?
 
