@@ -567,6 +567,27 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
+- quickwallet:
+    title: "Quickwallet"
+    titleshort: "Quickwallet"
+    compat: "web"
+    level: 3
+    platform:
+      web:
+        text: "walletquickwallet"
+        link: "https://quickwallet.com"
+        screenshot: "quickwallet.png"
+        os:
+        check:
+          control: "checkpasscontrolmulti"
+          decentralization: "checkpassdecentralizeservers"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - coinbase:
     title: "Coinbase"
     titleshort: "Coinbase"
