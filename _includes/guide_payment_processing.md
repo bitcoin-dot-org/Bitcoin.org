@@ -5,7 +5,7 @@
 Payment processing encompasses the steps spenders and receivers perform
 to make and accept payments in exchange for products or services. The
 basic steps have not changed since the dawn of commerce, but the
-technology has. This section will explain how how receivers and spenders
+technology has. This section will explain how receivers and spenders
 can, respectively, request and make payments using Bitcoin---and how
 they can deal with complications such as refunds and recurrent
 rebilling.
