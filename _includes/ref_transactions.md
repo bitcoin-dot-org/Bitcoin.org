@@ -47,9 +47,7 @@ The op codes used in standard transactions are,
     error in the Bitcoin Core implementation. This value is not used, so
     scriptSigs prefix the signatures with a single OP_0 (0x00).
 
-* [`OP_RETURN`][op_return]{:#term-op-return}{:.term} terminates the script in failure,
-  rendering the output unspendable and allowing a miner to claim the
-  satoshis sent to that OP_RETURN output as an additional transaction fee.
+* [`OP_RETURN`][op_return]{:#term-op-return}{:.term} fails the script immediately when executed.
 
 A complete list of OP codes can be found on the Bitcoin Wiki [Script
 Page][wiki script], with an authoritative list in the `opcodetype` enum
