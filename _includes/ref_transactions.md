@@ -13,15 +13,15 @@ The op codes used in the scriptPubKeys of standard transactions are:
   signatures and public keys onto the stack. See the link below this list
   for a description.
 
-* `OP_TRUE`/`OP_1` (0x51), and `OP_2` through `OP_16` (0x52--0x60), which
-  (respectively) push the values 1, and 2--16 to the stack.
+* `OP_TRUE`/`OP_1` (0x51) and `OP_2` through `OP_16` (0x52--0x60), which
+  push the values 1 through 16 to the stack.
 
 * [`OP_CHECKSIG`][op_checksig]{:#term-op-checksig}{:.term} consumes a signature and a full public key, and pushes
   true onto the stack if the the transaction data specified by the SIGHASH flag was
   converted into the signature using the same ECDSA private key that
   generated the public key.  Otherwise, it pushes false onto the stack.
 
-* [`OP_DUP`][op_dup]{:#term-op-dup}{:.term} pushes a copy of the topmost stack item to the stack.
+* [`OP_DUP`][op_dup]{:#term-op-dup}{:.term} pushes a copy of the topmost stack item on to the stack.
 
 * [`OP_HASH160`][op_hash160]{:#term-op-hash160}{:.term} consumes the topmost item on the stack,
   computes the RIPEMD160(SHA256()) hash of that item, and pushes that hash onto the stack.
@@ -54,7 +54,7 @@ of the Bitcoin Core [script header file][core script.h]
 
 Note: transactions can add non-data-pushing op codes to scriptSigs, but
 as signatures don't sign the contents of scriptSigs this is not useful nor
-secure and such transactions are considered non-standard. In the future this
+secure, and such transactions are considered non-standard. In the future this
 ability may be removed.
 
 {% endautocrossref %}

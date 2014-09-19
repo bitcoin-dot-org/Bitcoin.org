@@ -64,7 +64,7 @@ keys provided).
 
 Bob gives the redeemScript to Charlie, who checks to make sure his
 public key and Alice's public key are included. Then he hashes the
-redeemScript, to create a P2SH scriptPubKey, and pays the satoshis to it. Bob
+redeemScript to create a P2SH scriptPubKey and pays the satoshis to it. Bob
 sees the payment get added to the block chain and ships the merchandise.
 
 Unfortunately, the merchandise gets slightly damaged in transit. Charlie

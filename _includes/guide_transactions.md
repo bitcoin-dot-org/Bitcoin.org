@@ -79,7 +79,7 @@ Once Alice has the address and decodes it back into a standard hash, she
 can create the first transaction. She creates a standard P2PKH
 transaction output containing instructions which allow anyone to spend that
 output if they can prove they control the private key corresponding to
-Bob's hashed public key. These instructions are called the [scriptPubKey][]{:#term-scriptPubKey}{:.term}.
+Bob's hashed public key. These instructions are called the [scriptPubKey][]{:#term-scriptpubkey}{:.term}.
 
 Alice broadcasts the transaction and it is added to the block chain.
 The network categorizes it as an Unspent Transaction Output (UTXO), and Bob's
@@ -225,7 +225,7 @@ problems with it).
 
 {% autocrossref %}
 
-Transaction output scriptPubKey's are created by spenders who have little interest in the
+Transaction scriptPubKeys are created by spenders who have little interest in the
 long-term security or usefulness of the particular satoshis they're
 currently spending. Receivers do care about the conditions imposed on
 the satoshis by the scriptPubKey and, if they want, they can ask
@@ -271,8 +271,8 @@ redeemScript, so P2SH scripts are as secure as P2PKH pubkey hashes.
 
 After the discovery of several dangerous bugs in early versions of
 Bitcoin, a test was added which only accepted transactions from the
-network if they had only scriptPubKeys and scriptSigs which matched a small set of
-believed-to-be-safe templates and if the rest of the transaction didn't
+network if their scriptPubKeys and scriptSigs matched a small set of
+believed-to-be-safe templates, and if the rest of the transaction didn't
 violate another small set of rules enforcing good network behavior. This
 is the `IsStandard()` test, and transactions which pass it are called
 standard transactions.
@@ -308,7 +308,7 @@ scriptSig: <sig> <pubkey>
 
 {% autocrossref %}
 
-**Pay 2 Script Hash (P2SH)**
+**Pay To Script Hash (P2SH)**
 
 P2SH is used to send a transaction to a script hash. Each of the standard
 scriptPubKeys can be used as a P2SH redeemScript, but in practice only the
