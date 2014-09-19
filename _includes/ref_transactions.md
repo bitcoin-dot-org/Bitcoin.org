@@ -52,10 +52,10 @@ A complete list of OP codes can be found on the Bitcoin Wiki [Script
 Page][wiki script], with an authoritative list in the `opcodetype` enum
 of the Bitcoin Core [script header file][core script.h]
 
-Note: non-standard transactions can add non-data-pushing op codes to
-their scriptSig, but scriptSig is run separately from the script (with a
-shared stack), so scriptSig can't use arguments such as `OP_RETURN` to
-prevent the script from working as expected.
+Note: transactions can add non-data-pushing op codes to scriptSigs, but
+as signatures don't sign the contents of scriptSigs this is not useful nor
+secure and such transactions are considered non-standard. In the future this
+ability may be removed.
 
 {% endautocrossref %}
 
