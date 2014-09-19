@@ -16,21 +16,21 @@ The op codes used in standard transactions are,
 * `OP_TRUE`/`OP_1` (0x51), and `OP_2` through `OP_16` (0x52--0x60), which
   (respectively) push the values 1, and 2--16 to the stack.
 
-* [`OP_CHECKSIG`][op_checksig]{:#term-op-checksig}{:.term} consumes a signature and a full public key, and returns
-  true if the the transaction data specified by the SIGHASH flag was
+* [`OP_CHECKSIG`][op_checksig]{:#term-op-checksig}{:.term} consumes a signature and a full public key, and pushes
+  true onto the stack if the the transaction data specified by the SIGHASH flag was
   converted into the signature using the same ECDSA private key that
-  generated the public key.  Otherwise, it returns false.
+  generated the public key.  Otherwise, it pushes false onto the stack.
 
-* [`OP_DUP`][op_dup]{:#term-op-dup}{:.term} returns a copy of the item on the stack below it.
+* [`OP_DUP`][op_dup]{:#term-op-dup}{:.term} pushes a copy of the topmost stack item to the stack.
 
-* [`OP_HASH160`][op_hash160]{:#term-op-hash160}{:.term} consumes the item on the stack below it and returns with
-  a RIPEMD-160(SHA256()) hash of that item.
+* [`OP_HASH160`][op_hash160]{:#term-op-hash160}{:.term} consumes the topmost item on the stack,
+  computes the RIPEMD160(SHA256()) hash of that item, and pushes that hash onto the stack.
 
-* [`OP_EQUAL`][op_equal]{:#term-op-equal}{:.term} consumes the two items on the stack below it and returns
-  true if they are the same.  Otherwise, it returns false.
+* [`OP_EQUAL`][op_equal]{:#term-op-equal}{:.term} consumes the top two items on the stack, compares them, and
+  pushes true onto the stack if they are the same, false if not.
 
-* [`OP_VERIFY`][op_verify]{:#term-op-verify}{:.term} consumes one value and returns nothing, but it will
-  terminate the script in failure if the value consumed is zero (false).
+* [`OP_VERIFY`][op_verify]{:#term-op-verify}{:.term} consumes the topmost item on the stack.
+  If that item is zero (false) it terminates the script in failure.
 
 * [`OP_EQUALVERIFY`][op_equalverify]{:#term-op-equalverify}{:.term} runs `OP_EQUAL` and then `OP_VERIFY` in sequence.
 
@@ -39,14 +39,14 @@ The op codes used in standard transactions are,
   the value (m) now at the top of the stack, and consumes that many of
   the next values (signatures) plus one extra value. Then it compares
   each of public keys against each of the signatures looking for ECDSA
-  matches; if n of the public keys match signatures, it returns true.
-  Otherwise, it returns false.
+  matches; if n of the public keys match signatures, it pushes true onto the stack.
+  Otherwise, it pushes false.
 
     The "one extra value" it consumes is the result of an off-by-one
     error in the Bitcoin Core implementation. This value is not used, so
     scriptSigs prefix the signatures with a single OP_0 (0x00).
 
-* [`OP_RETURN`][op_return]{:#term-op-return}{:.term} fails the script immediately when executed.
+* [`OP_RETURN`][op_return]{:#term-op-return}{:.term} terminates the script in failure when executed.
 
 A complete list of OP codes can be found on the Bitcoin Wiki [Script
 Page][wiki script], with an authoritative list in the `opcodetype` enum
