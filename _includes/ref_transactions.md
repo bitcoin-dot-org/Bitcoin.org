@@ -13,9 +13,8 @@ The op codes used in standard transactions are,
   signatures and public keys onto the stack. See the link below this list
   for a description.
 
-* `OP_1NEGATE` (0x4f), `OP_TRUE`/`OP_1` (0x51), and `OP_2` through
-  `OP_16` (0x52--0x60), which (respectively) push the values -1, 1, and
-  2--16 to the stack.
+* `OP_TRUE`/`OP_1` (0x51), and `OP_2` through `OP_16` (0x52--0x60), which
+  (respectively) push the values 1, and 2--16 to the stack.
 
 * [`OP_CHECKSIG`][op_checksig]{:#term-op-checksig}{:.term} consumes a signature and a full public key, and returns
   true if the the transaction data specified by the SIGHASH flag was
