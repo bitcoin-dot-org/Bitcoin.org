@@ -58,19 +58,19 @@ OP_2 [A's pubkey] [B's pubkey] [C's pubkey] OP_3 OP_CHECKMULTISIG
 stack. `OP_2`
 specifies that 2 signatures are required to sign; `OP_3` specifies that
 3 public keys (unhashed) are being provided. This is a 2-of-3 multisig
-script, more generically called a m-of-n script (where *m* is the
+scriptPubKey, more generically called a m-of-n scriptPubKey (where *m* is the
 *minimum* matching signatures required and *n* in the *number* of public
 keys provided).
 
 Bob gives the redeemScript to Charlie, who checks to make sure his
 public key and Alice's public key are included. Then he hashes the
-redeemScript, puts it in a P2SH output, and pays the satoshis to it. Bob
+redeemScript, to create a P2SH scriptPubKey, and pays the satoshis to it. Bob
 sees the payment get added to the block chain and ships the merchandise.
 
 Unfortunately, the merchandise gets slightly damaged in transit. Charlie
 wants a full refund, but Bob thinks a 10% refund is sufficient. They
 turn to Alice to resolve the issue. Alice asks for photo evidence from
-Charlie along with a copy of the unhashed redeemScript Bob created and
+Charlie along with a copy of the redeemScript Bob created and
 Charlie checked. 
 
 After looking at the evidence, Alice thinks a 40% refund is sufficient,
@@ -78,12 +78,11 @@ so she creates and signs a transaction with two outputs, one that spends 60%
 of the satoshis to Bob's public key and one that spends the remaining
 40% to Charlie's public key.
 
-In the input section of the script, Alice puts her signature
+In the scriptSig Alice puts her signature
 and a copy of the unhashed serialized redeemScript
 that Bob created.  She gives a copy of the incomplete transaction to
 both Bob and Charlie.  Either one of them can complete it by adding
-his signature to create the following input
-script:
+his signature to create the following scriptSig:
 
 {% endautocrossref %}
 
@@ -98,7 +97,7 @@ not shown. `OP_0` is a workaround for an off-by-one error in the original
 implementation which must be preserved for compatibility.)
 
 When the transaction is broadcast to the network, each peer checks the
-input script against the P2SH output Charlie previously paid,
+scriptSig against the P2SH output Charlie previously paid,
 ensuring that the redeemScript matches the redeemScript hash previously
 provided. Then the redeemScript is evaluated, with the two signatures
 being used as input<!--noref--> data. Assuming the redeemScript

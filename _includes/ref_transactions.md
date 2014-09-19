@@ -6,7 +6,7 @@ The following subsections briefly document core transaction details.
 
 {% autocrossref %}
 
-The op codes used in standard transactions are,
+The op codes used in the scriptPubKeys of standard transactions are:
 
 * Various data pushing op codes from 0x00 to 0x4e (1--78). These aren't
   typically shown in examples, but they must be used to push
@@ -173,7 +173,8 @@ fa 20 9c 6a 85 2d d9 06
 ed ce 25 85 7f cd 37 04
 00 00 00 00              previous output index
 
-48                       size of script (var_uint)
+48                       size of scriptSig (var_uint)
+scriptSig for input 0:
 47                       push 71 bytes to stack
 30 44 02 20 4e 45 e1 69
 32 b8 af 51 49 61 a1 d3
@@ -190,8 +191,8 @@ ff ff ff ff              sequence number
 
 output 0:
 00 ca 9a 3b 00 00 00 00  amount = 10.00000000 BTC
-43                       size of script (var_uint)
-script for output 0:
+43                       size of scriptPubKey (var_uint)
+scriptPubKey for output 0:
 41                       push 65 bytes to stack
 04 ae 1a 62 fe 09 c5 f5 
 1b 13 90 5f 07 f0 6b 99 
@@ -206,8 +207,8 @@ ac                       OP_CHECKSIG
 
 output 1:
 00 28 6b ee 00 00 00 00  amount = 40.00000000 BTC
-43                       size of script (var_uint)
-script for output 1:
+43                       size of scriptPubKey (var_uint)
+scriptPubKey for output 1:
 41                       push 65 bytes to stack
 04 11 db 93 e1 dc db 8a  
 01 6b 49 84 0f 8c 53 bc 
