@@ -243,6 +243,23 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
+- trezor:
+    title: "TREZOR"
+    titleshort: "TREZOR"
+    compat: "hardware"
+    level: 2
+    platform:
+      hardware:
+        text: "wallettrezor"
+        link: "http://bitcointrezor.com/"
+        source: "https://github.com/trezor/"
+        screenshot: "trezor.png"
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkneutraldecentralizevariable"
+          transparency: "checkfailtransparencynew"
+          environment: "checkgoodenvironmenthardware"
+          privacy: "checkneutralprivacyvariable"
 - hive:
     title: "Hive"
     titleshort: "Hive"
@@ -654,7 +671,7 @@ wallets:
       <li class="wallet-linux"><a data-walletcompat="linux">{% translate platformlinux %}</a></li>
     </ul>
     </li>
-    <li class="wallet-hardware" style="display:none;"><a data-walletcompat="hardware">{% translate walletcathardware %}</a></li>
+    <li class="wallet-hardware"><a data-walletcompat="hardware">{% translate walletcathardware %}</a></li>
     <li class="wallet-web"><a data-walletcompat="web">{% translate walletcatweb %}</a></li>
   </ul>
 </div>
