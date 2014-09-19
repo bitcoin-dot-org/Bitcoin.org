@@ -79,7 +79,7 @@ Once Alice has the address and decodes it back into a standard hash, she
 can create the first transaction. She creates a standard P2PKH
 transaction output containing instructions which allow anyone to spend that
 output if they can prove they control the private key corresponding to
-Bob's hashed public key. These instructions are called the output [script][]{:#term-script}{:.term}.
+Bob's hashed public key. These instructions are called the [scriptPubKey][]{:#term-scriptPubKey}{:.term}.
 
 Alice broadcasts the transaction and it is added to the block chain.
 The network categorizes it as an Unspent Transaction Output (UTXO), and Bob's
@@ -90,21 +90,21 @@ input which references the transaction Alice created by its hash, called
 a Transaction Identifier (txid), and the specific output she used by its
 index number ([output index][]{:#term-output-index}{:.term}). He must then create a [scriptSig][]{:#term-scriptsig}{:.term}---a
 collection of data parameters which satisfy the conditions Alice placed
-in the previous output's script.
+in the previous output's scriptPubKey.
 
 ![Unlocking A P2PKH Output For Spending](/img/dev/en-unlocking-p2pkh-output.svg)
 
 Bob does not need to communicate with Alice to do this; he must simply
 prove to the Bitcoin peer-to-peer network that he can satisfy the
-script's conditions.  For a P2PKH-style output, Bob's scriptSig will
+scriptPubKey's conditions.  For a P2PKH-style output, Bob's scriptSig will
 contain the following two pieces of data:
 
-1. His full (unhashed) public key, so the script can check that it
+1. His full (unhashed) public key, so the scriptPubKey can check that it
    hashes to the same value as the pubkey hash provided by Alice.
 
 2. A [signature][]{:#term-signature}{:.term} made by using the ECDSA cryptographic formula to combine
    certain transaction data (described below) with Bob's private key.
-   This lets the script verify that Bob owns the private key which
+   This lets the scriptPubKey verify that Bob owns the private key which
    created the public key.
 
 Bob's signature doesn't just prove Bob controls his private key; it also
@@ -115,7 +115,7 @@ broadcast it over the peer-to-peer network.
 
 As illustrated in the figure above, the data Bob signs includes the
 txid and output index of the previous transaction, the previous
-output's script, the script Bob creates which will let the next
+output's scriptPubKey, the scriptPubKey Bob creates which will let the next
 recipient spend this transaction's output, and the amount of satoshis to
 spend to the next recipient. In essence, the entire transaction is
 signed except for any scriptSigs, which hold the full public keys and
@@ -133,8 +133,8 @@ transactions.
 
 {% autocrossref %}
 
-The validation procedure requires evaluation of the script.  In a P2PKH
-output, the script is:
+The validation procedure requires evaluation of the scriptSig and scriptPubKey.
+In a P2PKH output, the scriptPubKey is:
 
 {% endautocrossref %}
 
@@ -170,10 +170,10 @@ sections about stacks. These are programming terms. Also "above",
 "below", "top", and "bottom" are commonly used relative directions or
 locations in stack descriptions. -harding -->
 
-To test whether the transaction is valid, scriptSig and script arguments
+To test whether the transaction is valid, scriptSig and scriptPubKey arguments
 are pushed to the stack one item at a time, starting with Bob's scriptSig
-and continuing to the end of Alice's script. The figure below shows the
-evaluation of a standard P2PKH script; below the figure is a description
+and continuing to the end of Alice's scriptPubKey. The figure below shows the
+evaluation of a standard P2PKH scriptPubKey; below the figure is a description
 of the process.
 
 ![P2PKH Stack Evaluation](/img/dev/en-p2pkh-stack.svg)
@@ -182,7 +182,7 @@ of the process.
   Because it's just data, nothing is done except adding it to the stack.
   The public key (also from the scriptSig) is pushed on top of the signature.
 
-* From Alice's script, the `OP_DUP` operation is pushed. `OP_DUP` replaces
+* From Alice's scriptPubKey, the `OP_DUP` operation is pushed. `OP_DUP` replaces
   itself with a copy of the data from one level below it---in this
   case creating a copy of the public key Bob provided.
 
@@ -190,11 +190,11 @@ of the process.
   of the data from one level below it---in this case, Bob's public key.
   This creates a hash of Bob's public key.
 
-* Alice's script then pushes the pubkey hash that Bob gave her for the
+* Alice's scriptPubKey then pushes the pubkey hash that Bob gave her for the
   first transaction.  At this point, there should be two copies of Bob's
   pubkey hash at the top of the stack.
 
-* Now it gets interesting: Alice's script adds `OP_EQUALVERIFY` to the
+* Now it gets interesting: Alice's scriptPubKey adds `OP_EQUALVERIFY` to the
   stack. `OP_EQUALVERIFY` expands to `OP_EQUAL` and `OP_VERIFY` (not shown).
 
     `OP_EQUAL` (not shown) checks the two values below it; in this
@@ -209,13 +209,13 @@ of the process.
     the transaction validation fails. Otherwise it pops both itself and
     the *true* value off the stack.
 
-* Finally, Alice's script pushes `OP_CHECKSIG`, which checks the
+* Finally, Alice's scriptPubKey pushes `OP_CHECKSIG`, which checks the
   signature Bob provided against the now-authenticated public key he
   also provided. If the signature matches the public key and was
   generated using all of the data required to be signed, `OP_CHECKSIG`
   replaces itself with *true.*
 
-If *true* is at the top of the stack after the script has been
+If *false* is not at the top of the stack after the scriptPubKey has been
 evaluated, the transaction is valid (provided there are no other
 problems with it).
 
@@ -225,17 +225,17 @@ problems with it).
 
 {% autocrossref %}
 
-Output scripts are created by spenders who have little interest in the
+Transaction output scriptPubKey's are created by spenders who have little interest in the
 long-term security or usefulness of the particular satoshis they're
 currently spending. Receivers do care about the conditions imposed on
-the satoshis by the output script and, if they want, they can ask
-spenders to use a particular script. Unfortunately, custom scripts are
+the satoshis by the scriptPubKey and, if they want, they can ask
+spenders to use a particular scriptPubKey. Unfortunately, custom scriptPubKeys are
 less convenient than short Bitcoin addresses and more difficult to
 secure than P2PKH pubkey hashes.
 
 To solve these problems, pay-to-script-hash
 ([P2SH][]{:#term-p2sh}{:.term}) transactions were created in 2012 to let
-a spender create an output script containing a [hash of a second
+a spender create a scriptPubKey containing a [hash of a second
 script][script hash]{:#term-script-hash}{:.term}, the
 [redeemScript][]{:#term-redeemscript}{:.term}.
 
@@ -251,7 +251,7 @@ When Bob wants to spend the output, he provides his signature along with
 the full (serialized) redeemScript in the input scriptSig. The
 peer-to-peer network ensures the full redeemScript hashes to the same
 value as the script hash Alice put in her output; it then processes the
-redeemScript exactly as it would if it were the primary script, letting
+redeemScript exactly as it would if it were the primary scriptPubKey, letting
 Bob spend the output if the redeemScript returns true.
 
 ![Unlocking A P2SH Output For Spending](/img/dev/en-unlocking-p2sh-output.svg)
@@ -271,15 +271,15 @@ redeemScript, so P2SH scripts are as secure as P2PKH pubkey hashes.
 
 After the discovery of several dangerous bugs in early versions of
 Bitcoin, a test was added which only accepted transactions from the
-network if they had an output script which matched a small set of
+network if they had only scriptPubKeys and scriptSigs which matched a small set of
 believed-to-be-safe templates and if the rest of the transaction didn't
 violate another small set of rules enforcing good network behavior. This
-is the `isStandard()` test, and transactions which pass it are called
+is the `IsStandard()` test, and transactions which pass it are called
 standard transactions.
 
 Non-standard transactions---those that fail the test---may be accepted
 by nodes not using the default Bitcoin Core settings. If they are
-included in blocks, they will also avoid the isStandard test and be
+included in blocks, they will also avoid the IsStandard test and be
 processed.
 
 Besides making it more difficult for someone to attack Bitcoin for
@@ -292,33 +292,33 @@ number, it would become useless as a tool for introducing
 backwards-incompatible features.
 
 
-As of Bitcoin Core 0.9, the standard script types are:
+As of Bitcoin Core 0.9, the standard scriptPubKey types are:
 
 **Pubkey Hash (P2PKH)**
 
-P2PKH is the most common form of script used to send a transaction to one
+P2PKH is the most common form of scriptPubKey used to send a transaction to one
 or multiple Bitcoin addresses.
 
 {% endautocrossref %}
 
 ~~~
-script: OP_DUP OP_HASH160 <PubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
+scriptPubKey: OP_DUP OP_HASH160 <PubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
 scriptSig: <sig> <pubkey> 
 ~~~
 
 {% autocrossref %}
 
-**Script Hash (P2SH)**
+**Pay 2 Script Hash (P2SH)**
 
 P2SH is used to send a transaction to a script hash. Each of the standard
-scripts can be used inside a P2SH redeemScript, but in practice only the
-multisig script makes sense until more transaction types are made standard.
+scriptPubKeys can be used as a P2SH redeemScript, but in practice only the
+multisig scriptPubKey makes sense until more transaction types are made standard.
 
 {% endautocrossref %}
 
 ~~~
-script: OP_HASH160 <redeemscripthash> OP_EQUAL
-scriptSig: <sig> [sig] [sig...] <redeemscript>
+scriptPubKey: OP_HASH160 <Hash160(redeemScript)> OP_EQUAL
+scriptSig: <sig> [sig] [sig...] <redeemScript>
 ~~~
 
 {% autocrossref %}
@@ -328,7 +328,7 @@ scriptSig: <sig> [sig] [sig...] <redeemscript>
 Although P2SH multisig is now generally used for multisig transactions, this base script
 can be used to require multiple signatures before a UTXO can be spent.
 
-In multisig scripts, called m-of-n, *m* is the *minimum* number of signatures
+In multisig scriptPubKeys, called m-of-n, *m* is the *minimum* number of signatures
 which must match a public key; *n* is the *number* of public keys being
 provided. Both *m* and *n* should be op codes `OP_1` through `OP_16`,
 corresponding to the number desired.
@@ -342,7 +342,7 @@ list of signatures in the scriptSig must be prefaced with an extra value
 {% endautocrossref %}
 
 ~~~
-script: <m> <pubkey> [pubkey] [pubkey...] <n> OP_CHECKMULTISIG
+scriptPubKey: <m> <pubkey> [pubkey] [pubkey...] <n> OP_CHECKMULTISIG
 scriptSig: OP_0 <sig> [sig] [sig...]
 ~~~
 
@@ -353,16 +353,16 @@ Although it’s not a separate transaction type, this is a P2SH multisig with 2-
 {% endautocrossref %}
 
 ~~~
-script: OP_HASH160 <redeemscripthash> OP_EQUAL
+scriptPubKey: OP_HASH160 <Hash160(redeemScript)> OP_EQUAL
 redeemScript: <OP_2> <pubkey> <pubkey> <pubkey> <OP_3> OP_CHECKMULTISIG
-scriptSig: OP_0 <sig> <sig> <redeemscript>
+scriptSig: OP_0 <sig> <sig> <redeemScript>
 ~~~
 
 {% autocrossref %}
 
 **Pubkey**
 
-[Pubkey][]{:#term-pubkey}{:.term} scripts are a simplified form of the P2PKH script,
+[Pubkey][]{:#term-pubkey}{:.term} scripts are a simplified form of the P2PKH scriptPubKey,
 but they aren’t as
 secure as P2PKH, so they generally
 aren’t used in new transactions anymore.
@@ -370,7 +370,7 @@ aren’t used in new transactions anymore.
 {% endautocrossref %}
 
 ~~~
-script: <pubkey> OP_CHECKSIG
+scriptPubKey: <pubkey> OP_CHECKSIG
 scriptSig: <sig>
 ~~~
 
@@ -378,15 +378,15 @@ scriptSig: <sig>
 
 **Null Data**
 
-[Null data][]{:#term-null-data}{:.term} scripts let you add a small amount of arbitrary data to the block
+[Null data][]{:#term-null-data}{:.term} scriptPubKeys let you add a small amount of arbitrary data to the block
 chain in exchange for paying a transaction fee, but doing so is discouraged.
-(Null data is a standard script type only because some people were adding data
+(Null data is a standard scriptPubKey type only because some people were adding data
 to the block chain in more harmful ways.)
 
 {% endautocrossref %}
 
 ~~~
-script: OP_RETURN <data>
+scriptScriptPubKey: OP_RETURN <0 to 40 bytes of data>
 (Null data scripts cannot be spent, so there's no scriptSig)
 ~~~
 
@@ -394,7 +394,7 @@ script: OP_RETURN <data>
 
 {% autocrossref %}
 
-If you use anything besides a standard script in an output, peers
+If you use anything besides a standard scriptPubKey in an output, peers
 and miners using the default Bitcoin Core settings will neither
 accept, broadcast, nor mine your transaction. When you try to broadcast
 your transaction to a peer running the default settings, you will
@@ -404,11 +404,11 @@ If you create a redeemScript, hash it, and use the hash
 in a P2SH output, the network sees only the hash, so it will accept the
 output as valid no matter what the redeemScript says.
 This allows
-payment to non-standard output scripts almost as easily as payment to
-standard output scripts. However, when you go to
+payment to non-standard scriptPubKeys almost as easily as payment to
+standard scriptPubKeys. However, when you go to
 spend that output, peers and miners using the default settings will
-check the redeemScript to see whether or not it's a standard output
-script. If it isn't, they won't process it further---so it will be
+check the redeemScript to see whether or not it's a standard scriptPubKey.
+If it isn't, they won't process it further---so it will be
 impossible to spend that output until you find a miner who disables the
 default settings.
 
@@ -663,7 +663,7 @@ malleability][]{:.term}{:#term-transaction-malleability}. The scriptSig
 contains the signature, which can't sign itself, allowing attackers to
 make non-functional modifications to a transaction without rendering it
 invalid. For example, an attacker can add some data to the scriptSig
-which will be dropped before the previous output script is processed.
+which will be dropped before the previous scriptPubKey is processed.
 
 Although the modifications are non-functional---so they do not change
 what inputs the transaction uses nor what outputs it pays---they do
