@@ -165,10 +165,10 @@ RPCs: rpc
 RPC:
 satoshi:
 satoshis: satoshi
-script:
+scriptPubKey:
 '`script`': pp script
 script hash:
-scripts: script
+scriptPubKeys: scriptPubKey
 scriptSig:
 scriptSigs: scriptSig
 secp256k1:
