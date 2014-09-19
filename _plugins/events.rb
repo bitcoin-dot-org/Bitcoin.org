@@ -69,6 +69,8 @@ module Jekyll
         next if !/^-?[0-9]{1,2}(\.[0-9]{1,15})?$/.match(lat) or ( lat.to_f < -90 and lat.to_f > 90 )
         next if !/^-?[0-9]{1,3}(\.[0-9]{1,15})?$/.match(lon) or ( lon.to_f < -180 and lon.to_f > 180 )
         next if lon.to_f == 0 and lat.to_f == 0
+	# Ignore events that don't mention "Bitcoin" in their title
+        next if !/bitcoin/i.match(title)
         # Format variables
         time = Time.at((time.to_i + utcoffset.to_i) / 1000)
         time.utc
