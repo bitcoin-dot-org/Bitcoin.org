@@ -6,7 +6,7 @@ The following subsections briefly document core transaction details.
 
 {% autocrossref %}
 
-The op codes used in the scriptPubKeys of standard transactions are:
+The op codes used in the pubkey scripts of standard transactions are:
 
 * Various data pushing op codes from 0x00 to 0x4e (1--78). These aren't
   typically shown in examples, but they must be used to push
@@ -44,7 +44,7 @@ The op codes used in the scriptPubKeys of standard transactions are:
 
     The "one extra value" it consumes is the result of an off-by-one
     error in the Bitcoin Core implementation. This value is not used, so
-    scriptSigs prefix the signatures with a single OP_0 (0x00).
+    signature scripts prefix the secp256k1 signatures with a single OP_0 (0x00).
 
 * [`OP_RETURN`][op_return]{:#term-op-return}{:.term} terminates the script in failure when executed.
 
@@ -53,8 +53,8 @@ Page][wiki script], with an authoritative list in the `opcodetype` enum
 of the Bitcoin Core [script header file][core script.h]
 
 Note: non-standard transactions can add non-data-pushing op codes to
-their scriptSig, but scriptSig is run separately from the script (with a
-shared stack), so scriptSig can't use arguments such as `OP_RETURN` to
+their signature script, but signature scripts are run separately from the pubkey scripts (with a
+shared stack), so signature scripts can't use arguments such as `OP_RETURN` to
 prevent the script from working as expected.
 
 {% endautocrossref %}
@@ -69,7 +69,7 @@ addresses.
 
 First, get your hash.  For P2PKH, you RIPEMD-160(SHA256()) hash a ECDSA
 public key derived from your 256-bit ECDSA private key (random data).
-For P2SH, you RIPEMD-160(SHA256()) hash a redeemScript serialized in the
+For P2SH, you RIPEMD-160(SHA256()) hash a redeem script serialized in the
 format used in raw transactions (described in a [following
 sub-section][raw transaction format]).  Taking the resulting hash:
 
@@ -173,8 +173,9 @@ fa 20 9c 6a 85 2d d9 06
 ed ce 25 85 7f cd 37 04
 00 00 00 00              previous output index
 
-48                       size of scriptSig (var_uint)
-scriptSig for input 0:
+48                       size of signature script (var_uint)
+
+Signature script for input 0:
 47                       push 71 bytes to stack
 30 44 02 20 4e 45 e1 69
 32 b8 af 51 49 61 a1 d3
@@ -191,8 +192,9 @@ ff ff ff ff              sequence number
 
 output 0:
 00 ca 9a 3b 00 00 00 00  amount = 10.00000000 BTC
-43                       size of scriptPubKey (var_uint)
-scriptPubKey for output 0:
+43                       size of pubkey script (var_uint)
+
+Pubkey script for output 0:
 41                       push 65 bytes to stack
 04 ae 1a 62 fe 09 c5 f5 
 1b 13 90 5f 07 f0 6b 99 
@@ -207,8 +209,9 @@ ac                       OP_CHECKSIG
 
 output 1:
 00 28 6b ee 00 00 00 00  amount = 40.00000000 BTC
-43                       size of scriptPubKey (var_uint)
-scriptPubKey for output 1:
+43                       size of pubkey script (var_uint)
+
+Pubkey script for output 1:
 41                       push 65 bytes to stack
 04 11 db 93 e1 dc db 8a  
 01 6b 49 84 0f 8c 53 bc 

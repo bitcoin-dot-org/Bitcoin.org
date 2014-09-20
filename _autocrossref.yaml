@@ -144,8 +144,12 @@ proof of work:
 proof-of-work: proof of work
 protocol buffer: protobuf
 protocol buffers: protobuf
+pubkey: public key
 pubkey hash:
 pubkey hashes: pubkey hash
+pubkey script:
+pubkey scripts: pubkey script
+pubkeys: public key
 public key:
 public keys: public key
 public key infrastructure: pki
@@ -154,7 +158,7 @@ raw format:
 rawtransaction format: raw format
 receipt:
 recurrent rebilling:
-redeemScript:
+redeem script:
 refund: 
 refunds: refund
 regression test mode:
@@ -165,12 +169,8 @@ RPCs: rpc
 RPC:
 satoshi:
 satoshis: satoshi
-scriptPubKey:
 '`script`': pp script
 script hash:
-scriptPubKeys: scriptPubKey
-scriptSig:
-scriptSigs: scriptSig
 secp256k1:
 sequence number:
 sequence numbers: sequence number
@@ -183,6 +183,8 @@ SIGHASH: signature hash
 '`SIGHASH_SINGLE|SIGHASH_ANYONECANPAY`': shs_shacp
 signature:
 signature hash:
+signature script:
+signature scripts: signature script
 signatures: signature
 SPV:
 stack:

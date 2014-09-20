@@ -828,7 +828,7 @@ affecting these addresses will returned.
 
 A JSON array with a list of JSON objects, each object describing a
 single transaction: its *txid*, output index number (*vout*), *address*,
-the *account* that address belongs to, the unsigned scriptSig
+the *account* that address belongs to, the unsigned pubkey script
 (*scriptPubKey*) to spend it, the *amount* in decimal bitcoins, and the
 number of *confirmations* the transactions has.
 

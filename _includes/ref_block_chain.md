@@ -39,8 +39,8 @@ fees and block reward.
 
 The coinbase transaction has the same basic format as any other
 transaction, but it references a single non-existent UTXO and a special
-[coinbase field][]{:#term-coinbase-field}{:.term} replaces the field that would normally hold a scriptSig and
-signature. In version 2 blocks, the coinbase parameter must begin with
+[coinbase field][]{:#term-coinbase-field}{:.term} replaces the field that would normally hold a signature script and
+secp256k1 signature. In version 2 blocks, the coinbase parameter must begin with
 the current block's block height and may contain additional arbitrary
 data or a script up to a maximum total of 100 bytes.
 

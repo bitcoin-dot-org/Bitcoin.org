@@ -12,11 +12,11 @@
 <text text-anchor="middle" x="376" y="-8.4" font-family="Sans" font-size="14.00">Evaluation Stack Over Time During Succesful P2PKH Script Validation</text>
 <g id="graph2" class="cluster"><title>cluster_alice</title>
 <polygon fill="grey" stroke="black" points="8,-462 8,-539 710,-539 710,-462 8,-462"/>
-<text text-anchor="middle" x="359" y="-522.4" font-family="Sans" font-size="14.00">Instructions And Data Provided By Alice In Transaction #1&#39;s Output Script</text>
+<text text-anchor="middle" x="359" y="-522.4" font-family="Sans" font-size="14.00">Instructions And Data Provided By Alice In Transaction #1&#39;s Pubkey Script</text>
 </g>
 <g id="graph3" class="cluster"><title>cluster_bob</title>
 <polygon fill="grey" stroke="black" points="8,-377 8,-454 710,-454 710,-377 8,-377"/>
-<text text-anchor="middle" x="359" y="-437.4" font-family="Sans" font-size="14.00">Data Provided By Bob In Transaction #2&#39;s Input ScriptSig</text>
+<text text-anchor="middle" x="359" y="-437.4" font-family="Sans" font-size="14.00">Data Provided By Bob In Transaction #2&#39;s Input Signature Script</text>
 </g>
 <!-- alice_opchecksig -->
 <g id="node2" class="node"><title>alice_opchecksig</title>

@@ -682,7 +682,7 @@ details about an unknown-to-this-node P2SH transaction that this transaction
 depends upon.
 
 Each previous P2SH transaction must include its *txid* in hex, output
-index number (*vout*), public key (*scriptPubKey*) in hex, and
+index number (*vout*), pubkey script (*scriptPubKey*) in hex, and
 *redeemScript* in hex.
 
 {% endautocrossref %}

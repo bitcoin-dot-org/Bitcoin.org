@@ -17,7 +17,7 @@ Related RPCs: `createmultisig`
 {% autocrossref %}
 
 *Number; required:* the *minimum* (*m*) number of signatures required to
-spend satoshis sent to this m-of-n P2SH multisig script.
+spend satoshis sent to this m-of-n P2SH multisig pubkey script.
 
 {% endautocrossref %}
 
@@ -31,7 +31,7 @@ spend satoshis sent to this m-of-n P2SH multisig script.
 
 *String; required:* A JSON array of hex-encoded public *keys* or *addresses*
 for public keys known to this Bitcoin Core instance.  The multisig
-script can only use full (unhashed) public keys, so you generally must
+pubkey script can only use full (unhashed) public keys, so you generally must
 provide public keys for any address not known to this wallet.
 
 {% endautocrossref %}
@@ -61,7 +61,7 @@ store the address.
 
 {% autocrossref %}
 
-*String:* a hash of the P2SH multisig redeemScript, which is also stored
+*String:* a hash of the P2SH multisig redeem script, which is also stored
 in the wallet so Bitcoin Core can monitor the network and block chain
 for transactions sent to that address (which will be displayed in the
 wallet as spendable balances).
@@ -221,7 +221,7 @@ Related RPCs: `addmultisigaddress`
 {% autocrossref %}
 
 *Number; required:* the *minimum* (*m*) number of signatures required to
-spend satoshis sent to this m-of-n multisig script.
+spend satoshis sent to this m-of-n multisig pubkey script.
 
 {% endautocrossref %}
 
@@ -235,7 +235,7 @@ spend satoshis sent to this m-of-n multisig script.
 
 *String; required:* A JSON array of hex-encoded public *keys* or *addresses*
 for public keys known to this Bitcoin Core instance.  The multisig
-script can only use full (unhashed) public keys, so you generally must
+pubkey script can only use full (unhashed) public keys, so you generally must
 provide public keys for any address not known to this wallet.
 
 {% endautocrossref %}
@@ -247,7 +247,7 @@ provide public keys for any address not known to this wallet.
 ]
 ~~~
 
-**Result: Address And Hex-Encoded RedeemScript**
+**Result: Address And Hex-Encoded Redeem Script**
 
 {% autocrossref %}
 
@@ -477,9 +477,9 @@ and *hex*, and the input sequence number.
 {% autocrossref %}
 
 A JSON array of outputs, with each output containing a *value* in decimal
-bitcoins, an output index number (*n*), a script (*scriptPubKey*) in
+bitcoins, an output index number (*n*), a pubkey script (*scriptPubKey*) in
 script-language psuedocode (*asm*) and *hex*, the number of signatures
-required (*reqSigs*), the *type* of script (if it's a standard
+required (*reqSigs*), the *type* of pubkey script (if it's a standard
 transaction), and an array of *addresses* used in the output.  (More
 than one address means it's a multisig output.)
 
@@ -595,15 +595,15 @@ decodescript <redeemScript>
 
 {% autocrossref %}
 
-Decode a hex-encoded P2SH redeemScript.
+Decode a hex-encoded P2SH redeem script.
 
 {% endautocrossref %}
 
-**Argument: A Hex-Encoded RedeemScript**
+**Argument: A Hex-Encoded Redeem Script**
 
 {% autocrossref %}
 
-*String; required:* an complete (not hashed) redeemScript in hex.
+*String; required:* an complete (not hashed) redeem script in hex.
 
 {% endautocrossref %}
 
@@ -611,7 +611,7 @@ Decode a hex-encoded P2SH redeemScript.
 
 {% autocrossref %}
 
-A JSON object describing the redeemScript, with *asm* being the script
+A JSON object describing the redeem script, with *asm* being the script
 in script-language psuedocode, *hex* being the a P2PKH public key (if
 applicable), *type* being the output type (typically public key,
 multisig, or nonstandard), *reqSigs* being the required signatures,
@@ -638,7 +638,7 @@ public keys.
 
 {% autocrossref %}
 
-A 2-of-3 P2SH multisig script:
+A 2-of-3 P2SH multisig pubkey script:
 
 {% endautocrossref %}
 
@@ -2994,9 +2994,9 @@ only to display UTXOs on the block chain with *false* (the default).
 *String:* A JSON object describing the output, with *bestblock*
 providing the header hash of the block which includes the UTXO (if any),
 the number of *confirmations* the UTXO has, the *value* of the output in
-decimal bitcoins, and a JSON object describing the output script,
+decimal bitcoins, and a JSON object describing the pubkey script,
 including the script in script psuedocode (*asm*), the script in *hex*,
-the number of *required signatures*, the *type* of output script, and
+the number of *required signatures*, the *type* of pubkey script, and
 the *addresses* it references (if known).  Also provided are the
 UTXO's transaction *version* number and whether or not it's a *coinbase*
 transaction.

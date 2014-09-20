@@ -23,7 +23,7 @@ subgraph cluster_alice {
     alice_pubkey [style = invis, label="PubKey", shape = "" ];
     alice_sig  [style = invis, label="Sig", shape = "" ];
 
-    label = "Instructions And Data Provided By Alice In Transaction #1's Output Script"
+    label = "Instructions And Data Provided By Alice In Transaction #1's Pubkey Script"
     /* label = "Data Provided By Spender 1 To Spend Output" */
 }
 
@@ -37,7 +37,7 @@ subgraph cluster_bob {
     bob_pubkey [style = unfilled, label="PubKey", shape = "" ];
     bob_sig  [style = unfilled, label="Sig", shape = "" ];
 
-    label = "Data Provided By Bob In Transaction #2's Input ScriptSig"
+    label = "Data Provided By Bob In Transaction #2's Input Signature Script"
 }
 
 alice_sig -> bob_sig;
