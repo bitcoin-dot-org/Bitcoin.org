@@ -587,9 +587,26 @@ wallets:
 - coinbase:
     title: "Coinbase"
     titleshort: "Coinbase"
-    compat: "web"
+    compat: "mobile web android ios"
     level: 4
     platform:
+      mobile:
+        text: "walletcoinbase"
+        link: "https://itunes.apple.com/us/app/coinbase-bitcoin-wallet/id886427730?mt=8"
+        screenshot: "coinbaseios.png"
+        os:
+        - android
+        - ios
+        check:
+          control: "checkfailcontrolthirdparty"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
       web:
         text: "walletcoinbase"
         link: "https://coinbase.com"
@@ -600,6 +617,40 @@ wallets:
           decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+      ios:
+        text: "walletcoinbase"
+        link: "https://itunes.apple.com/us/app/coinbase-bitcoin-wallet/id886427730?mt=8"
+        screenshot: "coinbaseios.png"
+        os:
+        - android
+        - ios
+        check:
+          control: "checkfailcontrolthirdparty"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "walletcoinbase"
+        link: "https://play.google.com/store/apps/details?id=com.coinbase.android"
+        screenshot: "coinbaseandroid.png"
+        os:
+        - android
+        - ios
+        check:
+          control: "checkfailcontrolthirdparty"
+          decentralization: "checkfaildecentralizecentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
