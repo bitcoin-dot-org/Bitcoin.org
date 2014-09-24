@@ -223,7 +223,7 @@ design these minimalist wallets:
 ![Distributing-Only Wallets](/img/dev/en-wallets-distributing-only.svg)
 
 * Pre-populate a database with a number of public keys or addresses, and
-  then distribute on request an output script or address using one of
+  then distribute on request a pubkey script or address using one of
   the database entries. To [avoid key reuse][devguide avoiding key
   reuse], webservers should keep track
   of used keys and never run out of public keys. This can be made easier
@@ -356,8 +356,8 @@ However, Bitcoin Core prior to 0.6 used uncompressed keys.  This creates
 a few complications, as the hashed form of an uncompressed key is
 different than the hashed form of a compressed key, so the same key
 works with two different P2PKH addresses.   This also means that the key
-must be submitted in the correct format in the input scriptSig so it
-matches the hash in the previous output script.
+must be submitted in the correct format in the signature script so it
+matches the hash in the previous output's pubkey script.
 
 For this reason, Bitcoin Core uses several different identifier bytes to
 help programs identify how keys should be used:

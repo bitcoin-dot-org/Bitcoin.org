@@ -250,13 +250,13 @@ amount = 10000000  ## In satoshis
 
 ## P2PKH pubkey hash
 pubkey_hash = "2b14950b8d31620c6cc923c5408a701b1ec0a020"
-## P2PKH output script entered as hex and converted to binary
+## P2PKH pubkey script entered as hex and converted to binary
 # OP_DUP OP_HASH160 <push 20 bytes> <pubKey hash> OP_EQUALVERIFY OP_CHECKSIG
 #   76       a9            14       <pubKey hash>        88          ac
 hex_script = "76" + "a9" + "14" + pubkey_hash + "88" + "ac"
 serialized_script = hex_script.decode("hex")
 
-## Load amount and script into PaymentDetails
+## Load amount and pubkey script into PaymentDetails
 details.outputs.add(amount = amount, script = serialized_script)
 
 ## Memo to display to the spender
@@ -286,24 +286,24 @@ hex_script = "76" + "a9" + "14" + pubkey_hash + "88" + "ac"
 serialized_script = hex_script.decode("hex")
 {% endhighlight %}
 
-`script`: (required) You must specify the output script you want the spender to
-pay---any valid script is acceptable. In this example, we'll request
-payment to a P2PKH output script.  
+`script`: (required) You must specify the pubkey script you want the spender to
+pay---any valid pubkey script is acceptable. In this example, we'll request
+payment to a P2PKH pubkey script.  
 
 First we get a pubkey hash. The hash above is the hash form of the
 address used in the URI examples throughout this section,
 mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN.
 
-Next, we plug that hash into the standard P2PKH output script using hex,
+Next, we plug that hash into the standard P2PKH pubkey script using hex,
 as illustrated by the code comments.
 
-Finally, we convert the output script from hex into its serialized form.
+Finally, we convert the pubkey script from hex into its serialized form.
 
 {% highlight python %}
 details.outputs.add(amount = amount, script = serialized_script)
 {% endhighlight %}
 
-`outputs`:<!--noref--> (required) add the output script and (optional) amount to the
+`outputs`:<!--noref--> (required) add the pubkey script and (optional) amount to the
 PaymentDetails outputs<!--noref--> array. 
 
 It's possible to specify multiple [`scripts`][pp

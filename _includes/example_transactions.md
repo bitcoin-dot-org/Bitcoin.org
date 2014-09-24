@@ -703,7 +703,7 @@ variable.
 
 Decode the signed raw transaction so we can get its txid. Also, choose a
 specific one of its UTXOs to spend and save that UTXO's output index number
-(vout) and hex output script (scriptPubKey) into shell variables.
+(vout) and hex pubkey script (scriptPubKey) into shell variables.
 
 {% highlight bash %}
 > bitcoin-cli -regtest getnewaddress
@@ -763,16 +763,16 @@ transaction hex unchanged.
 As illustrated above, the data that gets signed includes the txid and
 vout from the previous transaction.  That information is included in the
 `createrawtransaction` raw transaction.  But the data that gets signed
-also includes the output script from the previous transaction, even
+also includes the pubkey script from the previous transaction, even
 though it doesn't appear in either the unsigned or signed transaction.
 
 In the other raw transaction subsections above, the previous output was
 part of the UTXO set known to the wallet, so the wallet was able to use
-the txid and output index number to find the previous output script and
+the txid and output index number to find the previous pubkey script and
 insert it automatically.
 
 In this case, you're spending an output which is unknown to the wallet,
-so it can't automatically insert the previous output script.
+so it can't automatically insert the previous pubkey script.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
@@ -804,12 +804,12 @@ so it can't automatically insert the previous output script.
 {% endhighlight %}
 </div>
 
-Successfully sign the transaction by providing the previous output
+Successfully sign the transaction by providing the previous pubkey
 script and other required input data. 
 
 This specific operation is typically what offline signing wallets do.
 The online wallet creates the raw transaction and gets the previous
-output scripts for all the inputs. The user brings this information to
+pubkey scripts for all the inputs. The user brings this information to
 the offline wallet. After displaying the transaction details to the
 user, the offline wallet signs the transaction as we did above. The
 user takes the signed transaction back to the online wallet, which
@@ -895,9 +895,9 @@ called m-of-n, and in this case we'll be using 2-of-3.
 {% endhighlight %}
 
 Generate three new P2PKH addresses. P2PKH addresses cannot be used with
-the multisig redeemScript created below. (Hashing each public key is
+the multisig redeem script created below. (Hashing each public key is
 unnecessary anyway---all the public keys are protected by a hash when
-the redeemScript is hashed.) However, Bitcoin Core uses addresses as a
+the redeem script is hashed.) However, Bitcoin Core uses addresses as a
 way to reference the underlying full (unhashed) public keys it knows
 about, so we get the three new addresses above in order to use their
 public keys.
@@ -905,7 +905,7 @@ public keys.
 [Recall from the Guide][address] that the hashed public keys used in addresses
 obfuscate the full public key, so you cannot give an address to another
 person or device as part of creating a typical multisig output or P2SH multisig
-redeemScript. You must give them a full public key.
+redeem script. You must give them a full public key.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
@@ -931,9 +931,9 @@ redeemScript. You must give them a full public key.
 
 Use the `validateaddress` RPC to display the full (unhashed) public key
 for one of the addresses.  This is the information which will 
-actually be included in the multisig redeemScript.  This is also the
+actually be included in the multisig redeem script.  This is also the
 information you would give another person or device as part of creating
-a multisig output or P2SH multisig redeemScript.
+a multisig output or P2SH multisig redeem script.
 
 We save the address returned to a shell variable.
 
@@ -964,26 +964,26 @@ We save the address returned to a shell variable.
 
 Use the `createmultisig` RPC with two arguments, the number (*n*) of
 signatures required and a list of addresses or public keys.  Because
-P2PKH addresses can't be used in the multisig redeemScript created by this
+P2PKH addresses can't be used in the multisig redeem script created by this
 RPC, the only addresses which can be provided are those belonging to a
 public key in the wallet.  In this case, we provide two addresses and
 one public key---all of which will be converted to public keys in the
-redeemScript.
+redeem script.
 
-The P2SH address is returned along with the redeemScript which must be
+The P2SH address is returned along with the redeem script which must be
 provided when we spend satoshis sent to the P2SH address.
 
 ![Warning icon](/img/icon_warning.svg)
- **Warning:** You must not lose the redeemScript, especially if you
+ **Warning:** You must not lose the redeem script, especially if you
 don't have a record of which public keys you used to create the P2SH
-multisig address. You need the redeemScript to spend any bitcoins sent
-to the P2SH address. If you lose the redeemScript, you can recreate it
+multisig address. You need the redeem script to spend any bitcoins sent
+to the P2SH address. If you lose the redeem script, you can recreate it
 by running the same command above, with the public keys listed in the
-same order. However, if you lose both the redeemScript and even one of
+same order. However, if you lose both the redeem script and even one of
 the public keys, you will never be able to spend satoshis sent to that
 P2SH address.
 
-Neither the address nor the redeemScript are stored in the wallet when
+Neither the address nor the redeem script are stored in the wallet when
 you use `createmultisig`. To store them in the wallet, use the
 `addmultisigaddress` RPC instead.  If you add an address to the wallet,
 you should also make a new backup.
@@ -1073,7 +1073,7 @@ We save that txid to a shell variable as the txid of the UTXO we plan to spend n
 We use the `getrawtransaction` RPC with the optional second argument
 (*true*) to get the decoded transaction we just created with
 `spendtoaddress`. We choose one of the outputs to be our UTXO and get
-its output index number (vout) and output script (scriptPubKey).
+its output index number (vout) and pubkey script (scriptPubKey).
 
 {% highlight bash %}
 > bitcoin-cli -regtest getnewaddress
@@ -1121,7 +1121,7 @@ cNmbnwwGzEghMMe1vBwH34DFHShEj5bcXD1QpFRPHgG9Mj1xc5hq
 
 We get the private keys for two of the public keys we used to create the
 transaction, the same way we got private keys in the Complex Raw
-Transaction subsection. Recall that we created a 2-of-3 multisig script,
+Transaction subsection. Recall that we created a 2-of-3 multisig pubkey script,
 so signatures from two private keys are needed.
 
 ![Warning icon](/img/icon_warning.svg)
@@ -1168,8 +1168,8 @@ complex raw transaction].
 </div>
 
 We make the first signature. The input argument (JSON object) takes the
-additional redeemScript parameter so that it can append the redeemScript
-to the scriptSig after the two signatures.
+additional redeem script parameter so that it can append the redeem script
+to the signature script after the two signatures.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}

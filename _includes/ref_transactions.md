@@ -6,31 +6,31 @@ The following subsections briefly document core transaction details.
 
 {% autocrossref %}
 
-The op codes used in standard transactions are,
+The op codes used in the pubkey scripts of standard transactions are:
 
 * Various data pushing op codes from 0x00 to 0x4e (1--78). These aren't
   typically shown in examples, but they must be used to push
   signatures and public keys onto the stack. See the link below this list
   for a description.
 
-* `OP_TRUE`/`OP_1` (0x51), and `OP_2` through `OP_16` (0x52--0x60), which
-  (respectively) push the values 1, and 2--16 to the stack.
+* `OP_TRUE`/`OP_1` (0x51) and `OP_2` through `OP_16` (0x52--0x60), which
+  push the values 1 through 16 to the stack.
 
-* [`OP_CHECKSIG`][op_checksig]{:#term-op-checksig}{:.term} consumes a signature and a full public key, and returns
-  true if the the transaction data specified by the SIGHASH flag was
+* [`OP_CHECKSIG`][op_checksig]{:#term-op-checksig}{:.term} consumes a signature and a full public key, and pushes
+  true onto the stack if the the transaction data specified by the SIGHASH flag was
   converted into the signature using the same ECDSA private key that
-  generated the public key.  Otherwise, it returns false.
+  generated the public key.  Otherwise, it pushes false onto the stack.
 
-* [`OP_DUP`][op_dup]{:#term-op-dup}{:.term} returns a copy of the item on the stack below it.
+* [`OP_DUP`][op_dup]{:#term-op-dup}{:.term} pushes a copy of the topmost stack item on to the stack.
 
-* [`OP_HASH160`][op_hash160]{:#term-op-hash160}{:.term} consumes the item on the stack below it and returns with
-  a RIPEMD-160(SHA256()) hash of that item.
+* [`OP_HASH160`][op_hash160]{:#term-op-hash160}{:.term} consumes the topmost item on the stack,
+  computes the RIPEMD160(SHA256()) hash of that item, and pushes that hash onto the stack.
 
-* [`OP_EQUAL`][op_equal]{:#term-op-equal}{:.term} consumes the two items on the stack below it and returns
-  true if they are the same.  Otherwise, it returns false.
+* [`OP_EQUAL`][op_equal]{:#term-op-equal}{:.term} consumes the top two items on the stack, compares them, and
+  pushes true onto the stack if they are the same, false if not.
 
-* [`OP_VERIFY`][op_verify]{:#term-op-verify}{:.term} consumes one value and returns nothing, but it will
-  terminate the script in failure if the value consumed is zero (false).
+* [`OP_VERIFY`][op_verify]{:#term-op-verify}{:.term} consumes the topmost item on the stack.
+  If that item is zero (false) it terminates the script in failure.
 
 * [`OP_EQUALVERIFY`][op_equalverify]{:#term-op-equalverify}{:.term} runs `OP_EQUAL` and then `OP_VERIFY` in sequence.
 
@@ -39,22 +39,22 @@ The op codes used in standard transactions are,
   the value (m) now at the top of the stack, and consumes that many of
   the next values (signatures) plus one extra value. Then it compares
   each of public keys against each of the signatures looking for ECDSA
-  matches; if n of the public keys match signatures, it returns true.
-  Otherwise, it returns false.
+  matches; if n of the public keys match signatures, it pushes true onto the stack.
+  Otherwise, it pushes false.
 
     The "one extra value" it consumes is the result of an off-by-one
     error in the Bitcoin Core implementation. This value is not used, so
-    scriptSigs prefix the signatures with a single OP_0 (0x00).
+    signature scripts prefix the secp256k1 signatures with a single OP_0 (0x00).
 
-* [`OP_RETURN`][op_return]{:#term-op-return}{:.term} fails the script immediately when executed.
+* [`OP_RETURN`][op_return]{:#term-op-return}{:.term} terminates the script in failure when executed.
 
 A complete list of OP codes can be found on the Bitcoin Wiki [Script
 Page][wiki script], with an authoritative list in the `opcodetype` enum
 of the Bitcoin Core [script header file][core script.h]
 
 Note: non-standard transactions can add non-data-pushing op codes to
-their scriptSig, but scriptSig is run separately from the script (with a
-shared stack), so scriptSig can't use arguments such as `OP_RETURN` to
+their signature script, but signature scripts are run separately from the pubkey scripts (with a
+shared stack), so signature scripts can't use arguments such as `OP_RETURN` to
 prevent the script from working as expected.
 
 {% endautocrossref %}
@@ -69,7 +69,7 @@ addresses.
 
 First, get your hash.  For P2PKH, you RIPEMD-160(SHA256()) hash a ECDSA
 public key derived from your 256-bit ECDSA private key (random data).
-For P2SH, you RIPEMD-160(SHA256()) hash a redeemScript serialized in the
+For P2SH, you RIPEMD-160(SHA256()) hash a redeem script serialized in the
 format used in raw transactions (described in a [following
 sub-section][raw transaction format]).  Taking the resulting hash:
 
@@ -173,7 +173,9 @@ fa 20 9c 6a 85 2d d9 06
 ed ce 25 85 7f cd 37 04
 00 00 00 00              previous output index
 
-48                       size of script (var_uint)
+48                       size of signature script (var_uint)
+
+Signature script for input 0:
 47                       push 71 bytes to stack
 30 44 02 20 4e 45 e1 69
 32 b8 af 51 49 61 a1 d3
@@ -190,8 +192,9 @@ ff ff ff ff              sequence number
 
 output 0:
 00 ca 9a 3b 00 00 00 00  amount = 10.00000000 BTC
-43                       size of script (var_uint)
-script for output 0:
+43                       size of pubkey script (var_uint)
+
+Pubkey script for output 0:
 41                       push 65 bytes to stack
 04 ae 1a 62 fe 09 c5 f5 
 1b 13 90 5f 07 f0 6b 99 
@@ -206,8 +209,9 @@ ac                       OP_CHECKSIG
 
 output 1:
 00 28 6b ee 00 00 00 00  amount = 40.00000000 BTC
-43                       size of script (var_uint)
-script for output 1:
+43                       size of pubkey script (var_uint)
+
+Pubkey script for output 1:
 41                       push 65 bytes to stack
 04 11 db 93 e1 dc db 8a  
 01 6b 49 84 0f 8c 53 bc 

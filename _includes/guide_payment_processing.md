@@ -307,9 +307,9 @@ invoice database:
 
 * An expiration time when that total will no longer be acceptable.
 
-* An output script to which Charlie should send payment. Typically this
-  will be a P2PKH or P2SH output script containing a unique (never
-  before used) public key.
+* A pubkey script to which Charlie should send payment. Typically this
+  will be a P2PKH or P2SH pubkey script containing a unique (never
+  before used) secp256k1 public key.
 
 After adding all that information to the database, Bob's server displays
 a `bitcoin:` URI for Charlie to click to pay. 
@@ -334,7 +334,7 @@ unique identifier from the URL and looks up the corresponding details in
 the database. It then creates a PaymentDetails message with the
 following information:
 
-* The amount of the order in satoshis and the output script to be paid.
+* The amount of the order in satoshis and the pubkey script to be paid.
 
 * A memo containing the list of items ordered, so Charlie knows what
   he's paying for.  It may also include Charlie's mailing address so he can
@@ -355,7 +355,7 @@ payment request to Charlie's wallet in the reply to the HTTP GET.
 
 Charlie's wallet receives the PaymentRequest message, checks its signature, and
 then displays the details from the PaymentDetails message to Charlie. Charlie
-agrees to pay, so the wallet constructs a payment to the output script
+agrees to pay, so the wallet constructs a payment to the pubkey script
 Bob's server provided. Unlike a traditional Bitcoin payment, Charlie's
 wallet doesn't necessarily automatically broadcast this payment to the
 network. Instead, the wallet constructs a Payment message and sends it to
@@ -367,7 +367,7 @@ other things, the Payment message contains:
 * An optional memo Charlie can send to Bob. (There's no guarantee that
   Bob will read it.)
 
-* A refund address (output script) which Bob can pay if he needs to
+* A refund address (pubkey script) which Bob can pay if he needs to
   return some or all of Charlie's satoshis.
 
 Bob's server receives the Payment message, verifies the transaction pays
@@ -390,14 +390,14 @@ In the case of a dispute, Charlie can generate a cryptographically-proven
 otherwise-proven information.
 
 * The PaymentDetails message signed by Bob's webserver proves Charlie
-  received an invoice to pay a specified output script for a specified
+  received an invoice to pay a specified pubkey script for a specified
   number of satoshis for goods specified in the memo field.
 
-* The Bitcoin block chain can prove that the output script specified by
+* The Bitcoin block chain can prove that the pubkey script specified by
   Bob was paid the specified number of satoshis.
 
 If a refund needs to be issued, Bob's server can safely pay the
-refund-to output script provided by Charlie. (Note: a proposal has been
+refund-to pubkey script provided by Charlie. (Note: a proposal has been
 discussed to give refund-to addresses an implicit expiration date so
 users and software don't need to worry about payments being sent to
 addresses which are no longer monitored.)  See the Refunds section below
@@ -504,7 +504,7 @@ basis.
 
 Occasionally receivers using your applications will need to issue
 refunds. The obvious way to do that, which is very unsafe, is simply
-to return the satoshis to the output script from which they came.
+to return the satoshis to the pubkey script from which they came.
 For example:
 
 * Alice wants to buy a widget from Bob, so Bob gives Alice a price and

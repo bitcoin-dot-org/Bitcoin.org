@@ -15,10 +15,10 @@ graph [ fontname="Sans" ];
 penwidth = 1.75;
 
 subgraph cluster_tx2 {
-    scriptSig [ label = "ScriptSig", shape = "none" ];
+    scriptSig [ label = "Signature Script", shape = "none" ];
     tx2_signature [ label = "Signature" ];
     tx2_full_public_key [ label = "Full Public Key" ];
-    script [ label = " \nScript", shape = "none" ];
+    script [ label = " \nPubkey Script", shape = "none" ];
     tx2_pubkey_hash [ label = "Public Key Hash" ];
 
 }

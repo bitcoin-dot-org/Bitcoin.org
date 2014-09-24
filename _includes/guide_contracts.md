@@ -42,7 +42,7 @@ who should get the satoshis if there's a dispute.
 
 To create a multiple-signature ([multisig][]{:#term-multisig}{:.term})
 output, they each give the others a public key. Then Bob creates the
-following [P2SH multisig][]{:#term-p2sh-multisig}{:.term} redeemScript:
+following [P2SH multisig][]{:#term-p2sh-multisig}{:.term} redeem script:
 
 {% endautocrossref %}
 
@@ -58,19 +58,19 @@ OP_2 [A's pubkey] [B's pubkey] [C's pubkey] OP_3 OP_CHECKMULTISIG
 stack. `OP_2`
 specifies that 2 signatures are required to sign; `OP_3` specifies that
 3 public keys (unhashed) are being provided. This is a 2-of-3 multisig
-script, more generically called a m-of-n script (where *m* is the
+pubkey script, more generically called a m-of-n pubkey script (where *m* is the
 *minimum* matching signatures required and *n* in the *number* of public
 keys provided).
 
-Bob gives the redeemScript to Charlie, who checks to make sure his
+Bob gives the redeem script to Charlie, who checks to make sure his
 public key and Alice's public key are included. Then he hashes the
-redeemScript, puts it in a P2SH output, and pays the satoshis to it. Bob
+redeem script to create a P2SH redeem script and pays the satoshis to it. Bob
 sees the payment get added to the block chain and ships the merchandise.
 
 Unfortunately, the merchandise gets slightly damaged in transit. Charlie
 wants a full refund, but Bob thinks a 10% refund is sufficient. They
 turn to Alice to resolve the issue. Alice asks for photo evidence from
-Charlie along with a copy of the unhashed redeemScript Bob created and
+Charlie along with a copy of the redeem script Bob created and
 Charlie checked. 
 
 After looking at the evidence, Alice thinks a 40% refund is sufficient,
@@ -78,37 +78,36 @@ so she creates and signs a transaction with two outputs, one that spends 60%
 of the satoshis to Bob's public key and one that spends the remaining
 40% to Charlie's public key.
 
-In the input section of the script, Alice puts her signature
-and a copy of the unhashed serialized redeemScript
+In the signature script Alice puts her signature
+and a copy of the unhashed serialized redeem script
 that Bob created.  She gives a copy of the incomplete transaction to
 both Bob and Charlie.  Either one of them can complete it by adding
-his signature to create the following input
-script:
+his signature to create the following signature script:
 
 {% endautocrossref %}
 
 ~~~
-OP_0 [A's signature] [B's or C's signature] [serialized redeemScript]
+OP_0 [A's signature] [B's or C's signature] [serialized redeem script]
 ~~~
 
 {% autocrossref %}
 
-(Op codes to push the signatures and redeemScript onto the stack are
+(Op codes to push the signatures and redeem script onto the stack are
 not shown. `OP_0` is a workaround for an off-by-one error in the original
 implementation which must be preserved for compatibility.)
 
 When the transaction is broadcast to the network, each peer checks the
-input script against the P2SH output Charlie previously paid,
-ensuring that the redeemScript matches the redeemScript hash previously
-provided. Then the redeemScript is evaluated, with the two signatures
-being used as input<!--noref--> data. Assuming the redeemScript
+signature script against the P2SH output Charlie previously paid,
+ensuring that the redeem script matches the redeem script hash previously
+provided. Then the redeem script is evaluated, with the two signatures
+being used as input<!--noref--> data. Assuming the redeem script
 validates, the two transaction outputs show up in Bob's and Charlie's
 wallets as spendable balances.
 
 However, if Alice created and signed a transaction neither of them would
 agree to, such as spending all the satoshis to herself, Bob and Charlie
 can find a new arbitrator and sign a transaction spending the satoshis
-to another 2-of-3 multisig redeemScript hash, this one including a public
+to another 2-of-3 multisig redeem script hash, this one including a public
 key from that second arbitrator. This means that Bob and Charlie never
 need to worry about their arbitrator stealing their money.
 
@@ -134,7 +133,7 @@ him thousands of satoshis in transaction fees, so Alice suggests they use a
 
 Bob asks Alice for her public key and then creates two transactions.
 The first transaction pays 100 millibits to a P2SH output whose
-2-of-2 multisig redeemScript requires signatures from both Alice and Bob.
+2-of-2 multisig redeem script requires signatures from both Alice and Bob.
 This is the bond transaction.
 Broadcasting this transaction would let Alice hold the millibits
 hostage, so Bob keeps this transaction private for now and creates a
