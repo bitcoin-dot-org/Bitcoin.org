@@ -25,7 +25,7 @@ about coinbase transactions in the block chain section of this guide.
 
 <!-- ![The Parts Of A Transaction](/img/dev/en-tx-overview.svg) -->
 
-The figure above shows the core parts of a Bitcoin transaction. Each
+<!-- The figure above shows the core parts of a Bitcoin transaction. --> Each
 transaction has at least one input and one output. Each [input][]{:#term-input}{:.term} spends the
 satoshis paid to a previous output. Each [output][]{:#term-output}{:.term} then waits as an Unspent
 Transaction Output (UTXO) until a later input spends it. When your
