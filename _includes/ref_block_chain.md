@@ -19,8 +19,8 @@ As of version 2 blocks, each block consists of four root elements:
 
 2. A 4-byte unsigned integer indicating how many bytes follow until the
    end of the block. Although this field would suggest maximum block
-   sizes of 4 GiB, max block size is currently capped at 1 MiB and the
-   default max block size (used by most miners) is 350 KiB (although
+   sizes of 4 GiB, max block size is currently capped at 1 MB and the
+   default max block size (used by most miners) is 750 KB (although
    this will likely increase over time).
 
 3. An 80-byte block header described in the section below.
