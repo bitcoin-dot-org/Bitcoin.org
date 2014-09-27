@@ -23,9 +23,9 @@ and they're an exception to many of the rules listed below. Instead of
 pointing out the coinbase exception to each rule, we invite you to read
 about coinbase transactions in the block chain section of this guide.
 
-<!-- ![The Parts Of A Transaction](/img/dev/en-tx-overview.svg) -->
+![The Parts Of A Transaction](/img/dev/en-tx-overview.svg)
 
-<!-- The figure above shows the core parts of a Bitcoin transaction. --> Each
+The figure above shows the main parts of a Bitcoin transaction. Each
 transaction has at least one input and one output. Each [input][]{:#term-input}{:.term} spends the
 satoshis paid to a previous output. Each [output][]{:#term-output}{:.term} then waits as an Unspent
 Transaction Output (UTXO) until a later input spends it. When your
@@ -37,7 +37,22 @@ Bitcoin peers and miners which set of rules to use to validate it.  This
 lets developers create new rules for future transactions without
 invalidating previous transactions.
 
-The figures below help illustrate the other transaction features by
+![Spending An Output](/img/dev/en-tx-overview-spending.svg)
+
+An output has an implied index number based on its location in the
+transaction---the first output is output zero. The output also has an
+amount in satoshis which it pays to a conditional pubkey script. Anyone
+who can satisfy the conditions of that pubkey script can spend up to the
+amount of satoshis paid to it.
+
+An input uses a transaction identifier (txid) and an output index number
+(often called "vout" for output vector) to identify a particular output to
+be spent. It also has a signature script which allows it to provide data
+parameters that satisfy the conditionals in the pubkey script. (The sequence
+number and locktime are related and will be covered together in
+a later subsection.)
+
+The figures below help illustrate how these features are used by
 showing the workflow Alice uses to send Bob a transaction and which Bob
 later uses to spend that transaction. Both Alice and Bob will use the
 most common form of the standard Pay-To-Public-Key-Hash (P2PKH) transaction
