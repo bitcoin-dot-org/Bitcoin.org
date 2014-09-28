@@ -92,4 +92,54 @@ The 80-byte block header contains the following six fields:
    coinbase transaction can be changed and the Merkle
    root updated.
 
+### Hash Endianness
+
+Bitcoin generally displays and transmits hashes with a little-endian
+byte order rather than the big-endian byte order commonly used in other
+network<!--noref--> software. For block header hashes, this is easy to
+illustrate because the least significant bits are all zeros:
+
+* **Little endian:** 0x0000 0000 3e5c ec96 3682 2919 dfcc 702d 4a6c 9ae7 2765
+0edb be26 bcec dc8e 1abd
+
+* **Big endian:** 0xbd1a 8edc ecbc 26be db0e 6527 e79a 6c4a 2d70 ccdf 1929 8236
+96ec 5c3e 0000 0000
+
+This can create some confusion as the double SHA256(SHA256()) hashing
+commonly used in Bitcoin sends the output from the first hash function
+to the second hash function in big-endian byte order. After hashing is
+complete, the byte order of the final hash is reversed.  For example:
+
+* **SHA256(0x00); big endian output:** 0x6e34 0b9c ffb3 7a98
+9ca5 44e6 bb78 0a2c 7890 1d3f b337 3876 8511 a306 17af a01d
+
+* **SHA256(0x6e34...); big endian output:** 0x1406
+e058 81e2 9936 7766 d313 e26c 0556 4ec9 1bf7 21d3 1726 bd6e 46e6 0689 539a
+
+* **Reverse byte order of 0x1406...:**
+0x9a53 8906 e646 6ebd 2617 d321 f71b c94e 5605 6ce2 13d3 6677 3699 e281 58e0
+0614
+
+The code below may help you check endianness by generating header hashes
+or txids from raw hex.
 {% endautocrossref %}
+
+{% highlight python %}
+#!/usr/bin/env python
+
+from sys import byteorder
+from hashlib import sha256
+
+## You can put in $data an 80-byte block header to get its header hash,
+## or a raw transaction to get its txid
+data = "00".decode("hex")
+hash = sha256(sha256(data).digest()).digest()
+
+print "Warning: this code only tested on little-endian x86_64 system"
+print
+print "System byte order:", byteorder
+print "Generated Big Endian Hash:    ", hash.encode('hex_codec')
+print "Generated Little-Endian Hash: ", hash[::-1].encode('hex_codec')
+print "0x00 Little-Endian Hash:      ", \
+  "9a538906e6466ebd2617d321f71bc94e56056ce213d366773699e28158e00614"
+{% endhighlight %}

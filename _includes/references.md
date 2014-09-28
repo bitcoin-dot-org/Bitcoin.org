@@ -279,6 +279,7 @@
 [RPC]: /en/developer-reference#remote-procedure-calls-rpcs
 [RPCs]: /en/developer-reference#remote-procedure-calls-rpcs
 [secp256k1]: http://www.secg.org/index.php?action=secg,docs_secg
+[section hash endianness]: /en/developer-reference#hash-endianness
 [section verifying payment]: /en/developer-guide#verifying-payment
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [SHA256]: https://en.wikipedia.org/wiki/SHA-2
