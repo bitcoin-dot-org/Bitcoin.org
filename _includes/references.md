@@ -46,6 +46,7 @@
 [input]: /en/developer-guide#term-input "The input to a transaction linking to the output of a previous transaction which permits spending of satoshis"
 [inputs]: /en/developer-guide#term-input "The input to a transaction linking to the output of a previous transaction which permits spending of satoshis"
 [intermediate certificate]: /en/developer-examples#term-intermediate-certificate "A intermediate certificate authority certificate which helps connect a leaf (receiver) certificate to a root certificate authority"
+[internal byte order]: /en/developer-reference#hash-byte-order "The standard order in which hash digests are displayed as strings---the same format used in blocks"
 [key index]: /en/developer-guide#term-key-index "An index number used in the HD wallet formula to generate child keys from a parent key" 
 [key pair]: /en/developer-guide#term-key-pair "A private key and its derived public key"
 [label]: /en/developer-guide#term-label "The label parameter of a bitcoin: URI which provides the spender with the receiver's name (unauthenticated)" 
@@ -118,6 +119,7 @@
 [regression test mode]: /en/developer-examples#regtest-mode "A local testing environment in which developers can control blocks"
 [root certificate]: /en/developer-examples#term-root-certificate "A certificate belonging to a certificate authority (CA)"
 [root seed]: /en/developer-guide#term-root-seed "A potentially-short value used as a seed to generate a master private key and master chain code for an HD wallet"
+[RPC byte order]: /en/developer-reference#hash-byte-order "A hash digest displayed with the byte order reversed; used in Bitcoin Core RPCs and other software."
 [satoshi]: /en/developer-guide#term-satoshi "The smallest unit of Bitcoin value; 0.00000001 bitcoins.  Also used generically for any value of bitcoins"
 [satoshis]: /en/developer-guide#term-satoshi "The smallest unit of Bitcoin value; 0.00000001 bitcoins.  Also used generically for any value of bitcoins"
 [sequence number]: /en/developer-guide#term-sequence-number "A number intended to allow time locked transactions to be updated before being finalized; not currently used except to disable locktime in a transaction"
@@ -283,6 +285,7 @@
 [RPCs]: /en/developer-reference#remote-procedure-calls-rpcs
 <!-- [secp256k1]: http://www.secg.org/index.php?action=secg,docs_secg -->
 [secp256k1]: http://perso.univ-rennes1.fr/sylvain.duquesne/master/standards/sec2_final.pdf
+[section hash byte order]: /en/developer-reference#hash-byte-order
 [section verifying payment]: /en/developer-guide#verifying-payment
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [SHA256]: https://en.wikipedia.org/wiki/SHA-2

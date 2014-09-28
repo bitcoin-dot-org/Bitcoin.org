@@ -76,6 +76,7 @@ inputs: input
 input:
 intermediate certificate:
 intermediate certificates: intermediate certificate
+internal byte order:
 key index:
 key pair:
 '`label`': label
@@ -165,6 +166,7 @@ root certificate:
 root seed:
 RPCs: rpc
 RPC:
+RPC byte order:
 satoshi:
 satoshis: satoshi
 '`script`': pp script

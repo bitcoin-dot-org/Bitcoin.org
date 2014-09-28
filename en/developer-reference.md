@@ -37,6 +37,8 @@ title: "Developer Reference - Bitcoin"
 -- * https://en.bitcoin.it/wiki/API_reference_(JSON-RPC)
 -->
 
+{% include ref_core_rpc_intro.md %}
+
 ### Remote Procedure Calls (RPCs)
 
 **Warning:** the block chain and memory pool can include arbitrary data
