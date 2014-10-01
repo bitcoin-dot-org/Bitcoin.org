@@ -64,10 +64,10 @@ satoshi transaction fee.
 
 {% autocrossref %}
 
-The block chain is collaboratively maintained on a peer-to-peer network, so
-Bitcoin requires each block prove a significant amount of work was invested in
+The block chain is collaboratively maintained by anonymous peers on the network, so
+Bitcoin requires that each block prove a significant amount of work was invested in
 its creation to ensure that untrustworthy peers who want to modify past blocks have
-to work harder than trustworthy peers who only want to add new blocks to the
+to work harder than honest peers who only want to add new blocks to the
 block chain.
 
 Chaining blocks together makes it impossible to modify transactions included
@@ -87,18 +87,17 @@ hash of the block header which does not exceed a certain value. For
 example, if the maximum possible hash value is <span
 class="math">2<sup>256</sup> − 1</span>, you can prove that you
 tried up to two combinations by producing a hash value less than <span
-class="math">2<sup>256</sup> − 1</span>.
+class="math">2<sup>255</sup></span>.
 
-In the example given above, you will almost certainly produce a
-successful hash on your first try. You can even estimate the probability
+In the example given above, you will produce a successful hash on average every other try.
+You can even estimate the probability
 that a given hash attempt will generate a number below the [target][]{:#term-target}{:.term}
-threshold. Bitcoin itself does not track probabilities but instead
-simply assumes that the lower it makes the target threshold, the more
-hash attempts, on average, will need to be tried.
+threshold.
+Bitcoin assumes a linear probability that the lower it makes the target threshold, the more hash attempts (on average) will need to be tried.
 
 New blocks will only be added to the block chain if their hash is at
-least as challenging as a [difficulty][]{:#term-difficulty}{:.term} value expected by the peer-to-peer
-network. Every 2,016 blocks, the network uses timestamps stored in each
+least as challenging as a [difficulty][]{:#term-difficulty}{:.term} value expected by the consensus protocol.
+Every 2,016 blocks, the network uses timestamps stored in each
 block header to calculate the number of seconds elapsed between generation
 of the first and last of those last 2,016 blocks. The ideal value is
 1,209,600 seconds (two weeks).
@@ -123,7 +122,7 @@ propagate a modified block as the entire Bitcoin network expended
 between the time the original block was created and the present time.
 Only if you acquired a majority of the network's hashing power
 could you reliably execute such a [51 percent attack][]{:#term-51-attack}{:.term} against
-transaction history.
+transaction history (although, it should be noted, that even less than 50% of the hashing power still has a good chance of performing such attacks).
 
 The block header provides several easy-to-modify fields, such as a
 dedicated nonce field, so obtaining new hashes doesn't require waiting
