@@ -114,8 +114,6 @@ op codes: op code
 '`op_hash160`': op_hash160
 '`op_return`': op_return
 '`op_verify`': op_verify
-orphan:
-orphaned: orphan
 outputs: output
 output:
 output index:
@@ -188,6 +186,8 @@ signature scripts: signature script
 signatures: signature
 SPV:
 stack:
+stale block:
+stale blocks: stale block
 standard script:
 standard scripts: standard script
 standard transaction: standard script

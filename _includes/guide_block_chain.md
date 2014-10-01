@@ -137,11 +137,12 @@ a block does not slow down hashing with extra I/O.
 {% autocrossref %}
 
 Any Bitcoin miner who successfully hashes a block header to a value
-below the target threshold can add the entire block to the block chain.
-(Assuming the block is otherwise valid.) These blocks are commonly addressed
+below the target threshold can add the entire block to the block chain
+(assuming the block is otherwise valid).
+These blocks are commonly addressed
 by their [block height][]{:#term-block-height}{:.term}---the number of blocks between them and the first Bitcoin
 block (block 0, most commonly known as the [genesis block]{:#term-genesis-block}{:.term}). For example,
-block 2016 is where difficulty could have been first adjusted.
+block 2016 is where difficulty could have first been adjusted.
 
 ![Common And Uncommon Block Chain Forks](/img/dev/en-blockchain-fork.svg)
 
@@ -151,15 +152,18 @@ creates an apparent [fork][accidental fork]{:#term-accidental-fork}{:.term} in t
 illustration above.
 
 When miners produce simultaneous blocks at the end of the block chain, each
-peer individually chooses which block to trust. (In the absence of
-other considerations, discussed below, peers usually trust the first
-block they see.)
+node individually chooses which block to accept. In the absence of
+other considerations, discussed below, nodes usually use the first
+block they see.
 
 Eventually a miner produces another block which attaches to only one of
 the competing simultaneously-mined blocks. This makes that side of
-the fork longer than the other side. Assuming a fork only contains valid
-blocks, normal peers always follow the longest fork (the most difficult chain
-to recreate) and throw away ([orphan][]{:#term-orphan}{:.term}) blocks belonging to shorter forks.
+the fork stronger than the other side.
+Assuming a fork only contains valid
+blocks, normal peers always follow the the most difficult chain
+to recreate and throw away [stale blocks][stale block]{:#term-stale-block}{:.term} belonging to shorter forks.
+(Stale blocks are also sometimes called orphans or orphan blocks, but
+those terms are also used for blocks without a known parent block.)
 
 [Long-term forks][long-term fork]{:#term-long-term-fork}{:.term} are possible if different miners work at cross-purposes,
 such as some miners diligently working to extend the block chain at the
@@ -168,7 +172,7 @@ transaction history.
 
 Since multiple blocks can have the same height during a block chain fork, block
 height should not be used as a globally unique identifier. Instead, blocks
-are usually referenced by the SHA256(SHA256()) hash of their header.
+are usually referenced by the hash of their header (often with the byte order reversed, and in hexadecimal).
 
 {% endautocrossref %}
 
