@@ -28,27 +28,25 @@ together. This ensures a transaction cannot be modified without
 modifying the block that records it and all following blocks.
 
 Transactions are also chained together. Bitcoin wallet software gives
-the impression that satoshis are sent from and to addresses, but
-bitcoins really move from transaction to transaction. Each standard
-transaction spends the satoshis previously spent in one or more earlier
+the impression that satoshis are sent from and to wallets, but
+bitcoins really move from transaction to transaction. Each
+transaction spends the satoshis previously received in one or more earlier
 transactions, so the input of one transaction is the output of a
 previous transaction.
 
 ![Transaction Propagation](/img/dev/en-transaction-propagation.svg)
 
-A single transaction can spend bitcoins to multiple outputs, as would be
-the case when sending satoshis to multiple addresses, but each output of
+A single transaction can create multiple outputs, as would be
+the case when sending to multiple addresses, but each output of
 a particular transaction can only be used as an input once in the
 block chain. Any subsequent reference is a forbidden double
 spend---an attempt to spend the same satoshis twice.
 
-Outputs are not the same as Bitcoin addresses. You can use the same
-address in multiple transactions, but you can only use each output once.
 Outputs are tied to [transaction identifiers (TXIDs)][txid]{:#term-txid}{:.term}, which are the hashes
 of signed transactions.
 
 Because each output of a particular transaction can only be spent once,
-all transactions included in the block chain can be categorized as either
+the outputs of all transactions included in the block chain can be categorized as either
 [Unspent Transaction Outputs (UTXOs)][utxo]{:#term-utxo}{:.term} or spent transaction outputs. For a
 payment to be valid, it must only use UTXOs as inputs.
 
