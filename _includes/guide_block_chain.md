@@ -2,8 +2,8 @@
 
 {% autocrossref %}
 
-The block chain provides Bitcoin's public ledger, a timestamped record
-of all confirmed transactions. This system is used to protect against double spending
+The block chain provides Bitcoin's public ledger, an ordered and timestamped record
+of transactions. This system is used to protect against double spending
 and modification of previous transaction records, using proof of
 work verified by the peer-to-peer network to maintain a global consensus.
 
