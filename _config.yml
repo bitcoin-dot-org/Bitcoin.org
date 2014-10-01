@@ -132,7 +132,7 @@ aliases:
   whitj00: Whit Jack
 
 safe:        false
-server_port: 4000
+port: 4000
 base-url:    /
 
 source:      .
