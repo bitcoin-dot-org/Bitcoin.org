@@ -181,21 +181,20 @@ are usually referenced by the hash of their header (often with the byte order re
 {% autocrossref %}
 
 Every block must include one or more transactions. The first one of these
-transactions must be a coinbase transaction which should collect and
-spend the block reward and any transaction fees paid by transactions included in this block.
+transactions must be a coinbase transaction, also called a generation transaction, which should collect and
+spend the block reward (comprised of a block subsidy and any transaction fees paid by transactions included in this block).
 
 The UTXO of a coinbase transaction has the special condition that
 it cannot be spent (used as an input) for at least 100 blocks. This temporarily
 prevents a miner from spending the transaction fees and block reward from a
-block that may later be orphaned (destroyed) after a block chain fork.
+block that may later be determined to be stale (and therefore the coinbase transaction destroyed) after a block chain fork.
 
 Blocks are not required to include any non-coinbase transactions, but
 miners almost always do include additional transactions in order to
 collect their transaction fees.
 
 All transactions, including the coinbase transaction, are encoded into
-blocks in binary rawtransaction format prefixed by a block transaction
-sequence number.
+blocks in binary rawtransaction format.
 
 The rawtransaction format is hashed to create the transaction
 identifier (txid). From these txids, the [merkle tree][]{:#term-merkle-tree}{:.term} is constructed by pairing each
@@ -239,5 +238,9 @@ other transactions. If the five transactions in this block were all at
 the maximum size, downloading the entire block would require over
 500,000 bytes---but downloading three hashes plus the block header
 requires only 140 bytes.
+
+Note: If identical txids are found within the same block, there is a possibility that the merkle tree may collide with a block with some or all duplicates removed due to how unbalanced merkle trees are implemented (duplicating the lone hash).
+Since it is impractical to have separate transactions with identical txids, this does not impose a burden on honest software, but must be checked if the invalid status of a block is to be cached;
+otherwise, a valid block with the duplicates eliminated could have the same merkle root and block hash, but be rejected by the cached invalid outcome, resulting in security bugs such as CVE-2012-2459.
 
 {% endautocrossref %}

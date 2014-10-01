@@ -225,6 +225,9 @@ BIP70:
 BIP71:
 BIP72:
 
+## CVEs
+CVE-2012-2459:
+
 ## RPCs
 '`addmultisigaddress`': rpc addmultisigaddress
 '`addnode`': rpc addnode

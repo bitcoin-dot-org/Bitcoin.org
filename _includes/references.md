@@ -175,6 +175,7 @@
 [core git]: https://github.com/bitcoin/bitcoin
 [core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
 [core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
+[CVE-2012-2459]: https://en.bitcoin.it/wiki/CVEs#CVE-2012-2459
 [DER]: https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
 [devex complex raw transaction]: /en/developer-examples#complex-raw-transaction
 [devex payment protocol]: /en/developer-examples#payment-protocol
