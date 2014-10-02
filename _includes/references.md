@@ -58,8 +58,8 @@
 [merge]: /en/developer-guide#term-merge "Spending, in the same transaction, multiple outputs which can be traced back to different previous spenders, leaking information about how many satoshis you control"
 [merge avoidance]: /en/developer-guide#term-merge-avoidance "A strategy for selecting which outputs to spend that avoids merging outputs with different histories that could leak private information"
 [message]: /en/developer-guide#term-message "A parameter of bitcoin: URIs which allows the receiver to optionally specify a message to the spender"
-[Merkle root]: /en/developer-guide#term-merkle-root "The root node of a Merkle tree descended from all the hashed pairs in the tree"
-[Merkle tree]: /en/developer-guide#term-merkle-tree "A tree constructed by hashing paired data, then pairing and hashing the results until a single hash remains, the Merkle root"
+[merkle root]: /en/developer-guide#term-merkle-root "The root node of a merkle tree descended from all the hashed pairs in the tree"
+[merkle tree]: /en/developer-guide#term-merkle-tree "A tree constructed by hashing paired data, then pairing and hashing the results until a single hash remains, the merkle root"
 [micropayment channel]: /en/developer-guide#term-micropayment-channel
 [millibits]: /en/developer-guide#term-millibits "0.001 bitcoins (100,000 satoshis)"
 [mine]: /en/developer-guide#term-miner "Creating Bitcoin blocks which solve proof-of-work puzzles in exchange for block rewards and transaction fees"

@@ -20,9 +20,9 @@ A [block][]{:#term-block}{:.term} of one or more new transactions
 is collected into the transaction data part of a block.
 Copies of each transaction are hashed, and the hashes are then paired,
 hashed, paired again, and hashed again until a single hash remains, the
-[Merkle root][]{:#term-merkle-root}{:.term} of a Merkle tree.
+[merkle root][]{:#term-merkle-root}{:.term} of a merkle tree.
 
-The Merkle root is stored in the block header. Each block also
+The merkle root is stored in the block header. Each block also
 stores the hash of the previous block's header, chaining the blocks
 together. This ensures a transaction cannot be modified without
 modifying the block that records it and all following blocks.
@@ -197,17 +197,17 @@ blocks in binary rawtransaction format prefixed by a block transaction
 sequence number.
 
 The rawtransaction format is hashed to create the transaction
-identifier (txid). From these txids, the [Merkle tree][]{:#term-merkle-tree}{:.term} is constructed by pairing each
+identifier (txid). From these txids, the [merkle tree][]{:#term-merkle-tree}{:.term} is constructed by pairing each
 txid with one other txid and then hashing them together. If there are
 an odd number of txids, the txid without a partner is hashed with a
 copy of itself.
 
 The resulting hashes themselves are each paired with one other hash and
 hashed together. Any hash without a partner is hashed with itself. The
-process repeats until only one hash remains, the Merkle root.
+process repeats until only one hash remains, the merkle root.
 
 For example, if transactions were merely joined (not hashed), a
-five-transaction Merkle tree would look like the following text diagram:
+five-transaction merkle tree would look like the following text diagram:
 
 {% endautocrossref %}
 
@@ -224,16 +224,16 @@ A  B  C  D  E .........Transactions
 {% autocrossref %}
 
 As discussed in the Simplified Payment Verification (SPV) subsection,
-the Merkle tree allows clients to verify for
+the merkle tree allows clients to verify for
 themselves that a transaction was included in a block by obtaining the
-Merkle root from a block header and a list of the intermediate hashes
+merkle root from a block header and a list of the intermediate hashes
 from a full peer. The full peer does not need to be trusted: it is
 expensive to fake block headers and the intermediate hashes cannot be faked or
 the verification will fail.
 
 For example, to verify transaction D was added to the
 block, an SPV client only needs a copy of the C, AB, and EEEE hashes in addition to the
-Merkle root; the client doesn't need to know anything about any of the
+merkle root; the client doesn't need to know anything about any of the
 other transactions. If the five transactions in this block were all at
 the maximum size, downloading the entire block would require over
 500,000 bytes---but downloading three hashes plus the block header

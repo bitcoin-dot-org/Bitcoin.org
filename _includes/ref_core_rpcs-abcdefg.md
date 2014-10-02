@@ -1232,7 +1232,7 @@ A hex-encoded block or the following JSON object described in segments.
 
 The block header *hash* (same as you provided); the number of
 *confirmations* (subsequent blocks), the *size* of the block in bytes,
-the block *height*, the block *version*, and the *Merkle root* hash.
+the block *height*, the block *version*, and the *merkle root* hash.
 
 {% endautocrossref %}
 
@@ -3231,7 +3231,7 @@ block, and lets a miner return a successful header.
 
 *String; optional:* if header data is provided, it will be checked to
 see if it meets the target threshold (difficulty) and then affixed to a
-block of transactions (which produces a matching Merkle root).  Then the
+block of transactions (which produces a matching merkle root).  Then the
 complete block will be broadcast to the network.  Data is in the same
 format as provided by the *data* output parameter (see below).
 

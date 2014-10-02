@@ -70,7 +70,7 @@ The 80-byte block header contains the following six fields:
    block chain and ensures no previous block can be changed without also
    changing this block's header.
 
-3. The *Merkle root* is a hash derived from hashes of all the
+3. The *merkle root* is a hash derived from hashes of all the
    transactions included in this block. It ensures no transactions can
    be modified in this block without changing the block header hash.
 
@@ -89,7 +89,7 @@ The 80-byte block header contains the following six fields:
    hash values for the header until they find a hash value less than or
    equal to the target threshold. If all values within the nonce's four
    bytes are tested, the time can be updated or the
-   coinbase transaction can be changed and the Merkle
+   coinbase transaction can be changed and the merkle
    root updated.
 
 {% endautocrossref %}
