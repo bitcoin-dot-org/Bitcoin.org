@@ -49,7 +49,7 @@ chmod 0600 bitcoin.conf
 For development, it's safer and cheaper to use Bitcoin's test network (testnet)
 or regression test mode (regtest) described below.
 
-Questions about Bitcoin development are best sent to the Bitcoin [Forum][forum
+Questions about Bitcoin use are best sent to the [BitcoinTalk forum][forum
 tech support] and [IRC channels][]. Errors or suggestions related to
 documentation on Bitcoin.org can be [submitted as an issue][docs issue]
 or posted to the [bitcoin-documentation mailing list][].

@@ -58,8 +58,8 @@
 [merge]: /en/developer-guide#term-merge "Spending, in the same transaction, multiple outputs which can be traced back to different previous spenders, leaking information about how many satoshis you control"
 [merge avoidance]: /en/developer-guide#term-merge-avoidance "A strategy for selecting which outputs to spend that avoids merging outputs with different histories that could leak private information"
 [message]: /en/developer-guide#term-message "A parameter of bitcoin: URIs which allows the receiver to optionally specify a message to the spender"
-[Merkle root]: /en/developer-guide#term-merkle-root "The root node of a Merkle tree descended from all the hashed pairs in the tree"
-[Merkle tree]: /en/developer-guide#term-merkle-tree "A tree constructed by hashing paired data, then pairing and hashing the results until a single hash remains, the Merkle root"
+[merkle root]: /en/developer-guide#term-merkle-root "The root node of a merkle tree descended from all the hashed pairs in the tree"
+[merkle tree]: /en/developer-guide#term-merkle-tree "A tree constructed by hashing paired data, then pairing and hashing the results until a single hash remains, the merkle root"
 [micropayment channel]: /en/developer-guide#term-micropayment-channel
 [millibits]: /en/developer-guide#term-millibits "0.001 bitcoins (100,000 satoshis)"
 [mine]: /en/developer-guide#term-miner "Creating Bitcoin blocks which solve proof-of-work puzzles in exchange for block rewards and transaction fees"
@@ -78,7 +78,6 @@
 [op_hash160]: /en/developer-reference#term-op-hash160 "Operation which converts the entry below it on the stack into a RIPEMD(SHA256()) hashed version of itself"
 [op_return]: /en/developer-reference#term-op-return "Operation which terminates the script in failure"
 [op_verify]: /en/developer-reference#term-op-verify "Operation which terminates the script if the entry below it on the stack is non-true (zero)"
-[orphan]: /en/developer-guide#term-orphan "Blocks which were successfully mined but which aren't included on the current valid block chain"
 [output]: /en/developer-guide#term-output "The output of a transaction which transfers value to a pubkey script"
 [output index]: /en/developer-guide#term-output-index "The sequentially-numbered index of outputs in a single transaction starting from 0"
 [P2PKH]: /en/developer-guide#term-p2pkh "A pubkey script which Pays To PubKey Hashes (P2PKH), allowing spending of satoshis to anyone with a Bitcoin address"
@@ -136,6 +135,7 @@
 [spv]: /en/developer-guide#simplified-payment-verification-spv "A method for verifying particular transactions were included in blocks without downloading the entire contents of the block chain"
 [ssl signature]: /en/developer-examples#term-ssl-signature "Signatures created and recognized by major SSL implementations such as OpenSSL"
 [stack]: /en/developer-guide#term-stack "An evaluation stack used in Bitcoin's script language"
+[stale block]: /en/developer-guide#term-stale-block "Blocks which were successfully mined but which aren't included on the current valid block chain"
 [standard script]: /en/developer-guide#standard-transactions "A pubkey script which matches the IsStandard() patterns specified in Bitcoin Core---or a transaction containing only standard outputs. Only standard transactions are mined or broadcast by peers running the default Bitcoin Core software"
 [target]: /en/developer-guide#term-target "The threshold below which a block header hash must be in order for the block to be added to the block chain"
 [testnet]: /en/developer-examples#testnet "A Bitcoin-like network where the satoshis have no real-world value to allow risk-free testing"
@@ -176,6 +176,7 @@
 [core git]: https://github.com/bitcoin/bitcoin
 [core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
 [core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
+[CVE-2012-2459]: https://en.bitcoin.it/wiki/CVEs#CVE-2012-2459
 [DER]: https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
 [devex complex raw transaction]: /en/developer-examples#complex-raw-transaction
 [devex payment protocol]: /en/developer-examples#payment-protocol
