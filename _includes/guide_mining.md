@@ -26,7 +26,7 @@ As illustrated below, solo miners typically use `bitcoind` to get new
 transactions from the network. Their mining software periodically polls
 `bitcoind` for new transactions using the `getblocktemplate` RPC, which
 provides the list of new transactions plus the public key to which the
-coinbase transaction should be sent.
+generation transaction should be sent.
 
 ![Solo Bitcoin Mining](/img/dev/en-solo-mining-overview.svg)
 
@@ -39,7 +39,7 @@ header nonce and generates the corresponding hash.
 If none of the hashes are below the threshold, the mining hardware gets
 an updated block header with a new merkle root from the mining software;
 this new block header is created by adding extra nonce data to the
-coinbase field of the coinbase transaction.
+coinbase field of the generation transaction.
 
 On the other hand, if a hash is found below the target threshold, the
 mining hardware returns the block header with the successful nonce to
@@ -72,7 +72,7 @@ miner checked a percentage of the possible hash values.
 The miner then sends to the pool a copy of the information the pool
 needs to validate that the header will hash below the target and that
 the the block of transactions referred to by the header merkle root field
-is valid for the pool's purposes. (This usually means that the coinbase
+is valid for the pool's purposes. (This usually means that the generation
 transaction must pay the pool.)
 
 The information the miner sends to the pool is called a share because it
@@ -123,7 +123,7 @@ discourage or disallow its use.
 An improved method is the Bitcoin Core `getblocktemplate` RPC. This
 provides the mining software with much more information:
 
-1. The information necessary to construct a coinbase transaction
+1. The information necessary to construct a generation transaction
    paying the pool or the solo miner's `bitcoind` wallet.
 
 2. A complete dump of the transactions `bitcoind` or the mining pool
@@ -161,11 +161,11 @@ A widely used alternative to `getblocktemplate` is the [Stratum mining
 protocol][]. Stratum focuses on giving miners the minimal information they
 need to construct block headers on their own:
 
-1. The information necessary to construct a coinbase transaction
+1. The information necessary to construct a generation transaction
    paying the pool.
 
 2. The parts of the merkle tree which need to be re-hashed to
-   create a new merkle root when the coinbase transaction is
+   create a new merkle root when the generation transaction is
    updated with a new extra nonce. The other parts of the merkle
    tree, if any, are not sent, effectively limiting the amount of data which needs
    to be sent to (at most) about a kilobyte at current transaction
@@ -176,13 +176,13 @@ need to construct block headers on their own:
 
 4. The mining pool's current target threshold for accepting shares.
 
-Using the coinbase transaction received, the mining software adds a
-nonce to the coinbase extra nonce field, hashes the coinbase
+Using the generation transaction received, the mining software adds a
+nonce to the coinbase extra nonce field, hashes the generation
 transaction, and adds the hash to the received parts of the merkle tree.
 The tree is hashed as necessary to create a merkle root, which is added
 to the block header information received. Whenever the extra nonce field
 needs to be changed, the mining software updates and re-hashes the
-coinbase transaction, rebuilds the merkle root, and updates the header
+generation transaction, rebuilds the merkle root, and updates the header
 merkle root field.
 
 Unlike `getblocktemplate`, miners using Stratum cannot inspect or add

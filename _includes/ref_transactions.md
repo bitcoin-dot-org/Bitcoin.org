@@ -135,7 +135,7 @@ Bitcoin transactions are broadcast between peers and stored in the
 block chain in a serialized byte format, called [raw format][]{:#term-raw-format}{:.term}. Bitcoin Core
 and many other tools print and accept raw transactions encoded as hex.
 
-A sample raw transaction is the first non-coinbase transaction, made in
+A sample raw transaction is the first non-generation transaction, made in
 [block 170][block170].  To get the transaction, use the `getrawtransaction` RPC with
 that transaction's txid (provided below):
 
