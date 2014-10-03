@@ -458,7 +458,8 @@ conditions:
   OP codes which solely push data to the stack.
 
 * The transaction must not include any outputs which receive fewer than
-  the defined minimum number of satoshis, currently 546.
+  the defined minimum number of satoshis, [currently 546][bitcoin core
+  fee drop commit].
 
 {% endautocrossref %}
 

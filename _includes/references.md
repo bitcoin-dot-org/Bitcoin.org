@@ -166,6 +166,7 @@
 [BIP70]: https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki
 [BIP71]: https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki
 [BIP72]: https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki
+[bitcoin core fee drop commit]: https://github.com/bitcoin/bitcoin/commit/6a4c196dd64da2fd33dc7ae77a8cdd3e4cf0eff1
 [bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation
 [bitcoinpdf]: https://bitcoin.org/bitcoin.pdf
 [block170]: https://www.biteasy.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
