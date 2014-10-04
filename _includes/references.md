@@ -280,7 +280,8 @@
 [rpc walletpassphrasechange]: /en/developer-reference#walletpassphrasechange
 [RPC]: /en/developer-reference#remote-procedure-calls-rpcs
 [RPCs]: /en/developer-reference#remote-procedure-calls-rpcs
-[secp256k1]: http://www.secg.org/index.php?action=secg,docs_secg
+<!-- [secp256k1]: http://www.secg.org/index.php?action=secg,docs_secg -->
+[secp256k1]: http://perso.univ-rennes1.fr/sylvain.duquesne/master/standards/sec2_final.pdf
 [section verifying payment]: /en/developer-guide#verifying-payment
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [SHA256]: https://en.wikipedia.org/wiki/SHA-2
