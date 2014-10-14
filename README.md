@@ -271,7 +271,7 @@ To get a good score, the wallet must provide the user with full exclusive contro
 
 To get a passing score, the wallet must provide the user with exclusive control over their bitcoins. Encrypted online backups are accepted so long as only the user can decrypt them. Multisig wallets are accepted so long as only the user can spend without the other party's permission.
 
-**Decentralization** - How secure and « zero trust » is payment processing?
+**Validation** - How secure and « zero trust » is payment processing?
 
 To get a good score, the wallet must be a full node and need no trust on other nodes.
 
