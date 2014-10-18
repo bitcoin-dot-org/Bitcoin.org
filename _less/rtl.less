@@ -122,7 +122,13 @@ h2 .rssicon{
 	font-family:Arial, sans-serif;
 }
 
-.mainlist>div>div{
+.mainlist>div:first-child{
+	text-align:right;
+}
+.mainlist>div:first-child+div+div{
+	text-align:left;
+}
+.mainlist>div>div>div{
 	text-align:right;
 }
 .mainlist img{
