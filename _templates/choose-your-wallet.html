@@ -267,44 +267,44 @@ wallets:
     level: 3
     platform:
       mobile:
-        text: "wallethive-android"
-        link: "https://play.google.com/store/apps/details?id=com.hivewallet.androidclient.wallet"
-        source: "https://github.com/hivewallet/hive-android"
-        screenshot: "hiveandroid.png"
+        text: "wallethive-web"
+        link: "https://play.google.com/store/apps/details?id=com.hivewallet.hive.cordova"
+        source: "https://github.com/hivewallet/hive-ios/tree/android"
+        screenshot: "hivemobile.png"
         os:
         - android
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationspvp2p"
-          transparency: "checkpasstransparencyopensource"
+          decentralization: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
+          privacy: "checkpassprivacybasic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       android:
-        text: "wallethive-android"
-        link: "https://play.google.com/store/apps/details?id=com.hivewallet.androidclient.wallet"
-        source: "https://github.com/hivewallet/hive-android"
-        screenshot: "hiveandroid.png"
+        text: "wallethive-web"
+        link: "https://play.google.com/store/apps/details?id=com.hivewallet.hive.cordova"
+        source: "https://github.com/hivewallet/hive-ios/tree/android"
+        screenshot: "hivemobile.png"
         os:
         - android
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationspvp2p"
-          transparency: "checkpasstransparencyopensource"
+          decentralization: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
+          privacy: "checkpassprivacybasic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       ios:
         text: "wallethive-web"
         link: "https://itunes.apple.com/us/app/hive-wallet/id906990301?mt=8"
         source: "https://github.com/hivewallet/hive-ios"
-        screenshot: "hiveios.png"
+        screenshot: "hivemobile.png"
         os:
         - ios
         check:
