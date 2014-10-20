@@ -5,6 +5,7 @@
 <meta property="og:image" content="https://bitcoin.org/img/opengraph.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
+{% capture metadescription %}{% translate metadescription %}{% endcapture %}{% if metadescription != '' %}<meta name="description" content="{{ metadescription }}">{% endif %}
 {% lesscss main.less %}
 <!--[if lt IE 8]>{% lesscss ie.css %}<script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 {% if page.lang == 'ar' or page.lang == 'fa' %}{% lesscss rtl.less %}{% endif %}
