@@ -103,6 +103,31 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- msigna:
+    title: "mSIGNA"
+    titleshort: "mSIGNA"
+    compat: "desktop windows mac linux"
+    level: 2
+    platform:
+      desktop:
+        text: "walletmsigna"
+        link: "https://ciphrex.com"
+        source: "https://github.com/ciphrex/CoinVault"
+        screenshot: "msigna.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkgoodvalidationfullnode"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkgoodprivacyimproved"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkpassprivacydisclosurefullnode"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - bitcoinwallet:
     title: "Bitcoin Wallet"
     titleshort: "Bitcoin<br>Wallet"
