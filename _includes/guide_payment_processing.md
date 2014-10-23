@@ -488,7 +488,8 @@ estimate the amount of time until they're added to a block.
 Another example could be to detect a fork when multiple peers report differing 
 block header hashes at the same block height. Your program can go into a safe mode if the 
 fork extends for more than two blocks, indicating a possible problem with the 
-block chain.
+block chain. For more details, see the [Detecting Forks
+subsection][section detecting forks].
 
 Another good source of double-spend protection can be human intelligence. For 
 example, fraudsters may act differently from legitimate customers, letting 
