@@ -52,10 +52,13 @@ A complete list of OP codes can be found on the Bitcoin Wiki [Script
 Page][wiki script], with an authoritative list in the `opcodetype` enum
 of the Bitcoin Core [script header file][core script.h]
 
-Note: non-standard transactions can add non-data-pushing op codes to
-their signature script, but signature scripts are run separately from the pubkey scripts (with a
-shared stack), so signature scripts can't use arguments such as `OP_RETURN` to
-prevent the script from working as expected.
+Note: Signature scripts are not signed, so anyone can modify them. This
+means signature scripts should only contain data and data-pushing op
+codes which can't be modified without causing the pubkey script to fail.
+Placing non-data-pushing op codes in the signature script currently
+makes a transaction non-standard, and future consensus rules may forbid
+such transactions altogether. (Non-data-pushing op codes are already
+forbidden in signature scripts when spending a P2SH pubkey script.)
 
 {% endautocrossref %}
 
