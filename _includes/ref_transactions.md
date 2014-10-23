@@ -17,7 +17,7 @@ The op codes used in the pubkey scripts of standard transactions are:
   push the values 1 through 16 to the stack.
 
 * [`OP_CHECKSIG`][op_checksig]{:#term-op-checksig}{:.term} consumes a signature and a full public key, and pushes
-  true onto the stack if the the transaction data specified by the SIGHASH flag was
+  true onto the stack if the transaction data specified by the SIGHASH flag was
   converted into the signature using the same ECDSA private key that
   generated the public key.  Otherwise, it pushes false onto the stack.
 
