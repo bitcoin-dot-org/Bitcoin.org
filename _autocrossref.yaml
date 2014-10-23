@@ -39,10 +39,10 @@ child keys: child key
 child private and public keys: child key
 child public key:
 child public keys: child public key
-coinbase: coinbase transaction
-coinbase transaction:
-coinbase transactions: coinbase transaction
+generation transaction:
+generation transactions: generation transaction
 coinbase field:
+coinbase: coinbase field
 confirm:
 confirmed:
 confirmation:

@@ -1597,7 +1597,7 @@ false.
 {% autocrossref %}
 
 Hex-encoded *data* identified by *flag* which should be included in the
-coinbase field of the coinbase transaction.  The flag is for the
+coinbase field of the generation transaction.  The flag is for the
 benefit of mining software---only the data is included.
 
 {% endautocrossref %}
@@ -1608,20 +1608,20 @@ benefit of mining software---only the data is included.
 
 {% autocrossref %}
 
-The *coinbasevalue*, the maximum number of satoshis which the coinbase
+The *coinbasevalue*, the maximum number of satoshis which the generation
 transaction can spend (including the block reward) if all the transactions provided in
 the transaction array are included in the block. 
 
 {% endautocrossref %}
 
 ~~~
-  "coinbasetxn" : { <coinbase transaction> },
+  "coinbasetxn" : { <generation transaction> },
 ~~~
 
 {% autocrossref %}
 
 The *coinbasetxn* is a JSON object in transaction object format
-which describes the coinbase transaction.
+which describes the generation transaction.
 
 {% endautocrossref %}
 
@@ -2998,7 +2998,7 @@ decimal bitcoins, and a JSON object describing the pubkey script,
 including the script in script psuedocode (*asm*), the script in *hex*,
 the number of *required signatures*, the *type* of pubkey script, and
 the *addresses* it references (if known).  Also provided are the
-UTXO's transaction *version* number and whether or not it's a *coinbase*
+UTXO's transaction *version* number and whether or not it's a *generation*
 transaction.
 
 {% endautocrossref %}

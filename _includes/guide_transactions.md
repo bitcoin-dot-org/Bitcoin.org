@@ -17,11 +17,11 @@ out of several parts which enable both simple direct payments and complex
 transactions. This section will describe each part and
 demonstrate how to use them together to build complete transactions.
 
-To keep things simple, this section pretends coinbase transactions do
+To keep things simple, this section pretends generation transactions do
 not exist. Coinbase transactions can only be created by Bitcoin miners
 and they're an exception to many of the rules listed below. Instead of
-pointing out the coinbase exception to each rule, we invite you to read
-about coinbase transactions in the block chain section of this guide.
+pointing out the generation exception to each rule, we invite you to read
+about generation transactions in the block chain section of this guide.
 
 ![The Parts Of A Transaction](/img/dev/en-tx-overview.svg)
 

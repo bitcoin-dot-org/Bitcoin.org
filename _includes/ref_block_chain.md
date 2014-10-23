@@ -27,20 +27,20 @@ As of version 2 blocks, each block consists of four root elements:
 
 4. One or more transactions.
 
-The first transaction in a block must be a [coinbase transaction][]{:#term-coinbase-tx}{:.term} which should collect and
+The first transaction in a block must be a [generation transaction][]{:#term-generation-tx}{:.term} (sometimes called a coinbase transaction) which should collect and
 spend any transaction fees paid by transactions included in this block.
 All blocks with a block height less than 6,930,000 are entitled to
 receive a [block reward][]{:#term-block-reward}{:.term} of newly created bitcoin value, which also
-should be spent in the coinbase transaction. (The block reward started
+should be spent in the generation transaction. (The block reward started
 at 50 bitcoins and is being halved every 210,000 blocks---approximately once every four years. As of
-June 2014, it's 25 bitcoins.) A coinbase transaction is invalid if it 
+June 2014, it's 25 bitcoins.) A generation transaction is invalid if it 
 tries to spend more value than is available from the transaction 
 fees and block reward.
 
-The coinbase transaction has the same basic format as any other
+The generation transaction has the same basic format as any other
 transaction, but it references a single non-existent UTXO and a special
 [coinbase field][]{:#term-coinbase-field}{:.term} replaces the field that would normally hold a signature script and
-secp256k1 signature. In version 2 blocks, the coinbase parameter must begin with
+secp256k1 signature. In version 2 blocks, the coinbase field must begin with
 the current block's block height and may contain additional arbitrary
 data or a script up to a maximum total of 100 bytes.
 
@@ -89,7 +89,7 @@ The 80-byte block header contains the following six fields:
    hash values for the header until they find a hash value less than or
    equal to the target threshold. If all values within the nonce's four
    bytes are tested, the time can be updated or the
-   coinbase transaction can be changed and the merkle
+   generation transaction can be changed and the merkle
    root updated.
 
 {% endautocrossref %}

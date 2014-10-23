@@ -526,7 +526,7 @@ cores of one physical processor):
 (Success: no result displayed.  Process manager shows 200% CPU usage.)
 
 Using regtest mode, generate 101 blocks (enough to be able to spend the
-coinbase transaction of the first block generated): 
+generation transaction of the first block generated): 
 
 {% endautocrossref %}
 

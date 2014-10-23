@@ -181,19 +181,19 @@ are usually referenced by the hash of their header (often with the byte order re
 {% autocrossref %}
 
 Every block must include one or more transactions. The first one of these
-transactions must be a coinbase transaction, also called a generation transaction, which should collect and
+transactions must be a generation transaction, also called a generation transaction, which should collect and
 spend the block reward (comprised of a block subsidy and any transaction fees paid by transactions included in this block).
 
-The UTXO of a coinbase transaction has the special condition that
+The UTXO of a generation transaction has the special condition that
 it cannot be spent (used as an input) for at least 100 blocks. This temporarily
 prevents a miner from spending the transaction fees and block reward from a
-block that may later be determined to be stale (and therefore the coinbase transaction destroyed) after a block chain fork.
+block that may later be determined to be stale (and therefore the generation transaction destroyed) after a block chain fork.
 
-Blocks are not required to include any non-coinbase transactions, but
+Blocks are not required to include any non-generation transactions, but
 miners almost always do include additional transactions in order to
 collect their transaction fees.
 
-All transactions, including the coinbase transaction, are encoded into
+All transactions, including the generation transaction, are encoded into
 blocks in binary rawtransaction format.
 
 The rawtransaction format is hashed to create the transaction

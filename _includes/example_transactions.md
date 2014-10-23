@@ -52,7 +52,7 @@ returned hex string is the transaction identifier (txid).
 
 The `sendtoaddress` RPC automatically selects an unspent transaction
 output (UTXO) from which to spend the satoshis. In this case, it
-withdrew the satoshis from our only available UTXO, the coinbase
+withdrew the satoshis from our only available UTXO, the generation
 transaction for block #1 which matured with the creation of block #101.
 To spend a specific UTXO, you could use the `sendfrom` RPC instead.
 
@@ -180,8 +180,8 @@ This subsection covers one of the simplest possible raw transactions.
 </div>
 
 Re-rerun `listunspent`. We now have three UTXOs: the two transactions we
-created before plus the coinbase transaction from block #2. We save the
-txid and output index number (vout) of that coinbase UTXO to shell
+created before plus the generation transaction from block #2. We save the
+txid and output index number (vout) of that generation UTXO to shell
 variables.
 
 {% highlight bash %}
@@ -215,7 +215,7 @@ f2f69e5355aa427045bc15e7c6c77288ac00000000
 
 Using two arguments to the `createrawtransaction` RPC, we create a new
 raw format transaction. The first argument (a JSON array) references
-the txid of the coinbase transaction from block #2 and the index
+the txid of the generation transaction from block #2 and the index
 number (0) of the output from that transaction we want to spend. The
 second argument (a JSON object) creates the output with the address
 (public key hash) and number of bitcoins we want to transfer.
