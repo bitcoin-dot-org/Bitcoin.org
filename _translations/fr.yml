@@ -147,7 +147,7 @@ fr:
     checkneutralvalidationvariable: "Validation variable"
     checkneutralvalidationvariabletxt: "Les fonctionnalités reliées à la validation des paiements sont offertes par le portefeuille logiciel que vous utilisez avec cet appareil. Veuillez consulter le score de Validation du portefeuile logiciel que vous envisagez utiliser."
     checkpassvalidationspvp2p: "Validation simplifiée"
-    checkpassvalidationspvp2ptxt: "Ce portefeuille utilise SPV et le réseau Bitcoin. Cela signifie que très peu de confiance en des tiers est requise afin de vérifier les paiements. Toutefois, celui-ci n'est pas aussi sécurisé qu'un noeud complet tel que <a href=\"#download#\">Bitcoin Core</a>."
+    checkpassvalidationspvp2ptxt: "Ce portefeuille utilise SPV et le réseau Bitcoin. Cela signifie que très peu de confiance en des tiers est requise afin de vérifier les paiements. Toutefois, celui-ci n'est pas aussi sécurisé qu'un nœud complet tel que <a href=\"#download#\">Bitcoin Core</a>."
     checkpassvalidationspvservers: "Validation simplifiée"
     checkpassvalidationspvserverstxt: "Ce portefeuille utilise SPV et des serveurs aléatoires dans une liste. Cela signifie que peu confiance en des tiers est requise afin de vérifier les paiements. Toutefois, celui-ci n'est pas aussi sécurisé qu'un nœud complet tel que <a href=\"#download#\">Bitcoin Core</a>."
     checkpassvalidationservers: "Validation décentralisée"
