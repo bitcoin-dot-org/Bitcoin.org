@@ -1,54 +1,54 @@
 langsorder:
-- id
-- da
-- de
-- en
-- es
-- fr
-- it
-- hu
-- nl
-- pl
-- pt_BR
-- ro
-- sl
-- sv
-- tr
-- bg
-- ru
-- ar
-- fa
-- hi
-- ko
-- ja
-- zh_CN
-- zh_TW
+- 'id'
+- 'da'
+- 'de'
+- 'en'
+- 'es'
+- 'fr'
+- 'it'
+- 'hu'
+- 'nl'
+- 'pl'
+- 'pt_BR'
+- 'ro'
+- 'sl'
+- 'sv'
+- 'tr'
+- 'bg'
+- 'ru'
+- 'ar'
+- 'fa'
+- 'hi'
+- 'ko'
+- 'ja'
+- 'zh_CN'
+- 'zh_TW'
 
 langs:
-  ar: العربية
-  bg: български
-  da: Dansk
-  de: Deutsch
-  en: English
-  es: Español
-  fa: فارسی
-  fr: Français
-  hi: हिन्दी
-  hu: magyar
-  id: Bahasa Indonesia‬
-  it: Italiano
-  ja: 日本語
-  ko: 한국의
-  nl: Nederlands
-  pl: polski
-  pt_BR: Português Brasil
-  ro: română
-  ru: Русский
-  sl: slovenščina
-  sv: Svenska
-  tr: Türkçe
-  zh_CN: ‪简体中文‬
-  zh_TW: ‪繁體中文‬
+  'ar': 'العربية'
+  'bg': 'български'
+  'da': 'Dansk'
+  'de': 'Deutsch'
+  'en': 'English'
+  'es': 'Español'
+  'fa': 'فارسی'
+  'fr': 'Français'
+  'hi': 'हिन्दी'
+  'hu': 'magyar'
+  'id': 'Bahasa Indonesia'
+  'it': 'Italiano'
+  'ja': '日本語'
+  'ko': '한국의'
+  'nl': 'Nederlands'
+  'pl': 'polski'
+  'pt_BR': 'Português Brasil'
+  'ro': 'română'
+  'ru': 'Русский'
+  'sl': 'slovenščina'
+  'sv': 'Svenska'
+  'tr': 'Türkçe'
+  'zh_CN': '简体中文'
+  'zh_TW': '繁體中文'
 
 redirects:
   /news: /en/version-history
