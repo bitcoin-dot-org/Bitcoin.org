@@ -166,16 +166,17 @@ wallets:
 - kncwallet:
     title: "KnC Wallet"
     titleshort: "KnC<br>Wallet"
-    compat: "mobile android"
+    compat: "mobile android ios"
     level: 2
     platform:
       mobile:
         text: "walletkncwallet"
         link: "https://kncwallet.com/"
         source: "https://github.com/kncgroup/bitcoin-wallet"
-        screenshot: "kncwalletandroid.png"
+        screenshot: "kncwalletiphone.png"
         os:
         - android
+        - ios
         check:
           control: "checkgoodcontrolfull"
           decentralization: "checkpassvalidationspvp2p"
@@ -186,6 +187,24 @@ wallets:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
+      ios:
+        text: "walletkncwallet"
+        link: "https://kncwallet.com/"
+        source: "https://github.com/kncgroup/iOSWallet"
+        screenshot: "kncwalletiphone.png"
+        os:
+        - ios
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+
       android:
         text: "walletkncwallet"
         link: "https://kncwallet.com/"
