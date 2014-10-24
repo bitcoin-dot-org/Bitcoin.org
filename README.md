@@ -143,15 +143,15 @@ references are defined in _autocrossref.yaml .
 
 ### How To Translate
 
-You can join a translation team on [Transifex](https://www.transifex.com/projects/p/bitcoinorg/) and start translating or improving existing translations. Latest live previews and communications can be found on [this thread](https://bitcointalk.org/index.php?topic=349633.0).
+You can join a translation team on [Transifex](https://www.transifex.com/projects/p/bitcoinorg/) and start translating or improving existing translations.
 
 * You must be a native speaker for the language you choose to translate.
 * Please be careful to preserve the original meaning of each text.
 * Sentences and popular expressions should sound native in your language.
-* You can check the result on live previews and [test small changes](#preview-small-text-changes).
+* You can check the result on the [live preview](http://bitcointx.us.to/) and [test small changes](#preview-small-text-changes).
 * Translations need to be reviewed by a reviewer or coordinator before publication.
 * Once reviewed, translations can be [submitted](#import-translations) in a pull request on GitHub.
-* **In doubt, please open a discussion on Transifex with coordinators. That'll be much appreciated.**
+* **In doubt, please contact coordinators on Transifex. That'll be much appreciated.**
 
 ### Import Translations
 
