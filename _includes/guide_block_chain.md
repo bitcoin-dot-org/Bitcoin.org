@@ -4,8 +4,15 @@
 
 The block chain provides Bitcoin's public ledger, an ordered and timestamped record
 of transactions. This system is used to protect against double spending
-and modification of previous transaction records, using proof of
-work verified by the peer-to-peer network to maintain a global consensus.
+and modification of previous transaction records.
+
+Each full node in the Bitcoin network independently stores a block chain
+containing only blocks validated by that node. When several nodes all
+have the same blocks in their block chain, they are considered to be in
+[consensus][]{:#term-consensus}{:.term}. The validation rules these
+nodes follow to maintain consensus are called [consensus
+rules][]{:#term-consensus-rules}{:.term}. This section describes many of
+the consensus rules used by Bitcoin Core.
 
 {% endautocrossref %}
 
@@ -148,7 +155,7 @@ block 2016 is where difficulty could have first been adjusted.
 
 Multiple blocks can all have the same block height, as is common when
 two or more miners each produce a block at roughly the same time. This
-creates an apparent [fork][accidental fork]{:#term-accidental-fork}{:.term} in the block chain, as shown in the
+creates an apparent [fork][]{:#term-fork}{:.term} in the block chain, as shown in the
 illustration above.
 
 When miners produce simultaneous blocks at the end of the block chain, each
@@ -242,5 +249,106 @@ requires only 140 bytes.
 Note: If identical txids are found within the same block, there is a possibility that the merkle tree may collide with a block with some or all duplicates removed due to how unbalanced merkle trees are implemented (duplicating the lone hash).
 Since it is impractical to have separate transactions with identical txids, this does not impose a burden on honest software, but must be checked if the invalid status of a block is to be cached;
 otherwise, a valid block with the duplicates eliminated could have the same merkle root and block hash, but be rejected by the cached invalid outcome, resulting in security bugs such as CVE-2012-2459.
+
+{% endautocrossref %}
+
+### Consensus Rule Changes
+
+{% autocrossref %}
+
+To maintain consensus, all full nodes validate blocks using the same
+consensus rules. However, sometimes the consensus rules are changed to
+introduce new features or prevent network abuse. When the new rules are
+implemented, there will likely be a period of time when non-upgraded
+nodes follow the old rules and upgraded nodes follow the new rules,
+creating two possible ways consensus can break:
+
+1. A block following the new consensus rules is accepted by upgraded
+   nodes but rejected by non-upgraded nodes. For example, a new
+   transaction feature is used within a block: upgraded nodes understand
+   the feature and accept it, but non-upgraded nodes reject it because
+   it violates the old rules.
+
+2. A block violating the new consensus rules is rejected by upgraded
+   nodes but accepted by non-upgraded nodes. For example, an abusive
+   transaction feature is used within a block: upgraded nodes reject it
+   because it violates the new rules, but non-upgraded nodes accept it
+   because it follows the old rules.
+
+In the first case, rejection by non-upgraded nodes, mining software
+which gets block chain data from those non-upgraded nodes refuses to
+build on the same chain as mining software getting data from upgraded
+nodes. This creates permanently divergent chains---one for non-upgraded
+nodes and one for upgraded nodes---called a [hard
+fork][]{:#term-hard-fork}{:.term}.
+
+![Hard Fork](/img/dev/en-hard-fork.svg)
+
+In the second case, rejection by upgraded nodes, it's possible to keep
+the block chain from permanently diverging if upgraded nodes control a
+majority of the hash rate. That's because, in this case, non-upgraded
+nodes will accept as valid all the same blocks as upgraded nodes, so the
+upgraded nodes can build a stronger chain that the non-upgraded nodes
+will accept as the best valid block chain. This is called a [soft
+fork][]{:#term-soft-fork}{:.term}.
+
+![Soft Fork](/img/dev/en-soft-fork.svg)
+
+Although a fork is an actual divergence in block chains, changes to the
+consensus rules are often described by their potential to create either
+a hard or soft fork. For example, "increasing the block size above 1 MB
+requires a hard fork." In this example, an actual block chain fork is
+not required---but it is a possible outcome.
+
+**Resources:** [BIP16][], [BIP30][], and [BIP34][] were implemented as
+changes which might have lead to soft forks. [BIP50][] describes both an
+accidental hard fork, resolved by temporary downgrading the capabilities
+of upgraded nodes, and an intentional hard fork when the temporary
+downgrade was removed. A document from Gavin Andresen outlines [how
+future rule changes may be
+implemented](https://gist.github.com/gavinandresen/2355445).
+
+{% endautocrossref %}
+
+#### Detecting Forks
+
+{% autocrossref %}
+
+Non-upgraded nodes may use and distribute incorrect information during
+both types of forks, creating several situations which could lead to
+financial loss. In particular, non-upgraded nodes may relay and accept
+transactions that are considered invalid by upgraded nodes and so will
+never become part of the universally-recognized best block chain.
+Non-upgraded nodes may also refuse to relay blocks or transactions which
+have already been added to the best block chain, or soon will be, and so
+provide incomplete information.
+
+<!-- paragraph below based on src/main.cpp CheckForkWarningConditions() -->
+
+Bitcoin Core includes code that detects a hard fork by looking at block
+chain proof of work. If a node receives block chain headers
+demonstrating six blocks more proof of work than the best chain this
+node considers valid, the node reports an error in the `getinfo` RPC
+results and runs the `-alertnotify` command if set.
+
+Full nodes can also check block and transaction version numbers. If the
+block or transaction version numbers seen in several recent blocks are
+higher than the version numbers the node uses, it can assume it doesn't
+use the current consensus rules. Future versions of Bitcoin Core
+(>0.9.3) will likely report this situation through the `getinfo` RPC and
+`-alertnotify` command if set.
+
+In either case, data should not be relied upon if it comes from a node
+that apparently isn't using the current consensus rules.
+
+SPV clients which connect to full nodes can detect a likely hard fork by
+connecting to several full nodes and ensuring that they're all on the
+same chain with the same block height, plus or minus several blocks to
+account for transmission delays and stale blocks.  If there's a
+divergence, the client can disconnect from nodes with weaker chains.
+
+SPV clients should also monitor for block and transaction version number
+increases to ensure they process received transactions and create new
+transactions using the current consensus rules.
 
 {% endautocrossref %}

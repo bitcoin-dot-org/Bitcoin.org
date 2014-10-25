@@ -48,6 +48,8 @@ confirmed:
 confirmation:
 confirmations:
 confirmed transactions:
+consensus:
+consensus rules:
 denomination:
 denominations: denomination
 DER format: der
@@ -65,8 +67,11 @@ extended keys: extended key
 extended private key:
 extended public key:
 fiat:
-fork: accidental fork
+fork:
+forks: fork
 genesis block:
+hard fork:
+hard forks: hard fork
 hardened extended private key:
 HD protocol:
 header nonce:
@@ -76,6 +81,7 @@ inputs: input
 input:
 intermediate certificate:
 intermediate certificates: intermediate certificate
+internal byte order:
 key index:
 key pair:
 '`label`': label
@@ -165,6 +171,7 @@ root certificate:
 root seed:
 RPCs: rpc
 RPC:
+RPC byte order:
 satoshi:
 satoshis: satoshi
 '`script`': pp script
@@ -184,6 +191,8 @@ signature hash:
 signature script:
 signature scripts: signature script
 signatures: signature
+soft fork:
+soft forks: soft fork
 SPV:
 stack:
 stale block:
@@ -217,10 +226,14 @@ wallet import format:
 x.509: x509
 X509Certificates:
 
-## BIPS in numerical order; don't use padding zeros (e.g. BIP70 not BIP0070)
+## BIPs in numerical order; don't use padding zeros (e.g. BIP70 not BIP0070)
+BIP16:
 BIP21:
+BIP30:
 BIP32:
+BIP34:
 BIP39:
+BIP50:
 BIP70:
 BIP71:
 BIP72:

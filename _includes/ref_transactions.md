@@ -89,7 +89,7 @@ bytes commonly used by Bitcoin are:
 
 2. Create a copy of the version and hash; then hash that twice with SHA256: `SHA256(SHA256(version . hash))`
 
-3. Extract the four most significant bytes from the double-hashed copy.
+3. Extract the first four bytes from the double-hashed copy.
    These are used as a checksum to ensure the base hash gets transmitted
    correctly.
 
@@ -138,6 +138,10 @@ Bitcoin transactions are broadcast between peers and stored in the
 block chain in a serialized byte format, called [raw format][]{:#term-raw-format}{:.term}. Bitcoin Core
 and many other tools print and accept raw transactions encoded as hex.
 
+The binary form of a raw transaction is SHA256(SHA256()) hashed to create
+its TXID.  Bitcoin Core RPCs use a reversed byte order for hashes; see the [subsection about hash byte
+order][section hash byte order] for details.
+
 A sample raw transaction is the first non-coinbase transaction, made in
 [block 170][block170].  To get the transaction, use the `getrawtransaction` RPC with
 that transaction's txid (provided below):
@@ -145,7 +149,7 @@ that transaction's txid (provided below):
 {% endautocrossref %}
 
 ~~~
-> getrawtransaction \
+> bitcoin-cli getrawtransaction \
   f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16
 
 0100000001c997a5e56e104102fa209c6a852dd90660a20b2d9c352423e\

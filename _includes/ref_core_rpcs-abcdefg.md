@@ -1542,8 +1542,7 @@ An array of *transactions* in [transaction object format][]{:#term-transaction-o
 {% autocrossref %}
 
 Each object in the array contains the
-rawtransaction *data* in hex and the *hash* of the data in little-endian
-hex.  
+rawtransaction *data* in hex and the *hash* of the data in RPC byte order.
 
 {% endautocrossref %}
 
