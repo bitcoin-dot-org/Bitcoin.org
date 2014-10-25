@@ -1,3 +1,4 @@
+<!-- Terms; must have tooltip description in "quotes"; alphabetical order -->
 [51 percent attack]: /en/developer-guide#term-51-attack "The ability of someone controlling a majority of hashing power to revise transactions history and prevent new transactions from confirming"
 [addresses]: /en/developer-guide#term-address "A 20-byte hash formatted as a P2PKH or P2SH Bitcoin Address"
 [address]: /en/developer-guide#term-address "A 20-byte hash formatted as a P2PKH or P2SH Bitcoin Address"
@@ -50,9 +51,9 @@
 [inputs]: /en/developer-guide#term-input "The input to a transaction linking to the output of a previous transaction which permits spending of satoshis"
 [intermediate certificate]: /en/developer-examples#term-intermediate-certificate "A intermediate certificate authority certificate which helps connect a leaf (receiver) certificate to a root certificate authority"
 [internal byte order]: /en/developer-reference#hash-byte-order "The standard order in which hash digests are displayed as strings---the same format used in blocks"
-[key index]: /en/developer-guide#term-key-index "An index number used in the HD wallet formula to generate child keys from a parent key" 
+[key index]: /en/developer-guide#term-key-index "An index number used in the HD wallet formula to generate child keys from a parent key"
 [key pair]: /en/developer-guide#term-key-pair "A private key and its derived public key"
-[label]: /en/developer-guide#term-label "The label parameter of a bitcoin: URI which provides the spender with the receiver's name (unauthenticated)" 
+[label]: /en/developer-guide#term-label "The label parameter of a bitcoin: URI which provides the spender with the receiver's name (unauthenticated)"
 [leaf certificate]: /en/developer-examples#term-leaf-certificate "The end-node in a certificate chain; in the payment protocol, it is the certificate belonging to the receiver of satoshis"
 [locktime]: /en/developer-guide#term-locktime "Part of a transaction which indicates the earliest time or earliest block when that transaction can be added to the block chain"
 [long-term fork]: /en/developer-guide#term-long-term-fork "When a series of blocks have corresponding block heights, indicating a possibly serious problem"
@@ -64,7 +65,6 @@
 [message]: /en/developer-guide#term-message "A parameter of bitcoin: URIs which allows the receiver to optionally specify a message to the spender"
 [merkle root]: /en/developer-guide#term-merkle-root "The root node of a merkle tree descended from all the hashed pairs in the tree"
 [merkle tree]: /en/developer-guide#term-merkle-tree "A tree constructed by hashing paired data, then pairing and hashing the results until a single hash remains, the merkle root"
-[micropayment channel]: /en/developer-guide#term-micropayment-channel
 [millibits]: /en/developer-guide#term-millibits "0.001 bitcoins (100,000 satoshis)"
 [mine]: /en/developer-guide#term-miner "Creating Bitcoin blocks which solve proof-of-work puzzles in exchange for block rewards and transaction fees"
 [miner]: /en/developer-guide#term-miner "Creators of Bitcoin blocks who solve proof-of-work puzzles in exchange for block rewards and transaction fees"
@@ -113,7 +113,7 @@
 [proof of work]: /en/developer-guide#term-proof-of-work "Proof that computationally-difficult work was performed which helps secure blocks against modification, protecting transaction history"
 [Pubkey]: /en/developer-guide#term-pubkey "A cryptographic public key derived from a private key and which can match a signature made by that same private key"
 [pubkey script]: /en/developer-guide#term-pubkey-script "The part of an output which sets the conditions for spending of the satoshis in that output"
-[r]: /en/developer-guide#term-r-parameter "The payment request parameter in a bitcoin: URI" 
+[r]: /en/developer-guide#term-r-parameter "The payment request parameter in a bitcoin: URI"
 [raw format]: /en/developer-reference#term-raw-format "Complete transactions in their binary format; often represented using hexidecimal"
 [receipt]: /en/developer-guide#term-receipt "A cryptographically-verifiable receipt created using parts of a payment request and a confirmed transaction"
 [recurrent rebilling]: /en/developer-guide#rebilling-recurring-payments "Billing a spender on a regular schedule"
@@ -150,7 +150,6 @@
 [transaction malleability]: /en/developer-guide#transaction-malleability "The ability of an attacker to change the transaction identifier (txid) of unconfirmed transactions, making dependent transactions invalid"
 [txid]: /en/developer-guide#term-txid "A hash of a completed transaction which allows other transactions to spend its outputs"
 [transaction]: /en/developer-guide#transactions "A transaction spending satoshis"
-[transaction object format]: /en/developer-reference#term-transaction-object-format
 [transaction version number]: /en/developer-guide#term-transaction-version-number "A version number prefixed to transactions to allow upgrading""
 [transactions]: /en/developer-guide#transactions "A transaction spending satoshis"
 [unconfirmed]: /en/developer-guide#term-unconfirmed-transactions "A transaction which has not yet been added to the block chain"
@@ -163,58 +162,8 @@
 [wallet]: /en/developer-guide#wallets "Software which stores private keys to allow users to spend and receive satoshis"
 [Wallet Import Format]: /en/developer-guide#term-wallet-import-format "A private key specially formatted to allow easy import into a wallet"
 [wallets]: /en/developer-guide#wallets "Software which stores private keys to allow users to spend and receive satoshis"
-[X509Certificates]: /en/developer-examples#term-x509certificates
 
-[BFGMiner]: https://github.com/luke-jr/bfgminer
-[BIP16]: https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki
-[BIP21]: https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki
-[BIP30]: https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki
-[BIP32]: https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
-[BIP34]: https://github.com/bitcoin/bips/blob/master/bip-0034.mediawiki
-[BIP39]: https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
-[BIP50]: https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki
-[BIP70]: https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki
-[BIP71]: https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki
-[BIP72]: https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki
-[bitcoin core fee drop commit]: https://github.com/bitcoin/bitcoin/commit/6a4c196dd64da2fd33dc7ae77a8cdd3e4cf0eff1
-[bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation
-[bitcoinpdf]: https://bitcoin.org/bitcoin.pdf
-[block170]: https://www.biteasy.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
-[casascius address utility]: https://github.com/casascius/Bitcoin-Address-Utility
-[core base58.h]: https://github.com/bitcoin/bitcoin/blob/master/src/base58.h
-[core executable]: /en/download
-[core git]: https://github.com/bitcoin/bitcoin
-[core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
-[core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
-[CVE-2012-2459]: https://en.bitcoin.it/wiki/CVEs#CVE-2012-2459
-[DER]: https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
-[dev communities]: /en/development#devcommunities
-[devex complex raw transaction]: /en/developer-examples#complex-raw-transaction
-[devex payment protocol]: /en/developer-examples#payment-protocol
-[devexamples]: /en/developer-examples
-[devguide]: /en/developer-guide
-[devguide avoiding key reuse]: /en/developer-guide#avoiding-key-reuse
-[devguide hardened keys]: /en/developer-guide#hardened-keys
-[devguide payment processing]: /en/developer-guide#payment-processing
-[devguide wallets]: /en/developer-guide#wallets
-[devref wallets]: /en/developer-reference#wallets
-[docs issue]: https://github.com/bitcoin/bitcoin.org/issues
-[ECDSA]: https://en.wikipedia.org/wiki/Elliptic_Curve_DSA
-[Eloipool]: https://gitorious.org/bitcoin/eloipool
-[forum tech support]: https://bitcointalk.org/index.php?board=4.0
-[HMAC-SHA512]: https://en.wikipedia.org/wiki/HMAC
-[HTTP longpoll]: https://en.wikipedia.org/wiki/Push_technology#Long_polling
-[irc channels]: https://en.bitcoin.it/wiki/IRC_channels
-[libblkmaker]: https://gitorious.org/bitcoin/libblkmaker
-[MIME]: https://en.wikipedia.org/wiki/Internet_media_type
-[Merge Avoidance subsection]: /en/developer-guide#merge-avoidance
-[mozrootstore]: https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
-[Payment Request Generator]: http://bitcoincore.org/~gavin/createpaymentrequest.php
-[Piotr Piasecki's testnet faucet]: https://tpfaucet.appspot.com/
-[prime symbol]: https://en.wikipedia.org/wiki/Prime_%28symbol%29
-[protobuf]: https://developers.google.com/protocol-buffers/
-[python-blkmaker]: https://gitorious.org/bitcoin/python-blkmaker
-[raw transaction format]: /en/developer-reference#raw-transaction-format
+<!-- RPCs; alphabetical order -->
 [rpc addmultisigaddress]: /en/developer-reference#addmultisigaddress
 [rpc addnode]: /en/developer-reference#addnode
 [rpc backupwallet]: /en/developer-reference#backupwallet
@@ -289,18 +238,78 @@
 [rpc walletlock]: /en/developer-reference#walletlock
 [rpc walletpassphrase]: /en/developer-reference#walletpassphrase
 [rpc walletpassphrasechange]: /en/developer-reference#walletpassphrasechange
+
+<!-- Other internal site links; alphabetical order -->
+[bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
+[bitcoinpdf]: https://bitcoin.org/bitcoin.pdf
+[core executable]: /en/download
+[dev communities]: /en/development#devcommunities
+[devex complex raw transaction]: /en/developer-examples#complex-raw-transaction
+[devex payment protocol]: /en/developer-examples#payment-protocol
+[devexamples]: /en/developer-examples
+[devguide]: /en/developer-guide
+[devguide avoiding key reuse]: /en/developer-guide#avoiding-key-reuse
+[devguide hardened keys]: /en/developer-guide#hardened-keys
+[devguide payment processing]: /en/developer-guide#payment-processing
+[devguide wallets]: /en/developer-guide#wallets
+[devref wallets]: /en/developer-reference#wallets
+[Merge Avoidance subsection]: /en/developer-guide#merge-avoidance
+[micropayment channel]: /en/developer-guide#term-micropayment-channel
+[raw transaction format]: /en/developer-reference#raw-transaction-format
 [RPC]: /en/developer-reference#remote-procedure-calls-rpcs
 [RPCs]: /en/developer-reference#remote-procedure-calls-rpcs
-<!-- [secp256k1]: http://www.secg.org/index.php?action=secg,docs_secg -->
-[secp256k1]: http://perso.univ-rennes1.fr/sylvain.duquesne/master/standards/sec2_final.pdf
 [section hash byte order]: /en/developer-reference#hash-byte-order
 [section verifying payment]: /en/developer-guide#verifying-payment
 [section detecting forks]: /en/developer-guide#detecting-forks
-[bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
+[transaction object format]: /en/developer-reference#term-transaction-object-format
+[Verification subsection]: /en/developer-guide#verifying-payment
+[X509Certificates]: /en/developer-examples#term-x509certificates
+
+<!-- Official reference documents (BIPs should not use zero padding:
+     BIP32 not BIP0032; alphabetical order -->
+[BIP16]: https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki
+[BIP21]: https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki
+[BIP30]: https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki
+[BIP32]: https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
+[BIP34]: https://github.com/bitcoin/bips/blob/master/bip-0034.mediawiki
+[BIP39]: https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
+[BIP50]: https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki
+[BIP70]: https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki
+[BIP71]: https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki
+[BIP72]: https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki
+[CVE-2012-2459]: https://en.bitcoin.it/wiki/CVEs#CVE-2012-2459
+<!-- [secp256k1]: http://www.secg.org/index.php?action=secg,docs_secg -->
+[secp256k1]: http://perso.univ-rennes1.fr/sylvain.duquesne/master/standards/sec2_final.pdf
+
+<!-- Other external site links; alphabetical order -->
+[BFGMiner]: https://github.com/luke-jr/bfgminer
+[bitcoin core fee drop commit]: https://github.com/bitcoin/bitcoin/commit/6a4c196dd64da2fd33dc7ae77a8cdd3e4cf0eff1
+[bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation
+[block170]: https://www.biteasy.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
+[casascius address utility]: https://github.com/casascius/Bitcoin-Address-Utility
+[core base58.h]: https://github.com/bitcoin/bitcoin/blob/master/src/base58.h
+[core git]: https://github.com/bitcoin/bitcoin
+[core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
+[core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
+[DER]: https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
+[docs issue]: https://github.com/bitcoin/bitcoin.org/issues
+[ECDSA]: https://en.wikipedia.org/wiki/Elliptic_Curve_DSA
+[Eloipool]: https://gitorious.org/bitcoin/eloipool
+[forum tech support]: https://bitcointalk.org/index.php?board=4.0
+[HMAC-SHA512]: https://en.wikipedia.org/wiki/HMAC
+[HTTP longpoll]: https://en.wikipedia.org/wiki/Push_technology#Long_polling
+[irc channels]: https://en.bitcoin.it/wiki/IRC_channels
+[libblkmaker]: https://gitorious.org/bitcoin/libblkmaker
+[MIME]: https://en.wikipedia.org/wiki/Internet_media_type
+[mozrootstore]: https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+[Payment Request Generator]: http://bitcoincore.org/~gavin/createpaymentrequest.php
+[Piotr Piasecki's testnet faucet]: https://tpfaucet.appspot.com/
+[prime symbol]: https://en.wikipedia.org/wiki/Prime_%28symbol%29
+[protobuf]: https://developers.google.com/protocol-buffers/
+[python-blkmaker]: https://gitorious.org/bitcoin/python-blkmaker
 [SHA256]: https://en.wikipedia.org/wiki/SHA-2
 [Stratum mining protocol]: http://mining.bitcoin.cz/stratum-mining
 [URI encoded]: https://tools.ietf.org/html/rfc3986
-[Verification subsection]: /en/developer-guide#verifying-payment
 [wiki script]: https://en.bitcoin.it/wiki/Script
 [x509]: https://en.wikipedia.org/wiki/X.509
 
