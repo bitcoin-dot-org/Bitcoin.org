@@ -2,8 +2,11 @@
 ## List of words to match with references in _includes/references.md
 ## in developer documentation, used by autocrossref.rb plugin.
 ## "pattern to match in file" => "reference to give it"
+#
+## To prevent a ref for term, use: "term: DO NOT AUTOCROSSREF"
 
 51 percent attack:
+'`addr`': addr message
 address: 
 addresses: address
 '`amount`': pp amount
@@ -55,6 +58,8 @@ denominations: denomination
 DER format: der
 DER-formatted: der
 difficulty:
+dns seed:
+dns seeds: dns seed
 double spend:
 double-spend: double spend
 double spending: double spend
@@ -82,6 +87,8 @@ input:
 intermediate certificate:
 intermediate certificates: intermediate certificate
 internal byte order:
+IP address: DO NOT AUTOCROSSREF
+IP addresses: DO NOT AUTOCROSSREF
 key index:
 key pair:
 '`label`': label
@@ -89,6 +96,8 @@ leaf certificate:
 locktime:
 long-term fork:
 mainnet:
+man in the middle: man-in-the-middle
+man-in-the-middle:
 master chain code:
 master private key:
 '`memo`': pp memo

@@ -2,7 +2,24 @@
 
 {% autocrossref %}
 
-The Bitcoin [network][network]{:#term-network}{:.term} uses simple methods to perform peer discovery and communicate between nodes. The following section applies to both full nodes and SPV clients, with the exception that SPV's Bloom filters take the role of block discovery.
+The Bitcoin network protocol allows full nodes
+([peers][peer]{:#term-peer}{:.term}) to collaboratively maintain a
+[peer-to-peer network][network]{:#term-network}{:.term} for block and
+transaction exchange. Many SPV clients also use this protocol to connect
+to full nodes.
+
+Consensus rules do not cover networking, so Bitcoin programs may use
+alternative networks and protocols, such as the [high-speed block relay
+network][] used by some miners and the [dedicated transaction
+information servers][electrum server] used by some wallets that provide
+SPV-level security.
+
+To provide practical examples of the Bitcoin peer-to-peer network, this
+section uses Bitcoin Core as a representative full node and [BitcoinJ][]
+as a representative SPV client. Both programs are flexible, so only
+default behavior is described. Also, for privacy, actual IP addresses
+in the example output below have been replaced with [RFC5737][] reserved
+IP addresses.
 
 {% endautocrossref %}
 
@@ -10,13 +27,71 @@ The Bitcoin [network][network]{:#term-network}{:.term} uses simple methods to pe
 
 {% autocrossref %}
 
-Bitcoin Core maintains a list of [peers][peer]{:#term-peer}{:.term} to connect to on startup. When a full node is started for the first time, it must be bootstrapped to the network. This is done automatically today in Bitcoin Core by a short list of trusted DNS seeds. The option `-dnsseed` can be set to define this behavior, though the default is `1`. DNS requests return a list of IP addresses that can be connected to. From there, the client can start connecting the Bitcoin network.
+When started for the first time, programs don't know the IP
+addresses of any active full nodes. In order to discover some IP
+addresses, they query one or more DNS names (called [DNS seeds][dns
+seed]{:#term-dns-seed}{:.term}) hardcoded into Bitcoin Core and
+BitcoinJ. The response to the lookup should include one or more [DNS
+A records][] with the IP addresses of full nodes that may accept new
+incoming connections. For example, using the [Unix `dig`
+command][dig command]:
 
-Alternatively, bootstrapping can be done by using the option `-seednode=<ip>`, allowing the user to predefine what seed server to connect to, then disconnect after building a peer list. Another method is starting Bitcoin Core with `-connect=<ip>` which disallows the node from connecting to any peers except those specified. Lastly, the argument `-addnode=<ip>` simply allows the user to add a single node to his peer list.
+    ;; QUESTION SECTION:
+    ;seed.bitcoin.sipa.be.	    IN  A
 
-After bootstrapping, nodes send out a `addr` message containing their own IP to peers. Each peer of that node then forwards this message to a couple of their own peers to expand the pool of possible connections.  
+    ;; ANSWER SECTION:
+    seed.bitcoin.sipa.be.	60  IN  A  192.0.2.113
+    seed.bitcoin.sipa.be.	60  IN  A  198.51.100.231
+    seed.bitcoin.sipa.be.	60  IN  A  203.0.113.183
+    [...]
 
-To see which peers one is connected with (and associated data), use the `getpeerinfo` RPC.
+The DNS seeds are maintained by Bitcoin community members: some of them
+provide dynamic DNS seed servers which automatically get IP addresses
+of active nodes by scanning the network; others provide static DNS
+seeds that are updated manually and are more likely to provide IP
+addresses for inactive nodes. In either case, nodes are added to the
+DNS seed if they run on the default Bitcoin ports of 8333 for Mainnet
+or 18333 for Testnet.
+
+<!-- paragraph below based on Greg Maxwell's email in
+     http://comments.gmane.org/gmane.comp.bitcoin.devel/5378 -->
+
+DNS seed results are not authenticated and a malicious seed operator or
+network man-in-the-middle attacker can return only IP addresses of
+nodes controlled by the attacker, isolating a program on the attacker's
+own network and allowing the attacker to feed it bogus transactions and
+blocks.  For this reason, programs should not rely on DNS seeds
+exclusively.
+
+Once a program has connected to the network, its peers can begin to send
+it [`addr`][addr message]{:#term-addr-message}{:.term}
+(address<!--noref-->) messages with the IP addresses and port numbers of
+other peers on the network, providing a fully decentralized method of
+peer discovery. Bitcoin Core keeps a record of known peers in a
+persistent on-disk database which usually allows it to connect directly
+to those peers on subsequent startups without having to use DNS seeds.
+
+However, peers often leave the network or change IP addresses, so
+programs may need to make several different connection attempts at
+startup before a successful connection is made. This can add a
+significant delay to the amount of time it takes to connect to the
+network, forcing a user to wait before sending a transaction or checking
+the status of payment.
+
+<!-- reference for "Bitcoin Core...11 seconds" below:
+     https://github.com/bitcoin/bitcoin/pull/4559 -->
+
+To avoid this possible delay, BitcoinJ always uses dynamic DNS seeds to
+get IP addresses for nodes believed to be currently active.
+Bitcoin Core also tries to strike a balance between minimizing delays
+and avoiding unnecessary DNS seed use: if Bitcoin Core has entries in
+its peer database, it spends up to 11 seconds attempting to connect to
+at least one of them before falling back to seeds; if a connection is
+made within that time, it does not query any seeds.
+
+**Resources:** [Bitcoin Seeder][], the program run by several of the
+seeds used by Bitcoin Core and BitcoinJ. The Bitcoin Core [DNS Seed
+Policy][].
 
 {% endautocrossref %}
 

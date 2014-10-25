@@ -1,5 +1,6 @@
 <!-- Terms; must have tooltip description in "quotes"; alphabetical order -->
 [51 percent attack]: /en/developer-guide#term-51-attack "The ability of someone controlling a majority of hashing power to revise transactions history and prevent new transactions from confirming"
+[addr message]: /en/developer-guide#term-addr-message "A Bitcoin network protocol message which relays IP addresses and port numbers of active nodes to other nodes and clients, allowing decentralized peer discovery."
 [addresses]: /en/developer-guide#term-address "A 20-byte hash formatted as a P2PKH or P2SH Bitcoin Address"
 [address]: /en/developer-guide#term-address "A 20-byte hash formatted as a P2PKH or P2SH Bitcoin Address"
 [base58Check]: /en/developer-reference#term-base58check "The method used in Bitcoin for converting 160-bit hashes into Bitcoin addresses"
@@ -34,6 +35,7 @@
 [consensus rules]: /en/developer-guide#term-consensus-rules "The block validation rules that full nodes follow to stay in consensus with other nodes."
 [denomination]: /en/developer-guide#term-denomination "bitcoins (BTC), bitcents (cBTC), millibits (mBTC), microbits (uBTC), or satoshis"
 [difficulty]: /en/developer-guide#term-difficulty "A number corresponding to the target threshold which indicates how difficult it will be to find the next block"
+[dns seed]: /en/developer-guide#term-dns-seed "A DNS server which returns IP addresses of full nodes on the Bitcoin network to assist in peer discovery."
 [double spend]: /en/developer-guide#term-double-spend "Attempting to spend the same satoshis which were spent in a previous transaction"
 [extended key]: /en/developer-guide#term-extended-key "A public or private key extended with the chain code to allow them to derive child keys"
 [extended private key]: /en/developer-guide#term-extended-private-key "A private key extended with the chain code so that it can derive child private keys"
@@ -278,13 +280,16 @@
 [BIP71]: https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki
 [BIP72]: https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki
 [CVE-2012-2459]: https://en.bitcoin.it/wiki/CVEs#CVE-2012-2459
+[RFC5737]: http://tools.ietf.org/html/rfc5737
 <!-- [secp256k1]: http://www.secg.org/index.php?action=secg,docs_secg -->
 [secp256k1]: http://perso.univ-rennes1.fr/sylvain.duquesne/master/standards/sec2_final.pdf
 
 <!-- Other external site links; alphabetical order -->
 [BFGMiner]: https://github.com/luke-jr/bfgminer
 [bitcoin core fee drop commit]: https://github.com/bitcoin/bitcoin/commit/6a4c196dd64da2fd33dc7ae77a8cdd3e4cf0eff1
+[Bitcoin Seeder]: https://github.com/sipa/bitcoin-seeder
 [bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation
+[BitcoinJ]: http://bitcoinj.github.io
 [block170]: https://www.biteasy.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
 [casascius address utility]: https://github.com/casascius/Bitcoin-Address-Utility
 [core base58.h]: https://github.com/bitcoin/bitcoin/blob/master/src/base58.h
@@ -292,14 +297,20 @@
 [core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
 [core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
 [DER]: https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
+[dig command]: https://en.wikipedia.org/wiki/Dig_%28Unix_command%29
+[DNS A records]: http://tools.ietf.org/html/rfc1035#section-3.2.2
+[DNS Seed Policy]: https://github.com/bitcoin/bitcoin/blob/master/doc/dnsseed-policy.md
 [docs issue]: https://github.com/bitcoin/bitcoin.org/issues
 [ECDSA]: https://en.wikipedia.org/wiki/Elliptic_Curve_DSA
+[Electrum server]: https://github.com/spesmilo/electrum-server
 [Eloipool]: https://gitorious.org/bitcoin/eloipool
 [forum tech support]: https://bitcointalk.org/index.php?board=4.0
+[high-speed block relay network]: https://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg03189.html
 [HMAC-SHA512]: https://en.wikipedia.org/wiki/HMAC
 [HTTP longpoll]: https://en.wikipedia.org/wiki/Push_technology#Long_polling
 [irc channels]: https://en.bitcoin.it/wiki/IRC_channels
 [libblkmaker]: https://gitorious.org/bitcoin/libblkmaker
+[man-in-the-middle]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack
 [MIME]: https://en.wikipedia.org/wiki/Internet_media_type
 [mozrootstore]: https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 [Payment Request Generator]: http://bitcoincore.org/~gavin/createpaymentrequest.php
