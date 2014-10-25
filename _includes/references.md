@@ -310,6 +310,7 @@
 [HTTP longpoll]: https://en.wikipedia.org/wiki/Push_technology#Long_polling
 [irc channels]: https://en.bitcoin.it/wiki/IRC_channels
 [libblkmaker]: https://gitorious.org/bitcoin/libblkmaker
+[makeseeds script]: https://github.com/bitcoin/bitcoin/tree/master/contrib/seeds
 [man-in-the-middle]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack
 [MIME]: https://en.wikipedia.org/wiki/Internet_media_type
 [mozrootstore]: https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/

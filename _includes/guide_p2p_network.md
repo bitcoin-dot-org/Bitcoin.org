@@ -89,9 +89,29 @@ its peer database, it spends up to 11 seconds attempting to connect to
 at least one of them before falling back to seeds; if a connection is
 made within that time, it does not query any seeds.
 
+<!-- reference for Bitcoin Core behavior described below: search for
+"FixedSeeds" in src/net.cpp; BitcoinJ has IPv4 seeds in its chainparams
+and a function to use them, but I don't see that function being used in
+any of the examples/wallet templates (but I'm not Java fluent, so
+maybe PEBKAC). -@harding -->
+
+Both Bitcoin Core and BitcoinJ also include a hardcoded list of IP
+addresses and port numbers to several dozen nodes which were active
+around the time that particular version of the software was first
+released. Bitcoin Core will start attempting to connect to these nodes
+if none of the DNS seed servers have responded to a query within 60
+seconds, providing an automatic fallback option.
+
+As a manual fallback option, Bitcoin Core also provides several
+command-line connection options, including the ability to get a list of
+peers from a specific node by IP address, or to make a persistent
+connection to a specific node by IP address.  See the `-help` text for
+details.  BitcoinJ can be programmed to do the same thing.
+
 **Resources:** [Bitcoin Seeder][], the program run by several of the
 seeds used by Bitcoin Core and BitcoinJ. The Bitcoin Core [DNS Seed
-Policy][].
+Policy][].  The hardcoded list of IP addresses used by Bitcoin Core and
+BitcoinJ is generated using the [makeseeds script][].
 
 {% endautocrossref %}
 
