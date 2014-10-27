@@ -545,7 +545,7 @@ en:
     use: "Using Bitcoin"
     usetxt: "<a href=\"#getting-started#\">Using Bitcoin</a> is the first thing you can do to support Bitcoin. There are probably many cases where it can make your life easier. You can accept payments and make purchases with Bitcoin."
     node: "Be the network"
-    nodetxt: "You can join the Bitcoin network by keeping <a href=\"#download#\">full node software</a> running on your computer or dedicated server. Full nodes are securing and relaying all users' transactions. They can be compared to the backbone of the network."
+    nodetxt: "If you have a good Internet connection, you can strengthen the Bitcoin network by keeping <a href=\"#download#\">full node software</a> running on your computer or server with port 8333 open. Full nodes are securing and relaying all transactions."
     mining: "Mining"
     miningtxt: "You can start <a href=\"http://www.bitcoinmining.com/\">mining bitcoins</a> to help processing transactions. In order to protect the network, you should join <a href=\"https://blockchain.info/pools\">smaller mining pools</a> and prefer decentralized pools like <a href=\"http://p2pool.in/\">P2Pool</a> or <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> with getblocktemplate (GBT) support."
     develop: "Development"
