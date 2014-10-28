@@ -62,6 +62,8 @@ title: "Developer Documentation - Bitcoin"
     <div>
       <h2><img src="/img/ico_network.svg" class="titleicon" alt="Icon">P2P Network</h2>
       <p><a href="/en/developer-guide#p2p-network">P2P Network Guide</a></p>
+      <p><a href="/en/developer-reference#p2p-network">P2P Network Reference</a></p>
+      <p><a href="/en/developer-examples#p2p-network">P2P Network Examples</a></p>
       <div class="resourcesext">
         <p><a href="https://en.bitcoin.it/wiki/Protocol_specification">Full Protocol Specification</a> - Wiki</p>
       </div>
