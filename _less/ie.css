@@ -335,20 +335,3 @@ body{
 	display:expression((this.parentNode.getElementsByTagName('SPAN')[0]==this)?'block':'');
 	margin-bottom:expression((this.parentNode.getElementsByTagName('SPAN')[0]==this)?'4px':'');
 }
-
-.press-news div{
-	height:125px;
-	margin-bottom:30px;
-	width:700px;
-}
-.press-news div a img{
-	float:left;
-	margin-right:30px;
-}
-.press-news div a{
-	display:block;
-	margin-bottom:10px;
-}
-.press-news div p{
-	font-size:80%;
-}
