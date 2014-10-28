@@ -94,7 +94,7 @@
     </div>
     <div class="footer">
     <div class="footermenu">
-    <a href="/en/alerts">Network Status</a>
+    <a href="/en/alerts" class="statusmenu{% if site.STATUS == 1 %} alert{% endif %}">Network Status</a>
     {% case page.lang %}
     {% when 'fa' or 'pl' or 'tr' or 'zh_TW' %}
     <a href="/en/legal">Legal</a>

@@ -35,6 +35,9 @@ module Jekyll
         if self.data.has_key?('banner') and !self.data['banner'].nil? and self.data['banner'].length>0
           site.config['ALERT']='<a href="/'+dstdir+'/'+dst.gsub('.html','')+'">'+self.data['banner']+'</a>'
         end
+        if self.data.has_key?('active') and !self.data['active'].nil? and self.data['active'] == true
+          site.config['STATUS']=1
+        end
         if self.data.has_key?('alias')
           site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['alias']+'.html', date)
           site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['alias']+'/index.html', date)
@@ -46,6 +49,7 @@ module Jekyll
   class AlertPageGenerator < Generator
     def generate(site)
       #generate each alert based on templates
+      site.config['STATUS'] = 0
       Dir.foreach('_alerts') do |file|
         next if file == '.' or file == '..'
         lang = 'en'
