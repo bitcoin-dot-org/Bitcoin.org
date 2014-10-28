@@ -1,8 +1,9 @@
 <!-- Terms; must have tooltip description in "quotes"; alphabetical order -->
 [51 percent attack]: /en/developer-guide#term-51-attack "The ability of someone controlling a majority of hashing power to revise transactions history and prevent new transactions from confirming"
-[addr message]: /en/developer-guide#term-addr-message "A Bitcoin network protocol message which relays IP addresses and port numbers of active nodes to other nodes and clients, allowing decentralized peer discovery."
+[addr message]: /en/developer-reference#alert "The P2P network message which relays IP addresses and port numbers of active nodes to other nodes and clients, allowing decentralized peer discovery."
 [addresses]: /en/developer-guide#term-address "A 20-byte hash formatted as a P2PKH or P2SH Bitcoin Address"
 [address]: /en/developer-guide#term-address "A 20-byte hash formatted as a P2PKH or P2SH Bitcoin Address"
+[alert message]: /en/developer-reference#alert "The P2P network message which sends alerts in case of major software problems."
 [base58Check]: /en/developer-reference#term-base58check "The method used in Bitcoin for converting 160-bit hashes into Bitcoin addresses"
 [bitcoin URI]: /en/developer-guide#term-bitcoin-uri "A URI which allows receivers to encode payment details so spenders don't have to manually enter addresses and other details"
 [bitcoins]: /en/developer-guide#term-bitcoins "A primary accounting unit used in Bitcoin; 100 million satoshis"
@@ -45,8 +46,11 @@
 [extended public key]: /en/developer-guide#term-extended-public-key "A public key extended with the chain code so that it can derive child public keys"
 [escrow contract]: /en/developer-guide#term-escrow-contract "A contract in which the spender and receiver store satoshis in a multisig output until both parties agree to release the satoshis"
 [fiat]: /en/developer-guide#term-fiat "National currencies such as the dollar or euro"
+[filteradd message]: /en/developer-reference#filteradd "A P2P protocol message used to add a data element to an existing bloom filter."
+[filterclear message]: /en/developer-reference#filterclear "A P2P protocol message used to remove an existing bloom filter."
 [fork]: /en/developer-guide#term-fork "When two or more blocks have the same block height, forking the block chain."
 [genesis block]: /en/developer-guide#term-genesis-block "The first block created; also called block 0"
+[getaddr message]: /en/developer-reference#getaddr "A P2P protool message used to request an addr message containing connection information for other nodes"
 [getblocks message]: /en/developer-reference#getblocks "A P2P protocol message used to request an inv message containing a range of block header hashes"
 [getdata message]: /en/developer-reference#getdata "A P2P protocol message used to request one or more transactions, blocks, or merkleblocks"
 [getheaders message]: /en/developer-reference#getheaders "A P2P protocol message used to request a range of block headers"
@@ -115,8 +119,10 @@
 [PaymentRequests]: /en/developer-examples#term-paymentrequest "The PaymentRequest of the payment protocol which contains and allows signing of the PaymentDetails"
 [peer]: /en/developer-guide#term-peer "Peer on the P2P network who receives and broadcasts transactions and blocks"
 [peers]: /en/developer-guide#term-peer "Peers on the P2P network who receive and broadcast transactions and blocks"
+[ping message]: /en/developer-reference#ping "A P2P network message used to see if the remote host is still connected"
 [PKI]: /en/developer-examples#term-pki "Public Key Infrastructure; usually meant to indicate the X.509 certificate system used for HTTP Secure (https)."
 [point function]: /en/developer-guide#term-point-function "The ECDSA function used to create a public key from a private key"
+[pong message]: /en/developer-reference#pong "A P2P network message used to reply to a P2P network ping message"
 [private key]: /en/developer-guide#term-private-key "The private portion of a keypair which can create signatures which other people can verify using the public key"
 [private keys]: /en/developer-guide#term-private-key "The private portion of a keypair which can create signatures which other people can verify using the public key"
 [pubkey hash]: /en/developer-guide#term-pubkey-hash "The hash of a public key which can be included in a P2PKH output"
@@ -138,6 +144,7 @@
 [redeem script]: /en/developer-guide#term-redeem-script "A pubkey script created by the recipient, hashed, and given to the spender for use in a P2SH output"
 [refund]: /en/developer-guide#issuing-refunds "A transaction which refunds some or all satoshis received in a previous transaction"
 [regression test mode]: /en/developer-examples#regtest-mode "A local testing environment in which developers can control blocks"
+[reject message]: /en/developer-reference#reject "A P2P network message used to indicate a previously-received message was rejected for some reason"
 [root certificate]: /en/developer-examples#term-root-certificate "A certificate belonging to a certificate authority (CA)"
 [root seed]: /en/developer-guide#term-root-seed "A potentially-short value used as a seed to generate a master private key and master chain code for an HD wallet"
 [RPC byte order]: /en/developer-reference#hash-byte-order "A hash digest displayed with the byte order reversed; used in Bitcoin Core RPCs and other software."
@@ -177,7 +184,9 @@
 [unique addresses]: /en/developer-guide#term-unique-address "Address which are only used once to protect privacy and increase security"
 [URI QR Code]: /en/developer-guide#term-uri-qr-code "A QR code containing a bitcoin: URI"
 [utxo]: /en/developer-guide#term-utxo "Unspent Transaction Output (UTXO) holding satoshis which have not yet been spent"
+[verack message]: /en/developer-reference#verack "A P2P network message sent in reply to a version message to confirm a connection has been established"
 [verified payments]: /en/developer-guide#verifying-payment "Payments which the receiver believes won't be double spent"
+[version message]: /en/developer-reference#version "A P2P network message sent at the begining of a connection to allow protocol version negotiation"
 [v2 block]: /en/developer-reference#term-v2-block "The current version of Bitcoin blocks"
 [wallet]: /en/developer-guide#wallets "Software which stores private keys to allow users to spend and receive satoshis"
 [Wallet Import Format]: /en/developer-guide#term-wallet-import-format "A private key specially formatted to allow easy import into a wallet"
@@ -325,6 +334,10 @@
 <!-- Other external site links; alphabetical order -->
 [BFGMiner]: https://github.com/luke-jr/bfgminer
 [Bitcoin Core]: https://bitcoin.org/en/download
+[Bitcoin Core 0.1.6]: https://github.com/bitcoin/bitcoin/commit/cc0b4c3b62367a2aebe5fc1f4d0ed4b97e9c2ac9
+[Bitcoin Core 0.2.9]: https://github.com/bitcoin/bitcoin/commit/42605ce8bcc9bd01b86491c74fee14de77960868
+[Bitcoin Core 0.3.11]: https://github.com/bitcoin/bitcoin/commit/343328c6b8db85e58a1feea85f0d10e62967fa19
+[Bitcoin Core 0.3.15]: https://github.com/bitcoin/bitcoin/commit/c891967b6fcab2e8dc4ce0c787312b36c07efa4d
 [bitcoin core fee drop commit]: https://github.com/bitcoin/bitcoin/commit/6a4c196dd64da2fd33dc7ae77a8cdd3e4cf0eff1
 [Bitcoin Core issue #2381]: https://github.com/bitcoin/bitcoin/issues/2381
 [Bitcoin Seeder]: https://github.com/sipa/bitcoin-seeder
@@ -333,6 +346,7 @@
 [bitcoinj micropayment tutorial]: https://bitcoinj.github.io/working-with-micropayments
 [block170]: https://www.biteasy.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
 [casascius address utility]: https://github.com/casascius/Bitcoin-Address-Utility
+[core alert.cpp]: https://github.com/bitcoin/bitcoin/blob/master/src/alert.cpp
 [core base58.h]: https://github.com/bitcoin/bitcoin/blob/master/src/base58.h
 [core chainparams.cpp]: https://github.com/bitcoin/bitcoin/blob/master/src/chainparams.cpp
 [core git]: https://github.com/bitcoin/bitcoin
@@ -351,6 +365,7 @@
 [HMAC-SHA512]: https://en.wikipedia.org/wiki/HMAC
 [HTTP longpoll]: https://en.wikipedia.org/wiki/Push_technology#Long_polling
 [IP-to-IP payment protocol]: https://en.bitcoin.it/wiki/IP_Transactions
+[IPv4-mapped IPv6 addresses]: http://en.wikipedia.org/wiki/IPv6#IPv4-mapped_IPv6_addresses
 [irc channels]: https://en.bitcoin.it/wiki/IRC_channels
 [libblkmaker]: https://gitorious.org/bitcoin/libblkmaker
 [makeseeds script]: https://github.com/bitcoin/bitcoin/tree/master/contrib/seeds
@@ -366,6 +381,7 @@
 [python-blkmaker]: https://gitorious.org/bitcoin/python-blkmaker
 [SHA256]: https://en.wikipedia.org/wiki/SHA-2
 [Stratum mining protocol]: http://mining.bitcoin.cz/stratum-mining
+[Tor]: https://en.wikipedia.org/wiki/Tor_%28anonymity_network%29
 [unix epoch time]: https://en.wikipedia.org/wiki/Unix_time
 [URI encoded]: https://tools.ietf.org/html/rfc3986
 [wiki script]: https://en.bitcoin.it/wiki/Script

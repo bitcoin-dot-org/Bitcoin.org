@@ -64,7 +64,7 @@ blocks.  For this reason, programs should not rely on DNS seeds
 exclusively.
 
 Once a program has connected to the network, its peers can begin to send
-it [`addr`][addr message]{:#term-addr-message}{:.term}
+it `addr`
 (address<!--noref-->) messages with the IP addresses and port numbers of
 other peers on the network, providing a fully decentralized method of
 peer discovery. Bitcoin Core keeps a record of known peers in a
