@@ -37,14 +37,25 @@ The op codes used in the pubkey scripts of standard transactions are:
 * [`OP_CHECKMULTISIG`][op_checkmultisig]{:#term-op-checkmultisig}{:.term} consumes the value (n) at the top of the stack,
   consumes that many of the next stack levels (public keys), consumes
   the value (m) now at the top of the stack, and consumes that many of
-  the next values (signatures) plus one extra value. Then it compares
-  each of public keys against each of the signatures looking for ECDSA
-  matches; if n of the public keys match signatures, it pushes true onto the stack.
-  Otherwise, it pushes false.
+  the next values (signatures) plus one extra value.
 
     The "one extra value" it consumes is the result of an off-by-one
     error in the Bitcoin Core implementation. This value is not used, so
-    signature scripts prefix the secp256k1 signatures with a single OP_0 (0x00).
+    signature scripts prefix the list of secp256k1 signatures with a
+    single OP_0 (0x00).
+
+    `OP_CHECKMULTISIG` compares the first signature against each public
+    key until it finds an ECDSA match. Starting with the subsequent
+    public key, it compares the second signature against each remaining
+    public key until it finds an ECDSA match. The process is repeated
+    until all signatures have been checked or not enough public keys
+    remain to produce a successful result.
+
+    Because public keys are not checked again if they fail any signature
+    comparison, signatures must be placed in the signature script using
+    the same order as their corresponding public keys were placed in
+    the pubkey script or redeem script. See the `OP_CHECKMULTISIG` warning
+    below for more details.
 
 * [`OP_RETURN`][op_return]{:#term-op-return}{:.term} terminates the script in failure when executed.
 
@@ -52,13 +63,57 @@ A complete list of OP codes can be found on the Bitcoin Wiki [Script
 Page][wiki script], with an authoritative list in the `opcodetype` enum
 of the Bitcoin Core [script header file][core script.h]
 
-Note: Signature scripts are not signed, so anyone can modify them. This
+![Warning icon](/img/icon_warning.svg)
+**Signature script modification warning:** Signature scripts are not signed, so anyone can modify them. This
 means signature scripts should only contain data and data-pushing op
 codes which can't be modified without causing the pubkey script to fail.
 Placing non-data-pushing op codes in the signature script currently
 makes a transaction non-standard, and future consensus rules may forbid
 such transactions altogether. (Non-data-pushing op codes are already
 forbidden in signature scripts when spending a P2SH pubkey script.)
+
+![Warning icon](/img/icon_warning.svg)
+**`OP_CHECKMULTISIG` warning:** The multisig verification process
+described above requires that signatures in the signature script be
+provided in the same order as their corresponding public keys in
+the pubkey script or redeem script. For example, the following
+combined signature and pubkey script will produce the stack and
+comparisons shown:
+
+{% highlight text %}
+OP_0 <A sig> <B sig> OP_2 <A pubkey> <B pubkey> <C pubkey> OP_3
+
+Sig Stack       Pubkey Stack  (Actually a single stack)
+---------       ------------
+B sig           C pubkey
+A sig           B pubkey
+OP_0            A pubkey
+
+1. B sig compared to C pubkey (no match)
+2. B sig compared to B pubkey (match #1)
+3. A sig compared to A pubkey (match #2)
+
+Success: two matches found
+{% endhighlight %}
+
+But reversing the order of the signatures with everything else the same
+will fail, as shown below:
+
+{% highlight text %}
+OP_0 <B sig> <A sig> OP_2 <A pubkey> <B pubkey> <C pubkey> OP_3
+
+Sig Stack       Pubkey Stack  (Actually a single stack)
+---------       ------------
+A sig           C pubkey
+B sig           B pubkey
+OP_0            A pubkey
+
+1. A sig compared to C pubkey (no match)
+2. A sig compared to B pubkey (no match)
+
+Failure, aborted: two signature matches required but none found so
+                  far, and there's only one pubkey remaining
+{% endhighlight %}
 
 {% endautocrossref %}
 

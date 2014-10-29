@@ -94,7 +94,10 @@ OP_0 [A's signature] [B's or C's signature] [serialized redeem script]
 
 (Op codes to push the signatures and redeem script onto the stack are
 not shown. `OP_0` is a workaround for an off-by-one error in the original
-implementation which must be preserved for compatibility.)
+implementation which must be preserved for compatibility.  Note that
+the signature script must provide signatures in the same order as the
+corresponding public keys appear in the redeem script.  See the description in
+[`OP_CHECKMULTISIG`][op_checkmultisig] for details.)
 
 When the transaction is broadcast to the network, each peer checks the
 signature script against the P2SH output Charlie previously paid,
