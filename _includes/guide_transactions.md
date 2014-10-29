@@ -360,11 +360,16 @@ consumes one more value from the stack than indicated by *m*, so the
 list of secp256k1 signatures in the signature script must be prefaced with an extra value
 (`OP_0`) which will be consumed but not used.
 
+The signature script must provide signatures in the same order as the
+corresponding public keys appear in the pubkey script or redeem
+script. See the desciption in [`OP_CHECKMULTISIG`][op_checkmultisig]
+for details.
+
 {% endautocrossref %}
 
 ~~~
-Pubkey script: <m> <pubkey> [pubkey] [pubkey...] <n> OP_CHECKMULTISIG
-Signature script: OP_0 <sig> [sig] [sig...]
+Pubkey script: <m> <A pubkey> [B pubkey] [C pubkey...] <n> OP_CHECKMULTISIG
+Signature script: OP_0 <A sig> [B sig] [C sig...]
 ~~~
 
 {% autocrossref %}
@@ -375,8 +380,8 @@ Although it’s not a separate transaction type, this is a P2SH multisig with 2-
 
 ~~~
 Pubkey script: OP_HASH160 <Hash160(redeemScript)> OP_EQUAL
-Redeem script: <OP_2> <pubkey> <pubkey> <pubkey> <OP_3> OP_CHECKMULTISIG
-Signature script: OP_0 <sig> <sig> <redeemScript>
+Redeem script: <OP_2> <A pubkey> <B pubkey> <C pubkey> <OP_3> OP_CHECKMULTISIG
+Signature script: OP_0 <A sig> <C sig> <redeemScript>
 ~~~
 
 {% autocrossref %}
