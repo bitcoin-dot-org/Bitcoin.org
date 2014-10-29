@@ -71,7 +71,13 @@ require 'yaml'
 		     ## becomes an issue, we can devise a more complex
 		     ## regex
             (?!\w)  ## Don't match inside words
-          /xmi, "[\\&][#{term[1]}]{:.auto-link}")
+          /xmi) {|s|
+              if term[1] == "DO NOT AUTOCROSSREF"
+                  s.gsub(/( |$)/, "<!--noref-->\\&")
+              else
+                  "[#{s}][#{term[1]}]{:.auto-link}"
+              end
+              }
       }
       output.gsub!(/<!--.*?-->/m,'')  ## Remove all HTML comments
 
