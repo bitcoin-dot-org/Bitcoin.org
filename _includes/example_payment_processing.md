@@ -102,7 +102,7 @@ within the PaymentRequest.
 ## SSL Signature method
 request.pki_type = "x509+sha256"  ## Default: none
 
-## Mainnet or Testnet?
+## Mainnet or testnet?
 details.network = "test"  ## Default: main
 
 ## Postback URL

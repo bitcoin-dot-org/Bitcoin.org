@@ -4,7 +4,7 @@
 
 Bitcoin Core RPCs accept and return hashes in the reverse of their
 normal byte order. For example, the Unix `sha256sum` command would display the
-SHA256(SHA256()) hash of Mainnet block 300,000's header as the
+SHA256(SHA256()) hash of mainnet block 300,000's header as the
 following string:
 
     5472ac8b1187bfcf91d6d218bbda1eb2405d7c55f1f8cc820000000000000000

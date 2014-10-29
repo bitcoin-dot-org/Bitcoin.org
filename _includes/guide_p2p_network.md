@@ -50,8 +50,8 @@ provide dynamic DNS seed servers which automatically get IP addresses
 of active nodes by scanning the network; others provide static DNS
 seeds that are updated manually and are more likely to provide IP
 addresses for inactive nodes. In either case, nodes are added to the
-DNS seed if they run on the default Bitcoin ports of 8333 for Mainnet
-or 18333 for Testnet.
+DNS seed if they run on the default Bitcoin ports of 8333 for mainnet
+or 18333 for testnet.
 
 <!-- paragraph below based on Greg Maxwell's email in
      http://comments.gmane.org/gmane.comp.bitcoin.devel/5378 -->

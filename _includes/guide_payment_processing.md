@@ -133,7 +133,7 @@ To specify an amount directly for copying and pasting, you must provide
 the address, the amount, and the denomination. An expiration time for
 the offer may also be specified.  For example:
 
-(Note: all examples in this section use Testnet addresses.)
+(Note: all examples in this section use testnet addresses.)
 
 {% endautocrossref %}
 
