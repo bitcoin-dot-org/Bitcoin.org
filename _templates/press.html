@@ -1,22 +1,12 @@
 ---
 layout: base
-lang: en
 id: press
-title: "Bitcoin Press Center - Bitcoin"
 
 dialogs:
-  title: "Bitcoin Press Center - Bitcoin"
-  pagetitle: "Bitcoin Press Center"
-  summary: "Find interviewees, answers and high quality press materials."
-  volunteer: "Interviewees"
-  faq: "FAQ"
-  faqmore: "To learn more about Bitcoin, please visit the complete <a href=\"/en/faq\">FAQ</a> or the <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
   materialvideo: "Videos"
   materialvideoformat: "More formats and languages"
   materialvideoyoutube: "Video on Youtube"
   materialvideomore: "More videos"
-  materialpicture: "Pictures"
-  materialpicturemore: "Show more pictures..."
   materialquote: "Quotes"
   materialquotemore: "Show more quotes..."
   quotesatoshi: "With e-currency based on cryptographic proof, without the need to trust a third party middleman, money can be secure and transactions effortless."
@@ -37,33 +27,27 @@ dialogs:
   quotefredwilson: "We believe that Bitcoin represents something fundamental and powerful ... It reminds us of SMTP, HTTP, RSS, and BitTorrent in its architecture and openness."
   quotejohndonohoe: "Digital currency is going to be a very powerful thing."
   quotefrancoisrvelde: "It represents a remarkable conceptual and technical achievement, which may well be used by existing financial institutions (which could issue their own bitcoins) or even by governments themselves."
-  presscoverage: "Press coverage"
 
 ---
-{% comment %} TODO This page contains a lot of texts. But it could be translated if we have enough active translators in the future. {% endcomment %}
 
-<h1>{{ page.dialogs.pagetitle }}</h1>
-<p class="summary">{{ page.dialogs.summary }}</p>
+<h1>{% translate pagetitle %}</h1>
+<p class="summary">{% translate summary %}</p>
 
-{% if page.lang == 'en' %}
-
-<h2>{{ page.dialogs.volunteer }}</h2>
+<h2>{% translate volunteer %}</h2>
 
 <div class="press-volunteer">
 
 <div>
 
-<p>Communicate with the <a href="https://bitcoinfoundation.org/contact/">Bitcoin Foundation</a> or local <a href="/en/community#non-profit">non-profit</a> organizations.</p>
+<p>{% translate volunteernonprofit %}</p>
 
-<p>Find more potential press contacts at the independent <a href="https://bitcoinpresscenter.org">bitcoinpresscenter.org</a>.</p>
-
-</div>
+<p>{% translate volunteerpresscenter %}</p>
 
 </div>
 
-{% endif %}
+</div>
 
-<h2>{{ page.dialogs.faq }}</h2>
+<h2>{% translate menu-faq layout %}</h2>
 
 <div class="press-faq">
 
@@ -218,9 +202,11 @@ dialogs:
   <p>{% translate anonymoustxt2 faq %}</p>
   </div>
 </div>
-<p>{{ page.dialogs.faqmore }}</p>
+<p>{% translate faqmore %}</p>
 
 </div>
+
+{% if page.lang == 'en' %}
 
 <div class="press-videos">
 
@@ -241,9 +227,11 @@ dialogs:
 
 </div>
 
+{% endif %}
+
 <div class="press-pictures">
 
-<h2>{{ page.dialogs.materialpicture }}</h2>
+<h2>{% translate materialpicture %}</h2>
 <div>
 <a href="https://docs.google.com/uc?export=view&amp;id=0B4t9VJLm_PWhckxzRm5vS2ZtOWM" target="_blank"><img src="/img/press/picture/bitcoin_kiez.jpg" alt="Bitcoin Kiez sign"></a>
 <a href="https://docs.google.com/uc?export=view&amp;id=0BwnE6HIoU4a4bUswMm5UWS1XakU" target="_blank"><img src="/img/press/picture/bitcoin_logo_plain.png" alt="Bitcoin logo"></a>
@@ -263,9 +251,11 @@ dialogs:
 <a href="https://docs.google.com/uc?export=view&amp;id=0BwnE6HIoU4a4MG9oY1hTSTRBMHM" target="_blank"><img src="/img/press/picture/bitcoin_logo_euro.png" alt="Bitcoin euro"></a>
 <a href="https://docs.google.com/uc?export=view&amp;id=0BwnE6HIoU4a4RUZwY1Bzd3ZMa1E" target="_blank"><img src="/img/press/picture/bitcoin_logo_gold.png" alt="Bitcoin gold"></a>
 </div>
-<a href="#" onclick="materialShow(event);">{{ page.dialogs.materialpicturemore }}</a>
+<a href="#" onclick="materialShow(event);">{% translate materialpicturemore %}</a>
 
 </div>
+
+{% if page.lang == 'en' %}
 
 <div class="press-quotes">
 
@@ -291,57 +281,6 @@ dialogs:
 <p><span>{{ page.dialogs.quotemaxkeiser }}</span><span>Max Keiser, Journalist & TV Host</span></p>
 </div>
 <a href="#" onclick="materialShow(event);">{{ page.dialogs.materialquotemore }}</a>
-
-</div>
-
-{% if page.lang == 'en' %}
-
-<h2>{{ page.dialogs.presscoverage }}</h2>
-
-<div class="press-news">
-
-<div>
-  <a href="http://www.finextra.com/Video/Video.aspx?videoid=513"><img src="/img/press/news/news_finextra.jpg" alt="Preview"></a>
-  <a href="http://www.finextra.com/Video/Video.aspx?videoid=513">Finextra, Bullish on Bitcoin</a>
-  <a>2013-10-22</a>
-  <p>Richard Brown, executive architect, IBM thinks the future for crypto-currencies looks very bright.</p>
-</div>
-<div>
-  <a href="https://www.youtube.com/watch?v=drPkfGUZBqY&feature=player_embedded"><img src="/img/press/news/news_channel8.jpg" alt="Preview"></a>
-  <a href="https://www.youtube.com/watch?v=drPkfGUZBqY&feature=player_embedded">News Channel 8, Andrea Castillo discusses Bitcoin</a>
-  <a>2013-08-09</a>
-  <p>Andrea Castillio from the Mercatus Center discusses and explains Bitcoin.</p>
-</div>
-<div>
-  <a href="http://www.youtube.com/watch?v=FnNnZLkHnG4"><img src="/img/press/news/news_ft.jpg" alt="Preview"></a>
-  <a href="http://www.youtube.com/watch?v=FnNnZLkHnG4">Financial Times, The rise of Bitcoin</a>
-  <a>2013-07-05</a>
-  <p>Bitcoin, a decentralized, virtual currency, is garnering increasing interest from investors and entrepreneurs. Maija Palmer reports from a Bitcoin conference on where the currency is heading and goes to buy her first (fraction) of a Bitcoin.</p>
-</div>
-<div>
-  <a href="http://www.youtube.com/watch?v=_U18FG3ZAno"><img src="/img/press/news/news_forbes.jpg" alt="Preview"></a>
-  <a href="http://www.youtube.com/watch?v=_U18FG3ZAno">Forbes, Why bitcoiners believe in the digital currency</a>
-  <a>2013-05-13</a>
-  <p>After a week of living on the crypto-currency, Forbes reporter Kashmir Hill invites Bitcoin enthusiasts to a dinner meet-up to help her spend the rest of her digital wallet and share their views on the alternative currency.</p>
-</div>
-<div>
-  <a href="http://www.theguardian.com/technology/2013/apr/26/bitcoins-gain-currency-in-berlin"><img src="/img/press/news/news_guardian.jpg" alt="Preview"></a>
-  <a href="http://www.theguardian.com/technology/2013/apr/26/bitcoins-gain-currency-in-berlin">The Guardian, Berlin streets where you can shop with Bitcoin</a>
-  <a>2013-04-26</a>
-  <p>The Guardian meets the Bitcoin Kiez, among the first point-of-sales shops and restaurants to accept Bitcoin.</p>
-</div>
-<div>
-  <a href="http://www.youtube.com/watch?v=6SLPy89gPE0"><img src="/img/press/news/news_bloomberg.jpg" alt="Preview"></a>
-  <a href="http://www.youtube.com/watch?v=6SLPy89gPE0">Bloomberg on the future of Bitcoin currency</a>
-  <a>2013-04-11</a>
-  <p>Convergex's Nicholas Colas and Holland & Company's Michael Holland discuss the future of Bitcoin on Bloomberg Television's.</p>
-</div>
-<div>
-  <a href="http://video.foxbusiness.com/v/2277786423001/"><img src="/img/press/news/news_fox_trace.jpg" alt="Preview"></a>
-  <a href="http://video.foxbusiness.com/v/2277786423001/">FOX Business with Trace Mayer</a>
-  <a>2013-04-05</a>
-  <p>Is Bitcoin for real? Bitcoin investor Trace Mayer explains the virtual currency.</p>
-</div>
 
 </div>
 

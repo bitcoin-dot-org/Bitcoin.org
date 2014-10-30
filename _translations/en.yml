@@ -465,6 +465,16 @@ en:
     pagetitle: "Legal disclaimer"
     termstxt1: "This website provides information and material of a general nature. This information is intended for informational purposes only. This website may contain information that addresses real or potential legal issues. This information is not a substitute for qualified legal counsel. You are not authorized and nor should you rely on this website for legal advice. In no way are the owners of, or contributors to, this website responsible for the actions, decisions, or other behavior taken or not taken by you in reliance upon this website. This includes but is not limited to legal or technological reasons. You act at your own risk in reliance on the contents of this website. Should you make a decision to act or not act you should contact a licensed attorney in the relevant jurisdiction in which you want or need help."
     termstxt2: "This website may contain translations of the English version of content. These translations are provided only as a convenience. In the event of any conflict between the English language version and the translation version of content, the English language version takes precedence. If you notice any inconsistency, please report them on <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a>."
+  press:
+    title: "Press - Bitcoin"
+    pagetitle: "Press center"
+    summary: "Find interviewees, answers and high quality press materials."
+    volunteer: "Interviewees"
+    volunteernonprofit: "Communicate with the <a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin Foundation</a> or local <a href=\"#community##[community.non-profit]\">non-profit organizations</a>."
+    volunteerpresscenter: "Find more potential press contacts at the independent <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
+    faqmore: "To learn more about Bitcoin, please visit the complete <a href=\"/en/faq\">FAQ</a> or the <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
+    materialpicture: "Pictures"
+    materialpicturemore: "Show more pictures..."
   protect-your-privacy:
     title: "Protect your privacy - Bitcoin"
     pagetitle: "Protect your privacy"
@@ -628,6 +638,7 @@ en:
     menu-innovation: Innovation
     menu-intro: Introduction
     menu-legal: "Legal"
+    menu-press: "Press"
     menu-resources: Resources
     menu-support-bitcoin: Participate
     menu-vocabulary: Vocabulary
@@ -651,6 +662,7 @@ en:
     how-it-works: how-it-works
     innovation: innovation
     legal: legal
+    press: press
     protect-your-privacy: protect-your-privacy
     resources: resources
     secure-your-wallet: secure-your-wallet

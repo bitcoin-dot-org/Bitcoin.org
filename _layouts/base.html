@@ -76,7 +76,6 @@
           {% else %}
           <li{% if page.id == 'events' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>
           {% endcase %}
-          {% if page.lang == 'en' %}<li{% if page.id == 'press' %} class="active"{% endif %}><a href="/en/press">Press</a></li>{% endif %}
         </ul>
       </li>
       <li{% if page.id == 'innovation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate innovation url %}">{% translate menu-innovation layout %}</a></li>
@@ -100,6 +99,12 @@
     <a href="/en/legal">Legal</a>
     {% else %}
     <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
+    {% endcase %}
+    {% case page.lang %}
+    {% when 'ar' or 'bg' or 'da' or 'de' or 'es' or 'fa' or 'fr' or 'hi' or 'hu' or 'id' or 'it' or 'ja' or 'ko' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'ru' or 'sl' or 'sv' or 'tr' or 'zh_CN' or 'zh_TW' %}
+    <a href="/en/press">Press</a>
+    {% else %}
+    <a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a>
     {% endcase %}
     {% case page.lang %}
     {% when 'fa' %}
