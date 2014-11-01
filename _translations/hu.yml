@@ -108,10 +108,10 @@ hu:
     walletbitcoinqt: "A Bitcoin Core egy teljes Bitcoin-kliens, és a hálózat gerincét képzi. Magas szintű biztonságot, titkosságot és stabilitást kínál. Azonban kevesebb szolgáltatást nyújt, illetve sok helyet és memóriát használ."
     walletmultibit: "A MultiBit egy pehelykönnyű kliens, amely a gyors működésre és az egyszerű használatra koncentrál. Szinkronizálódik a hálózattal, és percek alatt használatra kész. A MultiBit ugyanakkor számos nyelvet támogat. Jó választás számítástechnikai háttérrel nem rendelkező felhasználók számára."
     wallethive: "A Hive egy gyors, integrált, felhasználóbarát, Mac OS X-re letölthető Bitcoin-pénztárca. A Hive-ot a széles körű használatra fókuszálva számos nyelvre lefordították, valamint rendelkezik alkalmazásokkal, ezzel megkönnyítve a kedvenc Bitcoin-szolgáltatásokkal és kereskedőkkel való kapcsolattartást."
-    wallethive-android: "A Hive egy különálló pénztárca Androidra, amely nem igényel külső szervert vagy fiókot. Fókuszában a használhatóság áll, emellett haladó szintű funkciók széles skáláját kínálja, mint például touch-to-pay NFC használatával vagy megbízható kifizetések Bluetooth-on keresztül. A Hive Android beépülő modulok segítségével bővíthető."
     wallethive-web: "A Hive egy emberbarát Bitcoin- és Litecoin-pénztárca, amely gyönyörű, elegáns és egyszerű felülettel rendelkezik. Megtalálható benne a Waggle, amely segítségével egyszerűen küldhetőek és fogadhatóak tokenek az ön környezetében tartózkodó Hive-felhasználók részére. A jelszava hozza létre a pénztárcáját, amely ily módon hordozható lesz, és egyszerűen készíthetőek róla biztonsági másolatok."
     walletarmory: "Az Armory egy haladó ismereteket igénylő Bitcoin-kliens, amely szolgáltatásaival a Bitcoin kiemelt felhasználóit célozza. Számos biztonsági mentési, valamint titkosítási szolgáltatást kínál, és lehetőséget teremt a hidegtárolások interneteléréssel nem rendelkező számítógépen való biztonságos elhelyezésére."
     walletelectrum: "Az Electrum fókuszában a sebesség és az egyszerűség áll, alacsony erőforrás-használattal párosulva. Távoli szervereket használ a Bitcoin rendszere legbonyolultabb részeinek kezeléshez, és lehetővé teszi pénztárcája visszaállítását egy titkos szó(kapcsolat) segítségével."
+    walletmsigna: "Az mSIGNA egy haladó szintű, mégis egyszerűen használható pénztárca. amely gyors, letisztult, cégszintű használatra is alkalmas, valamint nagyon biztonságos. Támogatja a BIP32-t, a többszörös aláírású tranzakciókat, a többkészülékes szinkronizációt, valamint a titkosított elektronikus és papíralapú biztonsági másolatokat."
     walletbitcoinwallet: "A Bitcoin Wallet egyszerűen használható és megbízható, mindemellett pedig biztonságos és gyors. A fejlesztők víziója a decentralizáció és a zéró bizalom; a Bitcoinnal kapcsolatos műveletek elvégzéséhez nem szükséges központi szolgáltatás. Az alkalmazás jó választás fejlesztői háttérrel nem rendelkező felhasználók számára."
     walletkncwallet: "A KcN Wallet arra törekszik, hogy egyszerűen küldhessen bitcoinokat a családjának és barátainak. Tartalmaz egy online könyvtárat, így a kapcsolatai számára azonnal küldhet bitcoinokat, anélkül, hogy ismerné a Bitcoin-címüket."
     walletbreadwallet: "A breadwallet központi tervezési elve az egyszerűség. Valódi különálló Bitcoin-kliensként nincs feltört vagy leálló szerver, és az iOS erős biztonságára építve a breadwallletet úgy tervezték, hogy megvédje Önt a rosszindulatú szoftverektől, a böngészők biztonsági réseitől és akár a fizikai lopástól is."
@@ -145,7 +145,7 @@ hu:
     checkgoodvalidationfullnode: "Teljes érvényesítés"
     checkgoodvalidationfullnodetxt: "Ez a pénztárca egy teljes csomópont, amely hitelesíti és továbbítja a tranzakciókat a Bitcoin-hálózaton. Ez azt jelenti, hogy nem szükséges harmadik félbe vetett bizalom a tranzakciók hitelesítéséhez. A teljes csomópontok biztosítják a legmagasabb szintű biztonságot, és elengedhetetlenek a hálózat védelme fenntartásához. Ugyanakkor több helyet (több mint 20 GB), sávszélességet és hosszabb szinkronizációs időt igényelnek."
     checkneutralvalidationvariable: "Változékony érvényesítés"
-    checkneutralvalidationvariabletxt: "A kifizetésérvényesítési funkciókat az ezzel az eszközzel használt szoftveres pénztárca biztosítja. Kérjük, tekintse meg használni tervezett pénztárca Érvényesítési értékét."
+    checkneutralvalidationvariabletxt: "A kifizetésérvényesítési funkciókat az ezzel a készülékkel használt szoftveres pénztárca biztosítja. Kérjük, tekintse meg használni tervezett pénztárca Érvényesítési értékét."
     checkpassvalidationspvp2p: "Egyszerűsített érvényesítés"
     checkpassvalidationspvp2ptxt: "Ez a pénztárca SPV-t és a Bitcoin-hálózatot használja. Ez azt jelenti, hogy a kifizetések hitelesítésekor nagyon kis mértékű bizalom szükségeltetik harmadik felek iránt. Ugyanakkor nem egy teljes csomópont, mint például a <a href=\"#download#\">Bitcoin Core</a>."
     checkpassvalidationspvservers: "Egyszerűsített érvényesítés"
@@ -165,16 +165,16 @@ hu:
     checkfailtransparencynew: "Új alkalmazás"
     checkfailtransparencynewtxt: "E pénztárca fejlesztői az ügyfél számára elérhetővé teszik a forráskódot. Ugyanakkor ez a pénztárca nem esett át nagyszámú személy által történő tesztelésen és ellenőrzésen. Ez azt jelenti, hogy ez az alkalmazás nagyobb eséllyel rejt veszélyes kódot vagy csinál olyasmit, amibe egyébként nem egyezne bele."
     checkgoodenvironmenthardware: "Nagyon biztonságos környezet"
-    checkgoodenvironmenthardwaretxt: "Ez a pénztárca egy speciális, az eszköz által biztosított, védett környezetből töltődik be. Ez nagyon erős védelmet biztosít a számítógépek sebezhetőségeivel és a rosszindulatú szoftverekkel szemben, mivel ebben a környezetben nem lehetséges szoftverek telepítése."
+    checkgoodenvironmenthardwaretxt: "Ez a pénztárca egy speciális, a készülék által biztosított, védett környezetből töltődik be. Ez nagyon erős védelmet biztosít a számítógépek sebezhetőségeivel és a rosszindulatú szoftverekkel szemben, mivel ebben a környezetben nem lehetséges szoftverek telepítése."
     checkpassenvironmentmobile: "Biztonságos környezet"
     checkpassenvironmentmobiletxt: "Ez a pénztárca mobilokról töltődik be, ahol az alkalmazások rendszerint elkülönültek. Ez jó védelmet biztosít a rosszindulatú szoftverekkel szemben, bár a mobilok általában könnyebben ellophatóak vagy elveszíthetőek. A mobil titkosítása és a pénztárca biztonsági mentése csökkentheti e kockázatot."
     checkpassenvironmenttwofactor: "Kétlépcsős hitelesítés"
-    checkpassenvironmenttwofactortxt: "Ez a pénztárca nem biztonságos környezetben használható. Ugyanakkor ez a szolgáltatás kétlépcsős hitelesítést kíván meg. Ez azt jelenti, hogy a bitcoinjai ellopásához több eszközhöz vagy fiókhoz történő hozzáférés szükséges."
+    checkpassenvironmenttwofactortxt: "Ez a pénztárca nem biztonságos környezetben használható. Ugyanakkor ez a szolgáltatás kétlépcsős hitelesítést kíván meg. Ez azt jelenti, hogy a bitcoinjai ellopásához több készülékhez vagy fiókhoz történő hozzáférés szükséges."
     checkfailenvironmentdesktop: "Sebezhető környezet"
     checkfailenvironmentdesktoptxt: "Ez a pénztárca számítógépeken töltődik be, amelyek rosszindulatú szoftverek által sebezhetőek. A számítógépe biztosítása, erős jelszó használata, a legtöbb pénze hidegtárolásba vétele vagy a kétlépcsős hitelesítés bevezetése nehezebbé teheti a bitcoinjai ellopását."
     checkgoodprivacyimproved: "Tökéletesített személyesadat-védelem"
     checkneutralprivacyvariable: "Változékony személyesadat-védelem"
-    checkneutralprivacyvariabletxt: "A személyesadat-védelmi funkciókat az ezzel az eszközzel használt szoftveres pénztárca biztosítja. Kérjük, tekintse meg használni tervezett pénztárca Személyesadat-védelmi értékét."
+    checkneutralprivacyvariabletxt: "A személyesadat-védelmi funkciókat az ezzel a készülékkel használt szoftveres pénztárca biztosítja. Kérjük, tekintse meg használni tervezett pénztárca Személyesadat-védelmi értékét."
     checkpassprivacybasic: "Alapvető személyesadat-védelem"
     checkfailprivacyweak: "Gyenge személyesadat-védelem"
     checkpassprivacyaddressrotation: "Megakadályozza a kifizetései utáni kémkedést"
@@ -422,6 +422,7 @@ hu:
     readmoretxt: "Ez csak a rendszer nagyon rövid és tömör összefoglalása. Amennyiben szeretné megismerni a részleteket, <a href=\"/bitcoin.pdf\">elolvashatja az eredeti tanulmányt</a>, amely leírja a rendszer felépítését, vagy belenézhet a <a href=\"/en/developer-documentation\">fejlesztői dokumentációba</a>, valamint felfedezheti a <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wikit</a>."
   index:
     title: "Bitcoin - Nyílt forráskódú, P2P pénz"
+    metadescription: "A Bitcoin egy innovatív fizetési hálózat és egy újfajta pénz. Tudjon meg mindent, és vágjon bele a Bitcoinba a bitcoin.org weboldalon."
     listintro: "A Bitcoin egy innovatív fizetési hálózat és egy újfajta pénz."
     list1: "Azonnali peer-to-peer<br>tranzakciók"
     list2: "Világméretű<br>kifizetések"
@@ -464,6 +465,16 @@ hu:
     pagetitle: "Jogi felelősségkizárás"
     termstxt1: "Jelen weboldal általános jellegű információkat és anyagokat tartalmaz. Ezen információk kizárólag a tájékoztatást szolgálják. Jelen weboldal tartalmazhat olyan információkat, amelyek valós vagy potenciális jogi problémákat tárgyalnak. Ezen információk nem helyettesítik a szakszerű jogi tanácsadást. Ön nem jogosult, valamint nem is célszerű e weboldalra hagyatkoznia jogi tanácsokkal kapcsolatban. A tulajdonosok és/vagy szerkesztők semmilyen körülmények között nem felelősek e weboldalra való hagyatkozás folyományaként elkövetett cselekedetekért, döntésekért vagy más alkalmazott vagy nem alkalmazott magatartásokért. Ezt többek között, de nem kizárólagosan jogi és technológiai okok indokolják. Jelen weboldal tartalmára való hagyatkozásával saját kockázatára cselekszik. Döntései előtt lépjen kapcsolatba egy képzett ügyvéddel abban a joghatóságban, amellyel kapcsolatban segítséget kíván kapni."
     termstxt2: "Ez a weboldal az eredeti, angol nyelvű tartalom fordításait tartalmazhatja. Ezek a fordítások csupán a felhasználói kényelmet biztosítják. Bármilyen, az angol nyelvű és a fordított verzióval kapcsolatos probléma esetén az angol nyelvű verzió élvez elsőbbséget. Amennyiben bármilyen jellegű következetlenséget észlel, kérjük, jelentse ezeket a <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a> weboldalán."
+  press:
+    title: "Sajtó - Bitcoin"
+    pagetitle: "Sajtóközpont"
+    summary: "Böngésszen interjúalanyok, válaszok és kiváló minőségű sajtóanyagok között."
+    volunteer: "Interjúalanyok"
+    volunteernonprofit: "Lépjen kapcsolatba a <a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin Alapítvánnyal</a> vagy helyi, <a href=\"#community##[community.non-profit]\">nonprofit szervezetekkel</a>."
+    volunteerpresscenter: "További potenciális sajtókapcsolatokat a független <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a> weboldalon találhat."
+    faqmore: "A Bitcoinnal kapcsolatos további információkhoz látogasson el a teljes <a href=\"/en/faq\">GYIK-et</a> tartalmazó oldalra vagy a <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wikire</a>."
+    materialpicture: "Képek"
+    materialpicturemore: "További képek..."
   protect-your-privacy:
     title: "Védje meg személyes adatait - Bitcoin"
     pagetitle: "Védje meg személyes adatait"
@@ -535,7 +546,7 @@ hu:
     update: "Tartsa szoftverét naprakészen"
     updatetxt: "A Bitcoin-szoftver legújabb verziójának használata biztosítja Önnek az elengedhetetlen megbízhatóságot és a biztonsági javításokat. A frissítések különböző mélységű problémáktól óvhatják meg, illetve új, hasznos szolgáltatásokat biztosítanak pénztárcája védelmére. A számítógépén és mobiltelefonján található többi szoftver rendszeres frissítése ugyancsak hozzájárul pénztárcája környezetének biztonságosabbá tételéhez."
     offlinemulti: "Csoportos aláírás a lopások elleni védelemhez"
-    offlinemultitxt: "A Bitcoin rendelkezik egy csoportos aláírási szolgáltatással, amely lehetővé teszi, hogy egy tranzakció aláírásához több privát kulcs elköltése legyen szükséges. Jelenleg csak a számítástechnikai ismeretekkel rendelkező felhasználók számára használható, de a jövőben feltehetően a szélesebb közönség számára is elérhető lesz. A csoportos aláírás például lehetővé teszi, hogy egy szervezet hozzáférést engedélyezzen tagjai számára pénztárához, ugyanakkor kizárólag akkor engedélyezve egy tranzakciót, ha 3-ból 5 felhasználó aláírja azt. Ezenkívül lehetővé teszi a jövő online pénztárcái számára, hogy felhasználóikkal csoportos aláírású címet osszanak meg, ily módon egy tolvajnak vagyona ellopásához számítógépét és online pénztárcáját egyaránt fel kell törnie."
+    offlinemultitxt: "A Bitcoin rendelkezik egy csoportos aláírási szolgáltatással, amely lehetővé teszi, hogy egy tranzakció aláírásához több privát kulcs elköltése legyen szükséges. Jelenleg csak a számítástechnikai ismeretekkel rendelkező felhasználók számára használható, de a jövőben feltehetően a szélesebb közönség számára is elérhető lesz. A csoportos aláírás például lehetővé teszi, hogy egy szervezet hozzáférést engedélyezzen tagjai számára pénztárához, ugyanakkor kizárólag akkor engedélyezve egy tranzakciót, ha 3-ból 5 felhasználó aláírja azt. Ezenkívül lehetővé teszi a jövő online pénztárcái számára, hogy felhasználóikkal csoportos aláírású címet osszanak meg, ily módon egy tolvajnak vagyona ellopásához számítógépét és online pénztárcája szerverét egyaránt fel kell törnie."
     offlinetestament: "Gondoljon végrendeletére"
     offlinetestamenttxt: "A bitcoinjai örökre elveszhetnek, amennyiben nincsen biztonsági mentésre vonatkozó terve az ismerősei és családja számára. Ha halálát követően a pénztárcáinak vagy jelszavainak helye nem ismert senki számára, nincs remény a vagyonához való hozzáférésre. Már az is óriási különbséget jelenthet, ha egy kis időt szentel ennek a kérdésnek."
   support-bitcoin:
@@ -545,7 +556,7 @@ hu:
     use: "A Bitcoin használata"
     usetxt: "A <a href=\"#getting-started#\">Bitcoin használata</a> az első lépés, amelyet a Bitcoin támogatásának irányában tehet. Valószínűleg számos esetben könnyítheti meg életét. Kifizetéseket fogadhat, illetve vásárolhat is a Bitcoin segítségével."
     node: "Legyen Ön a hálózat"
-    nodetxt: "Csatlakozzon a Bitcoin-hálózathoz egy <a href=\"#download#\">teljes csomóponti szoftver</a> számítógépén vagy egy erre a célra kijelölt szerveren való futtatásával. A teljes csomópontok az összes felhasználó tranzakcióit biztosítják és továbbítják. A hálózat gerincéhez hasonlíthatóak."
+    nodetxt: "Ha gyors interneteléréssel rendelkezik, a Bitcoin-hálózatot a számítógépén vagy szerverén - nyitott 8333-as porttal - egy <a href=\"#download#\">teljes csomóponti szoftver</a> folyamatos futtatásával erősítésheti. A teljes csomópontok az összes tranzakcióit biztosítják és továbbítják."
     mining: "Bányászat"
     miningtxt: "Ön is elkezdhet <a href=\"http://www.bitcoinmining.com/\">bitcoint bányászni</a> a tranzakciók feldogozásának támogatásához. A hálózat védelme érdekében érdemes <a href=\"https://blockchain.info/pools\">kisebb bányászati közösségekhez</a>, a <a href=\"http://p2pool.in/\">P2Poolhoz hasonló</a>, decentralizált közösségekhez vagy getblocktemplate (GBT) támogatással rendelkező <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">közösségekhez</a> csatlakoznia."
     develop: "Fejlesztés"
@@ -627,6 +638,7 @@ hu:
     menu-innovation: Innováció
     menu-intro: Bevezetés
     menu-legal: "Jogi vonatkozások"
+    menu-press: "Sajtó"
     menu-resources: Információs anyagok
     menu-support-bitcoin: Részvétel
     menu-vocabulary: Szótár
@@ -650,6 +662,7 @@ hu:
     how-it-works: hogyan-mukodik
     innovation: innovacio
     legal: jogi-vonatkozasok
+    press: sajto
     protect-your-privacy: vedje-meg-szemelyes-adatait
     resources: informacios-anyagok
     secure-your-wallet: vedje-meg-penztarcajat

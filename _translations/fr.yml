@@ -108,10 +108,10 @@ fr:
     walletbitcoinqt: "Bitcoin Core est un client Bitcoin complet sur lequel s'appuie le réseau. Il offre un haut niveau de sécurité, de confidentialité et de stabilité. Toutefois, il offre moins de fonctions et prend beaucoup d'espace et de mémoire."
     walletmultibit: "MultiBit est un client léger qui priorise la rapidité et la facilité d'utilisation. Il se synchronise avec le réseau et est prêt en quelques minutes. MultiBit est aussi disponible en plusieurs langues. C'est un bon choix pour les novices."
     wallethive: "Hive est un portefeuille rapide, intégré et facile d'utilisation pour Mac OS X. Axé sur la convivialité, Hive est traduit dans plusieurs langues et offre des applis, facilitant les interactions avec vos services et commerces favoris."
-    wallethive-android: "Hive est un portefeuille autonome pour Android, qui ne requiert aucun serveur externe ou compte. Il se focalise sur la facilité d'utilisation, ainsi que des fonctionnalités avancées, comme le touch-to-pay via NFC ou les paiements par Bluetooth. Hive Android est extensible à travers des plugins."
     wallethive-web: "Hive Web est un portefeuille Bitcoin et Litecoin convivial, qui offre une interface magnifique, simple et élégante. Il offre Waggle, une manière simple d'envoyer et recevoir des jetons avec d'autres utilisateurs Hive près de vous. Votre phrase de passe génère votre portefeuille et le rend portable et facile à sauvegarder."
     walletarmory: "Armory est un client Bitcoin évolué offrant plus de fonctions pour les super-utilisateurs. Il offre plusieurs fonctions de sauvegarde et de chiffrement et permet un stockage à froid sécurisé sur des ordinateurs déconnectés du réseau."
     walletelectrum: "Electrum se concentre sur la rapidité et la simplicité. Il est très léger et utilise des serveurs distants s'occupant des aspects les plus complexes du système Bitcoin. Electrum vous permet aussi de récupérer votre portefeuille à l'aide d'une phrase secrète."
+    walletmsigna: "mSIGNA est un portefeuille avancé et malgré tout facile à utiliser offrant vitesse et simplicité, une capacité de soutenir des entreprises et une forte sécurité. Il supporte BIP32, les transactions multi-signature, le stockage hors-ligne, la synchronisation entre appareils et les sauvegardes encryptées électroniques ou sur papier."
     walletbitcoinwallet: "Bitcoin Wallet est facile à utiliser et fiable, tout en étant sécurisé et rapide. Sa vision est : décentralisation et zéro confiance. Aucun service central n'est requis pour les opérations liées à Bitcoin. L'application est un bon choix pour les utilisateurs novices."
     walletkncwallet: "KnC vise à être un moyen simple pour envoyer des bitcoins à vos amis et votre famille. Il offre un répertoire en ligne afin que vous puissiez commencer à envoyer des bitcoins à vos contacts directement, sans connaître leurs adresses Bitcoin."
     walletbreadwallet: "La simplicité est le principe central derrière breadwallet. Étant un client Bitcoin réellement autonome, il n'y a pas de serveur qui peut être piraté ou indisponible. En se basant sur les solides bases de sécurité de iOS, breadwallet est conçu pour vous protéger des logiciels malveillants, des trous de sécurité dans les navigateurs et même le vol physique."
@@ -422,6 +422,7 @@ fr:
     readmoretxt: "Ceci est un cours résumé du système. Si vous voulez rentrer dans les détails, vous pouvez lire <a href=\"/bitcoin.pdf\">le document original</a> (en anglais) qui décrit le fonctionnement du système, lire la <a href=\"/en/developer-documentation\">documentation pour les développeurs</a> (en anglais également), et explorer le <a href=\"https://en.bitcoin.it/wiki/Main_Page\">wiki Bitcoin</a>."
   index:
     title: "Bitcoin - Argent P2P libre et ouvert"
+    metadescription: "Bitcoin est un réseau de paiement novateur et une nouvelle forme d'argent. Trouvez tout ce que vous devez savoir et débutez avec Bitcoin sur bitcoin.org."
     listintro: "Bitcoin est un réseau de paiement novateur et une nouvelle forme d'argent."
     list1: "Transactions rapides<br>de pair à pair"
     list2: "Paiements dans<br>le monde entier"
@@ -464,6 +465,16 @@ fr:
     pagetitle: "Mentions légales"
     termstxt1: "Ce site Web contient des informations et du matériel de nature générale. Ces informations sont offertes à des fins informatives seulement. Ce site Web peut contenir des informations qui abordent des questions juridiques réelles ou potentielles. Ces informations ne sont pas un substitut à un conseiller juridique qualifié. Vous n'êtes pas autorisés ni ne devez compter sur ce site Web comme un source de conseils juridiques. En aucun cas les propriétaires ou les contributeurs de ce site Web ne peuvent être tenus responsables des actions, décisions ou tout autre comportement auxquels vous vous prêtez ou non se fondant sur le contenu de ce site Web. Ceci inclut sans s'y limiter des raisons technologiques ou légales. Vous agissez à vos propres risques en vous appuyant sur le contenu de ce site Web. Si vous devez choisir d'agir ou non, vous devez contacter un avocat agréé dans la juridiction concernée pour laquelle vous souhaitez obtenir de l'aide."
     termstxt2: "Ce site Web peut contenir des traductions de la version anglaise de son contenu. Ces traductions sont offertes uniquement à titre de commodité. Dans l'éventualité d'une divergence entre la version anglaise et la version traduite du contenu, la version anglaise prévaut sur toute autre version. Si vous constatez des incohérences, veuillez s'il vous plaît les signaler sur <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a>."
+  press:
+    title: "Presse - Bitcoin"
+    pagetitle: "Centre de presse"
+    summary: "Trouvez des candidats pour des entrevues, des réponses et du contenu de haute qualité."
+    volunteer: "Entrevues"
+    volunteernonprofit: "Communiquez avec la <a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin Foundation</a> ou des <a href=\"#community##[community.non-profit]\">organisations sans but lucratif</a> locales."
+    volunteerpresscenter: "Trouvez plus de contacts potentiels pour la presse sur le site indépendant <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
+    faqmore: "Afin d'en savoir plus sur Bitcoin, veuillez visiter la <a href=\"/en/faq\">FAQ</a> complète ou le <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki Bitcoin</a>."
+    materialpicture: "Images"
+    materialpicturemore: "Afficher plus d'images..."
   protect-your-privacy:
     title: "Protéger votre confidentialité - Bitcoin"
     pagetitle: "Protéger votre confidentialité"
@@ -545,7 +556,7 @@ fr:
     use: "Utiliser Bitcoin"
     usetxt: "<a href=\"#getting-started#\">Utiliser Bitcoin</a> est la première chose que vous pouvez faire pour le soutenir. Il y a probablement plusieurs cas où il peut déjà vous rendre la vie plus facile. Vous pouvez accepter les paiements et faire des achats avec Bitcoin."
     node: "Être le réseau"
-    nodetxt: "Vous pouvez rejoindre le réseau Bitcoin en laissant un <a href=\"#download#\">logiciel nœud complet</a> tourner en permanence sur votre ordinateur ou serveur dédié. Les nœuds complets sécurisent et relaient toutes les transactions des utilisateurs. Ils peuvent être comparés à l'épine dorsale du réseau."
+    nodetxt: "Si vous avez une bonne connexion Internet, vous pouvez fortifier le réseau Bitcoin en laissant un <a href=\"#download#\">logiciel nœud complet</a> tourner en permanence sur votre ordinateur ou votre serveur avec le port 8333 ouvert. Les nœuds complets sécurisent et relaient toutes les transactions des utilisateurs"
     mining: "Minage"
     miningtxt: "Vous pouvez commencer à <a href=\"http://www.bitcoinmining.com/\">miner des bitcoins</a> pour aider à traiter les transactions. Afin de protéger le réseau, vous devriez rejoindre des <a href=\"https://blockchain.info/pools\">piscines de minage plus petites</a> et de préférence décentralisées tel que <a href=\"http://p2pool.in/\">P2Pool</a> ou <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">des piscines</a> prenant en charge getblocktemplate (GBT)."
     develop: "Développement"
@@ -627,6 +638,7 @@ fr:
     menu-innovation: Innovation
     menu-intro: Introduction
     menu-legal: "Légal"
+    menu-press: "Presse"
     menu-resources: Ressources
     menu-support-bitcoin: Participer
     menu-vocabulary: Vocabulaire
@@ -650,6 +662,7 @@ fr:
     how-it-works: comment-ca-marche
     innovation: innovation
     legal: legal
+    press: presse
     protect-your-privacy: proteger-votre-vie-privee
     resources: ressources
     secure-your-wallet: securiser-porte-monnaie
