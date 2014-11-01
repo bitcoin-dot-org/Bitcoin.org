@@ -556,7 +556,7 @@ hu:
     use: "A Bitcoin használata"
     usetxt: "A <a href=\"#getting-started#\">Bitcoin használata</a> az első lépés, amelyet a Bitcoin támogatásának irányában tehet. Valószínűleg számos esetben könnyítheti meg életét. Kifizetéseket fogadhat, illetve vásárolhat is a Bitcoin segítségével."
     node: "Legyen Ön a hálózat"
-    nodetxt: "Ha gyors interneteléréssel rendelkezik, a Bitcoin-hálózatot a számítógépén vagy szerverén - nyitott 8333-as porttal - egy <a href=\"#download#\">teljes csomóponti szoftver</a> folyamatos futtatásával erősítésheti. A teljes csomópontok az összes tranzakcióit biztosítják és továbbítják."
+    nodetxt: "Ha gyors interneteléréssel rendelkezik, a Bitcoin-hálózatot a számítógépén vagy szerverén - nyitott 8333-as porttal - egy <a href=\"#download#\">teljes csomóponti szoftver</a> folyamatos futtatásával erősítheti. A teljes csomópontok az összes tranzakció biztonságát szavatolják, valamint továbbítják azokat."
     mining: "Bányászat"
     miningtxt: "Ön is elkezdhet <a href=\"http://www.bitcoinmining.com/\">bitcoint bányászni</a> a tranzakciók feldogozásának támogatásához. A hálózat védelme érdekében érdemes <a href=\"https://blockchain.info/pools\">kisebb bányászati közösségekhez</a>, a <a href=\"http://p2pool.in/\">P2Poolhoz hasonló</a>, decentralizált közösségekhez vagy getblocktemplate (GBT) támogatással rendelkező <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">közösségekhez</a> csatlakoznia."
     develop: "Fejlesztés"
