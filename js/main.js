@@ -324,10 +324,18 @@ var updatetoc=function(){
 	}
 	if(a===false)return;
 	//Set .active class on new active toc entry
-	while(a.parentNode.nodeName=='LI'||a.parentNode.nodeName=='UL'){
-		addClass(a,'active');
-		a=a.parentNode;
+	var nd=a;
+	while(nd.parentNode.nodeName=='LI'||nd.parentNode.nodeName=='UL'){
+		addClass(nd,'active');
+		nd=nd.parentNode;
 	}
+	//Auto-scroll in toc to keep active toc entry visible
+	var nd=a;
+	var otop=nd.offsetTop;
+	while(nd.offsetParent!=div&&nd.offsetParent){nd=nd.offsetParent;otop+=nd.offsetTop;}
+	var bdiff=getHeight(a)+otop-div.scrollTop-getHeight(div);
+	var tdiff=getHeight(a)-otop+div.scrollTop;
+	if(tdiff>0||bdiff>0)div.scrollTop-=tdiff;
 }
 //Update browser url
 var updatehistory=function(){
