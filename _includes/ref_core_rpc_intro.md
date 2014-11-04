@@ -45,8 +45,6 @@ other Bitcoin software, this reversal of hashes has become the standard
 way to refer to certain objects. The table below should make clear where
 each byte order is used.
 
-<div style="text-align: left;" markdown="1">
-
 |---------------+---------------------|-----------------|
 | Data | Internal Byte Order ("Big Endian") | RPC Byte Order ("Little Endian") |
 |---------------|---------------------|-----------------|
@@ -62,8 +60,6 @@ each byte order is used.
 |---------------|---------------------|-----------------|
 | P2SH Hashes: RIPEMD160(SHA256(redeem script))  | Used in both addresses and pubkey scripts | **N/A:** RPCs use addresses which use internal byte order |
 |---------------|---------------------|-----------------|
-
-</div>
 
 Note: RPCs which return raw results, such as `getrawtransaction` or the
 raw mode of `getblock`, always display hashes as they appear in blocks

@@ -210,13 +210,13 @@ A raw transaction has the following top-level format:
 |----------|--------------|---------------------|-------------
 | 4        | version      | uint32_t            | Transaction version number; currently version 1.  Programs creating transactions using newer consensus rules may use higher version numbers.
 | *Varies* | tx_in count  | compactSize uint    | Number of inputs in this transaction.
-| *Varies* | tx_in        | *See TxIn Below*    | Transaction inputs.
-| *Varies* | tx_out count | compactSize uint    | Number outputs in this transaction
-| *Varies* | tx_out       | *See TxOut Below*   | Transaction outputs.
+| *Varies* | tx_in        | txIn                | Transaction inputs.  See description of txIn below.
+| *Varies* | tx_out count | compactSize uint    | Number of outputs in this transaction.
+| *Varies* | tx_out       | txOut               | Transaction outputs.  See description of txOut below.
 | 4        | lock_time    | uint32_t            | A time (Unix epoch time) or block number.  See the [locktime parsing rules][]. 
 
-A transaction may have multiple inputs and outputs, so the TxIn and
-TxOut structures may recur within a transaction. CompactSize unsigned
+A transaction may have multiple inputs and outputs, so the txIn and
+txOut structures may recur within a transaction. CompactSize unsigned
 integers are a form of variable-length integers; they are described in
 the [CompactSize section][CompactSize unsigned integer].
 
@@ -231,9 +231,9 @@ Each non-coinbase input spends an outpoint from a previous transaction.
 
 | Bytes    | Name             | Data Type            | Description
 |----------|------------------|----------------------|--------------
-| 36       | previous_output  | *See Outpoint Below* | The previous outpoint being spent.
+| 36       | previous_output  | outpoint             | The previous outpoint being spent.  See description of outpoint below.
 | *Varies* | script bytes     | compactSize uint     | The number of bytes in the signature script.  Maximum is 10,000 bytes.
-| *Varies* | signature script | char[]              | A script-language script which satisfies the conditions placed in the outpoint's pubkey script.  Should only contain data pushes; see the [signature script modification warning][].
+| *Varies* | signature script | char[]               | A script-language script which satisfies the conditions placed in the outpoint's pubkey script.  Should only contain data pushes; see the [signature script modification warning][].
 | 4        | sequence         | uint32_t             | Sequence number; see [sequence number][].  Default for Bitcoin Core and almost all other programs is 0xffffffff.
 
 {% endautocrossref %}
@@ -276,7 +276,7 @@ to a new pay-to-pubkey-hash (P2PKH) output.
 {% highlight text %}
 01000000 ................................... Version
 
-01 ......................................... Number of TxIns
+01 ......................................... Number of inputs
 |
 | 7b1eabe0209b1fe794124575ef807057
 | c77ada2138ae4fa8d6c4de0398a14f3f ......... Outpoint TXID
