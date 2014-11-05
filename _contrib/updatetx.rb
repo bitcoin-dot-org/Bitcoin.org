@@ -28,8 +28,8 @@ dirs.each do |dir|
     next if file == '.' or file == '..'
     contents = File.read(dir + '/' + file)
     # Drop HTML code applied to current language only ( until next {% when / else / endcase %} statement )
-    contents.gsub!(Regexp.new("{% when '" + lang + "' %}((?!{% endcase %})(?!{% else %}).)*?{% when", Regexp::MULTILINE),'{% when')
-    contents.gsub!(Regexp.new("{% when '" + lang + "' %}((?!{% endcase %}).)*?{% else %}", Regexp::MULTILINE),'{% else %}')
+    contents.gsub!(Regexp.new("{% when '" + lang + "' %}((?!.*?{% endcase %})(?!.*?{% else %}).)*?{% when", Regexp::MULTILINE),'{% when')
+    contents.gsub!(Regexp.new("{% when '" + lang + "' %}((?!.*?{% endcase %}).)*?{% else %}", Regexp::MULTILINE),'{% else %}')
     contents.gsub!(Regexp.new("{% when '" + lang + "' %}.*?{% endcase %}", Regexp::MULTILINE),'{% endcase %}')
     # Drop complete {% case / endcase %} statements when not used by any language anymore
     contents.gsub!(Regexp.new("{% case page.lang %}(((?!{% when ).)*?){% else %}(.*?){% endcase %}", Regexp::MULTILINE),'\1 \3')
