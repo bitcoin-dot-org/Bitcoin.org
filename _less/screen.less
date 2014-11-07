@@ -2022,14 +2022,19 @@ h2 .rssicon{
 	img{
 		max-width:100%;
 	}
-	h1{
-		text-align:left;
+	h1,
+	h2{
+		text-align:center;
+	}
+	.titleicon,
+	.warningicon{
+		display:block;
+		position:static;
+		margin:auto;
+		margin-bottom:5px;
 	}
 	.banner-message div div{
 		width:auto;
-	}
-	.summary{
-		text-align:left;
 	}
 	.head{
 		margin:0;
@@ -2106,7 +2111,7 @@ h2 .rssicon{
 		position:static;
 		text-align:left;
 		margin:0;
-		padding:15px 10px 20px 10px;
+		padding:20px 10px;
 		border-right:0;
 		border-left:0;
 		-webkit-border-radius:0;
@@ -2133,9 +2138,9 @@ h2 .rssicon{
 	.index li{
 		padding:3px 0;
 	}
-	.docreference{
-		width:220px;
-		margin:0 0 40px 0;
+	.docreference a{
+		display:block;
+		margin:0 auto 40px auto;
 	}
 	.toc{
 		position:static;
@@ -2201,11 +2206,8 @@ h2 .rssicon{
 	.tablehalf img{
 		width:auto;
 		height:auto;
-		margin: auto;
-		display: block;
-	}
-	.tablehalf h2 {
-		text-align: center;
+		margin:auto;
+		display:block;
 	}
 	.listtable div div{
 		display:block;
@@ -2278,6 +2280,8 @@ h2 .rssicon{
 		padding-right:0;
 	}
 	.start div div div{
+		position:static;
+		text-align:center;
 		bottom:15px;
 	}
 	.start>div>div:first-child+div{
@@ -2303,6 +2307,10 @@ h2 .rssicon{
 		padding-left:0;
 		margin-left:0;
 	}
+	.resources,
+	.resources p{
+		text-align:center;
+	}
 	.resourcesorg div div{
 		width:auto;
 		display:block;
@@ -2316,9 +2324,6 @@ h2 .rssicon{
 	.resourcesmore div{
 		padding:0;
 		border:0;
-	}
-	.resourcesmore div h2{
-		text-align:left;
 	}
 	.walletmenu ul{
 		display:block;
@@ -2431,10 +2436,6 @@ h2 .rssicon{
 		text-align:left;
 	}
 	.download div p{
-		text-align:left;
-	}
-	.download h1,
-	.download h2{
 		text-align:left;
 	}
 	.download .mainbutton{
