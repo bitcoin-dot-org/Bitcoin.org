@@ -465,6 +465,16 @@ sl:
     pagetitle: "Uporaba spletišča na lastno odgovornost"
     termstxt1: "Informacije in gradivo na tem spletišču so splošne narave in so tu le v informativne namene. Del teh informacij se lahko tiče dejanskih ali potencialnih pravnih tem. Te informacije niso nadomestilo za kvalificirano pravno svetovanje in jih ne smete uporabljati v ta namen. Lastniki in sestavljalci tega spletišča niso na noben način odgovorni za dejanja, odločitve in druge oblike ravnanja, ki jih uporabniki sprejmejo ali ne sprejmejo na podlagi tega spletišča. Posebej, vendar ne izključno, velja to za tehnološke ali pravne razloge. Če se zanašate na vsebino tega spletišča, počnete to na lastno odgovornost. Če želite sprejeti odločitev glede svojih dejanj ali nedejavnosti, stopite v stik z licenciranim odvetnikom, pristojnim na ustreznem področju."
     termstxt2: "Ta stran lahko vsebuje tujejezične prevode originalne vsebine v angleščini. Ti prevodi so tu zgolj kot priročno sredstvo. Če obstajajo razlike med angleškim izvirnikom in prevodom, ima prednost angleški izvirnik. Če opazite neskladja, nam jih prosimo sporočite na <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHubu</a>."
+  press:
+    title: "Mediji - bitcoin"
+    pagetitle: "Tiskovno središče"
+    summary: "Stopite v stik s sogovorniki za intervjuje, poiščite odgovore na vprašanja in pridobite kvalitetne tiskovne materiale."
+    volunteer: "Intervjuvanci"
+    volunteernonprofit: "Stopite v stik s <a href=\"https://bitcoinfoundation.org/contact/\">Fundacijo Bitcoin</a> ali lokalnimi <a href=\"#community##[community.non-profit]\">neprofitnimi organizacijami</a>."
+    volunteerpresscenter: "Še več stikov za medije najdete na neodvisnem spletišču <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
+    faqmore: "Za več informacij o bitcoinu si oglejte <a href=\"/en/faq\">VinO</a> ali <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki o bitcoinu</a>."
+    materialpicture: "Slikovni material"
+    materialpicturemore: "Prikaži več slik..."
   protect-your-privacy:
     title: "Zaščitite svojo zasebnost - bitcoin"
     pagetitle: "Zaščitite svojo zasebnost"
@@ -628,6 +638,7 @@ sl:
     menu-innovation: Inovacije
     menu-intro: Uvod
     menu-legal: "Pravno"
+    menu-press: "Mediji"
     menu-resources: Viri
     menu-support-bitcoin: Sodelujte
     menu-vocabulary: Slovar
@@ -651,6 +662,7 @@ sl:
     how-it-works: kako-deluje
     innovation: inovacije
     legal: pravno
+    press: mediji
     protect-your-privacy: zascita-zasebnosti
     resources: viri
     secure-your-wallet: zavarujte-svojo-denarnico
