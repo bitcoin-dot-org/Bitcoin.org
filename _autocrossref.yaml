@@ -46,6 +46,9 @@ coinbase: coinbase transaction
 coinbase transaction:
 coinbase transactions: coinbase transaction
 coinbase field:
+compactsize uint: compactsize unsigned integer
+compactsize unsigned integer:
+compactsize unsigned integers: compactsize unsigned integer
 confirm:
 confirmed:
 confirmation:
@@ -168,6 +171,9 @@ public keys: public key
 public key infrastructure: pki
 '`r`': r
 raw format:
+raw transaction: raw format
+raw transactions: raw format
+raw transaction format: raw format
 rawtransaction format: raw format
 receipt:
 recurrent rebilling:
@@ -325,3 +331,5 @@ CVE-2012-2459:
 '`walletlock`': rpc walletlock
 '`walletpassphrase`': rpc walletpassphrase
 '`walletpassphrasechange`': rpc walletpassphrasechange
+
+Bitcoin Core 0.9.3:

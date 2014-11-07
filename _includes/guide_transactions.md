@@ -575,7 +575,7 @@ maximum. Since sequence numbers are not used by the network for any
 other purpose, setting any sequence number to zero is sufficient to
 enable locktime.
 
-Locktime itself is an unsigned 4-byte number which can be parsed two ways:
+<span id="locktime_parsing_rules">Locktime itself is an unsigned 4-byte integer which can be parsed two ways:</span>
 
 * If less than 500 million, locktime is parsed as a block height. The
   transaction can be added to any block which has this height or higher.

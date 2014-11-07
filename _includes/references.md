@@ -26,6 +26,7 @@
 [child public key]: /en/developer-guide#term-child-public-key "In HD wallets, a public key derived from a parent public key or a corresponding child private key"
 [coinbase field]: /en/developer-reference#term-coinbase-field "A special input-like field for coinbase transactions"
 [coinbase transaction]: /en/developer-reference#term-coinbase-tx "A special transaction which miners must create when they generate a block"
+[compactsize unsigned integer]: /en/developer-reference#compactsize-unsigned-integers "A type of variable-length integer"
 [confirm]: /en/developer-guide#term-confirmation "A transaction included in a block currently on the block chain"
 [confirmed]: /en/developer-guide#term-confirmation "A transaction included in a block currently on the block chain"
 [confirmed transactions]: /en/developer-guide#term-confirmation "Transactions included in a block currently on the block chain"
@@ -242,6 +243,7 @@
 [rpc walletpassphrasechange]: /en/developer-reference#walletpassphrasechange
 
 <!-- Other internal site links; alphabetical order -->
+[Bitcoin Core 0.9.3]: /en/release/v0.9.3
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [bitcoinpdf]: https://bitcoin.org/bitcoin.pdf
 [core executable]: /en/download
@@ -255,14 +257,17 @@
 [devguide payment processing]: /en/developer-guide#payment-processing
 [devguide wallets]: /en/developer-guide#wallets
 [devref wallets]: /en/developer-reference#wallets
+[locktime parsing rules]: /en/developer-guide#locktime_parsing_rules
 [Merge Avoidance subsection]: /en/developer-guide#merge-avoidance
 [micropayment channel]: /en/developer-guide#term-micropayment-channel
 [raw transaction format]: /en/developer-reference#raw-transaction-format
 [RPC]: /en/developer-reference#remote-procedure-calls-rpcs
 [RPCs]: /en/developer-reference#remote-procedure-calls-rpcs
-[section hash byte order]: /en/developer-reference#hash-byte-order
-[section verifying payment]: /en/developer-guide#verifying-payment
 [section detecting forks]: /en/developer-guide#detecting-forks
+[section hash byte order]: /en/developer-reference#hash-byte-order
+[section simple raw transaction]: /en/developer-examples#simple-raw-transaction
+[section verifying payment]: /en/developer-guide#verifying-payment
+[signature script modification warning]: /en/developer-reference#signature_script_modification_warning
 [transaction object format]: /en/developer-reference#term-transaction-object-format
 [Verification subsection]: /en/developer-guide#verifying-payment
 [X509Certificates]: /en/developer-examples#term-x509certificates
