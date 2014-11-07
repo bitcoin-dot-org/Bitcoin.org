@@ -9,8 +9,7 @@
 [block]: /en/developer-guide#term-block "A block of transactions protected by proof of work"
 [blocks]: /en/developer-guide#term-block "Blocks of transactions protected by proof of work"
 [block chain]: /en/developer-guide#block-chain "A chain of blocks with each block linking to the block that preceded; the most-difficult-to-recreate chain is The Block Chain"
-[block header]: /en/developer-reference#block-header "An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work"
-[block header magic]: /en/developer-reference#term-block-header-magic "A magic number used to separate block data from transaction data on the P2P network"
+[block header]: /en/developer-reference#block-headers "An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work"
 [block height]: /en/developer-guide#term-block-height "The number of chained blocks preceding this block"
 [block reward]: /en/developer-reference#term-block-reward "New satoshis given to a miner for creating one of the first 6,929,999 blocks"
 [block time]: /en/developer-reference#term-block-time "The time field in the block header"
@@ -24,6 +23,7 @@
 [change output]: /en/developer-guide#term-change-output "An output used by a spender to send back to himself some of the satoshis from the inputs"
 [child key]: /en/developer-guide#term-child-key "In HD wallets, a key derived from a parent key"
 [child public key]: /en/developer-guide#term-child-public-key "In HD wallets, a public key derived from a parent public key or a corresponding child private key"
+[coinbase block height]: /en/developer-reference#term-coinbase-block-height "The current block's height encoded into the first bytes of the coinbase field"
 [coinbase field]: /en/developer-reference#term-coinbase-field "A special input-like field for coinbase transactions"
 [coinbase transaction]: /en/developer-reference#term-coinbase-tx "A special transaction which miners must create when they generate a block"
 [compactsize unsigned integer]: /en/developer-reference#compactsize-unsigned-integers "A type of variable-length integer"
@@ -48,7 +48,6 @@
 [hard fork]: /en/developer-guide#term-hard-fork "A permanent divergence in the the block chain, commonly occurs when non-upgraded nodes can't validate blocks created by upgraded nodes following newer consensus rules."
 [hardened extended private key]: /en/developer-guide#term-hardened-extended-private-key "A private key whose corresponding public key cannot derive child keys"
 [HD protocol]: /en/developer-guide#term-hd-protocol "The Hierarchical Deterministic (HD) key creation and transfer protocol"
-[header nonce]: /en/developer-reference#term-header-nonce "Four bytes of arbitrary data in a block header used to let miners create headers with different hashes for proof of work"
 [high-priority transactions]: /en/developer-guide#term-high-priority-transactions "Transactions which don't pay a transaction fee; only transactions spending long-idle outputs are eligible"
 [input]: /en/developer-guide#term-input "The input to a transaction linking to the output of a previous transaction which permits spending of satoshis"
 [inputs]: /en/developer-guide#term-input "The input to a transaction linking to the output of a previous transaction which permits spending of satoshis"
@@ -74,6 +73,7 @@
 [miners]: /en/developer-guide#term-miner "Creators of Bitcoin blocks who solve proof-of-work puzzles in exchange for block rewards and transaction fees"
 [minimum fee]: /en/developer-guide#term-minimum-fee "The minimum fee a transaction must pay in must circumstances to be mined or broadcast by peers across the network"
 [multisig]: /en/developer-guide#term-multisig "An pubkey script using OP_CHECKMULTISIG to check for multiple signatures"
+[nbits]: /en/developer-reference#target-nbits "The encoded form of the target threshold as it appears in the block header"
 [network]: /en/developer-guide#term-network "The Bitcoin P2P network which broadcasts transactions and blocks"
 [Null data]: /en/developer-guide#term-null-data "A standard transaction type which allows adding 40 bytes of arbitrary data to the block chain up to once per transaction"
 [op_checkmultisig]: /en/developer-reference#term-op-checkmultisig "Op code which returns true if one or more provided signatures (m) sign the correct parts of a transaction and match one or more provided public keys (n)"
@@ -243,6 +243,7 @@
 [rpc walletpassphrasechange]: /en/developer-reference#walletpassphrasechange
 
 <!-- Other internal site links; alphabetical order -->
+[Bitcoin Core 0.7.0]: /en/release/v0.7.0
 [Bitcoin Core 0.9.3]: /en/release/v0.9.3
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [bitcoinpdf]: https://bitcoin.org/bitcoin.pdf
@@ -265,6 +266,7 @@
 [RPCs]: /en/developer-reference#remote-procedure-calls-rpcs
 [section detecting forks]: /en/developer-guide#detecting-forks
 [section hash byte order]: /en/developer-reference#hash-byte-order
+[section merkle trees]: /en/developer-reference#merkle-trees
 [section simple raw transaction]: /en/developer-examples#simple-raw-transaction
 [section verifying payment]: /en/developer-guide#verifying-payment
 [signature script modification warning]: /en/developer-reference#signature_script_modification_warning
@@ -281,6 +283,7 @@
 [BIP34]: https://github.com/bitcoin/bips/blob/master/bip-0034.mediawiki
 [BIP39]: https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
 [BIP50]: https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki
+[BIP62]: https://github.com/bitcoin/bips/blob/master/bip-0062.mediawiki
 [BIP70]: https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki
 [BIP71]: https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki
 [BIP72]: https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki
@@ -326,6 +329,7 @@
 [python-blkmaker]: https://gitorious.org/bitcoin/python-blkmaker
 [SHA256]: https://en.wikipedia.org/wiki/SHA-2
 [Stratum mining protocol]: http://mining.bitcoin.cz/stratum-mining
+[unix epoch time]: https://en.wikipedia.org/wiki/Unix_time
 [URI encoded]: https://tools.ietf.org/html/rfc3986
 [wiki script]: https://en.bitcoin.it/wiki/Script
 [x509]: https://en.wikipedia.org/wiki/X.509

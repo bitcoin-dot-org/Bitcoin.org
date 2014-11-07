@@ -43,6 +43,7 @@ child private and public keys: child key
 child public key:
 child public keys: child public key
 coinbase: coinbase transaction
+coinbase block height:
 coinbase transaction:
 coinbase transactions: coinbase transaction
 coinbase field:
@@ -68,6 +69,7 @@ double-spend: double spend
 double spending: double spend
 double-spent: double spend
 ECDSA:
+epoch time: unix epoch time
 escrow contract:
 '`expires`': pp expires
 extended key:
@@ -82,7 +84,6 @@ hard fork:
 hard forks: hard fork
 hardened extended private key:
 HD protocol:
-header nonce:
 high-priority transaction: high-priority transactions
 high-priority transactions:
 inputs: input
@@ -120,6 +121,7 @@ mining: mine
 millibit: millibits
 millibits:
 multisig:
+nbits:
 network:
 null data: 
 '`op_checkmultisig`': op_checkmultisig
@@ -229,6 +231,8 @@ txid:
 txids: txid
 unconfirmed:
 unconfirmed transactions:
+unix epoch time:
+unix time: unix epoch time
 unique address: unique addresses
 unique addresses:
 utxo:
@@ -249,6 +253,7 @@ BIP32:
 BIP34:
 BIP39:
 BIP50:
+BIP62:
 BIP70:
 BIP71:
 BIP72:
@@ -333,3 +338,4 @@ CVE-2012-2459:
 '`walletpassphrasechange`': rpc walletpassphrasechange
 
 Bitcoin Core 0.9.3:
+Bitcoin Core 0.7.0:
