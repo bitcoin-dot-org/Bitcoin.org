@@ -576,7 +576,7 @@ Will be rounded up to the nearest satoshi (0.00000001).
 
 {% autocrossref %}
 
-Set the transaction fee per kilobyte to 100,000 satoshis (1 millibit).
+Set the transaction fee per kilobyte to 100,000 satoshis (1 millibitcoin).
 
 {% endautocrossref %}
 
