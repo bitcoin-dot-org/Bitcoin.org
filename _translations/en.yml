@@ -36,7 +36,7 @@ en:
     visibility: "Get some free visibility"
     visibilitytext: "Bitcoin is an emerging market of new customers who are searching for ways to spend their bitcoins. Accepting them is a good way to get new customers and give your business some new visibility. Accepting a new payment method has often shown to be a clever practice for online businesses."
     multisig: "Multi-signature"
-    multisigtext: "Bitcoin also includes a multi-signature feature which allows bitcoins to be spent only if a subset of a group of people authorize the transaction. This can be used by a board of directors to prevent any member to engage expenditures without enough consent from other members, as well as to track which members allowed each payment."
+    multisigtext: "Bitcoin also includes a multi-signature feature which allows bitcoins to be spent only if a subset of a group of people authorize the transaction. This can be used by a board of directors to prevent any member to make expenditures without enough consent from other members, as well as to track which members allowed each payment."
     transparency: "Accounting transparency"
     transparencytext: "Many organizations are required to produce accounting documents about their activity. Using Bitcoin allows you to offer the highest level of transparency since you can provide information your members can use to verify your balances and transactions. Non-profit organizations can also allow the public to see how much they receive in donations."
   bitcoin-for-developers:
@@ -546,7 +546,7 @@ en:
     update: "Keep your software up to date"
     updatetxt: "Using the latest version of your Bitcoin software allows you to receive important stability and security fixes. Updates can prevent problems of various severity, include new useful features and help keep your wallet safe. Installing updates for all other software on your computer or mobile is also important to keep your wallet environment safer."
     offlinemulti: "Multi-signature to protect against theft"
-    offlinemultitxt: "Bitcoin includes a multi-signature feature that allows a transaction to require multiple independent approvals to be spent. This can be used by an organization to give its members access to its treasury while only allowing a withdrawal if 3 of 5 members sign the transaction. Some web wallets also provide multi-signature wallets, allowing the user to keep control over their money while preventing a thief to steal funds by compromising a single device or server."
+    offlinemultitxt: "Bitcoin includes a multi-signature feature that allows a transaction to require multiple independent approvals to be spent. This can be used by an organization to give its members access to its treasury while only allowing a withdrawal if 3 of 5 members sign the transaction. Some web wallets also provide multi-signature wallets, allowing the user to keep control over their money while preventing a thief from stealing funds by compromising a single device or server."
     offlinetestament: "Think about your testament"
     offlinetestamenttxt: "Your bitcoins can be lost forever if you don't have a backup plan for your peers and family. If the location of your wallets or your passwords are not known by anyone when you are gone, there is no hope that your funds will ever be recovered. Taking a bit of time on these matters can make a huge difference."
   support-bitcoin:
