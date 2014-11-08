@@ -14,7 +14,7 @@ serialized header format part of the consensus rules.
 |-------|---------------------|-----------|----------------
 | 4     | version             | uint32_t  | The [block version][]{:#term-block-version}{:.term} number indicates which set of block validation rules to follow. See the list of block versions below.
 | 32    | previous block hash | char[32]  | A SHA256(SHA256()) hash in internal byte order of the previous block's header.  This ensures no previous block can be changed without also changing this block's header.
-| 32    | merkle root hash    | char[32]  | A SHA256(SHA256()) hash in internal byte order. The merkle root is derived from hashes of all transaction included in this block, ensuring none of those transactions can be modified without modifying the header.  See the [merkle trees section][section merkle trees] below.
+| 32    | merkle root hash    | char[32]  | A SHA256(SHA256()) hash in internal byte order. The merkle root is derived from the hashes of all transactions included in this block, ensuring that none of those transactions can be modified without modifying the header.  See the [merkle trees section][section merkle trees] below.
 | 4     | time                | uint32_t  | The [block time][]{:#term-block-time}{:.term} is a Unix epoch time when the miner started hashing the header (according to the miner).  Must be greater than or equal to the median time of the previous 11 blocks.  Full nodes will not accept blocks with headers more than two hours in the future according to their clock.
 | 4     | nBits               | uint32_t  | An encoded version of the target threshold this block's header hash must be less than or equal to.  See the nBits format described below.
 | 4     | nonce               | uint32_t  | An arbitrary number miners change to modify the header hash in order to produce a hash below the target threshold.  If all 32-bit values are tested, the time can be updated or the coinbase transaction can be changed and the merkle root updated.
@@ -25,7 +25,7 @@ in little-endian order.
 An example header in hex:
 
 {% highlight text %}
-02000000 .......................... Block version: 2
+02000000 ........................... Block version: 2
 
 b6ff0b1b1680a2862a30ca44d346d9e8
 910d334beb48ca0c0000000000000000 ... Hash of previous block's header
@@ -126,8 +126,9 @@ order when it's placed in the block header.
 
 {% autocrossref %}
 
-The target threshold is a 256-bit unsigned integer compared the 256-bit
-SHA256(SHA256()) header hash (treated also as an unsigned integer).
+The target threshold is a 256-bit unsigned integer which a header hash
+must be equal to or below in order for that header to be a valid part of
+the block chain.
 However, the header field *nBits* provides only 32 bits of space, so the
 target number uses a less precise format called "compact" which works
 like a base-256 version of scientific notation:
