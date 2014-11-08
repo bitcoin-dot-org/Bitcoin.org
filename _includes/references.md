@@ -6,7 +6,7 @@
 [base58Check]: /en/developer-reference#term-base58check "The method used in Bitcoin for converting 160-bit hashes into Bitcoin addresses"
 [bitcoin URI]: /en/developer-guide#term-bitcoin-uri "A URI which allows receivers to encode payment details so spenders don't have to manually enter addresses and other details"
 [bitcoins]: /en/developer-guide#term-bitcoins "A primary accounting unit used in Bitcoin; 100 million satoshis"
-[bits]: /en/developer-guide#term-bits "0.000,001 bitcoins (100 satoshis)"
+[bits]: /en/developer-guide#term-bits "0.000001 bitcoins (100 satoshis)"
 [block]: /en/developer-guide#term-block "A block of transactions protected by proof of work"
 [blocks]: /en/developer-guide#term-block "Blocks of transactions protected by proof of work"
 [block chain]: /en/developer-guide#block-chain "A chain of blocks with each block linking to the block that preceded; the most-difficult-to-recreate chain is The Block Chain"
