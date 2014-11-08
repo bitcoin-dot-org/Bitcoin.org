@@ -119,6 +119,14 @@ commands:
     ## Or build the site and run all tests
     make all
 
+#### Partial build for faster preview
+
+In order to preview some changes faster, you can disable all plugins and
+languages but those you need by prefixing the `ENABLED_LANGS` and `ENABLED_PLUGINS`
+environment variables:
+
+    ENABLED_PLUGINS="events autocrossref" ENABLED_LANGS="en fr" make all
+
 ## Developer Documentation
 
 Each part of the documentation can be found in the [_includes](https://github.com/bitcoin/bitcoin.org/tree/master/_includes)

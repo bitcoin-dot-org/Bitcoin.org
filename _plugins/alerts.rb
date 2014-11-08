@@ -48,8 +48,13 @@ module Jekyll
 
   class AlertPageGenerator < Generator
     def generate(site)
-      #generate each alert based on templates
+      #Generate each alert based on templates
       site.config['STATUS'] = 0
+      #Do nothing if plugin is disabled
+      if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('alerts').nil?
+        print 'Alerts disabled' + "\n"
+        return
+      end
       Dir.foreach('_alerts') do |file|
         next if file == '.' or file == '..'
         lang = 'en'

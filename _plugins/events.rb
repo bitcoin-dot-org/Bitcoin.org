@@ -130,9 +130,19 @@ module Jekyll
           h
         end
       end
-      # Populate site.conferences array
+
+      # Set site.conferences and site.meetups arrays
+      site.conferences = {}
+      site.meetups = {}
+
+      #Do nothing if plugin is disabled
+      if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('events').nil?
+        print 'Events disabled' + "\n"
+        return
+      end
+
+      # Populate site.conferences and site.meetups arrays
       site.conferences = conferences()
-      # Populate site.meetups array
       site.meetups = meetups()
     end
 

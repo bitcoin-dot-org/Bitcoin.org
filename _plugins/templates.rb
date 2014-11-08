@@ -22,9 +22,16 @@ module Jekyll
     def generate(site)
       #load translations files
       locs = {}
+      enabled = ENV['ENABLED_LANGS'];
+      enabled = enabled.split(' ') if !enabled.nil?
       Dir.foreach('_translations') do |file|
         next if file == '.' or file == '..'
         lang = file.split('.')[0]
+        #Ignore lang if disabled
+        if lang != 'en' and !enabled.nil? and !enabled.include?(lang)
+          print 'Lang ' + lang + ' disabled' + "\n"
+          next
+        end
         locs[lang] = YAML.load_file("_translations/"+file)[lang]
       end
       #Generate each translated page based on templates
