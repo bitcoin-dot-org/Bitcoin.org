@@ -147,7 +147,7 @@ You must pay by: 2014-04-01 at 23:00 UTC
 
 Indicating the [denomination][]{:#term-denomination}{:.term} is critical. As of this writing, popular
 Bitcoin wallet software defaults to denominating amounts in either [bitcoins][]{:#term-bitcoins}{:.term} (BTC)
-, [millibitcoins][]{:#term-millibitcoins}{:.term} (mBTC) or microbitcoins (uBTC) (aka "[bits][]{:#term-bits}{:.term}"). Choosing between each unit is widely supported,
+, [millibitcoins][]{:#term-millibitcoins}{:.term} (mBTC) or microbitcoins (uBTC, "[bits][]{:#term-bits}{:.term}"). Choosing between each unit is widely supported,
 but other software also lets its users select denomination amounts from
 some or all of the following options:
 
@@ -156,8 +156,7 @@ some or all of the following options:
 | 1.0         | bitcoin (BTC)       |
 | 0.01        | bitcent (cBTC)      |
 | 0.001       | millibitcoin (mBTC) |
-| 0.000001    | microbitcoin (uBTC) |
-| 0.000001    | bit                 |
+| 0.000001    | microbitcoin (uBTC, "bits") |
 | 0.00000001  | [satoshi][]{:#term-satoshi}{:.term}             |
 
 {% endautocrossref %}
