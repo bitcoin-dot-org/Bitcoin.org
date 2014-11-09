@@ -86,4 +86,30 @@ require 'yaml'
   end
 end
 
-Liquid::Template.register_tag('autocrossref', Jekyll::AutoCrossRefBlock)
+module Jekyll
+
+require 'yaml'
+
+  class AutoCrossRefBlockDisabled < Liquid::Block
+
+    def initialize(tag_name, text, tokens)
+      super
+    end
+
+    def render(context)
+      output = super
+
+      output
+    end
+  end
+end
+
+
+
+#Do nothing if plugin is disabled
+if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('autocrossref').nil?
+  print 'Autocrossref disabled' + "\n"
+  Liquid::Template.register_tag('autocrossref', Jekyll::AutoCrossRefBlockDisabled)
+else
+  Liquid::Template.register_tag('autocrossref', Jekyll::AutoCrossRefBlock)
+end

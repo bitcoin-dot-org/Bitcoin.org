@@ -92,9 +92,21 @@ module Jekyll
           h
         end
       end
+
+      # Set site.corecontributors and site.sitecontributors arrays
+      site.corecontributors = {}
+      site.sitecontributors = {}
+
+      #Do nothing if plugin is disabled
+      if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('contributors').nil?
+        print 'Contributors disabled' + "\n"
+        return
+      end
+
       # Populate site.corecontributors and site.sitecontributors arrays
       site.corecontributors = contributors('bitcoin/bitcoin',site.config['aliases'])
       site.sitecontributors = contributors('bitcoin/bitcoin.org',site.config['aliases'])
+
     end
 
   end

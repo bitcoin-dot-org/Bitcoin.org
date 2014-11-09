@@ -43,6 +43,13 @@ module Jekyll
 
   class ReleasePageGenerator < Generator
     def generate(site)
+
+      #Do nothing if plugin is disabled
+      if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('releases').nil?
+        print 'Releases disabled' + "\n"
+        return
+      end
+
       #generate each release based on templates
       Dir.foreach('_releases') do |file|
         next if file == '.' or file == '..'
