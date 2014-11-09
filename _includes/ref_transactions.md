@@ -319,8 +319,8 @@ has the following format.
 | 32       | hash (null)        | char[32]             | A 32-byte null, as a coinbase has no previous outpoint.
 | 4        | index (UINT32_MAX) | uint32_t             | 0xffffffff, as a coinbase has no previous outpoint.
 | *Varies* | script bytes       | compactSize uint     | The number of bytes in the coinbase script, up to a maximum of 100 bytes.
-| *Varies* (4) | height         | script               | The block height of this block as required by BIP34.  Uses script language: starts with a data-pushing op code that indicates how many bytes to push to the stack followed by the block height as a little-endian unsigned integer.  This script must be as short as possible, otherwise it may be rejected.<br/><br/>  The data-pushing op code will be 0x03 and the total size four bytes until block 16,777,216 about 300 years from now.
-| *Varies* | coinbase script    | *None*               | Arbitrary data not exceeding 100 bytes minus the (4) height bytes.  Miners commonly place an extra nonce in this field to update the block header merkle root during hashing.
+| *Varies* (4) | height         | script               | The [block height][]{:#term-coinbase-block-height}{:.term} of this block as required by BIP34.  Uses script language: starts with a data-pushing op code that indicates how many bytes to push to the stack followed by the block height as a little-endian unsigned integer.  This script must be as short as possible, otherwise it may be rejected.<br/><br/>  The data-pushing op code will be 0x03 and the total size four bytes until block 16,777,216 about 300 years from now.
+| *Varies* | coinbase script    | *None*               | The [coinbase field][]{:#term-coinbase-field}{:.term}: Arbitrary data not exceeding 100 bytes minus the (4) height bytes.  Miners commonly place an extra nonce in this field to update the block header merkle root during hashing.
 | 4        | sequence           | uint32_t             | Sequence number; see [sequence number][].
 
 Most (but not all) blocks prior to block height 227,836 used block
