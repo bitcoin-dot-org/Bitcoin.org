@@ -4,7 +4,7 @@ es:
     pagetitle: "Acerca de bitcoin.org"
     pagedesc: "Bitcoin.org está dedicado a ayudar a Bitcoin a desarrollarse de forma sostenible."
     own: "¿Quién es el dueño de bitcoin.org?"
-    owntxt: "Bitcoin.org es el dominio original utilizado para la primera página web de Bitcoin. Fue registrado y sigue siendo gestionado por <a href=\"#development#\">el núcleo de desarrolladores de Bitcoin</a> y por otros miembros de la comunidad, con las aportaciones de las <a href=\"#community#\">comunidades de Bitcoin</a>. Bitcoin.org no es una página web oficial. Así como nadie es propietario de la tecnología del correo electrónico, nadie es propietario de la red Bitcoin. Por tanto, nadie puede pretender hablar en nombre de Bitcoin."
+    owntxt: "Bitcoin.org es el dominio original utilizado para la primera página web de Bitcoin. Fue registrado y sigue siendo gestionado por <a href=\"#development#\">los desarrolladores del núcleo de Bitcoin</a> y por otros miembros de la comunidad, con las aportaciones de las <a href=\"#community#\">comunidades de Bitcoin</a>. Bitcoin.org no es una página web oficial. Así como nadie es propietario de la tecnología del correo electrónico, nadie es propietario de la red Bitcoin. Por tanto, nadie puede pretender hablar en nombre de Bitcoin."
     control: "Entonces... quién controla Bitcoin?"
     controltxt: "Bitcoin es controlado por todos los usuarios de Bitcoin alrededor del mundo. Los desarrolladores están mejorando el software pero no pueden forzar un cambio en las reglas del protocolo de Bitcoin porque todos los usuarios son libres de escoger el software que utilizan. Para permanecer compatibles unos con otros, los usuarios deben usar software que cumpla con las mismas reglas. Bitcoin solo puede funcionar bien con un consenso completo entre todos los usuarios. Por lo tanto, todos los usuarios y desarrolladores tienen un fuerte incentivo para adoptar y proteger este consenso."
     mission: "Misión"
@@ -151,7 +151,7 @@ es:
     checkpassvalidationspvservers: "Validación simplificada"
     checkpassvalidationspvserverstxt: "Este monedero usa SPV y servidores aleatorios desde una lista. Esto significa que se requiere poca confianza en terceros para verificar pagos. Sin embargo, no es tan seguro como un nodo completo como <a href=\"#download#\">Bitcoin Core</a>."
     checkpassvalidationservers: "Validación descentralizada"
-    checkpassvalidationserverstxt: "Este monedero se conecta con un servidor aleatorio de una lista. Esto significa que se necesita un poco de confianza en terceros a la hora de verificar pagos. No obstante, no es igual de seguro como un nodo completo como <a href=\\\"#download#\\\"> Bitcoin Corey</a>."
+    checkpassvalidationserverstxt: "Este monedero se conecta con un servidor aleatorio de una lista. Esto significa que se necesita un poco de confianza en terceros a la hora de verificar pagos. No obstante, no es igual de seguro como un nodo completo como <a href=\\\"#download#\\\"> Bitcoin Core</a>."
     checkfailvalidationcentralized: "Validación centralizada"
     checkfailvalidationcentralizedtxt: "Esta cartera se apoya en un servicio centralizado por defecto. Esto significa que se tiene que confiar que terceros no escondan ni simulen pagos."
     checkgoodtransparencydeterministic: "Transparencia completa"
@@ -465,6 +465,16 @@ es:
     pagetitle: "Aviso Legal"
     termstxt1: "Esta página web proporciona información y material de carácter general. Esta información esta destinada solamente a informar. Esta página web puede contener información que aborde cuestiones legales. La información ofrecida no debe usarse como consejo legal. No esta autorizado ni debe confiar en esta página web para recibir asesoramiento jurídico. De ninguna forma los propietarios o contribuyentes de la web son responsables de las acciones, decisiones u otros comportamientos realizados por su parte o por cualquier otra persona. Esto incluye, pero no está limitado, a razones tecnológicas o legales. Usted actúa bajo su propio riesgo en lo que concierne a los contenidos de esta página web. En caso de querer tomar acciones legales debe contactar con un abogado con licencia en el territorio en la que las solicita."
     termstxt2: "Esta página web puede contener traducciones de la versión inglesa original. Estas traducciones son proporcionadas únicamente como comodidad. En caso de existir un conflicto entre la versión inglesa y la traducción realizada, prevalecerá la versión inglesa. Si observa alguna incoherencia, por favor informe de ello en <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a>."
+  press:
+    title: "Prensa - Bitcoin"
+    pagetitle: "Sala de Prensa"
+    summary: "Encuentra entrevistados, respuestas y material de alta calidad para la prensa."
+    volunteer: "Entrevistados"
+    volunteernonprofit: "Comuníquese con <a href=\"https://bitcoinfoundation.org/contact/\"> la Fundación Bitcoin</a> o con <a href=\"#community##[community.non-profit]\"> organizaciones locales sin fines de lucro</a>."
+    volunteerpresscenter: "Encuentre más contacto potencial para la prensa en la independiente <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
+    faqmore: "Para aprender más acerca de Bitcoin, por favor visite la sección completa de <a href=\"/en/faq\">FAQ</a> o el <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
+    materialpicture: "Imágenes"
+    materialpicturemore: "Mostrar más imágenes..."
   protect-your-privacy:
     title: "Proteja su privacidad - Bitcoin"
     pagetitle: "Proteja su privacidad"
@@ -628,11 +638,12 @@ es:
     menu-innovation: Innovación
     menu-intro: Introducción
     menu-legal: "Legal"
+    menu-press: "Prensa"
     menu-resources: Recursos
     menu-support-bitcoin: Participe
     menu-vocabulary: Vocabulario
     menu-you-need-to-know: "Cosas que necesita saber"
-    banner-translate: "Las traducciones para esta lengua están anticuadas. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Haga clic aquí para ayudar a traducir bitcoin.org a su idioma</a>."
+    banner-translate: "Las traducciones para este idioma están desactualizadas. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Haga clic aquí para ayudar a traducir bitcoin.org a su idioma</a>."
     footer: "Publicado bajo la <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licencia MIT</a>"
     sponsor: "Una comunidad web patrocinada por"
     getstarted: "Cómo comenzar a usar Bitcoin"
@@ -651,6 +662,7 @@ es:
     how-it-works: como-funciona
     innovation: innovacion
     legal: legal
+    press: prensa
     protect-your-privacy: proteja-su-privacidad
     resources: recursos
     secure-your-wallet: asegure-su-monedero
