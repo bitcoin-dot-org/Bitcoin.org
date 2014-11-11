@@ -135,14 +135,14 @@ him thousands of satoshis in transaction fees, so Alice suggests they use a
 [micropayment channel][]{:#term-micropayment-channel}{:.term}.
 
 Bob asks Alice for her public key and then creates two transactions.
-The first transaction pays 100 millibits to a P2SH output whose
+The first transaction pays 100 millibitcoins to a P2SH output whose
 2-of-2 multisig redeem script requires signatures from both Alice and Bob.
 This is the bond transaction.
-Broadcasting this transaction would let Alice hold the millibits
+Broadcasting this transaction would let Alice hold the millibitcoins
 hostage, so Bob keeps this transaction private for now and creates a
 second transaction.
 
-The second transaction spends all of the first transaction's millibits
+The second transaction spends all of the first transaction's millibitcoins
 (minus a transaction fee) back to Bob after a 24 hour delay enforced
 by locktime. This is the refund transaction. Bob can't sign the refund transaction by himself, so he gives
 it to Alice to sign, as shown in the
@@ -155,14 +155,14 @@ future, signs it, and gives a copy of it back to Bob. She then asks Bob
 for the bond transaction and checks that the refund transaction spends
 the output of the bond transaction. She can now broadcast the bond
 transaction to the network to ensure Bob has to wait for the time lock
-to expire before further spending his millibits. Bob hasn't actually
+to expire before further spending his millibitcoins. Bob hasn't actually
 spent anything so far, except possibly a small transaction fee, and
 he'll be able to broadcast the refund transaction in 24 hours for a
 full refund.
 
-Now, when Alice does some work worth 1 millibit, she asks Bob to create
+Now, when Alice does some work worth 1 millibitcoin, she asks Bob to create
 and sign a new version of the refund transaction.  Version two of the
-transaction spends 1 millibit to Alice and the other 99 back to Bob; it does
+transaction spends 1 millibitcoin to Alice and the other 99 back to Bob; it does
 not have a locktime, so Alice can sign it and spend it whenever she
 wants.  (But she doesn't do that immediately.)
 
@@ -181,7 +181,7 @@ near the time lock expiry, she could be cheated out of her payment.
 Transaction malleability, discussed above in the Transactions section,
 is another reason to limit the value of micropayment channels.
 If someone uses transaction malleability to break the link between the
-two transactions, Alice could hold Bob's 100 millibits hostage even if she
+two transactions, Alice could hold Bob's 100 millibitcoins hostage even if she
 hadn't done any work.
 
 For larger payments, Bitcoin transaction fees are very low as a
@@ -223,7 +223,7 @@ of them can steal the others' satoshis.
 ![Example CoinJoin Transaction](/img/dev/en-coinjoin.svg)
 
 Each contributor looks through their collection of Unspent Transaction
-Outputs (UTXOs) for 100 millibits they can spend. They then each generate
+Outputs (UTXOs) for 100 millibitcoins they can spend. They then each generate
 a brand new public key and give UTXO details and pubkey hashes to the
 facilitator.  In this case, the facilitator is AnonGirl; she creates
 a transaction spending each of the UTXOs to three equally-sized outputs.
@@ -233,7 +233,7 @@ AnonGirl then signs her inputs using `SIGHASH_ALL` to ensure nobody can
 change the input or output details.  She gives the partially-signed
 transaction to Nemo who signs his inputs the same way and passes it
 to Neminem, who also signs it the same way.  Neminem then broadcasts
-the transaction to the peer-to-peer network, mixing all of the millibits in
+the transaction to the peer-to-peer network, mixing all of the millibitcoins in
 a single transaction.
 
 As you can see in the illustration, there's no way for anyone besides

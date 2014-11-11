@@ -325,7 +325,7 @@ en:
     earlyadopter: "Doesn't Bitcoin unfairly benefit early adopters?"
     earlyadoptertxt1: "Some early adopters have large numbers of bitcoins because they took risks and invested time and resources in an unproven technology that was hardly used by anyone and that was much harder to secure properly. Many early adopters spent large numbers of bitcoins quite a few times before they became valuable or bought only small amounts and didn't make huge gains. There is no guarantee that the price of a bitcoin will increase or drop. This is very similar to investing in an early startup that can either gain value through its usefulness and popularity, or just never break through. Bitcoin is still in its infancy, and it has been designed with a very long-term view; it is hard to imagine how it could be less biased towards early adopters, and today's users may or may not be the early adopters of tomorrow."
     finitelimitation: "Won't the finite amount of bitcoins be a limitation?"
-    finitelimitationtxt1: "Bitcoin is unique in that only 21 million bitcoins will ever be created. However, this will never be a limitation because bitcoins can be divided up to 8 decimal places ( 0.000 000 01 BTC ) and potentially even smaller units if that is ever required in the future. As the average transaction size decreases, transactions can be denominated in sub-units of a bitcoin, such as millibitcoins ( 1 mBTC or 0.001 BTC )."
+    finitelimitationtxt1: "Bitcoin is unique in that only 21 million bitcoins will ever be created. However, this will never be a limitation because transactions can be denominated in smaller sub-units of a bitcoin, such as bits - there are 1,000,000 bits in 1 bitcoin. Bitcoins can be divided up to 8 decimal places (0.000 000 01) and potentially even smaller units if that is ever required in the future as the average transaction size decreases."
     deflationaryspiral: "Won't Bitcoin fall in a deflationary spiral?"
     deflationaryspiraltxt1: "The deflationary spiral theory says that if prices are expected to fall, people will move purchases into the future in order to benefit from the lower prices. That fall in demand will in turn cause merchants to lower their prices to try and stimulate demand, making the problem worse and leading to an economic depression."
     deflationaryspiraltxt2: "Although this theory is a popular way to justify inflation amongst central bankers, it does not appear to always hold true and is considered controversial amongst economists. Consumer electronics is one example of a market where prices constantly fall but which is not in depression. Similarly, the value of bitcoins has risen over time and yet the size of the Bitcoin economy has also grown dramatically along with it. Because both the value of the currency and the size of its economy started at zero in 2009, Bitcoin is a counterexample to the theory showing that it must sometimes be wrong."
@@ -580,6 +580,8 @@ en:
     table: "Table of contents"
     address: "Address"
     addresstxt: "A Bitcoin address is <b>similar to a physical address or an email</b>. It is the only information you need to provide for someone to pay you with Bitcoin. An important difference, however, is that each address should only be used for a single transaction."
+    bit: "Bit"
+    bittxt: "Bit is a common unit used to designate a sub-unit of a bitcoin - 1,000,000 bits is equal to 1 bitcoin (BTC or B⃦). This unit is usually more convenient for pricing tips, goods and services."
     bitcoin: "Bitcoin"
     bitcointxt: "Bitcoin - with capitalization, is used when describing the concept of Bitcoin, or the entire network itself. e.g. \"I was learning about the Bitcoin protocol today.\"<br>bitcoin - without capitalization, is used to describe bitcoins as a unit of account. e.g. \"I sent ten bitcoins today.\"; it is also often abbreviated BTC or XBT."
     blockchain: "Block Chain"
@@ -587,7 +589,7 @@ en:
     block: "Block"
     blocktxt: "A block is a <b>record in the block chain that contains and confirms many waiting transactions</b>. Roughly every 10 minutes, on average, a new block including transactions is appended to the <a href=\"#[vocabulary.blockchain]\">block chain</a> through <a href=\"#[vocabulary.mining]\">mining</a>."
     btc: "BTC"
-    btctxt: "BTC is the common unit of Bitcoin currency. It can be used in a similar way to USD for US dollar instead of B⃦ or $."
+    btctxt: "BTC is a common unit used to designate one bitcoin (B⃦)."
     confirmation: "Confirmation"
     confirmationtxt: "Confirmation means that a transaction has been <b>processed by the network and is highly unlikely to be reversed</b>. Transactions receive a confirmation when they are included in a <a href=\"#vocabulary##[vocabulary.block]\">block</a> and for each subsequent block. Even a single confirmation can be considered secure for low value transactions, although for larger amounts like 1000 US$, it makes sense to wait for 6 confirmations or more. Each confirmation <i>exponentially</i> decreases the risk of a reversed transaction."
     cryptography: "Cryptography"
@@ -674,6 +676,7 @@ en:
       non-profit: non-profit
     vocabulary:
       address: address
+      bit: bit
       bitcoin: bitcoin
       blockchain: block-chain
       block: block
