@@ -69,7 +69,7 @@
 [message]: /en/developer-guide#term-message "A parameter of bitcoin: URIs which allows the receiver to optionally specify a message to the spender"
 [merkle root]: /en/developer-guide#term-merkle-root "The root node of a merkle tree descended from all the hashed pairs in the tree"
 [merkle tree]: /en/developer-guide#term-merkle-tree "A tree constructed by hashing paired data, then pairing and hashing the results until a single hash remains, the merkle root"
-[millibitcoins]: /en/developer-guide#term-millibitcoins "0.001 bitcoins (1,000 bits or 100,000 satoshis)"
+[millibitcoins]: /en/developer-guide#term-millibitcoins "0.001 bitcoins (100,000 satoshis)"
 [mine]: /en/developer-guide#term-miner "Creating Bitcoin blocks which solve proof-of-work puzzles in exchange for block rewards and transaction fees"
 [miner]: /en/developer-guide#term-miner "Creators of Bitcoin blocks who solve proof-of-work puzzles in exchange for block rewards and transaction fees"
 [miners]: /en/developer-guide#term-miner "Creators of Bitcoin blocks who solve proof-of-work puzzles in exchange for block rewards and transaction fees"
