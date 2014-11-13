@@ -20,7 +20,7 @@ wallets:
         - linux
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkgoodvalidationfullnode"
+          decentralization: "checkgooddecentralizefullnode"
           transparency: "checkgoodtransparencydeterministic"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkgoodprivacyimproved"
@@ -45,7 +45,7 @@ wallets:
         - linux
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationspvp2p"
+          decentralization: "checkpassdecentralizespv"
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkfailprivacyweak"
@@ -70,7 +70,7 @@ wallets:
         - linux
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkgoodvalidationfullnode"
+          decentralization: "checkgooddecentralizefullnode"
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkgoodprivacyimproved"
@@ -95,7 +95,7 @@ wallets:
         - linux
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationspvservers"
+          decentralization: "checkpassdecentralizeservers"
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkpassprivacybasic"
@@ -144,7 +144,7 @@ wallets:
         - blackberry
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationspvp2p"
+          decentralization: "checkpassdecentralizespv"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
@@ -162,7 +162,7 @@ wallets:
         - blackberry
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationspvp2p"
+          decentralization: "checkpassdecentralizespv"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
@@ -180,7 +180,7 @@ wallets:
         - blackberry
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationspvp2p"
+          decentralization: "checkpassdecentralizespv"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkfailprivacyweak"
@@ -191,7 +191,7 @@ wallets:
 - kncwallet:
     title: "KnC Wallet"
     titleshort: "KnC<br>Wallet"
-    compat: "mobile android"
+    compat: "mobile android ios"
     level: 2
     platform:
       mobile:
@@ -201,15 +201,33 @@ wallets:
         screenshot: "kncwalletandroid.png"
         os:
         - android
+        - ios
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationspvp2p"
+          decentralization: "checkpassdecentralizespv"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkfailprivacyweak"
         privacycheck:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      ios:
+        text: "walletkncwallet"
+        link: "https://kncwallet.com/"
+        source: "https://github.com/kncgroup/iOSWallet"
+        screenshot: "kncwalletiphone.png"
+        os:
+        - ios
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkfailtransparencynew"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       android:
         text: "walletkncwallet"
@@ -220,7 +238,7 @@ wallets:
         - android
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationspvp2p"
+          decentralization: "checkpassdecentralizespv"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkfailprivacyweak"
@@ -243,7 +261,7 @@ wallets:
         - ios
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationspvp2p"
+          decentralization: "checkpassdecentralizespv"
           transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
@@ -260,7 +278,7 @@ wallets:
         - ios
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationspvp2p"
+          decentralization: "checkpassdecentralizespv"
           transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
@@ -281,7 +299,7 @@ wallets:
         screenshot: "trezor.png"
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkneutralvalidationvariable"
+          decentralization: "checkneutraldecentralizevariable"
           transparency: "checkfailtransparencynew"
           environment: "checkgoodenvironmenthardware"
           privacy: "checkneutralprivacyvariable"
@@ -292,49 +310,49 @@ wallets:
     level: 3
     platform:
       mobile:
-        text: "wallethive-web"
-        link: "https://play.google.com/store/apps/details?id=com.hivewallet.hive.cordova"
-        source: "https://github.com/hivewallet/hive-ios/tree/android"
-        screenshot: "hivemobile.png"
+        text: "wallethive-android"
+        link: "https://play.google.com/store/apps/details?id=com.hivewallet.androidclient.wallet"
+        source: "https://github.com/hivewallet/hive-android"
+        screenshot: "hiveandroid.png"
         os:
         - android
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencynew"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkpassprivacybasic"
+          privacy: "checkfailprivacyweak"
         privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       android:
-        text: "wallethive-web"
-        link: "https://play.google.com/store/apps/details?id=com.hivewallet.hive.cordova"
-        source: "https://github.com/hivewallet/hive-ios/tree/android"
-        screenshot: "hivemobile.png"
+        text: "wallethive-android"
+        link: "https://play.google.com/store/apps/details?id=com.hivewallet.androidclient.wallet"
+        source: "https://github.com/hivewallet/hive-android"
+        screenshot: "hiveandroid.png"
         os:
         - android
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencynew"
+          decentralization: "checkpassdecentralizespv"
+          transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkpassprivacybasic"
+          privacy: "checkfailprivacyweak"
         privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       ios:
         text: "wallethive-web"
         link: "https://itunes.apple.com/us/app/hive-wallet/id906990301?mt=8"
         source: "https://github.com/hivewallet/hive-ios"
-        screenshot: "hivemobile.png"
+        screenshot: "hiveios.png"
         os:
         - ios
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkfailvalidationcentralized"
+          decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
@@ -351,7 +369,7 @@ wallets:
         - mac
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationspvp2p"
+          decentralization: "checkpassdecentralizespv"
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkfailprivacyweak"
@@ -367,7 +385,7 @@ wallets:
         os:
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkfailvalidationcentralized"
+          decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkpassprivacybasic"
@@ -390,7 +408,7 @@ wallets:
         - android
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkfailvalidationcentralized"
+          decentralization: "checkfaildecentralizecentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
@@ -414,7 +432,7 @@ wallets:
         - ios
         check:
           control: "checkpasscontrolhybrid"
-          decentralization: "checkfailvalidationcentralized"
+          decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
           privacy: "checkfailprivacyweak"
@@ -433,7 +451,7 @@ wallets:
         - linux
         check:
           control: "checkpasscontrolhybrid"
-          decentralization: "checkfailvalidationcentralized"
+          decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkfailprivacyweak"
@@ -449,7 +467,7 @@ wallets:
         os:
         check:
           control: "checkpasscontrolhybrid"
-          decentralization: "checkfailvalidationcentralized"
+          decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkfailprivacyweak"
@@ -467,7 +485,7 @@ wallets:
         - ios
         check:
           control: "checkpasscontrolhybrid"
-          decentralization: "checkfailvalidationcentralized"
+          decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
           privacy: "checkfailprivacyweak"
@@ -485,7 +503,7 @@ wallets:
         - ios
         check:
           control: "checkpasscontrolhybrid"
-          decentralization: "checkfailvalidationcentralized"
+          decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
           privacy: "checkfailprivacyweak"
@@ -506,7 +524,7 @@ wallets:
         os:
         check:
           control: "checkpasscontrolmulti"
-          decentralization: "checkfailvalidationcentralized"
+          decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
@@ -530,7 +548,7 @@ wallets:
         - ios
         check:
           control: "checkpasscontrolmulti"
-          decentralization: "checkpassvalidationservers"
+          decentralization: "checkpassdecentralizeservers"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
@@ -549,7 +567,7 @@ wallets:
         - linux
         check:
           control: "checkpasscontrolmulti"
-          decentralization: "checkfailvalidationcentralized"
+          decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
@@ -565,7 +583,7 @@ wallets:
         os:
         check:
           control: "checkpasscontrolmulti"
-          decentralization: "checkfailvalidationcentralized"
+          decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
@@ -583,7 +601,7 @@ wallets:
         - ios
         check:
           control: "checkpasscontrolmulti"
-          decentralization: "checkpassvalidationservers"
+          decentralization: "checkpassdecentralizeservers"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
@@ -601,7 +619,7 @@ wallets:
         - ios
         check:
           control: "checkpasscontrolmulti"
-          decentralization: "checkpassvalidationservers"
+          decentralization: "checkpassdecentralizeservers"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
@@ -622,7 +640,7 @@ wallets:
         os:
         check:
           control: "checkfailcontrolthirdparty"
-          decentralization: "checkfailvalidationcentralized"
+          decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkpassprivacybasic"
@@ -643,7 +661,7 @@ wallets:
         os:
         check:
           control: "checkfailcontrolthirdparty"
-          decentralization: "checkfailvalidationcentralized"
+          decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkpassprivacybasic"
@@ -664,7 +682,7 @@ wallets:
         os:
         check:
           control: "checkfailcontrolthirdpartyinsured"
-          decentralization: "checkfailvalidationcentralized"
+          decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkpassprivacybasic"
