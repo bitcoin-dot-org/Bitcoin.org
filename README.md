@@ -193,18 +193,16 @@ Any change in the English text can be done through a pull request on GitHub. If 
 
 ### Events
 
-Events should be placed in `_events/YYYY-MM-DD-SHORTTITLE.md` and adhere to this format:
+Events should be placed in `_events.yml` and adhere to this format:
 
 ```
----
-date: 2014-02-21
-title: "2014 Texas Bitcoin Conference"
-venue: "Circuit of the Americas™ - Technology and Conference Center"
-address: "9201 Circuit of the Americas Blvd"
-city: "Austin, TX"
-country: "United States"
-link: "http://texasbitcoinconference.com/"
----
+- date: 2014-02-21
+  title: "2014 Texas Bitcoin Conference"
+  venue: "Circuit of the Americas™ - Technology and Conference Center"
+  address: "9201 Circuit of the Americas Blvd"
+  city: "Austin, TX"
+  country: "United States"
+  link: "http://texasbitcoinconference.com/"
 ```
 
 ### Release Notes
