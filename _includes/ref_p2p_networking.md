@@ -101,7 +101,7 @@ transactions and blocks.
 ![Overview Of P2P Protocol Data Request And Reply Messages](/img/dev/en-p2p-data-messages.svg)
 
 Many of the data messages use
-[inventories][inventory]{:#term-inventory}{:.term} as unique identifiers for
+[inventories][inventory]{:#term-inventory}{:.term} as unique identifiers
 for transactions and blocks.  Inventories have a simple 36-byte
 structure:
 
@@ -167,7 +167,7 @@ starting with block one (the first block after the genesis block).
 | 4        | version              | uint32_t         | The protocol version number; the same as sent in the `version` message.
 | *Varies* | hash count           | compactSize uint | The number of header hashes provided not including the stop hash.  There is no limit except that the byte size of the entire message must be below the [`MAX_SIZE`][max_size] limit; typically from 1 to 200 hashes are sent.
 | *Varies* | block header hashes  | char[32]         | One or more block header hashes (32 bytes each) in internal byte order.  Hashes should be provided in reverse order of block height, so highest-height hashes are listed first and lowest-height hashes are listed last.
-| 32       | stop hash            | char[32]         | The header hash of the last header hash being requested; set to all zeroes to request an `inv` message with 500 header hashes (the maximum which will ever be sent as a reply to this message).
+| 32       | stop hash            | char[32]         | The header hash of the last header hash being requested; set to all zeroes to request an `inv` message with all subsequent header hashes (a maximum of 500 will be sent as a reply to this message; if you need more than 500, you will need to send another `getblocks` message with a higher-height header hash as the first entry in block header hash field).
 
 The following annotated hexdump shows a `getblocks` message.  (The
 message header has been omitted.)
@@ -250,7 +250,7 @@ b6ff0b1b1680a2862a30ca44d346d9e8
 30c31b18 ........................... Target (bits)
 fe9f0864 ........................... Nonce
 
-00 ......... Transaction Count (0x00)
+00 ................................. Transaction count (0x00)
 {% endhighlight %}
 
 {% endautocrossref %}
@@ -295,7 +295,7 @@ a055aaf1d872e94ae85e9817b2c68dc7 ... Hash (TXID)
 {% autocrossref %}
 
 The `mempool` message requests the TXIDs of transactions that the
-receiving node has verified are valid but which have not yet appeared in
+receiving node has verified as valid but which have not yet appeared in
 a block. That is, transactions which are in the receiving node's memory
 pool. The response to the `mempool` message is one or more `inv`
 messages containing the TXIDs in the usual inventory format. The
@@ -351,7 +351,7 @@ This message is part of the bloom filters described in BIP37, added in
 protocol version 70001 and implemented in Bitcoin Core 0.8.0
 (February 2013).
 
-If a filter has been previous set with the `filterload` message, the
+If a filter has been previously set with the `filterload` message, the
 `merkleblock` message will contain the TXIDs of any transactions in the
 requested block that matched the filter, as well as any parts of the
 block's merkle tree necessary to connect those transactions to the
@@ -401,7 +401,7 @@ bb3183301d7a1fb3bd174fcfa40a2b65 ... Hash #2
 Note: when fully decoded, the above `merkleblock` message provided the
 TXID for a single transaction that matched the filter. In the network
 traffic dump this output was taken from, the full transaction belonging
-to that TXID was sent immediately after the the `merkleblock` message as
+to that TXID was sent immediately after the `merkleblock` message as
 a `tx` message.
 
 **Parsing A MerkleBlock**
@@ -433,7 +433,7 @@ flag again.
 | **0** | Use the next hash as this node's TXID, but this transaction didn't match the filter.     | Use the next hash as this node's hash.  Don't process any descendant nodes.
 | **1** | Use the next hash as this node's TXID, and mark this transaction as matching the filter. | The hash needs to be computed.  Process the left child node to get its hash; process the right child node to get its hash; then concatenate the two hashes as 64 raw bytes and hash them to get this node's hash.
 
-Any time you descend into a node for the first time, evaluate the next
+Any time you begin processing a node for the first time, evaluate the next
 flag. Never use a flag at any other time.
 
 When processing a child node, you may need to process its children (the
@@ -462,7 +462,7 @@ following checks (order doesn't matter):
 * Fail if there are unused flag bits---except for the minimum number of
   bits necessary to pad up to the next full byte.
 
-* Fail unless the hash of the merkle root node is identical to the
+* Fail if the hash of the merkle root node is not identical to the
   merkle root in the block header.
 
 * Fail if the block header is invalid. Remember to ensure that the hash
@@ -498,7 +498,7 @@ match ancestor.
 | **Neither Match Nor Match Ancestor** | Append a 0 to the flag list; append this node's TXID to the hash list. | Append a 0 to the flag list; append this node's hash to the hash list.  Do not descend into its child nodes.
 | **Match Or Match Ancestor**          | Append a 1 to the flag list; append this node's TXID to the hash list. | Append a 1 to the flag list; process the left child node.  Then, if the node has a right child, process the right child.  Do not append a hash to the hash list for this node.
 
-Any time you descend into a node for the first time, a flag should be
+Any time you begin processing a node for the first time, a flag should be
 appended to the flag list. Never put a flag on the list at any other
 time, except when processing is complete to pad out the flag list to a
 byte boundary.
@@ -512,7 +512,7 @@ a match ancestor.
 After you process a TXID node or a node which is neither a TXID nor a
 match ancestor, stop processing and begin to ascend the tree until you
 find a node with a right child you haven't processed yet. Descend into
-that right child and begin processing again.
+that right child and process it.
 
 After you fully process the merkle root node according to the
 instructions in the table above, processing is complete.  Pad your flag
