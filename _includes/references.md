@@ -295,6 +295,7 @@
 
 <!-- Other external site links; alphabetical order -->
 [BFGMiner]: https://github.com/luke-jr/bfgminer
+[Bitcoin Core]: https://bitcoin.org/en/download
 [bitcoin core fee drop commit]: https://github.com/bitcoin/bitcoin/commit/6a4c196dd64da2fd33dc7ae77a8cdd3e4cf0eff1
 [Bitcoin Seeder]: https://github.com/sipa/bitcoin-seeder
 [bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation
