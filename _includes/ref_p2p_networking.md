@@ -56,11 +56,11 @@ document older protocol versions, please [open an issue][docs issue].)
 
 | Version | Implementation                      | Major Changes
 |---------|-------------------------------------|--------------
-| 70002   | Bitcoin Core 0.9.0 (March 2014)     | Added `reject` message (see [BIP61][]).  Send multiple `inv` messages in response to `mempool` message if necessary.
-| 70001   | Bitcoin Core 0.8.0 (February 2013)  | Added `filterload` message, `filteradd` message, `filterclear` message, and `merkleblock` message; also added relay field to `version` message and `MSG_FILTERED_BLOCK` inventory type to `getdata` message (see [BIP37][]).
-| 60002   | Bitcoin Core 0.7.0 (September 2012) | Added `mempool` message and extended `getdata` message to allow download of memory pool transactions (see [BIP35][]).
-| 60001   | Bitcoin Core 0.6.1 (May 2012)       | Added `pong` message (see [BIP31][]).
-| 60000   | Bitcoin Core 0.6.0 (March 2012)     | Separated protocol version from Bitcoin Core version (see [BIP14][]).
+| 70002   | Bitcoin Core 0.9.0 <br>(Mar. 2014)  | - Added `reject` message (see [BIP61][]). <br>- Send multiple `inv` messages in response to `mempool` message if necessary.
+| 70001   | Bitcoin Core 0.8.0 <br>(Feb. 2013)  | - Added `filterload` message. <br>- Added `filteradd` message. <br>- Added `filterclear` message. <br>- Added `merkleblock` message; also added relay field to `version` message and `MSG_FILTERED_BLOCK` inventory type to `getdata` message (see [BIP37][]).
+| 60002   | Bitcoin Core 0.7.0 <br>(Sep. 2012)  | - Added `mempool` message. <br>- Extended `getdata` message to allow download of memory pool transactions (see [BIP35][]).
+| 60001   | Bitcoin Core 0.6.1 <br>(May. 2012)  | - Added `pong` message (see [BIP31][]).
+| 60000   | Bitcoin Core 0.6.0 <br>(Mar. 2012)  | - Separated protocol version from Bitcoin Core version (see [BIP14][]).
 
 {% endautocrossref %}
 
