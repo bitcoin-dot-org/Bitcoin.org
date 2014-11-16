@@ -16,6 +16,7 @@ title: "Developer Guide - Bitcoin"
 
 <ul class="goback"><li><a href="/en/developer-documentation">Return To Overview</a></li></ul>
 <ul class="reportissue"><li><a href="https://github.com/bitcoin/bitcoin.org/issues/new" onmouseover="updateIssue(event);">Report An Issue</a></li></ul>
+<ul class="editsource"><li><a href="https://github.com/bitcoin/bitcoin.org/tree/master/_includes" onmouseover="updateSource(event);">Edit On GitHub</a></li></ul>
 
 </div></div>
 
@@ -29,19 +30,35 @@ of the following file. -->
 
 {% include guide_intro.md %}
 
+<div class="sourcefile" data-sourcefile="guide_block_chain.md"></div>
+
 {% include guide_block_chain.md %}
+
+<div class="sourcefile" data-sourcefile="guide_transactions.md"></div>
 
 {% include guide_transactions.md %}
 
+<div class="sourcefile" data-sourcefile="guide_contracts.md"></div>
+
 {% include guide_contracts.md %}
+
+<div class="sourcefile" data-sourcefile="guide_wallets.md"></div>
 
 {% include guide_wallets.md %}
 
+<div class="sourcefile" data-sourcefile="guide_payment_processing.md"></div>
+
 {% include guide_payment_processing.md %}
+
+<div class="sourcefile" data-sourcefile="guide_operating_modes.md"></div>
 
 {% include guide_operating_modes.md %}
 
+<div class="sourcefile" data-sourcefile="guide_p2p_network.md"></div>
+
 {% include guide_p2p_network.md %}
+
+<div class="sourcefile" data-sourcefile="guide_mining.md"></div>
 
 {% include guide_mining.md %}
 
