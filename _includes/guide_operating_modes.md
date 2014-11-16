@@ -73,7 +73,7 @@ scripts and pubkey scripts, and more. This enables P2SH transaction finding.
 
 If a user is more privacy-conscious, he can set the Bloom filter to include more false positives, at the expense of extra bandwidth used for transaction discovery. If a user is on a tight bandwidth budget, he can set the false-positive rate to low, knowing that this will allow full nodes a clear view of what transactions are associated with his client. 
 
-**Resources:** [BitcoinJ](http://bitcoinj.org), a Java implementation of Bitcoin that is based on the SPV security model and Bloom filters. Used in most Android wallets.
+**Resources:** [BitcoinJ][], a Java implementation of Bitcoin that is based on the SPV security model and Bloom filters. Used in most Android wallets.
 
 Bloom filters were standardized for use via [BIP37](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki). Review the BIP for implementation details.
 

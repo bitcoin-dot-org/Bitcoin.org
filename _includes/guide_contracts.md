@@ -188,10 +188,10 @@ For larger payments, Bitcoin transaction fees are very low as a
 percentage of the total transaction value, so it makes more sense to
 protect payments with immediately-broadcast separate transactions.
 
-**Resource:** The [bitcoinj](http://bitcoinj.org) Java library
+**Resource:** The [bitcoinj][] Java library
 provides a complete set of micropayment functions, an example
 implementation, and [a
-tutorial](https://bitcoinj.github.io/working-with-micropayments)
+tutorial][bitcoinj micropayment tutorial]
 all under an Apache license.
 
 {% endautocrossref %}

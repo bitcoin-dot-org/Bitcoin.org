@@ -330,6 +330,7 @@
 [Bitcoin Seeder]: https://github.com/sipa/bitcoin-seeder
 [bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation
 [BitcoinJ]: http://bitcoinj.github.io
+[bitcoinj micropayment tutorial]: https://bitcoinj.github.io/working-with-micropayments
 [block170]: https://www.biteasy.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
 [casascius address utility]: https://github.com/casascius/Bitcoin-Address-Utility
 [core base58.h]: https://github.com/bitcoin/bitcoin/blob/master/src/base58.h
