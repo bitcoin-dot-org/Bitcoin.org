@@ -123,7 +123,7 @@ en:
     walletbitgo: "BitGo is a multi-signature wallet offering a high level of security. Every transaction requires two signatures, protecting your bitcoins from malware and server attacks. Private keys are held by the user such that BitGo cannot access the bitcoins. It is a good choice for non technical users."
     walletgreenaddress: "GreenAddress is a user-friendly multi-signature wallet with improved security and privacy. At no time your keys are server side, not even encrypted. For security reasons, you should always use 2FA and the browser extension or Android App."
     wallettrezor: "TREZOR is a hardware wallet providing a high level of security without sacrificing convenience. Unlike cold storage, TREZOR is able to sign transactions while connected to an online device. That means spending bitcoins is secure even when using a compromised computer."
-    wallethw1: "HW.1 is a hardware wallet built upon a ST23YT66 banking smartcard platform. It keeps the user private keys safe, validates transactions, can be used as a secure prepaid card or a multisignature party. While not Open Source, it can be deterministically validated."
+    wallethw1: "HW.1 is a hardware wallet built upon a ST23YT66 banking smartcard platform. It keeps the user private keys safe, validates transactions, can be used as a secure prepaid card or a multisignature party. While not open-source, it can be deterministically validated."
     walletdownload: "Install"
     walletvisit: "Visit website"
     walletsourcecode: "Source code"
