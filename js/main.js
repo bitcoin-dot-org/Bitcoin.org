@@ -14,7 +14,7 @@ function cancelEvent(e) {
 // Cancel current event.
 // Ex. cancelEvent(event);
 if (!e) var e = window.event;
-(e.preventDefault) ? e.preventDefault(): e.returnValue = false;
+(e.preventDefault) ? e.preventDefault() : e.returnValue = false;
 }
 
 function getEventTarget(e) {
@@ -40,8 +40,7 @@ var w = getStyle(a, 'width');
 if (w.indexOf('px') !== -1) return parseInt(w.replace('px', ''));
 var p = [getStyle(a, 'padding-top'), getStyle(a, 'padding-right'), getStyle(a, 'padding-bottom'), getStyle(a, 'padding-left')];
 for (var i = 0; i < 4; i++) {
-	if (p[i].indexOf('px') !== -1) p[i] = parseInt(p[i]);
-	else p[i] = 0;
+	p[i] = (p[i].indexOf('px') !== -1) ? parseInt(p[i]) : 0;
 }
 return Math.max(0, a.offsetWidth - p[1] - p[3]);
 }
@@ -53,8 +52,7 @@ var h = getStyle(a, 'height');
 if (h.indexOf('px') !== -1) return parseInt(h.replace('px', ''));
 var p = [getStyle(a, 'padding-top'), getStyle(a, 'padding-right'), getStyle(a, 'padding-bottom'), getStyle(a, 'padding-left')];
 for (var i = 0; i < 4; i++) {
-	if (p[i].indexOf('px') !== -1) p[i] = parseInt(p[i]);
-	else p[i] = 0;
+	p[i] = (p[i].indexOf('px') !== -1) ? parseInt(p[i]) : 0;
 }
 return Math.max(0, a.offsetHeight - p[0] - p[2]);
 }
@@ -83,22 +81,22 @@ return b;
 
 function getPageYOffset() {
 // Return the integer value for the vertical position of the scroll bar.
-return (window.pageYOffset) ? window.pageYOffset : document.documentElement.scrollTop;
+return window.pageYOffset || document.documentElement.scrollTop;
 }
 
 function getPageXOffset() {
 // Return the integer value for the horizontal position of the scroll bar.
-return (window.pageXOffset) ? window.pageXOffset : document.documentElement.scrollLeft;
+return window.pageXOffset || document.documentElement.scrollLeft;
 }
 
 function getWindowY() {
 // Return the integer value for the browser window height.
-return (window.innerHeight) ? window.innerHeight : document.documentElement.clientHeight;
+return window.innerHeight || document.documentElement.clientHeight;
 }
 
 function getWindowX() {
 // Return the integer value for the browser window width.
-return (window.innerWidth) ? window.innerWidth : document.documentElement.clientWidth;
+return window.innerWidth || document.documentElement.clientWidth;
 }
 
 function isMobile() {
@@ -195,13 +193,7 @@ function mobileMenuShow(e) {
 var mm = document.getElementById('menusimple');
 var ml = document.getElementById('langselect');
 var t = document.getElementById('menumobile');
-if (mm.style.display == 'block') {
-	mm.style.display = '';
-	ml.style.display = '';
-} else {
-	mm.style.display = 'block';
-	ml.style.display = 'block';
-}
+mm.style.display = ml.style.display = (mm.style.display == 'block') ? '' : 'block';
 t.parentNode.removeChild(t);
 cancelEvent(e);
 }
@@ -257,8 +249,7 @@ pp.style.height = 'auto';
 p.parentNode.appendChild(pp);
 var nhe = getHeight(pp);
 pp.parentNode.removeChild(pp);
-if (p.style.height != '0px' && p.style.height != '') p.style.height = '0px';
-else p.style.height = nhe + 'px';
+p.style.height = (p.style.height != '0px' && p.style.height != '') ? '0px' : nhe + 'px';
 cancelEvent(e);
 }
 
@@ -272,8 +263,7 @@ pp.style.height = 'auto';
 p.parentNode.appendChild(pp);
 var nhe = getHeight(pp);
 pp.parentNode.removeChild(pp);
-if (p.style.height != '0px' && p.style.height != '') p.style.height = '0px';
-else p.style.height = nhe + 'px';
+p.style.height = (p.style.height != '0px' && p.style.height != '') ? '0px' : nhe + 'px';
 t.style.display = 'none';
 cancelEvent(e);
 }
