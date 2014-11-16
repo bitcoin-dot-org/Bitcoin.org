@@ -1,0 +1,140 @@
+digraph merkleblock {
+
+//size="6.25,2.22";
+size="6.25";
+rankdir=BT
+nodesep=0.1
+splines="false"
+
+edge [ penwidth = 1.75, fontname="Sans" ]
+node [ penwidth = 1.75, shape = "box", fontname="Sans", ]
+graph [ penwidth = 1.75, fontname="Sans", fontsize = 16 ]
+
+subgraph cluster_flags {
+    node [ label = "", width=0.2, height=0.2, fontsize = 14, shape = "none" ];
+    graph [ penwidth = 0 ];
+
+    flag8 [ label = "0" ];
+    flag7 [ label = "0" ];
+    flag6 [ label = "0" ];
+    flag5 [ label = "1", style = "filled" ];
+    flag4 [ label = "1", style = "invis" ];
+    flag3 [ label = "1", style = "invis" ];
+    flag2 [ label = "0", style = "invis" ];
+    flag1 [ label = "1", style = "invis" ];
+    flag_label [ label = "Flags", shape = "none", fontsize = 16 ];
+}
+
+subgraph cluster_hashes {
+    graph [ penwidth = 0 ];
+    node [ shape = "none" ];
+
+    hash4 [ label = "H4" ];
+    hash3 [ label = "H3" ];
+    hash2 [ label = "H2", style = "filled" ];
+    hash1 [ label = "H1", style = "invis" ];
+    hash_label [ label = "Hashes", shape = "none", fontsize = 16 ];
+}
+
+hash_label -> flag_label [ style = "invis" ];
+
+subgraph cluster_legend {
+    node [ label = "", fontsize = 18 ];
+    graph [ penwidth = 0 ];
+    edge [ style = "invis" ];
+    ranksep = 3;
+
+
+    {
+        node [ shape = "none" ];
+        matched_filter_label [ label = "TXID\nFilter\nMatch" ];
+        hash_from_list_label [ label = "Hash\nFrom\nList" ];
+        hash_computed_label [ label = "Hash\nCom-\nputed" ];
+        waiting_label [ label = "Wait\nFor\nChild" ];
+    }
+
+    matched_filter [ penwidth = 4, style = "diagonals", bgcolor = grey ];
+    hash_from_list [ label = "H1", style = "diagonals" ];
+    hash_computed [ label = "H()" ];
+    waiting [ label = "↓" ];
+
+    pre_legend_label [ label = "", style = "invis", width=0, height=0 ];
+    legend_label [ label = "", style = "invis", width=0, height=0 ];
+    pre_legend_label -> legend_label [ style = "invis" ];
+
+    waiting_label -> waiting;
+    hash_from_list_label -> hash_from_list;
+    hash_computed_label -> hash_computed;
+    matched_filter_label -> matched_filter;
+
+    labelloc = b;
+    label = "Legend"
+}
+
+legend_label -> hash_label [ style = "invis" ];
+
+subgraph cluster_tree {
+    edge [ dir = "none" ];
+    node [ label = "", fontsize = 16 ];
+    graph [ penwidth = 0 ];
+
+    {
+    root_row [ shape = "none" ];
+    row1 [ shape = "none", label = "Non-TXID\nNodes" ];
+    row2 [ shape = "none", style = "invis", width = 1.2 ];
+    txid_row [ label = "TXID\nNodes", shape = "none" ];
+
+    row2 -> row1 [ dir = "back" ];
+    row1 -> root_row [ dir = ""];
+    txid_row -> row2 [ style = "invis" ];
+    }
+
+    G;
+    F;
+    E [ penwidth = 4, style = "filled,diagonals", label = "H2" ];
+    D;
+    C;
+    B;
+    A;
+
+    EF [ label = "↓" ];
+    EFG2 [ label = "↓" ];
+    ABCD [ style = "diagonals", label = "H1" ];
+    ROOT [ label = "↓" ];
+
+    A -> AB;
+    B -> AB;
+    C -> CD;
+    D -> CD;
+    E -> EF [ dir = "back" ];
+    F -> EF [ dir = "back" ];
+    G -> G2;
+
+    AB -> A [ constraint = false, style = "invis" ];
+    AB -> B [ constraint = false, style = "invis" ];
+    CD -> C [ constraint = false, style = "invis" ];
+    CD -> D [ constraint = false, style = "invis" ];
+    EF -> E [ constraint = false, dir = "back" ];
+    EF -> F [ constraint = false, style = "invis" ];
+    G2 -> G [ constraint = false, style = "invis" ];
+
+    AB -> ABCD;
+    CD -> ABCD;
+    EF -> EFG2 [ dir = "back" ];
+    G2 -> EFG2;
+
+    ABCD -> AB [ constraint = false, style = "invis" ];
+    ABCD -> CD [ constraint = false, style = "invis" ];
+    EFG2 -> EF [ constraint = false, style = "invis" ];
+    EFG2 -> G2 [ constraint = false, style = "invis" ];
+
+    ABCD -> ROOT [ dir = "back" ];
+    EFG2 -> ROOT [ dir = "back" ];
+
+    ROOT -> ABCD [ constraint = false, dir = "back" ];
+    ROOT -> EFG2 [ constraint = false, style = "invis" ];
+
+}
+
+//label = "Parsing A MerkleBlock Message"
+}

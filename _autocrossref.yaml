@@ -25,6 +25,7 @@ block chain:
 block-chain: block chain
 block header:
 block height:
+'`block` message': block message
 block reward:
 block time:
 block version:
@@ -80,11 +81,15 @@ extended public key:
 fiat:
 fork:
 forks: fork
+'`getblocks` message': getblocks message
+'`getdata` message': getdata message
+'`getheaders` message': getheaders message
 genesis block:
 hard fork:
 hard forks: hard fork
 hardened extended private key:
 HD protocol:
+'`headers` message': headers message
 high-priority transaction: high-priority transactions
 high-priority transactions:
 inputs: input
@@ -92,8 +97,11 @@ input:
 intermediate certificate:
 intermediate certificates: intermediate certificate
 internal byte order:
+'`inv` message': inv message
 IP address: DO NOT AUTOCROSSREF
 IP addresses: DO NOT AUTOCROSSREF
+inventories: inventory
+inventory:
 key index:
 key pair:
 '`label`': label
@@ -106,8 +114,13 @@ man-in-the-middle:
 master chain code:
 master private key:
 '`memo`': pp memo
+'`mempool` message': mempool message
 '`message`': message
+message header:
+message payload:
 '`merchant_data`': pp merchant data
+merkleblock: merkleblock message
+'`merkleblock` message': merkleblock message
 merkle root:
 merkle tree:
 merge:
@@ -121,9 +134,13 @@ minimum fee:
 mining: mine
 millibitcoin: millibitcoins
 millibitcoins:
+'`MSG_BLOCK`': msg_block
+'`MSG_FILTERED_BLOCK`': msg_filtered_block
+'`MSG_TX`': msg_tx
 multisig:
 nbits:
 network:
+'`notfound` message': notfound message
 null data: 
 '`op_checkmultisig`': op_checkmultisig
 '`op_checksig`': op_checksig
@@ -153,6 +170,7 @@ PaymentRequest:
 PaymentRequests: paymentrequest
 peer:
 peers: peer
+peer-to-peer: network
 peer-to-peer network: network
 pki:
 '`pki_type`': pp pki type
@@ -163,6 +181,11 @@ proof of work:
 proof-of-work: proof of work
 protocol buffer: protobuf
 protocol buffers: protobuf
+protocol version 60000: section protocol versions
+protocol version 60001: section protocol versions
+protocol version 60002: section protocol versions
+protocol version 70001: section protocol versions
+protocol version 70002: section protocol versions
 pubkey: public key
 pubkey hash:
 pubkey hashes: pubkey hash
@@ -219,6 +242,7 @@ standard script:
 standard scripts: standard script
 standard transaction: standard script
 standard transactions: standard script
+start string:
 target:
 testnet:
 #transaction -- Recommend we don't autocrossref this; it occurs too often
@@ -228,6 +252,7 @@ transaction malleability:
 transaction object format:
 transaction version number:
 '`transactions`': pp transactions
+'`tx` message': tx message
 txid:
 txids: txid
 unconfirmed:
@@ -338,5 +363,10 @@ CVE-2012-2459:
 '`walletpassphrase`': rpc walletpassphrase
 '`walletpassphrasechange`': rpc walletpassphrasechange
 
-Bitcoin Core 0.9.3:
+## Versions of Bitcoin Core (linked to Bitcoin.org release notes)
+Bitcoin Core 0.6.0:
+Bitcoin Core 0.6.1:
 Bitcoin Core 0.7.0:
+Bitcoin Core 0.8.0:
+Bitcoin Core 0.9.0:
+Bitcoin Core 0.9.3:

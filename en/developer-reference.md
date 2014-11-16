@@ -30,6 +30,8 @@ title: "Developer Reference - Bitcoin"
 
 {% include ref_wallets.md %}
 
+{% include ref_p2p_networking.md %}
+
 ## Bitcoin Core APIs
 
 <!-- TODO, Relevant links:

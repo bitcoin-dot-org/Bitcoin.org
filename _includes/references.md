@@ -12,6 +12,7 @@
 [block chain]: /en/developer-guide#block-chain "A chain of blocks with each block linking to the block that preceded; the most-difficult-to-recreate chain is The Block Chain"
 [block header]: /en/developer-reference#block-headers "An 80-byte header belonging to a single block which is hashed repeatedly to create proof of work"
 [block height]: /en/developer-guide#term-block-height "The number of chained blocks preceding this block"
+[block message]: /en/developer-reference#block "The P2P network message which sends a serialized block"
 [block reward]: /en/developer-reference#term-block-reward "New satoshis given to a miner for creating one of the first 6,929,999 blocks"
 [block time]: /en/developer-reference#term-block-time "The time field in the block header"
 [block version]: /en/developer-reference#term-block-version "The version field in the block header"
@@ -46,14 +47,20 @@
 [fiat]: /en/developer-guide#term-fiat "National currencies such as the dollar or euro"
 [fork]: /en/developer-guide#term-fork "When two or more blocks have the same block height, forking the block chain."
 [genesis block]: /en/developer-guide#term-genesis-block "The first block created; also called block 0"
+[getblocks message]: /en/developer-reference#getblocks "A P2P protocol message used to request an inv message containing a range of block header hashes"
+[getdata message]: /en/developer-reference#getdata "A P2P protocol message used to request one or more transactions, blocks, or merkleblocks"
+[getheaders message]: /en/developer-reference#getheaders "A P2P protocol message used to request a range of block headers"
 [hard fork]: /en/developer-guide#term-hard-fork "A permanent divergence in the the block chain, commonly occurs when non-upgraded nodes can't validate blocks created by upgraded nodes following newer consensus rules."
 [hardened extended private key]: /en/developer-guide#term-hardened-extended-private-key "A private key whose corresponding public key cannot derive child keys"
 [HD protocol]: /en/developer-guide#term-hd-protocol "The Hierarchical Deterministic (HD) key creation and transfer protocol"
+[headers message]: /en/developer-reference#headers "A P2P protocol message containing one or more block headers"
 [high-priority transactions]: /en/developer-guide#term-high-priority-transactions "Transactions which don't pay a transaction fee; only transactions spending long-idle outputs are eligible"
 [input]: /en/developer-guide#term-input "The input to a transaction linking to the output of a previous transaction which permits spending of satoshis"
 [inputs]: /en/developer-guide#term-input "The input to a transaction linking to the output of a previous transaction which permits spending of satoshis"
 [intermediate certificate]: /en/developer-examples#term-intermediate-certificate "A intermediate certificate authority certificate which helps connect a leaf (receiver) certificate to a root certificate authority"
 [internal byte order]: /en/developer-reference#hash-byte-order "The standard order in which hash digests are displayed as strings---the same format used in blocks"
+[inv message]: /en/developer-reference#inv "A P2P protocol message used to send inventories of transactions and blocks known to the transmitting peer"
+[inventory]: /en/developer-reference#term-inventory "A data type identifier and a hash; used to identify transactions and blocks available for download through the P2P network."
 [key index]: /en/developer-guide#term-key-index "An index number used in the HD wallet formula to generate child keys from a parent key"
 [key pair]: /en/developer-guide#term-key-pair "A private key and its derived public key"
 [label]: /en/developer-guide#term-label "The label parameter of a bitcoin: URI which provides the spender with the receiver's name (unauthenticated)"
@@ -63,19 +70,26 @@
 [mainnet]: /en/developer-examples#term-mainnet "The Bitcoin main network used to transfer satoshis (compare to testnet, the test network)"
 [master chain code]: /en/developer-guide#term-master-chain-code "The chain code derived from the root seed"
 [master private key]: /en/developer-guide#term-master-private-key "A private key derived from the root seed"
+[mempool message]: /en/developer-reference#mempool "A P2P protocol message used to request one or more inv messages with currently-unconfirmed transactions"
 [merge]: /en/developer-guide#term-merge "Spending, in the same transaction, multiple outputs which can be traced back to different previous spenders, leaking information about how many satoshis you control"
 [merge avoidance]: /en/developer-guide#term-merge-avoidance "A strategy for selecting which outputs to spend that avoids merging outputs with different histories that could leak private information"
-[message]: /en/developer-guide#term-message "A parameter of bitcoin: URIs which allows the receiver to optionally specify a message to the spender"
 [merkle root]: /en/developer-guide#term-merkle-root "The root node of a merkle tree descended from all the hashed pairs in the tree"
 [merkle tree]: /en/developer-guide#term-merkle-tree "A tree constructed by hashing paired data, then pairing and hashing the results until a single hash remains, the merkle root"
+[merkleblock message]: /en/developer-reference#merkleblock "A P2P protocol message used to request a filtered block useful for SPV proofs"
+[message]: /en/developer-guide#term-message "A parameter of bitcoin: URIs which allows the receiver to optionally specify a message to the spender"
+[message header]: /en/developer-reference#message-headers "The four header fields prefixed to all messages on the P2P network"
 [millibitcoins]: /en/developer-guide#term-millibitcoins "0.001 bitcoins (100,000 satoshis)"
 [mine]: /en/developer-guide#term-miner "Creating Bitcoin blocks which solve proof-of-work puzzles in exchange for block rewards and transaction fees"
 [miner]: /en/developer-guide#term-miner "Creators of Bitcoin blocks who solve proof-of-work puzzles in exchange for block rewards and transaction fees"
 [miners]: /en/developer-guide#term-miner "Creators of Bitcoin blocks who solve proof-of-work puzzles in exchange for block rewards and transaction fees"
-[minimum fee]: /en/developer-guide#term-minimum-fee "The minimum fee a transaction must pay in must circumstances to be mined or broadcast by peers across the network"
+[minimum fee]: /en/developer-guide#term-minimum-fee "The minimum fee a transaction must pay in most circumstances to be mined or broadcast by peers across the network"
+[msg_tx]: /en/developer-reference#term-msg_tx "The TXID data type identifier of an inventory on the P2P network"
+[msg_block]: /en/developer-reference#term-msg_block "The block header hash data type identifier of an inventory on the P2P network"
+[msg_filtered_block]: /en/developer-reference#term-msg_block "An alternative to the block header hash data type identifier of an inventory on the P2P network used to request a merkleblock"
 [multisig]: /en/developer-guide#term-multisig "An pubkey script using OP_CHECKMULTISIG to check for multiple signatures"
 [nbits]: /en/developer-reference#target-nbits "The encoded form of the target threshold as it appears in the block header"
 [network]: /en/developer-guide#term-network "The Bitcoin P2P network which broadcasts transactions and blocks"
+[notfound message]: /en/developer-reference#notfound "A P2P protocol message sent to indicate that the requested data was not available"
 [Null data]: /en/developer-guide#term-null-data "A standard transaction type which allows adding 40 bytes of arbitrary data to the block chain up to once per transaction"
 [op_checkmultisig]: /en/developer-reference#term-op-checkmultisig "Op code which returns true if one or more provided signatures (m) sign the correct parts of a transaction and match one or more provided public keys (n)"
 [op_checksig]: /en/developer-reference#term-op-checksig "Op code which returns true if a signature signs the correct parts of a transaction and matches a provided public key"
@@ -147,15 +161,17 @@
 [stack]: /en/developer-guide#term-stack "An evaluation stack used in Bitcoin's script language"
 [stale block]: /en/developer-guide#term-stale-block "Blocks which were successfully mined but which aren't included on the current valid block chain"
 [standard script]: /en/developer-guide#standard-transactions "A pubkey script which matches the IsStandard() patterns specified in Bitcoin Core---or a transaction containing only standard outputs. Only standard transactions are mined or broadcast by peers running the default Bitcoin Core software"
+[start string]: /en/developer-reference#term-start-string "Four defined bytes which start every message in the P2P protocol to allow seeking to the next message"
 [target]: /en/developer-guide#term-target "The threshold below which a block header hash must be in order for the block to be added to the block chain"
 [testnet]: /en/developer-examples#testnet "A Bitcoin-like network where the satoshis have no real-world value to allow risk-free testing"
 [transaction fee]: /en/developer-guide#term-transaction-fee "The amount remaining when all outputs are subtracted from all inputs in a transaction; the fee is paid to the miner who includes that transaction in a block"
 [transaction fees]: /en/developer-guide#term-transaction-fee "The amount remaining when all outputs are subtracted from all inputs in a transaction; the fee is paid to the miner who includes that transaction in a block"
 [transaction malleability]: /en/developer-guide#transaction-malleability "The ability of an attacker to change the transaction identifier (txid) of unconfirmed transactions, making dependent transactions invalid"
-[txid]: /en/developer-guide#term-txid "A hash of a completed transaction which allows other transactions to spend its outputs"
 [transaction]: /en/developer-guide#transactions "A transaction spending satoshis"
 [transaction version number]: /en/developer-guide#term-transaction-version-number "A version number prefixed to transactions to allow upgrading""
 [transactions]: /en/developer-guide#transactions "A transaction spending satoshis"
+[tx message]: /en/developer-reference#tx "A P2P protocol message which sends a single serialized transaction"
+[txid]: /en/developer-guide#term-txid "A hash of a completed transaction which allows other transactions to spend its outputs"
 [unconfirmed]: /en/developer-guide#term-unconfirmed-transactions "A transaction which has not yet been added to the block chain"
 [unconfirmed transactions]: /en/developer-guide#term-unconfirmed-transactions "A transaction which has not yet been added to the block chain"
 [unique addresses]: /en/developer-guide#term-unique-address "Address which are only used once to protect privacy and increase security"
@@ -244,7 +260,11 @@
 [rpc walletpassphrasechange]: /en/developer-reference#walletpassphrasechange
 
 <!-- Other internal site links; alphabetical order -->
+[Bitcoin Core 0.6.0]: /en/release/v0.6.0
+[Bitcoin Core 0.6.1]: /en/release/v0.6.1
 [Bitcoin Core 0.7.0]: /en/release/v0.7.0
+[Bitcoin Core 0.8.0]: /en/release/v0.8.0
+[Bitcoin Core 0.9.0]: /en/release/v0.9.0
 [Bitcoin Core 0.9.3]: /en/release/v0.9.3
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [bitcoinpdf]: https://bitcoin.org/bitcoin.pdf
@@ -266,8 +286,12 @@
 [RPC]: /en/developer-reference#remote-procedure-calls-rpcs
 [RPCs]: /en/developer-reference#remote-procedure-calls-rpcs
 [section detecting forks]: /en/developer-guide#detecting-forks
+[section getblocktemplate]: /en/developer-guide#getblocktemplate-rpc
 [section hash byte order]: /en/developer-reference#hash-byte-order
 [section merkle trees]: /en/developer-reference#merkle-trees
+[section merkleblock example]: /en/developer-examples#parsing-a-merkleblock
+[section protocol versions]: /en/developer-reference#protocol-versions
+[section serialized blocks]: /en/developer-reference#serialized-blocks
 [section simple raw transaction]: /en/developer-examples#simple-raw-transaction
 [section verifying payment]: /en/developer-guide#verifying-payment
 [signature script modification warning]: /en/developer-reference#signature_script_modification_warning
@@ -277,13 +301,18 @@
 
 <!-- Official reference documents (BIPs should not use zero padding:
      BIP32 not BIP0032; alphabetical order -->
+[BIP14]: https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki
 [BIP16]: https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki
 [BIP21]: https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki
 [BIP30]: https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki
+[BIP31]: https://github.com/bitcoin/bips/blob/master/bip-0031.mediawiki
 [BIP32]: https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
 [BIP34]: https://github.com/bitcoin/bips/blob/master/bip-0034.mediawiki
+[BIP35]: https://github.com/bitcoin/bips/blob/master/bip-0035.mediawiki
+[BIP37]: https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki
 [BIP39]: https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
 [BIP50]: https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki
+[BIP61]: https://github.com/bitcoin/bips/blob/master/bip-0061.mediawiki
 [BIP62]: https://github.com/bitcoin/bips/blob/master/bip-0062.mediawiki
 [BIP70]: https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki
 [BIP71]: https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki
@@ -297,12 +326,14 @@
 [BFGMiner]: https://github.com/luke-jr/bfgminer
 [Bitcoin Core]: https://bitcoin.org/en/download
 [bitcoin core fee drop commit]: https://github.com/bitcoin/bitcoin/commit/6a4c196dd64da2fd33dc7ae77a8cdd3e4cf0eff1
+[Bitcoin Core issue #2381]: https://github.com/bitcoin/bitcoin/issues/2381
 [Bitcoin Seeder]: https://github.com/sipa/bitcoin-seeder
 [bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation
 [BitcoinJ]: http://bitcoinj.github.io
 [block170]: https://www.biteasy.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
 [casascius address utility]: https://github.com/casascius/Bitcoin-Address-Utility
 [core base58.h]: https://github.com/bitcoin/bitcoin/blob/master/src/base58.h
+[core chainparams.cpp]: https://github.com/bitcoin/bitcoin/blob/master/src/chainparams.cpp
 [core git]: https://github.com/bitcoin/bitcoin
 [core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
 [core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
@@ -318,16 +349,19 @@
 [high-speed block relay network]: https://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg03189.html
 [HMAC-SHA512]: https://en.wikipedia.org/wiki/HMAC
 [HTTP longpoll]: https://en.wikipedia.org/wiki/Push_technology#Long_polling
+[IP-to-IP payment protocol]: https://en.bitcoin.it/wiki/IP_Transactions
 [irc channels]: https://en.bitcoin.it/wiki/IRC_channels
 [libblkmaker]: https://gitorious.org/bitcoin/libblkmaker
 [makeseeds script]: https://github.com/bitcoin/bitcoin/tree/master/contrib/seeds
 [man-in-the-middle]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack
 [MIME]: https://en.wikipedia.org/wiki/Internet_media_type
 [mozrootstore]: https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+[netcat]: https://en.wikipedia.org/wiki/Netcat
 [Payment Request Generator]: http://bitcoincore.org/~gavin/createpaymentrequest.php
 [Piotr Piasecki's testnet faucet]: https://tpfaucet.appspot.com/
 [prime symbol]: https://en.wikipedia.org/wiki/Prime_%28symbol%29
 [protobuf]: https://developers.google.com/protocol-buffers/
+[python-bitcoinlib]: https://github.com/petertodd/python-bitcoinlib
 [python-blkmaker]: https://gitorious.org/bitcoin/python-blkmaker
 [SHA256]: https://en.wikipedia.org/wiki/SHA-2
 [Stratum mining protocol]: http://mining.bitcoin.cz/stratum-mining
@@ -336,3 +370,7 @@
 [wiki script]: https://en.bitcoin.it/wiki/Script
 [x509]: https://en.wikipedia.org/wiki/X.509
 
+<!-- Direct links to code; link to a specific commit to prevent code
+changes from moving the referenced object, but also update links
+periodically to point to recent code. Last update: 2014-11-12 --> 
+[MAX_SIZE]: https://github.com/bitcoin/bitcoin/blob/60abd463ac2eaa8bc1d616d8c07880dc53d97211/src/serialize.h#L23

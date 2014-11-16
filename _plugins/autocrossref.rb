@@ -65,9 +65,9 @@ require 'yaml'
             (?![^\s]*<!--noref-->)  ## No subst if <!--noref--> after key
             (?!((?!<pre>).)*(<\/pre>))  ## No subst on a line with a closing pre tag. This 
                                         ## prevents matching in {% highlight %} code blocks.
-            (?![^\(]*(\.svg|\.png))  ## No subst if key inside an image name. This 
+            (?![^\(]*(\.svg|\.png|\.gif))  ## No subst if key inside an image name. This 
 		     ## simple regex has the side effect that we can't
-		     ## use .svg or .png in non-image base text; if that
+		     ## use .svg, .png, or .gif in non-image base text; if that
 		     ## becomes an issue, we can devise a more complex
 		     ## regex
             (?!\w)  ## Don't match inside words

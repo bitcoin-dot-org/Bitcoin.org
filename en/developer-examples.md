@@ -30,6 +30,8 @@ title: "Developer Examples - Bitcoin"
 
 {% include example_payment_processing.md %}
 
+{% include example_p2p_networking.md %}
+
 {% include references.md %}
 
 </div>
