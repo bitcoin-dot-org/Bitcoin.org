@@ -63,19 +63,19 @@ create a cross-site scripting (XSS) exploit. To avoid problems, please
 treat block chain and memory pool data as an arbitrary input from an
 untrusted source.
 
-<div class="sourcefile" data-sourcefile="ref_core_rpc_abcdefg.md"></div>
+<div class="sourcefile" data-sourcefile="ref_core_rpcs-abcdefg.md"></div>
 
 {% include ref_core_rpcs-abcdefg.md %}
 
-<div class="sourcefile" data-sourcefile="ref_core_rpc_hijklmn.md"></div>
+<div class="sourcefile" data-sourcefile="ref_core_rpcs-hijklmn.md"></div>
 
 {% include ref_core_rpcs-hijklmn.md %}
 
-<div class="sourcefile" data-sourcefile="ref_core_rpc_opqrst.md"></div>
+<div class="sourcefile" data-sourcefile="ref_core_rpcs-opqrst.md"></div>
 
 {% include ref_core_rpcs-opqrst.md %}
 
-<div class="sourcefile" data-sourcefile="ref_core_rpc_uvwxyz.md"></div>
+<div class="sourcefile" data-sourcefile="ref_core_rpcs-uvwxyz.md"></div>
 
 {% include ref_core_rpcs-uvwxyz.md %}
 
