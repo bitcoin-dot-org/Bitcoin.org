@@ -3222,6 +3222,10 @@ getwork [data]
 Provides a block header which can be hashed to attempt to find the next
 block, and lets a miner return a successful header.
 
+![Warning icon](/img/icon_warning.svg)
+**Warning:** `getwork` will be removed in Bitcoin Core 0.10. Use
+the `getblocktemplate` RPC instead.
+
 {% endautocrossref %}
 
 **Argument: A Header Hash**
