@@ -743,6 +743,9 @@ table td,table th{
 .toc ul.reportissue li{
 	background:url(/img/mini_ico_report.svg) no-repeat 0 3px;
 }
+.toc ul.editsource li{
+	background:url(/img/mini_ico_rev.svg) no-repeat 0 3px;
+}
 .toc a,
 .toc a:link,
 .toc a:active,
@@ -817,6 +820,11 @@ table td,table th{
 	padding:0;
 	margin:0;
 	overflow-y:visible;
+}
+.toccontent .sourcefile{
+	width:0;
+	height:0;
+	position:absolute;
 }
 
 .anchorAf{
@@ -2174,10 +2182,9 @@ h2 .rssicon{
 	.toc ul li ul li a.active:before{
 		content:"";
 	}
-	.toc ul.goback li{
-		background:none;
-	}
-	.toc ul.reportissue li{
+	.toc ul.goback li,
+	.toc ul.reportissue li,
+	.toc ul.editsource li{
 		background:none;
 	}
 	.toccontent{

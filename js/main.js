@@ -414,9 +414,34 @@ for (var i = 0, n = nodes.length; i < n; i++) {
 }
 
 function updateIssue(e) {
-// Update GitHub issue link with pre-filled with current page location.
+// Update GitHub issue link pre-filled with current page location.
 var t = getEventTarget(e);
 t.href = 'https://github.com/bitcoin/bitcoin.org/issues/new?body=' + encodeURIComponent('Location: ' + window.location.href.toString() + "\n\n");
+}
+
+function updateSource(e){
+// Update GitHub source file link pre-filled with current page location.
+if (!document.getElementsByClassName) return;
+var t = getEventTarget(e),
+    nodes = document.getElementsByClassName('sourcefile'),
+    pageoffset = getPageYOffset(),
+    windowy = getWindowY(),
+    fallback = nodes[0],
+    first = [fallback, getTop(fallback)],
+    last = [fallback, getTop(fallback)],
+    closer = [fallback, getTop(fallback)];
+// Find first, last and closer node.
+for (var i = 0, n = nodes.length; i < n; i++) {
+	var top = getTop(nodes[i]);
+	if (top < first[1]) first = [nodes[i], top];
+	if (top > last[1]) last = [nodes[i], top];
+	if (top < pageoffset + 10 && top > closer[1]) closer = [nodes[i], top];
+}
+// Set closer title to first or last title if at the top or bottom of the page.
+if (pageoffset < first[1]) closer = [first[0], first[1]];
+if (windowy + pageoffset >= getHeight(document.body)) closer = [last[0], last[1]];
+// Set updated url to source file.
+t.href = 'https://github.com/bitcoin/bitcoin.org/edit/master/_includes/' + closer[0].getAttribute('data-sourcefile');
 }
 
 function disclaimerClose(e) {
