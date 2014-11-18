@@ -37,6 +37,7 @@
 [confirmations]: /en/developer-guide#term-confirmation "The number of blocks which would need to be modified to remove or modify a transaction"
 [consensus]: /en/developer-guide#term-consensus "When several nodes (usually most nodes on the network) all have the same blocks in their locally-validated block chain."
 [consensus rules]: /en/developer-guide#term-consensus-rules "The block validation rules that full nodes follow to stay in consensus with other nodes."
+[data-pushing op code]: https://en.bitcoin.it/wiki/Script#Constants "Any op code from 0x01 to 0x4e which pushes data on to the script evaluation stack"
 [denomination]: /en/developer-guide#term-denomination "bitcoins (BTC), bitcents (cBTC), millibitcoins (mBTC), bits (uBTC, microbitcoins), or satoshis"
 [difficulty]: /en/developer-guide#term-difficulty "A number corresponding to the target threshold which indicates how difficult it will be to find the next block"
 [dns seed]: /en/developer-guide#term-dns-seed "A DNS server which returns IP addresses of full nodes on the Bitcoin network to assist in peer discovery."
@@ -48,6 +49,7 @@
 [fiat]: /en/developer-guide#term-fiat "National currencies such as the dollar or euro"
 [filteradd message]: /en/developer-reference#filteradd "A P2P protocol message used to add a data element to an existing bloom filter."
 [filterclear message]: /en/developer-reference#filterclear "A P2P protocol message used to remove an existing bloom filter."
+[filterload message]: /en/developer-reference#filterclear "A P2P protocol message used send a filter to a remote peer, requesting that they only send transactions which match the filter."
 [fork]: /en/developer-guide#term-fork "When two or more blocks have the same block height, forking the block chain."
 [genesis block]: /en/developer-guide#term-genesis-block "The first block created; also called block 0"
 [getaddr message]: /en/developer-reference#getaddr "A P2P protool message used to request an addr message containing connection information for other nodes"
@@ -105,6 +107,7 @@
 [op_hash160]: /en/developer-reference#term-op-hash160 "Operation which converts the entry below it on the stack into a RIPEMD(SHA256()) hashed version of itself"
 [op_return]: /en/developer-reference#term-op-return "Operation which terminates the script in failure"
 [op_verify]: /en/developer-reference#term-op-verify "Operation which terminates the script if the entry below it on the stack is non-true (zero)"
+[outpoint]: /en/developer-reference#term-outpoint "The structure used to refer to a particular transaction output, considing of a 32-byte TXID and a 4-byte output index number (vout)."
 [output]: /en/developer-guide#term-output "The output of a transaction which transfers value to a pubkey script"
 [output index]: /en/developer-guide#term-output-index "The sequentially-numbered index of outputs in a single transaction starting from 0"
 [P2PKH]: /en/developer-guide#term-p2pkh "A pubkey script which Pays To PubKey Hashes (P2PKH), allowing spending of satoshis to anyone with a Bitcoin address"
@@ -295,6 +298,7 @@
 [raw transaction format]: /en/developer-reference#raw-transaction-format
 [RPC]: /en/developer-reference#remote-procedure-calls-rpcs
 [RPCs]: /en/developer-reference#remote-procedure-calls-rpcs
+[section creating a bloom filter]: /en/developer-examples#creating-a-bloom-filter
 [section detecting forks]: /en/developer-guide#detecting-forks
 [section getblocktemplate]: /en/developer-guide#getblocktemplate-rpc
 [section hash byte order]: /en/developer-reference#hash-byte-order
@@ -370,6 +374,7 @@
 [irc channels]: https://en.bitcoin.it/wiki/IRC_channels
 [libblkmaker]: https://gitorious.org/bitcoin/libblkmaker
 [makeseeds script]: https://github.com/bitcoin/bitcoin/tree/master/contrib/seeds
+[murmur3]: https://en.wikipedia.org/wiki/MurmurHash
 [man-in-the-middle]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack
 [MIME]: https://en.wikipedia.org/wiki/Internet_media_type
 [mozrootstore]: https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
@@ -391,4 +396,5 @@
 <!-- Direct links to code; link to a specific commit to prevent code
 changes from moving the referenced object, but also update links
 periodically to point to recent code. Last update: 2014-11-12 --> 
+[core bloom.cpp hash]: https://github.com/bitcoin/bitcoin/blob/cbf28c6619fe348a258dfd7d08bdbd2392d07511/src/bloom.cpp#L46
 [MAX_SIZE]: https://github.com/bitcoin/bitcoin/blob/60abd463ac2eaa8bc1d616d8c07880dc53d97211/src/serialize.h#L23

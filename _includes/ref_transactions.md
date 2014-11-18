@@ -238,7 +238,7 @@ Each non-coinbase input spends an outpoint from a previous transaction.
 
 {% endautocrossref %}
 
-**Outpoint: The Specific Part Of A Specific Output**
+**[Outpoint][]{:#term-outpoint}{:.term}: The Specific Part Of A Specific Output**
 
 {% autocrossref %}
 
