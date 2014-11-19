@@ -206,8 +206,8 @@ wallets:
         - android
         - ios
         check:
-          control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationservers"
+          control: "checkpasscontrolhybrid"
+          decentralization: "checkfailvalidationcentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
@@ -223,14 +223,14 @@ wallets:
         os:
         - android
         check:
-          control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationservers"
+          control: "checkpasscontrolhybrid"
+          decentralization: "checkfailvalidationcentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkpassprivacydisclosureaccount"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       ios:
         text: "walletairbitzwallet"
@@ -240,14 +240,14 @@ wallets:
         os:
         - ios
         check:
-          control: "checkgoodcontrolfull"
-          decentralization: "checkpassvalidationservers"
+          control: "checkpasscontrolhybrid"
+          decentralization: "checkfailvalidationcentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkpassprivacydisclosureaccount"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
 
 
