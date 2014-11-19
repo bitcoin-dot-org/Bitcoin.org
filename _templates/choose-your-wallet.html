@@ -188,6 +188,69 @@ wallets:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
+
+
+- airbitzwallet:
+    title: "Airbitz Bitcoin Wallet"
+    titleshort: "Airbitz"
+    compat: "mobile android ios"
+    level: 1
+
+    platform:
+      mobile:
+        text: "walletairbitzwallet"
+        link: "https://airbitz.co/"
+        source: "https://github.com/Airbitz"
+        screenshot: "airbitzwalletandroid.png"
+        os:
+        - android
+        - ios
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassvalidationservers"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "walletairbitzwallet"
+        link: "https://play.google.com/store/apps/details?id=com.airbitz"
+        source: "https://github.com/Airbitz"
+        screenshot: "airbitzwalletandroid.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassvalidationservers"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkpassprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      ios:
+        text: "walletairbitzwallet"
+        link: "https://itunes.apple.com/us/app/bitcoin-wallet-map-directory/id843536046?mt=8"
+        source: "https://github.com/Airbitz"
+        screenshot: "airbitzwalletandroid.png"
+        os:
+        - ios
+        check:
+          control: "checkgoodcontrolfull"
+          decentralization: "checkpassvalidationservers"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkpassprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+
+
 - kncwallet:
     title: "KnC Wallet"
     titleshort: "KnC<br>Wallet"
