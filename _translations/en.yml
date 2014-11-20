@@ -144,6 +144,8 @@ en:
     checkfailcontrolthirdpartytxt: "This service has full control over your bitcoins. This means you need to trust this service will not lose your funds in an incident on their side. As of today, most web wallets don't insure their deposits like a bank, and many such services have suffered from security breaches in the past."
     checkgoodvalidationfullnode: "Full validation"
     checkgoodvalidationfullnodetxt: "This wallet is a full node that validates and relays transactions on the Bitcoin network. This means no trust in a third party is required when verifying payments. Full nodes provide the highest level of security and are essential to protecting the network. However, they require more space (over 20GB), bandwidth, and a longer initial synchronization time."
+    checkgoodvalidationfullnoderequired: "Full validation"
+    checkgoodvalidationfullnoderequiredtxt: "This wallet requires you to install full node software that validates and relays transactions on the Bitcoin network. This means no trust in a third party is required when verifying payments. Full nodes provide the highest level of security and are essential to protecting the network. However, they require more space (over 20GB), bandwidth, and a longer initial synchronization time."
     checkneutralvalidationvariable: "Variable validation"
     checkneutralvalidationvariabletxt: "Payment validation features are provided by the software wallet you use with this device. Please see the Validation score for the software wallet you plan to use."
     checkpassvalidationspvp2p: "Simplified validation"
