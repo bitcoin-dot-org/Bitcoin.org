@@ -73,8 +73,6 @@ please [open an issue][docs issue].)
 
 {% autocrossref %}
 
-*Added checksum field in protocol version 209.*
-
 All messages in the network protocol use the same container format,
 which provides a required multi-field header and an optional payload.
 The header format is:
@@ -84,7 +82,7 @@ The header format is:
 | 4     | start string | char[4]   | Magic bytes indicating the originating network; used to seek to next message when stream state is unknown.
 | 12    | command name | char[12]  | ASCII string which identifies what message type is contained in the payload.  Followed by nulls (0x00) to pad out byte count; for example: `version\0\0\0\0\0`.
 | 4     | payload size | uint32_t  | Number of bytes in payload.  The current maximum number of bytes ([`MAX_SIZE`][max_size]) allowed in the payload by Bitcoin Core is 32 MiB---messages with a payload size larger than this will be dropped or rejected.
-| 4     | checksum     | char[4]   | First 4 bytes of SHA256(SHA256(payload)) in internal byte order.<br /><br /> If payload is empty, as in `verack` and `getaddr` messages, the checksum is always 0x5df6e0e2 (SHA256(SHA256(\<empty string>))).<br /><br /> *The checksum field was introduced in protocol version 209.*
+| 4     | checksum     | char[4]   | First 4 bytes of SHA256(SHA256(payload)) in internal byte order.<br /><br /> If payload is empty, as in `verack` and `getaddr` messages, the checksum is always 0x5df6e0e2 (SHA256(SHA256(\<empty string>))). <br><br>*Added in protocol version 209.*
 
 The following example is an annotated hex dump of a mainnet message
 header from a `verack` message which has no payload.
@@ -595,8 +593,6 @@ information about Tor, please [open an issue][docs issue].
 
 {% autocrossref %}
 
-*Time field added in protocol version 31402.*
-
 The `addr` (IP address) message relays connection information
 for peers on the network. Each peer which wants to accept incoming
 connections creates an `addr` message providing its connection
@@ -616,7 +612,7 @@ Each encapsulated network IP address currently uses the following structure:
 
 | Bytes | Name       | Data Type | Description
 |-------|------------|-----------|---------------
-| 4     | time       | uint32    | A time in Unix epoch time format.  Nodes advertising their own IP address set this to the current time.  Nodes advertising IP addresses they've connected to set this to the last time they connected to that node.  Other nodes just relaying the IP address should not change the time.  Nodes can use the time field to avoid relaying old `addr` messages.  <br><br>Malicious nodes may change times or even set them in the future. <br><br>The time field was added in protocol version 31402 .
+| 4     | time       | uint32    | A time in Unix epoch time format.  Nodes advertising their own IP address set this to the current time.  Nodes advertising IP addresses they've connected to set this to the last time they connected to that node.  Other nodes just relaying the IP address should not change the time.  Nodes can use the time field to avoid relaying old `addr` messages.  <br><br>Malicious nodes may change times or even set them in the future. <br><br>*Added in protocol version 31402.*
 | 8     | services   | uint64_t  | The services the node advertised in its `version` message.
 | 16    | IP address | char      | IPv6 address in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][] 
 | 2     | port       | uint16_t  | Port number in **big endian byte order**.  Note that Bitcoin Core will only connect to nodes with non-standard port numbers as a last resort for finding peers.  This is to prevent anyone from trying to use the network to disrupt non-Bitcoin services that run on other ports.
@@ -825,8 +821,6 @@ section][message header] for an example of a message without a payload.
 
 {% autocrossref %}
 
-*Added nonce field in protocol version 60001 as described by BIP31.*
-
 The `ping` message helps confirm that the receiving peer is still
 connected. If a TCP/IP error is encountered when sending the `ping`
 message (such as a connection timeout), the transmitting node can assume
@@ -839,7 +833,7 @@ single field, the nonce.
 
 | Bytes | Name  | Data Type | Description
 |-------|-------|-----------|---------------
-| 8     | nonce | uint64_t  | Random nonce assigned to this `ping` message.  The responding `pong` message will include this nonce to identify the `ping` message to which it is replying.
+| 8     | nonce | uint64_t  | Random nonce assigned to this `ping` message.  The responding `pong` message will include this nonce to identify the `ping` message to which it is replying. <br><br>*Added in protocol version 209 as described by BIP31.*
 
 The annotated hexdump below shows a `ping` message. (The message
 header has been omitted.)
@@ -941,11 +935,6 @@ section][message header].
 
 {% autocrossref %}
 
-*Receive IP address fields were added in protocol version 106. The
-subStr field was renamed the user\_agent field in protocol version 60000
-as described by BIP14. Relay field was added in protocol version 70001
-as described by BIP37.*
-
 The `version` message provides information about the transmitting node
 to the receiving node at the beginning of a connection. Until both peers
 have exchanged `version` messages, no other messages will be accepted.
@@ -960,17 +949,17 @@ before initializing its half of the connection by first sending a
 | 4        | version               | int32_t          | The highest protocol version understood by the transmitting node.  See the [protocol version section][section protocol versions].
 | 8        | services              | uint64_t         | The services supported by the transmitting node encoded as a bitfield.  See the list of service codes below.
 | 8        | timestamp             | int64_t          | The current Unix epoch time according to the transmitting node's clock.  Because nodes will reject blocks with timestamps more than two hours in the future, this field can help other nodes to determine that their clock is wrong.
-| 8        | addr_recv services    | uint64_t         | The services supported by the receiving node as perceived by the transmitting node.  Same format as the 'services' field above. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always send 0.  <br><br>Added in protocol version 106.
-| 16       | addr_recv IP address  | char             | The IPv6 address of the receiving node as perceived by the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][]. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always return ::ffff:127.0.0.1<br><br>Added in protocol version 106.
-| 2        | addr_recv port        | uint16_t         | The port number of the receiving node as perceived by the transmitting node in **big endian byte order**.  <br><br>Added in protocol version 106.
+| 8        | addr_recv services    | uint64_t         | The services supported by the receiving node as perceived by the transmitting node.  Same format as the 'services' field above. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always send 0.  <br><br>*Added in protocol version 106.*
+| 16       | addr_recv IP address  | char             | The IPv6 address of the receiving node as perceived by the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][]. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always return ::ffff:127.0.0.1<br><br>*Added in protocol version 106.*
+| 2        | addr_recv port        | uint16_t         | The port number of the receiving node as perceived by the transmitting node in **big endian byte order**.  <br><br>*Added in protocol version 106.*
 | 8        | addr_trans services   | uint64_t         | The services supported by the transmitting node.  Should be identical to the 'services' field above.
 | 16       | addr_trans IP address | char             | The IPv6 address of the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][].  Set to ::ffff:127.0.0.1 if unknown.
 | 2        | addr_trans port       | uint16_t         | The port number of the transmitting node in **big endian byte order**.
 | 8        | nonce                 | uint64_t         | A random nonce which can help a node detect a connection to itself.  If the nonce is 0, the nonce field is ignored.  If the nonce is anything else, a node should terminate the connection on receipt<!--noref--> of a `version` message with a nonce it previously sent.
 | *Varies* | user_agent bytes      | compactSize uint | Number of bytes in following user\_agent field.  If 0x00, no user agent field is sent.
-| *Varies* | user_agent            | string           | User agent as defined by BIP14.  Prior to protocol version 60000, this field was called subVer.
+| *Varies* | user_agent            | string           | User agent as defined by BIP14. <br><br>*Renamed in protocol version 60000, previously called subVer.*
 | 4        | start_height          | int32_t          | The height of the transmitting node's best block chain or, in the case of an SPV client, best block header chain.
-| 1        | relay                 | bool             | Transaction relay flag.  If 0x00, no `inv` messages or `tx` messages announcing new transactions should be sent to this client until it sends a `filterload` message or `filterclear` message.  If 0x01, this node wants `inv` messages and `tx` messages announcing new transactions. <br><br> Added in protocol version 70001.
+| 1        | relay                 | bool             | Transaction relay flag.  If 0x00, no `inv` messages or `tx` messages announcing new transactions should be sent to this client until it sends a `filterload` message or `filterclear` message.  If 0x01, this node wants `inv` messages and `tx` messages announcing new transactions. <br><br>*Added in protocol version 70001 as described by BIP37.*
 
 The following service identifiers have been assigned.
 
