@@ -1,3 +1,6 @@
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 #releases.rb generates release pages using files in _releases
 #and assign them the 'release' category.
 

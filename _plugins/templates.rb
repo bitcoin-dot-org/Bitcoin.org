@@ -1,3 +1,6 @@
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 #templates.rb generates all translated pages using templates in
 #_templates. The final file name of each page is defined in 
 #the url section of each translations in _translations.
@@ -25,7 +28,7 @@ module Jekyll
       enabled = ENV['ENABLED_LANGS'];
       enabled = enabled.split(' ') if !enabled.nil?
       Dir.foreach('_translations') do |file|
-        next if file == '.' or file == '..'
+        next if file == '.' or file == '..' or file == 'COPYING'
         lang = file.split('.')[0]
         #Ignore lang if disabled
         if lang != 'en' and !enabled.nil? and !enabled.include?(lang)

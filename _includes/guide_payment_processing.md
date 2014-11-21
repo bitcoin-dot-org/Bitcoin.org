@@ -1,3 +1,8 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
 ## Payment Processing
 
 {% autocrossref %}
@@ -116,7 +121,7 @@ payment requests is recommended.
    increased security, authentication of a receiver's identity using X.509 certificates,
    and other important features such as refunds.
 
-![Warning icon](/img/icon_warning.svg)
+![Warning icon](/img/icons/icon_warning.svg)
  **Warning:** Special care must be taken to avoid the theft of incoming
 payments. In particular, private keys should not be stored on web servers,
 and payment requests should be sent over HTTPS or other secure methods

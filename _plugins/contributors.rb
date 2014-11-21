@@ -1,3 +1,6 @@
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 #contributors.rb fetches Bitcoin Core contributors list and set
 #site.contributors array. This is later used to display the
 #list of contributors on the "Development" page.

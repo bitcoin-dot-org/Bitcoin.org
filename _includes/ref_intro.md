@@ -1,3 +1,8 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
 {% autocrossref %}
 
 The Developer Reference aims to provide specifications and API information

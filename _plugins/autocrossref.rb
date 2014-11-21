@@ -1,3 +1,6 @@
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 ## autocrossref.rb automatically adds cross reference links in documentation
 ## texts using the list of words defined in _autocrossref.yaml.
 

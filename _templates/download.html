@@ -1,12 +1,15 @@
 ---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 layout: base
 id: download
 ---
 <link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin Core releases">
 <div class="download">
   <h1>{% translate pagetitle %}</h1>
-  <h2>{% translate latestversion %} {{site.DOWNLOAD_VERSION}}<a type="application/rss+xml" href="/en/rss/releases.rss"><img src="/img/icon_rss.svg" alt="rss" class="rssicon"></a></h2>
-  <div class="mainbutton"><a id="downloadbutton" href="/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe"><img src="/img/but_windows.svg" alt="icon">{% translate download %}</a></div>
+  <h2>{% translate latestversion %} {{site.DOWNLOAD_VERSION}}<a type="application/rss+xml" href="/en/rss/releases.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h2>
+  <div class="mainbutton"><a id="downloadbutton" href="/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe"><img src="/img/os/but_windows.svg" alt="icon">{% translate download %}</a></div>
   <div class="downloadbox">
     <p>{% translate downloados %}</p>
     <div>
@@ -25,7 +28,7 @@ id: download
       <a href="/en/version-history">{% translate versionhistory %}</a>
     </p>
   </div>
-  <h2><img src="/img/note.svg" class="warningicon" alt="note">{% translate patient %}</h2>
+  <h2><img src="/img/icons/note.svg" class="warningicon" alt="note">{% translate patient %}</h2>
   <p>{% translate notesync %}</p>
   <p>{% translate notelicense %}</p>
 </div>
@@ -40,23 +43,23 @@ else if(navigator.userAgent.indexOf('WOW64')!=-1||navigator.userAgent.indexOf('W
 var but=document.getElementById('downloadbutton');
 switch(os){
 case 'windows64':
-  but.getElementsByTagName('IMG')[0].src='/img/but_windows.svg';
+  but.getElementsByTagName('IMG')[0].src='/img/os/but_windows.svg';
   but.href='/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win64-setup.exe';
 break;
 case 'windows32':
-  but.getElementsByTagName('IMG')[0].src='/img/but_windows.svg';
+  but.getElementsByTagName('IMG')[0].src='/img/os/but_windows.svg';
   but.href='/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe';
 break;
 case 'linux':
-  but.getElementsByTagName('IMG')[0].src='/img/but_linux.png';
+  but.getElementsByTagName('IMG')[0].src='/img/os/but_linux.png';
   but.href='/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-linux.tar.gz';
 break;
 case 'ubuntu':
-  but.getElementsByTagName('IMG')[0].src='/img/but_ubuntu.svg';
+  but.getElementsByTagName('IMG')[0].src='/img/os/but_ubuntu.svg';
   but.href='https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin';
 break;
 case 'mac':
-  but.getElementsByTagName('IMG')[0].src='/img/but_mac.svg';
+  but.getElementsByTagName('IMG')[0].src='/img/os/but_mac.svg';
   but.href='/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-macosx.dmg';
 break;
 }

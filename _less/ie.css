@@ -1,3 +1,8 @@
+/*
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+*/
+
 body{
 	/*Allows to use :hover on any html tag using javascript*/
 	behavior:url("/css/csshover.htc");

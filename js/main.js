@@ -1,3 +1,6 @@
+// This file is licensed under the MIT License (MIT) available on
+// http://opensource.org/licenses/MIT.
+
 function addEvent(a, b, c) {
 // Attach event to a DOM node.
 // Ex. addEvent(node,'click',function);

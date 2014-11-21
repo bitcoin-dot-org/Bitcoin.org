@@ -1,3 +1,6 @@
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 #events.rb set site.conferences and site.meetups arrays based
 #on events in _events/ and meetups on bitcoin.meetups.com .
 #This is later used to populate the events map and display the

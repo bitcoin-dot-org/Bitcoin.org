@@ -1,3 +1,8 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
 <!-- Terms; must have tooltip description in "quotes"; alphabetical order -->
 [51 percent attack]: /en/developer-guide#term-51-attack "The ability of someone controlling a majority of hashing power to revise transactions history and prevent new transactions from confirming"
 [addr message]: /en/developer-guide#term-addr-message "A Bitcoin network protocol message which relays IP addresses and port numbers of active nodes to other nodes and clients, allowing decentralized peer discovery."
