@@ -274,19 +274,6 @@ body{
 	display:inline;
 }
 
-.sponsor-banner div{
-	display:inline;
-	zoom:1;
-}
-.sponsor-banner span,
-.sponsor-banner a,
-.sponsor-banner a:link,
-.sponsor-banner a:active,
-.sponsor-banner a:visited{
-	display:inline;
-	zoom:1;
-}
-
 .devprojectlist li{
 	display:expression((this.parentNode.childNodes[0]==this||this.parentNode.childNodes[1]==this||this.parentNode.childNodes[2]==this||this.parentNode.childNodes[3]==this)?'list-item':'');
 }

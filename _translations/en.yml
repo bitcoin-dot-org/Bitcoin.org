@@ -480,6 +480,13 @@ en:
     faqmore: "To learn more about Bitcoin, please visit the complete <a href=\"/en/faq\">FAQ</a> or the <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
     materialpicture: "Pictures"
     materialpicturemore: "Show more pictures..."
+  privacy:
+    title: "Privacy - Bitcoin"
+    pagetitle: "Privacy"
+    datacollect: "Data collected"
+    datacollecttxt: "Bitcoin.org collects anonymized server logs. These logs include IP addresses with replaced last byte, time of the visit, requested page, user agent and referer url. Bitcoin.org does not collect data using cookies."
+    datause: "Usage of data"
+    datausetxt: "Collected data is used to provide <a href=\"/stats/\">transparent public stats</a>."
   protect-your-privacy:
     title: "Protect your privacy - Bitcoin"
     pagetitle: "Protect your privacy"
@@ -646,7 +653,9 @@ en:
     menu-intro: Introduction
     menu-legal: "Legal"
     menu-press: "Press"
+    menu-privacy: "Privacy"
     menu-resources: Resources
+    menu-stats: "Stats"
     menu-support-bitcoin: Participate
     menu-vocabulary: Vocabulary
     menu-you-need-to-know: "You need to know"
@@ -670,6 +679,7 @@ en:
     innovation: innovation
     legal: legal
     press: press
+    privacy: privacy
     protect-your-privacy: protect-your-privacy
     resources: resources
     secure-your-wallet: secure-your-wallet
