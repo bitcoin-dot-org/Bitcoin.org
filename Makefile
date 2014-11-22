@@ -37,7 +37,8 @@ pre-build-tests-fast: check-for-non-ascii-urls
 
 ## Post-build tests which, aggregated together, take less than 5 seconds to run on a typical PC
 post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
-    check-for-missing-anchors check-for-broken-markdown-reference-links
+    check-for-missing-anchors check-for-broken-markdown-reference-links \
+    check-for-broken-kramdown-tables
 
 ## All pre-build tests, including those which might take multiple minutes
 pre-build-tests: pre-build-tests-fast
@@ -107,3 +108,9 @@ check-for-non-ascii-urls:
 	    ; do grep -H . $$file | sed -n -e '/url:/,$$p' \
 	    | grep -P '[^\x00-\x7f]|[a-z\-] [a-z\-]' \
 	; done | eval $(ERROR_ON_OUTPUT)
+
+check-for-broken-kramdown-tables:
+## Kramdown tables are easy to break. When broken, they produce a
+## paragraph starting with a | (pipe). I can't imagine any reason we'd
+## have a regular paragraph starting with a pipe, so error on any occurences.
+	$S grep '<p>|' _site/en/developer-* | eval $(ERROR_ON_OUTPUT)

@@ -6,9 +6,12 @@
 ## To prevent a ref for term, use: "term: DO NOT AUTOCROSSREF"
 
 51 percent attack:
-'`addr`': addr message
+'`addr` message': addr message
+'`addr` messages': addr message
 address: 
 addresses: address
+'`alert` message': alert message
+'`alert` messages': alert message
 '`amount`': pp amount
 base-58: base58check
 base58: base58check
@@ -26,6 +29,7 @@ block-chain: block chain
 block header:
 block height:
 '`block` message': block message
+'`block` messages': block message
 block reward:
 block time:
 block version:
@@ -79,17 +83,27 @@ extended keys: extended key
 extended private key:
 extended public key:
 fiat:
+'`filteradd` message': filteradd message
+'`filteradd` messages': filteradd message
+'`filterclear` message': filterclear message
+'`filterclear` messages': filterclear message
 fork:
 forks: fork
-'`getblocks` message': getblocks message
-'`getdata` message': getdata message
-'`getheaders` message': getheaders message
 genesis block:
+'`getblocks` message': getblocks message
+'`getblocks` messages': getblocks message
+'`getdata` message': getdata message
+'`getdata` messages': getdata message
+'`getheaders` message': getheaders message
+'`getheaders` messages': getheaders message
+'`getaddr` message': getaddr message
+'`getaddr` messages': getaddr message
 hard fork:
 hard forks: hard fork
 hardened extended private key:
 HD protocol:
 '`headers` message': headers message
+'`headers` messages': headers message
 high-priority transaction: high-priority transactions
 high-priority transactions:
 inputs: input
@@ -98,8 +112,13 @@ intermediate certificate:
 intermediate certificates: intermediate certificate
 internal byte order:
 '`inv` message': inv message
+'`inv` messages': inv message
 IP address: DO NOT AUTOCROSSREF
 IP addresses: DO NOT AUTOCROSSREF
+IPv4 address: DO NOT AUTOCROSSREF
+IPv4 addresses: DO NOT AUTOCROSSREF
+IPv6 address: DO NOT AUTOCROSSREF
+IPv6 addresses: DO NOT AUTOCROSSREF
 inventories: inventory
 inventory:
 key index:
@@ -115,12 +134,15 @@ master chain code:
 master private key:
 '`memo`': pp memo
 '`mempool` message': mempool message
+'`mempool` messages': mempool message
 '`message`': message
 message header:
+message headers: message header
 message payload:
 '`merchant_data`': pp merchant data
 merkleblock: merkleblock message
 '`merkleblock` message': merkleblock message
+'`merkleblock` messages': merkleblock message
 merkle root:
 merkle tree:
 merge:
@@ -141,6 +163,7 @@ multisig:
 nbits:
 network:
 '`notfound` message': notfound message
+'`notfound` messages': notfound message
 null data: 
 '`op_checkmultisig`': op_checkmultisig
 '`op_checksig`': op_checksig
@@ -172,15 +195,23 @@ peer:
 peers: peer
 peer-to-peer: network
 peer-to-peer network: network
+'`ping` message': ping message
+'`ping` messages': ping message
 pki:
 '`pki_type`': pp pki type
 '`point()`': point function
+'`pong` message': pong message
+'`pong` messages': pong message
 private key:
 private keys: private key
 proof of work:
 proof-of-work: proof of work
 protocol buffer: protobuf
 protocol buffers: protobuf
+protocol version 106: section protocol versions
+protocol version 209: section protocol versions
+protocol version 311: section protocol versions
+protocol version 31402: section protocol versions
 protocol version 60000: section protocol versions
 protocol version 60001: section protocol versions
 protocol version 60002: section protocol versions
@@ -208,6 +239,8 @@ refund:
 refunds: refund
 regression test mode:
 regtest: regression test mode
+'`reject` message': reject message
+'`reject` messages': reject message
 root certificate:
 root seed:
 RPCs: rpc
@@ -253,6 +286,7 @@ transaction object format:
 transaction version number:
 '`transactions`': pp transactions
 '`tx` message': tx message
+'`tx` messages': tx message
 txid:
 txids: txid
 unconfirmed:
@@ -263,8 +297,12 @@ unique address: unique addresses
 unique addresses:
 utxo:
 utxos: utxo
+'`verack` message': verack message
+'`verack` messages': verack message
 verified payments:
 version 2 blocks: v2 block
+'`version` message': version message
+'`version` messages': version message
 wallet:
 wallets: wallet
 wallet import format:
@@ -272,13 +310,17 @@ x.509: x509
 X509Certificates:
 
 ## BIPs in numerical order; don't use padding zeros (e.g. BIP70 not BIP0070)
+BIP14:
 BIP16:
 BIP21:
 BIP30:
+BIP31:
 BIP32:
 BIP34:
+BIP37:
 BIP39:
 BIP50:
+BIP61:
 BIP62:
 BIP70:
 BIP71:
@@ -364,6 +406,10 @@ CVE-2012-2459:
 '`walletpassphrasechange`': rpc walletpassphrasechange
 
 ## Versions of Bitcoin Core (linked to Bitcoin.org release notes)
+Bitcoin Core 0.1.6:
+Bitcoin Core 0.2.9:
+Bitcoin Core 0.3.11:
+Bitcoin Core 0.3.15:
 Bitcoin Core 0.6.0:
 Bitcoin Core 0.6.1:
 Bitcoin Core 0.7.0:
