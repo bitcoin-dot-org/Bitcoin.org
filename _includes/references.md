@@ -343,6 +343,7 @@ http://opensource.org/licenses/MIT.
 [core git]: https://github.com/bitcoin/bitcoin
 [core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
 [core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
+[creative commons attribution 3.0 license]: https://creativecommons.org/licenses/by/3.0/
 [DER]: https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
 [dig command]: https://en.wikipedia.org/wiki/Dig_%28Unix_command%29
 [DNS A records]: http://tools.ietf.org/html/rfc1035#section-3.2.2

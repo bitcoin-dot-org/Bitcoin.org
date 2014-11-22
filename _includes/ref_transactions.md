@@ -160,7 +160,8 @@ bytes commonly used by Bitcoin are:
 Bitcoin's base58 encoding, called [Base58Check][]{:#term-base58check}{:.term} may not match other implementations. Tier
 Nolan provided the following example encoding algorithm to the Bitcoin
 Wiki [Base58Check
-encoding](https://en.bitcoin.it/wiki/Base58Check_encoding) page:
+encoding](https://en.bitcoin.it/wiki/Base58Check_encoding) page under
+the [Creative Commons Attribution 3.0 license][]:
 
 {% highlight c %}
 code_string = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
