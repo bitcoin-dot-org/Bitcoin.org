@@ -28,7 +28,6 @@ module Jekyll
         lang=file.split('.')[0]
         #Ignore lang if disabled
         if lang != 'en' and !enabled.nil? and !enabled.include?(lang)
-          print 'Lang ' + lang + ' disabled' + "\n"
           next
         end
         locs[lang] = YAML.load_file('_translations/'+file)[lang]
