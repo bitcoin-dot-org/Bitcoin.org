@@ -119,7 +119,11 @@ BitcoinJ is generated using the [makeseeds script][].
 
 {% autocrossref %}
 
-Connecting to a peer is done by sending a `version` message, which contains your version number, block, and current time to the remote node. Once the message is received by the remote node, it must respond with a `verack` message, which may be followed by its own `version` message if the node desires to peer. 
+Connecting to a peer is done by sending a `version` message, which
+contains your version number, block, and current time to the remote
+node. The remote node responds with its own `version` message. Then both
+nodes send a `verack` message to the other node to indicate the
+connection has been established.
 
 Once connected, the client can send to the remote node `getaddr` and `addr` messages to gather additional peers.
 
