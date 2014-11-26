@@ -156,14 +156,18 @@ hu:
     checkfailvalidationcentralizedtxt: "Ez a pénztárca egy központosított szolgáltatáson nyugszik. Ez azt jelenti, hogy harmadik félbe vetett bizalom szükségeltetik, a kifizetések esetleges elrejtésének vagy színlelésének elkerülésére."
     checkgoodtransparencydeterministic: "Teljes transzparencia"
     checkgoodtransparencydeterministictxt: "Ez a pénztárca nyílt forráskódú és determinisztikus felépítésű. Ez azt jelenti, hogy a világ bármely fejlesztője auditálhatja a kódot és meggyőződhet róla, hogy a végső szoftverben nem rejtőzik valamilyen titok."
-    checkpasstransparencyopensource: "Jó transzparencia"
+    checkpasstransparencyopensource: "Alapvető transzparencia"
     checkpasstransparencyopensourcetxt: "E pénztárca fejlesztői az ügyfelek számára publikálják a forráskódot. Ez azt jelenti, hogy a világ bármely fejlesztője auditálhatja a kódot. Ugyanakkor továbbra is bíznia kell a fejlesztőkben a végső szoftver telepítésekor és frissítésekor, mivel nem determinisztikus felépítésű, mint például a <a href=\"#download#\">Bitcoin Core</a>."
+    checkpasstransparencyopensourcehardware: "Alapvető transzparencia"
+    checkpasstransparencyopensourcehardwaretxt: "E pénztárca forráskódja nyilvános. Ez azt jelenti, hogy a világ bármely fejlesztője ellenőrizheti a kódot. Ugyanakkor továbbra is meg kell bíznia a fejlesztőkben, mivel a készülék nem hitelesíthető arra, hogy ugyanazt a forráskódot használja biztonságos véletlenszám-generálásra és egyéb műveletekre. A bitcoinjai ellopását a készüléke belső vezérlőprogramjának frissítésével, saját véletlenszám-generálással vagy csoportos aláírással nehezítheti meg."
+    checkpasstransparencyopenspechardware: "Alapvető transzparencia"
+    checkpasstransparencyopenspechardwaretxt: "E pénztárca specifikációja nyilvános. Ez azt jelenti, hogy a világ bármely fejlesztője elvégezhet rajta blackbox-tesztelést. Ugyanakkor továbbra is meg kell bíznia a fejlesztőkben, mivel a készülék nem hitelesíthető arra, hogy ugyanazt a forráskódot használja biztonságos véletlenszám-generálásra, valamint a forráskód nem ellenőrizhető. A bitcoinjai ellopását a készüléke belső vezérlőprogramjának frissítésével, saját véletlenszám-generálással vagy csoportos aláírással nehezítheti meg."
     checkfailtransparencyclosedsource: "Nem transzparens"
     checkfailtransparencyclosedsourcetxt: "Ez a szoftver nem nyílt forráskódú. Ez azt jelenti, hogy a kód auditálása nem lehetséges, így nem lehet arról meggyőzni, hogy a végső szoftver nem rejt veszélyes kódokat vagy nem tesz olyasmit, amihez egyébként nem járul hozzá."
     checkfailtransparencyremote: "Távoli alkalmazás"
     checkfailtransparencyremotetxt: "Ez a pénztárca egy távoli helyről töltődik be. Ez azt jelenti, hogy bármikor, amikor használja a pénztárcáját, bíznia kell a fejlesztőkben a bitcoinjai ellopásának vagy saját hibájukból fakadó elvesztésének elkerüléséhez. Egy böngészőbővítmény vagy mobil alkalmazás - amennyiben elérhető - csökkentheti a kockázatot."
     checkfailtransparencynew: "Új alkalmazás"
-    checkfailtransparencynewtxt: "E pénztárca fejlesztői az ügyfél számára elérhetővé teszik a forráskódot. Ugyanakkor ez a pénztárca nem esett át nagyszámú személy által történő tesztelésen és ellenőrzésen. Ez azt jelenti, hogy ez az alkalmazás nagyobb eséllyel rejt veszélyes kódot vagy csinál olyasmit, amibe egyébként nem egyezne bele."
+    checkfailtransparencynewtxt: "E pénztárca nem esett át nagyszámú személy által történő tesztelésen és ellenőrzésen. Ez azt jelenti, hogy ez az alkalmazás nagyobb eséllyel rejt veszélyes kódot vagy csinál olyasmit, amibe egyébként nem egyezne bele."
     checkgoodenvironmenthardware: "Nagyon biztonságos környezet"
     checkgoodenvironmenthardwaretxt: "Ez a pénztárca egy speciális, a készülék által biztosított, védett környezetből töltődik be. Ez nagyon erős védelmet biztosít a számítógépek sebezhetőségeivel és a rosszindulatú szoftverekkel szemben, mivel ebben a környezetben nem lehetséges szoftverek telepítése."
     checkpassenvironmentmobile: "Biztonságos környezet"
@@ -325,7 +329,7 @@ hu:
     earlyadopter: "Nem jutalmazza-e aránytalanul a Bitcoin a korai elfogadókat?"
     earlyadoptertxt1: "Néhány korai elfogadó nagy mennyiségű bitcoinnal rendelkezett, mivel kockázatot vállalt, valamint időt és energiát fektetett egy, még nem bizonyított technológiába, amelyet alig használt valaki, és amelyet sokkal nehezebb volt megfelelően védeni. Számos korai elfogadó nagy mennyiségű bitcoint költött el, mielőtt azok értékessé váltak volna, vagy csak kis összegben vásároltak, és így nem tettek szert nagy haszonra. Nincs garancia arra, hogy a bitcoin árfolyama növekedni vagy esni fog. Ez nagyon hasonló egy startupba való befektetéshez, amely egyaránt teremthet értéket hasznosságán vagy népszerűségén keresztül, vagy örökre elkerülheti az áttörést. A Bitcoin továbbra is gyerekcipőben jár, és nagyon hosszú távú szemlélettel tervezték; ezért nehéz elképzelni, hogy hogyan lehetne kevésbé részrehajló a korai elfogadók irányában - és a jelenlegi felhasználóknak is van esélyük a holnap korai elfogadóivá válni."
     finitelimitation: "Korlátozhatja-e a rendszert a véges mennyiségben rendelkezésre álló bitcoin?"
-    finitelimitationtxt1: "A Bitcoin egyedülálló abban a tekintetben, hogy mindössze 21 millió bitcoin lesz valaha forgalomban. Ugyanakkor ez soha nem jelent majd korlátot, mivel a bitcoinok 8 tizedesjegyig oszthatóak (0,00000001 BTC) és potenciálisan még ennél is kisebb egységekre bonthatóak, ha a szükség úgy hozza a jövőben. Ahogyan az átlagos tranzakcióméret csökken, úgy vezethető be a tranzakciók egyre kisebb mértékegysége, mint például a millibitcoin (1 mBTC vagy 0,001 BTC)."
+    finitelimitationtxt1: "A Bitcoin egyedülálló abban a tekintetben, hogy mindössze 21 millió bitcoin lesz valaha forgalomban. Ugyanakkor ez soha nem jelent majd korlátot, mivel a tranzakciók a bitcoin olyan, kisebb alegységeire bonthatóak, mint például a bit - egy bitcoin 1000000 bitből áll. A bitcoinok 8 tizedesjegyig oszthatóak (0,00000001) és potenciálisan még ennél is kisebb egységekre bonthatóak, ha a szükség úgy hozza a jövőben; ahogyan az átlagos tranzakcióméret csökken."
     deflationaryspiral: "Nem fog-e a Bitcoin deflációs spirálba kerülni?"
     deflationaryspiraltxt1: "A deflációs spirál elmélete kimondja, hogy amennyiben a várakozások az árak esésének irányába mutatnak, az emberek elhalasztják fogyasztásukat a jövőbeli, alacsonyabb árak kihasználása érdekében. A kereslet ily módon történő esése a kereskedőket az árak csökkentésére kényszeríti a kereslet fellendítése érdekében; ez azonban súlyosbítja a problémát, és gazdasági válsághoz vezet."
     deflationaryspiraltxt2: "Habár ez az elmélet népszerű érvet jelent az infláció indoklására a jegybanki munkatársak számára, nem minden esetben igaz, ugyanakkor ellentmondásos a megítélése a közgazdászok között. Az elektronikai cikkek piaca jó példa arra, hogy az árak folyamatos esése nem mindig torkollik válságba. Ehhez hasonlóan a bitcoinok értéke az idő előrehaladtával emelkedett, ezzel párhuzamosan a Bitcoin piaca mégis drámaian növekedett. Mivel mind a pénznem értéke, mind pedig a piac mérete a semmiből indult 2009-ben, a Bitcoin ezen elmélet ellenpéldája, rámutatva arra, hogy vannak kivételek."
@@ -580,6 +584,8 @@ hu:
     table: "Tartalomjegyzék"
     address: "Cím"
     addresstxt: "A Bitcoin-cím <b>hasonló egy fizikai vagy e-mail címhez</b>. Ez minden információ, amelyet Önnek a Bitcoin segítségével történő kifizetéshez biztosítania szükséges. Fontos különbség ugyanakkor, hogy egy címet csak egyetlen tranzakcióhoz célszerű használnia."
+    bit: "Bit"
+    bittxt: "A bit a bitcoin alegységeinek alapegysége - 1000000 bit alkot egy bitcoint (BTC vagy B⃦) Ezen egység általában kényelmesebben használható kis összegű adományok, termékek és szolgáltatások árazására."
     bitcoin: "Bitcoin"
     bitcointxt: "A Bitcoin - nagy kezdőbetűvel - a Bitcoin koncepciójának leírására vagy a teljes hálózat elnevezésére szolgál. Például \"Ma a Bitcoin-protokollról tanultam.\" A bitcoin - kisbetűvel - a bitcoinok, mint mértékegység leírására szolgál. Például: \"Ma 10 bitcoint küldtem.\"; ezenkívül gyakran rövidítik BTC-ként vagy XBT-ként."
     blockchain: "Blokklánc"
@@ -587,7 +593,7 @@ hu:
     block: "Blokk"
     blocktxt: "Egy blokk <b>egy olyan elem a blokkláncban, amely tartalmaz és visszaigazol számos várakozó tranzakciót</b>. <a href=\"#[vocabulary.mining]\">Bányászaton</a> keresztül hozzávetőleg, illetve átlagosan 10 percenként fűződik hozzá egy tranzakciókat tartalmazó, új blokk a <a href=\"#[vocabulary.blockchain]\">blokklánchoz</a>."
     btc: "BTC"
-    btctxt: "A BTC a Bitcoin-pénznem alapegysége. Hasonlóképpen használható, mint az amerikai dollár esetében a B⃦ vagy $ helyett alkalmazott USD."
+    btctxt: "A BTC a bitcoin alapegysége (B⃦)."
     confirmation: "Visszaigazolás"
     confirmationtxt: "A visszaigazolás azt jelenti, hogy egy tranzakciót <b>feldolgozott a hálózat, valamint igen kevéssé valószínű, hogy visszavonható</b>. A tranzakciók akkor nyernek visszaigazolást, amennyiben hozzáadódnak egy adott <a href=\"#vocabulary##[vocabulary.block]\">blokkhoz</a>, valamint minden, az adott blokkot megelőző blokkhoz. Egyetlen visszaigazolás is biztonságosnak tekinthető alacsony összegű tranzakciók esetén, azonban nagyobb, például 1000 USD értékű összeg esetén célszerű legalább 6 visszaigazolást megvárni. Minden egyes visszaigazolás <i>exponenciálisan</i> csökkenti a visszavont tranzakció kockázatát."
     cryptography: "Kriptográfia"
@@ -674,6 +680,7 @@ hu:
       non-profit: nonprofit
     vocabulary:
       address: cim
+      bit: bit
       bitcoin: bitcoin
       blockchain: blokklanc
       block: blokk
