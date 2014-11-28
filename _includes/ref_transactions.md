@@ -228,7 +228,8 @@ the [CompactSize section][CompactSize unsigned integer].
 
 {% endautocrossref %}
 
-**TxIn: A Transaction Input (Non-Coinbase)**
+##### TxIn: A Transaction Input (Non-Coinbase) {#txin}
+{:.no_toc}
 
 {% autocrossref %}
 
@@ -244,7 +245,8 @@ Each non-coinbase input spends an outpoint from a previous transaction.
 
 {% endautocrossref %}
 
-**[Outpoint][]{:#term-outpoint}{:.term}: The Specific Part Of A Specific Output**
+##### Outpoint: The Specific Part Of A Specific Output {#outpoint}
+{:.no_toc}
 
 {% autocrossref %}
 
@@ -259,7 +261,8 @@ specific output.
 
 {% endautocrossref %}
 
-**TxOut: A Transaction Output**
+##### TxOut: A Transaction Output {#txout}
+{:.no_toc}
 
 {% autocrossref %}
 
@@ -313,8 +316,12 @@ to a new pay-to-pubkey-hash (P2PKH) output.
 00000000 ................................... locktime: 0 (a block height)
 {% endhighlight %}
 
+{% endautocrossref %}
 
-**Coinbase Input: The Input Of The First Transaction In A Block**
+##### Coinbase Input: The Input Of The First Transaction In A Block {#coinbase}
+{:.no_toc}
+
+{% autocrossref %}
 
 The first transaction in a block, called the coinbase transaction, must
 have exactly one input, called a coinbase. The coinbase input currently

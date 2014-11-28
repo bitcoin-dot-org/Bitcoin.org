@@ -320,7 +320,12 @@ backwards-incompatible features.
 
 As of Bitcoin Core 0.9, the standard pubkey script types are:
 
-**Pay To Public Key Hash (P2PKH)**
+{% endautocrossref %}
+
+#### Pay To Public Key Hash (P2PKH)
+{:.no_toc}
+
+{% autocrossref %}
 
 P2PKH is the most common form of pubkey script used to send a transaction to one
 or multiple Bitcoin addresses.
@@ -332,9 +337,10 @@ Pubkey script: OP_DUP OP_HASH160 <PubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
 Signature script: <sig> <pubkey> 
 ~~~
 
-{% autocrossref %}
+#### Pay To Script Hash (P2SH)
+{:.no_toc}
 
-**Pay To Script Hash (P2SH)**
+{% autocrossref %}
 
 P2SH is used to send a transaction to a script hash. Each of the standard
 pubkey scripts can be used as a P2SH redeem script, but in practice only the
@@ -347,9 +353,10 @@ Pubkey script: OP_HASH160 <Hash160(redeemScript)> OP_EQUAL
 Signature script: <sig> [sig] [sig...] <redeemScript>
 ~~~
 
-{% autocrossref %}
+#### Multisig
+{:.no_toc}
 
-**Multisig**
+{% autocrossref %}
 
 Although P2SH multisig is now generally used for multisig transactions, this base script
 can be used to require multiple signatures before a UTXO can be spent.
@@ -389,9 +396,10 @@ Redeem script: <OP_2> <A pubkey> <B pubkey> <C pubkey> <OP_3> OP_CHECKMULTISIG
 Signature script: OP_0 <A sig> <C sig> <redeemScript>
 ~~~
 
-{% autocrossref %}
+#### Pubkey
+{:.no_toc}
 
-**Pubkey**
+{% autocrossref %}
 
 [Pubkey][]{:#term-pubkey}{:.term} scripts are a simplified form of the P2PKH pubkey script,
 but they aren’t as
@@ -405,9 +413,10 @@ Pubkey script: <pubkey> OP_CHECKSIG
 Signature script: <sig>
 ~~~
 
-{% autocrossref %}
+#### Null Data
+{:.no_toc}
 
-**Null Data**
+{% autocrossref %}
 
 [Null data][]{:#term-null-data}{:.term} pubkey scripts let you add a small amount of arbitrary data to the block
 chain in exchange for paying a transaction fee, but doing so is discouraged.

@@ -412,7 +412,8 @@ traffic dump this output was taken from, the full transaction belonging
 to that TXID was sent immediately after the `merkleblock` message as
 a `tx` message.
 
-**Parsing A MerkleBlock**
+##### Parsing A MerkleBlock Message
+{:.no_toc}
 
 As seen in the annotated hexdump above, the `merkleblock` message
 provides three special data types: a transaction count, a list of
@@ -483,7 +484,8 @@ For a detailed example of parsing a `merkleblock` message, please see
 the corresponding [merkle block examples section][section merkleblock
 example].
 
-**Creating A MerkleBlock**
+##### Creating A MerkleBlock Message
+{:.no_toc}
 
 It's easier to understand how to create a `merkleblock` message after
 you understand how to parse an already-created message, so we recommend

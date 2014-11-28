@@ -38,7 +38,8 @@ pre-build-tests-fast: check-for-non-ascii-urls
 ## Post-build tests which, aggregated together, take less than 5 seconds to run on a typical PC
 post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
     check-for-missing-anchors check-for-broken-markdown-reference-links \
-    check-for-broken-kramdown-tables
+    check-for-broken-kramdown-tables check-for-duplicate-header-ids \
+    check-for-headers-with-hrefs
 
 ## All pre-build tests, including those which might take multiple minutes
 pre-build-tests: pre-build-tests-fast
@@ -114,3 +115,24 @@ check-for-broken-kramdown-tables:
 ## paragraph starting with a | (pipe). I can't imagine any reason we'd
 ## have a regular paragraph starting with a pipe, so error on any occurences.
 	$S grep '<p>|' _site/en/developer-* | eval $(ERROR_ON_OUTPUT)
+
+
+check-for-duplicate-header-ids:
+## When Kramdown automatically creates header id tags, it avoids using
+## the same id="" as a previous header by silently appending '-1' to the
+## second-occuring header. We want an error when this happens because
+## all links which previously pointed to the second-occuring header now
+## point to the first-occuring header. (Example: before this test was
+## written, links pointing to the ping RPC were silently redirected when
+## the P2P ping message was added to the page.) The pattern below will
+## report a false positive if we legitimately have an id ending in '-1',
+## but that should be easy to work around if it ever happens.
+	$S grep '<h[1-6][^>]\+id="[^"]\+-1"' _site/en/developer-* | eval $(ERROR_ON_OUTPUT)
+
+check-for-headers-with-hrefs:
+## Subheadings with Kramdown-generated id tags break anchor link
+## affordance if their text includes any links (hrefs), so error if any
+## links are detectd between <h[2-6]> and </h[2-6> header tags. If we
+## ever do need a header with a link, we can revise the pattern below to
+## only match Kramdown-generated id tags
+	$S grep '<\(h[2-6]\).*\?>[^>]\+href=.*</\1>' _site/en/developer-* | eval $(ERROR_ON_OUTPUT)
