@@ -5,9 +5,9 @@
 {% autocrossref %}
 
 For the `merkleblock` message documentation on the reference page, an
-actual merkleblock was retrieved from the network and manually
+actual merkle block was retrieved from the network and manually
 processed.  This section walks through each step of the process,
-demonstrating basic network communication and merkleblock processing.
+demonstrating basic network communication and merkle block processing.
 
 {% highlight python %}
 
@@ -93,7 +93,7 @@ send("getdata",
 )
 {% endhighlight %}
 
-We request a merkleblock for transactions matching our filter,
+We request a merkle block for transactions matching our filter,
 completing our script.
 
 To run the script, we simply pipe it to the Unix [`netcat`
@@ -114,7 +114,7 @@ Part of the response is shown in the section below.
 
 {% autocrossref %}
 
-In the section above, we retrieved a merkleblock from the network; now
+In the section above, we retrieved a merkle block from the network; now
 we will parse it. Most of the block header has been omitted. For
 a more complete hexdump, see the example in the [`merkleblock` message
 section][merkleblock message].

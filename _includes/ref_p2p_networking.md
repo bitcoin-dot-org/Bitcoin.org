@@ -475,7 +475,7 @@ following checks (order doesn't matter):
   knows how many confirmations this block has.
 
 For a detailed example of parsing a `merkleblock` message, please see
-the corresponding [merkleblock examples section][section merkleblock
+the corresponding [merkle block examples section][section merkleblock
 example].
 
 **Creating A MerkleBlock**
@@ -554,7 +554,7 @@ format. It can be sent in a variety of situations;
   inventory type of `MSG_TX`.
 
 * **MerkleBlock Response:** Bitcoin Core will send it in response to a
-  `getdata` message that requests a merkleblock with an inventory type
+  `getdata` message that requests a merkle block with an inventory type
   of `MSG_MERKLEBLOCK`. (This is in addition to sending a `merkleblock`
   message.) Each `tx` message in this case provides a matched
   transaction from that block.

@@ -140,7 +140,7 @@ message header:
 message headers: message header
 message payload:
 '`merchant_data`': pp merchant data
-merkleblock: merkleblock message
+merkle block:
 '`merkleblock` message': merkleblock message
 '`merkleblock` messages': merkleblock message
 merkle root:
