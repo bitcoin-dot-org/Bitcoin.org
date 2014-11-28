@@ -1,3 +1,8 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
 #### addmultisigaddress
 
 ~~~
@@ -1925,7 +1930,7 @@ getinfo
 
 Prints various information about the node and the network.
 
-![Warning icon](/img/icon_warning.svg)
+![Warning icon](/img/icons/icon_warning.svg)
 **Warning:** `getinfo` will be removed in a later version of Bitcoin
 Core.  Use `getblockchaininfo`, `getnetworkinfo`, or `getwalletinfo`
 instead.
@@ -3222,7 +3227,7 @@ getwork [data]
 Provides a block header which can be hashed to attempt to find the next
 block, and lets a miner return a successful header.
 
-![Warning icon](/img/icon_warning.svg)
+![Warning icon](/img/icons/icon_warning.svg)
 **Warning:** `getwork` will be removed in Bitcoin Core 0.10. Use
 the `getblocktemplate` RPC instead.
 

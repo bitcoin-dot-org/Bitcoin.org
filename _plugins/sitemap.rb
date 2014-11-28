@@ -1,3 +1,6 @@
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 #sitemap.rb generates a sitemap.xml file, which also includes
 #alternate hreflang for each translated version of each page.
 
@@ -24,7 +27,7 @@ module Jekyll
       enabled = ENV['ENABLED_LANGS'];
       enabled = enabled.split(' ') if !enabled.nil?
       Dir.foreach('_translations') do |file|
-        next if file == '.' or file == '..'
+        next if file == '.' or file == '..' or file == 'COPYING'
         lang=file.split('.')[0]
         #Ignore lang if disabled
         if lang != 'en' and !enabled.nil? and !enabled.include?(lang)

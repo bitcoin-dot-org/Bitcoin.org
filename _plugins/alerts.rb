@@ -1,3 +1,6 @@
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 #alerts.rb generates alert pages using files in _alerts
 #and assign them the 'alert' category.
 

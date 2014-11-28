@@ -1,4 +1,6 @@
 ---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
@@ -8,7 +10,7 @@
 	<description>This RSS feed allows to follow Bitcoin events and conferences.</description>
 	<image>
 		<title>Bitcoin conferences and events</title>
-		<url>https://bitcoin.org/img/logo_rss.png</url>
+		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
 		<link>https://bitcoin.org/en/events</link>
 	</image>
 	{% filter_for p in site.conferences sort_by:date %}

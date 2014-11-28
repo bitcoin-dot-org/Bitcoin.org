@@ -1,8 +1,12 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+---
 <!DOCTYPE HTML>
 <html lang="{{ page.lang }}">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta property="og:image" content="https://bitcoin.org/img/opengraph.png" />
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
 {% capture metadescription %}{% translate metadescription %}{% endcapture %}{% if metadescription != '' %}<meta name="description" content="{{ metadescription }}">{% endif %}
@@ -12,7 +16,7 @@
 {% if page.lang == 'bg' or page.lang == 'ko' or page.lang == 'hi' or page.lang == 'pl' or page.lang == 'sl' or page.lang == 'ro' or page.lang == 'ru' or page.lang == 'tr' or page.lang == 'uk' or page.lang == 'zh_CN' or page.lang == 'zh_TW' %}{% lesscss sans.less %}{% endif %}
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
-<link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
 </head>
 <body>
 <div id="detectmobile" class="detectmobile"></div>
@@ -41,7 +45,7 @@
       </ul>
       </li>
     </ul>
-    <a class="logo" href="/{{ page.lang }}/"><img src="/img/logotop.svg" alt="Bitcoin"></a>
+    <a class="logo" href="/{{ page.lang }}/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
     <a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" href="#"></a>
     <div id="langselect" class="langselect"><select onchange="window.location=this.value;">
     {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{% endif %}

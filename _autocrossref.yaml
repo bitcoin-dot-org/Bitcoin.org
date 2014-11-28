@@ -1,4 +1,7 @@
 ---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 ## List of words to match with references in _includes/references.md
 ## in developer documentation, used by autocrossref.rb plugin.
 ## "pattern to match in file" => "reference to give it"

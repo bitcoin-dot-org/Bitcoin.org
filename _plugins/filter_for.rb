@@ -1,3 +1,6 @@
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 #filter_for allows to loop in site.pages sorted and filtered
 #by custom page variables.
 

@@ -1,3 +1,6 @@
+// This file is licensed under the MIT License (MIT) available on
+// http://opensource.org/licenses/MIT.
+
 function pngfix(){
 //Allows IE6 to render transparent png
 var arVersion = navigator.appVersion.split("MSIE")

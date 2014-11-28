@@ -1,3 +1,8 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
 <!-- Terms; must have tooltip description in "quotes"; alphabetical order -->
 [51 percent attack]: /en/developer-guide#term-51-attack "The ability of someone controlling a majority of hashing power to revise transactions history and prevent new transactions from confirming"
 [addr message]: /en/developer-reference#alert "The P2P network message which relays IP addresses and port numbers of active nodes to other nodes and clients, allowing decentralized peer discovery."
@@ -353,6 +358,7 @@
 [core git]: https://github.com/bitcoin/bitcoin
 [core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
 [core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
+[creative commons attribution 3.0 license]: https://creativecommons.org/licenses/by/3.0/
 [DER]: https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
 [dig command]: https://en.wikipedia.org/wiki/Dig_%28Unix_command%29
 [DNS A records]: http://tools.ietf.org/html/rfc1035#section-3.2.2

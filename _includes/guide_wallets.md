@@ -1,3 +1,8 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
 ## Wallets
 
 {% autocrossref %}
@@ -508,7 +513,7 @@ as 128 bits is the the only data the user needs to backup in order to
 derive every key created by a particular wallet program using
 particular settings.
 
-![Warning icon](/img/icon_warning.svg)
+![Warning icon](/img/icons/icon_warning.svg)
  **Warning:** As of this writing, HD wallet programs are not expected to
 be fully compatible, so users must only use the same HD wallet program
 with the same HD-related settings for a particular root seed.
