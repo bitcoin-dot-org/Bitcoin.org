@@ -30,6 +30,7 @@ block:
 block chain:
 block-chain: block chain
 block header:
+block headers: block header
 block height:
 '`block` message': block message
 '`block` messages': block message
@@ -37,6 +38,10 @@ block reward:
 block time:
 block version:
 blocks: block
+blocks-first: blocks-first sync
+blocks-first sync:
+blocks-first IBD: blocks-first sync
+bloom filter:
 broadcast:
 broadcasts: broadcast
 broadcasting:
@@ -115,6 +120,8 @@ HD protocol:
 '`headers` messages': headers message
 high-priority transaction: high-priority transactions
 high-priority transactions:
+IBD: initial block download
+initial block download:
 inputs: input
 input:
 intermediate certificate:
@@ -187,6 +194,8 @@ op codes: op code
 '`op_hash160`': op_hash160
 '`op_return`': op_return
 '`op_verify`': op_verify
+orphan block:
+orphan blocks: orphan block
 outpoint:
 outpoints: outpoint
 outputs: output
@@ -216,6 +225,7 @@ pki:
 '`point()`': point function
 '`pong` message': pong message
 '`pong` messages': pong message
+previous block header hash:
 private key:
 private keys: private key
 proof of work:
@@ -226,6 +236,7 @@ protocol version 106: section protocol versions
 protocol version 209: section protocol versions
 protocol version 311: section protocol versions
 protocol version 31402: section protocol versions
+protocol version 31800: section protocol versions
 protocol version 60000: section protocol versions
 protocol version 60001: section protocol versions
 protocol version 60002: section protocol versions
@@ -267,10 +278,10 @@ script hash:
 secp256k1:
 sequence number:
 sequence numbers: sequence number
-serialized block: section serialized blocks
-serialized blocks: section serialized block
-serialized transaction: raw transaction format
-serialized transactions: raw transaction format
+serialized block:
+serialized blocks: serialized block
+serialized transaction: raw format
+serialized transactions: raw format
 SIGHASH: signature hash
 '`SIGHASH_ANYONECANPAY`': shacp
 '`SIGHASH_ALL`': sighash_all
@@ -522,6 +533,7 @@ Bitcoin Core 0.1.6:
 Bitcoin Core 0.2.9:
 Bitcoin Core 0.3.11:
 Bitcoin Core 0.3.15:
+Bitcoin Core 0.3.18:
 Bitcoin Core 0.6.0:
 Bitcoin Core 0.6.1:
 Bitcoin Core 0.7.0:

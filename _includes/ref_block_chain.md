@@ -21,7 +21,7 @@ serialized header format part of the consensus rules.
 | Bytes | Name                | Data Type | Description
 |-------|---------------------|-----------|----------------
 | 4     | version             | uint32_t  | The [block version][]{:#term-block-version}{:.term} number indicates which set of block validation rules to follow. See the list of block versions below.
-| 32    | previous block hash | char[32]  | A SHA256(SHA256()) hash in internal byte order of the previous block's header.  This ensures no previous block can be changed without also changing this block's header.
+| 32    | [previous block header hash][]{:#term-previous-block-header-hash}{:.term} | char[32]  | A SHA256(SHA256()) hash in internal byte order of the previous block's header.  This ensures no previous block can be changed without also changing this block's header.
 | 32    | merkle root hash    | char[32]  | A SHA256(SHA256()) hash in internal byte order. The merkle root is derived from the hashes of all transactions included in this block, ensuring that none of those transactions can be modified without modifying the header.  See the [merkle trees section][section merkle trees] below.
 | 4     | time                | uint32_t  | The [block time][]{:#term-block-time}{:.term} is a Unix epoch time when the miner started hashing the header (according to the miner).  Must be greater than or equal to the median time of the previous 11 blocks.  Full nodes will not accept blocks with headers more than two hours in the future according to their clock.
 | 4     | nBits               | uint32_t  | An encoded version of the target threshold this block's header hash must be less than or equal to.  See the nBits format described below.

@@ -181,8 +181,8 @@ the fork stronger than the other side.
 Assuming a fork only contains valid
 blocks, normal peers always follow the the most difficult chain
 to recreate and throw away [stale blocks][stale block]{:#term-stale-block}{:.term} belonging to shorter forks.
-(Stale blocks are also sometimes called orphans or orphan blocks, but
-those terms are also used for blocks without a known parent block.)
+(Stale blocks are also sometimes called orphans or orphan blocks<!--noref-->, but
+those terms are also used for true orphan blocks without a known parent block.)
 
 [Long-term forks][long-term fork]{:#term-long-term-fork}{:.term} are possible if different miners work at cross-purposes,
 such as some miners diligently working to extend the block chain at the

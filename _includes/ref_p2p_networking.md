@@ -71,6 +71,7 @@ please [open an issue][docs issue].)
 | 60002   | Bitcoin Core 0.7.0 <br>(Sep 2012)  | [BIP35][]: <br>• Added `mempool` message. <br>• Extended `getdata` message to allow download of memory pool transactions
 | 60001   | Bitcoin Core 0.6.1 <br>(May 2012)  | [BIP31][]: <br>• Added nonce field to `ping` message <br>• Added `pong` message
 | 60000   | Bitcoin Core 0.6.0 <br>(Mar 2012)  | [BIP14][]: <br>• Separated protocol version from Bitcoin Core version
+| 31800   | Bitcoin Core 0.3.18 <br>(Dec 2010) | • Added `getheaders` message and `headers` message.
 | 31402   | Bitcoin Core 0.3.15 <br>(Oct 2010) | • Added time field to `addr` message.
 | 311     | Bitcoin Core 0.3.11 <br>(Aug 2010) | • Added `alert` message.
 | 209     | Bitcoin Core 0.2.9 <br>(May 2010)  | • Added checksum field to message headers.
@@ -146,11 +147,20 @@ one of these unknown types.
 {% autocrossref %}
 
 The `block` message transmits a single serialized block in the format
-described in the [serialized blocks section][section serialized blocks].
-See that section for an example hexdump.
+described in the [serialized blocks section][serialized block].
+See that section for an example hexdump.  It can be sent for two
+different reasons:
 
-It is sent in reply to a `getdata` message which had an inventory type of
-`MSG_BLOCK` and the header hash of the particular block being requested.
+1. **GetData Response:** Nodes will always send it in response to a
+   `getdata` message that requests the block with an inventory
+   type of `MSG_BLOCK` (provided the node has that block available for
+   relay).
+
+2. **Unsolicited:** Some miners will send unsolicited `block` messages
+   broadcasting their newly-mined blocks to all of their peers. Many
+   mining pools do the same thing, although some may be misconfigured to
+   send the block from multiple nodes, possibly sending the same block
+   to some peers more than once.
 
 {% endautocrossref %}
 
@@ -235,6 +245,8 @@ identical to the `inv` message; only the message header differs.
 
 {% autocrossref %}
 
+*Added in protocol version 31800.*
+
 The `getheaders` message requests a `headers` message that provides block headers
 starting from a particular point in the block chain. It allows a
 peer which has been disconnected or started for the first time to get
@@ -245,15 +257,21 @@ with one minor difference: the `inv` reply to the `getblocks` message
 will include no more than 500 block header hashes; the `headers` reply
 to the `getheaders` message will include as many as 2,000 block headers.
 
+{% endautocrossref %}
+
 #### Headers
 {% include helpers/subhead-links.md %}
+
+{% autocrossref %}
+
+*Added in protocol version 31800.*
 
 The `headers` message sends one or more block headers to a node which
 previously requested certain headers with a `getheaders` message.
 
 | Bytes    | Name    | Data Type        | Description
 |----------|---------|------------------|-----------------
-| *Varies* | count   | compactSize uint | Number of block headers up to a maximum of 2,000.
+| *Varies* | count   | compactSize uint | Number of block headers up to a maximum of 2,000.  Note: headers-first sync assumes the sending node will send the maximum number of headers whenever possible.
 | *Varies* | headers | block_header     | Block headers: each 80-byte block header is in the format described in the [block headers section][block header] with an additional 0x00 suffixed.  This 0x00 is called the transaction count, but because the headers message doesn't include any transactions, the transaction count is always zero.
 
 The following annotated hexdump shows a `headers` message.  (The message
