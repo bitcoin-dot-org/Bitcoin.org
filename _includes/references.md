@@ -22,6 +22,8 @@ http://opensource.org/licenses/MIT.
 [block reward]: /en/developer-reference#term-block-reward "New satoshis given to a miner for creating one of the first 6,929,999 blocks"
 [block time]: /en/developer-reference#term-block-time "The time field in the block header"
 [block version]: /en/developer-reference#term-block-version "The version field in the block header"
+[blocks-first sync]: /en/developer-guide#blocks-first "Synchronizing the block chain by downloading each block from a peer and then validating it; compare to headers-first sync"
+[bloom filter]: /en/developer-guide#bloom-filters "A filter used primarily by SPV nodes to request only matching transactions and merkle blocks from full nodes"
 [broadcast]: /en/developer-guide#transaction-broadcasting "Sending transactions or blocks to all other peers on the Bitcoin network (compare to privately transmitting to a single peer or partner"
 [broadcasts]: /en/developer-guide#transaction-broadcasting "Sending transactions or blocks to all other peers on the Bitcoin network (compare to privately transmitting to a single peer or partner"
 [broadcasting]: /en/developer-guide#transaction-broadcasting "Sending transactions or blocks to all other peers on the Bitcoin network (compare to privately transmitting to a single peer or partner)"
@@ -64,8 +66,11 @@ http://opensource.org/licenses/MIT.
 [hard fork]: /en/developer-guide#term-hard-fork "A permanent divergence in the the block chain, commonly occurs when non-upgraded nodes can't validate blocks created by upgraded nodes following newer consensus rules."
 [hardened extended private key]: /en/developer-guide#term-hardened-extended-private-key "A private key whose corresponding public key cannot derive child keys"
 [HD protocol]: /en/developer-guide#term-hd-protocol "The Hierarchical Deterministic (HD) key creation and transfer protocol"
+[headers chain]: /en/developer-guide#term-headers-chain "A chain of headers with each header linking to the header that preceded it; the most-difficult-to-recreate valid chain is the best headers chain"
 [headers message]: /en/developer-reference#headers "A P2P protocol message containing one or more block headers"
+[headers-first sync]: /en/developer-guide#headers-first "Synchronizing the block chain by downloading and partially-verifying headers before downloading full blocks; compare to blocks-first sync"
 [high-priority transactions]: /en/developer-guide#term-high-priority-transactions "Transactions which don't pay a transaction fee; only transactions spending long-idle outputs are eligible"
+[initial block download]: /en/developer-guide#initial-block-download "The process used by a new node (or long-offline node) to download a large number of blocks to catch up to the tip of the best block chain"
 [input]: /en/developer-guide#term-input "The input to a transaction linking to the output of a previous transaction which permits spending of satoshis"
 [inputs]: /en/developer-guide#term-input "The input to a transaction linking to the output of a previous transaction which permits spending of satoshis"
 [intermediate certificate]: /en/developer-examples#term-intermediate-certificate "A intermediate certificate authority certificate which helps connect a leaf (receiver) certificate to a root certificate authority"
@@ -113,6 +118,7 @@ http://opensource.org/licenses/MIT.
 [op_return]: /en/developer-reference#term-op-return "Operation which terminates the script in failure"
 [op_verify]: /en/developer-reference#term-op-verify "Operation which terminates the script if the entry below it on the stack is non-true (zero)"
 [outpoint]: /en/developer-reference#outpoint "The structure used to refer to a particular transaction output, consisting of a 32-byte TXID and a 4-byte output index number (vout)."
+[orphan block]: /en/developer-guide#orphan-blocks "Blocks whose parent block has not been processed by the local node; not to be confused with stale blocks"
 [output]: /en/developer-guide#term-output "The output of a transaction which transfers value to a pubkey script"
 [output index]: /en/developer-guide#term-output-index "The sequentially-numbered index of outputs in a single transaction starting from 0"
 [P2PKH]: /en/developer-guide#term-p2pkh "A pubkey script which Pays To PubKey Hashes (P2PKH), allowing spending of satoshis to anyone with a Bitcoin address"
@@ -132,6 +138,7 @@ http://opensource.org/licenses/MIT.
 [PKI]: /en/developer-examples#term-pki "Public Key Infrastructure; usually meant to indicate the X.509 certificate system used for HTTP Secure (https)."
 [point function]: /en/developer-guide#term-point-function "The ECDSA function used to create a public key from a private key"
 [pong message]: /en/developer-reference#pong "A P2P network message used to reply to a P2P network ping message"
+[previous block header hash]: /en/developer-reference#term-previous-block-header-hash "A field in the block header which contains the SHA256(SHA256()) hash of the previous block's header"
 [private key]: /en/developer-guide#term-private-key "The private portion of a keypair which can create signatures which other people can verify using the public key"
 [private keys]: /en/developer-guide#term-private-key "The private portion of a keypair which can create signatures which other people can verify using the public key"
 [pubkey hash]: /en/developer-guide#term-pubkey-hash "The hash of a public key which can be included in a P2PKH output"
@@ -159,8 +166,9 @@ http://opensource.org/licenses/MIT.
 [RPC byte order]: /en/developer-reference#hash-byte-order "A hash digest displayed with the byte order reversed; used in Bitcoin Core RPCs and other software."
 [satoshi]: /en/developer-guide#term-satoshi "The smallest unit of Bitcoin value; 0.00000001 bitcoins.  Also used generically for any value of bitcoins"
 [satoshis]: /en/developer-guide#term-satoshi "The smallest unit of Bitcoin value; 0.00000001 bitcoins.  Also used generically for any value of bitcoins"
-[sequence number]: /en/developer-guide#term-sequence-number "A number intended to allow time locked transactions to be updated before being finalized; not currently used except to disable locktime in a transaction"
 [script hash]: /en/developer-guide#term-script-hash "The hash of a redeem script used to create a P2SH output"
+[sequence number]: /en/developer-guide#term-sequence-number "A number intended to allow time locked transactions to be updated before being finalized; not currently used except to disable locktime in a transaction"
+[serialized block]: /en/developer-reference#serialized-blocks "A block in the serialized form used to compute block byte size"
 [sha_shacp]: /en/developer-guide#term-sighash-all-sighash-anyonecanpay "Signature hash type which allows other people to contribute satoshis without changing the number of satoshis sent nor where they go"
 [shacp]: /en/developer-guide#term-sighash-anyonecanpay "A signature hash type which modifies the behavior of other signature hash types"
 [shn_shacp]: /en/developer-guide#term-sighash-none-sighash-anyonecanpay "Signature hash type which allows unfettered modification of a transaction"
@@ -175,7 +183,8 @@ http://opensource.org/licenses/MIT.
 [spv]: /en/developer-guide#simplified-payment-verification-spv "A method for verifying particular transactions were included in blocks without downloading the entire contents of the block chain"
 [ssl signature]: /en/developer-examples#term-ssl-signature "Signatures created and recognized by major SSL implementations such as OpenSSL"
 [stack]: /en/developer-guide#term-stack "An evaluation stack used in Bitcoin's script language"
-[stale block]: /en/developer-guide#term-stale-block "Blocks which were successfully mined but which aren't included on the current valid block chain"
+[stale block]: /en/developer-guide#term-stale-block "Blocks which were successfully mined but which aren't included on the current valid block chain; not to be confused with orphan blocks"
+[standard block relay]: /en/developer-guide#term-standard-block-relay "The usual method miners and peers use to relay blocks by announcing them with an inv message and then waiting for getdata requests"
 [standard script]: /en/developer-guide#standard-transactions "A pubkey script which matches the IsStandard() patterns specified in Bitcoin Core---or a transaction containing only standard outputs. Only standard transactions are mined or broadcast by peers running the default Bitcoin Core software"
 [start string]: /en/developer-reference#term-start-string "Four defined bytes which start every message in the P2P protocol to allow seeking to the next message"
 [target]: /en/developer-guide#term-target "The threshold below which a block header hash must be in order for the block to be added to the block chain"
@@ -191,6 +200,7 @@ http://opensource.org/licenses/MIT.
 [unconfirmed]: /en/developer-guide#term-unconfirmed-transactions "A transaction which has not yet been added to the block chain"
 [unconfirmed transactions]: /en/developer-guide#term-unconfirmed-transactions "A transaction which has not yet been added to the block chain"
 [unique addresses]: /en/developer-guide#term-unique-address "Address which are only used once to protect privacy and increase security"
+[unsolicited block push]: /en/developer-guide#term-unsolicited-block-push "When a miner sends its own newly-mined block directly to its peers without using the standard block relay method."
 [URI QR Code]: /en/developer-guide#term-uri-qr-code "A QR code containing a bitcoin: URI"
 [utxo]: /en/developer-guide#term-utxo "Unspent Transaction Output (UTXO) holding satoshis which have not yet been spent"
 [verack message]: /en/developer-reference#verack "A P2P network message sent in reply to a version message to confirm a connection has been established"
@@ -284,6 +294,8 @@ http://opensource.org/licenses/MIT.
 [Bitcoin Core 0.8.0]: /en/release/v0.8.0
 [Bitcoin Core 0.9.0]: /en/release/v0.9.0
 [Bitcoin Core 0.9.3]: /en/release/v0.9.3
+<!-- TODOv0.10 update this to point to 0.10 branch when branched; then to 0.10 release notes when released -->
+[Bitcoin Core 0.10]: https://github.com/bitcoin/bitcoin
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [bitcoinpdf]: https://bitcoin.org/bitcoin.pdf
 [core executable]: /en/download
@@ -310,7 +322,6 @@ http://opensource.org/licenses/MIT.
 [section merkle trees]: /en/developer-reference#merkle-trees
 [section merkleblock example]: /en/developer-examples#parsing-a-merkleblock
 [section protocol versions]: /en/developer-reference#protocol-versions
-[section serialized blocks]: /en/developer-reference#serialized-blocks
 [section simple raw transaction]: /en/developer-examples#simple-raw-transaction
 [section verifying payment]: /en/developer-guide#verifying-payment
 [signature script modification warning]: /en/developer-reference#signature_script_modification_warning
@@ -348,8 +359,10 @@ http://opensource.org/licenses/MIT.
 [Bitcoin Core 0.2.9]: https://github.com/bitcoin/bitcoin/commit/42605ce8bcc9bd01b86491c74fee14de77960868
 [Bitcoin Core 0.3.11]: https://github.com/bitcoin/bitcoin/commit/343328c6b8db85e58a1feea85f0d10e62967fa19
 [Bitcoin Core 0.3.15]: https://github.com/bitcoin/bitcoin/commit/c891967b6fcab2e8dc4ce0c787312b36c07efa4d
+[Bitcoin Core 0.3.18]: https://github.com/bitcoin/bitcoin/commit/82201801336f64ee77851b9eaab9383ee4e442f0
 [bitcoin core fee drop commit]: https://github.com/bitcoin/bitcoin/commit/6a4c196dd64da2fd33dc7ae77a8cdd3e4cf0eff1
 [Bitcoin Core issue #2381]: https://github.com/bitcoin/bitcoin/issues/2381
+[Bitcoin Core pull #4468]: https://github.com/bitcoin/bitcoin/pull/4468
 [Bitcoin Seeder]: https://github.com/sipa/bitcoin-seeder
 [bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation
 [BitcoinJ]: http://bitcoinj.github.io
