@@ -145,6 +145,7 @@ message headers: message header
 message payload:
 '`merchant_data`': pp merchant data
 merkle block:
+merkle blocks: merkle block
 '`merkleblock` message': merkleblock message
 '`merkleblock` messages': merkleblock message
 merkle root:

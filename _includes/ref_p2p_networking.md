@@ -809,7 +809,7 @@ section][message header] for an example of a message without a payload.
 *Added in protocol version 70001 as described by BIP37.*
 
 The `filterload` message tells the receiving peer to filter all relayed
-transactions and requested merkleblocks through the provided filter.
+transactions and requested merkle blocks through the provided filter.
 This allows clients to receive transactions relevant to their wallet
 plus a configurable rate of false positive transactions which can
 provide plausible-deniability privacy.
@@ -819,8 +819,8 @@ provide plausible-deniability privacy.
 | *Varies* | nFilterBytes | uint8_t[] | Number of bytes in the following filter bit field.
 | *Varies* | filter       | uint8_t[] | A bit field of arbitrary byte-aligned size. The maximum size is 36,000 bytes.
 | 4        | nHashFuncs   | uint32_t  | The number of hash functions to use in this filter. The maximum value allowed in this field is 50.
-| 4        | nTweak       | uint32_t  | A arbitrary value to add to the seed value in the hash function used by the bloom filter.
-| 1        | nFlags       | uint8_t   | A set of flags that control how outpoints corresponding to a matched pubkey script are are added to the filter. See the table in the Updating A Bloom Filter subsection below.
+| 4        | nTweak       | uint32_t  | An arbitrary value to add to the seed value in the hash function used by the bloom filter.
+| 1        | nFlags       | uint8_t   | A set of flags that control how outpoints corresponding to a matched pubkey script are added to the filter. See the table in the Updating A Bloom Filter subsection below.
 
 The annotated hexdump below shows a `filterload` message. (The message
 header has been omitted.)  For an example of how this payload was
