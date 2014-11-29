@@ -411,7 +411,7 @@ for (var i = 0, n = tags.length; i < n; i++) {
 }
 for (var i = 0, n = nodes.length; i < n; i++) {
 	if (!nodes[i].id) continue;
-	if (nodes[i].getElementsByTagName('A').length > 0) return;
+	if (nodes[i].getElementsByTagName('A').length > 0 && nodes[i].getElementsByTagName('A')[0].innerHTML == '') return;
 	addClass(nodes[i], 'anchorAf');
 	var anc = document.createElement('A');
 	anc.href = '#' + nodes[i].id;

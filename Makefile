@@ -128,11 +128,3 @@ check-for-duplicate-header-ids:
 ## report a false positive if we legitimately have an id ending in '-1',
 ## but that should be easy to work around if it ever happens.
 	$S grep '<h[1-6][^>]\+id="[^"]\+-1"' _site/en/developer-* | eval $(ERROR_ON_OUTPUT)
-
-check-for-headers-with-hrefs:
-## Subheadings with Kramdown-generated id tags break anchor link
-## affordance if their text includes any links (hrefs), so error if any
-## links are detectd between <h[2-6]> and </h[2-6> header tags. If we
-## ever do need a header with a link, we can revise the pattern below to
-## only match Kramdown-generated id tags
-	$S grep '<\(h[2-6]\).*\?>[^>]\+href=.*</\1>' _site/en/developer-* | eval $(ERROR_ON_OUTPUT)
