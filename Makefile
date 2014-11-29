@@ -39,7 +39,7 @@ pre-build-tests-fast: check-for-non-ascii-urls
 post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
     check-for-missing-anchors check-for-broken-markdown-reference-links \
     check-for-broken-kramdown-tables check-for-duplicate-header-ids \
-    check-for-headers-with-hrefs
+    check-for-headers-containing-auto-link
 
 ## All pre-build tests, including those which might take multiple minutes
 pre-build-tests: pre-build-tests-fast
@@ -128,3 +128,9 @@ check-for-duplicate-header-ids:
 ## report a false positive if we legitimately have an id ending in '-1',
 ## but that should be easy to work around if it ever happens.
 	$S grep '<h[1-6][^>]\+id="[^"]\+-1"' _site/en/developer-* | eval $(ERROR_ON_OUTPUT)
+
+check-for-headers-containing-auto-link:
+## The autocrossref plugin can mess up subheadings (h2, etc), so ensure
+## none of the generated subheadings contain the string
+## 'class="auto-link"' produced by autocrossref
+	$S grep '<\(h[2-6]\).*\?>[^>]\+class="auto-link".*</\1>' _site/en/developer-* | eval $(ERROR_ON_OUTPUT)
