@@ -5,6 +5,234 @@ http://opensource.org/licenses/MIT.
 
 ## P2P Network
 
+### Creating A Bloom Filter
+
+{% autocrossref %}
+
+In this section, we'll use variable names that correspond to the field
+names in the [`filterload` message documentation][filterload message].
+Each code block precedes the paragraph describing it.
+
+{% highlight python %}
+#!/usr/bin/env python
+
+BYTES_MAX = 36000
+FUNCS_MAX = 50
+
+nFlags = 0
+{% endhighlight %}
+
+We start by setting some maximum values defined in BIP37: the maximum
+number of bytes allowed in a filter and the maximum number of hash
+functions used to hash each piece of data.  We also set nFlags to zero,
+indicating we don't want the remote node to update the filter for us.
+(We won't use nFlags again in the sample program, but real programs will
+need to use it.)
+
+{% highlight python %}
+n = 1
+p = 0.0001
+{% endhighlight %}
+
+We define the number (n) of elements we plan to insert into the filter
+and the false positive rate (p) we want to help protect our privacy. For
+this example, we will set *n* to one element and *p* to a rate of
+1-in-10,000 to produce a small and precise filter for illustration
+purposes. In actual use, your filters will probably be much larger.
+
+{% highlight python %}
+from math import log
+nFilterBytes = int(min((-1 / log(2)**2 * n * log(p)) / 8, BYTES_MAX))
+nHashFuncs = int(min(nFilterBytes * 8 / n * log(2), FUNCS_MAX))
+
+from bitarray import bitarray  # from pypi.python.org/pypi/bitarray
+vData = nFilterBytes * 8 * bitarray('0', endian="little")
+{% endhighlight %}
+
+Using the formula described in BIP37, we calculate the ideal size of the
+filter (in bytes) and the ideal number of hash functions to use. Both
+are truncated down to the nearest whole number and both are also
+constrained to the maximum values we defined earlier. The results of
+this particular fixed computation are 2 filter bytes and 11 hash
+functions. We then use *nFilterBytes* to create a little-endian bit
+array of the appropriate size.
+
+{% highlight python %}
+nTweak = 0
+{% endhighlight %}
+
+We also should choose a value for *nTweak*.  In this case, we'll simply
+use zero.
+
+{% highlight python %}
+import pyhash  # from https://github.com/flier/pyfasthash
+murmur3 = pyhash.murmur3_32()
+
+def bloom_hash(nHashNum, data):
+    seed = (nHashNum * 0xfba4c795 + nTweak) & 0xffffffff
+    return( murmur3(data, seed=seed) % (nFilterBytes * 8) )
+{% endhighlight %}
+
+We setup our hash function template using the formula and 0xfba4c795
+constant set in BIP37. Note that we limit the size of the seed to four
+bytes and that we're returning the result of the hash modulo the size of
+the filter in bits.
+
+{% highlight python %}
+data_to_hash = "019f5b01d4195ecbc9398fbf3c3b1fa9" \
+               + "bb3183301d7a1fb3bd174fcfa40a2b65"
+data_to_hash = data_to_hash.decode("hex")
+{% endhighlight %}
+
+For the data to add to the filter, we're adding a TXID. Note that the
+TXID is in internal byte order.
+
+{% highlight python %}
+print "                             Filter (As Bits)"
+print "nHashNum   nIndex   Filter   0123456789abcdef"
+print "~~~~~~~~   ~~~~~~   ~~~~~~   ~~~~~~~~~~~~~~~~"
+for nHashNum in range(nHashFuncs):
+    nIndex = bloom_hash(nHashNum, data_to_hash)
+
+    ## Set the bit at nIndex to 1
+    vData[nIndex] = True
+
+    ## Debug: print current state
+    print '      {0:2}      {1:2}     {2}   {3}'.format(
+        nHashNum,
+        hex(int(nIndex)),
+        vData.tobytes().encode("hex"),
+        vData.to01()
+    )
+
+print
+print "Bloom filter:", vData.tobytes().encode("hex")
+{% endhighlight %}
+
+Now we use the hash function template to run a slightly different hash
+function for *nHashFuncs* times. The result of each function being run
+on the transaction is used as an index number: the bit at that index is
+set to 1. We can see this in the printed debugging output:
+
+{% highlight text %}
+                             Filter (As Bits)
+nHashNum   nIndex   Filter   0123456789abcdef
+~~~~~~~~   ~~~~~~   ~~~~~~   ~~~~~~~~~~~~~~~~
+       0      0x7     8000   0000000100000000
+       1      0x9     8002   0000000101000000
+       2      0xa     8006   0000000101100000
+       3      0x2     8406   0010000101100000
+       4      0xb     840e   0010000101110000
+       5      0x5     a40e   0010010101110000
+       6      0x0     a50e   1010010101110000
+       7      0x8     a50f   1010010111110000
+       8      0x5     a50f   1010010111110000
+       9      0x8     a50f   1010010111110000
+      10      0x4     b50f   1010110111110000
+
+Bloom filter: b50f
+{% endhighlight %}
+
+Notice that in iterations 8 and 9, the filter did not change because the
+corresponding bit was already set in a previous iteration (5 and 7,
+respectively).  This is a normal part of bloom filter operation.
+
+We only added one element to the filter above, but we could repeat the
+process with additional elements and continue to add them to the same
+filter. (To maintain the same false-positive rate, you would need a
+larger filter size as computed earlier.)
+
+Note: for a more optimized Python implementation with fewer external
+dependencies, see [python-bitcoinlib's][python-bitcoinlib] bloom filter
+module which is based directly on Bitcoin Core's C++ implementation.
+
+Using the `filterload` message format, the complete filter created above 
+would be the binary form of the annotated hexdump shown below:
+
+{% highlight text %}
+02 ......... Filter bytes: 2
+b50f ....... Filter: 1010 1101 1111 0000
+0b000000 ... nHashFuncs: 11
+00000000 ... nTweak: 0/none
+00 ......... nFlags: BLOOM_UPDATE_NONE
+{% endhighlight %}
+
+{% endautocrossref %}
+
+### Evaluating A Bloom Filter
+
+{% autocrossref %}
+
+Using a bloom filter to find matching data is nearly identical to
+constructing a bloom filter---except that at each step we check to see
+if the calculated index bit is set in the existing filter.
+
+{% highlight python %}
+vData = bitarray(endian='little')
+vData.frombytes("b50f".decode("hex"))
+nHashFuncs = 11
+nTweak = 0
+nFlags = 0
+{% endhighlight %}
+
+Using the bloom filter created above, we import its various parameters.
+Note, as indicated in the section above, we won't actually use *nFlags*
+to update the filter.
+
+{% highlight python %}
+def contains(nHashFuncs, data_to_hash):
+    for nHashNum in range(nHashFuncs):
+        ## bloom_hash as defined in previous section
+        nIndex = bloom_hash(nHashNum, data_to_hash)
+
+        if vData[nIndex] != True:
+            print "MATCH FAILURE: Index {0} not set in {1}".format(
+                hex(int(nIndex)),
+                vData.to01()
+            )
+            return False
+{% endhighlight %}
+
+We define a function to check an element against the provided filter.
+When checking whether the filter might contain an element, we test to
+see whether a particular bit in the filter is already set to 1 (if it
+isn't, the match fails).
+
+{% highlight python %}
+## Test 1: Same TXID as previously added to filter
+data_to_hash = "019f5b01d4195ecbc9398fbf3c3b1fa9" \
+               + "bb3183301d7a1fb3bd174fcfa40a2b65"
+data_to_hash = data_to_hash.decode("hex")
+contains(nHashFuncs, data_to_hash)
+{% endhighlight %}
+
+Testing the filter against the data element we previously added, we get
+no output (indicating a possible match).  Recall that bloom filters have
+a zero false negative rate---so they should always match the inserted
+elements.
+
+{% highlight python %}
+## Test 2: Arbitrary string
+data_to_hash = "1/10,000 chance this ASCII string will match"
+contains(nHashFuncs, data_to_hash)
+{% endhighlight %}
+
+Testing the filter against an arbitrary element, we get the failure
+output below.  Note: we created the filter with a 1-in-10,000 false
+positive rate (which was rounded up somewhat when we truncated), so it
+was possible this arbitrary string would've matched the filter anyway.
+It is not possible to set a bloom filter to a false positive rate of
+zero, so your program will always have to deal with false positives.
+The output below shows us that one of the hash functions returned an
+index number of 0x06, but that bit wasn't set in the filter, causing the
+match failure:
+
+{% highlight text %}
+MATCH FAILURE: Index 0x6 not set in 1010110111110000
+{% endhighlight %}
+
+{% endautocrossref %}
+
 ### Retrieving A MerkleBlock
 
 {% autocrossref %}
@@ -82,12 +310,17 @@ script, but we will sleep a short bit and send back our own `verack`
 message as if we had accepted their `version` message.
 
 {% highlight python %}
-send("filterload", "02b50f0b0000000000000000")
+send("filterload", 
+    "02"  ........ Filter bytes: 2
+    "b50f" ....... Filter: 1010 1101 1111 0000
+    "0b000000" ... nHashFuncs: 11
+    "00000000" ... nTweak: 0/none
+    "00" ......... nFlags: BLOOM_UPDATE_NONE
+)
 {% endhighlight %}
 
-We set a bloom filter with the `filterload` message. This filter was
-quickly created using [python-bitcoinlib][]'s bloom module. <!-- TODO:
-consider expanding this section once filterload has been documented. -->
+We set a bloom filter with the `filterload` message. This filter is
+described in the two preceeding sections.
 
 {% highlight python %}
 send("getdata",

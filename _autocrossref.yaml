@@ -66,6 +66,8 @@ confirmations:
 confirmed transactions:
 consensus:
 consensus rules:
+data-pushing op code:
+data-pushing op codes: data-pushing op code
 denomination:
 denominations: denomination
 DER format: der
@@ -90,6 +92,8 @@ fiat:
 '`filteradd` messages': filteradd message
 '`filterclear` message': filterclear message
 '`filterclear` messages': filterclear message
+'`filterload` message': filterload message
+'`filterload` messages': filterload message
 fork:
 forks: fork
 genesis block:
@@ -144,6 +148,7 @@ message headers: message header
 message payload:
 '`merchant_data`': pp merchant data
 merkle block:
+merkle blocks: merkle block
 '`merkleblock` message': merkleblock message
 '`merkleblock` messages': merkleblock message
 merkle root:
@@ -178,6 +183,8 @@ op codes: op code
 '`op_hash160`': op_hash160
 '`op_return`': op_return
 '`op_verify`': op_verify
+outpoint:
+outpoints: outpoint
 outputs: output
 output:
 output index:

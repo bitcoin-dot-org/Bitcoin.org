@@ -699,7 +699,9 @@ introduced in protocol version 311.
 The annotated hexdump below shows an `alert` message. (The message
 header has been omitted.)
 
-<!-- example below from Bitcoin Wiki; TODO: replace with a more recent
+<!-- example below from Bitcoin Wiki but it's a network capture so I
+(@harding) don't think it is subject to the wiki's copyright license; I
+think it's public domain. TODO: replace with a more recent
 alert the next time one is live on the network. -->
 
 {% highlight text %}
@@ -751,21 +753,24 @@ alert.cpp] source code for the parameters of this message.
 
 *Added in protocol version 70001 as described by BIP37.*
 
-The `filteradd` message tells the receiving peer to add a single object to
-a previously-set bloom filter, such as a new public key. The object is
+The `filteradd` message tells the receiving peer to add a single element to
+a previously-set bloom filter, such as a new public key. The element is
 sent directly to the receiving peer; the peer then uses the parameters set
-in the `filterload` message to add the object to the bloom filter.
+in the `filterload` message to add the element to the bloom filter.
 
-Because the object is sent directly to the receiving peer, there is no
-obfuscation of the object and none of the plausible-deniability privacy
+Because the element is sent directly to the receiving peer, there is no
+obfuscation of the element and none of the plausible-deniability privacy
 provided by the bloom filter. Clients that want to maintain greater
 privacy should recalculate the bloom filter themselves and send a new
 `filterload` message with the recalculated bloom filter.
 
-| Bytes    | Name         | Data Type        | Description
-|----------|--------------|------------------|-----------------
-| *Varies* | object bytes | compactSize uint | The number of bytes in the following object field.
-| *Varies* | object       | uint8_t[]        | The object to add to the current filter.  Maximum of 520 bytes, which is the maximum size of an object which can be pushed onto the stack in a pubkey or signature script.  Objects must be sent in the byte order they would use when appearing in a raw transaction; for example, hashes should be sent in internal byte order.
+| Bytes    | Name          | Data Type        | Description
+|----------|---------------|------------------|-----------------
+| *Varies* | element bytes | compactSize uint | The number of bytes in the following element field.
+| *Varies* | element       | uint8_t[]        | The element to add to the current filter.  Maximum of 520 bytes, which is the maximum size of an element which can be pushed onto the stack in a pubkey or signature script.  Elements must be sent in the byte order they would use when appearing in a raw transaction; for example, hashes should be sent in internal byte order.
+
+Note: a `filteradd` message will not be accepted unless a filter was
+previously set with the `filterload` message.
 
 The annotated hexdump below shows a `filteradd` message adding a TXID.
 (The message header has been omitted.) This TXID appears in the same
@@ -774,9 +779,9 @@ block used for the example hexdump in the `merkleblock` message; if that
 six hashes are returned instead of four.
 
 {% highlight text %}
-20 ................................. Object bytes: 32
+20 ................................. Element bytes: 32
 fdacf9b3eb077412e7a968d2e4f11b9a
-9dee312d666187ed77ee7d26af16cb0b ... Object (A TXID)
+9dee312d666187ed77ee7d26af16cb0b ... Element (A TXID)
 {% endhighlight %}
 
 {% endautocrossref %}
@@ -802,9 +807,242 @@ section][message header] for an example of a message without a payload.
 {% endautocrossref %}
 
 
-<!-- TODO: filterload message -->
+#### FilterLoad
 
+{% autocrossref %}
 
+*Added in protocol version 70001 as described by BIP37.*
+
+The `filterload` message tells the receiving peer to filter all relayed
+transactions and requested merkle blocks through the provided filter.
+This allows clients to receive transactions relevant to their wallet
+plus a configurable rate of false positive transactions which can
+provide plausible-deniability privacy.
+
+| Bytes    | Name         | Data Type | Description
+|----------|--------------|-----------|---------------
+| *Varies* | nFilterBytes | uint8_t[] | Number of bytes in the following filter bit field.
+| *Varies* | filter       | uint8_t[] | A bit field of arbitrary byte-aligned size. The maximum size is 36,000 bytes.
+| 4        | nHashFuncs   | uint32_t  | The number of hash functions to use in this filter. The maximum value allowed in this field is 50.
+| 4        | nTweak       | uint32_t  | An arbitrary value to add to the seed value in the hash function used by the bloom filter.
+| 1        | nFlags       | uint8_t   | A set of flags that control how outpoints corresponding to a matched pubkey script are added to the filter. See the table in the Updating A Bloom Filter subsection below.
+
+The annotated hexdump below shows a `filterload` message. (The message
+header has been omitted.)  For an example of how this payload was
+created, see the [filterload example][section creating a bloom filter].
+
+{% highlight text %}
+02 ......... Filter bytes: 2
+b50f ....... Filter: 1010 1101 1111 0000
+0b000000 ... nHashFuncs: 11
+00000000 ... nTweak: 0/none
+00 ......... nFlags: BLOOM_UPDATE_NONE
+{% endhighlight %}
+
+**Initializing A Bloom Filter**
+
+Filters have two core parameters: the size of the bit field and the
+number of hash functions to run against each data element. The following
+formulas from BIP37 will allow you to automatically select appropriate
+values based on the number of elements you plan to insert into the
+filter (*n*) and the false positive rate (*p*) you desire to maintain
+plausible deniability.
+
+* Size of the bit field in bytes (*nFilterBytes*), up to a maximum of
+  36,000: `(-1 / log(2)**2 * n * log(p)) / 8`
+
+* Hash functions to use (*nHashFuncs*), up to a maximum of 50:
+  `nFilterBytes * 8 / n * log(2)`
+
+Note that the filter matches parts of transactions (transaction
+elements), so the false positive rate is relative to the number of
+elements checked---not the number of transactions checked. Each normal
+transaction has a minimum of four matchable elements (described in the
+comparison subsection below), so a filter with a false-positive rate of
+1 percent will match about 4 percent of all transactions at a minimum.
+
+According to BIP37, the formulas and limits described above provide
+support for bloom filters containing 20,000 items with a false positive
+rate of less than 0.1 percent or 10,000 items with a false positive rate
+of less than 0.0001 percent.
+
+Once the size of the bit field is known, the bit field should be
+initialized as all zeroes.
+
+**Populating A Bloom Filter**
+
+The bloom filter is populated using between 1 and 50 unique hash
+functions (the number specified per filter by the *nHashFuncs*
+field). Instead of using up to 50 different hash function
+implementations, a single implementation is used with a unique seed
+value for each function.
+
+The seed is `nHashNum * 0xfba4c795 + nTweak` as a *uint32\_t*, where the values
+are:
+
+* **nHashNum** is the sequence number<!--noref--> for this hash
+  function, starting at 0 for the first hash iteration and increasing up
+  to the value of the *nHashFuncs* field (minus one) for the last hash
+  iteration.
+
+* **0xfba4c795** is a constant optimized to create large differences in
+  the seed for different values of *nHashNum*. 
+
+* **nTweak** is a per-filter constant set by the client to require the use
+  of an arbitrary set of hash functions.
+
+If the seed resulting from the formula above is larger than four bytes,
+it must be truncated to its four most significant bytes (for example,
+`0x8967452301 & 0xffffffff → 0x67452301`).
+
+The actual hash function implementation used is the [32-bit Murmur3 hash
+function][murmur3].
+
+![Warning icon](/img/icon_warning.svg)
+**Warning:** the Murmur3 hash function has separate 32-bit and 64-bit
+versions that produce different results for the same input.  Only the
+32-bit Murmur3 version is used with Bitcoin bloom filters.
+
+The data to be hashed can be any transaction element which the bloom
+filter can match. See the next subsection for the list of transaction
+elements checked against the filter. The largest element which can be
+matched is a script data push of 520 bytes, so the data should never
+exceed 520 bytes.
+
+The example below from Bitcoin Core [bloom.cpp][core bloom.cpp hash] combines
+all the steps above to create the hash function template. The seed is
+the first parameter; the data to be hashed is the second parameter. The
+result is a uint32\_t modulo the size of the bit field in bits.
+
+{% highlight c++ %}
+MurmurHash3(nHashNum * 0xFBA4C795 + nTweak, vDataToHash) % (vData.size() * 8)
+{% endhighlight %}
+
+Each data element to be added to the filter is hashed by *nHashFuncs*
+number of hash functions. Each time a hash function is run, the result
+will be the index number (*nIndex*) of a bit in the bit field. That bit
+must be set to 1. For example if the filter bit field was `00000000` and
+the result is 5, the revised filter bit field is `00000100` (the first bit
+is bit 0).
+
+It is expected that sometimes the same index number will be returned
+more than once when populating the bit field; this does not affect the
+algorithm---after a bit is set to 1, it is never changed back to 0.
+
+After all data elements have been added to the filter, each set of eight
+bits is converted into a little-endian byte. These bytes are the value
+of the *filter* field.
+
+**Comparing Transaction Elements To A Bloom Filter**
+
+To compare an arbitrary data element against the bloom filter, it is
+hashed using the same parameters used to create the bloom filter.
+Specifically, it is hashed *nHashFuncs* times, each time using the same
+*nTweak* provided in the filter, and the resulting output is modulo the
+size of the bit field provided in the *filter* field.  After each hash is
+performed, the filter is checked to see if the bit at that indexed
+location is set.  For example if the result of a hash is `5` and the
+filter is `01001110`, the bit is considered set.
+
+If the result of every hash points to a set bit, the filter matches. If
+any of the results points to an unset bit, the filter does not match.
+
+The following transaction elements are compared against bloom filters.
+All elements will be hashed in the byte order used in blocks (for
+example, TXIDs will be in internal byte order).
+
+* **TXIDs:** the transaction's SHA256(SHA256()) hash.
+
+* **Outpoints:** each 36-byte outpoint used this transaction's input
+  section is individually compared to the filter.
+
+* **Signature Script Data:** each element pushed onto the stack by a
+  data-pushing op code in a signature script from this transaction is
+  individually compared to the filter.  This includes data elements
+  present in P2SH redeem scripts when they are being spent.
+
+* **PubKey Script Data:** each element pushed onto the the stack by a
+  data-pushing op code in any pubkey script from this transaction is
+  individually compared to the filter. (If a pubkey script element
+  matches the filter, the filter will be immediately updated if the
+  `BLOOM_UPDATE_ALL` flag was set; if the pubkey script is in the P2PKH
+  format and matches the filter, the filter will be immediately updated
+  if the `BLOOM_UPDATE_P2PUBKEY_ONLY` flag was set. See the subsection
+  below for details.)
+
+The following annotated hexdump of a transaction is from the [raw
+transaction format section][raw transaction format]; the elements which
+would be checked by the filter are emphasized in bold. Note that this
+transaction's TXID (**`01000000017b1eab[...]`**) would also be checked,
+and that the outpoint TXID and index number below would be checked as a
+single 36-byte element.
+
+<pre><code>01000000 ................................... Version
+
+01 ......................................... Number of inputs
+|
+| <b>7b1eabe0209b1fe794124575ef807057</b>
+| <b>c77ada2138ae4fa8d6c4de0398a14f3f</b> ......... Outpoint TXID
+| <b>00000000</b> ................................. Outpoint index number
+|
+| 49 ....................................... Bytes in sig. script: 73
+| | 48 ..................................... Push 72 bytes as data
+| | | <b>30450221008949f0cb400094ad2b5eb3</b>
+| | | <b>99d59d01c14d73d8fe6e96df1a7150de</b>
+| | | <b>b388ab8935022079656090d7f6bac4c9</b>
+| | | <b>a94e0aad311a4268e082a725f8aeae05</b>
+| | | <b>73fb12ff866a5f01</b> ..................... Secp256k1 signature
+|
+| ffffffff ................................. Sequence number: UINT32_MAX
+
+01 ......................................... Number of outputs
+| f0ca052a01000000 ......................... Satoshis (49.99990000 BTC)
+|
+| 19 ....................................... Bytes in pubkey script: 25
+| | 76 ..................................... OP_DUP
+| | a9 ..................................... OP_HASH160
+| | 14 ..................................... Push 20 bytes as data
+| | | <b>cbc20a7664f2f69e5355aa427045bc15</b>
+| | | <b>e7c6c772</b> ............................. PubKey hash
+| | 88 ..................................... OP_EQUALVERIFY
+| | ac ..................................... OP_CHECKSIG
+
+00000000 ................................... locktime: 0 (a block height)
+</code></pre>
+
+**Updating A Bloom Filter**
+
+Clients will often want to track inputs that spend outputs (outpoints)
+relevant to their wallet, so the filterload field *nFlags* can be set to
+allow the filtering node to update the filter when a match is found.
+When the filtering node sees a pubkey script that pays a pubkey,
+address, or other data element matching the filter, the filtering node
+immediately updates the filter with the outpoint corresponding to that
+pubkey script.
+
+![Automatically Updating Bloom Filters](/img/dev/en-bloom-update.svg)
+
+If an input later spends that outpoint, the filter will match it,
+allowing the filtering node to tell the client that one of its
+transaction outputs has been spent.
+
+The *nFlags* field has three allowed values:
+
+| Value | Name                       | Description
+|-------|----------------------------|---------------
+| 0     | BLOOM_UPDATE_NONE          | The filtering node should not update the filter.
+| 1     | BLOOM_UPDATE_ALL           | If the filter matches any data element in a pubkey script, the corresponding outpoint is added to the filter. 
+| 2     | BLOOM_UPDATE_P2PUBKEY_ONLY | If the filter matches any data element in a pubkey script and that script is either a P2PKH or non-P2SH pay-to-multisig script, the corresponding outpoint is added to the filter.
+
+In addition, because the filter size stays the same even though
+additional elements are being added to it, the false positive rate
+increases. Each false positive can result in another element being added
+to the filter, creating a feedback loop that can (after a certain point)
+make the filter useless. For this reason, clients using automatic filter
+updates need to monitor the actual false positive rate and send a new
+filter when the rate gets too high.
+
+{% endautocrossref %}
 
 #### GetAddr
 
