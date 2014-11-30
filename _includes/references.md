@@ -112,7 +112,7 @@ http://opensource.org/licenses/MIT.
 [op_hash160]: /en/developer-reference#term-op-hash160 "Operation which converts the entry below it on the stack into a RIPEMD(SHA256()) hashed version of itself"
 [op_return]: /en/developer-reference#term-op-return "Operation which terminates the script in failure"
 [op_verify]: /en/developer-reference#term-op-verify "Operation which terminates the script if the entry below it on the stack is non-true (zero)"
-[outpoint]: /en/developer-reference#term-outpoint "The structure used to refer to a particular transaction output, consisting of a 32-byte TXID and a 4-byte output index number (vout)."
+[outpoint]: /en/developer-reference#outpoint "The structure used to refer to a particular transaction output, consisting of a 32-byte TXID and a 4-byte output index number (vout)."
 [output]: /en/developer-guide#term-output "The output of a transaction which transfers value to a pubkey script"
 [output index]: /en/developer-guide#term-output-index "The sequentially-numbered index of outputs in a single transaction starting from 0"
 [P2PKH]: /en/developer-guide#term-p2pkh "A pubkey script which Pays To PubKey Hashes (P2PKH), allowing spending of satoshis to anyone with a Bitcoin address"
@@ -258,7 +258,7 @@ http://opensource.org/licenses/MIT.
 [rpc listunspent]: /en/developer-reference#listunspent
 [rpc lockunspent]: /en/developer-reference#lockunspent
 [rpc move]: /en/developer-reference#move
-[rpc ping]: /en/developer-reference#ping
+[rpc ping]: /en/developer-reference#ping-rpc
 [rpc sendfrom]: /en/developer-reference#sendfrom
 [rpc sendmany]: /en/developer-reference#sendmany
 [rpc sendrawtransaction]: /en/developer-reference#sendrawtransaction

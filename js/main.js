@@ -319,11 +319,14 @@ var setenv = function() {
 	first = [fallback, getTop(fallback)];
 	last = [fallback, getTop(fallback)];
 	closer = [fallback, getTop(fallback)];
-	// Find all titles.
+	// Find all titles in toc.
 	var nodes = [];
 	var tags = ['H2', 'H3', 'H4', 'H5', 'H6'];
 	for (var i = 0, n = tags.length; i < n; i++) {
-		for (var ii = 0, t = document.getElementsByTagName(tags[i]), nn = t.length; ii < nn; ii++) nodes.push(t[ii]);
+		for (var ii = 0, t = document.getElementsByTagName(tags[i]), nn = t.length; ii < nn; ii++) {
+			if (t[ii].className.indexOf('no_toc')!==-1) continue;
+			nodes.push(t[ii]);
+		}
 	}
 	// Find first title, last title and closer title.
 	for (var i = 0, n = nodes.length; i < n; i++) {
@@ -408,7 +411,7 @@ for (var i = 0, n = tags.length; i < n; i++) {
 }
 for (var i = 0, n = nodes.length; i < n; i++) {
 	if (!nodes[i].id) continue;
-	if (nodes[i].getElementsByTagName('A').length > 0) return;
+	if (nodes[i].getElementsByTagName('A').length > 0 && nodes[i].getElementsByTagName('A')[0].innerHTML == '') return;
 	addClass(nodes[i], 'anchorAf');
 	var anc = document.createElement('A');
 	anc.href = '#' + nodes[i].id;
