@@ -254,6 +254,62 @@ More information will follow.
 
 ## Wallets
 
+The wallet list is based on the personal evaluation of the maintainer(s) and regular contributors of this site, according to the criterias detailed below.
+
+Basic requirements:
+
+- Sufficient users and/or developers feedback can be found without particularly concerning issues, or independent security audit(s) is available
+- No indication that users have been harmed or risked being harmed by any issue in relation to the wallet
+- Wallet was publicly announced and released since at least 3 months
+- No concerning bug is found when testing the wallet
+- Website supports HTTPS and 301 redirects HTTP requests
+- SSL certificate passes [Qualys SSL Labs SSL test](https://www.ssllabs.com/ssltest/)
+- The identity of CEOs and/or developers is public
+- For custodial wallets:
+  - Provides 2FA authentication feature
+  - Reminds the user to enable 2FA by email or in the main UI of the wallet
+  - User session is not persistent, or requires authentication for spending
+  - Refuses weak passwords (short passwords and/or common passwords)
+  - Provides account recovery feature
+- For non-custodial wallets:
+  - Allows backup of the wallet
+  - Restoring wallet from backup is working
+  - Source code is public and kept up to date under version control system
+- For multi-signature wallets:
+  - Provides 2FA authentication feature
+  - Reminds the user to enable 2FA by email or in the main UI of the wallet
+  - User session is not persistent, or requires authentication for spending
+  - Refuses weak passwords (short passwords and/or common passwords)
+  - Gives control to the user over moving their funds out of the multi-signature wallet
+- For hardware wallets:
+  - Uses the push model (computer malware cannot sign a transaction without user input)
+  - Refuses unsigned firmware upgrades
+  - Supports importing custom seeds
+  - Provides source code and/or detailed specification for blackbox testing if using a closed-source Secure Element
+
+Optional criterias (some could become requirements):
+
+- Received independent security audit(s)
+- Rotates change addresses
+- Rotates receiving addresses in the wallet UI
+- Does not show "received from" Bitcoin addresses in the UI
+- Uses deterministic ECDSA nonces (RFC 6979)
+- For custodial wallets:
+  - Enables HSTS
+  - Full reserve audit(s)
+  - Insurrance(s) against failures on their side
+  - Reminds the user to enable 2FA in the main UI of the wallet
+- For non-custodial wallets:
+  - Supports HD wallets (BIP32)
+  - Provides users with step to print or write their wallet seed on setup
+  - Uses a strong KDF and key stretching for wallet storage and backups
+  - On desktop platform:
+    - Encrypt the wallet by default
+- For hardware wallets:
+  - Prevents downgrading the firmware
+
+### Adding a wallet
+
 Wallets can be added in `_templates/choose-your-wallet.html`. Entries are ordered by levels and new wallets must be added after the last wallet on the same level.
 
 * Level 1 - Full nodes
