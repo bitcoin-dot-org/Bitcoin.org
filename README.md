@@ -285,15 +285,15 @@ Basic requirements:
   - Gives control to the user over moving their funds out of the multi-signature wallet
 - For hardware wallets:
   - Uses the push model (computer malware cannot sign a transaction without user input)
-  - Protect the seed against unsigned firmware upgrades
+  - Protects the seed against unsigned firmware upgrades
   - Supports importing custom seeds
   - Provides source code and/or detailed specification for blackbox testing if using a closed-source Secure Element
 
 Optional criterias (some could become requirements):
 
 - Received independent security audit(s)
-- Rotates change addresses
-- Rotates receiving addresses in the wallet UI
+- Avoid address reuse by rotating change addresses
+- Avoid address reuse by rotating receiving addresses in the wallet UI
 - Does not show "received from" Bitcoin addresses in the UI
 - Uses deterministic ECDSA nonces (RFC 6979)
 - If user has no access over its private keys:
@@ -355,9 +355,9 @@ To get a passing score, the wallet must run from an environment that provides ap
 
 **Privacy**: Does the wallet protect users' privacy?
 
-To get a good score, the wallet must rotate addresses, avoid disclosing information to peers or central servers and be compatible with Tor.
+To get a good score, the wallet must avoid address reuse by rotating change addresses, avoid disclosing information to peers or central servers and be compatible with Tor.
 
-To get a passing score, the wallet must rotate addresses.
+To get a passing score, the wallet must avoid address reuse by rotating change addresses.
 
 ## Advanced Usage
 
