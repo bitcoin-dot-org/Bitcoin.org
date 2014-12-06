@@ -165,7 +165,7 @@ tr:
     downloados: "Veya işletim sisteminizi seçin"
     versionhistory: "Yazılım tarihini göster"
     notelicense: "Bitcoin Core <a href=\"http://opensource.org/licenses/mit-license.php\">MIT lisansı</a> ile yayımlanan toplumsal <a href=\"https://www.fsf.org/about/what-is-free-software\">ücretsiz açık-kaynak</a> bir proje."
-    notesync: "<b>Not</b> : Bitcoin Core'nin ilk senkronizasyonu bir gün kadar sürebilir. Tüm <a href=\"https://blockchain.info/charts/blocks-size\">blok zinciri boyuna</a> yetecek kadar boş alanınız ve bant genişliğiniz olduğundan emin olun."
+    notesync: "<b>Not</b> : Bitcoin Core'nin ilk senkronizasyonu bir gün kadar sürebilir. Tüm blok zinciri boyuna yetecek kadar boş alanınız ve bant genişliğiniz olduğundan emin olun."
   events:
     title: "Konferanslar ve etkinlikler - Bitcoin"
     pagetitle: "Konferanslar ve etkinlikler"

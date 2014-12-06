@@ -162,7 +162,7 @@ pl:
     download: "Ściągnij - Bitcoin Core"
     versionhistory: "Pokaż historię wersji"
     notelicense: "Aplikacja Bitcoin Core jest tworzona przez społeczność jako <a href=\"https://www.fsf.org/about/what-is-free-software\">darmowy projekt o otwartym kodzie</a> źródłowym opublikowanym na zasadach <a href=\"http://opensource.org/licenses/mit-license.php\">licencji MIT</a>."
-    notesync: "<b>Uwaga</b> : Początkowa synchronizacja Bitcoin Core może trwać dzień zanim zostanie ukończona. Upewnij się, że posiadasz wystarczająco pasma internetowego oraz przestrzeni dyskowej na <a href=\"https://blockchain.info/charts/blocks-size\">łańcuch bloku o pełnym rozmiarze</a>."
+    notesync: "<b>Uwaga</b> : Początkowa synchronizacja Bitcoin Core może trwać dzień zanim zostanie ukończona. Upewnij się, że posiadasz wystarczająco pasma internetowego oraz przestrzeni dyskowej na łańcuch bloku o pełnym rozmiarze."
   events:
     title: "Konferencje i wydarzenia - Bitcoin"
     pagetitle: "Konferencje i wydarzenia"
