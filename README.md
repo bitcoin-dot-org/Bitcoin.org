@@ -292,8 +292,8 @@ Basic requirements:
 Optional criterias (some could become requirements):
 
 - Received independent security audit(s)
-- Avoid address reuse by rotating change addresses
-- Avoid address reuse by rotating receiving addresses in the wallet UI
+- Avoid address reuse by using a new change address for each transaction
+- Avoid address reuse by displaying a new receiving address for each transaction in the wallet UI
 - Does not show "received from" Bitcoin addresses in the UI
 - Uses deterministic ECDSA nonces (RFC 6979)
 - If user has no access over its private keys:
@@ -355,9 +355,10 @@ To get a passing score, the wallet must run from an environment that provides ap
 
 **Privacy**: Does the wallet protect users' privacy?
 
-To get a good score, the wallet must avoid address reuse by rotating change addresses, avoid disclosing information to peers or central servers and be compatible with Tor.
+To get a good score, the wallet must avoid address reuse by using a new change address for each transaction, avoid disclosing information to peers or central servers and be compatible with Tor.
 
-To get a passing score, the wallet must avoid address reuse by rotating change addresses.
+To get a passing score, the wallet must avoid address reuse by using a new change address for each transaction.
+
 
 ## Advanced Usage
 
