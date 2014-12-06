@@ -285,7 +285,7 @@ Basic requirements:
   - Gives control to the user over moving their funds out of the multi-signature wallet
 - For hardware wallets:
   - Uses the push model (computer malware cannot sign a transaction without user input)
-  - Refuses unsigned firmware upgrades
+  - Protect the seed against unsigned firmware upgrades
   - Supports importing custom seeds
   - Provides source code and/or detailed specification for blackbox testing if using a closed-source Secure Element
 
