@@ -267,17 +267,17 @@ Basic requirements:
 - Website supports HTTPS and 301 redirects HTTP requests
 - SSL certificate passes [Qualys SSL Labs SSL test](https://www.ssllabs.com/ssltest/)
 - The identity of CEOs and/or developers is public
-- For custodial wallets:
+- If user has no access over its private keys:
   - Provides 2FA authentication feature
   - Reminds the user to enable 2FA by email or in the main UI of the wallet
   - User session is not persistent, or requires authentication for spending
   - Refuses weak passwords (short passwords and/or common passwords)
   - Provides account recovery feature
-- For non-custodial wallets:
+- If user has exclusive access over its private keys:
   - Allows backup of the wallet
   - Restoring wallet from backup is working
   - Source code is public and kept up to date under version control system
-- For multi-signature wallets:
+- If user has no access to some of the private keys in a multi-signature wallet:
   - Provides 2FA authentication feature
   - Reminds the user to enable 2FA by email or in the main UI of the wallet
   - User session is not persistent, or requires authentication for spending
@@ -296,12 +296,12 @@ Optional criterias (some could become requirements):
 - Rotates receiving addresses in the wallet UI
 - Does not show "received from" Bitcoin addresses in the UI
 - Uses deterministic ECDSA nonces (RFC 6979)
-- For custodial wallets:
+- If user has no access over its private keys:
   - Enables HSTS
   - Full reserve audit(s)
   - Insurrance(s) against failures on their side
   - Reminds the user to enable 2FA in the main UI of the wallet
-- For non-custodial wallets:
+- If user has exclusive access over its private keys:
   - Supports HD wallets (BIP32)
   - Provides users with step to print or write their wallet seed on setup
   - Uses a strong KDF and key stretching for wallet storage and backups
