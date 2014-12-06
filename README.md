@@ -256,6 +256,8 @@ More information will follow.
 
 The wallet list is based on the personal evaluation of the maintainer(s) and regular contributors of this site, according to the criterias detailed below.
 
+Innovative wallets are exciting and encouraged, so if your wallet has a good reason for not following some of the rules below, please submit it anyway and we'll consider updating the rules.
+
 Basic requirements:
 
 - Sufficient users and/or developers feedback can be found without particularly concerning issues, or independent security audit(s) is available
