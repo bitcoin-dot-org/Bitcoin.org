@@ -134,6 +134,7 @@ http://opensource.org/licenses/MIT.
 [pong message]: /en/developer-reference#pong "A P2P network message used to reply to a P2P network ping message"
 [private key]: /en/developer-guide#term-private-key "The private portion of a keypair which can create signatures which other people can verify using the public key"
 [private keys]: /en/developer-guide#term-private-key "The private portion of a keypair which can create signatures which other people can verify using the public key"
+[proper money handling]: /en/developer-reference#term-proper-money-handling "Bitcoin amounts need to be correctly processed without introducing rounding errors that could cause monetary loss"
 [pubkey hash]: /en/developer-guide#term-pubkey-hash "The hash of a public key which can be included in a P2PKH output"
 [public key]: /en/developer-guide#term-public-key "The public portion of a keypair which can be safely distributed to other people so they can verify a signature created with the corresponding private key"
 [pp amount]: /en/developer-examples#term-pp-amount "Part of the Output part of the PaymentDetails part of a payment protocol where receivers can specify the amount of satoshis they want paid to a particular pubkey script"
@@ -190,15 +191,19 @@ http://opensource.org/licenses/MIT.
 [txid]: /en/developer-guide#term-txid "A hash of a completed transaction which allows other transactions to spend its outputs"
 [unconfirmed]: /en/developer-guide#term-unconfirmed-transactions "A transaction which has not yet been added to the block chain"
 [unconfirmed transactions]: /en/developer-guide#term-unconfirmed-transactions "A transaction which has not yet been added to the block chain"
+[unencrypted wallet]: /en/developer-reference#encryptwallet "A wallet that has not been encrypted with the encryptwallet RPC"
 [unique addresses]: /en/developer-guide#term-unique-address "Address which are only used once to protect privacy and increase security"
+[unlocked wallet]: /en/developer-reference#walletpassphrase "An encrypted wallet that has been unlocked with the walletpassphrase RPC"
 [URI QR Code]: /en/developer-guide#term-uri-qr-code "A QR code containing a bitcoin: URI"
 [utxo]: /en/developer-guide#term-utxo "Unspent Transaction Output (UTXO) holding satoshis which have not yet been spent"
 [verack message]: /en/developer-reference#verack "A P2P network message sent in reply to a version message to confirm a connection has been established"
 [verified payments]: /en/developer-guide#verifying-payment "Payments which the receiver believes won't be double spent"
 [version message]: /en/developer-reference#version "A P2P network message sent at the begining of a connection to allow protocol version negotiation"
 [v2 block]: /en/developer-reference#term-v2-block "The current version of Bitcoin blocks"
+[watch-only]: /en/developer-reference#importaddress "An address or pubkey script stored in the wallet without the corresponding private key, allowing the wallet to watch for outputs but not spend them"
 [wallet]: /en/developer-guide#wallets "Software which stores private keys to allow users to spend and receive satoshis"
 [Wallet Import Format]: /en/developer-guide#term-wallet-import-format "A private key specially formatted to allow easy import into a wallet"
+[wallet support]: /en/developer-reference#term-wallet-support "A Bitcoin Core ./configure option that enables (default) or disables the wallet"
 [wallets]: /en/developer-guide#wallets "Software which stores private keys to allow users to spend and receive satoshis"
 
 <!-- RPCs; alphabetical order -->
@@ -211,6 +216,9 @@ http://opensource.org/licenses/MIT.
 [rpc decodescript]: /en/developer-reference#decodescript
 [rpc dumpprivkey]: /en/developer-reference#dumpprivkey
 [rpc dumpwallet]: /en/developer-reference#dumpwallet
+[rpc encryptwallet]: /en/developer-reference#encryptwallet
+[rpc estimatefee]: /en/developer-reference#estimatefee
+[rpc estimatepriority]: /en/developer-reference#estimatepriority
 [rpc getaccount]: /en/developer-reference#getaccount
 [rpc getaccountaddress]: /en/developer-reference#getaccountaddress
 [rpc getaddednodeinfo]: /en/developer-reference#getaddednodeinfo
@@ -222,11 +230,13 @@ http://opensource.org/licenses/MIT.
 [rpc getblockcount]: /en/developer-reference#getblockcount
 [rpc getblockhash]: /en/developer-reference#getblockhash
 [rpc getblocktemplate]: /en/developer-reference#getblocktemplate
+[rpc getchaintips]: /en/developer-reference#getchaintips
 [rpc getconnectioncount]: /en/developer-reference#getconnectioncount
 [rpc getdifficulty]: /en/developer-reference#getdifficulty
 [rpc getgenerate]: /en/developer-reference#getgenerate
 [rpc gethashespersec]: /en/developer-reference#gethashespersec
 [rpc getinfo]: /en/developer-reference#getinfo
+[rpc getmempoolinfo]: /en/developer-reference#getmempoolinfo
 [rpc getmininginfo]: /en/developer-reference#getmininginfo
 [rpc getnettotals]: /en/developer-reference#getnettotals
 [rpc getnetworkhashps]: /en/developer-reference#getnetworkhashps
@@ -245,6 +255,7 @@ http://opensource.org/licenses/MIT.
 [rpc getwalletinfo]: /en/developer-reference#getwalletinfo
 [rpc getwork]: /en/developer-reference#getwork
 [rpc help]: /en/developer-reference#help
+[rpc importaddress]: /en/developer-reference#importaddress
 [rpc importprivkey]: /en/developer-reference#importprivkey
 [rpc importwallet]: /en/developer-reference#importwallet
 [rpc keypoolrefill]: /en/developer-reference#keypoolrefill
@@ -259,6 +270,7 @@ http://opensource.org/licenses/MIT.
 [rpc lockunspent]: /en/developer-reference#lockunspent
 [rpc move]: /en/developer-reference#move
 [rpc ping]: /en/developer-reference#ping-rpc
+[rpc prioritisetransaction]: /en/developer-reference#prioritisetransaction
 [rpc sendfrom]: /en/developer-reference#sendfrom
 [rpc sendmany]: /en/developer-reference#sendmany
 [rpc sendrawtransaction]: /en/developer-reference#sendrawtransaction
@@ -283,7 +295,11 @@ http://opensource.org/licenses/MIT.
 [Bitcoin Core 0.7.0]: /en/release/v0.7.0
 [Bitcoin Core 0.8.0]: /en/release/v0.8.0
 [Bitcoin Core 0.9.0]: /en/release/v0.9.0
+[Bitcoin Core 0.9.1]: /en/release/v0.9.1
+[Bitcoin Core 0.9.2]: /en/release/v0.9.2
 [Bitcoin Core 0.9.3]: /en/release/v0.9.3
+<!-- TODOv0.10 update this to point to 0.10 release notes when released -->
+[Bitcoin Core 0.10.0]: https://github.com/bitcoin/bitcoin/tree/0.10
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [bitcoinpdf]: https://bitcoin.org/bitcoin.pdf
 [core executable]: /en/download
@@ -304,6 +320,7 @@ http://opensource.org/licenses/MIT.
 [raw transaction format]: /en/developer-reference#raw-transaction-format
 [RPC]: /en/developer-reference#remote-procedure-calls-rpcs
 [RPCs]: /en/developer-reference#remote-procedure-calls-rpcs
+[section block versions]: /en/developer-reference#block-versions
 [section creating a bloom filter]: /en/developer-examples#creating-a-bloom-filter
 [section detecting forks]: /en/developer-guide#detecting-forks
 [section getblocktemplate]: /en/developer-guide#getblocktemplate-rpc
@@ -312,11 +329,11 @@ http://opensource.org/licenses/MIT.
 [section merkleblock example]: /en/developer-examples#parsing-a-merkleblock
 [section p2p reference]: /en/developer-reference#p2p-network
 [section protocol versions]: /en/developer-reference#protocol-versions
+[section rpc quick reference]: /en/developer-reference#rpc-quick-reference
 [section serialized blocks]: /en/developer-reference#serialized-blocks
 [section simple raw transaction]: /en/developer-examples#simple-raw-transaction
 [section verifying payment]: /en/developer-guide#verifying-payment
 [signature script modification warning]: /en/developer-reference#signature_script_modification_warning
-[transaction object format]: /en/developer-reference#term-transaction-object-format
 [v0.8 chain fork]: /en/alert/2013-03-11-chain-fork
 [Verification subsection]: /en/developer-guide#verifying-payment
 [X509Certificates]: /en/developer-examples#term-x509certificates
@@ -326,6 +343,8 @@ http://opensource.org/licenses/MIT.
 [BIP14]: https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki
 [BIP16]: https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki
 [BIP21]: https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki
+[BIP22]: https://github.com/bitcoin/bips/blob/master/bip-0022.mediawiki
+[BIP23]: https://github.com/bitcoin/bips/blob/master/bip-0023.mediawiki
 [BIP30]: https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki
 [BIP31]: https://github.com/bitcoin/bips/blob/master/bip-0031.mediawiki
 [BIP32]: https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
@@ -393,7 +412,6 @@ http://opensource.org/licenses/MIT.
 [Payment Request Generator]: http://bitcoincore.org/~gavin/createpaymentrequest.php
 [Piotr Piasecki's testnet faucet]: https://tpfaucet.appspot.com/
 [prime symbol]: https://en.wikipedia.org/wiki/Prime_%28symbol%29
-[proper money handling]: https://en.bitcoin.it/wiki/Proper_Money_Handling_%28JSON-RPC%29
 [protobuf]: https://developers.google.com/protocol-buffers/
 [python-bitcoinlib]: https://github.com/petertodd/python-bitcoinlib
 [python-blkmaker]: https://gitorious.org/bitcoin/python-blkmaker
@@ -402,6 +420,8 @@ http://opensource.org/licenses/MIT.
 [Tor]: https://en.wikipedia.org/wiki/Tor_%28anonymity_network%29
 [unix epoch time]: https://en.wikipedia.org/wiki/Unix_time
 [URI encoded]: https://tools.ietf.org/html/rfc3986
+[wiki getblocktemplate]: https://en.bitcoin.it/wiki/Getblocktemplate
+[wiki proper money handling]: https://en.bitcoin.it/wiki/Proper_Money_Handling_%28JSON-RPC%29
 [wiki script]: https://en.bitcoin.it/wiki/Script
 [x509]: https://en.wikipedia.org/wiki/X.509
 

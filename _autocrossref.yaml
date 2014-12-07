@@ -168,10 +168,12 @@ millibitcoins:
 '`MSG_FILTERED_BLOCK`': msg_filtered_block
 '`MSG_TX`': msg_tx
 multisig:
+multisig p2sh: p2sh multisig
 nbits:
 network:
 '`notfound` message': notfound message
 '`notfound` messages': notfound message
+'number (bitcoins)': proper money handling
 null data: 
 '`op_checkmultisig`': op_checkmultisig
 '`op_checksig`': op_checksig
@@ -253,8 +255,8 @@ regtest: regression test mode
 '`reject` messages': reject message
 root certificate:
 root seed:
-RPCs: rpc
 RPC:
+RPCs: rpc
 RPC byte order:
 satoshi:
 satoshis: satoshi
@@ -294,13 +296,14 @@ transaction fees: transaction fee
 transaction malleability:
 transaction object format:
 transaction version number:
-'`transactions`': pp transactions
 '`tx` message': tx message
 '`tx` messages': tx message
 txid:
 txids: txid
 unconfirmed:
 unconfirmed transactions:
+unencrypted wallet:
+unlocked wallet:
 unix epoch time:
 unix time: unix epoch time
 unique address: unique addresses
@@ -313,9 +316,16 @@ verified payments:
 version 2 blocks: v2 block
 '`version` message': version message
 '`version` messages': version message
+watch-only:
+watch-only address: watch-only
+watch-only addresses: watch-only
+waching-only: watch-only
 wallet:
 wallets: wallet
 wallet import format:
+wallet support:
+wallet support disabled: wallet support
+wallet support enabled: wallet support
 x.509: x509
 X509Certificates:
 
@@ -341,79 +351,165 @@ CVE-2012-2459:
 
 ## RPCs
 '`addmultisigaddress`': rpc addmultisigaddress
+'`addmultisigaddress` RPC': rpc addmultisigaddress
 '`addnode`': rpc addnode
+'`addnode` RPC': rpc addnode
 '`backupwallet`': rpc backupwallet
+'`backupwallet` RPC': rpc backupwallet
 '`createmultisig`': rpc createmultisig
+'`createmultisig` RPC': rpc createmultisig
 '`createrawtransaction`': rpc createrawtransaction
+'`createrawtransaction` RPC': rpc createrawtransaction
 '`decoderawtransaction`': rpc decoderawtransaction
+'`decoderawtransaction` RPC': rpc decoderawtransaction
 '`decodescript`': rpc decodescript
+'`decodescript` RPC': rpc decodescript
 '`dumpprivkey`': rpc dumpprivkey
+'`dumpprivkey` RPC': rpc dumpprivkey
 '`dumpwallet`': rpc dumpwallet
+'`dumpwallet` RPC': rpc dumpwallet
+'`encryptwallet`': rpc encryptwallet
+'`encryptwallet` RPC': rpc encryptwallet
+'`estimatefee`': rpc estimatefee
+'`estimatefee` RPC': rpc estimatefee
+'`estimatepriority`': rpc estimatepriority
+'`estimatepriority` RPC': rpc estimatepriority
 '`getaccount`': rpc getaccount
+'`getaccount` RPC': rpc getaccount
 '`getaccountaddress`': rpc getaccountaddress
+'`getaccountaddress` RPC': rpc getaccountaddress
 '`getaddednodeinfo`': rpc getaddednodeinfo
+'`getaddednodeinfo` RPC': rpc getaddednodeinfo
 '`getaddressesbyaccount`': rpc getaddressesbyaccount
+'`getaddressesbyaccount` RPC': rpc getaddressesbyaccount
 '`getbalance`': rpc getbalance
+'`getbalance` RPC': rpc getbalance
 '`getbestblockhash`': rpc getbestblockhash
+'`getbestblockhash` RPC': rpc getbestblockhash
 '`getblock`': rpc getblock
+'`getblock` RPC': rpc getblock
 '`getblockchaininfo`': rpc getblockchaininfo
+'`getblockchaininfo` RPC': rpc getblockchaininfo
 '`getblockcount`': rpc getblockcount
+'`getblockcount` RPC': rpc getblockcount
 '`getblockhash`': rpc getblockhash
+'`getblockhash` RPC': rpc getblockhash
 '`getblocktemplate`': rpc getblocktemplate
+'`getblocktemplate` RPC': rpc getblocktemplate
+'`getchaintips`': rpc getchaintips
+'`getchaintips` RPC': rpc getchaintips
 '`getconnectioncount`': rpc getconnectioncount
+'`getconnectioncount` RPC': rpc getconnectioncount
 '`getdifficulty`': rpc getdifficulty
+'`getdifficulty` RPC': rpc getdifficulty
 '`getgenerate`': rpc getgenerate
+'`getgenerate` RPC': rpc getgenerate
 '`gethashespersec`': rpc gethashespersec
+'`gethashespersec` RPC': rpc gethashespersec
 '`getinfo`': rpc getinfo
+'`getinfo` RPC': rpc getinfo
+'`getmempoolinfo`': rpc getmempoolinfo
+'`getmempoolinfo` RPC': rpc getmempoolinfo
 '`getmininginfo`': rpc getmininginfo
+'`getmininginfo` RPC': rpc getmininginfo
 '`getnettotals`': rpc getnettotals
+'`getnettotals` RPC': rpc getnettotals
 '`getnetworkhashps`': rpc getnetworkhashps
+'`getnetworkhashps` RPC': rpc getnetworkhashps
 '`getnetworkinfo`': rpc getnetworkinfo
+'`getnetworkinfo` RPC': rpc getnetworkinfo
 '`getnewaddress`': rpc getnewaddress
+'`getnewaddress` RPC': rpc getnewaddress
 '`getpeerinfo`': rpc getpeerinfo
+'`getpeerinfo` RPC': rpc getpeerinfo
 '`getrawchangeaddress`': rpc getrawchangeaddress
+'`getrawchangeaddress` RPC': rpc getrawchangeaddress
 '`getrawmempool`': rpc getrawmempool
+'`getrawmempool` RPC': rpc getrawmempool
 '`getrawtransaction`': rpc getrawtransaction
+'`getrawtransaction` RPC': rpc getrawtransaction
 '`getreceivedbyaccount`': rpc getreceivedbyaccount
+'`getreceivedbyaccount` RPC': rpc getreceivedbyaccount
 '`getreceivedbyaddress`': rpc getreceivedbyaddress
+'`getreceivedbyaddress` RPC': rpc getreceivedbyaddress
 '`gettransaction`': rpc gettransaction
+'`gettransaction` RPC': rpc gettransaction
 '`gettxout`': rpc gettxout
+'`gettxout` RPC': rpc gettxout
 '`gettxoutsetinfo`': rpc gettxoutsetinfo
+'`gettxoutsetinfo` RPC': rpc gettxoutsetinfo
 '`getunconfirmedbalance`': rpc getunconfirmedbalance
+'`getunconfirmedbalance` RPC': rpc getunconfirmedbalance
 '`getwalletinfo`': rpc getwalletinfo
+'`getwalletinfo` RPC': rpc getwalletinfo
 '`getwork`': rpc getwork
+'`getwork` RPC': rpc getwork
 '`help`': rpc help
+'`help` RPC': rpc help
+'`importaddress`': rpc importaddress
+'`importaddress` RPC': rpc importaddress
 '`importprivkey`': rpc importprivkey
+'`importprivkey` RPC': rpc importprivkey
 '`importwallet`': rpc importwallet
+'`importwallet` RPC': rpc importwallet
 '`keypoolrefill`': rpc keypoolrefill
+'`keypoolrefill` RPC': rpc keypoolrefill
 '`listaccounts`': rpc listaccounts
+'`listaccounts` RPC': rpc listaccounts
 '`listaddressgroupings`': rpc listaddressgroupings
+'`listaddressgroupings` RPC': rpc listaddressgroupings
 '`listlockunspent`': rpc listlockunspent
+'`listlockunspent` RPC': rpc listlockunspent
 '`listreceivedbyaccount`': rpc listreceivedbyaccount
+'`listreceivedbyaccount` RPC': rpc listreceivedbyaccount
 '`listreceivedbyaddress`': rpc listreceivedbyaddress
+'`listreceivedbyaddress` RPC': rpc listreceivedbyaddress
 '`listsinceblock`': rpc listsinceblock
+'`listsinceblock` RPC': rpc listsinceblock
 '`listtransactions`': rpc listtransactions
+'`listtransactions` RPC': rpc listtransactions
 '`listunspent`': rpc listunspent
+'`listunspent` RPC': rpc listunspent
 '`lockunspent`': rpc lockunspent
+'`lockunspent` RPC': rpc lockunspent
 '`move`': rpc move
+'`move` RPC': rpc move
 '`ping`': rpc ping
+'`ping` RPC': rpc ping
 '`sendfrom`': rpc sendfrom
+'`sendfrom` RPC': rpc sendfrom
 '`sendmany`': rpc sendmany
+'`sendmany` RPC': rpc sendmany
 '`sendrawtransaction`': rpc sendrawtransaction
+'`sendrawtransaction` RPC': rpc sendrawtransaction
 '`sendtoaddress`': rpc sendtoaddress
+'`sendtoaddress` RPC': rpc sendtoaddress
 '`setaccount`': rpc setaccount
+'`setaccount` RPC': rpc setaccount
 '`setgenerate`': rpc setgenerate
+'`setgenerate` RPC': rpc setgenerate
 '`settxfee`': rpc settxfee
+'`settxfee` RPC': rpc settxfee
 '`signmessage`': rpc signmessage
+'`signmessage` RPC': rpc signmessage
 '`signrawtransaction`': rpc signrawtransaction
+'`signrawtransaction` RPC': rpc signrawtransaction
 '`stop`': rpc stop
+'`stop` RPC': rpc stop
 '`submitblock`': rpc submitblock
+'`submitblock` RPC': rpc submitblock
 '`validateaddress`': rpc validateaddress
+'`validateaddress` RPC': rpc validateaddress
 '`verifychain`': rpc verifychain
+'`verifychain` RPC': rpc verifychain
 '`verifymessage`': rpc verifymessage
+'`verifymessage` RPC': rpc verifymessage
 '`walletlock`': rpc walletlock
+'`walletlock` RPC': rpc walletlock
 '`walletpassphrase`': rpc walletpassphrase
+'`walletpassphrase` RPC': rpc walletpassphrase
 '`walletpassphrasechange`': rpc walletpassphrasechange
+'`walletpassphrasechange` RPC': rpc walletpassphrasechange
 
 ## Versions of Bitcoin Core (linked to Bitcoin.org release notes)
 Bitcoin Core 0.1.6:
@@ -425,4 +521,6 @@ Bitcoin Core 0.6.1:
 Bitcoin Core 0.7.0:
 Bitcoin Core 0.8.0:
 Bitcoin Core 0.9.0:
+Bitcoin Core 0.9.1:
 Bitcoin Core 0.9.3:
+Bitcoin Core 0.10.0:

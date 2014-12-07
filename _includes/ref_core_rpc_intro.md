@@ -97,7 +97,10 @@ print "Internal-Byte-Order Hash: ", hash.encode('hex_codec')
 print "RPC-Byte-Order Hash:      ", hash[::-1].encode('hex_codec')
 {% endhighlight %}
 
-### JSON-RPC & bitcoin-cli
+### Remote Procedure Calls (RPCs)
+<!-- no subhead-links here -->
+
+#### JSON-RPC & bitcoin-cli
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -123,7 +126,7 @@ standard arguments:
 | Name                 | Type            | Presence                    | Description
 |----------------------|-----------------|-----------------------------|----------------
 | RPC                  | object          | Required<br>(exactly 1)     | An object containing the standard RPC arguments
-| → <br>`jsonrpc`      | number (float)  | Optional<br>(0 or 1)        | The version of JSON-RPC used.  Bitcoin Core currently ignores this, as it only supports version 1.0.  Default is `1.0`
+| → <br>`jsonrpc`      | number (real)   | Optional<br>(0 or 1)        | The version of JSON-RPC used.  Bitcoin Core currently ignores this, as it only supports version 1.0.  Default is `1.0`
 | → <br>`id`           | string          | Required<br>(exactly 1)     | An arbitrary string that will be returned when the response is sent.  May be set to an empty string ("")
 | → <br>`method`       | string          | Required<br>(exactly 1)     | The RPC, such as `getbestblockhash`.  See the RPC section for a list of available commands
 | → <br>`params`       | array           | Required<br>(exactly 1)     | An array containing parameters for the RPC.  May be an empty array if allowed by the particular RPC
@@ -244,21 +247,9 @@ Bitcoin Core RPCs using `bitcoin-cli`. However, using an actual
 programming interface to the full JSON-RPC will serve you much better
 for automated tasks.
 
-![Warning icon](/img/icons/icon_warning.svg) **Warning:** if you write
+[{{WARNING}}][proper money handling]{:#term-proper-money-handling}{:.term} if you write
 programs using the JSON-RPC interface, you must ensure they handle high-precision
-floating point numbers correctly.  See the [Proper Money Handling][]
+real numbers correctly.  See the [Proper Money Handling][wiki proper money handling]
 Bitcoin Wiki article for details and example code.
 
 {% endautocrossref %}
-
-### Remote Procedure Calls (RPCs)
-{% include helpers/subhead-links.md %}
-
-**Warning:** the block chain and memory pool can include arbitrary data
-which several of the commands below will return in hex format. If you
-convert this data to another format in an executable context, it could
-be used in an exploit. For example, displaying an output script as
-ASCII text in a webpage could add arbitrary Javascript to that page and
-create a cross-site scripting (XSS) exploit. To avoid problems, please
-treat block chain and memory pool data as an arbitrary input from an
-untrusted source.
