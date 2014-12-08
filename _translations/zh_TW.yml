@@ -113,7 +113,6 @@ zh_TW:
     walletelectrum: "Electrum 注重速度和簡單性，只佔用少量的資源。它將 Bitcoin 系統裡最複雜的計算留給遠端伺服器執行，也讓使用者可透過密語來還原錢包。"
     walletmsigna: "mSIGNA 是一個先進而方便使用的錢包，它具有高速、簡單、企業級別的可升級性和很強的安全性等特點。它支持 BIP32、多重簽署交易、線下存儲、多設備同步和加密的電子和紙質備份。"
     walletbitcoinwallet: "Bitcoin Wallet 是容易使用和可信賴的，它也一直很安全和快速。它的版本是去中心化和零信任的，與 Bitcoin 有關的操作不需要一個中央服務。這個程式對非技術人員是一個很好的選擇。"
-    walletkncwallet: "KnC Wallet 致力成為一種可以很方便地給你的朋友和家人傳送比特幣的方式。它具有一個線上目錄簿功能讓你能直接發幣給你的聯繫人，而不需要知道他們的 Bitcoin 地址。"
     walletbreadwallet: "簡單是 breadwallet 的核心設計理念。作為一個真正獨立的 Bitcoin 客戶端，沒有伺服器可以駭或者當。而且，通過建立在 iOS 的高安全基礎之上，breadwallet 是專門設計來讓您免受惡意軟件、瀏覽器安全漏洞甚至是真實小偷的安全威脅。"
     walletmyceliumwallet: "Mycelium Bitcoin Wallet 是一個給 Android 設計的開放原始碼錢包，它安全、高速且容易使用。它有密鈅管理功能和冷儲存功能，這些獨特的功能能保障您的比特幣安全。"
     walletcoinbase: "Coinbase 是一個網頁版錢包，它的目標是容易使用。它提供 Android 用的網頁版錢包應用程式、買賣工具，並且能整合美國的銀行帳戶來進行比特幣買賣。"
