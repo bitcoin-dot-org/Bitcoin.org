@@ -527,9 +527,11 @@ for (var i = 0, nds = document.getElementById('walletmenu').getElementsByTagName
 	nds[i].removeAttribute('data-active');
 	removeClass(nds[i].parentNode, 'active');
 }
-t.setAttribute('data-active', '1');
-addClass(t.parentNode, 'active');
-if (t.parentNode.parentNode.parentNode.nodeName == 'LI') addClass(t.parentNode.parentNode.parentNode, 'active');
+if (platform != 'default') {
+	t.setAttribute('data-active', '1');
+	addClass(t.parentNode, 'active');
+	if (t.parentNode.parentNode.parentNode.nodeName == 'LI') addClass(t.parentNode.parentNode.parentNode, 'active');
+}
 // Replace wallets by those for given platform and rotate.
 var p = document.getElementById('wallets');
 var ti = 200;
@@ -542,9 +544,18 @@ p.setAttribute('timeout', setTimeout(function() {
 		if (nds[i].nodeType != 1) continue;
 		var id = nds[i].id.split('-')[1];
 		if (document.getElementById('wallet-' + id)) continue;
-		if (document.getElementById('wallet-' + id + '-' + platform)) var nd = document.getElementById('wallet-' + id + '-' + platform);
-		else if (document.getElementById('wallet-' + id + '-' + fallback) && document.getElementById('wallet-' + id + '-' + fallback).getAttribute('data-walletcompat').indexOf(platform) !== -1) var nd = document.getElementById('wallet-' + id + '-' + fallback);
-		else continue;
+		var nd = null;
+		if (platform == 'default') {
+			var defpl = ['desktop', 'mobile'];
+			for (var ii = 0, nn = defpl.length; ii < nn; ii++) {
+				if (document.getElementById('wallet-' + id + '-' + defpl[ii])) var nd = document.getElementById('wallet-' + id + '-' + defpl[ii]);
+			}
+		}
+		else {
+			if (document.getElementById('wallet-' + id + '-' + platform)) var nd = document.getElementById('wallet-' + id + '-' + platform);
+			else if (document.getElementById('wallet-' + id + '-' + fallback) && document.getElementById('wallet-' + id + '-' + fallback).getAttribute('data-walletcompat').indexOf(platform) !== -1) var nd = document.getElementById('wallet-' + id + '-' + fallback);
+		}
+		if (nd === null) continue;
 		nd = nd.cloneNode(true);
 		nd.id = 'wallet-' + id;
 		addClass(nd, 'nohover');
