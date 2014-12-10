@@ -260,8 +260,11 @@ Innovative wallets are exciting and encouraged, so if your wallet has a good rea
 
 Basic requirements:
 
-- Sufficient users and/or developers feedback can be found without particularly concerning issues, or independent security audit(s) is available
-- No indication that users have been harmed or risked being harmed by any issue in relation to the wallet
+- Sufficient users and/or developers feedback can be found without concerning issues, or independent security audit(s) is available
+- No indication that users have been harmed considerably by any issue in relation to the wallet
+- No indication that security issues have been concealed, ignored, or not addressed correctly in order to prevent new or similar issues from happening in the future
+- No indication that the wallet uses unstable or unsecure libraries
+- No indication that changes to the code are not properly tested
 - Wallet was publicly announced and released since at least 3 months
 - No concerning bug is found when testing the wallet
 - Website supports HTTPS and 301 redirects HTTP requests
