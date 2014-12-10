@@ -270,11 +270,12 @@ Basic requirements:
 - Website supports HTTPS and 301 redirects HTTP requests
 - SSL certificate passes [Qualys SSL Labs SSL test](https://www.ssllabs.com/ssltest/)
 - The identity of CEOs and/or developers is public
+- If private keys are stored online:
+  - Refuses weak passwords (short passwords and/or common passwords)
 - If user has no access over its private keys:
   - Provides 2FA authentication feature
   - Reminds the user to enable 2FA by email or in the main UI of the wallet
   - User session is not persistent, or requires authentication for spending
-  - Refuses weak passwords (short passwords and/or common passwords)
   - Provides account recovery feature
 - If user has exclusive access over its private keys:
   - Allows backup of the wallet
@@ -284,7 +285,6 @@ Basic requirements:
   - Provides 2FA authentication feature
   - Reminds the user to enable 2FA by email or in the main UI of the wallet
   - User session is not persistent, or requires authentication for spending
-  - Refuses weak passwords (short passwords and/or common passwords)
   - Gives control to the user over moving their funds out of the multi-signature wallet
 - For hardware wallets:
   - Uses the push model (computer malware cannot sign a transaction without user input)
