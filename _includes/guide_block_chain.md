@@ -139,8 +139,10 @@ transaction history (although, it should be noted, that even less than 50% of th
 The block header provides several easy-to-modify fields, such as a
 dedicated nonce field, so obtaining new hashes doesn't require waiting
 for new transactions. Also, only the 80-byte block header is hashed for
-proof-of-work, so adding more bytes of transaction data to
-a block does not slow down hashing with extra I/O.
+proof-of-work, so including a large volume of transaction data in
+a block does not slow down hashing with extra I/O, and adding additional
+transaction data only requires the recalculation of the ancestor hashes in
+the merkle tree.
 
 {% endautocrossref %}
 
