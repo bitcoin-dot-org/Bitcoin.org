@@ -5,8 +5,9 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-The Developer Reference aims to provide specifications and API information
-to help you start building Bitcoin-based applications. To make the best use of
+The Developer Reference aims to provide technical details and API information
+to help you start building Bitcoin-based applications, but it is [not a
+specification][]. To make the best use of
 this documentation, you may want to install the current version of Bitcoin
 Core, either from [source][core git] or from a [pre-compiled executable][core executable].
 
@@ -21,5 +22,45 @@ indicates extra data was removed, and lines ending in a single backslash "\\"
 are continued below. If you hover your mouse over a paragraph, cross-reference
 links will be shown in blue.  If you hover over a cross-reference link, a brief
 definition of the term will be displayed in a tooltip.
+
+{% endautocrossref %}
+
+#### Not A Specification
+{:.no_toc}
+
+{% autocrossref %}
+
+The Bitcoin.org Developer Documentation describes how Bitcoin works to
+help educate new Bitcoin developers, but it is not a specification---and
+it never will be.
+
+Bitcoin security depends on consensus. Should your program diverge from
+consensus, its security is weakened or destroyed. The cause of the
+divergence doesn't matter: it could be a bug in your program, it could
+be an [error in this documentation][errors in docs] which you
+implemented as described, or it could be you do everything right but the
+majority software on the network [behaves unexpectedly][v0.8 chain
+fork]. The specific cause will not matter to the users of your software
+whose wealth is lost.
+
+The only correct specification of consensus behavior is the actual
+program behavior of the majority software on the network. As that
+behavior is subject to arbitrary inputs<!--noref--> in a large variety
+of unique environments, it cannot ever be fully documented here or
+anywhere else.
+
+However, the Bitcoin Core developers are working on making their
+consensus code portable so other implementations can use it. Bitcoin
+Core 0.10 will provide `libbitcoinconsensus`, a first attempt at
+exporting some consensus code. Future versions of Bitcoin Core will
+likely provide consensus code that is more complete, more portable, and
+more consistent in diverse environments.
+
+In addition, we also warn you that this documentation has not been
+extensively reviewed by Bitcoin experts and so likely contains numerous
+errors. At the bottom of the menu on the left, you will find links that
+allow you to report an issue or to edit the documentation on GitHub.
+Please use those links if you find any errors or important missing
+information.
 
 {% endautocrossref %}

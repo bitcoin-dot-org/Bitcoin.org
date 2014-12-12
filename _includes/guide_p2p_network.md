@@ -226,6 +226,7 @@ These messages are aggressively broadcast using the `alert` message, being sent 
 
 These messages are signed by a specific ECDSA private key that only a small number of developers control. 
 
-**Resource:** More details about the structure of messages and a complete list of message types can be found at the [Protocol Specification](https://en.bitcoin.it/wiki/Protocol_specification) page of the Bitcoin Wiki.
+**Resource:** More details about the structure of messages and a complete list of message types can be found in
+the [P2P reference section][section P2P reference].
 
 {% endautocrossref %}

@@ -10,7 +10,7 @@ title: "Developer Reference - Bitcoin"
 
 # Bitcoin Developer Reference
 
-<p class="summary">Find technical specifications and API documentation.</p>
+<p class="summary">Find technical details and API documentation.</p>
 
 <div markdown="1" id="toc" class="toc"><div markdown="1">
 
