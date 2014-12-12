@@ -299,6 +299,7 @@ Optional criterias (some could become requirements):
 - Avoid address reuse by displaying a new receiving address for each transaction in the wallet UI
 - Does not show "received from" Bitcoin addresses in the UI
 - Uses deterministic ECDSA nonces (RFC 6979)
+- Provides a bug reporting policy on the website
 - If user has no access over its private keys:
   - Enables HSTS
   - Full reserve audit(s)
