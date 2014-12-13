@@ -38,13 +38,13 @@ Bitcoin security depends on consensus. Should your program diverge from
 consensus, its security is weakened or destroyed. The cause of the
 divergence doesn't matter: it could be a bug in your program, it could
 be an [error in this documentation][errors in docs] which you
-implemented as described, or it could be you do everything right but the
-majority software on the network [behaves unexpectedly][v0.8 chain
+implemented as described, or it could be you do everything right but
+other software on the network [behaves unexpectedly][v0.8 chain
 fork]. The specific cause will not matter to the users of your software
 whose wealth is lost.
 
 The only correct specification of consensus behavior is the actual
-program behavior of the majority software on the network. As that
+behavior of programs on the network which maintain consensus. As that
 behavior is subject to arbitrary inputs<!--noref--> in a large variety
 of unique environments, it cannot ever be fully documented here or
 anywhere else.
