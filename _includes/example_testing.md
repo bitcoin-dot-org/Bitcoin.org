@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/example_testing.md" %}
 
 ## Testing Applications
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -13,6 +15,7 @@ test their applications with reduced risks and limitations.
 {% endautocrossref %}
 
 ### Testnet
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -32,6 +35,7 @@ community, so please don't abuse it.
 {% endautocrossref %}
 
 ### Regtest Mode
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

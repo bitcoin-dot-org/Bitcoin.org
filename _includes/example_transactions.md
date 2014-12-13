@@ -2,10 +2,13 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/example_transactions.md" %}
 
 ## Transactions
+{% include helpers/subhead-links.md %}
 
 ### Transaction Tutorial
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -30,6 +33,7 @@ wallet.
 
 
 #### Simple Spending
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -127,6 +131,7 @@ second) and clear the shell variable.
 
 
 #### Simple Raw Transaction
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -342,6 +347,7 @@ variables.
 
 
 #### Complex Raw Transaction
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -578,6 +584,7 @@ the block chain or memory pool.
 
 
 #### Offline Signing
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -874,6 +881,7 @@ Remove old shell variables.
 
 
 #### P2SH Multisig
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

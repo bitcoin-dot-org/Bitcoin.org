@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/guide_wallets.md" %}
 
 ## Wallets
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -20,6 +22,7 @@ we're talking about wallet programs or wallet files.
 {% endautocrossref %}
 
 ### Wallet Programs
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -47,6 +50,7 @@ they control are spent.
 {% endautocrossref %}
 
 #### Full-Service Wallets
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -80,6 +84,7 @@ key or to read the decrypted keys from memory.
 
 
 #### Signing-Only Wallets
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -118,6 +123,7 @@ signing-only wallets: offline wallets and hardware wallets.
 {% endautocrossref %}
 
 ##### Offline Wallets
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -171,6 +177,7 @@ device and back.
 
 
 ##### Hardware Wallets
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -217,6 +224,7 @@ their intention to support at least one model of hardware wallet.
 
 
 #### Distributing-Only Wallets
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -250,6 +258,7 @@ Processing][devguide payment processing] section for details.
 
 
 ### Wallet Files
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -260,6 +269,7 @@ stored on pieces of paper.
 {% endautocrossref %}
 
 #### Private Key Formats
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -270,6 +280,7 @@ Private keys are what are used to unlock satoshis from a particular address. In 
 {% endautocrossref %}
 
 ##### Wallet Import Format (WIF)
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -298,6 +309,7 @@ The process is easily reversible, using the Base58 decoding function, and removi
 {% endautocrossref %}
 
 ##### Mini Private Key Format
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -322,6 +334,7 @@ address utility].
 
 
 #### Public Key Formats
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -380,6 +393,7 @@ help programs identify how keys should be used:
 
 
 #### Hierarchical Deterministic Key Creation
+{% include helpers/subhead-links.md %}
 
 <!-- 
 For consistent word ordering:
@@ -530,6 +544,7 @@ which makes them special.
 {% endautocrossref %}
 
 ##### Hardened Keys
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -619,6 +634,7 @@ for the full HD protocol specification.
 {% endautocrossref %}
 
 ##### Storing Root Seeds
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -654,6 +670,7 @@ For implementation details, please see BIP39.
 
 
 #### Loose-Key Wallets
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

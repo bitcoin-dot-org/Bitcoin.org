@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/guide_mining.md" %}
 
 ## Mining
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -24,6 +26,7 @@ hard to modify.  Mining today takes on two forms:
 {% endautocrossref %}
 
 ### Solo Mining
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -55,6 +58,7 @@ block chain.
 {% endautocrossref %}
 
 ### Pool Mining
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -97,6 +101,7 @@ different reward distribution systems based on this basic share system.
 {% endautocrossref %}
 
 ### Block Prototypes
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -109,6 +114,7 @@ are used to keep ASIC hashers working at maximum capacity,
 {% endautocrossref %}
 
 #### getwork RPC
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -122,6 +128,7 @@ discourage or disallow its use.
 {% endautocrossref %}
 
 #### getblocktemplate RPC
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -159,6 +166,7 @@ wants to send more transactions to the mining software.
 {% endautocrossref %}
 
 #### Stratum
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/guide_transactions.md" %}
 
 ## Transactions
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -156,6 +158,7 @@ transactions.
 {% endautocrossref %}
 
 ### P2PKH Script Validation
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -248,6 +251,7 @@ problems with it).
 {% endautocrossref %}
 
 ### P2SH Scripts
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -292,6 +296,7 @@ redeem script, so P2SH scripts are as secure as P2PKH pubkey hashes.
 {% endautocrossref %}
 
 ### Standard Transactions
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -324,6 +329,7 @@ As of Bitcoin Core 0.9, the standard pubkey script types are:
 
 #### Pay To Public Key Hash (P2PKH)
 {:.no_toc}
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -339,6 +345,7 @@ Signature script: <sig> <pubkey>
 
 #### Pay To Script Hash (P2SH)
 {:.no_toc}
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -355,6 +362,7 @@ Signature script: <sig> [sig] [sig...] <redeemScript>
 
 #### Multisig
 {:.no_toc}
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -398,6 +406,7 @@ Signature script: OP_0 <A sig> <C sig> <redeemScript>
 
 #### Pubkey
 {:.no_toc}
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -415,6 +424,7 @@ Signature script: <sig>
 
 #### Null Data
 {:.no_toc}
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -431,6 +441,7 @@ Pubkey Script: OP_RETURN <0 to 40 bytes of data>
 ~~~
 
 #### Non-Standard Transactions
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -483,6 +494,7 @@ conditions:
 {% endautocrossref %}
 
 ### Signature Hash Types
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -545,6 +557,7 @@ hash types sign, including the procedure for inserting the subscript -->
 {% endautocrossref %}
 
 ### Locktime And Sequence Number
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -603,6 +616,7 @@ enable locktime.
 {% endautocrossref %}
 
 ### Transaction Fees And Change
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -642,6 +656,7 @@ outputs be sent to a new P2PKH or P2SH address.
 {% endautocrossref %}
 
 ### Avoiding Key Reuse
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -695,6 +710,7 @@ fixed URI to which payments should be sent, please see the
 {% endautocrossref %}
 
 ### Transaction Malleability
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

@@ -2,12 +2,15 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/ref_block_chain.md" %}
 
 ## Block Chain
+{% include helpers/subhead-links.md %}
 
 The following subsections briefly document core block details.
 
 ### Block Headers
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -45,6 +48,7 @@ fe9f0864 ........................... Nonce
 {% endautocrossref %}
 
 #### Block Versions
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -76,6 +80,7 @@ fe9f0864 ........................... Nonce
 {% endautocrossref %}
 
 #### Merkle Trees
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -128,6 +133,7 @@ order when it's placed in the block header.
 {% endautocrossref %}
 
 #### Target nBits
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -190,6 +196,7 @@ of blocks in regtest mode.
 
 
 ### Serialized Blocks
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
