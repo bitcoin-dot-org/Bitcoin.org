@@ -36,7 +36,7 @@ zh_CN:
     visibility: "免费获得知名度"
     visibilitytext: "比特币是一个新兴市场，这里的新客户都在寻找消费比特币的途径。商家接受比特币付款，不仅可以获得新客户，还可以提升企业知名度。对于网上业务而言，接受新的支付方式，常被证明是一个明智的举措。"
     multisig: "多重签名 "
-    multisigtext: "比特币还有一个不被广泛知晓的功能：只有一组人中的相当一部分人对交易签名，比特币才能用于消费 (所谓的\"m of n\" 交易)。这就相当于以前很好用的多重签名支票系统，可能今天仍有银行在继续使用。"
+    multisigtext: "Bitcoin 还拥有一种多重签名功能，只有一个群体中的一部分人授权交易后，比特币才能被使用。这个功能可以应用于董事会来防止任何成员在未获得足够其它成员的授权的情况下使用开支，同时还可以查看是哪些成员允许了每笔支付。"
     transparency: "帐目透明"
     transparencytext: "很多组织机构都需要提供业务活动的账目文件。使用比特币可以让你提供最高水平的透明度，因为你的成员可以通过你提供的信息核实你的帐户余额和交易记录。非盈利组织还可以允许公众查看他们收到的捐款额。"
   bitcoin-for-developers:
@@ -116,13 +116,13 @@ zh_CN:
     walletkncwallet: "KnC 钱包力求成为可以发送比特币给你的朋友和家人的一个方便途径。它具有一个在线联系人名录以便你在不知道他们的比特币地址的情况下一样可以给他们发送比特币。"
     walletbreadwallet: "简单是 breadwallet 的核心设计理念。作为一个真实而独立的比特币客户端，它没有服务器可被黑客攻击，也不会发生服务器崩溃的情况。breadwallet 建立在 iOS 强大的安全基础之上，通过精心设计，使你不受恶意软件攻击，免除浏览器安全漏洞风险，甚至不用担心在现实中有遭受偷窃的风险。"
     walletmyceliumwallet: "Mycelium比特币钱包是一款针对 Android 操作系统开源钱包。其设计注重安全性，快速以及易用性。它具有私钥管理和冷存储的独特功能用以保护你的比特币。"
-    walletblockchaininfo: "Blockchain.info是一款便于使用的混合钱包。它在线存储一个你的钱包的加密版本，但是加密是在你的浏览器进行的。为安全起见，你应该总是使用这个浏览器的扩展功能和进行邮件备份(同时保证这个邮箱是安全的)。"
     walletcoinbase: "Coinbase是一个致力于易用性的在线钱包服务。它还提供了Android 在线钱包应用，商家工具，并集成了美国银行账户用于比特币买卖。"
     walletxapo: "Xapo 融合了日常比特币钱包的方便性和一个被保险的深层冷储存vault的安全性。Xapo 借记卡与你的 Xapo 钱包关联，这使得你可以给在世界各地的数以百万计的商家支付比特币。"
     walletcoinkite: "Coinkite是一款致力于易用性的在线钱包和借记卡服务。它也支持手机浏览器，具有商家工具，销售点支付终端。它是一款混合型钱包和完全型储备库。"
     walletbitgo: "BitGo 是具有一流安全性的多重签名钱包。它的每一笔交易都要求有两个签名，避免你的比特币受到恶意软件和服务器攻击。私钥只由用户持有，这样BitGo就不能动用你的比特币。这对于非技术人员的用户来说，是一个很好的选择。"
     walletgreenaddress: "GreenAddress 是一个便于使用的多重签名钱包，它具有更好的安全性和隐私保障。你的私匙无论何时都不会在服务器端上，加密的私钥更不会。为安全起见，你应当总是使用双重验证（2FA）和浏览器扩展功能或 Android 应用程序。"
     wallettrezor: "TREZOR 是一个硬件钱包，它具有高安全性，同时又不会以牺牲方便性为代价。与冷储存（cold storage）不同，TREZOR在连接到一个在线设备时是可以实现交易的。这意味着即便是在使用不安全的电脑的时候，使用比特币都是十分安全的。"
+    wallethw1: "HW.1是一款建立在ST23YT66银行智能卡平台上的硬件钱包。它保证用户的私密钥匙的安全、验证交易，并可用作一个安全的预付卡或一个多重签署的一方。它不是开放源代码，但它还是可以被确定性验证。"
     walletdownload: "安装"
     walletvisit: "访问网站"
     walletsourcecode: "源代码"
@@ -144,6 +144,8 @@ zh_CN:
     checkfailcontrolthirdpartytxt: "这个服务拥有对你的比特币的全面掌控权。这意味着你需要信任这个服务不会让你因为他们的原因而在一次意外中失去你的资金。因为当前大部分的网上在线钱包都不能像银行一样保障他们的存款安全，而且很多这样的服务在过去遭受了不少的安全攻击。"
     checkgoodvalidationfullnode: "全面验证"
     checkgoodvalidationfullnodetxt: "这个钱包是一个在比特币网络上验证并转送交易的完整节点。这意味着当验证支付的时候，不需要信任第三方。完整节点具有最高水平的安全性，它对于保护整个网络也是至关重要的。然而，它们需要更多的空间 (超过 20 GB)、更大的带宽，和一个更长的初始同步时间。"
+    checkgoodvalidationfullnoderequired: "完全验证"
+    checkgoodvalidationfullnoderequiredtxt: "这款钱包要求您安装完全节点软件以在Bitcoin 网络上验证和传送交易。这意味着当验证支付的时候不需要对第三方有信任。完全节点具有最高的安全水平，它对于保护这个网络是至关重要的。然而，它们要求更多的存储空间(超过20GB)、带宽和更长的初始同步时间。"
     checkneutralvalidationvariable: "可变验证"
     checkneutralvalidationvariabletxt: "支付验证功能由你通过这个设备使用的软件钱包提供。请查看你打算使用的软件钱包的验证评分。"
     checkpassvalidationspvp2p: "简化验证"
@@ -156,14 +158,18 @@ zh_CN:
     checkfailvalidationcentralizedtxt: "在默认情况下，这个钱包依赖一个中心的服务。这意味着需要信任第三方不会隐藏和模拟支付。"
     checkgoodtransparencydeterministic: "完全透明度"
     checkgoodtransparencydeterministictxt: "这个钱包是开放源代码，它是被确定性地建立的。这意味着世界上所有的开发人员都可以审查这个编码并确保最后的软件没有隐藏任何秘密。"
-    checkpasstransparencyopensource: "良好的透明度"
+    checkpasstransparencyopensource: "基本的透明度"
     checkpasstransparencyopensourcetxt: "这个钱包的开发者们给客户发布源代码。这意味着世界上的任何开发人员都可以检查这个编码。不过，当你安装或者更新最后的软件的时候，你还是需要信任这个钱包的开发者，因为它不是像<a href=\"#download#\">Bitcoin Core</a>那样确定性地建立的。"
+    checkpasstransparencyopensourcehardware: "基本的透明度"
+    checkpasstransparencyopensourcehardwaretxt: "此钱包的源代码是公开的。这意味着全世界任何开发者均可审查此编码。然而，您仍需信任此钱包的开发者，因为设备无法进行验证以使其使用相同的源代码生成安全的随机种子并且对其它操作使用相同源代码。更新您的设备固件，生成自己的安全的随机种子或者使用多重签名可以增加别人盗取你的比特币的难度。"
+    checkpasstransparencyopenspechardware: "基本的透明度"
+    checkpasstransparencyopenspechardwaretxt: "此钱包的规范是公开的。这意味着全世界任何开发者均可对其进行黑箱测试。然而，您仍需信任此钱包的开发者，因为设备无法进行验证以使其生成安全的随机种子，而且也无法审查源代码。更新你的设备固件，生成自己的安全的随机种子或者使用多重签名可以增加别人盗取你的比特币的难度。"
     checkfailtransparencyclosedsource: "没有透明度"
     checkfailtransparencyclosedsourcetxt: "这个钱包并非开放源代码。这意味着不可能对编码进行检查并保证最终的软件不是危险的编码或者它不会做任何你不会同意的事情。"
     checkfailtransparencyremote: "远程应用程序"
     checkfailtransparencyremotetxt: "这个钱包是从一个远程地点加载的。这意味着不管什么时候你使用你的钱包，你都需要信任开发者不会偷窃你的比特币或者你不会因为他们的一次事故而丢失你的比特币。如果可以的话，使用一个浏览器扩展功能或手机应用程序，这样可以减少这个风险。"
     checkfailtransparencynew: "新的应用程序"
-    checkfailtransparencynewtxt: "这个钱包的开发者给客户公布源代码。然而，这个钱包还没有经过测试和大量人群的公开评审。这意味着这个应用程序更可能具有隐藏危险编码的风险或者会做一些你不同意的事情的风险。"
+    checkfailtransparencynewtxt: "这个钱包还没有经过测试和大量人群的公开评审。这意味着这个应用程序更可能具有隐藏危险编码的风险或者会做一些你不同意的事情的风险。"
     checkgoodenvironmenthardware: "非常安全的环境"
     checkgoodenvironmenthardwaretxt: "这个钱包是从一个由设备提供的专门的安全环境加载的。这非常有力地保障了计算机的安全漏洞不受攻击，也阻止了来自恶意软件的破坏。因为没有软件可以安装到这个环境中。"
     checkpassenvironmentmobile: "安全环境"
@@ -325,7 +331,7 @@ zh_CN:
     earlyadopter: "比特币不会使早期使用者受益更多吗？"
     earlyadoptertxt1: "一些早期使用者拥有大量的比特币，因为他们在一个未经证实的技术上冒着风险投入了时间和资源，而当时该技术几乎还无人使用，也更难保证其安全性。在比特币变得有价值之前，许多早期的使用者经常消费大量的比特币，或者仅仅只买了少量的比特币，因此并没有获得巨大的收益。谁也不能保证比特币的价格将上涨或下跌。这非常像投资给一个早期的初创公司，可能会随着其实用性和普及获得价值，也也可能一直没有突破。比特币尚处于起步阶段，它的设计者眼光长远；很难想象它如何能够更少地偏向早期的使用者，今天的用户可能会是明天的早期使用者，也可能不是。"
     finitelimitation: "比特币的总量有限不会有局限性吗？"
-    finitelimitationtxt1: "比特币的独特之处在于其总量只有2100万比特币。但是这根本不会成为一种局限，因为比特币可以最多细分至小数点后8位(0.000 000 01 比特币)，如果将来需要甚至可以精确到更小的单位。当平均单笔交易额减小时，其数额可以用比特币的亚单位来表示，比如毫比特币(1毫比特币或者0.001比特币)。"
+    finitelimitationtxt1: "Bitcoin 的独特之处在于只有总量为2100万的比特币会被生成。但是这根本不会成为一种局限，因为交易中可以将比特币划分成更小的次级单位，比如 bit - 一比特币等于 1,000,000 bit。一个比特币可以拆分到小数点后8位 （0.000 000 01），如果将来平均单笔交易规模减小到一定程度时，甚至可以拆分到更小的单位。"
     deflationaryspiral: "比特币不会陷入螺旋式的通货紧缩吗？"
     deflationaryspiraltxt1: "螺旋式通缩理论这么阐述，如果预计价格要下跌，为了从较低的价格中获利，人们将选择今后再购买。由此导致的需求减少反过来将使商家试图通过降低他们的价格刺激需求，从而使问题更糟，并导致经济萧条。"
     deflationaryspiraltxt2: "尽管该理论普遍地被中央银行家们用于解释通货膨胀，但它似乎并不总是有效，经济学家之间对该理论也有争议。消费类电子产品市场就是一个例子，商品价格不断下跌，但并没有导致萧条。同样地，比特币的价值不断在上升，同时比特币经济的规模也随之大幅增长。因为比特币的经济规模和货币价值都是从2009年由零开始，所以比特币是螺旋式通缩理论的一个反例，说明有时候该理论必然是错的。"
@@ -429,9 +435,6 @@ zh_CN:
     list3: "零或极低的<br>手续费"
     desc: "比特币基于P2P技术运作，无需中央管理机构或银行；交易管理和比特币发行由比特币网络统一进行。<b>比特币是开源的；其设计是公开的，任何人都无法拥有或控制比特币网络，<a href=\"#support-bitcoin#\">人人都可参与其中</a></b>。基于其种种独有的特性，比特币使之前任何支付系统都无法实现的激动人心的用途成为可能。"
     overview: "或大概了解一下"
-    individuals: "个人"
-    businesses: "商家"
-    developers: "开发者"
   innovation:
     title: "创新 - 比特币"
     pagetitle: "支付系统的创新"
@@ -463,8 +466,48 @@ zh_CN:
   legal:
     title: "法律声明 - 比特币"
     pagetitle: "法律声明"
-    termstxt1: "本网站提供一般性的信息和资料。这些信息仅作为资讯用途。本网站可能含有解决实际或潜在法律问题的信息。该信息不能代替适任的法律顾问。你没有权利也不应该依赖本网站获得法律意见。因为你相信本网站而采取或没有采取的行动，决定或其它行为，本网站的拥有者和贡献者将不会为其负责，这包括但不限于法律或技术原因。你对相信本网站的内容自负风险。如果你决定采取或不采取行动，你都需要联系你寻求帮助的所在地的持证律师。"
-    termstxt2: "本网站可能包含英语版本内容的译本。这些译本只为提供方便而设。如果英文版与翻译版本之间存在任何冲突的情况，以英文版为准。如果您发现了任何歧义，请至 <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a> 报告。"
+    information: "在bitcoin.org上发布的信息"
+    informationtxt1: "网站http://bitcoin.org/（以下均称“本网站”）提供一般属性的信息和资料。您没有被授权或者您也不应当依赖本网站来获取法律建议、商务建议或者其他任何性质的建议。您承担所有使用这个网站的内容的风险。如果您要做出一个决定来行动或者尚未行动，您都应该咨询您想要得或需要帮助的有关行政区中的一个具备资格的律师。在任何情况下，这个网站的所有者或者贡献者都不会对您根据这个网站的内容而作出的决定、采取的行动、或其他由您发出或不由您发出的行为负责。"
+    translations: "翻译"
+    translationstxt1: "本网站可能包含有本网站上的可用内容的英文版本的翻译。这些翻译只是为了提供方便。如果英语版本和翻译的版本有任何不一致，以英文版本为准。如果您发现了任何不一致，请在<a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a>上报告。"
+    userisks: "使用 Bitcoin 的风险"
+    useriskstxt1: "本网站不会对从以下五类事件的范围产生的任何损失、损害或索赔负责："
+    useriskstxt2: "任何与 Bitcoin 有关的软件或服务的用户造成的失误，例如：忘记密码、把钱支付给错误的 Bitcoin 地址，以及错误删除钱包。"
+    useriskstxt3: "本网站或任何与Bitcoin 有关的软件和服务的软件问题，例如：被损坏的钱包文件，错误架构的交易，不安全的加密库，恶意软件攻击本网站和/或任何与 Bitcoin 有关的软件或服务。"
+    useriskstxt4: "任何与 Bitcoin 有关的软件或服务的用户方面的硬件技术失败，例如：因错误或损坏的存储设备而造成的数据丢失。"
+    useriskstxt5: "任何与 Bitcoin 有关的软件或服务的用户遭遇的安全问题，例如：未经授权擅自登入用户的钱包和/或账户。"
+    useriskstxt6: "第三方的作为或不作为和/或第三方遭遇的事故，例如：服务供应商的破产，服务商遭遇信息安全攻击，和第三方恶意所为的诈骗。"
+    investmentrisks: "投资风险"
+    investmentriskstxt1: "投资在 Bitcoin 可能会导致在短期甚至是长期内损失金钱。Bitcoin 的投资者应当意识到价格会有很大波动。在本网站上发布的信息不能保证 Bitcoin 的投资者不会蒙受损失。"
+    taxcompliance: "履行纳税义务"
+    taxcompliancetxt1: "本网站的用户自己负责查明确定哪一种税是他们的 Bitcoin 交易必须缴纳的。本网站的所有者或贡献者不负责查明确定针对 Bitcoin 交易的税种。"
+    noissuer: "本网站不储存、发送或接收比特币。"
+    noissuertxt1: "本网站不储存、发送或接收比特币。这是因为比特币只通过保留在 Bitcoin 网络里的虚拟的所有权记录而存在。比特币的所有权的转换在一个去中心化的 Bitcoin 网络中发生，而不是在本网站上。"
+    nowarranties: "无保证"
+    nowarrantiestxt1: "本网站是在一个“不保证”的基础上提供的，它不提供任何关于本网站和/或任何在这个网站上提供的内容、数据、资料和/或服务的保证。"
+    noliability: "有限义务"
+    noliabilitytxt1: "除非法律要求，不论是任何情况下，本网站的所有者或贡献者都不会对任何损害负责，包括且不限于：因使用本网站或与使用本网站有关的其他活动而丧失使用、丧失利润或丢失数据。"
+    arbitration: "仲裁"
+    arbitrationtxt1: "本网站的用户同意对除了有关版权、徽标、商标、商号、贸易秘密或专利之外其他任何因本网站或此免责声明、或与本网站的关系而引起的纠纷进行仲裁。"
+    lastchange: "最新修订"
+    lastchangetxt1: "此免责声明最后一次修订是在"
+  press:
+    title: "新闻媒体 - Bitcoin"
+    pagetitle: "新闻媒体中心"
+    summary: "查找受访者，答案和高质量的新闻媒体材料。"
+    volunteer: "受访者"
+    volunteernonprofit: "与 <a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin 基金会</a> 或当地<a href=\"#community##[community.non-profit]\">非盈利机构</a>交流。"
+    volunteerpresscenter: "通过独立的 <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>找到更多潜在新闻媒体联系人。"
+    faqmore: "欲了解更多Bitcoin 详情，请浏览完整的 <a href=\"/en/faq\">常见问题</a>或 <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin 维基</a>。"
+    materialpicture: "图片"
+    materialpicturemore: "显示更多图片……"
+  privacy:
+    title: "隐私 - Bitcoin"
+    pagetitle: "隐私"
+    datacollect: "收集到的数据"
+    datacollecttxt: "Bitcoin.org 收集匿名的服务器记录。这些记录包括更换了最后一个字节的IP地址、访问时间，访问页面，用户代理和referer url。 Bitcoin.org 不使用 cookies 来收集数据。"
+    datause: "数据的应用"
+    datausetxt: "收集到的数据会应用于提供<a href=\"/stats/\">透明的公共统计</a>。"
   protect-your-privacy:
     title: "保护你的隐私 - 比特币"
     pagetitle: "保护你的隐私"
@@ -536,7 +579,7 @@ zh_CN:
     update: "将软件升级到最新版"
     updatetxt: "最新版本的Bitcoin客户端已经可以让你获取重要的稳定性和安全性修复。这些更新能够防范各种严重问题，并包含有用的新功能，还能有助于保持钱包的安全。为了使钱包环境更安全，给你的电脑或手机上所有其他软件安装更新也同样很重要。"
     offlinemulti: "多重签名以防资金被盗"
-    offlinemultitxt: "比特币有一个多重签名的功能，使用该功能，创建交易时将要求提供多个私钥的签名。尽管现在只对技术型的用户有用，不过预计在将来这一功能会有很大的可用性。使用多重签名，可以让一个组织在将资金信息共享给成员的同时，保证只有5个成员中有3个人签名的情况下才能提取资金。将来的在线钱包服务也可以使用这个功能，与用户共享一个需要多重签名的地址，这样，如果小偷想盗取你的资金，需要攻陷你的电脑和在线钱包的服务器。"
+    offlinemultitxt: "Bitcoin 拥有多重签名功能，它要求一个交易在得到多个独立的许可之后才能成交。组织机构可以通过这一功能让其成员可以接触它的资产，但是只有在3/5的成员签署交易后才能提款。一些网页钱包也提供多重签名钱包，让用户可以对他们的钱保有掌控权，同时防止小偷通过入侵一个单独的设备或服务器即可盗取资金。"
     offlinetestament: "想想你的遗嘱"
     offlinetestamenttxt: "如果没有为家人和朋友准备一个备份计划，你的比特币可能会永远丢失。当你不在了，如果没有人知道钱包存放的位置，或者知晓你的密码，资金将永远找不回来。花一点时间在这个问题上结果就大不一样了。"
   support-bitcoin:
@@ -570,6 +613,8 @@ zh_CN:
     table: "目录"
     address: "比特币地址"
     addresstxt: "比特币地址<b>就像一个物理地址或者电子邮件地址</b>。这是别人付给你比特币时你唯一需要提供的信息。然而一个重要的区别是，每个地址应该只用于单笔交易。"
+    bit: "Bit"
+    bittxt: "Bit 是标明一个比特币的次级单位的常用单位 -1,000,000 bit 等于1 比特币 (BTC 或 B⃦).，这个单位对于标示小费、商品和服务价格更方便。"
     bitcoin: "比特币"
     bitcointxt: "首字母大写的Bitcoin用来表示比特币的概念或整个比特币网络本身。例如：“今天我学了些有关Bitcoin协议的内容。”<br>而没有大写的bitcoin则表示一个记账单位。例如：“我今天转出了10个bitcoin。”该单位通常也简写为BTC或XBT。"
     blockchain: "块链"
@@ -577,7 +622,7 @@ zh_CN:
     block: "区块"
     blocktxt: "一个块是<b>块链中的一条记录，包含并确认待处理的交易</b>。平均约每10分钟就有一个包含交易的新块通过<a href=\"#[vocabulary.mining]\">挖矿</a>的方式添加到<a href=\"#[vocabulary.blockchain]\">块链</a>中。"
     btc: "BTC"
-    btctxt: "BTC是比特币常用的货币单位。如同美元用USD或者$表示，比特币用BTC或者B⃦表示。"
+    btctxt: "BTC 是用于标示一个比特币 (B⃦). 的常用单位。"
     confirmation: "交易确认"
     confirmationtxt: "交易确认意味着一笔交易已经 <b>被网络处理且不太可能被撤销</b>。当交易被包含进一个 <a href=\"#vocabulary##[vocabulary.block]\">块</a>时会收到一个确认，后续的每一个块都对应一个确认。对于小金额交易单个确认便可视为安全，然而对于比如1000美元的大金额交易，等待6个以上的确认比较合理。每一个确认都成 <i>指数级</i>地降低交易撤销的风险。"
     cryptography: "密码学"
@@ -628,7 +673,10 @@ zh_CN:
     menu-innovation: 创新
     menu-intro: 介绍
     menu-legal: "法律"
+    menu-press: "新闻媒体"
+    menu-privacy: "隐私"
     menu-resources: 资源
+    menu-stats: "统计数据"
     menu-support-bitcoin: 参与
     menu-vocabulary: 词汇表
     menu-you-need-to-know: "注意事项"
@@ -651,6 +699,8 @@ zh_CN:
     how-it-works: how-it-works
     innovation: innovation
     legal: legal
+    press: press
+    privacy: privacy
     protect-your-privacy: protect-your-privacy
     resources: resources
     secure-your-wallet: secure-your-wallet
@@ -662,6 +712,7 @@ zh_CN:
       non-profit: non-profit
     vocabulary:
       address: address
+      bit: bit
       bitcoin: bitcoin
       blockchain: block-chain
       block: block
