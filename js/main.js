@@ -430,7 +430,7 @@ function updateSource(e){
 if (!document.getElementsByClassName) return;
 var t = getEventTarget(e),
     nodes = document.getElementsByClassName('sourcefile'),
-    pageoffset = getPageYOffset(),
+    pageoffset = Math.max(0, getPageYOffset() + 100),
     windowy = getWindowY(),
     fallback = nodes[0],
     first = [fallback, getTop(fallback)],
