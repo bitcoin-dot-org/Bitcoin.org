@@ -13,7 +13,7 @@ title: Network status and alerts - Bitcoin
   {% if site.STATUS == 0 %}
   <div class="alertstatusinactive">There is no ongoing event on the Bitcoin network.</div>
   {% else %}
-  <div class="alertstatusactive"">The following network event is ongoing.</div>
+  <div class="alertstatusactive">The following network event is ongoing.</div>
   <ul class="alertsactive">
   {% filter_for p in site.pages reversed sort_by:date category:alert %}{% if p.active == true %}
     <li>
