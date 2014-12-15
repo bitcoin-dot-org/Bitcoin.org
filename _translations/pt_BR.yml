@@ -116,13 +116,13 @@ pt_BR:
     walletkncwallet: "KNC Wallet se esforça para ser uma maneira fácil de enviar bitcoins para seus amigos e familiares. Ele possui um diretório on-line para que você possa começar a enviar moedas para seus contatos imediatamente, sem saber seus endereços Bitcoin."
     walletbreadwallet: "A simplicidade é o princípio de design do núcleo breadwallet. Como um verdadeiro Bitcoin cliente autônomo, não há servidor para ser hackeado ou parar de funcionar e ao construir uma sólida base de segurança do iOS, o breadwallet é projetado para proteger você de malware, falhas de segurança do navegador e mesmo roubo físico."
     walletmyceliumwallet: "Mycelium é uma carteira Bitcoin de código aberto para Android projetada para segurança, rapidez e facilidade de uso. Ela tem características únicas para gerenciamento de chaves e armazenamento frio que ajudam você proteger seus bitcoins."
-    walletblockchaininfo: "Blockchain.info é uma carteira híbrida amigável para o usuário. Ele armazena uma versão criptografada da sua carteira online, mas a desencriptação ocorre no seu navegador. Por razões de segurança, você deve sempre usar a extensão do navegador e os backups de e-mail (e manter esse e-mail seguro)."
     walletcoinbase: "Coinbase é uma carteira online, funcional e fácil de usar. Também disponibiliza um aplicativo de carteira Android web, ferramentas para comerciantes e integração com bancos dos EUA para compra e venda de bitcoins."
     walletxapo: "Xapo combina a conveniência de uma carteira cotidiana Bitcoin com a segurança de um profundo cofre de armazenamento cold storage. Cartão de Débito Xapo tem link para sua carteira Xapo e permite-lhe enviar bitcoins em milhões de estabelecimentos comerciais em todo o mundo."
     walletcoinkite: "Coinkite é uma carteira &amp; serviço de cartão de débito que visa facilitar o uso. Também funciona em navegadores móveis, tem ferramentas de comércio e terminais de ponto de venda. É uma carteira híbrida e um cofre de reserva integral."
     walletbitgo: "BitGo é uma carteira multi-assinatura que oferece um alto nível de segurança. Todas as transações necessitam de duas assinaturas, protegendo seus bitcoins de malware e ataques de servidor. As chaves privadas são armazenadas pelo usuário, tanto que BitGo não pode acessar os bitcoins. É uma boa escolha para usuários não técnicos."
     walletgreenaddress: "GreenAddress é uma carteira multiassinatura de fácil utilização com maior segurança e privacidade. Em nenhum momento, as chaves estão do lado do servidor, nem mesmo quando criptografadas. Por razões de segurança, você deve sempre usar 2FA e a extensão do navegador ou Android App."
     wallettrezor: "Trezor é uma carteira física proporcionando um alto nível de segurança sem sacrificar a conveniência. Ao contrário do armazenamento cold storage Trezor é capaz de assinar transações, enquanto conectado a um dispositivo online. Isso significa gastar bitcoins é seguro mesmo quando se usa um computador comprometido."
+    wallethw1: "HW.1 é uma carteira hardware construída sobre uma plataforma bancária de smartcard ST23YT66. Ela mantém as chaves privadas de usuário seguras, valida as transações, pode ser usada como um cartão pré-pago seguro ou de um parte multi-assinatura. Apesar de não ter código aberto, pode ser deterministicamente validada."
     walletdownload: "Instalar"
     walletvisit: "Acessar o site"
     walletsourcecode: "Código fonte"
@@ -144,6 +144,8 @@ pt_BR:
     checkfailcontrolthirdpartytxt: "Esse serviço tem total controle sobre seus bitcoins. Isso significa que você precisa confiar que esse serviço não perderá seus fundos num acidente da parte dele. Ainda hoje, a maioria das carteiras web não garantem seus depósitos como um banco e muitos desses serviços sofreram com falhas de segurança no passado."
     checkgoodvalidationfullnode: "Validação completa"
     checkgoodvalidationfullnodetxt: "Esta carteira é um full node que valida e transmite as transações na rede Bitcoin. Isto significa que a não confiança em terceiros é necessária quando a verificação de pagamentos. Full nodes fornecem o mais alto nível de segurança e são essenciais para proteger a rede. No entanto, eles exigem mais espaço (mais de 20 GB), largura de banda e um tempo de sincronização inicial por mais tempo."
+    checkgoodvalidationfullnoderequired: "Validação completa"
+    checkgoodvalidationfullnoderequiredtxt: "Esta carteira exige que você instale o software full node que valida e transmite as transações na rede Bitcoin. Isto significa que não é necessária confiança em terceira parte ao verificar pagamentos. Full node oferece o mais alto nível de segurança e são essenciais para proteger a rede. No entanto, ele exigem mais espaço (mais de 20 GB), banda larga e um tempo de sincronização inicial por mais tempo."
     checkneutralvalidationvariable: "Validação variável"
     checkneutralvalidationvariabletxt: "Recursos de validação de pagamento são fornecidos pelo programa de carteira que você usa com este dispositivo. Por favor, veja a pontuação de validação para o programa carteira que você planeja usar."
     checkpassvalidationspvp2p: "Validação simplificada"
@@ -156,14 +158,18 @@ pt_BR:
     checkfailvalidationcentralizedtxt: "Esta carteira conta com um serviço centralizado por padrão. Isso significa que um terceiro deve ser confiável para não ocultar ou simular pagamentos."
     checkgoodtransparencydeterministic: "Transparência completa"
     checkgoodtransparencydeterministictxt: "Esta carteira é de código aberto e construída de forma determinística. Isto significa que qualquer desenvolvedor do mundo pode auditar o código e verifique se o software final não está escondendo algum segredo."
-    checkpasstransparencyopensource: "Boa transparência"
+    checkpasstransparencyopensource: "Transparência básica"
     checkpasstransparencyopensourcetxt: "Os desenvolvedores deste carteira publicam o código fonte para o cliente. Isto significa que qualquer desenvolvedor do mundo pode auditar o código. No entanto, você ainda precisa confiar nos desenvolvedores desta carteira ao instalar ou atualizar o software final, porque não foi construído de forma determinística, como <a href=\"#download#\">Bitcoin Core</a>."
+    checkpasstransparencyopensourcehardware: "Transparência básica"
+    checkpasstransparencyopensourcehardwaretxt: "O código fonte desta carteira é público. Isto significa que qualquer programador no mundo pode auditar o código. De qualquer forma, você ainda tem que confiar nos desenvolvedores desta carteira porque o dispositivo não pode ser verificado de estar usando o mesmo código fonte para gerar sementes aleatórias seguras e para outras operações. Atualizando o firmware do seu dispositivo, gerando sua própria semente aleatória e segura ou utilizando múltiplas-assinaturas pode tornar mais difícil de roubar seus bitcoins."
+    checkpasstransparencyopenspechardware: "Transparência básica"
+    checkpasstransparencyopenspechardwaretxt: "A especificação desta carteira é pública. Isto significa que qualquer programador no mundo pode fazer testes caixa preta. De qualquer forma, você ainda tem que confiar nos desenvolvedores desta carteira porque o dispositivo não pode ser verificado de estar gerando sementes aleatórias seguras e o código fonte não podem ser auditado. Atualizando o firmware do seu dispositivo, gerando sua própria semente aleatória e segura ou utilizando múltiplas assinaturas pode tornar mais difícil de roubar seus bitcoins."
     checkfailtransparencyclosedsource: "Sem transparência"
     checkfailtransparencyclosedsourcetxt: "Esta carteira não é código aberto. Isto significa que não é possível auditar o código e verificar se o programa final não está escondendo código perigoso ou fazendo qualquer coisa que você não iria concordar."
     checkfailtransparencyremote: "App remoto"
     checkfailtransparencyremotetxt: "Esta carteira é carregada a partir de um local remoto. Isso significa que quando você quiser usar sua carteira, você precisa confiar que os programadores não roubem ou percam os seus bitcoins em um incidente no site deles. Usar uma extenção de navegador ou app para celular, se estiver disponível, pode reduzir os riscos."
     checkfailtransparencynew: "Novo app"
-    checkfailtransparencynewtxt: "Os programadores desta carteira publicam o código de fonte ao cliente. Entretanto, esta carteira ainda não foi revisada publicamente por um número significante de pessoas. Isto significa que esse app talvez esteja em risco de esconder códigos perigosos ou de fazer algo que você não esteja de acordo. "
+    checkfailtransparencynewtxt: "Esta carteira não foi testada e publicamente revista por um número significativo de pessoas. Isto significa que este aplicativo pode estar com um alto risco de estar escondendo códigos perigosos ou fazendo alguma coisa à qual você não concordaria."
     checkgoodenvironmenthardware: "Ambiente muito seguro"
     checkgoodenvironmenthardwaretxt: "Essa carteira é carregada a partir de um ambiente especializado e seguro fornecido pelo dispositivo. Isto pode fornecer uma proteção muito segura contra a vulnerabilidades e malware já que nenhum programa pode ser instalado neste ambiente."
     checkpassenvironmentmobile: "Ambiente seguro"
@@ -325,7 +331,7 @@ pt_BR:
     earlyadopter: "Bitcoin não beneficia os que aderiram primeiro?"
     earlyadoptertxt1: "Alguns primeiros utilizadores têm um grande número de bitcoins porque eles aceitaram riscos e investiram tempo e recursos em uma tecnologia não comprovada que era dificilmente usada por alguém e que era muito difícil de garantir adequadamente. Muitos primeiros utilizadores gastaram grandes números de bitcoins o bastante algumas vezes antes deles se tornarem valiosos ou compraram somente quantias pequenas e não tiveram ganhos enormes. Não há garantia que o preço de uma bitcoin irá aumentar ou cair. Isto é muito similar a investir em uma empresa iniciante que pode aumentar de valor através da sua utilidade e popularidade ou nunca deslanchar. Bitcoin ainda está na sua infância e foi desenhada com uma visão de longuíssimo prazo, é difícil imaginar como ela poderia ser menos inclinada aos primeiros utilizadores, os usuários de hoje podem ou não ser os primeiros utilizadores de amanhã."
     finitelimitation: "A quantidade finita de bitcoins não será uma limitação?"
-    finitelimitationtxt1: "Bitcoin é único em que apenas 21 milhões de bitcoins serão criados. No entanto, isso nunca vai ser uma limitação porque bitcoins podem ser divididos até 8 casas decimais (0,000 000 01 BTC) e unidades potencialmente ainda menores se necessário no futuro. À medida que o tamanho médio da transação diminui, as transações podem ser denominados em sub-unidades de um bitcoin, como millibitcoins (1 MBTC ou 0.001 BTC)."
+    finitelimitationtxt1: "Bitcoin é único, pois, nunca serão criados mais de 21 milhões de bitcoins. No entanto, isso nunca vai ser uma limitação, pois as transações podem ser denominadas em sub-unidades menores que um bitcoin, como bits — há 1.000.000 bits em um bitcoin. Bitcoins podem ser divididos em até 8 casas decimais (0,000 000 01) e unidades potencialmente ainda menores se necessário no futuro, conforme o tamanho médio da transação diminui."
     deflationaryspiral: "Bitcoin não cairá em uma espiral deflacionária?"
     deflationaryspiraltxt1: "A teoria da espiral deflacionária diz que se preços são esperados a cair, pessoas vão adiar suas compras para conseguir se beneficiar dos preços mais baixos. Essa queda em demanda fará com que comerciantes baixem os preços de suas mercadorias, para estimular a demanda, trazendo um problema pior ainda e acabando em uma crise econômica."
     deflationaryspiraltxt2: "Embora esta teoria seja uma maneira popular para justificar a inflação entre os bancos centrais, não parece sempre que são verdadeiras e é considerada polêmica entre os economistas. Eletrônicos de consumo é um exemplo de um mercado em que os preços caem constantemente, mas que não está em depressão. Do mesmo modo, o valor de bitcoins aumentou ao longo do tempo e ainda o tamanho da economia Bitcoin também tem crescido dramaticamente com ele. Porque tanto o valor da moeda e do tamanho de sua economia começou do zero em 2009, o Bitcoin é um contra-exemplo para a teoria mostrando que deve, por vezes, estar errada."
@@ -364,7 +370,7 @@ pt_BR:
     miningstarttxt1: "Nos primórdios do Bitcoin, qualquer pessoa poderia encontrar novos blocos usando a CPU do seu computador. Quando mais e mais pessoas começaram a minerar, a dificuldade em encontrar novos blocos cresceu gradativamente ao ponto de apenas hardwares especializados com ótimo custo-benefício de mineração serem usados hoje. Você pode visitar <a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a> para maiores informações."
     security: "Segurança"
     secure: "Bitcoin é seguro?"
-    securetxt1: "A tecnologia Bitcoin - o protocolo e a criptografia - tem um registro forte de segurança e a rede Bitcoin é provavelmente o maior projeto de computação distribuida do mundo. A vunerabilidade mais comum do Bitcoin é o erro do usuário. Os arquivos de carteira de Bitcoin que guardam as chaves privadas necessárias, podem ser apagadas, roubadas ou perdidas. Isto é bem parecido com dinheiro tradicional mantido em formato digital. Fortunadamente, os usuários podem utilizar boas <a href=\"#secure-your-wallet#\">práticas de segurança</a> para proteger seu dinheiro ou utilizar provedores de serviço que oferecem bons níveis de seguro contra perda e roubo."
+    securetxt1: "A tecnologia Bitcoin - o protocolo e a criptografia - tem um registro forte de segurança e a rede Bitcoin é provavelmente o maior projeto de computação distribuida do mundo. A vulnerabilidade mais comum do Bitcoin é o erro do usuário. Os arquivos de carteira de Bitcoin que guardam as chaves privadas necessárias, podem ser apagadas, roubadas ou perdidas. Isto é bem parecido com dinheiro tradicional mantido em formato digital. Fortunadamente, os usuários podem utilizar boas <a href=\"#secure-your-wallet#\">práticas de segurança</a> para proteger seu dinheiro ou utilizar provedores de serviço que oferecem bons níveis de seguro contra perda e roubo."
     hacked: "O Bitcoin já foi \"hackeado\" no passado?"
     hackedtxt1: "As regras do protocolo e da criptografia usadas pelo Bitcoin ainda estão funcionando anos após a sua criação, o que é uma boa indicação de que o conceito é bem desenhado. No entanto, <a href=\"/en/alerts\">falhas de segurança</a> foram encontradas e corrigidas ao longo do tempo em várias implementações de software. Como qualquer outra forma de software, a segurança de software Bitcoin depende da velocidade com que os problemas são encontrados e corrigidos. Quanto mais essas falhas são descobertas, mais o software Bitcoin ganha em maturidade."
     hackedtxt2: "Muitas vezes há equívocos sobre roubos e violações de segurança que aconteceram em diversos intercâmbios e negócios. Embora esses eventos sejam infelizes, nenhum deles envolvem o próprio Bitcoin ser hackeado, nem implica falhas inerentes em Bitcoin, apenas como um assalto a banco não significa que o real esteja comprometido. No entanto, é preciso dizer que um conjunto completo de boas práticas e soluções de segurança intuitivas é necessário para dar aos usuários uma melhor proteção do seu dinheiro, e para reduzir o risco geral de roubo e perda. Ao longo dos últimos anos, esses recursos de segurança desenvolveram rapidamente, como criptografia de carteira, carteiras offline, carteiras de hardware e transações multi-assinatura."
@@ -429,9 +435,6 @@ pt_BR:
     list3: "Tarifas<br>muito baixas"
     desc: "Bitcoin usa a tecnologia ponto-a-ponto para operar sem a necessidade de uma autoridade central ou banco; as transações com bitcoins são gerenciadas coletivamente pelos usuários da rede.<b>O Bitcoin é código aberto, seu design é público, ninguém é proprietário ou controla o Bitcoin e <a href=\"#support-bitcoin#\">qualquer um pode participar</a></b>. Através das suas várias e únicas características, a rede Bitcoin permite usos interessantes indisponíveis nos sistemas de pagamento anteriores."
     overview: "Visão geral para"
-    individuals: "Pessoas Físicas"
-    businesses: "Empresas"
-    developers: "Desenvolvedores"
   innovation:
     title: "Inovação - Bitcoin"
     pagetitle: "Inovação em sistemas de pagamentos"
@@ -463,8 +466,31 @@ pt_BR:
   legal:
     title: "Aviso legal - Bitcoin"
     pagetitle: "Aviso legal"
-    termstxt1: "Este site fornece informações e materiais de todas as naturezas relacionadas a Bitcoin. Esta informação é apenas de propósito informacional. Este site pode conter informações que abordam questões legais reais ou potenciais. Esta informação não é substituta para um consultor jurídico qualificado. Você não está autorizado e não deveria confiar neste site para conselhos legais. De nenhuma maneira os donos ou contribuintes deste site são responsáveis pelas ações, decisões, ou qualquer outro comportamento tomado ou não por você em relação a este site. Isto inclui, mas não é limitado para, ações legais ou tecnológicas. Você age por seu próprio risco em relação ao conteúdo deste site. Antes de você tomar a decisão de agir ou não agir, você deve contatar um advogado licenciado na respectiva jurisdição em que você quer ou precisa de ajuda."
-    termstxt2: "Este website contém traduções da versão em inglês do conteúdo. Estas traduções são fornecidas apenas como uma conveniência. Em caso de qualquer conflito entre a versão em inglês e a versão traduzida do conteúdo, a versão em inglês prevalece. Se você notar qualquer inconsistência, por favor informe-nos em <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a>."
+    information: "Informação publicada em bitcoin.org"
+    informationtxt1: "O website http://bitcoin.org/ (referido de agora em diante por “Website”) provê informações e material de natureza geral. Você não está autorizado e nem deverá contar com este Website para conselhos legais, conselhos de negócio ou conselho de qualquer tipo. Você age por sua própria conta e risco ao se apoiar no conteúdo do Website. Caso você tenha que tomar uma decisão de agir ou não agir você deveria contactar um advogado licenciado na jurisdição relevante ao local onde quer ou precisa de ajuda. De forma nenhuma são os donos ou contribuidores do Website responsáveis pelas ações, decisões ou qualquer comportamento tomados ou não tomados por você com apoio nas informações do Website."
+    translations: "Traduções"
+    translationstxt1: "O website pode conter traduções da versão em inglês do conteúdo disponível no site. Estas traduções são fornecidas apenas como uma conveniência. Em caso de qualquer conflito entre a versão em inglês e a versão traduzida, a versão em inglês deverá prevalecer. Se você notar qualquer inconsistência, por favor informe nos em <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a>."
+    userisks: "Riscos relatados ao uso de Bitcoin"
+    useriskstxt1: "O site não será responsável por quaisquer perdas, danos ou indenizações decorrentes de eventos que se enquadrem no âmbito das seguintes cinco categorias:"
+    useriskstxt2: "Erros cometidos pelo usuário de qualquer software ou serviço relacionados com o Bitcoin, por exemplo, senhas esquecidas, pagamentos enviados para endereços errados Bitcoin e apagamento acidental de carteiras."
+    useriskstxt3: "Problemas de software do Website e/ou qualquer software ou serviço relacionado com a Bitcoin, por exemplo: um arquivo de carteira corrompido, transações incorretamente construídas, bibliotecas criptográficas inseguras, malware que afeta o Website e/ou qualquer software ou serviço relacionado com a Bitcoin."
+    useriskstxt4: "As falhas técnicas no hardware do usuário de qualquer software relacionados com o Bitcoin ou serviço, por exemplo: a perda de dados devido a um dispositivo de armazenamento com defeito ou danificado."
+    useriskstxt5: "Os problemas de segurança vivenciados pelo usuário de qualquer software ou serviço relacionados com o Bitcoin, por exemplo: acesso não autorizado a carteiras e/ou contas dos usuários."
+    useriskstxt6: "Ações ou omissões de terceiros e/ou acontecimentos vivenciados por terceiros, por exemplo: a falência de prestadores de serviços, ataques de segurança da informação aos prestadores de serviços e as fraudes realizadas por terceiros."
+    investmentrisks: "Riscos de investimentos"
+    investmentriskstxt1: "O investimento em Bitcoin pode levar à perda de dinheiro em períodos curtos ou até mesmo longos periodos. Os investidores em Bitcoin devem esperar que os preços venham a ter grandes flutuações. A informação publicada no site NÃO podem garantir que os investidores em Bitcoin não cheguem a perder dinheiro."
+    taxcompliance: "Cumprimento das obrigações fiscais"
+    taxcompliancetxt1: "Os usuários do site são os únicos responsáveis em determinar quais, se for o caso, impostos aplicáveis às suas operações de Bitcoin. Os proprietários de, ou contribuintes para o website não são responsáveis em determinar os impostos que se aplicam as transações Bitcoin."
+    noissuer: "O Website não arquiva, envia ou recebe bitcoins"
+    noissuertxt1: "O Website não armazena, envia ou recebe bitcoins. Isto porque bitcoins só existem por força do registro de propriedade mantido na rede Bitcoin. Qualquer transferência de título em bitcoins ocorre dentro de uma rede Bitcoin descentralizada e não no website."
+    nowarranties: "Sem garantias"
+    nowarrantiestxt1: "O Website é fornecido “tal como está” sem quaisquer garantias de qualquer espécie sobre o site e/ou qualquer conteúdo, dados, materiais e/ou serviços fornecidos no site."
+    noliability: "Limitação de responsabilidade"
+    noliabilitytxt1: "A menos que exigido por lei, em nenhum caso, os proprietários das, ou contribuintes, o site será responsável por qualquer dano, de qualquer tipo, incluindo, mas não limitado a: perda de uso, perda de lucros ou perda de dados decorrentes ou de alguma forma relacionados com o uso do Website."
+    arbitration: "Arbitragem"
+    arbitrationtxt1: "O usuário do Website concorda em arbitrar os litígios decorrentes de ou em conexão com o Website ou este aviso legal, exceto para litígios relacionados com direitos autorais, logotipos, marcas, nomes comerciais, segredos comerciais ou patentes."
+    lastchange: "Última alteração"
+    lastchangetxt1: "Este aviso foi alterado pela última vez em"
   press:
     title: "Imprensa - Bitcoin"
     pagetitle: "Centro de imprensa"
@@ -475,6 +501,13 @@ pt_BR:
     faqmore: "Para saber mais sobre Bitcoin, por favor visite a seção completa <a href=\"/en/faq\">Perguntas Frequentes</a> ou a <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
     materialpicture: "Imagens"
     materialpicturemore: "Mostre mais imagens..."
+  privacy:
+    title: "Privacidade - Bitcoin"
+    pagetitle: "Privacidade"
+    datacollect: "Dados coletados"
+    datacollecttxt: "Bitcoin.org coleta registros anônimos do servidor. Esses registros incluem endereços IP com último byte substituído, o tempo da visita, página solicitada, agente de usuário e url referente. Bitcoin.org não coleta dados utilizando cookies."
+    datause: "Uso de dados"
+    datausetxt: "Os dados coletados são usados para fornecer <a href=\"/stats/\">estatísticas públicas transparentes</a>."
   protect-your-privacy:
     title: "Proteja sua privacidade - Bitcoin"
     pagetitle: "Proteja sua privacidade"
@@ -580,6 +613,8 @@ pt_BR:
     table: "Tabela de conteúdos"
     address: "Endereço"
     addresstxt: "O endereço Bitcoin é <b>semelhante ao endereço físico ou a um email</b>. É a única informação que você precisa fornecer a alguém para pagá-lo com Bitcoin. Uma importante diferença, no entanto, é que cada endereço deve ser usado para uma simples transação."
+    bit: "Bit"
+    bittxt: "Bit é uma unidade comum para designar uma sub-unidade de bitcoin — 1.000.000 de bits é igual à 1 bitcoin (BTC or B). Esta unidade é geralmente mais conveniente para colocar preços em gorjetas, produtos e serviços."
     bitcoin: "Bitcoin"
     bitcointxt: "Bitcoin - quando começar em letra maiúscula, é usado para descrever o conceito do bitcoin, ou a própria rede por completa. Por exemplo \"Eu estava aprendendo sobre o protocolo do Bitcoin hoje.\" <br>bitcoin - em letra minúscula é usado para descrever a unidade de bitcoins na conta. Por exemplo \"Eu enviei dez bitcoins hoje.\" Existem também as abreviações BTC ou XBT."
     blockchain: "Block Chain"
@@ -587,7 +622,7 @@ pt_BR:
     block: "Bloco"
     blocktxt: "Um block é um <b>registro dentro do block chain que contém e confirma várias transações em espera</b>. Aproximadamente a cada 10 minutos, em média, um novo bloco com transações é anexado a <a href=\"#[vocabulary.blockchain]\">block chain</a>através da  <a href=\"#[vocabulary.mining]\">mineração</a>."
     btc: "BTC"
-    btctxt: "BTC é o símbolo usado para representar cada unidade de Bitcoin. Equivale ao BRL do Real."
+    btctxt: "BTC é uma unidade comum usada para designar um bitcoin (B)."
     confirmation: "Confirmação"
     confirmationtxt: "Confirmação significa que uma transação foi <b>processada pela rede e é altamente improvável ser revertida</b>. Transações recebem uma confirmação quando são incluídas em um <a href=\"#vocabulary##[vocabulary.block]\">bloco</a> e a cada bloco subsequente. Mesmo uma única confirmação pode ser considerada segura para transações de baixos valores, apesar de valores maiores como 1.000 US$, faz sentido esperar por 6 confirmações ou mais. Cada confirmação reduz <i>exponencialmente</i>o risco de uma transação ser revertida."
     cryptography: "Criptografia"
@@ -639,7 +674,9 @@ pt_BR:
     menu-intro: Introdução
     menu-legal: "Legal"
     menu-press: "Imprensa"
+    menu-privacy: "Privacidade"
     menu-resources: Recursos
+    menu-stats: "Status"
     menu-support-bitcoin: Participe
     menu-vocabulary: Vocabulário
     menu-you-need-to-know: "Você precisa saber"
@@ -663,6 +700,7 @@ pt_BR:
     innovation: inovacao
     legal: legal
     press: imprensa
+    privacy: privacidade
     protect-your-privacy: proteger-sua-privacidade
     resources: recursos
     secure-your-wallet: proteja-sua-carteira
@@ -674,6 +712,7 @@ pt_BR:
       non-profit: sem-fins-lucrativos
     vocabulary:
       address: endereco
+      bit: bit
       bitcoin: bitcoin
       blockchain: blockchain
       block: bloco
