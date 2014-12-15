@@ -254,6 +254,68 @@ More information will follow.
 
 ## Wallets
 
+The wallet list is based on the personal evaluation of the maintainer(s) and regular contributors of this site, according to the criterias detailed below.
+
+These requirements are meant to be updated and strengthened over time. Innovative wallets are exciting and encouraged, so if your wallet has a good reason for not following some of the rules below, please submit it anyway and we'll consider updating the rules.
+
+Basic requirements:
+
+- Sufficient users and/or developers feedback can be found without concerning issues, or independent security audit(s) is available
+- No indication that users have been harmed considerably by any issue in relation to the wallet
+- No indication that security issues have been concealed, ignored, or not addressed correctly in order to prevent new or similar issues from happening in the future
+- No indication that the wallet uses unstable or unsecure libraries
+- No indication that changes to the code are not properly tested
+- Wallet was publicly announced and released since at least 3 months
+- No concerning bug is found when testing the wallet
+- Website supports HTTPS and 301 redirects HTTP requests
+- SSL certificate passes [Qualys SSL Labs SSL test](https://www.ssllabs.com/ssltest/)
+- The identity of CEOs and/or developers is public
+- If private keys or encryption keys are stored online:
+  - Refuses weak passwords (short passwords and/or common passwords) used to secure access to any funds, or provides an aggressive account lock-out feature in response to failed login attempts along with a strict account recovery process.
+- If user has no access over its private keys:
+  - Provides 2FA authentication feature
+  - Reminds the user to enable 2FA by email or in the main UI of the wallet
+  - User session is not persistent, or requires authentication for spending
+  - Provides account recovery feature
+- If user has exclusive access over its private keys:
+  - Allows backup of the wallet
+  - Restoring wallet from backup is working
+  - Source code is public and kept up to date under version control system
+- If user has no access to some of the private keys in a multi-signature wallet:
+  - Provides 2FA authentication feature
+  - Reminds the user to enable 2FA by email or in the main UI of the wallet
+  - User session is not persistent, or requires authentication for spending
+  - Gives control to the user over moving their funds out of the multi-signature wallet
+- For hardware wallets:
+  - Uses the push model (computer malware cannot sign a transaction without user input)
+  - Protects the seed against unsigned firmware upgrades
+  - Supports importing custom seeds
+  - Provides source code and/or detailed specification for blackbox testing if using a closed-source Secure Element
+
+Optional criterias (some could become requirements):
+
+- Received independent security audit(s)
+- Avoid address reuse by using a new change address for each transaction
+- Avoid address reuse by displaying a new receiving address for each transaction in the wallet UI
+- Does not show "received from" Bitcoin addresses in the UI
+- Uses deterministic ECDSA nonces (RFC 6979)
+- Provides a bug reporting policy on the website
+- If user has no access over its private keys:
+  - Enables HSTS
+  - Full reserve audit(s)
+  - Insurrance(s) against failures on their side
+  - Reminds the user to enable 2FA in the main UI of the wallet
+- If user has exclusive access over its private keys:
+  - Supports HD wallets (BIP32)
+  - Provides users with step to print or write their wallet seed on setup
+  - Uses a strong KDF and key stretching for wallet storage and backups
+  - On desktop platform:
+    - Encrypt the wallet by default
+- For hardware wallets:
+  - Prevents downgrading the firmware
+
+### Adding a wallet
+
 Wallets can be added in `_templates/choose-your-wallet.html`. Entries are ordered by levels and new wallets must be added after the last wallet on the same level.
 
 * Level 1 - Full nodes
@@ -297,9 +359,10 @@ To get a passing score, the wallet must run from an environment that provides ap
 
 **Privacy**: Does the wallet protect users' privacy?
 
-To get a good score, the wallet must rotate addresses, avoid disclosing information to peers or central servers and be compatible with Tor.
+To get a good score, the wallet must avoid address reuse by using a new change address for each transaction, avoid disclosing information to peers or central servers and be compatible with Tor.
 
-To get a passing score, the wallet must rotate addresses.
+To get a passing score, the wallet must avoid address reuse by using a new change address for each transaction.
+
 
 ## Advanced Usage
 
