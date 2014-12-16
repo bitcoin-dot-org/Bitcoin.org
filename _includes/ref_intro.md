@@ -2,6 +2,7 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/ref_intro.md" %}
 
 {% autocrossref %}
 
@@ -27,6 +28,7 @@ definition of the term will be displayed in a tooltip.
 
 #### Not A Specification
 {:.no_toc}
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
