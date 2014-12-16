@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/guide_operating_modes.md" %}
 
 ## Operating Modes
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -12,6 +14,7 @@ Currently there are two primary methods of validating the block chain as a clien
 {% endautocrossref %}
 
 ### Full Node
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -24,6 +27,7 @@ For a client to be fooled, an adversary would need to give a complete alternativ
 {% endautocrossref %}
 
 ### Simplified Payment Verification (SPV)
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -36,6 +40,7 @@ The block's depth in the block chain corresponds to the cumulative difficulty th
 {% endautocrossref %}
 
 #### Potential SPV Weaknesses
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -50,6 +55,7 @@ To mitigate the latter issue, Bloom filters have been implemented as a method of
 {% endautocrossref %}
 
 #### Bloom Filters
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -68,6 +74,7 @@ Removal of elements can only be done by scrapping the bloom filter and re-creati
 {% endautocrossref %}
 
 #### Application Of Bloom Filters 
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -85,6 +92,7 @@ Bloom filters were standardized for use via [BIP37](https://github.com/bitcoin/b
 {% endautocrossref %}
 
 ### Future Proposals 
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

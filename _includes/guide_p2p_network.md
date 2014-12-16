@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/guide_p2p_network.md" %}
 
 ## P2P Network
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -29,6 +31,7 @@ IP addresses.
 {% endautocrossref %}
 
 ### Peer Discovery
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -121,6 +124,7 @@ BitcoinJ is generated using the [makeseeds script][].
 {% endautocrossref %}
 
 ### Connecting To Peers
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -137,6 +141,7 @@ In order to maintain a connection with a peer, nodes by default will send a mess
 {% endautocrossref %}
 
 ### Block Broadcasting
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -147,6 +152,7 @@ New blocks are also discovered as miners publish their found blocks, and these m
 {% endautocrossref %}
 
 ### Transaction Broadcasting
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -155,6 +161,7 @@ In order to send a transaction to a peer, an `inv` message is sent. If a `getdat
 {% endautocrossref %}
 
 #### Memory Pool
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -195,6 +202,7 @@ next block.
 
 
 ### Misbehaving Nodes
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -203,6 +211,7 @@ Take note that for both types of broadcasting, mechanisms are in place to punish
 {% endautocrossref %}
 
 ### Alerts
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

@@ -2,12 +2,15 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/ref_transactions.md" %}
 
 ## Transactions
+{% include helpers/subhead-links.md %}
 
 The following subsections briefly document core transaction details.
 
 #### OP Codes
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -124,6 +127,7 @@ Failure, aborted: two signature matches required but none found so
 {% endautocrossref %}
 
 #### Address Conversion
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -193,6 +197,7 @@ against the extracted checksum, and then remove the version byte.
 {% endautocrossref %}
 
 #### Raw Transaction Format
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -230,6 +235,7 @@ the [CompactSize section][CompactSize unsigned integer].
 
 ##### TxIn: A Transaction Input (Non-Coinbase) {#txin}
 {:.no_toc}
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -247,6 +253,7 @@ Each non-coinbase input spends an outpoint from a previous transaction.
 
 ##### Outpoint: The Specific Part Of A Specific Output {#outpoint}
 {:.no_toc}
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -263,6 +270,7 @@ specific output.
 
 ##### TxOut: A Transaction Output {#txout}
 {:.no_toc}
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -320,6 +328,7 @@ to a new pay-to-pubkey-hash (P2PKH) output.
 
 ##### Coinbase Input: The Input Of The First Transaction In A Block {#coinbase}
 {:.no_toc}
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -376,6 +385,7 @@ An itemized coinbase transaction:
 {% endautocrossref %}
 
 ### CompactSize Unsigned Integers
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

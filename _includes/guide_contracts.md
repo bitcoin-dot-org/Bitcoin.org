@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/guide_contracts.md" %}
 
 ## Contracts
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -25,6 +27,7 @@ page](https://en.bitcoin.it/wiki/Contracts) of the Bitcoin Wiki.
 {% endautocrossref %}
 
 ### Escrow And Arbitration
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -125,6 +128,7 @@ service interface using HTML/JavaScript on a GNU AGPL-licensed website.
 {% endautocrossref %}
 
 ### Micropayment Channel
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -202,6 +206,7 @@ all under an Apache license.
 {% endautocrossref %}
 
 ### CoinJoin
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

@@ -28,19 +28,11 @@ title: "Developer Examples - Bitcoin"
 
 {% include example_intro.md %}
 
-<div class="sourcefile" data-sourcefile="example_testing.md"></div>
-
 {% include example_testing.md %}
-
-<div class="sourcefile" data-sourcefile="example_transactions.md"></div>
 
 {% include example_transactions.md %}
 
-<div class="sourcefile" data-sourcefile="example_payment_processing.md"></div>
-
 {% include example_payment_processing.md %}
-
-<div class="sourcefile" data-sourcefile="example_p2p_networking.md"></div>
 
 {% include example_p2p_networking.md %}
 

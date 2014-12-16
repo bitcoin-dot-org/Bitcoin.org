@@ -430,7 +430,7 @@ function updateSource(e){
 if (!document.getElementsByClassName) return;
 var t = getEventTarget(e),
     nodes = document.getElementsByClassName('sourcefile'),
-    pageoffset = getPageYOffset(),
+    pageoffset = Math.max(0, getPageYOffset() + 100),
     windowy = getWindowY(),
     fallback = nodes[0],
     first = [fallback, getTop(fallback)],
@@ -447,7 +447,7 @@ for (var i = 0, n = nodes.length; i < n; i++) {
 if (pageoffset < first[1]) closer = [first[0], first[1]];
 if (windowy + pageoffset >= getHeight(document.body)) closer = [last[0], last[1]];
 // Set updated url to source file.
-t.href = 'https://github.com/bitcoin/bitcoin.org/edit/master/_includes/' + closer[0].getAttribute('data-sourcefile');
+t.href = 'https://github.com/bitcoin/bitcoin.org/edit/master/' + closer[0].getAttribute('data-sourcefile');
 }
 
 function disclaimerClose(e) {

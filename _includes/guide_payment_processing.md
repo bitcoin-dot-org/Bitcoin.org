@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/guide_payment_processing.md" %}
 
 ## Payment Processing
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -32,6 +34,7 @@ using third party APIs and services.
 {% endautocrossref %}
 
 ### Pricing Orders
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -80,6 +83,7 @@ fluctuate a significant amount before payment is received.
 {% endautocrossref %}
 
 ### Requesting Payments
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -131,6 +135,7 @@ with the attacker's address.
 {% endautocrossref %}
 
 #### Plain Text
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -167,6 +172,7 @@ some or all of the following options:
 {% endautocrossref %}
 
 #### bitcoin: URI
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -219,6 +225,7 @@ might be the case for micropayments).
 {% endautocrossref %}
 
 #### QR Codes
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -246,6 +253,7 @@ displayed on high-resolution screens.
 {% endautocrossref %}
 
 #### Payment Protocol
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -411,6 +419,7 @@ for more details.
 {% endautocrossref %}
 
 ### Verifying Payment
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -505,6 +514,7 @@ basis.
 {% endautocrossref %}
 
 ### Issuing Refunds
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -547,6 +557,7 @@ original payment was made.
 {% endautocrossref %}
 
 ### Disbursing Income (Limiting Forex Risk)
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -575,6 +586,7 @@ which can lead to different results.
 {% endautocrossref %}
 
 #### Merge Avoidance
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -609,6 +621,7 @@ provided by the receiver.
 {% endautocrossref %}
 
 #### Last In, First Out (LIFO)
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -646,6 +659,7 @@ the [Verification subsection][] above) before using them to make payments.
 {% endautocrossref %}
 
 #### First In, First Out (FIFO)
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -685,6 +699,7 @@ a bi-hourly schedule.
 {% endautocrossref %}
 
 ### Rebilling Recurring Payments
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

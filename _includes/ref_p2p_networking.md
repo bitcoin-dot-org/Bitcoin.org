@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/ref_p2p_networking.md" %}
 
 ## P2P Network
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -21,6 +23,7 @@ integers mentioned in this section are transmitted in little-endian order.
 {% endautocrossref %}
 
 ### Constants And Defaults
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -52,6 +55,7 @@ and testnet.
 {% endautocrossref %}
 
 ### Protocol Versions
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -75,6 +79,7 @@ please [open an issue][docs issue].)
 {% endautocrossref %}
 
 ### Message Headers
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -102,6 +107,7 @@ f9beb4d9 ................... Start string: Mainnet
 {% endautocrossref %}
 
 ### Data Messages
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -135,6 +141,7 @@ one of these unknown types.
 {% endautocrossref %}
 
 #### Block
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -148,6 +155,7 @@ It is sent in reply to a `getdata` message which had an inventory type of
 {% endautocrossref %}
 
 #### GetBlocks
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -199,6 +207,7 @@ d39f608a7775b537729884d4e6633bb2
 {% endautocrossref %}
 
 #### GetData
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -222,6 +231,7 @@ identical to the `inv` message; only the message header differs.
 {% endautocrossref %}
 
 #### GetHeaders
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -236,6 +246,7 @@ will include no more than 500 block header hashes; the `headers` reply
 to the `getheaders` message will include as many as 2,000 block headers.
 
 #### Headers
+{% include helpers/subhead-links.md %}
 
 The `headers` message sends one or more block headers to a node which
 previously requested certain headers with a `getheaders` message.
@@ -266,6 +277,7 @@ fe9f0864 ........................... Nonce
 {% endautocrossref %}
 
 #### Inv
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -301,6 +313,7 @@ a055aaf1d872e94ae85e9817b2c68dc7 ... Hash (TXID)
 {% endautocrossref %}
 
 #### MemPool
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -349,6 +362,7 @@ section][message header] for an example of a message without a payload.
 {% endautocrossref %}
 
 #### MerkleBlock
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -414,6 +428,7 @@ a `tx` message.
 
 ##### Parsing A MerkleBlock Message
 {:.no_toc}
+{% include helpers/subhead-links.md %}
 
 As seen in the annotated hexdump above, the `merkleblock` message
 provides three special data types: a transaction count, a list of
@@ -486,6 +501,7 @@ example].
 
 ##### Creating A MerkleBlock Message
 {:.no_toc}
+{% include helpers/subhead-links.md %}
 
 It's easier to understand how to create a `merkleblock` message after
 you understand how to parse an already-created message, so we recommend
@@ -532,6 +548,7 @@ template near the beginning of this subsection.
 {% endautocrossref %}
 
 #### NotFound
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -550,6 +567,7 @@ identical to the `inv` message; only the message header differs.
 {% endautocrossref %}
 
 #### Tx
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -579,6 +597,7 @@ transaction section][raw format].
 
 
 ### Control Messages
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -597,6 +616,7 @@ information about Tor, please [open an issue][docs issue].
 {% endautocrossref %}
 
 #### Addr
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -645,6 +665,7 @@ d91f4854 ........................... Epoch time: 1414012889
 
 
 #### Alert
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -750,6 +771,7 @@ alert.cpp] source code for the parameters of this message.
 
 
 #### FilterAdd
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -789,6 +811,7 @@ fdacf9b3eb077412e7a968d2e4f11b9a
 {% endautocrossref %}
 
 #### FilterClear
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -810,6 +833,7 @@ section][message header] for an example of a message without a payload.
 
 
 #### FilterLoad
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -1047,6 +1071,7 @@ filter when the rate gets too high.
 {% endautocrossref %}
 
 #### GetAddr
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -1063,6 +1088,7 @@ section][message header] for an example of a message without a payload.
 
 
 #### Ping
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -1090,6 +1116,7 @@ header has been omitted.)
 {% endautocrossref %}
 
 #### Pong
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -1109,6 +1136,7 @@ only the message header differs.
 {% endautocrossref %}
 
 #### Reject
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -1164,6 +1192,7 @@ header has been omitted.)
 {% endautocrossref %}
 
 #### VerAck
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -1177,6 +1206,7 @@ section][message header].
 
 
 #### Version
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

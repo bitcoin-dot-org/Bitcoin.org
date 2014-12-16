@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/guide_block_chain.md" %}
 
 ## Block Chain
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -22,6 +24,7 @@ the consensus rules used by Bitcoin Core.
 {% endautocrossref %}
 
 ### Block Chain Overview
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -73,6 +76,7 @@ satoshi transaction fee.
 {% endautocrossref %}
 
 ### Proof Of Work
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -147,6 +151,7 @@ the merkle tree.
 {% endautocrossref %}
 
 ### Block Height And Forking
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -191,6 +196,7 @@ are usually referenced by the hash of their header (often with the byte order re
 {% endautocrossref %}
 
 ### Transaction Data
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -260,6 +266,7 @@ otherwise, a valid block with the duplicates eliminated could have the same merk
 {% endautocrossref %}
 
 ### Consensus Rule Changes
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -318,6 +325,7 @@ implemented](https://gist.github.com/gavinandresen/2355445).
 {% endautocrossref %}
 
 #### Detecting Forks
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

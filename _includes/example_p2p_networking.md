@@ -2,10 +2,13 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/example_p2p_networking.md" %}
 
 ## P2P Network
+{% include helpers/subhead-links.md %}
 
 ### Creating A Bloom Filter
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -160,6 +163,7 @@ b50f ....... Filter: 1010 1101 1111 0000
 {% endautocrossref %}
 
 ### Evaluating A Bloom Filter
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -234,6 +238,7 @@ MATCH FAILURE: Index 0x6 not set in 1010110111110000
 {% endautocrossref %}
 
 ### Retrieving A MerkleBlock
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -349,6 +354,7 @@ Part of the response is shown in the section below.
 {% endautocrossref %}
 
 ### Parsing A MerkleBlock
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

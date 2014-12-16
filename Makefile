@@ -33,13 +33,13 @@ all: pre-build-tests build post-build-tests
 
 
 ## Pre-build tests which, aggregated together, take less than 5 seconds to run on a typical PC
-pre-build-tests-fast: check-for-non-ascii-urls
+pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignments
 
 ## Post-build tests which, aggregated together, take less than 5 seconds to run on a typical PC
 post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
     check-for-missing-anchors check-for-broken-markdown-reference-links \
     check-for-broken-kramdown-tables check-for-duplicate-header-ids \
-    check-for-headers-containing-auto-link
+    check-for-headers-containing-auto-link check-for-missing-subhead-links
 
 ## All pre-build tests, including those which might take multiple minutes
 pre-build-tests: pre-build-tests-fast
@@ -134,3 +134,19 @@ check-for-headers-containing-auto-link:
 ## none of the generated subheadings contain the string
 ## 'class="auto-link"' produced by autocrossref
 	$S grep '<\(h[2-6]\).*\?>[^>]\+class="auto-link".*</\1>' _site/en/developer-* | eval $(ERROR_ON_OUTPUT)
+
+check-for-missing-subhead-links:
+## Make sure each subhead (h2-h6) either has the subhead links
+## (edit,issue,etc) or something like <!-- no subhead-links here -->
+	$S egrep -n -A1 '<h[2-6]' _site/en/developer-* \
+	   | egrep -v 'developer-documentation|<h[2-6]|^--|subhead-links' \
+	   | eval $(ERROR_ON_OUTPUT)
+
+check-for-wrong-filename-assignments:
+## Make sure whenever we use {% assign filename="some-file" %} that the
+## filename assignment matches the actual filename. This will, in
+## particular, help catch mistakes when we move files
+	$S find . -name '*.md' \
+	   | xargs grep 'assign *filename' \
+	   | grep -v '^\./\(.*\):{.*filename=.\1"' \
+	   | eval $(ERROR_ON_OUTPUT)

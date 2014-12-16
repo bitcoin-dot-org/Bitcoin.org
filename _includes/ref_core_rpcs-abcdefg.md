@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/ref_core_rpcs-abcdefg.md" %}
 
 #### addmultisigaddress
+{% include helpers/subhead-links.md %}
 
 ~~~
 addmultisigaddress <num required> <addresses|pubkeys> [account]
@@ -113,6 +115,7 @@ Result:
 
 
 #### addnode
+{% include helpers/subhead-links.md %}
 
 ~~~
 addnode <ip address>:<port> <add|remove|onetry>
@@ -169,6 +172,7 @@ Try connecting to the following node.
 
 
 #### backupwallet
+{% include helpers/subhead-links.md %}
 
 ~~~
 backupwallet <filename|directory>
@@ -208,6 +212,7 @@ written, an error will be returned.
 
 
 #### createmultisig
+{% include helpers/subhead-links.md %}
 
 ~~~
 createmultisig <num required> <addresses|pubkeys>
@@ -307,6 +312,7 @@ Result (redeemScript wrapped):
 
 
 #### createrawtransaction
+{% include helpers/subhead-links.md %}
 
 ~~~
 createrawtransaction <previous output(s)> <new output(s)>
@@ -391,6 +397,7 @@ Result:
 
 
 #### decoderawtransaction
+{% include helpers/subhead-links.md %}
 
 ~~~
 decoderawtransaction <hexstring>
@@ -593,6 +600,7 @@ Result:
 ~~~
 
 #### decodescript
+{% include helpers/subhead-links.md %}
 
 ~~~
 decodescript <redeemScript>
@@ -676,6 +684,7 @@ Result:
 ~~~
 
 #### dumpprivkey
+{% include helpers/subhead-links.md %}
 
 ~~~
 dumpprivkey <address>
@@ -721,6 +730,7 @@ cTVNtBK7mBi2yc9syEnwbiUpnpGJKohDWzXMeF4tGKAQ7wvomr95
 
 
 #### dumpwallet
+{% include helpers/subhead-links.md %}
 
 ~~~
 dumpwallet <filename>
@@ -782,6 +792,7 @@ cNCD679B4xi17jb4XeLpbRbZCbYUugptD7dCtUTfSU4KPuK2DyKT 2014-02-05T16:58:41Z reserv
 
 
 #### encryptwallet
+{% include helpers/subhead-links.md %}
 
 ~~~
 encryptwallet <passphrase>
@@ -837,6 +848,7 @@ wallet. The keypool has been flushed, you need to make a new backup.
 
 
 #### getaccount
+{% include helpers/subhead-links.md %}
 
 ~~~
 getaccount <address>
@@ -881,6 +893,7 @@ doc test
 
 
 #### getaccountaddress
+{% include helpers/subhead-links.md %}
 
 ~~~
 getaccountaddress "account"
@@ -935,6 +948,7 @@ msQyFNYHkFUo4PG3puJBbpesvRCyRQax7r
 ~~~
 
 #### getaddednodeinfo
+{% include helpers/subhead-links.md %}
 
 ~~~
 getaddednodeinfo <true|false> [node]
@@ -1017,6 +1031,7 @@ Result:
 ~~~
 
 #### getaddressesbyaccount
+{% include helpers/subhead-links.md %}
 
 ~~~
 getaddressesbyaccount <account>
@@ -1073,6 +1088,7 @@ Result:
 
 
 #### getbalance
+{% include helpers/subhead-links.md %}
 
 ~~~
 getbalance [account] [confirmations]
@@ -1153,6 +1169,7 @@ for the default account and a balance for all accounts.
 
 
 #### getbestblockhash
+{% include helpers/subhead-links.md %}
 
 ~~~
 getbestblockhash
@@ -1186,6 +1203,7 @@ Result:
 
 
 #### getblock
+{% include helpers/subhead-links.md %}
 
 ~~~
 getblock <hash> [true|false]
@@ -1336,6 +1354,7 @@ Result:
 
 
 #### getblockchaininfo
+{% include helpers/subhead-links.md %}
 
 ~~~
 getblockchaininfo
@@ -1396,6 +1415,7 @@ Result:
 
 
 #### getblockcount
+{% include helpers/subhead-links.md %}
 
 ~~~
 getblockcount
@@ -1425,6 +1445,7 @@ Result:
 
 
 #### getblockhash
+{% include helpers/subhead-links.md %}
 
 ~~~
 getblockhash <height>
@@ -1470,6 +1491,7 @@ Return:
 
 
 #### getblocktemplate
+{% include helpers/subhead-links.md %}
 
 ~~~
 getblocktemplate [client capabilities]
@@ -1784,6 +1806,7 @@ Result (long lines have been wrapped (\\) and some data has been omitted
 
 
 #### getconnectioncount
+{% include helpers/subhead-links.md %}
 
 ~~~
 getconnectioncount
@@ -1819,6 +1842,7 @@ Result:
 
 
 #### getdifficulty
+{% include helpers/subhead-links.md %}
 
 ~~~
 getdifficulty
@@ -1849,6 +1873,7 @@ Result:
 
 
 #### getgenerate
+{% include helpers/subhead-links.md %}
 
 ~~~
 getgenerate
@@ -1884,6 +1909,7 @@ false
 
 
 #### gethashespersec
+{% include helpers/subhead-links.md %}
 
 ~~~
 gethashespersec
@@ -1921,6 +1947,7 @@ Result:
 
 
 #### getinfo
+{% include helpers/subhead-links.md %}
 
 ~~~
 getinfo
@@ -2001,6 +2028,7 @@ Result:
 
 
 #### getmininginfo
+{% include helpers/subhead-links.md %}
 
 ~~~
 getmininginfo
@@ -2067,6 +2095,7 @@ Result:
 
 
 #### getnettotals
+{% include helpers/subhead-links.md %}
 
 ~~~
 getnettotals
@@ -2116,6 +2145,7 @@ Result:
 
 
 #### getnetworkhashps
+{% include helpers/subhead-links.md %}
 
 ~~~
 getnetworkhashps [blocks] [height]
@@ -2176,6 +2206,7 @@ Result:
 
 
 #### getnetworkinfo
+{% include helpers/subhead-links.md %}
 
 ~~~
 getnetworkinfo
@@ -2245,6 +2276,7 @@ Result:
 
 
 #### getnewaddress
+{% include helpers/subhead-links.md %}
 
 ~~~
 getnewaddress [account]
@@ -2298,6 +2330,7 @@ mft61jjkmiEJwJ7Zw3r1h344D6aL1xwhma
 
 
 #### getpeerinfo
+{% include helpers/subhead-links.md %}
 
 ~~~
 getpeerinfo
@@ -2387,6 +2420,7 @@ Result (only first object shown):
 
 
 #### getrawchangeaddress
+{% include helpers/subhead-links.md %}
 
 ~~~
 getrawchangeaddress
@@ -2425,6 +2459,7 @@ mnycUc8FRjJodfKhaj9QBZs2PwxxYoWqaK
 
 
 #### getrawmempool
+{% include helpers/subhead-links.md %}
 
 ~~~
 getrawmempool [true|false]
@@ -2541,6 +2576,7 @@ Verbose output (*true*):
 ~~~
 
 #### getrawtransaction
+{% include helpers/subhead-links.md %}
 
 ~~~
 getrawtransaction <txid> [true|false]
@@ -2720,6 +2756,7 @@ Result:
 
 
 #### getreceivedbyaccount
+{% include helpers/subhead-links.md %}
 
 ~~~
 getreceivedbyaccount <account> <confirmations>
@@ -2779,6 +2816,7 @@ Result:
 
 
 #### getreceivedbyaddress
+{% include helpers/subhead-links.md %}
 
 ~~~
 getreceivedbyaddress <address> [confirmations]
@@ -2840,6 +2878,7 @@ Result:
 
 
 #### gettransaction
+{% include helpers/subhead-links.md %}
 
 ~~~
 gettransaction <txid>
@@ -2955,6 +2994,7 @@ Result:
 
 
 #### gettxout
+{% include helpers/subhead-links.md %}
 
 ~~~
 gettxout <txid> <output index number> [true|false]
@@ -3068,6 +3108,7 @@ Result:
 
 
 #### gettxoutsetinfo
+{% include helpers/subhead-links.md %}
 
 ~~~
 gettxoutsetinfo
@@ -3129,6 +3170,7 @@ Result:
 
 
 #### getunconfirmedbalance
+{% include helpers/subhead-links.md %}
 
 ~~~
 getunconfirmedbalance
@@ -3162,6 +3204,7 @@ Result (no satoshis unconfirmed):
 
 
 #### getwalletinfo
+{% include helpers/subhead-links.md %}
 
 ~~~
 getwalletinfo
@@ -3217,6 +3260,7 @@ Result:
 
 
 #### getwork
+{% include helpers/subhead-links.md %}
 
 ~~~
 getwork [data]

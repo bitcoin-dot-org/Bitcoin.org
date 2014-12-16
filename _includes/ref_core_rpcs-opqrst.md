@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/ref_core_rpcs-opqrst.md" %}
 
 #### ping {#ping-rpc}
+{% include helpers/subhead-links.md %}
 
 ~~~
 ping
@@ -28,6 +30,7 @@ bitcoin-cli -testnet ping
 
 
 #### sendfrom
+{% include helpers/subhead-links.md %}
 
 ~~~
 sendfrom <account> <address> <amount> [confirmations] [comment] [label]
@@ -131,6 +134,7 @@ ca7cb6a5ffcc2f21036879493db4530c0ce9b5bff9648f9a3be46e2dfc8e0166
 
 
 #### sendmany
+{% include helpers/subhead-links.md %}
 
 ~~~
 sendmany <account> <addresses & amounts> [confirmations] [memo]
@@ -223,6 +227,7 @@ ef7c0cbf6ba5af68d2ea239bba709b26ff7b0b669839a63bb01c2cb8e8de481e
 
 
 #### sendrawtransaction
+{% include helpers/subhead-links.md %}
 
 ~~~
 sendrawtransaction <hex> [true|false]
@@ -348,6 +353,7 @@ Result (success):
 
 
 #### sendtoaddress
+{% include helpers/subhead-links.md %}
 
 ~~~
 sendtoaddress <address> <amount> <memo> <label>
@@ -422,6 +428,7 @@ example" and the label "Nemo From Example.com":
 
 
 #### setaccount
+{% include helpers/subhead-links.md %}
 
 ~~~
 setaccount <address> <account>
@@ -476,6 +483,7 @@ Put the address indicated below in the "doc test" account.
 
 
 #### setgenerate
+{% include helpers/subhead-links.md %}
 
 ~~~
 setgenerate <true|false> [processors]
@@ -549,6 +557,7 @@ coinbase transaction of the first block generated):
 
 
 #### settxfee
+{% include helpers/subhead-links.md %}
 
 ~~~
 settxfee amount
@@ -598,6 +607,7 @@ true
 
 
 #### signmessage
+{% include helpers/subhead-links.md %}
 
 ~~~
 signmessage <address> <message>
@@ -657,6 +667,7 @@ IOGreqb/7UgD1ifcojESd32ZJgH5RGzUXitmbl6ZbdenSmitipWoLSi73TskmLY7zhcD662bTw3RHoYQ
 
 
 #### signrawtransaction
+{% include helpers/subhead-links.md %}
 
 ~~~
 signrawtransaction <raw transaction hex> [previous transactions] [private keys] [sighashtype]
@@ -794,6 +805,7 @@ Result:
 
 
 #### stop
+{% include helpers/subhead-links.md %}
 
 ~~~
 stop
@@ -814,6 +826,7 @@ bitcoin-cli -testnet stop
 
 
 #### submitblock
+{% include helpers/subhead-links.md %}
 
 ~~~
 submitblock <new block>  [extra parameters]

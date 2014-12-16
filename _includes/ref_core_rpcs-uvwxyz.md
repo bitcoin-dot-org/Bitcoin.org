@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/ref_core_rpcs-uvwxyz.md" %}
 
 #### validateaddress
+{% include helpers/subhead-links.md %}
 
 ~~~
 validateaddress <address>
@@ -78,6 +80,7 @@ Result:
 
 
 #### verifychain
+{% include helpers/subhead-links.md %}
 
 ~~~
 verifychain [throughness] [blocks]
@@ -134,6 +137,7 @@ true
 
 
 #### verifymessage
+{% include helpers/subhead-links.md %}
 
 ~~~
 verifymessage <address> <signature> <message>
@@ -204,6 +208,7 @@ true
 
 
 #### walletlock
+{% include helpers/subhead-links.md %}
 
 ~~~
 walletlock
@@ -230,6 +235,7 @@ No return printed on success.
 
 
 #### walletpassphrase
+{% include helpers/subhead-links.md %}
 
 walletpassphrase <passphrase> <seconds>
 
@@ -271,6 +277,7 @@ Unlock the wallet for 10 minutes (the passphrase is "test"):
 
 
 #### walletpassphrasechange
+{% include helpers/subhead-links.md %}
 
 ~~~
 walletpassphrasechange <old passphrase> <new passphrase>

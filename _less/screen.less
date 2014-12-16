@@ -763,21 +763,26 @@ table td,table th{
 	position:relative;
 	text-align: left;
 }
+.toccontent h2,
+.toccontent h3,
+.toccontent h4,
+.toccontent h5,
+.toccontent h6{
+	color:#383838;
+	margin-top: 40px;
+	margin-bottom: 0;
+}
 .toccontent h2{
 	font-size:150%;
-	color:#383838;
 }
 .toccontent h3{
 	font-size:130%;
-	color:#383838;
 }
 .toccontent h4{
 	font-size:110%;
-	color:#383838;
 }
 .toccontent h5,.toccontent h6{
 	font-size:100%;
-	color:#383838;
 }
 .toccontent img{
 	max-width:100%;
@@ -796,6 +801,15 @@ table td,table th{
 .toccontent:hover a.auto-link:link:hover,
 .toccontent:hover a.auto-link:visited:hover{
 	color:#63a4e1;
+}
+.toccontent .subhead-links{
+	visibility: hidden;
+	font-size: 85%;
+	height: 18px;
+	padding-top: 7px;
+}
+.toccontent:hover .subhead-links{
+	visibility: visible;
 }
 .toccontent a:link.term,
 .toccontent a:visited.term,
@@ -823,11 +837,6 @@ table td,table th{
 	padding:0;
 	margin:0;
 	overflow-y:visible;
-}
-.toccontent .sourcefile{
-	width:0;
-	height:0;
-	position:absolute;
 }
 
 .anchorAf{

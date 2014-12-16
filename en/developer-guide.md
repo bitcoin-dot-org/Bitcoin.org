@@ -33,35 +33,19 @@ of the following file. -->
 
 {% include guide_intro.md %}
 
-<div class="sourcefile" data-sourcefile="guide_block_chain.md"></div>
-
 {% include guide_block_chain.md %}
-
-<div class="sourcefile" data-sourcefile="guide_transactions.md"></div>
 
 {% include guide_transactions.md %}
 
-<div class="sourcefile" data-sourcefile="guide_contracts.md"></div>
-
 {% include guide_contracts.md %}
-
-<div class="sourcefile" data-sourcefile="guide_wallets.md"></div>
 
 {% include guide_wallets.md %}
 
-<div class="sourcefile" data-sourcefile="guide_payment_processing.md"></div>
-
 {% include guide_payment_processing.md %}
-
-<div class="sourcefile" data-sourcefile="guide_operating_modes.md"></div>
 
 {% include guide_operating_modes.md %}
 
-<div class="sourcefile" data-sourcefile="guide_p2p_network.md"></div>
-
 {% include guide_p2p_network.md %}
-
-<div class="sourcefile" data-sourcefile="guide_mining.md"></div>
 
 {% include guide_mining.md %}
 

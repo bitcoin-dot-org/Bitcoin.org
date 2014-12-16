@@ -2,8 +2,13 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/ref_core_rpc_intro.md" %}
+
+## Bitcoin Core APIs
+{% include helpers/subhead-links.md %}
 
 ### Hash Byte Order
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -91,3 +96,15 @@ print "System byte order:", byteorder
 print "Internal-Byte-Order Hash: ", hash.encode('hex_codec')
 print "RPC-Byte-Order Hash:      ", hash[::-1].encode('hex_codec')
 {% endhighlight %}
+
+### Remote Procedure Calls (RPCs)
+{% include helpers/subhead-links.md %}
+
+**Warning:** the block chain and memory pool can include arbitrary data
+which several of the commands below will return in hex format. If you
+convert this data to another format in an executable context, it could
+be used in an exploit. For example, displaying an output script as
+ASCII text in a webpage could add arbitrary Javascript to that page and
+create a cross-site scripting (XSS) exploit. To avoid problems, please
+treat block chain and memory pool data as an arbitrary input from an
+untrusted source.

@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/ref_core_rpcs-hijklmn.md" %}
 
 #### help
+{% include helpers/subhead-links.md %}
 
 ~~~
 help [RPC]
@@ -45,6 +47,7 @@ Command to get a description similar to this subsection:
 ~~~
 
 #### importprivkey
+{% include helpers/subhead-links.md %}
 
 ~~~
 importprivkey <private key> [label] [rescan]
@@ -113,6 +116,7 @@ entire block chain:
 (Success: no result generated.)
 
 #### importwallet
+{% include helpers/subhead-links.md %}
 
 ~~~
 importwallet <filename>
@@ -162,6 +166,7 @@ Import the file shown in the example subsection of `dumpwallet`.
 
 
 #### keypoolrefill
+{% include helpers/subhead-links.md %}
 
 ~~~
 keypoolrefill [size]
@@ -205,6 +210,7 @@ Generate one extra key than the default:
 
 
 #### listaccounts
+{% include helpers/subhead-links.md %}
 
 ~~~
 listaccounts [minconf]
@@ -268,6 +274,7 @@ Result:
 
 
 #### listaddressgroupings
+{% include helpers/subhead-links.md %}
 
 ~~~
 listaddressgroupings
@@ -344,6 +351,7 @@ Result (truncated):
 
 
 #### listlockunspent
+{% include helpers/subhead-links.md %}
 
 ~~~
 listlockunspent
@@ -397,6 +405,7 @@ Result:
 
 
 #### listreceivedbyaccount
+{% include helpers/subhead-links.md %}
 
 ~~~
 listreceivedbyaccount [confirmations] [true|false]
@@ -481,6 +490,7 @@ Result:
 ~~~
 
 #### listreceivedbyaddress
+{% include helpers/subhead-links.md %}
 
 ~~~
 listreceivedbyaddress [confirmations] [true|false]
@@ -568,6 +578,7 @@ Result (truncated after first entry):
 ~~~
 
 #### listsinceblock
+{% include helpers/subhead-links.md %}
 
 ~~~
 listsinceblock [block hash] [block depth]
@@ -692,6 +703,7 @@ Result (some array objects removed):
 ~~~
 
 #### listtransactions
+{% include helpers/subhead-links.md %}
 
 ~~~
 listtransactions [account] [count] [from]
@@ -779,6 +791,7 @@ Result:
 
 
 #### listunspent
+{% include helpers/subhead-links.md %}
 
 ~~~
 listunspent [minconf] [maxconf] [addresses]
@@ -900,6 +913,7 @@ Result:
 
 
 #### lockunspent
+{% include helpers/subhead-links.md %}
 
 ~~~
 lockunspent <true|false> <outputs>
@@ -1011,6 +1025,7 @@ true
 
 
 #### move
+{% include helpers/subhead-links.md %}
 
 ~~~
 move <account> <account> <amount> [minconf] [comment]
