@@ -140,14 +140,300 @@ In order to maintain a connection with a peer, nodes by default will send a mess
 
 {% endautocrossref %}
 
+### Initial Block Download
+
+{% autocrossref %}
+
+Before a full node can validate unconfirmed transactions and
+recently-mined blocks, it must download and validate all blocks from
+block 1 (the block after the hardcoded genesis block) to the current tip
+of the best block chain. This is the Initial Block Download (IBD) or
+initial sync.
+
+Although the word "initial" implies this method is only used once, it
+can also be used any time a large number of blocks need to be
+downloaded, such as when a previously-caught-up node has been offline
+for a long time. In this case, a node can use the IBD method to download
+all the blocks which were produced since the last time it was online.
+
+Bitcoin Core uses the IBD method any time the last block on its local
+best block chain has a block header time more than 24 hours in the past.
+Bitcoin Core 0.10 will also perform IBD if its local best block chain is
+more than 144 blocks lower than its local best headers chain (that is,
+the local block chain is more than about 24 hours in the past).
+
+{% endautocrossref %}
+
+#### Blocks-First
+
+{% autocrossref %}
+
+Bitcoin Core (up until version [0.9.3][bitcoin core 0.9.3]) uses a
+simple initial block download (IBD) method we'll call *blocks-first*.
+The goal is to directly download the best block chain in sequence.
+
+The node performing IBD (IBD node) sends a `getblocks` message to the
+remote node (sync node). The `getblocks` message contains block header
+hashes corresponding to some of the blocks validated by the IBD node,
+starting with the highest-height block validated by the IBD node. In the
+case of a brand-new IBD node, this is a single hash derived from the
+header of block 0, the genesis block.
+
+*Table summarizing the messages mentioned throughout this section*
+
+| **Message** | [`getblocks`][getblocks message] | [`inv`][inv message]                             | [`getdata`][getdata message]  | [`block`][block message]
+| **From→To** | IBD→Sync                         | Sync→IBD                                         | IBD→Sync                      | Sync→IBD
+| **Payload** | One or more header hashes        | Up to 500 block inventories (unique identifiers) | One or more block inventories | One serialized block
+
+The sync node responds with an `inv` message containing the inventories
+for up to 500 sequential blocks. Inventories are unique identifiers
+that nodes use to refer to specific transactions or blocks. The block
+inventories provided in this `inv` message represent the lowest-height
+blocks the sync node thinks the IBD node doesn't have yet based on the
+block header hashes provided in the `getblocks` message. For example, the
+response to a `getblocks` message containing the header hash of block
+zero is an `inv` message with the inventories for blocks 1 through 501.
+
+The IBD node uses the received inventories to create a `getdata` message
+requesting any blocks it doesn't have yet. (Bitcoin Core 0.9.3 won't
+request more than 128 blocks at a time.) Continuing the example from
+above, the IBD node sends a `getdata` message to the sync node
+requesting blocks 1 through 129.
+
+The sync node replies with `block` messages providing the requested
+blocks in sequence (we hope; see the Orphan Blocks section below for
+details about blocks received out of order).
+
+The IBD node downloads each block, validates it, and then requests the
+next block it hasn't requested yet, maintaining a queue of up to 128
+blocks to download. When it has requested every block for which it has
+an inventory, it sends another `getblocks` message to the sync node
+requesting the inventories of up to 500 more blocks. It repeats this
+cycle until it downloads the most recent block. (After that, it will
+receive new blocks through the regular block broadcasting described in a
+later subsection.)
+
+The primary advantage of blocks-first IBD is its simplicity. The primary
+disadvantage is that the IBD node relies on a single sync node for all
+of its downloading. This has several implications:
+
+* **Speed Limits:** All requests are made to the sync node, so if the
+  sync node has limited upload bandwidth, the IBD node will have slow
+  download speeds.  Note: if the sync node goes offline, Bitcoin Core
+  will continue downloading from another node---but it will still only
+  download from a single sync node at a time.
+
+* **Download Restarts:** The sync node can send a non-best (but
+  otherwise valid) block chain to the IBD node. The IBD node won't be
+  able to identify it as non-best until the initial block download nears
+  completion, forcing the IBD node to restart its block chain download
+  over again from a different node. Bitcoin Core ships with several
+  block chain checkpoints at various block heights selected by
+  developers to help an IBD node detect that it is being fed an
+  alternative block chain history---allowing the IBD node to restart
+  its download earlier in the process.
+
+* **Disk Fill Attacks:** Closely related to the download restarts, if
+  the sync node sends a non-best (but otherwise valid) block chain, the
+  chain will be stored on disk, wasting space and possibly filling up
+  the disk drive with useless data.
+
+* **High Memory Use:** Whether maliciously or by accident, the sync node
+  can send blocks out of order, creating orphan blocks which can't be
+  validated until their parents have been received and validated.
+  Orphan blocks are stored in memory while they await validation,
+  which may lead to high memory use.
+
+{% endautocrossref %}
+
+#### Headers-First
+
+{% autocrossref %}
+
+<!-- TOODv0.10 rephrase paragraph opening when 0.10 is released -->
+
+The not-yet-released Bitcoin Core 0.10 is expected to use a different
+method for IBD called *headers-first.* The goal is to download the best
+[headers chain][]{:#term-headers-chain}{:.term}, partially validating
+each block header as best as possible, and then use that headers chain
+to download the best block chain.
+
+The node performing IBD (IBD node) sends a `getheaders` message to a
+remote node (sync node). The `getheaders` message contains block header
+hashes corresponding to some of the block headers on the IBD node's best
+headers chain, starting with the highest-height block header validated
+by the IBD node. In the case of a brand-new IBD node, it sends the
+header hash of block 0, the genesis block.
+
+*Table summarizing the messages mentioned throughout this section*
+
+| **Message** | [`getheaders`][getheaders message] | [`headers`][headers message] | [`getdata`][getdata message]                             | [`block`][block message]
+| **From→To** | IBD→Sync                           | Sync→IBD                     | IBD→*Many*                                               | *Many*→IBD
+| **Payload** | One or more header hashes          | Up to 2,000 block headers    | One or more block inventories derived from header hashes | One serialized block
+
+The sync node responds with a `headers` message containing up to 2,000
+sequential block headers. The headers provided represent the
+lowest-height block headers the sync node thinks the IBD node doesn’t
+have yet based on the block header hashes provided in the `getheaders`
+message. For example, the response to a `getheaders` message containing
+the header hash of block zero is a `headers` message with the headers
+for blocks 1 through 2,001.
+
+The IBD node can partially validate the block headers by ensuring that
+all fields follow consensus rules and that the hash of the header is
+below the target threshold according to the nBits field.  (Full
+validation still requires all transactions from the corresponding
+block.)
+
+After the IBD node has partially validated the block headers, it can do
+two things in parallel:
+
+1. **Get More Headers:** the IBD node can send another `getheaders`
+   message to the sync node to request the next 2,000 headers on the
+   best headers chain. Those headers can be immediately validated and
+   another batch requested repeatedly until a `headers` message is
+   received from the sync node with fewer than 2,000 headers, indicating
+   that it has no more headers to offer. As of this writing, headers
+   sync can be completed in fewer than 200 round trips, or about 32 MB
+   of downloaded data.
+
+    Once the IBD node receives a `headers` message with fewer than 2,000
+    headers from the sync node, it sends a `getheaders` message to each
+    of its peers to get their view of best headers chain. By comparing
+    the responses, it can easily determine if the headers it has
+    downloaded belong to the best headers chain reported by any of its
+    peers. This means a dishonest sync node will quickly be discovered
+    even if checkpoints aren't used (as long as the IBD node connects to
+    at least one honest peer; Bitcoin Core will continue to provide
+    checkpoints in case honest peers can't be found).
+
+2. **Download Blocks:** While the IBD node continues downloading
+   headers, and after the headers finish downloading, the IBD node will
+   request and download each block. The IBD node can use the block
+   header hashes it computed from the headers chain to create `getdata`
+   messages that request the blocks it needs by their inventory. It
+   doesn't need to request these from the sync node---it can request
+   them from any of its full node peers. (Although not all full nodes
+   may store all blocks.) This allows it to fetch blocks in parallel and
+   avoid having its download speed constrained to the upload speed of a
+   single sync node.
+
+    To spread the load between multiple peers, Bitcoin Core will only
+    request up to 16 blocks at a time from a single peer. Combined with
+    its maximum of 8 outgoing connections, this means headers-first
+    Bitcoin Core will request a maximum of 128 blocks simultaneously
+    during IBD (the same maximum number that blocks-first Bitcoin Core
+    requested from its sync node).
+
+![Simulated Headers-First Download Window](/img/dev/en-headers-first-moving-window.svg)
+
+Bitcoin Core's headers-first mode uses a 1,024-block moving download
+window to maximize download speed. The lowest-height block in the window
+is the next block to be validated; if the block hasn't arrived by the
+time Bitcoin Core is ready to validate it, Bitcoin Core will wait a
+minimum of two more seconds for the stalling node to send the block. If
+the block still hasn't arrived, Bitcoin Core will disconnect from the
+stalling node and attempt to connect to another node. For example, in
+the illustration above, Node A will be disconnected if it doesn't send
+block 3 within at least two seconds.
+
+**Resources:** Headers first was primarily implemented in [Bitcoin Core
+pull #4468].
+
+{% endautocrossref %}
+
 ### Block Broadcasting
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
-At the start of a connection with a peer, both nodes send `getblocks` messages containing the hash of the latest known block. If a peer believes they have newer blocks or a longer chain, that peer will send an `inv` message which includes a list of up to 500 hashes of newer blocks, stating that it has the longer chain. The receiving node would then request these blocks using the command `getdata`, and the remote peer would reply via `block`<!--noref--> messages. After all 500 blocks have been processed, the node can request another set with `getblocks`, until the node is caught up with the network. Blocks are only accepted when validated by the receiving node.
+When a miner discovers a new block, it broadcasts the new block to its
+peers using one of the following methods:
 
-New blocks are also discovered as miners publish their found blocks, and these messages are propagated in a similar manner. Through previously established connections, an `inv` message is sent with the new block hashed, and the receiving node requests the block via the `getdata` message. 
+* **[Unsolicited Block Push][]{:#term-unsolicited-block-push}{:.term}:**
+  the miner sends a `block` message to each of its full node peers with
+  the new block. The miner can reasonably bypass the standard relay
+  method like this because it knows none of its peers already have the
+  just-discovered block.
+
+* **[Standard Block Relay][]{:#term-standard-block-relay}{:.term}:**
+  the miner, acting as a standard relay node, sends an `inv` message to
+  each of its peers (both full node and SPV) with an inventory referring
+  to the new block. The most common responses are:
+
+   * Each blocks-first (BF) peer that wants the block replies with a
+     `getdata` message requesting the full block.
+
+   * Each headers-first (HF) peer that wants the block replies with a
+     `getheaders` message containing the header hash of the
+     highest-height header on its best headers chain, and likely also
+     some headers further back on the best headers chain to allow fork
+     detection. That message is immediately followed by a `getdata`
+     message requesting the full block. By requesting headers first, a
+     headers-first peer can refuse orphan blocks as described in the
+     subsection below.
+
+   * Each Simplified Payment Verification (SPV) client that wants the
+     block replies with a `getdata` message typically requesting a
+     merkle block.
+
+   The miner replies to each request accordingly by sending the block
+   in a `block` message, one or more headers in a `headers` message,
+   or the merkle block and transactions relative to the SPV client's
+   bloom filter in a `merkleblock` message followed by zero or more
+   `tx` messages.
+
+Full nodes validate the received block and then advertise it to their
+peers using the standard block relay method described above.  The condensed
+table below highlights the operation of the messages described above
+(Relay, BF, HF, and SPV refer to the relay node, a blocks-first node, a
+headers-first node, and an SPV client; *any* refers to a node using any
+block retrieval method.)
+
+| **Message** | [`inv`][inv message]                                   | [`getdata`][getdata message]               | [`getheaders`][getheaders message]                                     | [`headers`][headers message]
+| **From→To** | Relay→*Any*                                            | BF→Relay                                   | HF→Relay                                                               | Relay→HF
+| **Payload** | The inventory of the new block                         | The inventory of the new block             | One or more header hashes on the HF node's best headers chain (BHC)     | Up to 2,000 headers connecting HF node's BHC to relay node's BHC
+| **Message** | [`block`][block message]                               | [`merkleblock`][merkleblock message]       | [`tx`][tx message]                                                     |
+| **From→To** | Relay→BF/HF                                            | Relay→SPV                                  | Relay→SPV                                                              |
+| **Payload** | The new block in [serialized format][serialized block] | The new block filtered into a merkle block | Serialized transactions from the new block that match the bloom filter |
+
+{% endautocrossref %}
+
+#### Orphan Blocks
+
+{% autocrossref %}
+
+Blocks-first nodes may download orphan blocks---blocks whose previous
+block header hash field refers to a block header this node
+hasn't seen yet. In other words, orphan blocks have no known parent
+(unlike stale blocks, which have known parents but which aren't part of
+the best block chain).
+
+![Difference Between Orphan And Stale Blocks](/img/dev/en-orphan-stale-definition.svg)
+
+When a blocks-first node downloads an orphan block, it will not validate
+it. Instead, it will send a `getblocks` message to the node which sent
+the orphan block; the broadcasting node will respond with inventories of
+any blocks the downloading node is missing (up to 500) in an `inv`
+message; the downloading node will request those blocks with a `getdata`
+message; and the broadcasting node will send those blocks with a
+`block` message. The downloading node will validate those blocks, and
+once the parent of the former orphan block has been validated, it will
+validate the former orphan block.
+
+Headers-first nodes avoid some of this complexity by always requesting
+block headers with the `getheaders` message before requesting a block
+with the `getdata` message. The broadcasting node will send a `headers`
+message containing all the block headers (up to 2,000) it thinks the
+downloading node needs to reach the tip of the best headers chain; each of
+those headers will point to its parent, so when the downloading node
+receives the `block` message, the block shouldn't be an orphan
+block---all of its parents should be known (even if they haven't been
+validated yet). If, despite this, the block received in the `block`
+message is an orphan block, a headers-first node will discard it immediately.
+
+However, orphan discarding does mean that headers-first nodes will
+ignore orphan blocks sent by miners in an unsolicited block push.
 
 {% endautocrossref %}
 
@@ -179,13 +465,13 @@ unconfirmed transactions tend to slowly disappear from the network as
 peers restart or as they purge some transactions to make room in memory
 for others.
 
-Transactions which are mined into blocks that are later orphaned may be
+Transactions which are mined into blocks that later become stale blocks may be
 added back into the memory pool. These re-added transactions may be
 re-removed from the pool almost immediately if the replacement blocks
-include them. This is the case in Bitcoin Core, which removes orphaned
+include them. This is the case in Bitcoin Core, which removes stale
 blocks from the chain one by one, starting with the tip (highest block).
 As each block is removed, its transactions are added back to the memory
-pool. After all of the orphaned blocks are removed, the replacement
+pool. After all of the stale blocks are removed, the replacement
 blocks are added to the chain one by one, ending with the new tip. As
 each block is added, any transactions it confirms are removed from the
 memory pool.

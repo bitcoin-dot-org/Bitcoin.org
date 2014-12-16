@@ -1376,6 +1376,15 @@ total amount of *chain work* seen in the current chain (displayed in
 hexadecimal). *Note: verificationprogress may exceed 1 (100%) because it's
 just an estimate.*
 
+<!-- TODOv0.10: reword when 0.10 is released -->
+
+Bitcoin Core 0.10 will add a *headers* field indicating the number of
+headers downloaded on what is believed to be the best block chain.
+
+<!-- TODOv0.10: add this to sample below when 0.10 is released
+  "headers" : <integer>,
+-->
+
 {% endautocrossref %}
 
 ~~~
@@ -1389,7 +1398,9 @@ just an estimate.*
 }
 ~~~
 
-**Example**
+<!-- TODOv0.10: update example to 0.10 when released -->
+
+**Example From Bitcoin Core 0.9.2**
 
 ~~~
 bitcoin-cli -testnet getblockchaininfo
@@ -2362,6 +2373,26 @@ version; *inbound* is whether or not the node connected to you first;
 
 *Banscore* is the misbehavior number for the node.
 
+<!-- TODOv0.10 reword text when 0.10 is released -->
+
+Bitcoin Core 0.10 will remove the *syncnode* field and replace it with
+three new fields: *synced_headers* to indicate the block height of the
+highest-height header the local node has in common with the remote
+peer; *synced_blocks* to indicate the block height of the highest-height
+block the local node has in common with the remote peer; and *inflight*
+to indicate the number of blocks the local node has requested from the
+remote peer.
+
+<!-- TODOv0.10: update description below when 0.10 is released
+REMOVE: syncnode field;  add following fields where syncnode is
+    "synced_headers": <block height>,
+    "synced_blocks": <block height>,
+    "inflight": [
+        <block height>,
+        [...]
+    ]
+-->
+
 {% endautocrossref %}
 
 ~~~
@@ -2388,7 +2419,9 @@ version; *inbound* is whether or not the node connected to you first;
 ]
 ~~~
 
-**Example**
+<!-- TODOv0.10 update example to 0.10 when released -->
+
+**Example From Bitcoin Core 0.9.1**
 
 ~~~
 > bitcoin-cli -testnet getpeerinfo | head -n20
@@ -3271,7 +3304,9 @@ getwork [data]
 Provides a block header which can be hashed to attempt to find the next
 block, and lets a miner return a successful header.
 
-![Warning icon](/img/icons/icon_warning.svg)
+<!-- TODOv0.10: reword warning when 0.10 is released -->
+
+![Warning icon](/img/icon_warning.svg)
 **Warning:** `getwork` will be removed in Bitcoin Core 0.10. Use
 the `getblocktemplate` RPC instead.
 
