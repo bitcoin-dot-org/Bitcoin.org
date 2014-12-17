@@ -107,7 +107,7 @@ check-for-non-ascii-urls:
 ## characters or spaces.
 	$S find _translations -name '*.yml' | while read file \
 	    ; do grep -H . $$file | sed -n -e '/url:/,$$p' \
-	    | grep -P '[^\x00-\x7f]|[a-z\-] [a-z\-]' \
+	    | grep -P ': +[a-z0-9\-]+: +.*([^\x00-\x7f]|[^a-z0-9\-"]).*$$' \
 	; done | eval $(ERROR_ON_OUTPUT)
 
 check-for-broken-kramdown-tables:
