@@ -116,13 +116,13 @@ id:
     walletkncwallet: "KnC Wallet berupaya untuk menjadi cara mudah mengirimkan bitcoin ke teman-teman dan keluarga Anda. Memiliki fitur direktori online sehingga Anda dapat mulai mengirim bitcoin ke kontak Anda secara langsung, tanpa mengetahui alamat Bitcoin mereka."
     walletbreadwallet: "Kesederhanaan adalah prinsip desain utama breadwallet. Sebagai klien Bitcoin yang berdiri sendiri, tak ada server yang diretas atau mati, dan dengan menggunakan dasar keamanan iOS yang kuat, breadwallet didesain untuk memproteksi Anda dari malware, lubang keamanan browser, bahkan pencurian fisik."
     walletmyceliumwallet: "Mycelium Bitcoin Wallet adalah dompet sumber-terbuka untuk Android yang dirancang untuk keamanan, kecepatan, dan kemudahan penggunaan. Mycelium Bitcoin Wallet memiliki fitur unik untuk mengelola kunci Anda dan cold storage yang membantu Anda mengamankan bitcoin Anda."
-    walletblockchaininfo: "Blockchain.info adalah dompet hibrid yang ramah pengguna. Blockchain.info menyimpan versi terenkripsi dari dompet Anda secara online namun dekripsi dilakukan dalam peramban Anda. Untuk alasan keamanan, Anda harus selalu menggunakan ekstensi peramban dan cadangan surel (dan pastikan surel tersebut aman)."
     walletcoinbase: "Coinbase adalah layanan dompet web yang mudah digunakan. Coinbase juga menyediakan sebuah aplikasi dompet web Android, perangkat penjual, dan integrasi dengan rekening bank AS untuk membeli dan menjual bitcoin."
     walletxapo: "Xapo mengombinasikan kenyamanan dari dompet Bitcoin dengan keamanan layaknya dari brankas penyimpanan berasuransi. Xapo Debit Card terhubung dengan Xapo Wallet Anda dan memungkinkan Anda membelanjakan bitcoin ke jutaan toko di seluruh dunia. "
     walletcoinkite: "Coinkite adalah dompet web dan layanan kartu debit yang mudah digunakan. Coinkite bisa dioperasikan di browser ponsel, memiliki alat-alat penjual, terminal pembayaran point-of-sale. Coinkite adalah dompet hibrida dan brankas full reserve."
     walletbitgo: "BitGo adalah dompet tanda tangan berganda yang menawarkan tingkat keamanan tinggi. Setiap transaksi memerlukan dua tanda tangan, melindungi bitcoin Anda dari malware dan serangan server. Kunci pribadi dipegang pengguna sehingga BitGo tidak dapat mengakses bitcoin Anda. BitGo adalah pilihan yang bagus bagi para pengguna awam."
     walletgreenaddress: "GreenAddress adalah dompet tanda tangan berganda yang ramah pengguna, dengan keamanan dan privasi yang telah ditingkatkan. Dalam waktu singkat kunci pribadi Anda ada di server, bahkan tidak dienkripsi. Untuk alasan keamanan, Anda sebaiknya selalu menggunakan 2FA dan ekstensi browser atau Android App."
     wallettrezor: "TREZOR adalah dompet perangkat keras yang menyediakan keamanan tingkat tinggi tanpa mengorbankan kenyamanan. Tidak seperti penyimpanan dingin, TREZOR mampu melakukan transaksi selama terkoneksi dengan perangkat online. Hal ini berarti membelanjakan bitcoin lebih aman bahkan saat menggunakan komputer yang terinfeksi malware."
+    wallethw1: "HW.1 adalah sebuah dompet perangkat keras yang diciptakan pada sebuah platform kartu pintar perbankan ST23YT66. Dompet ini menjaga keamanan kunci pribadi pengguna, memvalidasi transaksi, bisa digunakan sebagai sebuah kartu prabayar yang aman atau sebuah kelompok tanda tangan berganda. Meskipun dompet ini bukan sumber terbuka, tetapi dapat divalidasi secara deterministik."
     walletdownload: "Memasang"
     walletvisit: "Kunjungi situs web"
     walletsourcecode: "Sumber Kode"
@@ -144,6 +144,8 @@ id:
     checkfailcontrolthirdpartytxt: "Layanan ini memiliki kontrol penuh atas bitcoin Anda. Hal ini berarti Anda perlu percaya bahwa layanan ini tidak akan menghilangkan dana Anda karena kelalaian di pihak mereka. Terhitung hari ini, sebagian besar dompet web tidak mengasuransikan deposit mereka seperti halnya bank, dan banyak layanan seperti itu yang pada akhirnya mengalami pelanggaran keamanan di masa lalu. "
     checkgoodvalidationfullnode: "Validasi penuh"
     checkgoodvalidationfullnodetxt: "Dompet ini adalah simpul penuh yang memvalidasi dan menyampaikan transaksi pada jaringan Bitcoin. Hal ini berarti tidak diperlukan kepercayaan pada pihak ketiga saat verifikasi pembayaran. Simpul penuh menyediakan tingkat keamanan tertinggi dan memegang peranan penting dalam melindungi jaringan. Meski demikian, dompet ini membutuhkan lebih banyak ruang (lebih dari 20GB), bandwidth, dan waktu sinkronisasi awal yang lebih lama."
+    checkgoodvalidationfullnoderequired: "Validasi penuh"
+    checkgoodvalidationfullnoderequiredtxt: "Dompet ini mengharuskan Anda untuk menginstal perangkat lunak simpul penuh yang memvalidasi dan menyampaikan transaksi di jaringan Bitcoin. Hal ini berarti tidak perlu ada kepercayaan pada pihak ketiga saat memverifikasi pembayaran. Simpul penuh memberikan tingkat keamanan tertinggi dan sangat penting untuk melindungi jaringan. Namun, simpul penuh memerlukan lebih banyak ruang (lebih dari 20GB), bandwidth, dan waktu sinkronisasi awal yang lebih lama."
     checkneutralvalidationvariable: "Validasi variabel"
     checkneutralvalidationvariabletxt: "Fitur-fitur validasi pembayaran disediakan oleh dompet perangkat lunak yang Anda gunakan di perangkat ini. Silahkan lihat skor Validasi untuk perangkat lunak yang hendak Anda gunakan."
     checkpassvalidationspvp2p: "Validasi yang disederhanakan"
@@ -433,9 +435,6 @@ id:
     list3: "Biaya pemrosesan<br>nol atau rendah"
     desc: "Bitcoin menggunakan teknologi peer-to-peer untuk beroperasi, tanpa otoritas pusat atau bank sentral; pengelolaan transaksi dan penerbitan bitcoin dilakukan secara kolektif oleh jaringan. <b>Bitcoin merupakan sumber-terbuka; rancangannya bersifat umum, tidak ada seorang pun yang menjadi pemilik dan mengendalikan Bitcoin dan <a href=\"#support-bitcoin#\">semua orang dapat mengambil bagian</a></b>. Dengan sifatnya yang unik, Bitcoin memungkinkan cara-cara penggunaan yang tidak bisa dilakukan oleh sistem pembayaran lain sebelumnya."
     overview: "Atau dapatkan gambaran singkat untuk"
-    individuals: "Perorangan"
-    businesses: "Bisnis"
-    developers: "Para Pengembang"
   innovation:
     title: "Inovasi - Bitcoin"
     pagetitle: "Inovasi dalam sistem pembayaran"
@@ -467,8 +466,31 @@ id:
   legal:
     title: "Sangkalan hukum - Bitcoin"
     pagetitle: "Sangkalan hukum"
-    termstxt1: "Situs ini menyediakan informasi dan materi yang bersifat umum. Informasi ini dimaksudkan untuk tujuan informasi saja. Situs ini mungkin berisi informasi yang membahas masalah-masalah hukum yang nyata atau potensial. Informasi ini bukan merupakan pengganti untuk penasihat hukum yang berkualitas. Anda tidak memiliki izin dan tidak seharusnya Anda bergantung pada situs ini untuk nasihat hukum. Pemilik atau para kontributor situs ini tidak bertanggung jawab atas tindakan, keputusan, atau perilaku lain yang diambil atau tidak diambil oleh Anda berdasarkan situs ini. Termasuk, namun tidak terbatas pada, alasan hukum atau teknologi. Anda bertindak dengan risiko sendiri dalam ketergantungan pada isi website ini. Jika Anda membuat keputusan untuk bertindak atau tidak bertindak, Anda harus menghubungi pengacara berlisensi di negara yang bersangkutan di mana Anda ingin atau butuh bantuan."
-    termstxt2: "Website ini berisi terjemahan dari konten asli yang berbahasa Inggris. Terjemahan ini disediakan hanya untuk kenyamanan pembaca. Bila ada pertentangan antara konten bahasa Inggris dengan terjemahannya, maka versi bahasa Inggrisnya yang menjadi acuan. Jika Anda menemukan perbedaan makna konten, mohon laporkan ke <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a>."
+    information: "Informasi yang dipublikasikan di bitcoin.org"
+    informationtxt1: "Situs http://bitcoin.org/ (selanjutnya, disebut sebagai \"Situs\") menyediakan informasi dan materi yang bersifat umum. Anda tidak memiliki izin dan tidak seharusnya Anda bergantung pada Situs ini untuk nasihat hukum, saran bisnis, atau saran apapun. Anda bertindak dengan risiko Anda sendiri dalam ketergantungan pada isi Situs ini. Jika Anda membuat keputusan untuk bertindak atau tidak bertindak, Anda harus menghubungi pengacara berlisensi di yurisdiksi yang relevan di mana Anda ingin atau butuh bantuan. Tidak sedikit pun pemilik atau para kontributor Situs ini bertanggung jawab atas tindakan, keputusan, atau perilaku lain yang diambil atau tidak diambil oleh Anda dalam ketergantungan pada Situs ini."
+    translations: "Terjemahan"
+    translationstxt1: "Situs ini mungkin berisi terjemahan dari versi bahasa Inggris dari konten yang tersedia di Situs. Terjemahan ini disediakan hanya untuk kemudahan. Dalam hal terjadi konflik antara versi bahasa Inggris dan versi terjemahan, maka versi bahasa Inggris yang akan diutamakan. Jika Anda melihat inkonsistensi apapun, silakan melaporkannya pada <a href=\"https://github.com/bitcoin/bitcoin.org\"> GitHub </a>."
+    userisks: "Risiko yang berkaitan dengan penggunaan Bitcoin"
+    useriskstxt1: "Situs ini tidak akan bertanggung jawab atas kerugian, kerusakan atau klaim yang timbul dari peristiwa yang termasuk dalam lingkup dari lima kategori berikut:"
+    useriskstxt2: "Kesalahan yang dibuat oleh pengguna perangkat lunak atau layanan apapun terkait Bitcoin, seperti: lupa kata sandi, pembayaran dikirim ke alamat Bitcoin yang salah, dan penghapusan dompet tanpa disengaja."
+    useriskstxt3: "Masalah perangkat lunak dari Situs ini dan/atau perangkat lunak atau layanan apapun terkait Bitcoin, seperti: file dompet yang rusak, transaksi yang dibangun dengan tidak benar, perpustakaan kriptografi yang tidak aman, malware yang mempengaruhi Situs dan/atau perangkat lunak atau layanan apapun terkait Bitcoin."
+    useriskstxt4: "Kegagalan teknis pada perangkat keras dari pengguna perangkat lunak atau layanan apapun terkait Bitcoin, seperti: kehilangan data karena perangkat penyimpanan cacat atau rusak."
+    useriskstxt5: "Masalah keamanan yang dialami oleh pengguna perangkat lunak atau layanan apapun terkait Bitcoin, seperti: akses tidak sah ke dompet dan/atau rekening pengguna."
+    useriskstxt6: "Tindakan atau kelambanan dari pihak ketiga dan/atau peristiwa yang dialami oleh pihak ketiga, seperti: kebangkrutan penyedia layanan, serangan keamanan informasi pada penyedia layanan, dan penipuan yang dilakukan oleh pihak ketiga."
+    investmentrisks: "Risiko-risiko investasi"
+    investmentriskstxt1: "Investasi Bitcoin dapat menyebabkan hilangnya uang selama jangka waktu pendek atau bahkan panjang. Para investor Bitcoin harus mengharapkan harga untuk memiliki rentang fluktuasi yang tinggi. Informasi yang dipublikasikan di Situs ini tidak dapat menjamin bahwa investor Bitcoin tidak akan kehilangan uang."
+    taxcompliance: "Kepatuhan terhadap kewajiban perpajakan"
+    taxcompliancetxt1: "Pengguna Situs ini bertanggung jawab penuh untuk menentukan apa, jika ada, pajak yang berlaku atas transaksi-transaksi Bitcoin mereka. Pemilik, atau kontributor, Situs ini TIDAK bertanggung jawab untuk menentukan pajak yang berlaku atas transaksi-transaksi Bitcoin."
+    noissuer: "Situs ini tidak menyimpan, mengirim, atau menerima bitcoin"
+    noissuertxt1: "Situs ini tidak menyimpan, mengirim atau menerima bitcoin. Hal ini dikarenakan bitcoin hanya ada berdasarkan catatan kepemilikan yang dipelihara dalam jaringan Bitcoin. Setiap pengalihan hak atas bitcoin terjadi dalam jaringan Bitcoin yang terdesentralisasi, dan tidak di Situs ini."
+    nowarranties: "Tidak ada jaminan"
+    nowarrantiestxt1: "Situs ini disediakan atas dasar \"sebagaimana adanya\" tanpa jaminan apapun mengenai Situs dan/atau konten, data, materi dan/atau layanan yang disediakan di Situs ini."
+    noliability: "Batasan kewajiban"
+    noliabilitytxt1: "Kecuali diwajibkan oleh hukum, tidak sedikit pun pemilik atau para kontributor Situs ini bertanggung jawab atas kerugian dalam bentuk apapun, termasuk, namun tidak terbatas pada, kehilangan penggunaan, kehilangan keuntungan, atau kehilangan data yang timbul dari atau dengan cara apapun yang berhubungan dengan penggunaan Situs ini."
+    arbitration: "Arbitrasi"
+    arbitrationtxt1: "Pengguna Situs ini setuju untuk menengahi sengketa yang timbul dari atau sehubungan dengan Situs ini atau sanggahan ini, kecuali untuk sengketa yang berkaitan dengan hak cipta, logo, merek dagang, nama dagang, rahasia dagang atau paten."
+    lastchange: "Perubahan terakhir"
+    lastchangetxt1: "Sanggahan ini telah diubah terakhir kali pada"
   press:
     title: "Pers - Bitcoin"
     pagetitle: "Ruang pers"
@@ -479,6 +501,13 @@ id:
     faqmore: "Untuk mengetahui lebih lanjut tentang Bitcoin, silakan kunjungi laman lengkap <a href=\"/en/faq\">FAQ</a> atau <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
     materialpicture: "Gambar"
     materialpicturemore: "Lihat lebih banyak gambar..."
+  privacy:
+    title: "Privasi - Bitcoin"
+    pagetitle: "Privasi"
+    datacollect: "Data yang dikumpulkan"
+    datacollecttxt: "Bitcoin.org mengumpulkan catatan server yang telah dibuat anonim. Catatan ini termasuk alamat IP dengan byte terakhir yang diganti, waktu kunjungan, laman yang diminta, agen dan url referal pengguna. Bitcoin.org tidak mengumpulkan data menggunakan cookies."
+    datause: "Penggunaan data"
+    datausetxt: "Data yang dikumpulkan digunakan untuk menyediakan <a href=\"/stats/\">statistik publik yang transparan</a>."
   protect-your-privacy:
     title: "Lindungi privasi Anda - Bitcoin"
     pagetitle: "Lindungi privasi Anda"
@@ -645,7 +674,9 @@ id:
     menu-intro: Perkenalan
     menu-legal: "Sah"
     menu-press: "Pers"
+    menu-privacy: "Privasi"
     menu-resources: Sumber daya
+    menu-stats: "Statistik"
     menu-support-bitcoin: Partisipasi
     menu-vocabulary: Kosa kata
     menu-you-need-to-know: "Yang perlu Anda ketahui"
@@ -669,6 +700,7 @@ id:
     innovation: inovasi
     legal: sah
     press: pers
+    privacy: privasi
     protect-your-privacy: lindungi-privasi-anda
     resources: sumber-daya
     secure-your-wallet: amankan-dompet-anda
