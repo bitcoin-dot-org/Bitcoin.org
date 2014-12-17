@@ -29,10 +29,4 @@ id: bitcoin-for-businesses
 <h2><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />{% translate transparency %}</h2>
 <p>{% translate transparencytext %}</p>
 
-{% case page.lang %}
-{% when 'pl' %}
-<div class="mainbutton"><a href="/en/{% translate getting-started url %}"><img src="/img/icons/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>
-{% else %}
 <div class="mainbutton"><a href="/{{ page.lang }}/{% translate getting-started url %}"><img src="/img/icons/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>
-{% endcase %}
-

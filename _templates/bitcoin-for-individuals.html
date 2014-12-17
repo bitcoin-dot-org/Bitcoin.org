@@ -26,10 +26,4 @@ id: bitcoin-for-individuals
 <h2><img class="titleicon" src="/img/icons/ico_anon.svg" alt="Icon" />{% translate anonymous %}</h2>
 <p>{% translate anonymoustext %}</p>
 
-{% case page.lang %}
-{% when 'pl' %}
-<div class="mainbutton"><a href="/en/{% translate getting-started url %}"><img src="/img/icons/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>
-{% else %}
 <div class="mainbutton"><a href="/{{ page.lang }}/{% translate getting-started url %}"><img src="/img/icons/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>
-{% endcase %}
-
