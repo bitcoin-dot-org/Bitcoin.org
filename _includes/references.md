@@ -378,6 +378,7 @@ http://opensource.org/licenses/MIT.
 [forum tech support]: https://bitcointalk.org/index.php?board=4.0
 [high-speed block relay network]: https://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg03189.html
 [HMAC-SHA512]: https://en.wikipedia.org/wiki/HMAC
+[HTTP JSON-RPC version 1.0]: https://en.wikipedia.org/wiki/JSON-RPC
 [HTTP longpoll]: https://en.wikipedia.org/wiki/Push_technology#Long_polling
 [IP-to-IP payment protocol]: https://en.bitcoin.it/wiki/IP_Transactions
 [IPv4-mapped IPv6 addresses]: http://en.wikipedia.org/wiki/IPv6#IPv4-mapped_IPv6_addresses
@@ -392,6 +393,7 @@ http://opensource.org/licenses/MIT.
 [Payment Request Generator]: http://bitcoincore.org/~gavin/createpaymentrequest.php
 [Piotr Piasecki's testnet faucet]: https://tpfaucet.appspot.com/
 [prime symbol]: https://en.wikipedia.org/wiki/Prime_%28symbol%29
+[proper money handling]: https://en.bitcoin.it/wiki/Proper_Money_Handling_%28JSON-RPC%29
 [protobuf]: https://developers.google.com/protocol-buffers/
 [python-bitcoinlib]: https://github.com/petertodd/python-bitcoinlib
 [python-blkmaker]: https://gitorious.org/bitcoin/python-blkmaker
@@ -408,3 +410,4 @@ changes from moving the referenced object, but also update links
 periodically to point to recent code. Last update: 2014-11-12 --> 
 [core bloom.cpp hash]: https://github.com/bitcoin/bitcoin/blob/cbf28c6619fe348a258dfd7d08bdbd2392d07511/src/bloom.cpp#L46
 [MAX_SIZE]: https://github.com/bitcoin/bitcoin/blob/60abd463ac2eaa8bc1d616d8c07880dc53d97211/src/serialize.h#L23
+[rpcprotocol.h]: https://github.com/bitcoin/bitcoin/blob/f914f1a746d7f91951c1da262a4a749dd3ebfa71/src/rpcprotocol.h
