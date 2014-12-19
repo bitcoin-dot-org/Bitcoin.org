@@ -9,8 +9,8 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-This section describes the Bitcoin P2P network protocol (but it is not a
-specification). It does not describe the discontinued direct [IP-to-IP
+This section describes the Bitcoin P2P network protocol (but it is [not a
+specification][]). It does not describe the discontinued direct [IP-to-IP
 payment protocol][], the [BIP70 payment protocol][payment protocol], the
 [GetBlockTemplate mining protocol][section getblocktemplate], or any
 network protocol never implemented in an official version of Bitcoin Core.

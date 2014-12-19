@@ -300,6 +300,7 @@ http://opensource.org/licenses/MIT.
 [locktime parsing rules]: /en/developer-guide#locktime_parsing_rules
 [Merge Avoidance subsection]: /en/developer-guide#merge-avoidance
 [micropayment channel]: /en/developer-guide#term-micropayment-channel
+[not a specification]: /en/developer-reference#not-a-specification
 [raw transaction format]: /en/developer-reference#raw-transaction-format
 [RPC]: /en/developer-reference#remote-procedure-calls-rpcs
 [RPCs]: /en/developer-reference#remote-procedure-calls-rpcs
@@ -309,12 +310,14 @@ http://opensource.org/licenses/MIT.
 [section hash byte order]: /en/developer-reference#hash-byte-order
 [section merkle trees]: /en/developer-reference#merkle-trees
 [section merkleblock example]: /en/developer-examples#parsing-a-merkleblock
+[section p2p reference]: /en/developer-reference#p2p-network
 [section protocol versions]: /en/developer-reference#protocol-versions
 [section serialized blocks]: /en/developer-reference#serialized-blocks
 [section simple raw transaction]: /en/developer-examples#simple-raw-transaction
 [section verifying payment]: /en/developer-guide#verifying-payment
 [signature script modification warning]: /en/developer-reference#signature_script_modification_warning
 [transaction object format]: /en/developer-reference#term-transaction-object-format
+[v0.8 chain fork]: /en/alert/2013-03-11-chain-fork
 [Verification subsection]: /en/developer-guide#verifying-payment
 [X509Certificates]: /en/developer-examples#term-x509certificates
 
@@ -371,6 +374,7 @@ http://opensource.org/licenses/MIT.
 [ECDSA]: https://en.wikipedia.org/wiki/Elliptic_Curve_DSA
 [Electrum server]: https://github.com/spesmilo/electrum-server
 [Eloipool]: https://gitorious.org/bitcoin/eloipool
+[errors in docs]: https://github.com/bitcoin/bitcoin.org/issues?q=is%3Aissue+label%3A%22Dev+Docs%22
 [forum tech support]: https://bitcointalk.org/index.php?board=4.0
 [high-speed block relay network]: https://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg03189.html
 [HMAC-SHA512]: https://en.wikipedia.org/wiki/HMAC

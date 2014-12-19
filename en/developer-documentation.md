@@ -14,7 +14,7 @@ title: "Developer Documentation - Bitcoin"
 
 <div class="docreference">
 <a href="/en/developer-guide"><img src="/img/icons/main_ico_compass.svg" alt="icon"><span>Developer Guide</span><span>(How Bitcoin works)</span></a>
-<a href="/en/developer-reference"><img src="/img/icons/main_ico_guide.svg" alt="icon"><span>Developer Reference</span><span>(Specifications and APIs)</span></a>
+<a href="/en/developer-reference"><img src="/img/icons/main_ico_guide.svg" alt="icon"><span>Developer Reference</span><span>(Technical details and APIs)</span></a>
 <a href="/en/developer-examples"><img src="/img/icons/main_ico_hash.svg" alt="icon"><span>Developer Examples</span><span>(Examples you can use)</span></a>
 </div>
 
