@@ -16,7 +16,11 @@ sv:
     missiontxt6: "Förbättra Bitcoins tillgänglighet globalt med internationalisering."
     missiontxt7: "Förbli en neutral informativ resurs kring Bitcoin."
     help: "Hjälp oss"
-    helptxt: "Du kan rapportera alla problem eller hjälpa till med att göra bitcoin.org bättre på  <a href=\"https://github.com/bitcoin/bitcoin.org#how-to-participate\">GitHub</a> genom att öppna en problemrapport eller en pull request på engelska. När du skickar en pull request, ta snälla tiden att diskutera dina ändringar och anpassa dit arbete. Du kan hjälpa till med översättningar genom att gå med i ett lag på <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Transifex</a>. Fråga snälla inte efter exponering av ditt företag eller hemsida, förutom i specialfall som vid en konferens."
+    helptxt: "Du kan rapportera alla problem eller hjälpa till med att förbättra bitcoin.org på <a href=\"https://github.com/bitcoin/bitcoin.org#how-to-participate\">GitHub</a> genom att öppna en \"issue\" eller \"pull request\", på engelska. När du vill skapa en \"pull request\", tag dig tid att diskutera dina ändringar och anpassa ditt arbete. Du kan hjälpa till med översättningar genom att gå med i ett team på <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Transifex</a>. Fråga inte efter marknadsföring för din personliga hemsida eller företag, förrutom i special fall, t.ex en konferens. Tack så mycket till alla som har bidragit och spenderar tid med att förbättra bitcoin.org!"
+    maintenance: "Underhåll"
+    documentation: "Dokumentation"
+    translation: "Översättning"
+    github: "Bidragsgivare på Github"
   bitcoin-for-businesses:
     title: "Bitcoin för företag - Bitcoin"
     pagetitle: "Bitcoin för företag"
@@ -32,7 +36,7 @@ sv:
     visibility: "Få gratis marknadsföring"
     visibilitytext: "Bitcoin är en växande marknad för kunder som letar efter sätt att spendera sina bitcoins. Att acceptera Bitcoin är ett bra sätt att få nya kunder och ge ditt företag ny exponering. Att acceptera en ny betalningsmetod har ofta visat sig vara smart för företag som verkar på nätet."
     multisig: "Multisignatur"
-    multisigtext: "Bitcoin har även en funktion som kan tillåta att bitcoins spenderas enbart om ett visst antal medlemmar ur en grupp signerar transaktionen (så kallade \"m-of-n-transaktioner\"). Det motsvarar de gamla vanliga multisignaturcheckarna som du kanske fortfarande använder med banker idag. "
+    multisigtext: "Bitcoins inkluderar också en multi-signatursfunktion, som tillåter bitcoins att spenderas endast om flera personer i en grupp autentiserar transaktionen. Det kan användas av en styrelse för att förhindra att styrelsemedlemmar gör betalningar utan de andras samtycke. Det går också att i efterhand se vilka medlemmar som har signerat en viss betalning."
     transparency: "Transparent redovisning"
     transparencytext: "Många organisationer tvingas producera redovisningsdokument om deras aktivitet. Användningen av Bitcoin ger dig möjligheten att erbjuda den högsta nivån av transparens, eftersom du kan publicera information, så att dina medlemmar kan verifiera ditt saldo och dina transaktioner. Välgörenhets organisationer kan också publikt publicera hur mycket de har fått in i donationer."
   bitcoin-for-developers:
@@ -96,43 +100,127 @@ sv:
   choose-your-wallet:
     title: "Välj plånbok -  Bitcoin"
     pagetitle: "Välj Bitcoin-plånbok"
-    summary: "Din Bitcoin-plånbok är det som tillåter dig att utföra transaktioner med andra användare. Det ger dig ägandeskap över en Bitcoin balans, så du kan skicka och ta emot bitcoins. Precis som email, så kan alla plånböcker interagera med varandra. Innan du startar med Bitcoin se till att du <b><a href=\"#you-need-to-know#\">läser på det du måste veta</a></b> först."
-    getstarted: "Kom igång snabbt och enkelt"
-    bethenetwork: "Anledningar att vara en del av Bitcoin-nätverket"
-    bethenetworktxt: "Du kan välja mellan olika typer av enkla plånböcker eller den <a href=\"#download#\"><b>fullständiga Bitcoin-klienten</b></a>. Den senare använder mer lagring och bandbredd och kan ta mer än en dag att synkronisera. Det finns föredelar som ökad integritet och säkerhet genom att inte lita på andra nätverks noder. Att köra de fullständiga noderna är väsentligt för att skydda nätverket genom att kolla och vidarebefordra transaktioner. "
-    walletbitcoinqt: "Bitcoin Core är en fullständig Bitcoin klient och är ryggraden i nätverket. Den erbjuder den högsta nivån av säkerhet, integritet och stabilitet. Den har däremot färre tjänster och kräver mycket utrymme och minne."
+    pagedesc: "Hitta din plånbok och börja göra säkra betalningar med privatpersoner och butiker."
+    walletcatmobile: "Mobilt"
+    walletcatdesktop: "Dator"
+    walletcathardware: "Hårdvara"
+    walletcatweb: "Webben"
+    walletbitcoinqt: "Bitcoin Core är en full Bitcoin klient och är en del utav ryggraden i nätverket. Den erbjuder en hög nivå utav säkerhet, integritet och stabilitet. Den här däremot lite färre funktioner och tar upp mycket plats i minnet och på hårddisken."
     walletmultibit: "MultiBit är en enkel klient med fokus på att vara snabb och enkel att använda. Den synkroniserar med nätet och är klar att användas på några minuter. MultiBit har stöd för många språk. Ett bra val för icke-tekniska användare."
     wallethive: "Hive är en snabb, integrerad och användarvänlig Bitcoin-plånbok för Mac OS X. Den har ett starkt fokus på användarvänlighet, är översatt till många språk och har apps, vilket gör det lättare att interagera med din favorit Bitcoin-tjänst och handlare."
+    wallethive-web: "Hive är en användarvänlig Bitcoin och Litecoin plånbok och har ett elegant och enkelt användargränsnitt. Hive har funktionen Waggle, vilket är ett enkelt sätt att skicka och ta emot sk. tokens från andra Hive användare nära dig. Ditt lösenord genererar din plånbok, vilket gör den både portabel och enkel att säkerhetskopiera."
     walletarmory: "Armory är en avancerad Bitcoin-klient som har ett fler funktioner för avancerade Bitcoin användare. Den erbjuder många backup och krypterings funktioner och  och stödjer säker offline lagring."
     walletelectrum: "Electrum's fokus är snabbhet och enkelhet med lågt resursanvändande. Den använder externa datorer för de mest komplicerade delarna av Bitcoin-systemet och tillåter dig att få tillbaka en plånbok genom att ange en hemlig lösenordsfras."
-    walletbitcoinwallet: "Bitcoin Wallet för Android är en enkel att använda och pålitlig, samtidigt som den är säker och snabb. Dess vision är en decentralisering och noll tillit: Ingen central tjänst behövs för Bitcoin relaterade operationer. Applikationen är ett bra val för icke-tekniska personer. Den finns även för BlackBerry OS."
+    walletmsigna: "mSIGNA är en advancerad plånbok samtidigt som den är enkel att använda, skalbar nog för företag och är mycket säker. mSIGNA stödjer BIP32, multisignaturstransaktioner, offlinelagring, synkronisering mellan flera enheter, krypterade säkerhetskopieringar på papper eller elektroniskt."
+    walletbitcoinwallet: "Bitcoin Wallet är pålitlig och enkel att använda, samtidigt som den är både säker och snabb. Visionen är decentralisering och \"zero trust\". Ingen central tjänst behövs för Bitcoin relaterad verksamhet. Applikationen är ett bra val för de som inte är så tekniska."
+    walletkncwallet: "KnC Wallet strävar efter att vara ett enkelt sätt att skicka bitcoins till din familj och vänner. KnC Wallet har en kontaktlista online så du kan skicka bitcoins till dina kontakter direkt, utan att känna till deras Bitcoin-adress."
+    walletbreadwallet: "Enkelhet är breadwallets viktigaste design princip. Som en riktig fristående Bitcoin-klient finns det ingen server som kan bli hackad eller ligga nere och genom att bygga på iOS starka säkerhet är breadwallet designad för att skydda dig mot virus, säkerhetshål i webbläsare och även fysisk stöld."
     walletmyceliumwallet: "Mycelium Bitcoin Wallet är en plånboksapplikation med öppen källkod för Android designad för säkerhet, snabbhet och användarvänlighet. Den har unika funktioner för att hantera dina nycklar och för kallagring som hjälper dig säkra dina bitcoins."
-    walletblockchaininfo: "Blockchain.info är en användarvänlig hybridplånbok. Det lagrar en krypterad version av din plånbok på nätet, men dekryptering sker i din webbläsare. Av säkerhetsskäl för du alltid använda webbläsartillägget och emailsäkerhetskopior."
     walletcoinbase: "Coinbase är en webbaserad plånkbokstjänst som siktar på att vara enkel att använda. De har också en Android applikation, handlar verktyg och integration med amerikanska bankkonton som köper och säljer bitcoins."
+    walletxapo: "Xapo kombinerar bekvämligheten av en vanlig Bitcoin-plånbok med säkerheten som ges av ett sk. kalllagringsvalv. Xapo Debit Card är länkad till din Xapo Wallet och låter dig använda bitcoins hos miljontals återförsäljare runt om i världen."
     walletcoinkite: "Coinkite är en webbplånbok och bankkortstjänst som siktar på att vara enkel att använda. Det fungerar också i mobilwebbläsare, har handlarverktyg och betalningsterminaler."
-    walletbitgo: "BitGo är en multisignatursplånbok som erbjuder den högsta nivån av säkerhet. Varje transaktion kräver två signaturer, vilket skyddar dina bitcoins från virus och server attacker. Privata nycklar sparas av användare på ett sådant sätt att BitGo inte kan komma åt dina bitcoins. Det är ett bra val för icke tekniska användare."
+    walletbitgo: "BitGo är en multisignatursplånbok som är mycket säker. Varje transaktion kräver två signaturer, vilket skyddar dina bitcoins mot virus och attacker mot servrar. Privata nycklar hålls utav användarna så att BitGo inte kan komma åt dina bitcoins. Det är ett bra val för icke tekniska användare."
     walletgreenaddress: "GreenAddress är en användarvänligt multisignatursplånbok med ökad säkerhet och integritet. Inte vid något tillfälle finns dina nycklar på deras servrar, inte ens krypterad. Av säkerhetsskäl borde du alltid använda 2FA och webbläsartillägget eller Android applikationen."
-    walletdownload: "Ladda ner"
+    wallettrezor: "TREZOR är en hårdvaruplånbok som är mycket säker utan att kompromissa på bekvämlighet. Till skillnad från kalllagring kan TREZOR signera transaktioner medan den är kopplad till en enhet med internetåtkomst. Det innebär att det är säkert att spendera bitcoins även på en hackad dator."
+    walletdownload: "Installera"
     walletvisit: "Besök hemsidan"
+    walletsourcecode: "Källkod"
+    platformandroid: "Android"
+    platformios: "iOS"
+    platformblackberry: "BlackBerry"
+    platformwindows: "Windows"
+    platformmac: "Mac"
+    platformlinux: "Linux"
+    checkgoodcontrolfull: "Kontroll över dina pengar"
+    checkgoodcontrolfulltxt: "Den här plånboken ger dig full kontroll över dina bitcoins. Därmed kan ingen tredjepart frysa eller förlora dina tillgångar. Du är däremot fortfarande ansvarig för att säkra och säkerhetskopiera din plånbok."
+    checkpasscontrolhybrid: "Tjänst med kontroll över dina pengar"
+    checkpasscontrolhybridtxt: "Den här plånboken ger dig kontroll över dina bitcoins. Tjänsten har däremot en krypterad kopia av din plånbok. Det innebär att dina bitcoins kan bli stulna ifall du inte använder ett starkt lösenord och tjänsten blir hackad."
+    checkpasscontrolmulti: "Delad kontroll över dina pengar"
+    checkpasscontrolmultitxt: "Den här plånboken kräver att alla transaktioner är signerade av både dig och en tredjepart. Under normala förhållanden kan du återfå full kontroll över dina bitcoins genom din initiala säkerhetskopiering eller genom förtidssignerade transaktioner skickade via email. "
+    checkfailcontrolthirdpartyinsured: "Pengar kontrollerade av en tredjepart"
+    checkfailcontrolthirdpartyinsuredtxt: "Den här tjänsten har full kontroll över dina bitcoins. Det innbär att du måste lita på att den här tjänsten att inte fryser eller missköter dina tillgångar. Trots att tjänsten säger att de tillhandahåller försäkring mot misstag från deras sida, så är du ansvarig för att säkra din plånbok."
+    checkfailcontrolthirdparty: "Pengar kontrollerade av en tredjepart"
+    checkfailcontrolthirdpartytxt: "Den här tjänsten har full kontroll över dina bitcoins. Det innbär att du måste lita på den här tjänsten att inte förlora dina tillgångar på grund av ett misstag från deras sida. Just nu har de flesta webbplånböcker ingen försäkring på insättningar som en bank, och många tjänster har tidigare blivit utsatta för säkerhetsintrång."
+    checkgoodvalidationfullnode: "Full validering"
+    checkgoodvalidationfullnodetxt: "Den här plånboken är en fullnod som validerar och vidarebefordrar transaktioner till Bitcoin nätverket. Det innebär att ingen tillit till tredjepart krävs för att verifiera betalningar. Fullnoder tillhandahåller den högsta nivån av säkerhet och är väsentlig  för att skydda nätverket. De kräver dock mer utrymme (mer än 20GB), bandbredd och längre synkroniseringstid första gången."
+    checkneutralvalidationvariable: "Variabel validering"
+    checkneutralvalidationvariabletxt: "Validering av betalningar görs utav mjukvaruplånboken du använder med den här enheten. Var god se \"Validation score\" för mjukvaruplånboken du planerar att använda."
+    checkpassvalidationspvp2p: "Förenklad validering"
+    checkpassvalidationspvp2ptxt: "Den här plånboken använder SPV och Bitcoin-nätverket. Det innebär att väldigt lite tillit till tredjepart krävs för att verifiera betalningar. Den är däremot inte lika säker som en fullnod, som t.ex <a href=\"#download#\">Bitcoin Core</a>."
+    checkpassvalidationspvservers: "Förenklad validering"
+    checkpassvalidationspvserverstxt: "Den här plånboken använder SPV och väljer slumpmässigt servrar från en lista. Det innebär att väldigt lite tillit till tredjepart krävs för att verifiera betalningar. Den är däremot inte lika säker som en fullnod, som t.ex  <a href=\"#download#\">Bitcoin Core</a>."
+    checkpassvalidationservers: "Decentraliserad validering"
+    checkpassvalidationserverstxt: "Den här plånboken ansluter till en slumpmässig server från en lista. Det innebär att lite tillit till tredjepart krävs när betalningar verifieras. Plånboken är däremot inte lika säker som en fullnod, t.ex <a href=\"#download#\">Bitcoin Core</a>."
+    checkfailvalidationcentralized: "Centraliserad validering"
+    checkfailvalidationcentralizedtxt: "Den här plånboken kräver en centraliserad tjänst som standard. Det innebär att en tredjepart måste litas på för att inte gömma och simulera betalningar."
+    checkgoodtransparencydeterministic: "Total transparens"
+    checkgoodtransparencydeterministictxt: "Den här plånboken är släppt som öppen källkod och är deterministiskt byggd. Det innbär att alla utvecklare i världen kan granska koden och verifiera att mjukvaran inte innehåller några hemligheter."
+    checkpasstransparencyopensource: "Grundläggande transparens"
+    checkpasstransparencyopensourcetxt: "Utvecklarna an den här plånboken publicerar källkoden för klienten. Det innebär att alla utvecklare i världen kan granska koden. Du behöver däremot fortfarande lita på utvecklarna av plånboken när du installerar eller uppdaterar mjukvaran, eftersom den inte är byggd deterministiskt som <a href=\"#download#\">Bitcoin Core</a>."
+    checkpasstransparencyopensourcehardware: "Grundläggande transparens"
+    checkpasstransparencyopensourcehardwaretxt: "Källkoden för den här plånboken är publik. Det innebär att vilken utvecklare som helst i världen kan granska koden. Du behöver däremot fortfarande lita på utvecklarna av den här plånboken för att det inte går att verifiera att enheten kör samma kod för att generera säkra och slumpmässiga sk. \"seeds\" för andra operationer. Om du uppdaterar din enhets firmware och genererar dina egna säkra och slumpmässiga \"seeds\" eller ifall du använder multi-signaturer, kan det bli väsentligen svårare att stjäla dina bitcoins."
+    checkpasstransparencyopenspechardware: "Grundläggande transparens"
+    checkpasstransparencyopenspechardwaretxt: "Specifikationen för den plånboken är publik. Det innebär att vilken utvecklare som helst i världen kan utföra sk. \"blackbox\" testning. Du behöver däremot fortfarande lita på utvecklarna av den här plånboken för att det inte går att verifiera att enheten kör samma kod för att generera säkra och slumpmässiga sk. \"seeds\" och källkoden kan inte bli granskad. Om du uppdaterar din enhets firmware och genererar dina egna säkra och slumpmässiga \"seeds\" eller ifall du använder multi-signaturer, kan det bli väsentligen svårare att stjäla dina bitcoins."
+    checkfailtransparencyclosedsource: "Ingen transparens"
+    checkfailtransparencyclosedsourcetxt: "Den här plånboken är inte släppt som öppen källkod. Det innebär att det inte är möjligt att granska koden och verifiera att mjukvaran inte innehåller någon farlig kod eller gör något som du inte skulle hålla med om."
+    checkfailtransparencyremote: "Extern app"
+    checkfailtransparencyremotetxt: "Den här plånboken laddas från en annan plats. Det innebär att när du använder din plånbok så måste du lita på utvecklarna att inte stjäla eller tappa din bitcoins på grund av någon incident på deras hemsida. Att använda en webbläsar-plugin eller mobil app, om tillgängligt, kan reducera den risken."
+    checkfailtransparencynew: "Ny app"
+    checkfailtransparencynewtxt: "Den här plånboken har inte blivit testad eller publikt granskad av så många personer. Det innebär att den här applikationen eventuellt är mer utsatt för risken att det finns farlig kod i den eller att den gör något som du inte vill."
+    checkgoodenvironmenthardware: "Väldigt säker miljö"
+    checkgoodenvironmenthardwaretxt: "Den här plånboken är laddad från en säker och specialiserad miljö tillhandahållet av enheten. Den ger väldigt starkt skydd mot datasäkerhets hål och virus, eftersom ingen mjukvara kan installeras i den här miljön."
+    checkpassenvironmentmobile: "Säker miljö"
+    checkpassenvironmentmobiletxt: "Den här plånboken är laddad på mobiler där applikationer är i vanliga fall isolerade. Det ger starkt skydd mot virus, även fast mobiler i vanliga fall är lättare att stjäla eller tappa. Krypterar du mobilen och säkerhetskopierar din plånbok, minskar du den risken."
+    checkpassenvironmenttwofactor: "Tvåstegsverifiering"
+    checkpassenvironmenttwofactortxt: "Den här plånboken kan användas från osäkra miljöer. Däremot kräver tjänster tvåstegsverifiering. Det innebär att tillgång till flera enheter eller konton krävs för att stjäla dina bitcoins."
+    checkfailenvironmentdesktop: "Sårbar miljö"
+    checkfailenvironmentdesktoptxt: "Den här plånboken kan laddas på datorer som är sårbara mot virus. Att säkra din dator, använda starka lösenord, flytta dina tillgångar till kalllagring eller aktivera tvåstegsverifiering kan göra det svårare att stjäla dina bitcoins."
+    checkgoodprivacyimproved: "Förbättrad integritet"
+    checkneutralprivacyvariable: "Variabel integritet"
+    checkneutralprivacyvariabletxt: "Integritets funktionaliteten är tillhandahållit av mjukvaruplånboken du anväder med den här enheten. Var god see Integritetsbetyget för mjukvaruplånboken du planerar att använda."
+    checkpassprivacybasic: "Grundläggande integritet"
+    checkfailprivacyweak: "Svag integritet"
+    checkpassprivacyaddressrotation: "Förhindrar övervakning av dina betalningar"
+    checkpassprivacyaddressrotationtxt: "Den här plånboken gör det svårare att övervaka ditt saldo och betalningar genom att rotera adresser. Du ska fortfarande vara noggrann med att använda en ny Bitcoin adress varje gång du gör en betalning."
+    checkfailprivacyaddressrotation: "Tillåter övervakning av dina betalningar"
+    checkfailprivacyaddressrotationtxt: "Den här plånboken gör det enkelt för vem som helst att övervaka ditt saldo och betalningar eftersom den återanvänder samma adress."
+    checkpassprivacydisclosurefullnode: "Undviker att lämna ut information"
+    checkpassprivacydisclosurefullnodetxt: "Den här plånboken lämnar inte ut någon information till uppkopplingspunkter på nätverket när den tar emot eller skickar betalningar."
+    checkfailprivacydisclosurespv: "Lämnar ut begränsat med information till uppkopplingspunkter"
+    checkfailprivacydisclosurespvtxt: "Uppkopplingspunkter på nätverket kan logga din IP-adress och koppla ihop dina skickade och mottagna betalningar tillsammans."
+    checkfailprivacydisclosurecentralized: "Lämnar ut information till tredjepart"
+    checkfailprivacydisclosurecentralizedtxt: "Den här plånboken använder centrala servrar och kan koppla ihop dina betalningar och logga din IP adress. "
+    checkfailprivacydisclosureaccount: "Lämnar ut information till tredjepart"
+    checkfailprivacydisclosureaccounttxt: "Den här tjänsten kan koppla ihop dina betalningar, logga din IP address och känner till din riktiga identitet ifall du tillhandahåller personlig information som email, namn eller bankkonto."
+    checkpassprivacynetworksupporttorproxy: "Du kan använda Tor"
+    checkpassprivacynetworksupporttorproxytxt: "Den här plånboken låter dig konfigurera och använda <a href=\"https://www.torproject.org/\">Tor</a> som en proxy för att förhindra attackerare eller din bredbandsleverantör från att koppla ihop dina betalningar med din IP adress."
+    checkfailprivacynetworknosupporttor: "Saknar stöd för Tor"
+    checkfailprivacynetworknosupporttortxt: "Den här plånboken tillåter dig inte att använda Tor för att förhindra attackerare eller din bredbandsleverantör att koppla ihop dina betalningar med din IP adress. "
+    educate: "Ta dig tid att utbilda dig"
+    educatetxt: "Bitcoin är annorlunda från vad du är van med nu och använder varje dag. Innan du börjar använda Bitcoin för seriösa transaktioner, se till att läsa <a href=\"#you-need-to-know#\"><b>vad du behöver veta</b></a> och ta nödvändiga steg för att  <a href=\"#secure-your-wallet#\"><b>säkra din plånbok</b></a>. Kom alltid ihåg att det är ditt ansvar att noggrant välja plånbok och adoptera bra rutiner för att säkra dina pengar."
   development:
     title: "Utveckling - Bitcoin"
     pagetitle: "Bitcoin-utveckling"
     summary: "Hitta mer information om nuvarande specifikation, program och utvecklare."
-    spec: "Specifikation"
-    spectxt: "Om du är intresserad av att lära dig mer om Bitcoins tekniska detaljer så rekommenderas du att starta med de här dokumenten."
-    speclink1: "<a href=\"/bitcoin.pdf\">Bitcoin: Ett peer-to-peer elektroniskt kontant system</a>"
-    speclink2: "<a href=\"https://en.bitcoin.it/wiki/Protocol_rules\">Protokollregler</a>"
-    speclink3: "<a href=\"https://en.bitcoin.it/wiki/Category:Technical\">Bitcoin Wiki</a>"
+    spec: "Dokumentation"
+    spectxt: "Om du är intresserad av att lära dig mer om Bitcoins tekniska detaljer och hur du kan använda befintliga verktyg och API:er, rekommenderas du att börja med att utforska <a href=\"/en/developer-documentation\">utvecklardokumentationen</a>."
     coredev: "Huvudutvecklare"
+    inventor: "Bitcoin system var ursprungligen designat av Satoshi Nakamoto. Hans ursprungliga Bitcoin källkod underhålls nu, som Bitcoin Core, av följande utvecklare och ett community av frivilliga."
     disclosure: "Ansvarsfullt avslöjande"
     disclosuretxt: "Om du hittar ett säkerhetshål relaterat till Bitcoin, så kan icke kritiska säkerhetshål skickas via email på engelska till någon av huvudutvecklarna eller skickas till den privata bitcoin-säkerhets maillistan skriven ovan. Ett exempel på en icke kritisk säkerhetshål skulle vara ett hål som tillåter någon med enorm beräkningskraft att påverka Bitcoin nätverkets prestanda. Kritiska säkerhetshål är de som är för känsliga för att skickas okrypterat i email. De ska istället skickas till en eller flera av huvudutvecklarna, krypterat med deras PGP nyckel(ar)."
     involve: "Delta"
     involvetxt1: "Bitcoin är gratis programvara och vilken utvecklare som helst kan bidra till projektet. Allt som du behöver finns i <a href=\"https://github.com/bitcoin/bitcoin\">GitHub repositoriet</a>. Var snäll och läs igenom och följ utvecklingsprocessen beskriven i filen README och bidra med högkvalitativ kod och respektera alla riktlinjer."
-    involvetxt2: "Utvecklingsdiskussioner hålls på GitHub och <a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">bitcoin-development</a> maillistan på sourceforge. Mindre formella utvecklingsdisskssioner hålls på irc.freenode.net #bitcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">webbgränssnitt</a>, <a href=\"http://bitcoinstats.com\">loggar</a>)."
+    involvetxt2: "Utvecklingsdiskussioner hålls på GitHub och <a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">bitcoin-development</a> maillistan på sourceforge. Mindre formella utvecklingsdiskussioner hålls på irc.freenode.net #bitcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">webbgränssnitt</a>, <a href=\"http://bitcoinstats.com\">loggar</a>)."
     more: "Fler öppna mjukvaruprojekt"
+    morechoose: "Du kan välja ett projekt att bidra till genom att svara på några <a href=\"http://whatcanidoforbitcoin.org/\">frågor om dina kunskaper</a>."
     moremore: "Visa mer.."
     contributors: "Bidragsgivare till Bitcoin Core"
     contributorsorder: "(Sorterad efter antal commits)"
+    devcommunities: "Utvecklar communities"
+    devcommunitiesintro: "Följande chattrum och hemsidor har diskussioner om Bitcoin-utveckling. Var god läs deras förhållningsregler innan du skriver något. "
+    ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-dev\">IRC kanal #bitcoin-dev</a> på freenode."
+    stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development & Technical Discussion Forum</a>"
   download:
     title: "Ladda ner - Bitcoin"
     pagetitle: "Ladda ner Bitcoin Core"
@@ -143,13 +231,14 @@ sv:
     sourcecode: "Hämta källkoden"
     versionhistory: "Visa versionshistorik"
     notelicense: "Bitcoin Core är drivet av ett community som utvecklar projektet som <a href=\"https://www.fsf.org/about/what-is-free-software\">gratis programvara</a>, släppt under <a href=\"http://opensource.org/licenses/mit-license.php\">MIT licensen</a>."
-    notesync: "Första gången kan Bitcoin Core synkroniseringen ta väldigt lång tid. Försäkra dig om att du har tillräcklig bandbredd och lagringskapacitet för hela blockkedjans storlek. Om du känner till hur man laddar ner en torrent-fil så kan du snabba upp processen genom att placera <a ref=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (en tidigare kopia av blockkedjan) i Bitcoin Core data katalogen innan du startar applikationen."
+    notesync: "Bitcoin Core första synkronisering kan ta lång tid. Se till att du har tillräckligt med bandbredd och hårddisksutrymme för hela blockkedjan (över 20GB). Om du kan ladda ner en torrent fil, så kan du snabba upp processen genom att placera  <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (en tidigare kopia av blockkedjan) i data mappen för Bitcoin Core innan du startar programmet."
     patient: "Du måste ha tålamod"
   events:
     title: "Konferenser och evenemang - Bitcoin"
     pagetitle: "Händelser och evenemang"
     pagedesc: "Hitta event, konferenser och meetups över hela världen."
     upcoming: "Kommande event och konferenser"
+    eventsubmit: "Skicka in ett event"
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitcoin-möten på BitcoinTalk</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitcoin-möten på Wikin</a>"
     meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin-grupper</a>"
@@ -187,38 +276,68 @@ sv:
     advantagesli5: "<em><b>Transparent och neutrallt</b></em> - <a href=\"https://www.biteasy.com/\">All information</a> angående Bitcoin-pengar är tillgängligt på blockkedjan för alla att verifiera och använda i realtid. Ingen individ eller organisation kan kontrollera eller manipulera Bitcoin protokollet eftersom det är säkrat kryptografiskt. Det gör att kärnan av Bitcoin kan litas på för att vara helt neutral, transparent och förutsägbar."
     disadvantages: "Vad är nackdelarna med Bitcoin?"
     disadvantagesli1: "<em><b>Adoption av Bitcoin</b></em> - Många känner fortfarande inte till Bitcoin. Varje dag så är det fler företag som accepterar bitcoins eftersom de vill åt fördelarna i att göra så.  Dock är det fortfarande ett litet antal företag och de behöver bli fler för att kunna dra nytta av <a href=\"https://en.wikipedia.org/wiki/Network_effect\">nätverkseffekter</a>."
-    disadvantagesli2: "<em><b>Volatilitet</b></em> - Det <a href=\"https://bitcoincharts.com/bitcoin/\">totala värdet</a> av bitcoins i cirkulation och antalet företag som använder Bitcoin är fortfarande väldigt litet jämfört med vad det skulle kunna. Därav kan relativt små händelser, transaktioner eller företagsaktiviteter signifikant påverka priset. I teorin, så kommer volatiliteten minska när Bitcoins marknader och teknologi mognar. Aldrig tidigare har världen sett en start-up valuta, så det är verkligen svårt (och spännande) att föreställa sig hur det kommer utvecklas i framtiden."
+    disadvantagesli2: "<em><b>Volatilitet</b></em> - Det <a href=\"https://bitcoincharts.com/bitcoin/\">totala värdet</a> av bitcoins i cirkulation och antalet företag som använder Bitcoin är fortfarande väldigt litet jämfört med vad det skulle kunna vara. Därav kan relativt små händelser, transaktioner eller företagsaktiviteter signifikant påverka priset. I teorin, så kommer volatiliteten minska när Bitcoins marknader och teknologi mognar. Aldrig tidigare har världen sett en start-up valuta, så det är verkligen svårt (och spännande) att föreställa sig hur det kommer utvecklas i framtiden."
     disadvantagesli3: "<em><b>Pågående utveckling</b></em> - Bitcoin-mjukvaran är fortfarande i beta och har många ofärdiga funktioner som är under aktiv utveckling. Nya verktyg, funktioner och tjänster håller på att bl utvecklade för att göra Bitcoin säkrare och lättare att använda för allmänheten. Vissa av dessa är inte redo att användas av alla. De flesta Bitcoin företag är nya och erbjuder forfarande inte någon försäkring. Generellt så håller Bitcoin fortfarande på att mogna."
     trust: "Varför litar folk på Bitcoin?"
     trusttxt1: "Mycket av tilliten till Bitcoin kommer ifrån faktumet att det kräver nästan ingen tillit alls. Bitcoins källkod är helt öppen och decentraliserad. Det betyder att vem som helst har tillgång till hela källkoden när som helst. Alla utvecklare världen över kan därav verifiera exakt hur Bitcoin fungerar. Alla skapade transaktioner och bitcoins kan följas transparent i realtid av vem som helst. Alla betalningar kan göras utan att vara beroende av någon tredjepart och hela systemet är skyddat av kryptografiska algoritmer, verifierat av flera parter. De kryptografiska algoritmerna är lika de som används av nätbanker. Ingen Organisation eller individ kan kontrollera Bitcoin och nätverket fortsätter att vara säkert även fast alla användare inte kan litas på. "
     makemoney: "Kan jag tjäna pengar på Bitcoin?"
     makemoneytxt1: "Du ska aldrig förvänta dig att bli rik på Bitcoin eller någon annan uppkommande teknik. Det är alltid viktigt att vara varse om allting som låter för bra för att vara sant eller motstrider  ekonomiska regler. "
+    makemoneytxt2: "Bitcoin är ett växande utrymme för innovation och det finns affärsmöjligheter som också innebär risker. Det finns ingen garanti att Bitcoin kommer att fortsätta att växa, även om Bitcoin har utvecklats i en mycket snabb takt hittills. Att investera tid och resurser på allt relaterat till Bitcoin kräver entreprenörskap. Det finns olika sätt att tjäna pengar på Bitcoin som utvinning, spekulationer eller att skapa nya företag. Alla dessa metoder är konkurrensutsatta och det finns ingen garanti för gå med vinst. Det är upp till var och en att göra en ordentlig utvärdering av kostnaderna och riskerna med ett sådant projekt."
     virtual: "Är Bitcoin helt virtuellt och immateriellt?"
+    virtualtxt1: "Bitcoin är lika virtuellt som de kreditkort och online-banknätverk folk använder varje dag. Bitcoin kan användas för att betala på nätet och i fysiska butiker precis som alla andra former av pengar. Bitcoins kan också handlas med i fysisk form såsom <a href=\"https://www.casascius.com/\">Casascius mynt</a>, men att betala med en mobiltelefon är oftast bekvämare. Bitcoin saldon lagras i ett stort distribuerat nätverk, och de kan inte ändras av en bedragare hur som helst. Med andra ord, Bitcoin-användare har exklusiv kontroll över sina medel och bitcoins kan inte försvinna bara för att de är virtuella."
     anonymous: "Är Bitcoin anonymt?"
+    anonymoustxt1: "Bitcoin är utformat för att ge sina användare möjlighet att skicka och ta emot betalningar med en accepterbar nivå av sekretess precis som andra former av pengar. Dock är Bitcoin inte anonymt och kan inte erbjuda samma nivå av sekretess som kontanter. Användningen av Bitcoin lämnar omfattande offentliga register. <a href=\"#protect-your-privacy#\">Olika mekanismer</a> finns för att skydda användarnas integritet, och fler är under utveckling. Men det finns fortfarande mycket arbete kvar innan dessa funktioner kan används korrekt av de flesta Bitcoin-användare."
+    anonymoustxt2: "Viss oro finns för att privata Bitcoin-transaktioner skulle kunna användas för olagliga ändamål. Det är dock värt att notera att Bitcoin utan tvekan kommer att utsättas för liknande bestämmelser som redan finns på plats inom befintliga finansiella system. Bitcoin kan inte vara mer anonymt än kontanter och det är inte troligt att Bitcoin skulle förhindra några brottsutredningar. Dessutom är Bitcoin utformat för att förhindra att ett stort antal ekonomiska brott."
     lost: "Vad händer om bitcoins tappas bort?"
     losttxt1: "När en användare förlorar sin plånbok, har det effekten av att ta bort pengar från cirkulation. Förlorade bitcoins är fortfarande kvar i blockkedjan precis som alla andra bitcoins. Dock förblir förlorade bitcoins vilande för alltid eftersom det inte finns något sätt för någon att hitta den privata nyckeln(ar) som skulle tillåta dem att spenderas på nytt. På grund av lagen om tillgång och efterfrågan, när färre bitcoins finns tillgängliga, kommer de som är kvar få ökad efterfrågan och ökning av värdet kommer kompensera för de bitcoins som är förlorade."
     scale: "Kan Bitcoin skala till att bli en stort betalningsnätverk?"
+    scaletxt1: "Bitcoin nätverket kan redan idag hantera ett mycket större antal transaktioner än vad som görs idag. Bitcoin är dock inte helt redo att hantera den volym som de största kreditkortsnätverken hanterar. Arbete pågår för att ta bort de nuvarande begränsningarna och framtida behov är välkända. Sedan Bitcoin kom till har alla aspekter utav Bitcoin-nätverket kontinuerligt förbättrats, optimerats och specialiserats och mognat och det kommer fortsätta så de närmaste åren. Under tiden som trafiken ökar kanske fler Bitcoin-användare lättviktsklienter och de fullständiga klienterna blir mer specialiserade tjänster. För mer detaljer se <a href=\"https://en.bitcoin.it/wiki/Scalability\">Skalbarhetssidan</a> på wikin."
     legal: "Juridiskt"
     islegal: "Är Bitcoin lagligt?"
+    islegaltxt1: "Så vitt vi vet har <a href=\"http://bitlegal.io/\">Bitcoin inte gjorts olagligt</a> i de flesta länder. Men vissa jurisdiktioner (som Argentina och Ryssland) har allvarligt begränsat eller förbjudit utländska valutor. Andra länder (till exempel Thailand) kanske begränsar licenser för vissa enheter, till exempel Bitcoin-börser."
+    islegaltxt2: "Regulatorer från en mängd olika  jurisdiktioner tar steg mot att tillhandahålla privatpersoner och företag med regler för hur de kan integrera den här nya tekniken med det formella och reglerade finanssystemet. T.ex har Financial Crimes Enforcement Network (FinCEN), en byrå i det Amerikanska finansdepartementet, har gett ut en icke bindande guide på hur de ser på olika aktiviteter som involverar virtuella valutor."
     illegalactivities: "Är Bitcoin användbart för illegala aktiviteter?"
+    illegalactivitiestxt1: "Bitcoin är pengar och pengar har alltid använts för både legala och illegala ändamål. Kontanter, kreditkort och nuvarande banksystem används i mycket större utsträckning för ekonomisk brottslighet än Bitcoin. Bitcoin kan bidra med betydande innovation inom betalningssystem och fördelarna med sådan innovation anses ofta vara fler än deras eventuella nackdelar.  "
+    illegalactivitiestxt2: "Bitcoin är designat för att ta ett stort steg mot att göra pengar säkrare att använda och kan också skapa ett starkt skydd mot många former av ekonomisk brottslighet. T.ex så är bitcoins helt omöjliga att förfalska. Användare är i full kontroll och kan inte utsättas för oönskade betalningar, vilket är möjligt med kreditkort. Bitcoin transaktioner är irreversibla och immuna mot \"chargebacks\" bedrägerier. Bitcoin möjliggör pengar att vara säkra mot  både stöld och att du skulle förlora din pengar, genom att använda kraftfulla mekanismer som säkerhetskopior, kryptering och multi-signaturer."
+    illegalactivitiestxt3: "Viss oro har framförts över att Bitcoin skulle kunna vara attraktivt för brottslingar, eftersom det kan användas för att göra privata och oåterkalleliga betalningar. Det går däremot redan med kontanter och banköverföringar, vilka är utbredda och väletablerade. Användningen av Bitcoin kommer utan tvivel att utsättas för liknande regulation som redan finns på plats inom rådande finansiella system och Bitcoin kommer sannolikt inte hindra brottsutredningar från att genomföras. I allmänhet är det vanligt att viktiga genombrott uppfattas som kontroversiella innan deras fördelar är välkända. Internet är ett bra exempel bland många andra för att illustrera detta."
     regulated: "Kan Bitcoin bli reglerat?"
+    regulatedtxt1: "Bitcoin protokollet i sig kan inte ändras utan samarbete med nästan alla sina användare, som väljer vilka program de använder. Att försöka ge särskilda rättigheter till en lokal myndighet i reglerna för det globala Bitcoin nätverket är inte ett praktiskt alternativ. Vilken rik organisation som helst kan då välja att investera i utvinningshårdvara för att styra hälften av datorkraften av nätet och få möjlighet att blockera eller backa nyligen gjorda transaktioner. Det finns dock ingen garanti för att de skulle kunna behålla denna makt eftersom detta kräver mycket större investeringar än alla andra utvinnare i världen."
+    regulatedtxt2: "Det är möjligt att reglera användandet av Bitcoin på ett liknande sätt som alla andra  finansiella instrument. Precis som dollar kan Bitcoin användas för olika ändamål, vilka kan anses legitima eller inte beroende på jurisdiktionella lagar. I det anseendet är Bitcoin inte skilt från någon annat verktyg eller resurs och kan regleras på olika sätt i varje land. Bitcoin användande kan göras svårt om för restriktiva regler införs och det är svårt att säga vad det skulle innebära för antalet användare som fortsatt skulle använda tekniken. En stat som väljer att förbjuda Bitcoin skulle förhindra inhemska företag och marknader från att utvecklas och då låta andra länder leda innovationen. Utmaningen för lagstiftarna, som alltid, är att utveckla effektiva lösningar utan att försämra tillväxten av nya tillväxtmarknader och företag."
     taxes: "Vad gäller Bitcoin och skattning?"
+    taxestxt1: "Bitcoin är inte en fiat valuta med status som lagligt betalningsmedel i någon jurisdiktion, men skatteplikt gäller oftast oavsett vilket medium som används. Det finns en mängd lagar i många olika jurisdiktioner som kan orsaka skatteplikt på intäkter, försäljning, löner, kapitalvinster, eller liknande kan uppstå med Bitcoin."
     consumer: "Hur fungerar Bitcoin och konsumentskydd?"
+    consumertxt1: "Bitcoin tillåter individer att utföra transaktioner med varandra på deras egna villkor. Varje användare kan skicka och ta emot pengar på ett liknande sätt som kontanter, men de kan också vara delaktiga i mer komplicerade kontrakt. Multi-signaturer tillåter en transaktion att bli accepterad av nätverket endast om ett antal personer i en definierad grupp signerar transaktionen. Det tillåter utvecklingen av innovativa dispytmedlingstjänster i framtiden. Sådana tjänster skulle kunna tillåta en tredjepart att acceptera eller vägra en transaktion mellan två parter utan att ha kontroll över deras pengar. Till skillnad från kontanter och andra betalningsmetoder lämnar Bitcoin alltid ett publikt bevis på att en transaktion har utförts, vilket potentiellt skulle kunna användas i ett åtal mot företag som utför bedrägerier."
+    consumertxt2: "Det är värt att notera att medan återförsäljare oftast är beroende av deras rykte för att gå runt och kunna betala deras anställda, så har de inte lika mycket information om nya kunder. Sättet som Bitcoin fungerar tillåter både privatpersoner och företag att skydda sig mot \"chargeback\" bedrägerier, samtidigt som det tillåter konsumenten att fråga efter ytterligare skydd när de inte är villiga att lita på en viss återförsäljare."
     economy: "Ekonomi"
     bitcoinscreated: "Hur skapas Bitcoins?"
+    bitcoinscreatedtxt1: "Nya bitcoins är genererade av en konkurrensutsatt och decentraliserad process kallad \"utvinning\", eller \"mining\" på engelska. Processen innebär att individer belönas av nätverket för sina tjänster. Bitcoin utvinnare bearbetar transaktioner och säkrar nätverket genom att använda specialiserad hårdvara och får därför nya bitcoins i utbyte."
+    bitcoinscreatedtxt2: "Bitcoin-protokollet är designat på sådant sätt att nya bitcoins är skapade med fast hastighet. Det gör Bitcoin-utvinning till en mycket konkurrensutsatt marknad. När fler utvinnare går med i nätverket blir det svårare att göra en vinst och utvinnare måste sträva efter att vara effektiva för att minimera operationskostnaderna. Ingen central myndighet eller utvecklare har makt till att varken kontrollera eller manipulera systemet för att öka deras vinst. Varje Bitcoin nod i världen kommer avslå allt som inte följer de regler som noden förväntar sig att system följer."
+    bitcoinscreatedtxt3: "Bitcoins skapas i en allt långsammare och mer förutsägbar takt än tidigare. Antalet nya bitcoins skapade varje år är automatiskt halverad över tid tills antalet generarade bitcoin har nått sitt tak vid totalt 21 miljoner existerande bitcoins. Vid det här laget kommer Bitcoin-utvinnare antagligen få betalt genom att ta många små transaktionsavgifter."
     whyvalue: "Varför har bitcoins värde?"
     whatprice: "Vad bestämmer en bitcoins pris?"
-    whatpriceimg1: "Bitcoin pris, 2011 till 2013:"
+    whatpricetxt1: "Priset för en bitcoin styrs utav utbud och efterfrågan. När efterfrågan på bitcoins ökar, ökar priset, och när efterfrågan faller, faller priset. Det finns ett begränsat antal bitcoins i cirkulation och nya bitcoins är skapade med en förutsägbar och minskande hastighet, vilket innebär att efterfrågan måste följa den här nivån av inflation för att hålla priset stabilt. Eftersom Bitcoin fortfarande är en förhållandevis liten marknad jamfört vad det skulle kunna vara, krävs det inte mycket pengar för att påverka priset. Det gör att priset på en bitcoin fortfarande är mycket volatilt."
     worthless: "Kan Bitcoins bli värdelösa?"
+    worthlesstxt1: "Ja. Historien är fylld med valutor som har misslyckats och inte längre används, som <a href=\"https://en.wikipedia.org/wiki/German_gold_mark\">D-Mark</a> under Weimar republiken och mer nyligen <a href=\"https://en.wikipedia.org/wiki/Zimbabwean_dollar\">Zimbabwe dollarn</a>. Tidigare valutor har typiskt misslyckats på grund av extrem inflation av en typ som Bitcoin gör omöjlig. Det finns alltid risk för tekniska misstag, konkurrerande valutor, politiska problem med mera. En enkel tumregel är att ingen valuta ska anses som helt säker från misslyckande eller svåra perioder. Bitcoin har visat sig vara tillförlitlig i flera år sen starten och det finns mycket potential för Bitcoin att fortsätt kunna växa. Däremot finns det ingen som kan förutsäga hur Bitcoins framtid kommer se ut."
     bubble: "Är Bitcoin en \"bubbla\"?"
+    bubbletxt1: "En snabb ökning av priset är inte en bubbla. En artificiell övervärdering som leder till en plötsligt nedåtgående trend är en bubbla. Val gjorda av hundratusentals individer som deltar i handeln med bitcoins får priset att variera medan marknaden söker stabilitet. En anledning till att attityden mot bitcoin kan förändras är förlorandet av förtroende för Bitcoin. Stora skillnader mellan värde och pris som inte är baserade på grunden av Bitcoin-ekonomin kan orsakas av uppmärksamhet i pressen som då kan stimulera spekulativ efterfrågan, rädsla för osäkerhet och girighet."
     ponzi: "Är bitcoin ett Ponzibedrägeri?"
+    ponzitxt1: "Ett Ponzibedrägeri är ett bedrägeri som går ut på att investerarna blir betalda från deras egna investerade pengar, eller andra investerare, istället för vinst gjord av individerna som driver bolaget. Ponzibedrägerier är konstruerade för att kollapsa på bekostnad av de sista investerarna, när det inte finns tillräckligt många nya deltagare."
+    ponzitxt2: "Bitcoin projektet är gratis programvara utan något centralt beslutsorgan. Det finns därav ingen som är i position att ljuga om en investerings avkastning. Precis som andra stora valutor, som t.ex guld, US dollar, euro, yen, etc. så finns det ingen garanterad köpkraft och valutakurserna förändras kontinuerligt. Det innebär att en bitcoins värde är volatilt och ägare av bitcoins kan oförutsägbart både förlora och tjäna pengar. Utöver spekulation är Bitcoin också ett användbart och konkurrenskraftigt betalsystem, som används av tusentals privatpersoner och företag."
     earlyadopter: "Favoriserar Bitcoin orättvist tidiga användare?"
+    earlyadoptertxt1: "Vissa tidiga användare har ett stort antal bitcoins eftersom de tog risken att investera både tid och pengar på en obeprövad teknik som knappt var använd av någon och var mycket svårare att hålla säker. Många tidiga användare spenderade ett stort antal bitcoins ganska många gånger innan de blev värdefulla eller köpte de bara små mängder och gjorde ingen större vinst. Det finns ingen garanti att priset på en bitcoin kommer gå upp eller ner. Det är precis som att investera i en startup som kan antingen stiga i värde om de visar sig värdefulla och populära, eller så slår de aldrig igenom. Bitcoin är fortfarande väldigt ungt och har en väldigt långsiktig design. Det är svårt att föreställa sig hur Bitcoin skulle kunna vara ännu mer partisk till de tidiga användarnas fördel och dagens användare skulle kunna vara de tidiga anvädarna i framtiden."
     finitelimitation: "Kommer inte den finita mängden av bitcoins vara en begränsning?"
+    finitelimitationtxt1: "Bitcoin är unikt på det sätt att det kommer bara skapas 21 miljoner bitcoins någonsin. Det kommer däremot aldrig vara någon begränsande faktor eftersom bitcoins kan bli delade i mindre bitar, som t.ex bits - det går 1 000 000 bits på en bitcoin. Bitcoins kan delas i upp till 8 decimaler (0,000 000 01) och potentiellt ännu mindre delar ifall det skulle krävas i framtiden."
     deflationaryspiral: "Kommer inte Bitcoin utsättas för deflation?"
+    deflationaryspiraltxt1: "Deflationsspiralsteorin säger att ifall priset är förväntat att sjunka, kommer folk skjuta på sina inköp till framtiden för att dra nytta av de sänkta priserna. Fallet i efterfrågan leder till att butiker sänker deras priser för att stimulera efterfrågan, vilket gör problemet värre och leder tillslut till en ekonomisk kris."
+    deflationaryspiraltxt2: "Även fast teorin är ett populärt sätt att rättfärdiga inflation bland centralbanker, så verkar det inte alltid vara sant och är ansett att vara kontroversiellt bland ekonomer. Konsumentelektronik är ett exempel på en marknad där priset konstant faller, men inte är i någon kris. På samma sätt har värdet av bitcoins också ökat över tid, samtidigt som Bitcoin-ekonomin också har vuxit dramatiskt. Eftersom både värdet av valutan har ökat över tid och storleken av Bitcoin-ekonomin var noll år 2009, är Bitcoin ett bevis för att teorin inte alltid stämmer."
+    deflationaryspiraltxt3: "Trots detta är Bitcoin inte avsedd att vara en deflations-valuta. Det är mer korrekt att säga Bitcoin är tänkt att växa i sina tidiga år, och bli stabil i sina senare år. Det ända sättet att mängden Bitcoins i omlopp kan att sjunka är om personer slarvar bort sina plånböcker genom att inte göra säkerhetskopior. Med en stabil monetär bas och en stabil ekonomi, bör värdet på valutan förbli detsamma."
     speculationvolatility: "Är inte spekulation och volatilitet ett problem för Bitcoin?"
     speculationvolatilitytxt1: "Det är lite av ett hönan och ägget problem. För att bitcoins pris ska stabiliseras, behöver ett stor ekonomi utvecklas kring bitcoins med många fler företag och användare. För att en stor ekonomi ska kunna utvecklas måste priset vara stabilt."
+    speculationvolatilitytxt2: "Lyckligtvis påverkar inte volatiliteten de främsta fördelarna med Bitcoin som betalningssystem för att överföra pengar från A till B. Det är möjligt för företag att växla Bitcoin betalningar till sin lokala valuta omedelbart, så att de kan dra nytta av fördelarna med Bitcoin utan att utsättas för prisfluktuationer. Eftersom Bitcoin erbjuder många användbara och unika funktioner och egenskaper, väljer många att använda Bitcoin. Med sådana lösningar och incitament, är det möjligt att Bitcoin kommer att mogna och utvecklas så att prissvängningar blir begränsade."
     buyall: "Vad händer ifall någon köper upp alla existerande bitcoins?"
+    buyalltxt1: "Endast en bråkdel av de bitcoins som någonsin utfärdats finns på marknaden till salu. Bitcoin marknader är konkurrensutsatta, vilket innebär att priset på en bitcoin kommer att stiga eller falla beroende på tillgång och efterfrågan. Dessutom kommer nya bitcoins fortsätta att utfärdas i årtionden framöver. Därför kan inte ens den mest bestämda köparen att kunna köpa alla bitcoins som finns. Marknaderna är dock fortfarande sårbara för prismanipulering och krävs inte betydande belopp för att påverka marknadspriset upp eller ned, och därmed förblir Bitcoin hittills en volatil tillgång."
     bettercurrency: "Vad händer om någon skapar en bättre digital valuta?"
+    bettercurrencytxt1: "Det kan hända. För tillfället, förblir Bitcoin den överlägset mest populära decentraliserade virtuella valutan, men det finns ingen garanti att Bitcoin kommer behålla den positionen. Det finns redan ett antal alternativa valutor inspirerade av Bitcoin. Det är förmodligen korrekt att anta att betydande förbättringar skulle krävas för en ny valuta att passera Bitcoin som den mest etablerade marknaden, även om detta är fortfarande oförutsägbart. Bitcoin kunde också tänkas adoptera förbättringar inspirerade av en konkurrerande valuta så länge det inte ändrar grundläggande delar av protokollet."
     transactions: "Transaktioner"
     tenminutes: "Varför måste jag vänta i 10 minuter?"
     fee: "Hur stor kommer transaktionsavgiften bli?"
@@ -282,9 +401,6 @@ sv:
     list3: "Inga eller låga<br>transaktionsavgifter"
     desc: "Bitcoin använder peer-to-peer teknik för att operera utan någon central myndighet eller bank. Hanteringen av transaktioner och skapandet av bitcoins är utfört gemensamt av nätverket. <b>Bitcoin är öppen källkod, designen är publik, ingen äger Bitcoin och <a href=\"#support-bitcoin#\">alla kan delta</a></b>. Genom dess många unika funktioner kan Bitcoin erbjuda nya spännande användningsområden som tidigare betalningssystem inte har kunnat."
     overview: "Eller få en snabb överblick för"
-    individuals: "Privatpersoner"
-    businesses: "Företag"
-    developers: "Utvecklare"
   innovation:
     title: "Innovation - Bitcoin"
     pagetitle: "Innovation av betalningssystem"
@@ -294,7 +410,6 @@ sv:
     global: "Global tillgänglighet"
     globaltext: "Alla betalningar i världen skulle kunna vara fullständigt interoperabla. Bitcoin tillåter alla banker, företag eller privat personer att säkert skicka och ta emot betalningar var som helst, när som helst med eller utan ett bankkonto. Bitcoin är tillgängligt i ett stort antal länder som fortfarande är utanför de flesta betalningssystem på grund av deras begränsningar. Bitcoin ökar den globala tillgängligheten för handel och det kan hjälpa internationell handel att blomstra."
     cost: "Kostnadseffektivitet"
-    costtext: "Med användandet av kryptografi, så är säkra betalningar möjliga utan långsamma och kostsamma mellanhänder. En Bitcoin-transaktion kan vara mycket billigare än alternativen och kan genomföras på mycket kort tid. Det innebär att Bitcoin har potentialen till att bli ett vanligt sätt att överföra vilken valuta som helst i framtiden. Bitcoin skulle också kunna spela en roll i att minska fattigdomen i många länder genom att kapa de höga transaktionsavgifterna på arbetarnas löner. "
     donation: "Dricks och donationer"
     donationtext: "Bitcoin har varit en speciellt effektiv lösning för att få dricks och donationer. Att skicka en betalning kräver bara ett klick och att ta emot donationer är lika enkelt som att visa en QR-kod. Donationer kan vara publikt synliga, vilket ger ökad transparens för ideella organisationer. I katastrofsituationer skulle Bitcoin-donationer kunna användas för att bidra till snabbare internationell respons."
     crowdfunding: "Crowdfunding"
@@ -316,14 +431,11 @@ sv:
   legal:
     title: "Friskrivningsklausul - Bitcoin"
     pagetitle: "Friskrivningsklausul"
-    termstxt1: "Hemsidan har information och material av generell natur. Information är för bara till för att vara informativ. Hemsidan kan innehålla information som adresserar verkliga eller potentiellt juridiska problem. Informationen ska inte ersätta kvalificerad juridisk rådgivning. Du får inte använda den här hemsidan eller vidarebefordra hemsidan för juridisk rådgivning. Inte på något sätt är ägarna eller de som bidrar till hemsidan ansvariga för de åtgärder, beslut eller åtgärder som vidtagits eller inte vidtagits på grund av denna hemsida. Du agerar på egen risk ifall du agerar eller inte agerar på innehållet av den här hemsidan. Skulle du ta ett beslut att agera eller inte agera, kontakta en licensensierad juridisk rådgivning för den plats du vill ha hjälp."
-    termstxt2: "Hemsidan innehåller översättningar av det engelska innehållet. Dessa översättningar är bara tillgängliga som en bekvämlighet. Ifall det finns innehåll som skiljer sig mellan den engelska versionen och översättningen, så är det den engelska versionen som gäller. Om du hittar några skillnader, rapportera dem snälla på <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a>."
   protect-your-privacy:
     title: "Skydda din integritet - Bitcoin"
     pagetitle: "Skydda din integritet"
     pagedesc: "Bitcoin är ofta uppfattat som ett anonymt betalningsnätverk. Men i verkligheten är Bitcoin antagligen den mest transparenta betalningsnätverket i världen. Samtidigt kan Bitcoin tillhandahålla en accepterbar nivå av integritet, om korrekt använt. <b>Kom alltid ihåg att det är ditt ansvar att adoptera bra rutiner för att säkra din integritet</b>."
     traceable: "Förstå Bitcoins spårbarhet"
-    traceabletxt: "Bitcoin fungerar med en nivå av transparens som tidigare inte har funnits och de flesta är inte vana att hantera det. Alla Bitcoin transaktioner är publika, spårbara och permanent sparade i Bitcoin nätverket. Bitcoin adresser är den enda information som används för att definera var bitcoins finns och var det är skickade. Dessa adresser är skapade privat av varje användares plånbok. Så fort adressen används blir de spårbara tillsammans med historiken av alla transaktioner de är involverade med. Alla kan se <a href=\"https://www.biteasy.com\">saldot och alla transaktioner</a> för alla adresserna. Eftersom användare i vanliga fall avslöjar sin identitet för att kunna ta emot tjänster och varor kan Bitcoin adresser inte vara fullständigt anonyma. Av dessa skäl ska Bitcoin adresser bara användas en gång och användare måste vara noggranna med att inte avslöja sina adresser."
     receive: "Använd nya adresser för att ta emot betalningar"
     receivetxt: "För att skydda din integritet, borde du använda en ny Bitcoin-adress varje gång du tar emot en betalning. Du kan dessutom använda olika plånböcker för olika ändamål. På så sätt kan du isolera dina transaktioner så att det inte är möjligt att associera dem. Personer som skickar dig pengar kan inte se vilka andra Bitcoin adresser du äger och vad du gör med dem. Det är antagligen det viktigaste att tänka på."
     send: "Använd bytadresser när du skickar betalningar"
@@ -342,6 +454,7 @@ sv:
     pagedesc: "Hitta användbara sidor och resurser om Bitcoin."
     useful: "Användbara platser"
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin Wiki</a>"
+    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Kataloger"
     linkwallets: "Plånböcker"
     linkmerchants: "Handlare"
@@ -358,7 +471,7 @@ sv:
     everyday: "Små mängder för vardagsbruk"
     everydaytxt: "En Bitcoin-plånbok är som en plånbok med kontanter. Ifall du inte skulle ha tusentals kronor i plånboken, så ska du nog tänka likadant för din Bitcoin plånbok. Generellt, så är det bra att alltid hålla små belopp av bitcoins på din dator, mobil eller server för vardagligt användande och hålla resten av dina pengar på en säkrare plats."
     online: "Var observant när du använder nättjänster"
-    onlinetxt: "Du ska vara försiktigt med alla tjänster som är designade till att lagra dina pengar på nätet. Många börser och nätplånböcker har tidigare lidit av säkerhetsintrång och sådana tjänster tillhandahåller generellt inte tillräckligt med försäkring och säkerhet, för att lagra dina pengar som på en bank. Du kanske vill använda andra typer av <a href=\"#choose-your-wallet#\">Bitcoin-plånböcker</a>. Annars ska du använda dessa tjänster väldigt försiktigt. Att använda 2-faktorsautensiering är rekommenderat."
+    onlinetxt: "Du ska vara försiktigt med alla tjänster som är designade till att lagra dina pengar på nätet. Många börser och nätplånböcker har tidigare lidit av säkerhetsintrång och sådana tjänster tillhandahåller generellt inte tillräckligt med försäkring och säkerhet, för att lagra dina pengar som på en bank. Du kanske vill använda andra typer av <a href=\"#choose-your-wallet#\">Bitcoin-plånböcker</a>. Annars ska du använda dessa tjänster väldigt försiktigt. Att använda tvåstegsverifiering är rekommenderat."
     backup: "Säkerhetskopiera din plånbok"
     backuptxt: "Om du lagrar dina bitcoins på en säker plats och har fullständiga säkerhetskopior kan det skydda dig mot många datorhaverier och mänskliga misstag. Det kan också möjliggöra en återställning av din plånbok ifall din dator eller mobil blir stulen och din plånbok också är krypterad."
     backupwhole: "Säkerhetskopiera hela din plånbok"
@@ -382,13 +495,11 @@ sv:
     offlinetxtxt2: "Skapa en ny transaktion på datorn som är uppkopplad och spara transaktionen på ett USB-minne."
     offlinetxtxt3: "Signera transaktionen med din offlinedator."
     offlinetxtxt4: "Skicka den signerade transaktionen med den uppkopplade datorn."
-    offlinetxtxt5: "Eftersom datorn som är uppkopplad till nätverket inte kan signera transaktioner, så kan den inte användas till att ta ut några pengar ifall den är komprometterad. <a href=\"https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/\">Armory</a> kan användas för att utföra en offline transaktionssignatur."
     hardwarewallet: "Hårdvaruplånböcker"
     hardwarewallettxt: "Hårdvaruplånböcker är den bästa balansen mellan hög säkerhet och enkelhet att använda. Dessa små enheter är designade från grunden för att vara en Bitcoin-plånbok och inget annat. Ingen mjukvara kan installeras på den, vilket gör dem väldigt säkra mot datasäkerhetshål och tjuvar på nätet. Enheterna tillåter säkerhetkopiering så du kan återställa dina pengar även fast du tappar bort den."
     update: "Se till att din mjukvara alltid är uppdaterad"
     updatetxt: "Användandet av den senaste Bitcoin-mjukvaran tillåter dig att ta del av viktiga stabilitets och säkerhets fixar. Uppdateringar kan förhindra problem av olika allvarlighetsgrad, inkludera nya funktioner och hjälpa dig hålla din plånbok säker. Installera uppdateringar för all annan mjukvara på din dator eller mobil är också viktigt för att hålla din plånbok säker."
     offlinemulti: "Multisignaturer för att skydda mot stöld"
-    offlinemultitxt: "Bitcoin inkluderar en multisignatursfunktion som gör att transaktioner kan begära signaturer från mer än en privat nyckel för att kunna spenderas. Det är förnärvarande bara tillgängligt för tekniskt kunniga användare men bättre tillgänglighet kan förväntas i framtiden. Multisignatur kan t.ex användas för att en organisation ska kunna ge deras medlemmar tillgång till kassan och bara tillåta transaktioner ifall 3 av 5 medlemmar är närvarande. Det kan också tillåta nätplånbokstjänster att dela multi-signatur adresser med deras användare, så att en tjuv skulle behöva tillgång till både din dator och den plånboken som ligger på nätet för att kunna stjäla dina pengar."
     offlinetestament: "Tänk över ditt testamente"
     offlinetestamenttxt: "Dina Bitcoins kan försvinna för evigt om du inte har en plan för dina vänner och din familj ifall något oväntat skulle ske. Saknas information om vart dina plånböcker är lagrade eller om dina lösenord inte är kända av någon så kan inte dina pengar återfås. Att lägga tid på att planera detta kan göra stor skillnad om något oförutsett inträffar."
   support-bitcoin:
@@ -398,13 +509,10 @@ sv:
     use: "Att använda Bitcoin"
     usetxt: "<a href=\"#getting-started#\">Att använda Bitcoin</a> är det första steget att stödja Bitcoin. Det finns säkert många tillfällen där Bitcoin kan förenkla din tillvaro. Du kan acceptera betalningar och göra inköp med Bitcoin."
     node: "Var en del av nätverket"
-    nodetxt: "Du kan bli medlem i Bitcoin-nätverket genom att ha <a href=\"#download#\">fullnodsmjukvaran</a> körande på din dator eller en dedikerad server. Dessa noder säkrar och förmedlar alla användares transaktioner. De är stommen i nätverket."
     mining: "Utvinning"
-    miningtxt: "Du kan börja <a href=\"http://www.bitcoinmining.com/\">utvinna bitcoins</a> för att hjälpa till med prosesseringen av transaktioner. För att skydda nätverket ska du gå med i en <a href=\"http://mempool.info/pools\">mindre utvinningspool</a> och föredra decentraliserade pooler som <a href=\"http://p2pool.in/\">P2Pool</a> eller <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pooler</a> med getblocktemplate (GBT) stöd."
     develop: "Utveckling"
     developtxt: "Bitcoin är gratis och öppen programvara. Så om du är utvecklare kan du använda dina super-krafter till att göra gott och <a href=\"#development#\">förbättra Bitcoin</a>. Eller så kan du bygga nya häftiga tjänster som använder Bitcoin."
     donation: "Donationer"
-    donationtxt: "Den enklaste sättet att bidra är genom att <a href=\"https://bitcoinfoundation.org/about/donate/\">donera</a> några bitcoins till Bitcoin Foundation. Eller så kan du hjälpa till finansiera bitcoin relaterade projekt som du tror kan vara till hjälp i framtiden."
     nonprofit: "Organisationer"
     nonprofittxt: "<a href=\"https://bitcoinfoundation.org/\">Bitcoin Foundation</a> och många andra <a href=\"#community##[community.non-profit]\">ideella organisationer</a> är dedikerade till att skydda och främja Bitcoin. Du kan hjälpa dessa grupper genom att gå med i dem och ta del av deras projekt, diskussioner och evenemang."
     spread: "Sprid det vidate"
@@ -429,7 +537,6 @@ sv:
     block: "Block"
     blocktxt: "Ett block är en <b>post i en kedja av block som innehåller och bekräftar väntande transaktioner</b>. Nya block, omfattande transaktioner, läggs till i slutet av <a href=\"#[vocabulary.blockchain]\">blockkjedjan</a> ungefär var 10:e minut i genomsnitt. Detta sker genom s.k  <a href=\"#[vocabulary.mining]\">utvinning</a>."
     btc: "BTC"
-    btctxt: "BTC är den valutakod som används för Bitcoin. Den kan användas på samma sätt som USD för US Dollar istället för dollartecknet $."
     confirmation: "Bekräftelse"
     confirmationtxt: "Konfirmation betyder att en transaktion har blivit <b>processad av nätverket och det är extremt osannolikt att den kan bli hävd</b>. Transaktioner tar emot en konfirmation när de är inkluderade i ett <a href=\"#vocabulary##[vocabulary.block]\">block</a> och för varje efterföljande block. En enda konfirmation kan anses säker för små värden, dock för lite större belopp som 10000kr är det bättre att vänta på 6 stycken konfirmationer eller fler. Varje konfirmation minskar exponentiellt risken av att transaktionen kan bli hävd."
     cryptography: "Kryptografi"
@@ -463,9 +570,8 @@ sv:
     instant: "Direkta transaktioner är inte lika säkra"
     instanttxt: "En Bitcoin-transaktion är vanligen gjord inom ett par sekunder och börjar bli konfirmerad inom de närmaste 10 minuterna. Under den tiden, så kan en transaktion anses som äkta, men dock fortfarande möjlig att häva. Oärliga användare kan försöka att fuska. Ifall du inte kan vänta på konfirmering, fråga efter en liten transaktions avgift eller använd ett bedrägeridetekteringssystem för okonfirmerade transaktioner, det kan öka säkerheten. För större belopp som 10000kr, kan det vara bra att vänta på 6 konfirmeringar eller fler. Varje transaktion minskar <i>exponentiellt</i> risken för en hävd transaktion."
     experimental: "Bitcoin är fortfarande i experimentstadiet"
-    experimentaltxt: "BItcoin är en experimentell och ny valuta som är under aktiv utveckling. Medan det blir stabilare allt eftersom användningen ökar så bör du komma ihåg att Bitcoin är en ny uppfinning som utforskar idéer som aldrig har prövats förut. Därför kan ingen förutse dess framtid."
+    experimentaltxt: "Bitcoin är en experimentell och ny valuta som är under aktiv utveckling. Medan det blir stabilare allt eftersom användningen ökar så bör du komma ihåg att Bitcoin är en ny uppfinning som utforskar idéer som aldrig har prövats förut. Därför kan ingen förutse dess framtid."
     tax: "Statliga skatter och förordningar"
-    taxtxt: "Bitcoin är inte en officiell valuta. Med det sagt så kräver många stater att du betalar inkomst, lön och försäljningsskatt etc. även för bitcoins. Det är ditt ansvar att du följer de skattelagar och andra lagar som gäller för den region du bor i."
   layout:
     menu-about-us: "Om bitcoin.org"
     menu-bitcoin-for-businesses: Företag
@@ -480,7 +586,9 @@ sv:
     menu-innovation: Innovation
     menu-intro: Introduktion
     menu-legal: "Juridiskt"
+    menu-privacy: "Integritet"
     menu-resources: Resurser
+    menu-stats: "Statistik"
     menu-support-bitcoin: Delta
     menu-vocabulary: Ordlista
     menu-you-need-to-know: "Du måste veta"
@@ -501,6 +609,7 @@ sv:
     how-it-works: hur-det-fungerar
     innovation: innovation
     legal: juridiskt
+    privacy: integritet
     protect-your-privacy: skydda-din-integritet
     resources: resurser
     secure-your-wallet: sakra-din-planbok
@@ -512,6 +621,7 @@ sv:
       non-profit: ideellt
     vocabulary:
       address: adress
+      bit: bit
       bitcoin: bitcoin
       blockchain: blockkedja
       block: block
@@ -547,7 +657,6 @@ sv:
       illegalactivities: ar-bitcoin-anvandbart-for-illegal-aktivitet
       regulated: kan-bitcoin-bli-reglerat
       taxes: hur-fungerar-bitcoin-och-skatt
-      consumer: what-about-bitcoin-and-consumer-protection
       economy: ekonomi
       bitcoinscreated: hur-ar-bitcoin-skapade
       whyvalue: varfor-har-bitcoins-varde
@@ -555,27 +664,10 @@ sv:
       worthless: kan-bitcoins-bli-vardelosa
       bubble: ar-bitcoin-en-bubbla
       ponzi: ar-bitcoin-bitcoin-ett-ponzischema
-      earlyadopter: doesnt-bitcoin-unfairly-benefit-early-adopters
-      finitelimitation: wont-the-finite-amount-of-bitcoins-be-a-limitation
-      deflationaryspiral: wont-bitcoin-fall-in-a-deflationary-spiral
-      speculationvolatility: isnt-speculation-and-volatility-a-problem-for-bitcoin
-      buyall: what-if-someone-bought-up-all-the-existing-bitcoins
-      bettercurrency: what-if-someone-creates-a-better-digital-currency
       transactions: transaktioner
-      tenminutes: why-do-i-have-to-wait-10-minutes
-      fee: how-much-will-the-transaction-fee-be
-      poweredoff: what-if-i-receive-a-bitcoin-when-my-computer-is-powered-off
-      sync: what-does-synchronizing-mean-and-why-does-it-take-so-long
       mining: utvinning
       whatismining: vad-ar-bitcoin-utvinning
-      howminingworks: how-does-bitcoin-mining-work
-      miningwaste: isnt-bitcoin-mining-a-waste-of-energy
-      miningsecure: how-does-mining-help-secure-bitcoin
-      miningstart: vad-behover-jag-for-att-borja-utvinna
       security: sakerhet
       secure: ar-bitcoin-sakert
-      hacked: hasnt-bitcoin-been-hacked-in-the-past
-      collude: could-users-collude-against-bitcoin
-      quantum: is-bitcoin-vulnerable-to-quantum-computing
       help: hjalp
       morehelp: mer-hjalp
