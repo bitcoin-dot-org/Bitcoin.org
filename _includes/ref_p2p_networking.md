@@ -924,7 +924,7 @@ it must be truncated to its four most significant bytes (for example,
 The actual hash function implementation used is the [32-bit Murmur3 hash
 function][murmur3].
 
-![Warning icon](/img/icon_warning.svg)
+![Warning icon](/img/icons/icon_warning.svg)
 **Warning:** the Murmur3 hash function has separate 32-bit and 64-bit
 versions that produce different results for the same input.  Only the
 32-bit Murmur3 version is used with Bitcoin bloom filters.
