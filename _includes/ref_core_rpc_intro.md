@@ -123,17 +123,17 @@ standard arguments:
 | Name                 | Type            | Presence                    | Description
 |----------------------|-----------------|-----------------------------|----------------
 | RPC                  | object          | Required<br>(exactly 1)     | An object containing the standard RPC arguments
-| →`jsonrpc`           | number (float)  | Optional<br>(0 or 1)        | The version of JSON-RPC used.  Bitcoin Core currently ignores this, as it only supports version 1.0.  Default is `1.0`
-| →`id`                | string          | Required<br>(exactly 1)     | An arbitrary string that will be returned when the response is sent.  May be set to an empty string ("")
-| →`method`            | string          | Required<br>(exactly 1)     | The RPC, such as `getbestblockhash`.  See the RPC section for a list of available commands
-| →`params`            | array           | Required<br>(exactly 1)     | An array containing parameters for the RPC.  May be an empty array if allowed by the particular RPC
-| →→Parameter          | *any*           | Optional<br>(0 or more)     | A parameter.  May be any JSON type allowed by the particular RPC
+| → <br>`jsonrpc`      | number (float)  | Optional<br>(0 or 1)        | The version of JSON-RPC used.  Bitcoin Core currently ignores this, as it only supports version 1.0.  Default is `1.0`
+| → <br>`id`           | string          | Required<br>(exactly 1)     | An arbitrary string that will be returned when the response is sent.  May be set to an empty string ("")
+| → <br>`method`       | string          | Required<br>(exactly 1)     | The RPC, such as `getbestblockhash`.  See the RPC section for a list of available commands
+| → <br>`params`       | array           | Required<br>(exactly 1)     | An array containing parameters for the RPC.  May be an empty array if allowed by the particular RPC
+| → → <br>Parameter  | *any*           | Optional<br>(0 or more)     | A parameter.  May be any JSON type allowed by the particular RPC
 
 In table above and in other tables describing JSON-RPC input<!--noref-->
 and output<!--noref-->, we use the following formatting
 
 * "→" to indicate an argument that is the child of a JSON array or
-  JSON object. For example, "→→Parameter" above means Parameter
+  JSON object. For example, "→ → Parameter" above means Parameter
   is the child of the `params` array which itself is a child of the
   RPC array.
 
@@ -192,11 +192,11 @@ The standard JSON-RPC 1.0 result format is described below:
 | Name                 | Type            | Presence                    | Description
 |----------------------|-----------------|-----------------------------|----------------
 | Result               | object          | Required<br>(exactly 1)     | An object describing the results
-| →`result`            | *any*           | Required<br>(exactly 1)     | The results as any JSON data type.  If an error occured, set to `null`
-| →`error`             | null/object     | Required<br>(exactly 1)     | If no error occurred, set to `null`.  If an error occured, an object describing the error
-| →→`code`             | number (int)    | Required<br>(exactly 1)     | The error code as set by the returning function and defined in Bitcoin Core's [rpcprotocol.h][]
-| →→`message`          | string          | Required<br>(exactly 1)     | An attempt to describe the problem in human-readable text.  May be an empty string ("").  Bitcoin Core often returns help text with embedded newline strings ("\n"); `bitcoin-cli` can expand these to actual newlines
-| →`id`                | string          | Required<br>(exactly 1)     | The arbitrary string passed in when the RPC was called
+| → <br>`result`       | *any*           | Required<br>(exactly 1)     | The results as any JSON data type.  If an error occured, set to `null`
+| → <br>`error`        | null/object     | Required<br>(exactly 1)     | If no error occurred, set to `null`.  If an error occured, an object describing the error
+| → → <br>`code`        | number (int)    | Required<br>(exactly 1)     | The error code as set by the returning function and defined in Bitcoin Core's [rpcprotocol.h][]
+| → → <br>`message`     | string          | Required<br>(exactly 1)     | An attempt to describe the problem in human-readable text.  May be an empty string ("").  Bitcoin Core often returns help text with embedded newline strings ("\n"); `bitcoin-cli` can expand these to actual newlines
+| → <br>`id`           | string          | Required<br>(exactly 1)     | The arbitrary string passed in when the RPC was called
 
 For an example of the error output<!--noref-->, here's the result
 after passing an invalid address to the `sendtoaddress` RPC
