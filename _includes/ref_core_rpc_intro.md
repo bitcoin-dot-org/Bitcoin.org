@@ -97,7 +97,7 @@ print "Internal-Byte-Order Hash: ", hash.encode('hex_codec')
 print "RPC-Byte-Order Hash:      ", hash[::-1].encode('hex_codec')
 {% endhighlight %}
 
-### JSON-RPC & Bitcoin-CLI
+### JSON-RPC & bitcoin-cli
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
