@@ -97,13 +97,13 @@
     <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
     {% endcase %}
     {% case page.lang %}
-    {% when 'ar' or 'da' or 'de' or 'es' or 'hu' or 'ro' or 'sl' or 'tr' %}
+    {% when 'ar' or 'da' or 'de' or 'es' or 'hu' or 'sl' or 'tr' %}
     <a href="/en/privacy">Privacy</a>
     {% else %}
     <a href="/{{ page.lang }}/{% translate privacy url %}">{% translate menu-privacy layout %}</a>
     {% endcase %}
     {% case page.lang %}
-    {% when 'de' or 'ro' or 'tr' %}
+    {% when 'de' or 'tr' %}
     <a href="/en/press">Press</a>
     {% else %}
     <a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a>
