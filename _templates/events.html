@@ -37,11 +37,7 @@ L.marker([{{ p.geoloc }}]).bindPopup('<b><a href="{{ p.link | htmlescape }}">{{ 
 map.addLayer(markers);
 </script>
 
-{% case page.lang %}
-{% when 'tr' %}
-{% else %}
 <h2>{% translate upcoming %}</h2>
-{% endcase %}
 <div class="listtable eventtable">
 {% filter_for p in site.conferences sort_by:date %}
   <div><div>{{ p.date | date:"%Y-%m-%d" }}</div><div><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></div><div>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div></div>

@@ -25,12 +25,6 @@
     <div><div>{{ site.ALERT }}</div></div>
   </div>
 {% endif %}
-{% case page.lang %}
-{% when 'tr' %}
-  <div class="banner-message info">
-    <div><div>{% translate banner-translate layout %}</div></div>
-  </div>
-{% endcase %}
   <div class="head"><div>
     <ul class="lang">
       <li><a href="#" onclick="return false;">{{ site.langs[page.lang] }}</a>
@@ -90,20 +84,15 @@
     <div class="footermenu">
     <a href="/en/alerts" class="statusmenu{% if site.STATUS == 1 %} alert{% endif %}">Network Status</a>
     <a href="/stats/">{% translate menu-stats layout %}</a>
-    {% case page.lang %}
-    {% when 'tr' %}
-    <a href="/en/legal">Legal</a>
-    {% else %}
     <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
-    {% endcase %}
     {% case page.lang %}
-    {% when 'ar' or 'da' or 'de' or 'es' or 'hu' or 'sl' or 'tr' %}
+    {% when 'ar' or 'da' or 'de' or 'es' or 'hu' or 'sl' %}
     <a href="/en/privacy">Privacy</a>
     {% else %}
     <a href="/{{ page.lang }}/{% translate privacy url %}">{% translate menu-privacy layout %}</a>
     {% endcase %}
     {% case page.lang %}
-    {% when 'de' or 'tr' %}
+    {% when 'de' %}
     <a href="/en/press">Press</a>
     {% else %}
     <a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a>
