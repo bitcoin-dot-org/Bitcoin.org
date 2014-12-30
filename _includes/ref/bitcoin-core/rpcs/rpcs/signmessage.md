@@ -21,18 +21,21 @@ The `signmessage` RPC {{summary_signMessage}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | Address            | string (base58) | Required<br>(exactly 1)     | A P2PKH address whose private key belongs to this wallet
+{:.ntpd}
 
 *Parameter #2---the message to sign*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | Message            | string          | Required<br>(exactly 1)     | The message to sign
+{:.ntpd}
 
 *Result---the message signature*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | `result`           | string (base64) | Required<br>(exactly 1)     | The signature of the message, encoded in base64.  Note that Bitcoin Core before 0.10.0 creates signatures with random *k* values, so each time you sign the same message, it will create a different signature
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

@@ -20,6 +20,7 @@ The `ping` RPC {{summary_ping-rpc}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | `result`           | null            | Required                    | Always JSON `null`
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

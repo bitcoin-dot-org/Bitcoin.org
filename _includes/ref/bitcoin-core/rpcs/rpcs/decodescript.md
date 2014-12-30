@@ -18,6 +18,7 @@ The `decodescript` RPC {{summary_decodeScript}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | Redeem Script      | string (hex)    | Required<br>(exactly 1)     | The redeem script to decode as a hex-encoded serialized script
+{:.ntpd}
 
 *Result---the decoded script*
 
@@ -30,6 +31,7 @@ The `decodescript` RPC {{summary_decodeScript}}
 | →<br>`addresses`   | array           | Optional<br>(0 or 1)        | A P2PKH addresses used in this script, or the computed P2PKH addresses of any pubkeys in this script.  This array will not be returned for `nonstandard` script types
 | → →<br>Address     | string          | Required<br>(1 or more)     | A P2PKH address
 | →<br>`p2sh`        | string (hex)    | Required<br>(exactly 1)     | The P2SH address of this redeem script
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

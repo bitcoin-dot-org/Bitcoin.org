@@ -23,6 +23,7 @@ The `getnettotals` RPC {{summary_getNetTotals}}
 | →<br>`totalbytesrecv` | number (int)    | Required<br>(exactly 1)     | The total number of bytes received since the node was last restarted
 | →<br>`totalbytessent` | number (int)    | Required<br>(exactly 1)     | The total number of bytes sent since the node was last restarted
 | →<br>`timemillis`     | number (int)    | Required<br>(exactly 1)     | Unix epoch time in milliseconds according to the operating system's clock (not the node adjusted time)
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

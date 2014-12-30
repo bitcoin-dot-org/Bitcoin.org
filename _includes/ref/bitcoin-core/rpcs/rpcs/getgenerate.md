@@ -22,6 +22,7 @@ The `getgenerate` RPC {{summary_getGenerate}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | `result`           | bool            | Required<br>(exactly 1)     | Set to `true` if the server is set to generate blocks; set to `false` if it is not
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

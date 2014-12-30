@@ -25,36 +25,42 @@ account a balance that may exceed the number of bitcoins in the wallet
 | Name                 | Type            | Presence                    | Description
 |----------------------|-----------------|-----------------------------|----------------
 | From Account         | string          | Required<br>(exactly 1)     | The name of the account to move the funds from
+{:.ntpd}
 
 *Parameter #2---to account*
 
 | Name                 | Type            | Presence                    | Description
 |----------------------|-----------------|-----------------------------|----------------
 | To Account           | string          | Required<br>(exactly 1)     | The name of the account to move the funds to
+{:.ntpd}
 
 *Parameter #3---amount to move*
 
 | Name                 | Type              | Presence                    | Description
 |----------------------|-------------------|-----------------------------|----------------
 | Amount               | number (bitcoins) | Required<br>(exactly 1)     | The amount of bitcoins to move
+{:.ntpd}
 
 *Parameter #4---an unused parameter*
 
 | Name                 | Type            | Presence                    | Description
 |----------------------|-----------------|-----------------------------|----------------
 | *Unused*             | number (int)    | Optional<br>(0 or 1)        | This parameter is no longer used. If parameter #5 needs to be specified, this can be any integer
+{:.ntpd}
 
 *Parameter #5---a comment*
 
 | Name                 | Type            | Presence                    | Description
 |----------------------|-----------------|-----------------------------|----------------
 | Comment              | string          | Optional<br>(0 or 1)        | A comment to assign to this move payment
+{:.ntpd}
 
 *Result---`true` on success*
 
 | Name                 | Type            | Presence                    | Description
 |----------------------|-----------------|-----------------------------|----------------
 | `result`             | bool            | Required<br>(exactly 1)     | Set to `true` if the move was successful
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

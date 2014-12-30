@@ -25,6 +25,7 @@ The `listlockunspent` RPC {{summary_listLockUnspent}}
 | →<br>Output        | object          | Optional<br>(1 or more)     | An object describing a particular locked output
 | → →<br>`txid`      | string (hex)    | Required<br>(exactly 1)     | The TXID of the transaction containing the locked output, encoded as hex in RPC byte order
 | → →<br>`vout`      | number (int)    | Required<br>(exactly 1)     | The output index number (vout) of the locked output within the transaction.  Output index `0` is the first output within the transaction
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

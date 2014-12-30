@@ -18,6 +18,7 @@ The `gettxout` RPC {{summary_getTxOut}}
 | Name             | Type            | Presence                    | Description
 |------------------|-----------------|-----------------------------|----------------
 | TXID             | string (hex)    | Required<br>(exactly 1)     | The TXID of the transaction containing the output to get, encoded as hex in RPC byte order
+{:.ntpd}
 
 
 *Parameter #2---the output index number (vout) of the output to get*
@@ -25,12 +26,14 @@ The `gettxout` RPC {{summary_getTxOut}}
 | Name             | Type            | Presence                    | Description
 |------------------|-----------------|-----------------------------|----------------
 | Vout             | number (int)    | Required<br>(exactly 1)     | The output index number (vout) of the output within the transaction; the first output in a transaction is vout 0
+{:.ntpd}
 
 *Parameter #3---whether to display unconfirmed outputs from the memory pool*
 
 | Name             | Type            | Presence                    | Description
 |------------------|-----------------|-----------------------------|----------------
 | Unconfirmed      | bool            | Optional<br>(0 or 1)        | Set to `true` to display unconfirmed outputs from the memory pool; set to `false` (the default) to only display outputs from confirmed transactions
+{:.ntpd}
 
 *Result---a description of the output*
 
@@ -49,6 +52,7 @@ The `gettxout` RPC {{summary_getTxOut}}
 | → → →<br>Address     | string            | Required<br>(1 or more)     | A P2PKH or P2SH address
 | →<br>`version`       | number (int)      | Required<br>(exactly 1)     | The transaction version number of the transaction containing the pubkey script
 | →<br>`coinbase`      | bool              | Required<br>(exactly 1)     | Set to `true` if the transaction output belonged to a coinbase transaction; set to `false` for all other transactions.  Coinbase transactions need to have 101 confirmations before their outputs can be spent
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

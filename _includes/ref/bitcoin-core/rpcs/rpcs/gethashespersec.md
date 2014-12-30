@@ -22,6 +22,7 @@ The `gethashespersec` RPC {{summary_getHashesPerSec}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | `result`           | number (int)    | Required<br>(exactly 1)     | If generation is enabled, the number of hashes per second your computer most recently generated.  If generation is disabled, the value `0`
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

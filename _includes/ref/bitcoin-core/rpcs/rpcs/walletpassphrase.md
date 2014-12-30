@@ -24,18 +24,21 @@ value of the passphrase parameter).
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | Passphrase         | string          | Required<br>(exactly 1)     | The passphrase that unlocks the wallet
+{:.ntpd}
 
 *Parameter #2---the number of seconds to leave the wallet unlocked*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | Seconds            | number (int)    | Required<br>(exactly 1)     | The number of seconds after which the decryption key will be automatically deleted from memory
+{:.ntpd}
 
 *Result---`null` on success*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | `result`           | null            | Required<br>(exactly 1)     | Always set to JSON `null`
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

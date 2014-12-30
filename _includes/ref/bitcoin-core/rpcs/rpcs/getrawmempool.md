@@ -18,6 +18,7 @@ The `getrawmempool` RPC {{summary_getRawMemPool}}
 | Name             | Type            | Presence                    | Description
 |------------------|-----------------|-----------------------------|----------------
 | Format           | bool            | Optional<br>(0 or 1)        | Set to `true` to get verbose output describing each transaction in the memory pool; set to `false` (the default) to only get an array of TXIDs for transactions in the memory pool
+{:.ntpd}
 
 *Result (format `false`)---an array of TXIDs*
 
@@ -25,6 +26,7 @@ The `getrawmempool` RPC {{summary_getRawMemPool}}
 |------------------|-----------------|-----------------------------|----------------
 | `result`         | array           | Required<br>(exactly 1)     | An array of TXIDs belonging to transactions in the memory pool.  The array may be empty if there are no transactions in the memory pool
 | →<br>TXID        | string          | Optional<br>(0 or more)     | The TXID of a transaction in the memory pool, encoded as hex in RPC byte order
+{:.ntpd}
 
 *Result (format: `true`)---a JSON object describing each transaction*
 
@@ -40,6 +42,7 @@ The `getrawmempool` RPC {{summary_getRawMemPool}}
 | → →<br>`currentpriority`  | number (int)      | Required<br>(exactly 1)     | The current priority of the transaction
 | → →<br>`depends`          | array             | Required<br>(exactly 1)     | An array holding TXIDs of unconfirmed transactions this transaction depends upon.  Those transactions must be part of a block before this transaction can be added to a block, although all transactions may be included in the same block.  The array may be empty
 | → → →<br>Depends TXID     | string            | Optional (0 or more)        | The TXIDs of any unconfirmed transactions this transaction depends upon, encoded as hex in RPC byte order
+{:.ntpd}
 
 *Examples from Bitcoin Core 0.10.0*
 

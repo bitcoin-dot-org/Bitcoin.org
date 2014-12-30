@@ -24,6 +24,7 @@ The `listreceivedbyaccount` RPC {{summary_listReceivedByAccount}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | Include Empty      | bool            | Optional<br>(0 or 1)        | Set to `true` to display accounts which have never received a payment.  Set to `false` (the default) to only include accounts which have received a payment.  Any account which has received a payment will be displayed even if its current balance is `0`
+{:.ntpd}
 
 *Parameter #3---whether to include watch-only addresses in results*
 
@@ -39,6 +40,7 @@ The `listreceivedbyaccount` RPC {{summary_listReceivedByAccount}}
 | → →<br>`account`           | string            | Required<br>(exactly 1)     | The name of the account
 | → →<br>`amount`<!--noref-->| number (bitcoins) | Required<br>(exactly 1)     | The total amount received by this account in bitcoins
 | → →<br>`confirmations`     | number (int)      | Required<br>(exactly 1)     | The number of confirmations received by the last transaction received by this account.  May be `0`
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

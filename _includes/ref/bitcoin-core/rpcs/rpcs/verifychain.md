@@ -18,18 +18,21 @@ The `verifychain` RPC {{summary_verifyChain}}
 | Name             | Type            | Presence                    | Description
 |------------------|-----------------|-----------------------------|----------------
 | Check Level      | number (int)    | Optional<br>(0 or 1)        | How thoroughly to check each block, from 0 to 4.  Default is the level set with the `-checklevel` command line argument; if that isn't set, the default is `3`.  Each higher level includes the tests from the lower levels<br><br>Levels are:<br>**0.** Read from disk to ensure the files are accessible<br>**1.**  Ensure each block is valid<br>**2.** Make sure undo files can be read from disk and are in a valid format<br>**3.** Test each block undo to ensure it results in correct state<br>**4.** After undoing blocks, reconnect them to ensure they reconnect correctly
+{:.ntpd}
 
 *Parameter #2---the number of blocks to check*
 
 | Name             | Type            | Presence                    | Description
 |------------------|-----------------|-----------------------------|----------------
 | Number Of Blocks | number (int)    | Optional<br>(0 or 1)        | The number of blocks to verify.  Set to `0` to check all blocks.  Defaults to the value of the `-checkblocks` command-line argument; if that isn't set, the default is `288`
+{:.ntpd}
 
 *Result---verification results*
 
 | Name             | Type            | Presence                    | Description
 |------------------|-----------------|-----------------------------|----------------
 | `result`         | bool            | Required<br>(exactly 1)     | Set to `true` if verified; set to `false` if verification failed for any reason
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

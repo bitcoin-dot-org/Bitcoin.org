@@ -131,6 +131,7 @@ standard arguments:
 | → <br>`method`       | string          | Required<br>(exactly 1)     | The RPC, such as `getbestblockhash`.  See the RPC section for a list of available commands
 | → <br>`params`       | array           | Required<br>(exactly 1)     | An array containing parameters for the RPC.  May be an empty array if allowed by the particular RPC
 | → → <br>Parameter  | *any*           | Optional<br>(0 or more)     | A parameter.  May be any JSON type allowed by the particular RPC
+{:.ntpd}
 
 In table above and in other tables describing JSON-RPC input<!--noref-->
 and output<!--noref-->, we use the following formatting
@@ -200,6 +201,7 @@ The standard JSON-RPC 1.0 result format is described below:
 | → → <br>`code`        | number (int)    | Required<br>(exactly 1)     | The error code as set by the returning function and defined in Bitcoin Core's [rpcprotocol.h][]
 | → → <br>`message`     | string          | Required<br>(exactly 1)     | An attempt to describe the problem in human-readable text.  May be an empty string ("").  Bitcoin Core often returns help text with embedded newline strings ("\n"); `bitcoin-cli` can expand these to actual newlines
 | → <br>`id`           | string          | Required<br>(exactly 1)     | The arbitrary string passed in when the RPC was called
+{:.ntpd}
 
 For an example of the error output<!--noref-->, here's the result
 after passing an invalid address to the `sendtoaddress` RPC

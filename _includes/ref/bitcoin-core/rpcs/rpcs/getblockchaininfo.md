@@ -29,6 +29,7 @@ The `getblockchaininfo` RPC {{summary_getBlockChainInfo}}
 | →<br>`difficulty`           | number (real)     | Required<br>(exactly 1) | The difficulty of the highest-height block in the best block chain
 | →<br>`verificationprogress` | number (real)     | Required (exactly 1)    | Estimate of what percentage of the block chain transactions have been verified so far, starting at 0.0 and increasing to 1.0 for fully verified.  May slightly exceed 1.0 when fully synced to account for transactions in the memory pool which have been verified before being included in a block
 | →<br>`chainwork`            | string (hex)      | Required<br>(exactly 1) | The estimated number of block header hashes checked from the genesis block to this block, encoded as big-endian hex
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

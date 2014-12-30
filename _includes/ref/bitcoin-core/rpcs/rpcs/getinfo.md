@@ -39,6 +39,7 @@ Core.  Use the RPCs listed in the See Also subsection below instead.
 | →<br>`relayfee`        | number (bitcoins) | Required<br>(exactly 1)     | The minimum fee a low-priority transaction must pay in order for this node to accept it into its memory pool
 | →<br>`unlocked_until`  | number (int)      | Optional<br>(0 or 1)        | The Unix epoch time when the wallet will automatically re-lock.  Only displayed if wallet encryption is enabled.  Set to `0` if wallet is currently locked
 | →<br>`errors`          | string            | Required<br>(exactly 1)     | A plain-text description of any errors this node has encountered or detected.  If there are no errors, an empty string will be returned.  This is not related to the JSON-RPC `error` field
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0 with wallet support enabled*
 

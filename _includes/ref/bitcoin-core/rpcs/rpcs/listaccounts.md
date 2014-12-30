@@ -29,6 +29,7 @@ The `listaccounts` RPC {{summary_listAccounts}}
 |--------------------|-----------------|-----------------------------|----------------
 | `result`           | object          | Required<br>(exactly 1)     | A JSON array containing key/value pairs with account names and values.  Must include, at the very least, the default account ("")
 | →<br>Account : Balance | string : number (bitcoins) | Required<br>(1 or more) | The name of an account as a string paired with the balance of the account as a number of bitcoins.  The number of bitcoins may be negative if the account has spent more bitcoins than it received.  Accounts with zero balances and zero transactions will be displayed
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

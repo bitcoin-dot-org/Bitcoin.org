@@ -20,12 +20,14 @@ The `listsinceblock` RPC {{summary_listSinceBlock}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | Header Hash        | string (hex)    | Optional<br>(0 or 1)        | The hash of a block header encoded as hex in RPC byte order.  All transactions affecting the wallet which are not in that block or any earlier block will be returned, including unconfirmed transactions.  Default is the hash of the genesis block, so all transactions affecting the wallet are returned by default
+{:.ntpd}
 
 *Parameter #2---the target confirmations for the lastblock field*
 
 | Name                 | Type            | Presence                    | Description
 |----------------------|-----------------|-----------------------------|----------------
 | Target Confirmations | number (int)    | Optional<br>(0 or 1)        | Sets the lastblock field of the results to the header hash of a block with this many confirmations.  This does not affect which transactions are returned.  Default is `1`, so the hash of the most recent block on the local best block chain is returned
+{:.ntpd}
 
 *Parameter #3---whether to include watch-only addresses in details and calculations*
 
@@ -44,6 +46,7 @@ The `listsinceblock` RPC {{summary_listSinceBlock}}
 {{INCLUDE_F_LIST_TRANSACTIONS}}
 {{INCLUDE_F_LIST_TRANSACTIONS_F_FULL}}
 | →<br>`lastblock`     | string (hex)    | Required<br>(exactly 1)     | The header hash of the block with the number of confirmations specified in the *target confirmations* parameter, encoded as hex in RPC byte order
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

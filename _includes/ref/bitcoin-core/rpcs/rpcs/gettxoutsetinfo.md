@@ -27,6 +27,7 @@ The `gettxoutsetinfo` RPC {{summary_getTxOutSetInfo}}
 | →<br>`bytes_serialized` | number (int)      | Required<br>(exactly 1)     | The size of the serialized UTXO set in bytes; not counting overhead, this is the size of the `chainstate` directory in the Bitcoin Core configuration directory
 | →<br>`hash_serialized`  | string (hex)      | Required<br>(exactly 1)     | A SHA256(SHA256()) hash of the serialized UTXO set; useful for comparing two nodes to see if they have the same set (they should, if they always used the same serialization format and currently have the same best block).  The hash is encoded as hex in RPC byte order
 | →<br>`total_amount`     | number (bitcoins) | Required<br>(exactly 1)     | The total number of bitcoins in the UTXO set
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

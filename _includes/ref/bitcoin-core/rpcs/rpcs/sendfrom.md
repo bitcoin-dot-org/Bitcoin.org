@@ -21,18 +21,21 @@ The `sendfrom` RPC {{summary_sendFrom}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | From Account       | string          | Required<br>(exactly 1)     | The name of the account from which the bitcoins should be spent.  Use an empty string ("") for the default account
+{:.ntpd}
 
 *Parameter #2---to address*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | To Address         | string          | Required<br>(exactly 1)     | A P2PKH or P2SH address to which the bitcoins should be sent
+{:.ntpd}
 
 *Parameter #3---amount to spend*
 
 | Name               | Type              | Presence                    | Description
 |--------------------|-------------------|-----------------------------|---------------
 | Amount             | number (bitcoins) | Required<br>(exactly 1)     | The amount to spend in bitcoins.  Bitcoin Core will ensure the account has sufficient bitcoins to pay this amount (but the transaction fee paid is not included in the calculation, so an account can spend a total of its balance plus the transaction fee)
+{:.ntpd}
 
 *Parameter #4---minimum confirmations*
 
@@ -43,18 +46,21 @@ The `sendfrom` RPC {{summary_sendFrom}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | Comment            | string          | Optional<br>(0 or 1)        | A locally-stored (not broadcast) comment assigned to this transaction.  Default is no comment
+{:.ntpd}
 
 *Parameter #6---a comment about who the payment was sent to*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | Comment To         | string          | Optional<br>(0 or 1)        | A locally-stored (not broadcast) comment assigned to this transaction.  Meant to be used for describing who the payment was sent to. Default is no comment
+{:.ntpd}
 
 *Result---a TXID of the sent transaction*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | `result`           | string          | Required<br>(exactly 1)     | The TXID of the sent transaction, encoded as hex in RPC byte order
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

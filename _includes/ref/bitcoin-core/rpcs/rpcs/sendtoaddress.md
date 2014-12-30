@@ -21,30 +21,35 @@ The `sendtoaddress` RPC {{summary_sendToAddress}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | To Address         | string          | Required<br>(exactly 1)     | A P2PKH or P2SH address to which the bitcoins should be sent
+{:.ntpd}
 
 *Parameter #2---amount to spend*
 
 | Name               | Type              | Presence                    | Description
 |--------------------|-------------------|-----------------------------|---------------
 | Amount             | number (bitcoins) | Required<br>(exactly 1)     | The amount to spent in bitcoins
+{:.ntpd}
 
 *Parameter #3---a comment*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | Comment            | string          | Optional<br>(0 or 1)        | A locally-stored (not broadcast) comment assigned to this transaction.  Default is no comment
+{:.ntpd}
 
 *Parameter #4---a comment about who the payment was sent to*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | Comment To         | string          | Optional<br>(0 or 1)        | A locally-stored (not broadcast) comment assigned to this transaction.  Meant to be used for describing who the payment was sent to. Default is no comment
+{:.ntpd}
 
 *Result---a TXID of the sent transaction*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | `result`           | string          | Required<br>(exactly 1)     | The TXID of the sent transaction, encoded as hex in RPC byte order
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

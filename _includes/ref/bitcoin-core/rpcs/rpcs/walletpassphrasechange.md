@@ -24,18 +24,21 @@ value of the passphrase parameter).
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | Current Passphrase | string          | Required<br>(exactly 1)     | The current wallet passphrase
+{:.ntpd}
 
 *Parameter #2---the new passphrase*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | New Passphrase     | string          | Required<br>(exactly 1)     | The new passphrase for the wallet
+{:.ntpd}
 
 *Result---`null` on success*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | `result`           | null            | Required<br>(exactly 1)     | Always set to JSON `null`
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

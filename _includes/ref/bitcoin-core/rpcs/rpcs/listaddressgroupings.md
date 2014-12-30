@@ -27,6 +27,7 @@ The `listaddressgroupings` RPC {{summary_listAddressGroupings}}
 | → → →<br>Address       | string (base58)   | Required<br>(exactly 1)     | The address in base58check format
 | → → →<br>Balance       | number (bitcoins) | Required<br>(exactly 1)     | The current spendable balance of the address, not counting unconfirmed transactions
 | → → →<br>Account       | string            | Optional<br>(0 or 1)        | The account the address belongs to, if any.  This field will not be returned for change addresses.  The default account is an empty string ("")
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

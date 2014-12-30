@@ -18,18 +18,21 @@ The `sendrawtransaction` RPC {{summary_sendRawTransaction}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | Transaction        | string (hex)    | Required<br>(exactly 1)     | The serialized transaction to broadcast encoded as hex
+{:.ntpd}
 
 *Parameter #2--whether to allow high fees**
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | Allow High Fees    | bool            | Optional<br>(0 or 1)        | Set to `true` to allow the transaction to pay a high transaction fee.  Set to `false` (the default) to prevent Bitcoin Core from broadcasting the transaction if it includes a high fee.  Transaction fees are the sum of the inputs minus the sum of the outputs, so this high fees check helps ensures user including a change address to return most of the difference back to themselves
+{:.ntpd}
 
 *Result---a TXID or error message*
 
 | Name               | Type              | Presence                    | Description
 |--------------------|-------------------|-----------------------------|----------------
 | `result`           | null/string (hex) | Required<br>(exactly 1)     | If the transaction was accepted by the node for broadcast, this will be the TXID of the transaction encoded as hex in RPC byte order.  If the transaction was rejected by the node, this will set to `null`, the JSON-RPC error field will be set to a code, and the JSON-RPC message field may contain an informative error message
+{:.ntpd}
 
 *Examples from Bitcoin Core 0.10.0*
 

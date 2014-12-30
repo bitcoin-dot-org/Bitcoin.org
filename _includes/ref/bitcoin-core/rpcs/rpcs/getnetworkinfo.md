@@ -41,6 +41,7 @@ The `getnetworkinfo` RPC {{summary_getNetworkInfo}}
 | → → → → →<br>`address`    | string            | Required<br>(exactly 1)     | An IP address or .onion address this node believes it listens on.  This may be manually configured, auto detected, or based on `version` messages this node received from its peers
 | → → → → →<br>`port`       | number (int)      | Required<br>(exactly 1)     | The port number this node believes it listens on for the associated `address`.  This may be manually configured, auto detected, or based on `version` messages this node received from its peers
 | → → → → →<br>`score`      | number (int)      | Required<br>(exactly 1)     | The self-assigned score this node gives to this connection; higher scores means the node thinks this connection is better <!-- SOMEDAY: figure out scores -->
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

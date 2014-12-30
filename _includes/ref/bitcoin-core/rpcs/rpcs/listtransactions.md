@@ -20,18 +20,21 @@ The `listtransactions` RPC {{summary_listTransactions}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | Account            | string          | Optional<br>(0 or 1)        | The name of an account to get transactinos from.  Use an empty string ("") to get transactions for the default account.  Default is `*` to get transactions for all accounts
+{:.ntpd}
 
 *Parameter #2---the number of transactions to get*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | Count              | number (int)    | Optional<br>(0 or 1)        | The number of the most recent transactions to list.  Default is `10`
+{:.ntpd}
 
 *Parameter #3---the number of transactions to skip*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | Skip               | number (int)    | Optional<br>(0 or 1)        | The number of the most recent transactions which should not be returned.  Allows for pagination of results.  Default is `0`
+{:.ntpd}
 
 *Parameter #4---whether to include watch-only addresses in details and calculations*
 
@@ -62,6 +65,7 @@ The `listtransactions` RPC {{summary_listTransactions}}
 | → →<br>`comment`         | string           | Optional<br>(0 or 1)        | For transaction originating with this wallet, a locally-stored comment added to the transaction.  Only returned in regular payments if a comment was added.  Always returned in *move* category payments.  May be an empty string
 | → →<br>`to`              | string           | Optional<br>(0 or 1)        | For transaction originating with this wallet, a locally-stored comment added to the transaction identifying who the transaction was sent to.  Only returned if a comment-to was added.  Never returned by *move* category payments.  May be an empty string
 | → →<br>`otheraccount`    | string           | Optional<br>(0 or 1)        | Only returned by *move* category payments.  This is the account the bitcoins were moved from or moved to, as indicated by a negative or positive *amount* field in this payment
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

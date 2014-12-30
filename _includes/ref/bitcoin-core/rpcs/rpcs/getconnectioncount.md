@@ -20,6 +20,7 @@ The `getconnectioncount` RPC {{summary_getConnectionCount}}
 | Name             | Type            | Presence                    | Description
 |------------------|-----------------|-----------------------------|----------------
 | `result`         | number (int)    | Required<br>(exactly 1)     | The total number of connections to other nodes (both inbound and outbound)
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

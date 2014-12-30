@@ -18,6 +18,7 @@ The `validateaddress` RPC {{summary_validateAddress}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | Address            | string (base58) | Required<br>(exactly 1) | The P2PKH or P2SH address to validate encoded in base58check format
+{:.ntpd}
 
 *Result---information about the address*
 
@@ -37,6 +38,7 @@ The `validateaddress` RPC {{summary_validateAddress}}
 | →<br>`pubkey`       | string (hex)    | Optional<br>(0 or 1)        | The public key corresponding to this address.  Only returned if the address is a P2PKH address in the wallet
 | →<br>`iscompressed` | bool            | Optional<br>(0 or 1)        | Set to `true` if a compressed public key or set to `false` if an uncompressed public key.  Only returned if the address is a P2PKH address in the wallet
 | →<br>`account`      | string          | Optional<br>(0 or 1)        | The account this address belong to.  May be an empty string for the default account.  Only returned if the address belongs to the wallet
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

@@ -32,6 +32,7 @@ The `getmininginfo` RPC {{summary_getMiningInfo}}
 | →<br>`chain`            | string            | Required<br>(exactly 1)     | Set to `main` for mainnet, `test` for testnet, and `regtest` for regtest
 | →<br>`generate`         | bool              | Optional<br>(0 or 1)        | Set to `true` if generation is currently enabled; set to `false` if generation is currently disabled.  Only returned if the node has wallet support enabled
 | →<br>`hashespersec`     | number (int)      | Optional<br>(0 or 1)        | The approximate number of hashes per second this node is generating across all CPUs, if generation is enabled.  Otherwise `0`.  Only returned if the node has wallet support enabled
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

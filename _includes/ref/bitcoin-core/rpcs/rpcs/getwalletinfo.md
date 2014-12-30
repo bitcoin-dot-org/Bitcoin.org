@@ -28,6 +28,7 @@ The `getwalletinfo` RPC {{summary_getWalletInfo}}
 | →<br>`keypoololdest`  | number (int)      | Required<br>(exactly 1)     | The date as Unix epoch time when the oldest key in the wallet key pool was created; useful for only scanning blocks created since this date for transactions
 | →<br>`keypoolsize`    | number (int)      | Required<br>(exactly 1)     | The number of keys in the wallet keypool
 | →<br>`unlocked_until` | number (int)      | Optional<br>(0 or 1)        | Only returned if the wallet was encrypted with the `encryptwallet` RPC. A Unix epoch date when the wallet will be locked, or `0` if the wallet is currently locked
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

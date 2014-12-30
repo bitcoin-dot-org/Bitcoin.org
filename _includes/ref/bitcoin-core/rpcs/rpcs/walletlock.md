@@ -22,6 +22,7 @@ The `walletlock` RPC {{summary_walletLock}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | `result`           | null            | Required<br>(exactly 1)     | Always set to JSON `null`
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

@@ -43,6 +43,7 @@ The `getpeerinfo` RPC {{summary_getPeerInfo}}
 | → →<br>`inflight`       | array             | Required<br>(exactly 1)     | *Added in Bitcoin Core 0.10.0*<br><br>An array of blocks which have been requested from this peer.  May be empty
 | → → →<br>Blocks         | number (int)      | Optional<br>(0 or more)     | The height of a block being requested from the remote peer
 | → →<br>`whitelisted`    | bool              | Required<br>(exactly 1)     | *Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the remote peer has been whitelisted; otherwise, set to `false`.  Whitelisted peers will not be banned if their ban score exceeds the maximum (100 by default).  By default, peers connecting from localhost are whitelisted
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

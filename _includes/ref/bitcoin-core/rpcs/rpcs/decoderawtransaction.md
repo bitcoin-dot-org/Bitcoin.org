@@ -18,6 +18,7 @@ The `decoderawtransaction` RPC {{summary_decodeRawTransaction}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | Serialized Transaction | string (hex) | Required<br>(exactly 1)    | The transaction to decode in serialized transaction format
+{:.ntpd}
 
 *Result---the decoded transaction*
 
@@ -25,6 +26,7 @@ The `decoderawtransaction` RPC {{summary_decodeRawTransaction}}
 |--------------------|-----------------|-----------------------------|----------------
 | `result`           | object          | Required<br>(exactly 1)     | An object describing the decoded transaction, or JSON `null` if the transaction could not be decoded
 {{INCLUDE_DECODE_RAW_TRANSACTION}}
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

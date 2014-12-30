@@ -122,7 +122,7 @@ check-for-broken-kramdown-tables:
 ## Kramdown tables are easy to break. When broken, they produce a
 ## paragraph starting with a | (pipe). I can't imagine any reason we'd
 ## have a regular paragraph starting with a pipe, so error on any occurences.
-	$S grep '<p>|' _site/en/developer-* | eval $(ERROR_ON_OUTPUT)
+	$S grep '<p[^>]*>|' _site/en/developer-* | eval $(ERROR_ON_OUTPUT)
 
 
 check-for-duplicate-header-ids:
@@ -170,7 +170,8 @@ check-for-missing-rpc-summaries:
 ## Make sure the Quick Reference section has a summary for each RPC we
 ## have documented
 	$S for f in _includes/ref/bitcoin-core/rpcs/rpcs/*.md ;\
-	do grep -q "\[$$( grep '^##### ' $$f | sed 's/^##### *\([a-zA-Z]*\).*/\1/')\]\[" _includes/ref/bitcoin-core/rpcs/quick-ref.md || echo "missing summary for $$f" \
+	do grep -q "\[$$( grep '^##### ' $$f | sed 's/^##### *\([a-zA-Z]*\).*/\1/')\]\[" _includes/ref/bitcoin-core/rpcs/quick-ref.md \
+	|| echo 'missing summary for '$$f', you need to add the summary to _includes/ref/bitcoin-core/rpcs/quick-ref.md and run make manual-updates' \
 	; done | eval $(ERROR_ON_OUTPUT)
 
 manual-update-summaries-file:

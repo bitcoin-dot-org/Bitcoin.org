@@ -21,12 +21,14 @@ The `importwallet` RPC {{summary_importWallet}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | Filename           | string          | Required<br>(exactly 1)     | The file to import.  The path is relative to Bitcoin Core's working directory
+{:.ntpd}
 
 *Result---`null` on success*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | `result`           | null            | Required<br>(exactly 1)     | If all the keys in the file are added to the wallet (or are already part of the wallet), JSON `null` will be returned
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

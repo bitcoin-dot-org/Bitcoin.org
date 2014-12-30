@@ -22,6 +22,7 @@ The `getunconfirmedbalance` RPC {{summary_getUnconfirmedBalance}}
 | Name               | Type              | Presence                    | Description
 |--------------------|-------------------|-----------------------------|----------------
 | `result`           | number (bitcoins) | Required<br>(exactly 1)     | The total number of bitcoins paid to this wallet in unconfirmed transactions
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

@@ -20,6 +20,7 @@ The `getreceivedbyaccount` RPC {{summary_getReceivedByAccount}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | Account            | string          | Required<br>(exactly 1)     | The name of the account containing the addresses to get.  For the default account, use an empty string ("")
+{:.ntpd}
 
 *Parameter #2---the minimum number of confirmations*
 
@@ -30,6 +31,7 @@ The `getreceivedbyaccount` RPC {{summary_getReceivedByAccount}}
 | Name               | Type              | Presence                    | Description
 |--------------------|-------------------|-----------------------------|----------------
 | `result`           | number (bitcoins) | Required<br>(exactly 1)     | The number of bitcoins received by the account.  May be `0`
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

@@ -18,12 +18,14 @@ The `getaddednodeinfo` RPC {{summary_getAddedNodeInfo}}
 | Name             | Type         | Presence                    | Description
 |------------------|--------------|-----------------------------|----------------
 | Details          | bool         | Required<br>(exactly 1)     | Set to `true` to display detailed information about each added node; set to `false` to only display the IP address or hostname and port added
+{:.ntpd}
 
 *Parameter #2---what node to display information about*
 
 | Name             | Type         | Presence                    | Description
 |------------------|--------------|-----------------------------|----------------
 | Node             | string       | Optional<br>(0 or 1)        | The node to get information about in the same `<IP address>:<port>` format as the `addnode` RPC.  If this parameter is not provided, information about all added nodes will be returned
+{:.ntpd}
 
 *Result---a list of added nodes*
 
@@ -37,6 +39,7 @@ The `getaddednodeinfo` RPC {{summary_getAddedNodeInfo}}
 | → → →<br>Address       | object       | Optional<br>(0 or more)     | An object describing one of this node's addresses
 | → → → →<br>`address`   | string       | Required<br>(exactly 1)     | An IP address and port number of the node.  If the node was added using a DNS address, this will be the resolved IP address
 | → → → →<br>`connected` | string       | Required<br>(exactly 1)     | Whether or not the local node is connected to this addnode using this IP address.  Valid values are:<br>• `false` for not connected<br>• `inbound` if the addnode connected to us<br>• `outbound` if we connected to the addnode
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

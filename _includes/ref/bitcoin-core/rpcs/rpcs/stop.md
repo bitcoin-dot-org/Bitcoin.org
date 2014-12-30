@@ -20,6 +20,7 @@ The `stop` RPC {{summary_stop}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | `result`           | string          | Required<br>(exactly 1)     | The string "Bitcoin server stopping"
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

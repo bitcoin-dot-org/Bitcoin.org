@@ -24,6 +24,7 @@ The `listreceivedbyaddress` RPC {{summary_listReceivedByAddress}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | Include Empty      | bool            | Optional<br>(0 or 1)        | Set to `true` to display accounts which have never received a payment.  Set to `false` (the default) to only include accounts which have received a payment.  Any account which has received a payment will be displayed even if its current balance is `0`
+{:.ntpd}
 
 *Parameter #3---whether to include watch-only addresses in results*
 
@@ -42,6 +43,7 @@ The `listreceivedbyaddress` RPC {{summary_listReceivedByAddress}}
 | → →<br>`confirmations`     | number (int)      | Required<br>(exactly 1)     | The number of confirmations of the latest transaction to the address.  May be `0` for unconfirmed
 | → →<br>TXIDs               | array             | Required<br>(exactly 1)     | An array of TXIDs belonging to transactions that pay the address
 | → → →<br>TXID              | string            | Optional<br>(0 or more)     | The TXID of a transaction paying the address, encoded as hex in RPC byte order
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

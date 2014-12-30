@@ -21,6 +21,7 @@ The `sendmany` RPC {{summary_sendMany}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | From Account       | string          | Required<br>(exactly 1)     | The name of the account from which the bitcoins should be spent.  Use an empty string ("") for the default account. Bitcoin Core will ensure the account has sufficient bitcoins to pay the total amount in the *outputs* field described below (but the transaction fee paid is not included in the calculation, so an account can spend a total of its balance plus the transaction fee)
+{:.ntpd}
 
 *Parameter #2---the addresses and amounts to pay*
 
@@ -28,6 +29,7 @@ The `sendmany` RPC {{summary_sendMany}}
 |--------------------|-----------------|-----------------------------|---------------
 | Outputs            | object          | Required<br>(exactly 1)     | An object containing key/value pairs corresponding to the addresses and amounts to pay
 | →<br>Address/Amount | string (base58) : number (bitcoins) | Required<br>(1 or more) | A key/value pair with a base58check-encoded string containing the P2PKH or P2SH address to pay as the key, and an amount of bitcoins to pay as the value
+{:.ntpd}
 
 *Parameter #3---minimum confirmations*
 
@@ -38,12 +40,14 @@ The `sendmany` RPC {{summary_sendMany}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | Comment            | string          | Optional<br>(0 or 1)        | A locally-stored (not broadcast) comment assigned to this transaction.  Default is no comment
+{:.ntpd}
 
 *Result---a TXID of the sent transaction*
 
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|---------------
 | `result`           | string          | Required<br>(exactly 1)     | The TXID of the sent transaction, encoded as hex in RPC byte order
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

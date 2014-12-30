@@ -18,18 +18,21 @@ The `getblock` RPC {{summary_getBlock}}
 | Name             | Type         | Presence                    | Description
 |------------------|--------------|-----------------------------|----------------
 | Header Hash      | string (hex) | Required<br>(exactly 1)     | The hash of the header of the block to get, encoded as hex in RPC byte order
+{:.ntpd}
 
 *Parameter #2---JSON or hex output*
 
 | Name             | Type         | Presence                    | Description
 |------------------|--------------|-----------------------------|----------------
 | Format           | bool         | Optional<br>(0 or 1)        | Set to `false` to get the block in serialized block format; set to `true` (the default) to get the decoded block as a JSON object
+{:.ntpd}
 
 *Result (if format was `false`)---a serialized block*
 
 | Name             | Type              | Presence                    | Description
 |------------------|-------------------|-----------------------------|----------------
 | `result`         | string (hex)/null | Required<br>(exactly 1)     | The requested block as a serialized block, encoded as hex, or JSON `null` if an error occurred
+{:.ntpd}
 
 *Result (if format was `true` or omitted)---a JSON block*
 
@@ -51,6 +54,7 @@ The `getblock` RPC {{summary_getBlock}}
 | →<br>`chainwork`         | string (hex)      | Required<br>(exactly 1)     | The estimated number of block header hashes miners had to check from the genesis block to this block, encoded as big-endian hex
 | →<br>`previousblockhash` | string (hex)      | Required<br>(exactly 1)     | The hash of the header of the previous block, encoded as hex in RPC byte order
 | →<br>`nextblockhash`     | string (hex)      | Optional<br>(0 or 1)        | The hash of the next block on the best block chain, if known, encoded as hex in RPC byte order
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 

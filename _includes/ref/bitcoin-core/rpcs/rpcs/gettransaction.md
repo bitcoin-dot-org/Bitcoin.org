@@ -20,6 +20,7 @@ The `gettransaction` RPC {{summary_getTransaction}}
 | Name               | Type            | Presence                    | Description
 |--------------------|-----------------|-----------------------------|----------------
 | TXID               | string (hex)    | Required<br>(exactly 1)     | The TXID of the transaction to get details about.  The TXID must be encoded as hex in RPC byte order
+{:.ntpd}
 
 *Parameter #2---whether to include watch-only addresses in details and calculations*
 
@@ -41,6 +42,7 @@ The `gettransaction` RPC {{summary_getTransaction}}
 | → →<br>`vout`               | number (int)      | Required<br>(exactly 1)     | *Added in Bitcoin Core 0.10.0*<br><br>For an output, the output index (vout) for this output in this transaction.  For an input, the output index for the output being spent in its transaction.  Because inputs list the output indexes from previous transactions, more than one entry in the details array may have the same output index
 | → →<br>`fee`                | number (bitcoins) | Optional<br>(0 or 1)        | If sending payment, the fee paid as a negative bitcoins value.  May be `0`. Not returned if receiving payment
 | →<br>`hex`                  | string (hex)      | Required<br>(exactly 1)     | The transaction in serialized transaction format
+{:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
 
