@@ -74,6 +74,7 @@ require 'yaml'
 		     ## becomes an issue, we can devise a more complex
 		     ## regex
             (?!\w)  ## Don't match inside words
+            (?!`)   ## Don't match strings ending with a tic, unless the xref itself ends with a tic
           /xmi) {|s|
               if term[1] == "DO NOT AUTOCROSSREF"
                   s.gsub(/( |$)/, "<!--noref-->\\&")
