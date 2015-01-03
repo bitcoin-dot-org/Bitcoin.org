@@ -269,6 +269,7 @@ Basic requirements:
 - No concerning bug is found when testing the wallet
 - Website supports HTTPS and 301 redirects HTTP requests
 - SSL certificate passes [Qualys SSL Labs SSL test](https://www.ssllabs.com/ssltest/)
+- Website serving executable code or requiring authentication uses HSTS with a max-age of at least 180 days
 - The identity of CEOs and/or developers is public
 - If private keys or encryption keys are stored online:
   - Refuses weak passwords (short passwords and/or common passwords) used to secure access to any funds, or provides an aggressive account lock-out feature in response to failed login attempts along with a strict account recovery process.
@@ -301,7 +302,6 @@ Optional criterias (some could become requirements):
 - Uses deterministic ECDSA nonces (RFC 6979)
 - Provides a bug reporting policy on the website
 - If user has no access over its private keys:
-  - Enables HSTS
   - Full reserve audit(s)
   - Insurrance(s) against failures on their side
   - Reminds the user to enable 2FA in the main UI of the wallet
