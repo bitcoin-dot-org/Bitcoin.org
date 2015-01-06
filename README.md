@@ -267,6 +267,7 @@ Basic requirements:
 - No indication that changes to the code are not properly tested
 - Wallet was publicly announced and released since at least 3 months
 - No concerning bug is found when testing the wallet
+- Does not pollute the blockchain with non-transactional data (such as for sending messages or data storage)
 - Website supports HTTPS and 301 redirects HTTP requests
 - SSL certificate passes [Qualys SSL Labs SSL test](https://www.ssllabs.com/ssltest/)
 - The identity of CEOs and/or developers is public

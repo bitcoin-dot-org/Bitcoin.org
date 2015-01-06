@@ -81,31 +81,6 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkpassprivacydisclosurefullnode"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
-- electrum:
-    title: "Electrum"
-    titleshort: "Electrum"
-    compat: "desktop windows mac linux"
-    level: 2
-    platform:
-      desktop:
-        text: "walletelectrum"
-        link: "https://electrum.org"
-        source: "https://github.com/spesmilo/electrum"
-        screenshot: "electrum.png"
-        os:
-        - windows
-        - mac
-        - linux
-        check:
-          control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationspvservers"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurecentralized"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - msigna:
     title: "mSIGNA"
     titleshort: "mSIGNA"
