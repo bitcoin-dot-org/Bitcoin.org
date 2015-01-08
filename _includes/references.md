@@ -35,6 +35,7 @@ http://opensource.org/licenses/MIT.
 [coinbase field]: /en/developer-reference#term-coinbase-field "A special input-like field for coinbase transactions"
 [coinbase transaction]: /en/developer-reference#term-coinbase-tx "A special transaction which miners must create when they generate a block"
 [compactsize unsigned integer]: /en/developer-reference#compactsize-unsigned-integers "A type of variable-length integer"
+[compressed public key]: /en/developer-guide#public-key-formats "A public key that is 33 bytes long rather than the 65 bytes of an uncompressed public key"
 [confirm]: /en/developer-guide#term-confirmation "A transaction included in a block currently on the block chain"
 [confirmed]: /en/developer-guide#term-confirmation "A transaction included in a block currently on the block chain"
 [confirmed transactions]: /en/developer-guide#term-confirmation "Transactions included in a block currently on the block chain"

@@ -467,7 +467,7 @@ Note: standard transactions are designed to protect and help the
 network, not prevent you from making mistakes. It's easy to create
 standard transactions which make the satoshis sent to them unspendable.
 
-As of Bitcoin Core 0.9, standard transactions must also meet the following
+As of Bitcoin Core 0.9.3, standard transactions must also meet the following
 conditions:
 
 * The transaction must be finalized: either its locktime must be in the
@@ -478,9 +478,11 @@ conditions:
   times larger than a typical single-input, single-output P2PKH
   transaction.
 
-* Each of the transaction's inputs must be smaller than 500 bytes.
-  That's large enough to allow 3-of-3 multisig transactions in P2SH.
-  Multisig transactions which require more than 3 public keys are
+* Each of the transaction's signature scripts must be smaller than 1,650 bytes.
+  That's large enough to allow 15-of-15 multisig transactions in P2SH
+  using compressed public keys.
+
+* Bare (non-P2SH) multisig transactions which require more than 3 public keys are
   currently non-standard.
 
 * The transaction's signature script must only push data to the script
@@ -488,8 +490,10 @@ conditions:
   OP codes which solely push data to the stack.
 
 * The transaction must not include any outputs which receive fewer than
-  the defined minimum number of satoshis, [currently 546][bitcoin core
-  fee drop commit].
+  1/3 as many satoshis as it would take to spend it in a typical input.
+  That's [currently 546 satoshis][bitcoin core fee drop commit] for a
+  P2PKH or P2SH output on a Bitcoin Core node with the default relay fee.
+  Exception: standard null data outputs must receive zero satoshis.
 
 {% endautocrossref %}
 

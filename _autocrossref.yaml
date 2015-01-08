@@ -59,6 +59,8 @@ coinbase field:
 compactsize uint: compactsize unsigned integer
 compactsize unsigned integer:
 compactsize unsigned integers: compactsize unsigned integer
+compressed public key:
+compressed public keys: compressed public key
 confirm:
 confirmed:
 confirmation:
