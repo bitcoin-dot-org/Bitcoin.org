@@ -72,7 +72,8 @@ bitcoin-cli -regtest setgenerate true 101
 Generate 101 blocks using a special version of the `setgenerate` RPC
 which is only available in regtest mode. This takes about 30 seconds on
 a generic PC. Because this is a new block chain using Bitcoin's default
-rules, the first 210,000 blocks pay a block reward of 50 bitcoins.
+rules, the first 210,000 blocks pay a block reward of 50 bitcoins (in
+regtest mode only the first 150 blocks pay a reward of 50 bitcoins).
 However, a block must have 100 confirmations before that reward can be
 spent, so we generate 101 blocks to get access to the coinbase
 transaction from block #1.
