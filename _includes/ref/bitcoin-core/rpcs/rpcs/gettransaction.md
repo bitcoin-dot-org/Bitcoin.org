@@ -28,11 +28,15 @@ The `gettransaction` RPC {{summary_getTransaction}}
 
 *Result---a description of the transaction*
 
+{% assign DEPTH="→ " %}
+{% include helpers/vars.md %}
+
 | Name                        | Type              | Presence                    | Description
 |-----------------------------|-------------------|-----------------------------|----------------
 | `result`                    | object            | Required<br>(exactly 1)     | An object describing how the transaction affects the wallet
 | →<br>`amount`               | number (bitcoins) | Required<br>(exactly 1)     | A positive number of bitcoins if this transaction increased the total wallet balance; a negative number of bitcoins if this transaction decreased the total wallet balance, or `0` if the transaction had no net effect on wallet balance
 | →<br>`fee`                  | number (bitcoins) | Optional<br>(0 or 1)        | If an outgoing transaction, this is the fee paid by the transaction reported as negative bitcoins
+{{INCLUDE_F_LIST_TRANSACTIONS_F_FULL}}
 | →<br>`details`              | array             | Required<br>(exactly 1)     | An array containing one object for each input or output in the transaction which affected the wallet
 | → → <br>`involvesWatchonly` | bool              | Optional<br>(0 or 1)        | *Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the input or output involves a watch-only address.  Otherwise not returned
 | → →<br>`account`            | string            | Required<br>(exactly 1)     | The account which the payment was credited to or debited from.  May be an empty string ("") for the default account
