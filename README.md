@@ -258,7 +258,7 @@ The wallet list is based on the personal evaluation of the maintainer(s) and reg
 
 These requirements are meant to be updated and strengthened over time. Innovative wallets are exciting and encouraged, so if your wallet has a good reason for not following some of the rules below, please submit it anyway and we'll consider updating the rules.
 
-Basic requirements:
+Basic security requirements:
 
 - Sufficient users and/or developers feedback can be found without concerning issues, or independent security audit(s) is available
 - No indication that users have been harmed considerably by any issue in relation to the wallet
