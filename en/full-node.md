@@ -12,7 +12,7 @@ title: "Running A Full Node - Bitcoin"
 
 # Running A Full Node
 
-<p class="summary">Learn how run a full node</p>
+<p class="summary">Support the Bitcoin network by running your own full node</p>
 
 <div markdown="1" id="toc" class="toc"><div markdown="1">
 
@@ -83,27 +83,44 @@ have an easy-to-use node.
 
 * 2 gigabytes of memory (RAM)
 
-* Broadband Internet connection
+* A broadband Internet connection with upload speeds of at least 400
+  kilobits (50 kilobytes) per second
+
+* An unmetered connection, a connection with high upload limits, or a
+  connection you regularly monitor to ensure it doesn't exceed its
+  upload limits. It's common for full nodes on high-speed connections to
+  use 200 gigabytes upload or more a month. Download usage is around 20
+  gigabytes a month, plus around an additional 40 gigabytes the first
+  time you start your node.
 
 * 6 hours a day that your full node can be left running. (You can do
-  other things with your computer while running a full node)
+  other things with your computer while running a full node.)
 
 ### Possible Problems
 
 * **Legal:** Bitcoin use is [prohibited or restricted in some
-  areas](http://bitlegal.io/)
+  areas.](http://bitlegal.io/)
+
+* **Bandwidth limits**: Some Internet plans will charge an additional
+  amount for any excess upload bandwidth used that isn't included in
+  the plan. Worse, some providers may terminate your connection without
+  warning because of overuse. We advise that you check whether your
+  Internet connection is subjected to such limitations and monitor your
+  bandwidth use so that you can stop Bitcoin Core before you reach your
+  upload limit.
 
 * **Anti-virus:** Several people have placed parts of known computer
   viruses in the Bitcoin block chain. This block chain data can't infect
-  your computer, but some anti-virus programs quarantine the data any
-  way, making it more difficult to run a full node. This problem mostly
-  affects computers running Windows
+  your computer, but some anti-virus programs quarantine the data
+  anyway, making it more difficult to run a full node. This problem mostly
+  affects computers running Windows.
 
 * **Attack target:** People who want to disrupt the Bitcoin network may
   attack full nodes in ways that will affect other things you do with
   your computer, such as an attack that limits your available download
   bandwidth or an attack that prevents you from using your full node's
-  wallet for sending transactions
+  wallet for sending transactions.
+
 
 ## Linux Instructions
 
@@ -209,28 +226,16 @@ you can just let it run to help support the Bitcoin network.
 
 Starting your node automatically each time you login to your computer
 makes it easy for you to contribute to the network. The easiest way
-to do this is to add Bitcoin Core GUI to the list of startup
-applications.
+to do this is to tell Bitcoin Core GUI to start at login.
 
-Click the Ubuntu swirl icon to start the Dash, type `startup app`,
-and click the Startup Applications icon.
+While running Bitcoin Core GUI, open the Settings menu and choose
+Options.  On the Main tab, click *Start Bitcoin on system login*.  Click
+the Ok button to save the new settings.
 
-![Dash Startup App](/img/full-node/en-dash-startup-app.png)
+![Choosing to start Bitcoin Core at login](/img/full-node/en-start-on-login.png)
 
-In the screen that appears, click the Add button, and enter the
-following information.  The `-min` tells Bitcoin Core GUI to start
-minimized (in the tray):
-
-       Name: Bitcoin
-    Command: bitcoin-qt -min
-
-The form should look like this:
-
-![Startup Applications Bitcoin-Qt](/img/full-node/en-startup-applications-bitcoin-qt-min.png)
-
-Click Save and then Close to save your changes. The next time you login
-to your desktop, Bitcoin Core GUI will be automatically started in as an
-icon in the tray.
+The next time you login to your desktop, Bitcoin Core GUI will be
+automatically started in as an icon in the tray.
 
 ![Bitcoin-Qt Tray Icon](/img/full-node/en-bitcoin-qt-tray-icon.png)
 </div>
@@ -245,9 +250,9 @@ configuration file with a user name and password. First create the
 permissions so that only your user account can read it.  From the
 terminal, type:
 
-    mkdir .bitcoin
-    touch .bitcoin/bitcoin.conf
-    chmod 600 .bitcoin/bitcoin.conf
+    mkdir ~/.bitcoin
+    touch ~/.bitcoin/bitcoin.conf
+    chmod 600 ~/.bitcoin/bitcoin.conf
 
 Then you can run the command `bitcoind`.  It will print output similar
 to this:
@@ -265,13 +270,13 @@ to this:
     for example: alertnotify=echo %s | mail -s "Bitcoin Alert" admin@foo.com
 
 The "rpcpassword" displayed will be unique for your system.  You can
-copy the the rpcuser and rpcpassword lines into your configuration file
+copy the rpcuser and rpcpassword lines into your configuration file
 using the following commands.  Note that in most Ubuntu terminals, you need
 to press Ctrl-Shift-C to copy and Ctrl-Shift-V to paste because Ctrl-C
 and Ctrl-V have different meanings in a Unix-style terminal.
 
-    echo rpcuser=bitcoinrpc >> .bitcoin/bitcoin.conf
-    echo rpcpassword=XXXXXX >> .bitcoin/bitcoin.conf
+    echo rpcuser=bitcoinrpc >> ~/.bitcoin/bitcoin.conf
+    echo rpcpassword=XXXXXX >> ~/.bitcoin/bitcoin.conf
 
 (**Warning:** Don't use XXXXXX as your RPC password. Copy the
 rpcpassword displayed by bitcoind for your system.)
@@ -353,10 +358,270 @@ you what we need.
 
 
 
+## Network Configuration
+
+If you want to support the Bitcoin network, you must allow inbound
+connections.
+
+When Bitcoin Core starts, it establishes 8 outbound connections to other
+full nodes so it can download the latest blocks and transactions. If you
+just want to use your full node as a wallet, you don't need more than
+these 8 connections---but if you want to support lightweight clients and
+other full nodes on the network, you must allow inbound connections.
+
+Servers connected directly to the Internet usually don't require any
+special configuration.  You can use the testing instructions below to
+confirm your server-based node accepts inbound connections.
+
+Home connections are usually filtered by a router or modem. Bitcoin
+Core will request your router automatically configure itself to allow
+inbound connections to Bitcoin's port, port 8333. Unfortunately many
+routers don't allow automatic configuration, so you must manually
+configure your router. You may also need to configure your firewall to
+allow inbound connections to port 8333. Please see the following
+subsections for details.
+
+### Testing Connections
+
+The BitNodes project provides an online tool to let you test whether
+your node accepts inbound connections. To use it, start Bitcoin Core
+(either the GUI or the daemon), wait 10 minutes, and then [visit the
+GetAddr page](https://getaddr.bitnodes.io/#join-the-network). The tool
+will attempt to guess your IP address---if the address is wrong (or
+blank), you will need to enter your address manually.
+
+![Bitnodes Tool](/img/full-node/en-bitnodes-tool.png)
+
+After you press Check Node, the tool will inform you whether your port
+is open (green box) or not open (red box). If you get the green box, you
+don't need to do anything---you accept inbound connections.  If you get
+the red box, please read the [enabling
+connections](#enabling-connections) subsection.
 
 
+For confirmation that you accept inbound connections, you can use
+Bitcoin Core. Bitcoin Core can't tell you directly whether you allow
+inbound connections, but it can tell you whether or not you currently
+have any inbound connections. If your node has been online for at least
+30 minutes, it should normally have inbound connections. If want to
+check your peer info using Bitcoin Core, choose the appropriate
+instructions below:
+
+* [Peer info in Bitcoin Core GUI](#gui-peer-info)
+
+* [Peer info in Bitcoin Core daemon](#daemon-peer-info)
+
+#### GUI Peer Info
+
+In the bottom right corner of the Bitcoin Core GUI are several icons.
+If you hover over the signal strength icon, it will tell you how many
+connections you have. The icon won't turn green until you have more
+than 8 active connections, which only happens if inbound connections
+are allowed.
+
+![Active connections](/img/full-node/en-active-connections.png)
+
+For confirmation, you can go to the Help menu, choose Debug Window, and
+open the Information tab. In the Network section, it will tell you
+exactly how many inbound connections you have. If the number is greater
+than zero, then inbound connections are allowed.
+
+![Debug window with inbound connections](/img/full-node/en-debug-inbound-connections.png)
+
+If you don't have inbound connections, please read the instructions for [enabling inbound
+connections.](#enabling-connections)
+
+#### Daemon Peer Info
+
+The [`getconnectioncount`](/en/developer-reference#getconnectioncount)
+command will tell you how many connections you have. If you have more
+than 8 connections, inbound connections are allowed. For example:
+
+<pre>$ <b>bitcoin-cli getconnectioncount</b>
+52</pre>
+
+For confirmation, you can use the
+[`getpeerinfo`](/en/developer-reference#getpeerinfo) command to get
+information about all of your peers.  Each peer's details will include
+an `inbound` field set to true if the connection is inbound.  If you
+have any inbound connections, then inbound connections are allowed.
+
+If you don't have inbound connections, please read instructions for [enabling inbound
+connections.](#enabling-connections)
+
+### Enabling Connections
+
+If Bitcoin Core can't automatically configure your router to open port
+8333, you will need to manually configure your router.  We've tried to
+make the following instructions generic enough to cover most router
+models; if you need specific help with your router, please ask for help
+on a tech support site such as [SuperUser](http://superuser.com/).
+
+Enabling inbound connections requires two steps, plus an extra third
+step for firewall users:
+
+1. Giving your computer a static (unchanging) internal IP address by
+   configuring the Dynamic Host Configuration Protocol (DHCP) on your
+   router.
+
+2. Forwarding inbound connections from the Internet through your
+   router to your computer where Bitcoin Core can process them.
+
+3. Configuring your firewall to allow inbound connections. This step
+   mainly applies to Windows users, as Mac OS X and most Linuxes do not
+   enable a firewall by default.
+
+#### Configuring DHCP
+
+In order for your router to direct incoming port 8333 connections to
+your computer, it needs to know your computer's internal IP address.
+However, routers usually give computers dynamic IP addresses that change
+frequently, so we need to ensure your router always gives your computer
+the same internal IP address.
+
+Start by logging into your router's administration interface.  Most
+routers can be configured using one of the following URLs, so keep
+clicking links until you find one that works.  If none work, consult
+your router's manual.
+
+* <http://192.168.0.1> (some Linksys/Cisco models)
+* <http://192.168.1.1> (some D-Link/Netgear models)
+* <http://192.168.2.1> (some Belkin/SMC models)
+* <http://192.168.123.254> (some US Robotics models)
+* <http://10.0.1.1> (some Apple models)
+
+Upon connecting, you will probably be prompted for a username and
+password.  If you configured a password, enter it now.  If not,
+the [Router Passwords site](http://www.routerpasswords.com/) provides a
+database of known default username and password pairs.
+
+After logging in, you want to search your router's menus for options
+related to DHCP, the Dynamic Host Configuration Protocol.  These options
+may also be called Address Reservation.  For example, the router page
+shown below calls the option we need "DHCP Reservation":
+
+![DHCP reservation button](/img/full-node/en-dhcp-reservation.png)
+
+In the reservation configuration, some routers will display a list of
+computers and devices currently connected to your network, and then let
+you select a device to make its current IP address permanent:
+
+![Easy DHCP reservation](/img/full-node/en-easy-dhcp-reservation.png)
+
+If that's the case, find the computer running Bitcoin Core in the list,
+select it, and add it to the list of reserved addresses. Make a note of
+its current IP address---we'll use the address in the next section.
+
+Other routers require a more manual configuration. For these routers,
+you will need to look up the fixed address (MAC address) for your
+computer's network card and add it to the list. This operation differs
+by operating system:
+
+* **Windows 7 & 8:** Press Win-R (Windows key plus the R key) to open
+  the Run dialog. Type `cmd` to open the console. Type `ipconfig` and
+  find the result that best matches your connection---usually a wireless
+  connection. Look for a line that starts with "Physical Address" and
+  contains a value like this:
+
+        Physical Address. . . . . . . . . : 01-23-45-67-89-AB
+
+    Replace all the dashes with colons, so the address looks like this:
+    01:23:45:67:89:AB.  Use that address in the instructions below.
+
+* **Linux:** open a terminal and type `ifconfig`. Find the result that
+  best matches your connection---a result starting with `wlan` indicates
+  a wireless connection. Find the field that starts with `HWaddr` and copy
+  the immediately following field that looks like 01:23:45:67:89:ab. Use
+  that value in the instructions below.
+
+* **Mac OS X:** open a terminal and type `ifconfig`. Find the result
+  that best matches your connection---a result starting with `en1`
+  usually indicates a wireless connection. Find the field that starts
+  with `ether:` and copy the immediately following field that looks like
+  01:23:45:67:89:ab. Use that value in the instructions below.
+
+Once you have the MAC address, you can fill it into to your router's
+manual DHCP assignment table, as illustrated below. Also choose an IP
+address and make a note of it for the instructions in the next
+subsection. After entering this information, click the Add or Save
+button.
+
+![Manual DHCP reservation](/img/full-node/en-manual-dhcp-reservation.png)
+
+Then reboot your computer to ensure it gets assigned the address you
+selected and proceed to the Port Forwarding instructions below.
+
+#### Port Forwarding
+
+For this step, you need to know the local IP address of the computer
+running Bitcoin Core. You should have this information from configuring
+the DHCP assignment table in the subsection above.
+
+Login to your router using the same steps described near the top of the
+[DHCP subsection](#configuring-dhcp).  Look for an option called Port Forwarding, Port
+Assignment, or anything with "Port" in its name.  On the some routers,
+this option is buried in an Applications & Gaming menu.
+
+The port forwarding settings should allow you to map an external port on
+your router to the "internal port" of a device on your network as shown
+in the screenshot below.
+
+![Port forwarding](/img/full-node/en-port-forwarding.png)
+
+Both the external port and the internal port should be 8333 for Bitcoin.
+(You may also want to map port 18333 for Bitcoin's testnet, although
+this guide does not cover using testnet.)  Make sure the IP address you
+enter is the same one you configured in the previous subsection.
+
+After filling in the details for the mapping, save the entry. You should
+not need to restart anything. Start Bitcoin Core (if you haven't
+already) and follow the [Testing Connections](#testing-connections) instructions to test
+your connection.
+
+If you still can't connect and you use a firewall, you probably need to
+change your firewall settings. See the Firewall section below.
+
+If something else went wrong, it's probably a problem with your router
+configuration. Re-read the instructions above to see if you missed
+anything, search the web for help with "port forwarding", and ask for
+help on sites like [SuperUser](http://superuser.com).
+
+We can't provide direct support, but if you see a way to improve these
+instructions, please [open an issue.](https://github.com/bitcoin/bitcoin.org/issues/new)
+
+#### Firewall Configuration
+
+Firewalls block inbound connections.  To use Bitcoin, you need to
+configure your computer's firewall to allow connections to port 8333.
+This is usually as easy as starting your firewall configuration software
+and defining a new rule to allow inbound connections to port 8333.  For
+additional information for Windows, see the links below:
+
+* [Instructions for Windows Firewall](http://windows.microsoft.com/en-us/windows/open-port-windows-firewall#1TC=windows-7)
+* [Instructions for Norton Firewall](http://community.norton.com/en/forums/firewall-blocking-program-how-open-ports)
+* [Instructions for Mcafee Personal Firewall](http://service.mcafee.com/FAQDocument.aspx?id=TS100887)
+
+Mac OS X comes with its firewall disabled by default, but if you have
+enabled it, see the section Allowing Specific Applications from the
+[official Apple guide.](http://support.apple.com/en-us/HT201642)
+
+Ubuntu also comes with its firewall disabled by default, but if you have
+enabled it, see the [Ubuntu wiki
+page](https://help.ubuntu.com/community/Gufw) for information about
+adding port forwarding rules.
+
+Once you have allowed inbound connections to port 8333, start Bitcoin
+Core (if you haven't already) and follow the [Testing Connections](#testing-connections)
+instructions to test your connection.
+
+If something else went wrong re-read the DHCP, port forwarding, and
+firewall instructions above to see if you missed anything, search the
+web for help with "port forwarding" and "opening firewall ports", and
+ask for help on sites like [SuperUser](http://superuser.com).
+
+We can't provide direct support, but if you see a way to improve these
+instructions, please [open an issue.](https://github.com/bitcoin/bitcoin.org/issues/new)
 
 </div>
-
 <script>updateToc();</script>
 <script>addAnchorLinks();</script>
