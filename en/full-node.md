@@ -8,7 +8,43 @@ id: full-node
 title: "Running A Full Node - Bitcoin"
 ---
 
-{% assign moreHelp="If you need more help, please ask in one of Bitcoin's many [communities](/en/community), such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin&uio=d4) IRC chatroom on Freenode." %}
+<!-- Variable assignment
+
+{% capture installFinished %}
+You have now completed installing Bitcoin Core.  If you have any questions, please ask in one of Bitcoin's many [communities](/en/community), such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin&uio=d4) IRC chatroom on Freenode.
+
+To support the Bitcoin network, you also need to allow incoming
+connections. Please read the [Network
+Configuration](#network-configuration) section for details.
+{% endcapture %}
+
+{% capture verifyReleaseSignatures %}
+<div class="box" markdown="1">
+*Optional: Verify the release signatures*
+
+If you know how to use PGP, you should also click the *Verify Release
+Signatures* link on the download page to download a signed list of SHA256
+file hashes. The file is currently signed by [Wladimir J. van der Laan's
+key](/laanwj.asc). His primary key's fingerprint is:
+
+    71A3 B167 3540 5025 D447  E8F2 7481 0B01 2346 C9A6
+
+Many previous releases were signed by [Gavin Andresen's
+key](/gavinandresen.asc). His primary key's fingerprint is:
+
+    2664 6D99 CBAE C9B8 1982  EF60 29D9 EE6B 1FC7 30C1
+
+You should verify these keys belong to their owners using the web of
+trust or other trustworthy means. Then use PGP to verify the signature
+on the release signatures file. Finally, use PGP or another utility to
+compute the SHA256 hash of the archive you downloaded, and ensure the
+computed hash matches the hash listed in the verified release
+signatures file.
+
+</div>
+{% endcapture %}
+
+-->
 
 # Running A Full Node
 
@@ -170,7 +206,7 @@ downloaded.  This step may take several minutes on a slow Internet
 connection.
 
 <div class="box" markdown="1">
-*Choose one of the following options*
+*To continue, choose one of the following options*
 
 1. To install the Bitcoin Core Graphical User Interface (GUI), type the
    following line and proceed to the [Bitcoin Core GUI](#ubuntu-gui)
@@ -197,6 +233,7 @@ want to proceed.  Press enter to continue.
 </div>
 
 #### Bicoin Core GUI {#ubuntu-gui}
+{:.no_toc}
 
 To start Bitcoin Core GUI, click the Ubuntu swirl icon to open the Dash,
 type `bitcoin`, and click the Bitcoin icon.
@@ -240,9 +277,165 @@ automatically started in as an icon in the tray.
 ![Bitcoin-Qt Tray Icon](/img/full-node/en-bitcoin-qt-tray-icon.png)
 </div>
 
-{{moreHelp}}
+{{installFinished}}
 
 #### Bicoin Core Daemon {#ubuntu-daemon}
+{:.no_toc}
+
+Before using the Bitcoin Core daemon, `bitcoind`, you need to create its
+configuration file with a user name and password. First create the
+`.bitcoin` directory, create (touch) the file, and set the file's
+permissions so that only your user account can read it.  From the
+terminal, type:
+
+    mkdir ~/.bitcoin
+    touch ~/.bitcoin/bitcoin.conf
+    chmod 600 ~/.bitcoin/bitcoin.conf
+
+Then you can run the command `bitcoind`.  It will print output similar
+to this:
+
+    bitcoind
+    Error: To use the "-server" option, you must set a rpcpassword in the configuration file:
+    /home/bitcoinorg/.bitcoin/bitcoin.conf
+    It is recommended you use the following random password:
+    rpcuser=bitcoinrpc
+    rpcpassword=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    (you do not need to remember this password)
+    The username and password MUST NOT be the same.
+    If the file does not exist, create it with owner-readable-only file permissions.
+    It is also recommended to set alertnotify so you are notified of problems;
+    for example: alertnotify=echo %s | mail -s "Bitcoin Alert" admin@foo.com
+
+The "rpcpassword" displayed will be unique for your system.  You can
+copy the rpcuser and rpcpassword lines into your configuration file
+using the following commands.  Note that in most Ubuntu terminals, you need
+to press Ctrl-Shift-C to copy and Ctrl-Shift-V to paste because Ctrl-C
+and Ctrl-V have different meanings in a Unix-style terminal.
+
+    echo rpcuser=bitcoinrpc >> ~/.bitcoin/bitcoin.conf
+    echo rpcpassword=XXXXXX >> ~/.bitcoin/bitcoin.conf
+
+(**Warning:** Don't use XXXXXX as your RPC password. Copy the
+rpcpassword displayed by bitcoind for your system.)
+
+Now you can start Bitcoin Core daemon for real.  Type the following
+command:
+
+    bitcoind -daemon
+
+It will print a message that Bitcoin Core is starting.  To interact with
+Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin
+command line interface).  Note: it may take up to several minutes for
+Bitcoin Core to start, during which it will display the following
+message whenever you use `bitcoin-cli`:
+
+    error: {"code":-28,"message":"Verifying blocks..."}
+
+After it starts, you may find the following commands useful for basic
+interaction with your node:
+[`getblockchaininfo`](/en/developer-reference#getblockchaininfo),
+[`getnetworkinfo`](/en/developer-reference#getnetworkinfo),
+[`getnettotals`](/en/developer-reference#getnettotals),
+[`getwalletinfo`](/en/developer-reference#getwalletinfo),
+[`stop`](/en/developer-reference#stop), and [`help`](/en/developer-reference#help).
+For example, to safely stop your node, run the following command:
+
+    bitcoin-cli stop
+
+A complete list of commands is available in the [Bitcoin.org developer
+reference](/en/developer-reference#rpc-quick-reference).
+
+When Bitcoin Core daemon first starts, it will begin to download the
+block chain. This step will take at least several hours, and it may
+take a day or more on a slow Internet connection or with a slow
+computer. During the download, Bitcoin Core will use a significant part
+of your connection bandwidth. You can stop Bitcoin Core at any time using
+the `stop` command; it will resume from the point where it stopped the next
+time you start it.
+
+<div class="box" markdown="1">
+*Optional: Start Your Node At Boot*
+
+Starting your node automatically each time your computer boots makes it
+easy for you to contribute to the network.  The easiest way to do this
+is to start Bitcoin Core daemon from your crontab.  To edit your
+crontab, run the following command:
+
+    crontab -e
+
+Scroll to the bottom of the file displayed and add the following line:
+
+    @reboot bitcoind -daemon
+
+Save the file and exit; the updated crontab file will be installed for
+you. Now Bitcoin Core daemon will be automatically started each time
+your reboot your computer.
+
+If you're an Ubuntu expert and want to use an init script instead, see
+[this Upstart
+script](https://github.com/bitcoin/bitcoin/tree/0.10/contrib/init/bitcoind.conf).
+</div>
+
+{{installFinished}}
+
+### Ubuntu 14.04 LTS Server
+
+*Instructions for Bitcoin Core 0.10.0.*
+
+Log into your Ubuntu server using SSH or another method that gives you
+command line access.  These first steps need to be performed as an
+administrative user with sudo access.
+
+Type the following line to add the Bitcoin Personal Package Archive
+(PPA) to your system:
+
+    sudo apt-add-repository ppa:bitcoin/bitcoin
+
+You will be prompted for your user password.  Provide it to continue.
+Afterwards, the following text will be displayed:
+
+     Stable Channel of bitcoin-qt and bitcoind for Ubuntu, and their dependencies
+     More info: https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin
+    Press [ENTER] to continue or ctrl-c to cancel adding it
+
+Press enter to continue. The following text (with some variations) will
+be displayed and you will be returned to the command line prompt:
+
+    gpg: keyring `/tmp/tmpixuqu73x/secring.gpg' created
+    gpg: keyring `/tmp/tmpixuqu73x/pubring.gpg' created
+    gpg: requesting key 8842CE5E from hkp server keyserver.ubuntu.com
+    gpg: /tmp/tmpixuqu73x/trustdb.gpg: trustdb created
+    gpg: key 8842CE5E: public key "Launchpad PPA for Bitcoin" imported
+    gpg: no ultimately trusted keys found
+    gpg: Total number processed: 1
+    gpg:               imported: 1  (RSA: 1)
+    OK
+
+Type the following line to get the most recent list of packages:
+
+    sudo apt-get update
+
+A large number of lines will be displayed as different update files are
+downloaded.  This step may take several minutes on a slow Internet
+connection.
+
+To install the Bitcoin Core daemon (bitcoind), which is useful for
+programmers and advanced users, type the following line and proceed to
+the [Bitcoin Core Daemon](#ubuntu-daemon) section below:
+
+    sudo apt-get install bitcoind
+
+After choosing what packages to install, you will be asked whether you
+want to proceed.  Press enter to continue.
+
+#### Bicoin Core Daemon {#ubuntu-server-daemon}
+{:.no_toc}
+
+If you're logged in as an administrative user with sudo access, you may
+log out.  The steps in this section should be performed as the user you
+want to run Bitcoin Core.  (This can be a locked account used only by
+Bitcoin Core.)
 
 Before using the Bitcoin Core daemon, `bitcoind`, you need to create its
 configuration file with a user name and password. First create the
@@ -339,15 +532,371 @@ If you're an Ubuntu expert and want to use an init script instead, see
 script](https://github.com/bitcoin/bitcoin/blob/2d782ab2ce30bf106e34cd3288c9082ac04022f9/contrib/init/bitcoind.conf).
 </div>
 
-{{moreHelp}}
+{{installFinished}}
+
+
+### Other Linux Distributions
+
+*Instructions for Bitcoin Core 0.10.0.*
+
+The following instructions describe installing Bitcoin Core using tools
+available in most mainstream Linux distributions.  We assume you use a
+Bourne-like shell such as `bash`.
+
+Using any computer, go to the [Bitcoin Core download page](/en/download)
+and verify you have made a secure connection to the server.
+
+![Verify secure connection](/img/full-node/en-secure-connection.png)
+
+In the "Linux (tgz)" section of the Download page, choose the
+appropriate file for your Linux install (either 32-bit or 64-bit) and
+download the file. If necessary, move the file to the computer you want
+to use to run Bitcoin Core.
+
+{{verifyReleaseSignatures}}
+
+If you aren't already logged into the computer you want to install
+Bitcoin on, login now.  Make sure you use an account that can use `su`
+or `sudo` to install software into directories owned by the root user.
+
+If you logged in graphically, start a terminal.  If you logged in
+another way, we will assume you're already in a shell.
+
+Locate the file you downloaded and extract it using the `tar` command
+followed by the argument `xzf` followed by the file name. The argument
+`xzf` means eXtract the gZipped tar archive File. For example, for a
+64-bit tar archive in your current directory, the command is:
+
+    tar xzf bitcoin-0.10.0-linux64.tar.gz
+
+This will create the directory `bitcoin-0.10.0` within your current
+working directory. We will install the contents of its `bin`
+subdirectory into the `/usr/local/bin` directory using the the `install`
+command. The install command is part of the GNU coreutils available on
+nearly every Linux distribution, and the `/usr/local/bin` directory is a
+standard location for self-installed executables (you may edit the
+commands below to use a different location).
+
+If you use `sudo` to run commands as root, use the following command
+line:
+
+    sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.10.0/bin/*
+
+If you use `su` to run commands as root, use the following command line:
+
+    su -c 'install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.10.0/bin/*'
+
+<div class="box" markdown="1">
+*To continue, choose one of the following options*
+
+1. To use Bitcoin Core Graphical User Interface (GUI), proceed to the
+   [Bitcoin Core GUI](#other-linux-gui) section below.
+
+2. To use the Bitcoin Core daemon (bitcoind), which is useful for
+   programmers and advanced users, proceed to the [Bitcoin Core
+   Daemon](#other-linux-daemon) section below.
+
+3. To use both the GUI and the daemon, read both the [GUI
+   instructions](#other-linux-gui) and the [daemon
+   instructions](#other-linux-daemon). Note that you can't run both the
+   GUI and the daemon at the same time using the same configuration
+   directory.
+
+</div>
+
+#### Bicoin Core GUI {#other-linux-gui}
+{:.no_toc}
+
+In order to use Bitcoin Core GUI, you will need several libraries
+installed. All of them should be available in all major
+recently-released Linux distributions, but they may not be installed on
+your computer yet. To determine whether you're missing any libraries,
+open a terminal (if you haven't already) and run the command
+`/usr/local/bin/bitcoin-qt` to start Bitcoin Core GUI.
+
+If all the required libraries are installed, Bitcoin Core will start.
+If a required library is missing, an error message similar to the
+following message will be displayed:
+
+    /usr/local/bin/bitcoin-qt: error while loading shared libraries: libQtGui.so.4: cannot open shared object file: No such file or directory
+
+Search your distribution's package database for the missing file
+missing and install package containing that file.  Then re-run
+`/usr/local/bin/bitcoin-qt` to see if it's missing another file.
+Repeat until Bitcoin Core GUI starts.
+
+You will be prompted to choose a directory to store the Bitcoin block
+chain and your wallet.  Unless you have a separate partition or drive
+you want to use, click *Ok* to use the default.
+
+![Bitcoin-Qt Welcome](/img/full-node/en-bitcoin-qt-welcome.png)
+
+Bitcoin Core GUI will begin to download the block chain.  This
+step will take at least several hours, and it may take a day or more on
+a slow Internet connection or with a slow computer.  During the
+download, Bitcoin Core will use a significant part of your connection
+bandwidth.  You can stop Bitcoin Core at any time by closing it; it will
+resume from the point where it stopped the next time you start it.
+
+![Bitcoin-Qt Initial Block Download](/img/full-node/en-bitcoin-qt-ibd.png)
+
+After download is complete, you may use Bitcoin Core as your wallet or
+you can just let it run to help support the Bitcoin network.
+
+<div class="box" markdown="1">
+*Optional: Start Your Node At Login*
+
+Starting your node automatically each time you login to your computer
+makes it easy for you to contribute to the network. The easiest way to
+do this is to tell Bitcoin Core GUI to start at login. This only works
+in desktop environments that support the [autostart
+specification](http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html#startup),
+such as Gnome, KDE, and Unity.
+
+While running Bitcoin Core GUI, open the Settings menu and choose
+Options.  On the Main tab, click *Start Bitcoin on system login*.  Click
+the Ok button to save the new settings.
+
+![Choosing to start Bitcoin Core at login](/img/full-node/en-start-on-login.png)
+
+The next time you login to your desktop, Bitcoin Core GUI should be
+automatically started in as an icon in the tray.
+
+![Bitcoin-Qt Tray Icon](/img/full-node/en-bitcoin-qt-tray-icon.png)
+
+If Bitcoin Core GUI does not automatically start, you may need to add it
+to an `.xinit` or `.xsession` file as [described
+here](https://en.wikibooks.org/wiki/Guide_to_X11/Starting_Sessions).
+</div>
+
+{{installFinished}}
+
+#### Bicoin Core Daemon {#other-linux-daemon}
+{:.no_toc}
+
+If you're logged in as an administrative user with sudo access, you may
+log out.  The steps in this section should be performed as the user you
+want to run Bitcoin Core.  (This can be a locked account used only by
+Bitcoin Core.)  If you changed users in a graphical interface, start a
+terminal.
+
+Before using the Bitcoin Core daemon, `bitcoind`, you need to create its
+configuration file with a user name and password. First create the
+`.bitcoin` directory, create (touch) the file, and set the file's
+permissions so that only your user account can read it.  From your
+terminal or console, type:
+
+    mkdir ~/.bitcoin
+    touch ~/.bitcoin/bitcoin.conf
+    chmod 600 ~/.bitcoin/bitcoin.conf
+
+Then you can run the command `bitcoind`.  It will print output similar
+to this:
+
+    bitcoind
+    Error: To use the "-server" option, you must set a rpcpassword in the configuration file:
+    /home/bitcoinorg/.bitcoin/bitcoin.conf
+    It is recommended you use the following random password:
+    rpcuser=bitcoinrpc
+    rpcpassword=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    (you do not need to remember this password)
+    The username and password MUST NOT be the same.
+    If the file does not exist, create it with owner-readable-only file permissions.
+    It is also recommended to set alertnotify so you are notified of problems;
+    for example: alertnotify=echo %s | mail -s "Bitcoin Alert" admin@foo.com
+
+The "rpcpassword" displayed will be unique for your system.  You can
+copy the rpcuser and rpcpassword lines into your configuration file
+using the following commands.  Note that in many Linux terminals, you need
+to press Ctrl-Shift-C to copy and Ctrl-Shift-V to paste because Ctrl-C
+and Ctrl-V have different meanings in a Unix-style terminal.
+
+    echo rpcuser=bitcoinrpc >> ~/.bitcoin/bitcoin.conf
+    echo rpcpassword=XXXXXX >> ~/.bitcoin/bitcoin.conf
+
+(**Warning:** Don't use XXXXXX as your RPC password. Copy the
+rpcpassword displayed by bitcoind for your system.)
+
+Now you can start Bitcoin Core daemon for real.  Type the following
+command:
+
+    bitcoind -daemon
+
+It will print a message that Bitcoin Core is starting.  To interact with
+Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin
+command line interface).  Note: it may take up to several minutes for
+Bitcoin Core to start, during which it will display the following
+message whenever you use `bitcoin-cli`:
+
+    error: {"code":-28,"message":"Verifying blocks..."}
+
+After it starts, you may find the following commands useful for basic
+interaction with your node:
+[`getblockchaininfo`](/en/developer-reference#getblockchaininfo),
+[`getnetworkinfo`](/en/developer-reference#getnetworkinfo),
+[`getnettotals`](/en/developer-reference#getnettotals),
+[`getwalletinfo`](/en/developer-reference#getwalletinfo),
+[`stop`](/en/developer-reference#stop), and [`help`](/en/developer-reference#help).
+For example, to safely stop your node, run the following command:
+
+    bitcoin-cli stop
+
+A complete list of commands is available in the [Bitcoin.org developer
+reference](/en/developer-reference#rpc-quick-reference).
+
+When Bitcoin Core daemon first starts, it will begin to download the
+block chain. This step will take at least several hours, and it may
+take a day or more on a slow Internet connection or with a slow
+computer. During the download, Bitcoin Core will use a significant part
+of your connection bandwidth. You can stop Bitcoin Core at any time using
+the `stop` command; it will resume from the point where it stopped the next
+time you start it.
+
+<div class="box" markdown="1">
+*Optional: Start Your Node At Boot*
+
+Starting your node automatically each time your computer boots makes it
+easy for you to contribute to the network.  The easiest way to do this
+is to start Bitcoin Core daemon from your crontab.  To edit your
+crontab on most distributions, run the following command:
+
+    crontab -e
+
+Scroll to the bottom of the file displayed and add the following line:
+
+    @reboot bitcoind -daemon
+
+Save the file and exit; the updated crontab file will be installed for
+you. On most distributions, this will cause Bitcoin Core daemon to be
+automatically started each time your reboot your computer.
+
+If you're a expert system administrator and want to use an init script instead, see
+[the init scripts directory in Bitcoin Core's source tree](https://github.com/bitcoin/bitcoin/tree/0.10/contrib/init).
+</div>
+
+{{installFinished}}
+
+
 
 
 ## Windows Instructions
 
+### Windows 8.1
+
 If you can provide instructions and screenshots for running the latest
-version of Bitcoin Core on Mac OS X, please [open an
+version of Bitcoin Core on Windows 8.1, please [open an
 issue](https://github.com/bitcoin/bitcoin.org/issues/new) and we'll tell
 you what we need.
+
+
+
+### Windows 7
+
+*Instructions for Bitcoin Core 0.10.0.*
+
+Go to the [Bitcoin Core download page](/en/download) and verify you have
+made a secure connection to the server.
+
+![Verify secure connection](/img/full-node/en-secure-connection.png)
+
+Click the large blue *Download Bitcoin Core* button to download the
+Bitcoin Core installer to your desktop.
+
+{{verifyReleaseSignatures}}
+
+After downloading the file to your desktop, run it by double-clicking
+its icon. Windows will ask you to confirm that you want to run it:
+
+![UAC Prompt to install](/img/full-node/en-uac-run-installer.png)
+
+The Bitcoin installer will start.  It's a typical Windows installer, and
+it will guide you through the decisions you need to make about where to
+install Bitcoin Core.
+
+![Windows 7 installer start](/img/full-node/en-win7-installer-start.png)
+
+<div class="box" markdown="1">
+*To continue, choose one of the following options*
+
+1. If you want to use the Bitcoin Core Graphical User Interface (GUI),
+   proceed to the [Bitcoin Core GUI](#win7-gui) section below.
+
+2. If you want to use the Bitcoin Core daemon (bitcoind), which is
+   useful for programmers and advanced users, proceed to the [Bitcoin
+   Core Daemon](#win7-daemon) section below.
+
+3. To want to use both the GUI and the daemon, read both the [GUI
+   instructions](#ubuntu-gui) and the [daemon
+   instructions](#ubuntu-daemon). Note that you can't run both the GUI
+   and the daemon at the same time using the same configuration
+   directory.
+
+</div>
+
+#### Bicoin Core GUI {#win7-gui}
+{:.no_toc}
+
+Open the *Start* menu, type `bitcoin` into the search box, and click the
+*Bitcoin Core* icon.
+
+![Start Bitcoin Core](/img/full-node/en-win7-start-bitcoin-core.png)
+
+You will be prompted to choose a directory to store the Bitcoin block
+chain and your wallet.  Unless you have a separate partition or drive
+you want to use, click Ok to use the default.
+
+![Bitcoin-Qt Welcome](/img/full-node/en-win7-welcome-to-bitcoin-core.png)
+
+Your firewall may block Bitcoin Core from making outbound connections.
+It's safe to allow Bitcoin Core to use all networks. (Note: you will
+still need to configure inbound connections as described later in the
+[Network Configuration](#network-configuration) section.)
+
+![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win7-bitcoin-core-outgoing-firewall.png)
+
+Bitcoin Core GUI will begin to download the block chain.  This
+step will take at least several hours, and it may take a day or more on
+a slow Internet connection or with a slow computer.  During the
+download, Bitcoin Core will use a significant part of your connection
+bandwidth.  You can stop Bitcoin Core at any time by closing it; it will
+resume from the point where it stopped the next time you start it.
+
+![Bitcoin-Qt Initial Block Download](/img/full-node/en-win7-ibd.png)
+
+After download is complete, you may use Bitcoin Core as your wallet or
+you can just let it run to help support the Bitcoin network.
+
+<div class="box" markdown="1">
+*Optional: Start Your Node At Login*
+
+Starting your node automatically each time you login to your computer
+makes it easy for you to contribute to the network. The easiest way
+to do this is to tell Bitcoin Core GUI to start at login.
+
+While running Bitcoin Core GUI, open the Settings menu and choose
+Options.  On the Main tab, click *Start Bitcoin on system login*.  Click
+the Ok button to save the new settings.
+
+![Choosing to start Bitcoin Core at login](/img/full-node/en-win7-start-on-login.png)
+
+The next time you login to your desktop, Bitcoin Core GUI will be
+automatically started minimized in the task bar.
+
+</div>
+
+{{installFinished}}
+
+
+#### Bicoin Core Daemon {#windows-daemon}
+{:.no_toc}
+
+If you can provide instructions and screenshots for running the latest
+version of Bitcoin Core daemon on Windows 7, please [open an
+issue](https://github.com/bitcoin/bitcoin.org/issues/new) and we'll tell
+you what we need.
+
+
+
 
 ## Mac OS X Instructions
 
@@ -518,7 +1067,7 @@ computer's network card and add it to the list. This operation differs
 by operating system:
 
 * **Windows 7 & 8:** Press Win-R (Windows key plus the R key) to open
-  the Run dialog. Type `cmd` to open the console. Type `ipconfig` and
+  the Run dialog. Type `cmd` to open the console. Type `ipconfig /all` and
   find the result that best matches your connection---usually a wireless
   connection. Look for a line that starts with "Physical Address" and
   contains a value like this:
