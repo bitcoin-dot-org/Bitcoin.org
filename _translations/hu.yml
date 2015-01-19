@@ -116,13 +116,13 @@ hu:
     walletkncwallet: "A KcN Wallet arra törekszik, hogy egyszerűen küldhessen bitcoinokat a családjának és barátainak. Tartalmaz egy online könyvtárat, így a kapcsolatai számára azonnal küldhet bitcoinokat, anélkül, hogy ismerné a Bitcoin-címüket."
     walletbreadwallet: "A breadwallet központi tervezési elve az egyszerűség. Valódi különálló Bitcoin-kliensként nincs feltört vagy leálló szerver, és az iOS erős biztonságára építve a breadwallletet úgy tervezték, hogy megvédje Önt a rosszindulatú szoftverektől, a böngészők biztonsági réseitől és akár a fizikai lopástól is."
     walletmyceliumwallet: "A Mycelium Bitcoin Wallet egy nyílt forráskódú, androidra letölthető pénztárca, amelyet a biztonság, sebesség és egyszerű használat jegyében terveztek. Egyedi szolgáltatásokat biztosít kulcsai és hidegtárolásai kezeléséhez, bitcoinjai védelme érdekben."
-    walletblockchaininfo: "A Blockchain.info egy felhasználóbarát, hibrid pénztárca. Online tárolja a pénztárcája titkosított verzióját, de a titkosítás feloldása a böngészőjében történik. Biztonsági okokból mindig használja a böngészőbővítményt és az e-mail biztonsági mentéseket (és tartsa biztonságban ezt az e-mail fiókot)."
     walletcoinbase: "A Coinbase egy webes pénztárca-szolgáltatás, amely az egyszerű használatot célozza. Ezenkívül androidra letölthető webes pénztárca-alkalmazást, kereskedői eszközöket, valamint a bitcoinok vásárláshoz és eladásához szükséges amerikai bankszámlákkal való integrációt biztosít."
     walletxapo: "A Xapo egy hétköznapi Bitcoin-pénztárca kényelmét egy biztosított, hidegtárolású páncélszekrény biztonságával kombinálja. A Xapo Debit Card össze van kötve a Xapo Walletjével és lehetővé teszi Ön számára, hogy világszerte, kereskedők millióinál költse el a bitcoinjait."
     walletcoinkite: "A Coinkite egy webes pénztárca-, valamint hitelkártya-szolgáltatás, amely fő célja az egyszerű használatóság. Mobiltelefonos böngészőkből is működik, tartalmaz kereskedői eszközöket és POS fizetési terminálokat. Egy hibrid pénztárca és maximális (kész)pénztartású trezor."
     walletbitgo: "A BitGo egy csoportos aláírást igénylő pénztárca, amely magas szintű biztonságot garantál. Minden tranzakció két aláírást igényel, megvédve ezzel bitcoinjait a rosszindulatú szoftverektől és szervertámadásoktól. A privát kulcsokat a felhasználók birtokolják, ily módon a BitGo nem férhet hozzá a bitcoinokhoz. Jó választás a számítástechnikai ismeretekkel nem rendelkező felhasználók számára."
     walletgreenaddress: "A GreenAddress egy felhasználóbarát, csoportos aláírást igénylő pénztárca megnövelt biztonsággal és adatvédelemmel. A privát kulcsai sohasem lesznek szerveroldalon, még titkosított állapotban sem. Biztonsági okokból 2FA-t (kétszintű hitelesítést) és a böngészőkiterjesztést vagy Android-alkalmazást érdemes használnia."
     wallettrezor: "A TREZOR egy, a kényelem feláldozása nélkül magas szintű biztonságot kínáló hardverpénztárca. A hidegtárolással ellentétben a TREZOR egy online készülékhez csatlakozva is képes tranzakciókat aláírni. Ez azt jelenti, hogy a bitcoinok küldése akár akkor is biztonságos, ha egy feltört számítógépet használ."
+    wallethw1: "A HW.1 egy ST23YT66 banki okoskártya platformra épülő hardverpénztárca. Biztonságban tartja a felhasználó privát kulcsait, érvényesíti a tranzakciókat és biztonságos feltöltőkártyaként vagy egy csoportos aláírású félként használható. Bár nem nyílt forráskódú, determinisztikusan érvényesíthető."
     walletdownload: "Telepítés"
     walletvisit: "Tovább a weboldalra"
     walletsourcecode: "Forráskód"
@@ -144,6 +144,8 @@ hu:
     checkfailcontrolthirdpartytxt: "Ez a szolgáltatás teljes kontrollal rendelkezik a pénze felett. Ez azt jelenti, hogy meg kell bíznia abban, hogy ez a szolgáltatás a saját hibájából fakadóan nem veszíti el a pénzét. A mai napig a legtöbb webes pénztárca nem biztosítja a betétjeit bank módjára, és sok ehhez hasonló szolgáltatás esett áldozatul lopásoknak."
     checkgoodvalidationfullnode: "Teljes érvényesítés"
     checkgoodvalidationfullnodetxt: "Ez a pénztárca egy teljes csomópont, amely hitelesíti és továbbítja a tranzakciókat a Bitcoin-hálózaton. Ez azt jelenti, hogy nem szükséges harmadik félbe vetett bizalom a tranzakciók hitelesítéséhez. A teljes csomópontok biztosítják a legmagasabb szintű biztonságot, és elengedhetetlenek a hálózat védelme fenntartásához. Ugyanakkor több helyet (több mint 20 GB), sávszélességet és hosszabb szinkronizációs időt igényelnek."
+    checkgoodvalidationfullnoderequired: "Teljes érvényesítés"
+    checkgoodvalidationfullnoderequiredtxt: "Ez a pénztárca egy teljes csomóponti szoftver telepítését igényli, amely érvényesíti és továbbítja a tranzakciókat a Bitcoin-hálózaton. Ez azt jelenti, hogy nem szükséges harmadik félbe vetett bizalom a tranzakciók hitelesítéséhez. A teljes csomópontok biztosítják a legmagasabb szintű biztonságot, és elengedhetetlenek a hálózat védelmének fenntartásához. Ugyanakkor több helyet (több mint 20 GB-ot), sávszélességet és hosszabb kezdeti szinkronizációs időt igényelnek."
     checkneutralvalidationvariable: "Változékony érvényesítés"
     checkneutralvalidationvariabletxt: "A kifizetésérvényesítési funkciókat az ezzel a készülékkel használt szoftveres pénztárca biztosítja. Kérjük, tekintse meg használni tervezett pénztárca Érvényesítési értékét."
     checkpassvalidationspvp2p: "Egyszerűsített érvényesítés"
@@ -433,9 +435,6 @@ hu:
     list3: "Zéró vagy alacsony<br>feldolgozási díjak"
     desc: "A Bitcoin működéséhez peer-to-peer technológiát használ, központi hatalom vagy bankok nélkül; a tranzakciók kezelése és a bitcoinok kibocsátása a hálózat közössége által történik. <b>A Bitcoin nyílt forráskódú, konstrukciója nyilvános, senki sem birtokolja és irányítja, ugyanakkor <a href=\"#support-bitcoin#\">bárki hozzájárulhat fejlődéséhez.</a></b> Számos egyedi tulajdonsága révén olyan izgalmas használati módokat biztosít, amelyeket korábban egy fizetési rendszer sem tett lehetővé."
     overview: "Vagy tekintse meg rövid összefoglalóinkat a következő felhasználói csoportok számára:"
-    individuals: "Magánszemélyeknek"
-    businesses: "Vállalkozásoknak"
-    developers: "Fejlesztőknek"
   innovation:
     title: "Innováció - Bitcoin"
     pagetitle: "Innováció a fizetési rendszerek terén"
@@ -467,8 +466,31 @@ hu:
   legal:
     title: "Jogi felelősségkizárás - Bitcoin"
     pagetitle: "Jogi felelősségkizárás"
-    termstxt1: "Jelen weboldal általános jellegű információkat és anyagokat tartalmaz. Ezen információk kizárólag a tájékoztatást szolgálják. Jelen weboldal tartalmazhat olyan információkat, amelyek valós vagy potenciális jogi problémákat tárgyalnak. Ezen információk nem helyettesítik a szakszerű jogi tanácsadást. Ön nem jogosult, valamint nem is célszerű e weboldalra hagyatkoznia jogi tanácsokkal kapcsolatban. A tulajdonosok és/vagy szerkesztők semmilyen körülmények között nem felelősek e weboldalra való hagyatkozás folyományaként elkövetett cselekedetekért, döntésekért vagy más alkalmazott vagy nem alkalmazott magatartásokért. Ezt többek között, de nem kizárólagosan jogi és technológiai okok indokolják. Jelen weboldal tartalmára való hagyatkozásával saját kockázatára cselekszik. Döntései előtt lépjen kapcsolatba egy képzett ügyvéddel abban a joghatóságban, amellyel kapcsolatban segítséget kíván kapni."
-    termstxt2: "Ez a weboldal az eredeti, angol nyelvű tartalom fordításait tartalmazhatja. Ezek a fordítások csupán a felhasználói kényelmet biztosítják. Bármilyen, az angol nyelvű és a fordított verzióval kapcsolatos probléma esetén az angol nyelvű verzió élvez elsőbbséget. Amennyiben bármilyen jellegű következetlenséget észlel, kérjük, jelentse ezeket a <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a> weboldalán."
+    information: "A bitcoin.org weboldalon közzétett információ"
+    informationtxt1: "A http://bitcoin.org/ weboldal (a továbbiakban a \"Weboldal\") általános természetű információkat és anyagokat biztosít. Ön nincs felhatalmazva és nem célszerű a Weboldalra hagyatkoznia jogi tanácsért, üzleti tanácsért, vagy bármilyen jellegű tanácsért. A Weboldal tartalmára való hagyatkozás során saját felelősségére cselekszik. Amennyiben döntési helyzetbe kerül, érdemes okleveles jogászt felkeresnie abban a joghatóságban, ahol segítségre vágyik vagy segítségre van szüksége. A Weboldal tulajdonosai, közreműködői semmilyen formában nem felelősek az Ön Weboldalra való hagyatkozásából következő tettek, döntések vagy egyéb magatartások megvalósulásáért vagy elmaradásáért."
+    translations: "Fordítások"
+    translationstxt1: "A Weboldal a Weboldalon található, eredeti, angol nyelvű tartalom fordításait tartalmazhatja. Ezek a fordítások csupán a felhasználói kényelmet biztosítják. Bármilyen, az angol nyelvű és a fordított változattal kapcsolatos probléma esetén az angol nyelvű verzió élvez elsőbbséget. Amennyiben bármilyen jellegű következetlenséget észlel, kérjük, jelentse ezeket a <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHubon</a>."
+    userisks: "A Bitcoin használatával kapcsolatos kockázatok"
+    useriskstxt1: "A Weboldal nem felelős az alábbi öt kategóriába eső események következtében felmerülő bármilyen veszteségért, kárért vagy követelésért:"
+    useriskstxt2: "Bármely Bitcoinhoz köthető szoftver vagy szolgáltatás felhasználója által elkövetett hibák; például elfelejtett jelszavak, rossz Bitcoin-címekre küldött kifizetések és pénztárcák véletlen törlése."
+    useriskstxt3: "A Weboldal és/vagy bármely Bitcoinhoz köthető szoftver vagy szolgáltatás szoftverhibája; például sérült pénztárca-fájl, helytelenül létesített tranzakciók, nem biztonságos titkosítási könyvtárak, rosszindulatú szoftver által érintett Weboldal és/vagy bármely Bitcoinhoz köthető szoftver vagy szolgáltatás."
+    useriskstxt4: "Bármely Bitcoinhoz köthető szoftver vagy szolgáltatás felhasználója hardverének technikai meghibásodása; például hibás vagy sérült tárolóeszköz miatti adatvesztés."
+    useriskstxt5: "Bármely Bitcoinhoz köthető szoftver vagy szolgáltatás felhasználója által tapasztalt biztonsági problémák; például a felhasználók pénztárcájához vagy felhasználói fiókjához való engedély nélküli hozzáférés."
+    useriskstxt6: "Külső felek tettei vagy tétlensége és/vagy külső felek által tapasztalt események; például a szolgáltató csődje, a szolgáltató elleni információbiztonsági támadások, és külső felek által elkövetett csalások."
+    investmentrisks: "Befektetési kockázatok"
+    investmentriskstxt1: "A Bitcoinba való befektetés rövid vagy akár hosszútávú pénzveszteséghez vezethet. A Bitcoinba befektetők az árak nagy mértékű fluktuációjára számíthatnak. A Weboldalon közzétett információ nem garantálja, hogy a Bitcoinba befektetők elkerülik a pénzveszteséget."
+    taxcompliance: "Megfelelés az adózási kötelezettségeknek"
+    taxcompliancetxt1: "A Weboldal felhasználói egyedül felelősek a Bitcoin-tranzakcióikkal kapcsolatban felmerülő adók meghatározásáért. A Weboldal tulajdonosai vagy közreműködői NEM felelősek a Bitcoin-transzakciókkal kapcsolatban felmerülő adók meghatározásáért."
+    noissuer: "A Weboldal nem tárol, küld vagy fogad bitcoinokat"
+    noissuertxt1: "A Weboldal nem tárol, küld vagy fogad bitcoinokat. Ennek oka az, hogy a bitcoinok kizárólag a Bitcoin-hálózat által fenntartott tulajdonosi adatok révén léteznek. Bármely bitcoin tulajdonjogának átruházása egy decentralizált Bitcoin-hálózaton keresztül történik, és nem a Weboldalon."
+    nowarranties: "Nincs jótállás"
+    nowarrantiestxt1: "A Weboldalt jelen formájában biztosítjuk, a Weboldalra és/vagy a Weboldal által biztosított tartalomra, adatra, anyagokra és/vagy szolgáltatásokra vonatkozó bármifajta jótállás nélkül."
+    noliability: "A felelősség korlátozása"
+    noliabilitytxt1: "Ha a törvény másképp nem rendelkezik, a Weboldal tulajdonosai vagy közreműködői nem felelősek semmilyen kárért, beleértve, de nem korlátozva a Weboldal használatából bármilyen módon következő munkaképesség-csökkenésre, profitvesztésre vagy adatvesztésre."
+    arbitration: "Döntőbíráskodás"
+    arbitrationtxt1: "A Weboldal felhasználója hozzájárul ahhoz, hogy bármely, a Weboldalból vagy jelen felelősségkizárásból következő, vagy ezekkel kapcsolatban felmerülő vitás kérdést, kivéve a szerző jogokkal, logókkal, védjegyekkel, márkanevekkel, üzleti titkokkal vagy szabadalmakkal kapcsolatosakat, választottbíróság útján rendez."
+    lastchange: "Utolsó módosítás"
+    lastchangetxt1: "Jelen felelősségkizárás utoljára következő időpontban módosult:"
   press:
     title: "Sajtó - Bitcoin"
     pagetitle: "Sajtóközpont"
@@ -479,6 +501,13 @@ hu:
     faqmore: "A Bitcoinnal kapcsolatos további információkhoz látogasson el a teljes <a href=\"/en/faq\">GYIK-et</a> tartalmazó oldalra vagy a <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wikire</a>."
     materialpicture: "Képek"
     materialpicturemore: "További képek..."
+  privacy:
+    title: "Adatvédelem - Bitcoin"
+    pagetitle: "Adatvédelem"
+    datacollect: "Összegyűjtött adatok"
+    datacollecttxt: "A bitcoin.org anonimizált szervernapló-adatokat gyűjt. Ezek a naplók olyan IP-címeket tartalmaznak, amelyek utolsó bájtja, a látogatás ideje, a lekért oldal, a felhasználói ágens (user agent) és a hivatkozó (referer) URL cserélve van. A bitcoin.org cookie-k használatával nem gyűjt adatokat."
+    datause: "Adatfelhasználás"
+    datausetxt: "Az összegyűjtött adatokat <a href=\"/stats/\">transzparens, nyilvános statisztikákhoz</a> használjuk fel."
   protect-your-privacy:
     title: "Védje meg személyes adatait - Bitcoin"
     pagetitle: "Védje meg személyes adatait"
@@ -645,7 +674,9 @@ hu:
     menu-intro: Bevezetés
     menu-legal: "Jogi vonatkozások"
     menu-press: "Sajtó"
+    menu-privacy: "Adatvédelem"
     menu-resources: Információs anyagok
+    menu-stats: "Statisztikák"
     menu-support-bitcoin: Részvétel
     menu-vocabulary: Szótár
     menu-you-need-to-know: "Érdemes tudnia"
@@ -669,6 +700,7 @@ hu:
     innovation: innovacio
     legal: jogi-vonatkozasok
     press: sajto
+    privacy: adatvedelem
     protect-your-privacy: vedje-meg-szemelyes-adatait
     resources: informacios-anyagok
     secure-your-wallet: vedje-meg-penztarcajat
