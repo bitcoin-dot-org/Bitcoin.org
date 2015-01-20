@@ -131,6 +131,8 @@ have an easy-to-use node.
 
 * 6 hours a day that your full node can be left running. (You can do
   other things with your computer while running a full node.)
+  More hours would be better, and best of all would be if you can run
+  your node continuously.
 
 ### Possible Problems
 
