@@ -20,6 +20,7 @@ require 'yaml'
 module Jekyll
   
   class ReleasePage < Page
+
     def initialize(site, base, lang, srcdir, src, dstdir, dst, year, month, day)
       @site = site
       @base = base
@@ -29,19 +30,31 @@ module Jekyll
       self.read_yaml(File.join(base, srcdir), src)
       self.data['lang'] = lang
       self.data['date'] = year + '-' + month + '-' + day
+      self.data['version'] = dst.gsub('.md','').gsub(/[a-z]/,'')
+      self.data['versionint'] = versiontoint(self.data['version'])
       self.data['layout'] = 'release'
       if dstdir.index('/releases/') === 0
         self.data['redirect'] = '/en/release/' + dst.gsub('.md','')
         self.data['layout'] = 'redirect'
       else
         self.data['category'] = 'release'
-        if !site.config.has_key?('DOWNLOAD_DATE') or site.config['DOWNLOAD_DATE'] < year + '-' + month + '-' + day
-          site.config['DOWNLOAD_DATE'] = year + '-' + month + '-' + day
-          site.config['DOWNLOAD_VERSION'] = dst.gsub('.md','').gsub(/[a-z]/,'')
+        if !site.config.has_key?('DOWNLOAD_VERSION') or site.config['DOWNLOAD_VERSIONINT'] < self.data['versionint']
+          site.config['DOWNLOAD_VERSIONINT'] = self.data['versionint']
+          site.config['DOWNLOAD_VERSION'] = self.data['version']
         end
         site.pages << ReleasePage.new(site, base, lang, srcdir, src, '/releases/' + year + '/' + month + '/' + day, dst, year, month, day)
       end
     end
+
+    def versiontoint(v)
+      x = 0
+      ar = v.split('.').map{|s| s.to_i}
+      ar.each_index do |k|
+        x += ar[k] * (1000 ** (5 - k))
+      end
+      return x
+    end
+
   end
 
   class ReleasePageGenerator < Generator
