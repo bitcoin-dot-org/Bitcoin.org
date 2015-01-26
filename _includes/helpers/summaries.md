@@ -81,3 +81,6 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_getTxOutSetInfo="returns statistics about the confirmed unspent transaction output (UTXO) set. Note that this call may take some time and that it only counts outputs from confirmed transactions---it does not count outputs from the memory pool." %}
 {% assign summary_getMiningInfo="returns various mining-related information." %}
 {% assign summary_move="moves a specified amount from one account in your wallet to another using an off-block-chain transaction." %}
+{% assign summary_restGetBlock="gets a block with a particular header hash from the local block database either as a JSON object or as a serialized block." %}
+{% assign summary_restGetBlock-noTxDetails="gets a block with a particular header hash from the local block database either as a JSON object or as a serialized block.  The JSON object includes TXIDs for transactions within the block rather than the complete transactions [GET block][rest get block] returns." %}
+{% assign summary_restGetTx="gets a hex-encoded serialized transaction or a JSON object describing the transaction. By default, Bitcoin Core only stores complete transaction data for UTXOs and your own transactions, so this method may fail on historic transactions unless you use the non-default `txindex=1` in your Bitcoin Core startup settings." %}

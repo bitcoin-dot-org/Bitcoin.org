@@ -36,29 +36,29 @@ it to account2 with the `move` RPC, account2 will be able to spend those
 bitcoins even if this parameter is set to `1` or higher.{% endcapture %}
 
 
-{% capture INCLUDE_DECODE_RAW_TRANSACTION %}| →<br>`txid`           | string (hex)    | Required<br>(exactly 1)     | The transaction's TXID encoded as hex in RPC byte order
-| →<br>`version`          | number (int)      | Required<br>(exactly 1)     | The transaction format version number
-| →<br>`locktime`         | number (int)      | Required<br>(exactly 1)     | The transaction's locktime: either a Unix epoch date or block height; see the [Locktime parsing rules][]
-| →<br>`vin`              | array             | Required<br>(exactly 1)     | An array of objects with each object being an input vector (vin) for this transaction.  Input objects will have the same order within the array as they have in the transaction, so the first input listed will be input 0
-| → →<br>Input            | object            | Required<br>(1 or more)     | An object describing one of this transaction's inputs.  May be a regular input or a coinbase
-| → → →<br>`txid`         | string            | Optional<br>(0 or 1)        | The TXID of the outpoint being spent, encoded as hex in RPC byte order.  Not present if this is a coinbase transaction
-| → → →<br>`vout`         | number (int)      | Optional<br>(0 or 1)        | The output index number (vout) of the outpoint being spent.  The first output in a transaction has an index of `0`.  Not present if this is a coinbase transaction
-| → → →<br>`scriptSig`    | object            | Optional<br>(0 or 1)        | An object describing the signature script of this input.  Not present if this is a coinbase transaction
-| → → → →<br>`asm`        | string            | Required<br>(exactly 1)     | The signature script in decoded form with non-data-pushing op codes listed
-| → → → →<br>`hex`        | string (hex)      | Required<br>(exactly 1)     | The signature script encoded as hex
-| → → →<br>`coinbase`     | string (hex)      | Optional<br>(0 or 1)        | The coinbase (similar to the hex field of a scriptSig) encoded as hex.  Only present if this is a coinbase transaction
-| → → →<br>`sequence`     | number (int)      | Required<br>(exactly 1)     | The input sequence number
-| →<br>`vout`             | array             | Required<br>(exactly 1)     | An array of objects each describing an output vector (vout) for this transaction.  Output objects will have the same order within the array as they have in the transaction, so the first output listed will be output 0
-| → →<br>Output           | object            | Required<br>(1 or more)     | An object describing one of this transaction's outputs
-| → → →<br>`value`        | number (bitcoins) | Required<br>(exactly 1)     | The number of bitcoins paid to this output.  May be `0`
-| → → →<br>`n`            | number (int)      | Required<br>(exactly 1)     | The output index number of this output within this transaction
-| → → →<br>`scriptPubKey` | object            | Required<br>(exactly 1)     | An object describing the pubkey script
-| → → → →<br>`asm`        | string            | Required<br>(exactly 1)     | The pubkey script in decoded form with non-data-pushing op codes listed
-| → → → →<br>`hex`        | string (hex)      | Required<br>(exactly 1)     | The pubkey script encoded as hex
-| → → → →<br>`reqSigs`    | number (int)      | Optional<br>(0 or 1)        | The number of signatures required; this is always `1` for P2PK, P2PKH, and P2SH (including P2SH multisig because the redeem script is not available in the pubkey script).  It may be greater than 1 for bare multisig.  This value will not be returned for `nulldata` or `nonstandard` script types (see the `type` key below)
-| → → → →<br>`type`       | string            | Optional<br>(0 or 1)        | The type of script.  This will be one of the following:<br>• `pubkey` for a P2PK script<br>• `pubkeyhash` for a P2PKH script<br>• `scripthash` for a P2SH script<br>• `multisig` for a bare multisig script<br>• `nulldata` for nulldata scripts<br>• `nonstandard` for unknown scripts
-| → → → →<br>`addresses`  | string : array    | Optional<br>(0 or 1)        | The P2PKH or P2SH addresses used in this transaction, or the computed P2PKH address of any pubkeys in this transaction.  This array will not be returned for `nulldata` or `nonstandard` script types
-| → → → → →<br>Address     | string           | Required<br>(1 or more)     | A P2PKH or P2SH address{% endcapture %}
+{% capture INCLUDE_DECODE_RAW_TRANSACTION %}|{{DEPTH}} →<br>`txid`           | string (hex)    | Required<br>(exactly 1)     | The transaction's TXID encoded as hex in RPC byte order
+|{{DEPTH}} →<br>`version`          | number (int)      | Required<br>(exactly 1)     | The transaction format version number
+|{{DEPTH}} →<br>`locktime`         | number (int)      | Required<br>(exactly 1)     | The transaction's locktime: either a Unix epoch date or block height; see the [Locktime parsing rules][]
+|{{DEPTH}} →<br>`vin`              | array             | Required<br>(exactly 1)     | An array of objects with each object being an input vector (vin) for this transaction.  Input objects will have the same order within the array as they have in the transaction, so the first input listed will be input 0
+|{{DEPTH}} → →<br>Input            | object            | Required<br>(1 or more)     | An object describing one of this transaction's inputs.  May be a regular input or a coinbase
+|{{DEPTH}} → → →<br>`txid`         | string            | Optional<br>(0 or 1)        | The TXID of the outpoint being spent, encoded as hex in RPC byte order.  Not present if this is a coinbase transaction
+|{{DEPTH}} → → →<br>`vout`         | number (int)      | Optional<br>(0 or 1)        | The output index number (vout) of the outpoint being spent.  The first output in a transaction has an index of `0`.  Not present if this is a coinbase transaction
+|{{DEPTH}} → → →<br>`scriptSig`    | object            | Optional<br>(0 or 1)        | An object describing the signature script of this input.  Not present if this is a coinbase transaction
+|{{DEPTH}} → → → →<br>`asm`        | string            | Required<br>(exactly 1)     | The signature script in decoded form with non-data-pushing op codes listed
+|{{DEPTH}} → → → →<br>`hex`        | string (hex)      | Required<br>(exactly 1)     | The signature script encoded as hex
+|{{DEPTH}} → → →<br>`coinbase`     | string (hex)      | Optional<br>(0 or 1)        | The coinbase (similar to the hex field of a scriptSig) encoded as hex.  Only present if this is a coinbase transaction
+|{{DEPTH}} → → →<br>`sequence`     | number (int)      | Required<br>(exactly 1)     | The input sequence number
+|{{DEPTH}} →<br>`vout`             | array             | Required<br>(exactly 1)     | An array of objects each describing an output vector (vout) for this transaction.  Output objects will have the same order within the array as they have in the transaction, so the first output listed will be output 0
+|{{DEPTH}} → →<br>Output           | object            | Required<br>(1 or more)     | An object describing one of this transaction's outputs
+|{{DEPTH}} → → →<br>`value`        | number (bitcoins) | Required<br>(exactly 1)     | The number of bitcoins paid to this output.  May be `0`
+|{{DEPTH}} → → →<br>`n`            | number (int)      | Required<br>(exactly 1)     | The output index number of this output within this transaction
+|{{DEPTH}} → → →<br>`scriptPubKey` | object            | Required<br>(exactly 1)     | An object describing the pubkey script
+|{{DEPTH}} → → → →<br>`asm`        | string            | Required<br>(exactly 1)     | The pubkey script in decoded form with non-data-pushing op codes listed
+|{{DEPTH}} → → → →<br>`hex`        | string (hex)      | Required<br>(exactly 1)     | The pubkey script encoded as hex
+|{{DEPTH}} → → → →<br>`reqSigs`    | number (int)      | Optional<br>(0 or 1)        | The number of signatures required; this is always `1` for P2PK, P2PKH, and P2SH (including P2SH multisig because the redeem script is not available in the pubkey script).  It may be greater than 1 for bare multisig.  This value will not be returned for `nulldata` or `nonstandard` script types (see the `type` key below)
+|{{DEPTH}} → → → →<br>`type`       | string            | Optional<br>(0 or 1)        | The type of script.  This will be one of the following:<br>• `pubkey` for a P2PK script<br>• `pubkeyhash` for a P2PKH script<br>• `scripthash` for a P2SH script<br>• `multisig` for a bare multisig script<br>• `nulldata` for nulldata scripts<br>• `nonstandard` for unknown scripts
+|{{DEPTH}} → → → →<br>`addresses`  | string : array    | Optional<br>(0 or 1)        | The P2PKH or P2SH addresses used in this transaction, or the computed P2PKH address of any pubkeys in this transaction.  This array will not be returned for `nulldata` or `nonstandard` script types
+|{{DEPTH}} → → → → →<br>Address     | string           | Required<br>(1 or more)     | A P2PKH or P2SH address{% endcapture %}
 
 {% assign INCLUDE_WALLET_UNLOCKED="If the wallet has been encrypted either through the GUI or with the `encryptwallet` RPC, it must first be unlocked with the `walletpassphrase` RPC" %}
 

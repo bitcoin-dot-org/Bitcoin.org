@@ -267,6 +267,10 @@ script hash:
 secp256k1:
 sequence number:
 sequence numbers: sequence number
+serialized block: section serialized blocks
+serialized blocks: section serialized block
+serialized transaction: raw transaction format
+serialized transactions: raw transaction format
 SIGHASH: signature hash
 '`SIGHASH_ANYONECANPAY`': shacp
 '`SIGHASH_ALL`': sighash_all

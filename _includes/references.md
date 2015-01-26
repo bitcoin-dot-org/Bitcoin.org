@@ -290,6 +290,11 @@ http://opensource.org/licenses/MIT.
 [rpc walletpassphrase]: /en/developer-reference#walletpassphrase
 [rpc walletpassphrasechange]: /en/developer-reference#walletpassphrasechange
 
+<!-- REST requests; alphabetical order -->
+[rest get block]: /en/developer-reference#get-block
+[rest get block-notxdetails]: /en/developer-reference#get-blocknotxdetails
+[rest get tx]: /en/developer-reference#get-tx
+
 <!-- Other internal site links; alphabetical order -->
 [Bitcoin Core 0.6.0]: /en/release/v0.6.0
 [Bitcoin Core 0.6.1]: /en/release/v0.6.1

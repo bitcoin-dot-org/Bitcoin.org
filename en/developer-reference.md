@@ -48,7 +48,7 @@ title: "Developer Reference - Bitcoin"
 {{WARNING}} the block chain and memory pool can include arbitrary data
 which several of the commands below will return in hex format. If you
 convert this data to another format in an executable context, it could
-be used in an exploit. For example, displaying an output script as
+be used in an exploit. For example, displaying a pubkey script as
 ASCII text in a webpage could add arbitrary Javascript to that page and
 create a cross-site scripting (XSS) exploit. To avoid problems, please
 treat block chain and memory pool data as an arbitrary input from an
@@ -216,6 +216,27 @@ untrusted source.
 
 {% include ref/bitcoin-core/rpcs/rpcs/walletpassphrasechange.md %}
 
+{% include ref/bitcoin-core/rest/intro.md %}
+
+{% include ref/bitcoin-core/rest/quick-reference.md %}
+
+#### Requests
+<!-- no subhead-links here -->
+
+{{WARNING}} the block chain and memory pool can include arbitrary data
+which several of the commands below will return in hex format. If you
+convert this data to another format in an executable context, it could
+be used in an exploit. For example, displaying a pubkey script as
+ASCII text in a webpage could add arbitrary Javascript to that page and
+create a cross-site scripting (XSS) exploit. To avoid problems, please
+treat block chain and memory pool data as an arbitrary input from an
+untrusted source.
+
+{% include ref/bitcoin-core/rest/requests/get_block.md %}
+
+{% include ref/bitcoin-core/rest/requests/get_block-notxdetails.md %}
+
+{% include ref/bitcoin-core/rest/requests/get_tx.md %}
 
 {% include references.md %}
 
