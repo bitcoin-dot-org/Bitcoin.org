@@ -13,6 +13,8 @@ http://opensource.org/licenses/MIT.
 
 The `GET tx` operation {{summary_restTx}}
 
+{{reindexNote}}
+
 *Request*
 
 {% highlight text %}

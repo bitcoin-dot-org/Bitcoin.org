@@ -13,6 +13,8 @@ http://opensource.org/licenses/MIT.
 
 The `getrawtransaction` RPC {{summary_getRawTransaction}}
 
+{{reindexNote}}
+
 *Parameter #1---the TXID of the transaction to get*
 
 | Name               | Type            | Presence                    | Description

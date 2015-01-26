@@ -16,6 +16,9 @@ port 18332 for testnet. It must be enabled by either starting Bitcoin
 Core with the `-rest` option or by specifying `rest=1` in the
 configuration file.
 
+The interface is not intended for public access and is only accessible
+from localhost by default.
+
 {{WARNING}} A web browser can access a HTTP REST interface running on
 localhost, possibly allowing third parties to use cross-site scripting
 attacks to download your transaction and block data, reducing your

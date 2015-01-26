@@ -119,6 +119,9 @@ Page][devexamples] for details. JSON-RPC starts on port 8332 for mainnet
 and 18332 for testnet and regtest. By default, `bitcoind` doesn't use a
 JSON-RPC user, but you can set one (see `bitcoind --help`).
 
+The interface is not intended for public access and is only accessible
+from localhost by default.
+
 RPCs are made using the standard JSON-RPC 1.0 syntax, which sends several
 standard arguments:
 
