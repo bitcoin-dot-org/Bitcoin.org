@@ -165,14 +165,18 @@ have an easy-to-use node.
 The following instructions describe installing Bitcoin Core on Linux
 systems.
 
-### Ubuntu 14.10 Desktop
+### Ubuntu 14.10
 
 *Instructions for Bitcoin Core 0.10.0.*
 
-Click the Ubuntu swirl icon to start the Dash and type "term" into the
+If you use Ubuntu Desktop, click the Ubuntu swirl icon to start the Dash and type "term" into the
 input box. Choose any one of the terminals listed:
 
 ![Dash term](/img/full-node/en-dash-term.png)
+
+Alternatively, access a console or terminal emulator using another
+method, such as SSH on Ubuntu Server or a terminal launcher in an
+alternative desktop environment.
 
 Type the following line to add the Bitcoin Personal Package Archive
 (PPA) to your system:
@@ -284,6 +288,11 @@ automatically started in as an icon in the tray.
 #### Bicoin Core Daemon {#ubuntu-daemon}
 {:.no_toc}
 
+If you're logged in as an administrative user with sudo access, you may
+log out.  The steps in this section should be performed as the user you
+want to run Bitcoin Core. (If you're an expert administrator, you can
+make this a locked account used only by Bitcoin Core.)
+
 Before using the Bitcoin Core daemon, `bitcoind`, you need to create its
 configuration file with a user name and password. First create the
 `.bitcoin` directory, create (touch) the file, and set the file's
@@ -380,162 +389,6 @@ script](https://github.com/bitcoin/bitcoin/tree/0.10/contrib/init/bitcoind.conf)
 </div>
 
 {{installFinished}}
-
-### Ubuntu 14.04 LTS Server
-
-*Instructions for Bitcoin Core 0.10.0.*
-
-Log into your Ubuntu server using SSH or another method that gives you
-command line access.  These first steps need to be performed as an
-administrative user with sudo access.
-
-Type the following line to add the Bitcoin Personal Package Archive
-(PPA) to your system:
-
-    sudo apt-add-repository ppa:bitcoin/bitcoin
-
-You will be prompted for your user password.  Provide it to continue.
-Afterwards, the following text will be displayed:
-
-     Stable Channel of bitcoin-qt and bitcoind for Ubuntu, and their dependencies
-     More info: https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin
-    Press [ENTER] to continue or ctrl-c to cancel adding it
-
-Press enter to continue. The following text (with some variations) will
-be displayed and you will be returned to the command line prompt:
-
-    gpg: keyring `/tmp/tmpixuqu73x/secring.gpg' created
-    gpg: keyring `/tmp/tmpixuqu73x/pubring.gpg' created
-    gpg: requesting key 8842CE5E from hkp server keyserver.ubuntu.com
-    gpg: /tmp/tmpixuqu73x/trustdb.gpg: trustdb created
-    gpg: key 8842CE5E: public key "Launchpad PPA for Bitcoin" imported
-    gpg: no ultimately trusted keys found
-    gpg: Total number processed: 1
-    gpg:               imported: 1  (RSA: 1)
-    OK
-
-Type the following line to get the most recent list of packages:
-
-    sudo apt-get update
-
-A large number of lines will be displayed as different update files are
-downloaded.  This step may take several minutes on a slow Internet
-connection.
-
-To install the Bitcoin Core daemon (bitcoind), which is useful for
-programmers and advanced users, type the following line and proceed to
-the [Bitcoin Core Daemon](#ubuntu-daemon) section below:
-
-    sudo apt-get install bitcoind
-
-After choosing what packages to install, you will be asked whether you
-want to proceed.  Press enter to continue.
-
-#### Bicoin Core Daemon {#ubuntu-server-daemon}
-{:.no_toc}
-
-If you're logged in as an administrative user with sudo access, you may
-log out.  The steps in this section should be performed as the user you
-want to run Bitcoin Core.  (This can be a locked account used only by
-Bitcoin Core.)
-
-Before using the Bitcoin Core daemon, `bitcoind`, you need to create its
-configuration file with a user name and password. First create the
-`.bitcoin` directory, create (touch) the file, and set the file's
-permissions so that only your user account can read it.  From the
-terminal, type:
-
-    mkdir ~/.bitcoin
-    touch ~/.bitcoin/bitcoin.conf
-    chmod 600 ~/.bitcoin/bitcoin.conf
-
-Then you can run the command `bitcoind`.  It will print output similar
-to this:
-
-    bitcoind
-    Error: To use the "-server" option, you must set a rpcpassword in the configuration file:
-    /home/bitcoinorg/.bitcoin/bitcoin.conf
-    It is recommended you use the following random password:
-    rpcuser=bitcoinrpc
-    rpcpassword=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    (you do not need to remember this password)
-    The username and password MUST NOT be the same.
-    If the file does not exist, create it with owner-readable-only file permissions.
-    It is also recommended to set alertnotify so you are notified of problems;
-    for example: alertnotify=echo %s | mail -s "Bitcoin Alert" admin@foo.com
-
-The "rpcpassword" displayed will be unique for your system.  You can
-copy the rpcuser and rpcpassword lines into your configuration file
-using the following commands.  Note that in most Ubuntu terminals, you need
-to press Ctrl-Shift-C to copy and Ctrl-Shift-V to paste because Ctrl-C
-and Ctrl-V have different meanings in a Unix-style terminal.
-
-    echo rpcuser=bitcoinrpc >> ~/.bitcoin/bitcoin.conf
-    echo rpcpassword=XXXXXX >> ~/.bitcoin/bitcoin.conf
-
-(**Warning:** Don't use XXXXXX as your RPC password. Copy the
-rpcpassword displayed by bitcoind for your system.)
-
-Now you can start Bitcoin Core daemon for real.  Type the following
-command:
-
-    bitcoind -daemon
-
-It will print a message that Bitcoin Core is starting.  To interact with
-Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin
-command line interface).  Note: it may take up to several minutes for
-Bitcoin Core to start, during which it will display the following
-message whenever you use `bitcoin-cli`:
-
-    error: {"code":-28,"message":"Verifying blocks..."}
-
-After it starts, you may find the following commands useful for basic
-interaction with your node:
-[`getblockchaininfo`](/en/developer-reference#getblockchaininfo),
-[`getnetworkinfo`](/en/developer-reference#getnetworkinfo),
-[`getnettotals`](/en/developer-reference#getnettotals),
-[`getwalletinfo`](/en/developer-reference#getwalletinfo),
-[`stop`](/en/developer-reference#stop), and [`help`](/en/developer-reference#help).
-For example, to safely stop your node, run the following command:
-
-    bitcoin-cli stop
-
-A complete list of commands is available in the [Bitcoin.org developer
-reference](/en/developer-reference#rpc-quick-reference).
-
-When Bitcoin Core daemon first starts, it will begin to download the
-block chain. This step will take at least several hours, and it may
-take a day or more on a slow Internet connection or with a slow
-computer. During the download, Bitcoin Core will use a significant part
-of your connection bandwidth. You can stop Bitcoin Core at any time using
-the `stop` command; it will resume from the point where it stopped the next
-time you start it.
-
-<div class="box" markdown="1">
-*Optional: Start Your Node At Boot*
-
-Starting your node automatically each time your computer boots makes it
-easy for you to contribute to the network.  The easiest way to do this
-is to start Bitcoin Core daemon from your crontab.  To edit your
-crontab, run the following command:
-
-    crontab -e
-
-Scroll to the bottom of the file displayed and add the following line:
-
-    @reboot bitcoind -daemon
-
-Save the file and exit; the updated crontab file will be installed for
-you. Now Bitcoin Core daemon will be automatically started each time
-your reboot your computer.
-
-If you're an Ubuntu expert and want to use an init script instead, see
-[this Upstart
-script](https://github.com/bitcoin/bitcoin/blob/2d782ab2ce30bf106e34cd3288c9082ac04022f9/contrib/init/bitcoind.conf).
-</div>
-
-{{installFinished}}
-
 
 ### Other Linux Distributions
 
