@@ -65,16 +65,24 @@ fe9f0864 ........................... Nonce
   <!-- source for heights: my (@harding) own headers dump and counting
   script -->
 
-* **Version 3** blocks will likely be introduced in the near-future as
+* **Version 3** blocks will be introduced when sufficient numbers of
+  miners switch to using Bitcoin Core 0.10.0 and other versions that
+  create version 3 blocks. As described in draft BIP66, this soft fork
+  change requires strict DER encoding for all ECDSA signatures used in
+  transactions appearing in version 3 or later blocks. Transactions that
+  do not use strict DER encoding have been non-standard since Bitcoin
+  Core 0.8.0.
+
+* **Version 4** blocks will likely be introduced in the near-future as
   specified in draft BIP62. Possible changes include:
 
-    * Reject version 3 blocks that include any version 2 transactions
+    * Reject version 4 blocks that include any version 2 transactions
       that don't adhere to any of the version 2 transaction rules.
       These rules are not yet described in this documentation; see
       BIP62 for details.
 
-    * A soft fork rollout of version 3 blocks identical to the rollout
-      used for version 2 blocks (described briefly in BIP62 and in more
+    * A soft fork rollout of version 4 blocks identical to the rollout
+      used for version 3 blocks (described briefly in BIP62 and in more
       detail in BIP34).
 
 {% endautocrossref %}

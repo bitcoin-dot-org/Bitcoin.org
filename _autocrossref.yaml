@@ -72,6 +72,7 @@ data-pushing op code:
 data-pushing op codes: data-pushing op code
 denomination:
 denominations: denomination
+DER:
 DER format: der
 DER-formatted: der
 difficulty:
@@ -344,6 +345,7 @@ BIP39:
 BIP50:
 BIP61:
 BIP62:
+BIP66:
 BIP70:
 BIP71:
 BIP72:

@@ -356,6 +356,7 @@ http://opensource.org/licenses/MIT.
 [BIP50]: https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki
 [BIP61]: https://github.com/bitcoin/bips/blob/master/bip-0061.mediawiki
 [BIP62]: https://github.com/bitcoin/bips/blob/master/bip-0062.mediawiki
+[BIP66]: https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki
 [BIP70]: https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki
 [BIP71]: https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki
 [BIP72]: https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki
@@ -386,7 +387,7 @@ http://opensource.org/licenses/MIT.
 [core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
 [core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
 [creative commons attribution 3.0 license]: https://creativecommons.org/licenses/by/3.0/
-[DER]: https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One
+[DER]: https://en.wikipedia.org/wiki/X.690#DER_encoding
 [dig command]: https://en.wikipedia.org/wiki/Dig_%28Unix_command%29
 [DNS A records]: http://tools.ietf.org/html/rfc1035#section-3.2.2
 [DNS Seed Policy]: https://github.com/bitcoin/bitcoin/blob/master/doc/dnsseed-policy.md
