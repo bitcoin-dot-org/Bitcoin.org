@@ -4,27 +4,75 @@
 
 layout: base
 id: download
+
+win32zip: "win32.zip"
+win64zip: "win64.zip"
+win32exe: "win32-setup.exe"
+win64exe: "win64-setup.exe"
+#macdmg: "-osx.dmg"
+macdmg: ".dmg"
+mactar: "osx64.tar.gz"
+lin32: "linux32.tar.gz"
+lin64: "linux64.tar.gz"
+
 ---
+{% capture PATH_PREFIX %}/bin/{{ site.DOWNLOAD_VERSION }}{% endcapture %}
+{% capture FILE_PREFIX %}bitcoin-{{ site.DOWNLOAD_VERSION }}{% endcapture %}
 <link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin Core releases">
 <div class="download">
   <h1>{% translate pagetitle %}</h1>
-  <h2>{% translate latestversion %} {{site.DOWNLOAD_VERSION}}<a type="application/rss+xml" href="/en/rss/releases.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h2>
-  <div class="mainbutton"><a id="downloadbutton" href="/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe"><img src="/img/os/but_windows.svg" alt="icon">{% translate download %}</a></div>
+  <h2>{% translate latestversion %} {{ site.DOWNLOAD_VERSION }}<a type="application/rss+xml" href="/en/rss/releases.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h2>
+  <div class="mainbutton"><a id="downloadbutton" href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}"><img src="/img/os/but_windows.svg" alt="icon">{% translate download %}</a></div>
   <div class="downloadbox">
     <p>{% translate downloados %}</p>
     <div>
-      <div><img src="/img/os/med_win.png" alt="windows"> <a href="/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe">Windows (32bit)</a></div>
-      <div><img src="/img/os/med_win.png" alt="windows"> <a href="/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win64-setup.exe">Windows (64bit)</a></div>
-      <div><img src="/img/os/med_win.png" alt="windows"> <a href="/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win.zip">Windows (zip)</a></div>
+      <div>
+        <img src="/img/os/med_win.png" alt="windows">
+        <span>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}" id="downloadwinexe">Windows</a>
+          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}">64 bit</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}">32 bit</a></span>
+        </span>
+      </div>
+      <div>
+        <img src="/img/os/med_win.png" alt="windows">
+        <span>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}" id="downloadwinzip">Windows (zip)</a>
+          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}">64 bit</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32zip }}">32 bit</a></span>
+        </span>
+      </div>
+      <div>
+        <img src="/img/os/med_osx.png" alt="osx">
+        <span>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}">Mac OS X</a>
+          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}">dmg</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.mactar }}">tar.gz</a></span>
+        </span>
+      </div>
     </div>
     <div>
-      <div><img src="/img/os/med_osx.png" alt="osx"> <a href="/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-macosx.dmg">Mac OS X</a></div>
-      <div><img src="/img/os/med_linux.png" alt="linux"> <a href="/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-linux.tar.gz">Linux (tgz)</a></div>
-      <div><img src="/img/os/med_ubuntu.svg" alt="ubuntu"> <a href="https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin">Ubuntu (PPA)</a></div>
+      <div>
+        <img src="/img/os/med_linux.png" alt="linux">
+        <span>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}" id="downloadlin">Linux (tgz)</a>
+          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}">64 bit</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin32 }}">32 bit</a></span>
+        </span>
+      </div>
+      <div>
+        <img src="/img/os/med_ubuntu.svg" alt="ubuntu">
+        <span>
+          <a href="https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin">Ubuntu (PPA)</a>
+        </span>
+      </div>
+      <div>
+        <img src="/img/os/med_opensource.svg" alt="source code">
+        <span>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}.tar.gz">{% translate source %}</a>
+          <span><a href="https://github.com/bitcoin/bitcoin">GitHub</a></span>
+        </span>
+      </div>
     </div>
     <p>
-      <a href="/bin/{{site.DOWNLOAD_VERSION}}/SHA256SUMS.asc">{% translate downloadsig %}</a><br>
-      <a href="https://github.com/bitcoin/bitcoin/releases">{% translate sourcecode %}</a><br>
+      <a href="/bin/{{ site.DOWNLOAD_VERSION }}/SHA256SUMS.asc">{% translate downloadsig %}</a><br>
+      <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}.torrent">{% translate downloadtorrent %}</a>{% if site.DOWNLOAD_MAGNETLINK %} <a href="{{ site.DOWNLOAD_MAGNETLINK }}" class="magnetlink"></a>{% endif %}<br>
       <a href="/en/version-history">{% translate versionhistory %}</a>
     </p>
   </div>
@@ -33,34 +81,48 @@ id: download
   <p>{% translate notelicense %}</p>
 </div>
 <script type="text/javascript">
-var os='windows32';
-if(navigator.userAgent.indexOf('Mac')!=-1)var os='mac'
-else if(navigator.userAgent.indexOf('Linux')!=-1){
-	var os='linux';
-	if(navigator.userAgent.indexOf('Ubuntu')!=-1)var os='ubuntu';
+var os = 'windows32';
+if (navigator.userAgent.indexOf('Mac') != -1) var os = 'mac'
+else if (navigator.userAgent.indexOf('Linux') != -1) {
+	var os='linux32';
+	if (navigator.userAgent.indexOf('x86_64') != -1) var os = 'linux64';
+	if (navigator.userAgent.indexOf('Ubuntu') != -1) var os = 'ubuntu';
 }
-else if(navigator.userAgent.indexOf('WOW64')!=-1||navigator.userAgent.indexOf('Win64')!=-1)var os='windows64';
-var but=document.getElementById('downloadbutton');
-switch(os){
+else if (navigator.userAgent.indexOf('WOW64') != -1 || navigator.userAgent.indexOf('Win64') != -1) var os='windows64';
+var but = document.getElementById('downloadbutton');
+var linkwinexe = document.getElementById('downloadwinexe');
+var linkwinzip = document.getElementById('downloadwinzip');
+var linklin = document.getElementById('downloadlin');
+switch (os) {
 case 'windows64':
-  but.getElementsByTagName('IMG')[0].src='/img/os/but_windows.svg';
-  but.href='/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win64-setup.exe';
+	but.getElementsByTagName('IMG')[0].src = '/img/os/but_windows.svg';
+	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}';
+	linkwinexe.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}';
+	linkwinzip.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}';
 break;
 case 'windows32':
-  but.getElementsByTagName('IMG')[0].src='/img/os/but_windows.svg';
-  but.href='/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-win32-setup.exe';
+	but.getElementsByTagName('IMG')[0].src = '/img/os/but_windows.svg';
+	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}';
+	linkwinexe.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}';
+	linkwinzip.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32zip }}';
 break;
-case 'linux':
-  but.getElementsByTagName('IMG')[0].src='/img/os/but_linux.png';
-  but.href='/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-linux.tar.gz';
+case 'linux64':
+	but.getElementsByTagName('IMG')[0].src = '/img/os/but_linux.png';
+	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}';
+	linklin.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}';
+break;
+case 'linux32':
+	but.getElementsByTagName('IMG')[0].src = '/img/os/but_linux.png';
+	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin32 }}';
+	linklin.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin32 }}';
 break;
 case 'ubuntu':
-  but.getElementsByTagName('IMG')[0].src='/img/os/but_ubuntu.svg';
-  but.href='https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin';
+	but.getElementsByTagName('IMG')[0].src = '/img/os/but_ubuntu.svg';
+	but.href = 'https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin';
 break;
 case 'mac':
-  but.getElementsByTagName('IMG')[0].src='/img/os/but_mac.svg';
-  but.href='/bin/{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-macosx.dmg';
+	but.getElementsByTagName('IMG')[0].src = '/img/os/but_mac.svg';
+	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}';
 break;
 }
 </script>

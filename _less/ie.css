@@ -220,7 +220,16 @@ body{
 .downloadbox div div{
 	display:block;
 }
+.downloadbox div div span{
+	zoom:1;
+	display:inline;
+}
 .download span{
+	zoom:1;
+	display:inline;
+	vertical-align:top;
+}
+.downloadbox .magnetlink{
 	zoom:1;
 	display:inline;
 }
