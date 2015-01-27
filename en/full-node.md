@@ -134,6 +134,13 @@ have an easy-to-use node.
   More hours would be better, and best of all would be if you can run
   your node continuously.
 
+    Note: many operating systems today (Windows, Mac, and Linux) enter a
+    low-power mode after the screensaver activates, slowing or halting
+    network traffic. This is often the default setting on laptops and on
+    all Mac OS X laptops and desktops. Check your screensaver settings
+    and disable automatic "sleep" or "suspend" options to ensure you
+    support the network whenever your computer is running.
+
 ### Possible Problems
 
 * **Legal:** Bitcoin use is [prohibited or restricted in some
