@@ -388,7 +388,7 @@ pl:
     pagedesc: "Używanie Bitcoin do płacenia i otrzymywania płatności jest proste i dostępne dla każdego."
     users: "Jak używać Bitcoin"
     inform: "Zdobądź informacje"
-    informtxt: "Bitcoin jest inny od tego, o co znasz i używasz na co dzień. Jest kilka rzeczy, które trzeba widzieć zanim zacznie się korzystać z Bitcoin, aby używać go w sposób bezpieczny i uniknąć typowych pułapek."
+    informtxt: "Bitcoin jest inny od tego, o co znasz i czego używasz na co dzień. Jest kilka rzeczy, które trzeba wiedzieć, zanim zacznie się korzystać z Bitcoin, aby używać go w sposób bezpieczny i uniknąć typowych pułapek."
     informbut: "Czytaj więcej"
     choose: "Wybierz swój portfel"
     choosetxt: "Możesz korzystać z portfela Bitcoin w codziennych sytuacjach przy użyciu telefonu komórkowego lub też wykorzystywać portfel wyłącznie do płatności online na komputerze. W każdym przypadku wyboru portfela można dokonać w ciągu minuty."
@@ -661,9 +661,9 @@ pl:
     taxtxt: "Bitcoin nie jest oficjalną walutą. Wiedząc to, pamiętaj, że większość jurysdykcji niezmiennie wymaga płacenia podatku dochodowego, od sprzedaży, kosztów uzyskania przychodu czy podatku od zysków ze sprzedaży towarów zawierających wartość, włączając w to bitcoiny. Twoim obowiązkiem jest upewnić się, że stosujesz się do <a href=\"http://bitlegal.io/\">podatków i innych obowiązków ustawowych lub wykonawczych</a> wydanych przez organy państwowe lub samorządowe."
   layout:
     menu-about-us: "O bitcoin.org"
-    menu-bitcoin-for-businesses: Firmy
-    menu-bitcoin-for-developers: Deweloperzy
-    menu-bitcoin-for-individuals: Osoby fizyczne
+    menu-bitcoin-for-businesses: Firm
+    menu-bitcoin-for-developers: Deweloperów
+    menu-bitcoin-for-individuals: Osób fizycznych
     menu-community: Społeczność
     menu-development: Rozwój
     menu-events: Wydarzenia
