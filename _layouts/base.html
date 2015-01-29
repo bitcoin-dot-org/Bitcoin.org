@@ -86,17 +86,12 @@
     <a href="/stats/">{% translate menu-stats layout %}</a>
     <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
     {% case page.lang %}
-    {% when 'ar' or 'da' or 'de' or 'es' or 'sl' %}
+    {% when 'ar' or 'da' or 'es' or 'sl' %}
     <a href="/en/privacy">Privacy</a>
     {% else %}
     <a href="/{{ page.lang }}/{% translate privacy url %}">{% translate menu-privacy layout %}</a>
     {% endcase %}
-    {% case page.lang %}
-    {% when 'de' %}
-    <a href="/en/press">Press</a>
-    {% else %}
     <a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a>
-    {% endcase %}
     <a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a>
     </div>
     <div class="footersponsor">
