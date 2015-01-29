@@ -36,7 +36,7 @@ da:
     visibility: "Få gratis synlighed"
     visibilitytext: "Bitcoin er et voksende marked af nye kunder, som leder efter nye måder, hvorpå de ka bruge deres bitcoins. Det at tage imod bitcoins er en god måde at få nye kunder og give din forretning ny synlighed. Det at begynde at tage imod en ny betalingstype har ofte vist sig at være et klogt træk for onlineforretninger."
     multisig: "Multi-signatur"
-    multisigtext: "Bitcoin inkluderer også en funktionalitet, der endnu ikke er så bredt kendt, som tillader bitcoins kun at blive brugt, hvis en bestemt mængde folk i en gruppe signerer transaktionen (såkaldte \"m af n\"-transaktioner). Dette svarer til det gode gamle system med flere underskrifter på en check, som du måske stadig bruger i bankerne i dag."
+    multisigtext: "Bitcoin har også funktioner for multisignaturer, som tillader, at bitcoin kun bliver brugt, hvis en delmængde af en gruppe folk autoriserer transaktionen. Dette kan bruges af en bestyrelse for at undgå, at et enkelt medlem skaber udgifter uden tilstrækkelig samtykke fra andre medlemmer, såvel som at spore sig ind på, hvilke medlemmer, der tillod hver betaling."
     transparency: "Regnskabsmæssig gennemsigtighed"
     transparencytext: "Af mange organisationer kræves det, at de kan mønstre regnskabsdokumenter vedrørende deres aktiviteter. Ved at bruge Bitcoin, tilbydes du det højeste niveau af gennemsigtighed, da du kan fremlægge information, som dine medlemmer kan bruge til at verificere dine saldi og transaktioner. Non-profit-orgaisationer kan også tillade offentligheden at se, hvor meget de modtager i donationer."
   bitcoin-for-developers:
@@ -116,13 +116,13 @@ da:
     walletkncwallet: "KnC Wallet stræber efter at være en nem måde at sende bitcoin til dine venner og familie. Den indeholder en online-kontaktbog, så du kan begynde med at sende bitcoin til dine kontakter med det samme uden at kende deres adresse."
     walletbreadwallet: "Enkelhed er breadwallets vigtigste designprincip. Som en rigtig selvstændig Bitcoin-klient er der ingen server, der kan blive hacket eller gå ned, og ved at bygge på iOS's stærke sikkerhedsfundament er breadwallet designet til at beskytte dig imod malware, sikkerhedshuller i browsere og endda fysisk tyveri."
     walletmyceliumwallet: "Mycelium Bitcoin Wallet er en tegnebog med åben kildekode til Android, der er designet med sikkerhed, hastighed og brugervenlighed for øje. Den har unikke funktionaliteter til at håndtere dine nøgler og for kold opbevaring, som hjælper dig med at sikre dine bitcoin."
-    walletblockchaininfo: "Blockchain.info er en brugervenlig hybridtegnebog. Den gemmer en krypteret version af din tegnebog online, men dekryptering sker i din browser. Af sikkerhedsgrunde bør du altid bruge browserudvidelsen og email-sikkerhedskopier (og hold den email sikker)."
-    walletcoinbase: "Coinbase er en web-tegnebog, som sigter mog at være nem at bruge. Den tilbyder også en web-tegnebogs-app til Android, værktøjer til forretningsdrivende og integrering med U.S.-amerikanske bankkonti for at købe og sælge bitcoins."
+    walletcoinbase: "Coinbase er en nettegnebog, som sigter mod at være nem at bruge. Den tilbyder også en nettegnebogs-app til Android, værktøjer til forretningsdrivende og integrering med U.S.-amerikanske bankkonti for at købe og sælge bitcoins."
     walletxapo: "Xapo kombinerer bekvemmeligheden ved en Bitcoin-tegnebog til hverdagen med sikkerheden ved en fuldt ud forsikret dyb boks med kold opbevaring. Xapo debetkort forbindes til din Xapo-tegnebog og lader dig bruge bitcoin hos millioner af handelsdrivende rundt om i verden."
-    walletcoinkite: "Coinkite er en web-tegnebog- og debetkorttjeneste, som bestræber sig på at være nem at bruge. Den fungerer også på mobile browsere, den har værktøjer til handelsdrivende og betalingsterminaler til fysiske forretninger. Det er en hybridtegnebog med \"full reserve vault\""
+    walletcoinkite: "Coinkite er en nettegnebog- og debetkorttjeneste, som bestræber sig på at være nem at bruge. Den fungerer også på mobile browsere, den har værktøjer til handelsdrivende og betalingsterminaler til fysiske forretninger. Det er en hybridtegnebog med \"full reserve vault\""
     walletbitgo: "BitGo er en tegnebog med multi-signaturer, der tilbyder et højt sikkerhedsniveau. Hver transaktion kræver to signaturer, hvilket beskytter dine bitcoin imod malware og serverangreb. Private nøgler opbevares hos brugeren, sådan at BitGo ikke har adgang til dine bitcoin. Den er et godt valg for ikke-tekniske brugere."
     walletgreenaddress: "GreenAddress er en brugervenlig tegnebog med multi-signaturer og forbedret sikkerhed og privatlivsbeskyttelse. På intet tidspunkt kommer dine nøgler i nærheden af serveren, heller ikke i krypteret tilstand. Af sikkerhedsårsager bør du altid benytte 2FA og browser-udvidelsen eller Android-app'en."
     wallettrezor: "Trezor er en hardware-tegnebog, der giver et højt sikkerhedsniveau uden at ofre bekvemmeligheden. Modsat kold opbevaring er Trezor i stand til at signere transaktioner, mens den er forbundet til en enhed med Internetforbindelse. Dette betyder, at det er sikkert at bruge bitcoin, selv fra en kompromitteret computer."
+    wallethw1: "HW.1 er en hardware-tegnebog, der er opbygget omkring en ST23YT66-smartcard-platform for banker. Den opbevarer brugernes private nøgler sikkert, validerer transaktioner, kan bruges som et sikkert forudbetalt kort eller en part til multisignaturer. Selvom det ikke har åben kildekode, kan det valideres deterministisk."
     walletdownload: "Installér"
     walletvisit: "Besøg hjemmeside"
     walletsourcecode: "Kildekode"
@@ -141,9 +141,11 @@ da:
     checkfailcontrolthirdpartyinsured: "Tredjepart med kontrol over penge"
     checkfailcontrolthirdpartyinsuredtxt: "Denne tjeneste har fuld kontrol over dine bitcoin. Dette betyder, at du er nødt til at stole på, at denne tjeneste ikke indefryser eller misligholder dine penge. Selvom denne tjeneste hævder at tilbyde forsikring imod fejl fra deres side, er du stadig ansvarlig for at sikre din tegnebog."
     checkfailcontrolthirdparty: "Tredjepart med kontrol over penge"
-    checkfailcontrolthirdpartytxt: "Denne tjeneste har fuld kontrol over dine bitcoin. Dette betyder, at du er nødt til at stole på, at denne tjeneste ikke mister dine penge under en hændelse hos dem. Som det ser ud i dag, forsikrer de fleste web-tegnebøger ikke deres indestående, som en bank gør, og mange sådanne tjenester har lidt under sikkerhedsbrister i fortiden."
+    checkfailcontrolthirdpartytxt: "Denne tjeneste har fuld kontrol over dine bitcoin. Dette betyder, at du er nødt til at stole på, at denne tjeneste ikke mister dine penge under en hændelse hos dem. Som det ser ud i dag, forsikrer de fleste nettegnebøger ikke deres indestående, som en bank gør, og mange sådanne tjenester har lidt under sikkerhedsbrister i fortiden."
     checkgoodvalidationfullnode: "Fuld validering"
     checkgoodvalidationfullnodetxt: "Denne tegnebog er en fuld knude, som validerer og videresender transaktioner på Bitcoin-netværket. Dette betyder, at det ikke er nødvendigt at stole på en tredjepart for at verificere betalinger. Fulde knuder giver det højeste sikkerhedsniveau og er essentielle i beskyttelsen af netværket. De kræver dog mere plads (mere end 20 GB), båndbredde og har en længere indledningsvis synkroniseringstid."
+    checkgoodvalidationfullnoderequired: "Fuld validering"
+    checkgoodvalidationfullnoderequiredtxt: "Denne tegnebog kræver, at du installerer software til en fuld knude og videresender transaktioner på Bitcoin-netværket. Dette betyder, at tillid ikke behøves til tredjepart under verificering af betalinger. Fulde knuder giver det højeste sikkerhedsniveau, og er essentielle i beskyttelsen af netværket. De kræver dog mere plads (mere end 20 GB), båndbredde og længere tid til startsynkronisering."
     checkneutralvalidationvariable: "Variabel validering"
     checkneutralvalidationvariabletxt: "Betalingsvalideringsfunktioner stilles til rådighed af den software-tegnebog, du bruger på denne enhed. Se venligst valideringsscoren for den software-tegnebog, du planlægger at bruge."
     checkpassvalidationspvp2p: "Simplificeret validering"
@@ -156,14 +158,18 @@ da:
     checkfailvalidationcentralizedtxt: "Denne tegnebog afhænger som udgangspunkt af en centraliseret tjeneste. Dette betyder, at du skal have tillid til, t en tredjepart ikke skjuler eller simulerer betalinger."
     checkgoodtransparencydeterministic: "Komplet gennemsigtighed"
     checkgoodtransparencydeterministictxt: "Denne tegnebog har åben kildekode og bygges deterministisk. Dette betyder, at enhver udvikler i verden kan auditere koden og være sikker på, at den endelige software ikke skjuler nogen hemmeligheder."
-    checkpasstransparencyopensource: "God gennemsigtighed"
+    checkpasstransparencyopensource: "Basal gennemsigtighed"
     checkpasstransparencyopensourcetxt: "Udviklerne af denne tegnebog udgiver kildekoden til klienten. Dette betyder, at enhver udvikler i verden kan auditere koden. Du skal dog stadig have tillid til udviklerne af denne tegnebog, når du installerer eller opdaterer den endelige software, fordi den ikke er bygget deterministisk som <a href=\"#download#\">Bitcoin Core</a>."
+    checkpasstransparencyopensourcehardware: "Basal gennemsigtighed"
+    checkpasstransparencyopensourcehardwaretxt: "Kildekoden for denne tegnebog er offentlig. Dette betyder, at enhver udvikler i verden kan gennemse koden. Du er dog stadig nødt til at stole på udviklerne af denne tegnebog, fordi det ikke kan verificeres, at enheden bruger den samme kildekode til at generere sikre tilfældige seeds og til andre funktioner. Det kan gøre det sværere at stjæle dine bitcoin, hvis du opdaterer din enheds firmware og genererer din egen sikre tilfældige seed eller bruger multisignaturer."
+    checkpasstransparencyopenspechardware: "Basal gennemsigtighed"
+    checkpasstransparencyopenspechardwaretxt: "Specificeringen af denne tegnebog er offentlig. Dette betyder, at enhver udvikler i verden kan lave blackbox-tests. Du er dog stadig nødt til at stole på udviklerne af denne tegnebog, fordi det ikke kan verificeres, at enheden genererer sikre tilfældige seeds, og kildekoden kan ikke gennemses. Det kan gøre det sværere at stjæle dine bitcoin, hvis du opdaterer din enheds firmware og genererer din egen sikre tilfældige seed eller bruger multisignaturer."
     checkfailtransparencyclosedsource: "Ingen gennemsigtighed"
     checkfailtransparencyclosedsourcetxt: "Denne tegnebog har ikke åben kildekode. Dette betyder, at det ikke er muligt at auditere koden og være sikker på, at den endelige software ikke skjuler farlig kode eller gør noget, du ikke ville være enig i."
     checkfailtransparencyremote: "Fjern-app"
     checkfailtransparencyremotetxt: "Denne tegnebog indlæses fra en fjernplacering. Dette betyder, at hver gang du bruger din tegnebog, skal du have tillid til, at udviklerne ikke stjæler eller mister dine bitcoin i en hændelse hos dem. Ved at bruge en browser-udvidelse eller mobil-app, hvis det er tilgængeligt, kan reducere risikoen."
     checkfailtransparencynew: "Ny app"
-    checkfailtransparencynewtxt: "Udviklerne af denne tegnebog udgiver kildekoden til klienten. Denne tegnebog er dog ikke testet og offentligt anmeldt af et betydeligt antal personer. Dette betyder, at denne app kan være under større risiko for at skjule farlig kode eller gøre noget, du ikke ville være enig i."
+    checkfailtransparencynewtxt: "Denne tegnebog er ikke blevet testet og offentligt anmeldt af en betydelig mængde personer. Dette betyder, at denne app kan være i større risiko for at skjule farlig kode eller gøre noget, du ikke ville være enig i."
     checkgoodenvironmenthardware: "Meget sikkert miljø"
     checkgoodenvironmenthardwaretxt: "Denne tegnebog indlæses fra et sikkert specialiseret miljø, der stilles til rådighed af enheden. Dette giver meget stærk beskyttelse imod computersårbarheder og malware, da intet software kan installeres i dette miljø."
     checkpassenvironmentmobile: "Sikkert miljø"
@@ -207,7 +213,7 @@ da:
     disclosuretxt: "Hvis du finder en sårbarhed relateret til Bitcoin, kan ikke-kritiske sårbarheder sendes pr. email på engelsk til en af kerneudviklerne eller sendes til den private \"bitcoin-security\"-postliste, der er nævnt herover. Et eksempel på en ikke-kritisk sårbarhed kan være mulighed for et denial-of-service-angreb på en tjeneste, som ville være meget dyr at udføre. Kritiske sårbarheder, som er for sensitive til ukrypteret email, bør sendes til en eller flere af kerneudviklerne krypteret med deres PGP-nøgle(r)."
     involve: "Bliv involveret"
     involvetxt1: "Bitcoin er frit programmel og enhver udvikler kan bidrage til projektet. Alt hvad du behøver er i <a href=\"https://github.com/bitcoin/bitcoin\">GitHub-arkivet</a>. Sørg venligst for at læse og følge udviklingsprocessen, der er beskrevet i README-filen, samt at bidrage med kode i god kvalitet og at respektere alle retningslinjer."
-    involvetxt2: "Diskussion om udviklingen foregår på GitHub og postlisten <a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">bitcoin-development</a> hos Sourceforge. Mindre formel diskussion on udviklen sker på irc.freenode.net #bitcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">web-udgave</a>, <a href=\"http://bitcoinstats.com\">logbøger</a>)."
+    involvetxt2: "Diskussion om udviklingen foregår på GitHub og postlisten <a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">bitcoin-development</a> hos Sourceforge. Mindre formel diskussion on udviklen sker på irc.freenode.net #bitcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">netudgave</a>, <a href=\"http://bitcoinstats.com\">logbøger</a>)."
     more: "Flere projekter med fri software"
     morechoose: "Du kan vælge et projekt, du vil bidrage til, ved at svare på nogle få <a href=\"http://whatcanidoforbitcoin.org/\">spørgsmål om dine færdigheder</a>."
     moremore: "Vis flere …"
@@ -325,7 +331,7 @@ da:
     earlyadopter: "Giver Bitcoin ikke tidlige brugere unfair fordele?"
     earlyadoptertxt1: "Nogle tidlige brugere har store summer bitcoin, fordi de tog risici og investerede tid og ressourcer i en uprøvet teknologi, som stort set ikke blev brugt af nogen, og som dengang var meget sværere at sikre ordentligt. Mange tidlige brugere brugte store beløb i bitcoin en del gange, før de blev værdifulde, eller købte kun små beløb og tjente dermed ikke stort. Der er ingen garanti for, at prisen på en bitcoin vil gå op eller ned. Dette er meget lig investering i en tidlig opstartsvirksomhed, som enten kan blive værdifuld gennem dens brugbarhed og popularitet, eller aldrig bryde igennem. Bitcoin er stadig i sin barndom, og den er designet med meget langsigtet basis for øje; det er svært at forestille sig, hvordan det kunne være mindre til fordel for tidlige brugere, og i dags brugere er, eller er måske ikke, morgendagens tidlige brugere."
     finitelimitation: "Vil den endelige mængde bitcoin ikke blive en begrænsning?"
-    finitelimitationtxt1: "Bitcoin er unik ved at kun 21 millioner bitcoin nogensinde vil blive genereret. Dette vil dog aldrig blive en begrænsning, da bitcoin kan opdeles op til 8 decimaler (0,000 000 01 BTC) og potentielt endnu mindre enheder, hvis det nogensinde bliver nødvendigt i fremtiden. Efterhånden som den gennemsnitlige transaktionsstørrelse bliver mindre, kan transaktioner denomineres i underenheder af en bitcoin, fx millibitcoin (1 mBTC eller 0,001 BTC)."
+    finitelimitationtxt1: "Bitcoin er unik i det aspekt, at der i alt kun vil blive genereret 21 millioner bitcoin nogensinde. Dette vil dog aldrig blive en begrænsning, da transaktioner til denomineres i mindre underenheder til en bitcoin, så som bits – der er 1.000.000 bits i 1 bitcoin. Bitcoin kan deles op i 8 decimalpladser (0,000 000 01) og potentielt endnu mindre enheder, hvis det nogensinde bliver et krav i fremtiden, efterhånden som den gennemsnitlige transaktionsstørrelse mindskes."
     deflationaryspiral: "Vil Bitcoin ikke ende i en deflationsspiral?"
     deflationaryspiraltxt1: "Teorien om deflationsspiralen siger, at hvis priserne forventes at falde, vil folk flytte deres køb længere ud i fremtiden for at drage fordel af de lavere priser. Dette fald i efterspørgselen vil efterhånden gøre, at handelsdrivende sænker deres priser for at prøve at stimulere efterspørgsel, hvilket gør problemet værre og leder til en økonomisk depression."
     deflationaryspiraltxt2: "Selvom denne teori er en populær måde at berettige inflation blandt centralbanker, ser den ikke ud til altid at holde vand, og den opfattes som kontroversiel blandt økonomer. Forbrugerelektronik er et eksempel på et marked, hvor priserne falder konstant, men som ikke er i depression. På samme måde er værdien af bitcoin steget over tid, og alligevel er størrelsen på Bitcoin-økonomien også steget dramatisk på samme tid. Da både valutaens værdi og økonomiens størrelse startede på nul i 2009, er Bitcoin et modeksempel på teorien, der viser, at den i nogle tilfælde er forkert."
@@ -429,9 +435,6 @@ da:
     list3: "Ingen eller lave<br>betalingsgebyrer"
     desc: "Bitcoin benytter P2P-teknologi (bruger-til-bruger) for at fungere uden central autoritet eller banker; transaktionshåndtering og udstedelse af bitcoin sker i fællesskab i netværket. <b>Bitcoin har åben kildekode; designet er offentligt, ingen ejer eller styrer Bitcoin og <a href=\"#support-bitcoin#\">alle kan tage del</a></b>. Gennem mange af dets unikke egenskaber tillader Bitcoin brugere, som ellers ikke kunne dækkes af noget eksisterende betalingssystem."
     overview: "Eller få et hurtigt overblik for"
-    individuals: "Enkeltpersoner"
-    businesses: "Virksomheder"
-    developers: "Udviklere"
   innovation:
     title: "Innovation – Bitcoin"
     pagetitle: "Innovation i betalingssystemer"
@@ -463,8 +466,31 @@ da:
   legal:
     title: "Juridisk fraskrivelse – Bitcoin"
     pagetitle: "Juridisk fraskrivelse"
-    termstxt1: "Denne webside indeholder information og materiale af generel art. Denne information er kun beregnet til informationsformål. Denne webside kan indeholde information, som handler om reelle eller potentielle juridiske emner. Denne information er ikke erstatning for kvalificeret juridisk rådgivning. Du er ikke autoriseret til, og du bør ikke, stole på denne webside med hensyn til juridisk rådgivning. På ingen måde er ejerne af, eller bidragerne til, denne webside ansvarlig for de handlinger, beslutninger eller anden opførsel, du tager eller ikke tager på baggrund af denne webside. Dette inkluderer, men er ikke begrænset til, juridiske eller teknologiske årsager. Du handler for din egen risiko, hvis du handler på baggrund af indholdet af denne webside. Hvis du beslutter dig for at handle eller ikke handle, bør du kontakte en licenseret advokat under den relevante myndighed, hvori du ønsker eller behøver hjælp."
-    termstxt2: "Denne webside kan indeholde oversættelser af den engelske version af indholdet. Disse oversættelser tilbydes kun som en bekvemmelighed. I tilfælde af, at den engelsksprogede version og en oversat version af indholdet ikke stemmer overens, har den engelsksprogede version forret. Hvis du bemærker en uoverensstemmelse, bedes du rapportere den på <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a>."
+    information: "Information der udgives på bitcoin.org"
+    informationtxt1: "Websiden http://bitcoin.org/ (herefter refereret til som \"Websiden\") stiller information og materiale af generel karakter til rådighed. Du autoriseres ikke og ej heller bør du stole på Websiden som juridisk rådgivning, økonomisk rådgivning eller rådgivning af nogen slags. Du handler for egen risiko ved at stole på indholdet af Websiden. Hvis du står overfor en beslutning om at handle eller ikke handle, bør du kontakte en licenseret advokat i den pågældende ruristiktion, hvor du ønsker eller behøver hjælp. På ingen måde er ejerne af eller bidragsyderne til Websiden ansvarlige for de handlinger, beslutninger eller anden adfærd, du har gjort eller ikke gjort ved at stole på Websiden."
+    translations: "Oversættelser"
+    translationstxt1: "Websiden kan indeholde oversættelser af den engelske version af det indhold, der er tilgængeligt på websiden. Disse oversættelser tilbydes kun som en bekvemmelighed. Hvis det skulle ske, at der er en uoverensstemmelse mellem den engelsksprogede version og en oversat version, er den engelsksprogede version gældende. Hvis du bemærker en uoverensstemmelse, bedes du rapportere den på <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a>."
+    userisks: "Risici relateret til brugen af Bitcoin"
+    useriskstxt1: "Dette website er ikke ansvarlig for nogen former for tab, skader eller krav, der opstår udfra begivenheder, som falder inden for de følgende fire kategorier:"
+    useriskstxt2: " Fejltagelser, der gøres af brugeren af hvilket som helst stykke Bitcoin-relateret software eller -tjeneste, fx glemte adgangskoder, betalinger sendt til forkerte Bitcoin-adresser og sletning af tegnebøger ved uheld."
+    useriskstxt3: "Softwareproblemer med websiden og/eller ethvert stykke Bitcoin-relateret software eller -tjeneste, fx ødelagt tegnebogsfil, ukorrekt konstruerede transaktioner, usikre kryptografiske biblioteker, malware der påvirker websiden og/eller hvilket som helst stykke Bitcoin-relateret software eller -tjeneste."
+    useriskstxt4: "Tekniske fejl i hardwaren for brugeren af hvilket som helst stykke Bitcoin-relateret software eller -tjeneste, fx datatab på grund af fejlagtigt eller beskadiget lagringsenhed."
+    useriskstxt5: "Sikkerhedsproblemer, der opleves af brugeren af hvilket som helst stykke Bitcoin-relateret software eller -tjeneste, fx uautoriseret adgang til brugerens tegnebøger og/eller konti."
+    useriskstxt6: "Handlinger eller mangel på samme fra tredjeparter, og/eller begivenheder, der overgår tredjeparter, fx tjenesteudbyderes konkurs, angreb på informationssikkerheden hos tjenesteudbydere og bedrageri begået af tredjepart."
+    investmentrisks: "Investeringsricisi"
+    investmentriskstxt1: "Investering i Bitcoin kan føre til tab af penge over korte eller endda lange perioder. Investorer i Bitcoin bør forvente, at priserne har store udsving. Informationen, der udgives på Websiden, kan ikke garantere, at investorer i Bitcoin ikke taber penge."
+    taxcompliance: "Overholdelse af skatteforpligtelser"
+    taxcompliancetxt1: "Brugerne af Websiden er alene ansvarlige for at afgøre hvilke skatter og afgifter, hvis nogen, der er relevante for deres Bitcoin-transaktioner. Ejerne af og bedragsyderne til Websiden er IKKE ansvarlige for at afgøre, hvilke skatter og afgifter, der er relevante for Bitcoin-transaktioner."
+    noissuer: "Websiden opbevarer, sender eller modtager ikke bitcoin"
+    noissuertxt1: "Websiden opbevarer, sender eller modtager ikke bitcoin. Dette er fordi bitcoin kun eksisterer i form af det ejerskab, som vedligeholdes i Bitcoin-netværket. Enhvert ejerskifte af bitcoin sker i et decentraliseret Bitcoin-netværk og ikke på Websiden."
+    nowarranties: "Ingen garantier"
+    nowarrantiestxt1: "Websiden stilles til rådighed \"som beset\" uden garantier af nogen slags angående Websiden og/eller nogen form for indhold, data, materialer og/eller tjenester, der stilles til rådighed på Websiden."
+    noliability: "Begrænsning af retligt ansvar"
+    noliabilitytxt1: "Med mindre andet er lovmæssigt krævet, kan ejerne af eller bidragsyderne til Websiden på nogen måde stilles ansvarlige for nogen form for skade, inklusive men ikke begrænset til, brugstab, overskudstab eller datatab, der opstår fra eller på nogen måde er forbundet med brugen af Websiden."
+    arbitration: "Forlig"
+    arbitrationtxt1: "Brugeren af Websiden samtykker til at indgå forlig om enhver form for strid, der opstår fra eller i forbindelse med Websiden eller denne fraskrivelse, undtaget strider, der relaterer til ophavsret, logoer, varemærker, handelshemmeligheder eller patenter."
+    lastchange: "Seneste ændring"
+    lastchangetxt1: "Denne fraskrivelse blev senest ændret"
   press:
     title: "Presse – Bitcoin"
     pagetitle: "Pressecenter"
@@ -475,6 +501,13 @@ da:
     faqmore: "For at lære mere om Bitcoin kan du besøge den komplette <a href=\"/en/faq\">FAQ</a> eller <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin-wikien</a>."
     materialpicture: "Billeder"
     materialpicturemore: "Vis flere billeder …"
+  privacy:
+    title: "Privatliv – Bitcoin"
+    pagetitle: "Privatliv"
+    datacollect: "Indsamlet data"
+    datacollecttxt: "Bitcoin.org indsamler anonymiserede serverlogbøger. Disse logbøger inkluderer IP-adresser med den sidste byte skiftet ud, besøgstid, forespurgt side, brugeragent og referant-URL. Bitcoin.org indsamler ikke data ved hjælp af cookies."
+    datause: "Brug af data"
+    datausetxt: "Indsamlet data bruges til at stille <a href=\"/stats/\">transparet offentlig statistik</a> til rådighed."
   protect-your-privacy:
     title: "Beskyt dit privatliv – Bitcoin"
     pagetitle: "Beskyt dit privatliv"
@@ -546,7 +579,7 @@ da:
     update: "Hold din software opdateret"
     updatetxt: "Hvis du bruger den seneste version af din Bitcoin-software, har du de seneste vigtige stabilitets- og sikkerhedsrettelser. Opdateringer kan forhindre problemer af varierende alvorlighed, bringe dig nye funktionaliteter og hjælpe med at holde din tegnebog sikker. Det er også vigtigt at installere opdateringer for al anden software på din computer eller mobile enhed for at holde din tegnebogs omgivelser mere sikre."
     offlinemulti: "Multi-signatur for at beskytte imod tyveri"
-    offlinemultitxt: "Bitcoin indeholder en funktionalitet for multi-signaturer, som tillader en transaktion at kræve signering fra mere end én privat nøgle, for den går igennem. Det kan p.t. kun bruges af teknisk bevidste brugere, men en større udbredelse af denne funktionalitet kan ventes i fremtiden. Multi-signaturer kan fx tillade en organisation at give adgang til dens midler for dens medlemmer, mens hævning af midler kun tillades, hvis 3 ud af 5 medlemmer signerer transaktionen. Det kan også tillade fremtidige tegnebøger at dele en multi-signatur-adresse med andre brugere, sådan at en tyv ville skulle kompromittere både din computer og online tegnebogsservere for at kunne stjæle dine penge."
+    offlinemultitxt: "Bitcoin har en funktion for multisignaturer, som tillader en transaktion at kræve flere uafhængige godkendelser, før den kan bruges. Dette kan bruges af en organisation for at give dens medlemmer adgang til organisationens midler, men på en sådan måde at en hævning kun tillades, hvis 3 ud af 5 medlemmer signerer transaktionen. Nogle nettegnebøger giver også mulighed for multisignatur-tegnebøger, der tillader brugeren selv at styre sine penge, mens en tyv forhindres i at stjæle penge ved at komprommitere en enkelt enhed eller server."
     offlinetestament: "Tænk over dit testamente"
     offlinetestamenttxt: "Dine bitcoin kan mistes for evigt, hvis du ikke har en plan for en sikkerhedskopi til din familie eller venner. Hvis dine tegnebøgers eller kodeords opbevaringssted ikke kendes af nogen, når du er væk, er der intet håb for, at dine penge nogensinde kan fremskaffes igen. Det kan gøre en kollosal forskel at bruge noget tid til at tænke over dette."
   support-bitcoin:
@@ -580,6 +613,8 @@ da:
     table: "Indhold"
     address: "Adresse"
     addresstxt: "En Bitcoin-adresse er at <b>ligestille med en fysisk adresse eller en email-adresse</b>. Den er den eneste information, du behøver at give til en person, for at vedkommende kan betale dig med Bitcoin. En vigtig forskel er dog, at hver adresse kun bør bruges til en enkelt transaktion."
+    bit: "Bit"
+    bittxt: "Bit er en udbredt enhed, der bruges til at angive en underenhed af en bitcoin – 1.000.000 bit er lig med 1 bitcoin (BTC eller B⃦). Denne enhed er for det meste mere belejlig til angivelse af drikkepenge og pricer på varer og services."
     bitcoin: "Bitcoin"
     bitcointxt: "Bitcoin – skrevet med stort begyndelsesbogstav – bruges når begrebet Bitcoin eller selve netværket beskrives. Fx: \"Jeg lærte noget om Bitcoin-protokollen i dag.\"<br>bitcoin – skrevet med småt – bruges til at beskrive bitcoin som enhed eller konto. Fx: \"Jeg sendte to bitcoin i dag.\" Det forkortes ofte BTC eller XBT."
     blockchain: "Blokkæde (block chain)"
@@ -587,7 +622,7 @@ da:
     block: "Blok (block)"
     blocktxt: "En blok er en <b>fortegnelse i blokkæden, som indeholder og bekræfter mange ventende transaktioner</b>. Omtrent hvert 10. minut gennemsnitligt bliver en ny blok, der indeholder transaktioner, føjet til <a href=\"#[vocabulary.blockchain]\">blokkæden</a> ved hjælp af <a href=\"#[vocabulary.mining]\">mining</a>."
     btc: "BTC"
-    btctxt: "BTC er den gængse enhed for Bitcoin-valutaen. Denne forkortelse kan bruges på samme måde som USD kan bruges for U.S.-dollar eller DKK for danske kroner i stedet for B⃦, $ eller kr."
+    btctxt: "BTC er en udbredt enhed, der bruges til at angive én bitcoin (B⃦)."
     confirmation: "Bekræftelse (confirmation)"
     confirmationtxt: "Bekræftelse betyder, at en transaktion er blevet <b>bearbejdet af netværket og er yderst usandsynlig kandidat til at blive afvist</b>. Transaktioner modtager en bekræftelse, når de inkluderes i en <a href=\"#vocabulary##[vocabulary.block]\">blok</a> og for hver efterfølgende blok. Selv en enkelt bekræftelse kan opfattes som sikker for transaktioner med lav værdi, mens det for større beløb, som fx 10.000 kroner, giver mening at vente på 6 bekræftelser eller mere. Hver bekræftelse forringer <i>eksponentielt</i> risikoen for en afvist transaktion."
     cryptography: "Kryptografi"
@@ -601,7 +636,7 @@ da:
     p2p: "P2P"
     p2ptxt: "Bruger-til-bruger (peer-to-peer) refererer til <b>systemer, som arbejder som en organiseret samling</b> ved at tillade hvert individ at interagere direkte med andre. I Bitcoins tilfælde er netværket opbygget på en sådan måde, at hver bruger rundsender transaktionerne fra andre brugere. Og, afgørende, ingen bank kræves som tredjepart."
     privatekey: "Privat nøgle (private key)"
-    privatekeytxt: "En privat nøgle er et <b>hemmeligt stykke data, som beviser din ret til at bruge bitcoin fra en bestemt tegnebog</b> ved hjælp af en kryptografisk <a href=\"#[vocabulary.signature]\">signatur</a>. Din(e) private nøgle(r) gemmes på din computer, hvis du bruger en software-tegnebog, og de gemmes på en fjernserver, hvis du bruger en web-tegnebog. Private nøgler må aldrig afsløres, da de tillader dig at bruge bitcoin fra deres respektive Bitcoin-tegnebog."
+    privatekeytxt: "En privat nøgle er et <b>hemmeligt stykke data, som beviser din ret til at bruge bitcoin fra en bestemt tegnebog</b> ved hjælp af en kryptografisk <a href=\"#[vocabulary.signature]\">signatur</a>. Din(e) private nøgle(r) gemmes på din computer, hvis du bruger en software-tegnebog, og de gemmes på en fjernserver, hvis du bruger en nettegnebog. Private nøgler må aldrig afsløres, da de tillader dig at bruge bitcoin fra deres respektive Bitcoin-tegnebog."
     signature: "Signatur"
     signaturetxt: "En <a href=\"#[vocabulary.cryptography]\">kryptografisk</a> signatur er <b>en matematisk mekanisme, som tillader en person at bevise ejerskab</b>. I Bitcoins tilfælde sammenkædes en <a href=\"#[vocabulary.wallet]\">Bitcoin-tegnebog</a> med dens <a href=\"#[vocabulary.privatekey]\">private nøgle(r)</a> ved hjælp af matematisk magi. Når din Bitcoin-software signerer en transaktion med den rigtige private nøgle, kan hele netværket se, at signaturen stemmer overens med de bitcoin, der bliver spenderet. Dog er der ingen mulighed for hele verden at gætte din private nøgle for at stjæle dine hårdttjente bitcoin."
     wallet: "Tegnebog (wallet)"
@@ -639,7 +674,9 @@ da:
     menu-intro: Introduktion
     menu-legal: "Juridisk"
     menu-press: "Presse"
+    menu-privacy: "Privatliv"
     menu-resources: Ressourcer
+    menu-stats: "Statistik"
     menu-support-bitcoin: Deltag
     menu-vocabulary: Ordliste
     menu-you-need-to-know: "Du bør vide"
@@ -663,6 +700,7 @@ da:
     innovation: innovation
     legal: juridisk
     press: presse
+    privacy: privatliv
     protect-your-privacy: beskyt-dit-privatliv
     resources: ressourcer
     secure-your-wallet: sikr-din-tegnebog
@@ -674,6 +712,7 @@ da:
       non-profit: non-profit
     vocabulary:
       address: adresse
+      bit: bit
       bitcoin: bitcoin
       blockchain: blokkaede
       block: blok
