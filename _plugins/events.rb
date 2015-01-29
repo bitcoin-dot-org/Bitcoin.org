@@ -101,13 +101,15 @@ module Jekyll
 	date = data['date'].to_s.split('-')
         next if Time.new.to_i > (Time.new(date[0].to_i,date[1].to_i,date[2].to_i).to_i + 432000)
         # Get geolocalisation data from Google Maps
-        begin
-          geoloc = JSON.parse(open("https://maps.googleapis.com/maps/api/geocode/json?address=" + CGI::escape(data['address'] + ', ' + data['city'] + ', ' + data['country']) + "&sensor=false","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
-          if geoloc['status'] == 'OK'
-            data['geoloc'] = geoloc['results'][0]['geometry']['location']['lat'].to_s + ", " + geoloc['results'][0]['geometry']['location']['lng'].to_s
+        if data.has_key?('address')
+          begin
+            geoloc = JSON.parse(open("https://maps.googleapis.com/maps/api/geocode/json?address=" + CGI::escape(data['address'] + ', ' + data['city'] + ', ' + data['country']) + "&sensor=false","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
+            if geoloc['status'] == 'OK'
+              data['geoloc'] = geoloc['results'][0]['geometry']['location']['lat'].to_s + ", " + geoloc['results'][0]['geometry']['location']['lng'].to_s
+            end
+          rescue
+            print 'Google Maps API Call Failed!'
           end
-        rescue
-          print 'Google Maps API Call Failed!'
         end
         # Populate conferences array
         conferences.push(data)
