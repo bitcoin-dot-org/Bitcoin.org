@@ -38,7 +38,9 @@ title: "Developer Reference - Bitcoin"
 
 {% include ref_p2p_networking.md %}
 
-{% include ref_core_rpc_intro.md %}
+{% include ref/bitcoin-core/api-intro.md %}
+
+{% include ref/bitcoin-core/rpcs/intro.md %}
 
 {% include ref/bitcoin-core/rpcs/quick-ref.md %}
 
