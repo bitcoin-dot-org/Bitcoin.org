@@ -210,9 +210,9 @@ the sync node in the `getdata` message illustrated below.
 
 ![First GetData Message Sent During IBD](/img/dev/en-ibd-getdata.svg)
 
-It's important to headers-first nodes that the blocks be requested and
+It's important to blocks-first nodes that the blocks be requested and
 sent in order because each block header references the header hash of
-the preceeding block. That means the IBD node can't fully validate a
+the preceding block. That means the IBD node can't fully validate a
 block until its parent block has been received. Blocks that can't be
 validated because their parents haven't been received are called orphan
 blocks; a subsection below describes them in more detail.
@@ -234,20 +234,14 @@ below:
 
 ![Second GetBlocks Message Sent During IBD](/img/dev/en-ibd-getblocks2.svg)
 
-Upon receipt of the second `getblocks` message, the sync node takes the
-first listed header hash and searches its local best block chain for a
-block with that header hash. If it finds a block with that hash, it
-replies with 500 block inventories starting with the following block.
-But if it doesn't find a block with that hash, it takes the next header
-hash from the `getblocks` message and searches its block chain for that
-hash. If that hash matches, it will reply with 500 block inventories
-starting with the following hash from that point. But, again, if it
-doesn't find that hash, it will proceed to check the next hash in the
-message (and so on until it runs out of hashes in the message). If the
-last hash in the message (besides the stopping hash) doesn't match, it
-assumes the only block the two nodes have in common is block 0 and so it
-sends an `inv` starting with block 1 (the same `inv` message seen
-several illustrations above).
+Upon receipt of the second `getblocks` message, the sync node searches
+its local best block chain for a block that matches one of the header
+hashes in the message, trying each hash in the order they were received.
+If it finds a matching hash, it replies with 500 block inventories
+starting with the next block from that point. But if there is no
+matching hash (besides the stopping hash), it assumes the only block the
+two nodes have in common is block 0 and so it sends an `inv` starting with
+block 1 (the same `inv` message seen several illustrations above).
 
 This repeated search allows the sync node to send useful inventories even if
 the IBD node's local block chain forked from the sync node's local block
