@@ -123,6 +123,7 @@ hu:
     walletgreenaddress: "A GreenAddress egy felhasználóbarát, csoportos aláírást igénylő pénztárca megnövelt biztonsággal és adatvédelemmel. A privát kulcsai sohasem lesznek szerveroldalon, még titkosított állapotban sem. Biztonsági okokból 2FA-t (kétszintű hitelesítést) és a böngészőkiterjesztést vagy Android-alkalmazást érdemes használnia."
     wallettrezor: "A TREZOR egy, a kényelem feláldozása nélkül magas szintű biztonságot kínáló hardverpénztárca. A hidegtárolással ellentétben a TREZOR egy online készülékhez csatlakozva is képes tranzakciókat aláírni. Ez azt jelenti, hogy a bitcoinok küldése akár akkor is biztonságos, ha egy feltört számítógépet használ."
     wallethw1: "A HW.1 egy ST23YT66 banki okoskártya platformra épülő hardverpénztárca. Biztonságban tartja a felhasználó privát kulcsait, érvényesíti a tranzakciókat és biztonságos feltöltőkártyaként vagy egy csoportos aláírású félként használható. Bár nem nyílt forráskódú, determinisztikusan érvényesíthető."
+    walletcoinapult: "A Coinapult pénztárcáját a kezdő bitcoinosokra gondolva alkották meg. Lehetővé teszi a bitcoinok e-mailben és SMS-ben való elküldését, és egy Locks névre hallgató, hasznos kis eszköz segít megvédeni az egyenlegét a bitcoin nagy mértékű árfolyamváltozásaitól. A felhasználók többek között aranyhoz és euróhoz is köthetik a bitcoinjaikat!"
     walletdownload: "Telepítés"
     walletvisit: "Tovább a weboldalra"
     walletsourcecode: "Forráskód"
@@ -505,7 +506,7 @@ hu:
     title: "Adatvédelem - Bitcoin"
     pagetitle: "Adatvédelem"
     datacollect: "Összegyűjtött adatok"
-    datacollecttxt: "A bitcoin.org anonimizált szervernapló-adatokat gyűjt. Ezek a naplók olyan IP-címeket tartalmaznak, amelyek utolsó bájtja, a látogatás ideje, a lekért oldal, a felhasználói ágens (user agent) és a hivatkozó (referer) URL cserélve van. A bitcoin.org cookie-k használatával nem gyűjt adatokat."
+    datacollecttxt: "A bitcoin.org anonimizált szervernapló-adatokat gyűjt. Ezek a naplók kicserélt utolsó bájttal rendelkező IP-címeket, a látogatás idejét, a lekért oldalt, a felhasználói ágenst (user agent) és a hivatkozó (referer) URL-t tartalmazzák. A bitcoin.org cookie-k használatával nem gyűjt adatokat."
     datause: "Adatfelhasználás"
     datausetxt: "Az összegyűjtött adatokat <a href=\"/stats/\">transzparens, nyilvános statisztikákhoz</a> használjuk fel."
   protect-your-privacy:
