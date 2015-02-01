@@ -21,7 +21,7 @@ serialized header format part of the consensus rules.
 | Bytes | Name                | Data Type | Description
 |-------|---------------------|-----------|----------------
 | 4     | version             | uint32_t  | The [block version][]{:#term-block-version}{:.term} number indicates which set of block validation rules to follow. See the list of block versions below.
-| 32    | previous block hash | char[32]  | A SHA256(SHA256()) hash in internal byte order of the previous block's header.  This ensures no previous block can be changed without also changing this block's header.
+| 32    | [previous block header hash][]{:#term-previous-block-header-hash}{:.term} | char[32]  | A SHA256(SHA256()) hash in internal byte order of the previous block's header.  This ensures no previous block can be changed without also changing this block's header.
 | 32    | merkle root hash    | char[32]  | A SHA256(SHA256()) hash in internal byte order. The merkle root is derived from the hashes of all transactions included in this block, ensuring that none of those transactions can be modified without modifying the header.  See the [merkle trees section][section merkle trees] below.
 | 4     | time                | uint32_t  | The [block time][]{:#term-block-time}{:.term} is a Unix epoch time when the miner started hashing the header (according to the miner).  Must be greater than or equal to the median time of the previous 11 blocks.  Full nodes will not accept blocks with headers more than two hours in the future according to their clock.
 | 4     | nBits               | uint32_t  | An encoded version of the target threshold this block's header hash must be less than or equal to.  See the nBits format described below.
@@ -65,16 +65,24 @@ fe9f0864 ........................... Nonce
   <!-- source for heights: my (@harding) own headers dump and counting
   script -->
 
-* **Version 3** blocks will likely be introduced in the near-future as
+* **Version 3** blocks will be introduced when sufficient numbers of
+  miners switch to using Bitcoin Core 0.10.0 and other versions that
+  create version 3 blocks. As described in draft BIP66, this soft fork
+  change requires strict DER encoding for all ECDSA signatures used in
+  transactions appearing in version 3 or later blocks. Transactions that
+  do not use strict DER encoding have been non-standard since Bitcoin
+  Core 0.8.0.
+
+* **Version 4** blocks will likely be introduced in the near-future as
   specified in draft BIP62. Possible changes include:
 
-    * Reject version 3 blocks that include any version 2 transactions
+    * Reject version 4 blocks that include any version 2 transactions
       that don't adhere to any of the version 2 transaction rules.
       These rules are not yet described in this documentation; see
       BIP62 for details.
 
-    * A soft fork rollout of version 3 blocks identical to the rollout
-      used for version 2 blocks (described briefly in BIP62 and in more
+    * A soft fork rollout of version 4 blocks identical to the rollout
+      used for version 3 blocks (described briefly in BIP62 and in more
       detail in BIP34).
 
 {% endautocrossref %}
