@@ -197,5 +197,6 @@ default.
 {% autocrossref %}
 
 * [GetWork][rpc getwork]: {{summary_getWork}} {{REMOVED0_10_0}}
+* [GetHashesPerSec][rpc gethashespersec]: {{summary_getHashesPerSec}} {{REMOVED0_10_0}}
 
 {% endautocrossref %}
