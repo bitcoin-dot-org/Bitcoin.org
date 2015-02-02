@@ -27,7 +27,7 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_getConnectionCount="returns the number of connections to other nodes." %}
 {% assign summary_getDifficultly="returns the proof-of-work difficulty as a multiple of the minimum difficulty." %}
 {% assign summary_getGenerate="returns true if the node is set to generate blocks using its CPU." %}
-{% assign summary_getHashesPerSec="returns a recent hashes per second performance measurement when the node is generating blocks." %}
+{% assign summary_getHashesPerSec="was removed in Bitcoin Core master (unreleased). It returned a recent hashes per second performance measurement when the node was generating blocks." %}
 {% assign summary_getInfo="prints various information about the node and the network." %}
 {% assign summary_getMemPoolInfo="returns information about the node's current transaction memory pool." %}
 {% assign summary_getMiningInfo="returns various mining-related information." %}

@@ -386,6 +386,7 @@ http://opensource.org/licenses/MIT.
 [Bitcoin Core 0.3.18]: https://github.com/bitcoin/bitcoin/commit/82201801336f64ee77851b9eaab9383ee4e442f0
 [bitcoin core fee drop commit]: https://github.com/bitcoin/bitcoin/commit/6a4c196dd64da2fd33dc7ae77a8cdd3e4cf0eff1
 [Bitcoin Core issue #2381]: https://github.com/bitcoin/bitcoin/issues/2381
+[Bitcoin Core master]: https://github.com/bitcoin/bitcoin
 [Bitcoin Core pull #4468]: https://github.com/bitcoin/bitcoin/pull/4468
 [Bitcoin Seeder]: https://github.com/sipa/bitcoin-seeder
 [bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation

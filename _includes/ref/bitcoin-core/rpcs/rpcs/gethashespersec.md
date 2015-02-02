@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### GetHashesPerSec
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getHashesPerSec="was removed in Bitcoin Core 0.10.0. It returned a recent hashes per second performance measurement when the node was generating blocks." %}
+{% assign summary_getHashesPerSec="was removed in Bitcoin Core master (unreleased). It returned a recent hashes per second performance measurement when the node was generating blocks." %}
 
 {% autocrossref %}
 
@@ -24,7 +24,7 @@ The `gethashespersec` RPC {{summary_getHashesPerSec}}
 | `result`           | number (int)    | Required<br>(exactly 1)     | If generation is enabled, the number of hashes per second your computer most recently generated.  If generation is disabled, the value `0`
 {:.ntpd}
 
-*Example from Bitcoin Core 0.9.3*
+*Example from Bitcoin Core 0.10.0*
 
 {% highlight bash %}
 bitcoin-cli -testnet gethashespersec
