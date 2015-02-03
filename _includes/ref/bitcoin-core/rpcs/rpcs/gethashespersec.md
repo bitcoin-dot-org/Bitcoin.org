@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### GetHashesPerSec
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getHashesPerSec="returns a recent hashes per second performance measurement when the node is generating blocks." %}
+{% assign summary_getHashesPerSec="was removed in Bitcoin Core master (unreleased). It returned a recent hashes per second performance measurement when the node was generating blocks." %}
 
 {% autocrossref %}
 

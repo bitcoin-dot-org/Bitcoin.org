@@ -16,6 +16,9 @@ changes made more than two years ago.
 Use v0.n.n in abbreviation title to prevent autocrossrefing.
 {% endcomment %}
 
+<!-- master -->
+{% assign UPDATED_MASTER='**<abbr title="Updated in Bitcoin Core’s master branch (unreleased)">Updated in master</abbr>**' %}
+
 <!-- Bitcoin Core 0.10.0 expected January 2015 -->
 {% assign DEPRECATED='**<abbr title="Deprecated; will be removed in a future version of Bitcoin Core">Deprecated</abbr>**' %}
 {% assign NEW0_10_0='**<abbr title="New in Bitcoin Core v0.10.0">New in 0.10.0</abbr>**' %}
@@ -74,7 +77,6 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 {% autocrossref %}
 
 * [GetGenerate][rpc getgenerate]: {{summary_getGenerate}}
-* [GetHashesPerSec][rpc gethashespersec]: {{summary_getHashesPerSec}}
 * [SetGenerate][rpc setgenerate]: {{summary_setGenerate}}
 
 {% endautocrossref %}
@@ -86,7 +88,7 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 {% autocrossref %}
 
 * [GetBlockTemplate][rpc getblocktemplate]: {{summary_getBlockTemplate}}
-* [GetMiningInfo][rpc getmininginfo]: {{summary_getMiningInfo}}
+* [GetMiningInfo][rpc getmininginfo]: {{summary_getMiningInfo}} {{UPDATED_MASTER}}
 * [GetNetworkHashPS][rpc getnetworkhashps]: {{summary_getNetworkHashPS}}
 * [PrioritiseTransaction][rpc prioritisetransaction]: {{summary_prioritiseTransaction}} {{NEW0_10_0}}
 * [SubmitBlock][rpc submitblock]: {{summary_submitBlock}}
@@ -196,6 +198,7 @@ default.
 
 {% autocrossref %}
 
-* [GetWork][rpc getwork]: {{summary_getWork}} {{REMOVED0_10_0}}
+* [GetHashesPerSec][rpc gethashespersec]: {{summary_getHashesPerSec}}
+* [GetWork][rpc getwork]: {{summary_getWork}}
 
 {% endautocrossref %}
