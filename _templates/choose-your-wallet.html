@@ -534,6 +534,46 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
+- coinprism:
+    title: "Coinprism"
+    titleshort: "Coinprism"
+    compat: "mobile android"
+    level: 3
+    platform:
+      mobile:
+        text: "walletcoinprism"
+        link: "https://play.google.com/store/apps/details?id=com.coinprism.wallet"
+        source: "https://github.com/Coinprism/android-wallet"
+        screenshot: "coinprism-android.png"
+        os:
+        - android
+        check:
+          control: "checkpasscontrolmulti"
+          validation: "checkfailvalidationservers"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkfailprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "walletcoinprism"
+        link: "https://play.google.com/store/apps/details?id=com.coinprism.wallet"
+        source: "https://github.com/Coinprism/android-wallet"
+        screenshot: "coinprism-android.png"
+        os:
+        - android
+        check:
+          control: "checkpasscontrolmulti"
+          validation: "checkfailvalidationservers"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkfailprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 - coinbase:
     title: "Coinbase"
     titleshort: "Coinbase"
@@ -618,7 +658,6 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
-
 ---
 
 <h1>{% translate pagetitle %}</h1>
