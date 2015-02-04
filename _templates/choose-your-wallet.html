@@ -555,6 +555,26 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- celery:
+    title: "Celery"
+    titleshort: "Celery"
+    compat: "web"
+    level: 4
+    platform:
+        web:
+            text: "walletcelery"
+            link: "https://www.gocelery.com"
+            screenshot: "celery.png"
+        os:
+          control: "checkfailcontrolthirdparty"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - coinkite:
     title: "Coinkite"
     titleshort: "Coinkite"
