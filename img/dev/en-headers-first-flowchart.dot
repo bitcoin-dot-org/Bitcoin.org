@@ -1,0 +1,37 @@
+digraph {
+// This file is licensed under the MIT License (MIT) available on
+// http://opensource.org/licenses/MIT.
+
+size=6.25;
+rankdir=TB
+splines = "true";
+ranksep = 0.2;
+nodesep = 0.9;
+
+edge [ penwidth = 1.75, fontname="Sans" ]
+node [ penwidth = 1.75, shape = "none", fontname="Sans"]
+graph [ penwidth = 1.75, fontname="Sans" ]
+
+fsbc [ label = "Fully-Synced Block Chain?", style = "filled" ];
+fshc [ label = "Fully-Synced Header Chain?", style = "filled" ];
+more_headers_than_blocks [ label = "More Headers Than Blocks?", style = "filled" ];
+listen_for_new_blocks [ label = "Listen For New Blocks (Inv)" ];
+request_blocks [ label = "Request Blocks (GetData)" ];
+request_headers [ label = "Request Headers (GetHeaders)" ];
+
+fsbc -> fshc [ label = "  No" ];
+fshc -> more_headers_than_blocks [ label = "No" ];
+fshc -> request_headers [ label = "  No" ];
+
+fsbc -> listen_for_new_blocks [ label = "Yes", constraint=false ];
+fshc -> request_blocks [ label = "Yes", constraint=false ];
+request_blocks -> more_headers_than_blocks [ dir=back, label = "   Yes" ];
+
+//request_headers -> fshc [ style = "dotted", constraint = false ];
+//request_blocks -> fsbc [ style = "dotted", constraint = false ];
+
+
+
+
+label = "\ \nOverview Of Headers-First Initial Blocks Download (IBD)"
+}

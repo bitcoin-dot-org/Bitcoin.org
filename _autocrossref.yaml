@@ -117,6 +117,10 @@ hard fork:
 hard forks: hard fork
 hardened extended private key:
 HD protocol:
+header chain:
+headers-first: headers-first sync
+headers-first sync:
+headers-first IBD: headers-first sync
 '`headers` message': headers message
 '`headers` messages': headers message
 high-priority transaction: high-priority transactions
@@ -301,6 +305,7 @@ SPV:
 stack:
 stale block:
 stale blocks: stale block
+standard block relay:
 standard script:
 standard scripts: standard script
 standard transaction: standard script
@@ -321,11 +326,12 @@ txids: txid
 unconfirmed:
 unconfirmed transactions:
 unencrypted wallet:
-unlocked wallet:
 unix epoch time:
 unix time: unix epoch time
 unique address: unique addresses
 unique addresses:
+unlocked wallet:
+unsolicited block push:
 utxo:
 utxos: utxo
 '`verack` message': verack message
