@@ -124,6 +124,7 @@ en:
     wallettrezor: "TREZOR is a hardware wallet providing a high level of security without sacrificing convenience. Unlike cold storage, TREZOR is able to sign transactions while connected to an online device. That means spending bitcoins is secure even when using a compromised computer."
     wallethw1: "HW.1 is a hardware wallet built upon a ST23YT66 banking smartcard platform. It keeps the user private keys safe, validates transactions, can be used as a secure prepaid card or a multisignature party. While not open-source, it can be deterministically validated."
     walletcoinapult: "Coinapult's wallet is designed with Bitcoin newcomers in mind. It allows sending bitcoins via email and SMS, and a handy tool called Locks helps protecting your balance from Bitcoin price swings. Users can Lock bitcoins to Gold, Euros, and more!"
+    walletcoinjar: "CoinJar is a hosted wallet service that aims to be easy to use. It also provides an iOS wallet app, merchant tools, a linked debit card, and the direct online purchase and sale of bitcoins."
     walletdownload: "Install"
     walletvisit: "Visit website"
     walletsourcecode: "Source code"
