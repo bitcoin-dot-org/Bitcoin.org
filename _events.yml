@@ -1,11 +1,3 @@
-- date: 2015-02-06
-  title: "Bitcoin First Friday Event"
-  venue: "Raw Remedies Gallery"
-  address: "203 COLORADO AVE"
-  city: "Las Vegas, Nevada"
-  country: "USA"
-  link: "https://www.facebook.com/events/749536845128074/"
-
 - date: 2015-02-20
   title: "Coinfest. The first decentralized decentralized currency convention"
   city: "Many cities"
@@ -91,6 +83,14 @@
   city: "Boston"
   country: "United States"
   link: "http://summit.virtualcurrencytoday.com/"
+
+- date: 2015-05-06
+  title: "Bitcoin Wednesday"
+  venue: "Pakhuis de Zwijger"
+  address: "Piet Heinkade 179"
+  city: "Amsterdam"
+  country: "The Netherlands"
+  link: "http://www.BitcoinWednesday.com"
 
 - date: 2015-05-25
   title: "MTBIT - Bitcoin & Remittances Istanbul"
