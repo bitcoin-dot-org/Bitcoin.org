@@ -30,6 +30,10 @@
   needed** to answer translator questions and help process
   reviews---email <dave@dtrt.org> for details.
 
+* Add Bitcoin events to the [events page][] either by [editing `_events.yml`][edit events]
+  according to the [event instructions][] or by filling in a [pre-made
+  events issue][].
+
 * Help improve Bitcoin.org using your unique skills. We can always use
   the help of writers, editors, graphic artists, web designers, and anyone
   else to enhance Bitcoin.org's [current content][] or to add new
@@ -42,8 +46,12 @@ You can always report problems or help improve bitcoin.org by opening a [new iss
 [choose your wallet page]: https://bitcoin.org/en/choose-your-wallet
 [current content]: https://bitcoin.org/
 [developer documentation pages]: https://bitcoin.org/en/developer-documentation
+[edit events]: https://github.com/bitcoin/bitcoin.org/edit/master/_events.yml
+[event instructions]: #events
+[events page]: https://bitcoin.org/en/events
 [GitHub]: https://github.com/bitcoin/bitcoin.org
 [new issue]: https://github.com/bitcoin/bitcoin.org/issues/new
+[pre-made events issue]: https://github.com/bitcoin/bitcoin.org/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22
 [PRs adding new documentation]: https://github.com/bitcoin/bitcoin.org/pulls?q=is%3Aopen+label%3A%22Dev+Docs%22+is%3Apr
 [pull request]: #working-with-github
 [recommended starter projects]: https://github.com/bitcoin/bitcoin.org/wiki/Starter-Projects
@@ -256,6 +264,11 @@ Events should be placed in `_events.yml` and adhere to this format:
   country: "United States"
   link: "http://texasbitcoinconference.com/"
 ```
+
+Events that have a [Meetup.com](http://www.meetup.com/) page with a
+publicly-viewable address and "Bitcoin" in the event title should
+already be displayed on the [events page][]. (Please open a [new
+issue][] if a Bitcoin meetup event isn't displayed.)
 
 ### Release Notes
 
