@@ -1,6 +1,66 @@
 ## How To Participate
 
-You can report problems or help improve bitcoin.org by opening an issue or a [pull request](#working-with-github) on [GitHub](https://github.com/bitcoin/bitcoin.org). You can also help by [translating](#translation) bitcoin.org's text on [Transifex](https://www.transifex.com/projects/p/bitcoinorg/).
+*Bitcoin.org needs volunteers like you!*  Here are some ways you can help:
+
+* "Watch" this repository to be notified of issues and Pull Requests
+  (PRs) that could use your attention. Scroll to the top of this page
+  and click the *Watch* button to get notifications by email and on your
+  GitHub home page.
+
+    Alternatively, email volunteer coordinator Dave Harding
+    <dave@dtrt.org> with a short list of your interests and skills, and
+    he'll email you when there's an issue or PR that could use your
+    attention.
+
+* Help [write new documentation][] for the [developer
+  documentation pages][] or [upcoming full node page][], or **review [PRs
+  adding new documentation][].** You don't need to be a Bitcoin expert
+  to review a PR---these docs are written for non-experts, so we need to
+  know if non-experts find them confusing or incomplete. If you review a
+  PR and don't find any problems worth commenting about, leave a "Looks
+  Good To Me (LGTM)" comment.
+
+* [Submit new wallets][] for the [Choose Your Wallet page][], or
+  help us [review wallet submissions][]. **Reviewers with Apple iOS
+  hardware especially needed**---email <dave@dtrt.org> to
+  be notified about iOS wallets needing review.
+
+* [Translate Bitcoin.org into another language][] using [Transifex][] or
+  help review new and updated translations. **Translation coordinator
+  needed** to answer translator questions and help process
+  reviews---email <dave@dtrt.org> for details.
+
+* Add Bitcoin events to the [events page][] either by [editing `_events.yml`][edit events]
+  according to the [event instructions][] or by filling in a [pre-made
+  events issue][].
+
+* Help improve Bitcoin.org using your unique skills. We can always use
+  the help of writers, editors, graphic artists, web designers, and anyone
+  else to enhance Bitcoin.org's [current content][] or to add new
+  content. See the **list of [recommended starter projects][]** or email
+  volunteer coordinator Dave Harding <dave@dtrt.org> to start a
+  conversation about how you can help Bitcoin.org.
+
+You can always report problems or help improve bitcoin.org by opening a [new issue][] or [pull request][] on [GitHub][].
+
+[choose your wallet page]: https://bitcoin.org/en/choose-your-wallet
+[current content]: https://bitcoin.org/
+[developer documentation pages]: https://bitcoin.org/en/developer-documentation
+[edit events]: https://github.com/bitcoin/bitcoin.org/edit/master/_events.yml
+[event instructions]: #events
+[events page]: https://bitcoin.org/en/events
+[GitHub]: https://github.com/bitcoin/bitcoin.org
+[new issue]: https://github.com/bitcoin/bitcoin.org/issues/new
+[pre-made events issue]: https://github.com/bitcoin/bitcoin.org/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22
+[PRs adding new documentation]: https://github.com/bitcoin/bitcoin.org/pulls?q=is%3Aopen+label%3A%22Dev+Docs%22+is%3Apr
+[pull request]: #working-with-github
+[recommended starter projects]: https://github.com/bitcoin/bitcoin.org/wiki/Starter-Projects
+[review wallet submissions]: https://github.com/bitcoin/bitcoin.org/pulls?q=is%3Aopen+label%3Awallet+is%3Apr
+[submit new wallets]: #adding-a-wallet
+[transifex]: https://www.transifex.com/projects/p/bitcoinorg/
+[translate Bitcoin.org into another language]: #how-to-translate
+[upcoming full node page]: https://github.com/bitcoin/bitcoin.org/pull/711
+[write new documentation]: #developer-documentation
 
 ### Working With GitHub
 
@@ -205,6 +265,11 @@ Events should be placed in `_events.yml` and adhere to this format:
   link: "http://texasbitcoinconference.com/"
 ```
 
+Events that have a [Meetup.com](http://www.meetup.com/) page with a
+publicly-viewable address and "Bitcoin" in the event title should
+already be displayed on the [events page][]. (Please open a [new
+issue][] if a Bitcoin meetup event isn't displayed.)
+
 ### Release Notes
 
 Release notes should be placed in `_releases/YYYY-MM-DD-VERSION.md` and adhere to this format:
@@ -315,6 +380,11 @@ Optional criterias (some could become requirements):
   - Prevents downgrading the firmware
 
 ### Adding a wallet
+
+*Before adding a wallet,* please make sure your wallet meets all of the
+Basic Requirements listed above, or open a [new issue][] to request an
+exemption or policy change. Feel free to email Dave Harding
+<dave@dtrt.org> if you have any questions.
 
 Wallets can be added in `_templates/choose-your-wallet.html`. Entries are ordered by levels and new wallets must be added after the last wallet on the same level.
 
