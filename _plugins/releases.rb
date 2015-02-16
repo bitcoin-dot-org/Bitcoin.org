@@ -41,6 +41,8 @@ module Jekyll
         if !site.config.has_key?('DOWNLOAD_VERSION') or site.config['DOWNLOAD_VERSIONINT'] < self.data['versionint']
           site.config['DOWNLOAD_VERSIONINT'] = self.data['versionint']
           site.config['DOWNLOAD_VERSION'] = self.data['version']
+          site.config.delete('DOWNLOAD_MAGNETLINK') if site.config.has_key?('DOWNLOAD_MAGNETLINK')
+          site.config['DOWNLOAD_MAGNETLINK'] = self.data['magnetlink'] if self.data.has_key?('magnetlink')
         end
         site.pages << ReleasePage.new(site, base, lang, srcdir, src, '/releases/' + year + '/' + month + '/' + day, dst, year, month, day)
       end
