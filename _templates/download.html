@@ -71,7 +71,7 @@ lin64: "linux64.tar.gz"
       </div>
     </div>
     <p>
-      <a href="/bin/{{ site.DOWNLOAD_VERSION }}/SHA256SUMS.asc">{% translate downloadsig %}</a><br>
+      <a href="{{ PATH_PREFIX }}/SHA256SUMS.asc">{% translate downloadsig %}</a><br>
       <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}.torrent">{% translate downloadtorrent %}</a>{% if site.DOWNLOAD_MAGNETLINK %} <a href="{{ site.DOWNLOAD_MAGNETLINK }}" class="magnetlink"></a>{% endif %}<br>
       <a href="/en/version-history">{% translate versionhistory %}</a>
     </p>
