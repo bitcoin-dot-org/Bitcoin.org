@@ -17,10 +17,12 @@ module Jekyll
 
     def initialize(tag_name, text, tokens)
       super
+      @error = text
     end
 
     def render(context)
-        abort("Liquid die tag called.  Dying...")
+        ## Produces: Liquid die tag called. [<Error.>] -- Error creating output [in <output file name>]
+        abort("Liquid die tag called. " + @error + " -- Error creating output" )
     end
   end
 end

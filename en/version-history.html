@@ -13,7 +13,10 @@ title: Bitcoin Core version history
   <ul>
   {% filter_for p in site.pages reversed sort_by:versionint category:release %}
     <li>
-      {{ p.date | date:"%Y-%m-%d" }} - <a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a>
+      {% if p.optional_date %}
+        {{ p.optional_date | date:"%Y-%m-%d" }} -
+      {% endif %}
+      <a href="{{ p.url | replace:'.html','' }}">{{ p.required_title }}</a>
     </li>
   {% endfilter_for %}
   </ul>
