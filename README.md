@@ -272,21 +272,87 @@ issue][] if a Bitcoin meetup event isn't displayed.)
 
 ### Release Notes
 
-Release notes should be placed in `_releases/YYYY-MM-DD-VERSION.md` and adhere to this format:
+To create a new Bitcoin Core release, create a new file in the
+`_releases/` directory.  Any file name ending in `.md` is fine, but we
+recommend naming it after the release, such as `0.10.0.md`
 
-```
+Then copy in the following YAML header (the part between the three dashes, ---):
+
+~~~
 ---
-title: Bitcoin Core version 0.9.0 released
+##### REQUIRED variables: if not set, site build aborts
+## Required value below populates the %v variable (note: % needs to be escaped in YAML if it starts a value)
+required_version: 0.10.0
+
+## Required alt version number for sorting.  Not displayed anywhere.
+## Only handles numeric values containing up to 5 decimal separators.
+## Release with highest sort_order_version is linked on Download page
+required_sort_order_version: "%v"
+
+## Title for release notes; doesn't usually need to be changed
+required_title: Bitcoin Core version %v released
+
+##### REQUIRED URLs: if not set when used to create Download page, site build aborts
+## If local to Bitcoin.org, URL must start with: /
+## This doesn't usually need to be changed
+required_sha256sums: /bin/bitcoin-core-%v/SHA256SUMS.asc
+
+##### Optional Variables: may be empty or commented-out
+## ISO-8601 release date can be left empty and then added hours/days after a release is made
+optional_date: 2015-02-16
+
+##### Optional URLs: if unset, corresponding link on the Download page will not be created
+## These first few usually don't need to be changed because %v keeps them accurate.
+## If local to Bitcoin.org, URL must start with: /
+optional_sourcetar: /bin/bitcoin-core-%v/bitcoin-%v.tar.gz
+optional_win32zip: /bin/bitcoin-core-%v/bitcoin-%v-win32.zip
+optional_win64zip: /bin/bitcoin-core-%v/bitcoin-%v-win64.zip
+optional_win32exe: /bin/bitcoin-core-%v/bitcoin-%v-win32-setup.exe
+optional_win64exe: /bin/bitcoin-core-%v/bitcoin-%v-win64.zip
+optional_lin32: /bin/bitcoin-core-%v/bitcoin-%v-linux32.tar.gz
+optional_lin64: /bin/bitcoin-core-%v/bitcoin-%v-linux64.tar.gz
+optional_mactar: /bin/bitcoin-core-%v/bitcoin-%v-osx64.tar.gz
+
+## The Mac DMG has to be manually renamed during the build process, so make sure it's accurate
+optional_macdmg: /bin/bitcoin-core-%v/bitcoin-%v-osx.dmg
+
+## Torrent file should be automatically created in /bin/* within 5 minutes of binary upload
+optional_torrent: /bin/bitcoin-core-%v/bitcoin-%v.torrent
+
+## To get the magnet link, open the torrent in a good BitTorrent client
+## and View Details, or install the transmission-cli Debian/Ubuntu package
+## and run: transmission-show -m <torrent file>
+#
+## Link should be enclosed in quotes and start with: "magnet:?
+optional_magnetlink: "magnet:?xt=urn:btih:170c61fe09dafecfbb97cb4dccd32173383f4e68&dn=0.10.0&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.ccc.de%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&ws=https%3A%2F%2Fbitcoin.org%2Fbin%2F"
+
+## The --- below ends the YAML header.  After that, paste the release notes.
+## Warning: this site's Markdown parser commonly requires you make two
+## changes to the release notes from the Bitcoin Core source tree:
+##
+## 1. Make sure both ordered and unordered lists are preceeded by an empty
+##    (whitespace only) line, like the empty line before this list item.
+##
+## 2. Place URLs inside angle brackets, like <http://bitcoin.org/bin>
 ---
+~~~
 
-Bitcoin Core v0.9.0 is now available for download at
-<https://bitcoin.org/bin/0.9.0/>
+Immediately below the YAML header, copy in the release notes from the
+Bitcoin Core source tree.
 
-...
-```
-* `VERSION` is used to define the version and construct the URL. It should adhere to this format: `v0.3.24`.
-* `title: ...` will be used as the title.
-* `magnetlink: ...` (optional) the urlencoded torrent magnet link on the download page.
+Then start at the top of the YAML header and read the comments, filling
+in and replacing information as necessary, and then reformatting the
+release notes (if necessary) as described by the last lines of the YAML
+header.
+
+[Once Travis is enabled] You can then create a pull request to the
+master branch and Travis CI will automatically build it and make sure
+the links you provided return a "200 OK" HTTP header. (The actual files
+will not be downloaded to save bandwidth.) Alternatively, you can build
+the site locally with `make all` to run the same quality assurance tests.
+
+The file can be edited later to add any optional information (such as a
+release date) that you didn't have when you created the file.
 
 ### Alerts
 

@@ -5,46 +5,92 @@
 layout: base
 id: download
 
-win32zip: "win32.zip"
-win64zip: "win64.zip"
-win32exe: "win32-setup.exe"
-win64exe: "win64-setup.exe"
-macdmg: "-osx.dmg"
-#macdmg: ".dmg"
-mactar: "osx64.tar.gz"
-lin32: "linux32.tar.gz"
-lin64: "linux64.tar.gz"
-
 ---
-{% capture PATH_PREFIX %}/bin/bitcoin-core-{{ site.DOWNLOAD_VERSION }}{% endcapture %}
-{% capture FILE_PREFIX %}bitcoin-{{ site.DOWNLOAD_VERSION }}{% endcapture %}
 <link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin Core releases">
 <div class="download">
   <h1>{% translate pagetitle %}</h1>
   <h2>{% translate latestversion %} {{ site.DOWNLOAD_VERSION }}<a type="application/rss+xml" href="/en/rss/releases.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h2>
-  <div class="mainbutton"><a id="downloadbutton" href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}"><img src="/img/os/but_windows.svg" alt="icon">{% translate download %}</a></div>
+  {% comment %}
+  ## Don't display the big blue Download Bitcoin Core box unless we have
+  ## all the files it will automatically link to. Users can still
+  ## manually select their operating system version to download files.  {% endcomment %}
+  {% if site.url_win32exe and site.url_win32zip and site.url_win64exe and site.url_win64zip and site.url_lin32 and site.url_lin64 and site.url_macdmg %}
+    <div class="mainbutton">
+      <a id="downloadbutton" href="{{site.url_win32exe}}"><img src="/img/os/but_windows.svg" alt="icon">{% translate download %}</a>
+    </div>
+  {% endif %}
+
   <div class="downloadbox">
     <p>{% translate downloados %}</p>
     <div>
       <div>
         <img src="/img/os/med_win.png" alt="windows">
         <span>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}" id="downloadwinexe">Windows</a>
-          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}">64 bit</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}">32 bit</a></span>
+          {% if site.url_win64exe %}
+            <a href="{{site.url_win64exe}}" id="downloadwinexe">Windows</a>
+          {% else %}
+            <span id="downloadwinexe">Windows</span>
+          {% endif %}
+          <span>
+            {% if site.url_win64exe %}
+              <a href="{{site.url_win64exe}}" class="dl">64 bit</a>
+            {% else %}
+              <abbr title="{% translate file_not_currently_available %}">64 bit</abbr>
+            {% endif %}
+            -
+            {% if site.url_win32exe %}
+              <a href="{{site.url_win32exe}}" class="dl">32 bit</a>
+            {% else %}
+              <abbr title="{% translate file_not_currently_available %}">32 bit</abbr>
+            {% endif %}
+          </span>
         </span>
       </div>
+
       <div>
         <img src="/img/os/med_win.png" alt="windows">
         <span>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}" id="downloadwinzip">Windows (zip)</a>
-          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}">64 bit</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32zip }}">32 bit</a></span>
+          {% if site.url_win64zip %}
+            <a href="{{site.url_win64zip}}" id="downloadwinzip">Windows (zip)</a>
+          {% else %}
+            Windows (zip)
+          {% endif %}
+          <span>
+            {% if site.url_win64zip %}
+              <a href="{{site.url_win64zip}}" class="dl">64 bit</a>
+            {% else %}
+              <abbr title="{% translate file_not_currently_available %}">64 bit</abbr>
+            {% endif %}
+            -
+            {% if site.url_win32zip %}
+              <a href="{{site.url_win32zip}}" class="dl">32 bit</a>
+            {% else %}
+              <abbr title="{% translate file_not_currently_available %}">32 bit</abbr>
+            {% endif %}
+          </span>
         </span>
       </div>
       <div>
         <img src="/img/os/med_osx.png" alt="osx">
         <span>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}">Mac OS X</a>
-          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}">dmg</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.mactar }}">tar.gz</a></span>
+          {% if site.url_macdmg %}
+            <a href="{{site.url_macdmg}}">Mac OS X</a>
+          {% else %}
+            Mac OS X
+          {% endif %}
+          <span>
+            {% if site.url_macdmg %}
+              <a href="{{site.url_macdmg}}" class="dl">dmg</a>
+            {% else %}
+              <abbr title="{% translate file_not_currently_available %}">dmg</abbr>
+            {% endif %}
+            -
+            {% if site.url_mactar %}
+              <a href="{{site.url_mactar}}" class="dl">tar.gz</a>
+            {% else %}
+              <abbr title="{% translate file_not_currently_available %}">tar.gz</abbr>
+            {% endif %}
+          </span>
         </span>
       </div>
     </div>
@@ -52,8 +98,24 @@ lin64: "linux64.tar.gz"
       <div>
         <img src="/img/os/med_linux.png" alt="linux">
         <span>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}" id="downloadlin">Linux (tgz)</a>
-          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}">64 bit</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin32 }}">32 bit</a></span>
+          {% if site.url_lin64 %}
+            <a href="{{site.url_lin64}}" id="downloadlin">Linux (tgz)</a>
+          {% else %}
+            Linux (tgz)
+          {% endif %}
+          <span>
+            {% if site.url_lin64 %}
+              <a href="{{site.url_lin64}}" class="dl">64 bit</a>
+            {% else %}
+              <abbr title="{% translate file_not_currently_available %}">64 bit</abbr>
+            {% endif %}
+            -
+            {% if site.url_lin32 %}
+              <a href="{{site.url_lin32}}" class="dl">32 bit</a>
+            {% else %}
+              <abbr title="{% translate file_not_currently_available %}">32 bit</abbr>
+            {% endif %}
+          </span>
         </span>
       </div>
       <div>
@@ -65,14 +127,29 @@ lin64: "linux64.tar.gz"
       <div>
         <img src="/img/os/med_opensource.svg" alt="source code">
         <span>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}.tar.gz">{% translate source %}</a>
+          {% if site.url_sourcetar %}
+            <a href="{{site.url_sourcetar}}" class="dl">{% translate source %}</a>
+          {% else %}
+            {% translate source %}
+          {% endif %}
           <span><a href="https://github.com/bitcoin/bitcoin">GitHub</a></span>
         </span>
       </div>
     </div>
     <p>
-      <a href="{{ PATH_PREFIX }}/SHA256SUMS.asc">{% translate downloadsig %}</a><br>
-      <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}.torrent">{% translate downloadtorrent %}</a>{% if site.DOWNLOAD_MAGNETLINK %} <a href="{{ site.DOWNLOAD_MAGNETLINK }}" class="magnetlink"></a>{% endif %}<br>
+      {% if site.url_sha256sums %}
+        <a href="{{site.url_sha256sums}}" class="dl">{% translate downloadsig %}</a><br>
+      {% else %}
+        {% die "Need to set required_sha256sums in source _releases/ file" %}
+      {% endif %}
+      {% if site.url_torrent %}
+        <a href="{{site.url_torrent}}" class="dl">{% translate downloadtorrent %}</a>
+        {% if site.url_magnetlink %}
+          <a href="{{site.url_magnetlink}}" class="magnetlink"></a>
+        {% endif %}
+      {% else %}
+        <abbr title="{% translate file_not_currently_available %}">{% translate downloadtorrent %}</abbr>
+      {% endif %}<br>
       <a href="/en/version-history">{% translate versionhistory %}</a>
     </p>
   </div>
@@ -96,25 +173,25 @@ var linklin = document.getElementById('downloadlin');
 switch (os) {
 case 'windows64':
 	but.getElementsByTagName('IMG')[0].src = '/img/os/but_windows.svg';
-	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}';
-	linkwinexe.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}';
-	linkwinzip.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}';
+	but.href = '{{site.url_win64exe}}';
+	linkwinexe.href = '{{site.url_win64exe}}';
+	linkwinzip.href = '{{site.url_win64zip}}';
 break;
 case 'windows32':
 	but.getElementsByTagName('IMG')[0].src = '/img/os/but_windows.svg';
-	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}';
-	linkwinexe.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}';
-	linkwinzip.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32zip }}';
+	but.href = '{{site.url_win32exe}}';
+	linkwinexe.href = '{{site.url_win32exe}}';
+	linkwinzip.href = '{{site.url_win32zip}}';
 break;
 case 'linux64':
 	but.getElementsByTagName('IMG')[0].src = '/img/os/but_linux.png';
-	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}';
-	linklin.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}';
+	but.href = '{{site.url_lin64}}';
+	linklin.href = '{{site.url_lin64}}';
 break;
 case 'linux32':
 	but.getElementsByTagName('IMG')[0].src = '/img/os/but_linux.png';
-	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin32 }}';
-	linklin.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin32 }}';
+	but.href = '{{site.url_lin32}}';
+	linklin.href = '{{site.url_lin32}}';
 break;
 case 'ubuntu':
 	but.getElementsByTagName('IMG')[0].src = '/img/os/but_ubuntu.svg';
@@ -122,7 +199,7 @@ case 'ubuntu':
 break;
 case 'mac':
 	but.getElementsByTagName('IMG')[0].src = '/img/os/but_mac.svg';
-	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}';
+	but.href = '{{site.url_macdmg}}';
 break;
 }
 </script>

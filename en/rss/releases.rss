@@ -13,12 +13,17 @@
 		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
 		<link>https://bitcoin.org/en/version-history</link>
 	</image>
-	{% filter_for p in site.pages reversed sort_by:date category:release %}
+	{% filter_for p in site.pages reversed sort_by:versionint category:release %}
         <item>
-            <title>{{ p.title | htmlescape }}</title>
+            <title>{{ p.required_title | htmlescape }}</title>
             <link>https://bitcoin.org{{ p.url | replace:'.html','' }}</link>
             <guid>https://bitcoin.org{{ p.url | replace:'.html','' }}</guid>
-            <pubDate>{{ p.date | date: "%a, %d %b %Y" }} 00:00:00 GMT</pubDate>
+            {% if p.optional_date %}
+              <pubDate>{{ p.optional_date | date: "%a, %d %b %Y" }} 00:00:00 GMT</pubDate>
+            {% else %}
+              <pubDate>{{ 'now' | date: "%a, %d %b %Y" }} 00:00:00 GMT</pubDate>
+            {% endif %}
+
         </item>
 	{% endfilter_for %}
 </channel>
