@@ -35,12 +35,14 @@ id: download
             {% if site.url_win64exe %}
               <a href="{{site.url_win64exe}}" class="dl">64 bit</a>
             {% else %}
+              {% warn "64-bit Windows EXE URL not set in release file" %}
               <abbr title="{% translate file_not_currently_available %}">64 bit</abbr>
             {% endif %}
             -
             {% if site.url_win32exe %}
               <a href="{{site.url_win32exe}}" class="dl">32 bit</a>
             {% else %}
+              {% warn "32-bit Windows EXE URL not set in release file" %}
               <abbr title="{% translate file_not_currently_available %}">32 bit</abbr>
             {% endif %}
           </span>
@@ -59,12 +61,14 @@ id: download
             {% if site.url_win64zip %}
               <a href="{{site.url_win64zip}}" class="dl">64 bit</a>
             {% else %}
+              {% warn "64-bit Windows ZIP URL not set in release file" %}
               <abbr title="{% translate file_not_currently_available %}">64 bit</abbr>
             {% endif %}
             -
             {% if site.url_win32zip %}
               <a href="{{site.url_win32zip}}" class="dl">32 bit</a>
             {% else %}
+              {% warn "32-bit Windows ZIP URL not set in release file" %}
               <abbr title="{% translate file_not_currently_available %}">32 bit</abbr>
             {% endif %}
           </span>
@@ -82,12 +86,14 @@ id: download
             {% if site.url_macdmg %}
               <a href="{{site.url_macdmg}}" class="dl">dmg</a>
             {% else %}
+              {% warn "Mac DMG URL not set in release file" %}
               <abbr title="{% translate file_not_currently_available %}">dmg</abbr>
             {% endif %}
             -
             {% if site.url_mactar %}
               <a href="{{site.url_mactar}}" class="dl">tar.gz</a>
             {% else %}
+              {% warn "Mac tarball URL not set in release file" %}
               <abbr title="{% translate file_not_currently_available %}">tar.gz</abbr>
             {% endif %}
           </span>
@@ -107,12 +113,14 @@ id: download
             {% if site.url_lin64 %}
               <a href="{{site.url_lin64}}" class="dl">64 bit</a>
             {% else %}
+              {% warn "Linux 64-bit tarball URL not set in release file" %}
               <abbr title="{% translate file_not_currently_available %}">64 bit</abbr>
             {% endif %}
             -
             {% if site.url_lin32 %}
               <a href="{{site.url_lin32}}" class="dl">32 bit</a>
             {% else %}
+              {% warn "Linux 32-bit tarball URL not set in release file" %}
               <abbr title="{% translate file_not_currently_available %}">32 bit</abbr>
             {% endif %}
           </span>
@@ -130,6 +138,7 @@ id: download
           {% if site.url_sourcetar %}
             <a href="{{site.url_sourcetar}}" class="dl">{% translate source %}</a>
           {% else %}
+              {% warn "Source code tarball URL not set in release file" %}
             {% translate source %}
           {% endif %}
           <span><a href="https://github.com/bitcoin/bitcoin">GitHub</a></span>
@@ -146,8 +155,11 @@ id: download
         <a href="{{site.url_torrent}}" class="dl">{% translate downloadtorrent %}</a>
         {% if site.url_magnetlink %}
           <a href="{{site.url_magnetlink}}" class="magnetlink"></a>
+        {% else %}
+          {% warn "Magnet URI not set in release file" %}
         {% endif %}
       {% else %}
+        {% warn "Torrent URL not set in release file" %}
         <abbr title="{% translate file_not_currently_available %}">{% translate downloadtorrent %}</abbr>
       {% endif %}<br>
       <a href="/en/version-history">{% translate versionhistory %}</a>

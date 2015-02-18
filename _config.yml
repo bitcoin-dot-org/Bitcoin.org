@@ -122,7 +122,7 @@ redirects:
   /it/bitcoin-per-appassionati: /it/innovazione
   /nl/bitcoin-voor-liefhebbers: /nl/innovatie
   /pl/bitcoin-dla-entuzjastow: /pl/innowacje
-  ## Old releases pages; stop adding to this list after 0.10.0
+  ## Old releases pages; stop adding to this list after 0.8.2
   /releases/2011/04/27/v0.3.21: /en/release/v0.3.21
   /releases/2011/06/05/v0.3.22: /en/release/v0.3.22
   /releases/2011/06/14/v0.3.23: /en/release/v0.3.23
@@ -143,16 +143,6 @@ redirects:
   /releases/2013/02/19/v0.8.0: /en/release/v0.8.0
   /releases/2013/03/18/v0.8.1: /en/release/v0.8.1
   /releases/2013/05/29/v0.8.2: /en/release/v0.8.2
-  /releases/2013/06/25/v0.8.3: /en/release/v0.8.3
-  /releases/2013/09/03/v0.8.4: /en/release/v0.8.4
-  /releases/2013/09/13/v0.8.5: /en/release/v0.8.5
-  /releases/2013/12/09/v0.8.6: /en/release/v0.8.6
-  /releases/2014/03/19/v0.9.0: /en/release/v0.9.0
-  /releases/2014/04/08/v0.9.1: /en/release/v0.9.1
-  /releases/2014/06/16/v0.9.2: /en/release/v0.9.2
-  /releases/2014/06/19/v0.9.2.1: /en/release/v0.9.2.1
-  /releases/2014/09/27/v0.9.3: /en/release/v0.9.3
-  /releases/2015/02/16/v0.10.0: /en/release/v0.10.0
 
 aliases:
   --author=Satoshi Nakamoto: Satoshi Nakamoto
