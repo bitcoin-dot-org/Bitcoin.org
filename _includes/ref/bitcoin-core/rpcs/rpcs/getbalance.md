@@ -17,10 +17,12 @@ The `getbalance` RPC {{summary_getBalance}}
 
 *Parameter #1---an account name*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Account            | string          | Optional<br>(0 or 1)        | The name of an account to get the balance for.  An empty string ("") is the default account.  The string `*` will get the balance for all accounts (this is the default behavior)
-{:.ntpd}
+{{json_table}}
+
+* Account
+* string
+* Optional (0 or 1)
+* The name of an account to get the balance for.  An empty string ("") is the default account.  The string `*` will get the balance for all accounts (this is the default behavior)
 
 *Parameter #2---the minimum number of confirmations*
 
@@ -32,10 +34,12 @@ The `getbalance` RPC {{summary_getBalance}}
 
 *Result---the balance in bitcoins*
 
-| Name               | Type              | Presence                    | Description
-|--------------------|-------------------|-----------------------------|----------------
-| `result`           | number (bitcoins) | Required<br>(exactly 1)     | The balance of the account (or all accounts) in bitcoins
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* number (bitcoins)
+* Required (exactly 1)
+* The balance of the account (or all accounts) in bitcoins
 
 *Examples from Bitcoin Core 0.10.0*
 

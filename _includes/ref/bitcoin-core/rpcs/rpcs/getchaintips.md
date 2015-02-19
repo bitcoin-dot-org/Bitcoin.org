@@ -19,15 +19,37 @@ The `getchaintips` RPC {{summary_getChainTips}}
 
 *Result---an array of block chain tips*
 
-| Name                | Type            | Presence                    | Description
-|---------------------|-----------------|-----------------------------|----------------
-| `result`            | array           | Required<br>(exactly 1)     | An array of JSON objects, with each object describing a chain tip.  At least one tip---the local best block chain---will always be present
-| →<br>Tip            | object          | Required<br>(1 or more)     | An object describing a particular chain tip.  The first object will always describe the active chain (the local best block chain)
-| → →<br>`height`     | number (int)    | Required<br>(exactly 1)     | The height of the highest block in the chain.  A new node with only the genesis block will have a single tip with height of 0
-| → →<br>`hash`       | string (hex)    | Required<br>(exactly 1)     | The hash of the highest block in the chain, encoded as hex in RPC byte order
-| → →<br>`branchlen`  | number (int)    | Required<br>(exactly 1)     | The number of blocks that are on this chain but not on the main chain.  For the local best block chain, this will be `0`; for all other chains, it will be at least `1`
-| → →<br>`status`     | string          | Required<br>(exactly 1)     | The status of this chain.  Valid values are:<br>• `active` for the local best block chain<br>• `invalid` for a chain that contains one or more invalid blocks<br>• `headers-only` for a chain with valid headers whose corresponding blocks both haven't been validated and aren't stored locally<br>• `valid-headers` for a chain with valid headers whose corresponding blocks are stored locally, but which haven't been fully validated<br>• `valid-fork` for a chain which is fully validated but which isn't part of the local best block chain (it was probably the local best block chain at some point)<br>• `unknown` for a chain whose reason for not being the active chain is unknown
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* array
+* Required (exactly 1)
+* An array of JSON objects, with each object describing a chain tip.  At least one tip---the local best block chain---will always be present
+
+* →<br>Tip
+* object
+* Required (1 or more)
+* An object describing a particular chain tip.  The first object will always describe the active chain (the local best block chain)
+
+* → →<br>`height`
+* number (int)
+* Required (exactly 1)
+* The height of the highest block in the chain.  A new node with only the genesis block will have a single tip with height of 0
+
+* → →<br>`hash`
+* string (hex)
+* Required (exactly 1)
+* The hash of the highest block in the chain, encoded as hex in RPC byte order
+
+* → →<br>`branchlen`
+* number (int)
+* Required (exactly 1)
+* The number of blocks that are on this chain but not on the main chain.  For the local best block chain, this will be `0`; for all other chains, it will be at least `1`
+
+* → →<br>`status`
+* string
+* Required (exactly 1)
+* The status of this chain.  Valid values are:<br>• `active` for the local best block chain<br>• `invalid` for a chain that contains one or more invalid blocks<br>• `headers-only` for a chain with valid headers whose corresponding blocks both haven't been validated and aren't stored locally<br>• `valid-headers` for a chain with valid headers whose corresponding blocks are stored locally, but which haven't been fully validated<br>• `valid-fork` for a chain which is fully validated but which isn't part of the local best block chain (it was probably the local best block chain at some point)<br>• `unknown` for a chain whose reason for not being the active chain is unknown
 
 *Example from Bitcoin Core 0.10.0*
 

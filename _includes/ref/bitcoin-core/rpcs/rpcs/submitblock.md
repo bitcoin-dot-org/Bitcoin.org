@@ -15,24 +15,30 @@ The `submitblock` RPC {{summary_submitBlock}}
 
 *Parameter #1---the new block in serialized block format as hex*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Block              | string (hex)    | Required<br>(exactly 1)     | The full block to submit in serialized block format as hex
-{:.ntpd}
+{{json_table}}
+
+* Block
+* string (hex)
+* Required (exactly 1)
+* The full block to submit in serialized block format as hex
 
 *Parameter #2---additional parameters*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Parameters         | object          | Optional<br>(0 or 1)        | A JSON object containing extra parameters.  Not used directly by Bitcoin Core and also not broadcast to the network.  This is available for use by mining pools and other software.  A common parameter is a `workid` string
-{:.ntpd}
+{{json_table}}
+
+* Parameters
+* object
+* Optional (0 or 1)
+* A JSON object containing extra parameters.  Not used directly by Bitcoin Core and also not broadcast to the network.  This is available for use by mining pools and other software.  A common parameter is a `workid` string
 
 *Result---`null` or error string*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | null/string     | Required<br>(exactly 1)     | If the block submission succeeded, set to JSON `null`.  If submission failed, set to one of the following strings: `duplicate`, `duplicate-invalid`, `inconclusive`, or `rejected`.  The JSON-RPC `error` field will still be set to `null` if submission failed for one of these reasons
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* null/string
+* Required (exactly 1)
+* If the block submission succeeded, set to JSON `null`.  If submission failed, set to one of the following strings: `duplicate`, `duplicate-invalid`, `inconclusive`, or `rejected`.  The JSON-RPC `error` field will still be set to `null` if submission failed for one of these reasons
 
 *Example from Bitcoin Core 0.10.0*
 

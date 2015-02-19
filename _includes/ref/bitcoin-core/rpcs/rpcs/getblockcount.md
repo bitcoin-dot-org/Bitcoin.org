@@ -17,10 +17,12 @@ The `getblockcount` RPC {{summary_getBlockCount}}
 
 *Result---the number of blocks in the local best block chain*
 
-| Name             | Type            | Presence                    | Description
-|------------------|-----------------|-----------------------------|----------------
-| `result`         | number (int)    | Required<br>(exactly 1)     | The number of blocks in the local best block chain.  For a new node with only the hardcoded genesis block, this number will be 0
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* number (int)
+* Required (exactly 1)
+* The number of blocks in the local best block chain.  For a new node with only the hardcoded genesis block, this number will be 0
 
 *Example from Bitcoin Core 0.10.0*
 

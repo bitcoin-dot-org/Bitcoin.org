@@ -23,32 +23,54 @@ GET /tx/<txid>.<format>
 
 *Parameter #1---the TXID of the transaction to retrieve*
 
-| Name             | Type         | Presence                    | Description
-|------------------|--------------|-----------------------------|----------------
-| TXID             | path (hex)   | Required<br>(exactly 1)     | The TXID of the transaction to get, encoded as hex in RPC byte order
-{:.ntpd}
+{{json_table}}
+
+* TXID
+* path (hex)
+* Required (exactly 1)
+* The TXID of the transaction to get, encoded as hex in RPC byte order
 
 *Parameter #2---the output format*
 
-| Name             | Type         | Presence                    | Description
-|------------------|--------------|-----------------------------|----------------
-| Format           | suffix       | Required<br>(exactly 1)     | Set to `.json` for decoded transaction contents in JSON, or `.bin` or `hex` for a serialized transaction in binary or hex
-{:.ntpd}
+{{json_table}}
+
+* Format
+* suffix
+* Required (exactly 1)
+* Set to `.json` for decoded transaction contents in JSON, or `.bin` or `hex` for a serialized transaction in binary or hex
 
 *Response as JSON*
 
 {% assign DEPTH="" %}
 {% include helpers/vars.md %}
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| Result               | object          | Required<br>(exactly 1)     | An object describing the request transaction
+{{json_table}}
+
+* Result
+* object
+* Required (exactly 1)
+* An object describing the request transaction
+
 {{INCLUDE_DECODE_RAW_TRANSACTION}}
-| →<br>`blockhash`     | string (hex)    | Optional<br>(0 or 1)        | If the transaction has been included in a block on the local best block chain, this is the hash of that block encoded as hex in RPC byte order
-| →<br>`confirmations` | number (int)    | Required<br>(exactly 1)     | If the transaction has been included in a block on the local best block chain, this is how many confirmations it has.  Otherwise, this is `0`
-| →<br>`time`          | number (int)    | Optional<br>(0 or 1)        | If the transaction has been included in a block on the local best block chain, this is the block header time of that block (may be in the future)
-| →<br>`blocktime`     | number (int)    | Optional<br>(0 or 1)        | This field is currently identical to the time field described above
-{:.ntpd}
+* →<br>`blockhash`
+* string (hex)
+* Optional (0 or 1)
+* If the transaction has been included in a block on the local best block chain, this is the hash of that block encoded as hex in RPC byte order
+
+* →<br>`confirmations`
+* number (int)
+* Required (exactly 1)
+* If the transaction has been included in a block on the local best block chain, this is how many confirmations it has.  Otherwise, this is `0`
+
+* →<br>`time`
+* number (int)
+* Optional (0 or 1)
+* If the transaction has been included in a block on the local best block chain, this is the block header time of that block (may be in the future)
+
+* →<br>`blocktime`
+* number (int)
+* Optional (0 or 1)
+* This field is currently identical to the time field described above
 
 *Examples from Bitcoin Core 0.10.0*
 

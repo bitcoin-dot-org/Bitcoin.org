@@ -838,12 +838,70 @@ table td,table th{
 	margin:0;
 	overflow-y:visible;
 }
-.toccontent table.ntpd tr td+td+td{
-	white-space:nowrap;
+
+.json-table {
+	// Based on http://css-tricks.com/almanac/properties/f/flex/
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	-ms-box-orient: horizontal;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-align-items: stretch;
+	align-items: stretch;
 }
-.toccontent table.ntpd tr td+td+td+td{
-	white-space:normal;
+
+ul.json-table li:nth-child(4n + 1) {
+	flex: 1;
+	text-align: center;
 }
+ul.json-table li:nth-child(4n + 2) {
+	flex: 1;
+	margin-left: -1px;
+	text-align: center;
+}
+ul.json-table li:nth-child(4n + 3) {
+	flex: 1;
+	margin-left: -1px;
+	text-align: center;
+}
+ul.json-table li:nth-child(4n + 4) {
+	flex: 1 100%;
+	margin-top: -11px;
+}
+
+ul.json-table li:nth-child(1),
+ul.json-table li:nth-child(2),
+ul.json-table li:nth-child(3) {
+	border: none;
+	padding: 1px;
+	font-style: italic;
+}
+
+ul.json-table li:nth-child(4) {
+	visibility: hidden;
+	height: 0px;
+	padding: 0px;
+}
+
+ul.json-table li {
+  margin-top: -6px;
+  padding: 10px;
+  border: thin solid #ddd;
+}
+
+ul.json-table li p {
+	margin: 0;
+}
+
 .toccontent table thead th{
 	font-weight:normal;
 	border-bottom: 3px double #ddd;

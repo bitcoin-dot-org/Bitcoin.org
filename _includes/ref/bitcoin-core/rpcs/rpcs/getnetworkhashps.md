@@ -15,24 +15,30 @@ The `getnetworkhashps` RPC {{summary_getNetworkHashPS}}
 
 *Parameter #1---number of blocks to average*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Blocks             | number (int)    | Optional<br>(0 or 1)        | The number of blocks to average together for calculating the estimated hashes per second.  Default is `120`.  Use `-1` to average all blocks produced since the last difficulty change
-{:.ntpd}
+{{json_table}}
+
+* Blocks
+* number (int)
+* Optional (0 or 1)
+* The number of blocks to average together for calculating the estimated hashes per second.  Default is `120`.  Use `-1` to average all blocks produced since the last difficulty change
 
 *Parameter #2---block height*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Height             | number (int)    | Optional<br>(0 or 1)        | The height of the last block to use for calculating the average.  Defaults to `-1` for the highest-height block on the local best block chain.  If the specified height is higher than the highest block on the local best block chain, it will be interpreted the same as `-1`
-{:.ntpd}
+{{json_table}}
+
+* Height
+* number (int)
+* Optional (0 or 1)
+* The height of the last block to use for calculating the average.  Defaults to `-1` for the highest-height block on the local best block chain.  If the specified height is higher than the highest block on the local best block chain, it will be interpreted the same as `-1`
 
 *Result---estimated hashes per second*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | number (int)    | Required<br>(exactly 1)     | The estimated number of hashes per second based on the parameters provided.  May be 0 (for Height=`0`, the genesis block) or a negative value if the highest-height block averaged has a block header time earlier than the lowest-height block averaged
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* number (int)
+* Required (exactly 1)
+* The estimated number of hashes per second based on the parameters provided.  May be 0 (for Height=`0`, the genesis block) or a negative value if the highest-height block averaged has a block header time earlier than the lowest-height block averaged
 
 *Example from Bitcoin Core 0.10.0*
 

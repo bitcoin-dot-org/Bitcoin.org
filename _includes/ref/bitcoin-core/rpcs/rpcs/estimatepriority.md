@@ -19,17 +19,21 @@ Transaction priority is relative to a transaction's byte size.
 
 *Parameter #1---how many blocks the transaction may wait before being included as a free high-priority transaction*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Blocks             | number (int)    | Required<br>(exactly 1)     | The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block based purely on its priority
-{:.ntpd}
+{{json_table}}
+
+* Blocks
+* number (int)
+* Required (exactly 1)
+* The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block based purely on its priority
 
 *Result---the priority a transaction needs*
 
-| Name               | Type              | Presence                    | Description
-|--------------------|-------------------|-----------------------------|----------------
-| `result`           | number (real)     | Required<br>(exactly 1)     | The estimated priority the transaction should have in order to be included within the specified number of blocks.  If the node doesn't have enough information to make an estimate, the value `-1` will be returned
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* number (real)
+* Required (exactly 1)
+* The estimated priority the transaction should have in order to be included within the specified number of blocks.  If the node doesn't have enough information to make an estimate, the value `-1` will be returned
 
 *Examples from Bitcoin Core 0.10.0*
 

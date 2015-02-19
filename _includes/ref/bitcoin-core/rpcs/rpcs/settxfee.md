@@ -17,17 +17,21 @@ The `settxfee` RPC {{summary_setTxFee}}
 
 *Parameter #1---the transaction fee amount per kilobyte*
 
-| Name                         | Type              | Presence                    | Description
-|------------------------------|-------------------|-----------------------------|---------------
-| Transaction Fee Per Kilobyte | number (bitcoins) | Required<br>(exactly 1)     | The transaction fee to pay, in bitcoins, for each kilobyte of transaction data.  The value `0` will not be accepted.  Be careful setting the fee too low---your transactions may not be relayed or included in blocks
-{:.ntpd}
+{{json_table}}
+
+* Transaction Fee Per Kilobyte
+* number (bitcoins)
+* Required (exactly 1)
+* The transaction fee to pay, in bitcoins, for each kilobyte of transaction data.  The value `0` will not be accepted.  Be careful setting the fee too low---your transactions may not be relayed or included in blocks
 
 *Result: `true` on success*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| `result`           | bool (true)     | Required<br>(exactly 1)     | Set to `true` if the fee was successfully set
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* bool (true)
+* Required (exactly 1)
+* Set to `true` if the fee was successfully set
 
 *Example from Bitcoin Core 0.10.0*
 

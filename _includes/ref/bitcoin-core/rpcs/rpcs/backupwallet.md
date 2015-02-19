@@ -17,17 +17,21 @@ The `backupwallet` RPC {{summary_backupWallet}}
 
 *Parameter #1---destination directory or filename*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Destination        | string          | Required<br>(exactly 1)     | A filename or directory name.  If a filename, it will be created or overwritten.  If a directory name, the file `wallet.dat`<!--noref--> will be created or overwritten within that directory
-{:.ntpd}
+{{json_table}}
+
+* Destination
+* string
+* Required (exactly 1)
+* A filename or directory name.  If a filename, it will be created or overwritten.  If a directory name, the file `wallet.dat`<!--noref--> will be created or overwritten within that directory
 
 *Result---`null` or error*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | null            | Required<br>(exactly 1)     | Always `null` whether success or failure.  The JSON-RPC error and message fields will be set if a failure occurred
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* null
+* Required (exactly 1)
+* Always `null` whether success or failure.  The JSON-RPC error and message fields will be set if a failure occurred
 
 *Example from Bitcoin Core 0.10.0*
 

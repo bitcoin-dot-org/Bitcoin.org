@@ -15,17 +15,21 @@ The `getblockhash` RPC {{summary_getBlockHash}}
 
 *Parameter---a block height*
 
-| Name             | Type            | Presence                    | Description
-|------------------|-----------------|-----------------------------|----------------
-| Block Height     | number (int)    | Required<br>(exactly 1)     | The height of the block whose header hash should be returned.  The height of the hardcoded genesis block is 0
-{:.ntpd}
+{{json_table}}
+
+* Block Height
+* number (int)
+* Required (exactly 1)
+* The height of the block whose header hash should be returned.  The height of the hardcoded genesis block is 0
 
 *Result---the block header hash*
 
-| Name             | Type            | Presence                    | Description
-|------------------|-----------------|-----------------------------|----------------
-| `result`         | string (hex)/null | Required<br>(exactly 1)   | The hash of the block at the requested height, encoded as hex in RPC byte order, or JSON `null` if an error occurred
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* string (hex)/null
+* Required (exactly 1)
+* The hash of the block at the requested height, encoded as hex in RPC byte order, or JSON `null` if an error occurred
 
 *Example from Bitcoin Core 0.10.0*
 

@@ -17,27 +17,45 @@ The `lockunspent` RPC {{summary_lockUnspent}}
 
 *Parameter #1---whether to lock or unlock the outputs*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| Lock Or Unlock       | bool            | Required<br>(exactly 1)     | Set to `true` to lock the outputs specified in the following parameter.  Set to `false` to unlock the outputs specified.  If this is the only argument specified, all outputs will be unlocked (even if this is set to `false`)
-{:.ntpd}
+{{json_table}}
+
+* Lock Or Unlock
+* bool
+* Required (exactly 1)
+* Set to `true` to lock the outputs specified in the following parameter.  Set to `false` to unlock the outputs specified.  If this is the only argument specified, all outputs will be unlocked (even if this is set to `false`)
 
 *Parameter #2---the outputs to lock or unlock*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| Outputs              | array           | Optional<br>(0 or 1)        | An array of outputs to lock or unlock
-| →<br>Output          | object          | Required<br>(1 or more)     | An object describing a particular output
-| → →<br>`txid`        | string          | Required<br>(exactly 1)     | The TXID of the transaction containing the output to lock or unlock, encoded as hex in internal byte order
-| → →<br>`vout`        | number (int)    | Required<br>(exactly 1)     | The output index number (vout) of the output to lock or unlock.  The first output in a transaction has an index of `0`
-{:.ntpd}
+{{json_table}}
+
+* Outputs
+* array
+* Optional (0 or 1)
+* An array of outputs to lock or unlock
+
+* →<br>Output
+* object
+* Required (1 or more)
+* An object describing a particular output
+
+* → →<br>`txid`
+* string
+* Required (exactly 1)
+* The TXID of the transaction containing the output to lock or unlock, encoded as hex in internal byte order
+
+* → →<br>`vout`
+* number (int)
+* Required (exactly 1)
+* The output index number (vout) of the output to lock or unlock.  The first output in a transaction has an index of `0`
 
 *Result---`true` if successful*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| `result`             | bool            | Required<br>(exactly 1)     | Set to `true` if the outputs were successfully locked or unlocked
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* bool
+* Required (exactly 1)
+* Set to `true` if the outputs were successfully locked or unlocked
 
 *Example from Bitcoin Core 0.10.0*
 

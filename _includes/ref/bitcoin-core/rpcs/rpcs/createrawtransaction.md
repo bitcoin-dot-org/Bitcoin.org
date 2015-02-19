@@ -15,28 +15,50 @@ The `createrawtransaction` RPC {{summary_createRawTransaction}}
 
 *Parameter #1---references to previous outputs*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Outpoints          | array           | Required<br>(exactly 1)     | An array of objects, each one being an unspent outpoint
-| → Outpoint         | object          | Required<br>(1 or more)     | An object describing a particular unspent outpoint
-| → →<br>`txid`      | string (hex)    | Required<br>(exactly 1)     | The TXID of the outpoint encoded as hex in RPC byte order
-| → →<br>`vout`      | number (int)    | Required<br>(exactly 1)     | The output index number (vout) of the outpoint; the first output in a transaction is index `0`
-{:.ntpd}
+{{json_table}}
+
+* Outpoints
+* array
+* Required (exactly 1)
+* An array of objects, each one being an unspent outpoint
+
+* → Outpoint
+* object
+* Required (1 or more)
+* An object describing a particular unspent outpoint
+
+* → →<br>`txid`
+* string (hex)
+* Required (exactly 1)
+* The TXID of the outpoint encoded as hex in RPC byte order
+
+* → →<br>`vout`
+* number (int)
+* Required (exactly 1)
+* The output index number (vout) of the outpoint; the first output in a transaction is index `0`
 
 *Parameter #2---P2PKH or P2SH addresses and amounts*
 
-| Name                | Type            | Presence                    | Description
-|---------------------|-----------------|-----------------------------|----------------
-| Outputs             | object          | Required<br>(exactly 1)     | The addresses and amounts to pay
-| →<br>Address/Amount | string : number (bitcoins) | Required<br>(1 or more) | A key/value pair with the address to pay as a string (key) and the amount to pay that address (value) in bitcoins
-{:.ntpd}
+{{json_table}}
+
+* Outputs
+* object
+* Required (exactly 1)
+* The addresses and amounts to pay
+
+* →<br>Address/Amount
+* string : number (bitcoins)
+* Required (1 or more)
+* A key/value pair with the address to pay as a string (key) and the amount to pay that address (value) in bitcoins
 
 *Result---the unsigned raw transaction in hex*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | string          | Required<br>(Exactly 1)     | The resulting unsigned raw transaction in serialized transaction format encoded as hex.  If the transaction couldn't be generated, this will be set to JSON `null` and the JSON-RPC error field may contain an error message
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* string
+* Required (Exactly 1)
+* The resulting unsigned raw transaction in serialized transaction format encoded as hex.  If the transaction couldn't be generated, this will be set to JSON `null` and the JSON-RPC error field may contain an error message
 
 *Example from Bitcoin Core 0.10.0*
 

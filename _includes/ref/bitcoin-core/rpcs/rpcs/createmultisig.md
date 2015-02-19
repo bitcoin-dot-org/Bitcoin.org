@@ -15,27 +15,45 @@ The `createmultisig` RPC {{summary_createMultiSig}}
 
 *Parameter #1---the number of signatures required*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Required           | number (int)    | Required<br>(exactly 1)     | The minimum (*m*) number of signatures required to spend this m-of-n multisig script
-{:.ntpd}
+{{json_table}}
+
+* Required
+* number (int)
+* Required (exactly 1)
+* The minimum (*m*) number of signatures required to spend this m-of-n multisig script
 
 *Parameter #2---the full public keys, or addresses for known public keys*
 
-| Name                | Type            | Presence                    | Description
-|---------------------|-----------------|-----------------------------|----------------
-| Keys Or Addresses   | array           | Required<br>(exactly 1)     | An array of strings with each string being a public key or address
-| →<br>Key Or Address | string          | Required<br>(1 or more)     | A public key against which signatures will be checked.  If wallet support is enabled, this may be a P2PKH address belonging to the wallet---the corresponding public key will be substituted.  There must be at least as many keys as specified by the Required parameter, and there may be more keys
-{:.ntpd}
+{{json_table}}
+
+* Keys Or Addresses
+* array
+* Required (exactly 1)
+* An array of strings with each string being a public key or address
+
+* →<br>Key Or Address
+* string
+* Required (1 or more)
+* A public key against which signatures will be checked.  If wallet support is enabled, this may be a P2PKH address belonging to the wallet---the corresponding public key will be substituted.  There must be at least as many keys as specified by the Required parameter, and there may be more keys
 
 *Result---P2SH address and hex-encoded redeem script*
 
-| Name                | Type            | Presence                    | Description
-|---------------------|-----------------|-----------------------------|----------------
-| `result`            | object          | Required<br>(exactly 1)     | An object describing the multisig address
-| →<br>`address`      | string (base58) | Required<br>(exactly 1)     | The P2SH address for this multisig redeem script
-| →<br>`redeemScript` | string (hex)    | Required<br>(exactly 1)     | The multisig redeem script encoded as hex
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* object
+* Required (exactly 1)
+* An object describing the multisig address
+
+* →<br>`address`
+* string (base58)
+* Required (exactly 1)
+* The P2SH address for this multisig redeem script
+
+* →<br>`redeemScript`
+* string (hex)
+* Required (exactly 1)
+* The multisig redeem script encoded as hex
 
 *Example from Bitcoin Core 0.10.0*
 

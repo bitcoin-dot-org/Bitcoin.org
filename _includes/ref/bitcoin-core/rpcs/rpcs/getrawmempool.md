@@ -15,34 +15,80 @@ The `getrawmempool` RPC {{summary_getRawMemPool}}
 
 *Parameter---desired output format*
 
-| Name             | Type            | Presence                    | Description
-|------------------|-----------------|-----------------------------|----------------
-| Format           | bool            | Optional<br>(0 or 1)        | Set to `true` to get verbose output describing each transaction in the memory pool; set to `false` (the default) to only get an array of TXIDs for transactions in the memory pool
-{:.ntpd}
+{{json_table}}
+
+* Format
+* bool
+* Optional (0 or 1)
+* Set to `true` to get verbose output describing each transaction in the memory pool; set to `false` (the default) to only get an array of TXIDs for transactions in the memory pool
 
 *Result (format `false`)---an array of TXIDs*
 
-| Name             | Type            | Presence                    | Description
-|------------------|-----------------|-----------------------------|----------------
-| `result`         | array           | Required<br>(exactly 1)     | An array of TXIDs belonging to transactions in the memory pool.  The array may be empty if there are no transactions in the memory pool
-| →<br>TXID        | string          | Optional<br>(0 or more)     | The TXID of a transaction in the memory pool, encoded as hex in RPC byte order
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* array
+* Required (exactly 1)
+* An array of TXIDs belonging to transactions in the memory pool.  The array may be empty if there are no transactions in the memory pool
+
+* →<br>TXID
+* string
+* Optional (0 or more)
+* The TXID of a transaction in the memory pool, encoded as hex in RPC byte order
 
 *Result (format: `true`)---a JSON object describing each transaction*
 
-| Name                      | Type              | Presence                    | Description
-|---------------------------|-------------------|-----------------------------|----------------
-| `result`                  | object            | Required<br>(exactly 1)     | A object containing transactions currently in the memory pool.  May be empty
-| →<br>TXID                 | string : object   | Optional<br>(0 or more)     | The TXID of a transaction in the memory pool, encoded as hex in RPC byte order
-| → →<br>`size`             | number (int)      | Required<br>(exactly 1)     | The size of the serialized transaction in bytes
-| → →<br>`fee`              | number (bitcoins) | Required<br>(exactly 1)     | The transaction fee paid by the transaction in decimal bitcoins
-| → →<br>`time`             | number (int)      | Required<br>(exactly 1)     | The time the transaction entered the memory pool, Unix epoch time format
-| → →<br>`height`           | number (int)      | Required<br>(exactly 1)     | The block height when the transaction entered the memory pool
-| → →<br>`startingpriority` | number (int)      | Required<br>(exactly 1)     | The priority of the transaction when it first entered the memory pool
-| → →<br>`currentpriority`  | number (int)      | Required<br>(exactly 1)     | The current priority of the transaction
-| → →<br>`depends`          | array             | Required<br>(exactly 1)     | An array holding TXIDs of unconfirmed transactions this transaction depends upon.  Those transactions must be part of a block before this transaction can be added to a block, although all transactions may be included in the same block.  The array may be empty
-| → → →<br>Depends TXID     | string            | Optional (0 or more)        | The TXIDs of any unconfirmed transactions this transaction depends upon, encoded as hex in RPC byte order
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* object
+* Required (exactly 1)
+* A object containing transactions currently in the memory pool.  May be empty
+
+* →<br>TXID
+* string : object
+* Optional (0 or more)
+* The TXID of a transaction in the memory pool, encoded as hex in RPC byte order
+
+* → →<br>`size`
+* number (int)
+* Required (exactly 1)
+* The size of the serialized transaction in bytes
+
+* → →<br>`fee`
+* number (bitcoins)
+* Required (exactly 1)
+* The transaction fee paid by the transaction in decimal bitcoins
+
+* → →<br>`time`
+* number (int)
+* Required (exactly 1)
+* The time the transaction entered the memory pool, Unix epoch time format
+
+* → →<br>`height`
+* number (int)
+* Required (exactly 1)
+* The block height when the transaction entered the memory pool
+
+* → →<br>`startingpriority`
+* number (int)
+* Required (exactly 1)
+* The priority of the transaction when it first entered the memory pool
+
+* → →<br>`currentpriority`
+* number (int)
+* Required (exactly 1)
+* The current priority of the transaction
+
+* → →<br>`depends`
+* array
+* Required (exactly 1)
+* An array holding TXIDs of unconfirmed transactions this transaction depends upon.  Those transactions must be part of a block before this transaction can be added to a block, although all transactions may be included in the same block.  The array may be empty
+
+* → → →<br>Depends TXID
+* string
+* Optional (0 or more)
+* The TXIDs of any unconfirmed transactions this transaction depends upon, encoded as hex in RPC byte order
 
 *Examples from Bitcoin Core 0.10.0*
 

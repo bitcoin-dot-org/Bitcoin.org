@@ -19,10 +19,12 @@ The `getbestblockhash` RPC {{summary_getBestBlockHash}}
 
 *Result---hash of the tip from the best block chain*
 
-| Name             | Type         | Presence                    | Description
-|------------------|--------------|-----------------------------|----------------
-| `result`         | string (hex) | Required<br>(exactly 1)     | The hash of the block header from the most recent block on the best block chain, encoded as hex in RPC byte order
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* string (hex)
+* Required (exactly 1)
+* The hash of the block header from the most recent block on the best block chain, encoded as hex in RPC byte order
 
 *Example from Bitcoin Core 0.10.0*
 

@@ -19,10 +19,12 @@ The `getgenerate` RPC {{summary_getGenerate}}
 
 *Result---whether the server is set to generate blocks*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | bool            | Required<br>(exactly 1)     | Set to `true` if the server is set to generate blocks; set to `false` if it is not
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* bool
+* Required (exactly 1)
+* Set to `true` if the server is set to generate blocks; set to `false` if it is not
 
 *Example from Bitcoin Core 0.10.0*
 
