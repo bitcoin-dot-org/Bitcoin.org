@@ -315,7 +315,7 @@ to the reference page for that message.
 
 {% autocrossref %}
 
-Bitcoin Core 0.10.0 uses a initial block download (IBD) method called
+Bitcoin Core 0.10.0 uses an initial block download (IBD) method called
 *headers-first*. The goal is to download the headers for the best [header
 chain][]{:#term-header-chain}{:.term}, partially validate them as best
 as possible, and then download the corresponding blocks in parallel.  This
