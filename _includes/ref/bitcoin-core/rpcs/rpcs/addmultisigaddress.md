@@ -17,31 +17,31 @@ The `addmultisigaddress` RPC {{summary_addMultiSigAddress}}
 
 *Parameter #1---the number of signatures required*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Required           | number (int)    | Required<br>(exactly 1)     | The minimum (*m*) number of signatures required to spend this m-of-n multisig script
+| Name               | Type            | #   | Description
+|--------------------|-----------------|-----|----------------
+| Required           | {{t_m_p2sh_msig}} | 1 | The minimum (*m*) number of signatures required to spend this m-of-n multisig script
 {:.ntpd}
 
 *Parameter #2---the full public keys, or addresses for known public keys*
 
-| Name                | Type            | Presence                    | Description
+| Name                | Type            | #   | Description
 |---------------------|-----------------|-----------------------------|----------------
-| Keys Or Addresses   | array           | Required<br>(exactly 1)     | An array of strings with each string being a public key or address
-| →<br>Key Or Address | string          | Required<br>(1 or more)     | A public key against which signatures will be checked.  Alternatively, this may be a P2PKH address belonging to the wallet---the corresponding public key will be substituted.  There must be at least as many keys as specified by the Required parameter, and there may be more keys
+| Keys Or Addresses   | {{t_array}}     | 1   | An array of strings with each string being a public key or address
+| →<br>Key Or Address | {{t_pubkey}}, {{t_p2pkh_address}} | >=1 | A public key against which signatures will be checked.  Alternatively, this may be a P2PKH address belonging to the wallet---the corresponding public key will be substituted.  There must be at least as many keys as specified by the Required parameter, and there may be more keys
 {:.ntpd}
 
 *Parameter #3---the account name*
 
-| Name               | Type            | Presence                    | Description
+| Name               | Type            | #   | Description
 |--------------------|-----------------|-----------------------------|----------------
-| Account            | string          | Optional<br>(0 or 1)        | The account name in which the address should be stored.  Default is the default account, "" (an empty string)
+| Account            | {{t_account}}   | 0,1 | The account name in which the address should be stored.  Default is the default account, "" (an empty string)
 {:.ntpd}
 
 *Result---a P2SH address printed and stored in the wallet*
 
-| Name               | Type            | Presence                    | Description
+| Name               | Type            | #     | Description
 |--------------------|-----------------|-----------------------------|----------------
-| `result`           | string (base58) | Required<br>(exactly 1)     | The P2SH multisig address.  The address will also be added to the wallet, and outputs paying that address will be tracked by the wallet
+| `result`           | {{t_p2sh_address}} | 1  | The P2SH multisig address.  The address will also be added to the wallet, and outputs paying that address will be tracked by the wallet
 {:.ntpd}
 
 *Example from Bitcoin Core 0.10.0*
