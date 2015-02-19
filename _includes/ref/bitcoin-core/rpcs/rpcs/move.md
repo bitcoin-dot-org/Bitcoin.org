@@ -22,45 +22,57 @@ account a balance that may exceed the number of bitcoins in the wallet
 
 *Parameter #1---from account*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| From Account         | string          | Required<br>(exactly 1)     | The name of the account to move the funds from
-{:.ntpd}
+{{json_table}}
+
+* From Account
+* string
+* Required (exactly 1)
+* The name of the account to move the funds from
 
 *Parameter #2---to account*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| To Account           | string          | Required<br>(exactly 1)     | The name of the account to move the funds to
-{:.ntpd}
+{{json_table}}
+
+* To Account
+* string
+* Required (exactly 1)
+* The name of the account to move the funds to
 
 *Parameter #3---amount to move*
 
-| Name                 | Type              | Presence                    | Description
-|----------------------|-------------------|-----------------------------|----------------
-| Amount               | number (bitcoins) | Required<br>(exactly 1)     | The amount of bitcoins to move
-{:.ntpd}
+{{json_table}}
+
+* Amount
+* number (bitcoins)
+* Required (exactly 1)
+* The amount of bitcoins to move
 
 *Parameter #4---an unused parameter*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| *Unused*             | number (int)    | Optional<br>(0 or 1)        | This parameter is no longer used. If parameter #5 needs to be specified, this can be any integer
-{:.ntpd}
+{{json_table}}
+
+* *Unused*
+* number (int)
+* Optional (0 or 1)
+* This parameter is no longer used. If parameter #5 needs to be specified, this can be any integer
 
 *Parameter #5---a comment*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| Comment              | string          | Optional<br>(0 or 1)        | A comment to assign to this move payment
-{:.ntpd}
+{{json_table}}
+
+* Comment
+* string
+* Optional (0 or 1)
+* A comment to assign to this move payment
 
 *Result---`true` on success*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| `result`             | bool            | Required<br>(exactly 1)     | Set to `true` if the move was successful
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* bool
+* Required (exactly 1)
+* Set to `true` if the move was successful
 
 *Example from Bitcoin Core 0.10.0*
 

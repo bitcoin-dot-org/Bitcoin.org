@@ -18,17 +18,21 @@ The `dumpwallet` RPC {{summary_dumpWallet}}
 
 *Parameter #1---a filename*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Filename           | string          | Required<br>(exactly 1)     | The file in which the wallet dump will be placed.  May be prefaced by an absolute file path.  An existing file with that name will be overwritten
-{:.ntpd}
+{{json_table}}
+
+* Filename
+* string
+* Required (exactly 1)
+* The file in which the wallet dump will be placed.  May be prefaced by an absolute file path.  An existing file with that name will be overwritten
 
 *Result---`null` or error*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | null            | Required<br>(exactly 1)     | Always `null` whether success or failure.  The JSON-RPC error and message fields will be set if a failure occurred
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* null
+* Required (exactly 1)
+* Always `null` whether success or failure.  The JSON-RPC error and message fields will be set if a failure occurred
 
 *Example from Bitcoin Core 0.10.0*
 

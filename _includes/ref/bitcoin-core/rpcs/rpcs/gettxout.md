@@ -15,44 +15,100 @@ The `gettxout` RPC {{summary_getTxOut}}
 
 *Parameter #1---the TXID of the output to get*
 
-| Name             | Type            | Presence                    | Description
-|------------------|-----------------|-----------------------------|----------------
-| TXID             | string (hex)    | Required<br>(exactly 1)     | The TXID of the transaction containing the output to get, encoded as hex in RPC byte order
-{:.ntpd}
+{{json_table}}
+
+* TXID
+* string (hex)
+* Required (exactly 1)
+* The TXID of the transaction containing the output to get, encoded as hex in RPC byte order
 
 
 *Parameter #2---the output index number (vout) of the output to get*
 
-| Name             | Type            | Presence                    | Description
-|------------------|-----------------|-----------------------------|----------------
-| Vout             | number (int)    | Required<br>(exactly 1)     | The output index number (vout) of the output within the transaction; the first output in a transaction is vout 0
-{:.ntpd}
+{{json_table}}
+
+* Vout
+* number (int)
+* Required (exactly 1)
+* The output index number (vout) of the output within the transaction; the first output in a transaction is vout 0
 
 *Parameter #3---whether to display unconfirmed outputs from the memory pool*
 
-| Name             | Type            | Presence                    | Description
-|------------------|-----------------|-----------------------------|----------------
-| Unconfirmed      | bool            | Optional<br>(0 or 1)        | Set to `true` to display unconfirmed outputs from the memory pool; set to `false` (the default) to only display outputs from confirmed transactions
-{:.ntpd}
+{{json_table}}
+
+* Unconfirmed
+* bool
+* Optional (0 or 1)
+* Set to `true` to display unconfirmed outputs from the memory pool; set to `false` (the default) to only display outputs from confirmed transactions
 
 *Result---a description of the output*
 
-| Name                 | Type              | Presence                    | Description
-|----------------------|-------------------|-----------------------------|----------------
-| `result`             | object/null       | Required<br>(exactly 1)     | Information about the output.  If output wasn't found or if an error occurred, this will be JSON `null`
-| →<br>`bestblock`     | string (hex)      | Required<br>(exactly 1)     | The hash of the header of the block on the local best block chain which includes this transaction.  The hash will encoded as hex in RPC byte order.  If the transaction is not part of a block, the string will be empty
-| →<br>`confirmations` | number (int)      | Required<br>(exactly 1)     | The number of confirmations received for the transaction containing this output or `0` if the transaction hasn't been confirmed yet
-| →<br>`value`         | number (bitcoins) | Required<br>(exactly 1)     | The amount of bitcoins spent to this output.  May be `0`
-| →<br>`scriptPubKey`  | string : object   | Optional<br>(0 or 1)        | An object with information about the pubkey script.  This may be `null` if there was no pubkey script
-| → →<br>`asm`         | string            | Required<br>(exactly 1)     | The pubkey script in decoded form with non-data-pushing op codes listed
-| → →<br>`hex`         | string (hex)      | Required<br>(exactly 1)     | The pubkey script encoded as hex
-| → →<br>`reqSigs`     | number (int)      | Optional<br>(0 or 1)        | The number of signatures required; this is always `1` for P2PK, P2PKH, and P2SH (including P2SH multisig because the redeem script is not available in the pubkey script).  It may be greater than 1 for bare multisig.  This value will not be returned for `nulldata` or `nonstandard` script types (see the `type` key below)
-| → →<br>`type`        | string            | Optional<br>(0 or 1)        | The type of script.  This will be one of the following:<br>• `pubkey` for a P2PK script<br>• `pubkeyhash` for a P2PKH script<br>• `scripthash` for a P2SH script<br>• `multisig` for a bare multisig script<br>• `nulldata` for nulldata scripts<br>• `nonstandard` for unknown scripts
-| → →<br>`addresses`   | string : array    | Optional<br>(0 or 1)        | The P2PKH or P2SH addresses used in this transaction, or the computed P2PKH address of any pubkeys in this transaction.  This array will not be returned for `nulldata` or `nonstandard` script types
-| → → →<br>Address     | string            | Required<br>(1 or more)     | A P2PKH or P2SH address
-| →<br>`version`       | number (int)      | Required<br>(exactly 1)     | The transaction version number of the transaction containing the pubkey script
-| →<br>`coinbase`      | bool              | Required<br>(exactly 1)     | Set to `true` if the transaction output belonged to a coinbase transaction; set to `false` for all other transactions.  Coinbase transactions need to have 101 confirmations before their outputs can be spent
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* object/null
+* Required (exactly 1)
+* Information about the output.  If output wasn't found or if an error occurred, this will be JSON `null`
+
+* →<br>`bestblock`
+* string (hex)
+* Required (exactly 1)
+* The hash of the header of the block on the local best block chain which includes this transaction.  The hash will encoded as hex in RPC byte order.  If the transaction is not part of a block, the string will be empty
+
+* →<br>`confirmations`
+* number (int)
+* Required (exactly 1)
+* The number of confirmations received for the transaction containing this output or `0` if the transaction hasn't been confirmed yet
+
+* →<br>`value`
+* number (bitcoins)
+* Required (exactly 1)
+* The amount of bitcoins spent to this output.  May be `0`
+
+* →<br>`scriptPubKey`
+* string : object
+* Optional (0 or 1)
+* An object with information about the pubkey script.  This may be `null` if there was no pubkey script
+
+* → →<br>`asm`
+* string
+* Required (exactly 1)
+* The pubkey script in decoded form with non-data-pushing op codes listed
+
+* → →<br>`hex`
+* string (hex)
+* Required (exactly 1)
+* The pubkey script encoded as hex
+
+* → →<br>`reqSigs`
+* number (int)
+* Optional (0 or 1)
+* The number of signatures required; this is always `1` for P2PK, P2PKH, and P2SH (including P2SH multisig because the redeem script is not available in the pubkey script).  It may be greater than 1 for bare multisig.  This value will not be returned for `nulldata` or `nonstandard` script types (see the `type` key below)
+
+* → →<br>`type`
+* string
+* Optional (0 or 1)
+* The type of script.  This will be one of the following:<br>• `pubkey` for a P2PK script<br>• `pubkeyhash` for a P2PKH script<br>• `scripthash` for a P2SH script<br>• `multisig` for a bare multisig script<br>• `nulldata` for nulldata scripts<br>• `nonstandard` for unknown scripts
+
+* → →<br>`addresses`
+* string : array
+* Optional (0 or 1)
+* The P2PKH or P2SH addresses used in this transaction, or the computed P2PKH address of any pubkeys in this transaction.  This array will not be returned for `nulldata` or `nonstandard` script types
+
+* → → →<br>Address
+* string
+* Required (1 or more)
+* A P2PKH or P2SH address
+
+* →<br>`version`
+* number (int)
+* Required (exactly 1)
+* The transaction version number of the transaction containing the pubkey script
+
+* →<br>`coinbase`
+* bool
+* Required (exactly 1)
+* Set to `true` if the transaction output belonged to a coinbase transaction; set to `false` for all other transactions.  Coinbase transactions need to have 101 confirmations before their outputs can be spent
 
 *Example from Bitcoin Core 0.10.0*
 

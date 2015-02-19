@@ -19,42 +19,94 @@ the *spendable* field in the results described below.
 
 *Parameter #1---the minimum number of confirmations an output must have*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Minimum Confirmations | number (int) | Optional<br>(0 or 1)        | The minimum number of confirmations the transaction containing an output must have in order to be returned.  Use `0` to return outputs from unconfirmed transactions. Default is `1`
-{:.ntpd}
+{{json_table}}
+
+* Minimum Confirmations
+* number (int)
+* Optional (0 or 1)
+* The minimum number of confirmations the transaction containing an output must have in order to be returned.  Use `0` to return outputs from unconfirmed transactions. Default is `1`
 
 *Parameter #2---the maximum number of confirmations an output may have*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Maximum Confirmations | number (int) | Optional<br>(0 or 1)        | The maximum number of confirmations the transaction containing an output may have in order to be returned.  Default is `9999999` (~10 million)
-{:.ntpd}
+{{json_table}}
+
+* Maximum Confirmations
+* number (int)
+* Optional (0 or 1)
+* The maximum number of confirmations the transaction containing an output may have in order to be returned.  Default is `9999999` (~10 million)
 
 *Parameter #3---the addresses an output must pay*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Addresses          | array           | Optional<br>(0 or 1)        | If present, only outputs which pay an address in this array will be returned
-| →<br>Address       | string (base58) | Required<br>(1 or more)     | A P2PKH or P2SH address
-{:.ntpd}
+{{json_table}}
+
+* Addresses
+* array
+* Optional (0 or 1)
+* If present, only outputs which pay an address in this array will be returned
+
+* →<br>Address
+* string (base58)
+* Required (1 or more)
+* A P2PKH or P2SH address
 
 *Result---the list of unspent outputs*
 
-| Name                   | Type            | Presence                    | Description
-|------------------------|-----------------|-----------------------------|----------------
-| `result`               | array           | Required<br>(exactly 1)     | An array of objects each describing an unspent output.  May be empty
-| →<br>Unspent Output    | object          | Optional<br>(0 or more)     | An object describing a particular unspent output belonging to this wallet
-| → →<br>`txid`          | string (hex)    | Required<br>(exactly 1)     | The TXID of the transaction containing the output, encoded as hex in RPC byte order
-| → →<br>`vout`          | number (int)    | Required<br>(exactly 1)     | The output index number (vout) of the output within its containing transaction
-| → →<br>`address`       | string (base58) | Optional<br>(0 or 1)        | The P2PKH or P2SH address the output paid.  Only returned for P2PKH or P2SH output scripts
-| → →<br>`account`       | string          | Optional<br>(0 or 1)        | If the address returned belongs to an account, this is the account.  Otherwise not returned
-| → →<br>`scriptPubKey`  | string (hex)    | Required<br>(exactly 1)     | The output script paid, encoded as hex
-| → →<br>`redeemScript`  | string (hex)    | Optional<br>(0 or 1)        | If the output is a P2SH whose script belongs to this wallet, this is the redeem script
-| → →<br>`amount`        | number (int)    | Required<br>(exactly 1)     | The amount paid to the output in bitcoins
-| → →<br>`confirmations` | number (int)    | Required<br>(exactly 1)     | The number of confirmations received for the transaction containing this output
-| → →<br>`spendable`     | bool            | Required<br>(exactly 1)     | *Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the private key or keys needed to spend this output are part of the wallet.  Set to `false` if not (such as for watch-only addresses)
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* array
+* Required (exactly 1)
+* An array of objects each describing an unspent output.  May be empty
+
+* →<br>Unspent Output
+* object
+* Optional (0 or more)
+* An object describing a particular unspent output belonging to this wallet
+
+* → →<br>`txid`
+* string (hex)
+* Required (exactly 1)
+* The TXID of the transaction containing the output, encoded as hex in RPC byte order
+
+* → →<br>`vout`
+* number (int)
+* Required (exactly 1)
+* The output index number (vout) of the output within its containing transaction
+
+* → →<br>`address`
+* string (base58)
+* Optional (0 or 1)
+* The P2PKH or P2SH address the output paid.  Only returned for P2PKH or P2SH output scripts
+
+* → →<br>`account`
+* string
+* Optional (0 or 1)
+* If the address returned belongs to an account, this is the account.  Otherwise not returned
+
+* → →<br>`scriptPubKey`
+* string (hex)
+* Required (exactly 1)
+* The output script paid, encoded as hex
+
+* → →<br>`redeemScript`
+* string (hex)
+* Optional (0 or 1)
+* If the output is a P2SH whose script belongs to this wallet, this is the redeem script
+
+* → →<br>`amount`
+* number (int)
+* Required (exactly 1)
+* The amount paid to the output in bitcoins
+
+* → →<br>`confirmations`
+* number (int)
+* Required (exactly 1)
+* The number of confirmations received for the transaction containing this output
+
+* → →<br>`spendable`
+* bool
+* Required (exactly 1)
+* *Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the private key or keys needed to spend this output are part of the wallet.  Set to `false` if not (such as for watch-only addresses)
 
 *Example from Bitcoin Core 0.10.0*
 

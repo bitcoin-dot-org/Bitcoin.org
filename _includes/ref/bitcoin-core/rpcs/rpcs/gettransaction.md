@@ -17,10 +17,12 @@ The `gettransaction` RPC {{summary_getTransaction}}
 
 *Parameter #1---a transaction identifier (TXID)*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| TXID               | string (hex)    | Required<br>(exactly 1)     | The TXID of the transaction to get details about.  The TXID must be encoded as hex in RPC byte order
-{:.ntpd}
+{{json_table}}
+
+* TXID
+* string (hex)
+* Required (exactly 1)
+* The TXID of the transaction to get details about.  The TXID must be encoded as hex in RPC byte order
 
 *Parameter #2---whether to include watch-only addresses in details and calculations*
 
@@ -31,22 +33,68 @@ The `gettransaction` RPC {{summary_getTransaction}}
 {% assign DEPTH="→ " %}
 {% include helpers/vars.md %}
 
-| Name                        | Type              | Presence                    | Description
-|-----------------------------|-------------------|-----------------------------|----------------
-| `result`                    | object            | Required<br>(exactly 1)     | An object describing how the transaction affects the wallet
-| →<br>`amount`               | number (bitcoins) | Required<br>(exactly 1)     | A positive number of bitcoins if this transaction increased the total wallet balance; a negative number of bitcoins if this transaction decreased the total wallet balance, or `0` if the transaction had no net effect on wallet balance
-| →<br>`fee`                  | number (bitcoins) | Optional<br>(0 or 1)        | If an outgoing transaction, this is the fee paid by the transaction reported as negative bitcoins
+{{json_table}}
+
+* `result`
+* object
+* Required (exactly 1)
+* An object describing how the transaction affects the wallet
+
+* →<br>`amount`
+* number (bitcoins)
+* Required (exactly 1)
+* A positive number of bitcoins if this transaction increased the total wallet balance; a negative number of bitcoins if this transaction decreased the total wallet balance, or `0` if the transaction had no net effect on wallet balance
+
+* →<br>`fee`
+* number (bitcoins)
+* Optional (0 or 1)
+* If an outgoing transaction, this is the fee paid by the transaction reported as negative bitcoins
+
 {{INCLUDE_F_LIST_TRANSACTIONS_F_FULL}}
-| →<br>`details`              | array             | Required<br>(exactly 1)     | An array containing one object for each input or output in the transaction which affected the wallet
-| → → <br>`involvesWatchonly` | bool              | Optional<br>(0 or 1)        | *Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the input or output involves a watch-only address.  Otherwise not returned
-| → →<br>`account`            | string            | Required<br>(exactly 1)     | The account which the payment was credited to or debited from.  May be an empty string ("") for the default account
-| → →<br>`address`            | string (base58)   | Optional<br>(0 or 1)        | If an output, the address paid (may be someone else's address not belonging to this wallet).  If an input, the address paid in the previous output.  May be empty if the address is unknown, such as when paying to a non-standard pubkey script
-| → →<br>`category`           | string            | Required<br>(exactly 1)     | Set to one of the following values:<br>• `send` if sending payment<br>• `receive` if this wallet received payment in a regular transaction<br>• `generate` if a matured and spendable coinbase<br>• `immature` if a coinbase that is not spendable yet<br>• `orphan` if a coinbase from a block that's not in the local best block chain
-| → →<br>`amount`             | number (bitcoins) | Required<br>(exactly 1)     | A negative bitcoin amount if sending payment; a positive bitcoin amount if receiving payment (including coinbases)
-| → →<br>`vout`               | number (int)      | Required<br>(exactly 1)     | *Added in Bitcoin Core 0.10.0*<br><br>For an output, the output index (vout) for this output in this transaction.  For an input, the output index for the output being spent in its transaction.  Because inputs list the output indexes from previous transactions, more than one entry in the details array may have the same output index
-| → →<br>`fee`                | number (bitcoins) | Optional<br>(0 or 1)        | If sending payment, the fee paid as a negative bitcoins value.  May be `0`. Not returned if receiving payment
-| →<br>`hex`                  | string (hex)      | Required<br>(exactly 1)     | The transaction in serialized transaction format
-{:.ntpd}
+* →<br>`details`
+* array
+* Required (exactly 1)
+* An array containing one object for each input or output in the transaction which affected the wallet
+
+* → → <br>`involvesWatchonly`
+* bool
+* Optional (0 or 1)
+* *Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the input or output involves a watch-only address.  Otherwise not returned
+
+* → →<br>`account`
+* string
+* Required (exactly 1)
+* The account which the payment was credited to or debited from.  May be an empty string ("") for the default account
+
+* → →<br>`address`
+* string (base58)
+* Optional (0 or 1)
+* If an output, the address paid (may be someone else's address not belonging to this wallet).  If an input, the address paid in the previous output.  May be empty if the address is unknown, such as when paying to a non-standard pubkey script
+
+* → →<br>`category`
+* string
+* Required (exactly 1)
+* Set to one of the following values:<br>• `send` if sending payment<br>• `receive` if this wallet received payment in a regular transaction<br>• `generate` if a matured and spendable coinbase<br>• `immature` if a coinbase that is not spendable yet<br>• `orphan` if a coinbase from a block that's not in the local best block chain
+
+* → →<br>`amount`
+* number (bitcoins)
+* Required (exactly 1)
+* A negative bitcoin amount if sending payment; a positive bitcoin amount if receiving payment (including coinbases)
+
+* → →<br>`vout`
+* number (int)
+* Required (exactly 1)
+* *Added in Bitcoin Core 0.10.0*<br><br>For an output, the output index (vout) for this output in this transaction.  For an input, the output index for the output being spent in its transaction.  Because inputs list the output indexes from previous transactions, more than one entry in the details array may have the same output index
+
+* → →<br>`fee`
+* number (bitcoins)
+* Optional (0 or 1)
+* If sending payment, the fee paid as a negative bitcoins value.  May be `0`. Not returned if receiving payment
+
+* →<br>`hex`
+* string (hex)
+* Required (exactly 1)
+* The transaction in serialized transaction format
 
 *Example from Bitcoin Core 0.10.0*
 

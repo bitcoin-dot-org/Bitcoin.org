@@ -19,17 +19,47 @@ The `getblockchaininfo` RPC {{summary_getBlockChainInfo}}
 
 *Result---A JSON object providing information about the block chain*
 
-| Name                        | Type              | Presence                | Description
-|-----------------------------|-------------------|-------------------------|----------------
-| `result`                    | object            | Required<br>(exactly 1) | Information about the current state of the local block chain
-| →<br>`chain`                | string            | Required<br>(exactly 1) | The name of the block chain.  One of `main` for mainnet, `test` for testnet, or `regtest`<!--noref--> for regtest
-| →<br>`blocks`               | number (int)      | Required<br>(exactly 1) | The number of validated blocks in the local best block chain.  For a new node with just the hardcoded genesis block, this will be 0
-| →<br>`headers`              | number (int)      | Required<br>(exactly 1) | *Added in Bitcoin Core 0.10.0*<br><br>The number of validated headers in the local best headers chain.  For a new node with just the hardcoded genesis block, this will be zero.  This number may be higher than the number of *blocks*
-| →<br>`bestblockhash`        | string (hex)      | Required<br>(exactly 1) | The hash of the header of the highest validated block in the best block chain, encoded as hex in RPC byte order.  This is identical to the string returned by the `getbestblockhash` RPC
-| →<br>`difficulty`           | number (real)     | Required<br>(exactly 1) | The difficulty of the highest-height block in the best block chain
-| →<br>`verificationprogress` | number (real)     | Required (exactly 1)    | Estimate of what percentage of the block chain transactions have been verified so far, starting at 0.0 and increasing to 1.0 for fully verified.  May slightly exceed 1.0 when fully synced to account for transactions in the memory pool which have been verified before being included in a block
-| →<br>`chainwork`            | string (hex)      | Required<br>(exactly 1) | The estimated number of block header hashes checked from the genesis block to this block, encoded as big-endian hex
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* object
+* Required (exactly 1)
+* Information about the current state of the local block chain
+
+* →<br>`chain`
+* string
+* Required (exactly 1)
+* The name of the block chain.  One of `main` for mainnet, `test` for testnet, or `regtest`<!--noref--> for regtest
+
+* →<br>`blocks`
+* number (int)
+* Required (exactly 1)
+* The number of validated blocks in the local best block chain.  For a new node with just the hardcoded genesis block, this will be 0
+
+* →<br>`headers`
+* number (int)
+* Required (exactly 1)
+* *Added in Bitcoin Core 0.10.0*<br><br>The number of validated headers in the local best headers chain.  For a new node with just the hardcoded genesis block, this will be zero.  This number may be higher than the number of *blocks*
+
+* →<br>`bestblockhash`
+* string (hex)
+* Required (exactly 1)
+* The hash of the header of the highest validated block in the best block chain, encoded as hex in RPC byte order.  This is identical to the string returned by the `getbestblockhash` RPC
+
+* →<br>`difficulty`
+* number (real)
+* Required (exactly 1)
+* The difficulty of the highest-height block in the best block chain
+
+* →<br>`verificationprogress`
+* number (real)
+* Required (exactly 1)
+* Estimate of what percentage of the block chain transactions have been verified so far, starting at 0.0 and increasing to 1.0 for fully verified.  May slightly exceed 1.0 when fully synced to account for transactions in the memory pool which have been verified before being included in a block
+
+* →<br>`chainwork`
+* string (hex)
+* Required (exactly 1)
+* The estimated number of block header hashes checked from the genesis block to this block, encoded as big-endian hex
 
 *Example from Bitcoin Core 0.10.0*
 

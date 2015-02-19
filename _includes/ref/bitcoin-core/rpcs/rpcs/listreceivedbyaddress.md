@@ -21,10 +21,12 @@ The `listreceivedbyaddress` RPC {{summary_listReceivedByAddress}}
 
 *Parameter #2---whether to include empty accounts*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Include Empty      | bool            | Optional<br>(0 or 1)        | Set to `true` to display accounts which have never received a payment.  Set to `false` (the default) to only include accounts which have received a payment.  Any account which has received a payment will be displayed even if its current balance is `0`
-{:.ntpd}
+{{json_table}}
+
+* Include Empty
+* bool
+* Optional (0 or 1)
+* Set to `true` to display accounts which have never received a payment.  Set to `false` (the default) to only include accounts which have received a payment.  Any account which has received a payment will be displayed even if its current balance is `0`
 
 *Parameter #3---whether to include watch-only addresses in results*
 
@@ -32,18 +34,52 @@ The `listreceivedbyaddress` RPC {{summary_listReceivedByAddress}}
 
 *Result---addresses, account names, balances, and minimum confirmations*
 
-| Name                       | Type              | Presence                    | Description
-|----------------------------|-------------------|-----------------------------|----------------
-| `result`                   | array             | Required<br>(exactly 1)     | An array containing objects each describing a particular address
-| →<br>Address               | object            | Optional<br>(0 or more)     | An object describing an address
-| → →<br>`involvesWatchonly` | bool              | Optional<br>(0 or 1)        | *Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if this address is a watch-only address which has received a spendable payment (that is, a payment with at least the specified number of confirmations and which is not an immature coinbase).  Otherwise not returned
-| → →<br>`address`           | string (base58)   | Required<br>(exactly 1)     | The address being described encoded in base58check
-| → →<br>`account`           | string            | Required<br>(exactly 1)     | The account the address belongs to; may be the default account, an empty string ("")
-| → →<br>`amount`            | number (bitcoins) | Required<br>(exactly 1)     | The total amount the address has received in bitcoins
-| → →<br>`confirmations`     | number (int)      | Required<br>(exactly 1)     | The number of confirmations of the latest transaction to the address.  May be `0` for unconfirmed
-| → →<br>TXIDs               | array             | Required<br>(exactly 1)     | An array of TXIDs belonging to transactions that pay the address
-| → → →<br>TXID              | string            | Optional<br>(0 or more)     | The TXID of a transaction paying the address, encoded as hex in RPC byte order
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* array
+* Required (exactly 1)
+* An array containing objects each describing a particular address
+
+* →<br>Address
+* object
+* Optional (0 or more)
+* An object describing an address
+
+* → →<br>`involvesWatchonly`
+* bool
+* Optional (0 or 1)
+* *Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if this address is a watch-only address which has received a spendable payment (that is, a payment with at least the specified number of confirmations and which is not an immature coinbase).  Otherwise not returned
+
+* → →<br>`address`
+* string (base58)
+* Required (exactly 1)
+* The address being described encoded in base58check
+
+* → →<br>`account`
+* string
+* Required (exactly 1)
+* The account the address belongs to; may be the default account, an empty string ("")
+
+* → →<br>`amount`
+* number (bitcoins)
+* Required (exactly 1)
+* The total amount the address has received in bitcoins
+
+* → →<br>`confirmations`
+* number (int)
+* Required (exactly 1)
+* The number of confirmations of the latest transaction to the address.  May be `0` for unconfirmed
+
+* → →<br>TXIDs
+* array
+* Required (exactly 1)
+* An array of TXIDs belonging to transactions that pay the address
+
+* → → →<br>TXID
+* string
+* Optional (0 or more)
+* The TXID of a transaction paying the address, encoded as hex in RPC byte order
 
 *Example from Bitcoin Core 0.10.0*
 

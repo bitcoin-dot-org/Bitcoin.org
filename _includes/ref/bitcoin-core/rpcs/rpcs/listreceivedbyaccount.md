@@ -21,10 +21,12 @@ The `listreceivedbyaccount` RPC {{summary_listReceivedByAccount}}
 
 *Parameter #2---whether to include empty accounts*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Include Empty      | bool            | Optional<br>(0 or 1)        | Set to `true` to display accounts which have never received a payment.  Set to `false` (the default) to only include accounts which have received a payment.  Any account which has received a payment will be displayed even if its current balance is `0`
-{:.ntpd}
+{{json_table}}
+
+* Include Empty
+* bool
+* Optional (0 or 1)
+* Set to `true` to display accounts which have never received a payment.  Set to `false` (the default) to only include accounts which have received a payment.  Any account which has received a payment will be displayed even if its current balance is `0`
 
 *Parameter #3---whether to include watch-only addresses in results*
 
@@ -32,15 +34,37 @@ The `listreceivedbyaccount` RPC {{summary_listReceivedByAccount}}
 
 *Result---account names, balances, and minimum confirmations*
 
-| Name                       | Type              | Presence                    | Description
-|----------------------------|-------------------|-----------------------------|----------------
-| `result`                   | array             | Required<br>(exactly 1)     | An array containing objects each describing an account.  At the very least, the default account ("") will be included
-| →<br>Account               | object            | Required<br>(1 or more)     | An object describing an account
-| → →<br>`involvesWatchonly` | bool              | Optional<br>(0 or 1)        | *Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the balance of this account includes a watch-only address which has received a spendable payment (that is, a payment with at least the specified number of confirmations and which is not an immature coinbase).  Otherwise not returned
-| → →<br>`account`           | string            | Required<br>(exactly 1)     | The name of the account
-| → →<br>`amount`<!--noref-->| number (bitcoins) | Required<br>(exactly 1)     | The total amount received by this account in bitcoins
-| → →<br>`confirmations`     | number (int)      | Required<br>(exactly 1)     | The number of confirmations received by the last transaction received by this account.  May be `0`
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* array
+* Required (exactly 1)
+* An array containing objects each describing an account.  At the very least, the default account ("") will be included
+
+* →<br>Account
+* object
+* Required (1 or more)
+* An object describing an account
+
+* → →<br>`involvesWatchonly`
+* bool
+* Optional (0 or 1)
+* *Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the balance of this account includes a watch-only address which has received a spendable payment (that is, a payment with at least the specified number of confirmations and which is not an immature coinbase).  Otherwise not returned
+
+* → →<br>`account`
+* string
+* Required (exactly 1)
+* The name of the account
+
+* → →<br>`amount`<!--noref-->
+* number (bitcoins)
+* Required (exactly 1)
+* The total amount received by this account in bitcoins
+
+* → →<br>`confirmations`
+* number (int)
+* Required (exactly 1)
+* The number of confirmations received by the last transaction received by this account.  May be `0`
 
 *Example from Bitcoin Core 0.10.0*
 

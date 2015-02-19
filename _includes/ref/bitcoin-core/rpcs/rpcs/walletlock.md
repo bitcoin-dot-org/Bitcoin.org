@@ -19,10 +19,12 @@ The `walletlock` RPC {{summary_walletLock}}
 
 *Result---`null` on success*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| `result`           | null            | Required<br>(exactly 1)     | Always set to JSON `null`
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* null
+* Required (exactly 1)
+* Always set to JSON `null`
 
 *Example from Bitcoin Core 0.10.0*
 

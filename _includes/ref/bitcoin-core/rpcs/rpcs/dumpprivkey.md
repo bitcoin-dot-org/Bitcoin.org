@@ -18,17 +18,21 @@ The `dumpprivkey` RPC {{summary_dumpPrivKey}}
 
 *Parameter #1---the address corresponding to the private key to get*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| P2PKH Address      | string (base58) | Required<br>(exactly 1)     | The P2PKH address corresponding to the private key you want returned.  Must be the address corresponding to a private key in this wallet
-{:.ntpd}
+{{json_table}}
+
+* P2PKH Address
+* string (base58)
+* Required (exactly 1)
+* The P2PKH address corresponding to the private key you want returned.  Must be the address corresponding to a private key in this wallet
 
 *Result---the private key*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | string (base58) | Required<br>(exactly 1)     | The private key encoded as base58check using wallet import format
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* string (base58)
+* Required (exactly 1)
+* The private key encoded as base58check using wallet import format
 
 *Example from Bitcoin Core 0.10.0*
 

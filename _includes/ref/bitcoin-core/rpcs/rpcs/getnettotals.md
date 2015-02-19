@@ -17,13 +17,27 @@ The `getnettotals` RPC {{summary_getNetTotals}}
 
 *Result---the current bytes in, bytes out, and current time*
 
-| Name                  | Type            | Presence                    | Description
-|-----------------------|-----------------|-----------------------------|----------------
-| `result`              | object          | Required<br>(exactly 1)     | An object containing information about the node's network totals
-| →<br>`totalbytesrecv` | number (int)    | Required<br>(exactly 1)     | The total number of bytes received since the node was last restarted
-| →<br>`totalbytessent` | number (int)    | Required<br>(exactly 1)     | The total number of bytes sent since the node was last restarted
-| →<br>`timemillis`     | number (int)    | Required<br>(exactly 1)     | Unix epoch time in milliseconds according to the operating system's clock (not the node adjusted time)
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* object
+* Required (exactly 1)
+* An object containing information about the node's network totals
+
+* →<br>`totalbytesrecv`
+* number (int)
+* Required (exactly 1)
+* The total number of bytes received since the node was last restarted
+
+* →<br>`totalbytessent`
+* number (int)
+* Required (exactly 1)
+* The total number of bytes sent since the node was last restarted
+
+* →<br>`timemillis`
+* number (int)
+* Required (exactly 1)
+* Unix epoch time in milliseconds according to the operating system's clock (not the node adjusted time)
 
 *Example from Bitcoin Core 0.10.0*
 

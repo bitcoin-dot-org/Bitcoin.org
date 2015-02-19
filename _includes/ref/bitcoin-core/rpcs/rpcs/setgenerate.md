@@ -17,39 +17,53 @@ The `setgenerate` RPC {{summary_setGenerate}}
 
 *Parameter #1---whether to enable or disable generation*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Enable/Disable     | bool            | Required<br>(exactly 1)     | Set to `true` to enable generation; set to `false` to disable generation
-{:.ntpd}
+{{json_table}}
+
+* Enable/Disable
+* bool
+* Required (exactly 1)
+* Set to `true` to enable generation; set to `false` to disable generation
 
 *Parameter #2 (regular)---the number of processors to use*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Processors         | number (int)    | Optional<br>(0 or 1)        | The number of processors to use.  Defaults to `1`.  Set to `-1` to use all processors
-{:.ntpd}
+{{json_table}}
+
+* Processors
+* number (int)
+* Optional (0 or 1)
+* The number of processors to use.  Defaults to `1`.  Set to `-1` to use all processors
 
 *Parameter #2 (regtest)---the number of blocks to generate*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Blocks             | number (int)    | Optional<br>(0 or 1)        | In regtest mode, set to the number of blocks to generate.  Defaults to `1`
-{:.ntpd}
+{{json_table}}
+
+* Blocks
+* number (int)
+* Optional (0 or 1)
+* In regtest mode, set to the number of blocks to generate.  Defaults to `1`
 
 *Result (regular)---generating is enabled*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | null            | Required<br>(exactly 1)     | Always JSON `null`
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* null
+* Required (exactly 1)
+* Always JSON `null`
 
 *Result (regtest)---the generated block header hashes*
 
-| Name                | Type            | Presence                    | Description
-|---------------------|-----------------|-----------------------------|----------------
-| `result`            | array/null      | Required<br>(exactly 1)     | An array containing the block header hashes of the generated blocks, or JSON `null` if no blocks were generated
-| →<br>Header Hashes  | string (hex)    | Required<br>(1 or more)     | The hashes of the headers of the blocks generated in regtest mode, as hex in RPC byte order
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* array/null
+* Required (exactly 1)
+* An array containing the block header hashes of the generated blocks, or JSON `null` if no blocks were generated
+
+* →<br>Header Hashes
+* string (hex)
+* Required (1 or more)
+* The hashes of the headers of the blocks generated in regtest mode, as hex in RPC byte order
 
 *Examples from Bitcoin Core 0.10.0*
 

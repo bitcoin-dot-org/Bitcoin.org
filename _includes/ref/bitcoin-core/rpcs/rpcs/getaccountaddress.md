@@ -17,17 +17,21 @@ The `getaccountaddress` RPC {{summary_getAccountAddress}}
 
 *Parameter #1---an account name*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Account            | string          | Required<br>(exactly 1)     | The name of an account.  Use an empty string ("") for the default account.  If the account doesn't exist, it will be created
-{:.ntpd}
+{{json_table}}
+
+* Account
+* string
+* Required (exactly 1)
+* The name of an account.  Use an empty string ("") for the default account.  If the account doesn't exist, it will be created
 
 *Result---a bitcoin address*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | string (base58) | Required<br>(exactly 1)     | An address, belonging to the account specified, which has not yet received any payments
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* string (base58)
+* Required (exactly 1)
+* An address, belonging to the account specified, which has not yet received any payments
 
 *Example from Bitcoin Core 0.10.0*
 

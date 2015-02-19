@@ -17,10 +17,12 @@ The `ping` RPC {{summary_ping-rpc}}
 
 *Result---`null`*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | null            | Required                    | Always JSON `null`
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* null
+* Required
+* Always JSON `null`
 
 *Example from Bitcoin Core 0.10.0*
 

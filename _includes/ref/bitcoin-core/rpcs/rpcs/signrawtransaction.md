@@ -15,46 +15,91 @@ The `signrawtransaction` RPC {{summary_signRawTransaction}}
 
 *Parameter #1---the transaction to sign*
 
-| Name             | Type         | Presence                    | Description
-|------------------|--------------|-----------------------------|----------------
-| Transaction      | string (hex  | Required<br>(exactly 1)     | The transaction to sign as a serialized transaction
-{:.ntpd}
+{{json_table}}
+
+* Transaction
+* string (hex
+* Required (exactly 1)
+* The transaction to sign as a serialized transaction
 
 *Parameter #2---unspent transaction output details*
 
-| Name                  | Type         | Presence                    | Description
-|-----------------------|--------------|-----------------------------|-------------
-| Dependencies          | array        | Optional<br>(0 or 1)        | The previous outputs being spent by this transaction
-| →<br>Output           | object       | Optional<br>(0 or more)     | An output being spent
-| → →<br>`txid`         | string (hex) | Required<br>(exactly 1)     | The TXID of the transaction the output appeared in.  The TXID must be encoded in hex in RPC byte order
-| → →<br>`vout`         | number (int) | Required<br>(exactly 1)     | The index number of the output (vout) as it appeared in its transaction, with the first output being 0
-| → →<br>`scriptPubKey` | string (hex) | Required<br>(exactly 1)     | The output's pubkey script encoded as hex
-| → →<br>`redeemScript` | string (hex) | Optional<br>(0 or 1)        | If the pubkey script was a script hash, this must be the corresponding redeem script
-{:.ntpd}
+{{json_table}}
+
+* Dependencies
+* array
+* Optional (0 or 1)
+* The previous outputs being spent by this transaction
+
+* →<br>Output
+* object
+* Optional (0 or more)
+* An output being spent
+
+* → →<br>`txid`
+* string (hex)
+* Required (exactly 1)
+* The TXID of the transaction the output appeared in.  The TXID must be encoded in hex in RPC byte order
+
+* → →<br>`vout`
+* number (int)
+* Required (exactly 1)
+* The index number of the output (vout) as it appeared in its transaction, with the first output being 0
+
+* → →<br>`scriptPubKey`
+* string (hex)
+* Required (exactly 1)
+* The output's pubkey script encoded as hex
+
+* → →<br>`redeemScript`
+* string (hex)
+* Optional (0 or 1)
+* If the pubkey script was a script hash, this must be the corresponding redeem script
 
 *Parameter #3---private keys for signing*
 
-| Name             | Type            | Presence                    | Description
-|------------------|-----------------|-----------------------------|-------------
-| Private Keys     | array           | Optional<br>(0 or 1)        | An array holding private keys.  If any keys are provided, only they will be used to sign the transaction (even if the wallet has other matching keys).  If this array is empty or not used, and wallet support is enabled, keys from the wallet will be used
-| →<br>Key         | string (base58) | Required<br>(1 or more)     | A private key in base58check format to use to create a signature for this transaction
-{:.ntpd}
+{{json_table}}
+
+* Private Keys
+* array
+* Optional (0 or 1)
+* An array holding private keys.  If any keys are provided, only they will be used to sign the transaction (even if the wallet has other matching keys).  If this array is empty or not used, and wallet support is enabled, keys from the wallet will be used
+
+* →<br>Key
+* string (base58)
+* Required (1 or more)
+* A private key in base58check format to use to create a signature for this transaction
 
 *Parameter #4---signature hash type*
 
-| Name             | Type         | Presence                    | Description
-|------------------|--------------|-----------------------------|-------------
-| SigHash          | string       | Optional<br>(0 or 1)        | The type of signature hash to use for all of the signatures performed.  (You must use separate calls to the `signrawtransaction` RPC if you want to use different signature hash types for different signatures.  The allowed values are: `ALL`, `NONE`, `SINGLE`, `ALL|ANYONECANPAY`, `NONE|ANYONECANPAY`, and `SINGLE|ANYONECANPAY`
-{:.ntpd}
+{{json_table}}
+
+* SigHash
+* string
+* Optional (0 or 1)
+* The type of signature hash to use for all of the signatures performed.  (You must use separate calls to the `signrawtransaction` RPC if you want to use different signature hash types for different signatures.  The allowed values are: `ALL`, `NONE`, `SINGLE`, `ALL
+*ANYONECANPAY`, `NONE
+*ANYONECANPAY`, and `SINGLE
+*ANYONECANPAY`
 
 *Result---the transaction with any signatures made*
 
-| Name             | Type         | Presence                    | Description
-|------------------|--------------|-----------------------------|-------------
-| `result`         | object       | Required<br>(exactly 1)     | The results of the signature
-| →<br>`hex`       | string (hex) | Required<br>(exactly 1)     | The resulting serialized transaction encoded as hex with any signatures made inserted.  If no signatures were made, this will be the same transaction provided in parameter #1
-| →<br>`complete`  | bool         | Required<br>(exactly 1)     | The value `true` if transaction is fully signed; the value `false` if more signatures are required
-{:.ntpd}
+{{json_table}}
+
+* `result`
+* object
+* Required (exactly 1)
+* The results of the signature
+
+* →<br>`hex`
+* string (hex)
+* Required (exactly 1)
+* The resulting serialized transaction encoded as hex with any signatures made inserted.  If no signatures were made, this will be the same transaction provided in parameter #1
+
+* →<br>`complete`
+* bool
+* Required (exactly 1)
+* The value `true` if transaction is fully signed; the value `false` if more signatures are required
 
 *Example from Bitcoin Core 0.10.0*
 

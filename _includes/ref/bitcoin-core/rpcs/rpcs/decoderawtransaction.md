@@ -15,19 +15,23 @@ The `decoderawtransaction` RPC {{summary_decodeRawTransaction}}
 
 *Parameter #1---serialized transaction in hex*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Serialized Transaction | string (hex) | Required<br>(exactly 1)    | The transaction to decode in serialized transaction format
-{:.ntpd}
+{{json_table}}
+
+* Serialized Transaction
+* string (hex)
+* Required (exactly 1)
+* The transaction to decode in serialized transaction format
 
 *Result---the decoded transaction*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | object          | Required<br>(exactly 1)     | An object describing the decoded transaction, or JSON `null` if the transaction could not be decoded
-{{INCLUDE_DECODE_RAW_TRANSACTION}}
-{:.ntpd}
+{{json_table}}
 
+* `result`
+* object
+* Required (exactly 1)
+* An object describing the decoded transaction, or JSON `null` if the transaction could not be decoded
+
+{{INCLUDE_DECODE_RAW_TRANSACTION}}
 *Example from Bitcoin Core 0.10.0*
 
 Decode a signed one-input, three-output transaction:
