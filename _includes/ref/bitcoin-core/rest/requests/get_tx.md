@@ -23,32 +23,57 @@ GET /tx/<txid>.<format>
 
 *Parameter #1---the TXID of the transaction to retrieve*
 
-| Name             | Type         | Presence                    | Description
-|------------------|--------------|-----------------------------|----------------
-| TXID             | path (hex)   | Required<br>(exactly 1)     | The TXID of the transaction to get, encoded as hex in RPC byte order
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "TXID"
+  t: "path (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The TXID of the transaction to get, encoded as hex in RPC byte order"
+
+{% enditemplate %}
 
 *Parameter #2---the output format*
 
-| Name             | Type         | Presence                    | Description
-|------------------|--------------|-----------------------------|----------------
-| Format           | suffix       | Required<br>(exactly 1)     | Set to `.json` for decoded transaction contents in JSON, or `.bin` or `hex` for a serialized transaction in binary or hex
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Format"
+  t: "suffix"
+  p: "Required<br>(exactly 1)"
+  d: "Set to `.json` for decoded transaction contents in JSON, or `.bin` or `hex` for a serialized transaction in binary or hex"
+
+{% enditemplate %}
 
 *Response as JSON*
 
 {% assign DEPTH="" %}
 {% include helpers/vars.md %}
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| Result               | object          | Required<br>(exactly 1)     | An object describing the request transaction
+{% itemplate ntpd1 %}
+- n: "Result"
+  t: "object"
+  p: "Required<br>(exactly 1)"
+  d: "An object describing the request transaction"
+
 {{INCLUDE_DECODE_RAW_TRANSACTION}}
-| →<br>`blockhash`     | string (hex)    | Optional<br>(0 or 1)        | If the transaction has been included in a block on the local best block chain, this is the hash of that block encoded as hex in RPC byte order
-| →<br>`confirmations` | number (int)    | Required<br>(exactly 1)     | If the transaction has been included in a block on the local best block chain, this is how many confirmations it has.  Otherwise, this is `0`
-| →<br>`time`          | number (int)    | Optional<br>(0 or 1)        | If the transaction has been included in a block on the local best block chain, this is the block header time of that block (may be in the future)
-| →<br>`blocktime`     | number (int)    | Optional<br>(0 or 1)        | This field is currently identical to the time field described above
-{:.ntpd}
+- n: "→<br>`blockhash`"
+  t: "string (hex)"
+  p: "Optional<br>(0 or 1)"
+  d: "If the transaction has been included in a block on the local best block chain, this is the hash of that block encoded as hex in RPC byte order"
+
+- n: "→<br>`confirmations`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "If the transaction has been included in a block on the local best block chain, this is how many confirmations it has.  Otherwise, this is `0`"
+
+- n: "→<br>`time`"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "If the transaction has been included in a block on the local best block chain, this is the block header time of that block (may be in the future)"
+
+- n: "→<br>`blocktime`"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "This field is currently identical to the time field described above"
+
+{% enditemplate %}
 
 *Examples from Bitcoin Core 0.10.0*
 

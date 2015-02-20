@@ -17,27 +17,48 @@ The `lockunspent` RPC {{summary_lockUnspent}}
 
 *Parameter #1---whether to lock or unlock the outputs*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| Lock Or Unlock       | bool            | Required<br>(exactly 1)     | Set to `true` to lock the outputs specified in the following parameter.  Set to `false` to unlock the outputs specified.  If this is the only argument specified, all outputs will be unlocked (even if this is set to `false`)
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Lock Or Unlock"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "Set to `true` to lock the outputs specified in the following parameter.  Set to `false` to unlock the outputs specified.  If this is the only argument specified, all outputs will be unlocked (even if this is set to `false`)"
+
+{% enditemplate %}
 
 *Parameter #2---the outputs to lock or unlock*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| Outputs              | array           | Optional<br>(0 or 1)        | An array of outputs to lock or unlock
-| →<br>Output          | object          | Required<br>(1 or more)     | An object describing a particular output
-| → →<br>`txid`        | string          | Required<br>(exactly 1)     | The TXID of the transaction containing the output to lock or unlock, encoded as hex in internal byte order
-| → →<br>`vout`        | number (int)    | Required<br>(exactly 1)     | The output index number (vout) of the output to lock or unlock.  The first output in a transaction has an index of `0`
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Outputs"
+  t: "array"
+  p: "Optional<br>(0 or 1)"
+  d: "An array of outputs to lock or unlock"
+
+- n: "→<br>Output"
+  t: "object"
+  p: "Required<br>(1 or more)"
+  d: "An object describing a particular output"
+
+- n: "→ →<br>`txid`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The TXID of the transaction containing the output to lock or unlock, encoded as hex in internal byte order"
+
+- n: "→ →<br>`vout`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The output index number (vout) of the output to lock or unlock.  The first output in a transaction has an index of `0`"
+
+{% enditemplate %}
 
 *Result---`true` if successful*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| `result`             | bool            | Required<br>(exactly 1)     | Set to `true` if the outputs were successfully locked or unlocked
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "Set to `true` if the outputs were successfully locked or unlocked"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

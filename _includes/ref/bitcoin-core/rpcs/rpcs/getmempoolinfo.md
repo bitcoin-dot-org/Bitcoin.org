@@ -19,12 +19,23 @@ The `getmempoolinfo` RPC {{summary_getMemPoolInfo}}
 
 *Result---information about the transaction memory pool*
 
-| Name             | Type            | Presence                    | Description
-|------------------|-----------------|-----------------------------|----------------
-| `result`         | object          | Required<br>(exactly 1)     | A object containing information about the memory pool
-| →<br>`size`      | number (int)    | Required<br>(exactly 1)     | The number of transactions currently in the memory pool
-| →<br>`bytes`     | number (int)    | Required<br>(exactly 1)     | The total number of bytes in the transactions in the memory pool
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "object"
+  p: "Required<br>(exactly 1)"
+  d: "A object containing information about the memory pool"
+
+- n: "→<br>`size`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The number of transactions currently in the memory pool"
+
+- n: "→<br>`bytes`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The total number of bytes in the transactions in the memory pool"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

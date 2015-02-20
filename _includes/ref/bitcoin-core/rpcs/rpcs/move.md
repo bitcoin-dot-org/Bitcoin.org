@@ -22,45 +22,63 @@ account a balance that may exceed the number of bitcoins in the wallet
 
 *Parameter #1---from account*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| From Account         | string          | Required<br>(exactly 1)     | The name of the account to move the funds from
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "From Account"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The name of the account to move the funds from"
+
+{% enditemplate %}
 
 *Parameter #2---to account*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| To Account           | string          | Required<br>(exactly 1)     | The name of the account to move the funds to
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "To Account"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The name of the account to move the funds to"
+
+{% enditemplate %}
 
 *Parameter #3---amount to move*
 
-| Name                 | Type              | Presence                    | Description
-|----------------------|-------------------|-----------------------------|----------------
-| Amount               | number (bitcoins) | Required<br>(exactly 1)     | The amount of bitcoins to move
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Amount"
+  t: "number (bitcoins)"
+  p: "Required<br>(exactly 1)"
+  d: "The amount of bitcoins to move"
+
+{% enditemplate %}
 
 *Parameter #4---an unused parameter*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| *Unused*             | number (int)    | Optional<br>(0 or 1)        | This parameter is no longer used. If parameter #5 needs to be specified, this can be any integer
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "*Unused*"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "This parameter is no longer used. If parameter #5 needs to be specified, this can be any integer"
+
+{% enditemplate %}
 
 *Parameter #5---a comment*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| Comment              | string          | Optional<br>(0 or 1)        | A comment to assign to this move payment
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Comment"
+  t: "string"
+  p: "Optional<br>(0 or 1)"
+  d: "A comment to assign to this move payment"
+
+{% enditemplate %}
 
 *Result---`true` on success*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| `result`             | bool            | Required<br>(exactly 1)     | Set to `true` if the move was successful
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "Set to `true` if the move was successful"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

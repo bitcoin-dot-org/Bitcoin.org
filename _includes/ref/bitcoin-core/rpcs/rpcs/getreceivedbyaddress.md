@@ -17,10 +17,13 @@ The `getreceivedbyaddress` RPC {{summary_getReceivedByAddress}}
 
 *Parameter #1---the address*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Address            | string          | Required<br>(exactly 1)     | The address whose transactions should be tallied
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Address"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The address whose transactions should be tallied"
+
+{% enditemplate %}
 
 *Parameter #2---the minimum number of confirmations*
 
@@ -28,10 +31,13 @@ The `getreceivedbyaddress` RPC {{summary_getReceivedByAddress}}
 
 *Result---the number of bitcoins received*
 
-| Name               | Type              | Presence                    | Description
-|--------------------|-------------------|-----------------------------|----------------
-| `result`           | number (bitcoins) | Required<br>(exactly 1)     | The number of bitcoins received by the address, excluding coinbase transactions.  May be `0`
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "number (bitcoins)"
+  p: "Required<br>(exactly 1)"
+  d: "The number of bitcoins received by the address, excluding coinbase transactions.  May be `0`"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

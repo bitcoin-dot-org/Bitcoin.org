@@ -17,13 +17,28 @@ The `getnettotals` RPC {{summary_getNetTotals}}
 
 *Result---the current bytes in, bytes out, and current time*
 
-| Name                  | Type            | Presence                    | Description
-|-----------------------|-----------------|-----------------------------|----------------
-| `result`              | object          | Required<br>(exactly 1)     | An object containing information about the node's network totals
-| →<br>`totalbytesrecv` | number (int)    | Required<br>(exactly 1)     | The total number of bytes received since the node was last restarted
-| →<br>`totalbytessent` | number (int)    | Required<br>(exactly 1)     | The total number of bytes sent since the node was last restarted
-| →<br>`timemillis`     | number (int)    | Required<br>(exactly 1)     | Unix epoch time in milliseconds according to the operating system's clock (not the node adjusted time)
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "object"
+  p: "Required<br>(exactly 1)"
+  d: "An object containing information about the node's network totals"
+
+- n: "→<br>`totalbytesrecv`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The total number of bytes received since the node was last restarted"
+
+- n: "→<br>`totalbytessent`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The total number of bytes sent since the node was last restarted"
+
+- n: "→<br>`timemillis`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "Unix epoch time in milliseconds according to the operating system's clock (not the node adjusted time)"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

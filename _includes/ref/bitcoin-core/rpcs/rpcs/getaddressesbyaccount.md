@@ -17,18 +17,28 @@ The `getaddressesbyaccount` RPC {{summary_getAddressesByAccount}}
 
 *Parameter #1---the account name*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Account            | string          | Required<br>(exactly 1)     | The name of the account containing the addresses to get.  To get addresses from the default account, pass an empty string ("")
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Account"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The name of the account containing the addresses to get.  To get addresses from the default account, pass an empty string (\"\")"
+
+{% enditemplate %}
 
 *Result---a list of addresses*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | array           | Required<br>(exactly 1)     | An array containing all addresses belonging to the specified account.  If the account has no addresses, the array will be empty
-| Address            | string (base58) | Optional<br>(1 or more) | A P2PKH or P2SH address belonging to the account
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "array"
+  p: "Required<br>(exactly 1)"
+  d: "An array containing all addresses belonging to the specified account.  If the account has no addresses, the array will be empty"
+
+- n: "Address"
+  t: "string (base58)"
+  p: "Optional<br>(1 or more)"
+  d: "A P2PKH or P2SH address belonging to the account"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

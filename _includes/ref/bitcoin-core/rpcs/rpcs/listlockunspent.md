@@ -19,13 +19,28 @@ The `listlockunspent` RPC {{summary_listLockUnspent}}
 
 *Result---an array of locked outputs*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | array           | Required<br>(exactly 1)      | An array containing all locked outputs.  May be empty
-| →<br>Output        | object          | Optional<br>(1 or more)     | An object describing a particular locked output
-| → →<br>`txid`      | string (hex)    | Required<br>(exactly 1)     | The TXID of the transaction containing the locked output, encoded as hex in RPC byte order
-| → →<br>`vout`      | number (int)    | Required<br>(exactly 1)     | The output index number (vout) of the locked output within the transaction.  Output index `0` is the first output within the transaction
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "array"
+  p: "Required<br>(exactly 1)"
+  d: "An array containing all locked outputs.  May be empty"
+
+- n: "→<br>Output"
+  t: "object"
+  p: "Optional<br>(1 or more)"
+  d: "An object describing a particular locked output"
+
+- n: "→ →<br>`txid`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The TXID of the transaction containing the locked output, encoded as hex in RPC byte order"
+
+- n: "→ →<br>`vout`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The output index number (vout) of the locked output within the transaction.  Output index `0` is the first output within the transaction"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

@@ -17,10 +17,13 @@ The `getconnectioncount` RPC {{summary_getConnectionCount}}
 
 *Result---the number of connections to other nodes*
 
-| Name             | Type            | Presence                    | Description
-|------------------|-----------------|-----------------------------|----------------
-| `result`         | number (int)    | Required<br>(exactly 1)     | The total number of connections to other nodes (both inbound and outbound)
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The total number of connections to other nodes (both inbound and outbound)"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

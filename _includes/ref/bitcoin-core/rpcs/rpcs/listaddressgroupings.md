@@ -19,15 +19,38 @@ The `listaddressgroupings` RPC {{summary_listAddressGroupings}}
 
 *Result---an array of arrays describing the groupings*
 
-| Name                   | Type              | Presence                    | Description
-|------------------------|-------------------|-----------------------------|----------------
-| `result`               | array             | Required<br>(exactly 1)     | An array containing the groupings.  May be empty
-| →<br>Groupings         | array             | Optional<br>(0 or more)     | An array containing arrays of addresses which can be associated with each other
-| → →<br>Address Details | array             | Required<br>(1 or more)     | An array containing information about a particular address
-| → → →<br>Address       | string (base58)   | Required<br>(exactly 1)     | The address in base58check format
-| → → →<br>Balance       | number (bitcoins) | Required<br>(exactly 1)     | The current spendable balance of the address, not counting unconfirmed transactions
-| → → →<br>Account       | string            | Optional<br>(0 or 1)        | The account the address belongs to, if any.  This field will not be returned for change addresses.  The default account is an empty string ("")
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "array"
+  p: "Required<br>(exactly 1)"
+  d: "An array containing the groupings.  May be empty"
+
+- n: "→<br>Groupings"
+  t: "array"
+  p: "Optional<br>(0 or more)"
+  d: "An array containing arrays of addresses which can be associated with each other"
+
+- n: "→ →<br>Address Details"
+  t: "array"
+  p: "Required<br>(1 or more)"
+  d: "An array containing information about a particular address"
+
+- n: "→ → →<br>Address"
+  t: "string (base58)"
+  p: "Required<br>(exactly 1)"
+  d: "The address in base58check format"
+
+- n: "→ → →<br>Balance"
+  t: "number (bitcoins)"
+  p: "Required<br>(exactly 1)"
+  d: "The current spendable balance of the address, not counting unconfirmed transactions"
+
+- n: "→ → →<br>Account"
+  t: "string"
+  p: "Optional<br>(0 or 1)"
+  d: "The account the address belongs to, if any.  This field will not be returned for change addresses.  The default account is an empty string (\"\")"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

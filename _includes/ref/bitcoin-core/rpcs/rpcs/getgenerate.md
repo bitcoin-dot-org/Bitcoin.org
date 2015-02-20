@@ -19,10 +19,13 @@ The `getgenerate` RPC {{summary_getGenerate}}
 
 *Result---whether the server is set to generate blocks*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | bool            | Required<br>(exactly 1)     | Set to `true` if the server is set to generate blocks; set to `false` if it is not
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "Set to `true` if the server is set to generate blocks; set to `false` if it is not"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

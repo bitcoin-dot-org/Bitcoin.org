@@ -15,24 +15,33 @@ The `submitblock` RPC {{summary_submitBlock}}
 
 *Parameter #1---the new block in serialized block format as hex*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Block              | string (hex)    | Required<br>(exactly 1)     | The full block to submit in serialized block format as hex
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Block"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The full block to submit in serialized block format as hex"
+
+{% enditemplate %}
 
 *Parameter #2---additional parameters*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Parameters         | object          | Optional<br>(0 or 1)        | A JSON object containing extra parameters.  Not used directly by Bitcoin Core and also not broadcast to the network.  This is available for use by mining pools and other software.  A common parameter is a `workid` string
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Parameters"
+  t: "object"
+  p: "Optional<br>(0 or 1)"
+  d: "A JSON object containing extra parameters.  Not used directly by Bitcoin Core and also not broadcast to the network.  This is available for use by mining pools and other software.  A common parameter is a `workid` string"
+
+{% enditemplate %}
 
 *Result---`null` or error string*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | null/string     | Required<br>(exactly 1)     | If the block submission succeeded, set to JSON `null`.  If submission failed, set to one of the following strings: `duplicate`, `duplicate-invalid`, `inconclusive`, or `rejected`.  The JSON-RPC `error` field will still be set to `null` if submission failed for one of these reasons
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "null/string"
+  p: "Required<br>(exactly 1)"
+  d: "If the block submission succeeded, set to JSON `null`.  If submission failed, set to one of the following strings: `duplicate`, `duplicate-invalid`, `inconclusive`, or `rejected`.  The JSON-RPC `error` field will still be set to `null` if submission failed for one of these reasons"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

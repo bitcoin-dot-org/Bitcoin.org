@@ -17,10 +17,13 @@ The `getdifficulty` RPC {{summary_getDifficulty}}
 
 *Result---the current difficulty*
 
-| Name             | Type              | Presence                    | Description
-|------------------|-------------------|-----------------------------|----------------
-| `result`         | number (real)     | Required<br>(exactly 1)     | The difficulty of creating a block with the same target threshold (nBits) as the highest-height block in the local best block chain.  The number is a a multiple of the minimum difficulty
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "number (real)"
+  p: "Required<br>(exactly 1)"
+  d: "The difficulty of creating a block with the same target threshold (nBits) as the highest-height block in the local best block chain.  The number is a a multiple of the minimum difficulty"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 
