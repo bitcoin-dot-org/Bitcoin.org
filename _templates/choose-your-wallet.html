@@ -703,7 +703,31 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
-
+- ninki:
+    title: "Ninki Wallet"
+    titleshort: "Ninki"
+    compat: "desktop windows mac linux"
+    level: 3
+    platform:
+      desktop:
+        text: "walletninki"
+        link: "https://chrome.google.com/webstore/detail/ninki-wallet/ojjnofoknpfkbbamkfililnkoeoiohih"
+        source: "https://github.com/Ninkip2p/NinkiWalletCRX"
+        screenshot: "ninki.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkpasscontrolmulti"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkpasstransparencyremote"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworksupporttorproxy"
 ---
 
 <h1>{% translate pagetitle %}</h1>
