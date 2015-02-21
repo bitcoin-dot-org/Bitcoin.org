@@ -124,6 +124,7 @@ en:
     walletgreenaddress: "GreenAddress is a user-friendly multi-signature wallet with improved security and privacy. At no time are your keys server side, even encrypted. For security reasons, you should always use 2FA and the browser extension or Android App."
     wallettrezor: "TREZOR is a hardware wallet providing a high level of security without sacrificing convenience. Unlike cold storage, TREZOR is able to sign transactions while connected to an online device. That means spending bitcoins is secure even when using a compromised computer."
     wallethw1: "HW.1 is a hardware wallet built upon a ST23YT66 banking smartcard platform. It keeps the user private keys safe, validates transactions, can be used as a secure prepaid card or a multisignature party. While not open-source, it can be deterministically validated."
+    walletninki: "Ninki is a multi-signature wallet with a beautiful user interface that makes sending bitcoin as easy as email. You have full control of your bitcoins at all times."
     walletdownload: "Install"
     walletvisit: "Visit website"
     walletsourcecode: "Source code"
