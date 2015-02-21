@@ -30,21 +30,21 @@ lin64: "linux64.tar.gz"
         <img src="/img/os/med_win.png" alt="windows">
         <span>
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}" id="downloadwinexe">Windows</a>
-          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}">64 bit</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}">32 bit</a></span>
+          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}" id="win64exe">64 bit</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}" id="win32exe">32 bit</a></span>
         </span>
       </div>
       <div>
         <img src="/img/os/med_win.png" alt="windows">
         <span>
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}" id="downloadwinzip">Windows (zip)</a>
-          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}">64 bit</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32zip }}">32 bit</a></span>
+          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}" id="win64zip">64 bit</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32zip }}" id="win32zip">32 bit</a></span>
         </span>
       </div>
       <div>
         <img src="/img/os/med_osx.png" alt="osx">
         <span>
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}">Mac OS X</a>
-          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}">dmg</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.mactar }}">tar.gz</a></span>
+          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}" id="macdmg">dmg</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.mactar }}" id="mactar">tar.gz</a></span>
         </span>
       </div>
     </div>
@@ -53,7 +53,7 @@ lin64: "linux64.tar.gz"
         <img src="/img/os/med_linux.png" alt="linux">
         <span>
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}" id="downloadlin">Linux (tgz)</a>
-          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}">64 bit</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin32 }}">32 bit</a></span>
+          <span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}" id="lin64">64 bit</a> - <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin32 }}" id="lin32">32 bit</a></span>
         </span>
       </div>
       <div>
@@ -93,28 +93,36 @@ var but = document.getElementById('downloadbutton');
 var linkwinexe = document.getElementById('downloadwinexe');
 var linkwinzip = document.getElementById('downloadwinzip');
 var linklin = document.getElementById('downloadlin');
+var hrefwin64exe = document.getElementById('win64exe').href;
+var hrefwin32exe = document.getElementById('win32exe').href;
+var hrefwin64zip = document.getElementById('win64zip').href;
+var hrefwin32zip = document.getElementById('win32zip').href;
+var hrefmacdmg = document.getElementById('macdmg').href;
+var hrefmactar = document.getElementById('mactar').href;
+var hreflin64 = document.getElementById('lin64').href;
+var hreflin32 = document.getElementById('lin32').href;
 switch (os) {
 case 'windows64':
 	but.getElementsByTagName('IMG')[0].src = '/img/os/but_windows.svg';
-	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}';
-	linkwinexe.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}';
-	linkwinzip.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}';
+	but.href = hrefwin64exe;
+	linkwinexe.href = hrefwin64exe;
+	linkwinzip.href = hrefwin64zip;
 break;
 case 'windows32':
 	but.getElementsByTagName('IMG')[0].src = '/img/os/but_windows.svg';
-	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}';
-	linkwinexe.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}';
-	linkwinzip.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32zip }}';
+	but.href = hrefwin32exe;
+	linkwinexe.href = hrefwin32exe;
+	linkwinzip.href = hrefwin32zip;
 break;
 case 'linux64':
 	but.getElementsByTagName('IMG')[0].src = '/img/os/but_linux.png';
-	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}';
-	linklin.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}';
+	but.href = hreflin64;
+	linklin.href = hreflin64;
 break;
 case 'linux32':
 	but.getElementsByTagName('IMG')[0].src = '/img/os/but_linux.png';
-	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin32 }}';
-	linklin.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin32 }}';
+	but.href = hreflin32;
+	linklin.href = hreflin32;
 break;
 case 'ubuntu':
 	but.getElementsByTagName('IMG')[0].src = '/img/os/but_ubuntu.svg';
@@ -122,7 +130,7 @@ case 'ubuntu':
 break;
 case 'mac':
 	but.getElementsByTagName('IMG')[0].src = '/img/os/but_mac.svg';
-	but.href = '{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}';
+	but.href = hrefmacdmg;
 break;
 }
 </script>
