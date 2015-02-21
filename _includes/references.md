@@ -305,6 +305,14 @@ http://opensource.org/licenses/MIT.
 [rest get block-notxdetails]: /en/developer-reference#get-blocknotxdetails
 [rest get tx]: /en/developer-reference#get-tx
 
+<!-- Types used in RPC & REST (and maybe elsewhere); alphabetical order -->
+[t_account]: /en/developer-reference#t_account
+[t_array]: /en/developer-reference#t_array
+[t_m_p2sh_msig]: /en/developer-reference#t_m_p2sh_msig
+[t_p2sh_address]: /en/developer-reference#t_p2sh_address
+[t_p2pkh_address]: /en/developer-reference#t_p2pkh_address
+[t_pubkey]: /en/developer-reference#t_pubkey
+
 <!-- Other internal site links; alphabetical order -->
 [Bitcoin Core 0.6.0]: /en/release/v0.6.0
 [Bitcoin Core 0.6.1]: /en/release/v0.6.1

@@ -40,6 +40,8 @@ title: "Developer Reference - Bitcoin"
 
 {% include ref/bitcoin-core/api-intro.md %}
 
+{% include ref/bitcoin-core/types.md %}
+
 {% include ref/bitcoin-core/rpcs/intro.md %}
 
 {% include ref/bitcoin-core/rpcs/quick-ref.md %}
