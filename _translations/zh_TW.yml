@@ -297,7 +297,7 @@ zh_TW:
     scaletxt1: "Bitcoin 網路今天已經可以每秒鐘進行更多數量的交易。然後，它還沒有準備好成為主流的信用卡網路。有很多工作正在開展以提升其局限性，而且未來的要求已經眾所周知。自從創始以來，Bitcoin 網路的每一個方面都在成熟、優化和專業化，而且可以預見，在數年之內這種狀況還會繼續。隨著流量的增加，越來越多的 Bitcoin 用戶可能會使用輕量級客戶端，而且全網路的節點可能會成為一個更加專門化的服務。要瞭解更多詳情，請檢視 Wiki 上的<a href=\"https://en.bitcoin.it/wiki/Scalability\">可擴展性</a> 頁面。"
     legal: "法律資訊"
     islegal: "Bitcoin 是否合法？"
-    islegaltxt1: "據我們所知，在大部份的行政區，司法部門都<a href=\"http://bitlegal.io/\">不認定 Bitcoin 為非法的</a> 。然而，一些行政區(例如阿根廷和俄羅斯) 很嚴厲地限制或禁止外國貨幣。其他行政區(例如泰國) 可能會限制頒發執照給像 Bitcoin 交換這樣的實體。"
+    islegaltxt1: "據我們所知，在大部份的行政區，司法部門都<a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">不認定 Bitcoin 為非法的</a> 。然而，一些行政區(例如阿根廷和俄羅斯) 很嚴厲地限制或禁止外國貨幣。其他行政區(例如泰國) 可能會限制頒發執照給像 Bitcoin 交換這樣的實體。"
     islegaltxt2: "不同的行政區的官員們正在採取措施給個人或企業提供有關如何把這種新技術和官方的、制定好的金融系統融合的規定。例如，美國財政部門的一個官方機構 Financial Crimes Enforcement Network (FinCEN) 就頒發了無法律約束力的指南手冊，解釋它如何界定典型的與虛擬貨幣有關的活動。"
     illegalactivities: "Bitcoin 會不會被用於非法活動？"
     illegalactivitiestxt1: "Bitcoin 是錢，而錢總是既可以用於合法目的也可以用於非法目的。鈔票、信用卡和現在的銀行系統在被用於非法活動方面廣泛地超過了 Bitcoin 。Bitcoin 可以給支付系統來帶巨大的創新，而這種創新的好處通常被認為是比它可能帶來的壞處要多的。"
@@ -658,7 +658,7 @@ zh_TW:
     experimental: "Bitcoin 仍在實驗階段"
     experimentaltxt: "Bitcoin 是持續持續發展中的實驗性新貨幣。雖然它隨著使用時間的增長已經更成熟，但你仍須知道 Bitcoin 是一項新發明，它正探索著沒有人嘗試過的領域。因此，我們也無法預知它的未來走向。"
     tax: "政府稅收和規定"
-    taxtxt: "Bitcoin 並非官方貨幣。也即是說，大部分的稽稅機關仍會要求您針對任何有價值的收入、營業所得、薪水、資產利得來納稅，包括 Bitcoin。確保遵守您的政府和/或當地市政當局頒發的<a href=\"http://bitlegal.io/\">納稅和其他強制法律法規</a>是您的責任。"
+    taxtxt: "Bitcoin 並非官方貨幣。也即是說，大部分的稽稅機關仍會要求您針對任何有價值的收入、營業所得、薪水、資產利得來納稅，包括 Bitcoin。確保遵守您的政府和/或當地市政當局頒發的<a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">納稅和其他強制法律法規</a>是您的責任。"
   layout:
     menu-about-us: "關於 bitcoin.org"
     menu-bitcoin-for-businesses: 商務

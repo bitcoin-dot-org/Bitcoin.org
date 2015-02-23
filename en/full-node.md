@@ -144,7 +144,7 @@ have an easy-to-use node.
 ### Possible Problems
 
 * **Legal:** Bitcoin use is [prohibited or restricted in some
-  areas.](http://bitlegal.io/)
+  areas.](https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country)
 
 * **Bandwidth limits**: Some Internet plans will charge an additional
   amount for any excess upload bandwidth used that isn't included in
