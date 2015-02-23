@@ -272,21 +272,55 @@ issue][] if a Bitcoin meetup event isn't displayed.)
 
 ### Release Notes
 
-Release notes should be placed in `_releases/YYYY-MM-DD-VERSION.md` and adhere to this format:
+To create a new Bitcoin Core release, create a new file in the
+`_releases/` directory. Any file name ending in `.md` is fine, but we
+recommend naming it after the release, such as `0.10.0.md`
 
-```
+Then copy in the following YAML header (the part between the three dashes, ---):
+~~~
 ---
-title: Bitcoin Core version 0.9.0 released
+## Required value below populates the %v variable (note: % needs to be escaped in YAML if it starts a value)
+required_version: 0.10.0
+## Optional release date.  May be filled in hours/days after a release
+optional_date: 2015-02-16
+## Optional title.  If not set, default is: Bitcoin Core version %v released
+optional_title: Bitcoin Core version %v released
+## Optional magnet link.  To get it, open the torrent in a good BitTorrent client
+## and View Details, or install the transmission-cli Debian/Ubuntu package
+## and run: transmission-show -m <torrent file>
+#
+## Link should be enclosed in quotes and start with: "magnet:?
+optional_magnetlink:
+
+## The --- below ends the YAML header. After that, paste the release notes.
+## Warning: this site's Markdown parser commonly requires you make two
+## changes to the release notes from the Bitcoin Core source tree:
+##
+## 1. Make sure both ordered and unordered lists are preceeded by an empty
+## (whitespace only) line, like the empty line before this list item.
+##
+## 2. Place URLs inside angle brackets, like <http://bitcoin.org/bin>
+
 ---
-
-Bitcoin Core v0.9.0 is now available for download at
-<https://bitcoin.org/bin/0.9.0/>
-
-...
 ```
-* `VERSION` is used to define the version and construct the URL. It should adhere to this format: `v0.3.24`.
-* `title: ...` will be used as the title.
-* `magnetlink: ...` (optional) the urlencoded torrent magnet link on the download page.
+
+Then start at the top of the YAML header and read the comments, filling
+in and replacing information as necessary, and then reformatting the
+release notes (if necessary) as described by the last lines of the YAML
+header.
+
+Download links will automatical be set to the defaults using the current
+release version number, but if you need to change any download URL, edit
+the file `_templates/download.html`
+
+[Once Travis is enabled] You can then create a pull request to the
+master branch and Travis CI will automatically build it and make sure
+the links you provided return a "200 OK" HTTP header. (The actual files
+will not be downloaded to save bandwidth.) Alternatively, you can build
+the site locally with `make all` to run the same quality assurance tests.
+
+The file can be edited later to add any optional information (such as a
+release date) that you didn't have when you created the file.
 
 ### Alerts
 
