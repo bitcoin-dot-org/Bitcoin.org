@@ -17,31 +17,43 @@ The `importaddress` RPC {{summary_importAddress}}
 
 *Parameter #1---the address or pubkey script to watch*
 
-| Name               | Type                   | Presence                    | Description
-|--------------------|------------------------|-----------------------------|----------------
-| Address or Script  | string (base58 or hex) | Required<br>(exactly 1)     | Either a P2PKH or P2SH address encoded in base58check, or a pubkey script encoded as hex
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Address or Script"
+  t: "string (base58 or hex)"
+  p: "Required<br>(exactly 1)"
+  d: "Either a P2PKH or P2SH address encoded in base58check, or a pubkey script encoded as hex"
+
+{% enditemplate %}
 
 *Parameter #2---The account into which to place the address or pubkey script*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Account            | string          | Optional<br>(0 or 1)        | An account name into which the address should be placed.  Default is the default account, an empty string("")
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Account"
+  t: "string"
+  p: "Optional<br>(0 or 1)"
+  d: "An account name into which the address should be placed.  Default is the default account, an empty string(\"\")"
+
+{% enditemplate %}
 
 *Parameter #3---whether to rescan the block chain*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Rescan             | bool            | Optional<br>(0 or 1)        | Set to `true` (the default) to rescan the entire local block database for transactions affecting any address or pubkey script in the wallet (including transaction affecting the newly-added address or pubkey script).  Set to `false` to not rescan the block database (rescanning can be performed at any time by restarting Bitcoin Core with the `-rescan` command-line argument).  Rescanning may take several minutes.  Notes: if the address or pubkey script is already in the wallet, the block database will not be rescanned even if this parameter is set
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Rescan"
+  t: "bool"
+  p: "Optional<br>(0 or 1)"
+  d: "Set to `true` (the default) to rescan the entire local block database for transactions affecting any address or pubkey script in the wallet (including transaction affecting the newly-added address or pubkey script).  Set to `false` to not rescan the block database (rescanning can be performed at any time by restarting Bitcoin Core with the `-rescan` command-line argument).  Rescanning may take several minutes.  Notes: if the address or pubkey script is already in the wallet, the block database will not be rescanned even if this parameter is set"
+
+{% enditemplate %}
 
 *Result---`null` on success*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | null            | Required<br>(exactly 1)     | If the address or pubkey script is added to the wallet (or is already part of the wallet), JSON `null` will be returned
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "null"
+  p: "Required<br>(exactly 1)"
+  d: "If the address or pubkey script is added to the wallet (or is already part of the wallet), JSON `null` will be returned"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

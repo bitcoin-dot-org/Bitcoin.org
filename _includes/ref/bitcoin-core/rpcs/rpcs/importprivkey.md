@@ -17,31 +17,43 @@ The `importprivkey` RPC {{summary_importPrivKey}}
 
 *Parameter #1---the private key to import*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| Private Key        | string (base58) | Required<br>(exactly 1)     | The private key to import into the wallet encoded in base58check using wallet import format (WIF)
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Private Key"
+  t: "string (base58)"
+  p: "Required<br>(exactly 1)"
+  d: "The private key to import into the wallet encoded in base58check using wallet import format (WIF)"
+
+{% enditemplate %}
 
 *Parameter #2---the account into which the key should be placed*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| Account            | string          | Optional<br>(0 or 1)        | The name of an account to which transactions involving the key should be assigned.  The default is the default account, an empty string ("")
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Account"
+  t: "string"
+  p: "Optional<br>(0 or 1)"
+  d: "The name of an account to which transactions involving the key should be assigned.  The default is the default account, an empty string (\"\")"
+
+{% enditemplate %}
 
 *Parameter #3---whether to rescan the block chain*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Rescan             | bool            | Optional<br>(0 or 1)        | Set to `true` (the default) to rescan the entire local block database for transactions affecting any address or pubkey script in the wallet (including transaction affecting the newly-added address for this private key).  Set to `false` to not rescan the block database (rescanning can be performed at any time by restarting Bitcoin Core with the `-rescan` command-line argument).  Rescanning may take several minutes.  Notes: if the address for this key is already in the wallet, the block database will not be rescanned even if this parameter is set
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Rescan"
+  t: "bool"
+  p: "Optional<br>(0 or 1)"
+  d: "Set to `true` (the default) to rescan the entire local block database for transactions affecting any address or pubkey script in the wallet (including transaction affecting the newly-added address for this private key).  Set to `false` to not rescan the block database (rescanning can be performed at any time by restarting Bitcoin Core with the `-rescan` command-line argument).  Rescanning may take several minutes.  Notes: if the address for this key is already in the wallet, the block database will not be rescanned even if this parameter is set"
+
+{% enditemplate %}
 
 *Result---`null` on success*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | null            | Required<br>(exactly 1)     | If the private key is added to the wallet (or is already part of the wallet), JSON `null` will be returned
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "null"
+  p: "Required<br>(exactly 1)"
+  d: "If the private key is added to the wallet (or is already part of the wallet), JSON `null` will be returned"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

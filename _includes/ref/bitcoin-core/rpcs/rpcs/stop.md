@@ -17,10 +17,13 @@ The `stop` RPC {{summary_stop}}
 
 *Result---the server is safely shut down*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | string          | Required<br>(exactly 1)     | The string "Bitcoin server stopping"
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The string \"Bitcoin server stopping\""
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

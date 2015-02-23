@@ -19,16 +19,43 @@ The `getwalletinfo` RPC {{summary_getWalletInfo}}
 
 *Result---information about the wallet*
 
-| Name                  | Type              | Presence                    | Description
-|-----------------------|-------------------|-----------------------------|----------------
-| `result`              | object            | Required<br>(exactly 1)     | An object describing the wallet
-| →<br>`walletversion`  | number (int)      | Required<br>(exactly 1)     | The version number of the wallet
-| →<br>`balance`        | number (bitcoins) | Required<br>(exactly 1)     | The balance of the wallet.  The same as returned by the `getbalance` RPC with default parameters
-| →<br>`txcount`        | number (int)      | Required<br>(exactly 1)     | The total number of transactions in the wallet (both spends and receives)
-| →<br>`keypoololdest`  | number (int)      | Required<br>(exactly 1)     | The date as Unix epoch time when the oldest key in the wallet key pool was created; useful for only scanning blocks created since this date for transactions
-| →<br>`keypoolsize`    | number (int)      | Required<br>(exactly 1)     | The number of keys in the wallet keypool
-| →<br>`unlocked_until` | number (int)      | Optional<br>(0 or 1)        | Only returned if the wallet was encrypted with the `encryptwallet` RPC. A Unix epoch date when the wallet will be locked, or `0` if the wallet is currently locked
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "object"
+  p: "Required<br>(exactly 1)"
+  d: "An object describing the wallet"
+
+- n: "→<br>`walletversion`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The version number of the wallet"
+
+- n: "→<br>`balance`"
+  t: "number (bitcoins)"
+  p: "Required<br>(exactly 1)"
+  d: "The balance of the wallet.  The same as returned by the `getbalance` RPC with default parameters"
+
+- n: "→<br>`txcount`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The total number of transactions in the wallet (both spends and receives)"
+
+- n: "→<br>`keypoololdest`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The date as Unix epoch time when the oldest key in the wallet key pool was created; useful for only scanning blocks created since this date for transactions"
+
+- n: "→<br>`keypoolsize`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The number of keys in the wallet keypool"
+
+- n: "→<br>`unlocked_until`"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "Only returned if the wallet was encrypted with the `encryptwallet` RPC. A Unix epoch date when the wallet will be locked, or `0` if the wallet is currently locked"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

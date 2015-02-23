@@ -15,17 +15,23 @@ The `help` RPC {{summary_help}}
 
 *Parameter---the name of the RPC to get help for*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| RPC                | string          | Optional<br>(0 or 1)        | The name of the RPC to get help for.  If omitted, Bitcoin Core 0.9x will display an alphabetical list of commands; Bitcoin Core 0.10.0 will display a categorized list of commands
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "RPC"
+  t: "string"
+  p: "Optional<br>(0 or 1)"
+  d: "The name of the RPC to get help for.  If omitted, Bitcoin Core 0.9x will display an alphabetical list of commands; Bitcoin Core 0.10.0 will display a categorized list of commands"
+
+{% enditemplate %}
 
 *Result---a list of RPCs or detailed help for a specific RPC*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | string          | Required<br>(exactly 1)     | The help text for the specified RPC or the list of commands.  The `bitcoin-cli` command will parse this text and format it as human-readable text
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The help text for the specified RPC or the list of commands.  The `bitcoin-cli` command will parse this text and format it as human-readable text"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

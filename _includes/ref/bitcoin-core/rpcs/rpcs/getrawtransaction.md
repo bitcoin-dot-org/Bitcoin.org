@@ -17,43 +17,74 @@ The `getrawtransaction` RPC {{summary_getRawTransaction}}
 
 *Parameter #1---the TXID of the transaction to get*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| TXID               | string (hex)    | Required<br>(exactly 1)     | The TXID of the transaction to get, encoded as hex in RPC byte order
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "TXID"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The TXID of the transaction to get, encoded as hex in RPC byte order"
+
+{% enditemplate %}
 
 *Parameter #2---whether to get the serialized or decoded transaction*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Verbose            | number (int)    | Optional<br>(0 or 1)        | Set to `0` (the default) to return the serialized transaction as hex.  Set to `1` to return a decoded transaction
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Verbose"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "Set to `0` (the default) to return the serialized transaction as hex.  Set to `1` to return a decoded transaction"
+
+{% enditemplate %}
 
 *Result (if transaction not found)---`null`*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | null            | Required<br>(exactly 1)     | If the transaction wasn't found, the result will be JSON `null`.  This can occur because the transaction doesn't exist in the block chain or memory pool, or because it isn't part of the transaction index.  See the Bitcoin Core `-help` entry for `-txindex`
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "null"
+  p: "Required<br>(exactly 1)"
+  d: "If the transaction wasn't found, the result will be JSON `null`.  This can occur because the transaction doesn't exist in the block chain or memory pool, or because it isn't part of the transaction index.  See the Bitcoin Core `-help` entry for `-txindex`"
+
+{% enditemplate %}
 
 *Result (if verbose=`0`)---the serialized transaction*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | string (hex)    | Required<br>(exactly 1)     | If the transaction was found, this will be the serialized transaction encoded as hex
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "If the transaction was found, this will be the serialized transaction encoded as hex"
+
+{% enditemplate %}
 
 *Result (if verbose=`1`)---the decoded transaction*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| `result`             | object          | Required<br>(exactly 1)     | If the transaction was found, this will be an object describing it
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "object"
+  p: "Required<br>(exactly 1)"
+  d: "If the transaction was found, this will be an object describing it"
+
 {{INCLUDE_DECODE_RAW_TRANSACTION}}
-| →<br>`blockhash`     | string (hex)    | Optional<br>(0 or 1)        | If the transaction has been included in a block on the local best block chain, this is the hash of that block encoded as hex in RPC byte order
-| →<br>`confirmations` | number (int)    | Required<br>(exactly 1)     | If the transaction has been included in a block on the local best block chain, this is how many confirmations it has.  Otherwise, this is `0`
-| →<br>`time`          | number (int)    | Optional<br>(0 or 1)        | If the transaction has been included in a block on the local best block chain, this is the block header time of that block (may be in the future)
-| →<br>`blocktime`     | number (int)    | Optional<br>(0 or 1)        | This field is currently identical to the time field described above
-{:.ntpd}
+- n: "→<br>`blockhash`"
+  t: "string (hex)"
+  p: "Optional<br>(0 or 1)"
+  d: "If the transaction has been included in a block on the local best block chain, this is the hash of that block encoded as hex in RPC byte order"
+
+- n: "→<br>`confirmations`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "If the transaction has been included in a block on the local best block chain, this is how many confirmations it has.  Otherwise, this is `0`"
+
+- n: "→<br>`time`"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "If the transaction has been included in a block on the local best block chain, this is the block header time of that block (may be in the future)"
+
+- n: "→<br>`blocktime`"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "This field is currently identical to the time field described above"
+
+{% enditemplate %}
 
 *Examples from Bitcoin Core 0.10.0*
 

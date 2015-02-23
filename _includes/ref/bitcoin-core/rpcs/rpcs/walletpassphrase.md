@@ -21,24 +21,33 @@ value of the passphrase parameter).
 
 *Parameter #1---the passphrase*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| Passphrase         | string          | Required<br>(exactly 1)     | The passphrase that unlocks the wallet
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Passphrase"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The passphrase that unlocks the wallet"
+
+{% enditemplate %}
 
 *Parameter #2---the number of seconds to leave the wallet unlocked*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| Seconds            | number (int)    | Required<br>(exactly 1)     | The number of seconds after which the decryption key will be automatically deleted from memory
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Seconds"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The number of seconds after which the decryption key will be automatically deleted from memory"
+
+{% enditemplate %}
 
 *Result---`null` on success*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| `result`           | null            | Required<br>(exactly 1)     | Always set to JSON `null`
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "null"
+  p: "Required<br>(exactly 1)"
+  d: "Always set to JSON `null`"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

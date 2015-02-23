@@ -20,26 +20,93 @@ Core.  Use the RPCs listed in the See Also subsection below instead.
 
 *Result---information about the node and network*
 
-| Name                   | Type              | Presence                    | Description
-|------------------------|-------------------|-----------------------------|----------------
-| `result`               | object            | Required<br>(exactly 1)     | Information about this node and the network
-| →<br>`version`         | number (int)      | Required<br>(exactly 1)     | This node's version of Bitcoin Core in its internal integer format.  For example, Bitcoin Core 0.9.2 has the integer version number 90200
-| →<br>`protocolversion` | number (int)      | Required<br>(exactly 1)     | The protocol version number used by this node.  See the [protocol versions section][section protocol versions] for more information
-| →<br>`walletversion`   | number (int)      | Optional<br>(0 or 1)        | The version number of the wallet.  Only returned if wallet support is enabled
-| →<br>`balance`         | number (bitcoins) | Optional<br>(0 or 1)        | The balance of the wallet in bitcoins.  Only returned if wallet support is enabled
-| →<br>`blocks`          | number (int)      | Required<br>(exactly 1)     | The number of blocks in the local best block chain.  A new node with only the hardcoded genesis block will return `0`
-| →<br>`timeoffset`      | number (int)      | Required<br>(exactly 1)     | The offset of the node's clock from the computer's clock (both in UTC) in seconds.  The offset may be up to 4200 seconds (70 minutes)
-| →<br>`connections`     | number (int)      | Required<br>(exactly 1)     | The total number of open connections (both outgoing and incoming) between this node and other nodes
-| →<br>`proxy`           | string            | Required<br>(exactly 1)     | The hostname/IP address and port number of the proxy, if set, or an empty string if unset
-| →<br>`difficulty`      | number (real)     | Required<br>(exactly 1)     | The difficulty of the highest-height block in the local best block chain
-| →<br>`testnet`         | bool              | Required<br>(exactly 1)     | *Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if this node is on testnet; set to `false` if this node is on mainnet or a regtest
-| →<br>`keypoololdest`   | number (int)      | Optional<br>(0 or 1)        | The date as Unix epoch time when the oldest key in the wallet key pool was created; useful for only scanning blocks created since this date for transactions.  Only returned if wallet support is enabled
-| →<br>`keypoolsize`     | number (int)      | Optional<br>(0 or 1)        | The number of keys in the wallet keypool.  Only returned if wallet support is enabled
-| →<br>`paytxfee`        | number (bitcoins) | Optional<br>(0 or 1)        | The minimum fee to pay per kilobyte of transaction; may be `0`.  Only returned if wallet suuport is enabled
-| →<br>`relayfee`        | number (bitcoins) | Required<br>(exactly 1)     | The minimum fee a low-priority transaction must pay in order for this node to accept it into its memory pool
-| →<br>`unlocked_until`  | number (int)      | Optional<br>(0 or 1)        | The Unix epoch time when the wallet will automatically re-lock.  Only displayed if wallet encryption is enabled.  Set to `0` if wallet is currently locked
-| →<br>`errors`          | string            | Required<br>(exactly 1)     | A plain-text description of any errors this node has encountered or detected.  If there are no errors, an empty string will be returned.  This is not related to the JSON-RPC `error` field
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "object"
+  p: "Required<br>(exactly 1)"
+  d: "Information about this node and the network"
+
+- n: "→<br>`version`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "This node's version of Bitcoin Core in its internal integer format.  For example, Bitcoin Core 0.9.2 has the integer version number 90200"
+
+- n: "→<br>`protocolversion`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The protocol version number used by this node.  See the [protocol versions section][section protocol versions] for more information"
+
+- n: "→<br>`walletversion`"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "The version number of the wallet.  Only returned if wallet support is enabled"
+
+- n: "→<br>`balance`"
+  t: "number (bitcoins)"
+  p: "Optional<br>(0 or 1)"
+  d: "The balance of the wallet in bitcoins.  Only returned if wallet support is enabled"
+
+- n: "→<br>`blocks`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The number of blocks in the local best block chain.  A new node with only the hardcoded genesis block will return `0`"
+
+- n: "→<br>`timeoffset`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The offset of the node's clock from the computer's clock (both in UTC) in seconds.  The offset may be up to 4200 seconds (70 minutes)"
+
+- n: "→<br>`connections`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The total number of open connections (both outgoing and incoming) between this node and other nodes"
+
+- n: "→<br>`proxy`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The hostname/IP address and port number of the proxy, if set, or an empty string if unset"
+
+- n: "→<br>`difficulty`"
+  t: "number (real)"
+  p: "Required<br>(exactly 1)"
+  d: "The difficulty of the highest-height block in the local best block chain"
+
+- n: "→<br>`testnet`"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if this node is on testnet; set to `false` if this node is on mainnet or a regtest"
+
+- n: "→<br>`keypoololdest`"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "The date as Unix epoch time when the oldest key in the wallet key pool was created; useful for only scanning blocks created since this date for transactions.  Only returned if wallet support is enabled"
+
+- n: "→<br>`keypoolsize`"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "The number of keys in the wallet keypool.  Only returned if wallet support is enabled"
+
+- n: "→<br>`paytxfee`"
+  t: "number (bitcoins)"
+  p: "Optional<br>(0 or 1)"
+  d: "The minimum fee to pay per kilobyte of transaction; may be `0`.  Only returned if wallet suuport is enabled"
+
+- n: "→<br>`relayfee`"
+  t: "number (bitcoins)"
+  p: "Required<br>(exactly 1)"
+  d: "The minimum fee a low-priority transaction must pay in order for this node to accept it into its memory pool"
+
+- n: "→<br>`unlocked_until`"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "The Unix epoch time when the wallet will automatically re-lock.  Only displayed if wallet encryption is enabled.  Set to `0` if wallet is currently locked"
+
+- n: "→<br>`errors`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "A plain-text description of any errors this node has encountered or detected.  If there are no errors, an empty string will be returned.  This is not related to the JSON-RPC `error` field"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0 with wallet support enabled*
 

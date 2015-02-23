@@ -19,10 +19,13 @@ The `getunconfirmedbalance` RPC {{summary_getUnconfirmedBalance}}
 
 *Result---the balance of unconfirmed transactions paying this wallet*
 
-| Name               | Type              | Presence                    | Description
-|--------------------|-------------------|-----------------------------|----------------
-| `result`           | number (bitcoins) | Required<br>(exactly 1)     | The total number of bitcoins paid to this wallet in unconfirmed transactions
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "number (bitcoins)"
+  p: "Required<br>(exactly 1)"
+  d: "The total number of bitcoins paid to this wallet in unconfirmed transactions"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

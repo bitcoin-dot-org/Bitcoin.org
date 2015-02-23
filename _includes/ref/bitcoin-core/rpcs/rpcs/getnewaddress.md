@@ -17,17 +17,23 @@ The `getnewaddress` RPC {{summary_getNewAddress}}
 
 *Parameter #1---an account name*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Account            | string          | Optional<br>(0 or 1)        | The name of the account to put the address in.  The default is the default account, an empty string ("")
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Account"
+  t: "string"
+  p: "Optional<br>(0 or 1)"
+  d: "The name of the account to put the address in.  The default is the default account, an empty string (\"\")"
+
+{% enditemplate %}
 
 *Result---a bitcoin address never previously returned*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | string (base58) | Required<br>(exactly 1)     | A P2PKH address which has not previously been returned by this RPC.  The address will be marked as a receiving address in the wallet.  The address may already have been part of the keypool, so other RPCs such as the `dumpwallet` RPC may have disclosed it previously.  If the wallet is unlocked, its keypool will also be filled to its max (by default, 100 unused keys).  If the wallet is locked and its keypool is empty, this RPC will fail
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "string (base58)"
+  p: "Required<br>(exactly 1)"
+  d: "A P2PKH address which has not previously been returned by this RPC.  The address will be marked as a receiving address in the wallet.  The address may already have been part of the keypool, so other RPCs such as the `dumpwallet` RPC may have disclosed it previously.  If the wallet is unlocked, its keypool will also be filled to its max (by default, 100 unused keys).  If the wallet is locked and its keypool is empty, this RPC will fail"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

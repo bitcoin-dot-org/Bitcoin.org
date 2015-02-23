@@ -17,17 +17,23 @@ The `getaccount` RPC {{summary_getAccount}}
 
 *Parameter #1---a Bitcoin address*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Address            | string (base58) | Required<br>(exactly 1)     | A P2PKH or P2SH Bitcoin address belonging either to a specific account or the default account ("")
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Address"
+  t: "string (base58)"
+  p: "Required<br>(exactly 1)"
+  d: "A P2PKH or P2SH Bitcoin address belonging either to a specific account or the default account (\"\")"
+
+{% enditemplate %}
 
 *Result---an account name*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | string          | Required<br>(exactly 1)     | The name of an account, or an empty string ("", the default account)
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The name of an account, or an empty string (\"\", the default account)"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

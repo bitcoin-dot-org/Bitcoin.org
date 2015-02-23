@@ -17,33 +17,128 @@ The `getpeerinfo` RPC {{summary_getPeerInfo}}
 
 *Result---information about each currently-connected network node*
 
-| Name                    | Type              | Presence                    | Description
-|-------------------------|-------------------|-----------------------------|----------------
-| `result`                | array             | Required<br>(exactly 1)     | An array of objects each describing one connected node.  If there are no connections, the array will be empty
-| →<br>Node               | object            | Optional<br>(0 or more)     | An object describing a particular connected node
-| → →<br>`id`             | number (int)      | Required<br>(exactly 1)     | *Added in Bitcoin Core 0.10.0*<br><br>The node's index number in the local node address database
-| → →<br>`addr`           | string            | Required<br>(exactly 1)     | The IP address and port number used for the connection to the remote node
-| → →<br>`addrlocal`      | string            | Optional<br>(0 or 1)        | Our IP address and port number according to the remote node.  May be incorrect due to error or lying.  Many SPV nodes set this to `127.0.0.1:8333`
-| → →<br>`services`       | string (hex)      | Required<br>(exactly 1)     | The services advertised by the remote node in its `version` message
-| → →<br>`lastsend`       | number (int)      | Required<br>(exactly 1)     | The Unix epoch time when we last successfully sent data to the TCP socket for this node
-| → →<br>`lastrecv`       | number (int)      | Required<br>(exactly 1)     | The Unix epoch time when we last received data from this node
-| → →<br>`bytessent`      | number (int)      | Required<br>(exactly 1)     | The total number of bytes we've sent to this node
-| → →<br>`bytesrecv`      | number (int)      | Required<br>(exactly 1)     | The total number of bytes we've received from this node
-| → →<br>`conntime`       | number (int)      | Required<br>(exactly 1)     | The Unix epoch time when we connected to this node
-| → →<br>`pingtime`       | number (real)     | Required<br>(exactly 1)     | The number of seconds this node took to respond to our last P2P `ping` message
-| → →<br>`pingwait`       | number (real)     | Optional<br>(0 or 1)        | The number of seconds we've been waiting for this node to respond to a P2P `ping` message.  Only shown if there's an outstanding `ping` message
-| → →<br>`version`        | number (int)      | Required<br>(exactly 1)     | The protocol version number used by this node.  See the [protocol versions section][section protocol versions] for more information
-| → →<br>`subver`         | string            | Required<br>(exactly 1)     | The user agent this node sends in its `version` message.  This string will have been sanitized to prevent corrupting the JSON results.  May be an empty string
-| → →<br>`inbound`        | bool              | Required<br>(exactly 1)     | Set to `true` if this node connected to us; set to `false` if we connected to this node
-| → →<br>`startingheight` | number (int)      | Required<br>(exactly 1)     | The height of the remote node's block chain when it connected to us as reported in its `version` message
-| → →<br>`banscore`       | number (int)      | Required<br>(exactly 1)     | The ban score we've assigned the node based on any misbehavior it's made.  By default, Bitcoin Core disconnects when the ban score reaches `100`
-| → →<br>`synced_headers` | number (int)      | Required<br>(exactly 1)     | *Added in Bitcoin Core 0.10.0*<br><br>The highest-height header we have in common with this node based the last P2P `headers` message it sent us.  If a `headers` message has not been received, this will be set to `-1`
-| → →<br>`synced_blocks`  | number (int)      | Required<br>(exactly 1)     | *Added in Bitcoin Core 0.10.0*<br><br>The highest-height block we have in common with this node based on P2P `inv` messages this node sent us.  If no block `inv` messages have been received from this node, this will be set to `-1`
-| → →<br>`syncnode`       | bool              | Required<br>(exactly 1)     | *Removed in Bitcoin Core 0.10.0*<br><br>Whether we're using this node as our syncnode during initial block download
-| → →<br>`inflight`       | array             | Required<br>(exactly 1)     | *Added in Bitcoin Core 0.10.0*<br><br>An array of blocks which have been requested from this peer.  May be empty
-| → → →<br>Blocks         | number (int)      | Optional<br>(0 or more)     | The height of a block being requested from the remote peer
-| → →<br>`whitelisted`    | bool              | Required<br>(exactly 1)     | *Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the remote peer has been whitelisted; otherwise, set to `false`.  Whitelisted peers will not be banned if their ban score exceeds the maximum (100 by default).  By default, peers connecting from localhost are whitelisted
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "array"
+  p: "Required<br>(exactly 1)"
+  d: "An array of objects each describing one connected node.  If there are no connections, the array will be empty"
+
+- n: "→<br>Node"
+  t: "object"
+  p: "Optional<br>(0 or more)"
+  d: "An object describing a particular connected node"
+
+- n: "→ →<br>`id`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.10.0*<br><br>The node's index number in the local node address database"
+
+- n: "→ →<br>`addr`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The IP address and port number used for the connection to the remote node"
+
+- n: "→ →<br>`addrlocal`"
+  t: "string"
+  p: "Optional<br>(0 or 1)"
+  d: "Our IP address and port number according to the remote node.  May be incorrect due to error or lying.  Many SPV nodes set this to `127.0.0.1:8333`"
+
+- n: "→ →<br>`services`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The services advertised by the remote node in its `version` message"
+
+- n: "→ →<br>`lastsend`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The Unix epoch time when we last successfully sent data to the TCP socket for this node"
+
+- n: "→ →<br>`lastrecv`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The Unix epoch time when we last received data from this node"
+
+- n: "→ →<br>`bytessent`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The total number of bytes we've sent to this node"
+
+- n: "→ →<br>`bytesrecv`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The total number of bytes we've received from this node"
+
+- n: "→ →<br>`conntime`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The Unix epoch time when we connected to this node"
+
+- n: "→ →<br>`pingtime`"
+  t: "number (real)"
+  p: "Required<br>(exactly 1)"
+  d: "The number of seconds this node took to respond to our last P2P `ping` message"
+
+- n: "→ →<br>`pingwait`"
+  t: "number (real)"
+  p: "Optional<br>(0 or 1)"
+  d: "The number of seconds we've been waiting for this node to respond to a P2P `ping` message.  Only shown if there's an outstanding `ping` message"
+
+- n: "→ →<br>`version`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The protocol version number used by this node.  See the [protocol versions section][section protocol versions] for more information"
+
+- n: "→ →<br>`subver`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The user agent this node sends in its `version` message.  This string will have been sanitized to prevent corrupting the JSON results.  May be an empty string"
+
+- n: "→ →<br>`inbound`"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "Set to `true` if this node connected to us; set to `false` if we connected to this node"
+
+- n: "→ →<br>`startingheight`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The height of the remote node's block chain when it connected to us as reported in its `version` message"
+
+- n: "→ →<br>`banscore`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The ban score we've assigned the node based on any misbehavior it's made.  By default, Bitcoin Core disconnects when the ban score reaches `100`"
+
+- n: "→ →<br>`synced_headers`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.10.0*<br><br>The highest-height header we have in common with this node based the last P2P `headers` message it sent us.  If a `headers` message has not been received, this will be set to `-1`"
+
+- n: "→ →<br>`synced_blocks`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.10.0*<br><br>The highest-height block we have in common with this node based on P2P `inv` messages this node sent us.  If no block `inv` messages have been received from this node, this will be set to `-1`"
+
+- n: "→ →<br>`syncnode`"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "*Removed in Bitcoin Core 0.10.0*<br><br>Whether we're using this node as our syncnode during initial block download"
+
+- n: "→ →<br>`inflight`"
+  t: "array"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.10.0*<br><br>An array of blocks which have been requested from this peer.  May be empty"
+
+- n: "→ → →<br>Blocks"
+  t: "number (int)"
+  p: "Optional<br>(0 or more)"
+  d: "The height of a block being requested from the remote peer"
+
+- n: "→ →<br>`whitelisted`"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the remote peer has been whitelisted; otherwise, set to `false`.  Whitelisted peers will not be banned if their ban score exceeds the maximum (100 by default).  By default, peers connecting from localhost are whitelisted"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

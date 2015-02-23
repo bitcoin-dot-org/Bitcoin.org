@@ -17,17 +17,48 @@ The `gettxoutsetinfo` RPC {{summary_getTxOutSetInfo}}
 
 *Result---statistics about the UTXO set*
 
-| Name                    | Type              | Presence                    | Description
-|-------------------------|-------------------|-----------------------------|----------------
-| `result`                | object            | Required<br>(exactly 1)     | Information about the UTXO set
-| →<br>`height`           | number (int)      | Required<br>(exactly 1)     | The height of the local best block chain.  A new node with only the hardcoded genesis block will have a height of 0
-| →<br>`bestblock`        | string (hex)      | Required<br>(exactly 1)     | The hash of the header of the highest block on the local best block chain, encoded as hex in RPC byte order
-| →<br>`transactions`     | number (int)      | Required<br>(exactly 1)     | The number of transactions with unspent outputs
-| →<br>`txouts`           | number (int)      | Required<br>(exactly 1)     | The number of unspent transaction outputs
-| →<br>`bytes_serialized` | number (int)      | Required<br>(exactly 1)     | The size of the serialized UTXO set in bytes; not counting overhead, this is the size of the `chainstate` directory in the Bitcoin Core configuration directory
-| →<br>`hash_serialized`  | string (hex)      | Required<br>(exactly 1)     | A SHA256(SHA256()) hash of the serialized UTXO set; useful for comparing two nodes to see if they have the same set (they should, if they always used the same serialization format and currently have the same best block).  The hash is encoded as hex in RPC byte order
-| →<br>`total_amount`     | number (bitcoins) | Required<br>(exactly 1)     | The total number of bitcoins in the UTXO set
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "object"
+  p: "Required<br>(exactly 1)"
+  d: "Information about the UTXO set"
+
+- n: "→<br>`height`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The height of the local best block chain.  A new node with only the hardcoded genesis block will have a height of 0"
+
+- n: "→<br>`bestblock`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The hash of the header of the highest block on the local best block chain, encoded as hex in RPC byte order"
+
+- n: "→<br>`transactions`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The number of transactions with unspent outputs"
+
+- n: "→<br>`txouts`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The number of unspent transaction outputs"
+
+- n: "→<br>`bytes_serialized`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The size of the serialized UTXO set in bytes; not counting overhead, this is the size of the `chainstate` directory in the Bitcoin Core configuration directory"
+
+- n: "→<br>`hash_serialized`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "A SHA256(SHA256()) hash of the serialized UTXO set; useful for comparing two nodes to see if they have the same set (they should, if they always used the same serialization format and currently have the same best block).  The hash is encoded as hex in RPC byte order"
+
+- n: "→<br>`total_amount`"
+  t: "number (bitcoins)"
+  p: "Required<br>(exactly 1)"
+  d: "The total number of bitcoins in the UTXO set"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

@@ -15,24 +15,33 @@ The `addnode` RPC {{summary_addNode}}
 
 *Parameter #1---hostname/IP address and port of node to add or remove*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Node               | string          | Required<br>(exactly 1)     | The node to add as a string in the form of `<IP address>:<port>`.  The IP address may be a hostname resolvable through DNS, an IPv4 address, an IPv4-as-IPv6 address, or an IPv6 address
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Node"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The node to add as a string in the form of `<IP address>:<port>`.  The IP address may be a hostname resolvable through DNS, an IPv4 address, an IPv4-as-IPv6 address, or an IPv6 address"
+
+{% enditemplate %}
 
 *Parameter #2---whether to add or remove the node, or to try only once to connect*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Command            | string          | Required<br>(exactly 1)     | What to do with the IP address above.  Options are:<br>• `add` to add a node to the addnode list.  This will not connect immediately if the outgoing connection slots are full<br>• `remove` to remove a node from the list.  If currently connected, this will disconnect immediately<br>• `onetry` to immediately attempt connection to the node even if the outgoing connection slots are full; this will only attempt the connection once
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Command"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "What to do with the IP address above.  Options are:<br>• `add` to add a node to the addnode list.  This will not connect immediately if the outgoing connection slots are full<br>• `remove` to remove a node from the list.  If currently connected, this will disconnect immediately<br>• `onetry` to immediately attempt connection to the node even if the outgoing connection slots are full; this will only attempt the connection once"
+
+{% enditemplate %}
 
 *Result---`null` plus error on failed remove*
 
-| Name             | Type            | Presence                    | Description
-|------------------|-----------------|-----------------------------|----------------
-| `result`         | null            | Required<br>(exactly 1)     | Always JSON `null` whether the node was added, removed, tried-and-connected, or tried-and-not-connected.  The JSON-RPC error field will be set only if you try removing a node that is not on the addnodes list
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "null"
+  p: "Required<br>(exactly 1)"
+  d: "Always JSON `null` whether the node was added, removed, tried-and-connected, or tried-and-not-connected.  The JSON-RPC error field will be set only if you try removing a node that is not on the addnodes list"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 
