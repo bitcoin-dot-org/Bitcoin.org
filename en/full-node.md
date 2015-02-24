@@ -245,7 +245,7 @@ After choosing what packages to install, you will be asked whether you
 want to proceed.  Press enter to continue.
 </div>
 
-#### Bicoin Core GUI {#ubuntu-gui}
+#### Bitcoin Core GUI {#ubuntu-gui}
 {:.no_toc}
 
 To start Bitcoin Core GUI, click the Ubuntu swirl icon to open the Dash,
@@ -292,7 +292,7 @@ automatically started in as an icon in the tray.
 
 {{installFinished}}
 
-#### Bicoin Core Daemon {#ubuntu-daemon}
+#### Bitcoin Core Daemon {#ubuntu-daemon}
 {:.no_toc}
 
 If you're logged in as an administrative user with sudo access, you may
@@ -466,7 +466,7 @@ If you use `su` to run commands as root, use the following command line:
 
 </div>
 
-#### Bicoin Core GUI {#other-linux-gui}
+#### Bitcoin Core GUI {#other-linux-gui}
 {:.no_toc}
 
 In order to use Bitcoin Core GUI, you will need several libraries
@@ -533,7 +533,7 @@ here](https://en.wikibooks.org/wiki/Guide_to_X11/Starting_Sessions).
 
 {{installFinished}}
 
-#### Bicoin Core Daemon {#other-linux-daemon}
+#### Bitcoin Core Daemon {#other-linux-daemon}
 {:.no_toc}
 
 If you're logged in as an administrative user with sudo access, you may
@@ -695,7 +695,7 @@ install Bitcoin Core.
 
 </div>
 
-#### Bicoin Core GUI {#win7-gui}
+#### Bitcoin Core GUI {#win7-gui}
 {:.no_toc}
 
 Open the *Start* menu, type `bitcoin` into the search box, and click the
@@ -749,7 +749,7 @@ automatically started minimized in the task bar.
 {{installFinished}}
 
 
-#### Bicoin Core Daemon {#windows-daemon}
+#### Bitcoin Core Daemon {#windows-daemon}
 {:.no_toc}
 
 If you can provide instructions and screenshots for running the latest
