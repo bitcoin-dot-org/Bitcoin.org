@@ -65,10 +65,13 @@ the outputs of all transactions included in the block chain can be categorized a
 [Unspent Transaction Outputs (UTXOs)][utxo]{:#term-utxo}{:.term} or spent transaction outputs. For a
 payment to be valid, it must only use UTXOs as inputs.
 
-Satoshis cannot be left in a UTXO after a transaction or they will be
-irretrievably lost, so any difference between the number of satoshis in a
-transaction's inputs and outputs is given as a [transaction fee][]{:#term-transaction-fee}{:.term} to 
-the Bitcoin [miner][]{:#term-miner}{:.term} who creates the block containing that transaction. 
+Ignoring coinbase transactions (described later), if the value of a
+transaction's outputs exceed its inputs, the transaction will be
+rejected---but if the inputs exceed the value of the outputs, any
+difference in value may be claimed as a [transaction
+fee][]{:#term-transaction-fee}{:.term} by the Bitcoin
+[miner][]{:#term-miner}{:.term} who creates the block containing that
+transaction.
 For example, in the illustration above, each transaction spends 10,000 satoshis
 fewer than it receives from its combined inputs, effectively paying a 10,000
 satoshi transaction fee.
