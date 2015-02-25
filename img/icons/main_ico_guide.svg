@@ -1,95 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="48"
-   height="48"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="main_ico_guide.svg"
-   inkscape:export-filename="/media/X/bitcoin.org/current/img/main_ico_guide.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
-  <defs
-     id="defs4" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="11.313709"
-     inkscape:cx="3.38338"
-     inkscape:cy="18.062111"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="1000"
-     inkscape:window-x="1680"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata7">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Calque 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-1004.3622)">
-    <rect
-       style="fill:#000000;fill-opacity:1;stroke:none"
-       id="rect4335"
-       width="30.286461"
-       height="36.420547"
-       x="11.046303"
-       y="1007.4249"
-       ry="1.4780247" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none"
-       id="rect4335-0"
-       width="30.286461"
-       height="36.420547"
-       x="8.4963093"
-       y="1010.0525"
-       ry="1.4780247" />
-    <rect
-       style="fill:#000000;fill-opacity:1;stroke:none"
-       id="rect4335-0-5"
-       width="30.286461"
-       height="36.420547"
-       x="5.8852773"
-       y="1012.6344"
-       ry="1.4780247" />
-    <path
-       style="fill:#000000;fill-opacity:1;stroke:none"
-       d="m 14.048796,1009.7295 -3.859939,3.8922 -4.2289284,0.047 c 0,0 0.1549223,-1.2914 2.1679231,-3.5211 2.0130023,-2.2295 3.8762463,-2.6035 3.8762463,-2.6035 z"
-       id="path4375"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccczcc" />
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke:none"
-       d="m 15.252345,1011.5807 0.04642,15.4874 3.867588,-2.7487 3.740427,2.8119 -0.0675,-15.6055 z"
-       id="path4377"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccc" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+  <g transform="translate(0 -1004.362)">
+    <rect width="30.286" height="36.421" x="11.046" y="1007.425" ry="1.478"/>
+    <rect width="30.286" height="36.421" x="8.496" y="1010.053" ry="1.478" fill="#fff"/>
+    <rect width="30.286" height="36.421" x="5.885" y="1012.634" ry="1.478"/>
+    <path d="M14.049 1009.73l-3.86 3.892-4.229.047s.155-1.291 2.168-3.521c2.013-2.229 3.876-2.603 3.876-2.603z"/>
+    <path d="M15.252 1011.581l.046 15.487 3.868-2.749 3.74 2.812-.068-15.605z" fill="#fff"/>
   </g>
 </svg>
