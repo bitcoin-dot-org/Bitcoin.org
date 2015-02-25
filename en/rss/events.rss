@@ -4,6 +4,7 @@
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
+<!-- Note: this file is built non-deterministically -->
 <channel>
 	<title>Bitcoin conferences and events</title>
 	<link>https://bitcoin.org/en/events</link>
