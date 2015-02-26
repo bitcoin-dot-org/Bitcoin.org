@@ -5,46 +5,58 @@
 #and assign them the 'release' category.
 
 #This is later used to loop through site.pages in order
-#to display the release's list in chronological order, both
+#to display the release's list in version order, both
 #on the "Version history" page and RSS file.
 
-#This plugin also set site.DOWNLOAD_VERSION to the latest
-#available version of Bitcoin Core, which is used everywhere
-#in the download page.
-
-#Alias redirection pages are generated in /releases to avoid
-#breaking previous links in various websites.
+# This plugin also finds the highest required_version of
+# Bitcoin Core and populates the Download page with variables set in
+# that release file
 
 require 'yaml'
 
 module Jekyll
-  
+
   class ReleasePage < Page
 
-    def initialize(site, base, lang, srcdir, src, dstdir, dst, year, month, day)
+    def initialize(site, base, lang, srcdir, src, output_directory)
       @site = site
       @base = base
-      @dir = '/'+dstdir
-      @name = dst.gsub('.md','.html')
-      self.process(dst)
+      @dir = '/' + output_directory
+
+      ## Read in the file's YAML header
       self.read_yaml(File.join(base, srcdir), src)
-      self.data['lang'] = lang
-      self.data['date'] = year + '-' + month + '-' + day
-      self.data['version'] = dst.gsub('.md','').gsub(/[a-z]/,'')
-      self.data['versionint'] = versiontoint(self.data['version'])
-      self.data['layout'] = 'release'
-      if dstdir.index('/releases/') === 0
-        self.data['redirect'] = '/en/release/' + dst.gsub('.md','')
-        self.data['layout'] = 'redirect'
+
+      ## Die if required_ variables aren't set
+      if self.data['required_version']
+        version = self.data['required_version']
       else
-        self.data['category'] = 'release'
-        if !site.config.has_key?('DOWNLOAD_VERSION') or site.config['DOWNLOAD_VERSIONINT'] < self.data['versionint']
-          site.config['DOWNLOAD_VERSIONINT'] = self.data['versionint']
-          site.config['DOWNLOAD_VERSION'] = self.data['version']
-          site.config.delete('DOWNLOAD_MAGNETLINK') if site.config.has_key?('DOWNLOAD_MAGNETLINK')
-          site.config['DOWNLOAD_MAGNETLINK'] = self.data['magnetlink'] if self.data.has_key?('magnetlink')
-        end
-        site.pages << ReleasePage.new(site, base, lang, srcdir, src, '/releases/' + year + '/' + month + '/' + day, dst, year, month, day)
+        abort("Error: Variable required_version not set when processing " + src)
+      end
+
+      ## Output file is v<version>.md (converted later to HTML)
+      output_file = "v" + version + ".md"
+      @name = output_file
+      self.process(output_file)
+
+      ## Title required for <title></title> in _layouts/base.html
+      self.data['title'] = self.data['optional_title'] ? self.data['optional_title'] : "Bitcoin Core version %v released"
+      self.data['title'].gsub!('%v', version)
+
+      ## For translation, but currently always set to "en"
+      self.data['lang'] = lang
+
+      ## Only processes numeric version numbers with up to five decimals
+      self.data['versionint'] = versiontoint(self.data['required_version'])
+
+      self.data['layout'] = 'release'
+      self.data['category'] = 'release'
+
+      ## If this is the highest version we've seen so far...
+      if !site.config.has_key?('DOWNLOAD_VERSION') or site.config['DOWNLOAD_VERSIONINT'] < self.data['versionint']
+        site.config['DOWNLOAD_VERSIONINT'] = self.data['versionint']
+        site.config['DOWNLOAD_VERSION'] = self.data['required_version']
+
+        site.config['DOWNLOAD_MAGNETLINK'] = self.data['optional_magnetlink'] ? self.data['optional_magnetlink'] : nil
       end
     end
 
@@ -73,18 +85,9 @@ module Jekyll
         next if file == '.' or file == '..'
         lang = 'en'
         src = file
-        dst = file.split('-')
-        next if dst.length < 4
-        year = dst.shift()
-        month = dst.shift()
-        day = dst.shift()
-        next if !/^[0-9]{4}$/.match(year)
-        next if !/^[0-9]{2}$/.match(month)
-        next if !/^[0-9]{2}$/.match(day)
-        dst = dst.join('-')
         srcdir = '_releases'
-        dstdir = lang + '/release'
-        site.pages << ReleasePage.new(site, site.source, lang, '_releases', src, dstdir, dst, year, month, day)
+        output_directory = lang + '/release'
+        site.pages << ReleasePage.new(site, site.source, lang, '_releases', src, output_directory)
       end
       #TODO releases are only generated for english language,
       #but they could also be translated at some point. They would however
