@@ -1,3 +1,5 @@
+![Build Status](https://travis-ci.org/bitcoin/bitcoin.org.svg?branch=master)
+
 ## How To Participate
 
 *Bitcoin.org needs volunteers like you!*  Here are some ways you can help:
@@ -85,6 +87,35 @@ git remote add upstream https://github.com/bitcoin/bitcoin.org.git
 7. Click on your branch on GitHub and click the **Compare / pull request** button to send a pull request.
 
 When submitting a pull request, please take required time to discuss your changes and adapt your work. It is generally a good practice to split unrelated changes into separate branchs and pull requests.
+
+**Travis Continuous Integration (CI)**
+
+Shortly after your Pull Request (PR) is submitted, a Travis CI job will
+be added to [our queue](https://travis-ci.org/harding/bitcoin.org). This
+will build the site and run some basic checks. If the job fails, you
+will be emailed a link to the build log and the PR will indicate a
+failed job. Read the build report and try to correct the problem---but
+if you feel confused or frustrated, please ask for help on the PR (we're
+always happy to help).
+
+If you don't want a particular commit to be tested, add `[ci skip]`
+anywhere in its commit message.
+
+If you'd like to setup Travis on your own repository so you can test
+builds before opening a pull request, it's really simple:
+
+1. Make sure the master branch of your repository is up to date with the
+   bitcoin/bitcoin.org master branch.
+
+2. Open [this guide](http://docs.travis-ci.com/user/getting-started/)
+   and perform steps one, two, and four. (The other steps are already
+   done in our master branch.)
+
+3. After you push a branch to your repository, go to your branches page
+   (e.g. for user harding, github.com/harding/bitcoin.org/branches). A
+   yellow circle, green checkmark, or red X will appear near the branch
+   name when the build finishes, and clicking on the icon will take you
+   to the corresponding build report.
 
 **How to make additional changes in a pull request**
 

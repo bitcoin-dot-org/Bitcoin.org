@@ -153,6 +153,7 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - Makefile
+    - vendor  # Travis CI creates a vendor/ dir with files we shouldn't render
 
 future:      true
 lsi:         false
