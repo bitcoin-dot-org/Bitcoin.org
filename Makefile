@@ -48,7 +48,8 @@ pre-build-tests: pre-build-tests-fast
 	@ true
 
 ## All post-build tests, including those which might take multiple minutes
-post-build-tests: post-build-tests-fast
+post-build-tests: post-build-tests-fast \
+    check-for-broken-bitcoin-core-download-links
 	@ true ## SOMEDAY: use linkchecker to find broken links 
 	@      ## after this bug is fixed: https://github.com/wummel/linkchecker/issues/513
 
@@ -197,3 +198,14 @@ manual-check-diff-sha256sums:
 	  | sort - _site/sha256sums.txt \
 	  | uniq -u \
 	  | sort -k2
+
+check-for-broken-bitcoin-core-download-links:
+	$S grep 'class="dl"' _site/en/download.html \
+	  | sed 's/.*href="//; s/".*//' \
+	  | while read url ; do \
+	    if [ "$${url##http*}" ]; then \
+	      curl -sI "https://bitcoin.org$$url" ; \
+	    else \
+	      curl -sI "$$url" ; \
+	    fi | grep -q '200 OK' || echo "Error: Could not retrieve $$url" ; \
+	  done | eval $(ERROR_ON_OUTPUT)
