@@ -597,6 +597,46 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
+- coinomi:
+    title: "Coinomi Universal Wallet"
+    titleshort: "Coinomi"
+    compat: "mobile android"
+    level: 3
+    platform:
+      mobile:
+        text: "walletcoinomi"
+        link: "https://play.google.com/store/apps/details?id=com.coinomi.wallet"
+        source: "https://github.com/Coinomi"
+        screenshot: "coinomiwalletandroid.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkgoodtransparencydeterministic"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurecentralized"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "walletcoinomi"
+        link: "https://play.google.com/store/apps/details?id=com.coinomi.wallet"
+        source: "https://github.com/Coinomi/coinomi-android"
+        screenshot: "coinomiwalletandroid.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkgoodtransparencydeterministic"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurecentralized"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 - coinbase:
     title: "Coinbase"
     titleshort: "Coinbase"
