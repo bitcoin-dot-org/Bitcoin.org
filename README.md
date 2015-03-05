@@ -91,7 +91,7 @@ When submitting a pull request, please take required time to discuss your change
 **Travis Continuous Integration (CI)**
 
 Shortly after your Pull Request (PR) is submitted, a Travis CI job will
-be added to [our queue](https://travis-ci.org/harding/bitcoin.org). This
+be added to [our queue](https://travis-ci.org/bitcoin/bitcoin.org). This
 will build the site and run some basic checks. If the job fails, you
 will be emailed a link to the build log and the PR will indicate a
 failed job. Read the build report and try to correct the problem---but
