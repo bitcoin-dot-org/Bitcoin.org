@@ -91,7 +91,7 @@ done
 # Build website in a child process
 (
 cd $WORKDIR
-ENABLED_PLUGINS='alerts redirects releases' JEKYLL_COMMAND='jekyll' make all
+ENABLED_PLUGINS='alerts redirects releases' JEKYLL_COMMAND='jekyll' make
 touch "$WORKDIR/_builddone"
 )&
 

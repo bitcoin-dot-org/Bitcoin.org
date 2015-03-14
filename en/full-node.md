@@ -749,7 +749,7 @@ automatically started minimized in the task bar.
 {{installFinished}}
 
 
-#### Bitcoin Core Daemon {#windows-daemon}
+#### Bitcoin Core Daemon {#win7-daemon}
 {:.no_toc}
 
 If you can provide instructions and screenshots for running the latest

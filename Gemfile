@@ -10,5 +10,6 @@ group :development do
   gem 'kramdown'
   gem 'RedCloth'
   gem 'therubyracer' # required by less
+  gem 'html-proofer'
 end
 

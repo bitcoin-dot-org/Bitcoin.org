@@ -712,23 +712,23 @@ wallets:
 <div class="walletmenu" id="walletmenu" onmouseover="walletListener(event);" onmouseout="walletListener(event);" onclick="walletListener(event);">
   <ul onclick="mobileMenuHover(event);">
     <li class="wallet-mobile">
-    <a data-walletcompat="mobile">{% translate walletcatmobile %}</a>
+    <a id="mobile" data-walletcompat="mobile">{% translate walletcatmobile %}</a>
     <ul>
-      <li class="wallet-android"><a data-walletcompat="android">{% translate platformandroid %}</a></li>
-      <li class="wallet-ios"><a data-walletcompat="ios">{% translate platformios %}</a></li>
-      <li class="wallet-blackberry"><a data-walletcompat="blackberry">{% translate platformblackberry %}</a></li>
+      <li class="wallet-android"><a id="android" data-walletcompat="android">{% translate platformandroid %}</a></li>
+      <li class="wallet-ios"><a id="ios" data-walletcompat="ios">{% translate platformios %}</a></li>
+      <li class="wallet-blackberry"><a id="blackberry" data-walletcompat="blackberry">{% translate platformblackberry %}</a></li>
     </ul>
     </li>
     <li class="wallet-desktop">
-    <a data-walletcompat="desktop">{% translate walletcatdesktop %}</a>
+    <a id="desktop" data-walletcompat="desktop">{% translate walletcatdesktop %}</a>
     <ul>
-      <li class="wallet-windows"><a data-walletcompat="windows">{% translate platformwindows %}</a></li>
-      <li class="wallet-mac"><a data-walletcompat="mac">{% translate platformmac %}</a></li>
-      <li class="wallet-linux"><a data-walletcompat="linux">{% translate platformlinux %}</a></li>
+      <li class="wallet-windows"><a id="windows" data-walletcompat="windows">{% translate platformwindows %}</a></li>
+      <li class="wallet-mac"><a id="mac" data-walletcompat="mac">{% translate platformmac %}</a></li>
+      <li class="wallet-linux"><a id="linux" data-walletcompat="linux">{% translate platformlinux %}</a></li>
     </ul>
     </li>
-    <li class="wallet-hardware"><a data-walletcompat="hardware">{% translate walletcathardware %}</a></li>
-    <li class="wallet-web"><a data-walletcompat="web">{% translate walletcatweb %}</a></li>
+    <li class="wallet-hardware"><a id="hardware" data-walletcompat="hardware">{% translate walletcathardware %}</a></li>
+    <li class="wallet-web"><a id="web" data-walletcompat="web">{% translate walletcatweb %}</a></li>
   </ul>
 </div>
 

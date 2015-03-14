@@ -28,7 +28,7 @@ test: pre-build-tests post-build-tests
 valid: pre-build-tests-fast build post-build-tests-fast
 
 ## `make all`: build and run all tests
-all: pre-build-tests build post-build-tests
+all: travis-background-keepalive pre-build-tests build post-build-tests
 
 
 
@@ -49,9 +49,8 @@ pre-build-tests: pre-build-tests-fast
 
 ## All post-build tests, including those which might take multiple minutes
 post-build-tests: post-build-tests-fast \
-    check-for-broken-bitcoin-core-download-links
-	@ true ## SOMEDAY: use linkchecker to find broken links 
-	@      ## after this bug is fixed: https://github.com/wummel/linkchecker/issues/513
+    check-for-broken-bitcoin-core-download-links \
+    check-html-proofer
 
 ## All manual updates to content that should be run by a human. This
 ## will create or update files which should then be diffed and commited.
@@ -209,3 +208,9 @@ check-for-broken-bitcoin-core-download-links:
 	      curl -sI "$$url" ; \
 	    fi | grep -q '200 OK' || echo "Error: Could not retrieve $$url" ; \
 	  done | eval $(ERROR_ON_OUTPUT)
+
+check-html-proofer:
+	$S bundle exec ruby _contrib/bco-htmlproof
+
+travis-background-keepalive:
+	$S { while ps aux | grep -q '[m]ake' ; do echo "Ignore me: Travis CI keep alive" ; sleep 1m ; done ; } &

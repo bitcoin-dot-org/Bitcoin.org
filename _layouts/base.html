@@ -92,7 +92,12 @@
     {% else %}
     <a href="/{{ page.lang }}/{% translate privacy url %}">{% translate menu-privacy layout %}</a>
     {% endcase %}
+    {% case page.lang %}
+    {% when 'sv' %}
+    <a href="/en/press">Press</a>
+    {% else %}
     <a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a>
+    {% endcase %}
     <a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a>
     </div>
     <div class="footersponsor">
