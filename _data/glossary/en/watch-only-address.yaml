@@ -1,0 +1,28 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Watch-Only Address
+
+    summary_max_255_characters_no_formatting: >
+        An address or pubkey script stored in the wallet without the
+        corresponding private key, allowing the wallet to watch for
+        outputs but not spend them.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Watch-only address
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - watch-only addresses
+        - watch-only
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[`importaddress` RPC](/en/developer-reference#importaddress) --- Bitcoin.org Developer Reference"
+        - "[Pull request adding watch-only support to Bitcoin Core](https://github.com/bitcoin/bitcoin/pull/4045) --- GitHub"
+
+---

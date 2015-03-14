@@ -1,0 +1,32 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Minimum Relay Fee
+
+    summary_max_255_characters_no_formatting: >
+        The minimum transaction fee a transaction must pay (if it isn't
+        a high-priority transaction) for a full node to relay that
+        transaction to other nodes. There is no one minimum relay
+        fee---each node chooses its own policy.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Minimum relay fee
+        - Relay fee
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - minimum relay fees
+        - relay fees
+        - minimum fee
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Transaction fee (the minimum relay fee is a policy setting that filters out transactions with too-low transaction fees)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Minimum relay fee](/en/developer-guide#term-minimum-fee) --- Bitcoin.org Developer Guide"
+        - "[Transaction fees](https://en.bitcoin.it/wiki/Transaction_fees) --- Bitcoin Wiki"
+
+---

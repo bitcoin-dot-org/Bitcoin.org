@@ -1,0 +1,31 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Wallet
+
+    summary_max_255_characters_no_formatting: >
+        Software that stores private keys and monitors the block chain
+        (sometimes as a client of a server that does the processing) to
+        allow users to spend and receive satoshis.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Wallet
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - wallets
+        - web wallet
+        - web wallets
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - HD wallet (a protocol that allows all of a wallet's keys to be created from a single seed)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Wallets](/en/developer-guide#wallets) --- Bitcoin.org Developer Guide"
+        - "[Wallet](https://en.bitcoin.it/wiki/Wallet) --- Bitcoin Wiki"
+        - "[Where are the user's bitcoins actually stored?](http://bitcoin.stackexchange.com/q/1600) --- Bitcoin StackExchange"
+
+---

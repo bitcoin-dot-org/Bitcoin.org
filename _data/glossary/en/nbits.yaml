@@ -1,0 +1,33 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: nBits, Target Threshold
+
+    summary_max_255_characters_no_formatting: >
+        The target is the threshold below which a block header hash must
+        be in order for the block to valid, and nBits is the encoded
+        form of the target threshold as it appears in the block header.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - nBits
+        - Target
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - targets
+        - target threshold
+        - target thresholds
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Difficulty (a number measuring the difficulty of finding a header hash relative to the difficulty of finding a header hash with the easiest target)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Target](/en/developer-guide#term-target) --- Bitcoin.org Developer Guide"
+        - "[nBits](/en/developer-reference#target-nbits) --- Bitcoin.org Developer Reference"
+        - "[Target](https://en.bitcoin.it/wiki/Target) --- Bitcoin Wiki"
+        - "[How is the target section of the block header calculated?](http://bitcoin.stackexchange.com/q/23912) --- Bitcoin StackExchange"
+
+---

@@ -8,17 +8,11 @@
 #
 ## To prevent a ref for term, use: "term: DO NOT AUTOCROSSREF"
 
-51 percent attack:
 '`addr` message': addr message
 '`addr` messages': addr message
-address: 
-addresses: address
 '`alert` message': alert message
 '`alert` messages': alert message
 '`amount`': pp amount
-base-58: base58check
-base58: base58check
-base58check:
 ## bitcoin -- Recommend against bitcoin (singular) because of confusion between protocol, software, denomination
 bitcoins: 
 bitcoin QR code: URI QR code
@@ -26,75 +20,17 @@ bitcoin QR codes: URI QR code
 '`bitcoin:` URI': bitcoin uri
 '`bitcoin:` URIs': bitcoin uri
 bitcoinj:
-block:
-block chain:
-block-chain: block chain
-block header:
-block headers: block header
-block height:
 '`block` message': block message
 '`block` messages': block message
-block reward:
-block time:
-block version:
-blocks: block
-blocks-first: blocks-first sync
-blocks-first sync:
-blocks-first IBD: blocks-first sync
-bloom filter:
-broadcast:
-broadcasts: broadcast
-broadcasting:
 certificate chain:
-chain code:
-change address:
-change addresses: change address
-change output:
-change outputs: change output
-child key:
-child keys: child key
-child private and public keys: child key
-child public key:
-child public keys: child public key
-coinbase: coinbase transaction
-coinbase block height:
-coinbase transaction:
-coinbase transactions: coinbase transaction
-coinbase field:
-compactsize uint: compactsize unsigned integer
-compactsize unsigned integer:
-compactsize unsigned integers: compactsize unsigned integer
-compressed public key:
-compressed public keys: compressed public key
-confirm:
-confirmed:
-confirmation:
-confirmations:
-confirmed transactions:
-consensus:
-consensus rules:
-data-pushing op code:
-data-pushing op codes: data-pushing op code
 denomination:
 denominations: denomination
 DER:
 DER format: der
 DER-formatted: der
-difficulty:
-dns seed:
-dns seeds: dns seed
-double spend:
-double-spend: double spend
-double spending: double spend
-double-spent: double spend
 ECDSA:
 epoch time: unix epoch time
-escrow contract:
 '`expires`': pp expires
-extended key:
-extended keys: extended key
-extended private key:
-extended public key:
 fiat:
 '`filteradd` message': filteradd message
 '`filteradd` messages': filteradd message
@@ -102,9 +38,6 @@ fiat:
 '`filterclear` messages': filterclear message
 '`filterload` message': filterload message
 '`filterload` messages': filterload message
-fork:
-forks: fork
-genesis block:
 '`getblocks` message': getblocks message
 '`getblocks` messages': getblocks message
 '`getdata` message': getdata message
@@ -113,25 +46,10 @@ genesis block:
 '`getheaders` messages': getheaders message
 '`getaddr` message': getaddr message
 '`getaddr` messages': getaddr message
-hard fork:
-hard forks: hard fork
-hardened extended private key:
-HD protocol:
-header chain:
-headers-first: headers-first sync
-headers-first sync:
-headers-first IBD: headers-first sync
 '`headers` message': headers message
 '`headers` messages': headers message
-high-priority transaction: high-priority transactions
-high-priority transactions:
-IBD: initial block download
-initial block download:
-inputs: input
-input:
 intermediate certificate:
 intermediate certificates: intermediate certificate
-internal byte order:
 '`inv` message': inv message
 '`inv` messages': inv message
 IP address: DO NOT AUTOCROSSREF
@@ -140,82 +58,44 @@ IPv4 address: DO NOT AUTOCROSSREF
 IPv4 addresses: DO NOT AUTOCROSSREF
 IPv6 address: DO NOT AUTOCROSSREF
 IPv6 addresses: DO NOT AUTOCROSSREF
-inventories: inventory
-inventory:
 key index:
 key pair:
 '`label`': label
 leaf certificate:
-locktime:
 long-term fork:
-mainnet:
 man in the middle: man-in-the-middle
 man-in-the-middle:
-master chain code:
-master private key:
 '`memo`': pp memo
 '`mempool` message': mempool message
 '`mempool` messages': mempool message
 '`message`': message
-message header:
-message headers: message header
 message payload:
 '`merchant_data`': pp merchant data
-merkle block:
-merkle blocks: merkle block
 '`merkleblock` message': merkleblock message
 '`merkleblock` messages': merkleblock message
-merkle root:
-merkle tree:
 merge:
 Merge avoidance:
 micropayment channel:
 micropayment channels: micropayment channel
-mine:
-miner:
-miners: miner
-minimum fee:
-mining: mine
 millibitcoin: millibitcoins
 millibitcoins:
 '`MSG_BLOCK`': msg_block
 '`MSG_FILTERED_BLOCK`': msg_filtered_block
 '`MSG_TX`': msg_tx
-multisig:
 multisig p2sh: p2sh multisig
-nbits:
 network:
 '`notfound` message': notfound message
 '`notfound` messages': notfound message
 'number (bitcoins)': proper money handling
-null data: 
 '`op_checkmultisig`': op_checkmultisig
 '`op_checksig`': op_checksig
-op code:
-op codes: op code
 '`op_dup`': op_dup
 '`op_equal`': op_equal
 '`op_equalverify`': op_equalverify
 '`op_hash160`': op_hash160
 '`op_return`': op_return
 '`op_verify`': op_verify
-orphan block:
-orphan blocks: orphan block
-outpoint:
-outpoints: outpoint
-outputs: output
-output:
 output index:
-p2pkh:
-p2sh:
-p2sh multisig:
-parent chain code:
-parent key:
-parent private key:
-parent private and public keys: parent key
-parent public key:
-payment protocol:
-"payment protocol's": payment protocol
 PaymentDetails:
 PaymentRequest:
 PaymentRequests: paymentrequest
@@ -231,10 +111,6 @@ pki:
 '`pong` message': pong message
 '`pong` messages': pong message
 previous block header hash:
-private key:
-private keys: private key
-proof of work:
-proof-of-work: proof of work
 protocol buffer: protobuf
 protocol buffers: protobuf
 protocol version 106: section protocol versions
@@ -247,84 +123,26 @@ protocol version 60001: section protocol versions
 protocol version 60002: section protocol versions
 protocol version 70001: section protocol versions
 protocol version 70002: section protocol versions
-pubkey: public key
-pubkey hash:
-pubkey hashes: pubkey hash
-pubkey script:
-pubkey scripts: pubkey script
-pubkeys: public key
-public key:
-public keys: public key
 public key infrastructure: pki
 '`r`': r
-raw format:
-raw transaction: raw format
-raw transactions: raw format
-raw transaction format: raw format
-rawtransaction format: raw format
 receipt:
 recurrent rebilling:
-redeem script:
 refund: 
 refunds: refund
-regression test mode:
-regtest: regression test mode
 '`reject` message': reject message
 '`reject` messages': reject message
 root certificate:
-root seed:
 RPC:
 RPCs: rpc
-RPC byte order:
 satoshi:
 satoshis: satoshi
 '`script`': pp script
-script hash:
 secp256k1:
-sequence number:
-sequence numbers: sequence number
-serialized block:
-serialized blocks: serialized block
-serialized transaction: raw format
-serialized transactions: raw format
-SIGHASH: signature hash
-'`SIGHASH_ANYONECANPAY`': shacp
-'`SIGHASH_ALL`': sighash_all
-'`SIGHASH_ALL|SIGHASH_ANYONECANPAY`': sha_shacp
-'`SIGHASH_NONE`': sighash_none
-'`SIGHASH_NONE|SIGHASH_ANYONECANPAY`': shn_shacp
-'`SIGHASH_SINGLE|SIGHASH_ANYONECANPAY`': shs_shacp
-signature:
-signature hash:
-signature script:
-signature scripts: signature script
-signatures: signature
-soft fork:
-soft forks: soft fork
-SPV:
-stack:
-stale block:
-stale blocks: stale block
 standard block relay:
-standard script:
-standard scripts: standard script
-standard transaction: standard script
-standard transactions: standard script
-start string:
-target:
-testnet:
-#transaction -- Recommend we don't autocrossref this; it occurs too often
-transaction fee:
-transaction fees: transaction fee
-transaction malleability:
 transaction object format:
 transaction version number:
 '`tx` message': tx message
 '`tx` messages': tx message
-txid:
-txids: txid
-unconfirmed:
-unconfirmed transactions:
 unencrypted wallet:
 unix epoch time:
 unix time: unix epoch time
@@ -332,21 +150,13 @@ unique address: unique addresses
 unique addresses:
 unlocked wallet:
 unsolicited block push:
-utxo:
-utxos: utxo
 '`verack` message': verack message
 '`verack` messages': verack message
 verified payments:
 version 2 blocks: v2 block
 '`version` message': version message
 '`version` messages': version message
-watch-only:
-watch-only address: watch-only
-watch-only addresses: watch-only
 waching-only: watch-only
-wallet:
-wallets: wallet
-wallet import format:
 wallet support:
 wallet support disabled: wallet support
 wallet support enabled: wallet support

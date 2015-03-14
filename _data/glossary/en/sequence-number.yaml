@@ -1,0 +1,31 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Sequence Number (Transactions)
+
+    summary_max_255_characters_no_formatting: >
+        Part of all transactions. A number intended to allow unconfirmed
+        time-locked transactions to be updated before being finalized;
+        not currently used except to disable locktime in a transaction
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Sequence number
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - sequence numbers
+        - transaction sequence number
+        - transaction sequence numbers
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Output index number / vout (this is the 0-indexed number of an output within a transaction used by a later transaction to refer to that specific output)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Sequence number](/en/developer-guide#term-sequence-number) --- Bitcoin.org Developer Guide"
+        - "[Tx message (describes sequence number)](https://en.bitcoin.it/wiki/Protocol_documentation#tx) --- Bitcoin Wiki"
+        - "[What is the sequence number?](http://bitcoin.stackexchange.com/q/2025) --- Bitcoin StackExchange"
+
+---

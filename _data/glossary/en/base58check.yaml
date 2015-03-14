@@ -1,0 +1,32 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Base58check, Bitcoin Address Encoding
+
+    summary_max_255_characters_no_formatting: >
+        The method used in Bitcoin for converting 160-bit hashes into
+        P2PKH and P2SH addresses.  Also used in other parts of Bitcoin,
+        such as encoding private keys for backup in WIP format.  Not the
+        same as other base58 implementations.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Base58check
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - base58
+        - base-58
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - P2PKH address
+        - P2SH address
+        - IP address
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[base58check](/en/developer-reference#term-base58check) --- Bitcoin.org Developer Reference"
+        - "[Base58Check encoding](https://en.bitcoin.it/wiki/Base58Check_encoding) --- Bitcoin Wiki"
+
+---

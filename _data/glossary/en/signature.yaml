@@ -1,0 +1,32 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Signature, ECDSA Signature
+
+    summary_max_255_characters_no_formatting: >
+        A value related to a public key which could only have reasonably
+        been created by someone who has the private key that created
+        that public key. Used in Bitcoin to authorize spending satoshis
+        previously sent to a public key.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Signature
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - signatures
+        - ecdsa signature
+        - ecdsa signatures
+        - secp256k1 signature
+        - secp256k1 signatures
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Signature](/en/developer-guide#term-signature) --- Bitcoin.org Developer Guide"
+        - "[ECDSA](https://en.bitcoin.it/wiki/Elliptic_Curve_Digital_Signature_Algorithm) --- Bitcoin Wiki"
+        - "[ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_DSA) --- Wikipedia"
+---
