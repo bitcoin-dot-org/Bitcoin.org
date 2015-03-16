@@ -42,15 +42,15 @@ merchandise, but Charlie can't get the merchandise and keep his payment.
 
 This simple contract isn't much help if there's a dispute, so Bob and
 Charlie enlist the help of Alice-the-arbitrator to create an [escrow
-contract][]{:#term-escrow-contract}{:.term}. Charlie spends his satoshis
+contract][/en/glossary/escrow-contract]{:#term-escrow-contract}{:.term}. Charlie spends his satoshis
 to an output which can only be spent if two of the three people sign the
 input. Now Charlie can pay Bob if everything is ok, Bob can refund
 Charlie's money if there's a problem, or Alice can arbitrate and decide
 who should get the satoshis if there's a dispute.
 
-To create a multiple-signature ([multisig][]{:#term-multisig}{:.term})
+To create a multiple-signature ([multisig][/en/glossary/multisig]{:#term-multisig}{:.term})
 output, they each give the others a public key. Then Bob creates the
-following [P2SH multisig][]{:#term-p2sh-multisig}{:.term} redeem script:
+following [P2SH multisig][/en/glossary/p2sh-multisig]{:#term-p2sh-multisig}{:.term} redeem script:
 
 {% endautocrossref %}
 

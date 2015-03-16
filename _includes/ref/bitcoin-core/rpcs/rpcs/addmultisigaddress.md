@@ -90,6 +90,6 @@ Result:
 
 * [CreateMultiSig][rpc createmultisig]: {{summary_createMultiSig}}
 * [DecodeScript][rpc decodescript]: {{summary_decodeScript}}
-* [Pay-To-Script-Hash (P2SH)][P2SH]
+* [Pay-To-Script-Hash (P2SH)][/en/glossary/p2sh-address]
 
 {% endautocrossref %}
