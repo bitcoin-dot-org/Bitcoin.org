@@ -1,35 +1,3 @@
-- date: 2015-03-05
-  title: "Inside Bitcoins Berlin"
-  venue: "Estrel Berlin"
-  address: "Sonnenallee 225, 12057"
-  city: "Berlin"
-  country: "Germany"
-  link: "http://insidebitcoins.de/?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibberlin"
-
-- date: 2015-03-07
-  title: "MIT Bitcoin Expo"
-  venue: "MIT Compton Labs"
-  address: "60 Vassar Street"
-  city: "Cambridge"
-  country: "USA"
-  link: "http://mitbitcoinexpo.org"
-
-- date: 2015-03-12
-  title: "Decentralize This! Hackathon"
-  venue: "Lool.vc HQ"
-  address: "2 Tushyia Street"
-  city: "Tel Aviv"
-  country: "Israel"
-  link: "http://decentralize-this-hackathon.weebly.com/"
-
-- date: 2015-03-15
-  title: "Coin Debut at SXSW"
-  venue: "Max's Wine Dive"
-  address: "207 San Jacinto Blvd"
-  city: "Austin, TX"
-  country: "USA"
-  link: "http://coindebut.com/"
-
 - date: 2015-03-19
   title: "Future of Money - The Bitcoin Story"
   venue: "YMCA Ahmedabad, India"
@@ -110,6 +78,14 @@
   country: "United States"
   link: "http://summit.virtualcurrencytoday.com/"
 
+- date: 2015-05-02
+  title: "WeBTCExpo"
+  venue:
+  address:
+  city: "Amsterdam"
+  country: "Netherlands"
+  link: "http://webtcexpo.com/"
+
 - date: 2015-05-06
   title: "Bitcoin Wednesday"
   venue: "Pakhuis de Zwijger"
@@ -141,6 +117,14 @@
   city: "Istanbul"
   country: "Turkey"
   link: "http://www.imtconferences.com/mtbit/"
+
+- date: 2015-05-30
+  title: "Bitcoinference 2015"
+  venue: "Berlage Meet & Workpace"
+  address: "Oudebrugsteeg 9, 1012 JN"
+  city: "Amsterdam"
+  country: "Netherlands"
+  link: "http://bitcoinference.com/"
 
 - date: 2015-11-09
   title: "MTBIT - Bitcoin & Remittances Miami Beach"
