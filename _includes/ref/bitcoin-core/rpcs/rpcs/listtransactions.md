@@ -137,7 +137,7 @@ The `listtransactions` RPC {{summary_listTransactions}}
   p: "Required<br>(exactly 1)"
   d: "A Unix epoch time when the transaction was added to the wallet"
 
-- n: "→ →<br>`timerecived`"
+- n: "→ →<br>`timereceived`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
   d: "A Unix epoch time when the transaction was detected by the local node, or the time of the block on the local best block chain that included the transaction.  Not returned for *move* category payments"
