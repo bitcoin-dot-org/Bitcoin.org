@@ -5,7 +5,7 @@ http://opensource.org/licenses/MIT.
 
 <!-- Terms; must have tooltip description in "quotes"; alphabetical order -->
 [51 percent attack]: /en/developer-guide#term-51-attack "The ability of someone controlling a majority of hashing power to revise transactions history and prevent new transactions from confirming"
-[addr message]: /en/developer-reference#alert "The P2P network message which relays IP addresses and port numbers of active nodes to other nodes and clients, allowing decentralized peer discovery."
+[addr message]: /en/developer-reference#addr "The P2P network message which relays IP addresses and port numbers of active nodes to other nodes and clients, allowing decentralized peer discovery."
 [addresses]: /en/developer-guide#term-address "A 20-byte hash formatted as a P2PKH or P2SH Bitcoin Address"
 [address]: /en/developer-guide#term-address "A 20-byte hash formatted as a P2PKH or P2SH Bitcoin Address"
 [alert message]: /en/developer-reference#alert "The P2P network message which sends alerts in case of major software problems."
