@@ -49,7 +49,7 @@ lasttime=`stat -c %Y "$SITEDIR/_buildlock" | cut -d ' ' -f1`
 # Build website in a child process
 (
 cd $WORKDIR
-make all
+JEKYLL_COMMAND='jekyll' make build
 touch "$WORKDIR/_builddone"
 )&
 
