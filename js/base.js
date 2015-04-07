@@ -89,7 +89,6 @@ var mm = document.getElementById('menusimple');
 var ml = document.getElementById('langselect');
 var t = document.getElementById('menumobile');
 mm.style.display = ml.style.display = (mm.style.display == 'block') ? '' : 'block';
-t.parentNode.removeChild(t);
 cancelEvent(e);
 }
 
