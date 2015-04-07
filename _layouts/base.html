@@ -40,8 +40,8 @@
       </ul>
       </li>
     </ul>
-    <a class="logo" href="/{{ page.lang }}/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
     <a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" href="#"></a>
+    <a class="logo" href="/{{ page.lang }}/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
     <div id="langselect" class="langselect"><select onchange="window.location=this.value;">
     {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{% endif %}
           <option value="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"{{ active }}>{{ site.langs[lang] }}</option>
