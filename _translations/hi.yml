@@ -659,6 +659,7 @@ hi:
     tax: "सरकार कर और नियम"
     taxtxt: "Bitcoin एक आधिकारिक मुद्रा नहीं है। हाँ लेकिन, अधिकांश क्षेत्राधिकार के अनुसार ये जरुरी होता है कि किसी भी मूल्य की चीज़ पर  जिसमें bitcoins शामिल हैं, बिक्री, पेरोल, और पूंजीगत लाभ पर कर आय का भुगतान किया जाए। यह आपकी जिम्मेदारी है कि आप  <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">टैक्स और अन्य कानूनी या  विनियामक जनादेश</a> का पालन करे जो सरकार  या/और स्थानीय नगर पालिकाओं द्वारा जारी किए गए हो। "
   layout:
+    menu-support-bitcoin: "Bitcoin समर्थन करें"
     menu-about-us: "bitcoin.org के बारे में"
     menu-bitcoin-for-businesses: व्यवसाय
     menu-bitcoin-for-developers: डेवलपर्स
@@ -676,7 +677,7 @@ hi:
     menu-privacy: "गोपनियता"
     menu-resources: संसाधन
     menu-stats: "आँकड़े"
-    menu-support-bitcoin: भाग लें
+    menu-participate: भाग लें
     menu-vocabulary: शब्दावली
     menu-you-need-to-know: "आपको पता होना चाहिए "
     banner-translate: "इन भाषाओं के लिए अनुवाद पुरानी हो चुकी है <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">अपनी भाषा में bitcoin.org के अनुवाद में मदद करने के लिए यहां क्लिक करें </a>."

@@ -625,6 +625,7 @@ es:
     tax: "Impuestos y regulaciones"
     taxtxt: "El Bitcoin no es una moneda oficial. Dicho esto, en la mayoría de territorios usted tendrá que pagar renta, nóminas y los impuestos sobre ganancias en todo lo que tenga valor, incluyendo bitcoins. Es su responsabilidad asegurarse de aplicar los impuestos y otras regulaciones publicadas por su gobierno o municipio."
   layout:
+    menu-support-bitcoin: "Apoya Bitcoin"
     menu-about-us: "Acerca de bitcoin.org"
     menu-bitcoin-for-businesses: Empresas
     menu-bitcoin-for-developers: Desarrolladores
@@ -640,7 +641,7 @@ es:
     menu-legal: "Legal"
     menu-press: "Prensa"
     menu-resources: Recursos
-    menu-support-bitcoin: Participe
+    menu-participate: Participe
     menu-vocabulary: Vocabulario
     menu-you-need-to-know: "Cosas que necesita saber"
     banner-translate: "Las traducciones para este idioma están desactualizadas. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Haga clic aquí para ayudar a traducir bitcoin.org a su idioma</a>."

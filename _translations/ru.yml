@@ -665,6 +665,7 @@ ru:
     tax: "Налоги и госрегулирование"
     taxtxt: "Биткойн не является официальной валютой. Тем не менее, большинство юрисдикций требуют, чтобы вы платили подоходный налог, что может относиться и к Биткойну. Это ваша ответственность, убедитесь, что вы будете придерживаться <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\"> налоговых и других юридических или нормативных требований</a>  вашего правительства и/или местных властей."
   layout:
+    menu-support-bitcoin: "Поддержать Биткойн"
     menu-about-us: "О bitcoin.org"
     menu-bitcoin-for-businesses: Бизнесу
     menu-bitcoin-for-developers: Разработчикам
@@ -682,7 +683,7 @@ ru:
     menu-privacy: "Конфиденциальность"
     menu-resources: Ресурсы
     menu-stats: "Статистика"
-    menu-support-bitcoin: Участвовать
+    menu-participate: Участвовать
     menu-vocabulary: Термины
     menu-you-need-to-know: "Вам нужно знать"
     banner-translate: "Переводы на этот язык устарели.  <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Кликните здесь чтобы помочь перевести bitcoin.org на ваш язык</a>."

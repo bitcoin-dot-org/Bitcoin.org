@@ -624,6 +624,7 @@ ar:
     tax: "الضرائب الحكومية والقوانين"
     taxtxt: "البت كوين هي عملة غير رسمية. ومع هذا، فبعض السلطات لا تزال تطالبك بدفع ضرائب دخل، ضرائب مبيعات، ضرائب على المرتبات، ضرائب على الممتلكات والأرباح الرأسمالية عن كل شئ ذو قيمة، متضمناً ذلك البت كوين. إنها مسئوليتك الشخصية أن تتأكد من الوفاء بإلتزامات <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">الضرائب و المستحقات القانونية أو التنظيمية</a> أو إلتزاماتك المطلوبة منك من قبل حكومتك و/أو السلطات المحلية حيث تقطن."
   layout:
+    menu-support-bitcoin: "دعم البت كوين"
     menu-about-us: "حول موقع bitcoin.org"
     menu-bitcoin-for-businesses: الأعمال
     menu-bitcoin-for-developers: المطورين
@@ -639,7 +640,7 @@ ar:
     menu-legal: "المسائل القانونية"
     menu-press: "صحافة"
     menu-resources: المصادر
-    menu-support-bitcoin: المشاركة
+    menu-participate: المشاركة
     menu-vocabulary: المفردات
     menu-you-need-to-know: "يجب عليك معرفة"
     banner-translate: "الترجمة لهذه اللغة قديمة. </a> إضغط هنا لتساعد في ترجمة موقع bitcoin.org بلغتك<a href=\"https://github.com/bitcoin/bitcoin.org#translation\">."

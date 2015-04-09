@@ -572,6 +572,7 @@ sv:
     experimentaltxt: "Bitcoin är en experimentell och ny valuta som är under aktiv utveckling. Medan det blir stabilare allt eftersom användningen ökar så bör du komma ihåg att Bitcoin är en ny uppfinning som utforskar idéer som aldrig har prövats förut. Därför kan ingen förutse dess framtid."
     tax: "Statliga skatter och förordningar"
   layout:
+    menu-support-bitcoin: "Stöd Bitcoin"
     menu-about-us: "Om bitcoin.org"
     menu-bitcoin-for-businesses: Företag
     menu-bitcoin-for-developers: Utvecklare
@@ -588,7 +589,7 @@ sv:
     menu-privacy: "Integritet"
     menu-resources: Resurser
     menu-stats: "Statistik"
-    menu-support-bitcoin: Delta
+    menu-participate: Delta
     menu-vocabulary: Ordlista
     menu-you-need-to-know: "Du måste veta"
     footer: "Publicerad under  <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licensen</a>"

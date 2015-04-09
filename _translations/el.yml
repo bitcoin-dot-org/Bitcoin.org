@@ -659,6 +659,7 @@ el:
     tax: "Κυβερνητικοί φόροι και κανονισμοί"
     taxtxt: "Το Bitcoin δεν συνιστά επίσημο νόμισμα. Ωστόσο, στα περισσότερα νομικά συστήματα απαιτείται ακόμα να πληρώνετε φόρους για εισοδήματα, πωλήσεις, μισθοδοσίες, υπεραξίες και γενικά για οτιδήποτε έχει αξία, συμπεριλαμβανομένων και των bitcoins. Είναι ευθύνη σας να επιβεβαιώσετε ότι τηρείτε <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">τις φορολογικές και λοιπές νομικές ή ρυθμιστικές εντολές</a> που εκδίδονται από την κυβέρνησή σας και/ή τους κατά τόπους δήμους."
   layout:
+    menu-support-bitcoin: "Υποστηρίξτε το Bitcoin"
     menu-about-us: "Σχετικά με το bitcoin.org"
     menu-bitcoin-for-businesses: Επιχειρήσεις
     menu-bitcoin-for-developers: Προγραμματιστές
@@ -676,7 +677,7 @@ el:
     menu-privacy: "Προστασία Προσωπικών Δεδομένων"
     menu-resources: Πόροι
     menu-stats: "Στατιστικά Στοιχεία"
-    menu-support-bitcoin: Συμμετοχή
+    menu-participate: Συμμετοχή
     menu-vocabulary: Λεξιλόγιο
     menu-you-need-to-know: "Πρέπει να γνωρίζετε"
     banner-translate: "Οι μεταφράσεις για αυτή την γλώσσα είναι ξεπερασμένες. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Κάντε κλικ εδώ για να βοηθήσετε στην μετάφραση του bitcoin.org στην γλώσσα σας.</a>."

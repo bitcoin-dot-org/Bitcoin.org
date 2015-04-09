@@ -659,6 +659,7 @@ fr:
     tax: "Impôts et réglementations gouvernementales"
     taxtxt: "Bitcoin n'est pas une devise officielle. Ceci étant dit, la plupart des juridictions exigent que vous payiez des impôts sur le revenu, les ventes, les salaires et les gains en capital sur tout ce qui a de la valeur, incluant les bitcoins. Il est de votre responsabilité de vous assurer de respecter <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">les impôts, les mandats légaux et les réglementations</a> émises par votre gouvernement et / ou vos municipalités locales."
   layout:
+    menu-support-bitcoin: "Soutenir Bitcoin"
     menu-about-us: "À propos de bitcoin.org"
     menu-bitcoin-for-businesses: Entreprises
     menu-bitcoin-for-developers: Développeurs
@@ -676,7 +677,7 @@ fr:
     menu-privacy: "Confidentialité"
     menu-resources: Ressources
     menu-stats: "Statistiques"
-    menu-support-bitcoin: Participer
+    menu-participate: Participer
     menu-vocabulary: Vocabulaire
     menu-you-need-to-know: "Vous devez savoir"
     banner-translate: "Les traductions pour cette langue ne sont plus à jour.  <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Cliquez ici pour aider à traduire bitcoin.org dans votre langue</a>."

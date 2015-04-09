@@ -659,6 +659,7 @@ nl:
     tax: "Overheidsbelastingen en regelgeving"
     taxtxt: "Bitcoin is geen officiële munteenheid. Dat gezegd hebbende, in de meeste landen moeten toch inkomsten-, vennootschaps-, vermogens- en omzetbelastingen worden betaald over alles wat waarde vertegenwoordigt, inclusief bitcoins. Het is uw verantwoordelijkheid om ervoor te zorgen dat u zich houdt aan de <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">belastingwetgeving en enige andere wettelijke of reglementaire mandaten</a> afgegeven door uw overheid en/of plaatselijke gemeenten."
   layout:
+    menu-support-bitcoin: "Help Bitcoin"
     menu-about-us: "Over bitcoin.org"
     menu-bitcoin-for-businesses: Bedrijven
     menu-bitcoin-for-developers: Ontwikkelaars
@@ -676,7 +677,7 @@ nl:
     menu-privacy: "Privacy"
     menu-resources: Hulpmiddelen
     menu-stats: "Statistieken"
-    menu-support-bitcoin: Meedoen
+    menu-participate: Meedoen
     menu-vocabulary: Woordenlijst
     menu-you-need-to-know: "Wat u moet weten"
     banner-translate: "Vertalingen voor deze taal zijn verouderd. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Klik hier om bitcoin.org naar uw taal te vertalen</a>."

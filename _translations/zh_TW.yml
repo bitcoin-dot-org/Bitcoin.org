@@ -659,6 +659,7 @@ zh_TW:
     tax: "政府稅收和規定"
     taxtxt: "Bitcoin 並非官方貨幣。也即是說，大部分的稽稅機關仍會要求您針對任何有價值的收入、營業所得、薪水、資產利得來納稅，包括 Bitcoin。確保遵守您的政府和/或當地市政當局頒發的<a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">納稅和其他強制法律法規</a>是您的責任。"
   layout:
+    menu-support-bitcoin: "支持 Bitcoin"
     menu-about-us: "關於 bitcoin.org"
     menu-bitcoin-for-businesses: 商務
     menu-bitcoin-for-developers: 開發人員
@@ -676,7 +677,7 @@ zh_TW:
     menu-privacy: "隱私性"
     menu-resources: 資源
     menu-stats: "統計數據"
-    menu-support-bitcoin: 參與
+    menu-participate: 參與
     menu-vocabulary: 詞彙
     menu-you-need-to-know: "使用須知"
     banner-translate: "這種語言的翻譯已經過時。<a href=\"https://github.com/bitcoin/bitcoin.org#translation\">點擊這裡來幫助把bitcoin.org 翻譯成您的語言</a>。"

@@ -659,6 +659,7 @@ zh_CN:
     tax: "政府税收和法规"
     taxtxt: "比特币不是一种官方货币。也就是说，大多数的行政区域还是会要求你缴纳收入、销售、工资和投资收益等有价值的东西的税款，这其中也包括比特币。确保你遵守了政府和/或者当地市政机关制定的<a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">税收和其他法律法规</a>是你自己的责任。"
   layout:
+    menu-support-bitcoin: "支持比特币"
     menu-about-us: "关于bitcoin.org"
     menu-bitcoin-for-businesses: 商家
     menu-bitcoin-for-developers: 开发者
@@ -676,7 +677,7 @@ zh_CN:
     menu-privacy: "隐私"
     menu-resources: 资源
     menu-stats: "统计数据"
-    menu-support-bitcoin: 参与
+    menu-participate: 参与
     menu-vocabulary: 词汇表
     menu-you-need-to-know: "注意事项"
     banner-translate: "这种语言的翻译已经过期了。<a href=\"https://github.com/bitcoin/bitcoin.org#translation\">点击这里来帮助把 bitcoin.org 翻译成你的语言</a>。"

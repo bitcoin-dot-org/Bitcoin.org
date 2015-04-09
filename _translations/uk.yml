@@ -659,6 +659,7 @@ uk:
     tax: "Податки та державне регулювання"
     taxtxt: "Біткойн не є офіційною валютою. Тим не менше, більшість юрисдикцій вимагають, щоб ви сплачували податки на прибуток, з продажу, на заробітну плату та податок на приріст вартості капіталу з будь-чого, що має цінність, включаючи біткоїни. Ви несете відповідальність за дотримання <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">податкових та інших юридичних або нормативних вимог</a> вашого уряду та/або місцевої влади.   "
   layout:
+    menu-support-bitcoin: "Підтримка Біткойн"
     menu-about-us: "Про bitcoin.org"
     menu-bitcoin-for-businesses: Бізнесу
     menu-bitcoin-for-developers: Розробникам
@@ -676,7 +677,7 @@ uk:
     menu-privacy: "Конфіденційність"
     menu-resources: Ресурси
     menu-stats: "Статистика"
-    menu-support-bitcoin: Взяти участь
+    menu-participate: Взяти участь
     menu-vocabulary: Словник
     menu-you-need-to-know: "Ви повинні це знати"
     banner-translate: "Переклад цією мовою застарілий. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Клікніть сюди, щоб допомогти перекласти bitcoin.org вашою мовою</a>. "
