@@ -102,7 +102,10 @@
     <div class="footerlicense">© Bitcoin Project 2009-{{ site.time | date: '%Y' }} {% translate footer layout %}</div>
     </div>
   </div>
-  <script type="text/javascript">fallbackSVG();</script>
+  <script type="text/javascript">
+    fallbackSVG();
+    addAnchorLinks();
+  </script>
 </body>
 
 </html>
