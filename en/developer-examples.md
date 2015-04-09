@@ -27,7 +27,7 @@ title: "Developer Examples - Bitcoin"
 
 {% include fragment_reviews_needed.md %}
 
-<input id="glossary_term" placeholder="Search the glossary, RPCs, and more">
+<input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
 
 {% include example_intro.md %}
 

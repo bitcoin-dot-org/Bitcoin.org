@@ -113,7 +113,7 @@ module Jekyll
 
       glossary_dir='_data/glossary/en'
 
-      #generate each release based on templates
+      #Generate each definition page based on templates
       Dir.foreach(glossary_dir) do |file|
         next if file == '.' or file == '..'
         lang = 'en'
@@ -122,7 +122,7 @@ module Jekyll
         output_directory = lang + '/glossary/'
         site.pages << GlossaryPage.new(site, site.source, lang, glossary_dir, src, output_directory)
       end
-      #TODO releases are only generated for English language,
+      #TODO definition pages are only generated for English language,
       #but they could also be translated at some point. They would however
       #need to fallback to English when no translation is available.
     end

@@ -15,11 +15,10 @@ lang: en
 
 # {{page.required.title_max_40_characters_no_formatting}}
 
-<input id="glossary_term" placeholder="Search the glossary, RPCs, and more">
+<input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
 
 <div markdown="block" class="notice">
-<span markdown="span">This is a technical glossary.  Regular users should use the [vocabulary
-page](/en/vocabulary).</span>
+<span markdown="span">This definition comes from the [technical glossary](/en/developer-glossary).</span>
 </div>
 
 ## Definition
@@ -30,14 +29,14 @@ page](/en/vocabulary).</span>
 
 {% endautocrossref %}
 
-## Synonyms
+### Synonyms
 
 {% for synonym in page.required.synonyms_shown_in_glossary_capitalize_first_letter %}
 * {{synonym}}
 {% endfor %}
 
 {% if page.optional.not_to_be_confused_with_capitalize_first_letter %}
-## Not To Be Confused With
+### Not To Be Confused With
 
 {% autocrossref %}
 
@@ -50,7 +49,7 @@ page](/en/vocabulary).</span>
 {% endif %}
 
 {% if page.optional.links_html_or_markdown_style_capitalize_first_letter %}
-## Links
+### Links
 {% for link in page.optional.links_html_or_markdown_style_capitalize_first_letter %}
 * {{link}}
 {% endfor %}

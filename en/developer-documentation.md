@@ -13,7 +13,7 @@ title: "Developer Documentation - Bitcoin"
 
 <p class="summary">Find useful resources, guides and reference material for developers.</p>
 
-<input id="glossary_term" placeholder="Search the glossary, RPCs, and more">
+<input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
 
 <div class="docreference">
 <a href="/en/developer-guide"><img src="/img/icons/main_ico_compass.svg" alt="icon"><span>Guide</span></a>
