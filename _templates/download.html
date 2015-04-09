@@ -21,7 +21,7 @@ lin64: "linux64.tar.gz"
 <link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin Core releases">
 <div class="download">
   <h1>{% translate pagetitle %}</h1>
-  <h2>{% translate latestversion %} {{ site.DOWNLOAD_VERSION }}<a type="application/rss+xml" href="/en/rss/releases.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h2>
+  <h2 id="latestversion">{% translate latestversion %} {{ site.DOWNLOAD_VERSION }}<a type="application/rss+xml" href="/en/rss/releases.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h2>
   <div class="mainbutton"><a id="downloadbutton" href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}"><img src="/img/os/but_windows.svg" alt="icon">{% translate download %}</a></div>
   <div class="downloadbox">
     <p>{% translate downloados %}</p>
@@ -81,7 +81,7 @@ lin64: "linux64.tar.gz"
       <a href="/en/version-history">{% translate versionhistory %}</a>
     </p>
   </div>
-  <h2><img src="/img/icons/note.svg" class="warningicon" alt="note">{% translate patient %}</h2>
+  <h2 id="patient"><img src="/img/icons/note.svg" class="warningicon" alt="note">{% translate patient %}</h2>
   <p>{% translate notesync %} {% translate full_node_guide %}</p>
   <p>{% translate notelicense %}</p>
 </div>

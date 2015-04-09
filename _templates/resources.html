@@ -11,13 +11,13 @@ id: resources
 <div class="resources">
 <div>
   <div>
-    <h2><img src="/img/icons/ico_simple.svg" class="titleicon" alt="Icon">{% translate useful %}</h2>
+    <h2 id="useful"><img src="/img/icons/ico_simple.svg" class="titleicon" alt="Icon">{% translate useful %}</h2>
     <p><a href="https://bitcoinfoundation.org/">Bitcoin Foundation</a></p>
     <p>{% translate linkwiki %}</p>
     <p><a href="https://www.weusecoins.com/">WeUseCoins.com</a></p>
     <p><a href="http://www.bitcoinmining.com/">BitcoinMining.com</a></p>
   </div><div>
-    <h2><img src="/img/icons/ico_invoice.svg" class="titleicon" alt="Icon">{% translate directories %}</h2>
+    <h2 id="directories"><img src="/img/icons/ico_invoice.svg" class="titleicon" alt="Icon">{% translate directories %}</h2>
     <p><a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate linkwallets %}</a> - bitcoin.org</p>
     <p><a href="http://coinmap.org/">{% translate linkmerchants %}</a> - coinmap.org</p>
     <p><a href="https://airbitz.co/">{% translate linkmerchants %}</a> - airbitz.co</p>
@@ -29,7 +29,7 @@ id: resources
 </div>
 <div>
   <div>
-    <h2><img src="/img/icons/ico_spread.svg" class="titleicon" alt="Icon">{% translate news %}</h2>
+    <h2 id="news"><img src="/img/icons/ico_spread.svg" class="titleicon" alt="Icon">{% translate news %}</h2>
     {% if page.lang == 'fr' %}<p><a href="http://le-coin-coin.fr/">Le Coin Coin</a></p>{% endif %}
     {% if page.lang == 'fr' %}<p><a href="http://www.bitcoin.fr/">Bitcoin.fr</a></p>{% endif %}
     {% if page.lang == 'bg' %}<p><a href="http://hash.bg/">Hash.bg</a></p>{% endif %}
@@ -40,7 +40,7 @@ id: resources
     <p><a href="http://bitcoinmagazine.com/">Bitcoin Magazine</a></p>
     {% if page.lang == 'ru' %}<p><a href="https://bitcointalk.org/index.php?board=128.0">Биткойн Форум / Новости</a></p>{% else %}<p><a href="https://bitcointalk.org/index.php?board=77.0">BitcoinTalk press links</a></p>{% endif %}
   </div><div>
-    <h2><img src="/img/icons/ico_market.svg" class="titleicon" alt="Icon">{% translate charts %}</h2>
+    <h2 id="charts"><img src="/img/icons/ico_market.svg" class="titleicon" alt="Icon">{% translate charts %}</h2>
     <p><a href="http://blockchain.info/charts">Blockchain.info</a></p>
     <p><a href="https://www.biteasy.com/">Biteasy.com</a></p>
     <p><a href="https://tradeblock.com/">Trade Block</a></p>
@@ -50,10 +50,10 @@ id: resources
 </div>
 <div>
   <div>
-    <h2><img src="/img/icons/ico_doc.svg" class="titleicon" alt="Icon">{% translate documentaries %}</h2>
+    <h2 id="documentaries"><img src="/img/icons/ico_doc.svg" class="titleicon" alt="Icon">{% translate documentaries %}</h2>
     <p><a href="http://bitcoinfilm.org/">BitcoinFilm.org</a></p>
   </div><div>
-    <h2><img src="/img/icons/ico_solve.svg" class="titleicon" alt="Icon">{% translate learn %}</h2>
+    <h2 id="learn"><img src="/img/icons/ico_solve.svg" class="titleicon" alt="Icon">{% translate learn %}</h2>
     <p><a href="http://letstalkbitcoin.com/">Let's Talk Bitcoin</a></p>
     <p><a href="http://www.bitcoin.kn/">Bitcoin Knowledge Podcast</a></p>
     <p><a href="https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/bitcoin/v/bitcoin-what-is-it">Khan Academy</a></p>
