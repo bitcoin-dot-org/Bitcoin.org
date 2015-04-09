@@ -245,4 +245,3 @@ untrusted source.
 </div>
 
 <script>updateToc();</script>
-<script>addAnchorLinks();</script>

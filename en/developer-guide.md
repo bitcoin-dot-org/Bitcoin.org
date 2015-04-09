@@ -54,4 +54,3 @@ of the following file. -->
 </div>
 
 <script>updateToc();</script>
-<script>addAnchorLinks();</script>

@@ -1035,4 +1035,3 @@ instructions, please [open an issue.](https://github.com/bitcoin/bitcoin.org/iss
 
 </div>
 <script>updateToc();</script>
-<script>addAnchorLinks();</script>

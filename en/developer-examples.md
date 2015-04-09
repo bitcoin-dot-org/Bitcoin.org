@@ -41,4 +41,3 @@ title: "Developer Examples - Bitcoin"
 </div>
 
 <script>updateToc();</script>
-<script>addAnchorLinks();</script>
