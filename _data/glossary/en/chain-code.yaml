@@ -1,0 +1,35 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Chain Code, HD Wallet Chain Code
+
+    summary_max_255_characters_no_formatting: >
+        In HD wallets, 256 bits of entropy added to the public and
+        private keys to help them generate secure child keys; the master
+        chain code is usually derived from a seed along with the master
+        private key
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Chain code
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Chain codes
+        - HD wallet chain code
+        - HD wallet chain codes
+        - parent chain code
+        - parent chain codes
+        - child chain code
+        - child chain codes
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Chain code](/en/developer-guide#term-chain-code) --- Bitcoin.org Developer Guide"
+        - "[BIP32: Hierarchical Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) --- Bitcoin Improvement Proposals"
+        - "[Deterministic wallet](https://en.bitcoin.it/wiki/Deterministic_Wallet) --- Bitcoin wiki"
+
+---

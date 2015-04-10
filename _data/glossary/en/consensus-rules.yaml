@@ -1,0 +1,30 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Consensus Rules, Validation Rules
+
+    summary_max_255_characters_no_formatting: >
+        The block validation rules that full nodes follow to stay in
+        consensus with other nodes.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Consensus rules
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - consensus rule
+        - block chain validation rule
+        - Block chain validation rules
+        - validation rule
+        - validation rules
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Consensus (what happens when nodes follow the same consensus rules)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Consensus rules](/en/developer-guide#term-consensus-rules) --- Bitcoin.org Developer Guide"
+
+---

@@ -1,0 +1,31 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Coinbase / Generation Transaction
+
+    summary_max_255_characters_no_formatting: >
+        The first transaction in a block.  Always created by a miner, it
+        includes a single coinbase.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Coinbase transaction
+        - Generation transaction
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Coinbase transactions
+        - generation transactions
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Coinbase (the unique part of a coinbase transaction)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Coinbase transaction](/en/developer-reference#term-coinbase-tx) --- Bitcoin.org Developer Reference"
+        - "[Generation transaction](https://en.bitcoin.it/wiki/Transaction#Generation) --- Bitcoin Wiki"
+        - "[Who generates the coinbase transaction?](http://bitcoin.stackexchange.com/q/32091) --- Bitcoin StackExchange"
+        - "[Must a block contain a coinbase transaction?](http://bitcoin.stackexchange.com/q/30349) --- Bitcoin StackExchange"
+
+---

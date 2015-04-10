@@ -1,0 +1,29 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Payment Addresses
+
+    summary_max_255_characters_no_formatting: >
+        A 20-byte hash formatted using base58check to produce either a
+        P2PKH or P2SH Bitcoin address.  Currently the most common way
+        users exchange payment information.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Address
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - addresses
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - IP address
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Address](/en/developer-guide#term-address) --- Bitcoin.org Developer Guide"
+        - "[Address](https://en.bitcoin.it/wiki/Address) --- Bitcoin Wiki"
+
+
+---

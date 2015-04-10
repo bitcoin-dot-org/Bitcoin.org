@@ -1,0 +1,30 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Hardened Extended Key (HD Wallets)
+
+    summary_max_255_characters_no_formatting: >
+        A variation on HD wallet extended keys where only the hardened
+        extended private key can derive child keys. This prevents
+        compromise of the chain code plus any private key from putting
+        the whole wallet at risk.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Hardened extended key
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - hardened extended keys
+        - hardened extended private key
+        - hardened extended private keys
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Hardened extended private keys](/en/developer-guide#term-hardened-extended-private-key) --- Bitcoin.org Developer Guide"
+        - "[BIP32: hierarchical deterministic wallets](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) --- Bitcoin Improvement Proposals"
+
+---

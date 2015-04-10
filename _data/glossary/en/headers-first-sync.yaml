@@ -1,0 +1,29 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Headers-First, Headers-First Sync
+
+    summary_max_255_characters_no_formatting: >
+        Synchronizing the block chain by downloading block headers
+        before downloading the full blocks.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Headers-first sync
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Headers-first
+        - Headers-first initial block download
+        - Headers-first IBD
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Blocks-first sync (Downloading entire blocks immediately without first getting their headers)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Headers-first sync](/en/developer-guide#headers-first) --- Bitcoin.org Developer Guide"
+        - "[Pull request adding headers-first sync to Bitcoin Core](https://github.com/bitcoin/bitcoin/pull/4468) --- GitHub"
+
+---

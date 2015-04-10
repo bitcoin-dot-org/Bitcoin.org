@@ -1,0 +1,32 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Coinbase, Coinbase Field
+
+    summary_max_255_characters_no_formatting: >
+        A special field used as the sole input for coinbase
+        transactions. The coinbase allows claiming the block reward and
+        provides up to 100 bytes for arbitrary data.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Coinbase
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Coinbases
+
+        - coinbase field
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Coinbase transaction
+        - Coinbase.com
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Coinbase](/en/developer-reference#term-coinbase-field) --- Bitcoin.org Developer Reference"
+        - "[Coinbase](https://en.bitcoin.it/wiki/Coinbase) --- Bitcoin Wiki"
+        - "[What is the coinbase?](http://bitcoin.stackexchange.com/q/4571) --- Bitcoin StackExchange"
+
+---

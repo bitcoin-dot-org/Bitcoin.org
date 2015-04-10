@@ -1,0 +1,31 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Private Key, ECDSA Private Key
+
+    summary_max_255_characters_no_formatting: >
+        The private portion of a keypair which can create signatures
+        that other people can verify using the public key.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Private key
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - private keys
+        - ecdsa private key
+        - secp256k1 private key
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Public key (data derived from the private key)
+        - Parent key (a key used to create child keys, not necessarily a private key)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Private key](/en/developer-guide#term-private-key) --- Bitcoin.org Developer Guide"
+        - "[Private key](https://en.bitcoin.it/wiki/Private_key) --- Bitcoin Wiki"
+        - "[What is a private key?](http://bitcoin.stackexchange.com/q/4675) --- Bitcoin StackExchange"
+
+---

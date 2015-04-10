@@ -1,0 +1,29 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Escrow Contract
+
+    summary_max_255_characters_no_formatting: >
+        A transaction in which a spender and receiver place funds in a
+        2-of-2 (or other m-of-n) multisig output so that neither can
+        spend the funds until they're both satisfied with some
+        external outcome.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Escrow contract
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Escrow contracts
+        - escrow
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Escrow contract](/en/developer-guide#term-escrow-contract) --- Bitcoin.org Developer Guide"
+        - "[Escrow and dispute mediation](https://en.bitcoin.it/wiki/Contracts#Example_2:_Escrow_and_dispute_mediation) --- Bitcoin Wiki"
+
+---

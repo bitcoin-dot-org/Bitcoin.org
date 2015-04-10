@@ -1,0 +1,33 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Block Chain Height, Block Height
+
+    summary_max_255_characters_no_formatting: >
+        The number of blocks preceding a particular block on a block
+        chain. For example, the genesis block has a height of zero
+        because zero block preceded it.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Height
+        - Block height
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - heights
+        - block heights
+        - block chain height
+        - block chain heights
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Block height](/en/developer-guide#term-block-height) --- Bitcoin.org Developer Guide"
+        - "[Definition of block height](http://bitcoin.stackexchange.com/q/18561) --- Bitcoin StackExchange"
+        - "[Why is block height required in the coinbase?](http://bitcoin.stackexchange.com/q/30764) --- Bitcoin StackExchange"
+        - "[Is block height always sequencial?](http://bitcoin.stackexchange.com/q/24309) --- Bitcoin StackExchange"
+
+---

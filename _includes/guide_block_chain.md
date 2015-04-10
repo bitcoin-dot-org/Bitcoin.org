@@ -16,9 +16,9 @@ and modification of previous transaction records.
 Each full node in the Bitcoin network independently stores a block chain
 containing only blocks validated by that node. When several nodes all
 have the same blocks in their block chain, they are considered to be in
-[consensus][]{:#term-consensus}{:.term}. The validation rules these
+[consensus][/en/glossary/consensus]{:#term-consensus}{:.term}. The validation rules these
 nodes follow to maintain consensus are called [consensus
-rules][]{:#term-consensus-rules}{:.term}. This section describes many of
+rules][/en/glossary/consensus-rules]{:#term-consensus-rules}{:.term}. This section describes many of
 the consensus rules used by Bitcoin Core.
 
 {% endautocrossref %}
@@ -31,11 +31,11 @@ the consensus rules used by Bitcoin Core.
 ![Block Chain Overview](/img/dev/en-blockchain-overview.svg)
 
 The illustration above shows a simplified version of a block chain.
-A [block][]{:#term-block}{:.term} of one or more new transactions 
+A [block][/en/glossary/block]{:#term-block}{:.term} of one or more new transactions
 is collected into the transaction data part of a block.
 Copies of each transaction are hashed, and the hashes are then paired,
 hashed, paired again, and hashed again until a single hash remains, the
-[merkle root][]{:#term-merkle-root}{:.term} of a merkle tree.
+[merkle root][/en/glossary/merkle-root]{:#term-merkle-root}{:.term} of a merkle tree.
 
 The merkle root is stored in the block header. Each block also
 stores the hash of the previous block's header, chaining the blocks
@@ -57,20 +57,20 @@ a particular transaction can only be used as an input once in the
 block chain. Any subsequent reference is a forbidden double
 spend---an attempt to spend the same satoshis twice.
 
-Outputs are tied to [transaction identifiers (TXIDs)][txid]{:#term-txid}{:.term}, which are the hashes
+Outputs are tied to [transaction identifiers (TXIDs)][/en/glossary/txid]{:#term-txid}{:.term}, which are the hashes
 of signed transactions.
 
 Because each output of a particular transaction can only be spent once,
 the outputs of all transactions included in the block chain can be categorized as either
-[Unspent Transaction Outputs (UTXOs)][utxo]{:#term-utxo}{:.term} or spent transaction outputs. For a
+[Unspent Transaction Outputs (UTXOs)][/en/glossary/unspent-transaction-output]{:#term-utxo}{:.term} or spent transaction outputs. For a
 payment to be valid, it must only use UTXOs as inputs.
 
 Ignoring coinbase transactions (described later), if the value of a
 transaction's outputs exceed its inputs, the transaction will be
 rejected---but if the inputs exceed the value of the outputs, any
 difference in value may be claimed as a [transaction
-fee][]{:#term-transaction-fee}{:.term} by the Bitcoin
-[miner][]{:#term-miner}{:.term} who creates the block containing that
+fee][/en/glossary/transaction-fee]{:#term-transaction-fee}{:.term} by the Bitcoin
+[miner][/en/glossary/mining]{:#term-miner}{:.term} who creates the block containing that
 transaction.
 For example, in the illustration above, each transaction spends 10,000 satoshis
 fewer than it receives from its combined inputs, effectively paying a 10,000
@@ -94,7 +94,7 @@ in any block without modifying all following blocks. As a
 result, the cost to modify a particular block increases with every new block
 added to the block chain, magnifying the effect of the proof of work.
 
-The [proof of work][]{:#term-proof-of-work}{:.term} used in Bitcoin
+The [proof of work][/en/glossary/proof-of-work]{:#term-proof-of-work}{:.term} used in Bitcoin
 takes advantage of the apparently random nature of cryptographic hashes.
 A good cryptographic hash algorithm converts arbitrary data into a
 seemingly-random number. If the data is modified in any way and
@@ -110,12 +110,12 @@ class="math">2<sup>255</sup></span>.
 
 In the example given above, you will produce a successful hash on average every other try.
 You can even estimate the probability
-that a given hash attempt will generate a number below the [target][]{:#term-target}{:.term}
+that a given hash attempt will generate a number below the [target][/en/glossary/nbits]{:#term-target}{:.term}
 threshold.
 Bitcoin assumes a linear probability that the lower it makes the target threshold, the more hash attempts (on average) will need to be tried.
 
 New blocks will only be added to the block chain if their hash is at
-least as challenging as a [difficulty][]{:#term-difficulty}{:.term} value expected by the consensus protocol.
+least as challenging as a [difficulty][/en/glossary/difficulty]{:#term-difficulty}{:.term} value expected by the consensus protocol.
 Every 2,016 blocks, the network uses timestamps stored in each
 block header to calculate the number of seconds elapsed between generation
 of the first and last of those last 2,016 blocks. The ideal value is
@@ -140,7 +140,7 @@ preceded it, it requires (on average) as much hashing power to
 propagate a modified block as the entire Bitcoin network expended
 between the time the original block was created and the present time.
 Only if you acquired a majority of the network's hashing power
-could you reliably execute such a [51 percent attack][]{:#term-51-attack}{:.term} against
+could you reliably execute such a [51 percent attack][/en/glossary/51-percent-attack]{:#term-51-attack}{:.term} against
 transaction history (although, it should be noted, that even less than 50% of the hashing power still has a good chance of performing such attacks).
 
 The block header provides several easy-to-modify fields, such as a
@@ -162,15 +162,15 @@ Any Bitcoin miner who successfully hashes a block header to a value
 below the target threshold can add the entire block to the block chain
 (assuming the block is otherwise valid).
 These blocks are commonly addressed
-by their [block height][]{:#term-block-height}{:.term}---the number of blocks between them and the first Bitcoin
-block (block 0, most commonly known as the [genesis block]{:#term-genesis-block}{:.term}). For example,
+by their [block height][/en/glossary/block-height]{:#term-block-height}{:.term}---the number of blocks between them and the first Bitcoin
+block (block 0, most commonly known as the [genesis block][/en/glossary/genesis-block]{:#term-genesis-block}{:.term}). For example,
 block 2016 is where difficulty could have first been adjusted.
 
 ![Common And Uncommon Block Chain Forks](/img/dev/en-blockchain-fork.svg)
 
 Multiple blocks can all have the same block height, as is common when
 two or more miners each produce a block at roughly the same time. This
-creates an apparent [fork][]{:#term-fork}{:.term} in the block chain, as shown in the
+creates an apparent [fork][/en/glossary/fork]{:#term-fork}{:.term} in the block chain, as shown in the
 illustration above.
 
 When miners produce simultaneous blocks at the end of the block chain, each
@@ -183,11 +183,11 @@ the competing simultaneously-mined blocks. This makes that side of
 the fork stronger than the other side.
 Assuming a fork only contains valid
 blocks, normal peers always follow the the most difficult chain
-to recreate and throw away [stale blocks][stale block]{:#term-stale-block}{:.term} belonging to shorter forks.
+to recreate and throw away [stale blocks][/en/glossary/stale-block]{:#term-stale-block}{:.term} belonging to shorter forks.
 (Stale blocks are also sometimes called orphans or orphan blocks<!--noref-->, but
 those terms are also used for true orphan blocks without a known parent block.)
 
-[Long-term forks][long-term fork]{:#term-long-term-fork}{:.term} are possible if different miners work at cross-purposes,
+Long-term forks are possible if different miners work at cross-purposes,
 such as some miners diligently working to extend the block chain at the
 same time other miners are attempting a 51 percent attack to revise
 transaction history.
@@ -220,7 +220,7 @@ All transactions, including the coinbase transaction, are encoded into
 blocks in binary rawtransaction format.
 
 The rawtransaction format is hashed to create the transaction
-identifier (txid). From these txids, the [merkle tree][]{:#term-merkle-tree}{:.term} is constructed by pairing each
+identifier (txid). From these txids, the [merkle tree][/en/glossary/merkle-tree]{:#term-merkle-tree}{:.term} is constructed by pairing each
 txid with one other txid and then hashing them together. If there are
 an odd number of txids, the txid without a partner is hashed with a
 copy of itself.
@@ -297,7 +297,7 @@ which gets block chain data from those non-upgraded nodes refuses to
 build on the same chain as mining software getting data from upgraded
 nodes. This creates permanently divergent chains---one for non-upgraded
 nodes and one for upgraded nodes---called a [hard
-fork][]{:#term-hard-fork}{:.term}.
+fork][/en/glossary/hard-fork]{:#term-hard-fork}{:.term}.
 
 ![Hard Fork](/img/dev/en-hard-fork.svg)
 
@@ -307,7 +307,7 @@ majority of the hash rate. That's because, in this case, non-upgraded
 nodes will accept as valid all the same blocks as upgraded nodes, so the
 upgraded nodes can build a stronger chain that the non-upgraded nodes
 will accept as the best valid block chain. This is called a [soft
-fork][]{:#term-soft-fork}{:.term}.
+fork][/en/glossary/soft-fork]{:#term-soft-fork}{:.term}.
 
 ![Soft Fork](/img/dev/en-soft-fork.svg)
 

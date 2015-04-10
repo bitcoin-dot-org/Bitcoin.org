@@ -1,0 +1,37 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: M-of-N Multisig, Multisig Output
+
+    summary_max_255_characters_no_formatting: >
+        A pubkey script that provides *n* number of pubkeys and requires
+        the corresponding signature script provide *m* minimum number
+        signatures corresponding to the provided pubkeys.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Multisig
+        - Bare multisig
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - m-of-n
+        - m-of-n multisig
+        - multisig output
+        - multisignature
+        - multisignatures
+        - multisigs
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - P2SH multisig (a multisig script contained inside P2SH)
+        - Advanced scripts that require multiple signatures without using OP_CHECKMULTISIG or OP_CHECKMULTISIGVERIFY
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Multisig](/en/developer-guide#term-multisig) --- Bitcoin.org Developer Guide"
+        - "[BIP11: m-of-n standard transactions](https://github.com/bitcoin/bips/blob/master/bip-0011.mediawiki) --- Bitcoin Improvement Proposals"
+        - "[What are multi-signature transactions?](http://bitcoin.stackexchange.com/q/3718) --- Bitcoin StackExchange"
+
+
+---

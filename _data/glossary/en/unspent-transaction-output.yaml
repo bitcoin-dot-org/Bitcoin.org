@@ -1,0 +1,27 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Unspent Transaction Output, UTXO
+
+    summary_max_255_characters_no_formatting: >
+        An Unspent Transaction Output (UTXO) that can be spent as an
+        input in a new transaction.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - UTXO
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - utxos
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Output (any output, whether spent or not.  Outputs are a superset of UTXOs)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[UTXO](/en/developer-guide#term-utxo) --- Bitcoin.org Developer Guide"
+        - "[How big is the UTXO database?](http://bitcoin.stackexchange.com/q/35980) --- Bitcoin StackExchange"
+
+---

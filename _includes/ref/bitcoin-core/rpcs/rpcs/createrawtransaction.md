@@ -88,6 +88,6 @@ Result (wrapped):
 * [DecodeRawTransaction][rpc decoderawtransaction]: {{summary_decodeRawTransaction}}
 * [SignRawTransaction][rpc signrawtransaction]: {{summary_signRawTransaction}}
 * [SendRawTransaction][rpc sendrawtransaction]: {{summary_sendRawTransaction}}
-* [Serialized Transaction Format][raw format]
+* [Serialized Transaction Format][raw transaction format]
 
 {% endautocrossref %}

@@ -1,0 +1,27 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Proof Of Work
+
+    summary_max_255_characters_no_formatting: >
+        A hash below a target value which can only be obtained, on
+        average, by performing a certain amount of brute force
+        work---therefore demonstrating proof of work.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Proof of work
+        - POW
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Proof of work](/en/developer-guide#term-proof-of-work) --- Bitcoin.org Developer Guide"
+        - "[Proof of work](https://en.bitcoin.it/wiki/Proof_of_work) --- Bitcoin Wiki"
+
+---

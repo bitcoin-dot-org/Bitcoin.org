@@ -1,0 +1,27 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Merkle Block
+
+    summary_max_255_characters_no_formatting: >
+        A partial merkle tree connecting transactions matching a bloom
+        filter to the merkle root of a block.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Merkle block
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - merkle blocks
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - MerkleBlock message (a P2P protocol message that transmits a merkle block)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Merkle block](/en/developer-reference#merkleblock) --- Bitcoin.org Developer Reference"
+        - "[MerkleBlock P2P protocol message](https://en.bitcoin.it/wiki/Protocol_documentation#filterload.2C_filteradd.2C_filterclear.2C_merkleblock) --- Bitcoin Wiki"
+
+---

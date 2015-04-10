@@ -1,0 +1,27 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Block, Block Of Transactions
+
+    summary_max_255_characters_no_formatting: >
+        One or more transactions prefaced by a block header and
+        protected by proof of work. Blocks are the data stored on the
+        block chain.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Block
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Blocks
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Block](/en/developer-guide#term-block) --- Bitcoin.org Developer Guide"
+        - "[Block](https://en.bitcoin.it/wiki/Block) --- Bitcoin Wiki"
+
+---

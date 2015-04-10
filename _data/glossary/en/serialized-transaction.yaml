@@ -1,0 +1,32 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Serialized Transaction, Raw Transaction
+
+    summary_max_255_characters_no_formatting: >
+        Complete transactions in their binary format; often represented
+        using hexadecimal.  Sometimes called raw format because of the
+        various Bitcoin Core commands with "raw" in their names.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Serialized transaction
+        - Raw transaction
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - serialized transactions
+        - raw transactions
+        - raw format transaction
+        - raw format transactions
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Serialized transactions](/en/developer-reference#term-raw-format) --- Bitcoin.org Developer Guide"
+        - "[Tx message (serialized transaction)](https://en.bitcoin.it/wiki/Protocol_documentation#tx) --- Bitcoin Wiki"
+        - "[Transaction](https://en.bitcoin.it/wiki/Transaction) --- Bitconi Wiki"
+
+---

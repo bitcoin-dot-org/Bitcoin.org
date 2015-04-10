@@ -1,0 +1,31 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: CompactSize Unsigned Integer
+
+    summary_max_255_characters_no_formatting: >
+        A type of variable-length integer commonly used in the Bitcoin
+        P2P protocol and Bitcoin serialized data structures.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - CompactSize
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - compactsize unsigned integer
+        - compactsize unsigned integers
+        - compactsize uint
+        - compactsize uints
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - VarInt (a data type Bitcoin Core uses for local data storage)
+        - Compact (the data type used for nBits in the block header)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[CompactSize Unsigned Integers](/en/developer-reference#compactsize-unsigned-integers) --- Bitcoin.org Developer Reference"
+        - "[Variable length integers (compactSize)](https://en.bitcoin.it/wiki/Protocol_documentation#Variable_length_integer) --- Bitcoin Wiki"
+
+---

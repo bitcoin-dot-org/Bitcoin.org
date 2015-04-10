@@ -11,7 +11,7 @@ http://opensource.org/licenses/MIT.
 
 This section describes the Bitcoin P2P network protocol (but it is [not a
 specification][]). It does not describe the discontinued direct [IP-to-IP
-payment protocol][], the [BIP70 payment protocol][payment protocol], the
+payment protocol][], the [BIP70 payment protocol][/en/glossary/payment-protocol], the
 [GetBlockTemplate mining protocol][section getblocktemplate], or any
 network protocol never implemented in an official version of Bitcoin Core.
 
@@ -30,7 +30,7 @@ integers mentioned in this section are transmitted in little-endian order.
 The following constants and defaults are taken from Bitcoin Core's
 [chainparams.cpp][core chainparams.cpp] source code file. 
 
-| Network | Default Port | [Start String][]{:#term-start-string}{:.term} | Max nBits
+| Network | Default Port | [Start String][/en/glossary/start-string]{:#term-start-string}{:.term} | Max nBits
 |---------|--------------|-----------------------------------------------|---------------
 | Mainnet | 8333         | 0xf9beb4d9                                    | 0x1d00ffff
 | Testnet | 18333        | 0x0b110907                                    | 0x1d00ffff
@@ -118,7 +118,7 @@ transactions and blocks.
 ![Overview Of P2P Protocol Data Request And Reply Messages](/img/dev/en-p2p-data-messages.svg)
 
 Many of the data messages use
-[inventories][inventory]{:#term-inventory}{:.term} as unique identifiers
+[inventories][/en/glossary/inventory]{:#term-inventory}{:.term} as unique identifiers
 for transactions and blocks.  Inventories have a simple 36-byte
 structure:
 
@@ -147,7 +147,7 @@ one of these unknown types.
 {% autocrossref %}
 
 The `block` message transmits a single serialized block in the format
-described in the [serialized blocks section][serialized block].
+described in the [serialized blocks section][section serialized blocks].
 See that section for an example hexdump.  It can be sent for two
 different reasons:
 
@@ -272,7 +272,7 @@ previously requested certain headers with a `getheaders` message.
 | Bytes    | Name    | Data Type        | Description
 |----------|---------|------------------|-----------------
 | *Varies* | count   | compactSize uint | Number of block headers up to a maximum of 2,000.  Note: headers-first sync assumes the sending node will send the maximum number of headers whenever possible.
-| *Varies* | headers | block_header     | Block headers: each 80-byte block header is in the format described in the [block headers section][block header] with an additional 0x00 suffixed.  This 0x00 is called the transaction count, but because the headers message doesn't include any transactions, the transaction count is always zero.
+| *Varies* | headers | block_header     | Block headers: each 80-byte block header is in the format described in the [block headers section][section block header] with an additional 0x00 suffixed.  This 0x00 is called the transaction count, but because the headers message doesn't include any transactions, the transaction count is always zero.
 
 The following annotated hexdump shows a `headers` message.  (The message
 header has been omitted.)
@@ -375,7 +375,7 @@ be complete:
   being processed by the filter.
 
 There is no payload in a `mempool` message.  See the [message header
-section][message header] for an example of a message without a payload.
+section][section message header] for an example of a message without a payload.
 
 {% endautocrossref %}
 
@@ -401,7 +401,7 @@ proof of work.
 
 | Bytes    | Name               | Data Type        | Description
 |----------|--------------------|------------------|----------------
-| 80       | block header       | block_header     | The block header in the format described in the [block header section][block header].
+| 80       | block header       | block_header     | The block header in the format described in the [block header section][section block header].
 | 4        | transaction count  | uint32_t         | The number of transactions in the block (including ones that don't match the filter).
 | *Varies* | hash count         | compactSize uint | The number of hashes in the following field.
 | *Varies* | hashes             | char[32]         | One or more hashes of both transactions and merkle nodes in internal byte order.  Each hash is 32 bits.
@@ -606,7 +606,7 @@ format. It can be sent in a variety of situations;
   transactions it originates.
 
 For an example hexdump of the raw transaction format, see the [raw
-transaction section][raw format].
+transaction section][raw transaction format].
 
 {% endautocrossref %}
 
@@ -845,7 +845,7 @@ replacement filter is loaded with `filterload`.  It also doesn't require
 a `filterload` message before a `filterclear` message.
 
 There is no payload in a `filterclear` message.  See the [message header
-section][message header] for an example of a message without a payload.
+section][section message header] for an example of a message without a payload.
 
 {% endautocrossref %}
 
@@ -1100,7 +1100,7 @@ database of available nodes rather than waiting for unsolicited `addr`
 messages to arrive over time.
 
 There is no payload in a `getaddr` message.  See the [message header
-section][message header] for an example of a message without a payload.
+section][section message header] for an example of a message without a payload.
 
 {% endautocrossref %}
 
@@ -1218,7 +1218,7 @@ The `verack` message acknowledges a previously-received `version`
 message, informing the connecting node that it can begin to send
 other messages. The `verack` message has no payload; for an example
 of a message with no payload, see the [message headers
-section][message header].
+section][section message header].
 
 {% endautocrossref %}
 

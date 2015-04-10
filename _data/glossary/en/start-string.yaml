@@ -1,0 +1,28 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Start String, Network Magic
+
+    summary_max_255_characters_no_formatting: >
+        Four defined bytes which start every message in the Bitcoin P2P
+        protocol to allow seeking to the next message.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Start string
+        - Network magic
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - start strings
+        - magic
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Start string](/en/developer-reference#term-start-string) --- Bitcoin.org Developer Reference"
+        - "[How was the start string chosen?](http://bitcoin.stackexchange.com/q/2337) --- Bitcoin StackExchange"
+
+---
