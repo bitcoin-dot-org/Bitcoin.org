@@ -224,12 +224,12 @@ of the process.
   pubkey hash at the top of the stack.
 
 * Now it gets interesting: Alice's pubkey script executes `OP_EQUALVERIFY`.
-  `OP_EQUALVERIFY` is like executing `OP_EQUAL` followed by `OP_VERIFY` (not shown).
+  `OP_EQUALVERIFY` is equivalent to executing `OP_EQUAL` followed by `OP_VERIFY` (not shown).
 
-    `OP_EQUAL` (not shown) checks the two values below it; in this
+    `OP_EQUAL` (not shown) checks the two values at the top of the stack; in this
     case, it checks whether the pubkey hash generated from the full
     public key Bob provided equals the pubkey hash Alice provided when
-    she created transaction #1. `OP_EQUAL` pops (removes from the stack)
+    she created transaction #1. `OP_EQUAL` pops (removes from the top of the stack)
     the two values it compared, and replaces them with the result of that comparison:
     zero (*false*) or one (*true*).
 
