@@ -20,7 +20,7 @@ test their applications with reduced risks and limitations.
 {% autocrossref %}
 
 When run with no arguments, all Bitcoin Core programs default to Bitcoin's main
-network ([mainnet][/en/glossary/mainnet]{:#term-mainnet}{:.term}). However, for development,
+network ([mainnet][mainnet]{:#term-mainnet}{:.term}). However, for development,
 it's safer and cheaper to use Bitcoin's test network (testnet)
 where the satoshis spent have no real-world value. Testnet also relaxes some
 restrictions (such as standard transaction checks) so you can test functions

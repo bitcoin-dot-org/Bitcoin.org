@@ -161,7 +161,7 @@ bytes commonly used by Bitcoin are:
 4. Append the checksum to the version and hash, and encode it as a base58
    string: <!--[-->`BASE58(version . hash . checksum)`<!--]-->
  
-Bitcoin's base58 encoding, called [Base58Check][/en/glossary/base58check]{:#term-base58check}{:.term} may not match other implementations. Tier
+Bitcoin's base58 encoding, called [Base58Check][]{:#term-base58check}{:.term} may not match other implementations. Tier
 Nolan provided the following example encoding algorithm to the Bitcoin
 Wiki [Base58Check
 encoding](https://en.bitcoin.it/wiki/Base58Check_encoding) page under
@@ -202,7 +202,7 @@ against the extracted checksum, and then remove the version byte.
 {% autocrossref %}
 
 Bitcoin transactions are broadcast between peers
-in a serialized byte format, called [raw format][/en/glossary/serialized-transaction]{:#term-raw-format}{:.term}.
+in a serialized byte format, called [raw format][]{:#term-raw-format}{:.term}.
 It is this form of a transaction which is SHA256(SHA256()) hashed to create
 the TXID and, ultimately, the merkle root of a block containing the
 transaction---making the transaction format part of the consensus rules.
@@ -229,7 +229,7 @@ A raw transaction has the following top-level format:
 A transaction may have multiple inputs and outputs, so the txIn and
 txOut structures may recur within a transaction. CompactSize unsigned
 integers are a form of variable-length integers; they are described in
-the [CompactSize section][section CompactSize unsigned integer].
+the [CompactSize section][CompactSize unsigned integer].
 
 {% endautocrossref %}
 
@@ -247,7 +247,7 @@ Each non-coinbase input spends an outpoint from a previous transaction.
 | 36       | previous_output  | outpoint             | The previous outpoint being spent.  See description of outpoint below.
 | *Varies* | script bytes     | compactSize uint     | The number of bytes in the signature script.  Maximum is 10,000 bytes.
 | *Varies* | signature script | char[]               | A script-language script which satisfies the conditions placed in the outpoint's pubkey script.  Should only contain data pushes; see the [signature script modification warning][].
-| 4        | sequence         | uint32_t             | Sequence number.  Default for Bitcoin Core and almost all other programs is 0xffffffff.
+| 4        | sequence         | uint32_t             | Sequence number; see [sequence number][].  Default for Bitcoin Core and almost all other programs is 0xffffffff.
 
 {% endautocrossref %}
 
@@ -341,9 +341,9 @@ has the following format.
 | 32       | hash (null)        | char[32]             | A 32-byte null, as a coinbase has no previous outpoint.
 | 4        | index (UINT32_MAX) | uint32_t             | 0xffffffff, as a coinbase has no previous outpoint.
 | *Varies* | script bytes       | compactSize uint     | The number of bytes in the coinbase script, up to a maximum of 100 bytes.
-| *Varies* (4) | height         | script               | The [block height][/en/glossary/coinbase]{:#term-coinbase-block-height}{:.term} of this block as required by BIP34.  Uses script language: starts with a data-pushing op code that indicates how many bytes to push to the stack followed by the block height as a little-endian unsigned integer.  This script must be as short as possible, otherwise it may be rejected.<br/><br/>  The data-pushing op code will be 0x03 and the total size four bytes until block 16,777,216 about 300 years from now.
-| *Varies* | coinbase script    | *None*               | The [coinbase field][/en/glossary/coinbase]{:#term-coinbase-field}{:.term}: Arbitrary data not exceeding 100 bytes minus the (4) height bytes.  Miners commonly place an extra nonce in this field to update the block header merkle root during hashing.
-| 4        | sequence           | uint32_t             | Sequence number.
+| *Varies* (4) | height         | script               | The [block height][]{:#term-coinbase-block-height}{:.term} of this block as required by BIP34.  Uses script language: starts with a data-pushing op code that indicates how many bytes to push to the stack followed by the block height as a little-endian unsigned integer.  This script must be as short as possible, otherwise it may be rejected.<br/><br/>  The data-pushing op code will be 0x03 and the total size four bytes until block 16,777,216 about 300 years from now.
+| *Varies* | coinbase script    | *None*               | The [coinbase field][]{:#term-coinbase-field}{:.term}: Arbitrary data not exceeding 100 bytes minus the (4) height bytes.  Miners commonly place an extra nonce in this field to update the block header merkle root during hashing.
+| 4        | sequence           | uint32_t             | Sequence number; see [sequence number][].
 
 Most (but not all) blocks prior to block height 227,836 used block
 version 1 which did not require the height parameter to be prefixed to

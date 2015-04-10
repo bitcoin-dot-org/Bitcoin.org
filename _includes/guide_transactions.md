@@ -33,8 +33,8 @@ about coinbase transactions in the block chain section of this guide.
 ![The Parts Of A Transaction](/img/dev/en-tx-overview.svg)
 
 The figure above shows the main parts of a Bitcoin transaction. Each
-transaction has at least one input and one output. Each [input][/en/glossary/input]{:#term-input}{:.term} spends the
-satoshis paid to a previous output. Each [output][/en/glossary/output]{:#term-output}{:.term} then waits as an Unspent
+transaction has at least one input and one output. Each [input][]{:#term-input}{:.term} spends the
+satoshis paid to a previous output. Each [output][]{:#term-output}{:.term} then waits as an Unspent
 Transaction Output (UTXO) until a later input spends it. When your
 Bitcoin wallet tells you that you have a 10,000 satoshi balance, it really
 means that you have 10,000 satoshis waiting in one or more UTXOs.
@@ -63,7 +63,7 @@ The figures below help illustrate how these features are used by
 showing the workflow Alice uses to send Bob a transaction and which Bob
 later uses to spend that transaction. Both Alice and Bob will use the
 most common form of the standard Pay-To-Public-Key-Hash (P2PKH) transaction
-type. [P2PKH][/en/glossary/p2pkh-address]{:#term-p2pkh}{:.term} lets Alice spend satoshis to a typical Bitcoin address,
+type. [P2PKH][]{:#term-p2pkh}{:.term} lets Alice spend satoshis to a typical Bitcoin address,
 and then lets Bob further spend those satoshis using a simple
 cryptographic key pair.
 
@@ -71,9 +71,10 @@ cryptographic key pair.
 
 Bob must first generate a private/public [key pair][]{:#term-key-pair}{:.term} before Alice can create the
 first transaction. Bitcoin uses the Elliptic Curve Digital Signature Algorithm (ECDSA) with
-the secp256k1 curve; secp256k1 [private keys][/en/glossary/private-key]{:#term-private-key}{:.term} are 256 bits of random
+the secp256k1 curve; secp256k1 [private keys][private
+key]{:#term-private-key}{:.term} are 256 bits of random
 data. A copy of that data is deterministically transformed into an secp256k1 [public
-key][/en/glossary/public-key]{:#term-public-key}{:.term}. Because the transformation can be reliably repeated later, the
+key][]{:#term-public-key}{:.term}. Because the transformation can be reliably repeated later, the
 public key does not need to be stored.
 
 The public key (pubkey) is then cryptographically hashed. This pubkey hash can
@@ -88,8 +89,8 @@ and "full public key" to provide quick differentiation between the
 different states of a public key and to help the text better match the
 space-constrained diagrams where "public-key hash" wouldn't fit. -harding -->
 
-Bob provides the pubkey hash to Alice. Pubkey hashes are almost always
-sent encoded as Bitcoin [addresses][/en/glossary/address]{:#term-address}{:.term}, which are base58-encoded strings
+Bob provides the [pubkey hash][]{:#term-pubkey-hash}{:.term} to Alice. Pubkey hashes are almost always
+sent encoded as Bitcoin [addresses][]{:#term-address}{:.term}, which are base58-encoded strings
 containing an address version number, the hash, and an error-detection
 checksum to catch typos. The address can be transmitted
 through any medium, including one-way mediums which prevent the spender
@@ -101,7 +102,7 @@ Once Alice has the address and decodes it back into a standard hash, she
 can create the first transaction. She creates a standard P2PKH
 transaction output containing instructions which allow anyone to spend that
 output if they can prove they control the private key corresponding to
-Bob's hashed public key. These instructions are called the [pubkey script][/en/glossary/pubkey-script]{:#term-pubkey-script}{:.term}
+Bob's hashed public key. These instructions are called the [pubkey script][]{:#term-pubkey-script}{:.term}
 or scriptPubKey.
 
 Alice broadcasts the transaction and it is added to the block chain.
@@ -112,7 +113,7 @@ When, some time later, Bob decides to spend the UTXO, he must create an
 input which references the transaction Alice created by its hash, called
 a Transaction Identifier (txid), and the specific output she used by its
 index number ([output index][]{:#term-output-index}{:.term}). He must then create a [signature
-script][/en/glossary/signature-script]{:#term-signature-script}{:.term}---a
+script][]{:#term-signature-script}{:.term}---a
 collection of data parameters which satisfy the conditions Alice placed
 in the previous output's pubkey script.  Signature scripts are also
 called scriptSigs.
@@ -129,7 +130,7 @@ pieces of data:
 1. His full (unhashed) public key, so the pubkey script can check that it
    hashes to the same value as the pubkey hash provided by Alice.
 
-2. An secp256k1 [signature][/en/glossary/signature]{:#term-signature}{:.term} made by using the ECDSA cryptographic formula to combine
+2. An secp256k1 [signature][]{:#term-signature}{:.term} made by using the ECDSA cryptographic formula to combine
    certain transaction data (described below) with Bob's private key.
    This lets the pubkey script verify that Bob owns the private key which
    created the public key.
@@ -186,7 +187,7 @@ and full public key (pubkey), creating the following concatenation:
 
 The script language is a
 [Forth-like](https://en.wikipedia.org/wiki/Forth_%28programming_language%29)
-stack-based language deliberately designed to be stateless and not
+[stack][]{:#term-stack}{:.term}-based language deliberately designed to be stateless and not
 Turing complete. Statelessness ensures that once a transaction is added
 to the block chain, there is no condition which renders it permanently
 unspendable. Turing-incompleteness (specifically, a lack of loops or
@@ -262,10 +263,10 @@ between programs prior to widespread implementation of the BIP70 Payment
 Protocol discussed later.
 
 To solve these problems, pay-to-script-hash
-([P2SH][/en/glossary/p2sh-address]{:#term-p2sh}{:.term}) transactions were created in 2012 to let
-a spender create a pubkey script containing a hash of a second
-script, the
-[redeem script][/en/glossary/redeem-script]{:#term-redeem-script}{:.term}.
+([P2SH][]{:#term-p2sh}{:.term}) transactions were created in 2012 to let
+a spender create a pubkey script containing a [hash of a second
+script][script hash]{:#term-script-hash}{:.term}, the
+[redeem script][]{:#term-redeem-script}{:.term}.
 
 The basic P2SH workflow, illustrated below, looks almost identical to
 the P2PKH workflow. Bob creates a redeem script with whatever script he
@@ -408,7 +409,7 @@ Signature script: OP_0 <A sig> <C sig> <redeemScript>
 
 {% autocrossref %}
 
-Pubkey outputs are a simplified form of the P2PKH pubkey script,
+[Pubkey][]{:#term-pubkey}{:.term} scripts are a simplified form of the P2PKH pubkey script,
 but they aren’t as
 secure as P2PKH, so they generally
 aren’t used in new transactions anymore.
@@ -426,7 +427,7 @@ Signature script: <sig>
 
 {% autocrossref %}
 
-[Null data][/en/glossary/null-data-transaction]{:#term-null-data}{:.term} pubkey scripts let you add a small amount of arbitrary data to the block
+[Null data][]{:#term-null-data}{:.term} pubkey scripts let you add a small amount of arbitrary data to the block
 chain in exchange for paying a transaction fee, but doing so is discouraged.
 (Null data is a standard pubkey script type only because some people were adding data
 to the block chain in more harmful ways.)
@@ -507,36 +508,36 @@ from modification, this lets signers selectively choose to let other
 people modify their transactions.
 
 The various options for what to sign are
-called [signature hash][/en/glossary/signature-hash]{:#term-signature-hash}{:.term} types. There are three base SIGHASH types
+called [signature hash][]{:#term-signature-hash}{:.term} types. There are three base SIGHASH types
 currently available:
 
-* [`SIGHASH_ALL`][/en/glossary/sighash-all]{:#term-sighash-all}{:.term}, the default, signs all the inputs and outputs,
+* [`SIGHASH_ALL`][sighash_all]{:#term-sighash-all}{:.term}, the default, signs all the inputs and outputs,
   protecting everything except the signature scripts against modification.
 
-* [`SIGHASH_NONE`][/en/glossary/sighash-none]{:#term-sighash-none}{:.term} signs all of the inputs but none of the outputs,
+* [`SIGHASH_NONE`][sighash_none]{:#term-sighash-none}{:.term} signs all of the inputs but none of the outputs,
   allowing anyone to change where the satoshis are going unless other
   signatures using other signature hash flags protect the outputs.
 
-* [`SIGHASH_SINGLE`][/en/glossary/sighash-none]{:#term-sighash-single}{:.term} signs only this input and only one corresponding
+* [`SIGHASH_SINGLE`][sighash_single]{:#term-sighash-single}{:.term} signs only this input and only one corresponding
   output (the output with the same output index number as the input), ensuring
   nobody can change your part of the transaction but allowing other
   signers to change their part of the transaction. The corresponding
   output must exist or the value "1" will be signed, breaking the security
   scheme.
 
-The base types can be modified with the [`SIGHASH_ANYONECANPAY`][/en/glossary/sighash-anyonecanpay]{:#term-sighash-anyonecanpay}{:.term} (anyone can
+The base types can be modified with the [`SIGHASH_ANYONECANPAY`][shacp]{:#term-sighash-anyonecanpay}{:.term} (anyone can
 pay) flag, creating three new combined types:
 
-* `SIGHASH_ALL|SIGHASH_ANYONECANPAY` signs all of the outputs but only
+* [`SIGHASH_ALL|SIGHASH_ANYONECANPAY`][sha_shacp]{:#term-sighash-all-sighash-anyonecanpay}{:.term} signs all of the outputs but only
   this one input, and it also allows anyone to add or remove other
   inputs, so anyone can contribute additional satoshis but they cannot
   change how many satoshis are sent nor where they go.
 
-* `SIGHASH_NONE|SIGHASH_ANYONECANPAY` signs only this one input and
+* [`SIGHASH_NONE|SIGHASH_ANYONECANPAY`][shn_shacp]{:#term-sighash-none-sighash-anyonecanpay}{:.term} signs only this one input and
   allows anyone to add or remove other inputs or outputs, so anyone who
   gets a copy of this input can spend it however they'd like.
 
-* `SIGHASH_SINGLE|SIGHASH_ANYONECANPAY` signs only this input and only
+* [`SIGHASH_SINGLE|SIGHASH_ANYONECANPAY`][shs_shacp]{:#term-sighash-single-sighash-anyonecanpay}{:.term} signs only this input and only
   one corresponding output, but it also allows anyone to add or remove
   other inputs.
 
@@ -563,7 +564,7 @@ hash types sign, including the procedure for inserting the subscript -->
 
 {% autocrossref %}
 
-One thing all signature hash types sign is the transaction's [locktime][/en/glossary/locktime]{:#term-locktime}{:.term}.
+One thing all signature hash types sign is the transaction's [locktime][]{:#term-locktime}{:.term}.
 (Called nLockTime in the Bitcoin Core source code.)
 The locktime indicates the earliest time a transaction can be added to
 the block chain.  
@@ -590,7 +591,7 @@ Previous versions of Bitcoin Core provided a feature which prevented
 transaction signers from using the method described above to cancel a
 time-locked transaction, but a necessary part of this feature was
 disabled to prevent denial of service attacks. A legacy of this system are four-byte
-[sequence numbers][/en/glossary/sequence-number]{:#term-sequence-number}{:.term} in every input. Sequence numbers were meant to allow
+[sequence numbers][sequence number]{:#term-sequence-number}{:.term} in every input. Sequence numbers were meant to allow
 multiple signers to agree to update a transaction; when they finished
 updating the transaction, they could agree to set every input's
 sequence number to the four-byte unsigned maximum (0xffffffff),
@@ -624,20 +625,20 @@ enable locktime.
 
 Transactions typically pay transaction fees based on the total byte size
 of the signed transaction.  The transaction fee is given to the
-Bitcoin miner, as explained in the [block chain section][section block chain], and so it is
+Bitcoin miner, as explained in the [block chain section][block chain], and so it is
 ultimately up to each miner to choose the minimum transaction fee they
 will accept.
 
 <!-- TODO: check: 50 KB or 50 KiB?  Not that transactors care... -->
 
 By default, miners reserve 50 KB of each block for [high-priority
-transactions][/en/glossary/high-priority-transaction]{:#term-high-priority-transactions}{:.term} which spend satoshis that haven't been spent for a long
+transactions][]{:#term-high-priority-transactions}{:.term} which spend satoshis that haven't been spent for a long
 time.  The remaining space in each block is typically allocated to transactions
 based on their fee per byte, with higher-paying transactions being added
 in sequence until all of the available space is filled.
 
 As of Bitcoin Core 0.9, transactions which do not count as high-priority transactions
-need to pay a [minimum fee][/en/glossary/minimum-relay-fee]{:#term-minimum-fee}{:.term} (currently 1,000 satoshis) to be
+need to pay a [minimum fee][]{:#term-minimum-fee}{:.term} (currently 1,000 satoshis) to be
 broadcast across the network. Any transaction paying only the minimum fee
 should be prepared to wait a long time before there's enough spare space
 in a block to include it. Please see the [verifying payment section][section verifying payment]
@@ -649,7 +650,7 @@ UTXOs must be spent or given to a miner as a transaction fee.  Few
 people will have UTXOs that exactly match the amount they want to pay,
 so most transactions include a change output.
 
-[Change outputs][/en/glossary/change-address]{:#term-change-output}{:.term} are regular outputs which spend the surplus satoshis
+[Change outputs][change output]{:#term-change-output}{:.term} are regular outputs which spend the surplus satoshis
 from the UTXOs back to the spender.  They can reuse the same P2PKH pubkey hash
 or P2SH script hash as was used in the UTXO, but for the reasons
 described in the [next subsection](#avoiding-key-reuse), it is highly recommended that change
@@ -718,7 +719,7 @@ fixed URI to which payments should be sent, please see the
 
 None of Bitcoin's signature hash types protect the signature script, leaving
 the door open for a limited denial of service attack called [transaction
-malleability][/en/glossary/malleability]{:.term}{:#term-transaction-malleability}. The signature script
+malleability][]{:.term}{:#term-transaction-malleability}. The signature script
 contains the secp256k1 signature, which can't sign itself, allowing attackers to
 make non-functional modifications to a transaction without rendering it
 invalid. For example, an attacker can add some data to the signature script

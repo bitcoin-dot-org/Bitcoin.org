@@ -86,6 +86,6 @@ Result:
 
 * [AddMultiSigAddress][rpc addmultisigaddress]: {{summary_addMultiSigAddress}}
 * [DecodeScript][rpc decodescript]: {{summary_decodeScript}}
-* [Pay-To-Script-Hash (P2SH)][/en/glossary/p2sh-address]
+* [Pay-To-Script-Hash (P2SH)][P2SH]
 
 {% endautocrossref %}

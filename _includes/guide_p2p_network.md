@@ -37,8 +37,8 @@ IP addresses.
 
 When started for the first time, programs don't know the IP
 addresses of any active full nodes. In order to discover some IP
-addresses, they query one or more DNS names (called [DNS seeds][/en/glossary/dns-seed]{:#term-dns-seed}{:.term})
-hardcoded into Bitcoin Core and
+addresses, they query one or more DNS names (called [DNS seeds][dns
+seed]{:#term-dns-seed}{:.term}) hardcoded into Bitcoin Core and
 BitcoinJ. The response to the lookup should include one or more [DNS
 A records][] with the IP addresses of full nodes that may accept new
 incoming connections. For example, using the [Unix `dig`
@@ -317,7 +317,7 @@ to the reference page for that message.
 
 Bitcoin Core 0.10.0 uses an initial block download (IBD) method called
 *headers-first*. The goal is to download the headers for the best [header
-chain][/en/glossary/header-chain]{:#term-header-chain}{:.term}, partially validate them as best
+chain][]{:#term-header-chain}{:.term}, partially validate them as best
 as possible, and then download the corresponding blocks in parallel.  This
 solves several problems with the older blocks-first IBD method.
 
@@ -469,7 +469,7 @@ block retrieval method.)
 | **Payload** | The inventory of the new block                         | The inventory of the new block             | One or more header hashes on the HF node's best header chain (BHC)     | Up to 2,000 headers connecting HF node's BHC to relay node's BHC
 | **Message** | [`block`][block message]                               | [`merkleblock`][merkleblock message]       | [`tx`][tx message]                                                     |
 | **From→To** | Relay→BF/HF                                            | Relay→SPV                                  | Relay→SPV                                                              |
-| **Payload** | The new block in [serialized format][section serialized blocks] | The new block filtered into a merkle block | Serialized transactions from the new block that match the bloom filter |
+| **Payload** | The new block in [serialized format][serialized block] | The new block filtered into a merkle block | Serialized transactions from the new block that match the bloom filter |
 
 {% endautocrossref %}
 

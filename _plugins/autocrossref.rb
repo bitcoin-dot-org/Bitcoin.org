@@ -35,36 +35,11 @@ require 'yaml'
 
       ## Workaround for inconsistent relative directory
       path = File.expand_path(File.dirname(__FILE__)) + "/.."
-      ## Load terms from file only if we haven't loaded them before
+      ## Load terms from file
       site = context.registers[:site].config
-      if !site.has_key?("crossref_loaded")
-
-        ## Load refs from file and then downcase them all so we can
-        ## easily detect when we define xrefs more than once
-        mixed_case_refs = YAML.load_file(path + "/_autocrossref.yaml")
-        unvalidated_refs = Hash.new
-        mixed_case_refs.each { |key, value|
-          unvalidated_refs[key.to_s.downcase] = value.to_s.downcase
-        }
-
-        if site.has_key?("crossref")
-          ## We already have refs loaded, so merge
-          site['crossref'].merge!(unvalidated_refs) {
-            |key, old_value, new_value|
-
-            if old_value != new_value
-              abort("Error: autocrossref key '#{key}' wants to point to both '#{old_value}' and '#{new_value}'")
-            end
-
-            new_value
-          }
-        else
-          ## We don't have refs loaded yet, so copy
-          site['crossref'] = unvalidated_refs
-        end
-        site['crossref_loaded'] = true
+      if !site.has_key?("crossref")
+        site['crossref'] = YAML.load_file(path + "/_autocrossref.yaml")
       end
-
 
       ## Sort terms by reverse length, so longest matches get linked
       ## first (e.g. "block chain" before "block"). Otherwise short
@@ -101,7 +76,7 @@ require 'yaml'
             (?!\w)  ## Don't match inside words
             (?!`)   ## Don't match strings ending with a tic, unless the xref itself ends with a tic
           /xmi) {|s|
-              if term[1] == "do not autocrossref"
+              if term[1] == "DO NOT AUTOCROSSREF"
                   s.gsub(/( |$)/, "<!--noref-->\\&")
               else
                   "[#{s}][#{term[1]}]{:.auto-link}"

@@ -7,7 +7,6 @@ lang: en
 id: developer-reference
 title: "Developer Reference - Bitcoin"
 ---
-<link rel="stylesheet" href="/css/jquery-ui.min.css">
 
 <!-- This should be empty, but comment it out just in case: {% include helpers/vars.md %} -->
 
@@ -28,8 +27,6 @@ title: "Developer Reference - Bitcoin"
 <div markdown="1" class="toccontent">
 
 {% include fragment_reviews_needed.md %}
-
-<input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
 
 {% include ref_intro.md %}
 
@@ -244,12 +241,8 @@ untrusted source.
 {% include ref/bitcoin-core/rest/requests/get_tx.md %}
 
 {% include references.md %}
-{{site.glossary_links}}
 
 </div>
 
 <script>updateToc();</script>
 <script>addAnchorLinks();</script>
-<script src="/js/jquery-1.11.2.min.js"></script>
-<script src="/js/jquery-ui.min.js"></script>
-<script src="/js/devsearch.js"></script>

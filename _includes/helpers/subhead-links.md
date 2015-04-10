@@ -7,5 +7,5 @@ http://opensource.org/licenses/MIT.
 | <a href="https://github.com/bitcoin/bitcoin.org/issues/new?body=Source%20File%3A%20{{filename|uri_escape}}%0A%0A">Report Issue</a>
 | <a href="/en/development#devcommunities">Discuss</a></div>
 {% else %}
-{% die "source filename not set" %}
+{% die %}
 {% endif %}

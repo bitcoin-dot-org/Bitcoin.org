@@ -93,6 +93,6 @@ Result:
 *See also*
 
 * [CreateMultiSig][rpc createmultisig]: {{summary_createMultiSig}}
-* [Pay-To-Script-Hash (P2SH)][/en/glossary/p2sh-address]
+* [Pay-To-Script-Hash (P2SH)][P2SH]
 
 {% endautocrossref %}

@@ -7,19 +7,15 @@ lang: en
 id: developer-documentation
 title: "Developer Documentation - Bitcoin"
 ---
-<link rel="stylesheet" href="/css/jquery-ui.min.css">
 
 # Developer Documentation
 
 <p class="summary">Find useful resources, guides and reference material for developers.</p>
 
-<input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
-
 <div class="docreference">
-<a href="/en/developer-guide"><img src="/img/icons/main_ico_compass.svg" alt="icon"><span>Guide</span></a>
-<a href="/en/developer-reference"><img src="/img/icons/main_ico_guide.svg" alt="icon"><span>Reference</span></a>
-<a href="/en/developer-examples"><img src="/img/icons/main_ico_hash.svg" alt="icon"><span>Examples</span></a>
-<a href="/en/developer-glossary"><img src="/img/icons/main_ico_abc.svg" alt="icon"><span>Glossary</span></a>
+<a href="/en/developer-guide"><img src="/img/icons/main_ico_compass.svg" alt="icon"><span>Developer Guide</span><span>(How Bitcoin works)</span></a>
+<a href="/en/developer-reference"><img src="/img/icons/main_ico_guide.svg" alt="icon"><span>Developer Reference</span><span>(Technical details and APIs)</span></a>
+<a href="/en/developer-examples"><img src="/img/icons/main_ico_hash.svg" alt="icon"><span>Developer Examples</span><span>(Examples you can use)</span></a>
 </div>
 
 <div class="resources">
@@ -93,6 +89,3 @@ title: "Developer Documentation - Bitcoin"
   <p><a href="https://bitcoinj.github.io/#documentation">Bitcoinj Developer Documentation</a> - bitcoinj.org</p>
   <p><a href="https://en.bitcoin.it/wiki/Category:Technical">Technical Pages</a> - Wiki</p>
 </div></div>
-<script src="/js/jquery-1.11.2.min.js"></script>
-<script src="/js/jquery-ui.min.js"></script>
-<script src="/js/devsearch.js"></script>

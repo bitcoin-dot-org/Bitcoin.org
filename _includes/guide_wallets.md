@@ -284,7 +284,7 @@ Private keys are what are used to unlock satoshis from a particular address. In 
 
 {% autocrossref %}
 
-In order to make copying of private keys less prone to error, [Wallet Import Format][/en/glossary/wallet-import-format]{:#term-wallet-import-format}{:.term} may be utilized. WIF uses base58Check encoding on an private key, greatly decreasing the chance of copying error, much like standard Bitcoin addresses.
+In order to make copying of private keys less prone to error, [Wallet Import Format][]{:#term-wallet-import-format}{:.term} may be utilized. WIF uses base58Check encoding on an private key, greatly decreasing the chance of copying error, much like standard Bitcoin addresses.
 
 1. Take a private key.
 
@@ -403,7 +403,7 @@ For consistent word ordering:
 {% autocrossref %}
 
 The hierarchical deterministic key creation and transfer protocol ([HD
-protocol][/en/glossary/hd-protocol]{:#term-hd-protocol}{:.term}) greatly simplifies wallet
+protocol][]{:#term-hd-protocol}{:.term}) greatly simplifies wallet
 backups, eliminates the need for repeated communication between multiple
 programs using the same wallet, permits creation of child accounts which
 can operate independently, gives each parent account the ability to
@@ -424,8 +424,9 @@ point (the public key):
 {% autocrossref %}
 
 Because of the way `point()` functions, it's possible to create a [child
-public key][/en/glossary/child-key]{:#term-child-public-key}{:.term} by combining an
-existing [(parent) public key][/en/glossary/parent-key]{:#term-parent-public-key}{:.term} with another public key created from any
+public key][]{:#term-child-public-key}{:.term} by combining an
+existing [(parent) public key][parent public
+key]{:#term-parent-public-key}{:.term} with another public key created from any
 integer (*i*) value. This child public key is the same public key which
 would be created by the `point()` function if you added the *i* value to
 the original (parent) private key and then found the remainder of that
@@ -438,8 +439,8 @@ sum divided by a global constant used by all Bitcoin software (*G*):
 {% autocrossref %}
 
 This means that two or more independent programs which agree on a
-sequence of integers can create a series of unique [child key][/en/glossary/child-key]{:#term-child-key}{:.term} pairs from
-a single [parent key][/en/glossary/parent-key]{:#term-parent-key}{:.term} pair without any further communication.
+sequence of integers can create a series of unique [child key][]{:#term-child-key}{:.term} pairs from
+a single [parent key][]{:#term-parent-key}{:.term} pair without any further communication.
 Moreover, the program which distributes new public keys for receiving
 payment can do so without any access to the private keys, allowing the
 public key distribution program to run on a possibly-insecure platform such as
@@ -468,10 +469,10 @@ The HD protocol uses a single root seed to create a hierarchy of
 child, grandchild, and other descended keys with unlinkable
 deterministically-generated integer values. Each child key also gets
 a deterministically-generated seed from its parent, called a [chain
-code][/en/glossary/chain-code]{:#term-chain-code}{:.term}, so the compromising of one chain
+code][]{:#term-chain-code}{:.term}, so the compromising of one chain
 code doesn't necessary compromise the integer sequence for the whole
 hierarchy, allowing the [master chain
-code][/en/glossary/master-chain-code-and-private-key]{:#term-master-chain-code}{:.term} to continue being useful
+code][]{:#term-master-chain-code}{:.term} to continue being useful
 even if, for example, a web-based public key distribution program
 gets hacked.
 
@@ -479,10 +480,10 @@ gets hacked.
 
 As illustrated above, HD key derivation takes four inputs<!--noref-->:
 
-* The *[parent private key][/en/glossary/parent-key]{:#term-parent-private-key}{:.term}* and
+* The *[parent private key][]{:#term-parent-private-key}{:.term}* and
   *parent public key* are regular uncompressed 256-bit ECDSA keys.
 
-* The [parent chain code][/en/glossary/chain-code]{:#term-parent-chain-code}{:.term} is 256
+* The [parent chain code][]{:#term-parent-chain-code}{:.term} is 256
   bits of seemingly-random data.
 
 * The [index][key index]{:#term-key-index}{:.term} number is a 32-bit integer specified by the program.
@@ -510,17 +511,17 @@ child keys using the child chain code will create unlinkable grandchild keys.
 
 Because creating child keys requires both a key and a chain code, the
 key and chain code together are called the [extended
-key][/en/glossary/extended-key]{:#term-extended-key}{:.term}. An [extended private
-key][/en/glossary/extended-key]{:#term-extended-private-key}{:.term} and its corresponding
-[extended public key][/en/glossary/extended-key]{:#term-extended-public-key}{:.term} have the
+key][]{:#term-extended-key}{:.term}. An [extended private
+key][]{:#term-extended-private-key}{:.term} and its corresponding
+[extended public key][]{:#term-extended-public-key}{:.term} have the
 same chain code. The (top-level parent) [master private
-key][/en/glossary/master-chain-code-and-private-key]{:#term-master-private-key}{:.term} and master chain
+key][]{:#term-master-private-key}{:.term} and master chain
 code are derived from random data,
 as illustrated below.
 
 ![Creating A Root Extended Key Pair](/img/dev/en-hd-root-keys.svg)
 
-A [root seed][/en/glossary/hd-wallet-seed]{:#term-root-seed}{:.term} is created from either 128
+A [root seed][]{:#term-root-seed}{:.term} is created from either 128
 bits, 256 bits, or 512 bits of random data. This root seed of as little
 as 128 bits is the the only data the user needs to backup in order to
 derive every key created by a particular wallet program using
@@ -588,7 +589,7 @@ knowing the parent private key. In other words, parent extended public
 keys can't create hardened child public keys.
 
 Because of that, a [hardened extended private
-key][/en/glossary/hardened-extended-key]{:#term-hardened-extended-private-key}{:.term} is much less
+key][]{:#term-hardened-extended-private-key}{:.term} is much less
 useful than a normal extended private key---however, 
 hardened extended private keys create a firewall through which
 multi-level key derivation compromises cannot happen. Because hardened
