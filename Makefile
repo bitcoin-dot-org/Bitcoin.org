@@ -222,6 +222,8 @@ manual-check-diff-sha256sums:
 	  | sort -k2
 
 check-for-broken-bitcoin-core-download-links:
+## Ensure that the links from the Download page to the current Bitcoin
+## Core binaries are correct
 	$S grep 'class="dl"' _site/en/download.html \
 	  | sed 's/.*href="//; s/".*//' \
 	  | while read url ; do \

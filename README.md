@@ -436,7 +436,7 @@ Download links will automatically be set to the defaults using the current
 release version number, but if you need to change any download URL, edit
 the file `_templates/download.html`
 
-[Once Travis is enabled] You can then create a pull request to the
+You can then create a pull request to the
 master branch and Travis CI will automatically build it and make sure
 the links you provided return a "200 OK" HTTP header. (The actual files
 will not be downloaded to save bandwidth.) Alternatively, you can build
@@ -444,6 +444,88 @@ the site locally with `make all` to run the same quality assurance tests.
 
 The file can be edited later to add any optional information (such as a
 release date) that you didn't have when you created the file.
+
+#### Preparing a release in advance
+
+It's nice to prepare a release pull request in advance so that the
+Bitcoin Core developers can just click "Merge Pull Request" when the new
+version is released.  Here's the recommended recipe, where `<VERSION>`
+is the particular version:
+
+1. Create a new branch named `bitcoin-core-<VERSION>`.  You can either
+   do this locally or in GitHub's web GUI.
+
+2. Follow the instructions in the [Release Notes][] section to create a
+   new release.  You should leave the `optional_date` blank unless you
+   happen to know the date of the planned release.
+
+3. Push the branch to the https://github.com/bitcoin/bitcoin.org
+   repository so any contributor can edit it. **Don't** open a pull
+   request yet.
+
+4. Travis CI will build the site from the branch and then run the tests.
+   The tests will fail because they expect the release binaries to be
+   present and you're preparing this release request in advance of them
+   being uploaded.
+
+5. Open the failed Travis CI log.  At the end, it will say something like:
+
+        ERROR:
+        Error: Could not retrieve /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win64-setup.exe
+        Error: Could not retrieve /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win32-setup.exe
+        [...]
+
+6. Copy the errors from above into a text file and remove everything
+   except for the URLs so that what's left are lines that look like:
+
+        /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win64-setup.exe
+        /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win32-setup.exe
+        [...]
+
+7. Optional, but nice: sort the lines into alphabetical order.
+
+8. Now open a pull request from the `bitcoin-core-<VERSION>` branch to
+   the `master` branch. We recommend that you use this title: "Releases:
+   Add Bitcoin Core &lt;VERSION>".
+
+   We recommend that you use the following text with any changes you
+   think are appropriate. **Note:** read all the way to the end of this
+   enumerated point before submitting your pull request.
+
+        This updates the download links to point to <VERSION> and adds the
+        <VERSION> release notes to the site. I'll keep it updated throughout
+        the RC cycle, but it can be merged by anyone with commit access
+        once <VERSION> final is released (see TODO lists below).
+
+        CC: @laanwj
+
+        Essential TODO:
+
+        * [ ] Make sure the download links work. This is automatically checked as part of the Travis CI build, so trigger a rebuild and, if it passes, this should be safe to merge.
+
+        Optional TODO (may be done in commits after merge):
+
+        * [ ] Add the actual release date to the YAML header in `_releases/0.10.1.md`
+        * [ ] Add the magnet URI to the YAML header in `_releases/0.10.1.md` (brief instructions for creating the link are provided as comments in that file)
+
+        Expected URLs for the Bitcoin Core binaries:
+
+    Underneath the line 'Expected URLs', paste the URLs you retrieved
+    from Travis CI earlier.
+
+    Note that @laanwj is Wladimir J. van der Laan, who is usually
+    responsible for uploading the Bitcoin Core binaries.  If someone
+    else is responsible for this release, CC them instead.  If you don't
+    know who is responsible, ask in #bitcoin-dev on Freenode.
+
+9. After creating the pull request, use the Labels menu to assign it the
+   "Releases" label. This is important because it's what the Bitcoin
+   Core release manager will be looking for.
+
+10. After each new Release Candidate (RC) is released, update the
+    release notes you created in the `_releases` directory. (But don't
+    worry about this too much; we can always upload updated release
+    notes after the release.)
 
 ### Alerts
 
