@@ -2,6 +2,12 @@
 
 require 'html/proofer'
 
+## Don't check links when partially building the website.
+if !ENV['ENABLED_PLUGINS'].nil? or !ENV['ENABLED_LANGS'].nil?
+  print 'HTMLProofer skipped (partial build)' + "\n"
+  exit
+end
+
 ## Will throw an exception (exiting false) if any internal links don't
 ## work. The Makefile will terminate on the failure
 HTML::Proofer.new(
