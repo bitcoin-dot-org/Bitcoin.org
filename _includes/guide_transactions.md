@@ -199,8 +199,8 @@ sections about stacks. These are programming terms. Also "above",
 "below", "top", and "bottom" are commonly used relative directions or
 locations in stack descriptions. -harding -->
 
-To test whether the transaction is valid, signature script and pubkey script arguments
-are pushed to the stack one item at a time, starting with Bob's signature script
+To test whether the transaction is valid, signature script and pubkey script operations
+are executed one item at a time, starting with Bob's signature script
 and continuing to the end of Alice's pubkey script. The figure below shows the
 evaluation of a standard P2PKH pubkey script; below the figure is a description
 of the process.
@@ -211,38 +211,37 @@ of the process.
   Because it's just data, nothing is done except adding it to the stack.
   The public key (also from the signature script) is pushed on top of the signature.
 
-* From Alice's pubkey script, the `OP_DUP` operation is pushed. `OP_DUP` replaces
-  itself with a copy of the data from one level below it---in this
+* From Alice's pubkey script, the `OP_DUP` operation is executed. `OP_DUP` pushes onto the stack
+  a copy of the data currently at the top of it---in this
   case creating a copy of the public key Bob provided.
 
-* The operation pushed next, `OP_HASH160`, replaces itself with a hash
-  of the data from one level below it---in this case, Bob's public key.
+* The operation executed next, `OP_HASH160`, pushes onto the stack a hash
+  of the data currently on top of it---in this case, Bob's public key.
   This creates a hash of Bob's public key.
 
 * Alice's pubkey script then pushes the pubkey hash that Bob gave her for the
   first transaction.  At this point, there should be two copies of Bob's
   pubkey hash at the top of the stack.
 
-* Now it gets interesting: Alice's pubkey script adds `OP_EQUALVERIFY` to the
-  stack. `OP_EQUALVERIFY` expands to `OP_EQUAL` and `OP_VERIFY` (not shown).
+* Now it gets interesting: Alice's pubkey script executes `OP_EQUALVERIFY`.
+  `OP_EQUALVERIFY` is equivalent to executing `OP_EQUAL` followed by `OP_VERIFY` (not shown).
 
-    `OP_EQUAL` (not shown) checks the two values below it; in this
+    `OP_EQUAL` (not shown) checks the two values at the top of the stack; in this
     case, it checks whether the pubkey hash generated from the full
     public key Bob provided equals the pubkey hash Alice provided when
-    she created transaction #1. `OP_EQUAL` then replaces itself and
-    the two values it compared with the result of that comparison:
+    she created transaction #1. `OP_EQUAL` pops (removes from the top of the stack)
+    the two values it compared, and replaces them with the result of that comparison:
     zero (*false*) or one (*true*).
 
-    `OP_VERIFY` (not shown) checks the value immediately below it. If
-    the value is *false* it immediately terminates stack evaluation and
-    the transaction validation fails. Otherwise it pops both itself and
-    the *true* value off the stack.
+    `OP_VERIFY` (not shown) checks the value at the top of the stack. If
+    the value is *false* it immediately terminates evaluation and
+    the transaction validation fails. Otherwise it pops the *true* value off the stack.
 
-* Finally, Alice's pubkey script pushes `OP_CHECKSIG`, which checks the
+* Finally, Alice's pubkey script executes `OP_CHECKSIG`, which checks the
   signature Bob provided against the now-authenticated public key he
   also provided. If the signature matches the public key and was
   generated using all of the data required to be signed, `OP_CHECKSIG`
-  replaces itself with *true.*
+  pushes the value *true* onto the top of the stack.
 
 If *false* is not at the top of the stack after the pubkey script has been
 evaluated, the transaction is valid (provided there are no other
