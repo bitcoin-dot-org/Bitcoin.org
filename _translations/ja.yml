@@ -659,6 +659,7 @@ ja:
     tax: "税金と規則"
     taxtxt: "ビットコインは公式通貨ではありません。ですが、ほとんどの管轄では、ビットコインを含め、価値あるものに対する所得、売り上げ、給与、キャピタルゲインに対し税金を課します。あなたの政府と/や自治体が定める<a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">税金やその他の法的あるいは規制義務</a>に従うことは、あなたの責任です。"
   layout:
+    menu-support-bitcoin: "ビットコインを支援する"
     menu-about-us: "bitcoin.org について"
     menu-bitcoin-for-businesses: ビジネス
     menu-bitcoin-for-developers: 開発者
@@ -676,7 +677,7 @@ ja:
     menu-privacy: "プライバシー"
     menu-resources: リソース
     menu-stats: "統計"
-    menu-support-bitcoin: 参加する
+    menu-participate: 参加する
     menu-vocabulary: 用語
     menu-you-need-to-know: "知っておくべきこと"
     banner-translate: "この言語の翻訳は古くなっています。<a href=\"https://github.com/bitcoin/bitcoin.org#translation\">ここをクリックして、あなたの言語で bitcoin.org を翻訳する援助をしましょう</a>。"

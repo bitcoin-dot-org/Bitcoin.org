@@ -659,6 +659,7 @@ id:
     tax: "Pajak pemerintah dan peraturan-peraturan."
     taxtxt: "Bitcoin bukanlah mata uang resmi. Artinya, sebagian besar negara masih meminta Anda untuk membayar pajak pendapatan, penjualan, penggajian, dan pajak keuntungan modal atas apapun yang memiliki nilai termasuk bitcoin. Merupakan tanggung jawab Anda untuk memastikan bahwa Anda mematuhi <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">pajak dan aturan hukum lainnya ataupun kebijakan</a> yang dikeluarkan oleh pemerintah Anda dan/atau pengambil kebijakan di daerah Anda.  "
   layout:
+    menu-support-bitcoin: "Dukung Bitcoin"
     menu-about-us: "Mengenai bitcoin.org"
     menu-bitcoin-for-businesses: Bisnis
     menu-bitcoin-for-developers: Para Pengembang
@@ -676,7 +677,7 @@ id:
     menu-privacy: "Privasi"
     menu-resources: Sumber daya
     menu-stats: "Statistik"
-    menu-support-bitcoin: Partisipasi
+    menu-participate: Partisipasi
     menu-vocabulary: Kosa kata
     menu-you-need-to-know: "Yang perlu Anda ketahui"
     banner-translate: "Terjemahan bahasa ini sudah ketinggalan jaman. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Klik di sini untuk membantu menerjemahkan bitcoin.org dalam</a> bahasa Anda."

@@ -666,6 +666,7 @@ de:
     tax: "Steuern und Regulierung"
     taxtxt: "Bitcoin ist keine offizielle Währung. Allerdings sehen die meisten Gesetzgeber immer noch Einkommens-, Umsatz- und Lohnsteuer, sowie Kapitalertragssteuern auf alle Anlagen, inklusive Bitcoin, vor. Es liegt in Ihrer Verantwortung sicherzustellen, dass Sie <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">eventuell erforderliche Steuern bezahlen</a> und andere von Ihrer Regierung und/oder Gemeinde beschlossenen rechtlichen oder regulatorischen Erlässe einhalten."
   layout:
+    menu-support-bitcoin: "Bitcoin unterstützen"
     menu-about-us: "Über bitcoin.org"
     menu-bitcoin-for-businesses: Unternehmen
     menu-bitcoin-for-developers: Entwickler
@@ -683,7 +684,7 @@ de:
     menu-privacy: "Privatsphäre"
     menu-resources: Ressourcen
     menu-stats: "Statistiken"
-    menu-support-bitcoin: Mitmachen
+    menu-participate: Mitmachen
     menu-vocabulary: Glossar
     menu-you-need-to-know: "Das sollten Sie wissen"
     banner-translate: "Übersetzungen für diese Sprache sind veraltet. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Klicken Sie hier um bei der Übersetzung von bitcoin.org in ihre Sprache zu helfen</a>."

@@ -659,6 +659,7 @@ ko:
     tax: "정부규제와 세금"
     taxtxt: "비트코인은 공식적인 화폐가 아닙니다. 그런데다 대부분의 국가 및 지역에서는 소득, 판매, 급여, 자본 이득 등 가치를 가지고 있는 모든 것에 대해 세금을 납부하도록 요구하고 있습니다. 비트코인도 예외는 아닙니다. 당사자의 정부나 자치 당국에서 규정한 <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">납세 및 기타 법률과 규제 사항</a>을 준수하는 것은 이 글을 읽는 당사자의 책임임을 명확히 합니다."
   layout:
+    menu-support-bitcoin: "비트코인을 지지해주세요"
     menu-about-us: "bitcoin.org 소개"
     menu-bitcoin-for-businesses: 사업자
     menu-bitcoin-for-developers: '개발자 '
@@ -676,7 +677,7 @@ ko:
     menu-privacy: "개인 정보 보호"
     menu-resources: 자료
     menu-stats: "통계"
-    menu-support-bitcoin: 참여
+    menu-participate: 참여
     menu-vocabulary: 용어
     menu-you-need-to-know: "여러분이 알아두어야 할 것"
     banner-translate: "이 언어에 해당하는 번역이 오래되었습니다.<a href=\"https://github.com/bitcoin/bitcoin.org#translation\">당신의 언어에 해당하는 bitcoin.org를 번역하시려면 이곳을 눌러주세요."

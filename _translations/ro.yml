@@ -659,6 +659,7 @@ ro:
     tax: "Taxe și reglementări guvernamentale"
     taxtxt: "Bitcoin nu este o valută oficială. Acestea fiind spuse, majoritatea jurisdictiilor încă necesită plata unor taxe pe profit sau vânzare asupra orice are valoare, inclusiv bitcoini. Este responsabilitatea ta să te asiguri că respecţi <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">taxele, impozitele şi oricare alte mandate legale sau regulatorii</a> impuse de guvern sau municipalităţile locale."
   layout:
+    menu-support-bitcoin: "Susţine Bitcoin"
     menu-about-us: "Despre bitcoin.org"
     menu-bitcoin-for-businesses: Companii
     menu-bitcoin-for-developers: Dezvoltatori
@@ -676,7 +677,7 @@ ro:
     menu-privacy: "Confidenţialitate"
     menu-resources: Resurse
     menu-stats: "Statistici"
-    menu-support-bitcoin: Participă
+    menu-participate: Participă
     menu-vocabulary: Vocabular
     menu-you-need-to-know: "Trebuie să știi"
     banner-translate: "Traducerile in aceasta limba sunt vechi.<a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Click aici pentru a ajuta traducerea bitcoin.org in limba ta</a>."

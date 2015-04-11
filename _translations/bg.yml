@@ -626,6 +626,7 @@ bg:
     tax: "Правителствени данъци и регулации"
     taxtxt: "Биткойн не е официална валута. Повечето юрисдикции все още изискват от вас да платите данъци върху доходите, продажбите, заплатите и капиталовите печалби на всичко, което има стойност, включително биткойни. Ваша е отговорността да се гарантира, че се придържате към <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">данъчните и други законови или подзаконови разпоредби</a> издадени от вашето правителство и/или местните общини."
   layout:
+    menu-support-bitcoin: "Допринесете към Биткойн"
     menu-about-us: "Относно bitcoin.org"
     menu-bitcoin-for-businesses: Фирми
     menu-bitcoin-for-developers: Разработчици
@@ -643,7 +644,7 @@ bg:
     menu-privacy: "Защита на личните данни"
     menu-resources: Ресурси
     menu-stats: "Статистики"
-    menu-support-bitcoin: Участвайте
+    menu-participate: Участвайте
     menu-vocabulary: Речник
     menu-you-need-to-know: "Трябва да знаете"
     banner-translate: "Преводите за този език са остарели. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Натиснете тук, за да помогнете с превода на bitcoin.org на вашия език</a>."

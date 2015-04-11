@@ -660,6 +660,7 @@ hu:
     tax: "Kormányzati adók és szabályozások"
     taxtxt: "A bitcoin nem hivatalos pénznem. Mindemellett a legtöbb törvényalkotó elvárja, hogy minden után, aminek értéke van - beleértve a bitcoinokat is - vállalkozói, forgalmi, jövedelem- és kamatadót fizessen. Az Ön felelőssége, hogy pontosan betartsa a kormánya és/vagy helyi önkormányzata által kibocsátott <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">adó- és egyéb jogi vagy szabályozói rendelkezéseket</a>."
   layout:
+    menu-support-bitcoin: "Támogassa a Bitcoint"
     menu-about-us: "A bitcoin.org-ról"
     menu-bitcoin-for-businesses: Vállalkozások
     menu-bitcoin-for-developers: Fejlesztők
@@ -677,7 +678,7 @@ hu:
     menu-privacy: "Adatvédelem"
     menu-resources: Információs anyagok
     menu-stats: "Statisztikák"
-    menu-support-bitcoin: Részvétel
+    menu-participate: Részvétel
     menu-vocabulary: Szótár
     menu-you-need-to-know: "Érdemes tudnia"
     banner-translate: "Az ehhez a nyelvhez tartozó fordítások elavultak. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">A bitcoin.org saját nyelvére történő fordításában való segítséghez kattintson ide </a>."

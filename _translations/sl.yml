@@ -624,6 +624,7 @@ sl:
     tax: "Davki in zakonodaja"
     taxtxt: "Bitcoin ni uradna valuta. Še vedno pa večina zakonodaj zahteva, da plačate davke na dohodek, dobiček, plače itd. za vse stvari, ki imajo kako vrednost, vključno z bitcoini. Vaša odgovornost je, da se pozanimate in sledite davčnim in drugim zakonom države in kraja, kjer živite. Nekaj informacij, tudi o Sloveniji, lahko najdete na <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country#Slovenia\">Wikipedia</a>."
   layout:
+    menu-support-bitcoin: "Podprite bitcoin"
     menu-about-us: "O bitcoin.org"
     menu-bitcoin-for-businesses: Podjetja
     menu-bitcoin-for-developers: Razvijalci
@@ -639,7 +640,7 @@ sl:
     menu-legal: "Pravno"
     menu-press: "Mediji"
     menu-resources: Viri
-    menu-support-bitcoin: Sodelujte
+    menu-participate: Sodelujte
     menu-vocabulary: Slovar
     menu-you-need-to-know: "Obvezno branje"
     banner-translate: "Prevodi v tem jeziku so zastareli. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Kliknite tu, če želite pomagati prevajati bitcoin.org v svoj jezik</a>."

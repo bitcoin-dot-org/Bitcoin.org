@@ -666,6 +666,7 @@ da:
     tax: "Staters beskatninger og reguleringer"
     taxtxt: "Bitcoin er ikke en officiel valuta. Når der er sagt, kræver de fleste myndigheder, at du betaler indkomstskat, moms, arbejdsgiverskat og kapitalindkomstskat af alt, hvad der har værdi, inklusive bitcoin. Det er dit ansvar at sikre dig, at du retter dig efter <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">skatter og andre lovformelige eller regulative mandater</a>, der er udstedt af din regering og/eller kommune."
   layout:
+    menu-support-bitcoin: "Støt Bitcoin"
     menu-about-us: "Om bitcoin.org"
     menu-bitcoin-for-businesses: Virksomheder
     menu-bitcoin-for-developers: Udviklere
@@ -683,7 +684,7 @@ da:
     menu-privacy: "Privatliv"
     menu-resources: Ressourcer
     menu-stats: "Statistik"
-    menu-support-bitcoin: Deltag
+    menu-participate: Deltag
     menu-vocabulary: Ordliste
     menu-you-need-to-know: "Du bør vide"
     banner-translate: "Oversættelsen til dette sprog er uddateret. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Klik her for at hjælpe med at oversætte bitcoin.org til dit sprog</a>."

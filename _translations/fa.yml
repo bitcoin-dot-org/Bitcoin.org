@@ -628,6 +628,7 @@ fa:
     tax: "مالیات ها و مقررات دولتی"
     taxtxt: "بیت کوین ارزی رسمی نیست. یعنی بیشتر مراجع قضایی از شما خواهند خواست که مالیات های مربوط به درآمد، فروش، حقوق و بهره سرمایه ای را روی آنچه که ارزش دارد، از جمله بیت کوین، بپردازید. مسئولیت حصول اطمینان از  \n<a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\"> موارد مالیاتی و دیگر احکام قانونی یا مقرراتی </a> که توسط دولت  و یا شهرداریهای محلی وضع شده، بر عهده خود شماست."
   layout:
+    menu-support-bitcoin: "حمایت از بیت کوین"
     menu-about-us: "درباره bitcoin.org"
     menu-bitcoin-for-businesses: کسب و کارها
     menu-bitcoin-for-developers: توسعه دهندگان
@@ -645,7 +646,7 @@ fa:
     menu-privacy: "حریم خصوصی"
     menu-resources: منابع
     menu-stats: "نظامنامه ها"
-    menu-support-bitcoin: مشارکت
+    menu-participate: مشارکت
     menu-vocabulary: دایره واژگان
     menu-you-need-to-know: "لازم است بدانید"
     banner-translate: "ترجمه ها به این زبان، منسوخ شده اند.  <a href=\"https://github.com/bitcoin/bitcoin.org#translation\"> اینجا را کلیک کنید و به ترجمه bitcoin.org  به زبان خود، کمک کنید</a>."

@@ -660,6 +660,7 @@ pt_BR:
     tax: "Taxas e regulamentos dos governos."
     taxtxt: "Bitcoin não é uma moeda reconhecida oficialmente. Dito isto, a maioria dos governos exige que você pague impostos sobre quaisquer ganhos de capital, incluindo os relacionados a Bitcoin. É de sua responsabilidade aceitar os termos referentes a <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">a legislação tributária e fiscal</a>emitidos pelo seu governo e/ou municípios locais."
   layout:
+    menu-support-bitcoin: "Suporte Bitcoin"
     menu-about-us: "Sobre bitcoin.org"
     menu-bitcoin-for-businesses: Empresas
     menu-bitcoin-for-developers: Desenvolvedores
@@ -677,7 +678,7 @@ pt_BR:
     menu-privacy: "Privacidade"
     menu-resources: Recursos
     menu-stats: "Status"
-    menu-support-bitcoin: Participe
+    menu-participate: Participe
     menu-vocabulary: Vocabulário
     menu-you-need-to-know: "Você precisa saber"
     banner-translate: "Traduções para esse idioma não estão atualizadas. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Clique aqui para ajudar a traduzir bitcoin.org para o seu idioma</a>."

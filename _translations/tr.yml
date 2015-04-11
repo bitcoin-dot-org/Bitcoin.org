@@ -660,6 +660,7 @@ tr:
     tax: "Hükümet vergileri ve denetimler"
     taxtxt: "Bitcoin resmi bir para birimi değildir. Bununla birlikte çoğu hükümet yinede sizden gelir ödeme, satış, ücret bordrosu ve bitcoin dahil değeri olan herşey için vergi ödemenizi ister. Hükümetiniz veya/yada yerel belediyeleriniz tarafından yayınlanan <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">vergi ve diğer mevzuat mandalarını</a> anladığınıza emin olmak sizin sorumluluğunuzdur."
   layout:
+    menu-support-bitcoin: "Bitcoin'i Destekleyin"
     menu-about-us: "Bitcoin.org hakkında"
     menu-bitcoin-for-businesses: İşletmeler
     menu-bitcoin-for-developers: Geliştiriciler
@@ -677,7 +678,7 @@ tr:
     menu-privacy: "Gizlilik"
     menu-resources: Kaynaklar
     menu-stats: "İstatislikler"
-    menu-support-bitcoin: Katılın
+    menu-participate: Katılın
     menu-vocabulary: Sözlük
     menu-you-need-to-know: "Bilmeniz gerekenler"
     banner-translate: "Bu dil için çeviriler güncel değildir.  <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">bitcoin.org'un dilinize çevrilmesine yardım etmek için buraya tıklayın</a>."

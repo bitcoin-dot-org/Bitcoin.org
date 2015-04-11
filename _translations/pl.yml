@@ -665,6 +665,7 @@ pl:
     tax: "Rządowe podatki i regulacje"
     taxtxt: "Bitcoin nie jest oficjalną walutą. Wiedząc to pamiętaj, że większość obszarów jurysdykcji nadal wymaga od ciebie opłacenia podatku dochodowego, od sprzedaży, kosztów płacy czy podatku od zysków ze sprzedaży towarów zawierających wartość włączając w to Bitcoin. Twoim obowiązkiem jest upewnić się, że stosujesz się do <a href=\"https://pl.wikipedia.org/wiki/Bitcoin#Status_prawny_oraz_regulacje\">podatków i innych upoważnień ustawowych lub wykonawczych</a> wydanych przez rząd lub lokalne gminy."
   layout:
+    menu-support-bitcoin: "Wesprzyj Bitcoin"
     menu-about-us: "O bitcoin.org"
     menu-bitcoin-for-businesses: Firm
     menu-bitcoin-for-developers: Deweloperów
@@ -682,7 +683,7 @@ pl:
     menu-privacy: "Prywatność"
     menu-resources: Zasoby
     menu-stats: "Statystyki"
-    menu-support-bitcoin: Weź udział
+    menu-participate: Weź udział
     menu-vocabulary: Słownik
     menu-you-need-to-know: "Musisz to wiedzieć"
     banner-translate: "Tłumaczenia dla tego języka są przestarzałe. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Kliknij tutaj, aby pomóc w tłumaczeniu bitcoin.org na Twój język</a>."
