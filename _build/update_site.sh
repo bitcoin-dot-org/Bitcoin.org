@@ -49,13 +49,18 @@ lasttime=`stat -c %Y "$SITEDIR/_buildlock" | cut -d ' ' -f1`
 # Build website in a child process
 (
 cd $WORKDIR
-JEKYLL_COMMAND='jekyll' make build
-touch "$WORKDIR/_builddone"
+make valid && touch "$WORKDIR/_builddone" || touch "$WORKDIR/_buildfail"
 )&
 
 # Loop every 1 second to check status
 while true
 do
+
+	# Exit if site has been failed to build
+	if [ -e "$WORKDIR/_buildfail" ]; then
+		echo "Build failed"
+		exit
+	fi
 
 	# Update site and exit if site has been successfully built
 	if [ -e "$WORKDIR/_builddone" ]; then
@@ -69,6 +74,7 @@ do
 		time=`stat -c %Y "$SITEDIR/_buildlock" | cut -d ' ' -f1`
 	fi
 	if [ $time != $lasttime ]; then
+		echo "Build cancelled"
 		exit
 	fi
 	sleep 1
