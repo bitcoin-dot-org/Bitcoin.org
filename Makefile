@@ -4,13 +4,6 @@
 S=@  ## Silent: only print errors by default; 
      ## run `make S='' [other args]` to print commands as they're run
 
-## Old versions of jekyll must not call "build".  If you have one of
-## these versions, either run make like this: make JEKYLL_COMMAND=jekyll
-## or create the JEKYLL_COMMAND environmental variable:
-# echo 'export JEKYLL_COMMAND=jekyll' >> ~/.bashrc
-# exec bash
-# make
-JEKYLL_COMMAND ?= "bundle exec jekyll build"
 SITEDIR=_site
 JEKYLL_LOG=._jekyll.log
 
@@ -74,7 +67,7 @@ ERROR_ON_OUTPUT="sed '1s/^/ERROR:\n/' | if grep . ; then sed 1iERROR ; false ; e
 ## Always build using the default locale so log messages can be grepped.
 ## This should not affect webpage output.
 build:
-	$S export LANG=C.UTF-8 ; eval $(JEKYLL_COMMAND) 2>&1 | tee $(JEKYLL_LOG)
+	$S export LANG=C.UTF-8 ; bundle exec jekyll build 2>&1 | tee $(JEKYLL_LOG)
 	$S grep -r -L 'Note: this file is built non-deterministically' _site/ \
 	  | egrep -v 'sha256sums.txt' \
 	  | xargs sha256sum > _site/sha256sums.txt

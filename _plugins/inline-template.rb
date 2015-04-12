@@ -23,11 +23,8 @@ require 'yaml'
     def render(context)
       output = super
 
-      ## Workaround for inconsistent relative directory
-      path = File.expand_path(File.dirname(__FILE__)) + "/../"
-
       data = YAML.load(output)
-      template = File.open(path + @template_name, mode="r")
+      template = File.open(@template_name, mode="r")
       @mytemplate = Liquid::Template.parse(template.read())
       @mytemplate.render('entry' => data)
     end
