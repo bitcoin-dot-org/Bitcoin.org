@@ -14,6 +14,8 @@ ruby '2.0.0'
 ## your dependencies, then nothing extra needs to be done
 group :development do
   gem 'ffi-icu'
+  ## When we upgrade to Jekyll 3.0.0 or higher, remove
+  ## _plugin/remove-html-extension.rb
   gem 'jekyll', '~>1.3.0'
   gem 'json'
   gem 'less'

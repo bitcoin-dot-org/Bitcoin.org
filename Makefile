@@ -14,6 +14,10 @@ JEKYLL_LOG=._jekyll.log
 ## `make` (no arguments): just build
 default: build
 
+## `make preview`: start the built-in Jekyll preview
+preview:
+	$S bundle exec jekyll serve
+
 ## `make test`: don't build, but do run all tests
 test: pre-build-tests post-build-tests
 
@@ -93,8 +97,13 @@ build:
 
 ## Jekyll annoyingly returns success even when it emits errors and
 ## exceptions, so we'll grep its output for error strings
+#
+## FIXME: temporarily ignoring errors from WEBrick because
+## _plugin/remove-html-extension does something hackish until we upgrade
+## to Jekyll 3.0.0
 check-for-build-errors:
 	$S egrep -i '(error|warn|exception)' $(JEKYLL_LOG) \
+	    | grep -vi webrick.*filehandler \
 	    | eval $(ERROR_ON_OUTPUT)
 
 

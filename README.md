@@ -134,72 +134,113 @@ You simply need to push additional commits on the appropriate branch of your Git
 
 Simple text changes can be previewed live on bitcoin.org. You only need to click anywhere on the page and hold your mouse button for one second. You'll then be able to edit the page just like a document. Changes will be lost as soon as the page is refreshed.
 
-#### Build Site With Jekyll From Bundler
+#### Build The Site Locally
 
-Make sure you have ruby 2.0. If you don't, we recommend
-[installing it with RVM](https://www.digitalocean.com/community/articles/how-to-install-ruby-on-rails-on-ubuntu-14-04-using-rvm),
-which can usually be done by running the following three commands:
+For anything more than simple text previews, you will need to build the
+site. If you can't do this yourself using the instructions below, please
+[open a pull request][pull request] with your suggested change and one
+of the site developers will create a preview for you.
 
-    \curl -sSL https://get.rvm.io | bash -s stable
+To build the site, you need to go through a one-time installation
+procedure that takes 15 to 30 minutes.  After that you can build the
+site an unlimited number of times with no extra work.
+
+##### Install The Dependencies
+
+Before building the site, you need to install the following
+dependencies and tools, which are pretty easy on any modern Linux:
+
+**Install binary libraries and tools**
+
+On recent versions of Ubuntu and Debian, you can run the following
+command to ensure you have the required libraries, headers, and tools:
+
+    sudo apt-get install build-essential git libicu-dev zlib1g-dev
+
+**Install RVM**
+
+Install RVM using either the [easy instructions](https://rvm.io/) or the
+[more secure instructions](https://rvm.io/rvm/security).
+
+Read the instructions printed to your console during setup to enable the
+`rvm` command in your shell.  After installation, you need to run the
+following command:
+
     source ~/.rvm/scripts/rvm
+
+**Install Ruby 2.0.0**
+
+To install Ruby 2.0.0, simply run this command:
+
     rvm install ruby-2.0.0
 
-Next, you need to install bundler, and let it install all gems you need
-to build the site. You must run the last command from within your local
-bitcoin.org repository:
+Sometimes this will find a pre-compiled Ruby package for your Linux
+distribution, but sometimes it will need to compile Ruby from scratch
+(which takes about 15 minutes).
 
-    gem install bundler
+After Ruby 2.0.0 is installed, make it your default Ruby:
+
+    rvm alias create default ruby-2.0.0
+
+And tell your system to use it:
+
+    rvm use default
+
+(Note: you can use a different default Ruby, but you if you ever change
+your default Ruby, you must re-run the `gem install bundle` command
+described below before you can build the site. If you ever receive a
+"eval: bundle: not found" error, you failed to re-run `gem install
+bundle`.)
+
+**Install Bundle**
+
+When you used RVM to install Ruby, it also installed the `gem` program.
+Use that program to install bundle:
+
+    gem install bundle
+
+**Install the Ruby dependencies**
+
+Ensure you checked out the site repository as described in [Working with
+GitHub](#working-with-github). Then change directory to the top-level of
+your local repository (replace `bitcoin.org` with the full path to your local
+repository clone):
+
+    cd bitcoin.org
+
+And install the necessary dependencies using Bundle:
+
     bundle install
 
-Finally, you can build the website in _site/:
+Note that some of the dependencies (particularly nokogiri) can take a
+long time to install on some systems, so be patient.
 
-    bundle exec jekyll build
+Once Bundle completes successfully, you can preview or build the site.
 
-You can then copy the output files from _site/ to the root of your web server.
-If you have no web server, run `bundle exec jekyll serve` and visit
-http://127.0.0.1:4000/. This server requires you to add a trailing ".html"
-by hand in your browser address bar.
+##### Preview The Site
 
-#### Build Site With Jekyll From APT
+To preview the website in your local browser, make sure you're in the
+`bitcoin.org` directory and run the following command:
 
-The instructions in the section above will ensure that you use the same
-versions of the same software we use to build the website, but you can
-also install dependencies from your Linux distribution. For example:
+    make preview
 
-Installing dependencies on Ubuntu 12.10:
+This will compile the site (takes 5 to 10 minutes; see the [speed up
+instructions](#fast-partial-previews-or-builds)) and then print the a message like this:
 
-    sudo apt-get install jekyll node-less ruby1.9.1-dev libicu-dev
-    sudo gem install ffi-icu
+    Server address: http://0.0.0.0:4000
+    Server running... press ctrl-c to stop.
 
-Installing dependencies on older Ubuntu and Debian distributions:
+Visit the indicated URL in your browser to view the site.
 
-    sudo apt-get install rubygems ruby1.9.1-dev build-essential libicu-dev
-    sudo gem install jekyll json less therubyracer ffi-icu
+##### Build The Site
 
-Finally build the website in _site/:
+To build the site exactly like we do for the deployment server, make
+sure you're in the `bitcoin.org` directory and run:
 
-    jekyll
-
-...Or `jekyll build` on recent versions. You can then copy the output files
-from _site/ to the root of your web server. If you have no web server, run
-`jekyll --server` (or `jekyll serve` on recent versions) and visit
-http://127.0.0.1:4000/. This server requires you to add a trailing ".html"
-by hand in your browser address bar.
-
-#### Building With Make
-
-After you've installed Jekyll and the other dependencies, you can
-optionally use GNU Make to automatically build the site and run several
-tests. You will first need to install Make using your package manager;
-for example:
-
-    sudo apt-get install make
-
-Then in your local bitcoin.org repository, run one of the following
-commands:
-
-    ## To just build the site, the equivalent of: bundle exec jekyll build
     make
+
+The resulting HTML for the entire site will be placed in the `_site`
+directory.  The following alternative options are available:
 
     ## After you build the site, you can run all of the tests (may take awhile)
     make test
@@ -210,13 +251,45 @@ commands:
     ## Or build the site and run all tests
     make all
 
-#### Partial build for faster preview
+#### Fast Partial Previews Or Builds
 
 In order to preview some changes faster, you can disable all plugins and
-languages but those you need by prefixing the `ENABLED_LANGS` and `ENABLED_PLUGINS`
-environment variables:
+languages except those you need by prefixing the `ENABLED_LANGS` and
+`ENABLED_PLUGINS` environment variables to your command line.  For
+example, do this to disable everything:
 
-    ENABLED_PLUGINS="events autocrossref" ENABLED_LANGS="en fr" make all
+    ## Fast preview, takes less than 30 seconds
+    ENABLED_PLUGINS="" ENABLED_LANGS="" make preview
+
+    ## Fast build and tests, takes less than 50 seconds
+    ## Some tests may fail in fast mode; use -i to continue despite them
+    ENABLED_PLUGINS="" ENABLED_LANGS="" make -i valid
+
+Then to enable some plugins or languages, you can add them back in.
+For example:
+
+    ## Slower (but still pretty fast) build and test
+    ENABLED_PLUGINS="events autocrossref" ENABLED_LANGS="en fr" make -i valid
+
+Plugins include:
+
+| Plugin       | Seconds | Remote APIs    | Used For
+|--------------|---------|----------------|------------------------
+| alerts       | 5       | --             | Network alert pages
+| autocrossref | 90      | --             | Developer documentation
+| contributors | 5       | GitHub.com     | Contributor listings
+| events       | 5       | Meetup.com; Google Maps | Events page
+| glossary     | 30      | --             | Developer glossary
+| redirects    | 20      | --             | Redirects from old URLs
+| releases     | 10      | --             | Bitcoin Core release notes; Download page
+| sitemap      | 0       | --             | /sitemap.xml
+
+Notes: some plugins interact with each other; for example running
+'autocrossref' and 'glossary' takes longer than running each other
+separately. Also, plugins that use remote APIs may take a long time to
+run if the API site is running slow.
+
+For a list of languages, look in the `_translations` directory.
 
 ## Developer Documentation
 
@@ -284,7 +357,11 @@ Any change in the English text can be done through a pull request on GitHub. If 
 
 ### Events
 
-Events should be placed in `_events.yml` and adhere to this format:
+If you're not comfortable with GitHub pull requests, please submit an
+event using the button near the bottom of the [Events
+page](https://bitcoin.org/en/events).
+
+To create an event pull request, place the event in `_events.yml` and adhere to this format:
 
 ```
 - date: 2014-02-21
