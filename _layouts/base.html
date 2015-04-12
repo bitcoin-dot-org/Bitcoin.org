@@ -75,11 +75,7 @@
           <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
         </ul>
       </li>
-      {% case page.lang %}
-      {% when 'sv' %}
-      {% else %}
       <li{% if page.id == 'faq' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate faq url %}">{% translate menu-faq layout %}</a></li>
-      {% endcase %}
     </ul>
   </div></div>
   <div class="body">
@@ -97,12 +93,7 @@
     {% else %}
     <a href="/{{ page.lang }}/{% translate privacy url %}">{% translate menu-privacy layout %}</a>
     {% endcase %}
-    {% case page.lang %}
-    {% when 'sv' %}
-    <a href="/en/press">Press</a>
-    {% else %}
     <a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a>
-    {% endcase %}
     <a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a>
     </div>
     <div class="footersponsor">
