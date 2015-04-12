@@ -41,7 +41,8 @@ pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignme
 post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
     check-for-missing-anchors check-for-broken-markdown-reference-links \
     check-for-broken-kramdown-tables check-for-duplicate-header-ids \
-    check-for-headers-containing-auto-link check-for-missing-subhead-links
+    check-for-headers-containing-auto-link check-for-missing-subhead-links \
+    check-for-subheading-anchors
 
 ## All pre-build tests, including those which might take multiple minutes
 pre-build-tests: pre-build-tests-fast
@@ -214,3 +215,11 @@ check-html-proofer:
 
 travis-background-keepalive:
 	$S { while ps aux | grep -q '[m]ake' ; do echo "Ignore me: Travis CI keep alive" ; sleep 1m ; done ; } &
+
+check-for-subheading-anchors:
+## Ensure all subheadings on the site have anchors so the Javascript
+## function addAnchorLinks() can add anchor link affordance to each
+## subhead
+	$S grep -r -L 'Note: this file exempt from check-for-subheading-anchors check' _site/ \
+	  | xargs grep '<h[23456]' \
+	  | grep -v '<h[23456][^>]* id=' | eval $(ERROR_ON_OUTPUT)

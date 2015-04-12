@@ -9,10 +9,10 @@ id: development
 <h1>{% translate pagetitle %}</h1>
 <p class="summary">{% translate summary %}</p>
 
-<h2>{% translate spec %}</h2>
+<h2 id="spec">{% translate spec %}</h2>
 <p>{% translate spectxt %}</p>
 
-<h2>{% translate coredev %}</h2>
+<h2 id="coredev">{% translate coredev %}</h2>
 
 <p>{% translate inventor %}</p>
 
@@ -24,16 +24,16 @@ id: development
   <div><div>Pieter Wuille</div><div><a href="mailto:pieter.wuille@gmail.com">pieter.wuille@gmail.com</a></div><div><a href="/pieterwuille.asc">PGP</a></div></div>
 </div>
 
-<h2>{% translate disclosure %}</h2>
+<h2 id="disclosure">{% translate disclosure %}</h2>
 <p><a href="mailto:bitcoin-security@lists.sourceforge.net">bitcoin-security@lists.sourceforge.net</a></p>
 <p>{% translate disclosuretxt %}</p>
 
-<h2>{% translate involve %}</h2>
+<h2 id="involve">{% translate involve %}</h2>
 <p>{% translate involvetxt1 %}</p>
 <p>{% translate involvetxt2 %}</p>
 <div id="chatbox" class="chatbox"></div>
 
-<h2>{% translate more %}</h2>
+<h2 id="more">{% translate more %}</h2>
 
 <p>{% translate morechoose %}</p>
 
@@ -60,7 +60,7 @@ id: development
 </ul>
 
 <section id="devcommunities">
-  <h2>{% translate devcommunities %}</h2>
+  <h2 id="dev-communities">{% translate devcommunities %}</h2>
   <p>{% translate devcommunitiesintro %}</p>
 
   <ul>
@@ -71,7 +71,7 @@ id: development
 </section>
 
 <section id="contributors">
-  <h2>{% translate contributors %}</h2>
+  <h2 id="bitcoin-core-contributors">{% translate contributors %}</h2>
   <p>{% translate contributorsorder %}</p>
   <div class="contributors">
     {% for c in site.corecontributors %}

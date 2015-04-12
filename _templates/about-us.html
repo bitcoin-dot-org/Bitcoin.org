@@ -9,13 +9,13 @@ id: about-us
 <h1>{% translate pagetitle %}</h1>
 <p class="summary">{% translate pagedesc %}</p>
 
-<h2>{% translate own %}</h2>
+<h2 id="own">{% translate own %}</h2>
 <p>{% translate owntxt %}</p>
 
-<h2>{% translate control %}</h2>
+<h2 id="control">{% translate control %}</h2>
 <p>{% translate controltxt %}</p>
 
-<h2>{% translate mission %}</h2>
+<h2 id="mission">{% translate mission %}</h2>
 <ul>
   <li>{% translate missiontxt1 %}</li>
   <li>{% translate missiontxt2 %}</li>
@@ -26,10 +26,10 @@ id: about-us
   <li>{% translate missiontxt7 %}</li>
 </ul>
 
-<h2>{% translate help %}</h2>
+<h2 id="help">{% translate help %}</h2>
 <p>{% translate helptxt %}</p>
 
-<h3>{% translate maintenance %}</h3>
+<h3 id="maintenance">{% translate maintenance %}</h3>
 
 <div class="credit">
   <p><a href="mailto:saivann@gmail.com">Saïvann Carignan</a><span>Website maintenance</span></p>
@@ -37,14 +37,14 @@ id: about-us
   <p><a href="http://dtrt.org/">David Harding</a><span>Documentation maintenance</span></p>
 </div>
 
-<h3>{% translate documentation %}</h3>
+<h3 id="documentation">{% translate documentation %}</h3>
 
 <div class="credit">
   <p><a href="http://dtrt.org/">David Harding</a><span>Coordination and writing</span></p>
   <p>Greg Sanders<span>Writing</span></p>
 </div>
 
-<h3>{% translate translation %}</h3>
+<h3 id="translation">{% translate translation %}</h3>
 
 <div class="credit">
   <p>Garland William Binns III<span>Maintenance</span></p>
@@ -59,7 +59,7 @@ id: about-us
   <p>Thomas Pryds<span>Danish</span></p>
 </div>
 
-<h3>{% translate github %}</h3>
+<h3 id="github">{% translate github %}</h3>
 
 <div class="contributors">
   {% for c in site.sitecontributors %}
