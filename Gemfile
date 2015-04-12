@@ -7,6 +7,11 @@ source 'https://rubygems.org'
 ## to master
 ruby '2.0.0'
 
+## Used on the build server. If you add a package here (like nokogiri)
+## that has non-Gem dependencies (like zlib), please remind the site
+## maintainers that they need to manually update the build server(s)
+## before they commit to master. If `bundle install` can satisify all
+## your dependencies, then nothing extra needs to be done
 group :development do
   gem 'ffi-icu'
   gem 'jekyll', '~>1.3.0'
@@ -15,6 +20,11 @@ group :development do
   gem 'kramdown'
   gem 'RedCloth'
   gem 'therubyracer' # required by less
-  gem 'html-proofer'
 end
 
+## Not used on build server. Only used by developers and Travis CI, so
+## you can put whatever you want here and bundler will tell us humans to
+## install the new Gems.
+group :slow_test do
+  gem 'html-proofer'
+end

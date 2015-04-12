@@ -21,16 +21,35 @@ test: pre-build-tests post-build-tests
 valid: pre-build-tests-fast build post-build-tests-fast
 
 ## `make all`: build and run all tests
-all: travis-background-keepalive pre-build-tests build post-build-tests
+all: pre-build-tests build post-build-tests
+
+## `make deployment`: for use on build server
+deployment: install-deps-deployment \
+    valid
+
+## `make travis`: for use with Travis CI
+travis: travis-background-keepalive \
+    install-deps-development \
+    all
 
 
 
-## Pre-build tests which, aggregated together, take less than 5 seconds to run on a typical PC
+
+## Install dependencies (development version)
+install-deps-development:
+	bundle install
+
+## Install dependencies (deployment version)
+install-deps-deployment:
+	bundle install --deployment --without :slow_test
+
+## Pre-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
 pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignments \
     check-for-missing-rpc-summaries \
-    check-for-missing-copyright-licenses
+    check-for-missing-copyright-licenses \
+    check-bundle
 
-## Post-build tests which, aggregated together, take less than 5 seconds to run on a typical PC
+## Post-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
 post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
     check-for-missing-anchors check-for-broken-markdown-reference-links \
     check-for-broken-kramdown-tables check-for-duplicate-header-ids \
@@ -205,6 +224,12 @@ check-for-broken-bitcoin-core-download-links:
 
 check-html-proofer:
 	$S bundle exec ruby _contrib/bco-htmlproof
+
+check-bundle:
+## Ensure all the dependencies are installed. If you build without this
+## check, you'll get confusing error messages when your deps aren't up
+## to date
+	$S ! bundle check | grep -v "The Gemfile's dependencies are satisfied"
 
 travis-background-keepalive:
 	$S { while ps aux | grep -q '[m]ake' ; do echo "Ignore me: Travis CI keep alive" ; sleep 1m ; done ; } &
