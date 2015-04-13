@@ -10,7 +10,7 @@ ruby '2.0.0'
 ## Used on the build server. If you add a package here (like nokogiri)
 ## that has non-Gem dependencies (like zlib), please remind the site
 ## maintainers that they need to manually update the build server(s)
-## before they commit to master. If `bundle install` can satisify all
+## before they commit to master. If `bundle install` can satisfy all
 ## your dependencies, then nothing extra needs to be done
 group :development do
   gem 'ffi-icu'

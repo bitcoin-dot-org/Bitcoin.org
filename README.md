@@ -186,7 +186,7 @@ And tell your system to use it:
 
     rvm use default
 
-(Note: you can use a different default Ruby, but you if you ever change
+(Note: you can use a different default Ruby, but if you ever change
 your default Ruby, you must re-run the `gem install bundle` command
 described below before you can build the site. If you ever receive a
 "eval: bundle: not found" error, you failed to re-run `gem install
@@ -282,9 +282,9 @@ Plugins include:
 | glossary     | 30      | --             | Developer glossary
 | redirects    | 20      | --             | Redirects from old URLs
 | releases     | 10      | --             | Bitcoin Core release notes; Download page
-| sitemap      | 0       | --             | /sitemap.xml
+| sitemap      | 10      | --             | /sitemap.xml
 
-Notes: some plugins interact with each other; for example running
+Notes: some plugins interact with each other or with translations; for example running
 'autocrossref' and 'glossary' takes longer than running each other
 separately. Also, plugins that use remote APIs may take a long time to
 run if the API site is running slow.
