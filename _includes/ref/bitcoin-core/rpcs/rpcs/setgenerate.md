@@ -37,6 +37,9 @@ The `setgenerate` RPC {{summary_setGenerate}}
 
 *Parameter #2 (regtest)---the number of blocks to generate*
 
+Note: setgenerate in regtest mode has been removed in Bitcoin Core
+master. See the `generate` RPC for the replacement.
+
 {% itemplate ntpd1 %}
 - n: "Blocks"
   t: "number (int)"

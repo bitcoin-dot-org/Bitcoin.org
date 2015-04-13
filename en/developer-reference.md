@@ -80,6 +80,8 @@ untrusted source.
 
 {% include ref/bitcoin-core/rpcs/rpcs/estimatepriority.md %}
 
+{% include ref/bitcoin-core/rpcs/rpcs/generate.md %}
+
 {% include ref/bitcoin-core/rpcs/rpcs/getaccountaddress.md %}
 
 {% include ref/bitcoin-core/rpcs/rpcs/getaccount.md %}
