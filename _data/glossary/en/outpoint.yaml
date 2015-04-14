@@ -1,0 +1,29 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Outpoint
+
+    summary_max_255_characters_no_formatting: >
+        The data structure used to refer to a particular transaction
+        output, consisting of a 32-byte TXID and a 4-byte output index
+        number (vout).
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Outpoint
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - outpoints
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Output (an entire output from a transaction)
+        - TxOut (same as output)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Outpoint](/en/developer-reference#outpoint) --- Bitcoin.org Developer Reference"
+        - "[Tx message (includes outpoint description)](https://en.bitcoin.it/wiki/Protocol_documentation#tx) --- Bitcoin Wiki"
+
+---

@@ -1,0 +1,30 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Difficulty, Network Difficulty
+
+    summary_max_255_characters_no_formatting: >
+        How difficult it is to find a block relative to the difficulty
+        of finding the easiest possible block. The easiest possible
+        block has a proof-of-work difficulty of 1.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Difficulty
+        - Network difficulty
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - hash difficulty
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Target threshold (the value from which difficulty is calculated)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Difficulty](/en/developer-guide#term-difficulty) --- Bitcoin.org Developer Guide"
+        - "[Difficulty](https://en.bitcoin.it/wiki/Difficulty) --- Bitcoin Wiki"
+        - "[How is difficulty calculated?](http://bitcoin.stackexchange.com/q/5838) --- Bitcoin StackExchange"
+
+---

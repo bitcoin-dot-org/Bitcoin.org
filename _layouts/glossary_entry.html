@@ -1,0 +1,65 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: base
+lang: en
+---
+<link rel="stylesheet" href="/css/jquery-ui.min.css">
+
+{% capture filename %}{{page.filename}}{% endcapture %}
+{% include helpers/subhead-links.md %}
+<br>
+
+{% capture markdown_content %}
+
+# {{page.required.title_max_40_characters_no_formatting}}
+
+<input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
+
+<div markdown="block" class="notice">
+<span markdown="span">This definition comes from the [technical glossary](/en/developer-glossary).</span>
+</div>
+
+## Definition
+
+{% autocrossref %}
+
+{{page.required.summary_max_255_characters_no_formatting}}
+
+{% endautocrossref %}
+
+### Synonyms
+
+{% for synonym in page.required.synonyms_shown_in_glossary_capitalize_first_letter %}
+* {{synonym}}
+{% endfor %}
+
+{% if page.optional.not_to_be_confused_with_capitalize_first_letter %}
+### Not To Be Confused With
+
+{% autocrossref %}
+
+{% for term in page.optional.not_to_be_confused_with_capitalize_first_letter %}
+* {{term}}
+{% endfor %}
+
+{% endautocrossref %}
+
+{% endif %}
+
+{% if page.optional.links_html_or_markdown_style_capitalize_first_letter %}
+### Links
+{% for link in page.optional.links_html_or_markdown_style_capitalize_first_letter %}
+* {{link}}
+{% endfor %}
+{% endif %}
+
+{% include references.md %}
+{{site.glossary_links}}
+{% endcapture %}
+{{ markdown_content | markdownify }}{% comment %}Why is this hack necessary?  I don't get why this template can't be natively rendered as markdown like the releases template.{% endcomment %}
+
+<script src="/js/jquery-1.11.2.min.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+<script src="/js/devsearch.js"></script>

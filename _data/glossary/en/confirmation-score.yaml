@@ -1,0 +1,39 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Confirmation Score, Confirmed Transaction
+
+    summary_max_255_characters_no_formatting: >
+        A score indicating the number of blocks on the best block chain
+        that would need to be modified to remove or modify a particular
+        transaction. A confirmed transaction has a confirmation score of
+        one or higher.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Confirmation score
+        - Confirmations
+        - Confirmed transaction
+        - Unconfirmed transaction
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Confirmed
+        - unconfirmed
+        - confirmation
+        - confirmation scores
+
+        - confirmed transactions
+        - unconfirmed transactions
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Confirmations](/en/developer-guide#term-confirmation) --- Bitcoin.org Developer Guide"
+        - "[Confirmation](https://en.bitcoin.it/wiki/Confirmation) --- Bitcoin Wiki"
+        - "[What are confirmations?](http://bitcoin.stackexchange.com/a/160) --- Bitcoin StackExchange"
+        - "[When should I worry about 1-confirmation payments?](http://bitcoin.stackexchange.com/q/32562) --- Bitcoin StackExchange"
+
+---

@@ -1,0 +1,27 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Inventory, Block Or Transaction Inventory
+
+    summary_max_255_characters_no_formatting: >
+        A data type identifier and a hash; used to identify transactions
+        and blocks available for download through the Bitcoin P2P network.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Inventory
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - inventories
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Inv message (one of the P2P messages that transmits inventories)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Inventory](/en/developer-reference#term-inventory) --- Bitcoin.org Developer Reference"
+        - "[Inventory vectors](https://en.bitcoin.it/wiki/Protocol_documentation#Inventory_Vectors) --- Bitcoin Wiki"
+
+---

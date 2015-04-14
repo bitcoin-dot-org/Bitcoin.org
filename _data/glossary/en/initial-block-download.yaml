@@ -1,0 +1,27 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Initial Block Download, IBD
+
+    summary_max_255_characters_no_formatting: >
+        The process used by a new node (or long-offline node) to
+        download a large number of blocks to catch up to the tip of the
+        best block chain.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Initial block download
+        - IBD
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Blocks-first sync (syncing includes getting any amount of blocks; IBD is only used for large numbers of blocks)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Initial block download](/en/developer-guide#initial-block-download) --- Bitcoin.org Developer Guide"
+
+---

@@ -1,0 +1,32 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Transaction Malleability, Mutability
+
+    summary_max_255_characters_no_formatting: >
+        The ability of someone to change (mutate) unconfirmed
+        transactions without making them invalid, which changes the
+        transaction's txid, making child transactions invalid.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Transaction malleability
+        - Transaction mutability
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - malleability
+        - mutability
+        - mutate
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - BIP62 (a proposal for an optional new transaction version that reduces the set of known mutations for common transactions)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Transaction malleability](/en/developer-guide#transaction-malleability) --- Bitcoin.org Developer Guide"
+        - "[Transaction malleability](https://en.bitcoin.it/wiki/Transaction_Malleability) --- Bitcoin Wiki"
+        - "[BIP62: dealing with malleability](https://github.com/bitcoin/bips/blob/master/bip-0062.mediawiki) --- Bitcoin Improvement Proposals"
+
+---

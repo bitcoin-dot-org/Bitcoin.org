@@ -1,0 +1,28 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Compressed Public Key
+
+    summary_max_255_characters_no_formatting: >
+        An ECDSA public key that is 33 bytes long rather than the 65
+        bytes of an uncompressed public key.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Compressed public key
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - compressed public keys
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Public key formats](/en/developer-guide#public-key-formats) --- Bitcoin.org Developer Guide"
+        - "[What is a compressed public key?](http://bitcoin.stackexchange.com/q/3059) --- Bitcoin StackExchange"
+        - "[Why does Bitcoin Core support both compressed and uncompressed keys?](http://bitcoin.stackexchange.com/q/5952) --- Bitcoin StackExchange"
+
+
+---

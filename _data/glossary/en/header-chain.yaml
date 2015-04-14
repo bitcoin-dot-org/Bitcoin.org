@@ -1,0 +1,36 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Header Chain, Best Header Chain
+
+    summary_max_255_characters_no_formatting: >
+        A chain of block headers with each header linking to the header
+        that preceded it; the most-difficult-to-recreate chain is the
+        best header chain
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Header chain
+        - Best header chain
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - header chains
+        - headers chain
+        - header-chain
+        - header-chains
+        - headerchain
+        - headerchains
+        - best header chain
+        - best headerchain
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Block chain
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Header chain](/en/developer-guide#term-header-chain) --- Bitcoin.org Developer Guide"
+        - "[Is it a chain of headers rather than a chain of blocks?](http://bitcoin.stackexchange.com/q/35448) --- Bitcoin StackExchange"
+
+---

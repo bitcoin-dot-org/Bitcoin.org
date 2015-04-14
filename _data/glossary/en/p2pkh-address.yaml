@@ -1,0 +1,35 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: P2PKH Address, Pay To PubKey Hash
+
+    summary_max_255_characters_no_formatting: >
+        A Bitcoin payment address comprising a hashed public key,
+        allowing the spender to create a standard pubkey script that
+        Pays To PubKey Hash (P2PKH).
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - P2PKH address
+        - P2PKH output
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - P2PKH addresses
+        - P2PKH outputs
+        - P2PKH pubkey script
+        - P2PKH pubkey scripts
+        - pubkey hash
+        - pubkey hashes
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - P2PK output (an output paying a public key directly)
+        - P2SH address, P2SH output (an address comprising a hashed script, and its corresponding output)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[P2PKH](/en/developer-guide#term-p2pkh) --- Bitcoin.org Developer Guide"
+        - "[P2PKH versus P2PK](http://bitcoin.stackexchange.com/a/32642) --- Bitcoin StackExchange"
+
+---

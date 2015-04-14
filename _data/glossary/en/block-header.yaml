@@ -1,0 +1,29 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Block Header
+
+    summary_max_255_characters_no_formatting: >
+        An 80-byte header belonging to a single block which is hashed
+        repeatedly to create proof of work.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Block header
+        - Header
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - headers
+        - block headers
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Block header](/en/developer-reference#block-headers) --- Bitcoin.org Developer Reference"
+        - "[Block hashing algorithm](https://en.bitcoin.it/wiki/Block_hashing_algorithm) --- Bitcoin Wiki"
+        - "[What are Bitcoin miners really solving?](http://bitcoin.stackexchange.com/q/8031) --- Bitcoin StackExchange"
+
+---

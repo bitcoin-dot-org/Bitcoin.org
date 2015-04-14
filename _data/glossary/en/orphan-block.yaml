@@ -1,0 +1,27 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Orphan Block
+
+    summary_max_255_characters_no_formatting: >
+        Blocks whose parent block has not been processed by the local node,
+        so they can't be fully validated yet.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Orphan block
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - orphan blocks
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Stale block
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Orphan blocks](/en/developer-guide#orphan-blocks) --- Bitcoin.org Developer Guide"
+        - "[What are orphaned and stale blocks?](http://bitcoin.stackexchange.com/q/5859) --- Bitcoin StackExchange"
+
+---
