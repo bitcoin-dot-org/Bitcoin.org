@@ -4,13 +4,6 @@
 S=@  ## Silent: only print errors by default; 
      ## run `make S='' [other args]` to print commands as they're run
 
-## Old versions of jekyll must not call "build".  If you have one of
-## these versions, either run make like this: make JEKYLL_COMMAND=jekyll
-## or create the JEKYLL_COMMAND environmental variable:
-# echo 'export JEKYLL_COMMAND=jekyll' >> ~/.bashrc
-# exec bash
-# make
-JEKYLL_COMMAND ?= "bundle exec jekyll build"
 SITEDIR=_site
 JEKYLL_LOG=._jekyll.log
 
@@ -21,6 +14,10 @@ JEKYLL_LOG=._jekyll.log
 ## `make` (no arguments): just build
 default: build
 
+## `make preview`: start the built-in Jekyll preview
+preview:
+	$S bundle exec jekyll serve
+
 ## `make test`: don't build, but do run all tests
 test: pre-build-tests post-build-tests
 
@@ -28,16 +25,35 @@ test: pre-build-tests post-build-tests
 valid: pre-build-tests-fast build post-build-tests-fast
 
 ## `make all`: build and run all tests
-all: travis-background-keepalive pre-build-tests build post-build-tests
+all: pre-build-tests build post-build-tests
+
+## `make deployment`: for use on build server
+deployment: install-deps-deployment \
+    valid
+
+## `make travis`: for use with Travis CI
+travis: travis-background-keepalive \
+    install-deps-development \
+    all
 
 
 
-## Pre-build tests which, aggregated together, take less than 5 seconds to run on a typical PC
+
+## Install dependencies (development version)
+install-deps-development:
+	bundle install
+
+## Install dependencies (deployment version)
+install-deps-deployment:
+	bundle install --deployment --without :slow_test
+
+## Pre-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
 pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignments \
     check-for-missing-rpc-summaries \
-    check-for-missing-copyright-licenses
+    check-for-missing-copyright-licenses \
+    check-bundle
 
-## Post-build tests which, aggregated together, take less than 5 seconds to run on a typical PC
+## Post-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
 post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
     check-for-missing-anchors check-for-broken-markdown-reference-links \
     check-for-broken-kramdown-tables check-for-duplicate-header-ids \
@@ -74,15 +90,20 @@ ERROR_ON_OUTPUT="sed '1s/^/ERROR:\n/' | if grep . ; then sed 1iERROR ; false ; e
 ## Always build using the default locale so log messages can be grepped.
 ## This should not affect webpage output.
 build:
-	$S export LANG=C.UTF-8 ; eval $(JEKYLL_COMMAND) 2>&1 | tee $(JEKYLL_LOG)
+	$S export LANG=C.UTF-8 ; bundle exec jekyll build 2>&1 | tee $(JEKYLL_LOG)
 	$S grep -r -L 'Note: this file is built non-deterministically' _site/ \
 	  | egrep -v 'sha256sums.txt' \
 	  | xargs sha256sum > _site/sha256sums.txt
 
 ## Jekyll annoyingly returns success even when it emits errors and
 ## exceptions, so we'll grep its output for error strings
+#
+## FIXME: temporarily ignoring errors from WEBrick because
+## _plugin/remove-html-extension does something hackish until we upgrade
+## to Jekyll 3.0.0
 check-for-build-errors:
 	$S egrep -i '(error|warn|exception)' $(JEKYLL_LOG) \
+	    | grep -vi webrick.*filehandler \
 	    | eval $(ERROR_ON_OUTPUT)
 
 
@@ -212,6 +233,12 @@ check-for-broken-bitcoin-core-download-links:
 
 check-html-proofer:
 	$S bundle exec ruby _contrib/bco-htmlproof
+
+check-bundle:
+## Ensure all the dependencies are installed. If you build without this
+## check, you'll get confusing error messages when your deps aren't up
+## to date
+	$S ! bundle check | grep -v "The Gemfile's dependencies are satisfied"
 
 travis-background-keepalive:
 	$S { while ps aux | grep -q '[m]ake' ; do echo "Ignore me: Travis CI keep alive" ; sleep 1m ; done ; } &

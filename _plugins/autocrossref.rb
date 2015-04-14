@@ -33,12 +33,10 @@ require 'yaml'
     def render(context)
       output = super
 
-      ## Workaround for inconsistent relative directory
-      path = File.expand_path(File.dirname(__FILE__)) + "/.."
       ## Load terms from file
       site = context.registers[:site].config
       if !site.has_key?("crossref")
-        site['crossref'] = YAML.load_file(path + "/_autocrossref.yaml")
+        site['crossref'] = YAML.load_file("_autocrossref.yaml")
       end
 
       ## Sort terms by reverse length, so longest matches get linked

@@ -49,7 +49,7 @@ lasttime=`stat -c %Y "$SITEDIR/_buildlock" | cut -d ' ' -f1`
 # Build website in a child process
 (
 cd $WORKDIR
-make valid && touch "$WORKDIR/_builddone" || touch "$WORKDIR/_buildfail"
+make deployment && touch "$WORKDIR/_builddone" || touch "$WORKDIR/_buildfail"
 )&
 
 # Loop every 1 second to check status

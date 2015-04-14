@@ -23,11 +23,8 @@ require 'yaml'
     def render(context)
       output = super
 
-      ## Workaround for inconsistent relative directory
-      path = File.expand_path(File.dirname(__FILE__)) + "/../"
-
       data = YAML.load(output)
-      template = File.open(path + @template_name, mode="r")
+      template = File.open(@template_name, mode="r")
       @mytemplate = Liquid::Template.parse(template.read())
       @mytemplate.render('entry' => data)
     end
@@ -56,7 +53,9 @@ end
 
 
 #Do nothing if plugin is disabled
-if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('itemplate').nil?
+## Note: tested 2015-04-12 and the site actually compiles 5 seconds
+##       *faster* with this enabled, so hardcoding it to enabled for now
+if false #!ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('itemplate').nil?
   print 'Inline Template (itemplate) disabled' + "\n"
   Liquid::Template.register_tag('itemplate', Jekyll::InlineTemplateBlockDisabled)
 else
