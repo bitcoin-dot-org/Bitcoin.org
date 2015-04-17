@@ -443,6 +443,24 @@ wallets:
     compat: "web"
     level: 3
     platform:
+      desktop:
+        text: "walletbitgo"
+        link: "https://chrome.google.com/webstore/detail/bitgo/jlgeogaipkoajobchncghcojanffjfhl"
+        screenshot: "bitgochrome.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkpasscontrolmulti"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
       web:
         text: "walletbitgo"
         link: "https://www.bitgo.com/"
