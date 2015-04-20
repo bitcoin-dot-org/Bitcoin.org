@@ -110,7 +110,7 @@ and transfers the unsigned transactions to the signing-only wallet.
 Often, users are given a chance to review the unsigned transactions' details
 (particularly the output details) using the signing-only wallet.  
 
-After the optional review step, the offline wallet uses the parent
+After the optional review step, the signing-only wallet uses the parent
 private key to derive the appropriate child private keys and signs the
 transactions, giving the signed transactions back to the networked wallet.
 
