@@ -1,51 +1,3 @@
-- date: 2015-03-31
-  title: "Transact 15"
-  venue: "Moscone center / South building"
-  address: "747 Howard Street"
-  city: "San Francisco, CA"
-  country: "United States"
-  link: "http://electran.org/events/transact15/"
-
-- date: 2015-04-02
-  title: "Bitcoin Conference Russia 2015"
-  venue: "MSU Science Park"
-  address: "Buildings 75, Leninskie Gory"
-  city: "Moscow"
-  country: "Russia"
-  link: "http://bitcoinconf.moscow/"
-
-- date: 2015-04-08
-  title: "Bitcoin in the City"
-  venue: "SAS"
-  address: "7th floor, 199 Bishopsgate, EC2M 3TY"
-  city: "London"
-  country: "England"
-  link: "https://events.roolo.io/"
-
-- date: 2015-04-16
-  title: "Bitcoin Africa Conference"
-  venue: "Atlantic Imbizo Conference And Function Studio"
-  address: "V & A Waterfront"
-  city: "Cape Town"
-  country: "South Africa"
-  link: "http://bitcoinconference.co.za/"
-
-- date: 2015-04-18
-  title: "The State of Digital Money"
-  venue: "Rhubarb Studios"
-  address: "633 W 5th St"
-  city: "Los Angeles, CA"
-  country: "United States"
-  link: "http://www.cureativ.com/sodm#digitalmoney"
-
-- date: 2015-04-18
-  title: "Atlanta Bitcoin Consumer Fair"
-  venue: "Loudermilk Conference Center"
-  address: "40 Courtland Street NE"
-  city: "Atlanta, GA"
-  country: "United States"
-  link: "http://bitcoinconsumerfair.com/"
-
 - date: 2015-04-22
   title: "The Age of Cryptocurrency"
   venue: "Consumers' Research - DACOR Bacon House"
@@ -133,6 +85,14 @@
   city: "Moscow"
   country: "Russia"
   link: "http://www.advapay.eu/"
+
+- date: 2015-06-11
+  title: "BL0CKCHA1N: The Blockchain Forum"
+  venue: "Novotel Paris Centre Tour Eiffel"
+  address: "61 quai de Grenelle, 75015"
+  city: "Paris"
+  country: "France"
+  link: "http://www.bl0ckcha1n.com"
 
 - date: 2015-11-09
   title: "MTBIT - Bitcoin & Remittances Miami Beach"
