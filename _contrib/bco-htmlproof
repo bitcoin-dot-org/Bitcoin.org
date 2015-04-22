@@ -27,7 +27,7 @@ HTML::Proofer.new(
         ## require updating
         :href_swap => {
           ## (Hack) Append '$' to the ends of filenames we don't want to append .html to
-          /(css|png|rss|pdf|jpg|asc)$/ => '\1$',
+          /(css|png|rss|pdf|jpg|asc|xml)$/ => '\1$',
 
           ## Append .html to end of most URLs so proofer can find the local files
           /^(

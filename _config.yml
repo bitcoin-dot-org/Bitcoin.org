@@ -165,7 +165,10 @@ aliases:
 
 safe:        false
 port: 4000
+## Used in older version of Jekyll
 base-url:    /
+## Used in newer versions of Jekyll
+baseurl:    /
 
 source:      .
 destination: ./_site
