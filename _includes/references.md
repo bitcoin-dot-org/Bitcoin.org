@@ -194,7 +194,7 @@ http://opensource.org/licenses/MIT.
 <!-- TODOv0.10 update this to point to 0.10 release notes when released -->
 [Bitcoin Core 0.10.0]: https://github.com/bitcoin/bitcoin/tree/0.10
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
-[bitcoinpdf]: https://bitcoin.org/bitcoin.pdf
+[bitcoinpdf]: https://bitcoin.org/en/bitcoin-paper
 [core executable]: /en/download
 [dev communities]: /en/development#devcommunities
 [devex complex raw transaction]: /en/developer-examples#complex-raw-transaction

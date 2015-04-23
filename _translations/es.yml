@@ -71,6 +71,13 @@ es:
     lowfeetext: "Bitcoin le permite enviar y recibir pagos a casi coste cero. Salvo en casos especiales, como en pagos diminutos, no existen tasas. Sin embargo, puede optar pagar una pequeña tasa voluntaria para aumentar la prioridad de su transacción y remunerar a las personas que hacen funcionar la red Bitcoin."
     anonymous: "Proteja su identidad"
     anonymoustext: "Con Bitcoin, no existe un número de tarjeta de crédito que alguien pueda usar para hacerse pasar por ti. De hecho, es posible hacer un pago sin revelar tu identidad, casi como el dinero físico. Aún así deberías tomar nota sobre qué se necesita para <a href=\"#protect-your-privacy#\">proteger tu privacidad</a>."
+  bitcoin-paper:
+    title: "Bitcoin: un sistema de dinero en efectivo electrónico peer-to-peer"
+    pagetitle: "Bitcoin: un sistema de dinero en efectivo electrónico peer-to-peer"
+    summary: "El documento que presentó por primera vez Bitcoin"
+    decription: "El documento original de Satoshi continúa siendo lectura recomendada para cualquiera que estudie cómo funciona Bitcoin. Escoge qué traducción del documento quieres leer:"
+    translated_by: "traducido por"
+    submit_new_translation: '¿Quieres traducir el documento a tu lengua? Para consultar las instrucciones, visita el <a href="https://github.com/saivann/bitcoinwhitepaper">Bitcoin Paper repository</a> y si tienes preguntas, visita: <a href="https://github.com/saivann/bitcoinwhitepaper/issues/new">open an issue</a>.'
   community:
     title: "Comunidad - Bitcoin"
     pagetitle: "Comunidades Bitcoin"
@@ -254,7 +261,7 @@ es:
     whocontrolstxt1: "De la misma manera que nadie controla la tecnología detrás del correo electrónico, Bitcoin tampoco tiene propietarios. Bitcoin lo controlan todos los usuarios de Bitcoin del mundo. Aunque los programadores mejoran el software, no pueden forzar un cambio en el protocolo de Bitcoin porque todos los demás usuarios son libres de elegir el software y la versión que quieran. Para que sigan siendo compatibles entre sí, todos los usuarios necesitan utilizar software que cumpla con las mismas reglas. Bitcoin sólo puede funcionar correctamente si hay consenso entre todos los usuarios. Por lo tanto, todos los usuarios y programadores tienen un gran aliciente en proteger dicho consenso."
     howitworks: "¿Cómo funciona Bitcoin?"
     howitworkstxt1: "Desde la perspectiva del usuario, Bitcoin no es más que una aplicación móvil o de escritorio que provee un monedero Bitcoin personal y permite al usuario enviar y recibir bitcoins con el. Así es como funciona Bitcoin para la mayoría de los usuarios."
-    howitworkstxt2: "Detrás de las cámaras, la red Bitcoin comparte una contabilidad pública llamada \"block chain\". Esta contabilidad contiene cada transacción procesada, permitiendo verificar la validez de cada transacción. La autenticidad de cada transacción esta protegida por firmas digitales correspondientes a las direcciones de envío, permitiendo a todos los usuarios tener control total al enviar Bitcoins desde sus direcciones Bitcoin. Además, cualquiera puede procesar una transacción usando el poder computacional de hardware especializado y conseguir una recompensa en Bitcoins por este servicio.  Esto es comúnmente llamado \"mining\" o minería. Para aprender más sobre Bitcoin, puedes consultar la <a href=\"#how-it-works#\">página dedicada</a> y el <a href=\"/bitcoin_es_latam.pdf\">documento original</a>."
+    howitworkstxt2: "Detrás de las cámaras, la red Bitcoin comparte una contabilidad pública llamada \"block chain\". Esta contabilidad contiene cada transacción procesada, permitiendo verificar la validez de cada transacción. La autenticidad de cada transacción esta protegida por firmas digitales correspondientes a las direcciones de envío, permitiendo a todos los usuarios tener control total al enviar Bitcoins desde sus direcciones Bitcoin. Además, cualquiera puede procesar una transacción usando el poder computacional de hardware especializado y conseguir una recompensa en Bitcoins por este servicio.  Esto es comúnmente llamado \"mining\" o minería. Para aprender más sobre Bitcoin, puedes consultar la <a href=\"#how-it-works#\">página dedicada</a> y el <a href=\"#bitcoin-paper#\">documento original</a>."
     used: "¿Lo utiliza realmente la gente?"
     usedtxt1: "Sí. Existe un <a href=\"http://usebitcoins.info/\">número creciente de negocios</a> e individuos usando Bitcoin. Esto incluye negocios tradicionales como restaurantes, casas, bufetes de abogados y servicios de Internet populares como Namecheap, Wordpress, Reddit y Flattr. Aunque Bitcoin sigue siendo un fenómeno relativamente nuevo, esta creciendo rápido. A finales de Agosto de 2013, el <a href=\"https://bitcoincharts.com/bitcoin/\">valor de todos los bitcoins en circulación</a> superaba los 1.5 billones de dólares y cada día se intercambiaban el equivalente a millones de dólares en bitcoins."
     acquire: "¿Cómo se adquieren bitcoins?"
@@ -419,7 +426,7 @@ es:
     processing: "Procesamiento<span class=\"titlelight\"> - minería</span>"
     processingtxt: "La minería es un <b>sistema de consenso distribuido</b> que se utiliza para <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>confirmar</i></a> las transacciones pendientes a ser incluidas en la cadena de bloques. Hace cumplir un orden cronológico en la cadena de bloques, protege la neutralidad de la red y permite un acuerde entre todos los equipos sobre el estado del sistema. Para confirmar las transacciones, deberán ser empacadas ​​en un <a href=\"#vocabulary##[vocabulary.block]\"><i>bloque</i></a> que se ajuste a estrictas normas de cifrado y que será verificado por la red. Estas normas impiden que cualquier bloque anterior se modifique, ya que hacerlo invalidaría todos los bloques siguientes. La minería también crea el equivalente a una lotería competitiva que impide que cualquier persona pueda fácilmente añadir nuevos bloques consecutivamente en la cadena de bloques. De esta manera, ninguna persona puede controlar lo que está incluido en la cadena de bloques o reemplazar partes de la cadena de bloques para revertir sus propios gastos."
     readmore: "¿ Hasta qué punto estás dispuesto a descubrir más ?"
-    readmoretxt: "Esto es sólo un resumen muy corto y sumario del sistema. Si quiere conocer más detalles, usted puede <a href=\"/bitcoin.pdf\">leer el documento original</a> que explica la estructura del sistema, leer la <a href=\"/en/developer-documentation\">documentación para desarrolladores (en inglés)</a> o investigar la <a href=\"https://es.bitcoin.it/wiki/Página_principal\">wiki de Bitcoin</a>."
+    readmoretxt: "Esto es sólo un resumen muy corto y sumario del sistema. Si quiere conocer más detalles, usted puede <a href=\"#bitcoin-paper#\">leer el documento original</a> que explica la estructura del sistema, leer la <a href=\"/en/developer-documentation\">documentación para desarrolladores (en inglés)</a> o investigar la <a href=\"https://es.bitcoin.it/wiki/Página_principal\">wiki de Bitcoin</a>."
   index:
     title: "Bitcoin - Dinero P2P de código abierto"
     metadescription: "Bitcoin es una red innovativa de pagos y un nuevo tipo de dinero. Encuentra todo lo que necesitas saber e inicia con Bitcoin en bitcoin.org."
@@ -653,6 +660,7 @@ es:
     bitcoin-for-developers: bitcoin-para-desarrolladores
     bitcoin-for-individuals: bitcoin-para-personas
     bitcoin-for-businesses: bitcoin-para-empresas
+    bitcoin-paper: bitcoin-documento
     choose-your-wallet: elige-tu-monedero
     community: comunidad
     development: desarrollo

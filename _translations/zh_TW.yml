@@ -259,7 +259,7 @@ zh_TW:
     whocontrolstxt1: "沒有人擁有 Bitcoin 網路，就像沒有人擁有電子信箱背後的技術一樣。Bitcoin 由全球所有 Bitcoin 用戶所掌控。開發人員改善軟體功能時，他們不能強迫 Bitcoin 協議接受一個變動，因為所有用戶都可以自由選擇他們使用的軟體和版本，用戶必須使用具備同樣的規則的軟體，才能彼此相容。Bitcoin 只能在所有用戶具備共識的基礎之上才能正常運作。因此，所有用戶與開發人員都具有強烈的願望來維護這樣的共識。"
     howitworks: "Bitcoin 的運作原理"
     howitworkstxt1: "從用戶的角度看，Bitcoin 只是一個提供私人 Bitcoin 錢包和讓用戶傳送和接收比特幣的行動應用程式或電腦程式。對大部份的用戶來說，這是 Bitcoin 的用途。"
-    howitworkstxt2: "在後臺，Bitcoin 網路分享著一個公開的被稱為“區塊鏈”的總的分類帳。這個分類帳包含所有已經進行的交易，這使得用戶的電腦可以核實每一筆交易的合法性。每一筆交易的真實性被相應的傳送地址的數位簽署保護，這使得所有的用戶都可以對從他們自己的 Bitcoin 地址傳送的比特幣有完全的掌控權。而且，每一個人都可以使用有專門硬體的計算器能力來處理交易并因這個服務而獲得作為獎賞的比特幣。這通常被稱為“挖礦”。如果您想要瞭解更多關於 Bitcoin 的資訊，您可以檢視<a href=\"#how-it-works#\">專門頁</a> 和  <a href=\"/bitcoin.pdf\">原始論文</a>。"
+    howitworkstxt2: "在後臺，Bitcoin 網路分享著一個公開的被稱為“區塊鏈”的總的分類帳。這個分類帳包含所有已經進行的交易，這使得用戶的電腦可以核實每一筆交易的合法性。每一筆交易的真實性被相應的傳送地址的數位簽署保護，這使得所有的用戶都可以對從他們自己的 Bitcoin 地址傳送的比特幣有完全的掌控權。而且，每一個人都可以使用有專門硬體的計算器能力來處理交易并因這個服務而獲得作為獎賞的比特幣。這通常被稱為“挖礦”。如果您想要瞭解更多關於 Bitcoin 的資訊，您可以檢視<a href=\"#how-it-works#\">專門頁</a> 和  <a href=\"#bitcoin-paper#\">原始論文</a>。"
     used: "真的有人在用 Bitcoin 嗎？"
     usedtxt1: "是的。<a href=\"http://usebitcoins.info/\">越來越多的企業</a>和個人使用 Bitcoin。這包括實體企業，如餐廳、公寓、法律公司和廣受歡迎的線上服務如Namecheap, WordPress, Reddit 和 Flattr等等。雖然 Bitcoin 還是一個相對而言較新鮮的現象，但是它發展迅速。2013年8月底，<a href=\"https://bitcoincharts.com/bitcoin/\">流通中的比特幣價值</a>超過了15億美元（US$ 1.5 billion），而且每天都有價值數百萬的比特幣在交易。"
     acquire: "如何獲得比特幣？"
@@ -424,7 +424,7 @@ zh_TW:
     processing: "處理<span class=\"titlelight\"> - 挖礦</span>"
     processingtxt: "挖礦是一種<b>分散式的共識系統</b>，用於<a href=\"#vocabulary##[vocabulary.confirmation]\"><i>確認</i></a>交易並把交易加入區塊鏈之中。挖礦能確保區塊鏈的時間順序、保護網路的中立性，並且讓不同的電腦就系統的狀態取得共識。待確認的交易將會打包到某個<a href=\"#vocabulary##[vocabulary.block]\"><i>區塊</i></a>之中，而區塊必須滿足非常嚴格的密碼學規則。這些規則防止區塊被篡改，因為這樣做會導致被篡改區塊之後的區塊都變得無效。挖礦創造了一個競爭性的隨機系統，可防止任何人輕易地將連續的區塊加到區塊鏈中。藉由這個系統，沒有人能控制區塊鏈中能包含哪些交易，或是更動區塊鏈的某一部份來取消他們自己的支付。"
     readmore: "探索未知的世界"
-    readmoretxt: "這僅僅是 Bitcoin 系統的簡要說明，如果想瞭解更多細節，您可以<a href=\"/bitcoin.pdf\">閱讀原始論文</a>，其中描述了系統的設計，您也可以閱讀<a href=\"/en/developer-documentation\">開發人員文檔</a>，您還可以探索一下<a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>。"
+    readmoretxt: "這僅僅是 Bitcoin 系統的簡要說明，如果想瞭解更多細節，您可以<a href=\"#bitcoin-paper#\">閱讀原始論文</a>，其中描述了系統的設計，您也可以閱讀<a href=\"/en/developer-documentation\">開發人員文檔</a>，您還可以探索一下<a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>。"
   index:
     title: "Bitcoin - 開放原始碼點對點數位貨幣"
     metadescription: "Bitcoin 是一種創新的支付網路，也是一種新型貨幣。找到您所需要瞭解的資訊然後就可以在bitcoin.org 開始接觸 Bitcoin。"
