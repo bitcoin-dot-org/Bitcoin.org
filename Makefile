@@ -93,6 +93,7 @@ build:
 	$S export LANG=C.UTF-8 ; bundle exec jekyll build 2>&1 | tee $(JEKYLL_LOG)
 	$S grep -r -L 'Note: this file is built non-deterministically' _site/ \
 	  | egrep -v 'sha256sums.txt' \
+	  | sort \
 	  | xargs sha256sum > _site/sha256sums.txt
 
 ## Jekyll annoyingly returns success even when it emits errors and
