@@ -7,12 +7,14 @@ lang: en
 title: Bitcoin.org Site Blog - Bitcoin
 id: site-blog
 ---
+<link rel="alternate" type="application/atom+xml" href="/en/rss/blog.xml" title="Bitcoin.org Site Blog">
 
 <div class="home">
 
   <h1 class="page-heading">Bitcoin.org Site Blog</h1>
 
-  <p class="summary">Discover what's new on Bitcoin.org or <a href="/en/rss/blog.xml">subscribe to the RSS feed</a></p>
+
+  <p class="summary">Discover what's new on Bitcoin.org or <a href="/en/rss/blog.xml">subscribe to the RSS feed</a> <a type="application/atom+xml" href="/en/rss/blog.xml"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></p>
 
   <ul class="post-list">
     {% for post in site.posts %}
