@@ -44,6 +44,44 @@ signatures file.
 </div>
 {% endcapture %}
 
+
+{% capture start_up_and_recommended_commands %}
+Note: it may take up to several minutes for Bitcoin Core to start,
+during which it will display the following message whenever you use
+`bitcoin-cli`:
+
+    error: {"code":-28,"message":"Verifying blocks..."}
+
+After it starts, you may find the following commands useful for basic
+interaction with your node:
+[`getblockchaininfo`](/en/developer-reference#getblockchaininfo),
+[`getnetworkinfo`](/en/developer-reference#getnetworkinfo),
+[`getnettotals`](/en/developer-reference#getnettotals),
+[`getwalletinfo`](/en/developer-reference#getwalletinfo),
+[`stop`](/en/developer-reference#stop), and [`help`](/en/developer-reference#help).
+{% endcapture %}
+
+
+{% capture complete_list_of_commands_and_ibd %}
+A complete list of commands is available in the [Bitcoin.org developer
+reference](/en/developer-reference#rpc-quick-reference).
+
+When Bitcoin Core daemon first starts, it will begin to download the
+block chain. This step will take at least several hours, and it may
+take a day or more on a slow Internet connection or with a slow
+computer. During the download, Bitcoin Core will use a significant part
+of your connection bandwidth. You can stop Bitcoin Core at any time using
+the `stop` command; it will resume from the point where it stopped the next
+time you start it.
+{% endcapture %}
+
+
+{% capture windows_shutdown_warning %}
+**Warning:** to prevent data corruption, do not force shutdown your
+computer from the Windows shutdown screen when you have Bitcoin
+Core running.
+{% endcapture %}
+
 -->
 
 # Running A Full Node
@@ -344,33 +382,14 @@ command:
 
 It will print a message that Bitcoin Core is starting.  To interact with
 Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin
-command line interface).  Note: it may take up to several minutes for
-Bitcoin Core to start, during which it will display the following
-message whenever you use `bitcoin-cli`:
+command line interface).
+{{start_up_and_recommended_commands}}
 
-    error: {"code":-28,"message":"Verifying blocks..."}
-
-After it starts, you may find the following commands useful for basic
-interaction with your node:
-[`getblockchaininfo`](/en/developer-reference#getblockchaininfo),
-[`getnetworkinfo`](/en/developer-reference#getnetworkinfo),
-[`getnettotals`](/en/developer-reference#getnettotals),
-[`getwalletinfo`](/en/developer-reference#getwalletinfo),
-[`stop`](/en/developer-reference#stop), and [`help`](/en/developer-reference#help).
 For example, to safely stop your node, run the following command:
 
     bitcoin-cli stop
 
-A complete list of commands is available in the [Bitcoin.org developer
-reference](/en/developer-reference#rpc-quick-reference).
-
-When Bitcoin Core daemon first starts, it will begin to download the
-block chain. This step will take at least several hours, and it may
-take a day or more on a slow Internet connection or with a slow
-computer. During the download, Bitcoin Core will use a significant part
-of your connection bandwidth. You can stop Bitcoin Core at any time using
-the `stop` command; it will resume from the point where it stopped the next
-time you start it.
+{{complete_list_of_commands_and_ibd}}
 
 <div class="box" markdown="1">
 *Optional: Start Your Node At Boot*
@@ -586,33 +605,14 @@ command:
 
 It will print a message that Bitcoin Core is starting.  To interact with
 Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin
-command line interface).  Note: it may take up to several minutes for
-Bitcoin Core to start, during which it will display the following
-message whenever you use `bitcoin-cli`:
+command line interface).
+{{start_up_and_recommended_commands}}
 
-    error: {"code":-28,"message":"Verifying blocks..."}
-
-After it starts, you may find the following commands useful for basic
-interaction with your node:
-[`getblockchaininfo`](/en/developer-reference#getblockchaininfo),
-[`getnetworkinfo`](/en/developer-reference#getnetworkinfo),
-[`getnettotals`](/en/developer-reference#getnettotals),
-[`getwalletinfo`](/en/developer-reference#getwalletinfo),
-[`stop`](/en/developer-reference#stop), and [`help`](/en/developer-reference#help).
 For example, to safely stop your node, run the following command:
 
     bitcoin-cli stop
 
-A complete list of commands is available in the [Bitcoin.org developer
-reference](/en/developer-reference#rpc-quick-reference).
-
-When Bitcoin Core daemon first starts, it will begin to download the
-block chain. This step will take at least several hours, and it may
-take a day or more on a slow Internet connection or with a slow
-computer. During the download, Bitcoin Core will use a significant part
-of your connection bandwidth. You can stop Bitcoin Core at any time using
-the `stop` command; it will resume from the point where it stopped the next
-time you start it.
+{{complete_list_of_commands_and_ibd}}
 
 <div class="box" markdown="1">
 *Optional: Start Your Node At Boot*
@@ -743,6 +743,7 @@ the Ok button to save the new settings.
 
 The next time you login to your desktop, Bitcoin Core GUI will be
 automatically started minimized in the task bar.
+{{windows_shutdown_warning}}
 
 </div>
 
