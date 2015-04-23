@@ -688,8 +688,8 @@ install Bitcoin Core.
    Core Daemon](#win7-daemon) section below.
 
 3. To want to use both the GUI and the daemon, read both the [GUI
-   instructions](#ubuntu-gui) and the [daemon
-   instructions](#ubuntu-daemon). Note that you can't run both the GUI
+   instructions](#win7-gui) and the [daemon
+   instructions](#win7-daemon). Note that you can't run both the GUI
    and the daemon at the same time using the same configuration
    directory.
 
