@@ -245,7 +245,7 @@ design these minimalist wallets:
 * Use a parent public key to create child public keys. To avoid key
   reuse, a method must be used to ensure the same public key isn't
   distributed twice. This can be a database entry for each key
-  distributed or an incrementing pointer to the current child key
+  distributed or an incrementing pointer to the key
   index number.
 
 Neither method adds a significant amount of overhead, especially if a
