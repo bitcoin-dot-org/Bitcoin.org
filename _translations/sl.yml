@@ -216,7 +216,7 @@ sl:
     devcommunitiesintro: "Spodaj je seznam klepetalnic in spletnih strani, ki gostijo debate o razvoju bitcoina. Prosimo, da pred vključitvijo v pogovor najprej preberete njihova pravila in pogoje za sodelovanje v debatah."
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-dev\">IRC-kanal #bitcoin-dev</a> na freenode.net."
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
-    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">Bitcoin razvojne debate & Forum za tehnične razprave</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">Bitcoin razvojne debate &amp; Forum za tehnične razprave</a>"
   download:
     title: "Prenesi - bitcoin"
     pagetitle: "Prenesi Bitcoin Core"

@@ -226,7 +226,7 @@ sv:
     devcommunitiesintro: "Följande chattrum och hemsidor har diskussioner om Bitcoin-utveckling. Var god läs deras förhållningsregler innan du skriver något. "
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-dev\">IRC kanal #bitcoin-dev</a> på freenode."
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
-    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development & Technical Discussion Forum</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
     title: "Ladda ner - Bitcoin"
     pagetitle: "Ladda ner Bitcoin Core"

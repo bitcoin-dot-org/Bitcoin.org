@@ -78,7 +78,7 @@ ja:
     forums: "フォーラム"
     bitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=77.0\">ビットコイン・トーク・フォーラム </a>"
     reddit: "Redditのビットコイン・コミュニティ"
-    stackexchange: "ビットコイン・スタック・エクスチェンジ (Q&A)"
+    stackexchange: "ビットコイン・スタック・エクスチェンジ (Q&amp;A)"
     irc: "IRCチャット"
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">フリーノード</a>でのIRCチャンネル。"
     chanbitcoin: "(ビットコイン関連一般)"
@@ -222,7 +222,7 @@ ja:
     devcommunitiesintro: "以下のチャットルームとウエブサイトは、ビットコイン開発に関する討論を主催しています。投稿される前に必ず規約をお読みください。"
     ircjoin: "フリーノード上の<a href=\"https://webchat.freenode.net/?channels=bitcoin-dev\">IRC Channel #bitcoin-dev</a> "
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">ビットコイン・スタック・エクスチェンジ</a>"
-    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">ビットコイン・トーク開発 & 技術討論フォーラム</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">ビットコイン・トーク開発 &amp; 技術討論フォーラム</a>"
   download:
     title: "ダウンロード - ビットコイン"
     pagetitle: "ビットコイン・コアをダウンロード"

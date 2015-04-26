@@ -2,12 +2,18 @@
 
 require 'html/proofer'
 
+if ARGV[0].nil?
+  path_to_check="./_site"
+else
+  path_to_check=ARGV[0]
+end
+
 ## Will throw an exception (exiting false) if any internal links don't
 ## work. The Makefile will terminate on the failure
 HTML::Proofer.new(
     ## To test, uncomment the array below and comment out ./_site and :disable_external
     #[ "/foo/bar#baz", "/foo/bar", "#", "#wallet", "/foo.css", "/bar.png", "/zh_TW/bitcoin-for-businesses" ],
-    "./_site",
+    path_to_check,
 
     {
         ## Disable external link checking by default to avoid spurious
@@ -15,6 +21,9 @@ HTML::Proofer.new(
         ## enable external link checking as part of the Makefile
         ## manual checks
         :disable_external => true,
+
+        ## Check whether HTML is well-formed
+        :check_html => true,
 
         ## Links to ignore
         :href_ignore => [

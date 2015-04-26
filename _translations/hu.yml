@@ -223,7 +223,7 @@ hu:
     devcommunitiesintro: "A következő chatszobák és weboldalak a Bitcoin fejlesztésével kapcsolatos párbeszédnek biztosítanak felületet. A posztolás előtt, kérjük, olvassa el a magatartási szabályokat."
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-dev\">#bitcoin-dev IRC-csatona </a> a freenode-on."
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
-    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development & Technical Discussion Forum</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
     title: "Letöltés - Bitcoin"
     pagetitle: "Töltse le a Bitcoin Core-t"

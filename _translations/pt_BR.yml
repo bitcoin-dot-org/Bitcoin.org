@@ -223,7 +223,7 @@ pt_BR:
     devcommunitiesintro: "As seguintes salas de bate-papo e web sites apresentam discussões sobre o desenvolvimento da Bitcoin. Por favor assegure-se de ler as regras de conduta antes de enviar um comentário."
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-dev\">Canal IRC #bitcoin-dev</a> em freenode."
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
-    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">Conversa Bitcoin sobre Desenvolvimento & Fórum de Discussões Tecnológicas.</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">Conversa Bitcoin sobre Desenvolvimento &amp; Fórum de Discussões Tecnológicas.</a>"
   download:
     title: "Download - Bitcoin"
     pagetitle: "Baixar Bitcoin Core"

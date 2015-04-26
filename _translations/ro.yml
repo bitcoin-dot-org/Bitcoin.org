@@ -199,7 +199,7 @@ ro:
     checkfailprivacynetworknosupporttor: "Nu suporta Tor"
     checkfailprivacynetworknosupporttortxt: "Acest portofel nu te lasa sa folosesti Tor, pentru a preveni atacuri sau provideri de internet de la asocia plati cu adresa ta IP."
     educate: "Inainte de toate, invata "
-    educatetxt: "Bitcoin este diferit de ceea ce ştii şi foloseşti zi de zi. Înainte de a începe să foloseşti Bitcoin pentru orice tranzacţie serioasă, citeşte <a href=\"#you-need-to-know#\"><b>ce trebuie să ştii</b></a> şi ia masurile necesare pentru a-ţi </b></a>securiza portofelul</b></a>. Aminteşte-ţi întotdeauna că este responsabilitatea ta să alegi atent portofelul şi să adopţi obiceiuri bune pentru a-ţi proteja banii."
+    educatetxt: "Bitcoin este diferit de ceea ce ştii şi foloseşti zi de zi. Înainte de a începe să foloseşti Bitcoin pentru orice tranzacţie serioasă, citeşte <a href=\"#you-need-to-know#\"><b>ce trebuie să ştii</b></a> şi ia masurile necesare pentru a-ţi <a href=\"#secure-your-wallet#\"><b>securiza portofelul</b></a>. Aminteşte-ţi întotdeauna că este responsabilitatea ta să alegi atent portofelul şi să adopţi obiceiuri bune pentru a-ţi proteja banii."
   development:
     title: "Dezvoltare - Bitcoin"
     pagetitle: "Dezvoltarea Bitcoin"
@@ -222,7 +222,7 @@ ro:
     devcommunitiesintro: "Următoarele camere de chat şi siteuri găzduiesc discuţii despre dezvoltarea Bitcoin. Te rugăm să citeşti regulile lor de conduită înainte să postezi."
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-dev\">IRC Channel #bitcoin-dev</a> pe freenode."
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
-    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development & Technical Discussion Forum</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
     title: "Descarcă - Bitcoin"
     pagetitle: "Descarcă Bitcoin Core"

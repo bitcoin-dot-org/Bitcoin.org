@@ -224,7 +224,7 @@ es:
     devcommunitiesintro: "Las siguientes salas de chat y sitios web hospedan discusiones acerca del desarrollo de Bitcoin. Por favor asegurese de leer el código de conducta antes de publicar algo."
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-dev\">Canal de IRC #bitcoin-dev</a> en freenode."
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
-    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development & Technical Discussion Forum</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
     title: "Descargar - Bitcoin"
     pagetitle: "Descargar Bitcoin Core"

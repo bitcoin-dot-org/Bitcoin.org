@@ -115,7 +115,7 @@ en:
     walletbitcoinqt: "Bitcoin Core is a full Bitcoin client and builds the backbone of the network. It offers high levels of security, privacy, and stability. However, it has fewer features and it takes a lot of space and memory."
     walletmultibit: "MultiBit is a lightweight client that focuses on being fast and easy to use. It synchronizes with the network and is ready to use in minutes. MultiBit also supports many languages. It is a good choice for non-technical users."
     wallethive: "Hive is a fast, integrated, user-friendly Bitcoin wallet for Mac OS X. With a focus on usability, Hive is translated into many languages and has apps, making it easy to interact with your favorite Bitcoin services and merchants."
-    wallethive-web: "Hive is a human-friendly Bitcoin and Litecoin wallet, which features a beautiful, elegant and simple interface. It offers Waggle, a simple way to send & receive tokens with other Hive users near you. Your passphrase generates your wallet, making it portable and backups easy."
+    wallethive-web: "Hive is a human-friendly Bitcoin and Litecoin wallet, which features a beautiful, elegant and simple interface. It offers Waggle, a simple way to send &amp; receive tokens with other Hive users near you. Your passphrase generates your wallet, making it portable and backups easy."
     walletarmory: "Armory is an advanced Bitcoin client that expands its features for Bitcoin power users. It offers many backup and encryption features, and it allows secure cold-storage on offline computers."
     walletelectrum: "Electrum's focus is speed and simplicity, with low resource usage. It uses remote servers that handle the most complicated parts of the Bitcoin system, and it allows you to recover your wallet from a secret phrase."
     walletmsigna: "mSIGNA is an advanced yet easy-to-use wallet featuring speed and simplicity, enterprise-level scalability, and strong security. It supports BIP32, multisignature transactions, offline storage, multidevice synchronization, and encrypted electronic and paper backups."
@@ -233,7 +233,7 @@ en:
     devcommunitiesintro: "The following chatrooms and websites host discussions about Bitcoin development.  Please be sure to read their rules of conduct before posting."
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-dev\">IRC Channel #bitcoin-dev</a> on freenode."
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
-    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development & Technical Discussion Forum</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
     title: "Download - Bitcoin"
     pagetitle: "Download Bitcoin Core"

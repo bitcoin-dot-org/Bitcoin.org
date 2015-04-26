@@ -16,7 +16,7 @@ de:
     missiontxt6: "Die weltweite Erreichbarkeit von Bitcoin durch Internationalisierung verbessern."
     missiontxt7: "Eine neutrale Informationsquelle über Bitcoin bleiben."
     help: "Hilf uns"
-    helptxt: "Sie können jedes Problem durch Eröffnen eines \"Issues\" oder \"Pull Requests\" in englischer Sprache auf <a href=\"https://github.com/bitcoin/bitcoin.org#how-to-participate\">GitHub</a> melden. Wenn Sie ein \"Pull Request\" übermitteln, nehmen Sie sich bitte die nötigte Zeit, um die Änderungen zu diskutieren und ihre Arbeit anzupassen. Durch Beitritt zu einem Team auf href=\"https://github.com/bitcoin/bitcoin.org#translation\">Transifex</a> können Sie mit den Übersetzungen helfen. Bitte fragen Sie nicht nach Werbung für ihr eigenes Unternehmen oder ihre Website, außer in speziellen Fällen wie Konferenzen. Vielen Dank an alle Unterstützer, die ihre Zeit  für die Verbesserung von bitcoin.org aufwenden!"
+    helptxt: "Sie können jedes Problem durch Eröffnen eines \"Issues\" oder \"Pull Requests\" in englischer Sprache auf <a href=\"https://github.com/bitcoin/bitcoin.org#how-to-participate\">GitHub</a> melden. Wenn Sie ein \"Pull Request\" übermitteln, nehmen Sie sich bitte die nötigte Zeit, um die Änderungen zu diskutieren und ihre Arbeit anzupassen. Durch Beitritt zu einem Team auf <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Transifex</a> können Sie mit den Übersetzungen helfen. Bitte fragen Sie nicht nach Werbung für ihr eigenes Unternehmen oder ihre Website, außer in speziellen Fällen wie Konferenzen. Vielen Dank an alle Unterstützer, die ihre Zeit  für die Verbesserung von bitcoin.org aufwenden!"
     maintenance: "Wartung"
     documentation: "Dokumentation"
     translation: "Übersetzungen"
@@ -226,7 +226,7 @@ de:
     devcommunitiesintro: "Die folgenden Chatrooms und Websites bieten DIskussionen über die Bitcoin Entwicklung. Lesen Sie bitte die Verhaltensregeln bevor Sie sich beteiligen."
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-dev\">IRC Channel #bitcoin-dev</a> auf freenode."
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
-    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development & Technical Discussion Forum</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
     title: "Download - Bitcoin"
     pagetitle: "Downloade Bitcoin Core"
