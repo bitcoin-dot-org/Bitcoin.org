@@ -1,43 +1,40 @@
 ---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 layout: base
 id: support-bitcoin
 ---
 <h1>{% translate pagetitle %}</h1>
 <p class="summarytxt">{% translate summary %}</p>
 
-<h2><img class="titleicon" src="/img/ico_multi.svg" alt="Icon" />{% translate use %}</h2>
+<h2 id="use"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />{% translate use %}</h2>
 <p>{% translate usetxt %}</p>
 
-<h2><img class="titleicon" src="/img/ico_network.svg" alt="Icon" />{% translate node %}</h2>
+<h2 id="node"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />{% translate node %}</h2>
 <p>{% translate nodetxt %}</p>
 
-<h2><img class="titleicon" src="/img/ico_mining.svg" alt="Icon" />{% translate mining %}</h2>
+<h2 id="mining"><img class="titleicon" src="/img/icons/ico_mining.svg" alt="Icon" />{% translate mining %}</h2>
 <p>{% translate miningtxt %}</p>
 
-<h2><img class="titleicon" src="/img/ico_translate.svg" alt="Icon" />{% translate translate %}</h2>
+<h2 id="translate"><img class="titleicon" src="/img/icons/ico_translate.svg" alt="Icon" />{% translate translate %}</h2>
 <p>{% translate translatetxt %}</p>
 <p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> - <a href="http://translate.multibit.org/">MultiBit</a> - <a href="https://crowdin.com/project/electrum">Electrum</a> - <a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></p>
 
-<h2><img class="titleicon" src="/img/ico_conf.svg" alt="Icon" />{% translate develop %}</h2>
+<h2 id="develop"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />{% translate develop %}</h2>
 <p>{% translate developtxt %}</p>
 
-<h2><img class="titleicon" src="/img/ico_donate.svg" alt="Icon" />{% translate donation %}</h2>
+<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />{% translate donation %}</h2>
 <p>{% translate donationtxt %}</p>
 
-{% case page.lang %}
-{% when 'bg' or 'tr' %}
-<h2><img class="titleicon" src="/img/ico_law.svg" alt="Icon" />{% translate foundation %}</h2>
-<p>{% translate foundationtxt %}</p>
-{% else %}
-<h2><img class="titleicon" src="/img/ico_law.svg" alt="Icon" />{% translate nonprofit %}</h2>
+<h2 id="nonprofit"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />{% translate nonprofit %}</h2>
 <p>{% translate nonprofittxt %}</p>
-{% endcase %}
 
-<h2><img class="titleicon" src="/img/ico_spread.svg" alt="Icon" />{% translate spread %}</h2>
+<h2 id="spread"><img class="titleicon" src="/img/icons/ico_spread.svg" alt="Icon" />{% translate spread %}</h2>
 <p>{% translate spreadtxt %}</p>
 
-<h2><img class="titleicon" src="/img/ico_wiki.svg" alt="Icon" />{% translate wiki %}</h2>
+<h2 id="wiki"><img class="titleicon" src="/img/icons/ico_wiki.svg" alt="Icon" />{% translate wiki %}</h2>
 <p>{% translate wikitxt %}</a>
 
-<h2><img class="titleicon" src="/img/ico_help.svg" alt="Icon" />{% translate help %}</h2>
+<h2 id="help"><img class="titleicon" src="/img/icons/ico_help.svg" alt="Icon" />{% translate help %}</h2>
 <p>{% translate helptxt %}</p>

@@ -1,0 +1,31 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Regtest, Regression Test Mode
+
+    summary_max_255_characters_no_formatting: >
+        A local testing environment in which developers can almost
+        instantly generate blocks on demand for testing events, and can
+        create private satoshis with no real-world value.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Regtest
+        - Regression test mode
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - regtests
+        - regression test modes
+        - regtest mode
+        - regtest modes
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Testnet (a global testing environment which mostly mimics mainnet)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Regtest mode](/en/developer-examples#regtest-mode) --- Bitcoin.org Developer Examples"
+
+---

@@ -1,17 +1,23 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+---
 <!DOCTYPE HTML>
 <html lang="{{ page.lang }}">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta property="og:image" content="https://bitcoin.org/img/opengraph.png" />
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
+{% capture metadescription %}{% translate metadescription %}{% endcapture %}{% if metadescription != '' %}<meta name="description" content="{{ metadescription }}">{% endif %}
 {% lesscss main.less %}
 <!--[if lt IE 8]>{% lesscss ie.css %}<script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 {% if page.lang == 'ar' or page.lang == 'fa' %}{% lesscss rtl.less %}{% endif %}
-{% if page.lang == 'bg' or page.lang == 'ko' or page.lang == 'hi' or page.lang == 'pl' or page.lang == 'sl' or page.lang == 'ro' or page.lang == 'ru' or page.lang == 'tr' or page.lang == 'zh_CN' or page.lang == 'zh_TW' %}{% lesscss sans.less %}{% endif %}
-<script type="text/javascript" src="/js/main.js?1400954556"></script>
+{% if page.lang == 'bg' or page.lang == 'el' or page.lang == 'ko' or page.lang == 'hi' or page.lang == 'pl' or page.lang == 'sl' or page.lang == 'ro' or page.lang == 'ru' or page.lang == 'tr' or page.lang == 'uk' or page.lang == 'zh_CN' or page.lang == 'zh_TW' %}{% lesscss sans.less %}{% endif %}
+<script type="text/javascript" src="/js/base.js"></script>
+{% if page.id != 'download' %}<script type="text/javascript" src="/js/main.js"></script>{% endif %}
 <link rel="shortcut icon" href="/favicon.png">
-<link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
 </head>
 <body>
 <div id="detectmobile" class="detectmobile"></div>
@@ -20,12 +26,6 @@
     <div><div>{{ site.ALERT }}</div></div>
   </div>
 {% endif %}
-{% case page.lang %}
-{% when 'fa' or 'pl' or 'tr' or 'zh_TW' %}
-  <div class="banner-message info">
-    <div><div>{% translate banner-translate layout %}</div></div>
-  </div>
-{% endcase %}
   <div class="head"><div>
     <ul class="lang">
       <li><a href="#" onclick="return false;">{{ site.langs[page.lang] }}</a>
@@ -40,8 +40,8 @@
       </ul>
       </li>
     </ul>
-    <a class="logo" href="/{{ page.lang }}/"><img src="/img/logotop.svg" alt="Bitcoin"></a>
     <a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" href="#"></a>
+    <a class="logo" href="/{{ page.lang }}/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
     <div id="langselect" class="langselect"><select onchange="window.location=this.value;">
     {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{% endif %}
           <option value="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"{{ active }}>{{ site.langs[lang] }}</option>
@@ -53,12 +53,7 @@
           <li{% if page.id == 'bitcoin-for-individuals' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a></li>
           <li{% if page.id == 'bitcoin-for-businesses' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a></li>
           <li{% if page.id == 'bitcoin-for-developers' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a></li>
-          {% case page.lang %}
-          {% when 'fa' or 'pl' or 'zh_TW' %}
-          <li{% if page.id == 'choose-your-wallet' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate menu-choose-your-wallet layout %}</a></li>
-          {% else %}
           <li{% if page.id == 'getting-started' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate menu-getting-started layout %}</a></li>
-          {% endcase %}
           <li{% if page.id == 'how-it-works' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate how-it-works url %}">{% translate menu-how-it-works layout %}</a></li>
           <li{% if page.id == 'you-need-to-know' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a></li>
         </ul>
@@ -68,23 +63,19 @@
           <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a></li>
           <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
           {% if page.lang == 'en' %}<li{% if page.id == 'developer-documentation' %} class="active"{% endif %}><a href="/en/developer-documentation">Documentation</a></li>{% endif %}
-          <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
           <li{% if page.id == 'vocabulary' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
-          {% case page.lang %}
-          {% when 'fa' or 'pl' or 'zh_TW' %}
-          {% else %}
           <li{% if page.id == 'events' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>
-          {% endcase %}
-          {% if page.lang == 'en' %}<li{% if page.id == 'press' %} class="active"{% endif %}><a href="/en/press">Press</a></li>{% endif %}
         </ul>
       </li>
       <li{% if page.id == 'innovation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate innovation url %}">{% translate menu-innovation layout %}</a></li>
-      <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a></li>
-      {% case page.lang %}
-      {% when 'sv' %}
-      {% else %}
+      <li><a href="#" onclick="return false;">{% translate menu-participate layout %}</a>
+        <ul>
+          <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a>
+          {% if page.lang == 'en' %}<li{% if page.id == 'full-node' %} class="active"{% endif %}><a href="/en/full-node">Running a full node</a></li>{% endif %}
+          <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
+        </ul>
+      </li>
       <li{% if page.id == 'faq' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate faq url %}">{% translate menu-faq layout %}</a></li>
-      {% endcase %}
     </ul>
   </div></div>
   <div class="body">
@@ -93,32 +84,28 @@
     </div>
     <div class="footer">
     <div class="footermenu">
-    <a href="/en/alerts">Network Status</a>
-    {% case page.lang %}
-    {% when 'fa' or 'pl' or 'tr' or 'zh_TW' %}
-    <a href="/en/legal">Legal</a>
-    {% else %}
+    <a href="/en/alerts" class="statusmenu{% if site.STATUS == 1 %} alert{% endif %}">Network Status</a>
+    <a href="/stats/">{% translate menu-stats layout %}</a>
     <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
-    {% endcase %}
     {% case page.lang %}
-    {% when 'fa' %}
-    <a href="/en/about-us">About bitcoin.org</a>
+    {% when 'ar' or 'es' or 'sl' %}
+    <a href="/en/privacy">Privacy</a>
     {% else %}
+    <a href="/{{ page.lang }}/{% translate privacy url %}">{% translate menu-privacy layout %}</a>
+    {% endcase %}
+    <a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a>
     <a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a>
-    {% endcase %}
     </div>
-    <span>© Bitcoin Project 2009-2014 {% translate footer layout %}</span>
+    <div class="footersponsor">
+      <div><span>{% translate sponsor layout %}</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>
+    </div>
+    <div class="footerlicense">© Bitcoin Project 2009-{{ site.time | date: '%Y' }} {% translate footer layout %}</div>
     </div>
   </div>
-  <div class="sponsor-banner">
-    {% case page.lang %}
-    {% when 'fa' %}
-    <div style="direction:ltr;"><span>{% translate sponsor layout %}</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>
-    {% else %}
-    <div><span>{% translate sponsor layout %}</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>
-    {% endcase %}
-  </div>
-  <script type="text/javascript">fallbackSVG();</script>
+  <script type="text/javascript">
+    fallbackSVG();
+    addAnchorLinks();
+  </script>
 </body>
 
 </html>

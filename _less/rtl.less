@@ -1,3 +1,8 @@
+/*
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+*/
+
 /*Language specific styles that override default*/
 
 /*Styles for HTML tags*/
@@ -41,12 +46,14 @@ p{
 	right:0;
 	left:auto;
 }
-.footermenu{
-	display:inline-block;
-}
 .footermenu a{
 	margin-right:0;
 	margin-left:15px;
+}
+.statusmenu{
+	padding-left:0;
+	padding-right:20px;
+	background-position:right center;
 }
 .titleicon{
 	margin-right:auto;
@@ -121,8 +128,18 @@ h2 .rssicon{
 	text-align:right;
 	font-family:Arial, sans-serif;
 }
+.downloadbox div div span{
+	margin-left:0;
+	margin-right:6px;
+}
 
-.mainlist>div>div{
+.mainlist>div:first-child{
+	text-align:right;
+}
+.mainlist>div:first-child+div+div{
+	text-align:left;
+}
+.mainlist>div>div>div{
 	text-align:right;
 }
 .mainlist img{
@@ -153,11 +170,9 @@ h2 .rssicon{
 	padding:0 8px;
 }
 
-.sponsor-banner a,
-.sponsor-banner a:link,
-.sponsor-banner a:active,
-.sponsor-banner a:visited{
-	direction:ltr;
+.anchorAf a{
+	left:0;
+	right:-24px;
 }
 
 .listtable div div{
@@ -265,18 +280,42 @@ h2 .rssicon{
 	left:20px;
 }
 .wallets .checkgood>div>span{
-	background-image:url(/img/checkbubble_pass_rtl.svg);
+	background-image:url(/img/icons/checkbubble_pass_rtl.svg);
 }
 .wallets .checkpass>div>span{
-	background-image:url(/img/checkbubble_pass_rtl.svg);
+	background-image:url(/img/icons/checkbubble_pass_rtl.svg);
 }
 .wallets .checkfail>div>span{
-	background-image:url(/img/checkbubble_fail_rtl.svg);
+	background-image:url(/img/icons/checkbubble_fail_rtl.svg);
+}
+.wallets .checkneutral>div>span{
+	background-image:url(/img/icons/checkbubble_neutral_rtl.svg);
 }
 
 .warningicon{
 	margin-right:0;
 	margin-left:6px;
+}
+
+.press-volunteer,
+.press-faq,
+.press-faq p{
+	text-align:right;
+}
+.press-faq>div{
+	margin-right:0;
+	margin-left:30px;
+}
+.press-faq>div>a{
+	margin-right:0;
+	margin-left:20px;
+}
+.press-pictures{
+	text-align:right;
+}
+.press-pictures img{
+	margin-right:0;
+	margin-left:14px;
 }
 	
 /*Override UbuntuBold by Droid Naskh*/
@@ -287,8 +326,13 @@ h2 .rssicon{
 /*Styles specific to mobiles*/
 
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ){
-	h1{
-		text-align:right;
+	h2{
+		text-align:center;
+	}
+	.titleicon,
+	.warningicon{
+		margin:auto;
+		margin-bottom:5px;
 	}
 	.langselect{
 		text-align:right;
@@ -298,16 +342,12 @@ h2 .rssicon{
 		margin-left:0;
 		margin-right:10px;
 	}
-	.summary{
-		text-align:right;
-	}
 	.content{
-		position:static;
-		padding:15px 10px 20px 10px;
 		text-align:right;
 	}
-	.footermenu{
-		display:block;
+	.resources,
+	.resources p{
+		text-align:center;
 	}
 	.resources>div>div:first-child{
 		padding-left:0;
@@ -340,10 +380,6 @@ h2 .rssicon{
 		text-align:right;
 	}
 	.downloadbox{
-		text-align:right;
-	}
-	.download h1,
-	.download h2{
 		text-align:right;
 	}
 	.download div p{

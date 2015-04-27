@@ -1,0 +1,40 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Denominations
+
+    summary_max_255_characters_no_formatting: >
+        Denominations of Bitcoin value, usually measured in fractions of
+        a bitcoin but sometimes measured in multiples of a satoshi.  One
+        bitcoin equals 100,000,000 satoshis.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Denomination
+        - Bitcoins
+        - Satoshis
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - denominations
+        - millibitcoin
+        - millibitcoins
+        - millibit
+        - millibits
+        - microbitcoin
+        - microbitcoins
+        - microbit
+        - microbits
+        - satoshi
+        ## Don't add bitcoin singular, we use bare "Bitcoin" massively often
+        ## Don't add bits; the dev docs use [binary] "bits" often
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Binary bits, a unit of data with two possible values
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Bitcoin Units](https://en.bitcoin.it/wiki/Units) --- Bitcoin Wiki"
+
+---

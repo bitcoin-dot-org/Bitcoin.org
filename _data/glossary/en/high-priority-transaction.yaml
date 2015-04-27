@@ -1,0 +1,30 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: High-Priority Transaction, Free Tx
+
+    summary_max_255_characters_no_formatting: >
+        Transactions that don't have to pay a transaction fee because
+        their inputs have been idle long enough to accumulated large
+        amounts of priority.  Note: miners choose whether to accept free
+        transactions.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - High-priority transaction
+        - Free transaction
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - high-priority transactions
+        - free transactions
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[High-priority transactions](/en/developer-guide#term-high-priority-transactions) --- Bitcoin.org Developer Guide"
+        - "[Free transaction relay policy](https://en.bitcoin.it/wiki/Free_transaction_relay_policy) --- Bitcoin Wiki"
+
+---

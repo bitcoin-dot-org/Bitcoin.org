@@ -1,0 +1,48 @@
+digraph {
+// This file is licensed under the MIT License (MIT) available on
+// http://opensource.org/licenses/MIT.
+
+size=6.25;
+rankdir=LR
+splines = "false";
+ranksep = 0.5;
+nodesep = 0.1;
+
+edge [ penwidth = 1.75, fontname="Sans" ]
+node [ penwidth = 1.75, shape = "box", fontname="Sans"]
+graph [ penwidth = 1.75, fontname="Sans" ]
+
+ibd -> block:f1 -> sync [dir="back"];
+
+ibd [ label = "IBD\nNode", shape="none" ];
+sync [ label = "Sync\nNode", shape="none" ];
+
+block [ shape="plaintext", label=<
+    <table border="2" cellborder="1" cellpadding="5">
+      <tr>
+        <td colspan="4" port="f1" border="0" cellpadding="4"><b>Block Message</b></td>
+      </tr>
+
+      <tr>
+        <td colspan="4" border="0"><i>Message Header</i></td>
+      </tr>
+
+      <tr>
+        <td border="1"><i>Start String</i><br/><font face="courier">f9beb4d9</font></td>
+        <td border="1"><i>Command</i><br/><font face="courier">block</font></td>
+        <td border="1"><i>Size</i><br/><font face="courier">215</font></td>
+        <td border="1"><i>Checksum</i><br/><font face="courier">934d270a</font></td>
+      </tr>
+
+      <tr>
+        <td colspan="4" border="0"><i>Payload</i></td>
+      </tr>
+
+      <tr>
+        <td colspan="4" border="1"><i>Serialized Block</i><br/><font face="courier">010000006fe2...58eeac00000000</font></td>
+      </tr>
+
+    </table>>];
+
+label = "First block message sent to Initial Blocks Download (IBD) node"
+}

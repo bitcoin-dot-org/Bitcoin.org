@@ -1,4 +1,11 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+{% assign filename="_includes/guide_mining.md" %}
+
 ## Mining
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -19,6 +26,7 @@ hard to modify.  Mining today takes on two forms:
 {% endautocrossref %}
 
 ### Solo Mining
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -37,7 +45,7 @@ The mining hardware iterates through every possible value for the block
 header nonce and generates the corresponding hash.
 
 If none of the hashes are below the threshold, the mining hardware gets
-an updated block header with a new Merkle root from the mining software;
+an updated block header with a new merkle root from the mining software;
 this new block header is created by adding extra nonce data to the
 coinbase field of the coinbase transaction.
 
@@ -50,6 +58,7 @@ block chain.
 {% endautocrossref %}
 
 ### Pool Mining
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -71,7 +80,7 @@ miner checked a percentage of the possible hash values.
 
 The miner then sends to the pool a copy of the information the pool
 needs to validate that the header will hash below the target and that
-the the block of transactions referred to by the header Merkle root field
+the the block of transactions referred to by the header merkle root field
 is valid for the pool's purposes. (This usually means that the coinbase
 transaction must pay the pool.)
 
@@ -92,6 +101,7 @@ different reward distribution systems based on this basic share system.
 {% endautocrossref %}
 
 ### Block Prototypes
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -104,6 +114,7 @@ are used to keep ASIC hashers working at maximum capacity,
 {% endautocrossref %}
 
 #### getwork RPC
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -117,6 +128,7 @@ discourage or disallow its use.
 {% endautocrossref %}
 
 #### getblocktemplate RPC
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -139,10 +151,10 @@ provides the mining software with much more information:
 
 Using the transactions received, the mining software adds a nonce to the
 coinbase extra nonce field and then converts all the transactions into a
-Merkle tree to derive a Merkle root it can use in a block header.
+merkle tree to derive a merkle root it can use in a block header.
 Whenever the extra nonce field needs to be changed, the mining software
-rebuilds the necessary parts of the Merkle tree and updates the time and
-Merkle root fields in the block header.
+rebuilds the necessary parts of the merkle tree and updates the time and
+merkle root fields in the block header.
 
 Like all `bitcoind` RPCs, `getblocktemplate` is sent over HTTP. To
 ensure they get the most recent work, most miners use [HTTP longpoll][] to
@@ -154,6 +166,7 @@ wants to send more transactions to the mining software.
 {% endautocrossref %}
 
 #### Stratum
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -164,26 +177,26 @@ need to construct block headers on their own:
 1. The information necessary to construct a coinbase transaction
    paying the pool.
 
-2. The parts of the Merkle tree which need to be re-hashed to
-   create a new Merkle root when the coinbase transaction is
-   updated with a new extra nonce. The other parts of the Merkle
+2. The parts of the merkle tree which need to be re-hashed to
+   create a new merkle root when the coinbase transaction is
+   updated with a new extra nonce. The other parts of the merkle
    tree, if any, are not sent, effectively limiting the amount of data which needs
    to be sent to (at most) about a kilobyte at current transaction
    volume.
 
-3. All of the other non-Merkle root information necessary to construct a
+3. All of the other non-merkle root information necessary to construct a
    block header for the next block.
 
 4. The mining pool's current target threshold for accepting shares.
 
 Using the coinbase transaction received, the mining software adds a
 nonce to the coinbase extra nonce field, hashes the coinbase
-transaction, and adds the hash to the received parts of the Merkle tree.
-The tree is hashed as necessary to create a Merkle root, which is added
+transaction, and adds the hash to the received parts of the merkle tree.
+The tree is hashed as necessary to create a merkle root, which is added
 to the block header information received. Whenever the extra nonce field
 needs to be changed, the mining software updates and re-hashes the
-coinbase transaction, rebuilds the Merkle root, and updates the header
-Merkle root field.
+coinbase transaction, rebuilds the merkle root, and updates the header
+merkle root field.
 
 Unlike `getblocktemplate`, miners using Stratum cannot inspect or add
 transactions to the block they're currently mining. Also unlike

@@ -1,4 +1,11 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+{% assign filename="_includes/guide_wallets.md" %}
+
 ## Wallets
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -15,6 +22,7 @@ we're talking about wallet programs or wallet files.
 {% endautocrossref %}
 
 ### Wallet Programs
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -42,6 +50,7 @@ they control are spent.
 {% endautocrossref %}
 
 #### Full-Service Wallets
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -75,6 +84,7 @@ key or to read the decrypted keys from memory.
 
 
 #### Signing-Only Wallets
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -100,7 +110,7 @@ and transfers the unsigned transactions to the signing-only wallet.
 Often, users are given a chance to review the unsigned transactions' details
 (particularly the output details) using the signing-only wallet.  
 
-After the optional review step, the offline wallet uses the parent
+After the optional review step, the signing-only wallet uses the parent
 private key to derive the appropriate child private keys and signs the
 transactions, giving the signed transactions back to the networked wallet.
 
@@ -113,6 +123,7 @@ signing-only wallets: offline wallets and hardware wallets.
 {% endautocrossref %}
 
 ##### Offline Wallets
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -166,6 +177,7 @@ device and back.
 
 
 ##### Hardware Wallets
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -212,6 +224,7 @@ their intention to support at least one model of hardware wallet.
 
 
 #### Distributing-Only Wallets
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -223,7 +236,7 @@ design these minimalist wallets:
 ![Distributing-Only Wallets](/img/dev/en-wallets-distributing-only.svg)
 
 * Pre-populate a database with a number of public keys or addresses, and
-  then distribute on request an output script or address using one of
+  then distribute on request a pubkey script or address using one of
   the database entries. To [avoid key reuse][devguide avoiding key
   reuse], webservers should keep track
   of used keys and never run out of public keys. This can be made easier
@@ -232,7 +245,7 @@ design these minimalist wallets:
 * Use a parent public key to create child public keys. To avoid key
   reuse, a method must be used to ensure the same public key isn't
   distributed twice. This can be a database entry for each key
-  distributed or an incrementing pointer to the current child key
+  distributed or an incrementing pointer to the key
   index number.
 
 Neither method adds a significant amount of overhead, especially if a
@@ -245,6 +258,7 @@ Processing][devguide payment processing] section for details.
 
 
 ### Wallet Files
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -255,6 +269,7 @@ stored on pieces of paper.
 {% endautocrossref %}
 
 #### Private Key Formats
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -265,10 +280,11 @@ Private keys are what are used to unlock satoshis from a particular address. In 
 {% endautocrossref %}
 
 ##### Wallet Import Format (WIF)
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
-In order to make copying of private keys less prone to error, [Wallet Import Format][]{:#term-wallet-import-format}{:.term} may be utilized. WIF uses base58Check encoding on an private key, greatly decreasing the chance of copying error, much like standard Bitcoin addresses.
+In order to make copying of private keys less prone to error, [Wallet Import Format][/en/glossary/wallet-import-format]{:#term-wallet-import-format}{:.term} may be utilized. WIF uses base58Check encoding on an private key, greatly decreasing the chance of copying error, much like standard Bitcoin addresses.
 
 1. Take a private key.
 
@@ -293,6 +309,7 @@ The process is easily reversible, using the Base58 decoding function, and removi
 {% endautocrossref %}
 
 ##### Mini Private Key Format
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -317,6 +334,7 @@ address utility].
 
 
 #### Public Key Formats
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -356,8 +374,8 @@ However, Bitcoin Core prior to 0.6 used uncompressed keys.  This creates
 a few complications, as the hashed form of an uncompressed key is
 different than the hashed form of a compressed key, so the same key
 works with two different P2PKH addresses.   This also means that the key
-must be submitted in the correct format in the input scriptSig so it
-matches the hash in the previous output script.
+must be submitted in the correct format in the signature script so it
+matches the hash in the previous output's pubkey script.
 
 For this reason, Bitcoin Core uses several different identifier bytes to
 help programs identify how keys should be used:
@@ -375,6 +393,7 @@ help programs identify how keys should be used:
 
 
 #### Hierarchical Deterministic Key Creation
+{% include helpers/subhead-links.md %}
 
 <!-- 
 For consistent word ordering:
@@ -384,7 +403,7 @@ For consistent word ordering:
 {% autocrossref %}
 
 The hierarchical deterministic key creation and transfer protocol ([HD
-protocol][]{:#term-hd-protocol}{:.term}) greatly simplifies wallet
+protocol][/en/glossary/hd-protocol]{:#term-hd-protocol}{:.term}) greatly simplifies wallet
 backups, eliminates the need for repeated communication between multiple
 programs using the same wallet, permits creation of child accounts which
 can operate independently, gives each parent account the ability to
@@ -405,9 +424,8 @@ point (the public key):
 {% autocrossref %}
 
 Because of the way `point()` functions, it's possible to create a [child
-public key][]{:#term-child-public-key}{:.term} by combining an
-existing [(parent) public key][parent public
-key]{:#term-parent-public-key}{:.term} with another public key created from any
+public key][/en/glossary/child-key]{:#term-child-public-key}{:.term} by combining an
+existing [(parent) public key][/en/glossary/parent-key]{:#term-parent-public-key}{:.term} with another public key created from any
 integer (*i*) value. This child public key is the same public key which
 would be created by the `point()` function if you added the *i* value to
 the original (parent) private key and then found the remainder of that
@@ -420,8 +438,8 @@ sum divided by a global constant used by all Bitcoin software (*G*):
 {% autocrossref %}
 
 This means that two or more independent programs which agree on a
-sequence of integers can create a series of unique [child key][]{:#term-child-key}{:.term} pairs from
-a single [parent key][]{:#term-parent-key}{:.term} pair without any further communication.
+sequence of integers can create a series of unique [child key][/en/glossary/child-key]{:#term-child-key}{:.term} pairs from
+a single [parent key][/en/glossary/parent-key]{:#term-parent-key}{:.term} pair without any further communication.
 Moreover, the program which distributes new public keys for receiving
 payment can do so without any access to the private keys, allowing the
 public key distribution program to run on a possibly-insecure platform such as
@@ -450,10 +468,10 @@ The HD protocol uses a single root seed to create a hierarchy of
 child, grandchild, and other descended keys with unlinkable
 deterministically-generated integer values. Each child key also gets
 a deterministically-generated seed from its parent, called a [chain
-code][]{:#term-chain-code}{:.term}, so the compromising of one chain
+code][/en/glossary/chain-code]{:#term-chain-code}{:.term}, so the compromising of one chain
 code doesn't necessary compromise the integer sequence for the whole
 hierarchy, allowing the [master chain
-code][]{:#term-master-chain-code}{:.term} to continue being useful
+code][/en/glossary/master-chain-code-and-private-key]{:#term-master-chain-code}{:.term} to continue being useful
 even if, for example, a web-based public key distribution program
 gets hacked.
 
@@ -461,10 +479,10 @@ gets hacked.
 
 As illustrated above, HD key derivation takes four inputs<!--noref-->:
 
-* The *[parent private key][]{:#term-parent-private-key}{:.term}* and
+* The *[parent private key][/en/glossary/parent-key]{:#term-parent-private-key}{:.term}* and
   *parent public key* are regular uncompressed 256-bit ECDSA keys.
 
-* The [parent chain code][]{:#term-parent-chain-code}{:.term} is 256
+* The [parent chain code][/en/glossary/chain-code]{:#term-parent-chain-code}{:.term} is 256
   bits of seemingly-random data.
 
 * The [index][key index]{:#term-key-index}{:.term} number is a 32-bit integer specified by the program.
@@ -492,23 +510,23 @@ child keys using the child chain code will create unlinkable grandchild keys.
 
 Because creating child keys requires both a key and a chain code, the
 key and chain code together are called the [extended
-key][]{:#term-extended-key}{:.term}. An [extended private
-key][]{:#term-extended-private-key}{:.term} and its corresponding
-[extended public key][]{:#term-extended-public-key}{:.term} have the
+key][/en/glossary/extended-key]{:#term-extended-key}{:.term}. An [extended private
+key][/en/glossary/extended-key]{:#term-extended-private-key}{:.term} and its corresponding
+[extended public key][/en/glossary/extended-key]{:#term-extended-public-key}{:.term} have the
 same chain code. The (top-level parent) [master private
-key][]{:#term-master-private-key}{:.term} and master chain
+key][/en/glossary/master-chain-code-and-private-key]{:#term-master-private-key}{:.term} and master chain
 code are derived from random data,
 as illustrated below.
 
 ![Creating A Root Extended Key Pair](/img/dev/en-hd-root-keys.svg)
 
-A [root seed][]{:#term-root-seed}{:.term} is created from either 128
+A [root seed][/en/glossary/hd-wallet-seed]{:#term-root-seed}{:.term} is created from either 128
 bits, 256 bits, or 512 bits of random data. This root seed of as little
 as 128 bits is the the only data the user needs to backup in order to
 derive every key created by a particular wallet program using
 particular settings.
 
-![Warning icon](/img/icon_warning.svg)
+![Warning icon](/img/icons/icon_warning.svg)
  **Warning:** As of this writing, HD wallet programs are not expected to
 be fully compatible, so users must only use the same HD wallet program
 with the same HD-related settings for a particular root seed.
@@ -525,6 +543,7 @@ which makes them special.
 {% endautocrossref %}
 
 ##### Hardened Keys
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -569,7 +588,7 @@ knowing the parent private key. In other words, parent extended public
 keys can't create hardened child public keys.
 
 Because of that, a [hardened extended private
-key][]{:#term-hardened-extended-private-key}{:.term} is much less
+key][/en/glossary/hardened-extended-key]{:#term-hardened-extended-private-key}{:.term} is much less
 useful than a normal extended private key---however, 
 hardened extended private keys create a firewall through which
 multi-level key derivation compromises cannot happen. Because hardened
@@ -614,6 +633,7 @@ for the full HD protocol specification.
 {% endautocrossref %}
 
 ##### Storing Root Seeds
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -649,6 +669,7 @@ For implementation details, please see BIP39.
 
 
 #### Loose-Key Wallets
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

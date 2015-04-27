@@ -1,36 +1,10 @@
 ---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 layout: base
 id: innovation
 ---
-{% case page.lang %}
-{% when 'fa' or 'nl' or 'pl' or 'tr' or 'zh_TW' %}
-
-<h1>{% translate pagetitle %}</h1>
-<p class="summarytxt">{% translate summary %}</p>
-
-<h2><img class="titleicon" src="/img/ico_democracy.svg" alt="Icon" />{% translate consensus %}</h2>
-<p>{% translate consensustext %}</p>
-
-<h2><img class="titleicon" src="/img/ico_network.svg" alt="Icon" />{% translate network %}</h2>
-<p>{% translate networktext %}</p>
-
-<h2><img class="titleicon" src="/img/ico_own.svg" alt="Icon" />{% translate freedom %}</h2>
-<p>{% translate freedomtext %}</p>
-
-<h2><img class="titleicon" src="/img/ico_international.svg" alt="Icon" />{% translate global %}</h2>
-<p>{% translate globaltext %}</p>
-
-<h2><img class="titleicon" src="/img/ico_transparency.svg" alt="Icon" />{% translate transparency %}</h2>
-<p>{% translate transparencytext %}</p>
-
-<h2><img class="titleicon" src="/img/ico_lock.svg" alt="Icon" />{% translate secure %}</h2>
-<p>{% translate securetext %}</p>
-
-<h2><img class="titleicon" src="/img/ico_solve.svg" alt="Icon" />{% translate trust %}</h2>
-<p>{% translate trusttext %}</p>
-
-{% else %}
-
 <h1>{% translate pagetitle %}</h1>
 <p class="summarytxt">{% translate summary %}</p>
 
@@ -38,73 +12,73 @@ id: innovation
 
 <div>
 <img src="/img/innovation/inno_control.jpg" alt="Banner" />
-<h2><img class="titleicon" src="/img/ico_lock.svg" alt="Icon" />{% translate control %}</h2>
+<h2 id="control"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />{% translate control %}</h2>
 <p>{% translate controltext %}</p>
 </div>
 
 <div>
 <img src="/img/innovation/inno_global.jpg" alt="Banner" />
-<h2><img class="titleicon" src="/img/ico_international.svg" alt="Icon" />{% translate global %}</h2>
+<h2 id="global"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />{% translate global %}</h2>
 <p>{% translate globaltext %}</p>
 </div>
 
 <div>
 <img src="/img/innovation/inno_cost.jpg" alt="Banner" />
-<h2><img class="titleicon" src="/img/ico_lowfee.svg" alt="Icon" />{% translate cost %}</h2>
+<h2 id="cost"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />{% translate cost %}</h2>
 <p>{% translate costtext %}</p>
 </div>
 
 <div>
 <img src="/img/innovation/inno_donation.jpg" alt="Banner" />
-<h2><img class="titleicon" src="/img/ico_donate.svg" alt="Icon" />{% translate donation %}</h2>
+<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />{% translate donation %}</h2>
 <p>{% translate donationtext %}</p>
 </div>
 
 <div>
 <img src="/img/innovation/inno_crowdfunding.jpg" alt="Banner" />
-<h2><img class="titleicon" src="/img/ico_multi.svg" alt="Icon" />{% translate crowdfunding %}</h2>
+<h2 id="crowdfunding"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />{% translate crowdfunding %}</h2>
 <p>{% translate crowdfundingtext %}</p>
 </div>
 
 <div>
 <img src="/img/innovation/inno_micro.jpg" alt="Banner" />
-<h2><img class="titleicon" src="/img/ico_micro.svg" alt="Icon" />{% translate micro %}</h2>
+<h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />{% translate micro %}</h2>
 <p>{% translate microtext %}</p>
 </div>
 
 <div>
 <img src="/img/innovation/inno_mediation.jpg" alt="Banner" />
-<h2><img class="titleicon" src="/img/ico_balance.svg" alt="Icon" />{% translate mediation %}</h2>
+<h2 id="mediation"><img class="titleicon" src="/img/icons/ico_balance.svg" alt="Icon" />{% translate mediation %}</h2>
 <p>{% translate mediationtext %}</p>
 </div>
 
 <div>
 <img src="/img/innovation/inno_multisig.jpg" alt="Banner" />
-<h2><img class="titleicon" src="/img/ico_multisig.svg" alt="Icon" />{% translate multisig %}</h2>
+<h2 id="multisig"><img class="titleicon" src="/img/icons/ico_multisig.svg" alt="Icon" />{% translate multisig %}</h2>
 <p>{% translate multisigtext %}</p>
 </div>
 
 <div>
-<img src="/img/innovation/inno_trust.jpg" />
-<h2><img class="titleicon" src="/img/ico_law.svg" alt="Icon" />{% translate trust %}</h2>
+<img src="/img/innovation/inno_trust.jpg" alt="Banner" />
+<h2 id="trust"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />{% translate trust %}</h2>
 <p>{% translate trusttext %}</p>
 </div>
 
 <div>
-<img src="/img/innovation/inno_resiliency.jpg" />
-<h2><img class="titleicon" src="/img/ico_network.svg" alt="Icon" />{% translate resiliency %}</h2>
+<img src="/img/innovation/inno_resiliency.jpg" alt="Banner" />
+<h2 id="resiliency"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />{% translate resiliency %}</h2>
 <p>{% translate resiliencytext %}</p>
 </div>
 
 <div>
 <img src="/img/innovation/inno_transparency.jpg" alt="Banner" />
-<h2><img class="titleicon" src="/img/ico_transparency.svg" alt="Icon" />{% translate transparency %}</h2>
+<h2 id="transparency"><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />{% translate transparency %}</h2>
 <p>{% translate transparencytext %}</p>
 </div>
 
 <div>
-<img src="/img/innovation/inno_automation.jpg" />
-<h2><img class="titleicon" src="/img/ico_solve.svg" alt="Icon" />{% translate automation %}</h2>
+<img src="/img/innovation/inno_automation.jpg" alt="Banner" />
+<h2 id="automation"><img class="titleicon" src="/img/icons/ico_solve.svg" alt="Icon" />{% translate automation %}</h2>
 <p>{% translate automationtext %}</p>
 </div>
 
@@ -117,5 +91,3 @@ Weusecoins video screenshot, © <a href="https://weusecoins.com/">weusecoins.com
 Robot Sketching, © <a href="http://www.flickr.com/photos/elmastudio/4784871615/in/photostream/">Elmastudio</a> on Flickr used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.fr">CC BY-NC-ND 2.0</a><br>
 All other pictures are copyrighted materials.
 </p>
-
-{% endcase %}

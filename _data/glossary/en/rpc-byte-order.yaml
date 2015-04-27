@@ -1,0 +1,27 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: RPC Byte Order
+
+    summary_max_255_characters_no_formatting: >
+        A hash digest displayed with the byte order reversed; used in
+        Bitcoin Core RPCs, many block explorers, and other software.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - RPC byte order
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - RPC byte orders
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Internal byte order (hash digests displayed in their typical order; used in serialized blocks and serialized transactions)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[RPC byte order](/en/developer-reference#hash-byte-order) --- Bitcoin.org Developer Reference"
+        - "[Block hashing algorithm ('endian conversion')](https://en.bitcoin.it/wiki/Block_hashing_algorithm) --- Bitcoin Wiki"
+
+---

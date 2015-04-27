@@ -1,3 +1,6 @@
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 #contributors.rb fetches Bitcoin Core contributors list and set
 #site.contributors array. This is later used to display the
 #list of contributors on the "Development" page.
@@ -55,9 +58,9 @@ module Jekyll
         x = {}
         x['name'] = name
         x['contributions'] = c['contributions']
-        # Set gravatar_id when available
-        if c.has_key?('gravatar_id') and c['gravatar_id'].is_a?(String) and /^[A-Za-z0-9\-]{1,150}$/.match(c['gravatar_id'])
-          x['gravatar_id'] = c['gravatar_id']
+        # Set avatar_url when available
+        if c.has_key?('avatar_url') and c['avatar_url'].is_a?(String) and /^https:\/\/avatars\.githubusercontent\.com\/u\/[0-9]{1,10}\?v=[0-9]{1,2}$/.match(c['avatar_url'])
+          x['avatar_url'] = c['avatar_url'] + '&size=16'
         end
         # Set login when available
         if c.has_key?('login') and c['login'].is_a?(String) and /^[A-Za-z0-9\-]{1,150}$/.match(c['login'])
@@ -92,9 +95,21 @@ module Jekyll
           h
         end
       end
+
+      # Set site.corecontributors and site.sitecontributors arrays
+      site.corecontributors = {}
+      site.sitecontributors = {}
+
+      #Do nothing if plugin is disabled
+      if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('contributors').nil?
+        print 'Contributors disabled' + "\n"
+        return
+      end
+
       # Populate site.corecontributors and site.sitecontributors arrays
       site.corecontributors = contributors('bitcoin/bitcoin',site.config['aliases'])
       site.sitecontributors = contributors('bitcoin/bitcoin.org',site.config['aliases'])
+
     end
 
   end

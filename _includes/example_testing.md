@@ -1,4 +1,11 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+{% assign filename="_includes/example_testing.md" %}
+
 ## Testing Applications
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -8,11 +15,12 @@ test their applications with reduced risks and limitations.
 {% endautocrossref %}
 
 ### Testnet
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
 When run with no arguments, all Bitcoin Core programs default to Bitcoin's main
-network ([mainnet][mainnet]{:#term-mainnet}{:.term}). However, for development,
+network ([mainnet][/en/glossary/mainnet]{:#term-mainnet}{:.term}). However, for development,
 it's safer and cheaper to use Bitcoin's test network (testnet)
 where the satoshis spent have no real-world value. Testnet also relaxes some
 restrictions (such as standard transaction checks) so you can test functions
@@ -27,6 +35,7 @@ community, so please don't abuse it.
 {% endautocrossref %}
 
 ### Regtest Mode
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -55,15 +64,20 @@ Start `bitcoind` in regtest mode to create a private block chain.
 {% endautocrossref %}
 
 ~~~
+## Bitcoin Core 0.10.1 and earlier
 bitcoin-cli -regtest setgenerate true 101
+
+## Bitcoin Core master (as of commit 48265f3)
+bitcoin-cli -regtest generate 101
 ~~~
 
 {% autocrossref %}
 
-Generate 101 blocks using a special version of the `setgenerate` RPC
+Generate 101 blocks using a special RPC
 which is only available in regtest mode. This takes about 30 seconds on
 a generic PC. Because this is a new block chain using Bitcoin's default
-rules, the first 210,000 blocks pay a block reward of 50 bitcoins.
+rules, the first blocks pay a block reward of 50 bitcoins.  Unlike
+mainnet, in regtest mode only the first 150 blocks pay a reward of 50 bitcoins.
 However, a block must have 100 confirmations before that reward can be
 spent, so we generate 101 blocks to get access to the coinbase
 transaction from block #1.

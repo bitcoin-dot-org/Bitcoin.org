@@ -1,4 +1,7 @@
 ---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 layout: base
 lang: en
 id: alerts
@@ -6,12 +9,11 @@ title: Network status and alerts - Bitcoin
 ---
 <link rel="alternate" type="application/rss+xml" href="/en/rss/alerts.rss" title="Bitcoin network status and alerts">
 <div class="alerttext">
-  <h1>Network status and alerts<a type="application/rss+xml" href="/en/rss/alerts.rss"><img src="/img/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
-  {% assign active = false %}{% filter_for p in site.pages reversed sort_by:date category:alert %}{% if p.active == true %}{% assign active = true %}{% endif %}{% endfilter_for %}
-  {% if active == false %}
+  <h1>Network status and alerts<a type="application/rss+xml" href="/en/rss/alerts.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
+  {% if site.STATUS == 0 %}
   <div class="alertstatusinactive">There is no ongoing event on the Bitcoin network.</div>
   {% else %}
-  <div class="alertstatusactive"">The following network event is ongoing.</div>
+  <div class="alertstatusactive">The following network event is ongoing.</div>
   <ul class="alertsactive">
   {% filter_for p in site.pages reversed sort_by:date category:alert %}{% if p.active == true %}
     <li>

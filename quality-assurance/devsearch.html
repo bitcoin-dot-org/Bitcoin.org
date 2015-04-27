@@ -1,0 +1,31 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+---
+<!DOCTYPE HTML>
+<head>
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+{% comment %}
+
+NOTICE: this template is based off of /js/devsearch.js
+
+Nested loops below:
+  1. site.devsearches: container for all searches defined in _config.yaml in
+     the arbitrary order they should appear
+  2. list: a list item in devsearches; only has two elements:
+     a. the name of the category
+     b. an array containing the sublist items (pre-sorted)
+  3. sublist: a list of the items we want to display as a one-entry hash table
+  4. term: the term as the key [0] and the uri as the value [1]
+
+{% endcomment %}
+
+{% for list in site.devsearches %}{% for item in list %}
+{% if forloop.first %}{% capture category_name %}{{item}}{% endcapture %}
+{% else %}{% for sublist in item %}{% for term in sublist %}
+<a href="{{term[1]}}">{{term[0]}}</a>
+{% endfor %}{% unless forloop.last %},{% endunless %}{% endfor %}{% endif %}{% endfor %}{% unless forloop.last %},{% endunless %}{% endfor %}
+
+</body></html>

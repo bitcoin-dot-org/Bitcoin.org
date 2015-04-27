@@ -1,0 +1,29 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Wallet Import Format
+
+    summary_max_255_characters_no_formatting: >
+        A data interchange format designed to allow exporting and
+        importing a single private key with a flag indicating whether or
+        not it uses a compressed public key.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - WIF
+        - Wallet Import Format
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Extended private keys (which allow importing a hierarchy of private keys)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Wallet import format](/en/developer-guide#term-wallet-import-format) --- Bitcoin.org Developer Guide"
+        - "[Wallet import format](https://en.bitcoin.it/wiki/Wallet_import_format) --- Bitcoin Wiki"
+        - "[What is the role of wallet import format?](http://bitcoin.stackexchange.com/q/35723) --- Bitcoin StackExchange"
+
+---

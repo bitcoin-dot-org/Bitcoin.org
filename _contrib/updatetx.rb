@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 #Drop outdated fallback HTML code in all layouts for specified language.
 #Example: ./_contrib/updatetx.rb
 
@@ -32,7 +35,7 @@ dirs.each do |dir|
     contents.gsub!(Regexp.new("{% when '" + lang + "' %}((?!{% endcase %}).)*?{% else %}", Regexp::MULTILINE),'{% else %}')
     contents.gsub!(Regexp.new("{% when '" + lang + "' %}.*?{% endcase %}", Regexp::MULTILINE),'{% endcase %}')
     # Drop complete {% case / endcase %} statements when not used by any language anymore
-    contents.gsub!(Regexp.new("{% case page.lang %}(((?!{% when ).)*?){% else %}(.*?){% endcase %}", Regexp::MULTILINE),'\1 \3')
+    contents.gsub!(Regexp.new("{% case page.lang %}(((?!{% endcase %})(?!{% when ).)*?){% else %}(.*?){% endcase %}", Regexp::MULTILINE),'\1 \3')
     contents.gsub!(Regexp.new("{% case page.lang %}(((?!{% when ).)*?){% endcase %}", Regexp::MULTILINE),'\1')
     # Drop language in statements applied to many languages ( e.g. {% when 'ar' or 'fr' .. %} )
     contents.gsub!(Regexp.new("{% when '" + lang + "' or (.*?) %}"),'{% when \1 %}')

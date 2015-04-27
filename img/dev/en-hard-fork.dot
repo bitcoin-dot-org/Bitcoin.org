@@ -1,0 +1,49 @@
+digraph {
+
+size=6.25;
+rankdir=LR
+//splines = ortho;
+ranksep = 0.2;
+nodesep = 0.1;
+
+edge [ penwidth = 1.75, fontname="Sans" ]
+node [ penwidth = 1.75, shape = "box", fontname="Sans", label = "", width=0.3, height=0.3 ]
+graph [ penwidth = 1.75, fontname="Sans" ]
+
+invis1 [ shape = "none", label = "Blocks\nFrom\nUpgraded\nNodes" ]
+invis0 [ shape = "none", label = "Blocks\nFrom Non-\nUpgraded\nNodes" ];
+
+subgraph cluster_honest {
+block0 [ label = "Follows\nOld\nRules" ];
+block1 [ label = "Follows\nOld\nRules" ];
+block2_1 [ label = "Follows\nOld\nRules" ];
+block3_1 [ label = "Follows\nOld\nRules" ];
+//block2_1 -> block4 [ style = "invis", minlen = 2 ];
+
+
+style = "invis";
+}
+
+
+subgraph cluster_attack {
+block2 [ label = "Follows\nNew\nRules" ];
+block3 [ label = "Follows\nNew\nRules" ];
+block4 [ label = "Follows\nNew\nRules" ];
+block5 [ label = "Follows\nNew\nRules" ];
+
+style = "invis"
+}
+
+
+
+invis0 -> block0 [ minlen = 2, style = "dashed" ];
+block2_1 -> block3_1;
+
+block0 -> block1 -> block2 -> block3 -> block4 -> block5;
+
+block1 -> block2_1
+
+
+
+label = "A Hard Fork:  Non-Upgraded Nodes Reject The New Rules, Diverging The Chain"
+}

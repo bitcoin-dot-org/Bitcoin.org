@@ -1,0 +1,28 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Locktime, nLockTime
+
+    summary_max_255_characters_no_formatting: >
+        Part of a transaction which indicates the earliest time or
+        earliest block when that transaction may be added to the
+        block chain.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Locktime
+        - nLockTime
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Locktime](/en/developer-guide#term-locktime) --- Bitcoin.org Developer Guide"
+        - "[nLockTime](https://en.bitcoin.it/wiki/NLockTime) --- Bitcoin Wiki"
+        - "[How is locktime enforced in Bitcoin Core?](http://bitcoin.stackexchange.com/q/5914) --- Bitcoin StackExchange"
+
+---

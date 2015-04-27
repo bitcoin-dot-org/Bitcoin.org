@@ -1,0 +1,29 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Bloom Filter
+
+    summary_max_255_characters_no_formatting: >
+        A filter used primarily by SPV clients to request only matching
+        transactions and merkle blocks from full nodes.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Bloom filter
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Bloom filters
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Bloom filter (general computer science term, of which Bitcoin's bloom filters are a specific implementation)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Bloom filter](/en/developer-guide#bloom-filters) --- Bitcoin.org Developer Guide"
+        - "[BIP37: Connection Bloom Filtering](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki)--- Bitcoin Improvement Proposals"
+        - "[Pull request that implemented bloom filters in Bitcoin Core](https://github.com/bitcoin/bitcoin/pull/1795) --- GitHub"
+        - "[Discussion about bloom filtering and SPV clients](https://bitcointalk.org/index.php?topic=252937.0) --- BitcoinTalk"
+
+---

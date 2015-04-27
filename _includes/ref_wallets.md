@@ -1,8 +1,17 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+{% assign filename="_includes/ref_wallets.md" %}
+
 ## Wallets 
+{% include helpers/subhead-links.md %}
 
 ### Deterministic Wallet Formats
+<!-- no subhead-links here -->
 
 #### Type 1: Single Chain Wallets
+<!-- no subhead-links here -->
 
 {% autocrossref %}
 
@@ -14,6 +23,7 @@ sharing is extremely limited.
 {% endautocrossref %}
 
 #### Type 2: Hierarchical Deterministic (HD) Wallets
+<!-- no subhead-links here -->
 
 {% autocrossref %}
 

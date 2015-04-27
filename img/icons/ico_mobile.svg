@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+  <g stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="19.382" height="27.321" x="6.462" y="2.387" ry="1.036" transform="rotate(0)" opacity=".99" stroke-width=".494"/>
+    <rect width="13.461" height="18.622" x="9.481" y="5.11" ry=".987" transform="rotate(0)" opacity=".99" fill="#fff" stroke-width=".502"/>
+    <path d="M18.498 25.927a2.334 2.334 0 1 1-4.668 0 2.334 2.334 0 1 1 4.668 0z" transform="matrix(.849 -.001 .001 .849 2.83 4.773)" opacity=".99" fill="#fff" stroke-width=".5"/>
+  </g>
+</svg>

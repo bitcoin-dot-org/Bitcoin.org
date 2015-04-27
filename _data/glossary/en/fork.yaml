@@ -1,0 +1,33 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Fork, Accidental Fork
+
+    summary_max_255_characters_no_formatting: >
+        When two or more blocks have the same block height, forking the
+        block chain.  Typically occurs when two or more miners find
+        blocks at nearly the same time.  Can also happen as part of an
+        attack.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Fork
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Forks
+        - accidental forks
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Hard fork (a change in consensus rules that breaks security for nodes that don't upgrade)
+        - Soft fork (a change in consensus rules that weakens security for nodes that don't upgrade)
+        - Software fork (when one or more developers permanently develops a codebase separately from other developers)
+        - Git fork (when one or more developers temporarily develops a codebase separately from other developers)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Fork](/en/developer-guide#term-fork) --- Bitcoin.org Developer Guide"
+        - "[What is the longest block chain fork that has been made stale so far?](http://bitcoin.stackexchange.com/q/3343) --- Bitcoin StackExchange"
+
+---

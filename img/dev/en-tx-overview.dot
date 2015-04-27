@@ -1,84 +1,54 @@
-digraph blockchain {
+digraph tx_overview {
 
 size=6.25;
 splines = "false";
 rankdir=LR;
-ranksep=0.1;
+rankdir=TB;
+ranksep=0.001;
+nodesep=0.01;
 //splines=ortho;
 
 node [ penwidth=1.75, fontname="Sans", shape = box ];
 edge [ penwidth=1.75, fontname="Sans" ];
 graph [ penwidth=1.75, fontname="Sans" ];
 
-//edge [ style = invis, minlen = 1 ];
-//fixedsize
-nodesep = 0.25;
-//concentrate = true;
-
-tophelp0 [style = invis, label="", width=0, height=0 ];
-prevout [style = invis, label="", width=0, height=0 ];
-nextout [style = invis, label="", width=0, height=0 ];
-
 subgraph cluster_tx {
-    version; 
-    subgraph cluster_input {
-        sequence;
-        vout [label="output index"];
-        txid;
-        input [style = invis, label="", width=0, height=0 ];
+    Locktime;
+    Outputs;
+    Inputs;
+    Version;
+    //tx_label1 [ shape = "none", label = "" ];
+    tx0_label [ shape = "none", label = "The Main Parts Of\nTransaction 0" ];
 
-        subgraph cluster_scriptsig {
-            label = "scriptSig"
-            subgraph cluster_signature {
-	hashtype;
-	signature [style = invis, label="", width=0, height=0 ];
-	label = "signature"
-            }
-            scriptsig [style = invis, label="", width=0, height=0 ];
-        }
-        label = "Input"
-    }
-
-    left0 [style = invis ];
-    left1 [style = invis ];
-    left2 [style = invis ];
-    middle1 [style = invis, label="", width=0, height=0 ];
-    middle2 [style = invis, label="", width=0, height=0 ];
-    middle3 [style = invis, label="", width=0, height=1.05 ];
-    middle4 [style = invis, label="", width=0, height=0 ];
-    middle5 [style = invis, label="", width=0, height=0 ];
-    middle6 [style = invis, label="", width=0, height=0 ];
-    middle7 [style = invis, label="", width=0, height=0 ];
-    middle0 [style = invis, label="", width=0, height=0 ];
-
-    subgraph cluster_output {
-        output [style = invis, label="", width=0, height=0 ];
-        amount;
-        script;
-        label = "Output"
-    }
-
-    locktime;
-    label = "A Basic Transaction With One Input & One Output"
+    labelloc = b
+    graph [ penwidth=0 ];
 }
 
-prevout -> input [ style = "dashed", label = "Each input\nspends\nsatoshis\nfrom a\nprevious\noutput\n(prevout)" ];
-output -> nextout [style="dashed", label = "Each output\nwaits as an\nUnspent\nTx Output\n(UTXO)\nuntil a\nlater input\nspends it"];
-tophelp0 -> version [ style = invis ];
+    tx_label [ shape = "none", label = "Each input spends a previous output" ];
+    tx_label -> Inputs [ style = "invis" ];
+    tx_label -> Outputs [ style = "invis" ];
 
-txid -> middle1 [ dir = none, label = "Select a previous tx with an\noutput to spend" ];
-vout -> middle2 [ dir = none, label = "Select an output from previous tx" ];
-sequence -> middle3 [ dir = none, label = "Allow override of locktime" ];
-scriptsig -> middle4 [ dir = none, label = "Satisfy prevout script conditions" ];
-signature -> middle5 [ dir = none, label = "Protect tx against modification\nby unauthorized parties" ];
-hashtype -> middle6 [ dir = none, label = "Authorize others to modify tx;\nselect what they can modify" ];
+subgraph cluster_tx1 {
+    Version1 [ label = "Version" ];
+    Inputs1 [ label = "Inputs" ];
+    Outputs1 [ label = "Outputs" ];
+    Locktime1 [ label = "Locktime" ];
+    //tx_label1 [ shape = "none", label = "" ];
+    tx1_label [ shape = "none", label = "The Main Parts Of\nTransaction 1" ];
 
-version -> middle7 [ dir = none, label = "Indicate what rules this tx follows" ];
-left2 -> locktime [ dir = none, label = "Prevent tx from being added to the\nblock chain before a particular time" ];
+    labelloc = b
+    graph [ penwidth=0 ];
+}
 
-left0 -> amount [ dir = none, label = "Set amount to spend & pay in fees" ];
-left1 -> script [ dir = none, label = "Describe conditions necessary\nto spend this output" ];
+utxos [ shape = "none", label = "Each output waits as an Unspent TX Output (UTXO) until a later input spends it" ];
+
+Locktime -> Locktime1 [ style = "invis", weight = 3 ];
+Version -> Version1 [ style = "invis", weight = 3 ];
+Inputs -> Inputs1 [ style = "invis", weight = 3 ];
+Outputs -> Outputs1 [ style = "invis", weight = 3 ];
+Outputs -> Inputs1 [weight = 0 ];
 
 
-label = "(Metadata not shown: number of inputs/outputs, length in bytes of each script/scriptSig)\n \nThe Parts Of A Transaction"
+Inputs1 -> utxos [ style = "invis" ];
+
 }

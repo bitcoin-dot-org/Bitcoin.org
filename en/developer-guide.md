@@ -1,9 +1,13 @@
 ---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 layout: base
 lang: en
 id: developer-guide
 title: "Developer Guide - Bitcoin"
 ---
+<link rel="stylesheet" href="/css/jquery-ui.min.css">
 
 # Bitcoin Developer Guide
 
@@ -16,6 +20,7 @@ title: "Developer Guide - Bitcoin"
 
 <ul class="goback"><li><a href="/en/developer-documentation">Return To Overview</a></li></ul>
 <ul class="reportissue"><li><a href="https://github.com/bitcoin/bitcoin.org/issues/new" onmouseover="updateIssue(event);">Report An Issue</a></li></ul>
+<ul class="editsource"><li><a href="https://github.com/bitcoin/bitcoin.org/tree/master/_includes" onmouseover="updateSource(event);">Edit On GitHub</a></li></ul>
 
 </div></div>
 
@@ -26,6 +31,8 @@ paragraph at the end of one file from breaking the heading at the start
 of the following file. -->
 
 {% include fragment_reviews_needed.md %}
+
+<input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
 
 {% include guide_intro.md %}
 
@@ -46,8 +53,12 @@ of the following file. -->
 {% include guide_mining.md %}
 
 {% include references.md %}
+{{site.glossary_links}}
 
 </div>
 
 <script>updateToc();</script>
 <script>addAnchorLinks();</script>
+<script src="/js/jquery-1.11.2.min.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+<script src="/js/devsearch.js"></script>

@@ -1,3 +1,6 @@
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 #translate( id [,category ,lang] )
 #Return translated string using translations files
 
@@ -84,6 +87,12 @@ module Jekyll
           text.gsub!("#"+key+"#",'/'+lang+'/'+CGI::escape(value))
         end
       end
+
+      ## Hack for renaming links to the Bitcoin paper. Safe to remove
+      ## when all languages have "bitcoin-paper:" defined in the "url:"
+      ## section of their '_translations' YAML file.
+      text.gsub!('#bitcoin-paper#','/bitcoin.pdf')
+
       anc = site['loc'][lang]['anchor']
       anc.each do |page,anch|
         anch.each do |key,value|

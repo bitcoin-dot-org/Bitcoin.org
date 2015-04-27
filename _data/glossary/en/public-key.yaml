@@ -1,0 +1,33 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Public Key, ECDSA Public Key
+
+    summary_max_255_characters_no_formatting: >
+        The public portion of a keypair which can be used to verify
+        signatures made with the private portion of the keypair.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Public key
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - public keys
+        - ecdsa public key
+        - ecdsa public keys
+        - secp256k1 public key
+        - pubkey
+        - pubkeys
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Private key (data from which the public key is derived)
+        - Parent key (a key used to create child keys, not necessarily a public key)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Public key](/en/developer-guide#term-public-key) --- Bitcoin.org Developer Guide"
+        - "[What is a public key?](http://bitcoin.stackexchange.com/q/4675) --- Bitcoin StackExchange"
+
+---

@@ -1,4 +1,11 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+{% assign filename="_includes/guide_contracts.md" %}
+
 ## Contracts
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -20,6 +27,7 @@ page](https://en.bitcoin.it/wiki/Contracts) of the Bitcoin Wiki.
 {% endautocrossref %}
 
 ### Escrow And Arbitration
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -34,15 +42,15 @@ merchandise, but Charlie can't get the merchandise and keep his payment.
 
 This simple contract isn't much help if there's a dispute, so Bob and
 Charlie enlist the help of Alice-the-arbitrator to create an [escrow
-contract][]{:#term-escrow-contract}{:.term}. Charlie spends his satoshis
+contract][/en/glossary/escrow-contract]{:#term-escrow-contract}{:.term}. Charlie spends his satoshis
 to an output which can only be spent if two of the three people sign the
 input. Now Charlie can pay Bob if everything is ok, Bob can refund
 Charlie's money if there's a problem, or Alice can arbitrate and decide
 who should get the satoshis if there's a dispute.
 
-To create a multiple-signature ([multisig][]{:#term-multisig}{:.term})
+To create a multiple-signature ([multisig][/en/glossary/multisig]{:#term-multisig}{:.term})
 output, they each give the others a public key. Then Bob creates the
-following [P2SH multisig][]{:#term-p2sh-multisig}{:.term} redeemScript:
+following [P2SH multisig][/en/glossary/p2sh-multisig]{:#term-p2sh-multisig}{:.term} redeem script:
 
 {% endautocrossref %}
 
@@ -58,19 +66,19 @@ OP_2 [A's pubkey] [B's pubkey] [C's pubkey] OP_3 OP_CHECKMULTISIG
 stack. `OP_2`
 specifies that 2 signatures are required to sign; `OP_3` specifies that
 3 public keys (unhashed) are being provided. This is a 2-of-3 multisig
-script, more generically called a m-of-n script (where *m* is the
+pubkey script, more generically called a m-of-n pubkey script (where *m* is the
 *minimum* matching signatures required and *n* in the *number* of public
 keys provided).
 
-Bob gives the redeemScript to Charlie, who checks to make sure his
+Bob gives the redeem script to Charlie, who checks to make sure his
 public key and Alice's public key are included. Then he hashes the
-redeemScript, puts it in a P2SH output, and pays the satoshis to it. Bob
+redeem script to create a P2SH redeem script and pays the satoshis to it. Bob
 sees the payment get added to the block chain and ships the merchandise.
 
 Unfortunately, the merchandise gets slightly damaged in transit. Charlie
 wants a full refund, but Bob thinks a 10% refund is sufficient. They
 turn to Alice to resolve the issue. Alice asks for photo evidence from
-Charlie along with a copy of the unhashed redeemScript Bob created and
+Charlie along with a copy of the redeem script Bob created and
 Charlie checked. 
 
 After looking at the evidence, Alice thinks a 40% refund is sufficient,
@@ -78,37 +86,39 @@ so she creates and signs a transaction with two outputs, one that spends 60%
 of the satoshis to Bob's public key and one that spends the remaining
 40% to Charlie's public key.
 
-In the input section of the script, Alice puts her signature
-and a copy of the unhashed serialized redeemScript
+In the signature script Alice puts her signature
+and a copy of the unhashed serialized redeem script
 that Bob created.  She gives a copy of the incomplete transaction to
 both Bob and Charlie.  Either one of them can complete it by adding
-his signature to create the following input
-script:
+his signature to create the following signature script:
 
 {% endautocrossref %}
 
 ~~~
-OP_0 [A's signature] [B's or C's signature] [serialized redeemScript]
+OP_0 [A's signature] [B's or C's signature] [serialized redeem script]
 ~~~
 
 {% autocrossref %}
 
-(Op codes to push the signatures and redeemScript onto the stack are
+(Op codes to push the signatures and redeem script onto the stack are
 not shown. `OP_0` is a workaround for an off-by-one error in the original
-implementation which must be preserved for compatibility.)
+implementation which must be preserved for compatibility.  Note that
+the signature script must provide signatures in the same order as the
+corresponding public keys appear in the redeem script.  See the description in
+[`OP_CHECKMULTISIG`][op_checkmultisig] for details.)
 
 When the transaction is broadcast to the network, each peer checks the
-input script against the P2SH output Charlie previously paid,
-ensuring that the redeemScript matches the redeemScript hash previously
-provided. Then the redeemScript is evaluated, with the two signatures
-being used as input<!--noref--> data. Assuming the redeemScript
+signature script against the P2SH output Charlie previously paid,
+ensuring that the redeem script matches the redeem script hash previously
+provided. Then the redeem script is evaluated, with the two signatures
+being used as input<!--noref--> data. Assuming the redeem script
 validates, the two transaction outputs show up in Bob's and Charlie's
 wallets as spendable balances.
 
 However, if Alice created and signed a transaction neither of them would
 agree to, such as spending all the satoshis to herself, Bob and Charlie
 can find a new arbitrator and sign a transaction spending the satoshis
-to another 2-of-3 multisig redeemScript hash, this one including a public
+to another 2-of-3 multisig redeem script hash, this one including a public
 key from that second arbitrator. This means that Bob and Charlie never
 need to worry about their arbitrator stealing their money.
 
@@ -118,6 +128,7 @@ service interface using HTML/JavaScript on a GNU AGPL-licensed website.
 {% endautocrossref %}
 
 ### Micropayment Channel
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -133,14 +144,14 @@ him thousands of satoshis in transaction fees, so Alice suggests they use a
 [micropayment channel][]{:#term-micropayment-channel}{:.term}.
 
 Bob asks Alice for her public key and then creates two transactions.
-The first transaction pays 100 millibits to a P2SH output whose
-2-of-2 multisig redeemScript requires signatures from both Alice and Bob.
+The first transaction pays 100 millibitcoins to a P2SH output whose
+2-of-2 multisig redeem script requires signatures from both Alice and Bob.
 This is the bond transaction.
-Broadcasting this transaction would let Alice hold the millibits
+Broadcasting this transaction would let Alice hold the millibitcoins
 hostage, so Bob keeps this transaction private for now and creates a
 second transaction.
 
-The second transaction spends all of the first transaction's millibits
+The second transaction spends all of the first transaction's millibitcoins
 (minus a transaction fee) back to Bob after a 24 hour delay enforced
 by locktime. This is the refund transaction. Bob can't sign the refund transaction by himself, so he gives
 it to Alice to sign, as shown in the
@@ -153,14 +164,14 @@ future, signs it, and gives a copy of it back to Bob. She then asks Bob
 for the bond transaction and checks that the refund transaction spends
 the output of the bond transaction. She can now broadcast the bond
 transaction to the network to ensure Bob has to wait for the time lock
-to expire before further spending his millibits. Bob hasn't actually
+to expire before further spending his millibitcoins. Bob hasn't actually
 spent anything so far, except possibly a small transaction fee, and
 he'll be able to broadcast the refund transaction in 24 hours for a
 full refund.
 
-Now, when Alice does some work worth 1 millibit, she asks Bob to create
+Now, when Alice does some work worth 1 millibitcoin, she asks Bob to create
 and sign a new version of the refund transaction.  Version two of the
-transaction spends 1 millibit to Alice and the other 99 back to Bob; it does
+transaction spends 1 millibitcoin to Alice and the other 99 back to Bob; it does
 not have a locktime, so Alice can sign it and spend it whenever she
 wants.  (But she doesn't do that immediately.)
 
@@ -179,22 +190,23 @@ near the time lock expiry, she could be cheated out of her payment.
 Transaction malleability, discussed above in the Transactions section,
 is another reason to limit the value of micropayment channels.
 If someone uses transaction malleability to break the link between the
-two transactions, Alice could hold Bob's 100 millibits hostage even if she
+two transactions, Alice could hold Bob's 100 millibitcoins hostage even if she
 hadn't done any work.
 
 For larger payments, Bitcoin transaction fees are very low as a
 percentage of the total transaction value, so it makes more sense to
 protect payments with immediately-broadcast separate transactions.
 
-**Resource:** The [bitcoinj](http://bitcoinj.org) Java library
+**Resource:** The [bitcoinj][] Java library
 provides a complete set of micropayment functions, an example
 implementation, and [a
-tutorial](https://bitcoinj.github.io/working-with-micropayments)
+tutorial][bitcoinj micropayment tutorial]
 all under an Apache license.
 
 {% endautocrossref %}
 
 ### CoinJoin
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -221,7 +233,7 @@ of them can steal the others' satoshis.
 ![Example CoinJoin Transaction](/img/dev/en-coinjoin.svg)
 
 Each contributor looks through their collection of Unspent Transaction
-Outputs (UTXOs) for 100 millibits they can spend. They then each generate
+Outputs (UTXOs) for 100 millibitcoins they can spend. They then each generate
 a brand new public key and give UTXO details and pubkey hashes to the
 facilitator.  In this case, the facilitator is AnonGirl; she creates
 a transaction spending each of the UTXOs to three equally-sized outputs.
@@ -231,7 +243,7 @@ AnonGirl then signs her inputs using `SIGHASH_ALL` to ensure nobody can
 change the input or output details.  She gives the partially-signed
 transaction to Nemo who signs his inputs the same way and passes it
 to Neminem, who also signs it the same way.  Neminem then broadcasts
-the transaction to the peer-to-peer network, mixing all of the millibits in
+the transaction to the peer-to-peer network, mixing all of the millibitcoins in
 a single transaction.
 
 As you can see in the illustration, there's no way for anyone besides

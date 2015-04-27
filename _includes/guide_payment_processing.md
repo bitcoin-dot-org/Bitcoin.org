@@ -1,4 +1,11 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+{% assign filename="_includes/guide_payment_processing.md" %}
+
 ## Payment Processing
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -27,6 +34,7 @@ using third party APIs and services.
 {% endautocrossref %}
 
 ### Pricing Orders
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -75,6 +83,7 @@ fluctuate a significant amount before payment is received.
 {% endautocrossref %}
 
 ### Requesting Payments
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -116,7 +125,7 @@ payment requests is recommended.
    increased security, authentication of a receiver's identity using X.509 certificates,
    and other important features such as refunds.
 
-![Warning icon](/img/icon_warning.svg)
+![Warning icon](/img/icons/icon_warning.svg)
  **Warning:** Special care must be taken to avoid the theft of incoming
 payments. In particular, private keys should not be stored on web servers,
 and payment requests should be sent over HTTPS or other secure methods
@@ -126,6 +135,7 @@ with the attacker's address.
 {% endautocrossref %}
 
 #### Plain Text
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -133,7 +143,7 @@ To specify an amount directly for copying and pasting, you must provide
 the address, the amount, and the denomination. An expiration time for
 the offer may also be specified.  For example:
 
-(Note: all examples in this section use Testnet addresses.)
+(Note: all examples in this section use testnet addresses.)
 
 {% endautocrossref %}
 
@@ -145,9 +155,9 @@ You must pay by: 2014-04-01 at 23:00 UTC
 
 {% autocrossref %}
 
-Indicating the [denomination][]{:#term-denomination}{:.term} is critical. As of this writing, all popular
-Bitcoin wallet software defaults to denominating amounts in either [bitcoins][]{:#term-bitcoins}{:.term} (BTC)
-or [millibits][]{:#term-millibits}{:.term} (mBTC). Choosing between BTC and mBTC is widely supported,
+Indicating the denomination is critical. As of this writing, popular
+Bitcoin wallet software defaults to denominating amounts in either bitcoins (BTC)
+, millibitcoins (mBTC) or microbitcoins (uBTC, "bits"). Choosing between each unit is widely supported,
 but other software also lets its users select denomination amounts from
 some or all of the following options:
 
@@ -155,13 +165,14 @@ some or all of the following options:
 |-------------|---------------------|
 | 1.0         | bitcoin (BTC)       |
 | 0.01        | bitcent (cBTC)      |
-| 0.001       | millibit (mBTC)     |
-| 0.000001    | microbit (uBTC)     |
-| 0.00000001  | [satoshi][]{:#term-satoshi}{:.term}             |
+| 0.001       | millibitcoin (mBTC) |
+| 0.000001    | microbitcoin (uBTC, "bits") |
+| 0.00000001  | satoshi             |
 
 {% endautocrossref %}
 
 #### bitcoin: URI
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -214,6 +225,7 @@ might be the case for micropayments).
 {% endautocrossref %}
 
 #### QR Codes
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -241,10 +253,11 @@ displayed on high-resolution screens.
 {% endautocrossref %}
 
 #### Payment Protocol
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
-Bitcoin Core 0.9 supports the new [payment protocol][]{:#term-payment-protocol}{:.term}. The payment protocol
+Bitcoin Core 0.9 supports the new [payment protocol][/en/glossary/payment-protocol]{:#term-payment-protocol}{:.term}. The payment protocol
 adds many important features to payment requests:
 
 - Supports X.509 certificates and SSL encryption to verify receivers' identity
@@ -307,9 +320,9 @@ invoice database:
 
 * An expiration time when that total will no longer be acceptable.
 
-* An output script to which Charlie should send payment. Typically this
-  will be a P2PKH or P2SH output script containing a unique (never
-  before used) public key.
+* A pubkey script to which Charlie should send payment. Typically this
+  will be a P2PKH or P2SH pubkey script containing a unique (never
+  before used) secp256k1 public key.
 
 After adding all that information to the database, Bob's server displays
 a `bitcoin:` URI for Charlie to click to pay. 
@@ -334,7 +347,7 @@ unique identifier from the URL and looks up the corresponding details in
 the database. It then creates a PaymentDetails message with the
 following information:
 
-* The amount of the order in satoshis and the output script to be paid.
+* The amount of the order in satoshis and the pubkey script to be paid.
 
 * A memo containing the list of items ordered, so Charlie knows what
   he's paying for.  It may also include Charlie's mailing address so he can
@@ -355,7 +368,7 @@ payment request to Charlie's wallet in the reply to the HTTP GET.
 
 Charlie's wallet receives the PaymentRequest message, checks its signature, and
 then displays the details from the PaymentDetails message to Charlie. Charlie
-agrees to pay, so the wallet constructs a payment to the output script
+agrees to pay, so the wallet constructs a payment to the pubkey script
 Bob's server provided. Unlike a traditional Bitcoin payment, Charlie's
 wallet doesn't necessarily automatically broadcast this payment to the
 network. Instead, the wallet constructs a Payment message and sends it to
@@ -367,7 +380,7 @@ other things, the Payment message contains:
 * An optional memo Charlie can send to Bob. (There's no guarantee that
   Bob will read it.)
 
-* A refund address (output script) which Bob can pay if he needs to
+* A refund address (pubkey script) which Bob can pay if he needs to
   return some or all of Charlie's satoshis.
 
 Bob's server receives the Payment message, verifies the transaction pays
@@ -390,14 +403,14 @@ In the case of a dispute, Charlie can generate a cryptographically-proven
 otherwise-proven information.
 
 * The PaymentDetails message signed by Bob's webserver proves Charlie
-  received an invoice to pay a specified output script for a specified
+  received an invoice to pay a specified pubkey script for a specified
   number of satoshis for goods specified in the memo field.
 
-* The Bitcoin block chain can prove that the output script specified by
+* The Bitcoin block chain can prove that the pubkey script specified by
   Bob was paid the specified number of satoshis.
 
 If a refund needs to be issued, Bob's server can safely pay the
-refund-to output script provided by Charlie. (Note: a proposal has been
+refund-to pubkey script provided by Charlie. (Note: a proposal has been
 discussed to give refund-to addresses an implicit expiration date so
 users and software don't need to worry about payments being sent to
 addresses which are no longer monitored.)  See the Refunds section below
@@ -406,10 +419,11 @@ for more details.
 {% endautocrossref %}
 
 ### Verifying Payment
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
-As explained in the [Transactions][] and [Block Chain][] sections, broadcasting
+As explained in the [Transactions][] and [Block Chain][section block chain] sections, broadcasting
 a transaction to the network doesn't ensure that the receiver gets
 paid. A malicious spender can create one transaction that pays the
 receiver and a second one that pays the same input back to himself. Only
@@ -417,20 +431,20 @@ one of these transactions will be added to the block chain, and nobody
 can say for sure which one it will be.
 
 Two or more transactions spending the same input are commonly referred
-to as a [double spend][]{:#term-double-spend}{:.term}.
+to as a [double spend][/en/glossary/double-spend]{:#term-double-spend}{:.term}.
 
 Once the transaction is included in a block, double spends are
 impossible without modifying block chain history to replace the
 transaction, which is quite difficult. Using this system,
 the Bitcoin protocol can give each of your transactions an updating confidence 
 score based on the number of blocks which would need to be modified to replace 
-a transaction. For each block, the transaction gains one [confirmation][]{:#term-confirmation}{:.term}. Since 
+a transaction. For each block, the transaction gains one [confirmation][/en/glossary/confirmation-score]{:#term-confirmation}{:.term}. Since
 modifying blocks is quite difficult, higher confirmation scores indicate 
 greater protection.
 
 **0 confirmations**: The transaction has been broadcast but is still not 
-included in any block. Zero confirmation transactions ([unconfirmed
-transactions][]{:#term-unconfirmed-transactions}{:.term}) should generally not be 
+included in any block. Zero confirmation transactions (unconfirmed
+transactions) should generally not be
 trusted without risk analysis. Although miners usually confirm the first 
 transaction they receive, fraudsters may be able to manipulate the
 network into including their version of a transaction.
@@ -488,7 +502,8 @@ estimate the amount of time until they're added to a block.
 Another example could be to detect a fork when multiple peers report differing 
 block header hashes at the same block height. Your program can go into a safe mode if the 
 fork extends for more than two blocks, indicating a possible problem with the 
-block chain.
+block chain. For more details, see the [Detecting Forks
+subsection][section detecting forks].
 
 Another good source of double-spend protection can be human intelligence. For 
 example, fraudsters may act differently from legitimate customers, letting 
@@ -499,12 +514,13 @@ basis.
 {% endautocrossref %}
 
 ### Issuing Refunds
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
 Occasionally receivers using your applications will need to issue
 refunds. The obvious way to do that, which is very unsafe, is simply
-to return the satoshis to the output script from which they came.
+to return the satoshis to the pubkey script from which they came.
 For example:
 
 * Alice wants to buy a widget from Bob, so Bob gives Alice a price and
@@ -541,6 +557,7 @@ original payment was made.
 {% endautocrossref %}
 
 ### Disbursing Income (Limiting Forex Risk)
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -569,6 +586,7 @@ which can lead to different results.
 {% endautocrossref %}
 
 #### Merge Avoidance
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -603,6 +621,7 @@ provided by the receiver.
 {% endautocrossref %}
 
 #### Last In, First Out (LIFO)
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -640,6 +659,7 @@ the [Verification subsection][] above) before using them to make payments.
 {% endautocrossref %}
 
 #### First In, First Out (FIFO)
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -679,6 +699,7 @@ a bi-hourly schedule.
 {% endautocrossref %}
 
 ### Rebilling Recurring Payments
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
