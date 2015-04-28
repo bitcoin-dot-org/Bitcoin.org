@@ -6,7 +6,7 @@ type: posts
 layout: post
 category: blog
 
-title: "Dev Docs: New Glossary & Search Feature"
+title: "Dev Docs: New Glossary And Search Feature"
 permalink: /en/posts/developer-docs-glossary-and-search.html
 date: 2015-04-14
 author: >
