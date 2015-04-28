@@ -22,6 +22,8 @@ optional:
         - redeemscripts
         - script hash
         - script hashes
+        - redeem script hash
+        - redeem script hashes
 
     not_to_be_confused_with_capitalize_first_letter:
         - Signature script (a script that provides data to the pubkey script, which includes the redeem script in a P2SH input)

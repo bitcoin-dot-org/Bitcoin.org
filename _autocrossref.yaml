@@ -13,8 +13,6 @@
 '`alert` message': alert message
 '`alert` messages': alert message
 '`amount`': pp amount
-## bitcoin -- Recommend against bitcoin (singular) because of confusion between protocol, software, denomination
-bitcoins: 
 bitcoin QR code: URI QR code
 bitcoin QR codes: URI QR code
 '`bitcoin:` URI': bitcoin uri
@@ -23,8 +21,6 @@ bitcoinj:
 '`block` message': block message
 '`block` messages': block message
 certificate chain:
-denomination:
-denominations: denomination
 DER:
 DER format: der
 DER-formatted: der
@@ -77,8 +73,6 @@ merge:
 Merge avoidance:
 micropayment channel:
 micropayment channels: micropayment channel
-millibitcoin: millibitcoins
-millibitcoins:
 '`MSG_BLOCK`': msg_block
 '`MSG_FILTERED_BLOCK`': msg_filtered_block
 '`MSG_TX`': msg_tx
@@ -134,8 +128,6 @@ refunds: refund
 root certificate:
 RPC:
 RPCs: rpc
-satoshi:
-satoshis: satoshi
 '`script`': pp script
 secp256k1:
 standard block relay:
@@ -209,6 +201,8 @@ CVE-2012-2459:
 '`estimatefee` RPC': rpc estimatefee
 '`estimatepriority`': rpc estimatepriority
 '`estimatepriority` RPC': rpc estimatepriority
+'`generate`': rpc generate
+'`generate` RPC': rpc generate
 '`getaccount`': rpc getaccount
 '`getaccount` RPC': rpc getaccount
 '`getaccountaddress`': rpc getaccountaddress

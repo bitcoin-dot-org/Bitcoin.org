@@ -5,7 +5,6 @@
 layout: base
 id: events
 ---
-<!-- Note: this file is built non-deterministically -->
 <link rel="alternate" type="application/rss+xml" href="/en/rss/events.rss" title="Bitcoin conferences and events">
 <h1>{% translate pagetitle %}<a type="application/rss+xml" href="/en/rss/events.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
 <p class="summary">{% translate pagedesc %}</p>
@@ -16,28 +15,7 @@ id: events
 <script src="/js/leaflet/leaflet.js"></script>
 <script src="/js/leaflet-markercluster/leaflet.markercluster.js"></script>
 <div id="eventmap" class="eventmap"></div>
-<script>
-var zoom=2;
-var minzoom=1;
-if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))var zoom=minzoom=0;
-var map = L.map('eventmap',{ 'zoom': zoom, 'minZoom': minzoom, 'center': [20.00, 10.00]});
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	attribution: 'Data &copy; by <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.',
-	maxZoom: 18
-}).addTo(map);
-
-var markers = new L.MarkerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 40});
-{% filter_for p in site.conferences sort_by:date %}{% if p.geoloc %}
-L.marker([{{ p.geoloc }}]).bindPopup('<b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}').addTo(markers);
-{% endif %}{% endfilter_for %}
-
-{% filter_for p in site.meetups sort_by:date %}{% if p.geoloc %}
-L.marker([{{ p.geoloc }}]).bindPopup('<b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}').addTo(markers);
-{% endif %}{% endfilter_for %}
-
-map.addLayer(markers);
-</script>
-
+<script src="/js/events.js"></script>
 <h2 id="upcoming">{% translate upcoming %}</h2>
 <div class="listtable eventtable">
 {% filter_for p in site.conferences sort_by:date %}

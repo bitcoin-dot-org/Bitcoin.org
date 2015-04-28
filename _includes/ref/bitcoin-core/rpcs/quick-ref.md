@@ -17,6 +17,7 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 {% endcomment %}
 
 <!-- master -->
+{% assign NEW_MASTER='**<abbr title="New in Bitcoin Core’s master branch (unreleased)">New in master</abbr>**' %}
 {% assign UPDATED_MASTER='**<abbr title="Updated in Bitcoin Core’s master branch (unreleased)">Updated in master</abbr>**' %}
 
 <!-- Bitcoin Core 0.10.0 expected January 2015 -->
@@ -76,8 +77,9 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 
 {% autocrossref %}
 
+* [Generate][rpc generate]: {{summary_generate}} {{NEW_MASTER}}
 * [GetGenerate][rpc getgenerate]: {{summary_getGenerate}}
-* [SetGenerate][rpc setgenerate]: {{summary_setGenerate}}
+* [SetGenerate][rpc setgenerate]: {{summary_setGenerate}} {{UPDATED_MASTER}}
 
 {% endautocrossref %}
 

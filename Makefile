@@ -93,6 +93,7 @@ build:
 	$S export LANG=C.UTF-8 ; bundle exec jekyll build 2>&1 | tee $(JEKYLL_LOG)
 	$S grep -r -L 'Note: this file is built non-deterministically' _site/ \
 	  | egrep -v 'sha256sums.txt' \
+	  | sort \
 	  | xargs sha256sum > _site/sha256sums.txt
 
 ## Jekyll annoyingly returns success even when it emits errors and
@@ -221,6 +222,8 @@ manual-check-diff-sha256sums:
 	  | sort -k2
 
 check-for-broken-bitcoin-core-download-links:
+## Ensure that the links from the Download page to the current Bitcoin
+## Core binaries are correct
 	$S grep 'class="dl"' _site/en/download.html \
 	  | sed 's/.*href="//; s/".*//' \
 	  | while read url ; do \

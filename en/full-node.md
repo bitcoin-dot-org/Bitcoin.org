@@ -44,6 +44,44 @@ signatures file.
 </div>
 {% endcapture %}
 
+
+{% capture start_up_and_recommended_commands %}
+Note: it may take up to several minutes for Bitcoin Core to start,
+during which it will display the following message whenever you use
+`bitcoin-cli`:
+
+    error: {"code":-28,"message":"Verifying blocks..."}
+
+After it starts, you may find the following commands useful for basic
+interaction with your node:
+[`getblockchaininfo`](/en/developer-reference#getblockchaininfo),
+[`getnetworkinfo`](/en/developer-reference#getnetworkinfo),
+[`getnettotals`](/en/developer-reference#getnettotals),
+[`getwalletinfo`](/en/developer-reference#getwalletinfo),
+[`stop`](/en/developer-reference#stop), and [`help`](/en/developer-reference#help).
+{% endcapture %}
+
+
+{% capture complete_list_of_commands_and_ibd %}
+A complete list of commands is available in the [Bitcoin.org developer
+reference](/en/developer-reference#rpc-quick-reference).
+
+When Bitcoin Core daemon first starts, it will begin to download the
+block chain. This step will take at least several hours, and it may
+take a day or more on a slow Internet connection or with a slow
+computer. During the download, Bitcoin Core will use a significant part
+of your connection bandwidth. You can stop Bitcoin Core at any time using
+the `stop` command; it will resume from the point where it stopped the next
+time you start it.
+{% endcapture %}
+
+
+{% capture windows_shutdown_warning %}
+**Warning:** to prevent data corruption, do not force shutdown your
+computer from the Windows shutdown screen when you have Bitcoin
+Core running.
+{% endcapture %}
+
 -->
 
 # Running A Full Node
@@ -344,33 +382,14 @@ command:
 
 It will print a message that Bitcoin Core is starting.  To interact with
 Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin
-command line interface).  Note: it may take up to several minutes for
-Bitcoin Core to start, during which it will display the following
-message whenever you use `bitcoin-cli`:
+command line interface).
+{{start_up_and_recommended_commands}}
 
-    error: {"code":-28,"message":"Verifying blocks..."}
-
-After it starts, you may find the following commands useful for basic
-interaction with your node:
-[`getblockchaininfo`](/en/developer-reference#getblockchaininfo),
-[`getnetworkinfo`](/en/developer-reference#getnetworkinfo),
-[`getnettotals`](/en/developer-reference#getnettotals),
-[`getwalletinfo`](/en/developer-reference#getwalletinfo),
-[`stop`](/en/developer-reference#stop), and [`help`](/en/developer-reference#help).
 For example, to safely stop your node, run the following command:
 
     bitcoin-cli stop
 
-A complete list of commands is available in the [Bitcoin.org developer
-reference](/en/developer-reference#rpc-quick-reference).
-
-When Bitcoin Core daemon first starts, it will begin to download the
-block chain. This step will take at least several hours, and it may
-take a day or more on a slow Internet connection or with a slow
-computer. During the download, Bitcoin Core will use a significant part
-of your connection bandwidth. You can stop Bitcoin Core at any time using
-the `stop` command; it will resume from the point where it stopped the next
-time you start it.
+{{complete_list_of_commands_and_ibd}}
 
 <div class="box" markdown="1">
 *Optional: Start Your Node At Boot*
@@ -586,33 +605,14 @@ command:
 
 It will print a message that Bitcoin Core is starting.  To interact with
 Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin
-command line interface).  Note: it may take up to several minutes for
-Bitcoin Core to start, during which it will display the following
-message whenever you use `bitcoin-cli`:
+command line interface).
+{{start_up_and_recommended_commands}}
 
-    error: {"code":-28,"message":"Verifying blocks..."}
-
-After it starts, you may find the following commands useful for basic
-interaction with your node:
-[`getblockchaininfo`](/en/developer-reference#getblockchaininfo),
-[`getnetworkinfo`](/en/developer-reference#getnetworkinfo),
-[`getnettotals`](/en/developer-reference#getnettotals),
-[`getwalletinfo`](/en/developer-reference#getwalletinfo),
-[`stop`](/en/developer-reference#stop), and [`help`](/en/developer-reference#help).
 For example, to safely stop your node, run the following command:
 
     bitcoin-cli stop
 
-A complete list of commands is available in the [Bitcoin.org developer
-reference](/en/developer-reference#rpc-quick-reference).
-
-When Bitcoin Core daemon first starts, it will begin to download the
-block chain. This step will take at least several hours, and it may
-take a day or more on a slow Internet connection or with a slow
-computer. During the download, Bitcoin Core will use a significant part
-of your connection bandwidth. You can stop Bitcoin Core at any time using
-the `stop` command; it will resume from the point where it stopped the next
-time you start it.
+{{complete_list_of_commands_and_ibd}}
 
 <div class="box" markdown="1">
 *Optional: Start Your Node At Boot*
@@ -643,14 +643,203 @@ If you're a expert system administrator and want to use an init script instead, 
 
 ## Windows Instructions
 
-### Windows 8.1
+### Windows 8.x
 
-If you can provide instructions and screenshots for running the latest
-version of Bitcoin Core on Windows 8.1, please [open an
-issue](https://github.com/bitcoin/bitcoin.org/issues/new) and we'll tell
-you what we need.
+*Instructions for Bitcoin Core 0.10.0 on Windows 8 and 8.1.*
+
+Go to the [Bitcoin Core download page](/en/download) and verify you have
+made a secure connection to the server.
+
+![Verify secure connection](/img/full-node/en-secure-connection.png)
+
+Click the large blue *Download Bitcoin Core* button to download the
+Bitcoin Core installer to your desktop.
+
+{{verifyReleaseSignatures}}
+
+After downloading the file to your desktop or your Downloads folder
+(`C:\Users\<YOUR USER NAME>\Downloads`), run it by double-clicking
+its icon. Windows will ask you to confirm that you want to run it:
+
+![UAC Prompt to install](/img/full-node/en-uac-run-installer.png)
+
+The Bitcoin installer will start.  It's a typical Windows installer, and
+it will guide you through the decisions you need to make about where to
+install Bitcoin Core.
+
+![Windows 7 installer start](/img/full-node/en-win7-installer-start.png)
+
+<div class="box" markdown="1">
+*To continue, choose one of the following options*
+
+1. If you want to use the Bitcoin Core Graphical User Interface (GUI),
+   proceed to the [Bitcoin Core GUI](#win8-gui) section below.
+
+2. If you want to use the Bitcoin Core daemon (bitcoind), which is
+   useful for programmers and advanced users, proceed to the [Bitcoin
+   Core Daemon](#win8-daemon) section below.
+
+3. To want to use both the GUI and the daemon, read both the [GUI
+   instructions](#win8-gui) and the [daemon
+   instructions](#win8-daemon). Note that you can't run both the GUI
+   and the daemon at the same time using the same configuration
+   directory.
+
+</div>
+
+#### Bitcoin Core GUI {#win8-gui}
+{:.no_toc}
+
+Press the Windows key (`⊞ Win`) and start typing "bitcoin".  When the
+Bitcoin Core icon appears (as shown below), click on it.
+
+![Starting Bitcoin Core](/img/full-node/en-win8-start-bitcoin-core.png)
+
+You will be prompted to choose a directory to store the Bitcoin block
+chain and your wallet.  Unless you have a separate partition or drive
+you want to use, click Ok to use the default.
+
+![Bitcoin-Qt Welcome](/img/full-node/en-win7-welcome-to-bitcoin-core.png)
+
+Your firewall may block Bitcoin Core from making outbound connections.
+It's safe to allow Bitcoin Core to use all networks. (Note: you will
+still need to configure inbound connections as described later in the
+[Network Configuration](#network-configuration) section.)
+
+![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win7-bitcoin-core-outgoing-firewall.png)
+
+Bitcoin Core GUI will begin to download the block chain.  This
+step will take at least several hours, and it may take a day or more on
+a slow Internet connection or with a slow computer.  During the
+download, Bitcoin Core will use a significant part of your connection
+bandwidth.  You can stop Bitcoin Core at any time by closing it; it will
+resume from the point where it stopped the next time you start it.
+
+![Bitcoin-Qt Initial Block Download](/img/full-node/en-win7-ibd.png)
+
+After download is complete, you may use Bitcoin Core as your wallet or
+you can just let it run to help support the Bitcoin network.
+
+<div class="box" markdown="1">
+*Optional: Start Your Node At Login*
+
+Starting your node automatically each time you login to your computer
+makes it easy for you to contribute to the network. The easiest way
+to do this is to tell Bitcoin Core GUI to start at login.
+
+While running Bitcoin Core GUI, open the Settings menu and choose
+Options.  On the Main tab, click *Start Bitcoin on system login*.  Click
+the Ok button to save the new settings.
+
+![Choosing to start Bitcoin Core at login](/img/full-node/en-win7-start-on-login.png)
+
+The next time you login to your desktop, Bitcoin Core GUI will be
+automatically started minimized in the task bar.
+
+{{windows_shutdown_warning}}
+</div>
+
+{{installFinished}}
 
 
+#### Bitcoin Core Daemon {#win8-daemon}
+{:.no_toc}
+
+To start Bitcoin Core daemon, first open a command window: press the
+Windows key (`⊞ Win`) and type "cmd".  Choose the option labeled
+"Command Prompt".
+
+![Running cmd](/img/full-node/en-win8-running-cmd.png)
+
+If you installed Bitcoin Core into the default directory, type the
+following at the command prompt:
+
+    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+
+It will display an error message similar to the one below:
+
+    Error: To use the bitcoind or the "-server" option to bitcoin-qt,
+    you must set a rpcpassword in the configuration file:
+    C:\Users\Example\AppData\Roaming\Bitcoin\bitcoin.conf
+    It is recommended you use the following random password:
+    rpcuser=bitcoinrpc
+    rpcpassword=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    (you do not need to remember this password)
+    The username and password MUST NOT be the same.
+    If the file does not exist, create it with owner-readable-only file permissions.
+
+    It is also recommended to set alertnotify so you are notified of problems;
+    for example: alertnotify=echo %s | mail -s "Bitcoin Alert" admin@foo.com
+
+Pay attention to these particular lines:
+
+    C:\Users\<YOUR USER NAME>\AppData\Roaming\Bitcoin\bitcoin.conf
+    [...]
+    rpcuser=bitcoinrpc
+    rpcpassword=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+The first line will actually have your username. The later two lines
+will include a randomly-generated password that you will need
+to copy and paste.  (Do not use XXXXXXX.)
+
+Leave the command prompt window open and start File Explorer.
+In File Explorer, open the directory indicated in the message
+(`C:\Users\<YOUR USER NAME>\AppData\Roaming\Bitcoin`), right-click on
+the File Explorer window and choose New → Text file.  Name the file
+`bitcoin.conf` and then right-click on it and choose to open it in
+Notepad or your preferred text editor.
+
+In the command prompt, copy the `rpcuser` and `rpcpassword` lines.
+Paste them into the text editor and then save and close the file.
+By default, you shouldn't need to change the file permissions.
+
+Return to the command prompt and press the Up arrow key to get the
+previous command (ending in `bitcoind -daemon`) and run it again.
+Bitcoin Core daemon should start and print a message that Bitcoin Core is starting.
+
+To interact with Bitcoin Core daemon, you will use the command
+`bitcoin-cli` (Bitcoin command line interface).  If you installed Bitcoin
+Core into the default location, type the following at the command
+prompt to see whether it works:
+
+    C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
+
+{{start_up_and_recommended_commands}}
+
+For example, to safely stop your node, run the following command:
+
+    C:\Program Files\Bitcoin\daemon\bitcoin-cli stop
+
+{{complete_list_of_commands_and_ibd}}
+
+<div class="box" markdown="1">
+*Optional: Start Your Node At Boot*
+
+Starting your node automatically each time your computer boots makes it
+easy for you to contribute to the network.  The easiest way to do this
+is to start Bitcoin Core daemon when you login to your computer.
+
+Start File Explorer and go to,
+
+    C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
+
+Right-click on the File Explorer window and choose New → Text file.
+Name the file `start_bitcoind.bat`. Then right-click on it and choose
+Open in Notepad (or whatever editor you prefer). Copy and paste the
+following line into the file.
+
+    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+
+(If you installed Bitcoin Core in a non-default directory, use that
+directory path instead.)
+
+Save the file. The next time you login to your computer, Bitcoin Core
+daemon will be automatically started.
+
+{{windows_shutdown_warning}}
+</div>
+
+{{installFinished}}
 
 ### Windows 7
 
@@ -666,7 +855,8 @@ Bitcoin Core installer to your desktop.
 
 {{verifyReleaseSignatures}}
 
-After downloading the file to your desktop, run it by double-clicking
+After downloading the file to your desktop or your Downloads folder
+(`C:\Users\<YOUR USER NAME>\Downloads`), run it by double-clicking
 its icon. Windows will ask you to confirm that you want to run it:
 
 ![UAC Prompt to install](/img/full-node/en-uac-run-installer.png)
@@ -688,8 +878,8 @@ install Bitcoin Core.
    Core Daemon](#win7-daemon) section below.
 
 3. To want to use both the GUI and the daemon, read both the [GUI
-   instructions](#ubuntu-gui) and the [daemon
-   instructions](#ubuntu-daemon). Note that you can't run both the GUI
+   instructions](#win7-gui) and the [daemon
+   instructions](#win7-daemon). Note that you can't run both the GUI
    and the daemon at the same time using the same configuration
    directory.
 
@@ -743,6 +933,7 @@ the Ok button to save the new settings.
 
 The next time you login to your desktop, Bitcoin Core GUI will be
 automatically started minimized in the task bar.
+{{windows_shutdown_warning}}
 
 </div>
 
@@ -755,7 +946,8 @@ automatically started minimized in the task bar.
 If you can provide instructions and screenshots for running the latest
 version of Bitcoin Core daemon on Windows 7, please [open an
 issue](https://github.com/bitcoin/bitcoin.org/issues/new) and we'll tell
-you what we need.
+you what we need.  The instructions for [Windows
+8.x](#win8-daemon) may already provide all the necessary information.
 
 
 
@@ -1035,4 +1227,3 @@ instructions, please [open an issue.](https://github.com/bitcoin/bitcoin.org/iss
 
 </div>
 <script>updateToc();</script>
-<script>addAnchorLinks();</script>

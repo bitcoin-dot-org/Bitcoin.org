@@ -143,6 +143,8 @@ redirects:
   /releases/2013/02/19/v0.8.0: /en/release/v0.8.0
   /releases/2013/03/18/v0.8.1: /en/release/v0.8.1
   /releases/2013/05/29/v0.8.2: /en/release/v0.8.2
+  /bitcoin_es_latam.pdf: /files/bitcoin-paper/bitcoin_es_latam.pdf
+  /bitcoin_ru.pdf: /files/bitcoin-paper/bitcoin_ru.pdf
 
 aliases:
   --author=Satoshi Nakamoto: Satoshi Nakamoto
@@ -432,7 +434,7 @@ devsearches:
     - "BIP1: BIP purpose and guidelines": "https://github.com/bitcoin/bips/blob/master/bip-0001.mediawiki"
     - "BIP11: m-of-n multisig transactions": "https://github.com/bitcoin/bips/blob/master/bip-0011.mediawiki"
     - "BIP13: P2SH address format": "https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki"
-    - "BIP14: protocol version & user agent": "https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki"
+    - "BIP14: protocol version and user agent": "https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki"
     - "BIP16: pay to script hash (P2SH)": "https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki"
     - "BIP21: URI scheme": "https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki"
     - "BIP22: GetBlockTemplate fundamentals": "https://github.com/bitcoin/bips/blob/master/bip-0022.mediawiki"
