@@ -1,27 +1,3 @@
-- date: 2015-04-22
-  title: "The Age of Cryptocurrency"
-  venue: "Consumers' Research - DACOR Bacon House"
-  address: "1801 F Street, NW"
-  city: "Washington, DC"
-  country: "United States"
-  link: "http://consumersresearch.org/event/the-age-of-cryptocurrency/"
-
-- date: 2015-04-27
-  title: "Inside Bitcoins New York"
-  venue: "Javits Convention Center"
-  address: "655 W 34th St"
-  city: "New York, NY"
-  country: "United States"
-  link: "http://insidebitcoins.com/new-york/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibny"
-
-- date: 2015-04-29
-  title: "Virtual Currency Today Summit"
-  venue: "Hilton Boston Back Bay"
-  address: "40 Dalton St"
-  city: "Boston"
-  country: "United States"
-  link: "http://summit.virtualcurrencytoday.com/"
-
 - date: 2015-05-02
   title: "WeBTCExpo"
   venue:
@@ -93,6 +69,14 @@
   city: "Paris"
   country: "France"
   link: "http://www.bl0ckcha1n.com"
+
+- date: 2015-08-13
+  title: "Coin Congress San Francisco 2015"
+  venue: "Hilton Union Square - San Francisco"
+  address: "333 O'Farrell St"
+  city: "San Francisco"
+  country: "USA"
+  link: "http://www.coincongressevents.org"
 
 - date: 2015-11-09
   title: "MTBIT - Bitcoin & Remittances Miami Beach"
