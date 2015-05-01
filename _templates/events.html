@@ -5,6 +5,7 @@
 layout: base
 id: events
 ---
+<!-- Note: this file is built non-deterministically -->
 <link rel="alternate" type="application/rss+xml" href="/en/rss/events.rss" title="Bitcoin conferences and events">
 <h1>{% translate pagetitle %}<a type="application/rss+xml" href="/en/rss/events.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
 <p class="summary">{% translate pagedesc %}</p>
@@ -15,6 +16,17 @@ id: events
 <script src="/js/leaflet/leaflet.js"></script>
 <script src="/js/leaflet-markercluster/leaflet.markercluster.js"></script>
 <div id="eventmap" class="eventmap"></div>
+<div id="eventdata" class="eventdata">
+
+{% filter_for p in site.conferences sort_by:date %}{% if p.geoloc %}
+<div data-lat="{{ p.geoloc.lat }}" data-lon="{{ p.geoloc.lon }}"><b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}')</div>
+{% endif %}{% endfilter_for %}
+
+{% filter_for p in site.meetups sort_by:date %}{% if p.geoloc %}
+<div data-lat="{{ p.geoloc.lat }}" data-lon="{{ p.geoloc.lon }}"><b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div>
+{% endif %}{% endfilter_for %}
+
+</div>
 <script src="/js/events.js"></script>
 <h2 id="upcoming">{% translate upcoming %}</h2>
 <div class="listtable eventtable">
