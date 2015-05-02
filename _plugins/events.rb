@@ -79,7 +79,7 @@ module Jekyll
         time.utc
         date = time.year.to_s + '-' + time.month.to_s.rjust(2,'0') + '-' + time.day.to_s.rjust(2,'0')
         country = country.upcase
-        geoloc = lat + ', ' + lon
+        geoloc = {'lat' => lat, 'lon' => lon}
         # Use address_2 and state when available
         if m['venue'].has_key?('address_2') and ( m['venue']['address_2'].is_a?(String) or m['venue']['address_2'].is_a?(Integer) or m['venue']['address_2'].is_a?(Float) ) and /^.{1,150}$/.match(m['venue']['address_2'].to_s)
           address = address + ' ' + m['venue']['address_2'].to_s
@@ -105,7 +105,7 @@ module Jekyll
           begin
             geoloc = JSON.parse(open("https://maps.googleapis.com/maps/api/geocode/json?address=" + CGI::escape(data['address'] + ', ' + data['city'] + ', ' + data['country']) + "&sensor=false","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
             if geoloc['status'] == 'OK'
-              data['geoloc'] = geoloc['results'][0]['geometry']['location']['lat'].to_s + ", " + geoloc['results'][0]['geometry']['location']['lng'].to_s
+              data['geoloc'] = {'lat' => geoloc['results'][0]['geometry']['location']['lat'].to_s, 'lon' => geoloc['results'][0]['geometry']['location']['lng'].to_s}
             end
           rescue
             print 'Google Maps API Call Failed!'
