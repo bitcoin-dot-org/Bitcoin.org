@@ -10,6 +10,6 @@ WORKDIR='/bitcoin.org/stats'
 LOGDIR='build@bitcoinorglog:/var/log/nginx'
 DSTDIR='build@bitcoinorgstats:/var/www/stats'
 
-rsync -rtz --delete $LOGDIR/ $WORKDIR/srclogs/
+rsync -rtz --delete --exclude="error.*" --exclude="*.gz" $LOGDIR/ $WORKDIR/srclogs/
 ruby $WORKDIR/stats.rb
 rsync -rtz --delete  $WORKDIR/stats/ $DSTDIR/
