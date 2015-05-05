@@ -520,7 +520,7 @@ en:
     datacollect: "Data collected"
     datacollecttxt: "Bitcoin.org collects anonymized server logs. These logs include IP addresses with replaced last byte, time of the visit, requested page, user agent and referer url. Bitcoin.org does not collect data using cookies."
     datause: "Usage of data"
-    datausetxt: "Collected data is used to provide <a href=\"/stats/\">transparent public stats</a>."
+    datausetxt: "Collected data may be used to provide transparent public stats."
   protect-your-privacy:
     title: "Protect your privacy - Bitcoin"
     pagetitle: "Protect your privacy"
@@ -691,7 +691,6 @@ en:
     menu-press: "Press"
     menu-privacy: "Privacy"
     menu-resources: Resources
-    menu-stats: "Stats"
     menu-support-bitcoin: "Support Bitcoin"
     menu-vocabulary: Vocabulary
     menu-you-need-to-know: "You need to know"
