@@ -62,14 +62,6 @@
   country: "Russia"
   link: "http://www.advapay.eu/"
 
-- date: 2015-06-11
-  title: "BL0CKCHA1N: The Blockchain Forum"
-  venue: "Novotel Paris Centre Tour Eiffel"
-  address: "61 quai de Grenelle, 75015"
-  city: "Paris"
-  country: "France"
-  link: "http://www.bl0ckcha1n.com"
-
 - date: 2015-07-10
   title: "Inside Bitcoins Chicago"
   venue: "Navy Pier"
@@ -93,6 +85,14 @@
   city: "Batumi"
   country: "Georgia"
   link: "http://altconvention.com"
+
+- date: 2015-11-03
+  title: "BL0CKCHA1N: The Blockchain Forum"
+  venue: "Novotel Paris Centre Tour Eiffel"
+  address: "61 quai de Grenelle, 75015"
+  city: "Paris"
+  country: "France"
+  link: "http://www.bl0ckcha1n.com"
 
 - date: 2015-11-09
   title: "MTBIT - Bitcoin & Remittances Miami Beach"
