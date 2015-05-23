@@ -287,7 +287,7 @@ http://opensource.org/licenses/MIT.
 [docs issue]: https://github.com/bitcoin/bitcoin.org/issues
 [ECDSA]: https://en.wikipedia.org/wiki/Elliptic_Curve_DSA
 [Electrum server]: https://github.com/spesmilo/electrum-server
-[Eloipool]: https://gitorious.org/bitcoin/eloipool
+[Eloipool]: https://github.com/luke-jr/eloipool
 [errors in docs]: https://github.com/bitcoin/bitcoin.org/issues?q=is%3Aissue+label%3A%22Dev+Docs%22
 [forum tech support]: https://bitcointalk.org/index.php?board=4.0
 [high-speed block relay network]: https://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg03189.html
@@ -297,7 +297,7 @@ http://opensource.org/licenses/MIT.
 [IP-to-IP payment protocol]: https://en.bitcoin.it/wiki/IP_Transactions
 [IPv4-mapped IPv6 addresses]: http://en.wikipedia.org/wiki/IPv6#IPv4-mapped_IPv6_addresses
 [irc channels]: https://en.bitcoin.it/wiki/IRC_channels
-[libblkmaker]: https://gitorious.org/bitcoin/libblkmaker
+[libblkmaker]: https://github.com/bitcoin/libblkmaker
 [makeseeds script]: https://github.com/bitcoin/bitcoin/tree/master/contrib/seeds
 [murmur3]: https://en.wikipedia.org/wiki/MurmurHash
 [man-in-the-middle]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack
