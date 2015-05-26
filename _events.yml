@@ -1,43 +1,3 @@
-- date: 2015-05-02
-  title: "WeBTCExpo"
-  venue:
-  address:
-  city: "Amsterdam"
-  country: "Netherlands"
-  link: "http://webtcexpo.com/"
-
-- date: 2015-05-06
-  title: "Bitcoin Wednesday"
-  venue: "Pakhuis de Zwijger"
-  address: "Piet Heinkade 179"
-  city: "Amsterdam"
-  country: "The Netherlands"
-  link: "http://www.BitcoinWednesday.com"
-
-- date: 2015-05-14
-  title: "Bitcoin Conference Prague 2015"
-  venue: "Prague Congress Centre"
-  address: "Prague 5, Kvetna 65"
-  city: "Prague"
-  country: "Czech Republic"
-  link: "http://bitcoinconf.eu/"
-
-- date: 2015-05-14
-  title: "Inside Bitcoins Hong Kong"
-  venue: "Hong Kong Convention & Exhibition Centre"
-  address: "1 Expo Drive, Wan Chai, Hong Kong"
-  city: "Hong Kong"
-  country: "China"
-  link: "http://insidebitcoins.com/hong-kong/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibhk"
-
-- date: 2015-05-25
-  title: "MTBIT - Bitcoin & Remittances Istanbul"
-  venue: "Conrad Hilton Hotel"
-  address: "Cihannüma Mah., Saray Cad No: 5"
-  city: "Istanbul"
-  country: "Turkey"
-  link: "http://www.imtconferences.com/mtbit/"
-
 - date: 2015-05-26
   title: "Bitcoin and Electronic Crime - APWG eCrime 2015"
   venue: "CaixaForum / Casa Ramona"
@@ -77,6 +37,14 @@
   city: "San Francisco"
   country: "USA"
   link: "http://www.coincongressevents.org"
+
+- date: 2015-09-10
+  title: "Consensus 2015"
+  venue: "TimesCenter"
+  address: "242 W 41st St"
+  city: "New York"
+  country: "United States"
+  link: "http://www.coindesk.com/events/consensus-2015/"
 
 - date: 2015-10-08
   title: "Alt Convention"
