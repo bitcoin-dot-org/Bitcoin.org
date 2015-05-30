@@ -85,8 +85,8 @@ please [open an issue][docs issue].)
 {% autocrossref %}
 
 All messages in the network protocol use the same container format,
-which provides a required multi-field header and an optional payload.
-The header format is:
+which provides a required multi-field message header and an optional payload.
+The message header format is:
 
 | Bytes | Name         | Data Type | Description
 |-------|--------------|-----------|-------------
