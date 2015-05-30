@@ -19,7 +19,7 @@ group :development do
   gem 'jekyll', '~>1.3.0'
   gem 'json'
   gem 'less'
-  gem 'kramdown'
+  gem 'kramdown', '~>1.6.0'
   gem 'RedCloth'
   gem 'therubyracer' # required by less
 end
