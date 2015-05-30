@@ -19,7 +19,7 @@ rebilling.
 
 Bitcoin payment processing is being actively developed at the moment, so
 each subsection below attempts to describe what's widely deployed now,
-what's new, and what might be coming before the end of 2014.
+what's new, and what might be coming before the end of 2015.
 
 ![Bitcoin Payment Processing](/img/dev/en-payment-processing.svg)
 
