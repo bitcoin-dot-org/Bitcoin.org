@@ -819,6 +819,42 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
+    platform:
+      ios:
+        text: "walletninki"
+        link: "https://itunes.apple.com/us/app/ninki-wallet/id965528267?mt=8"
+        source: "https://github.com/Ninkip2p/NinkiCordova"
+        screenshot: "ninki.png"
+        os:
+        - ios
+        check:
+          control: "checkpasscontrolmulti"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencynew"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+    platform:
+      android:
+        text: "walletninki"
+        link: "https://play.google.com/store/apps/details?id=com.ninki.wallet&hl=en"
+        source: "https://github.com/Ninkip2p/NinkiCordova"
+        screenshot: "ninki.png"
+        os:
+        - android
+        check:
+          control: "checkpasscontrolmulti"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencynew"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 ---
 
 <!-- Note: this file exempt from check-for-subheading-anchors check -->
