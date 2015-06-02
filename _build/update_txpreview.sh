@@ -5,6 +5,8 @@
 
 PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
 
+source /etc/profile.d/rvm.sh
+
 # Set variables and create temporary directories
 LANGS=('ar' 'bg' 'bn' 'ca' 'cs' 'da' 'de' 'el' 'es' 'fa' 'fr' 'hi' 'hr' 'hu' 'id' 'it' 'ja' 'ko' 'lv' 'ml' 'nl' 'no' 'pl' 'pt_BR' 'ro' 'ru' 'sl' 'sr' 'sv' 'tr' 'uk' 'zh_CN' 'zh_TW')
 WORKDIR=`mktemp -d`
@@ -91,6 +93,7 @@ done
 # Build website in a child process
 (
 cd $WORKDIR
+bundle install
 ENABLED_PLUGINS='alerts redirects releases' make build && touch "$WORKDIR/_builddone" || touch "$WORKDIR/_buildfail"
 )&
 

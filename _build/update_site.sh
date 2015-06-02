@@ -5,7 +5,7 @@
 
 PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
 
-export PATH=/var/lib/gems/1.8/bin/:$PATH
+source /etc/profile.d/rvm.sh
 
 REPO='https://github.com/bitcoin/bitcoin.org.git'
 SITEDIR='/bitcoin.org/site'
