@@ -1,19 +1,3 @@
-- date: 2015-05-26
-  title: "Bitcoin and Electronic Crime - APWG eCrime 2015"
-  venue: "CaixaForum / Casa Ramona"
-  address: "Av. Francesc Ferrer i Guàrdia, 6-8"
-  city: "Barcelona"
-  country: "Spain"
-  link: "http://www.apwg.org/apwg-events/ecrime2015/"
-
-- date: 2015-05-30
-  title: "Bitcoinference 2015"
-  venue: "Berlage Meet & Workpace"
-  address: "Oudebrugsteeg 9, 1012 JN"
-  city: "Amsterdam"
-  country: "Netherlands"
-  link: "http://bitcoinference.com/"
-  
 - date: 2015-06-10
   title: "Advapay Events"
   venue: ""
@@ -21,6 +5,14 @@
   city: "Moscow"
   country: "Russia"
   link: "http://www.advapay.eu/"
+
+- date: 2015-06-20
+  title: "Bitcoin Development Workshop 2015"
+  venue: "De War"
+  address: "Kleine Koppel 40, 3812 PH"
+  city: "Amersfoort"
+  country: "Netherlands"
+  link: "http://bitcoinmeetup.nl/2015/06-20.html"
 
 - date: 2015-07-10
   title: "Inside Bitcoins Chicago"
