@@ -457,6 +457,9 @@ peers using one of the following methods:
    bloom filter in a `merkleblock` message followed by zero or more
    `tx` messages.
 
+By default, Bitcoin Core broadcasts blocks using standard block relay,
+but it will accept blocks sent using either of the methods described above.
+
 Full nodes validate the received block and then advertise it to their
 peers using the standard block relay method described above.  The condensed
 table below highlights the operation of the messages described above
