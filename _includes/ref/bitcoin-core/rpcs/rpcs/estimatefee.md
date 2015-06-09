@@ -17,17 +17,23 @@ The `estimatefee` RPC {{summary_estimateFee}}
 
 *Parameter #1---how many blocks the transaction may wait before being included*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Blocks             | number (int)    | Required<br>(exactly 1)     | The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Blocks"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block"
+
+{% enditemplate %}
 
 *Result---the fee the transaction needs to pay per kilobyte*
 
-| Name               | Type              | Presence                    | Description
-|--------------------|-------------------|-----------------------------|----------------
-| `result`           | number (bitcoins) | Required<br>(exactly 1)     | The estimated fee the transaction should pay in order to be included within the specified number of blocks.  If the node doesn't have enough information to make an estimate, the value `-1` will be returned
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "number (bitcoins)"
+  p: "Required<br>(exactly 1)"
+  d: "The estimated fee the transaction should pay in order to be included within the specified number of blocks.  If the node doesn't have enough information to make an estimate, the value `-1` will be returned"
+
+{% enditemplate %}
 
 *Examples from Bitcoin Core 0.10.0*
 

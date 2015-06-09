@@ -17,39 +17,61 @@ The `setgenerate` RPC {{summary_setGenerate}}
 
 *Parameter #1---whether to enable or disable generation*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Enable/Disable     | bool            | Required<br>(exactly 1)     | Set to `true` to enable generation; set to `false` to disable generation
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Enable/Disable"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "Set to `true` to enable generation; set to `false` to disable generation"
+
+{% enditemplate %}
 
 *Parameter #2 (regular)---the number of processors to use*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Processors         | number (int)    | Optional<br>(0 or 1)        | The number of processors to use.  Defaults to `1`.  Set to `-1` to use all processors
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Processors"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "The number of processors to use.  Defaults to `1`.  Set to `-1` to use all processors"
+
+{% enditemplate %}
 
 *Parameter #2 (regtest)---the number of blocks to generate*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Blocks             | number (int)    | Optional<br>(0 or 1)        | In regtest mode, set to the number of blocks to generate.  Defaults to `1`
-{:.ntpd}
+Note: setgenerate in regtest mode has been removed in Bitcoin Core
+master. See the `generate` RPC for the replacement.
+
+{% itemplate ntpd1 %}
+- n: "Blocks"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "In regtest mode, set to the number of blocks to generate.  Defaults to `1`"
+
+{% enditemplate %}
 
 *Result (regular)---generating is enabled*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | null            | Required<br>(exactly 1)     | Always JSON `null`
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "null"
+  p: "Required<br>(exactly 1)"
+  d: "Always JSON `null`"
+
+{% enditemplate %}
 
 *Result (regtest)---the generated block header hashes*
 
-| Name                | Type            | Presence                    | Description
-|---------------------|-----------------|-----------------------------|----------------
-| `result`            | array/null      | Required<br>(exactly 1)     | An array containing the block header hashes of the generated blocks, or JSON `null` if no blocks were generated
-| →<br>Header Hashes  | string (hex)    | Required<br>(1 or more)     | The hashes of the headers of the blocks generated in regtest mode, as hex in RPC byte order
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "array/null"
+  p: "Required<br>(exactly 1)"
+  d: "An array containing the block header hashes of the generated blocks, or JSON `null` if no blocks were generated"
+
+- n: "→<br>Header Hashes"
+  t: "string (hex)"
+  p: "Required<br>(1 or more)"
+  d: "The hashes of the headers of the blocks generated in regtest mode, as hex in RPC byte order"
+
+{% enditemplate %}
 
 *Examples from Bitcoin Core 0.10.0*
 

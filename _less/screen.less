@@ -289,7 +289,8 @@ table td,table th{
 	border-radius:5px;
 }
 .menusimple li:first-child,
-.menusimple li:first-child+li{
+.menusimple li:first-child+li,
+.menusimple li:first-child+li+li+li{
 	-webkit-border-bottom-left-radius:0;
 	-webkit-border-bottom-right-radius:0;
 	-moz-border-radius-bottomleft:0;
@@ -351,7 +352,7 @@ table td,table th{
 .menusimple li ul li.active a{
 	color:#fff;
 }
-	
+
 .content{
 	position:relative;
 	padding:30px 40px 40px 40px;
@@ -534,7 +535,7 @@ table td,table th{
 .starttitle{
 	text-align:center;
 }
-.starttitle a{
+.starttitle span{
 	padding:10px;
 	border-bottom:1px solid #E2E2E2;
 	font-size:155%;
@@ -603,6 +604,9 @@ table td,table th{
 	position:absolute;
 	bottom:35px;
 }
+.starttitle a{
+	margin:0 20px auto;
+}
 
 .introlink{
 	text-align:center;
@@ -661,9 +665,9 @@ table td,table th{
 }
 .docreference a{
 	display:inline-block;
-	margin:0 0 40px 0;
+	margin:20px 0 40px 0;
 	font-size:125%;
-	width:210px;
+	width:150px;
 }
 .docreference img{
 	display:block;
@@ -804,8 +808,6 @@ table td,table th{
 }
 .toccontent .subhead-links{
 	visibility: hidden;
-	font-size: 85%;
-	height: 18px;
 	padding-top: 7px;
 }
 .toccontent:hover .subhead-links{
@@ -905,6 +907,54 @@ table td,table th{
 .develdocdisclaimerclose:active:hover{
 	border:2px solid #ee9209;
 	color:#fff;
+}
+.glossary_term {
+	display: block;
+	width: 20em;
+	padding: 5px 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.ui-autocomplete-category {
+	font-weight: bold;
+	padding: .2em .4em;
+	margin: .8em 0 .2em;
+	line-height: 1.5;
+}
+ul.wrapped_list li {
+	list-style: none;
+	float: left;
+	width: 15em;
+	margin: 1em;
+}
+br.clear {
+	clear: left;
+}
+.notice {
+    text-align: center;
+}
+.notice span {
+    font-style: italic;
+}
+.subhead-links {
+	font-size: 85%;
+	height: 18px;
+}
+
+div.post {
+        max-width: 40em;
+        margin-right: auto;
+        margin-left: auto;
+}
+.post img {
+        max-width: 100%;
+}
+.post-meta {
+        margin-top: 20px;
+        font-style: italic;
+}
+.post-title {
+        padding-top: 20px;
 }
 
 .highlight  { background: #ffffff; }
@@ -1095,6 +1145,7 @@ table td,table th{
 .resources .resourcesext{
 	margin-top:5px;
 	min-height:0;
+	display: inline-block;
 }
 .resources .resourcesext p{
 	padding-left:24px;
@@ -1809,13 +1860,33 @@ h2 .rssicon{
 .downloadbox div div{
 	display:block;
 	width:190px;
+	height:46px;
 	margin:25px 0;
 	text-align:left;
+}
+.downloadbox div div span{
+	display:inline-block;
+	margin-left:6px;
+}
+.downloadbox div div span span{
+	display:block;
+	margin:6px 0 0 0;
+	font-size:80%;
 }
 .downloadbox img{
 	width:32px;
 	height:32px;
-	vertical-align:middle;
+	vertical-align:top;
+	position:relative;
+	top:4px;
+}
+.downloadbox .magnetlink{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	position:relative;
+	bottom:-1px;
+	background:url(/img/icons/mini_ico_magnet.svg) no-repeat;
 }
 
 .eventmap{
@@ -1871,6 +1942,9 @@ h2 .rssicon{
 	background-image:none;
 	color:#fff;
 }
+.eventdata{
+	display:none;
+}
 
 .detectmobile{
 	width:0;
@@ -1890,7 +1964,7 @@ h2 .rssicon{
 .press h2{
 	font-size:150%;
 }
-	
+
 .press-volunteer{
 	text-align:left;
 	margin-bottom:40px;
@@ -2162,6 +2236,9 @@ h2 .rssicon{
 	.docreference a{
 		display:block;
 		margin:0 auto 40px auto;
+	}
+	.glossary_term {
+		width: 80%;
 	}
 	.toc{
 		position:static;
@@ -2461,7 +2538,7 @@ h2 .rssicon{
 		text-align:left;
 	}
 	.downloadbox div div{
-		margin:10px 0;
+		margin:15px 0;
 		width:auto;
 	}
 	.downloadbox div{

@@ -1,86 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="42"
-   height="100"
-   id="svg3066"
-   version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="wallet_menu_hardware.svg"
-   inkscape:export-filename="/media/X/bitcoin.org/current/img/wallet_menu_hardware.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
-  <defs
-     id="defs3068" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1.9795104"
-     inkscape:cx="195.96452"
-     inkscape:cy="39.157284"
-     inkscape:current-layer="layer1"
-     showgrid="true"
-     inkscape:grid-bbox="true"
-     inkscape:document-units="px"
-     inkscape:window-width="1615"
-     inkscape:window-height="1026"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata3071">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     id="layer1"
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     transform="translate(0,68)">
-    <rect
-       style="opacity:0.98999999;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.11129045;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="rect3968"
-       width="18.383144"
-       height="12.726792"
-       x="11.391645"
-       y="-54.241436" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:3.87069917;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 26.157753,-52.333153 c 0,0 0.89133,-6.366287 -0.864098,-8.687227 -1.035501,-1.369088 -3.078221,-1.980169 -4.792187,-1.885449 -1.726106,0.09597 -3.840576,0.328223 -5.027875,2.592491 -1.042106,1.987357 -0.946018,7.911388 -0.946018,7.911388 z"
-       id="path3970"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="casscc" />
-    <rect
-       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2.11129045;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="rect3968-8"
-       width="18.383144"
-       height="12.726792"
-       x="11.392049"
-       y="13.758562" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:3.87069917;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 26.158167,15.666849 c 0,0 0.89133,-6.3662883 -0.86409,-8.6872273 -1.03551,-1.369088 -3.07823,-1.98017 -4.79219,-1.88545 -1.72611,0.09597 -3.84058,0.328223 -5.02788,2.592492 -1.0421,1.987356 -0.94601,7.9113883 -0.94601,7.9113883 z"
-       id="path3970-9"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="casscc" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="100">
+  <g transform="translate(0 68)">
+    <rect width="18.383" height="12.727" x="11.392" y="-54.241" opacity=".99" stroke="#000" stroke-width="2.111" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M26.158-52.333s.891-6.366-.864-8.687c-1.036-1.369-3.078-1.98-4.792-1.885-1.726.096-3.841.328-5.028 2.592-1.042 1.987-.946 7.911-.946 7.911z" stroke="#000" stroke-width="3.871" fill="none"/>
+    <rect width="18.383" height="12.727" x="11.392" y="13.759" opacity=".99" fill="#fff" stroke="#fff" stroke-width="2.111" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M26.158 15.667s.891-6.366-.864-8.687c-1.036-1.369-3.078-1.98-4.792-1.885-1.726.096-3.841.328-5.028 2.592-1.042 1.987-.946 7.911-.946 7.911z" stroke="#fff" stroke-width="3.871" fill="none"/>
   </g>
 </svg>

@@ -1,0 +1,34 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Extended Key, HD Wallet Extended Key
+
+    summary_max_255_characters_no_formatting: >
+        In the context of HD wallets, a public key or private key
+        extended with the chain code to allow them to derive child keys.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Extended key
+        - Public extended key
+        - Private extended key
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - extended keys
+        - public extended keys
+        - private extended keys
+        - public and private extended key
+        - public and private extended keys
+        - private and public extended key
+        - private and public extended keys
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Extended key](/en/developer-guide#term-extended-key) --- Bitcoin.org Developer Guide"
+        - "[BIP32: hierarchical deterministic wallets](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) --- Bitcoin Improvement Proposals"
+
+---

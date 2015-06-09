@@ -15,30 +15,88 @@ The `validateaddress` RPC {{summary_validateAddress}}
 
 *Parameter #1---a P2PKH or P2SH address*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Address            | string (base58) | Required<br>(exactly 1) | The P2PKH or P2SH address to validate encoded in base58check format
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Address"
+  t: "string (base58)"
+  p: "Required<br>(exactly 1)"
+  d: "The P2PKH or P2SH address to validate encoded in base58check format"
+
+{% enditemplate %}
 
 *Result---information about the address*
 
-| Name                | Type            | Presence                    | Description
-|---------------------|-----------------|-----------------------------|----------------
-| `result`            | object          | Required<br>(exactly 1)     | Information about the address
-| →<br>`isvalid`      | bool            | Required<br>(exactly 1)     | Set to `true` if the address is a valid P2PKH or P2SH address; set to `false` otherwise
-| →<br>`address`      | string (base58) | Optional<br>(0 or 1)   | If the address is valid, this is the address <!--TODO: figure out in what cases this might be different from the address provided in the parameter -->
-| →<br>`ismine`       | bool            | Optional<br>(0 or 1)        | Set to `true` if the address belongs to the wallet; set to false if it does not.  Only returned if wallet support enabled
-| →<br>`iswatchonly`  | bool            | Optional<br>(0 or 1)        | Set to `true` if the address is watch-only.  Otherwise set to `false`.  Only returned if address is in the wallet
-| →<br>`isscript`     | bool            | Optional<br>(0 or 1)        | Set to `true` if a P2SH address; otherwise set to `false`.  Only returned if the address is in the wallet
-| →<br>`script`       | string          | Optional<br>(0 or 1)        | Only returned for P2SH addresses belonging to this wallet. This is the type of script:<br>• `pubkey` for a P2PK script inside P2SH<br>• `pubkeyhash` for a P2PKH script inside P2SH<br>• `multisig` for a multisig script inside P2SH<br>• `nonstandard` for unknown scripts
-| →<br>`hex`          | string (hex)    | Optional<br>(0 or 1)        | Only returned for P2SH addresses belonging to this wallet.  This is the redeem script encoded as hex
-| →<br>`addresses`    | array           | Optional<br>(0 or 1)        | Only returned for P2SH addresses belonging to the wallet.  A P2PKH addresses used in this script, or the computed P2PKH addresses of any pubkeys in this script.  This array will be empty for `nonstandard` script types
-| → →<br>Address      | string          | Optional<br>(0 or more)     | A P2PKH address
-| →<br>`sigrequired`  | number (int)    | Optional<br>(0 or 1)        | Only returned for multisig P2SH addresses belonging to the wallet.  The number of signatures required by this script
-| →<br>`pubkey`       | string (hex)    | Optional<br>(0 or 1)        | The public key corresponding to this address.  Only returned if the address is a P2PKH address in the wallet
-| →<br>`iscompressed` | bool            | Optional<br>(0 or 1)        | Set to `true` if a compressed public key or set to `false` if an uncompressed public key.  Only returned if the address is a P2PKH address in the wallet
-| →<br>`account`      | string          | Optional<br>(0 or 1)        | The account this address belong to.  May be an empty string for the default account.  Only returned if the address belongs to the wallet
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "object"
+  p: "Required<br>(exactly 1)"
+  d: "Information about the address"
+
+- n: "→<br>`isvalid`"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "Set to `true` if the address is a valid P2PKH or P2SH address; set to `false` otherwise"
+
+- n: "→<br>`address`"
+  t: "string (base58)"
+  p: "Optional<br>(0 or 1)"
+  d: "If the address is valid, this is the address <!--TODO: figure out in what cases this might be different from the address provided in the parameter -->"
+
+- n: "→<br>`ismine`"
+  t: "bool"
+  p: "Optional<br>(0 or 1)"
+  d: "Set to `true` if the address belongs to the wallet; set to false if it does not.  Only returned if wallet support enabled"
+
+- n: "→<br>`iswatchonly`"
+  t: "bool"
+  p: "Optional<br>(0 or 1)"
+  d: "Set to `true` if the address is watch-only.  Otherwise set to `false`.  Only returned if address is in the wallet"
+
+- n: "→<br>`isscript`"
+  t: "bool"
+  p: "Optional<br>(0 or 1)"
+  d: "Set to `true` if a P2SH address; otherwise set to `false`.  Only returned if the address is in the wallet"
+
+- n: "→<br>`script`"
+  t: "string"
+  p: "Optional<br>(0 or 1)"
+  d: "Only returned for P2SH addresses belonging to this wallet. This is the type of script:<br>• `pubkey` for a P2PK script inside P2SH<br>• `pubkeyhash` for a P2PKH script inside P2SH<br>• `multisig` for a multisig script inside P2SH<br>• `nonstandard` for unknown scripts"
+
+- n: "→<br>`hex`"
+  t: "string (hex)"
+  p: "Optional<br>(0 or 1)"
+  d: "Only returned for P2SH addresses belonging to this wallet.  This is the redeem script encoded as hex"
+
+- n: "→<br>`addresses`"
+  t: "array"
+  p: "Optional<br>(0 or 1)"
+  d: "Only returned for P2SH addresses belonging to the wallet.  A P2PKH addresses used in this script, or the computed P2PKH addresses of any pubkeys in this script.  This array will be empty for `nonstandard` script types"
+
+- n: "→ →<br>Address"
+  t: "string"
+  p: "Optional<br>(0 or more)"
+  d: "A P2PKH address"
+
+- n: "→<br>`sigrequired`"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "Only returned for multisig P2SH addresses belonging to the wallet.  The number of signatures required by this script"
+
+- n: "→<br>`pubkey`"
+  t: "string (hex)"
+  p: "Optional<br>(0 or 1)"
+  d: "The public key corresponding to this address.  Only returned if the address is a P2PKH address in the wallet"
+
+- n: "→<br>`iscompressed`"
+  t: "bool"
+  p: "Optional<br>(0 or 1)"
+  d: "Set to `true` if a compressed public key or set to `false` if an uncompressed public key.  Only returned if the address is a P2PKH address in the wallet"
+
+- n: "→<br>`account`"
+  t: "string"
+  p: "Optional<br>(0 or 1)"
+  d: "The account this address belong to.  May be an empty string for the default account.  Only returned if the address belongs to the wallet"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

@@ -15,46 +15,118 @@ The `getblock` RPC {{summary_getBlock}}
 
 *Parameter #1---header hash*
 
-| Name             | Type         | Presence                    | Description
-|------------------|--------------|-----------------------------|----------------
-| Header Hash      | string (hex) | Required<br>(exactly 1)     | The hash of the header of the block to get, encoded as hex in RPC byte order
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Header Hash"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The hash of the header of the block to get, encoded as hex in RPC byte order"
+
+{% enditemplate %}
 
 *Parameter #2---JSON or hex output*
 
-| Name             | Type         | Presence                    | Description
-|------------------|--------------|-----------------------------|----------------
-| Format           | bool         | Optional<br>(0 or 1)        | Set to `false` to get the block in serialized block format; set to `true` (the default) to get the decoded block as a JSON object
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Format"
+  t: "bool"
+  p: "Optional<br>(0 or 1)"
+  d: "Set to `false` to get the block in serialized block format; set to `true` (the default) to get the decoded block as a JSON object"
+
+{% enditemplate %}
 
 *Result (if format was `false`)---a serialized block*
 
-| Name             | Type              | Presence                    | Description
-|------------------|-------------------|-----------------------------|----------------
-| `result`         | string (hex)/null | Required<br>(exactly 1)     | The requested block as a serialized block, encoded as hex, or JSON `null` if an error occurred
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "string (hex)/null"
+  p: "Required<br>(exactly 1)"
+  d: "The requested block as a serialized block, encoded as hex, or JSON `null` if an error occurred"
+
+{% enditemplate %}
 
 *Result (if format was `true` or omitted)---a JSON block*
 
-| Name                       | Type            | Presence                    | Description
-|----------------------------|-------------------|---------------------------|----------------
-| `result`                   | object/null       | Required<br>(exactly 1)   | An object containing the requested block, or JSON `null` if an error occurred
-| →<br>`hash`              | string (hex)      | Required<br>(exactly 1)     | The hash of this block's block header encoded as hex in RPC byte order.  This is the same as the hash provided in parameter #1
-| →<br>`confirmations`     | number (int)      | Required<br>(exactly 1)     | The number of confirmations the transactions in this block have, starting at 1 when this block is at the tip of the best block chain.  This score will be -1 if the the block is not part of the best block chain
-| →<br>`size`              | number (int)      | Required<br>(exactly 1)     | The size of this block in serialized block format, counted in bytes
-| →<br>`height`            | number (int)      | Required<br>(exactly 1)     | The height of this block on its block chain
-| →<br>`version`           | number (int)      | Required<br>(exactly 1)     | This block's version number.  See [block version numbers][section block versions]
-| →<br>`merkleroot`        | string (hex)      | Required<br>(exactly 1)     | The merkle root for this block, encoded as hex in RPC byte order
-| →<br>`tx`                | array             | Required<br>(exactly 1)     | An array containing the TXIDs of all transactions in this block.  The transactions appear in the array in the same order they appear in the serialized block
-| → →<br>TXID              | string (hex)      | Required<br>(1 or more)     | The TXID of a transaction in this block, encoded as hex in RPC byte order
-| →<br>`time`              | number (int)      | Required<br>(exactly 1)     | The value of the *time* field in the block header, indicating approximately when the block was created
-| →<br>`nonce`             | number (int)      | Required<br>(exactly 1)     | The nonce which was successful at turning this particular block into one that could be added to the best block chain
-| →<br>`bits`              | string (hex)      | Required<br>(exactly 1)     | The value of the *nBits* field in the block header, indicating the target threshold this block's header had to pass
-| →<br>`difficulty`        | number (real)     | Required<br>(exactly 1)     | The estimated amount of work done to find this block relative to the estimated amount of work done to find block 0
-| →<br>`chainwork`         | string (hex)      | Required<br>(exactly 1)     | The estimated number of block header hashes miners had to check from the genesis block to this block, encoded as big-endian hex
-| →<br>`previousblockhash` | string (hex)      | Required<br>(exactly 1)     | The hash of the header of the previous block, encoded as hex in RPC byte order
-| →<br>`nextblockhash`     | string (hex)      | Optional<br>(0 or 1)        | The hash of the next block on the best block chain, if known, encoded as hex in RPC byte order
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "object/null"
+  p: "Required<br>(exactly 1)"
+  d: "An object containing the requested block, or JSON `null` if an error occurred"
+
+- n: "→<br>`hash`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The hash of this block's block header encoded as hex in RPC byte order.  This is the same as the hash provided in parameter #1"
+
+- n: "→<br>`confirmations`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The number of confirmations the transactions in this block have, starting at 1 when this block is at the tip of the best block chain.  This score will be -1 if the the block is not part of the best block chain"
+
+- n: "→<br>`size`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The size of this block in serialized block format, counted in bytes"
+
+- n: "→<br>`height`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The height of this block on its block chain"
+
+- n: "→<br>`version`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "This block's version number.  See [block version numbers][section block versions]"
+
+- n: "→<br>`merkleroot`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The merkle root for this block, encoded as hex in RPC byte order"
+
+- n: "→<br>`tx`"
+  t: "array"
+  p: "Required<br>(exactly 1)"
+  d: "An array containing the TXIDs of all transactions in this block.  The transactions appear in the array in the same order they appear in the serialized block"
+
+- n: "→ →<br>TXID"
+  t: "string (hex)"
+  p: "Required<br>(1 or more)"
+  d: "The TXID of a transaction in this block, encoded as hex in RPC byte order"
+
+- n: "→<br>`time`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The value of the *time* field in the block header, indicating approximately when the block was created"
+
+- n: "→<br>`nonce`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The nonce which was successful at turning this particular block into one that could be added to the best block chain"
+
+- n: "→<br>`bits`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The value of the *nBits* field in the block header, indicating the target threshold this block's header had to pass"
+
+- n: "→<br>`difficulty`"
+  t: "number (real)"
+  p: "Required<br>(exactly 1)"
+  d: "The estimated amount of work done to find this block relative to the estimated amount of work done to find block 0"
+
+- n: "→<br>`chainwork`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The estimated number of block header hashes miners had to check from the genesis block to this block, encoded as big-endian hex"
+
+- n: "→<br>`previousblockhash`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The hash of the header of the previous block, encoded as hex in RPC byte order"
+
+- n: "→<br>`nextblockhash`"
+  t: "string (hex)"
+  p: "Optional<br>(0 or 1)"
+  d: "The hash of the next block on the best block chain, if known, encoded as hex in RPC byte order"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

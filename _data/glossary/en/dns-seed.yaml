@@ -1,0 +1,28 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: DNS Seed
+
+    summary_max_255_characters_no_formatting: >
+        A DNS server which returns IP addresses of full nodes on the
+        Bitcoin network to assist in peer discovery.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - DNS seed
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - DNS seeds
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - HD wallet seeds
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[DNS seed](/en/developer-guide#term-dns-seed) --- Bitcoin.org Developer Guide"
+        - "[DNS seeds](https://en.bitcoin.it/wiki/Satoshi_Client_Node_Discovery#DNS_Addresses) --- Bitcoin Wiki"
+        - "[What is a DNS seed versus a seed node?](http://bitcoin.stackexchange.com/q/14371) --- Bitcoin StackExchange"
+
+---

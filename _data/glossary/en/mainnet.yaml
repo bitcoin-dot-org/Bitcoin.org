@@ -1,0 +1,26 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Mainnet, Bitcoin Main Network
+
+    summary_max_255_characters_no_formatting: >
+        The original and main network for Bitcoin transactions, where
+        satoshis have real economic value.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Mainnet
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Testnet (an open network very similar to mainnet where satoshis have no value)
+        - Regtest (a private testing node similar to testnet)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Mainnet](/en/developer-examples#term-mainnet) --- Bitcoin.org Developer Examples"
+
+---

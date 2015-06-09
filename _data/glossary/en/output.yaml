@@ -1,0 +1,32 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Output, Transaction Output, TxOut
+
+    summary_max_255_characters_no_formatting: >
+        An output in a transaction which contains two fields: a value
+        field for transferring zero or more satoshis and a pubkey script
+        for indicating what conditions must be fulfilled for those
+        satoshis to be further spent.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Output
+        - TxOut
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - outputs
+        - txouts
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Outpoint (a reference to a particular output)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Output](/en/developer-guide#term-output) --- Bitcoin.org Developer Guide"
+        - "[TxOut](/en/developer-reference#txout) --- Bitcoin.org Developer Reference"
+        - "[Output](https://en.bitcoin.it/wiki/Transaction#Output) --- Bitcoin Wiki"
+
+---

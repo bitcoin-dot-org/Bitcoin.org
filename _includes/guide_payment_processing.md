@@ -155,9 +155,9 @@ You must pay by: 2014-04-01 at 23:00 UTC
 
 {% autocrossref %}
 
-Indicating the [denomination][]{:#term-denomination}{:.term} is critical. As of this writing, popular
-Bitcoin wallet software defaults to denominating amounts in either [bitcoins][]{:#term-bitcoins}{:.term} (BTC)
-, [millibitcoins][]{:#term-millibitcoins}{:.term} (mBTC) or microbitcoins (uBTC, "[bits][]{:#term-bits}{:.term}"). Choosing between each unit is widely supported,
+Indicating the denomination is critical. As of this writing, popular
+Bitcoin wallet software defaults to denominating amounts in either bitcoins (BTC)
+, millibitcoins (mBTC) or microbitcoins (uBTC, "bits"). Choosing between each unit is widely supported,
 but other software also lets its users select denomination amounts from
 some or all of the following options:
 
@@ -167,7 +167,7 @@ some or all of the following options:
 | 0.01        | bitcent (cBTC)      |
 | 0.001       | millibitcoin (mBTC) |
 | 0.000001    | microbitcoin (uBTC, "bits") |
-| 0.00000001  | [satoshi][]{:#term-satoshi}{:.term}             |
+| 0.00000001  | satoshi             |
 
 {% endautocrossref %}
 
@@ -257,7 +257,7 @@ displayed on high-resolution screens.
 
 {% autocrossref %}
 
-Bitcoin Core 0.9 supports the new [payment protocol][]{:#term-payment-protocol}{:.term}. The payment protocol
+Bitcoin Core 0.9 supports the new [payment protocol][/en/glossary/payment-protocol]{:#term-payment-protocol}{:.term}. The payment protocol
 adds many important features to payment requests:
 
 - Supports X.509 certificates and SSL encryption to verify receivers' identity
@@ -423,7 +423,7 @@ for more details.
 
 {% autocrossref %}
 
-As explained in the [Transactions][] and [Block Chain][] sections, broadcasting
+As explained in the [Transactions][] and [Block Chain][section block chain] sections, broadcasting
 a transaction to the network doesn't ensure that the receiver gets
 paid. A malicious spender can create one transaction that pays the
 receiver and a second one that pays the same input back to himself. Only
@@ -431,20 +431,20 @@ one of these transactions will be added to the block chain, and nobody
 can say for sure which one it will be.
 
 Two or more transactions spending the same input are commonly referred
-to as a [double spend][]{:#term-double-spend}{:.term}.
+to as a [double spend][/en/glossary/double-spend]{:#term-double-spend}{:.term}.
 
 Once the transaction is included in a block, double spends are
 impossible without modifying block chain history to replace the
 transaction, which is quite difficult. Using this system,
 the Bitcoin protocol can give each of your transactions an updating confidence 
 score based on the number of blocks which would need to be modified to replace 
-a transaction. For each block, the transaction gains one [confirmation][]{:#term-confirmation}{:.term}. Since 
+a transaction. For each block, the transaction gains one [confirmation][/en/glossary/confirmation-score]{:#term-confirmation}{:.term}. Since
 modifying blocks is quite difficult, higher confirmation scores indicate 
 greater protection.
 
 **0 confirmations**: The transaction has been broadcast but is still not 
-included in any block. Zero confirmation transactions ([unconfirmed
-transactions][]{:#term-unconfirmed-transactions}{:.term}) should generally not be 
+included in any block. Zero confirmation transactions (unconfirmed
+transactions) should generally not be
 trusted without risk analysis. Although miners usually confirm the first 
 transaction they receive, fraudsters may be able to manipulate the
 network into including their version of a transaction.

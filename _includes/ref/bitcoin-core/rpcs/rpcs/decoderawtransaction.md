@@ -15,18 +15,24 @@ The `decoderawtransaction` RPC {{summary_decodeRawTransaction}}
 
 *Parameter #1---serialized transaction in hex*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Serialized Transaction | string (hex) | Required<br>(exactly 1)    | The transaction to decode in serialized transaction format
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Serialized Transaction"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The transaction to decode in serialized transaction format"
+
+{% enditemplate %}
 
 *Result---the decoded transaction*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | object          | Required<br>(exactly 1)     | An object describing the decoded transaction, or JSON `null` if the transaction could not be decoded
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "object"
+  p: "Required<br>(exactly 1)"
+  d: "An object describing the decoded transaction, or JSON `null` if the transaction could not be decoded"
+
 {{INCLUDE_DECODE_RAW_TRANSACTION}}
-{:.ntpd}
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

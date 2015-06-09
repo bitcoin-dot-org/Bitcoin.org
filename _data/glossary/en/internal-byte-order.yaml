@@ -1,0 +1,28 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Internal Byte Order
+
+    summary_max_255_characters_no_formatting: >
+        The standard order in which hash digests are displayed as
+        strings---the same format used in serialized blocks and
+        transactions.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Internal byte order
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Internal hash byte order
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - RPC byte order (where the byte order is reversed)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Internal byte order](/en/developer-reference#hash-byte-order) --- Bitcoin.org Developer Reference"
+        - "[Block hashing algorithm ('endian conversion')](https://en.bitcoin.it/wiki/Block_hashing_algorithm) --- Bitcoin Wiki"
+
+---

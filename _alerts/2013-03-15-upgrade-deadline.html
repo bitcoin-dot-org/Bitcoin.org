@@ -4,7 +4,7 @@ alias: "may15"
 active: false
 banner: ""
 ---
-        <h2>What is happening</h2>
+        <h2 id="what-is-happening">What is happening</h2>
 <p>
 If you are using an old version of Bitcoin-Qt (or bitcoind, the server bitcoin software),
 you must either upgrade to version 0.8.0 or later before May 15, 2013,
@@ -44,7 +44,7 @@ set_lk_max_locks 537000
 <a href="https://en.bitcoin.it/wiki/Data_directory">Look here</a> if you need help
 finding the bitcoin data directory.
 </p>
-        <h2>Miners/mining pool operators</h2>
+        <h2 id="miners">Miners/mining pool operators</h2>
 <p>
 If you are creating new blocks (you are a solo miner or mining pool operator), then
 you should be aware that upgrading from 0.7 to 0.8 requires a lengthy
@@ -58,9 +58,9 @@ reason, you should <b>not</b> set_lk_max_locks in a DB_CONFIG file until
 May 15th; if you increase locks before then you run the risk of creating
 or building on blocks incompatible with the rest of the network.
 </p>
-        <h2>Why this is necessary</h2>
+        <h2 id="why-necessary">Why this is necessary</h2>
 <p>
-A bug caused a <a href="/chainfork.html">temporary block chain fork on 11 March, 2013</a>.
+A bug caused a <a href="/chainfork">temporary block chain fork on 11 March, 2013</a>.
 After investigating
 that bug, we determined that the bug can happen even if the entire network was
 still running old versions of Bitcoin-Qt/bitcoind. Therefore, the only option is to

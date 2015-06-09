@@ -26,7 +26,7 @@ dialogs:
   quotetimothylee: "Bitcoin allows wealth to be reduced to pure information and transmitted costlessly around the world—something nobody knew how to do before 2009. Its applications won’t be immediately obvious, especially to ordinary users."
   quoteandyskelton: "PayPal alone blocks access from over 60 countries ... Whatever the reason, we don’t think an individual blogger from Haiti, Ethiopia, or Kenya should have diminished access to the blogosphere because of payment issues they can’t control."
   quotetuurdemeester: "The Babyboomers gave us the personal computer, Generation X gave us the Internet, and now Generation Y is building a new financial paradigm."
-  quoterichardbrown: "Had you asked me five years ago, I would just say it was impossible. Bitcoin and crypto currencies solved this problem of coming to a consensus globally where you don't trust anybody else."
+  quoterichardbrown: "Had you asked me five years ago, I would just say it was impossible. Bitcoin and cryptocurrencies solved this problem of coming to a consensus globally where you don't trust anybody else."
   quotefredwilson: "We believe that Bitcoin represents something fundamental and powerful ... It reminds us of SMTP, HTTP, RSS, and BitTorrent in its architecture and openness."
   quotejohndonohoe: "Digital currency is going to be a very powerful thing."
   quotefrancoisrvelde: "It represents a remarkable conceptual and technical achievement, which may well be used by existing financial institutions (which could issue their own bitcoins) or even by governments themselves."
@@ -36,7 +36,7 @@ dialogs:
 <h1>{% translate pagetitle %}</h1>
 <p class="summary">{% translate summary %}</p>
 
-<h2>{% translate volunteer %}</h2>
+<h2 id="volunteer">{% translate volunteer %}</h2>
 
 <div class="press-volunteer">
 
@@ -50,7 +50,7 @@ dialogs:
 
 </div>
 
-<h2>{% translate menu-faq layout %}</h2>
+<h2 id="layout">{% translate menu-faq layout %}</h2>
 
 <div class="press-faq">
 
@@ -213,17 +213,17 @@ dialogs:
 
 <div class="press-videos">
 
-<h2>{{ page.dialogs.materialvideo }}</h2>
+<h2 id="videos">{{ page.dialogs.materialvideo }}</h2>
 
 <div>
 <a href="https://www.youtube.com/watch?v=LP4GSvQUtBw&amp;feature=player_embedded" target="_blank"><img src="/img/press/video/funke.jpg" alt="what is Bitcoin"></a><br>
-<a>What is Bitcoin - Funke</a><br>
+What is Bitcoin - Funke<br>
 <a href="https://www.youtube.com/watch?v=LP4GSvQUtBw&amp;feature=player_embedded" target="_blank">{{ page.dialogs.materialvideoyoutube }}</a><br>
-<a href="https://drive.google.com/folderview?id=0Bw3qRtSO3Wwtb3dYLVNDTmNxSTQ&usp=sharing" target="_blank">{{ page.dialogs.materialvideoformat }}</a>
+<a href="https://drive.google.com/folderview?id=0Bw3qRtSO3Wwtb3dYLVNDTmNxSTQ&amp;usp=sharing" target="_blank">{{ page.dialogs.materialvideoformat }}</a>
 </div>
 <div>
 <a href="https://www.youtube.com/watch?v=Um63OQz3bjo&amp;feature=player_embedded" target="_blank"><img src="/img/press/video/whatisbitcoin.jpg" alt="what is Bitcoin"></a><br>
-<a>What is Bitcoin - Weusecoins</a><br>
+What is Bitcoin - Weusecoins<br>
 <a href="https://www.youtube.com/watch?v=Um63OQz3bjo&amp;feature=player_embedded" target="_blank">{{ page.dialogs.materialvideoyoutube }}</a><br>
 <a href="https://www.weusecoins.com/en/materials" target="_blank">{{ page.dialogs.materialvideoformat }}</a>
 </div>
@@ -234,7 +234,7 @@ dialogs:
 
 <div class="press-pictures">
 
-<h2>{% translate materialpicture %}</h2>
+<h2 id="pictures">{% translate materialpicture %}</h2>
 <div>
 <a href="https://docs.google.com/uc?export=view&amp;id=0B4t9VJLm_PWhckxzRm5vS2ZtOWM" target="_blank"><img src="/img/press/picture/bitcoin_kiez.jpg" alt="Bitcoin Kiez sign"></a>
 <a href="https://docs.google.com/uc?export=view&amp;id=0BwnE6HIoU4a4bUswMm5UWS1XakU" target="_blank"><img src="/img/press/picture/bitcoin_logo_plain.png" alt="Bitcoin logo"></a>
@@ -262,7 +262,7 @@ dialogs:
 
 <div class="press-quotes">
 
-<h2>{{ page.dialogs.materialquote }}</h2>
+<h2 id="quotes">{{ page.dialogs.materialquote }}</h2>
 <div>
 <p><span>{{ page.dialogs.quotechrisdixon }}</span><span>Chris Dixon, Technology Investor</span></p>
 <p><span>{{ page.dialogs.quotewencescasares }}</span><span>Wences Casares, Technology Entrepreneur</span></p>
@@ -281,7 +281,7 @@ dialogs:
 <p><span>{{ page.dialogs.quotefredwilson }}</span><span>Fred Wilson, Co-Founder of Union Square Ventures</span></p>
 <p><span>{{ page.dialogs.quotefrancoisrvelde }}</span><span>François R. Velde, Economist, Federal Reserve</span></p>
 <p><span>{{ page.dialogs.quotenavalravikant }}</span><span>Naval Ravikant, Founder of Angellist</span></p>
-<p><span>{{ page.dialogs.quotemaxkeiser }}</span><span>Max Keiser, Journalist & TV Host</span></p>
+<p><span>{{ page.dialogs.quotemaxkeiser }}</span><span>Max Keiser, Journalist &amp; TV Host</span></p>
 </div>
 <a href="#" onclick="materialShow(event);">{{ page.dialogs.materialquotemore }}</a>
 

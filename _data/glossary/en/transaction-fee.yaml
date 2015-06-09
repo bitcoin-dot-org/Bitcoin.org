@@ -1,0 +1,34 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Transaction Fee, Miner Fee
+
+    summary_max_255_characters_no_formatting: >
+        The amount remaining when the value of all outputs in a
+        transaction are subtracted from all inputs in a transaction;
+        the fee is paid to the miner who includes that transaction
+        in a block.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Transaction fee
+        - Miners fee
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - transaction fees
+        - miners fees
+        - tx fee
+        - tx fees
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Minimum relay fee (the lowest fee a transaction must pay to be accepted into the memory pool and relayed by Bitcoin Core nodes)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Transaction fee](/en/developer-guide#term-transaction-fee) --- Bitcoin.org Developer Guide"
+        - "[Transaction fees](https://en.bitcoin.it/wiki/Transaction_fees) --- Bitcoin Wiki"
+        - "[How to calculate transaction fees before sending?](http://bitcoin.stackexchange.com/q/1195) --- Bitcoin StackExchange"
+
+---

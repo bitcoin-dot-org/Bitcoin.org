@@ -18,24 +18,33 @@ The `signmessage` RPC {{summary_signMessage}}
 
 *Parameter #1---the address corresponding to the private key to sign with*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| Address            | string (base58) | Required<br>(exactly 1)     | A P2PKH address whose private key belongs to this wallet
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Address"
+  t: "string (base58)"
+  p: "Required<br>(exactly 1)"
+  d: "A P2PKH address whose private key belongs to this wallet"
+
+{% enditemplate %}
 
 *Parameter #2---the message to sign*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| Message            | string          | Required<br>(exactly 1)     | The message to sign
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Message"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The message to sign"
+
+{% enditemplate %}
 
 *Result---the message signature*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| `result`           | string (base64) | Required<br>(exactly 1)     | The signature of the message, encoded in base64.  Note that Bitcoin Core before 0.10.0 creates signatures with random *k* values, so each time you sign the same message, it will create a different signature
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "string (base64)"
+  p: "Required<br>(exactly 1)"
+  d: "The signature of the message, encoded in base64.  Note that Bitcoin Core before 0.10.0 creates signatures with random *k* values, so each time you sign the same message, it will create a different signature"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

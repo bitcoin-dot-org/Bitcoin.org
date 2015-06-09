@@ -1,0 +1,35 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Redeem Script, RedeemScript
+
+    summary_max_255_characters_no_formatting: >
+        A script similar in function to a pubkey script. One copy of it
+        is hashed to create a P2SH address (used in an actual pubkey
+        script) and another copy is placed in the spending signature
+        script to enforce its conditions.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Redeem script
+        - RedeemScript
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - redeem scripts
+        - redeemscripts
+        - script hash
+        - script hashes
+        - redeem script hash
+        - redeem script hashes
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Signature script (a script that provides data to the pubkey script, which includes the redeem script in a P2SH input)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Redeem script](/en/developer-guide#term-redeem-script) --- Bitcoin.org Developer Guide"
+        - "[BIP16: pay to script hash](https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki) --- Bitcoin Improvement Proposals"
+
+---

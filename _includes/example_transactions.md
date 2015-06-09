@@ -22,7 +22,7 @@ of data to create transactions with the same attributes as those
 described below.
 
 In order to use this tutorial, you will need to setup [Bitcoin Core][core executable]
-and create a [regression test mode][] environment with 50 BTC in your test
+and create a regression test mode environment with 50 BTC in your test
 wallet.
 
 {% endautocrossref %}
@@ -115,7 +115,11 @@ someone else, that second transaction would not be displayed in our
 list of UTXOs.
 
 {% highlight bash %}
+## Bitcoin Core 0.10.1 and earlier
 > bitcoin-cli -regtest setgenerate true 1
+
+## Later versions of Bitcoin Core
+> bitcoin-cli -regtest generate 1
 
 > unset NEW_ADDRESS
 {% endhighlight %}
@@ -332,7 +336,11 @@ would usually then broadcast it to other peers, but we're not currently
 connected to other peers because we started in regtest mode.
 
 {% highlight bash %}
+## Bitcoin Core 0.10.1 and earlier
 > bitcoin-cli -regtest setgenerate true 1
+
+## Later versions of Bitcoin Core
+> bitcoin-cli -regtest generate 1
 
 > unset UTXO_TXID UTXO_VOUT NEW_ADDRESS RAW_TX SIGNED_RAW_TX
 {% endhighlight %}
@@ -915,7 +923,7 @@ way to reference the underlying full (unhashed) public keys it knows
 about, so we get the three new addresses above in order to use their
 public keys.
 
-[Recall from the Guide][address] that the hashed public keys used in addresses
+Recall from the Guide that the hashed public keys used in addresses
 obfuscate the full public key, so you cannot give an address to another
 person or device as part of creating a typical multisig output or P2SH multisig
 redeem script. You must give them a full public key.

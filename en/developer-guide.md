@@ -7,6 +7,7 @@ lang: en
 id: developer-guide
 title: "Developer Guide - Bitcoin"
 ---
+<link rel="stylesheet" href="/css/jquery-ui.min.css">
 
 # Bitcoin Developer Guide
 
@@ -31,6 +32,8 @@ of the following file. -->
 
 {% include fragment_reviews_needed.md %}
 
+<input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
+
 {% include guide_intro.md %}
 
 {% include guide_block_chain.md %}
@@ -50,8 +53,12 @@ of the following file. -->
 {% include guide_mining.md %}
 
 {% include references.md %}
+{{site.glossary_links}}
 
 </div>
 
 <script>updateToc();</script>
 <script>addAnchorLinks();</script>
+<script src="/js/jquery-1.11.2.min.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+<script src="/js/devsearch.js"></script>

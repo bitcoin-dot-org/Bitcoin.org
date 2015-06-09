@@ -1,0 +1,32 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Testnet, Testing Network
+
+    summary_max_255_characters_no_formatting: >
+        A global testing environment in which developers can obtain and
+        spend satoshis that have no real-world value on a network that
+        is very similar to the Bitcoin mainnet.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Testnet
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - testnets
+        - testnet mode
+        - testnet modes
+        - testing network
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Regtest (a local testing environment where developers can control block generation)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Testnet mode](/en/developer-examples#testnet) --- Bitcoin.org Developer Examples"
+        - "[Testnet](https://en.bitcoin.it/wiki/Testnet) --- Bitcoin Wiki"
+        - "[Get testnet bitcoins][Piotr Piasecki's testnet faucet] --- Testnet Faucet"
+
+---

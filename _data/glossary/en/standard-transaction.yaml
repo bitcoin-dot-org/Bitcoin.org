@@ -1,0 +1,27 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Standard Transaction
+
+    summary_max_255_characters_no_formatting: >
+        A transaction that passes Bitcoin Core's IsStandard() and
+        IsStandardTx() tests. Only standard transactions are mined or
+        broadcast by peers running the default Bitcoin Core software.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Standard Transaction
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - standard transactions
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Standard transactions](/en/developer-guide#standard-transactions) --- Bitcoin.org Developer Guide"
+        - "[Will general non-standard transactions ever be allowed?](http://bitcoin.stackexchange.com/q/5664) --- Bitcoin StackExchange"
+
+---

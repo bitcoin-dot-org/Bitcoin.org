@@ -7,6 +7,7 @@ lang: en
 id: developer-examples
 title: "Developer Examples - Bitcoin"
 ---
+<link rel="stylesheet" href="/css/jquery-ui.min.css">
 
 # Bitcoin Developer Examples
 
@@ -26,6 +27,8 @@ title: "Developer Examples - Bitcoin"
 
 {% include fragment_reviews_needed.md %}
 
+<input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
+
 {% include example_intro.md %}
 
 {% include example_testing.md %}
@@ -37,8 +40,12 @@ title: "Developer Examples - Bitcoin"
 {% include example_p2p_networking.md %}
 
 {% include references.md %}
+{{site.glossary_links}}
 
 </div>
 
 <script>updateToc();</script>
 <script>addAnchorLinks();</script>
+<script src="/js/jquery-1.11.2.min.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+<script src="/js/devsearch.js"></script>

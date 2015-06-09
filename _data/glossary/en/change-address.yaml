@@ -1,0 +1,33 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Change, Change Address, Change Output
+
+    summary_max_255_characters_no_formatting: >
+        An output in a transaction which returns satoshis to the
+        spender, thus preventing too much of the input value from going
+        to transaction fees.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Change address
+        - Change output
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - change addresses
+        - change outputs
+        ## don't add "change" or it'll get autocrossreferenced every
+        ## time we use it with its usual verb/noun meanings
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Address reuse
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Change address](/en/developer-guide#term-change-output) --- Bitcoin.org Developer Guide"
+        - "[Change](https://en.bitcoin.it/wiki/Change) --- Bitcoin Wiki"
+        - "[Why does Bitcoin Core use separate change addresses?](http://bitcoin.stackexchange.com/q/35412) --- Bitcoin StackExchange"
+
+---

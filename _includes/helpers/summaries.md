@@ -12,6 +12,7 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_encryptWallet="encrypts the wallet with a passphrase.  This is only to enable encryption for the first time. After encryption is enabled, you will need to enter the passphrase to use private keys." %}
 {% assign summary_estimateFee="estimates the transaction fee per kilobyte that needs to be paid for a transaction to be included within a certain number of blocks." %}
 {% assign summary_estimatePriority="estimates the priority that a transaction needs in order to be included within a certain number of blocks as a free high-priority transaction." %}
+{% assign summary_generate="nearly instantly generates blocks (in regtest mode only)" %}
 {% assign summary_getAccountAddress="returns the current Bitcoin address for receiving payments to this account. If the account doesn't exist, it creates both the account and a new address for receiving payment.  Once a payment has been received to an address, future calls to this RPC for the same account will return a different address." %}
 {% assign summary_getAccount="returns the name of the account associated with the given address." %}
 {% assign summary_getAddedNodeInfo="returns information about the given added node, or all added nodes (except onetry nodes). Only nodes which have been manually added using the `addnode` RPC will have their information displayed." %}

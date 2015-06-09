@@ -17,24 +17,33 @@ The `setaccount` RPC {{summary_setAccount}}
 
 *Parameter #1---a bitcoin address*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| Address            | string (base58) | Required<br>(exactly 1)     | The P2PKH or P2SH address to put in the account.  Must already belong to the wallet
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Address"
+  t: "string (base58)"
+  p: "Required<br>(exactly 1)"
+  d: "The P2PKH or P2SH address to put in the account.  Must already belong to the wallet"
+
+{% enditemplate %}
 
 *Parameter #2---an account*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| Account            | string          | Required<br>(exactly 1)     | The name of the account in which the address should be placed.  May be the default account, an empty string ("")
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Account"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The name of the account in which the address should be placed.  May be the default account, an empty string (\"\")"
+
+{% enditemplate %}
 
 *Result---`null` if successful*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| `result`           | null            | Required<br>(exactly 1)     | Set to JSON `null` if the address was successfully placed in the account
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "null"
+  p: "Required<br>(exactly 1)"
+  d: "Set to JSON `null` if the address was successfully placed in the account"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

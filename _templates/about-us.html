@@ -5,16 +5,17 @@
 layout: base
 id: about-us
 ---
+<!-- Note: this file is built non-deterministically -->
 <h1>{% translate pagetitle %}</h1>
 <p class="summary">{% translate pagedesc %}</p>
 
-<h2>{% translate own %}</h2>
+<h2 id="own">{% translate own %}</h2>
 <p>{% translate owntxt %}</p>
 
-<h2>{% translate control %}</h2>
+<h2 id="control">{% translate control %}</h2>
 <p>{% translate controltxt %}</p>
 
-<h2>{% translate mission %}</h2>
+<h2 id="mission">{% translate mission %}</h2>
 <ul>
   <li>{% translate missiontxt1 %}</li>
   <li>{% translate missiontxt2 %}</li>
@@ -25,40 +26,39 @@ id: about-us
   <li>{% translate missiontxt7 %}</li>
 </ul>
 
-<h2>{% translate help %}</h2>
+<h2 id="help">{% translate help %}</h2>
 <p>{% translate helptxt %}</p>
 
-<h3>{% translate maintenance %}</h3>
+<h3 id="maintenance">{% translate maintenance %}</h3>
 
 <div class="credit">
-  <p><a href="mailto:saivann@gmail.com">Saïvann Carignan</a><span>Website maintenance</span></p>
-  <p><a>Garland William Binns III</a><span>Translation maintenance</span></p>
-  <p><a href="http://dtrt.org/">David Harding</a><span>Documentation maintenance</span></p>
+  <p><a href="https://github.com/saivann/">Saïvann Carignan</a><span>Website maintenance<br>Translation coordination</span></p>
+  <p><a href="https://github.com/harding">David A. Harding</a><span>Website maintenance<br>Volunteer coordination<br>Documentation writing</span></p>
+  <p><a href="https://github.com/crwatkins">Craig Watkins</a><span>Wallet reviews</span></p>
 </div>
 
-<h3>{% translate documentation %}</h3>
+<h3 id="translation">{% translate translation %}</h3>
 
 <div class="credit">
-  <p><a href="http://dtrt.org/">David Harding</a><span>Coordination and writing</span></p>
-  <p><a>Greg Sanders</a><span>Writing</span></p>
+  <p>Ar Vicco<span>Russian</span></p>
+  <p>Simon Alexander Hinterreiter<span>German</span></p>
+  <p>Jacob Burenstam<span>Swedish</span></p>
+  <p>Péter Kemenczés<span>Hungarian</span></p>
+  <p>Matija Mazi<span>Slovenian</span></p>
+  <p>Mihai Onosie<span>Romanian</span></p>
+  <p>Boštjan Pirnar<span>Slovenian</span></p>
+  <p>Luigigiuseppe Prosperi<span>Italian</span></p>
+  <p>Thomas Pryds<span>Danish</span></p>
 </div>
 
-<h3>{% translate translation %}</h3>
+<h3 id="inactive-contributors">{% translate inactive_contributors %}</h3>
 
 <div class="credit">
-  <p><a>Garland William Binns III</a><span>Maintenance</span></p>
-  <p><a>@arvicco</a><span>Russian</span></p>
-  <p><a>Simon Alexander Hinterreiter</a><span>German</span></p>
-  <p><a>Jacob Burenstam</a><span>Swedish</span></p>
-  <p><a>Péter Kemenczés</a><span>Hungarian</span></p>
-  <p><a>Matija Mazi</a><span>Slovenian</span></p>
-  <p><a>Mihai Onosie</a><span>Romanian</span></p>
-  <p><a>Boštjan Pirnar</a><span>Slovenian</span></p>
-  <p><a>Luigigiuseppe Prosperi</a><span>Italian</span></p>
-  <p><a>Thomas Pryds</a><span>Danish</span></p>
+  <p>Garland William Binns III<span>Translation maintenance</span></p>
+  <p>Greg Sanders<span>Documentation Writing</span></p>
 </div>
 
-<h3>{% translate github %}</h3>
+<h3 id="github">{% translate github %}</h3>
 
 <div class="contributors">
   {% for c in site.sitecontributors %}

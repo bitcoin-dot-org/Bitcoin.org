@@ -17,17 +17,23 @@ The `listsinceblock` RPC {{summary_listSinceBlock}}
 
 *Parameter #1---a block header hash*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Header Hash        | string (hex)    | Optional<br>(0 or 1)        | The hash of a block header encoded as hex in RPC byte order.  All transactions affecting the wallet which are not in that block or any earlier block will be returned, including unconfirmed transactions.  Default is the hash of the genesis block, so all transactions affecting the wallet are returned by default
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Header Hash"
+  t: "string (hex)"
+  p: "Optional<br>(0 or 1)"
+  d: "The hash of a block header encoded as hex in RPC byte order.  All transactions affecting the wallet which are not in that block or any earlier block will be returned, including unconfirmed transactions.  Default is the hash of the genesis block, so all transactions affecting the wallet are returned by default"
+
+{% enditemplate %}
 
 *Parameter #2---the target confirmations for the lastblock field*
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| Target Confirmations | number (int)    | Optional<br>(0 or 1)        | Sets the lastblock field of the results to the header hash of a block with this many confirmations.  This does not affect which transactions are returned.  Default is `1`, so the hash of the most recent block on the local best block chain is returned
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Target Confirmations"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "Sets the lastblock field of the results to the header hash of a block with this many confirmations.  This does not affect which transactions are returned.  Default is `1`, so the hash of the most recent block on the local best block chain is returned"
+
+{% enditemplate %}
 
 *Parameter #3---whether to include watch-only addresses in details and calculations*
 
@@ -38,15 +44,30 @@ The `listsinceblock` RPC {{summary_listSinceBlock}}
 {% assign DEPTH="→ → → " %}
 {% include helpers/vars.md %}
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| `result`             | object          | Required<br>(exactly 1)     | An object containing an array of transactions and the lastblock field
-| →<br>`transactions`  | array           | Required<br>(exactly 1)     | An array of objects each describing a particular **payment** to or from this wallet.  The objects in this array do not describe an actual transactions, so more than one object in this array may come from the same transaction.  This array may be empty
-| → →<br>Payment       | object          | Optional<br>(0 or more)     | An payment which did not appear in the specified block or an earlier block
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "object"
+  p: "Required<br>(exactly 1)"
+  d: "An object containing an array of transactions and the lastblock field"
+
+- n: "→<br>`transactions`"
+  t: "array"
+  p: "Required<br>(exactly 1)"
+  d: "An array of objects each describing a particular **payment** to or from this wallet.  The objects in this array do not describe an actual transactions, so more than one object in this array may come from the same transaction.  This array may be empty"
+
+- n: "→ →<br>Payment"
+  t: "object"
+  p: "Optional<br>(0 or more)"
+  d: "An payment which did not appear in the specified block or an earlier block"
+
 {{INCLUDE_F_LIST_TRANSACTIONS}}
 {{INCLUDE_F_LIST_TRANSACTIONS_F_FULL}}
-| →<br>`lastblock`     | string (hex)    | Required<br>(exactly 1)     | The header hash of the block with the number of confirmations specified in the *target confirmations* parameter, encoded as hex in RPC byte order
-{:.ntpd}
+- n: "→<br>`lastblock`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The header hash of the block with the number of confirmations specified in the *target confirmations* parameter, encoded as hex in RPC byte order"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 

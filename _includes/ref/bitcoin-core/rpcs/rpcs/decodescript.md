@@ -15,23 +15,53 @@ The `decodescript` RPC {{summary_decodeScript}}
 
 *Parameter #1---a hex-encoded redeem script*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| Redeem Script      | string (hex)    | Required<br>(exactly 1)     | The redeem script to decode as a hex-encoded serialized script
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Redeem Script"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The redeem script to decode as a hex-encoded serialized script"
+
+{% enditemplate %}
 
 *Result---the decoded script*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|----------------
-| `result`           | object          | Required<br>(exactly 1)     | An object describing the decoded script, or JSON `null` if the script could not be decoded
-| →<br>`asm`         | string          | Required<br>(exactly 1)     | The redeem script in decoded form with non-data-pushing op codes listed.  May be empty
-| →<br>`type`        | string          | Optional<br>(0 or 1)        | The type of script.  This will be one of the following:<br>• `pubkey` for a P2PK script inside P2SH<br>• `pubkeyhash` for a P2PKH script inside P2SH<br>• `multisig` for a multisig script inside P2SH<br>• `nonstandard` for unknown scripts
-| →<br>`reqSigs`     | number (int)    | Optional<br>(0 or 1)        | The number of signatures required; this is always `1` for P2PK or P2PKH within P2SH.  It may be greater than 1 for P2SH multisig.  This value will not be returned for `nonstandard` script types (see the `type` key above)
-| →<br>`addresses`   | array           | Optional<br>(0 or 1)        | A P2PKH addresses used in this script, or the computed P2PKH addresses of any pubkeys in this script.  This array will not be returned for `nonstandard` script types
-| → →<br>Address     | string          | Required<br>(1 or more)     | A P2PKH address
-| →<br>`p2sh`        | string (hex)    | Required<br>(exactly 1)     | The P2SH address of this redeem script
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "object"
+  p: "Required<br>(exactly 1)"
+  d: "An object describing the decoded script, or JSON `null` if the script could not be decoded"
+
+- n: "→<br>`asm`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The redeem script in decoded form with non-data-pushing op codes listed.  May be empty"
+
+- n: "→<br>`type`"
+  t: "string"
+  p: "Optional<br>(0 or 1)"
+  d: "The type of script.  This will be one of the following:<br>• `pubkey` for a P2PK script inside P2SH<br>• `pubkeyhash` for a P2PKH script inside P2SH<br>• `multisig` for a multisig script inside P2SH<br>• `nonstandard` for unknown scripts"
+
+- n: "→<br>`reqSigs`"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "The number of signatures required; this is always `1` for P2PK or P2PKH within P2SH.  It may be greater than 1 for P2SH multisig.  This value will not be returned for `nonstandard` script types (see the `type` key above)"
+
+- n: "→<br>`addresses`"
+  t: "array"
+  p: "Optional<br>(0 or 1)"
+  d: "A P2PKH addresses used in this script, or the computed P2PKH addresses of any pubkeys in this script.  This array will not be returned for `nonstandard` script types"
+
+- n: "→ →<br>Address"
+  t: "string"
+  p: "Required<br>(1 or more)"
+  d: "A P2PKH address"
+
+- n: "→<br>`p2sh`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The P2SH address of this redeem script"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 
@@ -63,6 +93,6 @@ Result:
 *See also*
 
 * [CreateMultiSig][rpc createmultisig]: {{summary_createMultiSig}}
-* [Pay-To-Script-Hash (P2SH)][P2SH]
+* [Pay-To-Script-Hash (P2SH)][/en/glossary/p2sh-address]
 
 {% endautocrossref %}

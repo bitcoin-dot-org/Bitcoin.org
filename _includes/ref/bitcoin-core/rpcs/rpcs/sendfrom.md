@@ -18,24 +18,33 @@ The `sendfrom` RPC {{summary_sendFrom}}
 
 *Parameter #1---from account*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| From Account       | string          | Required<br>(exactly 1)     | The name of the account from which the bitcoins should be spent.  Use an empty string ("") for the default account
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "From Account"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The name of the account from which the bitcoins should be spent.  Use an empty string (\"\") for the default account"
+
+{% enditemplate %}
 
 *Parameter #2---to address*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| To Address         | string          | Required<br>(exactly 1)     | A P2PKH or P2SH address to which the bitcoins should be sent
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "To Address"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "A P2PKH or P2SH address to which the bitcoins should be sent"
+
+{% enditemplate %}
 
 *Parameter #3---amount to spend*
 
-| Name               | Type              | Presence                    | Description
-|--------------------|-------------------|-----------------------------|---------------
-| Amount             | number (bitcoins) | Required<br>(exactly 1)     | The amount to spend in bitcoins.  Bitcoin Core will ensure the account has sufficient bitcoins to pay this amount (but the transaction fee paid is not included in the calculation, so an account can spend a total of its balance plus the transaction fee)
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Amount"
+  t: "number (bitcoins)"
+  p: "Required<br>(exactly 1)"
+  d: "The amount to spend in bitcoins.  Bitcoin Core will ensure the account has sufficient bitcoins to pay this amount (but the transaction fee paid is not included in the calculation, so an account can spend a total of its balance plus the transaction fee)"
+
+{% enditemplate %}
 
 *Parameter #4---minimum confirmations*
 
@@ -43,24 +52,33 @@ The `sendfrom` RPC {{summary_sendFrom}}
 
 *Parameter #5---a comment*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| Comment            | string          | Optional<br>(0 or 1)        | A locally-stored (not broadcast) comment assigned to this transaction.  Default is no comment
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Comment"
+  t: "string"
+  p: "Optional<br>(0 or 1)"
+  d: "A locally-stored (not broadcast) comment assigned to this transaction.  Default is no comment"
+
+{% enditemplate %}
 
 *Parameter #6---a comment about who the payment was sent to*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| Comment To         | string          | Optional<br>(0 or 1)        | A locally-stored (not broadcast) comment assigned to this transaction.  Meant to be used for describing who the payment was sent to. Default is no comment
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "Comment To"
+  t: "string"
+  p: "Optional<br>(0 or 1)"
+  d: "A locally-stored (not broadcast) comment assigned to this transaction.  Meant to be used for describing who the payment was sent to. Default is no comment"
+
+{% enditemplate %}
 
 *Result---a TXID of the sent transaction*
 
-| Name               | Type            | Presence                    | Description
-|--------------------|-----------------|-----------------------------|---------------
-| `result`           | string          | Required<br>(exactly 1)     | The TXID of the sent transaction, encoded as hex in RPC byte order
-{:.ntpd}
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The TXID of the sent transaction, encoded as hex in RPC byte order"
+
+{% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
 
