@@ -31,17 +31,17 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkpassprivacydisclosurefullnode"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
-- multibit:
-    title: "MultiBit"
-    titleshort: "MultiBit"
+- multibithd:
+    title: "MultiBit HD"
+    titleshort: "MultiBit HD"
     compat: "desktop windows mac linux"
     level: 2
     platform:
       desktop:
-        text: "walletmultibit"
+        text: "walletmultibithd"
         link: "https://multibit.org"
-        source: "https://github.com/jim618/multibit"
-        screenshot: "multibit.png"
+        source: "https://github.com/bitcoin-solutions/multibit-hd"
+        screenshot: "multibithd.png"
         os:
         - windows
         - mac
@@ -51,11 +51,11 @@ wallets:
           validation: "checkpassvalidationspvp2p"
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
-          privacy: "checkfailprivacyweak"
+          privacy: "checkpassprivacybasic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - armory:
     title: "Armory"
     titleshort: "Armory"
