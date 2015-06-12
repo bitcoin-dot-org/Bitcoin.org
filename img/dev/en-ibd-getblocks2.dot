@@ -1,0 +1,57 @@
+digraph {
+// This file is licensed under the MIT License (MIT) available on
+// http://opensource.org/licenses/MIT.
+
+size=6.25;
+rankdir=LR
+splines = "false";
+ranksep = 0.4;
+nodesep = 0.1;
+
+edge [ penwidth = 1.75, fontname="Sans" ]
+node [ penwidth = 1.75, shape = "box", fontname="Sans"]
+graph [ penwidth = 1.75, fontname="Sans" ]
+
+ibd -> getblocks:f1 -> sync;
+
+ibd [ label = "IBD\nNode", shape="none" ];
+sync [ label = "Sync\nNode", shape="none" ];
+
+getblocks [ shape="plaintext", label=<
+    <table border="2" cellborder="1">
+      <tr>
+        <td colspan="4" port="f1" border="0" cellpadding="4"><b>GetBlocks Message</b></td>
+      </tr>
+
+      <tr>
+        <td colspan="4" border="0"><i>Message Header</i></td>
+      </tr>
+
+      <tr>
+        <td border="1"><i>Start String</i><br/><font face="courier">f9beb4d9</font></td>
+        <td border="1"><i>Command</i><br/><font face="courier">getblocks</font></td>
+        <td border="1"><i>Size</i><br/><font face="courier">677</font></td>
+        <td border="1"><i>Checksum</i><br/><font face="courier">52be83ef</font></td>
+      </tr>
+
+      <tr>
+        <td colspan="4" border="0"><i>Payload</i></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><i>Protocol Version</i><br /><font face="courier">70002</font></td>
+        <td colspan="2"><i>Header Hash Count</i><br /><font face="courier">20</font></td>
+      </tr>
+
+      <tr>
+        <td colspan="4"><i>Header Hashes (Highest-Height First)</i><br /><font face="courier">db773c8f3b90ef...64f64f00000000<br/>459f16a1c695d0...f66d8000000000</font><br/><i>......18 more header hashes......</i></td>
+      </tr>
+
+      <tr>
+        <td colspan="4"><i>Stopping Hash (Zero Is "No Stop")</i><br /><font face="courier">00000000000000...00000000000000</font></td>
+      </tr>
+
+    </table>>];
+
+label = "Second getblocks message sent from Initial Blocks Download (IBD) node"
+}

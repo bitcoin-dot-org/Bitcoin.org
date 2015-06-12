@@ -1,6 +1,14 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+{% assign filename="_includes/example_payment_processing.md" %}
+
 ## Payment Processing
+{% include helpers/subhead-links.md %}
 
 ### Payment Protocol
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -31,6 +39,7 @@ custom example URIs and payment requests for use with testnet.
 {% endautocrossref %}
 
 #### PaymentRequest & PaymentDetails
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -57,6 +66,7 @@ programming languages. You will also need a copy of the PaymentRequest
 {% endautocrossref %}
 
 ##### Initialization Code
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -88,6 +98,7 @@ functions created by `protoc`.
 {% endautocrossref %}
 
 ##### Configuration Code
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -102,7 +113,7 @@ within the PaymentRequest.
 ## SSL Signature method
 request.pki_type = "x509+sha256"  ## Default: none
 
-## Mainnet or Testnet?
+## Mainnet or testnet?
 details.network = "test"  ## Default: main
 
 ## Postback URL
@@ -238,6 +249,7 @@ later.
 {% endautocrossref %}
 
 ##### Code Variables
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -341,6 +353,7 @@ payment as part of a cryptographically-proven receipt.
 {% endautocrossref %}
 
 ##### Derivable Data
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -427,6 +440,7 @@ same hashing formula we specified in `pki_type` (sha256 in this case)
 {% endautocrossref %}
 
 ##### Output Code
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

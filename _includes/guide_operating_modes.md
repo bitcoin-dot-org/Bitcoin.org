@@ -1,4 +1,11 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+{% assign filename="_includes/guide_operating_modes.md" %}
+
 ## Operating Modes
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -7,6 +14,7 @@ Currently there are two primary methods of validating the block chain as a clien
 {% endautocrossref %}
 
 ### Full Node
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -19,6 +27,7 @@ For a client to be fooled, an adversary would need to give a complete alternativ
 {% endautocrossref %}
 
 ### Simplified Payment Verification (SPV)
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -31,6 +40,7 @@ The block's depth in the block chain corresponds to the cumulative difficulty th
 {% endautocrossref %}
 
 #### Potential SPV Weaknesses
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -45,6 +55,7 @@ To mitigate the latter issue, Bloom filters have been implemented as a method of
 {% endautocrossref %}
 
 #### Bloom Filters
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -63,23 +74,25 @@ Removal of elements can only be done by scrapping the bloom filter and re-creati
 {% endautocrossref %}
 
 #### Application Of Bloom Filters 
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
-Rather than viewing the false positive rates as a liability, it is used to create a tunable parameter that represents the desired privacy level and bandwidth trade-off. A SPV client creates their Bloom filter and sends it to a full node using the message `filterload`, which sets the filter for which transactions are desired. The command `filteradd` allows addition of desired data to the filter without needing to send a totally new Bloom filter, and `filterclear` allows the connection to revert to standard block discovery mechanisms. If the filter has been loaded, then full nodes will send a modified form of blocks, called a merkleblock. The merkleblock is simply the block header with the merkle branch associated with the set Bloom filter. 
+Rather than viewing the false positive rates as a liability, it is used to create a tunable parameter that represents the desired privacy level and bandwidth trade-off. A SPV client creates their Bloom filter and sends it to a full node using the message `filterload`, which sets the filter for which transactions are desired. The command `filteradd` allows addition of desired data to the filter without needing to send a totally new Bloom filter, and `filterclear` allows the connection to revert to standard block discovery mechanisms. If the filter has been loaded, then full nodes will send a modified form of blocks, called a merkle block. The merkle block is simply the block header with the merkle branch associated with the set Bloom filter. 
 
 An SPV client can not only add transactions as elements to the filter, but also public keys, data from signature
 scripts and pubkey scripts, and more. This enables P2SH transaction finding.
 
 If a user is more privacy-conscious, he can set the Bloom filter to include more false positives, at the expense of extra bandwidth used for transaction discovery. If a user is on a tight bandwidth budget, he can set the false-positive rate to low, knowing that this will allow full nodes a clear view of what transactions are associated with his client. 
 
-**Resources:** [BitcoinJ](http://bitcoinj.org), a Java implementation of Bitcoin that is based on the SPV security model and Bloom filters. Used in most Android wallets.
+**Resources:** [BitcoinJ][], a Java implementation of Bitcoin that is based on the SPV security model and Bloom filters. Used in most Android wallets.
 
 Bloom filters were standardized for use via [BIP37](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki). Review the BIP for implementation details.
 
 {% endautocrossref %}
 
 ### Future Proposals 
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 

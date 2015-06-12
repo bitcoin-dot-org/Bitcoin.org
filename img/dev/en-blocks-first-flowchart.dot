@@ -1,0 +1,32 @@
+digraph {
+// This file is licensed under the MIT License (MIT) available on
+// http://opensource.org/licenses/MIT.
+
+size=6.25;
+rankdir=TB
+splines = "true";
+ranksep = 0.2;
+nodesep = 0.9;
+
+edge [ penwidth = 1.75, fontname="Sans" ]
+node [ penwidth = 1.75, shape = "none", fontname="Sans"]
+graph [ penwidth = 1.75, fontname="Sans" ]
+
+fsbc [ label = "Fully-Synced Block Chain?", style = "filled" ];
+listen [ label = "Listen For New Blocks (Inv)" ];
+request_blocks [ label = "Request Blocks (GetData)" ];
+request_invs [ label = "Request Inventories (GetBlocks)" ];
+have_invs [ label = "Have Inventories?", style = "filled" ];
+
+fsbc -> have_invs [ label = "  No" ];
+fsbc -> listen [ label = "Yes", constraint = false ];
+have_invs -> request_invs [ label = "  No" ];
+
+have_invs -> request_blocks [ label = "Yes", constraint=false ];
+
+listen -> request_blocks [ style = "invis" ];
+
+
+
+label = "\ \nOverview Of Blocks-First Initial Blocks Download (IBD)"
+}

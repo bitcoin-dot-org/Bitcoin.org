@@ -1,0 +1,32 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: HD Wallet Seed, Root Seed
+
+    summary_max_255_characters_no_formatting: >
+        A potentially-short value used as a seed to generate the master
+        private key and master chain code for an HD wallet.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - HD wallet seed
+        - Root seed
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - hd wallet seeds
+        - root seeds
+        - hd seed
+        - hd seeds
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Mnemonic code / mnemonic seed (a binary root seed formatted as words to make it easier for humans to transcribe and possibly remember)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Root seed](/en/developer-guide#term-root-seed) --- Bitcoin.org Developer Guide"
+        - "[BIP32: hierarchical deterministic wallets](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) --- Bitcoin Improvement Proposals"
+        - "[BIP39: mnemonic code for generating deterministic keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) --- Bitcoin Improvement Proposals"
+
+---

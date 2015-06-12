@@ -1,3 +1,6 @@
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 #events.rb set site.conferences and site.meetups arrays based
 #on events in _events/ and meetups on bitcoin.meetups.com .
 #This is later used to populate the events map and display the
@@ -76,7 +79,7 @@ module Jekyll
         time.utc
         date = time.year.to_s + '-' + time.month.to_s.rjust(2,'0') + '-' + time.day.to_s.rjust(2,'0')
         country = country.upcase
-        geoloc = lat + ', ' + lon
+        geoloc = {'lat' => lat, 'lon' => lon}
         # Use address_2 and state when available
         if m['venue'].has_key?('address_2') and ( m['venue']['address_2'].is_a?(String) or m['venue']['address_2'].is_a?(Integer) or m['venue']['address_2'].is_a?(Float) ) and /^.{1,150}$/.match(m['venue']['address_2'].to_s)
           address = address + ' ' + m['venue']['address_2'].to_s
@@ -92,23 +95,21 @@ module Jekyll
 
     def conferences
       conferences = []
-      # Loop in _events/ files
-      Dir.foreach('_events') do |file|
-        # Skip events with malformed name
-        next if file == '.' or file == '..'
-        # Assign variables
-        data = YAML.load_file('_events/'+file)
+      # Loop in _events.yml
+      YAML.load_file('_events.yml').each do |data|
         # Skip event if it has started more than five days ago
 	date = data['date'].to_s.split('-')
         next if Time.new.to_i > (Time.new(date[0].to_i,date[1].to_i,date[2].to_i).to_i + 432000)
         # Get geolocalisation data from Google Maps
-        begin
-          geoloc = JSON.parse(open("https://maps.googleapis.com/maps/api/geocode/json?address=" + CGI::escape(data['address'] + ', ' + data['city'] + ', ' + data['country']) + "&sensor=false","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
-          if geoloc['status'] == 'OK'
-            data['geoloc'] = geoloc['results'][0]['geometry']['location']['lat'].to_s + ", " + geoloc['results'][0]['geometry']['location']['lng'].to_s
+        if data.has_key?('address')
+          begin
+            geoloc = JSON.parse(open("https://maps.googleapis.com/maps/api/geocode/json?address=" + CGI::escape(data['address'] + ', ' + data['city'] + ', ' + data['country']) + "&sensor=false","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
+            if geoloc['status'] == 'OK'
+              data['geoloc'] = {'lat' => geoloc['results'][0]['geometry']['location']['lat'].to_s, 'lon' => geoloc['results'][0]['geometry']['location']['lng'].to_s}
+            end
+          rescue
+            print 'Google Maps API Call Failed!'
           end
-        rescue
-          print 'Google Maps API Call Failed!'
         end
         # Populate conferences array
         conferences.push(data)
@@ -130,9 +131,19 @@ module Jekyll
           h
         end
       end
-      # Populate site.conferences array
+
+      # Set site.conferences and site.meetups arrays
+      site.conferences = {}
+      site.meetups = {}
+
+      #Do nothing if plugin is disabled
+      if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('events').nil?
+        print 'Events disabled' + "\n"
+        return
+      end
+
+      # Populate site.conferences and site.meetups arrays
       site.conferences = conferences()
-      # Populate site.meetups array
       site.meetups = meetups()
     end
 

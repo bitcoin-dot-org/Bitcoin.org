@@ -1,0 +1,30 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Serialized Block, Raw Block
+
+    summary_max_255_characters_no_formatting: >
+        A complete block in its binary format---the same format used to
+        calculate total block byte size; often represented using
+        hexadecimal.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Serialized block
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - serialized blocks
+        - raw blocks
+        - raw format block
+        - raw format blocks
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Serialized blocks](/en/developer-reference#serialized-blocks) --- Bitcoin.org Developer Reference"
+        - "[Block message (serialized block)](https://en.bitcoin.it/wiki/Protocol_documentation#block) --- Bitcoin Wiki"
+
+---

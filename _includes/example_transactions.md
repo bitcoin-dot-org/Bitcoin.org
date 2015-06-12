@@ -1,6 +1,14 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+{% assign filename="_includes/example_transactions.md" %}
+
 ## Transactions
+{% include helpers/subhead-links.md %}
 
 ### Transaction Tutorial
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -14,7 +22,7 @@ of data to create transactions with the same attributes as those
 described below.
 
 In order to use this tutorial, you will need to setup [Bitcoin Core][core executable]
-and create a [regression test mode][] environment with 50 BTC in your test
+and create a regression test mode environment with 50 BTC in your test
 wallet.
 
 {% endautocrossref %}
@@ -25,6 +33,7 @@ wallet.
 
 
 #### Simple Spending
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -106,7 +115,11 @@ someone else, that second transaction would not be displayed in our
 list of UTXOs.
 
 {% highlight bash %}
+## Bitcoin Core 0.10.1 and earlier
 > bitcoin-cli -regtest setgenerate true 1
+
+## Later versions of Bitcoin Core
+> bitcoin-cli -regtest generate 1
 
 > unset NEW_ADDRESS
 {% endhighlight %}
@@ -122,6 +135,7 @@ second) and clear the shell variable.
 
 
 #### Simple Raw Transaction
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -221,7 +235,7 @@ second argument (a JSON object) creates the output with the address
 (public key hash) and number of bitcoins we want to transfer.
 We save the resulting raw format transaction to a shell variable.
 
-![Warning icon](/img/icon_warning.svg)
+![Warning icon](/img/icons/icon_warning.svg)
  **Warning:** `createrawtransaction` does not automatically create change
 outputs, so you can easily accidentally pay a large transaction fee. In
 this example, our input had 50.0000 bitcoins and our output
@@ -322,7 +336,11 @@ would usually then broadcast it to other peers, but we're not currently
 connected to other peers because we started in regtest mode.
 
 {% highlight bash %}
+## Bitcoin Core 0.10.1 and earlier
 > bitcoin-cli -regtest setgenerate true 1
+
+## Later versions of Bitcoin Core
+> bitcoin-cli -regtest generate 1
 
 > unset UTXO_TXID UTXO_VOUT NEW_ADDRESS RAW_TX SIGNED_RAW_TX
 {% endhighlight %}
@@ -337,6 +355,7 @@ variables.
 
 
 #### Complex Raw Transaction
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -429,7 +448,7 @@ Use the `dumpprivkey` RPC to get the private keys corresponding to the
 public keys used in the two UTXOs out inputs we will be spending.  We need
 the private keys so we can sign each of the inputs separately.
 
-![Warning icon](/img/icon_warning.svg)
+![Warning icon](/img/icons/icon_warning.svg)
  **Warning:** Users should never manually manage private keys on mainnet.
 As dangerous as raw transactions are (see warnings above), making a
 mistake with a private key can be much worse---as in the case of a HD
@@ -573,6 +592,7 @@ the block chain or memory pool.
 
 
 #### Offline Signing
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -586,7 +606,7 @@ Offline signing is safe. However, in this example we will also be
 spending an output which is not part of the block chain because the
 transaction containing it has never been broadcast. That can be unsafe:
 
-![Warning icon](/img/icon_warning.svg)
+![Warning icon](/img/icons/icon_warning.svg)
  **Warning:** Transactions which spend outputs from unconfirmed
 transactions are vulnerable to transaction malleability. Be sure to read
 about transaction malleability and adopt good practices before spending
@@ -869,6 +889,7 @@ Remove old shell variables.
 
 
 #### P2SH Multisig
+{% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
@@ -902,7 +923,7 @@ way to reference the underlying full (unhashed) public keys it knows
 about, so we get the three new addresses above in order to use their
 public keys.
 
-[Recall from the Guide][address] that the hashed public keys used in addresses
+Recall from the Guide that the hashed public keys used in addresses
 obfuscate the full public key, so you cannot give an address to another
 person or device as part of creating a typical multisig output or P2SH multisig
 redeem script. You must give them a full public key.
@@ -973,7 +994,7 @@ redeem script.
 The P2SH address is returned along with the redeem script which must be
 provided when we spend satoshis sent to the P2SH address.
 
-![Warning icon](/img/icon_warning.svg)
+![Warning icon](/img/icons/icon_warning.svg)
  **Warning:** You must not lose the redeem script, especially if you
 don't have a record of which public keys you used to create the P2SH
 multisig address. You need the redeem script to spend any bitcoins sent
@@ -1124,7 +1145,7 @@ transaction, the same way we got private keys in the Complex Raw
 Transaction subsection. Recall that we created a 2-of-3 multisig pubkey script,
 so signatures from two private keys are needed.
 
-![Warning icon](/img/icon_warning.svg)
+![Warning icon](/img/icons/icon_warning.svg)
  **Reminder:** Users should never manually manage private keys on
 mainnet. See the warning in the [complex raw transaction section][devex
 complex raw transaction].

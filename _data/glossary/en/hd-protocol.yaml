@@ -1,0 +1,34 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: HD Protocol, HD Wallet, BIP32
+
+    summary_max_255_characters_no_formatting: >
+        The Hierarchical Deterministic (HD) key creation and transfer
+        protocol (BIP32), which allows creating child keys from parent
+        keys in a hierarchy. Wallets using the HD protocol are called
+        HD wallets.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - HD protocol
+        - HD wallet
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - HD protocols
+        - HD wallets
+        - hierarchical deterministic
+        - hierarchical deterministic protocol
+        - hierarchical deterministic wallets
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[HD Protocol](/en/developer-guide#term-hd-protocol) --- Bitcoin.org Developer Guide"
+        - "[BIP32: hierarchical deterministic wallets](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) --- Bitcoin Improvement Proposals"
+        - "[Deterministic wallet](https://en.bitcoin.it/wiki/Deterministic_Wallet) --- Bitcoin Wiki"
+
+---

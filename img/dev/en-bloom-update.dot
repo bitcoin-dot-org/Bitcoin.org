@@ -1,0 +1,72 @@
+digraph {
+
+size="6.25";
+rankdir=TB;
+nodesep=1.05;
+ranksep=0.2;
+splines="false"
+
+edge [ penwidth = 1.75, fontname="Sans" ]
+node [ penwidth = 1.75, shape = "box", fontname="Sans", ]
+graph [ penwidth = 1.75, fontname="Sans" ]
+
+subgraph cluster_client {
+    graph [ penwidth = 0 ];
+    subgraph cluster_client1 {
+        graph [ penwidth = 0 ];
+
+        address [ label = "Address To Match" ];
+        filter1 [ label = "Filter That\n\ \ Matches Address\ \ ", style = "diagonals" ];
+        mymatch1 [ label = "Transaction 1", style = "invis" ];
+        mymatch2 [ label = "Transaction 2", style = "invis" ];
+
+        address -> filter1;
+        filter1 -> mymatch1 [ style = "invis" ];
+        mymatch1 -> mymatch2 [ style = "invis" ];
+
+    }
+
+    label = "Client"
+}
+
+filter1 -> filter2 [ constraint = false ];
+
+subgraph cluster_node {
+    graph [ penwidth = 0 ];
+    subgraph cluster_node2 {
+        graph [ penwidth = 0 ];
+
+        tx2 [ label = "Transaction 2" ];
+        filter3 [ label = "Filter Updated\n\ \ \ \ With Outpoint \ ", style = "diagonals" ];
+        match2 [ label = "Transaction 2\nSpends Outpoint", shape = "none" ];
+
+        tx2 -> filter3;
+        filter3 -> match2 [ minlen = 2 ];
+    }
+
+
+    subgraph cluster_node1 {
+        graph [ penwidth = 0 ];
+
+        tx1 [ label = "Transaction 1" ];
+        filter2 [ label = "Filter That\n\ \ Matches Address\ \ ", style = "diagonals" ];
+        match1 [ label = "Transaction 1\nPays Address", shape = "none" ]
+
+        tx1 -> filter2;
+        filter2 -> match1;
+    }
+
+    match1 -> mymatch1 [ constraint = false ];
+
+    filter2 -> filter3 [constraint = false ];
+    match1 -> filter3 [ constraint = false ];
+
+
+    match2 -> mymatch2 [ constraint = false ];
+
+    label = "Full Node"
+}
+
+label = "Automatically Updating Bloom Filters To Track Relevant Transactions"
+
+}

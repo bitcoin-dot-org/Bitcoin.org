@@ -1,0 +1,29 @@
+digraph {
+
+size=6.25;
+rankdir=TB
+//splines = ortho;
+ranksep = 0.0;
+nodesep = 0.0;
+
+edge [ penwidth = 1.75, fontname="Sans" ]
+node [ penwidth = 1.75, shape = "none", fontname="Sans", width = 0, height = 0]
+graph [ penwidth = 0, fontname="Sans" ]
+
+nbits [ label = "0x181bc330 → \n \nnBits In\nBig-Endian\nOrder" ];
+
+significand [ label = "0x1bc330\n \nSignificand\n(Mantissa)\n " ];
+times [ label = "*\n \n \n \n " ];
+
+base [ label = "256\n \nBase\n \n " ];
+exp [ label = "^\n \n \n \n " ];
+exponent [ label = "(0x18\n \nExponent\n \n " ];
+minus [ label = "-\n \n \n \n " ];
+negative [ label = "3)\n \nBytes\nIn\nSignificand" ];
+
+base -> result [ style = "invis" ];
+
+result [ label = "Result: 0x1bc330000000000000000000000000000000000000000000 " ];
+
+label = "Converting nBits Into A Target Threshold"
+}

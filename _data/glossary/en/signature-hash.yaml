@@ -1,0 +1,34 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Signature Hash
+
+    summary_max_255_characters_no_formatting: >
+        A flag to Bitcoin signatures that indicates what parts of the
+        transaction the signature signs.  (The default is SIGHASH_ALL.)
+        The unsigned parts of the transaction may be modified.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Signature hash
+        - Sighash
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - sighash flag
+        - signature hashes
+        - sighashes
+        - sighash flags
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Signed hash (a hash of the data to be signed)
+        - Transaction malleability / transaction mutability (although non-default sighash flags do allow optional malleability, malleability comprises any way a transaction may be mutated)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Signature hash](/en/developer-guide#term-signature-hash) --- Bitcoin.org Developer Guide"
+        - "[OP_CHECKSIG](https://en.bitcoin.it/wiki/OP_CHECKSIG) --- Bitcoin Wiki"
+        - "[Contracts](https://en.bitcoin.it/wiki/Contracts#Theory) --- Bitcoin Wiki"
+
+---

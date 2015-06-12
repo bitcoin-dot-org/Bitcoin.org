@@ -1,9 +1,13 @@
 ---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 layout: base
 id: vocabulary
 
 voc:
   - address
+  - bit
   - bitcoin
   - blockchain
   - block
@@ -21,7 +25,7 @@ voc:
 ---
 <h1>{% translate pagetitle %}</h1>
 <p class="summarytxt">{% translate summary %}</p>
-<h2>{% translate table %}</h2>
+<h2 id="table-of-contents">{% translate table %}</h2>
 
 <div class="index">
 {% alphab_for v in page.voc %}
@@ -33,5 +37,3 @@ voc:
 <h2 id="{% translate {{v}} anchor.vocabulary %}">{% translate {{v}} %}</h2>
 <p>{% translate {{v}}txt %}</p>
 {% endalphab_for %}
-
-<script>addAnchorLinks();</script>

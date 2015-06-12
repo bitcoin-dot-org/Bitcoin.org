@@ -1,0 +1,28 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Blocks-First, Blocks-First Sync
+
+    summary_max_255_characters_no_formatting: >
+        Synchronizing the block chain by downloading each block from a
+        peer and then validating it.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Blocks-first sync
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Blocks-first
+        - Blocks-first initial block download
+        - Blocks-first IBD
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Headers-first sync
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Blocks-first sync](/en/developer-guide#blocks-first) --- Bitcoin.org Developer Guide"
+
+---

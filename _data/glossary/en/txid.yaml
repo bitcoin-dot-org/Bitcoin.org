@@ -1,0 +1,29 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Txid, Transaction Identifier
+
+    summary_max_255_characters_no_formatting: >
+        An identifier used to uniquely identify a particular
+        transaction; specifically, the sha256d hash of the transaction.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Txid
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - txids
+        - transaction identifier
+        - transaction identifiers
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Outpoint (the combination of a txid with a vout used to identify a specific output)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Txid](/en/developer-guide#term-txid) --- Bitcoin.org Developer Guide"
+        - "[How do I calculate the txid of this raw transaction?](http://bitcoin.stackexchange.com/q/32765) --- Bitcoin StackExchange"
+
+---

@@ -1,0 +1,122 @@
+digraph {
+
+size=6.25;
+rankdir=TB
+//splines = ortho;
+ranksep = 0.0;
+nodesep = 0.0;
+
+edge [ penwidth = 1.75, fontname="Sans", style = "invis" ]
+node [ penwidth = 1.75, shape = "box", fontname="Sans", fontsize = 60, width = 1.3, height = 1.3 ]
+graph [ penwidth = 0, fontname="Sans", fontsize = 60 ]
+
+byte_length [ label = "Byte Length: 0x18 (Decimal 24)", shape = "none" ]
+
+
+subgraph cluster_n {
+node [ label = "0" ];
+    n24;
+    n23;
+    n22;
+    n21;
+    n20;
+    n19;
+    n18;
+    n17;
+    n16;
+    n15;
+    n14;
+    n13;
+    n12;
+    n11;
+    n10;
+    n9;
+    n8;
+    n7;
+    n6;
+    n5;
+    n4;
+    n1 [ label = "" ];
+    n2 [ label = "" ];
+    n3 [ label = "" ];
+}
+
+
+
+subgraph cluster_l {
+node [ shape = "none" ];
+l1 [ label = "1" ];
+l2 [ label = "2" ];
+l3 [ label = "3" ];
+l4 [ label = "4" ];
+l5 [ label = "5" ];
+l6 [ label = "6" ];
+l7 [ label = "7" ];
+l8 [ label = "8" ];
+l9 [ label = "9" ];
+l10 [ label = "10" ];
+l11 [ label = "11" ];
+l12 [ label = "12" ];
+l13 [ label = "13" ];
+l14 [ label = "14" ];
+l15 [ label = "15" ];
+l16 [ label = "16" ];
+l17 [ label = "17" ];
+l18 [ label = "18" ];
+l19 [ label = "19" ];
+l20 [ label = "20" ];
+l21 [ label = "21" ];
+l22 [ label = "22" ];
+l23 [ label = "23" ];
+l24 [ label = "24" ];
+}
+
+l1 -> n1;
+l2 -> n2;
+l3 -> n3;
+l4 -> n4;
+l5 -> n5;
+l6 -> n6;
+l7 -> n7;
+l8 -> n8;
+l9 -> n9;
+l10 -> n10;
+l11 -> n11;
+l12 -> n12;
+l13 -> n13;
+l14 -> n14;
+l15 -> n15;
+l16 -> n16;
+l17 -> n17;
+l18 -> n18;
+l19 -> n19;
+l20 -> n20;
+l21 -> n21;
+l22 -> n22;
+l23 -> n23;
+l24 -> n24;
+
+subgraph cluster_s {
+    node [ shape = "none" ];
+    edge [ style = "", dir="back", arrowsize = 3, minlen = 4 ];
+
+
+    significand [ label = "Most Significant Bytes (Significand)" ];
+    s3 [ label = "30" ];
+    s2 [ label = "c3" ];
+    s1 [ label = "1b" ];
+
+    n1 -> s1;
+    n2 -> s2;
+    n3 -> s3;
+}
+
+
+
+
+
+
+byte_length -> l19;
+
+label = " \nQuickly Converting nBits 0x181bc330 Into The Target\nThreshold 0x1bc330000000000000000000000000000000"
+}

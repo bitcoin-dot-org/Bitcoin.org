@@ -1,3 +1,8 @@
+/*
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+*/
+
 /*Styles for HTML tags*/
 
 body{
@@ -159,33 +164,6 @@ table td,table th{
 	background-color:#0d579b;
 }
 
-.sponsor-banner{
-	text-align:center;
-	width:940px;
-	margin:auto;
-}
-.sponsor-banner div{
-	display:inline-block;
-	color:#8D8D8D;
-	margin:10px 0 20px 0;
-	line-height:2em;
-}
-.sponsor-banner span{
-	white-space:nowrap;
-}
-.sponsor-banner span,
-.sponsor-banner a,
-.sponsor-banner a:link,
-.sponsor-banner a:active,
-.sponsor-banner a:visited{
-	display:inline-block;
-	margin:5px;
-}
-.sponsor-banner img{
-	width:245px;
-	height:18px;
-}
-
 .head{
 	margin:30px 0 30px 0;
 }
@@ -311,7 +289,8 @@ table td,table th{
 	border-radius:5px;
 }
 .menusimple li:first-child,
-.menusimple li:first-child+li{
+.menusimple li:first-child+li,
+.menusimple li:first-child+li+li+li{
 	-webkit-border-bottom-left-radius:0;
 	-webkit-border-bottom-right-radius:0;
 	-moz-border-radius-bottomleft:0;
@@ -373,7 +352,7 @@ table td,table th{
 .menusimple li ul li.active a{
 	color:#fff;
 }
-	
+
 .content{
 	position:relative;
 	padding:30px 40px 40px 40px;
@@ -386,23 +365,61 @@ table td,table th{
 	-moz-border-radius:6px;
 	border-radius:6px;
 }
-.content p,.content li{
+.content p,
+.content li,
+.content table{
 	line-height:1.5em;
 }
 
 .footer{
-	position:relative;
-	padding:20px 0;
 	text-align:center;
 	width:940px;
-	font-size:94%;
+	margin:auto;
 }
 .footermenu{
-	display:inline;
+	position:relative;
+	padding:20px 0;
+	font-size:94%;
 }
 .footermenu a{
 	margin-right:15px;
 	white-space:nowrap;
+}
+.footersponsor div{
+	display:inline-block;
+	color:#8D8D8D;
+	margin:0 0 25px 0;
+	line-height:2em;
+}
+.footersponsor span{
+	white-space:nowrap;
+}
+.footersponsor span,
+.footersponsor a,
+.footersponsor a:link,
+.footersponsor a:active,
+.footersponsor a:visited{
+	display:inline-block;
+	margin:5px;
+}
+.footersponsor img{
+	width:245px;
+	height:18px;
+}
+.footerlicense{
+	font-size:94%;
+	padding-bottom:20px;
+}
+
+.statusmenu{
+	display:inline-block;
+	padding-left:20px;
+	background-position:left center;
+	background-repeat:no-repeat;
+	background-image:url(/img/icons/netstatus_normal.svg);
+}
+.statusmenu.alert{
+	background-image:url(/img/icons/netstatus_alert.svg);
 }
 
 /*Styles specific to elements in pages*/
@@ -423,11 +440,13 @@ table td,table th{
 }
 .mainlist{
 	font-size:125%;
-	margin:30px 0;
+	width:760px;
+	margin:30px auto;
+	display:table;
 }
 .mainlist>div{
-	width:250px;
-	display:inline-block;
+	display:table-cell;
+	min-width:240px;
 }
 .mainlist>div>div{
 	display:inline-block;
@@ -516,7 +535,7 @@ table td,table th{
 .starttitle{
 	text-align:center;
 }
-.starttitle a{
+.starttitle span{
 	padding:10px;
 	border-bottom:1px solid #E2E2E2;
 	font-size:155%;
@@ -585,6 +604,9 @@ table td,table th{
 	position:absolute;
 	bottom:35px;
 }
+.starttitle a{
+	margin:0 20px auto;
+}
 
 .introlink{
 	text-align:center;
@@ -643,9 +665,9 @@ table td,table th{
 }
 .docreference a{
 	display:inline-block;
-	margin:0 0 40px 0;
+	margin:20px 0 40px 0;
 	font-size:125%;
-	width:210px;
+	width:150px;
 }
 .docreference img{
 	display:block;
@@ -723,10 +745,13 @@ table td,table th{
 	padding-top:8px;
 }
 .toc ul.goback li{
-	background:url(/img/mini_ico_back.svg) no-repeat 0 3px;
+	background:url(/img/icons/mini_ico_back.svg) no-repeat 0 3px;
 }
 .toc ul.reportissue li{
-	background:url(/img/mini_ico_report.svg) no-repeat 0 3px;
+	background:url(/img/icons/mini_ico_report.svg) no-repeat 0 3px;
+}
+.toc ul.editsource li{
+	background:url(/img/icons/mini_ico_rev.svg) no-repeat 0 3px;
 }
 .toc a,
 .toc a:link,
@@ -740,25 +765,34 @@ table td,table th{
 	width:600px;
 	margin:auto 0 auto auto;
 	position:relative;
+	text-align: left;
+}
+.toccontent h2,
+.toccontent h3,
+.toccontent h4,
+.toccontent h5,
+.toccontent h6{
+	color:#383838;
+	margin-top: 40px;
+	margin-bottom: 0;
 }
 .toccontent h2{
 	font-size:150%;
-	color:#383838;
 }
 .toccontent h3{
 	font-size:130%;
-	color:#383838;
 }
 .toccontent h4{
 	font-size:110%;
-	color:#383838;
 }
 .toccontent h5,.toccontent h6{
 	font-size:100%;
-	color:#383838;
 }
 .toccontent img{
 	max-width:100%;
+}
+.toccontent table thead{
+	text-align:center;
 }
 .toccontent a.auto-link:link,
 .toccontent a.auto-link:visited{
@@ -771,6 +805,13 @@ table td,table th{
 .toccontent:hover a.auto-link:link:hover,
 .toccontent:hover a.auto-link:visited:hover{
 	color:#63a4e1;
+}
+.toccontent .subhead-links{
+	visibility: hidden;
+	padding-top: 7px;
+}
+.toccontent:hover .subhead-links{
+	visibility: visible;
 }
 .toccontent a:link.term,
 .toccontent a:visited.term,
@@ -799,20 +840,30 @@ table td,table th{
 	margin:0;
 	overflow-y:visible;
 }
+.toccontent table.ntpd tr td+td+td{
+	white-space:nowrap;
+}
+.toccontent table.ntpd tr td+td+td+td{
+	white-space:normal;
+}
+.toccontent table thead th{
+	font-weight:normal;
+	border-bottom: 3px double #ddd;
+}
 
 .anchorAf{
 	position:relative;
 }
-.anchorAf a{
+.anchorAf a:first-child{
 	display:none;
 	position:absolute;
 	width:24px;
 	left:-24px;
 	bottom:0;
 	top:0;
-	background:url(/img/mini_ico_anchor.svg) no-repeat center center;
+	background:url(/img/icons/mini_ico_anchor.svg) no-repeat center center;
 }
-.anchorAf:hover a{
+.anchorAf:hover a:first-child{
 	display:block;
 }
 
@@ -856,6 +907,54 @@ table td,table th{
 .develdocdisclaimerclose:active:hover{
 	border:2px solid #ee9209;
 	color:#fff;
+}
+.glossary_term {
+	display: block;
+	width: 20em;
+	padding: 5px 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.ui-autocomplete-category {
+	font-weight: bold;
+	padding: .2em .4em;
+	margin: .8em 0 .2em;
+	line-height: 1.5;
+}
+ul.wrapped_list li {
+	list-style: none;
+	float: left;
+	width: 15em;
+	margin: 1em;
+}
+br.clear {
+	clear: left;
+}
+.notice {
+    text-align: center;
+}
+.notice span {
+    font-style: italic;
+}
+.subhead-links {
+	font-size: 85%;
+	height: 18px;
+}
+
+div.post {
+        max-width: 40em;
+        margin-right: auto;
+        margin-left: auto;
+}
+.post img {
+        max-width: 100%;
+}
+.post-meta {
+        margin-top: 20px;
+        font-style: italic;
+}
+.post-title {
+        padding-top: 20px;
 }
 
 .highlight  { background: #ffffff; }
@@ -1046,10 +1145,11 @@ table td,table th{
 .resources .resourcesext{
 	margin-top:5px;
 	min-height:0;
+	display: inline-block;
 }
 .resources .resourcesext p{
 	padding-left:24px;
-	background:url(/img/mini_ico_link.svg) no-repeat 0 4px;
+	background:url(/img/icons/mini_ico_link.svg) no-repeat 0 4px;
 }
 
 .resourcesorg{
@@ -1097,7 +1197,7 @@ table td,table th{
 	font-size:115%;
 	margin:6px 0;
 	padding-left:24px;
-	background:url(/img/mini_ico_link.svg) no-repeat 0 4px;
+	background:url(/img/icons/mini_ico_link.svg) no-repeat 0 4px;
 }
 
 .coredevtable div div:first-child{
@@ -1222,7 +1322,7 @@ table td,table th{
 	background-position:left -24px;
 }
 .walletmenu ul li ul li a{
-	background-image:url(/img/wallet_select.svg);
+	background-image:url(/img/icons/wallet_select.svg);
 	background-repeat:no-repeat;
 	background-position:-32px center;
 	padding:8px 32px 5px 32px;
@@ -1232,16 +1332,16 @@ table td,table th{
 	background-position:right center;
 }
 .walletmenu .wallet-mobile{
-	background-image:url(/img/wallet_menu_mobile.svg);
+	background-image:url(/img/icons/wallet_menu_mobile.svg);
 }
 .walletmenu .wallet-desktop{
-	background-image:url(/img/wallet_menu_desktop.svg);
+	background-image:url(/img/icons/wallet_menu_desktop.svg);
 }
 .walletmenu .wallet-hardware{
-	background-image:url(/img/wallet_menu_hardware.svg);
+	background-image:url(/img/icons/wallet_menu_hardware.svg);
 }
 .walletmenu .wallet-web{
-	background-image:url(/img/wallet_menu_web.svg);
+	background-image:url(/img/icons/wallet_menu_web.svg);
 }
 .walletmenu .wallet-blackberry{
 	background-image:url(/img/os/wallet_menu_blackberry.svg);
@@ -1264,16 +1364,45 @@ table td,table th{
 
 .wallets{
 	width:605px;
+	height:250px;
 	text-align:left;
 	position:relative;
 	margin:auto;
 	padding:40px 0 20px 0;
 	font-size:0;
+	opacity:1;
+	-moz-transition:opacity 400ms ease-out;
+	-webkit-transition:opacity 400ms ease-out;
+	transition:opacity 400ms ease-out;
+}
+.wallets.disabled{
+	opacity:0;
 }
 .wallets>div{
-	display:inline-block;
+	display:none;
 	vertical-align:top;
 	font-size:16px;
+}
+.wallets>div:nth-child(1n){
+	display:inline-block;
+}
+.wallets>div:nth-child(1n+13){
+	display:none;
+}
+.wallets>div:first-child,
+.wallets>div:first-child+div,
+.wallets>div:first-child+div+div,
+.wallets>div:first-child+div+div+div,
+.wallets>div:first-child+div+div+div+div,
+.wallets>div:first-child+div+div+div+div+div,
+.wallets>div:first-child+div+div+div+div+div+div,
+.wallets>div:first-child+div+div+div+div+div+div+div,
+.wallets>div:first-child+div+div+div+div+div+div+div+div,
+.wallets>div:first-child+div+div+div+div+div+div+div+div+div,
+.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div,
+.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div{
+	/*IE8 Support*/
+	display:inline-block;
 }
 .wallets>div>a,
 .wallets>div>a:visited,
@@ -1290,28 +1419,17 @@ table td,table th{
 	position:relative;
 	margin:0 14px 20px 14px;
 	white-space:nowrap;
+	outline:0;
 	-moz-transition:opacity 400ms ease-out;
 	-webkit-transition:opacity 400ms ease-out;
 	transition:opacity 400ms ease-out;
-}
-.wallets>div.disabled>a{
-	cursor:default;
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-	opacity:0.2;
-	-webkit-filter:grayscale(100%);
-	-moz-filter:grayscale(100%);
-	-ms-filter:grayscale(100%);
-	-o-filter:grayscale(100%);
-	filter:grayscale(100%);
-	filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-	filter:alpha(opacity=20), gray;
 }
 .wallets>div>a>span{
 	display:none;
 	position:absolute;
 	z-index:100;
 	height:32px;
-	background:url(/img/wallet_bubble.svg) no-repeat center 0;
+	background:url(/img/icons/wallet_bubble.svg) no-repeat center 0;
 	top:0;
 	left:0;
 	right:0;
@@ -1469,8 +1587,8 @@ table td,table th{
 }
 .wallets>div>div>h2:first-child+div+div+div>div>div{
 	display:inline-block;
-	background-image:url(/img/wallet_help.png);
-	background-image:none, url(/img/wallet_help.svg), url(/img/wallet_help.png);
+	background-image:url(/img/icons/wallet_help.png);
+	background-image:none, url(/img/icons/wallet_help.svg), url(/img/icons/wallet_help.png);
 	width:16px;
 	height:16px;
 	margin-left:5px;
@@ -1557,7 +1675,7 @@ table td,table th{
 	font-weight:normal;
 }
 .wallets .checkgood>div>span{
-	background-image:url(/img/checkbubble_pass.svg);
+	background-image:url(/img/icons/checkbubble_pass.svg);
 }
 .wallets .checkpass{
 	color:#329239;
@@ -1566,7 +1684,7 @@ table td,table th{
 	border-color:#329239;
 }
 .wallets .checkpass>div>span{
-	background-image:url(/img/checkbubble_pass.svg);
+	background-image:url(/img/icons/checkbubble_pass.svg);
 }
 .wallets .checkneutral{
 	color:#8b8b8b;
@@ -1575,7 +1693,7 @@ table td,table th{
 	border-color:#8b8b8b;
 }
 .wallets .checkneutral>div>span{
-	background-image:url(/img/checkbubble_neutral.svg);
+	background-image:url(/img/icons/checkbubble_neutral.svg);
 }
 .wallets .checkfail{
 	color:#ee9209;
@@ -1584,48 +1702,48 @@ table td,table th{
 	border-color:#ee9209;
 }
 .wallets .checkfail>div>span{
-	background-image:url(/img/checkbubble_fail.svg);
+	background-image:url(/img/icons/checkbubble_fail.svg);
 }
 .wallets .checkcontrol.checkpass,
 .wallets .checkcontrol.checkgood{
-	background-image:url(/img/check_control_pass.svg);
+	background-image:url(/img/icons/check_control_pass.svg);
 }
 .wallets .checkcontrol.checkfail{
-	background-image:url(/img/check_control_fail.svg);
+	background-image:url(/img/icons/check_control_fail.svg);
 }
-.wallets .checkdecentralization.checkpass,
-.wallets .checkdecentralization.checkgood{
-	background-image:url(/img/check_decentralization_pass.svg);
+.wallets .checkvalidation.checkpass,
+.wallets .checkvalidation.checkgood{
+	background-image:url(/img/icons/check_validation_pass.svg);
 }
-.wallets .checkdecentralization.checkneutral{
-	background-image:url(/img/check_decentralization_neutral.svg);
+.wallets .checkvalidation.checkneutral{
+	background-image:url(/img/icons/check_validation_neutral.svg);
 }
-.wallets .checkdecentralization.checkfail{
-	background-image:url(/img/check_decentralization_fail.svg);
+.wallets .checkvalidation.checkfail{
+	background-image:url(/img/icons/check_validation_fail.svg);
 }
 .wallets .checktransparency.checkpass,
 .wallets .checktransparency.checkgood{
-	background-image:url(/img/check_transparency_pass.svg);
+	background-image:url(/img/icons/check_transparency_pass.svg);
 }
 .wallets .checktransparency.checkfail{
-	background-image:url(/img/check_transparency_fail.svg);
+	background-image:url(/img/icons/check_transparency_fail.svg);
 }
 .wallets .checkenvironment.checkpass,
 .wallets .checkenvironment.checkgood{
-	background-image:url(/img/check_environment_pass.svg);
+	background-image:url(/img/icons/check_environment_pass.svg);
 }
 .wallets .checkenvironment.checkfail{
-	background-image:url(/img/check_environment_fail.svg);
+	background-image:url(/img/icons/check_environment_fail.svg);
 }
 .wallets .checkprivacy.checkpass,
 .wallets .checkprivacy.checkgood{
-	background-image:url(/img/check_privacy_pass.svg);
+	background-image:url(/img/icons/check_privacy_pass.svg);
 }
 .wallets .checkprivacy.checkneutral{
-	background-image:url(/img/check_privacy_neutral.svg);
+	background-image:url(/img/icons/check_privacy_neutral.svg);
 }
 .wallets .checkprivacy.checkfail{
-	background-image:url(/img/check_privacy_fail.svg);
+	background-image:url(/img/icons/check_privacy_fail.svg);
 }
 
 .walletsswitch{
@@ -1742,13 +1860,33 @@ h2 .rssicon{
 .downloadbox div div{
 	display:block;
 	width:190px;
+	height:46px;
 	margin:25px 0;
 	text-align:left;
+}
+.downloadbox div div span{
+	display:inline-block;
+	margin-left:6px;
+}
+.downloadbox div div span span{
+	display:block;
+	margin:6px 0 0 0;
+	font-size:80%;
 }
 .downloadbox img{
 	width:32px;
 	height:32px;
-	vertical-align:middle;
+	vertical-align:top;
+	position:relative;
+	top:4px;
+}
+.downloadbox .magnetlink{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	position:relative;
+	bottom:-1px;
+	background:url(/img/icons/mini_ico_magnet.svg) no-repeat;
 }
 
 .eventmap{
@@ -1804,6 +1942,9 @@ h2 .rssicon{
 	background-image:none;
 	color:#fff;
 }
+.eventdata{
+	display:none;
+}
 
 .detectmobile{
 	width:0;
@@ -1823,7 +1964,7 @@ h2 .rssicon{
 .press h2{
 	font-size:150%;
 }
-	
+
 .press-volunteer{
 	text-align:left;
 	margin-bottom:40px;
@@ -1837,7 +1978,6 @@ h2 .rssicon{
 	width:380px;
 	display:inline-block;
 	vertical-align:top;
-	text-align:left;
 	margin-bottom:15px;
 	margin-right:30px;
 }
@@ -1849,14 +1989,15 @@ h2 .rssicon{
 .press-faq>div>div{
 	height:0;
 	overflow:hidden;
-	text-align:justify;
 	-moz-transition:height 400ms ease-out;
 	-webkit-transition:height 400ms ease-out;
 	transition:height 400ms ease-out;
 }
 .press-faq li{
-	text-align:justify;
 	line-height:1.5em;
+}
+.press-faq p{
+	text-align:left;
 }
 .press-faq div span p{
 	margin-bottom:0;
@@ -1953,40 +2094,6 @@ h2 .rssicon{
 	content:"”";
 }
 
-.press-news{
-	text-align:left;
-	-webkit-border-radius:8px;
-	-moz-border-radius:8px;
-	border-radius:8px;
-}
-.press-news>div{
-	height:125px;
-	margin-bottom:30px;
-	width:700px;
-}
-.press-news>div>a>img{
-	width:185px;
-	height:123px;
-	float:left;
-	margin-right:30px;
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	border-radius:10px;
-}
-.press-news>div>a:first-child+a{
-	display:block;
-	margin-bottom:10px;
-}
-.press-news a:link,
-.press-news a:active,
-.press-news a:visited{
-	font-weight:bold;
-	color:#2c6fad;
-}
-.press-news>div>a:first-child+a+a+p{
-	font-size:80%;
-}
-
 /*Styles specific to printing*/
 
 @media print{
@@ -1994,9 +2101,6 @@ h2 .rssicon{
 		display:none;
 	}
 	.footer{
-		display:none;
-	}
-	.sponsor-banner{
 		display:none;
 	}
 	.content{
@@ -2020,14 +2124,19 @@ h2 .rssicon{
 	img{
 		max-width:100%;
 	}
-	h1{
-		text-align:left;
+	h1,
+	h2{
+		text-align:center;
+	}
+	.titleicon,
+	.warningicon{
+		display:block;
+		position:static;
+		margin:auto;
+		margin-bottom:5px;
 	}
 	.banner-message div div{
 		width:auto;
-	}
-	.summary{
-		text-align:left;
 	}
 	.head{
 		margin:0;
@@ -2061,7 +2170,7 @@ h2 .rssicon{
 		height:40px;
 		width:40px;
 		padding:12px;
-		background-image:url(/img/menumobile.svg);
+		background-image:url(/img/icons/menumobile.svg);
 		background-repeat:no-repeat;
 		background-position:center center;
 	}
@@ -2104,7 +2213,7 @@ h2 .rssicon{
 		position:static;
 		text-align:left;
 		margin:0;
-		padding:15px 10px 20px 10px;
+		padding:20px 10px;
 		border-right:0;
 		border-left:0;
 		-webkit-border-radius:0;
@@ -2113,13 +2222,6 @@ h2 .rssicon{
 	}
 	.footer{
 		line-height:1.5em;
-		width:auto;
-	}
-	.footermenu{
-		display:block;
-		margin-bottom:20px;
-	}
-	.sponsor-banner{
 		width:auto;
 	}
 	.index{
@@ -2131,9 +2233,12 @@ h2 .rssicon{
 	.index li{
 		padding:3px 0;
 	}
-	.docreference{
-		width:220px;
-		margin:0 0 40px 0;
+	.docreference a{
+		display:block;
+		margin:0 auto 40px auto;
+	}
+	.glossary_term {
+		width: 80%;
 	}
 	.toc{
 		position:static;
@@ -2167,10 +2272,9 @@ h2 .rssicon{
 	.toc ul li ul li a.active:before{
 		content:"";
 	}
-	.toc ul.goback li{
-		background:none;
-	}
-	.toc ul.reportissue li{
+	.toc ul.goback li,
+	.toc ul.reportissue li,
+	.toc ul.editsource li{
 		background:none;
 	}
 	.toccontent{
@@ -2199,11 +2303,8 @@ h2 .rssicon{
 	.tablehalf img{
 		width:auto;
 		height:auto;
-		margin: auto;
-		display: block;
-	}
-	.tablehalf h2 {
-		text-align: center;
+		margin:auto;
+		display:block;
 	}
 	.listtable div div{
 		display:block;
@@ -2223,23 +2324,8 @@ h2 .rssicon{
 		display:block;
 		margin-right:0;
 	}
-	.press-faq>div>div{
-		text-align:left;
-	}
-	.press-faq li{
-		text-align:left;
-	}
 	.press-quotes p{
 		width:auto;
-	}
-	.press-news>div{
-		width:auto;
-		height:auto;
-	}
-	.press-news>div>a>img{
-		float:none;
-		margin-right:0;
-		margin-bottom:20px;
 	}
 	.mainvideo{
 		position:relative;
@@ -2255,6 +2341,7 @@ h2 .rssicon{
 		width:100%;
 		height:100%;
 	}
+	.mainlist,
 	.mainlist>div{
 		width:auto;
 		display:block;
@@ -2284,6 +2371,8 @@ h2 .rssicon{
 		padding-right:0;
 	}
 	.start div div div{
+		position:static;
+		text-align:center;
 		bottom:15px;
 	}
 	.start>div>div:first-child+div{
@@ -2309,6 +2398,10 @@ h2 .rssicon{
 		padding-left:0;
 		margin-left:0;
 	}
+	.resources,
+	.resources p{
+		text-align:center;
+	}
 	.resourcesorg div div{
 		width:auto;
 		display:block;
@@ -2322,9 +2415,6 @@ h2 .rssicon{
 	.resourcesmore div{
 		padding:0;
 		border:0;
-	}
-	.resourcesmore div h2{
-		text-align:left;
 	}
 	.walletmenu ul{
 		display:block;
@@ -2342,9 +2432,7 @@ h2 .rssicon{
 	}
 	.wallets{
 		width:auto;
-	}
-	.wallets>div.disabled{
-		display:none;
+		height:auto;
 	}
 	.wallets>div:hover>span{
 		display:none;
@@ -2441,10 +2529,6 @@ h2 .rssicon{
 	.download div p{
 		text-align:left;
 	}
-	.download h1,
-	.download h2{
-		text-align:left;
-	}
 	.download .mainbutton{
 		display:none;
 	}
@@ -2454,7 +2538,7 @@ h2 .rssicon{
 		text-align:left;
 	}
 	.downloadbox div div{
-		margin:10px 0;
+		margin:15px 0;
 		width:auto;
 	}
 	.downloadbox div{

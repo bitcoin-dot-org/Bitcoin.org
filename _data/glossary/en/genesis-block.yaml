@@ -1,0 +1,29 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Genesis Block, Block 0
+
+    summary_max_255_characters_no_formatting: >
+        The first block in the Bitcoin block chain.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Genesis block
+        - Block 0
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Genesis blocks
+        - block zero
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Generation transaction (the first transaction in a block)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Genesis block](/en/developer-guide#term-genesis-block) --- Bitcoin.org Developer Guide"
+        - "[Genesis block](https://en.bitcoin.it/wiki/Genesis_block) --- Bitcoin Wiki"
+        - "[Why can't the genesis block coinbase transaction be spent?](http://bitcoin.stackexchange.com/q/10009) --- Bitcoin StackExchange"
+
+---

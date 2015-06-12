@@ -1,3 +1,6 @@
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 #alerts.rb generates alert pages using files in _alerts
 #and assign them the 'alert' category.
 
@@ -35,6 +38,9 @@ module Jekyll
         if self.data.has_key?('banner') and !self.data['banner'].nil? and self.data['banner'].length>0
           site.config['ALERT']='<a href="/'+dstdir+'/'+dst.gsub('.html','')+'">'+self.data['banner']+'</a>'
         end
+        if self.data.has_key?('active') and !self.data['active'].nil? and self.data['active'] == true
+          site.config['STATUS']=1
+        end
         if self.data.has_key?('alias')
           site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['alias']+'.html', date)
           site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['alias']+'/index.html', date)
@@ -45,7 +51,13 @@ module Jekyll
 
   class AlertPageGenerator < Generator
     def generate(site)
-      #generate each alert based on templates
+      #Generate each alert based on templates
+      site.config['STATUS'] = 0
+      #Do nothing if plugin is disabled
+      if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('alerts').nil?
+        print 'Alerts disabled' + "\n"
+        return
+      end
       Dir.foreach('_alerts') do |file|
         next if file == '.' or file == '..'
         lang = 'en'

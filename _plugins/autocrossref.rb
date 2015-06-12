@@ -1,3 +1,6 @@
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 ## autocrossref.rb automatically adds cross reference links in documentation
 ## texts using the list of words defined in _autocrossref.yaml.
 
@@ -30,13 +33,36 @@ require 'yaml'
     def render(context)
       output = super
 
-      ## Workaround for inconsistent relative directory
-      path = File.expand_path(File.dirname(__FILE__)) + "/.."
-      ## Load terms from file
+      ## Load terms from file only if we haven't loaded them before
       site = context.registers[:site].config
-      if !site.has_key?("crossref")
-        site['crossref'] = YAML.load_file(path + "/_autocrossref.yaml")
+      if !site.has_key?("crossref_loaded")
+
+        ## Load refs from file and then downcase them all so we can
+        ## easily detect when we define xrefs more than once
+        mixed_case_refs = YAML.load_file("_autocrossref.yaml")
+        unvalidated_refs = Hash.new
+        mixed_case_refs.each { |key, value|
+          unvalidated_refs[key.to_s.downcase] = value.to_s.downcase
+        }
+
+        if site.has_key?("crossref")
+          ## We already have refs loaded, so merge
+          site['crossref'].merge!(unvalidated_refs) {
+            |key, old_value, new_value|
+
+            if old_value != new_value
+              abort("Error: autocrossref key '#{key}' wants to point to both '#{old_value}' and '#{new_value}'")
+            end
+
+            new_value
+          }
+        else
+          ## We don't have refs loaded yet, so copy
+          site['crossref'] = unvalidated_refs
+        end
+        site['crossref_loaded'] = true
       end
+
 
       ## Sort terms by reverse length, so longest matches get linked
       ## first (e.g. "block chain" before "block"). Otherwise short
@@ -65,13 +91,20 @@ require 'yaml'
             (?![^\s]*<!--noref-->)  ## No subst if <!--noref--> after key
             (?!((?!<pre>).)*(<\/pre>))  ## No subst on a line with a closing pre tag. This 
                                         ## prevents matching in {% highlight %} code blocks.
-            (?![^\(]*(\.svg|\.png))  ## No subst if key inside an image name. This 
+            (?![^\(]*(\.svg|\.png|\.gif))  ## No subst if key inside an image name. This 
 		     ## simple regex has the side effect that we can't
-		     ## use .svg or .png in non-image base text; if that
+		     ## use .svg, .png, or .gif in non-image base text; if that
 		     ## becomes an issue, we can devise a more complex
 		     ## regex
             (?!\w)  ## Don't match inside words
-          /xmi, "[\\&][#{term[1]}]{:.auto-link}")
+            (?!`)   ## Don't match strings ending with a tic, unless the xref itself ends with a tic
+          /xmi) {|s|
+              if term[1] == "do not autocrossref"
+                  s.gsub(/( |$)/, "<!--noref-->\\&")
+              else
+                  "[#{s}][#{term[1]}]{:.auto-link}"
+              end
+              }
       }
       output.gsub!(/<!--.*?-->/m,'')  ## Remove all HTML comments
 
@@ -80,4 +113,30 @@ require 'yaml'
   end
 end
 
-Liquid::Template.register_tag('autocrossref', Jekyll::AutoCrossRefBlock)
+module Jekyll
+
+require 'yaml'
+
+  class AutoCrossRefBlockDisabled < Liquid::Block
+
+    def initialize(tag_name, text, tokens)
+      super
+    end
+
+    def render(context)
+      output = super
+
+      output
+    end
+  end
+end
+
+
+
+#Do nothing if plugin is disabled
+if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('autocrossref').nil?
+  print 'Autocrossref disabled' + "\n"
+  Liquid::Template.register_tag('autocrossref', Jekyll::AutoCrossRefBlockDisabled)
+else
+  Liquid::Template.register_tag('autocrossref', Jekyll::AutoCrossRefBlock)
+end

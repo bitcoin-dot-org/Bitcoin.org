@@ -1,4 +1,7 @@
 ---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 layout: base
 id: choose-your-wallet
 
@@ -20,7 +23,7 @@ wallets:
         - linux
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkgooddecentralizefullnode"
+          validation: "checkgoodvalidationfullnode"
           transparency: "checkgoodtransparencydeterministic"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkgoodprivacyimproved"
@@ -45,7 +48,7 @@ wallets:
         - linux
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassdecentralizespv"
+          validation: "checkpassvalidationspvp2p"
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkfailprivacyweak"
@@ -70,7 +73,7 @@ wallets:
         - linux
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkgooddecentralizefullnode"
+          validation: "checkgoodvalidationfullnoderequired"
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkgoodprivacyimproved"
@@ -95,13 +98,38 @@ wallets:
         - linux
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassdecentralizeservers"
+          validation: "checkpassvalidationspvservers"
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkpassprivacybasic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- msigna:
+    title: "mSIGNA"
+    titleshort: "mSIGNA"
+    compat: "desktop windows mac linux"
+    level: 2
+    platform:
+      desktop:
+        text: "walletmsigna"
+        link: "https://ciphrex.com/redirect/?referer=bitcoin.org"
+        source: "https://ciphrex.com/redirect/?url=https://github.com/ciphrex/CoinVault?referer=bitcoin.org"
+        screenshot: "msigna.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkgoodvalidationfullnoderequired"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkgoodprivacyimproved"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkpassprivacydisclosurefullnode"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - bitcoinwallet:
     title: "Bitcoin Wallet"
@@ -119,12 +147,12 @@ wallets:
         - blackberry
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassdecentralizespv"
+          validation: "checkpassvalidationspvp2p"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
+          privacy: "checkpassprivacybasic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       android:
@@ -137,12 +165,12 @@ wallets:
         - blackberry
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassdecentralizespv"
+          validation: "checkpassvalidationspvp2p"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
+          privacy: "checkpassprivacybasic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       blackberry:
@@ -155,7 +183,7 @@ wallets:
         - blackberry
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassdecentralizespv"
+          validation: "checkpassvalidationspvp2p"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkfailprivacyweak"
@@ -163,44 +191,63 @@ wallets:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
-- kncwallet:
-    title: "KnC Wallet"
-    titleshort: "KnC<br>Wallet"
-    compat: "mobile android"
-    level: 2
+- airbitzwallet:
+    title: "Airbitz Bitcoin Wallet"
+    titleshort: "Airbitz"
+    compat: "mobile android ios"
+    level: 3
+
     platform:
       mobile:
-        text: "walletkncwallet"
-        link: "https://kncwallet.com/"
-        source: "https://github.com/kncgroup/bitcoin-wallet"
-        screenshot: "kncwalletandroid.png"
+        text: "walletairbitzwallet"
+        link: "https://airbitz.co/bitcoin-wallet/"
+        source: "https://github.com/Airbitz"
+        screenshot: "airbitzwalletandroid.png"
         os:
         - android
+        - ios
         check:
-          control: "checkgoodcontrolfull"
-          decentralization: "checkpassdecentralizespv"
-          transparency: "checkpasstransparencyopensource"
+          control: "checkpasscontrolhybrid"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
+          privacy: "checkpassprivacybasic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       android:
-        text: "walletkncwallet"
-        link: "https://kncwallet.com/"
-        source: "https://github.com/kncgroup/bitcoin-wallet"
-        screenshot: "kncwalletandroid.png"
+        text: "walletairbitzwallet"
+        link: "https://play.google.com/store/apps/details?id=com.airbitz"
+        source: "https://github.com/Airbitz"
+        screenshot: "airbitzwalletandroid.png"
         os:
         - android
         check:
-          control: "checkgoodcontrolfull"
-          decentralization: "checkpassdecentralizespv"
-          transparency: "checkpasstransparencyopensource"
+          control: "checkpasscontrolhybrid"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
+          privacy: "checkpassprivacybasic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      ios:
+        text: "walletairbitzwallet"
+        link: "https://itunes.apple.com/us/app/bitcoin-wallet-map-directory/id843536046?mt=8"
+        source: "https://github.com/Airbitz"
+        screenshot: "airbitzwalletandroid.png"
+        os:
+        - ios
+        check:
+          control: "checkpasscontrolhybrid"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencynew"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
 - breadwallet:
@@ -211,15 +258,15 @@ wallets:
     platform:
       mobile:
         text: "walletbreadwallet"
-        link: "http://breadwallet.com/"
+        link: "https://itunes.apple.com/app/breadwallet/id885251393"
         source: "https://github.com/voisine/breadwallet"
         screenshot: "breadwallet.png"
         os:
         - ios
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassdecentralizespv"
-          transparency: "checkfailtransparencynew"
+          validation: "checkpassvalidationspvp2p"
+          transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
         privacycheck:
@@ -228,15 +275,15 @@ wallets:
           privacynetwork: "checkfailprivacynetworknosupporttor"
       ios:
         text: "walletbreadwallet"
-        link: "http://breadwallet.com/"
+        link: "https://itunes.apple.com/app/breadwallet/id885251393"
         source: "https://github.com/voisine/breadwallet"
         screenshot: "breadwallet.png"
         os:
         - ios
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassdecentralizespv"
-          transparency: "checkfailtransparencynew"
+          validation: "checkpassvalidationspvp2p"
+          transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
         privacycheck:
@@ -251,48 +298,48 @@ wallets:
     platform:
       hardware:
         text: "wallettrezor"
-        link: "http://bitcointrezor.com/"
+        link: "https://www.bitcointrezor.com/"
         source: "https://github.com/trezor/"
         screenshot: "trezor.png"
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkneutraldecentralizevariable"
+          validation: "checkneutralvalidationvariable"
           transparency: "checkfailtransparencynew"
           environment: "checkgoodenvironmenthardware"
           privacy: "checkneutralprivacyvariable"
-- hive:
-    title: "Hive"
-    titleshort: "Hive"
-    compat: "mobile desktop web android ios mac"
-    level: 3
+- ledgernano:
+    title: "Ledger Nano"
+    titleshort: "Ledger<br>Nano"
+    compat: "hardware"
+    level: 2
+    platform:
+      hardware:
+        text: "walletnano"
+        link: "https://www.ledgerwallet.com/"
+        source: "https://github.com/LedgerHQ/"
+        screenshot: "ledger.png"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkneutralvalidationvariable"
+          transparency: "checkfailtransparencynew"
+          environment: "checkgoodenvironmenthardware"
+          privacy: "checkneutralprivacyvariable"
+- bither:
+    title: "Bither"
+    titleshort: "Bither"
+    compat: "mobile ios android desktop windows mac linux"
+    level: 2
     platform:
       mobile:
-        text: "wallethive-android"
-        link: "https://play.google.com/store/apps/details?id=com.hivewallet.androidclient.wallet"
-        source: "https://github.com/hivewallet/hive-android"
-        screenshot: "hiveandroid.png"
+        text: "walletbither"
+        link: "https://itunes.apple.com/us/app/bither/id899478936"
+        source: "https://github.com/bither/bither-ios"
+        screenshot: "bithermobile.png"
         os:
-        - android
+        - ios
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassdecentralizespv"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
-        privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
-      android:
-        text: "wallethive-android"
-        link: "https://play.google.com/store/apps/details?id=com.hivewallet.androidclient.wallet"
-        source: "https://github.com/hivewallet/hive-android"
-        screenshot: "hiveandroid.png"
-        os:
-        - android
-        check:
-          control: "checkgoodcontrolfull"
-          decentralization: "checkpassdecentralizespv"
+          validation: "checkpassvalidationspvp2p"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkfailprivacyweak"
@@ -301,15 +348,108 @@ wallets:
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       ios:
-        text: "wallethive-web"
-        link: "https://itunes.apple.com/us/app/hive-wallet/id906990301?mt=8"
-        source: "https://github.com/hivewallet/hive-ios"
-        screenshot: "hiveios.png"
+        text: "walletbither"
+        link: "https://itunes.apple.com/us/app/bither/id899478936"
+        source: "https://github.com/bither/bither-ios"
+        screenshot: "bithermobile.png"
         os:
         - ios
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkfaildecentralizecentralized"
+          validation: "checkpassvalidationspvp2p"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "walletbither"
+        link: "https://play.google.com/store/apps/details?id=net.bither"
+        source: "https://github.com/bither/bither-android"
+        screenshot: "bithermobile.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationspvp2p"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      desktop:
+        text: "walletbither"
+        link: "http://bither.net"
+        source: "https://github.com/bither/bither-desktop-java"
+        screenshot: "bitherdesktop.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationspvp2p"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkfailprivacyweak"
+        privacycheck:
+          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+- hive:
+    title: "Hive"
+    titleshort: "Hive"
+    compat: "mobile desktop web android ios mac"
+    level: 3
+    platform:
+      mobile:
+        text: "wallethive-web"
+        link: "https://play.google.com/store/apps/details?id=com.hivewallet.hive.cordova"
+        source: "https://github.com/hivewallet/hive-ios/tree/android"
+        screenshot: "hivemobile.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencynew"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "wallethive-web"
+        link: "https://play.google.com/store/apps/details?id=com.hivewallet.hive.cordova"
+        source: "https://github.com/hivewallet/hive-ios/tree/android"
+        screenshot: "hivemobile.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencynew"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      ios:
+        text: "wallethive-web"
+        link: "https://itunes.apple.com/us/app/hive-wallet/id906990301?mt=8"
+        source: "https://github.com/hivewallet/hive-ios"
+        screenshot: "hivemobile.png"
+        os:
+        - ios
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkfailvalidationcentralized"
           transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
@@ -319,14 +459,14 @@ wallets:
           privacynetwork: "checkfailprivacynetworknosupporttor"
       desktop:
         text: "wallethive"
-        link: "https://hivewallet.com/#native"
+        link: "http://mac.hivewallet.com/"
         source: "https://github.com/hivewallet/hive-osx"
         screenshot: "hivemac.png"
         os:
         - mac
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkpassdecentralizespv"
+          validation: "checkpassvalidationspvp2p"
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkfailprivacyweak"
@@ -342,7 +482,7 @@ wallets:
         os:
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkfaildecentralizecentralized"
+          validation: "checkfailvalidationcentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkpassprivacybasic"
@@ -365,115 +505,39 @@ wallets:
         - android
         check:
           control: "checkgoodcontrolfull"
-          decentralization: "checkfaildecentralizecentralized"
+          validation: "checkfailvalidationcentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
+          privacy: "checkpassprivacybasic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
-- blockchain:
-    title: "Blockchain.info"
-    titleshort: "Blockchain<br>.info"
-    compat: "mobile desktop web android ios windows mac linux"
+- bitgo:
+    title: "BitGo"
+    titleshort: "BitGo"
+    compat: "web desktop windows mac linux"
     level: 3
     platform:
-      mobile:
-        text: "walletblockchaininfo"
-        link: "https://play.google.com/store/apps/details?id=piuk.blockchain.android"
-        source: "https://github.com/blockchain/My-Wallet-Android"
-        screenshot: "blockchainandroid.png"
-        os:
-        - android
-        - ios
-        check:
-          control: "checkpasscontrolhybrid"
-          decentralization: "checkfaildecentralizecentralized"
-          transparency: "checkfailtransparencynew"
-          environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
-        privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
       desktop:
-        text: "walletblockchaininfo"
-        link: "https://chrome.google.com/webstore/detail/blockchain/glaohkkooicollgefkkmndjcbblominl"
-        source: "https://github.com/blockchain/My-Wallet-Chrome-Extension"
-        screenshot: "blockchaindesktop.png"
+        text: "walletbitgo"
+        link: "https://chrome.google.com/webstore/detail/bitgo/jlgeogaipkoajobchncghcojanffjfhl"
+        source: "https://github.com/BitGo/bitgo-chrome"
+        screenshot: "bitgo.png"
         os:
         - windows
         - mac
         - linux
         check:
-          control: "checkpasscontrolhybrid"
-          decentralization: "checkfaildecentralizecentralized"
+          control: "checkpasscontrolmulti"
+          validation: "checkfailvalidationcentralized"
           transparency: "checkfailtransparencyremote"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkfailprivacyweak"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
-      web:
-        text: "walletblockchaininfo"
-        link: "https://chrome.google.com/webstore/detail/blockchain/glaohkkooicollgefkkmndjcbblominl"
-        source: "https://github.com/blockchain/My-Wallet-Chrome-Extension"
-        screenshot: "blockchaindesktop.png"
-        os:
-        check:
-          control: "checkpasscontrolhybrid"
-          decentralization: "checkfaildecentralizecentralized"
-          transparency: "checkfailtransparencyremote"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkfailprivacyweak"
-        privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
-      ios:
-        text: "walletblockchaininfo"
-        link: "https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309"
-        source: "https://github.com/blockchain/My-Wallet-iPhone"
-        screenshot: "blockchainiphone.png"
-        os:
-        - android
-        - ios
-        check:
-          control: "checkpasscontrolhybrid"
-          decentralization: "checkfaildecentralizecentralized"
-          transparency: "checkfailtransparencynew"
-          environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
-        privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
-      android:
-        text: "walletblockchaininfo"
-        link: "https://play.google.com/store/apps/details?id=piuk.blockchain.android"
-        source: "https://github.com/blockchain/My-Wallet-Android"
-        screenshot: "blockchainandroid.png"
-        os:
-        - android
-        - ios
-        check:
-          control: "checkpasscontrolhybrid"
-          decentralization: "checkfaildecentralizecentralized"
-          transparency: "checkfailtransparencynew"
-          environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
-        privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
-- bitgo:
-    title: "BitGo"
-    titleshort: "BitGo"
-    compat: "web"
-    level: 3
-    platform:
       web:
         text: "walletbitgo"
         link: "https://www.bitgo.com/"
@@ -481,7 +545,7 @@ wallets:
         os:
         check:
           control: "checkpasscontrolmulti"
-          decentralization: "checkfaildecentralizecentralized"
+          validation: "checkfailvalidationcentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
@@ -505,7 +569,7 @@ wallets:
         - ios
         check:
           control: "checkpasscontrolmulti"
-          decentralization: "checkpassdecentralizeservers"
+          validation: "checkpassvalidationservers"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
@@ -524,7 +588,7 @@ wallets:
         - linux
         check:
           control: "checkpasscontrolmulti"
-          decentralization: "checkfaildecentralizecentralized"
+          validation: "checkfailvalidationcentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
@@ -540,7 +604,7 @@ wallets:
         os:
         check:
           control: "checkpasscontrolmulti"
-          decentralization: "checkfaildecentralizecentralized"
+          validation: "checkfailvalidationcentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
@@ -550,7 +614,7 @@ wallets:
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
       ios:
         text: "walletgreenaddress"
-        link: "https://itunes.apple.com/us/app/greenaddress/id889740745?ls=1&mt=8"
+        link: "https://itunes.apple.com/us/app/greenaddress/id889740745?ls=1&amp;mt=8"
         source: "https://github.com/greenaddress/WalletCordova"
         screenshot: "greenaddressandroid.png"
         os:
@@ -558,7 +622,7 @@ wallets:
         - ios
         check:
           control: "checkpasscontrolmulti"
-          decentralization: "checkpassdecentralizeservers"
+          validation: "checkpassvalidationservers"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
@@ -576,7 +640,7 @@ wallets:
         - ios
         check:
           control: "checkpasscontrolmulti"
-          decentralization: "checkpassdecentralizeservers"
+          validation: "checkpassvalidationservers"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
@@ -601,10 +665,6 @@ wallets:
           control: "checkpasscontrolshared"
           decentralization: "checkfaildecentralizecentralized"
           transparency: "checkfailtransparencynew"
-          environment: "checkpassenvironmentmobile"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       desktop:
@@ -641,6 +701,45 @@ wallets:
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
+- coinomi:
+    title: "Coinomi Universal Wallet"
+    titleshort: "Coinomi"
+    compat: "mobile android"
+    level: 3
+    platform:
+      mobile:
+        text: "walletcoinomi"
+        link: "https://play.google.com/store/apps/details?id=com.coinomi.wallet"
+        source: "https://github.com/Coinomi"
+        screenshot: "coinomiwalletandroid.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurecentralized"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "walletcoinomi"
+        link: "https://play.google.com/store/apps/details?id=com.coinomi.wallet"
+        source: "https://github.com/Coinomi/coinomi-android"
+        screenshot: "coinomiwalletandroid.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurecentralized"
           privacynetwork: "checkfailprivacynetworknosupporttor"
 - coinbase:
     title: "Coinbase"
@@ -655,7 +754,7 @@ wallets:
         os:
         check:
           control: "checkfailcontrolthirdparty"
-          decentralization: "checkfaildecentralizecentralized"
+          validation: "checkfailvalidationcentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkpassprivacybasic"
@@ -676,7 +775,7 @@ wallets:
         os:
         check:
           control: "checkfailcontrolthirdparty"
-          decentralization: "checkfaildecentralizecentralized"
+          validation: "checkfailvalidationcentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkpassprivacybasic"
@@ -697,7 +796,7 @@ wallets:
         os:
         check:
           control: "checkfailcontrolthirdpartyinsured"
-          decentralization: "checkfaildecentralizecentralized"
+          validation: "checkfailvalidationcentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkpassprivacybasic"
@@ -705,7 +804,129 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- coinapult:
+    title: "Coinapult"
+    titleshort: "Coinapult"
+    compat: "web"
+    level: 4
+    platform:
+      web:
+        text: "walletcoinapult"
+        link: "https://coinapult.com/"
+        screenshot: "coinapult.png"
+        os:
+        check:
+          control: "checkfailcontrolthirdparty"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+
+- circle:
+    title: "Circle"
+    titleshort: "Circle"
+    compat: "web"
+    level: 4
+    platform:
+      web:
+        text: "walletcircle"
+        link: "https://circle.com/"
+        screenshot: "circle.png"
+        os:
+        check:
+          control: "checkfailcontrolthirdpartyinsured"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- ninki:
+    title: "Ninki Wallet"
+    titleshort: "Ninki"
+    compat: "mobile desktop windows mac linux android ios"
+    level: 3
+    platform:
+      desktop:
+        text: "walletninki"
+        link: "https://chrome.google.com/webstore/detail/ninki-wallet/ojjnofoknpfkbbamkfililnkoeoiohih"
+        source: "https://github.com/Ninkip2p/NinkiWalletCRX"
+        screenshot: "ninki.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkpasscontrolmulti"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencynew"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      mobile:
+        text: "walletninki"
+        link: "https://play.google.com/store/apps/details?id=com.ninki.wallet&amp;hl=en"
+        source: "https://github.com/Ninkip2p/NinkiCordova"
+        screenshot: "ninki.png"
+        os:
+        - android
+        - ios
+        check:
+          control: "checkpasscontrolmulti"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencynew"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      ios:
+        text: "walletninki"
+        link: "https://itunes.apple.com/us/app/ninki-wallet/id965528267?mt=8"
+        source: "https://github.com/Ninkip2p/NinkiCordova"
+        screenshot: "ninki.png"
+        os:
+        - ios
+        check:
+          control: "checkpasscontrolmulti"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencynew"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "walletninki"
+        link: "https://play.google.com/store/apps/details?id=com.ninki.wallet&amp;hl=en"
+        source: "https://github.com/Ninkip2p/NinkiCordova"
+        screenshot: "ninki.png"
+        os:
+        - android
+        check:
+          control: "checkpasscontrolmulti"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencynew"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 ---
+
+<!-- Note: this file exempt from check-for-subheading-anchors check -->
 
 <h1>{% translate pagetitle %}</h1>
 <p class="summary">{% translate pagedesc %}</p>
@@ -713,27 +934,27 @@ wallets:
 <div class="walletmenu" id="walletmenu" onmouseover="walletListener(event);" onmouseout="walletListener(event);" onclick="walletListener(event);">
   <ul onclick="mobileMenuHover(event);">
     <li class="wallet-mobile">
-    <a data-walletcompat="mobile">{% translate walletcatmobile %}</a>
+    <a id="mobile" data-walletcompat="mobile">{% translate walletcatmobile %}</a>
     <ul>
-      <li class="wallet-android"><a data-walletcompat="android">{% translate platformandroid %}</a></li>
-      <li class="wallet-ios"><a data-walletcompat="ios">{% translate platformios %}</a></li>
-      <li class="wallet-blackberry"><a data-walletcompat="blackberry">{% translate platformblackberry %}</a></li>
+      <li class="wallet-android"><a id="android" data-walletcompat="android">{% translate platformandroid %}</a></li>
+      <li class="wallet-ios"><a id="ios" data-walletcompat="ios">{% translate platformios %}</a></li>
+      <li class="wallet-blackberry"><a id="blackberry" data-walletcompat="blackberry">{% translate platformblackberry %}</a></li>
     </ul>
     </li>
     <li class="wallet-desktop">
-    <a data-walletcompat="desktop">{% translate walletcatdesktop %}</a>
+    <a id="desktop" data-walletcompat="desktop">{% translate walletcatdesktop %}</a>
     <ul>
-      <li class="wallet-windows"><a data-walletcompat="windows">{% translate platformwindows %}</a></li>
-      <li class="wallet-mac"><a data-walletcompat="mac">{% translate platformmac %}</a></li>
-      <li class="wallet-linux"><a data-walletcompat="linux">{% translate platformlinux %}</a></li>
+      <li class="wallet-windows"><a id="windows" data-walletcompat="windows">{% translate platformwindows %}</a></li>
+      <li class="wallet-mac"><a id="mac" data-walletcompat="mac">{% translate platformmac %}</a></li>
+      <li class="wallet-linux"><a id="linux" data-walletcompat="linux">{% translate platformlinux %}</a></li>
     </ul>
     </li>
-    <li class="wallet-hardware"><a data-walletcompat="hardware">{% translate walletcathardware %}</a></li>
-    <li class="wallet-web"><a data-walletcompat="web">{% translate walletcatweb %}</a></li>
+    <li class="wallet-hardware"><a id="hardware" data-walletcompat="hardware">{% translate walletcathardware %}</a></li>
+    <li class="wallet-web"><a id="web" data-walletcompat="web">{% translate walletcatweb %}</a></li>
   </ul>
 </div>
 
-<div class="wallets" id="wallets" onclick="walletMobileShow(event);walletDisabledShow(event);">
+<div class="wallets" id="wallets" onclick="walletShow(event);">
 {% for wallet in page.wallets %}{% for wallet in wallet %}{% if wallet[1].platform.mobile %}{% assign platform = wallet[1].platform.mobile %}{% elsif wallet[1].platform.desktop %}{% assign platform = wallet[1].platform.desktop %}{% elsif wallet[1].platform.hardware %}{% assign platform = wallet[1].platform.hardware %}{% else %}{% assign platform = wallet[1].platform.web %}{% endif %}
 <div id="wallet-{{ wallet[0] }}" data-walletcompat="{{ wallet[1].compat }}" data-walletlevel="{{ wallet[1].level }}">
   <span></span>
@@ -795,10 +1016,9 @@ wallets:
 
 <div class="wallets walletsmobile" id="walletsmobile"></div>
 
-<script>if(isMobile())walletShowPlatform('mobile');else walletShowPlatform('desktop');</script>
-<script>walletRotate();</script>
+<script>if (isMobile()) walletShowPlatform('mobile'); else walletShowPlatform('default');</script>
 
 <div class="walletsdisclaimer">
-<h2><img src="/img/warning.svg" class="warningicon" alt="warning">{% translate educate %}</h2>
+<h2><img src="/img/icons/warning.svg" class="warningicon" alt="warning">{% translate educate %}</h2>
 <p>{% translate educatetxt %}</p>
 </div>

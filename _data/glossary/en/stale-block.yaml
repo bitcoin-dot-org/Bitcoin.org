@@ -1,0 +1,28 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Stale Block
+
+    summary_max_255_characters_no_formatting: >
+        Blocks which were successfully mined but which aren't included
+        on the current best block chain, likely because some other block
+        at the same height had its chain extended first.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Stale block
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - stale blocks
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Orphan block (a block whose previous (parent) hash field points to an unknown block, meaning the orphan can't be validated)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Stale blocks](/en/developer-guide#term-stale-block) --- Bitcoin.org Developer Guide"
+        - "[What are orphaned and stale blocks?](http://bitcoin.stackexchange.com/q/5859) --- Bitcoin StackExchange"
+
+---

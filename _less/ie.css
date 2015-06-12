@@ -1,3 +1,8 @@
+/*
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+*/
+
 body{
 	/*Allows to use :hover on any html tag using javascript*/
 	behavior:url("/css/csshover.htc");
@@ -215,7 +220,16 @@ body{
 .downloadbox div div{
 	display:block;
 }
+.downloadbox div div span{
+	zoom:1;
+	display:inline;
+}
 .download span{
+	zoom:1;
+	display:inline;
+	vertical-align:top;
+}
+.downloadbox .magnetlink{
 	zoom:1;
 	display:inline;
 }
@@ -274,19 +288,6 @@ body{
 	display:inline;
 }
 
-.sponsor-banner div{
-	display:inline;
-	zoom:1;
-}
-.sponsor-banner span,
-.sponsor-banner a,
-.sponsor-banner a:link,
-.sponsor-banner a:active,
-.sponsor-banner a:visited{
-	display:inline;
-	zoom:1;
-}
-
 .devprojectlist li{
 	display:expression((this.parentNode.childNodes[0]==this||this.parentNode.childNodes[1]==this||this.parentNode.childNodes[2]==this||this.parentNode.childNodes[3]==this)?'list-item':'');
 }
@@ -334,21 +335,4 @@ body{
 	font-weight:expression((this.parentNode.getElementsByTagName('SPAN')[0]==this)?'bold':'');
 	display:expression((this.parentNode.getElementsByTagName('SPAN')[0]==this)?'block':'');
 	margin-bottom:expression((this.parentNode.getElementsByTagName('SPAN')[0]==this)?'4px':'');
-}
-
-.press-news div{
-	height:125px;
-	margin-bottom:30px;
-	width:700px;
-}
-.press-news div a img{
-	float:left;
-	margin-right:30px;
-}
-.press-news div a{
-	display:block;
-	margin-bottom:10px;
-}
-.press-news div p{
-	font-size:80%;
 }
