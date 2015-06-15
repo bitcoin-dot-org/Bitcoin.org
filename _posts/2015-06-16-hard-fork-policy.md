@@ -31,6 +31,8 @@ It also applies to wallets and services that have the ability to detect
 the contentious hard fork, and which release code or make announcements
 indicating that they will cease operating on the side of the previous
 consensus.
+It does not apply to software that cannot detect the contentious hard
+fork and which continues doing whatever it would've done anyway.
 
 To be clear, we encourage wallet authors and service providers to offer
 their opinions on hard fork proposals, and we will not penalize anyone
