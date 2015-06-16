@@ -1,11 +1,3 @@
-- date: 2015-06-10
-  title: "Advapay Events"
-  venue: ""
-  address: "Digital October, Bld. 3, 6 Berseniyevskaya naberezhnaya"
-  city: "Moscow"
-  country: "Russia"
-  link: "http://www.advapay.eu/"
-
 - date: 2015-06-20
   title: "Bitcoin Development Workshop 2015"
   venue: "De War"
@@ -21,6 +13,14 @@
   city: "London"
   country: "United Kingdom"
   link: "http://blockchainlondon.com/"
+
+- date: 2015-06-26
+  title: "HVA Blockchain blockstrap course"
+  venue: "Amsterdam University of Applied Sciences"
+  address: "Duivendrechtsekade 36-38"
+  city: "Amsterdam"
+  country: "Netherlands"
+  link: "https://bitcoinembassy.nl/hva-blockchain-blockstrap-course-amsterdam-2015-06-26/"
 
 - date: 2015-06-29
   title: "Blockchain Payments"
@@ -93,6 +93,14 @@
   city: "New York"
   country: "United States"
   link: "http://www.coindesk.com/events/consensus-2015/"
+
+- date: 2015-09-12
+  title: "Bitcoinference Summer 2015"
+  venue: "Amsterdam Science Park"
+  address: "Science Park 205, 1098 XH"
+  city: "Amsterdam"
+  country: "Netherlands"
+  link: "http://bitcoinference.com/"
 
 - date: 2015-09-15
   title: "Bitcoin Conference Kiev"
