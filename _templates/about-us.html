@@ -11,6 +11,13 @@ id: about-us
 
 <h2 id="own">{% translate own %}</h2>
 <p>{% translate owntxt %}</p>
+{% case page.lang %}
+{% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl' or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'ja' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+  <p>{% translate owntxt2 %}</p>
+  <p>{% translate owntxt3 %}</p>
+  <p>{% translate owntxt4 %}</p>
+{% endcase %}
 
 <h2 id="control">{% translate control %}</h2>
 <p>{% translate controltxt %}</p>
