@@ -1,11 +1,3 @@
-- date: 2015-06-10
-  title: "Advapay Events"
-  venue: ""
-  address: "Digital October, Bld. 3, 6 Berseniyevskaya naberezhnaya"
-  city: "Moscow"
-  country: "Russia"
-  link: "http://www.advapay.eu/"
-
 - date: 2015-06-20
   title: "Bitcoin Development Workshop 2015"
   venue: "De War"
@@ -13,6 +5,54 @@
   city: "Amersfoort"
   country: "Netherlands"
   link: "http://bitcoinmeetup.nl/2015/06-20.html"
+
+- date: 2015-06-24
+  title: "London Blockchain Conference"
+  venue: "The London Escalator"
+  address: "69-89 Mile End Rd, E1 4TT"
+  city: "London"
+  country: "United Kingdom"
+  link: "http://blockchainlondon.com/"
+
+- date: 2015-06-24
+  title: "Bitcoin Conference Kiev"
+  venue: "NSC Olimpiyskiy"
+  address: "Velyka Vasylkivska str., 55"
+  city: "Kyiv"
+  country: "Ukraine"
+  link: "http://bitcoinconf.com.ua/en"
+
+- date: 2015-06-26
+  title: "HVA Blockchain blockstrap course"
+  venue: "Amsterdam University of Applied Sciences"
+  address: "Duivendrechtsekade 36-38"
+  city: "Amsterdam"
+  country: "Netherlands"
+  link: "https://bitcoinembassy.nl/hva-blockchain-blockstrap-course-amsterdam-2015-06-26/"
+
+- date: 2015-06-29
+  title: "Blockchain Payments"
+  venue: "Deloitte Amsterdam"
+  address: "Gustav Mahlerlaan 2970"
+  city: "Amsterdam"
+  country: "The Netherlands"
+  link: "https://www.about-payments.com/newsroom/events/blockchain-payments-2015-29-june-2015"
+
+- date: 2015-07-06
+  title: "The New Context"
+  venue: "Toranomon Hills Forum"
+  address: "23 Toranomon 1 chome, Minato-ku, 105-6305"
+  city: "Tokyo"
+  country: "Japan"
+  link: "http://ncc.garage.co.jp/en/"
+
+- date: 2015-07-08
+  title: "WIRED Money"
+  venue: "The British Museum"
+  address: "Great Russell Street, WC1B 3DG"
+  city: "London"
+  country: "United Kingdom"
+  link: "http://www.wiredevent.co.uk/wired-money-2015"
 
 - date: 2015-07-10
   title: "Inside Bitcoins Chicago"
@@ -22,13 +62,37 @@
   country: "United States"
   link: "http://insidebitcoins.com/chicago/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibchicago"
 
+- date: 2015-07-28
+  title: "Digital Currencies + The Blockchain"
+  venue: "Convene"
+  address: "730 Third Avenue, 10017"
+  city: "New York"
+  country: "United States"
+  link: "http://www.americanbanker.com/conferences/digitalcurrencies/"
+
+- date: 2015-08-03
+  title: "Keynote"
+  venue: "Park Plaza Hotel"
+  address: "607 S Park View St, 90057"
+  city: "Los Angeles"
+  country: "United States"
+  link: "http://www.keynote2015.com/"
+
 - date: 2015-08-13
   title: "Coin Congress San Francisco 2015"
   venue: "Hilton Union Square - San Francisco"
   address: "333 O'Farrell St"
   city: "San Francisco"
-  country: "USA"
+  country: "United States"
   link: "http://www.coincongressevents.org"
+
+- date: 2015-08-14
+  title: "Cryptolina Bitcoin Expo"
+  venue: "McGlohon Theatre"
+  address: "345 N College St, 28202"
+  city: "Charlotte"
+  country: "United States"
+  link: "http://cryptolina.com/"
 
 - date: 2015-09-10
   title: "Consensus 2015"
@@ -37,6 +101,14 @@
   city: "New York"
   country: "United States"
   link: "http://www.coindesk.com/events/consensus-2015/"
+
+- date: 2015-09-12
+  title: "Bitcoinference Summer 2015"
+  venue: "Amsterdam Science Park"
+  address: "Science Park 205, 1098 XH"
+  city: "Amsterdam"
+  country: "Netherlands"
+  link: "http://bitcoinference.com/"
 
 - date: 2015-10-08
   title: "Alt Convention"
@@ -61,3 +133,11 @@
   city: "Miami Beach, FL"
   country: "United States"
   link: "http://www.imtconferences.com/mtbit/"
+
+- date: 2016-04-04
+  title: "Money 20/20 Europe"
+  venue: "Bella Center"
+  address: "Center Boulevard 5"
+  city: "Copenhagen"
+  country: "Denmark"
+  link: "https://www.money2020europe.com/"
