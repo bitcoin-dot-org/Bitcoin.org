@@ -191,6 +191,66 @@ wallets:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
+- copay:
+    title: "Copay"
+    titleshort: "Copay"
+    compat: "mobile desktop web android ios windowsphone windows mac linux"
+    level: 3
+    platform:
+      mobile:
+        text: "walletcopay"
+        link: "https://copay.io"
+        source: "https://github.com/bitpay/copay"
+        screenshot: "copay.png"
+        os:
+        - android
+        - ios
+        - windowsphone
+        - linux
+        check:
+          control: "checkpasscontrolshared"
+          validation: "checkfailvalidationremote"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureremote"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      desktop:
+        text: "walletcopay"
+        link: "https://copay.io/"
+        source: "https://github.com/bitpay/copay"
+        screenshot: "copay.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkpasscontrolshared"
+          validation: "checkfailvalidationremote"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureremote"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      web:
+        text: "walletcopay"
+        link: "https://copay.io/"
+        source: "https://github.com/bitpay/copay"
+        screenshot: "copay.png"
+        os:
+        check:
+          control: "checkpasscontrolshared"
+          validation: "checkfailvalidationremote"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureremote"
 - airbitzwallet:
     title: "Airbitz Bitcoin Wallet"
     titleshort: "Airbitz"
@@ -648,59 +708,6 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
-- copay:
-    title: "Copay"
-    titleshort: "Copay"
-    compat: "mobile desktop web android windows mac linux"
-    level: 3
-    platform:
-      mobile:
-        text: "walletcopay"
-        link: "https://copay.io"
-        source: "https://github.com/bitpay/copay"
-        screenshot: "copayandroid.png"
-        os:
-        - android
-        check:
-          control: "checkpasscontrolshared"
-          decentralization: "checkfaildecentralizecentralized"
-          transparency: "checkfailtransparencynew"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
-      desktop:
-        text: "walletcopay"
-        link: "https://copay.io/"
-        source: "https://github.com/bitpay/copay"
-        screenshot: "copay.png"
-        os:
-        - windows
-        - mac
-        - linux
-        check:
-          control: "checkpasscontrolshared"
-          decentralization: "checkfaildecentralizecentralized"
-          transparency: "checkfailtransparencyremote"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
-      web:
-        text: "walletcopay"
-        link: "https://copay.io/"
-        source: "https://github.com/bitpay/copay"
-        screenshot: "copay.png"
-        os:
-        check:
-          control: "checkpasscontrolshared"
-          decentralization: "checkfaildecentralizecentralized"
-          transparency: "checkfailtransparencyremote"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
 - coinomi:
     title: "Coinomi Universal Wallet"
     titleshort: "Coinomi"
@@ -938,6 +945,7 @@ wallets:
     <ul>
       <li class="wallet-android"><a id="android" data-walletcompat="android">{% translate platformandroid %}</a></li>
       <li class="wallet-ios"><a id="ios" data-walletcompat="ios">{% translate platformios %}</a></li>
+      <li class="wallet-windowsphone"><a id="windowsphone" data-walletcompat="windowsphone">{% translate platformwindowsphone %}</a></li>
       <li class="wallet-blackberry"><a id="blackberry" data-walletcompat="blackberry">{% translate platformblackberry %}</a></li>
     </ul>
     </li>
