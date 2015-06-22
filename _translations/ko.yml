@@ -212,7 +212,7 @@ ko:
     disclosuretxt: "비트코인에 관련된 취약점을 발견한다면, 덜 중요한 취약점들은 핵심개발자들 아무에게나 또는 위에 기재된 비트코인 보안 메일링 리스트에 영어로 된 이메일을 보내세요. 덜 중요한 취약점의 예로는, 돈이 많이 드는 서비스 거부 공격이 있습니다. 중차대한 취약점들의 경우에는 핵심 개발자들에게 인크립트되지 않은 이메일로 보내기에는 너무 민감하기 때문에, 꼭 PGP키(들)로 인크립트된 상태의 이메일을 보내야 합니다."
     involve: "참여하기"
     involvetxt1: "비트코인 개발은 오픈 소스로 진행되며 개발자라면 누구나 프로젝트에 기여할 수 있습니다. 모든 필요한 내용은 <a href=\"https://github.com/bitcoin/bitcoin\">Github repository</a> 사이트에 있습니다. README에 기술된 개발 절차를 읽고 따르면서, 좋은 품질의 코드를 제공하고 모든 지침을 준수하시기 바랍니다."
-    involvetxt2: "개발관련 토론은 Github와 sourceforge의 <a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">비트코인 개발</a> 메일링 리스트에서 이루어집니다. 좀 더 비공식적인 토론들은 irc.freenode.net #bitcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">웹 인터페이스</a>, <a href=\"http://bitcoinstats.com\">logs</a>)에서 이루어집니다."
+    involvetxt2: "개발관련 토론은 Github와 sourceforge의 <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">비트코인 개발</a> 메일링 리스트에서 이루어집니다. 좀 더 비공식적인 토론들은 irc.freenode.net #bitcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">웹 인터페이스</a>, <a href=\"http://bitcoinstats.com\">logs</a>)에서 이루어집니다."
     more: "기타 자유 소프트웨어 프로젝트들"
     morechoose: "몇 가지<a href=\"http://whatcanidoforbitcoin.org/\">자신의 기술에대한 질문</a>을 답변함으로서 기여할 프로젝트를 선택할 수 있습니다."
     moremore: "더 보기.."

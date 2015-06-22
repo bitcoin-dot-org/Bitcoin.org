@@ -212,7 +212,7 @@ zh_TW:
     disclosuretxt: "如果您找到了與 Bitcoin 有關的一個安全漏洞，如其為非關鍵漏洞，您可以透過英文郵件把它告知任何一個核心開發人員或者把它發送到上面羅列的比特幣安全維護郵件列表。一個拒絕昂貴支付的服務攻擊就可以說是一個非關鍵漏洞的例子。對於未加密的郵件太敏感的關鍵漏洞應該發送給一個或多個核心開發人員，并用他們的 PGP key(s)加密。"
     involve: "參與開發"
     involvetxt1: "Bitcoin 屬於開放原始碼，任何開發者都能參與這個專案。你所需要的一切都在<a href=\"https://github.com/bitcoin/bitcoin\">GitHub repository</a>上。請確實閱讀並遵守 README 裡的開發流程、提供高品質的程式碼，以及遵守所有的指導方針。"
-    involvetxt2: "Bitcoin 的開發討論在 GitHub 和 sourceforge 上的<a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">比特幣-發展</a>郵件清單進行。不那么正式的開發討論在 irc.freenode.net 上的#bitcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">web 界面</a>, <a href=\"http://bitcoinstats.com\">日誌</a>) 進行。 "
+    involvetxt2: "Bitcoin 的開發討論在 GitHub 和 sourceforge 上的<a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">比特幣-發展</a>郵件清單進行。不那么正式的開發討論在 irc.freenode.net 上的#bitcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">web 界面</a>, <a href=\"http://bitcoinstats.com\">日誌</a>) 進行。 "
     more: "更多開放原始碼計劃"
     morechoose: "您可以通過回答一些<a href=\"http://whatcanidoforbitcoin.org/\">關於您的技能的問題</a>來選擇一個項目作貢獻。"
     moremore: "顯示更多..."

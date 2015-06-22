@@ -212,7 +212,7 @@ hi:
     disclosuretxt: "यदि आप Bitcoin से संबंधित जोखिम पाते हैं तो गैर महत्वपूर्ण कमजोरियाँ  अंग्रेज़ी ईमेल से भेज सकते हैं किसी भी कोर डेवलपर्स को या  उपर दिए गए निजी Bitcoin सुरक्षा मेलिंग को। एक गैर महत्वपूर्ण जोखिम का उदाहरण है, महंगी सेवा से  नकार। आलोचनात्मक जोखिम जो  अनएन्क्रिप्टेड ईमेल से भेजना संवेदनशील होते हैं, उनको PGP कुंजी (यों) के साथ एन्क्रिप्टेड कर के एक या अधिक कोर डेवलपर्स को  भेजे जाने चाहिए। "
     involve: "शामिल होएं"
     involvetxt1: "Bitcoin मुफ्त सॉफ्टवेयर है और कोई भी निर्माता इस परियोजना में योगदान कर सकता हैं।  आप की जरूरत का सब <a href=\"https://github.com/bitcoin/bitcoin\"> GitHub भंडार </a> में है।  कृपया README  में वर्णित विकास पढ़ कर प्रक्रिया का पालन करें, साथ ही गुणवत्ता कोड प्रदान कर के सभी निर्देशों का सम्मान करें। "
-    involvetxt2: "विकास चर्चा GitHub पर की जाती है और <a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">bitcoin-विकास</a> SourceForge पर मेलिंग सूची।  कम औपचारिक विकास चर्चा irc.freenode.net #bitcoin-dev  पर होती है।   (<a href=\"#\" onclick=\"freenodeShow(event);\"> वेब इंटरफेस </a> <a href = \"http://bitcoinstats.com\"> लॉग </a>). "
+    involvetxt2: "विकास चर्चा GitHub पर की जाती है और <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-विकास</a> SourceForge पर मेलिंग सूची।  कम औपचारिक विकास चर्चा irc.freenode.net #bitcoin-dev  पर होती है।   (<a href=\"#\" onclick=\"freenodeShow(event);\"> वेब इंटरफेस </a> <a href = \"http://bitcoinstats.com\"> लॉग </a>). "
     more: "अधिक मुफ्त सॉफ्टवेयर परियोजनाएं"
     morechoose: "अपने कुछ  <a href=\"http://whatcanidoforbitcoin.org/\">कौशल से जुड़े सवालों के जवाब </a> देकर आप योगदान करने के लिए एक परियोजना का चयन कर सकते हैं।"
     moremore: "अधिक दिखाएँ ..."

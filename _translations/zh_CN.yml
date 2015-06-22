@@ -212,7 +212,7 @@ zh_CN:
     disclosuretxt: "如果你发现了一个有关比特币的漏洞，非严重的漏洞可以用英文发送电子邮件给任何核心开发人员或发送给上面列出的私人比特币安全邮件列表。一个花费昂贵的拒绝服务攻击就是一个非严重漏洞的例子。对于未加密的电子邮箱来说太敏感的严重漏洞应该被发送到一个或多个核心开发人员那里，同时用他们的 PGP 密钥(s)来加密。"
     involve: "参与"
     involvetxt1: "比特币是开源的，任何开发者都可以为这个项目做出贡献。<a href=\"https://github.com/bitcoin/bitcoin\">GitHub代码仓库</a>中有你需要的一切。请务必阅读并遵照README中描述的开发流程，也请提供高质量的代码，并遵循所有的开发准则。"
-    involvetxt2: "有关比特币开发的讨论在Github和sourceforge上的<a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">比特币-开发</a>的邮件列表上进行。稍为非正式的开发讨论在irc.freenode.net#bitcoin-dev上进行(<a href=\"#\" onclick=\"freenodeShow(event);\">web界面</a>, <a href=\"http://bitcoinstats.com\">历史记录</a>)。 "
+    involvetxt2: "有关比特币开发的讨论在Github和sourceforge上的<a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">比特币-开发</a>的邮件列表上进行。稍为非正式的开发讨论在irc.freenode.net#bitcoin-dev上进行(<a href=\"#\" onclick=\"freenodeShow(event);\">web界面</a>, <a href=\"http://bitcoinstats.com\">历史记录</a>)。 "
     more: "更多的开源项目"
     morechoose: "你可以通过回答一些<a href=\"http://whatcanidoforbitcoin.org/\">关于你的技能的问题</a>.选择一个项目来做贡献。"
     moremore: "显示更多..."

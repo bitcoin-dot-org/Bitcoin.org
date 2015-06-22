@@ -212,7 +212,7 @@ ja:
     disclosuretxt: "ビットコインに関する脆弱性を見つけたら、それが重大なものでない場合は、中枢開発者や上記のビットコイン－セキュリティー・メーリング・リストに英語でＥメールをお送りください。重大でない脆弱性の例として、コンピューター・ハッカーによるDoS攻撃があります。慎重に扱う必要があり、暗号化されていないＥメールでは送れないような重大な脆弱性が見つかった場合は、一人あるいはそれ以上の中枢開発者に、ＰＧＰ鍵で暗号化されたものをお送りください。"
     involve: "参加する"
     involvetxt1: "ビットコインは、フリー・ソフトウエアで、ディベロッパーなら誰でもプロジェクトに貢献できます。\n必要なものは全て<a href=\"https://github.com/bitcoin/bitcoin\">GitHub</a>の中にあります。必ずREADME に書かれた開発のプロセスをよく読み、質の高いコードを提供し、ガイドラインを守って下さい。"
-    involvetxt2: "開発に関するディスカッションはGitHubとソースフォージの <a href=\"http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development\">ビットコイン開発</a>で行われており、そのメーリングリストには誰でも参加できます。また、ややカジュアルな開発ディスカッションはirc.freenode.net #bitcoin-devで行われています。 (<a href=\"#\" onclick=\"freenodeShow(event);\">ウエブインターフェイス</a>, <a href=\"http://bitcoinstats.com\">ログ</a>)"
+    involvetxt2: "開発に関するディスカッションはGitHubとソースフォージの <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">ビットコイン開発</a>で行われており、そのメーリングリストには誰でも参加できます。また、ややカジュアルな開発ディスカッションはirc.freenode.net #bitcoin-devで行われています。 (<a href=\"#\" onclick=\"freenodeShow(event);\">ウエブインターフェイス</a>, <a href=\"http://bitcoinstats.com\">ログ</a>)"
     more: "他のフリー・ソフトウエア・プロジェクト"
     morechoose: " <a href=\"http://whatcanidoforbitcoin.org/\">あなたのスキルに関する質問</a>に2-3お答えいただくことで、プロジェクトに貢献することができます。"
     moremore: "詳細表示.."
