@@ -190,7 +190,7 @@ en:
     checkpassenvironmenttwofactor: "Two-factor authentication"
     checkpassenvironmenttwofactortxt: "This wallet can be used from insecure environments. However, this service requires two-factor authentication. This means access to multiple devices or accounts is required to steal your bitcoins."
     checkfailenvironmentdesktop: "Vulnerable environment"
-    checkfailenvironmentdesktoptxt: "This wallet can be loaded on computers which are vulnerable to malware. Securing your computer, using a strong passphrase, moving most of your funds to cold storage or enabling two-factor authentication can make it harder to steal on your bitcoins."
+    checkfailenvironmentdesktoptxt: "This wallet can be loaded on computers which are vulnerable to malware. Securing your computer, using a strong passphrase, moving most of your funds to cold storage, or enabling two-factor authentication can make it harder to steal your bitcoins."
     checkgoodprivacyimproved: "Improved privacy"
     checkneutralprivacyvariable: "Variable privacy"
     checkneutralprivacyvariabletxt: "Privacy features are provided by the software wallet you use with this device. Please see the Privacy score for the software wallet you plan to use."
