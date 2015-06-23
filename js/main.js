@@ -300,7 +300,7 @@ init();
 function updateIssue(e) {
 // Update GitHub issue link pre-filled with current page location.
 var t = getEventTarget(e);
-t.href = 'https://github.com/bitcoin/bitcoin.org/issues/new?body=' + encodeURIComponent('Location: ' + window.location.href.toString() + "\n\n");
+t.href = 'https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=' + encodeURIComponent('Location: ' + window.location.href.toString() + "\n\n");
 }
 
 function updateSource(e){
@@ -325,7 +325,7 @@ for (var i = 0, n = nodes.length; i < n; i++) {
 if (pageoffset < first[1]) closer = [first[0], first[1]];
 if (windowy + pageoffset >= getHeight(document.body)) closer = [last[0], last[1]];
 // Set updated url to source file.
-t.href = 'https://github.com/bitcoin/bitcoin.org/edit/master/' + closer[0].getAttribute('data-sourcefile');
+t.href = 'https://github.com/bitcoin-dot-org/bitcoin.org/edit/master/' + closer[0].getAttribute('data-sourcefile');
 }
 
 function disclaimerClose(e) {

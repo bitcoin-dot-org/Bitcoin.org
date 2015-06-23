@@ -93,8 +93,8 @@ Core running.
 * Table of contents
 {:toc}
 
-<ul class="reportissue"><li><a href="https://github.com/bitcoin/bitcoin.org/issues/new">Report An Issue</a></li></ul>
-<ul class="editsource"><li><a href="https://github.com/bitcoin/bitcoin.org/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
+<ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new">Report An Issue</a></li></ul>
+<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
 
 </div></div>
 <div markdown="1" class="toccontent">
@@ -945,7 +945,7 @@ automatically started minimized in the task bar.
 
 If you can provide instructions and screenshots for running the latest
 version of Bitcoin Core daemon on Windows 7, please [open an
-issue](https://github.com/bitcoin/bitcoin.org/issues/new) and we'll tell
+issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) and we'll tell
 you what we need.  The instructions for [Windows
 8.x](#win8-daemon) may already provide all the necessary information.
 
@@ -956,7 +956,7 @@ you what we need.  The instructions for [Windows
 
 If you can provide instructions and screenshots for running the latest
 version of Bitcoin Core on Mac OS X, please [open an
-issue](https://github.com/bitcoin/bitcoin.org/issues/new) and we'll tell
+issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) and we'll tell
 you what we need.
 
 
@@ -1190,7 +1190,7 @@ anything, search the web for help with "port forwarding", and ask for
 help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
-instructions, please [open an issue.](https://github.com/bitcoin/bitcoin.org/issues/new)
+instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
 
 #### Firewall Configuration
 
@@ -1223,7 +1223,7 @@ web for help with "port forwarding" and "opening firewall ports", and
 ask for help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
-instructions, please [open an issue.](https://github.com/bitcoin/bitcoin.org/issues/new)
+instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
 
 </div>
 <script>updateToc();</script>

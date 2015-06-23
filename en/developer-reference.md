@@ -21,8 +21,8 @@ title: "Developer Reference - Bitcoin"
 {:toc}
 
 <ul class="goback"><li><a href="/en/developer-documentation">Return To Overview</a></li></ul>
-<ul class="reportissue"><li><a href="https://github.com/bitcoin/bitcoin.org/issues/new" onmouseover="updateIssue(event);">Report An Issue</a></li></ul>
-<ul class="editsource"><li><a href="https://github.com/bitcoin/bitcoin.org/tree/master/_includes" onmouseover="updateSource(event);">Edit On GitHub</a></li></ul>
+<ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new" onmouseover="updateIssue(event);">Report An Issue</a></li></ul>
+<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/_includes" onmouseover="updateSource(event);">Edit On GitHub</a></li></ul>
 
 </div></div>
 <div markdown="1" class="toccontent">

@@ -48,32 +48,32 @@ You can always report problems or help improve bitcoin.org by opening a [new iss
 [choose your wallet page]: https://bitcoin.org/en/choose-your-wallet
 [current content]: https://bitcoin.org/
 [developer documentation pages]: https://bitcoin.org/en/developer-documentation
-[edit events]: https://github.com/bitcoin/bitcoin.org/edit/master/_events.yml
+[edit events]: https://github.com/bitcoin-dot-org/bitcoin.org/edit/master/_events.yml
 [event instructions]: #events
 [events page]: https://bitcoin.org/en/events
-[GitHub]: https://github.com/bitcoin/bitcoin.org
-[new issue]: https://github.com/bitcoin/bitcoin.org/issues/new
-[pre-made events issue]: https://github.com/bitcoin/bitcoin.org/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22
-[PRs adding new documentation]: https://github.com/bitcoin/bitcoin.org/pulls?q=is%3Aopen+label%3A%22Dev+Docs%22+is%3Apr
+[GitHub]: https://github.com/bitcoin-dot-org/bitcoin.org
+[new issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
+[pre-made events issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22
+[PRs adding new documentation]: https://github.com/bitcoin-dot-org/bitcoin.org/pulls?q=is%3Aopen+label%3A%22Dev+Docs%22+is%3Apr
 [pull request]: #working-with-github
-[recommended starter projects]: https://github.com/bitcoin/bitcoin.org/wiki/Starter-Projects
-[review wallet submissions]: https://github.com/bitcoin/bitcoin.org/pulls?q=is%3Aopen+label%3Awallet+is%3Apr
+[recommended starter projects]: https://github.com/bitcoin-dot-org/bitcoin.org/wiki/Starter-Projects
+[review wallet submissions]: https://github.com/bitcoin-dot-org/bitcoin.org/pulls?q=is%3Aopen+label%3Awallet+is%3Apr
 [submit new wallets]: #adding-a-wallet
 [transifex]: https://www.transifex.com/projects/p/bitcoinorg/
 [translate Bitcoin.org into another language]: #how-to-translate
-[upcoming full node page]: https://github.com/bitcoin/bitcoin.org/pull/711
+[upcoming full node page]: https://github.com/bitcoin-dot-org/bitcoin.org/pull/711
 [write new documentation]: #developer-documentation
 
 ### Working With GitHub
 
 GitHub allows you to make changes to a project using git, and later submit them in a "pull request" so they can be reviewed and discussed. Many online how-tos exist so you can learn git, [here's a good one](https://www.atlassian.com/git/tutorial/git-basics).
 
-In order to use GitHub, you need to [sign up](http://github.com/signup) and [set up git](https://help.github.com/articles/set-up-git). You will also need to click the **Fork** button on the bitcoin.org [GitHub page](https://github.com/bitcoin/bitcoin.org) and clone your GitHub repository into a local directory with the following command lines:
+In order to use GitHub, you need to [sign up](http://github.com/signup) and [set up git](https://help.github.com/articles/set-up-git). You will also need to click the **Fork** button on the bitcoin.org [GitHub page](https://github.com/bitcoin-dot-org/bitcoin.org) and clone your GitHub repository into a local directory with the following command lines:
 
 ```
 git clone (url provided by GitHub on your fork's page) bitcoin.org
 cd bitcoin.org
-git remote add upstream https://github.com/bitcoin/bitcoin.org.git
+git remote add upstream https://github.com/bitcoin-dot-org/bitcoin.org.git
 ```
 
 **How to send a pull request**
@@ -293,17 +293,17 @@ For a list of languages, look in the `_translations` directory.
 
 ## Developer Documentation
 
-Most parts of the documentation can be found in the [_includes](https://github.com/bitcoin/bitcoin.org/tree/master/_includes)
+Most parts of the documentation can be found in the [_includes](https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/_includes)
 directory. Updates, fixes and improvements are welcome and can submitted using [pull requests](#working-with-github) on GitHub.
 
 **Mailing List**: General discussions can take place on the
 [mailing list](https://groups.google.com/forum/#!forum/bitcoin-documentation).
 
 **TODO List**: New content and suggestions for improvements can be submitted
-to the [TODO list](https://github.com/bitcoin/bitcoin.org/wiki/Documentation-TODO).
+to the [TODO list](https://github.com/bitcoin-dot-org/bitcoin.org/wiki/Documentation-TODO).
 You are also welcome if you want to assign yourself to any task.
 
-**Style Guide**: For better consistency, the [style guide](https://github.com/bitcoin/bitcoin.org/wiki/Documentation-Style-Guide)
+**Style Guide**: For better consistency, the [style guide](https://github.com/bitcoin-dot-org/bitcoin.org/wiki/Documentation-Style-Guide)
 can be used as a reference for terminology, style and formatting. Suggested changes
 can also be submitted to this guide to keep it up to date.
 
@@ -459,7 +459,7 @@ is the particular version:
    new release.  You should leave the `optional_date` blank unless you
    happen to know the date of the planned release.
 
-3. Push the branch to the https://github.com/bitcoin/bitcoin.org
+3. Push the branch to the https://github.com/bitcoin-dot-org/bitcoin.org
    repository so any contributor can edit it. **Don't** open a pull
    request yet.
 

@@ -83,7 +83,7 @@ people load them.
 [dev glossary]: /en/developer-glossary
 [jquery]: https://jquery.com/
 [jquery ui]: https://jqueryui.com/
-[several volunteers]: https://github.com/bitcoin/bitcoin.org/pull/793
+[several volunteers]: https://github.com/bitcoin-dot-org/bitcoin.org/pull/793
 [Bitcoin.org developer documentation]: /en/developer-documentation
 [the bitcoin foundation]: https://bitcoinfoundation.org/
 [glossary section]: /en/developer-glossary

@@ -284,11 +284,11 @@ http://opensource.org/licenses/MIT.
 [dig command]: https://en.wikipedia.org/wiki/Dig_%28Unix_command%29
 [DNS A records]: http://tools.ietf.org/html/rfc1035#section-3.2.2
 [DNS Seed Policy]: https://github.com/bitcoin/bitcoin/blob/master/doc/dnsseed-policy.md
-[docs issue]: https://github.com/bitcoin/bitcoin.org/issues
+[docs issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues
 [ECDSA]: https://en.wikipedia.org/wiki/Elliptic_Curve_DSA
 [Electrum server]: https://github.com/spesmilo/electrum-server
 [Eloipool]: https://github.com/luke-jr/eloipool
-[errors in docs]: https://github.com/bitcoin/bitcoin.org/issues?q=is%3Aissue+label%3A%22Dev+Docs%22
+[errors in docs]: https://github.com/bitcoin-dot-org/bitcoin.org/issues?q=is%3Aissue+label%3A%22Dev+Docs%22
 [forum tech support]: https://bitcointalk.org/index.php?board=4.0
 [high-speed block relay network]: https://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg03189.html
 [HMAC-SHA512]: https://en.wikipedia.org/wiki/HMAC

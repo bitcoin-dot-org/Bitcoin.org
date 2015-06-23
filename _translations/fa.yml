@@ -16,7 +16,7 @@ fa:
     missiontxt6: "بهبود دسترسی جهانی به بیت کوین از طریق بین المللی کردن آن"
     missiontxt7: "تداوم ارائه یک منبع آموزنده بیطرف در مورد بیت کوین"
     help: "ما را یاری کنید"
-    helptxt: "برای گزارش هر گونه مشکل یا کمک به بهبود bitcoin.org می توانید در ، \n <a href=\"https://github.com/bitcoin/bitcoin.org#how-to-participate\">GitHub</a> از طریق بازکردن بحث یا پول ریکوئست به زبان انگلیسی عمل کنید. لطفاً هنگامی که یک پول ریکوست میفرستید، مدت زمان لازم برای بحث در مورد تغییرات خود و تنظیم کارتان را رعایت کنید. با پیوستن به یکی از تیمهای\n <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Transifex</a> می توانید در ترجمه آن شرکت کنید. خواهشمند است درخواست ارتقای کسب و کار یا وبسایت شخصی  خود را جز در موارد خاصی مانند کنفرانس ها، نداشته باشید. از تمامی کسانی که وقت خود را برای بهبود bitcoin.org صرف می کنند، بسیار سپاسگزاریم!"
+    helptxt: "برای گزارش هر گونه مشکل یا کمک به بهبود bitcoin.org می توانید در ، \n <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> از طریق بازکردن بحث یا پول ریکوئست به زبان انگلیسی عمل کنید. لطفاً هنگامی که یک پول ریکوست میفرستید، مدت زمان لازم برای بحث در مورد تغییرات خود و تنظیم کارتان را رعایت کنید. با پیوستن به یکی از تیمهای\n <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a> می توانید در ترجمه آن شرکت کنید. خواهشمند است درخواست ارتقای کسب و کار یا وبسایت شخصی  خود را جز در موارد خاصی مانند کنفرانس ها، نداشته باشید. از تمامی کسانی که وقت خود را برای بهبود bitcoin.org صرف می کنند، بسیار سپاسگزاریم!"
     maintenance: "نگهداری"
     documentation: "مستندات"
     translation: "ترجمه"
@@ -569,7 +569,7 @@ fa:
     spread: "گسترش"
     spreadtxt: "در مورد بیت کوین، با افراد علاقمند گفتگو کنید. در مورد آن در بلاگ خود بنویسید، به فروشگاههای موردعلاقه تان بگویید که مایلید با بیت کوین به آنها پرداخت کنید. به بروز نگهداشتن <a href=\"http://usebitcoins.info/\">کتابهای راهنمای بازرگانی</a> کمک کنید. یا اینکه خلاق باشید و یک تی شرت زیبای بیت کوینی برای خود ر بسازید."
     wiki: "مستندسازی"
-    wikitxt: "<a href=\"https://github.com/bitcoin/bitcoin.org#how-to-participate\">Bitcoin.org</a>  و <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> مستندسازی های مفیدی انجام داده اند و ما بطور مداوم اطلاعات مندرج در آنها را بهبود می بخشیم. شما می توانید به بهتر کردن این منابع کمک کرده و آنها را بروز نگهدارید.      "
+    wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a>  و <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> مستندسازی های مفیدی انجام داده اند و ما بطور مداوم اطلاعات مندرج در آنها را بهبود می بخشیم. شما می توانید به بهتر کردن این منابع کمک کرده و آنها را بروز نگهدارید.      "
     translate: "ترجمه کردن"
     translatetxt: "شما می توانید با ترجمه کردن یا بهبود ترجمه های درون بخشهای مهم زیست بومِ بیت کوین، دسترس پذیری بیت کوین را افزایش دهید. تنها کافی است پروژه ای را که میخواهید به آن کمک کنید، انتخاب نمایید."
     help: "جوامع را ببینید"
@@ -649,7 +649,7 @@ fa:
     menu-participate: مشارکت
     menu-vocabulary: دایره واژگان
     menu-you-need-to-know: "لازم است بدانید"
-    banner-translate: "ترجمه ها به این زبان، منسوخ شده اند.  <a href=\"https://github.com/bitcoin/bitcoin.org#translation\"> اینجا را کلیک کنید و به ترجمه bitcoin.org  به زبان خود، کمک کنید</a>."
+    banner-translate: "ترجمه ها به این زبان، منسوخ شده اند.  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\"> اینجا را کلیک کنید و به ترجمه bitcoin.org  به زبان خود، کمک کنید</a>."
     footer: " منتشر شده تحت <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT license</a>"
     sponsor: "یک وب سایت جامعه با تامین مالی از سوی"
     getstarted: "آغاز به کار با بیت‌کوین"

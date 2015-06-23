@@ -16,7 +16,7 @@ sl:
     missiontxt6: "Izboljšati globalno dostopnost bitcoina z internacionalizacijo."
     missiontxt7: "Ostati nevtralen vir novic o Bitcoinu."
     help: "Pomagajte nam"
-    helptxt: "Če na spletišču bitcoin.org opazite problem ali imate kak predlog za izboljšavo, lahko na  <a href=\"https://github.com/bitcoin/bitcoin.org#how-to-participate\">GitHubu</a> odprete zadevo (<i>issue</i>) ali zahtevek za poteg (<i>pull request</i>) v angleščini. Pri tem si, prosimo, vzemite potrebni čas za razpravo o predlagani spremembi in morebitne prilagoditve. Pomagate lahko tudi pri prevajanju: pridružite se ekipi na <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Transifexu</a>. Prosimo, ne zaprošajte za promocijo svojih storitev ali spletišč, razen v posebnih primerih, kot so konference. Najlepša hvala vsem sodelujočim, ki vlagajo svoj čas za izboljšave bitcoin.org!"
+    helptxt: "Če na spletišču bitcoin.org opazite problem ali imate kak predlog za izboljšavo, lahko na  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHubu</a> odprete zadevo (<i>issue</i>) ali zahtevek za poteg (<i>pull request</i>) v angleščini. Pri tem si, prosimo, vzemite potrebni čas za razpravo o predlagani spremembi in morebitne prilagoditve. Pomagate lahko tudi pri prevajanju: pridružite se ekipi na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifexu</a>. Prosimo, ne zaprošajte za promocijo svojih storitev ali spletišč, razen v posebnih primerih, kot so konference. Najlepša hvala vsem sodelujočim, ki vlagajo svoj čas za izboljšave bitcoin.org!"
     maintenance: "Vzdrževanje"
     documentation: "Dokumentacija"
     translation: "Prevod"
@@ -463,7 +463,7 @@ sl:
     title: "Izjava o omejitvi odgovornosti - bitcoin"
     pagetitle: "Uporaba spletišča na lastno odgovornost"
     termstxt1: "Informacije in gradivo na tem spletišču so splošne narave in so tu le v informativne namene. Del teh informacij se lahko tiče dejanskih ali potencialnih pravnih tem. Te informacije niso nadomestilo za kvalificirano pravno svetovanje in jih ne smete uporabljati v ta namen. Lastniki in sestavljalci tega spletišča niso na noben način odgovorni za dejanja, odločitve in druge oblike ravnanja, ki jih uporabniki sprejmejo ali ne sprejmejo na podlagi tega spletišča. Posebej, vendar ne izključno, velja to za tehnološke ali pravne razloge. Če se zanašate na vsebino tega spletišča, počnete to na lastno odgovornost. Če želite sprejeti odločitev glede svojih dejanj ali nedejavnosti, stopite v stik z licenciranim odvetnikom, pristojnim na ustreznem področju."
-    termstxt2: "Ta stran lahko vsebuje tujejezične prevode originalne vsebine v angleščini. Ti prevodi so tu zgolj kot priročno sredstvo. Če obstajajo razlike med angleškim izvirnikom in prevodom, ima prednost angleški izvirnik. Če opazite neskladja, nam jih prosimo sporočite na <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHubu</a>."
+    termstxt2: "Ta stran lahko vsebuje tujejezične prevode originalne vsebine v angleščini. Ti prevodi so tu zgolj kot priročno sredstvo. Če obstajajo razlike med angleškim izvirnikom in prevodom, ima prednost angleški izvirnik. Če opazite neskladja, nam jih prosimo sporočite na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org\">GitHubu</a>."
   press:
     title: "Mediji - bitcoin"
     pagetitle: "Tiskovno središče"
@@ -567,7 +567,7 @@ sl:
     spread: "Povej naprej"
     spreadtxt: "O bitcoinu se pogovarjajte z ljudmi, ki jih ta tematika zanima. Pišite o njem na svojem blogu. Povejte svojim najljubšim trgovinam, da bi radi plačevali z bitcoinom. Vnašajte podatke v <a href=\"http://usebitcoins.info/\">imenike trgovcev</a>. Bodite ustvarjalni in si naredite in nosite majico z motivom bitcoina."
     wiki: "Dokumentacija"
-    wikitxt: "<a href=\"https://github.com/bitcoin/bitcoin.org#how-to-participate\">Bitcoin.org</a> in <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> vsebujeta koristno dokumentacijo in informacije in ves čas se trudimo izboljšati njuno vsebino. Če želite, lahko pomagate pri izboljševanju in osveževanju vsebine."
+    wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> in <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> vsebujeta koristno dokumentacijo in informacije in ves čas se trudimo izboljšati njuno vsebino. Če želite, lahko pomagate pri izboljševanju in osveževanju vsebine."
     translate: "Prevodi"
     translatetxt: "Pri promociji bitcoina lahko pomagate s prevajanjem ali izboljševanjem prevodov znotraj pomembnih delov bitcoin ekosistema. Le izberite projekt, pri katerem bi želeli pomagati."
     help: "Spoznajte skupnosti"
@@ -643,7 +643,7 @@ sl:
     menu-participate: Sodelujte
     menu-vocabulary: Slovar
     menu-you-need-to-know: "Obvezno branje"
-    banner-translate: "Prevodi v tem jeziku so zastareli. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Kliknite tu, če želite pomagati prevajati bitcoin.org v svoj jezik</a>."
+    banner-translate: "Prevodi v tem jeziku so zastareli. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Kliknite tu, če želite pomagati prevajati bitcoin.org v svoj jezik</a>."
     footer: "Objavljeno pod pogoji <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licence</a>"
     sponsor: "Spletišče skupnosti pod pokroviteljstvom"
     getstarted: "Prvi koraki z bitcoinom"
