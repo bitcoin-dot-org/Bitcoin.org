@@ -1,4 +1,4 @@
-![Build Status](https://travis-ci.org/bitcoin/bitcoin.org.svg?branch=master)
+![Build Status](https://travis-ci.org/bitcoin-dot-org/bitcoin.org.svg?branch=master)
 
 ## How To Participate
 
@@ -91,7 +91,7 @@ When submitting a pull request, please take required time to discuss your change
 **Travis Continuous Integration (CI)**
 
 Shortly after your Pull Request (PR) is submitted, a Travis CI job will
-be added to [our queue](https://travis-ci.org/bitcoin/bitcoin.org). This
+be added to [our queue](https://travis-ci.org/bitcoin-dot-org/bitcoin.org). This
 will build the site and run some basic checks. If the job fails, you
 will be emailed a link to the build log and the PR will indicate a
 failed job. Read the build report and try to correct the problem---but
@@ -105,7 +105,7 @@ If you'd like to setup Travis on your own repository so you can test
 builds before opening a pull request, it's really simple:
 
 1. Make sure the master branch of your repository is up to date with the
-   bitcoin/bitcoin.org master branch.
+   bitcoin-dot-org/bitcoin.org master branch.
 
 2. Open [this guide](http://docs.travis-ci.com/user/getting-started/)
    and perform steps one, two, and four. (The other steps are already
