@@ -64,7 +64,7 @@ do
 
 	# Update site and exit if site has been successfully built
 	if [ -e "$WORKDIR/_builddone" ]; then
-		find $WORKDIR/_site \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' -o -iname '*.svg' -o -iname '*.rss' -o -iname '*.xml' \) -exec gzip -9 -k {} \;
+		find $WORKDIR/_site \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' -o -iname '*.rss' -o -iname '*.xml' -o -iname '*.svg' -o -iname '*.ttf' \) -exec gzip -9 -k {} \;
 		rsync --delete -zrt $WORKDIR/_site/ $DESTDIR/
 		exit
 	fi
