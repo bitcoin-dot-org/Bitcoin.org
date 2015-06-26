@@ -95,13 +95,12 @@ do
 	fi
 
 	# Cancel script if a concurrent script has touched _buildlock
-	time=0
 	if [ -e "$SITEDIR/_buildlock" ]; then
 		time=`stat -c %Y "$SITEDIR/_buildlock" | cut -d ' ' -f1`
-	fi
-	if [ $time != $lasttime ]; then
-		echo "Build cancelled"
-		exit
+		if [ $time != $lasttime ]; then
+			echo "Build cancelled"
+			exit
+		fi
 	fi
 	sleep 1
 
