@@ -62,6 +62,7 @@ case "${1:-nil}" in
     echo
     echo "auto: only builds if the latest commit is GPG signed by an authorized key"
     echo "force: builds latest commit no matter what"
+    exit 1
   ;;
 esac
 
