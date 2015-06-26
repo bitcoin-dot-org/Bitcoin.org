@@ -7,7 +7,7 @@ PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
 
 source /etc/profile.d/rvm.sh
 
-AUTHORIZED_SIGNERS_DIR=/bitcoin.org/auto-build-committers.gnupg
+AUTHORIZED_SIGNERS_DIR='/bitcoin.org/auto-build-committers.gnupg'
 REPO='https://github.com/bitcoin-dot-org/bitcoin.org.git'
 SITEDIR='/bitcoin.org/site'
 DESTDIR='build@bitcoinorgsite:/var/www/site'
