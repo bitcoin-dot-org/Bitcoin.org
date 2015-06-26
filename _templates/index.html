@@ -5,8 +5,26 @@
 layout: base
 id: index
 ---
+<script>
+function loadMainVideo(e) {
+var p = document.getElementById('mainvideo'),
+    t = p.getElementsByTagName('DIV')[0],
+    nd = document.createElement('IFRAME');
+nd.src = '//www.youtube.com/embed/Gc2en3nHxA4?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1{% if page.lang != 'en' %}&amp;cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}';
+nd.setAttribute('frameborder', 0);
+nd.setAttribute('allowfullscreen', true);
+t.innerHTML = '';
+t.appendChild(nd);
+removeEvent(p, loadMainVideo);
+cancelEvent(e);
+}
+</script>
 <p class="mainsummary">{% translate listintro %}</p>
-<div class="mainvideo"><iframe src="//www.youtube.com/embed/Gc2en3nHxA4?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;{% if page.lang != 'en' %}cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}" frameborder="0" allowfullscreen></iframe></div>
+<div class="mainvideo" id="mainvideo" onclick="loadMainVideo(event);"><div>
+  <img src="/img/video/video_wuc.jpg" alt="Youtube video">
+  <div class="mainvideoicon"></div>
+  <div class="mainvideoiconhover"></div>
+</div></div>
 <div class="mainlist">
   <div><div><img src="/img/icons/main_ico_instant.svg" alt="Icon"><div>{% translate list1 %}</div></div></div>
   <div><div><img src="/img/icons/main_ico_worldwide.svg" alt="Icon"><div>{% translate list2 %}</div></div></div>
