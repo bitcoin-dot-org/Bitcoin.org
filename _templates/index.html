@@ -6,7 +6,7 @@ layout: base
 id: index
 ---
 <script>
-function loadMainVideo(e) {
+function loadMainVideo() {
 var p = document.getElementById('mainvideo'),
     t = p.getElementsByTagName('DIV')[0],
     nd = document.createElement('IFRAME');
@@ -15,12 +15,11 @@ nd.setAttribute('frameborder', 0);
 nd.setAttribute('allowfullscreen', true);
 t.innerHTML = '';
 t.appendChild(nd);
-removeEvent(p, loadMainVideo);
-cancelEvent(e);
+p.onclick = '';
 }
 </script>
 <p class="mainsummary">{% translate listintro %}</p>
-<div class="mainvideo" id="mainvideo" onclick="loadMainVideo(event);"><div>
+<div class="mainvideo" id="mainvideo" onclick="loadMainVideo();"><div>
   <img src="/img/video/video_wuc.jpg" alt="Youtube video">
   <div class="mainvideoicon"></div>
   <div class="mainvideoiconhover"></div>
