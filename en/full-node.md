@@ -24,12 +24,17 @@ Configuration](#network-configuration) section for details.
 
 If you know how to use PGP, you should also click the *Verify Release
 Signatures* link on the download page to download a signed list of SHA256
-file hashes. The file is currently signed by [Wladimir J. van der Laan's
-key](/laanwj.asc). His primary key's fingerprint is:
+file hashes. The 0.11 and later releases are signed by [Wladimir J. van
+der Laan's releases key](/laanwj-releases.asc) with the fingerprint:
+
+    01EA 5486 DE18 A882 D4C2  6845 90C8 019E 36C2 E964
+
+Earlier releases were signed by [Wladimir J. van der Laan's regular
+key](/laanwj.asc). That key's fingerprint is:
 
     71A3 B167 3540 5025 D447  E8F2 7481 0B01 2346 C9A6
 
-Many previous releases were signed by [Gavin Andresen's
+Even earlier releases were signed by [Gavin Andresen's
 key](/gavinandresen.asc). His primary key's fingerprint is:
 
     2664 6D99 CBAE C9B8 1982  EF60 29D9 EE6B 1FC7 30C1
