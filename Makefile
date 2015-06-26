@@ -250,6 +250,6 @@ check-for-subheading-anchors:
 ## Ensure all subheadings on the site have anchors so the Javascript
 ## function addAnchorLinks() can add anchor link affordance to each
 ## subhead
-	$S grep -r -L 'Note: this file exempt from check-for-subheading-anchors check' _site/ \
+	$S grep -r -i --include \*.html -L 'Note: this file exempt from check-for-subheading-anchors check' _site/ \
 	  | xargs grep '<h[23456]' \
 	  | grep -v '<h[23456][^>]* id=' | eval $(ERROR_ON_OUTPUT)
