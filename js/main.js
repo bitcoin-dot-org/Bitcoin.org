@@ -115,54 +115,43 @@ for (var i = 0, n = domPrefixes.length; i < n; i++) {
 return false;
 }
 
+function expandBox(t) {
+// Expand or shrink box.
+var phe = getHeight(t);
+t.style.transition = t.style.MozTransition = t.style.WebkitTransition = 'all 0s ease 0s';
+if (t.className.indexOf('expanded') === -1) addClass(t, 'expanded');
+else removeClass(t, 'expanded');
+t.style.height = '';
+var nhe = getHeight(t);
+t.style.height = phe + 'px';
+// Async call to prevent transition from applying on last style.height statement.
+setTimeout(function() {
+	t.style.transition = t.style.MozTransition = t.style.WebkitTransition = '';
+	t.style.height = nhe + 'px';
+}, 20);
+}
+
 function boxShow(e) {
 // Display the box content when the user click a box on the "Secure your wallet" page.
-var p = t = getEventTarget(e);
-while (p.nodeName != 'DIV') p = p.parentNode;
-var sh = getHeight(p);
-for (var i = 0, nds = p.childNodes, n = nds.length; i < n; i++)
-	if (nds[i].nodeType == 1) nds[i].style.display = 'block';
-t.removeAttribute('href');
-t.onclick = '';
-var dh = getHeight(p);
-p.style.height = sh + 'px';
-setTimeout(function() {
-	p.style.transition = 'height 400ms ease-out';
-	p.style.MozTransition = 'height 400ms ease-out';
-	p.style.WebkitTransition = 'height 400ms ease-out';
-	setTimeout(function() {
-		p.style.height = dh + 'px';
-	}, 20);
-}, 20);
+var t = getEventTarget(e);
+while (t.nodeName != 'DIV') t = t.parentNode;
+expandBox(t);
 cancelEvent(e);
 }
 
 function faqShow(e) {
 // Display the content of a question in the FAQ at user request.
-var p = t = getEventTarget(e);
-while (p.nodeType != 1 || p.nodeName != 'DIV') p = p.nextSibling;
-var pp = p.cloneNode(true);
-pp.style.visibility = 'hidden';
-pp.style.height = 'auto';
-p.parentNode.appendChild(pp);
-var nhe = getHeight(pp);
-pp.parentNode.removeChild(pp);
-p.style.height = (p.style.height != '0px' && p.style.height != '') ? '0px' : nhe + 'px';
+var t = getEventTarget(e);
+while (t.nodeType != 1 || t.nodeName != 'DIV') t = t.nextSibling;
+expandBox(t);
 cancelEvent(e);
 }
 
 function materialShow(e) {
 // Display more materials on the "Press center" page at user request.
 var p = t = getEventTarget(e);
-while (p.nodeType != 1 || p.nodeName != 'DIV') p = p.previousSibling;
-var pp = p.cloneNode(true);
-pp.style.visibility = 'hidden';
-pp.style.height = 'auto';
-p.parentNode.appendChild(pp);
-var nhe = getHeight(pp);
-pp.parentNode.removeChild(pp);
-p.style.height = (p.style.height != '0px' && p.style.height != '') ? '0px' : nhe + 'px';
-t.style.display = 'none';
+while (p.nodeType != 1 || p.nodeName != 'DIV') p = p.parentNode;
+expandBox(p);
 cancelEvent(e);
 }
 
@@ -170,19 +159,7 @@ function librariesShow(e) {
 // Display more open source projects on the "Development" page at user request.
 var p = t = getEventTarget(e);
 while (p.nodeType != 1 || p.nodeName != 'UL') p = p.parentNode;
-var sh = getHeight(p);
-for (var i = 0, nds = p.getElementsByTagName('LI'), n = nds.length; i < n; i++) nds[i].style.display = 'list-item';
-t.parentNode.parentNode.removeChild(t.parentNode);
-var dh = getHeight(p);
-p.style.height = sh + 'px';
-setTimeout(function() {
-	p.style.transition = 'height 400ms ease-out';
-	p.style.MozTransition = 'height 400ms ease-out';
-	p.style.WebkitTransition = 'height 400ms ease-out';
-	setTimeout(function() {
-		p.style.height = dh + 'px';
-	}, 20);
-}, 20);
+expandBox(p);
 cancelEvent(e);
 }
 

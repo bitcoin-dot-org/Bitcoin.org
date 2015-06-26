@@ -1024,6 +1024,9 @@ div.post {
 }
 .boxexpand{
 	overflow:hidden;
+	-moz-transition:height 400ms ease-out;
+	-webkit-transition:height 400ms ease-out;
+	transition:height 400ms ease-out;
 }
 .boxexpand>*{
 	display:none;
@@ -1036,6 +1039,9 @@ div.post {
 .boxexpand>h3:first-child a:visited,
 .boxexpand>h3:first-child a:active{
 	text-decoration:none;
+}
+.boxexpand.expanded>*{
+	display:block;
 }
 
 .titlelight{
@@ -1217,19 +1223,24 @@ div.post {
 .devprojectlist{
 	overflow:hidden;
 	margin:-10px 0;
+	-moz-transition:height 400ms ease-out;
+	-webkit-transition:height 400ms ease-out;
+	transition:height 400ms ease-out;
 }
 .devprojectlist li{
-	display:none;
 	margin:10px 0;
 }
-.devprojectlist li:first-child,
-.devprojectlist li:first-child+li,
-.devprojectlist li:first-child+li+li,
-.devprojectlist li:first-child+li+li+li{
+.devprojectlist li:nth-child(1n+4){
+	display:none;
+}
+.devprojectlist.expanded li:nth-child(1n+4){
 	display:list-item;
 }
 .devprojectlist li.more{
 	display:block;
+}
+.devprojectlist.expanded li.more{
+	display:none;
 }
 .devprojectlist a{
 	display:inline-block;
@@ -1379,30 +1390,12 @@ div.post {
 	opacity:0;
 }
 .wallets>div{
-	display:none;
+	display:inline-block;
 	vertical-align:top;
 	font-size:16px;
 }
-.wallets>div:nth-child(1n){
-	display:inline-block;
-}
 .wallets>div:nth-child(1n+13){
 	display:none;
-}
-.wallets>div:first-child,
-.wallets>div:first-child+div,
-.wallets>div:first-child+div+div,
-.wallets>div:first-child+div+div+div,
-.wallets>div:first-child+div+div+div+div,
-.wallets>div:first-child+div+div+div+div+div,
-.wallets>div:first-child+div+div+div+div+div+div,
-.wallets>div:first-child+div+div+div+div+div+div+div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div{
-	/*IE8 Support*/
-	display:inline-block;
 }
 .wallets>div>a,
 .wallets>div>a:visited,
@@ -1494,38 +1487,8 @@ div.post {
 .wallets>div:nth-child(1n+7)>span{
 	top:-222px;
 }
-.wallets>div:first-child+div+div+div+div+div+div>div,
-.wallets>div:first-child+div+div+div+div+div+div+div>div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div>div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div>div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div>div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div>div,
-.wallets>div:first-child+div+div+div+div+div+div>span,
-.wallets>div:first-child+div+div+div+div+div+div+div>span,
-.wallets>div:first-child+div+div+div+div+div+div+div+div>span,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div>span,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div>span,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div>span{
-	/*IE8 Support*/
-	top:-222px;
-}
 .wallets>div:nth-child(1n+13)>div,
 .wallets>div:nth-child(1n+13)>span{
-	top:-92px;
-}
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div>div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div>div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div>div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div>div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div>div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div>div,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div>span,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div>span,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div>span,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div>span,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div>span,
-.wallets>div:first-child+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div+div>span{
-	/*IE8 Support*/
 	top:-92px;
 }
 .wallets>div>div>h2{
@@ -1993,6 +1956,9 @@ h2 .rssicon{
 	-webkit-transition:height 400ms ease-out;
 	transition:height 400ms ease-out;
 }
+.press-faq>div>div.expanded{
+	height:auto;
+}
 .press-faq li{
 	line-height:1.5em;
 }
@@ -2052,16 +2018,18 @@ h2 .rssicon{
 
 .press-quotes{
 	margin-bottom:40px;
+	overflow:hidden;
+	-moz-transition:height 400ms ease-out;
+	-webkit-transition:height 400ms ease-out;
+	transition:height 400ms ease-out;
+}
+.press-quotes.expanded{
+	height:auto;
 }
 .press-quotes div{
 	position:relative;
 	left:-20px;
 	text-align:left;
-	height:350px;
-	overflow:hidden;
-	-moz-transition:height 400ms ease-out;
-	-webkit-transition:height 400ms ease-out;
-	transition:height 400ms ease-out;
 }
 .press-quotes p{
 	display:inline-block;
@@ -2069,10 +2037,19 @@ h2 .rssicon{
 	width:400px;
 	margin:0 0 20px 20px;
 }
+.press-quotes p:nth-child(1n+9){
+	display:none;
+}
+.press-quotes.expanded p:nth-child(1n+9){
+	display:inline-block;
+}
 .press-quotes>a{
 	display:inline-block;
 	padding-top:10px;
 	font-weight:bold;
+}
+.press-quotes.expanded>a{
+	display:none;
 }
 .press-quotes span:first-child{
 	font-weight:bold;
