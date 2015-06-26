@@ -37,7 +37,7 @@ optional:
         - "`sighash_single|sighash_anyonecanpay`"
 
     not_to_be_confused_with_capitalize_first_letter:
-        - SIGHASH_SINGLE (which signs only a single input, like SIGHASH_ANYONECANPAY, but also signs a single output)
+        - SIGHASH_SINGLE (which signs only a single output while allowing the sequence number of other inputs to be updated)
 
     links_html_or_markdown_style_capitalize_first_letter:
         - "[SIGHASH_ANYONECANPAY](/en/developer-guide#term-sighash-anyonecanpay) --- Bitcoin.org Developer Guide"

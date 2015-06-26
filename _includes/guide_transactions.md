@@ -517,12 +517,13 @@ currently available:
   allowing anyone to change where the satoshis are going unless other
   signatures using other signature hash flags protect the outputs.
 
-* [`SIGHASH_SINGLE`][/en/glossary/sighash-none]{:#term-sighash-single}{:.term} signs only this input and only one corresponding
-  output (the output with the same output index number as the input), ensuring
+* [`SIGHASH_SINGLE`][/en/glossary/sighash-single]{:#term-sighash-single}{:.term}
+  signs only the output corresponding to this input (the output
+  with the same output index number as the input), ensuring
   nobody can change your part of the transaction but allowing other
   signers to change their part of the transaction. The corresponding
   output must exist or the value "1" will be signed, breaking the security
-  scheme.
+  scheme. The sequence numbers of other inputs are not signed and can be updated.
 
 The base types can be modified with the [`SIGHASH_ANYONECANPAY`][/en/glossary/sighash-anyonecanpay]{:#term-sighash-anyonecanpay}{:.term} (anyone can
 pay) flag, creating three new combined types:
@@ -536,9 +537,8 @@ pay) flag, creating three new combined types:
   allows anyone to add or remove other inputs or outputs, so anyone who
   gets a copy of this input can spend it however they'd like.
 
-* `SIGHASH_SINGLE|SIGHASH_ANYONECANPAY` signs only this input and only
-  one corresponding output, but it also allows anyone to add or remove
-  other inputs.
+* `SIGHASH_SINGLE|SIGHASH_ANYONECANPAY` signs this one input and its
+  corresponding output. Allows anyone to add or remove other inputs.
 
 Because each input is signed, a transaction with multiple inputs can
 have multiple signature hash types signing different parts of the transaction. For
