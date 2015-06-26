@@ -115,6 +115,19 @@ for (var i = 0, n = domPrefixes.length; i < n; i++) {
 return false;
 }
 
+function loadYoutubeVideo(e) {
+// Load Youtube video on target node on click.
+var t = getEventTarget(e),
+    nd = document.createElement('IFRAME');
+while (t.getAttribute('data-youtubeurl') === null || t.getAttribute('data-youtubeurl') === '') t = t.parentNode;
+nd.src = t.getAttribute('data-youtubeurl');
+nd.setAttribute('frameborder', 0);
+nd.setAttribute('allowfullscreen', true);
+t.innerHTML = '';
+t.appendChild(nd);
+t.onclick = '';
+}
+
 function boxShow(e) {
 // Display the box content when the user click a box on the "Secure your wallet" page.
 var p = t = getEventTarget(e);

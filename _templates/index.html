@@ -5,21 +5,8 @@
 layout: base
 id: index
 ---
-<script>
-function loadMainVideo() {
-var p = document.getElementById('mainvideo'),
-    t = p.getElementsByTagName('DIV')[0],
-    nd = document.createElement('IFRAME');
-nd.src = '//www.youtube.com/embed/Gc2en3nHxA4?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1{% if page.lang != 'en' %}&amp;cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}';
-nd.setAttribute('frameborder', 0);
-nd.setAttribute('allowfullscreen', true);
-t.innerHTML = '';
-t.appendChild(nd);
-p.onclick = '';
-}
-</script>
 <p class="mainsummary">{% translate listintro %}</p>
-<div class="mainvideo" id="mainvideo" onclick="loadMainVideo();"><div>
+<div class="mainvideo"><div onclick="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/Gc2en3nHxA4?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1{% if page.lang != 'en' %}&amp;cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}">
   <img src="/img/video/video_wuc.jpg" alt="Youtube video">
   <div class="mainvideoicon"></div>
   <div class="mainvideoiconhover"></div>
