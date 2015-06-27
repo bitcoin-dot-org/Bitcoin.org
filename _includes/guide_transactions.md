@@ -518,12 +518,13 @@ currently available:
   signatures using other signature hash flags protect the outputs.
 
 * [`SIGHASH_SINGLE`][/en/glossary/sighash-single]{:#term-sighash-single}{:.term}
-  signs only the output corresponding to this input (the output
-  with the same output index number as the input), ensuring
-  nobody can change your part of the transaction but allowing other
-  signers to change their part of the transaction. The corresponding
-  output must exist or the value "1" will be signed, breaking the security
-  scheme. The sequence numbers of other inputs are not signed and can be updated.
+  the only output signed is the one corresponding to this input (the output
+  with the same output index number as this input), ensuring nobody can change
+  your part of the transaction but allowing other signers to change their part
+  of the transaction. The corresponding output must exist or the value "1" will
+  be signed, breaking the security scheme. This input, as well as other inputs,
+  are included in the signature. The sequence numbers of other inputs are not
+  included in the signature, and can be updated.
 
 The base types can be modified with the [`SIGHASH_ANYONECANPAY`][/en/glossary/sighash-anyonecanpay]{:#term-sighash-anyonecanpay}{:.term} (anyone can
 pay) flag, creating three new combined types:
