@@ -251,6 +251,8 @@ en:
     notesync: "Bitcoin Core initial synchronization will take time and download a lot of data. You should make sure that you have enough bandwidth and storage for the full block chain size (over 20GB). If you have a good Internet connection, you can help strengthen the network by keeping your PC running with Bitcoin Core and port 8333 open."
     full_node_guide: "Read the <a href=\"/en/full-node\">full node guide</a> for details."
     patient: "Check your bandwidth and space"
+    to: "to"
+    and_later: "and later"
   events:
     title: "Conferences and events - Bitcoin"
     pagetitle: "Conferences and events"
