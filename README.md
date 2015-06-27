@@ -128,6 +128,12 @@ You simply need to push additional commits on the appropriate branch of your Git
 3. Replace your master branch by the upstream master branch. `git reset --hard upstream/master`
 4. Replace your master branch on GitHub. `git push origin master -f`
 
+**Advanced GitHub Workflow**
+
+If you continue to contribute to Bitcoin.org beyond a single pull
+request, you may want to use a more [advanced GitHub
+workflow](https://gist.github.com/harding/1a99b0bad37f9498709f).
+
 ### Previewing
 
 #### Preview Small Text Changes
