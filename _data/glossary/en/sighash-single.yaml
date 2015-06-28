@@ -7,10 +7,10 @@ required:
     title_max_40_characters_no_formatting: SIGHASH_SINGLE
 
     summary_max_255_characters_no_formatting: >
-        Signature hash type which signs the output corresponding to this input
+        Signature hash type that signs the output corresponding to this input
         (the one with the same index value), this input, and any other inputs
-        partially. Allows modification of other outputs. The partial signing of
-        other inputs allows modification of their sequence numbers.
+        partially. Allows modification of other outputs and the sequence number
+        of other inputs.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - SIGHASH_SINGLE
