@@ -7,6 +7,7 @@ PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
 
 source /etc/profile.d/rvm.sh
 
+AUTHORIZED_SIGNERS_DIR='/bitcoin.org/auto-build-committers.gnupg'
 REPO='https://github.com/bitcoin-dot-org/bitcoin.org.git'
 SITEDIR='/bitcoin.org/site'
 DESTDIR='build@bitcoinorgsite:/var/www/site'
@@ -39,6 +40,32 @@ fi
 git reset --hard origin/master
 git clean -x -f -d
 
+## Whether to auto-build or force-build
+case "${1:-nil}" in
+  auto)
+    ## From git-log(1):
+    ## %G?: show "G" for a Good signature, "B" for a Bad signature, "U"
+    ## for a good, untrusted signature and "N" for no signature
+    if ! GNUPGHOME=$AUTHORIZED_SIGNERS_DIR git log --format='%G?' -1 | egrep -q '^(G|U)$'
+    then
+      echo "Commit tree tip not signed by an authorized signer.  Terminating build."
+      exit 1
+    fi
+  ;;
+
+  force)
+    true
+  ;;
+
+  *)
+    echo "$0 <auto|force>"
+    echo
+    echo "auto: only builds if the latest commit is GPG signed by an authorized key"
+    echo "force: builds latest commit no matter what"
+    exit 1
+  ;;
+esac
+
 # Copy files to temporary directory
 rsync -rt --delete "$SITEDIR/" "$WORKDIR/"
 
@@ -70,13 +97,12 @@ do
 	fi
 
 	# Cancel script if a concurrent script has touched _buildlock
-	time=0
 	if [ -e "$SITEDIR/_buildlock" ]; then
 		time=`stat -c %Y "$SITEDIR/_buildlock" | cut -d ' ' -f1`
-	fi
-	if [ $time != $lasttime ]; then
-		echo "Build cancelled"
-		exit
+		if [ $time != $lasttime ]; then
+			echo "Build cancelled"
+			exit
+		fi
 	fi
 	sleep 1
 
