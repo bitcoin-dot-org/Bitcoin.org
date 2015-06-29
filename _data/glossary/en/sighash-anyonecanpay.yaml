@@ -7,8 +7,7 @@ required:
     title_max_40_characters_no_formatting: SIGHASH_ANYONECANPAY
 
     summary_max_255_characters_no_formatting: >
-        A signature hash type which modifies the behavior of other signature hash types
-        to allow signing only the current input.
+        A signature hash type which signs only the current input.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - SIGHASH_ANYONECANPAY
@@ -37,7 +36,7 @@ optional:
         - "`sighash_single|sighash_anyonecanpay`"
 
     not_to_be_confused_with_capitalize_first_letter:
-        - SIGHASH_SINGLE (which signs only a single input, like SIGHASH_ANYONECANPAY, but also signs a single output)
+        - SIGHASH_SINGLE (which signs this input, its corresponding output, and other inputs partially)
 
     links_html_or_markdown_style_capitalize_first_letter:
         - "[SIGHASH_ANYONECANPAY](/en/developer-guide#term-sighash-anyonecanpay) --- Bitcoin.org Developer Guide"

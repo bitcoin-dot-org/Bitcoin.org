@@ -7,9 +7,10 @@ required:
     title_max_40_characters_no_formatting: SIGHASH_SINGLE
 
     summary_max_255_characters_no_formatting: >
-        Signature hash type which only signs its input and the output
-        with the same index value, allowing modification of other inputs
-        and outputs.
+        Signature hash type that signs the output corresponding to this input
+        (the one with the same index value), this input, and any other inputs
+        partially. Allows modification of other outputs and the sequence number
+        of other inputs.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - SIGHASH_SINGLE
@@ -19,7 +20,7 @@ optional:
         - "`SIGHASH_SINGLE`"
 
     not_to_be_confused_with_capitalize_first_letter:
-        - SIGHASH_ANYONECANPAY (a flag to signature hash types that only signs a single input, like SIGHASH_SINGLE, but which doesn't sign any outputs.)
+        - SIGHASH_ANYONECANPAY (a flag to signature hash types that only signs this single input)
 
     links_html_or_markdown_style_capitalize_first_letter:
         - "[`SIGHASH_SINGLE`](/en/developer-guide#term-sighash-single) --- Bitcoin.org Developer Guide"
