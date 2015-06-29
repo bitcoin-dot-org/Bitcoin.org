@@ -76,13 +76,20 @@ lin64: "linux64.tar.gz"
         </span>
       </div>
     </div>
-    <p>
+    <p class="downloadmore">
       <a href="{{ PATH_PREFIX }}/SHA256SUMS.asc" class="dl">{% translate downloadsig %}</a><br>
       <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}.torrent" class="dl">{% translate downloadtorrent %}</a>
         {% if site.DOWNLOAD_MAGNETLINK %} <a href="{{ site.DOWNLOAD_MAGNETLINK | replace: '&', '\&amp;'}}" class="magnetlink" data-proofer-ignore></a>{% endif %}<br>
       <a href="/en/version-history">{% translate versionhistory %}</a>
     </p>
+    <p class="downloadkeys">
+      <span>{% translate releasekeys %}</span>
+      <a href="/gavinandresen.asc">v0.8.6 - 0.9.2.1</a>
+      <a href="/laanwj.asc">v0.9.3 - 0.10.2</a>
+      <a href="/laanwj-releases.asc">v0.11.0+</a>
+    </p>
   </div>
+
   <h2><img src="/img/icons/note.svg" class="warningicon" alt="note">{% translate patient %}</h2>
   <p>{% translate notesync %} {% translate full_node_guide %}</p>
   <p>{% translate notelicense %}</p>

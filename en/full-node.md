@@ -24,12 +24,17 @@ Configuration](#network-configuration) section for details.
 
 If you know how to use PGP, you should also click the *Verify Release
 Signatures* link on the download page to download a signed list of SHA256
-file hashes. The file is currently signed by [Wladimir J. van der Laan's
-key](/laanwj.asc). His primary key's fingerprint is:
+file hashes. The 0.11 and later releases are signed by [Wladimir J. van
+der Laan's releases key](/laanwj-releases.asc) with the fingerprint:
+
+    01EA 5486 DE18 A882 D4C2  6845 90C8 019E 36C2 E964
+
+Earlier releases were signed by [Wladimir J. van der Laan's regular
+key](/laanwj.asc). That key's fingerprint is:
 
     71A3 B167 3540 5025 D447  E8F2 7481 0B01 2346 C9A6
 
-Many previous releases were signed by [Gavin Andresen's
+Even earlier releases were signed by [Gavin Andresen's
 key](/gavinandresen.asc). His primary key's fingerprint is:
 
     2664 6D99 CBAE C9B8 1982  EF60 29D9 EE6B 1FC7 30C1
@@ -93,8 +98,8 @@ Core running.
 * Table of contents
 {:toc}
 
-<ul class="reportissue"><li><a href="https://github.com/bitcoin/bitcoin.org/issues/new">Report An Issue</a></li></ul>
-<ul class="editsource"><li><a href="https://github.com/bitcoin/bitcoin.org/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
+<ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new">Report An Issue</a></li></ul>
+<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
 
 </div></div>
 <div markdown="1" class="toccontent">
@@ -945,7 +950,7 @@ automatically started minimized in the task bar.
 
 If you can provide instructions and screenshots for running the latest
 version of Bitcoin Core daemon on Windows 7, please [open an
-issue](https://github.com/bitcoin/bitcoin.org/issues/new) and we'll tell
+issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) and we'll tell
 you what we need.  The instructions for [Windows
 8.x](#win8-daemon) may already provide all the necessary information.
 
@@ -956,7 +961,7 @@ you what we need.  The instructions for [Windows
 
 If you can provide instructions and screenshots for running the latest
 version of Bitcoin Core on Mac OS X, please [open an
-issue](https://github.com/bitcoin/bitcoin.org/issues/new) and we'll tell
+issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) and we'll tell
 you what we need.
 
 
@@ -1190,7 +1195,7 @@ anything, search the web for help with "port forwarding", and ask for
 help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
-instructions, please [open an issue.](https://github.com/bitcoin/bitcoin.org/issues/new)
+instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
 
 #### Firewall Configuration
 
@@ -1223,7 +1228,7 @@ web for help with "port forwarding" and "opening firewall ports", and
 ask for help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
-instructions, please [open an issue.](https://github.com/bitcoin/bitcoin.org/issues/new)
+instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
 
 </div>
 <script>updateToc();</script>
