@@ -156,8 +156,6 @@ en:
     checkgoodcontrolfulltxt: "This wallet gives you full control over your bitcoins. This means no third party can freeze or lose your funds. You are however still responsible for securing and backing up your wallet."
     checkpasscontrolhybrid: "Hosted control over your money"
     checkpasscontrolhybridtxt: "This wallet gives you control over your bitcoins. However, this service is retaining an encrypted copy of your wallet. This means your bitcoins can be stolen if you don't use a strong password and the service is compromised."
-    checkpasscontrolshared: "Shared control over your money"
-    checkpasscontrolsharedtxt: "This wallet gives you full control over your bitcoins and allows you to share this control with other individuals. You must use caution when sharing control of a wallet, as copayers can freeze or lose your funds. You are also responsible for securing and backing up wallets."
     checkpasscontrolmulti: "Shared control over your money"
     checkpasscontrolmultitxt: "This wallet requires every transaction to be authorized both by you and this third party. Under normal circumstances, you can regain full control over your bitcoins using your initial backup or pre-signed transactions sent by email."
     checkfailcontrolthirdpartyinsured: "Money controlled by a third party"
