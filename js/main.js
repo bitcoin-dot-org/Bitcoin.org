@@ -354,33 +354,11 @@ var t = getEventTarget(e),
 			scrollToNode(document.getElementById('wallets'));
 		}, 10);
 	}
-    },
-    walletFallbackPlatform = function() {
-	// Show back wallets for selected platform when the mouse leaves the menu without selecting another platform.
-	var select = null,
-	    active = null;
-	for (var i = 0, nds = walletMenu.getElementsByTagName('A'), n = nds.length; i < n; i++) {
-		if (nds[i].getAttribute('data-select') == '1') select = nds[i];
-		if (nds[i].getAttribute('data-active') == '1') active = nds[i];
-	}
-	if (select === null || active === null) return;
-	walletShowPlatform(select.getAttribute('data-walletcompat'));
     };
 // Pre-process events and call appropriate function.
-switch (e.type) {
-	case 'click':
-		if (t.nodeName == 'A') walletSelectPlatform();
-		break;
-	case 'mouseover':
-		if (t.nodeName == 'A') {
-			walletShowPlatform(t.getAttribute('data-walletcompat'));
-			clearTimeout(walletMenu.getAttribute('data-wallettimeout'));
-		}
-		break;
-	case 'mouseout':
-		clearTimeout(walletMenu.getAttribute('data-wallettimeout'));
-		walletMenu.setAttribute('data-wallettimeout', setTimeout(walletFallbackPlatform, 100));
-		break;
+if (t.nodeName == 'A') {
+	walletSelectPlatform();
+	walletShowPlatform(t.getAttribute('data-walletcompat'));
 }
 }
 
@@ -467,7 +445,6 @@ p.setAttribute('timeout', setTimeout(function() {
 	}
 	walletRotate()
 	removeClass(p, 'disabled');
-	document.getElementById('walletsmobile').innerHTML = '';
 }, ti));
 }
 
