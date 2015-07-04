@@ -36,7 +36,8 @@ module Jekyll
       else
         self.data['category'] = 'alert'
         if self.data.has_key?('banner') and !self.data['banner'].nil? and self.data['banner'].length>0
-          site.config['ALERT']='<a href="/'+dstdir+'/'+dst.gsub('.html','')+'">'+self.data['banner']+'</a>'
+          site.config['ALERT']=self.data['banner']
+          site.config['ALERTURL']='/'+dstdir+'/'+dst.gsub('.html','')
         end
         if self.data.has_key?('active') and !self.data['active'].nil? and self.data['active'] == true
           site.config['STATUS']=1
