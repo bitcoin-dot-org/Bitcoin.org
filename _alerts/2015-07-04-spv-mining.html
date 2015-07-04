@@ -5,7 +5,7 @@ active: true
 banner: "WARNING: many wallets currently vulnerable to double-spending of confirmed transactions (click here to read)"
 ---
 <p><em>This document is being updated as new information arrives.  Last
-update: 2015-07-04 09:00 UTC</em></p>
+update: 2015-07-04 09:30 UTC</em></p>
 
 {% assign confs="30" %}
 
@@ -24,7 +24,7 @@ update: 2015-07-04 09:00 UTC</em></p>
 
   <li><b>Bitcoin Core 0.9.4 or earlier users</b> should wait an
   additional {{confs}} confirmations more than you would normally
-  wait or upgrade to <a href="/en/download">Bitcoin Core 0.10.2</a>.</b></li>
+  wait or upgrade to <a href="/en/download">Bitcoin Core 0.10.2</a>.</li>
 
   <li><b>Web wallet users</b> should wait an additional {{confs}} confirmations
   more than you would normally wait, unless you know for sure that your
@@ -35,8 +35,8 @@ update: 2015-07-04 09:00 UTC</em></p>
 
 <h2 id="miners">Miners</h2>
 
-If you pool mine, please switch to a pool that properly validates
-blocks.  (If you solo mine, please switch to Bitcoin Core 0.10.2.)
+<p>If you pool mine, please switch to a pool that properly validates
+blocks.  (If you solo mine, please switch to Bitcoin Core 0.10.2.)</p>
 
 <p><b>Bad pools:</b> these pools are not correctly validating, and are
 losing money.</p>
@@ -58,10 +58,10 @@ systems.</p>
 
 <h2 id="solution">When Will Things Go Back To Normal?</h2>
 
-The problem is miners creating invalid blocks.  Some software can detect
+<p>The problem is miners creating invalid blocks.  Some software can detect
 that those blocks are invalid and reject them; other software can't
 detect that blocks are invalid, so they show confirmations that aren't
-real.
+real.</p>
 
 <ul>
   <li><b>Bitcoin Core 0.9.5 and later</b> never had any problems because
