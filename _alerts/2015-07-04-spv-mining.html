@@ -5,13 +5,13 @@ active: true
 banner: "WARNING: many wallets currently vulnerable to double-spending of confirmed transactions (click here to read)"
 ---
 <p><em>This document is being updated as new information arrives.  Last
-update: 2015-07-04 09:30 UTC</em></p>
+update: 2015-07-04 16:00 UTC</em></p>
 
 {% assign confs="30" %}
 
 <h2 id="summary">Summary</h2>
 
-<p>Your bitcoins are safe if you received them in transactions confirmed before 2015-07-04 08:00 UTC.</p>
+<p>Your bitcoins are safe if you received them in transactions confirmed before 2015-07-04 15:00 UTC.</p>
 
 <p>However, there has been a problem with a planned upgrade. For
    bitcoins received later than the time above, confirmation scores are
@@ -30,31 +30,19 @@ update: 2015-07-04 09:30 UTC</em></p>
   more than you would normally wait, unless you know for sure that your
   wallet is secured by Bitcoin Core 0.9.5 or later.</li>
 
-  <li><b>Bitcoin Core 0.9.5 or later users are unaffected.</b></li>
+  <li><b>Bitcoin Core 0.9.5 or later users are unaffected.</b>  (Note:
+  <a href="/en/download">upgrade to 0.10.2</a> is recommend due to
+  denial-of-service vulnerabilities unrelated to this alert.)</li>
 </ul>
 
 <h2 id="miners">Miners</h2>
 
 <p>If you pool mine, please switch to a pool that properly validates
-blocks.  (If you solo mine, please switch to Bitcoin Core 0.10.2.)</p>
+blocks.  The Wiki Mining Pool Comparison page currently contains a list of <a
+href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools#SPV_Mining_.2F_Old_Bitcoin_Core">known (or
+suspected) good and bad pools.</a></p>
 
-<p><b>Bad pools:</b> these pools are not correctly validating, and are
-losing money.</p>
-
-<ul>
- <li>BTC Nuggets</li>
-</ul>
-
-<p><b>Good pools:</b> these pools properly validate blocks.  Please
-switch to them, at least until the bad pools have fixed their
-systems.</p>
-
-<ul>
-  <li><a href="http://eligius.st/">Eligius</a></li>
-  <li><a href="https://www.kano.is">kano/ckpool</a></li>
-  <li><a href="http://p2pool.in/">P2Pool</a></li>
-  <li><a href="https://www.f2pool.com/">F2Pool</a></li>
-</ul>
+<p>If you solo mine, please switch to Bitcoin Core 0.10.2.</p>
 
 <h2 id="solution">When Will Things Go Back To Normal?</h2>
 
