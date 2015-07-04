@@ -4,26 +4,32 @@ alias: "spv-mining"
 active: true
 banner: "WARNING: many wallets currently vulnerable to double-spending of confirmed transactions (click here to read)"
 ---
-
 <p><em>This document is being updated as new information arrives.  Last
-update: 2015-07-04 06:00 UTC</em></p>
+update: 2015-07-04 07:00 UTC</em></p>
+
+{% assign confs="30" %}
 
 <h2 id="summary">Summary</h2>
 
-<p>Some miners are currently generating invalid blocks. <b>Bitcoin Core
-   0.9.4 and earlier</b> will accept these invalid blocks, making them
-   more vulnerable to double spends.  This <b>also applies to web wallets</b>
-   from companies that still use 0.9.4 or earlier nodes.</p>
+<p>Your bitcoins are safe if you received them in transations confirmed before 2015-07-04 06:00 UTC.</p>
 
-<p><b>Lightweight (SPV) wallets are also at increased risk,</b> and will
-      remain so until all miners have switched back to full
-      validation.</p>
+<p>After that time, confirmation scores are not as reliable as they
+usually are for users of certain software:</p>
 
-<p>Users of the above listed vulnerable software must either <b>stop
-   accepting transactions—even if they are confirmed—</b>or <a href="/en/download">upgrade to Bitcoin
-   Core 0.10.2</a>.</p>
+<ul>
+  <li><b>Lightweight (SPV) wallet users</b> should wait an additional {{confs}}
+  confirmations more than you would normally wait.</li>
 
-<p>Users of Bitcoin Core 0.9.5 and later are currently unaffected.</p>
+  <li><b>Bitcoin Core 0.9.4 or earlier users</b> should wait an
+  additional {{confs}} confirmations more than you would normally
+  wait or upgrade to <a href="/en/download">Bitcoin Core 0.10.2</a>.</b></li>
+
+  <li><b>Web wallet users</b> should wait an additional {{confs}} confirmations
+  more than you would normally wait, unless you know for sure that your
+  wallet is secured by Bitcoin Core 0.9.5 or later.</li>
+
+  <li><b>Bitcoin Core 0.9.5 or later users</b> are unaffected.</b></li>
+</ul>
 
 <h2 id="miners">Miners</h2>
 
@@ -48,6 +54,12 @@ systems.</p>
   <li><a href="https://www.kano.is">kano/ckpool</a></li>
   <li><a href="http://p2pool.in/">P2Pool</a></li>
 </ul>
+
+<h2 id="cause">What's Happening</h2>
+
+<p>Some miners are currently generating invalid blocks.   Almost all
+software besides Bitcoin Core 0.9.5 and later will accept these invalid
+blocks under certain conditions.</p>
 
 <p><b>More information to follow.</b></p>
 
