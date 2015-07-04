@@ -2,7 +2,7 @@
 title: "Some Miners Generating Invalid Blocks"
 alias: "spv-mining"
 active: true
-banner: "WARNING: many wallets currently vulnerable to double spends (click here to read)"
+banner: "WARNING: many wallets currently vulnerable to double-spending of confirmed transactions (click here to read)"
 ---
 
 <p><em>This document is being updated as new information arrives.  Last
@@ -20,13 +20,34 @@ update: 2015-07-04 06:00 UTC</em></p>
       validation.</p>
 
 <p>Users of the above listed vulnerable software must either <b>stop
-   accepting transactions—even if they are confirmed—</b> or <a href="/en/download">upgrade to Bitcoin
+   accepting transactions—even if they are confirmed—</b>or <a href="/en/download">upgrade to Bitcoin
    Core 0.10.2</a>.</p>
 
 <p>Users of Bitcoin Core 0.9.5 and later are currently unaffected.</p>
 
-<p><b>Miners:</b> If you are a pool miner, please switch immediately to a
-   pool to that fully validates blocks.</p>
+<h2 id="miners">Miners</h2>
+
+If you pool mine, please switch to a pool that properly validates
+blocks.  (If you solo mine, please switch to Bitcoin Core 0.10.2.)
+
+<p><b>Bad pools:</b> these pools are not correctly validating, and are
+losing money.</p>
+
+<ul>
+ <li>BTC Nuggets</li>
+ <li>F2Pool</li>
+</ul>
+
+<p><b>Good pools:</b> these pools properly validate blocks.  Please
+switch to them, at least until the bad pools have fixed their
+systems.</p>
+
+<ul>
+  <li><a href="https://www.antpool.com/">AntPool</a></li>
+  <li><a href="http://eligius.st/">Eligus</a></li>
+  <li><a href="https://www.kano.is">kano/ckpool</a></li>
+  <li><a href="http://p2pool.in/">P2Pool</a></li>
+</ul>
 
 <p><b>More information to follow.</b></p>
 
