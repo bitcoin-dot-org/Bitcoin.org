@@ -1,5 +1,5 @@
 ---
-title: "Some Miners Generating Invalid v3 Blocks"
+title: "Some Miners Generating Invalid Blocks"
 alias: "spv-mining"
 active: true
 banner: "WARNING: many wallets currently vulnerable to double spends (click here to read)"
@@ -11,19 +11,19 @@ update: 2015-07-04 06:00 UTC</em></p>
 <h2 id="summary">Summary</h2>
 
 <p>Some miners are currently generating invalid blocks. <b>Bitcoin Core
-   0.9.x and earlier</b> will accept these invalid blocks, making them
+   0.9.4 and earlier</b> will accept these invalid blocks, making them
    more vulnerable to double spends.  This <b>also applies to web wallets</b>
-   from companies that still use 0.9.x or earlier nodes.</p>
+   from companies that still use 0.9.4 or earlier nodes.</p>
 
 <p><b>Lightweight (SPV) wallets are also at increased risk,</b> and will
       remain so until all miners have switched back to full
       validation.</p>
 
 <p>Users of the above listed vulnerable software must either <b>stop
-   accepting transactions</b> or <a href="/en/download">upgrade to Bitcoin
-   Core 0.10.0 or later</a>.</p>
+   accepting transactions—even if they are confirmed—</b> or <a href="/en/download">upgrade to Bitcoin
+   Core 0.10.2</a>.</p>
 
-<p>Users of Bitcoin Core 0.10.0 and later are currently unaffected.</p>
+<p>Users of Bitcoin Core 0.9.5 and later are currently unaffected.</p>
 
 <p><b>Miners:</b> If you are a pool miner, please switch immediately to a
    pool to that fully validates blocks.</p>
