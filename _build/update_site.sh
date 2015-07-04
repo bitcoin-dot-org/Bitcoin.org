@@ -9,9 +9,12 @@ source /etc/profile.d/rvm.sh
 
 AUTHORIZED_SIGNERS_DIR='/bitcoin.org/auto-build-committers.gnupg'
 REPO='https://github.com/bitcoin-dot-org/bitcoin.org.git'
+BUNDLE_DIR='/bitcoin.org/bundle'
 SITEDIR='/bitcoin.org/site'
 DESTDIR='build@bitcoinorgsite:/var/www/site'
 WORKDIR=`mktemp -d`
+
+export BUNDLE_DIR
 
 # Stop script in case a single command fails
 set -e
