@@ -45,7 +45,11 @@ install-deps-development:
 
 ## Install dependencies (deployment version)
 install-deps-deployment:
+ifdef BUNDLE_DIR
+	bundle install --deployment --without :slow_test --path=$(BUNDLE_DIR)
+else
 	bundle install --deployment --without :slow_test
+endif
 
 ## Pre-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
 pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignments \
