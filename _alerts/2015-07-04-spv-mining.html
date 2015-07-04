@@ -7,14 +7,16 @@ banner: "WARNING: many wallets currently vulnerable to double-spending of confir
 <p><em>This document is being updated as new information arrives.  Last
 update: 2015-07-04 09:00 UTC</em></p>
 
-{% assign confs="15" %}
+{% assign confs="30" %}
 
 <h2 id="summary">Summary</h2>
 
 <p>Your bitcoins are safe if you received them in transactions confirmed before 2015-07-04 08:00 UTC.</p>
 
-<p>After that time, confirmation scores are not as reliable as they
-usually are for users of certain software:</p>
+<p>However, there has been a problem with a planned upgrade. For
+   bitcoins received later than the time above, confirmation scores are
+   significantly less reliable then they usually are for users of
+   certain software:</p>
 
 <ul>
   <li><b>Lightweight (SPV) wallet users</b> should wait an additional {{confs}}
@@ -72,12 +74,9 @@ real.
       consensus rules. <a href="/en/download">Upgrade</a> is recommended
       to return to full node security.</li>
 
-  <li><b>Lightweight (SPV) wallets</b> are not safe until all the major
-      pools switch to full validation. After all the major pools fix
-      their problems, lightweight wallets will remain vulnerable to one,
-      two, or rarely three confirmation double spends until near 100% of
-      total hash rate has upgraded to a BIP66-compliant version of
-      Bitcoin Core.</li>
+  <li><b>Lightweight (SPV) wallets</b> are not safe for less than
+      {{confs}} confirmations until all the major pools switch to full
+      validation.</li>
 
   <li><b>Web wallets</b> are very diverse in what infrastructure they
       run and how they handle double spends, so unless you know for sure
@@ -124,16 +123,6 @@ real.
    least temporarily). As this progresses, we will reduce our
    current recommendation of waiting {{confs}} extra confirmations to a
    lower number.</p>
-
-<p>However, the BIP66 soft fork implementation method of waiting for
-   only 95% of miners to upgrade does leave miner-trusting software such
-   as lightweight wallets at increased risk of seeing invalid single
-   confirmations (10% risk), invalid double confirmations (1% risk), and
-   maybe even invalid triple confirmations (0.1% risk) until more of
-   the 5% non-upgraded miners do finally upgrade.  So for the next
-   several weeks (maybe months), lightweight wallet users, web wallet
-   users, and users of old versions of Bitcoin Core should wait an extra
-   two to three confirmations.</p>
 
 <!--
 <div style="text-align:right">
