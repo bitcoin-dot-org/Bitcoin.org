@@ -142,26 +142,28 @@ table td,table th{
 	font-style:italic;
 }
 
-.banner-message div div{
-	margin:auto;
-	width:850px;
-	padding:10px;
-}
 .banner-message,
 .banner-message a,
 .banner-message a:link,
 .banner-message a:active,
 .banner-message a:visited{
+	display:block;
 	color:#fff;
 }
 .banner-message a:hover{
 	text-decoration:underline;
 }
-.banner-message.alert div{
+.banner-message.alert a{
 	background-color:#c5251f;
 }
-.banner-message.info div{
+.banner-message.info a{
 	background-color:#0d579b;
+}
+.banner-message a span{
+	display:block;
+	margin:auto;
+	width:850px;
+	padding:10px;
 }
 
 .head{
@@ -2162,7 +2164,7 @@ h2 .rssicon{
 		margin:auto;
 		margin-bottom:5px;
 	}
-	.banner-message div div{
+	.banner-message a span{
 		width:auto;
 	}
 	.head{
