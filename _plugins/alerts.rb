@@ -30,6 +30,7 @@ module Jekyll
       self.read_yaml(File.join(base, srcdir), src)
       self.data['lang'] = lang
       self.data['date'] = date
+      self.data['path'] = srcdir+'/'+src
       self.data['layout'] = 'alert'
       if dstdir == ''
         self.data['canonical'] = '/en/alert/' + src.split('.')[0]
