@@ -39,9 +39,12 @@ module Jekyll
         if self.data.has_key?('banner') and !self.data['banner'].nil? and self.data['banner'].length>0
           site.config['ALERT']=self.data['banner']
           site.config['ALERTURL']='/'+dstdir+'/'+dst.gsub('.html','')
+          if self.data.has_key?('bannerclass') and !self.data['bannerclass'].nil? and self.data['bannerclass'].length>0
+            site.config['ALERTCLASS'] = self.data['bannerclass']
+          end
         end
         if self.data.has_key?('active') and !self.data['active'].nil? and self.data['active'] == true
-          site.config['STATUS']=1
+          site.config['STATUS'] = 1
         end
         if self.data.has_key?('alias')
           site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['alias']+'.html', date)
@@ -55,6 +58,7 @@ module Jekyll
     def generate(site)
       #Generate each alert based on templates
       site.config['STATUS'] = 0
+      site.config['ALERTCLASS'] = 'alert'
       #Do nothing if plugin is disabled
       if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('alerts').nil?
         print 'Alerts disabled' + "\n"
