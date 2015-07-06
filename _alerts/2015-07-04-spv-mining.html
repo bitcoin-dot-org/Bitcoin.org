@@ -4,14 +4,18 @@ alias: "spv-mining"
 active: true
 banner: "WARNING: many wallets currently vulnerable to double-spending of confirmed transactions (click here to read)"
 ---
+{% capture markdown %}
 <p><em>This document is being updated as new information arrives.  Last
-update: 2015-07-04 16:00 UTC</em></p>
+update: 2015-07-06 02:00.  All times are UTC.</em></p>
+
+**Note: this alert is on-going: the situation has not yet been
+resolved. ([Update #1](#update-1))**
 
 {% assign confs="30" %}
 
 <h2 id="summary">Summary</h2>
 
-<p>Your bitcoins are safe if you received them in transactions confirmed before 2015-07-04 15:00 UTC.</p>
+<p>Your bitcoins are safe if you received them in transactions confirmed before 2015-07-06 00:00 UTC.</p>
 
 <p>However, there has been a problem with a planned upgrade. For
    bitcoins received later than the time above, confirmation scores are
@@ -19,8 +23,9 @@ update: 2015-07-04 16:00 UTC</em></p>
    certain software:</p>
 
 <ul>
-  <li><b>Lightweight (<a href="http://bitcoin.stackexchange.com/questions/4649/what-is-an-spv-client">SPV</a>) wallet users</b> should wait an additional {{confs}}
-  confirmations more than you would normally wait.</li>
+  <li markdown="span"><b>Lightweight (<a href="http://bitcoin.stackexchange.com/questions/4649/what-is-an-spv-client">SPV</a>) wallet users</b> should wait an additional {{confs}}
+  confirmations more than you would normally wait.  Electrum users,
+  please see [this note][electrum note].</li>
 
   <li><b>Bitcoin Core 0.9.4 or earlier users</b> should wait an
   additional {{confs}} confirmations more than you would normally
@@ -77,8 +82,21 @@ real.</p>
 
 <p>Summary: Some miners are currently generating invalid blocks. Almost
    all software (besides Bitcoin Core 0.9.5 and later) will accept these
-   invalid blocks under certain conditions.  The paragraphs that follow
-   explain the cause more throughly.</p>
+   invalid blocks under certain conditions.</p>
+
+So far, the following forks of two or more blocks have occurred:
+
+{% assign Blocks='Blocks <sup><a href="#invalid-blocks">[1]</a></sup>' %}
+
+<a name="list-of-forks" />
+
+| Start date     | End time | {{Blocks}} | Double Spends |
+|----------------|----------|------------|---------------|
+| 4 July @ 02:10 | 03:50    | 6          | 0             |
+| 5 July @ 21:50 | 23:40    | 3          | Not yet known |
+
+
+The paragraphs that follow explain the cause more throughly.
 
 <p>For several months, an increasing amount of mining hash rate has been
    signaling its intent to begin enforcing <a
@@ -87,7 +105,7 @@ real.</p>
    once 950 of the last 1,000 blocks were version 3 (v3) blocks, all
    upgraded miners would reject version 2 (v2) blocks.</p>
 
-<p>Early morning UTC on 4 July 2015, the 950/1000 (95%) threshold was
+<p>Early morning on 4 July 2015, the 950/1000 (95%) threshold was
    reached. Shortly thereafter, a small miner (part of the non-upgraded
    5%) mined an invalid block--as was an expected occurrence.
    Unfortunately, it turned out that roughly half the network hash rate
@@ -106,14 +124,30 @@ real.</p>
    been downgraded to SPV-level security by the new BIP66 consensus
    rules.</p>
 
-<p>The immediate fix, which is well underway as of this writing, is to
+<p>The recommended fix, which was attempted, was to
    get all miners off of SPV mining and back to full validation (at
-   least temporarily). As this progresses, we will reduce our
+   least temporarily). If this happens, Bitcoin.org will reduce our
    current recommendation of waiting {{confs}} extra confirmations to a
    lower number.</p>
+
+(**New 6 July 04:00**{:#update-1}) A new fork occurred starting 5 July at
+21:30 with three blocks before the valid chain again became the
+strongest chain. See the recently-added [list of forks](#list-of-forks).
+Reports that the situation has past are **not correct.** Please continue
+to wait {{confs}} more confirmations than you usually would wait before
+accepting a transaction.
+
+## Invalid Blocks
+
+Please see the list of [invalid block hashes][] on the Bitcoin Wiki.
 
 <!--
 <div style="text-align:right">
   <i>This notice last updated: 2015-07-04 06:00 UTC</i>
 </div>
 -->
+
+[electrum note]: https://en.bitcoin.it/wiki/July_2015_Forks#Electrum
+[invalid block hashes]: https://en.bitcoin.it/wiki/July_2015_Forks#Invalid_Block_Hashes
+{% endcapture %}
+{{ markdown | markdownify }}
