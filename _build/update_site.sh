@@ -5,8 +5,6 @@
 
 PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
 
-source /etc/profile.d/rvm.sh
-
 AUTHORIZED_SIGNERS_DIR='/bitcoin.org/auto-build-committers.gnupg'
 REPO='https://github.com/bitcoin-dot-org/bitcoin.org.git'
 BUNDLE_DIR='/bitcoin.org/bundle'
@@ -78,6 +76,7 @@ lasttime=`stat -c %Y "$SITEDIR/_buildlock" | cut -d ' ' -f1`
 
 # Build website in a child process
 (
+source /etc/profile.d/rvm.sh
 cd $WORKDIR
 make deployment && touch "$WORKDIR/_builddone" || touch "$WORKDIR/_buildfail"
 )&
@@ -96,6 +95,7 @@ do
 	if [ -e "$WORKDIR/_builddone" ]; then
 		find $WORKDIR/_site \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' -o -iname '*.rss' -o -iname '*.xml' -o -iname '*.svg' -o -iname '*.ttf' \) -exec gzip -9 -k {} \;
 		rsync --delete -zrt $WORKDIR/_site/ $DESTDIR/
+                echo "Upload done; terminating script"
 		exit
 	fi
 
