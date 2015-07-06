@@ -560,7 +560,8 @@ More information will follow.
 * `title: ...` will be used as the title in the layout.
 * `alias: ...` (optional) a short alias for Bitcoin Core alerts. Ex. "dos" will produce /dos.html
 * `active: ...` (true or false) define if the alert should appear as ongoing in the network status page.
-* `banner: ...` (optional) a short text that will be displayed in a red alert banner and link to the alert page.
+* `banner: ...` (optional) a short text that will be displayed in an alert banner and link to the alert page.
+* `bannerclass: ...` (optional) a CSS class that sets the color of the banner. Possible values: alert (default red), warning (orange), success (green), info (blue).
 * `last updated: ...` should be kept up to date and be in RFC 2822 format ( date -uR ).
 
 ## Wallets
