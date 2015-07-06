@@ -5,7 +5,6 @@ active: true
 banner: "WARNING: many wallets currently vulnerable to double-spending of confirmed transactions (click here to read)"
 bannerclass: "alert"
 ---
-{% capture markdown %}
 <p><em>This document is being updated as new information arrives.  Last
 update: 2015-07-06 02:00.  All times are UTC.</em></p>
 
@@ -152,5 +151,3 @@ Please see the list of [invalid block hashes][] on the Bitcoin Wiki.
 
 [electrum note]: https://en.bitcoin.it/wiki/July_2015_Forks#Electrum
 [invalid block hashes]: https://en.bitcoin.it/wiki/July_2015_Forks#Invalid_Block_Hashes
-{% endcapture %}
-{{ markdown | markdownify }}
