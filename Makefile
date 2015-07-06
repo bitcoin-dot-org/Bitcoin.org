@@ -99,6 +99,7 @@ build:
 	  | egrep -v 'sha256sums.txt' \
 	  | sort \
 	  | xargs -d '\n' sha256sum > _site/sha256sums.txt
+	$S git show --oneline > _site/commit.txt
 
 ## Jekyll annoyingly returns success even when it emits errors and
 ## exceptions, so we'll grep its output for error strings
