@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22">
-  <g transform="translate(0 -1030.362)">
-    <rect width="20.671" height="20.724" x=".68" y="1031.035" ry="4.375" fill="#f7931a" fill-rule="evenodd" stroke="#f7931a"/>
-    <path d="M6.161 17.714a1.696 1.696 0 1 1-3.393 0 1.696 1.696 0 1 1 3.393 0z" transform="translate(0 1030.362)" fill="#f7931a" stroke="#f7931a"/>
-    <path d="M8.482 18.339a2.902 2.143 0 1 1-5.804 0 2.902 2.143 0 1 1 5.804 0z" transform="translate(0 1030.362)" stroke="#f7931a" fill="none"/>
-    <path d="M8.125 19.054a3.125 3.125 0 1 1-6.25 0 3.125 3.125 0 1 1 6.25 0z" transform="matrix(.671 0 0 .671 2.357 1034.033)" fill="#fff" fill-opacity=".941"/>
-    <path d="M12.001 1048.931c.043-3.142-.732-4.81-2.068-6.186-1.335-1.376-2.99-2.408-6.306-2.339" stroke="#fff" stroke-width="3" stroke-opacity=".941" fill="none"/>
-    <path d="M17.342 1048.943c.034-3.158-.201-6.102-3.43-9.751-3.229-3.649-6.967-4.117-10.282-4.079" stroke="#fff" stroke-width="3" stroke-opacity=".941" fill="none"/>
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" id="svg2995" version="1.1">
+  <defs id="defs2997"/>
+  <metadata id="metadata3000"/>
+  <g id="layer1" transform="translate(0,-1030.3622)">
+    <g id="g4235">
+      <rect ry="4.38" y="1031.04" x="0.68" height="20.72" width="20.67" id="rect3003" style="fill-rule:evenodd;fill:#f7931a;stroke:#f7931a"/>
+      <circle r="2.1" cy="1046.83" cx="5.72" id="path4952" style="fill-opacity:0.94;fill:#fff"/>
+      <path id="path4956" d="m12 1048.93c0.04-3.14-0.73-4.81-2.07-6.19-1.34-1.38-2.99-2.41-6.31-2.34" style="fill:none;stroke-miterlimit:4;stroke-opacity:0.94;stroke-width:3;stroke:#fff"/>
+      <path id="path4956-5" d="m17.34 1048.94c0.03-3.16-0.2-6.1-3.43-9.75-3.23-3.65-6.97-4.12-10.28-4.08" style="fill:none;stroke-miterlimit:4;stroke-opacity:0.94;stroke-width:3;stroke:#fff"/>
+    </g>
   </g>
 </svg>
