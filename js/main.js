@@ -373,7 +373,7 @@ var t = getEventTarget(e),
 		removeClass(wallets[i], 'active');
 	}
 	removeEvent(document.body, 'click', walletListener);
-};
+    };
 // Call appropriate function on click.
 onTouchClick(e, function() {
 	walletHide();

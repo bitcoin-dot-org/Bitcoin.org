@@ -98,7 +98,7 @@ var timeout = 1000,
 	// This avoids accidental clicks when the page is scrolled or updated due to the 300ms click event delay on mobiles.
 	removeEvent(document.body, 'click', wrongClickListener);
 	if (!clickReady() && getEventTarget(e) != t) cancelEvent(e);
-    }
+    },
     setClickTimeout = function() {
 	// Update timeout during which click events will be blocked.
 	document.body.setAttribute('data-touchtimeout', new Date().getTime() + timeout);
