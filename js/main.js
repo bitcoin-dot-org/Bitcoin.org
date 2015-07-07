@@ -104,7 +104,7 @@ document.body.setAttribute('data-scrollstatus', setInterval(function() {
 
 function supportCSS(id) {
 // Return true if the browser supports given CSS feature.
-var x = domPrefixes = 'Webkit Moz ms O'.split(' ');
+var domPrefixes = 'Webkit Moz ms O'.split(' ');
 var nd = document.createElement('DIV');
 id = id.toLowerCase();
 if (nd.style[id] !== undefined) return true;
@@ -162,7 +162,8 @@ cancelEvent(e);
 
 function materialShow(e) {
 // Display more materials on the "Press center" page at user request.
-var p = t = getEventTarget(e);
+var t = getEventTarget(e),
+    p = t;
 while (p.nodeType != 1 || p.nodeName != 'DIV') p = p.parentNode;
 expandBox(p);
 cancelEvent(e);
@@ -170,7 +171,8 @@ cancelEvent(e);
 
 function librariesShow(e) {
 // Display more open source projects on the "Development" page at user request.
-var p = t = getEventTarget(e);
+var t = getEventTarget(e),
+    p = t;
 while (p.nodeType != 1 || p.nodeName != 'UL') p = p.parentNode;
 expandBox(p);
 cancelEvent(e);
@@ -333,65 +335,118 @@ if (typeof(Storage) === 'undefined') return;
 if (sessionStorage.getItem('develdocdisclaimerclose') === '1') disclaimerClose();
 }
 
-function walletListener(e) {
-// Listen events on the wallets categories menu and hide / show / select wallets accordingly.
-var t = getEventTarget(e);
+function walletMenuListener(e) {
+// Listen for events on the wallet menu.
+var t = getEventTarget(e),
+    walletMenu = document.getElementById('walletmenu'),
+    walletSelectPlatform = function() {
+	// Select wallets platform when the mouse clicks on the menu.
+	var p = t;
+	while (p.nodeName != 'DIV') p = p.parentNode;
+	for (var i = 0, nds = p.getElementsByTagName('A'), n = nds.length; i < n; i++) {
+		nds[i].removeAttribute('data-select');
+		removeClass(nds[i].parentNode, 'select');
+	}
+	t.setAttribute('data-select', '1');
+	addClass(t.parentNode, 'select');
+	if (isMobile() && t.parentNode.getElementsByTagName('UL').length == 0) {
+		setTimeout(function() {
+			scrollToNode(document.getElementById('wallets'));
+		}, 10);
+	}
+    },
+    walletFallbackPlatform = function() {
+	// Show back wallets for selected platform when the mouse leaves the menu without selecting another platform.
+	var select = null,
+	    active = null;
+	for (var i = 0, nds = walletMenu.getElementsByTagName('A'), n = nds.length; i < n; i++) {
+		if (nds[i].getAttribute('data-select') == '1') select = nds[i];
+		if (nds[i].getAttribute('data-active') == '1') active = nds[i];
+	}
+	if (select === null || active === null) return;
+	walletShowPlatform(select.getAttribute('data-walletcompat'));
+    };
+// Pre-process events and call appropriate function.
 switch (e.type) {
 	case 'click':
-		if (t.nodeName == 'A') walletSelectPlatform(t);
+		if (t.nodeName == 'A') walletSelectPlatform();
 		break;
 	case 'mouseover':
-		if (t.nodeName == 'A') walletShowPlatform(t.getAttribute('data-walletcompat'));
-		if (t.nodeName == 'A') clearTimeout(document.getElementById('walletmenu').getAttribute('data-wallettimeout'));
+		if (t.nodeName == 'A') {
+			walletShowPlatform(t.getAttribute('data-walletcompat'));
+			clearTimeout(walletMenu.getAttribute('data-wallettimeout'));
+		}
 		break;
 	case 'mouseout':
-		clearTimeout(document.getElementById('walletmenu').getAttribute('data-wallettimeout'));
-		document.getElementById('walletmenu').setAttribute('data-wallettimeout', setTimeout(walletFallbackPlatform, 100));
+		clearTimeout(walletMenu.getAttribute('data-wallettimeout'));
+		walletMenu.setAttribute('data-wallettimeout', setTimeout(walletFallbackPlatform, 100));
 		break;
 }
 }
 
-function walletSelectPlatform(t) {
-// Select wallets platform when the mouse clicks on the menu.
-var p = t;
-while (p.nodeName != 'DIV') p = p.parentNode;
-for (var i = 0, nds = p.getElementsByTagName('A'), n = nds.length; i < n; i++) {
-	nds[i].removeAttribute('data-select');
-	removeClass(nds[i].parentNode, 'select');
+function walletListener(e) {
+// Listen for events on wallets.
+var t = getEventTarget(e),
+    walletShow = function() {
+	// Show wallet on click on mobile or desktop.
+	if (t.id == 'wallets') return;
+	while (t.parentNode.id != 'wallets') t = t.parentNode;
+	if (isMobile()) {
+		var p = document.getElementById('walletsmobile');
+		t = t.cloneNode(true);
+		p.innerHTML = '';
+		p.appendChild(t);
+		scrollToNode(p);
+	} else {
+		var pc = t.getAttribute('data-previousclass');
+		if (pc === null || pc === '') t.setAttribute('data-previousclass', t.className);
+		removeClass(t, 'nohover');
+		removeClass(t, 'disabled');
+		addEvent(t, 'mouseover', walletListener);
+		addEvent(t, 'mouseout', walletListener);
+	}
+    },
+    walletHide = function() {
+	// Disable wallet when the mouse leaves the wallet bubble.
+	if (t.id == 'wallets') return;
+	while (t.parentNode.id != 'wallets') t = t.parentNode;
+	clearTimeout(t.getAttribute('data-disabletimeout'));
+	if (e.type == 'mouseover') return;
+	t.setAttribute('data-disabletimeout', setTimeout(function() {
+		var pc = t.getAttribute('data-previousclass');
+		if (pc === null) pc = '';
+		for (var i = 0, nds = pc.split(' '), n = nds.length; i < n; i++) addClass(t, nds[i]);
+		t.removeAttribute('data-previousclass');
+		t.removeAttribute('data-disabletimeout');
+		removeEvent(t, 'mouseout', walletListener);
+		removeEvent(t, 'mouseover', walletListener);
+	}, 1));
+};
+// Pre-process events and call appropriate function.
+switch (e.type) {
+	case 'click':
+		walletShow();
+		break;
+	case 'mouseover':
+	case 'mouseout':
+		walletHide();
+		break;
 }
-t.setAttribute('data-select', '1');
-addClass(t.parentNode, 'select');
-if (isMobile() && t.parentNode.getElementsByTagName('UL').length == 0) {
-	setTimeout(function() {
-		scrollToNode(document.getElementById('wallets'));
-	}, 10);
-}
-}
-
-function walletFallbackPlatform() {
-// Show back wallets for selected platform when the mouse leaves the menu without selecting another platform.
-var select = null;
-var active = null;
-for (var i = 0, nds = document.getElementById('walletmenu').getElementsByTagName('A'), n = nds.length; i < n; i++) {
-	if (nds[i].getAttribute('data-select') == '1') select = nds[i];
-	if (nds[i].getAttribute('data-active') == '1') active = nds[i];
-}
-if (select === null || active === null) return;
-walletShowPlatform(select.getAttribute('data-walletcompat'));
 }
 
 function walletShowPlatform(platform) {
 // Show wallets for given platform in the menu.
-var fallback = '';
-// Update menu and set fallback category if hovering in a submenu.
-for (var i = 0, nds = document.getElementById('walletmenu').getElementsByTagName('A'), n = nds.length; i < n; i++) {
+var fallback = '',
+    walletMenu = document.getElementById('walletmenu');
+// Update menu and find fallback category if hovering a submenu.
+for (var i = 0, nds = walletMenu.getElementsByTagName('A'), n = nds.length; i < n; i++) {
 	if (nds[i].getAttribute('data-walletcompat') != platform) continue;
 	if (nds[i].getAttribute('data-active') == 1) return;
 	var t = nds[i];
 	if (nds[i].parentNode.parentNode.parentNode.nodeName == 'LI') fallback = nds[i].parentNode.parentNode.parentNode.getElementsByTagName('A')[0].getAttribute('data-walletcompat');
 	break;
 }
-for (var i = 0, nds = document.getElementById('walletmenu').getElementsByTagName('A'), n = nds.length; i < n; i++) {
+for (var i = 0, nds = walletMenu.getElementsByTagName('A'), n = nds.length; i < n; i++) {
 	nds[i].removeAttribute('data-active');
 	removeClass(nds[i].parentNode, 'active');
 }
@@ -408,20 +463,19 @@ addClass(p, 'disabled');
 clearTimeout(p.getAttribute('timeout'));
 p.setAttribute('timeout', setTimeout(function() {
 	p.innerHTML = '';
+	var platforms = (platform == 'default') ? ['desktop', 'mobile'] : [platform];
 	for (var i = 0, nds = document.getElementById('walletsswitch').childNodes, n = nds.length; i < n; i++) {
 		if (nds[i].nodeType != 1) continue;
 		var id = nds[i].id.split('-')[1];
 		if (document.getElementById('wallet-' + id)) continue;
 		var nd = null;
-		if (platform == 'default') {
-			var defpl = ['desktop', 'mobile'];
-			for (var ii = 0, nn = defpl.length; ii < nn; ii++) {
-				if (document.getElementById('wallet-' + id + '-' + defpl[ii])) var nd = document.getElementById('wallet-' + id + '-' + defpl[ii]);
-			}
+		for (var ii = 0, nn = platforms.length; ii < nn; ii++) {
+			var wp = document.getElementById('wallet-' + id + '-' + platforms[ii]);
+			if (wp) var nd = wp;
 		}
-		else {
-			if (document.getElementById('wallet-' + id + '-' + platform)) var nd = document.getElementById('wallet-' + id + '-' + platform);
-			else if (document.getElementById('wallet-' + id + '-' + fallback) && document.getElementById('wallet-' + id + '-' + fallback).getAttribute('data-walletcompat').indexOf(platform) !== -1) var nd = document.getElementById('wallet-' + id + '-' + fallback);
+		if (nd === null) {
+			var wf = document.getElementById('wallet-' + id + '-' + fallback);
+			if (wf && wf.getAttribute('data-walletcompat').indexOf(platform) !== -1) var nd = wf;
 		}
 		if (nd === null) continue;
 		nd = nd.cloneNode(true);
@@ -453,41 +507,6 @@ for (var k in ar) {
 	var pre = ar[k][ar[k].length - 1].nextSibling;
 	for (i = 0, n = sum % ar[k].length; i < n; i++) ar[k][i].parentNode.insertBefore(ar[k][i], pre);
 }
-}
-
-function walletShow(e) {
-// Show wallet on click on mobile or desktop.
-var t = getEventTarget(e);
-if (t.id == 'wallets') return;
-while (t.parentNode.id != 'wallets') t = t.parentNode;
-if (isMobile()) {
-	var p = document.getElementById('walletsmobile');
-	t = t.cloneNode(true);
-	p.innerHTML = '';
-	p.appendChild(t);
-	scrollToNode(p);
-} else {
-	t.setAttribute('data-previousclass', t.className);
-	removeClass(t, 'nohover');
-	removeClass(t, 'disabled');
-	addEvent(t, 'mouseover', walletHide);
-	addEvent(t, 'mouseout', walletHide);
-}
-}
-
-function walletHide(e) {
-// Disable wallet when the mouse leaves the wallet bubble.
-var t = getEventTarget(e);
-if (t.id == 'wallets') return;
-while (t.parentNode.id != 'wallets') t = t.parentNode;
-clearTimeout(t.getAttribute('data-disabletimeout'));
-if (e.type == 'mouseover') return;
-t.setAttribute('data-disabletimeout', setTimeout(function() {
-	for (var i = 0, nds = t.getAttribute('data-previousclass').split(' '), n = nds.length; i < n; i++) addClass(t, nds[i]);
-	t.removeAttribute('data-disabletimeout');
-	removeEvent(t, 'mouseout', walletHide);
-	removeEvent(t, 'mouseover', walletHide);
-}, 1));
 }
 
 function makeEditable(e) {
