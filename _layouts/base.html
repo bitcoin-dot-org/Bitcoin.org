@@ -41,14 +41,14 @@
       </ul>
       </li>
     </ul>
-    <a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" href="#"></a>
+    <a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);" href="#"></a>
     <a class="logo" href="/{{ page.lang }}/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
     <div id="langselect" class="langselect"><select onchange="window.location=this.value;">
     {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{% endif %}
           <option value="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"{{ active }}>{{ site.langs[lang] }}</option>
     {% endfor %}
     </select></div>
-    <ul id="menusimple" class="menusimple" onclick="mobileMenuHover(event);">
+    <ul id="menusimple" class="menusimple" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
       <li><a href="#" onclick="return false;">{% translate menu-intro layout %}</a>
         <ul>
           <li{% if page.id == 'bitcoin-for-individuals' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a></li>

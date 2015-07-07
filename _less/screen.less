@@ -299,9 +299,9 @@ table td,table th{
 	-moz-border-radius:5px;
 	border-radius:5px;
 }
-.menusimple li:first-child,
-.menusimple li:first-child+li,
-.menusimple li:first-child+li+li+li{
+.menusimple>li:first-child,
+.menusimple>li:first-child+li,
+.menusimple>li:first-child+li+li+li{
 	-webkit-border-bottom-left-radius:0;
 	-webkit-border-bottom-right-radius:0;
 	-moz-border-radius-bottomleft:0;
@@ -309,25 +309,22 @@ table td,table th{
 	border-bottom-left-radius:0;
 	border-bottom-right-radius:0;
 }
-.menusimple li a{
+.menusimple>li a,
+.menusimple>li a:active,
+.menusimple>li a:visited,
+.menusimple>li a:link{
+	color:#2c6fad;
+}
+.menusimple>li a{
 	font-family:'Ubuntu', sans-serif;
 	font-weight:300;
 	font-size:110%;
 	display:block;
 	text-decoration:none;
 	padding:6px 10px 4px 10px;
-	color:#2c6fad;
 	white-space:nowrap;
 }
-.menusimple li:hover,
-.menusimple li.active{
-	background-color:#2c6fad;
-}
-.menusimple li:hover a,
-.menusimple li.active a{
-	color:#fff;
-}
-.menusimple li ul{
+.menusimple>li ul{
 	display:none;
 	position:absolute;
 	background-color:#fff;
@@ -337,11 +334,7 @@ table td,table th{
 	margin:0;
 	left:0;
 }
-.menusimple li:hover ul{
-	display:block;
-}
-.menusimple li ul li{
-	padding:0;
+.menusimple>li>ul li{
 	margin:0;
 	display:block;
 	width:100%;
@@ -349,19 +342,21 @@ table td,table th{
 	-moz-border-radius:0;
 	border-radius:0;
 }
-.menusimple li ul li a,
-.menusimple li ul li a:active,
-.menusimple li ul li a:visited,
-.menusimple li ul li a:link{
-	display:block;
-	color:#2c6fad;
+.menusimple>li>ul>li a{
 	font-size:100%;
 	margin:1px 0;
 	padding:6px 10px 3px 10px;
 }
-.menusimple li ul li:hover a,
-.menusimple li ul li.active a{
+.menusimple li:hover,
+.menusimple li.active{
+	background-color:#2c6fad;
+}
+.menusimple li:hover>a,
+.menusimple li.active>a{
 	color:#fff;
+}
+.menusimple li:hover>ul{
+	display:block;
 }
 
 .content{
@@ -1295,21 +1290,20 @@ div.post {
 	position:relative;
 	z-index:90;
 }
-.walletmenu ul{
+.walletmenu>ul{
 	display:inline-block;
 	text-align:left;
 	padding:0 0 25px 0;
 	border-bottom:1px solid #E2E2E2;
 	background-color:#fff;
 }
-.walletmenu ul li{
+.walletmenu>ul li{
 	font-family:'Ubuntu', sans-serif;
 	position:relative;
 	display:inline-block;
 	background-repeat:no-repeat;
 	background-position:left 6px;
-	color:#383838;
-	cursor:pointer;
+	padding:0;
 	margin:15px 10px;
 	font-size:130%;
 	font-weight:bold;
@@ -1320,36 +1314,28 @@ div.post {
 	-moz-border-radius:4px;
 	border-radius:4px;
 }
-.walletmenu ul:hover li:first-child,
-.walletmenu ul:hover li:first-child+li{
-	-webkit-border-bottom-left-radius:0;
-	-webkit-border-bottom-right-radius:0;
-	-moz-border-radius-bottomleft:0;
-	-moz-border-radius-bottomright:0;
-	border-bottom-left-radius:0;
-	border-bottom-right-radius:0;
-}
-.walletmenu ul li.active,
-.walletmenu ul li.select,
-.walletmenu ul li:hover{
-	background-position:left -62px;
-	background-color:#0d579b;
-	color:#fff;
-}
-.walletmenu ul li:first-child{
+.walletmenu>ul>li:first-child{
 	margin-left:0;
 }
-.walletmenu ul li:last-child{
+.walletmenu>ul>li:last-child{
 	margin-right:0;
 }
-.walletmenu ul li a{
-	padding:8px 10px 5px 42px;
-	display:block;
-	white-space:nowrap;
+.walletmenu>ul>li a,
+.walletmenu>ul>li a:link,
+.walletmenu>ul>li a:active,
+.walletmenu>ul>li a:visited{
+	color:#383838;
 }
-.walletmenu ul li ul{
+.walletmenu>ul>li a{
+	white-space:nowrap;
+	cursor:pointer;
+	display:block;
+	padding:8px 10px 5px 42px;
+}
+.walletmenu>ul>li ul{
 	display:none;
 	position:absolute;
+	background-color:#fff;
 	border:1px solid #0d579b;
 	padding:4px 0;
 	min-width:110%;
@@ -1358,31 +1344,23 @@ div.post {
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
 }
-.walletmenu ul li:hover ul{
-	display:block;
-}
-.walletmenu ul li ul li{
+.walletmenu>ul>li>ul li{
 	font-size:80%;
 	display:block;
-	padding:0;
 	margin:0;
 	background-position:left 10px;
 	-webkit-border-radius:0px;
 	-moz-border-radius:0px;
 	border-radius:0px;
 }
-.walletmenu ul li ul li.select,
-.walletmenu ul li ul li:hover{
-	background-position:left -24px;
-}
-.walletmenu ul li ul li a{
+.walletmenu>ul>li>ul>li a{
 	background-image:url(/img/icons/wallet_select.svg);
 	background-repeat:no-repeat;
 	background-position:-32px center;
 	padding:8px 32px 5px 32px;
 	margin:1px 0;
 }
-.walletmenu ul li ul li.select a{
+.walletmenu>ul>li>ul>li.active>a{
 	background-position:right center;
 }
 .walletmenu .wallet-mobile{
@@ -1418,6 +1396,40 @@ div.post {
 .walletmenu .wallet-linux{
 	background-image:url(/img/os/wallet_menu_linux.png);
 }
+.walletmenu>ul li.active,
+.walletmenu>ul li:hover{
+	background-color:#0d579b;
+}
+.walletmenu>ul li:hover>a,
+.walletmenu>ul li:hover>a:link,
+.walletmenu>ul li:hover>a:active,
+.walletmenu>ul li:hover>a:visited,
+.walletmenu>ul li.active>a,
+.walletmenu>ul li.active>a:link,
+.walletmenu>ul li.active>a:active,
+.walletmenu>ul li.active>a:visited{
+	color:#fff;
+}
+.walletmenu>ul:hover>li:first-child,
+.walletmenu>ul:hover>li:first-child+li{
+	-webkit-border-bottom-left-radius:0;
+	-webkit-border-bottom-right-radius:0;
+	-moz-border-radius-bottomleft:0;
+	-moz-border-radius-bottomright:0;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0;
+}
+.walletmenu>ul>li.active,
+.walletmenu>ul>li:hover{
+	background-position:left -62px;
+}
+.walletmenu>ul>li:hover>ul{
+	display:block;
+}
+.walletmenu>ul>li>ul>li.active,
+.walletmenu>ul>li>ul>li:hover{
+	background-position:left -24px;
+}
 
 .wallets{
 	width:605px;
@@ -1443,10 +1455,7 @@ div.post {
 .wallets>div:nth-child(1n+13){
 	display:none;
 }
-.wallets>div>a,
-.wallets>div>a:visited,
-.wallets>div>a:link,
-.wallets>div>a:active{
+.wallets>div>a{
 	font-size:94%;
 	text-align:center;
 	text-decoration:none;
@@ -1472,12 +1481,6 @@ div.post {
 	top:0;
 	left:0;
 	right:0;
-}
-.wallets>div:hover>a>span{
-	display:block;
-}
-.wallets>div.nohover:hover>a>span{
-	display:none;
 }
 .wallets>div>a>img{
 	display:block;
@@ -1514,21 +1517,6 @@ div.post {
 .wallets>div>div{
 	z-index:102;
 }
-.wallets>div:hover>div,
-.wallets>div:hover>span{
-	opacity:1;
-	width:auto;
-	height:350px;
-	visibility:visible;
-	overflow:visible;
-}
-.wallets>div.nohover:hover>div,
-.wallets>div.nohover:hover>span{
-	opacity:0;
-	width:0;
-	height:0;
-	visibility:hidden;
-}
 .wallets>div:nth-child(1n+7)>div,
 .wallets>div:nth-child(1n+7)>span{
 	top:-222px;
@@ -1558,12 +1546,8 @@ div.post {
 	-moz-border-radius:4px;
 	border-radius:4px;
 }
-.wallets>div>div>h2:first-child+div+div>a:first-child,
-.wallets>div>div>h2:first-child+div+div>a:first-child:visited,
-.wallets>div>div>h2:first-child+div+div>a:first-child:link,
-.wallets>div>div>h2:first-child+div+div>a:first-child:active{
+.wallets>div>div>h2:first-child+div+div>a:first-child{
 	font-weight:bold;
-	color:#fff;
 	background-color:#2c6fad;
 	background-image:-o-linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
 	background-image:-moz-linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
@@ -1573,16 +1557,22 @@ div.post {
 	border:1px solid #255f96;
 	margin-right:10px;
 }
-.wallets>div>div>h2:first-child+div+div>a:first-child:hover{
-	background-image:none;
+.wallets>div>div>h2:first-child+div+div>a:first-child,
+.wallets>div>div>h2:first-child+div+div>a:first-child:visited,
+.wallets>div>div>h2:first-child+div+div>a:first-child:link,
+.wallets>div>div>h2:first-child+div+div>a:first-child:active{
+	color:#fff;
+}
+.wallets>div>div>h2:first-child+div+div>a:first-child+a{
+	font-weight:normal;
+	color:#255f96;
+	border:1px solid #255f96;
 }
 .wallets>div>div>h2:first-child+div+div>a:first-child+a,
 .wallets>div>div>h2:first-child+div+div>a:first-child+a:visited,
 .wallets>div>div>h2:first-child+div+div>a:first-child+a:link,
 .wallets>div>div>h2:first-child+div+div>a:first-child+a:active{
-	font-weight:normal;
 	color:#255f96;
-	border:1px solid #255f96;
 }
 .wallets>div>div>h2:first-child+div+div+div{
 	margin:5px 0;
@@ -1615,9 +1605,6 @@ div.post {
 	background-repeat:no-repeat;
 	background-position:right 30px;
 }
-.wallets>div>div>h2:first-child+div+div+div>div:hover>div>span{
-	display:block;
-}
 .wallets>div>div>h2:first-child+div+div+div>div>div>p,
 .wallets>div>div>h2:first-child+div+div+div>div>div>div{
 	opacity:0;
@@ -1649,13 +1636,6 @@ div.post {
 }
 .wallets>div>div>h2:first-child+div+div+div>div>div>div>div>p:first-child+p{
 	font-size:85%;
-}
-.wallets>div>div>h2:first-child+div+div+div>div:hover>div>p,
-.wallets>div>div>h2:first-child+div+div+div>div:hover>div>div{
-	opacity:1;
-	width:400px;
-	height:auto;
-	visibility:visible;
 }
 .wallets>div>div>h2:first-child+div+div+div+p{
 	font-size:95%;
@@ -1753,6 +1733,46 @@ div.post {
 }
 .wallets .checkprivacy.checkfail{
 	background-image:url(/img/icons/check_privacy_fail.svg);
+}
+.wallets>div:hover>a>span,
+.wallets>div.active>a>span,
+.wallets.nohover>div.active:hover>a>span{
+	display:block;
+}
+.wallets.nohover>div:hover>a>span{
+	display:none;
+}
+.wallets>div:hover>div,
+.wallets>div:hover>span,
+.wallets>div.active>div,
+.wallets>div.active>span,
+.wallets.nohover>div.active:hover>div,
+.wallets.nohover>div.active:hover>span{
+	opacity:1;
+	width:auto;
+	height:350px;
+	visibility:visible;
+	overflow:visible;
+}
+.wallets.nohover>div:hover>div,
+.wallets.nohover>div:hover>span{
+	opacity:0;
+	width:0;
+	height:0;
+	visibility:hidden;
+}
+.wallets>div>div>h2:first-child+div+div>a:first-child:hover{
+	background-image:none;
+}
+.wallets>div>div>h2:first-child+div+div+div>div:hover>div>span{
+	display:block;
+}
+.wallets>div>div>h2:first-child+div+div+div>div:hover>div>p,
+.wallets>div>div>h2:first-child+div+div+div>div:hover>div>div{
+	opacity:1;
+	width:400px;
+	height:auto;
+	visibility:visible;
 }
 
 .walletsswitch{
@@ -2226,11 +2246,8 @@ h2 .rssicon{
 		height:auto;
 		overflow:auto;
 	}
-	.menusimple li a,
-	.menusimple li ul li a,
-	.menusimple li ul li a:active,
-	.menusimple li ul li a:visited,
-	.menusimple li ul li a:link{
+	.menusimple>li a,
+	.menusimple>li>ul>li a{
 		padding:10px 6px 8px 6px;
 		display:block;
 	}
@@ -2239,11 +2256,26 @@ h2 .rssicon{
 		margin:4px;
 		position:static;
 	}
-	.menusimple li ul{
+	.menusimple>li ul{
 		min-width:0;
 		position:relative;
 	}
-	.menusimple ul.hover{
+	.menusimple.menutap li:hover{
+		background-color:#fff;
+	}
+	.menusimple.menutap li:hover>a{
+		color:#2c6fad;
+	}
+	.menusimple.menutap li:hover>ul{
+		display:none;
+	}
+	.menusimple.menutap li.hover{
+		background-color:#2c6fad;
+	}
+	.menusimple.menutap li.hover>a{
+		color:#fff;
+	}
+	.menusimple.menutap li.hover>ul{
 		display:block;
 	}
 	.logo{
@@ -2460,19 +2492,52 @@ h2 .rssicon{
 		padding:0;
 		border:0;
 	}
-	.walletmenu ul{
+	.walletmenu>ul{
 		display:block;
 	}
-	.walletmenu ul.hover{
-		display:block;
-	}
-	.walletmenu ul li{
+	.walletmenu>ul li{
 		display:block;
 		margin:15px 0;
 	}
-	.walletmenu ul li ul{
+	.walletmenu>ul>li ul{
 		position:relative;
 		min-width:0;
+	}
+	.walletmenu>ul.menutap li:hover{
+		background-color:#fff;
+	}
+	.walletmenu>ul.menutap li:hover>a,
+	.walletmenu>ul.menutap li:hover>a:link,
+	.walletmenu>ul.menutap li:hover>a:active,
+	.walletmenu>ul.menutap li:hover>a:visited{
+		color:#383838;
+	}
+	.walletmenu>ul.menutap>li:hover{
+		background-position:left 6px;
+	}
+	.walletmenu>ul.menutap>li:hover>ul{
+		display:none;
+	}
+	.walletmenu>ul.menutap>li>ul>li:hover{
+		background-position:left 10px;
+	}
+	.walletmenu>ul.menutap li.hover{
+		background-color:#0d579b;
+	}
+	.walletmenu>ul.menutap li.hover>a,
+	.walletmenu>ul.menutap li.hover>a:link,
+	.walletmenu>ul.menutap li.hover>a:active,
+	.walletmenu>ul.menutap li.hover>a:visited{
+		color:#fff;
+	}
+	.walletmenu>ul.menutap>li.hover{
+		background-position:left -62px;
+	}
+	.walletmenu>ul.menutap>li.hover>ul{
+		display:block;
+	}
+	.walletmenu>ul.menutap>li>ul>li.hover{
+		background-position:left -24px;
 	}
 	.wallets{
 		width:auto;
