@@ -340,7 +340,7 @@ function walletMenuListener(e) {
 var t = getEventTarget(e),
     walletSelectPlatform = function() {
 	if (t.nodeName != 'A') return;
-	walletShowPlatform(t.getAttribute('data-walletcompat'));
+	if (t.parentNode.className.indexOf('active') !== -1) walletShowPlatform(t.getAttribute('data-walletcompat'));
 	if (isMobile() && t.parentNode.getElementsByTagName('UL').length == 0) scrollToNode(document.getElementById('wallets'));
     };
 // Pre-process events and call appropriate function.
