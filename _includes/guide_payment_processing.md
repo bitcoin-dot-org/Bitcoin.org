@@ -17,10 +17,6 @@ can, respectively, request and make payments using Bitcoin---and how
 they can deal with complications such as refunds and recurrent
 rebilling.
 
-Bitcoin payment processing is being actively developed at the moment, so
-each subsection below attempts to describe what's widely deployed now,
-what's new, and what might be coming before the end of 2014.
-
 ![Bitcoin Payment Processing](/img/dev/en-payment-processing.svg)
 
 The figure above illustrates payment processing using Bitcoin from a
@@ -410,10 +406,7 @@ otherwise-proven information.
   Bob was paid the specified number of satoshis.
 
 If a refund needs to be issued, Bob's server can safely pay the
-refund-to pubkey script provided by Charlie. (Note: a proposal has been
-discussed to give refund-to addresses an implicit expiration date so
-users and software don't need to worry about payments being sent to
-addresses which are no longer monitored.)  See the Refunds section below
+refund-to pubkey script provided by Charlie.  See the Refunds section below
 for more details.
 
 {% endautocrossref %}
@@ -549,10 +542,11 @@ This leaves receivers only two correct ways to issue refunds:
 * If the payment protocol was used, send the refund to the output
   listed in the `refund_to` field of the Payment message.
 
-As discussed in the Payment section, `refund_to` addresses may come with
-implicit expiration dates, so you may need to revert to contacting the
+Note: it would be wise to contact the
 spender directly if the refund is being issued a long time after the
 original payment was made.
+This allows you to ensure the user still has access to the key or keys
+for the `refund_to` address.
 
 {% endautocrossref %}
 
