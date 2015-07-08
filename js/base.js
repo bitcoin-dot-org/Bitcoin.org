@@ -147,6 +147,7 @@ var t = getEventTarget(e),
     fn = (t.parentNode.className.indexOf('hover') === -1) ? addClass : removeClass,
     initHover = function() {
 	if (t.nodeName != 'A') return;
+	if (fn == removeClass && t.parentNode.getElementsByTagName('UL').length == 0) return;
 	var p = t;
 	while (p.parentNode.nodeName == 'UL' || p.parentNode.nodeName == 'LI') p = p.parentNode;
 	addClass(p, 'menutap');
