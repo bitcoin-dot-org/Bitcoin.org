@@ -400,6 +400,7 @@ var t = null,
     },
     updateMenu = function() {
 	// Set active nodes in the menu for the new platform.
+	addClass(walletMenu.getElementsByTagName('UL')[0], 'menutap');
 	for (var i = 0, nds = walletMenu.getElementsByTagName('A'), n = nds.length; i < n; i++) {
 		nds[i].removeAttribute('data-active');
 		removeClass(nds[i].parentNode, 'active');
@@ -407,8 +408,12 @@ var t = null,
 	if (platform != 'default') {
 		t.setAttribute('data-active', '1');
 		addClass(t.parentNode, 'active');
+		addClass(t.parentNode, 'hover');
 		var p = t.parentNode.parentNode.parentNode;
-		if (p.nodeName == 'LI') addClass(p, 'active');
+		if (p.nodeName == 'LI') {
+			addClass(p, 'active');
+			addClass(p, 'hover');
+		}
 	}
     },
     updateWallets = function() {
