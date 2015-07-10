@@ -4,6 +4,8 @@
 // This file is used for javascript code
 // necessary for some pages to work properly.
 
+"use strict"
+
 function getWidth(a) {
 // Return the integer value of the computed width of a DOM node.
 // Ex. getWidth(node);
@@ -189,6 +191,7 @@ function updateToc() {
 var pageoffset;
 var windowy;
 var toc;
+var fallback;
 var first;
 var last;
 var closer;

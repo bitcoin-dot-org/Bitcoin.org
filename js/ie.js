@@ -1,6 +1,8 @@
 // This file is licensed under the MIT License (MIT) available on
 // http://opensource.org/licenses/MIT.
 
+"use strict"
+
 function pngfix(){
 //Allows IE6 to render transparent png
 var arVersion = navigator.appVersion.split("MSIE")
@@ -38,7 +40,7 @@ if ((version >= 5.5) && (document.body.filters))
 }
 
 //Let other scripts know browser is IE6-7
-legacyIE=true;
+var legacyIE=true;
 
 //Render all transparent pngs
 window.onload=pngfix;

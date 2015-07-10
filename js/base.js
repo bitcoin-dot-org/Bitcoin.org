@@ -4,6 +4,8 @@
 // This file should be used only for javascript code
 // necessary for all pages to work properly.
 
+"use strict"
+
 function addEvent(a, b, c) {
 // Attach event to a DOM node.
 // Ex. addEvent(node,'click',function);

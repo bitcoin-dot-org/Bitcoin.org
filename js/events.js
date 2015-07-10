@@ -1,6 +1,9 @@
 ---
 layout: null
 ---
+
+"use strict"
+
 var zoom=2;
 var minzoom=1;
 if(isMobile())var zoom=minzoom=0;

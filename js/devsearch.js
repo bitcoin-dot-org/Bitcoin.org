@@ -19,6 +19,8 @@ Nested loops below:
 
 {% endcomment %}
 
+"use strict"
+
 var search_data = [
 {% for list in site.devsearches %}{% for item in list %}
 {% if forloop.first %}{% capture category_name %}{{item}}{% endcapture %}
