@@ -6,6 +6,10 @@ layout: base
 lang: en
 id: developer-guide
 title: "Developer Guide - Bitcoin"
+breadcrumbs:
+  - bitcoin
+  - dev docs
+  - Guide
 ---
 <link rel="stylesheet" href="/css/jquery-ui.min.css">
 
