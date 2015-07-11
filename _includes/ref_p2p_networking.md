@@ -64,7 +64,9 @@ with the most recent versions listed first. (If you know of a protocol
 version that implemented a major change but which is not listed here,
 please [open an issue][docs issue].)
 
-| Version | Implementation                     | Major Changes
+As of Bitcoin Core 0.11.0, the most recent protocol version is 70002.
+
+| Version | Initial Release                    | Major Changes
 |---------|------------------------------------|--------------
 | 70002   | Bitcoin Core 0.9.0 <br>(Mar 2014)  | • Send multiple `inv` messages in response to a `mempool` message if necessary <br><br>[BIP61][]: <br>• Added `reject` message
 | 70001   | Bitcoin Core 0.8.0 <br>(Feb 2013)  | • Added `notfound` message. <br><br>[BIP37][]: <br>• Added `filterload` message. <br>• Added `filteradd` message. <br>• Added `filterclear` message. <br>• Added `merkleblock` message. <br>• Added relay field to `version` message <br>• Added `MSG_FILTERED_BLOCK` inventory type to `getdata` message.
