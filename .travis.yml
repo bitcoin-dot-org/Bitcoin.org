@@ -1,5 +1,7 @@
 language: ruby
 rvm:
   - "2.0.0"
+sudo: false
+cache: bundler
 
 script: make travis
