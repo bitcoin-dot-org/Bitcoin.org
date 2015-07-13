@@ -4,6 +4,8 @@
 // This file should be used only for javascript code
 // necessary for all pages to work properly.
 
+"use strict"
+
 function addEvent(a, b, c) {
 // Attach event to a DOM node.
 // Ex. addEvent(node,'click',function);
@@ -83,32 +85,89 @@ for (var i = 0, nd = document.getElementsByTagName('*'), n = nd.length; i < n; i
 }
 }
 
+function onTouchClick(e, callback) {
+// Detect and handle clicks using click and touch events while preventing accidental or ghost clicks.
+var timeout = 1000,
+    touchEndListener = function(e) {
+	// Call callback if touch events match the patterns of a click.
+	removeEvent(t, 'touchend', touchEndListener);
+	setClickTimeout();
+	if (Math.abs(e.changedTouches[0].pageX - x) > 20 || Math.abs(e.changedTouches[0].pageY - y) > 20) return;
+	callback(e);
+    },
+    wrongClickListener = function(e) {
+	// Cancel click events on different targets within timeframe.
+	// This avoids accidental clicks when the page is scrolled or updated due to the 300ms click event delay on mobiles.
+	removeEvent(document.body, 'click', wrongClickListener);
+	if (!clickReady() && getEventTarget(e) != t) cancelEvent(e);
+    },
+    setClickTimeout = function() {
+	// Update timeout during which click events will be blocked.
+	document.body.setAttribute('data-touchtimeout', new Date().getTime() + timeout);
+    },
+    clickReady = function() {
+	// Check if timeout during click events are blocked has expired.
+	var ti = document.body.getAttribute('data-touchtimeout');
+	return (ti === null || ti === '' || parseInt(ti, 10) < new Date().getTime());
+    };
+// Apply appropriate actions according to each event type.
+switch (e.type) {
+	case 'touchstart':
+	// Save initial touchstart coordinates and listen for touchend events and accidental click events.
+		var x = e.changedTouches[0].pageX,
+		    y = e.changedTouches[0].pageY,
+		    t = e.changedTouches[0].target;
+		setClickTimeout();
+		addEvent(t, 'touchend', touchEndListener);
+		addEvent(document.body, 'click', wrongClickListener);
+		setTimeout(function() {
+			removeEvent(document.body, 'click', wrongClickListener);
+		}, timeout);
+		break;
+	case 'click':
+	// Call callback on click in the absence of a recent touchstart event to prevent ghost clicks.
+		if (!clickReady()) return;
+		callback();
+		break;
+}
+}
+
 function mobileMenuShow(e) {
 // Show the mobile menu when the visitors touch the menu icon.
-var mm = document.getElementById('menusimple');
-var ml = document.getElementById('langselect');
-var t = document.getElementById('menumobile');
-mm.style.display = ml.style.display = (mm.style.display == 'block') ? '' : 'block';
-cancelEvent(e);
+var show = function() {
+	var mm = document.getElementById('menusimple');
+	var ml = document.getElementById('langselect');
+	mm.style.display = ml.style.display = (mm.style.display == 'block') ? '' : 'block';
+	cancelEvent(e);
+    };
+onTouchClick(e, show);
 }
 
 function mobileMenuHover(e) {
-// Add a delay before hiding menu for mobiles to prevent accidental clicks.
-var p = t = getEventTarget(e);
-if (t.nodeName != 'A') return;
-while (p.parentNode.nodeName != 'DIV') p = p.parentNode;
-while (t.nodeName != 'LI' || t.parentNode != p) t = t.parentNode;
-var ul = null;
-if (t.getElementsByTagName('UL').length > 0) {
-	var ul = t.getElementsByTagName('UL')[0];
-	addClass(ul, 'hover');
-}
-setTimeout(function() {
-	for (var i = 0, nd = p.getElementsByTagName('UL'), n = nd.length; i < n; i++) {
-		if (nd[i] == ul) continue;
-		removeClass(nd[i], 'hover');
+// Prevent mobile menu to shrink on hover to prevent accidental clicks on other entries.
+var t = getEventTarget(e),
+    fn = (t.parentNode.className.indexOf('hover') === -1) ? addClass : removeClass,
+    initHover = function() {
+	if (t.nodeName != 'A') return;
+	if (fn == removeClass && t.parentNode.getElementsByTagName('UL').length == 0) return;
+	var p = t;
+	while (p.parentNode.nodeName == 'UL' || p.parentNode.nodeName == 'LI') p = p.parentNode;
+	addClass(p, 'menutap');
+	for (var i = 0, nds = p.getElementsByTagName('LI'), n = nds.length; i < n; i++) {
+		if (nds[i] == t.parentNode) continue;
+		removeClass(nds[i], 'active');
+		if (nds[i].getElementsByTagName('UL').length > 0) continue;
+		removeClass(nds[i], 'hover');
 	}
-}, 1);
+	while (t != p) {
+		if (t.nodeName == 'LI') {
+			fn(t, 'hover');
+			fn(t, 'active');
+		}
+		t = t.parentNode;
+	}
+    };
+onTouchClick(e, initHover);
 }
 
 function addAnchorLinks() {

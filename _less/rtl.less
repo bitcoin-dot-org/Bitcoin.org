@@ -199,31 +199,32 @@ h2 .rssicon{
 	text-align:right;
 }
 
-.walletmenu ul{
+.walletmenu>ul{
 	text-align:right;
 }
-.walletmenu ul li a{
-	padding:8px 42px 5px 10px;
-}
-.walletmenu ul li{
+.walletmenu>ul li{
 	font-family:'DroidNaskh', sans-serif;
 	background-position:right 6px;
 }
-.walletmenu ul li.active,
-.walletmenu ul li.select{
-	background-position:right -62px;
+.walletmenu>ul>li a{
+	padding:8px 42px 5px 10px;
 }
-.walletmenu ul li ul{
+.walletmenu>ul>li ul{
 	left:auto;
 	right:0;
 }
-.walletmenu ul li ul li{
+.walletmenu>ul>li>ul li{
 	background-position:right 10px;
 }
-.walletmenu ul li ul li:hover{
+.walletmenu>ul>li.active,
+.walletmenu>ul>li:hover{
+	background-position:right -62px;
+}
+.walletmenu>ul>li>ul>li.active,
+.walletmenu>ul>li>ul>li:hover{
 	background-position:right -24px;
 }
-.walletmenu ul li ul li.select a{
+.walletmenu>ul>li>ul li.active>a{
 	background-position:left center;
 }
 
@@ -357,6 +358,18 @@ h2 .rssicon{
 		border-right:0;
 		padding-right:0;
 		margin-right:0;
+	}
+	.walletmenu>ul.menutap>li:hover{
+		background-position:right 6px;
+	}
+	.walletmenu>ul.menutap>li>ul>li:hover{
+		background-position:right 10px;
+	}
+	.walletmenu>ul.menutap>li.hover{
+		background-position:right -62px;
+	}
+	.walletmenu>ul.menutap>li>ul>li.hover{
+		background-position:right -24px;
 	}
 	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div{
 		padding:8px 22px 8px 0;
