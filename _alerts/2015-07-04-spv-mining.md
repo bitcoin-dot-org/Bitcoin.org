@@ -1,21 +1,23 @@
 ---
 title: "Some Miners Generating Invalid Blocks"
 alias: "spv-mining"
-active: true
-banner: "WARNING: many wallets currently vulnerable to double-spending of confirmed transactions (click here to read)"
+active: false
+#banner: "WARNING: many wallets currently vulnerable to double-spending of confirmed transactions (click here to read)"
 bannerclass: "alert"
 ---
 *This document is being updated as new information arrives.  Last
-update: 2015-07-06 02:00.  All times are UTC.*
+update: 2015-07-15 13:00.  All times are UTC.*
 
-**Note: this alert is on-going: the situation has not yet been
-resolved. ([Update #1](#update-1))**
+**Note: this situation has not been fully resolved, and it does not
+appear that it will be fully resolved anytime soon. Users of the
+affected wallets listed below are still advised to wait additional
+confirmations or to switch to a safer wallet.**
 
 {% assign confs="30" %}
 
 ##Summary
 
-Your bitcoins are safe if you received them in transactions confirmed before 2015-07-06 00:00 UTC.
+Your bitcoins are safe if you received them in transactions confirmed before 2015-07-15 12:00 UTC.
 
 However, there has been a problem with a planned upgrade. For
 bitcoins received later than the time above, confirmation scores are
