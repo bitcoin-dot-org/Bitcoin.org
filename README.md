@@ -408,6 +408,9 @@ recommend naming it after the release, such as `0.10.0.md`
 Then copy in the following YAML header (the part between the three dashes, ---):
 ~~~
 ---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 ## Required value below populates the %v variable (note: % needs to be escaped in YAML if it starts a value)
 required_version: 0.10.0
 ## Optional release date.  May be filled in hours/days after a release
