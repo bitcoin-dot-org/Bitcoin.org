@@ -959,12 +959,69 @@ you what we need.  The instructions for [Windows
 
 ## Mac OS X Instructions
 
-If you can provide instructions and screenshots for running the latest
-version of Bitcoin Core on Mac OS X, please [open an
-issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) and we'll tell
-you what we need.
+### Mac OS X Yosemite 10.10.x
 
+*Instructions for Bitcoin Core 0.11.0 on Mac OS X Yosemite*
 
+Go to the [Bitcoin Core download page](/en/download) and verify you have
+made a secure connection to the server.
+
+![Verify secure connection](/img/full-node/en-osx-safari-secure-connection.png)
+
+Click the large blue *Download Bitcoin Core* button to download the
+Bitcoin Core installer to your Downloads folder.
+
+{{verifyReleaseSignatures}}
+
+After downloading the file to your Downloads folder
+(`/Users/<YOUR USER NAME>/Downloads`), run it by double-clicking
+its icon. OS X will open a Finder window for you to drag *Bitcoin Core* to your
+Applications folder.
+
+![Window to install](/img/full-node/en-osx-dmg-open.png)
+
+#### Bitcoin Core GUI {#osx-gui}
+{:.no_toc}
+
+The first time running *Bitcoin Core*, Max OS X will ask you to confirm that
+you want to run it:
+
+![Mac OS X File Security Dialog](/img/full-node/en-osx-security.png)
+
+You will be prompted to choose a directory to store the Bitcoin block
+chain and your wallet.  Unless you have a separate partition or drive
+you want to use, click Ok to use the default.
+
+![Bitcoin Core Welcome](/img/full-node/en-osx-welcome-to-bitcoin-core.png)
+
+Bitcoin Core GUI will begin to download the block chain.  This
+step will take at least several hours, and it may take a day or more on
+a slow Internet connection or with a slow computer.  During the
+download, Bitcoin Core will use a significant part of your connection
+bandwidth.  You can stop Bitcoin Core at any time by closing it; it will
+resume from the point where it stopped the next time you start it.
+
+![Bitcoin Core Initial Block Download](/img/full-node/en-osx-ibd.png)
+
+After download is complete, you may use Bitcoin Core as your wallet or
+you can just let it run to help support the Bitcoin network.
+
+<div class="box" markdown="1">
+*Optional: Start Your Node At Login*
+
+Starting your node automatically each time you login to your computer
+makes it easy for you to contribute to the network. The easiest way
+to do this is to tell Bitcoin Core GUI to start at login.
+
+While running Bitcoin Core GUI, open the Bitcoin Core menu and choose
+Preferences.  On the Main tab, click *Start Bitcoin on system login*.  Click
+the Ok button to save the new settings.
+
+![Choosing to start Bitcoin Core at login](/img/full-node/en-osx-start-on-login.png)
+
+The next time you login to your desktop, Bitcoin Core GUI will be
+automatically started minimized in the task bar.
+</div>
 
 ## Network Configuration
 
