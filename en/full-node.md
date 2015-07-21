@@ -423,7 +423,7 @@ script](https://github.com/bitcoin/bitcoin/tree/0.10/contrib/init/bitcoind.conf)
 
 ### Other Linux Distributions
 
-*Instructions for Bitcoin Core 0.10.0.*
+*Instructions for Bitcoin Core 0.11.0.*
 
 The following instructions describe installing Bitcoin Core using tools
 available in most mainstream Linux distributions.  We assume you use a
@@ -453,7 +453,7 @@ followed by the argument `xzf` followed by the file name. The argument
 `xzf` means eXtract the gZipped tar archive File. For example, for a
 64-bit tar archive in your current directory, the command is:
 
-    tar xzf bitcoin-0.10.0-linux64.tar.gz
+    tar xzf bitcoin-0.11.0-linux64.tar.gz
 
 This will create the directory `bitcoin-0.10.0` within your current
 working directory. We will install the contents of its `bin`
@@ -466,11 +466,11 @@ commands below to use a different location).
 If you use `sudo` to run commands as root, use the following command
 line:
 
-    sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.10.0/bin/*
+    sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.11.0/bin/*
 
 If you use `su` to run commands as root, use the following command line:
 
-    su -c 'install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.10.0/bin/*'
+    su -c 'install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.11.0/bin/*'
 
 <div class="box" markdown="1">
 *To continue, choose one of the following options*
