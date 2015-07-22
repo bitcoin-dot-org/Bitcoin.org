@@ -1023,6 +1023,16 @@ The next time you login to your desktop, Bitcoin Core GUI will be
 automatically started minimized in the task bar.
 </div>
 
+{{installFinished}}
+
+#### Bitcoin Core Daemon {#osx-daemon}
+{:.no_toc}
+
+If you can provide instructions and screenshots for running the latest
+version of Bitcoin Core daemon on OS X Yosemite, please [open an
+issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) and we'll tell
+you what we need.
+
 ## Network Configuration
 
 If you want to support the Bitcoin network, you must allow inbound
