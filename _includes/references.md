@@ -278,7 +278,7 @@ http://opensource.org/licenses/MIT.
 [core chainparams.cpp]: https://github.com/bitcoin/bitcoin/blob/master/src/chainparams.cpp
 [core git]: https://github.com/bitcoin/bitcoin
 [core paymentrequest.proto]: https://github.com/bitcoin/bitcoin/blob/master/src/qt/paymentrequest.proto
-[core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script.h
+[core script.h]: https://github.com/bitcoin/bitcoin/blob/master/src/script/script.h
 [creative commons attribution 3.0 license]: https://creativecommons.org/licenses/by/3.0/
 [DER]: https://en.wikipedia.org/wiki/X.690#DER_encoding
 [dig command]: https://en.wikipedia.org/wiki/Dig_%28Unix_command%29
