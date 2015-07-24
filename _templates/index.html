@@ -11,11 +11,12 @@ id: index
   <div class="mainvideoicon"></div>
   <div class="mainvideoiconhover"></div>
 </div></div>
+{% comment %}
 <div class="mainlist">
-  <div><div><img src="/img/icons/main_ico_instant.svg" alt="Icon"><div>{% translate list1 %}</div></div></div>
   <div><div><img src="/img/icons/main_ico_worldwide.svg" alt="Icon"><div>{% translate list2 %}</div></div></div>
-  <div><div><img src="/img/icons/main_ico_lowfee.svg" alt="Icon"><div>{% translate list3 %}</div></div></div>
 </div>
+{% endcomment %}
+<br>
 <p class="maindesc">{% translate desc %}</p>
 <div class="mainbutton"><a href="/{{ page.lang }}/{% translate getting-started url %}"><img src="/img/icons/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>
 <div class="mainoverview">{% translate overview %}</div>
