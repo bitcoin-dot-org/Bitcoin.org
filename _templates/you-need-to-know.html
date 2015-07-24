@@ -23,6 +23,53 @@ id: you-need-to-know
 <h2 id="instant"><img class="titleicon" src="/img/icons/ico_fast.svg" alt="Icon" />{% translate instant %}</h2>
 <p>{% translate instanttxt %}</p>
 
+{% case page.lang %}
+{% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl' or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'ja' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+{% comment %}
+<!-- In the table below, not making arabic numerals a translated string
+     so that we can easily change them if confirmations become more or
+     less reliable. -->
+{% endcomment %}
+
+<br>
+<table class="center">
+  <tr>
+    <th>{% translate confirmations %}</th>
+    <th>{% translate lightweight_wallets %}</th>
+    <th>{% translate bitcoin_core %}</th>
+  </tr>
+
+  <tr>
+    <th>0</th>
+    <td colspan="2">{% translate unconfirmed_only_safe %}</td>
+  </tr>
+
+  <tr>
+    <th>1</th>
+    <td>{% translate somewhat_reliable %}</td>
+    <td>{% translate mostly_reliable %}</td>
+  </tr>
+
+  <tr>
+    <th>3</th>
+    <td>{% translate mostly_reliable %}</td>
+    <td>{% translate highly_reliable %}</td>
+  </tr>
+
+  <tr>
+    <th>6</th>
+    <td colspan="2">{% translate high_value_minimum %}</td>
+  </tr>
+
+  <tr>
+    <th>30</th>
+    <td colspan="2">{% translate alert_recommendation %}</td>
+  </tr>
+</table>
+<br>
+{% endcase %}
+
 <h2 id="experimental"><img class="titleicon" src="/img/icons/ico_lab.svg" alt="Icon" />{% translate experimental %}</h2>
 <p>{% translate experimentaltxt %}</p>
 
