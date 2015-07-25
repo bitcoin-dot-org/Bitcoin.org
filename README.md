@@ -556,7 +556,7 @@ coordination is usually conducted in #bitcoin-dev on Freenode.
 #### Basic Alert
 
 1. Open your editor on a file named `_alerts/YYYY-MM-DD-short-title.md`
-   (the alert will appear as <https://bitcoin.org/YYYY-MM-DD-short-title>).
+   (the alert will appear as <https://bitcoin.org/en/alert/YYYY-MM-DD-short-title>).
 
 2. Paste the following text into the top of the file:
 
@@ -564,8 +564,8 @@ coordination is usually conducted in #bitcoin-dev on Freenode.
     ---
     ## Title displayed on alert page
     title: "11/12 March 2013 Chain Fork"
-    ## Short URL for use in P2P network alerts: https://bitcoin.org/<alias>
-    alias: "chainfork"
+    ## Short URL for use in P2P network alerts: https://bitcoin.org/<shorturl>
+    shorturl: "chainfork"
     ## Active alerts will display the banner (below) on all bitcoin.org content pages
     active: true
     ## Banner displayed if 'active: true'.  Can use HTML formatting
@@ -611,7 +611,7 @@ coordination is usually conducted in #bitcoin-dev on Freenode.
       displayed on the live site.  The site build aborts and starts over
       when new commits are found.
 
-- Give the `alias` URL (`bitcoin.org/<alias>`) to the P2P alert message
+- Give the `shorturl` URL (`bitcoin.org/<shorturl>`) to the P2P alert message
   key holders to use in any alert messages they send.
 
 - Proceed to the next section to improve the alert.
@@ -628,8 +628,8 @@ The following fields may be defined in the the alert YAML header:
 ---
 ## (Required; HTML text) Title displayed on alert page
 title: "11/12 March 2013 Chain Fork"
-## (Optional; display ASCII only) Short URL for use in P2P network alerts: https://bitcoin.org/<alias>
-alias: "chainfork"
+## (Optional; display ASCII only) Short URL for use in P2P network alerts: https://bitcoin.org/<shorturl>
+shorturl: "chainfork"
 ## (Optional; default=false) Active alerts will display the banner (below) on all bitcoin.org content pages
 active: true
 ## (Optional; HTML text) Banner displayed if 'active: true'.  Can use HTML formatting
