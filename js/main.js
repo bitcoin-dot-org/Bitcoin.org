@@ -119,15 +119,18 @@ return false;
 
 function loadYoutubeVideo(e) {
 // Load Youtube video on target node on click.
-var t = getEvent(e, 'target'),
-    nd = document.createElement('IFRAME');
-while (t.getAttribute('data-youtubeurl') === null || t.getAttribute('data-youtubeurl') === '') t = t.parentNode;
-nd.src = t.getAttribute('data-youtubeurl');
-nd.setAttribute('frameborder', 0);
-nd.setAttribute('allowfullscreen', true);
-t.innerHTML = '';
-t.appendChild(nd);
-t.onclick = '';
+function init(e) {
+	var t = getEvent(e, 'target'),
+	    nd = document.createElement('IFRAME');
+	while (t.getAttribute('data-youtubeurl') === null || t.getAttribute('data-youtubeurl') === '') t = t.parentNode;
+	nd.src = t.getAttribute('data-youtubeurl');
+	nd.setAttribute('frameborder', 0);
+	nd.setAttribute('allowfullscreen', true);
+	t.innerHTML = '';
+	t.appendChild(nd);
+	t.onclick = '';
+}
+onTouchClick(e, init);
 }
 
 function expandBox(t) {
@@ -148,36 +151,48 @@ setTimeout(function() {
 
 function boxShow(e) {
 // Display the box content when the user click a box on the "Secure your wallet" page.
-var t = getEvent(e, 'target');
-while (t.nodeName != 'DIV') t = t.parentNode;
-expandBox(t);
-cancelEvent(e);
+function init(e) {
+	var t = getEvent(e, 'target');
+	while (t.nodeName != 'DIV') t = t.parentNode;
+	expandBox(t);
+	cancelEvent(e);
+}
+onTouchClick(e, init);
 }
 
 function faqShow(e) {
 // Display the content of a question in the FAQ at user request.
-var t = getEvent(e, 'target');
-while (t.nodeType != 1 || t.nodeName != 'DIV') t = t.nextSibling;
-expandBox(t);
-cancelEvent(e);
+function init(e) {
+	var t = getEvent(e, 'target');
+	while (t.nodeType != 1 || t.nodeName != 'DIV') t = t.nextSibling;
+	expandBox(t);
+	cancelEvent(e);
+}
+onTouchClick(e, init);
 }
 
 function materialShow(e) {
 // Display more materials on the "Press center" page at user request.
-var t = getEvent(e, 'target'),
-    p = t;
-while (p.nodeType != 1 || p.nodeName != 'DIV') p = p.parentNode;
-expandBox(p);
-cancelEvent(e);
+function init(e) {
+	var t = getEvent(e, 'target'),
+	    p = t;
+	while (p.nodeType != 1 || p.nodeName != 'DIV') p = p.parentNode;
+	expandBox(p);
+	cancelEvent(e);
+}
+onTouchClick(e, init);
 }
 
 function librariesShow(e) {
 // Display more open source projects on the "Development" page at user request.
-var t = getEvent(e, 'target'),
-    p = t;
-while (p.nodeType != 1 || p.nodeName != 'UL') p = p.parentNode;
-expandBox(p);
-cancelEvent(e);
+function init(e) {
+	var t = getEvent(e, 'target'),
+	    p = t;
+	while (p.nodeType != 1 || p.nodeName != 'UL') p = p.parentNode;
+	expandBox(p);
+	cancelEvent(e);
+}
+onTouchClick(e, init);
 }
 
 function freenodeShow(e) {
@@ -382,6 +397,16 @@ onTouchClick(e, function() {
 	walletHide();
 	walletShow();
 });
+}
+
+function walletScoreListener(e) {
+// Listen for events on wallet scores and display them on tap.
+var init = function(e) {
+	var t = getEvent(e, 'target');
+	while (!t.parentNode.parentNode.parentNode.id) t = t.parentNode;
+	(t.className.indexOf('hover') === -1) ? addClass(t, 'hover') : removeClass(t, 'hover');
+};
+onTouchClick(e, init);
 }
 
 function walletShowPlatform(platform) {

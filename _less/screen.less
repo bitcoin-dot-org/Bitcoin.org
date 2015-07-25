@@ -2621,7 +2621,7 @@ h2 .rssicon{
 		margin-top:10px;
 		padding:0;
 	}
-	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div:hover>div{
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div.hover>div{
 		display:block;
 		background:none;
 		width:auto;
@@ -2630,16 +2630,25 @@ h2 .rssicon{
 		margin-top:10px;
 	}
 	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div>div>p,
-	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div>div>div{
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div>div>div,
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div>div>span{
+		display:none;
 		position:relative;
 		width:auto;
+		height:auto;
+		visibility:visible;
+		opacity:1;
 		border:0;
 		background:none;
 		padding:0;
 		top:0;
 		left:-20px;
 	}
-	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div:hover>div>span{
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div.hover>div>p,
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div.hover>div>div{
+		display:block;
+	}
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div.hover>div>span{
 		display:none;
 	}
 	.download{
