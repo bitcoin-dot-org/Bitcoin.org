@@ -25,11 +25,16 @@ if (!e) var e = window.event;
 (e.preventDefault) ? e.preventDefault() : e.returnValue = false;
 }
 
-function getEventTarget(e) {
-// Return target DOM node on which the event is triggered.
-// Ex. getEventTarget(event);
-if (!e) var e = window.event;
-return (e.target && e.target.nodeType == 3) ? e.target.parentNode : (e.target) ? e.target : e.srcElement;
+function getEvent(e, a) {
+// Return requested event property.
+// Ex. var target = getEvent(event, 'target');
+e = (e) ? e : window.event;
+switch (a) {
+    case 'type':
+        return e.type;
+    case 'target':
+        return (e.target && e.target.nodeType == 3) ? e.target.parentNode : (e.target) ? e.target : e.srcElement;
+}
 }
 
 function getStyle(a, b) {
@@ -99,7 +104,7 @@ var timeout = 1000,
 	// Cancel click events on different targets within timeframe.
 	// This avoids accidental clicks when the page is scrolled or updated due to the 300ms click event delay on mobiles.
 	removeEvent(document.body, 'click', wrongClickListener);
-	if (!clickReady() && getEventTarget(e) != t) cancelEvent(e);
+	if (!clickReady() && getEvent(e, 'target') != t) cancelEvent(e);
     },
     setClickTimeout = function() {
 	// Update timeout during which click events will be blocked.
@@ -111,7 +116,7 @@ var timeout = 1000,
 	return (ti === null || ti === '' || parseInt(ti, 10) < new Date().getTime());
     };
 // Apply appropriate actions according to each event type.
-switch (e.type) {
+switch (getEvent(e, 'type')) {
 	case 'touchstart':
 	// Save initial touchstart coordinates and listen for touchend events and accidental click events.
 		var x = e.changedTouches[0].pageX,
@@ -145,7 +150,7 @@ onTouchClick(e, show);
 
 function mobileMenuHover(e) {
 // Prevent mobile menu to shrink on hover to prevent accidental clicks on other entries.
-var t = getEventTarget(e),
+var t = getEvent(e, 'target'),
     fn = (t.parentNode.className.indexOf('hover') === -1) ? addClass : removeClass,
     initHover = function() {
 	if (t.nodeName != 'A') return;

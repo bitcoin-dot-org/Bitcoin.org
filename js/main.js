@@ -119,7 +119,7 @@ return false;
 
 function loadYoutubeVideo(e) {
 // Load Youtube video on target node on click.
-var t = getEventTarget(e),
+var t = getEvent(e, 'target'),
     nd = document.createElement('IFRAME');
 while (t.getAttribute('data-youtubeurl') === null || t.getAttribute('data-youtubeurl') === '') t = t.parentNode;
 nd.src = t.getAttribute('data-youtubeurl');
@@ -148,7 +148,7 @@ setTimeout(function() {
 
 function boxShow(e) {
 // Display the box content when the user click a box on the "Secure your wallet" page.
-var t = getEventTarget(e);
+var t = getEvent(e, 'target');
 while (t.nodeName != 'DIV') t = t.parentNode;
 expandBox(t);
 cancelEvent(e);
@@ -156,7 +156,7 @@ cancelEvent(e);
 
 function faqShow(e) {
 // Display the content of a question in the FAQ at user request.
-var t = getEventTarget(e);
+var t = getEvent(e, 'target');
 while (t.nodeType != 1 || t.nodeName != 'DIV') t = t.nextSibling;
 expandBox(t);
 cancelEvent(e);
@@ -164,7 +164,7 @@ cancelEvent(e);
 
 function materialShow(e) {
 // Display more materials on the "Press center" page at user request.
-var t = getEventTarget(e),
+var t = getEvent(e, 'target'),
     p = t;
 while (p.nodeType != 1 || p.nodeName != 'DIV') p = p.parentNode;
 expandBox(p);
@@ -173,7 +173,7 @@ cancelEvent(e);
 
 function librariesShow(e) {
 // Display more open source projects on the "Development" page at user request.
-var t = getEventTarget(e),
+var t = getEvent(e, 'target'),
     p = t;
 while (p.nodeType != 1 || p.nodeName != 'UL') p = p.parentNode;
 expandBox(p);
@@ -294,14 +294,14 @@ init();
 
 function updateIssue(e) {
 // Update GitHub issue link pre-filled with current page location.
-var t = getEventTarget(e);
+var t = getEvent(e, 'target');
 t.href = 'https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=' + encodeURIComponent('Location: ' + window.location.href.toString() + "\n\n");
 }
 
 function updateSource(e){
 // Update GitHub source file link pre-filled with current page location.
 if (!document.getElementsByClassName) return;
-var t = getEventTarget(e),
+var t = getEvent(e, 'target'),
     nodes = document.getElementsByClassName('sourcefile'),
     pageoffset = Math.max(0, getPageYOffset() + 100),
     windowy = getWindowY(),
@@ -340,7 +340,7 @@ if (sessionStorage.getItem('develdocdisclaimerclose') === '1') disclaimerClose()
 
 function walletMenuListener(e) {
 // Listen for events on the wallet menu.
-var t = getEventTarget(e),
+var t = getEvent(e, 'target'),
     walletSelectPlatform = function() {
 	if (t.nodeName != 'A') return;
 	if (t.parentNode.className.indexOf('active') !== -1) walletShowPlatform(t.getAttribute('data-walletcompat'));
@@ -352,7 +352,7 @@ onTouchClick(e, walletSelectPlatform);
 
 function walletListener(e) {
 // Listen for events on wallets.
-var t = getEventTarget(e),
+var t = getEvent(e, 'target'),
     walletShow = function() {
 	// Show wallet on click on mobile or desktop.
 	if (t.id == 'wallets') return;
@@ -482,10 +482,10 @@ function makeEditable(e) {
 // An easter egg that makes the page editable when user click on the page and hold their mouse button for one second.
 // This trick allows translators and writers to preview their work.
 if (!e) var e = window.event;
-switch (e.type) {
+switch (getEvent(e, 'type')) {
 	case 'mousedown':
 		if ((e.which && e.which == 3) || (e.button && e.button == 2)) return;
-		var t = getEventTarget(e);
+		var t = getEvent(e, 'target');
 		while (t.parentNode) {
 			if (getStyle(t, 'overflow') == 'auto' || getStyle(t, 'overflow-y') == 'auto' || getStyle(t, 'overflow-x') == 'auto') return;
 			t = t.parentNode;
