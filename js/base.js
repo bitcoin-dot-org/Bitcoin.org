@@ -90,15 +90,16 @@ for (var i = 0, nd = document.getElementsByTagName('*'), n = nd.length; i < n; i
 }
 }
 
-function onTouchClick(e, callback) {
+function onTouchClick(e, callback, callbackClick) {
 // Detect and handle clicks using click and touch events while preventing accidental or ghost clicks.
 var timeout = 1000,
+    srcEvent = e,
     touchEndListener = function(e) {
 	// Call callback if touch events match the patterns of a click.
 	removeEvent(t, 'touchend', touchEndListener);
 	setClickTimeout();
 	if (Math.abs(e.changedTouches[0].pageX - x) > 20 || Math.abs(e.changedTouches[0].pageY - y) > 20) return;
-	callback(e);
+	callback(srcEvent);
     },
     wrongClickListener = function(e) {
 	// Cancel click events on different targets within timeframe.
@@ -115,6 +116,7 @@ var timeout = 1000,
 	var ti = document.body.getAttribute('data-touchtimeout');
 	return (ti === null || ti === '' || parseInt(ti, 10) < new Date().getTime());
     };
+if (callbackClick === undefined) callbackClick = function() {};
 // Apply appropriate actions according to each event type.
 switch (getEvent(e, 'type')) {
 	case 'touchstart':
@@ -131,8 +133,10 @@ switch (getEvent(e, 'type')) {
 		break;
 	case 'click':
 	// Call callback on click in the absence of a recent touchstart event to prevent ghost clicks.
+	// Always call callbackClick to let it cancel click events on links.
+		callbackClick(srcEvent);
 		if (!clickReady()) return;
-		callback();
+		callback(srcEvent);
 		break;
 }
 }
@@ -143,6 +147,7 @@ var show = function() {
 	var mm = document.getElementById('menusimple');
 	var ml = document.getElementById('langselect');
 	mm.style.display = ml.style.display = (mm.style.display == 'block') ? '' : 'block';
+	addClass(mm, 'menutap');
 	cancelEvent(e);
     };
 onTouchClick(e, show);
@@ -154,14 +159,13 @@ var t = getEvent(e, 'target'),
     fn = (t.parentNode.className.indexOf('hover') === -1) ? addClass : removeClass,
     initHover = function() {
 	if (t.nodeName != 'A') return;
-	if (fn == removeClass && t.parentNode.getElementsByTagName('UL').length == 0) return;
+	if (fn == removeClass && !hasSubItems(t)) return;
 	var p = t;
 	while (p.parentNode.nodeName == 'UL' || p.parentNode.nodeName == 'LI') p = p.parentNode;
-	addClass(p, 'menutap');
 	for (var i = 0, nds = p.getElementsByTagName('LI'), n = nds.length; i < n; i++) {
 		if (nds[i] == t.parentNode) continue;
 		removeClass(nds[i], 'active');
-		if (nds[i].getElementsByTagName('UL').length > 0) continue;
+		if (hasSubItems(nds[i])) continue;
 		removeClass(nds[i], 'hover');
 	}
 	while (t != p) {
@@ -171,8 +175,18 @@ var t = getEvent(e, 'target'),
 		}
 		t = t.parentNode;
 	}
+    },
+    hasSubItems = function(t) {
+	while (t.nodeName != 'LI') t = t.parentNode;
+	return (t.getElementsByTagName('UL').length > 0);
+    },
+    // Prevent clicks on parent element links in the menu.
+    filterClick = function(e) {
+	var t = getEvent(e, 'target');
+	if (t.nodeName != 'A') return;
+	if (hasSubItems(t)) cancelEvent(e);
     };
-onTouchClick(e, initHover);
+onTouchClick(e, initHover, filterClick);
 }
 
 function addAnchorLinks() {

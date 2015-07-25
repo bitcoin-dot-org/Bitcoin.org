@@ -35,13 +35,16 @@ h3{
 }
 a:link,
 a:visited,
-a:active{
+a:active,
+a.link-js{
 	color:#2c6fad;
 	text-decoration:none;
+	cursor:pointer;
 }
 a:link:hover,
 a:visited:hover,
-a:active:hover{
+a:active:hover,
+a.link-js:hover{
 	color:#63a4e1;
 }
 a img,
@@ -316,6 +319,7 @@ table td,table th{
 	color:#2c6fad;
 }
 .menusimple>li a{
+	cursor:pointer;
 	font-family:'Ubuntu', sans-serif;
 	font-weight:300;
 	font-size:110%;
@@ -1456,6 +1460,8 @@ div.post {
 	display:none;
 }
 .wallets>div>a{
+	color:#2c6fad;
+	cursor:pointer;
 	font-size:94%;
 	text-align:center;
 	text-decoration:none;
@@ -1471,6 +1477,9 @@ div.post {
 	-moz-transition:opacity 400ms ease-out;
 	-webkit-transition:opacity 400ms ease-out;
 	transition:opacity 400ms ease-out;
+}
+.wallets>div>a:hover{
+	color:#63a4e1;
 }
 .wallets>div>a>span{
 	display:none;
@@ -2227,6 +2236,7 @@ h2 .rssicon{
 		-moz-appearance:none;
 	}
 	.menumobile{
+		cursor:pointer;
 		display:inline-block;
 		float:right;
 		height:40px;
