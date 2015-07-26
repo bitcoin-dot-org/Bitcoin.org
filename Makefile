@@ -1,5 +1,5 @@
-## Optional Makefile: only used for testing & maintainer automation;
-##                    not used to build live site
+## This file is licensed under the MIT License (MIT) available on
+## http://opensource.org/licenses/MIT.
 
 S=@  ## Silent: only print errors by default; 
      ## run `make S='' [other args]` to print commands as they're run
@@ -198,6 +198,12 @@ check-for-missing-copyright-licenses:
 ## say MIT license, but it has to say something.) This can be extended
 ## to include other directories by adding them after "_includes/"
 	$S git grep -iL 'This file is licensed' _includes/ | eval $(ERROR_ON_OUTPUT)
+	$S git ls-files | grep -v '^_alerts' \
+          | while read file ; do \
+            if sed -n 1p $$file | grep -q '^---$$' ; then \
+              grep -iL 'This file is licensed' $$file ; \
+            fi ; \
+          done | eval $(ERROR_ON_OUTPUT)
 
 check-for-missing-rpc-summaries:
 ## Make sure the Quick Reference section has a summary for each RPC we
