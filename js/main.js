@@ -355,11 +355,23 @@ if (sessionStorage.getItem('develdocdisclaimerclose') === '1') disclaimerClose()
 
 function walletMenuListener(e) {
 // Listen for events on the wallet menu.
-var t = getEvent(e, 'target'),
-    walletSelectPlatform = function() {
+var walletSelectPlatform = function(e) {
+	var t = getEvent(e, 'target'),
+	    p = t;
 	if (t.nodeName != 'A') return;
-	if (t.parentNode.className.indexOf('active') !== -1) walletShowPlatform(t.getAttribute('data-walletcompat'));
-	if (isMobile() && t.parentNode.getElementsByTagName('UL').length == 0) scrollToNode(document.getElementById('wallets'));
+	while (p.parentNode.nodeName == 'UL' || p.parentNode.nodeName == 'LI') p = p.parentNode;
+	for (var i = 0, nds = p.getElementsByTagName('LI'), n = nds.length; i < n; i++) removeClass(nds[i], 'active');
+	var tt = t;
+	while (tt != p) {
+		if (tt.nodeName == 'LI') addClass(tt, 'active');
+		tt = tt.parentNode;
+	}
+	walletShowPlatform(t.getAttribute('data-walletcompat'));
+	if (isMobile() && !hasSubItems(t)) scrollToNode(document.getElementById('wallets'));
+    },
+    hasSubItems = function(t) {
+	while (t.nodeName != 'LI') t = t.parentNode;
+	return (t.getElementsByTagName('UL').length > 0);
     };
 // Pre-process events and call appropriate function.
 onTouchClick(e, walletSelectPlatform);
@@ -436,12 +448,8 @@ var t = null,
 	if (platform != 'default') {
 		t.setAttribute('data-active', '1');
 		addClass(t.parentNode, 'active');
-		addClass(t.parentNode, 'hover');
 		var p = t.parentNode.parentNode.parentNode;
-		if (p.nodeName == 'LI') {
-			addClass(p, 'active');
-			addClass(p, 'hover');
-		}
+		if (p.nodeName == 'LI') addClass(p, 'active');
 	}
     },
     updateWallets = function() {
