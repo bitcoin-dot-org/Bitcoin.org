@@ -6,6 +6,10 @@ layout: base
 lang: en
 id: developer-reference
 title: "Developer Reference - Bitcoin"
+breadcrumbs:
+  - bitcoin
+  - dev docs
+  - Reference
 ---
 <link rel="stylesheet" href="/css/jquery-ui.min.css">
 

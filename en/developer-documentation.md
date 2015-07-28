@@ -6,6 +6,9 @@ layout: base
 lang: en
 id: developer-documentation
 title: "Developer Documentation - Bitcoin"
+breadcrumbs:
+  - bitcoin
+  - Developer Documentation
 ---
 <link rel="stylesheet" href="/css/jquery-ui.min.css">
 
