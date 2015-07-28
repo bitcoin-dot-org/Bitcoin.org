@@ -21,7 +21,7 @@ The `settxfee` RPC {{summary_setTxFee}}
 - n: "Transaction Fee Per Kilobyte"
   t: "number (bitcoins)"
   p: "Required<br>(exactly 1)"
-  d: "The transaction fee to pay, in bitcoins, for each kilobyte of transaction data.  The value `0` will not be accepted.  Be careful setting the fee too low---your transactions may not be relayed or included in blocks"
+  d: "The transaction fee to pay, in bitcoins, for each kilobyte of transaction data.  Be careful setting the fee too low---your transactions may not be relayed or included in blocks"
 
 {% enditemplate %}
 
