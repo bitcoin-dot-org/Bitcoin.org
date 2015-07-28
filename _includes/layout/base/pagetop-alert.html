@@ -1,0 +1,10 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+{% if site.ALERT %}
+  <div class="banner-message {{ site.ALERTCLASS }}">
+    <a href="{{ site.ALERTURL }}"><span>{{ site.ALERT }}</span></a>
+  </div>
+{% endif %}

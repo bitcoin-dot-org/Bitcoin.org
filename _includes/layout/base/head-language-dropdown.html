@@ -1,0 +1,17 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+<ul class="lang">
+  <li><a>{{ site.langs[page.lang] }}</a>
+  <ul>
+    <li><ul>
+      {% assign i = 0 %}{% assign c = site.langsorder.size | divided_by: 2 | plus: 1 %}
+      {% for lang in site.langsorder %}{% assign mod = i | modulo: c %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' class="active"'%}{% endif %}
+        {% if mod == 0 and i != 0 %}</ul></li><li><ul>{% endif %}
+          <li><a href="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"{{ active }}>{{ site.langs[lang] }}</a></li>
+        {% assign i = i | plus: 1 %}{% endfor %}
+      </ul></li>
+    </ul>
+  </li>
+</ul>

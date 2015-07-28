@@ -1,0 +1,28 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+<div class="breadcrumbs">
+  {% for crumb in page.breadcrumbs %}
+    {% if forloop.last %}
+      {% case crumb %}
+        {% when "GLOSSARY_ENTRY_TITLE" %}
+          {% comment %} ## Only show first synonym in crumb ## {% endcomment %}
+          {% for synonym in page.required.synonyms_shown_in_glossary_capitalize_first_letter %}
+            {% if forloop.first %}{{synonym}}{% endif %}
+          {% endfor %}
+        {% else %}{{crumb}}
+      {% endcase %}
+    {% else %}
+      {% case crumb %}
+        {% comment %}/// Alphabetical order by crumb \\\{% endcomment %}
+        {% when "bitcoin" %}<a href="/{{page.lang}}/">{% translate bitcoin vocabulary %}</a>
+        {% when "dev docs" %}<a href="/en/developer-documentation">Dev Docs</a>
+        {% when "glossary" %}<a href="/en/developer-glossary">Glossary</a>
+        {% else %}{% die "Breadcrumb not found in _includes/layout/breadcrumbs.html" %}
+      {% endcase %}
+      &gt;
+    {% endif %}
+  {% endfor %}
+</div>

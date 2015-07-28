@@ -6,6 +6,10 @@ layout: base
 lang: en
 id: developer-examples
 title: "Developer Examples - Bitcoin"
+breadcrumbs:
+  - bitcoin
+  - dev docs
+  - Examples
 ---
 <link rel="stylesheet" href="/css/jquery-ui.min.css">
 
