@@ -3,7 +3,7 @@
 ## http://opensource.org/licenses/MIT.
 
 title: "Some Miners Generating Invalid Blocks"
-alias: "spv-mining"
+shorturl: "spv-mining"
 active: false
 #banner: "WARNING: many wallets currently vulnerable to double-spending of confirmed transactions (click here to read)"
 bannerclass: "alert"
