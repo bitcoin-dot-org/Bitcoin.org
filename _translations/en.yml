@@ -31,12 +31,29 @@ en:
     title: "Bitcoin for Businesses - Bitcoin"
     pagetitle: "Bitcoin for Businesses"
     summary: "Bitcoin is a very secure and inexpensive way to handle payments."
-    lowfee: "Low transaction fees"
-    lowfeetext: "Bitcoin's high cryptographic security allows it to process transactions in a very efficient and inexpensive way. You can make and receive payments using the Bitcoin network with almost no fees. In most cases, fees are not strictly required but they are recommended for faster confirmation of your transaction."
+    lowfee: "Choose your own fees"
+    lowfeetext: >
+      There is no fee to receive bitcoins. There is a fee to spend
+      bitcoins, but you control how large a fee to pay. You can save
+      money by setting the fee low, or you can set a higher fee to
+      encourgage faster <a
+      href="#you-need-to-know##instant">confirmation</a> of your
+      transactions. Fees are based on the size of the transaction
+      data—not the amount of bitcoins transfered—so it's possible to send
+      100,000 bitcoins for the same fee it costs to send 1 bitcoin. All
+      wallets <a href="#choose-your-wallet#">listed on Bitcoin.org</a>
+      have reasonable default transaction fees, but note that some
+      wallets also charge additional service fees.
+
     fraud: "Protection against fraud"
     fraudtext: "Any business that accepts credit cards or PayPal knows the problem of payments that are later reversed. Chargeback frauds result in limited market reach and increased prices, which in turn penalizes customers. Bitcoin payments are irreversible and secure, meaning that the cost of fraud is no longer pushed onto the shoulders of the merchants."
     international: "Fast international payments"
-    internationaltext: "Bitcoins can be transferred from Africa to Canada in 10 minutes. In fact, bitcoins never have any real physical location, so it is possible to transfer any amount anywhere with no limits, delays, or excessive fees. There are no intermediate banks to make you wait three business days."
+    internationaltext: >
+      Sending bitcoins across borders is as easy as sending them across
+      the street. There are no banks to make you wait three business
+      days, no extra fees for making an international transfer, and no
+      special limitations on the minimum or maximum amount you can send.
+
     pci: "No PCI compliance required"
     pcitext: "Accepting credit cards online typically requires extensive security checks in order to comply with the PCI standard. Bitcoin still requires you to <a href=\"#secure-your-wallet#\">secure your wallet</a> and your payment requests. However, you do not carry the costs and responsibilities that come with processing sensitive information from your customers like credit card numbers."
     visibility: "Get some free visibility"
@@ -54,13 +71,35 @@ en:
     api: "Many third party APIs"
     apitext: "There are many third party payment processing services that provide APIs; you don't need to store bitcoins on your server and handle the security that this implies. Additionally, most of these APIs allow you to process invoices and exchange your bitcoins into your local currency at competitive costs."
     own: "You can be your own financial system"
-    owntext: "If you don't use any third party APIs, you can integrate a Bitcoin server directly in your applications, allowing you to become your own bank and payment processor. With all the responsibilities that this implies, you can build amazing systems that process Bitcoin transactions with almost no fees."
+    owntext: >
+      If you don't use any third party APIs, you can integrate a Bitcoin
+      server directly in your applications, allowing you to become your
+      own bank and payment processor. With all the responsibilities that
+      this implies, you can build amazing systems that process Bitcoin
+      transactions however you would like.
+
     invoice: "Bitcoin addresses to track invoices"
     invoicetext: "Bitcoin creates a unique address for each transaction. So if you were to build a payment system associated with an invoice, you simply need to generate and monitor a Bitcoin address for each payment. You should never use the same address for more than one transaction."
     security: "Most of the security is on client side"
-    securitytext: "Most parts of the security are handled by the protocol. This means no need for PCI compliance and fraud detection is only required when services or products are delivered instantly. Storing your bitcoins in a <a href=\"#secure-your-wallet#\">secure environment</a> and securing payment requests displayed to the user should be your main concerns."
-    micro: "Cheap micro payments"
-    microtext: "Bitcoin offers the lowest payment processing fees and usually can be used to send micro payments as low as a few dollars in value. Bitcoin allows to design new creative online services that could not exist before only because of financial limitations. This includes various kinds of tipping systems and automated payment solutions."
+    securitytext: >
+      Most security is handled by the protocol, eliminating the need for
+      PCI compliance. Fraud prevention can be simplified down to
+      monitoring a single variable: the <a
+      href="#you-need-to-know##instant">confirmation score</a>. Beyond
+      that, keeping
+      your bitcoins secure is mainly a matter of <a
+      href="#secure-your-wallet#">securing your wallet</a> and using
+      HTTPS or other secure protocols to send payment requests to customers.
+
+    micro: "New payment possibilities"
+    microtext: >
+      Bitcoin allows you to design new and creative online services
+      that couldn't exist before because of financial limitations. This
+      includes tipping systems, automated payment solutions,
+      distributed crowdfunding services, time locked payment
+      management, public asset tracking, low-trust escrow services,
+      micro-payment channels, and more.
+
   bitcoin-for-individuals:
     title: "Bitcoin for Individuals - Bitcoin"
     pagetitle: "Bitcoin for Individuals"
@@ -68,13 +107,30 @@ en:
     mobile: "Mobile payments made easy"
     mobiletext: "Bitcoin on mobiles allows you to pay with a simple two step scan-and-pay. No need to sign up, swipe your card, type a PIN, or sign anything. All you need to receive Bitcoin payments is to display the QR code in your Bitcoin wallet app and let your friend scan your mobile, or touch the two phones together (using NFC radio technology)."
     international: "Fast international payments"
-    internationaltext: "Bitcoins can be transferred from Africa to Canada in 10 minutes. There is no bank to slow down the process, level outrageous fees, or freeze the transfer. You can pay your neighbors the same way as you can pay a member of your family in another country."
+    internationaltext: >
+      Sending bitcoins across borders is as easy as sending them across
+      the street. There are no banks to make you wait three business
+      days, no extra fees for making an international transfer, and no
+      special limitations on the minimum or maximum amount you can send.
+
     simple: "Works everywhere, anytime"
     simpletext: "Just like with email, you don't need to ask your family to use the same software or the same service providers. Just let them stick to their own favorites. No problem there; they are all compatible as they use the same open technology. The Bitcoin network never sleeps, even on holidays!"
     secure: "Security and control over your money"
     securetext: "Bitcoin transactions are secured by military grade cryptography. Nobody can charge you money or make a payment on your behalf. So long as you take the required steps to <a href=\"#secure-your-wallet#\">protect your wallet</a>, Bitcoin can give you control over your money and a strong level of protection against many types of fraud."
-    lowfee: "Low transaction fees"
-    lowfeetext: "Bitcoin allows you to send and receive payments at very low cost. Except for special cases like very small payments, there is no enforced fee. It is however recommended to pay a higher voluntary fee for faster confirmation of your transaction and to remunerate the people who operate the Bitcoin network."
+    lowfee: "Choose your own fees"
+    lowfeetext: >
+      There is no fee to receive bitcoins. There is a fee to spend
+      bitcoins, but you control how large a fee to pay. You can save
+      money by setting the fee low, or you can set a higher fee to
+      encourgage faster <a
+      href="#you-need-to-know##instant">confirmation</a> of your
+      transactions. Fees are based on the size of the transaction
+      data—not the amount of bitcoins transfered—so it's possible to send
+      100,000 bitcoins for the same fee it costs to send 1 bitcoin. All
+      wallets <a href="#choose-your-wallet#">listed on Bitcoin.org</a>
+      have reasonable default transaction fees, but note that some
+      wallets also charge additional service fees.
+
     anonymous: "Protect your identity"
     anonymoustext: "With Bitcoin, there is no credit card number that some malicious actor can collect in order to impersonate you. In fact, it is even possible to send a payment without revealing your identity, almost just like with physical money. You should however take note that some effort can be required to <a href=\"#protect-your-privacy#\">protect your privacy</a>."
   bitcoin-paper:
