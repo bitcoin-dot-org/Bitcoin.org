@@ -4,7 +4,7 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 
 <ul id="menusimple" class="menusimple" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
-  <li><a href="#" onclick="return false;">{% translate menu-intro layout %}</a>
+  <li><a>{% translate menu-intro layout %}</a>
     <ul>
       <li{% if page.id == 'bitcoin-for-individuals' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a></li>
       <li{% if page.id == 'bitcoin-for-businesses' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a></li>
@@ -14,7 +14,7 @@ http://opensource.org/licenses/MIT.
       <li{% if page.id == 'you-need-to-know' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a></li>
     </ul>
   </li>
-  <li><a href="#" onclick="return false;">{% translate menu-resources layout %}</a>
+  <li><a>{% translate menu-resources layout %}</a>
     <ul>
       <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a></li>
       <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
@@ -24,7 +24,7 @@ http://opensource.org/licenses/MIT.
     </ul>
   </li>
   <li{% if page.id == 'innovation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate innovation url %}">{% translate menu-innovation layout %}</a></li>
-  <li><a href="#" onclick="return false;">{% translate menu-participate layout %}</a>
+  <li><a>{% translate menu-participate layout %}</a>
     <ul>
       <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a>
       {% if page.lang == 'en' %}<li{% if page.id == 'full-node' %} class="active"{% endif %}><a href="/en/full-node">Running a full node</a></li>{% endif %}
