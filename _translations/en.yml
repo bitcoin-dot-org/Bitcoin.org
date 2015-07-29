@@ -33,17 +33,14 @@ en:
     summary: "Bitcoin is a very secure and inexpensive way to handle payments."
     lowfee: "Choose your own fees"
     lowfeetext: >
-      There is no fee to receive bitcoins. There is a fee to spend
-      bitcoins, but you control how large a fee to pay. You can save
-      money by setting the fee low, or you can set a higher fee to
-      encourgage faster <a
+      There is no fee to receive bitcoins, and many wallets let you
+      control how large a fee to pay when spending. Most wallets have
+      reasonable default fees, and higher fees can encourage faster <a
       href="#you-need-to-know##instant">confirmation</a> of your
-      transactions. Fees are based on the size of the transaction
-      data—not the amount of bitcoins transfered—so it's possible to send
-      100,000 bitcoins for the same fee it costs to send 1 bitcoin. All
-      wallets <a href="#choose-your-wallet#">listed on Bitcoin.org</a>
-      have reasonable default transaction fees, but note that some
-      wallets also charge additional service fees.
+      transactions. Fees are unrelated to the amount transferred, so it's
+      possible to send 100,000 bitcoins for the same fee it costs to
+      send 1 bitcoin.
+
 
     fraud: "Protection against fraud"
     fraudtext: "Any business that accepts credit cards or PayPal knows the problem of payments that are later reversed. Chargeback frauds result in limited market reach and increased prices, which in turn penalizes customers. Bitcoin payments are irreversible and secure, meaning that the cost of fraud is no longer pushed onto the shoulders of the merchants."
@@ -73,7 +70,7 @@ en:
     own: "You can be your own financial system"
     owntext: >
       If you don't use any third party APIs, you can integrate a Bitcoin
-      server directly in your applications, allowing you to become your
+      node directly into your applications, allowing you to become your
       own bank and payment processor. With all the responsibilities that
       this implies, you can build amazing systems that process Bitcoin
       transactions however you would like.
@@ -96,7 +93,7 @@ en:
       Bitcoin allows you to design new and creative online services
       that couldn't exist before because of financial limitations. This
       includes tipping systems, automated payment solutions,
-      distributed crowdfunding services, time locked payment
+      distributed crowd-funding services, time locked payment
       management, public asset tracking, low-trust escrow services,
       micro-payment channels, and more.
 
@@ -119,17 +116,13 @@ en:
     securetext: "Bitcoin transactions are secured by military grade cryptography. Nobody can charge you money or make a payment on your behalf. So long as you take the required steps to <a href=\"#secure-your-wallet#\">protect your wallet</a>, Bitcoin can give you control over your money and a strong level of protection against many types of fraud."
     lowfee: "Choose your own fees"
     lowfeetext: >
-      There is no fee to receive bitcoins. There is a fee to spend
-      bitcoins, but you control how large a fee to pay. You can save
-      money by setting the fee low, or you can set a higher fee to
-      encourgage faster <a
+      There is no fee to receive bitcoins, and many wallets let you
+      control how large a fee to pay when spending. Most wallets have
+      reasonable default fees, and higher fees can encourage faster <a
       href="#you-need-to-know##instant">confirmation</a> of your
-      transactions. Fees are based on the size of the transaction
-      data—not the amount of bitcoins transfered—so it's possible to send
-      100,000 bitcoins for the same fee it costs to send 1 bitcoin. All
-      wallets <a href="#choose-your-wallet#">listed on Bitcoin.org</a>
-      have reasonable default transaction fees, but note that some
-      wallets also charge additional service fees.
+      transactions. Fees are unrelated to the amount transferred, so it's
+      possible to send 100,000 bitcoins for the same fee it costs to
+      send 1 bitcoin.
 
     anonymous: "Protect your identity"
     anonymoustext: "With Bitcoin, there is no credit card number that some malicious actor can collect in order to impersonate you. In fact, it is even possible to send a payment without revealing your identity, almost just like with physical money. You should however take note that some effort can be required to <a href=\"#protect-your-privacy#\">protect your privacy</a>."
