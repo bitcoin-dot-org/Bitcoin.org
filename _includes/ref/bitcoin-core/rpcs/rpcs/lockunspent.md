@@ -21,7 +21,7 @@ The `lockunspent` RPC {{summary_lockUnspent}}
 - n: "Lock Or Unlock"
   t: "bool"
   p: "Required<br>(exactly 1)"
-  d: "Set to `true` to lock the outputs specified in the following parameter.  Set to `false` to unlock the outputs specified.  If this is the only argument specified, all outputs will be unlocked (even if this is set to `false`)"
+  d: "Set to `false` to lock the outputs specified in the following parameter.  Set to `true` to unlock the outputs specified.  If this is the only argument specified, all outputs will be unlocked (even if this is set to `false`)"
 
 {% enditemplate %}
 
