@@ -407,16 +407,19 @@ en:
 
     fee: "How much will the transaction fee be?"
     feetxt1: >
-      Transactions can be processed without fees, but users are
-      encouraged to pay a voluntary fee for faster confirmation of
-      their transactions and to remunerate miners. When fees are
-      required, they currently don't exceed a few pennies in value,
-      but this may increase over time. Your
-      Bitcoin client will pay what it thinks is an appropriate fee.
+      Transactions can be processed without fees, but trying to send
+      free transactions can require waiting days or weeks. Although fees
+      may increase over time, normal fees currently only cost a tiny
+      amount. By default, all <a href="#choose-your-wallet#">Bitcoin
+      wallets</a> listed on Bitcoin.org add what they think is an
+      appropriate fee to your transactions; most of those wallets will
+      also give you chance to review the fee before sending the
+      transaction.
 
     feetxt2: >
       Transaction fees are used as a protection against users sending
-      transactions to overload the network. The precise manner in which
+      transactions to overload the network and as a way to pay
+      miners for their work helping to secure the network. The precise manner in which
       fees work is still being developed and will change over time.
       Because the fee is not related to the amount of bitcoins being
       sent, it may seem extremely low or unfairly high. Instead, the
