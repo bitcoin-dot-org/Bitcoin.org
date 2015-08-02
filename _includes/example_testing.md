@@ -57,6 +57,14 @@ environment after you first [configure bitcoind][bitcoind initial setup].
 Bitcoin server starting
 {% endhighlight %}
 
+Create a file in the .bitcoin directory names bitcoin.conf. Populate with
+the following:
+
+~~~
+rpcuser=anyuser
+rpcpassword=anypswd
+~~~
+
 {% autocrossref %}
 
 Start `bitcoind` in regtest mode to create a private block chain.
