@@ -35,13 +35,16 @@ h3{
 }
 a:link,
 a:visited,
-a:active{
+a:active,
+a.link-js{
 	color:#2c6fad;
 	text-decoration:none;
+	cursor:pointer;
 }
 a:link:hover,
 a:visited:hover,
-a:active:hover{
+a:active:hover,
+a.link-js:hover{
 	color:#63a4e1;
 }
 a img,
@@ -322,6 +325,7 @@ table td,table th{
 	color:#2c6fad;
 }
 .menusimple>li a{
+	cursor:pointer;
 	font-family:'Ubuntu', sans-serif;
 	font-weight:300;
 	font-size:110%;
@@ -365,6 +369,10 @@ table td,table th{
 	display:block;
 }
 
+.breadcrumbs {
+	font-size: 75%;
+	padding-left: 10px;
+}
 .content{
 	position:relative;
 	padding:30px 40px 40px 40px;
@@ -1462,6 +1470,8 @@ div.post {
 	display:none;
 }
 .wallets>div>a{
+	color:#2c6fad;
+	cursor:pointer;
 	font-size:94%;
 	text-align:center;
 	text-decoration:none;
@@ -1477,6 +1487,9 @@ div.post {
 	-moz-transition:opacity 400ms ease-out;
 	-webkit-transition:opacity 400ms ease-out;
 	transition:opacity 400ms ease-out;
+}
+.wallets>div>a:hover{
+	color:#63a4e1;
 }
 .wallets>div>a>span{
 	display:none;
@@ -2233,6 +2246,7 @@ h2 .rssicon{
 		-moz-appearance:none;
 	}
 	.menumobile{
+		cursor:pointer;
 		display:inline-block;
 		float:right;
 		height:40px;
@@ -2251,6 +2265,8 @@ h2 .rssicon{
 		margin:0;
 		height:auto;
 		overflow:auto;
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+		-webkit-tap-highlight-color:transparent;
 	}
 	.menusimple>li a,
 	.menusimple>li>ul>li a{
@@ -2275,13 +2291,16 @@ h2 .rssicon{
 	.menusimple.menutap li:hover>ul{
 		display:none;
 	}
-	.menusimple.menutap li.hover{
+	.menusimple.menutap li.hover,
+	.menusimple.menutap li.active{
 		background-color:#2c6fad;
 	}
-	.menusimple.menutap li.hover>a{
+	.menusimple.menutap li.hover>a,
+	.menusimple.menutap li.active>a{
 		color:#fff;
 	}
-	.menusimple.menutap li.hover>ul{
+	.menusimple.menutap li.hover>ul,
+	.menusimple.menutap li.active>ul{
 		display:block;
 	}
 	.logo{
@@ -2498,6 +2517,10 @@ h2 .rssicon{
 		padding:0;
 		border:0;
 	}
+	.walletmenu{
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+		-webkit-tap-highlight-color:transparent;
+	}
 	.walletmenu>ul{
 		display:block;
 	}
@@ -2527,27 +2550,29 @@ h2 .rssicon{
 	.walletmenu>ul.menutap>li>ul>li:hover{
 		background-position:left 10px;
 	}
-	.walletmenu>ul.menutap li.hover{
+	.walletmenu>ul.menutap li.active{
 		background-color:#0d579b;
 	}
-	.walletmenu>ul.menutap li.hover>a,
-	.walletmenu>ul.menutap li.hover>a:link,
-	.walletmenu>ul.menutap li.hover>a:active,
-	.walletmenu>ul.menutap li.hover>a:visited{
+	.walletmenu>ul.menutap li.active>a,
+	.walletmenu>ul.menutap li.active>a:link,
+	.walletmenu>ul.menutap li.active>a:active,
+	.walletmenu>ul.menutap li.active>a:visited{
 		color:#fff;
 	}
-	.walletmenu>ul.menutap>li.hover{
+	.walletmenu>ul.menutap>li.active{
 		background-position:left -62px;
 	}
-	.walletmenu>ul.menutap>li.hover>ul{
+	.walletmenu>ul.menutap>li.active>ul{
 		display:block;
 	}
-	.walletmenu>ul.menutap>li>ul>li.hover{
+	.walletmenu>ul.menutap>li>ul>li.active{
 		background-position:left -24px;
 	}
 	.wallets{
 		width:auto;
 		height:auto;
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+		-webkit-tap-highlight-color:transparent;
 	}
 	.wallets>div:hover>span{
 		display:none;
@@ -2614,7 +2639,7 @@ h2 .rssicon{
 		margin-top:10px;
 		padding:0;
 	}
-	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div:hover>div{
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div.hover>div{
 		display:block;
 		background:none;
 		width:auto;
@@ -2623,16 +2648,25 @@ h2 .rssicon{
 		margin-top:10px;
 	}
 	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div>div>p,
-	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div>div>div{
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div>div>div,
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div>div>span{
+		display:none;
 		position:relative;
 		width:auto;
+		height:auto;
+		visibility:visible;
+		opacity:1;
 		border:0;
 		background:none;
 		padding:0;
 		top:0;
 		left:-20px;
 	}
-	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div:hover>div>span{
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div.hover>div>p,
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div.hover>div>div{
+		display:block;
+	}
+	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div.hover>div>span{
 		display:none;
 	}
 	.download{

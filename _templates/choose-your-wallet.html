@@ -502,23 +502,6 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
-      desktop:
-        text: "wallethive"
-        link: "http://mac.hivewallet.com/"
-        source: "https://github.com/hivewallet/hive-osx"
-        screenshot: "hivemac.png"
-        os:
-        - mac
-        check:
-          control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationspvp2p"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkfailprivacyweak"
-        privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
       web:
         text: "wallethive-web"
         link: "https://hivewallet.com/"
@@ -924,7 +907,7 @@ wallets:
 <p class="summary">{% translate pagedesc %}</p>
 
 <div class="walletmenu" id="walletmenu" onclick="walletMenuListener(event);" ontouchstart="walletMenuListener(event);">
-  <ul onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <ul>
     <li class="wallet-mobile">
     <a id="mobile" data-walletcompat="mobile">{% translate walletcatmobile %}</a>
     <ul>
@@ -955,7 +938,7 @@ wallets:
     <h2>{{ wallet[1].title }}</h2>
     <div>{% for os in platform.os %}<img src="/img/os/{{ os }}.png" alt="{% translate platform{{os}} %}" title="{% translate platform{{os}} %}" />{% endfor %}</div>
     <div>{% if platform.link == 'bitcoincore' %}<a href="/{{ page.lang }}/{% translate download url %}">{% translate walletdownload %}</a>{% elsif platform.link contains 'play.google.com' or platform.link contains 'itunes.apple.com' or platform.link contains 'chrome.google.com' %}<a href="{{ platform.link }}">{% translate walletdownload %}</a>{% else %}<a href="{{ platform.link }}">{% translate walletvisit %}</a>{% endif %}{% if platform.source %}<a href="{{ platform.source }}">{% translate walletsourcecode %}</a>{% endif %}</div>
-    <div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
       {% for check in platform.check %}{% if check[0] == 'privacy' and platform.privacycheck %}
       <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><div>
         {% for privacycheck in platform.privacycheck %}
@@ -972,7 +955,7 @@ wallets:
     <p>{% translate {{platform.text}} %}</p>
     <div><img src="/img/screenshots/{{ platform.screenshot }}" alt="screenshot"></div>
   </div>
-  <a href="#" onclick="return false;"><img src="/img/wallet/{{ wallet[0] }}.png" alt="{{ wallet[1].title }}" />{{ wallet[1].titleshort }}<span></span></a>
+  <a><img src="/img/wallet/{{ wallet[0] }}.png" alt="{{ wallet[1].title }}" />{{ wallet[1].titleshort }}<span></span></a>
 </div>
 {% endfor %}{% endfor %}
 </div>
@@ -985,7 +968,7 @@ wallets:
     <h2>{{ wallet[1].title }}</h2>
     <div>{% for os in platform[1].os %}<img src="/img/os/{{ os }}.png" alt="{% translate platform{{os}} %}" title="{% translate platform{{os}} %}" />{% endfor %}</div>
     <div>{% if platform[1].link == 'bitcoincore' %}<a href="/{{ page.lang }}/{% translate download url %}">{% translate walletdownload %}</a>{% elsif platform[1].link contains 'play.google.com' or platform[1].link contains 'itunes.apple.com' or platform[1].link contains 'chrome.google.com' %}<a href="{{ platform[1].link }}">{% translate walletdownload %}</a>{% else %}<a href="{{ platform[1].link }}">{% translate walletvisit %}</a>{% endif %}{% if platform[1].source %}<a href="{{ platform[1].source }}">{% translate walletsourcecode %}</a>{% endif %}</div>
-    <div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
       {% for check in platform[1].check %}{% if check[0] == 'privacy' and platform[1].privacycheck %}
       <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><div>
         {% for privacycheck in platform[1].privacycheck %}
@@ -1002,7 +985,7 @@ wallets:
     <p>{% translate {{platform[1].text}} %}</p>
     <div><img src="/img/screenshots/{{ platform[1].screenshot }}" alt="screenshot"></div>
   </div>
-  <a href="#" onclick="return false;"><img src="/img/wallet/{{ wallet[0] }}.png" alt="{{ wallet[1].title }}" />{{ wallet[1].titleshort }}<span></span></a>
+  <a><img src="/img/wallet/{{ wallet[0] }}.png" alt="{{ wallet[1].title }}" />{{ wallet[1].titleshort }}<span></span></a>
 </div>
 {% endfor %}{% endfor %}{% endfor %}
 </div>

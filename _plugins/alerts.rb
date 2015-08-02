@@ -12,7 +12,7 @@
 #variable is set, allowing a clickable alert banner to be
 #displayed in _layouts/base.html .
 
-#If "alias" variable is set in one alert file, a short alias
+#If "shorturl" variable is set in one alert file, a short alias
 #file for the alert (like /android.html) is generated for
 #Bitcoin Core non-clickable alerts.
 
@@ -47,9 +47,9 @@ module Jekyll
         if self.data.has_key?('active') and !self.data['active'].nil? and self.data['active'] == true
           site.config['STATUS'] = 1
         end
-        if self.data.has_key?('alias')
-          site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['alias']+'.'+extension, date)
-          site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['alias']+'/index.'+extension, date)
+        if self.data.has_key?('shorturl')
+          site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['shorturl']+'.'+extension, date)
+          site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['shorturl']+'/index.'+extension, date)
         end
       end
     end

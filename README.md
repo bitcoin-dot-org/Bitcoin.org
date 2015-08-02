@@ -538,34 +538,148 @@ is the particular version:
 
 ### Alerts
 
-Network alerts should be placed in `_alerts/YYYY-MM-DD-SHORTITLE.html` and adhere to this format:
+1. [Who to contact](#who-to-contact)
+2. [Basic alert](#basic-alert) (emergency fast instructions)
+3. [Detailed alert](#detailed-alert)
+4. [Clearing an alert](#clearing-an-alert)
 
-```
+#### Who to Contact
+
+The following people can publish alerts on Bitcoin.org.  Their email
+addresses are on the linked GitHub profiles.
+
+- Saïvann Carignan, [@saivann](https://github.com/saivann), saivann on Freenode
+- Dave Harding, [@harding](https://github.com/harding), harding on Freenode
+- Wladimir van der Laan, [@laanwj](https://github.com/laanwj), wumpus on Freenode
+- Theymos, [@theymos](https://github.com/theymos), theymos on Freenode
+
+Several of the above are only occasionally on Freenode.  Alert
+coordination is usually conducted in #bitcoin-dev on Freenode.
+
+#### Basic Alert
+
+1. Open your editor on a file named `_alerts/YYYY-MM-DD-short-title.md`
+   (the alert will appear as <https://bitcoin.org/en/alert/YYYY-MM-DD-short-title>).
+
+2. Paste the following text into the top of the file:
+
+    ```
+    ---
+    ## Title displayed on alert page
+    title: "11/12 March 2013 Chain Fork"
+    ## Short URL for use in P2P network alerts: https://bitcoin.org/<shorturl>
+    shorturl: "chainfork"
+    ## Active alerts will display the banner (below) on all bitcoin.org content pages
+    active: true
+    ## Banner displayed if 'active: true'.  Can use HTML formatting
+    banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.8.0. Click here for more information."
+    ---
+
+    {% comment %}
+    First paragraph should indicate whose bitcoins are safe, to avoid
+    starting a panic.
+    {% comment %}
+
+    Your bitcoins are safe if you received them in transactions
+    confirmed before 2015-07-06 00:00 UTC.
+
+    {% comment %}
+    Second paragraph should summarize the problem, and subsequent
+    text should indicate what people should do immediately.
+    Consider: users (by wallet type), merchants, and miners.
+    {% comment %}
+
+    However, there has been a problem with a planned upgrade. For
+    bitcoins received later than the time above, confirmation scores are
+    significantly less reliable then they usually are for users of
+    certain software:
+
+    - Lightweight (SPV) wallet users should wait an additional 30
+      confirmations more than you would normally wait. Electrum users,
+      please see this note.
+    ```
+
+- Edit the file.  It is written in [Markdown format][].
+
+- Commit it.
+
+    - **Note:** the commit must be signed by one of the people in the
+      [Who to Contact](#who-to-contact) section for site
+      auto-building to work.
+
+- Push the commit to the master branch. Rebuilding the site occurs
+  automatically and takes 7 to 15 minutes.
+
+    - **Note:** do not push additional commits until the alert is
+      displayed on the live site.  The site build aborts and starts over
+      when new commits are found.
+
+- Give the `shorturl` URL (`bitcoin.org/<shorturl>`) to the P2P alert message
+  key holders to use in any alert messages they send.
+
+- Proceed to the next section to improve the alert.
+
+#### Detailed Alert
+
+In addition to providing more information about how users should respond
+to the situation, you can enhance the alert in several ways described
+below.
+
+The following fields may be defined in the the alert YAML header:
+
+```yaml
 ---
+## (Required; HTML text) Title displayed on alert page
 title: "11/12 March 2013 Chain Fork"
-alias: "chainfork"
+## (Optional; display ASCII only) Short URL for use in P2P network alerts: https://bitcoin.org/<shorturl>
+shorturl: "chainfork"
+## (Optional; default=false) Active alerts will display the banner (below) on all bitcoin.org content pages
 active: true
+## (Optional; HTML text) Banner displayed if 'active: true'.  Can use HTML formatting
 banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.8.0. Click here for more information."
+## (Optional; default=alert) CSS class to set banner color
+##   alert = red  |  warning = orange  |  success = green  | info = blue
+bannerclass: alert
 ---
+```
 
-<p>
-A chain fork is happening. Please stop mining on bitcoin version 0.8.0. Your bitcoins are safe but it is recommended that you postpone your Bitcoin transactions for the next hours.
-</p>
-<p>
-More information will follow.
-</p>
+The time of the last update should be placed on the page somewhere. UTC
+should be used for all dates, and RFC 2822 format ( date -uR ) is
+recommended for long dates. For example, place the date in the footer of
+the document:
+
+```html
 <div style="text-align:right">
   <i>This notice last updated: Thu, 16 May 2013 01:37:00 UTC</i>
 </div>
-
 ```
-* `SHORTTITLE` is used to construct the URL.
-* `title: ...` will be used as the title in the layout.
-* `alias: ...` (optional) a short alias for Bitcoin Core alerts. Ex. "dos" will produce /dos.html
-* `active: ...` (true or false) define if the alert should appear as ongoing in the network status page.
-* `banner: ...` (optional) a short text that will be displayed in an alert banner and link to the alert page.
-* `bannerclass: ...` (optional) a CSS class that sets the color of the banner. Possible values: alert (default red), warning (orange), success (green), info (blue).
-* `last updated: ...` should be kept up to date and be in RFC 2822 format ( date -uR ).
+
+You may also want to create a page on the Wiki to allow anyone to
+provide additional information.  If you do so, link to it from the
+alert.
+
+#### Clearing An Alert
+
+To stop advertising an alert on every Bitcoin.org page, change the YAML
+header field `active` to *false*:
+
+```yaml
+## (Optional; default=false) Active alerts will display the banner (below) on all bitcoin.org content pages
+active: false
+```
+
+Alternatively, for a few days you can change the message and set the
+CSS `bannerclass` to *success* to indicate the problem has been resolved.
+
+```yaml
+## (Optional; HTML text) Banner displayed if 'active: true'.  Can use HTML formatting
+banner: "<b>Chain fork</b> - situation resolved"
+## (Optional; default=alert) CSS class to set banner color
+##   alert = red  |  warning = orange  |  success = green  | info = blue
+bannerclass: success
+```
+
+[markdown format]: https://help.github.com/articles/markdown-basics/
 
 ## Wallets
 
@@ -586,6 +700,7 @@ Basic requirements:
 - SSL certificate passes [Qualys SSL Labs SSL test](https://www.ssllabs.com/ssltest/)
 - Website serving executable code or requiring authentication uses HSTS with a max-age of at least 180 days
 - The identity of CEOs and/or developers is public
+- Avoid address reuse by using a new change address for each transaction
 - If private keys or encryption keys are stored online:
   - Refuses weak passwords (short passwords and/or common passwords) used to secure access to any funds, or provides an aggressive account lock-out feature in response to failed login attempts along with a strict account recovery process.
 - If user has no access over its private keys:
@@ -611,7 +726,6 @@ Basic requirements:
 Optional criterias (some could become requirements):
 
 - Received independent security audit(s)
-- Avoid address reuse by using a new change address for each transaction
 - Avoid address reuse by displaying a new receiving address for each transaction in the wallet UI
 - Does not show "received from" Bitcoin addresses in the UI
 - Uses deterministic ECDSA nonces (RFC 6979)
