@@ -8,6 +8,11 @@ http://opensource.org/licenses/MIT.
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
 {% capture metadescription %}{% translate metadescription %}{% endcapture %}{% if metadescription != '' %}<meta name="description" content="{{ metadescription }}">{% endif %}
+
+{% comment %}<!-- load Font Awesome but hide it if JS is disabled -->{% endcomment %}
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<noscript><style>.fa { display: none !important; }</style></noscript>
+
 {% lesscss main.less %}
 <!--[if lt IE 8]>{% lesscss ie.css %}<script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]>{% lesscss ie8.less %}<![endif]-->
