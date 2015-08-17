@@ -118,7 +118,9 @@ The `getnetworkinfo` RPC {{summary_getNetworkInfo}}
 - n: "→ → → → →<br>`score`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The self-assigned score this node gives to this connection; higher scores means the node thinks this connection is better <!-- SOMEDAY: figure out scores -->"
+  d: >
+    The number of incoming connections during the uptime of this node
+    that have used this address in their `version` message
 
 {% enditemplate %}
 
