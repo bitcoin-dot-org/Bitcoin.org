@@ -20,10 +20,12 @@ id: community
     {% if page.lang == 'ro' %}<p><a href="http://forum.bitcoin.ro/">Forumul comunitatii Bitcoin Romania</a></p>{% endif %}
     {% if page.lang == 'fr' %}<p><a href="http://www.cryptofr.com">Forum CryptoFR</a></p>{% endif %}
     <p>{% translate bitcointalk %}</p>
+    {% if page.lang == 'fr' %}<p><a href="https://www.reddit.com/r/BitcoinFrance/">Communauté Bitcoin sur Reddit</a></p>{% endif %}
     <p><a href="http://reddit.com/r/Bitcoin/">{% translate reddit %}</a></p>
     <p><a href="https://bitcoin.stackexchange.com/">{% translate stackexchange %}</a></p>
   </div><div>
     <h2 id="social"><img src="/img/icons/ico_network.svg" class="titleicon" alt="Icon">{% translate social %}</h2>
+    {% if page.lang == 'fr' %}<p><a href="https://www.facebook.com/groups/BitcoinFrance">Groupe Bitcoin France</a></p>{% endif %}
     {% if page.lang == 'ru' %}<p><a href="https://vk.com/bitcoin">Страница на ВКонтакте</a></p>{% endif %}
     <p>{% translate linkgoogle %}</p>
     <p><a href="https://twitter.com/search?q=bitcoin">{% translate linktwitter %}</a></p>
@@ -47,6 +49,7 @@ id: community
     <p>#bitcoin-mining <small>{% translate chanmining %}</small></p>
     {% if page.lang == 'fr' %}
     <p>#bitcoin-fr <small>(Le Bitcoin en général, français)</small></p>
+    <p>#cryptofr <small>(Bitcoin et crypto-monnaies, français)</small></p>
     {% endif %}
     {% if page.lang == 'es' %}
     <p>#bitcoin-ar <small>(Comunidad Bitcoin Argentina)</small></p>
