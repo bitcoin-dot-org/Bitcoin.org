@@ -3,7 +3,7 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<!-- Terms; must have tooltip description in "quotes"; alphabetical order -->
+{% comment %}<!-- Terms; must have tooltip description in "quotes"; alphabetical order -->{% endcomment %}
 [bitcoin URI]: /en/developer-guide#term-bitcoin-uri "A URI which allows receivers to encode payment details so spenders don't have to manually enter addresses and other details"
 [certificate chain]: /en/developer-examples#term-certificate-chain "A chain of certificates connecting a individual's leaf certificate to the certificate authority's root certificate"
 [coinbase block height]: /en/developer-reference#term-coinbase-block-height "The current block's height encoded into the first bytes of the coinbase field"
@@ -65,7 +65,7 @@ http://opensource.org/licenses/MIT.
 [verified payments]: /en/developer-guide#verifying-payment "Payments which the receiver believes won't be double spent"
 [wallet support]: /en/developer-reference#term-wallet-support "A Bitcoin Core ./configure option that enables (default) or disables the wallet"
 
-<!-- RPCs; alphabetical order -->
+{% comment %}<!-- RPCs; alphabetical order -->{% endcomment %}
 [rpc addmultisigaddress]: /en/developer-reference#addmultisigaddress
 [rpc addnode]: /en/developer-reference#addnode
 [rpc backupwallet]: /en/developer-reference#backupwallet
@@ -149,12 +149,12 @@ http://opensource.org/licenses/MIT.
 [rpc walletpassphrase]: /en/developer-reference#walletpassphrase
 [rpc walletpassphrasechange]: /en/developer-reference#walletpassphrasechange
 
-<!-- REST requests; alphabetical order -->
+{% comment %}<!-- REST requests; alphabetical order -->{% endcomment %}
 [rest get block]: /en/developer-reference#get-block
 [rest get block-notxdetails]: /en/developer-reference#get-blocknotxdetails
 [rest get tx]: /en/developer-reference#get-tx
 
-<!-- P2P protocol messages; alphabetical order -->
+{% comment %}<!-- P2P protocol messages; alphabetical order -->{% endcomment %}
 [addr message]: /en/developer-reference#addr "The P2P network message which relays IP addresses and port numbers of active nodes to other nodes and clients, allowing decentralized peer discovery."
 [alert message]: /en/developer-reference#alert "The P2P network message which sends alerts in case of major software problems."
 [block message]: /en/developer-reference#block "The P2P network message which sends a serialized block"
@@ -176,7 +176,7 @@ http://opensource.org/licenses/MIT.
 [tx message]: /en/developer-reference#tx "A P2P protocol message which sends a single serialized transaction"
 [verack message]: /en/developer-reference#verack "A P2P network message sent in reply to a version message to confirm a connection has been established"
 [version message]: /en/developer-reference#version "A P2P network message sent at the begining of a connection to allow protocol version negotiation"
-<!-- Other internal site links; alphabetical order -->
+{% comment %}<!-- Other internal site links; alphabetical order -->{% endcomment %}
 [Bitcoin Core 0.6.0]: /en/release/v0.6.0
 [Bitcoin Core 0.6.1]: /en/release/v0.6.1
 [Bitcoin Core 0.7.0]: /en/release/v0.7.0
@@ -185,7 +185,7 @@ http://opensource.org/licenses/MIT.
 [Bitcoin Core 0.9.1]: /en/release/v0.9.1
 [Bitcoin Core 0.9.2]: /en/release/v0.9.2
 [Bitcoin Core 0.9.3]: /en/release/v0.9.3
-<!-- TODOv0.10 update this to point to 0.10 release notes when released -->
+{% comment %}<!-- TODOv0.10 update this to point to 0.10 release notes when released -->{% endcomment %}
 [Bitcoin Core 0.10.0]: https://github.com/bitcoin/bitcoin/tree/0.10
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [bitcoind initial setup]: /en/developer-examples
@@ -230,8 +230,8 @@ http://opensource.org/licenses/MIT.
 [Verification subsection]: /en/developer-guide#verifying-payment
 [X509Certificates]: /en/developer-examples#term-x509certificates
 
-<!-- Official reference documents (BIPs should not use zero padding:
-     BIP32 not BIP0032); alphabetical order -->
+{% comment %}<!-- Official reference documents (BIPs should not use zero padding:
+     BIP32 not BIP0032); alphabetical order -->{% endcomment %}
 [BIP14]: https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki
 [BIP16]: https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki
 [BIP21]: https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki
@@ -253,10 +253,9 @@ http://opensource.org/licenses/MIT.
 [BIP72]: https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki
 [CVE-2012-2459]: https://en.bitcoin.it/wiki/CVEs#CVE-2012-2459
 [RFC5737]: http://tools.ietf.org/html/rfc5737
-<!-- [secp256k1]: http://www.secg.org/index.php?action=secg,docs_secg -->
-[secp256k1]: http://perso.univ-rennes1.fr/sylvain.duquesne/master/standards/sec2_final.pdf
+[secp256k1]: http://www.secg.org/sec2-v2.pdf
 
-<!-- Other external site links; alphabetical order -->
+{% comment %}<!-- Other external site links; alphabetical order -->{% endcomment %}
 [BFGMiner]: https://github.com/luke-jr/bfgminer
 [Bitcoin Core]: https://bitcoin.org/en/download
 [Bitcoin Core 0.1.6]: https://github.com/bitcoin/bitcoin/commit/cc0b4c3b62367a2aebe5fc1f4d0ed4b97e9c2ac9
@@ -321,9 +320,9 @@ http://opensource.org/licenses/MIT.
 [wiki script]: https://en.bitcoin.it/wiki/Script
 [x509]: https://en.wikipedia.org/wiki/X.509
 
-<!-- Direct links to code; link to a specific commit to prevent code
+{% comment %}<!-- Direct links to code; link to a specific commit to prevent code
 changes from moving the referenced object, but also update links
-periodically to point to recent code. Last update: 2014-11-12 --> 
+periodically to point to recent code. Last update: 2014-11-12 --> {% endcomment %}
 [core bloom.cpp hash]: https://github.com/bitcoin/bitcoin/blob/cbf28c6619fe348a258dfd7d08bdbd2392d07511/src/bloom.cpp#L46
 [MAX_SIZE]: https://github.com/bitcoin/bitcoin/blob/60abd463ac2eaa8bc1d616d8c07880dc53d97211/src/serialize.h#L23
 [rpcprotocol.h]: https://github.com/bitcoin/bitcoin/blob/f914f1a746d7f91951c1da262a4a749dd3ebfa71/src/rpcprotocol.h
