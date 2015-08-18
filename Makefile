@@ -63,7 +63,8 @@ post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-fo
     check-for-broken-kramdown-tables check-for-duplicate-header-ids \
     check-for-headers-containing-auto-link check-for-missing-subhead-links \
     check-for-subheading-anchors \
-    check-jshint
+    check-jshint \
+    check-for-javascript-in-svgs
 
 ## All pre-build tests, including those which might take multiple minutes
 pre-build-tests: pre-build-tests-fast
@@ -268,3 +269,7 @@ check-for-subheading-anchors:
 	$S grep -r -i --include \*.html -L 'Note: this file exempt from check-for-subheading-anchors check' _site/ \
 	  | xargs grep '<h[23456]' \
 	  | grep -v '<h[23456][^>]* id=' | eval $(ERROR_ON_OUTPUT)
+
+check-for-javascript-in-svgs:
+## Security check: don't allow any SVGs that contain Javascript.
+	$S find _site/ -name '*.svg' | xargs grep '<script' | eval $(ERROR_ON_OUTPUT)
