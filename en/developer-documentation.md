@@ -9,6 +9,10 @@ title: "Developer Documentation - Bitcoin"
 breadcrumbs:
   - bitcoin
   - Developer Documentation
+end_of_page: |
+  <script src="/js/jquery/jquery-1.11.2.min.js"></script>
+  <script src="/js/jquery/jquery-ui.min.js"></script>
+  <script src="/js/devsearch.js"></script>
 ---
 <link rel="stylesheet" href="/css/jquery-ui.min.css">
 
@@ -96,6 +100,3 @@ breadcrumbs:
   <p><a href="https://bitcoinj.github.io/#documentation">Bitcoinj Developer Documentation</a> - bitcoinj.org</p>
   <p><a href="https://en.bitcoin.it/wiki/Category:Technical">Technical Pages</a> - Wiki</p>
 </div></div>
-<script src="/js/jquery/jquery-1.11.2.min.js"></script>
-<script src="/js/jquery/jquery-ui.min.js"></script>
-<script src="/js/devsearch.js"></script>

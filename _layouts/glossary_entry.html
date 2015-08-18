@@ -9,6 +9,10 @@ breadcrumbs:
   - dev docs
   - glossary
   - GLOSSARY_ENTRY_TITLE
+end_of_page: |
+  <script src="/js/jquery/jquery-1.11.2.min.js"></script>
+  <script src="/js/jquery/jquery-ui.min.js"></script>
+  <script src="/js/devsearch.js"></script>
 ---
 <link rel="stylesheet" href="/css/jquery-ui.min.css">
 
@@ -64,7 +68,3 @@ breadcrumbs:
 {{site.glossary_links}}
 {% endcapture %}
 {{ markdown_content | markdownify }}{% comment %}Why is this hack necessary?  I don't get why this template can't be natively rendered as markdown like the releases template.{% endcomment %}
-
-<script src="/js/jquery/jquery-1.11.2.min.js"></script>
-<script src="/js/jquery/jquery-ui.min.js"></script>
-<script src="/js/devsearch.js"></script>

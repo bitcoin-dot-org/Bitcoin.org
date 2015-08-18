@@ -10,6 +10,11 @@ breadcrumbs:
   - bitcoin
   - dev docs
   - Examples
+end_of_page: |
+  <script src="/js/jquery/jquery-1.11.2.min.js"></script>
+  <script src="/js/jquery/jquery-ui.min.js"></script>
+  <script src="/js/devsearch.js"></script>
+  <script>updateToc();</script>
 ---
 <link rel="stylesheet" href="/css/jquery-ui.min.css">
 
@@ -47,9 +52,3 @@ breadcrumbs:
 {{site.glossary_links}}
 
 </div>
-
-<script>updateToc();</script>
-<script>addAnchorLinks();</script>
-<script src="/js/jquery/jquery-1.11.2.min.js"></script>
-<script src="/js/jquery/jquery-ui.min.js"></script>
-<script src="/js/devsearch.js"></script>

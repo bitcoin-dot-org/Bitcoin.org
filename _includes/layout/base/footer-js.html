@@ -7,3 +7,11 @@ http://opensource.org/licenses/MIT.
   fallbackSVG();
   addAnchorLinks();
 </script>
+
+{% comment %}
+<!-- A hook to allow pages to add JS at the very end of
+the page so it runs after all content and CSS has loaded -->
+{% endcomment %}
+{% if page.end_of_page %}
+  {{page.end_of_page}}
+{% endif %}
