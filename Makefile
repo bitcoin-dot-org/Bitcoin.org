@@ -55,7 +55,8 @@ endif
 pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignments \
     check-for-missing-rpc-summaries \
     check-for-missing-copyright-licenses \
-    check-bundle
+    check-bundle \
+    check-for-english-in-en-dir
 
 ## Post-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
 post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
@@ -273,3 +274,7 @@ check-for-subheading-anchors:
 check-for-javascript-in-svgs:
 ## Security check: don't allow any SVGs that contain Javascript.
 	$S find _site/ -name '*.svg' | xargs grep '<script' | eval $(ERROR_ON_OUTPUT)
+
+check-for-english-in-en-dir:
+## All pages must have page.lang set to work properly with the site templates
+	$S grep -rl -- '---' en/ | xargs grep -L '^[^#]*lang: en' | eval $(ERROR_ON_OUTPUT)
