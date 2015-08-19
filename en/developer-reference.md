@@ -151,6 +151,8 @@ untrusted source.
 
 {% include ref/bitcoin-core/rpcs/rpcs/gettxout.md %}
 
+{% include ref/bitcoin-core/rpcs/rpcs/gettxoutproof.md %}
+
 {% include ref/bitcoin-core/rpcs/rpcs/gettxoutsetinfo.md %}
 
 {% include ref/bitcoin-core/rpcs/rpcs/getunconfirmedbalance.md %}
@@ -220,6 +222,8 @@ untrusted source.
 {% include ref/bitcoin-core/rpcs/rpcs/verifychain.md %}
 
 {% include ref/bitcoin-core/rpcs/rpcs/verifymessage.md %}
+
+{% include ref/bitcoin-core/rpcs/rpcs/verifytxoutproof.md %}
 
 {% include ref/bitcoin-core/rpcs/rpcs/walletlock.md %}
 
