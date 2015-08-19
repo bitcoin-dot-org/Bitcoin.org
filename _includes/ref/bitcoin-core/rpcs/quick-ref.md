@@ -54,6 +54,7 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 * [GetMemPoolInfo][rpc getmempoolinfo]: {{summary_getMemPoolInfo}} {{NEW0_10_0}}
 * [GetRawMemPool][rpc getrawmempool]: {{summary_getRawMemPool}}
 * [GetTxOut][rpc gettxout]: {{summary_getTxOut}}
+* [GetTxOutProof][rpc gettxoutproof]: {{summary_getTxOutProof}}
 * [GetTxOutSetInfo][rpc gettxoutsetinfo]: {{summary_getTxOutSetInfo}}
 * [VerifyChain][rpc verifychain]: {{summary_verifyChain}}
 
