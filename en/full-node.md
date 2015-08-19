@@ -945,15 +945,94 @@ automatically started minimized in the task bar.
 {{installFinished}}
 
 
-#### Bitcoin Core Daemon {#win7-daemon}
+##### Bitcoin Core Daemon {#win7-daemon}
 {:.no_toc}
 
-If you can provide instructions and screenshots for running the latest
-version of Bitcoin Core daemon on Windows 7, please [open an
-issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) and we'll tell
-you what we need.  The instructions for [Windows
-8.x](#win8-daemon) may already provide all the necessary information.
+To start Bitcoin Core daemon, first open a command window: press the
+Windows key (`⊞ Win`) and type "cmd". Choose the program named "cmd.exe"
 
+![Running cmd](/img/full-node/en-win7-running-cmd.png)
+
+If you installed the Bitcoin Core into the default directory, type the following at the command prompt :
+
+    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+
+It will display an error message similar to the one below :
+
+    Error: To use the bitcoind or the "-server" option to bitcoin-qt,
+    you must set a rpcpassword in the configuration file:
+    C:\Users\Example\AppData\Roaming\Bitcoin\bitcoin.conf
+    It is recommended you use the following random password:
+    rpcuser=bitcoinrpc
+    rpcpassword=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    (you do not need to remember this password)
+    The username and password MUST NOT be the same.
+    If the file does not exist, create it with owner-readable-only file permissions.
+
+    It is also recommended to set alertnotify so you are notified of problems;
+    for example: alertnotify=echo %s | mail -s "Bitcoin Alert" admin@foo.com
+
+Pay attention to these particular lines:
+
+    C:\Users\<YOUR USER NAME>\AppData\Roaming\Bitcoin\bitcoin.conf
+    [...]
+    rpcuser=bitcoinrpc
+    rpcpassword=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+The first line will actually have your username. The later two lines will include a randomly-generated password that you will need to copy and paste. (Do not use XXXXXXX.)
+
+Leave the command prompt window open and start File Explorer. In File Explorer, open the directory indicated in the message (`C:\Users\Example\AppData\Roaming\Bitcoin\bitcoin.conf`), right-click on the File Explorer window and choose New → Text file. Name the file `bitcoin.conf` and then right-click on it and choose to open it in Notepad or your preferred text editor.
+
+In the command prompt, copy the `rpcuser` and `rpcpassword` lines. Paste them into the text editor and then save and close the file. By default, you shouldn’t need to change the file permissions.
+
+    rpcuser=bitcoinrpc
+    rpcpassword=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Return to the command prompt and press the Up arrow key to get the previous command (ending in `bitcoind -daemon`) and run it again. Bitcoin Core daemon should start.
+
+You can now try using Bitcoin Cli Utility.
+
+To interact with Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin command line interface). If you installed Bitcoin Core into the default location, type the following at the command prompt to see whether it works:
+
+    C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
+
+{{start_up_and_recommended_commands}}
+
+For example, to safely stop your node, run the following command:
+
+    C:\Program Files\Bitcoin\daemon\bitcoin-cli stop
+
+{{complete_list_of_commands_and_ibd}}
+
+
+When Bitcoin Core daemon first starts, it will begin to download the block chain. This step will take at least several hours, and it may take a day or more on a slow Internet connection or with a slow computer. During the download, Bitcoin Core will use a significant part of your connection bandwidth. You can stop Bitcoin Core at any time using the stop command; it will resume from the point where it stopped the next time you start it.
+
+<div class="box" markdown="1">
+*Optional: Start Your Node At Boot*
+
+Starting your node automatically each time your computer boots makes it easy for you to contribute to the network. The easiest way to do this is to start Bitcoin Core daemon when you login to your computer.
+
+Start File Explorer and go to,
+
+    C:\Users\Example\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\StartUp
+
+You can also access this folder by executing the following command after reaching the `Execute...` prompt :
+
+    shell:startup
+
+Right-click on the File Explorer window and choose New → Text file. Name the file `start_bitcoind.bat`. Then right-click on it and choose Open in Notepad (or whatever editor you prefer). Copy and paste the following line into the file.
+
+    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+
+(If you installed Bitcoin Core in a non-default directory, use that directory path instead.)
+
+Save the file. The next time you login to your computer, Bitcoin Core daemon will be automatically started.
+
+{{windows_shutdown_warning}}
+</div>
+
+{{installFinished}}
 
 
 

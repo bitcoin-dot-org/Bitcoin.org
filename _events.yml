@@ -1,91 +1,3 @@
-- date: 2015-06-24
-  title: "London Blockchain Conference"
-  venue: "The London Escalator"
-  address: "69-89 Mile End Rd, E1 4TT"
-  city: "London"
-  country: "United Kingdom"
-  link: "http://blockchainlondon.com/"
-
-- date: 2015-06-26
-  title: "HVA Blockchain blockstrap course"
-  venue: "Amsterdam University of Applied Sciences"
-  address: "Duivendrechtsekade 36-38"
-  city: "Amsterdam"
-  country: "Netherlands"
-  link: "https://bitcoinembassy.nl/hva-blockchain-blockstrap-course-amsterdam-2015-06-26/"
-
-- date: 2015-06-29
-  title: "Blockchain Payments"
-  venue: "Deloitte Amsterdam"
-  address: "Gustav Mahlerlaan 2970"
-  city: "Amsterdam"
-  country: "The Netherlands"
-  link: "https://www.about-payments.com/newsroom/events/blockchain-payments-2015-29-june-2015"
-
-- date: 2015-07-01
-  title: "Bitcoin Wednesday 2-Year Anniversary Conference"
-  venue: "VondelCS: The media, culture and broadcasting center in Amsterdam for national broadcaster AVROTROS."
-  address: "Vondelpark 3"
-  city: "Amsterdam"
-  country: "The Netherlands"
-  link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-25/"
-
-- date: 2015-07-02
-  title: "Blockchain Incredible Party"
-  venue: "Hub Odessa"
-  address: "Grecheskaya str. 1a"
-  city: "Odessa"
-  country: "Ukraine"
-  link: "http://bip001.com"
-
-- date: 2015-07-06
-  title: "The New Context"
-  venue: "Toranomon Hills Forum"
-  address: "23 Toranomon 1 chome, Minato-ku, 105-6305"
-  city: "Tokyo"
-  country: "Japan"
-  link: "http://ncc.garage.co.jp/en/"
-
-- date: 2015-07-08
-  title: "WIRED Money"
-  venue: "The British Museum"
-  address: "Great Russell Street, WC1B 3DG"
-  city: "London"
-  country: "United Kingdom"
-  link: "http://www.wiredevent.co.uk/wired-money-2015"
-
-- date: 2015-07-10
-  title: "Inside Bitcoins Chicago"
-  venue: "Navy Pier"
-  address: "600 East Grand Ave, Chicago, IL 60611"
-  city: "Chicago"
-  country: "United States"
-  link: "http://insidebitcoins.com/chicago/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibchicago"
-
-- date: 2015-07-18
-  title: "III Brazilian Bitcoin Conference"
-  venue: "Centro de Inovação ACATE Primavera"
-  address: "Rodovia SC 401, Km 4 | Bairro Saco Grande"
-  city: "Florianopolis"
-  country: "Brazil"
-  link: "http://www.bitconf.com.br"
-
-- date: 2015-07-18
-  title: "avalBit: Pay Paella with bitcoin "
-  venue: "Polígono Industrial Plá dels Olivars"
-  address: "Av espinoca"
-  city: "Valencia"
-  country: "Spain"
-  link: "http://avalbit.org/actividades/evento-pagar-paella-birras-y-bitcoins/"
-
-- date: 2015-07-28
-  title: "Digital Currencies + The Blockchain"
-  venue: "Convene"
-  address: "730 Third Avenue, 10017"
-  city: "New York"
-  country: "United States"
-  link: "http://www.americanbanker.com/conferences/digitalcurrencies/"
-
 - date: 2015-08-03
   title: "Keynote"
   venue: "Park Plaza Hotel"
@@ -96,8 +8,8 @@
 
 - date: 2015-08-05
   title: "Bitcoin Wednesday #26"
-  venue: "VondelCS: The media, culture and broadcasting center in Amsterdam for national broadcaster AVROTROS."
-  address: "Vondelpark 3"
+  venue: "Rockstart Ballroom"
+  address: "Rockstart Accelerator, Herengracht 182"
   city: "Amsterdam"
   country: "The Netherlands"
   link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-26/"
@@ -117,6 +29,14 @@
   city: "Charlotte"
   country: "United States"
   link: "http://cryptolina.com/"
+
+- date: 2015-09-02
+  title: "Bitcoin Wednesday Conference"
+  venue: "De Balie"
+  address: "Leidseplein, Kleine-Gartmanplantsoen 10"
+  city: "Amsterdam"
+  country: "The Netherlands"
+  link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-27/"
 
 - date: 2015-09-10
   title: "Consensus 2015"
@@ -150,6 +70,14 @@
   country: "Ukraine"
   link: "http://bitcoinconf.com.ua/en"
 
+- date: 2015-10-07
+  title: "Bitcoin Wednesday Conference"
+  venue: "De Balie"
+  address: "Leidseplein, Kleine-Gartmanplantsoen 10"
+  city: "Amsterdam"
+  country: "The Netherlands"
+  link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-28/"
+
 - date: 2015-10-08
   title: "Alt Convention"
   venue: "Hilton Batumi, Radisson Blu Batumi, Sheraton Batumi, Divan Suites, Leogrand"
@@ -174,6 +102,14 @@
   country: "United States"
   link: "http://www.imtconferences.com/mtbit/"
 
+- date: 2015-12-10
+  title: "Inside Bitcoins Seoul"
+  venue: "Korea International Exhibition Center (KINTEX)"
+  address: "2600, Daehwa-dong, Ilsanseo-gu, Goyang-si, Gyeonggi-do"
+  city: "Seoul"
+  country: "South Korea"
+  link: "http://insidebitcoins.com/seoul/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibseoul"
+
 - date: 2015-12-14
   title: "Inside Bitcoins San Diego"
   venue: "San Diego Convention Center"
@@ -189,3 +125,11 @@
   city: "Copenhagen"
   country: "Denmark"
   link: "https://www.money2020europe.com/"
+
+- date: 2016-04-10
+  title: "Inside Bitcoins New York"
+  venue: "Javits Convention Center"
+  address: "655 W 34th St"
+  city: "New York"
+  country: "United States"
+  link: "http://insidebitcoins.com/new-york/2016?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibny"

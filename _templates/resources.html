@@ -38,6 +38,9 @@ id: resources
     <p>{% translate linkcointelegraph %}<p>
     <p><a href="http://www.coindesk.com/">CoinDesk</a></p>
     <p><a href="http://bitcoinmagazine.com/">Bitcoin Magazine</a></p>
+    {% if page.lang == 'ru' %}<p><a href="http://coinfox.ru/">CoinFOX</a></p>{% endif %}
+    {% if page.lang == 'en' %}<p><a href="http://coinfox.info/">CoinFOX</a></p>{% endif %}
+    {% if page.lang == 'es' %}<p><a href="http://coinfox.es/">CoinFOX</a></p>{% endif %}
     {% if page.lang == 'ru' %}<p><a href="https://bitcointalk.org/index.php?board=128.0">Биткойн Форум / Новости</a></p>{% else %}<p><a href="https://bitcointalk.org/index.php?board=77.0">BitcoinTalk press links</a></p>{% endif %}
   </div><div>
     <h2 id="charts"><img src="/img/icons/ico_market.svg" class="titleicon" alt="Icon">{% translate charts %}</h2>
