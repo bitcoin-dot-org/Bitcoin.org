@@ -265,6 +265,8 @@ CVE-2012-2459:
 '`gettransaction` RPC': rpc gettransaction
 '`gettxout`': rpc gettxout
 '`gettxout` RPC': rpc gettxout
+'`gettxoutproof`': rpc gettxoutproof
+'`gettxoutproof` RPC': rpc gettxoutproof
 '`gettxoutsetinfo`': rpc gettxoutsetinfo
 '`gettxoutsetinfo` RPC': rpc gettxoutsetinfo
 '`getunconfirmedbalance`': rpc getunconfirmedbalance
@@ -333,6 +335,8 @@ CVE-2012-2459:
 '`verifychain` RPC': rpc verifychain
 '`verifymessage`': rpc verifymessage
 '`verifymessage` RPC': rpc verifymessage
+'`verifytxoutproof`': rpc verifytxoutproof
+'`verifytxoutproof` RPC': rpc verifytxoutproof
 '`walletlock`': rpc walletlock
 '`walletlock` RPC': rpc walletlock
 '`walletpassphrase`': rpc walletpassphrase
