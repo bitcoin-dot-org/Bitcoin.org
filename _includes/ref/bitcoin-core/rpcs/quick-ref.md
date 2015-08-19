@@ -57,7 +57,8 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 * [GetTxOutProof][rpc gettxoutproof]: {{summary_getTxOutProof}}
 * [GetTxOutSetInfo][rpc gettxoutsetinfo]: {{summary_getTxOutSetInfo}}
 * [VerifyChain][rpc verifychain]: {{summary_verifyChain}}
-
+* [VerifyTxOutProof][rpc verifytxoutproof]: {{summary_verifyTxOutProof}}
+* 
 {% endautocrossref %}
 
 #### Control RPCs
