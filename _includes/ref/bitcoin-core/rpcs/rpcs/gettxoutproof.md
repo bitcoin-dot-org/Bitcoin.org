@@ -58,7 +58,7 @@ specify the block in which the transaction is included in manually (by blockhash
 Get the hex-encoded proof that "txid" was included in block 370501:
 
 {% highlight bash %}
-bitcoin-cli getxoutproof \
+bitcoin-cli gettxoutproof \
   '''
     [
       "f20e44c818ec332d95119507fbe36f1b8b735e2c387db62adbe28e50f7904683"
