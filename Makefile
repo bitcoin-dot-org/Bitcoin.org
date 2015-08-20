@@ -119,7 +119,7 @@ check-for-build-errors:
 ## Old browser support requires each SVG image also be available as a
 ## PNG with the same base name
 ensure-each-svg-has-a-png:
-	$S find $(SITEDIR)/img -name '*.svg' | while read file \
+	$S find $(SITEDIR)/img -name '*.svg' -type f | while read file \
 	    ; do test -f $${file%.svg}.png || echo "$$file missing corresponding PNG" \
 	; done | eval $(ERROR_ON_OUTPUT)
 
@@ -144,12 +144,12 @@ check-for-missing-anchors:
 check-for-broken-markdown-reference-links:
 ## Report Markdown reference-style links which weren't converted to HTML
 ## links in the output, indicating there's no reference definition
-	$S find $(SITEDIR) -name '*.html' | xargs grep '\]\[' | eval $(ERROR_ON_OUTPUT)
+	$S find $(SITEDIR) -name '*.html' -type f | xargs grep '\]\[' | eval $(ERROR_ON_OUTPUT)
 
 check-for-non-ascii-urls:
 ## Always check all translated urls don't contain non-ASCII
 ## characters or spaces.
-	$S find _translations -name '*.yml' | while read file \
+	$S find _translations -name '*.yml' -type f | while read file \
 	    ; do grep -H . $$file | sed -n -e '/url:/,$$p' \
 	    | grep -P ': +[a-z0-9\-]+: +.*([^\x00-\x7f]|[^a-z0-9\-"]).*$$' \
 	; done | eval $(ERROR_ON_OUTPUT)
@@ -190,7 +190,7 @@ check-for-wrong-filename-assignments:
 ## Make sure whenever we use {% assign filename="some-file" %} that the
 ## filename assignment matches the actual filename. This will, in
 ## particular, help catch mistakes when we move files
-	$S find . -name '*.md' \
+	$S find . -name '*.md' -type f \
 	   | xargs grep 'assign *filename' \
 	   | grep -v '^\./\(.*\):{.*filename=.\1"' \
 	   | eval $(ERROR_ON_OUTPUT)
@@ -273,8 +273,8 @@ check-for-subheading-anchors:
 
 check-for-javascript-in-svgs:
 ## Security check: don't allow any SVGs that contain Javascript.
-	$S find _site/ -name '*.svg' | xargs grep '<script' | eval $(ERROR_ON_OUTPUT)
+	$S find _site/ -name '*.svg' -type f | xargs grep '<script' | eval $(ERROR_ON_OUTPUT)
 
 check-for-english-in-en-dir:
 ## All pages must have page.lang set to work properly with the site templates
-	$S grep -rl -- '---' en/ | xargs grep -L '^[^#]*lang: en' | eval $(ERROR_ON_OUTPUT)
+	$S grep -rl -- '---' en/ | xargs grep -L '^ *lang: *en' | eval $(ERROR_ON_OUTPUT)
