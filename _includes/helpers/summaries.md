@@ -44,7 +44,7 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_getReceivedByAddress="returns the total amount received by the specified address in transactions with the specified number of confirmations. It does not count coinbase transactions." %}
 {% assign summary_getTransaction="gets detailed information about an in-wallet transaction." %}
 {% assign summary_getTxOut="returns details about a transaction output.  Only unspent transaction outputs (UTXOs) are guaranteed to be available." %}
-{% assign summary_getTxOutProof="returns a hex-encoded proof that "txid" was included in a block." %}
+{% assign summary_getTxOutProof="returns a hex-encoded proof that one or more specified transactions were included in a block." %}
 {% assign summary_getTxOutSetInfo="returns statistics about the confirmed unspent transaction output (UTXO) set. Note that this call may take some time and that it only counts outputs from confirmed transactions---it does not count outputs from the memory pool." %}
 {% assign summary_getUnconfirmedBalance="returns the wallet's total unconfirmed balance." %}
 {% assign summary_getWalletInfo="provides information about the wallet." %}
@@ -83,7 +83,7 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_validateAddress="returns information about the given Bitcoin address." %}
 {% assign summary_verifyChain="verifies each entry in the local block chain database." %}
 {% assign summary_verifyMessage="verifies a signed message." %}
-{% assign summary_verifyTxOutProof="Verifies that a proof points to a transaction in a block, returning the transaction it commits to and throwing an RPC error if the block is not in our best chain." %}
+{% assign summary_verifyTxOutProof="verifies that a proof points to one or more transactions in a block, returning the transactions the proof commits to and throwing an RPC error if the block is not in our best block chain." %}
 {% assign summary_walletLock="removes the wallet encryption key from memory, locking the wallet. After calling this method, you will need to call `walletpassphrase` again before being able to call any methods which require the wallet to be unlocked." %}
 {% assign summary_walletPassphrase="stores the wallet decryption key in memory for the indicated number of seconds. Issuing the `walletpassphrase` command while the wallet is already unlocked will set a new unlock time that overrides the old one." %}
 {% assign summary_walletPassphraseChange="changes the wallet passphrase from 'old passphrase' to 'new passphrase'." %}
