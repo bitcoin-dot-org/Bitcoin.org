@@ -36,7 +36,7 @@ specify the block in which the transaction is included in manually (by block hea
 *Parameter #2---the block to look for txids in*
 
 {% itemplate ntpd1 %}
-- n: "`block hash`"
+- n: "`Header hash`"
   t: "string"
   p: "Optional<br>(0 or 1)"
   d: "If specified, looks for txid in the block with this hash"
