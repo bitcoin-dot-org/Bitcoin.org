@@ -489,37 +489,28 @@ table td,table th{
 }
 .mainlist{
 	font-size:125%;
-	width:760px;
+	max-width:760px;
 	margin:30px auto;
 	display:table;
 }
 .mainlist>div{
 	display:table-cell;
-	min-width:240px;
+	width:240px;
+	min-width:200px;
+	text-align:center;
 }
 .mainlist>div>div{
 	display:inline-block;
 	line-height:1.5em;
-	text-align:left;
-}
-.mainlist>div:first-child{
-	text-align:left;
-}
-.mainlist>div:first-child+div{
-	text-align:center;
-}
-.mainlist>div:first-child+div+div{
-	text-align:right;
 }
 .mainlist>div>div>div{
 	display:inline-block;
 }
 .mainlist img{
+	display:block;
+	margin:10px auto;
 	vertical-align:top;
 	position:relative;
-	top:4px;
-	margin-right:10px;
-	float:left;
 	height:48px;
 	width:48px;
 }
@@ -2446,19 +2437,6 @@ h2 .rssicon{
 	.mainvideo img{
 		height:auto;
 	}
-	.mainlist,
-	.mainlist>div{
-		width:auto;
-		display:block;
-	}
-	.mainlist>div>div{
-		margin:10px;
-	}
-	.mainlist>div:first-child,
-	.mainlist>div:first-child+div,
-	.mainlist>div:first-child+div+div{
-		text-align:left;
-	}
 	.start>div{
 		position:static;
 	}
@@ -2709,5 +2687,17 @@ h2 .rssicon{
 	}
 	.detectmobile{
 		display:block;
+	}
+}
+
+
+@media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
+	.mainlist,
+	.mainlist>div{
+		width:auto;
+		display:block;
+	}
+	.mainlist>div{
+		margin:15px auto;
 	}
 }
