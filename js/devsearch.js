@@ -19,7 +19,7 @@ Nested loops below:
 
 {% endcomment %}
 
-"use strict"
+"use strict";
 
 var search_data = [
 {% for list in site.devsearches %}{% for item in list %}
@@ -29,8 +29,7 @@ var search_data = [
 label: "{{term[0]}}",
 uri: "{{term[1]}}",
 category: "{{category_name}}"
-}
-{% endfor %}{% unless forloop.last %},{% endunless %}{% endfor %}{% endif %}{% endfor %}{% unless forloop.last %},{% endunless %}{% endfor %}
+}{% endfor %}{% unless forloop.last %},{% endunless %}{% endfor %}{% endif %}{% endfor %}{% unless forloop.last %},{% endunless %}{% endfor %}
 ];
 
 
@@ -48,7 +47,7 @@ $.widget("custom.catcomplete", $.ui.autocomplete, {
       currentCategory = "";
     $.each(items, function(index, item) {
       var li;
-      if (item.category != currentCategory) {
+      if (item.category !== currentCategory) {
         ul.append("<li class='ui-autocomplete-category'>" + item.category + "</li>");
         currentCategory = item.category;
       }

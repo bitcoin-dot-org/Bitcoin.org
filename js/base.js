@@ -4,7 +4,7 @@
 // This file should be used only for javascript code
 // necessary for all pages to work properly.
 
-"use strict"
+"use strict";
 
 function addEvent(a, b, c) {
   // Attach event to a DOM node.
@@ -21,7 +21,7 @@ function removeEvent(a, b, c) {
 function cancelEvent(e) {
   // Cancel current event.
   // Ex. cancelEvent(event);
-  if (!e) var e = window.event;
+  e = e || window.event;
   (e.preventDefault) ? e.preventDefault(): e.returnValue = false;
 }
 
@@ -33,7 +33,7 @@ function getEvent(e, a) {
     case 'type':
       return e.type;
     case 'target':
-      return (e.target && e.target.nodeType == 3) ? e.target.parentNode : (e.target) ? e.target : e.srcElement;
+      return (e.target && e.target.nodeType === 3) ? e.target.parentNode : (e.target) ? e.target : e.srcElement;
   }
 }
 
@@ -50,7 +50,7 @@ function addClass(node, data) {
   // Add class to node.
   var cl = node.className.split(' ');
   for (var i = 0, n = cl.length; i < n; i++) {
-    if (cl[i] == data) return;
+    if (cl[i] === data) return;
   }
   cl.push(data);
   node.className = cl.join(' ');
@@ -61,7 +61,7 @@ function removeClass(node, data) {
   var ocl = node.className.split(' ');
   var ncl = [];
   for (var i = 0, n = ocl.length; i < n; i++) {
-    if (ocl[i] != data) ncl.push(ocl[i]);
+    if (ocl[i] !== data) ncl.push(ocl[i]);
   }
   node.className = ncl.join(' ');
 }
@@ -84,7 +84,7 @@ function fallbackSVG() {
   // Replace all images extensions from .svg to .png if browser doesn't support SVG files.
   if (supportsSVG()) return;
   for (var i = 0, nd = document.getElementsByTagName('*'), n = nd.length; i < n; i++) {
-    if (nd[i].nodeName == 'IMG' && /.*\.svg$/.test(nd[i].src)) nd[i].src = nd[i].src.slice(0, -3) + 'png';
+    if (nd[i].nodeName === 'IMG' && /.*\.svg$/.test(nd[i].src)) nd[i].src = nd[i].src.slice(0, -3) + 'png';
     if (/\.svg/.test(getStyle(nd[i], 'background-image'))) nd[i].style.backgroundImage = getStyle(nd[i], 'background-image').replace('.svg', '.png');
     if (/\.svg/.test(getStyle(nd[i], 'background'))) nd[i].style.background = getStyle(nd[i], 'background').replace('.svg', '.png');
   }
@@ -105,7 +105,7 @@ function onTouchClick(e, callback, callbackClick) {
       // Cancel click events on different targets within timeframe.
       // This avoids accidental clicks when the page is scrolled or updated due to the 300ms click event delay on mobiles.
       removeEvent(document.body, 'click', wrongClickListener);
-      if (!clickReady() && getEvent(e, 'target') != t) cancelEvent(e);
+      if (!clickReady() && getEvent(e, 'target') !== t) cancelEvent(e);
     },
     setClickTimeout = function() {
       // Update timeout during which click events will be blocked.
@@ -146,7 +146,7 @@ function mobileMenuShow(e) {
   var show = function() {
     var mm = document.getElementById('menusimple');
     var ml = document.getElementById('langselect');
-    mm.style.display = ml.style.display = (mm.style.display == 'block') ? '' : 'block';
+    mm.style.display = ml.style.display = (mm.style.display === 'block') ? '' : 'block';
     addClass(mm, 'menutap');
     cancelEvent(e);
   };
@@ -158,18 +158,18 @@ function mobileMenuHover(e) {
   var t = getEvent(e, 'target'),
     fn = (t.parentNode.className.indexOf('hover') === -1) ? addClass : removeClass,
     initHover = function() {
-      if (t.nodeName != 'A') return;
-      if (fn == removeClass && !hasSubItems(t)) return;
+      if (t.nodeName !== 'A') return;
+      if (fn === removeClass && !hasSubItems(t)) return;
       var p = t;
-      while (p.parentNode.nodeName == 'UL' || p.parentNode.nodeName == 'LI') p = p.parentNode;
+      while (p.parentNode.nodeName === 'UL' || p.parentNode.nodeName === 'LI') p = p.parentNode;
       for (var i = 0, nds = p.getElementsByTagName('LI'), n = nds.length; i < n; i++) {
-        if (nds[i] == t.parentNode) continue;
+        if (nds[i] === t.parentNode) continue;
         removeClass(nds[i], 'active');
         if (hasSubItems(nds[i])) continue;
         removeClass(nds[i], 'hover');
       }
-      while (t != p) {
-        if (t.nodeName == 'LI') {
+      while (t !== p) {
+        if (t.nodeName === 'LI') {
           fn(t, 'hover');
           fn(t, 'active');
         }
@@ -177,13 +177,13 @@ function mobileMenuHover(e) {
       }
     },
     hasSubItems = function(t) {
-      while (t.nodeName != 'LI') t = t.parentNode;
+      while (t.nodeName !== 'LI') t = t.parentNode;
       return (t.getElementsByTagName('UL').length > 0);
     },
     // Prevent clicks on parent element links in the menu.
     filterClick = function(e) {
       var t = getEvent(e, 'target');
-      if (t.nodeName != 'A') return;
+      if (t.nodeName !== 'A') return;
       if (hasSubItems(t)) cancelEvent(e);
     };
   onTouchClick(e, initHover, filterClick);
@@ -198,7 +198,7 @@ function addAnchorLinks() {
   }
   for (var i = 0, n = nodes.length; i < n; i++) {
     if (!nodes[i].id) continue;
-    if (nodes[i].getElementsByTagName('A').length > 0 && nodes[i].getElementsByTagName('A')[0].innerHTML == '') return;
+    if (nodes[i].getElementsByTagName('A').length > 0 && nodes[i].getElementsByTagName('A')[0].innerHTML === '') return;
     addClass(nodes[i], 'anchorAf');
     var anc = document.createElement('A');
     anc.href = '#' + nodes[i].id;
