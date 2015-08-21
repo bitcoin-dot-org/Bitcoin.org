@@ -96,6 +96,6 @@ breadcrumbs:
   <p><a href="https://bitcoinj.github.io/#documentation">Bitcoinj Developer Documentation</a> - bitcoinj.org</p>
   <p><a href="https://en.bitcoin.it/wiki/Category:Technical">Technical Pages</a> - Wiki</p>
 </div></div>
-<script src="/js/jquery-1.11.2.min.js"></script>
-<script src="/js/jquery-ui.min.js"></script>
+<script src="/js/jquery/jquery-1.11.2.min.js"></script>
+<script src="/js/jquery/jquery-ui.min.js"></script>
 <script src="/js/devsearch.js"></script>

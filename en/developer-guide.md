@@ -63,6 +63,6 @@ of the following file. -->
 
 <script>updateToc();</script>
 <script>addAnchorLinks();</script>
-<script src="/js/jquery-1.11.2.min.js"></script>
-<script src="/js/jquery-ui.min.js"></script>
+<script src="/js/jquery/jquery-1.11.2.min.js"></script>
+<script src="/js/jquery/jquery-ui.min.js"></script>
 <script src="/js/devsearch.js"></script>
