@@ -139,30 +139,22 @@ body{
 .mainlist div{
 	zoom:1;
 	display:inline;
-	width:250px;
+	width:240px;
+	text-align:center;
 }
 .mainlist div div{
 	zoom:1;
 	display:inline;
 	line-height:1.5em;
-	text-align:left;
 	width:auto;
 }
-.mainlist div div{
-	text-align:left;
-}
-.mainlist div:first-child + div{
-	text-align:center;
-}
-.mainlist div:first-child + div + div{
-	text-align:right;
+.mainlist div div div {
+	display:block;
 }
 .mainlist .ieimg{
-	vertical-align:top;
+	display:block;
+	margin:10px auto;
 	position:relative;
-	top:4px;
-	margin-right:10px;
-	float:left;
 	height:48px;
 	width:48px;
 }
