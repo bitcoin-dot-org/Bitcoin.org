@@ -22,6 +22,7 @@ group :development do
   gem 'kramdown', '~>1.6.0'
   gem 'RedCloth'
   gem 'therubyracer' # required by less
+  gem 'jshintrb', '~>0.3.0'
 end
 
 ## Not used on build server. Only used by developers and Travis CI, so
