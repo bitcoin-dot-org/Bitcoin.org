@@ -4,7 +4,7 @@
 // This file is used for javascript code
 // necessary for some pages to work properly.
 
-"use strict"
+"use strict";
 
 function getWidth(a) {
   // Return the integer value of the computed width of a DOM node.
@@ -74,19 +74,20 @@ function getWindowX() {
 
 function isMobile() {
   // Return true if the mobile CSS stylesheet is used.
-  if (getStyle(document.getElementById('detectmobile'), 'display') != 'none') return true;
+  if (getStyle(document.getElementById('detectmobile'), 'display') !== 'none') return true;
   return false;
 }
 
 function scrollToNode(t) {
   // Scroll to any node on the page.
-  if (document.body.getAttribute('data-scrollstatus') != null) {
+  var status = document.body.getAttribute('data-scrollstatus');
+  if (status !== null && status !== '') {
     clearInterval(document.body.getAttribute('data-scrollstatus'));
     document.body.removeAttribute('data-scrollstatus');
   }
   var delay = 800;
   var py = getPageYOffset();
-  var fy = getTop(t)
+  var fy = getTop(t);
   var dy = fy - py;
   var x = getPageXOffset();
   var oti = new Date().getTime();
@@ -110,7 +111,7 @@ function supportCSS(id) {
   var nd = document.createElement('DIV');
   id = id.toLowerCase();
   if (nd.style[id] !== undefined) return true;
-  idc = id.charAt(0).toUpperCase() + id.substr(1);
+  var idc = id.charAt(0).toUpperCase() + id.substr(1);
   for (var i = 0, n = domPrefixes.length; i < n; i++) {
     if (nd.style[domPrefixes[i] + idc] !== undefined) return true;
   }
@@ -153,7 +154,7 @@ function boxShow(e) {
   // Display the box content when the user click a box on the "Secure your wallet" page.
   function init(e) {
     var t = getEvent(e, 'target');
-    while (t.nodeName != 'DIV') t = t.parentNode;
+    while (t.nodeName !== 'DIV') t = t.parentNode;
     expandBox(t);
     cancelEvent(e);
   }
@@ -164,7 +165,7 @@ function faqShow(e) {
   // Display the content of a question in the FAQ at user request.
   function init(e) {
     var t = getEvent(e, 'target');
-    while (t.nodeType != 1 || t.nodeName != 'DIV') t = t.nextSibling;
+    while (t.nodeType !== 1 || t.nodeName !== 'DIV') t = t.nextSibling;
     expandBox(t);
     cancelEvent(e);
   }
@@ -176,7 +177,7 @@ function materialShow(e) {
   function init(e) {
     var t = getEvent(e, 'target'),
       p = t;
-    while (p.nodeType != 1 || p.nodeName != 'DIV') p = p.parentNode;
+    while (p.nodeType !== 1 || p.nodeName !== 'DIV') p = p.parentNode;
     expandBox(p);
     cancelEvent(e);
   }
@@ -188,7 +189,7 @@ function librariesShow(e) {
   function init(e) {
     var t = getEvent(e, 'target'),
       p = t;
-    while (p.nodeType != 1 || p.nodeName != 'UL') p = p.parentNode;
+    while (p.nodeType !== 1 || p.nodeName !== 'UL') p = p.parentNode;
     expandBox(p);
     cancelEvent(e);
   }
@@ -210,13 +211,13 @@ function updateToc() {
   var first;
   var last;
   var closer;
-  var init = function() {
+  function init() {
       setenv();
       updatehistory();
       updatetoc();
     }
     // Set variables.
-  var setenv = function() {
+  function setenv() {
       pageoffset = getPageYOffset();
       windowy = getWindowY();
       toc = document.getElementById('toc');
@@ -246,7 +247,7 @@ function updateToc() {
       if (windowy + pageoffset >= getHeight(document.body)) closer = [last[0], last[1]];
     }
     // Update toc position and set active toc entry.
-  var updatetoc = function() {
+  function updatetoc() {
       // Set bottom and top to fit within window and not overflow its parent node.
       var div = toc.getElementsByTagName('DIV')[0];
       if (pageoffset > getTop(toc)) {
@@ -258,19 +259,19 @@ function updateToc() {
       var a = false;
       for (var i = 0, t = toc.getElementsByTagName('*'), n = t.length; i < n; i++) {
         removeClass(t[i], 'active');
-        if (t[i].nodeName == 'A' && t[i].getAttribute('href') == '#' + closer[0].id) a = t[i];
+        if (t[i].nodeName === 'A' && t[i].getAttribute('href') === '#' + closer[0].id) a = t[i];
       }
       if (a === false) return;
       // Set .active class on new active toc entry.
       var nd = a;
-      while (nd.parentNode.nodeName == 'LI' || nd.parentNode.nodeName == 'UL') {
+      while (nd.parentNode.nodeName === 'LI' || nd.parentNode.nodeName === 'UL') {
         addClass(nd, 'active');
         nd = nd.parentNode;
       }
       // Auto-scroll in toc to keep active toc entry visible.
       var nd = a;
       var otop = nd.offsetTop;
-      while (nd.offsetParent != div && nd.offsetParent) {
+      while (nd.offsetParent !== div && nd.offsetParent) {
         nd = nd.offsetParent;
         otop += nd.offsetTop;
       }
@@ -279,7 +280,7 @@ function updateToc() {
       if (tdiff > 0 || bdiff > 0) div.scrollTop -= tdiff;
     }
     // Update browser url.
-  var updatehistory = function() {
+  function updatehistory() {
       // Don't call window.history if not supported.
       if (!window.history || !window.history.replaceState) return;
       // Don't update window url when it doesn't need to be updated.
@@ -291,13 +292,13 @@ function updateToc() {
       window.history.replaceState(null, null, '#' + closer[0].id);
     }
     // Update the toc when the page stops scrolling.
-  var evtimeout = function() {
+  function evtimeout() {
       toc = document.getElementById('toc');
       clearTimeout(toc.getAttribute('data-timeout'));
       toc.setAttribute('data-timeout', setTimeout(init, 1));
     }
     // Reset timestamp on page load and each time the user clicks a url.
-  var evtimestamp = function() {
+  function evtimestamp() {
     toc = document.getElementById('toc');
     document.getElementById('toc').setAttribute('data-timestamp', new Date().getTime());
   }
@@ -341,7 +342,7 @@ function updateSource(e) {
 function disclaimerClose(e) {
   // Auto close temporary disclaimer in devel-docs.
   if (e) cancelEvent(e);
-  var t = document.getElementById('develdocdisclaimer')
+  var t = document.getElementById('develdocdisclaimer');
   t.parentNode.removeChild(t);
   if (typeof(Storage) === 'undefined') return;
   sessionStorage.setItem('develdocdisclaimerclose', '1');
@@ -358,19 +359,19 @@ function walletMenuListener(e) {
   var walletSelectPlatform = function(e) {
       var t = getEvent(e, 'target'),
         p = t;
-      if (t.nodeName != 'A') return;
-      while (p.parentNode.nodeName == 'UL' || p.parentNode.nodeName == 'LI') p = p.parentNode;
+      if (t.nodeName !== 'A') return;
+      while (p.parentNode.nodeName === 'UL' || p.parentNode.nodeName === 'LI') p = p.parentNode;
       for (var i = 0, nds = p.getElementsByTagName('LI'), n = nds.length; i < n; i++) removeClass(nds[i], 'active');
       var tt = t;
-      while (tt != p) {
-        if (tt.nodeName == 'LI') addClass(tt, 'active');
+      while (tt !== p) {
+        if (tt.nodeName === 'LI') addClass(tt, 'active');
         tt = tt.parentNode;
       }
       walletShowPlatform(t.getAttribute('data-walletcompat'));
       if (isMobile() && !hasSubItems(t)) scrollToNode(document.getElementById('wallets'));
     },
     hasSubItems = function(t) {
-      while (t.nodeName != 'LI') t = t.parentNode;
+      while (t.nodeName !== 'LI') t = t.parentNode;
       return (t.getElementsByTagName('UL').length > 0);
     };
   // Pre-process events and call appropriate function.
@@ -382,8 +383,8 @@ function walletListener(e) {
   var t = getEvent(e, 'target'),
     walletShow = function() {
       // Show wallet on click on mobile or desktop.
-      if (t.id == 'wallets') return;
-      while (t.parentNode && t.parentNode.id != 'wallets') t = t.parentNode;
+      if (t.id === 'wallets') return;
+      while (t.parentNode && t.parentNode.id !== 'wallets') t = t.parentNode;
       if (!t.parentNode) return;
       if (isMobile()) {
         var p = document.getElementById('walletsmobile');
@@ -399,7 +400,7 @@ function walletListener(e) {
     walletHide = function() {
       // Disable wallet when the mouse clicks elsewhere.
       for (var i = 0, wallets = document.getElementById('wallets').childNodes, n = wallets.length; i < n; i++) {
-        if (wallets[i].nodeType != 1) continue;
+        if (wallets[i].nodeType !== 1) continue;
         removeClass(wallets[i], 'active');
       }
       removeEvent(document.body, 'click', walletListener);
@@ -429,11 +430,11 @@ function walletShowPlatform(platform) {
     getMenuState = function() {
       // Find active node in the menu for given platform and fallback category if in a submenu.
       for (var i = 0, nds = walletMenu.getElementsByTagName('A'), n = nds.length; i < n; i++) {
-        if (nds[i].getAttribute('data-walletcompat') != platform) continue;
-        if (nds[i].getAttribute('data-active') == 1) return false;
+        if (nds[i].getAttribute('data-walletcompat') !== platform) continue;
+        if (nds[i].getAttribute('data-active') === '1') return false;
         t = nds[i];
         var p = nds[i].parentNode.parentNode.parentNode;
-        if (p.nodeName == 'LI') fallback = p.getElementsByTagName('A')[0].getAttribute('data-walletcompat');
+        if (p.nodeName === 'LI') fallback = p.getElementsByTagName('A')[0].getAttribute('data-walletcompat');
         break;
       }
       return true;
@@ -445,11 +446,11 @@ function walletShowPlatform(platform) {
         nds[i].removeAttribute('data-active');
         removeClass(nds[i].parentNode, 'active');
       }
-      if (platform != 'default') {
+      if (platform !== 'default') {
         t.setAttribute('data-active', '1');
         addClass(t.parentNode, 'active');
         var p = t.parentNode.parentNode.parentNode;
-        if (p.nodeName == 'LI') addClass(p, 'active');
+        if (p.nodeName === 'LI') addClass(p, 'active');
       }
     },
     updateWallets = function() {
@@ -462,9 +463,9 @@ function walletShowPlatform(platform) {
       clearTimeout(lasttimeout);
       p.setAttribute('data-timeout', setTimeout(function() {
         p.innerHTML = '';
-        var platforms = (platform == 'default') ? ['desktop', 'mobile'] : [platform];
+        var platforms = (platform === 'default') ? ['desktop', 'mobile'] : [platform];
         for (var i = 0, nds = document.getElementById('walletsswitch').childNodes, n = nds.length; i < n; i++) {
-          if (nds[i].nodeType != 1) continue;
+          if (nds[i].nodeType !== 1) continue;
           var id = nds[i].id.split('-')[1];
           if (document.getElementById('wallet-' + id)) continue;
           var nd = null;
@@ -498,14 +499,15 @@ function walletRotate() {
     2: [],
     3: [],
     4: []
-  }
+  };
   for (var i = 0, nds = document.getElementById('wallets').childNodes, n = nds.length; i < n; i++) {
-    if (nds[i].nodeType != 1) continue;
+    if (nds[i].nodeType !== 1) continue;
     ar[parseInt(nds[i].getAttribute('data-walletlevel'))].push(nds[i]);
   }
   var sum = Math.floor(new Date() / 86400000);
   for (var k in ar) {
-    if (ar[k].length == 0) continue;
+    if (!ar.hasOwnProperty(k)) continue;
+    if (ar[k].length === 0) continue;
     var pre = ar[k][ar[k].length - 1].nextSibling;
     for (i = 0, n = sum % ar[k].length; i < n; i++) ar[k][i].parentNode.insertBefore(ar[k][i], pre);
   }
@@ -514,13 +516,13 @@ function walletRotate() {
 function makeEditable(e) {
   // An easter egg that makes the page editable when user click on the page and hold their mouse button for one second.
   // This trick allows translators and writers to preview their work.
-  if (!e) var e = window.event;
+  e = e || window.event;
   switch (getEvent(e, 'type')) {
     case 'mousedown':
-      if ((e.which && e.which == 3) || (e.button && e.button == 2)) return;
+      if ((e.which && e.which === 3) || (e.button && e.button === 2)) return;
       var t = getEvent(e, 'target');
       while (t.parentNode) {
-        if (getStyle(t, 'overflow') == 'auto' || getStyle(t, 'overflow-y') == 'auto' || getStyle(t, 'overflow-x') == 'auto') return;
+        if (getStyle(t, 'overflow') === 'auto' || getStyle(t, 'overflow-y') === 'auto' || getStyle(t, 'overflow-x') === 'auto') return;
         t = t.parentNode;
       }
       addEvent(document.body, 'mouseup', makeEditable);

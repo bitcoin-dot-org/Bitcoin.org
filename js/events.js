@@ -5,11 +5,11 @@
 layout: null
 ---
 
-"use strict"
+"use strict";
 
 var zoom = 2;
 var minzoom = 1;
-if (isMobile()) var zoom = minzoom = 0;
+if (isMobile()) zoom = minzoom = 0;
 var map = L.map('eventmap', {
   'zoom': zoom,
   'minZoom': minzoom,

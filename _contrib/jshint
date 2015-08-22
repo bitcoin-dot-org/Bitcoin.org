@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+# Print any warning from JSHint for custom javascript code.
+
+require 'jshintrb'
+
+if ARGV[0].nil?
+  path_to_check="./_site/js"
+else
+  path_to_check=ARGV[0]
+end
+
+Dir.foreach(path_to_check) do |file|
+  next if !/\.js$/.match(file)
+  res = Jshintrb.report(File.read(path_to_check + '/' + file), :jshintrc)
+  print path_to_check + '/' + file + "\n" + res if res.length != 0
+end

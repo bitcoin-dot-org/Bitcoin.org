@@ -62,7 +62,8 @@ post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-fo
     check-for-missing-anchors check-for-broken-markdown-reference-links \
     check-for-broken-kramdown-tables check-for-duplicate-header-ids \
     check-for-headers-containing-auto-link check-for-missing-subhead-links \
-    check-for-subheading-anchors
+    check-for-subheading-anchors \
+    check-jshint
 
 ## All pre-build tests, including those which might take multiple minutes
 pre-build-tests: pre-build-tests-fast
@@ -247,6 +248,9 @@ check-for-broken-bitcoin-core-download-links:
 
 check-html-proofer:
 	$S bundle exec ruby _contrib/bco-htmlproof
+
+check-jshint:
+	$S bundle exec ruby _contrib/jshint | eval $(ERROR_ON_OUTPUT)
 
 check-bundle:
 ## Ensure all the dependencies are installed. If you build without this
