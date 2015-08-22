@@ -39,7 +39,7 @@ fi
 
 # Update local branch
 git reset --hard origin/master
-git clean -x -f -d
+git clean -f -d
 
 ## Whether to auto-build or force-build
 case "${1:-nil}" in
@@ -66,6 +66,9 @@ case "${1:-nil}" in
     exit 1
   ;;
 esac
+
+# Update dependencies
+bundle install --deployment --without :slow_test
 
 # Copy files to temporary directory
 rsync -rt --delete "$SITEDIR/" "$WORKDIR/"
