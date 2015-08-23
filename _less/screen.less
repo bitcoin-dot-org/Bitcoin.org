@@ -1000,7 +1000,7 @@ div.post {
         padding-top: 20px;
 }
 
-.highlight  { background: #ffffff; }
+.highlight  { background: transparent; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
@@ -2203,6 +2203,18 @@ h2 .rssicon{
 	h1,
 	h2{
 		text-align:center;
+	}
+	.toccontent .multicode,
+	.toccontent .multicode pre,
+	.toccontent pre{
+		display: table; /* Triggers a block formating context so the container expands with the content */
+	}
+	.toccontent .multicode,
+	.toccontent pre{
+		padding:10px;
+	}
+	.toccontent .multicode pre{
+		padding:0;
 	}
 	.titleicon,
 	.warningicon{
