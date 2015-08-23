@@ -23,6 +23,7 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 <!-- Bitcoin Core 0.10.0 expected January 2015 -->
 {% assign DEPRECATED='**<abbr title="Deprecated; will be removed in a future version of Bitcoin Core">Deprecated</abbr>**' %}
 {% assign NEW0_10_0='**<abbr title="New in Bitcoin Core v0.10.0">New in 0.10.0</abbr>**' %}
+{% assign NEW0_11_0='**<abbr title="New in Bitcoin Core v0.11.0">New in 0.11.0</abbr>**' %}
 {% assign UPDATED0_10_0='**<abbr title="Updated in Bitcoin Core v0.10.0">Updated in 0.10.0</abbr>**' %}
 
 <!-- Bitcoin Core 0.9.2 June 2014 -->
@@ -54,8 +55,10 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 * [GetMemPoolInfo][rpc getmempoolinfo]: {{summary_getMemPoolInfo}} {{NEW0_10_0}}
 * [GetRawMemPool][rpc getrawmempool]: {{summary_getRawMemPool}}
 * [GetTxOut][rpc gettxout]: {{summary_getTxOut}}
+* [GetTxOutProof][rpc gettxoutproof]: {{summary_getTxOutProof}} {{NEW0_11_0}}
 * [GetTxOutSetInfo][rpc gettxoutsetinfo]: {{summary_getTxOutSetInfo}}
 * [VerifyChain][rpc verifychain]: {{summary_verifyChain}}
+* [VerifyTxOutProof][rpc verifytxoutproof]: {{summary_verifyTxOutProof}} {{NEW0_11_0}}
 
 {% endautocrossref %}
 

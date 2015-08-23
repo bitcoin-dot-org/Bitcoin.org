@@ -110,6 +110,7 @@ http://opensource.org/licenses/MIT.
 [rpc getreceivedbyaddress]: /en/developer-reference#getreceivedbyaddress
 [rpc gettransaction]: /en/developer-reference#gettransaction
 [rpc gettxout]: /en/developer-reference#gettxout
+[rpc gettxoutproof]: /en/developer-reference#gettxoutproof
 [rpc gettxoutsetinfo]: /en/developer-reference#gettxoutsetinfo
 [rpc getunconfirmedbalance]: /en/developer-reference#getunconfirmedbalance
 [rpc getwalletinfo]: /en/developer-reference#getwalletinfo
@@ -145,6 +146,7 @@ http://opensource.org/licenses/MIT.
 [rpc validateaddress]: /en/developer-reference#validateaddress
 [rpc verifychain]: /en/developer-reference#verifychain
 [rpc verifymessage]: /en/developer-reference#verifymessage
+[rpc verifytxoutproof]: /en/developer-reference#verifytxoutproof
 [rpc walletlock]: /en/developer-reference#walletlock
 [rpc walletpassphrase]: /en/developer-reference#walletpassphrase
 [rpc walletpassphrasechange]: /en/developer-reference#walletpassphrasechange
