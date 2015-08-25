@@ -191,51 +191,6 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
-- copay:
-    title: "Copay"
-    titleshort: "Copay"
-    compat: "mobile desktop web android ios windowsphone windows mac linux"
-    level: 3
-    platform:
-      mobile:
-        text: "walletcopay"
-        link: "https://copay.io"
-        source: "https://github.com/bitpay/copay"
-        screenshot: "copay.png"
-        os:
-        - android
-        - ios
-        - windowsphone
-        - linux
-        check:
-          control: "checkgoodcontrolfull"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkpassenvironmentmobile"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurecentralized"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
-      desktop:
-        text: "walletcopay"
-        link: "https://copay.io/"
-        source: "https://github.com/bitpay/copay"
-        screenshot: "copay.png"
-        os:
-        - windows
-        - mac
-        - linux
-        check:
-          control: "checkgoodcontrolfull"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurecentralized"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
 - airbitzwallet:
     title: "Airbitz Bitcoin Wallet"
     titleshort: "Airbitz"
@@ -541,46 +496,6 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
-- bitgo:
-    title: "BitGo"
-    titleshort: "BitGo"
-    compat: "web desktop windows mac linux"
-    level: 3
-    platform:
-      desktop:
-        text: "walletbitgo"
-        link: "https://chrome.google.com/webstore/detail/bitgo/jlgeogaipkoajobchncghcojanffjfhl"
-        source: "https://github.com/BitGo/bitgo-chrome"
-        screenshot: "bitgo.png"
-        os:
-        - windows
-        - mac
-        - linux
-        check:
-          control: "checkpasscontrolmulti"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencyremote"
-          environment: "checkpassenvironmenttwofactor"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
-      web:
-        text: "walletbitgo"
-        link: "https://www.bitgo.com/"
-        screenshot: "bitgo.png"
-        os:
-        check:
-          control: "checkpasscontrolmulti"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencyremote"
-          environment: "checkpassenvironmenttwofactor"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - greenaddress:
     title: "GreenAddress"
     titleshort: "Green<br>Address"
@@ -716,27 +631,6 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
           privacynetwork: "checkfailprivacynetworknosupporttor"
-- coinbase:
-    title: "Coinbase"
-    titleshort: "Coinbase"
-    compat: "web"
-    level: 4
-    platform:
-      web:
-        text: "walletcoinbase"
-        link: "https://coinbase.com"
-        screenshot: "coinbase.png"
-        os:
-        check:
-          control: "checkfailcontrolthirdparty"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencyremote"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - coinkite:
     title: "Coinkite"
     titleshort: "Coinkite"
@@ -753,70 +647,6 @@ wallets:
           validation: "checkfailvalidationcentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
-- xapo:
-    title: "Xapo"
-    titleshort: "Xapo"
-    compat: "web"
-    level: 4
-    platform:
-      web:
-        text: "walletxapo"
-        link: "https://xapo.com/"
-        screenshot: "xapo.png"
-        os:
-        check:
-          control: "checkfailcontrolthirdpartyinsured"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencyremote"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
-- coinapult:
-    title: "Coinapult"
-    titleshort: "Coinapult"
-    compat: "web"
-    level: 4
-    platform:
-      web:
-        text: "walletcoinapult"
-        link: "https://coinapult.com/"
-        screenshot: "coinapult.png"
-        os:
-        check:
-          control: "checkfailcontrolthirdparty"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencyremote"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
-
-- circle:
-    title: "Circle"
-    titleshort: "Circle"
-    compat: "web"
-    level: 4
-    platform:
-      web:
-        text: "walletcircle"
-        link: "https://circle.com/"
-        screenshot: "circle.png"
-        os:
-        check:
-          control: "checkfailcontrolthirdpartyinsured"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencyremote"
-          environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
