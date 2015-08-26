@@ -9,152 +9,198 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-Bitcoin Core provides a large number of Remote Procedure Calls (RPCs)
-using a [HTTP JSON-RPC version 1.0][] interface. Any program can access
-the RPCs using JSON-RPC, but Bitcoin Core also provides the
-`bitcoin-cli` command to wrap the JSON-RPC access for Command Line
-Interface (CLI) users. Most of the RPC examples in this documentation
-use `bitcoin-cli` for simplicity, so this subsection describes raw
-JSON-RPC interface and how the command-line interface translates it.
+Bitcoin Core provides a remote procedure call (RPC) interface for various
+administrative tasks, wallet operations, and queries about network and block
+chain data.
 
-In order to start `bitcoind`, you will need to set a password for
-JSON-RPC in the `bitcoin.conf` file. See the [Examples
-Page][devexamples] for details. JSON-RPC starts on port 8332 for mainnet
-and 18332 for testnet and regtest. By default, `bitcoind` doesn't use a
-JSON-RPC user, but you can set one (see `bitcoind --help`).
+If you start Bitcoin Core using `bitcoin-xt`, the RPC interface is disabled by
+default. To enable it, set `server=1` in `bitcoin.conf` or supply the `-server`
+argument when invoking the program.
 
-The interface is not intended for public access and is only accessible
-from localhost by default.
+If you start Bitcoin Core using `bitcoind`, the RPC interface is enabled by
+default. To disable it, set `server=0` in `bitcoin.conf`.
 
-RPCs are made using the standard JSON-RPC 1.0 syntax, which sends several
-standard arguments:
+The interface requires the user to provide a password for authenticating RPC
+requests. This password can be set either using the `rpcpassword` property in
+`bitcoin.conf` or by supplying the `-rpcpassword` program argument. Optionally a
+username can be set using the `rpcuser` configuration value. See the [Examples
+Page][devexamples] for more information about setting Bitcoin Core configuration
+values.
+
+Open-source client libraries for the RPC interface are readily available in most
+modern programming languages, so you probably don't need to write your own from
+scratch. Bitcoin Core also ships with its own compiled C++ RPC client,
+`bitcoin-cli`, located in the `bin` directory alongside `bitcoind` and
+`bitcoin-qt`. The `bitcoin-cli` program can be used as a command-line interface
+(CLI) to Bitcoin Core or for making RPC calls from applications written in
+languages lacking a suitable native client. The remainder of this section
+describes the Bitcoin Core RPC protocol in detail.
+
+The Bitcoin Core RPC service listens for HTTP `POST` requests on port 8332 in
+mainnet mode or 18332 in testnet or regtest mode. The port number can be changed
+by setting `rpcport` in `bitcoin.conf`. By default the RPC service binds to your
+server's [localhost](https://en.wikipedia.org/wiki/Localhost) loopback
+network<!--noref--> interface so it's not accessible from other servers.
+Authentication is implemented using HTTP [basic
+authentication](https://en.wikipedia.org/wiki/Basic_access_authentication). RPC
+HTTP requests must include a `Content-Type` header set to `text/plain` and a
+`Content-Length` header set to the size of the request body.
+
+The format of the request body and response data is based on [version 1.0 of the
+JSON-RPC specification](http://json-rpc<!--noref-->.org/wiki/specification). Specifically,
+the HTTP `POST` data of a request must be a JSON object with the following
+format:
 
 
 | Name                 | Type            | Presence                    | Description
 |----------------------|-----------------|-----------------------------|----------------
-| RPC                  | object          | Required<br>(exactly 1)     | An object containing the standard RPC arguments
-| → <br>`jsonrpc`      | number (real)   | Optional<br>(0 or 1)        | The version of JSON-RPC used.  Bitcoin Core currently ignores this, as it only supports version 1.0.  Default is `1.0`
-| → <br>`id`           | string          | Required<br>(exactly 1)     | An arbitrary string that will be returned when the response is sent.  May be set to an empty string ("")
-| → <br>`method`       | string          | Required<br>(exactly 1)     | The RPC, such as `getbestblockhash`.  See the RPC section for a list of available commands
-| → <br>`params`       | array           | Required<br>(exactly 1)     | An array containing parameters for the RPC.  May be an empty array if allowed by the particular RPC
-| → → <br>Parameter  | *any*           | Optional<br>(0 or more)     | A parameter.  May be any JSON type allowed by the particular RPC
+| Request              | object          | Required<br>(exactly 1)     | The JSON-RPC<!--noref--> request object
+| → <br>`jsonrpc`      | number (real)   | Optional<br>(0 or 1)        | Version indicator for the JSON-RPC<!--noref--> request. Currently ignored by Bitcoin Core.
+| → <br>`id`           | string          | Optional<br>(0 or 1)        | An arbitrary string that will be returned with the response.  May be omitted or set to an empty string ("")
+| → <br>`method`       | string          | Required<br>(exactly 1)     | The RPC method name (e.g. `getblock`).  See the RPC section for a list of available methods.
+| → <br>`params`       | array           | Optional<br>(0 or 1)        | An array containing positional parameter values for the RPC.  May be an empty array or omitted for RPC calls that don't have any required parameters.
+| → → <br>Parameter    | *any*           | Optional<br>(0 or more)       | A parameter.  May be any JSON type allowed by the particular RPC method
 {:.ntpd}
 
-In table above and in other tables describing JSON-RPC input<!--noref-->
-and output<!--noref-->, we use the following formatting
+In the table above and in other tables describing RPC input<!--noref--> and
+output<!--noref-->, we use the following conventions
 
-* "→" to indicate an argument that is the child of a JSON array or
-  JSON object. For example, "→ → Parameter" above means Parameter
-  is the child of the `params` array which itself is a child of the
-  RPC array.
+* "→" indicates an argument that is the child of a JSON array or JSON object.
+  For example, "→ → Parameter" above means Parameter is the child of the
+  `params` array which itself is a child of the Request object.
 
-* "Plain Text" names (like "RPC" above) are unnamed in the actual
-  JSON-RPC
+* Plain-text names like "Request" are unnamed in the actual JSON object
 
-* `literal` names (like `id` above) are the strings that appear in the
-  actual JSON-RPC
+* Code-style names like `params` are literal strings that appear in the JSON
+  object.
 
-* Type (specifics) are the general JSON-RPC type and the specific
-  Bitcoin Core type
+* "Type" is the JSON data type and the specific Bitcoin Core type.
 
-* Required/Optional describe whether a field must be returned within its
-  containing array or object. (So an optional object may still have
-  required children.)
+* "Presence" indicates whether or not a field must be present within its
+   containing array or object. Note that an optional object may still have
+   required children.
 
-For example, here is the JSON-RPC requesting the hash of the latest
-block on the local best block chain:
+
+The HTTP response data for a RPC request is a JSON object with the following
+format:
+
+| Name                 | Type            | Presence                    | Description
+|----------------------|-----------------|-----------------------------|----------------
+| Response             | object          | Required<br>(exactly 1)     | The JSON-RPC<!--noref--> response object.
+| → <br>`result`       | *any*           | Required<br>(exactly 1)     | The RPC output<!--noref--> whose type varies by call.  Has value `null` if an error occurred.
+| → <br>`error`        | null/object     | Required<br>(exactly 1)     | An object describing the error if one occurred, otherwise `null`.
+| → → <br>`code`        | number (int)    | Required<br>(exactly 1)     | The error code returned by the RPC function call. See [rpcprotocol.h][] for a full list of error codes and their meanings.
+| → → <br>`message`     | string          | Required<br>(exactly 1)     | A text description of the error.  May be an empty string ("").
+| → <br>`id`           | string          | Required<br>(exactly 1)     | The value of `id` provided with the request. Has value `null` if the `id` field was omitted in the request.
+{:.ntpd}
+
+As an example, here is the JSON-RPC<!--noref--> request object for the hash of
+the genesis block:
 
 {% highlight json %}
 {
-    "jsonrpc": "1.0",
-    "id": "bitcoin.org developer documentation",
-    "method": "getbestblockhash",
-    "params": []
+    "method": "getblockhash",
+    "params": [0],
+    "id": "foo"
 }
 {% endhighlight %}
 
-We can send that to a local Bitcoin Core running on testnet using cURL
-with the following command:
+The command to send this request using `bitcoin-cli` is:
 
 {% highlight bash %}
-curl --user ':your_password' --data-binary '''
-  {
-      "jsonrpc": "1.0",
-      "id":"bitcoin.org developer documentation",
-      "method": "getbestblockhash",
-      "params": []
-  }''' \
-  -H 'content-type: text/plain;' http://127.0.0.1:18332/
+bitcoin-cli getblockhash 0
 {% endhighlight %}
 
-The output<!--noref--> will be sent using the standard JSON-RPC 1.0
-format. For example (whitespace added):
+Alternatively, we could `POST` this request using the cURL command-line program
+as follows:
+
+{% highlight bash %}
+curl --user ':my_secret_password' --data-binary '''
+  {
+      "method": "getblockhash",
+      "params": [0],
+      "id": "foo"
+  }''' \
+  --header 'Content-Type: text/plain;' localhost:8332
+{% endhighlight %}
+
+The HTTP response data for this request would be:
 
 {% highlight json %}
 {
-    "result": "00000000bd68bfdf381efd5fff17c723d2bb645bcbb215a6e333d4204888e951",
+    "result": "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
     "error": null,
-    "id": "bitcoin.org developer documentation"
+    "id": "foo"
 }
 {% endhighlight %}
 
-The standard JSON-RPC 1.0 result format is described below:
+Note: In order to minimize its size, the raw JSON response from Bitcoin Core
+doesn't include any extraneous whitespace characters. Here we've added
+whitespace to make the object more readable. Speaking of which, `bitcoin-cli`
+also transforms the raw response to make it more human-readable. It:
 
-| Name                 | Type            | Presence                    | Description
-|----------------------|-----------------|-----------------------------|----------------
-| Result               | object          | Required<br>(exactly 1)     | An object describing the results
-| → <br>`result`       | *any*           | Required<br>(exactly 1)     | The results as any JSON data type.  If an error occured, set to `null`
-| → <br>`error`        | null/object     | Required<br>(exactly 1)     | If no error occurred, set to `null`.  If an error occured, an object describing the error
-| → → <br>`code`        | number (int)    | Required<br>(exactly 1)     | The error code as set by the returning function and defined in Bitcoin Core's [rpcprotocol.h][]
-| → → <br>`message`     | string          | Required<br>(exactly 1)     | An attempt to describe the problem in human-readable text.  May be an empty string ("").  Bitcoin Core often returns help text with embedded newline strings ("\n"); `bitcoin-cli` can expand these to actual newlines
-| → <br>`id`           | string          | Required<br>(exactly 1)     | The arbitrary string passed in when the RPC was called
-{:.ntpd}
+- Adds whitespace indentation to JSON objects
+- Expands escaped newline characters ("\n") into actual newlines
+- Returns only the value of the `result` field if there's no error
+- Strips the outer double-quotes around `result`s of type string
+- Returns only the `error` field if there's an error
 
-For an example of the error output<!--noref-->, here's the result
-after passing an invalid address to the `sendtoaddress` RPC
-(whitespace added):
+Continuing with the example above, the output<!--noref--> from the `bitcoin-cli`
+command would be simply:
+
+{% highlight text %}
+000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
+{% endhighlight %}
+
+If there's an error processing a request, Bitcoin Core sets the `result` field
+to `null` and provides information about the error in the  `error` field. For
+example, a request for the block hash at block height -1 would be met with the
+following response (again, whitespace added for clarity):
 
 {% highlight json %}
 {
     "result": null,
     "error": {
-        "code": -5,
-        "message": "Invalid Bitcoin address"
+        "code": -8,
+        "message": "Block height out of range"
     },
-    "id": "bitcoin.org developer documentation"
+    "id": "foo"
 }
 {% endhighlight %}
 
-The `bitcoin-cli` command can save command line users a lot of typing
-compared to using cURL or another HTTP-sending command. For example, to
-get the block hash we got before, we would use the following command:
-
-{% highlight bash %}
-bitcoin-cli getbestblockhash
-{% endhighlight %}
-
-For non-error output<!--noref-->, `bitcoin-cli` will only display the
-value of the `result` field, and if it's a string, `bitcoin-cli` will
-remove its JSON quotation marks. For example, the result for the
-command above:
+If `bitcoin-cli` encounters an error, it exits with a non-zero status code and
+outputs<!--noref--> the `error` field as text to the process's standard error
+stream:
 
 {% highlight text %}
-00000000bd68bfdf381efd5fff17c723d2bb645bcbb215a6e333d4204888e951
+error: {"code": -8, "message": "Block height out of range"}
 {% endhighlight %}
 
-For errors, `bitcoin-cli` will display only the `error` object.  For
-example, the result of the invalid address command above as formatted by
-`bitcoin-cli`:
+Starting in Bitcoin Core version 0.7.0, the RPC interface supports request
+batching as described in [version 2.0 of the JSON-RPC
+specification](http://www.jsonrpc.org/specification#batch). To initiate multiple
+RPC requests within a single HTTP request, a client can `POST` a JSON array
+filled with Request objects. The HTTP response data is then a JSON array filled
+with the corresponding Response objects. Depending on your usage pattern,
+request batching may provide significant performance gains. The `bitcoin-cli`
+RPC client does not support batch requests.
+
+To keep this documentation compact and readable, the examples for each of the
+available RPC calls will be given as `bitcoin-cli` commands:
+
+{% highlight text %}
+bitcoin-cli [options] <method name> <param1> <param2> ...
+{% endhighlight %}
+
+This translates into an JSON-RPC<!--noref--> Request object of the form:
 
 {% highlight json %}
-error: {"code":-5,"message":"Invalid Bitcoin address"}
+{
+    "method": "<method name>",
+    "params": [ "param1", "param2", "..." ],
+    "id": "foo"
+}
 {% endhighlight %}
-
-Because `bitcoin-cli` abstracts away the parts of JSON-RPC we would need
-to repeatedly describe in each RPC description below, we describe the
-Bitcoin Core RPCs using `bitcoin-cli`. However, using an actual
-programming interface to the full JSON-RPC will serve you much better
-for automated tasks.
 
 [{{WARNING}}][proper money handling]{:#term-proper-money-handling}{:.term} if you write
 programs using the JSON-RPC interface, you must ensure they handle high-precision
