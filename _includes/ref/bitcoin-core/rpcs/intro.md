@@ -13,12 +13,10 @@ Bitcoin Core provides a remote procedure call (RPC) interface for various
 administrative tasks, wallet operations, and queries about network and block
 chain data.
 
-If you start Bitcoin Core using `bitcoin-xt`, the RPC interface is disabled by
+If you start Bitcoin Core using `bitcoin-qt`, the RPC interface is disabled by
 default. To enable it, set `server=1` in `bitcoin.conf` or supply the `-server`
-argument when invoking the program.
-
-If you start Bitcoin Core using `bitcoind`, the RPC interface is enabled by
-default. To disable it, set `server=0` in `bitcoin.conf`.
+argument when invoking the program. If you start Bitcoin Core using `bitcoind`,
+the RPC interface is enabled by default.
 
 The interface requires the user to provide a password for authenticating RPC
 requests. This password can be set either using the `rpcpassword` property in
@@ -39,15 +37,15 @@ describes the Bitcoin Core RPC protocol in detail.
 The Bitcoin Core RPC service listens for HTTP `POST` requests on port 8332 in
 mainnet mode or 18332 in testnet or regtest mode. The port number can be changed
 by setting `rpcport` in `bitcoin.conf`. By default the RPC service binds to your
-server's [localhost](https://en.wikipedia.org/wiki/Localhost) loopback
+server's [localhost][Localhost] loopback
 network<!--noref--> interface so it's not accessible from other servers.
-Authentication is implemented using HTTP [basic
-authentication](https://en.wikipedia.org/wiki/Basic_access_authentication). RPC
+Authentication is implemented using [HTTP basic
+authentication][HTTP basic authentication]. RPC
 HTTP requests must include a `Content-Type` header set to `text/plain` and a
 `Content-Length` header set to the size of the request body.
 
 The format of the request body and response data is based on [version 1.0 of the
-JSON-RPC specification](http://json-rpc<!--noref-->.org/wiki/specification). Specifically,
+JSON-RPC specification][JSON-RPC version 1.0]. Specifically,
 the HTTP `POST` data of a request must be a JSON object with the following
 format:
 
@@ -178,7 +176,7 @@ error: {"code": -8, "message": "Block height out of range"}
 
 Starting in Bitcoin Core version 0.7.0, the RPC interface supports request
 batching as described in [version 2.0 of the JSON-RPC
-specification](http://www.jsonrpc.org/specification#batch). To initiate multiple
+specification][JSON-RPC version 2.0]. To initiate multiple
 RPC requests within a single HTTP request, a client can `POST` a JSON array
 filled with Request objects. The HTTP response data is then a JSON array filled
 with the corresponding Response objects. Depending on your usage pattern,
@@ -197,7 +195,7 @@ This translates into an JSON-RPC<!--noref--> Request object of the form:
 {% highlight json %}
 {
     "method": "<method name>",
-    "params": [ "param1", "param2", "..." ],
+    "params": [ "<param1>", "<param2>", "..." ],
     "id": "foo"
 }
 {% endhighlight %}
