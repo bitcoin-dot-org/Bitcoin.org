@@ -299,7 +299,7 @@ http://opensource.org/licenses/MIT.
 [IPv4-mapped IPv6 addresses]: http://en.wikipedia.org/wiki/IPv6#IPv4-mapped_IPv6_addresses
 [irc channels]: https://en.bitcoin.it/wiki/IRC_channels
 [JSON-RPC version 1.0]: http://json-rpc.org/wiki/specification
-[JSON-RPC version 2.0]: http://www.jsonrpc.org/specification#batch
+[JSON-RPC request batching]: http://www.jsonrpc.org/specification#batch
 [libblkmaker]: https://github.com/bitcoin/libblkmaker
 [localhost]: https://en.wikipedia.org/wiki/Localhost
 [makeseeds script]: https://github.com/bitcoin/bitcoin/tree/master/contrib/seeds

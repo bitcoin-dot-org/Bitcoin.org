@@ -176,7 +176,7 @@ error: {"code": -8, "message": "Block height out of range"}
 
 Starting in Bitcoin Core version 0.7.0, the RPC interface supports request
 batching as described in [version 2.0 of the JSON-RPC
-specification][JSON-RPC version 2.0]. To initiate multiple
+specification][JSON-RPC request batching]. To initiate multiple
 RPC requests within a single HTTP request, a client can `POST` a JSON array
 filled with Request objects. The HTTP response data is then a JSON array filled
 with the corresponding Response objects. Depending on your usage pattern,
