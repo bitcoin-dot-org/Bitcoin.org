@@ -34,9 +34,25 @@
   title: "Blockstack Summit 2015"
   venue: "D'Agostino Hall, New York University"
   address: "108 W 3rd St"
-  city: "New York, NY"
-  country: "USA"
+  city: "New York"
+  country: "United States"
   link: "http://blockstack.org/summit"
+
+- date: 2015-09-15
+  title: "NYC Fintech eXtravaganza"
+  venue: "Microsoft Technology Center"
+  address: "640 8th Ave"
+  city: "New York"
+  country: "United States"
+  link: "http://www.eventbrite.com/e/nyc-fintech-extravaganza-fintechx-tickets-17816557804"
+
+- date: 2015-09-16
+  title: "Finovate New York 2015"
+  venue: "New York Hilton Midtown"
+  address: "1335 Avenue of the Americas"
+  city: "New York"
+  country: "United States"
+  link: "http://fall2015.finovate.com/"
 
 - date: 2015-09-18
   title: "Bitcoin Thrill Day 2015"
@@ -54,6 +70,14 @@
   country: "United Kingdom"
   link: "https://blockchainbirmingham.wordpress.com"
 
+- date: 2015-09-23
+  title: "Finance 2.0: Crypto"
+  venue: "EWZ-Unterwerk Selnau"
+  address: "Selnaustreet 25"
+  city: "Zurich"
+  country: "Switzerland"
+  link: "http://www.finance20.ch/crypto2015/"
+
 - date: 2015-09-24
   title: "Bitcoin Conference Kiev"
   venue: "NSC Olimpiyskiy"
@@ -61,6 +85,38 @@
   city: "Kyiv"
   country: "Ukraine"
   link: "http://bitcoinconf.com.ua/en"
+
+- date: 2015-09-28
+  title: "Bitcoin and Blockchain Regulation"
+  venue: "The London Escalator"
+  address: "69-89 Mile End Rd"
+  city: "London"
+  country: "United Kingdom"
+  link: "http://bblf.info/"
+
+- date: 2015-10-02
+  title: "Digital Economy Conference"
+  venue: "Holland Performing Arts Center"
+  address: "1200 Douglas Street"
+  city: "Omaha"
+  country: "United States"
+  link: "http://digitaleconomy.io/"
+
+- date: 2015-10-06
+  title: "Fintech: Law and Disruption"
+  venue: "New York Law School Events Center"
+  address: "185 West Broadway"
+  city: "New York"
+  country: "United States"
+  link: "http://www.nyls.edu/center-for-business-and-financial-law/cbfl_events/conferences/"
+
+- date: 2015-10-06
+  title: "Blockchain Conference New York"
+  venue: "Barclays Accelerator"
+  address: "43 West 23rd Street"
+  city: "New York"
+  country: "United States"
+  link: "http://www.blockchain-newyork.com/"
 
 - date: 2015-10-07
   title: "Bitcoin Wednesday Conference"
@@ -77,6 +133,14 @@
   city: "Batumi"
   country: "Georgia"
   link: "http://altconvention.com"
+
+- date: 2015-10-25
+  title: "Money 20/20"
+  venue: "The Venetian Las Vegas"
+  address: "3355 Las Vegas Blvd. South"
+  city: "Las Vegas"
+  country: "United States"
+  link: "http://www.money2020.com"
 
 - date: 2015-11-03
   title: "BL0CKCHA1N: The Blockchain Forum"
@@ -98,9 +162,25 @@
   title: "MTBIT - Bitcoin & Remittances Miami Beach"
   venue: "Eden Roc Hotel"
   address: "4525 Collins Avenue"
-  city: "Miami Beach, FL"
+  city: "Miami Beach"
   country: "United States"
   link: "http://www.imtconferences.com/mtbit/"
+
+- date: 2015-11-10
+  title: "Fintech Startups Conference"
+  venue: "Great American Music Hall"
+  address: "859 O'Farrell St"
+  city: "San Francisco"
+  country: "United States"
+  link: "http://www.fintechstartupsconference.com/sftickets"
+
+- date: 2015-11-24
+  title: "ADCCA Fintech Summit"
+  venue: "The Westin Sydney"
+  address: "1 Martin Place"
+  city: "Sydney"
+  country: "Australia"
+  link: "http://www.adccasummit.com/"
 
 - date: 2015-12-02
   title: "Bitcoin Wednesday Conference"
@@ -125,6 +205,14 @@
   city: "San Diego"
   country: "United States"
   link: "http://insidebitcoins.com/san-diego/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibsd"
+
+- date: 2016-02-23
+  title: "Blockchain Conference San Francisco"
+  venue: "Fort Mason"
+  address: "2 Marina Blvd"
+  city: "San Francisco"
+  country: "United States"
+  link: "http://blockchain-sanfrancisco.com/"
 
 - date: 2016-04-04
   title: "Money 20/20 Europe"
