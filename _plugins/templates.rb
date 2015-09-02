@@ -48,6 +48,10 @@ module Jekyll
           dst = locs[lang]['url'][id]
           next if dst.nil? or dst == ''
           src = file
+          ## For files ending in a slash, such as path/to/dir/, give them
+          ## the index.html file name
+          dst.gsub!(/\/$/, '/index')
+
           dst = dst+'.html'
           site.pages << TranslatePage.new(site, site.source, lang, '_templates', src, lang, dst)
         end

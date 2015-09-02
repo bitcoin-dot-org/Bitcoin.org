@@ -2,62 +2,83 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-layout: base
+layout: base-core
 id: development
+columns: 1
+
+breadcrumbs:
+  - bitcoin
+  - bcc
+  - bcc contribute
+  - Code
 ---
 <!-- Note: this file is built non-deterministically -->
 <h1>{% translate pagetitle %}</h1>
-<p class="summary">{% translate summary %}</p>
+{% if page.lang != 'en' %}<p class="summary">{% translate summary %}</p>{% endif %}
+
+<p>{% translate involvetxt1 development %}</p>
+<p>{% translate involvetxt2 development %}</p>
+<div id="chatbox" class="chatbox"></div>
+
+{% capture markdown %}
+<span class="fa fa-exclamation-triangle"></span> *To report an issue,
+please see the [bug reporting][bcc contribute issues] page.*
+
+## Code Review
+
+Bitcoin Core is security software that helps protect assets worth
+billions of dollars, so every code change needs to be reviewed by
+experienced developers.
+
+It can take a long time for other developers to review your pull
+requests. Remember that all reviewers are taking time away from their
+own projects to review your pull requests, so be patient and respectful
+of their time.
+
+Please also consider helping to review other people's pull requests. You
+don't need to be an expert in Bitcoin, the Bitcoin Core codebase, or C++
+(although all these things help). There are almost always [open pull
+requests][bcc pulls] that any programmer can review.
+
+## Starter Projects
+
+Do you want to begin coding for Bitcoin Core but don't have a specific
+improvement in mind?  Here are a few ideas:
+
+- **Fix existing issues:** the [issue tracker][bcc issues] is the
+  best place to find a useful way to contribute to Bitcoin Core.
+  Before starting to write any patches for issues you find, you may
+  want to comment on the issue to make sure nobody else is already
+  working on it.
+
+- **Write tests:** Bitcoin Core is covered by many tests, but patches
+  that improve test coverage are always welcome and are a great way to
+  build familiarity with the codebase.  See the documentation about
+  [automated testing][bcc automated testing].
+
+{% include references.md %}
+{% endcapture %}
+{% if page.lang == 'en' %}
+  {{ markdown | markdownify }}
+{% endif %}
+
 
 <h2 id="spec">{% translate spec %}</h2>
 <p>{% translate spectxt %}</p>
 
-<h2 id="coredev">{% translate coredev %}</h2>
+{% if page.lang == 'en' %}
+  <input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
+{% else %}
+  <h2 id="coredev">{% translate coredev %}</h2>
 
-<p>{% translate inventor %}</p>
+  <p>{% translate inventor %}</p>
 
-<div class="listtable coredevtable">
-  <div><div>Wladimir J. van der Laan</div><div><a href="mailto:laanwj@gmail.com">laanwj@gmail.com</a></div><div><a href="/laanwj.asc">PGP</a></div></div>
-  <div><div>Gavin Andresen</div><div><a href="mailto:gavinandresen@gmail.com">gavinandresen@gmail.com</a></div><div><a href="/gavinandresen.asc">PGP</a></div></div>
-  <div><div>Jeff Garzik</div><div><a href="mailto:jgarzik@bitpay.com">jgarzik@bitpay.com</a></div><div><a href="/jgarzik-bitpay.asc">PGP</a></div></div>
-  <div><div>Gregory Maxwell</div><div><a href="mailto:greg@xiph.org">greg@xiph.org</a></div><div><a href="/gmaxwell.asc">PGP</a></div></div>
-  <div><div>Pieter Wuille</div><div><a href="mailto:pieter.wuille@gmail.com">pieter.wuille@gmail.com</a></div><div><a href="/pieterwuille.asc">PGP</a></div></div>
-</div>
+  {% include bitcoin-core/core-committers.html %}
 
-<h2 id="disclosure">{% translate disclosure %}</h2>
-<p><a href="mailto:bitcoin-security@lists.sourceforge.net">bitcoin-security@lists.sourceforge.net</a></p>
-<p>{% translate disclosuretxt %}</p>
-
-<h2 id="involve">{% translate involve %}</h2>
-<p>{% translate involvetxt1 %}</p>
-<p>{% translate involvetxt2 %}</p>
-<div id="chatbox" class="chatbox"></div>
-
-<h2 id="more">{% translate more %}</h2>
-
-<p>{% translate morechoose %}</p>
-
-<ul class="devprojectlist">
-  <li><a href="https://github.com/etotheipi/BitcoinArmory">Armory</a> - A wallet with enhanced security features.</li>
-  <li><a href="http://bfgminer.com">BFGMiner</a> - A modular miner.</li>
-  <li><a href="https://en.bitcoin.it/wiki/Bitcoin_Explorer">Bitcoin Explorer</a> - A command line tool, built on libbitcoin.</li>
-  <li><a href="https://en.bitcoin.it/wiki/Bitcoin_Server">Bitcoin Server</a> - A full node and query server, built on libbitcoin.</li>
-  <li><a href="https://github.com/schildbach/bitcoin-wallet">Bitcoin Wallet</a> - A SPV wallet for Android and Blackberry.</li>
-  <li><a href="https://bitcoinj.github.io">bitcoinj</a> - A library for SPV wallets, written in Java.</li>
-  <li><a href="https://github.com/btcsuite/btcd">btcd</a> - A full node, written in Go.</li>
-  <li><a href="https://github.com/btcsuite/btcwallet">btcwallet</a> - A hierarchical deterministic wallet daemon, written in Go.</li>
-  <li><a href="https://electrum.org">Electrum</a> - A fast server-trusting wallet.</li>
-  <li><a href="https://github.com/luke-jr/eloipool">Eloipool</a> - A fast mining pool server application, written in Python.</li>
-  <li><a href="https://github.com/hivewallet">Hive</a> - A fast user-friendly SPV wallet.</li>
-  <li><a href="https://en.bitcoin.it/wiki/Libbitcoin">Libbitcoin</a> - A cross-platform development toolkit, written in C++.</li>
-  <li><a href="https://gitlab.com/bitcoin/libblkmaker">Libblkmaker</a> - A client library for the getblocktemplate mining protocol, written in C.</li>
-  <li><a href="https://multibit.org">MultiBit HD</a> - An international SPV wallet for desktops.</li>
-  <li><a href="https://github.com/NicolasDorier/NBitcoin">NBitcoin</a> - A cross-platform library, written in C#.</li>
-  <li><a href="https://github.com/jgarzik/picocoin">picocoin</a> - A tiny library with lightweight client and utilities, written in C.</li>
-  <li><a href="https://github.com/petertodd/python-bitcoinlib">python-bitcoinlib</a> - A library for structures and protocols, written in Python.</li>
-  <li><a href="https://gitlab.com/bitcoin/python-blkmaker">Python Blkmaker</a> - A client library for the getblocktemplate mining protocol, written in Python.</li>
-  <li class="more"><a onclick="librariesShow(event)" ontouchstart="librariesShow(event);" class="link-js">{% translate moremore %}</a></li>
-</ul>
+  <h2 id="disclosure">{% translate disclosure %}</h2>
+  <p><a href="mailto:bitcoin-security@lists.sourceforge.net">bitcoin-security@lists.sourceforge.net</a></p>
+  <p>{% translate disclosuretxt %}</p>
+{% endif %}
 
 <section id="devcommunities">
   <h2 id="dev-communities">{% translate devcommunities %}</h2>
@@ -83,3 +104,39 @@ id: development
     {% endfor %}
   </div>
 </section>
+
+<h2 id="more">{% translate more %}</h2>
+
+<p>
+{% case page.lang %}
+{% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl' or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'ja' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+Want to contribute to a different project?
+{% endcase %}
+{% translate morechoose %}</p>
+
+<ul class="devprojectlist">
+  <li><a href="https://github.com/etotheipi/BitcoinArmory">Armory</a> - A wallet with enhanced security features.</li>
+  <li><a href="http://bfgminer.com">BFGMiner</a> - A modular miner.</li>
+  <li><a href="https://en.bitcoin.it/wiki/Bitcoin_Explorer">Bitcoin Explorer</a> - A command line tool, built on libbitcoin.</li>
+  <li><a href="https://en.bitcoin.it/wiki/Bitcoin_Server">Bitcoin Server</a> - A full node and query server, built on libbitcoin.</li>
+  <li><a href="https://github.com/schildbach/bitcoin-wallet">Bitcoin Wallet</a> - A SPV wallet for Android and Blackberry.</li>
+  <li><a href="https://bitcoinj.github.io">bitcoinj</a> - A library for SPV wallets, written in Java.</li>
+  <li><a href="https://github.com/btcsuite/btcd">btcd</a> - A full node, written in Go.</li>
+  <li><a href="https://github.com/btcsuite/btcwallet">btcwallet</a> - A hierarchical deterministic wallet daemon, written in Go.</li>
+  <li><a href="https://electrum.org">Electrum</a> - A fast server-trusting wallet.</li>
+  <li><a href="https://github.com/luke-jr/eloipool">Eloipool</a> - A fast mining pool server application, written in Python.</li>
+  <li><a href="https://github.com/hivewallet">Hive</a> - A fast user-friendly SPV wallet.</li>
+  <li><a href="https://en.bitcoin.it/wiki/Libbitcoin">Libbitcoin</a> - A cross-platform development toolkit, written in C++.</li>
+  <li><a href="https://gitlab.com/bitcoin/libblkmaker">Libblkmaker</a> - A client library for the getblocktemplate mining protocol, written in C.</li>
+  <li><a href="https://multibit.org">MultiBit HD</a> - An international SPV wallet for desktops.</li>
+  <li><a href="https://github.com/NicolasDorier/NBitcoin">NBitcoin</a> - A cross-platform library, written in C#.</li>
+  <li><a href="https://github.com/jgarzik/picocoin">picocoin</a> - A tiny library with lightweight client and utilities, written in C.</li>
+  <li><a href="https://github.com/petertodd/python-bitcoinlib">python-bitcoinlib</a> - A library for structures and protocols, written in Python.</li>
+  <li><a href="https://gitlab.com/bitcoin/python-blkmaker">Python Blkmaker</a> - A client library for the getblocktemplate mining protocol, written in Python.</li>
+  <li class="more"><a onclick="librariesShow(event)" ontouchstart="librariesShow(event);" class="link-js"><span class="fa fa-caret-down"></span> {% translate moremore %}</a></li>
+</ul>
+
+{% if page.lang == 'en' %}
+  <script src="/js/devsearch.js"></script>
+{% endif %}

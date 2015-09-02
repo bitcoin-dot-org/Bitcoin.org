@@ -3,7 +3,7 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<ul id="menusimple" class="menusimple" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
   <li><a>{% translate menu-intro layout %}</a>
     <ul>
       <li{% if page.id == 'bitcoin-for-individuals' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a></li>
@@ -21,6 +21,12 @@ http://opensource.org/licenses/MIT.
       {% if page.lang == 'en' %}<li{% if page.id == 'developer-documentation' %} class="active"{% endif %}><a href="/en/developer-documentation">Documentation</a></li>{% endif %}
       <li{% if page.id == 'vocabulary' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
       <li{% if page.id == 'events' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>
+      {% case page.lang %}
+      {% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl' or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'ja' or 'zh_CN' or 'zh_TW' %}
+        <li{% if page.id == 'download' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate download url %}">{% translate bitcoin-core layout %}</a></li>
+      {% else %}
+        <li><a href="/{{page.lang}}/{% translate bitcoin-core-overview url %}">{% translate bitcoin-core layout %}</a></li>
+      {% endcase %}
     </ul>
   </li>
   <li{% if page.id == 'innovation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate innovation url %}">{% translate menu-innovation layout %}</a></li>

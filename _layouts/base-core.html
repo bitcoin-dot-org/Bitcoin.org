@@ -1,0 +1,53 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+---
+<!DOCTYPE HTML>
+<html lang="{{ page.lang }}">
+
+{% comment %}
+<!-- on non-translated pages (e.g. Download page), use conditionals to
+use the base template -->
+{% endcomment %}
+
+<head>
+{% include layout/base-core/html-head-jquery-css.html %}
+{% include layout/base/html-head.html %}
+{% include layout/base-core/html-head-extra.html %}
+</head>
+
+<body>
+{% include layout/base/pagetop-detect-mobile.html %}
+{% include layout/base/pagetop-alert.html %}
+
+<div class="head"><div>
+  {% include layout/base/head-language-dropdown.html %}
+  {% include layout/base/head-mobile-menu.html %}
+  {% if page.lang == 'en' %}
+    {% include layout/base-core/head-logo.html %}
+    {% include layout/base/head-language-select.html %}
+    {% include layout/base-core/head-menu.html %}
+  {% else %}
+    {% include layout/base/head-logo.html %}
+    {% include layout/base/head-language-select.html %}
+    {% include layout/base/head-menu.html %}
+  {% endif %}
+</div></div>
+
+<div class="body">
+  {% if page.lang == 'en' %}
+    {% include layout/base/breadcrumbs.html %}
+  {% endif %}
+  {% include layout/base-core/content.html %}
+  <div class="footer">
+    {% include layout/base/footer-menu.html %}
+    {% include layout/base/footer-sponsor.html %}
+    {% include layout/base/footer-license.html %}
+  </div>
+</div>
+
+{% include layout/base-core/footer-js-extra.html %}
+{% include layout/base/footer-js.html %}
+</body>
+
+</html>

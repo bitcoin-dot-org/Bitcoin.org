@@ -56,7 +56,8 @@ pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignme
     check-for-missing-rpc-summaries \
     check-for-missing-copyright-licenses \
     check-bundle \
-    check-for-english-in-en-dir
+    check-for-english-in-en-dir \
+    check-for-consistent-bitcoin-core-titles
 
 ## Post-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
 post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
@@ -151,7 +152,7 @@ check-for-non-ascii-urls:
 ## characters or spaces.
 	$S find _translations -name '*.yml' -type f | while read file \
 	    ; do grep -H . $$file | sed -n -e '/url:/,$$p' \
-	    | grep -P ': +[a-z0-9\-]+: +.*([^\x00-\x7f]|[^a-z0-9\-"]).*$$' \
+	    | grep -P ': +[a-z0-9\-]+: +.*([^\x00-\x7f]|[^a-z0-9\/\-"]).*$$' \
 	; done | eval $(ERROR_ON_OUTPUT)
 
 check-for-broken-kramdown-tables:
@@ -278,3 +279,8 @@ check-for-javascript-in-svgs:
 check-for-english-in-en-dir:
 ## All pages must have page.lang set to work properly with the site templates
 	$S grep -rl -- '---' en/ | xargs grep -L '^ *lang: *en' | eval $(ERROR_ON_OUTPUT)
+
+check-for-consistent-bitcoin-core-titles:
+## Ensure all page titles in the en/bitcoin-core/ hierarchy mention
+## Bitcoin Core
+	$S grep -r -L '^title:.*Bitcoin Core' en/bitcoin-core/ | eval $(ERROR_ON_OUTPUT)

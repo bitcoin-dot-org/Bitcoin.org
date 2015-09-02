@@ -1,0 +1,9 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+{% comment %}<!-- Try to minimize the amount of JS on the download page -->{% endcomment %}
+{% if page.id != 'download' %}
+  <script src="/js/bitcoin-core.js"></script>
+{% endif %}

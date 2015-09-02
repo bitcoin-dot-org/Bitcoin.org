@@ -12,11 +12,20 @@ http://opensource.org/licenses/MIT.
           {% for synonym in page.required.synonyms_shown_in_glossary_capitalize_first_letter %}
             {% if forloop.first %}{{synonym}}{% endif %}
           {% endfor %}
+        {% when "RELEASE" %}
+          {% comment %}<!-- for Bitcoin Core releases, show the version number -->{% endcomment %}
+          {{page.required_version}}
         {% else %}{{crumb}}
       {% endcase %}
     {% else %}
       {% case crumb %}
         {% comment %}/// Alphabetical order by crumb \\\{% endcomment %}
+        {% when "bcc" %}<a href="/en/bitcoin-core/">Core</a>
+        {% when "bcc contribute" %}<a href="/en/bitcoin-core/contribute/">Contribute</a>
+        {% when "bcc documentation" %}<a href="/en/bitcoin-core/help#documentation">Documentation</a>
+        {% when "bcc features" %}<a href="/en/bitcoin-core/features/">Features</a>
+        {% when "bcc help" %}<a href="/en/bitcoin-core/help">Help</a>
+        {% when "bcc news" %}<a href="/en/version-history">News</a>
         {% when "bitcoin" %}<a href="/{{page.lang}}/">{% translate bitcoin vocabulary %}</a>
         {% when "dev docs" %}<a href="/en/developer-documentation">Dev Docs</a>
         {% when "glossary" %}<a href="/en/developer-glossary">Glossary</a>

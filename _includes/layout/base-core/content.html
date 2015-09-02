@@ -1,0 +1,10 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+<div id="content" class="content">
+<div {% if page.columns == 1 and page.lang == 'en' %}class="one-column"{% endif %}>
+  {{ content }}
+</div>
+</div>

@@ -178,7 +178,35 @@ http://opensource.org/licenses/MIT.
 [tx message]: /en/developer-reference#tx "A P2P protocol message which sends a single serialized transaction"
 [verack message]: /en/developer-reference#verack "A P2P network message sent in reply to a version message to confirm a connection has been established"
 [version message]: /en/developer-reference#version "A P2P network message sent at the begining of a connection to allow protocol version negotiation"
+
 {% comment %}<!-- Other internal site links; alphabetical order -->{% endcomment %}
+[bandwidth sharing guide]: /en/full-node
+[bcc contribute]: /{{page.lang}}/{% translate bitcoin-core-contribute url %}
+[bcc contribute code]: /{{page.lang}}/{% translate development url %}
+[bcc contribute documentation]: /{{page.lang}}/{% translate bitcoin-core-contribute-documentation url %}
+[bcc contribute issues]: /{{page.lang}}/{% translate bitcoin-core-contribute-issues url %}
+[bcc contribute support]: /{{page.lang}}/{% translate bitcoin-core-contribute-tech-support url %}
+[bcc contribute translations]: /{{page.lang}}/{% translate bitcoin-core-contribute-translations url %}
+[bcc decentralized peer discovery]: /{{page.lang}}/{% translate bitcoin-core-privacy url %}#decentralized-peer-discovery
+[bcc documentation]: /{{page.lang}}/{% translate bitcoin-core-help url %}#documentation
+[bcc download]: /{{page.lang}}/{% translate download url %}
+[bcc features]: /{{page.lang}}/{% translate bitcoin-core-features url %}
+[bcc forums]: /{{page.lang}}/{% translate bitcoin-core-help url %}#forums
+[bcc help]: /{{page.lang}}/{% translate bitcoin-core-help url %}
+[bcc live help]: /{{page.lang}}/{% translate bitcoin-core-help url %}#live
+[bcc main]: /{{page.lang}}/{% translate bitcoin-core-overview url %}
+[bcc network support]: /{{page.lang}}/{% translate bitcoin-core-network-support url %}
+[bcc privacy]: /{{page.lang}}/{% translate bitcoin-core-privacy url %}
+[bcc privacy data leaking]: /{{page.lang}}/{% translate bitcoin-core-privacy url %}#perfect-privacy-for-received-transactions
+[bcc requirements]: /{{page.lang}}/{% translate bitcoin-core-requirements url %}
+[bcc user interface]: /{{page.lang}}/{% translate bitcoin-core-user-interface url %}
+[bcc user interface lightweight]: /{{page.lang}}/{% translate bitcoin-core-user-interface url %}#lightweight
+[bcc validation]: /{{page.lang}}/{% translate bitcoin-core-validation url %}
+[bcc validation decentralization]: /{{page.lang}}/{% translate bitcoin-core-validation url %}#help-protect-decentralization
+[bcc validation do you validate]: /{{page.lang}}/{% translate bitcoin-core-validation url %}#do-you-validate
+[bcc validation protection]: /{{page.lang}}/{% translate bitcoin-core-validation url %}#how-validation-protects-your-bitcoins
+[bcc version history]: /en/version-history
+
 [Bitcoin Core 0.6.0]: /en/release/v0.6.0
 [Bitcoin Core 0.6.1]: /en/release/v0.6.1
 [Bitcoin Core 0.7.0]: /en/release/v0.7.0
@@ -192,8 +220,11 @@ http://opensource.org/licenses/MIT.
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [bitcoind initial setup]: /en/developer-examples
 [bitcoinpdf]: https://bitcoin.org/en/bitcoin-paper
+[choose your wallet]: /en/choose-your-wallet
+[communities]: /en/community
 [core executable]: /en/download
 [dev communities]: /en/development#devcommunities
+[developer documentation]: /en/developer-documentation
 [devex complex raw transaction]: /en/developer-examples#complex-raw-transaction
 [devex payment protocol]: /en/developer-examples#payment-protocol
 [devexamples]: /en/developer-examples
@@ -202,12 +233,14 @@ http://opensource.org/licenses/MIT.
 [devguide hardened keys]: /en/developer-guide#hardened-keys
 [devguide payment processing]: /en/developer-guide#payment-processing
 [devguide wallets]: /en/developer-guide#wallets
+[devref]: /en/developer-reference
 [devref wallets]: /en/developer-reference#wallets
 [locktime parsing rules]: /en/developer-guide#locktime_parsing_rules
 [Merge Avoidance subsection]: /en/developer-guide#merge-avoidance
 [micropayment channel]: /en/developer-guide#term-micropayment-channel
 [not a specification]: /en/developer-reference#not-a-specification
 [raw transaction format]: /en/developer-reference#raw-transaction-format
+[REST]: /en/developer-reference#http-rest
 [RPC]: /en/developer-reference#remote-procedure-calls-rpcs
 [RPCs]: /en/developer-reference#remote-procedure-calls-rpcs
 [section block chain]: /en/developer-guide#block-chain
@@ -227,6 +260,7 @@ http://opensource.org/licenses/MIT.
 [section serialized blocks]: /en/developer-reference#serialized-blocks
 [section simple raw transaction]: /en/developer-examples#simple-raw-transaction
 [section verifying payment]: /en/developer-guide#verifying-payment
+[secure your wallet]: /en/secure-your-wallet
 [signature script modification warning]: /en/developer-reference#signature_script_modification_warning
 [v0.8 chain fork]: /en/alert/2013-03-11-chain-fork
 [Verification subsection]: /en/developer-guide#verifying-payment
@@ -258,20 +292,42 @@ http://opensource.org/licenses/MIT.
 [secp256k1]: http://www.secg.org/sec2-v2.pdf
 
 {% comment %}<!-- Other external site links; alphabetical order -->{% endcomment %}
+[#bitcoin]: https://webchat.freenode.net/?channels=bitcoin&uio=d4
+[#bitcoin-dev]: https://webchat.freenode.net/?channels=bitcoin-dev&uio=d4
+[#bitcoin-mining]: https://webchat.freenode.net/?channels=bitcoin-mining&uio=d4
+[#bitcoin-wiki]: https://webchat.freenode.net/?channels=bitcoin-wiki&uio=d4
+[0bin]: http://0bin.net/
+[bcc automated testing]: https://github.com/bitcoin/bitcoin/blob/master/README.md#automated-testing
+[bcc configuration]: https://en.bitcoin.it/wiki/Running_bitcoin
+[bcc data directory]: https://en.bitcoin.it/wiki/Data_directory
+[bcc issues]: https://github.com/bitcoin/bitcoin/issues
+[bcc new issue]: https://github.com/bitcoin/bitcoin/issues/new
+[bcc pulls]: https://github.com/bitcoin/bitcoin/pulls
+[bcc tor]: https://en.bitcoin.it/wiki/Tor
+[bcc tor hs]: https://en.bitcoin.it/wiki/Tor#Hidden_services
 [BFGMiner]: https://github.com/luke-jr/bfgminer
+[Bitcoin beginners]: http://www.reddit.com/r/bitcoinbeginners
 [Bitcoin Core]: https://bitcoin.org/en/download
 [Bitcoin Core 0.1.6]: https://github.com/bitcoin/bitcoin/commit/cc0b4c3b62367a2aebe5fc1f4d0ed4b97e9c2ac9
 [Bitcoin Core 0.2.9]: https://github.com/bitcoin/bitcoin/commit/42605ce8bcc9bd01b86491c74fee14de77960868
 [Bitcoin Core 0.3.11]: https://github.com/bitcoin/bitcoin/commit/343328c6b8db85e58a1feea85f0d10e62967fa19
 [Bitcoin Core 0.3.15]: https://github.com/bitcoin/bitcoin/commit/c891967b6fcab2e8dc4ce0c787312b36c07efa4d
 [Bitcoin Core 0.3.18]: https://github.com/bitcoin/bitcoin/commit/82201801336f64ee77851b9eaab9383ee4e442f0
+[Bitcoin Core build unix]: https://github.com/bitcoin/bitcoin/blob/master/doc/build-unix.md
+[Bitcoin Core docs directory]: https://github.com/bitcoin/bitcoin/tree/master/doc
 [bitcoin core fee drop commit]: https://github.com/bitcoin/bitcoin/commit/6a4c196dd64da2fd33dc7ae77a8cdd3e4cf0eff1
 [Bitcoin Core issue #2381]: https://github.com/bitcoin/bitcoin/issues/2381
 [Bitcoin Core master]: https://github.com/bitcoin/bitcoin
 [Bitcoin Core pull #4468]: https://github.com/bitcoin/bitcoin/pull/4468
+[Bitcoin core transifex]: https://www.transifex.com/projects/p/bitcoin/
+[Bitcoin reddit]: http://www.reddit.com/r/Bitcoin
+[Bitcoin reddit new]: http://www.reddit.com/r/Bitcoin/new
 [Bitcoin Seeder]: https://github.com/sipa/bitcoin-seeder
+[Bitcoin stackexchange]: http://bitcoin.stackexchange.com
+[Bitcoin stackexchange tag bitcoin-qt]: http://bitcoin.stackexchange.com/questions/tagged/bitcoin-qt
 [bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation
 [BitcoinJ]: http://bitcoinj.github.io
+[BitcoinJ documentation about pending transaction safety]: https://bitcoinj.github.io/security-model#pending-transactions
 [bitcoinj micropayment tutorial]: https://bitcoinj.github.io/working-with-micropayments
 [block170]: https://www.biteasy.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
 [casascius address utility]: https://github.com/casascius/Bitcoin-Address-Utility
@@ -288,41 +344,63 @@ http://opensource.org/licenses/MIT.
 [DNS Seed Policy]: https://github.com/bitcoin/bitcoin/blob/master/doc/dnsseed-policy.md
 [docs issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues
 [ECDSA]: https://en.wikipedia.org/wiki/Elliptic_Curve_DSA
+[edit bandwidth sharing guide]: https://github.com/bitcoin-dot-org/bitcoin.org/edit/master/en/full-node.md
 [Electrum server]: https://github.com/spesmilo/electrum-server
 [Eloipool]: https://github.com/luke-jr/eloipool
 [errors in docs]: https://github.com/bitcoin-dot-org/bitcoin.org/issues?q=is%3Aissue+label%3A%22Dev+Docs%22
+[fake satoshi transaction]: https://www.reddit.com/r/Bitcoin/comments/3fv42j/blockchaininfo_spoofed_transactions_problem_aug_4/
 [forum tech support]: https://bitcointalk.org/index.php?board=4.0
+[ghash betcoin double spend]: https://bitcointalk.org/index.php?topic=321630.msg3445371
+[gitian sigs]: https://github.com/bitcoin/gitian.sigs
 [high-speed block relay network]: https://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg03189.html
 [HMAC-SHA512]: https://en.wikipedia.org/wiki/HMAC
 [HTTP basic authentication]: https://en.wikipedia.org/wiki/Basic_access_authentication
 [HTTP longpoll]: https://en.wikipedia.org/wiki/Push_technology#Long_polling
+[information theoretic security]: https://en.wikipedia.org/wiki/Information_theoretic_security
+[inherit bitcoins]: http://bitcoin.stackexchange.com/q/38692/21052
 [IP-to-IP payment protocol]: https://en.bitcoin.it/wiki/IP_Transactions
 [IPv4-mapped IPv6 addresses]: http://en.wikipedia.org/wiki/IPv6#IPv4-mapped_IPv6_addresses
 [irc channels]: https://en.bitcoin.it/wiki/IRC_channels
 [JSON-RPC version 1.0]: http://json-rpc.org/wiki/specification
 [JSON-RPC request batching]: http://www.jsonrpc.org/specification#batch
+[july 2015 chain forks]: https://en.bitcoin.it/wiki/July_2015_chain_forks
 [libblkmaker]: https://github.com/bitcoin/libblkmaker
 [localhost]: https://en.wikipedia.org/wiki/Localhost
+[lying consistently is hard]: https://groups.google.com/forum/#!msg/bitcoinj/Ys13qkTwcNg/9qxnhwnkeoIJ
 [makeseeds script]: https://github.com/bitcoin/bitcoin/tree/master/contrib/seeds
+[mozilla's bug reporting documentation]: https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines#Writing_precise_steps_to_reproduce
 [murmur3]: https://en.wikipedia.org/wiki/MurmurHash
 [man-in-the-middle]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack
 [MIME]: https://en.wikipedia.org/wiki/Internet_media_type
+[MIT license]: http://opensource.org/licenses/MIT
 [mozrootstore]: https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+[native irc client]: https://en.wikipedia.org/wiki/List_of_IRC_clients
 [netcat]: https://en.wikipedia.org/wiki/Netcat
 [nop op codes]: https://en.bitcoin.it/wiki/Script#Reserved_words
+[offline transactions]: http://bitcoin.stackexchange.com/a/34122/21052
+[open a pull request]: https://github.com/bitcoin-dot-org/bitcoin.org#working-with-github
+[open an issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
 [Payment Request Generator]: http://bitcoincore.org/~gavin/createpaymentrequest.php
 [Piotr Piasecki's testnet faucet]: https://tpfaucet.appspot.com/
 [prime symbol]: https://en.wikipedia.org/wiki/Prime_%28symbol%29
 [protobuf]: https://developers.google.com/protocol-buffers/
 [python-bitcoinlib]: https://github.com/petertodd/python-bitcoinlib
 [python-blkmaker]: https://gitorious.org/bitcoin/python-blkmaker
+[setup tor]: https://www.torproject.org/
 [SHA256]: https://en.wikipedia.org/wiki/SHA-2
 [Stratum mining protocol]: http://mining.bitcoin.cz/stratum-mining
+[study of SPV privacy over tor]: http://arxiv.org/abs/1410.6079
 [Tor]: https://en.wikipedia.org/wiki/Tor_%28anonymity_network%29
+[transifex]: https://www.transifex.com/projects/p/bitcoinorg/
 [unix epoch time]: https://en.wikipedia.org/wiki/Unix_time
 [URI encoded]: https://tools.ietf.org/html/rfc3986
+[wiki bitcoin core compatible devices arm]: https://en.bitcoin.it/wiki/Bitcoin_Core_compatible_devices#ARM-based_Chipsets
+[wiki bitcoin core documentation]: https://en.bitcoin.it/wiki/Category:Bitcoin_Core_documentation
+[wiki create account]: https://en.bitcoin.it/w/index.php?title=Special:UserLogin&type=signup
+[wiki enable editing]: https://en.bitcoin.it/wiki/Bitcoin_Wiki:Editing_privileges
 [wiki getblocktemplate]: https://en.bitcoin.it/wiki/Getblocktemplate
 [wiki proper money handling]: https://en.bitcoin.it/wiki/Proper_Money_Handling_%28JSON-RPC%29
+[wiki template bitcoin core documentation]: https://en.bitcoin.it/wiki/Template:Bitcoin_Core_documentation
 [wiki script]: https://en.bitcoin.it/wiki/Script
 [x509]: https://en.wikipedia.org/wiki/X.509
 

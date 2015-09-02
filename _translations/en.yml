@@ -28,6 +28,50 @@ en:
     owners: "Domain Owners"
     partial_list: "Partial List"
     github: "Contributors on GitHub"
+  bitcoin-core-overview:
+    title: "Bitcoin Core"
+    bitcoin-core: "Bitcoin Core"
+    bitcoin-core-slogan: "Helping <b>you</b> keep Bitcoin decentralized"
+    download-bitcoin-core: "Download Bitcoin Core"
+    about1: >
+      Bitcoin Core is programmed to decide which block chain contains
+      valid transactions. The users of Bitcoin Core only accept
+      transactions for that block chain, making it the Bitcoin block
+      chain that everyone else wants to use.
+
+    about2: >
+      It is these users who <b>keep Bitcoin decentralized.</b> They
+      individually run their own Bitcoin Core full nodes, and each of
+      those full nodes separately follows the exact same rules to decide
+      which block chain is valid.
+
+    about3: >
+      There's no voting or other corruptible process involved: there's
+      just individual software following identical rules—"math"—to
+      evaluate identical blocks and coming to identical conclusions
+      about which block chain is valid.
+
+    about4: >
+      This shared agreement (called consensus) allows people like you to
+      only accept valid bitcoins, <b>enforcing Bitcoin's rules</b> against
+      even the most powerful miners.
+
+    about5: >
+      In addition to improving Bitcoin's decentralization, Bitcoin Core
+      users get better security for their bitcoins, privacy features not
+      available in other wallets, a choice of user interfaces, and
+      several other powerful features.
+
+    read-more: "Read more"
+    news: "News"
+
+    more-news-and-rss: >
+      For more news, see the complete list of <a
+      href="/en/version-history">Bitcoin Core releases</a>. For
+      notifications of new releases, <a type="application/rss+xml"
+      href="/en/rss/releases.rss">subscribe to the RSS feed</a>.
+
+
   bitcoin-for-businesses:
     title: "Bitcoin for Businesses - Bitcoin"
     pagetitle: "Bitcoin for Businesses"
@@ -285,6 +329,7 @@ en:
     involvetxt1: "Bitcoin is free software and any developer can contribute to the project. Everything you need is in the <a href=\"https://github.com/bitcoin/bitcoin\">GitHub repository</a>. Please make sure to read and follow the development process described in the README, as well as to provide good quality code and respect all guidelines."
     involvetxt2: "Development discussion takes place on GitHub and the <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> mailing list. Less formal development discussion happens on irc.freenode.net #bitcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">web interface</a>, <a href=\"http://bitcoinstats.com\">logs</a>)."
     more: "More free software projects"
+    morewant: "Want to contribute to a different project?"
     morechoose: "You can choose a project to contribute to by answering a few <a href=\"http://whatcanidoforbitcoin.xyz/\">questions about your skills</a>."
     moremore: "Show more..."
     contributors: "Bitcoin Core contributors"
@@ -831,8 +876,37 @@ en:
     sponsor: "A community website sponsored by"
     getstarted: "Get started with Bitcoin"
     bitcoin-core: "Bitcoin Core"
+    menu-bcc-features: "Features"
+    menu-bcc-features-overview: "Overview"
+    menu-bcc-help: "Get Help"
+    menu-bcc-contribute: "Contribute"
+    menu-bcc-news: "News"
+    menu-bcc-download: "Download"
+    menu-bcc-validation: "Validation"
+    menu-bcc-privacy: "Privacy"
+    menu-bcc-requirements: "Requirements"
+    menu-bcc-user-interface: "User Interface"
+    menu-bcc-network-support: "Network Support"
+    menu-bcc-contribute-issues: "Bug reports"
+    menu-bcc-contribute-code: "Code"
+    menu-bcc-contribute-documentation: "Documentation"
+    menu-bcc-contribute-translations: "Translations"
+    menu-bcc-contribute-tech-support: "Tech Support"
   url:
     about-us: about-us
+    bitcoin-core-contribute: bitcoin-core/contribute/
+    bitcoin-core-contribute-documentation: bitcoin-core/contribute/documentation
+    bitcoin-core-contribute-issues: bitcoin-core/contribute/issues
+    bitcoin-core-contribute-translations: bitcoin-core/contribute/translations
+    bitcoin-core-contribute-tech-support: bitcoin-core/contribute/support
+    bitcoin-core-features: bitcoin-core/features/
+    bitcoin-core-help: bitcoin-core/help
+    bitcoin-core-network-support: bitcoin-core/features/network-support
+    bitcoin-core-overview: bitcoin-core/
+    bitcoin-core-privacy: bitcoin-core/features/privacy
+    bitcoin-core-requirements: bitcoin-core/features/requirements
+    bitcoin-core-user-interface: bitcoin-core/features/user-interface
+    bitcoin-core-validation: bitcoin-core/features/validation
     bitcoin-for-developers: bitcoin-for-developers
     bitcoin-for-individuals: bitcoin-for-individuals
     bitcoin-for-businesses: bitcoin-for-businesses

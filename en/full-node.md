@@ -2,10 +2,15 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-layout: base
+layout: base-core
 lang: en
 id: full-node
 title: "Running A Full Node - Bitcoin"
+breadcrumbs:
+  - bitcoin
+  - bcc
+  - bcc documentation
+  - Bandwidth sharing
 ---
 
 <!-- Variable assignment
@@ -186,29 +191,7 @@ have an easy-to-use node.
 
 ### Possible Problems
 
-* **Legal:** Bitcoin use is [prohibited or restricted in some
-  areas.](https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country)
-
-* **Bandwidth limits**: Some Internet plans will charge an additional
-  amount for any excess upload bandwidth used that isn't included in
-  the plan. Worse, some providers may terminate your connection without
-  warning because of overuse. We advise that you check whether your
-  Internet connection is subjected to such limitations and monitor your
-  bandwidth use so that you can stop Bitcoin Core before you reach your
-  upload limit.
-
-* **Anti-virus:** Several people have placed parts of known computer
-  viruses in the Bitcoin block chain. This block chain data can't infect
-  your computer, but some anti-virus programs quarantine the data
-  anyway, making it more difficult to run a full node. This problem mostly
-  affects computers running Windows.
-
-* **Attack target:** People who want to disrupt the Bitcoin network may
-  attack full nodes in ways that will affect other things you do with
-  your computer, such as an attack that limits your available download
-  bandwidth or an attack that prevents you from using your full node's
-  wallet for sending transactions.
-
+{% include bitcoin-core/bitcoin-core-possible-problems.md %}
 
 ## Linux Instructions
 
