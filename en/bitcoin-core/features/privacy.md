@@ -127,8 +127,8 @@ privacy. They can increase it by mixing your transactions with those of
 other users; they can decrease it by tracking your activity and directly
 associating it with your real name or other identifying information.
 
-<p class="center">
-Click an entry below to show it:<br>
+<p class="center service-choose">
+<a>Click an entry below to show it:</a>
 
 {% for service in page.third_party_privacy %}
   {% if service.name != 'Bitcoin Core' %}
