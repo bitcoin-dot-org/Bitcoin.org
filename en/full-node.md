@@ -1109,22 +1109,22 @@ automatically started minimized in the task bar.
 
 The Bitcoin Core daemon (bitcoind) is not included in the .dmg file you may have downloaded to install Bitcoin-QT. Bitcoind, along with its support binaries, is instead included in the OS X .tar.gz file listed on the official Bitcoin Core download page. To download this file using Terminal, execute the following command:
 
-    curl -O https://bitcoin.org/bin/bitcoin-core-0.11.0/bitcoin-0.11.0-osx64.tar.gz
+    curl -O https://bitcoin.org/bin/bitcoin-core-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-osx64.tar.gz
 
 {{verifyReleaseSignatures}}
 
 Extract bitcoind and its support binaries from the archive we just downloaded by running this command in Terminal:
 
-    tar -zxvf bitcoin-0.11.0-osx64.tar.gz
+    tar -zxf bitcoin-{{site.DOWNLOAD_VERSION}}-osx64.tar.gz
 
 Now we'll move the executables into your default path to make running and stopping bitcoind easier. To move the executables, run these commands (note that we have to use `sudo` to perform these commands since we are modifying directories owned by root):
 
     sudo mkdir -p /usr/local/bin
-    sudo cp bitcoin-0.11.0/bin/bitcoin* /usr/local/bin/.
+    sudo cp bitcoin-{{site.DOWNLOAD_VERSION}}/bin/bitcoin* /usr/local/bin/.
 
 To clean up the directory we've been working in, run:
 
-    rm -rf bitcoin-0.11.0*
+    rm -rf bitcoin-{{site.DOWNLOAD_VERSION}}*
 
 Before we can run bitcoind, we need to make sure that it has a place to store the blockchain and a config file that contains a username and password for the daemon. The commands below will set up your bitcoin directory and give bitcoind a default username and a random password (you do not need to remember the password for standard operation).
 
