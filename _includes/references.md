@@ -294,12 +294,15 @@ http://opensource.org/licenses/MIT.
 [forum tech support]: https://bitcointalk.org/index.php?board=4.0
 [high-speed block relay network]: https://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg03189.html
 [HMAC-SHA512]: https://en.wikipedia.org/wiki/HMAC
-[HTTP JSON-RPC version 1.0]: https://en.wikipedia.org/wiki/JSON-RPC
+[HTTP basic authentication]: https://en.wikipedia.org/wiki/Basic_access_authentication
 [HTTP longpoll]: https://en.wikipedia.org/wiki/Push_technology#Long_polling
 [IP-to-IP payment protocol]: https://en.bitcoin.it/wiki/IP_Transactions
 [IPv4-mapped IPv6 addresses]: http://en.wikipedia.org/wiki/IPv6#IPv4-mapped_IPv6_addresses
 [irc channels]: https://en.bitcoin.it/wiki/IRC_channels
+[JSON-RPC version 1.0]: http://json-rpc.org/wiki/specification
+[JSON-RPC request batching]: http://www.jsonrpc.org/specification#batch
 [libblkmaker]: https://github.com/bitcoin/libblkmaker
+[localhost]: https://en.wikipedia.org/wiki/Localhost
 [makeseeds script]: https://github.com/bitcoin/bitcoin/tree/master/contrib/seeds
 [murmur3]: https://en.wikipedia.org/wiki/MurmurHash
 [man-in-the-middle]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack
