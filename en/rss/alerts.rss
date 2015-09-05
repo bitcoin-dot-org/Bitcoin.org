@@ -15,13 +15,14 @@ lang: en
 		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
 		<link>https://bitcoin.org/en/alerts</link>
 	</image>
-	{% filter_for p in site.pages reversed sort_by:date category:alert %}
+        {% assign date_sorted_alerts = site.alerts | sort: 'date' %}
+	{% for p in date_sorted_alerts reversed %}
         <item>
             <title>{{ p.title | htmlescape }}</title>
-            <link>https://bitcoin.org{{ p.url | replace:'.html','' }}</link>
-            <guid>https://bitcoin.org{{ p.url | replace:'.html','' }}</guid>
+            <link>https://bitcoin.org{{ p.url }}</link>
+            <guid>https://bitcoin.org{{ p.url }}</guid>
             <pubDate>{{ p.date | date: "%a, %d %b %Y" }} 00:00:00 GMT</pubDate>
         </item>
-	{% endfilter_for %}
+	{% endfor %}
 </channel>
 </rss>

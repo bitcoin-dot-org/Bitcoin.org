@@ -5,6 +5,8 @@
 layout: base
 id: events
 ---
+{% assign date_sorted_conferences = site.conferences | sort: 'date' %}
+{% assign date_sorted_meetups = site.meetups | sort: 'date' %}
 <!-- Note: this file is built non-deterministically -->
 <link rel="alternate" type="application/rss+xml" href="/en/rss/events.rss" title="Bitcoin conferences and events">
 <h1>{% translate pagetitle %}<a type="application/rss+xml" href="/en/rss/events.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
@@ -18,21 +20,21 @@ id: events
 <div id="eventmap" class="eventmap"></div>
 <div id="eventdata" class="eventdata">
 
-{% filter_for p in site.conferences sort_by:date %}{% if p.geoloc %}
+{% for p in date_sorted_conferences %}{% if p.geoloc %}
 <div data-lat="{{ p.geoloc.lat }}" data-lon="{{ p.geoloc.lon }}"><b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div>
-{% endif %}{% endfilter_for %}
+{% endif %}{% endfor %}
 
-{% filter_for p in site.meetups sort_by:date %}{% if p.geoloc %}
+{% for p in date_sorted_meetups %}{% if p.geoloc %}
 <div data-lat="{{ p.geoloc.lat }}" data-lon="{{ p.geoloc.lon }}"><b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div>
-{% endif %}{% endfilter_for %}
+{% endif %}{% endfor %}
 
 </div>
 <script src="/js/events.js"></script>
 <h2 id="upcoming">{% translate upcoming %}</h2>
 <div class="listtable eventtable">
-{% filter_for p in site.conferences sort_by:date %}
+{% for p in date_sorted_conferences %}
   <div><div>{{ p.date | date:"%Y-%m-%d" }}</div><div><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></div><div>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div></div>
-{% endfilter_for %}
+{% endfor %}
   <span><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20event&amp;body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22">{% translate eventsubmit %}</a></span>
 </div>
 
