@@ -39,27 +39,27 @@ end_of_page: |
 paragraph at the end of one file from breaking the heading at the start
 of the following file. -->
 
-{% include fragment_reviews_needed.md %}
+{% include devdoc/fragment_reviews_needed.md %}
 
 <input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
 
-{% include guide_intro.md %}
+{% include devdoc/guide_intro.md %}
 
-{% include guide_block_chain.md %}
+{% include devdoc/guide_block_chain.md %}
 
-{% include guide_transactions.md %}
+{% include devdoc/guide_transactions.md %}
 
-{% include guide_contracts.md %}
+{% include devdoc/guide_contracts.md %}
 
-{% include guide_wallets.md %}
+{% include devdoc/guide_wallets.md %}
 
-{% include guide_payment_processing.md %}
+{% include devdoc/guide_payment_processing.md %}
 
-{% include guide_operating_modes.md %}
+{% include devdoc/guide_operating_modes.md %}
 
-{% include guide_p2p_network.md %}
+{% include devdoc/guide_p2p_network.md %}
 
-{% include guide_mining.md %}
+{% include devdoc/guide_mining.md %}
 
 {% include references.md %}
 {{site.glossary_links}}
