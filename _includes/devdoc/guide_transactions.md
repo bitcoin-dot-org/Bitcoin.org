@@ -452,14 +452,11 @@ receive an error.
 If you create a redeem script, hash it, and use the hash
 in a P2SH output, the network sees only the hash, so it will accept the
 output as valid no matter what the redeem script says.
-This allows
-payment to non-standard pubkey script almost as easily as payment to
-standard pubkey scripts. However, when you go to
-spend that output, peers and miners using the default settings will
-check the redeem script to see whether or not it's a standard pubkey script.
-If it isn't, they won't process it further---so it will be
-impossible to spend that output until you find a miner who disables the
-default settings.
+This allows payment to non-standard scripts, and as of Bitcoin Core
+0.11, almost all valid redeem scripts can be spent. The exception is
+scripts that use unassigned [NOP op codes][]; these op codes are
+reserved for future soft forks and can only be relayed or mined by nodes
+that don't follow the standard mempool policy.
 
 Note: standard transactions are designed to protect and help the
 network, not prevent you from making mistakes. It's easy to create

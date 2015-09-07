@@ -309,6 +309,7 @@ http://opensource.org/licenses/MIT.
 [MIME]: https://en.wikipedia.org/wiki/Internet_media_type
 [mozrootstore]: https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 [netcat]: https://en.wikipedia.org/wiki/Netcat
+[nop op codes]: https://en.bitcoin.it/wiki/Script#Reserved_words
 [Payment Request Generator]: http://bitcoincore.org/~gavin/createpaymentrequest.php
 [Piotr Piasecki's testnet faucet]: https://tpfaucet.appspot.com/
 [prime symbol]: https://en.wikipedia.org/wiki/Prime_%28symbol%29
