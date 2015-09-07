@@ -36,25 +36,25 @@ end_of_page: |
 </div></div>
 <div markdown="1" class="toccontent">
 
-{% include fragment_reviews_needed.md %}
+{% include devdoc/fragment_reviews_needed.md %}
 
 <input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
 
-{% include ref_intro.md %}
+{% include devdoc/ref_intro.md %}
 
-{% include ref_block_chain.md %}
+{% include devdoc/ref_block_chain.md %}
 
-{% include ref_transactions.md %}
+{% include devdoc/ref_transactions.md %}
 
-{% include ref_wallets.md %}
+{% include devdoc/ref_wallets.md %}
 
-{% include ref_p2p_networking.md %}
+{% include devdoc/ref_p2p_networking.md %}
 
-{% include ref/bitcoin-core/api-intro.md %}
+{% include devdoc/bitcoin-core/api-intro.md %}
 
-{% include ref/bitcoin-core/rpcs/intro.md %}
+{% include devdoc/bitcoin-core/rpcs/intro.md %}
 
-{% include ref/bitcoin-core/rpcs/quick-ref.md %}
+{% include devdoc/bitcoin-core/rpcs/quick-ref.md %}
 
 #### RPCs
 <!-- no subhead-links here -->
@@ -68,177 +68,177 @@ create a cross-site scripting (XSS) exploit. To avoid problems, please
 treat block chain and memory pool data as an arbitrary input from an
 untrusted source.
 
-{% include ref/bitcoin-core/rpcs/rpcs/addmultisigaddress.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/addmultisigaddress.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/addnode.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/addnode.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/backupwallet.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/backupwallet.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/createmultisig.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/createmultisig.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/createrawtransaction.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/createrawtransaction.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/decoderawtransaction.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/decoderawtransaction.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/decodescript.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/decodescript.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/dumpprivkey.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/dumpprivkey.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/dumpwallet.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/dumpwallet.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/encryptwallet.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/encryptwallet.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/estimatefee.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/estimatefee.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/estimatepriority.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/estimatepriority.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/generate.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/generate.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getaccountaddress.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getaccountaddress.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getaccount.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getaccount.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getaddednodeinfo.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getaddednodeinfo.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getaddressesbyaccount.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getaddressesbyaccount.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getbalance.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getbalance.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getbestblockhash.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getbestblockhash.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getblock.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getblock.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getblockchaininfo.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getblockchaininfo.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getblockcount.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getblockcount.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getblockhash.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getblockhash.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getblocktemplate.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getblocktemplate.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getchaintips.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getchaintips.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getconnectioncount.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getconnectioncount.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getdifficulty.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getdifficulty.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getgenerate.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getgenerate.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/gethashespersec.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/gethashespersec.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getinfo.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getinfo.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getmempoolinfo.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getmempoolinfo.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getmininginfo.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getmininginfo.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getnettotals.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getnettotals.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getnetworkhashps.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getnetworkhashps.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getnetworkinfo.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getnetworkinfo.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getnewaddress.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getnewaddress.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getpeerinfo.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getpeerinfo.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getrawchangeaddress.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getrawchangeaddress.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getrawmempool.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getrawmempool.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getrawtransaction.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getrawtransaction.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getreceivedbyaccount.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getreceivedbyaccount.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getreceivedbyaddress.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getreceivedbyaddress.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/gettransaction.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/gettransaction.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/gettxout.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/gettxout.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/gettxoutproof.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/gettxoutproof.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/gettxoutsetinfo.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/gettxoutsetinfo.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getunconfirmedbalance.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getunconfirmedbalance.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getwalletinfo.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getwalletinfo.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/getwork.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/getwork.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/help.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/help.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/importaddress.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/importaddress.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/importprivkey.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/importprivkey.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/importwallet.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/importwallet.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/keypoolrefill.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/keypoolrefill.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/listaccounts.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/listaccounts.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/listaddressgroupings.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/listaddressgroupings.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/listlockunspent.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/listlockunspent.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/listreceivedbyaccount.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/listreceivedbyaccount.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/listreceivedbyaddress.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/listreceivedbyaddress.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/listsinceblock.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/listsinceblock.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/listtransactions.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/listtransactions.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/listunspent.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/listunspent.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/lockunspent.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/lockunspent.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/move.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/move.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/ping.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/ping.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/prioritisetransaction.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/prioritisetransaction.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/sendfrom.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/sendfrom.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/sendmany.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/sendmany.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/sendrawtransaction.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/sendrawtransaction.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/sendtoaddress.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/sendtoaddress.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/setaccount.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/setaccount.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/setgenerate.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/setgenerate.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/settxfee.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/settxfee.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/signmessage.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/signmessage.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/signrawtransaction.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/signrawtransaction.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/stop.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/stop.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/submitblock.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/submitblock.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/validateaddress.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/validateaddress.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/verifychain.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/verifychain.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/verifymessage.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/verifymessage.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/verifytxoutproof.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/verifytxoutproof.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/walletlock.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/walletlock.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/walletpassphrase.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/walletpassphrase.md %}
 
-{% include ref/bitcoin-core/rpcs/rpcs/walletpassphrasechange.md %}
+{% include devdoc/bitcoin-core/rpcs/rpcs/walletpassphrasechange.md %}
 
-{% include ref/bitcoin-core/rest/intro.md %}
+{% include devdoc/bitcoin-core/rest/intro.md %}
 
-{% include ref/bitcoin-core/rest/quick-reference.md %}
+{% include devdoc/bitcoin-core/rest/quick-reference.md %}
 
 #### Requests
 <!-- no subhead-links here -->
@@ -252,11 +252,11 @@ create a cross-site scripting (XSS) exploit. To avoid problems, please
 treat block chain and memory pool data as an arbitrary input from an
 untrusted source.
 
-{% include ref/bitcoin-core/rest/requests/get_block.md %}
+{% include devdoc/bitcoin-core/rest/requests/get_block.md %}
 
-{% include ref/bitcoin-core/rest/requests/get_block-notxdetails.md %}
+{% include devdoc/bitcoin-core/rest/requests/get_block-notxdetails.md %}
 
-{% include ref/bitcoin-core/rest/requests/get_tx.md %}
+{% include devdoc/bitcoin-core/rest/requests/get_tx.md %}
 
 {% include references.md %}
 {{site.glossary_links}}

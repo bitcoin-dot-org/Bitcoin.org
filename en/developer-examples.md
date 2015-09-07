@@ -34,19 +34,19 @@ end_of_page: |
 </div></div>
 <div markdown="1" class="toccontent">
 
-{% include fragment_reviews_needed.md %}
+{% include devdoc/fragment_reviews_needed.md %}
 
 <input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
 
-{% include example_intro.md %}
+{% include devdoc/example_intro.md %}
 
-{% include example_testing.md %}
+{% include devdoc/example_testing.md %}
 
-{% include example_transactions.md %}
+{% include devdoc/example_transactions.md %}
 
-{% include example_payment_processing.md %}
+{% include devdoc/example_payment_processing.md %}
 
-{% include example_p2p_networking.md %}
+{% include devdoc/example_p2p_networking.md %}
 
 {% include references.md %}
 {{site.glossary_links}}
