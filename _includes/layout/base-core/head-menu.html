@@ -4,26 +4,26 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 
 <ul id="menusimple" class="menusimple menucore" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
-  <li><a>{% translate menu-bcc-features layout %}</a>
+  <li><a>Features</a>
     <ul>
-      <li{% if page.id == 'bitcoin-core-feature-overview' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate bitcoin-core-features url %}">{% translate menu-bcc-features-overview layout %}</a></li>
-      <li{% if page.id == 'bitcoin-core-validation' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate bitcoin-core-validation url %}">{% translate menu-bcc-validation layout %}</a></li>
-      <li{% if page.id == 'bitcoin-core-privacy' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate bitcoin-core-privacy url %}">{% translate menu-bcc-privacy layout %}</a></li>
-      <li{% if page.id == 'bitcoin-core-requirements' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate bitcoin-core-requirements url %}">{% translate menu-bcc-requirements layout %}</a></li>
-      <li{% if page.id == 'bitcoin-core-user-interface' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate bitcoin-core-user-interface url %}">{% translate menu-bcc-user-interface layout %}</a></li>
-      <li{% if page.id == 'bitcoin-core-donate-bandwidth' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate bitcoin-core-network-support url %}">{% translate menu-bcc-network-support layout %}</a></li>
+      <li{% if page.id == 'bitcoin-core-feature-overview' %} class="active"{% endif %}><a href="/en/bitcoin-core/features/">Overview</a></li>
+      <li{% if page.id == 'bitcoin-core-validation' %} class="active"{% endif %}><a href="/en/bitcoin-core/features/validation">Validation</a></li>
+      <li{% if page.id == 'bitcoin-core-privacy' %} class="active"{% endif %}><a href="/en/bitcoin-core/features/privacy">Privacy</a></li>
+      <li{% if page.id == 'bitcoin-core-requirements' %} class="active"{% endif %}><a href="/en/bitcoin-core/features/requirements">Requirements</a></li>
+      <li{% if page.id == 'bitcoin-core-user-interface' %} class="active"{% endif %}><a href="/en/bitcoin-core/features/user-interface">User Interface</a></li>
+      <li{% if page.id == 'bitcoin-core-donate-bandwidth' %} class="active"{% endif %}><a href="/en/bitcoin-core/features/network-support">Network Support</a></li>
     </ul>
   </li>
-  <li{% if page.id == 'bitcoin-core-help' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate bitcoin-core-help url %}">{% translate menu-bcc-help layout %}</a></li>
-  <li{% if page.id == 'bitcoin-core-contribute' %} class="active"{% endif %}><a>{% translate menu-bcc-contribute layout %}</a>
+  <li{% if page.id == 'bitcoin-core-help' %} class="active"{% endif %}><a href="/en/bitcoin-core/help">Get Help</a></li>
+  <li{% if page.id == 'bitcoin-core-contribute' %} class="active"{% endif %}><a>Contribute</a>
     <ul>
-      <li{% if page.id == 'bitcoin-core-contribute-issues' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate bitcoin-core-contribute-issues url %}">{% translate menu-bcc-contribute-issues layout %}</a></li>
-      <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate development url %}">{% translate menu-bcc-contribute-code layout %}</a></li>
-      <li{% if page.id == 'bitcoin-core-contribute-documentation' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate bitcoin-core-contribute-documentation url %}">{% translate menu-bcc-contribute-documentation layout %}</a></li>
-      <li{% if page.id == 'bitcoin-core-contribute-translations' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate bitcoin-core-contribute-translations url %}">{% translate menu-bcc-contribute-translations layout %}</a></li>
-      <li{% if page.id == 'bitcoin-core-contribute-tech-support' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate bitcoin-core-contribute-tech-support url %}">{% translate menu-bcc-contribute-tech-support layout %}</a></li>
+      <li{% if page.id == 'bitcoin-core-contribute-issues' %} class="active"{% endif %}><a href="/en/bitcoin-core/contribute/issues">Bug reports</a></li>
+      <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate development url %}">Code</a></li>
+      <li{% if page.id == 'bitcoin-core-contribute-documentation' %} class="active"{% endif %}><a href="/en/bitcoin-core/contribute/documentation">Documentation</a></li>
+      <li{% if page.id == 'bitcoin-core-contribute-translations' %} class="active"{% endif %}><a href="/en/bitcoin-core/contribute/translations">Translations</a></li>
+      <li{% if page.id == 'bitcoin-core-contribute-tech-support' %} class="active"{% endif %}><a href="/en/bitcoin-core/contribute/support">Tech Support</a></li>
     </ul>
   </li>
-  <li{% if page.id == 'version-history' %} class="active"{% endif %}><a href="/en/version-history">{% translate menu-bcc-news layout %}</a></li>
-  <li{% if page.id == 'download' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate download url %}">{% translate menu-bcc-download layout %}</a></li>
+  <li{% if page.id == 'version-history' %} class="active"{% endif %}><a href="/en/version-history">News</a></li>
+  <li{% if page.id == 'download' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate download url %}">Download</a></li>
 </ul>

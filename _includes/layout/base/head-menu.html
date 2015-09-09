@@ -21,12 +21,11 @@ http://opensource.org/licenses/MIT.
       {% if page.lang == 'en' %}<li{% if page.id == 'developer-documentation' %} class="active"{% endif %}><a href="/en/developer-documentation">Documentation</a></li>{% endif %}
       <li{% if page.id == 'vocabulary' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
       <li{% if page.id == 'events' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>
-      {% case page.lang %}
-      {% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl' or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'ja' or 'zh_CN' or 'zh_TW' %}
-        <li{% if page.id == 'download' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate download url %}">{% translate bitcoin-core layout %}</a></li>
+      {% if page.lang == 'en' %}
+        <li><a href="/en/bitcoin-core/">{% translate bitcoin-core layout %}</a></li>
       {% else %}
-        <li><a href="/{{page.lang}}/{% translate bitcoin-core-overview url %}">{% translate bitcoin-core layout %}</a></li>
-      {% endcase %}
+        <li{% if page.id == 'download' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate download url %}">{% translate bitcoin-core layout %}</a></li>
+      {% endif %}
     </ul>
   </li>
   <li{% if page.id == 'innovation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate innovation url %}">{% translate menu-innovation layout %}</a></li>

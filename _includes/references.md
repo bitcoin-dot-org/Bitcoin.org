@@ -181,30 +181,30 @@ http://opensource.org/licenses/MIT.
 
 {% comment %}<!-- Other internal site links; alphabetical order -->{% endcomment %}
 [bandwidth sharing guide]: /en/full-node
-[bcc contribute]: /{{page.lang}}/{% translate bitcoin-core-contribute url %}
+[bcc contribute]: /en/bitcoin-core/contribute/
 [bcc contribute code]: /{{page.lang}}/{% translate development url %}
-[bcc contribute documentation]: /{{page.lang}}/{% translate bitcoin-core-contribute-documentation url %}
-[bcc contribute issues]: /{{page.lang}}/{% translate bitcoin-core-contribute-issues url %}
-[bcc contribute support]: /{{page.lang}}/{% translate bitcoin-core-contribute-tech-support url %}
-[bcc contribute translations]: /{{page.lang}}/{% translate bitcoin-core-contribute-translations url %}
-[bcc decentralized peer discovery]: /{{page.lang}}/{% translate bitcoin-core-privacy url %}#decentralized-peer-discovery
-[bcc documentation]: /{{page.lang}}/{% translate bitcoin-core-help url %}#documentation
-[bcc download]: /{{page.lang}}/{% translate download url %}
-[bcc features]: /{{page.lang}}/{% translate bitcoin-core-features url %}
-[bcc forums]: /{{page.lang}}/{% translate bitcoin-core-help url %}#forums
-[bcc help]: /{{page.lang}}/{% translate bitcoin-core-help url %}
-[bcc live help]: /{{page.lang}}/{% translate bitcoin-core-help url %}#live
-[bcc main]: /{{page.lang}}/{% translate bitcoin-core-overview url %}
-[bcc network support]: /{{page.lang}}/{% translate bitcoin-core-network-support url %}
-[bcc privacy]: /{{page.lang}}/{% translate bitcoin-core-privacy url %}
-[bcc privacy data leaking]: /{{page.lang}}/{% translate bitcoin-core-privacy url %}#perfect-privacy-for-received-transactions
-[bcc requirements]: /{{page.lang}}/{% translate bitcoin-core-requirements url %}
-[bcc user interface]: /{{page.lang}}/{% translate bitcoin-core-user-interface url %}
-[bcc user interface lightweight]: /{{page.lang}}/{% translate bitcoin-core-user-interface url %}#lightweight
-[bcc validation]: /{{page.lang}}/{% translate bitcoin-core-validation url %}
-[bcc validation decentralization]: /{{page.lang}}/{% translate bitcoin-core-validation url %}#help-protect-decentralization
-[bcc validation do you validate]: /{{page.lang}}/{% translate bitcoin-core-validation url %}#do-you-validate
-[bcc validation protection]: /{{page.lang}}/{% translate bitcoin-core-validation url %}#how-validation-protects-your-bitcoins
+[bcc contribute documentation]: /en/bitcoin-core/contribute/documentation
+[bcc contribute issues]: /en/bitcoin-core/contribute/issues
+[bcc contribute support]: /en/bitcoin-core/contribute/support
+[bcc contribute translations]: /en/bitcoin-core/contribute/translations
+[bcc decentralized peer discovery]: /en/bitcoin-core/features/privacy#decentralized-peer-discovery
+[bcc documentation]: /en/bitcoin-core/help#documentation
+[bcc download]: /en/download
+[bcc features]: /en/bitcoin-core/features/
+[bcc forums]: /en/bitcoin-core/help#forums
+[bcc help]: /en/bitcoin-core/help
+[bcc live help]: /en/bitcoin-core/help#live
+[bcc main]: /en/bitcoin-core/
+[bcc network support]: /en/bitcoin-core/features/network-support
+[bcc privacy]: /en/bitcoin-core/features/privacy
+[bcc privacy data leaking]: /en/bitcoin-core/features/privacy#perfect-privacy-for-received-transactions
+[bcc requirements]: /en/bitcoin-core/features/requirements
+[bcc user interface]: /en/bitcoin-core/features/user-interface
+[bcc user interface lightweight]: /en/bitcoin-core/features/user-interface#lightweight
+[bcc validation]: /en/bitcoin-core/features/validation
+[bcc validation decentralization]: /en/bitcoin-core/features/validation#help-protect-decentralization
+[bcc validation do you validate]: /en/bitcoin-core/features/validation#do-you-validate
+[bcc validation protection]: /en/bitcoin-core/features/validation#how-validation-protects-your-bitcoins
 [bcc version history]: /en/version-history
 
 [Bitcoin Core 0.6.0]: /en/release/v0.6.0
