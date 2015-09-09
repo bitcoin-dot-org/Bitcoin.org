@@ -5,6 +5,7 @@
 layout: base
 id: about-us
 ---
+{% if site.env.BITCOINORG_BUILD_TYPE %}
 <!-- Note: this file is built non-deterministically -->
 <h1>{% translate pagetitle %}</h1>
 <p class="summary">{% translate pagedesc %}</p>
@@ -89,3 +90,19 @@ id: about-us
   </div>
   {% endfor %}
 </div>
+{% else %}
+{% comment %}
+<!-- if you've cloned bitcoin.org, feel free to fill in your own About
+Us below. It would be appreciated it if you link back to Bitcoin.org,
+but please make it clear that your site is not affiliated with
+Bitcoin.org.
+
+It would also be appreciated if you would remove our names and email
+addresses from the README.md file in the top-level directory.  -->
+{% endcomment %}
+<h1>About this site</h1>
+
+This site includes content originally published on <a
+href="https://bitcoin.org">Bitcoin.org</a>, but it is not affiliated with
+Bitcoin.org.
+{% endif %}

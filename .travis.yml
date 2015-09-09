@@ -3,5 +3,9 @@ rvm:
   - "2.0.0"
 sudo: false
 cache: bundler
+env:
+  # http://docs.travis-ci.com/user/environment-variables/#Global-Variables
+  global:
+    - BITCOINORG_BUILD_TYPE=deployment
 
 script: make travis

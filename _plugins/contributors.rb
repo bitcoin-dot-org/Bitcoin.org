@@ -106,9 +106,44 @@ module Jekyll
         return
       end
 
-      # Populate site.corecontributors and site.sitecontributors arrays
-      site.corecontributors = contributors('bitcoin/bitcoin',site.config['aliases'])
-      site.sitecontributors = contributors('bitcoin-dot-org/bitcoin.org',site.config['aliases'])
+      ## Create cache directory if it doesn't exist
+      if !File.exists?('_cache')
+        Dir.mkdir('_cache')
+      end
+
+      # Populate site.corecontributors and site.sitecontributors with
+      # data from GitHub.com. Store data in the cache and only
+      # re-retrieve the data if 86,400 seconds (24 hours) passes from
+      # the retrieval date or if the cache file is deleted.  For
+      # simplicity, updates on the two cache files are linked, so if one
+      # file has to be updated, they both get updated.
+      corecontributors_cache = '_cache/corecontributors.marshall'
+      sitecontributors_cache = '_cache/sitecontributors.marshall'
+      if File.exists?(corecontributors_cache) && File.exists?(sitecontributors_cache)
+        corecontributors_cache_age = (Time.now - File.stat(corecontributors_cache).mtime).to_i
+        sitecontributors_cache_age = (Time.now - File.stat(sitecontributors_cache).mtime).to_i
+      else
+        corecontributors_cache_age = Time.now.to_i
+        sitecontributors_cache_age = Time.now.to_i
+      end
+
+      if corecontributors_cache_age > 86400 || sitecontributors_cache_age > 86400
+        site.corecontributors = contributors('bitcoin/bitcoin',site.config['aliases'])
+        File.open(corecontributors_cache,'w') do |file|
+          Marshal.dump(site.corecontributors, file)
+        end
+        site.sitecontributors = contributors('bitcoin-dot-org/bitcoin.org',site.config['aliases'])
+        File.open(sitecontributors_cache,'w') do |file|
+          Marshal.dump(site.sitecontributors, file)
+        end
+      else
+        File.open(corecontributors_cache,'r') do |file|
+          site.corecontributors = Marshal.load(file)
+        end
+        File.open(sitecontributors_cache,'r') do |file|
+          site.sitecontributors = Marshal.load(file)
+        end
+      end
 
     end
 
