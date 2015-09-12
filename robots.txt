@@ -1,1 +1,12 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: null
+---
+{% if site.env.BITCOINORG_BUILD_TYPE == 'preview' %}
+User-agent: *
+Disallow: /
+{% else %}
 Sitemap: https://bitcoin.org/sitemap.xml
+{% endif %}

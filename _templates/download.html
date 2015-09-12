@@ -16,6 +16,7 @@ lin32: "linux32.tar.gz"
 lin64: "linux64.tar.gz"
 
 ---
+{% if site.env.BITCOINORG_BUILD_TYPE %}
 <!-- Note: this file exempt from check-for-subheading-anchors check -->
 
 {% capture PATH_PREFIX %}/bin/bitcoin-core-{{ site.DOWNLOAD_VERSION }}{% endcapture %}
@@ -148,3 +149,13 @@ case 'mac':
 break;
 }
 </script>
+{% else %}
+{% capture redirect %}https://bitcoin.org/{{page.lang}}/{% translate download url %}{% endcapture %}
+<meta name="robots" content="noindex">
+<script>window.location.href='{{ redirect }}';</script>
+
+<div class="redirectmsg">
+<h1>This page has been moved</h1>
+<p><a href="{{ redirect }}">{{ redirect }}</a></p>
+</div>
+{% endif %}

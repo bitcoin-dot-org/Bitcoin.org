@@ -11,6 +11,9 @@ WORKDIR=`mktemp -d`
 LIVEDIR=`mktemp -d`
 SITEDIR='/bitcoin.org/txpreview'
 DESTDIR='/var/www/txpreview'
+BITCOINORG_BUILD_TYPE='preview'
+
+export BITCOINORG_BUILD_TYPE
 
 # Stop script in case a single command fails
 set -e

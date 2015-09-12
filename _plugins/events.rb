@@ -142,9 +142,58 @@ module Jekyll
         return
       end
 
-      # Populate site.conferences and site.meetups arrays
-      site.conferences = conferences()
-      site.meetups = meetups()
+      ## Create cache directory if it doesn't exist
+      if !File.exists?('_cache')
+        Dir.mkdir('_cache')
+      end
+
+      ## Populate site.conferences with conferences from _events.yml
+      ## plus geodata from Google. Store data in the cache and only
+      ## re-retrieve the geodata if _events.yml is edited or the cache
+      ## file is deleted.
+      conferences_cache = '_cache/conferences.marshall'
+      events_file = '_events.yml'
+
+      events_file_unix_time = File.stat(events_file).mtime.to_i
+      if File.exists?(conferences_cache)
+        conferences_cache_unix_time = File.stat(conferences_cache).mtime.to_i
+      else
+        conferences_cache_unix_time = 0
+      end
+
+      if events_file_unix_time >= conferences_cache_unix_time
+        site.conferences = conferences()
+        File.open(conferences_cache,'w') do |file|
+          Marshal.dump(site.conferences, file)
+        end
+      else
+        File.open(conferences_cache,'r') do |file|
+          site.conferences = Marshal.load(file)
+        end
+      end
+
+      # Populate site.meetups with data from Meetup.com.  Store data in
+      # the cache and only re-retrieve the data if 86,400 seconds (24
+      # hours) passes from the retrieval date or if the cache file is
+      # deleted.
+      meetups_cache = '_cache/meetups.marshall'
+      if File.exists?(meetups_cache)
+        meetups_cache_age = (Time.now - File.stat(meetups_cache).mtime).to_i
+      else
+        meetups_cache_age = Time.now.to_i
+      end
+
+      if meetups_cache_age > 86400
+        site.meetups = meetups()
+        File.open(meetups_cache,'w') do |file|
+          Marshal.dump(site.meetups, file)
+        end
+      else
+        File.open(meetups_cache,'r') do |file|
+          site.meetups = Marshal.load(file)
+        end
+      end
+
     end
 
   end

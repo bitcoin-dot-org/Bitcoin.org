@@ -297,6 +297,27 @@ run if the API site is running slow.
 
 For a list of languages, look in the `_translations` directory.
 
+#### Publishing Previews
+
+You can publish your previews online to any static hosting service.
+[GitHub pages](https://pages.github.com/) is a free service available to
+all GitHub users that works with Bitcoin.org's site hierarchy.
+
+Before building a preview site, it is recommended that you set the
+environmental variable `BITCOINORG_BUILD_TYPE` to "preview".  This will
+enable some content that would otherwise be hidden and also create a
+robots.txt file that will help prevent the site from being indexed by
+search engines and mistaken for the actual Bitcoin.org website.
+
+In the bash shell, you can do this by running the following command line
+before building you preview:
+
+    export BITCOINORG_BUILD_TYPE=preview
+
+You can also add this line to your `~/.bashrc` file if you frequently
+build site previews so that you don't have to remember to run it for
+each shell.
+
 ## Developer Documentation
 
 Most parts of the documentation can be found in the [_includes](https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/_includes)

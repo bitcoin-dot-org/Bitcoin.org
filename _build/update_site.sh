@@ -11,8 +11,10 @@ BUNDLE_DIR='/bitcoin.org/bundle'
 SITEDIR='/bitcoin.org/site'
 DESTDIR='build@bitcoinorgsite:/var/www/site'
 WORKDIR=`mktemp -d`
+BITCOINORG_BUILD_TYPE='deployment'
 
 export BUNDLE_DIR
+export BITCOINORG_BUILD_TYPE
 
 # Stop script in case a single command fails
 set -e
