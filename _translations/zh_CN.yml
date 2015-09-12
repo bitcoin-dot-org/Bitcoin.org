@@ -214,7 +214,7 @@ zh_CN:
     involvetxt1: "比特币是开源的，任何开发者都可以为这个项目做出贡献。<a href=\"https://github.com/bitcoin/bitcoin\">GitHub代码仓库</a>中有你需要的一切。请务必阅读并遵照README中描述的开发流程，也请提供高质量的代码，并遵循所有的开发准则。"
     involvetxt2: "有关比特币开发的讨论在Github和sourceforge上的<a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">比特币-开发</a>的邮件列表上进行。稍为非正式的开发讨论在irc.freenode.net#bitcoin-dev上进行(<a href=\"#\" onclick=\"freenodeShow(event);\">web界面</a>, <a href=\"http://bitcoinstats.com\">历史记录</a>)。 "
     more: "更多的开源项目"
-    morechoose: "你可以通过回答一些<a href=\"http://whatcanidoforbitcoin.org/\">关于你的技能的问题</a>.选择一个项目来做贡献。"
+    morechoose: "你可以通过回答一些<a href=\"http://whatcanidoforbitcoin.xyz/\">关于你的技能的问题</a>.选择一个项目来做贡献。"
     moremore: "显示更多..."
     contributors: "Bitcoin Core贡献者"
     contributorsorder: "（根据代码提交次数排序）"

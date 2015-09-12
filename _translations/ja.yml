@@ -214,7 +214,7 @@ ja:
     involvetxt1: "ビットコインは、フリー・ソフトウエアで、ディベロッパーなら誰でもプロジェクトに貢献できます。\n必要なものは全て<a href=\"https://github.com/bitcoin/bitcoin\">GitHub</a>の中にあります。必ずREADME に書かれた開発のプロセスをよく読み、質の高いコードを提供し、ガイドラインを守って下さい。"
     involvetxt2: "開発に関するディスカッションはGitHubとソースフォージの <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">ビットコイン開発</a>で行われており、そのメーリングリストには誰でも参加できます。また、ややカジュアルな開発ディスカッションはirc.freenode.net #bitcoin-devで行われています。 (<a href=\"#\" onclick=\"freenodeShow(event);\">ウエブインターフェイス</a>, <a href=\"http://bitcoinstats.com\">ログ</a>)"
     more: "他のフリー・ソフトウエア・プロジェクト"
-    morechoose: " <a href=\"http://whatcanidoforbitcoin.org/\">あなたのスキルに関する質問</a>に2-3お答えいただくことで、プロジェクトに貢献することができます。"
+    morechoose: " <a href=\"http://whatcanidoforbitcoin.xyz/\">あなたのスキルに関する質問</a>に2-3お答えいただくことで、プロジェクトに貢献することができます。"
     moremore: "詳細表示.."
     contributors: "ビットコイン・コアの貢献者"
     contributorsorder: "(コミット数順)"

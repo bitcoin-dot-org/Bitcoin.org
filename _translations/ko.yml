@@ -214,7 +214,7 @@ ko:
     involvetxt1: "비트코인 개발은 오픈 소스로 진행되며 개발자라면 누구나 프로젝트에 기여할 수 있습니다. 모든 필요한 내용은 <a href=\"https://github.com/bitcoin/bitcoin\">Github repository</a> 사이트에 있습니다. README에 기술된 개발 절차를 읽고 따르면서, 좋은 품질의 코드를 제공하고 모든 지침을 준수하시기 바랍니다."
     involvetxt2: "개발관련 토론은 Github와 sourceforge의 <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">비트코인 개발</a> 메일링 리스트에서 이루어집니다. 좀 더 비공식적인 토론들은 irc.freenode.net #bitcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">웹 인터페이스</a>, <a href=\"http://bitcoinstats.com\">logs</a>)에서 이루어집니다."
     more: "기타 자유 소프트웨어 프로젝트들"
-    morechoose: "몇 가지<a href=\"http://whatcanidoforbitcoin.org/\">자신의 기술에대한 질문</a>을 답변함으로서 기여할 프로젝트를 선택할 수 있습니다."
+    morechoose: "몇 가지<a href=\"http://whatcanidoforbitcoin.xyz/\">자신의 기술에대한 질문</a>을 답변함으로서 기여할 프로젝트를 선택할 수 있습니다."
     moremore: "더 보기.."
     contributors: "Bitcoin Core 기여자들"
     contributorsorder: "(커밋 갯수 순으로 정렬)"

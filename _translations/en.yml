@@ -285,7 +285,7 @@ en:
     involvetxt1: "Bitcoin is free software and any developer can contribute to the project. Everything you need is in the <a href=\"https://github.com/bitcoin/bitcoin\">GitHub repository</a>. Please make sure to read and follow the development process described in the README, as well as to provide good quality code and respect all guidelines."
     involvetxt2: "Development discussion takes place on GitHub and the <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> mailing list. Less formal development discussion happens on irc.freenode.net #bitcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">web interface</a>, <a href=\"http://bitcoinstats.com\">logs</a>)."
     more: "More free software projects"
-    morechoose: "You can choose a project to contribute to by answering a few <a href=\"http://whatcanidoforbitcoin.org/\">questions about your skills</a>."
+    morechoose: "You can choose a project to contribute to by answering a few <a href=\"http://whatcanidoforbitcoin.xyz/\">questions about your skills</a>."
     moremore: "Show more..."
     contributors: "Bitcoin Core contributors"
     contributorsorder: "(Ordered by number of commits)"

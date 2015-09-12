@@ -225,7 +225,7 @@ sv:
     involvetxt1: "Bitcoin är gratis programvara och vilken utvecklare som helst kan bidra till projektet. Allt som du behöver finns i <a href=\"https://github.com/bitcoin/bitcoin\">GitHub repositoriet</a>. Var snäll och läs igenom och följ utvecklingsprocessen beskriven i filen README och bidra med högkvalitativ kod och respektera alla riktlinjer."
     involvetxt2: "Utvecklingsdiskussioner hålls på GitHub och <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> maillistan på sourceforge. Mindre formella utvecklingsdiskussioner hålls på irc.freenode.net #bitcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">webbgränssnitt</a>, <a href=\"http://bitcoinstats.com\">loggar</a>)."
     more: "Fler öppna mjukvaruprojekt"
-    morechoose: "Du kan välja ett projekt att bidra till genom att svara på några <a href=\"http://whatcanidoforbitcoin.org/\">frågor om dina kunskaper</a>."
+    morechoose: "Du kan välja ett projekt att bidra till genom att svara på några <a href=\"http://whatcanidoforbitcoin.xyz/\">frågor om dina kunskaper</a>."
     moremore: "Visa mer.."
     contributors: "Bidragsgivare till Bitcoin Core"
     contributorsorder: "(Sorterad efter antal commits)"
