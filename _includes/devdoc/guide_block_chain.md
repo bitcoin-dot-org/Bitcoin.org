@@ -4,18 +4,18 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_includes/devdoc/guide_block_chain.md" %}
 
-## Block Chain
+## Blockchain
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
-The block chain provides Bitcoin's public ledger, an ordered and timestamped record
+The blockchain provides Bitcoin's public ledger, an ordered and timestamped record
 of transactions. This system is used to protect against double spending
 and modification of previous transaction records.
 
-Each full node in the Bitcoin network independently stores a block chain
+Each full node in the Bitcoin network independently stores a blockchain
 containing only blocks validated by that node. When several nodes all
-have the same blocks in their block chain, they are considered to be in
+have the same blocks in their blockchain, they are considered to be in
 [consensus][/en/glossary/consensus]{:#term-consensus}{:.term}. The validation rules these
 nodes follow to maintain consensus are called [consensus
 rules][/en/glossary/consensus-rules]{:#term-consensus-rules}{:.term}. This section describes many of
@@ -23,14 +23,14 @@ the consensus rules used by Bitcoin Core.
 
 {% endautocrossref %}
 
-### Block Chain Overview
+### Blockchain Overview
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
-![Block Chain Overview](/img/dev/en-blockchain-overview.svg)
+![Blockchain Overview](/img/dev/en-blockchain-overview.svg)
 
-The illustration above shows a simplified version of a block chain.
+The illustration above shows a simplified version of a blockchain.
 A [block][/en/glossary/block]{:#term-block}{:.term} of one or more new transactions
 is collected into the transaction data part of a block.
 Copies of each transaction are hashed, and the hashes are then paired,
@@ -54,14 +54,14 @@ previous transaction.
 A single transaction can create multiple outputs, as would be
 the case when sending to multiple addresses, but each output of
 a particular transaction can only be used as an input once in the
-block chain. Any subsequent reference is a forbidden double
+blockchain. Any subsequent reference is a forbidden double
 spend---an attempt to spend the same satoshis twice.
 
 Outputs are tied to [transaction identifiers (TXIDs)][/en/glossary/txid]{:#term-txid}{:.term}, which are the hashes
 of signed transactions.
 
 Because each output of a particular transaction can only be spent once,
-the outputs of all transactions included in the block chain can be categorized as either
+the outputs of all transactions included in the blockchain can be categorized as either
 [Unspent Transaction Outputs (UTXOs)][/en/glossary/unspent-transaction-output]{:#term-utxo}{:.term} or spent transaction outputs. For a
 payment to be valid, it must only use UTXOs as inputs.
 
@@ -83,16 +83,16 @@ satoshi transaction fee.
 
 {% autocrossref %}
 
-The block chain is collaboratively maintained by anonymous peers on the network, so
+The blockchain is collaboratively maintained by anonymous peers on the network, so
 Bitcoin requires that each block prove a significant amount of work was invested in
 its creation to ensure that untrustworthy peers who want to modify past blocks have
 to work harder than honest peers who only want to add new blocks to the
-block chain.
+blockchain.
 
 Chaining blocks together makes it impossible to modify transactions included
 in any block without modifying all following blocks. As a
 result, the cost to modify a particular block increases with every new block
-added to the block chain, magnifying the effect of the proof of work.
+added to the blockchain, magnifying the effect of the proof of work.
 
 The [proof of work][/en/glossary/proof-of-work]{:#term-proof-of-work}{:.term} used in Bitcoin
 takes advantage of the apparently random nature of cryptographic hashes.
@@ -114,7 +114,7 @@ that a given hash attempt will generate a number below the [target][/en/glossary
 threshold.
 Bitcoin assumes a linear probability that the lower it makes the target threshold, the more hash attempts (on average) will need to be tried.
 
-New blocks will only be added to the block chain if their hash is at
+New blocks will only be added to the blockchain if their hash is at
 least as challenging as a [difficulty][/en/glossary/difficulty]{:#term-difficulty}{:.term} value expected by the consensus protocol.
 Every 2,016 blocks, the network uses timestamps stored in each
 block header to calculate the number of seconds elapsed between generation
@@ -159,21 +159,21 @@ the merkle tree.
 {% autocrossref %}
 
 Any Bitcoin miner who successfully hashes a block header to a value
-below the target threshold can add the entire block to the block chain
+below the target threshold can add the entire block to the blockchain
 (assuming the block is otherwise valid).
 These blocks are commonly addressed
 by their [block height][/en/glossary/block-height]{:#term-block-height}{:.term}---the number of blocks between them and the first Bitcoin
 block (block 0, most commonly known as the [genesis block][/en/glossary/genesis-block]{:#term-genesis-block}{:.term}). For example,
 block 2016 is where difficulty could have first been adjusted.
 
-![Common And Uncommon Block Chain Forks](/img/dev/en-blockchain-fork.svg)
+![Common And Uncommon Blockchain Forks](/img/dev/en-blockchain-fork.svg)
 
 Multiple blocks can all have the same block height, as is common when
 two or more miners each produce a block at roughly the same time. This
-creates an apparent [fork][/en/glossary/fork]{:#term-fork}{:.term} in the block chain, as shown in the
+creates an apparent [fork][/en/glossary/fork]{:#term-fork}{:.term} in the blockchain, as shown in the
 illustration above.
 
-When miners produce simultaneous blocks at the end of the block chain, each
+When miners produce simultaneous blocks at the end of the blockchain, each
 node individually chooses which block to accept. In the absence of
 other considerations, discussed below, nodes usually use the first
 block they see.
@@ -188,11 +188,11 @@ to recreate and throw away [stale blocks][/en/glossary/stale-block]{:#term-stale
 those terms are also used for true orphan blocks without a known parent block.)
 
 Long-term forks are possible if different miners work at cross-purposes,
-such as some miners diligently working to extend the block chain at the
+such as some miners diligently working to extend the blockchain at the
 same time other miners are attempting a 51 percent attack to revise
 transaction history.
 
-Since multiple blocks can have the same height during a block chain fork, block
+Since multiple blocks can have the same height during a blockchain fork, block
 height should not be used as a globally unique identifier. Instead, blocks
 are usually referenced by the hash of their header (often with the byte order reversed, and in hexadecimal).
 
@@ -210,7 +210,7 @@ spend the block reward (comprised of a block subsidy and any transaction fees pa
 The UTXO of a coinbase transaction has the special condition that
 it cannot be spent (used as an input) for at least 100 blocks. This temporarily
 prevents a miner from spending the transaction fees and block reward from a
-block that may later be determined to be stale (and therefore the coinbase transaction destroyed) after a block chain fork.
+block that may later be determined to be stale (and therefore the coinbase transaction destroyed) after a blockchain fork.
 
 Blocks are not required to include any non-coinbase transactions, but
 miners almost always do include additional transactions in order to
@@ -293,7 +293,7 @@ creating two possible ways consensus can break:
    because it follows the old rules.
 
 In the first case, rejection by non-upgraded nodes, mining software
-which gets block chain data from those non-upgraded nodes refuses to
+which gets blockchain data from those non-upgraded nodes refuses to
 build on the same chain as mining software getting data from upgraded
 nodes. This creates permanently divergent chains---one for non-upgraded
 nodes and one for upgraded nodes---called a [hard
@@ -302,19 +302,19 @@ fork][/en/glossary/hard-fork]{:#term-hard-fork}{:.term}.
 ![Hard Fork](/img/dev/en-hard-fork.svg)
 
 In the second case, rejection by upgraded nodes, it's possible to keep
-the block chain from permanently diverging if upgraded nodes control a
+the blockchain from permanently diverging if upgraded nodes control a
 majority of the hash rate. That's because, in this case, non-upgraded
 nodes will accept as valid all the same blocks as upgraded nodes, so the
 upgraded nodes can build a stronger chain that the non-upgraded nodes
-will accept as the best valid block chain. This is called a [soft
+will accept as the best valid blockchain. This is called a [soft
 fork][/en/glossary/soft-fork]{:#term-soft-fork}{:.term}.
 
 ![Soft Fork](/img/dev/en-soft-fork.svg)
 
-Although a fork is an actual divergence in block chains, changes to the
+Although a fork is an actual divergence in blockchains, changes to the
 consensus rules are often described by their potential to create either
 a hard or soft fork. For example, "increasing the block size above 1 MB
-requires a hard fork." In this example, an actual block chain fork is
+requires a hard fork." In this example, an actual blockchain fork is
 not required---but it is a possible outcome.
 
 **Resources:** [BIP16][], [BIP30][], and [BIP34][] were implemented as
@@ -336,20 +336,20 @@ Non-upgraded nodes may use and distribute incorrect information during
 both types of forks, creating several situations which could lead to
 financial loss. In particular, non-upgraded nodes may relay and accept
 transactions that are considered invalid by upgraded nodes and so will
-never become part of the universally-recognized best block chain.
+never become part of the universally-recognized best blockchain.
 Non-upgraded nodes may also refuse to relay blocks or transactions which
-have already been added to the best block chain, or soon will be, and so
+have already been added to the best blockchain, or soon will be, and so
 provide incomplete information.
 
 <!-- paragraph below based on src/main.cpp CheckForkWarningConditions() -->
 
 Bitcoin Core includes code that detects a hard fork by looking at block
-chain proof of work. If a non-upgraded node receives block chain headers
+chain proof of work. If a non-upgraded node receives blockchain headers
 demonstrating at least six blocks more proof of work than the best chain
 it considers valid, the node reports an error in the `getinfo` RPC
 results and runs the `-alertnotify` command if set.  This warns the
 operator that the non-upgraded node can't switch to what is likely the
-best block chain.
+best blockchain.
 
 Full nodes can also check block and transaction version numbers. If the
 block or transaction version numbers seen in several recent blocks are

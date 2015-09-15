@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### GetBestBlockHash
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getBestBlockHash="returns the header hash of the most recent block on the best block chain." %}
+{% assign summary_getBestBlockHash="returns the header hash of the most recent block on the best blockchain." %}
 
 {% autocrossref %}
 
@@ -17,13 +17,13 @@ The `getbestblockhash` RPC {{summary_getBestBlockHash}}
 
 *Parameters: none*
 
-*Result---hash of the tip from the best block chain*
+*Result---hash of the tip from the best blockchain*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
   t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The hash of the block header from the most recent block on the best block chain, encoded as hex in RPC byte order"
+  d: "The hash of the block header from the most recent block on the best blockchain, encoded as hex in RPC byte order"
 
 {% enditemplate %}
 

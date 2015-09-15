@@ -7,7 +7,7 @@ required:
     title_max_40_characters_no_formatting: Soft Fork, Soft-Forking Change
 
     summary_max_255_characters_no_formatting: >
-        A temporary fork in the block chain which commonly occurs when
+        A temporary fork in the blockchain which commonly occurs when
         miners using non-upgraded nodes violate a new consensus rule
         their nodes don't know about.
 
@@ -22,7 +22,7 @@ optional:
 
     not_to_be_confused_with_capitalize_first_letter:
         - Fork (a regular fork where all nodes follow the same consensus rules, so the fork is resolved once one chain has more proof of work than another)
-        - Hard fork (a permanent divergence in the block chain caused by non-upgraded nodes not following new consensus rules)
+        - Hard fork (a permanent divergence in the blockchain caused by non-upgraded nodes not following new consensus rules)
         - Software fork (when one or more developers permanently develops a codebase separately from other developers)
         - Git fork (when one or more developers temporarily develops a codebase separately from other developers
 

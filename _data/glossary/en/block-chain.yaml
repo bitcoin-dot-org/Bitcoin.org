@@ -4,24 +4,24 @@
 
 required:
                                            #-------------40 characters-------------#
-    title_max_40_characters_no_formatting: Block Chain
+    title_max_40_characters_no_formatting: Blockchain
 
     summary_max_255_characters_no_formatting: >
         A chain of blocks with each block referencing the block
         that preceded it. The most-difficult-to-recreate chain is
-        the best block chain.
+        the best blockchain.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
-        - Block chain
-        - Best block chain   ## this could be moved into its own entry
+        - Blockchain
+        - Best blockchain   ## this could be moved into its own entry
 
 optional:
     synonyms_and_pluralizations_not_shown_in_glossary:
+        - block chain
         - block chains
         - blocks chain
         - block-chain
         - block-chains
-        - blockchain
         - blockchains
         - best block chain
         - best blockchain
@@ -30,7 +30,7 @@ optional:
         - Header chain
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Block chain](/en/developer-guide#block-chain) --- Bitcoin.org Developer Guide"
-        - "[Block chain](https://en.bitcoin.it/wiki/Block_chain) --- Bitcoin Wiki"
+        - "[Blockchain](/en/developer-guide#block-chain) --- Bitcoin.org Developer Guide"
+        - "[Blockchain](https://en.bitcoin.it/wiki/Block_chain) --- Bitcoin Wiki"
 
 ---

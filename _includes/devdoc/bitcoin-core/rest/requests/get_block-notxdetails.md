@@ -55,7 +55,7 @@ GET /block/notxdetails/<hash>.<format>
 - n: "→<br>`confirmations`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The number of confirmations the transactions in this block have, starting at 1 when this block is at the tip of the best block chain.  This score will be -1 if the the block is not part of the best block chain"
+  d: "The number of confirmations the transactions in this block have, starting at 1 when this block is at the tip of the best blockchain.  This score will be -1 if the the block is not part of the best blockchain"
 
 - n: "→<br>`size`"
   t: "number (int)"
@@ -65,7 +65,7 @@ GET /block/notxdetails/<hash>.<format>
 - n: "→<br>`height`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The height of this block on its block chain"
+  d: "The height of this block on its blockchain"
 
 - n: "→<br>`version`"
   t: "number (int)"
@@ -95,7 +95,7 @@ GET /block/notxdetails/<hash>.<format>
 - n: "→<br>`nonce`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The nonce which was successful at turning this particular block into one that could be added to the best block chain"
+  d: "The nonce which was successful at turning this particular block into one that could be added to the best blockchain"
 
 - n: "→<br>`bits`"
   t: "string (hex)"
@@ -120,7 +120,7 @@ GET /block/notxdetails/<hash>.<format>
 - n: "→<br>`nextblockhash`"
   t: "string (hex)"
   p: "Optional<br>(0 or 1)"
-  d: "The hash of the next block on the best block chain, if known, encoded as hex in RPC byte order"
+  d: "The hash of the next block on the best blockchain, if known, encoded as hex in RPC byte order"
 
 {% enditemplate %}
 

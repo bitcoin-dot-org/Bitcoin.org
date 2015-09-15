@@ -56,5 +56,5 @@ _transactions0 -> _transactions1 -> _transactions2 [ style = "invis", minlen = 2
 invis1 -> _transactions0 [ style = "invis", minlen = 1 ];
 
 
-label = "\nSimplified Bitcoin Block Chain";
+label = "\nSimplified Bitcoin Blockchain";
 }

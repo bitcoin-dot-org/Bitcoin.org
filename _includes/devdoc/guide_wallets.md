@@ -33,7 +33,7 @@ program distributing public keys in order to receive satoshis and
 another program signing transactions spending those satoshis.
 
 Wallet programs also need to interact with the peer-to-peer network to
-get information from the block chain and to broadcast new transactions.
+get information from the blockchain and to broadcast new transactions.
 However, the programs which distribute public keys or sign transactions
 don't need to interact with the peer-to-peer network themselves.
 
@@ -366,7 +366,7 @@ keys are described in official secp256k1 documentation and supported by
 default in the widely-used OpenSSL library.
 
 Because they're easy to use, and because they reduce almost by half
-the block chain space used to store public keys for every spent output,
+the blockchain space used to store public keys for every spent output,
 compressed public keys are the default in Bitcoin Core and are the
 recommended default for all Bitcoin software.
 

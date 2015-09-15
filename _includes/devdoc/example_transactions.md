@@ -583,7 +583,7 @@ Clean up the shell variables used. Unlike previous subsections, we're
 not going to send this transaction to the connected node with
 `sendrawtransaction`. This will allow us to illustrate in the Offline
 Signing subsection below how to spend a transaction which is not yet in
-the block chain or memory pool.
+the blockchain or memory pool.
 
 {% endautocrossref %}
 
@@ -603,7 +603,7 @@ signing---which generally means signing a transaction without access
 to the current UTXO set.
 
 Offline signing is safe. However, in this example we will also be
-spending an output which is not part of the block chain because the
+spending an output which is not part of the blockchain because the
 transaction containing it has never been broadcast. That can be unsafe:
 
 ![Warning icon](/img/icons/icon_warning.svg)
@@ -872,7 +872,7 @@ the UTXO.
 </div>
 
 We have once again not generated an additional block, so the transactions
-above have not yet become part of the regtest block chain.  However, they
+above have not yet become part of the regtest blockchain.  However, they
 are part of the local node's memory pool.
 
 {% highlight bash %}

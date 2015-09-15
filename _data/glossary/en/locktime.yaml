@@ -9,7 +9,7 @@ required:
     summary_max_255_characters_no_formatting: >
         Part of a transaction which indicates the earliest time or
         earliest block when that transaction may be added to the
-        block chain.
+        blockchain.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Locktime

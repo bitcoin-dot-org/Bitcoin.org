@@ -94,7 +94,7 @@ payment requests:
 Using a separate address for each incoming payment makes it trivial to
 determine which customers have paid their payment requests.  Your
 applications need only track the association between a particular payment
-request and the address used in it, and then scan the block chain for
+request and the address used in it, and then scan the blockchain for
 transactions matching that address.
 
 The next subsections will describe in detail the following four
@@ -390,7 +390,7 @@ Charlie's wallet sees the PaymentACK and tells Charlie that the payment
 has been sent. The PaymentACK doesn't mean that Bob has verified
 Charlie's payment---see the Verifying Payment subsection below---but it does mean
 that Charlie can go do something else while the transaction gets confirmed.
-After Bob's server verifies from the block chain that Charlie's
+After Bob's server verifies from the blockchain that Charlie's
 transaction has been suitably confirmed, it authorizes shipping
 Charlie's order.
 
@@ -402,7 +402,7 @@ otherwise-proven information.
   received an invoice to pay a specified pubkey script for a specified
   number of satoshis for goods specified in the memo field.
 
-* The Bitcoin block chain can prove that the pubkey script specified by
+* The Bitcoin blockchain can prove that the pubkey script specified by
   Bob was paid the specified number of satoshis.
 
 If a refund needs to be issued, Bob's server can safely pay the
@@ -416,18 +416,18 @@ for more details.
 
 {% autocrossref %}
 
-As explained in the [Transactions][] and [Block Chain][section block chain] sections, broadcasting
+As explained in the [Transactions][] and [Blockchain][section blockchain] sections, broadcasting
 a transaction to the network doesn't ensure that the receiver gets
 paid. A malicious spender can create one transaction that pays the
 receiver and a second one that pays the same input back to himself. Only
-one of these transactions will be added to the block chain, and nobody
+one of these transactions will be added to the blockchain, and nobody
 can say for sure which one it will be.
 
 Two or more transactions spending the same input are commonly referred
 to as a [double spend][/en/glossary/double-spend]{:#term-double-spend}{:.term}.
 
 Once the transaction is included in a block, double spends are
-impossible without modifying block chain history to replace the
+impossible without modifying blockchain history to replace the
 transaction, which is quite difficult. Using this system,
 the Bitcoin protocol can give each of your transactions an updating confidence 
 score based on the number of blocks which would need to be modified to replace 
@@ -495,7 +495,7 @@ estimate the amount of time until they're added to a block.
 Another example could be to detect a fork when multiple peers report differing 
 block header hashes at the same block height. Your program can go into a safe mode if the 
 fork extends for more than two blocks, indicating a possible problem with the 
-block chain. For more details, see the [Detecting Forks
+blockchain. For more details, see the [Detecting Forks
 subsection][section detecting forks].
 
 Another good source of double-spend protection can be human intelligence. For 
@@ -565,7 +565,7 @@ which outputs to spend first.  There are a few different algorithms
 which can lead to different results.
 
 * A merge avoidance algorithm makes it harder for outsiders looking
-  at block chain data to figure out how many satoshis the receiver has
+  at blockchain data to figure out how many satoshis the receiver has
   earned, spent, and saved.
 
 * A last-in-first-out (LIFO) algorithm spends newly acquired satoshis

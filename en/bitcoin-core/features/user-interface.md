@@ -182,8 +182,8 @@ the Bitcoin network.
 {% translate walletmsigna choose-your-wallet %}
 
 **No configuration necessary:** just install Bitcoin Core on the same
-computer you plan to use mSigna, wait for Bitcoin Core to sync the block
-chain, and then start mSigna---it will automatically connect to your
+computer you plan to use mSigna, wait for Bitcoin Core to sync the 
+blockchain, and then start mSigna---it will automatically connect to your
 Bitcoin Core full node.
 
 {:.right-hanger}

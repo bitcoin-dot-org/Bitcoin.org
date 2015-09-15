@@ -22,7 +22,7 @@ http://opensource.org/licenses/MIT.
 - n: "{{DEPTH}}<br>`category`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "Set to one of the following values:<br>• `send` if sending payment<br>• `receive` if this wallet received payment in a regular transaction<br>• `generate` if a matured and spendable coinbase<br>• `immature` if a coinbase that is not spendable yet<br>• `orphan` if a coinbase from a block that's not in the local best block chain"
+  d: "Set to one of the following values:<br>• `send` if sending payment<br>• `receive` if this wallet received payment in a regular transaction<br>• `generate` if a matured and spendable coinbase<br>• `immature` if a coinbase that is not spendable yet<br>• `orphan` if a coinbase from a block that's not in the local best blockchain"
 
 - n: "{{DEPTH}}<br>`amount`"
   t: "number (bitcoins)"
@@ -56,17 +56,17 @@ http://opensource.org/licenses/MIT.
 - n: "{{DEPTH}}<br>`blockhash`"
   t: "string (hex)"
   p: "Optional<br>(0 or 1)"
-  d: "Only returned for confirmed transactions.  The hash of the block on the local best block chain which includes this transaction, encoded as hex in RPC byte order"
+  d: "Only returned for confirmed transactions.  The hash of the block on the local best blockchain which includes this transaction, encoded as hex in RPC byte order"
 
 - n: "{{DEPTH}}<br>`blockindex`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "Only returned for confirmed transactions.  The block height of the block on the local best block chain which includes this transaction"
+  d: "Only returned for confirmed transactions.  The block height of the block on the local best blockchain which includes this transaction"
 
 - n: "{{DEPTH}}<br>`blocktime`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "Only returned for confirmed transactions.  The block header time (Unix epoch time) of the block on the local best block chain which includes this transaction"
+  d: "Only returned for confirmed transactions.  The block header time (Unix epoch time) of the block on the local best blockchain which includes this transaction"
 
 - n: "{{DEPTH}}<br>`txid`"
   t: "string (hex)"
@@ -91,7 +91,7 @@ http://opensource.org/licenses/MIT.
 - n: "{{DEPTH}}<br>`timerecived`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "A Unix epoch time when the transaction was detected by the local node, or the time of the block on the local best block chain that included the transaction"
+  d: "A Unix epoch time when the transaction was detected by the local node, or the time of the block on the local best blockchain that included the transaction"
 
 - n: "{{DEPTH}}<br>`comment`"
   t: "string"
@@ -262,4 +262,4 @@ bitcoins even if this parameter is set to `1` or higher.{% endcapture %}
 
 {% assign WARNING="![Warning icon](/img/icons/icon_warning.svg) **Warning:**" %}
 
-{% assign reindexNote="Note: if you begin using `txindex=1` after downloading the block chain, you must rebuild your indexes by starting Bitcoin Core with the option  `-reindex`.  This may take several hours to complete, during which time your node will not process new blocks or transactions. This reindex only needs to be done once." %}
+{% assign reindexNote="Note: if you begin using `txindex=1` after downloading the blockchain, you must rebuild your indexes by starting Bitcoin Core with the option  `-reindex`.  This may take several hours to complete, during which time your node will not process new blocks or transactions. This reindex only needs to be done once." %}

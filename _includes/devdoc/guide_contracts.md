@@ -73,7 +73,7 @@ keys provided).
 Bob gives the redeem script to Charlie, who checks to make sure his
 public key and Alice's public key are included. Then he hashes the
 redeem script to create a P2SH redeem script and pays the satoshis to it. Bob
-sees the payment get added to the block chain and ships the merchandise.
+sees the payment get added to the blockchain and ships the merchandise.
 
 Unfortunately, the merchandise gets slightly damaged in transit. Charlie
 wants a full refund, but Bob thinks a 10% refund is sufficient. They
@@ -211,7 +211,7 @@ all under an Apache license.
 {% autocrossref %}
 
 Alice is concerned about her privacy.  She knows every transaction gets
-added to the public block chain, so when Bob and Charlie pay her, they
+added to the public blockchain, so when Bob and Charlie pay her, they
 can each easily track those satoshis to learn what Bitcoin
 addresses she pays, how much she pays them, and possibly how many
 satoshis she has left.
@@ -252,16 +252,16 @@ which output, so they can each spend their output with plausible
 deniability.
 
 Now when Bob or Charlie try to track Alice's transactions through the
-block chain, they'll also see transactions made by Nemo and
+blockchain, they'll also see transactions made by Nemo and
 Neminem.  If Alice does a few more CoinJoins, Bob and Charlie might
 have to guess which transactions made by dozens or hundreds of people
 were actually made by Alice.
 
-The complete history of Alice's satoshis is still in the block chain,
+The complete history of Alice's satoshis is still in the blockchain,
 so a determined investigator could talk to the people AnonGirl
 CoinJoined with to find out the ultimate origin of her satoshis and
 possibly reveal AnonGirl as Alice. But against anyone casually browsing
-block chain history, Alice gains plausible deniability.
+blockchain history, Alice gains plausible deniability.
 
 The CoinJoin technique described above costs the participants a small
 amount of satoshis to pay the transaction fee.  An alternative
@@ -273,7 +273,7 @@ She announces her intention to spend satoshis and waits until someone
 else wants to make a purchase, likely from a different merchant. Then
 they combine their inputs the same way as before but set the outputs
 to the separate merchant addresses so nobody will be able to figure
-out solely from block chain history which one of them bought what from
+out solely from blockchain history which one of them bought what from
 the merchants.
 
 Since they would've had to pay a transaction fee to make their purchases

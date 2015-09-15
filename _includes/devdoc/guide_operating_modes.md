@@ -9,7 +9,7 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-Currently there are two primary methods of validating the block chain as a client: Full nodes and SPV clients. Other methods, such as server-trusting methods, are not discussed as they are not recommended.
+Currently there are two primary methods of validating the blockchain as a client: Full nodes and SPV clients. Other methods, such as server-trusting methods, are not discussed as they are not recommended.
 
 {% endautocrossref %}
 
@@ -18,9 +18,9 @@ Currently there are two primary methods of validating the block chain as a clien
 
 {% autocrossref %}
 
-The first and most secure model is the one followed by Bitcoin Core, also known as a “thick” or “full chain” client. This security model assures the validity of the block chain by downloading and validating blocks from the genesis block all the way to the most recently discovered block. This is known as using the *height* of a particular block to verify the client’s view of the network. 
+The first and most secure model is the one followed by Bitcoin Core, also known as a “thick” or “full chain” client. This security model assures the validity of the blockchain by downloading and validating blocks from the genesis block all the way to the most recently discovered block. This is known as using the *height* of a particular block to verify the client’s view of the network. 
 
-For a client to be fooled, an adversary would need to give a complete alternative block chain history that is of greater difficulty than the current “true” chain, which is impossible due to the fact that the longest chain is by definition the true chain. After the suggested six confirmations, the ability to fool the client become intractable, as only a single honest network node is needed to have the complete state of the block chain. 
+For a client to be fooled, an adversary would need to give a complete alternative blockchain history that is of greater difficulty than the current “true” chain, which is impossible due to the fact that the longest chain is by definition the true chain. After the suggested six confirmations, the ability to fool the client become intractable, as only a single honest network node is needed to have the complete state of the blockchain. 
 
 ![Block Height Compared To Block Depth](/img/dev/en-block-height-vs-depth.svg)
 
@@ -31,11 +31,11 @@ For a client to be fooled, an adversary would need to give a complete alternativ
 
 {% autocrossref %}
 
-An alternative approach detailed in the [original Bitcoin paper][bitcoinpdf] is a client that only downloads the headers of blocks during the initial syncing process and then requests transactions from full nodes as needed. This scales linearly with the height of the block chain at only 80 bytes per block header, or up to 4.2MB per year, regardless of total block size. 
+An alternative approach detailed in the [original Bitcoin paper][bitcoinpdf] is a client that only downloads the headers of blocks during the initial syncing process and then requests transactions from full nodes as needed. This scales linearly with the height of the blockchain at only 80 bytes per block header, or up to 4.2MB per year, regardless of total block size. 
 
-As described in the white paper, the merkle root in the block header along with a merkle branch can prove to the SPV client that the transaction in question is embedded in a block in the block chain. This does not guarantee validity of the transactions that are embedded. Instead it demonstrates the amount of work required to perform a double-spend attack. 
+As described in the white paper, the merkle root in the block header along with a merkle branch can prove to the SPV client that the transaction in question is embedded in a block in the blockchain. This does not guarantee validity of the transactions that are embedded. Instead it demonstrates the amount of work required to perform a double-spend attack. 
 
-The block's depth in the block chain corresponds to the cumulative difficulty that has been performed to build on top of that particular block. The SPV client knows the merkle root and associated transaction information, and requests the respective merkle branch from a full node. Once the merkle branch has been retrieved, proving the existence of the transaction in the block, the SPV client can then look to block *depth* as a proxy for transaction validity and security. The cost of an attack on a user by a malicious node who inserts an invalid transaction grows with the cumulative difficulty built on top of that block, since the malicious node alone will be mining this forged chain. 
+The block's depth in the blockchain corresponds to the cumulative difficulty that has been performed to build on top of that particular block. The SPV client knows the merkle root and associated transaction information, and requests the respective merkle branch from a full node. Once the merkle branch has been retrieved, proving the existence of the transaction in the block, the SPV client can then look to block *depth* as a proxy for transaction validity and security. The cost of an attack on a user by a malicious node who inserts an invalid transaction grows with the cumulative difficulty built on top of that block, since the malicious node alone will be mining this forged chain. 
 
 {% endautocrossref %}
 
@@ -96,7 +96,7 @@ Bloom filters were standardized for use via [BIP37](https://github.com/bitcoin/b
 
 {% autocrossref %}
 
-There are future proposals such as Unspent Transaction Output (UTXO) commitments in the block chain to find a more satisfactory middle-ground for clients between needing a complete copy of the block chain, or trusting that a majority of your connected peers are not lying. UTXO commitments would enable a very secure client using a finite amount of storage using a data structure that is authenticated in the block chain. These type of proposals are, however, in very early stages, and will require soft forks in the network.
+There are future proposals such as Unspent Transaction Output (UTXO) commitments in the blockchain to find a more satisfactory middle-ground for clients between needing a complete copy of the blockchain, or trusting that a majority of your connected peers are not lying. UTXO commitments would enable a very secure client using a finite amount of storage using a data structure that is authenticated in the blockchain. These type of proposals are, however, in very early stages, and will require soft forks in the network.
 
 Until these types of operating modes are implemented, modes should be chosen based on the likely threat model, computing and bandwidth constraints, and liability in bitcoin value.
 

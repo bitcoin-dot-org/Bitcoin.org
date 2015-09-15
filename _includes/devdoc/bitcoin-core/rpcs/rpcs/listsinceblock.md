@@ -31,7 +31,7 @@ The `listsinceblock` RPC {{summary_listSinceBlock}}
 - n: "Target Confirmations"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "Sets the lastblock field of the results to the header hash of a block with this many confirmations.  This does not affect which transactions are returned.  Default is `1`, so the hash of the most recent block on the local best block chain is returned"
+  d: "Sets the lastblock field of the results to the header hash of a block with this many confirmations.  This does not affect which transactions are returned.  Default is `1`, so the hash of the most recent block on the local best blockchain is returned"
 
 {% enditemplate %}
 

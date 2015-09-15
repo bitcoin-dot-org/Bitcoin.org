@@ -65,7 +65,7 @@ require 'yaml'
 
 
       ## Sort terms by reverse length, so longest matches get linked
-      ## first (e.g. "block chain" before "block"). Otherwise short
+      ## first (e.g. "blockchain" before "block"). Otherwise short
       ## terms would get linked first and there'd be nothing for long
       ## terms to link to.
       site['crossref'].sort_by { |k, v| -k.length }.each { |term|

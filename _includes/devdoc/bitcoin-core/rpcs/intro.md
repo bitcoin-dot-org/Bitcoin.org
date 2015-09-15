@@ -10,8 +10,8 @@ http://opensource.org/licenses/MIT.
 {% autocrossref %}
 
 Bitcoin Core provides a remote procedure call (RPC) interface for various
-administrative tasks, wallet operations, and queries about network and block
-chain data.
+administrative tasks, wallet operations, and queries about network and 
+blockchain data.
 
 If you start Bitcoin Core using `bitcoin-qt`, the RPC interface is disabled by
 default. To enable it, set `server=1` in `bitcoin.conf` or supply the `-server`

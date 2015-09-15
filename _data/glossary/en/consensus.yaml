@@ -8,14 +8,14 @@ required:
 
     summary_max_255_characters_no_formatting: >
         When several nodes (usually most nodes on the network) all have
-        the same blocks in their locally-validated best block chain.
+        the same blocks in their locally-validated best blockchain.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Consensus
 
 optional:
     synonyms_and_pluralizations_not_shown_in_glossary:
-        - block chain consensus
+        - blockchain consensus
 
     not_to_be_confused_with_capitalize_first_letter:
         - Social consensus (often used in discussion among developers to indicate that most people agree with a particular plan)

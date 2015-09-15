@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### SubmitBlock
 {% include helpers/subhead-links.md %}
 
-{% assign summary_submitBlock="accepts a block, verifies it is a valid addition to the block chain, and broadcasts it to the network. Extra parameters are ignored by Bitcoin Core but may be used by mining pools or other programs." %}
+{% assign summary_submitBlock="accepts a block, verifies it is a valid addition to the blockchain, and broadcasts it to the network. Extra parameters are ignored by Bitcoin Core but may be used by mining pools or other programs." %}
 
 {% autocrossref %}
 
@@ -58,7 +58,7 @@ f0457bcb05865a94900ed11356d0b75228efb38c7785d6053ffff001d005d437\
 '{ "workid": "test" }'
 {% endhighlight %}
 
-Result (the block above was already on a local block chain):
+Result (the block above was already on a local blockchain):
 
 {% highlight text %}
 duplicate

@@ -26,7 +26,7 @@ The `getmininginfo` RPC {{summary_getMiningInfo}}
 - n: "→<br>`blocks`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The height of the highest block on the local best block chain"
+  d: "The height of the highest block on the local best blockchain"
 
 - n: "→<br>`currentblocksize`"
   t: "number (int)"
@@ -41,7 +41,7 @@ The `getmininginfo` RPC {{summary_getMiningInfo}}
 - n: "→<br>`difficulty`"
   t: "number (real)"
   p: "Required<br>(exactly 1)"
-  d: "If generation was enabled since the last time this node was restarted, this is the difficulty of the highest-height block in the local best block chain.  Otherwise, this is the value `0`"
+  d: "If generation was enabled since the last time this node was restarted, this is the difficulty of the highest-height block in the local best blockchain.  Otherwise, this is the value `0`"
 
 - n: "→<br>`errors`"
   t: "string"

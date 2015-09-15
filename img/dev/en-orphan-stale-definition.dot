@@ -38,6 +38,6 @@ subgraph cluster_toplabel {
     label = "Orphan blocks have no known parent, so they can't be validated"
 }
 
-label = " \nStale blocks are valid but not part of the best block chain"
+label = " \nStale blocks are valid but not part of the best blockchain"
 
 }

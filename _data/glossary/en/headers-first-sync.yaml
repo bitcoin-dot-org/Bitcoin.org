@@ -7,7 +7,7 @@ required:
     title_max_40_characters_no_formatting: Headers-First, Headers-First Sync
 
     summary_max_255_characters_no_formatting: >
-        Synchronizing the block chain by downloading block headers
+        Synchronizing the blockchain by downloading block headers
         before downloading the full blocks.
 
     synonyms_shown_in_glossary_capitalize_first_letter:

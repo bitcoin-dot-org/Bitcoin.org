@@ -243,7 +243,7 @@ http://opensource.org/licenses/MIT.
 [REST]: /en/developer-reference#http-rest
 [RPC]: /en/developer-reference#remote-procedure-calls-rpcs
 [RPCs]: /en/developer-reference#remote-procedure-calls-rpcs
-[section block chain]: /en/developer-guide#block-chain
+[section blockchain]: /en/developer-guide#block-chain
 [section block header]: /en/developer-reference#block-headers
 [section block versions]: /en/developer-reference#block-versions
 [section creating a bloom filter]: /en/developer-examples#creating-a-bloom-filter

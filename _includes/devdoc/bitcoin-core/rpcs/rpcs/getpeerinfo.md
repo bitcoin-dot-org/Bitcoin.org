@@ -101,7 +101,7 @@ The `getpeerinfo` RPC {{summary_getPeerInfo}}
 - n: "→ →<br>`startingheight`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The height of the remote node's block chain when it connected to us as reported in its `version` message"
+  d: "The height of the remote node's blockchain when it connected to us as reported in its `version` message"
 
 - n: "→ →<br>`banscore`"
   t: "number (int)"

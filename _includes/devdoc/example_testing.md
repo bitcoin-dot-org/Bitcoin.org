@@ -42,7 +42,7 @@ community, so please don't abuse it.
 For situations
 where interaction with random peers and blocks is unnecessary or
 unwanted, Bitcoin Core's regression test mode (regtest mode) lets you
-instantly create a brand-new private block chain with the same basic
+instantly create a brand-new private blockchain with the same basic
 rules as testnet---but one major difference: you choose when to create
 new blocks, so you have complete control over the environment.
 
@@ -59,7 +59,7 @@ Bitcoin server starting
 
 {% autocrossref %}
 
-Start `bitcoind` in regtest mode to create a private block chain.
+Start `bitcoind` in regtest mode to create a private blockchain.
 
 {% endautocrossref %}
 
@@ -75,7 +75,7 @@ bitcoin-cli -regtest generate 101
 
 Generate 101 blocks using a special RPC
 which is only available in regtest mode. This takes about 30 seconds on
-a generic PC. Because this is a new block chain using Bitcoin's default
+a generic PC. Because this is a new blockchain using Bitcoin's default
 rules, the first blocks pay a block reward of 50 bitcoins.  Unlike
 mainnet, in regtest mode only the first 150 blocks pay a reward of 50 bitcoins.
 However, a block must have 100 confirmations before that reward can be
@@ -95,7 +95,7 @@ Verify that we now have 50 bitcoins available to spend.
 
 You can now use Bitcoin Core RPCs prefixed with `bitcoin-cli -regtest`<!--noref-->.
 
-Regtest wallets and block chain state (chainstate) are saved in the `regtest`<!--noref-->
+Regtest wallets and blockchain state (chainstate) are saved in the `regtest`<!--noref-->
 subdirectory of the Bitcoin Core configuration directory. You can safely
 delete the `regtest`<!--noref--> subdirectory and restart Bitcoin Core to
 start a new regtest. (See the [Developer Examples Introduction][devexamples] for default

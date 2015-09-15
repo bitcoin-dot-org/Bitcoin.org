@@ -31,9 +31,9 @@ end_of_page: |
 
 <div class="resources">
   <div><div>
-      <h2 id="block_chain"><span class="fa fa-cube fa-lg"></span> Block Chain</h2>
-      <p><a href="/en/developer-guide#block-chain">Block Chain Guide</a></p>
-      <p><a href="/en/developer-reference#block-chain">Block Chain Reference</a></p>
+      <h2 id="block_chain"><span class="fa fa-cube fa-lg"></span> Blockchain</h2>
+      <p><a href="/en/developer-guide#block-chain">Blockchain Guide</a></p>
+      <p><a href="/en/developer-reference#block-chain">Blockchain Reference</a></p>
     </div><div>
       <h2 id="transactions"><span class="fa fa-exchange fa-lg"></span> Transactions</h2>
       <p><a href="/en/developer-guide#transactions">Transactions Guide</a></p>

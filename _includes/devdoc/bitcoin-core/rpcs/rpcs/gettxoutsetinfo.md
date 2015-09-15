@@ -26,12 +26,12 @@ The `gettxoutsetinfo` RPC {{summary_getTxOutSetInfo}}
 - n: "→<br>`height`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The height of the local best block chain.  A new node with only the hardcoded genesis block will have a height of 0"
+  d: "The height of the local best blockchain.  A new node with only the hardcoded genesis block will have a height of 0"
 
 - n: "→<br>`bestblock`"
   t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The hash of the header of the highest block on the local best block chain, encoded as hex in RPC byte order"
+  d: "The hash of the header of the highest block on the local best blockchain, encoded as hex in RPC byte order"
 
 - n: "→<br>`transactions`"
   t: "number (int)"

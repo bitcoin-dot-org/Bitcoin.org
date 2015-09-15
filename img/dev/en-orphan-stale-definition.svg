@@ -10,7 +10,7 @@
 <title>_anonymous_0</title>
 <polygon fill="white" stroke="white" points="-4,5 -4,-211 491,-211 491,5 -4,5"/>
 <text text-anchor="middle" x="243" y="-25.4" font-family="Sans" font-size="14.00"> </text>
-<text text-anchor="middle" x="243" y="-8.4" font-family="Sans" font-size="14.00">Stale blocks are valid but not part of the best block chain</text>
+<text text-anchor="middle" x="243" y="-8.4" font-family="Sans" font-size="14.00">Stale blocks are valid but not part of the best blockchain</text>
 <g id="graph2" class="cluster"><title>cluster_mainchain</title>
 </g>
 <g id="graph3" class="cluster"><title>cluster_toplabel</title>

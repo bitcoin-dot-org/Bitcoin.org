@@ -9,7 +9,7 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-Mining adds new blocks to the block chain, making transaction history
+Mining adds new blocks to the blockchain, making transaction history
 hard to modify.  Mining today takes on two forms:
 
 * Solo mining, where the miner attempts to generate new blocks on his
@@ -53,7 +53,7 @@ On the other hand, if a hash is found below the target threshold, the
 mining hardware returns the block header with the successful nonce to
 the mining software. The mining software combines the header with the
 block and sends the completed block to `bitcoind` to be broadcast to the network for addition to the
-block chain.
+blockchain.
 
 {% endautocrossref %}
 
@@ -74,7 +74,7 @@ construct block headers.
 In pooled mining, the mining pool sets the target threshold a few orders
 of magnitude higher (less difficult) than the network
 difficulty. This causes the mining hardware to return many block headers
-which don't hash to a value eligible for inclusion on the block chain
+which don't hash to a value eligible for inclusion on the blockchain
 but which do hash below the pool's target, proving (on average) that the
 miner checked a percentage of the possible hash values.
 
@@ -87,7 +87,7 @@ transaction must pay the pool.)
 The information the miner sends to the pool is called a share because it
 proves the miner did a share of the work. By chance, some shares the
 pool receives will also be below the network target---the mining pool
-sends these to the network to be added to the block chain.
+sends these to the network to be added to the blockchain.
 
 The block reward and transaction fees that come from mining that block
 are paid to the mining pool. The mining pool pays out a portion of

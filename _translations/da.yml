@@ -621,7 +621,7 @@ da:
     bittxt: "Bit er en udbredt enhed, der bruges til at angive en underenhed af en bitcoin – 1.000.000 bit er lig med 1 bitcoin (BTC eller B⃦). Denne enhed er for det meste mere belejlig til angivelse af drikkepenge og pricer på varer og services."
     bitcoin: "Bitcoin"
     bitcointxt: "Bitcoin – skrevet med stort begyndelsesbogstav – bruges når begrebet Bitcoin eller selve netværket beskrives. Fx: \"Jeg lærte noget om Bitcoin-protokollen i dag.\"<br>bitcoin – skrevet med småt – bruges til at beskrive bitcoin som enhed eller konto. Fx: \"Jeg sendte to bitcoin i dag.\" Det forkortes ofte BTC eller XBT."
-    blockchain: "Blokkæde (block chain)"
+    blockchain: "Blokkæde (blockchain)"
     blockchaintxt: "Blokkæden er en <b>offentlig optegnelse over Bitcoin-transaktioner</b> i kronologisk rækkefølge. Blokkæden deles mellem alle Bitcoin-brugere. Den bruges til at verificere bestandigheden af Bitcoin-transaktioner og til at forhindre  <a href=\"#[vocabulary.doublespend]\">dobbeltspendering</a>."
     block: "Blok (block)"
     blocktxt: "En blok er en <b>fortegnelse i blokkæden, som indeholder og bekræfter mange ventende transaktioner</b>. Omtrent hvert 10. minut gennemsnitligt bliver en ny blok, der indeholder transaktioner, føjet til <a href=\"#[vocabulary.blockchain]\">blokkæden</a> ved hjælp af <a href=\"#[vocabulary.mining]\">mining</a>."

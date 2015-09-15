@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### VerifyTxOutProof
 {% include helpers/subhead-links.md %}
 
-{% assign summary_verifyTxOutProof="verifies that a proof points to one or more transactions in a block, returning the transactions the proof commits to and throwing an RPC error if the block is not in our best block chain." %}
+{% assign summary_verifyTxOutProof="verifies that a proof points to one or more transactions in a block, returning the transactions the proof commits to and throwing an RPC error if the block is not in our best blockchain." %}
 
 {% autocrossref %}
 

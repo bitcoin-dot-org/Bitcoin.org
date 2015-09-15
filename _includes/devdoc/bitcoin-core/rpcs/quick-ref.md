@@ -39,7 +39,7 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
      _includes/rpc/getbestblockhash.md and run `make manual-update-summaries`. -->
 {% include helpers/summaries.md %}
 
-#### Block Chain RPCs
+#### Blockchain RPCs
 {:.no_toc}
 <!-- no subhead-links here -->
 

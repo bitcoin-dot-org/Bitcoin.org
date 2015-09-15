@@ -49,7 +49,7 @@ Core.  Use the RPCs listed in the See Also subsection below instead.
 - n: "→<br>`blocks`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The number of blocks in the local best block chain.  A new node with only the hardcoded genesis block will return `0`"
+  d: "The number of blocks in the local best blockchain.  A new node with only the hardcoded genesis block will return `0`"
 
 - n: "→<br>`timeoffset`"
   t: "number (int)"
@@ -69,7 +69,7 @@ Core.  Use the RPCs listed in the See Also subsection below instead.
 - n: "→<br>`difficulty`"
   t: "number (real)"
   p: "Required<br>(exactly 1)"
-  d: "The difficulty of the highest-height block in the local best block chain"
+  d: "The difficulty of the highest-height block in the local best blockchain"
 
 - n: "→<br>`testnet`"
   t: "bool"

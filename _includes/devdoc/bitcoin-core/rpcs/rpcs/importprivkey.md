@@ -35,7 +35,7 @@ The `importprivkey` RPC {{summary_importPrivKey}}
 
 {% enditemplate %}
 
-*Parameter #3---whether to rescan the block chain*
+*Parameter #3---whether to rescan the blockchain*
 
 {% itemplate ntpd1 %}
 - n: "Rescan"
@@ -59,7 +59,7 @@ The `importprivkey` RPC {{summary_importPrivKey}}
 
 Import the private key for the address
 mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe, giving it a label and scanning the
-entire block chain:
+entire blockchain:
 
 {% highlight bash %}
 bitcoin-cli -testnet importprivkey \

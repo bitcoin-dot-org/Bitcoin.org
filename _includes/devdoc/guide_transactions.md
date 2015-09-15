@@ -28,7 +28,7 @@ To keep things simple, this section pretends coinbase transactions do
 not exist. Coinbase transactions can only be created by Bitcoin miners
 and they're an exception to many of the rules listed below. Instead of
 pointing out the coinbase exception to each rule, we invite you to read
-about coinbase transactions in the block chain section of this guide.
+about coinbase transactions in the blockchain section of this guide.
 
 ![The Parts Of A Transaction](/img/dev/en-tx-overview.svg)
 
@@ -104,7 +104,7 @@ output if they can prove they control the private key corresponding to
 Bob's hashed public key. These instructions are called the [pubkey script][/en/glossary/pubkey-script]{:#term-pubkey-script}{:.term}
 or scriptPubKey.
 
-Alice broadcasts the transaction and it is added to the block chain.
+Alice broadcasts the transaction and it is added to the blockchain.
 The network categorizes it as an Unspent Transaction Output (UTXO), and Bob's
 wallet software displays it as a spendable balance.
 
@@ -188,7 +188,7 @@ The script language is a
 [Forth-like](https://en.wikipedia.org/wiki/Forth_%28programming_language%29)
 stack-based language deliberately designed to be stateless and not
 Turing complete. Statelessness ensures that once a transaction is added
-to the block chain, there is no condition which renders it permanently
+to the blockchain, there is no condition which renders it permanently
 unspendable. Turing-incompleteness (specifically, a lack of loops or
 gotos) makes the script language less flexible and more predictable,
 greatly simplifying the security model.
@@ -429,7 +429,7 @@ Signature script: <sig>
 [Null data][/en/glossary/null-data-transaction]{:#term-null-data}{:.term} pubkey scripts let you add a small amount of arbitrary data to the block
 chain in exchange for paying a transaction fee, but doing so is discouraged.
 (Null data is a standard pubkey script type only because some people were adding data
-to the block chain in more harmful ways.)
+to the blockchain in more harmful ways.)
 
 {% endautocrossref %}
 
@@ -541,7 +541,7 @@ pay) flag, creating three new combined types:
 Because each input is signed, a transaction with multiple inputs can
 have multiple signature hash types signing different parts of the transaction. For
 example, a single-input transaction signed with `NONE` could have its
-output changed by the miner who adds it to the block chain. On the other
+output changed by the miner who adds it to the blockchain. On the other
 hand, if a two-input transaction has one input signed with `NONE` and
 one input signed with `ALL`, the `ALL` signer can choose where to spend
 the satoshis without consulting the `NONE` signer---but nobody else can
@@ -564,7 +564,7 @@ hash types sign, including the procedure for inserting the subscript -->
 One thing all signature hash types sign is the transaction's [locktime][/en/glossary/locktime]{:#term-locktime}{:.term}.
 (Called nLockTime in the Bitcoin Core source code.)
 The locktime indicates the earliest time a transaction can be added to
-the block chain.  
+the blockchain.  
 
 Locktime allows signers to create time-locked transactions which will
 only become valid in the future, giving the signers a chance to change
@@ -574,12 +574,12 @@ If any of the signers change their mind, they can create a new
 non-locktime transaction. The new transaction will use, as one of
 its inputs, one of the same outputs which was used as an input to
 the locktime transaction. This makes the locktime transaction
-invalid if the new transaction is added to the block chain before
+invalid if the new transaction is added to the blockchain before
 the time lock expires.
 
 Care must be taken near the expiry time of a time lock. The peer-to-peer
 network allows block time to be up to two hours ahead of
-real time, so a locktime transaction can be added to the block chain up
+real time, so a locktime transaction can be added to the blockchain up
 to two hours before its time lock officially expires. Also, blocks are
 not created at guaranteed intervals, so any attempt to cancel a valuable
 transaction should be made a few hours before the time lock expires.
@@ -622,7 +622,7 @@ enable locktime.
 
 Transactions typically pay transaction fees based on the total byte size
 of the signed transaction.  The transaction fee is given to the
-Bitcoin miner, as explained in the [block chain section][section block chain], and so it is
+Bitcoin miner, as explained in the [blockchain section][section blockchain], and so it is
 ultimately up to each miner to choose the minimum transaction fee they
 will accept.
 
@@ -662,7 +662,7 @@ outputs be sent to a new P2PKH or P2SH address.
 
 In a transaction, the spender and receiver each reveal to each other all
 public keys or addresses used in the transaction. This allows either
-person to use the public block chain to track past and future
+person to use the public blockchain to track past and future
 transactions involving the other person's same public keys or addresses.
 
 If the same public key is reused often, as happens when people use
@@ -678,7 +678,7 @@ Even better, using new public keys or [unique
 addresses][]{:#term-unique-address}{:.term} when accepting payments or creating
 change outputs can be combined with other techniques discussed later,
 such as CoinJoin or merge avoidance, to make it extremely difficult to
-use the block chain by itself to reliably track how users receive and
+use the blockchain by itself to reliably track how users receive and
 spend their satoshis.
 
 Avoiding key reuse can also provide security against attacks which might
@@ -691,7 +691,7 @@ described below, with more general attacks hypothesized).
    first time satoshis sent to those addresses are spent, so attacks
    are effectively useless unless they can reconstruct private keys in
    less than the hour or two it takes for a transaction to be well
-   protected by the block chain.
+   protected by the blockchain.
 
 2. Unique (non-reused) private keys protect against the second type of
    attack by only generating one signature per private key, so attackers
@@ -730,14 +730,14 @@ identifier (txid), a modified transaction will not have the txid its
 creator expected.
 
 This isn't a problem for most Bitcoin transactions which are designed to
-be added to the block chain immediately. But it does become a problem
+be added to the blockchain immediately. But it does become a problem
 when the output from a transaction is spent before that transaction is
-added to the block chain.
+added to the blockchain.
 
 Bitcoin developers have been working to reduce transaction malleability
 among standard transaction types, but a complete fix is still only in
 the planning stages. At present, new transactions should not depend on
-previous transactions which have not been added to the block chain yet,
+previous transactions which have not been added to the blockchain yet,
 especially if large amounts of satoshis are at stake.
 
 Transaction malleability also affects payment tracking.  Bitcoin Core's

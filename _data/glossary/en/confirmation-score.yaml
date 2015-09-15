@@ -7,7 +7,7 @@ required:
     title_max_40_characters_no_formatting: Confirmation Score, Confirmed Transaction
 
     summary_max_255_characters_no_formatting: >
-        A score indicating the number of blocks on the best block chain
+        A score indicating the number of blocks on the best blockchain
         that would need to be modified to remove or modify a particular
         transaction. A confirmed transaction has a confirmation score of
         one or higher.

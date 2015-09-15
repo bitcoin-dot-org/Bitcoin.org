@@ -104,7 +104,7 @@ third_party_privacy:
 > details were published to your Twitter or Facebook feed for all your
 > friends to see? You probably wouldn't want to use cash any more.
 
-Every confirmed Bitcoin transaction is published to the block chain
+Every confirmed Bitcoin transaction is published to the blockchain
 where anyone can see it. So **why do people still use Bitcoin?** And why
 do many of them believe that Bitcoin is a private way of sending money?
 
@@ -314,7 +314,7 @@ against eavesdroppers for received transactions.
 
 ## Strong Privacy for Sent Transactions
 
-To put a transaction on the block chain, you must send it publicly---but
+To put a transaction on the blockchain, you must send it publicly---but
 how you send it can make a big difference.
 
 ![Sending privacy](/img/bitcoin-core/sending-privacy.svg)
@@ -427,7 +427,7 @@ Isn't that worth occasionally starting up a few seconds slower?
 
   Some lightweight wallets don't connect to the Bitcoin peer-to-peer (P2P)
   network.  Instead, they make a (usually secure) connection to a single
-  server that provides block chain data.
+  server that provides blockchain data.
 
   The wallet tells the server all of its addresses, and the server replies
   with all of the transactions that belong to the wallet.  This explicitly

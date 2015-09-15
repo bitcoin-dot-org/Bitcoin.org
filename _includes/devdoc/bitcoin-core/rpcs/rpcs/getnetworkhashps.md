@@ -29,7 +29,7 @@ The `getnetworkhashps` RPC {{summary_getNetworkHashPS}}
 - n: "Height"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "The height of the last block to use for calculating the average.  Defaults to `-1` for the highest-height block on the local best block chain.  If the specified height is higher than the highest block on the local best block chain, it will be interpreted the same as `-1`"
+  d: "The height of the last block to use for calculating the average.  Defaults to `-1` for the highest-height block on the local best blockchain.  If the specified height is higher than the highest block on the local best blockchain, it will be interpreted the same as `-1`"
 
 {% enditemplate %}
 
