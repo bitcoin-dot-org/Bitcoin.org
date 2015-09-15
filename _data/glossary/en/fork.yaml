@@ -8,7 +8,7 @@ required:
 
     summary_max_255_characters_no_formatting: >
         When two or more blocks have the same block height, forking the
-        block chain.  Typically occurs when two or more miners find
+        blockchain.  Typically occurs when two or more miners find
         blocks at nearly the same time.  Can also happen as part of an
         attack.
 
@@ -28,6 +28,6 @@ optional:
 
     links_html_or_markdown_style_capitalize_first_letter:
         - "[Fork](/en/developer-guide#term-fork) --- Bitcoin.org Developer Guide"
-        - "[What is the longest block chain fork that has been made stale so far?](http://bitcoin.stackexchange.com/q/3343) --- Bitcoin StackExchange"
+        - "[What is the longest blockchain fork that has been made stale so far?](http://bitcoin.stackexchange.com/q/3343) --- Bitcoin StackExchange"
 
 ---

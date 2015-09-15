@@ -74,7 +74,7 @@ The `gettransaction` RPC {{summary_getTransaction}}
 - n: "→ →<br>`category`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "Set to one of the following values:<br>• `send` if sending payment<br>• `receive` if this wallet received payment in a regular transaction<br>• `generate` if a matured and spendable coinbase<br>• `immature` if a coinbase that is not spendable yet<br>• `orphan` if a coinbase from a block that's not in the local best block chain"
+  d: "Set to one of the following values:<br>• `send` if sending payment<br>• `receive` if this wallet received payment in a regular transaction<br>• `generate` if a matured and spendable coinbase<br>• `immature` if a coinbase that is not spendable yet<br>• `orphan` if a coinbase from a block that's not in the local best blockchain"
 
 - n: "→ →<br>`amount`"
   t: "number (bitcoins)"

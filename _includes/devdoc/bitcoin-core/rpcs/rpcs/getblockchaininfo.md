@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### GetBlockChainInfo
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getBlockChainInfo="provides information about the current state of the block chain." %}
+{% assign summary_getBlockChainInfo="provides information about the current state of the blockchain." %}
 
 {% autocrossref %}
 
@@ -17,23 +17,23 @@ The `getblockchaininfo` RPC {{summary_getBlockChainInfo}}
 
 *Parameters: none*
 
-*Result---A JSON object providing information about the block chain*
+*Result---A JSON object providing information about the blockchain*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
   t: "object"
   p: "Required<br>(exactly 1)"
-  d: "Information about the current state of the local block chain"
+  d: "Information about the current state of the local blockchain"
 
 - n: "→<br>`chain`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The name of the block chain.  One of `main` for mainnet, `test` for testnet, or `regtest`<!--noref--> for regtest"
+  d: "The name of the blockchain.  One of `main` for mainnet, `test` for testnet, or `regtest`<!--noref--> for regtest"
 
 - n: "→<br>`blocks`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The number of validated blocks in the local best block chain.  For a new node with just the hardcoded genesis block, this will be 0"
+  d: "The number of validated blocks in the local best blockchain.  For a new node with just the hardcoded genesis block, this will be 0"
 
 - n: "→<br>`headers`"
   t: "number (int)"
@@ -43,17 +43,17 @@ The `getblockchaininfo` RPC {{summary_getBlockChainInfo}}
 - n: "→<br>`bestblockhash`"
   t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The hash of the header of the highest validated block in the best block chain, encoded as hex in RPC byte order.  This is identical to the string returned by the `getbestblockhash` RPC"
+  d: "The hash of the header of the highest validated block in the best blockchain, encoded as hex in RPC byte order.  This is identical to the string returned by the `getbestblockhash` RPC"
 
 - n: "→<br>`difficulty`"
   t: "number (real)"
   p: "Required<br>(exactly 1)"
-  d: "The difficulty of the highest-height block in the best block chain"
+  d: "The difficulty of the highest-height block in the best blockchain"
 
 - n: "→<br>`verificationprogress`"
   t: "number (real)"
   p: "Required (exactly 1)"
-  d: "Estimate of what percentage of the block chain transactions have been verified so far, starting at 0.0 and increasing to 1.0 for fully verified.  May slightly exceed 1.0 when fully synced to account for transactions in the memory pool which have been verified before being included in a block"
+  d: "Estimate of what percentage of the blockchain transactions have been verified so far, starting at 0.0 and increasing to 1.0 for fully verified.  May slightly exceed 1.0 when fully synced to account for transactions in the memory pool which have been verified before being included in a block"
 
 - n: "→<br>`chainwork`"
   t: "string (hex)"

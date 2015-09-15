@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### GetBlockHash
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getBlockHash="returns the header hash of a block at the given height in the local best block chain." %}
+{% assign summary_getBlockHash="returns the header hash of a block at the given height in the local best blockchain." %}
 
 {% autocrossref %}
 

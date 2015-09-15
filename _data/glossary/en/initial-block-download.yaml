@@ -9,7 +9,7 @@ required:
     summary_max_255_characters_no_formatting: >
         The process used by a new node (or long-offline node) to
         download a large number of blocks to catch up to the tip of the
-        best block chain.
+        best blockchain.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Initial block download

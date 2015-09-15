@@ -55,7 +55,7 @@ The `gettxout` RPC {{summary_getTxOut}}
 - n: "→<br>`bestblock`"
   t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The hash of the header of the block on the local best block chain which includes this transaction.  The hash will encoded as hex in RPC byte order.  If the transaction is not part of a block, the string will be empty"
+  d: "The hash of the header of the block on the local best blockchain which includes this transaction.  The hash will encoded as hex in RPC byte order.  If the transaction is not part of a block, the string will be empty"
 
 - n: "→<br>`confirmations`"
   t: "number (int)"

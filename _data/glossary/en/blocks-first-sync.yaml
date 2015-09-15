@@ -7,7 +7,7 @@ required:
     title_max_40_characters_no_formatting: Blocks-First, Blocks-First Sync
 
     summary_max_255_characters_no_formatting: >
-        Synchronizing the block chain by downloading each block from a
+        Synchronizing the blockchain by downloading each block from a
         peer and then validating it.
 
     synonyms_shown_in_glossary_capitalize_first_letter:

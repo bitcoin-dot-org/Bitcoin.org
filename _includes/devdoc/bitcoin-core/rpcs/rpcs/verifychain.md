@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### VerifyChain
 {% include helpers/subhead-links.md %}
 
-{% assign summary_verifyChain="verifies each entry in the local block chain database." %}
+{% assign summary_verifyChain="verifies each entry in the local blockchain database." %}
 
 {% autocrossref %}
 

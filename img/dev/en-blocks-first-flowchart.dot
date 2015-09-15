@@ -12,7 +12,7 @@ edge [ penwidth = 1.75, fontname="Sans" ]
 node [ penwidth = 1.75, shape = "none", fontname="Sans"]
 graph [ penwidth = 1.75, fontname="Sans" ]
 
-fsbc [ label = "Fully-Synced Block Chain?", style = "filled" ];
+fsbc [ label = "Fully-Synced Blockchain?", style = "filled" ];
 listen [ label = "Listen For New Blocks (Inv)" ];
 request_blocks [ label = "Request Blocks (GetData)" ];
 request_invs [ label = "Request Inventories (GetBlocks)" ];

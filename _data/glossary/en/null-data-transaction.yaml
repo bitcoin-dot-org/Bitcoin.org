@@ -8,7 +8,7 @@ required:
 
     summary_max_255_characters_no_formatting: >
         A standard transaction type which allows adding 40 bytes of
-        arbitrary data to the block chain up to once per transaction.
+        arbitrary data to the blockchain up to once per transaction.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Null data transaction

@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### ImportWallet
 {% include helpers/subhead-links.md %}
 
-{% assign summary_importWallet="imports private keys from a file in wallet dump file format (see the `dumpwallet` RPC). These keys will be added to the keys currently in the wallet.  This call may need to rescan all or parts of the block chain for transactions affecting the newly-added keys, which may take several minutes." %}
+{% assign summary_importWallet="imports private keys from a file in wallet dump file format (see the `dumpwallet` RPC). These keys will be added to the keys currently in the wallet.  This call may need to rescan all or parts of the blockchain for transactions affecting the newly-added keys, which may take several minutes." %}
 
 {% autocrossref %}
 

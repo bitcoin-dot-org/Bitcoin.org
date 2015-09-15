@@ -33,7 +33,7 @@ blocks that violate the 21 million bitcoin limit or which break other
 important rules.
 
 Users of other wallets don't get this level of security, so miners can
-trick them into accepting fabricated transactions or hijacked block chains.
+trick them into accepting fabricated transactions or hijacked blockchains.
 
 Why take that risk if you don't have to? Bitcoin Core provides
 the **best possible security against dishonest miners** along
@@ -205,13 +205,13 @@ safety][]
 <td colspan="4" markdown="block">
 > Alice believes that there should never be more than 21 million
 > bitcoins---but one day she's tricked into buying "bitcoins" that
-> are only valid on a block chain with permanent 10% inflation.
+> are only valid on a blockchain with permanent 10% inflation.
 
-- **Bitcoin bank**{:.fgred} users have to use whatever block chain the
+- **Bitcoin bank**{:.fgred} users have to use whatever blockchain the
   bank uses.  Banks can even profit from switching their users to a new
   chain and selling their users' bitcoins from the old chain.
 
-- **Lightweight (SPV) wallet**{:.fgred} users accept the block chain
+- **Lightweight (SPV) wallet**{:.fgred} users accept the blockchain
   they know about with the most proof of work. This lets the hash rate
   majority of miners force SPV wallet users off of Bitcoin.
 
@@ -227,7 +227,7 @@ The alternative is to allow miners to do whatever they want.
 ### Real Example
 
 In July 2015, several large Bitcoin miners accidentally produced an
-invalid block chain several blocks longer than the correct block chain.
+invalid blockchain several blocks longer than the correct blockchain.
 Some bank wallets and many SPV wallets accepted this longer chain,
 putting their users' bitcoins at risk.
 
@@ -274,7 +274,7 @@ mining income.
 
 <div class="callout" markdown="block">
 Unless you use Bitcoin Core, you can never be sure that your bitcoin balance
-is correct according to the block chain.
+is correct according to the blockchain.
 </div>
 
 ### Real Example
@@ -304,7 +304,7 @@ users stopped receiving notification of new transactions.
 This attack applies to **all Bitcoin wallets.**{:.fgred}
 
 The attack works because powerful miners have the ability to rewrite the
-block chain and replace their own transactions, allowing them to take
+blockchain and replace their own transactions, allowing them to take
 back previous payments.
 
 The cost of this attack depends on the percentage of total network hash
@@ -461,7 +461,7 @@ If you have any questions, please ask on the [forums][bcc forums] or
   <div id="spv_wallets" title="SPV Wallets" markdown="block">
   **Simplified Payment Verification (SPV)** wallets are lightweight
   wallets that can verify whether or not a transaction is part of a block
-  without downloading the {{site.text.chain_gb}} GB block chain. However,
+  without downloading the {{site.text.chain_gb}} GB blockchain. However,
   they cannot verify whether or not the transaction is actually valid.
   (Only full validation nodes like Bitcoin Core can do that.)
 

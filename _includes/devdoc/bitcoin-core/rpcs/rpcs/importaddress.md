@@ -35,7 +35,7 @@ The `importaddress` RPC {{summary_importAddress}}
 
 {% enditemplate %}
 
-*Parameter #3---whether to rescan the block chain*
+*Parameter #3---whether to rescan the blockchain*
 
 {% itemplate ntpd1 %}
 - n: "Rescan"

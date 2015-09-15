@@ -4,7 +4,7 @@
 
 required:
                                            #-------------40 characters-------------#
-    title_max_40_characters_no_formatting: Block Chain Height, Block Height
+    title_max_40_characters_no_formatting: Blockchain Height, Block Height
 
     summary_max_255_characters_no_formatting: >
         The number of blocks preceding a particular block on a block
@@ -19,8 +19,8 @@ optional:
     synonyms_and_pluralizations_not_shown_in_glossary:
         - heights
         - block heights
-        - block chain height
-        - block chain heights
+        - blockchain height
+        - blockchain heights
 
     not_to_be_confused_with_capitalize_first_letter:
 

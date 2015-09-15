@@ -233,7 +233,7 @@ hi:
     sourcecode: "स्रोत कोड प्राप्त करें"
     versionhistory: "संस्करण इतिहास दिखाएं"
     notelicense: "Bitcoin कोर समुदाय संचालित है <a href=\"https://www.fsf.org/about/what-is-free-software\"> मुफ्त सॉफ्टवेयर </a> परियोजना <a href=\"http://opensource.org/licenses/mit-license.php\"> MIT लाइसेंस </a> के तरत जारी है। "
-    notesync: "Bitcoin कोर प्रारंभिक सिंक पर लंबा समय लग सकता है। पूरे  block chain size (over 20GB) के लिए क्या आपके पास पर्याप्त बैंडविड्थ और भंडारण है यह सुनिश्चित करें। यदि आपको टॉरेंट फ़ाइल डाउनलोड करना आता है तो, सॉफ्टवेयर शुरू करने से पहले  <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (ब्लॉक श्रृंखला के पिछली नकल) को Bitcoin कोर डेटा निर्देशिका में डाल कर आप इस प्रतिक्रिया को  तेज़ कर सकते हैं"
+    notesync: "Bitcoin कोर प्रारंभिक सिंक पर लंबा समय लग सकता है। पूरे  blockchain size (over 20GB) के लिए क्या आपके पास पर्याप्त बैंडविड्थ और भंडारण है यह सुनिश्चित करें। यदि आपको टॉरेंट फ़ाइल डाउनलोड करना आता है तो, सॉफ्टवेयर शुरू करने से पहले  <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (ब्लॉक श्रृंखला के पिछली नकल) को Bitcoin कोर डेटा निर्देशिका में डाल कर आप इस प्रतिक्रिया को  तेज़ कर सकते हैं"
     patient: "आपको धैर्य रखना होगा"
   events:
     title: "सम्मेलन और घटनाए - Bitcoin"
@@ -712,7 +712,7 @@ hi:
       address: address
       bit: bit
       bitcoin: bitcoin
-      blockchain: block-chain
+      blockchain: blockchain
       block: block
       btc: btc
       confirmation: confirmation

@@ -8,7 +8,7 @@ required:
 
     summary_max_255_characters_no_formatting: >
         Blocks which were successfully mined but which aren't included
-        on the current best block chain, likely because some other block
+        on the current best blockchain, likely because some other block
         at the same height had its chain extended first.
 
     synonyms_shown_in_glossary_capitalize_first_letter:

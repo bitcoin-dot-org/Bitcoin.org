@@ -56,17 +56,17 @@ GET /tx/<txid>.<format>
 - n: "→<br>`blockhash`"
   t: "string (hex)"
   p: "Optional<br>(0 or 1)"
-  d: "If the transaction has been included in a block on the local best block chain, this is the hash of that block encoded as hex in RPC byte order"
+  d: "If the transaction has been included in a block on the local best blockchain, this is the hash of that block encoded as hex in RPC byte order"
 
 - n: "→<br>`confirmations`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "If the transaction has been included in a block on the local best block chain, this is how many confirmations it has.  Otherwise, this is `0`"
+  d: "If the transaction has been included in a block on the local best blockchain, this is how many confirmations it has.  Otherwise, this is `0`"
 
 - n: "→<br>`time`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "If the transaction has been included in a block on the local best block chain, this is the block header time of that block (may be in the future)"
+  d: "If the transaction has been included in a block on the local best blockchain, this is the block header time of that block (may be in the future)"
 
 - n: "→<br>`blocktime`"
   t: "number (int)"

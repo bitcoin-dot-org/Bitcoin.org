@@ -77,7 +77,7 @@ A complete list of commands is available in the [Bitcoin.org developer
 reference](/en/developer-reference#rpc-quick-reference).
 
 When Bitcoin Core daemon first starts, it will begin to download the
-block chain. This step will take at least several hours, and it may
+blockchain. This step will take at least several hours, and it may
 take a day or more on a slow Internet connection or with a slow
 computer. During the download, Bitcoin Core will use a significant part
 of your connection bandwidth. You can stop Bitcoin Core at any time using
@@ -285,7 +285,7 @@ you want to use, click Ok to use the default.
 
 ![Bitcoin-Qt Welcome](/img/full-node/en-bitcoin-qt-welcome.png)
 
-Bitcoin Core GUI will begin to download the block chain.  This
+Bitcoin Core GUI will begin to download the blockchain.  This
 step will take at least several hours, and it may take a day or more on
 a slow Internet connection or with a slow computer.  During the
 download, Bitcoin Core will use a significant part of your connection
@@ -500,7 +500,7 @@ you want to use, click *Ok* to use the default.
 
 ![Bitcoin-Qt Welcome](/img/full-node/en-bitcoin-qt-welcome.png)
 
-Bitcoin Core GUI will begin to download the block chain.  This
+Bitcoin Core GUI will begin to download the blockchain.  This
 step will take at least several hours, and it may take a day or more on
 a slow Internet connection or with a slow computer.  During the
 download, Bitcoin Core will use a significant part of your connection
@@ -696,7 +696,7 @@ still need to configure inbound connections as described later in the
 
 ![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win7-bitcoin-core-outgoing-firewall.png)
 
-Bitcoin Core GUI will begin to download the block chain.  This
+Bitcoin Core GUI will begin to download the blockchain.  This
 step will take at least several hours, and it may take a day or more on
 a slow Internet connection or with a slow computer.  During the
 download, Bitcoin Core will use a significant part of your connection
@@ -894,7 +894,7 @@ still need to configure inbound connections as described later in the
 
 ![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win7-bitcoin-core-outgoing-firewall.png)
 
-Bitcoin Core GUI will begin to download the block chain.  This
+Bitcoin Core GUI will begin to download the blockchain.  This
 step will take at least several hours, and it may take a day or more on
 a slow Internet connection or with a slow computer.  During the
 download, Bitcoin Core will use a significant part of your connection
@@ -989,7 +989,7 @@ For example, to safely stop your node, run the following command:
 {{complete_list_of_commands_and_ibd}}
 
 
-When Bitcoin Core daemon first starts, it will begin to download the block chain. This step will take at least several hours, and it may take a day or more on a slow Internet connection or with a slow computer. During the download, Bitcoin Core will use a significant part of your connection bandwidth. You can stop Bitcoin Core at any time using the stop command; it will resume from the point where it stopped the next time you start it.
+When Bitcoin Core daemon first starts, it will begin to download the blockchain. This step will take at least several hours, and it may take a day or more on a slow Internet connection or with a slow computer. During the download, Bitcoin Core will use a significant part of your connection bandwidth. You can stop Bitcoin Core at any time using the stop command; it will resume from the point where it stopped the next time you start it.
 
 <div class="box" markdown="1">
 *Optional: Start Your Node At Boot*
@@ -1056,7 +1056,7 @@ you want to use, click Ok to use the default.
 
 ![Bitcoin Core Welcome](/img/full-node/en-osx-welcome-to-bitcoin-core.png)
 
-Bitcoin Core GUI will begin to download the block chain.  This
+Bitcoin Core GUI will begin to download the blockchain.  This
 step will take at least several hours, and it may take a day or more on
 a slow Internet connection or with a slow computer.  During the
 download, Bitcoin Core will use a significant part of your connection

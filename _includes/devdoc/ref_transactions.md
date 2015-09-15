@@ -211,7 +211,7 @@ Bitcoin Core and many other tools print and accept raw transactions
 encoded as hex.
 
 As of Bitcoin Core 0.9.3 (October 2014), all transactions use the
-version 1 format described below. (Note: transactions in the block chain
+version 1 format described below. (Note: transactions in the blockchain
 are allowed to list a higher version number to permit soft forks, but
 they are treated as version 1 transactions by current software.)
 

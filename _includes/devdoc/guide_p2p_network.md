@@ -148,7 +148,7 @@ In order to maintain a connection with a peer, nodes by default will send a mess
 Before a full node can validate unconfirmed transactions and
 recently-mined blocks, it must download and validate all blocks from
 block 1 (the block after the hardcoded genesis block) to the current tip
-of the best block chain. This is the Initial Block Download (IBD) or
+of the best blockchain. This is the Initial Block Download (IBD) or
 initial sync.
 
 Although the word "initial" implies this method is only used once, it
@@ -158,10 +158,10 @@ for a long time. In this case, a node can use the IBD method to download
 all the blocks which were produced since the last time it was online.
 
 Bitcoin Core uses the IBD method any time the last block on its local
-best block chain has a block header time more than 24 hours in the past.
-Bitcoin Core 0.10.0 will also perform IBD if its local best block chain is
+best blockchain has a block header time more than 24 hours in the past.
+Bitcoin Core 0.10.0 will also perform IBD if its local best blockchain is
 more than 144 blocks lower than its local best header chain (that is,
-the local block chain is more than about 24 hours in the past).
+the local blockchain is more than about 24 hours in the past).
 
 {% endautocrossref %}
 
@@ -172,12 +172,12 @@ the local block chain is more than about 24 hours in the past).
 
 Bitcoin Core (up until version [0.9.3][bitcoin core 0.9.3]) uses a
 simple initial block download (IBD) method we'll call *blocks-first*.
-The goal is to download the blocks from the best block chain in sequence.
+The goal is to download the blocks from the best blockchain in sequence.
 
 ![Overview Of Blocks-First Method](/img/dev/en-blocks-first-flowchart.svg)
 
 The first time a node is started, it only has a single block in its
-local best block chain---the hardcoded genesis block (block 0).  This
+local best blockchain---the hardcoded genesis block (block 0).  This
 node chooses a remote peer, called the sync node, and sends it the
 `getblocks` message illustrated below.
 
@@ -189,7 +189,7 @@ sends the header hash of the only block it has, the genesis block
 to all zeroes to request a maximum-size response.
 
 Upon receipt of the `getblocks` message, the sync node takes the first
-(and only) header hash and searches its local best block chain for a
+(and only) header hash and searches its local best blockchain for a
 block with that header hash. It finds that block 0 matches, so it
 replies with 500 block inventories (the maximum response to a
 `getblocks` message) starting from block 1. It sends these inventories
@@ -203,7 +203,7 @@ instance of the object. For blocks, the unique identifier is a hash of
 the block's header.
 
 The block inventories appear in the `inv` message in the same order they
-appear in the block chain, so this first `inv` message contains
+appear in the blockchain, so this first `inv` message contains
 inventories for blocks 1 through 501. (For example, the hash of block 1
 is 4860...0000 as seen in the illustration above.)
 
@@ -237,7 +237,7 @@ below:
 ![Second GetBlocks Message Sent During IBD](/img/dev/en-ibd-getblocks2.svg)
 
 Upon receipt of the second `getblocks` message, the sync node searches
-its local best block chain for a block that matches one of the header
+its local best blockchain for a block that matches one of the header
 hashes in the message, trying each hash in the order they were received.
 If it finds a matching hash, it replies with 500 block inventories
 starting with the next block from that point. But if there is no
@@ -246,15 +246,15 @@ two nodes have in common is block 0 and so it sends an `inv` starting with
 block 1 (the same `inv` message seen several illustrations above).
 
 This repeated search allows the sync node to send useful inventories even if
-the IBD node's local block chain forked from the sync node's local block
+the IBD node's local blockchain forked from the sync node's local block
 chain. This fork detection becomes increasingly useful the closer the
-IBD node gets to the tip of the block chain.
+IBD node gets to the tip of the blockchain.
 
 When the IBD node receives the second `inv` message, it will request
 those blocks using `getdata` messages.  The sync node will respond with
 `block` messages.  Then the IBD node will request more inventories with
 another `getblocks` message---and the cycle will repeat until the IBD
-node is synced to the tip of the block chain.  At that point, the node
+node is synced to the tip of the blockchain.  At that point, the node
 will accept blocks sent through the regular block broadcasting described
 in a later subsection.
 
@@ -277,17 +277,17 @@ of its downloading. This has several implications:
   download from a single sync node at a time.
 
 * **Download Restarts:** The sync node can send a non-best (but
-  otherwise valid) block chain to the IBD node. The IBD node won't be
+  otherwise valid) blockchain to the IBD node. The IBD node won't be
   able to identify it as non-best until the initial block download nears
-  completion, forcing the IBD node to restart its block chain download
+  completion, forcing the IBD node to restart its blockchain download
   over again from a different node. Bitcoin Core ships with several
-  block chain checkpoints at various block heights selected by
+  blockchain checkpoints at various block heights selected by
   developers to help an IBD node detect that it is being fed an
-  alternative block chain history---allowing the IBD node to restart
+  alternative blockchain history---allowing the IBD node to restart
   its download earlier in the process.
 
 * **Disk Fill Attacks:** Closely related to the download restarts, if
-  the sync node sends a non-best (but otherwise valid) block chain, the
+  the sync node sends a non-best (but otherwise valid) blockchain, the
   chain will be stored on disk, wasting space and possibly filling up
   the disk drive with useless data.
 
@@ -324,7 +324,7 @@ solves several problems with the older blocks-first IBD method.
 ![Overview Of Headers-First Method](/img/dev/en-headers-first-flowchart.svg)
 
 The first time a node is started, it only has a single block in its
-local best block chain---the hardcoded genesis block (block 0).  The
+local best blockchain---the hardcoded genesis block (block 0).  The
 node chooses a remote peer, which we'll call the sync node, and sends it the
 `getheaders` message illustrated below.
 
@@ -336,7 +336,7 @@ sends the header hash of the only block it has, the genesis block
 to all zeroes to request a maximum-size response.
 
 Upon receipt of the `getheaders` message, the sync node takes the first
-(and only) header hash and searches its local best block chain for a
+(and only) header hash and searches its local best blockchain for a
 block with that header hash. It finds that block 0 matches, so it
 replies with 2,000 header (the maximum response) starting from
 block 1. It sends these header hashes in the `headers` message
@@ -402,7 +402,7 @@ stalling node and attempt to connect to another node. For example, in
 the illustration above, Node A will be disconnected if it doesn't send
 block 3 within at least two seconds.
 
-Once the IBD node is synced to the tip of the block chain, it will
+Once the IBD node is synced to the tip of the blockchain, it will
 accept blocks sent through the regular block broadcasting described in a
 later subsection.
 
@@ -485,7 +485,7 @@ Blocks-first nodes may download orphan blocks---blocks whose previous
 block header hash field refers to a block header this node
 hasn't seen yet. In other words, orphan blocks have no known parent
 (unlike stale blocks, which have known parents but which aren't part of
-the best block chain).
+the best blockchain).
 
 ![Difference Between Orphan And Stale Blocks](/img/dev/en-orphan-stale-definition.svg)
 

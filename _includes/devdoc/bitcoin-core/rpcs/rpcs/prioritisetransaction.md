@@ -31,7 +31,7 @@ The `prioritisetransaction` RPC {{summary_prioritiseTransaction}}
 - n: "Priority"
   t: "number (real)"
   p: "Required<br>(exactly 1)"
-  d: "If positive, the priority to add to the transaction in addition to its computed priority; if negative, the priority to subtract from the transaction's computed priory.  Computed priority is the age of each input in days since it was added to the block chain as an output (coinage) times the value of the input in satoshis (value) divided by the size of the serialized transaction (size), which is `coinage * value / size`"
+  d: "If positive, the priority to add to the transaction in addition to its computed priority; if negative, the priority to subtract from the transaction's computed priory.  Computed priority is the age of each input in days since it was added to the blockchain as an output (coinage) times the value of the input in satoshis (value) divided by the size of the serialized transaction (size), which is `coinage * value / size`"
 
 {% enditemplate %}
 

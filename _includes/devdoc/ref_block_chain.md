@@ -4,7 +4,7 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_includes/devdoc/ref_block_chain.md" %}
 
-## Block Chain
+## Blockchain
 {% include helpers/subhead-links.md %}
 
 The following subsections briefly document core block details.
@@ -102,7 +102,7 @@ consensus rules:
   this block (assuming the spend is otherwise valid). However, the TXID
   corresponding to the output must be placed at some point before the
   TXID corresponding to the input. This ensures that any program parsing
-  block chain transactions linearly will encounter each output before it
+  blockchain transactions linearly will encounter each output before it
   is used as an input.
 
 If a block only has a coinbase transaction, the coinbase TXID is used as
@@ -144,7 +144,7 @@ order when it's placed in the block header.
 
 The target threshold is a 256-bit unsigned integer which a header hash
 must be equal to or below in order for that header to be a valid part of
-the block chain.
+the blockchain.
 However, the header field *nBits* provides only 32 bits of space, so the
 target number uses a less precise format called "compact" which works
 like a base-256 version of scientific notation:

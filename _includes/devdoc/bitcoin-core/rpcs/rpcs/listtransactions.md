@@ -75,7 +75,8 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "→ →<br>`category`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "Set to one of the following values:<br>• `send` if sending payment<br>• `receive` if this wallet received payment in a regular transaction<br>• `generate` if a matured and spendable coinbase<br>• `immature` if a coinbase that is not spendable yet<br>• `orphan` if a coinbase from a block that's not in the local best block chain<br>• `move` if an off-block-chain move made with the `move` RPC"
+  d: "Set to one of the following values:<br>• `send` if sending payment<br>• `receive` if this wallet received payment in a regular transaction<br>• `generate` if a matured and spendable coinbase<br>• `immature` if a coinbase that is not spendable yet<br>• `orphan` if a coinbase from a block that's not in the local best 
+blockchain<br>• `move` if an off-blockchain move made with the `move` RPC"
 
 - n: "→ →<br>`amount`"
   t: "number (bitcoins)"
@@ -105,17 +106,17 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "→ →<br>`blockhash`"
   t: "string (hex)"
   p: "Optional<br>(0 or 1)"
-  d: "Only returned for confirmed transactions.  The hash of the block on the local best block chain which includes this transaction, encoded as hex in RPC byte order"
+  d: "Only returned for confirmed transactions.  The hash of the block on the local best blockchain which includes this transaction, encoded as hex in RPC byte order"
 
 - n: "→ →<br>`blockindex`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "Only returned for confirmed transactions.  The block height of the block on the local best block chain which includes this transaction"
+  d: "Only returned for confirmed transactions.  The block height of the block on the local best blockchain which includes this transaction"
 
 - n: "→ →<br>`blocktime`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "Only returned for confirmed transactions.  The block header time (Unix epoch time) of the block on the local best block chain which includes this transaction"
+  d: "Only returned for confirmed transactions.  The block header time (Unix epoch time) of the block on the local best blockchain which includes this transaction"
 
 - n: "→ →<br>`txid`"
   t: "string (hex)"
@@ -140,7 +141,7 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "→ →<br>`timereceived`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "A Unix epoch time when the transaction was detected by the local node, or the time of the block on the local best block chain that included the transaction.  Not returned for *move* category payments"
+  d: "A Unix epoch time when the transaction was detected by the local node, or the time of the block on the local best blockchain that included the transaction.  Not returned for *move* category payments"
 
 - n: "→ →<br>`comment`"
   t: "string"

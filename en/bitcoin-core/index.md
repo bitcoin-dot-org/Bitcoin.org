@@ -24,9 +24,9 @@ breadcrumbs:
 
 <div class="show_less_more">
   <div class="show_less" markdown="block">
-  Bitcoin Core is programmed to decide which block chain contains
+  Bitcoin Core is programmed to decide which blockchain contains
   valid transactions. The users of Bitcoin Core only accept
-  transactions for that block chain, making it the Bitcoin block
+  transactions for that blockchain, making it the Bitcoin block
   chain that everyone else wants to use
   </div>
 
@@ -34,12 +34,12 @@ breadcrumbs:
   It is these users who <b>keep Bitcoin decentralized.</b> They
   individually run their own Bitcoin Core full nodes, and each of
   those full nodes separately follows the exact same rules to decide
-  which block chain is valid.
+  which blockchain is valid.
 
   There's no voting or other corruptible process involved: there's
   just individual software following identical rules—"math"—to
   evaluate identical blocks and coming to identical conclusions
-  about which block chain is valid.
+  about which blockchain is valid.
 
   This shared agreement (called consensus) allows people like you to
   only accept valid bitcoins, <b>enforcing Bitcoin's rules</b> against

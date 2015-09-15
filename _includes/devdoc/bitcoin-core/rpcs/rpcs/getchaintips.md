@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### GetChainTips
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getChainTips="returns information about the highest-height block (tip) of each local block chain." %}
+{% assign summary_getChainTips="returns information about the highest-height block (tip) of each local blockchain." %}
 
 {% autocrossref %}
 
@@ -17,18 +17,18 @@ The `getchaintips` RPC {{summary_getChainTips}}
 
 *Parameters: none*
 
-*Result---an array of block chain tips*
+*Result---an array of blockchain tips*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
   t: "array"
   p: "Required<br>(exactly 1)"
-  d: "An array of JSON objects, with each object describing a chain tip.  At least one tip---the local best block chain---will always be present"
+  d: "An array of JSON objects, with each object describing a chain tip.  At least one tip---the local best blockchain---will always be present"
 
 - n: "→<br>Tip"
   t: "object"
   p: "Required<br>(1 or more)"
-  d: "An object describing a particular chain tip.  The first object will always describe the active chain (the local best block chain)"
+  d: "An object describing a particular chain tip.  The first object will always describe the active chain (the local best blockchain)"
 
 - n: "→ →<br>`height`"
   t: "number (int)"
@@ -43,12 +43,12 @@ The `getchaintips` RPC {{summary_getChainTips}}
 - n: "→ →<br>`branchlen`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The number of blocks that are on this chain but not on the main chain.  For the local best block chain, this will be `0`; for all other chains, it will be at least `1`"
+  d: "The number of blocks that are on this chain but not on the main chain.  For the local best blockchain, this will be `0`; for all other chains, it will be at least `1`"
 
 - n: "→ →<br>`status`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The status of this chain.  Valid values are:<br>• `active` for the local best block chain<br>• `invalid` for a chain that contains one or more invalid blocks<br>• `headers-only`<!--noref--> for a chain with valid headers whose corresponding blocks both haven't been validated and aren't stored locally<br>• `valid-headers` for a chain with valid headers whose corresponding blocks are stored locally, but which haven't been fully validated<br>• `valid-fork` for a chain which is fully validated but which isn't part of the local best block chain (it was probably the local best block chain at some point)<br>• `unknown` for a chain whose reason for not being the active chain is unknown"
+  d: "The status of this chain.  Valid values are:<br>• `active` for the local best blockchain<br>• `invalid` for a chain that contains one or more invalid blocks<br>• `headers-only`<!--noref--> for a chain with valid headers whose corresponding blocks both haven't been validated and aren't stored locally<br>• `valid-headers` for a chain with valid headers whose corresponding blocks are stored locally, but which haven't been fully validated<br>• `valid-fork` for a chain which is fully validated but which isn't part of the local best blockchain (it was probably the local best blockchain at some point)<br>• `unknown` for a chain whose reason for not being the active chain is unknown"
 
 {% enditemplate %}
 

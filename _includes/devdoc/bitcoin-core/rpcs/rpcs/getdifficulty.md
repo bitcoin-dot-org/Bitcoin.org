@@ -21,7 +21,7 @@ The `getdifficulty` RPC {{summary_getDifficulty}}
 - n: "`result`"
   t: "number (real)"
   p: "Required<br>(exactly 1)"
-  d: "The difficulty of creating a block with the same target threshold (nBits) as the highest-height block in the local best block chain.  The number is a a multiple of the minimum difficulty"
+  d: "The difficulty of creating a block with the same target threshold (nBits) as the highest-height block in the local best blockchain.  The number is a a multiple of the minimum difficulty"
 
 {% enditemplate %}
 

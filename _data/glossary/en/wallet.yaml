@@ -7,7 +7,7 @@ required:
     title_max_40_characters_no_formatting: Wallet
 
     summary_max_255_characters_no_formatting: >
-        Software that stores private keys and monitors the block chain
+        Software that stores private keys and monitors the blockchain
         (sometimes as a client of a server that does the processing) to
         allow users to spend and receive satoshis.
 

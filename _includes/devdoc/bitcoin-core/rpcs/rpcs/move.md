@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### Move
 {% include helpers/subhead-links.md %}
 
-{% assign summary_move="moves a specified amount from one account in your wallet to another using an off-block-chain transaction." %}
+{% assign summary_move="moves a specified amount from one account in your wallet to another using an off-blockchain transaction." %}
 
 {% autocrossref %}
 

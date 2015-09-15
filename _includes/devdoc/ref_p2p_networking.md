@@ -172,12 +172,12 @@ different reasons:
 {% autocrossref %}
 
 The `getblocks` message requests an `inv` message that provides block
-header hashes starting from a particular point in the block chain. It
+header hashes starting from a particular point in the blockchain. It
 allows a peer which has been disconnected or started for the first time
 to get the data it needs to request the blocks it hasn't seen.
 
 Peers which have been disconnected may have stale blocks in their
-locally-stored block chain, so the `getblocks` message allows the
+locally-stored blockchain, so the `getblocks` message allows the
 requesting peer to provide the receiving peer with multiple header
 hashes at various heights on their local chain. This allows the
 receiving peer to find, within that list, the last header hash they had
@@ -185,7 +185,7 @@ in common and reply with all subsequent header hashes.
 
 Note: the receiving peer itself may respond with an `inv` message
 containing header hashes of stale blocks.  It is up to the requesting
-peer to poll all of its peers to find the best block chain.
+peer to poll all of its peers to find the best blockchain.
 
 If the receiving peer does not find a common header hash within the
 list, it will assume the last common block was the genesis block (block
@@ -250,7 +250,7 @@ identical to the `inv` message; only the message header differs.
 *Added in protocol version 31800.*
 
 The `getheaders` message requests a `headers` message that provides block headers
-starting from a particular point in the block chain. It allows a
+starting from a particular point in the blockchain. It allows a
 peer which has been disconnected or started for the first time to get
 the headers it hasn’t seen yet.
 
@@ -512,7 +512,7 @@ following checks (order doesn't matter):
 * Fail if the block header is invalid. Remember to ensure that the hash
   of the header is less than or equal to the target threshold encoded by
   the nBits header field. Your program should also, of course, attempt
-  to ensure the header belongs to the best block chain and that the user
+  to ensure the header belongs to the best blockchain and that the user
   knows how many confirmations this block has.
 
 For a detailed example of parsing a `merkleblock` message, please see
@@ -1193,7 +1193,7 @@ ascending code number (primary) and alphabetic in reply to (secondary) -->
 | 0x40 | `tx` message      | 32          | char[32]   | The transaction will not be mined or relayed because the rejecting node considers it non-standard---a transaction type or version unknown by the server.  Extra data is the rejected transaction's TXID.
 | 0x41 | `tx` message      | 32          | char[32]   | One or more output amounts are below the dust threshold.  Extra data is the rejected transaction's TXID.
 | 0x42 | `tx` message      |             | char[32]   | The transaction did not have a large enough fee or priority to be relayed or mined.  Extra data is the rejected transaction's TXID.
-| 0x43 | `block` message   | 32          | char[32]   | The block belongs to a block chain which is not the same block chain as provided by a compiled-in checkpoint.  Extra data is the rejected block's header hash.
+| 0x43 | `block` message   | 32          | char[32]   | The block belongs to a blockchain which is not the same blockchain as provided by a compiled-in checkpoint.  Extra data is the rejected block's header hash.
 
 The annotated hexdump below shows a `reject` message. (The message
 header has been omitted.)
@@ -1253,7 +1253,7 @@ before initializing its half of the connection by first sending a
 | 8        | nonce                 | uint64_t         | A random nonce which can help a node detect a connection to itself.  If the nonce is 0, the nonce field is ignored.  If the nonce is anything else, a node should terminate the connection on receipt<!--noref--> of a `version` message with a nonce it previously sent.
 | *Varies* | user_agent bytes      | compactSize uint | Number of bytes in following user\_agent field.  If 0x00, no user agent field is sent.
 | *Varies* | user_agent            | string           | *Renamed in protocol version 60000.* <br><br>User agent as defined by BIP14. Previously called subVer.
-| 4        | start_height          | int32_t          | The height of the transmitting node's best block chain or, in the case of an SPV client, best block header chain.
+| 4        | start_height          | int32_t          | The height of the transmitting node's best blockchain or, in the case of an SPV client, best block header chain.
 | 1        | relay                 | bool             | *Added in protocol version 70001 as described by BIP37.* <br><br>Transaction relay flag.  If 0x00, no `inv` messages or `tx` messages announcing new transactions should be sent to this client until it sends a `filterload` message or `filterclear` message.  If 0x01, this node wants `inv` messages and `tx` messages announcing new transactions.
 
 The following service identifiers have been assigned.
