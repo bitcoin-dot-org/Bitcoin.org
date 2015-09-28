@@ -102,6 +102,14 @@
   country: "United States"
   link: "http://digitaleconomy.io/"
 
+- date: 2015-10-02
+  title: "Hacker Congress"
+  venue: "Paralelni Polis"
+  address: "Delnicka 43"
+  city: "Prague"
+  country: "Czech Republic"
+  link: "http://www.hcpp.cz/eng/"
+
 - date: 2015-10-06
   title: "Fintech: Law and Disruption"
   venue: "New York Law School Events Center"
@@ -141,7 +149,6 @@
   city: "San Mateo, CA"
   country: "USA"
   link: "http://bitcoinfoundation.org"
-
 
 - date: 2015-10-25
   title: "Money 20/20"
