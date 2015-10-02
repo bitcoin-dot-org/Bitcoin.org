@@ -642,9 +642,9 @@ en:
     title: "Privacy - Bitcoin"
     pagetitle: "Privacy"
     datacollect: "Data collected"
-    datacollecttxt: "Bitcoin.org collects anonymized server logs. These logs include IP addresses with replaced last byte, time of the visit, requested page, user agent and referer url. Bitcoin.org does not collect data using cookies."
+    datacollecttxt: "Bitcoin.org collects anonymized server logs. These logs include IP addresses with replaced last byte, time of the visit, requested page, user agent and referer url. Bitcoin.org uses Google Analytics to get visitor traffic information. Google Analytics collects cookies, IP addresses, operating system information, and screen resolution. Bitcoin.org does not have direct access to the information collected by Google Analytics."
     datause: "Usage of data"
-    datausetxt: "Collected data may be used to provide transparent public stats."
+    datausetxt: "Collected data may be used to provide transparent public stats. Data collected through Google Analytics may be used to accurately determine the number of visitors to the site, and traffic sources. Data obtained through Google Analytics may be publicly shared with potential advertising partners for business purposes."
   protect-your-privacy:
     title: "Protect your privacy - Bitcoin"
     pagetitle: "Protect your privacy"
