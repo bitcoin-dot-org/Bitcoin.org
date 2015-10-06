@@ -3,3 +3,8 @@ Redesign
 1) Add design helpers
 	* transform them from sass to less
 	* add them to project
+
+
+BUGS
+* shadow.less makes less compiler unhappy. 
+Quick fix: comment out the line in main.less 
