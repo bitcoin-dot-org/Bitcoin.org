@@ -142,7 +142,7 @@
   country: "Georgia"
   link: "http://altconvention.com"
 
-- date: 2015-10-18
+- date: 2015-10-16
   title: "DevCore Workshop: Developing the Developers"
   venue: "Draper University"
   address: "44 E Third Ave"
@@ -246,6 +246,14 @@
   country: "United States"
   link: "http://insidebitcoins.com/san-diego/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibsd"
 
+- date: 2016-01-25
+  title: "The North American Bitcoin Conference"
+  venue: "Miami Design District"
+  address: "NW 36th Street"
+  city: "Miami, Florida"
+  country: "United States of America"
+  link: "http://www.btcmiami.com"
+
 - date: 2016-02-23
   title: "Blockchain Conference San Francisco"
   venue: "Fort Mason"
@@ -253,6 +261,14 @@
   city: "San Francisco"
   country: "United States"
   link: "http://blockchain-sanfrancisco.com/"
+
+- date: 2016-03-03
+  title: "Bitcoin Africa Conference 2016"
+  venue: "Focus rooms, The Core"
+  address: "Leeuwkop Road & Kikuyu rd"
+  city: "Johannesburg"
+  country: "South Africa"
+  link: "http://bitcoinconference.co.za/"
 
 - date: 2016-04-04
   title: "Money 20/20 Europe"
