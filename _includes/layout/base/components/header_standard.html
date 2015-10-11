@@ -1,45 +1,40 @@
 <div class="header_standard">
 	<div class="header_standard--branding">
 		<div class="header_standard--logo">
-			<img src="header_standard/header_standard--logo.svg">
+			<a href="/{{ page.lang }}/"><img src="/img/components/header_standard--logo.svg"></a>
 		</div>
 		<div class="header_standard--title">
-			<h2><a href="">Bitcoin</a></h2>
+			<h2><a href="/{{ page.lang }}/">Bitcoin</a></h2>
 		</div>
 	</div>
 	<div class="header_standard--toggle">
-		<img src="header_standard/header_standard--menu.svg">
+		<img src="/img/components/header_standard--toggle.svg">
 	</div>
 
 	<div class="header_standard--navigation">
 		<ul class="header_standard--menu">
 			<li class="header_standard--menu--child">
-				<a class="header_standard--menu--toggle--introduction" href="#"><span aria-expanded="false">Introduction</span></a>
+				<a class="header_standard--menu--toggle--introduction" href="#"><span aria-expanded="false">{% translate menu-intro layout %}</span></a>
 			</li>
 			<li class="header_standard--menu--child">
-				<a class="header_standard--menu--toggle--resources" href="#"><span aria-expanded="false">Resources</span></a>
+				<a class="header_standard--menu--toggle--resources" href="#"><span aria-expanded="false">{% translate menu-resources layout %}</span></a>
 			</li>
-			<li><a href="#">Innovation</a></li>
+			<li><a href="/{{ page.lang }}/{% translate innovation url %}">{% translate menu-innovation layout %}</a></li>
 			<li class="header_standard--menu--child">
-				<a  class="header_standard--menu--toggle--participate" href="#"><span aria-expanded="false">Participate</span></a>
+				<a  class="header_standard--menu--toggle--participate" href="#"><span aria-expanded="false">{% translate menu-participate layout %}</span></a>
 			</li>
-			<li><a href="#">FAQ</a></li>
+			<li><a href="/{{ page.lang }}/{% translate faq url %}">{% translate menu-faq layout %}</a></li>
 		</ul>
 
 		<div class="header_standard--flags">
 			<ul class='header_standard--flags--selector'>
 			  <li>
-			  	<a class="header_standard--menu--toggle--flags" href='#'>
-			  		<div class="header_standard--flags--primary">
-			  			<img src="flags/US.png"><strong>English</strong>
-			  		</div>
-			  	</a>
-			  <li>
-			    <ul class='header_standard--flags--dropdown'>
-			      <li><a href='#'>About</a>
-			      <li><a href='#'>Blog</a>
-			      <li><a href='#'>Contact</a>
-			    </ul>
+    			  	<a class="header_standard--menu--toggle--flags" href='#'>
+    			  		<div class="header_standard--flags--primary">
+    			  			<img src="/img/flags/{{ page.lang }}.png"><strong>{{ site.langs[page.lang] }}</strong>
+    			  		</div>
+    			  	</a>
+                </li>
 			</ul>
 		</div>
 	</div>
@@ -47,54 +42,41 @@
 <div class="header_standard--menu--dropdown-wrap">
 	<div class="header_standard--menu--dropdown">
 		<ul class="header_standard--menu--dropdown--introduction">
-			<li><a href="#">Individuals</a></li>
-			<li><a href="#">Businesses</a></li>
-			<li><a href="#">Developers</a></li>
-			<li><a href="#">Getting Started</a></li>
-			<li><a href="#">How it works</a></li>
-			<li><a href="#">You need to know</a></li>
+			<li><a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a></li>
+			<li><a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a></li>
+			<li><a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a></li>
+			<li><a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate menu-getting-started layout %}</a></li>
+			<li><a href="/{{ page.lang }}/{% translate how-it-works url %}">{% translate menu-how-it-works layout %}</a></li>
+			<li><a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a></li>
 		</ul>
 
 		<ul class="header_standard--menu--dropdown--resources">
-			<li><a href="#">Resources</a></li>
-			<li><a href="#">Community</a></li>
-			<li><a href="#">Documentation</a></li>
-			<li><a href="#">Vocalbulary</a></li>
-			<li><a href="#">Events</a></li>
-			<li><a href="#">Bitcoin Core</a></li>
+			<li><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a></li>
+			<li><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
+			<li><a href="/en/developer-documentation">Documentation</a></li>
+			<li><a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
+			<li><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>
+			{% if page.lang == 'en' %}
+			  <li><a href="/en/bitcoin-core/">{% translate bitcoin-core layout %}</a></li>
+			{% else %}
+			  <li><a href="/{{page.lang}}/{% translate download url %}">{% translate bitcoin-core layout %}</a></li>
+			{% endif %}
 		</ul>
 
 		<ul class="header_standard--menu--dropdown--participate">
-			<li><a href="#">Support Bitcoin</a></li>
-			<li><a href="#">Running a full node</a></li>
-			<li><a href="#">Development</a></li>
+			<li><a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a></li>
+            {% if page.lang == 'en' %}
+			<li><a href="/en/full-node">Running a full node</a></li>
+            {% endif %}
+			<li><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
 		</ul>
 
 		<ul class="header_standard--menu--dropdown--flags">
-			<li><a href="#"><img src="flags/IN.png"><span>Bahasa Indonesia</span></a></li>
-			<li><a href="#"><img src="flags/DK.png"><span>Dansk</span></a></li>
-			<li><a href="#"><img src="flags/DE.png"><span>Deutsch</span></a></li>
-			<li><a href="#"><img src="flags/ES.png"><span>Español</span></a></li>
-			<li><a href="#"><img src="flags/FR.png"><span>Français</span></a></li>
-			<li><a href="#"><img src="flags/IT.png"><span>Italiano</span></a></li>
-			<li><a href="#"><img src="flags/HU.png"><span>Magyar</span></a></li>
-			<li><a href="#"><img src="flags/NL.png"><span>Nederlands</span></a></li>
-			<li><a href="#"><img src="flags/PL.png"><span>Polski</span></a></li>
-			<li><a href="#"><img src="flags/BR.png"><span>Português Brasil</span></a></li>
-			<li><a href="#"><img src="flags/RO.png"><span>Română</span></a></li>
-			<li><a href="#"><img src="flags/SL.png"><span>Slovenščina</span></a></li>
-			<li><a href="#"><img src="flags/SV.png"><span>Svenska</span></a></li>
-			<li><a href="#"><img src="flags/TR.png"><span>Türkçe</span></a></li>
-			<li><a href="#"><img src="flags/GR.png"><span>Ελληνικά</span></a></li>
-			<li><a href="#"><img src="flags/BG.png"><span>български</span></a></li>
-			<li><a href="#"><img src="flags/RU.png"><span>Русский</span></a></li>
-			<li><a href="#"><img src="flags/UK.png"><span>Українська</span></a></li>
-			<li><a href="#"><img src="flags/AR.png"><span>العربية</span></a></li>
-			<li><a href="#"><img src="flags/FA.png"><span>فارسی</span></a></li>
-			<li><a href="#"><img src="flags/KO.png"><span>한국의</span></a></li>
-			<li><a href="#"><img src="flags/JP.png"><span>日本語</span></a></li>
-			<li><a href="#"><img src="flags/CH.png"><span>简体中文</span></a></li>
-			<li><a href="#"><img src="flags/CH.png"><span>繁體中文</span></a></li>
+        {% for lang in site.langsorder %}
+        {% if lang == page.lang %}
+        {% endif %}
+              <li><a href="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"><img src="/img/flags/{{ lang }}.png">{{ site.langs[lang] }}</a></li>
+        {% endfor %}
 		</ul>
 	</div>
 </div>
@@ -104,35 +86,16 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-					<img src="flags/US.png"><span>English</span>
+                    <img src="/img/flags/{{ page.lang }}.png"><strong>{{ site.langs[page.lang] }}</strong>
 				</div>
 			</a>
 		</div>
 		<ul class="header_standard--outside--sub-menu">
-			<li><a href="#"><img src="flags/IN.png"><span>Bahasa Indonesia</span></a></li>
-			<li><a href="#"><img src="flags/DK.png"><span>Dansk</span></a></li>
-			<li><a href="#"><img src="flags/DE.png"><span>Deutsch</span></a></li>
-			<li><a href="#"><img src="flags/ES.png"><span>Español</span></a></li>
-			<li><a href="#"><img src="flags/FR.png"><span>Français</span></a></li>
-			<li><a href="#"><img src="flags/IT.png"><span>Italiano</span></a></li>
-			<li><a href="#"><img src="flags/HU.png"><span>Magyar</span></a></li>
-			<li><a href="#"><img src="flags/NL.png"><span>Nederlands</span></a></li>
-			<li><a href="#"><img src="flags/PL.png"><span>Polski</span></a></li>
-			<li><a href="#"><img src="flags/BR.png"><span>Português Brasil</span></a></li>
-			<li><a href="#"><img src="flags/RO.png"><span>Română</span></a></li>
-			<li><a href="#"><img src="flags/SL.png"><span>Slovenščina</span></a></li>
-			<li><a href="#"><img src="flags/SV.png"><span>Svenska</span></a></li>
-			<li><a href="#"><img src="flags/TR.png"><span>Türkçe</span></a></li>
-			<li><a href="#"><img src="flags/GR.png"><span>Ελληνικά</span></a></li>
-			<li><a href="#"><img src="flags/BG.png"><span>български</span></a></li>
-			<li><a href="#"><img src="flags/RU.png"><span>Русский</span></a></li>
-			<li><a href="#"><img src="flags/UK.png"><span>Українська</span></a></li>
-			<li><a href="#"><img src="flags/AR.png"><span>العربية</span></a></li>
-			<li><a href="#"><img src="flags/FA.png"><span>فارسی</span></a></li>
-			<li><a href="#"><img src="flags/KO.png"><span>한국의</span></a></li>
-			<li><a href="#"><img src="flags/JP.png"><span>日本語</span></a></li>
-			<li><a href="#"><img src="flags/CH.png"><span>简体中文</span></a></li>
-			<li><a href="#"><img src="flags/CH.png"><span>繁體中文</span></a></li>
+		{% for lang in site.langsorder %}
+               {% if lang == page.lang %}
+               {% endif %}
+                     <li><a href="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"><img src="/img/flags/{{ lang }}.png">{{ site.langs[lang] }}</a></li>
+               {% endfor %}
 		</ul>
 	</div>
 	<ul class="header_standard--outside--menu">
@@ -140,34 +103,40 @@
 		Menu
 		</div>
 		<li>
-			<span>Introduction</span>
+			<span>{% translate menu-intro layout %}</span>
 			<ul class="header_standard--outside--menu_list">
-				<li><a href="#">Individuals</a></li>
-				<li><a href="#">Businesses</a></li>
-				<li><a href="#">Developers</a></li>
-				<li><a href="#">Getting Started</a></li>
-				<li><a href="#">How it works</a></li>
-				<li><a href="#">You need to know</a></li>
+				<li><a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a></li>
+                <li><a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a></li>
+                <li><a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a></li>
+                <li><a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate menu-getting-started layout %}</a></li>
+                <li><a href="/{{ page.lang }}/{% translate how-it-works url %}">{% translate menu-how-it-works layout %}</a></li>
+                <li><a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a></li>
 			</ul>
 		</li>
-		<li><span>Resources</span>
+		<li><span>{% translate menu-resources layout %}</span>
 			<ul class="header_standard--outside--menu_list">
-				<li><a href="#">Resources</a></li>
-				<li><a href="#">Community</a></li>
-				<li><a href="#">Documentation</a></li>
-				<li><a href="#">Vocalbulary</a></li>
-				<li><a href="#">Events</a></li>
-				<li><a href="#">Bitcoin Core</a></li>
+				<li><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a></li>
+                <li><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
+                <li><a href="/en/developer-documentation">Documentation</a></li>
+                <li><a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
+                <li><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>
+                {% if page.lang == 'en' %}
+                  <li><a href="/en/bitcoin-core/">{% translate bitcoin-core layout %}</a></li>
+                {% else %}
+                  <li><a href="/{{page.lang}}/{% translate download url %}">{% translate bitcoin-core layout %}</a></li>
+                {% endif %}
 			</ul>
 		</li>
-		<li><a href="#">Innovation</a></li>
-		<li><span>Participate</span>
+		<li><a href="#">{% translate menu-innovation layout %}</a></li>
+		<li><span>{% translate menu-participate layout %}</span>
 			<ul class="header_standard--outside--menu_list">
-				<li><a href="#">Support Bitcoin</a></li>
-				<li><a href="#">Running a full node</a></li>
-				<li><a href="#">Development</a></li>
+                <li><a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a></li>
+                {% if page.lang == 'en' %}
+                <li><a href="/en/full-node">Running a full node</a></li>
+                {% endif %}
+                <li><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
 			</ul>
 		</li>
-		<li><a href="#">FAQ</a></li>
+		<li><a href="#">{% translate menu-faq layout %}</a></li>
 	</ul>
 </div>
