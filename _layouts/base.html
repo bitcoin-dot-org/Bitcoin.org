@@ -10,16 +10,18 @@
 </head>
 
 <body>
+<div class="site">
+<div class="site_main">
 {% include layout/base/pagetop-detect-mobile.html %}
 {% include layout/base/pagetop-alert.html %}
 
-<div class="head"><div>
+<div class="site_header">
   {% include layout/base/head-language-dropdown.html %}
   {% include layout/base/head-mobile-menu.html %}
   {% include layout/base/head-logo.html %}
   {% include layout/base/head-language-select.html %}
   {% include layout/base/head-menu.html %}
-</div></div>
+</div>
 
 <div class="body">
   {% include layout/base/breadcrumbs.html %}
@@ -32,6 +34,8 @@
 </div>
 
 {% include layout/base/footer-js.html %}
+</div>
+</div>
 </body>
 
 </html>
