@@ -49,8 +49,4 @@ _components
 
 BUGS
 
-* shadow.less makes less compiler unhappy. 
-		Quick fix: comment out the line in main.less 
-
-* Comment out the z-depth mixin, because shadow.less not fixed.
 
