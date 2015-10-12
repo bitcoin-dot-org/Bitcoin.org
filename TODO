@@ -19,10 +19,38 @@ Redesign
 	* add them to project
 
 
+FIX
+Menu: Documentation don't have any translation
+
+JS: clean up the files. At the moment two $ can be live and 
+the site is loading to many js files.
+
+jQuery: Choose witch version is possible to use.
+
+
+REFACTOR
+header_standard.js need to refactor. 
+
+header_standard.less need to refactor.
+
+At the moment js,less,html files are spread out in diffrent
+component folders. Check with site owners if its possible 
+to create a single folder put all files into a single folder,
+because it will be a lot of work if somebody objects. 
+
+_components
+	---	header_standard
+		--- header_standard.html
+		--- header_standard.less
+		--- header_standard.js
+		--- header_standard--menu.svg
+		etc.
 
 
 BUGS
+
 * shadow.less makes less compiler unhappy. 
 		Quick fix: comment out the line in main.less 
 
 * Comment out the z-depth mixin, because shadow.less not fixed.
+
