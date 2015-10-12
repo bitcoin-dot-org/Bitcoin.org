@@ -749,6 +749,61 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
+
+- bitx:
+    title: "BitX"
+    titleshort: "BitX"
+    compat: "mobile web android ios"
+    level: 4
+    platform:
+      web:
+        text: "walletbitx"
+        link: "https://bitx.co?utm_source=bitcoin.org&utm_medium=web&utm_campaign=choosewallet"
+        screenshot: "bitx.png"
+        os:
+        check:
+          control: "checkfailcontrolthirdparty"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+      android:
+        text: "walletbitx"
+        link: "https://play.google.com/store/apps/details?id=co.bitx.android.wallet&referrer=utm_source%3Dbitcoin.org%26utm_medium%3Dweb%26utm_campaign%3Dchoosewallet"
+        screenshot: "bitx.png"
+        os:
+        - android
+        check:
+          control: "checkfailcontrolthirdparty"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencyclosedsource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+      ios:
+        text: "walletbitx"
+        link: "https://itunes.apple.com/app/bitx-wallet/id927362479"
+        screenshot: "bitx.png"
+        os:
+        - ios
+        check:
+          control: "checkfailcontrolthirdparty"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencyclosedsource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+
 - ninki:
     title: "Ninki Wallet"
     titleshort: "Ninki"
