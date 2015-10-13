@@ -10,18 +10,18 @@
 </head>
 
 <body>
-<div class="site">
-<div class="site_main">
 {% include layout/base/pagetop-detect-mobile.html %}
 {% include layout/base/pagetop-alert.html %}
+<div class="site">
+<div class="site_main">
 
 <div class="site_header">
 
   {% include layout/base/components/header_standard.html %}
   
- </div>
+</div>
 
-<div class="body">
+<div class="site_body">
   {% include layout/base/breadcrumbs.html %}
   {% include layout/base/content.html %}
   <div class="footer">
@@ -31,9 +31,14 @@
   </div>
 </div>
 
+<div class="site_footer">
+	{% include layout/base/components/footer_standard.html %}
+</div>
+
+
+</div>
+</div>
 {% include layout/base/footer-js.html %}
-</div>
-</div>
 </body>
 
 </html>
