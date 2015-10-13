@@ -1,0 +1,120 @@
+.footer_developer {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: @ms7 @ms2;
+	max-width: @ms16;
+
+}
+
+.footer_developer--header {
+	display: flex;
+	align-items: center;
+	margin: 0 0 @ms0;
+
+}
+
+.footer_developer--header img {
+	width: @ms3;
+	height: @ms3;
+}
+
+.footer_developer--header h2 {
+	font-size: @ms2;
+	padding-left: @ms-2;
+	color: @white;
+	font-weight: 500;
+}
+.footer_developer--header span {
+	font-weight: 300;
+	color: @orange-500;
+}
+
+.footer_developer--body {
+	background: @gray-100;
+	border-radius: @ms-5;
+	.card-2;
+}
+
+.footer_developer--info {
+	padding: @ms1 @ms2;
+	line-height: @ms1;
+	opacity: @light-2;
+}
+
+.footer_developer--action {
+	height: @ms6;
+	border-top: solid @gray-300 1px;
+	display: flex;
+	align-items: stretch;
+}
+
+.footer_developer--action--text {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	flex-basis: 61.8%;
+	font-size: @ms0;
+	font-weight: 400;
+	opacity: @light-2;
+}
+
+.footer_developer--action--buttonarea {
+	display: flex;
+	justify-content: center;
+	flex-basis: 38.2%;
+	border-left: solid 1px @gray-300; 
+	background: @gray-200;
+	border-bottom-right-radius: @ms-5;
+	padding: 0 @ms-1;
+}
+
+.footer_developer--action--buttonarea a {
+	display: flex;
+	text-decoration: none;
+}
+
+
+.footer_developer--action--button {
+	flex-basis: 100%;
+	padding: @ms-1 @ms-5;
+	align-self: center;
+	text-align: center;
+	border-radius: @ms-6;
+	font-weight: 500;
+	color: @white;
+	font-size: @ms-1;
+	border: 1px soild @orange-900;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+	background: linear-gradient(@teal-400,@teal-500 85%,@teal-500 90%,@teal-500);
+	.card-1;
+}
+
+
+@media screen and (min-width: 450px) {
+	.footer_developer--action--text {
+		font-size: @ms1;
+	}
+	.footer_developer--action--buttonarea {
+		padding: 0;
+	}
+	.footer_developer--action--buttonarea a {
+		flex-basis: 61.8%;
+	}
+	
+
+}
+
+@media screen and (min-width: 1020px) {
+	.footer_developer--info {
+		font-size: @ms0 + @mp1;
+		padding: @ms3 @ms3;
+	}
+	.footer_developer--header img {
+		width: @ms4;
+		height: @ms4;
+	}
+	.footer_developer--header h2 {
+		font-size: @ms3;
+	}
+}

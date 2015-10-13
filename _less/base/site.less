@@ -1,14 +1,23 @@
 body {
 	font-family: 'lato';
-	font-size: 16px;
+	background: @gray-800;
 }
 
 .site {
 	background: @gray-100;
+	z-index: 0;
+	position: relative;
+	.card-3;
 }
 
 .site_main {
-	max-width: @ms18;
+	max-width: @ms17;
 	margin: 0 auto;
 }
 
+.footer {
+}
+
+.footer_main {
+	.site_main;
+}
