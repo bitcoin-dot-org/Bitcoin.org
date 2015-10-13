@@ -2,6 +2,16 @@ Redesign
 
 
 
+3) Add footer
+	Wrap site
+	Add site_footer
+	add site_footer.less
+	integrate site_footer
+
+	Add footer_developer
+	add footer_developer.less
+	integrate footer_developer
+
 2) Add Menu
 	Wrap the website
 	Add site.less
