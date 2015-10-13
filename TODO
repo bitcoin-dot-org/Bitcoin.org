@@ -37,6 +37,14 @@ the site is loading to many js files.
 
 jQuery: Choose witch version is possible to use.
 
+flags: fix the flags. they are little of.
+
+Translate: Make the footer_developer translate ready
+
+footer_developer: Make the bottom part little larger see mockup
+
+footer_standard: make the text right align
+
 
 REFACTOR
 header_standard.js need to refactor. 
