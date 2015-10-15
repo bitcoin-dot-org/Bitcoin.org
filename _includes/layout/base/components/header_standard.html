@@ -75,7 +75,7 @@
         {% for lang in site.langsorder %}
         {% if lang == page.lang %}
         {% endif %}
-              <li><a href="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"><img src="/img/flags/{{ lang }}.png">{{ site.langs[lang] }}</a></li>
+              <li><a href="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}"><img src="/img/flags/{{ lang }}.png"><span>{{ site.langs[lang] }}</span></a></li>
         {% endfor %}
 		</ul>
 	</div>
