@@ -11,7 +11,11 @@
 
 <body>
 {% include layout/base/pagetop-detect-mobile.html %}
-{% include layout/base/pagetop-alert.html %}
+<div class="top">
+  <div class="top_main">
+    {% include layout/base/components/alert_standard.html %}
+  </div>
+</div>
 <div class="site">
   <div class="site_main">
 
