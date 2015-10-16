@@ -641,10 +641,6 @@ en:
   privacy:
     title: "Privacy Policy - Bitcoin"
     pagetitle: "Privacy Policy"
-    datacollect: "Data collected"
-    datacollecttxt: "Bitcoin.org collects anonymized server logs. These logs include IP addresses with replaced last byte, time of the visit, requested page, user agent and referer url. Bitcoin.org does not collect data using cookies."
-    datause: "Usage of data"
-    datausetxt: "Collected data may be used to provide transparent public stats."
     privacytxt1: "This page informs you of our policies regarding the collection, use and disclosure of personal information we receive from users of our site (http://bitcoin.org). We use your personal information to better understand your usage of the site, and to collect traffic statistics."
     privacytxt2: "By using the site, you agree to the collection and use of information in accordance with this policy."
     privacylogdata: "Log Data"
