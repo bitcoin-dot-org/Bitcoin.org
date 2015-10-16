@@ -1,5 +1,7 @@
 ---
 id: cookie-notification
+# This file is licensed under the GNU General Public License Version 3 available on
+# http://www.gnu.org/licenses/gpl-3.0.en.html
 ---
 
 (function () {
