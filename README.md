@@ -86,7 +86,7 @@ git remote add upstream https://github.com/bitcoin-dot-org/bitcoin.org.git
 6. Push your branch on your GitHub repository. `git push origin (name of your branch)`
 7. Click on your branch on GitHub and click the **Compare / pull request** button to send a pull request.
 
-When submitting a pull request, please take required time to discuss your changes and adapt your work. It is generally a good practice to split unrelated changes into separate branchs and pull requests.
+When submitting a pull request, please take required time to discuss your changes and adapt your work. It is generally a good practice to split unrelated changes into separate branches and pull requests.
 
 **Travis Continuous Integration (CI)**
 
@@ -449,7 +449,7 @@ optional_magnetlink:
 ## Warning: this site's Markdown parser commonly requires you make two
 ## changes to the release notes from the Bitcoin Core source tree:
 ##
-## 1. Make sure both ordered and unordered lists are preceeded by an empty
+## 1. Make sure both ordered and unordered lists are preceded by an empty
 ## (whitespace only) line, like the empty line before this list item.
 ##
 ## 2. Place URLs inside angle brackets, like <http://bitcoin.org/bin>
@@ -704,7 +704,7 @@ bannerclass: success
 
 ## Wallets
 
-The wallet list is based on the personal evaluation of the maintainer(s) and regular contributors of this site, according to the criterias detailed below.
+The wallet list is based on the personal evaluation of the maintainer(s) and regular contributors of this site, according to the criteria detailed below.
 
 These requirements are meant to be updated and strengthened over time. Innovative wallets are exciting and encouraged, so if your wallet has a good reason for not following some of the rules below, please submit it anyway and we'll consider updating the rules.
 
@@ -744,7 +744,7 @@ Basic requirements:
   - Supports importing custom seeds
   - Provides source code and/or detailed specification for blackbox testing if using a closed-source Secure Element
 
-Optional criterias (some could become requirements):
+Optional criteria (some could become requirements):
 
 - Received independent security audit(s)
 - Avoid address reuse by displaying a new receiving address for each transaction in the wallet UI
@@ -753,7 +753,7 @@ Optional criterias (some could become requirements):
 - Provides a bug reporting policy on the website
 - If user has no access over its private keys:
   - Full reserve audit(s)
-  - Insurrance(s) against failures on their side
+  - Insurance(s) against failures on their side
   - Reminds the user to enable 2FA in the main UI of the wallet
 - If user has exclusive access over its private keys:
   - Supports HD wallets (BIP32)
@@ -786,7 +786,7 @@ Wallets can be added in `_templates/choose-your-wallet.html`. Entries are ordere
 
 ### Score
 
-Each wallet is assigned a score for five criterias. For each of them, the appropriate text in `_translations/en.yml` needs to be choosen.
+Each wallet is assigned a score for five criteria. For each of them, the appropriate text in `_translations/en.yml` needs to be chosen.
 
 **Control** - What control the user has over his bitcoins?
 
