@@ -5,81 +5,85 @@
 layout: base
 id: getting-started
 ---
-<div class="content_getting">
-  <h1 class="content_individuals--title">{% translate pagetitle %}</h1>
-  <h2 class="content_individuals--subtitle">{% translate pagedesc %}</h2>
+<div class="content_getting-started">
+  <h1 class="content_getting-started--title">{% translate pagetitle %}</h1>
+  <h2 class="content_getting-started--subtitle">{% translate pagedesc %}</h2>
 
-  <ul class="content_getting--section">
-  <div class="content_getting--icon"><img src="/img/icons/ico_own.svg" alt="Icon"/>
-  <h3 class="content_individuals--section--title">{% translate users %}</h3>
-    <li class="content_getting--item">
+  <ol class="content_getting-started--section">
+    <div class="content_getting-started--icon">
+      <img src="/img/icons/ico_own.svg" alt="Icon"/>
+    </div>
+    <div class="content_getting-started--section--title">
+      <h3 class="content_getting-started--section--title">{% translate users %}</h3>
+    </div>
+    <li class="content_getting-started--item">
       <h2>{% translate inform %}</h2>
       <p>{% translate informtxt %}</p>
-      <div class="content_getting--section--button">
+      <div class="content_getting-started--section--button">
         <a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate informbut %}</a>
       </div>
     </li>
 
-    <li class="content_getting--item">
+    <li class="content_getting-started--item">
       <h2>{% translate choose %}</h2>
       <p>{% translate choosetxt %}</p>
-      <div class="content_getting--section--button">
+      <div class="content_getting-started--section--button">
         <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate choosebut %}</a>
       </div>
     </li>
 
-    <li class="content_getting--item">
+    <li class="content_getting-started--item">
       <h2>{% translate get %}</h2>
       <p>{% translate gettxt %}</p>
-      <div class="content_getting--section--button">
+      <div class="content_getting-started--section--button">
         <a href="http://howtobuybitcoins.info">{% translate getbut %}</a>
       </div>
     </li>
 
-    <li class="content_getting--item">
+    <li class="content_getting-started--item">
       <h2>{% translate spend %}</h2>
       <p>{% translate spendtxt %}</p>
-      <div class="content_getting--section--button">
+      <div class="content_getting-started--section--button">
         <a href="http://usebitcoins.info">{% translate spendbut %}</a>
       </div>
     </li>
-  </ul>
+  </ol>
 
-  <h3 class="content_individuals--section--title">{% translate merchants %}</h3>
-
-  <ul class="content_getting--section">
-  <div class="content_getting--icon"><img src="/img/icons/ico_pci.svg" alt="Icon"/>
-  <h3 class="content_individuals--section--title">{% translate merchants %}</h3>
-    <li class="content_getting--item">
+  <ol class="content_getting-started--section">
+    <div class="content_getting-started--icon"><img src="/img/icons/ico_pci.svg" alt="Icon"/></div>
+    <div class="content_getting-started--section--title">
+      <h3 class="content_getting-started--section--title">{% translate merchants %}</h3>
+    </div>
+    <li class="content_getting-started--item">
       <h2>{% translate merchantinform %}</h2>
       <p>{% translate merchantinformtxt %}</p>
-      <div class="content_getting--section--button">
+      <div class="content_getting-started--section--button">
         <a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate merchantinformbut %}</a>
       </div>
     </li>
 
-    <li class="content_getting--item">
+    <li class="content_getting-started--item">
       <h2>{% translate merchantservice %}</h2>
       <p>{% translate merchantservicetxt %}</p>
-      <div class="content_getting--section--button">
+      <div class="content_getting-started--section--button">
         <a href="https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services">{% translate merchantservicebut %}</a>
       </div>
     </li>
 
-    <li class="content_getting--item">
+    <li class="content_getting-started--item">
       <h2>{% translate tax %}</h2>
       <p>{% translate taxtxt %}</p>
-      <div class="content_getting--section--button">
+      <div class="content_getting-started--section--button">
         <a href="https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Setting_Prices">{% translate taxbut %}</a>
       </div>
     </li>
 
-    <li class="content_getting--item">
+    <li class="content_getting-started--item">
       <h2>{% translate visibility %}</h2>
       <p>{% translate visibilitytxt %}</p>
-      <div class="content_getting--section--button">
+      <div class="content_getting-started--section--button">
         <a href="http://usebitcoins.info">{% translate visibilitybut %}</a>
       </div>
     </li>
-  </ul>
+  </ol>
 </div>
