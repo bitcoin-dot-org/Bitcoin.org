@@ -1,4 +1,4 @@
-.content_businesses {
+.content_developers {
 	h1 {
 		font-size: @ms2;
 		margin-bottom: @ms-1;
@@ -13,12 +13,12 @@
 	}
 }
 
-.content_businesses--list {
+.content_developers--list {
 	max-width: @ms16;
 	margin: @ms3 auto 0;
 }
 
-.content_businesses--items {
+.content_developers--items {
 	padding: @ms1;
 	img {
 		float: left;
@@ -37,15 +37,22 @@
 		line-height: @ms2;
 	}
 }
-.content_businesses--action {
+.content_developers--action {
 	.content_homepage--action;
+	max-width: @ms14;
+	min-height: @ms7;
 }
-.content_businesses--action--text {
+.content_developers--action--text {
 	.content_homepage--action--text;
 }
 
 @media screen and (min-width: 750px ) { 
-	.content_businesses--items img {
-		padding: @ms3 @ms3 @ms5;
+	.content_developers--items img {
+		padding: @ms3 @ms3 @ms5;	
+	}
+
+	.content_developers--action {
+		width: @ms14;
+		min-height: @ms6;
 	}
 }
