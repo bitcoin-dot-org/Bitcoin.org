@@ -1,14 +1,15 @@
 .content_individuals {
 	h1 {
 		font-size: @ms2;
-		margin-bottom: @ms-3;
+		margin-bottom: @ms-1;
 		font-weight: 700;
 		text-align: center;
-		opacity: @light-2;
+		color: @main-2;
 	}
 	h2 {
+		font-size: @ms0;
 		text-align: center;
-		opacity: @light-3;
+		color: @main-3;
 	}
 }
 
@@ -26,13 +27,14 @@
 		opacity: @light-2;
 	}
 	h3 {
-		font-size: @ms1;
+		font-size: @ms0;
 		font-weight: 700;
 		margin-bottom: @ms-2;
-		opacity: @light-2;
+		color: @main-2;
 	}
 	p {
-		opacity: @light-2;
+		color: @main-3;
+		line-height: @ms2;
 	}
 }
 .content_individuals--action {
@@ -44,6 +46,6 @@
 
 @media screen and (min-width: 750px ) { 
 	.content_individuals--items img {
-		padding: @ms3 @ms3;
+		padding: @ms3 @ms3 @ms5;
 	}
 }
