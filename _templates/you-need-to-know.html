@@ -5,73 +5,102 @@
 layout: base
 id: you-need-to-know 
 ---
-<h1>{% translate pagetitle %}</h1>
-<p class="summarytxt">{% translate summary %}</p>
+<div class="content_you-need-to-know">
+<h1 class="content_you-need-to-know--title">{% translate pagetitle %}</h1>
+<h2 class="content_you-need-to-know--subtitle">{% translate summary %}</h2>
 
-<h2 id="secure"><img class="titleicon" src="/img/icons/ico_key.svg" alt="Icon" />{% translate secure %}</h2>
-<p>{% translate securetxt %}</p>
+  <ul class="content_you-need-to-know--list">
+    
+    <li class="content_you-need-to-know--items">
+      <img src="/img/icons/ico_key.svg" alt="Icon"/>
+      <h3>{% translate secure %}</h3>
+      <p>{% translate securetxt %}</p>
+    </li>
 
-<h2 id="volatile"><img class="titleicon" src="/img/icons/ico_market.svg" alt="Icon" />{% translate volatile %}</h2>
-<p>{% translate volatiletxt %}</p>
+    <li class="content_you-need-to-know--items">
+      <img src="/img/icons/ico_market.svg" alt="Icon"/>
+      <h3>{% translate volatile %}</h3>
+      <p>{% translate volatiletxt %}</p>
+    </li>
 
-<h2 id="irreversible"><img class="titleicon" src="/img/icons/ico_irreversible.svg" alt="Icon" />{% translate irreversible %}</h2>
-<p>{% translate irreversibletxt %}</p>
+    <li class="content_you-need-to-know--items">
+      <img src="/img/icons/ico_irreversible.svg" alt="Icon"/>
+      <h3>{% translate irreversible %}</h3>
+      <p>{% translate irreversibletxt %}</p>
+    </li>
 
-<h2 id="anonymous"><img class="titleicon" src="/img/icons/ico_anon.svg" alt="Icon" />{% translate anonymous %}</h2>
-<p>{% translate anonymoustxt %}</p>
+    <li class="content_you-need-to-know--items">
+      <img src="/img/icons/ico_anon.svg" alt="Icon"/>
+      <h3>{% translate anonymous %}</h3>
+      <p>{% translate anonymoustxt %}</p>
+    </li>
 
-<h2 id="instant"><img class="titleicon" src="/img/icons/ico_fast.svg" alt="Icon" />{% translate instant %}</h2>
-<p>{% translate instanttxt %}</p>
+    <li class="content_you-need-to-know--items">
+      <img src="/img/icons/ico_fast.svg" alt="Icon"/>
+      <h3>{% translate instant %}</h3>
+      <p>{% translate instanttxt %}</p>
+    </li>
 
-{% case page.lang %}
-{% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl' or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'ja' or 'zh_CN' or 'zh_TW' %}
-{% else %}
-{% comment %}
-<!-- In the table below, not making arabic numerals a translated string
-     so that we can easily change them if confirmations become more or
-     less reliable. -->
-{% endcomment %}
+    {% case page.lang %}
+    {% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl' or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'ja' or 'zh_CN' or 'zh_TW' %}
+    {% else %}
+    {% comment %}
+    <!-- In the table below, not making arabic numerals a translated string
+         so that we can easily change them if confirmations become more or
+         less reliable. -->
+    {% endcomment %}
 
-<br>
-<table class="center">
-  <tr>
-    <th>{% translate confirmations %}</th>
-    <th>{% translate lightweight_wallets %}</th>
-    <th>{% translate bitcoin_core %}</th>
-  </tr>
+        <table class="content_you-need-to-know--table">
+        <thead>
+          <tr>
+            <th>{% translate confirmations %}</th>
+            <th>{% translate lightweight_wallets %}</th>
+            <th>{% translate bitcoin_core %}</th>
+          </tr>
+        </thead>
 
-  <tr>
-    <th>0</th>
-    <td colspan="2">{% translate unconfirmed_only_safe %}</td>
-  </tr>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td colspan="2">{% translate unconfirmed_only_safe %}</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>{% translate somewhat_reliable %}</td>
+            <td>{% translate mostly_reliable %}</td>
+          </tr>
 
-  <tr>
-    <th>1</th>
-    <td>{% translate somewhat_reliable %}</td>
-    <td>{% translate mostly_reliable %}</td>
-  </tr>
+          <tr>
+            <td>3</td>
+            <td>{% translate mostly_reliable %}</td>
+            <td>{% translate highly_reliable %}</td>
+          </tr>
 
-  <tr>
-    <th>3</th>
-    <td>{% translate mostly_reliable %}</td>
-    <td>{% translate highly_reliable %}</td>
-  </tr>
+          <tr>
+            <td>6</td>
+            <td colspan="2">{% translate high_value_minimum %}</td>
+          </tr>
 
-  <tr>
-    <th>6</th>
-    <td colspan="2">{% translate high_value_minimum %}</td>
-  </tr>
+          <tr>
+            <td>30</td>
+            <td colspan="2">{% translate alert_recommendation %}</td>
+          </tr>
+        </tbody>
+      </table>
 
-  <tr>
-    <th>30</th>
-    <td colspan="2">{% translate alert_recommendation %}</td>
-  </tr>
-</table>
-<br>
-{% endcase %}
+    {% endcase %}
 
-<h2 id="experimental"><img class="titleicon" src="/img/icons/ico_lab.svg" alt="Icon" />{% translate experimental %}</h2>
-<p>{% translate experimentaltxt %}</p>
+    <li class="content_you-need-to-know--items">
+      <img src="/img/icons/ico_lab.svg" alt="Icon"/>
+      <h3>{% translate experimental %}</h3>
+      <p>{% translate experimentaltxt %}</p>
+    </li>
 
-<h2 id="tax"><img class="titleicon" src="/img/icons/ico_invoice.svg" alt="Icon" />{% translate tax %}</h2>
-<p>{% translate taxtxt %}</p>
+    <li class="content_you-need-to-know--items">
+      <img src="/img/icons/ico_invoice.svg" alt="Icon"/>
+      <h3>{% translate tax %}</h3>
+      <p>{% translate taxtxt %}</p>
+    </li>
+
+  </ul>
+</div>
