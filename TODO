@@ -1,24 +1,28 @@
 Redesign
 
-13) REfactor _includes > how-it-works.html
+14) Refactor _templates > you-need-to-know.html
+	fix html
+	add css
+
+13) REfactor _templates > how-it-works.html
 	fix html
 	add css
 
 
-12) REfactor _includes > getting-started
+12) REfactor _templates > getting-started
 	fix html
 	add css
 
-11) refactor _includes > bitcoin-for-developers
+11) refactor _templates > bitcoin-for-developers
 	Fix the html
 	add less
 
-10) refactor _includes > bitcoin-for-businesses
+10) refactor _templates > bitcoin-for-businesses
 	Fix the html
 	add less
 
 
-9) refactor _includes > bitcoin-for-indivuduals
+9) refactor _templates > bitcoin-for-indivuduals
 	Fix the html
 	add less
 
