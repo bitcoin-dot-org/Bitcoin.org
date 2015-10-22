@@ -826,6 +826,46 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
+- visualbitcoinwallet:
+    title: "Visual Bitcoin Wallet"
+    titleshort: "Visual<br>Bitcoin"
+    compat: "mobile android"
+    level: 2
+    platform:
+      mobile:
+        text: "walletvisualbitcoinwallet"
+        link: "https://play.google.com/store/apps/details?id=com.btcontract.wallet"
+        source: "https://github.com/btcontract/VisualBitcoinWallet"
+        screenshot: "visualbitcoinwalletandroid.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationspvp2p"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "walletvisualbitcoinwallet"
+        link: "https://play.google.com/store/apps/details?id=com.btcontract.wallet"
+        source: "https://github.com/btcontract/VisualBitcoinWallet"
+        screenshot: "visualbitcoinwalletandroid.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationspvp2p"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 ---
 
 <!-- Note: this file exempt from check-for-subheading-anchors check -->
