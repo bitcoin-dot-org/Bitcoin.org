@@ -43,20 +43,13 @@ target. Whatever the reason for reversing header hashes, the reversal
 also extends to other hashes used in RPCs, such as TXIDs and merkle
 roots.
 
-Off-site documentation such as the Bitcoin Wiki tends to use the terms
-big endian and little endian as shown in the table below, but they
-aren't always consistent. Worse, these two different ways of
-representing a hash digest can confuse anyone who looks at the Bitcoin
-Core source code and finds a so-called "big endian" value being stored
-in a little-endian data type.
-
 As header hashes and TXIDs are widely used as global identifiers in
 other Bitcoin software, this reversal of hashes has become the standard
 way to refer to certain objects. The table below should make clear where
 each byte order is used.
 
 |---------------+---------------------|-----------------|
-| Data | Internal Byte Order ("Big Endian") | RPC Byte Order ("Little Endian") |
+| Data | Internal Byte Order | RPC Byte Order |
 |---------------|---------------------|-----------------|
 | Example: SHA256(SHA256(0x00))  | Hash: 1406...539a         | Hash: 9a53...0614     |
 |---------------|---------------------|-----------------|
