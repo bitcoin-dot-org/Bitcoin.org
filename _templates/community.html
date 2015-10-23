@@ -5,219 +5,379 @@
 layout: base
 id: community
 ---
-<h1>{% translate pagetitle %}</h1>
-<p class="summary">{% translate pagedesc %}</p>
+<div class="content_community">
+  <h1 class="content_community--title">{% translate pagetitle %}</h1>
+  <h2 class="content_community--subtitle">{% translate pagedesc %}</h2>
 
-<div class="resources">
-<div>
-  <div>
-    <h2 id="forums"><img src="/img/icons/ico_invoice.svg" class="titleicon" alt="Icon">{% translate forums %}</h2>
-    {% if page.lang == 'bg' %}<p><a href="http://bitcoinbg.eu/forum/">BitcoinBG.eu</a></p>{% endif %}
-    {% if page.lang == 'bg' %}<p><a href="http://hash.bg/forum/">Hash.bg</a></p>{% endif %}
-    {% if page.lang == 'es' %}<p><a href="http://forobitco.in/">ForoBitco.in en Español</a></p>{% endif %}
-    {% if page.lang == 'es' %}<p><a href="http://www.forobtc.com/">Foro Bitcoin en Español</a></p>{% endif %}
-    {% if page.lang == 'pl' %}<p><a href="https://forum.bitcoin.pl/">Polski portal bitcoin.pl</a></p>{% endif %}
-    {% if page.lang == 'ro' %}<p><a href="http://forum.bitcoin.ro/">Forumul comunitatii Bitcoin Romania</a></p>{% endif %}
-    {% if page.lang == 'fr' %}<p><a href="http://www.cryptofr.com">Forum CryptoFR</a></p>{% endif %}
-    <p>{% translate bitcointalk %}</p>
-    {% if page.lang == 'fr' %}<p><a href="https://www.reddit.com/r/BitcoinFrance/">Communauté Bitcoin sur Reddit</a></p>{% endif %}
-    <p><a href="http://reddit.com/r/Bitcoin/">{% translate reddit %}</a></p>
-    <p><a href="https://bitcoin.stackexchange.com/">{% translate stackexchange %}</a></p>
-  </div><div>
-    <h2 id="social"><img src="/img/icons/ico_network.svg" class="titleicon" alt="Icon">{% translate social %}</h2>
-    {% if page.lang == 'fr' %}<p><a href="https://www.facebook.com/groups/BitcoinFrance">Groupe Bitcoin France</a></p>{% endif %}
-    {% if page.lang == 'ru' %}<p><a href="https://vk.com/bitcoin">Страница на ВКонтакте</a></p>{% endif %}
-    <p>{% translate linkgoogle %}</p>
-    <p><a href="https://twitter.com/search?q=bitcoin">{% translate linktwitter %}</a></p>
-    <p>{% translate facebook %}</p>
-  </div>
-</div>
-<div>
-  <div>
-    <h2 id="meetups"><img src="/img/icons/ico_multi.svg" class="titleicon" alt="Icon">{% translate meetups %}</h2>
-    <p><a href="/{{ page.lang }}/{% translate events url %}">{% translate meetupevents %}</a></p>
-    <p><a href="http://bitcoin.meetup.com/">{% translate meetupgroup %}</a></p>
-    <p><a href="https://bitcointalk.org/index.php?board=86.0">{% translate meetupbitcointalk %}</a></p>
-    <p><a href="https://en.bitcoin.it/wiki/Meetups">{% translate meetupwiki %}</a></p>
-  </div><div>
-    <h2 id="irc"><img src="/img/icons/ico_help.svg" class="titleicon" alt="Icon">{% translate irc %}</h2>
-    <p>{% translate ircjoin %}</p>
-    <p>#bitcoin <small>{% translate chanbitcoin %}</small></p>
-    <p>#bitcoin-dev <small>{% translate chandev %}</small></p>
-    <p>#bitcoin-otc  <small>{% translate chanotc %}</small></p>
-    <p>#bitcoin-market <small>{% translate chanmarket %}</small></p>
-    <p>#bitcoin-mining <small>{% translate chanmining %}</small></p>
-    {% if page.lang == 'fr' %}
-    <p>#bitcoin-fr <small>(Le Bitcoin en général, français)</small></p>
-    <p>#cryptofr <small>(Bitcoin et crypto-monnaies, français)</small></p>
-    {% endif %}
-    {% if page.lang == 'es' %}
-    <p>#bitcoin-ar <small>(Comunidad Bitcoin Argentina)</small></p>
-    <p>#bitcoin-es <small>(Comunidad Bitcoin en español)</small></p>
-    <p>#bitcoin-otc-ar <small>(Mercado OTC de Bitcoin en Argentina)</small></p>
-    {% endif %}
-  </div>
-</div>
-</div>
 
-<h2 id="nonprofit-organizations"><a name="{% translate non-profit anchor.community %}">{% translate nonprofit %}</a></h2>
-<div class="resourcesorg">
-<div>
-  <div>
-    <h3 id="international"><img src="/img/flags/ALL.png" alt="Globe">International</h3>
-    <p>
-      <a href="https://bitcoinfoundation.org/">The Bitcoin Foundation</a>
-    </p>
-  </div>
-  <div>
-    <h3 id="argentina"><img src="/img/flags/AR.png" alt="Argentinan flag">Argentina</h3>
-    <p>
-      <a href="http://www.bitcoinargentina.org/">Fundación Bitcoin Argentina</a>
-    </p>
-  </div>
-  <div>
-    <h3 id="australia"><img src="/img/flags/AU.png" alt="Australian falg">Australia</h3>
-    <p>
-      <a href="https://bitcoin.asn.au/">Bitcoin Australia</a>
-    </p>
-  </div>
-</div>
-<div>
-  <div>
-    <h3 id="austria"><img src="/img/flags/AT.png" alt="Austrian flag">Austria</h3>
-    <p>
-      <a href="http://bitcoin-austria.at/">Bitcoin Austria</a>
-    </p>
-  </div>
-  <div>
-    <h3 id="belgium"><img src="/img/flags/BE.png" alt="Belgian flag">Belgium</h3>
-    <p>
-      <a href="http://www.bitcoinassociation.be/">Belgian Bitcoin Association</a>
-    </p>
-  </div>
-  <div>
-    <h3 id="canada"><img src="/img/flags/CA.png" alt="Canadian flag">Canada</h3>
-    <p>
-      <a href="http://bitcoinembassy.ca/">Bitcoin Embassy</a><br>
-      <a href="http://www.bitcoinalliance.ca/">Bitcoin Alliance of Canada</a>
-    </p>
-  </div>
-</div>
-<div>
-  <div>
-    <h3 id="denmark"><img src="/img/flags/DK.png" alt="Danish flag">Denmark</h3>
-    <p>
-      <a href="http://www.danskbitcoinforening.dk/">Dansk Bitcoinforening</a><br>
-    </p>
-  </div>
-  <div>
-    <h3 id="france"><img src="/img/flags/FR.png" alt="French flag">France</h3>
-    <p>
-      <a href="http://bitcoin-france.org/">Bitcoin France</a>
-    </p>
-  </div>
-  <div>
-    <h3 id="germany"><img src="/img/flags/DE.png" alt="German flag">Germany</h3>
-    <p>
-      <a href="http://www.bundesverband-bitcoin.de/">Bundesverband Bitcoin e.V.</a>
-    </p>
-  </div>
-</div>
-<div>
-  <div>
-    <h3 id="india"><img src="/img/flags/IN.png" alt="Indian flag">India</h3>
-    <p>
-      <a href="http://www.bitcoinalliance.in/">Bitcoin Alliance of India</a>
-    </p>
-  </div>
-  <div>
-    <h3 id="ireland"><img src="/img/flags/IE.png" alt="Irish flag">Ireland</h3>
-    <p>
-      <a href="http://www.bitcoinirl.ie/">Irish Bitcoin Foundation</a>
-    </p>
-  </div>
-  <div>
-    <h3 id="israel"><img src="/img/flags/IL.png" alt="Israeli flag">Israel</h3>
-    <p>
-      <a href="http://www.bitcoin.org.il/">איגוד הביטקוין הישראלי</a>
-    </p>
-  </div>
-</div>
-<div>
-  <div>
-    <h3 id="italy"><img src="/img/flags/IT.png" alt="Italian flag">Italy</h3>
-    <p>
-      <a href="https://www.bitcoin-italia.org/">Bitcoin Foundation Italia</a>
-    </p>
-  </div>
-  <div>
-    <h3 id="mexico"><img src="/img/flags/MX.png" alt="Mexican flag">Mexico</h3>
-    <p>
-      <a href="http://www.btcmexico.org/">Fundación Satoshi Nakamoto</a>
-    </p>
-  </div>
-  <div>
-    <h3 id="netherlands"><img src="/img/flags/NL.png" alt="Dutch flag">Netherlands</h3>
-    <p>
-      <a href="http://stichtingbitcoin.nl/">Stichting Bitcoin Nederland</a><br>
-      <a href="https://bitcoinembassy.nl/">Bitcoin Embassy Amsterdam</a>
-    </p>
-  </div>
-</div>
-<div>
-  <div>
-    <h3 id="philippines"><img src="/img/flags/PH.png" alt="Philippine flag">Philippines</h3>
-    <p>
-      <a href="http://bitcoin.org.ph/">Bitcoin Organization of the Philippines</a>
-    </p>
-  </div>
-  <div>
-    <h3 id="poland"><img src="/img/flags/PL.png" alt="Polish flag">Poland</h3>
-    <p>
-      <a href="http://www.bitcoin.org.pl/">Polish Bitcoin Association</a>
-    </p>
-  </div>
-  <div>
-    <h3 id="romania"><img src="/img/flags/RO.png" alt="Romanian flag">Romania</h3>
-    <p>
-      <a href="http://fundatiabitcoin.ro/">Fundatia Bitcoin Romania</a>
-    </p>
-  </div>
-</div>
-<div>
-  <div>
-    <h3 id="russia"><img src="/img/flags/RU.png" alt="Russian flag">Russia</h3>
-    <p>
-      <a href="http://ccfr.info/">Crypto Currencies Foundation Russia</a>
-    </p>
-  </div>
-  <div>
-    <h3 id="ukraine"><img src="/img/flags/UA.png" alt="Ukrainian flag">Ukraine</h3>
-    <p>
-      <a href="http://www.bitcoinua.org/">Bitcoin Foundation Ukraine</a>
-    </p>
-  </div>
-  <div>
-    <h3 id="slovenia"><img src="/img/flags/SI.png" alt="Slovenian flag">Slovenia</h3>
-    <p>
-      <a href="http://bitcoin.si/">Bitcoin Društvo Slovenije</a>
-    </p>
-  </div>
-</div>
-<div>
-  <div>
-    <h3 id="sweden"><img src="/img/flags/SE.png" alt="Swedish flag">Sweden</h3>
-    <p>
-      <a href="http://www.bitcoinforeningen.se/">Svenska Bitcoinföreningen</a>
-    </p>
-  </div>
-  <div>
-    <h3 id="switzerland"><img src="/img/flags/CH.png" alt="Swiss flag">Switzerland</h3>
-    <p>
-      <a href="http://bitcoinassociation.ch/">Bitcoin Association Switzerland</a>
-    </p>
-  </div>
-</div>
-</div>
+  <div class="content_community--boxcontainer">
 
-<div class="introlink">{% translate wikiportal %}</div>
+    <div id="forums" class="content_community--infobox">
+      <h2 class="content_community--infobox--title">{% translate forums %}</h2>
+      <div class="content_community--infobox--icon">
+        <img src="/img/icons/ico_invoice.svg" class="titleicon" alt="Icon">
+      </div>
+
+      <ul class="content_community--infobox--list">
+        {% if page.lang == 'bg' %}<li><a href="http://bitcoinbg.eu/forum/">BitcoinBG.eu</a></li>{% endif %}
+        {% if page.lang == 'bg' %}<li><a href="http://hash.bg/forum/">Hash.bg</a></li>{% endif %}
+        {% if page.lang == 'es' %}<li><<a href="http://forobitco.in/">ForoBitco.in en Español</a></li>{% endif %}
+        {% if page.lang == 'es' %}<li><a href="http://www.forobtc.com/">Foro Bitcoin en Español</a></li>{% endif %}
+        {% if page.lang == 'pl' %}<li><a href="https://forum.bitcoin.pl/">Polski portal bitcoin.pl</a></li>{% endif %}
+        {% if page.lang == 'ro' %}<li><a href="http://forum.bitcoin.ro/">Forumul comunitatii Bitcoin Romania</a></li>{% endif %}
+        {% if page.lang == 'fr' %}<li><a href="http://www.cryptofr.com">Forum CryptoFR</a></li>{% endif %}
+        <li>{% translate bitcointalk %}</li>
+        {% if page.lang == 'fr' %}<li><a href="https://www.reddit.com/r/BitcoinFrance/">Communauté Bitcoin sur Reddit</a></li>{% endif %}
+        <li><a href="http://reddit.com/r/Bitcoin/">{% translate reddit %}</a></li>
+        <li><a href="https://bitcoin.stackexchange.com/">{% translate stackexchange %}</a></li>
+      </ul>
+    </div>
+
+    <div id="social" class="content_community--infobox">
+      <h2 class="content_community--infobox--title">{% translate social %}</h2>
+      <div class="content_community--infobox--icon">
+        <img src="/img/icons/ico_network.svg" class="titleicon" alt="Icon">
+      </div>
+
+      <ul class="content_community--infobox--list">
+        {% if page.lang == 'fr' %}<li><a href="https://www.facebook.com/groups/BitcoinFrance">Groupe Bitcoin France</a></li>{% endif %}
+        {% if page.lang == 'ru' %}<li><a href="https://vk.com/bitcoin">Страница на ВКонтакте</a></li>{% endif %}
+        <li>{% translate linkgoogle %}</li>
+        <li><a href="https://twitter.com/search?q=bitcoin">{% translate linktwitter %}</a></li>
+        <li>{% translate facebook %}</li>
+      </ul>
+    </div>
+
+    <div id="meetups" class="content_community--infobox">
+      <h2 class="content_community--infobox--title">{% translate meetups %}</h2>
+      <div class="content_community--infobox--icon">
+        <img src="/img/icons/ico_multi.svg" class="titleicon" alt="Icon">
+      </div>
+      <ul class="content_community--infobox--list">
+        <li><a href="/{{ page.lang }}/{% translate events url %}">{% translate meetupevents %}</a></li>
+        <li><a href="http://bitcoin.meetup.com/">{% translate meetupgroup %}</a></li>
+        <li><a href="https://bitcointalk.org/index.php?board=86.0">{% translate meetupbitcointalk %}</a></li>
+        <li><a href="https://en.bitcoin.it/wiki/Meetups">{% translate meetupwiki %}</a></li>
+      </ul>
+    </div>
+
+    <div id="irc" class="content_community--infobox">
+      <h2 class="content_community--infobox--title">{% translate irc %}</h2>
+      <div class="content_community--infobox--icon">
+        <img src="/img/icons/ico_help.svg" class="titleicon" alt="Icon">
+      </div>
+      <ul class="content_community--infobox--list">
+        <li>{% translate ircjoin %}</li>
+        <li>#bitcoin <small>{% translate chanbitcoin %}</small></li>
+        <li>#bitcoin-dev <small>{% translate chandev %}</small></li>
+        <li>#bitcoin-otc  <small>{% translate chanotc %}</small></li>
+        <li>#bitcoin-market <small>{% translate chanmarket %}</small></li>
+        <li>#bitcoin-mining <small>{% translate chanmining %}</small></li>
+        {% if page.lang == 'fr' %}
+        <li>#bitcoin-fr <small>(Le Bitcoin en général, français)</small></li>
+        <li>#cryptofr <small>(Bitcoin et crypto-monnaies, français)</small></li>
+        {% endif %}
+        {% if page.lang == 'es' %}
+        <li>#bitcoin-ar <small>(Comunidad Bitcoin Argentina)</small></li>
+        <li>#bitcoin-es <small>(Comunidad Bitcoin en español)</small></li>
+        <li>#bitcoin-otc-ar <small>(Mercado OTC de Bitcoin en Argentina)</small></li>
+        {% endif %}
+      </ul>
+    </div>
+
+  </div>
+
+  <div id="nonprofit-organizations" class="content_community--infobox--nonprofit">
+    <h2 class="content_community--infobox--title">{% translate nonprofit %}</h2>
+    <div class="content_community--infobox--icon">
+        <img src="/img/icons/nonprofit.svg" class="titleicon" alt="Icon">
+    </div>
+
+    <ul class="content_community--infobox--list--nonprofit">
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/icons/ico_international.svg" alt="Globe">
+        </div>
+        <div class="content_community--country">
+          <h3 id="international">International</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="https://bitcoinfoundation.org/">The Bitcoin Foundation</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/AR.png" alt="Argentinan flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="argentina">Argentina</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://www.bitcoinargentina.org/">Fundación Bitcoin Argentina
+        </a></div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/AU.png" alt="Australian flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="australia">Australia</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="https://bitcoin.asn.au/">Bitcoin Australia</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/AT.png" alt="Austrian flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="austria">Austria</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://bitcoin-austria.at/">Bitcoin Austria</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/BE.png" alt="Belgian flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="belgium">Belgium</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://www.bitcoinassociation.be/">Belgian Bitcoin Association
+        </a></div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/CA.png" alt="Canadian flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="canada">Canada</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://bitcoinembassy.ca/">Bitcoin Embassy</a>
+        </div>
+        <div class="content_community--links">
+          <a href="http://www.bitcoinalliance.ca/">Bitcoin Alliance of Canada</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/da.png" alt="Danish flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="denmark">Denmark</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://www.danskbitcoinforening.dk/">Dansk Bitcoinforening</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/FR.png" alt="French flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="france">France</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://bitcoin-france.org/">Bitcoin France</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/DE.png" alt="German flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="germany">Germany</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://www.bundesverband-bitcoin.de/">Bundesverband Bitcoin e.
+        V.</a></div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/hi.png" alt="Indian flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="india">India</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://www.bitcoinalliance.in/">Bitcoin Alliance of India</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/IE.png" alt="Irish flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="ireland">Ireland</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://www.bitcoinirl.ie/">Irish Bitcoin Foundation</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/IL.png" alt="Israeli flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="israel">Israel</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://www.bitcoin.org.il/">איגוד הביטקוין הישראלי</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/IT.png" alt="Italian flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="italy">Italy</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="https://www.bitcoin-italia.org/">Bitcoin Foundation Italia</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/MX.png" alt="Mexican flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="mexico">Mexico</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://www.btcmexico.org/">Fundación Satoshi Nakamoto</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/NL.png" alt="Dutch flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="netherlands">Netherlands</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://stichtingbitcoin.nl/">Stichting Bitcoin Nederland</a>
+        </div>
+        <div class="content_community--links">
+          <a href="https://bitcoinembassy.nl/">Bitcoin Embassy Amsterdam</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/PL.png" alt="Philippine flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="philippines">Philippines</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://bitcoin.org.ph/">Bitcoin Organization of the Philippines
+        </a></div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/PL.png" alt="Polish flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="poland">Poland</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://www.bitcoin.org.pl/">Polish Bitcoin Association</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/RO.png" alt="Romanian flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="romania">Romania</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://fundatiabitcoin.ro/">Fundatia Bitcoin Romania</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/RU.png" alt="Russian flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="russia">Russia</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://ccfr.info/">Crypto Currencies Foundation Russia</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/uk.png" alt="Ukrainian flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="ukraine">Ukraine</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://www.bitcoinua.org/">Bitcoin Foundation Ukraine</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/RU.png" alt="Slovenian flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="slovenia">Slovenia</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://bitcoin.si/">Bitcoin Društvo Slovenije</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/SV.png" alt="Swedish flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="sweden">Sweden</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://www.bitcoinforeningen.se/">Svenska Bitcoinföreningen</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="content_community--flag">
+          <img src="/img/flags/CH.png" alt="Swiss flag">
+        </div>
+        <div class="content_community--country">
+          <h3 id="switzerland">Switzerland</h3>
+        </div>
+        <div class="content_community--links">
+          <a href="http://bitcoinassociation.ch/">Bitcoin Association Switzerland
+        </a></div>
+      </li>
+
+    </ul>
+  </div>
+  <!-- <div class="introlink">{% translate wikiportal %}</div> -->
+</div>
