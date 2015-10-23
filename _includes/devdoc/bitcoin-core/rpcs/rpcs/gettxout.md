@@ -75,7 +75,7 @@ The `gettxout` RPC {{summary_getTxOut}}
 - n: "→ →<br>`asm`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The pubkey script in decoded form with non-data-pushing op codes listed"
+  d: "The pubkey script in decoded form with non-data-pushing opcodes listed"
 
 - n: "→ →<br>`hex`"
   t: "string (hex)"

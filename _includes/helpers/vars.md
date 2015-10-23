@@ -164,7 +164,7 @@ bitcoins even if this parameter is set to `1` or higher.{% endcapture %}
 - n: "{{DEPTH}} → → → →<br>`asm`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The signature script in decoded form with non-data-pushing op codes listed"
+  d: "The signature script in decoded form with non-data-pushing opcodes listed"
 
 - n: "{{DEPTH}} → → → →<br>`hex`"
   t: "string (hex)"
@@ -209,7 +209,7 @@ bitcoins even if this parameter is set to `1` or higher.{% endcapture %}
 - n: "{{DEPTH}} → → → →<br>`asm`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The pubkey script in decoded form with non-data-pushing op codes listed"
+  d: "The pubkey script in decoded form with non-data-pushing opcodes listed"
 
 - n: "{{DEPTH}} → → → →<br>`hex`"
   t: "string (hex)"

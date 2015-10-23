@@ -412,8 +412,8 @@ following three major goals during the next quarter:
       providing definitions for the over 150 specialized terms and
       synonyms used in Bitcoin development
 
-    * Documentation for at least the most common op codes, and possibly
-      all the enabled op codes. This section will be essentially a more
+    * Documentation for at least the most common opcodes, and possibly
+      all the enabled opcodes. This section will be essentially a more
       detailed version of the [Bitcoin Wiki script
       page](https://en.bitcoin.it/wiki/Script)
 

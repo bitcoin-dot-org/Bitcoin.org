@@ -8,7 +8,7 @@ required:
 
     summary_max_255_characters_no_formatting: >
         A P2SH output where the redeem script uses one of the multisig
-        op codes.  Up until Bitcoin Core 0.10.0, P2SH multisig scripts
+        opcodes.  Up until Bitcoin Core 0.10.0, P2SH multisig scripts
         were standard transactions, but most other P2SH scripts were
         not.
 
