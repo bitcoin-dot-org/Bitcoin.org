@@ -1,0 +1,114 @@
+/*
+This builder builds the infoboxes with the orange border at the top
+and containes links.
+
+Use: 
+  .builder__content__infobox(yourcontinerclass);
+
+The markup:
+  <div class="content_yourcontinerclass--boxcontainer">
+    <div class="content_yourcontinerclass--infobox">
+      <h2 class="content_yourcontinerclass--infobox--title">Useful places</h2>
+      <div class="content_yourcontinerclass--infobox--icon">
+        <img src="/img/icons/ico_simple.svg" class="titleicon" alt="Icon">
+      </div>
+      <ul class="content_yourcontinerclass--infobox--list">
+        <li><a href="https://bitcoinfoundation.org/">Bitcoin Foundation</a></li>
+        <li><a href="https://en.bitcoin.it/">Bitcoin Wiki</a></li>
+        <li><a href="https://www.weusecoins.com/">WeUseCoins.com</a></li>
+        <li><a href="http://www.bitcoinmining.com/">BitcoinMining.com</a></li>
+      </ul>
+    </div>
+  </div>
+*/
+
+
+.builder__content__infobox(@classname) {
+  .content_@{classname}--boxcontainer {
+    margin: @ms4 auto 0;
+    max-width: @ms17;
+    .clearfix;
+  }
+  .content_@{classname}--infobox {
+    background: @gray-50;
+    margin: 0 auto @ms4;
+    border-radius: @ms-5;
+    max-width: @ms13;
+    .card-1;
+    .clearfix;
+  }
+  .content_@{classname}--infobox:last-child {
+    margin-bottom: 0;
+  }
+  .content_@{classname}--infobox--title {
+    background: @gray-200;
+    width: 100%;
+    min-height: @ms7;
+    font-weight: 700;
+    text-align: center;
+    font-size: @ms1;
+    padding-top: @ms4;
+    border-top-left-radius: @ms-5;
+    border-top-right-radius: @ms-5;
+    letter-spacing: 1px;
+    border-top: @orange-500 @ms-5 solid;
+  }
+  .content_@{classname}--infobox--icon {
+    background: @orange-500;
+    border-radius: 50%;
+    margin: -@ms4 auto 0 ;
+    display: block;
+    border: @gray-50 @ms-3 solid;
+    position: relative;
+    z-index: 1;
+    width: @ms6;
+    height: @ms6;
+    img {
+      display: block;
+      width: @ms2;
+      margin: (@ms0 + @mp6) auto 0;
+    }
+  }
+  .content_@{classname}--infobox--list {
+    margin: @ms-1 0 0; 
+  }
+  .content_@{classname}--infobox--list li {
+    border-top: 1px @main-5 solid;
+  }
+  .content_@{classname}--infobox--list li a {
+    padding: @ms0 @ms2;
+    display: block;
+  }
+  .content_@{classname}--infobox--title {
+    position: relative;
+  }
+  .content_@{classname}--infobox--title:after, .content_@{classname}--infobox--title:before {
+    top: 0;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .content_@{classname}--infobox--title:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: @orange-500;
+    border-width: @ms0;
+    margin-left: -@ms0;
+  }
+  .content_@{classname}--infobox--title:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-top-color: @gray-200;
+    border-width: @ms0 + @mp1;
+    margin-left: -@ms0 + @ms1;
+  }
+  @media screen and (min-width: 1077px ) { 
+    .content_@{classname}--infobox {
+      float: left;
+      width: @ms13;
+      margin: 0 (@ms4 + @mp9) @ms4;
+    }
+  }
+}
