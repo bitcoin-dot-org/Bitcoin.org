@@ -8,27 +8,48 @@ id: developer-documentation
 title: "Developer Documentation - Bitcoin"
 breadcrumbs:
   - bitcoin
-  - Developer Documentation
+  - Developer Documentation 
 end_of_page: |
   <script src="/js/jquery/jquery-1.11.2.min.js"></script>
   <script src="/js/jquery/jquery-ui.min.js"></script>
   <script src="/js/devsearch.js"></script>
 ---
-<link rel="stylesheet" href="/css/jquery-ui.min.css">
+<div class="content_documentation">
+  <link rel="stylesheet" href="/css/jquery-ui.min.css">
 
-# Developer Documentation
+<div class="content_documentation--header">
+  <h1 class="content_documentation--title" id="developer-documentation">Developer Documentation</h1>
+  <h2 class="content_documentation--subtitle">Find useful resources, guides and reference material for developers.</h2>
+  <div class="content_documentation--search">
+    <input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
+  </div>
 
-<p class="summary">Find useful resources, guides and reference material for developers.</p>
-
-<input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
-
-<div class="docreference">
-<a href="/en/developer-guide"><span class="fa fa-info-circle fa-2x"></span><span>Guide</span></a>
-<a href="/en/developer-reference"><span class="fa fa-book fa-2x"></span><span>Reference</span></a>
-<a href="/en/developer-examples"><span class="fa fa-code fa-2x"></span><span>Examples</span></a>
-<a href="/en/developer-glossary"><span class="fa fa-font fa-2x"></span><span>Glossary</span></a>
+  <ul class="content_documentation--header--menu">
+    <li class="content_documentation--header--item">
+      <a href="/en/developer-guide">
+        <i class="fa fa-info-circle fa-2x"></i><span>Guide</span>
+      </a>
+    </li>
+    <li class="content_documentation--header--item">
+      <a href="/en/developer-reference">
+        <i class="fa fa-book fa-2x"></i><span>Reference</span>
+      </a>
+    </li>
+    <li class="content_documentation--header--item">
+      <a href="/en/developer-examples">
+        <i class="fa fa-code fa-2x"></i><span>Examples</span>
+      </a>
+    </li>
+    <li class="content_documentation--header--item">
+      <a href="/en/developer-glossary">
+        <i class="fa fa-font fa-2x"></i><span>Glossary</span>
+      </a>
+    </li>
+  </ul>
+  </div>
 </div>
 
+<!-- 
 <div class="resources">
   <div><div>
       <h2 id="block_chain"><span class="fa fa-cube fa-lg"></span> Block Chain</h2>
@@ -89,4 +110,4 @@ end_of_page: |
   <p><a href="https://github.com/minium/Bitcoin-Spec"><span class="fa fa-external-link"></span> Bitcoin Developer Reference (working paper)</a> - Krzysztof Okupski</p>
   <p><a href="https://bitcoinj.github.io/#documentation"><span class="fa fa-external-link"></span> Bitcoinj Developer Documentation</a> - bitcoinj.org</p>
   <p><a href="https://en.bitcoin.it/wiki/Category:Technical"><span class="fa fa-external-link"></span> Technical Pages</a> - Wiki</p>
-</div></div>
+</div></div> -->
