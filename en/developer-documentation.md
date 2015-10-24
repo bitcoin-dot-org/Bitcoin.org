@@ -21,7 +21,7 @@ end_of_page: |
     <h1 class="content_documentation--title" id="developer-documentation">Developer Documentation</h1>
     <h2 class="content_documentation--subtitle">Find useful resources, guides and reference material for developers.</h2>
     <div class="content_documentation--search">
-      <input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
+      <input id="glossary_term" class="glossary_term" placeholder="Search">
     </div>
 
     <ul class="content_documentation--header--menu">

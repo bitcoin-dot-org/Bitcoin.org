@@ -1,0 +1,86 @@
+.builder__content__title(documentation);
+.builder__content__infobox(documentation);
+
+.content_documentation--search {
+	text-align: center;
+	margin: @ms1 0;
+	input {
+		width: @ms11;
+		height: @ms4;
+		font-size: @ms-1;
+		border-radius: @ms-5;
+		border: 1px @main-5 solid;
+		font-family: 'lato';
+		color: @main-1;
+		background: @gray-50;
+		padding: 0 @ms0;
+		&:focus {
+			outline: none;
+		}
+
+	}
+	::-webkit-input-placeholder {
+	   color: @main-2;
+	   font-size: @ms-1;
+	   font-family: 'lato';
+	   font-weight: 400;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: @gray-500;
+   	   font-size: @ms0;
+   	   font-family: 'lato';
+   	   font-weight: 400;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: @gray-500;
+   	   font-size: @ms0;
+   	   font-family: 'lato';
+   	   font-weight: 400;
+	}
+
+	:-ms-input-placeholder {  
+	   color: @gray-500;
+   	   font-size: @ms0;
+   	   font-family: 'lato';
+   	   font-weight: 400;
+	}
+}
+
+.content_documentation--header--menu {
+	text-align: center;
+	margin-bottom: @ms7;
+}
+
+.content_documentation--header--menu li {
+	display: inline-block;
+	padding: @ms-3 @ms-2;
+	font-size: @ms0;
+	text-align: center;
+}
+
+@media screen and (min-width: 650px ) { 
+	.content_documentation--search input {
+		width: @ms14;
+	}
+	.content_documentation--header--menu li {
+		padding: 0;
+		margin: @ms-3 0;
+	}
+	.content_documentation--header--menu i {
+		font-size: @ms-1;
+		padding-right: @ms-4;
+	}
+	.content_documentation--header--menu li a {
+		text-align: center;
+		padding: @ms-2 @ms0;
+		margin: 0 (@ms-2 + @mp1);
+		font-size: @ms-1;
+		align-items: center;
+		border: 1px solid @orange-500;
+		border-radius: @ms-5;
+		text-decoration: none;
+		color: @gray-800;
+	}
+}
