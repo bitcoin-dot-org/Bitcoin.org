@@ -26,7 +26,7 @@ end_of_page: |
     <input id="glossary_term" class="glossary_term" placeholder="Search">
   </div>
   <ul class="content_guide--header--menu">
-    <li class="content_guide--header--item">
+    <li class="content_guide--header--menu--item--active">
       <a href="/en/developer-guide">
         <i class="fa fa-info-circle fa-2x"></i><span>Guide</span>
       </a>
