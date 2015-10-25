@@ -53,7 +53,7 @@ end_of_page: |
     <div class="content_documentation--infobox">
       <h2 id="block_chain" class="content_documentation--infobox--title">Block Chain</h2>
       <div class="content_documentation--infobox--icon">
-        <img src="/img/icons/ico_simple.svg" class="titleicon" alt="Icon">
+        <i class="fa fa-cube fa-lg"></i>
       </div>
       <ul class="content_documentation--infobox--list">
         <li><a href="/en/developer-guide#block-chain">Block Chain Guide</a></li>
@@ -64,7 +64,7 @@ end_of_page: |
     <div class="content_documentation--infobox">
       <h2 id="transactions" class="content_documentation--infobox--title">Transactions</h2>
       <div class="content_documentation--infobox--icon">
-        <img src="/img/icons/ico_simple.svg" class="titleicon" alt="Icon">
+        <i class="fa fa-exchange fa-lg"></i>
       </div>
       <ul class="content_documentation--infobox--list">
         <li><a href="/en/developer-guide#transactions">Transactions Guide</a></li>
@@ -76,7 +76,7 @@ end_of_page: |
     <div class="content_documentation--infobox">
       <h2 id="contracts" class="content_documentation--infobox--title">Contracts</h2>
       <div class="content_documentation--infobox--icon">
-        <img src="/img/icons/ico_simple.svg" class="titleicon" alt="Icon">
+        <i class="fa fa-sitemap fa-lg fa-rotate-270"></i>
       </div>
       <ul class="content_documentation--infobox--list">
         <li><a href="/en/developer-guide#contracts">Contracts Guide</a></li>
@@ -88,7 +88,7 @@ end_of_page: |
     <div class="content_documentation--infobox">
       <h2 id="wallets" class="content_documentation--infobox--title">Wallets</h2>
       <div class="content_documentation--infobox--icon">
-        <img src="/img/icons/ico_simple.svg" class="titleicon" alt="Icon">
+        <i class="fa fa-btc fa-lg"></i>
       </div>
       <ul class="content_documentation--infobox--list">
         <li><a href="/en/developer-guide#wallets">Wallets Guide</a></li>
@@ -101,7 +101,7 @@ end_of_page: |
     <div class="content_documentation--infobox">
       <h2 id="payment-processing" class="content_documentation--infobox--title">Payment Processing</h2>
       <div class="content_documentation--infobox--icon">
-        <img src="/img/icons/ico_simple.svg" class="titleicon" alt="Icon">
+        <i class="fa fa-cart-plus fa-lg"></i>
       </div>
       <ul class="content_documentation--infobox--list">
         <li><a href="/en/developer-guide#payment-processing">Payment Processing Guide</a></li>
@@ -114,7 +114,7 @@ end_of_page: |
     <div class="content_documentation--infobox">
       <h2 id="operating_modes" class="content_documentation--infobox--title">Operating Modes</h2>
       <div class="content_documentation--infobox--icon">
-        <img src="/img/icons/ico_simple.svg" class="titleicon" alt="Icon">
+        <i class="fa fa-cogs fa-lg"></i>
       </div>
       <ul class="content_documentation--infobox--list">
         <li><a href="/en/developer-guide#operating-modes">Operating Modes Guide</a></li>
@@ -124,7 +124,7 @@ end_of_page: |
     <div class="content_documentation--infobox">
       <h2 id="p2p-network" class="content_documentation--infobox--title">P2P Network</h2>
       <div class="content_documentation--infobox--icon">
-        <img src="/img/icons/ico_simple.svg" class="titleicon" alt="Icon">
+        <i class="fa fa-share-alt fa-lg"></i>
       </div>
       <ul class="content_documentation--infobox--list">
         <li><a href="/en/developer-guide#p2p-network">P2P Network Guide</a></li>
@@ -137,7 +137,7 @@ end_of_page: |
     <div class="content_documentation--infobox">
       <h2 id="mining" class="content_documentation--infobox--title">Mining</h2>
       <div class="content_documentation--infobox--icon">
-        <img src="/img/icons/ico_simple.svg" class="titleicon" alt="Icon">
+        <i class="fa fa-puzzle-piece fa-lg"></i>
       </div>
       <ul class="content_documentation--infobox--list">
         <li><a href="/en/developer-guide#mining">Mining Guide</a></li>
@@ -149,7 +149,7 @@ end_of_page: |
     <div class="content_documentation--infobox">
       <h2 id="additional-resources" class="content_documentation--infobox--title">Additional resources</h2>
       <div class="content_documentation--infobox--icon">
-        <img src="/img/icons/ico_simple.svg" class="titleicon" alt="Icon">
+        <i class="fa fa-link fa-lg"></i>
       </div>
       <ul class="content_documentation--infobox--list">
         <li><a href="/en/bitcoin-paper"><span class="fa fa-external-link"></span> Bitcoin: A Peer-to-Peer Electronic Cash System - Satoshi Nakamoto</a></li>
