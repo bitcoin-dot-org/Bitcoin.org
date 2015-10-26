@@ -72,17 +72,21 @@ fe9f0864 ........................... Nonce
   encoding had previously been non-standard since Bitcoin Core 0.8.0
   (February 2012).
 
-* **Version 4** blocks will likely be introduced in the near-future as
-  specified in draft BIP62. Possible changes include:
+* **Version 4** blocks will likely be introduced in the near future as
+  specified in BIP65.   These blocks will support the new
+  `OP_CHECKLOCKTIMEVERIFY` opcode described in that BIP.
 
-    * Reject version 4 blocks that include any version 2 transactions
-      that don't adhere to any of the version 2 transaction rules.
-      These rules are not yet described in this documentation; see
-      BIP62 for details.
+The mechanism used for the version 2, 3, and 4 upgrades is commonly
+called IsSuperMajority() after the function added to Bitcoin Core to
+manage those soft forking changes. See BIP34 for a full description of
+this method.
 
-    * A soft fork rollout of version 4 blocks identical to the rollout
-      used for version 3 blocks (described briefly in BIP62 and in more
-      detail in BIP34).
+As of this writing, a newer method called *version bits* is being designed
+to manage future soft forking changes, although it's not known whether
+version 4 will be the last soft fork to use the IsSuperMajority()
+function. Draft BIP9 describes the version bits design as of this
+writing, although it is still being actively edited and may
+substantially change while in the draft state.
 
 {% endautocrossref %}
 
