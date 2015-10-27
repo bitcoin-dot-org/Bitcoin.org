@@ -1,11 +1,3 @@
-- date: 2015-10-25
-  title: "Money 20/20"
-  venue: "The Venetian Las Vegas"
-  address: "3355 Las Vegas Blvd. South"
-  city: "Las Vegas"
-  country: "United States"
-  link: "http://www.money2020.com"
-
 - date: 2015-10-29
   title: "Meeting Bitcoin Sardegna"
   venue: "Enò"
@@ -69,6 +61,14 @@
   city: "Los Angeles"
   country: "United States"
   link: "https://wcbs2015.com"
+
+- date: 2015-12-03
+  title: "Moneylab#2 Economies of Dissent"
+  venue: "Pakhuis De Zwijger"
+  address: "Piet Heinkade 179"
+  city: "1019 HC Amsterdam"
+  country: "The Netherlands"
+  link: "http://networkcultures.org/moneylab/"
 
 - date: 2015-12-02
   title: "Bitcoin Wednesday Conference"
