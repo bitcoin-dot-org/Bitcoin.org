@@ -4,31 +4,31 @@
 
 required:
                                            #-------------40 characters-------------#
-    title_max_40_characters_no_formatting: Op Code
+    title_max_40_characters_no_formatting: Opcode
 
     summary_max_255_characters_no_formatting: >
         Operation codes from the Bitcoin Script language which push data
         or perform functions within a pubkey script or signature script.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
-        - Op code
-        - Data-pushing op code
-        - Non-data-pushing op code
+        - Opcode
+        - Data-pushing opcode
+        - Non-data-pushing opcode
 
 optional:
     synonyms_and_pluralizations_not_shown_in_glossary:
-        - op codes
+        - opcodes
         - opcode
         - opcodes
-        - data-pushing op codes
         - data-pushing opcodes
-        - non-data-pushing op codes
+        - data-pushing opcodes
+        - non-data-pushing opcodes
         - non-data-pushing opcodes
 
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Op codes](/en/developer-reference#op-codes) --- Bitcoin.org Developer Reference"
-        - "[List of op codes](https://en.bitcoin.it/wiki/Script) --- Bitcoin Wiki"
+        - "[Opcodes](/en/developer-reference#opcodes) --- Bitcoin.org Developer Reference"
+        - "[List of opcodes](https://en.bitcoin.it/wiki/Script) --- Bitcoin Wiki"
 
 ---

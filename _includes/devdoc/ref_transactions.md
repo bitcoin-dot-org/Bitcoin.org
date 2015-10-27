@@ -9,14 +9,14 @@ http://opensource.org/licenses/MIT.
 
 The following subsections briefly document core transaction details.
 
-#### OP Codes
+#### OpCodes
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
-The op codes used in the pubkey scripts of standard transactions are:
+The opcodes used in the pubkey scripts of standard transactions are:
 
-* Various data pushing op codes from 0x00 to 0x4e (1--78). These aren't
+* Various data pushing opcodes from 0x00 to 0x4e (1--78). These aren't
   typically shown in examples, but they must be used to push
   signatures and public keys onto the stack. See the link below this list
   for a description.
@@ -67,18 +67,18 @@ The op codes used in the pubkey scripts of standard transactions are:
 
 * [`OP_RETURN`][op_return]{:#term-op-return}{:.term} terminates the script in failure when executed.
 
-A complete list of OP codes can be found on the Bitcoin Wiki [Script
+A complete list of opcodes can be found on the Bitcoin Wiki [Script
 Page][wiki script], with an authoritative list in the `opcodetype` enum
 of the Bitcoin Core [script header file][core script.h]
 
 ![Warning icon](/img/icons/icon_warning.svg)
 **<span id="signature_script_modification_warning">Signature script modification warning</span>:**
 Signature scripts are not signed, so anyone can modify them. This
-means signature scripts should only contain data and data-pushing op
-codes which can't be modified without causing the pubkey script to fail.
-Placing non-data-pushing op codes in the signature script currently
+means signature scripts should only contain data and data-pushing opcodes
+which can't be modified without causing the pubkey script to fail.
+Placing non-data-pushing opcodes in the signature script currently
 makes a transaction non-standard, and future consensus rules may forbid
-such transactions altogether. (Non-data-pushing op codes are already
+such transactions altogether. (Non-data-pushing opcodes are already
 forbidden in signature scripts when spending a P2SH pubkey script.)
 
 ![Warning icon](/img/icons/icon_warning.svg)
@@ -341,7 +341,7 @@ has the following format.
 | 32       | hash (null)        | char[32]             | A 32-byte null, as a coinbase has no previous outpoint.
 | 4        | index (UINT32_MAX) | uint32_t             | 0xffffffff, as a coinbase has no previous outpoint.
 | *Varies* | script bytes       | compactSize uint     | The number of bytes in the coinbase script, up to a maximum of 100 bytes.
-| *Varies* (4) | height         | script               | The [block height][/en/glossary/coinbase]{:#term-coinbase-block-height}{:.term} of this block as required by BIP34.  Uses script language: starts with a data-pushing op code that indicates how many bytes to push to the stack followed by the block height as a little-endian unsigned integer.  This script must be as short as possible, otherwise it may be rejected.<br/><br/>  The data-pushing op code will be 0x03 and the total size four bytes until block 16,777,216 about 300 years from now.
+| *Varies* (4) | height         | script               | The [block height][/en/glossary/coinbase]{:#term-coinbase-block-height}{:.term} of this block as required by BIP34.  Uses script language: starts with a data-pushing opcode that indicates how many bytes to push to the stack followed by the block height as a little-endian unsigned integer.  This script must be as short as possible, otherwise it may be rejected.<br/><br/>  The data-pushing opcode will be 0x03 and the total size four bytes until block 16,777,216 about 300 years from now.
 | *Varies* | coinbase script    | *None*               | The [coinbase field][/en/glossary/coinbase]{:#term-coinbase-field}{:.term}: Arbitrary data not exceeding 100 bytes minus the (4) height bytes.  Miners commonly place an extra nonce in this field to update the block header merkle root during hashing.
 | 4        | sequence           | uint32_t             | Sequence number.
 

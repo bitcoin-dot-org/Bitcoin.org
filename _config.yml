@@ -323,9 +323,9 @@ devsearches:
     - 'WalletPassphrase': "/en/developer-reference#walletpassphrase"
     - 'WalletPassphraseChange': "/en/developer-reference#walletpassphrasechange"
 
-  ## Op codes currently implemented in Bitcoin Core master branch. After
+  ## Opcodes currently implemented in Bitcoin Core master branch. After
   ## we document them on Bitcoin.org, these links will be updated
-  "Op codes":
+  "Opcodes":
     - "OP_0 (OP_FALSE)": "https://en.bitcoin.it/wiki/Script#Constants"
     - "OP_PUSHDATA1": "https://en.bitcoin.it/wiki/Script#Constants"
     - "OP_PUSHDATA2": "https://en.bitcoin.it/wiki/Script#Constants"
