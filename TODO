@@ -1,5 +1,13 @@
 Redesign
 
+20) Create builder and refactor many pages
+	Create text__standard builder
+	Create call-to-action__tandard builder
+	Create content_standard.html
+	Refactor old pages
+	Refactor new pages
+	
+
 19 Refactor _templates > FAQ.html
 	fix html
 	add css
