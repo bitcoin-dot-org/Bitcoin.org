@@ -1003,12 +1003,12 @@ example, TXIDs will be in internal byte order).
   section is individually compared to the filter.
 
 * **Signature Script Data:** each element pushed onto the stack by a
-  data-pushing op code in a signature script from this transaction is
+  data-pushing opcode in a signature script from this transaction is
   individually compared to the filter.  This includes data elements
   present in P2SH redeem scripts when they are being spent.
 
 * **PubKey Script Data:** each element pushed onto the the stack by a
-  data-pushing op code in any pubkey script from this transaction is
+  data-pushing opcode in any pubkey script from this transaction is
   individually compared to the filter. (If a pubkey script element
   matches the filter, the filter will be immediately updated if the
   `BLOOM_UPDATE_ALL` flag was set; if the pubkey script is in the P2PKH
