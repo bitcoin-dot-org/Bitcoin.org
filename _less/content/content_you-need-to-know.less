@@ -1,26 +1,12 @@
 .builder__content__title--long(you-need-to-know);
+.builder__text__standard(you-need-to-know);
 
-.content_you-need-to-know--list {
-	.content_individuals--list;
-}
 .content_you-need-to-know--items {
-	padding: @ms1;
-		img {
-			float: left;
-			width: @ms4;
-			padding: @ms1 @ms1;
-			opacity: @light-2;
+	@media screen and (min-width: 750px ) { 
+		img {		
+			padding: @ms3 @ms3 @ms8;
 		}
-		h3 {
-			font-size: @ms0;
-			font-weight: 700;
-			margin-bottom: @ms-2;
-			color: @main-2;
-		}
-		p {
-			color: @main-3;
-			line-height: @ms2;
-		}
+	}
 }
 
 .content_you-need-to-know--table {
