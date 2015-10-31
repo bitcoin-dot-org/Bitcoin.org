@@ -1,0 +1,29 @@
+.builder__content__title--long(support-bitcoin);
+.builder__text__standard(support-bitcoin);
+
+.content_support-bitcoin--items--list li:before {
+	font-size: @ms4;
+	position: absolute;
+	margin-top: -@ms0;
+	margin-left: -@ms4;
+	z-index: 1;
+	content: "-";
+	color: @orange-500;
+	font-weight: 700;
+	border-radius: 3px;
+	opacity: @light-2;
+}
+
+.content_support-bitcoin--items--list {
+	padding-left: @ms0;
+	padding-right: @ms0;
+	margin: @ms1 0 0;
+	@media screen and (min-width: 550px ) { 
+		padding-left: @ms9;
+		padding-right: @ms2;
+	}
+}
+.content_support-bitcoin--items--list li {
+	margin: @ms2 0;
+	padding-left: @ms4;
+}
