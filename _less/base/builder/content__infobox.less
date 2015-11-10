@@ -2,7 +2,7 @@
 This builder builds the infoboxes with the orange border at the top
 and containes links.
 
-Use: 
+Use:
   .builder__content__infobox(yourcontinerclass);
 
 The markup:
@@ -42,21 +42,26 @@ The markup:
   }
   .content_@{classname}--infobox--title {
     background: @gray-200;
-    width: 100%;
     min-height: @ms7;
     font-weight: 700;
     text-align: center;
     font-size: @ms1;
     padding-top: @ms4;
+    padding-left: @ms2;
+    padding-right: @ms2;
+    padding-bottom: @ms0;
     border-top-left-radius: @ms-5;
     border-top-right-radius: @ms-5;
     letter-spacing: 1px;
     border-top: @orange-500 @ms-5 solid;
+    @media screen and (min-width: 1077px ) {
+     padding-bottom: 0;
+    }
   }
   .content_@{classname}--infobox--icon {
     background: @orange-500;
     border-radius: 50%;
-    margin: -@ms4 auto 0 ;
+    margin: -@ms4 auto 0;
     display: block;
     border: @gray-50 @ms-3 solid;
     position: relative;
@@ -78,12 +83,12 @@ The markup:
   }
 
   .content_@{classname}--infobox--list {
-    margin: @ms-1 0 0; 
+    margin: @ms-1 0 0;
   }
   .content_@{classname}--infobox--list li {
     border-top: 1px @main-5 solid;
   }
-  .content_@{classname}--infobox--list li a {
+  .content_@{classname}--infobox--list li > a {
     padding: @ms0 @ms2;
     display: block;
     line-height: @ms1;
@@ -113,7 +118,7 @@ The markup:
     border-width: @ms0 + @mp1;
     margin-left: -@ms0 + @ms1;
   }
-  @media screen and (min-width: 1077px ) { 
+  @media screen and (min-width: 1077px ) {
     .content_@{classname}--infobox {
       float: left;
       width: @ms13;
