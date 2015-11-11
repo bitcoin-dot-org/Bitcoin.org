@@ -1,9 +1,9 @@
 /*
 This builder create styles for the basic tags like h2, code, strong.
 
-Use: 
+Use:
   .builder__content__title(yourcontinerclass);
-  If the subtitle is long use: 
+  If the subtitle is long use:
   .builder__content__title--long(yourcontinerclass);
 
 The markup:
@@ -54,9 +54,11 @@ The markup:
 
     img {
       display: block;
-      margin: @ms5 auto;
-      max-width: 100%;
-      .card-2;
+  	  margin: @ms5 auto;
+  	  max-width: 100%;
+  	  border: @ms0 @white solid;
+  	  border-radius: @ms-5;
+  	  .card-1;
     }
 
     ol, ul {
@@ -67,7 +69,7 @@ The markup:
 
     ol {
       li {
-        counter-increment: list;  
+        counter-increment: list;
       }
       li:before {
         content: counter(list);
@@ -124,7 +126,7 @@ The markup:
       line-height: @ms1;
       color: @teal-500;
       border: 0;
-      white-space: pre; 
+      white-space: pre;
     }
 
 
@@ -187,14 +189,14 @@ The markup:
     .term {
       color: @teal-500;
     }
-    @media screen and (min-width: 650px ) { 
+    @media screen and (min-width: 650px ) {
       ol, ul {
         padding-left: @ms5;
         padding-right: @ms5;
         margin: @ms5 0;
       }
       pre code {
-        padding: @ms2 @ms3 @ms1; 
+        padding: @ms2 @ms3 @ms1;
       }
       code {
         word-break: normal;
