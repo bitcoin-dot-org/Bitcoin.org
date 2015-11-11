@@ -1,0 +1,279 @@
+.builder__content__title(press);
+
+
+.content_press--body {
+  margin: @ms4 auto;
+  max-width: @ms15;
+  > h2 {
+		font-size: @ms1;
+    font-weight: 700;
+    color: @main-2;
+		margin: @ms4 0 @ms-2;
+	}
+	> p {
+		color: @main-2;
+		line-height: @ms1;
+    margin-bottom: @ms2;
+	}
+}
+
+.content_press--faq {
+	background: @gray-50;
+	margin: @ms4 auto @ms4;
+	border-radius: @ms-5;
+	max-width: @ms16;
+	background: @gray-50;
+	.card-1;
+}
+
+.content_press--faq--title {
+	background: @gray-200;
+	width: 100%;
+	font-weight: 700;
+	text-align: center;
+	font-size: @ms1;
+	padding: @ms4 0;
+	border-top-left-radius: @ms-5;
+	border-top-right-radius: @ms-5;
+	letter-spacing: 1px;
+	border-top: @orange-500 @ms-5 solid;
+  border-bottom: @gray-300 1px solid;
+}
+
+.content_press--faq--section--title {
+	background: @gray-100;
+	border-top: @gray-300 1px solid;
+	border-bottom: @gray-300 1px solid;
+	padding: @ms1 @ms2;
+	a {
+		color: @main-2;
+	}
+}
+
+.content_press--faq--list {
+	.content_press--faq--item:last-child {
+		.content_press--faq--item--content {
+			border-bottom: 0;
+			border-top: @gray-300 1px solid;
+		}
+	}
+}
+
+.content_press--faq--list {
+	.content_press--faq--item:last-child {
+		.content_press--faq--item--title a {
+			border-bottom: 0;
+		}
+	}
+}
+
+.content_press--faq--item--title a:before {
+	content: "Open";
+	float: right;
+	color: @black;
+	opacity: @light-5;
+	display: none;
+	@media screen and (min-width: 750px ) {
+		display: block;
+	}
+}
+
+.content_press--faq--item--title a {
+	border-bottom: @gray-300 1px solid;
+	padding: @ms1 @ms2;
+	display: block;
+	@media screen and (min-width: 750px ) {
+		padding: @ms1 @ms5;
+	}
+}
+
+.content_press--faq--item--content {
+	display: none;
+	padding: @ms2 @ms2;
+	color: @main-2;
+	border-bottom: @gray-300 1px solid;
+	line-height: @ms2;
+	@media screen and (min-width: 750px ) {
+		padding: @ms2 @ms5;
+	}
+	p {
+		margin-bottom: @ms1;
+	}
+
+	img {
+	  display: block;
+	  margin: @ms3 auto;
+	  max-width: 100%;
+	  .card-2;
+	}
+
+	ol, ul {
+	  padding-left: @ms0;
+	  padding-right: @ms0;
+	  margin: @ms1 0;
+	  @media screen and (min-width: 750px ) {
+	  	padding-left: @ms2;
+	  	padding-right: @ms2;
+	  }
+	}
+
+	ol {
+	  li {
+	    counter-increment: list;
+	  }
+	  li:before {
+	    content: counter(list);
+	    font-size: @ms2;
+	    position: absolute;
+	    margin-top: @ms-7;
+	    margin-left: -@ms4;
+	    z-index: 1;
+	    color: @orange-500;
+	    font-weight: 700;
+	    border-radius: 3px;
+	    opacity: @light-2;
+	  }
+	  li {
+	    margin: @ms1 0;
+	    padding-left: @ms4;
+	  }
+	}
+
+	ul {
+	  li:before {
+	  font-size: @ms4;
+	  position: absolute;
+	  margin-top: -@ms-6;
+	  margin-left: -@ms4;
+	  z-index: 1;
+	  content: "-";
+	  color: @orange-500;
+	  font-weight: 700;
+	  border-radius: 3px;
+	  opacity: @light-2;
+	  }
+	  li {
+	    margin: @ms2 0;
+	    padding-left: @ms4;
+	  }
+	}
+}
+
+.content_press--faq--footer {
+  border-top: 1px @gray-300 solid;
+  text-align: center;
+  background: @gray-100;
+  color: @main-2;
+  line-height: @ms2;
+  border-bottom-left-radius: @ms-5;
+  border-bottom-right-radius: @ms-5;
+  padding: @ms1 @ms2;
+}
+.content_press--video {
+  margin: @ms3 auto;
+  max-width: @ms17;
+  > h2 {
+    font-size: @ms1;
+    font-weight: 700;
+    text-align: center;
+    color: @main-2;
+  }
+}
+.content_press--video--list {
+  text-align: center;
+  margin-top: @ms2;
+}
+
+.content_press--video--item {
+  background: @gray-50;
+  margin: 0 @ms2;
+  border-radius: @ms-5;
+  display: inline-block;
+  text-align: center;
+  &:first-child {
+    margin-bottom: @ms3;
+  }
+  .card-1;
+  .clearfix;
+  a {
+    .clearfix;
+  }
+  img {
+    max-width: 100%;
+    border-top-left-radius: @ms-5;
+    border-top-right-radius: @ms-5;
+  }
+  span {
+    display: block;
+    padding: @ms1 0;
+    border-top: 1px @gray-300 solid;
+    margin-top: -2px;
+  }
+  > a > a {
+    display: none;
+  }
+}
+.content_press-video--link {
+  text-align: center;
+  margin: @ms3 0 @ms6;
+  display: block;
+  @media screen and (min-width: 670px ) {
+    margin-top: 0;
+  }
+}
+.content_press--quote {
+  background: @gray-50;
+  max-width: @ms15;
+  margin: @ms4 auto;
+  border-radius: @ms-5;
+  .card-1;
+}
+.content_press--quote h2 {
+  background: @gray-200;
+  font-weight: 700;
+  text-align: center;
+  font-size: @ms1;
+  padding: @ms3 0;
+  border-top-left-radius: @ms-5;
+  border-top-right-radius: @ms-5;
+  letter-spacing: 1px;
+  border-top: @orange-500 @ms-5 solid;
+}
+.content_press--quotes--wrap {
+}
+.content_press--quotes--blockquote {
+  max-width: 100%;
+  border-top: 1px @gray-300 solid;
+  text-align: left;
+  display: block;
+  padding: @ms2 @ms3;
+  &:nth-child(odd) {
+    background: @gray-100;
+  }
+  p {
+    font-style: italic;
+    line-height: @ms1;
+    color: @main-2;
+
+  }
+  cite {
+    font-size: @ms-1;
+    display: inline-block;
+    color: @main-2;
+    line-height: @ms2;
+    padding-top: @ms-3;
+    margin-top: @ms-1;
+    border-top: 1px @gray-300 solid;
+  }
+}
+
+.content_press--quotes--link {
+  border-top: 1px @gray-300 solid;
+  text-align: center;
+  background: @gray-100;
+  color: @main-2;
+  line-height: @ms2;
+  border-bottom-left-radius: @ms-5;
+  border-bottom-right-radius: @ms-5;
+  padding: @ms1 @ms2;
+}
