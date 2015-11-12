@@ -1437,5 +1437,52 @@ If you have any questions about configuring Bitcoin Core, please stop by
 one of our [forums](/en/bitcoin-core/help#forums) or [live
 chatrooms](/en/bitcoin-core/help#live).
 
+### Reduce Traffic
+
+Some node operators need to deal with bandwith caps imposed by their ISPs.
+
+By default, bitcoin-core allows up to 125 connections to different peers, 8 of
+which are outbound. You can therefore, have at most 117 inbound connections.
+
+The default settings can result in relatively significant traffic consumption.
+
+Ways to reduce traffic:
+
+#### Maximum Upload Targets
+
+{% highlight text %}
+-maxuploadtarget=<MiB per day>
+{% endhighlight %}
+
+A major component of the traffic is caused by serving historic blocks to other nodes
+during the initial blocks download phase (syncing up a new node).
+This option can be specified in MiB per day and is turned off by default.
+This is *not* a hard limit; only a threshold to minimize the outbound
+traffic. When the limit is about to be reached, the uploaded data is cut by no
+longer serving historic blocks (blocks older than one week).
+Keep in mind that new nodes require other nodes that are willing to serve
+historic blocks. **The recommended minimum is 144 blocks per day (max. 144MB
+per day)**
+
+#### Disable listening
+
+{% highlight text %}
+-listen=0
+{% endhighlight %}
+
+Disabling listening will result in fewer nodes connected (remember the maximum of 8
+outbound peers). Fewer nodes will result in less traffic usage as you are relaying
+blocks and transactions to fewer nodes.
+
+#### Reduce maximum connections
+
+{% highlight text %}
+-maxconnections=<num>
+{% endhighlight %}
+
+Reducing the maximum connected nodes to a miniumum could be desirable if traffic
+limits are tiny. Keep in mind that bitcoin's trustless model works best if you are
+connected to a handful of nodes.
+
 </div>
 <script>updateToc();</script>
