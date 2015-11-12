@@ -1396,5 +1396,46 @@ ask for help on sites like [SuperUser](http://superuser.com).
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
 
+## Configuration Tuning
+
+This section contains advice about how to change your Bitcoin Core
+configuration to adapt it to your needs.
+
+There are two ways to change your configuration.  The first is to start
+Bitcoin Core with the options you want.  For example, if you want to
+limit it to using one CPU core for signature verification, you can start
+Bitcoin Core like this:
+
+{% highlight bash %}
+## Bitcoin Core daemon
+bitcoind -par=1 -daemon
+
+## Bitcoin Core GUI
+bitcoin-qt -par=1
+{% endhighlight %}
+
+Once you've decided you like an option, you can add it to the Bitcoin
+Core configuration file.  You can find that file in the following
+directories:
+
+- Windows: %APPDATA%\Bitcoin\
+
+- OSX: $HOME/Library/Application Support/Bitcoin/
+
+- Linux: $HOME/.bitcoin/
+
+To add an option to the configuration file, just remove its leading
+dash.  You may also need to remove any quotation marks you used in your shell.
+For example, the `-par` option seen above would look like this in the
+configuration file:
+
+{% highlight text %}
+par=1
+{% endhighlight %}
+
+If you have any questions about configuring Bitcoin Core, please stop by
+one of our [forums](/en/bitcoin-core/help#forums) or [live
+chatrooms](/en/bitcoin-core/help#live).
+
 </div>
 <script>updateToc();</script>
