@@ -547,6 +547,39 @@ function makeEditable(e) {
   }
 }
 
+function showAds(ads) {
+	if(!isMobile()){
+
+		var ad = ads[Math.floor(Math.random()*ads.length)];	
+		
+		var ad_slot = document.createElement("div");
+		ad_slot.className = "ad-slot";
+
+		var ad_slot_inner_container = document.createElement("div");
+		ad_slot_inner_container.className = "ad-slot-inner-container";
+
+		var ad_slot_img = document.createElement("img");
+		ad_slot_img.src = "/img/ads/" + ad.icon + ".png";
+		
+		var ad_slot_link = document.createElement("a");
+		ad_slot_link.href = ad.website;
+		ad_slot_link.appendChild(document.createTextNode(ad.text));
+
+		var ad_slot_clear = document.createElement("div");
+		ad_slot_clear.className = "ad-slot-clear";
+
+		ad_slot_inner_container.appendChild(ad_slot_img);
+		ad_slot_inner_container.appendChild(ad_slot_link);
+		ad_slot_inner_container.appendChild(ad_slot_clear);
+
+		ad_slot.appendChild(ad_slot_inner_container);
+
+		var body = document.body;
+		body.insertBefore(ad_slot, body.firstChild);		
+		
+	}
+}
+
 // Add makeEditable event listener
 var xint = setInterval(function() {
   if (!document.body) return;
