@@ -343,7 +343,7 @@ Curve (EC) defined in secp256k1. In their traditional uncompressed form,
 public keys contain an identification byte, a 32-byte X coordinate, and
 a 32-byte Y coordinate. The extremely simplified illustration below
 shows such a point on the elliptic curve used by Bitcoin,
-x<sup>2</sup>&nbsp;=&nbsp;y<sup>3</sup>&nbsp;+&nbsp;7, over a field of
+y<sup>2</sup>&nbsp;=&nbsp;x<sup>3</sup>&nbsp;+&nbsp;7, over a field of
 contiguous numbers.
 
 ![Point On ECDSA Curve](/img/dev/en-ecdsa-compressed-public-key.svg)

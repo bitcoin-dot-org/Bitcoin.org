@@ -12,23 +12,23 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-Bitcoin Core RPCs accept and return hashes in the reverse of their
-normal byte order. For example, the Unix `sha256sum` command would display the
-SHA256(SHA256()) hash of mainnet block 300,000's header as the
-following string:
+Bitcoin Core RPCs accept and return the byte-wise reverse of computed
+SHA-256 hash values. For example, the Unix `sha256sum` command displays the
+SHA256(SHA256()) hash of mainnet block 300,000's header as:
 
+    > /bin/echo -n '020000007ef055e1674d2e6551dba41cd214debbee34aeb544c7ec670000000000000000d3998963f80c5bab43fe8c26228e98d030edf4dcbe48a666f5c39e2d7a885c9102c86d536c890019593a470d' | xxd -r -p | sha256sum -b | xxd -r -p | sha256sum -b
     5472ac8b1187bfcf91d6d218bbda1eb2405d7c55f1f8cc820000000000000000
 
-The string above is also how the hash appears in the
+The result above is also how the hash appears in the
 previous-header-hash part of block 300,001's header:
 
 <pre>02000000<b>5472ac8b1187bfcf91d6d218bbda1eb2405d7c55f1f8cc82000\
 0000000000000</b>ab0aaa377ca3f49b1545e2ae6b0667a08f42e72d8c24ae\
 237140e28f14f3bb7c6bcc6d536c890019edd83ccf</pre>
 
-However Bitcoin RPCs use the reverse byte order for hashes, so if you
+However, Bitcoin Core's RPCs use the byte-wise reverse for hashes, so if you
 want to get information about block 300,000 using the `getblock` RPC,
-you need to reverse the byte order:
+you need to reverse the requested hash:
 
     > bitcoin-cli getblock \
       000000000000000082ccf8f1557c5d40b21edabb18d2d691cfbf87118bac7254
@@ -36,19 +36,12 @@ you need to reverse the byte order:
 (Note: hex representation uses two characters to display each byte of
 data, which is why the reversed string looks somewhat mangled.)
 
-The rational for the reversal is unknown, but it likely stems from
-Bitcoin's use of hash digests (which are byte arrays in C++) as integers
+The rationale for the reversal is unknown, but it likely stems from
+Bitcoin Core's use of hashes (which are byte arrays in C++) as integers
 for the purpose of determining whether the hash is below the network
 target. Whatever the reason for reversing header hashes, the reversal
 also extends to other hashes used in RPCs, such as TXIDs and merkle
 roots.
-
-Off-site documentation such as the Bitcoin Wiki tends to use the terms
-big endian and little endian as shown in the table below, but they
-aren't always consistent. Worse, these two different ways of
-representing a hash digest can confuse anyone who looks at the Bitcoin
-Core source code and finds a so-called "big endian" value being stored
-in a little-endian data type.
 
 As header hashes and TXIDs are widely used as global identifiers in
 other Bitcoin software, this reversal of hashes has become the standard
@@ -56,7 +49,7 @@ way to refer to certain objects. The table below should make clear where
 each byte order is used.
 
 |---------------+---------------------|-----------------|
-| Data | Internal Byte Order ("Big Endian") | RPC Byte Order ("Little Endian") |
+| Data | Internal Byte Order | RPC Byte Order |
 |---------------|---------------------|-----------------|
 | Example: SHA256(SHA256(0x00))  | Hash: 1406...539a         | Hash: 9a53...0614     |
 |---------------|---------------------|-----------------|

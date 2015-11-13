@@ -65,25 +65,28 @@ fe9f0864 ........................... Nonce
   <!-- source for heights: my (@harding) own headers dump and counting
   script -->
 
-* **Version 3** blocks will be introduced when sufficient numbers of
-  miners switch to using Bitcoin Core 0.10.0 and other versions that
-  create version 3 blocks. As described in draft BIP66, this soft fork
-  change requires strict DER encoding for all ECDSA signatures used in
-  transactions appearing in version 3 or later blocks. Transactions that
-  do not use strict DER encoding have been non-standard since Bitcoin
-  Core 0.8.0.
+* **Version 3** blocks were introduced in Bitcoin Core 0.10.0 (February
+  2015) as a soft fork. When the fork reach full enforcement (July
+  2015), it required strict DER encoding of all ECDSA signatures in new
+  blocks as described in BIP66. Transactions that do not use strict DER
+  encoding had previously been non-standard since Bitcoin Core 0.8.0
+  (February 2012).
 
-* **Version 4** blocks will likely be introduced in the near-future as
-  specified in draft BIP62. Possible changes include:
+* **Version 4** blocks will likely be introduced in the near future as
+  specified in BIP65.   These blocks will support the new
+  `OP_CHECKLOCKTIMEVERIFY` opcode described in that BIP.
 
-    * Reject version 4 blocks that include any version 2 transactions
-      that don't adhere to any of the version 2 transaction rules.
-      These rules are not yet described in this documentation; see
-      BIP62 for details.
+The mechanism used for the version 2, 3, and 4 upgrades is commonly
+called IsSuperMajority() after the function added to Bitcoin Core to
+manage those soft forking changes. See BIP34 for a full description of
+this method.
 
-    * A soft fork rollout of version 4 blocks identical to the rollout
-      used for version 3 blocks (described briefly in BIP62 and in more
-      detail in BIP34).
+As of this writing, a newer method called *version bits* is being designed
+to manage future soft forking changes, although it's not known whether
+version 4 will be the last soft fork to use the IsSuperMajority()
+function. Draft BIP9 describes the version bits design as of this
+writing, although it is still being actively edited and may
+substantially change while in the draft state.
 
 {% endautocrossref %}
 

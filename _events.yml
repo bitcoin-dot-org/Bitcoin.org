@@ -1,210 +1,18 @@
-- date: 2015-09-02
-  title: "Bitcoin Wednesday Conference"
-  venue: "De Balie"
-  address: "Leidseplein, Kleine-Gartmanplantsoen 10"
-  city: "Amsterdam"
-  country: "The Netherlands"
-  link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-27/"
-
-- date: 2015-09-10
-  title: "Consensus 2015"
-  venue: "TimesCenter"
-  address: "242 W 41st St"
+- date: 2015-11-12
+  title: "The Future of Money: Cashing out on Cash"
+  venue: "Thomson Reuters"
+  address: "3 Times Square"
   city: "New York"
-  country: "United States"
-  link: "http://www.coindesk.com/events/consensus-2015/"
-
-- date: 2015-09-12
-  title: "Bitcoinference Summer 2015"
-  venue: "Amsterdam Science Park"
-  address: "Science Park 205, 1098 XH"
-  city: "Amsterdam"
-  country: "Netherlands"
-  link: "http://bitcoinference.com/"
-
-- date: 2015-09-12
-  title: "Scaling Bitcoin Conference"
-  venue: "Centre Mont-Royal"
-  address: "2200 rue Mansfield Montréal Québec, H3A 3R8"
-  city: "Montreal"
-  country: "Canada"
-  link: "https://scalingbitcoin.org/montreal2015/"
-
-- date: 2015-09-12
-  title: "Blockstack Summit 2015"
-  venue: "D'Agostino Hall, New York University"
-  address: "108 W 3rd St"
-  city: "New York"
-  country: "United States"
-  link: "http://blockstack.org/summit"
-
-- date: 2015-09-15
-  title: "NYC Fintech eXtravaganza"
-  venue: "Microsoft Technology Center"
-  address: "640 8th Ave"
-  city: "New York"
-  country: "United States"
-  link: "http://www.eventbrite.com/e/nyc-fintech-extravaganza-fintechx-tickets-17816557804"
-
-- date: 2015-09-16
-  title: "Finovate New York 2015"
-  venue: "New York Hilton Midtown"
-  address: "1335 Avenue of the Americas"
-  city: "New York"
-  country: "United States"
-  link: "http://fall2015.finovate.com/"
-
-- date: 2015-09-18
-  title: "Bitcoin Thrill Day 2015"
-  venue: "Walibi Holland"
-  address: "SPIJKWEG 30"
-  city: "Biddinghuizen"
-  country: "The Netherlands"
-  link: "https://thrilldays.bitcoinembassy.nl/"
-
-- date: 2015-09-18
-  title: "Blockchain@Birmingham"
-  venue: "Learning Center LG14@ University of Birmingham"
-  address: "Edgbaston, Birmingham, WestMidlands, UK"
-  city: "Birmingham"
-  country: "United Kingdom"
-  link: "https://blockchainbirmingham.wordpress.com"
-
-- date: 2015-09-23
-  title: "Finance 2.0: Crypto"
-  venue: "EWZ-Unterwerk Selnau"
-  address: "Selnaustreet 25"
-  city: "Zurich"
-  country: "Switzerland"
-  link: "http://www.finance20.ch/crypto2015/"
-
-- date: 2015-09-24
-  title: "Bitcoin Conference Kiev"
-  venue: "NSC Olimpiyskiy"
-  address: "Velyka Vasylkivska str., 55"
-  city: "Kyiv"
-  country: "Ukraine"
-  link: "http://bitcoinconf.com.ua/en"
-
-- date: 2015-09-28
-  title: "Bitcoin and Blockchain Regulation"
-  venue: "The London Escalator"
-  address: "69-89 Mile End Rd"
-  city: "London"
-  country: "United Kingdom"
-  link: "http://bblf.info/"
-
-- date: 2015-10-02
-  title: "Digital Economy Conference"
-  venue: "Holland Performing Arts Center"
-  address: "1200 Douglas Street"
-  city: "Omaha"
-  country: "United States"
-  link: "http://digitaleconomy.io/"
-
-- date: 2015-10-02
-  title: "Hacker Congress"
-  venue: "Paralelni Polis"
-  address: "Delnicka 43"
-  city: "Prague"
-  country: "Czech Republic"
-  link: "http://www.hcpp.cz/eng/"
-
-- date: 2015-10-06
-  title: "Fintech: Law and Disruption"
-  venue: "New York Law School Events Center"
-  address: "185 West Broadway"
-  city: "New York"
-  country: "United States"
-  link: "http://www.nyls.edu/center-for-business-and-financial-law/cbfl_events/conferences/"
-
-- date: 2015-10-06
-  title: "Blockchain Conference New York"
-  venue: "Barclays Accelerator"
-  address: "43 West 23rd Street"
-  city: "New York"
-  country: "United States"
-  link: "http://www.blockchain-newyork.com/"
-
-- date: 2015-10-07
-  title: "Bitcoin Wednesday Conference"
-  venue: "De Balie"
-  address: "Leidseplein, Kleine-Gartmanplantsoen 10"
-  city: "Amsterdam"
-  country: "The Netherlands"
-  link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-28/"
-
-- date: 2015-10-08
-  title: "Alt Convention"
-  venue: "Hilton Batumi, Radisson Blu Batumi, Sheraton Batumi, Divan Suites, Leogrand"
-  address:
-  city: "Batumi"
-  country: "Georgia"
-  link: "http://altconvention.com"
-
-- date: 2015-10-16
-  title: "DevCore Workshop: Developing the Developers"
-  venue: "Draper University"
-  address: "44 E Third Ave"
-  city: "San Mateo, CA"
   country: "USA"
-  link: "http://bitcoinfoundation.org"
+  link: "http://rsvp.thomsonreuters.com/node/839"
 
-- date: 2015-10-21
-  title: "Fintech Jersey 2015"
-  venue: "Radisson Blu Waterfront Hotel"
-  address: "Rue de L'etau JE2 3WF"
-  city: "St. Helier"
-  country: "United Kingdom"
-  link: "http://www.eventbrite.co.uk/e/fintechjersey-2015-tickets-18417288606?aff=es2"
-
-- date: 2015-10-25
-  title: "Money 20/20"
-  venue: "The Venetian Las Vegas"
-  address: "3355 Las Vegas Blvd. South"
-  city: "Las Vegas"
-  country: "United States"
-  link: "http://www.money2020.com"
-
-- date: 2015-11-03
-  title: "BL0CKCHA1N: The Blockchain Forum"
-  venue: "Novotel Paris Centre Tour Eiffel"
-  address: "61 quai de Grenelle, 75015"
-  city: "Paris"
-  country: "France"
-  link: "http://www.bl0ckcha1n.com"
-
-- date: 2015-11-04
-  title: "Bitcoin Wednesday Conference"
-  venue: "De Balie"
-  address: "Leidseplein, Kleine-Gartmanplantsoen 10"
-  city: "Amsterdam"
-  country: "The Netherlands"
-  link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-29/"
-
-- date: 2015-11-09
-  title: "MTBIT - Bitcoin & Remittances Miami Beach"
-  venue: "Eden Roc Hotel"
-  address: "4525 Collins Avenue"
-  city: "Miami Beach"
-  country: "United States"
-  link: "http://www.imtconferences.com/mtbit/"
-
-- date: 2015-11-10
-  title: "Bank Innovation Israel"
-  venue: "Dan Tel Aviv"
-  address: "Ha-Yarkon St 99"
-  city: "Tel Aviv-Yafo"
-  country: "Israel"
-  link: "http://bankinnovationisrael.com/"
-
-- date: 2015-11-10
-  title: "Fintech Startups Conference"
-  venue: "Great American Music Hall"
-  address: "859 O'Farrell St"
-  city: "San Francisco"
-  country: "United States"
-  link: "http://www.fintechstartupsconference.com/sftickets"
+- date: 2015-11-20
+  title: "Practical workshop"
+  venue: "Las Naves"
+  address: "Joan Verdeguer 16"
+  city: "Valencia"
+  country: "Spain"
+  link: "http://avalbit.org/actividades/taller-practico-bitcoin/"
 
 - date: 2015-11-24
   title: "ADCCA Fintech Summit"
@@ -214,6 +22,14 @@
   country: "Australia"
   link: "http://www.adccasummit.com/"
 
+- date: 2015-12-03
+  title: "Moneylab#2 Economies of Dissent"
+  venue: "Pakhuis De Zwijger"
+  address: "Piet Heinkade 179"
+  city: "1019 HC Amsterdam"
+  country: "The Netherlands"
+  link: "http://networkcultures.org/moneylab/"
+
 - date: 2015-12-02
   title: "Bitcoin Wednesday Conference"
   venue: "De Balie"
@@ -222,6 +38,14 @@
   country: "The Netherlands"
   link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-30/"
 
+- date: 2015-12-04
+  title: "laBITconf 2015: Latin American Bitcoin Conference"
+  venue: "EBC Campus Dinamarca"
+  address: "Dinamarca 32, Col. Juarez, Del. Cuauhtemoc"
+  city: "Mexico D.F."
+  country: "Mexico"
+  link: "http://www.labitconf.com/"
+
 - date: 2015-12-06
   title: "Scaling Bitcoin: Phase 2"
   venue: "Hong Kong Cyberport"
@@ -229,6 +53,14 @@
   city: "Hong Kong"
   country: "China"
   link: "https://scalingbitcoin.org/hongkong2015/"
+
+- date: 2015-12-08
+  title: "Santa Claus Bitcurex Bitcoin Event"
+  venue: "Centrum Golf"
+  address: "Burakowska 15"
+  city: "Warsaw"
+  country: "Poland"
+  link: "https://www.facebook.com/events/979552578733820/"
 
 - date: 2015-12-09
   title: "Inside Bitcoins Seoul"
@@ -246,10 +78,10 @@
   country: "United States"
   link: "http://insidebitcoins.com/san-diego/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibsd"
 
-- date: 2016-01-25
+- date: 2016-01-21
   title: "The North American Bitcoin Conference"
-  venue: "Miami Design District"
-  address: "NW 36th Street"
+  venue: "James L Knight Center"
+  address: "400 SE 2nd Ave"
   city: "Miami, Florida"
   country: "United States of America"
   link: "http://www.btcmiami.com"
