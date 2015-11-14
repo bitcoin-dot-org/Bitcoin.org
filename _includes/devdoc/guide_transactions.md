@@ -434,7 +434,7 @@ to the block chain in more harmful ways.)
 {% endautocrossref %}
 
 ~~~
-Pubkey Script: OP_RETURN <0 to 40 bytes of data>
+Pubkey Script: OP_RETURN <0 to 80 bytes of data>
 (Null data scripts cannot be spent, so there's no signature script.)
 ~~~
 
