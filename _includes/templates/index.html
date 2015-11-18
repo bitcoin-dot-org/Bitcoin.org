@@ -2,42 +2,27 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+
 <div class="content_homepage">
-  <h2 class="content_homepage--intro">{% translate listintro %}</h2>
-  <div class="content_homepage--video">
-    <div class='embed-container'>
-      <iframe src='https://www.youtube.com/embed/Gc2en3nHxA4?rel=0&showinfo=0&wmode=opaque&autoplay=0' frameborder='0' allowfullscreen></iframe>
+  <div class="content_homepage--wrap">
+    <h2 class="content_homepage--intro">{% translate listintro %}</h2>
+    <div class="content_homepage--video">
+      <span class="content_homepage--video--button video-link" data-video-id="Gc2en3nHxA4" href=""><img src="/img/bitcoin/button.svg" alt=""></span>
+    </div>
+    <div class="content_homepage--action--wrap">
+      <div class="content_homepage--action">
+        <a class="content_homepage--action--text" href="/{{ page.lang }}/{% translate getting-started url %}">
+          {% translate getstarted layout %}
+        </a>
+      </div>
     </div>
   </div>
-
-  <ul class="content_homepage--list">
-    <li>
-      <img src="/img/icons/main_ico_instant.svg" alt="Icon">
-      <span>{% translate list1 %}</span>
-    </li>
-    <li>
-      <img src="/img/icons/main_ico_worldwide.svg" alt="Icon">
-      <span>{% translate list2 %}</span>
-    </li>
-    <li>
-      <img src="/img/icons/main_ico_lowfee.svg" alt="Icon">
-      <span>{% translate list3 %}</span>
-    </li>
-  </ul>
-
-  <p class="content_homepage--description">{% translate desc %}</p>
-
-  <div class="content_homepage--action">
-    <a href="/{{ page.lang }}/{% translate getting-started url %}">
-      {% translate getstarted layout %}
-    </a>
+  <div class="content_homepage--overview--wrap">
+    <h3 class="content_homepage--overview">{% translate overview %}</h3>
+    <div class="content_homepage--overview--list">
+      <a class="content_homepage--overview--item" href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a>
+      <a class="content_homepage--overview--item" href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a>
+      <a class="content_homepage--overview--item" href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a>
+    </div>
   </div>
-
-  <h3 class="content_homepage--overview">{% translate overview %}</h3>
-  <div class="content_homepage--overview--list">
-    <a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a>
-    <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a>
-    <a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a>
-  </div>
-
 </div>

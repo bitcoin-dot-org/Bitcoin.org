@@ -1,48 +1,91 @@
+.content_homepage {
+  max-width: @ms16;
+  margin: 0 auto;
+  .card-2;
+  background: @gray-50;
+  border-radius: @ms-5;
+
+}
+
+.content_homepage--wrap {
+  background: url(/img/bitcoin/bg.png) no-repeat center;
+  background-size: cover;
+  border-top-left-radius: @ms-5;
+  border-top-right-radius: @ms-5;
+}
+
 .content_homepage--intro {
-	font-size: @ms2;
-	text-align: center;
-	margin-bottom: @ms4;
+  text-align: center;
+  max-width: @ms13;
+  margin: 0 auto;
+  padding: @ms4 @ms4 @ms5;
+  font-size: @ms1;
+  line-height: @ms2;
+}
+
+.content_homepage--video {
+  padding-bottom: @ms8;
+  padding-top: @ms4;
+  text-align: center;
+  img {
+    width: @ms5;
+  }
+}
+
+.content_homepage--video--button {
+  width: @ms7;
+  height: @ms7;
+  display: inline-block;
+  border-radius: 50%;
+  border: @ms-2 #000 solid;
+  opacity: @light-2;
+  .card-1;
+  img {
+    width: @ms3;
+    padding-top: @ms2 + @mp3;
+    padding-left: @mp8;
+  }
 }
 
 .content_homepage--list {
-	margin: @ms4 auto;
-	display: block;
-	max-width: @ms12;
-	font-size: 0;
-}
-.content_homepage--list li {
-	display: inline-block;
-	margin-bottom: @ms4;
-	width: 100%;
-}
-.content_homepage--list li:last-child {
-	margin-bottom: 0;
+  font-size: 0;
+  background: @gray-100;
+  border-top: 1px @gray-300 solid;
+  border-bottom: 1px @gray-300 solid;
 }
 
-.content_homepage--list span {
-	font-size: @ms0;
-	padding-left: @ms1;
-	vertical-align: -@ms-2 - @mp2;
-	font-weight: 700;
+.content_homepage--item {
+  display: inline-block;
+  font-size: @ms-1;
+  padding: @ms2 0;
+  width: 33.3%;
+  min-height: @ms9;
+  vertical-align: top;
+  text-align: center;
+  border-right: 1px @gray-300 solid;
+  box-sizing: border-box;
+  &:last-child {
+    border-right: 0;
+  }
+  span {
+    display: inline-block;
+    padding: @ms-3 @ms-1;
+  }
 }
-
-.content_homepage--list img {
-	float: left;
-	width: @ms4;
+.content_homepage--image {
+  display: block;
+  width: 100%;
+  img {
+    width: @ms4;
+  }
 }
-
-.content_homepage--description {
-	line-height: @ms2;
-	max-width: @ms16;
-	margin: 0 auto;
+.content_homepage--action--wrap {
+  text-align: center;
+  width: 100%;
 }
 
 .content_homepage--action {
-	padding: 0;
-	background: red;
-	min-height: @ms6;
-	width: @ms12;
-	display: block;
+	display: inline-block;
 	margin: @ms3 auto;
 	text-align: center;
 	border-radius: @ms-5;
@@ -50,86 +93,39 @@
 	background: linear-gradient(@teal-400,@teal-500 85%,@teal-500 90%,@teal-500);
 	.card-2;
 }
-.content_homepage--action--text,
-.content_homepage--action a {
-	font-size: @ms1;
+.content_homepage--action--text {
+  font-size: @ms0;
 	color: @white !important;
 	display: block;
-	padding-top: @ms1;
+  padding: @ms2 @ms1;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
 }
 
+.content_homepage--overview--wrap {
+  text-align: center;
+}
+
 .content_homepage--overview {
-	text-align: center;
-	font-size: @ms0;
-	border-bottom: 1px solid @gray-500;
-	max-width: @ms12;
-	margin: @ms4 auto @ms-1;
-	padding-bottom: @ms-3;
+  background: @gray-200;
+  padding: @ms2 0;
+  border-top: 1px @gray-300 solid;
+  border-bottom: 1px @gray-300 solid;
 }
-
 .content_homepage--overview--list {
-	width: @ms12;
-	margin: 0 auto;
-	font-size: 0;
+  font-size: 0;
+  background: @gray-100;
+  border-bottom-left-radius: @ms-5;
+  border-bottom-right-radius: @ms-5;
 }
-.content_homepage--overview--list a {
-	width: 33%;
-	font-size: @ms0;
-	text-align: center;
-	display: inline-block;
-}
+.content_homepage--overview--item {
+  display: inline-block;
+  border-right: 1px @gray-300 solid;
 
-.content_homepage--video {
-	max-width: @ms16;
-	margin: 0 auto;
-	.card-3;
-	.embed-container { 
-		background: #000;
-		position: relative; 
-		padding-bottom: 56.25%; 
-		height: 0; 
-		overflow: hidden; 
-		max-width: 100%; 
-		} 
-
-	.embed-container iframe,
-	.embed-container object, 
-	.embed-container embed {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%; 
-	}
-}
-
-@media screen and (min-width: 750px ) {
-
-	.content_homepage--list {
-		max-width: @ms16;
-	}
-	.content_homepage--list li {
-		width: 33%;
-		font-size: 0;
-		margin-bottom: 0;
-	}
-	.content_homepage--list img {
-		float: none;
-		font-size: @ms0;
-		display: block;
-		margin: 0 auto @ms1;
-		width: @ms5;
-	}
-	.content_homepage--list span {
-		text-align: center;
-		font-size: @ms0;
-		padding-left: 0;
-		width: 100%;
-		display: block;
-	}
-
-	.content_homepage--overview--list {
-		width: @ms13;
-	}
+  &:last-child {
+    border-right: 0;
+  }
+  padding: @ms1 0;
+  font-size: @ms0;
+  width: 33.3%;
+  box-sizing: border-box;
 }
