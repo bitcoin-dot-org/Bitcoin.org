@@ -17,7 +17,7 @@
 	/*margin: @ms4 (@ms4 + @mp9) @ms4;*/
 	border-radius: @ms-5;
 	display: block;
-	max-width: @ms13;
+	max-width: 100%;
 	.card-1;
 	.clearfix;
 }
@@ -55,12 +55,15 @@
 	border-top: solid 1px @main-5;
 	padding: @ms1 0;
 	text-align: center;
+  background: @gray-100;
+  border-bottom-left-radius: @ms-5;
+  border-bottom-right-radius: @ms-5;
 }
 
 @media screen and (min-width: 1077px ) {
 
 	.content_community--infobox--nonprofit {
-		margin: @ms4 (@ms4 + @mp9) @ms4;
+		margin: @ms4 4% @ms4;
 		max-width: 100%;
 	}
 
@@ -71,9 +74,6 @@
 	}
 	.content_community--endlink {
 		float: left;
-    background: @gray-100;
-    border-bottom-left-radius: @ms-5;
-    border-bottom-right-radius: @ms-5;
 		width: 100%;
 	}
 
