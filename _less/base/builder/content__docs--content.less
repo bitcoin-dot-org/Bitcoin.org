@@ -68,21 +68,22 @@ The markup:
     }
 
     ol {
-      li {
+      > li {
         counter-increment: list;
       }
-      li:before {
+      > li:before {
         content: counter(list);
         font-size: @ms2;
         position: absolute;
         margin-top: @ms-7;
+        margin-left: -@ms4;
         z-index: -1;
         color: @orange-500;
         font-weight: 700;
         border-radius: 3px;
         opacity: @light-2;
       }
-      p {
+      li {
         margin: @ms1 0;
         padding-left: @ms4;
       }
@@ -93,6 +94,7 @@ The markup:
       font-size: @ms4;
       position: absolute;
       margin-top: -@ms-6;
+      margin-left: -@ms4;
       z-index: -1;
       content: "-";
       color: @orange-500;
@@ -100,7 +102,7 @@ The markup:
       border-radius: 3px;
       opacity: @light-2;
       }
-      p {
+      li {
         margin: @ms2 0;
         padding-left: @ms4;
       }
@@ -134,6 +136,7 @@ The markup:
       margin-top: @ms-2;
       margin-bottom: @ms0;
       display: block;
+      font-size: @ms-1;
       max-width: 100%;
       /*word-break: normal;*/
       word-break: keep-all;

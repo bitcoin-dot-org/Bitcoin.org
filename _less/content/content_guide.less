@@ -46,7 +46,7 @@
    	   font-weight: 400;
 	}
 
-	:-ms-input-placeholder {  
+	:-ms-input-placeholder {
 	   color: @gray-500;
    	   font-size: @ms0;
    	   font-family: 'lato';
@@ -97,7 +97,7 @@
 	color: @main-2;
 }
 
-@media screen and (min-width: 650px ) { 
+@media screen and (min-width: 650px ) {
 	.content_guide--header--info {
 		max-width: @ms14 + @ms0 + @ms0 + @mp3;
 		padding: 0;
@@ -109,7 +109,7 @@
 		border-bottom-left-radius: @ms-7;
 		i {
 			font-size: @ms2;
-			margin-top: @ms0 + @mp5; 
+			margin-top: @ms0 + @mp5;
 			display: inline-block;
 		}
 		span {
@@ -123,7 +123,7 @@
 	}
 
 	.content_guide--header--info h3 {
-		
+
 	}
 
 	.content_guide--header--info--icon {
@@ -164,10 +164,17 @@
 	background: @gray-50;
 	margin: 0 auto @ms4;
 	border-radius: @ms-5;
-	max-width: @ms13;
+	max-width: 100%;
 	.card-1;
-	width: @ms12;
 	font-size: @ms-1;
+  @media screen and (min-width: 840px ) {
+  		background: @gray-50;
+  		margin: 0 auto @ms4;
+  		border-radius: @ms-5;
+  		max-width: 38.2%;
+  		float: left;
+  		font-size: @ms-1;
+  }
 
 	#markdown-toc > li > a {
 		max-width: 100%;
@@ -196,7 +203,14 @@
 		padding-left: @ms-3;
 		border-left: 2px @orange-500 solid;
 	}
+}
 
+.content_guide--body .toccontent {
+	max-width: 100%;
+	float: right;
+  @media screen and (min-width: 840px ) {
+  	max-width: 58%;
+  }
 }
 
 
@@ -254,31 +268,14 @@
 	background: @gray-200;
 }
 
-.content_guide--body .toccontent {
-	max-width: 100%;
-	float: right;
-}
-
-@media screen and (min-width: 840px ) { 
-	.content_guide--body .toccontent {
-	max-width: @ms14;
-	}
-
-	.content_guide--body .toc {
-		background: @gray-50;
-		margin: 0 auto @ms4;
-		border-radius: @ms-5;
-		max-width: @ms13;
-		float: left;
-		width: @ms12;
-		font-size: @ms-1;
-		.card-1;
-	}
-}
-
-@media screen and (min-width: 1020px ) { 
-	.content_guide--body .toccontent {
-	max-width: @ms15;
-	
-	}
+#scrollup {
+  width: 48px;
+  height: 48px;
+  background: url(https://cdn3.iconfinder.com/data/icons/iconic-1/32/arrow_up_alt1-48.png) 0 0 no-repeat;
+  text-indent: -9999px;
+  display: none;
+  background-color: #eee;
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
 }
