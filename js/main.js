@@ -59,6 +59,21 @@ $(document).ready(function() {
         }, 500);
     }($(event.target)));
   });
+  
+  // Make tabs work in "Press"
+  $(".content_press--faq--item").on("click", function(e) {
+    e.preventDefault();
+    if (!$(this).is("[aria-displaytab='true']")) {
+      $(this).attr('aria-displaytab', 'true').siblings().removeAttr( 'aria-displaytab' );
+    } else {
+      $(this).attr('aria-displaytab', 'false').siblings().removeAttr( 'aria-displaytab' );
+    }
+    (function scrollToItem(item) {
+      $('html, body').animate({
+            scrollTop: item.offset().top
+        }, 500);
+    }($(event.target)));
+  });
 });
 
 function getWidth(a) {

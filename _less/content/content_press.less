@@ -17,6 +17,12 @@
 	}
 }
 
+.content_press--faq--item[aria-displaytab="true"] {
+  .content_press--faq--item--content {
+    display: inherit;
+  }
+}
+
 .content_press--faq {
 	background: @gray-50;
 	margin: @ms4 auto @ms4;
@@ -64,17 +70,6 @@
 		.content_press--faq--item--title a {
 			border-bottom: 0;
 		}
-	}
-}
-
-.content_press--faq--item--title a:before {
-	content: "Open";
-	float: right;
-	color: @black;
-	opacity: @light-5;
-	display: none;
-	@media screen and (min-width: 750px ) {
-		display: block;
 	}
 }
 
