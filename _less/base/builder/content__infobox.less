@@ -22,7 +22,6 @@ The markup:
   </div>
 */
 
-
 .builder__content__infobox(@classname) {
   .content_@{classname}--boxcontainer {
     margin: @ms4 auto 0;
@@ -31,11 +30,16 @@ The markup:
   }
   .content_@{classname}--infobox {
     background: @gray-50;
-    margin: 0 auto @ms4;
     border-radius: @ms-5;
-    max-width: @ms13;
+    width: 100%;
+    margin: 0 0 @ms4;
     .card-1;
     .clearfix;
+    @media screen and (min-width: 700px ) {
+      float: left;
+      width: 42%;
+      margin: 0 4% @ms4;
+    }
   }
   .content_@{classname}--infobox:last-child {
     margin-bottom: 0;
@@ -117,12 +121,5 @@ The markup:
     border-top-color: @gray-200;
     border-width: @ms0 + @mp1;
     margin-left: -@ms0 + @ms1;
-  }
-  @media screen and (min-width: 1077px ) {
-    .content_@{classname}--infobox {
-      float: left;
-      width: @ms13;
-      margin: 0 (@ms4 + @mp9) @ms4;
-    }
   }
 }
