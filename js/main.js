@@ -44,8 +44,22 @@ $(document).ready(function() {
       $(this).attr('aria-displaytab', 'false').siblings().removeAttr( 'aria-displaytab' );
     }
   });
-});
 
+  // Make tabs work in "FAQ"
+  $(".content_fag--faq--item").on("click", function(e) {
+    e.preventDefault();
+    if (!$(this).is("[aria-displaytab='true']")) {
+      $(this).attr('aria-displaytab', 'true').siblings().removeAttr( 'aria-displaytab' );
+    } else {
+      $(this).attr('aria-displaytab', 'false').siblings().removeAttr( 'aria-displaytab' );
+    }
+    (function scrollToItem(item) {
+      $('html, body').animate({
+            scrollTop: item.offset().top
+        }, 500);
+    }($(event.target)));
+  });
+});
 
 function getWidth(a) {
   // Return the integer value of the computed width of a DOM node.
