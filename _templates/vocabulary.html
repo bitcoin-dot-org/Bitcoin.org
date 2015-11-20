@@ -23,22 +23,22 @@ voc:
   - wallet
 
 ---
-<div class="content_faq">
-  <h1 class="content_faq--title">{% translate pagetitle %}</h1>
-  <h2 class="content_faq--subtitle">{% translate summary %}</h2>
+<div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">{% translate pagetitle %}</h1>
+  <h2 class="content_vocalbulary--subtitle">{% translate summary %}</h2>
 
-  <div class="content_faq--faq">
-    <div class="content_fag--faq--title">
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
       <h2>Vocabulary</h2>
     </div>
-    <div class="content_fag--foq--section">
-      <ul class="content_fag--faq--list">
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
       {% alphab_for v in page.voc %}
-        <li class="content_fag--faq--item">
-          <div class="content_faq--faq--item--title">
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
             <a id="{% translate {{v}} anchor.vocabulary %}">{% translate {{v}} %}</a>
           </div>
-          <div class="content_fag--faq--item--content">
+          <div class="content_vocalbulary--faq--item--content">
             <p>{% translate {{v}}txt %}</p>
           </div>
         </li>
