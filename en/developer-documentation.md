@@ -8,7 +8,7 @@ id: developer-documentation
 title: "Developer Documentation - Bitcoin"
 breadcrumbs:
   - bitcoin
-  - Developer Documentation 
+  - Developer Documentation
 end_of_page: |
   <script src="/js/jquery/jquery-1.11.2.min.js"></script>
   <script src="/js/jquery/jquery-ui.min.js"></script>
@@ -48,8 +48,8 @@ end_of_page: |
     </ul>
   </div>
 
-  <div class="content_documentation--boxcontainer">
-    
+  <div class="content_documentation--boxcontainer grid">
+    <div class="grid-sizer"></div>
     <div class="content_documentation--infobox">
       <h2 id="block_chain" class="content_documentation--infobox--title">Block Chain</h2>
       <div class="content_documentation--infobox--icon">
@@ -60,7 +60,7 @@ end_of_page: |
         <li><a href="/en/developer-reference#block-chain">Block Chain Reference</a></li>
       </ul>
     </div>
-  
+
     <div class="content_documentation--infobox">
       <h2 id="transactions" class="content_documentation--infobox--title">Transactions</h2>
       <div class="content_documentation--infobox--icon">
@@ -161,5 +161,16 @@ end_of_page: |
     </div>
 
   </div>
-
+  <script type="text/javascript" src="/js/isotope.js"></script>
+  <script type="text/javascript">
+    $('.grid').isotope({
+      // set itemSelector so .grid-sizer is not used in layout
+      itemSelector: '.content_documentation--infobox',
+      percentPosition: true,
+      masonry: {
+        // use element for option
+        columnWidth: '.grid-sizer'
+      }
+    })
+  </script>
 </div>

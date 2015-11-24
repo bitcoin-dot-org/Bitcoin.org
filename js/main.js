@@ -6,6 +6,76 @@
 
 "use strict";
 
+$(document).ready(function() {
+  // Open and close info in "choose your Bitcoin wallet page"
+  $('.content_choose-your-wallet--body--item').on('click', function(e) {
+    e.preventDefault();
+
+    // #grid-bitcoincore >> #bitcoincore >> #wallet-bitcoincore
+    var addDisplayIdItem = '#wallet-' + $(this).attr('id').split("-").pop();
+    var selectClass = '.content_choose-your-wallet--body--item';
+    var addDisplayClassItem = '.content_choose-your-wallet--information--item';
+
+    (function makeDefaultState() {
+      $(selectClass).each(function() {
+        $(this).removeClass(".active");
+      });
+      $(addDisplayClassItem).each(function() {
+        $(this).removeAttr("style");
+      });
+    }());
+
+    (function addCssIfClick() {
+      $(addDisplayIdItem).css( "display", "block" );
+    }());
+
+    (function scrollToItem() {
+      $('html, body').animate({
+            scrollTop: $(addDisplayIdItem).offset().top
+        }, 500);
+    }());
+  });
+
+  // Make tabs work in "Choose your Bitcoin wallet"
+  $(".content_choose-your-wallet--information--body--valuebox--item").on("click", function(e) {
+    if (!$(this).is("[aria-displaytab='true']")) {
+      $(this).attr('aria-displaytab', 'true').siblings().removeAttr( 'aria-displaytab' );
+    } else {
+      $(this).attr('aria-displaytab', 'false').siblings().removeAttr( 'aria-displaytab' );
+    }
+  });
+
+  // Make tabs work in "FAQ"
+  $(".content_fag--faq--item").on("click", function(e) {
+    e.preventDefault();
+    if (!$(this).is("[aria-displaytab='true']")) {
+      $(this).attr('aria-displaytab', 'true').siblings().removeAttr( 'aria-displaytab' );
+    } else {
+      $(this).attr('aria-displaytab', 'false').siblings().removeAttr( 'aria-displaytab' );
+    }
+    (function scrollToItem(item) {
+      $('html, body').animate({
+            scrollTop: item.offset().top
+        }, 500);
+    }($(event.target)));
+  });
+  
+  // Make tabs work in "Press"
+  $(".content_press--faq--item").on("click", function(e) {
+    e.preventDefault();
+    if (!$(this).is("[aria-displaytab='true']")) {
+      $(this).attr('aria-displaytab', 'true').siblings().removeAttr( 'aria-displaytab' );
+    } else {
+      $(this).attr('aria-displaytab', 'false').siblings().removeAttr( 'aria-displaytab' );
+    }
+    (function scrollToItem(item) {
+      $('html, body').animate({
+            scrollTop: item.offset().top
+        }, 500);
+    }($(event.target)));
+  });
+});
+
 function getWidth(a) {
   // Return the integer value of the computed width of a DOM node.
   // Ex. getWidth(node);

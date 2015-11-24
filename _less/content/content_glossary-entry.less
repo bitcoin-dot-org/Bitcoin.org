@@ -1,0 +1,225 @@
+
+.builder__content__title(glossary-entry);
+
+.content_glossary-entry--header--menu i {
+	display: none;
+}
+
+.content_glossary-entry--search {
+	text-align: center;
+	margin: @ms1 0;
+	input {
+		width: @ms11;
+		height: @ms4;
+		font-size: @ms-1;
+		border-radius: @ms-5;
+		border: 1px @main-5 solid;
+		font-family: 'lato';
+		color: @main-1;
+		background: @gray-50;
+		padding: 0 @ms0;
+		&:focus {
+			outline: none;
+		}
+
+	}
+	::-webkit-input-placeholder {
+	   color: @main-2;
+	   font-size: @ms-1;
+	   font-family: 'lato';
+	   font-weight: 400;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: @gray-500;
+   	   font-size: @ms0;
+   	   font-family: 'lato';
+   	   font-weight: 400;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: @gray-500;
+   	   font-size: @ms0;
+   	   font-family: 'lato';
+   	   font-weight: 400;
+	}
+
+	:-ms-input-placeholder {
+	   color: @gray-500;
+   	   font-size: @ms0;
+   	   font-family: 'lato';
+   	   font-weight: 400;
+	}
+}
+
+.content_glossary-entry--header--menu {
+	text-align: center;
+}
+
+.content_glossary-entry--header--info {
+	text-align: center;
+	margin: @ms2 auto @ms4;
+	border-radius: @ms-5;
+	max-width: @ms14;
+	border: 1px @orange-500 solid;
+	padding-right: @ms-3;
+	height: @ms6;
+	.clearfix;
+}
+.content_glossary-entry--header--info--icon {
+	float: left;
+	width: @ms6;
+	height: @ms6;
+	background: @orange-500;
+	line-height: @ms6;
+	margin-right: @ms-3;
+	i {
+		display: none;
+	}
+}
+.content_glossary-entry--header--info h3 {
+	width: 100%;
+	line-height: @ms0;
+	padding-top: @ms-3;
+	text-align: left;
+	font-size: @ms-1;
+	border-radius: @ms-5;
+}
+.content_glossary-entry--header--menu li {
+	display: inline-block;
+	padding: @ms-3 @ms-2;
+	font-size: @ms0;
+	text-align: center;
+}
+.content_glossary-entry--header--menu--item--active a {
+	color: @main-2;
+}
+
+@media screen and (min-width: 650px ) {
+	.content_glossary-entry--header--info {
+		max-width: @ms14 + @ms0 + @ms0 + @mp3;
+		padding: 0;
+		color: @main-2;
+	}
+	.content_glossary-entry--header--info--icon {
+		line-height: @ms0;
+		border-top-left-radius: @ms-7;
+		border-bottom-left-radius: @ms-7;
+		i {
+			font-size: @ms2;
+			margin-top: @ms0 + @mp5;
+			display: inline-block;
+		}
+		span {
+			display: none;
+		}
+	}
+	.content_glossary-entry--header--info--text {
+		float: left;
+		width: @ms12;
+		margin: @ms-3 0 0 @ms4;
+	}
+
+	.content_glossary-entry--header--info h3 {
+
+	}
+
+	.content_glossary-entry--header--info--icon {
+		padding: 0 @ms0;
+	}
+	.content_glossary-entry--search input {
+		width: @ms14;
+	}
+	.content_glossary-entry--header--menu li {
+		padding: 0;
+		margin: @ms-3 0;
+	}
+	.content_glossary-entry--header--menu i {
+		font-size: @ms-1;
+		padding-right: @ms-4;
+		display: inline;
+	}
+	.content_glossary-entry--header--menu li a {
+		text-align: center;
+		padding: @ms-2 @ms0;
+		margin: 0 (@ms-2 + @mp1);
+		font-size: @ms-1;
+		align-items: center;
+		border: 1px solid @orange-500;
+		border-radius: @ms-5;
+		text-decoration: none;
+		color: @main-2;
+	}
+	.content_glossary-entry--header--menu--item--active a {
+		background: @orange-500;
+	}
+}
+.content_glossary-entry--markdown {
+  .card-1;
+  background: @gray-50;
+  margin: @ms5 auto 0;
+  line-height: @ms1;
+  max-width: @ms16;
+  border-radius: @ms-5;
+  padding-bottom: @ms4;
+  .subhead-links {
+    text-align: center;
+    background: @gray-100;
+    border-top-left-radius: @ms-5;
+    border-top-right-radius: @ms-5;
+    border-bottom: 1px @gray-300 solid;
+    color: @main-5;
+    a {
+      display: inline-block;
+      padding: @ms0;
+      @media screen and (min-width: 500px ) {
+        padding: @ms2;
+      }
+    }
+  }
+  h1 {
+    padding: @ms3 @ms2 0;
+    text-align: center;
+    font-size: @ms1;
+  }
+  div.notice {
+    text-align: center;
+    padding: @ms-3 0 @ms3;
+  }
+  h2 {
+    padding: 0 @ms2 @ms0;
+    font-size: @ms1;
+    @media screen and (min-width: 500px ) {
+      padding: 0 @ms6 @ms0;
+    }
+  }
+  p {
+    padding: 0 @ms2 @ms0;
+    @media screen and (min-width: 500px ) {
+      padding: 0 @ms6 @ms0;
+    }
+  }
+  h3 {
+    padding: @ms0 @ms2 @ms0;
+    font-size: @ms0;
+    font-weight: 600;
+    @media screen and (min-width: 500px ) {
+      padding: 0 @ms6 @ms0;
+    }
+  }
+  ul {
+    padding: 0 @ms2;
+    @media screen and (min-width: 500px ) {
+      padding: 0 @ms6 @ms0;
+    }
+    li {
+      padding-left: @ms2;
+      margin-left: @ms2;
+      margin-bottom: @ms-3;
+      border-left: 1px @orange-500 solid;
+      p {
+        padding: 0;
+      }
+    }
+  }
+}

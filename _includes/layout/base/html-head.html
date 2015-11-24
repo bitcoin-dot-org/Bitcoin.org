@@ -14,7 +14,21 @@ http://opensource.org/licenses/MIT.
 <!--[if IE 8]>{% lesscss ie8.less %}<![endif]-->
 {% if page.lang == 'ar' or page.lang == 'fa' %}{% lesscss rtl.less %}{% endif %}
 {% if page.lang == 'bg' or page.lang == 'el' or page.lang == 'ko' or page.lang == 'hi' or page.lang == 'pl' or page.lang == 'sl' or page.lang == 'ro' or page.lang == 'ru' or page.lang == 'tr' or page.lang == 'uk' or page.lang == 'zh_CN' or page.lang == 'zh_TW' %}{% lesscss sans.less %}{% endif %}
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 {% if page.id != 'download' %}<script type="text/javascript" src="/js/main.js"></script>{% endif %}
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>

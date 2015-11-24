@@ -98,3 +98,23 @@ of the following file. -->
 
 </div>
 </div>
+<a href="#" id="scrollup">Scroll</a>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+          $('#scrollup').fadeIn();
+      } else {
+          $('#scrollup').fadeOut();
+      }
+  });
+
+  $('#scrollup').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 400);
+      return false;
+  });
+
+});
+</script>
+</div>

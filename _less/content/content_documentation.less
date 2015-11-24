@@ -1,6 +1,9 @@
 .builder__content__title(documentation);
 .builder__content__infobox(documentation);
 
+.content_documentation--header--menu i {
+  display: none;
+}
 .content_documentation--search {
 	text-align: center;
 	margin: @ms1 0;
@@ -40,7 +43,7 @@
    	   font-weight: 400;
 	}
 
-	:-ms-input-placeholder {  
+	:-ms-input-placeholder {
 	   color: @gray-500;
    	   font-size: @ms0;
    	   font-family: 'lato';
@@ -60,7 +63,7 @@
 	text-align: center;
 }
 
-@media screen and (min-width: 650px ) { 
+@media screen and (min-width: 650px ) {
 	.content_documentation--search input {
 		width: @ms14;
 	}
@@ -71,6 +74,7 @@
 	.content_documentation--header--menu i {
 		font-size: @ms-1;
 		padding-right: @ms-4;
+    display: inline-block;
 	}
 	.content_documentation--header--menu li a {
 		text-align: center;

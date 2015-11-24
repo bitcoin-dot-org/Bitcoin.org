@@ -369,7 +369,7 @@ can be used to require multiple signatures before a UTXO can be spent.
 
 In multisig pubkey scripts, called m-of-n, *m* is the *minimum* number of signatures
 which must match a public key; *n* is the *number* of public keys being
-provided. Both *m* and *n* should be op codes `OP_1` through `OP_16`,
+provided. Both *m* and *n* should be opcodes `OP_1` through `OP_16`,
 corresponding to the number desired.
 
 Because of an off-by-one error in the original Bitcoin implementation
@@ -454,7 +454,7 @@ in a P2SH output, the network sees only the hash, so it will accept the
 output as valid no matter what the redeem script says.
 This allows payment to non-standard scripts, and as of Bitcoin Core
 0.11, almost all valid redeem scripts can be spent. The exception is
-scripts that use unassigned [NOP op codes][]; these op codes are
+scripts that use unassigned [NOP opcodes][]; these opcodes are
 reserved for future soft forks and can only be relayed or mined by nodes
 that don't follow the standard mempool policy.
 
@@ -481,8 +481,8 @@ conditions:
   currently non-standard.
 
 * The transaction's signature script must only push data to the script
-  evaluation stack. It cannot push new OP codes, with the exception of
-  OP codes which solely push data to the stack.
+  evaluation stack. It cannot push new opcodes, with the exception of
+  opcodes which solely push data to the stack.
 
 * The transaction must not include any outputs which receive fewer than
   1/3 as many satoshis as it would take to spend it in a typical input.

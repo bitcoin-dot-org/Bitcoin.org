@@ -1,0 +1,370 @@
+.builder__content__title(choose-your-wallet);
+
+.content_choose-your-wallet {
+  .clearfix;
+}
+.content_choose-your-wallet--container {
+  background: @gray-50;
+  margin: @ms4 auto @ms4;
+  border-radius: @ms-5;
+  width: 100%;
+  float: left;
+  .card-1;
+  .clearfix;
+  @media screen and (min-width: 750px ) {
+    width: 50%;
+  }
+}
+.content_choose-your-wallet--information {
+  width: 100%;
+  float: right;
+  margin: 0 auto @ms4;
+  border-radius: @ms-5;
+  .card-1;
+  @media screen and (min-width: 750px ) {
+    margin: @ms4 auto @ms4;
+    width: 45%;
+  }
+}
+
+.content_choose-your-wallet--header {
+  font-size: 0;
+  background: @gray-100;
+  border-top-left-radius: @ms-5;
+  border-top-right-radius: @ms-5;
+}
+
+.content_choose-your-wallet--item {
+  display: inline-block;
+  cursor:pointer;
+  vertical-align: top;
+  width: 25%;
+  text-align: center;
+  font-size: @ms-1;
+  box-sizing: border-box;
+  border-left: 1px @gray-300 solid;
+  border-bottom: 1px @gray-300 solid;
+
+  &:first-child {
+    border-left: 0;
+  }
+  > a {
+    width: 100%;
+    display: block;
+    padding: @ms0 0;
+  }
+  ul {
+    display: none;
+  }
+}
+
+.content_choose-your-wallet--item:hover {
+    .content_choose-your-wallet--sublist {
+      display: block;
+      position: absolute;
+      height: @ms2;
+      font-size: 0;
+      padding-top: @mp1;
+      margin-left: -1px;
+    }
+    .content_choose-your-wallet--sublist[aria-firstlist="true"] {
+      .content_choose-your-wallet--subitem:first-child {
+        margin-left: 1px;
+        border-left: 0;
+      }
+    }
+    .content_choose-your-wallet--subitem {
+      display: inline-block;
+      font-size: @ms-1;
+      background: @gray-200;
+      border-bottom: 1px @gray-300 solid;
+      border-left: 1px @gray-300 solid;
+      cursor:pointer;
+      // height: @ms2;
+      a {
+        padding: @ms-1 @ms-2;
+        display: block;
+        @media screen and (min-width: 600px ) {
+          padding: @ms-1 @ms2;
+        }
+
+      }
+      &:last-child {
+        border-right: 1px @gray-300 solid;
+      }
+
+
+      vertical-align: top;
+      top: 100px;
+      left: 0;
+    }
+}
+
+.content_choose-your-wallet--body {
+  margin: @ms5 @ms0 @ms2;
+  .clearfix;
+  @media screen and (min-width: 750px ) {
+    margin: @ms5 @ms1 @ms2;
+  }
+}
+.content_choose-your-wallet--body--wrap {
+  font-size: 0;
+  transition: height 0.5s;
+  .clearfix;
+}
+.content_choose-your-wallet--body--item {
+  font-size: @ms0;
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  margin-bottom: @ms3;
+  &:last-child {
+    margin-bottom: @ms5;
+  }
+}
+.content_choose-your-wallet--body--item,
+.grid-sizer {
+  width: 50%;
+}
+.content_choose-your-wallet--body--item--wrap {
+  border: 1px @gray-300 solid;
+  background: @gray-100;
+  border-radius: @ms-5;
+  display: block;
+  width: 60%;
+  margin: 0 auto 0;
+  box-sizing: border-box;
+
+  img {
+    height: @ms7;
+  }
+  span {
+    max-width: 100%;
+    display: block;
+    padding-bottom: @ms0;
+  }
+}
+
+.content_choose-your-wallet--information--item {
+  width: 100%;
+  background: @gray-50;
+  min-height: @ms12;
+  display: none;
+  // @media screen and (min-width: 700px ) {
+  //  padding-bottom: @ms4;
+  // }
+  text-align: center;
+  border-radius: @ms-5;
+  .clearfix;
+}
+.content_choose-your-wallet--information--header {
+  background: @gray-100;
+  border-top: 1px @gray-300 solid;
+  border-top-left-radius: @ms-5;
+  border-top-right-radius: @ms-5;
+  .clearfix;
+  // @media screen and (min-width: 700px ) {
+  // float: left;
+  // width: 50%;
+  // border-bottom: 1px @gray-300 solid;
+  // }
+}
+.content_choose-your-wallet--information--header--title {
+  font-size: @ms1;
+  text-align: left;
+  opacity: @light-2;
+  display: block;
+  float: left;
+  width: 50%;
+  line-height: @ms5;
+  padding-left: @ms2;
+  box-sizing: border-box;
+  min-height: @ms5;
+}
+.content_choose-your-wallet--information--header--list {
+  float: right;
+  width: 50%;
+  text-align: right;
+  padding-right: @ms0;
+  box-sizing: border-box;
+}
+.content_choose-your-wallet--information--header--item {
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  width: @ms4;
+  height: @ms5;
+  line-height: @ms5;
+  img {
+
+  }
+}
+
+.content_choose-your-wallet--information--buttonarea {
+  width: 100%;
+  display: block;
+  min-height: 0;
+  font-size: 0;
+  border-top: 1px @gray-300 solid;
+  border-bottom: 1px @gray-300 solid;
+  // @media screen and (min-width: 700px ) {
+  //   float: left;
+  //   width: 50%;
+  //   min-height: @ms5;
+  // }
+}
+.content_choose-your-wallet--information--button {
+  padding: @ms0 0;
+  text-align: center;
+  background: @gray-100;
+  display: inline-block;
+  font-size: @ms0;
+  width: 50%;
+  box-sizing: border-box;
+  &:last-child {
+    border-left: 1px @gray-300 solid;
+    color: @teal-500;
+  }
+  // @media screen and (min-width: 700px ) {
+  // min-height: @ms5;
+  // padding: 0;
+  // line-height: @ms5;
+  // border-left: 1px @gray-300 solid;
+  //   &:last-child {
+  //     border-right: 0;
+  //     color: @teal-500;
+  //   }
+  // }
+}
+
+.content_choose-your-wallet--information--body {
+  max-width: @ms13;
+  display: inline-block;
+  text-align: left;
+  box-sizing: border-box;
+  color: #212121;
+  line-height: @ms1;
+  vertical-align: top;
+  padding: @ms4 @ms2 0;
+
+}
+.content_choose-your-wallet--information {
+  .clearfix;
+}
+.content_choose-your-wallet--information--screenshot {
+  text-align: center;
+  display: inline-block;
+  margin: @ms4 0 @ms4;
+  max-width: @ms12;
+  background: @gray-50;
+  border: @ms0 @gray-50 solid;
+  border-radius: @ms-5;
+  .card-1;
+  img {
+    max-width: 100%;
+
+  }
+  @media screen and (min-width: 600px ) {
+
+  }
+}
+
+.content_choose-your-wallet--information--body--valuebox {
+  margin: @ms4 0 @ms0;
+  font-size: @ms-1;
+  border-radius: @ms-5;
+  .card-1;
+  @media screen and (min-width: 600px ) {
+    margin-top: @ms1;
+  }
+}
+
+.content_choose-your-wallet--information--body--valuebox--item {
+  // background: @gray-200;
+  h3 {
+    padding: @ms0 @ms2;
+    font-size: @ms-1;
+    color: @teal-500;
+    background: @gray-100;
+    border-bottom: 1px @gray-300 solid;
+    cursor: pointer;
+  }
+  p {
+    display: none;
+    padding: @ms0 @ms2;
+    background: @gray-50;
+    line-height: @ms1;
+  }
+
+  &[aria-displaytab="true"] {
+    border-bottom: @gray-300 1px solid;
+    p {
+      display: block;
+    }
+    h3 {
+      border-bottom: @gray-300 1px solid;
+      border-radius: 0;
+    }
+
+  }
+}
+.content_choose-your-wallet--information--body--valuebox--item:first-child {
+  h3 {
+    border-top-left-radius: @ms-5;
+    border-top-right-radius: @ms-5;
+  }
+}
+
+.content_choose-your-wallet--information--body--valuebox--item {
+  > div > h3 {
+    border-bottom-left-radius: @ms-5;
+    border-bottom-right-radius: @ms-5;
+    border-bottom: 0;
+  }
+  div:last-child {
+    p:last-child {
+      border-bottom-left-radius: @ms-5;
+      border-bottom-right-radius: @ms-5;
+    }
+  }
+}
+
+.content_choose-your-wallet--walletsdisclaimer {
+  background: @gray-100;
+  padding: @ms3 @ms5 @ms4;
+  border-top: 1px @gray-300 solid;
+  border-bottom-left-radius: @ms-5;
+  border-bottom-right-radius: @ms-5;
+  img {
+    width: @ms3;
+    margin: 0 auto;
+    display: block;
+  }
+  h2 {
+    text-align: center;
+    padding: @ms-3 0;
+    font-weight: 600;
+  }
+  p {
+    line-height: @ms1;
+    color: @main-2;
+  }
+}
+
+.content_choose-your-wallet--information--button[href="https://coinbase.com"],
+.content_choose-your-wallet--information--button[href="https://coinkite.com"],
+.content_choose-your-wallet--information--button[href="https://circle.com/"],
+.content_choose-your-wallet--information--button[href="https://coinapult.com/"],
+.content_choose-your-wallet--information--button[href="https://xapo.com/"] {
+      width: 100%;
+}
+.content_choose-your-wallet--information--body--valuebox--item.checkgood h3{color: @green-600}
+.content_choose-your-wallet--information--body--valuebox--item.checkpass h3{color: @green-600}
+.content_choose-your-wallet--information--body--valuebox--item.checkneutral h3{color: @gray-700}
+.content_choose-your-wallet--information--body--valuebox--item.checkfail h3{color: @orange-500}
+
+.content_choose-your-wallet--information--body--valuebox--item div.checkgood h3{color: @green-600}
+.content_choose-your-wallet--information--body--valuebox--item div.checkpass h3{color: @green-600}
+.content_choose-your-wallet--information--body--valuebox--item div.checkneutral h3{color: @gray-700}
+.content_choose-your-wallet--information--body--valuebox--item div.checkfail h3{color: @orange-500}

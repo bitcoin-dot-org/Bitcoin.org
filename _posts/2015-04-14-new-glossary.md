@@ -22,7 +22,7 @@ Bitcoin Foundation][], we've added two major new features to the
 A new [glossary section][] has been added to the Bitcoin.org Developer
 Documentation, and with it comes a fully-Javascript search engine that
 helps you look up glossary entries, Bitcoin Core RPCs, Bitcoin BIPs,
-Script-language op codes, and Bitcoin P2P protocol messages.
+Script-language opcodes, and Bitcoin P2P protocol messages.
 
 ## Developer glossary main page
 
@@ -69,7 +69,7 @@ they appear in the search:
 
 * Glossary entries (Bitcoin.org)
 * RPCs  (Bitcoin.org)
-* Op codes (Bitcoin Wiki)
+* Opcodes (Bitcoin Wiki)
 * BIPs (just notable and non-withdrawn BIPs; GitHub.com BIPs repo)
 * Bitcoin P2P protocol messages (Bitcoin.org)
 

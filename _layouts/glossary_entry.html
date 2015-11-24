@@ -16,15 +16,46 @@ end_of_page: |
 ---
 <link rel="stylesheet" href="/css/jquery-ui.min.css">
 
+<div class="content_glossary-entry">
+<link rel="stylesheet" href="/css/jquery-ui.min.css">
+
+<div class="content_glossary-entry--header">
+  <h1 class="content_glossary-entry--title" id="developer-documentation">Developer Documentation</h1>
+  <h2 class="content_glossary-entry--subtitle">Find useful resources, guides and reference material for developers.</h2>
+  <div class="content_glossary-entry--search">
+    <input id="glossary_term" class="glossary_term" placeholder="Search">
+  </div>
+  <ul class="content_glossary-entry--header--menu">
+    <li class="content_glossary-entry--header--item">
+      <a href="/en/developer-guide">
+        <i class="fa fa-info-circle fa-2x"></i><span>Guide</span>
+      </a>
+    </li>
+    <li class="content_glossary-entry--header--item">
+      <a href="/en/developer-reference">
+        <i class="fa fa-book fa-2x"></i><span>Reference</span>
+      </a>
+    </li>
+    <li class="content_glossary-entry--header--item">
+      <a href="/en/developer-examples">
+        <i class="fa fa-code fa-2x"></i><span>Examples</span>
+      </a>
+    </li>
+    <li class="content_glossary-entry--header--menu--item--active">
+      <a href="/en/developer-glossary">
+        <i class="fa fa-font fa-2x"></i><span>Glossary</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="content_glossary-entry--markdown">
 {% capture filename %}{{page.filename}}{% endcapture %}
 {% include helpers/subhead-links.md %}
-<br>
 
 {% capture markdown_content %}
 
 # {{page.required.title_max_40_characters_no_formatting}}
-
-<input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
 
 <div markdown="block" class="notice">
 <span markdown="span">This definition comes from the [technical glossary](/en/developer-glossary).</span>
@@ -68,3 +99,5 @@ end_of_page: |
 {{site.glossary_links}}
 {% endcapture %}
 {{ markdown_content | markdownify }}{% comment %}Why is this hack necessary?  I don't get why this template can't be natively rendered as markdown like the releases template.{% endcomment %}
+</div>
+</div>

@@ -36,7 +36,7 @@ you need to reverse the byte order:
 (Note: hex representation uses two characters to display each byte of
 data, which is why the reversed string looks somewhat mangled.)
 
-The rational for the reversal is unknown, but it likely stems from
+The rationale for the reversal is unknown, but it likely stems from
 Bitcoin's use of hash digests (which are byte arrays in C++) as integers
 for the purpose of determining whether the hash is below the network
 target. Whatever the reason for reversing header hashes, the reversal
