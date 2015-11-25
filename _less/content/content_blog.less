@@ -2,7 +2,7 @@
 .builder__content__infobox(blog);
 
 .content_blog--infobox {
-  @media screen and (min-width: 1077px ) { 
+  @media screen and (min-width: 1077px ) {
       float: none;
       width: @ms14;
       margin: 0 auto;
@@ -21,4 +21,15 @@
     display: block;
     color: @main-2;
     font-size: @ms-1;
+}
+
+.content_blog--infobox--title:after,
+.content_blog--infobox--title:before {
+  display: none;
+}
+
+.content_blog--subtitle {
+  img {
+    width: @ms0;
+  }
 }
