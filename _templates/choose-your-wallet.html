@@ -790,7 +790,7 @@ wallets:
         {% for wallet in page.wallets %}
           {% for wallet in wallet %}
             {% if wallet[1].platform.mobile %}{% assign platform = wallet[1].platform.mobile %}{% elsif wallet[1].platform.desktop %}{% assign platform = wallet[1].platform.desktop %}{% elsif wallet[1].platform.hardware %}{% assign platform = wallet[1].platform.hardware %}{% else %}{% assign platform = wallet[1].platform.web %}{% endif %}
-          <a href="#" id="grid-{{ wallet[0] }}" class="content_choose-your-wallet--body--item {{ wallet[1].compat }}">
+          <a href="" id="grid-{{ wallet[0] }}" class="content_choose-your-wallet--body--item {{ wallet[1].compat }}">
             <div class="content_choose-your-wallet--body--item--wrap">
               <img src="/img/wallet/{{ wallet[0] }}.png" alt="{{ wallet[1].title }}" />
               <span>{{ wallet[1].titleshort }}</span>
@@ -889,6 +889,11 @@ wallets:
           columnWidth: '.grid-sizer'
         },
     });
+
+    $grid.isotope({
+        filter: '.desktop'
+    });
+
     // bind filter button click
     $('.filters-button-group').on( 'click', 'a', function() {
       var filterValue = $( this ).attr('data-filter');

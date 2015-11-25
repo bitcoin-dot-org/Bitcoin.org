@@ -7,18 +7,23 @@
 "use strict";
 
 $(document).ready(function() {
+
+  (function showBitcoinWalletsAfterJsLoad() {
+      $('.content_choose-your-wallet--information--item').first().css( "display", "block" );
+      $('#grid-bitcoincore').addClass("active");
+  }());
   // Open and close info in "choose your Bitcoin wallet page"
   $('.content_choose-your-wallet--body--item').on('click', function(e) {
     e.preventDefault();
 
-    // #grid-bitcoincore >> #bitcoincore >> #wallet-bitcoincore
+    var addDisplayClassItem = '.content_choose-your-wallet--information--item';
     var addDisplayIdItem = '#wallet-' + $(this).attr('id').split("-").pop();
     var selectClass = '.content_choose-your-wallet--body--item';
-    var addDisplayClassItem = '.content_choose-your-wallet--information--item';
+    var selectId = '#' + $(this).attr('id');
 
     (function makeDefaultState() {
       $(selectClass).each(function() {
-        $(this).removeClass(".active");
+        $(this).removeClass("active");
       });
       $(addDisplayClassItem).each(function() {
         $(this).removeAttr("style");
@@ -27,6 +32,7 @@ $(document).ready(function() {
 
     (function addCssIfClick() {
       $(addDisplayIdItem).css( "display", "block" );
+      $(selectId).addClass("active");
     }());
 
     (function scrollToItem() {
@@ -59,7 +65,7 @@ $(document).ready(function() {
         }, 500);
     }($(event.target)));
   });
-  
+
   // Make tabs work in "Press"
   $(".content_press--faq--item").on("click", function(e) {
     e.preventDefault();
