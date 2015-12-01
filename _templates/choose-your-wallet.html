@@ -31,6 +31,31 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkpassprivacydisclosurefullnode"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- bitcoinljr:
+    title: "Bitcoin LJR"
+    titleshort: "Bitcoin<br>LJR"
+    compat: "desktop windows mac linux"
+    level: 1
+    platform:
+      desktop:
+        text: "walletbitcoinljr"
+        link: "http://luke.dashjr.org/programs/bitcoin-ljr/"
+        source: "https://github.com/luke-jr/bitcoin"
+        screenshot: "bitcoincore.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkgoodvalidationfullnode"
+          transparency: "checkgoodtransparencydeterministic"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkgoodprivacyimproved"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkpassprivacydisclosurefullnode"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - multibithd:
     title: "MultiBit HD"
     titleshort: "MultiBit HD"

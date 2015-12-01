@@ -170,6 +170,7 @@ en:
     walletcathardware: "Hardware"
     walletcatweb: "Web"
     walletbitcoinqt: "Bitcoin Core is a full Bitcoin client and builds the backbone of the network. It offers high levels of security, privacy, and stability. However, it has fewer features and it takes a lot of space and memory."
+    walletbitcoinljr: "Bitcoin LJR is a full Bitcoin client and builds the backbone of the network. It offers high levels of security, privacy, and stability. It includes more advanced features than Bitcoin Core, but they are not as well-tested. It uses a lot of space and memory."
     walletmultibithd: "MultiBit HD is a lightweight client that is fast and easy to use. With integrated Trezor and Tor support, it synchronizes directly with the Bitcoin network. The extensive help makes it an excellent choice for non-technical users."
     walletarmory: "Armory is an advanced Bitcoin client that expands its features for Bitcoin power users. It offers many backup and encryption features, and it allows secure cold-storage on offline computers."
     walletelectrum: "Electrum's focus is speed and simplicity, with low resource usage. It uses remote servers that handle the most complicated parts of the Bitcoin system, and it allows you to recover your wallet from a secret phrase."
