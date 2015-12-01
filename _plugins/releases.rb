@@ -82,7 +82,7 @@ module Jekyll
 
       #generate each release based on templates
       Dir.foreach('_releases') do |file|
-        next if file == '.' or file == '..'
+        next if file == '.' or file == '..' or file.end_with? '~'
         lang = 'en'
         src = file
         srcdir = '_releases'

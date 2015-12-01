@@ -115,7 +115,7 @@ module Jekyll
 
       #Generate each definition page based on templates
       Dir.foreach(glossary_dir) do |file|
-        next if file == '.' or file == '..'
+        next if file == '.' or file == '..' or file.end_with? '~'
         lang = 'en'
         src = file
         srcdir = '_data/glossary/en'

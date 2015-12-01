@@ -11,7 +11,7 @@
 #{% endalphab_for %}
 
 require 'yaml'
-require 'ffi-icu'
+#require 'ffi-icu'
 
 module Jekyll
 
@@ -22,7 +22,7 @@ module Jekyll
       if !site.has_key?("loc")
         site['loc'] = {}
         Dir.foreach('_translations') do |file|
-          next if file == '.' or file == '..' or file == 'COPYING'
+          next if file == '.' or file == '..' or file.end_with? '~' or file == 'COPYING'
           lang=file.split('.')[0]
           site['loc'][lang] = YAML.load_file('_translations/'+file)[lang]
         end
@@ -42,7 +42,7 @@ module Jekyll
         assoc[key] = t
       end
       #sort translated array using appropriate collation
-      translated = ICU::Collation.collate(lang, translated)
+      #translated = ICU::Collation.collate(lang, translated)
       #recreate collection with new ordering
       sorted_collection = []
       for va in translated do

@@ -27,7 +27,7 @@ module Jekyll
       enabled = ENV['ENABLED_LANGS'];
       enabled = enabled.split(' ') if !enabled.nil?
       Dir.foreach('_translations') do |file|
-        next if file == '.' or file == '..' or file == 'COPYING'
+        next if file == '.' or file == '..' or file.end_with? '~' or file == 'COPYING'
         lang=file.split('.')[0]
         #Ignore lang if disabled
         if lang != 'en' and !enabled.nil? and !enabled.include?(lang)
@@ -73,14 +73,14 @@ module Jekyll
         end
         #Add alerts pages
         Dir.foreach('_alerts') do |file|
-          next if file == '.' or file == '..'
+          next if file == '.' or file == '..' or file.end_with? '~'
           sitemap.puts '<url>'
           sitemap.puts '  <loc>https://bitcoin.org/en/alert/'+file.gsub('.html','')+'</loc>'
           sitemap.puts '</url>'
         end
         #Add releases pages
         Dir.foreach('_releases') do |file|
-          next if file == '.' or file == '..'
+          next if file == '.' or file == '..' or file.end_with? '~'
           file = file.split('-')
           next if file.length < 4
           file.shift()

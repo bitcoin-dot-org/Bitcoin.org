@@ -35,7 +35,7 @@ module Jekyll
       if !site.has_key?("loc")
         site['loc'] = {}
         Dir.foreach('_translations') do |file|
-          next if file == '.' or file == '..'
+          next if file == '.' or file == '..' or file.end_with? '~'
           lang=file.split('.')[0]
           site['loc'][lang] = YAML.load_file('_translations/'+file)[lang]
         end

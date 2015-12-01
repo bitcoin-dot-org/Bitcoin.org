@@ -28,7 +28,7 @@ dirs = [ '_templates', '_layouts' ]
 
 dirs.each do |dir|
   Dir.foreach(dir) do |file|
-    next if file == '.' or file == '..'
+    next if file == '.' or file == '..' or file.end_with? '~'
     contents = File.read(dir + '/' + file)
     # Drop HTML code applied to current language only ( until next {% when / else / endcase %} statement )
     contents.gsub!(Regexp.new("{% when '" + lang + "' %}((?!{% endcase %})(?!{% else %}).)*?{% when", Regexp::MULTILINE),'{% when')
