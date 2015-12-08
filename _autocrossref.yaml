@@ -309,6 +309,9 @@ CVE-2012-2459:
 '`ping` RPC': rpc ping
 '`sendfrom`': rpc sendfrom
 '`sendfrom` RPC': rpc sendfrom
+'`sendheaders`': sendheaders message
+'`sendheaders` message': sendheaders message
+'`sendheaders` messages': sendheaders message
 '`sendmany`': rpc sendmany
 '`sendmany` RPC': rpc sendmany
 '`sendrawtransaction`': rpc sendrawtransaction

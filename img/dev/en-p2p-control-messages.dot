@@ -17,6 +17,7 @@ getaddr -> addr;
 filterload -> filteradd;
 filterload -> filterclear;
 alert;
+sendheaders;
 
 ERROR [ style = "invis" ];
 ERROR -> reject [ style = "invis" ];
