@@ -35,24 +35,12 @@ consider this the best possible continuation of our efforts.
 - [Johnson Lau](https://github.com/jl2012)
 - [Jonas Schnelli](https://github.com/jonasschnelli)
 - [Lawrence Nahum](https://github.com/greenaddress)
+- [Matt Corallo](https://github.com/TheBlueMatt)
 - [Pavel Janik](https://github.com/paveljanik)
 - [Pieter Wuille](https://github.com/sipa)
 - [Rodolfo Novak](https://github.com/nvk)
 - [Theymos](https://github.com/theymos)
 - [Thomas Kerin](https://github.com/afk11)
 - [Wladimir J. van der Laan](https://github.com/laanwj)
-
-{% comment %}
-Earlier statement:
-*[Capacity increases for the Bitcoin system][1]* is a plan I can fully
-support.  I publicly sign on to this proposal so we can stop
-bikeshedding, start implementing, and move forward.
-
-Signed earlier statement but not (yet) later statement:
-- maaku
-- BlueMatt
-
-{% endcomment %}
-
 
 [1]: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011865.html
