@@ -1,5 +1,9 @@
 ![Build Status](https://travis-ci.org/bitcoin-dot-org/bitcoin.org.svg?branch=master)
 
+## Code of Conduct
+
+Please see CONDUCT.md.
+
 ## How To Participate
 
 *Bitcoin.org needs volunteers like you!*  Here are some ways you can help:
