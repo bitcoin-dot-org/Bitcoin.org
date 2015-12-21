@@ -30,6 +30,7 @@ consider this the best possible continuation of our efforts.
 - [Craig Watkins](https://github.com/crwatkins)
 - [Daniel Kraft](https://github.com/domob1812)
 - [David A. Harding](https://github.com/harding)
+- [David Vorick](https://github.com/DavidVorick)
 - [Douglas Huff](https://github.com/jrmithdobbs)
 - [Eric Lombrozo](https://github.com/CodeShark)
 - [Gregory Maxwell](https://github.com/gmaxwell)
