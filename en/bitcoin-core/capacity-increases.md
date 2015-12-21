@@ -21,9 +21,11 @@ consider this the best possible continuation of our efforts.
 
 - [Adam Back](https://github.com/adam3us)
 - [Alex Morcos](https://github.com/morcos)
+- [Bryan Bishop](https://github.com/kanzure)
 - [BtcDrak](https://github.com/btcdrak)
 - [Gregory Sanders](https://github.com/instagibbs)
 - [Lawrence Nahum](https://github.com/greenaddress)
+- [Wladimir J. van der Laan](https://github.com/laanwj)
 
 {% comment %}
 Earlier statement:
@@ -37,8 +39,6 @@ Signed earlier statement but not (yet) later statement:
 - BlueMatt
 - CodeShark
 - JonasSchnelli
-- wumpus
-- kanzure
 
 {% endcomment %}
 
