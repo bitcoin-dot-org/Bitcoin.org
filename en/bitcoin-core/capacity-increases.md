@@ -31,6 +31,7 @@ consider this the best possible continuation of our efforts.
 - [Douglas Huff](https://github.com/jrmithdobbs)
 - [Eric Lombrozo](https://github.com/CodeShark)
 - [Gregory Sanders](https://github.com/instagibbs)
+- [James Hilliard](https://github.com/jameshilliard)
 - [Johnathan Corgan](https://github.com/jmcorgan)
 - [Johnson Lau](https://github.com/jl2012)
 - [Jonas Schnelli](https://github.com/jonasschnelli)
@@ -41,6 +42,11 @@ consider this the best possible continuation of our efforts.
 - [Rodolfo Novak](https://github.com/nvk)
 - [Theymos](https://github.com/theymos)
 - [Thomas Kerin](https://github.com/afk11)
+- [Warren Togami](https://github.com/wtogami)
 - [Wladimir J. van der Laan](https://github.com/laanwj)
+
+---
+
+Signatures may be added to Bitcoin.org pull request [#1165](https://github.com/bitcoin-dot-org/bitcoin.org/pull/1165)
 
 [1]: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011865.html
