@@ -23,6 +23,8 @@ consider this the best possible continuation of our efforts.
 - [Alex Morcos](https://github.com/morcos)
 - [Bryan Bishop](https://github.com/kanzure)
 - [BtcDrak](https://github.com/btcdrak)
+- [Charlie Lee](https://github.com/coblee)
+- [Eric Lombrozo](https://github.com/CodeShark)
 - [Gregory Sanders](https://github.com/instagibbs)
 - [Jonas Schnelli](https://github.com/jonasschnelli)
 - [Lawrence Nahum](https://github.com/greenaddress)
@@ -38,7 +40,6 @@ bikeshedding, start implementing, and move forward.
 Signed earlier statement but not (yet) later statement:
 - maaku
 - BlueMatt
-- CodeShark
 
 {% endcomment %}
 
