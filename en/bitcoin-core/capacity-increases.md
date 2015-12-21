@@ -21,11 +21,13 @@ consider this the best possible continuation of our efforts.
 
 - [Adam Back](https://github.com/adam3us)
 - [Alex Morcos](https://github.com/morcos)
+- [Ben Davenport](https://github.com/bpdavenport)
 - [Bryan Bishop](https://github.com/kanzure)
 - [BtcDrak](https://github.com/btcdrak)
 - [Charlie Lee](https://github.com/coblee)
 - [Christian Decker](https://github.com/cdecker)
 - [Cory Fields](https://github.com/theuni)
+- [Craig Watkins](https://github.com/crwatkins)
 - [Daniel Kraft](https://github.com/domob1812)
 - [David A. Harding](https://github.com/harding)
 - [Douglas Huff](https://github.com/jrmithdobbs)
@@ -48,6 +50,8 @@ consider this the best possible continuation of our efforts.
 - [Wladimir J. van der Laan](https://github.com/laanwj)
 
 ---
+
+A FAQ is being prepared and will be linked from here when available.
 
 Signatures may be added to Bitcoin.org pull request [#1165](https://github.com/bitcoin-dot-org/bitcoin.org/pull/1165)
 
