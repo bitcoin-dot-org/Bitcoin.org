@@ -22,6 +22,8 @@ consider this the best possible continuation of our efforts.
 - [Adam Back](https://github.com/adam3us)
 - [Alex Morcos](https://github.com/morcos)
 - [BtcDrak](https://github.com/btcdrak)
+- [Gregory Sanders](https://github.com/instagibbs)
+- [Lawrence Nahum](https://github.com/greenaddress)
 
 {% comment %}
 Earlier statement:
@@ -37,7 +39,6 @@ Signed earlier statement but not (yet) later statement:
 - JonasSchnelli
 - wumpus
 - kanzure
-- greenaddress
 
 {% endcomment %}
 
