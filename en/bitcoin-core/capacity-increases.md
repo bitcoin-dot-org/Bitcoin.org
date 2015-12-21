@@ -24,11 +24,15 @@ consider this the best possible continuation of our efforts.
 - [Bryan Bishop](https://github.com/kanzure)
 - [BtcDrak](https://github.com/btcdrak)
 - [Charlie Lee](https://github.com/coblee)
+- [David A. Harding](https://github.com/harding)
 - [Eric Lombrozo](https://github.com/CodeShark)
 - [Gregory Sanders](https://github.com/instagibbs)
 - [Jonas Schnelli](https://github.com/jonasschnelli)
 - [Lawrence Nahum](https://github.com/greenaddress)
+- [Pavel Janik](https://github.com/paveljanik)
 - [Pieter Wuille](https://github.com/sipa)
+- [Theymos](https://github.com/theymos)
+- [Thomas Kerin](https://github.com/afk11)
 - [Wladimir J. van der Laan](https://github.com/laanwj)
 
 {% comment %}
