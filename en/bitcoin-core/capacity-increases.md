@@ -24,7 +24,9 @@ consider this the best possible continuation of our efforts.
 - [Bryan Bishop](https://github.com/kanzure)
 - [BtcDrak](https://github.com/btcdrak)
 - [Gregory Sanders](https://github.com/instagibbs)
+- [Jonas Schnelli](https://github.com/jonasschnelli)
 - [Lawrence Nahum](https://github.com/greenaddress)
+- [Pieter Wuille](https://github.com/sipa)
 - [Wladimir J. van der Laan](https://github.com/laanwj)
 
 {% comment %}
@@ -35,10 +37,8 @@ bikeshedding, start implementing, and move forward.
 
 Signed earlier statement but not (yet) later statement:
 - maaku
-- sipa
 - BlueMatt
 - CodeShark
-- JonasSchnelli
 
 {% endcomment %}
 
