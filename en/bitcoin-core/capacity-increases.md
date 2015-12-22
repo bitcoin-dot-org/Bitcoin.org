@@ -19,6 +19,8 @@ Bitcoin system.][1]  We have been working on
 scalability for several years within the Bitcoin Core project and
 consider this the best possible continuation of our efforts.
 
+A FAQ is being prepared and will be linked from here when available.
+
 {% include bitcoin-core/capability-increases-sigs.md %}
 
 ---
@@ -27,8 +29,6 @@ Other versions of this page:
 
 - [简体中文](/zh_CN/bitcoin-core/capacity-increases)
 - [繁體中文](/zh_TW/bitcoin-core/capacity-increases)
-
-A FAQ is being prepared and will be linked from here when available.
 
 Signatures may be added to Bitcoin.org pull request [#1165](https://github.com/bitcoin-dot-org/bitcoin.org/pull/1165)
 

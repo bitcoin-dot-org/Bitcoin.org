@@ -17,11 +17,11 @@ breadcrumbs:
 我們連署支持[比特幣系統擴展][1]路線圖。我們已在Bitcoin
 Core計劃內為可擴展性工作多年，認為這是最可以延續我們一直以來努力的方向。
 
+我們正準備一份常見問答集，完成後會在此連結。
+
 {% include bitcoin-core/capability-increases-sigs.md %}
 
 ---
-
-我們正準備一份常見問答集，完成後會在此連結。
 
 如果你想參與連署，請到[#1165](https://github.com/bitcoin-dot-org/bitcoin.org/pull/1165)。
 
