@@ -143,7 +143,7 @@ Hard forks are anything but simple:
 Despite these considerable complications, with sufficient precautions,
 none of them is fatal to a hard fork, and we do expect to make hard
 forks in the future. But with segregated witness (segwit) we have a
-soft fork, similar to to other soft forks we've performed and gained
+soft fork, similar to other soft forks we've performed and gained
 experience in deploying, that provides us with many benefits in addition
 to allowing more transactions to be added to the blockchain.
 
@@ -246,7 +246,7 @@ table; they are just provided for reference.)
 Web wallets and exchanges that send large numbers of transactions each
 day at fixed rates (such as for free or for 1% per spend) are expected
 to be early adopters---even the small savings per spend seen in the
-table above adds up to significant amounts of money if repeated hundreds
+table above add up to significant amounts of money if repeated hundreds
 or thousands of times a day.
 
 ## I heard you were breaking zero-confirmation transactions. Which technology in the scaling roadmap is doing that?  {#rbf}
@@ -311,7 +311,7 @@ either. For example,
 The BIP66 (strict DER) soft fork which activated in July 2015 will
 soon be providing reduced processing time by making it possible to
 switch to libsecp256k1 for validation as described elsewhere is this
-FAQ. The reduced validation time make makes it fairly unique among soft
+FAQ. The reduced validation time makes it fairly unique among soft
 forks in providing direct benefits to miners.
 
 What segregated witness (segwit) does is provide several major benefits
