@@ -37,19 +37,19 @@ specific improvements described in the [roadmap][].
   contributors to test segregated witness and for wallet authors to
   begin working with it.
 
-- **Libsecp256k1 verification:** 500% to 700% speed boost on x86\_64
+- **[Libsecp256k1][] verification:** 500% to 700% speed boost on x86\_64
   hardware during verification to help new full nodes join the network
   and to lighten the burden on existing nodes.
 
-- **OP\_CHECKSEQUENCEVERIFY:** 25,000% improvement in bi-directional
+- **[OP\_CHECKSEQUENCEVERIFY][BIP112]:** 25,000% improvement in bi-directional
   [payment channel efficiency][] by allowing users to keep channels open
   as long as they want.
 
-- **VersionBits:** increase the maximum number of soft forks able to be
+- **[VersionBits][BIP9]:** increase the maximum number of soft forks able to be
   deployed simultaneously from 1 to 29, allowing for faster and more
   decentralized future upgrades of the network.
 
-- **Segregated witness:** 175% to 400% direct capacity upgrade, 66%
+- **[Segregated witness][bip-segwit]:** 175% to 400% direct capacity upgrade, 66%
   additional improvement in bi-directional channel efficiency by
   consolidating channel open and close operations, an end to
   third-party malleability that hurts smart contract deployment, fraud
@@ -280,8 +280,8 @@ long time to confirm, helping to prevent transactions from getting
 
 ## Weak blocks and IBLTs just say “2016” in the roadmap schedule. Does this mean you have no idea when they'll be available?  {#weak-blocks-iblts}
 
-Weak blocks and IBLTs are two separate technologies that are still being
-actively studied to choose the right parameters, but the number of
+[Weak blocks and IBLTs][] are two separate technologies that are still being
+[actively studied][] to choose the right parameters, but the number of
 developers working on them is limited and so it's difficult to guess
 when they'll be deployed.
 
@@ -293,7 +293,7 @@ within 2016.
 
 After deployment, both weak blocks and IBLTs may benefit from a simple
 non-controversial soft fork ([canonical transaction ordering][]), which
-should be easy to deploy using the BIP9 versionBits system described
+should be easy to deploy using the [BIP9][] versionBits system described
 elsewhere in this FAQ.
 
 [canonical transaction ordering]: https://gist.github.com/gavinandresen/e20c3b5a1d4b97f79ac2#canonical-ordering-of-transactions
@@ -303,12 +303,12 @@ elsewhere in this FAQ.
 Most [previous soft forks][] have not provided these benefits to miners
 either. For example,
 
-| BIP16 (P2SH) | New transaction type |
-| BIP30 (duplicate txids) | Required checking for duplicate txids |
-| BIP34 (height in coinbase) | Reduced miner coinbase space by 4 bytes |
-| BIP65 (OP_CLTV) | New opcode |
+| [BIP16][] (P2SH) | New transaction type |
+| [BIP30][] (duplicate txids) | Required checking for duplicate txids |
+| [BIP34][] (height in coinbase) | Reduced miner coinbase space by 4 bytes |
+| [BIP65][] (OP_CLTV) | New opcode |
 
-The BIP66 (strict DER) soft fork which activated in July 2015 will
+The [BIP66][] (strict DER) soft fork which activated in July 2015 will
 soon be providing reduced processing time by making it possible to
 switch to libsecp256k1 for validation as described elsewhere is this
 FAQ. The reduced validation time makes it uncommon among soft
@@ -342,8 +342,11 @@ To get specific suggestions on how you can help, please join the
 [#bitcoin-dev][] IRC channel.
 
 [#bitcoin-dev]: https://webchat.freenode.net/?channels=bitcoin-dev&amp;uio=d4
+[actively studied]: http://diyhpl.us/wiki/transcripts/scalingbitcoin/bitcoin-block-propagation-iblt-rusty-russell/
+[bip-segwit]: https://github.com/jl2012/bips/blob/segwit/bip-segwit.mediawiki
 [BIP9]: https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki
 [BIP16]: https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki
+[BIP30]: https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki
 [BIP34]: https://github.com/bitcoin/bips/blob/master/bip-0034.mediawiki
 [BIP50]: https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki
 [BIP65]: https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki
@@ -356,9 +359,11 @@ To get specific suggestions on how you can help, please join the
 [code review]: https://bitcoin.org/en/development#code-review
 [estimated savings]: https://www.reddit.com/r/bitcoinxt/comments/3w1i6b/i_attended_scaling_bitcoin_hong_kong_these_are_my/cxtkaih
 [increase in total bandwidth]: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/3_block_propagation_1_rosenbaum.pdf
+[libsecp256k1]: https://github.com/bitcoin/secp256k1
 [libsecp256k1 verification]: https://github.com/bitcoin/bitcoin/pull/6954
 [max_block_size]: https://github.com/bitcoin/bitcoin/blob/3038eb63e8a674b4818cb5d5e461f1ccf4b2932f/src/consensus/consensus.h#L10
 [miners' panel]: https://youtu.be/H-ErmmDQRFs?t=1086
 [payment channel efficiency]: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/1_layer2_2_dryja.pdf
 [previous soft forks]: https://github.com/bitcoin/bips/blob/master/bip-0123.mediawiki#classification-of-existing-bips
+[weak blocks and iblts]: https://www.youtube.com/watch?v=ivgxcEOyWNs&t=1h40m20s
 [q simple raise]: #size-bump
