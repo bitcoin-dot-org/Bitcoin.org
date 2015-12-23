@@ -143,7 +143,7 @@ Hard forks are anything but simple:
 Despite these considerable complications, with sufficient precautions,
 none of them is fatal to a hard fork, and we do expect to make hard
 forks in the future. But with segregated witness (segwit) we have a
-soft fork, similar to to other soft forks we've performed and gained
+soft fork, similar to other soft forks we've performed and gained
 experience in deploying, that provides us with many benefits in addition
 to allowing more transactions to be added to the blockchain.
 
@@ -210,12 +210,12 @@ formulate long-term plans.
 Wallets that currently support P2SH can migrate to full segregated
 witness in two phases:
 
-- Phase 1: Scripts are hashed twice, first to 256 bytes and then to 160
-  bytes. The 160 byte hash will be compatible with existing P2SH
+- Phase 1: Scripts are hashed twice, first to 256 bits and then to 160
+  bits. The 160 bit hash will be compatible with existing P2SH
   addresses, so upgraded wallets will be able to send and receive
   bitcoins to and from currently existing wallets.
 
-- Phase 2: Scripts are hashed once to 256 bytes. This format will not be
+- Phase 2: Scripts are hashed once to 256 bits. This format will not be
   compatible with existing wallets but will allow more efficient use of
   block space and will offer better security due to greater collision
   resistance.
@@ -246,7 +246,7 @@ table; they are just provided for reference.)
 Web wallets and exchanges that send large numbers of transactions each
 day at fixed rates (such as for free or for 1% per spend) are expected
 to be early adopters---even the small savings per spend seen in the
-table above adds up to significant amounts of money if repeated hundreds
+table above will add up to significant amounts of money if repeated hundreds
 or thousands of times a day.
 
 ## I heard you were breaking zero-confirmation transactions. Which technology in the scaling roadmap is doing that?  {#rbf}
@@ -311,7 +311,7 @@ either. For example,
 The BIP66 (strict DER) soft fork which activated in July 2015 will
 soon be providing reduced processing time by making it possible to
 switch to libsecp256k1 for validation as described elsewhere is this
-FAQ. The reduced validation time make makes it fairly unique among soft
+FAQ. The reduced validation time makes it uncommon among soft
 forks in providing direct benefits to miners.
 
 What segregated witness (segwit) does is provide several major benefits
