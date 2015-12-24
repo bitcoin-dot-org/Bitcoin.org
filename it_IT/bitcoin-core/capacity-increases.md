@@ -1,5 +1,5 @@
 ---
-# Questo file è protetto dalla  licenza MIT License (MIT) reperibile su
+# This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
 layout: base-core
@@ -16,11 +16,11 @@ breadcrumbs:
 
 
 Noi, i firmatari, supportiamo la roadmap in [Capacity increases for the
-Bitcoin system.][1]  Abbiamo lavorato sulla scalabilità per 
+Bitcoin system.][1]  Abbiamo lavorato sulla scalabilità per
 molti anni all'interno del progetto Bitcoin Core e consideriamo
 questa la migliore possibile continuazione dei nostri sforzi.
 
-Per maggiori informazione prego consultare 
+Per maggiori informazione prego consultare
 [FAQ](/en/bitcoin-core/capacity-increases-faq).
 
 {% include bitcoin-core/capability-increases-sigs.md %}
