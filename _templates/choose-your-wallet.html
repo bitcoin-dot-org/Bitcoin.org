@@ -772,6 +772,28 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
+
+- spectrocoin:
+    title: "SpectroCoin"
+    titleshort: "SpectroCoin"
+    compat: "web"
+    level: 4
+    platform:
+      web:
+        text: "walletspectrocoin"
+        link: "https://spectrocoin.com/"
+        screenshot: "spectrocoin.png"
+        os:
+        check:
+          control: "checkfailcontrolthirdpartyinsured"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 ---
 
 <!-- Note: this file exempt from check-for-subheading-anchors check -->
