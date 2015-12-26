@@ -35,17 +35,18 @@ per i miglioramenti specifici descritti nella [roadmap][]
 
 
 - **Segregated witness testnet:** Una testnet separata (non parte
-  della testnet reolare) che fornisce un'opportunità ai contribtori di
+  della testnet regolare) che fornisce un'opportunità ai contribtori di
   Bitcoin Core  di testare segregated witness (testimonianza segregata ndt) e
   agli sviluppatori di wallet di cominciare a lavorarci sopra.
 
-- **Verifica [Libsecp256k1][]:** Aumento di velocità dal 500% to 700% su herdware
-  x86\_64 durante la verifica per aiutare i full nodes a unirsi alla rete e per
-  allegerire il peso dei nodi esistenti.
+- **Verifica [Libsecp256k1][]:** Aumento di velocità dal 500% to 700% su
+  hardware x86\_64 durante la verifica per aiutare i full nodes a unirsi alla
+  rete e per allegerire il peso dei nodi esistenti.
 
-- **[OP\_CHECKSEQUENCEVERIFY][BIP112]:** miglioramento del 25,000% nella bi-directional
-  [payment channel efficiency][] attraverso la possibilità per gli utenti di
-  lasciare il canale aperto quanto lo desiderano.
+- **[OP\_CHECKSEQUENCEVERIFY][BIP112]:** miglioramento del 25,000% nell'
+  [efficienza dei payment channels][payment channel efficiency] bi-direzioionali
+  attraverso la possibilità per gli utenti di lasciare il canale aperto quanto
+  lo desiderano.
 
 - **[VersionBits][BIP9]:** aumenta il numero dei softforks che è possibile
   mettere in campo. Da 1 a 29 rilasci di nuove versioni simultaneamente, questo
@@ -57,7 +58,7 @@ per i miglioramenti specifici descritti nella [roadmap][]
   di apertura e di chiusura del canale, la fine delle malleabilità di terze
   parti che pregiudicano la messa in campo degli smart contracts, le fraud
   proofs per permettere ai clients leggeri di contribuire in modo più efficace
-  al rafforzamento delle verifiche dei parametri economici, e la possibilità di
+  al rafforzamento delle verifiche di tipo economico, e la possibilità di
   migliorare il linguaggio di Scripting di Bitcoin in modo che nuovi e più
   potenti smart contracts possano essere concepiti.
 
