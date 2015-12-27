@@ -175,6 +175,7 @@ http://opensource.org/licenses/MIT.
 [ping message]: /en/developer-reference#ping "A P2P network message used to see if the remote host is still connected"
 [pong message]: /en/developer-reference#pong "A P2P network message used to reply to a P2P network ping message"
 [reject message]: /en/developer-reference#reject "A P2P network message used to indicate a previously-received message was rejected for some reason"
+[sendheaders message]: /en/developer-reference#sendheaders "A P2P network message used to request new blocks be announced through headers messages rather than inv messages"
 [tx message]: /en/developer-reference#tx "A P2P protocol message which sends a single serialized transaction"
 [verack message]: /en/developer-reference#verack "A P2P network message sent in reply to a version message to confirm a connection has been established"
 [version message]: /en/developer-reference#version "A P2P network message sent at the begining of a connection to allow protocol version negotiation"
@@ -287,6 +288,7 @@ http://opensource.org/licenses/MIT.
 [BIP70]: https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki
 [BIP71]: https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki
 [BIP72]: https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki
+[BIP130]: https://github.com/bitcoin/bips/blob/master/bip-0130.mediawiki
 [CVE-2012-2459]: https://en.bitcoin.it/wiki/CVEs#CVE-2012-2459
 [RFC5737]: http://tools.ietf.org/html/rfc5737
 [secp256k1]: http://www.secg.org/sec2-v2.pdf

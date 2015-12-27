@@ -1,27 +1,3 @@
-- date: 2015-11-12
-  title: "The Future of Money: Cashing out on Cash"
-  venue: "Thomson Reuters"
-  address: "3 Times Square"
-  city: "New York"
-  country: "USA"
-  link: "http://rsvp.thomsonreuters.com/node/839"
-
-- date: 2015-11-20
-  title: "Practical workshop"
-  venue: "Las Naves"
-  address: "Joan Verdeguer 16"
-  city: "Valencia"
-  country: "Spain"
-  link: "http://avalbit.org/actividades/taller-practico-bitcoin/"
-
-- date: 2015-11-24
-  title: "ADCCA Fintech Summit"
-  venue: "The Westin Sydney"
-  address: "1 Martin Place"
-  city: "Sydney"
-  country: "Australia"
-  link: "http://www.adccasummit.com/"
-
 - date: 2015-12-03
   title: "Moneylab#2 Economies of Dissent"
   venue: "Pakhuis De Zwijger"
@@ -31,9 +7,9 @@
   link: "http://networkcultures.org/moneylab/"
 
 - date: 2015-12-02
-  title: "Bitcoin Wednesday Conference"
-  venue: "De Balie"
-  address: "Leidseplein, Kleine-Gartmanplantsoen 10"
+  title: "The Bitcoin Film Festival: Bitcoin Wednesday Conference"
+  venue: "Melkweg"
+  address: "Leidseplein, Lijnbaansgracht 234a"
   city: "Amsterdam"
   country: "The Netherlands"
   link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-30/"
@@ -77,6 +53,14 @@
   city: "San Diego"
   country: "United States"
   link: "http://insidebitcoins.com/san-diego/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibsd"
+
+- date: 2016-01-06
+  title: "Bitcoin Wednesday Conference"
+  venue: "Melkweg"
+  address: "Leidseplein, Lijnbaansgracht 234a"
+  city: "Amsterdam"
+  country: "The Netherlands"
+  link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-31/"
 
 - date: 2016-01-21
   title: "The North American Bitcoin Conference"

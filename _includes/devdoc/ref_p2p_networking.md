@@ -68,6 +68,7 @@ As of Bitcoin Core 0.11.0, the most recent protocol version is 70002.
 
 | Version | Initial Release                    | Major Changes
 |---------|------------------------------------|--------------
+| 70012   | Bitcoin Core 0.12.0 <br>(Not released yet)  | [BIP130][]: <br>• Added `sendheaders` message
 | 70002   | Bitcoin Core 0.9.0 <br>(Mar 2014)  | • Send multiple `inv` messages in response to a `mempool` message if necessary <br><br>[BIP61][]: <br>• Added `reject` message
 | 70001   | Bitcoin Core 0.8.0 <br>(Feb 2013)  | • Added `notfound` message. <br><br>[BIP37][]: <br>• Added `filterload` message. <br>• Added `filteradd` message. <br>• Added `filterclear` message. <br>• Added `merkleblock` message. <br>• Added relay field to `version` message <br>• Added `MSG_FILTERED_BLOCK` inventory type to `getdata` message.
 | 60002   | Bitcoin Core 0.7.0 <br>(Sep 2012)  | [BIP35][]: <br>• Added `mempool` message. <br>• Extended `getdata` message to allow download of memory pool transactions
@@ -1208,6 +1209,19 @@ header has been omitted.)
 394715fcab51093be7bfca5a31005972
 947baf86a31017939575fb2354222821 ... TXID
 {% endhighlight %}
+
+{% endautocrossref %}
+
+#### SendHeaders
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
+
+The `sendheaders` message tells the receiving peer to send new block
+announcements using a `headers` message rather than an `inv` message.
+
+There is no payload in a `sendheaders` message.  See the [message header
+section][section message header] for an example of a message without a payload.
 
 {% endautocrossref %}
 
