@@ -12,6 +12,7 @@ http://opensource.org/licenses/MIT.
 - [BtcDrak](https://github.com/btcdrak)
 - [Charlie Lee](https://github.com/coblee)
 - [Christian Decker](https://github.com/cdecker)
+- [Cøbra](https://github.com/cobra-bitcoin)
 - [Cory Fields](https://github.com/theuni)
 - [Craig Watkins](https://github.com/crwatkins)
 - [Daniel](https://github.com/arowser)
