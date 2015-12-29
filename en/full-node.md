@@ -163,7 +163,7 @@ have an easy-to-use node.
 * Desktop or laptop hardware running recent versions of Windows, Mac OS
   X, or Linux.
 
-* 50 gigabytes of free disk space
+* 70 gigabytes of free disk space
 
 * 2 gigabytes of memory (RAM)
 
@@ -174,7 +174,7 @@ have an easy-to-use node.
   connection you regularly monitor to ensure it doesn't exceed its
   upload limits. It's common for full nodes on high-speed connections to
   use 200 gigabytes upload or more a month. Download usage is around 20
-  gigabytes a month, plus around an additional 40 gigabytes the first
+  gigabytes a month, plus around an additional 50 gigabytes the first
   time you start your node.
 
 * 6 hours a day that your full node can be left running. (You can do
