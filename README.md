@@ -23,9 +23,7 @@
   Good To Me (LGTM)" comment.
 
 * [Submit new wallets][] for the [Choose Your Wallet page][], or
-  help us [review wallet submissions][]. **Reviewers with Apple iOS
-  hardware especially needed**---email <dave@dtrt.org> to
-  be notified about iOS wallets needing review.
+  help us [review wallet submissions][].
 
 * [Translate Bitcoin.org into another language][] using [Transifex][] or
   help review new and updated translations. **Translation coordinator

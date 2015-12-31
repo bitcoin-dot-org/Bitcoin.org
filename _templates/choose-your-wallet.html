@@ -666,27 +666,6 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
           privacynetwork: "checkfailprivacynetworknosupporttor"
-- coinbase:
-    title: "Coinbase"
-    titleshort: "Coinbase"
-    compat: "web"
-    level: 4
-    platform:
-      web:
-        text: "walletcoinbase"
-        link: "https://coinbase.com"
-        screenshot: "coinbase.png"
-        os:
-        check:
-          control: "checkfailcontrolthirdparty"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencyremote"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - coinkite:
     title: "Coinkite"
     titleshort: "Coinkite"
@@ -772,6 +751,23 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- keepkey:
+    title: "KeepKey"
+    titleshort: "KeepKey"
+    compat: "hardware"
+    level: 2
+    platform:
+      hardware:
+        text: "walletkeepkey"
+        link: "https://www.keepkey.com/"
+        source: "https://github.com/keepkey/"
+        screenshot: "keepkey.png"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkneutralvalidationvariable"
+          transparency: "checkfailtransparencynew"
+          environment: "checkgoodenvironmenthardware"
+          privacy: "checkneutralprivacyvariable"
 ---
 
 <!-- Note: this file exempt from check-for-subheading-anchors check -->

@@ -19,7 +19,8 @@ Bitcoin system.][1]  We have been working on
 scalability for several years within the Bitcoin Core project and
 consider this the best possible continuation of our efforts.
 
-A FAQ is being prepared and will be linked from here when available.
+For more information, please see the
+[FAQ](/en/bitcoin-core/capacity-increases-faq).
 
 {% include bitcoin-core/capability-increases-sigs.md %}
 

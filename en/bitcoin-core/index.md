@@ -91,7 +91,7 @@ breadcrumbs:
 {% endcapture %}
 {% assign array_releases = text_releases | strip_newlines | split: '::' %}
 
-  - 2015-12-21 - [Roadmap: Capacity increases for the Bitcoin system](/en/bitcoin-core/capacity-increases)
+  - 2015-12-21 - Capacity increases for the Bitcoin system: [Statement](/en/bitcoin-core/capacity-increases) & [FAQ](/en/bitcoin-core/capacity-increases-faq)
 {% comment %}<!-- show the latest three releases -->{% endcomment %}
 {% for release in array_releases %}
  {% if forloop.index <= 3 %}
