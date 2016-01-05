@@ -1,0 +1,16 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu{% if site.STATUS == 1 %} alert{% endif %}">Network Status</a>
+  <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
+  {% case page.lang %}
+  {% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl' or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'ja' or 'zh_CN' or 'zh_TW' %}
+  <a href="/en/privacy">Privacy Policy</a>
+  {% else %}
+  <a href="/{{ page.lang }}/{% translate privacy url %}">{% translate menu-privacy layout %}</a>
+  {% endcase %}
+  <a href="/en/bitcoin-core/about-site">About</a>
+</div>
