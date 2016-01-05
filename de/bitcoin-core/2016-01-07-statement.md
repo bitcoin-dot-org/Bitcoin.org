@@ -28,8 +28,8 @@ Aus diesen Gründen bevorzugt Bitcoin Core Kompatibilität und glaubt dass jeder
 
 Wir glauben auch, dass die Anzahl der Implementierungen des Bitcoin-Protokolls mit dem Wachstum des Bitcoin-Netzwerks zunimmt. Auch ist es unvermeidbar dass andere Softwareprojekte radikal abweichende Vorschläge veröffentlichen. Letztendlich entscheidet nicht das Bitcoin Core Entwicklerteam über die Bitcoin Konsensus-Regeln, sondern die Nutzer, die ihre eigenen Entscheidungen treffen welche Bitcoin-Software sie benutzen. Aus diesem Grund hat die Bitcoin Implementierung des Bitcoin Core Entwicklerteams absichtlich keine auto-update Funktion. Der Verzicht sichert ab, dass jedes Upgrade aufgrund der Freiwilligkeit des Benutzers geschieht und dem Nutzer die Wahl über die Software gelassen wird.
 
-Anhang A
+### Anhang A
 
-Ein hard fork ist eine Änderung der Konsensus-Regeln, sodass Blöcke die unter alten Regeln ungültig sind unter neuen Regeln gültig werden könnten.
+Ein *hard fork* ist eine Änderung der Konsensus-Regeln, sodass Blöcke die unter alten Regeln ungültig sind unter neuen Regeln gültig werden könnten.
 
-Ein soft fork ist eine Änderung der Konsensus-Regeln, sodass Blöcke die unter alten Regeln gültig sind, unter den neuen Regeln ungültig werden könnten. Jedoch bleiben alle Blöcke, die unter alten Regeln ungültig sind auch unter den neuen Regeln ungültig.
+Ein *soft fork* ist eine Änderung der Konsensus-Regeln, sodass Blöcke die unter alten Regeln gültig sind, unter den neuen Regeln ungültig werden könnten. Jedoch bleiben alle Blöcke, die unter alten Regeln ungültig sind auch unter den neuen Regeln ungültig.
