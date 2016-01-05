@@ -1,59 +1,3 @@
-- date: 2015-12-03
-  title: "Moneylab#2 Economies of Dissent"
-  venue: "Pakhuis De Zwijger"
-  address: "Piet Heinkade 179"
-  city: "1019 HC Amsterdam"
-  country: "The Netherlands"
-  link: "http://networkcultures.org/moneylab/"
-
-- date: 2015-12-02
-  title: "The Bitcoin Film Festival: Bitcoin Wednesday Conference"
-  venue: "Melkweg"
-  address: "Leidseplein, Lijnbaansgracht 234a"
-  city: "Amsterdam"
-  country: "The Netherlands"
-  link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-30/"
-
-- date: 2015-12-04
-  title: "laBITconf 2015: Latin American Bitcoin Conference"
-  venue: "EBC Campus Dinamarca"
-  address: "Dinamarca 32, Col. Juarez, Del. Cuauhtemoc"
-  city: "Mexico D.F."
-  country: "Mexico"
-  link: "http://www.labitconf.com/"
-
-- date: 2015-12-06
-  title: "Scaling Bitcoin: Phase 2"
-  venue: "Hong Kong Cyberport"
-  address: "100 Cyberport Road"
-  city: "Hong Kong"
-  country: "China"
-  link: "https://scalingbitcoin.org/hongkong2015/"
-
-- date: 2015-12-08
-  title: "Santa Claus Bitcurex Bitcoin Event"
-  venue: "Centrum Golf"
-  address: "Burakowska 15"
-  city: "Warsaw"
-  country: "Poland"
-  link: "https://www.facebook.com/events/979552578733820/"
-
-- date: 2015-12-09
-  title: "Inside Bitcoins Seoul"
-  venue: "Korea International Exhibition Center (KINTEX)"
-  address: "2600, Daehwa-dong, Ilsanseo-gu, Goyang-si, Gyeonggi-do"
-  city: "Seoul"
-  country: "South Korea"
-  link: "http://insidebitcoins.com/seoul/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibseoul"
-
-- date: 2015-12-14
-  title: "Inside Bitcoins San Diego"
-  venue: "San Diego Convention Center"
-  address: "111 W. Harbor Drive"
-  city: "San Diego"
-  country: "United States"
-  link: "http://insidebitcoins.com/san-diego/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibsd"
-
 - date: 2016-01-06
   title: "Bitcoin Wednesday Conference"
   venue: "Melkweg"
@@ -61,6 +5,22 @@
   city: "Amsterdam"
   country: "The Netherlands"
   link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-31/"
+
+- date: 2016-01-08
+  title: "The Digital Money Forum 2016"
+  venue: "Venetian, Level 4 Marcello 4404 "
+  address: "Venetian Hotel & Casino 3355 Las Vegas Blvd S, Las Vegas, NV 89109 "
+  city: "Las Vegas, NV"
+  country: "USA"
+  link: "http://thedigitalmoneyforum.com/"
+
+- date: 2016-01-12
+  title: "BIP001: Winter Edition"
+  venue: "Leopolis"
+  address: "Miskevycha Square, 9"
+  city: "Lviv"
+  country: "Ukraine"
+  link: "http://bip001.com"
 
 - date: 2016-01-21
   title: "The North American Bitcoin Conference"
@@ -94,6 +54,14 @@
   country: "Denmark"
   link: "https://www.money2020europe.com/"
 
+- date: 2015-04-08
+  title: "Bitcoin Conference Russia 2016"
+  venue: "Digital October"
+  address: "Bersenevskaya naberezhnaya, 6, str. 3"
+  city: "Moscow"
+  country: "Russia"
+  link: "http://bitcoinconf.moscow/en"
+
 - date: 2016-04-10
   title: "Inside Bitcoins New York"
   venue: "Javits Convention Center"
@@ -101,6 +69,14 @@
   city: "New York"
   country: "United States"
   link: "http://insidebitcoins.com/new-york/2016?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibny"
+
+- date: 2016-05-02
+  title: "Blockchain Technology Conference (BTC) 2016"
+  venue: "Marriott Marquis, Times Square, New York City"
+  address: "1535 Broadway "
+  city: "New York"
+  country: "USA"
+  link: "http://www.btc2016.co/"
 
 - date: 2016-05-24
   title: "Inside Bitcoins Hong Kong"
