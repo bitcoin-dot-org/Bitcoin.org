@@ -28,6 +28,7 @@ For more information, please see the
 
 Other versions of this page:
 
+- [Italiano](/it/bitcoin-core/capacity-increases)
 - [简体中文](/zh_CN/bitcoin-core/capacity-increases)
 - [繁體中文](/zh_TW/bitcoin-core/capacity-increases)
 

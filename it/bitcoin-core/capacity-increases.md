@@ -21,7 +21,7 @@ molti anni all'interno del progetto Bitcoin Core e consideriamo
 questa la migliore possibile continuazione dei nostri sforzi.
 
 Per maggiori informazione prego consultare
-[FAQ](/en/bitcoin-core/capacity-increases-faq).
+[FAQ](/it/bitcoin-core/capacity-increases-faq).
 
 {% include bitcoin-core/capability-increases-sigs.md %}
 
