@@ -34,3 +34,10 @@ A hard fork is a change to consensus rules, in which blocks that would have been
 
 A soft fork is a change to consensus rules, in which blocks that would have been valid under the old rules may become invalid under the new rules, but all blocks that would have been invalid under the old rules remain invalid under the new rules.
 
+Translations:
+[{{site.langs.de}}](/de/bitcoin-core/2016-01-07-statement)
+| [{{site.langs.es}}](/es/bitcoin-core/2016-01-07-statement)
+| [{{site.langs.ru}}](/ru/bitcoin-core/2016-01-07-statement)
+| [{{site.langs.zh_CN}}](/zh_CN/bitcoin-core/2016-01-07-statement)
+| [{{site.langs.zh_TW}}](/zh_TW/bitcoin-core/2016-01-07-statement)
+
