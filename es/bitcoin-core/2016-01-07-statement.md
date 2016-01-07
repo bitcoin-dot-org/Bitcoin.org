@@ -28,7 +28,7 @@ Por estas razones, Bitcoin Core fuertemente favorece compatibilidad y cree que c
 
 También se espera que a la medida que el ecosistema de Bitcoin vaya creciendo, el número de implementaciones alternativas del protocolo de Bitcoin aumentará. Es inevitable que otros proyectos hagan propuestas radicalmente diferentes a las nuestras para la consideración de la comunidad. Al fin de cuentas, los desarrolladores de Bitcoin Core no decide las reglas del consenso de Bitcoin. Sino, los usuarios que participan en Bitcoin eligen cual software usar. Por esto, el software de Bitcoin Core intencionalmente excluye función de actualización automática. Su omisión asegura la participación voluntaria de todos en cada cambio para que todos siempre tengan libre la opción de cual software usar.
  
-Apéndice A
+## Apéndice A
 
 Un hard fork es un cambio en las reglas del consenso en el cual bloques inválidos bajo las reglas viejas podrán ser válidos bajo las nuevas reglas.
 
