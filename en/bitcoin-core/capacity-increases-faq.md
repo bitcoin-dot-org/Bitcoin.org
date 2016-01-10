@@ -29,7 +29,7 @@ specific improvements described in the [roadmap][].
 | Feb 2016 | 0.12.0 | [libsecp256k1 verification][] |
 | Feb 2016 | | Segregated witness feature complete & ready for general review |
 | Mar 2016\* | 0.12.x | Deploy OP_CHECKSEQUENCEVERIFY (BIPs [68][BIP68] & [112][BIP112]) + [BIP113][] as first [BIP9][] versionbits soft fork |
-| April 2016\* |  0.12.x |  Deploy segregated witness |
+| April 2016\* |  0.12.x |  Segregated witness deployment including [block size increase](#segwit-size) |
 | 2016 | | Weak blocks, IBLTs, or both |
 
 \* Dates with an asterisk are when we expect to release soft fork-ready code. The code will not be released until it has been well reviewed, and the actual fork will take time to activate ([BIP66][] activated in July 2015 after a few months; [BIP65][] activated in Dec 2015 after only 5 weeks).
