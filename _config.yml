@@ -73,6 +73,9 @@ redirects:
   /ar/إدعم-ألبت-كوين: /ar/support-bitcoin
   /ar/مفردات: /ar/vocabulary
   /ar/تحتاج-أن-تعلم: /ar/you-need-to-know
+  /en/bitcoin-core/2016-01-07-statement: https://bitcoinco.re/en/2016/01/07/statement
+  /en/bitcoin-core/capacity-increase: https://bitcoinco.re/en/2015/12/21/capacity-increase
+  /en/bitcoin-core/capacity-increase-faq: https://bitcoinco.re/en/2015/12/23/capacity-increases-faq
   /fa/بیت-کوین-برای-علاقه-مندان: /fa/innovation
   /fa/درباره: /fa/faq
   /fa/بیت-کوین-برای-توسعه-دهندگان: /fa/bitcoin-for-developers
@@ -145,6 +148,12 @@ redirects:
   /releases/2013/05/29/v0.8.2: /en/release/v0.8.2
   /bitcoin_es_latam.pdf: /files/bitcoin-paper/bitcoin_es_latam.pdf
   /bitcoin_ru.pdf: /files/bitcoin-paper/bitcoin_ru.pdf
+  /zh_CN/bitcoin-core/2016-01-07-statement: https://bitcoinco.re/zh_CN/2016/01/07/bitcoin-core-声明
+  /zh_CN/bitcoin-core/capacity-increase: https://bitcoinco.re/zh_CN/2015/12/21/比特币系统扩展
+  /zh_CN/bitcoin-core/capacity-increase-faq: https://bitcoinco.re/zh_CN/2015/12/21/系统扩展常见问题解答
+  /zh_TW/bitcoin-core/2016-01-07-statement: https://bitcoinco.re/zh_TW/2016/01/07/bitcoin-core-聲明
+  /zh_TW/bitcoin-core/capacity-increase: https://bitcoinco.re/zh_TW/2015/12/21/比特幣系統擴展
+  /zh_TW/bitcoin-core/capacity-increase-faq: https://bitcoinco.re/zh_TW/2015/12/21/系統擴展常見問題解答
 
 aliases:
   --author=Satoshi Nakamoto: Satoshi Nakamoto
