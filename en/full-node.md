@@ -1160,7 +1160,7 @@ subsections for details.
 The BitNodes project provides an online tool to let you test whether
 your node accepts inbound connections. To use it, start Bitcoin Core
 (either the GUI or the daemon), wait 10 minutes, and then [visit the
-GetAddr page](https://getaddr.bitnodes.io/#join-the-network). The tool
+Bitnodes page](https://bitnodes.21.co/#join-the-network). The tool
 will attempt to guess your IP address---if the address is wrong (or
 blank), you will need to enter your address manually.
 
