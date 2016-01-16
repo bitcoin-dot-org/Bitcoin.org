@@ -176,7 +176,7 @@ baseurl:    /
 
 source:      .
 destination: ./_site
-plugins:     ./_plugins
+plugins_dir: ./_plugins
 exclude:
     - Gemfile
     - Gemfile.lock
@@ -185,10 +185,9 @@ exclude:
 
 future:      true
 lsi:         false
-highlighter: rouge
-pygments:    true
 markdown:    kramdown
 permalink:   date
+excerpt_separator: "<!-- END_EXCERPT -->"
 
 rdiscount:
   extensions: []
@@ -198,7 +197,15 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 2..6
-  use_coderay: false
+  enable_coderay: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    ## With the 'text' option, no highlighting is applied by default. We
+    ## need this for backwards compatibility with existing code blocks.
+    default_lang: text
+
+    ## Might be useful in the future, but turn off for upgrade to Jekyll 3.0
+    css_class:
 
   coderay:
     coderay_wrap: div
@@ -505,3 +512,37 @@ devsearches:
     - "tx": "/en/developer-reference#tx"
     - "verack": "/en/developer-reference#verack"
     - "version": "/en/developer-reference#version"
+
+collections:
+  ## _alerts
+  alerts:
+    output: true
+    permalink: /en/alert/:path
+  ## _releases
+  releases:
+    output: true
+    permalink: /en/release/:path
+
+defaults:
+  - scope:
+      path: ""
+      type: alerts
+    values:
+      layout: alert
+      lang: en
+  - scope:
+      path: ""
+      type: releases
+    values:
+      layout: release
+      lang: en
+      breadcrumbs:
+        - bitcoin
+        - bcc
+        - bcc news
+        - RELEASE
+  - scope:
+      path: ""
+      type: posts
+    values:
+      lang: en

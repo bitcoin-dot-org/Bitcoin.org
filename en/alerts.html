@@ -7,6 +7,7 @@ lang: en
 id: alerts
 title: Network status and alerts - Bitcoin
 ---
+{% assign date_sorted_alerts = site.alerts | sort: 'date' %}
 <link rel="alternate" type="application/rss+xml" href="/en/rss/alerts.rss" title="Bitcoin network status and alerts">
 
 
@@ -20,19 +21,19 @@ title: Network status and alerts - Bitcoin
   {% else %}
   <div class="alertstatusactive">The following network event is ongoing.</div>
   <ul class="alertsactive">
-  {% filter_for p in site.pages reversed sort_by:date category:alert %}{% if p.active == true %}
+  {% for p in date_sorted_alerts reversed %}{% if p.active == true %}
     <li>
       {{ p.date | date:"%Y-%m-%d" }} - <a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a>
     </li>
-  {% endif %}{% endfilter_for %}
+  {% endif %}{% endfor %}
   </ul>
   {% endif %}
   <ul class="alertsinactive">
-  {% filter_for p in site.pages reversed sort_by:date category:alert %}{% if p.active == false %}
+  {% for p in date_sorted_alerts reversed %}{% if p.active == false %}
     <li>
       {{ p.date | date:"%Y-%m-%d" }} - <a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a>
     </li>
-  {% endif %}{% endfilter_for %}
+  {% endif %}{% endfor %}
   </ul>
   <p><a href="http://getaddr.bitnodes.io/">Status and distribution of Bitcoin nodes</a></p>
   <p><a href="http://bitcoinstats.com/network/propagation/">Propagation time on the network</a></p>
