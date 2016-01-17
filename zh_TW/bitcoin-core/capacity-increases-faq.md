@@ -11,6 +11,8 @@ breadcrumbs:
   - bitcoin
   - bcc
   - Capacity increases FAQ
+
+moved_url: "https://bitcoincore.org/zh_TW/2015/12/21/%E7%B3%BB%E7%B5%B1%E6%93%B4%E5%B1%95%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94/"
 ---
 # 系統擴展常見問題解答
 

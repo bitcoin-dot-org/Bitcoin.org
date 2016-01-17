@@ -11,6 +11,8 @@ breadcrumbs:
   - bitcoin
   - bcc
   - 2016-01-07 Statement
+
+moved_url: https://bitcoincore.org/de/2016/01/07/stellungnahme-der-bitcoin-core-entwickler/
 ---
 # Stellungnahme der Bitcoin Core Entwickler 2016-01-07
 

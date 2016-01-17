@@ -11,6 +11,8 @@ breadcrumbs:
   - bitcoin
   - bcc
   - 2016-01-07 Statement
+
+moved_url: "https://bitcoincore.org/zh_CN/2016/01/07/bitcoin-core-%E5%A3%B0%E6%98%8E/"
 ---
 # Bitcoin Core 声明 -- 2016-01-07
 

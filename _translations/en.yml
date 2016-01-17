@@ -845,6 +845,10 @@ en:
     menu-support-bitcoin: "Support Bitcoin"
     menu-vocabulary: Vocabulary
     menu-you-need-to-know: "You need to know"
+    banner-core-moved: |
+      This page has moved to the new Bitcoin Core
+      website (click here to be redirected)
+
     banner-translate: "Translations for this language are outdated. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Click here to help translate bitcoin.org in your language</a>."
     footer: "Released under the <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT license</a>"
     sponsor: "A community website sponsored by"
