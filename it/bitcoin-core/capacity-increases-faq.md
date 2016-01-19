@@ -11,6 +11,8 @@ breadcrumbs:
   - bitcoin
   - bcc
   - Capacity increases FAQ
+
+moved_url: https://bitcoincore.org/it/2015/12/23/capacity-increases-faq/
 ---
 # Domande frequenti sugli aumenti di capacità
 
