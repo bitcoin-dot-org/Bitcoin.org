@@ -588,7 +588,7 @@ id:
     node: "Jadilah bagian dari jaringan"
     nodetxt: "Jika Anda memiliki koneksi internet yang bagus, Anda bisa memperkuat jaringan Bitcoin dengan menjaga <a href=\"#download#\">perangkat lunak simpul penuh</a>  tetap berjalan pada komputer atau server Anda dengan port 8333 terbuka.  Simpul penuh mengamankan dan menyampaikan semua transaksi."
     mining: "Penambangan"
-    miningtxt: "Anda dapat mulai <a href=\"http://www.bitcoinmining.com/\">menambang bitcoin</a> untuk membantu memroses transaksi. Untuk melindungi jaringan, sebaiknya Anda bergabung dengan <a href=\"http://mempool.info/pools\">kelompok penambangan kecil</a> dan lebih memilih kelompok tak terpusat seperti <a href=\"http://p2pool.in/\">P2Pool</a> atau <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">kelompok-kelompok</a> dengan dukungan getblocktemplate (GBT)."
+    miningtxt: "Anda dapat mulai <a href=\"http://www.bitcoinmining.com/\">menambang bitcoin</a> untuk membantu memroses transaksi. Untuk melindungi jaringan, sebaiknya Anda bergabung dengan kelompok penambangan kecil dan lebih memilih kelompok tak terpusat seperti <a href=\"http://p2pool.in/\">P2Pool</a> atau <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">kelompok-kelompok</a> dengan dukungan getblocktemplate (GBT)."
     develop: "Pengembangan"
     developtxt: "Bitcoin adalah perangkat lunak gratis. Jadi jika Anda adalah seorang pengembang, Anda dapat menggunakan kekuatan-super Anda untuk melakukan kebaikan dan <a href=\"#development#\">meningkatkan Bitcoin</a>. Atau Anda dapat membangun layanan atau perangkat lunak baru yang menakjubkan yang dapat menggunakan Bitcoin."
     donation: "Donasi"

@@ -588,7 +588,7 @@ nl:
     node: "Maak deel uit van het netwerk"
     nodetxt: "Als u een goede internetverbinding heeft, kunt u het Bitcoin-netwerk versterken door <a href=\"#download#\">full node software</a> op uw computer of server te laten draaien met poort 8333 open. \"Full nodes\" beveiligen en versturen alle transacties."
     mining: "Mining"
-    miningtxt: "U kunt beginnen met de <a href=\"http://www.bitcoinmining.com/\">mining van Bitcoins</a> om de transactieverwerking te ondersteunen. Om het netwerk te beschermen, is het raadzaam om <a href=\"http://mempool.info/pools\">kleinere miningpools</a> of zelfs gedecentraliseerde pools zoals <a href=\"http://p2pool.in/\">P2Pool</a> of <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> met ondersteuning voor getblocktemplate (GBT) te gebruiken."
+    miningtxt: "U kunt beginnen met de <a href=\"http://www.bitcoinmining.com/\">mining van Bitcoins</a> om de transactieverwerking te ondersteunen. Om het netwerk te beschermen, is het raadzaam om kleinere miningpools of zelfs gedecentraliseerde pools zoals <a href=\"http://p2pool.in/\">P2Pool</a> of <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> met ondersteuning voor getblocktemplate (GBT) te gebruiken."
     develop: "Ontwikkeling"
     developtxt: "Bitcoin is open source. Bent u softwareontwikkelaar, dan kunt u uw superkrachten inzetten voor de goede zaak en helpen <a href=\"#development#\">Bitcoin te verbeteren</a>. Of u kunt verbluffende nieuwe diensten of software ontwikkelen die gebruikmaken van Bitcoin."
     donation: "Doneren"

@@ -594,7 +594,7 @@ fr:
     node: "Être le réseau"
     nodetxt: "Si vous avez une bonne connexion Internet, vous pouvez fortifier le réseau Bitcoin en laissant un <a href=\"/en/full-node\">logiciel nœud complet</a> tourner en permanence sur votre ordinateur ou votre serveur avec le port 8333 ouvert. Les nœuds complets sécurisent et relaient toutes les transactions des utilisateurs"
     mining: "Minage"
-    miningtxt: "Vous pouvez commencer à <a href=\"http://www.bitcoinmining.com/\">miner des bitcoins</a> pour aider à traiter les transactions. Afin de protéger le réseau, vous devriez rejoindre des <a href=\"http://mempool.info/pools\">piscines de minage plus petites</a> et de préférence décentralisées tel que <a href=\"http://p2pool.in/\">P2Pool</a> ou <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">des piscines</a> prenant en charge getblocktemplate (GBT)."
+    miningtxt: "Vous pouvez commencer à <a href=\"http://www.bitcoinmining.com/\">miner des bitcoins</a> pour aider à traiter les transactions. Afin de protéger le réseau, vous devriez rejoindre des piscines de minage plus petites et de préférence décentralisées tel que <a href=\"http://p2pool.in/\">P2Pool</a> ou <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">des piscines</a> prenant en charge getblocktemplate (GBT)."
     develop: "Développement"
     developtxt: "Bitcoin est un logiciel libre. Si vous êtes un développeur, vous pouvez utiliser vos super pouvoirs pour faire le bien et <a href=\"#development#\">améliorer Bitcoin</a>. Ou vous pouvez construire des services ou des logiciels fantastiques qui peuvent utiliser Bitcoin."
     donation: "Dons"

@@ -555,7 +555,7 @@ sl:
     node: "Bodite del omrežja"
     nodetxt: "Če imate dobro internetno povezavo, lahko pomagate okrepiti omrežje bitcoin s tem, da na svojem računalniku poganjate <a href=\"#download#\">polno vozlišče</a> z odprtimi vrati 8333. Polna vozlišča preverjajo in posredujejo vsa nakazila v omrežju."
     mining: "Rudarjenje"
-    miningtxt: "Z <a href=\"http://www.bitcoinmining.com/\">rudarjenjem bitcoinov</a> lahko pomagate omrežju procesirati nakazila. Če želite pomagati zaščititi omrežje, se pridružite kakemu manjšemu <a href=\"http://mempool.info/pools\">rudarskemu združenju</a> in dajte prednost decentraliziranim združenjem kot je <a href=\"http://p2pool.in/\">P2Pool</a> ali <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">združenjem</a> s podporo za getblocktemplate (GBT)."
+    miningtxt: "Z <a href=\"http://www.bitcoinmining.com/\">rudarjenjem bitcoinov</a> lahko pomagate omrežju procesirati nakazila. Če želite pomagati zaščititi omrežje, se pridružite kakemu manjšemu rudarskemu združenju in dajte prednost decentraliziranim združenjem kot je <a href=\"http://p2pool.in/\">P2Pool</a> ali <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">združenjem</a> s podporo za getblocktemplate (GBT)."
     develop: "Razvoj"
     developtxt: "Bitcoin je prosta programska oprema. Če ste programer, lahko s svojimi sposobnostmi koristite skupnosti in <a href=\"#development#\">izboljšate bitcoin</a>. Lahko pa izdelate nove storitve ali programsko opremo za uporabo bitcoina."
     donation: "Donacije"

@@ -588,7 +588,7 @@ hi:
     node: "प्रसारक बनिये"
     nodetxt: "यदि आपके पास एक अच्छा इंटरनेट कनेक्शन है, तो, आप Bitcoin नेटवर्क को मजबूत कर सकते हैं <a href=\"#download#\">पूर्ण नोड सॉफ्टवेयर</a> अपने कंप्यूटर पर चालु रख कर  या सर्वर पोर्ट 8333 खुला रख कर।  पूर्ण नोड्स सभी लेनदेन को हासिल करके उसका प्रसारण करता है।"
     mining: "खनन"
-    miningtxt: "आप यहां शुरू कर सकते हैं <a href=\"http://www.bitcoinmining.com/\">mining bitcoins</a> लेनदेन प्रसंस्करण की मदद करने। नेटवर्क की रक्षा के लिए, आपको शामिल होने चाहिए <a href=\"http://mempool.info/pools\">छोटे खनन पूल</a> और विकेन्द्रीकृत ताल पसंद करना होगा जैसे <a href=\"http://p2pool.in/\">P2Pool</a> या <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">पूल</a> getblocktemplate (GBT) समर्थन के साथ।"
+    miningtxt: "आप यहां शुरू कर सकते हैं <a href=\"http://www.bitcoinmining.com/\">mining bitcoins</a> लेनदेन प्रसंस्करण की मदद करने। नेटवर्क की रक्षा के लिए, आपको शामिल होने चाहिए छोटे खनन पूल और विकेन्द्रीकृत ताल पसंद करना होगा जैसे <a href=\"http://p2pool.in/\">P2Pool</a> या <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">पूल</a> getblocktemplate (GBT) समर्थन के साथ।"
     develop: "विकास"
     developtxt: "Bitcoin मुफ्त सॉफ्टवेयर है। तो यदि आप डेवलपर हैं तो आप अपनी सुपर शक्तियों का उपयोग अच्छे के लिए कर सकते हैं और  <a href=\"#development#\">Bitcoin में सुधार </a> या आप अद्भुत नई सेवाओं या सॉफ्टवेयर का निर्माण कर सकते हैं जो Bitcoin का उपयोग कर सकते हैं। "
     donation: "दान"

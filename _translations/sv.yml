@@ -602,7 +602,7 @@ sv:
     node: "Var en del av nätverket"
     nodetxt: "Om du har en bra Internetuppkoppling, kan du förstärka Bitcoin-nätverkat genom att ha en <a href=\"/en/full-node\">fullnodsmjukvara</a> körande på din dator eller server med port 8333 öppen. Fullnoder säkrar och vidarebefordrar alla transaktioner."
     mining: "Utvinning"
-    miningtxt: "Du kan börja <a href=\"http://www.bitcoinmining.com/\">utvinna bitcoins</a> för att hjälpa till med processeringen av transaktioner. För att skydda nätverket ska du gå med i en <a href=\"http://mempool.info/pools\">mindre utvinningspool</a> och föredra decentraliserade pooler som <a href=\"http://p2pool.in/\">P2Pool</a> eller <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pooler</a> med getblocktemplate (GBT) stöd."
+    miningtxt: "Du kan börja <a href=\"http://www.bitcoinmining.com/\">utvinna bitcoins</a> för att hjälpa till med processeringen av transaktioner. För att skydda nätverket ska du gå med i en mindre utvinningspool och föredra decentraliserade pooler som <a href=\"http://p2pool.in/\">P2Pool</a> eller <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pooler</a> med getblocktemplate (GBT) stöd."
     develop: "Utveckling"
     developtxt: "Bitcoin är gratis och öppen programvara. Så om du är utvecklare kan du använda dina super-krafter till att göra gott och <a href=\"#development#\">förbättra Bitcoin</a>. Eller så kan du bygga nya häftiga tjänster som använder Bitcoin."
     donation: "Donationer"

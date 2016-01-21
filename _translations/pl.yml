@@ -594,7 +594,7 @@ pl:
     node: "Bądź częścią sieci Bitcoin."
     nodetxt: "Jeśli posiadasz dobre połączenie internetowe, możesz wzmocnić sięc Bitcoin uruchamiając <a href=\"/en/full-node\">oprogramowanie pełnych węzłów</a> na swoim komputerze lub serwerze z otwartym portem 8333. Pełne węzły zabezpieczają i przekazują wszystkie transakcje."
     mining: "Wydobycie"
-    miningtxt: "Możesz zacząć <a href=\"http://www.bitcoinmining.com/\">wydobywać bitcoiny</a>, aby pomóc w przetwarzaniu transakcji. W celu ochrony sieci możesz dołączyć do <a href=\"http://mempool.info/pools\">mniejszych kopalni</a> oraz wybierać kopalnie zdecentralizowane, takie jak <a href=\"http://p2pool.in/\">P2Pool</a> lub <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">kopalnie</a> obsługujące getblocktemplate (GBT)."
+    miningtxt: "Możesz zacząć <a href=\"http://www.bitcoinmining.com/\">wydobywać bitcoiny</a>, aby pomóc w przetwarzaniu transakcji. W celu ochrony sieci możesz dołączyć do mniejszych kopalni oraz wybierać kopalnie zdecentralizowane, takie jak <a href=\"http://p2pool.in/\">P2Pool</a> lub <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">kopalnie</a> obsługujące getblocktemplate (GBT)."
     develop: "Rozwój"
     developtxt: "Bitcoin jest wolnym oprogramowaniem. Jeśli jesteś programistą możesz użyć swoich super mocy, by czynić dobro <a href=\"#development#\">ulepszając Bitcoin</a>. Możesz też stworzyć wspaniałe nowe usługi lub aplikacje używające Bitcoin."
     donation: "Dotacje"

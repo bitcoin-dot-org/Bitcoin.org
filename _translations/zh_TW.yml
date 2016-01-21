@@ -588,7 +588,7 @@ zh_TW:
     node: "加入網路"
     nodetxt: "如果您的網路連接很好，您可以通過在你的電腦或伺服器上運作<a href=\"#download#\">全節點軟體</a>并保持8333端口開放來強化 Bitcoin 網路。全節點會保障所有的交易安全并轉送它們。"
     mining: "採礦"
-    miningtxt: "您可以開始<a href=\"http://www.bitcoinmining.com/\">挖比特幣礦</a>來幫助處理交易。爲了保護這個網路，您應該加入<a href=\"http://mempool.info/pools\">較小的挖礦區</a>并優選分散的區，像<a href=\"http://p2pool.in/\">P2Pool</a> 或者有 getblocktemplate (GBT) 支持的<a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">區</a>。"
+    miningtxt: "您可以開始<a href=\"http://www.bitcoinmining.com/\">挖比特幣礦</a>來幫助處理交易。爲了保護這個網路，您應該加入較小的挖礦區并優選分散的區，像<a href=\"http://p2pool.in/\">P2Pool</a> 或者有 getblocktemplate (GBT) 支持的<a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">區</a>。"
     develop: "開發"
     developtxt: "Bitcoin 是免費軟體。如果你是開發人員，你就能夠使用你的超能力來<a href=\"#development#\">改善 Bitcoin</a>。你也可以建立一些很棒的可以使用 Bitcoin 的服務或軟體。"
     donation: "贊助"

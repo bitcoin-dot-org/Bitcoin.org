@@ -588,7 +588,7 @@ ja:
     node: "ネットワークになる"
     nodetxt: "あなたのインターネットのコネクションが良ければ、8333番ポートを開けて<a href=\"#download#\">フルノード・ソフトウエア</a>をお使いのコンピューター上やサーバーで作動し続けることでビットコインネットワークを強化することが出来ます。フルノードはすべての取引を確実にし、中継します。"
     mining: "採掘"
-    miningtxt: "取引処理を支援するために<a href=\"http://www.bitcoinmining.com/\">ビットコインの採掘</a>を始めることができます。ネットワークを保護するために<a href=\"http://mempool.info/pools\">小さな採掘プール</a>に参加し、 <a href=\"http://p2pool.in/\">P2Pプール</a>やgetblocktemplate (GBT)サポートのある<a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">プール</a>など、分散化型プールをお選びください。"
+    miningtxt: "取引処理を支援するために<a href=\"http://www.bitcoinmining.com/\">ビットコインの採掘</a>を始めることができます。ネットワークを保護するために小さな採掘プールに参加し、 <a href=\"http://p2pool.in/\">P2Pプール</a>やgetblocktemplate (GBT)サポートのある<a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">プール</a>など、分散化型プールをお選びください。"
     develop: "開発"
     developtxt: "ビットコインは、フリーソフトウエアです。もし、あなたがデベロッパーならその素晴らしい能力を<a href=\"#development#\">ビットコインの改善</a>に活かすことができます。あるいは、ビットコインを使った素晴らしいサービスやソフトウェアを開発することもできます。"
     donation: "寄付"

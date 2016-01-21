@@ -595,7 +595,7 @@ de:
     node: "Seien Sie das Netzwerk"
     nodetxt: "Falls Sie eine gute Internet Verbindung haben, dann können Sie das Bitcoin Netzwerk unterstützen, indem Sie die <a href=\"/en/full-node\">Full Node-Software</a> auf ihrem Computer oder Server - mit offenem Port 8333 - laufen lassen. Full Nodes sichern und leiten Transkationen weiter."
     mining: "Mining"
-    miningtxt: "Sie können damit beginnen <a href=\"http://www.bitcoinmining.com/\">Bitcoins zu minen</a>, um bei der Verarbeitung von Transaktionen zu helfen. Um das Netzwerk zu schützen, sollten Sie <a href=\"http://mempool.info/pools\">kleineren Mining Pools</a> beitreten, und dezentrale Pools wie <a href=\"http://p2pool.in/\">P2Pool</a> oder <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">Pools</a> mit Unterstützung von getblocktemplate (GBT), bevorzugen."
+    miningtxt: "Sie können damit beginnen <a href=\"http://www.bitcoinmining.com/\">Bitcoins zu minen</a>, um bei der Verarbeitung von Transaktionen zu helfen. Um das Netzwerk zu schützen, sollten Sie kleineren Mining Pools beitreten, und dezentrale Pools wie <a href=\"http://p2pool.in/\">P2Pool</a> oder <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">Pools</a> mit Unterstützung von getblocktemplate (GBT), bevorzugen."
     develop: "Entwicklung"
     developtxt: "Bitcoin ist quelloffen. Wenn Sie ein Entwickler sind, können Sie Ihre Superkräfte nutzen um Gutes zu tun und <a href=\"#development#\">Bitcoin zu verbessern</a>. Sie können auch beeindruckende neue Dienste oder Software bauen, die Bitcoin verwenden."
     donation: "Spenden"

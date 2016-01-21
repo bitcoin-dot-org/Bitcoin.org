@@ -589,7 +589,7 @@ tr:
     node: "Ağa katılın"
     nodetxt: "Eğer iyi bir Internet bağlantınız varsa Bitcoin ağını, bilgisayarınızda yada sunucunuzda 8333 portu açık şekilde <a href=\"#download#\">tam düğüm yazılım</a> çalıştırarak güçlendirebilirsiniz. Tam düğüm tüm işlemleri güvenli hale getirir ve aktarım sağlar."
     mining: "Madencilik"
-    miningtxt: "İşlemleri hızlandırmak adına <a href=\"http://www.bitcoinmining.com/\">bitcoin madenciliğine</a> başlayabilirsiniz. Ağı korumak için <a href=\"http://mempool.info/pools\">küçük maden havuzlarına</a> katılmalı ve merkezci olmayan <a href=\"http://p2pool.in/\">P2Pool</a> ya da getblocktemplate (GBT) destekli <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">havuzlar</a> seçmelisiniz."
+    miningtxt: "İşlemleri hızlandırmak adına <a href=\"http://www.bitcoinmining.com/\">bitcoin madenciliğine</a> başlayabilirsiniz. Ağı korumak için küçük maden havuzlarına katılmalı ve merkezci olmayan <a href=\"http://p2pool.in/\">P2Pool</a> ya da getblocktemplate (GBT) destekli <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">havuzlar</a> seçmelisiniz."
     develop: "Geliştirme"
     developtxt: "Bitcoin ücretsiz bir yazılımdır. Yani eğer br geliştiriciyseniz süper güçlerinizi iyiye kullanarak <a href=\"#development#\">Bitcoin'i geliştirebilir</a> veya Bitcoin kullanan yeni servis ve yazılımlar geliştirebilirsiniz."
     donation: "Bağış"

@@ -589,7 +589,7 @@ pt_BR:
     node: "Faça parte da rede Bitcoin"
     nodetxt: "Se você tem uma boa conexão de internet, você pode reforçar a rede Bitcoin ao manter o<a href=\"#download#\"> programa full node</a> rodando no seu computador e servidor com port 8333 aberto. Full nodes são transações seguras e retransmitidas."
     mining: "Mineração"
-    miningtxt: "Você pode começar a <a href=\"http://www.bitcoinmining.com/\">minerar Bitcoins</a> para ajudar a processar transações. De modo a proteger a rede, você pode participar de <a href=\"http://mempool.info/pools\">pequenas piscinas de mineração</a> e preferir piscinas descentralizadas como <a href=\"http://p2pool.in/\">P2Pool</a> ou <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> com suporte de getblocktemplate (GBT)."
+    miningtxt: "Você pode começar a <a href=\"http://www.bitcoinmining.com/\">minerar Bitcoins</a> para ajudar a processar transações. De modo a proteger a rede, você pode participar de pequenas piscinas de mineração e preferir piscinas descentralizadas como <a href=\"http://p2pool.in/\">P2Pool</a> ou <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> com suporte de getblocktemplate (GBT)."
     develop: "Contribuindo com código"
     developtxt: "Bitcoin é código-livre. Se você é um desenvolvedor, você pode usar seus super poderes para <a href=\"#development#\">aperfeiçoar a Bitcoin</a>. Ou criar novos e incríveis serviços que se beneficiam da rede."
     donation: "Doando"

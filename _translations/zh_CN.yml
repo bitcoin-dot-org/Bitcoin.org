@@ -588,7 +588,7 @@ zh_CN:
     node: "成为比特币网络的一部分"
     nodetxt: "如果你有一个很好的网络连接，你可以通过保持<a href=\"#download#\">完全节点软件</a>在你的电脑或服务器上的运行，同时保持端口 8333 处于开放状态来加强比特币网络。完全节点传送所有的交易并保证交易安全。"
     mining: "挖矿"
-    miningtxt: "您可以开始通过<a href=\"http://www.bitcoinmining.com/\">比特币挖矿</a> 来帮助处理交易。为了保护网络，你应该加入 <a href=\"http://mempool.info/pools\">较小的矿池</a>并且优先考虑去中心化的矿池比如<a href=\"http://p2pool.in/\">P2Pool</a>或者支持块模板(GBT)的<a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">矿池</a>。 "
+    miningtxt: "您可以开始通过<a href=\"http://www.bitcoinmining.com/\">比特币挖矿</a> 来帮助处理交易。为了保护网络，你应该加入 较小的矿池并且优先考虑去中心化的矿池比如<a href=\"http://p2pool.in/\">P2Pool</a>或者支持块模板(GBT)的<a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">矿池</a>。 "
     develop: "开发"
     developtxt: "比特币是开源的。如果你是一个开发者，你可以施展你的超能力来做对比特币有利的事和<a href=\"#development#\">改进比特币</a>，或者，你也可以打造出使用比特币的令人惊叹的服务或软件。"
     donation: "捐赠"

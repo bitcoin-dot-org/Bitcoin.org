@@ -555,7 +555,7 @@ bg:
     node: "Станете част от Биткойн мрежата"
     nodetxt: "Ако имате добра интернет връзка, можете да укрепите Биткойн мрежата, оставяйки <a href=\"#download#\">пълният софтуер от възли</a> да работи на вашия компютър или сървър с отворен порт 8333. Пълните възли осигуряват и предават всички транзакции. "
     mining: "Добив"
-    miningtxt: "Можете да започнете <a href=\"http://www.bitcoinmining.com/\">mining bitcoins</a> да помогне обработка на транзакции. За да се защитят мрежата ви, трябва да се присъединят към <a href=\"http://mempool.info/pools\">smaller добив басейни</a> и предпочитат децентрализирано басейни като <a href=\"http://p2pool.in/\">P2Pool</a> или <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> с getblocktemplate (GBT) подкрепа. "
+    miningtxt: "Можете да започнете <a href=\"http://www.bitcoinmining.com/\">mining bitcoins</a> да помогне обработка на транзакции. За да се защитят мрежата ви, трябва да се присъединят към smaller добив басейни и предпочитат децентрализирано басейни като <a href=\"http://p2pool.in/\">P2Pool</a> или <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> с getblocktemplate (GBT) подкрепа. "
     develop: "Включете се в разработката"
     developtxt: "Биткойн е свободен софтуер. Ако вие сте разработчик, ще бъде чудесно да използвате отличните си уменията, с които да <a href=\"#development#\">подобрите Биткойн</a>, като дори може да създадете нови услуги или софтуер, които да използват Биткойн."
     donation: "Направете дарение"
