@@ -118,7 +118,7 @@ in the previous output's pubkey script.  Signature scripts are also
 called scriptSigs.
 
 Pubkey scripts and signature scripts combine secp256k1 pubkeys
-and signatures with conditional logic, creating a programable
+and signatures with conditional logic, creating a programmable
 authorization mechanism.
 
 ![Unlocking A P2PKH Output For Spending](/img/dev/en-unlocking-p2pkh-output.svg)
@@ -380,7 +380,7 @@ list of secp256k1 signatures in the signature script must be prefaced with an ex
 
 The signature script must provide signatures in the same order as the
 corresponding public keys appear in the pubkey script or redeem
-script. See the desciption in [`OP_CHECKMULTISIG`][op_checkmultisig]
+script. See the description in [`OP_CHECKMULTISIG`][op_checkmultisig]
 for details.
 
 {% endautocrossref %}
