@@ -746,6 +746,8 @@ Basic requirements:
 
 Optional criteria (some could become requirements):
 
+- Shall not serve as a portal to a brokerage or exchange
+- Shall not serve as a portal to a bank or a banking network (distributed ledger)
 - Received independent security audit(s)
 - Avoid address reuse by displaying a new receiving address for each transaction in the wallet UI
 - Does not show "received from" Bitcoin addresses in the UI
