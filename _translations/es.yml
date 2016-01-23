@@ -148,7 +148,7 @@ es:
     checkfailcontrolthirdparty: "Dinero controlado por un tercero"
     checkfailcontrolthirdpartytxt: "Este servicio tiene control total sobre tus bitcoins. Esto significa que necesitas confiar en que el servicio no perderá tus fondos en un incidente suyo. Al día de hoy, la mayoría de las billeteras web no aseguran sus depósitos como un banco, y muchos servicios de este tipo han sufrido violaciones de seguridad en el pasado."
     checkgoodvalidationfullnode: "Validación completa"
-    checkgoodvalidationfullnodetxt: "Esta billetera es un nodo completo que valida y retransmite transacciones a la red de Bitcoin. Esto significa que no requieres confiar en un tercero al momento de verificar los pagos. Los nodos completos proveen el más alto nivel de seguridad y son esenciales para proteger la red. Sin embargo, requieren más espacio (más de 20GB), ancho de banda, y un mayor tiempo de sincronización inicial."
+    checkgoodvalidationfullnodetxt: "Esta billetera es un nodo completo que valida y retransmite transacciones a la red de Bitcoin. Esto significa que no requieres confiar en un tercero al momento de verificar los pagos. Los nodos completos proveen el más alto nivel de seguridad y son esenciales para proteger la red. Sin embargo, requieren más espacio (más de 65GB), ancho de banda, y un mayor tiempo de sincronización inicial."
     checkneutralvalidationvariable: "Validación variable"
     checkneutralvalidationvariabletxt: "Las funciones de validación de pagos son provistas por el monedero que uses con este dispositivo. Por favor ve el puntaje de validación para el monedero que planeas usar."
     checkpassvalidationspvp2p: "Validación simplificada"
@@ -233,7 +233,7 @@ es:
     sourcecode: "Obtener el código de origen"
     versionhistory: "Mostrar historial de versiones"
     notelicense: "Bitcoin Core es un proyecto <a href=\"https://www.fsf.org/about/what-is-free-software\">gratuito de código abierto</a> impulsado por la comunidad, liberado bajo la licencia <a href=\"http://opensource.org/licenses/mit-license.php\">MIT</a>."
-    notesync: "La sincronizazción inicial de Bitcoin Core puede tomar un largo tiempo. Debería asegurarse de que dispone de suficiente ancho de banda y espacio de almacenamiento para la descarga completa de lacadena de bloques (más de 20GB). Si sabe como descargar un archivo torrent, puede acelerar el proceso poniendo  <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> ( una copia anterior de la cadena de bloques) en el directorio de datos de Bitcoin Core antes de iniciar el programa."
+    notesync: "La sincronizazción inicial de Bitcoin Core puede tomar un largo tiempo. Debería asegurarse de que dispone de suficiente ancho de banda y espacio de almacenamiento para la descarga completa de lacadena de bloques (más de 65GB). Si sabe como descargar un archivo torrent, puede acelerar el proceso poniendo  <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> ( una copia anterior de la cadena de bloques) en el directorio de datos de Bitcoin Core antes de iniciar el programa."
     patient: "Debe tener paciencia"
   events:
     title: "Conferencias y eventos - Bitcoin"
