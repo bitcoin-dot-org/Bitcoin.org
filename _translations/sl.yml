@@ -142,7 +142,7 @@ sl:
     checkfailcontrolthirdparty: "Denar upravlja tretja oseba"
     checkfailcontrolthirdpartytxt: "Ta storitev polno upravlja vaše bitcoine. To pomeni, da jim morate zaupati, da vaših sredstev ne bodo izgubili zaradi napak na njihovi strani. Danes večina spletnih denarnic sredstev nima zavarovanih, kot jih imajo npr. banke; mnoge takšne storitve so v preteklosti utrpele izgube zaradi vdorov."
     checkgoodvalidationfullnode: "Polno preverjanje"
-    checkgoodvalidationfullnodetxt: "Ta denarnica je polno vozlišče in preverja ter posreduje vse transakcije v omrežju bitcoin. To pomeni, da za preverjanje plačil ni potrebno zaupati nobeni tretji osebi. Polna vozlišča nudijo najvišjo stopnjo varnosti in so bistvena za zaščito celotnega omrežja. Zahtevajo pa več prostora na disku vašega računalnika (prek 20 GB), večjo pasovno širino ter daljši čas začetne uskladitve z omrežjem."
+    checkgoodvalidationfullnodetxt: "Ta denarnica je polno vozlišče in preverja ter posreduje vse transakcije v omrežju bitcoin. To pomeni, da za preverjanje plačil ni potrebno zaupati nobeni tretji osebi. Polna vozlišča nudijo najvišjo stopnjo varnosti in so bistvena za zaščito celotnega omrežja. Zahtevajo pa več prostora na disku vašega računalnika (prek 65 GB), večjo pasovno širino ter daljši čas začetne uskladitve z omrežjem."
     checkneutralvalidationvariable: "Spremenljivo preverjanje"
     checkneutralvalidationvariabletxt: "Način preverjanja določa programska denarnica, ki jo uporabljate s to napravo. Prosimo, oglejte si opis načina preverjanja pri denarnici, ki jo nameravate uporabljati."
     checkpassvalidationspvp2p: "Poenostavljeno preverjanje"
@@ -227,7 +227,7 @@ sl:
     sourcecode: "Prenesite si izvorno kodo"
     versionhistory: "Pokaži zgodovino različic"
     notelicense: "Bitcoin Core je <a href=\"https://www.fsf.org/about/what-is-free-software\">prostoprogramski</a> projekt, ki ga poganja skupnost, izdaja pa se pod <a href=\"http://opensource.org/licenses/mit-license.php\">licenco MIT</a>."
-    notesync: "Začetna uskladitev z omrežjem aplikacije Bitcoin Core lahko traja dolgo. Potrebovali boste dovolj pasovne širine in prostora za hrambo celotne verige blokov (prek 20 GB). Če znate prenesti datoteko prek omrežja torrent, lahko ta postopek pospešite tako, da skopirate datoteko <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (nedavno kopijo verige blokov) v direktorij data aplikacije Bitcoin Core, preden aplikacijo zaženete."
+    notesync: "Začetna uskladitev z omrežjem aplikacije Bitcoin Core lahko traja dolgo. Potrebovali boste dovolj pasovne širine in prostora za hrambo celotne verige blokov (prek 65 GB). Če znate prenesti datoteko prek omrežja torrent, lahko ta postopek pospešite tako, da skopirate datoteko <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (nedavno kopijo verige blokov) v direktorij data aplikacije Bitcoin Core, preden aplikacijo zaženete."
     patient: "Potrebnega bo nekaj potrpljenja."
   events:
     title: "Konference in dogodki - bitcoin"
