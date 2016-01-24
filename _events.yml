@@ -1,34 +1,42 @@
-- date: 2016-01-06
-  title: "Bitcoin Wednesday Conference"
-  venue: "Melkweg"
-  address: "Leidseplein, Lijnbaansgracht 234a"
+- date: 2016-02-08
+  title: "Bitcoin Developers Workshop 2016"
+  venue: "Beurs van Berlage, former Amsterdam Stock Exchange"
+  address: "Oudebrugsteeg 9, 1012 JN"
+  city: "Amsterdam"
+  country: "Netherlands"
+  link: "http://www.bitcoinference.com/Bitcoin-Developers-Workshop/index.html"
+
+- date: 2016-02-11
+  title: "Bitcoinference 2016"
+  venue: "Beurs van Berlage, former Amsterdam Stock Exchange"
+  address: "Oudebrugsteeg 9, 1012 JN"
+  city: "Amsterdam"
+  country: "Netherlands"
+  link: "http://www.bitcoinference.com/"
+
+- date: 2016-02-16
+  title: "Arnhem Bitcoincity meetup"
+  venue: "Iveau Burgers & Wijnbar"
+  address: "Kleine Oord 78"
+  city: "Arnhem"
+  country: "The Netherlands"
+  link: "http://www.meetup.com/Arnhem-Bitcoin-Users/events/227847220/"
+
+- date: 2016-02-17
+  title: "Bitcoin4Beginners Conference"
+  venue: "Beurs van Berlage, former Amsterdam Stock Exchange"
+  address: "Oudebrugsteeg 9, 1012 JN"
+  city: "Amsterdam"
+  country: "Netherlands"
+  link: "http://bitcoinference.com/Bitcoin4Beginners/Amsterdam/Beurs-van-Berlage/2016/February/17/Wednesday.html"
+
+- date: 2016-02-17
+  title: "d10e - Exploring the future of decentralization"
+  venue: "Beurs van Berlage"
+  address: "Damrak 243, 1012 ZJ Amsterdam, Netherlands"
   city: "Amsterdam"
   country: "The Netherlands"
-  link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-31/"
-
-- date: 2016-01-08
-  title: "The Digital Money Forum 2016"
-  venue: "Venetian, Level 4 Marcello 4404 "
-  address: "Venetian Hotel & Casino 3355 Las Vegas Blvd S, Las Vegas, NV 89109 "
-  city: "Las Vegas, NV"
-  country: "USA"
-  link: "http://thedigitalmoneyforum.com/"
-
-- date: 2016-01-12
-  title: "BIP001: Winter Edition"
-  venue: "Leopolis"
-  address: "Miskevycha Square, 9"
-  city: "Lviv"
-  country: "Ukraine"
-  link: "http://bip001.com"
-
-- date: 2016-01-21
-  title: "The North American Bitcoin Conference"
-  venue: "James L Knight Center"
-  address: "400 SE 2nd Ave"
-  city: "Miami, Florida"
-  country: "United States of America"
-  link: "http://www.btcmiami.com"
+  link: "http://d10e.org/#amsterdam"
 
 - date: 2016-03-07
   title: "Blockchain Conference San Francisco"
