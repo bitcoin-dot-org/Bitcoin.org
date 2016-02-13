@@ -64,8 +64,8 @@ wallets:
     platform:
       desktop:
         text: "walletarmory"
-        link: "https://bitcoinarmory.com"
-        source: "https://github.com/etotheipi/BitcoinArmory"
+        link: "https://github.com/goatpig/BitcoinArmory/releases"
+        source: "https://github.com/goatpig/BitcoinArmory"
         screenshot: "armory.png"
         os:
         - windows
@@ -857,7 +857,7 @@ wallets:
   <div>
     <h2>{{ wallet[1].title }}</h2>
     <div>{% for os in platform[1].os %}<img src="/img/os/{{ os }}.png" alt="{% translate platform{{os}} %}" title="{% translate platform{{os}} %}" />{% endfor %}</div>
-    <div>{% if platform[1].link == 'bitcoincore' %}<a href="/{{ page.lang }}/{% translate download url %}">{% translate walletdownload %}</a>{% elsif platform[1].link contains 'play.google.com' or platform[1].link contains 'itunes.apple.com' or platform[1].link contains 'chrome.google.com' %}<a href="{{ platform[1].link }}">{% translate walletdownload %}</a>{% else %}<a href="{{ platform[1].link }}">{% translate walletvisit %}</a>{% endif %}{% if platform[1].source %}<a href="{{ platform[1].source }}">{% translate walletsourcecode %}</a>{% endif %}</div>
+    <div>{% if platform[1].link == 'bitcoincore' %}<a href="/{{ page.lang }}/{% translate download url %}">{% translate walletdownload %}</a>{% elsif platform[1].link contains 'play.google.com' or platform[1].link contains 'itunes.apple.com' or platform[1].link contains 'chrome.google.com' or platform[1].link contains 'goatpig' %}<a href="{{ platform[1].link }}">{% translate walletdownload %}</a>{% else %}<a href="{{ platform[1].link }}">{% translate walletvisit %}</a>{% endif %}{% if platform[1].source %}<a href="{{ platform[1].source }}">{% translate walletsourcecode %}</a>{% endif %}</div>
     <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
       {% for check in platform[1].check %}{% if check[0] == 'privacy' and platform[1].privacycheck %}
       <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><div>
