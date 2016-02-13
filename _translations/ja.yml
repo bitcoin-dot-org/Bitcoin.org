@@ -231,7 +231,7 @@ ja:
     sourcecode: "ソースコードを取得する"
     versionhistory: "バージョン履歴を表示"
     notelicense: "ビットコイン・コア は、コミュニティによって運営されている<a href=\"https://www.fsf.org/about/what-is-free-software\">フリーソフトウエア</a>プロジェクトであり、<a href=\"http://opensource.org/licenses/mit-license.php\">MITライセンス</a>の元に公開されています。"
-    notesync: "ビットコイン・コアの初期同期には長時間かかります。 完全なブロックチェーン・サイズ (20GB以上)に十分な帯域幅とストレージがあることを確認してください。トレント・ファイルのダウンロードの仕方をご存知なら、ソフトウエアを始める前に、<a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (ブロックチェーンの以前のコピー) をビットコイン・コア・データ・ディレクトリーに入れることで、このプロセスを短縮することが出来ます。"
+    notesync: "ビットコイン・コアの初期同期には長時間かかります。 完全なブロックチェーン・サイズ (50GB以上)に十分な帯域幅とストレージがあることを確認してください。トレント・ファイルのダウンロードの仕方をご存知なら、ソフトウエアを始める前に、<a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (ブロックチェーンの以前のコピー) をビットコイン・コア・データ・ディレクトリーに入れることで、このプロセスを短縮することが出来ます。"
     patient: "我慢が必要です"
   events:
     title: "会議とイベント - ビットコイン"
