@@ -56,31 +56,6 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
-- armory:
-    title: "Armory"
-    titleshort: "Armory"
-    compat: "desktop windows mac linux"
-    level: 2
-    platform:
-      desktop:
-        text: "walletarmory"
-        link: "https://bitcoinarmory.com"
-        source: "https://github.com/etotheipi/BitcoinArmory"
-        screenshot: "armory.png"
-        os:
-        - windows
-        - mac
-        - linux
-        check:
-          control: "checkgoodcontrolfull"
-          validation: "checkgoodvalidationfullnoderequired"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkgoodprivacyimproved"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkpassprivacydisclosurefullnode"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - electrum:
     title: "Electrum"
     titleshort: "Electrum"
