@@ -565,7 +565,7 @@ function showAds(ads) {
 		ad_slot_link.appendChild(document.createTextNode(ad.text));
 
 		var ad_slot_disclaimer = document.createElement("span");
-		ad_slot_disclaimer.className = "ad-slot-disclaimer"
+		ad_slot_disclaimer.className = "ad-slot-disclaimer";
 		ad_slot_disclaimer.appendChild(document.createTextNode("Ad"));
 
 		ad_slot_inner_container.appendChild(ad_slot_disclaimer);
