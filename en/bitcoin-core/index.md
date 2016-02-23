@@ -92,9 +92,7 @@ breadcrumbs:
 {% endcapture %}
 {% assign array_releases = text_releases | strip_newlines | split: '::' %}
 
-  - 2016-01-09 - [New Bitcoin Core website](https://bitcoincore.org)
-  - 2016-01-07 - [Project Statement](/en/bitcoin-core/2016-01-07-statement)
-  - 2015-12-21 - Capacity increases for the Bitcoin system: [Statement](/en/bitcoin-core/capacity-increases) & [FAQ](/en/bitcoin-core/capacity-increases-faq)
+  - [New Bitcoin Core website](https://bitcoincore.org)
 {% comment %}<!-- show the latest three releases -->{% endcomment %}
 {% for release in array_releases %}
  {% if forloop.index <= 3 %}
