@@ -10,7 +10,7 @@ required:
         A transaction that uses the same input as an already broadcast
         transaction. An attempt of duplication, deceit, or conversion, 
         will be adjudicated when only one of the transactions is recorded
-        in the block-chain.
+        in the blockchain.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Double spend
