@@ -7,8 +7,10 @@ required:
     title_max_40_characters_no_formatting: Double Spend
 
     summary_max_255_characters_no_formatting: >
-        A transaction that spends the same input as spent in another
-        transaction.
+        A transaction that uses the same input as an already broadcast
+        transaction. An attempt of duplication, deceit, or conversion, 
+        will be adjudicated when only one of the transactions is recorded
+        in the block-chain.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Double spend
