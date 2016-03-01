@@ -8,7 +8,7 @@ required:
 
     summary_max_255_characters_no_formatting: >
         A transaction that uses the same input as an already broadcast
-        transaction. An attempt of duplication, deceit, or conversion, 
+        transaction. The attempt of duplication, deceit, or conversion, 
         will be adjudicated when only one of the transactions is recorded
         in the blockchain.
 
@@ -22,7 +22,7 @@ optional:
         - double-spend
         - double-spends
         - double-spent
-        - dobule spending
+        - double spending
         - double-spending
 
     not_to_be_confused_with_capitalize_first_letter:
