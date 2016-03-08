@@ -365,7 +365,7 @@ al canale IRC [#bitcoin-dev][].
 
 [#bitcoin-dev]: https://webchat.freenode.net/?channels=bitcoin-dev&amp;uio=d4
 [actively studied]: http://diyhpl.us/wiki/transcripts/scalingbitcoin/bitcoin-block-propagation-iblt-rusty-russell/
-[bip-segwit]: https://github.com/jl2012/bips/blob/segwit/bip-segwit.mediawiki
+[bip-segwit]: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
 [BIP9]: https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki
 [BIP16]: https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki
 [BIP30]: https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki
