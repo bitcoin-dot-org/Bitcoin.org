@@ -11,6 +11,7 @@ breadcrumbs:
   - bitcoin
   - bcc
   - Capacity increases
+moved_url: https://bitcoincore.org/en/2015/12/21/capacity-increase
 ---
 # Capacity increases for the Bitcoin system
 
@@ -28,6 +29,7 @@ For more information, please see the
 
 Other versions of this page:
 
+- [Italiano](/it/bitcoin-core/capacity-increases)
 - [简体中文](/zh_CN/bitcoin-core/capacity-increases)
 - [繁體中文](/zh_TW/bitcoin-core/capacity-increases)
 

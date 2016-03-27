@@ -670,7 +670,7 @@ en:
     pagetitle: "Protect your privacy"
     pagedesc: "Bitcoin is often perceived as an anonymous payment network. But in reality, Bitcoin is probably the most transparent payment network in the world. At the same time, Bitcoin can provide acceptable levels of privacy when used correctly. <b>Always remember that it is your responsibility to adopt good practices in order to protect your privacy</b>."
     traceable: "Understanding Bitcoin traceability"
-    traceabletxt: "Bitcoin works with an unprecedented level of transparency that most people are not used to dealing with. All Bitcoin transactions are public, traceable, and permanently stored in the Bitcoin network. Bitcoin addresses are the only information used to define where bitcoins are allocated and where they are sent. These addresses are created privately by each user's wallets. However, once addresses are used, they become tainted by the history of all transactions they are involved with. Anyone can see the <a href=\"https://www.biteasy.com\">balance and all transactions</a> of any address. Since users usually have to reveal their identity in order to receive services or goods, Bitcoin addresses cannot remain fully anonymous. For these reasons, Bitcoin addresses should only be used once and users must be careful not to disclose their addresses."
+    traceabletxt: "Bitcoin works with an unprecedented level of transparency that most people are not used to dealing with. All Bitcoin transactions are public, traceable, and permanently stored in the Bitcoin network. Bitcoin addresses are the only information used to define where bitcoins are allocated and where they are sent. These addresses are created privately by each user's wallets. However, once addresses are used, they become tainted by the history of all transactions they are involved with. Anyone can see the <a href=\"https://www.biteasy.com\">balance and all transactions</a> of any address. Since users usually have to reveal their identity in order to receive services or goods, Bitcoin addresses cannot remain fully anonymous. As the block chain is permanent, it's important to note that something not traceable currently may become trivial to trace in the future. For these reasons, Bitcoin addresses should only be used once and users must be careful not to disclose their addresses."
     receive: "Use new addresses to receive payments"
     receivetxt: "To protect your privacy, you should use a new Bitcoin address each time you receive a new payment. Additionally, you can use multiple wallets for different purposes. Doing so allows you to isolate each of your transactions in such a way that it is not possible to associate them all together. People who send you money cannot see what other Bitcoin addresses you own and what you do with them. This is probably the most important advice you should keep in mind."
     public: "Be careful with public spaces"
@@ -747,7 +747,7 @@ en:
     node: "Be the network"
     nodetxt: "If you have a good Internet connection, you can strengthen the Bitcoin network by keeping <a href=\"/en/full-node\">full node software</a> running on your computer or server with port 8333 open. Full nodes are securing and relaying all transactions."
     mining: "Mining"
-    miningtxt: "You can start <a href=\"http://www.bitcoinmining.com/\">mining bitcoins</a> to help processing transactions. In order to protect the network, you should join <a href=\"http://mempool.info/pools\">smaller mining pools</a> and prefer decentralized pools like <a href=\"http://p2pool.in/\">P2Pool</a> or <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> with getblocktemplate (GBT) support."
+    miningtxt: "You can start <a href=\"http://www.bitcoinmining.com/\">mining bitcoins</a> to help processing transactions. In order to protect the network, you should join smaller mining pools and prefer decentralized pools like <a href=\"http://p2pool.in/\">P2Pool</a> or <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> with getblocktemplate (GBT) support."
     develop: "Development"
     developtxt: "Bitcoin is free software. So if you are a developer, you can use your super-powers to do good and <a href=\"#development#\">improve Bitcoin</a>. Or you can build amazing new services or software that can use Bitcoin."
     donation: "Donation"
@@ -845,6 +845,10 @@ en:
     menu-support-bitcoin: "Support Bitcoin"
     menu-vocabulary: Vocabulary
     menu-you-need-to-know: "You need to know"
+    banner-core-moved: |
+      This page has moved to the new Bitcoin Core
+      website (click here to be redirected)
+
     banner-translate: "Translations for this language are outdated. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Click here to help translate bitcoin.org in your language</a>."
     footer: "Released under the <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT license</a>"
     sponsor: "A community website sponsored by"

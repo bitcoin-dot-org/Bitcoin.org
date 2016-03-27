@@ -592,6 +592,8 @@ coordination is usually conducted in #bitcoin-dev on Freenode.
     active: true
     ## Banner displayed if 'active: true'.  Can use HTML formatting
     banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.8.0. Click here for more information."
+    ## Date of the alert in YYYY-MM-DD format
+    date: 2015-03-11
     ---
 
     {% comment %}

@@ -16,13 +16,14 @@ lang: en
 		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
 		<link>https://bitcoin.org/en/events</link>
 	</image>
-	{% filter_for p in site.conferences sort_by:date %}
+        {% assign date_sorted_conferences = site.conferences | sort: 'date' %}
+	{% for p in date_sorted_conferences %}
         <item>
             <title>{{ p.title | htmlescape }}, {{ p.city | htmlescape }} - {{ p.country | htmlescape }}</title>
-            <link>{{ p.link }}</link>
-            <guid>{{ p.link }}</guid>
+            <link>{{p.link}}</link>
+            <guid>{{p.link}}</guid>
             <pubDate>{{ p.date | date: "%a, %d %b %Y" }} 00:00:00 GMT</pubDate>
         </item>
-	{% endfilter_for %}
+	{% endfor %}
 </channel>
 </rss>

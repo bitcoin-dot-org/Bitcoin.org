@@ -11,11 +11,23 @@ breadcrumbs:
   - bitcoin
   - bcc
   - Capacity increases FAQ
+
+moved_url: https://bitcoincore.org/en/2015/12/23/capacity-increases-faq/
 ---
 # Capacity increases FAQ
 
+Other versions: [Italiano](/it/bitcoin-core/capacity-increases-faq) \| [简体中文](/zh_CN/bitcoin-core/capacity-increases-faq) \| [繁體中文](/zh_TW/bitcoin-core/capacity-increases-faq)
+
 1. toc
 {:toc}
+
+## What is the roadmap? {#roadmap}
+
+**[Capacity increases for the Bitcoin system][roadmap]**, written by Gregory
+Maxwell and published 7 Dec 2015 to the bitcoin-dev mailing list. A
+[statement][] supporting the roadmap has been signed by developers who
+([according to GitHub][commit stats]) generated more than [90% of all
+commits][commit spreadsheet] to Bitcoin Core in 2015.
 
 ## What specific technologies are included in the roadmap, and when can we expect them?  {#roadmap-dates}
 
@@ -27,7 +39,7 @@ specific improvements described in the [roadmap][].
 | Feb 2016 | 0.12.0 | [libsecp256k1 verification][] |
 | Feb 2016 | | Segregated witness feature complete & ready for general review |
 | Mar 2016\* | 0.12.x | Deploy OP_CHECKSEQUENCEVERIFY (BIPs [68][BIP68] & [112][BIP112]) + [BIP113][] as first [BIP9][] versionbits soft fork |
-| April 2016\* |  0.12.x |  Deploy segregated witness |
+| April 2016\* |  0.12.x |  Segregated witness deployment including [block size increase](#segwit-size) |
 | 2016 | | Weak blocks, IBLTs, or both |
 
 \* Dates with an asterisk are when we expect to release soft fork-ready code. The code will not be released until it has been well reviewed, and the actual fork will take time to activate ([BIP66][] activated in July 2015 after a few months; [BIP65][] activated in Dec 2015 after only 5 weeks).
@@ -343,7 +355,7 @@ To get specific suggestions on how you can help, please join the
 
 [#bitcoin-dev]: https://webchat.freenode.net/?channels=bitcoin-dev&amp;uio=d4
 [actively studied]: http://diyhpl.us/wiki/transcripts/scalingbitcoin/bitcoin-block-propagation-iblt-rusty-russell/
-[bip-segwit]: https://github.com/jl2012/bips/blob/segwit/bip-segwit.mediawiki
+[bip-segwit]: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
 [BIP9]: https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki
 [BIP16]: https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki
 [BIP30]: https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki
@@ -357,6 +369,8 @@ To get specific suggestions on how you can help, please join the
 [bitcoin core contributor]: /en/bitcoin-core/
 [Bitcoin relay network]: http://bitcoinrelaynetwork.org/
 [code review]: https://bitcoin.org/en/development#code-review
+[commit spreadsheet]: https://docs.google.com/spreadsheets/d/15jtxuA3dVY5NUuYezZ4d_69ASUMYjqFOMxsF9ZX-BKA/edit?usp=sharing
+[commit stats]: https://github.com/bitcoin/bitcoin/graphs/contributors?from=2015-01-01&to=2015-12-31&type=c
 [estimated savings]: https://www.reddit.com/r/bitcoinxt/comments/3w1i6b/i_attended_scaling_bitcoin_hong_kong_these_are_my/cxtkaih
 [increase in total bandwidth]: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/3_block_propagation_1_rosenbaum.pdf
 [libsecp256k1]: https://github.com/bitcoin/secp256k1
@@ -365,5 +379,6 @@ To get specific suggestions on how you can help, please join the
 [miners' panel]: https://youtu.be/H-ErmmDQRFs?t=1086
 [payment channel efficiency]: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/1_layer2_2_dryja.pdf
 [previous soft forks]: https://github.com/bitcoin/bips/blob/master/bip-0123.mediawiki#classification-of-existing-bips
+[statement]: /en/bitcoin-core/capacity-increases
 [weak blocks and iblts]: https://www.youtube.com/watch?v=ivgxcEOyWNs&t=1h40m20s
 [q simple raise]: #size-bump

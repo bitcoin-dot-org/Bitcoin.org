@@ -19,6 +19,7 @@ use the base template -->
 <body>
 {% include layout/base/pagetop-detect-mobile.html %}
 {% include layout/base/pagetop-alert.html %}
+{% include layout/base-core/pagetop-moved-notice.html %}
 
 <div class="head"><div>
   {% include layout/base/head-language-dropdown.html %}
@@ -40,9 +41,8 @@ use the base template -->
   {% endif %}
   {% include layout/base-core/content.html %}
   <div class="footer">
-    {% include layout/base/footer-menu.html %}
-    {% include layout/base/footer-sponsor.html %}
-    {% include layout/base/footer-license.html %}
+    {% include layout/base-core/footer-menu.html %}
+    {% include layout/base-core/footer-license.html %}
   </div>
 </div>
 

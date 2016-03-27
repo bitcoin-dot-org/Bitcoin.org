@@ -11,14 +11,15 @@ breadcrumbs:
   - bcc
   - News
 ---
+{% assign date_sorted_releases = site.releases | sort: 'optional_date', 'last' %}
 <link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin Core releases">
 <div class="versiontext">
   <h1>Bitcoin Core version history<a type="application/rss+xml" href="/en/rss/releases.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
   <ul>
-  {% filter_for p in site.pages reversed sort_by:versionint category:release %}
+  {% for p in date_sorted_releases reversed %}
     <li>
       {% if p.optional_date %}{{ p.optional_date | date:"%Y-%m-%d" }} - {% endif %}<a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a>
     </li>
-  {% endfilter_for %}
+  {% endfor %}
   </ul>
 </div>

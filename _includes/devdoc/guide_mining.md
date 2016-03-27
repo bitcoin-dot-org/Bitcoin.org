@@ -122,7 +122,7 @@ The simplest and earliest method was the now-deprecated Bitcoin Core
 `getwork` RPC, which constructs a header for the miner directly. Since a
 header only contains a single 4-byte nonce good for about 4 gigahashes,
 many modern miners need to make dozens or hundreds of `getwork` requests
-a second. Solo miners may still use `getwork`, but most pools today
+a second. Solo miners may still use `getwork` on v0.9.5 or below, but most pools today
 discourage or disallow its use.
 
 {% endautocrossref %}

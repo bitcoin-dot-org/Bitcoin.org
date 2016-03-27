@@ -163,7 +163,7 @@ have an easy-to-use node.
 * Desktop or laptop hardware running recent versions of Windows, Mac OS
   X, or Linux.
 
-* 50 gigabytes of free disk space
+* {{site.text.bitcoin_datadir_gb}} gigabytes of free disk space
 
 * 2 gigabytes of memory (RAM)
 
@@ -174,7 +174,7 @@ have an easy-to-use node.
   connection you regularly monitor to ensure it doesn't exceed its
   upload limits. It's common for full nodes on high-speed connections to
   use 200 gigabytes upload or more a month. Download usage is around 20
-  gigabytes a month, plus around an additional 40 gigabytes the first
+  gigabytes a month, plus around an additional {{site.text.chain_gb}} gigabytes the first
   time you start your node.
 
 * 6 hours a day that your full node can be left running. (You can do
@@ -1160,7 +1160,7 @@ subsections for details.
 The BitNodes project provides an online tool to let you test whether
 your node accepts inbound connections. To use it, start Bitcoin Core
 (either the GUI or the daemon), wait 10 minutes, and then [visit the
-GetAddr page](https://getaddr.bitnodes.io/#join-the-network). The tool
+Bitnodes page](https://bitnodes.21.co/#join-the-network). The tool
 will attempt to guess your IP address---if the address is wrong (or
 blank), you will need to enter your address manually.
 

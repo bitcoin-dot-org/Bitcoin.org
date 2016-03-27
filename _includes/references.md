@@ -307,6 +307,7 @@ http://opensource.org/licenses/MIT.
 [bcc pulls]: https://github.com/bitcoin/bitcoin/pulls
 [bcc tor]: https://en.bitcoin.it/wiki/Tor
 [bcc tor hs]: https://en.bitcoin.it/wiki/Tor#Hidden_services
+[core github tag]: https://github.com/bitcoin-dot-org/bitcoin.org/labels/Core
 [BFGMiner]: https://github.com/luke-jr/bfgminer
 [Bitcoin beginners]: http://www.reddit.com/r/bitcoinbeginners
 [Bitcoin Core]: https://bitcoin.org/en/download
@@ -388,6 +389,7 @@ http://opensource.org/licenses/MIT.
 [protobuf]: https://developers.google.com/protocol-buffers/
 [python-bitcoinlib]: https://github.com/petertodd/python-bitcoinlib
 [python-blkmaker]: https://gitorious.org/bitcoin/python-blkmaker
+[Satoshi Nakamoto]: https://en.bitcoin.it/wiki/Satoshi_Nakamoto
 [setup tor]: https://www.torproject.org/
 [SHA256]: https://en.wikipedia.org/wiki/SHA-2
 [Stratum mining protocol]: http://mining.bitcoin.cz/stratum-mining
