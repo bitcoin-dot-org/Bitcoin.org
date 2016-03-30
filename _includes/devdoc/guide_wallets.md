@@ -469,7 +469,7 @@ child, grandchild, and other descended keys with unlinkable
 deterministically-generated integer values. Each child key also gets
 a deterministically-generated seed from its parent, called a [chain
 code][/en/glossary/chain-code]{:#term-chain-code}{:.term}, so the compromising of one chain
-code doesn't necessary compromise the integer sequence for the whole
+code doesn't necessarily compromise the integer sequence for the whole
 hierarchy, allowing the [master chain
 code][/en/glossary/master-chain-code-and-private-key]{:#term-master-chain-code}{:.term} to continue being useful
 even if, for example, a web-based public key distribution program
@@ -499,8 +499,9 @@ respectively, create either a child private key or child public key:
 
 {% endautocrossref %}
 
-    point( (parent_private_key + lefthand_hash_output) % G ) == child_public_key
-    point(child_private_key) == parent_public_key + point(lefthand_hash_output)
+    child_private_key == (parent_private_key + lefthand_hash_output) % G
+    child_public_key == point( (parent_private_key + lefthand_hash_output) % G )
+    child_public_key == point(child_private_key) == parent_public_key + point(lefthand_hash_output)
 
 {% autocrossref %}
 
