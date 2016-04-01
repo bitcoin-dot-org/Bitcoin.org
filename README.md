@@ -23,9 +23,7 @@
   Good To Me (LGTM)" comment.
 
 * [Submit new wallets][] for the [Choose Your Wallet page][], or
-  help us [review wallet submissions][]. **Reviewers with Apple iOS
-  hardware especially needed**---email <dave@dtrt.org> to
-  be notified about iOS wallets needing review.
+  help us [review wallet submissions][].
 
 * [Translate Bitcoin.org into another language][] using [Transifex][] or
   help review new and updated translations. **Translation coordinator
@@ -594,6 +592,8 @@ coordination is usually conducted in #bitcoin-dev on Freenode.
     active: true
     ## Banner displayed if 'active: true'.  Can use HTML formatting
     banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.8.0. Click here for more information."
+    ## Date of the alert in YYYY-MM-DD format
+    date: 2015-03-11
     ---
 
     {% comment %}
@@ -870,3 +870,15 @@ Below the YAML front matter, enter the content of the post in Markdown
 format.  Images should be placed in `img/blog/free` if they are
 MIT-licensed or `img/blog/nonfree` if they have a more restrictive
 copyright license.
+
+### Developer PGP keys
+
+The site hosts the PGP keys for several Bitcoin Core contributors. Here
+are some notes about updating those keys based on previous experience:
+
+1. If a key is revoked, update the key with the revocation immediately.
+   Anyone with commit access to the site repository may do this without
+   prior review, but they should post the commit ID to an open issue or
+   PR so other people can review it. After the revoked key is uploaded,
+   discussion about verifying/adding a replacement key may continue at a
+   slower pace.

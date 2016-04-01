@@ -118,7 +118,7 @@ in the previous output's pubkey script.  Signature scripts are also
 called scriptSigs.
 
 Pubkey scripts and signature scripts combine secp256k1 pubkeys
-and signatures with conditional logic, creating a programable
+and signatures with conditional logic, creating a programmable
 authorization mechanism.
 
 ![Unlocking A P2PKH Output For Spending](/img/dev/en-unlocking-p2pkh-output.svg)
@@ -369,7 +369,7 @@ can be used to require multiple signatures before a UTXO can be spent.
 
 In multisig pubkey scripts, called m-of-n, *m* is the *minimum* number of signatures
 which must match a public key; *n* is the *number* of public keys being
-provided. Both *m* and *n* should be op codes `OP_1` through `OP_16`,
+provided. Both *m* and *n* should be opcodes `OP_1` through `OP_16`,
 corresponding to the number desired.
 
 Because of an off-by-one error in the original Bitcoin implementation
@@ -380,7 +380,7 @@ list of secp256k1 signatures in the signature script must be prefaced with an ex
 
 The signature script must provide signatures in the same order as the
 corresponding public keys appear in the pubkey script or redeem
-script. See the desciption in [`OP_CHECKMULTISIG`][op_checkmultisig]
+script. See the description in [`OP_CHECKMULTISIG`][op_checkmultisig]
 for details.
 
 {% endautocrossref %}
@@ -426,10 +426,22 @@ Signature script: <sig>
 
 {% autocrossref %}
 
-[Null data][/en/glossary/null-data-transaction]{:#term-null-data}{:.term} pubkey scripts let you add a small amount of arbitrary data to the block
-chain in exchange for paying a transaction fee, but doing so is discouraged.
-(Null data is a standard pubkey script type only because some people were adding data
-to the block chain in more harmful ways.)
+[Null data][/en/glossary/null-data-transaction]{:#term-null-data}{:.term}
+transaction type relayed and mined by default in Bitcoin Core 0.9.0 and
+later that adds arbitrary data to a provably unspendable pubkey script
+that full nodes don't have to store in their UTXO database. It is
+preferable to use null data transactions over transactions that bloat
+the UTXO database because they cannot be automatically pruned; however,
+it is usually even more preferable to store data outside transactions
+if possible.
+
+Consensus rules allow null data outputs up to the maximum allowed pubkey
+script size of 10,000 bytes provided they follow all other consensus
+rules, such as not having any data pushes larger than 520 bytes.
+
+Bitcoin Core 0.9.x to 0.10.x will, by default, relay and mine null data
+transactions with up to 40 bytes in a single data push and only one null
+data output that pays exactly 0 satoshis:
 
 {% endautocrossref %}
 
@@ -437,6 +449,19 @@ to the block chain in more harmful ways.)
 Pubkey Script: OP_RETURN <0 to 40 bytes of data>
 (Null data scripts cannot be spent, so there's no signature script.)
 ~~~
+
+Bitcoin Core 0.11.x increases this default to 80 bytes, with the other
+rules remaining the same.
+
+It is expected that Bitcoin Core 0.12.0 (not released yet) will default
+to relaying and mining null data outputs with up to 83 bytes with any
+number of data pushes, provided the total byte limit is not exceeded.
+There must still only be a single null data output and it must still pay
+exactly 0 satoshis.
+
+The `-datacarriersize` Bitcoin Core configuration option allows you to
+set the maximum number of bytes in null data outputs that you will relay
+or mine.
 
 #### Non-Standard Transactions
 {% include helpers/subhead-links.md %}
@@ -454,7 +479,7 @@ in a P2SH output, the network sees only the hash, so it will accept the
 output as valid no matter what the redeem script says.
 This allows payment to non-standard scripts, and as of Bitcoin Core
 0.11, almost all valid redeem scripts can be spent. The exception is
-scripts that use unassigned [NOP op codes][]; these op codes are
+scripts that use unassigned [NOP opcodes][]; these opcodes are
 reserved for future soft forks and can only be relayed or mined by nodes
 that don't follow the standard mempool policy.
 
@@ -481,8 +506,8 @@ conditions:
   currently non-standard.
 
 * The transaction's signature script must only push data to the script
-  evaluation stack. It cannot push new OP codes, with the exception of
-  OP codes which solely push data to the stack.
+  evaluation stack. It cannot push new opcodes, with the exception of
+  opcodes which solely push data to the stack.
 
 * The transaction must not include any outputs which receive fewer than
   1/3 as many satoshis as it would take to spend it in a typical input.

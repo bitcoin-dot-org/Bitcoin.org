@@ -64,10 +64,11 @@ with the most recent versions listed first. (If you know of a protocol
 version that implemented a major change but which is not listed here,
 please [open an issue][docs issue].)
 
-As of Bitcoin Core 0.11.0, the most recent protocol version is 70002.
+As of Bitcoin Core 0.12.0, the most recent protocol version is 70012.
 
 | Version | Initial Release                    | Major Changes
 |---------|------------------------------------|--------------
+| 70012   | Bitcoin Core 0.12.0 <br>  | [BIP130][]: <br>• Added `sendheaders` message
 | 70002   | Bitcoin Core 0.9.0 <br>(Mar 2014)  | • Send multiple `inv` messages in response to a `mempool` message if necessary <br><br>[BIP61][]: <br>• Added `reject` message
 | 70001   | Bitcoin Core 0.8.0 <br>(Feb 2013)  | • Added `notfound` message. <br><br>[BIP37][]: <br>• Added `filterload` message. <br>• Added `filteradd` message. <br>• Added `filterclear` message. <br>• Added `merkleblock` message. <br>• Added relay field to `version` message <br>• Added `MSG_FILTERED_BLOCK` inventory type to `getdata` message.
 | 60002   | Bitcoin Core 0.7.0 <br>(Sep 2012)  | [BIP35][]: <br>• Added `mempool` message. <br>• Extended `getdata` message to allow download of memory pool transactions
@@ -1003,12 +1004,12 @@ example, TXIDs will be in internal byte order).
   section is individually compared to the filter.
 
 * **Signature Script Data:** each element pushed onto the stack by a
-  data-pushing op code in a signature script from this transaction is
+  data-pushing opcode in a signature script from this transaction is
   individually compared to the filter.  This includes data elements
   present in P2SH redeem scripts when they are being spent.
 
 * **PubKey Script Data:** each element pushed onto the the stack by a
-  data-pushing op code in any pubkey script from this transaction is
+  data-pushing opcode in any pubkey script from this transaction is
   individually compared to the filter. (If a pubkey script element
   matches the filter, the filter will be immediately updated if the
   `BLOOM_UPDATE_ALL` flag was set; if the pubkey script is in the P2PKH
@@ -1208,6 +1209,19 @@ header has been omitted.)
 394715fcab51093be7bfca5a31005972
 947baf86a31017939575fb2354222821 ... TXID
 {% endhighlight %}
+
+{% endautocrossref %}
+
+#### SendHeaders
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
+
+The `sendheaders` message tells the receiving peer to send new block
+announcements using a `headers` message rather than an `inv` message.
+
+There is no payload in a `sendheaders` message.  See the [message header
+section][section message header] for an example of a message without a payload.
 
 {% endautocrossref %}
 

@@ -26,7 +26,7 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
         - P2PK output (an output paying a public key directly)
         - P2PKH address, P2PKH output (an address comprising a hashed pubkey, and its corresponding output)
-        - P2SH multisig (a particular instance of P2SH where the script uses a multisig op code)
+        - P2SH multisig (a particular instance of P2SH where the script uses a multisig opcode)
 
     links_html_or_markdown_style_capitalize_first_letter:
         - "[P2SH](/en/developer-guide#term-p2sh) --- Bitcoin.org Developer Guide"

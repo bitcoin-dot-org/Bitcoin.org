@@ -7,8 +7,10 @@ required:
     title_max_40_characters_no_formatting: Null Data (OP_RETURN) Transaction
 
     summary_max_255_characters_no_formatting: >
-        A standard transaction type which allows adding 40 bytes of
-        arbitrary data to the block chain up to once per transaction.
+        A transaction type relayed and mined by default in Bitcoin Core
+        0.9.0 and later that adds arbitrary data to a provably
+        unspendable pubkey script that full nodes don't have to store in
+        their UTXO database.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Null data transaction
@@ -22,7 +24,7 @@ optional:
         - data carrier transactions
 
     not_to_be_confused_with_capitalize_first_letter:
-        - OP_RETURN (an op code used in one of the outputs in an OP_RETURN transaction)
+        - OP_RETURN (an opcode used in one of the outputs in an OP_RETURN transaction)
 
     links_html_or_markdown_style_capitalize_first_letter:
         - "[Null data transaction](/en/developer-guide#term-null-data) --- Bitcoin.org Developer Guide"

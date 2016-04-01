@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 [bitcoin URI]: /en/developer-guide#term-bitcoin-uri "A URI which allows receivers to encode payment details so spenders don't have to manually enter addresses and other details"
 [certificate chain]: /en/developer-examples#term-certificate-chain "A chain of certificates connecting a individual's leaf certificate to the certificate authority's root certificate"
 [coinbase block height]: /en/developer-reference#term-coinbase-block-height "The current block's height encoded into the first bytes of the coinbase field"
-[data-pushing op code]: https://en.bitcoin.it/wiki/Script#Constants "Any op code from 0x01 to 0x4e which pushes data on to the script evaluation stack"
+[data-pushing opcode]: https://en.bitcoin.it/wiki/Script#Constants "Any opcode from 0x01 to 0x4e which pushes data on to the script evaluation stack"
 [fiat]: /en/developer-guide#term-fiat "National currencies such as the dollar or euro"
 [intermediate certificate]: /en/developer-examples#term-intermediate-certificate "A intermediate certificate authority certificate which helps connect a leaf (receiver) certificate to a root certificate authority"
 [key index]: /en/developer-guide#term-key-index "An index number used in the HD wallet formula to generate child keys from a parent key"
@@ -21,8 +21,8 @@ http://opensource.org/licenses/MIT.
 [msg_block]: /en/developer-reference#term-msg_block "The block header hash data type identifier of an inventory on the P2P network"
 [msg_filtered_block]: /en/developer-reference#term-msg_block "An alternative to the block header hash data type identifier of an inventory on the P2P network used to request a merkle block"
 [network]: /en/developer-guide#term-network "The Bitcoin P2P network which broadcasts transactions and blocks"
-[op_checkmultisig]: /en/developer-reference#term-op-checkmultisig "Op code which returns true if one or more provided signatures (m) sign the correct parts of a transaction and match one or more provided public keys (n)"
-[op_checksig]: /en/developer-reference#term-op-checksig "Op code which returns true if a signature signs the correct parts of a transaction and matches a provided public key"
+[op_checkmultisig]: /en/developer-reference#term-op-checkmultisig "Opcode which returns true if one or more provided signatures (m) sign the correct parts of a transaction and match one or more provided public keys (n)"
+[op_checksig]: /en/developer-reference#term-op-checksig "Opcode which returns true if a signature signs the correct parts of a transaction and matches a provided public key"
 [op_dup]: /en/developer-reference#term-op-dup "Operation which duplicates the entry below it on the stack"
 [op_equal]: /en/developer-reference#term-op-equal "Operation which returns true if the two entries below it on the stack are equivalent"
 [op_equalverify]: /en/developer-reference#term-op-equalverify "Operation which terminates the script in failure unless the two entries below it on the stack are equivalent"
@@ -175,6 +175,7 @@ http://opensource.org/licenses/MIT.
 [ping message]: /en/developer-reference#ping "A P2P network message used to see if the remote host is still connected"
 [pong message]: /en/developer-reference#pong "A P2P network message used to reply to a P2P network ping message"
 [reject message]: /en/developer-reference#reject "A P2P network message used to indicate a previously-received message was rejected for some reason"
+[sendheaders message]: /en/developer-reference#sendheaders "A P2P network message used to request new blocks be announced through headers messages rather than inv messages"
 [tx message]: /en/developer-reference#tx "A P2P protocol message which sends a single serialized transaction"
 [verack message]: /en/developer-reference#verack "A P2P network message sent in reply to a version message to confirm a connection has been established"
 [version message]: /en/developer-reference#version "A P2P network message sent at the begining of a connection to allow protocol version negotiation"
@@ -287,6 +288,7 @@ http://opensource.org/licenses/MIT.
 [BIP70]: https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki
 [BIP71]: https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki
 [BIP72]: https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki
+[BIP130]: https://github.com/bitcoin/bips/blob/master/bip-0130.mediawiki
 [CVE-2012-2459]: https://en.bitcoin.it/wiki/CVEs#CVE-2012-2459
 [RFC5737]: http://tools.ietf.org/html/rfc5737
 [secp256k1]: http://www.secg.org/sec2-v2.pdf
@@ -305,6 +307,7 @@ http://opensource.org/licenses/MIT.
 [bcc pulls]: https://github.com/bitcoin/bitcoin/pulls
 [bcc tor]: https://en.bitcoin.it/wiki/Tor
 [bcc tor hs]: https://en.bitcoin.it/wiki/Tor#Hidden_services
+[core github tag]: https://github.com/bitcoin-dot-org/bitcoin.org/labels/Core
 [BFGMiner]: https://github.com/luke-jr/bfgminer
 [Bitcoin beginners]: http://www.reddit.com/r/bitcoinbeginners
 [Bitcoin Core]: https://bitcoin.org/en/download
@@ -376,7 +379,7 @@ http://opensource.org/licenses/MIT.
 [mozrootstore]: https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 [native irc client]: https://en.wikipedia.org/wiki/List_of_IRC_clients
 [netcat]: https://en.wikipedia.org/wiki/Netcat
-[nop op codes]: https://en.bitcoin.it/wiki/Script#Reserved_words
+[nop opcodes]: https://en.bitcoin.it/wiki/Script#Reserved_words
 [offline transactions]: http://bitcoin.stackexchange.com/a/34122/21052
 [open a pull request]: https://github.com/bitcoin-dot-org/bitcoin.org#working-with-github
 [open an issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
@@ -386,6 +389,7 @@ http://opensource.org/licenses/MIT.
 [protobuf]: https://developers.google.com/protocol-buffers/
 [python-bitcoinlib]: https://github.com/petertodd/python-bitcoinlib
 [python-blkmaker]: https://gitorious.org/bitcoin/python-blkmaker
+[Satoshi Nakamoto]: https://en.bitcoin.it/wiki/Satoshi_Nakamoto
 [setup tor]: https://www.torproject.org/
 [SHA256]: https://en.wikipedia.org/wiki/SHA-2
 [Stratum mining protocol]: http://mining.bitcoin.cz/stratum-mining

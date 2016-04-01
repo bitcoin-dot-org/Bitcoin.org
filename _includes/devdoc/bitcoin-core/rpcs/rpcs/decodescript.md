@@ -34,7 +34,7 @@ The `decodescript` RPC {{summary_decodeScript}}
 - n: "→<br>`asm`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The redeem script in decoded form with non-data-pushing op codes listed.  May be empty"
+  d: "The redeem script in decoded form with non-data-pushing opcodes listed.  May be empty"
 
 - n: "→<br>`type`"
   t: "string"

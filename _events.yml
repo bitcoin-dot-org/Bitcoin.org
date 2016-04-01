@@ -1,260 +1,36 @@
-- date: 2015-09-02
-  title: "Bitcoin Wednesday Conference"
-  venue: "De Balie"
-  address: "Leidseplein, Kleine-Gartmanplantsoen 10"
-  city: "Amsterdam"
-  country: "The Netherlands"
-  link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-27/"
-
-- date: 2015-09-10
-  title: "Consensus 2015"
-  venue: "TimesCenter"
-  address: "242 W 41st St"
-  city: "New York"
-  country: "United States"
-  link: "http://www.coindesk.com/events/consensus-2015/"
-
-- date: 2015-09-12
-  title: "Bitcoinference Summer 2015"
-  venue: "Amsterdam Science Park"
-  address: "Science Park 205, 1098 XH"
+- date: 2016-02-08
+  title: "Bitcoin Developers Workshop 2016"
+  venue: "Beurs van Berlage, former Amsterdam Stock Exchange"
+  address: "Oudebrugsteeg 9, 1012 JN"
   city: "Amsterdam"
   country: "Netherlands"
-  link: "http://bitcoinference.com/"
+  link: "http://www.bitcoinference.com/Bitcoin-Developers-Workshop/index.html"
 
-- date: 2015-09-12
-  title: "Scaling Bitcoin Conference"
-  venue: "Centre Mont-Royal"
-  address: "2200 rue Mansfield Montréal Québec, H3A 3R8"
-  city: "Montreal"
-  country: "Canada"
-  link: "https://scalingbitcoin.org/montreal2015/"
+- date: 2016-02-11
+  title: "Bitcoinference 2016"
+  venue: "Beurs van Berlage, former Amsterdam Stock Exchange"
+  address: "Oudebrugsteeg 9, 1012 JN"
+  city: "Amsterdam"
+  country: "Netherlands"
+  link: "http://www.bitcoinference.com/"
 
-- date: 2015-09-12
-  title: "Blockstack Summit 2015"
-  venue: "D'Agostino Hall, New York University"
-  address: "108 W 3rd St"
-  city: "New York"
-  country: "United States"
-  link: "http://blockstack.org/summit"
+- date: 2016-02-17
+  title: "Bitcoin4Beginners Conference"
+  venue: "Beurs van Berlage, former Amsterdam Stock Exchange"
+  address: "Oudebrugsteeg 9, 1012 JN"
+  city: "Amsterdam"
+  country: "Netherlands"
+  link: "http://bitcoinference.com/Bitcoin4Beginners/Amsterdam/Beurs-van-Berlage/2016/February/17/Wednesday.html"
 
-- date: 2015-09-15
-  title: "NYC Fintech eXtravaganza"
-  venue: "Microsoft Technology Center"
-  address: "640 8th Ave"
-  city: "New York"
-  country: "United States"
-  link: "http://www.eventbrite.com/e/nyc-fintech-extravaganza-fintechx-tickets-17816557804"
-
-- date: 2015-09-16
-  title: "Finovate New York 2015"
-  venue: "New York Hilton Midtown"
-  address: "1335 Avenue of the Americas"
-  city: "New York"
-  country: "United States"
-  link: "http://fall2015.finovate.com/"
-
-- date: 2015-09-18
-  title: "Bitcoin Thrill Day 2015"
-  venue: "Walibi Holland"
-  address: "SPIJKWEG 30"
-  city: "Biddinghuizen"
-  country: "The Netherlands"
-  link: "https://thrilldays.bitcoinembassy.nl/"
-
-- date: 2015-09-18
-  title: "Blockchain@Birmingham"
-  venue: "Learning Center LG14@ University of Birmingham"
-  address: "Edgbaston, Birmingham, WestMidlands, UK"
-  city: "Birmingham"
-  country: "United Kingdom"
-  link: "https://blockchainbirmingham.wordpress.com"
-
-- date: 2015-09-23
-  title: "Finance 2.0: Crypto"
-  venue: "EWZ-Unterwerk Selnau"
-  address: "Selnaustreet 25"
-  city: "Zurich"
-  country: "Switzerland"
-  link: "http://www.finance20.ch/crypto2015/"
-
-- date: 2015-09-24
-  title: "Bitcoin Conference Kiev"
-  venue: "NSC Olimpiyskiy"
-  address: "Velyka Vasylkivska str., 55"
-  city: "Kyiv"
-  country: "Ukraine"
-  link: "http://bitcoinconf.com.ua/en"
-
-- date: 2015-09-28
-  title: "Bitcoin and Blockchain Regulation"
-  venue: "The London Escalator"
-  address: "69-89 Mile End Rd"
-  city: "London"
-  country: "United Kingdom"
-  link: "http://bblf.info/"
-
-- date: 2015-10-02
-  title: "Digital Economy Conference"
-  venue: "Holland Performing Arts Center"
-  address: "1200 Douglas Street"
-  city: "Omaha"
-  country: "United States"
-  link: "http://digitaleconomy.io/"
-
-- date: 2015-10-02
-  title: "Hacker Congress"
-  venue: "Paralelni Polis"
-  address: "Delnicka 43"
-  city: "Prague"
-  country: "Czech Republic"
-  link: "http://www.hcpp.cz/eng/"
-
-- date: 2015-10-06
-  title: "Fintech: Law and Disruption"
-  venue: "New York Law School Events Center"
-  address: "185 West Broadway"
-  city: "New York"
-  country: "United States"
-  link: "http://www.nyls.edu/center-for-business-and-financial-law/cbfl_events/conferences/"
-
-- date: 2015-10-06
-  title: "Blockchain Conference New York"
-  venue: "Barclays Accelerator"
-  address: "43 West 23rd Street"
-  city: "New York"
-  country: "United States"
-  link: "http://www.blockchain-newyork.com/"
-
-- date: 2015-10-07
-  title: "Bitcoin Wednesday Conference"
-  venue: "De Balie"
-  address: "Leidseplein, Kleine-Gartmanplantsoen 10"
+- date: 2016-02-17
+  title: "d10e - Exploring the future of decentralization"
+  venue: "Beurs van Berlage"
+  address: "Damrak 243, 1012 ZJ Amsterdam, Netherlands"
   city: "Amsterdam"
   country: "The Netherlands"
-  link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-28/"
+  link: "http://d10e.org/#amsterdam"
 
-- date: 2015-10-08
-  title: "Alt Convention"
-  venue: "Hilton Batumi, Radisson Blu Batumi, Sheraton Batumi, Divan Suites, Leogrand"
-  address:
-  city: "Batumi"
-  country: "Georgia"
-  link: "http://altconvention.com"
-
-- date: 2015-10-16
-  title: "DevCore Workshop: Developing the Developers"
-  venue: "Draper University"
-  address: "44 E Third Ave"
-  city: "San Mateo, CA"
-  country: "USA"
-  link: "http://bitcoinfoundation.org"
-
-- date: 2015-10-21
-  title: "Fintech Jersey 2015"
-  venue: "Radisson Blu Waterfront Hotel"
-  address: "Rue de L'etau JE2 3WF"
-  city: "St. Helier"
-  country: "United Kingdom"
-  link: "http://www.eventbrite.co.uk/e/fintechjersey-2015-tickets-18417288606?aff=es2"
-
-- date: 2015-10-25
-  title: "Money 20/20"
-  venue: "The Venetian Las Vegas"
-  address: "3355 Las Vegas Blvd. South"
-  city: "Las Vegas"
-  country: "United States"
-  link: "http://www.money2020.com"
-
-- date: 2015-11-03
-  title: "BL0CKCHA1N: The Blockchain Forum"
-  venue: "Novotel Paris Centre Tour Eiffel"
-  address: "61 quai de Grenelle, 75015"
-  city: "Paris"
-  country: "France"
-  link: "http://www.bl0ckcha1n.com"
-
-- date: 2015-11-04
-  title: "Bitcoin Wednesday Conference"
-  venue: "De Balie"
-  address: "Leidseplein, Kleine-Gartmanplantsoen 10"
-  city: "Amsterdam"
-  country: "The Netherlands"
-  link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-29/"
-
-- date: 2015-11-09
-  title: "MTBIT - Bitcoin & Remittances Miami Beach"
-  venue: "Eden Roc Hotel"
-  address: "4525 Collins Avenue"
-  city: "Miami Beach"
-  country: "United States"
-  link: "http://www.imtconferences.com/mtbit/"
-
-- date: 2015-11-10
-  title: "Bank Innovation Israel"
-  venue: "Dan Tel Aviv"
-  address: "Ha-Yarkon St 99"
-  city: "Tel Aviv-Yafo"
-  country: "Israel"
-  link: "http://bankinnovationisrael.com/"
-
-- date: 2015-11-10
-  title: "Fintech Startups Conference"
-  venue: "Great American Music Hall"
-  address: "859 O'Farrell St"
-  city: "San Francisco"
-  country: "United States"
-  link: "http://www.fintechstartupsconference.com/sftickets"
-
-- date: 2015-11-24
-  title: "ADCCA Fintech Summit"
-  venue: "The Westin Sydney"
-  address: "1 Martin Place"
-  city: "Sydney"
-  country: "Australia"
-  link: "http://www.adccasummit.com/"
-
-- date: 2015-12-02
-  title: "Bitcoin Wednesday Conference"
-  venue: "De Balie"
-  address: "Leidseplein, Kleine-Gartmanplantsoen 10"
-  city: "Amsterdam"
-  country: "The Netherlands"
-  link: "http://www.bitcoinwednesday.com/event/bitcoin-wednesday-30/"
-
-- date: 2015-12-06
-  title: "Scaling Bitcoin: Phase 2"
-  venue: "Hong Kong Cyberport"
-  address: "100 Cyberport Road"
-  city: "Hong Kong"
-  country: "China"
-  link: "https://scalingbitcoin.org/hongkong2015/"
-
-- date: 2015-12-09
-  title: "Inside Bitcoins Seoul"
-  venue: "Korea International Exhibition Center (KINTEX)"
-  address: "2600, Daehwa-dong, Ilsanseo-gu, Goyang-si, Gyeonggi-do"
-  city: "Seoul"
-  country: "South Korea"
-  link: "http://insidebitcoins.com/seoul/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibseoul"
-
-- date: 2015-12-14
-  title: "Inside Bitcoins San Diego"
-  venue: "San Diego Convention Center"
-  address: "111 W. Harbor Drive"
-  city: "San Diego"
-  country: "United States"
-  link: "http://insidebitcoins.com/san-diego/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibsd"
-
-- date: 2016-01-25
-  title: "The North American Bitcoin Conference"
-  venue: "Miami Design District"
-  address: "NW 36th Street"
-  city: "Miami, Florida"
-  country: "United States of America"
-  link: "http://www.btcmiami.com"
-
-- date: 2016-02-23
+- date: 2016-03-07
   title: "Blockchain Conference San Francisco"
   venue: "Fort Mason"
   address: "2 Marina Blvd"
@@ -269,7 +45,23 @@
   city: "Johannesburg"
   country: "South Africa"
   link: "http://bitcoinconference.co.za/"
-
+  
+- date: 2016-03-11
+  title: "Beer and Bitcoin #6 - Polskie Stowarzyszenie Bitcoin"
+  venue: "Pub Szyszka Chmielu"
+  address: "Al. Komisji Edukacji Narodowej 36 lok. U2,"
+  city: "Warsaw"
+  country: "Poland"
+  link: "http://www.meetup.com/Warsaw-Bitcoin-Meetup-Group/events/228919141/"  
+  
+- date: 2016-03-16
+  title: "Bitcoin4Beginners"
+  venue: "Beurs van Berlage, former Amsterdam Stock Exchange"
+  address: "Oudebrugsteeg 9, 1012 JN"
+  city: "Amsterdam"
+  country: "The Netherlands"
+  link: "http://www.bitcoinference.com/Bitcoin4Beginners/Amsterdam/Beurs-van-Berlage/2016/March/16/Wednesday.html"
+  
 - date: 2016-04-04
   title: "Money 20/20 Europe"
   venue: "Bella Center"
@@ -277,19 +69,36 @@
   city: "Copenhagen"
   country: "Denmark"
   link: "https://www.money2020europe.com/"
+  
+- date: 2016-04-05
+  title: "Bitcoin4Beginners: CoinFest!"
+  venue: "Beurs van Berlage, former Amsterdam Stock Exchange"
+  address: "Oudebrugsteeg 9, 1012 JN"
+  city: "Amsterdam"
+  country: "The Netherlands"
+  link: "http://www.bitcoinference.com/Bitcoin4Beginners/Amsterdam/Beurs-van-Berlage/2016/April/5/Tuesday.html"
 
-- date: 2016-04-10
-  title: "Inside Bitcoins New York"
-  venue: "Javits Convention Center"
-  address: "655 W 34th St"
+- date: 2015-04-08
+  title: "Bitcoin Conference Russia 2016"
+  venue: "Digital October"
+  address: "Bersenevskaya naberezhnaya, 6, str. 3"
+  city: "Moscow"
+  country: "Russia"
+  link: "http://bitcoinconf.moscow/en"
+
+- date: 2016-05-02
+  title: "Consensus 2016"
+  venue: "Marriott Marquis, Times Square, New York City"
+  address: "1535 Broadway "
   city: "New York"
-  country: "United States"
-  link: "http://insidebitcoins.com/new-york/2016?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibny"
+  country: "USA"
+  link: "http://www.coindesk.com/events/consensus-2016/"
+  
+- date: 2016-06-20
+  title: "Blockchain Training Conference"
+  venue: "MaRS Discovery District"
+  address: "101 College St, Toronto, ON M5G 1L7"
+  city: "Toronto"
+  country: "Canada"
+  link: "https://blockchaintraining.org"
 
-- date: 2016-05-24
-  title: "Inside Bitcoins Hong Kong"
-  venue: "Hong Kong Convention & Exhibition Centre"
-  address: "1 Expo Drive, Wan Chai"
-  city: "Hong Kong"
-  country: "China"
-  link: "http://insidebitcoins.com/hong-kong/2016"

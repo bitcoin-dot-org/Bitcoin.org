@@ -118,8 +118,8 @@ The `getblock` RPC {{summary_getBlock}}
 
 - n: "→<br>`previousblockhash`"
   t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The hash of the header of the previous block, encoded as hex in RPC byte order"
+  p: "Optional<br>(0 or 1)"
+  d: "The hash of the header of the previous block, encoded as hex in RPC byte order.  Not returned for genesis block"
 
 - n: "→<br>`nextblockhash`"
   t: "string (hex)"

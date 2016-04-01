@@ -163,7 +163,7 @@ have an easy-to-use node.
 * Desktop or laptop hardware running recent versions of Windows, Mac OS
   X, or Linux.
 
-* 50 gigabytes of free disk space
+* {{site.text.bitcoin_datadir_gb}} gigabytes of free disk space
 
 * 2 gigabytes of memory (RAM)
 
@@ -174,7 +174,7 @@ have an easy-to-use node.
   connection you regularly monitor to ensure it doesn't exceed its
   upload limits. It's common for full nodes on high-speed connections to
   use 200 gigabytes upload or more a month. Download usage is around 20
-  gigabytes a month, plus around an additional 40 gigabytes the first
+  gigabytes a month, plus around an additional {{site.text.chain_gb}} gigabytes the first
   time you start your node.
 
 * 6 hours a day that your full node can be left running. (You can do
@@ -1090,10 +1090,47 @@ automatically started minimized in the task bar.
 #### Bitcoin Core Daemon {#osx-daemon}
 {:.no_toc}
 
-If you can provide instructions and screenshots for running the latest
-version of Bitcoin Core daemon on OS X Yosemite, please [open an
-issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) and we'll tell
-you what we need.
+The Bitcoin Core daemon (bitcoind) is not included in the .dmg file you may have downloaded to install Bitcoin-QT. Bitcoind, along with its support binaries, is instead included in the OS X .tar.gz file listed on the official Bitcoin Core download page. To download this file using Terminal, execute the following command:
+
+    curl -O https://bitcoin.org/bin/bitcoin-core-{{site.DOWNLOAD_VERSION}}/bitcoin-{{site.DOWNLOAD_VERSION}}-osx64.tar.gz
+
+{{verifyReleaseSignatures}}
+
+Extract bitcoind and its support binaries from the archive we just downloaded by running this command in Terminal:
+
+    tar -zxf bitcoin-{{site.DOWNLOAD_VERSION}}-osx64.tar.gz
+
+Now we'll move the executables into your default path to make running and stopping bitcoind easier. To move the executables, run these commands (note that we have to use `sudo` to perform these commands since we are modifying directories owned by root):
+
+    sudo mkdir -p /usr/local/bin
+    sudo cp bitcoin-{{site.DOWNLOAD_VERSION}}/bin/bitcoin* /usr/local/bin/.
+
+To clean up the directory we've been working in, run:
+
+    rm -rf bitcoin-{{site.DOWNLOAD_VERSION}}*
+
+Before we can run bitcoind, we need to make sure that it has a place to store the blockchain and a config file that contains a username and password for the daemon. The commands below will set up your bitcoin directory and give bitcoind a default username and a random password (you do not need to remember the password for standard operation).
+
+    mkdir ~/Library/Application\ Support/Bitcoin
+    touch ~/Library/Application\ Support/Bitcoin/bitcoin.conf
+    chmod 600 ~/Library/Application\ Support/Bitcoin/bitcoin.conf
+    echo "rpcuser=bitcoinrpc" >> ~/Library/Application\ Support/Bitcoin/bitcoin.conf
+    echo "rpcpassword=$(cat /dev/urandom | env LC_CTYPE=C tr -dc a-zA-Z0-9 | head -c45)" >> ~/Library/Application\ Support/Bitcoin/bitcoin.conf
+
+You should now be able to start up your full node by running `bitcoind -daemon` in any Terminal window. If you need to stop bitcoind for any reason, the command is `bitcoin-cli stop`
+
+<div class="box" markdown="1">
+*Optional: Start Your Node At Login*
+
+Starting your node automatically each time you login to your computer makes it easy for you to contribute to the network. The easiest way to do this is to tell Bitcoin Core Daemon to start at login. In OS X, the way to start background programs at login is using a Launch Agent. Here is how to install a Launch Agent for Bitcoin Core daemon on your machine:
+
+    mkdir ~/Library/LaunchAgents
+    curl https://raw.githubusercontent.com/bitcoin/bitcoin/master/contrib/init/org.bitcoin.bitcoind.plist > ~/Library/LaunchAgents/org.bitcoin.bitcoind.plist
+
+The next time you login to your desktop, Bitcoin Core daemon will be automatically started.
+</div>
+
+{{installFinished}}
 
 ## Network Configuration
 
@@ -1123,7 +1160,7 @@ subsections for details.
 The BitNodes project provides an online tool to let you test whether
 your node accepts inbound connections. To use it, start Bitcoin Core
 (either the GUI or the daemon), wait 10 minutes, and then [visit the
-GetAddr page](https://getaddr.bitnodes.io/#join-the-network). The tool
+Bitnodes page](https://bitnodes.21.co/#join-the-network). The tool
 will attempt to guess your IP address---if the address is wrong (or
 blank), you will need to enter your address manually.
 
@@ -1358,6 +1395,94 @@ ask for help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
+
+## Configuration Tuning
+
+This section contains advice about how to change your Bitcoin Core
+configuration to adapt it to your needs.
+
+There are two ways to change your configuration.  The first is to start
+Bitcoin Core with the options you want.  For example, if you want to
+limit it to using one CPU core for signature verification, you can start
+Bitcoin Core like this:
+
+{% highlight bash %}
+## Bitcoin Core daemon
+bitcoind -par=1 -daemon
+
+## Bitcoin Core GUI
+bitcoin-qt -par=1
+{% endhighlight %}
+
+Once you've decided you like an option, you can add it to the Bitcoin
+Core configuration file.  You can find that file in the following
+directories:
+
+- Windows: %APPDATA%\Bitcoin\
+
+- OSX: $HOME/Library/Application Support/Bitcoin/
+
+- Linux: $HOME/.bitcoin/
+
+To add an option to the configuration file, just remove its leading
+dash.  You may also need to remove any quotation marks you used in your shell.
+For example, the `-par` option seen above would look like this in the
+configuration file:
+
+{% highlight text %}
+par=1
+{% endhighlight %}
+
+If you have any questions about configuring Bitcoin Core, please stop by
+one of our [forums](/en/bitcoin-core/help#forums) or [live
+chatrooms](/en/bitcoin-core/help#live).
+
+### Reduce Traffic
+
+Some node operators need to deal with bandwith caps imposed by their ISPs.
+
+By default, bitcoin-core allows up to 125 connections to different peers, 8 of
+which are outbound. You can therefore, have at most 117 inbound connections.
+
+The default settings can result in relatively significant traffic consumption.
+
+Ways to reduce traffic:
+
+#### Maximum Upload Targets
+
+{% highlight text %}
+-maxuploadtarget=<MiB per day>
+{% endhighlight %}
+
+A major component of the traffic is caused by serving historic blocks to other nodes
+during the initial blocks download phase (syncing up a new node).
+This option can be specified in MiB per day and is turned off by default.
+This is *not* a hard limit; only a threshold to minimize the outbound
+traffic. When the limit is about to be reached, the uploaded data is cut by no
+longer serving historic blocks (blocks older than one week).
+Keep in mind that new nodes require other nodes that are willing to serve
+historic blocks. **The recommended minimum is 144 blocks per day (max. 144MB
+per day)**
+
+#### Disable listening
+
+{% highlight text %}
+-listen=0
+{% endhighlight %}
+
+Disabling listening will result in fewer nodes connected (remember the maximum of 8
+outbound peers). Fewer nodes will result in less traffic usage as you are relaying
+blocks and transactions to fewer nodes.
+
+#### Reduce maximum connections
+
+{% highlight text %}
+-maxconnections=<num>
+{% endhighlight %}
+
+Reducing the maximum connected nodes to a miniumum could be desirable if traffic
+limits are tiny. Keep in mind that bitcoin's trustless model works best if you are
+connected to a handful of nodes.
 
 </div>
 <script>updateToc();</script>

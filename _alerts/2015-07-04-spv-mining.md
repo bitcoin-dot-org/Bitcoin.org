@@ -5,6 +5,7 @@
 title: "Some Miners Generating Invalid Blocks"
 shorturl: "spv-mining"
 active: false
+date: 2015-07-04
 #banner: "WARNING: many wallets currently vulnerable to double-spending of confirmed transactions (click here to read)"
 bannerclass: "alert"
 ---

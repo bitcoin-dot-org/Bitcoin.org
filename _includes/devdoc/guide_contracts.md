@@ -60,7 +60,7 @@ OP_2 [A's pubkey] [B's pubkey] [C's pubkey] OP_3 OP_CHECKMULTISIG
 
 {% autocrossref %}
 
-(Op codes to push the public keys onto the stack are not shown.)
+(Opcodes to push the public keys onto the stack are not shown.)
 
 `OP_2` and `OP_3` push the actual numbers 2 and 3 onto the
 stack. `OP_2`
@@ -100,7 +100,7 @@ OP_0 [A's signature] [B's or C's signature] [serialized redeem script]
 
 {% autocrossref %}
 
-(Op codes to push the signatures and redeem script onto the stack are
+(Opcodes to push the signatures and redeem script onto the stack are
 not shown. `OP_0` is a workaround for an off-by-one error in the original
 implementation which must be preserved for compatibility.  Note that
 the signature script must provide signatures in the same order as the

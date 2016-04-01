@@ -15,11 +15,12 @@ lang: en
 		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
 		<link>https://bitcoin.org/en/version-history</link>
 	</image>
-	{% filter_for p in site.pages reversed sort_by:versionint category:release %}
+        {% assign date_sorted_releases = site.releases | sort: 'optional_date', 'last' %}
+	{% for p in date_sorted_releases reversed %}
         <item>
-            <title>{{ p.title | htmlescape }}</title>
-            <link>https://bitcoin.org{{ p.url | replace:'.html','' }}</link>
-            <guid>https://bitcoin.org{{ p.url | replace:'.html','' }}</guid>
+            <title>{{ p.title | xmlescape }}</title>
+            <link>https://bitcoin.org{{ p.url }}</link>
+            <guid>https://bitcoin.org{{ p.url }}</guid>
           {% if p.optional_date %}
             <pubDate>{{ p.optional_date | date: "%a, %d %b %Y" }} 00:00:00 GMT</pubDate>
           {% else %}
@@ -27,6 +28,6 @@ lang: en
             {% warn "This release doesn't have optional_date set" %}
           {% endif %}
         </item>
-	{% endfilter_for %}
+	{% endfor %}
 </channel>
 </rss>

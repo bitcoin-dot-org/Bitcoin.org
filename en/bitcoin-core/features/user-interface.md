@@ -124,26 +124,6 @@ The following wallets can securely connect to a trusted peer.
 <div markdown="block" class="wallet_accordion">
 {% comment %}<!-- Put wallets in alphabetical order -->{% endcomment %}
 
-### Armory
-
-<div markdown="block">
-![Armory screenshot](/img/screenshots/armory.png)
-
-{% translate walletarmory choose-your-wallet %}
-
-**No configuration necessary:** Armory uses a local Bitcoin Core full
-node by default.
-
-{% comment %}
-<!-- TODO/Someday: move wallet yaml into _data directory so we can pull
-URLs and other info from it -->
-{% endcomment %}
-
-{:.right-hanger}
-[Get Armory <span class="fa fa-external-link-square"></span>](https://bitcoinarmory.com/)
-
-</div>
-
 ### GreenBits
 
 <div markdown="block">

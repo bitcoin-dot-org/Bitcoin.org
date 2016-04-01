@@ -176,7 +176,7 @@ baseurl:    /
 
 source:      .
 destination: ./_site
-plugins:     ./_plugins
+plugins_dir: ./_plugins
 exclude:
     - Gemfile
     - Gemfile.lock
@@ -185,10 +185,9 @@ exclude:
 
 future:      true
 lsi:         false
-highlighter: rouge
-pygments:    true
 markdown:    kramdown
 permalink:   date
+excerpt_separator: "<!-- END_EXCERPT -->"
 
 rdiscount:
   extensions: []
@@ -198,7 +197,15 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 2..6
-  use_coderay: false
+  enable_coderay: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    ## With the 'text' option, no highlighting is applied by default. We
+    ## need this for backwards compatibility with existing code blocks.
+    default_lang: text
+
+    ## Might be useful in the future, but turn off for upgrade to Jekyll 3.0
+    css_class:
 
   coderay:
     coderay_wrap: div
@@ -209,21 +216,21 @@ kramdown:
     coderay_css: style
 
 text:
-  ## Values last updated 2015-08-26
+  ## Values last updated 2015-12-29
   ## All variable names must indicate unit type for easy translation of adjacent text,
   ##   such as: subsidy_in_decimal_bitcoins or
   ##   bitcoin_org_docs_maintainer_email_link
   subsidy_in_decimal_bitcoins: 25
-  chain_gb: 50
-  bitcoin_datadir_gb: 60
-  bitcoin_datadir_gb_pruned: 3
-  total_tx_count_in_millions: 40
+  chain_gb: 60
+  bitcoin_datadir_gb: 80
+  bitcoin_datadir_gb_pruned: 5
+  total_tx_count_in_millions: 100
   typical_ibd_time_in_hours: 4
   typical_144_block_catchup_time_in_minutes: 5
   bitcoin_org_docs_maintainer_email_link: '<a href="mailto:dave@dtrt.org">Dave Harding</a>'
   ## Before updating this, verify all assertions are still correct: git grep site.text.assertion_month
   ## Use ISO-8601 format, but feel free to round to the nearest month
-  assertion_month: 2015-09-01
+  assertion_month: 2016-12-01
 
 
 ## Items in devsearches will appear in the search box in the order they
@@ -323,9 +330,9 @@ devsearches:
     - 'WalletPassphrase': "/en/developer-reference#walletpassphrase"
     - 'WalletPassphraseChange': "/en/developer-reference#walletpassphrasechange"
 
-  ## Op codes currently implemented in Bitcoin Core master branch. After
+  ## Opcodes currently implemented in Bitcoin Core master branch. After
   ## we document them on Bitcoin.org, these links will be updated
-  "Op codes":
+  "Opcodes":
     - "OP_0 (OP_FALSE)": "https://en.bitcoin.it/wiki/Script#Constants"
     - "OP_PUSHDATA1": "https://en.bitcoin.it/wiki/Script#Constants"
     - "OP_PUSHDATA2": "https://en.bitcoin.it/wiki/Script#Constants"
@@ -505,3 +512,37 @@ devsearches:
     - "tx": "/en/developer-reference#tx"
     - "verack": "/en/developer-reference#verack"
     - "version": "/en/developer-reference#version"
+
+collections:
+  ## _alerts
+  alerts:
+    output: true
+    permalink: /en/alert/:path
+  ## _releases
+  releases:
+    output: true
+    permalink: /en/release/:path
+
+defaults:
+  - scope:
+      path: ""
+      type: alerts
+    values:
+      layout: alert
+      lang: en
+  - scope:
+      path: ""
+      type: releases
+    values:
+      layout: release
+      lang: en
+      breadcrumbs:
+        - bitcoin
+        - bcc
+        - bcc news
+        - RELEASE
+  - scope:
+      path: ""
+      type: posts
+    values:
+      lang: en

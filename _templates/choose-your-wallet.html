@@ -56,31 +56,6 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
-- armory:
-    title: "Armory"
-    titleshort: "Armory"
-    compat: "desktop windows mac linux"
-    level: 2
-    platform:
-      desktop:
-        text: "walletarmory"
-        link: "https://bitcoinarmory.com"
-        source: "https://github.com/etotheipi/BitcoinArmory"
-        screenshot: "armory.png"
-        os:
-        - windows
-        - mac
-        - linux
-        check:
-          control: "checkgoodcontrolfull"
-          validation: "checkgoodvalidationfullnoderequired"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkgoodprivacyimproved"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkpassprivacydisclosurefullnode"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - electrum:
     title: "Electrum"
     titleshort: "Electrum"
@@ -140,7 +115,7 @@ wallets:
       mobile:
         text: "walletbitcoinwallet"
         link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
-        source: "https://github.com/schildbach/bitcoin-wallet"
+        source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
         screenshot: "bitcoinwalletandroid.png"
         os:
         - android
@@ -158,7 +133,7 @@ wallets:
       android:
         text: "walletbitcoinwallet"
         link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
-        source: "https://github.com/schildbach/bitcoin-wallet"
+        source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
         screenshot: "bitcoinwalletandroid.png"
         os:
         - android
@@ -176,7 +151,7 @@ wallets:
       blackberry:
         text: "walletbitcoinwallet"
         link: "http://appworld.blackberry.com/webstore/content/23952882/"
-        source: "https://github.com/schildbach/bitcoin-wallet"
+        source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
         screenshot: "bitcoinwalletandroid.png"
         os:
         - android
@@ -444,6 +419,29 @@ wallets:
         privacycheck:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+- greenbits:
+    title: "GreenBits"
+    titleshort: "GreenBits"
+    compat: "mobile android"
+    level: 2
+    platform:
+      mobile:
+        text: "walletgreenbits"
+        link: "https://play.google.com/store/apps/details?id=com.greenaddress.greenbits_android_wallet"
+        source: "https://github.com/greenaddress/GreenBits"
+        screenshot: "greenbits.png"
+        os:
+        - android
+        check:
+          control: "checkpasscontrolmulti"
+          validation: "checkpassvalidationspvp2p"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
 - mycelium:
     title: "Mycelium"
@@ -749,83 +747,23 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
-- ninki:
-    title: "Ninki Wallet"
-    titleshort: "Ninki"
-    compat: "mobile desktop windows mac linux android ios"
-    level: 3
+- keepkey:
+    title: "KeepKey"
+    titleshort: "KeepKey"
+    compat: "hardware"
+    level: 2
     platform:
-      desktop:
-        text: "walletninki"
-        link: "https://chrome.google.com/webstore/detail/ninki-wallet/ojjnofoknpfkbbamkfililnkoeoiohih"
-        source: "https://github.com/Ninkip2p/NinkiWalletCRX"
-        screenshot: "ninki.png"
-        os:
-        - windows
-        - mac
-        - linux
+      hardware:
+        text: "walletkeepkey"
+        link: "https://www.keepkey.com/"
+        source: "https://github.com/keepkey/"
+        screenshot: "keepkey.png"
         check:
-          control: "checkpasscontrolmulti"
-          validation: "checkfailvalidationcentralized"
+          control: "checkgoodcontrolfull"
+          validation: "checkneutralvalidationvariable"
           transparency: "checkfailtransparencynew"
-          environment: "checkpassenvironmenttwofactor"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
-      mobile:
-        text: "walletninki"
-        link: "https://play.google.com/store/apps/details?id=com.ninki.wallet&amp;hl=en"
-        source: "https://github.com/Ninkip2p/NinkiCordova"
-        screenshot: "ninki.png"
-        os:
-        - android
-        - ios
-        check:
-          control: "checkpasscontrolmulti"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencynew"
-          environment: "checkpassenvironmenttwofactor"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
-      ios:
-        text: "walletninki"
-        link: "https://itunes.apple.com/us/app/ninki-wallet/id965528267?mt=8"
-        source: "https://github.com/Ninkip2p/NinkiCordova"
-        screenshot: "ninki.png"
-        os:
-        - ios
-        check:
-          control: "checkpasscontrolmulti"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencynew"
-          environment: "checkpassenvironmenttwofactor"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
-      android:
-        text: "walletninki"
-        link: "https://play.google.com/store/apps/details?id=com.ninki.wallet&amp;hl=en"
-        source: "https://github.com/Ninkip2p/NinkiCordova"
-        screenshot: "ninki.png"
-        os:
-        - android
-        check:
-          control: "checkpasscontrolmulti"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencynew"
-          environment: "checkpassenvironmenttwofactor"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
+          environment: "checkgoodenvironmenthardware"
+          privacy: "checkneutralprivacyvariable"
 ---
 
 <!-- Note: this file exempt from check-for-subheading-anchors check -->

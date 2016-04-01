@@ -12,29 +12,30 @@ JEKYLL_LOG=._jekyll.log
 #######################
 
 ## `make` (no arguments): just build
-default: build
+default: clean build
 
 ## `make preview`: start the built-in Jekyll preview
-preview:
+preview: clean
 	$S bundle exec jekyll serve
 
 ## `make test`: don't build, but do run all tests
 test: pre-build-tests post-build-tests
 
 ## `make valid`: build and run fast tests
-valid: pre-build-tests-fast build post-build-tests-fast
+valid: clean pre-build-tests-fast build post-build-tests-fast
 
 ## `make all`: build and run all tests
-all: pre-build-tests build post-build-tests
+all: clean pre-build-tests build post-build-tests
 
 ## `make deployment`: for use on build server
-deployment: install-deps-deployment \
+deployment: clean install-deps-deployment \
     valid
 
 ## `make travis`: for use with Travis CI
-travis: travis-background-keepalive \
+travis: clean travis-background-keepalive \
     install-deps-development \
     all
+
 
 
 
@@ -95,6 +96,9 @@ manual-checks: manual-check-diff-sha256sums
 #################
 ERROR_ON_OUTPUT="sed '1s/^/ERROR:\n/' | if grep . ; then sed 1iERROR ; false ; else true ; fi"
 
+clean:
+	$S bundle exec jekyll clean
+
 ## Always build using the default locale so log messages can be grepped.
 ## This should not affect webpage output.
 build:
@@ -107,13 +111,9 @@ build:
 
 ## Jekyll annoyingly returns success even when it emits errors and
 ## exceptions, so we'll grep its output for error strings
-#
-## FIXME: temporarily ignoring errors from WEBrick because
-## _plugin/remove-html-extension does something hackish until we upgrade
-## to Jekyll 3.0.0
 check-for-build-errors:
 	$S egrep -i '(error|warn|exception)' $(JEKYLL_LOG) \
-	    | grep -vi webrick.*filehandler \
+	    | grep -vi 'rouge/lexers/shell.rb' \
 	    | eval $(ERROR_ON_OUTPUT)
 
 
