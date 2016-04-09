@@ -719,7 +719,7 @@ Basic requirements:
 - No concerning bug is found when testing the wallet
 - Website supports HTTPS and 301 redirects HTTP requests
 - SSL certificate passes [Qualys SSL Labs SSL test](https://www.ssllabs.com/ssltest/)
-- Website serving executable code or requiring authentication uses HSTS with a max-age of at least 180 days
+- Website serving executable code or requiring authentication uses HSTS with a max-age of at least 180 days and is included in the [HSTS preload list](https://hstspreload.appspot.com/)
 - The identity of CEOs and/or developers is public
 - Avoid address reuse by using a new change address for each transaction
 - If private keys or encryption keys are stored online:
