@@ -135,7 +135,7 @@ wallet builds are audited in the *Transparency* score for each wallet.
 In April 2013, the OzCoin mining pool was hacked. The thief stole 923
 bitcoins (worth $135,000 USD), but online wallet StrongCoin modified
 their wallet code to 'steal back' 569 of those bitcoins ($83,000)
-from one their users who was suspected of the theft.
+from one of their users who was suspected of the theft.
 
 Although this attack was done with good intentions, it illustrated
 that the operators of StrongCoin could steal bitcoins from their users
