@@ -143,7 +143,7 @@ pl:
     checkfailcontrolthirdparty: "Pieniądze kontroluje podmiot trzeci"
     checkfailcontrolthirdpartytxt: "Serwis ten posiada pełną kontrolę nad Twoimi bitcoinami. Oznacza to, że musisz mu zaufać, że nie zgubi Twoich środków w wyniku wypadku z ich strony. Aktualnie większość portfeli przeglądarkowych nie ubezpiecza depozytów jak bank, a wiele takich serwisów padało ofiarami naruszeń bezpieczeństwa w przeszłości."
     checkgoodvalidationfullnode: "Pełna walidacja"
-    checkgoodvalidationfullnodetxt: "Portfel ten jest pełnym węzłem, który potwierdza i przekazuje transakcje w sieci Bitcoin. Oznacza to, że nie musisz ufać podmiotom trzecim podczas weryfikacji płatności. Pełne węzły zapewniają najwyższy poziom bezpieczeństwa i są niezbędne, aby chronić sieć. Wymagają jednak więcej miejsca (ponad 20GB), przepustowości i więcej czasu na pierwsze uruchomienie."
+    checkgoodvalidationfullnodetxt: "Portfel ten jest pełnym węzłem, który potwierdza i przekazuje transakcje w sieci Bitcoin. Oznacza to, że nie musisz ufać podmiotom trzecim podczas weryfikacji płatności. Pełne węzły zapewniają najwyższy poziom bezpieczeństwa i są niezbędne, aby chronić sieć. Wymagają jednak więcej miejsca (ponad 50GB), przepustowości i więcej czasu na pierwsze uruchomienie."
     checkgoodvalidationfullnoderequired: "Pełna walidacja"
     checkgoodvalidationfullnoderequiredtxt: "Ten portfel wymaga, zainstalowania oprogramowania pełnego węzła, które waliduje i przekazuje transakcje w sieci Bitcoin. Oznacza to, że przy weryfikacji płatności nie jest wymagane zaufanie w stosunku do podmiotów trzecich. Pełne węzły zapewniają najwyższy poziom bezpieczeństwa i są kluczowe dla ochrony sieci. Wymagają jednakże więcej miejsca (ponad 20 GB), przepustowości i dłuższego czasu początkowej synchronizacji."
     checkneutralvalidationvariable: "Zmienna walidacja"
@@ -235,7 +235,7 @@ pl:
     source: "Kod Źródłowy"
     versionhistory: "Pokaż historię wersji"
     notelicense: "Aplikacja Bitcoin Core jest tworzona przez społeczność jako <a href=\"https://www.fsf.org/about/what-is-free-software\">darmowy projekt o otwartym kodzie źródłowym</a>, opublikowanym na zasadach <a href=\"http://opensource.org/licenses/mit-license.php\">licencji MIT</a>."
-    notesync: "Pierwsza synchronizacja Bitcoin Core może zająć dużo czasu. Powinieneś upewnić się, że dysponujesz odpowiednią przepustowością i pamięcią na pełny rozmiar łańcucha bloków (ponad 20GB). Jeśli masz dobre połączenie do internetu, możesz wspomóc sieć bitcoin miejąc właczony komputer z Bitcoin Core i otwartym portem sieci 8333."
+    notesync: "Pierwsza synchronizacja Bitcoin Core może zająć dużo czasu. Powinieneś upewnić się, że dysponujesz odpowiednią przepustowością i pamięcią na pełny rozmiar łańcucha bloków (ponad 50GB). Jeśli masz dobre połączenie do internetu, możesz wspomóc sieć bitcoin miejąc właczony komputer z Bitcoin Core i otwartym portem sieci 8333."
     full_node_guide: "Przeczytaj <a href=\"/en/full-node\">przewodnik pełnego węzła</a> by dowiedzieć się więcej."
     patient: "Sprawdź swoją przepustowość i pojemność"
   events:
