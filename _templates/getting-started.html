@@ -7,17 +7,17 @@ id: getting-started
 ---
 <div class="content_getting-started">
   <h1 class="content_getting-started--title">{% translate pagetitle %}</h1>
-  <h2 class="content_getting-started--subtitle">{% translate pagedesc %}</h2>
+  <h2 class="content_getting-started--subtitle" id="pagedesc">{% translate pagedesc %}</h2>
 
   <ol class="content_getting-started--section">
     <div class="content_getting-started--icon">
       <img src="/img/icons/ico_own.svg" alt="Icon"/>
     </div>
     <div class="content_getting-started--section--title">
-      <h3 class="content_getting-started--section--title">{% translate users %}</h3>
+      <h3 id="users" class="content_getting-started--section--title">{% translate users %}</h3>
     </div>
     <li class="content_getting-started--item">
-      <h2>{% translate inform %}</h2>
+      <h2 id="inform">{% translate inform %}</h2>
       <p>{% translate informtxt %}</p>
       <div class="content_getting-started--section--button">
         <a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate informbut %}</a>
@@ -25,7 +25,7 @@ id: getting-started
     </li>
 
     <li class="content_getting-started--item">
-      <h2>{% translate choose %}</h2>
+      <h2 id="choose">{% translate choose %}</h2>
       <p>{% translate choosetxt %}</p>
       <div class="content_getting-started--section--button">
         <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate choosebut %}</a>
@@ -33,7 +33,7 @@ id: getting-started
     </li>
 
     <li class="content_getting-started--item">
-      <h2>{% translate get %}</h2>
+      <h2 id="get">{% translate get %}</h2>
       <p>{% translate gettxt %}</p>
       <div class="content_getting-started--section--button">
         <a href="http://howtobuybitcoins.info">{% translate getbut %}</a>
@@ -41,7 +41,7 @@ id: getting-started
     </li>
 
     <li class="content_getting-started--item">
-      <h2>{% translate spend %}</h2>
+      <h2 id="spend">{% translate spend %}</h2>
       <p>{% translate spendtxt %}</p>
       <div class="content_getting-started--section--button">
         <a href="http://usebitcoins.info">{% translate spendbut %}</a>
@@ -52,10 +52,10 @@ id: getting-started
   <ol class="content_getting-started--section">
     <div class="content_getting-started--icon"><img src="/img/icons/ico_pci.svg" alt="Icon"/></div>
     <div class="content_getting-started--section--title">
-      <h3 class="content_getting-started--section--title">{% translate merchants %}</h3>
+      <h3 id="merchants" class="content_getting-started--section--title">{% translate merchants %}</h3>
     </div>
     <li class="content_getting-started--item">
-      <h2>{% translate merchantinform %}</h2>
+      <h2 id="merchantinform">{% translate merchantinform %}</h2>
       <p>{% translate merchantinformtxt %}</p>
       <div class="content_getting-started--section--button">
         <a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate merchantinformbut %}</a>
@@ -63,7 +63,7 @@ id: getting-started
     </li>
 
     <li class="content_getting-started--item">
-      <h2>{% translate merchantservice %}</h2>
+      <h2 id="merchantservice">{% translate merchantservice %}</h2>
       <p>{% translate merchantservicetxt %}</p>
       <div class="content_getting-started--section--button">
         <a href="https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services">{% translate merchantservicebut %}</a>
@@ -71,7 +71,7 @@ id: getting-started
     </li>
 
     <li class="content_getting-started--item">
-      <h2>{% translate tax %}</h2>
+      <h2 id="tax">{% translate tax %}</h2>
       <p>{% translate taxtxt %}</p>
       <div class="content_getting-started--section--button">
         <a href="https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Setting_Prices">{% translate taxbut %}</a>
@@ -79,7 +79,7 @@ id: getting-started
     </li>
 
     <li class="content_getting-started--item">
-      <h2>{% translate visibility %}</h2>
+      <h2 id="visibility">{% translate visibility %}</h2>
       <p>{% translate visibilitytxt %}</p>
       <div class="content_getting-started--section--button">
         <a href="http://usebitcoins.info">{% translate visibilitybut %}</a>

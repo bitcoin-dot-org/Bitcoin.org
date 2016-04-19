@@ -4,25 +4,22 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 
 <div class="footer_standard">
-	<div class="footer_standard--leftbox">
-		<ul>
-			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="{% if site.STATUS == 1 %}footer_standard--alert{% else %}footer_standard--statusmenu{% endif %}">Network Status</a></li>
-			<li class="footer_standard--leftbox--item"><a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a></li>
-			{% case page.lang %}
-			{% when 'ar' or 'es' or 'sl' %}
-			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy</a></li>
-			{% else %}
-			<li class="footer_standard--leftbox--item"><a href="/{{ page.lang }}/{% translate privacy url %}">{% translate menu-privacy layout %}</a></li>
-			{% endcase %}
-			<li class="footer_standard--leftbox--item"><a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a></li>
-			<li class="footer_standard--leftbox--item"><a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a></li>
-			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
-		</ul>
-	</div>
-	<div class="footer_standard--rightbox">
-		© Bitcoin Project 2009-{{ site.time | date: '%Y' }} {% translate footer layout %}
-	</div>
-	<div class="footer_standard--sponsor">
-	  <!--<div><span>{% translate sponsor layout %}</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
-	</div>
+  <div class="footer_standard--leftbox">
+    <ul>
+      <li class="footer_standard--leftbox--item"><a href="/en/alerts" id="{% if site.STATUS == 1 %}footer_standard--alert{% else %}footer_standard--statusmenu{% endif %}">Network Status</a></li>
+      <li class="footer_standard--leftbox--item"><a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a></li>
+      {% case page.lang %}
+      {% when 'ar' or 'es' or 'sl' %}
+        <li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy</a></li>
+      {% else %}
+        <li class="footer_standard--leftbox--item"><a href="/{{ page.lang }}/{% translate privacy url %}">{% translate menu-privacy layout %}</a></li>
+      {% endcase %}
+      <li class="footer_standard--leftbox--item"><a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a></li>
+      <li class="footer_standard--leftbox--item"><a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a></li>
+      <li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
+    </ul>
+  </div>
+  <div class="footer_standard--rightbox">
+    © Bitcoin Project 2009-{{ site.time | date: '%Y' }} {% translate footer layout %}
+  </div>
 </div>

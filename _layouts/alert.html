@@ -12,13 +12,13 @@ layout: base
 
 <div class="content_alert">
 
-<link rel="alternate" type="application/rss+xml" href="/en/rss/alerts.rss" title="Bitcoin network status and alerts">
+  <link rel="alternate" type="application/rss+xml" href="/en/rss/alerts.rss" title="Bitcoin network status and alerts">
 
   <div class="content_alert--subhead">
     <a href="/en/alerts">Network alerts history</a>
-  | <a type="application/rss+xml" href="/en/rss/alerts.rss"><img src="/img/icons/header_rss.svg" alt="rss" class="rssicon"> Subscribe to RSS feed</a>
-  | <a href="https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/{{page.path|uri_escape}}">Post history</a>
-  | <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=Source%20File%3A%20{{page.path|uri_escape}}%0A%0A">Report issue</a>
+    | <a type="application/rss+xml" href="/en/rss/alerts.rss"><img src="/img/icons/header_rss.svg" alt="rss" class="rssicon"> Subscribe to RSS feed</a>
+    | <a href="https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/{{page.path|uri_escape}}">Post history</a>
+    | <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=Source%20File%3A%20{{page.path|uri_escape}}%0A%0A">Report issue</a>
   </div>
 
   <div class="content_alert--post">
@@ -26,7 +26,7 @@ layout: base
     <header class="content_alert--post--header">
       <img class="content_alert--post--header--icon" src="/img/icons/warning.svg" alt="warning">
       <h1 class="content_alert--post--header--title">{{ page.title }}</h1>
-      <h2 class="content_alert--post--header--subtitle">{{ page.date | date:"%e %B %Y" }}</h2>
+      <h2 class="content_alert--post--header--subtitle" id="date">{{ page.date | date:"%e %B %Y" }}</h2>
     </header>
 
     <article class="content_alert--content">

@@ -15,8 +15,8 @@ Bitcoin.org.
 <!-- Note: this file is built non-deterministically -->
 
 <div class="content_about">
-	<h1 class="content_about--title">{% translate pagetitle %}</h1>
-	<h2 class="content_about--subtitle">{% translate pagedesc %}</h2>
+  <h1 class="content_about--title">{% translate pagetitle %}</h1>
+  <h2 class="content_about--subtitle" id="pagedesc">{% translate pagedesc %}</h2>
   <div class="content_about--body">
     <h2 id="own">{% translate own %}</h2>
     <p>{% translate owntxt %}</p>
@@ -47,7 +47,7 @@ Bitcoin.org.
   </div>
   <div class="content_about--boxcontainer">
     <div class="content_about--infobox">
-      <h2 class="content_about--infobox--title">Credits</h2>
+      <h2 class="content_about--infobox--title" id="creadits">Credits</h2>
       <ul class="content_about--infobox--list">
         <li class="content_about--infobox--item">
           <h3 id="maintenance" class="content_about--credit--title">{% translate maintenance %}</h3>

@@ -3,41 +3,41 @@
 # http://opensource.org/licenses/MIT.
 
 layout: base
-id: you-need-to-know 
+id: you-need-to-know
 ---
 <div class="content_you-need-to-know">
 <h1 class="content_you-need-to-know--title">{% translate pagetitle %}</h1>
-<h2 class="content_you-need-to-know--subtitle">{% translate summary %}</h2>
+<h2 class="content_you-need-to-know--subtitle" id="summary">{% translate summary %}</h2>
 
   <ul class="content_you-need-to-know--list">
-    
+
     <li class="content_you-need-to-know--items">
       <img src="/img/icons/ico_key.svg" alt="Icon"/>
-      <h3>{% translate secure %}</h3>
+      <h3 id='secure'>{% translate secure %}</h3>
       <p>{% translate securetxt %}</p>
     </li>
 
     <li class="content_you-need-to-know--items">
       <img src="/img/icons/ico_market.svg" alt="Icon"/>
-      <h3>{% translate volatile %}</h3>
+      <h3 id="volatile">{% translate volatile %}</h3>
       <p>{% translate volatiletxt %}</p>
     </li>
 
     <li class="content_you-need-to-know--items">
       <img src="/img/icons/ico_irreversible.svg" alt="Icon"/>
-      <h3>{% translate irreversible %}</h3>
+      <h3 id="irreversible">{% translate irreversible %}</h3>
       <p>{% translate irreversibletxt %}</p>
     </li>
 
     <li class="content_you-need-to-know--items">
       <img src="/img/icons/ico_anon.svg" alt="Icon"/>
-      <h3>{% translate anonymous %}</h3>
+      <h3 id='anonymous' >{% translate anonymous %}</h3>
       <p>{% translate anonymoustxt %}</p>
     </li>
 
     <li class="content_you-need-to-know--items">
       <img src="/img/icons/ico_fast.svg" alt="Icon"/>
-      <h3>{% translate instant %}</h3>
+      <h3 id='instant' >{% translate instant %}</h3>
       <p>{% translate instanttxt %}</p>
     </li>
 
@@ -92,15 +92,16 @@ id: you-need-to-know
 
     <li class="content_you-need-to-know--items">
       <img src="/img/icons/ico_lab.svg" alt="Icon"/>
-      <h3>{% translate experimental %}</h3>
+      <h3 id='experimental' >{% translate experimental %}</h3>
       <p>{% translate experimentaltxt %}</p>
     </li>
 
     <li class="content_you-need-to-know--items">
       <img src="/img/icons/ico_invoice.svg" alt="Icon"/>
-      <h3>{% translate tax %}</h3>
+      <h3 id='tax'>{% translate tax %}</h3>
       <p>{% translate taxtxt %}</p>
     </li>
 
   </ul>
 </div>
+

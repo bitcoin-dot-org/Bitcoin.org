@@ -5,9 +5,9 @@ http://opensource.org/licenses/MIT.
 
 <div class="content_homepage">
   <div class="content_homepage--wrap">
-    <h2 class="content_homepage--intro">{% translate listintro %}</h2>
+    <h2 class="content_homepage--intro" id="listintro">{% translate listintro %}</h2>
     <div class="content_homepage--video">
-      <span class="content_homepage--video--button video-link" data-video-id="Gc2en3nHxA4" href=""><img src="/img/bitcoin/button.svg" alt=""></span>
+      <span class="content_homepage--video--button video-link" data-video-id="Gc2en3nHxA4" href=""><img alt="button" src="/img/bitcoin/button.svg"></span>
     </div>
     <div class="content_homepage--action--wrap">
       <div class="content_homepage--action">
@@ -18,7 +18,7 @@ http://opensource.org/licenses/MIT.
     </div>
   </div>
   <div class="content_homepage--overview--wrap">
-    <h3 class="content_homepage--overview">{% translate overview %}</h3>
+    <h3 class="content_homepage--overview" id="overview">{% translate overview %}</h3>
     <div class="content_homepage--overview--list">
       <a class="content_homepage--overview--item" href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a>
       <a class="content_homepage--overview--item" href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a>
@@ -28,13 +28,13 @@ http://opensource.org/licenses/MIT.
 </div>
 <script type="text/javascript" src="/js/videoLightning.js"></script>
 <script type="text/javascript">
-$(function() {
-  $(".video-link").jqueryVideoLightning({
-    autoplay: 1,
-    backdrop_color: "#222",
-    backdrop_opacity: 0.6,
-    glow: 20,
-    glow_color: "#000"
+  $(function() {
+    $(".video-link").jqueryVideoLightning({
+      autoplay: 1,
+      backdrop_color: "#222",
+      backdrop_opacity: 0.6,
+      glow: 20,
+      glow_color: "#000"
+    });
   });
-});
 </script>

@@ -59,45 +59,45 @@
 }
 
 .content_choose-your-wallet--item:hover {
-    .content_choose-your-wallet--sublist {
+  .content_choose-your-wallet--sublist {
+    display: block;
+    position: absolute;
+    height: @ms2;
+    font-size: 0;
+    padding-top: @mp1;
+    margin-left: -1px;
+  }
+  .content_choose-your-wallet--sublist[aria-firstlist="true"] {
+    .content_choose-your-wallet--subitem:first-child {
+      margin-left: 1px;
+      border-left: 0;
+    }
+  }
+  .content_choose-your-wallet--subitem {
+    display: inline-block;
+    font-size: @ms-1;
+    background: @gray-200;
+    border-bottom: 1px @gray-300 solid;
+    border-left: 1px @gray-300 solid;
+    cursor:pointer;
+    // height: @ms2;
+    a {
+      padding: @ms-1 @ms-2;
       display: block;
-      position: absolute;
-      height: @ms2;
-      font-size: 0;
-      padding-top: @mp1;
-      margin-left: -1px;
-    }
-    .content_choose-your-wallet--sublist[aria-firstlist="true"] {
-      .content_choose-your-wallet--subitem:first-child {
-        margin-left: 1px;
-        border-left: 0;
-      }
-    }
-    .content_choose-your-wallet--subitem {
-      display: inline-block;
-      font-size: @ms-1;
-      background: @gray-200;
-      border-bottom: 1px @gray-300 solid;
-      border-left: 1px @gray-300 solid;
-      cursor:pointer;
-      // height: @ms2;
-      a {
-        padding: @ms-1 @ms-2;
-        display: block;
-        @media screen and (min-width: 600px ) {
-          padding: @ms-1 @ms2;
-        }
-
-      }
-      &:last-child {
-        border-right: 1px @gray-300 solid;
+      @media screen and (min-width: 600px ) {
+        padding: @ms-1 @ms2;
       }
 
-
-      vertical-align: top;
-      top: 100px;
-      left: 0;
     }
+    &:last-child {
+      border-right: 1px @gray-300 solid;
+    }
+
+
+    vertical-align: top;
+    top: 100px;
+    left: 0;
+  }
 }
 
 .content_choose-your-wallet--body {
@@ -161,7 +161,7 @@
   min-height: @ms12;
   display: none;
   // @media screen and (min-width: 700px ) {
-  //  padding-bottom: @ms4;
+    //  padding-bottom: @ms4;
   // }
   text-align: center;
   border-radius: @ms-5;
@@ -174,9 +174,9 @@
   border-top-right-radius: @ms-5;
   .clearfix;
   // @media screen and (min-width: 700px ) {
-  // float: left;
-  // width: 50%;
-  // border-bottom: 1px @gray-300 solid;
+    // float: left;
+    // width: 50%;
+    // border-bottom: 1px @gray-300 solid;
   // }
 }
 .content_choose-your-wallet--information--header--title {
@@ -218,9 +218,9 @@
   border-top: 1px @gray-300 solid;
   border-bottom: 1px @gray-300 solid;
   // @media screen and (min-width: 700px ) {
-  //   float: left;
-  //   width: 50%;
-  //   min-height: @ms5;
+    //   float: left;
+    //   width: 50%;
+    //   min-height: @ms5;
   // }
 }
 .content_choose-your-wallet--information--button {
@@ -236,14 +236,14 @@
     color: @teal-500;
   }
   // @media screen and (min-width: 700px ) {
-  // min-height: @ms5;
-  // padding: 0;
-  // line-height: @ms5;
-  // border-left: 1px @gray-300 solid;
-  //   &:last-child {
-  //     border-right: 0;
-  //     color: @teal-500;
-  //   }
+    // min-height: @ms5;
+    // padding: 0;
+    // line-height: @ms5;
+    // border-left: 1px @gray-300 solid;
+    //   &:last-child {
+      //     border-right: 0;
+      //     color: @teal-500;
+    //   }
   // }
 }
 
@@ -366,7 +366,7 @@
 .content_choose-your-wallet--information--button[href="https://circle.com/"],
 .content_choose-your-wallet--information--button[href="https://coinapult.com/"],
 .content_choose-your-wallet--information--button[href="https://xapo.com/"] {
-      width: 100%;
+  width: 100%;
 }
 .content_choose-your-wallet--information--body--valuebox--item.checkgood h3{color: @green-600}
 .content_choose-your-wallet--information--body--valuebox--item.checkpass h3{color: @green-600}

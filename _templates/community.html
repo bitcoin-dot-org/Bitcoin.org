@@ -7,13 +7,13 @@ id: community
 ---
 <div class="content_community">
   <h1 class="content_community--title">{% translate pagetitle %}</h1>
-  <h2 class="content_community--subtitle">{% translate pagedesc %}</h2>
+  <h2 class="content_community--subtitle" id="pagedesc">{% translate pagedesc %}</h2>
 
 
   <div class="content_community--boxcontainer">
 
-    <div id="forums" class="content_community--infobox">
-      <h2 class="content_community--infobox--title">{% translate forums %}</h2>
+    <div class="content_community--infobox">
+      <h2 id="forums" class="content_community--infobox--title">{% translate forums %}</h2>
       <div class="content_community--infobox--icon">
         <img src="/img/icons/ico_invoice.svg" class="titleicon" alt="Icon">
       </div>
@@ -21,7 +21,7 @@ id: community
       <ul class="content_community--infobox--list">
         {% if page.lang == 'bg' %}<li><a href="http://bitcoinbg.eu/forum/">BitcoinBG.eu</a></li>{% endif %}
         {% if page.lang == 'bg' %}<li><a href="http://hash.bg/forum/">Hash.bg</a></li>{% endif %}
-        {% if page.lang == 'es' %}<li><<a href="http://forobitco.in/">ForoBitco.in en Español</a></li>{% endif %}
+        {% if page.lang == 'es' %}<li><a href="http://forobitco.in/">ForoBitco.in en Español</a></li>{% endif %}
         {% if page.lang == 'es' %}<li><a href="http://www.forobtc.com/">Foro Bitcoin en Español</a></li>{% endif %}
         {% if page.lang == 'pl' %}<li><a href="https://forum.bitcoin.pl/">Polski portal bitcoin.pl</a></li>{% endif %}
         {% if page.lang == 'ro' %}<li><a href="http://forum.bitcoin.ro/">Forumul comunitatii Bitcoin Romania</a></li>{% endif %}
@@ -33,8 +33,8 @@ id: community
       </ul>
     </div>
 
-    <div id="social" class="content_community--infobox">
-      <h2 class="content_community--infobox--title">{% translate social %}</h2>
+    <div class="content_community--infobox">
+      <h2 id="social" class="content_community--infobox--title">{% translate social %}</h2>
       <div class="content_community--infobox--icon">
         <img src="/img/icons/ico_network.svg" class="titleicon" alt="Icon">
       </div>
@@ -48,8 +48,8 @@ id: community
       </ul>
     </div>
 
-    <div id="meetups" class="content_community--infobox">
-      <h2 class="content_community--infobox--title">{% translate meetups %}</h2>
+    <div class="content_community--infobox">
+      <h2  id="meetups" class="content_community--infobox--title">{% translate meetups %}</h2>
       <div class="content_community--infobox--icon">
         <img src="/img/icons/ico_multi.svg" class="titleicon" alt="Icon">
       </div>
@@ -61,8 +61,8 @@ id: community
       </ul>
     </div>
 
-    <div id="irc" class="content_community--infobox">
-      <h2 class="content_community--infobox--title">{% translate irc %}</h2>
+    <div class="content_community--infobox">
+      <h2 id="irc" class="content_community--infobox--title">{% translate irc %}</h2>
       <div class="content_community--infobox--icon">
         <img src="/img/icons/ico_help.svg" class="titleicon" alt="Icon">
       </div>
@@ -86,10 +86,10 @@ id: community
     </div>
   </div>
 
-  <div id="nonprofit-organizations" class="content_community--infobox--nonprofit">
-    <h2 class="content_community--infobox--title">{% translate nonprofit %}</h2>
+  <div class="content_community--infobox--nonprofit">
+    <h2 id="{% translate non-profit anchor.community %}" class="content_community--infobox--title">{% translate nonprofit %}</h2>
     <div class="content_community--infobox--icon">
-        <img src="/img/icons/nonprofit.svg" class="titleicon" alt="Icon">
+        <img src="/img/icons/main_ico_worldwide.png" class="titleicon" alt="Icon">
     </div>
 
     <ul class="content_community--infobox--list--nonprofit">
@@ -108,7 +108,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/AR.png" alt="Argentinan flag">
+          <img src="/img/flags/ar.png" alt="Argentinan flag">
         </div>
         <div class="content_community--country">
           <h3 id="argentina">Argentina</h3>
@@ -120,7 +120,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/AU.png" alt="Australian flag">
+          <img src="/img/flags/au.png" alt="Australian flag">
         </div>
         <div class="content_community--country">
           <h3 id="australia">Australia</h3>
@@ -132,7 +132,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/AT.png" alt="Austrian flag">
+          <img src="/img/flags/at.png" alt="Austrian flag">
         </div>
         <div class="content_community--country">
           <h3 id="austria">Austria</h3>
@@ -144,7 +144,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/BE.png" alt="Belgian flag">
+          <img src="/img/flags/be.png" alt="Belgian flag">
         </div>
         <div class="content_community--country">
           <h3 id="belgium">Belgium</h3>
@@ -156,7 +156,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/CA.png" alt="Canadian flag">
+          <img src="/img/flags/ca.png" alt="Canadian flag">
         </div>
         <div class="content_community--country">
           <h3 id="canada">Canada</h3>
@@ -183,7 +183,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/FR.png" alt="French flag">
+          <img src="/img/flags/fr.png" alt="French flag">
         </div>
         <div class="content_community--country">
           <h3 id="france">France</h3>
@@ -195,7 +195,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/DE.png" alt="German flag">
+          <img src="/img/flags/de.png" alt="German flag">
         </div>
         <div class="content_community--country">
           <h3 id="germany">Germany</h3>
@@ -219,7 +219,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/IE.png" alt="Irish flag">
+          <img src="/img/flags/ie.png" alt="Irish flag">
         </div>
         <div class="content_community--country">
           <h3 id="ireland">Ireland</h3>
@@ -231,7 +231,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/IL.png" alt="Israeli flag">
+          <img src="/img/flags/il.png" alt="Israeli flag">
         </div>
         <div class="content_community--country">
           <h3 id="israel">Israel</h3>
@@ -243,7 +243,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/IT.png" alt="Italian flag">
+          <img src="/img/flags/it.png" alt="Italian flag">
         </div>
         <div class="content_community--country">
           <h3 id="italy">Italy</h3>
@@ -255,7 +255,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/MX.png" alt="Mexican flag">
+          <img src="/img/flags/mx.png" alt="Mexican flag">
         </div>
         <div class="content_community--country">
           <h3 id="mexico">Mexico</h3>
@@ -267,7 +267,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/NL.png" alt="Dutch flag">
+          <img src="/img/flags/nl.png" alt="Dutch flag">
         </div>
         <div class="content_community--country">
           <h3 id="netherlands">Netherlands</h3>
@@ -282,7 +282,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/PL.png" alt="Philippine flag">
+          <img src="/img/flags/pl.png" alt="Philippine flag">
         </div>
         <div class="content_community--country">
           <h3 id="philippines">Philippines</h3>
@@ -294,7 +294,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/PL.png" alt="Polish flag">
+          <img src="/img/flags/pl.png" alt="Polish flag">
         </div>
         <div class="content_community--country">
           <h3 id="poland">Poland</h3>
@@ -306,7 +306,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/RO.png" alt="Romanian flag">
+          <img src="/img/flags/ro.png" alt="Romanian flag">
         </div>
         <div class="content_community--country">
           <h3 id="romania">Romania</h3>
@@ -318,7 +318,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/RU.png" alt="Russian flag">
+          <img src="/img/flags/ru.png" alt="Russian flag">
         </div>
         <div class="content_community--country">
           <h3 id="russia">Russia</h3>
@@ -342,7 +342,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/RU.png" alt="Slovenian flag">
+          <img src="/img/flags/ru.png" alt="Slovenian flag">
         </div>
         <div class="content_community--country">
           <h3 id="slovenia">Slovenia</h3>
@@ -354,7 +354,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/SV.png" alt="Swedish flag">
+          <img src="/img/flags/sv.png" alt="Swedish flag">
         </div>
         <div class="content_community--country">
           <h3 id="sweden">Sweden</h3>
@@ -366,7 +366,7 @@ id: community
 
       <li>
         <div class="content_community--flag">
-          <img src="/img/flags/CH.png" alt="Swiss flag">
+          <img src="/img/flags/ch.png" alt="Swiss flag">
         </div>
         <div class="content_community--country">
           <h3 id="switzerland">Switzerland</h3>

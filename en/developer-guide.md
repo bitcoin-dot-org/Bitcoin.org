@@ -21,7 +21,8 @@ end_of_page: |
 
 <div class="content_guide--header">
   <h1 class="content_guide--title" id="developer-documentation">Developer Documentation</h1>
-  <h2 class="content_guide--subtitle">Find useful resources, guides and reference material for developers.</h2>
+  <h2 class="content_guide--subtitle" id="summary">Find useful resources, guides and reference material for developers.</h2>
+      <!-- no subhead-links here -->
   <div class="content_guide--search">
     <input id="glossary_term" class="glossary_term" placeholder="Search">
   </div>
@@ -54,8 +55,9 @@ end_of_page: |
 <div markdown="1" id="toc" class="toc"><div markdown="1">
   <div class="content_guide--toc--top">
     <a class="content_guide--toc--back" href="/en/developer-documentation">Return to Overview</a>
-    <h2 class="content_guide--toc--title">Guide</h2>
-    <h3 class="content_guide--toc--subtitle">Find detailed information about the Bitcoin protocol and related specifications.</h3>
+    <h2 class="content_guide--toc--title" id="guide">Guide</h2>
+    <h3 class="content_guide--toc--subtitle" id="subtitle">Find detailed information about the Bitcoin protocol and related specifications.</h3>
+      <!-- no subhead-links here -->
     <ul class="content_guide--toc--buttons">
       <li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new" onmouseover="updateIssue(event);">Report Issue</a></li>
       <li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/_includes" onmouseover="updateSource(event);">Edit GitHub</a></li>

@@ -12,12 +12,12 @@ title: Network status and alerts - Bitcoin
 
 <div class="content_alerts">
   <h1 class="content_alerts--title">Network status and alerts</h1>
-  <h2 class="content_alerts--subtitle">Stay aware of network alerts by <a type="application/rss+xml" href="/en/rss/alerts.rss">subscribing to the RSS feed <img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h2>
+  <h2 class="content_alerts--subtitle" id="summary">Stay aware of network alerts by <a type="application/rss+xml" href="/en/rss/alerts.rss">subscribing to the RSS feed <img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h2>
 
   <div class="content_alerts--boxcontainer">
     <div class="content_alerts--infobox">
       {% if site.STATUS == 0 %}
-      <h2 class="content_alerts--infobox--title alertstatusinactive">There is no ongoing event on the Bitcoin network.</h2>
+      <h2 class="content_alerts--infobox--title alertstatusinactive" id="summery">There is no ongoing event on the Bitcoin network.</h2>
       <div class="content_alerts--infobox--icon">
       </div>
       {% else %}
