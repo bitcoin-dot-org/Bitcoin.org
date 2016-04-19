@@ -17,7 +17,7 @@ lang: en
 		<link>https://bitcoin.org/en/events</link>
 	</image>
         {% assign date_sorted_conferences = site.conferences | sort: 'date' %}
-	{% for p in date_sorted_conferences %}
+	      {% for p in date_sorted_conferences %}
         <item>
             <title>{{ p.title | htmlescape }}, {{ p.city | htmlescape }} - {{ p.country | htmlescape }}</title>
             <link>{{p.link}}</link>

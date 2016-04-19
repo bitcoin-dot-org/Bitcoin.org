@@ -26,16 +26,20 @@ title: Network status and alerts - Bitcoin
         <img src="/img/icons/warning.svg" class="titleicon" alt="Icon">
       </div>
       <ul class="content_alerts--infobox--list">
-          {% filter_for p in site.pages reversed sort_by:date category:alert %}{% if p.active == true %}
-          <li><span>{{ p.date | date:"%Y-%m-%d" }}</span> <a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a></li>
-          {% endif %}{% endfilter_for %}
+        {% for p in date_sorted_alerts reversed %}{% if p.active == true %}
+        <li>
+          <span>{{ p.date | date:"%Y-%m-%d" }}</span> <a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a>
+        </li>
+          {% endif %}{% endfor %}
       </ul>
       {% endif %}
       <ul class="content_alerts--infobox--list">
           <li class="content_alerts--infobox--previews">Previews network events</li>
-          {% filter_for p in site.pages reversed sort_by:date category:alert %}{% if p.active == false %}
-          <li><span>{{ p.date | date:"%Y-%m-%d" }}</span><a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a></li>
-          {% endif %}{% endfilter_for %}
+           {% for p in date_sorted_alerts reversed %}{% if p.active == false %}
+           <li>
+             <span>{{ p.date | date:"%Y-%m-%d" }}</span><a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a>
+           </li>
+           {% endif %}{% endfor %}
       </ul>
     </div>
   </div>

@@ -19,13 +19,13 @@ id: events
   <div class="content_events--map">
     <div id="eventmap" class="content_events--eventmap"></div>
     <div id="eventdata" class="eventdata">
-    {% filter_for p in site.conferences sort_by:date %}{% if p.geoloc %}
+      {% for p in date_sorted_conferences %}{% if p.geoloc %}
     <div data-lat="{{ p.geoloc.lat }}" data-lon="{{ p.geoloc.lon }}"><b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div>
-    {% endif %}{% endfilter_for %}
+    {% endif %}{% endfor %}
 
-    {% filter_for p in site.meetups sort_by:date %}{% if p.geoloc %}
+    {% for p in date_sorted_meetups %}{% if p.geoloc %}
     <div data-lat="{{ p.geoloc.lat }}" data-lon="{{ p.geoloc.lon }}"><b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div>
-    {% endif %}{% endfilter_for %}
+    {% endif %}{% endfor %}
 
     </div>
     <script src="/js/events.js"></script>
@@ -34,13 +34,13 @@ id: events
     <div class="content_events--infobox">
       <h2 id="upcoming" class="content_events--infobox--title">{% translate upcoming %}</h2>
       <ul class="content_events--infobox--list listtable eventtable">
-      {% filter_for p in site.conferences sort_by:date %}
+        {% for p in date_sorted_conferences %}
         <li class="content_events--upcoming--item">
           <span class="content_events--upcoming--item--date">{{ p.date | date:"%Y-%m-%d" }}</span>
           <span class="content_events--upcoming--item--event"><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></span>
           <span class="content_events--upcoming--item--location">{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</span>
         </li>
-      {% endfilter_for %}
+        {% endfor %}
       </ul>
       <div class="content_events--footer">
         <div class="content_events--footer--wrap">
