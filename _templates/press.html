@@ -38,228 +38,349 @@ dialogs:
   quotefrancoisrvelde: "It represents a remarkable conceptual and technical achievement, which may well be used by existing financial institutions (which could issue their own bitcoins) or even by governments themselves."
 
 ---
+<div class="content_press">
+  <h1 class="content_press--title">{% translate pagetitle %}</h1>
+  <h2 class="content_press--subtitle">{% translate summary %}</h2>
+  <div class="content_press--body">
+    <h2 id="volunteer">{% translate volunteer %}</h2>
+    <p>{% translate volunteernonprofit %} {% translate volunteerpresscenter %}</p>
+  </div>
 
-<h1>{% translate pagetitle %}</h1>
-<p class="summary">{% translate summary %}</p>
+  <div class="content_press--faq">
+    <div class="content_press--faq--title">
+      <h2 id="layout">{% translate menu-faq layout %}</h2>
+    </div>
+    <div class="content_press--foq--section">
+      <ul class="content_press--faq--list">
 
-<h2 id="volunteer">{% translate volunteer %}</h2>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate whatisbitcoin faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate whatisbitcointxt1 faq %}</p>
+          </div>
+        </li>
 
-<div class="press-volunteer">
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate howitworks faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate howitworkstxt1 faq %}</p>
+            <p>{% translate howitworkstxt2 faq %}</p>
+          </div>
+        </li>
 
-<div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate whatismining faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate whatisminingtxt1 faq %}</p>
+          </div>
+        </li>
 
-<p>{% translate volunteernonprofit %}</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate acquire faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li>{% translate acquireli1 faq %}</li>
+              <li>{% translate acquireli2 faq %}</li>
+              <li>{% translate acquireli3 faq %}</li>
+              <li>{% translate acquireli4 faq %}</li>
+            </ul>
+            <p>{% translate acquiretxt1 faq %}</p>
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate used faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate usedtxt1 faq %}</p>
+            <img src="/img/faq/merchants_map.png" alt="Screenshot">
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate makepayment faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate makepaymenttxt1 faq %}</p>
+            <img src="/img/faq/mobile_send.png" alt="Screenshot">
+            <img src="/img/faq/mobile_receive.png" alt="Screenshot">
+          </div>
+        </li>
 
-<h2 id="layout">{% translate menu-faq layout %}</h2>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate advantages faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li>{% translate advantagesli1 faq %}</li>
+              <li>{% translate advantagesli2 faq %}</li>
+              <li>{% translate advantagesli3 faq %}</li>
+              <li>{% translate advantagesli4 faq %}</li>
+              <li>{% translate advantagesli5 faq %}</li>
+            </ul>
+          </div>
+        </li>
 
-<div class="press-faq">
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate disadvantages faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li>{% translate disadvantagesli1 faq %}</li>
+              <li>{% translate disadvantagesli2 faq %}</li>
+              <li>{% translate disadvantagesli3 faq %}</li>
+            </ul>
+          </div>
+        </li>
 
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate whatisbitcoin faq %}</a>
-  <div>
-  <p>{% translate whatisbitcointxt1 faq %}</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate secure faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate securetxt1 faq %}</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate islegal faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate islegaltxt1 faq %}</p>
+            <p>{% translate islegaltxt2 faq %}</p>
+            <ul>
+              <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
+              <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate taxes faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate taxestxt1 faq %}</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate illegalactivities faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate illegalactivitiestxt1 faq %}</p>
+            <p>{% translate illegalactivitiestxt2 faq %}</p>
+            <p>{% translate illegalactivitiestxt3 faq %}</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate bubble faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate bubbletxt1 faq %}</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate whyvalue faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate whyvaluetxt1 faq %}</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate ponzi faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate ponzitxt1 faq %}</p>
+            <p>{% translate ponzitxt2 faq %}</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate creator faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate creatortxt1 faq %}</p>
+            <p>{% translate creatortxt2 faq %}</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate worthless faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate worthlesstxt1 faq %}</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate virtual faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate virtualtxt1 faq %}</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate trust faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate trusttxt1 faq %}</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">{% translate anonymous faq %}</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>{% translate anonymoustxt1 faq %}</p>
+            <p>{% translate anonymoustxt2 faq %}</p>
+          </div>
+        </li>
+      </ul>
+      <div class="content_press--faq--footer">
+        <p>{% translate faqmore %}</p>
+      </div>
+    </div>
+  </div>
+  <div class="content_press--video">
+    <h2 id="videos">{{ page.dialogs.materialvideo }}</h2>
+    <ul class="content_press--video--list">
+      <li class="content_press--video--item">
+        <a href="https://www.youtube.com/watch?v=LP4GSvQUtBw&amp;feature=player_embedded" target="_blank">
+          <img src="/img/press/video/funke.jpg" alt="what is Bitcoin">
+          <span>What is Bitcoin - Funke</span>
+        </a>
+      </li>
+
+      <li class="content_press--video--item">
+        <a href="https://www.youtube.com/watch?v=Um63OQz3bjo&amp;feature=player_embedded" target="_blank">
+          <img src="/img/press/video/whatisbitcoin.jpg" alt="what is Bitcoin">
+          <span>What is Bitcoin - Weusecoins</span>
+        </a>
+      </li>
+    </ul>
+    <a class="content_press-video--link" href="https://drive.google.com/folderview?id=0Bw3qRtSO3Wwtb3dYLVNDTmNxSTQ&amp;usp=sharing" target="_blank">{{ page.dialogs.materialvideoformat }}</a>
+  </div>
+
+
+  {% if page.lang == 'en' %}
+  <div class="content_press--quote">
+    <h2 id="quotes" class="content_press-quote--title">{{ page.dialogs.materialquote }}</h2>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotechrisdixon }}</p>
+    <cite><a href="https://en.wikipedia.org/wiki/Chris_Dixon">Chris Dixon</a>, Technology Investor</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotewencescasares }}</p>
+    <cite><a href="https://en.wikipedia.org/wiki/Wences_Casares">Wences Casares</a>, Technology Entrepreneur (<a href="http://techcrunch.com/2013/04/11/bitcoin/">{{page.dialogs.material_source}}</a>)</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotetonygallippi }}</p>
+    <cite><a href="https://en.wikipedia.org/wiki/Tony_Gallippi">Tony Gallippi</a>, BitPay CEO</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotedankaminsky }}</p>
+    <cite><a href="https://en.wikipedia.org/wiki/Dan_Kaminsky">Dan Kaminsky</a>, Security Researcher (<a href="https://bitcointalk.org/index.php?topic=34458.0">{{page.dialogs.material_source}}</a>)</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotejeremyliew }}</p>
+    <cite><a href="https://en.wikipedia.org/wiki/Lightspeed_Ventures">Jeremy Liew</a>, Lightspeed Venture Partners (<a href="http://techcrunch.com/2013/04/11/bitcoin/">{{page.dialogs.material_source}}</a>)</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotejohndonohoe }}</p>
+    <cite><a href="https://en.wikipedia.org/wiki/John_Donahoe">John Donohoe</a>, former Ebay CEO (<a href="http://techcrunch.com/2013/11/03/ebay-ceo-john-donahoe-is-bullish-on-digital-currency-and-hes-keeping-tabs-on-bitcoin/">{{page.dialogs.material_source}}</a>)</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotetylerwinklevoss }}</p>
+    <cite><a href="https://en.wikipedia.org/wiki/Tyler_Winklevoss">Tyler Winklevoss</a>, Entrepreneur (<a href="http://dealbook.nytimes.com/2013/04/11/as-big-investors-emerge-bitcoin-gets-ready-for-its-close-up/">{{page.dialogs.material_source}}</a>)</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotesatoshi }}</p>
+    <cite><a href="https://en.wikipedia.org/wiki/Satoshi_Nakamoto">Satoshi Nakamoto</a>, Bitcoin Developer (<a href="http://p2pfoundation.ning.com/forum/topics/bitcoin-open-{{page.dialogs.material_source}}">{{page.dialogs.material_source}}</a>)</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotegavinandresen }}</p>
+    <cite><a href="https://en.wikipedia.org/wiki/Gavin_Andresen">Gavin Andresen</a>, Chief Scientist, The Bitcoin Foundation (<a href="https://www.youtube.com/watch?v=0S4dSXTnfms">{{page.dialogs.material_source}}</a>)</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotepaulbuchheit }}</p>
+    <cite><a href="https://en.wikipedia.org/wiki/Paul_Buchheit">Paul Buchheit</a>, Creator of GMail, Google (<a href="https://twitter.com/paultoo/status/328969714283995136">{{page.dialogs.material_source}}</a>)</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quoteandyskelton }}</p>
+    <cite>Andy Skelton, Developer, WordPress (<a href="https://en.blog.wordpress.com/2012/11/15/pay-another-way-bitcoin/">{{page.dialogs.material_source}}</a>)</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotetuurdemeester }}</p>
+    <cite>Tuur Demeester, Author, MacroTrends</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quoterichardbrown }}</p>
+    <cite>Richard Brown, Executive architect, IBM</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotefredwilson }}</p>
+    <cite><a href="https://en.wikipedia.org/wiki/Fred_Wilson_%28financier%29">Fred Wilson</a>, Co-Founder of Union Square Ventures (<a href="http://www.businessinsider.com/fred-wilson-heres-why-im-investing-in-bitcoin-2013-5">{{page.dialogs.material_source}}</a>)</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotefrancoisrvelde }}</p>
+    <cite>François R. Velde, Economist, Federal Reserve (<a href="http://www.nytimes.com/2013/11/24/your-money/a-bitcoin-puzzle-heads-its-excitement-tails-its-anxiety.html">{{page.dialogs.material_source}}</a>)</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotenavalravikant }}</p>
+    <cite><a href="https://en.wikipedia.org/wiki/AngelList">Naval Ravikant</a>, Founder of Angellist (<a href="https://gigaom.com/2013/09/10/as-bitcoin-hype-settles-down-real-possibilities-start-to-emerge/">{{page.dialogs.material_source}}</a>)</cite>
+    </blockquote>
+
+    <blockquote class="content_press--quotes--blockquote">
+    <p>{{ page.dialogs.quotebrianforde }}</p>
+    <cite>Brian Forde, Director of Digital Currency, MIT Media Lab (<a href="http://www.forbes.com/sites/gregoryferenstein/2015/07/29/former-obama-tech-advisor-explains-how-bitcoin-could-transform-government-in-5-quotes/">{{page.dialogs.material_source}}</a>)</cite>
+    </blockquote>
+    <p class="content_press--quotes--link">{{page.dialogs.material_even_more_quotes}}</p>
   </div>
 </div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate howitworks faq %}</a>
-  <div>
-  <p>{% translate howitworkstxt1 faq %}</p>
-  <p>{% translate howitworkstxt2 faq %}</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate whatismining faq %}</a>
-  <div>
-  <p>{% translate whatisminingtxt1 faq %}</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate acquire faq %}</a>
-  <div>
-  <ul>
-    <li>{% translate acquireli1 faq %}</li>
-    <li>{% translate acquireli2 faq %}</li>
-    <li>{% translate acquireli3 faq %}</li>
-    <li>{% translate acquireli4 faq %}</li>
-  </ul>
-  <p>{% translate acquiretxt1 faq %}</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate used faq %}</a>
-  <div>
-  <p>{% translate usedtxt1 faq %}</p>
-  <p>
-  <img style="height:165px;width:380px;" src="/img/faq/merchants_map.png" alt="Screenshot">
-  </p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate makepayment faq %}</a>
-  <div>
-  <p>{% translate makepaymenttxt1 faq %}</p>
-  <p><img src="/img/faq/mobile_send.png" style="height:325px;width:190px;" alt="Screenshot"><img src="/img/faq/mobile_receive.png" style="height:325px;width:190px;" alt="Screenshot"></p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate advantages faq %}</a>
-  <div>
-  <ul>
-    <li>{% translate advantagesli1 faq %}</li>
-    <li>{% translate advantagesli2 faq %}</li>
-    <li>{% translate advantagesli3 faq %}</li>
-    <li>{% translate advantagesli4 faq %}</li>
-    <li>{% translate advantagesli5 faq %}</li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate disadvantages faq %}</a>
-  <div>
-  <ul>
-    <li>{% translate disadvantagesli1 faq %}</li>
-    <li>{% translate disadvantagesli2 faq %}</li>
-    <li>{% translate disadvantagesli3 faq %}</li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate secure faq %}</a>
-  <div>
-  <p>{% translate securetxt1 faq %}</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate islegal faq %}</a>
-  <div>
-  <p>{% translate islegaltxt1 faq %}</p>
-  <p>{% translate islegaltxt2 faq %}</p>
-  <ul>
-    <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
-    <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate taxes faq %}</a>
-  <div>
-  <p>{% translate taxestxt1 faq %}</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate illegalactivities faq %}</a>
-  <div>
-  <p>{% translate illegalactivitiestxt1 faq %}</p>
-  <p>{% translate illegalactivitiestxt2 faq %}</p>
-  <p>{% translate illegalactivitiestxt3 faq %}</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate bubble faq %}</a>
-  <div>
-  <p>{% translate bubbletxt1 faq %}</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate whyvalue faq %}</a>
-  <div>
-  <p>{% translate whyvaluetxt1 faq %}</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate ponzi faq %}</a>
-  <div>
-  <p>{% translate ponzitxt1 faq %}</p>
-  <p>{% translate ponzitxt2 faq %}</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate creator faq %}</a>
-  <div>
-  <p>{% translate creatortxt1 faq %}</p>
-  <p>{% translate creatortxt2 faq %}</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate worthless faq %}</a>
-  <div>
-  <p>{% translate worthlesstxt1 faq %}</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate virtual faq %}</a>
-  <div>
-  <p>{% translate virtualtxt1 faq %}</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate trust faq %}</a>
-  <div>
-  <p>{% translate trusttxt1 faq %}</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate anonymous faq %}</a>
-  <div>
-  <p>{% translate anonymoustxt1 faq %}</p>
-  <p>{% translate anonymoustxt2 faq %}</p>
-  </div>
-</div>
-<p>{% translate faqmore %}</p>
 
-</div>
 
-{% if page.lang == 'en' %}
-
-<div class="press-videos">
-
-<h2 id="videos">{{ page.dialogs.materialvideo }}</h2>
-
-<div>
-<a href="https://www.youtube.com/watch?v=LP4GSvQUtBw&amp;feature=player_embedded" target="_blank"><img src="/img/press/video/funke.jpg" alt="what is Bitcoin"></a><br>
-What is Bitcoin - Funke<br>
-<a href="https://www.youtube.com/watch?v=LP4GSvQUtBw&amp;feature=player_embedded" target="_blank">{{ page.dialogs.materialvideoyoutube }}</a><br>
-<a href="https://drive.google.com/folderview?id=0Bw3qRtSO3Wwtb3dYLVNDTmNxSTQ&amp;usp=sharing" target="_blank">{{ page.dialogs.materialvideoformat }}</a>
-</div>
-<div>
-<a href="https://www.youtube.com/watch?v=Um63OQz3bjo&amp;feature=player_embedded" target="_blank"><img src="/img/press/video/whatisbitcoin.jpg" alt="what is Bitcoin"></a><br>
-What is Bitcoin - Weusecoins<br>
-<a href="https://www.youtube.com/watch?v=Um63OQz3bjo&amp;feature=player_embedded" target="_blank">{{ page.dialogs.materialvideoyoutube }}</a><br>
-</div>
-
-</div>
-
-<div class="press-quotes">
-
-<h2 id="quotes">{{ page.dialogs.materialquote }}</h2>
-<div>
-<p><span>{{ page.dialogs.quotechrisdixon }}</span><span><a href="https://en.wikipedia.org/wiki/Chris_Dixon">Chris Dixon</a>, Technology Investor</span></p>
-<p><span>{{ page.dialogs.quotewencescasares }}</span><span><a href="https://en.wikipedia.org/wiki/Wences_Casares">Wences Casares</a>, Technology Entrepreneur (<a href="http://techcrunch.com/2013/04/11/bitcoin/">{{page.dialogs.material_source}}</a>)</span></p>
-<p><span>{{ page.dialogs.quotetonygallippi }}</span><span><a href="https://en.wikipedia.org/wiki/Tony_Gallippi">Tony Gallippi</a>, BitPay CEO</span></p>
-<p><span>{{ page.dialogs.quotedankaminsky }}</span><span><a href="https://en.wikipedia.org/wiki/Dan_Kaminsky">Dan Kaminsky</a>, Security Researcher (<a href="https://bitcointalk.org/index.php?topic=34458.0">{{page.dialogs.material_source}}</a>)</span></p>
-<p><span>{{ page.dialogs.quotejeremyliew }}</span><span><a href="https://en.wikipedia.org/wiki/Lightspeed_Ventures">Jeremy Liew</a>, Lightspeed Venture Partners (<a href="http://techcrunch.com/2013/04/11/bitcoin/">{{page.dialogs.material_source}}</a>)</span></p>
-<p><span>{{ page.dialogs.quotejohndonohoe }}</span><a href="https://en.wikipedia.org/wiki/John_Donahoe">John Donohoe</a>, former Ebay CEO (<a href="http://techcrunch.com/2013/11/03/ebay-ceo-john-donahoe-is-bullish-on-digital-currency-and-hes-keeping-tabs-on-bitcoin/">{{page.dialogs.material_source}}</a>)<span></span></p>
-<p><span>{{ page.dialogs.quotetylerwinklevoss }}</span><span><a href="https://en.wikipedia.org/wiki/Tyler_Winklevoss">Tyler Winklevoss</a>, Entrepreneur (<a href="http://dealbook.nytimes.com/2013/04/11/as-big-investors-emerge-bitcoin-gets-ready-for-its-close-up/">{{page.dialogs.material_source}}</a>)</span></p>
-<p><span>{{ page.dialogs.quotesatoshi }}</span><span><a href="https://en.wikipedia.org/wiki/Satoshi_Nakamoto">Satoshi Nakamoto</a>, Bitcoin Developer (<a href="http://p2pfoundation.ning.com/forum/topics/bitcoin-open-{{page.dialogs.material_source}}">{{page.dialogs.material_source}}</a>)</span></p>
-<p><span>{{ page.dialogs.quotegavinandresen }}</span><span><a href="https://en.wikipedia.org/wiki/Gavin_Andresen">Gavin Andresen</a>, Chief Scientist, The Bitcoin Foundation (<a href="https://www.youtube.com/watch?v=0S4dSXTnfms">{{page.dialogs.material_source}}</a>)</span></p>
-<p><span>{{ page.dialogs.quotepaulbuchheit }}</span><span><a href="https://en.wikipedia.org/wiki/Paul_Buchheit">Paul Buchheit</a>, Creator of GMail, Google (<a href="https://twitter.com/paultoo/status/328969714283995136">{{page.dialogs.material_source}}</a>)</span></p>
-<p><span>{{ page.dialogs.quoteandyskelton }}</span><span>Andy Skelton, Developer, WordPress (<a href="https://en.blog.wordpress.com/2012/11/15/pay-another-way-bitcoin/">{{page.dialogs.material_source}}</a>)</span></p>
-<p><span>{{ page.dialogs.quotetuurdemeester }}</span><span>Tuur Demeester, Author, MacroTrends</span></p>
-<p><span>{{ page.dialogs.quoterichardbrown }}</span><span>Richard Brown, Executive architect, IBM</span></p>
-<p><span>{{ page.dialogs.quotefredwilson }}</span><span><a href="https://en.wikipedia.org/wiki/Fred_Wilson_%28financier%29">Fred Wilson</a>, Co-Founder of Union Square Ventures (<a href="http://www.businessinsider.com/fred-wilson-heres-why-im-investing-in-bitcoin-2013-5">{{page.dialogs.material_source}}</a>)</span></p>
-<p><span>{{ page.dialogs.quotefrancoisrvelde }}</span><span>François R. Velde, Economist, Federal Reserve (<a href="http://www.nytimes.com/2013/11/24/your-money/a-bitcoin-puzzle-heads-its-excitement-tails-its-anxiety.html">{{page.dialogs.material_source}}</a>)</span></p>
-<p><span>{{ page.dialogs.quotenavalravikant }}</span><span><a href="https://en.wikipedia.org/wiki/AngelList">Naval Ravikant</a>, Founder of Angellist (<a href="https://gigaom.com/2013/09/10/as-bitcoin-hype-settles-down-real-possibilities-start-to-emerge/">{{page.dialogs.material_source}}</a>)</span></p>
-<p><span>{{ page.dialogs.quotebrianforde }}</span><span>Brian Forde, Director of Digital Currency, MIT Media Lab (<a href="http://www.forbes.com/sites/gregoryferenstein/2015/07/29/former-obama-tech-advisor-explains-how-bitcoin-could-transform-government-in-5-quotes/">{{page.dialogs.material_source}}</a>)</span></p>
-
-<p class="final"><i>{{page.dialogs.material_even_more_quotes}}</i></p>
-</div>
-
-<a href="#" onclick="materialShow(event);" ontouchstart="materialShow(event);">{{ page.dialogs.materialquotemore }}</a>
-
-</div>
 
 {% endif %}

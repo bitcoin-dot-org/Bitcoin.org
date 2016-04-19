@@ -1,0 +1,36 @@
+/*
+Builds the icons on the left and text on the right content.
+
+Use:
+  .builder__call-to-action__standard(standard);
+
+The markup:
+    <div class="content_standard--action">
+	  <a class="content_standard--action--text" href="/en/getting-started">
+	    Get started with Bitcoin
+	  </a>
+	</div>
+*/
+.builder__call-to-action__standard(@classname) {
+	.content_@{classname}--action {
+    text-align: center;
+    width: 100%;
+	}
+  .content_@{classname}--action--wrap {
+    display: inline-block;
+  	margin: @ms3 auto;
+  	text-align: center;
+  	border-radius: @ms-5;
+  	font-weight: 500;
+  	background: linear-gradient(@teal-400,@teal-500 85%,@teal-500 90%,@teal-500);
+  	.card-2;
+  }
+
+	.content_@{classname}--action--text {
+    font-size: @ms0;
+  	color: @white !important;
+  	display: block;
+    padding: @ms2 @ms1;
+  	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+	}
+}

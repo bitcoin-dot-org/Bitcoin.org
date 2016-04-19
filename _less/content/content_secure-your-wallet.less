@@ -1,0 +1,60 @@
+.builder__content__title--long(secure-your-wallet);
+.builder__text__standard(secure-your-wallet);
+
+.content_secure-your-wallet--items:first-child {
+	background: #000;
+	border-radius: @ms-5;
+	margin: @ms5 0;
+	p,h3 {
+		color: @gray-400;	
+	}
+	@media screen and (min-width: 750px ) { 
+		img {
+			padding: @ms3 @ms3 @ms8;
+		}
+	}	
+}
+
+.content_secure-your-wallet--sublist {
+	margin: @ms5 @ms0;
+	padding-left: @ms0;
+	border-left: @orange-500 1px solid;
+	@media screen and (min-width: 750px ) { 
+		margin: @ms5 @ms3;
+		padding-left: @ms3;
+
+	}
+}
+
+.content_secure-your-wallet--subitems {
+	margin-bottom: @ms3;
+}
+
+.content_secure-your-wallet--items--list li:before {
+	font-size: @ms2;
+	content: counter(list);
+	position: absolute;
+	margin-top: -@ms-6;
+	margin-left: -@ms4;
+	z-index: 1;
+	color: @orange-500;
+	font-weight: 700;
+	border-radius: 3px;
+	opacity: @light-2;
+}
+
+.content_secure-your-wallet--items--list {
+	color: @main-3;
+	padding-left: @ms0;
+	padding-right: @ms0;
+	margin: @ms4 0 @ms5;
+	@media screen and (min-width: 750px ) { 
+		padding-left: @ms2;
+		padding-right: @ms2;
+	}
+}
+.content_secure-your-wallet--items--list li {
+	margin: @ms2 0;
+	padding-left: @ms4;
+	counter-increment: list;  
+}

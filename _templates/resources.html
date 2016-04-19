@@ -9,7 +9,8 @@ id: resources
   <h1 class="content_resources--title">{% translate pagetitle %}</h1>
   <h2 class="content_resources--subtitle">{% translate pagedesc %}</h2>
 
-  <div class="content_resources--boxcontainer">
+  <div class="content_resources--boxcontainer grid">
+    <div class="grid-sizer"></div>
 
     <div id="useful" class="content_resources--infobox">
       <h2 class="content_resources--infobox--title">{% translate useful %}</h2>
@@ -110,4 +111,16 @@ id: resources
 
     </div>
   </div>
+  <script type="text/javascript" src="/js/isotope.js"></script>
+  <script type="text/javascript">
+    $('.grid').isotope({
+      // set itemSelector so .grid-sizer is not used in layout
+      itemSelector: '.content_resources--infobox',
+      percentPosition: true,
+      masonry: {
+        // use element for option
+        columnWidth: '.grid-sizer'
+      }
+    })
+  </script>
 </div>

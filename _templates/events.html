@@ -5,39 +5,53 @@
 layout: base
 id: events
 ---
-{% assign date_sorted_conferences = site.conferences | sort: 'date' %}
-{% assign date_sorted_meetups = site.meetups | sort: 'date' %}
-<!-- Note: this file is built non-deterministically -->
-<link rel="alternate" type="application/rss+xml" href="/en/rss/events.rss" title="Bitcoin conferences and events">
-<h1>{% translate pagetitle %}<a type="application/rss+xml" href="/en/rss/events.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
-<p class="summary">{% translate pagedesc %}</p>
+<div class="content_events">
+  <!-- Note: this file is built non-deterministically -->
+  <link rel="alternate" type="application/rss+xml" href="/en/rss/events.rss" title="Bitcoin conferences and events">
+  <h1 class="content_events--title">{% translate pagetitle %}<a type="application/rss+xml" href="/en/rss/events.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
+  <h2 class="content_events--subtitle">{% translate pagedesc %}</h2>
 
-<link rel="stylesheet" type="text/css" href="/js/leaflet/leaflet.css" />
-<link rel="stylesheet" type="text/css" href="/js/leaflet-markercluster/MarkerCluster.css" />
-<link rel="stylesheet" type="text/css" href="/js/leaflet-markercluster/MarkerCluster.Default.css" />
-<script src="/js/leaflet/leaflet.js"></script>
-<script src="/js/leaflet-markercluster/leaflet.markercluster.js"></script>
-<div id="eventmap" class="eventmap"></div>
-<div id="eventdata" class="eventdata">
+  <link rel="stylesheet" type="text/css" href="/js/leaflet/leaflet.css" />
+  <link rel="stylesheet" type="text/css" href="/js/leaflet-markercluster/MarkerCluster.css" />
+  <link rel="stylesheet" type="text/css" href="/js/leaflet-markercluster/MarkerCluster.Default.css" />
+  <script src="/js/leaflet/leaflet.js"></script>
+  <script src="/js/leaflet-markercluster/leaflet.markercluster.js"></script>
+  <div class="content_events--map">
+    <div id="eventmap" class="content_events--eventmap"></div>
+    <div id="eventdata" class="eventdata">
+    {% filter_for p in site.conferences sort_by:date %}{% if p.geoloc %}
+    <div data-lat="{{ p.geoloc.lat }}" data-lon="{{ p.geoloc.lon }}"><b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div>
+    {% endif %}{% endfilter_for %}
 
-{% for p in date_sorted_conferences %}{% if p.geoloc %}
-<div data-lat="{{ p.geoloc.lat }}" data-lon="{{ p.geoloc.lon }}"><b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div>
-{% endif %}{% endfor %}
+    {% filter_for p in site.meetups sort_by:date %}{% if p.geoloc %}
+    <div data-lat="{{ p.geoloc.lat }}" data-lon="{{ p.geoloc.lon }}"><b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div>
+    {% endif %}{% endfilter_for %}
 
-{% for p in date_sorted_meetups %}{% if p.geoloc %}
-<div data-lat="{{ p.geoloc.lat }}" data-lon="{{ p.geoloc.lon }}"><b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div>
-{% endif %}{% endfor %}
-
+    </div>
+    <script src="/js/events.js"></script>
+  </div>
+  <div class="content_events--boxcontainer">
+    <div class="content_events--infobox">
+      <h2 id="upcoming" class="content_events--infobox--title">{% translate upcoming %}</h2>
+      <ul class="content_events--infobox--list listtable eventtable">
+      {% filter_for p in site.conferences sort_by:date %}
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">{{ p.date | date:"%Y-%m-%d" }}</span>
+          <span class="content_events--upcoming--item--event"><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></span>
+          <span class="content_events--upcoming--item--location">{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</span>
+        </li>
+      {% endfilter_for %}
+      </ul>
+      <div class="content_events--footer">
+        <div class="content_events--footer--wrap">
+          <div class="content_events--footer--submit"><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20event&amp;body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22">{% translate eventsubmit %}</a></div>
+          <ul class="content_events--footer--list">
+            <li class="content_events--footer--item">{% translate meetupgroup %}</li>
+            <li class="content_events--footer--item">{% translate meetupbitcointalk %}</li>
+            <li class="content_events--footer--item">{% translate meetupwiki %}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<script src="/js/events.js"></script>
-<h2 id="upcoming">{% translate upcoming %}</h2>
-<div class="listtable eventtable">
-{% for p in date_sorted_conferences %}
-  <div><div>{{ p.date | date:"%Y-%m-%d" }}</div><div><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></div><div>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div></div>
-{% endfor %}
-  <span><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20event&amp;body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22">{% translate eventsubmit %}</a></span>
-</div>
-
-<p>{% translate meetupgroup %}</p>
-<p>{% translate meetupbitcointalk %}</p>
-<p>{% translate meetupwiki %}</p>
