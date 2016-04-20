@@ -72,8 +72,8 @@ fe9f0864 ........................... Nonce
   encoding had previously been non-standard since Bitcoin Core 0.8.0
   (February 2012).
 
-* **Version 4** blocks will likely be introduced in the near future as
-  specified in BIP65.   These blocks will support the new
+* **Version 4** blocks specified in BIP65 and introduced in Bitcoin Core 0.11.2 
+* (November 2015) as a soft fork became active in December 2015.  These blocks now support the new
   `OP_CHECKLOCKTIMEVERIFY` opcode described in that BIP.
 
 The mechanism used for the version 2, 3, and 4 upgrades is commonly
