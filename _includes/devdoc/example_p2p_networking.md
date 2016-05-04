@@ -316,11 +316,11 @@ message as if we had accepted their `version` message.
 
 {% highlight python %}
 send("filterload", 
-    "02"  ........ Filter bytes: 2
-    "b50f" ....... Filter: 1010 1101 1111 0000
-    "0b000000" ... nHashFuncs: 11
-    "00000000" ... nTweak: 0/none
-    "00" ......... nFlags: BLOOM_UPDATE_NONE
+      "02"  # ........ Filter bytes: 2
+    + "b50f" # ....... Filter: 1010 1101 1111 0000
+    + "0b000000" # ... nHashFuncs: 11
+    + "00000000" # ... nTweak: 0/none
+    + "00" # ......... nFlags: BLOOM_UPDATE_NONE
 )
 {% endhighlight %}
 
