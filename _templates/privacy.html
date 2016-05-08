@@ -5,35 +5,46 @@
 layout: base
 id: privacy
 ---
-<h1>{% translate pagetitle %}</h1>
+<div class="content_standard">
+  <h1 class="content_standard--title">{% translate pagetitle %}</h1>
 
-<p>{% translate privacytxt1 %}</p>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <p>{% translate privacytxt1 %}</p>
+      <p>{% translate privacytxt2 %}</p>
+    </li>
 
-<p>{% translate privacytxt2 %}</p>
+    <li class="content_standard--items">
+      <h3 id="logdata">1. {% translate privacylogdata %}</h3>
+      <p>{% translate privacytxt3 %}</p>
+    </li>
 
-<h2 id="logdata">{% translate privacylogdata %}</h2>
-<p>{% translate privacytxt3 %}</p>
+    <li class="content_standard--items">
+      <h3 id="cookies">1. {% translate privacycookies %}</h3>
+      <p>{% translate privacytxt4 %}</p>
+      <p>{% translate privacytxt5 %}</p>
+      <ul>
+        <li>{% translate privacytxt6 %}</li>
+        <li>{% translate privacytxt7 %}</li>
+      </ul>
+    </li>
 
-<h2 id="cookies">{% translate privacycookies %}</h2>
-<p>{% translate privacytxt4 %}</p>
+    <li class="content_standard--items">
+      <h3 id="analytics">1. {% translate privacyanalytics %}</h3>
+      <p>{% translate privacytxt8 %}</p>
+      <p>{% translate privacytxt9 %}</p>
+      <p>{% translate privacytxt10 %}</p>
+    </li>
 
-<p>{% translate privacytxt5 %}</p>
-<ul>
-<li>{% translate privacytxt6 %}</li>
-<li>{% translate privacytxt7 %}</li>
-</ul>
+    <li class="content_standard--items">
+      <h3 id="changes">1. {% translate privacychanges %}</h3>
+      <p>{% translate privacytxt11 %}</p>
+      <p>{% translate privacytxt12 %}: 8th October, 2015.</p>
+    </li>
 
-<h2 id="analytics">{% translate privacyanalytics %}</h2>
-<p>{% translate privacytxt8 %}</p>
-
-<p>{% translate privacytxt9 %}</p>
-
-<p>{% translate privacytxt10 %}</p>
-
-<h2 id="changes">{% translate privacychanges %}</h2>
-<p>{% translate privacytxt11 %}</p>
-
-<p>{% translate privacytxt12 %}: 8th October, 2015.</p>
-
-<h2 id="contact">{% translate privacycontactus %}</h2>
-<p>{% translate privacytxt13 %}</p>
+    <li class="content_standard--items">
+      <h3 id="contact">1. {% translate privacycontactus %}</h3>
+      <p>{% translate privacytxt13 %}</p>
+    </li>
+  </ul>
+</div>

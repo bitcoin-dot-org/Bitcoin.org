@@ -14,85 +14,1107 @@ end_of_page: |
   <script src="/js/jquery/jquery-ui.min.js"></script>
   <script src="/js/devsearch.js"></script>
 ---
+<div class="content_glossary">
 <link rel="stylesheet" href="/css/jquery-ui.min.css">
 
-{% capture markdown_content %}
-# Bitcoin Developer Glossary
-
-<input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
-
-<div markdown="block" class="notice">
-<span markdown="span">This is a technical glossary.  Regular users should use the [vocabulary
-page](/en/vocabulary).</span>
+<div class="content_glossary--header">
+  <h1 class="content_glossary--title" id="developer-documentation">Developer Documentation</h1>
+  <h2 class="content_glossary--subtitle" id="summary">Find useful resources, guides and reference material for developers.</h2>
+      <!-- no subhead-links here -->
+  <div class="content_glossary--search">
+    <input id="glossary_term" class="glossary_term" placeholder="Search">
+  </div>
+  <ul class="content_glossary--header--menu">
+    <li class="content_glossary--header--item">
+      <a href="/en/developer-guide">
+        <i class="fa fa-info-circle fa-2x"></i><span>Guide</span>
+      </a>
+    </li>
+    <li class="content_glossary--header--item">
+      <a href="/en/developer-reference">
+        <i class="fa fa-book fa-2x"></i><span>Reference</span>
+      </a>
+    </li>
+    <li class="content_glossary--header--item">
+      <a href="/en/developer-examples">
+        <i class="fa fa-code fa-2x"></i><span>Examples</span>
+      </a>
+    </li>
+    <li class="content_glossary--header--menu--item--active">
+      <a href="/en/developer-glossary">
+        <i class="fa fa-font fa-2x"></i><span>Glossary</span>
+      </a>
+    </li>
+  </ul>
 </div>
 
-{% comment %}
-## The following single-space-indented code (sorry, whitespace
-## sensitive) takes the alphabetized array of individual hash objects
-## and puts them in a list sorted by the first character of each term
-## characters (case insensitive). E.g.:
-##
-##     Alpha
-##     Apropos
-##
-##     Beta
-##
-##     Gamma
-##     Gnu
-##
-## The current style sheet gives each item a certain width and then
-## floats them so terms starting with the same character are grouped
-## together. Hopefully this strikes the right balance between
-## information density and too much whitespace.
-{% endcomment %}
-## Numbers
-<!-- no subhead-links here -->
-{% for item in site.devsearches.Glossary %}
-{% if forloop.first %}{% assign first_term = true %}{% else %}{% assign first_term = false %}{% endif %}
-{% for term in item %}
- {% capture text_and_link %}<a href="{{term[1]}}">{{term[0]}}</a>{% endcapture %}
- {% capture first_character %}{{term[0] | downcase | truncate: 1, '' }}{% endcapture %}
- {% if first_character == 'a' %}
-  {% assign finished_with_numbers = true %}
- {% endif %}
- {% if first_character == last_first_character %}
-  <li markdown="span">{{text_and_link}}</li>
- {% else %}
-  {% unless first_term %}
-   </ul><br class="clear">
-  {% endunless %}
-  {% if finished_with_numbers %}
-## {{ first_character | upcase }}
-<!-- no subhead-links here -->
-  {% endif %}
+<div class="content_glossary--faq">
+  <div class="content_glossary--faq--title">
+    <h2 id="title">Bitcoin Developer Glossary</h2>
+      <!-- no subhead-links here -->
+    <span>This is a technical glossary.  Regular users should use the <a href="/en/vocabulary">vocabulary
+    page</a></span>
+  </div>
+  <div class="content_glossary--foq--section">
+    <h3 id="numbers" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+      <a>Numbers</a>
+    </h3>
+    <ul class="content_glossary--faq--list">
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/51-percent-attack">51 percent attack</a>
+        </div>
+      </li>
+    </ul>
+  </div>
 
-  {% case first_character %}
-  {% when 'b' %}
-   See also: [Bitcoin Improvement Proposals (BIPs)](https://github.com/bitcoin/bips#readme)
-  {% when 'o' %}
-   See also: [Opcodes](https://en.bitcoin.it/wiki/Script#Words)
-  {% when 'p' %}
-   See also: [P2P protocol messages](/en/developer-reference#data-messages)
-  {% when 'r' %}
-   See also: [Bitcoin Core RPCs](/en/developer-reference#rpc-quick-reference)
-  {% endcase %}
+  <div class="content_glossary--foq--section">
+    <h3 id="a" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+      <a>A</a>
+    </h3>
+    <ul class="content_glossary--faq--list">
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/address">Address</a>
+        </div>
+      </li>
+    </ul>
+  </div>
 
-  <ul class="wrapped_list">
-  <li markdown="span">{{text_and_link}}</li>
- {% endif %}
- {% capture last_first_character %}{{first_character}}{% endcapture %}
-{% endfor %}
-{% endfor %}
-{% comment %}Close off last list and end the float: {% endcomment %}
-</ul><br class="clear">
+  <div class="content_glossary--foq--section">
+    <h3 id="b" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+      <a>B</a>
+    </h3>
+    <ul class="content_glossary--faq--list">
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="https://github.com/bitcoin/bips#readme">See also: Bitcoin Improvement Proposals (BIPs)</a>
+        </div>
+      </li>
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/multisig">Bare multisig</a>
+        </div>
+      </li>
 
-<div markdown="block" class="notice">
-<span markdown="span">Can't find what you're looking for?  [Suggest a
-new term][] for the glossary!</span>
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/base58check">Base58check</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/block-chain">Best block chain</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/denominations">Bitcoins</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/block">Block</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/genesis-block">Block 0</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/block-chain">Block chain</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/block-header">Block header</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/block-height">Block height</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/block-reward">Block reward</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/blocks-first-sync">Blocks-first sync</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/bloom-filter">Bloom filter</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="content_glossary--foq--section">
+    <h3 id="c" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+      <a>C</a>
+    </h3>
+    <ul class="content_glossary--faq--list">
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/chain-code">Chain code</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/change-address">Change address</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/change-address">Change output</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/child-key">Child key</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/child-key">Child private key</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/child-key">Child public key</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/coinbase">Coinbase</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/coinbase-transaction">Coinbase transaction</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/compactsize">CompactSize</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/compressed-public-key">Compressed public key</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/confirmation-score">Confirmation score</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/confirmation-score">Confirmations</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/confirmation-score">Confirmed transaction</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/consensus">Consensus</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/consensus-rules">Consensus rules</a>
+        </div>
+      </li>
+
+      <li class="content_glossary--faq--item">
+        <div class="content_glossary--faq--item--title">
+          <a href="/en/glossary/consensus-rules">Consensus rules</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="content_glossary--foq--section">
+      <h3 id="d" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>D</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/null-data-transaction">Data carrier transaction</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/op-code">Data-pushing opcode</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/denominations">Denomination</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/difficulty">Difficulty</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/dns-seed">DNS seed</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/double-spend">Double spend</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/double-spend">Double spend</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="e" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>E</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/escrow-contract">Escrow contract</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/extended-key">Extended key</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/extended-key">Extended key</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="f" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>F</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/fork">Fork</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/high-priority-transaction">Free transaction</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="g" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>G</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/coinbase-transaction">Generation transaction</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/genesis-block">Genesis block</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="h" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>H</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/hard-fork">Hard fork</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/hardened-extended-key">Hardened extended key</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/hd-protocol">HD protocol</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/hd-protocol">HD wallet</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/hd-wallet-seed">HD wallet seed</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/block-header">Header</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/header-chain">Header chain</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/headers-first-sync">Headers-first sync</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/block-height">Height</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/high-priority-transaction">High-priority transaction</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/high-priority-transaction">High-priority transaction</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="i" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>I</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/initial-block-download">IBD</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/initial-block-download">Initial block download</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/input">Input</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/internal-byte-order">Internal byte order</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/inventory">Inventory</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="l" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>L</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/simplified-payment-verification">Lightweight client</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/locktime">Locktime</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="m" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>M</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/mainnet">Mainnet</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/51-percent-attack">Majority attack</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/master-chain-code-and-private-key">Master chain code</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/master-chain-code-and-private-key">Master private key</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/merkle-block">Merkle block</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/merkle-root">Merkle root</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/merkle-tree">Merkle tree</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/message-header">Message header</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/mining">Miner</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/transaction-fee">Miners fee</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/minimum-relay-fee">Minimum relay fee</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/mining">Mining</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/multisig">Multisig</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="n" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>N</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/nbits">nBits</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/difficulty">Network difficulty</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/start-string">Network magic</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/locktime">nLockTime</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/op-code">Non-data-pushing opcode</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/null-data-transaction">Null data transaction</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="o" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>O</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="https://en.bitcoin.it/wiki/Script#Words">See also: Opcodes</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/null-data-transaction">OP_RETURN transaction</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/op-code">Opcode</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/orphan-block">Orphan block</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/outpoint">Outpoint</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/output">Output</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="p" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>P</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/developer-reference#data-messages">See also: P2P protocol messages</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/p2pkh-address">P2PKH address</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/p2pkh-address">P2PKH output</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/p2sh-address">P2SH address</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/p2sh-multisig">P2SH multisig</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/p2sh-address">P2SH output</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/parent-key">Parent key</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/parent-key">Parent private key</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/parent-key">Parent public key</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/payment-protocol">Payment protocol</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/payment-protocol">Payment request</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/proof-of-work">POW</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/extended-key">Private extended key</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/private-key">Private key</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/proof-of-work">Proof of work</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/pubkey-script">Pubkey script</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/extended-key">Public extended key</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/public-key">Public key</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="r" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>R</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/developer-reference#rpc-quick-reference">See also:Bitcoin Core RPCs</a>
+          </div>
+        </li>
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/serialized-transaction">Raw transaction</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/redeem-script">Redeem script</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/redeem-script">RedeemScript</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/regression-test-mode">Regression test mode</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/regression-test-mode">Regtest</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/minimum-relay-fee">Relay fee</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/hd-wallet-seed">Root seed</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/rpc-byte-order">RPC byte order</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="s" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>S</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/denominations">Satoshis</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/pubkey-script">ScriptPubKey</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/signature-script">ScriptSig</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/sequence-number">Sequence number</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/serialized-block">Serialized block</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/serialized-transaction">Serialized transaction</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/signature-hash">Sighash</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/sighash-all">SIGHASH_ALL</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/sighash-anyonecanpay">SIGHASH_ANYONECANPAY</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/sighash-none">SIGHASH_NONE</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/sighash-single">SIGHASH_SINGLE</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/signature">Signature</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/signature-hash">Signature hash</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/signature-script">Signature script</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/simplified-payment-verification">Simplified Payment Verification</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/soft-fork">Soft fork</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/simplified-payment-verification">SPV</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/stale-block">Stale block</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/standard-transaction">Standard Transaction</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/start-string">Start string</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="t" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>T</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/nbits">Target</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/testnet">Testnet</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/simplified-payment-verification">Thin client</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/transaction-fee">Transaction fee</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/malleability">Transaction malleability</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/malleability">Transaction mutability</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/txid">Txid</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/input">TxIn</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/output">TxOut</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="u" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>U</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/confirmation-score">Unconfirmed transaction</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/unspent-transaction-output">UTXO</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_glossary--foq--section">
+      <h3 id="w" class="content_glossary--faq--section--title">
+      <!-- no subhead-links here -->
+        <a>W</a>
+      </h3>
+      <ul class="content_glossary--faq--list">
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/wallet">Wallet</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/wallet-import-format">Wallet Import Format</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/watch-only-address">Watch-only address</a>
+          </div>
+        </li>
+
+        <li class="content_glossary--faq--item">
+          <div class="content_glossary--faq--item--title">
+            <a href="/en/glossary/wallet-import-format">WIF</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="content_glossary--faq--footer">
+      <span>Can’t find what you’re looking for?  <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20glossary%20term%20suggestion:">Suggest a
+      new term</a> for the glossary!</span>
+    </div>
+  </div>
 </div>
-
-[suggest a new term]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20glossary%20term%20suggestion:
-{% include references.md %}
-{{site.glossary_links}}
-{% endcapture %}
-{{ markdown_content | markdownify }}

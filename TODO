@@ -1,0 +1,157 @@
+Redesign
+
+20) Create builder and refactor many pages
+	Create text__standard builder
+	Create call-to-action__tandard builder
+	Create content_standard.html
+	Refactor old pages
+	Refactor new pages
+	
+
+19 Refactor _templates > FAQ.html
+	fix html
+	add css
+	
+
+18) Refactor en > developer-guide.md
+	fix html
+	add css
+
+
+17) Refactor en > developer-documentation.md
+	fix html
+	add css
+
+
+16) Refactor _templates > community.html
+	fix html
+	add css
+
+15) Refactor _templates > resources.html
+	fix html
+	add css
+
+14) Refactor _templates > you-need-to-know.html
+	fix html
+	add css
+
+13) REfactor _templates > how-it-works.html
+	fix html
+	add css
+
+
+12) REfactor _templates > getting-started
+	fix html
+	add css
+
+11) refactor _templates > bitcoin-for-developers
+	Fix the html
+	add less
+
+10) refactor _templates > bitcoin-for-businesses
+	Fix the html
+	add less
+
+
+9) refactor _templates > bitcoin-for-indivuduals
+	Fix the html
+	add less
+
+
+8) Add Font
+	Add files
+	add less
+
+7) add alart 
+	wrap site
+	add site_alert
+	add site_alert.less
+
+6) House keeping 
+	fix the flags
+	fix the footer text
+	fix the developer footer button
+	fix the menu border
+
+5) Refactor _includes > index.html
+	Refactor the html
+	Refactor the css
+
+
+4) Add body content
+	wrap site
+	add site_body
+	add site_body.less
+	
+
+3) Add footer
+	Wrap site
+	Add site_footer
+	add site_footer.less
+	integrate site_footer
+
+	Add footer_developer
+	add footer_developer.less
+	integrate footer_developer
+
+2) Add Menu
+	Wrap the website
+	Add site.less
+	Create a component folder in less/base
+	Create a component folder in layout
+	Create header
+	add corsponding js
+	Make header dynamic
+
+	
+
+
+1) Add design helpers
+	* transform them from sass to less
+	* add them to project
+
+
+FIX
+Menu: Documentation don't have any translation
+
+JS: clean up the files. At the moment two $ can be live and 
+the site is loading to many js files.
+
+jQuery: Choose witch version is possible to use.
+
+flags: fix the flags. they are little of.
+
+Translate: Make the footer_developer translate ready
+
+footer_developer: Make the bottom part little larger see mockup
+
+footer_standard: make the text right align
+
+
+REFACTOR
+header_standard.js need to refactor. 
+
+header_standard.less need to refactor.
+
+At the moment js,less,html files are spread out in diffrent
+component folders. Check with site owners if its possible 
+to create a single folder put all files into a single folder,
+because it will be a lot of work if somebody objects. 
+
+_components
+	---	header_standard
+		--- header_standard.html
+		--- header_standard.less
+		--- header_standard.js
+		--- header_standard--menu.svg
+		etc.
+
+
+BUGS
+
+
+CREDIT
+
+Icon /nonprofit.svg - nonprofit by Martha Ormiston from the Noun Project
+
+

@@ -1,0 +1,31 @@
+.builder__content__title(how-it-works);
+
+.content_how-it-works--content {
+  margin: @ms4 auto;
+  max-width: @ms15;
+
+  > h2 {
+    font-size: @ms1;
+    font-weight: 600;
+    margin: @ms4 0 @ms-2;
+  }
+  > p {
+    color: @main-2;
+    line-height: @ms1;
+  }
+  img {
+    display: block;
+    width: @ms12;
+    padding-top: @ms3;
+
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 700px ) {
+
+  .content_how-it-works--content img {
+    float: right;
+    padding: @ms3 @ms3 0;
+  }
+}

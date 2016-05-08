@@ -1,0 +1,132 @@
+.builder__content__title--long(vocalbulary);
+
+.content_vocalbulary--faq {
+  background: @gray-50;
+  margin: @ms4 auto 0;
+  border-radius: @ms-5;
+  max-width: @ms16;
+  background: @gray-50;
+  .card-1;
+}
+
+.content_vocalbulary--faq--title {
+  background: @gray-200;
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  font-size: @ms1;
+  padding: @ms4 0;
+  border-top-left-radius: @ms-5;
+  border-top-right-radius: @ms-5;
+  letter-spacing: 1px;
+  border-top: @orange-500 @ms-5 solid;
+  border-bottom: 1px @gray-300 solid;
+}
+
+.content_vocalbulary--faq--section--title {
+  background: @gray-100;
+  border-top: @gray-300 1px solid;
+  border-bottom: @gray-300 1px solid;
+  padding: @ms1 @ms2;
+  a {
+    color: @main-2;
+  }
+}
+
+.content_vocalbulary--faq--list {
+  .content_vocalbulary--faq--item:last-child {
+    .content_vocalbulary--faq--item--content {
+      border-bottom: 0;
+    }
+  }
+}
+
+.content_vocalbulary--faq--list {
+  .content_vocalbulary--faq--item--content:last-child {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.content_vocalbulary--faq--item--title a {
+  border-bottom: @gray-300 1px solid;
+  padding: @ms1 @ms2;
+  display: block;
+  @media screen and (min-width: 750px ) {
+    padding: @ms1 @ms5;
+  }
+}
+
+.content_vocalbulary--faq--item--content {
+  /*display: none;*/
+  padding: @ms2 @ms2;
+  color: @main-2;
+  border-bottom: @gray-300 1px solid;
+  line-height: @ms2;
+  @media screen and (min-width: 750px ) {
+    padding: @ms2 @ms5;
+  }
+  p {
+    margin-bottom: @ms1;
+  }
+
+  img {
+    display: block;
+    margin: @ms3 auto;
+    max-width: 100%;
+    .card-2;
+  }
+
+  ol, ul {
+    padding-left: @ms0;
+    padding-right: @ms0;
+    margin: @ms1 0;
+    @media screen and (min-width: 750px ) {
+      padding-left: @ms2;
+      padding-right: @ms2;
+    }
+  }
+
+  ol {
+    li {
+      counter-increment: list;
+    }
+    li:before {
+      content: counter(list);
+      font-size: @ms2;
+      position: absolute;
+      margin-top: @ms-7;
+      margin-left: -@ms4;
+      z-index: 1;
+      color: @orange-500;
+      font-weight: 700;
+      border-radius: 3px;
+      opacity: @light-2;
+    }
+    li {
+      margin: @ms1 0;
+      padding-left: @ms4;
+    }
+  }
+
+  ul {
+    li:before {
+      font-size: @ms4;
+      position: absolute;
+      margin-top: -@ms-6;
+      margin-left: -@ms4;
+      z-index: 1;
+      content: "-";
+      color: @orange-500;
+      font-weight: 700;
+      border-radius: 3px;
+      opacity: @light-2;
+    }
+    li {
+      margin: @ms2 0;
+      padding-left: @ms4;
+    }
+  }
+
+}

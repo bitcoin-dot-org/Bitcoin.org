@@ -1,0 +1,47 @@
+body {
+  font-family: 'lato';
+  background: @gray-800;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (min-width: 1400px ) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1700px ) {
+  html {
+    font-size: 21px;
+  }
+}
+
+.site {
+  background: @gray-100;
+  z-index: 0;
+  position: relative;
+  .card-3;
+}
+
+.site_main {
+  max-width: @ms17;
+  margin: 0 auto;
+}
+
+.footer_main {
+  .site_main;
+}
+
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}

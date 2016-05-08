@@ -1,0 +1,208 @@
+/*
+This builder create styles for the basic tags like h2, code, strong.
+
+Use:
+
+  If the subtitle is long use:
+  .builder__content__title--long(yourcontinerclass);
+
+The markup:
+    <h1 class="content_yourcontinerclass--title">{% translate pagetitle %}</h1>
+    <h2 class="content_yourcontinerclass--subtitle">{% translate summary %}</h2>
+*/
+.builder__content__docs--content(@classname) {
+  .content_@{classname}--body .toccontent {
+    line-height: @ms1 + @mp2;
+    color: @main-2;
+
+    p {
+      margin-bottom: @ms1;
+    }
+
+    h2 {
+      font-size: @ms3;
+      margin: @ms6 0 @ms-1;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: @ms2;
+      font-weight: 600;
+      margin: @ms3 0 0;
+    }
+
+    h4 {
+      font-size: @ms1;
+      font-weight: 400;
+      margin: @ms3 0 0;
+    }
+
+    h5 {
+      font-size: @ms0;
+      font-weight: 600;
+      margin: @ms3 0 0;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    em {
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    img {
+      display: block;
+  	  margin: @ms5 auto;
+  	  max-width: 90%;
+  	  border: @ms0 @white solid;
+  	  border-radius: @ms-5;
+  	  .card-1;
+    }
+
+    ol, ul {
+      padding-right: @ms2;
+      margin: @ms5 0;
+    }
+
+    ol {
+      > li {
+        counter-increment: list;
+      }
+      > li:before {
+        content: counter(list);
+        font-size: @ms2;
+        position: absolute;
+        margin-top: @ms-7;
+        margin-left: -@ms4;
+        z-index: -1;
+        color: @orange-500;
+        font-weight: 700;
+        border-radius: 3px;
+        opacity: @light-2;
+      }
+      li {
+        margin: @ms1 0;
+        padding-left: @ms4;
+      }
+    }
+
+    ul {
+      li:before {
+      font-size: @ms4;
+      position: absolute;
+      margin-top: -@ms-6;
+      margin-left: -@ms4;
+      z-index: -1;
+      content: "-";
+      color: @orange-500;
+      font-weight: 700;
+      border-radius: 3px;
+      opacity: @light-2;
+      }
+      li {
+        margin: @ms2 0;
+        padding-left: @ms4;
+      }
+    }
+
+    pre {
+      margin: @ms4 0;
+      border: 1px solid @main-5;
+      border-radius: @ms-5;
+      position: relative;
+      background: @gray-50;
+      white-space: pre;
+      overflow: auto;
+    }
+
+    pre code {
+      display: block;
+      border-radius: @ms-5;
+      /*font-family: monospace;*/
+      padding: @ms2 @ms0 @ms1;
+      overflow-x: auto;
+      font-size: @ms-2 + @mp2;
+      line-height: @ms1;
+      color: @teal-500;
+      border: 0;
+      white-space: pre;
+    }
+
+
+    table {
+      margin-top: @ms-2;
+      margin-bottom: @ms0;
+      display: block;
+      font-size: @ms-1;
+      max-width: 100%;
+      /*word-break: normal;*/
+      word-break: keep-all;
+      border-collapse: collapse;
+      border-spacing: 0;
+      text-align: center;
+      color: @main-2;
+    }
+
+    th {
+      padding: @ms2 @ms-3;
+      border: 1px solid @main-5;
+      font-weight: 600;
+    }
+
+    tr {
+      background-color: @gray-50;
+      border: 1px solid @main-5;
+      display: table-row;
+      vertical-align: inherit;
+    }
+
+    tr:nth-child(even) {
+      background-color: @gray-200;
+    }
+
+    td {
+      padding: @ms-1 @ms-2;
+      border: 1px solid @main-5;
+    }
+
+    code {
+        padding: @ms-9 @ms-3;
+        background-color: @gray-50;
+        font-size: @ms-1;
+        white-space: pre-line;
+        border: 1px solid @main-5;
+        border-radius: @ms-5;
+        word-break: break-all;
+    }
+
+    a.auto-link {
+        color: #212121;
+        border-bottom: solid 1px @main-5;
+    }
+
+    .subhead-links {
+      margin: @ms-3 0 @ms0;
+      color: @main-4;
+      font-size: @ms-1;
+    }
+
+    .term {
+      color: @teal-500;
+    }
+    @media screen and (min-width: 650px ) {
+      ol, ul {
+        padding-left: @ms5;
+        padding-right: @ms5;
+        margin: @ms5 0;
+      }
+      pre code {
+        padding: @ms2 @ms3 @ms1;
+      }
+      code {
+        word-break: normal;
+      }
+    }
+  }
+}

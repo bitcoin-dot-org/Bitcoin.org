@@ -5,23 +5,38 @@
 layout: base
 id: protect-your-privacy
 ---
-<h1>{% translate pagetitle %}</h1>
-<p class="summarytxt">{% translate pagedesc %}</p>
+<div class="content_standard">
+  <h1 class="content_standard--title">{% translate pagetitle %}</h1>
+  <h2 class="content_standard--subtitle" id="pagedesc">{% translate pagedesc %}</h2>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <h3 id="traceable">{% translate traceable %}</h3>
+      <p>{% translate traceabletxt %}</p>
+    </li>
 
-<h2 id="traceable">{% translate traceable %}</h2>
-<p>{% translate traceabletxt %}</p>
+    <li class="content_standard--items">
+      <h3 id="receive">{% translate receive %}</h3>
+      <p>{% translate receivetxt %}</p>
+    </li>
 
-<h2 id="receive">{% translate receive %}</h2>
-<p>{% translate receivetxt %}</p>
+    <li class="content_standard--items">
+      <h3 id="public">{% translate public %}</h3>
+      <p>{% translate publictxt %}</p>
+    </li>
 
-<h2 id="public">{% translate public %}</h2>
-<p>{% translate publictxt %}</p>
+    <li class="content_standard--items">
+      <h3 id="iplog">{% translate iplog %}</h3>
+      <p>{% translate iplogtxt %}</p>
+    </li>
 
-<h2 id="iplog">{% translate iplog %}</h2>
-<p>{% translate iplogtxt %}</p>
+    <li class="content_standard--items">
+      <h3 id="mixing">{% translate mixing %}</h3>
+      <p>{% translate mixingtxt %}</p>
+    </li>
 
-<h2 id="mixing">{% translate mixing %}</h2>
-<p>{% translate mixingtxt %}</p>
-
-<h2 id="future">{% translate future %}</h2>
-<p>{% translate futuretxt %}</p>
+    <li class="content_standard--items">
+      <h3 id="future">{% translate future %}</h3>
+      <p>{% translate futuretxt %}</p>
+    </li>
+  </ul>
+</div>

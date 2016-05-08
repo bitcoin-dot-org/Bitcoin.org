@@ -23,17 +23,27 @@ voc:
   - wallet
 
 ---
-<h1>{% translate pagetitle %}</h1>
-<p class="summarytxt">{% translate summary %}</p>
-<h2 id="table-of-contents">{% translate table %}</h2>
+<div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">{% translate pagetitle %}</h1>
+  <h2 class="content_vocalbulary--subtitle" id="summery">{% translate summary %}</h2>
 
-<div class="index">
-{% alphab_for v in page.voc %}
-<a href="#{% translate {{v}} anchor.vocabulary %}">{% translate {{v}} %}</a>
-{% endalphab_for %}
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
+      <h2 id='vocabulary'>Vocabulary</h2>
+    </div>
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
+      {% alphab_for v in page.voc %}
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="{% translate {{v}} anchor.vocabulary %}">{% translate {{v}} %}</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>{% translate {{v}}txt %}</p>
+          </div>
+        </li>
+      {% endalphab_for %}
+      </ul>
+    </div>
+  </div>
 </div>
-
-{% alphab_for v in page.voc %}
-<h2 id="{% translate {{v}} anchor.vocabulary %}">{% translate {{v}} %}</h2>
-<p>{% translate {{v}}txt %}</p>
-{% endalphab_for %}

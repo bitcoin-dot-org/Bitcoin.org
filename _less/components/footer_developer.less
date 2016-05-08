@@ -1,0 +1,118 @@
+.footer_developer {
+  margin: 0 auto;
+  padding: @ms6 @ms2 @ms6;
+  max-width: @ms16;
+  .clearfix;
+}
+.footer_developer--header {
+  margin: 0 0 @ms0;
+  .clearfix;
+}
+.footer_developer--header img {
+  width: @ms3;
+  height: @ms3;
+  float:left;
+  @media screen and (min-width: 700px ) {
+    width: @ms4;
+    height: @ms4;
+  }
+}
+.footer_developer--header h2 {
+  font-size: @ms2;
+  padding-left: @ms-3;
+  padding-top: @ms-6;
+  color: @white;
+  font-weight: 500;
+  display: block;
+  float: left;
+  @media screen and (min-width: 700px ) {
+    font-size: @ms3;
+  }
+}
+.footer_developer--header span {
+  font-weight: 300;
+  color: @orange-500;
+}
+.footer_developer--body {
+  background: @gray-100;
+  border-radius: @ms-5;
+  .card-2;
+}
+.footer_developer--info {
+  padding: @ms4 @ms3;
+  line-height: @ms1;
+  color: @main-2;
+}
+.footer_developer--action {
+  border-top: solid @gray-300 1px;
+  .clearfix;
+}
+.footer_developer--action--text {
+  padding: @ms2 @ms2;
+  text-align: center;
+  border-bottom: 1px @gray-300 solid;
+  @media screen and (min-width: 700px ) {
+    float:left;
+    width: 60%;
+    border-bottom: 0;
+    box-sizing: border-box;
+    height: @ms7;
+    display: block;
+    line-height: @ms4;
+    font-size: @ms1;
+  }
+}
+.footer_developer--action--buttonarea {
+  border-left: solid 1px @gray-300;
+  background: @gray-200;
+  padding: 0 @ms-1;
+  text-align: center;
+  border-bottom-right-radius: @ms-5;
+  border-bottom-left-radius: @ms-5;
+  max-width: 100%;
+  @media screen and (min-width: 700px ) {
+    float:left;
+    border-bottom-left-radius: 0;
+    box-sizing: border-box;
+    width: 40%;
+    border-bottom: 0;
+    height: @ms7;
+  }
+}
+.footer_developer--action--button {
+  display: inline-block;
+  margin: @ms1 auto;
+  text-align: center;
+  border-radius: @ms-5;
+  font-weight: 500;
+  border: 0;
+  background: linear-gradient(@teal-400,@teal-500 85%,@teal-500 90%,@teal-500);
+  .card-2;
+  &:visited {
+    color: @teal-500;
+  }
+  @media screen and (min-width: 700px ) {
+    margin: 0;
+    margin-top: @ms1;
+  }
+}
+.footer_developer--action--button--text {
+  font-size: @ms0;
+  color: @white !important;
+  display: inline-block;
+  padding: @ms0 @ms1 @ms0 @ms-5;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+}
+
+.footer_developer--action--text span {
+  vertical-align: @ms0;
+  display: inline-block;
+}
+
+.footer_developer--action--button--img {
+  border: 0;
+  color: @black;
+  padding-left: @ms0;
+  display: inline-block;
+  vertical-align: -2px;
+}

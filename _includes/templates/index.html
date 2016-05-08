@@ -3,18 +3,38 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<p class="mainsummary">{% translate listintro %}</p>
-<div class="mainvideo"><div onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/{% if page.lang == 'ro' %}JPNwbWu0tMQ{% else %}Gc2en3nHxA4{% endif %}?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1{% if page.lang != 'en' %}&amp;cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}">
-  <img src="/img/video/video_wuc.jpg" alt="Youtube video">
-  <div class="mainvideoicon"></div>
-  <div class="mainvideoiconhover"></div>
-</div></div>
-<div class="mainlist">
-  <div><div><img src="/img/icons/main_ico_instant.svg" alt="Icon"><div>{% translate list1 %}</div></div></div>
-  <div><div><img src="/img/icons/main_ico_worldwide.svg" alt="Icon"><div>{% translate list2 %}</div></div></div>
-  <div><div><img src="/img/icons/main_ico_lowfee.svg" alt="Icon"><div>{% translate list3 %}</div></div></div>
+<div class="content_homepage">
+  <div class="content_homepage--wrap">
+    <h2 class="content_homepage--intro" id="listintro">{% translate listintro %}</h2>
+    <div class="content_homepage--video">
+      <span class="content_homepage--video--button video-link" data-video-id="Gc2en3nHxA4" href=""><img alt="button" src="/img/bitcoin/button.svg"></span>
+    </div>
+    <div class="content_homepage--action--wrap">
+      <div class="content_homepage--action">
+        <a class="content_homepage--action--text" href="/{{ page.lang }}/{% translate getting-started url %}">
+          {% translate getstarted layout %}
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content_homepage--overview--wrap">
+    <h3 class="content_homepage--overview" id="overview">{% translate overview %}</h3>
+    <div class="content_homepage--overview--list">
+      <a class="content_homepage--overview--item" href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a>
+      <a class="content_homepage--overview--item" href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a>
+      <a class="content_homepage--overview--item" href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a>
+    </div>
+  </div>
 </div>
-<p class="maindesc">{% translate desc %}</p>
-<div class="mainbutton"><a href="/{{ page.lang }}/{% translate getting-started url %}"><img src="/img/icons/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>
-<div class="mainoverview">{% translate overview %}</div>
-<div class="mainoverviews"><a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a> <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a> <a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a></div>
+<script type="text/javascript" src="/js/videoLightning.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $(".video-link").jqueryVideoLightning({
+      autoplay: 1,
+      backdrop_color: "#222",
+      backdrop_opacity: 0.6,
+      glow: 20,
+      glow_color: "#000"
+    });
+  });
+</script>

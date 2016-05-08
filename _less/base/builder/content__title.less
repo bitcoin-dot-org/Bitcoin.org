@@ -1,0 +1,41 @@
+/*
+This builder builds the top title on content pages.
+
+Use:
+  .builder__content__title(yourcontinerclass);
+  If the subtitle is long use:
+  .builder__content__title--long(yourcontinerclass);
+
+The markup:
+    <h1 class="content_yourcontinerclass--title">{% translate pagetitle %}</h1>
+    <h2 class="content_yourcontinerclass--subtitle">{% translate summary %}</h2>
+*/
+
+.builder__content__title(@classname) {
+  .content_@{classname} {
+    .content_@{classname}--title {
+    font-size: @ms2;
+    margin-bottom: @ms-1;
+    font-weight: 700;
+    text-align: center;
+    color: @main-2;
+    }
+
+  .content_@{classname}--subtitle {
+    text-align: center;
+    color: @main-3;
+    line-height: @ms1;
+    }
+    .clearfix;
+  }
+}
+
+.builder__content__title--long(@classname) {
+  .builder__content__title(@classname);
+  .content_@{classname}--subtitle {
+      font-size: @ms0;
+      text-align: left;
+      max-width: @ms15;
+      margin: 0 auto;
+  }
+}

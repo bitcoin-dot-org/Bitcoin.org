@@ -1,0 +1,319 @@
+.builder__content__title(glossary);
+
+.develdocdisclaimer,
+.content_glossary--header--menu i {
+  display: none;
+}
+
+.content_glossary--search {
+  text-align: center;
+  margin: @ms1 0;
+  input {
+    width: @ms11;
+    height: @ms4;
+    font-size: @ms-1;
+    border-radius: @ms-5;
+    border: 1px @main-5 solid;
+    font-family: 'lato';
+    color: @main-1;
+    background: @gray-50;
+    padding: 0 @ms0;
+    &:focus {
+      outline: none;
+    }
+
+  }
+  ::-webkit-input-placeholder {
+    color: @main-2;
+    font-size: @ms-1;
+    font-family: 'lato';
+    font-weight: 400;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: @gray-500;
+    font-size: @ms0;
+    font-family: 'lato';
+    font-weight: 400;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: @gray-500;
+    font-size: @ms0;
+    font-family: 'lato';
+    font-weight: 400;
+  }
+
+  :-ms-input-placeholder {
+    color: @gray-500;
+    font-size: @ms0;
+    font-family: 'lato';
+    font-weight: 400;
+  }
+}
+
+.content_glossary--header--menu {
+  text-align: center;
+}
+
+.content_glossary--header--info {
+  text-align: center;
+  margin: @ms2 auto @ms4;
+  border-radius: @ms-5;
+  max-width: @ms14;
+  border: 1px @orange-500 solid;
+  padding-right: @ms-3;
+  height: @ms6;
+  .clearfix;
+}
+.content_glossary--header--info--icon {
+  float: left;
+  width: @ms6;
+  height: @ms6;
+  background: @orange-500;
+  line-height: @ms6;
+  margin-right: @ms-3;
+  i {
+    display: none;
+  }
+}
+.content_glossary--header--info h3 {
+  width: 100%;
+  line-height: @ms0;
+  padding-top: @ms-3;
+  text-align: left;
+  font-size: @ms-1;
+  border-radius: @ms-5;
+}
+.content_glossary--header--menu li {
+  display: inline-block;
+  padding: @ms-3 @ms-2;
+  font-size: @ms0;
+  text-align: center;
+}
+.content_glossary--header--menu--item--active a {
+  color: @main-2;
+}
+
+@media screen and (min-width: 650px ) {
+  .content_glossary--header--info {
+    max-width: @ms14 + @ms0 + @ms0 + @mp3;
+    padding: 0;
+    color: @main-2;
+  }
+  .content_glossary--header--info--icon {
+    line-height: @ms0;
+    border-top-left-radius: @ms-7;
+    border-bottom-left-radius: @ms-7;
+    i {
+      font-size: @ms2;
+      margin-top: @ms0 + @mp5;
+      display: inline-block;
+    }
+    span {
+      display: none;
+    }
+  }
+  .content_glossary--header--info--text {
+    float: left;
+    width: @ms12;
+    margin: @ms-3 0 0 @ms4;
+  }
+
+  .content_glossary--header--info h3 {
+
+  }
+
+  .content_glossary--header--info--icon {
+    padding: 0 @ms0;
+  }
+  .content_glossary--search input {
+    width: @ms14;
+  }
+  .content_glossary--header--menu li {
+    padding: 0;
+    margin: @ms-3 0;
+  }
+  .content_glossary--header--menu i {
+    font-size: @ms-1;
+    padding-right: @ms-4;
+    display: inline;
+  }
+  .content_glossary--header--menu li a {
+    text-align: center;
+    padding: @ms-2 @ms0;
+    margin: 0 (@ms-2 + @mp1);
+    font-size: @ms-1;
+    align-items: center;
+    border: 1px solid @orange-500;
+    border-radius: @ms-5;
+    text-decoration: none;
+    color: @main-2;
+  }
+  .content_glossary--header--menu--item--active a {
+    background: @orange-500;
+  }
+}
+.content_glossary--faq {
+  background: @gray-50;
+  margin: @ms4 auto @ms4;
+  border-radius: @ms-5;
+  max-width: @ms16;
+  background: @gray-50;
+  .card-1;
+}
+
+.content_glossary--faq--title {
+  background: @gray-200;
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+
+  font-size: @ms1;
+  padding: @ms4 0;
+  border-top-left-radius: @ms-5;
+  border-top-right-radius: @ms-5;
+  letter-spacing: 1px;
+  border-top: @orange-500 @ms-5 solid;
+  span {
+    font-size: @ms0;
+    font-weight: 500;
+    padding-top: @ms-2;
+    display: inline-block;
+    letter-spacing: 0.25px;
+    opacity: @light-2;
+    line-height: @ms1;
+    a {
+      opacity: @light-1;
+    }
+  }
+  h2 {
+    opacity: @light-2;
+  }
+}
+
+.content_glossary--faq--section--title {
+  background: @gray-100;
+  border-top: @gray-300 1px solid;
+  border-bottom: @gray-300 1px solid;
+  padding: @ms1 @ms2;
+  a {
+    color: @main-2;
+  }
+  p {
+    display: inline;
+    padding-left: @ms0 + @mp2;
+    font-size: @ms-1;
+    opacity: @light-3;
+  }
+}
+
+.content_glossary--faq--list {
+  .content_glossary--faq--item:last-child {
+    .content_glossary--faq--item--content {
+      border-bottom: 0;
+    }
+  }
+}
+
+.content_glossary--faq--list {
+  .content_glossary--faq--item:last-child {
+    .content_glossary--faq--item--title a {
+      border-bottom: 0;
+    }
+  }
+}
+
+.content_glossary--faq--item--title a {
+  border-bottom: @gray-300 1px solid;
+  padding: @ms1 @ms2;
+  display: block;
+  @media screen and (min-width: 750px ) {
+    padding: @ms1 @ms5;
+  }
+}
+
+.content_glossary--faq--item--content {
+  /*display: none;*/
+  padding: @ms2 @ms2;
+  color: @main-2;
+  border-bottom: @gray-300 1px solid;
+  line-height: @ms2;
+  @media screen and (min-width: 750px ) {
+    padding: @ms2 @ms5;
+  }
+  p {
+    margin-bottom: @ms1;
+  }
+
+  img {
+    display: block;
+    margin: @ms3 auto;
+    max-width: 100%;
+    .card-2;
+  }
+
+  ol, ul {
+    padding-left: @ms0;
+    padding-right: @ms0;
+    margin: @ms1 0;
+    @media screen and (min-width: 750px ) {
+      padding-left: @ms2;
+      padding-right: @ms2;
+    }
+  }
+
+  ol {
+    li {
+      counter-increment: list;
+    }
+    li:before {
+      content: counter(list);
+      font-size: @ms2;
+      position: absolute;
+      margin-top: @ms-7;
+      margin-left: -@ms4;
+      z-index: 1;
+      color: @orange-500;
+      font-weight: 700;
+      border-radius: 3px;
+      opacity: @light-2;
+    }
+    li {
+      margin: @ms1 0;
+      padding-left: @ms4;
+    }
+  }
+
+  ul {
+    li:before {
+      font-size: @ms4;
+      position: absolute;
+      margin-top: -@ms-6;
+      margin-left: -@ms4;
+      z-index: 1;
+      content: "-";
+      color: @orange-500;
+      font-weight: 700;
+      border-radius: 3px;
+      opacity: @light-2;
+    }
+    li {
+      margin: @ms2 0;
+      padding-left: @ms4;
+    }
+  }
+
+}
+
+.content_glossary--faq--footer {
+  display: block;
+  max-width: 100%;
+  padding: @ms2 @ms2;
+  line-height: @ms1;
+  text-align: center;
+  background: @gray-100;
+  border-bottom-left-radius: @ms-5;
+  border-bottom-right-radius: @ms-5;
+  border-top: 1px @gray-300 solid;
+}

@@ -2,36 +2,48 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 ---
+
 <!DOCTYPE HTML>
 <html lang="{{ page.lang }}">
 
-<head>
-{% include layout/base/html-head.html %}
-</head>
+  <head>
+    {% include layout/base/html-head.html %}
+  </head>
 
-<body>
-{% include layout/base/pagetop-detect-mobile.html %}
-{% include layout/base/pagetop-alert.html %}
+  <body>
+    {% include layout/base/pagetop-detect-mobile.html %}
+    <div class="top">
+      <div class="top_main">
+        {% include layout/base/components/alert_standard.html %}
+      </div>
+    </div>
+    <div class="site">
+      <div class="site_main">
 
-<div class="head"><div>
-  {% include layout/base/head-language-dropdown.html %}
-  {% include layout/base/head-mobile-menu.html %}
-  {% include layout/base/head-logo.html %}
-  {% include layout/base/head-language-select.html %}
-  {% include layout/base/head-menu.html %}
-</div></div>
+        <div class="site_header">
+          {% include layout/base/components/header_standard.html %}
+        </div>
 
-<div class="body">
-  {% include layout/base/breadcrumbs.html %}
-  {% include layout/base/content.html %}
-  <div class="footer">
-    {% include layout/base/footer-menu.html %}
-    {% include layout/base/footer-sponsor.html %}
-    {% include layout/base/footer-license.html %}
-  </div>
-</div>
+        <div class="site_body">
+          <div class="body_standard">
+            {{ content }}
+          </div>
+        </div>
 
-{% include layout/base/footer-js.html %}
-</body>
+        <div class="site_footer">
+          {% include layout/base/components/footer_standard.html %}
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer_main">
+        {% include layout/base/components/footer_developer.html %}
+      </div>
+    </div>
+
+    {% include layout/base/footer-js.html %}
+  </body>
 
 </html>
