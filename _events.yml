@@ -1,99 +1,35 @@
-- date: 2016-02-08
-  title: "Bitcoin Developers Workshop 2016"
-  venue: "Beurs van Berlage, former Amsterdam Stock Exchange"
-  address: "Oudebrugsteeg 9, 1012 JN"
-  city: "Amsterdam"
-  country: "Netherlands"
-  link: "http://www.bitcoinference.com/Bitcoin-Developers-Workshop/index.html"
+- date: 2016-05-19
+  title: "Всеукраинский круглый стол о правовом статусе bitcoin"
+  venue: "IDF"
+  address: "Верхний Вал 10"
+  city: "Киев"
+  country: "Украина"
+  link: "https://www.facebook.com/events/228898677478637/"
 
-- date: 2016-02-11
-  title: "Bitcoinference 2016"
-  venue: "Beurs van Berlage, former Amsterdam Stock Exchange"
-  address: "Oudebrugsteeg 9, 1012 JN"
-  city: "Amsterdam"
-  country: "Netherlands"
-  link: "http://www.bitcoinference.com/"
-
-- date: 2016-02-17
-  title: "Bitcoin4Beginners Conference"
-  venue: "Beurs van Berlage, former Amsterdam Stock Exchange"
-  address: "Oudebrugsteeg 9, 1012 JN"
-  city: "Amsterdam"
-  country: "Netherlands"
-  link: "http://bitcoinference.com/Bitcoin4Beginners/Amsterdam/Beurs-van-Berlage/2016/February/17/Wednesday.html"
-
-- date: 2016-02-17
-  title: "d10e - Exploring the future of decentralization"
-  venue: "Beurs van Berlage"
-  address: "Damrak 243, 1012 ZJ Amsterdam, Netherlands"
-  city: "Amsterdam"
+- date: 2016-05-28
+  title: "Bitcoin in Use"
+  venue: "Focus Filmtheater"
+  address: "Korenmarkt 42"
+  city: "Arnhem Bitcoincity"
   country: "The Netherlands"
-  link: "http://d10e.org/#amsterdam"
+  link: "http://www.ArnhemBitcoinstad.nl/event"
 
-- date: 2016-03-07
-  title: "Blockchain Conference San Francisco"
-  venue: "Fort Mason"
-  address: "2 Marina Blvd"
-  city: "San Francisco"
-  country: "United States"
-  link: "http://blockchain-sanfrancisco.com/"
-
-- date: 2016-03-03
-  title: "Bitcoin Africa Conference 2016"
-  venue: "Focus rooms, The Core"
-  address: "Leeuwkop Road & Kikuyu rd"
-  city: "Johannesburg"
-  country: "South Africa"
-  link: "http://bitcoinconference.co.za/"
-  
-- date: 2016-03-11
-  title: "Beer and Bitcoin #6 - Polskie Stowarzyszenie Bitcoin"
-  venue: "Pub Szyszka Chmielu"
-  address: "Al. Komisji Edukacji Narodowej 36 lok. U2,"
-  city: "Warsaw"
-  country: "Poland"
-  link: "http://www.meetup.com/Warsaw-Bitcoin-Meetup-Group/events/228919141/"  
-  
-- date: 2016-03-16
-  title: "Bitcoin4Beginners"
-  venue: "Beurs van Berlage, former Amsterdam Stock Exchange"
-  address: "Oudebrugsteeg 9, 1012 JN"
-  city: "Amsterdam"
+- date: 2016-05-29
+  title: "Bitcoin in Use"
+  venue: "Focus Filmtheater"
+  address: "Korenmarkt 42"
+  city: "Arnhem Bitcoincity"
   country: "The Netherlands"
-  link: "http://www.bitcoinference.com/Bitcoin4Beginners/Amsterdam/Beurs-van-Berlage/2016/March/16/Wednesday.html"
-  
-- date: 2016-04-04
-  title: "Money 20/20 Europe"
-  venue: "Bella Center"
-  address: "Center Boulevard 5"
-  city: "Copenhagen"
-  country: "Denmark"
-  link: "https://www.money2020europe.com/"
-  
-- date: 2016-04-05
-  title: "Bitcoin4Beginners: CoinFest!"
-  venue: "Beurs van Berlage, former Amsterdam Stock Exchange"
-  address: "Oudebrugsteeg 9, 1012 JN"
-  city: "Amsterdam"
-  country: "The Netherlands"
-  link: "http://www.bitcoinference.com/Bitcoin4Beginners/Amsterdam/Beurs-van-Berlage/2016/April/5/Tuesday.html"
+  link: "http://www.ArnhemBitcoinstad.nl/event"
 
-- date: 2015-04-08
-  title: "Bitcoin Conference Russia 2016"
-  venue: "Digital October"
-  address: "Bersenevskaya naberezhnaya, 6, str. 3"
-  city: "Moscow"
-  country: "Russia"
-  link: "http://bitcoinconf.moscow/en"
+- date: 2016-05-30
+  title: "Keynote 2016 - Blockchain Technology Conference"
+  venue: "Burj Al Arab, Dubai"
+  address: "3 Jumeira Rd"
+  city: "Dubai"
+  country: "United Arab Emirates"
+  link: "http://www.keynote2016.com"
 
-- date: 2016-05-02
-  title: "Consensus 2016"
-  venue: "Marriott Marquis, Times Square, New York City"
-  address: "1535 Broadway "
-  city: "New York"
-  country: "USA"
-  link: "http://www.coindesk.com/events/consensus-2016/"
-  
 - date: 2016-06-20
   title: "Blockchain Training Conference"
   venue: "MaRS Discovery District"
@@ -102,3 +38,10 @@
   country: "Canada"
   link: "https://blockchaintraining.org"
 
+- date: 2016-06-14
+  title: "Distributed: Trade "
+  venue: "Knight Hall, Washington University"
+  address: "1 Brookings Drive, St. Louis, MO 63130"
+  city: "St. Louis"
+  country: "United States"
+  link: "https://www.eventbrite.com/e/distributed-trade-tickets-24472827887"
