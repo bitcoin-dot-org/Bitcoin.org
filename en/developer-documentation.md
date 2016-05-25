@@ -88,6 +88,6 @@ end_of_page: |
   <p><a href="https://github.com/bitcoin/bips#readme"><span class="fa fa-external-link"></span> Bitcoin Improvement Proposals</a> - GitHub</p>
   <p><a href="https://github.com/minium/Bitcoin-Spec"><span class="fa fa-external-link"></span> Bitcoin Developer Reference (working paper)</a> - Krzysztof Okupski</p>
   <p><a href="https://bitcoinj.github.io/#documentation"><span class="fa fa-external-link"></span> Bitcoinj Developer Documentation</a> - bitcoinj.org</p>
-   <p><a href="https://github.com/ProgrammingBlockchain/ProgrammingBlockchain"><span class="fa fa-external-link"></span> The C# Bitcoin book (NBitcoin Developer Documentation)</a> - Nicolas Dorier</p>
+   <p><a href="https://programmingblockchain.gitbooks.io/programmingblockchain/content/"><span class="fa fa-external-link"></span> The C# Bitcoin book (NBitcoin Developer Documentation)</a> - Nicolas Dorier</p>
   <p><a href="https://en.bitcoin.it/wiki/Category:Technical"><span class="fa fa-external-link"></span> Technical Pages</a> - Wiki</p>
 </div></div>
