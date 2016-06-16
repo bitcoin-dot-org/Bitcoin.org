@@ -453,7 +453,7 @@ Pubkey Script: OP_RETURN <0 to 40 bytes of data>
 Bitcoin Core 0.11.x increases this default to 80 bytes, with the other
 rules remaining the same.
 
-It is expected that Bitcoin Core 0.12.0 (not released yet) will default
+It is expected that Bitcoin Core 0.12.0 will default
 to relaying and mining null data outputs with up to 83 bytes with any
 number of data pushes, provided the total byte limit is not exceeded.
 There must still only be a single null data output and it must still pay
