@@ -31,6 +31,31 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkpassprivacydisclosurefullnode"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
+- bitcoinknots:
+    title: "Bitcoin Knots"
+    titleshort: "Bitcoin<br>Knots"
+    compat: "desktop windows mac linux"
+    level: 1
+    platform:
+      desktop:
+        text: "walletbitcoinljr"
+        link: "http://bitcoinknots.org/"
+        source: "https://github.com/bitcoinknots/bitcoin/"
+        screenshot: "bitcoincore.png"
+        os:
+        - windows
+        - mac
+        - linux
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkgoodvalidationfullnode"
+          transparency: "checkgoodtransparencydeterministic"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkgoodprivacyimproved"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkpassprivacydisclosurefullnode"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - multibithd:
     title: "MultiBit HD"
     titleshort: "MultiBit HD"
