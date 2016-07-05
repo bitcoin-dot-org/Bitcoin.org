@@ -10,7 +10,7 @@ required:
         A script included in outputs which sets the conditions that must
         be fulfilled for those satoshis to be spent.  Data for
         fulfilling the conditions can be provided in a signature script.
-        Called a scriptPubKey in code.
+        Pubkey Scripts are called a scriptPubKey in code.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Pubkey script
