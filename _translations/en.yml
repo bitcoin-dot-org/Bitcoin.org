@@ -127,7 +127,7 @@ en:
       send 1 bitcoin.
 
     anonymous: "Protect your identity"
-    anonymoustext: "With Bitcoin, there is no credit card number that some malicious actor can collect in order to impersonate you. In fact, it is even possible to send a payment without revealing your identity, almost just like with physical money. You should however take note that some effort can be required to <a href=\"#protect-your-privacy#\">protect your privacy</a>."
+    anonymoustext: "With Bitcoin, there is no credit card number that some malicious actor can collect in order to impersonate you. In fact, it is even possible to send a payment without revealing your identity, almost like with physical money. You should however take note that some effort can be required to <a href=\"#protect-your-privacy#\">protect your privacy</a>."
   bitcoin-paper:
     title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
     pagetitle: "Bitcoin: A Peer-to-Peer Electronic Cash System"
@@ -170,6 +170,7 @@ en:
     walletcathardware: "Hardware"
     walletcatweb: "Web"
     walletbitcoinqt: "Bitcoin Core is a full Bitcoin client and builds the backbone of the network. It offers high levels of security, privacy, and stability. However, it has fewer features and it takes a lot of space and memory."
+    walletbitcoinknots: "Bitcoin Knots is a full Bitcoin client and builds the backbone of the network. It offers high levels of security, privacy, and stability. It includes more advanced features than Bitcoin Core, but they are not as well-tested. It uses a lot of space and memory."
     walletmultibithd: "MultiBit HD is a lightweight client that is fast and easy to use. With integrated Trezor and Tor support, it synchronizes directly with the Bitcoin network. The extensive help makes it an excellent choice for non-technical users."
     walletarmory: "Armory is an advanced Bitcoin client that expands its features for Bitcoin power users. It offers many backup and encryption features, and it allows secure cold-storage on offline computers."
     walletelectrum: "Electrum's focus is speed and simplicity, with low resource usage. It uses remote servers that handle the most complicated parts of the Bitcoin system, and it allows you to recover your wallet from a secret phrase."
@@ -182,6 +183,7 @@ en:
     walletxapo: "Xapo combines the convenience of an everyday Bitcoin wallet with the security of an insured deep cold storage vault. Xapo Debit Card links to your Xapo Wallet and allows you to spend bitcoins at millions of merchants all around the world."
     walletcircle: "Circle is a web wallet service that aims to be easy to use. It provides the ability to instantly purchase and sell bitcoins using either a credit card or a U.S. bank account. It also provides an Android and an iOS web wallet app."
     walletcoinkite: "Coinkite is a web wallet &amp; debit card service that aims to be easy to use. It also works on mobile browsers, has merchant tools, point-of-sale payment terminals. It is a hybrid wallet and full reserve vault."
+    walletcoinspace: "Coin.Space HD Wallet is a free online bitcoin wallet, which you can use to make worldwide payments for free. It makes paying with bitcoins easy and secure available anywhere on your phone or desktop."
     walletbitgo: "BitGo is a high-security multi-sig wallet, which protects your bitcoin from theft and loss. You maintain full custody; BitGo cannot spend or freeze funds. BitGo wallets are easy to use and offer advanced security features such as spending limits and multi-user access."
     walletgreenaddress: "GreenAddress is a user-friendly multi-signature wallet with improved security and privacy. At no time are your keys server side, even encrypted. For security reasons, you should always use 2FA and the browser extension or Android App."
     wallettrezor: "Trezor is a hardware wallet providing a high level of security without sacrificing convenience. Unlike cold storage, Trezor is able to sign transactions while connected to an online device. That means spending bitcoins is secure even when using a compromised computer."
@@ -193,6 +195,7 @@ en:
     walletcoinapult: "Coinapult's wallet is designed with Bitcoin newcomers in mind. It allows sending bitcoins via email and SMS, and a handy tool called Locks helps protecting your balance from Bitcoin price swings. Users can Lock bitcoins to Gold, Euros, and more!"
     walletgreenbits: "GreenBits is a fast and easy to use wallet. Enjoy improved security with a minimal/zero trust approach, optional hardware wallets support, multisignature based 2FA and spending limits functionality."
     walletcoinomi: "Coinomi is a lightweight, secure, open-source, universal, HD Wallet. Apart from Bitcoin it also supports many altcoins so you can keep all your funds in a single wallet. Your private keys never leave your device and you only need to back it up just once!"
+    walletsimplebitcoinwallet: "Simple and reliable Bitcoin wallet. Secure, standalone and easy to use."
     walletdownload: "Install"
     walletvisit: "Visit website"
     walletsourcecode: "Source code"
@@ -609,7 +612,7 @@ en:
     title: "Legal disclaimer - Bitcoin"
     pagetitle: "Legal disclaimer"
     information: "Information published on bitcoin.org"
-    informationtxt1: "The website http://bitcoin.org/ (hereinafter, referred to as the \"Website\") provides information and material of a general nature. You are not authorized and nor should you rely on the Website for legal advice, business advice, or advice of any kind. You act at your own risk in reliance on the contents of the Website. Should you make a decision to act or not act you should contact a licensed attorney in the relevant jurisdiction in which you want or need help. In no way are the owners of, or contributors to, the Website responsible for the actions, decisions, or other behavior taken or not taken by you in reliance upon the Website."
+    informationtxt1: "The website https://bitcoin.org/ (hereinafter, referred to as the \"Website\") provides information and material of a general nature. You are not authorized and nor should you rely on the Website for legal advice, business advice, or advice of any kind. You act at your own risk in reliance on the contents of the Website. Should you make a decision to act or not act you should contact a licensed attorney in the relevant jurisdiction in which you want or need help. In no way are the owners of, or contributors to, the Website responsible for the actions, decisions, or other behavior taken or not taken by you in reliance upon the Website."
     translations: "Translations"
     translationstxt1: "The Website may contain translations of the English version of the content available on the Website. These translations are provided only as a convenience. In the event of any conflict between the English language version and the translated version, the English language version shall take precedence. If you notice any inconsistency, please report them on <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org\">GitHub</a>."
     userisks: "Risks related to the use of Bitcoin"
@@ -644,7 +647,7 @@ en:
   privacy:
     title: "Privacy Policy - Bitcoin"
     pagetitle: "Privacy Policy"
-    privacytxt1: "This page informs you of our policies regarding the collection, use and disclosure of personal information we receive from users of our site (http://bitcoin.org). We use your personal information to better understand your usage of the site, and to collect traffic statistics."
+    privacytxt1: "This page informs you of our policies regarding the collection, use and disclosure of personal information we receive from users of our site (https://bitcoin.org). We use your personal information to better understand your usage of the site, and to collect traffic statistics."
     privacytxt2: "By using the site, you agree to the collection and use of information in accordance with this policy."
     privacylogdata: "Log Data"
     privacytxt3: "Like many site operators, we collect information that your browser sends whenever you visit our site (\"Log Data\"). This Log Data may include information such as your computer's Internet Protocol (\"IP\") address (with replaced last byte), browser type, browser version, the pages of our site that you visit, the time and date of your visit, the time spent on those pages and other statistics."

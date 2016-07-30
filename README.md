@@ -721,6 +721,7 @@ Basic requirements:
 - SSL certificate passes [Qualys SSL Labs SSL test](https://www.ssllabs.com/ssltest/)
 - Website serving executable code or requiring authentication uses HSTS with a max-age of at least 180 days
 - The identity of CEOs and/or developers is public
+- Avoid address reuse by displaying a new receiving address for each transaction in the wallet UI
 - Avoid address reuse by using a new change address for each transaction
 - If private keys or encryption keys are stored online:
   - Refuses weak passwords (short passwords and/or common passwords) used to secure access to any funds, or provides an aggressive account lock-out feature in response to failed login attempts along with a strict account recovery process.
@@ -747,7 +748,6 @@ Basic requirements:
 Optional criteria (some could become requirements):
 
 - Received independent security audit(s)
-- Avoid address reuse by displaying a new receiving address for each transaction in the wallet UI
 - Does not show "received from" Bitcoin addresses in the UI
 - Uses deterministic ECDSA nonces (RFC 6979)
 - Provides a bug reporting policy on the website

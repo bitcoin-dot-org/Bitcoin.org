@@ -50,7 +50,7 @@ can use the following resources:
 
 ## Forums
 
-Bitcoin was a wide range of [communities][communities], but the following places
+Bitcoin has a wide range of [communities][communities], but the following places
 are the best place to ask for help using Bitcoin Core:
 
 - [Bitcoin StackExchange][] is a community dedicated entirely to
@@ -69,7 +69,7 @@ are the best place to ask for help using Bitcoin Core:
 ## Live
 
 Internet Relay Chat (IRC) is the most popular way to get live online
-help with Bitcoin Core.  When you join an IRC chatroom, you must read
+help with Bitcoin Core. When you join an IRC chatroom, you must read
 the topic (which is usually automatically displayed) to learn the rules
 for that chatroom.
 
