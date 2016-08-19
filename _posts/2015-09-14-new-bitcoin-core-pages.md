@@ -24,7 +24,7 @@ Bitcoin Core.
 ![Excerpts from Bitcoin.org's Bitcoin Core pages](/img/blog/free/bitcoin-core-pages-collage.png)
 
 {:.center}
-*Excepts from Bitcoin.org's <a href="/en/bitcoin-core/">Bitcoin Core</a> pages*
+*Excerpts from Bitcoin.org's <a href="/en/bitcoin-core/">Bitcoin Core</a> pages*
 
 Both Bitcoin Core and Bitcoin.org have come a long way since the site
 began promoting the earliest public versions of the software.
