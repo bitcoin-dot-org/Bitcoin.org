@@ -12,7 +12,7 @@ bannerclass: "alert"
 ## Summary
 
 Bitcoin.org has reason to suspect that the binaries for the upcoming Bitcoin Core release will likely be targeted by
-state sponsored attackers. As a website, Bitcoin.org does not have the necessary technical resources to guarantee
+state sponsored attackers. As a website, Bitcoin.org does not have the technical resources to guarantee
 that we can defend ourselves from attackers of this calibre. We ask the Bitcoin community,
 and in particular the Chinese Bitcoin community to be extra vigilant when downloading binaries from our website.
 
