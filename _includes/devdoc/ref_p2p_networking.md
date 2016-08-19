@@ -868,7 +868,7 @@ provide plausible-deniability privacy.
 
 | Bytes    | Name         | Data Type | Description
 |----------|--------------|-----------|---------------
-| *Varies* | nFilterBytes | uint8_t[] | Number of bytes in the following filter bit field.
+| *Varies* | nFilterBytes | compactSize uint | Number of bytes in the following filter bit field.
 | *Varies* | filter       | uint8_t[] | A bit field of arbitrary byte-aligned size. The maximum size is 36,000 bytes.
 | 4        | nHashFuncs   | uint32_t  | The number of hash functions to use in this filter. The maximum value allowed in this field is 50.
 | 4        | nTweak       | uint32_t  | An arbitrary value to add to the seed value in the hash function used by the bloom filter.
