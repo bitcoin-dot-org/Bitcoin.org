@@ -17,8 +17,8 @@ win64exe: "win64-setup.exe"
 macdmg: "-osx.dmg"
 #macdmg: ".dmg"
 mactar: "osx64.tar.gz"
-lin32: "linux32.tar.gz"
-lin64: "linux64.tar.gz"
+lin32: "i686-pc-linux-gnu.tar.gz"
+lin64: "x86_64-linux-gnu.tar.gz"
 
 ---
 {% if site.env.BITCOINORG_BUILD_TYPE %}
@@ -69,16 +69,17 @@ lin64: "linux64.tar.gz"
         </span>
       </div>
       <div>
-        <img src="/img/os/med_ubuntu.svg" alt="ubuntu">
+        <img src="/img/os/arm.png" alt="ARM Linux">
         <span>
-          <a href="https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin">Ubuntu (PPA)</a>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm-linux-gnueabihf.tar.gz" class="dl">ARM Linux</a>
+          	<span><a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-aarch64-linux-gnu.tar.gz" class="dl" id="lin64arm">64 bit</a> -
+            	<a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm-linux-gnueabihf.tar.gz" class="dl" id="lin32arm">32 bit</a></span>
         </span>
       </div>
       <div>
-        <img src="/img/os/med_opensource.svg" alt="source code">
+        <img src="/img/os/med_ubuntu.svg" alt="ubuntu">
         <span>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}.tar.gz" class="dl">{% translate source %}</a>
-          <span><a href="https://github.com/bitcoin/bitcoin">GitHub</a></span>
+          <a href="https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin">Ubuntu (PPA)</a>
         </span>
       </div>
     </div>
@@ -86,6 +87,7 @@ lin64: "linux64.tar.gz"
       <a href="{{ PATH_PREFIX }}/SHA256SUMS.asc" class="dl">{% translate downloadsig %}</a><br>
       <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}.torrent" class="dl">{% translate downloadtorrent %}</a>
         {% if site.DOWNLOAD_MAGNETLINK %} <a href="{{ site.DOWNLOAD_MAGNETLINK | replace: '&', '\&amp;'}}" class="magnetlink" data-proofer-ignore></a>{% endif %}<br>
+      <a href="https://github.com/bitcoin/bitcoin" class="dl">{% translate source %}</a><br>
       <a href="/en/version-history">{% translate versionhistory %}</a>
     </p>
     <p class="downloadkeys">
@@ -153,11 +155,13 @@ case 'mac':
 	but.href = hrefmacdmg;
 break;
 }
+
 </script>
 {% else %}
 {% capture redirect %}https://bitcoin.org/{{page.lang}}/{% translate download url %}{% endcapture %}
 <meta name="robots" content="noindex">
 <script>window.location.href='{{ redirect }}';</script>
+
 
 <div class="redirectmsg">
 <h1>This page has been moved</h1>
