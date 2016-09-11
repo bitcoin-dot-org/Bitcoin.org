@@ -407,7 +407,7 @@ proof of work.
 | 80       | block header       | block_header     | The block header in the format described in the [block header section][section block header].
 | 4        | transaction count  | uint32_t         | The number of transactions in the block (including ones that don't match the filter).
 | *Varies* | hash count         | compactSize uint | The number of hashes in the following field.
-| *Varies* | hashes             | char[32]         | One or more hashes of both transactions and merkle nodes in internal byte order.  Each hash is 32 bits.
+| *Varies* | hashes             | char[32]         | One or more hashes of both transactions and merkle nodes in internal byte order.  Each hash is 32 bytes.
 | *Varies* | flag byte count    | compactSize uint | The number of flag bytes in the following field.
 | *Varies* | flags              | byte[]           | A sequence of bits packed eight in a byte with the least significant bit first.  May be padded to the nearest byte boundary but must not contain any more bits than that.  Used to assign the hashes to particular nodes in the merkle tree as described below.
 
