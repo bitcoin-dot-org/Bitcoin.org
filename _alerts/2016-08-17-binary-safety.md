@@ -4,7 +4,7 @@
 
 title: "0.13.0 Binary Safety Warning"
 shorturl: "binary-safety"
-active: true
+active: false
 banner: "Be extra vigilant when downloading binaries from our website for the upcoming 0.13.0 release"
 bannerclass: "alert"
 ---
