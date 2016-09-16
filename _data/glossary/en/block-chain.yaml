@@ -4,7 +4,7 @@
 
 required:
                                            #-------------40 characters-------------#
-    title_max_40_characters_no_formatting: Block Chain
+    title_max_40_characters_no_formatting: Blockchain
 
     summary_max_255_characters_no_formatting: >
         A chain of blocks with each block referencing the block
@@ -19,6 +19,7 @@ optional:
     synonyms_and_pluralizations_not_shown_in_glossary:
         - block chains
         - blocks chain
+        - block chain
         - block-chain
         - block-chains
         - blockchain
