@@ -62,3 +62,11 @@ opening it in Inkscape, ungrouping the graphic, selecting plot lines,
 and using Path->Simplify.  Then select all, regroup, and save.  Be sure
 to double-check your work---if you simplify text, it becomes unreadable.
 (Reductions here tend to be large, I've seen ~80%.)
+
+## Files Ending In .msc
+
+Some sequence diagrams are generated using
+[.msc](http://www.mcternan.me.uk/mscgen/). .msc files can be converted into
+.svg and .png files using [mscgen](http://www.mcternan.me.uk/mscgen/) or
+[mscgen_js](http://mscgen.js.org/) (source on github
+[here](https://github.com/sverweij/mscgen_js)).

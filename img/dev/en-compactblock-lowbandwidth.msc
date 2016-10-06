@@ -1,0 +1,17 @@
+msc {
+  wordwraparcs=on;
+  outside [label="", linecolor="white"],
+  "Node A",
+  "Node B";
+
+  "Node A" => "Node B" [label="sendcmpt(0)"];
+  "Node A" <= "Node B" [label="sendcmpt(0)"];
+  ...;
+  outside => "Node A" [label="block"];
+  "Node A" box "Node A" [label="process block"];
+  "Node A" => "Node B" [label="headers or inv"];
+  "Node A" <= "Node B" [label="getdata (MSG_CMPCT_BLOCK)"];
+  "Node A" => "Node B" [label="cmpctblock"];
+  "Node A" << "Node B" [label="getblocktxn"];
+  "Node A" >> "Node B" [label="blocktxn"];
+}
