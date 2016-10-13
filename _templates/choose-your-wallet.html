@@ -125,12 +125,29 @@ wallets:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvservers"
           transparency: "checkpasstransparencyopensource"
-          environment: "checkfailenvironmentdesktop"
+          environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
+      android:
+        text: "walletelectrum"
+        link: "https://play.google.com/store/apps/details?id=org.electrum.electrum"
+        source: "https://github.com/spesmilo/electrum"
+        screenshot: "electrumandroid.png"
+        os:
+        - android
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 - msigna:
     title: "mSIGNA"
     titleshort: "mSIGNA"
