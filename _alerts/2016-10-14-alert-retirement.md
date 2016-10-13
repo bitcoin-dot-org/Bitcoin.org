@@ -20,7 +20,7 @@ The network wide Alert system was created by Satoshi Nakamoto as a means of info
 information regarding Bitcoin. It has been used in the past to inform users about important network events such as
 accidental blockchain forks. However, the Alert system also represents a large source of centralization in Bitcoin.
 The holders of the singular Alert Key can at any time send an alert which could affect the entire network. As more
-developers join, the Alert Key is given to others, but cannot be taken away from those who have left. This has lead
+developers join, the Alert Key is given to others, but cannot be taken away from those who have left. This has led
 to the Alert Key potentially falling into the hands of malicious actors who could use it to disrupt the network. Because
 there is only one Alert key, it is not possible to prevent former developers from sending an alert nor is it possible
 to identify who sent an Alert.
