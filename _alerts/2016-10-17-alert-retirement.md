@@ -5,8 +5,8 @@
 title: "Alert System Retirement"
 shorturl: "alert-retirement"
 active: true
-#banner: "Alert system is being retired (click here to read)"
-#bannerclass: "alert"
+banner: "Alert system is being retired (click here to read)"
+bannerclass: "info"
 ---
 
 ## Summary
@@ -41,8 +41,8 @@ receive the final alert.
 
 |Action|Description|Date|
 |---|---|---|
-|Pre-final Alert Posts|Posts on Bitcoin.org, various forums, and various mailing lists that the Alert system will be retired|2016-10-14|
-|Pre-final Alert|The alert itself warning that the Alert system will be retired|2016-10-15|
+|Pre-final Alert Posts|Posts on Bitcoin.org, various forums, and various mailing lists that the Alert system will be retired|2016-10-17|
+|Pre-final Alert|The alert itself warning that the Alert system will be retired|2016-10-18|
 |Final Alert|Max sequence Alert to disable the Alert system|2017 (Will coincide with Bitcoin Core 0.14 Release Candidate process)|
 |Alert key released|The Alert key will be made publicly available|1-2 months after the Final Alert|
 
@@ -59,4 +59,6 @@ are guaranteed to have removed/disabled the Alert system or allow you to disable
 
 * [Original email proposing retirement](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2016-September/013104.html)
 * [Pull request removing Alert system](https://github.com/bitcoin/bitcoin/pull/7692)
+* [Removal discussion on github](https://github.com/bitcoin/bitcoin/pull/6260)
+* [Pull request disabling alerts](https://github.com/bitcoin/bitcoin/pull/6274)
 * [IRC Discussion](https://botbot.me/freenode/bitcoin-core-dev/2016-09-22/?msg=73446303&page=6)
