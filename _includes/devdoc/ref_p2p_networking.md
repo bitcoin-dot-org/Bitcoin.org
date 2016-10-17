@@ -137,7 +137,7 @@ The currently-available type identifiers are:
 | 1               | [`MSG_TX`][msg_tx]{:#term-msg_tx}{:.term}                                     | The hash is a TXID.
 | 2               | [`MSG_BLOCK`][msg_block]{:#term-msg_block}{:.term}                            | The hash is of a block header.
 | 3               | [`MSG_FILTERED_BLOCK`][msg_filtered_block]{:#term-msg_filtered_block}{:.term} | The hash is of a block header; identical to `MSG_BLOCK`. When used in a `getdata` message, this indicates the response should be a `merkleblock` message rather than a `block` message (but this only works if a bloom filter was previously configured).  **Only for use in `getdata` messages.**
-| 4               | [`MSG_CMPCT_BLOCK`][msg_compacy_block]{:#term-msg_compact_block}{:.term}      | The hash is of a block header; identical to `MSG_BLOCK`. When used in a `getdata` message, this indicates the response should be a `compactblock` message rather than a `block` message.  **Only for use in `getdata` messages.**
+| 4               | [`MSG_CMPCT_BLOCK`][msg_compact_block]{:#term-msg_compact_block}{:.term}      | The hash is of a block header; identical to `MSG_BLOCK`. When used in a `getdata` message, this indicates the response should be a `compactblock` message rather than a `block` message.  **Only for use in `getdata` messages.**
 
 Type identifier zero and type identifiers greater than four are reserved
 for future implementations. Bitcoin Core ignores all inventories with
