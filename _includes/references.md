@@ -289,6 +289,8 @@ http://opensource.org/licenses/MIT.
 [BIP71]: https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki
 [BIP72]: https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki
 [BIP130]: https://github.com/bitcoin/bips/blob/master/bip-0130.mediawiki
+[BIP133]: https://github.com/bitcoin/bips/blob/master/bip-0133.mediawiki
+[BIP152]: https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki
 [CVE-2012-2459]: https://en.bitcoin.it/wiki/CVEs#CVE-2012-2459
 [RFC5737]: http://tools.ietf.org/html/rfc5737
 [secp256k1]: http://www.secg.org/sec2-v2.pdf
