@@ -207,7 +207,7 @@ sources and place it in the first available position in the block.
 *Added in protocol version 70014 as described by BIP152.*
 
 A `cmpctblock` message is a compact enocoding of a new block, used to relay
-blocks with faster propogation and lower bandwidth than relaying the full
+blocks with faster propagation and lower bandwidth than relaying the full
 block. See `sendcmpct` for details of compact block relay modes.
 
 `cmpctblock` contains the block header, short transaction ids for the
@@ -228,19 +228,20 @@ The Prefilled Transaction structure is:
 
 | Bytes             | Name        | Data Type        | Description
 |-------------------|-------------|------------------|----------------
-| *Varies* (1 or 3) | index       | compactSize uint | The index of the transaction in the block, differentially encoded.
+| *Varies* (1 or 3) | index       | compactSize uint | The index of the transaction in the block, differentially encoded (see below).
 | *Varies*          | Transaction | Transaction      | The transaction being relayed in raw transaction form.
 
 The indexes are *differentially encoded*. Instead of using raw indexes, the
 number encoded is the difference between the current index and the previous
-index, minus one. For example, a first index of 0 implies a real index of 0,
-a second index of 0 thereafter refers to a real index of 1, etc.
+index, minus one. For example, a first index of 0 implies a real index of 0
+(ie the coinbase transaction), a second index of 0 thereafter refers to a real
+index of 1, etc.
 
 Short transaction IDs are used as a compact representation of transaction to
 relay without sending a full 256-bit hash. They are calculated by:
 
-1. Hashing `block header||nonce` (in little-endian) with a single-SHA256 hash
-2. Hashing the transaction ID with SipHash-2-4. The keys (k0/k1) are set to the first two little-endian 64-bit integers from the above hash, respectively.
+1. Hashing `block<!--noref--> header<!--noref-->||nonce` (in little-endian) with a single-SHA256 hash
+2. Hashing the transaction ID with [SipHash-2-4](https://en.wikipedia.org/wiki/SipHash). The keys (k0/k1) are set to the first two little-endian 64-bit integers from the above hash, respectively.
 3. Dropping the 2 most significant bytes from the SipHash output to make it 6 bytes.
 
 The SipHash-2-4 keys are derived from the block header and nonce to avoid
