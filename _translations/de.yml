@@ -3,7 +3,7 @@ de:
     title: "Über bitcoin.org"
     pagetitle: "Über bitcoin.org"
     pagedesc: "Bitcoin.org ist einer nachhaltigen Entwicklung von Bitcoin gewidmet."
-    own: "Wem gehört bitcoin.org?"
+    own: "Wem gehört eigentlich bitcoin.org?"
     owntxt: "Bitcoin.org ist der ursprünglich für die erste Bitcoin-Webseite benutzte Domainname. \nRegistriert und verwaltet wurde/wird die Website durch die <a href=\"#development#\">Bitcoin Hauptentwickler</a> und durch Mitglieder der Community, mit dem Input der <a href=\"#community#\">Bitcoin Community</a>. Bitcoin.org ist keine offizielle Webseite. Genauso wie niemand die E-Mail-Technologie besitzt, besitzt auch niemand das Bitcoin Netzwerk. Und somit kann niemand als Autorität im Namen von Bitcoin sprechen."
     control: "Dann... wer kontrolliert Bitcoin?"
     controltxt: "Bitcoin wird durch alle Bitcoin-Nutzer auf der ganzen Welt kontrolliert. Entwickler verbessern die Software, aber Sie können keine Änderung der Regeln im Bitcoin-Protokoll erzwingen, da alle Nutzer die freie Wahl bei der Softwarenutzung haben. Um untereinander kompatibel zu bleiben, müssen alle Nutzer Software verwenden, die die selben Regeln befolgen. Bitcoin kann nur bei einem vollständigen Konsens zwischen allen Benutzern ordentlich arbeiten. Daher haben alle Benutzer und Entwickler einen starken Anreiz diesen Konsens anzunehmen und zu schützen."
@@ -73,7 +73,7 @@ de:
     anonymoustext: "Mit Bitcoin gibt es keine Kreditkartennummer, die böswillige Aktoren sammeln könnten, um sich als Sie auszugeben. Tatsächlich ist es sogar wie mit echtem Geld möglich eine Zahlung zu senden ohne Ihre Identität preiszugeben. Sie sollten aber beachten, dass es etwas Aufwand benötigt um <a href=\"#protect-your-privacy#\">ihre Privatsphäre zu schützen</a>."
   community:
     title: "Community - Bitcoin"
-    pagetitle: "Bitcoin Communities"
+    pagetitle: "Bitcoin-Communities"
     pagedesc: "Finde interessante Menschen, Gruppen und Gemeinschaften um Bitcoin herum."
     forums: "Foren"
     bitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=16.0\">BitcoinTalk Forum</a>"
