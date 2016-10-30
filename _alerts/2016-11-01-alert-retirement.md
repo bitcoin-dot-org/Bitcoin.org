@@ -41,8 +41,8 @@ receive the final alert.
 
 |Action|Description|Date|
 |---|---|---|
-|Pre-final Alert Posts|Posts on Bitcoin.org, various forums, and various mailing lists that the Alert system will be retired|2016-10-28|
-|Pre-final Alert|The alert itself warning that the Alert system will be retired|2016-10-29|
+|Pre-final Alert Posts|Posts on Bitcoin.org, various forums, and various mailing lists that the Alert system will be retired|2016-11-01|
+|Pre-final Alert|The alert itself warning that the Alert system will be retired|2016-11-02|
 |Final Alert|Max sequence Alert to disable the Alert system|2017 (Will coincide with Bitcoin Core 0.14 Release Candidate process)|
 |Alert key released|The Alert key will be made publicly available|1-2 months after the Final Alert|
 
