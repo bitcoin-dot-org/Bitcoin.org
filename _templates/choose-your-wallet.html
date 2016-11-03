@@ -340,7 +340,7 @@ wallets:
 - breadwallet:
     title: "breadwallet"
     titleshort: "breadwallet"
-    compat: "mobile ios"
+    compat: "mobile android ios"
     level: 2
     platform:
       mobile:
@@ -350,6 +350,7 @@ wallets:
         screenshot: "breadwallet.png"
         os:
         - ios
+        - android
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"
@@ -367,6 +368,23 @@ wallets:
         screenshot: "breadwallet.png"
         os:
         - ios
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationspvp2p"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      android:
+        text: "walletbreadwallet"
+        link: "https://play.google.com/store/apps/details?id=com.breadwallet"
+        source: "https://github.com/breadwallet/breadwallet-android"
+        screenshot: "breadwallet.png"
+        os:
+        - android
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"
@@ -405,6 +423,23 @@ wallets:
         link: "https://www.ledgerwallet.com/"
         source: "https://github.com/LedgerHQ/"
         screenshot: "ledger.png"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkneutralvalidationvariable"
+          transparency: "checkfailtransparencynew"
+          environment: "checkgoodenvironmenthardware"
+          privacy: "checkneutralprivacyvariable"
+- ledgernanos:
+    title: "Ledger Nano S"
+    titleshort: "Ledger<br>Nano S"
+    compat: "hardware"
+    level: 2
+    platform:
+      hardware:
+        text: "walletnanos"
+        link: "https://www.ledgerwallet.com/"
+        source: "https://github.com/LedgerHQ/"
+        screenshot: "ledgernanos.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
