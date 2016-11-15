@@ -11,7 +11,7 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-*Requires wallet support.  Added in Bitcoin Core 0.9.2.*
+*Requires wallet support.*
 
 The `getwalletinfo` RPC {{summary_getWalletInfo}}
 

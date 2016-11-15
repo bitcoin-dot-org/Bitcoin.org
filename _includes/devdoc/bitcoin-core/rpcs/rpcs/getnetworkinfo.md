@@ -11,8 +11,6 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-*Added in Bitcoin Core 0.9.2.*
-
 The `getnetworkinfo` RPC {{summary_getNetworkInfo}}
 
 *Parameters: none*
