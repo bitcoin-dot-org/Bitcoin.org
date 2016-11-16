@@ -91,7 +91,7 @@ The `getblockheader` RPC {{summary_getBlockHeader}}
 - n: "→<br>`mediantime`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The value of the *time* field in the block header, indicating approximately when the block was created"
+  d: "The computed median time of the previous 11 blocks.  Used for validating transaction locktime under BIP113."
 
 - n: "→<br>`nonce`"
   t: "number (int)"
@@ -127,7 +127,7 @@ The `getblockheader` RPC {{summary_getBlockHeader}}
 
 *Example from Bitcoin Core 0.12.1*
 
-Get a block in raw hex:
+Get a block header in raw hex:
 
 {% highlight bash %}
 bitcoin-cli -testnet getblockheader \

@@ -29,7 +29,7 @@ The `clearbanned` RPC {{summary_clearBanned}}
 
 *Example from Bitcoin Core 0.13.1*
 
-Disconnects following node from your node.
+Clears the ban list.
 
 {% highlight bash %}
 bitcoin-cli clearbanned

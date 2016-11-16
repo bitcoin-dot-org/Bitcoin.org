@@ -120,7 +120,7 @@ Result:
     ],
     "time" : 1396321351,
     "timereceived" : 1418924711,
-	"bip125-replaceable" : "no",
+    "bip125-replaceable" : "no",
     "details" : [
         {
             "account" : "",

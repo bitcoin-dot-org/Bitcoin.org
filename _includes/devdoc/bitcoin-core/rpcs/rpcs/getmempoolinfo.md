@@ -48,8 +48,8 @@ The `getmempoolinfo` RPC {{summary_getMemPoolInfo}}
 - n: "→<br>`mempoolminfee`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.12.0*<br><br>The total number of bytes in the transactions in the memory pool" 
-  
+  d: "*Added in Bitcoin Core 0.12.0*<br><br>The lowest fee per kilobyte paid by any transaction in the memory pool"
+
 {% enditemplate %}
 
 *Example from Bitcoin Core 0.12.0*

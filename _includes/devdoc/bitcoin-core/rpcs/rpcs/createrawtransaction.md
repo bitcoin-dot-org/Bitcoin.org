@@ -53,7 +53,7 @@ The `createrawtransaction` RPC {{summary_createRawTransaction}}
 
 {% enditemplate %}
 
-*Parameter #3---locktime
+*Parameter #3---locktime*
 
 {% itemplate ntpd1 %}
 - n: "Locktime"

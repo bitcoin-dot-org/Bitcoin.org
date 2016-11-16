@@ -13,7 +13,7 @@ http://opensource.org/licenses/MIT.
 
 *Added in Bitcoin Core 0.12.0*
 
-The `setban` RPC {{summary_addNode}}
+The `setban` RPC {{summary_setBan}}
 
 *Parameter #1---IP/Subnet of the node*
 
@@ -67,7 +67,7 @@ The `setban` RPC {{summary_addNode}}
 
 *Example from Bitcoin Core 0.12.1*
 
-Try connecting to the following node.
+Ban the following node.
 
 {% highlight bash %}
 bitcoin-cli -testnet setban 192.0.2.113:18333 add 2592000

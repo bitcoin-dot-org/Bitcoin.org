@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### AbandonTransaction
 {% include helpers/subhead-links.md %}
 
-{% assign summary_abandonTransaction="marks an in-wallet transaction and all its in-wallet descendants as abandoned. This allows their inputs to be respend." %}
+{% assign summary_abandonTransaction="marks an in-wallet transaction and all its in-wallet descendants as abandoned. This allows their inputs to be respent." %}
 
 {% autocrossref %}
 
@@ -37,7 +37,7 @@ The `abandontransaction` RPC {{summary_abandonTransaction}}
 
 *Example from Bitcoin Core 0.13.1*
 
-Disconnects following node from your node.
+Abandons the transaction on your node.
 
 {% highlight bash %}
 bitcoin-cli abandontransaction fa3970c341c9f5de6ab13f128cbfec58d732e736a505fe32137ad551c799ecc4
