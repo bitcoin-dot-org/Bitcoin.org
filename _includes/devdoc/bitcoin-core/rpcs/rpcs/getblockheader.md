@@ -86,7 +86,7 @@ The `getblockheader` RPC {{summary_getBlockHeader}}
 - n: "→<br>`mediantime`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The computed median time of the previous 11 blocks.  Used for validating transaction locktime under BIP113."
+  d: "The computed median time of the previous 11 blocks.  Used for validating transaction locktime under BIP113"
 
 - n: "→<br>`nonce`"
   t: "number (int)"

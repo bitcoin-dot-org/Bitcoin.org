@@ -51,7 +51,7 @@ The `getblockchaininfo` RPC {{summary_getBlockChainInfo}}
 - n: "→<br>`mediantime`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.12.0*<br><br>The median time of the 11 blocks before the most recent block on the blockchain.  Used for validating transaction locktime under BIP113."
+  d: "*Added in Bitcoin Core 0.12.0*<br><br>The median time of the 11 blocks before the most recent block on the blockchain.  Used for validating transaction locktime under BIP113"
   
 - n: "→<br>`verificationprogress`"
   t: "number (real)"
@@ -161,17 +161,17 @@ The `getblockchaininfo` RPC {{summary_getBlockChainInfo}}
 - n: "→ → →<br>`bit`"
   t: "numeric<br>(int)"
   p: "Optional<br>(0 or 1)"
-  d: "The bit (0-28) in the block version field used to signal this softfork. Field is only shown when status is `started`."
+  d: "The bit (0-28) in the block version field used to signal this softfork.  Field is only shown when status is `started`"
   
 - n: "→ → →<br>`startTime`"
   t: "numeric<br>(int)"
   p: "Required<br>(exactly 1)"
-  d: "The Unix epoch time when the softfork voting begins."
+  d: "The Unix epoch time when the softfork voting begins"
   
 - n: "→ → →<br>`timeout`"
   t: "numeric<br>(int)"
   p: "Required<br>(exactly 1)"
-  d: "The Unix epoch time at which the deployment is considered failed if not yet locked in."
+  d: "The Unix epoch time at which the deployment is considered failed if not yet locked in"
   
 {% enditemplate %}
 

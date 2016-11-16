@@ -21,7 +21,7 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "Account"
   t: "string"
   p: "Optional<br>(0 or 1)"
-  d: "The name of an account to get transactinos from.  Use an empty string (\"\") to get transactions for the default account.  Default is `*` to get transactions for all accounts. The account feature is deprecated."
+  d: "The name of an account to get transactinos from.  Use an empty string (\"\") to get transactions for the default account.  Default is `*` to get transactions for all accounts. The account feature is deprecated"
 
 {% enditemplate %}
 
@@ -100,7 +100,7 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "→ →<br>`trusted`"
   t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "Indicates wether we consider the outputs of this unconfirmed transaction safe to spend.  The field is only visible for unconfirmed transactions."
+  d: "Indicates wether we consider the outputs of this unconfirmed transaction safe to spend.  The field is only visible for unconfirmed transactions"
 
 - n: "→ →<br>`generated`"
   t: "bool"

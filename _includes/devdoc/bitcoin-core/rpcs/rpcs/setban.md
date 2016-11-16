@@ -41,7 +41,7 @@ The `setban` RPC {{summary_setBan}}
 - n: "Bantime"
   t: "numeric<br>(int)"
   p: "Optional<br>(0 or 1)"
-  d: "Time in seconds how long (or until when if `absolute` is set) the entry is banned. The default is 24h which can also be overwritten by the -bantime startup argument."
+  d: "Time in seconds how long (or until when if `absolute` is set) the entry is banned. The default is 24h which can also be overwritten by the -bantime startup argument"
 
 {% enditemplate %}
 
