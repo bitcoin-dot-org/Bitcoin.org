@@ -63,11 +63,6 @@ The `getblockheader` RPC {{summary_getBlockHeader}}
   p: "Required<br>(exactly 1)"
   d: "The number of confirmations the transactions in this block have, starting at 1 when this block is at the tip of the best block chain.  This score will be -1 if the the block is not part of the best block chain"
 
-- n: "→<br>`size`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The size of this block in serialized block format, counted in bytes"
-
 - n: "→<br>`height`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"

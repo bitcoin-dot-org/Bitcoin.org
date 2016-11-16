@@ -1,4 +1,4 @@
-{% comment %}
+﻿{% comment %}
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
@@ -100,7 +100,7 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "→ →<br>`trusted`"
   t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "Indicates wether we consider the outputs of this unconfirmed transaction safe to spend"
+  d: "Indicates wether we consider the outputs of this unconfirmed transaction safe to spend.  The field is only visible for unconfirmed transactions."
 
 - n: "→ →<br>`generated`"
   t: "bool"
@@ -204,8 +204,8 @@ Result:
         ],
         "time" : 1418695703,
         "timereceived" : 1418925580,
-		"bip125-replaceable" : "no",
-		"abandoned": false
+	"bip125-replaceable" : "no",
+	"abandoned": false
     }
 ]
 {% endhighlight %}
