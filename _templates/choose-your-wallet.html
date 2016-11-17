@@ -977,6 +977,28 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
+
+- circle:
+    title: "Paxful"
+    titleshort: "Paxful"
+    compat: "web"
+    level: 4
+    platform:
+      web:
+        text: "walletpaxful"
+        link: "https://paxful.com/"
+        screenshot: "paxful.png"
+        os:
+        check:
+          control: "checkfailcontrolthirdpartyinsured"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkpassenvironmenttwofactor"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 ---
 
 <!-- Note: this file exempt from check-for-subheading-anchors check -->
