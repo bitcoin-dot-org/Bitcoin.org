@@ -93,6 +93,11 @@ http://opensource.org/licenses/MIT.
   p: "Required<br>(exactly 1)"
   d: "A Unix epoch time when the transaction was detected by the local node, or the time of the block on the local best block chain that included the transaction"
 
+- n: "{{DEPTH}}<br>`bip125-replaceable`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.12.0*<br><br>Indicates if a transaction is replaceable under BIP 125:<br>• `yes` is replaceable<br>• `no` not replaceable<br>• `unknown` for unconfirmed transactions not in the mempool"
+  
 - n: "{{DEPTH}}<br>`comment`"
   t: "string"
   p: "Optional<br>(0 or 1)"

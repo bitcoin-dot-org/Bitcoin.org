@@ -53,6 +53,16 @@ The `createrawtransaction` RPC {{summary_createRawTransaction}}
 
 {% enditemplate %}
 
+*Parameter #3---locktime*
+
+{% itemplate ntpd1 %}
+- n: "Locktime"
+  t: "numeric"
+  p: "Optional<br>(0 or 1)"
+  d: "*Added in Bitcoin Core 0.12.0*<br><br>Indicates the earliest time a transaction can be added to the block chain"
+
+{% enditemplate %}
+
 *Result---the unsigned raw transaction in hex*
 
 {% itemplate ntpd1 %}

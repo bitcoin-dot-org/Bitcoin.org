@@ -68,11 +68,15 @@ create a cross-site scripting (XSS) exploit. To avoid problems, please
 treat block chain and memory pool data as an arbitrary input from an
 untrusted source.
 
+{% include devdoc/bitcoin-core/rpcs/rpcs/abandontransaction.md %}
+
 {% include devdoc/bitcoin-core/rpcs/rpcs/addmultisigaddress.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/addnode.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/backupwallet.md %}
+
+{% include devdoc/bitcoin-core/rpcs/rpcs/clearbanned.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/createmultisig.md %}
 
@@ -81,6 +85,8 @@ untrusted source.
 {% include devdoc/bitcoin-core/rpcs/rpcs/decoderawtransaction.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/decodescript.md %}
+
+{% include devdoc/bitcoin-core/rpcs/rpcs/disconnectnode.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/dumpprivkey.md %}
 
@@ -113,6 +119,8 @@ untrusted source.
 {% include devdoc/bitcoin-core/rpcs/rpcs/getblockcount.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/getblockhash.md %}
+
+{% include devdoc/bitcoin-core/rpcs/rpcs/getblockheader.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/getblocktemplate.md %}
 
@@ -180,6 +188,8 @@ untrusted source.
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/listaddressgroupings.md %}
 
+{% include devdoc/bitcoin-core/rpcs/rpcs/listbanned.md %}
+
 {% include devdoc/bitcoin-core/rpcs/rpcs/listlockunspent.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/listreceivedbyaccount.md %}
@@ -209,6 +219,8 @@ untrusted source.
 {% include devdoc/bitcoin-core/rpcs/rpcs/sendtoaddress.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/setaccount.md %}
+
+{% include devdoc/bitcoin-core/rpcs/rpcs/setban.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/setgenerate.md %}
 

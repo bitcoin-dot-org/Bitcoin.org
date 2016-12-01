@@ -1,4 +1,4 @@
-{% comment %}
+﻿{% comment %}
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
@@ -21,7 +21,7 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "Account"
   t: "string"
   p: "Optional<br>(0 or 1)"
-  d: "The name of an account to get transactinos from.  Use an empty string (\"\") to get transactions for the default account.  Default is `*` to get transactions for all accounts"
+  d: "The name of an account to get transactinos from.  Use an empty string (\"\") to get transactions for the default account.  Default is `*` to get transactions for all accounts. The account feature is deprecated"
 
 {% enditemplate %}
 
@@ -96,6 +96,11 @@ The `listtransactions` RPC {{summary_listTransactions}}
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
   d: "The number of confirmations the transaction has received.  Will be `0` for unconfirmed and `-1` for conflicted.  Not returned for *move* category payments"
+  
+- n: "→ →<br>`trusted`"
+  t: "bool"
+  p: "Optional<br>(0 or 1)"
+  d: "Indicates wether we consider the outputs of this unconfirmed transaction safe to spend.  The field is only visible for unconfirmed transactions"
 
 - n: "→ →<br>`generated`"
   t: "bool"
@@ -157,16 +162,26 @@ The `listtransactions` RPC {{summary_listTransactions}}
   p: "Optional<br>(0 or 1)"
   d: "Only returned by *move* category payments.  This is the account the bitcoins were moved from or moved to, as indicated by a negative or positive *amount* field in this payment"
 
+- n: "→ →<br>`bip125-replaceable`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "Indicates if a transaction is replaceable under BIP125:<br>• `yes` replaceable<br>• `no` not replaceable<br>• `unknown` for unconfirmed transactions not in the mempool"
+  
+- n: "→ →<br>`abandoned`"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "Indicates if a transaction is was abandoned:<br>• `yes` if it was abandoned (inputs are respendable)<br>• `no`  if it was not abandoned"
+  
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example from Bitcoin Core 0.12.1*
 
 List the most recent transaction from the account "someone else's
 address2" including watch-only addresses.
 
 {% highlight bash %}
 bitcoin-cli -testnet listtransactions \
-  "someone else's address2" 1 0 true
+  "" 1 0 true
 {% endhighlight %}
 
 Result:
@@ -175,7 +190,7 @@ Result:
 [
     {
         "involvesWatchonly" : true,
-        "account" : "someone else's address2",
+        "account" : "",
         "address" : "n3GNqMveyvaPvUbH469vDRadqpJMPc84JA",
         "category" : "receive",
         "amount" : 0.00050000,
@@ -188,7 +203,9 @@ Result:
         "walletconflicts" : [
         ],
         "time" : 1418695703,
-        "timereceived" : 1418925580
+        "timereceived" : 1418925580,
+	"bip125-replaceable" : "no",
+	"abandoned": false
     }
 ]
 {% endhighlight %}

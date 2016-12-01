@@ -11,8 +11,6 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-*Added in Bitcoin Core 0.9.0*
-
 The `getbestblockhash` RPC {{summary_getBestBlockHash}}
 
 *Parameters: none*

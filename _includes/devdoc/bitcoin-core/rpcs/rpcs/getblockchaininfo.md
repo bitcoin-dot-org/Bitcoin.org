@@ -11,8 +11,6 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-*Added in Bitcoin Core 0.9.2*
-
 The `getblockchaininfo` RPC {{summary_getBlockChainInfo}}
 
 *Parameters: none*
@@ -50,6 +48,11 @@ The `getblockchaininfo` RPC {{summary_getBlockChainInfo}}
   p: "Required<br>(exactly 1)"
   d: "The difficulty of the highest-height block in the best block chain"
 
+- n: "→<br>`mediantime`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.12.0*<br><br>The median time of the 11 blocks before the most recent block on the blockchain.  Used for validating transaction locktime under BIP113"
+  
 - n: "→<br>`verificationprogress`"
   t: "number (real)"
   p: "Required (exactly 1)"
@@ -60,9 +63,119 @@ The `getblockchaininfo` RPC {{summary_getBlockChainInfo}}
   p: "Required<br>(exactly 1)"
   d: "The estimated number of block header hashes checked from the genesis block to this block, encoded as big-endian hex"
 
+- n: "→<br>`pruned`"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.11.0*<br><br>Indicates if the blocks are subject to pruning"
+  
+- n: "→<br>`pruneheight`"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "*Added in Bitcoin Core 0.11.0*<br><br>The lowest-height complete block stored if prunning is activated"
+  
+- n: "→<br>`softforks`"
+  t: "array"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.12.0*<br><br>An array of objects each describing a current or previous soft fork"
+
+- n: "→ →<br>Softfork"
+  t: "object"
+  p: "Required<br>(3 or more)"
+  d: "A specific softfork"
+  
+- n: "→ → →<br>`id`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The name of the softfork"
+  
+- n: "→ → →<br>`version`"
+  t: "numeric<br>(int)"
+  p: "Required<br>(exactly 1)"
+  d: "The block version used for the softfork"
+  
+- n: "→ → →<br>`enforce`"
+  t: "string : object"
+  p: "Optional<br>(0 or 1)"
+  d: "The progress toward enforcing the softfork rules for new-version blocks"
+
+- n: "→ → → →<br>`status`"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "Indicates if the threshold was reached"
+  
+- n: "→ → → →<br>`found`"
+  t: "numeric<br>(int)"
+  p: "Optional<br>(0 or 1)"
+  d: "Number of blocks that support the softfork"
+  
+- n: "→ → → →<br>`required`"
+  t: "numeric<br>(int)"
+  p: "Optional<br>(0 or 1)"
+  d: "Number of blocks that are required to reach the threshold"
+
+- n: "→ → → →<br>`window`"
+  t: "numeric<br>(int)"
+  p: "Optional<br>(0 or 1)"
+  d: "The maximum size of examined window of recent blocks"
+
+- n: "→ → →<br>`reject`"
+  t: "object"
+  p: "Optional<br>(0 or 1)"
+  d: "The progress toward enforcing the softfork rules for new-version blocks"
+
+- n: "→ → → →<br>`status`"
+  t: "bool"
+  p: "Optional<br>(0 or 1)"
+  d: "Indicates if the threshold was reached"
+  
+- n: "→ → → →<br>`found`"
+  t: "numeric<br>(int)"
+  p: "Optional<br>(0 or 1)"
+  d: "Number of blocks that support the softfork"
+  
+- n: "→ → → →<br>`required`"
+  t: "numeric<br>(int)"
+  p: "Optional<br>(0 or 1)"
+  d: "Number of blocks that are required to reach the threshold"
+
+- n: "→ → → →<br>`window`"
+  t: "numeric<br>(int)"
+  p: "Optional<br>(0 or 1)"
+  d: "The maximum size of examined window of recent blocks"
+  
+- n: "→<br>`bip9_softforks`"
+  t: "object"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.12.1*<br><br>The status of BIP9 softforks in progress"
+  
+- n: "→ →<br>Name"
+  t: "string : object"
+  p: "Required<br>(2 or more)"
+  d: "A specific BIP9 softfork"
+  
+- n: "→ → →<br>`status`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "Set to one of the following reasons:<br>• `defined` if voting hasn't started yet<br>• `started` if the voting has started <br>• `locked_in` if the voting was successful but the softfort hasn't been activated yet<br>• `active` if the softfork was activated<br>• `failed` if the softfork has not receieved enough votes"
+  
+- n: "→ → →<br>`bit`"
+  t: "numeric<br>(int)"
+  p: "Optional<br>(0 or 1)"
+  d: "The bit (0-28) in the block version field used to signal this softfork.  Field is only shown when status is `started`"
+  
+- n: "→ → →<br>`startTime`"
+  t: "numeric<br>(int)"
+  p: "Required<br>(exactly 1)"
+  d: "The Unix epoch time when the softfork voting begins"
+  
+- n: "→ → →<br>`timeout`"
+  t: "numeric<br>(int)"
+  p: "Required<br>(exactly 1)"
+  d: "The Unix epoch time at which the deployment is considered failed if not yet locked in"
+  
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example from Bitcoin Core 0.13.1*
 
 {% highlight bash %}
 bitcoin-cli -testnet getblockchaininfo
@@ -72,13 +185,50 @@ Result:
 
 {% highlight json %}
 {
-    "chain" : "test",
-    "blocks" : 315280,
-    "headers" : 315280,
-    "bestblockhash" : "000000000ebb17fb455e897b8f3e343eea1b07d926476d00bc66e2c0342ed50f",
-    "difficulty" : 1.00000000,
-    "verificationprogress" : 1.00000778,
-    "chainwork" : "0000000000000000000000000000000000000000000000015e984b4fb9f9b350"
+  "chain": "main",
+  "blocks": 438737,
+  "headers": 438740,
+  "bestblockhash": "0000000000000000038c4b27ae0b591135bde8703ef53f6fa9aa5ec5f07db5a1",
+  "difficulty": 254620187304.0614,
+  "mediantime": 1479054813,
+  "verificationprogress": 0.9999893624230526,
+  "chainwork": "0000000000000000000000000000000000000000002e732c9db1d0bd82476ae6",
+  "pruned": false,
+  "softforks": [
+    {
+      "id": "bip34",
+      "version": 2,
+      "reject": {
+        "status": true
+      }
+    },
+    {
+      "id": "bip66",
+      "version": 3,
+      "reject": {
+        "status": true
+      }
+    },
+    {
+      "id": "bip65",
+      "version": 4,
+      "reject": {
+        "status": true
+      }
+    }
+  ],
+  "bip9_softforks": {
+    "csv": {
+      "status": "active",
+      "startTime": 1462060800,
+      "timeout": 1493596800
+    },
+    "segwit": {
+      "status": "defined",
+      "startTime": 1479168000,
+      "timeout": 1510704000
+    }
+  }
 }
 {% endhighlight %}
 

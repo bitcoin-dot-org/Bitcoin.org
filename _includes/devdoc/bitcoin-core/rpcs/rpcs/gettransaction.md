@@ -98,7 +98,7 @@ The `gettransaction` RPC {{summary_getTransaction}}
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example from Bitcoin Core 0.12.1*
 
 {% highlight bash %}
 bitcoin-cli -testnet gettransaction \
@@ -120,6 +120,7 @@ Result:
     ],
     "time" : 1396321351,
     "timereceived" : 1418924711,
+    "bip125-replaceable" : "no",
     "details" : [
         {
             "account" : "",

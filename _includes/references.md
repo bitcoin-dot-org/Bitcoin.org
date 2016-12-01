@@ -66,13 +66,16 @@ http://opensource.org/licenses/MIT.
 [wallet support]: /en/developer-reference#term-wallet-support "A Bitcoin Core ./configure option that enables (default) or disables the wallet"
 
 {% comment %}<!-- RPCs; alphabetical order -->{% endcomment %}
+[rpc abandontransaction]: /en/developer-reference#abandontransaction
 [rpc addmultisigaddress]: /en/developer-reference#addmultisigaddress
 [rpc addnode]: /en/developer-reference#addnode
 [rpc backupwallet]: /en/developer-reference#backupwallet
+[rpc clearbanned]: /en/developer-reference#clearbanned
 [rpc createmultisig]: /en/developer-reference#createmultisig
 [rpc createrawtransaction]: /en/developer-reference#createrawtransaction
 [rpc decoderawtransaction]: /en/developer-reference#decoderawtransaction
 [rpc decodescript]: /en/developer-reference#decodescript
+[rpc disconnectnode]: /en/developer-reference#disconnectnode
 [rpc dumpprivkey]: /en/developer-reference#dumpprivkey
 [rpc dumpwallet]: /en/developer-reference#dumpwallet
 [rpc encryptwallet]: /en/developer-reference#encryptwallet
@@ -89,6 +92,7 @@ http://opensource.org/licenses/MIT.
 [rpc getblockchaininfo]: /en/developer-reference#getblockchaininfo
 [rpc getblockcount]: /en/developer-reference#getblockcount
 [rpc getblockhash]: /en/developer-reference#getblockhash
+[rpc getblockheader]: /en/developer-reference#getblockheader
 [rpc getblocktemplate]: /en/developer-reference#getblocktemplate
 [rpc getchaintips]: /en/developer-reference#getchaintips
 [rpc getconnectioncount]: /en/developer-reference#getconnectioncount
@@ -122,6 +126,7 @@ http://opensource.org/licenses/MIT.
 [rpc keypoolrefill]: /en/developer-reference#keypoolrefill
 [rpc listaccounts]: /en/developer-reference#listaccounts
 [rpc listaddressgroupings]: /en/developer-reference#listaddressgroupings
+[rpc listbanned]: /en/developer-reference#listbanned
 [rpc listlockunspent]: /en/developer-reference#listlockunspent
 [rpc listreceivedbyaccount]: /en/developer-reference#listreceivedbyaccount
 [rpc listreceivedbyaddress]: /en/developer-reference#listreceivedbyaddress
@@ -137,6 +142,7 @@ http://opensource.org/licenses/MIT.
 [rpc sendrawtransaction]: /en/developer-reference#sendrawtransaction
 [rpc sendtoaddress]: /en/developer-reference#sendtoaddress
 [rpc setaccount]: /en/developer-reference#setaccount
+[rpc setban]: /en/developer-reference#setban
 [rpc setgenerate]: /en/developer-reference#setgenerate
 [rpc settxfee]: /en/developer-reference#settxfee
 [rpc signmessage]: /en/developer-reference#signmessage
