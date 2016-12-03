@@ -9,7 +9,7 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-<!-- reference tx (made by Satoshi in block 170): 
+<!-- reference tx (made by Satoshi in block 170):
     bitcoind decoderawtransaction $( bitcoind getrawtransaction f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16 )
 -->
 
@@ -338,7 +338,7 @@ or multiple Bitcoin addresses.
 
 ~~~
 Pubkey script: OP_DUP OP_HASH160 <PubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
-Signature script: <sig> <pubkey> 
+Signature script: <sig> <pubkey>
 ~~~
 
 #### Pay To Script Hash (P2SH)
@@ -589,7 +589,7 @@ hash types sign, including the procedure for inserting the subscript -->
 One thing all signature hash types sign is the transaction's [locktime][/en/glossary/locktime]{:#term-locktime}{:.term}.
 (Called nLockTime in the Bitcoin Core source code.)
 The locktime indicates the earliest time a transaction can be added to
-the block chain.  
+the block chain.
 
 Locktime allows signers to create time-locked transactions which will
 only become valid in the future, giving the signers a chance to change
@@ -645,23 +645,17 @@ enable locktime.
 
 {% autocrossref %}
 
-Transactions typically pay transaction fees based on the total byte size
-of the signed transaction.  The transaction fee is given to the
+Transactions pay fees based on the total byte size of the signed transaction. Fees per byte are calculated based on current demand for space in mined blocks with fees rising as demand increases.  The transaction fee is given to the
 Bitcoin miner, as explained in the [block chain section][section block chain], and so it is
 ultimately up to each miner to choose the minimum transaction fee they
 will accept.
 
-<!-- TODO: check: 50 KB or 50 KiB?  Not that transactors care... -->
+There is also a concept of so-called "[high-priority transactions][/en/glossary/high-priority-transaction]{:#term-high-priority-transactions}{:.term}" which spend satoshis that have not moved for a long time.
 
-By default, miners reserve 50 KB of each block for [high-priority
-transactions][/en/glossary/high-priority-transaction]{:#term-high-priority-transactions}{:.term} which spend satoshis that haven't been spent for a long
-time.  The remaining space in each block is typically allocated to transactions
-based on their fee per byte, with higher-paying transactions being added
-in sequence until all of the available space is filled.
+In the past, these "priority" transaction were often exempt from the normal fee requirements. Before Bitcoin Core 0.12, 50 KB of each block would be reserved for these high-priority transactions, however this is now set to 0 KB by default.  After the priority area, all transactions are prioritized based on their fee per byte, with higher-paying transactions being added in sequence until all of the available space is filled. <!-- Consider adding links to blockmaxsize and blockmaxweight options once available in the glossary. -->
 
-As of Bitcoin Core 0.9, transactions which do not count as high-priority transactions
-need to pay a [minimum fee][/en/glossary/minimum-relay-fee]{:#term-minimum-fee}{:.term} (currently 1,000 satoshis) to be
-broadcast across the network. Any transaction paying only the minimum fee
+As of Bitcoin Core 0.9, a [minimum fee][/en/glossary/minimum-relay-fee]{:#term-minimum-fee}{:.term} (currently 1,000 satoshis) has been required to
+broadcast a transaction across the network. Any transaction paying only the minimum fee
 should be prepared to wait a long time before there's enough spare space
 in a block to include it. Please see the [verifying payment section][section verifying payment]
 for why this could be important.
@@ -721,7 +715,7 @@ described below, with more general attacks hypothesized).
 2. Unique (non-reused) private keys protect against the second type of
    attack by only generating one signature per private key, so attackers
    never get a subsequent signature to use in comparison-based attacks.
-   Existing comparison-based attacks are only practical today when 
+   Existing comparison-based attacks are only practical today when
    insufficient entropy is used in signing or when the entropy used
    is exposed by some means, such as a
    [side-channel attack](https://en.wikipedia.org/wiki/Side_channel_attack).
@@ -786,4 +780,3 @@ always work is to ensure the reissued payment spends all of the same
 outputs that the lost transaction used as inputs.
 
 {% endautocrossref %}
-
