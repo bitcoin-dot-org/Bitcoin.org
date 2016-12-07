@@ -2,28 +2,40 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
-{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getrawmempool.md" %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getmempoolancestors.md" %}
 
-##### GetRawMemPool
+##### GetMemPoolAncestors
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getRawMemPool="returns all transaction identifiers (TXIDs) in the memory pool as a JSON array, or detailed information about each transaction in the memory pool as a JSON object." %}
+{% assign summary_getMemPoolAncestors="returns all in-mempool ancestors for a transaction in the mempool." %}
 
 {% autocrossref %}
 
-The `getrawmempool` RPC {{summary_getRawMemPool}}
+*Added in Bitcoin Core 0.13.0*
 
-*Parameter---desired output format*
+The `getmempoolancestors` RPC {{summary_getMemPoolAncestors}}
+
+*Parameter #1---a transaction identifier (TXID)*
+
+{% itemplate ntpd1 %}
+- n: "Address"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The address whose transactions should be tallied"
+
+{% enditemplate %}
+
+*Parameter #2---desired output format*
 
 {% itemplate ntpd1 %}
 - n: "Format"
   t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "Set to `true` to get verbose output describing each transaction in the memory pool; set to `false` (the default) to only get an array of TXIDs for transactions in the memory pool"
+  d: "Set to `true` to get json objects describing each transaction in the memory pool; set to `false` (the default) to only get an array of TXIDs"
 
 {% enditemplate %}
 
-*Result (format `false`)---an array of TXIDs*
+*Result---list of ancestor transactions*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
@@ -89,32 +101,32 @@ The `getrawmempool` RPC {{summary_getRawMemPool}}
 - n: "→ →<br>`descendantcount`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.12.0*<br><br>The number of in-mempool descendant transactions (including this one)"
+  d: "The number of in-mempool descendant transactions (including this one)"
 
 - n: "→ →<br>`descendantsize`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.12.0*<br><br>The size of in-mempool descendants (including this one)"
+  d: "The size of in-mempool descendants (including this one)"
 
 - n: "→ →<br>`descendantfees`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.12.0*<br><br>The modified fees (see `modifiedfee` above) of in-mempool descendants (including this one)"
+  d: "The modified fees (see `modifiedfee` above) of in-mempool descendants (including this one)"
 
 - n: "→ →<br>`ancestorcount`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.13.0*<br><br>The number of in-mempool ancestor transactions (including this one)"
+  d: "The number of in-mempool ancestor transactions (including this one)"
 
 - n: "→ →<br>`ancestorsize`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.13.0*<br><br>The size of in-mempool ancestors (including this one)"
+  d: "The size of in-mempool ancestors (including this one)"
 
 - n: "→ →<br>`ancestorfees`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.13.0*<br><br>The modified fees (see `modifiedfee` above) of in-mempool ancestors (including this one)"
+  d: "The modified fees (see `modifiedfee` above) of in-mempool ancestors (including this one)"
 
 - n: "→ →<br>`depends`"
   t: "array"
@@ -133,7 +145,8 @@ The `getrawmempool` RPC {{summary_getRawMemPool}}
 The default (`false`):
 
 {% highlight bash %}
-bitcoin-cli getrawmempool
+bitcoin-cli getmempoolancestors 52273e0ce6cf3452932cfbc1c517c0ce\
+1af1d255fda67a6e3bd63ba1d908c8c2
 {% endhighlight %}
 
 Result:
@@ -148,7 +161,8 @@ Result:
 Verbose output (`true`):
 
 {% highlight bash %}
-bitcoin-cli -testnet getrawmempool true
+bitcoin-cli getmempoolancestors 52273e0ce6cf3452932cfbc1c517c0ce\
+1af1d255fda67a6e3bd63ba1d908c8c2 true
 {% endhighlight %}
 
 Result:
@@ -194,8 +208,7 @@ Result:
 
 *See also*
 
-* [GetMemPoolInfo][rpc getmempoolinfo]: {{summary_getMemPoolInfo}}
-* [GetMemPoolEntry][rpc getmempoolentry]: {{summary_getMemPoolEntry}}
-* [GetTxOutSetInfo][rpc gettxoutsetinfo]: {{summary_getTxOutSetInfo}}
+* [GetMemPoolDescendants][rpc getmempooldescendants]: {{summary_getMemPoolDescendants}}
+* [GetRawMemPool][rpc getrawmempool]: {{summary_getRawMemPool}}
 
 {% endautocrossref %}

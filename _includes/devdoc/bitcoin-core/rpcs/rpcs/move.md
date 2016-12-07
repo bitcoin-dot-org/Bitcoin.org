@@ -15,6 +15,9 @@ http://opensource.org/licenses/MIT.
 
 The `move` RPC {{summary_move}}
 
+{{WARNING}} `move` will be removed in a later version of Bitcoin
+Core.  Use the RPCs listed in the See Also subsection below instead.
+
 {{WARNING}} it's allowed to move more funds than are in an account,
 giving the sending account a negative balance and giving the receiving
 account a balance that may exceed the number of bitcoins in the wallet

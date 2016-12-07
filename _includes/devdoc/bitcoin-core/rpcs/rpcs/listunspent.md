@@ -83,7 +83,7 @@ the *spendable* field in the results described below.
 - n: "→ →<br>`account`"
   t: "string"
   p: "Optional<br>(0 or 1)"
-  d: "If the address returned belongs to an account, this is the account.  Otherwise not returned"
+  d: "*Deprecated: will be removed in a later version of Bitcoin Core*<br><br>If the address returned belongs to an account, this is the account.  Otherwise not returned"
 
 - n: "→ →<br>`scriptPubKey`"
   t: "string (hex)"
@@ -109,10 +109,15 @@ the *spendable* field in the results described below.
   t: "bool"
   p: "Required<br>(exactly 1)"
   d: "*Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the private key or keys needed to spend this output are part of the wallet.  Set to `false` if not (such as for watch-only addresses)"
+  
+- n: "→ →<br>`solvable`"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>Set to `true` if the wallet knows how to spend this output.  Set to `false` if the wallet does not know how to spend the output.  It is ignored if the private keys are available "
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example from Bitcoin Core 0.13.1*
 
 Get all outputs confirmed at least 6 times for a particular
 address:
@@ -137,7 +142,8 @@ Result:
         "scriptPubKey" : "76a9140dfc8bafc8419853b34d5e072ad37d1a5159f58488ac",
         "amount" : 0.00010000,
         "confirmations" : 6210,
-        "spendable" : true
+        "spendable" : true,
+        "sovable" : true
     }
 ]
 {% endhighlight %}

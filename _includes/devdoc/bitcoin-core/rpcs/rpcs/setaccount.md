@@ -15,6 +15,9 @@ http://opensource.org/licenses/MIT.
 
 The `setaccount` RPC {{summary_setAccount}}
 
+{{WARNING}} `setaccount` will be removed in a later version of Bitcoin
+Core.  Use the RPCs listed in the See Also subsection below instead.
+
 *Parameter #1---a bitcoin address*
 
 {% itemplate ntpd1 %}

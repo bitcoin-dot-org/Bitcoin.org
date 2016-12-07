@@ -16,6 +16,9 @@ unencrypted wallet.*
 
 The `sendfrom` RPC {{summary_sendFrom}}
 
+{{WARNING}} `sendfrom` will be removed in a later version of Bitcoin
+Core.  Use the RPCs listed in the See Also subsection below instead.
+
 *Parameter #1---from account*
 
 {% itemplate ntpd1 %}

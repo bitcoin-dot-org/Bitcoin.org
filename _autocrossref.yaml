@@ -183,6 +183,8 @@ CVE-2012-2459:
 '`addmultisigaddress` RPC': rpc addmultisigaddress
 '`addnode`': rpc addnode
 '`addnode` RPC': rpc addnode
+'`addwitnessaddress`': rpc addwitnessaddress
+'`addwitnessaddress` RPC': rpc addwitnessaddress
 '`backupwallet`': rpc backupwallet
 '`backupwallet` RPC': rpc backupwallet
 '`clearbanned`': rpc clearbanned
@@ -207,8 +209,12 @@ CVE-2012-2459:
 '`estimatefee` RPC': rpc estimatefee
 '`estimatepriority`': rpc estimatepriority
 '`estimatepriority` RPC': rpc estimatepriority
+'`fundrawtransaction`': rpc fundrawtransaction
+'`fundrawtransaction` RPC': rpc fundrawtransaction
 '`generate`': rpc generate
 '`generate` RPC': rpc generate
+'`generatetoaddress`': rpc generatetoaddress
+'`generatetoaddress` RPC': rpc generatetoaddress
 '`getaccount`': rpc getaccount
 '`getaccount` RPC': rpc getaccount
 '`getaccountaddress`': rpc getaccountaddress
@@ -245,6 +251,12 @@ CVE-2012-2459:
 '`gethashespersec` RPC': rpc gethashespersec
 '`getinfo`': rpc getinfo
 '`getinfo` RPC': rpc getinfo
+'`getmempoolancestors`': rpc getmempoolancestors
+'`getmempoolancestors` RPC': rpc getmempoolancestors
+'`getmempooldescendants`': rpc getmempooldescendants
+'`getmempooldescendants` RPC': rpc getmempooldescendants
+'`getmempoolentry`': rpc getmempoolentry
+'`getmempoolentry` RPC': rpc getmempoolentry
 '`getmempoolinfo`': rpc getmempoolinfo
 '`getmempoolinfo` RPC': rpc getmempoolinfo
 '`getmininginfo`': rpc getmininginfo
@@ -289,6 +301,8 @@ CVE-2012-2459:
 '`importaddress` RPC': rpc importaddress
 '`importprivkey`': rpc importprivkey
 '`importprivkey` RPC': rpc importprivkey
+'`importprunedfunds`': rpc importprunedfunds
+'`importprunedfunds` RPC': rpc importprunedfunds
 '`importwallet`': rpc importwallet
 '`importwallet` RPC': rpc importwallet
 '`keypoolrefill`': rpc keypoolrefill
@@ -317,6 +331,8 @@ CVE-2012-2459:
 '`move` RPC': rpc move
 '`ping`': rpc ping
 '`ping` RPC': rpc ping
+'`removeprunedfunds`': rpc removeprunedfunds
+'`removeprunedfunds` RPC': rpc removeprunedfunds
 '`sendfrom`': rpc sendfrom
 '`sendfrom` RPC': rpc sendfrom
 '`sendheaders`': sendheaders message
@@ -338,6 +354,8 @@ CVE-2012-2459:
 '`settxfee` RPC': rpc settxfee
 '`signmessage`': rpc signmessage
 '`signmessage` RPC': rpc signmessage
+'`signmessagewithprivkey`': rpc signmessagewithprivkey
+'`signmessagewithprivkey` RPC': rpc signmessagewithprivkey
 '`signrawtransaction`': rpc signrawtransaction
 '`signrawtransaction` RPC': rpc signrawtransaction
 '`stop`': rpc stop

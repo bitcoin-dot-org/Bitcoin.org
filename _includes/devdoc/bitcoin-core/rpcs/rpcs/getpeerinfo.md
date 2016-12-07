@@ -41,7 +41,7 @@ The `getpeerinfo` RPC {{summary_getPeerInfo}}
 - n: "→ →<br>`addrlocal`"
   t: "string"
   p: "Optional<br>(0 or 1)"
-  d: "Our IP address and port number according to the remote node.  May be incorrect due to error or lying.  Many SPV nodes set this to `127.0.0.1:8333`"
+  d: "Our IP address and port number according to the remote node.  May be incorrect due to error or lying.  Most SPV nodes set this to `127.0.0.1:8333`"
 
 - n: "→ →<br>`services`"
   t: "string (hex)"
@@ -72,11 +72,21 @@ The `getpeerinfo` RPC {{summary_getPeerInfo}}
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "The Unix epoch time when we connected to this node"
+  
+- n: "→ →<br>`timeoffset`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.12.0*<br><br>The time offset in seconds"
 
 - n: "→ →<br>`pingtime`"
   t: "number (real)"
   p: "Required<br>(exactly 1)"
   d: "The number of seconds this node took to respond to our last P2P `ping` message"
+  
+- n: "→ →<br>`minping`"
+  t: "number (real)"
+  p: "Optional<br>(0 or 1)"
+  d: "*Updated in Bitcoin Core 0.13.0*<br><br>The minimum observed ping time (if any at all)"
 
 - n: "→ →<br>`pingwait`"
   t: "number (real)"
@@ -138,12 +148,33 @@ The `getpeerinfo` RPC {{summary_getPeerInfo}}
   p: "Required<br>(exactly 1)"
   d: "*Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the remote peer has been whitelisted; otherwise, set to `false`.  Whitelisted peers will not be banned if their ban score exceeds the maximum (100 by default).  By default, peers connecting from localhost are whitelisted"
 
+- n: "→ →<br>`bytessent_per_msg`"
+  t: "string : <br>object"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>Information about total sent bytes aggregated by message type"
+  
+- n: "→ → →<br>Message Type"
+  t: "number (int)"
+  p: "Required<br>(1 or more)"
+  d: "Total sent bytes aggregated by message type. One field for every used message type"
+  
+- n: "→ →<br>`bytesrecv_per_msg`"
+  t: "string : <br>object"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>Information about total received bytes aggregated by message type"
+  
+- n: "→ → →<br>Message Type"
+  t: "number (int)"
+  p: "Required<br>(1 or more)"
+  d: "Total received bytes aggregated by message type. One field for every used message type"
+
+ 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example from Bitcoin Core 0.13.1*
 
 {% highlight bash %}
-bitcoin-cli -testnet getpeerinfo
+bitcoin-cli getpeerinfo
 {% endhighlight %}
 
 Result (edited to show only a single entry, with IP addresses changed to
@@ -152,27 +183,46 @@ Result (edited to show only a single entry, with IP addresses changed to
 {% highlight json %}
 [
     {
-        "id" : 9,
-        "addr" : "192.0.2.113:18333",
-        "addrlocal" : "192.0.2.51:18333",
-        "services" : "0000000000000002",
-        "lastsend" : 1419277992,
-        "lastrecv" : 1419277992,
-        "bytessent" : 4968,
-        "bytesrecv" : 105078,
-        "conntime" : 1419265985,
-        "pingtime" : 0.05617800,
-        "version" : 70001,
-        "subver" : "/Satoshi:0.8.6/",
-        "inbound" : false,
-        "startingheight" : 315280,
-        "banscore" : 0,
-        "synced_headers" : -1,
-        "synced_blocks" : -1,
-        "inflight" : [
-        ],
-        "whitelisted" : false
+    "id": 3,
+    "addr": "192.0.2.113:43132",
+    "addrlocal": "127.0.0.1:8333",
+    "services": "0000000000000000",
+    "relaytxes": true,
+    "lastsend": 1481158534,
+    "lastrecv": 1481158534,
+    "bytessent": 142772,
+    "bytesrecv": 14167,
+    "conntime": 1481158420,
+    "timeoffset": 11,
+    "pingtime": 0.226368,
+    "minping": 0.226368,
+    "version": 70001,
+    "subver": "/Satoshi:0.12.1/",
+    "inbound": true,
+    "startingheight": 0,
+    "banscore": 0,
+    "synced_headers": -1,
+    "synced_blocks": -1,
+    "inflight": [
+    ],
+    "whitelisted": false,
+    "bytessent_per_msg": {
+      "addr": 55,
+      "inv": 12161,
+      "ping": 32,
+      "pong": 1824,
+      "tx": 128549,
+      "verack": 24,
+      "version": 127
+    },
+    "bytesrecv_per_msg": {
+      "getdata": 12161,
+      "ping": 1824,
+      "pong": 32,
+      "verack": 24,
+      "version": 126
     }
+  }
 ]
 {% endhighlight %}
 

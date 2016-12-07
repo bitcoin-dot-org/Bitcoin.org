@@ -1,4 +1,4 @@
-﻿{% comment %}
+{% comment %}
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
@@ -21,7 +21,7 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "Account"
   t: "string"
   p: "Optional<br>(0 or 1)"
-  d: "The name of an account to get transactinos from.  Use an empty string (\"\") to get transactions for the default account.  Default is `*` to get transactions for all accounts. The account feature is deprecated"
+  d: "*Deprecated: will be removed in a later version of Bitcoin Core*<br><br>The name of an account to get transactinos from.  Use an empty string (\"\") to get transactions for the default account.  Default is `*` to get transactions for all accounts."
 
 {% enditemplate %}
 
@@ -82,6 +82,11 @@ The `listtransactions` RPC {{summary_listTransactions}}
   p: "Required<br>(exactly 1)"
   d: "A negative bitcoin amount if sending payment; a positive bitcoin amount if receiving payment (including coinbases)"
 
+- n: "→ →<br>`label`"
+  t: "string"
+  p: "Optional<br>(0 or 1)"
+  d: "A comment for the address/transaction"  
+ 
 - n: "→ →<br>`vout`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
@@ -100,7 +105,7 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "→ →<br>`trusted`"
   t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "Indicates wether we consider the outputs of this unconfirmed transaction safe to spend.  The field is only visible for unconfirmed transactions"
+  d: "Indicates wether we consider the outputs of this unconfirmed transaction safe to spend.  Only returned for unconfirmed transactions"
 
 - n: "→ →<br>`generated`"
   t: "bool"
@@ -110,17 +115,17 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "→ →<br>`blockhash`"
   t: "string (hex)"
   p: "Optional<br>(0 or 1)"
-  d: "Only returned for confirmed transactions.  The hash of the block on the local best block chain which includes this transaction, encoded as hex in RPC byte order"
+  d: "The hash of the block on the local best block chain which includes this transaction, encoded as hex in RPC byte order.  Only returned for confirmed transactions"
 
 - n: "→ →<br>`blockindex`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "Only returned for confirmed transactions.  The block height of the block on the local best block chain which includes this transaction"
+  d: "The block height of the block on the local best block chain which includes this transaction.  Only returned for confirmed transactions"
 
 - n: "→ →<br>`blocktime`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "Only returned for confirmed transactions.  The block header time (Unix epoch time) of the block on the local best block chain which includes this transaction"
+  d: "The block header time (Unix epoch time) of the block on the local best block chain which includes this transaction.  Only returned for confirmed transactions"
 
 - n: "→ →<br>`txid`"
   t: "string (hex)"
@@ -160,28 +165,26 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "→ →<br>`otheraccount`"
   t: "string"
   p: "Optional<br>(0 or 1)"
-  d: "Only returned by *move* category payments.  This is the account the bitcoins were moved from or moved to, as indicated by a negative or positive *amount* field in this payment"
+  d: "This is the account the bitcoins were moved from or moved to, as indicated by a negative or positive *amount* field in this payment.  Only returned by *move* category payments"
 
 - n: "→ →<br>`bip125-replaceable`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "Indicates if a transaction is replaceable under BIP125:<br>• `yes` replaceable<br>• `no` not replaceable<br>• `unknown` for unconfirmed transactions not in the mempool"
+  d: "*Added in Bitcoin Core 0.12.0*<br><br>Indicates if a transaction is replaceable under BIP125:<br>• `yes` replaceable<br>• `no` not replaceable<br>• `unknown` for unconfirmed transactions not in the mempool"
   
 - n: "→ →<br>`abandoned`"
   t: "bool"
-  p: "Required<br>(exactly 1)"
-  d: "Indicates if a transaction is was abandoned:<br>• `yes` if it was abandoned (inputs are respendable)<br>• `no`  if it was not abandoned"
+  p: "Optional<br>(0 or 1)"
+  d: "*Added in Bitcoin Core 0.12.1*<br><br>Indicates if a transaction is was abandoned:<br>• `true` if it was abandoned (inputs are respendable)<br>• `false`  if it was not abandoned<br>Only returned by *send* category payments"
   
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.12.1*
+*Example from Bitcoin Core 0.13.1*
 
-List the most recent transaction from the account "someone else's
-address2" including watch-only addresses.
+List the most recent transaction from all accounts including watch-only addresses.
 
 {% highlight bash %}
-bitcoin-cli -testnet listtransactions \
-  "" 1 0 true
+bitcoin-cli listtransactions "*" 1 0 true
 {% endhighlight %}
 
 Result:
@@ -191,15 +194,16 @@ Result:
     {
         "involvesWatchonly" : true,
         "account" : "",
-        "address" : "n3GNqMveyvaPvUbH469vDRadqpJMPc84JA",
-        "category" : "receive",
-        "amount" : 0.00050000,
+        "address" : "1GeDA9rRpqaCdsdkTzGtbajt6jPvn3pg2N",
+        "category" : "send",
+        "amount" : -3.45902877,
         "vout" : 0,
-        "confirmations" : 34714,
-        "blockhash" : "00000000bd0ed80435fc9fe3269da69bb0730ebb454d0a29128a870ea1a37929",
-        "blockindex" : 11,
-        "blocktime" : 1411051649,
-        "txid" : "99845fd840ad2cc4d6f93fafb8b072d188821f55d9298772415175c456f3077d",
+        "fee" : -0.00032890,
+        "confirmations" : 29710,
+        "blockhash" : "0000000000000000008b9cb38cd3105e75af94b3af79d0a59cbe4edb618fb814",
+        "blockindex" : 1705,
+        "blocktime" : 1463173519,
+        "txid" : "9b32d4315ac4c5e0d3a5fb947b9a198d3641698badc820643a7df23081f99695e",
         "walletconflicts" : [
         ],
         "time" : 1418695703,

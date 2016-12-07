@@ -37,6 +37,16 @@ The `getnetworkinfo` RPC {{summary_getNetworkInfo}}
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "The protocol version number used by this node.  See the [protocol versions section][section protocol versions] for more information"
+  
+- n: "→<br>`localservices`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.10.0*<br><br>The services supported by this node as advertised in its `version` message"
+  
+- n: "→<br>`localrelay`"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>The services supported by this node as advertised in its `version` message"
 
 - n: "→<br>`timeoffset`"
   t: "number (int)"
@@ -47,21 +57,6 @@ The `getnetworkinfo` RPC {{summary_getNetworkInfo}}
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "The total number of open connections (both outgoing and incoming) between this node and other nodes"
-
-- n: "→<br>`proxy`"
-  t: "string"
-  p: "Required<br>(exactly 1)"
-  d: "The hostname/IP address and port number of the proxy, if set, or an empty string if unset"
-
-- n: "→<br>`relayfee`"
-  t: "number (bitcoins)"
-  p: "Required<br>(exactly 1)"
-  d: "The minimum fee a low-priority transaction must pay in order for this node to accept it into its memory pool"
-
-- n: "→<br>`localservices`"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>The services supported by this node as advertised in its `version` message"
 
 - n: "→<br>`networks`"
   t: "array"
@@ -92,85 +87,98 @@ The `getnetworkinfo` RPC {{summary_getNetworkInfo}}
   t: "string"
   p: "Required<br>(exactly 1)"
   d: "The hostname and port of any proxy being used for this network.  If a proxy is not in use, an empty string"
+  
+- n: "→ → →<br>`proxy_randomize_credentials`"
+  t: "bool"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.11.0*<br><br>Set to `true` if randomized credentials are set for this proxy. Otherwise set to `false`"
+  
+- n: "→<br>`relayfee`"
+  t: "number (bitcoins)"
+  p: "Required<br>(exactly 1)"
+  d: "The minimum fee a low-priority transaction must pay in order for this node to accept it into its memory pool"
 
-- n: "→ → →<br>`localaddresses`"
+- n: "→<br>`localaddresses`"
   t: "array"
   p: "Required<br>(exactly 1)"
   d: "An array of objects each describing the local addresses this node believes it listens on"
 
-- n: "→ → → →<br>Address"
+- n: "→ →<br>Address"
   t: "object"
   p: "Optional<br>(0 or more)"
   d: "An object describing a particular address this node believes it listens on"
 
-- n: "→ → → → →<br>`address`"
+- n: "→ → →<br>`address`"
   t: "string"
   p: "Required<br>(exactly 1)"
   d: "An IP address or .onion address this node believes it listens on.  This may be manually configured, auto detected, or based on `version` messages this node received from its peers"
 
-- n: "→ → → → →<br>`port`"
+- n: "→ → →<br>`port`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "The port number this node believes it listens on for the associated `address`.  This may be manually configured, auto detected, or based on `version` messages this node received from its peers"
 
-- n: "→ → → → →<br>`score`"
+- n: "→ → →<br>`score`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: >
-    The number of incoming connections during the uptime of this node
-    that have used this address in their `version` message
+  d: "The number of incoming connections during the uptime of this node that have used this address in their `version` message"
+  
+- n: "→<br>`warnings`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.11.0*<br><br>A plain-text description of any network warnings. If there are no warnings, an empty string will be returned. "
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example from Bitcoin Core 0.13.1*
 
 {% highlight bash %}
-bitcoin-cli -testnet getnetworkinfo
+bitcoin-cli getnetworkinfo
 {% endhighlight %}
 
 Result (actual addresses have been replaced with reserved addresses):
 
 {% highlight json %}
 {
-    "version" : 100000,
-    "subversion" : "/Satoshi:0.10.0/",
-    "protocolversion" : 70002,
-    "localservices" : "0000000000000001",
-    "timeoffset" : 0,
-    "connections" : 51,
-    "networks" : [
-        {
-            "name" : "ipv4",
-            "limited" : false,
-            "reachable" : true,
-            "proxy" : ""
-        },
-        {
-            "name" : "ipv6",
-            "limited" : false,
-            "reachable" : true,
-            "proxy" : ""
-        },
-        {
-            "name" : "onion",
-            "limited" : false,
-            "reachable" : false,
-            "proxy" : ""
-        }
-    ],
-    "relayfee" : 0.00001000,
-    "localaddresses" : [
-        {
-            "address" : "192.0.2.113",
-            "port" : 18333,
-            "score" : 6470
-        },
-        {
-            "address" : "0600:3c03::f03c:91ff:fe89:dfc4",
-            "port" : 18333,
-            "score" : 2029
-        }
-    ]
+  "version": 130100,
+  "subversion": "/Satoshi:0.13.1/",
+  "protocolversion": 70014,
+  "localservices": "000000000000000d",
+  "localrelay": true,
+  "timeoffset": -19,
+  "connections": 8,
+  "networks": [
+    {
+      "name": "ipv4",
+      "limited": false,
+      "reachable": true,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    }, 
+    {
+      "name": "ipv6",
+      "limited": false,
+      "reachable": true,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    }, 
+    {
+      "name": "onion",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    }
+  ],
+  "relayfee": 5000.00000000,
+  "localaddresses": [
+    {
+      "address": "0600:3c03::f03c:91ff:fe89:dfc4",
+      "port": 8333,
+      "score": 4
+    }
+  ],
+  "warnings": ""
 }
 {% endhighlight %}
 
