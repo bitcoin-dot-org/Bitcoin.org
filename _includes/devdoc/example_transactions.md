@@ -519,6 +519,15 @@ before, except now we have two inputs and two outputs.
              76a914fa5139067622fd7e1e722a05c17c2bb7d5fd6df088ac0\
              0000000",
     "complete" : false
+    "errors": [
+    {
+      "txid": "c53f8f5ac0b6b10cdc77f543718eb3880fee6cf9b5e0cbf4edb2a59c0fae09a4",
+      "vout": 0,
+      "scriptSig": "",
+      "sequence": 4294967295,
+      "error": "Operation not valid with the current stack size"
+    }
+  ]
 }
 {% endhighlight %}
 {% highlight bash %}
