@@ -41,7 +41,7 @@ All existing inputs must have their previous output transaction be in the wallet
   d: "The bitcoin address to receive the change. If not set, the address is chosen from address pool"
   
 - n: "→ <br>`changePosition`"
-  t: "nummeric <int>"
+  t: "nummeric (int)"
   p: "Optional<br>(0 or 1)"
   d: "The index of the change output. If not set, the change position is randomly chosen"
 
