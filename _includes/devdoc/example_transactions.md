@@ -768,6 +768,15 @@ subsections.
                  f0a29a3b000000001976a914012e2ba6a051c033b03d712\
                  ca2ea00a35eac1e7988ac00000000",
         "complete" : false
+        "errors": [
+    {
+      "txid": "d581f4363640aaa978e13179983da38965ab9aa33855769ec2f2cddf55f1b8e5",
+      "vout": 1,
+      "scriptSig": "",
+      "sequence": 4294967295,
+      "error": "Input not found or already spent"
+    }
+  ]
     }
 {% endhighlight %}
 </div>
@@ -840,7 +849,9 @@ broadcasts it.
 > bitcoin-cli -regtest sendrawtransaction $SIGNED_RAW_TX
 {% endhighlight %}
 {% highlight json %}
-error: {"code":-22,"message":"TX rejected"}
+error code: -25
+error message:
+Missing inputs
 {% endhighlight %}
 </div>
 
@@ -904,15 +915,15 @@ called m-of-n, and in this case we'll be using 2-of-3.
 
 {% highlight bash %}
     > bitcoin-cli -regtest getnewaddress
-    mhAXF4Eq7iRyvbYk1mpDVBiGdLP3YbY6Dm
+    mtJPvVFEe96hLdvR1xvzFLw8pzCU9TCEAj
     > bitcoin-cli -regtest getnewaddress
-    moaCrnRfP5zzyhW8k65f6Rf2z5QpvJzSKe
+    mgoj7G5yxkoa9H7pvsfQopu1izmcMZXojx
     > bitcoin-cli -regtest getnewaddress
-    mk2QpYatsKicvFVuTAQLBryyccRXMUaGHP
+    mx4VA2MeXurPT4Vu9CdWuLv6ERg9shJCMh
 
-    > NEW_ADDRESS1=mhAXF4Eq7iRyvbYk1mpDVBiGdLP3YbY6Dm
-    > NEW_ADDRESS2=moaCrnRfP5zzyhW8k65f6Rf2z5QpvJzSKe
-    > NEW_ADDRESS3=mk2QpYatsKicvFVuTAQLBryyccRXMUaGHP
+    > NEW_ADDRESS1=mtJPvVFEe96hLdvR1xvzFLw8pzCU9TCEAj
+    > NEW_ADDRESS2=mgoj7G5yxkoa9H7pvsfQopu1izmcMZXojx
+    > NEW_ADDRESS3=mx4VA2MeXurPT4Vu9CdWuLv6ERg9shJCMh
 {% endhighlight %}
 
 Generate three new P2PKH addresses. P2PKH addresses cannot be used with
@@ -934,19 +945,22 @@ redeem script. You must give them a full public key.
 {% endhighlight %}
 {% highlight json %}
 {
-    "isvalid" : true,
-    "address" : "mk2QpYatsKicvFVuTAQLBryyccRXMUaGHP",
-    "ismine" : true,
-    "isscript" : false,
-    "pubkey" : "029e03a901b85534ff1e92c43c74431f7ce72046060fcf7a\
-                95c37e148f78c77255",
-    "iscompressed" : true,
-    "account" : ""
+   "isvalid": true,
+  "address": "mx4VA2MeXurPT4Vu9CdWuLv6ERg9shJCMh",
+  "scriptPubKey": "76a914b578ab5639a260a162ec09f55d2b4b9ac4438cd288ac",
+  "ismine": true,
+  "iswatchonly": false,
+  "isscript": false,
+  "pubkey": "025fb485b712eed2b829fb672a6cf9e6724864854538e085bca8a0ff52a2b1688a",
+  "iscompressed": true,
+  "account": "",
+  "hdkeypath": "m/0'/0'/20'",
+  "hdmasterkeyid": "d55e3e0e01f9ef939d128e19463f1423f3c3be70"
 }
 {% endhighlight %}
 {% highlight bash %}
  
-> NEW_ADDRESS3_PUBLIC_KEY=029e03a901b85534ff1e92c43c74431f7ce720[...]
+> NEW_ADDRESS3_PUBLIC_KEY=025fb485b712eed2b829fb672a6cf9e[...]
 {% endhighlight %}
 </div>
 
@@ -969,17 +983,17 @@ We save the address returned to a shell variable.
 {% endhighlight %}
 {% highlight json %}
 {
-    "address" : "2N7NaqSKYQUeM8VNgBy8D9xQQbiA8yiJayk",
-    "redeemScript" : "522103310188e911026cf18c3ce274e0ebb5f95b00\
-    7f230d8cb7d09879d96dbeab1aff210243930746e6ed6552e03359db521b\
-    088134652905bd2d1541fa9124303a41e95621029e03a901b85534ff1e92\
-    c43c74431f7ce72046060fcf7a95c37e148f78c7725553ae"
+    "address" : "2NDBdBPDTWZzpB2ux1Yi5Kax5X8aRU64Sad",
+    "redeemScript" : "522102beff4219c05edfeed4eb4108b262451e9d0\
+    47213d7c46bceeb41bacc3d2ea072210236af23353d96beb80e963fa95a\
+    52899ecf98bc05e23ec9fbde5f1579d041990521025fb485b712eed2b82\
+    9fb672a6cf9e6724864854538e085bca8a0ff52a2b1688a53ae"
 }
 {% endhighlight %}
 {% highlight bash %}
  
-> P2SH_ADDRESS=2N7NaqSKYQUeM8VNgBy8D9xQQbiA8yiJayk
-> P2SH_REDEEM_SCRIPT=522103310188e911026cf18c3ce274e0ebb5f95b007[...]
+> P2SH_ADDRESS=2NDBdBPDTWZzpB2ux1Yi5Kax5X8aRU64Sad
+> P2SH_REDEEM_SCRIPT=522102beff4219c05edfeed4eb4108b262451e9d0[...]
 {% endhighlight %}
 </div>
 
@@ -1041,6 +1055,9 @@ We save that txid to a shell variable as the txid of the UTXO we plan to spend n
              04c84dcbaff8700000000",
     "txid" : "7278d7d030f042ebe633732b512bcb31fff14a697675a1fe18\
               84db139876e175",
+    "hash": "7278d7d030f042ebe633732b512bcb31fff14a697675a1fe1884[...]",
+    "size": 223,
+    "vsize": 223,
     "version" : 1,
     "locktime" : 0,
     "vin" : [
@@ -1180,6 +1197,15 @@ complex raw transaction].
              c973b000000001976a914b6f64f5bf3e38f25ead28817df7929\
              c06fe847ee88ac00000000",
     "complete" : false
+    "errors": [
+    {
+      "txid": "ab1155e60515dde5e6928bc19445f211ba9cca5b2681e78fd579b64639f33fb8",
+      "vout": 0,
+      "scriptSig": "0047304402201622e60cc1d6d47caa6c2326a8dafb6ad031c8e00215dfc8f55c94b5a609587302201795f3fc00b2b87b529e3ccefb7ad0b8017e63a653073d4ebfc75ade37b123de014c69522102beff4219c05edfeed4eb4108b262451e9d047213d7c46bceeb41bacc3d2ea072210236af23353d96beb80e963fa95a52899ecf98bc05e23ec9fbde5f1579d041990521025fb485b712eed2b829fb672a6cf9e6724864854538e085bca8a0ff52a2b1688a53ae",
+      "sequence": 4294967295,
+      "error": "Operation not valid with the current stack size"
+    }
+  ]
 }
 {% endhighlight %}
 {% highlight bash %}
