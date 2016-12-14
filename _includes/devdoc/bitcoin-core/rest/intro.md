@@ -14,7 +14,9 @@ an **unauthenticated** HTTP REST interface.  The interface runs on the
 same port as the JSON-RPC interface, by default port 8332 for mainnet and
 port 18332 for testnet. It must be enabled by either starting Bitcoin
 Core with the `-rest` option or by specifying `rest=1` in the
-configuration file.
+configuration file. Make sure that the RPC interface is also activated.
+Set `server=1` in `bitcoin.conf` or supply the `-server` argument when 
+starting the program.
 
 The interface is not intended for public access and is only accessible
 from localhost by default.

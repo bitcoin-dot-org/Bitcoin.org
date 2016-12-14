@@ -160,6 +160,11 @@ http://opensource.org/licenses/MIT.
 {% comment %}<!-- REST requests; alphabetical order -->{% endcomment %}
 [rest get block]: /en/developer-reference#get-block
 [rest get block-notxdetails]: /en/developer-reference#get-blocknotxdetails
+[rest get chaininfo]: /en/developer-reference#get-chaininfo
+[rest get getutxos]: /en/developer-reference#get-getutxos
+[rest get headers]: /en/developer-reference#get-headers
+[rest get mempool-contents]: /en/developer-reference#get-mempoolcontents
+[rest get mempool-info]: /en/developer-reference#get-mempoolinfo
 [rest get tx]: /en/developer-reference#get-tx
 
 {% comment %}<!-- P2P protocol messages; alphabetical order -->{% endcomment %}
