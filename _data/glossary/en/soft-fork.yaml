@@ -7,9 +7,12 @@ required:
     title_max_40_characters_no_formatting: Soft Fork, Soft-Forking Change
 
     summary_max_255_characters_no_formatting: >
-        A temporary fork in the block chain which commonly occurs when
-        miners using non-upgraded nodes violate a new consensus rule
-        their nodes don't know about.
+        A softfork is a change to the bitcoin protocol 
+        wherein only previously valid blocks/transactions 
+        are made invalid. Since old nodes will recognise 
+        the new blocks as valid, a softfork is backward-compatible. 
+        This kind of fork requires only a majority of the miners 
+        upgrading to enforce the new rules.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Soft fork
