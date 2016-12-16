@@ -9,10 +9,10 @@
   and click the *Watch* button to get notifications by email and on your
   GitHub home page.
 
-    Alternatively, email volunteer coordinator Dave Harding
-    <dave@dtrt.org> with a short list of your interests and skills, and
-    he'll email you when there's an issue or PR that could use your
-    attention.
+    Alternatively, email volunteer coordinators Will Binns
+    <will@cryptopelago.com> or Dave Harding <dave@dtrt.org> with a short list
+    of your interests and skills, and they will email you when there's an
+    issue or PR that could use your attention.
 
 * Help [write new documentation][] for the [developer
   documentation pages][] or [full node page][], or **review [PRs
