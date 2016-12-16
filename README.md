@@ -565,6 +565,7 @@ is the particular version:
 The following people can publish alerts on Bitcoin.org.  Their email
 addresses are on the linked GitHub profiles.
 
+- Will Binns, [@wbnns](https://github.com/wbnns), wbnns on Freenode
 - Saïvann Carignan, [@saivann](https://github.com/saivann), saivann on Freenode
 - Dave Harding, [@harding](https://github.com/harding), harding on Freenode
 - Wladimir van der Laan, [@laanwj](https://github.com/laanwj), wumpus on Freenode
