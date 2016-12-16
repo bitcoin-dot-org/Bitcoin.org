@@ -36,8 +36,8 @@
   the help of writers, editors, graphic artists, web designers, and anyone
   else to enhance Bitcoin.org's [current content][] or to add new
   content. See the **list of [recommended starter projects][]** or email
-  volunteer coordinator Dave Harding <dave@dtrt.org> to start a
-  conversation about how you can help Bitcoin.org.
+  volunteer coordinators Will Binns <will@cryptopelago.com> or Dave Harding <dave@dtrt.org>
+  to start a conversation about how you can help Bitcoin.org.
 
 You can always report problems or help improve bitcoin.org by opening a [new issue][] or [pull request][] on [GitHub][].
 
