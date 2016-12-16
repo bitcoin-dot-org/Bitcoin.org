@@ -767,8 +767,8 @@ Optional criteria (some could become requirements):
 
 *Before adding a wallet,* please make sure your wallet meets all of the
 Basic Requirements listed above, or open a [new issue][] to request an
-exemption or policy change. Feel free to email Dave Harding
-<dave@dtrt.org> if you have any questions.
+exemption or policy change. Feel free to email Will Binns <will@cryptopelago.com>
+or Dave Harding <dave@dtrt.org> if you have any questions.
 
 Wallets can be added in `_templates/choose-your-wallet.html`. Entries are ordered by levels and new wallets must be added after the last wallet on the same level.
 
