@@ -26,9 +26,7 @@
   help us [review wallet submissions][].
 
 * [Translate Bitcoin.org into another language][] using [Transifex][] or
-  help review new and updated translations. **Translation coordinator
-  needed** to answer translator questions and help process
-  reviews---email <dave@dtrt.org> for details.
+  help review new and updated translations.
 
 * Add Bitcoin events to the [events page][] either by [editing `_events.yml`][edit events]
   according to the [event instructions][] or by filling in a [pre-made
