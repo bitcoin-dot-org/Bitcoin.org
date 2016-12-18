@@ -15,7 +15,7 @@
     attention.
 
 * Help [write new documentation][] for the [developer
-  documentation pages][] or [upcoming full node page][], or **review [PRs
+  documentation pages][] or [full node page][], or **review [PRs
   adding new documentation][].** You don't need to be a Bitcoin expert
   to review a PR---these docs are written for non-experts, so we need to
   know if non-experts find them confusing or incomplete. If you review a
@@ -59,7 +59,7 @@ You can always report problems or help improve bitcoin.org by opening a [new iss
 [submit new wallets]: #adding-a-wallet
 [transifex]: https://www.transifex.com/projects/p/bitcoinorg/
 [translate Bitcoin.org into another language]: #how-to-translate
-[upcoming full node page]: https://github.com/bitcoin-dot-org/bitcoin.org/pull/711
+[full node page]: https://bitcoin.org/en/full-node
 [write new documentation]: #developer-documentation
 
 ### Working With GitHub
