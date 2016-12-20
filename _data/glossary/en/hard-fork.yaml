@@ -7,7 +7,7 @@ required:
     title_max_40_characters_no_formatting: Hard Fork, Hard-Forking Change
 
     summary_max_255_characters_no_formatting: >
-        A permanent divergence in the the block chain, commonly occurs
+        A permanent divergence in the block chain, commonly occurs
         when non-upgraded nodes can't validate blocks created by
         upgraded nodes that follow newer consensus rules.
 
