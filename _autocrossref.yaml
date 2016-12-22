@@ -27,6 +27,8 @@ DER-formatted: der
 ECDSA:
 epoch time: unix epoch time
 '`expires`': pp expires
+'`feefilter` message': feefilter message
+'`feefilter` messages': feefilter message
 fiat:
 '`filteradd` message': filteradd message
 '`filteradd` messages': filteradd message
