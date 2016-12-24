@@ -221,7 +221,7 @@ text:
   ##   such as: subsidy_in_decimal_bitcoins or
   ##   bitcoin_org_docs_maintainer_email_link
   subsidy_in_decimal_bitcoins: 25
-  chain_gb: 60
+  chain_gb: 100
   bitcoin_datadir_gb: 125
   bitcoin_datadir_gb_pruned: 5
   total_tx_count_in_millions: 100
