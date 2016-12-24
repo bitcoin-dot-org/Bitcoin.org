@@ -183,7 +183,7 @@ have an easy-to-use node.
   More hours would be better, and best of all would be if you can run
   your node continuously.
 
-    Note: many operating systems today (Windows, Mac, and Linux) enter a
+    **Note:** many operating systems today (Windows, Mac, and Linux) enter a
     low-power mode after the screensaver activates, slowing or halting
     network traffic. This is often the default setting on laptops and on
     all Mac OS X laptops and desktops. Check your screensaver settings
@@ -201,7 +201,7 @@ systems.
 
 ### Ubuntu 14.10
 
-*Instructions for Bitcoin Core 0.11.0.*
+*Instructions for Bitcoin Core 0.13.1.*
 
 If you use Ubuntu Desktop, click the Ubuntu swirl icon to start the Dash and type "term" into the
 input box. Choose any one of the terminals listed:
@@ -400,14 +400,14 @@ your reboot your computer.
 
 If you're an Ubuntu expert and want to use an init script instead, see
 [this Upstart
-script](https://github.com/bitcoin/bitcoin/tree/0.11/contrib/init/bitcoind.conf).
+script](https://github.com/bitcoin/bitcoin/tree/0.13/contrib/init/bitcoind.conf).
 </div>
 
 {{installFinished}}
 
 ### Other Linux Distributions
 
-*Instructions for Bitcoin Core 0.11.0.*
+*Instructions for Bitcoin Core 0.13.1.*
 
 The following instructions describe installing Bitcoin Core using tools
 available in most mainstream Linux distributions.  We assume you use a
@@ -437,9 +437,9 @@ followed by the argument `xzf` followed by the file name. The argument
 `xzf` means eXtract the gZipped tar archive File. For example, for a
 64-bit tar archive in your current directory, the command is:
 
-    tar xzf bitcoin-0.11.0-linux64.tar.gz
+    tar xzf bitcoin-0.13.1-linux64.tar.gz
 
-This will create the directory `bitcoin-0.11.0` within your current
+This will create the directory `bitcoin-0.13.1` within your current
 working directory. We will install the contents of its `bin`
 subdirectory into the `/usr/local/bin` directory using the the `install`
 command. The install command is part of the GNU coreutils available on
@@ -450,11 +450,11 @@ commands below to use a different location).
 If you use `sudo` to run commands as root, use the following command
 line:
 
-    sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.11.0/bin/*
+    sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.13.1/bin/*
 
 If you use `su` to run commands as root, use the following command line:
 
-    su -c 'install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.11.0/bin/*'
+    su -c 'install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.13.1/bin/*'
 
 <div class="box" markdown="1">
 *To continue, choose one of the following options*
@@ -622,7 +622,7 @@ you. On most distributions, this will cause Bitcoin Core daemon to be
 automatically started each time your reboot your computer.
 
 If you're a expert system administrator and want to use an init script instead, see
-[the init scripts directory in Bitcoin Core's source tree](https://github.com/bitcoin/bitcoin/tree/0.11/contrib/init).
+[the init scripts directory in Bitcoin Core's source tree](https://github.com/bitcoin/bitcoin/tree/0.13/contrib/init).
 </div>
 
 {{installFinished}}
@@ -634,7 +634,7 @@ If you're a expert system administrator and want to use an init script instead, 
 
 ### Windows 8.x
 
-*Instructions for Bitcoin Core 0.11.0 on Windows 8 and 8.1.*
+*Instructions for Bitcoin Core 0.13.1 on Windows 8 and 8.1.*
 
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
@@ -832,7 +832,7 @@ daemon will be automatically started.
 
 ### Windows 7
 
-*Instructions for Bitcoin Core 0.11.0.*
+*Instructions for Bitcoin Core 0.13.1.*
 
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
