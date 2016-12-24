@@ -199,7 +199,7 @@ have an easy-to-use node.
 The following instructions describe installing Bitcoin Core on Linux
 systems.
 
-### Ubuntu 14.10
+### Ubuntu 16.10
 
 *Instructions for Bitcoin Core 0.13.1.*
 
