@@ -141,9 +141,10 @@ full nodes and take special safety precautions. This document does not
 cover those precautions---it only describes running a full node to help
 support the Bitcoin network in general.
 
-Please [consult an expert](/en/community) if you need help setting up
-your full node correctly to handle high-value and privacy-sensitive
-tasks.
+Please seek out assistance in the [community](/en/community) if you need help
+setting up your full node correctly to handle high-value and privacy-sensitive
+tasks. Do your own diligence to ensure who you get help from is ethical,
+reputable and qualified to assist you.
 
 ### Secure Your Wallet
 
