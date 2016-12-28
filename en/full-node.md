@@ -220,9 +220,15 @@ Type the following line to add the Bitcoin Personal Package Archive
 You will be prompted for your user password.  Provide it to continue.
 Afterwards, the following text will be displayed:
 
-     Stable Channel of bitcoin-qt and bitcoind for Ubuntu, and their dependencies
+     Stable Channel of bitcoin-qt and bitcoind for Ubuntu, and their
+     dependencies
+
+     Note that you should prefer to use the official binaries, where possible, to
+     limit trust in Launchpad/the PPA owner.
+
+     No longer supports precise, due to its ancient gcc and Boost versions.
      More info: https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin
-    Press [ENTER] to continue or ctrl-c to cancel adding it
+     Press [ENTER] to continue or ctrl-c to cancel adding it
 
 Press enter to continue. The following text (with some variations) will
 be displayed and you will be returned to the command line prompt:
