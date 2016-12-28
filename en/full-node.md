@@ -517,45 +517,7 @@ want to run Bitcoin Core.  (This can be a locked account used only by
 Bitcoin Core.)  If you changed users in a graphical interface, start a
 terminal.
 
-Before using the Bitcoin Core daemon, `bitcoind`, you need to create its
-configuration file with a user name and password. First create the
-`.bitcoin` directory, create (touch) the file, and set the file's
-permissions so that only your user account can read it.  From your
-terminal or console, type:
-
-    mkdir ~/.bitcoin
-    touch ~/.bitcoin/bitcoin.conf
-    chmod 600 ~/.bitcoin/bitcoin.conf
-
-Then you can run the command `bitcoind`.  It will print output similar
-to this:
-
-    bitcoind
-    Error: To use the "-server" option, you must set a rpcpassword in the configuration file:
-    /home/bitcoinorg/.bitcoin/bitcoin.conf
-    It is recommended you use the following random password:
-    rpcuser=bitcoinrpc
-    rpcpassword=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    (you do not need to remember this password)
-    The username and password MUST NOT be the same.
-    If the file does not exist, create it with owner-readable-only file permissions.
-    It is also recommended to set alertnotify so you are notified of problems;
-    for example: alertnotify=echo %s | mail -s "Bitcoin Alert" admin@foo.com
-
-The "rpcpassword" displayed will be unique for your system.  You can
-copy the rpcuser and rpcpassword lines into your configuration file
-using the following commands.  Note that in many Linux terminals, you need
-to press Ctrl-Shift-C to copy and Ctrl-Shift-V to paste because Ctrl-C
-and Ctrl-V have different meanings in a Unix-style terminal.
-
-    echo rpcuser=bitcoinrpc >> ~/.bitcoin/bitcoin.conf
-    echo rpcpassword=XXXXXX >> ~/.bitcoin/bitcoin.conf
-
-(**Warning:** Don't use XXXXXX as your RPC password. Copy the
-rpcpassword displayed by bitcoind for your system.)
-
-Now you can start Bitcoin Core daemon for real.  Type the following
-command:
+Type the following command:
 
     bitcoind -daemon
 
