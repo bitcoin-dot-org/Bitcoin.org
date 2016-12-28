@@ -973,14 +973,6 @@ To clean up the directory we've been working in, run:
 
     rm -rf bitcoin-{{site.DOWNLOAD_VERSION}}*
 
-Before we can run bitcoind, we need to make sure that it has a place to store the blockchain and a config file that contains a username and password for the daemon. The commands below will set up your bitcoin directory and give bitcoind a default username and a random password (you do not need to remember the password for standard operation).
-
-    mkdir ~/Library/Application\ Support/Bitcoin
-    touch ~/Library/Application\ Support/Bitcoin/bitcoin.conf
-    chmod 600 ~/Library/Application\ Support/Bitcoin/bitcoin.conf
-    echo "rpcuser=bitcoinrpc" >> ~/Library/Application\ Support/Bitcoin/bitcoin.conf
-    echo "rpcpassword=$(cat /dev/urandom | env LC_CTYPE=C tr -dc a-zA-Z0-9 | head -c45)" >> ~/Library/Application\ Support/Bitcoin/bitcoin.conf
-
 You should now be able to start up your full node by running `bitcoind -daemon` in any Terminal window. If you need to stop bitcoind for any reason, the command is `bitcoin-cli stop`
 
 <div class="box" markdown="1">
