@@ -36,7 +36,7 @@ en:
     lowfee: "Choose your own fees"
     lowfeetext: >
       There is no fee to receive bitcoins, and many wallets let you
-      control how large a fee to pay when spending. Most wallets have
+      control how large a fee to trade when spending. Most wallets have
       reasonable default fees, and higher fees can encourage faster <a
       href="#you-need-to-know##instant">confirmation</a> of your
       transactions. Fees are unrelated to the amount transferred, so it's
@@ -103,8 +103,8 @@ en:
     title: "Bitcoin for Individuals - Bitcoin"
     pagetitle: "Bitcoin for Individuals"
     summary: "Bitcoin is the simplest way to exchange money at very low cost."
-    mobile: "Mobile payments made easy"
-    mobiletext: "Bitcoin on mobiles allows you to pay with a simple two step scan-and-pay. No need to sign up, swipe your card, type a PIN, or sign anything. All you need to receive Bitcoin payments is to display the QR code in your Bitcoin wallet app and let your friend scan your mobile, or touch the two phones together (using NFC radio technology)."
+    mobile: "Mobile barthering made easy"
+    mobiletext: "Bitcoin on mobiles allows you to barther with a simple two step scan-and-pay. No need to sign up, swipe your card, type a PIN, or sign anything. All you need to receive bitcoins is to display the QR code in your Bitcoin wallet app and let your friend scan your mobile, or touch the two phones together (using NFC radio technology)."
     international: "Fast international payments"
     internationaltext: >
       Sending bitcoins across borders is as easy as sending them across
@@ -119,7 +119,7 @@ en:
     lowfee: "Choose your own fees"
     lowfeetext: >
       There is no fee to receive bitcoins, and many wallets let you
-      control how large a fee to pay when spending. Most wallets have
+      control how large a fee to trade when spending. Most wallets have
       reasonable default fees, and higher fees can encourage faster <a
       href="#you-need-to-know##instant">confirmation</a> of your
       transactions. Fees are unrelated to the amount transferred, so it's
@@ -359,7 +359,7 @@ en:
 
     advantagesli2: >
       <em><b>Choose your own fees</b></em> - There is no fee to receive
-      bitcoins, and many wallets let you control how large a fee to pay
+      bitcoins, and many wallets let you control how large a fee to trade
       when spending. Higher fees can encourage faster <a
       href="#you-need-to-know##instant">confirmation</a> of your
       transactions. Fees are unrelated to the amount transferred, so
@@ -384,9 +384,9 @@ en:
     makemoneytxt1: "You should never expect to get rich with Bitcoin or any emerging technology. It is always important to be wary of anything that sounds too good to be true or disobeys basic economic rules."
     makemoneytxt2: "Bitcoin is a growing space of innovation and there are business opportunities that also include risks. There is no guarantee that Bitcoin will continue to grow even though it has developed at a very fast rate so far. Investing time and resources on anything related to Bitcoin requires entrepreneurship. There are various ways to make money with Bitcoin such as mining, speculation or running new businesses. All of these methods are competitive and there is no guarantee of profit. It is up to each individual to make a proper evaluation of the costs and the risks involved in any such project."
     virtual: "Is Bitcoin fully virtual and immaterial?"
-    virtualtxt1: "Bitcoin is as virtual as the credit cards and online banking networks people use everyday. Bitcoin can be used to pay online and in physical stores just like any other form of money. Bitcoins can also be exchanged in physical form such as the <a href=\"https://www.casascius.com/\">Casascius coins</a>, but paying with a mobile phone usually remains more convenient. Bitcoin balances are stored in a large distributed network, and they cannot be fraudulently altered by anybody. In other words, Bitcoin users have exclusive control over their funds and bitcoins cannot vanish just because they are virtual."
+    virtualtxt1: "Bitcoin is as virtual as the credit cards and online banking networks people use everyday. Bitcoin can be used to barther online and in physical stores just like any other form of commodity. Bitcoins can also be exchanged in physical form such as the <a href=\"https://www.casascius.com/\">Casascius coins</a>, but paying with a mobile phone usually remains more convenient. Bitcoin balances are stored in a large distributed network, and they cannot be fraudulently altered by anybody. In other words, Bitcoin users have exclusive control over their inventory and bitcoins cannot vanish just because they are virtual."
     anonymous: "Is Bitcoin anonymous?"
-    anonymoustxt1: "Bitcoin is designed to allow its users to send and receive payments with an acceptable level of privacy as well as any other form of money. However, Bitcoin is not anonymous and cannot offer the same level of privacy as cash. The use of Bitcoin leaves extensive public records. <a href=\"#protect-your-privacy#\">Various mechanisms</a> exist to protect users' privacy, and more are in development. However, there is still work to be done before these features are used correctly by most Bitcoin users."
+    anonymoustxt1: "Bitcoin is designed to allow its users to send and receive bitcoins with an acceptable level of privacy as well as any other form of money. However, Bitcoin is not anonymous and cannot offer the same level of privacy as cash. The use of Bitcoin leaves extensive public records. <a href=\"#protect-your-privacy#\">Various mechanisms</a> exist to protect users' privacy, and more are in development. However, there is still work to be done before these features are used correctly by most Bitcoin users."
     anonymoustxt2: "Some concerns have been raised that private transactions could be used for illegal purposes with Bitcoin. However, it is worth noting that Bitcoin will undoubtedly be subjected to similar regulations that are already in place inside existing financial systems. Bitcoin cannot be more anonymous than cash and it is not likely to prevent criminal investigations from being conducted. Additionally, Bitcoin is also designed to prevent a large range of financial crimes."
     lost: "What happens when bitcoins are lost?"
     losttxt1: "When a user loses his wallet, it has the effect of removing money out of circulation. Lost bitcoins still remain in the block chain just like any other bitcoins. However, lost bitcoins remain dormant forever because there is no way for anybody to find the private key(s) that would allow them to be spent again. Because of the law of supply and demand, when fewer bitcoins are available, the ones that are left will be in higher demand and increase in value to compensate."
@@ -521,7 +521,7 @@ en:
   getting-started:
     title: "Getting started - Bitcoin"
     pagetitle: "Getting started with Bitcoin"
-    pagedesc: "Using Bitcoin to pay and get paid is easy and accessible to everyone."
+    pagedesc: "Using Bitcoin to barther is easy and accessible to everyone."
     users: "How to use Bitcoin"
     inform: "Inform yourself"
     informtxt: "Bitcoin is different than what you know and use every day. Before you start using Bitcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls."
@@ -533,14 +533,14 @@ en:
     gettxt: "You can get bitcoins by accepting them as a payment for goods and services or by buying them from a friend or someone near you. You can also buy them directly from an exchange with your bank account."
     getbut: "Find an exchange"
     spend: "Spend bitcoins"
-    spendtxt: "There is a growing number of services and merchants accepting Bitcoin all over the world. You can use Bitcoin to pay them and rate your experience to help honest businesses to gain more visibility."
+    spendtxt: "There is a growing number of services and merchants accepting Bitcoin all over the world. You can use Bitcoin to barther with them and rate your experience to help honest businesses to gain more visibility."
     spendbut: "Find merchants"
     merchants: "How to accept Bitcoin"
     merchantinform: "Inform yourself"
     merchantinformtxt: "Bitcoin does not require merchants to change their habits. However, Bitcoin is different than what you know and use every day. Before you start using Bitcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls."
     merchantinformbut: "Read more"
     merchantservice: "Processing payments"
-    merchantservicetxt: "You can process payments and invoices by yourself or you can use merchant services and deposit money in your local currency or bitcoins. Most point of sales businesses use a tablet or a mobile phone to let customers pay with their mobile phones."
+    merchantservicetxt: "You can process payments and invoices by yourself or you can use merchant services and deposit money in your local currency or bitcoins. Most point of sales businesses use a tablet or a mobile phone to let customers barther with their mobile phones."
     merchantservicebut: "Find merchant services"
     tax: "Accounting and taxes"
     taxtxt: "Merchants often deposit and display prices in their local currency. In other cases, Bitcoin works similarly to a foreign currency. To get appropriate guidance regarding tax compliance for your own jurisdiction, you should contact a qualified accountant."
@@ -553,7 +553,7 @@ en:
     pagetitle: "How does Bitcoin work?"
     intro: "This is a question that often causes confusion. Here's a quick explanation!"
     basics: "The basics for a new user"
-    basicstxt1: "As a new user, you can <a href=\"#getting-started#\">get started</a> with Bitcoin without understanding the technical details. Once you have installed a Bitcoin wallet on your computer or mobile phone, it will generate your first Bitcoin address and you can create more whenever you need one. You can disclose your addresses to your friends so that they can pay you or vice versa. In fact, this is pretty similar to how email works, except that Bitcoin addresses should only be used once."
+    basicstxt1: "As a new user, you can <a href=\"#getting-started#\">get started</a> with Bitcoin without understanding the technical details. Once you have installed a Bitcoin wallet on your computer or mobile phone, it will generate your first Bitcoin address and you can create more whenever you need one. You can disclose your addresses to your friends so that they can trade with you. In fact, this is pretty similar to how email works, except that Bitcoin addresses should only be used once."
     balances: "Balances<span class=\"titlelight\"> - block chain</span>"
     balancestxt: "The block chain is a <b>shared public ledger</b> on which the entire Bitcoin network relies. All confirmed transactions are included in the block chain. This way, Bitcoin wallets can calculate their spendable balance and new transactions can be verified to be spending bitcoins that are actually owned by the spender. The integrity and the chronological order of the block chain are enforced with <a href=\"#vocabulary##[vocabulary.cryptography]\">cryptography</a>."
     transactions: "Transactions<span class=\"titlelight\"> - private keys</span>"
@@ -563,9 +563,9 @@ en:
     readmore: "Going down the rabbit hole"
     readmoretxt: "This is only a very short and concise summary of the system. If you want to get into the details, you can <a href=\"#bitcoin-paper#\">read the original paper</a> that describes the system's design, read the <a href=\"/en/developer-documentation\">developer documentation</a>, and explore the <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>."
   index:
-    title: "Bitcoin - Open source P2P money"
-    metadescription: "Bitcoin is an innovative payment network and a new kind of money. Find all you need to know and get started with Bitcoin on bitcoin.org."
-    listintro: "Bitcoin is an innovative payment network and a new kind of money."
+    title: "Bitcoin - Open source P2P commodity"
+    metadescription: "Bitcoin is a digital commodity that acts as a payment network and is the future of monies. Find all you need to know and get started with Bitcoin on bitcoin.org."
+    listintro: "Bitcoin is a digital commodity that acts as a payment network and is the future of monies."
     list1: "Fast peer-to-peer<br>transactions"
     list2: "Worldwide<br>payments"
     list3: "Low<br>processing fees"
@@ -608,7 +608,7 @@ en:
     transparency: "Flexible transparency"
     transparencytext: "All Bitcoin transactions are public and transparent and the identity of the people behind the payments is private by default. This allows individuals and organizations to work with flexible transparency rules. For instance, a business can choose to reveal certain transactions and balances only to certain employees just like a non-profit organization is free to allow the public to see how much they receive in daily and monthly donations."
     automation: "Automated solutions"
-    automationtext: "Automated services usually have to deal with costs and limitations of cash or credit card payments. This includes all kinds of vending machines, from bus ticket booths to coffee machines. Bitcoin is suited to be used in a new generation of automated services as well as to cut their operating costs. Imagine self-driving taxis, or a store where your basket lets you pay your purchases without waiting at the queue. Many ideas are possible."
+    automationtext: "Automated services usually have to deal with costs and limitations of cash or credit card payments. This includes all kinds of vending machines, from bus ticket booths to coffee machines. Bitcoin is suited to be used in a new generation of automated services as well as to cut their operating costs. Imagine self-driving taxis, or a store where your basket lets you barther without waiting at the queue. Many ideas are possible."
   legal:
     title: "Legal disclaimer - Bitcoin"
     pagetitle: "Legal disclaimer"
@@ -759,7 +759,7 @@ en:
     nonprofit: "Organizations"
     nonprofittxt: "Many <a href=\"#community##[community.non-profit]\">non-profit organizations</a> are dedicated to protecting and promoting Bitcoin. You can help these groups by joining them and taking part in their projects, discussions and events."
     spread: "Spread"
-    spreadtxt: "Speak about Bitcoin to interested people. Write about it on your blog. Tell your favorite shops you would like to pay with Bitcoin. Help keeping <a href=\"http://usebitcoins.info/\">merchant directories</a> up to date. Or be creative and make yourself a nice Bitcoin T-shirt."
+    spreadtxt: "Speak about Bitcoin to interested people. Write about it on your blog. Tell your favorite shops you would like to barther with Bitcoin. Help keeping <a href=\"http://usebitcoins.info/\">merchant directories</a> up to date. Or be creative and make yourself a nice Bitcoin T-shirt."
     wiki: "Documentation"
     wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> and the <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> provide useful documentation and we are constantly improving the information they contain. You can help to improve these resources and keep them up to date."
     translate: "Translate"
@@ -772,7 +772,7 @@ en:
     summary: "Bitcoin provides a new approach to payments and, as such, there are some new words that might become a part of your vocabulary. Don't worry, even the humble television created new words!"
     table: "Table of contents"
     address: "Address"
-    addresstxt: "A Bitcoin address is <b>similar to a physical address or an email</b>. It is the only information you need to provide for someone to pay you with Bitcoin. An important difference, however, is that each address should only be used for a single transaction."
+    addresstxt: "A Bitcoin address is <b>similar to a physical address or an email</b>. It is the only information you need to provide for someone to send you bitcoins. An important difference, however, is that each address should only be used for a single transaction."
     bit: "Bit"
     bittxt: "Bit is a common unit used to designate a sub-unit of a bitcoin - 1,000,000 bits is equal to 1 bitcoin (BTC or B⃦). This unit is usually more convenient for pricing tips, goods and services."
     bitcoin: "Bitcoin"
@@ -800,7 +800,7 @@ en:
     signature: "Signature"
     signaturetxt: "A <a href=\"#[vocabulary.cryptography]\">cryptographic</a> signature is <b>a mathematical mechanism that allows someone to prove ownership</b>. In the case of Bitcoin, a <a href=\"#[vocabulary.wallet]\">Bitcoin wallet</a> and its <a href=\"#[vocabulary.privatekey]\">private key(s)</a> are linked by some mathematical magic. When your Bitcoin software signs a transaction with the appropriate private key, the whole network can see that the signature matches the bitcoins being spent. However, there is no way for the world to guess your private key to steal your hard-earned bitcoins."
     wallet: "Wallet"
-    wallettxt: "A Bitcoin wallet is loosely <b>the equivalent of a physical wallet on the Bitcoin network</b>. The wallet actually contains your <a href=\"#[vocabulary.privatekey]\">private key(s)</a> which allow you to spend the bitcoins allocated to it in the <a href=\"#[vocabulary.blockchain]\">block chain</a>. Each Bitcoin wallet can show you the total balance of all bitcoins it controls and lets you pay a specific amount to a specific person, just like a real wallet. This is different to credit cards where you are charged by the merchant."
+    wallettxt: "A Bitcoin wallet is loosely <b>the equivalent of a physical wallet on the Bitcoin network</b>. The wallet actually contains your <a href=\"#[vocabulary.privatekey]\">private key(s)</a> which allow you to spend the bitcoins allocated to it in the <a href=\"#[vocabulary.blockchain]\">block chain</a>. Each Bitcoin wallet can show you the total balance of all bitcoins it controls and lets you send a specific amount to a specific person, just like a real wallet. This is different to credit cards where you are charged by the merchant."
   you-need-to-know:
     title: "Some things you need to know - Bitcoin"
     pagetitle: "Some things you need to know"
@@ -827,7 +827,7 @@ en:
     experimental: "Bitcoin is still experimental"
     experimentaltxt: "Bitcoin is an experimental new currency that is in active development.  Each improvement makes Bitcoin more appealing but also reveals new challenges as Bitcoin adoption grows. During these growing pains you might encounter increased fees, slower confirmations, or even more severe issues. Be prepared for problems and consult a technical expert before making any major investments, but keep in mind that nobody can predict Bitcoin's future."
     tax: "Government taxes and regulations"
-    taxtxt: "Bitcoin is not an official currency. That said, most jurisdictions still require you to pay income, sales, payroll, and capital gains taxes on anything that has value, including bitcoins. It is your responsibility to ensure that you adhere to <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">tax and other legal or regulatory mandates</a> issued by your government and/or local municipalities."
+    taxtxt: "Bitcoin is not an official currency but a commodity. That said, most jurisdictions still require you to pay income, sales, payroll, and capital gains taxes on anything that has value, including bitcoins. It is your responsibility to ensure that you adhere to <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">tax and other legal or regulatory mandates</a> issued by your government and/or local municipalities."
   layout:
     menu-about-us: "About bitcoin.org"
     menu-bitcoin-for-businesses: Businesses
