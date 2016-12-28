@@ -405,7 +405,7 @@ followed by the argument `xzf` followed by the file name. The argument
 `xzf` means eXtract the gZipped tar archive File. For example, for a
 64-bit tar archive in your current directory, the command is:
 
-    tar xzf bitcoin-0.13.1-linux64.tar.gz
+    tar xzf bitcoin-0.13.1-x86_64-linux-gnu.tar.gz
 
 This will create the directory `bitcoin-0.13.1` within your current
 working directory. We will install the contents of its `bin`
