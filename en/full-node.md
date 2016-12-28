@@ -674,45 +674,6 @@ following at the command prompt:
 
     C:\Program Files\Bitcoin\daemon\bitcoind -daemon
 
-It will display an error message similar to the one below:
-
-    Error: To use the bitcoind or the "-server" option to bitcoin-qt,
-    you must set a rpcpassword in the configuration file:
-    C:\Users\Example\AppData\Roaming\Bitcoin\bitcoin.conf
-    It is recommended you use the following random password:
-    rpcuser=bitcoinrpc
-    rpcpassword=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    (you do not need to remember this password)
-    The username and password MUST NOT be the same.
-    If the file does not exist, create it with owner-readable-only file permissions.
-
-    It is also recommended to set alertnotify so you are notified of problems;
-    for example: alertnotify=echo %s | mail -s "Bitcoin Alert" admin@foo.com
-
-Pay attention to these particular lines:
-
-    C:\Users\<YOUR USER NAME>\AppData\Roaming\Bitcoin\bitcoin.conf
-    [...]
-    rpcuser=bitcoinrpc
-    rpcpassword=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-The first line will actually have your username. The later two lines
-will include a randomly-generated password that you will need
-to copy and paste.  (Do not use XXXXXXX.)
-
-Leave the command prompt window open and start File Explorer.
-In File Explorer, open the directory indicated in the message
-(`C:\Users\<YOUR USER NAME>\AppData\Roaming\Bitcoin`), right-click on
-the File Explorer window and choose New → Text file.  Name the file
-`bitcoin.conf` and then right-click on it and choose to open it in
-Notepad or your preferred text editor.
-
-In the command prompt, copy the `rpcuser` and `rpcpassword` lines.
-Paste them into the text editor and then save and close the file.
-By default, you shouldn't need to change the file permissions.
-
-Return to the command prompt and press the Up arrow key to get the
-previous command (ending in `bitcoind -daemon`) and run it again.
 Bitcoin Core daemon should start and print a message that Bitcoin Core is starting.
 
 To interact with Bitcoin Core daemon, you will use the command
@@ -870,39 +831,7 @@ If you installed the Bitcoin Core into the default directory, type the following
 
     C:\Program Files\Bitcoin\daemon\bitcoind -daemon
 
-It will display an error message similar to the one below :
-
-    Error: To use the bitcoind or the "-server" option to bitcoin-qt,
-    you must set a rpcpassword in the configuration file:
-    C:\Users\Example\AppData\Roaming\Bitcoin\bitcoin.conf
-    It is recommended you use the following random password:
-    rpcuser=bitcoinrpc
-    rpcpassword=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    (you do not need to remember this password)
-    The username and password MUST NOT be the same.
-    If the file does not exist, create it with owner-readable-only file permissions.
-
-    It is also recommended to set alertnotify so you are notified of problems;
-    for example: alertnotify=echo %s | mail -s "Bitcoin Alert" admin@foo.com
-
-Pay attention to these particular lines:
-
-    C:\Users\<YOUR USER NAME>\AppData\Roaming\Bitcoin\bitcoin.conf
-    [...]
-    rpcuser=bitcoinrpc
-    rpcpassword=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-The first line will actually have your username. The later two lines will include a randomly-generated password that you will need to copy and paste. (Do not use XXXXXXX.)
-
-Leave the command prompt window open and start File Explorer. In File Explorer, open the directory indicated in the message (`C:\Users\Example\AppData\Roaming\Bitcoin\bitcoin.conf`), right-click on the File Explorer window and choose New → Text file. Name the file `bitcoin.conf` and then right-click on it and choose to open it in Notepad or your preferred text editor.
-
-In the command prompt, copy the `rpcuser` and `rpcpassword` lines. Paste them into the text editor and then save and close the file. By default, you shouldn’t need to change the file permissions.
-
-    rpcuser=bitcoinrpc
-    rpcpassword=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-
-Return to the command prompt and press the Up arrow key to get the previous command (ending in `bitcoind -daemon`) and run it again. Bitcoin Core daemon should start.
+Bitcoin Core daemon should start.
 
 You can now try using Bitcoin Cli Utility.
 
