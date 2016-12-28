@@ -576,14 +576,11 @@ Bitcoin Core installer to your desktop.
 {{verifyReleaseSignatures}}
 
 After downloading the file to your desktop or your Downloads folder
-(`C:\Users\<YOUR USER NAME>\Downloads`), run it by double-clicking
-its icon. Windows will ask you to confirm that you want to run it:
-
-![UAC Prompt to install](/img/full-node/en-uac-run-installer.png)
-
-The Bitcoin installer will start.  It's a typical Windows installer, and
-it will guide you through the decisions you need to make about where to
-install Bitcoin Core.
+(`C:\Users\<YOUR USER NAME>\Downloads`), run it by double-clicking its icon.
+Windows will ask you to confirm that you want to run it. Click Yes and the
+Bitcoin installer will start.  It's a typical Windows installer, and it will
+guide you through the decisions you need to make about where to install Bitcoin
+Core.
 
 ![Windows 7 installer start](/img/full-node/en-win7-installer-start.png)
 
@@ -735,14 +732,11 @@ Bitcoin Core installer to your desktop.
 {{verifyReleaseSignatures}}
 
 After downloading the file to your desktop or your Downloads folder
-(`C:\Users\<YOUR USER NAME>\Downloads`), run it by double-clicking
-its icon. Windows will ask you to confirm that you want to run it:
-
-![UAC Prompt to install](/img/full-node/en-uac-run-installer.png)
-
-The Bitcoin installer will start.  It's a typical Windows installer, and
-it will guide you through the decisions you need to make about where to
-install Bitcoin Core.
+(`C:\Users\<YOUR USER NAME>\Downloads`), run it by double-clicking its icon.
+Windows will ask you to confirm that you want to run it. Click Yes and the
+Bitcoin installer will start.  It's a typical Windows installer, and it will
+guide you through the decisions you need to make about where to install Bitcoin
+Core.
 
 ![Windows 7 installer start](/img/full-node/en-win7-installer-start.png)
 
