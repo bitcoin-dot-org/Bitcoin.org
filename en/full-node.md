@@ -887,7 +887,7 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 
 ### Mac OS X Yosemite 10.10.x
 
-*Instructions for Bitcoin Core 0.11.0 on Mac OS X Yosemite*
+*Instructions for Bitcoin Core 0.13.1 on Mac OS X Yosemite*
 
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
