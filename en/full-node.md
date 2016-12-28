@@ -293,7 +293,7 @@ you want to use, click Ok to use the default.
 ![Bitcoin-Qt Welcome](/img/full-node/en-bitcoin-qt-welcome.png)
 
 Bitcoin Core GUI will begin to download the block chain.  This
-step will take at least several hours, and it may take a day or more on
+step will take at least several days, and it may take much more time on
 a slow Internet connection or with a slow computer.  During the
 download, Bitcoin Core will use a significant part of your connection
 bandwidth.  You can stop Bitcoin Core at any time by closing it; it will
