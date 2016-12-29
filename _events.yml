@@ -1,10 +1,82 @@
-- date: 2016-12-18
-  title: "A Bitcoin Brunch (and Christmas Bitcoin Shopping)"
-  venue: "VANNU"
-  address: "Jansplein 48"
-  city: "Arnhem Bitcoincity"
-  country: "The Netherlands"
-  link: "https://www.meetup.com/Arnhem-Bitcoin-Users/events/235650407/"
+- date: 2017-01-05
+  title: "CES Digital Money Forum"
+  venue: "Las Vegas Convention Center"
+  address: "3150 Paradise Road"
+  city: "Las Vegas, NV"
+  country: "USA"
+  link: "http://thedigitalmoneyforum.com/"
+
+- date: 2017-01-07
+  title: "2017 Blockchain Fintech Summit of Silicon Valley"
+  venue: "Santa Clara Conventional Center, Great America Ballroom"
+  address: "5001 Great America Pkwy"
+  city: "Santa Clara"
+  country: "USA"
+  link: "https://www.eventbrite.com/e/the-blockchain-fintech-summit-of-silicon-valley-tickets-29506617086"
+
+- date: 2017-01-12
+  title: "Blockchain Incredible Party"
+  venue: "Business Center Gulliver"
+  address: "Sportyvna Square, 1A, Tower A, 24th floor"
+  city: "Kiev"
+  country: "Ukraine"
+  link: "http://bip001.com/"
+
+- date: 2017-01-17
+  title: "The North American Bitcoin Conference"
+  venue: "Knight Center Complex"
+  address: "400 SE 2nd Ave"
+  city: "Miami"
+  country: "United States"
+  link: "http://btcmiami.com/"
+
+- date: 2017-01-20
+  title: "London Blockchain Week"
+  venue: "Grange Tower Bridge Hotel"
+  address: "45 Prescot Street"
+  city: "London"
+  country: "United Kingdom"
+  link: "https://www.blockchainweek.com/"
+
+- date: 2017-01-23
+  title: "Blockchain Expo"
+  venue: "Olympia"
+  address: "Hammersmith Rd"
+  city: "London"
+  country: "United Kingdom"
+  link: "http://blockchain-expo.com/"
+
+- date: 2017-01-25
+  title: "Finance Disrupted"
+  venue: "St. Pancras Renaissance Hotel"
+  address: "Euston Road"
+  city: "London"
+  country: "United Kingdom"
+  link: "http://www.economist.com/events-conferences/emea/finance-disrupted"
+
+- date: 2017-02-14
+  title: "Event Horizon"
+  venue: "Hofburg Palace"
+  address: "Michaelerkuppel, 1010"
+  city: "Vienna"
+  country: "Austria"
+  link: "http://eventhorizon2017.com/"
+
+- date: 2017-02-21
+  title: "d10e"
+  venue: "Sheraton Hotel"
+  address: "Calea Dorobantilor 5-7"
+  city: "Bucharest"
+  country: "Romania"
+  link: "http://d10e.biz/"
+
+- date: 2017-02-27
+  title: "Distributed: Markets"
+  venue: "Ritz Carlton"
+  address: "181 Peachtree St NE"
+  city: "Atlanta"
+  country: "United States"
+  link: "https://godistributed.com/events/markets/"
 
 - date: 2017-03-01
   title: "Blockchain Africa Conference 2017"
@@ -13,3 +85,59 @@
   city: "Johannesburg"
   country: "South Africa"
   link: "http://blockchainafrica.co"
+
+- date: 2017-03-07
+  title: "APAC Blockchain Conference"
+  venue: "Aerial UTS Function Centre"
+  address: "235 Jones Street, Level 7, Building 10"
+  city: "Sydney"
+  country: "Australia"
+  link: "http://www.questevents.com.au/apac-blockchain-conference-2017"
+
+- date: 2017-05-19
+  title: "Bitcoin Conference Prague"
+  venue: "Angelo Hotel Prague"
+  address: "Radlicka 1g, 150 00"
+  city: "Prague"
+  country: "Czech Republic"
+  link: "https://bitcoinconf.eu/en"
+
+- date: 2017-05-22
+  title: "Consensus 2017"
+  venue: "New York Marriott Marquis"
+  address: "1535 Broadway"
+  city: "New York"
+  country: "United States"
+  link: "http://www.coindesk.com/events/consensus-2017/"
+
+- date: 2017-05-24
+  title: "Blockchain Cruise 2017"
+  venue: "Anthem of the Seas"
+  address: "4 Port Terminal Blvd"
+  city: "Bayonne"
+  country: "United States"
+  link: "https://coinsbank.com/cruise"
+
+- date: 2017-06-26
+  title: "Money 2020 Europe"
+  venue: "Bella Center"
+  address: "Center Blvd. 5, 2300"
+  city: "Copenhagen"
+  country: "Denmark"
+  link: "https://www.money2020europe.com/"
+
+- date: 2017-07-07
+  title: "London Fintech Week"
+  venue: "Grange Tower Bridge Hotel"
+  address: "45 Prescot St."
+  city: "London"
+  country: "United Kingdom"
+  link: "https://fintechweek.com/"
+
+- date: 2017-09-23
+  title: "Bitcoin Conference Kiev"
+  venue: "Congress Hall"
+  address: "Cosmopolite, 6 V. Hetmana Street"
+  city: "Kiev"
+  country: "Ukraine"
+  link: "https://bitcoinconf.com.ua/en"
