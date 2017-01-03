@@ -14,9 +14,9 @@ http://opensource.org/licenses/MIT.
       <li{% if page.id == 'you-need-to-know' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a></li>
     </ul>
   </li>
-  <li><a>{% translate menu-resources layout %}</a>
+  <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a>
     <ul>
-      <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a></li>
+      {% if page.lang == 'en' %}<li{% if page.id == 'exchanges' %} class="active"{% endif %}><a href="/en/exchanges">Exchanges</a></li>{% endif %}
       <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
       {% if page.lang == 'en' %}<li{% if page.id == 'developer-documentation' %} class="active"{% endif %}><a href="/en/developer-documentation">Documentation</a></li>{% endif %}
       <li{% if page.id == 'vocabulary' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
