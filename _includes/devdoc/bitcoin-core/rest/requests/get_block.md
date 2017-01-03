@@ -88,7 +88,7 @@ GET /block/<hash>.<format>
 - n: "→<br>`versionHex`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.13.0*<br><br>This block's version number formatted in hexadecimal"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>This block's version number formatted in hexadecimal.  See [BIP9 assignments]"
 
 - n: "→<br>`merkleroot`"
   t: "string (hex)"

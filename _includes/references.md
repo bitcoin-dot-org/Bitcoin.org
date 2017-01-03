@@ -291,6 +291,7 @@ http://opensource.org/licenses/MIT.
 {% comment %}<!-- Official reference documents (BIPs should not use zero padding:
      BIP32 not BIP0032); alphabetical order -->{% endcomment %}
 [BIP9]: https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki
+[BIP9 assignments]: https://github.com/bitcoin/bips/blob/master/bip-0009/assignments.mediawiki
 [BIP14]: https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki
 [BIP16]: https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki
 [BIP21]: https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki

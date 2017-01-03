@@ -35,7 +35,7 @@ GET /getutxos/<checkmempool>/<txid>-<n>/<txid>-<n>/.../<txid>-<n>.<bin|hex|json>
 - n: "Outpoint"
   t: "vector"
   p: "Required<br>(1 or more)"
-  d: "The list of outpoints to be queried. Each outpoint is the TXID of the transaction, encoded as hex in RPC byte order with an addditional `-n`"
+  d: "The list of outpoints to be queried. Each outpoint is the TXID of the transaction, encoded as hex in RPC byte order with an additional `-n` parameter for the output index (vout) number, with the index starting from 0"
 
 {% enditemplate %}
 
@@ -55,7 +55,7 @@ GET /getutxos/<checkmempool>/<txid>-<n>/<txid>-<n>/.../<txid>-<n>.<bin|hex|json>
 - n: "`result`"
   t: "object"
   p: "Required<br>(exactly 1)"
-  d: "The requetsted UTXO set"
+  d: "The requested UTXO set"
 
 - n: "→→<br>`chainHeight`"
   t: "number (int)"
@@ -70,7 +70,7 @@ GET /getutxos/<checkmempool>/<txid>-<n>/<txid>-<n>/.../<txid>-<n>.<bin|hex|json>
 - n: "→<br>`bitmap`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: ""
+  d: "Whether each requested output was found in the UTXO set or not.  A `1` is returned for those that were found and a `0` is returned for those that were not found.  Results are returned in the same order as outpoints were requested in the input parameters"
 
 - n: "→<br>`utxos`"
   t: "array"

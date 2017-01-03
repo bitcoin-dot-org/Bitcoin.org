@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### GET Headers
 {% include helpers/subhead-links.md %}
 
-{% assign summary_restGetHeaders="returns a specified amout of block headers in upward direction." %}
+{% assign summary_restGetHeaders="returns a specified amount of block headers in upward direction." %}
 
 {% autocrossref %}
 
@@ -85,7 +85,7 @@ GET /headers/<count>/<hash>.<format>
 - n: "→→<br>`versionHex`"
   t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.13.0*<br><br>This block's version number formatted in hexadecimal"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>This block's version number formatted in hexadecimal.  See [BIP9 assignments][]"
 
 - n: "→→<br>`merkleroot`"
   t: "string (hex)"
