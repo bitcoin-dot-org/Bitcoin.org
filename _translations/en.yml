@@ -316,6 +316,11 @@ en:
     full_node_guide: "Read the <a href=\"/en/full-node\">full node guide</a> for details."
     patient: "Check your bandwidth and space"
     releasekeys: "Bitcoin Core Release Signing Keys"
+  exchanges:
+    title: "Exchanges - Bitcoin"
+    pagetitle: "Bitcoin Exchanges"
+    pagedesc: "Places to buy bitcoin in exchange for other currencies."
+    exchange: "Bitcoin Exchanges"
   events:
     title: "Conferences and events - Bitcoin"
     pagetitle: "Conferences and events"
@@ -868,6 +873,7 @@ en:
     community: community
     development: development
     download: download
+    exchanges: exchanges
     events: events
     faq: faq
     getting-started: getting-started
