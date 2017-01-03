@@ -1293,9 +1293,8 @@ It is possible to configure your node to to run in pruned mode in order to
 reduce storage requirements. This can reduce the disk usage from over 100GB to
 around 2GB.
 
-Running a node in pruned mode is incompatible with `-txindex`
-and `-rescan` and disables the RPCs `importwallet`, `importaddress`,
-and `importprivkey`.
+Running a node in pruned mode is incompatible with `-txindex` and `-rescan`. It
+also disables the RPC `importwallet`.
 
 To enable block pruning set `prune=N` on the command line or in `bitcoin.conf`,
 where `N` is the number of MiB to allot for raw block and undo data.
