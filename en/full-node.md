@@ -1298,7 +1298,7 @@ and `-rescan` and disables the RPCs `importwallet`, `importaddress`,
 and `importprivkey`.
 
 To enable block pruning set `prune=N` on the command line or in `bitcoin.conf`,
-where `N` is the number of MiB to allot for raw block & undo data.
+where `N` is the number of MiB to allot for raw block and undo data.
 
 A value of `0` disables pruning. The minimal value above `0` is `550`. Your
 wallet is as secure with high values as it is with low ones. Higher values
