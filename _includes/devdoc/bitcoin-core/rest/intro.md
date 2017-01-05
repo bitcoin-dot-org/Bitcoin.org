@@ -16,7 +16,8 @@ port 18332 for testnet. It must be enabled by either starting Bitcoin
 Core with the `-rest` option or by specifying `rest=1` in the
 configuration file. Make sure that the RPC interface is also activated.
 Set `server=1` in `bitcoin.conf` or supply the `-server` argument when 
-starting the program.
+starting Bitcoin Core. Starting Bitcoin Core with `bitcoind` automatically 
+enables the RPC interface.
 
 The interface is not intended for public access and is only accessible
 from localhost by default.
