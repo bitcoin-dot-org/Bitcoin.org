@@ -690,7 +690,6 @@ en:
     title: "Resources - Bitcoin"
     pagetitle: "Bitcoin resources"
     pagedesc: "Find useful websites and resources about Bitcoin."
-    useful: "Useful places"
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin Wiki</a>"
     linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Directories"
@@ -703,6 +702,7 @@ en:
     news: "News"
     documentaries: "Documentaries"
     learn: "Learning resources"
+    vouchers: "Vouchers"
   secure-your-wallet:
     title: "Securing your wallet - Bitcoin"
     pagetitle: "Securing your wallet"
