@@ -440,6 +440,9 @@ devsearches:
     - "OP_CHECKSIGVERIFY": "https://en.bitcoin.it/wiki/Script#Crypto"
     - "OP_CHECKMULTISIG": "https://en.bitcoin.it/wiki/Script#Crypto"
     - "OP_CHECKMULTISIGVERIFY": "https://en.bitcoin.it/wiki/Script#Crypto"
+	
+    - "OP_CHECKLOCKTIMEVERIFY": "https://en.bitcoin.it/wiki/Script#Locktime"
+    - "OP_CHECKSEQUENCEVERIFY ": "https://en.bitcoin.it/wiki/Script#Locktime"	
 
     - "OP_PUBKEYHASH (invalid)": "https://en.bitcoin.it/wiki/Script#Pseudo-words"
     - "OP_PUBKEY (invalid)": "https://en.bitcoin.it/wiki/Script#Pseudo-words"
@@ -452,8 +455,6 @@ devsearches:
     - "OP_RESERVED1 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
     - "OP_RESERVED2 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
     - "OP_NOP1 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_NOP2 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_NOP3 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
     - "OP_NOP4 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
     - "OP_NOP5 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
     - "OP_NOP6 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
