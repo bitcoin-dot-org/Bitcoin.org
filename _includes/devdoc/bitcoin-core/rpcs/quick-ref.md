@@ -141,9 +141,9 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 
 * [CreateRawTransaction][rpc createrawtransaction]: {{summary_createRawTransaction}} {{UPDATED0_12_0}}
 * [FundRawTransaction][rpc fundrawtransaction]: {{summary_fundRawTransaction}} {{NEW0_12_0}}, {{UPDATED0_13_0}}
-* [DecodeRawTransaction][rpc decoderawtransaction]: {{summary_decodeRawTransaction}}
+* [DecodeRawTransaction][rpc decoderawtransaction]: {{summary_decodeRawTransaction}} {{UPDATED0_13_0}}
 * [DecodeScript][rpc decodescript]: {{summary_decodeScript}}
-* [GetRawTransaction][rpc getrawtransaction]: {{summary_getRawTransaction}}
+* [GetRawTransaction][rpc getrawtransaction]: {{summary_getRawTransaction}} {{UPDATED0_13_0}}
 * [SendRawTransaction][rpc sendrawtransaction]: {{summary_sendRawTransaction}}
 * [SignRawTransaction][rpc signrawtransaction]: {{summary_signRawTransaction}}
 

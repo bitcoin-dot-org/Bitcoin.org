@@ -65,7 +65,7 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "→ →<br>`account`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The account which the payment was credited to or debited from.  May be an empty string (\"\") for the default account"
+  d: "*Deprecated: will be removed in a later version of Bitcoin Core*<br><br>The account which the payment was credited to or debited from.  May be an empty string (\"\") for the default account"
 
 - n: "→ →<br>`address`"
   t: "string (base58)"
@@ -120,7 +120,7 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "→ →<br>`blockindex`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "The block height of the block on the local best block chain which includes this transaction.  Only returned for confirmed transactions"
+  d: "The index of the transaction in the block that includes it.  Only returned for confirmed transactions"
 
 - n: "→ →<br>`blocktime`"
   t: "number (int)"
