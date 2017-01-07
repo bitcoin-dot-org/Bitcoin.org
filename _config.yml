@@ -467,6 +467,7 @@ devsearches:
   ## and focused on likely keywords
   "BIPs":
     - "BIP1: BIP purpose and guidelines": "https://github.com/bitcoin/bips/blob/master/bip-0001.mediawiki"
+    - "BIP9: soft fork mechanism": "https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki"
     - "BIP11: m-of-n multisig transactions": "https://github.com/bitcoin/bips/blob/master/bip-0011.mediawiki"
     - "BIP13: P2SH address format": "https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki"
     - "BIP14: protocol version and user agent": "https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki"
@@ -495,7 +496,16 @@ devsearches:
     - "BIP71: payment protocol MIME types": "https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki"
     - "BIP72: payment protocol URIs": "https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki"
     - "BIP73: accept header with payment protocol": "https://github.com/bitcoin/bips/blob/master/bip-0073.mediawiki"
-
+    - "BIP111: NODE_BLOOM service bit": "https://github.com/bitcoin/bips/blob/master/bip-0111.mediawiki"
+    - "BIP112: OP_CHECKSEQUENCEVERIFY": "https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki"
+    - "BIP113: median time for lock-time": "https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki"			
+    - "BIP125: replace-by-fee signaling": "https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki"
+    - "BIP130: sendheaders message": "https://github.com/bitcoin/bips/blob/master/bip-0130.mediawiki"
+    - "BIP133: feefilter message": "https://github.com/bitcoin/bips/blob/master/bip-0133.mediawiki"		
+    - "BIP141: segregated witness": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki"
+    - "BIP151: P2P communication encryption": "https://github.com/bitcoin/bips/blob/master/bip-0151.mediawiki"
+    - "BIP152: compact block relay": "https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki"
+	
   ## Bitcoin P2P Protocol messages documented on Bitcoin.org
   "P2P Messages":
     - "addr":  "/en/developer-reference#addr"
