@@ -336,6 +336,17 @@ devsearches:
     - 'WalletPassphrase': "/en/developer-reference#walletpassphrase"
     - 'WalletPassphraseChange': "/en/developer-reference#walletpassphrasechange"
 
+  ## REST calls currently documented on Bitcoin.org. CamelCase names (with
+  ## leading capital) for easier quick scanning
+  "REST":
+    - 'GetBlock': "/en/developer-reference#get-block"
+    - 'GetBlock-noTxDetails': "/en/developer-reference#get-blocknotxdetails"	
+    - 'GetChainInfo': "/en/developer-reference#get-chaininfo"
+    - 'GetUtxos': "/en/developer-reference#get-getutxos"
+    - 'GetHeaders': "/en/developer-reference#get-headers"
+    - 'GetMemPool-contents': "/en/developer-reference#get-mempoolcontents"
+    - 'GetMemPool-info': "/en/developer-reference#get-mempoolinfo"	
+
   ## Opcodes currently implemented in Bitcoin Core master branch. After
   ## we document them on Bitcoin.org, these links will be updated
   "Opcodes":
@@ -440,7 +451,7 @@ devsearches:
     - "OP_CHECKSIGVERIFY": "https://en.bitcoin.it/wiki/Script#Crypto"
     - "OP_CHECKMULTISIG": "https://en.bitcoin.it/wiki/Script#Crypto"
     - "OP_CHECKMULTISIGVERIFY": "https://en.bitcoin.it/wiki/Script#Crypto"
-	
+
     - "OP_CHECKLOCKTIMEVERIFY": "https://en.bitcoin.it/wiki/Script#Locktime"
     - "OP_CHECKSEQUENCEVERIFY ": "https://en.bitcoin.it/wiki/Script#Locktime"	
 
@@ -505,7 +516,7 @@ devsearches:
     - "BIP141: segregated witness": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki"
     - "BIP151: P2P communication encryption": "https://github.com/bitcoin/bips/blob/master/bip-0151.mediawiki"
     - "BIP152: compact block relay": "https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki"
-	
+
   ## Bitcoin P2P Protocol messages documented on Bitcoin.org
   "P2P Messages":
     - "addr":  "/en/developer-reference#addr"
