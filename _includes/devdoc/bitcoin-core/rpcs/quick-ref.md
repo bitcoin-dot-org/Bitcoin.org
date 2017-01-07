@@ -56,7 +56,7 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 {% autocrossref %}
 
 * [GetBestBlockHash][rpc getbestblockhash]: {{summary_getBestBlockHash}}
-* [GetBlock][rpc getblock]: {{summary_getBlock}}
+* [GetBlock][rpc getblock]: {{summary_getBlock}} {{UPDATED0_13_0}}
 * [GetBlockChainInfo][rpc getblockchaininfo]: {{summary_getBlockChainInfo}} {{UPDATED0_12_1}}
 * [GetBlockCount][rpc getblockcount]: {{summary_getBlockCount}}
 * [GetBlockHash][rpc getblockhash]: {{summary_getBlockHash}}
