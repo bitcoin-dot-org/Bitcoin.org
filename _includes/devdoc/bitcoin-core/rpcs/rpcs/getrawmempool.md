@@ -64,7 +64,7 @@ The `getrawmempool` RPC {{summary_getRawMemPool}}
 - n: "→ →<br>`modifiedfee`"
   t: "number (bitcoins)"
   p: "Required<br>(exactly 1)"
-  d: "The transaction fee with fee deltas used for mining priority in decimal bitcoins"
+  d: "*Added in Bitcoin Core 0.12.0*<br><br>The transaction fee with fee deltas used for mining priority in decimal bitcoins"
 
 - n: "→ →<br>`time`"
   t: "number (int)"
@@ -148,7 +148,7 @@ Result:
 Verbose output (`true`):
 
 {% highlight bash %}
-bitcoin-cli -testnet getrawmempool true
+bitcoin-cli getrawmempool true
 {% endhighlight %}
 
 Result:
