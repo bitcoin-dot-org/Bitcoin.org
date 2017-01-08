@@ -1,6 +1,9 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
+#
+# Definitions for the property checks below can be found here:
+# https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/_translations/en.yml
 
 layout: base
 id: choose-your-wallet
@@ -446,6 +449,23 @@ wallets:
           transparency: "checkfailtransparencynew"
           environment: "checkgoodenvironmenthardware"
           privacy: "checkneutralprivacyvariable"
+- digitalbitbox:
+    title: "DigitalBitbox"
+    titleshort: "Digital<br />Bitbox"
+    compat: "hardware"
+    level: 2
+    platform:
+      hardware:
+        text: "walletdbb"
+        link: "https://digitalbitbox.com/"
+        source: "https://github.com/digitalbitbox/"
+        screenshot: "digitalbitbox.png"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkneutralvalidationvariable"
+          transparency: "checkfailtransparencynew"
+          environment: "checkgoodenvironmenthardware"
+          privacy: "checkneutralprivacyvariable"
 - bither:
     title: "Bither"
     titleshort: "Bither"
@@ -544,7 +564,7 @@ wallets:
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - mycelium:
     title: "Mycelium"
     titleshort: "Mycelium"
@@ -893,28 +913,6 @@ wallets:
           validation: "checkfailvalidationcentralized"
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
-
-- circle:
-    title: "Circle"
-    titleshort: "Circle"
-    compat: "web"
-    level: 4
-    platform:
-      web:
-        text: "walletcircle"
-        link: "https://circle.com/"
-        screenshot: "circle.png"
-        os:
-        check:
-          control: "checkfailcontrolthirdpartyinsured"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencyremote"
-          environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"

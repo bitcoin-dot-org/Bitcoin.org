@@ -9,13 +9,13 @@
   and click the *Watch* button to get notifications by email and on your
   GitHub home page.
 
-    Alternatively, email volunteer coordinator Dave Harding
-    <dave@dtrt.org> with a short list of your interests and skills, and
-    he'll email you when there's an issue or PR that could use your
-    attention.
+    Alternatively, email volunteer coordinators Will Binns
+    <will@cryptopelago.com> or Dave Harding <dave@dtrt.org> with a short list
+    of your interests and skills, and they will email you when there's an
+    issue or PR that could use your attention.
 
 * Help [write new documentation][] for the [developer
-  documentation pages][] or [upcoming full node page][], or **review [PRs
+  documentation pages][] or [full node page][], or **review [PRs
   adding new documentation][].** You don't need to be a Bitcoin expert
   to review a PR---these docs are written for non-experts, so we need to
   know if non-experts find them confusing or incomplete. If you review a
@@ -26,9 +26,7 @@
   help us [review wallet submissions][].
 
 * [Translate Bitcoin.org into another language][] using [Transifex][] or
-  help review new and updated translations. **Translation coordinator
-  needed** to answer translator questions and help process
-  reviews---email <dave@dtrt.org> for details.
+  help review new and updated translations.
 
 * Add Bitcoin events to the [events page][] either by [editing `_events.yml`][edit events]
   according to the [event instructions][] or by filling in a [pre-made
@@ -38,8 +36,8 @@
   the help of writers, editors, graphic artists, web designers, and anyone
   else to enhance Bitcoin.org's [current content][] or to add new
   content. See the **list of [recommended starter projects][]** or email
-  volunteer coordinator Dave Harding <dave@dtrt.org> to start a
-  conversation about how you can help Bitcoin.org.
+  volunteer coordinators Will Binns <will@cryptopelago.com> or Dave Harding <dave@dtrt.org>
+  to start a conversation about how you can help Bitcoin.org.
 
 You can always report problems or help improve bitcoin.org by opening a [new issue][] or [pull request][] on [GitHub][].
 
@@ -59,7 +57,7 @@ You can always report problems or help improve bitcoin.org by opening a [new iss
 [submit new wallets]: #adding-a-wallet
 [transifex]: https://www.transifex.com/projects/p/bitcoinorg/
 [translate Bitcoin.org into another language]: #how-to-translate
-[upcoming full node page]: https://github.com/bitcoin-dot-org/bitcoin.org/pull/711
+[full node page]: https://bitcoin.org/en/full-node
 [write new documentation]: #developer-documentation
 
 ### Working With GitHub
@@ -567,6 +565,7 @@ is the particular version:
 The following people can publish alerts on Bitcoin.org.  Their email
 addresses are on the linked GitHub profiles.
 
+- Will Binns, [@wbnns](https://github.com/wbnns), wbnns on Freenode
 - Saïvann Carignan, [@saivann](https://github.com/saivann), saivann on Freenode
 - Dave Harding, [@harding](https://github.com/harding), harding on Freenode
 - Wladimir van der Laan, [@laanwj](https://github.com/laanwj), wumpus on Freenode
@@ -751,6 +750,7 @@ Optional criteria (some could become requirements):
 - Does not show "received from" Bitcoin addresses in the UI
 - Uses deterministic ECDSA nonces (RFC 6979)
 - Provides a bug reporting policy on the website
+- Website serving executable code or requiring authentication is included in the [HSTS preload list](https://hstspreload.appspot.com/)
 - If user has no access over its private keys:
   - Full reserve audit(s)
   - Insurance(s) against failures on their side
@@ -768,8 +768,8 @@ Optional criteria (some could become requirements):
 
 *Before adding a wallet,* please make sure your wallet meets all of the
 Basic Requirements listed above, or open a [new issue][] to request an
-exemption or policy change. Feel free to email Dave Harding
-<dave@dtrt.org> if you have any questions.
+exemption or policy change. Feel free to email Will Binns <will@cryptopelago.com>
+or Dave Harding <dave@dtrt.org> if you have any questions.
 
 Wallets can be added in `_templates/choose-your-wallet.html`. Entries are ordered by levels and new wallets must be added after the last wallet on the same level.
 
