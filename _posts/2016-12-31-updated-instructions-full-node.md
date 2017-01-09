@@ -91,11 +91,10 @@ privacy-sensitive tasks. Do your own diligence to ensure who you get help from
 is ethical, reputable and qualified to assist you.
 
 ## Acknowledgments
-Special thanks goes to [David Harding](https://github.com/harding) who created
-the majority of the content comprising the original instructions on Bitcoin.org
-for running a full node as of version **0.10.0**. A great thank you goes to the
-other contributors (in no preferential order) who have worked to improve this
-page over time as well:
+A special thanks goes to the contributors (in no preferential order) who have
+worked to improve this page over time:
+
+- [David Harding](https://github.com/harding)
 
 - [Kevin Cooper](https://github.com/kevcooper)
 
