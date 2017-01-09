@@ -45,7 +45,7 @@ rules, though there are many more:
 
 - Transactions/blocks must be in the correct data format.
 
-- Within the [blockchain](https://en.bitcoin.it/wiki/Block_chain), a transaction
+- Within the [block chain](https://en.bitcoin.it/wiki/Block_chain), a transaction
   output cannot be double-spent.
 
 *Read more about what a full node is, the consensus rules above and other
