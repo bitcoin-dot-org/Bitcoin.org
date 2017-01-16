@@ -89,7 +89,9 @@ UTXOs and we just spent our only confirmed UTXO.
         "scriptPubKey" : "76a9149ba386253ea698158b6d34802bb9b550\
                           f5ce36dd88ac",
         "amount" : 40.00000000,
-        "confirmations" : 0
+        "confirmations" : 0,
+        "spendable" : true,
+        "solvable" : true
     },
     {
         "txid" : "263c018582731ff54dc72c7d67e858c002ae298835501d\
@@ -100,7 +102,9 @@ UTXOs and we just spent our only confirmed UTXO.
         "scriptPubKey" : "76a914a57414e5ffae9ef5074bacbe10a320bb\
                           2614e1f388ac",
         "amount" : 10.00000000,
-        "confirmations" : 0
+        "confirmations" : 0,
+        "spendable" : true,
+        "solvable" : true
     }
 ]
 {% endhighlight %}
@@ -161,7 +165,9 @@ This subsection covers one of the simplest possible raw transactions.
         "scriptPubKey" : "76a9149ba386253ea698158b6d34802bb9b550\
                           f5ce36dd88ac",
         "amount" : 40.00000000,
-        "confirmations" : 1
+        "confirmations" : 1,
+        "spendable" : true,
+        "solvable" : true
     },
     {
         "txid" : "263c018582731ff54dc72c7d67e858c002ae298835501d\
@@ -172,7 +178,9 @@ This subsection covers one of the simplest possible raw transactions.
         "scriptPubKey" : "76a914a57414e5ffae9ef5074bacbe10a320bb\
                           2614e1f388ac",
         "amount" : 10.00000000,
-        "confirmations" : 1
+        "confirmations" : 1,
+        "spendable" : true,
+        "solvable" : true
     },
     {
         "txid" : "3f4fa19803dec4d6a84fae3821da7ac7577080ef754512\
@@ -182,7 +190,9 @@ This subsection covers one of the simplest possible raw transactions.
         "scriptPubKey" : "210260a275cccf0f4b106220725be516adba27\
                           52db1bec8c5b7174c89c4c07891f88ac",
         "amount" : 50.00000000,
-        "confirmations" : 101
+        "confirmations" : 101,
+        "spendable" : true,
+        "solvable" : true
     }
 ]
 {% endhighlight %}
@@ -255,6 +265,9 @@ can send the change back to yourself.
 {
     "txid" : "c80b343d2ce2b5d829c2de9854c7c8d423c0e33bda264c4013\
               8d834aab4c0638",
+    "hash" : "c80b343d2ce2b5d829c2de9854c7c8d423c0e33bda264c40138d834aab4c0638",
+    "size" : 85,
+    "vsize" : 85,		
     "version" : 1,
     "locktime" : 0,
     "vin" : [
@@ -378,7 +391,9 @@ transaction together (such as a CoinJoin transaction).
         "scriptPubKey" : "76a9149ba386253ea698158b6d34802bb9b550\
                           f5ce36dd88ac",
         "amount" : 40.00000000,
-        "confirmations" : 2
+        "confirmations" : 2,
+        "spendable" : true,
+        "solvable" : true
     },
     {
         "txid" : "263c018582731ff54dc72c7d67e858c002ae298835501d\
@@ -389,7 +404,9 @@ transaction together (such as a CoinJoin transaction).
         "scriptPubKey" : "76a914a57414e5ffae9ef5074bacbe10a320bb\
                           2614e1f388ac",
         "amount" : 10.00000000,
-        "confirmations" : 2
+        "confirmations" : 2,
+        "spendable" : true,
+        "solvable" : true
     },
     {
         "txid" : "78203a8f6b529693759e1917a1b9f05670d036fbb12911\
@@ -399,7 +416,9 @@ transaction together (such as a CoinJoin transaction).
         "scriptPubKey" : "210229688a74abd0d5ad3b06ddff36fa9cd8ed\
                           d181d97b9489a6adc40431fb56e1d8ac",
         "amount" : 50.00000000,
-        "confirmations" : 101
+        "confirmations" : 101,
+        "spendable" : true,
+        "solvable" : true
     },
     {
         "txid" : "c7736a0a0046d5a8cc61c8c3c2821d4d7517f5de2bc66a\
@@ -410,7 +429,9 @@ transaction together (such as a CoinJoin transaction).
         "scriptPubKey" : "76a914cbc20a7664f2f69e5355aa427045bc15\
                           e7c6c77288ac",
         "amount" : 49.99990000,
-        "confirmations" : 1
+        "confirmations" : 1,
+        "spendable" : true,
+        "solvable" : true
     }
 ]
 {% endhighlight %}
@@ -647,6 +668,9 @@ variable.
 {
     "txid" : "682cad881df69cb9df8f0c996ce96ecad758357ded2da03bad\
               40cf18ffbb8e09",
+    "hash" : "682cad881df69cb9df8f0c996ce96ecad758357ded2da03bad40cf18ffbb8e09",
+    "size" : 340,
+    "vsize" : 340,
     "version" : 1,
     "locktime" : 0,
     "vin" : [
@@ -945,7 +969,9 @@ redeem script. You must give them a full public key.
 {
     "isvalid" : true,
     "address" : "mk2QpYatsKicvFVuTAQLBryyccRXMUaGHP",
+    "scriptPubKey" : "76a9143172b5654f6683c8fb146959d347ce303cae4ca788ac",
     "ismine" : true,
+    "iswatchonly" : false,
     "isscript" : false,
     "pubkey" : "029e03a901b85534ff1e92c43c74431f7ce72046060fcf7a\
                 95c37e148f78c77255",
@@ -1050,6 +1076,9 @@ We save that txid to a shell variable as the txid of the UTXO we plan to spend n
              04c84dcbaff8700000000",
     "txid" : "7278d7d030f042ebe633732b512bcb31fff14a697675a1fe18\
               84db139876e175",
+    "hash" : "7278d7d030f042ebe633732b512bcb31fff14a697675a1fe1884db139876e175",
+    "size" : 189,
+    "vsize" : 189,
     "version" : 1,
     "locktime" : 0,
     "vin" : [
