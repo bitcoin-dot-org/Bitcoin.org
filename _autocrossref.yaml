@@ -117,6 +117,9 @@ protocol version 60001: section protocol versions
 protocol version 60002: section protocol versions
 protocol version 70001: section protocol versions
 protocol version 70002: section protocol versions
+protocol version 70012: section protocol versions
+protocol version 70013: section protocol versions
+protocol version 70014: section protocol versions
 public key infrastructure: pki
 '`r`': r
 receipt:
@@ -156,6 +159,7 @@ x.509: x509
 X509Certificates:
 
 ## BIPs in numerical order; don't use padding zeros (e.g. BIP70 not BIP0070)
+BIP9:
 BIP14:
 BIP16:
 BIP21:
@@ -172,6 +176,14 @@ BIP66:
 BIP70:
 BIP71:
 BIP72:
+BIP111:
+BIP112:
+BIP113:
+BIP130:
+BIP133:
+BIP141:
+BIP151:
+BIP152:
 
 ## CVEs
 CVE-2012-2459:
@@ -373,4 +385,15 @@ Bitcoin Core 0.9.0:
 Bitcoin Core 0.9.1:
 Bitcoin Core 0.9.3:
 Bitcoin Core 0.10.0:
+Bitcoin Core 0.10.1:
+Bitcoin Core 0.10.2:
+Bitcoin Core 0.10.3:
+Bitcoin Core 0.11.0:
+Bitcoin Core 0.11.1:
+Bitcoin Core 0.11.2:
+Bitcoin Core 0.12.0:
+Bitcoin Core 0.12.1:
+Bitcoin Core 0.13.0:
+Bitcoin Core 0.13.1:
+Bitcoin Core 0.13.2:
 Bitcoin Core master:
