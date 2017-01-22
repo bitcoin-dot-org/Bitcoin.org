@@ -283,6 +283,15 @@ body{
 	display:inline;
 }
 
+.exchanges div div{
+	zoom:1;
+	display:inline;
+	padding:20px 0;
+}
+.exchanges div{
+	border-top:expression(this.parentNode.className=='resourcesorg'&&this.parentNode.getElementsByTagName('DIV')[0]!=this?'1px solid #e0e0e0':'0');
+}
+
 .banner-message a:hover,
 .banner-message a:hover:link,
 .banner-message a:hover:active,
