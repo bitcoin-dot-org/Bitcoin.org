@@ -316,6 +316,12 @@ en:
     full_node_guide: "Read the <a href=\"/en/full-node\">full node guide</a> for details."
     patient: "Check your bandwidth and space"
     releasekeys: "Bitcoin Core Release Signing Keys"
+  exchanges:
+    title: "Exchanges - Bitcoin"
+    metadescription: "Places to buy bitcoin in exchange for other currencies. Exchange US dollars (BTC/USD), Euros (BTC/EUR), Yuan (BTC/CNY) and other currencies for bitcoin."
+    pagetitle: "Bitcoin Exchanges"
+    pagedesc: "Places to buy bitcoin in exchange for other currencies."
+    exchange: "Bitcoin Exchanges"
   events:
     title: "Conferences and events - Bitcoin"
     pagetitle: "Conferences and events"
@@ -837,6 +843,7 @@ en:
     menu-community: Community
     menu-development: Development
     menu-events: Events
+    menu-exchanges: Exchanges
     menu-faq: FAQ
     menu-getting-started: "Getting started"
     menu-how-it-works: "How it works"
@@ -868,6 +875,7 @@ en:
     community: community
     development: development
     download: download
+    exchanges: exchanges
     events: events
     faq: faq
     getting-started: getting-started
