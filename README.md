@@ -746,6 +746,8 @@ Basic requirements:
 
 Optional criteria (some could become requirements):
 
+- Shall not serve as a portal to a brokerage or exchange
+- Shall not serve as a portal to a bank or a banking network (distributed ledger)
 - Received independent security audit(s)
 - Does not show "received from" Bitcoin addresses in the UI
 - Uses deterministic ECDSA nonces (RFC 6979)
