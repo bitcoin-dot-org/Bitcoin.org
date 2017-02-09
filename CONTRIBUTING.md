@@ -880,3 +880,8 @@ are some notes about updating those keys based on previous experience:
    PR so other people can review it. After the revoked key is uploaded,
    discussion about verifying/adding a replacement key may continue at a
    slower pace.
+
+### Code of Conduct
+
+Contributors to Bitcoin.org are expected to adhere to the project's [Code of
+Conduct](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/CODE_OF_CONDUCT.md).
