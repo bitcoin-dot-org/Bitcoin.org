@@ -4,10 +4,10 @@
 
 *Bitcoin.org needs volunteers like you!*  Here are some ways you can help:
 
-* "Watch" this repository to be notified of issues and Pull Requests
-  (PRs) that could use your attention. Scroll to the top of this page
-  and click the *Watch* button to get notifications by email and on your
-  GitHub home page.
+* "[Watch](https://github.com/bitcoin-dot-org/bitcoin.org/subscription)" this
+  repository to be notified of issues and Pull Requests (PRs) that could use
+  your attention. Scroll to the top of this page and click the *Watch* button to
+  get notifications by email and on your GitHub home page.
 
     Alternatively, email volunteer coordinators Will Binns
     <will@bitcoin.org> or Dave Harding <dave@dtrt.org> with a short list
