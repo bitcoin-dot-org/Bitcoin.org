@@ -10,9 +10,7 @@ required:
         A softfork is a change to the bitcoin protocol 
         wherein only previously valid blocks/transactions 
         are made invalid. Since old nodes will recognise 
-        the new blocks as valid, a softfork is backward-compatible. 
-        This kind of fork requires only a majority of the miners 
-        upgrading to enforce the new rules.
+        the new blocks as valid, a softfork is backward-compatible.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Soft fork
