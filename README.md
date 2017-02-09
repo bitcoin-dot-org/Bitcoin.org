@@ -10,7 +10,7 @@
   GitHub home page.
 
     Alternatively, email volunteer coordinators Will Binns
-    <will@cryptopelago.com> or Dave Harding <dave@dtrt.org> with a short list
+    <will@bitcoin.org> or Dave Harding <dave@dtrt.org> with a short list
     of your interests and skills, and they will email you when there's an
     issue or PR that could use your attention.
 
@@ -36,7 +36,7 @@
   the help of writers, editors, graphic artists, web designers, and anyone
   else to enhance Bitcoin.org's [current content][] or to add new
   content. See the **list of [recommended starter projects][]** or email
-  volunteer coordinators Will Binns <will@cryptopelago.com> or Dave Harding <dave@dtrt.org>
+  volunteer coordinators Will Binns <will@bitcoin.org> or Dave Harding <dave@dtrt.org>
   to start a conversation about how you can help Bitcoin.org.
 
 You can always report problems or help improve bitcoin.org by opening a [new issue][] or [pull request][] on [GitHub][].
@@ -768,7 +768,7 @@ Optional criteria (some could become requirements):
 
 *Before adding a wallet,* please make sure your wallet meets all of the
 Basic Requirements listed above, or open a [new issue][] to request an
-exemption or policy change. Feel free to email Will Binns <will@cryptopelago.com>
+exemption or policy change. Feel free to email Will Binns <will@bitcoin.org>
 or Dave Harding <dave@dtrt.org> if you have any questions.
 
 Wallets can be added in `_templates/choose-your-wallet.html`. Entries are ordered by levels and new wallets must be added after the last wallet on the same level.
