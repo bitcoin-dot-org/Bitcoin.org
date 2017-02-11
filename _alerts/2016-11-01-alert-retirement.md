@@ -9,6 +9,12 @@ banner: "Alert system is being retired (click here to read)"
 bannerclass: "info"
 ---
 
+## Updates
+
+* **January 19th 2017**: The Final alert has been broadcast. This final alert essentially disables the alert system by overriding all 
+alerts, preventing other alerts from being broadcast, and displays the static message "Alert Key Compromised". The Alert Key
+will be published in the coming months.
+
 ## Summary
 
 The network wide Alert system is being retired. **_No Bitcoins are at risk and this warning may be safely ignored._** 

@@ -222,8 +222,18 @@ http://opensource.org/licenses/MIT.
 [Bitcoin Core 0.9.1]: /en/release/v0.9.1
 [Bitcoin Core 0.9.2]: /en/release/v0.9.2
 [Bitcoin Core 0.9.3]: /en/release/v0.9.3
-{% comment %}<!-- TODOv0.10 update this to point to 0.10 release notes when released -->{% endcomment %}
-[Bitcoin Core 0.10.0]: https://github.com/bitcoin/bitcoin/tree/0.10
+[Bitcoin Core 0.10.0]: /en/release/v0.10.0
+[Bitcoin Core 0.10.1]: /en/release/v0.10.1
+[Bitcoin Core 0.10.2]: /en/release/v0.10.2
+[Bitcoin Core 0.10.3]: /en/release/v0.10.3
+[Bitcoin Core 0.11.0]: /en/release/v0.11.0
+[Bitcoin Core 0.11.1]: /en/release/v0.11.1
+[Bitcoin Core 0.11.2]: /en/release/v0.11.2
+[Bitcoin Core 0.12.0]: /en/release/v0.12.0
+[Bitcoin Core 0.12.1]: /en/release/v0.12.1
+[Bitcoin Core 0.13.0]: /en/release/v0.13.0
+[Bitcoin Core 0.13.1]: /en/release/v0.13.1
+[Bitcoin Core 0.13.2]: /en/release/v0.13.2
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [bitcoind initial setup]: /en/developer-examples
 [bitcoinpdf]: https://bitcoin.org/en/bitcoin-paper
@@ -275,6 +285,7 @@ http://opensource.org/licenses/MIT.
 
 {% comment %}<!-- Official reference documents (BIPs should not use zero padding:
      BIP32 not BIP0032); alphabetical order -->{% endcomment %}
+[BIP9]: https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki
 [BIP14]: https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki
 [BIP16]: https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki
 [BIP21]: https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki
@@ -294,8 +305,13 @@ http://opensource.org/licenses/MIT.
 [BIP70]: https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki
 [BIP71]: https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki
 [BIP72]: https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki
+[BIP111]: https://github.com/bitcoin/bips/blob/master/bip-0111.mediawiki
+[BIP112]: https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki
+[BIP113]: https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki
 [BIP130]: https://github.com/bitcoin/bips/blob/master/bip-0130.mediawiki
 [BIP133]: https://github.com/bitcoin/bips/blob/master/bip-0133.mediawiki
+[BIP141]: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
+[BIP151]: https://github.com/bitcoin/bips/blob/master/bip-0151.mediawiki
 [BIP152]: https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki
 [CVE-2012-2459]: https://en.bitcoin.it/wiki/CVEs#CVE-2012-2459
 [RFC5737]: http://tools.ietf.org/html/rfc5737

@@ -406,7 +406,7 @@ wallets:
     platform:
       hardware:
         text: "wallettrezor"
-        link: "https://www.bitcointrezor.com/"
+        link: "https://trezor.io/"
         source: "https://github.com/trezor/"
         screenshot: "trezor.png"
         check:
@@ -443,6 +443,23 @@ wallets:
         link: "https://www.ledgerwallet.com/"
         source: "https://github.com/LedgerHQ/"
         screenshot: "ledgernanos.png"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkneutralvalidationvariable"
+          transparency: "checkfailtransparencynew"
+          environment: "checkgoodenvironmenthardware"
+          privacy: "checkneutralprivacyvariable"
+- digitalbitbox:
+    title: "DigitalBitbox"
+    titleshort: "Digital<br />Bitbox"
+    compat: "hardware"
+    level: 2
+    platform:
+      hardware:
+        text: "walletdbb"
+        link: "https://digitalbitbox.com/"
+        source: "https://github.com/digitalbitbox/"
+        screenshot: "digitalbitbox.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
@@ -547,7 +564,7 @@ wallets:
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - mycelium:
     title: "Mycelium"
     titleshort: "Mycelium"

@@ -750,6 +750,7 @@ Optional criteria (some could become requirements):
 - Does not show "received from" Bitcoin addresses in the UI
 - Uses deterministic ECDSA nonces (RFC 6979)
 - Provides a bug reporting policy on the website
+- Website serving executable code or requiring authentication is included in the [HSTS preload list](https://hstspreload.appspot.com/)
 - If user has no access over its private keys:
   - Full reserve audit(s)
   - Insurance(s) against failures on their side

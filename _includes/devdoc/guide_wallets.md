@@ -429,11 +429,11 @@ existing [(parent) public key][/en/glossary/parent-key]{:#term-parent-public-key
 integer (*i*) value. This child public key is the same public key which
 would be created by the `point()` function if you added the *i* value to
 the original (parent) private key and then found the remainder of that
-sum divided by a global constant used by all Bitcoin software (*G*):
+sum divided by a global constant used by all Bitcoin software (*p*):
 
 {% endautocrossref %}
 
-    point( (parent_private_key + i) % G ) == parent_public_key + point(i)
+    point( (parent_private_key + i) % p ) == parent_public_key + point(i)
 
 {% autocrossref %}
 
@@ -451,7 +451,7 @@ operations:
 
 {% endautocrossref %}
 
-    point( (child_private_key + i) % G ) == child_public_key + point(i)
+    point( (child_private_key + i) % p ) == child_public_key + point(i)
 
 {% autocrossref %}
 
