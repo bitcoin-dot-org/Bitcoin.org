@@ -268,6 +268,16 @@ untrusted source.
 
 {% include devdoc/bitcoin-core/rest/requests/get_block-notxdetails.md %}
 
+{% include devdoc/bitcoin-core/rest/requests/get_chaininfo.md %}
+
+{% include devdoc/bitcoin-core/rest/requests/get_getutxos.md %}
+
+{% include devdoc/bitcoin-core/rest/requests/get_headers.md %}
+
+{% include devdoc/bitcoin-core/rest/requests/get_mempool-contents.md %}
+
+{% include devdoc/bitcoin-core/rest/requests/get_mempool-info.md %}
+
 {% include devdoc/bitcoin-core/rest/requests/get_tx.md %}
 
 {% include references.md %}
