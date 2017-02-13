@@ -148,7 +148,7 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 * [CreateMultiSig][rpc createmultisig]: {{summary_createMultiSig}}
 * [EstimateFee][rpc estimatefee]: {{summary_estimateFee}} {{NEW0_10_0}}
 * [EstimatePriority][rpc estimatepriority]: {{summary_estimatePriority}} {{NEW0_10_0}}
-* [ValidateAddress][rpc validateaddress]: {{summary_validateAddress}}
+* [ValidateAddress][rpc validateaddress]: {{summary_validateAddress}} {{UPDATED0_13_0}}
 * [VerifyMessage][rpc verifymessage]: {{summary_verifyMessage}}
 
 {% endautocrossref %}
