@@ -15,6 +15,9 @@ http://opensource.org/licenses/MIT.
 
 The `estimatepriority` RPC {{summary_estimatePriority}}
 
+{{WARNING}} `estimatepriority` will be removed in a later version of Bitcoin
+Core.  Use the RPCs listed in the See Also subsection below instead.
+
 Transaction priority is relative to a transaction's byte size.
 
 *Parameter #1---how many blocks the transaction may wait before being included as a free high-priority transaction*

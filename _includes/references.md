@@ -69,6 +69,7 @@ http://opensource.org/licenses/MIT.
 [rpc abandontransaction]: /en/developer-reference#abandontransaction
 [rpc addmultisigaddress]: /en/developer-reference#addmultisigaddress
 [rpc addnode]: /en/developer-reference#addnode
+[rpc addwitnessaddress]: /en/developer-reference#addwitnessaddress
 [rpc backupwallet]: /en/developer-reference#backupwallet
 [rpc clearbanned]: /en/developer-reference#clearbanned
 [rpc createmultisig]: /en/developer-reference#createmultisig
@@ -81,7 +82,9 @@ http://opensource.org/licenses/MIT.
 [rpc encryptwallet]: /en/developer-reference#encryptwallet
 [rpc estimatefee]: /en/developer-reference#estimatefee
 [rpc estimatepriority]: /en/developer-reference#estimatepriority
+[rpc fundrawtransaction]: /en/developer-reference#fundrawtransaction
 [rpc generate]: /en/developer-reference#generate
+[rpc generatetoaddress]: /en/developer-reference#generatetoaddress
 [rpc getaccount]: /en/developer-reference#getaccount
 [rpc getaccountaddress]: /en/developer-reference#getaccountaddress
 [rpc getaddednodeinfo]: /en/developer-reference#getaddednodeinfo
@@ -100,6 +103,9 @@ http://opensource.org/licenses/MIT.
 [rpc getgenerate]: /en/developer-reference#getgenerate
 [rpc gethashespersec]: /en/developer-reference#gethashespersec
 [rpc getinfo]: /en/developer-reference#getinfo
+[rpc getmempoolancestors]: /en/developer-reference#getmempoolancestors
+[rpc getmempooldescendants]: /en/developer-reference#getmempooldescendants
+[rpc getmempoolentry]: /en/developer-reference#getmempoolentry
 [rpc getmempoolinfo]: /en/developer-reference#getmempoolinfo
 [rpc getmininginfo]: /en/developer-reference#getmininginfo
 [rpc getnettotals]: /en/developer-reference#getnettotals
@@ -122,6 +128,7 @@ http://opensource.org/licenses/MIT.
 [rpc help]: /en/developer-reference#help
 [rpc importaddress]: /en/developer-reference#importaddress
 [rpc importprivkey]: /en/developer-reference#importprivkey
+[rpc importprunedfunds]: /en/developer-reference#importprunedfunds
 [rpc importwallet]: /en/developer-reference#importwallet
 [rpc keypoolrefill]: /en/developer-reference#keypoolrefill
 [rpc listaccounts]: /en/developer-reference#listaccounts
@@ -137,6 +144,7 @@ http://opensource.org/licenses/MIT.
 [rpc move]: /en/developer-reference#move
 [rpc ping]: /en/developer-reference#ping-rpc
 [rpc prioritisetransaction]: /en/developer-reference#prioritisetransaction
+[rpc removeprunedfunds]: /en/developer-reference#removeprunedfunds
 [rpc sendfrom]: /en/developer-reference#sendfrom
 [rpc sendmany]: /en/developer-reference#sendmany
 [rpc sendrawtransaction]: /en/developer-reference#sendrawtransaction
@@ -146,6 +154,7 @@ http://opensource.org/licenses/MIT.
 [rpc setgenerate]: /en/developer-reference#setgenerate
 [rpc settxfee]: /en/developer-reference#settxfee
 [rpc signmessage]: /en/developer-reference#signmessage
+[rpc signmessagewithprivkey]: /en/developer-reference#signmessagewithprivkey
 [rpc signrawtransaction]: /en/developer-reference#signrawtransaction
 [rpc stop]: /en/developer-reference#stop
 [rpc submitblock]: /en/developer-reference#submitblock

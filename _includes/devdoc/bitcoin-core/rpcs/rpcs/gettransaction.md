@@ -89,8 +89,13 @@ The `gettransaction` RPC {{summary_getTransaction}}
 - n: "→ →<br>`fee`"
   t: "number (bitcoins)"
   p: "Optional<br>(0 or 1)"
-  d: "If sending payment, the fee paid as a negative bitcoins value.  May be `0`. Not returned if receiving payment"
+  d: "If sending payment, the fee paid as a negative bitcoins value.  May be `0`.  Not returned if receiving payment"
 
+- n: "→ →<br>`abandoned`"
+  t: "bool"
+  p: "Optional<br>(0 or 1)"
+  d: "*Added in Bitcoin Core 0.12.1*<br><br>Indicates if a transaction is was abandoned:<br>• `true` if it was abandoned (inputs are respendable)<br>• `false`  if it was not abandoned<br>Only returned by *send* category payments"
+  
 - n: "→<br>`hex`"
   t: "string (hex)"
   p: "Required<br>(exactly 1)"
@@ -98,7 +103,7 @@ The `gettransaction` RPC {{summary_getTransaction}}
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.12.1*
+*Example from Bitcoin Core 0.13.1*
 
 {% highlight bash %}
 bitcoin-cli -testnet gettransaction \

@@ -7,42 +7,20 @@ http://opensource.org/licenses/MIT.
 ##### GetGenerate
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getGenerate="returns true if the node is set to generate blocks using its CPU." %}
+{% assign summary_getGenerate="was removed in Bitcoin Core 0.13.0." %}
 
 {% autocrossref %}
 
 *Requires wallet support.*
 
-The `getgenerate` RPC {{summary_getGenerate}}
-
-*Parameters: none*
-
-*Result---whether the server is set to generate blocks*
-
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "bool"
-  p: "Required<br>(exactly 1)"
-  d: "Set to `true` if the server is set to generate blocks; set to `false` if it is not"
-
-{% enditemplate %}
-
-*Example from Bitcoin Core 0.10.0*
-
-{% highlight bash %}
-bitcoin-cli -testnet getgenerate
-{% endhighlight %}
-
-Result:
-
-{% highlight json %}
-false
-{% endhighlight %}
+The `getgenerate` RPC {{summary_getGenerate}} If you have an older
+version of Bitcoin Core, use `help getgenerate` to get help.
 
 *See also*
 
-* [SetGenerate][rpc setgenerate]: {{summary_setGenerate}}
+* [Generate][rpc generate]: {{summary_generate}}
+* [GenerateToAddress][rpc generatetoaddress]: {{summary_generateToAddress}}
 * [GetMiningInfo][rpc getmininginfo]: {{summary_getMiningInfo}}
-* [GetHashesPerSec][rpc gethashespersec]: {{summary_getHashesPerSec}}
+
 
 {% endautocrossref %}

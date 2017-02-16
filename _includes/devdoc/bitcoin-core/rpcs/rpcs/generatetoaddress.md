@@ -2,18 +2,20 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
-{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/generate.md" %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/generatetoaddress.md" %}
 
-##### Generate
+##### GenerateToAddress
 {% include helpers/subhead-links.md %}
 
-{% assign summary_generate="nearly instantly generates blocks." %}
+{% assign summary_generateToAddress="mines blocks immediately to a specified address." %}
 
 {% autocrossref %}
 
+*Added in Bitcoin Core 0.13.0*
+
 *Requires wallet support.*
 
-The `generate` RPC {{summary_generate}}
+The `generatetoaddress` RPC {{summary_generateToAddress}}
 
 *Parameter #1---the number of blocks to generate*
 
@@ -25,13 +27,23 @@ The `generate` RPC {{summary_generate}}
   
 {% enditemplate %}
 
-*Parameter #2---the maximum number of iterations to try*
+*Parameter #2---a transaction identifier (TXID)*
+
+{% itemplate ntpd1 %}
+- n: "Address"
+  t: "string (base58)"
+  p: "Required<br>(exactly 1)"
+  d: "The address to send the newly generated Bitcoin to"
+  
+{% enditemplate %}
+
+*Parameter #3---the maximum number of iterations to try*
 
 {% itemplate ntpd1 %}
 - n: "Maxtries"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "The maximum number of iterations that are tried to create the requested number of blocks. Default is `1000000`"
+  d: "The maximum number of iterations that are tried to create the requested number of blocks.  Default is `1000000`"
 
 {% enditemplate %}
 
@@ -46,15 +58,16 @@ The `generate` RPC {{summary_generate}}
 - n: "→<br>Header Hashes"
   t: "string (hex)"
   p: "Required<br>(1 or more)"
-  d: "The hashes of the headers of the blocks generated in regtest mode, as hex in RPC byte order"
+  d: "The hashes of the headers of the blocks generated, as hex in RPC byte order"
 {% enditemplate %}
 
 *Example from Bitcoin Core 0.13.1*
 
-Using regtest mode (also works in normal mode), generate 2 blocks:
+Using regtest mode, generate 2 blocks with maximal 500000 iterations:
 
 {% highlight bash %}
-bitcoin-cli -regtest generate 2 500000
+bitcoin-cli -regtest generatetoaddress 2 "1BRo7qrYHMPrzdBDzfjmzt\
+eBdYAyTMXW75" 500000
 {% endhighlight %}
 
 Result:
@@ -68,7 +81,7 @@ Result:
 
 *See also*
 
-* [GenerateToAddress][rpc generatetoaddress]: {{summary_generateToAddress}}
+* [Generate][rpc generate]: {{summary_generate}}
 * [GetMiningInfo][rpc getmininginfo]: {{summary_getMiningInfo}}
 * [GetBlockTemplate][rpc getblocktemplate]: {{summary_getBlockTemplate}}
 

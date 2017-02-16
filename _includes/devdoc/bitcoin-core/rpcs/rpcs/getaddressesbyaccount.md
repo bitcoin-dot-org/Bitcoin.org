@@ -15,6 +15,9 @@ http://opensource.org/licenses/MIT.
 
 The `getaddressesbyaccount` RPC {{summary_getAddressesByAccount}}
 
+{{WARNING}} `getaddressesbyaccount` will be removed in a later version of Bitcoin
+Core.  Use the RPCs listed in the See Also subsection below instead.
+
 *Parameter #1---the account name*
 
 {% itemplate ntpd1 %}

@@ -69,7 +69,7 @@ The `listsinceblock` RPC {{summary_listSinceBlock}}
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example from Bitcoin Core 0.13.1*
 
 Get all transactions since a particular block (including watch-only
 transactions) and the header hash of the sixth most recent block.
@@ -99,7 +99,8 @@ Result (edited to show only two payments):
             "walletconflicts" : [
             ],
             "time" : 1399294967,
-            "timereceived" : 1418924714
+            "timereceived" : 1418924714,
+            "bip125-replaceable": "no"		
         },
         {
             "involvesWatchonly" : true,
@@ -116,7 +117,8 @@ Result (edited to show only two payments):
             "walletconflicts" : [
             ],
             "time" : 1418695703,
-            "timereceived" : 1418925580
+            "timereceived" : 1418925580,
+            "bip125-replaceable": "no"
         }
     ],
     "lastblock" : "0000000000984add1a686d513e66d25686572c7276ec3e358a7e3e9f7eb88619"
@@ -127,6 +129,5 @@ Result (edited to show only two payments):
 
 * [ListReceivedByAccount][rpc listreceivedbyaccount]: {{summary_listReceivedByAccount}}
 * [ListReceivedByAddress][rpc listreceivedbyaddress]: {{summary_listReceivedByAddress}}
-
 
 {% endautocrossref %}
