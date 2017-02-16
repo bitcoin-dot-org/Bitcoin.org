@@ -71,6 +71,7 @@ http://opensource.org/licenses/MIT.
 [rpc addnode]: /en/developer-reference#addnode
 [rpc addwitnessaddress]: /en/developer-reference#addwitnessaddress
 [rpc backupwallet]: /en/developer-reference#backupwallet
+[rpc bumpfee]: /en/developer-reference#bumpfee
 [rpc clearbanned]: /en/developer-reference#clearbanned
 [rpc createmultisig]: /en/developer-reference#createmultisig
 [rpc createrawtransaction]: /en/developer-reference#createrawtransaction
@@ -103,6 +104,7 @@ http://opensource.org/licenses/MIT.
 [rpc getgenerate]: /en/developer-reference#getgenerate
 [rpc gethashespersec]: /en/developer-reference#gethashespersec
 [rpc getinfo]: /en/developer-reference#getinfo
+[rpc getmemoryinfo]: /en/developer-reference#getmemoryinfo
 [rpc getmempoolancestors]: /en/developer-reference#getmempoolancestors
 [rpc getmempooldescendants]: /en/developer-reference#getmempooldescendants
 [rpc getmempoolentry]: /en/developer-reference#getmempoolentry
@@ -127,6 +129,7 @@ http://opensource.org/licenses/MIT.
 [rpc getwork]: /en/developer-reference#getwork
 [rpc help]: /en/developer-reference#help
 [rpc importaddress]: /en/developer-reference#importaddress
+[rpc importmulti]: /en/developer-reference#importmulti
 [rpc importprivkey]: /en/developer-reference#importprivkey
 [rpc importprunedfunds]: /en/developer-reference#importprunedfunds
 [rpc importwallet]: /en/developer-reference#importwallet
@@ -143,6 +146,8 @@ http://opensource.org/licenses/MIT.
 [rpc lockunspent]: /en/developer-reference#lockunspent
 [rpc move]: /en/developer-reference#move
 [rpc ping]: /en/developer-reference#ping-rpc
+[rpc preciousblock]: /en/developer-reference#preciousblock
+[rpc pruneblockchain]: /en/developer-reference#pruneblockchain
 [rpc prioritisetransaction]: /en/developer-reference#prioritisetransaction
 [rpc removeprunedfunds]: /en/developer-reference#removeprunedfunds
 [rpc sendfrom]: /en/developer-reference#sendfrom
@@ -152,6 +157,7 @@ http://opensource.org/licenses/MIT.
 [rpc setaccount]: /en/developer-reference#setaccount
 [rpc setban]: /en/developer-reference#setban
 [rpc setgenerate]: /en/developer-reference#setgenerate
+[rpc setnetworkactive]: /en/developer-reference#setnetworkactive
 [rpc settxfee]: /en/developer-reference#settxfee
 [rpc signmessage]: /en/developer-reference#signmessage
 [rpc signmessagewithprivkey]: /en/developer-reference#signmessagewithprivkey
@@ -249,6 +255,8 @@ http://opensource.org/licenses/MIT.
 [Bitcoin Core 0.13.0]: /en/release/v0.13.0
 [Bitcoin Core 0.13.1]: /en/release/v0.13.1
 [Bitcoin Core 0.13.2]: /en/release/v0.13.2
+[Bitcoin Core 0.14.0]: /en/release/v0.14.0
+[Bitcoin Core 0.14.1]: /en/release/v0.14.1
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [bitcoind initial setup]: /en/developer-examples
 [bitcoinpdf]: https://bitcoin.org/en/bitcoin-paper

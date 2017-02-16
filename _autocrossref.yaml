@@ -201,6 +201,8 @@ CVE-2012-2459:
 '`addwitnessaddress` RPC': rpc addwitnessaddress
 '`backupwallet`': rpc backupwallet
 '`backupwallet` RPC': rpc backupwallet
+'`bumpfee`': rpc bumpfee
+'`bumpfee` RPC': rpc bumpfee
 '`clearbanned`': rpc clearbanned
 '`clearbanned` RPC': rpc clearbanned
 '`createmultisig`': rpc createmultisig
@@ -265,6 +267,8 @@ CVE-2012-2459:
 '`gethashespersec` RPC': rpc gethashespersec
 '`getinfo`': rpc getinfo
 '`getinfo` RPC': rpc getinfo
+'`getmemoryinfo`': rpc getmemoryinfo
+'`getmemoryinfo` RPC': rpc getmemoryinfo
 '`getmempoolancestors`': rpc getmempoolancestors
 '`getmempoolancestors` RPC': rpc getmempoolancestors
 '`getmempooldescendants`': rpc getmempooldescendants
@@ -313,6 +317,8 @@ CVE-2012-2459:
 '`help` RPC': rpc help
 '`importaddress`': rpc importaddress
 '`importaddress` RPC': rpc importaddress
+'`importmulti`': rpc importmulti
+'`importmulti` RPC': rpc importmulti
 '`importprivkey`': rpc importprivkey
 '`importprivkey` RPC': rpc importprivkey
 '`importprunedfunds`': rpc importprunedfunds
@@ -345,6 +351,12 @@ CVE-2012-2459:
 '`move` RPC': rpc move
 '`ping`': rpc ping
 '`ping` RPC': rpc ping
+'`preciousblock`': rpc preciousblock
+'`preciousblock` RPC': rpc preciousblock
+'`prioritisetransaction`': rpc prioritisetransaction
+'`prioritisetransaction` RPC': rpc prioritisetransaction
+'`pruneblockchain`': rpc pruneblockchain
+'`pruneblockchain` RPC': rpc pruneblockchain
 '`removeprunedfunds`': rpc removeprunedfunds
 '`removeprunedfunds` RPC': rpc removeprunedfunds
 '`sendfrom`': rpc sendfrom
@@ -364,6 +376,8 @@ CVE-2012-2459:
 '`setban` RPC': rpc setban
 '`setgenerate`': rpc setgenerate
 '`setgenerate` RPC': rpc setgenerate
+'`setnetworkactive`': rpc setnetworkactive
+'`setnetworkactive` RPC': rpc setnetworkactive
 '`settxfee`': rpc settxfee
 '`settxfee` RPC': rpc settxfee
 '`signmessage`': rpc signmessage
@@ -416,4 +430,6 @@ Bitcoin Core 0.12.1:
 Bitcoin Core 0.13.0:
 Bitcoin Core 0.13.1:
 Bitcoin Core 0.13.2:
+Bitcoin Core 0.14.0:
+Bitcoin Core 0.14.1:
 Bitcoin Core master:
