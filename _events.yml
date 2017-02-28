@@ -102,6 +102,30 @@
   country: "Australia"
   link: "http://www.questevents.com.au/apac-blockchain-conference-2017"
 
+- date: 2017-03-17
+  title: "BlockchainUA Conference Kyiv"
+  venue: "Conference Hall, Oasis, Ultramarine, 3rd floor"
+  address: "Vasylia Lypkivskoho St, 1А, 02000"
+  city: "Kyiv"
+  country: "Ukraine"
+  link: "http://blockchainua.com/"
+
+- date: 2017-03-18
+  title: "The 2nd All-Ukrainian Blockchain Hackathon"
+  venue: "2nd floor"
+  address: "Verkhnii Val st, 10"
+  city: "Kyiv"
+  country: "Ukraine"
+  link: "http://blockchainua-hackathon.com/en"
+
+- date: 2017-04-07
+  title: "CoinFestUK"
+  venue: "Manchester Conference Centre"
+  address: "Sackville Street, M1 3BB"
+  city: "Manchester"
+  country: "United Kingdom"
+  link: "https://www.coinfestuk.org"
+
 - date: 2017-05-19
   title: "Bitcoin Conference Prague"
   venue: "Angelo Hotel Prague"
@@ -125,6 +149,14 @@
   city: "Bayonne"
   country: "United States"
   link: "https://coinsbank.com/cruise"
+
+- date: 2017-06-01
+  title: "Blockchain Expo Europe"
+  venue: "Estrel"
+  address: "Sonnenallee 225, 12057"
+  city: "Berlin"
+  country: "Germany"
+  link: "http://www.blockchain-expo.com/europe"
 
 - date: 2017-06-26
   title: "Money 2020 Europe"
