@@ -187,9 +187,6 @@ addresses are on the linked GitHub profiles.
   Freenode
 - Theymos, [@theymos](https://github.com/theymos), theymos on Freenode
 
-Several of the above are only occasionally on Freenode.  Alert
-coordination is usually conducted in #bitcoin-dev on Freenode.
-
 #### Basic Alert
 
 1. Open your editor on a file named `_alerts/YYYY-MM-DD-short-title.md`
