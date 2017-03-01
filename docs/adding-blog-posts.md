@@ -1,7 +1,7 @@
 ## Blog Posts
 
-Posts for the [Bitcoin.org Site Blog][] should be added to the `_posts`
-directory with the naming convention:
+Posts for the [Bitcoin.org Site Blog](https://bitcoin.org/en/blog) should be 
+added to the `_posts` directory with the naming convention:
 `YEAR-MONTH-DAY-ARBITRARY_FILE_NAME` (with year, month, and day as
 two-digit numbers).  The YAML front matter should be similar to this:
 
