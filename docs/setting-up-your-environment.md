@@ -1,4 +1,4 @@
-### Previewing
+## Setting Up Your Environment
 
 #### Preview Small Text Changes
 

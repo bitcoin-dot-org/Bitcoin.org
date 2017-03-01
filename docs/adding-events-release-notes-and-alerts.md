@@ -1,4 +1,4 @@
-## Posts
+## Adding Events, Release Notes and Alerts
 
 ### Events
 
