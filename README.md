@@ -60,49 +60,6 @@ You can always report problems or help improve bitcoin.org by opening a [new iss
 [full node page]: https://bitcoin.org/en/full-node
 [write new documentation]: #developer-documentation
 
-### Blog Posts
-
-Posts for the [Bitcoin.org Site Blog][] should be added to the `_posts`
-directory with the naming convention:
-`YEAR-MONTH-DAY-ARBITRARY_FILE_NAME` (with year, month, and day as
-two-digit numbers).  The YAML front matter should be similar to this:
-
-    ---
-    type: posts
-    layout: post
-    lang: en
-    category: blog
-
-    title: "Quarterly Report March 2015"
-    permalink: /en/posts/quarterly-report-march-2015.html
-    date: 2015-03-05
-    author: >
-      David A. Harding (<a href="mailto:dave@dtrt.org">email</a>, <a
-      href="https://github.com/harding">GitHub</a>,
-      <a href="http://www.reddit.com/user/harda/">Reddit</a>)
-    ---
-
-The type, layout, and category should always be as specified above. The
-other parameters should be set to values specific to that post, but the
-permalink must end in '.html'.
-
-Below the YAML front matter, enter the content of the post in Markdown
-format.  Images should be placed in `img/blog/free` if they are
-MIT-licensed or `img/blog/nonfree` if they have a more restrictive
-copyright license.
-
-### Developer PGP keys
-
-The site hosts the PGP keys for several Bitcoin Core contributors. Here
-are some notes about updating those keys based on previous experience:
-
-1. If a key is revoked, update the key with the revocation immediately.
-   Anyone with commit access to the site repository may do this without
-   prior review, but they should post the commit ID to an open issue or
-   PR so other people can review it. After the revoked key is uploaded,
-   discussion about verifying/adding a replacement key may continue at a
-   slower pace.
-
 ### Code of Conduct
 
 Contributors to Bitcoin.org are expected to adhere to the project's [Code of
