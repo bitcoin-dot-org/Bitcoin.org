@@ -2,10 +2,12 @@
 
 Current Build Status: ![Build Status](https://travis-ci.org/bitcoin-dot-org/bitcoin.org.svg?branch=master)
 
+Live site: [Bitcoin.org](https://bitcoin.org)
+
 Report problems or help improve the site by opening a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) or [pull request](https://github.com/bitcoin-dot-org/bitcoin.org/compare).
 
 ## Documentation
-Use the following quick guides to help you get started:
+The following quick guides will help you get started:
 
 + [Becoming a Contributor](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/become-a-contributor.md)
 + [Working with GitHub](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md)
@@ -19,8 +21,7 @@ Use the following quick guides to help you get started:
 
 ### Code of Conduct
 
-Contributors to Bitcoin.org are expected to adhere to the project's [Code of
-Conduct](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/CODE_OF_CONDUCT.md).
+Participation in this project is subject to a [Code of Conduct](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/CODE_OF_CONDUCT.md).
 
 ### Questions?
-Contact Will Binns ([will@bitcoin.org](mailto:will@bitcoin.org)) if you need help.
+Please contact Will Binns ([will@bitcoin.org](mailto:will@bitcoin.org)) if you need help.
