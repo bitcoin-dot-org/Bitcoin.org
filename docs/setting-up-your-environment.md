@@ -75,9 +75,9 @@ Use that program to install bundle:
 **Install the Ruby dependencies**
 
 Ensure you checked out the site repository as described in [Working with
-GitHub](#working-with-github). Then change directory to the top-level of
-your local repository (replace `bitcoin.org` with the full path to your local
-repository clone):
+GitHub](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md).
+Then change directory to the top-level of your local repository (replace
+`bitcoin.org` with the full path to your local repository clone):
 
     cd bitcoin.org
 
@@ -97,9 +97,8 @@ To preview the website in your local browser, make sure you're in the
 
     make preview
 
-This will compile the site (takes 5 to 10 minutes; see the [speed up
-instructions](#fast-partial-previews-or-builds)) and then print the a message
-like this:
+This will compile the site (takes 5 to 10 minutes; see the speed up
+instructions and then print the a message like this:
 
     Server address: http://0.0.0.0:4000
     Server running... press ctrl-c to stop.
