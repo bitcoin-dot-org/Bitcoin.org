@@ -40,7 +40,7 @@ Here are some ways you can help:
 [developer documentation pages]: https://bitcoin.org/en/developer-documentation
 [edit events]:
 https://github.com/bitcoin-dot-org/bitcoin.org/edit/master/_events.yml
-[event instructions]: #events
+[event instructions]: https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-events-release-notes-and-alerts.md
 [events page]: https://bitcoin.org/en/events
 [GitHub]: https://github.com/bitcoin-dot-org/bitcoin.org
 [new issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
@@ -48,13 +48,13 @@ https://github.com/bitcoin-dot-org/bitcoin.org/edit/master/_events.yml
 https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22
 [PRs adding new documentation]:
 https://github.com/bitcoin-dot-org/bitcoin.org/pulls?q=is%3Aopen+label%3A%22Dev+Docs%22+is%3Apr
-[pull request]: #working-with-github
+[pull request]: https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md
 [recommended starter projects]:
 https://github.com/bitcoin-dot-org/bitcoin.org/wiki/Starter-Projects
 [review wallet submissions]:
 https://github.com/bitcoin-dot-org/bitcoin.org/pulls?q=is%3Aopen+label%3Awallet+is%3Apr
-[submit new wallets]: #adding-a-wallet
+[submit new wallets]: https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/managing-wallets.md
 [transifex]: https://www.transifex.com/projects/p/bitcoinorg/
-[translate Bitcoin.org into another language]: #how-to-translate
+[translate Bitcoin.org into another language]: https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md
 [full node page]: https://bitcoin.org/en/full-node
-[write new documentation]: #developer-documentation
+[write new documentation]: https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/contributing-to-developer-documentation.md
