@@ -28,6 +28,3 @@ Below the YAML front matter, enter the content of the post in Markdown
 format.  Images should be placed in `img/blog/free` if they are
 MIT-licensed or `img/blog/nonfree` if they have a more restrictive
 copyright license.
-
-**Questions?**
-Contact Will Binns <will@bitcoin.org> for help.

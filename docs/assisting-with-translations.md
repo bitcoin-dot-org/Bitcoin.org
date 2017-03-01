@@ -58,6 +58,3 @@ translations at once:
 translations/bitcoinorg.bitcoinorg/en.yml
     (update en.yml)
     tx push -s -t -f --skip --no-interactive
-
-**Questions?**
-Contact Will Binns <will@bitcoin.org> for help.

@@ -81,6 +81,3 @@ need to re-create the branch and the pull request.
 If you continue to contribute to Bitcoin.org beyond a single pull
 request, you may want to use a more [advanced GitHub
 workflow](https://gist.github.com/harding/1a99b0bad37f9498709f).
-
-**Questions?**
-Contact Will Binns <will@bitcoin.org> for help.

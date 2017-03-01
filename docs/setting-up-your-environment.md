@@ -187,6 +187,3 @@ before building you preview:
 You can also add this line to your `~/.bashrc` file if you frequently
 build site previews so that you don't have to remember to run it for
 each shell.
-
-**Questions?**
-Contact Will Binns <will@bitcoin.org> for help.

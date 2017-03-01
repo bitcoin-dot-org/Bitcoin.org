@@ -325,6 +325,3 @@ bannerclass: success
 ```
 
 [markdown format]: https://help.github.com/articles/markdown-basics/
-
-**Questions?**
-Contact Will Binns <will@bitcoin.org> for help.

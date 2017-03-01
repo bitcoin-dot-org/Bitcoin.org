@@ -156,6 +156,3 @@ servers and be compatible with Tor.
 
 To get a passing score, the wallet must avoid address reuse by using a new
 change address for each transaction.
-
-**Questions?**
-Contact Will Binns <will@bitcoin.org> for help.

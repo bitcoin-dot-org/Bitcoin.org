@@ -37,6 +37,3 @@ to update the glossary.rb plugin and templates to support them.
 You can add new search terms or categories directly to the `devsearches`
 array in `_config.yaml`.  Comments in that file should provide full
 documentation.
-
-**Questions?**
-Contact Will Binns <will@bitcoin.org> for help.
