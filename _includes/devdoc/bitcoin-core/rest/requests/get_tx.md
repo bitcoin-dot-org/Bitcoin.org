@@ -75,97 +75,86 @@ GET /tx/<txid>.<format>
 
 {% enditemplate %}
 
-*Examples from Bitcoin Core 0.10.0*
+*Examples from Bitcoin Core 0.13.1*
 
 Request a transaction in hex-encoded serialized transaction format:
 
 {% highlight bash %}
-curl http://localhost:18332/rest/tx/ef7c0cbf6ba5af68d2ea239bba709b26ff7b0b669839a63bb01c2cb8e8de481e.hex
+curl http://localhost:8332/rest/tx/42f9df54a39026ccb54362141c41713968f19e1f14949ab6609b03ffa4b7f120.hex
 {% endhighlight %}
 
 Result (wrapped):
 
 {% highlight text %}
-0100000001268a9ad7bfb21d3c086f0ff28f73a064964aa069ebb69a9e437da8\
-5c7e55c7d7000000006b483045022100ee69171016b7dd218491faf6e13f53d4\
-0d64f4b40123a2de52560feb95de63b902206f23a0919471eaa1e45a0982ed28\
-8d374397d30dff541b2dd45a4c3d0041acc0012103a7c1fd1fdec50e1cf3f0cc\
-8cb4378cd8e9a2cee8ca9b3118f3db16cbbcf8f326ffffffff0350ac60020000\
-00001976a91456847befbd2360df0e35b4e3b77bae48585ae06888ac80969800\
-000000001976a9142b14950b8d31620c6cc923c5408a701b1ec0a02088ac002d\
-3101000000001976a9140dfc8bafc8419853b34d5e072ad37d1a5159f58488ac\
-00000000
+0100000001bf33f5e034d1774f4019c03e119f4fa9e421339271f7476e5e34ff\
+72839ebc16000000006b483045022100dab0ade70063cbc5ad44664b707391f8\
+ffe6e406b1bab43abfb547d701694d98022067580db89b81c69ba83487ea0a1b\
+cb6a325d2903b726980865210d2127de09710121023ee7a6437e9ad2957cd032\
+38b9668c15cb1dc6ac9c9d142f829168e1a3e4a9c4feffffff02c88833030000\
+00001976a9145f4865d1865127807f714b0ad1ddfae9870866d888ac102697eb\
+000000001976a91479e19d5c1cbc1c18f59c57d37ca403f3bcdaa73f88acd0c3\
+0600
 {% endhighlight %}
 
 Get the same transaction in JSON:
 
 {% highlight bash %}
-curl http://localhost:18332/rest/tx/ef7c0cbf6ba5af68d2ea239bba709b26ff7b0b669839a63bb01c2cb8e8de481e.json
+curl http://localhost:8332/rest/tx/42f9df54a39026ccb54362141c41713968f19e1f14949ab6609b03ffa4b7f120.json
 {% endhighlight %}
 
 Result (whitespaced added):
 
 {% highlight json %}
 {
-    "txid": "ef7c0cbf6ba5af68d2ea239bba709b26ff7b0b669839a63bb01c2cb8e8de481e",
-    "version": 1,
-    "locktime": 0,
-    "vin": [
-        {
-            "txid": "d7c7557e5ca87d439e9ab6eb69a04a9664a0738ff20f6f083c1db2bfd79a8a26",
-            "vout": 0,
-            "scriptSig": {
-                "asm": "3045022100ee69171016b7dd218491faf6e13f53d40d64f4b40123a2de52560feb95de63b902206f23a0919471eaa1e45a0982ed288d374397d30dff541b2dd45a4c3d0041acc001 03a7c1fd1fdec50e1cf3f0cc8cb4378cd8e9a2cee8ca9b3118f3db16cbbcf8f326",
-                "hex": "483045022100ee69171016b7dd218491faf6e13f53d40d64f4b40123a2de52560feb95de63b902206f23a0919471eaa1e45a0982ed288d374397d30dff541b2dd45a4c3d0041acc0012103a7c1fd1fdec50e1cf3f0cc8cb4378cd8e9a2cee8ca9b3118f3db16cbbcf8f326"
-            },
-            "sequence": 4294967295
-        }
-    ],
-    "vout": [
-        {
-            "value": 0.39889999999999998,
-            "n": 0,
-            "scriptPubKey": {
-                "asm": "OP_DUP OP_HASH160 56847befbd2360df0e35b4e3b77bae48585ae068 OP_EQUALVERIFY OP_CHECKSIG",
-                "hex": "76a91456847befbd2360df0e35b4e3b77bae48585ae06888ac",
-                "reqSigs": 1,
-                "type": "pubkeyhash",
-                "addresses": [
-                    "moQR7i8XM4rSGoNwEsw3h4YEuduuP6mxw7"
-                ]
-            }
-        },
-        {
-            "value": 0.10000000000000001,
-            "n": 1,
-            "scriptPubKey": {
-                "asm": "OP_DUP OP_HASH160 2b14950b8d31620c6cc923c5408a701b1ec0a020 OP_EQUALVERIFY OP_CHECKSIG",
-                "hex": "76a9142b14950b8d31620c6cc923c5408a701b1ec0a02088ac",
-                "reqSigs": 1,
-                "type": "pubkeyhash",
-                "addresses": [
-                    "mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN"
-                ]
-            }
-        },
-        {
-            "value": 0.20000000000000001,
-            "n": 2,
-            "scriptPubKey": {
-                "asm": "OP_DUP OP_HASH160 0dfc8bafc8419853b34d5e072ad37d1a5159f584 OP_EQUALVERIFY OP_CHECKSIG",
-                "hex": "76a9140dfc8bafc8419853b34d5e072ad37d1a5159f58488ac",
-                "reqSigs": 1,
-                "type": "pubkeyhash",
-                "addresses": [
-                    "mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe"
-                ]
-            }
-        }
-    ],
-    "blockhash": "00000000103e0091b7d27e5dc744a305108f0c752be249893c749e19c1c82317",
-    "confirmations": 91916,
-    "time": 1398734825,
-    "blocktime": 1398734825
+  "txid": "42f9df54a39026ccb54362141c41713968f19e1f14949ab6609b03ffa4b7f120",
+  "hash": "42f9df54a39026ccb54362141c41713968f19e1f14949ab6609b03ffa4b7f120",
+  "size": 226,
+  "vsize": 226,
+  "version": 1,
+  "locktime": 443344,
+  "vin": [
+    {
+      "txid": "16bc9e8372ff345e6e47f771923321e4a94f9f113ec019404f77d134e0f533bf",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "3045022100dab0ade70063cbc5ad44664b707391f8ffe6e406b1bab43abfb547d701694d98022067580db89b81c69ba83487ea0a1bcb6a325d2903b726980865210d2127de0971[ALL] 023ee7a6437e9ad2957cd03238b9668c15cb1dc6ac9c9d142f829168e1a3e4a9c4",
+        "hex": "483045022100dab0ade70063cbc5ad44664b707391f8ffe6e406b1bab43abfb547d701694d98022067580db89b81c69ba83487ea0a1bcb6a325d2903b726980865210d2127de09710121023ee7a6437e9ad2957cd03238b9668c15cb1dc6ac9c9d142f829168e1a3e4a9c4"
+      },
+      "sequence": 4294967294
+    }
+  ],
+  "vout": [
+    {
+      "value": 0.53709,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "OP_DUP OP_HASH160 5f4865d1865127807f714b0ad1ddfae9870866d8 OP_EQUALVERIFY OP_CHECKSIG",
+        "hex": "76a9145f4865d1865127807f714b0ad1ddfae9870866d888ac",
+        "reqSigs": 1,
+        "type": "pubkeyhash",
+        "addresses": [
+          "19govWMzsRXqLUsUrHQKQ3DzekRxhsqwWH"
+        ]
+      }
+    },
+    {
+      "value": 39.5255144,
+      "n": 1,
+      "scriptPubKey": {
+        "asm": "OP_DUP OP_HASH160 79e19d5c1cbc1c18f59c57d37ca403f3bcdaa73f OP_EQUALVERIFY OP_CHECKSIG",
+        "hex": "76a91479e19d5c1cbc1c18f59c57d37ca403f3bcdaa73f88ac",
+        "reqSigs": 1,
+        "type": "pubkeyhash",
+        "addresses": [
+          "1C7T3CJ6MEYf1YCYYPfN6zuGirqZcD3wuE"
+        ]
+      }
+    }
+  ],
+  "blockhash": "0000000000000000023da07114323ad9676896f354951e6b563d143428b69c03",
+  "confirmations": 28,
+  "time": 1481662934,
+  "blocktime": 1481662934
 }
 {% endhighlight %}
 

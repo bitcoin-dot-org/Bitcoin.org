@@ -59,7 +59,7 @@ The `listreceivedbyaddress` RPC {{summary_listReceivedByAddress}}
 - n: "→ →<br>`account`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The account the address belongs to; may be the default account, an empty string (\"\")"
+  d: "*Deprecated: will be removed in a later version of Bitcoin Core*<br><br>The account the address belongs to.  May be the default account, an empty string (\"\")"
 
 - n: "→ →<br>`amount`"
   t: "number (bitcoins)"
@@ -71,7 +71,12 @@ The `listreceivedbyaddress` RPC {{summary_listReceivedByAddress}}
   p: "Required<br>(exactly 1)"
   d: "The number of confirmations of the latest transaction to the address.  May be `0` for unconfirmed"
 
-- n: "→ →<br>TXIDs"
+- n: "→ →<br>`label`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The account the address belongs to.  May be the default account, an empty string (\"\")"    
+
+- n: "→ →<br>`txids`"
   t: "array"
   p: "Required<br>(exactly 1)"
   d: "An array of TXIDs belonging to transactions that pay the address"
@@ -83,7 +88,7 @@ The `listreceivedbyaddress` RPC {{summary_listReceivedByAddress}}
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example from Bitcoin Core 0.13.1*
 
 List addresses with balances confirmed by at least six blocks, including
 watch-only addresses:
@@ -101,6 +106,7 @@ Result (edit to show only two entries):
         "account" : "test1",
         "amount" : 1.99900000,
         "confirmations" : 55680,
+        "label" : "test1",
         "txids" : [
             "4d71a6127796766c39270881c779b6e05183f2bf35589261e9572436356f287f",
             "997115d0cf7b83ed332e6c1f2e8c44f803c95ea43490c84ce3e9ede4b2e1605f"
@@ -112,6 +118,7 @@ Result (edit to show only two entries):
         "account" : "someone else's address2",
         "amount" : 0.00050000,
         "confirmations" : 34714,
+        "label" : "someone else's address2",
         "txids" : [
             "99845fd840ad2cc4d6f93fafb8b072d188821f55d9298772415175c456f3077d"
         ]

@@ -11,14 +11,12 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-The `getwork` RPC {{summary_getWork}}. If you have an older
-version of Bitcoin Core, use the `help` RPC to get help. For example:
-`help getwork`
+The `getwork` RPC {{summary_getWork}}  If you have an older
+version of Bitcoin Core, use `help getwork` to get help.
 
 *See also*
 
 * [GetBlockTemplate][rpc getblocktemplate]: {{summary_getBlockTemplate}}
 * [SubmitBlock][rpc submitblock]: {{summary_submitBlock}}
-* [SetGenerate][rpc setgenerate]: {{summary_setGenerate}}
 
 {% endautocrossref %}

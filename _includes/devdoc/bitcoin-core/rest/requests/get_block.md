@@ -60,10 +60,20 @@ GET /block/<hash>.<format>
   p: "Required<br>(exactly 1)"
   d: "The number of confirmations the transactions in this block have, starting at 1 when this block is at the tip of the best block chain.  This score will be -1 if the the block is not part of the best block chain"
 
+- n: "→<br>`strippedsize`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>The size of this block in serialized block format excluding witness data, counted in bytes"
+  
 - n: "→<br>`size`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The size of this block in serialized block format, counted in bytes"
+  d: "The size of this block in serialized block format, counted in bytes" 
+  
+- n: "→<br>`weight`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>The block weight as defined in BIP 141"
 
 - n: "→<br>`height`"
   t: "number (int)"
@@ -74,6 +84,11 @@ GET /block/<hash>.<format>
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "This block's version number.  See [block version numbers][section block versions]"
+  
+- n: "→<br>`versionHex`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>This block's version number formatted in hexadecimal.  See [BIP9 assignments]"
 
 - n: "→<br>`merkleroot`"
   t: "string (hex)"
@@ -95,6 +110,11 @@ GET /block/<hash>.<format>
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "The value of the *time* field in the block header, indicating approximately when the block was created"
+  
+- n: "→<br>`mediantime`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.12.0*<br><br>The median time of the 11 blocks before the most recent block on the blockchain.  Used for validating transaction locktime under BIP113"
 
 - n: "→<br>`nonce`"
   t: "number (int)"
@@ -128,84 +148,93 @@ GET /block/<hash>.<format>
 
 {% enditemplate %}
 
-*Examples from Bitcoin Core 0.10.0*
+*Examples from Bitcoin Core 0.13.1*
 
 Request a block in hex-encoded serialized block format:
 
 {% highlight bash %}
-curl http://localhost:18332/rest/block/000000000fe549a89848c76070d4132872cfb6efe5315d01d7ef77e4900f2d39.hex
+curl http://localhost:8332/rest/block/00000000839a8e6886ab5951d76f411475428afc90947ee320161bbf18eb6048.hex
 {% endhighlight %}
 
 Result (wrapped):
 
-{% highlight text %}
-02000000df11c014a8d798395b5059c722ebdf3171a4217ead71bf6e0e99f4c7\
-000000004a6f6a2db225c81e77773f6f0457bcb05865a94900ed11356d0b7522\
-8efb38c7785d6053ffff001d005d437001010000000100000000000000000000\
-00000000000000000000000000000000000000000000ffffffff0d03b4770301\
-64062f503253482fffffffff0100f9029500000000232103adb7d8ef6b63de74\
-313e0cd4e07670d09a169b13e4eda2d650f529332c47646dac00000000
+{% highlight bash %}
+010000006fe28c0ab6f1b372c1a6a246ae63f74f931e8365e15a089c68d61900\
+00000000982051fd1e4ba744bbbe680e1fee14677ba1a3c3540bf7b1cdb606e8\
+57233e0e61bc6649ffff001d01e3629901010000000100000000000000000000\
+00000000000000000000000000000000000000000000ffffffff0704ffff001d\
+0104ffffffff0100f2052a0100000043410496b538e853519c726a2c91e61ec1\
+1600ae1390813a627c66fb8be7947be63c52da7589379515d4e0a604f8141781\
+e62294721166bf621e73a82cbf2342c858eeac00000000
+
 {% endhighlight %}
 
 Get the same block in JSON:
 
 {% highlight bash %}
-curl http://localhost:18332/rest/block/000000000fe549a89848c76070d4132872cfb6efe5315d01d7ef77e4900f2d39.json
+curl http://localhost:8332/rest/block/00000000839a8e6886ab5951d76f411475428afc90947ee320161bbf18eb6048.json 
 {% endhighlight %}
 
 Result (whitespaced added):
 
 {% highlight json %}
 {
-    "hash": "000000000fe549a89848c76070d4132872cfb6efe5315d01d7ef77e4900f2d39",
-    "confirmations": 91785,
-    "size": 189,
-    "height": 227252,
-    "version": 2,
-    "merkleroot": "c738fb8e22750b6d3511ed0049a96558b0bc57046f3f77771ec825b22d6a6f4a",
-    "tx": [
+  "hash": "00000000839a8e6886ab5951d76f411475428afc90947ee320161bbf18eb6048",
+  "confirmations": 443372,
+  "strippedsize": 215,
+  "size": 215,
+  "weight": 860,
+  "height": 1,
+  "version": 1,
+  "versionHex": "00000001",
+  "merkleroot": "0e3e2357e806b6cdb1f70b54c3a3a17b6714ee1f0e68bebb44a74b1efd512098",
+  "tx": [
+    {
+      "txid": "0e3e2357e806b6cdb1f70b54c3a3a17b6714ee1f0e68bebb44a74b1efd512098",
+      "hash": "0e3e2357e806b6cdb1f70b54c3a3a17b6714ee1f0e68bebb44a74b1efd512098",
+      "size": 134,
+      "vsize": 134,
+      "version": 1,
+      "locktime": 0,
+      "vin": [
         {
-            "txid": "c738fb8e22750b6d3511ed0049a96558b0bc57046f3f77771ec825b22d6a6f4a",
-            "version": 1,
-            "locktime": 0,
-            "vin": [
-                {
-                    "coinbase": "03b477030164062f503253482f",
-                    "sequence": 4294967295
-                }
-            ],
-            "vout": [
-                {
-                    "value": 25.0,
-                    "n": 0,
-                    "scriptPubKey": {
-                        "asm": "03adb7d8ef6b63de74313e0cd4e07670d09a169b13e4eda2d650f529332c47646d OP_CHECKSIG",
-                        "hex": "2103adb7d8ef6b63de74313e0cd4e07670d09a169b13e4eda2d650f529332c47646dac",
-                        "reqSigs": 1,
-                        "type": "pubkey",
-                        "addresses": [
-                            "muXeUp1QYscuPRFH3qHtSrHyG6DQpvg7xZ"
-                        ]
-                    }
-                }
-            ]
+          "coinbase": "04ffff001d0104",
+          "sequence": 4294967295
         }
-    ],
-    "time": 1398824312,
-    "nonce": 1883462912,
-    "bits": "1d00ffff",
-    "difficulty": 1.0,
-    "chainwork": "000000000000000000000000000000000000000000000000083ada4a4009841a",
-    "previousblockhash": "00000000c7f4990e6ebf71ad7e21a47131dfeb22c759505b3998d7a814c011df",
-    "nextblockhash": "00000000afe1928529ac766f1237657819a11cfcc8ca6d67f119e868ed5b6188"
+      ],
+      "vout": [
+        {
+          "value": 50,
+          "n": 0,
+          "scriptPubKey": {
+            "asm": "0496b538e853519c726a2c91e61ec11600ae1390813a627c66fb8be7947be63c52da7589379515d4e0a604f8141781e62294721166bf621e73a82cbf2342c858ee OP_CHECKSIG",
+            "hex": "410496b538e853519c726a2c91e61ec11600ae1390813a627c66fb8be7947be63c52da7589379515d4e0a604f8141781e62294721166bf621e73a82cbf2342c858eeac",
+            "reqSigs": 1,
+            "type": "pubkey",
+            "addresses": [
+              "12c6DSiU4Rq3P4ZxziKxzrL5LmMBrzjrJX"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "time": 1231469665,
+  "mediantime": 1231469665,
+  "nonce": 2573394689,
+  "bits": "1d00ffff",
+  "difficulty": 1,
+  "chainwork": "0000000000000000000000000000000000000000000000000000000200020002",
+  "previousblockhash": "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
+  "nextblockhash": "000000006a625f06636b8bb6ac7b960a8d03705d1ace08b1a19da3fdcc99ddbd"
 }
 {% endhighlight %}
 
 *See also*
 
 * [GET Block/NoTxDetails][rest get block-notxdetails] {{summary_restGetBlock-noTxDetails}}
+* [GetBestBlockHash][rpc getbestblockhash] RPC: {{summary_getBestBlockHash}}
 * [GetBlock][rpc getblock] RPC: {{summary_getBlock}}
 * [GetBlockHash][rpc getblockhash] RPC: {{summary_getBlockHash}}
-* [GetBestBlockHash][rpc getbestblockhash] RPC: {{summary_getBestBlockHash}}
 
 {% endautocrossref %}

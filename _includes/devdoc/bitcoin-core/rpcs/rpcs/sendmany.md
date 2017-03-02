@@ -22,7 +22,7 @@ The `sendmany` RPC {{summary_sendMany}}
 - n: "From Account"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The name of the account from which the bitcoins should be spent.  Use an empty string (\"\") for the default account. Bitcoin Core will ensure the account has sufficient bitcoins to pay the total amount in the *outputs* field described below (but the transaction fee paid is not included in the calculation, so an account can spend a total of its balance plus the transaction fee)"
+  d: "*Deprecated: will be removed in a later version of Bitcoin Core*<br><br>The name of the account from which the bitcoins should be spent.  Use an empty string (\"\") for the default account. Bitcoin Core will ensure the account has sufficient bitcoins to pay the total amount in the *outputs* field described below (but the transaction fee paid is not included in the calculation, so an account can spend a total of its balance plus the transaction fee)"
 
 {% enditemplate %}
 

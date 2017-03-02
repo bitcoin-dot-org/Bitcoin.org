@@ -2,27 +2,26 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
-{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/signmessage.md" %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/signmessagewithprivkey.md" %}
 
-##### SignMessage
+##### SignMessageWithPrivKey
 {% include helpers/subhead-links.md %}
 
-{% assign summary_signMessage="signs a message with the private key of an address." %}
+{% assign summary_signMessageWithPrivKey="signs a message with a given private key." %}
 
 {% autocrossref %}
 
-*Requires wallet support. Requires an unlocked wallet or an
-unencrypted wallet.*
+*Added in Bitcoin Core 0.13.0*
 
-The `signmessage` RPC {{summary_signMessage}}
+The `signmessagewithprivkey` RPC {{summary_signMessageWithPrivKey}}
 
-*Parameter #1---the address corresponding to the private key to sign with*
+*Parameter #1---the private key to sign with*
 
 {% itemplate ntpd1 %}
-- n: "Address"
+- n: "Privat Key"
   t: "string (base58)"
   p: "Required<br>(exactly 1)"
-  d: "A P2PKH address whose private key belongs to this wallet"
+  d: "The private key to sign the message with encoded in base58check using wallet import format (WIF)"
 
 {% enditemplate %}
 
@@ -48,21 +47,22 @@ The `signmessage` RPC {{summary_signMessage}}
 
 *Example from Bitcoin Core 0.13.1*
 
-Sign a the message "Hello, World!" using the following address:
+Sign a the message "Hello, World!" using the following private key:
 
 {% highlight bash %}
-bitcoin-cli signmessage 17fshh33qUze2yifiJ2sXgijSMzJ2KNEwu "Hello, World!"
+bitcoin-cli signmessagewithprivkey 5HpHagT65TZzG1PH3CSu63k8DbpvD\
+8s5ip4nEB3kEsreKamq6aB "Hello, World!"
 {% endhighlight %}
 
 Result:
 
 {% highlight text %}
-ILypRih424AWRYXK1goB6mskx99aelWcVCTEKolaW7U4VPnwj6Khf+vJSED7pMtPQd3KnXuqq1JvavrQdPMFFB0=
+G+ZauMFgQExAJRKZSldbAVEaZo4i0p2AVivbFASo50PkUnynAMDUiNMVdXDlpYMWvatxCmYmLn8C9zygPRn3Y1c=
 {% endhighlight %}
 
 *See also*
 
-* [SignMessageWithPrivKey][rpc signmessagewithprivkey]: {{summary_signMessageWithPrivKey}}
+* [SignMessage][rpc signmessage]: {{summary_signMessage}}
 * [VerifyMessage][rpc verifymessage]: {{summary_verifyMessage}}
 
 {% endautocrossref %}

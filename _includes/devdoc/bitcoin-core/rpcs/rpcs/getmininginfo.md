@@ -51,7 +51,7 @@ The `getmininginfo` RPC {{summary_getMiningInfo}}
 - n: "→<br>`genproclimit`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The limit on the number of processors to use for generation.  If generation was enabled since the last time this node was restarted, this is the number used in the second parameter of the `setgenerate` RPC (or the default).  Otherwise, it is `-1`"
+  d: "*Removed in Bitcoin Core 0.13.0*<br><br>The limit on the number of processors to use for generation.  If generation was enabled since the last time this node was restarted, this is the number used in the second parameter of the `setgenerate` RPC (or the default).  Otherwise, it is `-1`"
 
 - n: "→<br>`networkhashps`"
   t: "number (int)"
@@ -71,21 +71,21 @@ The `getmininginfo` RPC {{summary_getMiningInfo}}
 - n: "→<br>`chain`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "Set to `main` for mainnet, `test` for testnet, and `regtest` for regtest"
+  d: "*Added in Bitcoin Core 0.10.0*<br><br>Set to `main` for mainnet, `test` for testnet, and `regtest` for regtest"
 
 - n: "→<br>`generate`"
   t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "Set to `true` if generation is currently enabled; set to `false` if generation is currently disabled.  Only returned if the node has wallet support enabled"
+  d: "*Removed in Bitcoin Core 0.13.0*<br><br>Set to `true` if generation is currently enabled; set to `false` if generation is currently disabled.  Only returned if the node has wallet support enabled"
 
 - n: "→<br>`hashespersec`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "*Removed in Bitcoin Core master (unreleased)*<br><br>The approximate number of hashes per second this node is generating across all CPUs, if generation is enabled.  Otherwise `0`.  Only returned if the node has wallet support enabled"
+  d: "*Removed in Bitcoin Core 0.11.0*<br><br>The approximate number of hashes per second this node is generating across all CPUs, if generation is enabled.  Otherwise `0`.  Only returned if the node has wallet support enabled"
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example from Bitcoin Core 0.13.1*
 
 {% highlight bash %}
 bitcoin-cli -testnet getmininginfo
@@ -100,13 +100,10 @@ Result:
     "currentblocktx" : 3,
     "difficulty" : 1.00000000,
     "errors" : "",
-    "genproclimit" : 1,
     "networkhashps" : 5699977416637,
     "pooledtx" : 8,
     "testnet" : true,
     "chain" : "test",
-    "generate" : true,
-    "hashespersec" : 921200
 }
 {% endhighlight %}
 
@@ -115,6 +112,6 @@ Result:
 * [GetMemPoolInfo][rpc getmempoolinfo]: {{summary_getMemPoolInfo}}
 * [GetRawMemPool][rpc getrawmempool]: {{summary_getRawMemPool}}
 * [GetBlockTemplate][rpc getblocktemplate]: {{summary_getBlockTemplate}}
-* [SetGenerate][rpc setgenerate]: {{summary_setGenerate}}
+* [Generate][rpc generate]: {{summary_generate}}
 
 {% endautocrossref %}

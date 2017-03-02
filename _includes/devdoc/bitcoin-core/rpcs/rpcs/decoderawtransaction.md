@@ -34,77 +34,53 @@ The `decoderawtransaction` RPC {{summary_decodeRawTransaction}}
 {{INCLUDE_DECODE_RAW_TRANSACTION}}
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example from Bitcoin Core 0.13.1*
 
 Decode a signed one-input, three-output transaction:
 
 {% highlight bash %}
-bitcoin-cli -testnet decoderawtransaction 0100000001268a9ad7bfb2\
-1d3c086f0ff28f73a064964aa069ebb69a9e437da85c7e55c7d7000000006b48\
-3045022100ee69171016b7dd218491faf6e13f53d40d64f4b40123a2de52560f\
-eb95de63b902206f23a0919471eaa1e45a0982ed288d374397d30dff541b2dd4\
-5a4c3d0041acc0012103a7c1fd1fdec50e1cf3f0cc8cb4378cd8e9a2cee8ca9b\
-3118f3db16cbbcf8f326ffffffff0350ac6002000000001976a91456847befbd\
-2360df0e35b4e3b77bae48585ae06888ac80969800000000001976a9142b1495\
-0b8d31620c6cc923c5408a701b1ec0a02088ac002d3101000000001976a9140d\
-fc8bafc8419853b34d5e072ad37d1a5159f58488ac00000000
+bitcoin-cli decoderawtransaction 0100000001bafe2175b9d7b3041ebac\
+529056b393cf2997f7964485aa382ffa449ffdac02a000000008a47304402201\
+3d212c22f0b46bb33106d148493b9a9723adb2c3dd3a3ebe3a9c9e3b95d8cb00\
+220461661710202fbab550f973068af45c294667fc4dc526627a7463eb23ab39\
+e9b01410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815\
+b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08\
+ffb10d4b8ffffffff01b0a86a00000000001976a91401b81d5fa1e55e069e3cc\
+2db9c19e2e80358f30688ac00000000
 {% endhighlight %}
 
 Result:
 
 {% highlight json %}
 {
-    "txid" : "ef7c0cbf6ba5af68d2ea239bba709b26ff7b0b669839a63bb01c2cb8e8de481e",
-    "version" : 1,
-    "locktime" : 0,
-    "vin" : [
+    "txid": "52309405287e737cf412fc42883d65a392ab950869fae80b2a5f1e33326aca46",
+    "hash": "52309405287e737cf412fc42883d65a392ab950869fae80b2a5f1e33326aca46",
+    "size": 223,
+    "vsize": 223,
+    "version": 1,
+    "locktime": 0,
+    "vin": [
         {
-            "txid" : "d7c7557e5ca87d439e9ab6eb69a04a9664a0738ff20f6f083c1db2bfd79a8a26",
-            "vout" : 0,
-            "scriptSig" : {
-                "asm" : "3045022100ee69171016b7dd218491faf6e13f53d40d64f4b40123a2de52560feb95de63b902206f23a0919471eaa1e45a0982ed288d374397d30dff541b2dd45a4c3d0041acc001 03a7c1fd1fdec50e1cf3f0cc8cb4378cd8e9a2cee8ca9b3118f3db16cbbcf8f326",
-                "hex" : "483045022100ee69171016b7dd218491faf6e13f53d40d64f4b40123a2de52560feb95de63b902206f23a0919471eaa1e45a0982ed288d374397d30dff541b2dd45a4c3d0041acc0012103a7c1fd1fdec50e1cf3f0cc8cb4378cd8e9a2cee8ca9b3118f3db16cbbcf8f326"
+            "txid": "2ac0daff49a4ff82a35a4864797f99f23c396b0529c5ba1e04b3d7b97521feba",
+            "vout": 0,
+            "scriptSig": {
+                "asm": "3044022013d212c22f0b46bb33106d148493b9a9723adb2c3dd3a3ebe3a9c9e3b95d8cb00220461661710202fbab550f973068af45c294667fc4dc526627a7463eb23ab39e9b[ALL] 0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
+                "hex": "473044022013d212c22f0b46bb33106d148493b9a9723adb2c3dd3a3ebe3a9c9e3b95d8cb00220461661710202fbab550f973068af45c294667fc4dc526627a7463eb23ab39e9b01410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8"
             },
-            "sequence" : 4294967295
+            "sequence": 4294967295
         }
     ],
-    "vout" : [
+    "vout": [
         {
-            "value" : 0.39890000,
-            "n" : 0,
-            "scriptPubKey" : {
-                "asm" : "OP_DUP OP_HASH160 56847befbd2360df0e35b4e3b77bae48585ae068 OP_EQUALVERIFY OP_CHECKSIG",
-                "hex" : "76a91456847befbd2360df0e35b4e3b77bae48585ae06888ac",
-                "reqSigs" : 1,
-                "type" : "pubkeyhash",
-                "addresses" : [
-                    "moQR7i8XM4rSGoNwEsw3h4YEuduuP6mxw7"
-                ]
-            }
-        },
-        {
-            "value" : 0.10000000,
-            "n" : 1,
-            "scriptPubKey" : {
-                "asm" : "OP_DUP OP_HASH160 2b14950b8d31620c6cc923c5408a701b1ec0a020 OP_EQUALVERIFY OP_CHECKSIG",
-                "hex" : "76a9142b14950b8d31620c6cc923c5408a701b1ec0a02088ac",
-                "reqSigs" : 1,
-                "type" : "pubkeyhash",
-                "addresses" : [
-                    "mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN"
-                ]
-            }
-        },
-        {
-            "value" : 0.20000000,
-            "n" : 2,
-            "scriptPubKey" : {
-                "asm" : "OP_DUP OP_HASH160 0dfc8bafc8419853b34d5e072ad37d1a5159f584 OP_EQUALVERIFY OP_CHECKSIG",
-                "hex" : "76a9140dfc8bafc8419853b34d5e072ad37d1a5159f58488ac",
-                "reqSigs" : 1,
-                "type" : "pubkeyhash",
-                "addresses" : [
-                    "mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe"
+            "value": 0.06990000,
+            "n": 0,
+            "scriptPubKey": {
+            "asm": "OP_DUP OP_HASH160 01b81d5fa1e55e069e3cc2db9c19e2e80358f306 OP_EQUALVERIFY OP_CHECKSIG",
+                "hex": "76a91401b81d5fa1e55e069e3cc2db9c19e2e80358f30688ac",
+                "reqSigs": 1,
+                "type": "pubkeyhash",
+                "addresses": [
+                    "1A6Ei5cRfDJ8jjhwxfzLJph8B9ZEthR9Z"
                 ]
             }
         }

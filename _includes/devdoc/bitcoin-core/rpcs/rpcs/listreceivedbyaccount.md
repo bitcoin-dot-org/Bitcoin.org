@@ -15,6 +15,9 @@ http://opensource.org/licenses/MIT.
 
 The `listreceivedbyaccount` RPC {{summary_listReceivedByAccount}}
 
+{{WARNING}} `listreceivedbyaccount` will be removed in a later version of Bitcoin
+Core.  Use the RPCs listed in the See Also subsection below instead.
+
 *Parameter #1---the minimum number of confirmations a transaction must have to be counted*
 
 {{INCLUDE_CONFIRMATIONS_PARAMETER}}

@@ -74,6 +74,8 @@ untrusted source.
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/addnode.md %}
 
+{% include devdoc/bitcoin-core/rpcs/rpcs/addwitnessaddress.md %}
+
 {% include devdoc/bitcoin-core/rpcs/rpcs/backupwallet.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/clearbanned.md %}
@@ -98,7 +100,11 @@ untrusted source.
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/estimatepriority.md %}
 
+{% include devdoc/bitcoin-core/rpcs/rpcs/fundrawtransaction.md %}
+
 {% include devdoc/bitcoin-core/rpcs/rpcs/generate.md %}
+
+{% include devdoc/bitcoin-core/rpcs/rpcs/generatetoaddress.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/getaccountaddress.md %}
 
@@ -135,6 +141,12 @@ untrusted source.
 {% include devdoc/bitcoin-core/rpcs/rpcs/gethashespersec.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/getinfo.md %}
+
+{% include devdoc/bitcoin-core/rpcs/rpcs/getmempoolancestors.md %} 
+
+{% include devdoc/bitcoin-core/rpcs/rpcs/getmempooldescendants.md %} 
+
+{% include devdoc/bitcoin-core/rpcs/rpcs/getmempoolentry.md %} 
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/getmempoolinfo.md %}
 
@@ -180,6 +192,8 @@ untrusted source.
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/importprivkey.md %}
 
+{% include devdoc/bitcoin-core/rpcs/rpcs/importprunedfunds.md %}
+
 {% include devdoc/bitcoin-core/rpcs/rpcs/importwallet.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/keypoolrefill.md %}
@@ -210,6 +224,8 @@ untrusted source.
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/prioritisetransaction.md %}
 
+{% include devdoc/bitcoin-core/rpcs/rpcs/removeprunedfunds.md %}
+
 {% include devdoc/bitcoin-core/rpcs/rpcs/sendfrom.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/sendmany.md %}
@@ -227,6 +243,8 @@ untrusted source.
 {% include devdoc/bitcoin-core/rpcs/rpcs/settxfee.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/signmessage.md %}
+
+{% include devdoc/bitcoin-core/rpcs/rpcs/signmessagewithprivkey.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/signrawtransaction.md %}
 
@@ -267,6 +285,16 @@ untrusted source.
 {% include devdoc/bitcoin-core/rest/requests/get_block.md %}
 
 {% include devdoc/bitcoin-core/rest/requests/get_block-notxdetails.md %}
+
+{% include devdoc/bitcoin-core/rest/requests/get_chaininfo.md %}
+
+{% include devdoc/bitcoin-core/rest/requests/get_getutxos.md %}
+
+{% include devdoc/bitcoin-core/rest/requests/get_headers.md %}
+
+{% include devdoc/bitcoin-core/rest/requests/get_mempool-contents.md %}
+
+{% include devdoc/bitcoin-core/rest/requests/get_mempool-info.md %}
 
 {% include devdoc/bitcoin-core/rest/requests/get_tx.md %}
 

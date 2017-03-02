@@ -15,6 +15,9 @@ http://opensource.org/licenses/MIT.
 
 The `listaccounts` RPC {{summary_listAccounts}}
 
+{{WARNING}} `listaccounts` will be removed in a later version of Bitcoin
+Core.  Use the RPCs listed in the See Also subsection below instead.
+
 *Parameter #1---the minimum number of confirmations a transaction must have*
 
 {{INCLUDE_CONFIRMATIONS_PARAMETER}}

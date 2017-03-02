@@ -2,43 +2,26 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
-{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getrawmempool.md" %}
+{% assign filename="_includes/devdoc/bitcoin-core/rest/requests/get_mempool-contents.md" %}
 
-##### GetRawMemPool
+##### GET MemPool/Contents
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getRawMemPool="returns all transaction identifiers (TXIDs) in the memory pool as a JSON array, or detailed information about each transaction in the memory pool as a JSON object." %}
+{% assign summary_restGetMemPool-contents="returns all transaction in the memory pool with detailed information." %}
 
 {% autocrossref %}
 
-The `getrawmempool` RPC {{summary_getRawMemPool}}
+The `GET mempool/contents` operation {{summary_restGetMemPool-contents}}  Supports only `json` as output format.
 
-*Parameter---desired output format*
+*Request*
 
-{% itemplate ntpd1 %}
-- n: "Format"
-  t: "bool"
-  p: "Optional<br>(0 or 1)"
-  d: "Set to `true` to get verbose output describing each transaction in the memory pool; set to `false` (the default) to only get an array of TXIDs for transactions in the memory pool"
+{% highlight text %}
+GET /mempool/contents.json
+{% endhighlight %}
 
-{% enditemplate %}
+*Parameters: none*
 
-*Result (format `false`)---an array of TXIDs*
-
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "array"
-  p: "Required<br>(exactly 1)"
-  d: "An array of TXIDs belonging to transactions in the memory pool.  The array may be empty if there are no transactions in the memory pool"
-
-- n: "→<br>TXID"
-  t: "string"
-  p: "Optional<br>(0 or more)"
-  d: "The TXID of a transaction in the memory pool, encoded as hex in RPC byte order"
-
-{% enditemplate %}
-
-*Result (format: `true`)---a JSON object describing each transaction*
+*Result as JSON*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
@@ -130,28 +113,13 @@ The `getrawmempool` RPC {{summary_getRawMemPool}}
 
 *Examples from Bitcoin Core 0.13.1*
 
-The default (`false`):
+Get all transactions in the memory pool in JSON:
 
 {% highlight bash %}
-bitcoin-cli getrawmempool
+curl http://localhost:8332/rest/mempool/contents.json
 {% endhighlight %}
 
-Result:
-
-{% highlight json %}
-[
-    "b104586f229e330caf42c475fd52684e9eb5e2d02f0fcd216d9554c5347b0873",
-    "094f7dcbc7494510d4daeceb2941ed73b1bd011bf527f6c3b7c897fee85c11d4"
-]
-{% endhighlight %}
-
-Verbose output (`true`):
-
-{% highlight bash %}
-bitcoin-cli getrawmempool true
-{% endhighlight %}
-
-Result:
+Result (whitespaced added):
 
 {% highlight json %}
 {
@@ -194,8 +162,8 @@ Result:
 
 *See also*
 
-* [GetMemPoolInfo][rpc getmempoolinfo]: {{summary_getMemPoolInfo}}
-* [GetMemPoolEntry][rpc getmempoolentry]: {{summary_getMemPoolEntry}}
-* [GetTxOutSetInfo][rpc gettxoutsetinfo]: {{summary_getTxOutSetInfo}}
+* [GET MemPool/Info][rest get mempool-info]: {{summary_restGetMemPool-info}}
+* [GetMemPoolInfo][rpc getmempoolinfo] RPC: {{summary_getMemPoolInfo}}
+* [GetRawMemPool][rpc getrawmempool] RPC: {{summary_getRawMemPool}}
 
 {% endautocrossref %}

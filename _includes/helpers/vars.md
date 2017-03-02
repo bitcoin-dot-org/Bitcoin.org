@@ -12,7 +12,7 @@ http://opensource.org/licenses/MIT.
 - n: "{{DEPTH}}<br>`account`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The account which the payment was credited to or debited from.  May be an empty string (\"\") for the default account"
+  d: "*Deprecated: will be removed in a later version of Bitcoin Core*<br><br>The account which the payment was credited to or debited from.  May be an empty string (\"\") for the default account"
 
 - n: "{{DEPTH}}<br>`address`"
   t: "string (base58)"
@@ -56,17 +56,17 @@ http://opensource.org/licenses/MIT.
 - n: "{{DEPTH}}<br>`blockhash`"
   t: "string (hex)"
   p: "Optional<br>(0 or 1)"
-  d: "Only returned for confirmed transactions.  The hash of the block on the local best block chain which includes this transaction, encoded as hex in RPC byte order"
+  d: "The hash of the block on the local best block chain which includes this transaction, encoded as hex in RPC byte order.  Only returned for confirmed transactions"
 
 - n: "{{DEPTH}}<br>`blockindex`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "Only returned for confirmed transactions.  The block height of the block on the local best block chain which includes this transaction"
+  d: "The index of the transaction in the block that includes it.  Only returned for confirmed transactions"
 
 - n: "{{DEPTH}}<br>`blocktime`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "Only returned for confirmed transactions.  The block header time (Unix epoch time) of the block on the local best block chain which includes this transaction"
+  d: "The block header time (Unix epoch time) of the block on the local best block chain which includes this transaction.  Only returned for confirmed transactions"
 
 - n: "{{DEPTH}}<br>`txid`"
   t: "string (hex)"
@@ -131,6 +131,21 @@ bitcoins even if this parameter is set to `1` or higher.{% endcapture %}
   p: "Required<br>(exactly 1)"
   d: "The transaction's TXID encoded as hex in RPC byte order"
 
+- n: "{{DEPTH}} →<br>`hash`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>The transaction hash.  Differs from txid for witness transactions"
+  
+- n: "{{DEPTH}} →<br>`size`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.12.0*<br><br>The serialized transaction size"
+
+- n: "{{DEPTH}} →<br>`vsize`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>The virtual transaction size.  Differs from size for witness transactions"
+  
 - n: "{{DEPTH}} →<br>`version`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
@@ -186,6 +201,11 @@ bitcoins even if this parameter is set to `1` or higher.{% endcapture %}
   p: "Required<br>(exactly 1)"
   d: "The input sequence number"
 
+- n: "{{DEPTH}} → → →<br>`txinwitness`"
+  t: "string : array"
+  p: "Optional<br>(0 or 1)"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>Hex-encoded witness data. Only for segregated witness transactions"  
+  
 - n: "{{DEPTH}} →<br>`vout`"
   t: "array"
   p: "Required<br>(exactly 1)"
