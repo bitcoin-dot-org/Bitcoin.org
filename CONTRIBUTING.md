@@ -1,12 +1,4 @@
-# Welcome to Bitcoin.org's Codebase
-
-Current Build Status: ![Build Status](https://travis-ci.org/bitcoin-dot-org/bitcoin.org.svg?branch=master)
-
-Live site: [Bitcoin.org](https://bitcoin.org)
-
-Report problems or help improve the site by opening a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) or [pull request](https://github.com/bitcoin-dot-org/bitcoin.org/compare).
-
-## How to Participate
+## Contributing
 The following quick guides will help you get started:
 
 + [Becoming a Contributor](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/become-a-contributor.md)
