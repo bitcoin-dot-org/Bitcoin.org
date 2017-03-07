@@ -93,7 +93,6 @@ id: about-us
 <div class="contributors">
   {% for c in site.sitecontributors %}
   <div>
-    <div>{% if c.avatar_url %}<img src="{{c.avatar_url}}" alt="icon" />{% else %}<img alt="icon" />{% endif %}</div>
     <div><a{% if c.login %} href="https://github.com/{{c.login}}"{% endif %}>{{ c.name | htmlescape }}</a></div>
     <div>({{ c.contributions }})</div>
   </div>
