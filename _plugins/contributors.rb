@@ -59,7 +59,7 @@ module Jekyll
         x['name'] = name
         x['contributions'] = c['contributions']
         # Set avatar_url when available
-        if c.has_key?('avatar_url') and c['avatar_url'].is_a?(String) and /^https:\/\/avatars\.githubusercontent\.com\/u\/[0-9]{1,10}\?v=[0-9]{1,2}$/.match(c['avatar_url'])
+        if c.has_key?('avatar_url') and c['avatar_url'].is_a?(String) and /^https:\/\/avatars1\.githubusercontent\.com\/u\/[0-9]{1,10}\?v=[0-9]{1,2}$/.match(c['avatar_url'])
           x['avatar_url'] = c['avatar_url'] + '&amp;size=16'
         end
         # Set login when available
