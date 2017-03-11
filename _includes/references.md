@@ -422,7 +422,7 @@ http://opensource.org/licenses/MIT.
 [offline transactions]: http://bitcoin.stackexchange.com/a/34122/21052
 [open a pull request]: https://github.com/bitcoin-dot-org/bitcoin.org#working-with-github
 [open an issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
-[Payment Request Generator]: http://bitcoincore.org/~gavin/createpaymentrequest.php
+[Payment Request Generator]: https://github.com/gavinandresen/paymentrequest/blob/master/php/demo_website/createpaymentrequest.php
 [Piotr Piasecki's testnet faucet]: https://tpfaucet.appspot.com/
 [prime symbol]: https://en.wikipedia.org/wiki/Prime_%28symbol%29
 [protobuf]: https://developers.google.com/protocol-buffers/
