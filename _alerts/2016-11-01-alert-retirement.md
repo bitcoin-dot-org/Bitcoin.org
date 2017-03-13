@@ -4,7 +4,7 @@
 
 title: "Alert System Retirement"
 shorturl: "alert-retirement"
-active: true
+active: false
 banner: "Alert system is being retired (click here to read)"
 bannerclass: "info"
 ---
