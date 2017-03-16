@@ -532,6 +532,7 @@ devsearches:
     - "addr":  "/en/developer-reference#addr"
     - "alert":  "/en/developer-reference#alert"
     - "block": "/en/developer-reference#block"
+    - "feefilter": "/en/developer-reference#feefilter"
     - "filteradd": "/en/developer-reference#filteradd"
     - "filterclear": "/en/developer-reference#filterclear"
     - "filterload": "/en/developer-reference#filterload"

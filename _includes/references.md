@@ -180,6 +180,7 @@ http://opensource.org/licenses/MIT.
 [addr message]: /en/developer-reference#addr "The P2P network message which relays IP addresses and port numbers of active nodes to other nodes and clients, allowing decentralized peer discovery."
 [alert message]: /en/developer-reference#alert "The P2P network message which sends alerts in case of major software problems."
 [block message]: /en/developer-reference#block "The P2P network message which sends a serialized block"
+[feefilter message]: /en/developer-reference#feefilter "The P2P network message which requests the receiving peer not relay any transactions below the specified fee rate"
 [filteradd message]: /en/developer-reference#filteradd "A P2P protocol message used to add a data element to an existing bloom filter."
 [filterclear message]: /en/developer-reference#filterclear "A P2P protocol message used to remove an existing bloom filter."
 [filterload message]: /en/developer-reference#filterclear "A P2P protocol message used to send a filter to a remote peer, requesting that they only send transactions which match the filter."
