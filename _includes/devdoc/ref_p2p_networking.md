@@ -1175,7 +1175,7 @@ single field, the nonce.
 
 | Bytes | Name  | Data Type | Description
 |-------|-------|-----------|---------------
-| 8     | nonce | uint64_t  | *Added in protocol version 60000 as described by BIP31.* <br><br>Random nonce assigned to this `ping` message.  The responding `pong` message will include this nonce to identify the `ping` message to which it is replying.
+| 8     | nonce | uint64_t  | *Added in protocol version 60001 as described by BIP31.* <br><br>Random nonce assigned to this `ping` message.  The responding `pong` message will include this nonce to identify the `ping` message to which it is replying.
 
 The annotated hexdump below shows a `ping` message. (The message
 header has been omitted.)
