@@ -106,60 +106,57 @@ is the particular version:
 
 5. Open the failed Travis CI log.  At the end, it will say something like:
 ```
-        ERROR:
-        Error: Could not retrieve
-/bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win64-setup.exe
-        Error: Could not retrieve
-/bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win32-setup.exe
-        [...]
+ERROR:
+Error: Could not retrieve /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win64-setup.exe
+Error: Could not retrieve /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win32-setup.exe
+[...]
 ```
 6. Copy the errors from above into a text file and remove everything
    except for the URLs so that what's left are lines that look like:
 ```
-        /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win64-setup.exe
-        /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win32-setup.exe
-        [...]
+/bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win64-setup.exe
+/bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win32-setup.exe
+[...]
 ```
 7. Optional, but nice: sort the lines into alphabetical order.
 
 8. Now open a pull request from the `bitcoin-core-<VERSION>` branch to
    the `master` branch. We recommend that you use this title: "Releases:
-   Add Bitcoin Core &lt;VERSION>".
+   Add Bitcoin Core <VERSION>".
 
    We recommend that you use the following text with any changes you
    think are appropriate. **Note:** read all the way to the end of this
    enumerated point before submitting your pull request.
 ```
-        This updates the download links to point to <VERSION> and adds the
-        <VERSION> release notes to the site. I'll keep it updated throughout
-        the RC cycle, but it can be merged by anyone with commit access
-        once <VERSION> final is released (see TODO lists below).
+This updates the download links to point to <VERSION> and adds the <VERSION>
+release notes to the site. I'll keep it updated throughout the RC cycle, but it
+can be merged by anyone with commit access once <VERSION> final is released (see
+TODO lists below).
 
-        CC: @laanwj
-
-        Essential TODO:
-
-        * [ ] Make sure the download links work. This is automatically checked
-          as part of the Travis CI build, so trigger a rebuild and, if it
-passes, this should be safe to merge.
-
-        Optional TODO (may be done in commits after merge):
-
-        * [ ] Add the actual release date to the YAML header in
-          `_releases/0.10.1.md`
-        * [ ] Add the magnet URI to the YAML header in `_releases/0.10.1.md`
-          (brief instructions for creating the link are provided as comments in
-that file)
-
-        Expected URLs for the Bitcoin Core binaries:
-
-    Underneath the line 'Expected URLs', paste the URLs you retrieved
-    from Travis CI earlier.
+CC: @laanwj
 ```
-    Note that @laanwj is Wladimir J. van der Laan, who is usually
-    responsible for uploading the Bitcoin Core binaries.  If someone
-    else is responsible for this release, CC them instead.  If you don't
-    know who is responsible, ask in #bitcoin-dev on Freenode.
+
+Essential TODO:
+
+* [ ] Make sure the download links work. This is automatically checked as part
+  of the Travis CI build, so trigger a rebuild and, if it passes, this should be
+safe to merge.
+
+Optional TODO (may be done in commits after merge):
+
+* [ ] Add the actual release date to the YAML header in `_releases/0.10.1.md`
+* [ ] Add the magnet URI to the YAML header in `_releases/0.10.1.md` (brief
+  instructions for creating the link are provided as comments in that file)
+
+Expected URLs for the Bitcoin Core binaries:
+
+Underneath the line 'Expected URLs', paste the URLs you retrieved from Travis CI
+earlier.
+
+Note that @laanwj is Wladimir J. van der Laan, who is usually responsible for
+uploading the Bitcoin Core binaries.  If someone else is responsible for this
+release, CC them instead.  If you don't know who is responsible, ask in
+#bitcoin-dev on Freenode.
 
 9. After creating the pull request, use the Labels menu to assign it the
    "Releases" label. This is important because it's what the Bitcoin
