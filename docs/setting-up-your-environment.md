@@ -11,8 +11,9 @@ page is refreshed.
 
 For anything more than simple text previews, you will need to build the
 site. If you can't do this yourself using the instructions below, please
-[open a pull request][pull request] with your suggested change and one
-of the site developers will create a preview for you.
+[open a pull request](https://github.com/bitcoin-dot-org/bitcoin.org/compare)
+with your suggested change and one of the site developers will create a preview
+for you.
 
 To build the site, you need to go through a one-time installation
 procedure that takes 15 to 30 minutes.  After that you can build the
