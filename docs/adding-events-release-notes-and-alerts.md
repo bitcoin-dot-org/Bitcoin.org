@@ -31,7 +31,7 @@ To create a new Bitcoin Core release, create a new file in the
 recommend naming it after the release, such as `0.10.0.md`
 
 Then copy in the following YAML header (the part between the three dashes, ---):
-~~~
+```
 ---
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
@@ -59,7 +59,6 @@ optional_magnetlink:
 ## (whitespace only) line, like the empty line before this list item.
 ##
 ## 2. Place URLs inside angle brackets, like <http://bitcoin.org/bin>
-
 ---
 ```
 
@@ -91,9 +90,10 @@ is the particular version:
 1. Create a new branch named `bitcoin-core-<VERSION>`.  You can either
    do this locally or in GitHub's web GUI.
 
-2. Follow the instructions in the [Release Notes][] section to create a
-   new release.  You should leave the `optional_date` blank unless you
-   happen to know the date of the planned release.
+2. Follow the instructions in the [Release
+   Notes](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-events-release-notes-and-alerts.md#release-notes)
+   section to create a new release.  You should leave the `optional_date` blank
+   unless you happen to know the date of the planned release.
 
 3. Push the branch to the https://github.com/bitcoin-dot-org/bitcoin.org
    repository so any contributor can edit it. **Don't** open a pull
