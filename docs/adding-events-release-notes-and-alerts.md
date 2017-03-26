@@ -191,48 +191,42 @@ addresses are on the linked GitHub profiles.
 <https://bitcoin.org/en/alert/YYYY-MM-DD-short-title>).
 
 2. Paste the following text into the top of the file:
+```
+---
+## Title displayed on alert page
+title: "11/12 March 2017 Chain Fork"
+## Short URL for use in P2P network alerts: https://bitcoin.org/<shorturl>
+shorturl: "chainfork"
+## Active alerts will display the banner (below) on all bitcoin.org content pages
+active: true
+## Banner displayed if 'active: true'.  Can use HTML formatting banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.14.1. Click here for more information."
+## Date of the alert in YYYY-MM-DD format
+date: 2017-03-11
+---
 
-    ```
-    ---
-    ## Title displayed on alert page
-    title: "11/12 March 2013 Chain Fork"
-    ## Short URL for use in P2P network alerts: https://bitcoin.org/<shorturl>
-    shorturl: "chainfork"
-    ## Active alerts will display the banner (below) on all bitcoin.org content
-pages
-    active: true
-    ## Banner displayed if 'active: true'.  Can use HTML formatting
-    banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.8.0.
-Click here for more information."
-    ## Date of the alert in YYYY-MM-DD format
-    date: 2015-03-11
-    ---
+{% comment %}
+First paragraph should indicate whose bitcoins are safe, to avoid starting a panic.
+{% comment %}
 
-    {% comment %}
-    First paragraph should indicate whose bitcoins are safe, to avoid
-    starting a panic.
-    {% comment %}
+Your bitcoins are safe if you received them in transactions confirmed before 2015-07-06 00:00 UTC.
 
-    Your bitcoins are safe if you received them in transactions
-    confirmed before 2015-07-06 00:00 UTC.
+{% comment %}
+Second paragraph should summarize the problem, and subsequent
+text should indicate what people should do immediately.
+Consider: users (by wallet type), merchants, and miners.
+{% comment %}
 
-    {% comment %}
-    Second paragraph should summarize the problem, and subsequent
-    text should indicate what people should do immediately.
-    Consider: users (by wallet type), merchants, and miners.
-    {% comment %}
+However, there has been a problem with a planned upgrade. For
+bitcoins received later than the time above, confirmation scores are
+significantly less reliable then they usually are for users of
+certain software:
 
-    However, there has been a problem with a planned upgrade. For
-    bitcoins received later than the time above, confirmation scores are
-    significantly less reliable then they usually are for users of
-    certain software:
+- Lightweight (SPV) wallet users should wait an additional 30
+  confirmations more than you would normally wait. Electrum users,
+  please see this note.
+```
 
-    - Lightweight (SPV) wallet users should wait an additional 30
-      confirmations more than you would normally wait. Electrum users,
-      please see this note.
-    ```
-
-- Edit the file.  It is written in [Markdown format][].
+- Edit the file.  It is written in [Markdown format](https://guides.github.com/features/mastering-markdown/).
 
 - Commit it.
 
@@ -263,7 +257,7 @@ The following fields may be defined in the the alert YAML header:
 ```yaml
 ---
 ## (Required; HTML text) Title displayed on alert page
-title: "11/12 March 2013 Chain Fork"
+title: "11/12 March 2017 Chain Fork"
 ## (Optional; display ASCII only) Short URL for use in P2P network alerts:
 https://bitcoin.org/<shorturl>
 shorturl: "chainfork"
@@ -272,7 +266,7 @@ all bitcoin.org content pages
 active: true
 ## (Optional; HTML text) Banner displayed if 'active: true'.  Can use HTML
 formatting
-banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.8.0. Click
+banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.14.1. Click
 here for more information."
 ## (Optional; default=alert) CSS class to set banner color
 ##   alert = red  |  warning = orange  |  success = green  | info = blue
@@ -287,7 +281,7 @@ the document:
 
 ```html
 <div style="text-align:right">
-  <i>This notice last updated: Thu, 16 May 2013 01:37:00 UTC</i>
+  <i>This notice last updated: Thu, 16 May 2017 01:37:00 UTC</i>
 </div>
 ```
 
