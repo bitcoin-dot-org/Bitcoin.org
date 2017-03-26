@@ -105,21 +105,21 @@ is the particular version:
    being uploaded.
 
 5. Open the failed Travis CI log.  At the end, it will say something like:
-
+```
         ERROR:
         Error: Could not retrieve
 /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win64-setup.exe
         Error: Could not retrieve
 /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win32-setup.exe
         [...]
-
+```
 6. Copy the errors from above into a text file and remove everything
    except for the URLs so that what's left are lines that look like:
-
+```
         /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win64-setup.exe
         /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win32-setup.exe
         [...]
-
+```
 7. Optional, but nice: sort the lines into alphabetical order.
 
 8. Now open a pull request from the `bitcoin-core-<VERSION>` branch to
@@ -129,7 +129,7 @@ is the particular version:
    We recommend that you use the following text with any changes you
    think are appropriate. **Note:** read all the way to the end of this
    enumerated point before submitting your pull request.
-
+```
         This updates the download links to point to <VERSION> and adds the
         <VERSION> release notes to the site. I'll keep it updated throughout
         the RC cycle, but it can be merged by anyone with commit access
@@ -155,7 +155,7 @@ that file)
 
     Underneath the line 'Expected URLs', paste the URLs you retrieved
     from Travis CI earlier.
-
+```
     Note that @laanwj is Wladimir J. van der Laan, who is usually
     responsible for uploading the Bitcoin Core binaries.  If someone
     else is responsible for this release, CC them instead.  If you don't
