@@ -31,7 +31,7 @@ To create a new Bitcoin Core release, create a new file in the
 recommend naming it after the release, such as `0.10.0.md`
 
 Then copy in the following YAML header (the part between the three dashes, ---):
-~~~
+```
 ---
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
@@ -59,7 +59,6 @@ optional_magnetlink:
 ## (whitespace only) line, like the empty line before this list item.
 ##
 ## 2. Place URLs inside angle brackets, like <http://bitcoin.org/bin>
-
 ---
 ```
 
@@ -91,9 +90,10 @@ is the particular version:
 1. Create a new branch named `bitcoin-core-<VERSION>`.  You can either
    do this locally or in GitHub's web GUI.
 
-2. Follow the instructions in the [Release Notes][] section to create a
-   new release.  You should leave the `optional_date` blank unless you
-   happen to know the date of the planned release.
+2. Follow the instructions in the [Release
+   Notes](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-events-release-notes-and-alerts.md#release-notes)
+   section to create a new release.  You should leave the `optional_date` blank
+   unless you happen to know the date of the planned release.
 
 3. Push the branch to the https://github.com/bitcoin-dot-org/bitcoin.org
    repository so any contributor can edit it. **Don't** open a pull
@@ -105,61 +105,58 @@ is the particular version:
    being uploaded.
 
 5. Open the failed Travis CI log.  At the end, it will say something like:
-
-        ERROR:
-        Error: Could not retrieve
-/bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win64-setup.exe
-        Error: Could not retrieve
-/bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win32-setup.exe
-        [...]
-
+```
+ERROR:
+Error: Could not retrieve /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win64-setup.exe
+Error: Could not retrieve /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win32-setup.exe
+[...]
+```
 6. Copy the errors from above into a text file and remove everything
    except for the URLs so that what's left are lines that look like:
-
-        /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win64-setup.exe
-        /bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win32-setup.exe
-        [...]
-
+```
+/bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win64-setup.exe
+/bin/bitcoin-core-0.10.1/bitcoin-0.10.1-win32-setup.exe
+[...]
+```
 7. Optional, but nice: sort the lines into alphabetical order.
 
 8. Now open a pull request from the `bitcoin-core-<VERSION>` branch to
    the `master` branch. We recommend that you use this title: "Releases:
-   Add Bitcoin Core &lt;VERSION>".
+   Add Bitcoin Core <VERSION>".
 
    We recommend that you use the following text with any changes you
    think are appropriate. **Note:** read all the way to the end of this
    enumerated point before submitting your pull request.
+```
+This updates the download links to point to <VERSION> and adds the <VERSION>
+release notes to the site. I'll keep it updated throughout the RC cycle, but it
+can be merged by anyone with commit access once <VERSION> final is released (see
+TODO lists below).
 
-        This updates the download links to point to <VERSION> and adds the
-        <VERSION> release notes to the site. I'll keep it updated throughout
-        the RC cycle, but it can be merged by anyone with commit access
-        once <VERSION> final is released (see TODO lists below).
+CC: @laanwj
+```
 
-        CC: @laanwj
+Essential TODO:
 
-        Essential TODO:
+* [ ] Make sure the download links work. This is automatically checked as part
+  of the Travis CI build, so trigger a rebuild and, if it passes, this should be
+safe to merge.
 
-        * [ ] Make sure the download links work. This is automatically checked
-          as part of the Travis CI build, so trigger a rebuild and, if it
-passes, this should be safe to merge.
+Optional TODO (may be done in commits after merge):
 
-        Optional TODO (may be done in commits after merge):
+* [ ] Add the actual release date to the YAML header in `_releases/0.10.1.md`
+* [ ] Add the magnet URI to the YAML header in `_releases/0.10.1.md` (brief
+  instructions for creating the link are provided as comments in that file)
 
-        * [ ] Add the actual release date to the YAML header in
-          `_releases/0.10.1.md`
-        * [ ] Add the magnet URI to the YAML header in `_releases/0.10.1.md`
-          (brief instructions for creating the link are provided as comments in
-that file)
+Expected URLs for the Bitcoin Core binaries:
 
-        Expected URLs for the Bitcoin Core binaries:
+Underneath the line 'Expected URLs', paste the URLs you retrieved from Travis CI
+earlier.
 
-    Underneath the line 'Expected URLs', paste the URLs you retrieved
-    from Travis CI earlier.
-
-    Note that @laanwj is Wladimir J. van der Laan, who is usually
-    responsible for uploading the Bitcoin Core binaries.  If someone
-    else is responsible for this release, CC them instead.  If you don't
-    know who is responsible, ask in #bitcoin-dev on Freenode.
+Note that @laanwj is Wladimir J. van der Laan, who is usually responsible for
+uploading the Bitcoin Core binaries.  If someone else is responsible for this
+release, CC them instead.  If you don't know who is responsible, ask in
+#bitcoin-dev on Freenode.
 
 9. After creating the pull request, use the Labels menu to assign it the
    "Releases" label. This is important because it's what the Bitcoin
@@ -194,48 +191,42 @@ addresses are on the linked GitHub profiles.
 <https://bitcoin.org/en/alert/YYYY-MM-DD-short-title>).
 
 2. Paste the following text into the top of the file:
+```
+---
+## Title displayed on alert page
+title: "11/12 March 2017 Chain Fork"
+## Short URL for use in P2P network alerts: https://bitcoin.org/<shorturl>
+shorturl: "chainfork"
+## Active alerts will display the banner (below) on all bitcoin.org content pages
+active: true
+## Banner displayed if 'active: true'.  Can use HTML formatting banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.14.1. Click here for more information."
+## Date of the alert in YYYY-MM-DD format
+date: 2017-03-11
+---
 
-    ```
-    ---
-    ## Title displayed on alert page
-    title: "11/12 March 2013 Chain Fork"
-    ## Short URL for use in P2P network alerts: https://bitcoin.org/<shorturl>
-    shorturl: "chainfork"
-    ## Active alerts will display the banner (below) on all bitcoin.org content
-pages
-    active: true
-    ## Banner displayed if 'active: true'.  Can use HTML formatting
-    banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.8.0.
-Click here for more information."
-    ## Date of the alert in YYYY-MM-DD format
-    date: 2015-03-11
-    ---
+{% comment %}
+First paragraph should indicate whose bitcoins are safe, to avoid starting a panic.
+{% comment %}
 
-    {% comment %}
-    First paragraph should indicate whose bitcoins are safe, to avoid
-    starting a panic.
-    {% comment %}
+Your bitcoins are safe if you received them in transactions confirmed before 2015-07-06 00:00 UTC.
 
-    Your bitcoins are safe if you received them in transactions
-    confirmed before 2015-07-06 00:00 UTC.
+{% comment %}
+Second paragraph should summarize the problem, and subsequent
+text should indicate what people should do immediately.
+Consider: users (by wallet type), merchants, and miners.
+{% comment %}
 
-    {% comment %}
-    Second paragraph should summarize the problem, and subsequent
-    text should indicate what people should do immediately.
-    Consider: users (by wallet type), merchants, and miners.
-    {% comment %}
+However, there has been a problem with a planned upgrade. For
+bitcoins received later than the time above, confirmation scores are
+significantly less reliable then they usually are for users of
+certain software:
 
-    However, there has been a problem with a planned upgrade. For
-    bitcoins received later than the time above, confirmation scores are
-    significantly less reliable then they usually are for users of
-    certain software:
+- Lightweight (SPV) wallet users should wait an additional 30
+  confirmations more than you would normally wait. Electrum users,
+  please see this note.
+```
 
-    - Lightweight (SPV) wallet users should wait an additional 30
-      confirmations more than you would normally wait. Electrum users,
-      please see this note.
-    ```
-
-- Edit the file.  It is written in [Markdown format][].
+- Edit the file.  It is written in [Markdown format](https://guides.github.com/features/mastering-markdown/).
 
 - Commit it.
 
@@ -266,7 +257,7 @@ The following fields may be defined in the the alert YAML header:
 ```yaml
 ---
 ## (Required; HTML text) Title displayed on alert page
-title: "11/12 March 2013 Chain Fork"
+title: "11/12 March 2017 Chain Fork"
 ## (Optional; display ASCII only) Short URL for use in P2P network alerts:
 https://bitcoin.org/<shorturl>
 shorturl: "chainfork"
@@ -275,7 +266,7 @@ all bitcoin.org content pages
 active: true
 ## (Optional; HTML text) Banner displayed if 'active: true'.  Can use HTML
 formatting
-banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.8.0. Click
+banner: "<b>Chain fork</b> - Please stop mining on bitcoin version 0.14.1. Click
 here for more information."
 ## (Optional; default=alert) CSS class to set banner color
 ##   alert = red  |  warning = orange  |  success = green  | info = blue
@@ -290,7 +281,7 @@ the document:
 
 ```html
 <div style="text-align:right">
-  <i>This notice last updated: Thu, 16 May 2013 01:37:00 UTC</i>
+  <i>This notice last updated: Thu, 16 May 2017 01:37:00 UTC</i>
 </div>
 ```
 
