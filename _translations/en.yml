@@ -1,4 +1,4 @@
-en:
+﻿en:
   about-us:
     title: "About bitcoin.org"
     pagetitle: "About bitcoin.org"
@@ -197,6 +197,7 @@ en:
     walletcoinapult: "Coinapult's wallet is designed with Bitcoin newcomers in mind. It allows sending bitcoins via email and SMS, and a handy tool called Locks helps protecting your balance from Bitcoin price swings. Users can Lock bitcoins to Gold, Euros, and more!"
     walletgreenbits: "GreenBits is a fast and easy to use wallet. Enjoy improved security with a minimal/zero trust approach, optional hardware wallets support, multisignature based 2FA and spending limits functionality."
     walletcoinomi: "Coinomi is a lightweight, secure, open-source, universal, HD Wallet. Apart from Bitcoin it also supports many altcoins so you can keep all your funds in a single wallet. Your private keys never leave your device and you only need to back it up just once!"
+    walletbtccom: "Safe and easy to use, BTC.com Bitcoin Wallet keeps you, the user, in total control of your bitcoins. Features include HD and multi-signature technology, multi-platform, local language and currency support, QR codes and more."
     walletsimplebitcoinwallet: "Simple and reliable Bitcoin wallet. Secure, standalone and easy to use."
     walletarcbit: "ArcBit is designed to be simple and easy to use, while giving users full control over their money. It offers an optional cold wallet storage feature with the ability to authorize payments offline for enhanced security."
     walletdownload: "Install"
