@@ -1283,6 +1283,7 @@ configuration file:
 par=1
 {% endhighlight %}
 
+A user-friendly configuration file generator is [available here.](https://jlopp.github.io/bitcoin-core-config-generator/)
 If you have any questions about configuring Bitcoin Core, please stop by
 one of our [forums](/en/bitcoin-core/help#forums) or [live
 chatrooms](/en/bitcoin-core/help#live).
