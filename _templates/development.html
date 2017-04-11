@@ -68,16 +68,6 @@ improvement in mind?  Here are a few ideas:
 
 {% if page.lang == 'en' %}
   <input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
-{% else %}
-  <h2 id="coredev">{% translate coredev %}</h2>
-
-  <p>{% translate inventor %}</p>
-
-  {% include bitcoin-core/core-committers.html %}
-
-  <h2 id="disclosure">{% translate disclosure %}</h2>
-  <p><a href="mailto:bitcoin-security@lists.sourceforge.net">bitcoin-security@lists.sourceforge.net</a></p>
-  <p>{% translate disclosuretxt %}</p>
 {% endif %}
 
 <section id="devcommunities">

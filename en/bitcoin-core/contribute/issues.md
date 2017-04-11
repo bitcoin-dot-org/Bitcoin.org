@@ -23,10 +23,8 @@ security bugs and [public issue tracking](#public-issue-tracking) for all other 
 issue to ask for support.** See the [Get Help][bcc help] page instead.
 
 <h2 id="disclosure">{% translate disclosure development %}</h2>
-<p><a href="mailto:bitcoin-security@lists.sourceforge.net">bitcoin-security@lists.sourceforge.net</a></p>
-<p>{% translate disclosuretxt development %}</p>
 
-{% include bitcoin-core/core-committers.html %}
+See the [Bitcoin Core contact page](https://bitcoincore.org/en/contact/) for reporting security issues.
 
 ## Public Issue Tracking
 
