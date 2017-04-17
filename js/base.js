@@ -206,6 +206,8 @@ function addAnchorLinks() {
   }
 }
 
+/* jshint ignore:start */
+
  function _gaLt(event) {
 
 	/* If GA is blocked or not loaded, or not main|middle|touch click then don't track */
@@ -274,7 +276,8 @@ function trackOutgoingLinks() {
 		/* Use "click" if touchscreen device, else "mousedown" */
 		var _gaLtEvt = ("ontouchstart" in _w) ? "click" : "mousedown";
 		/* Attach the event to all clicks in the document after page has loaded */
-		_w.addEventListener ? _w.addEventListener("load", function() {document.body.addEventListener(_gaLtEvt, _gaLt, !1)}, !1)
-			: _w.attachEvent && _w.attachEvent("onload", function() {document.body.attachEvent("on" + _gaLtEvt, _gaLt)});
+		_w.addEventListener ? _w.addEventListener("load", function() {document.body.addEventListener(_gaLtEvt, _gaLt, !1)}, !1) : _w.attachEvent && _w.attachEvent("onload", function() {document.body.attachEvent("on" + _gaLtEvt, _gaLt)});
 	}
 }
+
+/* jshint ignore:end */
