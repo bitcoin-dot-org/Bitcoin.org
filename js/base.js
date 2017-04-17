@@ -269,6 +269,7 @@ function addAnchorLinks() {
 }
 
 function trackOutgoingLinks() {
+	if (navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1") {
 		var _w = window;
 		/* Use "click" if touchscreen device, else "mousedown" */
 		var _gaLtEvt = ("ontouchstart" in _w) ? "click" : "mousedown";
