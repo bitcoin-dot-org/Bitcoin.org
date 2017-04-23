@@ -579,18 +579,8 @@ Take note that for both types of broadcasting, mechanisms are in place to punish
 
 {% autocrossref %}
 
-In case of a bug or attack,
-the Bitcoin Core developers provide a
-[Bitcoin alert service](https://bitcoin.org/en/alerts) with an RSS feed
-and users of Bitcoin Core can check the error field of the `getinfo` RPC
-results to get currently active alerts for their specific version of
-Bitcoin Core.
+*Removed in Bitcoin Core 0.13.0*
 
-These messages are aggressively broadcast using the `alert` message, being sent to each peer upon connect for the duration of the alert. 
-
-These messages are signed by a specific ECDSA private key that only a small number of developers control. 
-
-**Resource:** More details about the structure of messages and a complete list of message types can be found in
-the [P2P reference section][section P2P reference].
+Earlier versions of Bitcoin Core allowed developers and trusted community members to issue [Bitcoin alerts](https://bitcoin.org/en/alerts) to notify users of critical network-wide issues. This messaging system [was retired](https://bitcoin.org/en/alert/2016-11-01-alert-retirement) in Bitcoin Core v0.13.0; however, internal alerts, partition detection warnings and the `-alertnotify` option features remain.
 
 {% endautocrossref %}
