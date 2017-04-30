@@ -139,8 +139,9 @@ The currently-available type identifiers are:
 | 1               | [`MSG_TX`][msg_tx]{:#term-msg_tx}{:.term}                                     | The hash is a TXID.
 | 2               | [`MSG_BLOCK`][msg_block]{:#term-msg_block}{:.term}                            | The hash is of a block header.
 | 3               | [`MSG_FILTERED_BLOCK`][msg_filtered_block]{:#term-msg_filtered_block}{:.term} | The hash is of a block header; identical to `MSG_BLOCK`. When used in a `getdata` message, this indicates the response should be a `merkleblock` message rather than a `block` message (but this only works if a bloom filter was previously configured).  **Only for use in `getdata` messages.**
+| 4               | [`MSG_CMPCT_BLOCK`][msg_compact_block]{:#term-msg_compact_block}{:.term}      | The hash is of a block header; identical to `MSG_BLOCK`. When used in a `getdata` message, this indicates the response should be a `compactblock` message rather than a `block` message.  **Only for use in `getdata` messages.**
 
-Type identifier zero and type identifiers greater than three are reserved
+Type identifier zero and type identifiers greater than four are reserved
 for future implementations. Bitcoin Core ignores all inventories with
 one of these unknown types.
 
@@ -166,6 +167,89 @@ different reasons:
    mining pools do the same thing, although some may be misconfigured to
    send the block from multiple nodes, possibly sending the same block
    to some peers more than once.
+
+{% endautocrossref %}
+
+#### BlockTxn
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
+
+*Added in protocol version 70014 as described by BIP152.*
+
+If a node has indicated support for compact blocks by sending a `sendcmpct`
+message, the peer may relay compact blocks using `cmpctblock` messages. The
+node then requests missing transactions using a `getblocktxn` message. The
+`blocktxn` is the response to `getblocktxn` containing the requested
+transactions.
+
+See `sendcmpct` for a full description of compact block relay modes.
+
+| Bytes             | Name                | Data Type            | Description
+|-------------------|---------------------|----------------------|----------------
+| 32                | blockhash           | char[32]             | The blockhash of the block which the transactions being provided are in.
+| *Varies* (1 or 3) | transactions_length | compactSize uint     | The number of transactions being provided.
+| *Varies*          | indexes             | list of Transactions | The transactions in raw transaction format.
+
+The node receiving the `blocktxn` message should reconstruct the full block by:
+
+1. Taking the prefilledtxn transactions from the original cmpctblock and
+placing them in the marked positions.
+2. For each short transaction ID from the original cmpctblock, in order, find
+the corresponding transaction either from the blocktxn message or from other
+sources and place it in the first available position in the block.
+
+{% endautocrossref %}
+
+#### CmpctBlock
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
+
+*Added in protocol version 70014 as described by BIP152.*
+
+A `cmpctblock` message is a compact enocoding of a new block, used to relay
+blocks with faster propagation and lower bandwidth than relaying the full
+block. See `sendcmpct` for details of compact block relay modes.
+
+`cmpctblock` contains the block header, short transaction ids for the
+transactions which the node expects the peer to already have, and
+PrefilledTransaction structures for the other transactions in the block
+(which the node expects the peer to not yet have).
+
+| Bytes                   | Name                 | Data Type                     | Description
+|-------------------------|----------------------|-------------------------------|----------------
+| 80                      | header               | Block header                  | The header of the block being provided. The first 80 bytes of the block as defined by the encoding used by "block" messages.
+| 8                       | nonce                | uint64_t                      | A nonce for use in short transaction ID calculations.
+| *Varies* (1 or 3 bytes) | shortids_length      | compactSize uint              | The number of short transaction IDs (ie block tx count - prefilledtxn_length).
+| *Varies*                | shortids             | List of 6-byte integers       | The short transaction IDs calculated from the transactions which are not provided explicitly in prefilledtxn. The construction of the short transaction ID is described below.
+| *Varies* (1 or 3 bytes) | prefilledtxn_length  | compactSize uint              | The number of prefilled transactions in prefilledtxn (ie block tx count - shortids_length).
+| *Varies*                | prefilledtxn         | List of PrefilledTransactions | The transactions which the node expects the peer to be missing. Always includes the coinbase transaction and may include additional transactions in the block. The format of the PrefilledTransaction structure is defined below.
+
+The Prefilled Transaction structure is:
+
+| Bytes             | Name        | Data Type        | Description
+|-------------------|-------------|------------------|----------------
+| *Varies* (1 or 3) | index       | compactSize uint | The index of the transaction in the block, differentially encoded (see below).
+| *Varies*          | Transaction | Transaction      | The transaction being relayed in raw transaction form.
+
+The indexes are *differentially encoded*. Instead of using raw indexes, the
+number encoded is the difference between the current index and the previous
+index, minus one. For example, a first index of 0 implies a real index of 0
+(ie the coinbase transaction), a second index of 0 thereafter refers to a real
+index of 1, etc.
+
+Short transaction IDs are used as a compact representation of transaction to
+relay without sending a full 256-bit hash. They are calculated by:
+
+1. Hashing `block<!--noref--> header<!--noref-->||nonce` (in little-endian) with a single-SHA256 hash
+2. Hashing the transaction ID with [SipHash-2-4](https://en.wikipedia.org/wiki/SipHash). The keys (k0/k1) are set to the first two little-endian 64-bit integers from the above hash, respectively.
+3. Dropping the 2 most significant bytes from the SipHash output to make it 6 bytes.
+
+The SipHash-2-4 keys are derived from the block header and nonce to avoid
+intentional collisions in short transaction ids.
+See [BIP152](https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki#Random_collision_probabilty)
+for a full analysis of the collision probabilities.
 
 {% endautocrossref %}
 
@@ -213,11 +297,39 @@ d39f608a7775b537729884d4e6633bb2
 105e55a16a14d31b0000000000000000 ... Hash #1
 
 5c3e6403d40837110a2e8afb602b1c01
-714bda7ce23bea0a0000000000000000 ... Hash #2
-
+714bda7ce23bea0a0000000000000000 ... Hash #
 00000000000000000000000000000000
 00000000000000000000000000000000 ... Stop hash
 {% endhighlight %}
+
+{% endautocrossref %}
+
+#### GetBlockTxn
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
+
+*Added in protocol version 70014 as described by BIP152.*
+
+If a node has indicated support for compact blocks by sending a `sendcmpct`
+message, the peer may relay compact blocks using `cmpctblock` messages. The
+node then requests missing transactions using a `getblocktxn` message. The
+`blocktxn` is the response to `getblocktxn` containing the requested
+transactions.
+
+The receiving peer must respond with a `blocktxn` message containing all (and
+only) the requested transactions in the requested order.
+
+See `sendcmpct` for a full description of compact block relay modes
+
+| Bytes             | Name          | Data Type            | Description
+|-------------------|---------------|----------------------|----------------
+| 32                | blockhash     | char[32]             | The blockhash of the block which the transactions being requested are in.
+| *Varies* (1 or 3) | indexes count | compactSize uint     | The number of transactions being requested.
+| *Varies*          | indexes       | list of compactSizes | The indexes of the transactions being requested in the block, differentially encoded.
+
+The indexes requested are *differentially encoded*. See `cmpctblock` for a
+description of differential encoding.
 
 {% endautocrossref %}
 
@@ -878,6 +990,52 @@ six hashes are returned instead of four.
 fdacf9b3eb077412e7a968d2e4f11b9a
 9dee312d666187ed77ee7d26af16cb0b ... Element (A TXID)
 {% endhighlight %}
+
+{% endautocrossref %}
+
+#### SendCmpct
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
+
+The `sendcmpct` message is a request to the receiving peer to use a compact
+block mode for the relay of new blocks.
+
+| Bytes | Name    | Data Type | Description
+|-------|---------|-----------|---------------
+| 1     | mode    | boolean   | The compact block mode being requested
+| 8     | version | uint8_t   | The compact block version being requested. In protocol version 70014, only compact block version 1 is supported.
+
+There are two compact block modes: low-bandwidth compact block relay
+(signalled as mode 0) and high-bandwidth compact block relay (signalled as
+mode 1). Additionally, compact block relay is versioned. In protocol version
+70014, only compact block version 1 is supported. Higher version numbers are
+reserved for future use.
+
+When a node receives a `sendcmpct` message and wishes to use compact block
+relay with the sending node, it should respond to the sending node with a
+`sendcmpct` message with the same mode and version numbers.
+
+###### High-bandwidth mode
+
+If a node receives and accepts a `sendcmpct` message with mode 1, the node
+should announce new blocks by sending a `cmpctblock` message. The receiving
+node can then request any transactions which it does not yet have by sending a
+`getblocktxn` message with the indexes of the missing transactions.
+
+![Compact Block high-bandwidth mode](/img/dev/en-compactblock-highbandwidth.svg)
+
+###### Low-bandwidth mode
+
+If a node receives and accepts a `sendcmpct` message with mode 0, the node
+should *not* announce new blocks by sending a `cmpctblock` message, but should
+announce new blocks by sending `inv` or `headers` messages. The receiving node
+can then request the compact block by sending a `getdata` message with a
+MSG_CMPCT_BLOCK inventory type. Once the receiving node has received the
+`cmpctblock` message, it can request any missing transactions using a
+`getblocktxn` message as in high-bandwidth mode.
+
+![Compact Block low-bandwidth mode](/img/dev/en-compactblock-lowbandwidth.svg)
 
 {% endautocrossref %}
 
