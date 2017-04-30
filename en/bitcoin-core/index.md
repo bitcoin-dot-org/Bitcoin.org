@@ -114,4 +114,8 @@ if ( $( window ).width() > 400 && $( window ).height() > 600 ) {
 }
 </script>
 
+#### Disclaimer
+
+"Bitcoin Core" is a separate project from bitcoin.org, and the views expressed by this website and its owners are not necessarily the views expressed by the Bitcoin Core project or its developers.
+
 {% include references.md %}
