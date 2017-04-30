@@ -66,7 +66,7 @@ module Jekyll
         return
       end
       Dir.foreach('_alerts') do |file|
-        next if file == '.' or file == '..'
+        next if file == '.' or file == '..' or file.end_with? '~'
         lang = 'en'
         src = file
         dst = file
