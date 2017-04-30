@@ -413,6 +413,6 @@ the numbers look like regular unsigned integers in little-endian order.
 | <= 0xffffffff         | 5          | 0xfe followed by the number as uint32_t
 | <= 0xffffffffffffffff | 9          | 0xff followed by the number as uint64_t
 
-For example, the number 515 is encoded as 0xfd0302.
+For example, the number 515 is encoded as 0xfd0202.
 
 {% endautocrossref %}
