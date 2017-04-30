@@ -4,13 +4,13 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_includes/devdoc/guide_p2p_network.md" %}
 
-## P2P Network
+## 
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
 The Bitcoin network protocol allows full nodes
-([peers][peer]{:#term-peer}{:.term}) to collaboratively maintain a
+([peers][{:#term-peer}{:.term}) to collaboratively maintain a
 [peer-to-peer network][network]{:#term-network}{:.term} for block and
 transaction exchange. Many SPV clients also use this protocol to connect
 to full nodes.
@@ -22,15 +22,15 @@ information servers][electrum server] used by some wallets that provide
 SPV-level security.
 
 To provide practical examples of the Bitcoin peer-to-peer network, this
-section uses Bitcoin Core as a representative full node and [BitcoinJ][]
+section uses Bitcoin Core as a representative full node and 
 as a representative SPV client. Both programs are flexible, so only
 default behavior is described. Also, for privacy, actual IP addresses
-in the example output below have been replaced with [RFC5737][] reserved
+in the example output below have been replaced with  reserved
 IP addresses.
 
 {% endautocrossref %}
 
-### Peer Discovery
+### 
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -62,7 +62,7 @@ DNS seed if they run on the default Bitcoin ports of 8333 for mainnet
 or 18333 for testnet.
 
 <!-- paragraph below based on Greg Maxwell's email in
-     http://comments.gmane.org/gmane.comp.bitcoin.devel/5378 -->
+     http://comments.gmae.org/gmane.comp.bitcoin.devel/5378 -->
 
 DNS seed results are not authenticated and a malicious seed operator or
 network man-in-the-middle attacker can return only IP addresses of
@@ -72,7 +72,7 @@ blocks.  For this reason, programs should not rely on DNS seeds
 exclusively.
 
 Once a program has connected to the network, its peers can begin to send
-it `addr`
+it `addr` https://live.blockcypher.com/btc/address/12AuaECbPKFsEqJajzUYSNucokLN/
 (address<!--noref-->) messages with the IP addresses and port numbers of
 other peers on the network, providing a fully decentralized method of
 peer discovery. Bitcoin Core keeps a record of known peers in a
