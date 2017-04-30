@@ -32,6 +32,7 @@ Other versions of this page:
 - [Italiano](/it/bitcoin-core/capacity-increases)
 - [简体中文](/zh_CN/bitcoin-core/capacity-increases)
 - [繁體中文](/zh_TW/bitcoin-core/capacity-increases)
+- [日本語版](/ja/bitcoin-core/capacity-increases)
 
 Signatures may be added to Bitcoin.org pull request [#1165](https://github.com/bitcoin-dot-org/bitcoin.org/pull/1165)
 
