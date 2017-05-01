@@ -51,7 +51,7 @@ receive the final alert.
 |Pre-final Alert Posts|Posts on Bitcoin.org, various forums, and various mailing lists that the Alert system will be retired|2016-11-01|
 |Pre-final Alert|The alert itself warning that the Alert system will be retired|2016-11-02|
 |Final Alert|Max sequence Alert to disable the Alert system|2017-01-19|
-|Alert key released|The Alert key will be made publicly available|1-2 months after the Final Alert|
+|Alert key released|The Alert key will be made publicly available|Older clients may contain Alert handling code which is exploitable using the alert key, therefore the public release of the key has been temporarily postponed until considered safe.|
 
 ## Software without the Alert system
 
