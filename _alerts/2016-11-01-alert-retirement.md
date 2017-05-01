@@ -11,10 +11,12 @@ active: false
 
 ## Updates
 
-* **January 19th 2017**: The Final alert has been broadcast. This final alert essentially disables the alert system by overriding all
+* **January 19, 2017**: The Final alert has been broadcast. This final alert essentially disables the alert system by overriding all
 alerts, preventing other alerts from being broadcast, and displays the static message "Alert Key Compromised". The Alert Key
 will be published in the coming months.
-* **March 8th 2017**: Bitcoin Core 0.14 released with hard-coded [final alert](https://bitcoin.org/en/release/v0.14.0#final-alert).
+* **March 8, 2017**: Bitcoin Core 0.14 released with hard-coded [final alert](https://bitcoin.org/en/release/v0.14.0#final-alert).
+* **May 1, 2017**: Postpone release date of Alert key. Older clients may contain Alert handling code which is exploitable using the alert key, therefore the public release of the key has been temporarily postponed until considered safe.
+
 
 ## Summary
 
@@ -51,7 +53,7 @@ receive the final alert.
 |Pre-final Alert Posts|Posts on Bitcoin.org, various forums, and various mailing lists that the Alert system will be retired|2016-11-01|
 |Pre-final Alert|The alert itself warning that the Alert system will be retired|2016-11-02|
 |Final Alert|Max sequence Alert to disable the Alert system|2017-01-19|
-|Alert key released|The Alert key will be made publicly available|Older clients may contain Alert handling code which is exploitable using the alert key, therefore the public release of the key has been temporarily postponed until considered safe.|
+|Alert key release|The Alert key will be made publicly available|Postponed until further notice.|
 
 ## Software without the Alert system
 
