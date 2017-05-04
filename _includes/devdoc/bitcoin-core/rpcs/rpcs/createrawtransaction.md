@@ -16,7 +16,7 @@ The `createrawtransaction` RPC {{summary_createRawTransaction}}
 *Parameter #1---references to previous outputs*
 
 {% itemplate ntpd1 %}
-- n: "Outpoints"
+- n: "Inputs"
   t: "array"
   p: "Required<br>(exactly 1)"
   d: "An array of objects, each one being an unspent outpoint"
@@ -35,6 +35,11 @@ The `createrawtransaction` RPC {{summary_createRawTransaction}}
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "The output index number (vout) of the outpoint; the first output in a transaction is index `0`"
+  
+- n: "→ →<br>`Sequence`"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "The sequence number of the outpoint"
 
 {% enditemplate %}
 
