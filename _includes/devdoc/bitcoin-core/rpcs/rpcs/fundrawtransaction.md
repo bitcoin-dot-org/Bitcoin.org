@@ -55,10 +55,20 @@ All existing inputs must have their previous output transaction be in the wallet
   p: "Optional<br>(0 or 1)"
   d: "The selected outputs are locked after running the rpc call. The default is `false`"
 
+- n: "→ <br>`reserveChangeKey`"
+  t: "bool"
+  p: "Optional<br>(0 or 1)"
+  d: "*Added in Bitcoin Core 0.14.0*<br><br>Reserves the change output key from the keypool. The default is `true`. Before 0.14.0, the used keypool key was never marked as change-address key and directly returned to the keypool (leading to address reuse)."  
+  
 - n: "→ <br>`feeRate`"
   t: "numeric (bitcoins)"
   p: "Optional<br>(0 or 1)"
   d: "The specific feerate  you are willing to pay(BTC per KB). If not set, the wallet determines the fee"
+
+- n: "→ <br>`subtractFeeFromOutputs`"
+  t: "array"
+  p: "Optional<br>(0 or 1)"
+  d: "A json array of integers. The fee will be equally deducted from the amount of each specified output. The outputs are specified by their zero-based index, before any change output is added."
 
 {% enditemplate %}
 
