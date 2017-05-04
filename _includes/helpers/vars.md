@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 - n: "{{DEPTH}}<br>`involvesWatchonly`"
   t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the payment involves a watch-only address.  Otherwise not returned"
+  d: "Set to `true` if the payment involves a watch-only address.  Otherwise not returned"
 
 - n: "{{DEPTH}}<br>`account`"
   t: "string"
@@ -32,7 +32,7 @@ http://opensource.org/licenses/MIT.
 - n: "{{DEPTH}}<br>`vout`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>For an output, the output index (vout) for this output in this transaction.  For an input, the output index for the output being spent in its transaction.  Because inputs list the output indexes from previous transactions, more than one entry in the details array may have the same output index"
+  d: "For an output, the output index (vout) for this output in this transaction.  For an input, the output index for the output being spent in its transaction.  Because inputs list the output indexes from previous transactions, more than one entry in the details array may have the same output index"
 
 - n: "{{DEPTH}}<br>`fee`"
   t: "number (bitcoins)"
@@ -280,7 +280,7 @@ bitcoins even if this parameter is set to `1` or higher.{% endcapture %}
 - n: "Include Watch-Only"
   t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>If set to `true`, include watch-only addresses in details and calculations as if they were regular addresses belonging to the wallet.  If set to `false` (the default), treat watch-only addresses as if they didn't belong to this wallet"
+  d: "If set to `true`, include watch-only addresses in details and calculations as if they were regular addresses belonging to the wallet.  If set to `false` (the default), treat watch-only addresses as if they didn't belong to this wallet"
 
 {% enditemplate %}
 {% endcapture %}

@@ -90,7 +90,7 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "→ →<br>`vout`"
   t: "number (int)"
   p: "Optional<br>(0 or 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>For an output, the output index (vout) for this output in this transaction.  For an input, the output index for the output being spent in its transaction.  Because inputs list the output indexes from previous transactions, more than one entry in the details array may have the same output index.  Not returned for *move* category payments"
+  d: "For an output, the output index (vout) for this output in this transaction.  For an input, the output index for the output being spent in its transaction.  Because inputs list the output indexes from previous transactions, more than one entry in the details array may have the same output index.  Not returned for *move* category payments"
 
 - n: "→ →<br>`fee`"
   t: "number (bitcoins)"

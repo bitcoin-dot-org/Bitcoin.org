@@ -74,7 +74,7 @@ Core.  Use the RPCs listed in the See Also subsection below instead.
 - n: "→<br>`testnet`"
   t: "bool"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if this node is on testnet; set to `false` if this node is on mainnet or a regtest"
+  d: "Set to `true` if this node is on testnet; set to `false` if this node is on mainnet or a regtest"
 
 - n: "→<br>`keypoololdest`"
   t: "number (int)"

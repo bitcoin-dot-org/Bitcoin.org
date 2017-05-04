@@ -108,7 +108,7 @@ the *spendable* field in the results described below.
 - n: "→ →<br>`spendable`"
   t: "bool"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the private key or keys needed to spend this output are part of the wallet.  Set to `false` if not (such as for watch-only addresses)"
+  d: "Set to `true` if the private key or keys needed to spend this output are part of the wallet.  Set to `false` if not (such as for watch-only addresses)"
   
 - n: "→ →<br>`solvable`"
   t: "bool"
