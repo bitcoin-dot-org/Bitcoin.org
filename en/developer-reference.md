@@ -78,6 +78,8 @@ untrusted source.
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/backupwallet.md %}
 
+{% include devdoc/bitcoin-core/rpcs/rpcs/bumpfee.md %}
+
 {% include devdoc/bitcoin-core/rpcs/rpcs/clearbanned.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/createmultisig.md %}
@@ -146,6 +148,8 @@ untrusted source.
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/getmempooldescendants.md %} 
 
+{% include devdoc/bitcoin-core/rpcs/rpcs/getmemoryinfo.md %}
+
 {% include devdoc/bitcoin-core/rpcs/rpcs/getmempoolentry.md %} 
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/getmempoolinfo.md %}
@@ -190,6 +194,8 @@ untrusted source.
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/importaddress.md %}
 
+{% include devdoc/bitcoin-core/rpcs/rpcs/importmulti.md %}
+
 {% include devdoc/bitcoin-core/rpcs/rpcs/importprivkey.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/importprunedfunds.md %}
@@ -222,7 +228,11 @@ untrusted source.
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/ping.md %}
 
+{% include devdoc/bitcoin-core/rpcs/rpcs/preciousblock.md %}
+
 {% include devdoc/bitcoin-core/rpcs/rpcs/prioritisetransaction.md %}
+
+{% include devdoc/bitcoin-core/rpcs/rpcs/pruneblockchain.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/removeprunedfunds.md %}
 
@@ -239,6 +249,8 @@ untrusted source.
 {% include devdoc/bitcoin-core/rpcs/rpcs/setban.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/setgenerate.md %}
+
+{% include devdoc/bitcoin-core/rpcs/rpcs/setnetworkactive.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/settxfee.md %}
 
