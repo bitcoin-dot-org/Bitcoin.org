@@ -28,10 +28,10 @@ The `getrawtransaction` RPC {{summary_getRawTransaction}}
 *Parameter #2---whether to get the serialized or decoded transaction*
 
 {% itemplate ntpd1 %}
-- n: "Verbose"
-  t: "number (int)"
+- n: "Format"
+  t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "Set to `0` (the default) to return the serialized transaction as hex.  Set to `1` to return a decoded transaction"
+  d: "*Updated in Bitcoin Core 0.14.0*<br><br>Set to `false` (the default) to return the serialized transaction as hex.  Set to `true` to return a decoded transaction"
 
 {% enditemplate %}
 
@@ -45,7 +45,7 @@ The `getrawtransaction` RPC {{summary_getRawTransaction}}
 
 {% enditemplate %}
 
-*Result (if verbose=`0`)---the serialized transaction*
+*Result (if verbose=`false`)---the serialized transaction*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
@@ -55,7 +55,7 @@ The `getrawtransaction` RPC {{summary_getRawTransaction}}
 
 {% enditemplate %}
 
-*Result (if verbose=`1`)---the decoded transaction*
+*Result (if verbose=`true`)---the decoded transaction*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
@@ -90,7 +90,7 @@ The `getrawtransaction` RPC {{summary_getRawTransaction}}
 
 {% enditemplate %}
 
-*Examples from Bitcoin Core 0.13.1*
+*Examples from Bitcoin Core 0.14.1*
 
 A transaction in serialized transaction format:
 
@@ -116,7 +116,7 @@ Get the same transaction in JSON:
 {% highlight bash %}
 bitcoin-cli getrawtransaction \
 ef7c0cbf6ba5af68d2ea239bba709b26ff7b0b669839a63bb01c2cb8e8de481e \
-1
+true
 {% endhighlight %}
 
 Result:
