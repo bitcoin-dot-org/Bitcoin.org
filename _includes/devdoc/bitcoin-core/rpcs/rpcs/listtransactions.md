@@ -105,7 +105,7 @@ The `listtransactions` RPC {{summary_listTransactions}}
 - n: "→ →<br>`trusted`"
   t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "Indicates wether we consider the outputs of this unconfirmed transaction safe to spend.  Only returned for unconfirmed transactions"
+  d: "Indicates whether we consider the outputs of this unconfirmed transaction safe to spend.  Only returned for unconfirmed transactions"
 
 - n: "→ →<br>`generated`"
   t: "bool"
