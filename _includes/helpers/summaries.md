@@ -5,12 +5,13 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_addNode="attempts to add or remove a node from the addnode list, or to try a connection to a node once." %}
 {% assign summary_addWitnessAddress="adds a witness address for a script (with pubkey or redeemscript known)." %}
 {% assign summary_backupWallet="safely copies `wallet.dat`<!--noref--> to the specified file, which can be a directory or a path with filename." %}
+{% assign summary_bumpFee="replaces an unconfirmed wallet transaction that signaled RBF with a new transaction that pays a higher fee." %}
 {% assign summary_clearBanned="clears list of banned nodes." %}
 {% assign summary_createMultiSig="creates a P2SH multi-signature address." %}
 {% assign summary_createRawTransaction="creates an unsigned serialized transaction that spends a previous output to a new output with a P2PKH or P2SH address. The transaction is not stored in the wallet or transmitted to the network." %}
 {% assign summary_decodeRawTransaction="decodes a serialized transaction hex string into a JSON object describing the transaction." %}
 {% assign summary_decodeScript="decodes a hex-encoded P2SH redeem script." %}
-{% assign summary_disconnectnode="immediately disconnects from a specified node." %}
+{% assign summary_disconnectNode="immediately disconnects from a specified node." %}
 {% assign summary_dumpPrivKey="returns the wallet-import-format (WIP) private key corresponding to an address. (But does not remove it from the wallet.)" %}
 {% assign summary_dumpWallet="creates or overwrites a file with all wallet keys in a human-readable format." %}
 {% assign summary_encryptWallet="encrypts the wallet with a passphrase.  This is only to enable encryption for the first time. After encryption is enabled, you will need to enter the passphrase to use private keys." %}
@@ -41,6 +42,7 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_getMemPoolDescendants="returns all in-mempool descendants for a transaction in the mempool." %}
 {% assign summary_getMemPoolEntry="returns mempool data for given transaction (must be in mempool)." %}
 {% assign summary_getMemPoolInfo="returns information about the node's current transaction memory pool." %}
+{% assign summary_getMemoryInfo="returns information about memory usage." %}
 {% assign summary_getMiningInfo="returns various mining-related information." %}
 {% assign summary_getNetTotals="returns information about network traffic, including bytes in, bytes out, and the current time." %}
 {% assign summary_getNetworkHashPS="returns the estimated current or historical network hashes per second based on the last *n* blocks." %}
@@ -61,6 +63,7 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_getWork="was removed in Bitcoin Core 0.10.0." %}
 {% assign summary_help="lists all available public RPC commands, or gets help for the specified RPC.  Commands which are unavailable will not be listed, such as wallet RPCs if wallet support is disabled." %}
 {% assign summary_importAddress="adds an address or pubkey script to the wallet without the associated private key, allowing you to watch for transactions affecting that address or pubkey script without being able to spend any of its outputs." %}
+{% assign summary_importMulti="imports addresses/scripts (with private or public keys, redeem script (P2SH)) and rescans all addresses in one-shot-only (can be disabled via options)." %}
 {% assign summary_importPrivKey="adds a private key to your wallet. The key should be formatted in the wallet import format created by the `dumpprivkey` RPC." %}
 {% assign summary_importPrunedFunds="imports funds without the need of a rescan. Meant for use with pruned wallets." %}
 {% assign summary_importWallet="imports private keys from a file in wallet dump file format (see the `dumpwallet` RPC). These keys will be added to the keys currently in the wallet.  This call may need to rescan all or parts of the block chain for transactions affecting the newly-added keys, which may take several minutes." %}
@@ -77,13 +80,15 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_lockUnspent="temporarily locks or unlocks specified transaction outputs. A locked transaction output will not be chosen by automatic coin selection when spending bitcoins. Locks are stored in memory only, so nodes start with zero locked outputs and the locked output list is always cleared when a node stops or fails." %}
 {% assign summary_move="moves a specified amount from one account in your wallet to another using an off-block-chain transaction." %}
 {% assign summary_ping-rpc="sends a P2P ping message to all connected nodes to measure ping time. Results are provided by the `getpeerinfo` RPC pingtime and pingwait fields as decimal seconds. The P2P `ping` message is handled in a queue with all other commands, so it measures processing backlog, not just network ping." %}
+{% assign summary_preciousBlock="treats a block as if it were received before others with the same work." %}
 {% assign summary_prioritiseTransaction="adds virtual priority or fee to a transaction, allowing it to be accepted into blocks mined by this node (or miners which use this node) with a lower priority or fee. (It can also remove virtual priority or fee, requiring the transaction have a higher priority or fee to be accepted into a locally-mined block.)" %}
+{% assign summary_pruneBlockChain="prunes the blockchain up to a specified height or timestamp." %}
 {% assign summary_removePrunedFunds="deletes the specified transaction from the wallet. Meant for use with pruned wallets and as a companion to importprunedfunds." %}
 {% assign summary_restGetBlock-noTxDetails="gets a block with a particular header hash from the local block database either as a JSON object or as a serialized block.  The JSON object includes TXIDs for transactions within the block rather than the complete transactions [GET block][rest get block] returns." %}
 {% assign summary_restGetBlock="gets a block with a particular header hash from the local block database either as a JSON object or as a serialized block." %}
-{% assign summary_restGetChainInfo="provides information about the current state of the block chain." %}
+{% assign summary_restGetChainInfo="returns information about the current state of the block chain." %}
 {% assign summary_restGetGetUtxos="returns an UTXO set given a set of outpoints." %}
-{% assign summary_restGetHeaders="returns a specified amout of block headers in upward direction." %}
+{% assign summary_restGetHeaders="returns a specified amount of block headers in upward direction." %}
 {% assign summary_restGetMemPool-contents="returns all transaction in the memory pool with detailed information." %}
 {% assign summary_restGetMemPool-info="returns information about the node's current transaction memory pool." %}
 {% assign summary_restGetTx="gets a hex-encoded serialized transaction or a JSON object describing the transaction. By default, Bitcoin Core only stores complete transaction data for UTXOs and your own transactions, so this method may fail on historic transactions unless you use the non-default `txindex=1` in your Bitcoin Core startup settings." %}
@@ -94,6 +99,7 @@ This file is licensed under the terms of its source texts{%endcomment%}
 {% assign summary_setAccount="puts the specified address in the given account." %}
 {% assign summary_setBan="attempts add or remove a IP/Subnet from the banned list." %}
 {% assign summary_setGenerate="was removed in Bitcoin Core 0.13.0." %}
+{% assign summary_setNetworkActive="disables/enables all P2P network activity." %}
 {% assign summary_setTxFee="sets the transaction fee per kilobyte paid by transactions created by this wallet." %}
 {% assign summary_signMessage="signs a message with the private key of an address." %}
 {% assign summary_signMessageWithPrivKey="signs a message with a given private key." %}
