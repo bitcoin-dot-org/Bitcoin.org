@@ -55,7 +55,7 @@ The `getblockchaininfo` RPC {{summary_getBlockChainInfo}}
   
 - n: "→<br>`verificationprogress`"
   t: "number (real)"
-  p: "Required (exactly 1)"
+  p: "Required<br>(exactly 1)"
   d: "Estimate of what percentage of the block chain transactions have been verified so far, starting at 0.0 and increasing to 1.0 for fully verified.  May slightly exceed 1.0 when fully synced to account for transactions in the memory pool which have been verified before being included in a block"
 
 - n: "→<br>`chainwork`"

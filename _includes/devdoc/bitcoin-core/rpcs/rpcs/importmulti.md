@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### ImportMulti
 {% include helpers/subhead-links.md %}
 
-{% assign summary_importMulti="imports addresses/scripts (with private or public keys, redeem script (P2SH)) and rescans all addresses in one-shot-only (can be disabled via options)." %}
+{% assign summary_importMulti="imports addresses or scripts (with private keys, public keys, or P2SH redeem scripts) and optionally performs the minimum necessary rescan for all imports." %}
 
 {% autocrossref %}
 
@@ -23,7 +23,7 @@ The `importmulti` RPC {{summary_importMulti}}
 - n: "Imports"
   t: "array"
   p: "Required<br>(exactly 1)"
-  d: "An array of JSON objects, each one being an address/script to be imported"
+  d: "An array of JSON objects, each one being an address or script to be imported"
 
 - n: "→ Import"
   t: "object"
@@ -31,34 +31,39 @@ The `importmulti` RPC {{summary_importMulti}}
   d: "A JSON object describing a particular import"
 
 - n: "→ →<br>`scriptPubKey`"
-  t: "string (hex) / object"
-  p: "Required<br>(exactly 1)"
-  d: "The script (string) or address (JSON) to be imported"
+  t: "string (hex)"
+  p: "Optional<br>(0 or 1)"
+  d: "The script (string) to be imported.  Must have either this field or `address` below"
 
-- n: "→ →<br>`timestamp` / “now”" 
+- n: "→ →<br>`address`"
+  t: "string (base58)"
+  p: "Optional<br>(0 or 1)"
+  d: "The P2PKH or P2SH address to be imported.  Must have either this field or `scriptPubKey` above"
+
+- n: "→ →<br>`timestamp`"
   t: "number (int) / string"
   p: "Required<br>(exactly 1)"
-  d: "The creation time of the key in Unix epoch time or the string “now” to substitute the current synced blockchain time. The timestamp of the oldest key will determine how far back blockchain rescans need to begin. “now” can be specified to bypass scanning, for keys which are known to never have been used, and 0 can be specified to scan the entire blockchain. Blocks up to 2 hours before the earliest key creation time will be scanned" 
+  d: "The creation time of the key in Unix epoch time or the string “now” to substitute the current synced block chain time. The timestamp of the oldest key will determine how far back block chain rescans need to begin. Specify `now` to bypass scanning for keys which are known to never have been used.  Specify `0` to scan the entire block chain. Blocks up to 2 hours before the earliest key creation time will be scanned"
 
 - n: "→ →<br>`redeemscript`"
   t: "string"
   p: "Optional<br>(0 or 1)"
-  d: "A redeem script. Only allowed if the scriptPubKey is a P2SH address or a P2SH scriptPubKey"
+  d: "A redeem script. Only allowed if either the `address` field is a P2SH address or the `scriptPubKey` field is a P2SH scriptPubKey"
   
 - n: "→ →<br>`pubkeys`"
   t: "array"
-  p: "Required<br>(exactly 1)"
-  d: "Array of strings giving pubkeys that must occur in the output or redeemscript"
+  p: "Optional<br>(0 or 1)"
+  d: "Array of strings giving pubkeys that must occur in the scriptPubKey or redeemscript"
 
 - n: "→ →<br>`keys`"
   t: "array"
-  p: "Required<br>(exactly 1)"
-  d: "Array of strings giving private keys whose corresponding public keys must occur in the output or redeemscript"
+  p: "Optional<br>(0 or 1)"
+  d: "Array of strings giving private keys whose corresponding public keys must occur in the scriptPubKey or redeemscript"
   
 - n: "→ →<br>`internal`"
   t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "Stating whether matching outputs should not be treated as incoming payments. The default is `false`"
+  d: "Stating whether matching outputs should be treated as change rather than incoming payments. The default is `false`"
 
 - n: "→ →<br>`watchonly`"
   t: "bool"
@@ -83,7 +88,7 @@ The `importmulti` RPC {{summary_importMulti}}
 - n: "→ <br>`rescan`"
   t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "Set to `true` (the default) to rescan the entire local blockchain for transactions affecting any imported address or script. Set to `false` to not rescan after the import. Rescanning may take up to an hour."
+  d: "Set to `true` (the default) to rescan the entire local block chain for transactions affecting any imported address or script. Set to `false` to not rescan after the import. Rescanning may take a considerable amount of time and may require re-downloading blocks if using block chain pruning"
 
 {% enditemplate %}
 

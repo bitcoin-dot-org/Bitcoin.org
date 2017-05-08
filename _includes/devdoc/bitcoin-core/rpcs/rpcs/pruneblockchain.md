@@ -21,7 +21,7 @@ The `pruneblockchain` RPC {{summary_pruneBlockChain}} The `-prune` option needs 
 - n: "Height"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The block height to prune up to. May be set to a discrete height, or a unix timestamp to prune blocks whose block time is at least 2 hours older than the provided timestamp"
+  d: "The block height to prune up to. May be set to a particular height, or a unix timestamp to prune blocks whose block time is at least 2 hours older than the provided timestamp"
 
 {% enditemplate %}
 

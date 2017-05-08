@@ -107,9 +107,9 @@ ffff01405dc600000000001976a9140dfc8bafc8419853b34d5e072ad37d1a51\
 {
     "changeAddress": "15gJiApWFGTN2iTteQwQbqasdT6dwGWwv6",
     "changePosition" : "",
-	"includeWatching" : false,
-	"lockUnspents" : true,
-	"feeRate" : 0.0001
+    "includeWatching" : false,
+    "lockUnspents" : true,
+    "feeRate" : 0.0001
 }
 {% endhighlight %}
 

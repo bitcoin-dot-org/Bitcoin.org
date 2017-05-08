@@ -16,7 +16,7 @@ http://opensource.org/licenses/MIT.
 *Requires wallet support. Wallet must be unlocked.*
 
 The `bumpfee` RPC {{summary_bumpFee}} The increased fee is deducted from the change output. The command fails if the change output is too small to increase the fee or 
-if the wallet or mempool contains a transaction that spends one of the transactions outputs. The `-walletrbf` option needs to be enabled (default is `false`).
+if the wallet or mempool contains a transaction that spends one of the transaction's outputs. The `-walletrbf` option needs to be enabled (default is `false`).
 
 *Parameter #1---The TXID of the transaction*
 
@@ -39,17 +39,17 @@ if the wallet or mempool contains a transaction that spends one of the transacti
 - n: "→ <br>`confTarget`"
   t: "numeric (int)"
   p: "Optional<br>(0 or 1)"
-  d: "The confirmation target in blocks. Based on this value the new fee will be calculated using estimatefee. If not set the default target of ´6´ blocks will be used"
+  d: "The confirmation target in blocks. Based on this value the new fee will be calculated using the same code as the `estimatefee` RPC. If not set, the default target of ´6´ blocks will be used"
   
 - n: "→ <br>`totalFee`"
-  t: "nummeric (bitcoins)"
+  t: "numeric (satoshis)"
   p: "Optional<br>(0 or 1)"
   d: "The total fee to pay in satoshis (not the feerate). The actual fee can be higher in rare cases if the change output is close to the dust limit"
 
 - n: "→ <br>`replaceable`"
   t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "Whether the new transaction should still be BIP 125 replaceable. Even if set to `false` the transaction may still be replacable , for example if it has unconfirmed ancestors which are replaceable. The default is `true`"
+  d: "Whether the new transaction should still be BIP 125 replaceable. Even if set to `false` the transaction may still be replacable, for example if it has unconfirmed ancestors which are replaceable. The default is `true`"
   
 {% enditemplate %}
 

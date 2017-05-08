@@ -89,11 +89,11 @@ Result (real hostname and IP address replaced):
 {% highlight json %}
 [
     {
-        "addednode" : "bitcoind.example.com:18333",
+        "addednode" : "bitcoind.example.com:8333",
         "connected" : true,
         "addresses" : [
             {
-                "address" : "192.0.2.113:18333",
+                "address" : "192.0.2.113:8333",
                 "connected" : "outbound"
             }
         ]

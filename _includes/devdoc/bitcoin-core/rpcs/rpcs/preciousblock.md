@@ -25,7 +25,7 @@ The `preciousblock` RPC {{summary_preciousBlock}} A later `preciousblock` call c
 
 {% enditemplate %}
 
-*Result---`null` plus error on failed remove*
+*Result---`null` or error on failure*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
@@ -35,7 +35,7 @@ The `preciousblock` RPC {{summary_preciousBlock}} A later `preciousblock` call c
 
 {% enditemplate %}
 
-*Examples from Bitcoin Core 0.14.1*
+*Example from Bitcoin Core 0.14.1*
 
 {% highlight bash %}
 bitcoin-cli preciousblock 000000000000000001517a0bac70b8cd6f27ee\

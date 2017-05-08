@@ -144,11 +144,11 @@ untrusted source.
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/getinfo.md %}
 
+{% include devdoc/bitcoin-core/rpcs/rpcs/getmemoryinfo.md %}
+
 {% include devdoc/bitcoin-core/rpcs/rpcs/getmempoolancestors.md %} 
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/getmempooldescendants.md %} 
-
-{% include devdoc/bitcoin-core/rpcs/rpcs/getmemoryinfo.md %}
 
 {% include devdoc/bitcoin-core/rpcs/rpcs/getmempoolentry.md %} 
 

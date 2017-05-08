@@ -31,7 +31,7 @@ The `getrawtransaction` RPC {{summary_getRawTransaction}}
 - n: "Format"
   t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "*Updated in Bitcoin Core 0.14.0*<br><br>Set to `false` (the default) to return the serialized transaction as hex.  Set to `true` to return a decoded transaction"
+  d: "*Updated in Bitcoin Core 0.14.0*<br><br>Set to `false` (the default) to return the serialized transaction as hex.  Set to `true` to return a decoded transaction.  Before 0.14.0, use `0` and `1`, respectively"
 
 {% enditemplate %}
 

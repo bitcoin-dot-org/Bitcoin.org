@@ -25,7 +25,7 @@ The `setnetworkactive` RPC {{summary_setNetworkActive}}
 
 {% enditemplate %}
 
-*Result---`null` plus error on failed remove*
+*Result---`null` or error on failure*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
@@ -35,7 +35,7 @@ The `setnetworkactive` RPC {{summary_setNetworkActive}}
 
 {% enditemplate %}
 
-*Examples from Bitcoin Core 0.14.1*
+*Example from Bitcoin Core 0.14.1*
 
 {% highlight bash %}
 bitcoin-cli setnetworkactive true
@@ -44,5 +44,7 @@ bitcoin-cli setnetworkactive true
 Result (no output from `bitcoin-cli` because result is set to `null`).
 
 *See also*
+
+* [GetNetworkInfo][rpc getnetworkinfo]: {{summary_getNetworkInfo}}
 
 {% endautocrossref %}

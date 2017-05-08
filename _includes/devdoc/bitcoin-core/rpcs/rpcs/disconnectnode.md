@@ -46,7 +46,8 @@ bitcoin-cli -testnet disconnectnode 192.0.2.113:18333
 Result (no output from `bitcoin-cli` because result is set to `null`).
 
 *See also*
-* [AddNode][rpc addnode]: {{summary_getAddNode}}
+
+* [AddNode][rpc addnode]: {{summary_addNode}}
 * [GetAddedNodeInfo][rpc getaddednodeinfo]: {{summary_getAddedNodeInfo}}
 
 {% endautocrossref %}
