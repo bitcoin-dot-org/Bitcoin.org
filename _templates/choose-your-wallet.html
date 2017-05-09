@@ -116,7 +116,7 @@ wallets:
 - electrum:
     title: "Electrum"
     titleshort: "Electrum"
-    compat: "desktop windows mac linux"
+    compat: "desktop windows mac linux android"
     level: 2
     platform:
       desktop:
@@ -803,7 +803,7 @@ wallets:
 - coinspace:
     title: "Coin.Space"
     titleshort: "Coin.Space"
-    compat: "mobile web android windowsphone"
+    compat: "mobile web android windowsphone ios"
     level: 3
     platform:
       mobile:
@@ -1215,7 +1215,7 @@ wallets:
   <span></span>
   <div>
     <h2>{{ wallet[1].title }}</h2>
-    <div>{% for os in platform.os %}<img src="/img/os/{{ os }}.png" alt="{% translate platform{{os}} %}" title="{% translate platform{{os}} %}" />{% endfor %}</div>
+    <div>{% for os in platform.os %}<img src="/img/os/{{ os }}.png" alt="{% translate platform{{os}} %}" title="{% translate platform{{os}} %}" />{% unless wallet[1].compat contains os %}{% die platform not listed in compat field %}{% endunless %}{% endfor %}</div>
     <div>{% if platform.link == 'bitcoincore' %}<a href="/{{ page.lang }}/{% translate download url %}">{% translate walletdownload %}</a>{% elsif platform.link contains 'play.google.com' or platform.link contains 'itunes.apple.com' or platform.link contains 'chrome.google.com' %}<a href="{{ platform.link }}">{% translate walletdownload %}</a>{% else %}<a href="{{ platform.link }}">{% translate walletvisit %}</a>{% endif %}{% if platform.source %}<a href="{{ platform.source }}">{% translate walletsourcecode %}</a>{% endif %}</div>
     <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
       {% for check in platform.check %}{% if check[0] == 'privacy' and platform.privacycheck %}
