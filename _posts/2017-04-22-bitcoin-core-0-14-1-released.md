@@ -6,7 +6,7 @@ type: posts
 layout: post
 category: blog
 
-title: "Bitcoin Core Version 0.14.0 Released"
+title: "Bitcoin Core Version 0.14.1 Released"
 permalink: /en/posts/bitcoin-core-version-0-14-1-released.html
 date: 2017-04-22
 author: |
