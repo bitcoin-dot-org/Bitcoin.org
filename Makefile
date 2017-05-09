@@ -58,7 +58,9 @@ pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignme
     check-for-missing-copyright-licenses \
     check-bundle \
     check-for-english-in-en-dir \
-    check-for-consistent-bitcoin-core-titles
+    check-for-consistent-bitcoin-core-titles \
+    check-for-too-many-wallets-on-one-platform
+
 
 ## Post-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
 post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
@@ -259,7 +261,7 @@ check-bundle:
 ## Ensure all the dependencies are installed. If you build without this
 ## check, you'll get confusing error messages when your deps aren't up
 ## to date
-	$S ! bundle check | grep -v "The Gemfile's dependencies are satisfied"
+	$S ! bundle check | egrep -v "(Resolving dependencies...|The Gemfile's dependencies are satisfied)"
 
 travis-background-keepalive:
 	$S { while ps aux | grep -q '[m]ake' ; do echo "Ignore me: Travis CI keep alive" ; sleep 1m ; done ; } &
@@ -284,3 +286,10 @@ check-for-consistent-bitcoin-core-titles:
 ## Ensure all page titles in the en/bitcoin-core/ hierarchy mention
 ## Bitcoin Core
 	$S grep -r -L '^title:.*Bitcoin Core' en/bitcoin-core/ | eval $(ERROR_ON_OUTPUT)
+
+check-for-too-many-wallets-on-one-platform:
+	$S for platform in desktop windows mac linux mobile android ios blackberry windowsphone web hardware \
+	   ; do count=$$( grep -c "compat:.*$$platform" _templates/choose-your-wallet.html ) \
+	   ; if [ $$count -gt 14 ] \
+	   ; then echo "ERROR: too many wallets in $$platform platform.  Remove one or change layout" \
+	   ; fi ; done
