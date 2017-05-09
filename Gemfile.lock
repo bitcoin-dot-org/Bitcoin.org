@@ -2,24 +2,17 @@ GEM
   remote: https://rubygems.org/
   specs:
     RedCloth (4.2.9)
-    activesupport (4.2.8)
-      i18n (~> 0.7)
-      minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
-      tzinfo (~> 1.1)
-    addressable (2.5.1)
-      public_suffix (~> 2.0, >= 2.0.2)
+    addressable (2.4.0)
     colorator (0.1)
     colored (1.2)
     commonjs (0.2.7)
-    ethon (0.10.1)
+    ethon (0.8.0)
       ffi (>= 1.3.0)
     execjs (2.6.0)
     ffi (1.9.10)
     ffi-icu (0.1.10)
       ffi (~> 1.0, >= 1.0.9)
-    html-proofer (3.6.0)
-      activesupport (>= 4.2, < 6.0)
+    html-proofer (2.1.0)
       addressable (~> 2.3)
       colored (~> 1.2)
       mercenary (~> 0.3.2)
@@ -27,7 +20,6 @@ GEM
       parallel (~> 1.3)
       typhoeus (~> 0.7)
       yell (~> 2.0)
-    i18n (0.8.1)
     jekyll (3.0.1)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
@@ -55,13 +47,11 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.5)
-    mini_portile2 (2.1.0)
-    minitest (5.10.1)
+    mini_portile2 (2.0.0)
     multi_json (1.11.2)
-    nokogiri (1.6.8.1)
-      mini_portile2 (~> 2.1.0)
-    parallel (1.11.2)
-    public_suffix (2.0.5)
+    nokogiri (1.6.7.1)
+      mini_portile2 (~> 2.0.0.rc2)
+    parallel (1.6.1)
     rake (10.4.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.5)
@@ -73,12 +63,9 @@ GEM
     therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
       ref
-    thread_safe (0.3.6)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
-    tzinfo (1.2.3)
-      thread_safe (~> 0.1)
-    yell (2.0.7)
+    yell (2.0.5)
 
 PLATFORMS
   ruby
@@ -86,16 +73,10 @@ PLATFORMS
 DEPENDENCIES
   RedCloth
   ffi-icu
-  html-proofer (= 3.6.0)
+  html-proofer (= 2.1.0)
   jekyll (~> 3.0)
   jshintrb (~> 0.3.0)
   json
   kramdown
   less (= 2.4.0)
   therubyracer
-
-RUBY VERSION
-   ruby 2.0.0p648
-
-BUNDLED WITH
-   1.13.7
