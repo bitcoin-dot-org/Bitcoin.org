@@ -88,9 +88,10 @@ if the wallet or mempool contains a transaction that spends one of the transacti
 {% highlight bash %}
 bitcoin-cli -testnet bumpfee d4a33e0cabaz723149e1fcab4e033a40173\
 88a644c65370e3cb06ba2f0e13975\
-{
-    "totalFee": "0.0003",
-}
+'{
+    "totalFee": 4000,
+    "replaceable": false
+}'
 {% endhighlight %}
 
 Result:
@@ -98,8 +99,8 @@ Result:
 {% highlight json %}
 {
 	"txid": "37a55ce49636977k79bcb04ee1143573b570b1743e09660e79e7ec3320968ca54",
-	"origfee": 0.0000245,
-	"fee": 0.0003,
+	"origfee": 0.00002450,
+	"fee": 0.00004000,
 	"errors": ""
 }
 {% endhighlight %}

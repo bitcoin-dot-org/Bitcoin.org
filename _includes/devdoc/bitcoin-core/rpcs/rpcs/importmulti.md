@@ -132,7 +132,7 @@ The `importmulti` RPC {{summary_importMulti}}
 Import the address 1NL9w5fP9kX2D9ToNZPxaiwFJCngNYEYJo (giving it a label and scanning the entire block chain) and the scriptPubKey 76a9149e857da0a5b397559c78c98c9d3f7f655d19c68688ac (giving a specific timestamp and label):
 
 {% highlight bash %}
-bitcoin-cli -testnet importmulti '''
+bitcoin-cli importmulti '
   [
     {
       "scriptPubKey" : { "address": "1NL9w5fP9kX2D9ToNZPxaiwFJCngNYEYJo" },
@@ -144,7 +144,7 @@ bitcoin-cli -testnet importmulti '''
       "timestamp" : 1493912405,
       "label" : "TestFailure"
     }
-  ]''' '{ "rescan": true }'
+  ]' '{ "rescan": true }'
 {% endhighlight %}
 
 Result (scriptPubKey import failed because `internal` was not set to `true`):

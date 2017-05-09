@@ -104,13 +104,13 @@ bitcoin-cli -testnet fundrawtransaction 01000000011da9283b4ddf8d\
 89eb996988b89ead56cecdc44041ab38bf787f1206cd90b51e0000000000ffff\
 ffff01405dc600000000001976a9140dfc8bafc8419853b34d5e072ad37d1a51\
 59f58488ac00000000 
-{
+'{
     "changeAddress": "15gJiApWFGTN2iTteQwQbqasdT6dwGWwv6",
-    "changePosition" : "",
+    "changePosition" : 1,
     "includeWatching" : false,
     "lockUnspents" : true,
     "feeRate" : 0.0001
-}
+}'
 {% endhighlight %}
 
 Result:
