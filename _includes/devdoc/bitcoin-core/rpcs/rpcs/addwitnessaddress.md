@@ -7,14 +7,13 @@ http://opensource.org/licenses/MIT.
 ##### AddWitnessAddress
 {% include helpers/subhead-links.md %}
 
-{% assign summary_addWitnessAddress="adds a witness address for a script (with pubkey or redeemscript known)." %}
+{% assign summary_addWitnessAddress="adds a witness address for a script (with pubkey or redeem script known)." %}
 
 {% autocrossref %}
 
 *Added in Bitcoin Core 0.13.0*
 
-*Requires wallet support. Requires an unlocked wallet or an
-unencrypted wallet.*
+*Requires wallet support. Requires an unlocked wallet or an unencrypted wallet.*
 
 The `addwitnessaddress` RPC {{summary_addWitnessAddress}}
 
@@ -46,7 +45,7 @@ bitcoin-cli addwitnessaddress 1BRo7qrYHMPrzdBDzfjmzteBdYAyTMXW75
 
 Result:
 
-The RPC is disabled by default on mainet as long as Segregated Witness has not been activated.
+The RPC is disabled by default on mainnet as long as Segregated Witness has not been activated.
 `-walletprematurewitness` enables the RPC.
 
 {% highlight text %}
@@ -54,5 +53,8 @@ The RPC is disabled by default on mainet as long as Segregated Witness has not b
 {% endhighlight %}
 
 *See also*
+
+* [BIP-141 - Segregated Witness](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki)
+* [BIP-142 - Address Format for Segregated Witness](https://github.com/bitcoin/bips/blob/master/bip-0142.mediawiki)
 
 {% endautocrossref %}

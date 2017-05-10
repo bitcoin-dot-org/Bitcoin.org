@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### DisconnectNode
 {% include helpers/subhead-links.md %}
 
-{% assign summary_disconnectnode="immediately disconnects from a specified node." %}
+{% assign summary_disconnectNode="immediately disconnects from a specified node." %}
 
 {% autocrossref %}
 
@@ -18,10 +18,10 @@ The `disconnectnode` RPC {{summary_disconnectNode}}
 *Parameter #1---hostname/IP address and port of node to disconnect*
 
 {% itemplate ntpd1 %}
-- n: "Node"
+- n: "Address"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The node you want to disconnect from as a string in the form of `<IP address>:<port>`.  The IP address may be a hostname resolvable through DNS, an IPv4 address, an IPv4-as-IPv6 address, or an IPv6 address"
+  d: "*Updated in Bitcoin Core 0.14.1*<br><br>The node you want to disconnect from as a string in the form of `<IP address>:<port>`.  The IP address may be a hostname resolvable through DNS, an IPv4 address, an IPv4-as-IPv6 address, or an IPv6 address"
 
 {% enditemplate %}
 
@@ -35,7 +35,7 @@ The `disconnectnode` RPC {{summary_disconnectNode}}
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.12.1*
+*Example from Bitcoin Core 0.14.1*
 
 Disconnects following node from your node.
 
@@ -47,6 +47,7 @@ Result (no output from `bitcoin-cli` because result is set to `null`).
 
 *See also*
 
+* [AddNode][rpc addnode]: {{summary_addNode}}
 * [GetAddedNodeInfo][rpc getaddednodeinfo]: {{summary_getAddedNodeInfo}}
 
 {% endautocrossref %}

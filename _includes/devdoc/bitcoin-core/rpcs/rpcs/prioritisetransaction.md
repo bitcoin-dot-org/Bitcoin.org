@@ -11,8 +11,6 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-*Added in Bitcoin Core 0.10.0.*
-
 The `prioritisetransaction` RPC {{summary_prioritiseTransaction}}
 
 *Parameter #1---the TXID of the transaction to modify*

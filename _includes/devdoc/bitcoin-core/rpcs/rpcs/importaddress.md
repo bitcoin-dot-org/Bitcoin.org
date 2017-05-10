@@ -11,7 +11,7 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-*Requires wallet support.  Added in Bitcoin Core 0.10.0.*
+*Requires wallet support.*
 
 The `importaddress` RPC {{summary_importAddress}}
 

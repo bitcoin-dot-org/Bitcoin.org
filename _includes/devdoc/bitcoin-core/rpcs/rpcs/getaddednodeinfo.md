@@ -19,7 +19,7 @@ The `getaddednodeinfo` RPC {{summary_getAddedNodeInfo}}
 - n: "Details"
   t: "bool"
   p: "Required<br>(exactly 1)"
-  d: "Set to `true` to display detailed information about each added node; set to `false` to only display the IP address or hostname and port added"
+  d: "*Removed in Bitcoin Core 0.14.0*<br><br>Set to `true` to display detailed information about each added node; set to `false` to only display the IP address or hostname and port added"
 
 {% enditemplate %}
 
@@ -78,10 +78,10 @@ The `getaddednodeinfo` RPC {{summary_getAddedNodeInfo}}
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example from Bitcoin Core 0.14.1*
 
 {% highlight bash %}
-bitcoin-cli -testnet getaddednodeinfo true
+bitcoin-cli getaddednodeinfo
 {% endhighlight %}
 
 Result (real hostname and IP address replaced):
@@ -89,11 +89,11 @@ Result (real hostname and IP address replaced):
 {% highlight json %}
 [
     {
-        "addednode" : "bitcoind.example.com:18333",
+        "addednode" : "bitcoind.example.com:8333",
         "connected" : true,
         "addresses" : [
             {
-                "address" : "192.0.2.113:18333",
+                "address" : "192.0.2.113:8333",
                 "connected" : "outbound"
             }
         ]

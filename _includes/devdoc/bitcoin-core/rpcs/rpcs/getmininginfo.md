@@ -66,12 +66,12 @@ The `getmininginfo` RPC {{summary_getMiningInfo}}
 - n: "→<br>`testnet`"
   t: "bool"
   p: "Required<br>(exactly 1)"
-  d: "Set to `true` if this node is running on testnet.  Set to `false` if this node is on mainnet or a regtest"
+  d: "*Removed in Bitcoin Core 0.14.0*<br><br>Set to `true` if this node is running on testnet.  Set to `false` if this node is on mainnet or a regtest"
 
 - n: "→<br>`chain`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>Set to `main` for mainnet, `test` for testnet, and `regtest` for regtest"
+  d: "Set to `main` for mainnet, `test` for testnet, and `regtest` for regtest"
 
 - n: "→<br>`generate`"
   t: "bool"
@@ -85,25 +85,25 @@ The `getmininginfo` RPC {{summary_getMiningInfo}}
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.13.1*
+*Example from Bitcoin Core 0.14.1*
 
 {% highlight bash %}
-bitcoin-cli -testnet getmininginfo
+bitcoin-cli getmininginfo
 {% endhighlight %}
 
 Result:
 
 {% highlight json %}
 {
-    "blocks" : 313168,
-    "currentblocksize" : 1819,
-    "currentblocktx" : 3,
-    "difficulty" : 1.00000000,
-    "errors" : "",
-    "networkhashps" : 5699977416637,
-    "pooledtx" : 8,
-    "testnet" : true,
-    "chain" : "test",
+    "blocks": 464545,
+    "currentblocksize": 0,
+    "currentblockweight": 0,
+    "currentblocktx": 0,
+    "difficulty": 521974519553.6282,
+    "errors": "",
+    "networkhashps": 4.126888339085874e+18,
+    "pooledtx": 31241,
+    "chain": "main"
 }
 {% endhighlight %}
 

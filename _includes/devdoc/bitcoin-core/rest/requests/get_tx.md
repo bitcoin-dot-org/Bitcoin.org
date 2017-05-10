@@ -11,7 +11,7 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-The `GET tx` operation {{summary_restTx}}
+The `GET tx` operation {{summary_restGetTx}}
 
 {{reindexNote}}
 

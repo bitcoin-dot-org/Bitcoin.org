@@ -11,8 +11,6 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-*Added in Bitcoin Core 0.10.0.*
-
 The `getchaintips` RPC {{summary_getChainTips}}
 
 *Parameters: none*

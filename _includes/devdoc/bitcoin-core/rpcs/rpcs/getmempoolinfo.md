@@ -11,8 +11,6 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-*Added in Bitcoin Core 0.10.0*
-
 The `getmempoolinfo` RPC {{summary_getMemPoolInfo}}
 
 *Parameters: none*
@@ -52,7 +50,7 @@ The `getmempoolinfo` RPC {{summary_getMemPoolInfo}}
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.12.0*
+*Example from Bitcoin Core 0.14.1*
 
 {% highlight bash %}
 bitcoin-cli -testnet getmempoolinfo
