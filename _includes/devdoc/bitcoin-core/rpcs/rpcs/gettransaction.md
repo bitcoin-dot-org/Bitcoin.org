@@ -59,7 +59,7 @@ The `gettransaction` RPC {{summary_getTransaction}}
 - n: "→ → <br>`involvesWatchonly`"
   t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the input or output involves a watch-only address.  Otherwise not returned"
+  d: "Set to `true` if the input or output involves a watch-only address.  Otherwise not returned"
 
 - n: "→ →<br>`account`"
   t: "string"
@@ -84,7 +84,7 @@ The `gettransaction` RPC {{summary_getTransaction}}
 - n: "→ →<br>`vout`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>For an output, the output index (vout) for this output in this transaction.  For an input, the output index for the output being spent in its transaction.  Because inputs list the output indexes from previous transactions, more than one entry in the details array may have the same output index"
+  d: "For an output, the output index (vout) for this output in this transaction.  For an input, the output index for the output being spent in its transaction.  Because inputs list the output indexes from previous transactions, more than one entry in the details array may have the same output index"
 
 - n: "→ →<br>`fee`"
   t: "number (bitcoins)"

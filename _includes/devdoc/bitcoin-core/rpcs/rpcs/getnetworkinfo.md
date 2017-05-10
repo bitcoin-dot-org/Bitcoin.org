@@ -31,7 +31,7 @@ The `getnetworkinfo` RPC {{summary_getNetworkInfo}}
 - n: "→<br>`subversion`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>The user agent this node sends in its `version` message"
+  d: "The user agent this node sends in its `version` message"
 
 - n: "→<br>`protocolversion`"
   t: "number (int)"
@@ -41,7 +41,7 @@ The `getnetworkinfo` RPC {{summary_getNetworkInfo}}
 - n: "→<br>`localservices`"
   t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>The services supported by this node as advertised in its `version` message"
+  d: "The services supported by this node as advertised in its `version` message"
   
 - n: "→<br>`localrelay`"
   t: "bool"
@@ -61,7 +61,7 @@ The `getnetworkinfo` RPC {{summary_getNetworkInfo}}
 - n: "→<br>`networks`"
   t: "array"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>An array with three objects: one describing the IPv4 connection, one describing the IPv6 connection, and one describing the Tor hidden service (onion) connection"
+  d: "An array with three objects: one describing the IPv4 connection, one describing the IPv6 connection, and one describing the Tor hidden service (onion) connection"
 
 - n: "→ →<br>Network"
   t: "object"

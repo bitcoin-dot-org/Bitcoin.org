@@ -11,8 +11,6 @@ http://opensource.org/licenses/MIT.
 
 {% assign summary_estimatePriority="estimates the priority that a transaction needs in order to be included within a certain number of blocks as a free high-priority transaction." %}
 
-*Added in Bitcoin Core 0.10.0.*
-
 The `estimatepriority` RPC {{summary_estimatePriority}}
 
 {{WARNING}} `estimatepriority` will be removed in a later version of Bitcoin

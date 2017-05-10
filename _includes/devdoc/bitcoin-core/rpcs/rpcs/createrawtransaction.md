@@ -13,28 +13,33 @@ http://opensource.org/licenses/MIT.
 
 The `createrawtransaction` RPC {{summary_createRawTransaction}}
 
-*Parameter #1---references to previous outputs*
+*Parameter #1---Inputs*
 
 {% itemplate ntpd1 %}
-- n: "Outpoints"
+- n: "Inputs"
   t: "array"
   p: "Required<br>(exactly 1)"
-  d: "An array of objects, each one being an unspent outpoint"
+  d: "An array of objects, each one to be used as an input to the transaction"
 
-- n: "→ Outpoint"
+- n: "→ Input"
   t: "object"
   p: "Required<br>(1 or more)"
-  d: "An object describing a particular unspent outpoint"
+  d: "An object describing a particular input"
 
 - n: "→ →<br>`txid`"
   t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The TXID of the outpoint encoded as hex in RPC byte order"
+  d: "The TXID of the outpoint to be spent encoded as hex in RPC byte order"
 
 - n: "→ →<br>`vout`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The output index number (vout) of the outpoint; the first output in a transaction is index `0`"
+  d: "The output index number (vout) of the outpoint to be spent; the first output in a transaction is index `0`"
+  
+- n: "→ →<br>`Sequence`"
+  t: "number (int)"
+  p: "Optional<br>(0 or 1)"
+  d: "The sequence number to use for the input"
 
 {% enditemplate %}
 

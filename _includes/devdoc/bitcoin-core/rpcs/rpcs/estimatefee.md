@@ -11,8 +11,6 @@ http://opensource.org/licenses/MIT.
 
 {% autocrossref %}
 
-*Added in Bitcoin Core 0.10.0.*
-
 The `estimatefee` RPC {{summary_estimateFee}}
 
 *Parameter #1---how many blocks the transaction may wait before being included*
@@ -21,7 +19,7 @@ The `estimatefee` RPC {{summary_estimateFee}}
 - n: "Blocks"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block"
+  d: "The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block. Has to be between 2 and 25 blocks"
 
 {% enditemplate %}
 
@@ -35,7 +33,7 @@ The `estimatefee` RPC {{summary_estimateFee}}
 
 {% enditemplate %}
 
-*Examples from Bitcoin Core 0.10.0*
+*Examples from Bitcoin Core 0.14.1*
 
 {% highlight bash %}
 bitcoin-cli estimatefee 6
@@ -44,10 +42,10 @@ bitcoin-cli estimatefee 6
 Result:
 
 {% highlight json %}
-0.00026809
+0.00162556
 {% endhighlight %}
 
-Requesting data the node can't calculate yet:
+Requesting data the node can't calculate (out of range):
 
 {% highlight bash %}
 bitcoin-cli estimatefee 100
@@ -56,12 +54,11 @@ bitcoin-cli estimatefee 100
 Result:
 
 {% highlight json %}
--1.00000000
+-1
 {% endhighlight %}
 
 *See also*
 
-* [EstimatePriority][rpc estimatepriority]: {{summary_estimatePriority}}
 * [SetTxFee][rpc settxfee]: {{summary_setTxFee}}
 
 {% endautocrossref %}

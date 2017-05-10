@@ -31,7 +31,7 @@ The `getpeerinfo` RPC {{summary_getPeerInfo}}
 - n: "→ →<br>`id`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>The node's index number in the local node address database"
+  d: "The node's index number in the local node address database"
 
 - n: "→ →<br>`addr`"
   t: "string"
@@ -121,22 +121,17 @@ The `getpeerinfo` RPC {{summary_getPeerInfo}}
 - n: "→ →<br>`synced_headers`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>The highest-height header we have in common with this node based the last P2P `headers` message it sent us.  If a `headers` message has not been received, this will be set to `-1`"
+  d: "The highest-height header we have in common with this node based the last P2P `headers` message it sent us.  If a `headers` message has not been received, this will be set to `-1`"
 
 - n: "→ →<br>`synced_blocks`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>The highest-height block we have in common with this node based on P2P `inv` messages this node sent us.  If no block `inv` messages have been received from this node, this will be set to `-1`"
-
-- n: "→ →<br>`syncnode`"
-  t: "bool"
-  p: "Required<br>(exactly 1)"
-  d: "*Removed in Bitcoin Core 0.10.0*<br><br>Whether we're using this node as our syncnode during initial block download"
+  d: "The highest-height block we have in common with this node based on P2P `inv` messages this node sent us.  If no block `inv` messages have been received from this node, this will be set to `-1`"
 
 - n: "→ →<br>`inflight`"
   t: "array"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>An array of blocks which have been requested from this peer.  May be empty"
+  d: "An array of blocks which have been requested from this peer.  May be empty"
 
 - n: "→ → →<br>Blocks"
   t: "number (int)"
@@ -146,7 +141,7 @@ The `getpeerinfo` RPC {{summary_getPeerInfo}}
 - n: "→ →<br>`whitelisted`"
   t: "bool"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the remote peer has been whitelisted; otherwise, set to `false`.  Whitelisted peers will not be banned if their ban score exceeds the maximum (100 by default).  By default, peers connecting from localhost are whitelisted"
+  d: "Set to `true` if the remote peer has been whitelisted; otherwise, set to `false`.  Whitelisted peers will not be banned if their ban score exceeds the maximum (100 by default).  By default, peers connecting from localhost are whitelisted"
 
 - n: "→ →<br>`bytessent_per_msg`"
   t: "string : <br>object"

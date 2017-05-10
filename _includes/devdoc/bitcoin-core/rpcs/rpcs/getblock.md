@@ -23,7 +23,7 @@ The `getblock` RPC {{summary_getBlock}}
 
 {% enditemplate %}
 
-*Parameter #2---JSON or hex output*
+*Parameter #2---whether to get JSON or hex output*
 
 {% itemplate ntpd1 %}
 - n: "Format"
