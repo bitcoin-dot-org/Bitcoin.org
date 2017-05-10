@@ -389,6 +389,7 @@ function walletListener(e) {
       if (isMobile()) {
         var p = document.getElementById('walletsmobile');
         t = t.cloneNode(true);
+        t.id = 'inline_wallet_box';
         p.innerHTML = '';
         p.appendChild(t);
         scrollToNode(p);
@@ -467,6 +468,7 @@ function walletShowPlatform(platform) {
         for (var i = 0, nds = document.getElementById('walletsswitch').childNodes, n = nds.length; i < n; i++) {
           if (nds[i].nodeType !== 1) continue;
           var id = nds[i].id.split('-')[1];
+          // for wallets with multiple listings, only show one instance per view
           if (document.getElementById('wallet-' + id)) continue;
           var nd = null;
           for (var ii = 0, nn = platforms.length; ii < nn; ii++) {
