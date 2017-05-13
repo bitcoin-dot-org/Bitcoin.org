@@ -1310,7 +1310,7 @@ blocks could be served to other nodes.
 
 ### Reduce Traffic
 
-Some node operators need to deal with bandwith caps imposed by their ISPs.
+Some node operators need to deal with bandwidth caps imposed by their ISPs.
 
 By default, bitcoin-core allows up to 125 connections to different peers, 8 of
 which are outbound. You can therefore, have at most 117 inbound connections.
@@ -1351,9 +1351,28 @@ blocks and transactions to fewer nodes.
 -maxconnections=<num>
 {% endhighlight %}
 
-Reducing the maximum connected nodes to a miniumum could be desirable if traffic
+Reducing the maximum connected nodes to a minimum could be desirable if traffic
 limits are tiny. Keep in mind that bitcoin's trustless model works best if you are
 connected to a handful of nodes.
+
+#### Blocks-only mode
+
+{% highlight text %}
+-blocksonly
+{% endhighlight %}
+
+{% comment %}update-if-segwit: change max bandwidth amounts{% endcomment %}
+
+Causes your node to stop requesting and relaying transactions unless they are
+part of a block and also disables listening as described above.
+
+This reduces your node's bandwidth to the absolute minimum necessary to stay
+synchronized with the network, about 150 megabytes incoming data per day and
+about 1 megabyte of outgoing data per day, but it does mean that your node
+won't see incoming transactions until they've received at least one confirmation.
+
+You will still be able to send transactions from the built-in wallet or from
+peers you've whitelisted using the `-whitelist` parameter.
 
 </div>
 <script>updateToc();</script>
