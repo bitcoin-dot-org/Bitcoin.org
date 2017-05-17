@@ -1,0 +1,39 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Replace-by-Fee, RBF
+
+    summary_max_255_characters_no_formatting: >
+        Replacing one version of an unconfirmed transaction with a
+        different version of the transaction that pays a higher
+        transaction fee.  May use BIP125 signaling.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Replace by fee
+        - RBF
+        - Opt-in replace by fee
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+      - Replace-by-fee
+      - Full replace by fee
+      - Full RBF
+      - Replace by fee first seen safe
+      - Replace-by-fee first-seen-safe
+      - RBF FSS
+      - RBF-FSS
+      - "`bip125-replaceable`"
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Child pays for parent
+        - CPFP
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[BIP125: Opt-in Full Replace-by-Fee signaling](https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki) --- Bitcoin Improvement Proposals repository"
+        - "[Opt-in RBF FAQ](https://bitcoincore.org/en/faq/optin_rbf/) --- BitcoinCore.org"
+        - "[Transaction replacement](https://en.bitcoin.it/wiki/Transaction_replacement) --- Bitcoin Wiki"
+
+---
