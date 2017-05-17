@@ -20,6 +20,13 @@ properties:
     description: The page identifier to use for translations
     type: string
 
+  max_wallet_text_length:
+    description: >
+      The global maximum length for a wallet text description in any
+      langugage (counted in Unicode characters).  Ensures text doesn't
+      overfill its box.
+    type: integer
+
   ## The wallets array
   wallets:
     description: The array containing all wallets
@@ -102,7 +109,7 @@ properties:
                 - desktop
             properties:
               desktop:
-                description: Wallets than run on desktop operating systems
+                description: Wallets that run on desktop operating systems
                 type: object
                 required: &desktop-required
                   - text
