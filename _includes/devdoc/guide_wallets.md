@@ -423,7 +423,7 @@ point (the public key):
 
 {% autocrossref %}
 
-Because of the way `point()` functions, it's possible to create a [child
+Because of the way `point()` functions work, it's possible to create a [child
 public key][/en/glossary/child-key]{:#term-child-public-key}{:.term} by combining an
 existing [(parent) public key][/en/glossary/parent-key]{:#term-parent-public-key}{:.term} with another public key created from any
 integer (*i*) value. This child public key is the same public key which
