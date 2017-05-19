@@ -10,8 +10,13 @@ REPO='https://github.com/bitcoin-dot-org/bitcoin.org.git'
 BUNDLE_DIR='/bitcoin.org/bundle'
 SITEDIR='/bitcoin.org/site'
 DESTDIR='build@bitcoinorgsite:/var/www/site'
+LAST_SUCCESSFUL_BUILD_COMMITISH_FILE=/bitcoin.org/last-successful-build-commitish
 WORKDIR=`mktemp -d`
 BITCOINORG_BUILD_TYPE='deployment'
+
+## Parameters
+BUILD_TYPE="${1:-nil}"
+BUILD_COMMITISH="${2:-origin/master}"
 
 export BUNDLE_DIR
 export BITCOINORG_BUILD_TYPE
@@ -30,21 +35,18 @@ if [ ! -d $SITEDIR ]; then
 	git reset --hard HEAD~1
 fi
 
-# Exit if no new commit is available
+# Get commit data
 cd $SITEDIR
 git fetch -a
 LASTLOCALCOMMIT=`git log --format="%H" | head -n1`
-LASTREMOTECOMMIT=`git log origin/master --format="%H" | head -n1`
-if [ $LASTLOCALCOMMIT == $LASTREMOTECOMMIT ]; then
-	exit
-fi
+LASTREMOTECOMMIT=`git log "$BUILD_COMMITISH" --format="%H" | head -n1`
 
 # Update local branch
-git reset --hard origin/master
+git reset --hard "$LASTREMOTECOMMIT"
 git clean -x -f -d
 
 ## Whether to auto-build or force-build
-case "${1:-nil}" in
+case "$BUILD_TYPE" in
   auto)
     ## From git-log(1):
     ## %G?: show "G" for a Good signature, "B" for a Bad signature, "U"
@@ -53,6 +55,11 @@ case "${1:-nil}" in
     then
       echo "Commit tree tip not signed by an authorized signer.  Terminating build."
       exit 1
+    fi
+
+    ## Don't auto build if we already had this commit
+    if [ $LASTLOCALCOMMIT == $LASTREMOTECOMMIT ]; then
+            exit
     fi
   ;;
 
@@ -97,6 +104,11 @@ do
 	if [ -e "$WORKDIR/_builddone" ]; then
 		find $WORKDIR/_site \( -iname '*.html' -o -iname '*.css' -o -iname '*.js' -o -iname '*.rss' -o -iname '*.xml' -o -iname '*.svg' -o -iname '*.ttf' \) -exec gzip -9 -k {} \;
 		rsync --delete -zrt $WORKDIR/_site/ $DESTDIR/
+
+                ## Save this commit's ID.  You can force rebuild the current commit using:
+                ##   update_site.sh force $( cat </path/to/last-successful-build-commitish> )
+                echo "$LASTREMOTECOMMIT" > $LAST_SUCCESSFUL_BUILD_COMMITISH_FILE
+
                 echo "Upload done; terminating script"
 		exit
 	fi
