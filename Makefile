@@ -59,8 +59,8 @@ pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignme
     check-bundle \
     check-for-english-in-en-dir \
     check-for-consistent-bitcoin-core-titles \
-    check-for-too-many-wallets-on-one-platform
-
+    check-for-too-many-wallets-on-one-platform \
+    check-validate-yaml \
 
 ## Post-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
 post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
@@ -293,3 +293,7 @@ check-for-too-many-wallets-on-one-platform:
 	   ; if [ $$count -gt 14 ] \
 	   ; then echo "ERROR: too many wallets in $$platform platform.  Remove one or change layout" \
 	   ; fi ; done
+
+check-validate-yaml:
+## Validate YAML files against schemas
+	$S bundle exec _contrib/schema-validator.rb quality-assurance/schemas/wallets.yaml _templates/choose-your-wallet.html

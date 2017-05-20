@@ -7,6 +7,7 @@
 
 layout: base
 id: choose-your-wallet
+max_wallet_text_length: 418  ## Unicode characters
 
 wallets:
 - bitcoincore:
@@ -261,7 +262,6 @@ wallets:
         - android
         - ios
         - windowsphone
-        - linux
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
@@ -1100,6 +1100,7 @@ wallets:
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 - btc.com:
     title: "BTC.com Bitcoin Wallet"
     titleshort: "BTC.com"
@@ -1231,7 +1232,9 @@ wallets:
       <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><p>{% translate {{check[1]}}txt %}</p><span></span></div></div>
       {% endif %}{% endfor %}
     </div>
-    <p>{% translate {{platform.text}} %}</p>
+    {% capture platform_text %}{% translate {{platform.text}} %}{% endcapture %}
+    {% assign platform_text_length = platform_text | size %}
+    <p>{% if platform_text_length > page.max_wallet_text_length %}{% die Wallet text too long %}{% else %}{{platform_text}}{% endif %}</p>
     <div><img src="/img/screenshots/{{ platform.screenshot }}" alt="screenshot"></div>
   </div>
   <a><img src="/img/wallet/{{ wallet[0] }}.png" alt="{{ wallet[1].title }}" />{{ wallet[1].titleshort }}<span></span></a>
@@ -1261,7 +1264,9 @@ wallets:
       <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><p>{% translate {{check[1]}}txt %}</p><span></span></div></div>
       {% endif %}{% endfor %}
     </div>
-    <p>{% translate {{platform[1].text}} %}</p>
+    {% capture platform_text %}{% translate {{platform[1].text}} %}{% endcapture %}
+    {% assign platform_text_length = platform_text | size %}
+    <p>{% if platform_text_length > page.max_wallet_text_length %}{% die Wallet text too long %}{% else %}{{platform_text}}{% endif %}</p>
     <div><img src="/img/screenshots/{{ platform[1].screenshot }}" alt="screenshot"></div>
   </div>
   <a><img src="/img/wallet/{{ wallet[0] }}.png" alt="{{ wallet[1].title }}" />{{ wallet[1].titleshort }}<span></span></a>

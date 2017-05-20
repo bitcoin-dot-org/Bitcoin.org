@@ -156,3 +156,9 @@ servers and be compatible with Tor.
 
 To get a passing score, the wallet must avoid address reuse by using a new
 change address for each transaction.
+
+### Schema validation
+
+Wallet entries are validated against the schema in
+`quality-assurance/schemas/wallets.yaml` and you will find a
+description of every available option in that file.
