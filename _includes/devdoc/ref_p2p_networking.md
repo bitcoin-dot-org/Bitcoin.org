@@ -271,8 +271,9 @@ to the `getheaders` message will include as many as 2,000 block headers.
 
 *Added in protocol version 31800.*
 
-The `headers` message sends one or more block headers to a node which
-previously requested certain headers with a `getheaders` message.
+The `headers` message sends block headers to a node which
+previously requested certain headers with a `getheaders` message. A headers
+message can be empty.
 
 | Bytes    | Name    | Data Type        | Description
 |----------|---------|------------------|-----------------
