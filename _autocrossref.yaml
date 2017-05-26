@@ -95,8 +95,6 @@ output index:
 PaymentDetails:
 PaymentRequest:
 PaymentRequests: paymentrequest
-peer:
-peers: peer
 peer-to-peer: network
 peer-to-peer network: network
 '`ping` message': ping message

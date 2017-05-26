@@ -10,10 +10,13 @@ http://opensource.org/licenses/MIT.
 {% autocrossref %}
 
 The Bitcoin network protocol allows full nodes
-([peers][peer]{:#term-peer}{:.term}) to collaboratively maintain a
+(peers) to collaboratively maintain a
 [peer-to-peer network][network]{:#term-network}{:.term} for block and
-transaction exchange. Many SPV clients also use this protocol to connect
-to full nodes.
+transaction exchange. Full nodes download and verify every block and transaction
+prior to relaying them to other nodes. Archival nodes are full nodes which
+store the entire blockchain and can serve historical blocks to other nodes.
+Pruned nodes are full nodes which do not store the entire blockchain. Many SPV 
+clients also use the Bitcoin network protocol to connect to full nodes.
 
 Consensus rules do not cover networking, so Bitcoin programs may use
 alternative networks and protocols, such as the [high-speed block relay

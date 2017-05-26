@@ -317,6 +317,22 @@ a hard or soft fork. For example, "increasing the block size above 1 MB
 requires a hard fork." In this example, an actual block chain fork is
 not required---but it is a possible outcome.
 
+Consensus rule changes may be activated in various ways. During Bitcoin's 
+first two years, Satoshi Nakamoto performed several soft forks by just 
+releasing the backwards-compatible change in a client that began immediately 
+enforcing the new rule. Multiple soft forks such as BIP30 have
+been activated via a flag day where the new rule began to be enforced at a 
+preset time or block height. Such forks activated via a flag day are known as
+[User Activated Soft Forks][/en/glossary/uasf]{:#term-uasf}{:.term} (UASF) as
+they are dependent on having sufficient users (nodes) to enforce the new rules
+after the flag day.
+
+Later soft forks waited for a majority of of hash rate (typically 75% or 95%) 
+to signal their readiness for enforcing the new consensus rules. Once the signalling
+threshold has been passed, all nodes will begin enforcing the new rules. Such
+forks are known as [Miner Activated Soft Forks][/en/glossary/masf]{:#term-masf}{:.term} (MASF)
+as they are dependent on miners for activation.
+
 **Resources:** [BIP16][], [BIP30][], and [BIP34][] were implemented as
 changes which might have lead to soft forks. [BIP50][] describes both an
 accidental hard fork, resolved by temporary downgrading the capabilities

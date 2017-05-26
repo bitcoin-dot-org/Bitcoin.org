@@ -48,7 +48,7 @@ The `listbanned` RPC {{summary_listBanned}}
 - n: "→ →<br>`ban_reason`"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "Set to one of the following reasons:<br>• `node misbehaving` if the node was banned by the client because of DoS violations<br>• `manually added` if the node was manually banned by the user"
+  d: "Set to one of the following reasons:<br>• `node<!--noref--> misbehaving` if the node was banned by the client because of DoS violations<br>• `manually added` if the node was manually banned by the user"
 
 {% enditemplate %}
 
