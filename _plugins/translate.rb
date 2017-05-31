@@ -80,6 +80,9 @@ module Jekyll
           text = ar[id]
         end
       end
+      #interpret Liquid templating in string
+      text = Liquid::Template.parse(text).render context
+
       #replace urls and anchors in string
       url = site['loc'][lang]['url']
       url.each do |key,value|

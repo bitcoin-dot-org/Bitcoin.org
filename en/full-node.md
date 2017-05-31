@@ -1291,8 +1291,8 @@ chatrooms](/en/bitcoin-core/help#live).
 ### Reduce Storage
 
 It is possible to configure your node to to run in pruned mode in order to
-reduce storage requirements. This can reduce the disk usage from over 100GB to
-around 2GB.
+reduce storage requirements. This can reduce the disk usage from over {{site.text.bitcoin_datadir_gb}}GB to
+around {{site.text.bitcoin_datadir_gb_pruned}}GB.
 
 Running a node in pruned mode is incompatible with `-txindex` and `-rescan`. It
 also disables the RPC `importwallet`. Two RPCs that are available and
