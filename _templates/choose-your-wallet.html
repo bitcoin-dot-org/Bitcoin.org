@@ -7,6 +7,7 @@
 
 layout: base
 id: choose-your-wallet
+max_wallet_text_length: 418  ## Unicode characters
 
 wallets:
 - bitcoincore:
@@ -30,6 +31,7 @@ wallets:
           transparency: "checkgoodtransparencydeterministic"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkgoodprivacyimproved"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkpassprivacydisclosurefullnode"
@@ -55,34 +57,10 @@ wallets:
           transparency: "checkgoodtransparencydeterministic"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkgoodprivacyimproved"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkpassprivacydisclosurefullnode"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
-- multibithd:
-    title: "MultiBit HD"
-    titleshort: "MultiBit HD"
-    compat: "desktop windows mac linux"
-    level: 2
-    platform:
-      desktop:
-        text: "walletmultibithd"
-        link: "https://multibit.org"
-        source: "https://github.com/bitcoin-solutions/multibit-hd"
-        screenshot: "multibithd.png"
-        os:
-        - windows
-        - mac
-        - linux
-        check:
-          control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationspvp2p"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacybasic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - armory:
     title: "Armory"
@@ -105,6 +83,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkgoodprivacyimproved"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkpassprivacydisclosurefullnode"
@@ -112,7 +91,7 @@ wallets:
 - electrum:
     title: "Electrum"
     titleshort: "Electrum"
-    compat: "desktop windows mac linux"
+    compat: "desktop windows mac linux mobile android"
     level: 2
     platform:
       desktop:
@@ -130,11 +109,12 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
-      android:
+      mobile:
         text: "walletelectrum"
         link: "https://play.google.com/store/apps/details?id=org.electrum.electrum"
         source: "https://github.com/spesmilo/electrum"
@@ -147,6 +127,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -172,6 +153,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkgoodprivacyimproved"
+          fees: "checkfailfeecontrolstatic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkpassprivacydisclosurefullnode"
@@ -196,6 +178,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -214,6 +197,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -232,6 +216,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -251,13 +236,13 @@ wallets:
         - android
         - ios
         - windowsphone
-        - linux
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
@@ -277,6 +262,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
@@ -302,6 +288,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -319,6 +306,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -336,6 +324,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -360,6 +349,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -377,6 +367,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -394,6 +385,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -415,6 +407,7 @@ wallets:
           transparency: "checkgoodtransparencydeterministic"
           environment: "checkgoodenvironmenthardware"
           privacy: "checkneutralprivacyvariable"
+          fees: "checkneutralfeecontrolvariable"
 - ledgernano:
     title: "Ledger Nano"
     titleshort: "Ledger<br>Nano"
@@ -432,6 +425,7 @@ wallets:
           transparency: "checkfailtransparencynew"
           environment: "checkgoodenvironmenthardware"
           privacy: "checkneutralprivacyvariable"
+          fees: "checkneutralfeecontrolvariable"
 - ledgernanos:
     title: "Ledger Nano S"
     titleshort: "Ledger<br>Nano S"
@@ -449,6 +443,7 @@ wallets:
           transparency: "checkfailtransparencynew"
           environment: "checkgoodenvironmenthardware"
           privacy: "checkneutralprivacyvariable"
+          fees: "checkneutralfeecontrolvariable"
 - digitalbitbox:
     title: "DigitalBitbox"
     titleshort: "Digital<br />Bitbox"
@@ -466,6 +461,7 @@ wallets:
           transparency: "checkfailtransparencynew"
           environment: "checkgoodenvironmenthardware"
           privacy: "checkneutralprivacyvariable"
+          fees: "checkneutralfeecontrolvariable"
 - bither:
     title: "Bither"
     titleshort: "Bither"
@@ -485,6 +481,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkfailprivacyweak"
+          fees: "checkfailfeecontrolstatic"
         privacycheck:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -502,6 +499,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkfailprivacyweak"
+          fees: "checkfailfeecontrolstatic"
         privacycheck:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -519,6 +517,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkfailprivacyweak"
+          fees: "checkfailfeecontrolstatic"
         privacycheck:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -538,6 +537,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkfailprivacyweak"
+          fees: "checkfailfeecontrolstatic"
         privacycheck:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -561,6 +561,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -584,6 +585,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
@@ -609,6 +611,7 @@ wallets:
           transparency: "checkfailtransparencyremote"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -624,6 +627,7 @@ wallets:
           transparency: "checkfailtransparencyremote"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -648,6 +652,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -667,6 +672,7 @@ wallets:
           transparency: "checkfailtransparencyremote"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -683,6 +689,7 @@ wallets:
           transparency: "checkfailtransparencyremote"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -701,6 +708,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -719,6 +727,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -742,6 +751,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkfailfeecontrolstatic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
@@ -759,6 +769,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkfailfeecontrolstatic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
@@ -766,7 +777,7 @@ wallets:
 - coinspace:
     title: "Coin.Space"
     titleshort: "Coin.Space"
-    compat: "mobile web android windowsphone"
+    compat: "mobile web android windowsphone ios"
     level: 3
     platform:
       mobile:
@@ -784,6 +795,7 @@ wallets:
           transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -801,6 +813,7 @@ wallets:
           transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -818,6 +831,7 @@ wallets:
           transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -835,6 +849,7 @@ wallets:
           transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -851,6 +866,7 @@ wallets:
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -935,6 +951,7 @@ wallets:
           transparency: "checkfailtransparencynew"
           environment: "checkgoodenvironmenthardware"
           privacy: "checkneutralprivacyvariable"
+          fees: "checkneutralfeecontrolvariable"
 - simplebitcoinwallet:
     title: "Simple Bitcoin Wallet"
     titleshort: "Simple<br>Bitcoin"
@@ -954,6 +971,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -971,6 +989,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -995,6 +1014,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroloverride"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
@@ -1014,6 +1034,7 @@ wallets:
           transparency: "checkfailtransparencyremote"
           environment: "checkfailenvironmentdesktop"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroloverride"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
@@ -1031,6 +1052,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroloverride"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
@@ -1048,9 +1070,11 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroloverride"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 - btc.com:
     title: "BTC.com Bitcoin Wallet"
     titleshort: "BTC.com"
@@ -1071,6 +1095,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -1087,6 +1112,7 @@ wallets:
           transparency: "checkfailtransparencyremote"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -1104,6 +1130,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -1121,6 +1148,7 @@ wallets:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmenttwofactor"
           privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -1162,7 +1190,7 @@ wallets:
   <span></span>
   <div>
     <h2>{{ wallet[1].title }}</h2>
-    <div>{% for os in platform.os %}<img src="/img/os/{{ os }}.png" alt="{% translate platform{{os}} %}" title="{% translate platform{{os}} %}" />{% endfor %}</div>
+    <div>{% for os in platform.os %}<img src="/img/os/{{ os }}.png" alt="{% translate platform{{os}} %}" title="{% translate platform{{os}} %}" />{% unless wallet[1].compat contains os %}{% die platform not listed in compat field %}{% endunless %}{% endfor %}</div>
     <div>{% if platform.link == 'bitcoincore' %}<a href="/{{ page.lang }}/{% translate download url %}">{% translate walletdownload %}</a>{% elsif platform.link contains 'play.google.com' or platform.link contains 'itunes.apple.com' or platform.link contains 'chrome.google.com' %}<a href="{{ platform.link }}">{% translate walletdownload %}</a>{% else %}<a href="{{ platform.link }}">{% translate walletvisit %}</a>{% endif %}{% if platform.source %}<a href="{{ platform.source }}">{% translate walletsourcecode %}</a>{% endif %}</div>
     <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
       {% for check in platform.check %}{% if check[0] == 'privacy' and platform.privacycheck %}
@@ -1178,7 +1206,9 @@ wallets:
       <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><p>{% translate {{check[1]}}txt %}</p><span></span></div></div>
       {% endif %}{% endfor %}
     </div>
-    <p>{% translate {{platform.text}} %}</p>
+    {% capture platform_text %}{% translate {{platform.text}} %}{% endcapture %}
+    {% assign platform_text_length = platform_text | size %}
+    <p>{% if platform_text_length > page.max_wallet_text_length %}{% die Wallet text too long %}{% else %}{{platform_text}}{% endif %}</p>
     <div><img src="/img/screenshots/{{ platform.screenshot }}" alt="screenshot"></div>
   </div>
   <a><img src="/img/wallet/{{ wallet[0] }}.png" alt="{{ wallet[1].title }}" />{{ wallet[1].titleshort }}<span></span></a>
@@ -1208,7 +1238,9 @@ wallets:
       <div class="check{{ check[0] }} {% if check[1] contains "checkgood" %}checkgood{% elsif check[1] contains "checkpass" %}checkpass{% elsif check[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">{% translate {{check[1]}} %}<div><p>{% translate {{check[1]}}txt %}</p><span></span></div></div>
       {% endif %}{% endfor %}
     </div>
-    <p>{% translate {{platform[1].text}} %}</p>
+    {% capture platform_text %}{% translate {{platform[1].text}} %}{% endcapture %}
+    {% assign platform_text_length = platform_text | size %}
+    <p>{% if platform_text_length > page.max_wallet_text_length %}{% die Wallet text too long %}{% else %}{{platform_text}}{% endif %}</p>
     <div><img src="/img/screenshots/{{ platform[1].screenshot }}" alt="screenshot"></div>
   </div>
   <a><img src="/img/wallet/{{ wallet[0] }}.png" alt="{{ wallet[1].title }}" />{{ wallet[1].titleshort }}<span></span></a>

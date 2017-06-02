@@ -414,7 +414,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .footermenu{
 	position:relative;
-	padding:20px 0;
+	padding:0 0 20px 0;
 	font-size:94%;
 }
 .footermenu a{
@@ -1694,12 +1694,12 @@ button.active {
 }
 
 .wallets{
-	width:605px;
+	width:705px;
 	height:250px;
 	text-align:left;
 	position:relative;
 	margin:auto;
-	padding:40px 0 20px 0;
+	padding:60px 0 20px 0;
 	font-size:0;
 	opacity:1;
 	-moz-transition:opacity 400ms ease-out;
@@ -1714,7 +1714,7 @@ button.active {
 	vertical-align:top;
 	font-size:16px;
 }
-.wallets>div:nth-child(1n+13){
+.wallets>div:nth-child(1n+15){
 	display:none;
 }
 .wallets>div>a{
@@ -1766,7 +1766,7 @@ button.active {
 	display:inline-block;
 	position:absolute;
 	padding:20px;
-	top:-352px;
+	top:-382px;
 	left:-20px;
 	right:-20px;
 	-moz-transition:opacity 400ms ease-out;
@@ -1786,7 +1786,7 @@ button.active {
 }
 .wallets>div:nth-child(1n+7)>div,
 .wallets>div:nth-child(1n+7)>span{
-	top:-222px;
+	top:-252px;
 }
 .wallets>div:nth-child(1n+13)>div,
 .wallets>div:nth-child(1n+13)>span{
@@ -1991,6 +1991,16 @@ button.active {
 .wallets .checkenvironment.checkfail{
 	background-image:url(/img/icons/check_environment_fail.svg);
 }
+.wallets .checkfees.checkpass,
+.wallets .checkfees.checkgood{
+	background-image:url(/img/icons/check_fees_pass.svg);
+}
+.wallets .checkfees.checkfail{
+	background-image:url(/img/icons/check_fees_fail.svg);
+}
+.wallets .checkfees.checkneutral{
+	background-image:url(/img/icons/check_fees_neutral.svg);
+}
 .wallets .checkprivacy.checkpass,
 .wallets .checkprivacy.checkgood{
 	background-image:url(/img/icons/check_privacy_pass.svg);
@@ -2017,7 +2027,7 @@ button.active {
 .wallets.nohover>div.active:hover>span{
 	opacity:1;
 	width:auto;
-	height:350px;
+	height:400px;
 	visibility:visible;
 	overflow:visible;
 }

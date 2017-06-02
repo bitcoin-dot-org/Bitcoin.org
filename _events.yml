@@ -150,14 +150,6 @@
   country: "The Netherlands"
   link: "https://www.meetup.com/Arnhem-Bitcoin-Users/events/237435368/"
 
-- date: 2017-05-04
-  title: "Oral Arguments on the Status of the Bitlicense in New York"
-  venue: "New York State Supreme Court"
-  address: "71 Thomas - Room 204 - Part 46"
-  city: "New York"
-  country: "United States"
-  link: "https://www.meetup.com/Article-78-Against-NYDFS/events/238795106"
-
 - date: 2017-05-08
   title: "The Blockchain NZ 2017"
   venue: "Viaduct Event Centre"
@@ -198,6 +190,14 @@
   country: "Germany"
   link: "http://www.blockchain-expo.com/europe"
 
+- date: 2017-06-12
+  title: "Blockchain Government Forum"
+  venue: "Innovation Centre"
+  address: "9 Bayview Avenue"
+  city: "Ottawa"
+  country: "Canada"
+  link: "https://blockchainforum.ca/"
+
 - date: 2017-06-26
   title: "Money 2020 Europe"
   venue: "Bella Center"
@@ -221,6 +221,30 @@
   city: "London"
   country: "United Kingdom"
   link: "https://fintechweek.com/"
+
+- date: 2017-07-10
+  title: "How To Disrupt Everything - A Blockchain Event"
+  venue: "Kromhouthal"
+  address: "Gedempt Hamerkanaal 231, 1021 KP"
+  city: "Amsterdam"
+  country: "The Netherlands"
+  link: "http://amsterdam.keynote.ae/"
+
+- date: 2017-09-12
+  title: "The Advanced Digital Innovation Summit"
+  venue: "McCarthy Tetrault"
+  address: "745 Thurlow Street"
+  city: "Toronto"
+  country: "Canada"
+  link: "http://www.adisummit.com/"
+
+- date: 2017-07-16
+  title: "CoinAgenda Europe"
+  venue: "World Trade Center Barcelona"
+  address: "Edif. Este, Moll de Barcelona, s/n 08039"
+  city: "Barcelona"
+  country: "Spain"
+  link: "http://coinagenda.com/#about"
 
 - date: 2017-09-23
   title: "Bitcoin Conference Kiev"

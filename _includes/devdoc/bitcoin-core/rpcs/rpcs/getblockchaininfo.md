@@ -36,7 +36,7 @@ The `getblockchaininfo` RPC {{summary_getBlockChainInfo}}
 - n: "→<br>`headers`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>The number of validated headers in the local best headers chain.  For a new node with just the hardcoded genesis block, this will be zero.  This number may be higher than the number of *blocks*"
+  d: "The number of validated headers in the local best headers chain.  For a new node with just the hardcoded genesis block, this will be zero.  This number may be higher than the number of *blocks*"
 
 - n: "→<br>`bestblockhash`"
   t: "string (hex)"
@@ -55,7 +55,7 @@ The `getblockchaininfo` RPC {{summary_getBlockChainInfo}}
   
 - n: "→<br>`verificationprogress`"
   t: "number (real)"
-  p: "Required (exactly 1)"
+  p: "Required<br>(exactly 1)"
   d: "Estimate of what percentage of the block chain transactions have been verified so far, starting at 0.0 and increasing to 1.0 for fully verified.  May slightly exceed 1.0 when fully synced to account for transactions in the memory pool which have been verified before being included in a block"
 
 - n: "→<br>`chainwork`"
@@ -173,12 +173,17 @@ The `getblockchaininfo` RPC {{summary_getBlockChainInfo}}
   p: "Required<br>(exactly 1)"
   d: "The Unix epoch time at which the deployment is considered failed if not yet locked in"
   
+- n: "→ → →<br>`since`"
+  t: "numeric<br>(int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.14.0*<br><br>The height of the first block to which the status applies"
+  
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.13.1*
+*Example from Bitcoin Core 0.14.1*
 
 {% highlight bash %}
-bitcoin-cli -testnet getblockchaininfo
+bitcoin-cli getblockchaininfo
 {% endhighlight %}
 
 Result:
@@ -186,13 +191,13 @@ Result:
 {% highlight json %}
 {
   "chain": "main",
-  "blocks": 438737,
-  "headers": 438740,
-  "bestblockhash": "0000000000000000038c4b27ae0b591135bde8703ef53f6fa9aa5ec5f07db5a1",
-  "difficulty": 254620187304.0614,
-  "mediantime": 1479054813,
-  "verificationprogress": 0.9999893624230526,
-  "chainwork": "0000000000000000000000000000000000000000002e732c9db1d0bd82476ae6",
+  "blocks": 464562,
+  "headers": 464562,
+  "bestblockhash": "00000000000000000085bd56990c579a36bade6ea427646612f13476edb30ceb",
+  "difficulty": 521974519553.6282,
+  "mediantime": 1493758169,
+  "verificationprogress": 0.999989733170878,
+  "chainwork": "00000000000000000000000000000000000000000052c26f32ffa22706efd28c",
   "pruned": false,
   "softforks": [
     {
@@ -221,15 +226,19 @@ Result:
     "csv": {
       "status": "active",
       "startTime": 1462060800,
-      "timeout": 1493596800
+      "timeout": 1493596800,
+      "since": 419328
     },
     "segwit": {
-      "status": "defined",
+      "status": "started",
+      "bit": 1,
       "startTime": 1479168000,
-      "timeout": 1510704000
+      "timeout": 1510704000,
+      "since": 439488
     }
   }
 }
+
 {% endhighlight %}
 
 *See also*

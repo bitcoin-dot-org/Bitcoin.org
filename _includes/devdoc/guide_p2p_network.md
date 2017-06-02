@@ -10,10 +10,13 @@ http://opensource.org/licenses/MIT.
 {% autocrossref %}
 
 The Bitcoin network protocol allows full nodes
-([peers][peer]{:#term-peer}{:.term}) to collaboratively maintain a
+(peers) to collaboratively maintain a
 [peer-to-peer network][network]{:#term-network}{:.term} for block and
-transaction exchange. Many SPV clients also use this protocol to connect
-to full nodes.
+transaction exchange. Full nodes download and verify every block and transaction
+prior to relaying them to other nodes. Archival nodes are full nodes which
+store the entire blockchain and can serve historical blocks to other nodes.
+Pruned nodes are full nodes which do not store the entire blockchain. Many SPV 
+clients also use the Bitcoin network protocol to connect to full nodes.
 
 Consensus rules do not cover networking, so Bitcoin programs may use
 alternative networks and protocols, such as the [high-speed block relay
@@ -579,18 +582,8 @@ Take note that for both types of broadcasting, mechanisms are in place to punish
 
 {% autocrossref %}
 
-In case of a bug or attack,
-the Bitcoin Core developers provide a
-[Bitcoin alert service](https://bitcoin.org/en/alerts) with an RSS feed
-and users of Bitcoin Core can check the error field of the `getinfo` RPC
-results to get currently active alerts for their specific version of
-Bitcoin Core.
+*Removed in Bitcoin Core 0.13.0*
 
-These messages are aggressively broadcast using the `alert` message, being sent to each peer upon connect for the duration of the alert. 
-
-These messages are signed by a specific ECDSA private key that only a small number of developers control. 
-
-**Resource:** More details about the structure of messages and a complete list of message types can be found in
-the [P2P reference section][section P2P reference].
+Earlier versions of Bitcoin Core allowed developers and trusted community members to issue [Bitcoin alerts](https://bitcoin.org/en/alerts) to notify users of critical network-wide issues. This messaging system [was retired](https://bitcoin.org/en/alert/2016-11-01-alert-retirement) in Bitcoin Core v0.13.0; however, internal alerts, partition detection warnings and the `-alertnotify` option features remain.
 
 {% endautocrossref %}

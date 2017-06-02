@@ -1,0 +1,28 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Block Size Limit
+
+    summary_max_255_characters_no_formatting: >
+        The maximum size in bytes that the consensus rules allow a block to be.
+        The current block size limit is 1000000 bytes.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Maximum Block Size
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Block
+        - Blockchain
+        - Blockchain size
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Serialized Blocks](/en/developer-reference#serialized-blocks) --- Bitcoin.org Developer Guide"
+        - "[Block](https://en.bitcoin.it/wiki/Block) --- Bitcoin Wiki"
+
+---

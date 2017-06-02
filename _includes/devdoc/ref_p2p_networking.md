@@ -28,7 +28,7 @@ integers mentioned in this section are transmitted in little-endian order.
 {% autocrossref %}
 
 The following constants and defaults are taken from Bitcoin Core's
-[chainparams.cpp][core chainparams.cpp] source code file. 
+[chainparams.cpp][core chainparams.cpp] source code file.
 
 | Network | Default Port | [Start String][/en/glossary/start-string]{:#term-start-string}{:.term} | Max nBits
 |---------|--------------|-----------------------------------------------|---------------
@@ -49,8 +49,7 @@ little-endian order.
 
 Bitcoin Core's [chainparams.cpp][core chainparams.cpp] also includes
 other constants useful to programs, such as the hash of the genesis
-blocks for the different networks as well as the alert keys for mainnet
-and testnet.
+blocks for the different networks.
 
 {% endautocrossref %}
 
@@ -64,13 +63,14 @@ with the most recent versions listed first. (If you know of a protocol
 version that implemented a major change but which is not listed here,
 please [open an issue][docs issue].)
 
-As of Bitcoin Core 0.13.0, the most recent protocol version is 70014.
+As of Bitcoin Core 0.14.1, the most recent protocol version is 70015.
 
 | Version | Initial Release                    | Major Changes
 |---------|------------------------------------|--------------
-| 70014   | Bitcoin Core 0.13.0 <br>  | [BIP152][]: <br>• Added `sendcmpct`, `cmpctblock`, `getblocktxn`, `blocktxn` messages <br> * Added `MSG_CMPCT_BLOCK` inventory type to `getdata` message.
-| 70013   | Bitcoin Core 0.13.0 <br>  | [BIP133][]: <br>• Added `feefilter` message
-| 70012   | Bitcoin Core 0.12.0 <br>  | [BIP130][]: <br>• Added `sendheaders` message
+| 70015   | Bitcoin Core 0.13.2 <br>           | • New banning behavior for invalid compact blocks [#9026](https://github.com/bitcoin/bitcoin/pull/9026) in v0.14.0, Backported to v0.13.2 in [#9048](https://github.com/bitcoin/bitcoin/pull/9048).
+| 70014   | Bitcoin Core 0.13.0 <br>           | [BIP152][]: <br>• Added `sendcmpct`, `cmpctblock`, `getblocktxn`, `blocktxn` messages <br> • Added `MSG_CMPCT_BLOCK` inventory type to `getdata` message.
+| 70013   | Bitcoin Core 0.13.0 <br>           | [BIP133][]: <br>• Added `feefilter` message.<br> • Removed `alert` message system. See [Alert System Retirement](https://bitcoin.org/en/alert/2016-11-01-alert-retirement)
+| 70012   | Bitcoin Core 0.12.0 <br>           | [BIP130][]: <br>• Added `sendheaders` message.
 | 70002   | Bitcoin Core 0.9.0 <br>(Mar 2014)  | • Send multiple `inv` messages in response to a `mempool` message if necessary <br><br>[BIP61][]: <br>• Added `reject` message
 | 70001   | Bitcoin Core 0.8.0 <br>(Feb 2013)  | • Added `notfound` message. <br><br>[BIP37][]: <br>• Added `filterload` message. <br>• Added `filteradd` message. <br>• Added `filterclear` message. <br>• Added `merkleblock` message. <br>• Added relay field to `version` message <br>• Added `MSG_FILTERED_BLOCK` inventory type to `getdata` message.
 | 60002   | Bitcoin Core 0.7.0 <br>(Sep 2012)  | [BIP35][]: <br>• Added `mempool` message. <br>• Extended `getdata` message to allow download of memory pool transactions
@@ -271,8 +271,9 @@ to the `getheaders` message will include as many as 2,000 block headers.
 
 *Added in protocol version 31800.*
 
-The `headers` message sends one or more block headers to a node which
-previously requested certain headers with a `getheaders` message.
+The `headers` message sends block headers to a node which
+previously requested certain headers with a `getheaders` message. A headers
+message can be empty.
 
 | Bytes    | Name    | Data Type        | Description
 |----------|---------|------------------|-----------------
@@ -664,7 +665,7 @@ Each encapsulated network IP address currently uses the following structure:
 |-------|------------|-----------|---------------
 | 4     | time       | uint32    | *Added in protocol version 31402.* <br><br>A time in Unix epoch time format.  Nodes advertising their own IP address set this to the current time.  Nodes advertising IP addresses they've connected to set this to the last time they connected to that node.  Other nodes just relaying the IP address should not change the time.  Nodes can use the time field to avoid relaying old `addr` messages.  <br><br>Malicious nodes may change times or even set them in the future.
 | 8     | services   | uint64_t  | The services the node advertised in its `version` message.
-| 16    | IP address | char      | IPv6 address in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][] 
+| 16    | IP address | char      | IPv6 address in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][]
 | 2     | port       | uint16_t  | Port number in **big endian byte order**.  Note that Bitcoin Core will only connect to nodes with non-standard port numbers as a last resort for finding peers.  This is to prevent anyone from trying to use the network to disrupt non-Bitcoin services that run on other ports.
 
 The following annotated hexdump shows part of an `addr` message. (The
@@ -693,102 +694,9 @@ d91f4854 ........................... Epoch time: 1414012889
 {% autocrossref %}
 
 *Added in protocol version 311.*
+*Removed in protocol version 70013 and released in Bitcoin Core 0.13.0*
 
-The `alert` message warns nodes of problems that may affect them or the
-rest of the network. Each `alert` message is signed using a key controlled
-by respected community members, mostly Bitcoin Core developers.
-
-To ensure all nodes can validate and forward `alert` messages,
-encapsulation is used. Developers create an alert using the data
-structure appropriate for the versions of the software they want to
-notify; then they serialize that data and sign it. The serialized data
-and its signature make up the outer `alert` message---allowing nodes
-which don't understand the data structure to validate the signature and
-relay the alert to nodes which do understand it. The nodes which
-actually need the message can decode the serialized data to access the
-inner `alert` message.
-
-The outer `alert` message has four fields:
-
-| Bytes       | Name            | Data Type        | Description
-|-------------|-----------------|------------------|-------------
-| *Variable*  | alert bytes     | compactSize uint | The number of bytes in following alert field.
-| *Variable*  | alert           | uchar            | The serialized alert.  See below for a description of the current alert format.
-| *Variable*  | signature bytes | compactSize uint | The number of bytes in the following signature field.
-| *Variable*  | signature       | uchar            | A DER-encoded ECDSA (secp256k1) signature of the alert signed with the developer's alert key.
-
-Although designed to be easily upgraded, the format of the inner
-serialized alert has not changed since the `alert` message was first
-introduced in protocol version 311.
-
-| Bytes    | Name              | Data Type                 | Description
-|----------|-------------------|---------------------------|-------------
-| 4        | version           | int32_t                   | Alert format version.  Version 1 from protocol version 311 through at least protocol version 70002.
-| 8        | relayUntil        | int64_t                   | The time beyond which nodes should stop relaying this alert.  Unix epoch time format.
-| 8        | expiration        | int64_t                   | The time beyond which this alert is no longer in effect and should be ignored.  Unix epoch time format.
-| 4        | ID                | int32_t                   | A unique ID number for this alert.
-| 4        | cancel            | int32_t                   | All alerts with an ID number less than or equal to this number should be canceled: deleted and not accepted in the future.
-| *Varies* | setCancel count   | compactSize uint          | The number of IDs in the following setCancel field.  May be zero.
-| *Varies* | setCancel         | int32_t                   | Alert IDs which should be canceled.  Each alert ID is a separate int32_t number.
-| 4        | minVer            | int32_t                   | This alert only applies to protocol versions greater than or equal to this version. Nodes running other protocol versions should still relay it.
-| 4        | maxVer            | int32_t                   | This alert only applies to protocol versions less than or equal to this version. Nodes running other protocol versions should still relay it.
-| *Varies* | user\_agent count | compactSize uint          | The number of user agent strings in the following setUser\_agent field.  May be zero.
-| *Varies* | setUser\_agent    | compactSize uint + string | If this field is empty, it has no effect on the alert.  If there is at least one entry is this field, this alert only applies to programs with a user agent that exactly matches one of the strings in this field.  Each entry in this field is a compactSize uint followed by a string---the uint indicates how many bytes are in the following string.  This field was originally called setSubVer; since BIP14, it applies to user agent strings as defined in the `version` message.
-| 4        | priority          | int32_t                   | Relative priority compared to other alerts.
-| *Varies* | comment bytes     | compactSize uint          | The number of bytes in the following comment field.  May be zero.
-| *Varies* | comment           | string                    | A comment on the alert that is not displayed.
-| *Varies* | statusBar bytes   | compactSize uint          | The number of bytes in the following statusBar field.  May be zero.
-| *Varies* | statusBar         | string                    | The alert message that is displayed to the user.
-| *Varies* | reserved bytes    | compactSize uint          | The number of bytes in the following reserved field.  May be zero.
-| *Varies* | reserved          | string                    | Reserved for future use.  Originally called RPC Error.  
-
-The annotated hexdump below shows an `alert` message. (The message
-header has been omitted.)
-
-<!-- example below from Bitcoin Wiki but it's a network capture so I
-(@harding) don't think it is subject to the wiki's copyright license; I
-think it's public domain. TODO: replace with a more recent
-alert the next time one is live on the network. -->
-
-{% highlight text %}
-73 ................................. Bytes in encapsulated alert: 115
-01000000 ........................... Version: 1
-3766404f00000000 ................... RelayUntil: 1329620535
-b305434f00000000 ................... Expiration: 1330917376
-
-f2030000 ........................... ID: 1010
-f1030000 ........................... Cancel: 1009
-00 ................................. setCancel count: 0
-
-10270000 ........................... MinVer: 10000
-48ee0000 ........................... MaxVer: 61000
-00 ................................. setUser_agent bytes: 0
-64000000 ........................... Priority: 100
-
-00 ................................. Bytes In Comment String: 0
-46 ................................. Bytes in StatusBar String: 70
-53656520626974636f696e2e6f72672f
-666562323020696620796f7520686176
-652074726f75626c6520636f6e6e6563
-74696e67206166746572203230204665
-627275617279 ....................... Status Bar String: "See [...]"
-00 ................................. Bytes In Reserved String: 0
-
-47 ................................. Bytes in signature: 71
-30450221008389df45f0703f39ec8c1c
-c42c13810ffcae14995bb648340219e3
-53b63b53eb022009ec65e1c1aaeec1fd
-334c6b684bde2b3f573060d5b70c3a46
-723326e4e8a4f1 ..................... Signature
-{% endhighlight %}
-
-**Alert key compromise:** Bitcoin Core's source code defines a
-particular set of alert parameters that can be used to notify users that
-the alert signing key has been compromised and that they should upgrade
-to get a new alert public key. Once a signed alert containing those
-parameters has been received, no other alerts can cancel or override it.
-See the `ProcessAlert()` function in the Bitcoin Core [alert.cpp][core
-alert.cpp] source code for the parameters of this message.
+The legacy p2p network alert messaging system has been retired; however, internal alerts, partition detection warnings and the `-alertnotify` option features remain. See [Alert System Retirement](https://bitcoin.org/en/alert/2016-11-01-alert-retirement) for details.
 
 {% endautocrossref %}
 
@@ -983,7 +891,7 @@ are:
   iteration.
 
 * **0xfba4c795** is a constant optimized to create large differences in
-  the seed for different values of *nHashNum*. 
+  the seed for different values of *nHashNum*.
 
 * **nTweak** is a per-filter constant set by the client to require the use
   of an arbitrary set of hash functions.
@@ -1128,7 +1036,7 @@ The *nFlags* field has three allowed values:
 | Value | Name                       | Description
 |-------|----------------------------|---------------
 | 0     | BLOOM_UPDATE_NONE          | The filtering node should not update the filter.
-| 1     | BLOOM_UPDATE_ALL           | If the filter matches any data element in a pubkey script, the corresponding outpoint is added to the filter. 
+| 1     | BLOOM_UPDATE_ALL           | If the filter matches any data element in a pubkey script, the corresponding outpoint is added to the filter.
 | 2     | BLOOM_UPDATE_P2PUBKEY_ONLY | If the filter matches any data element in a pubkey script and that script is either a P2PKH or non-P2SH pay-to-multisig script, the corresponding outpoint is added to the filter.
 
 In addition, because the filter size stays the same even though
@@ -1235,16 +1143,16 @@ ascending code number (primary) and alphabetic in reply to (secondary) -->
 | Code | In Reply To       | Extra Bytes | Extra Type | Description
 |------|-------------------|-------------|------------|----------------
 | 0x01 | *any message*     | 0           | N/A        | Message could not be decoded.  Be careful of `reject` message feedback loops where two peers each don't understand each other's `reject` messages and so keep sending them back and forth forever.
-| 0x10 | `block` message   | 32          | char[32]   | Block is invalid for some reason (invalid proof-of-work, invalid signature, etc).  Extra data is the rejected block's header hash.
-| 0x10 | `tx` message      | 32          | char[32]   | Transaction is invalid for some reason (invalid signature, output value greater than input, etc.).  Extra data is the rejected transaction's TXID. 
-| 0x11 | `block` message   | 32          | char[32]   | The block uses a version that is no longer supported.  Extra data is the rejected block's header hash.
+| 0x10 | `block` message   | 32          | char[32]   | Block is invalid for some reason (invalid proof-of-work, invalid signature, etc).  Extra data may include the rejected block's header hash.
+| 0x10 | `tx` message      | 32          | char[32]   | Transaction is invalid for some reason (invalid signature, output value greater than input, etc.).  Extra data may include the rejected transaction's TXID.
+| 0x11 | `block` message   | 32          | char[32]   | The block uses a version that is no longer supported.  Extra data may include the rejected block's header hash.
 | 0x11 | `version` message | 0           | N/A        | Connecting node is using a protocol version that the rejecting node considers obsolete and unsupported.
-| 0x12 | `tx` message      | 32          | char[32]   | Duplicate input spend (double spend): the rejected transaction spends the same input as a previously-received transaction.  Extra data is the rejected transaction's TXID.
+| 0x12 | `tx` message      | 32          | char[32]   | Duplicate input spend (double spend): the rejected transaction spends the same input as a previously-received transaction.  Extra data may include the rejected transaction's TXID.
 | 0x12 | `version` message | 0           | N/A        | More than one `version` message received in this connection.
-| 0x40 | `tx` message      | 32          | char[32]   | The transaction will not be mined or relayed because the rejecting node considers it non-standard---a transaction type or version unknown by the server.  Extra data is the rejected transaction's TXID.
-| 0x41 | `tx` message      | 32          | char[32]   | One or more output amounts are below the dust threshold.  Extra data is the rejected transaction's TXID.
-| 0x42 | `tx` message      |             | char[32]   | The transaction did not have a large enough fee or priority to be relayed or mined.  Extra data is the rejected transaction's TXID.
-| 0x43 | `block` message   | 32          | char[32]   | The block belongs to a block chain which is not the same block chain as provided by a compiled-in checkpoint.  Extra data is the rejected block's header hash.
+| 0x40 | `tx` message      | 32          | char[32]   | The transaction will not be mined or relayed because the rejecting node considers it non-standard---a transaction type or version unknown by the server.  Extra data may include the rejected transaction's TXID.
+| 0x41 | `tx` message      | 32          | char[32]   | One or more output amounts are below the dust threshold.  Extra data may include the rejected transaction's TXID.
+| 0x42 | `tx` message      |             | char[32]   | The transaction did not have a large enough fee or priority to be relayed or mined.  Extra data may include the rejected transaction's TXID.
+| 0x43 | `block` message   | 32          | char[32]   | The block belongs to a block chain which is not the same block chain as provided by a compiled-in checkpoint.  Extra data may include the rejected block's header hash.
 
 The annotated hexdump below shows a `reject` message. (The message
 header has been omitted.)
@@ -1333,7 +1241,7 @@ replaced with [RFC5737][] reserved IP addresses.)
 
 {% highlight text %}
 72110100 ........................... Protocol version: 70002
-0100000000000000 ................... Services: NODE_NETWORK 
+0100000000000000 ................... Services: NODE_NETWORK
 bc8f5e5400000000 ................... Epoch time: 1415483324
 
 0100000000000000 ................... Receiving node's services

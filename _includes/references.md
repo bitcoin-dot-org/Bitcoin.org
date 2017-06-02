@@ -33,8 +33,6 @@ http://opensource.org/licenses/MIT.
 [PaymentDetails]: /en/developer-examples#term-paymentdetails "The PaymentDetails of the payment protocol which allows the receiver to specify the payment details to the spender"
 [PaymentRequest]: /en/developer-examples#term-paymentrequest "The PaymentRequest of the payment protocol which contains and allows signing of the PaymentDetails"
 [PaymentRequests]: /en/developer-examples#term-paymentrequest "The PaymentRequest of the payment protocol which contains and allows signing of the PaymentDetails"
-[peer]: /en/developer-guide#term-peer "Peer on the P2P network who receives and broadcasts transactions and blocks"
-[peers]: /en/developer-guide#term-peer "Peers on the P2P network who receive and broadcast transactions and blocks"
 [PKI]: /en/developer-examples#term-pki "Public Key Infrastructure; usually meant to indicate the X.509 certificate system used for HTTP Secure (https)."
 [point function]: /en/developer-guide#term-point-function "The ECDSA function used to create a public key from a private key"
 [pp amount]: /en/developer-examples#term-pp-amount "Part of the Output part of the PaymentDetails part of a payment protocol where receivers can specify the amount of satoshis they want paid to a particular pubkey script"
@@ -71,6 +69,7 @@ http://opensource.org/licenses/MIT.
 [rpc addnode]: /en/developer-reference#addnode
 [rpc addwitnessaddress]: /en/developer-reference#addwitnessaddress
 [rpc backupwallet]: /en/developer-reference#backupwallet
+[rpc bumpfee]: /en/developer-reference#bumpfee
 [rpc clearbanned]: /en/developer-reference#clearbanned
 [rpc createmultisig]: /en/developer-reference#createmultisig
 [rpc createrawtransaction]: /en/developer-reference#createrawtransaction
@@ -103,6 +102,7 @@ http://opensource.org/licenses/MIT.
 [rpc getgenerate]: /en/developer-reference#getgenerate
 [rpc gethashespersec]: /en/developer-reference#gethashespersec
 [rpc getinfo]: /en/developer-reference#getinfo
+[rpc getmemoryinfo]: /en/developer-reference#getmemoryinfo
 [rpc getmempoolancestors]: /en/developer-reference#getmempoolancestors
 [rpc getmempooldescendants]: /en/developer-reference#getmempooldescendants
 [rpc getmempoolentry]: /en/developer-reference#getmempoolentry
@@ -127,6 +127,7 @@ http://opensource.org/licenses/MIT.
 [rpc getwork]: /en/developer-reference#getwork
 [rpc help]: /en/developer-reference#help
 [rpc importaddress]: /en/developer-reference#importaddress
+[rpc importmulti]: /en/developer-reference#importmulti
 [rpc importprivkey]: /en/developer-reference#importprivkey
 [rpc importprunedfunds]: /en/developer-reference#importprunedfunds
 [rpc importwallet]: /en/developer-reference#importwallet
@@ -143,6 +144,8 @@ http://opensource.org/licenses/MIT.
 [rpc lockunspent]: /en/developer-reference#lockunspent
 [rpc move]: /en/developer-reference#move
 [rpc ping]: /en/developer-reference#ping-rpc
+[rpc preciousblock]: /en/developer-reference#preciousblock
+[rpc pruneblockchain]: /en/developer-reference#pruneblockchain
 [rpc prioritisetransaction]: /en/developer-reference#prioritisetransaction
 [rpc removeprunedfunds]: /en/developer-reference#removeprunedfunds
 [rpc sendfrom]: /en/developer-reference#sendfrom
@@ -152,6 +155,7 @@ http://opensource.org/licenses/MIT.
 [rpc setaccount]: /en/developer-reference#setaccount
 [rpc setban]: /en/developer-reference#setban
 [rpc setgenerate]: /en/developer-reference#setgenerate
+[rpc setnetworkactive]: /en/developer-reference#setnetworkactive
 [rpc settxfee]: /en/developer-reference#settxfee
 [rpc signmessage]: /en/developer-reference#signmessage
 [rpc signmessagewithprivkey]: /en/developer-reference#signmessagewithprivkey
@@ -249,6 +253,8 @@ http://opensource.org/licenses/MIT.
 [Bitcoin Core 0.13.0]: /en/release/v0.13.0
 [Bitcoin Core 0.13.1]: /en/release/v0.13.1
 [Bitcoin Core 0.13.2]: /en/release/v0.13.2
+[Bitcoin Core 0.14.0]: /en/release/v0.14.0
+[Bitcoin Core 0.14.1]: /en/release/v0.14.1
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [bitcoind initial setup]: /en/developer-examples
 [bitcoinpdf]: https://bitcoin.org/en/bitcoin-paper
@@ -324,6 +330,7 @@ http://opensource.org/licenses/MIT.
 [BIP111]: https://github.com/bitcoin/bips/blob/master/bip-0111.mediawiki
 [BIP112]: https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki
 [BIP113]: https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki
+[BIP125]: https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki
 [BIP130]: https://github.com/bitcoin/bips/blob/master/bip-0130.mediawiki
 [BIP133]: https://github.com/bitcoin/bips/blob/master/bip-0133.mediawiki
 [BIP141]: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
@@ -374,7 +381,6 @@ http://opensource.org/licenses/MIT.
 [bitcoinj micropayment tutorial]: https://bitcoinj.github.io/working-with-micropayments
 [block170]: https://www.biteasy.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
 [casascius address utility]: https://github.com/casascius/Bitcoin-Address-Utility
-[core alert.cpp]: https://github.com/bitcoin/bitcoin/blob/master/src/alert.cpp
 [core base58.h]: https://github.com/bitcoin/bitcoin/blob/master/src/base58.h
 [core chainparams.cpp]: https://github.com/bitcoin/bitcoin/blob/master/src/chainparams.cpp
 [core git]: https://github.com/bitcoin/bitcoin

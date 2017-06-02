@@ -52,7 +52,7 @@ Core.  Use the RPCs listed in the See Also subsection below instead.
 - n: "→ →<br>`involvesWatchonly`"
   t: "bool"
   p: "Optional<br>(0 or 1)"
-  d: "*Added in Bitcoin Core 0.10.0*<br><br>Set to `true` if the balance of this account includes a watch-only address which has received a spendable payment (that is, a payment with at least the specified number of confirmations and which is not an immature coinbase).  Otherwise not returned"
+  d: "Set to `true` if the balance of this account includes a watch-only address which has received a spendable payment (that is, a payment with at least the specified number of confirmations and which is not an immature coinbase).  Otherwise not returned"
 
 - n: "→ →<br>`account`"
   t: "string"

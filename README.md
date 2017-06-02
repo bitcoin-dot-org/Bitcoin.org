@@ -6,6 +6,13 @@ Live site: [Bitcoin.org](https://bitcoin.org)
 
 Report problems or help improve the site by opening a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) or [pull request](https://github.com/bitcoin-dot-org/bitcoin.org/compare).
 
+## Earn Bitcoin for Contributing
+Open issues [labeled with "Bounty"](https://github.com/bitcoin-dot-org/bitcoin.org/labels/Bounty)
+have bounties on them. Viewing the issue will reveal the value of the bounty.
+Submit a pull request resolving the issue along with an accompanying note or
+comment containing a bitcoin address and automatically receive a payment in the
+amount of the bounty if it gets merged.
+
 ## How to Participate
 The following quick guides will help you get started:
 
@@ -22,6 +29,10 @@ The following quick guides will help you get started:
 ### Code of Conduct
 
 Participation in this project is subject to a [Code of Conduct](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/CODE_OF_CONDUCT.md).
+
+### Donations
+
+Bitcoin.org is community supported: [1GwV7fPX97hmavc6iNrUZUogmjpLPrPFoE](bitcoin:1GwV7fPX97hmavc6iNrUZUogmjpLPrPFoE)
 
 ### Questions?
 Please contact Will Binns ([will@bitcoin.org](mailto:will@bitcoin.org)) if you need help.

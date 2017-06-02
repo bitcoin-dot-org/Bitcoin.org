@@ -7,7 +7,7 @@ required:
     title_max_40_characters_no_formatting: SPV, Simplified Payment Verification
 
     summary_max_255_characters_no_formatting: >
-        A method for verifying particular transactions were included
+        A method for verifying if particular transactions are included
         in a block without downloading the entire block.  The method is
         used by some lightweight Bitcoin clients.
 
