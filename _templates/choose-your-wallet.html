@@ -62,32 +62,6 @@ wallets:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkpassprivacydisclosurefullnode"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
-- multibithd:
-    title: "MultiBit HD"
-    titleshort: "MultiBit HD"
-    compat: "desktop windows mac linux"
-    level: 2
-    platform:
-      desktop:
-        text: "walletmultibithd"
-        link: "https://multibit.org"
-        source: "https://github.com/bitcoin-solutions/multibit-hd"
-        screenshot: "multibithd.png"
-        os:
-        - windows
-        - mac
-        - linux
-        check:
-          control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationspvp2p"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacybasic"
-          fees: "checkfailfeecontrolstatic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 - armory:
     title: "Armory"
     titleshort: "Armory"
