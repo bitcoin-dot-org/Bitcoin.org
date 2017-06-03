@@ -6,7 +6,6 @@ layout: base
 id: events
 ---
 {% assign date_sorted_conferences = site.conferences | sort: 'date' %}
-{% assign date_sorted_meetups = site.meetups | sort: 'date' %}
 <!-- Note: this file is built non-deterministically -->
 <link rel="alternate" type="application/rss+xml" href="/en/rss/events.rss" title="Bitcoin conferences and events">
 <h1>{% translate pagetitle %}<a type="application/rss+xml" href="/en/rss/events.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
@@ -21,10 +20,6 @@ id: events
 <div id="eventdata" class="eventdata">
 
 {% for p in date_sorted_conferences %}{% if p.geoloc %}
-<div data-lat="{{ p.geoloc.lat }}" data-lon="{{ p.geoloc.lon }}"><b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div>
-{% endif %}{% endfor %}
-
-{% for p in date_sorted_meetups %}{% if p.geoloc %}
 <div data-lat="{{ p.geoloc.lat }}" data-lon="{{ p.geoloc.lon }}"><b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div>
 {% endif %}{% endfor %}
 
