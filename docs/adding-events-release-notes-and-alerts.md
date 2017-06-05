@@ -2,9 +2,7 @@
 
 ### Events
 
-If you're not comfortable with GitHub pull requests, please submit an
-event using the button near the bottom of the [Events
-page](https://bitcoin.org/en/events).
+If you're not comfortable with GitHub pull requests, please open a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22).
 
 To create an event pull request, place the event in `_events.yml` and adhere to
 this format:
@@ -18,11 +16,6 @@ this format:
   country: "United States"
   link: "http://texasbitcoinconference.com/"
 ```
-
-Events that have a [Meetup.com](http://www.meetup.com/) page with a
-publicly-viewable address and "Bitcoin" in the event title should
-already be displayed on the [events page](https://bitcoin.org/en/events).
-(Please open a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22) if a Bitcoin meetup event isn't displayed.)
 
 ### Release Notes
 
