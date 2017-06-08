@@ -152,7 +152,7 @@ Plugins include:
 | alerts       | 5       | --             | Network alert pages
 | autocrossref | 90      | --             | Developer documentation
 | contributors | 5       | GitHub.com     | Contributor listings
-| events       | 5       | Meetup.com; Google Maps | Events page
+| events       | 5       | Google Maps    | Events page
 | glossary     | 30      | --             | Developer glossary
 | redirects    | 20      | --             | Redirects from old URLs
 | releases     | 10      | --             | Bitcoin Core release notes; Download
