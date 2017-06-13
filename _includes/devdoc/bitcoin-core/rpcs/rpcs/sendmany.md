@@ -59,9 +59,9 @@ The `sendmany` RPC {{summary_sendMany}}
 
 {% itemplate ntpd1 %}
 - n: "Subtract Fee From Amount"
-  t: "boolean"
+  t: "array"
   p: "Optional<br>(0 or 1)"
-  d: "The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. Default is false"
+  d: "The fee will be equally deducted from the amount of each selected address. Those recipients will receive less bitcoins than you enter in their corresponding amount field. If no addresses are specified here, the sender pays the fee."
   
 {% enditemplate %}
 
