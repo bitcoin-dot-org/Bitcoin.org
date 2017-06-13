@@ -55,7 +55,7 @@ The `sendmany` RPC {{summary_sendMany}}
 
 {% enditemplate %}
 
-*Parameter #5---automatic fee subtraction
+*Parameter #5---automatic fee subtraction*
 
 {% itemplate ntpd1 %}
 - n: "Subtract Fee From Amount"
