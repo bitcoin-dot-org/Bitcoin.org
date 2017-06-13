@@ -70,6 +70,14 @@ All existing inputs must have their previous output transaction be in the wallet
   p: "Optional<br>(0 or 1)"
   d: "A json array of integers. The fee will be equally deducted from the amount of each specified output. The outputs are specified by their zero-based index, before any change output is added."
 
+- n: "→ →<br>Output index"
+  t: numeric (int)
+  p: Optional<br>(0 or more)
+  d: "A output index number (vout) from which the fee should be subtracted.
+  If multiple vouts are provided, the total fee will be divided by the
+  numer of vouts listed and each vout will have that amount subtracted
+  from it"
+
 {% enditemplate %}
 
 *Result---information about the created transaction*

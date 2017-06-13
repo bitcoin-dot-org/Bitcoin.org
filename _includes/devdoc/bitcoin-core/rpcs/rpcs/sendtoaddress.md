@@ -62,7 +62,7 @@ The `sendtoaddress` RPC {{summary_sendToAddress}}
 - n: "Subtract Fee From Amount"
   t: "boolean"
   p: "Optional<br>(0 or 1)"
-  d: "The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. Default is false"
+  d: "The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. Default is `false`"
   
 {% enditemplate %}
 
