@@ -61,8 +61,12 @@ The `sendmany` RPC {{summary_sendMany}}
 - n: "Subtract Fee From Amount"
   t: "array"
   p: "Optional<br>(0 or 1)"
-  d: "The fee will be equally deducted from the amount of each selected address. Those recipients will receive less bitcoins than you enter in their corresponding amount field. If no addresses are specified here, the sender pays the fee."
+  d: "An array of addresses.  The fee will be equally divided by as many addresses as are entries in this array and subtracted from each address.  If this array is empty or not provided, the fee will be paid by the sender"
   
+- n: "→<br>Address"
+  t: "string (base58)"
+  p: "Optional (0 or more)"
+  d: "An address previously listed as one of the recipients."
 {% enditemplate %}
 
 *Result---a TXID of the sent transaction*
