@@ -56,6 +56,16 @@ The `sendtoaddress` RPC {{summary_sendToAddress}}
 
 {% enditemplate %}
 
+*Parameter #5---automatic fee subtraction*
+
+{% itemplate ntpd1 %}
+- n: "Subtract Fee From Amount"
+  t: "boolean"
+  p: "Optional<br>(0 or 1)"
+  d: "The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. Default is `false`"
+  
+{% enditemplate %}
+
 *Result---a TXID of the sent transaction*
 
 {% itemplate ntpd1 %}
@@ -63,7 +73,7 @@ The `sendtoaddress` RPC {{summary_sendToAddress}}
   t: "string"
   p: "Required<br>(exactly 1)"
   d: "The TXID of the sent transaction, encoded as hex in RPC byte order"
-
+  
 {% enditemplate %}
 
 *Example from Bitcoin Core 0.10.0*
