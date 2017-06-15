@@ -3,17 +3,25 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
+<!--
+{% lesscss main.less %}
+{% lesscss ie.css %}
+{% lesscss ie8.less %}
+{% lesscss rtl.less %}
+{% lesscss sans.less %}
+-->
+
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
 {% capture metadescription %}{% translate metadescription %}{% endcapture %}{% if metadescription != '' %}<meta name="description" content="{{ metadescription }}">{% endif %}
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-{% lesscss main.less %}
-<!--[if lt IE 8]>{% lesscss ie.css %}<script type="text/javascript" src="/js/ie.js"></script><![endif]-->
-<!--[if IE 8]>{% lesscss ie8.less %}<![endif]-->
-{% if page.lang == 'ar' or page.lang == 'fa' %}{% lesscss rtl.less %}{% endif %}
-{% if page.lang == 'bg' or page.lang == 'el' or page.lang == 'ko' or page.lang == 'hi' or page.lang == 'pl' or page.lang == 'sl' or page.lang == 'ro' or page.lang == 'ru' or page.lang == 'tr' or page.lang == 'uk' or page.lang == 'zh_CN' or page.lang == 'zh_TW' %}{% lesscss sans.less %}{% endif %}
+<link rel="stylesheet" href="/css/main.css">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+{% if page.lang == 'ar' or page.lang == 'fa' %}<link rel="stylesheet" href="/css/rtl.css">{% endif %}
+{% if page.lang == 'bg' or page.lang == 'el' or page.lang == 'ko' or page.lang == 'hi' or page.lang == 'pl' or page.lang == 'sl' or page.lang == 'ro' or page.lang == 'ru' or page.lang == 'tr' or page.lang == 'uk' or page.lang == 'zh_CN' or page.lang == 'zh_TW' %}<link rel="stylesheet" href="/css/sans.css">{% endif %}
 <script type="text/javascript" src="/js/base.js"></script>
 {% if page.id != 'download' %}<script type="text/javascript" src="/js/main.js"></script>{% endif %}
 <link rel="shortcut icon" href="/favicon.png">

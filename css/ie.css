@@ -1,0 +1,387 @@
+/*
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+*/
+
+body{
+	/*Allows to use :hover on any html tag using javascript*/
+	behavior:url("/css/csshover.htc");
+}
+
+.head div{
+	width:940px;
+}
+.body{
+	width:940px;
+}
+.lang{
+	border-left:2px solid #f7f7f7;
+	border-right:2px solid #f7f7f7;
+	border-top:2px solid #f7f7f7;
+}
+.lang li ul{
+	top:28px;
+}
+.lang li ul li{
+	zoom:1;
+	display:inline;
+}
+.lang li a,
+.lang li a:link,
+.lang li a:visited,
+.lang li a:active{
+	zoom:1;
+	display:inline;
+}
+
+.menusimple{
+	margin:0;
+	position:absolute;
+	top:8px;
+	left:245px;
+	padding:0;
+	height:35px;
+}
+.menusimple li{
+	list-style:none;
+	zoom:1;
+	display:inline;
+	position:relative;
+	padding:0;
+	margin:0 3px;
+}
+.menusimple li a,
+.menusimple li a:active,
+.menusimple li a:visited,
+.menusimple li a:link{
+	text-decoration:none;
+	color:#2c6fad;
+}
+.menusimple li a{
+	font-family:sans-serif;
+	display:block;
+	white-space:nowrap;
+	font-size:110%;
+	padding:6px 10px 4px 10px;
+}
+.menusimple li ul{
+	width:190px;
+	display:none;
+	position:absolute;
+	background-color:#fff;
+	border:1px solid #2c6fad;
+	min-width:auto;
+	padding:5px 0;
+	margin:0;
+	left:0;
+}
+.menusimple li ul li{
+	margin:0;
+	display:block;
+	width:100%;
+}
+.menusimple li ul li a{
+	width:100%;
+	font-size:100%;
+	margin:1px 0;
+	padding:6px 10px 3px 10px;
+}
+.menusimple li ul li a,
+.menusimple li ul li a:active,
+.menusimple li ul li a:visited,
+.menusimple li ul li a:link{
+	text-decoration:none;
+	color:#2c6fad;
+}
+.menusimple li:hover{
+	background-color:#2c6fad;
+}
+.menusimple li a:hover,
+.menusimple li:hover a,
+.menusimple li.active a,
+.menusimple li.active a:active,
+.menusimple li.active a:visited,
+.menusimple li.active a:link{
+	color:#fff;
+}
+.menusimple li:hover ul{
+	display:block;
+}
+.menusimple li ul li a:hover{
+	color:#fff;
+}
+
+.index{
+	font-size:0;
+}
+.index li{
+	margin-left:-16px;
+}
+.index ul li{
+	margin-left:16px;
+}
+.index a,
+.index a:link,
+.index a:active,
+.index a:visited{
+	font-size:16px;
+}
+
+
+.titleicon{
+	vertical-align:middle;
+	margin-right:5px;
+}
+
+.maindesc{
+	width:760px;
+}
+.mainlist div{
+	zoom:1;
+	display:inline;
+	width:240px;
+	text-align:center;
+}
+.mainlist div div{
+	zoom:1;
+	display:inline;
+	line-height:1.5em;
+	width:auto;
+}
+.mainlist div div div {
+	display:block;
+}
+.mainlist .ieimg{
+	display:block;
+	margin:10px auto;
+	position:relative;
+	height:48px;
+	width:48px;
+}
+
+.mainbutton a,
+.mainbutton a:link,
+.mainbutton a:visited,
+.mainbutton a:active{
+	zoom:1;
+	display:inline;
+}
+.mainbutton a:hover,
+.mainbutton a:link:hover,
+.mainbutton a:visited:hover,
+.mainbutton a:active:hover{
+	background-image:none;
+	color:#fff;
+}
+.mainbutton .ieimg{
+	margin-right:10px;
+	margin-left:-52px;
+	margin-bottom:-12px;
+	height:42px;
+	width:42px;
+}
+
+.starttitle a{
+	zoom:1;
+	display:inline;
+}
+.start div{
+	border-top:expression((this.parentNode.getElementsByTagName('DIV')[5]==this)?'1px solid #e0e0e0':'');
+}
+.start div div{
+	zoom:1;
+	display:inline;
+	padding-top:25px;
+	position:relative;
+	padding-right:expression(this.parentNode.getElementsByTagName('DIV')[0]==this?'40px':'');
+	border-right:expression(this.parentNode.parentNode.className=='start'&&this.parentNode.getElementsByTagName('DIV')[0]==this?'1px solid #e0e0e0':'');
+	padding-left:expression(this.parentNode.getElementsByTagName('DIV')[2]==this?'40px':'');
+	border-left:expression(this.parentNode.parentNode.className=='start'&&this.parentNode.getElementsByTagName('DIV')[2]==this?'1px solid #e0e0e0':'');
+	margin-left:expression(this.parentNode.getElementsByTagName('DIV')[2]==this?'-1px':'');
+}
+.start div div div{
+	padding-top:0;
+}
+.start>div>div:first-child+div{
+	/*This one is for IE7 only*/
+	border-top:0;
+}
+
+.resources div{
+	border-top:expression(this.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'1px solid #e0e0e0':'0');
+}
+.resources div div{
+	zoom:1;
+	display:inline;
+	padding-top:25px;
+	position:relative;
+	padding-right:expression(this.parentNode.parentNode.className=='resources'&&this.parentNode.getElementsByTagName('DIV')[0]==this?'40px':'');
+	border-right:expression(this.parentNode.parentNode.className=='resources'&&this.parentNode.getElementsByTagName('DIV')[0]==this?'1px solid #e0e0e0':'');
+	padding-left:expression(this.parentNode.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'40px':'');
+	border-left:expression(this.parentNode.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'1px solid #e0e0e0':'');
+	margin-left:expression(this.parentNode.parentNode.className=='resources'&&this!=this.parentNode.getElementsByTagName('DIV')[0]?'-1px':'');
+}
+.resources>div>div:first-child+div{
+	/*This one is for IE7 only*/
+	border-top:0;
+}
+
+.resourcesorg div div{
+	zoom:1;
+	display:inline;
+	padding:20px 0;
+}
+.resourcesorg div{
+	border-top:expression(this.parentNode.className=='resourcesorg'&&this.parentNode.getElementsByTagName('DIV')[0]!=this?'1px solid #e0e0e0':'0');
+}
+
+.resourcesmore div{
+	zoom:1;
+	display:inline;
+}
+
+.docreference a{
+	zoom:1;
+	display:inline;
+}
+
+.downloadbox{
+	zoom:1;
+	display:inline;
+}
+.downloadbox a{
+	zoom:1;
+	display:inline;
+}
+.downloadbox div{
+	zoom:1;
+	display:inline;
+}
+.downloadbox div div{
+	display:block;
+}
+.downloadbox div div span{
+	zoom:1;
+	display:inline;
+}
+.download span{
+	zoom:1;
+	display:inline;
+	vertical-align:top;
+}
+.downloadbox .magnetlink{
+	zoom:1;
+	display:inline;
+}
+
+.listtable div div{
+	zoom:1;
+	display:inline;
+}
+.eventtable span a{
+	zoom:1;
+	display:inline;
+}
+
+.exchanges div div{
+	zoom:1;
+	display:inline;
+	padding:20px 0;
+}
+.exchanges div{
+	border-top:expression(this.parentNode.className=='exchanges'&&this.parentNode.getElementsByTagName('DIV')[0]!=this?'1px solid #e0e0e0':'0');
+}
+
+.banner-message a:hover,
+.banner-message a:hover:link,
+.banner-message a:hover:active,
+.banner-message a:hover:visited{
+	color:#fff;
+}
+
+.index{
+	zoom:1;
+	display:inline;
+}
+
+.boxexpand *{
+	display:expression((this.parentNode.nodeName=='DIV')?'none':'');
+}
+.boxexpand h3{
+	display:expression((this.parentNode.nodeName=='DIV'&&this.parentNode.getElementsByTagName('H3')[0]==this)?'block':'');
+	margin:expression((this.parentNode.nodeName=='DIV'&&this.parentNode.getElementsByTagName('H3')[0]==this)?'20px 0':'');
+}
+.boxexpand h3 a:link,
+.boxexpand h3 a:visited,
+.boxexpand h3 a:active{
+	text-decoration:none;
+}
+
+.tablehalf div{
+	zoom:1;
+	display:inline;
+	margin-bottom:30px;
+}
+
+.contributors div{
+	zoom:1;
+	display:inline;
+}
+.contributors span{
+	width:16px;
+	height:16px;
+}
+
+.credit p{
+	zoom:1;
+	display:inline;
+}
+
+.devprojectlist li{
+	display:expression((this.parentNode.childNodes[0]==this||this.parentNode.childNodes[1]==this||this.parentNode.childNodes[2]==this||this.parentNode.childNodes[3]==this)?'list-item':'');
+}
+
+.press-faq div{
+	width:400px;
+	display:inline;
+	zoom:1;
+	vertical-align:top;
+	text-align:left;
+	margin-bottom:15px;
+	margin-right:20px;
+}
+.press-faq div a{
+	display:inline;
+	zoom:1;
+	font-weight:bold;
+	margin-right:20px;
+}
+.press-faq li a{
+	font-weight:normal;
+}
+.press-faq div div{
+	height:0;
+	width:auto;
+	margin:10px 0 0 0;
+	overflow:hidden;
+	text-align:justify;
+}
+
+.press-videos div{
+	display:inline;
+	zoom:1;
+}
+.press-videos div a{
+	display:inline;
+	zoom:1;
+}
+
+.press-quotes p{
+	display:inline;
+	zoom:1;
+}
+.press-quotes span{
+	font-weight:expression((this.parentNode.getElementsByTagName('SPAN')[0]==this)?'bold':'');
+	display:expression((this.parentNode.getElementsByTagName('SPAN')[0]==this)?'block':'');
+	margin-bottom:expression((this.parentNode.getElementsByTagName('SPAN')[0]==this)?'4px':'');
+}

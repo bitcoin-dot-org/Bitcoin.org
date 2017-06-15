@@ -1,0 +1,24 @@
+/*
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+*/
+
+h1,h2{
+	font-family:Arial, sans-serif;
+	font-weight:bold;
+}
+.menusimple li a,
+.menusimple li a:active,
+.menusimple li a:visited,
+.menusimple li a:link{
+	font-family:Arial, sans-serif;
+}
+.mainbutton a,
+.mainbutton a:link,
+.mainbutton a:visited,
+.mainbutton a:active{
+	font-family:Arial, sans-serif;
+}
+.walletmenu ul li{
+	font-family:Arial, sans-serif;
+}

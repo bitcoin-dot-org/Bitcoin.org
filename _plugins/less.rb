@@ -37,7 +37,7 @@ module Jekyll
               f = file = File.new(@file, "r")
             else
               source = File.read(@file)
-              f = IO.popen("lessc -x -", "w+")
+              f = IO.popen("lessc -", "w+")
               f.write(source)
               f.close_write()
             end
