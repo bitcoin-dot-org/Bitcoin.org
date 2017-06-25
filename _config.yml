@@ -599,3 +599,7 @@ defaults:
       type: posts
     values:
       lang: en
+
+## Options as of version 3.4.20 are: nested (default), compact, compressed, or expanded
+sass:
+  style: compressed

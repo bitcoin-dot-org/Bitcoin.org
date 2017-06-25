@@ -78,17 +78,19 @@ module Jekyll
 
     def generate(site)
       # Set site.contributors global variables for liquid/jekyll
-      class << site
-        attr_accessor :corecontributors
-        attr_accessor :sitecontributors
-        alias contrib_site_payload site_payload
-        def site_payload
-          h = contrib_site_payload
-          payload = h["site"]
-          payload["corecontributors"] = self.corecontributors
-          payload["sitecontributors"] = self.sitecontributors
-          h["site"] = payload
-          h
+      if ! site.respond_to?('corecontributors')
+        class << site
+          attr_accessor :corecontributors
+          attr_accessor :sitecontributors
+          alias contrib_site_payload site_payload
+          def site_payload
+            h = contrib_site_payload
+            payload = h["site"]
+            payload["corecontributors"] = self.corecontributors
+            payload["sitecontributors"] = self.sitecontributors
+            h["site"] = payload
+            h
+          end
         end
       end
 

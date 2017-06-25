@@ -42,15 +42,17 @@ module Jekyll
 
     def generate(site)
       # Set site.meetups and site.conferences global variables for liquid/jekyll
-      class << site
-        attr_accessor :conferences
-        alias event_site_payload site_payload
-        def site_payload
-          h = event_site_payload
-          payload = h["site"]
-          payload["conferences"] = self.conferences
-          h["site"] = payload
-          h
+      if ! site.respond_to?('conferences')
+        class << site
+          attr_accessor :meetups, :conferences
+          alias event_site_payload site_payload
+          def site_payload
+            h = event_site_payload
+            payload = h["site"]
+            payload["conferences"] = self.conferences
+            h["site"] = payload
+            h
+          end
         end
       end
 

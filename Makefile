@@ -16,7 +16,7 @@ default: clean build
 
 ## `make preview`: start the built-in Jekyll preview
 preview: clean
-	$S bundle exec jekyll serve
+	$S bundle exec jekyll serve --incremental
 
 ## `make test`: don't build, but do run all tests
 test: pre-build-tests post-build-tests
