@@ -98,8 +98,9 @@ To preview the website in your local browser, make sure you're in the
 
     make preview
 
-This will compile the site (takes 5 to 10 minutes; see the speed up
-instructions and then print the a message like this:
+This will compile the site (takes 5 to 10 minutes; see [the speed-up
+instructions](#fast-partial-previews-or-builds)) and then print a
+message like this:
 
     Server address: http://0.0.0.0:4000
     Server running... press ctrl-c to stop.

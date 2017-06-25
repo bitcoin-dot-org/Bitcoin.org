@@ -359,7 +359,7 @@
     howitworkstxt1: "From a user perspective, Bitcoin is nothing more than a mobile app or computer program that provides a personal Bitcoin wallet and allows a user to send and receive bitcoins with them. This is how Bitcoin works for most users."
     howitworkstxt2: "Behind the scenes, the Bitcoin network is sharing a public ledger called the \"block chain\". This ledger contains every transaction ever processed, allowing a user's computer to verify the validity of each transaction. The authenticity of each transaction is protected by digital signatures corresponding to the sending addresses, allowing all users to have full control over sending bitcoins from their own Bitcoin addresses. In addition, anyone can process transactions using the computing power of specialized hardware and earn a reward in bitcoins for this service. This is often called \"mining\". To learn more about Bitcoin, you can consult the <a href=\"#how-it-works#\">dedicated page</a> and the <a href=\"#bitcoin-paper#\">original paper</a>."
     used: "Is Bitcoin really used by people?"
-    usedtxt1: "Yes. There is a <a href=\"http://usebitcoins.info/\">growing number of businesses</a> and individuals using Bitcoin. This includes brick and mortar businesses like restaurants, apartments, law firms, and popular online services such as Namecheap, WordPress, and Reddit. While Bitcoin remains a relatively new phenomenon, it is growing fast. At the end of August 2013, the <a href=\"https://bitcoincharts.com/bitcoin/\">value of all bitcoins in circulation</a> exceeded US$ 1.5 billion with millions of dollars worth of bitcoins exchanged daily."
+    usedtxt1: "Yes. There are a <a href=\"/en/spend-bitcoin\">growing number of businesses</a> and individuals using Bitcoin. This includes brick-and-mortar businesses like restaurants, apartments, and law firms, as well as popular online services such as Namecheap, Overstock.com, and Reddit. While Bitcoin remains a relatively new phenomenon, it is growing fast. At the end of April 2017, the <a href=\"https://bitcoincharts.com/bitcoin/\">total value of all existing bitcoins</a> exceeded 20 billion US dollars, with millions of dollars worth of bitcoins exchanged daily."
     acquire: "How does one acquire bitcoins?"
     acquireli1: "As payment for goods or services."
     acquireli2: "Purchase bitcoins at a <a href=\"https://www.buybitcoinworldwide.com\">Bitcoin exchange</a>."
@@ -552,7 +552,7 @@
     getbut: "Find an exchange"
     spend: "Spend bitcoins"
     spendtxt: "There is a growing number of services and merchants accepting Bitcoin all over the world. You can use Bitcoin to pay them and rate your experience to help honest businesses to gain more visibility."
-    spendbut: "Find merchants"
+    spendbut: "Find merchants and products"
     merchants: "How to accept Bitcoin"
     merchantinform: "Inform yourself"
     merchantinformtxt: "Bitcoin does not require merchants to change their habits. However, Bitcoin is different than what you know and use every day. Before you start using Bitcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls."
@@ -760,6 +760,16 @@
     offlinemultitxt: "Bitcoin includes a multi-signature feature that allows a transaction to require multiple independent approvals to be spent. This can be used by an organization to give its members access to its treasury while only allowing a withdrawal if 3 of 5 members sign the transaction. Some web wallets also provide multi-signature wallets, allowing the user to keep control over their money while preventing a thief from stealing funds by compromising a single device or server."
     offlinetestament: "Think about your testament"
     offlinetestamenttxt: "Your bitcoins can be lost forever if you don't have a backup plan for your peers and family. If the location of your wallets or your passwords are not known by anyone when you are gone, there is no hope that your funds will ever be recovered. Taking a bit of time on these matters can make a huge difference."
+  spend-bitcoin:
+    title: "Spending Bitcoin - Bitcoin"
+    pagetitle: "Spending Bitcoin"
+    summary: "There are thousands of businesses, across the globe, that accept Bitcoin."
+    products-online: "Find products for sale online"
+    products-online-text: "One common use for Bitcoin is making purchases online. There are hundreds of online shops and retailers that accept Bitcoin. Using a search engine like <a href=\"https://spendabit.co/\">Spendabit</a> you can search through millions of products, all available for purchase with bitcoins."
+    directory: "Navigate a business directory"
+    directory-text: "You can also find many businesses listed in <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">online directories</a>."
+    business-map: "Find local businesses"
+    business-map-text: "There are also many local businesses, like cafes and restaurants, that accept Bitcoin. You can use <a href=\"https://coinmap.org/\">Coinmap.org</a> to browse thousands of businesses across the globe."
   support-bitcoin:
     title: "Support Bitcoin - Bitcoin"
     pagetitle: "Support Bitcoin"
@@ -777,7 +787,7 @@
     nonprofit: "Organizations"
     nonprofittxt: "Many <a href=\"#community##[community.non-profit]\">non-profit organizations</a> are dedicated to protecting and promoting Bitcoin. You can help these groups by joining them and taking part in their projects, discussions and events."
     spread: "Spread"
-    spreadtxt: "Speak about Bitcoin to interested people. Write about it on your blog. Tell your favorite shops you would like to pay with Bitcoin. Help keeping <a href=\"http://usebitcoins.info/\">merchant directories</a> up to date. Or be creative and make yourself a nice Bitcoin T-shirt."
+    spreadtxt: "Speak about Bitcoin to interested people. Write about it on your blog. Tell your favorite shops you would like to pay with Bitcoin. Help to keep <a href=\"/en/spend-bitcoin\">merchant directories</a> up to date. Or be creative and make yourself a nice Bitcoin T-shirt."
     wiki: "Documentation"
     wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> and the <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> provide useful documentation and we are constantly improving the information they contain. You can help to improve these resources and keep them up to date."
     translate: "Translate"
@@ -902,6 +912,7 @@
     vocabulary: vocabulary
     you-need-to-know: you-need-to-know
     bitcoin-paper: bitcoin-paper
+    spend-bitcoin: spend-bitcoin
   anchor:
     community:
       non-profit: non-profit
