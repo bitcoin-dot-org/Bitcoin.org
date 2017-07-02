@@ -2471,6 +2471,11 @@ h2 .rssicon{
 	h2{
 		text-align:center;
 	}
+	table{
+		display: block;
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
 	.toccontent .multicode,
 	.toccontent .multicode pre,
 	.toccontent pre{
