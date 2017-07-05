@@ -200,7 +200,7 @@ systems.
 
 ### Ubuntu 16.10
 
-*Instructions for Bitcoin Core 0.13.1.*
+*Instructions for Bitcoin Core 0.14.2
 
 If you use Ubuntu Desktop, click the Ubuntu swirl icon to start the Dash and type "term" into the
 input box. Choose any one of the terminals listed:
@@ -374,7 +374,7 @@ script](https://github.com/bitcoin/bitcoin/tree/0.13/contrib/init/bitcoind.conf)
 
 ### Other Linux Distributions
 
-*Instructions for Bitcoin Core 0.13.1.*
+*Instructions for Bitcoin Core 0.14.2
 
 The following instructions describe installing Bitcoin Core using tools
 available in most mainstream Linux distributions.  We assume you use a
@@ -404,9 +404,9 @@ followed by the argument `xzf` followed by the file name. The argument
 `xzf` means eXtract the gZipped tar archive File. For example, for a
 64-bit tar archive in your current directory, the command is:
 
-    tar xzf bitcoin-0.13.1-x86_64-linux-gnu.tar.gz
+    tar xzf bitcoin-0.14.2-x86_64-linux-gnu.tar.gz
 
-This will create the directory `bitcoin-0.13.1` within your current
+This will create the directory `bitcoin-0.14.2` within your current
 working directory. We will install the contents of its `bin`
 subdirectory into the `/usr/local/bin` directory using the the `install`
 command. The install command is part of the GNU coreutils available on
@@ -417,11 +417,11 @@ commands below to use a different location).
 If you use `sudo` to run commands as root, use the following command
 line:
 
-    sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.13.1/bin/*
+    sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.14.2/bin/*
 
 If you use `su` to run commands as root, use the following command line:
 
-    su -c 'install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.13.1/bin/*'
+    su -c 'install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.14.2/bin/*'
 
 <div class="box" markdown="1">
 *To continue, choose one of the following options*
@@ -561,9 +561,165 @@ If you're a expert system administrator and want to use an init script instead, 
 
 ## Windows Instructions
 
+### Windows 10
+
+*Instructions for Bitcoin Core 0.14.2 on Windows 10
+
+Go to the [Bitcoin Core download page](/en/download) and verify you have
+made a secure connection to the server.
+
+![Verify secure connection](/img/full-node/en-win10-secure-connection.png)
+
+Click the large blue *Download Bitcoin Core* button to download the
+Bitcoin Core installer to your desktop.
+
+{{verifyReleaseSignatures}}
+
+After downloading the file to your desktop or your Downloads folder
+(`C:\Users\<YOUR USER NAME>\Downloads`), run it by double-clicking its icon.
+Windows will ask you to confirm that you want to run it. Click Yes and the
+Bitcoin installer will start.  It's a typical Windows installer, and it will
+guide you through the decisions you need to make about where to install Bitcoin
+Core.
+
+![Windows 10 installer start](/img/full-node/en-win10-installer-start.png)
+
+<div class="box" markdown="1">
+*To continue, choose one of the following options*
+
+1. If you want to use the Bitcoin Core Graphical User Interface (GUI),
+   proceed to the [Bitcoin Core GUI](#win10-gui) section below.
+
+2. If you want to use the Bitcoin Core daemon (bitcoind), which is
+   useful for programmers and advanced users, proceed to the [Bitcoin
+   Core Daemon](#win10-daemon) section below.
+
+3. To want to use both the GUI and the daemon, read both the [GUI
+   instructions](#win10-gui) and the [daemon
+   instructions](#win10-daemon). Note that you can't run both the GUI
+   and the daemon at the same time using the same configuration
+   directory.
+
+</div>
+
+#### Bitcoin Core GUI {#win10-gui}
+{:.no_toc}
+
+Press the Windows key (`⊞ Win`) and start typing "bitcoin".  When the
+Bitcoin Core icon appears (as shown below), click on it.
+
+![Starting Bitcoin Core](/img/full-node/en-win10-start-bitcoin-core.png)
+
+You will be prompted to choose a directory to store the Bitcoin block
+chain and your wallet.  Unless you have a separate partition or drive
+you want to use, click Ok to use the default.
+
+![Bitcoin-Qt Welcome](/img/full-node/en-win10-welcome-to-bitcoin-core.png)
+
+Your firewall may block Bitcoin Core from making outbound connections.
+It's safe to allow Bitcoin Core to use all networks. (Note: you will
+still need to configure inbound connections as described later in the
+[Network Configuration](#network-configuration) section.)
+
+![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win10-bitcoin-core-outgoing-firewall.png)
+
+Bitcoin Core GUI will begin to download the block chain.  This step will take at
+least several days, and it may take much more time on a slow Internet connection
+or with a slow computer.  During the download, Bitcoin Core will use a
+significant part of your connection bandwidth.  You can stop Bitcoin Core at any
+time by closing it; it will resume from the point where it stopped the next time
+you start it.
+
+![Bitcoin-Qt Initial Block Download](/img/full-node/en-win10-ibd.png)
+
+After download is complete, you may use Bitcoin Core as your wallet or
+you can just let it run to help support the Bitcoin network.
+
+<div class="box" markdown="1">
+*Optional: Start Your Node At Login*
+
+Starting your node automatically each time you login to your computer
+makes it easy for you to contribute to the network. The easiest way
+to do this is to tell Bitcoin Core GUI to start at login.
+
+While running Bitcoin Core GUI, open the Settings menu and choose
+Options.  On the Main tab, click *Start Bitcoin on system login*.  Click
+the Ok button to save the new settings.
+
+![Choosing to start Bitcoin Core at login](/img/full-node/en-win10-start-on-login.png)
+
+The next time you login to your desktop, Bitcoin Core GUI will be
+automatically started minimized in the task bar.
+
+{{windows_shutdown_warning}}
+</div>
+
+{{installFinished}}
+
+
+#### Bitcoin Core Daemon {#win10-daemon}
+{:.no_toc}
+
+To start Bitcoin Core daemon, first open a command window: press the
+Windows key (`⊞ Win`) and type "cmd".  Choose the option labeled
+"Command Prompt".
+
+![Running cmd](/img/full-node/en-win10-running-cmd.png)
+
+If you installed Bitcoin Core into the default directory, type the
+following at the command prompt:
+
+    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+
+Bitcoin Core daemon should start and print a message that Bitcoin Core is starting.
+
+To interact with Bitcoin Core daemon, you will use the command
+`bitcoin-cli` (Bitcoin command line interface).  If you installed Bitcoin
+Core into the default location, type the following at the command
+prompt to see whether it works:
+
+    C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
+
+{{start_up_and_recommended_commands}}
+
+For example, to safely stop your node, run the following command:
+
+    C:\Program Files\Bitcoin\daemon\bitcoin-cli stop
+
+{{complete_list_of_commands_and_ibd}}
+
+<div class="box" markdown="1">
+*Optional: Start Your Node At Boot*
+
+Starting your node automatically each time your computer boots makes it
+easy for you to contribute to the network.  The easiest way to do this
+is to start Bitcoin Core daemon when you login to your computer.
+
+Start File Explorer and go to,
+
+    C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
+
+Right-click on the File Explorer window and choose New → Text file.
+Name the file `start_bitcoind.bat`. Then right-click on it and choose
+Open in Notepad (or whatever editor you prefer). Copy and paste the
+following line into the file.
+
+    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+
+(If you installed Bitcoin Core in a non-default directory, use that
+directory path instead.)
+
+Save the file. The next time you login to your computer, Bitcoin Core
+daemon will be automatically started.
+
+{{windows_shutdown_warning}}
+</div>
+
+{{installFinished}}
+
 ### Windows 8.x
 
-*Instructions for Bitcoin Core 0.13.1 on Windows 8 and 8.1.*
+*Instructions for Bitcoin Core 0.14.2 on Windows 8 and 8.1.*
 
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
@@ -719,7 +875,7 @@ daemon will be automatically started.
 
 ### Windows 7
 
-*Instructions for Bitcoin Core 0.13.1.*
+*Instructions for Bitcoin Core 0.14.2
 
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
@@ -881,7 +1037,7 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 
 ### Mac OS X Yosemite 10.10.x
 
-*Instructions for Bitcoin Core 0.13.1 on Mac OS X Yosemite*
+*Instructions for Bitcoin Core 0.14.2 on Mac OS X Yosemite*
 
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
