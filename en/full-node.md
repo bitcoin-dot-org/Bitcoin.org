@@ -582,7 +582,7 @@ Bitcoin installer will start.  It's a typical Windows installer, and it will
 guide you through the decisions you need to make about where to install Bitcoin
 Core.
 
-![Windows 7 installer start](/img/full-node/en-win10-installer-start.png)
+![Windows 10 installer start](/img/full-node/en-win10-installer-start.png)
 
 <div class="box" markdown="1">
 *To continue, choose one of the following options*
