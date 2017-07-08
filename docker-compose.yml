@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: preview-docker
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "4000:4000"
