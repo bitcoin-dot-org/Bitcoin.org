@@ -149,7 +149,7 @@ help].
   >Laptop<br
   >[Some ARM chipsets][wiki bitcoin core compatible devices arm] >1 GHz
 
-- {{OS}} Windows 7/8.x<br
+- {{OS}} Windows 7/8.x/10<br
   >Mac OS X<br
   >Linux
 
