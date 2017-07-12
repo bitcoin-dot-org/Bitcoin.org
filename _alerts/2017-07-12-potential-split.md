@@ -38,6 +38,10 @@ Remember that you alone are responsible for the safety of your bitcoins,
 and that if you lose control of them for any reason, there is nothing
 the operators or contributors to this website can do to help you.
 
+*Note:* there is a chance a milder level of disruption could start
+between now and {{start}}. If that is the case, this post will be
+updated with details.
+
 ## Preparation
 
 1. If you accept bitcoins as payments, we recommend that you stop
