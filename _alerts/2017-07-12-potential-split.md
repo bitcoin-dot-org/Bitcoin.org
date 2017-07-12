@@ -2,7 +2,7 @@
 ## This file is licensed under the MIT License (MIT) available on
 ## http://opensource.org/licenses/MIT.
 
-title: "Potential disruptive chain split"
+title: "Potential network disruption"
 shorturl: "potential-split"
 active: true
 banner: "Warning: Bitcoin may be unsafe to use starting July 31st (click here for details)"
@@ -16,7 +16,7 @@ bannerclass: "warning"
 page will be updated when new information becomes available.  See the
 [list of updates][].*
 
-At {{start}}, Bitcoin confirmation scores may become unreliable for
+At {{start}}, Bitcoin [confirmation scores][] may become unreliable for
 an unknown length of time.  This means that any bitcoins you receive
 after that time may later disappear from your wallet or be a
 type of bitcoin that other people will not accept as payment.
@@ -88,6 +88,7 @@ first.
 [list of updates]: #document-history
 [news sites]: /en/resources#news
 [community resources]: /en/community
+[confirmation scores]: /en/you-need-to-know#instant
 
 <script src="/js/jquery/jquery-1.11.2.min.js"></script>
 <script>
