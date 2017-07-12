@@ -2,8 +2,8 @@
 ## This file is licensed under the MIT License (MIT) available on
 ## http://opensource.org/licenses/MIT.
 
-title: "Potential disruptive chain forks"
-shorturl: "disruptive-forks"
+title: "Potential disruptive chain split"
+shorturl: "potential-split"
 active: true
 banner: "Warning: Bitcoin may be unsafe to use starting July 31st (click here for details)"
 
@@ -84,7 +84,7 @@ first.
 
 - <span class="date">2017/07/12 12:00 UTC</span>: initial version.
 
-[full history]: https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/_alerts/2017-07-12-disruptive-forks.md
+[full history]: https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/_alerts/2017-07-12-potential-split.md
 [list of updates]: #document-history
 [news sites]: /en/resources#news
 [community resources]: /en/community
