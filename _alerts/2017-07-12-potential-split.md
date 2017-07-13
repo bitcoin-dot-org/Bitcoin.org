@@ -59,6 +59,10 @@ will likely spread those loses across all their users.  If there end up
 being two or more competing versions of Bitcoin, then they may refuse to
 give you your bitcoins on versions they don't like.
 
+1. Bitcoin may experience significant price fluctuations in relation to
+other currencies.  Learn more about [price volatility][] and ensure you
+aren't holding more bitcoin than you can afford to lose.
+
 ## During the event
 
 1. Do not trust any payments you receive after {{start}} until the situation
@@ -93,6 +97,7 @@ first.
 [news sites]: /en/resources#news
 [community resources]: /en/community
 [confirmation scores]: /en/you-need-to-know#instant
+[price volatility]: /en/you-need-to-know#volatile
 
 <script src="/js/jquery/jquery-1.11.2.min.js"></script>
 <script>
