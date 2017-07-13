@@ -70,9 +70,10 @@ is resolved.  No matter how many confirmations the new payment says it
 has, it can disappear from your wallet at any point up until the
 situation is resolved.
 
-1. Try not to send any payments.  Although you should not technically be
-able to lose money this way, wallets may become confused and require
-recovery if you attempt this.
+1. Try not to send any payments.  During the event there may be two or
+more different types of bitcoin and you may send all of the different
+types to a recipient who only expects one type.  This would benefit the
+recipient at your expense.
 
 1. Be wary of offers to allow you to invest in the outcome of the event
 by "splitting" your coins.  Some of these offers may be scams, and
