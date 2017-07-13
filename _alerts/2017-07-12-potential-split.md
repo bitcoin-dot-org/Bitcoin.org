@@ -81,9 +81,10 @@ software claiming to split your coins can also steal them.
 
 ## After the event
 
-We will update this section with more information after {{start}}.
-Please wait until multiple news sources that you trust have stated that
-the event is resolved before returning to normal Bitcoin use.
+We will update this section with more information after {{start}}. Please
+monitor this page accordingly and wait until multiple news sources that you
+trust have stated that the event is resolved before returning to normal Bitcoin
+use.
 
 ## Document history
 
