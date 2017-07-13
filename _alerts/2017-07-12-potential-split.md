@@ -12,20 +12,36 @@ bannerclass: "warning"
 ---
 {% assign start='<span class="date">2017/08/01 00:00 UTC</span>' %}
 
-*Last updated: <span class="date">2017/07/12 12:00 UTC</span>.  This
+*Last updated: <span class="date">2017/07/13 11:21 UTC</span>.  This
 page will be updated when new information becomes available.  See the
 [list of updates][].*
 
-At {{start}}, Bitcoin [confirmation scores][] may become unreliable for
-an unknown length of time.  This means that any bitcoins you receive
-after that time may later disappear from your wallet or be a
-type of bitcoin that other people will not accept as payment.
+## Chain split
 
-Once the situation is resolved, confirmation scores will either
-automatically return to their normal reliability or there will be two
-(or more) competing versions of Bitcoin.  In the former case, you may
-return to using Bitcoin normally; in the later case, you will need to
-take extra steps in order to begin safely receiving bitcoins again.
+Since Bitcoin's inception, its network has facilitated hundreds of millions of
+transactions.  As a result, different groups of people (developers, investors,
+entrepreneurs, etc.), have debated on the best ways Bitcoin can be optimized to
+allow it to exponentially scale even further.  In recent months, alternative
+software has been released that represents some of the interests of the
+aforementioned groups of people - software that is scheduled to go live toward
+the end of July.
+
+The Bitcoin block chain, which is a record of all Bitcoin transactions to date,
+relies on a network of thousands of Bitcoin nodes running Bitcoin software. On
+{{start}}, the Bitcoin block chain may experience what is known as a chain
+split.  This is when a portion of Bitcoin's nodes run software that another
+portion of nodes are not fully compatible with.  As a result, some nodes may
+propagate confirmed transactions that other nodes may not accept or recognize.
+This may result in unreliable [confirmation scoring][] for an unknown length of
+time.  This means that any bitcoins you receive during this period could
+disappear from your wallet or be a type of bitcoin that other people will not
+accept as payment, until the situation is resolved.
+
+Once the situation is resolved, confirmation scoring will either automatically
+return to their normal reliability or there will be two (or more) competing
+versions of Bitcoin as a result of a split block chain.  In the former case, you
+may return to using Bitcoin normally; in the latter case, you will need to take
+extra steps in order to begin safely receiving bitcoins again.
 
 This post currently describes what actions you can take to prepare for
 this situation.  Subsequent to {{start}}, we will update this post as
@@ -39,7 +55,7 @@ and that if you lose control of them for any reason, there is nothing
 the operators or contributors to this website can do to help you.
 
 *Note:* there is a chance a milder level of disruption could start
-between now and {{start}}. If that is the case, this post will be
+between now and {{start}}.  If that is the case, this post will be
 updated with details.
 
 ## Preparation
@@ -81,24 +97,29 @@ software claiming to split your coins can also steal them.
 
 ## After the event
 
-We will update this section with more information after {{start}}. Please
+We will update this section with more information after {{start}}.  Please
 monitor this page accordingly and wait until multiple news sources that you
 trust have stated that the event is resolved before returning to normal Bitcoin
 use.
 
 ## Document history
 
+**Note:** The information contained herein is not to be construed as an official
+statement by Bitcoin Core. Bitcoin.org and Bitcoin Core open source projects are
+run by separate teams.
+
 A [full history][] of this document is available.  The following points
 summarize major changes, with the most recent changes being listed
 first.
 
+- <span class="date">2017/07/13 11:21 UTC</span>: add general info about split.
 - <span class="date">2017/07/12 12:00 UTC</span>: initial version.
 
 [full history]: https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/_alerts/2017-07-12-potential-split.md
 [list of updates]: #document-history
 [news sites]: /en/resources#news
 [community resources]: /en/community
-[confirmation scores]: /en/you-need-to-know#instant
+[confirmation scoring]: /en/you-need-to-know#instant
 [price volatility]: /en/you-need-to-know#volatile
 
 <script src="/js/jquery/jquery-1.11.2.min.js"></script>
