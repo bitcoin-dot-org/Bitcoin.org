@@ -5,7 +5,7 @@
 title: "Potential network disruption"
 shorturl: "potential-split"
 active: true
-banner: "Warning: Bitcoin may be unsafe to use starting July 31st (click here for details)"
+banner: "Warning: potential network disruption starting July 31st"
 
 ## 7/12 to 7/28: "warning" (orange); 7/29 until resolution: "alert" (red)
 bannerclass: "warning"
