@@ -55,7 +55,7 @@ accepting bitcoins at {{start}} or earlier.
 1. Be wary of storing your bitcoins on an exchange or any service that
 doesn't allow you to make a local backup copy of your private keys.  If
 they accept transactions during the event, they could lose money and
-will likely spread those loses across all their users.  If there end up
+will likely spread those losses across all their users.  If there end up
 being two or more competing versions of Bitcoin, then they may refuse to
 give you your bitcoins on versions they don't like.
 
