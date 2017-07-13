@@ -24,7 +24,7 @@ type of bitcoin that other people will not accept as payment.
 Once the situation is resolved, confirmation scores will either
 automatically return to their normal reliability or there will be two
 (or more) competing versions of Bitcoin.  In the former case, you may
-return to using Bitcoin normally; in the later case, you will need to
+return to using Bitcoin normally; in the latter case, you will need to
 take extra steps in order to begin safely receiving bitcoins again.
 
 This post currently describes what actions you can take to prepare for
