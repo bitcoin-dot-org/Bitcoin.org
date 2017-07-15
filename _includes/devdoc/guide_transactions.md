@@ -754,8 +754,10 @@ when the output from a transaction is spent before that transaction is
 added to the block chain.
 
 Bitcoin developers have been working to reduce transaction malleability
-among standard transaction types, but a complete fix is still only in
-the planning stages. At present, new transactions should not depend on
+among standard transaction types, one outcome of those efforts is
+[BIP 141: Segregated Witness](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki),
+which is supported by Bitcoin Core but not activated. At present, new
+transactions should not depend on
 previous transactions which have not been added to the block chain yet,
 especially if large amounts of satoshis are at stake.
 
