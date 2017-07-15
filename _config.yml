@@ -575,6 +575,12 @@ collections:
   releases:
     output: true
     permalink: /en/release/:path
+  ## _wallets
+  wallets:
+    output: false
+  platforms:
+    output: true
+    permalink: /en/wallets/:path/
 
 defaults:
   - scope:
