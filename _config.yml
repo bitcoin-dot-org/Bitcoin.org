@@ -602,6 +602,12 @@ defaults:
         - RELEASE
   - scope:
       path: ""
+      type: platforms
+    values:
+      layout: base
+
+  - scope:
+      path: ""
       type: posts
     values:
       lang: en
