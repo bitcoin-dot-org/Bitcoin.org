@@ -25,7 +25,7 @@ platform:
       privacyaddressreuse: "checkpassprivacyaddressrotation"
       privacydisclosure: "checkfailprivacydisclosurecentralized"
       privacynetwork: "checkpassprivacynetworksupporttorproxy"
-  mobile:
+  android:
     text: "walletelectrum"
     link: "https://play.google.com/store/apps/details?id=org.electrum.electrum"
     source: "https://github.com/spesmilo/electrum"
