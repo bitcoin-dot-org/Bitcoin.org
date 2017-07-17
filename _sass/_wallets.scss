@@ -281,6 +281,20 @@ $scores:
                 border-radius: 4px;
                 text-align: center;
 
+                &.active {
+                    background-color: #2c6fad;
+                    background-image: -o-linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+                    background-image: -moz-linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+                    background-image: -webkit-linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+                    background-image: -ms-linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+                    background-image: linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+                    color: #fff;
+
+                    &:hover {
+                        background-image: none;
+                    }
+                }
+
                 span {
                     vertical-align: text-top;
                 }
@@ -294,6 +308,10 @@ $scores:
             border-radius: 4px;
             margin-bottom: 20px;
             display: flex;
+
+            &.hidden {
+                display: none;
+            }
 
             .wallet-os-screenshot {
                 img {

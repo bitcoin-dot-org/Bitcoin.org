@@ -8,7 +8,7 @@ http://opensource.org/licenses/MIT.
 <div class="wallets" id="wallets" onclick="walletListener(event);" ontouchstart="walletListener(event);">
 {% for wallet in site.wallets %}
     <div>
-      <a>
+      <a href="/en/wallets/{{ wallet.id }}/#!platform={{ page.platform }}&os={{ page.os }}">
         <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" />
         {{ wallet.titleshort }}
       </a>

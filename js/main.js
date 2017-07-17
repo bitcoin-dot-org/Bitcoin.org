@@ -423,6 +423,39 @@ function walletScoreListener(e) {
   onTouchClick(e, init);
 }
 
+function walletScoreListener(e) {
+  // Listen for events on wallet scores and display them on tap.
+  var init = function(e) {
+    var t = getEvent(e, 'target');
+    while (!t.parentNode.parentNode.parentNode.id) t = t.parentNode;
+    (t.className.indexOf('hover') === -1) ? addClass(t, 'hover'): removeClass(t, 'hover');
+  };
+  onTouchClick(e, init);
+}
+
+function walletDistributionListener(os, platform) {
+  window.location.hash = "!platform=" + platform + "&os=" + os;
+  var osContainers = document.querySelectorAll('.wallet-os-container');
+  var osButtons = document.querySelectorAll('.wallet-os-btn');
+  var selected = document.getElementById(os);
+  var button = document.getElementById(os + '-btn');
+  osContainers.forEach(function(el) { addClass(el, 'hidden'); });
+  osButtons.forEach(function(el) { removeClass(el, 'active'); });
+  removeClass(selected, 'hidden');
+  addClass(button, 'active');
+}
+
+(function() {
+  var hash = window.location.hash;
+  if (hash.indexOf('!') > -1 && hash.indexOf('platform') > -1 && hash.indexOf('os') > -1) {
+    var platform = hash.split('&')[0].split('=')[1];
+    var os = hash.split('&')[1].split('=')[1];
+    setTimeout(function() {
+        walletDistributionListener(os, platform);
+    }, 0);
+  }
+})();
+
 function walletShowPlatform(platform) {
   // Show wallets for given platform in the menu.
   var t = null,

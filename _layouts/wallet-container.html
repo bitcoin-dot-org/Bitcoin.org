@@ -22,7 +22,7 @@ layout: wallet-platform-container
     <div class="wallet-platforms-menu">
       {% for platform in page.platform %}
         {% for os in platform.os %}
-        <button>
+        <button class="wallet-os-btn" id="{{ os.name }}-btn" onclick="walletDistributionListener('{{ os.name }}', '{{ platform.name }}');">
           <img src="/img/os/{{ os.name }}.png"
                alt="{% translate platform{{os.name}} choose-your-wallet %}"
                title="{% translate platform{{os.name}} choose-your-wallet %}" />
