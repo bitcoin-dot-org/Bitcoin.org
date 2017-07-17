@@ -1,0 +1,491 @@
+$platforms:
+    mobile,
+    desktop,
+    hardware,
+    web;
+
+$oses:
+    ios,
+    android,
+    windowsphone,
+    blackberry,
+    linux,
+    mac,
+    windows;
+
+// Wallet menu
+.walletmenu {
+    text-align: center;
+    position: relative;
+    z-index: 90;
+
+    > ul {
+        display: inline-block;
+        text-align: left;
+        padding: 0 0 25px 0;
+        border-bottom: 1px solid #E2E2E2;
+        background-color: #fff;
+
+        // Disable border radius of menu buttons
+        // TODO: rework, so it doesn't rely on the order of submenus
+        &:hover > li:first-child,
+        &:hover > li:first-child + li {
+            -webkit-border-bottom-left-radius: 0;
+            -webkit-border-bottom-right-radius: 0;
+            -moz-border-radius-bottomleft: 0;
+            -moz-border-radius-bottomright: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        li {
+            font-family: 'Ubuntu', sans-serif;
+            position: relative;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: left 6px;
+            padding: 0;
+            margin: 15px 10px;
+            font-size: 130%;
+            font-weight: bold;
+            -moz-transition: background-color 400ms ease-out;
+            -webkit-transition: background-color 400ms ease-out;
+            transition: background-color 400ms ease-out;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a,
+            a:link,
+            a:active,
+            a:visited {
+                color: #383838;
+            }
+            a {
+                white-space: nowrap;
+                cursor: pointer;
+                display: block;
+                padding: 8px 10px 5px 42px;
+            }
+
+            ul {
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                border: 1px solid #0d579b;
+                padding: 4px 0;
+                min-width: 110%;
+                left: 0;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+
+                li {
+                    font-size: 80%;
+                    display: block;
+                    margin: 0;
+                    background-position: left 10px;
+                    -webkit-border-radius: 0px;
+                    -moz-border-radius: 0px;
+                    border-radius: 0px;
+
+                    > a {
+                        background-image: url(/img/icons/wallet_select.svg);
+                        background-repeat: no-repeat;
+                        background-position: -32px center;
+                        padding: 8px 32px 5px 32px;
+                        margin: 1px 0;
+                    }
+
+                    &.active > a {
+                        background-position: right center;
+                    }
+                }
+            }
+
+            &.active,
+            &:hover {
+                background-color: #0d579b;
+            }
+
+            &:hover > a,
+            &:hover > a:link,
+            &:hover > a:active,
+            &:hover > a:visited,
+            &.active > a,
+            &.active > a:link,
+            &.active > a:active,
+            &.active > a:visited {
+                color: #fff;
+            }
+        }
+    }
+
+    // Generating icon classes for platforms
+    @each $platform in $platforms {
+        .wallet-#{$platform} {
+            background-image: url('/img/icons/wallet_menu_#{$platform}.svg');
+        }
+    }
+
+    // Generating icon classes for OSes
+    @each $os in $oses {
+        .wallet-#{$os} {
+            background-image: url('/img/os/wallet_menu_#{$os}.svg');
+        }
+    }
+}
+.walletmenu > ul > li.active,
+.walletmenu > ul > li:hover {
+    background-position: left -62px;
+}
+.walletmenu > ul > li:hover > ul {
+    display: block;
+}
+.walletmenu > ul > li > ul > li.active,
+.walletmenu > ul > li > ul > li:hover {
+    background-position: left -24px;
+}
+
+.wallets {
+    width: 705px;
+    height: 250px;
+    text-align: left;
+    position: relative;
+    margin: auto;
+    padding: 60px 0 20px 0;
+    font-size: 0;
+    opacity: 1;
+    -moz-transition: opacity 400ms ease-out;
+    -webkit-transition: opacity 400ms ease-out;
+    transition: opacity 400ms ease-out;
+}
+.wallets.disabled {
+    opacity: 0;
+}
+.wallets > div {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+}
+.wallets > div:nth-child(1n + 15) {
+    display: none;
+}
+.wallets > div > a {
+    color: #2c6fad;
+    cursor: pointer;
+    font-size: 94%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    width: 72px;
+    height: 110px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0 14px 20px 14px;
+    white-space: nowrap;
+    outline: 0;
+    -moz-transition: opacity 400ms ease-out;
+    -webkit-transition: opacity 400ms ease-out;
+    transition: opacity 400ms ease-out;
+}
+.wallets > div > a:hover {
+    color: #63a4e1;
+}
+.wallets > div > a > span {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    height: 32px;
+    background: url(/img/icons/wallet_bubble.svg) no-repeat center 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.wallets > div > a > img {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.wallets > div > div,
+.wallets > div > span {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+    position: absolute;
+    padding: 20px;
+    top: -382px;
+    left: -20px;
+    right: -20px;
+    -moz-transition: opacity 400ms ease-out;
+    -webkit-transition: opacity 400ms ease-out;
+    transition: opacity 400ms ease-out;
+}
+.wallets > div > span {
+    z-index: 100;
+    border: solid 2px #2c6faf;
+    background-color: #f1f8fb;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.wallets > div > div {
+    z-index: 102;
+}
+.wallets > div:nth-child(1n + 7) > div,
+.wallets > div:nth-child(1n + 7) > span {
+    top: -252px;
+}
+.wallets > div:nth-child(1n + 13) > div,
+.wallets > div:nth-child(1n + 13) > span {
+    top: -92px;
+}
+.wallets > div > div > h2 {
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+}
+.wallets > div > div > h2:first-child + div {
+    display: inline-block;
+    margin-left: 10px;
+}
+.wallets > div > div > h2:first-child + div > img {
+    margin-left: 4px;
+}
+.wallets > div > div > h2:first-child + div + div > a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 4px 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.wallets > div > div > h2:first-child + div + div > a:first-child {
+    font-weight: bold;
+    background-color: #2c6fad;
+    background-image: -o-linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+    background-image: -moz-linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+    background-image: -webkit-linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+    background-image: -ms-linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+    background-image: linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+    border: 1px solid #255f96;
+    margin-right: 10px;
+}
+.wallets > div > div > h2:first-child + div + div > a:first-child,
+.wallets > div > div > h2:first-child + div + div > a:first-child:visited,
+.wallets > div > div > h2:first-child + div + div > a:first-child:link,
+.wallets > div > div > h2:first-child + div + div > a:first-child:active {
+    color: #fff;
+}
+.wallets > div > div > h2:first-child + div + div > a:first-child + a {
+    font-weight: normal;
+    color: #255f96;
+    border: 1px solid #255f96;
+}
+.wallets > div > div > h2:first-child + div + div > a:first-child + a,
+.wallets > div > div > h2:first-child + div + div > a:first-child + a:visited,
+.wallets > div > div > h2:first-child + div + div > a:first-child + a:link,
+.wallets > div > div > h2:first-child + div + div > a:first-child + a:active {
+    color: #255f96;
+}
+.wallets > div > div > h2:first-child + div + div + div {
+    margin: 5px 0;
+}
+.wallets > div > div > h2:first-child + div + div + div > div {
+    padding: 5px 0 5px 22px;
+    background-repeat: no-repeat;
+    background-position: left 4px;
+    cursor: default;
+    line-height: 16px;
+}
+.wallets > div > div > h2:first-child + div + div + div > div > div {
+    display: inline-block;
+    background-image: url(/img/icons/wallet_help.png);
+    background-image: none, url(/img/icons/wallet_help.svg), url(/img/icons/wallet_help.png);
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    vertical-align: top;
+    position: relative;
+}
+.wallets > div > div > h2:first-child + div + div + div > div > div > span {
+    display: none;
+    position: absolute;
+    left: 6px;
+    top: -30px;
+    width: 25px;
+    height: 70px;
+    z-index: 90;
+    background-repeat: no-repeat;
+    background-position: right 30px;
+}
+.wallets > div > div > h2:first-child + div + div + div > div > div > p,
+.wallets > div > div > h2:first-child + div + div + div > div > div > div {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border: 1px solid;
+    visibility: hidden;
+    position: absolute;
+    background-color: #fff;
+    left: 30px;
+    margin: 0;
+    -moz-transition: opacity 400ms ease-out;
+    -webkit-transition: opacity 400ms ease-out;
+    transition: opacity 400ms ease-out;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    z-index: 90;
+}
+.wallets > div > div > h2:first-child + div + div + div > div > div > p {
+    font-size: 85%;
+    padding: 10px;
+    top: -30px;
+}
+.wallets > div > div > h2:first-child + div + div + div > div > div > div {
+    padding: 0 10px;
+    top: -80px;
+}
+.wallets > div > div > h2:first-child + div + div + div > div > div > div > div > p:first-child + p {
+    font-size: 85%;
+}
+.wallets > div > div > h2:first-child + div + div + div + p {
+    font-size: 95%;
+    margin: 0;
+    padding-right: 5px;
+    height: 137px;
+    width: 320px;
+    overflow: auto;
+}
+.wallets > div > div > h2:first-child + div + div + div + p + div {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 400px;
+    width: 250px;
+}
+.wallets > div > div > h2:first-child + div + div + div + p + div > img {
+    border: 1px solid #BDBDBD;
+}
+
+$checks:
+    control,
+    validation,
+    transparency,
+    environment,
+    fees,
+    privacy;
+
+$green: #329239;
+$grey: #8b8b8b;
+$red: #ee9209;
+
+$checkmarks:
+    good $green bold,
+    pass $green normal,
+    neutral $grey normal,
+    fail $red normal;
+
+.wallet {
+
+    // Generate backgrounds for checks and checkmarks
+    @each $check in $checks {
+        @each $checkmark, $color, $font-weight in $checkmarks {
+            .check#{$checkmark} {
+                color: $color;
+                font-weight: $font-weight;
+
+                p {
+                    border-color: $color;
+                    font-weight: normal;
+                }
+
+                > div > span {
+                    @if $checkmark == good {
+                        background-image: url('/img/icons/checkbubble_pass.svg');
+                    } @else {
+                        background-image: url('/img/icons/checkbubble_#{$checkmark}.svg');
+                    }
+                }
+
+                &.check#{$check} {
+                    @if $checkmark == good {
+                        background-image: url('/img/icons/check_#{$check}_pass.svg');
+                    } @else {
+                        background-image: url('/img/icons/check_#{$check}_#{$checkmark}.svg');
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wallets > div:hover > a > span,
+.wallets > div.active > a > span,
+.wallets.nohover > div.active:hover > a > span {
+    display: block;
+}
+.wallets.nohover > div:hover > a > span {
+    display: none;
+}
+.wallets > div:hover > div,
+.wallets > div:hover > span,
+.wallets > div.active > div,
+.wallets > div.active > span,
+.wallets.nohover > div.active:hover > div,
+.wallets.nohover > div.active:hover > span {
+    opacity: 1;
+    width: auto;
+    height: 400px;
+    visibility: visible;
+    overflow: visible;
+}
+.wallets.nohover > div:hover > div,
+.wallets.nohover > div:hover > span {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.wallets > div > div > h2:first-child + div + div > a:first-child:hover {
+    background-image: none;
+}
+.wallets > div > div > h2:first-child + div + div + div > div:hover > div > span {
+    display: block;
+}
+.wallets > div > div > h2:first-child + div + div + div > div:hover > div > p,
+.wallets > div > div > h2:first-child + div + div + div > div:hover > div > div {
+    opacity: 1;
+    width: 400px;
+    height: auto;
+    visibility: visible;
+}
+
+.walletsswitch {
+    display: none;
+}
+.walletsmobile {
+    display: none;
+}
+
+.walletsdisclaimer h2 {
+    text-align: center;
+}
+
