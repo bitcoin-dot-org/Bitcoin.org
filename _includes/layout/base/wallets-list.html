@@ -1,0 +1,17 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% if wallet.compat contains page.platform and wallet.compat contains page.os %}
+{% endif %}
+{% endcomment %}
+
+<div class="wallets" id="wallets" onclick="walletListener(event);" ontouchstart="walletListener(event);">
+{% for wallet in site.wallets %}
+    <div>
+      <a>
+        <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" />
+        {{ wallet.titleshort }}
+      </a>
+    </div>
+{% endfor %}
+</div>

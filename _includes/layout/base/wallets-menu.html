@@ -1,0 +1,34 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+<div class="walletmenu" id="walletmenu" onclick="walletMenuListener(event);" ontouchstart="walletMenuListener(event);">
+{% assign platformsByPlatform = site.platforms | group_by: "platform" %}
+  <ul>
+  {% for platform in platformsByPlatform %}
+    {% assign platform_class = "wallet-" | append: platform.name %}
+    {% if page.id contains platform.name %}
+      {% assign platform_class = platform_class | append: " active" %}
+    {% endif %}
+    <li class="{{ platform_class }}">
+      <a href="#">{% translate walletcat{{platform.name}} choose-your-wallet %}</a>
+      {% if platform.items.size > 1 %}
+        <ul>
+        {% for item in platform.items %}
+          {% assign os_class = "wallet-" | append: item.os %}
+          {% if page.id == item.id %}
+            {% assign os_class = os_class | append: " active" %}
+          {% endif %}
+          <li class="{{ os_class }}">
+            <a href="/en/wallets/{{ platform.name }}/{{ item.os }}">
+              {% translate platform{{item.os}} choose-your-wallet %}
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
