@@ -105,7 +105,7 @@ zh_CN:
     walletcatdesktop: "桌面"
     walletcathardware: "硬件"
     walletcatweb: "网页"
-    walletbitcoinqt: "Bitcoin Core是完整的比特币客户端。它构建了比特币的主干网络。它具有高度的安全性、隐私性、稳定性。然而，相比其它客户端，它的功能少一些，还需要占用大量的存储空间和内存。"
+    walletbitcoincore: "Bitcoin Core是完整的比特币客户端。它构建了比特币的主干网络。它具有高度的安全性、隐私性、稳定性。然而，相比其它客户端，它的功能少一些，还需要占用大量的存储空间和内存。"
     walletmultibit: "MultiBit属于轻量级客户端，专注于快捷和易用。MultiBit几分钟内就可以完成网络同步投入使用；同时也支持多种语言，对于非技术用户来说，是一个不错的选择。"
     walletarmory: "Armory 是一款高级比特币客户端，为比特币资深用户做了更多性能扩展。它提供了很多的备份和加密功能，允许安全的线下冷存储方式。"
     walletelectrum: "Electrum客户端的侧重点是快速，简单，占用资源少。它使用远程服务器来处理比特币系统中最复杂的部分，你还可以通过一个预设的保密短语用来还原你的钱包。"
