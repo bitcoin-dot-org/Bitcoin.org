@@ -228,6 +228,8 @@
     border: 1px solid #BDBDBD;
 }
 
+// ----------------------------- new
+
 $checks:
     control,
     validation,
@@ -239,8 +241,10 @@ $checks:
 $green: #329239;
 $grey: #8b8b8b;
 $red: #ee9209;
+$blue: #2c6faf;
+$light-blue: #f0f8ff;
 
-$checkmarks:
+$scores:
     good $green bold,
     pass $green normal,
     neutral $grey normal,
@@ -248,31 +252,178 @@ $checkmarks:
 
 .wallet {
 
-    // Generate backgrounds for checks and checkmarks
-    @each $check in $checks {
-        @each $checkmark, $color, $font-weight in $checkmarks {
-            .check#{$checkmark} {
-                color: $color;
-                font-weight: $font-weight;
+    .wallet-logo-container {
+        text-align: center;
 
-                p {
-                    border-color: $color;
-                    font-weight: normal;
+        .wallet-logo {
+            width: 72px;
+            height: 72px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .wallet-platforms {
+
+        .wallet-platforms-menu {
+            text-align: center;
+            margin-bottom: 20px;
+
+            button {
+                background-color: transparent;
+                font-weight: bold;
+                border: 1px solid #255f96;
+                margin-right: 10px;
+                text-decoration: none;
+                padding: 4px 8px;
+                border-radius: 4px;
+                text-align: center;
+
+                span {
+                    vertical-align: text-top;
+                }
+            }
+        }
+
+        .wallet-os-container {
+            background-color: $light-blue;
+            padding: 20px;
+            border: 2px solid $blue;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: flex;
+
+            .wallet-os-screenshot {
+                img {
+                    border: 1px solid $grey;
+                }
+            }
+
+            .wallet-os-overview {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+
+                .wallet-os-name {
+                    h3 {
+                        margin: 0;
+                        margin-right: 5px;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+
+                    margin-bottom: 20px;
                 }
 
-                > div > span {
-                    @if $checkmark == good {
-                        background-image: url('/img/icons/checkbubble_pass.svg');
-                    } @else {
-                        background-image: url('/img/icons/checkbubble_#{$checkmark}.svg');
+                .wallet-os-download-buttons {
+                    margin-bottom: 20px;
+
+                    .wallet-os-source-link,
+                    .wallet-os-download-link {
+                        font-weight: bold;
+                        border: 1px solid #255f96;
+                        margin-right: 10px;
+                        text-decoration: none;
+                        padding: 4px 8px;
+                        border-radius: 4px;
+                        text-align: center;
+                    }
+
+                    .wallet-os-download-link {
+                        background-color: #2c6fad;
+                        background-image: -o-linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+                        background-image: -moz-linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+                        background-image: -webkit-linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+                        background-image: -ms-linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+                        background-image: linear-gradient(bottom, #255f96 14%, #2c6fad 70%);
+                        color: #fff;
+
+                        &:hover {
+                            background-image: none;
+                        }
+                    }
+
+                    .wallet-os-source-link {
                     }
                 }
 
+                .wallet-os-checks {
+                    padding-right: 40px;
+
+                    .wallet-os-check-title {
+                        display: inline-block;
+                        margin: 0;
+                    }
+
+                    .wallet-os-check-help-icon {
+                        display: inline-block;
+                        background-image: url(/img/icons/wallet_help.png);
+                        background-image: none, url(/img/icons/wallet_help.svg), url(/img/icons/wallet_help.png);
+                        width: 16px;
+                        height: 16px;
+                        vertical-align: text-bottom;
+                        cursor: pointer;
+                    }
+
+                    .hover {
+                        .wallet-os-check-details {
+                            display: block;
+                            border: 2px solid;
+                            border-radius: 4px;
+                            margin: 10px 0;
+                            padding: 10px;
+                        }
+                    }
+
+                    .wallet-os-check-details {
+                        display: none;
+                        position: absolute;
+                        background-color: #FFFFFF;
+                        max-width: 350px;
+                        p {
+                            margin: 0;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Generate backgrounds for checks and scores
+    @each $score, $color, $font-weight in $scores {
+        .check#{$score} {
+            background-repeat: no-repeat;
+            background-position-y: center;
+            padding-left: 25px;
+            margin-bottom: 10px;
+
+            .wallet-os-check-title {
+                color: $color;
+                font-weight: $font-weight;
+            }
+
+            .wallet-os-check-details {
+                color: $color;
+                border-color: $color;
+            }
+
+            > div > span {
+                @if $score == good {
+                    background-image: url('/img/icons/checkbubble_pass.svg');
+                } @else {
+                    background-image: url('/img/icons/checkbubble_#{$score}.svg');
+                }
+            }
+
+            @each $check in $checks {
                 &.check#{$check} {
-                    @if $checkmark == good {
+                    @if $score == good {
                         background-image: url('/img/icons/check_#{$check}_pass.svg');
                     } @else {
-                        background-image: url('/img/icons/check_#{$check}_#{$checkmark}.svg');
+                        background-image: url('/img/icons/check_#{$check}_#{$score}.svg');
                     }
                 }
             }
