@@ -5,24 +5,29 @@ titleshort: "Bitcoin<br>Knots"
 compat: "desktop windows mac linux"
 level: 1
 platform:
-  desktop:
-    text: "walletbitcoinknots"
-    link: "https://bitcoinknots.org/"
-    source: "https://github.com/bitcoinknots/bitcoin/"
-    screenshot: "bitcoinknots.png"
+  - desktop:
+    name: desktop
+    default: &DEFAULT
+      text: "walletbitcoinknots"
+      link: "https://bitcoinknots.org/"
+      source: "https://github.com/bitcoinknots/bitcoin/"
+      screenshot: "bitcoinknots.png"
+      check:
+        control: "checkgoodcontrolfull"
+        validation: "checkgoodvalidationfullnode"
+        transparency: "checkgoodtransparencydeterministic"
+        environment: "checkfailenvironmentdesktop"
+        privacy: "checkgoodprivacyimproved"
+        fees: "checkgoodfeecontrolfull"
+      privacycheck:
+        privacyaddressreuse: "checkpassprivacyaddressrotation"
+        privacydisclosure: "checkpassprivacydisclosurefullnode"
+        privacynetwork: "checkpassprivacynetworksupporttorproxy"
     os:
-    - windows
-    - mac
-    - linux
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkgoodvalidationfullnode"
-      transparency: "checkgoodtransparencydeterministic"
-      environment: "checkfailenvironmentdesktop"
-      privacy: "checkgoodprivacyimproved"
-      fees: "checkgoodfeecontrolfull"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkpassprivacydisclosurefullnode"
-      privacynetwork: "checkpassprivacynetworksupporttorproxy"
+      - name: windows
+        <<: *DEFAULT
+      - name: mac
+        <<: *DEFAULT
+      - name: linux
+        <<: *DEFAULT
 ---

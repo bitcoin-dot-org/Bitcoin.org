@@ -5,79 +5,64 @@ titleshort: "ArcBit"
 compat: "mobile desktop android ios windows mac linux"
 level: 3
 platform:
-  mobile:
-    text: "walletarcbit"
-    link: "https://itunes.apple.com/app/arcbit-bitcoin-wallet/id999487888"
-    source: "https://github.com/arcbit/arcbit-ios"
-    screenshot: "arcbitios.png"
+  - desktop:
+    name: desktop
+    default: &DEFAULT
+      text: "walletarcbit"
+      link: "https://chrome.google.com/webstore/detail/arcbit-bitcoin-wallet/dkceiphcnbfahjbomhpdgjmphnpgogfk"
+      source: "https://github.com/arcbit/arcbit-web"
+      screenshot: "arcbitdesktop.png"
+      check:
+        control: "checkgoodcontrolfull"
+        validation: "checkfailvalidationcentralized"
+        transparency: "checkfailtransparencyremote"
+        environment: "checkfailenvironmentdesktop"
+        privacy: "checkpassprivacybasic"
+        fees: "checkpassfeecontroloverride"
+      privacycheck:
+        privacyaddressreuse: "checkpassprivacyaddressrotation"
+        privacydisclosure: "checkfailprivacydisclosurecentralized"
+        privacynetwork: "checkpassprivacynetworksupporttorproxy"
     os:
-    - ios
-    - android
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkfailvalidationcentralized"
-      transparency: "checkpasstransparencyopensource"
-      environment: "checkpassenvironmentmobile"
-      privacy: "checkpassprivacybasic"
-      fees: "checkpassfeecontroloverride"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkfailprivacydisclosurecentralized"
-      privacynetwork: "checkfailprivacynetworknosupporttor"
-  desktop:
-    text: "walletarcbit"
-    link: "https://chrome.google.com/webstore/detail/arcbit-bitcoin-wallet/dkceiphcnbfahjbomhpdgjmphnpgogfk"
-    source: "https://github.com/arcbit/arcbit-web"
-    screenshot: "arcbitdesktop.png"
+      - name: windows
+        <<: *DEFAULT
+      - name: mac
+        <<: *DEFAULT
+      - name: linux
+        <<: *DEFAULT
+  - mobile:
+    name: mobile
     os:
-    - windows
-    - mac
-    - linux
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkfailvalidationcentralized"
-      transparency: "checkfailtransparencyremote"
-      environment: "checkfailenvironmentdesktop"
-      privacy: "checkpassprivacybasic"
-      fees: "checkpassfeecontroloverride"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkfailprivacydisclosurecentralized"
-      privacynetwork: "checkpassprivacynetworksupporttorproxy"
-  ios:
-    text: "walletarcbit"
-    link: "https://itunes.apple.com/app/arcbit-bitcoin-wallet/id999487888"
-    source: "https://github.com/arcbit/arcbit-ios"
-    screenshot: "arcbitios.png"
-    os:
-    - ios
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkfailvalidationcentralized"
-      transparency: "checkpasstransparencyopensource"
-      environment: "checkpassenvironmentmobile"
-      privacy: "checkpassprivacybasic"
-      fees: "checkpassfeecontroloverride"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkfailprivacydisclosurecentralized"
-      privacynetwork: "checkfailprivacynetworknosupporttor"
-  android:
-    text: "walletarcbit"
-    link: "https://play.google.com/store/apps/details?id=com.arcbit.arcbit"
-    source: "https://github.com/arcbit/arcbit-android"
-    screenshot: "arcbitios.png"
-    os:
-    - android
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkfailvalidationcentralized"
-      transparency: "checkpasstransparencyopensource"
-      environment: "checkpassenvironmentmobile"
-      privacy: "checkpassprivacybasic"
-      fees: "checkpassfeecontroloverride"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkfailprivacydisclosurecentralized"
-      privacynetwork: "checkfailprivacynetworknosupporttor"
+      - name: ios
+        text: "walletarcbit"
+        link: "https://itunes.apple.com/app/arcbit-bitcoin-wallet/id999487888"
+        source: "https://github.com/arcbit/arcbit-ios"
+        screenshot: "arcbitios.png"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroloverride"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurecentralized"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      - name: android
+        text: "walletarcbit"
+        link: "https://play.google.com/store/apps/details?id=com.arcbit.arcbit"
+        source: "https://github.com/arcbit/arcbit-android"
+        screenshot: "arcbitios.png"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroloverride"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurecentralized"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 ---

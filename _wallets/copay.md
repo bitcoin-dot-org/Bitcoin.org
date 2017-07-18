@@ -5,44 +5,54 @@ titleshort: "Copay"
 compat: "mobile desktop web android ios windowsphone windows mac linux"
 level: 3
 platform:
-  mobile:
-    text: "walletcopay"
-    link: "https://copay.io"
-    source: "https://github.com/bitpay/copay"
-    screenshot: "copay.png"
+  - mobile:
+    name: mobile
+    default: &DEFAULT
+      text: "walletcopay"
+      link: "https://copay.io"
+      source: "https://github.com/bitpay/copay"
+      screenshot: "copay.png"
+      check:
+        control: "checkgoodcontrolfull"
+        validation: "checkfailvalidationcentralized"
+        transparency: "checkpasstransparencyopensource"
+        environment: "checkpassenvironmentmobile"
+        privacy: "checkpassprivacybasic"
+        fees: "checkpassfeecontroldynamic"
+      privacycheck:
+        privacyaddressreuse: "checkpassprivacyaddressrotation"
+        privacydisclosure: "checkfailprivacydisclosurecentralized"
+        privacynetwork: "checkfailprivacynetworknosupporttor"
     os:
-    - android
-    - ios
-    - windowsphone
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkfailvalidationcentralized"
-      transparency: "checkpasstransparencyopensource"
-      environment: "checkpassenvironmentmobile"
-      privacy: "checkpassprivacybasic"
-      fees: "checkpassfeecontroldynamic"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkfailprivacydisclosurecentralized"
-      privacynetwork: "checkfailprivacynetworknosupporttor"
-  desktop:
-    text: "walletcopay"
-    link: "https://copay.io/"
-    source: "https://github.com/bitpay/copay"
-    screenshot: "copay.png"
+      - name: android
+        <<: *DEFAULT
+      - name: ios
+        <<: *DEFAULT
+      - name: windowsphone
+        <<: *DEFAULT
+  - desktop:
+    name: desktop
+    default: &DEFAULT
+      text: "walletcopay"
+      link: "https://copay.io/"
+      source: "https://github.com/bitpay/copay"
+      screenshot: "copay.png"
+      check:
+        control: "checkgoodcontrolfull"
+        validation: "checkfailvalidationcentralized"
+        transparency: "checkpasstransparencyopensource"
+        environment: "checkfailenvironmentdesktop"
+        privacy: "checkpassprivacybasic"
+        fees: "checkpassfeecontroldynamic"
+      privacycheck:
+        privacyaddressreuse: "checkpassprivacyaddressrotation"
+        privacydisclosure: "checkfailprivacydisclosurecentralized"
+        privacynetwork: "checkfailprivacynetworknosupporttor"
     os:
-    - windows
-    - mac
-    - linux
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkfailvalidationcentralized"
-      transparency: "checkpasstransparencyopensource"
-      environment: "checkfailenvironmentdesktop"
-      privacy: "checkpassprivacybasic"
-      fees: "checkpassfeecontroldynamic"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkfailprivacydisclosurecentralized"
-      privacynetwork: "checkfailprivacynetworknosupporttor"
+      - name: windows
+        <<: *DEFAULT
+      - name: mac
+        <<: *DEFAULT
+      - name: linux
+        <<: *DEFAULT
 ---

@@ -5,61 +5,42 @@ titleshort: "Bitcoin<br>Wallet"
 compat: "mobile android blackberry"
 level: 2
 platform:
-  mobile:
-    text: "walletbitcoinwallet"
-    link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
-    source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
-    screenshot: "bitcoinwalletandroid.png"
+  - mobile:
+    name: mobile
     os:
-    - android
-    - blackberry
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkpassvalidationspvp2p"
-      transparency: "checkpasstransparencyopensource"
-      environment: "checkpassenvironmentmobile"
-      privacy: "checkpassprivacybasic"
-      fees: "checkgoodfeecontrolfull"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkfailprivacydisclosurespv"
-      privacynetwork: "checkfailprivacynetworknosupporttor"
-  android:
-    text: "walletbitcoinwallet"
-    link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
-    source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
-    screenshot: "bitcoinwalletandroid.png"
-    os:
-    - android
-    - blackberry
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkpassvalidationspvp2p"
-      transparency: "checkpasstransparencyopensource"
-      environment: "checkpassenvironmentmobile"
-      privacy: "checkpassprivacybasic"
-      fees: "checkgoodfeecontrolfull"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkfailprivacydisclosurespv"
-      privacynetwork: "checkfailprivacynetworknosupporttor"
-  blackberry:
-    text: "walletbitcoinwallet"
-    link: "https://appworld.blackberry.com/webstore/content/23952882/"
-    source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
-    screenshot: "bitcoinwalletandroid.png"
-    os:
-    - android
-    - blackberry
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkpassvalidationspvp2p"
-      transparency: "checkpasstransparencyopensource"
-      environment: "checkpassenvironmentmobile"
-      privacy: "checkpassprivacybasic"
-      fees: "checkgoodfeecontrolfull"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkfailprivacydisclosurespv"
-      privacynetwork: "checkfailprivacynetworknosupporttor"
+      - name: android
+        text: "walletbitcoinwallet"
+        link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
+        source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
+        screenshot: "bitcoinwalletandroid.png"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationspvp2p"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      - name: blackberry
+        text: "walletbitcoinwallet"
+        link: "https://appworld.blackberry.com/webstore/content/23952882/"
+        source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
+        screenshot: "bitcoinwalletandroid.png"
+        os:
+        - android
+        - blackberry
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationspvp2p"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 ---

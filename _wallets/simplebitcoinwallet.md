@@ -5,40 +5,23 @@ titleshort: "Simple<br>Bitcoin"
 compat: "mobile android"
 level: 2
 platform:
-  mobile:
-    text: "walletsimplebitcoinwallet"
-    link: "https://play.google.com/store/apps/details?id=com.btcontract.wallet"
-    source: "https://github.com/btcontract/wallet"
-    screenshot: "simplebitcoinwalletandroid.png"
+  - mobile:
+    name: mobile
     os:
-    - android
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkfailvalidationcentralized"
-      transparency: "checkpasstransparencyopensource"
-      environment: "checkpassenvironmentmobile"
-      privacy: "checkpassprivacybasic"
-      fees: "checkpassfeecontroldynamic"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkfailprivacydisclosurespv"
-      privacynetwork: "checkfailprivacynetworknosupporttor"
-  android:
-    text: "walletsimplebitcoinwallet"
-    link: "https://play.google.com/store/apps/details?id=com.btcontract.wallet"
-    source: "https://github.com/btcontract/wallet"
-    screenshot: "simplebitcoinwalletandroid.png"
-    os:
-    - android
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkpassvalidationspvp2p"
-      transparency: "checkpasstransparencyopensource"
-      environment: "checkpassenvironmentmobile"
-      privacy: "checkpassprivacybasic"
-      fees: "checkpassfeecontroldynamic"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkfailprivacydisclosurespv"
-      privacynetwork: "checkfailprivacynetworknosupporttor"
+      - name: android
+        text: "walletsimplebitcoinwallet"
+        link: "https://play.google.com/store/apps/details?id=com.btcontract.wallet"
+        source: "https://github.com/btcontract/wallet"
+        screenshot: "simplebitcoinwalletandroid.png"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationspvp2p"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 ---

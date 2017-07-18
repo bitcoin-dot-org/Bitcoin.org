@@ -5,19 +5,21 @@ titleshort: "Coinapult"
 compat: "web"
 level: 4
 platform:
-  web:
-    text: "walletcoinapult"
-    link: "https://coinapult.com/"
-    screenshot: "coinapult.png"
+  - web:
+    name: web
     os:
-    check:
-      control: "checkfailcontrolthirdparty"
-      validation: "checkfailvalidationcentralized"
-      transparency: "checkfailtransparencyremote"
-      environment: "checkfailenvironmentdesktop"
-      privacy: "checkpassprivacybasic"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkfailprivacydisclosureaccount"
-      privacynetwork: "checkpassprivacynetworksupporttorproxy"
+      - name: web
+        text: "walletcoinapult"
+        link: "https://coinapult.com/"
+        screenshot: "coinapult.png"
+        check:
+          control: "checkfailcontrolthirdparty"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkpassprivacybasic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 ---

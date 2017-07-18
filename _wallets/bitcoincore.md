@@ -5,24 +5,29 @@ titleshort: "Bitcoin<br>Core"
 compat: "desktop windows mac linux"
 level: 1
 platform:
-  desktop:
-    text: "walletbitcoinqt"
-    link: "bitcoincore"
-    source: "https://github.com/bitcoin/bitcoin"
-    screenshot: "bitcoincore.png"
+  - desktop:
+    name: desktop
+    default: &DEFAULT
+      text: "walletbitcoincore"
+      link: "bitcoincore"
+      source: "https://github.com/bitcoin/bitcoin"
+      screenshot: "bitcoincore.png"
+      check:
+        control: "checkgoodcontrolfull"
+        validation: "checkgoodvalidationfullnode"
+        transparency: "checkgoodtransparencydeterministic"
+        environment: "checkfailenvironmentdesktop"
+        privacy: "checkgoodprivacyimproved"
+        fees: "checkgoodfeecontrolfull"
+      privacycheck:
+        privacyaddressreuse: "checkpassprivacyaddressrotation"
+        privacydisclosure: "checkpassprivacydisclosurefullnode"
+        privacynetwork: "checkpassprivacynetworksupporttorproxy"
     os:
-    - windows
-    - mac
-    - linux
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkgoodvalidationfullnode"
-      transparency: "checkgoodtransparencydeterministic"
-      environment: "checkfailenvironmentdesktop"
-      privacy: "checkgoodprivacyimproved"
-      fees: "checkgoodfeecontrolfull"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkpassprivacydisclosurefullnode"
-      privacynetwork: "checkpassprivacynetworksupporttorproxy"
+      - name: windows
+        <<: *DEFAULT
+      - name: mac
+        <<: *DEFAULT
+      - name: linux
+        <<: *DEFAULT
 ---

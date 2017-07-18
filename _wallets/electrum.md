@@ -5,42 +5,48 @@ titleshort: "Electrum"
 compat: "desktop windows mac linux mobile android"
 level: 2
 platform:
-  desktop:
-    text: "walletelectrum"
-    link: "https://electrum.org"
-    source: "https://github.com/spesmilo/electrum"
-    screenshot: "electrum.png"
+  - desktop:
+    name: desktop
+    default: &DEFAULT
+      text: "walletelectrum"
+      link: "https://electrum.org"
+      source: "https://github.com/spesmilo/electrum"
+      screenshot: "electrum.png"
+      check:
+        control: "checkgoodcontrolfull"
+        validation: "checkpassvalidationspvservers"
+        transparency: "checkpasstransparencyopensource"
+        environment: "checkpassenvironmenttwofactor"
+        privacy: "checkpassprivacybasic"
+        fees: "checkgoodfeecontrolfull"
+      privacycheck:
+        privacyaddressreuse: "checkpassprivacyaddressrotation"
+        privacydisclosure: "checkfailprivacydisclosurecentralized"
+        privacynetwork: "checkpassprivacynetworksupporttorproxy"
     os:
-    - windows
-    - mac
-    - linux
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkpassvalidationspvservers"
-      transparency: "checkpasstransparencyopensource"
-      environment: "checkpassenvironmenttwofactor"
-      privacy: "checkpassprivacybasic"
-      fees: "checkgoodfeecontrolfull"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkfailprivacydisclosurecentralized"
-      privacynetwork: "checkpassprivacynetworksupporttorproxy"
-  android:
-    text: "walletelectrum"
-    link: "https://play.google.com/store/apps/details?id=org.electrum.electrum"
-    source: "https://github.com/spesmilo/electrum"
-    screenshot: "electrumandroid.png"
+      - name: windows
+        <<: *DEFAULT
+      - name: mac
+        <<: *DEFAULT
+      - name: linux
+        <<: *DEFAULT
+  - mobile:
+    name: mobile
     os:
-    - android
-    check:
-      control: "checkgoodcontrolfull"
-      validation: "checkpassvalidationspvservers"
-      transparency: "checkpasstransparencyopensource"
-      environment: "checkpassenvironmentmobile"
-      privacy: "checkpassprivacybasic"
-      fees: "checkgoodfeecontrolfull"
-    privacycheck:
-      privacyaddressreuse: "checkpassprivacyaddressrotation"
-      privacydisclosure: "checkfailprivacydisclosureaccount"
-      privacynetwork: "checkfailprivacynetworknosupporttor"
+      - name: android
+        text: "walletelectrum"
+        link: "https://play.google.com/store/apps/details?id=org.electrum.electrum"
+        source: "https://github.com/spesmilo/electrum"
+        screenshot: "electrumandroid.png"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationspvservers"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 ---
