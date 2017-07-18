@@ -8,8 +8,8 @@ http://opensource.org/licenses/MIT.
   {% assign platform = page.platform['name'] %}
   {% assign os = page.os['name'] %}
   {% if wallet.compat contains platform and wallet.compat contains os %}
-    <div>
-      <a href="/en/wallets/{{ platform }}/{{ os }}/{{ wallet.id }}/">
+    <div data-walletlevel="{{ wallet.level }}">
+      <a href="/{{ page.lang}}/wallets/{{ platform }}/{{ os }}/{{ wallet.id }}/">
         <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" />
         {{ wallet.titleshort }}
       </a>
@@ -17,3 +17,7 @@ http://opensource.org/licenses/MIT.
   {% endif %}
 {% endfor %}
 </div>
+
+<script type="text/javascript" charset="utf-8">
+  walletRotate();
+</script>

@@ -387,6 +387,7 @@ $scores:
 
                     .hover {
                         .wallet-os-check-details {
+                            z-index: 100;
                             display: block;
                             border: 2px solid;
                             border-radius: 4px;

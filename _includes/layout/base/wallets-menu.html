@@ -26,7 +26,12 @@ http://opensource.org/licenses/MIT.
       {% assign platformClass = platformClass | append: " active" %}
     {% endif %}
     <li class="{{ platformClass }}">
-      <a href="#">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
+      {% if platformName == 'hardware' or platformName == 'web' %}
+      {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" | append: platformName | append: "/" %}
+      {% else %}
+      {% assign platformHref = "#" %}
+      {% endif %}
+      <a href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% if platform.items.size > 1 %}
         <ul>
         {% for item in platform.items %}
@@ -35,7 +40,7 @@ http://opensource.org/licenses/MIT.
             {% assign osClass = osClass | append: " active" %}
           {% endif %}
           <li class="{{ osClass }}">
-            <a href="/en/wallets/{{ platformName }}/{{ item.os.name }}">
+            <a href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}">
               {% translate platform{{item.os.name}} choose-your-wallet %}
             </a>
           </li>
