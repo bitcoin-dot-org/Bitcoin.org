@@ -463,45 +463,9 @@ function walletShowPlatform(platform) {
         var p = t.parentNode.parentNode.parentNode;
         if (p.nodeName === 'LI') addClass(p, 'active');
       }
-    },
-    updateWallets = function() {
-      // Replace wallets by those for given platform and rotate them.
-      var p = document.getElementById('wallets');
-      var lasttimeout = p.getAttribute('data-timeout');
-      var timeout = (lasttimeout !== null && lasttimeout !== '' && supportCSS('transition')) ? 200 : 1;
-      addClass(p, 'disabled');
-      addClass(p, 'nohover');
-      clearTimeout(lasttimeout);
-      p.setAttribute('data-timeout', setTimeout(function() {
-        p.innerHTML = '';
-        var platforms = (platform === 'default') ? ['desktop', 'mobile'] : [platform];
-        for (var i = 0, nds = document.getElementById('walletsswitch').childNodes, n = nds.length; i < n; i++) {
-          if (nds[i].nodeType !== 1) continue;
-          var id = nds[i].id.split('-')[1];
-          // for wallets with multiple listings, only show one instance per view
-          if (document.getElementById('wallet-' + id)) continue;
-          var nd = null;
-          for (var ii = 0, nn = platforms.length; ii < nn; ii++) {
-            var wp = document.getElementById('wallet-' + id + '-' + platforms[ii]);
-            if (wp) var nd = wp;
-          }
-          if (nd === null) {
-            var wf = document.getElementById('wallet-' + id + '-' + fallback);
-            if (wf && wf.getAttribute('data-walletcompat').indexOf(platform) !== -1) var nd = wf;
-          }
-          if (nd === null) continue;
-          nd = nd.cloneNode(true);
-          nd.id = 'wallet-' + id;
-          p.appendChild(nd);
-        }
-        walletRotate();
-        removeClass(p, 'disabled');
-        document.getElementById('walletsmobile').innerHTML = '';
-      }, timeout));
     };
   if (!getMenuState()) return;
   updateMenu();
-  updateWallets();
 }
 
 function walletRotate() {
