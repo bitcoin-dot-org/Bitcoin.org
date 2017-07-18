@@ -1,4 +1,7 @@
 ---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
 id: bitcoinknots
 title: "Bitcoin Knots"
 titleshort: "Bitcoin<br>Knots"
