@@ -32,9 +32,6 @@ platform:
         link: "https://appworld.blackberry.com/webstore/content/23952882/"
         source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
         screenshot: "bitcoinwalletandroid.png"
-        os:
-        - android
-        - blackberry
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"

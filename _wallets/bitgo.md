@@ -40,7 +40,6 @@ platform:
         text: "walletbitgo"
         link: "https://www.bitgo.com/"
         screenshot: "bitgo.png"
-        os:
         check:
           control: "checkpasscontrolmulti"
           validation: "checkfailvalidationcentralized"
