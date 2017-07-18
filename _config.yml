@@ -577,8 +577,7 @@ collections:
     permalink: /en/release/:path
   ## _wallets
   wallets:
-    output: true
-    permalink: /en/wallets/:path/
+    output: false
   ## _platforms
   platforms:
     output: true
