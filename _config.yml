@@ -580,8 +580,7 @@ collections:
     output: false
   ## _platforms
   platforms:
-    output: true
-    permalink: /en/wallets/:path/
+    output: false
 
 defaults:
   - scope:
@@ -601,16 +600,6 @@ defaults:
         - bcc
         - bcc news
         - RELEASE
-  - scope:
-      path: ""
-      type: wallets
-    values:
-      layout: wallet-container
-  - scope:
-      path: ""
-      type: platforms
-    values:
-      layout: wallet-platform
   - scope:
       path: ""
       type: posts
