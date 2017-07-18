@@ -8,32 +8,37 @@ layout: wallet-platform-container
 <div class="wallet">
 
   <div class="wallet-logo-container">
-    <img class="wallet-logo" src="/img/wallet/{{ page.id }}.png" alt="{{ page.title }}" />
+    <img class="wallet-logo" src="/img/wallet/{{ page.wallet.id }}.png" alt="{{ page.wallet.title }}" />
     <h1>
-      {{ page.title }}
+      {{ page.wallet.title }}
     </h1>
   </div>
 
   <p class="wallet-description">
-  {% translate wallet{{page.id}} choose-your-wallet %}
+  {% translate wallet{{page.wallet.id}} choose-your-wallet %}
   </p>
 
   <div class="wallet-platforms">
     <div class="wallet-platforms-menu">
-      {% for platform in page.platform %}
+      {% for platform in page.wallet.platform %}
         {% for os in platform.os %}
-        <button class="wallet-os-btn" id="{{ os.name }}-btn" onclick="walletDistributionListener('{{ os.name }}', '{{ platform.name }}');">
+        {% assign btnClass = "wallet-os-btn" %}
+        {% if page.id contains os.name %}
+          {% assign btnClass = btnClass | append: " active" %}
+        {% endif %}
+        <a class="{{ btnClass }}"
+           href="/{{ page.lang }}/wallets/{{platform.name}}/{{os.name}}/{{page.wallet.id}}/">
           <img src="/img/os/{{ os.name }}.png"
                alt="{% translate platform{{os.name}} choose-your-wallet %}"
                title="{% translate platform{{os.name}} choose-your-wallet %}" />
           <span>{% translate platform{{os.name}} choose-your-wallet %}</span>
-        </button>
+        </a>
         {% endfor %}
       {% endfor %}
     </div>
+    {% assign platform = page.platform %}
+    {% assign os = page.os %}
     <div class="wallet-os-list">
-    {% for platform in page.platform %}
-      {% for os in platform.os %}
       <div class="wallet-os-container" id="{{ os.name }}">
         <div class="wallet-os-overview">
           <div class="wallet-os-name">
@@ -84,16 +89,7 @@ layout: wallet-platform-container
           <img src="/img/screenshots/{{ os.screenshot }}" alt="screenshot">
         </div>
       </div>
-      {% endfor %}
-    {% endfor %}
     </div>
   </div>
 
-  <!--
-  <div>
-
-    </div>
-  </div>
-
-  -->
 </div>

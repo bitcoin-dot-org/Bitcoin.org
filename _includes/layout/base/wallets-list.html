@@ -1,17 +1,19 @@
 {% comment %}
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
-{% if wallet.compat contains page.platform and wallet.compat contains page.os %}
-{% endif %}
 {% endcomment %}
 
 <div class="wallets" id="wallets" onclick="walletListener(event);" ontouchstart="walletListener(event);">
 {% for wallet in site.wallets %}
+  {% assign platform = page.platform['name'] %}
+  {% assign os = page.os['name'] %}
+  {% if wallet.compat contains platform and wallet.compat contains os %}
     <div>
-      <a href="/en/wallets/{{ wallet.id }}/#!platform={{ page.platform }}&os={{ page.os }}">
+      <a href="/en/wallets/{{ platform }}/{{ os }}/{{ wallet.id }}/">
         <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" />
         {{ wallet.titleshort }}
       </a>
     </div>
+  {% endif %}
 {% endfor %}
 </div>

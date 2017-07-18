@@ -7,22 +7,36 @@ http://opensource.org/licenses/MIT.
 {% assign platformsByPlatform = site.platforms | group_by: "platform" %}
   <ul>
   {% for platform in platformsByPlatform %}
-    {% assign platform_class = "wallet-" | append: platform.name %}
-    {% if page.id contains platform.name %}
-      {% assign platform_class = platform_class | append: " active" %}
+
+    {% comment %}
+      ! WORKAROUND START
+      Working around an issue with getting proper platform name from the list
+      of platforms. After original group_by, the "name" key becomes a stringified
+      hash. So we need to make these "hackish" transformations to make it working
+      properly.
+    {% endcomment %}
+    {% capture platformName %}{{ platform.name | split: "=>" | last | split: '"' }}{% endcapture %}
+    {% assign platformName = platformName | trim | replace: '}' '' | replace: ' ' '' %}
+    {% comment %}
+      ! WORKAROUND END
+    {% endcomment %}
+
+    {% assign platformClass = "wallet-" | append: platformName %}
+    {% if page.id contains platformName %}
+      {% assign platformClass = platformClass | append: " active" %}
     {% endif %}
-    <li class="{{ platform_class }}">
-      <a href="#">{% translate walletcat{{platform.name}} choose-your-wallet %}</a>
+    <li class="{{ platformClass }}">
+      <a href="#">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% if platform.items.size > 1 %}
         <ul>
         {% for item in platform.items %}
-          {% assign os_class = "wallet-" | append: item.os %}
-          {% if page.id == item.id %}
-            {% assign os_class = os_class | append: " active" %}
+          {% assign osClass = "wallet-" | append: item.os.name %}
+          {% if page.id contains item.id %}
+            {% assign osClass = osClass | append: " active" %}
           {% endif %}
-          <li class="{{ os_class }}">
-            <a href="/en/wallets/{{ platform.name }}/{{ item.os }}">
-              {% translate platform{{item.os}} choose-your-wallet %}
+          <li class="{{ osClass }}">
+            <a href="/en/wallets/{{ platformName }}/{{ item.os.name }}">
+              {% translate platform{{item.os.name}} choose-your-wallet %}
             </a>
           </li>
         {% endfor %}
