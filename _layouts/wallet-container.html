@@ -30,10 +30,9 @@ max_wallet_text_length: 418  ## Unicode characters
         <a class="{{ btnClass }}"
            href="/{{ page.lang }}/wallets/{{platform.name}}/{{os.name}}/{{page.wallet.id}}/">
           <img src="/img/os/{{ os.name }}.png"
-               alt="{% translate platform{{os.name}} choose-your-wallet %}"
+               alt="{% translate platform{{os.name}} choose-your-wallet %}{% translate walletcat{{os.name}} choose-your-wallet %}"
                title="{% translate platform{{os.name}} choose-your-wallet %}" />
-          <span>{% translate platform{{os.name}} choose-your-wallet %}</span>
-          <span>{% translate walletcat{{os.name}} choose-your-wallet %}</span>
+          <span>{% translate platform{{os.name}} choose-your-wallet %}{% translate walletcat{{os.name}} choose-your-wallet %}</span>
         </a>
         {% endfor %}
       {% endfor %}
@@ -45,10 +44,9 @@ max_wallet_text_length: 418  ## Unicode characters
         <div class="wallet-os-overview">
           <div class="wallet-os-name">
             <img src="/img/os/{{ os.name }}.png"
-                 alt="{% translate platform{{os.name}} choose-your-wallet %}"
+                 alt="{% translate platform{{os.name}} choose-your-wallet %}{% translate walletcat{{os.name}} choose-your-wallet %}"
                  title="{% translate platform{{os.name}} choose-your-wallet %}" />
-            <h3>{% translate platform{{os.name}} choose-your-wallet %}</h3>
-            <h3>{% translate walletcat{{os.name}} choose-your-wallet %}</h3>
+            <h3 id="wallets-platform-name">{% translate platform{{os.name}} choose-your-wallet %}{% translate walletcat{{os.name}} choose-your-wallet %}</h3>
           </div>
           <div class="wallet-os-download-buttons">
             {% if os.link == 'bitcoincore' %}

@@ -40,7 +40,7 @@ http://opensource.org/licenses/MIT.
             {% assign osClass = osClass | append: " active" %}
           {% endif %}
           <li class="{{ osClass }}">
-            <a href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}">
+            <a href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
               {% translate platform{{item.os.name}} choose-your-wallet %}
             </a>
           </li>

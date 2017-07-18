@@ -5,7 +5,7 @@
 id: copay
 title: "Copay"
 titleshort: "Copay"
-compat: "mobile desktop web android ios windowsphone windows mac linux"
+compat: "mobile desktop android ios windowsphone windows mac linux"
 level: 3
 platform:
   - mobile:
