@@ -154,4 +154,35 @@ $oses:
             background-image: url('/img/os/wallet_menu_#{$os}.svg');
         }
     }
+
+    @media handheld,
+    only screen and ( max-width: 60em ),
+    only screen and ( max-device-width: 60em ) {
+        > ul {
+            display: block;
+            > li {
+                display: block;
+                margin-bottom: 25px;
+                border: 1px solid $dark-blue;
+
+                &:first-child {
+                    margin-left: 10px;
+                }
+                &:last-child {
+                    margin-right: 10px;
+                }
+
+                &.active {
+                    ul {
+                        display: block;
+                    }
+                }
+
+                ul {
+                    min-width: 100%;
+                    position: initial;
+                }
+            }
+        }
+    }
 }

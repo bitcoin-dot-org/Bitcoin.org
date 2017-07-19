@@ -367,8 +367,6 @@ function walletMenuListener(e) {
         if (tt.nodeName === 'LI') addClass(tt, 'active');
         tt = tt.parentNode;
       }
-      walletShowPlatform(t.getAttribute('data-walletcompat'));
-      if (isMobile() && !hasSubItems(t)) scrollToNode(document.getElementById('wallets'));
     },
     hasSubItems = function(t) {
       while (t.nodeName !== 'LI') t = t.parentNode;

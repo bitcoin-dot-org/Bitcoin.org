@@ -28,10 +28,10 @@ http://opensource.org/licenses/MIT.
     <li class="{{ platformClass }}">
       {% if platformName == 'hardware' or platformName == 'web' %}
       {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" | append: platformName | append: "/" %}
+        <a href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% else %}
-      {% assign platformHref = "#" %}
+        <a>{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% endif %}
-      <a href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% if platform.items.size > 1 %}
         <ul>
         {% for item in platform.items %}
