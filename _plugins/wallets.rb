@@ -6,7 +6,7 @@ require 'yaml'
 module Jekyll
 
   class WalletPage < Page
-    def initialize(site, base, dir, wallet, platform, os, lang)
+    def initialize(site, base, dir, wallet, platform, os, title, lang)
       @site = site
       @base = base
       @dir = dir
@@ -19,11 +19,12 @@ module Jekyll
       self.data['os'] = os
       self.data['id'] = ['wallets', platform['name'], os['name'], wallet['id']].join('-')
       self.data['lang'] = lang
+      self.data['title'] = title
     end
   end
 
   class PlatformPage < Page
-    def initialize(site, base, dir, platform, os, lang)
+    def initialize(site, base, dir, platform, os, title, lang)
       @site = site
       @base = base
       @dir = dir
@@ -35,6 +36,7 @@ module Jekyll
       self.data['os'] = os
       self.data['id'] = ['wallets', platform['name'], os['name']].join('-')
       self.data['lang'] = lang
+      self.data['title'] = title
     end
   end
 
@@ -70,13 +72,23 @@ module Jekyll
 
       # Getting information about each found wallet
       locs.each do |lang,value|
+        title = locs[lang]['choose-your-wallet']['title']
+
         platformsCol.docs.each do |doc|
           file = doc.path
           data = YAML.load_file(file)
           platform = data['platform']
           os = data['os']
           dir = File.join(platform['name'], os['name'])
-          site.pages << PlatformPage.new(site, site.source, File.join(lang, walletsDir, dir), platform, os, lang)
+
+          platformTitle = locs[lang]['choose-your-wallet']['walletcat' + platform['name']]
+          osTitle = locs[lang]['choose-your-wallet']['platform' + os['name']]
+          if osTitle.nil?
+            fullTitle = [platformTitle, title].join(' - ')
+          else
+            fullTitle = [platformTitle, osTitle, title].join(' - ')
+          end
+          site.pages << PlatformPage.new(site, site.source, File.join(lang, walletsDir, dir), platform, os, fullTitle, lang)
         end
 
         walletsCol.docs.each do |doc|
@@ -92,7 +104,18 @@ module Jekyll
               # This allows generation only of valid wallet pages
               if platform['name']
                 dir = File.join(platform['name'], os['name'], wallet['id'])
-                site.pages << WalletPage.new(site, site.source, File.join(lang, walletsDir, dir), wallet, platform, os, lang)
+
+                platformTitle = locs[lang]['choose-your-wallet']['walletcat' + platform['name']]
+                osTitle = locs[lang]['choose-your-wallet']['platform' + os['name']]
+                walletTitle = wallet['title']
+
+                if osTitle.nil?
+                  fullTitle = [walletTitle, platformTitle, title].join(' - ')
+                else
+                  fullTitle = [walletTitle, platformTitle, osTitle, title].join(' - ')
+                end
+
+                site.pages << WalletPage.new(site, site.source, File.join(lang, walletsDir, dir), wallet, platform, os, fullTitle, lang)
               end
 
             end
