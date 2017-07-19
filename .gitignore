@@ -15,4 +15,4 @@ _cache
 
 # To prevent accidental push of translations from
 # Transifex.
-translations/
+.tx/translations/
