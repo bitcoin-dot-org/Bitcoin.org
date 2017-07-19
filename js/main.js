@@ -359,7 +359,7 @@ function walletMenuListener(e) {
   var walletSelectPlatform = function(e) {
       var t = getEvent(e, 'target'),
         p = t;
-      if (t.nodeName !== 'A') return;
+      if (t.nodeName !== 'A' || t.getAttribute('href')) return;
       while (p.parentNode.nodeName === 'UL' || p.parentNode.nodeName === 'LI') p = p.parentNode;
       for (var i = 0, nds = p.getElementsByTagName('LI'), n = nds.length; i < n; i++) removeClass(nds[i], 'active');
       var tt = t;
