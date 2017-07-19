@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[bitcoinorg.bitcoinorg]
+file_filter = translations/bitcoinorg.bitcoinorg/<lang>.yml
+source_lang = en
+type = YML
+
