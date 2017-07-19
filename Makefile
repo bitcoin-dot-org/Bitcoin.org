@@ -184,18 +184,10 @@ check-for-headers-containing-auto-link:
 	$S grep '<\(h[2-6]\).*\?>[^>]\+class="auto-link".*</\1>' _site/en/developer-* | eval $(ERROR_ON_OUTPUT)
 
 check-for-empty-title-tag:
-## The autocrossref plugin can mess up subheadings (h2, etc), so ensure
-## none of the generated subheadings contain the string
-## 'class="auto-link"' produced by autocrossref
+## This checks whether all generated pages have a title tag with
+## content
 	$S find ./_site -name '*.html' -type f \
 	   | xargs grep '<title></title>' \
-	   | eval $(ERROR_ON_OUTPUT)
-
-check-for-missing-subhead-links:
-## Make sure each subhead (h2-h6) either has the subhead links
-## (edit,issue,etc) or something like <!-- no subhead-links here -->
-	$S egrep -n -A1 '<h[2-6]' _site/en/developer-* \
-	   | egrep -v 'developer-documentation|<h[2-6]|^--|subhead-links' \
 	   | eval $(ERROR_ON_OUTPUT)
 
 check-for-missing-subhead-links:
