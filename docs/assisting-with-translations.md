@@ -49,10 +49,22 @@ you don't want translators to redo all their work again, you can use the
 Transifex client to pull translations, update en.yml and push back all
 translations at once:
 
+
+    # Init Transifex project
     tx init
-    tx set --auto-remote https://www.transifex.com/projects/p/bitcoinorg/
+    
+    # Setup Transifex local client to use a project created on Transifex
+    tx set --auto-remote https://www.transifex.com/bitcoinorg/bitcoinorg/
+    
+    # Download all translations
     tx pull -a -s --skip
-    tx set --source -r bitcoinorg.bitcoinorg -l en
-translations/bitcoinorg.bitcoinorg/en.yml
-    (update en.yml)
+    
+    # Set the translations/bitcoinorg.bitcoinorg/en.yml file
+    # as a source that will be pushed back to the server after
+    # updating the translation
+    tx set --source -r bitcoinorg.bitcoinorg -l en translations/bitcoinorg.bitcoinorg/en.yml
+    
+    # (update en.yml)
+    
+    # Push changes back to Transifex
     tx push -s -t -f --skip --no-interactive
