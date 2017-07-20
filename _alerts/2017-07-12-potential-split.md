@@ -12,7 +12,7 @@ bannerclass: "warning"
 ---
 {% assign start='<span class="date">2017/08/01 00:00 UTC</span>' %}
 
-*Last updated: <span class="date">2017/07/13 11:21 UTC</span>.  This
+*Last updated: <span class="date">2017/07/13 18:47 UTC</span>.  This
 page will be updated when new information becomes available.  See the
 [list of updates][].*
 
@@ -102,6 +102,107 @@ monitor this page accordingly and wait until multiple news sources that you
 trust have stated that the event is resolved before returning to normal Bitcoin
 use.
 
+### Using a specific chain
+
+In the event that there are multiple chains, you will need to tell your wallet
+software which chain you wish to use. Below are instructions for some wallet
+software for selecting the chain that you wish to use. If you wish to transact
+on multiple chains, you will need to maintain separate wallets and wallet software
+instances.
+
+Below are instructions for various wallets on how to use a specific chain with
+that wallet.
+
+#### Bitcoin Core
+
+Bitcoin Core and any software based upon it has the capability to reject otherwise-valid
+blocks and reconsider previously rejected blocks. You can use the `invalidateblock` RPC
+command to reject the blocks of the chains you do not wish to follow. This will
+make your wallet software follow the chain that you want it to follow. However this
+could result in your node becoming separated from the nodes that are following the
+chain that you wish to follow. In that case, you will need to add `addnode` options
+to your `bitcoin.conf` file so that your node will connect to other nodes following
+the same chain.
+
+This post will be updated with the necessary commands, block hashes, and `bitcoin.conf`
+options in the event of a chain split.
+
+### Splitting your coins
+
+In the event that thre are multiple chains, you may wish to be able to transact on
+multiple chains. However there is the risk that a transaction you make on one chain
+also confirms on another chain thereby resulting in you having spent coins on a
+chain which you did not want to spend coins on. The process of separating your coins
+is also known as tainting.
+
+The easiest method by which to taint your coins is to make use of the locktime
+feature of Bitcoin transactions. In the event that there are multiple block chains,
+these chains will likely be at different block heights. By creating a transaction
+which has a lock time of the block height of the longest chain, you will be making
+a transaction which is invalid on the other block chains. Once that transaction confirms,
+you can create a transaction that spends the same coins and has a locktime of the
+block height of the second longest chain. Since this spends coins already spent on
+the longest chain, the transaction will be invalid there; with a locktime of
+the block height of the second longest chain, the transaction will be invalid on
+any of the shorter chains. Repeat this method on all chains. Once all of the transactions
+have confirmed on their respective chains, you can now safely spend from them and
+not risk having your transactions replayed onto other chains.
+
+Note: this method only works if you pay a sufficient transaction fee for your
+transaction to be confirmed in the next block and if the next longest chain
+is several blocks behind the chain that you are currently tainting for.
+
+The exact steps are as follows:
+
+1. Make a transaction that has a locktime of the block height of the longest block chain.
+2. Wait for the transaction to confirm.
+3. Once the transaction has confirmed, make another transaction which spends the same
+inputs as the previous transaction and has a locktime of the next longest block chain.
+4. Repeat for each chain that you wish to transact on.
+
+Below are instructions with how to taint your coins with a that wallet. These will
+require that you have multiple instances of that wallet and have already set it
+to use the chain that you wish to transact on by following the earlier instructions.
+
+#### Bitcoin Core
+
+Bitcoin Core already automatically sets a locktime on all of your sending transactions.
+Thus you will be able to easily split your coins with Bitcoin Core as the locktime
+will already be set. However Bitcoin Core does randomly choose to set a locktime up
+to 100 blocks prior to the current block height of the chain it is following, so
+you can only take advantage of this automatic feature if the next longest block chain
+is at least 100 blocks behind the longest blockchain.
+
+To use the automatic locktime set by Bitcoin Core, simply use the instance of Bitcoin
+Core which is following the longest blockchain and create a transaction which sends all
+of your coins to an address in the same wallet. Be sure to include a sufficient
+transaction fee. Once the transaction has confirmed, go to the wallet with the next
+longest blockchain and do the same thing; send all of the Bitcoin in your wallet
+to an address that is also in your wallet. Repeat this for all chains that you
+wish to split your coins on. Once all of the transactions have confirmed on their
+respective chains, your coins are split and can be spent safely from your wallet
+as normal.
+
+If the next longest blockchain is less than 100 blocks behind the longest blockchain,
+then you will need to use the RPC commands to create a transaction and send it.
+The following are the commands that you will need to use:
+
+    getblockcount
+    getbalance
+    createrawtransaction '[]' '{"<address>":<amount>}' <block height>
+    fundrawtransaction <create raw hex> '{"subtractFeeFromOutputs:[0]"}'
+    signrawtransaction <fund raw hex>
+    sendrawtransaction <sign raw hex>
+
+where `<address>` is an address from your wallet that you will be sending to.
+`<amount>` is the amount of Bitcoin you are sending to `<address>`, and this
+should be your entire wallet balance which is given by the `getbalance` command.
+`<block height>` is the current block height which is given by the `getblockcount`
+command. `<create raw hex>` is the output of the previous `createrawtransaction`.
+`<fund raw hex>` is the string from the `hex` field of the output of `fundrawtransaction`.
+`<sign raw hex>` is the string from the `hex` field of the output of `signrawtransaction`.
+The transaction fee for this transaction will be deducted from `<amount>`.
+
 ## Document history
 
 **Note:** The information contained herein is not to be construed as an official
@@ -112,6 +213,7 @@ A [full history][] of this document is available.  The following points
 summarize major changes, with the most recent changes being listed
 first.
 
+- <span class="date">2017/07/13 18:47 UTC</span>: Information for chain and coin splitting with Core.
 - <span class="date">2017/07/13 11:21 UTC</span>: add general info about split.
 - <span class="date">2017/07/12 12:00 UTC</span>: initial version.
 
