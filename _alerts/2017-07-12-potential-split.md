@@ -5,16 +5,29 @@
 title: "Potential network disruption"
 shorturl: "potential-split"
 active: true
-banner: "Warning: potential network disruption starting July 31st"
+banner: "Warning: wait for extra confirmations starting July 22"
 
-## 7/12 to 7/28: "warning" (orange); 7/29 until resolution: "alert" (red)
 bannerclass: "warning"
 ---
 {% assign start='<span class="date">2017/08/01 00:00 UTC</span>' %}
 
-*Last updated: <span class="date">2017/07/13 11:21 UTC</span>.  This
+*Last updated: <span class="date">2017/07/21 12:00 UTC</span>.  This
 page will be updated when new information becomes available.  See the
 [list of updates][].*
+
+Starting at approximately <span class="date">2017/07/23 00:00
+UTC</span>, Bitcoin [confirmation scores][confirmation scoring] may
+become less reliable than normal for a period of up to a month.
+
+Users are advised to wait for more confirmations than they usually would
+before accepting any payment as final.  Bitcoin.org's usual
+[recommendation][confirmation scoring] during network disruption is to
+wait for 30 confirmations.
+
+We also recommend monitoring this page and other Bitcoin news sites for
+additional information and updates.
+
+*Outdated information from earlier versions of this post follows.*
 
 ## Chain split
 
@@ -112,6 +125,8 @@ A [full history][] of this document is available.  The following points
 summarize major changes, with the most recent changes being listed
 first.
 
+- <span class="date">2017/07/22 12:00 UTC</span>: describe possible
+  unreliability of confirmation scores starting July 22 or 23.
 - <span class="date">2017/07/13 11:21 UTC</span>: add general info about split.
 - <span class="date">2017/07/12 12:00 UTC</span>: initial version.
 
