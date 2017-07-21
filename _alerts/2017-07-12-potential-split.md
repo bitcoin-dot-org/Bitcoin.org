@@ -5,7 +5,7 @@
 title: "Potential network disruption"
 shorturl: "potential-split"
 active: true
-banner: "Warning: wait for extra confirmations starting July 22"
+banner: "Warning: wait for extra confirmations starting July 22nd"
 
 bannerclass: "warning"
 ---
