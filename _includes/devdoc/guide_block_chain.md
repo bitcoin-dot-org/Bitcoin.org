@@ -327,7 +327,7 @@ preset time or block height. Such forks activated via a flag day are known as
 they are dependent on having sufficient users (nodes) to enforce the new rules
 after the flag day.
 
-Later soft forks waited for a majority of of hash rate (typically 75% or 95%) 
+Later soft forks waited for a majority of hash rate (typically 75% or 95%) 
 to signal their readiness for enforcing the new consensus rules. Once the signalling
 threshold has been passed, all nodes will begin enforcing the new rules. Such
 forks are known as [Miner Activated Soft Forks][/en/glossary/masf]{:#term-masf}{:.term} (MASF)

@@ -27,6 +27,9 @@ lang: en
             <pubDate>{{ site.time | date: "%a, %d %b %Y" }} 00:00:00 GMT</pubDate>
             {% warn "This release doesn't have optional_date set" %}
           {% endif %}
+          {% if p.excerpt %}
+            <description><![CDATA[{{ p.excerpt }}]]></description>
+          {% endif %}
         </item>
 	{% endfor %}
 </channel>

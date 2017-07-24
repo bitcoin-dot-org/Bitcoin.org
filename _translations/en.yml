@@ -196,9 +196,8 @@
     walletbither: "Bither is a simple and secure wallet on many platforms. With special designed Cold/Hot modes, user can easily get both safety and simplicity. Bither's XRANDOM uses different entropy sources to generate true random number for users. Also with HDM, users can have HD's advantages and Multisig's security."
     walletcoinapult: "Coinapult's wallet is designed with Bitcoin newcomers in mind. It allows sending bitcoins via email and SMS, and a handy tool called Locks helps protecting your balance from Bitcoin price swings. Users can Lock bitcoins to Gold, Euros, and more!"
     walletgreenbits: "GreenBits is a fast and easy to use wallet. Enjoy improved security with a minimal/zero trust approach, optional hardware wallets support, multisignature based 2FA and spending limits functionality."
-    walletcoinomi: "Coinomi is a lightweight, secure, open-source, universal, HD Wallet. Apart from Bitcoin it also supports many altcoins so you can keep all your funds in a single wallet. Your private keys never leave your device and you only need to back it up just once!"
     walletbtccom: "Safe and easy to use, BTC.com Bitcoin Wallet keeps you, the user, in total control of your bitcoins. Features include HD and multi-signature technology, multi-platform, local language and currency support, QR codes and more."
-    walletsimplebitcoinwallet: "Simple and reliable Bitcoin wallet. Secure, standalone and easy to use."
+    walletsimplebitcoinwallet: "Simple, secure and reliable Bitcoin wallet."
     walletarcbit: "ArcBit is designed to be simple and easy to use, while giving users full control over their money. It offers an optional cold wallet storage feature with the ability to authorize payments offline for enhanced security."
     walletdownload: "Install"
     walletvisit: "Visit website"
@@ -221,9 +220,9 @@
     checkfailcontrolthirdparty: "Money controlled by a third party"
     checkfailcontrolthirdpartytxt: "This service has full control over your bitcoins. This means you need to trust this service will not lose your funds in an incident on their side. As of today, most web wallets don't insure their deposits like a bank, and many such services have suffered from security breaches in the past."
     checkgoodvalidationfullnode: "Full validation"
-    checkgoodvalidationfullnodetxt: "This wallet is a full node that validates and relays transactions on the Bitcoin network. This means no trust in a third party is required when verifying payments. Full nodes provide the highest level of security and are essential to protecting the network. However, they require more space (over 100GB), bandwidth, and a longer initial synchronization time."
+    checkgoodvalidationfullnodetxt: "This wallet is a full node that validates and relays transactions on the Bitcoin network. This means no trust in a third party is required when verifying payments. Full nodes provide the highest level of security and are essential to protecting the network. However, they require more space (over {{site.text.bitcoin_datadir_gb}}GB), bandwidth, and a longer initial synchronization time."
     checkgoodvalidationfullnoderequired: "Full validation"
-    checkgoodvalidationfullnoderequiredtxt: "This wallet requires you to install full node software that validates and relays transactions on the Bitcoin network. This means no trust in a third party is required when verifying payments. Full nodes provide the highest level of security and are essential to protecting the network. However, they require more space (over 100GB), bandwidth, and a longer initial synchronization time."
+    checkgoodvalidationfullnoderequiredtxt: "This wallet requires you to install full node software that validates and relays transactions on the Bitcoin network. This means no trust in a third party is required when verifying payments. Full nodes provide the highest level of security and are essential to protecting the network. However, they require more space (over {{site.text.bitcoin_datadir_gb}}GB), bandwidth, and a longer initial synchronization time."
     checkneutralvalidationvariable: "Variable validation"
     checkneutralvalidationvariabletxt: "Payment validation features are provided by the software wallet you use with this device. Please see the Validation score for the software wallet you plan to use."
     checkpassvalidationspvp2p: "Simplified validation"
@@ -324,7 +323,7 @@
     source: "Source code"
     versionhistory: "Show version history"
     notelicense: "Bitcoin Core is a community-driven <a href=\"https://www.fsf.org/about/what-is-free-software\">free software</a> project, released under the <a href=\"http://opensource.org/licenses/mit-license.php\">MIT license</a>."
-    notesync: "Bitcoin Core initial synchronization will take time and download a lot of data. You should make sure that you have enough bandwidth and storage for the full block chain size (over 100GB). If you have a good Internet connection, you can help strengthen the network by keeping your PC running with Bitcoin Core and port 8333 open."
+    notesync: "Bitcoin Core initial synchronization will take time and download a lot of data. You should make sure that you have enough bandwidth and storage for the full block chain size (over {{site.text.bitcoin_datadir_gb}}GB). If you have a good Internet connection, you can help strengthen the network by keeping your PC running with Bitcoin Core and port 8333 open."
     full_node_guide: "Read the <a href=\"/en/full-node\">full node guide</a> for details."
     patient: "Check your bandwidth and space"
     releasekeys: "Bitcoin Core Release Signing Keys"
@@ -360,7 +359,7 @@
     howitworkstxt1: "From a user perspective, Bitcoin is nothing more than a mobile app or computer program that provides a personal Bitcoin wallet and allows a user to send and receive bitcoins with them. This is how Bitcoin works for most users."
     howitworkstxt2: "Behind the scenes, the Bitcoin network is sharing a public ledger called the \"block chain\". This ledger contains every transaction ever processed, allowing a user's computer to verify the validity of each transaction. The authenticity of each transaction is protected by digital signatures corresponding to the sending addresses, allowing all users to have full control over sending bitcoins from their own Bitcoin addresses. In addition, anyone can process transactions using the computing power of specialized hardware and earn a reward in bitcoins for this service. This is often called \"mining\". To learn more about Bitcoin, you can consult the <a href=\"#how-it-works#\">dedicated page</a> and the <a href=\"#bitcoin-paper#\">original paper</a>."
     used: "Is Bitcoin really used by people?"
-    usedtxt1: "Yes. There is a <a href=\"http://usebitcoins.info/\">growing number of businesses</a> and individuals using Bitcoin. This includes brick and mortar businesses like restaurants, apartments, law firms, and popular online services such as Namecheap, WordPress, and Reddit. While Bitcoin remains a relatively new phenomenon, it is growing fast. At the end of August 2013, the <a href=\"https://bitcoincharts.com/bitcoin/\">value of all bitcoins in circulation</a> exceeded US$ 1.5 billion with millions of dollars worth of bitcoins exchanged daily."
+    usedtxt1: "Yes. There are a <a href=\"/en/spend-bitcoin\">growing number of businesses</a> and individuals using Bitcoin. This includes brick-and-mortar businesses like restaurants, apartments, and law firms, as well as popular online services such as Namecheap, Overstock.com, and Reddit. While Bitcoin remains a relatively new phenomenon, it is growing fast. At the end of April 2017, the <a href=\"https://bitcoincharts.com/bitcoin/\">total value of all existing bitcoins</a> exceeded 20 billion US dollars, with millions of dollars worth of bitcoins exchanged daily."
     acquire: "How does one acquire bitcoins?"
     acquireli1: "As payment for goods or services."
     acquireli2: "Purchase bitcoins at a <a href=\"https://www.buybitcoinworldwide.com\">Bitcoin exchange</a>."
@@ -553,7 +552,7 @@
     getbut: "Find an exchange"
     spend: "Spend bitcoins"
     spendtxt: "There is a growing number of services and merchants accepting Bitcoin all over the world. You can use Bitcoin to pay them and rate your experience to help honest businesses gain more visibility."
-    spendbut: "Find merchants"
+    spendbut: "Find merchants and products"
     merchants: "How to accept Bitcoin"
     merchantinform: "Inform yourself"
     merchantinformtxt: "Bitcoin does not require merchants to change their habits. However, Bitcoin is different than what you know and use every day. Before you start using Bitcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls."
@@ -761,6 +760,16 @@
     offlinemultitxt: "Bitcoin includes a multi-signature feature that allows a transaction to require multiple independent approvals to be spent. This can be used by an organization to give its members access to its treasury while only allowing a withdrawal if 3 of 5 members sign the transaction. Some web wallets also provide multi-signature wallets, allowing the user to keep control over their money while preventing a thief from stealing funds by compromising a single device or server."
     offlinetestament: "Think about your testament"
     offlinetestamenttxt: "Your bitcoins can be lost forever if you don't have a backup plan for your peers and family. If the location of your wallets or your passwords are not known by anyone when you are gone, there is no hope that your funds will ever be recovered. Taking a bit of time on these matters can make a huge difference."
+  spend-bitcoin:
+    title: "Spending Bitcoin - Bitcoin"
+    pagetitle: "Spending Bitcoin"
+    summary: "There are thousands of businesses, across the globe, that accept Bitcoin."
+    products-online: "Find products for sale online"
+    products-online-text: "One common use for Bitcoin is making purchases online. There are hundreds of online shops and retailers that accept Bitcoin. Using a search engine like <a href=\"https://spendabit.co/\">Spendabit</a> you can search through millions of products, all available for purchase with bitcoins."
+    directory: "Navigate a business directory"
+    directory-text: "You can also find many businesses listed in <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">online directories</a>."
+    business-map: "Find local businesses"
+    business-map-text: "There are also many local businesses, like cafes and restaurants, that accept Bitcoin. You can use <a href=\"https://coinmap.org/\">Coinmap.org</a> to browse thousands of businesses across the globe."
   support-bitcoin:
     title: "Support Bitcoin - Bitcoin"
     pagetitle: "Support Bitcoin"
@@ -778,7 +787,7 @@
     nonprofit: "Organizations"
     nonprofittxt: "Many <a href=\"#community##[community.non-profit]\">non-profit organizations</a> are dedicated to protecting and promoting Bitcoin. You can help these groups by joining them and taking part in their projects, discussions and events."
     spread: "Spread"
-    spreadtxt: "Speak about Bitcoin to interested people. Write about it on your blog. Tell your favorite shops you would like to pay with Bitcoin. Help keeping <a href=\"http://usebitcoins.info/\">merchant directories</a> up to date. Or be creative and make yourself a nice Bitcoin T-shirt."
+    spreadtxt: "Speak about Bitcoin to interested people. Write about it on your blog. Tell your favorite shops you would like to pay with Bitcoin. Help to keep <a href=\"/en/spend-bitcoin\">merchant directories</a> up to date. Or be creative and make yourself a nice Bitcoin T-shirt."
     wiki: "Documentation"
     wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> and the <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> provide useful documentation and we are constantly improving the information they contain. You can help to improve these resources and keep them up to date."
     translate: "Translate"
@@ -903,6 +912,7 @@
     vocabulary: vocabulary
     you-need-to-know: you-need-to-know
     bitcoin-paper: bitcoin-paper
+    spend-bitcoin: spend-bitcoin
   anchor:
     community:
       non-profit: non-profit

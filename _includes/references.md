@@ -347,7 +347,7 @@ http://opensource.org/licenses/MIT.
 [#bitcoin-wiki]: https://webchat.freenode.net/?channels=bitcoin-wiki&uio=d4
 [0bin]: http://0bin.net/
 [bcc automated testing]: https://github.com/bitcoin/bitcoin/blob/master/README.md#automated-testing
-[bcc configuration]: https://en.bitcoin.it/wiki/Running_bitcoin
+[bcc configuration]: https://en.bitcoin.it/wiki/Running_Bitcoin
 [bcc data directory]: https://en.bitcoin.it/wiki/Data_directory
 [bcc issues]: https://github.com/bitcoin/bitcoin/issues
 [bcc new issue]: https://github.com/bitcoin/bitcoin/issues/new

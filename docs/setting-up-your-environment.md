@@ -98,8 +98,9 @@ To preview the website in your local browser, make sure you're in the
 
     make preview
 
-This will compile the site (takes 5 to 10 minutes; see the speed up
-instructions and then print the a message like this:
+This will compile the site (takes 5 to 10 minutes; see [the speed-up
+instructions](#fast-partial-previews-or-builds)) and then print a
+message like this:
 
     Server address: http://0.0.0.0:4000
     Server running... press ctrl-c to stop.
@@ -152,7 +153,7 @@ Plugins include:
 | alerts       | 5       | --             | Network alert pages
 | autocrossref | 90      | --             | Developer documentation
 | contributors | 5       | GitHub.com     | Contributor listings
-| events       | 5       | Meetup.com; Google Maps | Events page
+| events       | 5       | Google Maps    | Events page
 | glossary     | 30      | --             | Developer glossary
 | redirects    | 20      | --             | Redirects from old URLs
 | releases     | 10      | --             | Bitcoin Core release notes; Download
