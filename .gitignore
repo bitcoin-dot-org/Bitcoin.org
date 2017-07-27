@@ -12,3 +12,7 @@ vendor
 _cache
 .jekyll-metadata
 .sass-cache/
+
+# To prevent accidental push of translations from
+# Transifex.
+.tx/translations/
