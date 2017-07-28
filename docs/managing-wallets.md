@@ -87,7 +87,7 @@ to request an exemption or policy change. Feel free to email Will Binns
 ([will@bitcoin.org](mailto:will@bitcoin.org)) or Dave Harding ([dave@dtrt.org](mailto:dave@dtrt.org))
 if you have any questions.
 
-Wallets can be added in `_templates/choose-your-wallet.html`. Entries are
+Wallets can be added in `_wallets/[wallet_name].md`. Entries are
 ordered by levels and new wallets must be added after the last wallet on the
 same level.
 
@@ -109,7 +109,7 @@ wallets' descriptions.
 ### Score
 
 Each wallet is assigned a score for five criteria. For each of them, the
-appropriate text in `_translations/en.yml` needs to be chosen.
+appropriate text in `_translations/en.yml` needs to be chosen (_see `choose-your-wallet` section_).
 
 **Control** - What control the user has over his bitcoins?
 
