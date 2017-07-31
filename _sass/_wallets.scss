@@ -1,0 +1,284 @@
+$green: #329239;
+$grey: #8b8b8b;
+$red: #ee9209;
+$blue: #2c6faf;
+$dark-blue: #255f96;
+$light-blue: #63a4e1;
+$lightest-blue: #f0f8ff;
+
+@mixin button {
+    background-color: transparent;
+    font-weight: bold;
+    border: 1px solid $dark-blue;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+@mixin active-button {
+    background-color: $blue;
+    background-image: -o-linear-gradient(bottom, $dark-blue 14%, $blue 70%);
+    background-image: -moz-linear-gradient(bottom, $dark-blue 14%, $blue 70%);
+    background-image: -webkit-linear-gradient(bottom, $dark-blue 14%, $blue 70%);
+    background-image: -ms-linear-gradient(bottom, $dark-blue 14%, $blue 70%);
+    background-image: linear-gradient(bottom, $dark-blue 14%, $blue 70%);
+    color: #fff;
+
+    &:hover {
+        background-color: $light-blue;
+        background-image: none;
+    }
+}
+
+.wallet-list {
+    margin: auto;
+    padding: 60px 0 20px 0;
+    text-align: center;
+
+    .wallet-list-item {
+        display: inline-block;
+
+        .wallet-list-item-link {
+            color: $blue;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            width: 75px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 14px 20px;
+            white-space: nowrap;
+            outline: 0;
+
+            &:hover {
+                color: $light-blue;
+
+                img {
+                    opacity: 0.9;
+                }
+            }
+
+            img {
+                display: block;
+                width: 72px;
+                height: 72px;
+                margin: auto;
+                margin-bottom: 5px;
+                transition: opacity .12s ease-in;
+            }
+        }
+    }
+
+    &:nth-child(1n + 15) {
+        display: none;
+    }
+}
+
+// ----------------------------- new
+
+$checks:
+    control,
+    validation,
+    transparency,
+    environment,
+    fees,
+    privacy;
+
+$scores:
+    good $green bold,
+    pass $green normal,
+    neutral $grey normal,
+    fail $red normal;
+
+.wallet {
+
+    .wallet-logo-container {
+        text-align: center;
+
+        .wallet-logo {
+            width: 72px;
+            height: 72px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .wallet-platforms {
+
+        .wallet-platforms-menu {
+            text-align: center;
+            margin-bottom: 20px;
+
+            .wallet-os-btn {
+                @include button;
+
+                &.active {
+                    @include active-button;
+                }
+
+                span {
+                    vertical-align: text-top;
+                }
+            }
+        }
+
+        .wallet-os-container {
+            background-color: $lightest-blue;
+            padding: 20px;
+            border: 2px solid $blue;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+
+            &.hidden {
+                display: none;
+            }
+
+            .wallet-os-screenshot {
+                img {
+                    border: 1px solid $grey;
+                }
+            }
+
+            .wallet-os-overview {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+
+                .wallet-os-name {
+                    h3 {
+                        margin: 0;
+                        margin-right: 5px;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+
+                    margin-bottom: 20px;
+                }
+
+                .wallet-os-download-buttons {
+                    margin-bottom: 20px;
+
+                    .wallet-os-source-link,
+                    .wallet-os-download-link {
+                        @include button;
+                    }
+
+                    .wallet-os-download-link {
+                        @include active-button;
+                    }
+                }
+
+                .wallet-os-checks {
+                    padding-right: 40px;
+
+                    .wallet-os-check-title {
+                        display: inline-block;
+                        margin: 0;
+                    }
+
+                    .wallet-os-check-help-icon {
+                        display: inline-block;
+                        background-image: url(/img/icons/wallet_help.png);
+                        background-image: none, url(/img/icons/wallet_help.svg), url(/img/icons/wallet_help.png);
+                        width: 16px;
+                        height: 16px;
+                        vertical-align: text-bottom;
+                        cursor: pointer;
+                    }
+
+                    .wallet-os-check-details {
+                        max-height: 0px;
+                        overflow: hidden;
+                        background-color: #FFFFFF;
+                        transition: all .24s ease-in;
+                        font-size: 85%;
+                        p {
+                            margin: 0;
+                            text-align: left;
+                        }
+                    }
+
+                    .hover {
+                        .wallet-os-check-details {
+                            z-index: 100;
+                            max-height: 500px;
+                            border: 2px solid;
+                            border-radius: 4px;
+                            margin: 10px 0;
+                            padding: 10px;
+
+                            // This is for privacy checks
+                            > div {
+                                padding: 0;
+
+                                // This is the privacy check item title
+                                &:first-child {
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Generate backgrounds for checks and scores
+    @each $score, $color, $font-weight in $scores {
+        .check#{$score} {
+            background-repeat: no-repeat;
+            background-position-y: 5px;
+            padding-left: 25px;
+            margin-bottom: 10px;
+
+            .wallet-os-check-title {
+                color: $color;
+                font-weight: $font-weight;
+            }
+
+            .wallet-os-check-details {
+                color: $color;
+                border-color: $color;
+            }
+
+            > div > span {
+                @if $score == good {
+                    background-image: url('/img/icons/checkbubble_pass.svg');
+                } @else {
+                    background-image: url('/img/icons/checkbubble_#{$score}.svg');
+                }
+            }
+
+            @each $check in $checks {
+                &.check#{$check} {
+                    @if $score == good {
+                        background-image: url('/img/icons/check_#{$check}_pass.svg');
+                    } @else {
+                        background-image: url('/img/icons/check_#{$check}_#{$score}.svg');
+                    }
+                }
+            }
+        }
+    }
+}
+
+.walletsswitch {
+    display: none;
+}
+
+.walletsmobile {
+    display: none;
+}
+
+.walletsdisclaimer h2 {
+    text-align: center;
+}
+

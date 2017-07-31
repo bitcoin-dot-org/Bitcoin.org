@@ -1,7 +1,7 @@
 ## This file is licensed under the MIT License (MIT) available on
 ## http://opensource.org/licenses/MIT.
 
-S=@  ## Silent: only print errors by default; 
+S=@  ## Silent: only print errors by default;
      ## run `make S='' [other args]` to print commands as they're run
 
 SITEDIR=_site
@@ -67,6 +67,7 @@ post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-fo
     check-for-missing-anchors check-for-broken-markdown-reference-links \
     check-for-broken-kramdown-tables check-for-duplicate-header-ids \
     check-for-headers-containing-auto-link check-for-missing-subhead-links \
+	check-for-empty-title-tag \
     check-for-subheading-anchors \
     check-jshint \
     check-for-javascript-in-svgs
@@ -126,7 +127,7 @@ ensure-each-svg-has-a-png:
 	    ; do test -f $${file%.svg}.png || echo "$$file missing corresponding PNG" \
 	; done | eval $(ERROR_ON_OUTPUT)
 
-	
+
 ## Some Jekyll errors leave error messages in the text
 check-for-liquid-errors:
 	$S grep -r 'Liquid syntax error:' $(SITEDIR)/ | eval $(ERROR_ON_OUTPUT)
@@ -181,6 +182,13 @@ check-for-headers-containing-auto-link:
 ## none of the generated subheadings contain the string
 ## 'class="auto-link"' produced by autocrossref
 	$S grep '<\(h[2-6]\).*\?>[^>]\+class="auto-link".*</\1>' _site/en/developer-* | eval $(ERROR_ON_OUTPUT)
+
+check-for-empty-title-tag:
+## This checks whether all generated pages have a title tag with
+## content
+	$S find ./_site -name '*.html' -type f \
+	   | xargs grep '<title></title>' \
+	   | eval $(ERROR_ON_OUTPUT)
 
 check-for-missing-subhead-links:
 ## Make sure each subhead (h2-h6) either has the subhead links
@@ -296,4 +304,4 @@ check-for-too-many-wallets-on-one-platform:
 
 check-validate-yaml:
 ## Validate YAML files against schemas
-	$S bundle exec _contrib/schema-validator.rb quality-assurance/schemas/wallets.yaml _templates/choose-your-wallet.html
+	$S find _wallets -type f -exec bundle exec _contrib/schema-validator.rb quality-assurance/schemas/wallets.yaml {} \;
