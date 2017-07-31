@@ -255,6 +255,7 @@ http://opensource.org/licenses/MIT.
 [Bitcoin Core 0.13.2]: /en/release/v0.13.2
 [Bitcoin Core 0.14.0]: /en/release/v0.14.0
 [Bitcoin Core 0.14.1]: /en/release/v0.14.1
+[Bitcoin Core 0.14.2]: /en/release/v0.14.2
 [bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
 [bitcoind initial setup]: /en/developer-examples
 [bitcoinpdf]: https://bitcoin.org/en/bitcoin-paper
