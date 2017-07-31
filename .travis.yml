@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - "2.0.0"
+  - "2.4.1"
 sudo: false
 cache: bundler
 env:
