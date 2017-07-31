@@ -9,8 +9,13 @@ http://opensource.org/licenses/MIT.
   {% assign os = page.os['name'] %}
   {% if wallet.compat contains platform and wallet.compat contains os %}
     <div class="wallet-list-item" data-walletlevel="{{ wallet.level }}">
+      {% if platform == os %}
+      <a class="wallet-list-item-link"
+         href="/{{ page.lang}}/wallets/{{ platform }}/{{ wallet.id }}/">
+      {% else %}
       <a class="wallet-list-item-link"
          href="/{{ page.lang}}/wallets/{{ platform }}/{{ os }}/{{ wallet.id }}/">
+      {% endif %}
         <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" />
         {{ wallet.titleshort }}
       </a>

@@ -79,7 +79,11 @@ module Jekyll
           data = YAML.load_file(file)
           platform = data['platform']
           os = data['os']
-          dir = File.join(platform['name'], os['name'])
+          if platform['name'] == os['name']
+            dir = File.join(platform['name'])
+          else
+            dir = File.join(platform['name'], os['name'])
+          end
 
           platformTitle = locs[lang]['choose-your-wallet']['walletcat' + platform['name']]
           osTitle = locs[lang]['choose-your-wallet']['platform' + os['name']]
@@ -103,7 +107,11 @@ module Jekyll
 
               # This allows generation only of valid wallet pages
               if platform['name']
-                dir = File.join(platform['name'], os['name'], wallet['id'])
+                if platform['name'] == os['name']
+                  dir = File.join(platform['name'], wallet['id'])
+                else
+                  dir = File.join(platform['name'], os['name'], wallet['id'])
+                end
 
                 platformTitle = locs[lang]['choose-your-wallet']['walletcat' + platform['name']]
                 osTitle = locs[lang]['choose-your-wallet']['platform' + os['name']]

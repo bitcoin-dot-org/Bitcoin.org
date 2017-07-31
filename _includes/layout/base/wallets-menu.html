@@ -27,7 +27,7 @@ http://opensource.org/licenses/MIT.
     {% endif %}
     <li class="{{ platformClass }}">
       {% if platformName == 'hardware' or platformName == 'web' %}
-      {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" | append: platformName | append: "/" %}
+      {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" %}
         <a href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% else %}
         <a>{% translate walletcat{{platformName}} choose-your-wallet %}</a>
