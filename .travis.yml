@@ -8,4 +8,6 @@ env:
   global:
     - BITCOINORG_BUILD_TYPE=deployment
 
+before_install: gem install bundler --pre
+
 script: make travis
