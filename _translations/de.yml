@@ -105,7 +105,7 @@ de:
     walletcatdesktop: "Desktop"
     walletcathardware: "Hardware"
     walletcatweb: "Web"
-    walletbitcoinqt: "Bitcoin Core ist ein kompletter Bitcoin-Client und bildet das Rückgrat des Netzwerks. Er bietet ein Höchstmaß an Sicherheit, Privatsphäre und Stabilität. Er hat allerdings weniger Funktionen und benötigt viel Festplatten- und Arbeitsspeicher."
+    walletbitcoincore: "Bitcoin Core ist ein kompletter Bitcoin-Client und bildet das Rückgrat des Netzwerks. Er bietet ein Höchstmaß an Sicherheit, Privatsphäre und Stabilität. Er hat allerdings weniger Funktionen und benötigt viel Festplatten- und Arbeitsspeicher."
     walletmultibit: "MultiBit ist ein leichtgewichtiger Client mit Schwerpunkt auf Geschwindigkeit und einfacher Nutzbarkeit. Er synchronisiert sich mit dem Netzwerk und ist in wenigen Minuten einsatzbereit. MultiBit unterstützt verschiedene Sprachen. Er ist eine gute Wahl für nicht-technische Nutzer."
     walletarmory: "Armory ist ein erweiterter Bitcoin-Client, der Funktionalitäten für Bitcoin-Power-User ergänzt. Er bietet viele Backup- und Verschlüsselungsfunktionen und ermöglicht sicheres Speichern auf Offline-Rechnern."
     walletelectrum: "Electrum ist auf Geschwindigkeit und Einfachheit fokussiert und benötigt wenig Ressourcen. Es verwendet entfernte Server um die kompliziertesten Teile des Bitcoin-Systems zu übernehmen und ermöglicht es, mit einer geheimen Phrase wieder Zugriff auf eine Wallet zu bekommen."

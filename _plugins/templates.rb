@@ -2,7 +2,7 @@
 # http://opensource.org/licenses/MIT.
 
 #templates.rb generates all translated pages using templates in
-#_templates. The final file name of each page is defined in 
+#_templates. The final file name of each page is defined in
 #the url section of each translations in _translations.
 
 require 'yaml'

@@ -105,7 +105,7 @@ hu:
     walletcatdesktop: "Asztali gép"
     walletcathardware: "Hardver"
     walletcatweb: "Web"
-    walletbitcoinqt: "A Bitcoin Core egy teljes Bitcoin-kliens, és a hálózat gerincét képzi. Magas szintű biztonságot, titkosságot és stabilitást kínál. Azonban kevesebb szolgáltatást nyújt, illetve sok helyet és memóriát használ."
+    walletbitcoincore: "A Bitcoin Core egy teljes Bitcoin-kliens, és a hálózat gerincét képzi. Magas szintű biztonságot, titkosságot és stabilitást kínál. Azonban kevesebb szolgáltatást nyújt, illetve sok helyet és memóriát használ."
     walletmultibit: "A MultiBit egy pehelykönnyű kliens, amely a gyors működésre és az egyszerű használatra koncentrál. Szinkronizálódik a hálózattal, és percek alatt használatra kész. A MultiBit ugyanakkor számos nyelvet támogat. Jó választás számítástechnikai háttérrel nem rendelkező felhasználók számára."
     walletarmory: "Az Armory egy haladó ismereteket igénylő Bitcoin-kliens, amely szolgáltatásaival a Bitcoin kiemelt felhasználóit célozza. Számos biztonsági mentési, valamint titkosítási szolgáltatást kínál, és lehetőséget teremt a hidegtárolások interneteléréssel nem rendelkező számítógépen való biztonságos elhelyezésére."
     walletelectrum: "Az Electrum fókuszában a sebesség és az egyszerűség áll, alacsony erőforrás-használattal párosulva. Távoli szervereket használ a Bitcoin rendszere legbonyolultabb részeinek kezeléshez, és lehetővé teszi pénztárcája visszaállítását egy titkos szó(kapcsolat) segítségével."

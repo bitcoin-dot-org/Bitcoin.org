@@ -24,8 +24,9 @@ file.close()
 results = JSON::Validator.fully_validate(schema, document)
 
 if results.empty?
-	exit(0)
+  exit(0)
 else
-	puts results
-	exit(1)
+  puts ARGV[1]
+  puts results
+  exit(1)
 end

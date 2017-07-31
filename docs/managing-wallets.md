@@ -87,14 +87,11 @@ to request an exemption or policy change. Feel free to email Will Binns
 ([will@bitcoin.org](mailto:will@bitcoin.org)) or Dave Harding ([dave@dtrt.org](mailto:dave@dtrt.org))
 if you have any questions.
 
-Wallets can be added in `_templates/choose-your-wallet.html`. Entries are
-ordered by levels and new wallets must be added after the last wallet on the
-same level.
+Wallets can be added by creating a Markdown file with a wallet name
+in a `_wallets` folder, like this: `_wallets/[wallet_name].md`.
 
-* Level 1 - Full nodes
-* Level 2 - SPV, Random servers
-* Level 3 - Hybrid, Multisig wallets
-* Level 4 - Web wallets
+For examples refer to the existing wallet files or check
+`quality-assurance/schemas/wallets.yaml` schema.
 
 **Screenshot**: The png files must go in `/img/screenshots`, be 250 X 350 px and
 optimized with `optipng -o7 file.png`.
@@ -106,10 +103,18 @@ or 85 X 85 px for square icons.
 **Description**: The text must go in `_translations/en.yml` alongside other
 wallets' descriptions.
 
+**Level**: Each wallet must have a level property assigned. A value must be in a range
+between 1 and 4. Level represents a category of a wallet:
+
+* Level 1 - Full nodes
+* Level 2 - SPV, Random servers
+* Level 3 - Hybrid, Multisig wallets
+* Level 4 - Web wallets
+
 ### Score
 
 Each wallet is assigned a score for five criteria. For each of them, the
-appropriate text in `_translations/en.yml` needs to be chosen.
+appropriate text in `_translations/en.yml` needs to be chosen (_see `choose-your-wallet` section_).
 
 **Control** - What control the user has over his bitcoins?
 

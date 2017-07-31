@@ -2,317 +2,222 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 id: https://bitcoin.org/quality-assurance/schemas/wallets.yaml
-description: The main container
+description: The wallet object
 type: object
 required:
-  - layout
   - id
-  - wallets
-additionalProperties: false
-properties:
-  layout:
-    description: The Jekyll page layout to use
-    type: string
-    enum:
-      - base
+  - title
+  - titleshort
+  - compat
+  - level
+  - platform
+# additionalProperties can not be true, as then the wallet fails due to license
 
+properties:
   id:
     description: The page identifier to use for translations
     type: string
 
-  max_wallet_text_length:
-    description: >
-      The global maximum length for a wallet text description in any
-      langugage (counted in Unicode characters).  Ensures text doesn't
-      overfill its box.
+  title:
+    description: The full wallet name; displayed when you view the full listing
+    type: string
+    minLength: 1
+    maxLength: 100
+
+  titleshort:
+    description: A short name displayed on the overview page
+    type: string
+    minLength: 1
+    maxLength: 20
+
+  ## TODO: change this into an array so we can practically test values
+  compat:
+    description: A complete list of platforms supported by the wallet
+    type: string
+    minLength: 1
+
+  ## TODO: we should probably use names here and translate to
+  ##       numbers (if required) in the template
+  level:
+    description: |
+      The wallet's overall security level.
+        1 - full nodes
+        2 - SPV using random servers (e.g. P2P SPV, Electrum servers, etc...)
+        3 - Hybrid & multisig wallets
+        4 - Web wallets
+
     type: integer
+    minimum: 1
+    maximum: 4
 
-  ## The wallets array
-  wallets:
-    description: The array containing all wallets
+  ## The platforms the wallet supports
+  platform:
+    description: the platforms the wallet supports
     type: array
-    uniqueItems: true
+    additionalProperties: false
     items:
-      description: The wallets.  Each value is an arbitrary ID
       type: object
-      additionalProperties:  ## matches anything since this is an arbitrary ID string
-        required:
-          - title
-          - titleshort
-          - compat
-          - level
-          - platform
-        additionalProperties: false
-        properties:
-          title:
-            description: The full wallet name; displayed when you view the full listing
-            type: string
-            minLength: 1
-            maxLength: 100
+      additionalProperties:
+        - default
 
-          titleshort:
-            description: A short name displayed on the overview page
-            type: string
-            minLength: 1
-            maxLength: 20
+      required:
+        - os
+        - name
 
-          ## TODO: change this into an array so we can practically test values
-          compat:
-            description: A complete list of platforms supported by the wallet
-            type: string
-            minLength: 1
-
-          ## TODO: we should probably use names here and translate to
-          ##       numbers (if required) in the template
-          level:
-            description: |
-              The wallet's overall security level.
-                1 - full nodes
-                2 - SPV using random servers (e.g. P2P SPV, Electrum servers, etc...)
-                3 - Hybrid & multisig wallets
-                4 - Web wallets
-
-            type: integer
-            minimum: 1
-            maximum: 4
-
-          ## The platforms the wallet supports
-          platform:
-            description: the platforms the wallet supports
+      properties:
+        name:
+          type: string
+          enum:
+            - desktop
+            - mobile
+            - hardware
+            - web
+        os:
+          description: The specific operating systems the wallet supports
+          type: array
+          uniqueItems: true
+          items:
+            description: List of operating systems with wallet details
             type: object
-            additionalProperties: false
-            ## Wallets that want to use different names, screenshots,
-            ## download URLs, or scoring for different versions (e.g. an
-            ## Android version and an iOS version) must declare both a
-            ## default platform for the main platform (desktop, mobile,
-            ## hardware, web) and then a sub-platform in the platform field
-            ## for any entries that diverge from the default (android, ios,
-            ## blackberry, etc...).  We use a long hand-maintained list of
-            ## dependencies here to ensure that any wallet using a
-            ## sub-platform also declares main platform.
-            #
-            ## TODO: refactor YAML to get rid of this weirdness
-            dependencies:
-              android:
-                - mobile
-              ios:
-                - mobile
-              blackberry:
-                - mobile
-              windowsphone:
-                - mobile
-              windows:
-                - desktop
-              linux:
-                - desktop
-              mac:
-                - desktop
+            required: &required
+              - name
+              - text
+              - link
+              - screenshot
+              - check
+              ## TODO: Not currently required, but we should aim for making it required #
+              # - source
+            additionalProperties:
+              - privacycheck
             properties:
-              desktop:
-                description: Wallets that run on desktop operating systems
-                type: object
-                required: &desktop-required
-                  - text
-                  - link
-                  # - source  ## TODO: Not currently required, but we should aim for making it required
-                  - screenshot
-                  - os
-                  - check
-                  - privacycheck
-                additionalProperties: false
-                properties:
-                  text: &text
-                    description: >
-                      The identifier for the wallet's translation string.
-                      Also used for the wallet's icon within the /img/wallet/
-                      directory.
-                    type: string
-                  link: &link
-                    description: The download URL
-                    type: string
-                    format: uri
-                  source: &source
-                    description: The source code download URL
-                    type: string
-                    format: uri
-                  screenshot: &screenshot
-                    description: File name for screenshot within the /img/screenshots/ directory
-                    type: string
-                  os:
-                    description: The specific operating systems the wallet supports
-                    type: array
-                    uniqueItems: true
-                    items:
-                      type: string
-                      enum:
-                        - windows
-                        - mac
-                        - linux
-                  check: &check
-                    description: The wallet's features (or lack thereof)
-                    type: object
-                    required:
-                      - control
-                      - validation
-                      - transparency
-                      - environment
-                      - privacy
-                      # - fees  ## TODO: make required when web wallets moved
-                    additionalProperties: false
-                    properties:
-                      control:
-                        description: How much control the user has over their money (e.g. private keys)
-                        type: string
-                        enum:
-                          - checkgoodcontrolfull
-                          - checkpasscontrolhybrid
-                          - checkpasscontrolmulti
-                          - checkfailcontrolthirdpartyinsured
-                          - checkfailcontrolthirdparty
-                      validation:
-                        description: How much assurance the user has that their bitcoins are real
-                        type: string
-                        enum:
-                          - checkgoodvalidationfullnode
-                          - checkgoodvalidationfullnoderequired
-                          - checkneutralvalidationvariable
-                          - checkpassvalidationspvp2p
-                          - checkpassvalidationspvservers
-                          - checkpassvalidationservers
-                          - checkfailvalidationcentralized
-                      transparency:
-                        description: How much insight the user has into the code they run
-                        type: string
-                        enum:
-                          - checkgoodtransparencydeterministic
-                          - checkpasstransparencyopensource
-                          - checkpasstransparencyopensourcehardware
-                          - checkpasstransparencyopenspechardware
-                          - checkfailtransparencyclosedsource
-                          - checkfailtransparencyremote
-                          - checkfailtransparencynew
-                      environment:
-                        description: How secure is the environment the wallet runs in
-                        type: string
-                        enum:
-                          - checkgoodenvironmenthardware
-                          - checkpassenvironmentmobile
-                          - checkpassenvironmenttwofactor
-                          - checkfailenvironmentdesktop
-                      privacy:
-                        description: How much privacy the wallet gives the user
-                        type: string
-                        enum:
-                          - checkgoodprivacyimproved
-                          - checkpassprivacybasic
-                          - checkneutralprivacyvariable
-                          - checkfailprivacyweak
-                      fees:
-                        description: How does the wallet decide what fee to pay
-                        type: string
-                        enum:
-                          - checkgoodfeecontrolfull
-                          - checkpassfeecontroldynamic
-                          - checkpassfeecontroloverride
-                          - checkneutralfeecontrolvariable
-                          - checkfailfeecontrolstatic
-                  privacycheck: &privacycheck
-                    description: Details about the wallet's privacy settings
-                    type: object
-                    required:
-                      - privacyaddressreuse
-                      - privacydisclosure
-                      - privacynetwork
-                    additionalProperties: false
-                    properties:
-                      privacyaddressreuse:
-                        description: Does the wallet default to address reuse?
-                        type: string
-                        enum:
-                          - checkpassprivacyaddressrotation
-                          - checkfailprivacyaddressrotation
-                      privacydisclosure:
-                        description: To whom, if anyone, does the wallet reveal the addresses it uses?
-                        type: string
-                        enum:
-                          - checkpassprivacydisclosurefullnode
-                          - checkfailprivacydisclosurespv
-                          - checkfailprivacydisclosurecentralized
-                          - checkfailprivacydisclosureaccount
-                      privacynetwork:
-                        description: What network-level privacy options does the wallet support
-                        type: string
-                        enum:
-                          - checkpassprivacynetworksupporttorproxy
-                          - checkfailprivacynetworknosupporttor
-
-
-              mobile: &mobile
-                description: Wallets that run on mobile devices with limited operating systems
-                type: object
-                required: *desktop-required
-                properties:
-                  text: *text
-                  link: *link
-                  source: *source
-                  screenshot: *screenshot
-                  os:
-                    description: The specific operating systems the wallet supports
-                    type: array
-                    uniqueItems: true
-                    items:
-                      type: string
-                      enum:
-                        - android
-                        - blackberry
-                        - ios
-                        - windowsphone
-                  check: *check
-                  privacycheck: *privacycheck
-              ## Aliases for the mobile platform to allow setting
-              ## specific download URLs and screenshots for apps on
-              ## different mobile platforms
-              android: *mobile
-              ios: *mobile
-              blackberry: *mobile
-              windowsphone: *mobile
-
-              web:
-                description: Wallets that run in a web browser
+              name:
+                type: string
+                enum:
+                  # mobile os
+                  - android
+                  - windowsphone
+                  - blackberry
+                  - ios
+                  # desktop os
+                  - windows
+                  - mac
+                  - linux
+                  # pseudo web os
+                  - web
+                  # pseudo hardware os
+                  - hardware
+              text: &text
+                description: >
+                  The identifier for the wallet's translation string.
+                  Also used for the wallet's icon within the /img/wallet/
+                  directory.
+                type: string
+              link: &link
+                description: The download URL
+                type: string
+                format: uri
+              source: &source
+                description: The source code download URL
+                type: string
+                format: uri
+              screenshot: &screenshot
+                description: File name for screenshot within the /img/screenshots/ directory
+                type: string
+              check: &check
+                description: The wallet's features (or lack thereof)
                 type: object
                 required:
-                  - text
-                  - link
-                  # - source ## Not required :-(
-                  - screenshot
-                  - os
-                  - check
-                  - privacycheck
+                  - control
+                  - validation
+                  - transparency
+                  - environment
+                  - privacy
+                  ## TODO: make required when web wallets moved
+                  # - fees
                 additionalProperties: false
                 properties:
-                  text: *text
-                  link: *link
-                  source: *source
-                  screenshot: *screenshot
-                  os:
-                    type: null
-                  check: *check
-                  privacycheck: *privacycheck
-
-              hardware:
-                description: Transaction-signing hardware that works in conjunction with software that interacts with the network
+                  control:
+                    description: How much control the user has over their money (e.g. private keys)
+                    type: string
+                    enum:
+                      - checkgoodcontrolfull
+                      - checkpasscontrolhybrid
+                      - checkpasscontrolmulti
+                      - checkfailcontrolthirdpartyinsured
+                      - checkfailcontrolthirdparty
+                  validation:
+                    description: How much assurance the user has that their bitcoins are real
+                    type: string
+                    enum:
+                      - checkgoodvalidationfullnode
+                      - checkgoodvalidationfullnoderequired
+                      - checkneutralvalidationvariable
+                      - checkpassvalidationspvp2p
+                      - checkpassvalidationspvservers
+                      - checkpassvalidationservers
+                      - checkfailvalidationcentralized
+                  transparency:
+                    description: How much insight the user has into the code they run
+                    type: string
+                    enum:
+                      - checkgoodtransparencydeterministic
+                      - checkpasstransparencyopensource
+                      - checkpasstransparencyopensourcehardware
+                      - checkpasstransparencyopenspechardware
+                      - checkfailtransparencyclosedsource
+                      - checkfailtransparencyremote
+                      - checkfailtransparencynew
+                  environment:
+                    description: How secure is the environment the wallet runs in
+                    type: string
+                    enum:
+                      - checkgoodenvironmenthardware
+                      - checkpassenvironmentmobile
+                      - checkpassenvironmenttwofactor
+                      - checkfailenvironmentdesktop
+                  privacy:
+                    description: How much privacy the wallet gives the user
+                    type: string
+                    enum:
+                      - checkgoodprivacyimproved
+                      - checkpassprivacybasic
+                      - checkneutralprivacyvariable
+                      - checkfailprivacyweak
+                  fees:
+                    description: How does the wallet decide what fee to pay
+                    type: string
+                    enum:
+                      - checkgoodfeecontrolfull
+                      - checkpassfeecontroldynamic
+                      - checkpassfeecontroloverride
+                      - checkneutralfeecontrolvariable
+                      - checkfailfeecontrolstatic
+              privacycheck: &privacycheck
+                description: Details about the wallet's privacy settings
                 type: object
                 required:
-                  - text
-                  - link
-                  - source
-                  - screenshot
-                  - check
+                  - privacyaddressreuse
+                  - privacydisclosure
+                  - privacynetwork
                 additionalProperties: false
                 properties:
-                  text: *text
-                  link: *link
-                  source: *source
-                  screenshot: *screenshot
-                  check: *check
-
+                  privacyaddressreuse:
+                    description: Does the wallet default to address reuse?
+                    type: string
+                    enum:
+                      - checkpassprivacyaddressrotation
+                      - checkfailprivacyaddressrotation
+                  privacydisclosure:
+                    description: To whom, if anyone, does the wallet reveal the addresses it uses?
+                    type: string
+                    enum:
+                      - checkpassprivacydisclosurefullnode
+                      - checkfailprivacydisclosurespv
+                      - checkfailprivacydisclosurecentralized
+                      - checkfailprivacydisclosureaccount
+                  privacynetwork:
+                    description: What network-level privacy options does the wallet support
+                    type: string
+                    enum:
+                      - checkpassprivacynetworksupporttorproxy
+                      - checkfailprivacynetworknosupporttor

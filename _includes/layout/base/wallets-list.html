@@ -1,0 +1,24 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+<div class="wallet-list" id="wallets" onclick="walletListener(event);" ontouchstart="walletListener(event);">
+{% for wallet in site.wallets %}
+  {% assign platform = page.platform['name'] %}
+  {% assign os = page.os['name'] %}
+  {% if wallet.compat contains platform and wallet.compat contains os %}
+    <div class="wallet-list-item" data-walletlevel="{{ wallet.level }}">
+      <a class="wallet-list-item-link"
+         href="/{{ page.lang}}/wallets/{{ platform }}/{{ os }}/{{ wallet.id }}/">
+        <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" />
+        {{ wallet.titleshort }}
+      </a>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  walletRotate();
+</script>
