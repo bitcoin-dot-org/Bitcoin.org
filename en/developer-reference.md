@@ -54,7 +54,7 @@ end_of_page: |
 
 {% include devdoc/bitcoin-core/rpcs/intro.md %}
 
-{% include devdoc/bitcoin-core/rpcs/quick-ref.md %}
+{% include devdoc/bitcoin-core/rpcs/quick-reference.md %}
 
 #### RPCs
 <!-- no subhead-links here -->
