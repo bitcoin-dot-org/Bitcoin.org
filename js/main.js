@@ -359,7 +359,7 @@ function walletMenuListener(e) {
   var walletSelectPlatform = function(e) {
       var t = getEvent(e, 'target'),
         p = t;
-      if (t.nodeName !== 'A') return;
+      if (t.nodeName !== 'A' || t.getAttribute('href')) return;
       while (p.parentNode.nodeName === 'UL' || p.parentNode.nodeName === 'LI') p = p.parentNode;
       for (var i = 0, nds = p.getElementsByTagName('LI'), n = nds.length; i < n; i++) removeClass(nds[i], 'active');
       var tt = t;
@@ -367,8 +367,6 @@ function walletMenuListener(e) {
         if (tt.nodeName === 'LI') addClass(tt, 'active');
         tt = tt.parentNode;
       }
-      walletShowPlatform(t.getAttribute('data-walletcompat'));
-      if (isMobile() && !hasSubItems(t)) scrollToNode(document.getElementById('wallets'));
     },
     hasSubItems = function(t) {
       while (t.nodeName !== 'LI') t = t.parentNode;
@@ -423,6 +421,16 @@ function walletScoreListener(e) {
   onTouchClick(e, init);
 }
 
+function walletScoreListener(e) {
+  // Listen for events on wallet scores and display them on tap.
+  var init = function(e) {
+    var t = getEvent(e, 'target');
+    while (!t.parentNode.parentNode.parentNode.id) t = t.parentNode;
+    (t.className.indexOf('hover') === -1) ? addClass(t, 'hover'): removeClass(t, 'hover');
+  };
+  onTouchClick(e, init);
+}
+
 function walletShowPlatform(platform) {
   // Show wallets for given platform in the menu.
   var t = null,
@@ -453,45 +461,9 @@ function walletShowPlatform(platform) {
         var p = t.parentNode.parentNode.parentNode;
         if (p.nodeName === 'LI') addClass(p, 'active');
       }
-    },
-    updateWallets = function() {
-      // Replace wallets by those for given platform and rotate them.
-      var p = document.getElementById('wallets');
-      var lasttimeout = p.getAttribute('data-timeout');
-      var timeout = (lasttimeout !== null && lasttimeout !== '' && supportCSS('transition')) ? 200 : 1;
-      addClass(p, 'disabled');
-      addClass(p, 'nohover');
-      clearTimeout(lasttimeout);
-      p.setAttribute('data-timeout', setTimeout(function() {
-        p.innerHTML = '';
-        var platforms = (platform === 'default') ? ['desktop', 'mobile'] : [platform];
-        for (var i = 0, nds = document.getElementById('walletsswitch').childNodes, n = nds.length; i < n; i++) {
-          if (nds[i].nodeType !== 1) continue;
-          var id = nds[i].id.split('-')[1];
-          // for wallets with multiple listings, only show one instance per view
-          if (document.getElementById('wallet-' + id)) continue;
-          var nd = null;
-          for (var ii = 0, nn = platforms.length; ii < nn; ii++) {
-            var wp = document.getElementById('wallet-' + id + '-' + platforms[ii]);
-            if (wp) var nd = wp;
-          }
-          if (nd === null) {
-            var wf = document.getElementById('wallet-' + id + '-' + fallback);
-            if (wf && wf.getAttribute('data-walletcompat').indexOf(platform) !== -1) var nd = wf;
-          }
-          if (nd === null) continue;
-          nd = nd.cloneNode(true);
-          nd.id = 'wallet-' + id;
-          p.appendChild(nd);
-        }
-        walletRotate();
-        removeClass(p, 'disabled');
-        document.getElementById('walletsmobile').innerHTML = '';
-      }, timeout));
     };
   if (!getMenuState()) return;
   updateMenu();
-  updateWallets();
 }
 
 function walletRotate() {

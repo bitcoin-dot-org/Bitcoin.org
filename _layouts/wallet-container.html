@@ -1,0 +1,101 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: wallet-platform-container
+max_wallet_text_length: 418  ## Unicode characters
+---
+
+<div class="wallet">
+
+  <div class="wallet-logo-container">
+    <img class="wallet-logo" src="/img/wallet/{{ page.wallet.id }}.png" alt="{{ page.wallet.title }}" />
+    <h1>
+      {{ page.wallet.title }}
+    </h1>
+  </div>
+
+  <p class="wallet-description">
+  {% translate wallet{{page.wallet.id}} choose-your-wallet %}
+  </p>
+
+  <div class="wallet-platforms">
+    <div class="wallet-platforms-menu">
+      {% for platform in page.wallet.platform %}
+        {% for os in platform.os %}
+        {% assign btnClass = "wallet-os-btn" %}
+        {% if page.id contains os.name %}
+          {% assign btnClass = btnClass | append: " active" %}
+        {% endif %}
+        {% if platform.name == os.name %}
+        <a class="{{ btnClass }}"
+           href="/{{ page.lang }}/wallets/{{platform.name}}/{{page.wallet.id}}/">
+        {% else %}
+        <a class="{{ btnClass }}"
+           href="/{{ page.lang }}/wallets/{{platform.name}}/{{os.name}}/{{page.wallet.id}}/">
+        {% endif %}
+          <img src="/img/os/{{ os.name }}.png"
+               alt="{% translate platform{{os.name}} choose-your-wallet %}{% translate walletcat{{os.name}} choose-your-wallet %}"
+               title="{% translate platform{{os.name}} choose-your-wallet %}" />
+          <span>{% translate platform{{os.name}} choose-your-wallet %}{% translate walletcat{{os.name}} choose-your-wallet %}</span>
+        </a>
+        {% endfor %}
+      {% endfor %}
+    </div>
+    {% assign platform = page.platform %}
+    {% assign os = page.os %}
+    <div class="wallet-os-list">
+      <div class="wallet-os-container" id="{{ os.name }}">
+        <div class="wallet-os-overview">
+          <div class="wallet-os-name">
+            <img src="/img/os/{{ os.name }}.png"
+                 alt="{% translate platform{{os.name}} choose-your-wallet %}{% translate walletcat{{os.name}} choose-your-wallet %}"
+                 title="{% translate platform{{os.name}} choose-your-wallet %}" />
+            <h3 id="wallets-platform-name">{% translate platform{{os.name}} choose-your-wallet %}{% translate walletcat{{os.name}} choose-your-wallet %}</h3>
+          </div>
+          <div class="wallet-os-download-buttons">
+            {% if os.link == 'bitcoincore' %}
+              <a class="wallet-os-download-link" href="/{{ page.lang }}/{% translate download url %}">{% translate walletdownload choose-your-wallet %}</a>
+            {% elsif os.link contains 'play.google.com' or os.link contains 'itunes.apple.com' or os.link contains 'chrome.google.com' %}
+              <a class="wallet-os-download-link" href="{{ os.link }}">{% translate walletdownload choose-your-wallet %}</a>
+            {% else %}
+              <a class="wallet-os-download-link" href="{{ os.link }}">{% translate walletvisit choose-your-wallet %}</a>
+            {% endif %}
+            {% if os.source %}
+              <a class="wallet-os-source-link" href="{{ os.source }}"> {% translate walletsourcecode choose-your-wallet %}</a>
+            {% endif %}
+          </div>
+          <div class="wallet-os-checks">
+            {% for check in os.check %}
+            {% assign checkName = check[0] %}
+            {% assign checkValue = check[1] %}
+              <div class="check{{ checkName }} {% if checkValue contains "checkgood" %}checkgood{% elsif checkValue contains "checkpass" %}checkpass{% elsif checkValue contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  {% translate {{checkValue}} choose-your-wallet %}
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>{% translate {{checkValue}}txt choose-your-wallet %}</p>
+                  {% if checkName == 'privacy' and os.privacycheck %}
+                    {% for privacycheck in os.privacycheck %}
+                      <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains "checkgood" %}checkgood{% elsif privacycheck[1] contains "checkpass" %}checkpass{% elsif privacycheck[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">
+                        <p>{% translate {{privacycheck[1]}} choose-your-wallet %}</p>
+                        <p>{% translate {{privacycheck[1]}}txt choose-your-wallet %}</p>
+                      </div>
+                    {% endfor %}
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="wallet-os-screenshot">
+          <img src="/img/screenshots/{{ os.screenshot }}" alt="screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
