@@ -30,16 +30,12 @@ in the future
 - Avoid address reuse by displaying a new receiving address for each transaction
   in the wallet UI
 - Avoid address reuse by using a new change address for each transaction
+- User has access to private keys
 - If private keys or encryption keys are stored online:
   - Refuses weak passwords (short passwords and/or common passwords) used to
     secure access to any funds, or provides an aggressive account lock-out
 feature in response to failed login attempts along with a strict account
 recovery process.
-- If user has no access over its private keys:
-  - Provides 2FA authentication feature
-  - Reminds the user to enable 2FA by email or in the main UI of the wallet
-  - User session is not persistent, or requires authentication for spending
-  - Provides account recovery feature
 - If user has exclusive access over its private keys:
   - Allows backup of the wallet
   - Restoring wallet from backup is working
@@ -66,10 +62,6 @@ Optional criteria (some could become requirements):
 - Provides a bug reporting policy on the website
 - Website serving executable code or requiring authentication is included in the
   [HSTS preload list](https://hstspreload.appspot.com/)
-- If user has no access over its private keys:
-  - Full reserve audit(s)
-  - Insurance(s) against failures on their side
-  - Reminds the user to enable 2FA in the main UI of the wallet
 - If user has exclusive access over its private keys:
   - Supports HD wallets (BIP32)
   - Provides users with step to print or write their wallet seed on setup
