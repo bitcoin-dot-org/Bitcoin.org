@@ -4,10 +4,9 @@
 
 title: "Potential network disruption"
 shorturl: "potential-split"
-active: true
-banner: "Warning: wait for extra confirmations starting July 22nd"
-
-bannerclass: "warning"
+active: false
+## banner: "Warning: wait for extra confirmations starting July 22nd"
+## bannerclass: "warning"
 ---
 {% assign start='<span class="date">2017/08/01 00:00 UTC</span>' %}
 
