@@ -527,3 +527,139 @@ var xint = setInterval(function() {
   addEvent(document.body, 'mousedown', makeEditable);
   clearInterval(xint);
 }, 200);
+
+function generateDonationUrl(address, amountBtc, message) {
+    var result = [
+        address
+    ];
+
+    amountBtc = parseFloat(amountBtc);
+
+    if (!isNaN(amountBtc)) {
+        result.push('?amount=' + amountBtc);
+    }
+
+    if (message !== '') {
+        message = encodeURIComponent(message);
+        result.push(result.length === 1 ? '?' : '&');
+        result.push('message=' + message);
+    }
+
+    return result.join('');
+}
+
+function generateDonationQrCode() {
+    var qrcodeContainer = $('#donation-qr-code');
+    qrcodeContainer.empty();
+
+    var address = qrcodeContainer.data('address');
+    var amount = $('#donation-input-amount-btc').val();
+    var message = $('#donation-input-message').val();
+
+    var text = 'bitcoin:' + generateDonationUrl(address, amount, message);
+
+    $('#donation-qr-code').qrcode({
+        width: 150,
+        height: 150,
+        text: text
+    });
+
+}
+
+function loadTickerPrices() {
+    $.ajax('https://blockchain.info/ticker').then(function(data) {
+        var rate = data.USD.last;
+
+        function usdToBtc(amount) {
+            var amountUsd = parseFloat(amount);
+            if (isNaN(amountUsd)) {
+                return 0;
+            }
+            var amountBtc = amountUsd / rate;
+            return amountBtc.toFixed(8);
+        }
+
+        function btcToUsd(amount) {
+            var amountBtc = parseFloat(amount);
+            if (isNaN(amountBtc)) {
+                return 0;
+            }
+            var amountUsd = amountBtc * rate;
+            return amountUsd.toFixed(2);
+        }
+
+        $('#donation-input-amount-usd').on('keyup', function() {
+            var amount = $(this).val();
+            $('#donation-input-amount-btc').val(usdToBtc(amount));
+            generateDonationQrCode();
+        });
+
+        $('#donation-input-amount-btc').on('keyup', function() {
+            var amount = $(this).val();
+            $('#donation-input-amount-usd').val(btcToUsd(amount));
+            generateDonationQrCode();
+        });
+
+        $('#donation-input-message').on('keyup', function() {
+            generateDonationQrCode();
+        });
+
+        $('[data-amount-usd]').each(function() {
+            var amountUsd = $(this).data('amount-usd');
+            var amountBtc = usdToBtc(amountUsd);
+            $('div', this).text('(' + amountBtc + ' BTC)');
+
+            $(this).on('click', function() {
+                $('#donation-input-amount-btc').val(amountBtc);
+                $('#donation-input-amount-usd').val(amountUsd);
+
+                generateDonationQrCode();
+            });
+        });
+    });
+}
+
+function openDonationModal() {
+    var drop = $('<div class="modal-drop" />');
+    var body = $('body');
+    var modal = $('#donation-modal');
+    body.append(drop);
+    body.css('overflow', 'hidden');
+    modal.css('display', 'block');
+
+    drop.on('click', closeDonationModal);
+
+    // postpone opacity update
+    setTimeout(function() {
+        drop.css('opacity', 1);
+        modal.removeClass('hidden');
+        modal.addClass('open');
+    }, 0);
+
+    loadTickerPrices();
+    generateDonationQrCode();
+}
+
+function closeDonationModal() {
+    var drop = $('.modal-drop');
+    var body = $('body');
+    var modal = $('#donation-modal');
+
+    drop.css('opacity', 0);
+    body.css('overflow', 'auto');
+
+    setTimeout(function() {
+        drop.remove();
+        modal.addClass('hidden');
+        modal.removeClass('open');
+        modal.css('display', 'none');
+    }, 120);
+}
+
+function toggleDonationBanner() {
+    var banner = $('.donation-text');
+    var toggle = $('.donation-visibility-toggle');
+
+    toggle.toggleClass('active');
+    banner.toggleClass('expanded');
+}
