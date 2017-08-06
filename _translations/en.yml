@@ -891,9 +891,9 @@
     donation-banner-toggle-button: "Bitcoin.org needs your support!"
     donation-banner-donate-button: "Make a donation"
     donation-modal-header: "Donate to Bitcoin.org"
-    donation-modal-subheader: "Please use this QR code or send <br />donation manually using address below"
+    donation-modal-subheader: "Use this QR code or address below"
     donation-modal-input-custom-amount: "Or custom amount?"
-    donation-modal-optional-message: "Optional message to Bitcoin.org"
+    donation-modal-optional-message: "Optional description (for your wallet)"
   url:
     about-us: about-us
     bitcoin-for-developers: bitcoin-for-developers
