@@ -8,11 +8,11 @@ http://opensource.org/licenses/MIT.
     <p>
       {% translate donation-banner-text layout %}
     </p>
-    <button class="donation-btn" onclick="openDonationModal()">
+    <button type="button" class="donation-btn" onclick="openDonationModal()">
       {% translate donation-banner-donate-button layout %}
     </button>
   </div>
-  <button class="donation-visibility-toggle" onclick="toggleDonationBanner()">
+  <button type="button" class="donation-visibility-toggle" onclick="toggleDonationBanner()">
     {% translate donation-banner-toggle-button layout %}
   </button>
 </div>
@@ -41,7 +41,7 @@ http://opensource.org/licenses/MIT.
     <div class="modal-body bg-white" style="overflow-y:hidden;text-align: center;">
       <div>
         {% for amount in site.donation_banner.amounts_in_usd %}
-        <button class="donation-amount-btn" data-amount-usd="{{ amount }}">
+        <button type="button" class="donation-amount-btn" data-amount-usd="{{ amount }}">
           ${{ amount }}.00
           <div class="donation-amount-usd-in-btc">(... BTC)</div>
         </button>
