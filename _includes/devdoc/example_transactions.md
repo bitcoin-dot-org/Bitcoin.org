@@ -119,10 +119,6 @@ someone else, that second transaction would not be displayed in our
 list of UTXOs.
 
 {% highlight bash %}
-## Bitcoin Core 0.10.1 and earlier
-> bitcoin-cli -regtest setgenerate true 1
-
-## Later versions of Bitcoin Core
 > bitcoin-cli -regtest generate 1
 
 > unset NEW_ADDRESS
@@ -349,10 +345,6 @@ would usually then broadcast it to other peers, but we're not currently
 connected to other peers because we started in regtest mode.
 
 {% highlight bash %}
-## Bitcoin Core 0.10.1 and earlier
-> bitcoin-cli -regtest setgenerate true 1
-
-## Later versions of Bitcoin Core
 > bitcoin-cli -regtest generate 1
 
 > unset UTXO_TXID UTXO_VOUT NEW_ADDRESS RAW_TX SIGNED_RAW_TX
