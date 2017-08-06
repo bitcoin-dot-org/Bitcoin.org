@@ -63,14 +63,15 @@ with the most recent versions listed first. (If you know of a protocol
 version that implemented a major change but which is not listed here,
 please [open an issue][docs issue].)
 
-As of Bitcoin Core 0.14.1, the most recent protocol version is 70015.
+As of Bitcoin Core 0.14.2, the most recent protocol version is 70015.
 
 | Version | Initial Release                    | Major Changes
 |---------|------------------------------------|--------------
-| 70015   | Bitcoin Core 0.13.2 <br>           | • New banning behavior for invalid compact blocks [#9026](https://github.com/bitcoin/bitcoin/pull/9026) in v0.14.0, Backported to v0.13.2 in [#9048](https://github.com/bitcoin/bitcoin/pull/9048).
-| 70014   | Bitcoin Core 0.13.0 <br>           | [BIP152][]: <br>• Added `sendcmpct`, `cmpctblock`, `getblocktxn`, `blocktxn` messages <br> • Added `MSG_CMPCT_BLOCK` inventory type to `getdata` message.
-| 70013   | Bitcoin Core 0.13.0 <br>           | [BIP133][]: <br>• Added `feefilter` message.<br> • Removed `alert` message system. See [Alert System Retirement](https://bitcoin.org/en/alert/2016-11-01-alert-retirement)
-| 70012   | Bitcoin Core 0.12.0 <br>           | [BIP130][]: <br>• Added `sendheaders` message.
+| 70015   | Bitcoin Core 0.13.2 <br>(Jan 2017) | • New banning behavior for invalid compact blocks [#9026](https://github.com/bitcoin/bitcoin/pull/9026) in v0.14.0, Backported to v0.13.2 in [#9048](https://github.com/bitcoin/bitcoin/pull/9048).
+| 70014   | Bitcoin Core 0.13.0 <br>(Aug 2016) | [BIP152][]: <br>• Added `sendcmpct`, `cmpctblock`, `getblocktxn`, `blocktxn` messages <br> • Added `MSG_CMPCT_BLOCK` inventory type to `getdata` message.
+| 70013   | Bitcoin Core 0.13.0 <br>(Aug 2016) | [BIP133][]: <br>• Added `feefilter` message.<br> • Removed `alert` message system. See [Alert System Retirement](https://bitcoin.org/en/alert/2016-11-01-alert-retirement)
+| 70012   | Bitcoin Core 0.12.0 <br>(Feb 2016) | [BIP130][]: <br>• Added `sendheaders` message.
+| 70011   | Bitcoin Core 0.12.0 <br>(Feb 2016) | [BIP111][]: <br>• `filter*` messages are disabled without NODE_BLOOM after and including this version.
 | 70002   | Bitcoin Core 0.9.0 <br>(Mar 2014)  | • Send multiple `inv` messages in response to a `mempool` message if necessary <br><br>[BIP61][]: <br>• Added `reject` message
 | 70001   | Bitcoin Core 0.8.0 <br>(Feb 2013)  | • Added `notfound` message. <br><br>[BIP37][]: <br>• Added `filterload` message. <br>• Added `filteradd` message. <br>• Added `filterclear` message. <br>• Added `merkleblock` message. <br>• Added relay field to `version` message <br>• Added `MSG_FILTERED_BLOCK` inventory type to `getdata` message.
 | 60002   | Bitcoin Core 0.7.0 <br>(Sep 2012)  | [BIP35][]: <br>• Added `mempool` message. <br>• Extended `getdata` message to allow download of memory pool transactions
