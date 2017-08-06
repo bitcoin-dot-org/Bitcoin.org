@@ -1,11 +1,24 @@
+$orange: #ef9e5b;
+$dark-orange: #de8236;
+$green: #4cad2c;
+$dark-green: #318f20;
+
+@mixin gradient($color1, $color2) {
+    background-image: -o-linear-gradient(top, $color1 14%, $color2 70%);
+    background-image: -moz-linear-gradient(top, $color1 14%, $color2 70%);
+    background-image: -webkit-linear-gradient(top, $color1 14%, $color2 70%);
+    background-image: -ms-linear-gradient(top, $color1 14%, $color2 70%);
+    background-image: linear-gradient(top, $color1 14%, $color2 70%);
+}
+
 .donation-btn {
     background-color: #4CAF50;
-    background-image: -webkit-linear-gradient(bottom, #318f20 14%, #4cad2c 70%);
+    @include gradient($green, $dark-green);
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
     color: white;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .donation-container {
@@ -14,7 +27,7 @@
     .donation-text {
         background-color: #ef9e5b;
         color: #ffffff;
-        font-weight: 700;
+        font-weight: bold;
         transition: margin-top .2s ease-in;
         height: 90px;
         margin-top: -110px;
@@ -32,7 +45,7 @@
         display: inline-block;
         background-color: #ef9e5b;
         color: #fefefe;
-        font-weight: 600;
+        font-weight: bold;
         border: 4px solid #ef9e5b;
         border-top: 0;
         padding: 10px 50px;
@@ -47,7 +60,6 @@
 }
 
 .donation-modal {
-/* display: block; */
     background: white;
     padding: 0 20px;
     padding-bottom: 20px;
@@ -75,6 +87,8 @@
     .modal-close-btn {
         float: right;
         cursor: pointer;
+        font-size: 200%;
+        line-height: 16px;
 
         &:hover {
             color: #2c6fad;
@@ -109,16 +123,16 @@
         .donation-amount-btn {
             cursor: pointer;
             background-color: #ef9e5b;
-            background-image: -webkit-linear-gradient(bottom, #de8236 14%, #ef9e5b 70%);
+            @include gradient($orange, $dark-orange);
             border: none;
             border-radius: 10px;
             padding: 10px 20px;
             color: white;
             margin-right: 10px;
-            font-weight: 600;
+            font-weight: bold;
 
             &:hover {
-                background-image: -webkit-linear-gradient(bottom, #ef9e5b 14%, #de8236 70%);
+                @include gradient($dark-orange, $orange);
             }
 
             .donation-amount-usd-in-btc {
