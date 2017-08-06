@@ -588,19 +588,19 @@ function loadTickerPrices() {
             return amountUsd.toFixed(2);
         }
 
-        $('#donation-input-amount-usd').on('keyup', function() {
+        $('#donation-input-amount-usd').on('input', function() {
             var amount = $(this).val();
             $('#donation-input-amount-btc').val(usdToBtc(amount));
             generateDonationQrCode();
         });
 
-        $('#donation-input-amount-btc').on('keyup', function() {
+        $('#donation-input-amount-btc').on('input', function() {
             var amount = $(this).val();
             $('#donation-input-amount-usd').val(btcToUsd(amount));
             generateDonationQrCode();
         });
 
-        $('#donation-input-message').on('keyup', function() {
+        $('#donation-input-message').on('input', function() {
             generateDonationQrCode();
         });
 
