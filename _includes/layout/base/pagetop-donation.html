@@ -1,0 +1,71 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+<div class="donation-container">
+  <div class="donation-text">
+    <p>
+      {% translate donation-banner-text layout %}
+    </p>
+    <button type="button" class="donation-btn" onclick="openDonationModal()">
+      {% translate donation-banner-donate-button layout %}
+    </button>
+  </div>
+  <button type="button" class="donation-visibility-toggle" onclick="toggleDonationBanner()">
+    {% translate donation-banner-toggle-button layout %}
+  </button>
+</div>
+
+<div
+  id="donation-modal"
+  style="display: none"
+  class="donation-modal hidden">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <div class="modal-close-btn" onclick="closeDonationModal()">×</div>
+      <p class="modal-header-text">{% translate donation-modal-header layout %}</p>
+    </div>
+    <p class="modal-subheader">{% translate donation-modal-subheader layout %}</p>
+    <div style="text-align: center;">
+      <div id="donation-qr-code" data-address="{{ site.donation_banner.address }}"></div>
+    </div>
+    <div>
+      <a
+        class="donation-btc-address"
+        href="bitcoin:{{ site.donation_banner.address }}"
+        target="_blank">
+        {{ site.donation_banner.address }}
+      </a>
+    </div>
+    <div class="modal-body bg-white" style="overflow-y:hidden;text-align: center;">
+      <div>
+        {% for amount in site.donation_banner.amounts_in_usd %}
+        <button type="button" class="donation-amount-btn" data-amount-usd="{{ amount }}">
+          ${{ amount }}.00
+          <div class="donation-amount-usd-in-btc">(... BTC)</div>
+        </button>
+        {% endfor %}
+      </div>
+
+      <div>
+        <input
+          style="margin-right: 15px"
+          type="text"
+          placeholder="{% translate donation-modal-input-custom-amount layout %} (BTC)"
+          id="donation-input-amount-btc" class="donation-amount-input">
+        <input
+          type="text"
+          placeholder="{% translate donation-modal-input-custom-amount layout %} (USD)"
+          id="donation-input-amount-usd" class="donation-amount-input">
+      </div>
+
+      <div>
+        <textarea
+          class="donation-amount-input"
+          id="donation-input-message"
+          placeholder="{% translate donation-modal-optional-message layout %}"></textarea>
+      </div>
+    </div>
+  </div>
+</div>

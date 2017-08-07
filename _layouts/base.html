@@ -10,6 +10,9 @@
 </head>
 
 <body>
+{% if site.donation_banner.display %}
+  {% include layout/base/pagetop-donation.html %}
+{% endif %}
 {% include layout/base/pagetop-detect-mobile.html %}
 
 {% include layout/base/pagetop-alert.html %}

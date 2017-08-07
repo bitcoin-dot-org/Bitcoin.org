@@ -853,6 +853,13 @@ uk:
     sponsor: "Спонсор веб-сайту спільноти "
     getstarted: "Початок роботи з Біткойн"
     bitcoin-core: "Bitcoin Core"
+    donation-banner-text: "Bitcoin.org фінансується спільнотою. Пожертвування дуже цінуються та використовуються для покращення роботи сайту."
+    donation-banner-toggle-button: "Bitcoin.org потрібна Ваша підтримка!"
+    donation-banner-donate-button: "Пожертвувати"
+    donation-modal-header: "Пожертвування для Bitcoin.org"
+    donation-modal-subheader: "Скористайтеся QR-кодом або адресою знизу"
+    donation-modal-input-custom-amount: "Інша сума?"
+    donation-modal-optional-message: "Необов'язковий опис транзакції (для Вашого гаманця)"
   url:
     about-us: about-us
     bitcoin-for-developers: bitcoin-for-developers

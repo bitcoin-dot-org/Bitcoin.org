@@ -1,0 +1,174 @@
+$orange: #ef9e5b;
+$dark-orange: #de8236;
+$green: #4cad2c;
+$dark-green: #318f20;
+
+@mixin gradient($color1, $color2) {
+    background-image: -o-linear-gradient(top, $color1 14%, $color2 70%);
+    background-image: -moz-linear-gradient(top, $color1 14%, $color2 70%);
+    background-image: -webkit-linear-gradient(top, $color1 14%, $color2 70%);
+    background-image: -ms-linear-gradient(top, $color1 14%, $color2 70%);
+    background-image: linear-gradient(top, $color1 14%, $color2 70%);
+}
+
+.donation-btn {
+    background-color: #4CAF50;
+    @include gradient($green, $dark-green);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.donation-container {
+    text-align: center;
+
+    .donation-text {
+        background-color: #ef9e5b;
+        color: #ffffff;
+        font-weight: bold;
+        transition: margin-top .2s ease-in;
+        height: 90px;
+        margin-top: -110px;
+        padding: 10px;
+
+        &.expanded {
+            margin-top: 0;
+            border-bottom: 4px solid #ef9e5b;
+            box-shadow: 0 7px 10px rgba(0, 0, 0, 0.22);
+        }
+    }
+
+    .donation-visibility-toggle {
+        cursor: pointer;
+        display: inline-block;
+        background-color: #ef9e5b;
+        color: #fefefe;
+        font-weight: bold;
+        border: 4px solid #ef9e5b;
+        border-top: 0;
+        padding: 10px 50px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
+
+        &.active {
+            margin-top: -4px;
+        }
+    }
+}
+
+.donation-modal {
+    background: white;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: transform .2s ease-in, opacity .12s ease-in;
+    transform-origin: top;
+
+    &.hidden {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    &.open {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .modal-close-btn {
+        float: right;
+        cursor: pointer;
+        font-size: 200%;
+        line-height: 16px;
+
+        &:hover {
+            color: #2c6fad;
+        }
+    }
+
+    .modal-header-text {
+        color: #383838;
+        font-size: 110%;
+        text-align: left;
+        font-weight: bold;
+        margin: 1em 0;
+    }
+
+    .modal-subheader {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 1.33em 0;
+    }
+
+    .donation-btc-address {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 1.33em 0;
+        display: block;
+        text-align: center;
+    }
+
+    .modal-body {
+        .donation-amount-btn {
+            cursor: pointer;
+            background-color: #ef9e5b;
+            @include gradient($orange, $dark-orange);
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: white;
+            margin-right: 10px;
+            font-weight: bold;
+
+            &:hover {
+                @include gradient($dark-orange, $orange);
+            }
+
+            .donation-amount-usd-in-btc {
+                font-size: 75%;
+            }
+        }
+
+        .donation-amount-input {
+            width: 203px;
+            margin-top: 15px;
+            padding: 10px 15px;
+            border: 2px solid #dadada;
+            border-radius: 10px;
+        }
+
+        textarea.donation-amount-input {
+            width: 460px;
+            margin: 15px 0;
+        }
+    }
+}
+
+.modal-drop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    background-color: rgba(0, 0, 0, 0.38);
+    opacity: 0;
+    transition: opacity .2s ease-in;
+}
+
+@media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ){
+    .donation-container {
+        display: none;
+    }
+}

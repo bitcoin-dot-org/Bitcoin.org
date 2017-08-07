@@ -887,6 +887,13 @@
     sponsor: "A community website sponsored by"
     getstarted: "Get started with Bitcoin"
     bitcoin-core: "Bitcoin Core"
+    donation-banner-text: "Bitcoin.org is a community funded project, donations are appreciated and used to improve the website."
+    donation-banner-toggle-button: "Bitcoin.org needs your support!"
+    donation-banner-donate-button: "Make a donation"
+    donation-modal-header: "Donate to Bitcoin.org"
+    donation-modal-subheader: "Use this QR code or address below"
+    donation-modal-input-custom-amount: "Or custom amount?"
+    donation-modal-optional-message: "Optional description (for your wallet)"
   url:
     about-us: about-us
     bitcoin-for-developers: bitcoin-for-developers
