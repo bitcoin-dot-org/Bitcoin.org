@@ -74,7 +74,7 @@ bitcoin-cli -regtest generate 101
 {% autocrossref %}
 
 Generate 101 blocks using a special RPC
-which is only available in regtest mode. This takes about 30 seconds on
+which is only available in regtest mode. This takes less than a second on
 a generic PC. Because this is a new block chain using Bitcoin's default
 rules, the first blocks pay a block reward of 50 bitcoins.  Unlike
 mainnet, in regtest mode only the first 150 blocks pay a reward of 50 bitcoins.
