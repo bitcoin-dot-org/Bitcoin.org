@@ -581,6 +581,9 @@ collections:
   ## _platforms
   platforms:
     output: false
+  ## _devdocs
+  devdocs:
+    output: false
 
 defaults:
   - scope:
