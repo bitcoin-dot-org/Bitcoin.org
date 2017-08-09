@@ -271,12 +271,28 @@
   link: "http://coinagenda.com/#about"
 
 - date: 2017-08-14
+  title: "Bitcoin & Ethereum Summit"
+  venue: "Mars Auditorium"
+  address: "101 College Street, M5G 1L7"
+  city: "Toronto"
+  country: "Canada"
+  link: "https://www.eventbrite.ca/e/bitcoin-ethereum-summit-tickets-34898442180"
+
+- date: 2017-08-14
   title: "Blockchain and Cryptocurrency Conference Nigeria 2017"
   venue: "Radisson Blu Anchorage Hotel"
   address: "Ozumba Mbadiwe Street"
   city: "Lagos"
   country: "Nigeria"
   link: "http://blockchainnigeria.group/"
+
+- date: 2017-09-14
+  title: "CoinAlts Fund Symposium"
+  venue: "The St. Regis San Francisco"
+  address: "125 3rd Street"
+  city: "San Francisco, CA"
+  country: "USA"
+  link: "https://www.coinaltsfundsymposium.com/"
 
 - date: 2017-09-23
   title: "Bitcoin Conference Kiev"
@@ -301,6 +317,14 @@
   city: "Brighton"
   country: "United Kingdom"
   link: "http://bitbrighton.org/"
+
+- date: 2017-11-15
+  title: "Blockchain WithTheBest"
+  venue: "Online Conference"
+  address: "950 Battery Street, 94111"
+  city: "San Francisco, CA"
+  country: "United States"
+  link: "http://blockchain.withthebest.com"
 
 - date: 2017-11-19
   title: "BitBrum"
