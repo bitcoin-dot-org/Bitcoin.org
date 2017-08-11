@@ -22,7 +22,7 @@ translating or improving existing translations.
 \_translations/ and from the root of the git repository run
 ./\_contrib/updatetx.rb to update layouts and templates for this language. You
 should also make sure that no url has been changed by translators. If any page
-needs to be moved, please add [redirections](https://github.com/bitcoin-dot-org/bitcoin.org/blob/wbnns-repository-cleanup/docs/miscellaneous.md#redirections).
+needs to be moved, please add [redirections](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/miscellaneous.md#redirections).
 
 **Add a new language**: You can put the language file from Transifex in
 \_translations and add the language in \_config.yml in the right display order
