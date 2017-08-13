@@ -1,4 +1,4 @@
-﻿en:
+en:
   about-us:
     title: "About bitcoin.org"
     pagetitle: "About bitcoin.org"
@@ -135,6 +135,16 @@
     description: "Satoshi Nakamoto's original paper is still recommended reading for anyone studying how Bitcoin works. Choose which translation of the paper you want to read:"
     translated_by: "translated by"
     submit_new_translation: 'Do you want to translate the paper into your language? Visit the <a href="https://github.com/saivann/bitcoinwhitepaper">Bitcoin Paper repository</a> for instructions and <a href="https://github.com/saivann/bitcoinwhitepaper/issues/new">open an issue</a> if you have any questions.'
+  buy:
+    title: "Buy"
+    pagetitle: "How to buy Bitcoin"
+    summary: "There are several ways you can buy Bitcoin."
+    bitcoin-exchange: "Use a Bitcoin Exchange"
+    bitcoin-exchange-text: "Our <a href=\"/en/exchanges\">Bitcoin Exchange</a> page, lists many different businesses that can help you buy Bitcoin using your bank account."
+    local-bitcoins: "Discover people selling Bitcoin in your community"
+    local-bitcoins-text: "<a href=\"https://localbitcoins.com/\">Local Bitcoins</a> lets you search and browse through various sellers of Bitcoin in your area. Sellers have reviews and feedback scores to help you choose."
+    bitcoin-atm: "Use a Bitcoin ATM"
+    bitcoin-atm-text: "Bitcoin ATMs work like a regular ATM, except they allow you to deposit and withdrawal money so that you can buy and sell Bitcoin. <a href=\"https://coinatmradar.com/\">Coin ATM Radar</a> has an interactive map to help you find the closest Bitcoin ATM near you."
   community:
     title: "Community - Bitcoin"
     pagetitle: "Bitcoin communities"
@@ -546,10 +556,10 @@
     choose: "Choose your wallet"
     choosetxt: "You can bring a Bitcoin wallet in your everyday life with your mobile or you can have a wallet only for online payments on your computer. In any case, choosing your wallet can be done in a minute."
     choosebut: "Choose your wallet"
-    get: "Get bitcoins"
-    gettxt: "You can get bitcoins by accepting them as a payment for goods and services or by buying them from a friend or someone near you. You can also buy them directly from an exchange with your bank account."
-    getbut: "Find an exchange"
-    spend: "Spend bitcoins"
+    get: "Get Bitcoin"
+    gettxt: "You can get Bitcoin by accepting it as a payment for goods and services. There are also several ways you can buy Bitcoin."
+    getbut: "Buy Bitcoin"
+    spend: "Spend Bitcoin"
     spendtxt: "There is a growing number of services and merchants accepting Bitcoin all over the world. You can use Bitcoin to pay them and rate your experience to help honest businesses to gain more visibility."
     spendbut: "Find merchants and products"
     merchants: "How to accept Bitcoin"
@@ -876,6 +886,7 @@
     menu-privacy: "Privacy Policy"
     menu-resources: Resources
     menu-support-bitcoin: "Support Bitcoin"
+    menu-buy: "Buy Bitcoin"
     menu-vocabulary: Vocabulary
     menu-you-need-to-know: "You need to know"
     banner-core-moved: |
@@ -899,6 +910,7 @@
     bitcoin-for-developers: bitcoin-for-developers
     bitcoin-for-individuals: bitcoin-for-individuals
     bitcoin-for-businesses: bitcoin-for-businesses
+    buy: buy
     choose-your-wallet: choose-your-wallet
     community: community
     development: development
