@@ -33,6 +33,7 @@ http://opensource.org/licenses/MIT.
   <li><a>{% translate menu-participate layout %}</a>
     <ul>
       <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a>
+      {% if page.lang == 'en' %}<li{% if page.id == 'buy' %} class="active"{% endif %}><a href="/en/buy">Buy Bitcoin</a></li>{% endif %}
       {% if page.lang == 'en' %}<li{% if page.id == 'full-node' %} class="active"{% endif %}><a href="/en/full-node">Running a full node</a></li>{% endif %}
       <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
     </ul>
