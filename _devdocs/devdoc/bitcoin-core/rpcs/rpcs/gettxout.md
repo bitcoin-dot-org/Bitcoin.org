@@ -23,7 +23,6 @@ The `gettxout` RPC {{summary_getTxOut}}
 
 {% enditemplate %}
 
-
 *Parameter #2---the output index number (vout) of the output to get*
 
 {% itemplate ntpd1 %}
@@ -118,7 +117,6 @@ The `gettxout` RPC {{summary_getTxOut}}
 
 Get the UTXO from the following transaction from the first output index ("0"),
 searching the memory pool if necessary.
-
 
 {% highlight bash %}
 bitcoin-cli -testnet gettxout \

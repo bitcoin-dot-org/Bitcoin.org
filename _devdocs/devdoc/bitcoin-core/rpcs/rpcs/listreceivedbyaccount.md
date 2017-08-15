@@ -103,5 +103,4 @@ Result (edited to only show the first two results):
 * [GetReceivedByAccount][rpc getreceivedbyaccount]: {{summary_getReceivedByAccount}}
 * [GetReceivedByAddress][rpc getreceivedbyaddress]: {{summary_getReceivedByAddress}}
 
-
 {% endautocrossref %}
