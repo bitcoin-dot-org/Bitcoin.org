@@ -5,19 +5,11 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/example_testing.md" %}
 
 ## Testing Applications
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Bitcoin Core provides testing tools designed to let developers
 test their applications with reduced risks and limitations.
 
-{% endautocrossref %}
-
 ### Testnet
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 When run with no arguments, all Bitcoin Core programs default to Bitcoin's main
 network ([mainnet][/en/glossary/mainnet]{:#term-mainnet}{:.term}). However, for development,
@@ -32,12 +24,7 @@ free satoshis for testing, use [Piotr Piasecki's testnet faucet][].
 Testnet is a public resource provided for free by members of the
 community, so please don't abuse it.
 
-{% endautocrossref %}
-
 ### Regtest Mode
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 For situations
 where interaction with random peers and blocks is unnecessary or
@@ -50,18 +37,12 @@ Many developers consider regtest mode the preferred way to develop new
 applications. The following example will let you create a regtest
 environment after you first [configure bitcoind][bitcoind initial setup].
 
-{% endautocrossref %}
-
 {% highlight bash %}
 > bitcoind -regtest -daemon
 Bitcoin server starting
 {% endhighlight %}
 
-{% autocrossref %}
-
 Start `bitcoind` in regtest mode to create a private block chain.
-
-{% endautocrossref %}
 
 ~~~
 ## Bitcoin Core 0.10.1 and earlier
@@ -70,8 +51,6 @@ bitcoin-cli -regtest setgenerate true 101
 ## Bitcoin Core master (as of commit 48265f3)
 bitcoin-cli -regtest generate 101
 ~~~
-
-{% autocrossref %}
 
 Generate 101 blocks using a special RPC
 which is only available in regtest mode. This takes about 30 seconds on
@@ -82,14 +61,10 @@ However, a block must have 100 confirmations before that reward can be
 spent, so we generate 101 blocks to get access to the coinbase
 transaction from block #1.
 
-{% endautocrossref %}
-
 {% highlight bash %}
 bitcoin-cli -regtest getbalance
 50.00000000
 {% endhighlight %}
-
-{% autocrossref %}
 
 Verify that we now have 50 bitcoins available to spend.
 
@@ -102,4 +77,3 @@ start a new regtest. (See the [Developer Examples Introduction][devexamples] for
 configuration directory locations on various operating systems. Always back up
 mainnet wallets before performing dangerous operations such as deleting.)
 
-{% endautocrossref %}

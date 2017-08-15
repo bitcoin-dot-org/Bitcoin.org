@@ -5,9 +5,6 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/guide_p2p_network.md" %}
 
 ## P2P Network
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The Bitcoin network protocol allows full nodes
 (peers) to collaboratively maintain a
@@ -31,12 +28,7 @@ default behavior is described. Also, for privacy, actual IP addresses
 in the example output below have been replaced with [RFC5737][] reserved
 IP addresses.
 
-{% endautocrossref %}
-
 ### Peer Discovery
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 When started for the first time, programs don't know the IP
 addresses of any active full nodes. In order to discover some IP
@@ -124,12 +116,7 @@ seeds used by Bitcoin Core and BitcoinJ. The Bitcoin Core [DNS Seed
 Policy][].  The hardcoded list of IP addresses used by Bitcoin Core and
 BitcoinJ is generated using the [makeseeds script][].
 
-{% endautocrossref %}
-
 ### Connecting To Peers
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Connecting to a peer is done by sending a `version` message, which
 contains your version number, block, and current time to the remote
@@ -141,12 +128,7 @@ Once connected, the client can send to the remote node `getaddr` and `addr` mess
 
 In order to maintain a connection with a peer, nodes by default will send a message to peers before 30 minutes of inactivity. If 90 minutes pass without a message being received by a peer, the client will assume that connection has closed.
 
-{% endautocrossref %}
-
 ### Initial Block Download
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Before a full node can validate unconfirmed transactions and
 recently-mined blocks, it must download and validate all blocks from
@@ -166,12 +148,7 @@ Bitcoin Core 0.10.0 will also perform IBD if its local best block chain is
 more than 144 blocks lower than its local best header chain (that is,
 the local block chain is more than about 24 hours in the past).
 
-{% endautocrossref %}
-
 #### Blocks-First
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Bitcoin Core (up until version [0.9.3][bitcoin core 0.9.3]) uses a
 simple initial block download (IBD) method we'll call *blocks-first*.
@@ -261,13 +238,8 @@ node is synced to the tip of the block chain.  At that point, the node
 will accept blocks sent through the regular block broadcasting described
 in a later subsection.
 
-{% endautocrossref %}
-
 ##### Blocks-First Advantages & Disadvantages
 {:.no_toc}
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The primary advantage of blocks-first IBD is its simplicity. The primary
 disadvantage is that the IBD node relies on a single sync node for all
@@ -311,12 +283,7 @@ to the reference page for that message.
 | **From→To** | IBD→Sync                         | Sync→IBD                                         | IBD→Sync                      | Sync→IBD
 | **Payload** | One or more header hashes        | Up to 500 block inventories (unique identifiers) | One or more block inventories | One serialized block
 
-{% endautocrossref %}
-
 #### Headers-First
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Bitcoin Core 0.10.0 uses an initial block download (IBD) method called
 *headers-first*. The goal is to download the headers for the best [header
@@ -417,12 +384,7 @@ to the reference page for that message.
 | **From→To** | IBD→Sync                           | Sync→IBD                     | IBD→*Many*                                               | *Many*→IBD
 | **Payload** | One or more header hashes          | Up to 2,000 block headers    | One or more block inventories derived from header hashes | One serialized block
 
-{% endautocrossref %}
-
 ### Block Broadcasting
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 When a miner discovers a new block, it broadcasts the new block to its
 peers using one of the following methods:
@@ -477,12 +439,7 @@ block retrieval method.)
 | **From→To** | Relay→BF/HF                                            | Relay→SPV                                  | Relay→SPV                                                              |
 | **Payload** | The new block in [serialized format][section serialized blocks] | The new block filtered into a merkle block | Serialized transactions from the new block that match the bloom filter |
 
-{% endautocrossref %}
-
 #### Orphan Blocks
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Blocks-first nodes may download orphan blocks---blocks whose previous
 block header hash field refers to a block header this node
@@ -516,21 +473,11 @@ message is an orphan block, a headers-first node will discard it immediately.
 However, orphan discarding does mean that headers-first nodes will
 ignore orphan blocks sent by miners in an unsolicited block push.
 
-{% endautocrossref %}
-
 ### Transaction Broadcasting
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 In order to send a transaction to a peer, an `inv` message is sent. If a `getdata` response message is received, the transaction is sent using `tx`. The peer receiving this transaction also forwards the transaction in the same manner, given that it is a valid transaction.
 
-{% endautocrossref %}
-
 #### Memory Pool
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Full peers may keep track of unconfirmed transactions which are eligible to
 be included in the next block. This is essential for miners who will
@@ -563,27 +510,13 @@ hasn't yet been included in a block and that it only spends UTXOs, so
 they can't know which transactions are eligible to be included in the
 next block.
 
-{% endautocrossref %}
-
-
-
-
 ### Misbehaving Nodes
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Take note that for both types of broadcasting, mechanisms are in place to punish misbehaving peers who take up bandwidth and computing resources by sending false information. If a peer gets a banscore above the `-banscore=<n>` threshold, he will be banned for the number of seconds defined by `-bantime=<n>`, which is 86,400 by default (24 hours).
 
-{% endautocrossref %}
-
 ### Alerts
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 *Removed in Bitcoin Core 0.13.0*
 
 Earlier versions of Bitcoin Core allowed developers and trusted community members to issue [Bitcoin alerts](https://bitcoin.org/en/alerts) to notify users of critical network-wide issues. This messaging system [was retired](https://bitcoin.org/en/alert/2016-11-01-alert-retirement) in Bitcoin Core v0.13.0; however, internal alerts, partition detection warnings and the `-alertnotify` option features remain.
 
-{% endautocrossref %}

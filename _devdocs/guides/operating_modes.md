@@ -5,18 +5,10 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/guide_operating_modes.md" %}
 
 ## Operating Modes
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Currently there are two primary methods of validating the block chain as a client: Full nodes and SPV clients. Other methods, such as server-trusting methods, are not discussed as they are not recommended.
 
-{% endautocrossref %}
-
 ### Full Node
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The first and most secure model is the one followed by Bitcoin Core, also known as a “thick” or “full chain” client. This security model assures the validity of the block chain by downloading and validating blocks from the genesis block all the way to the most recently discovered block. This is known as using the *height* of a particular block to verify the client’s view of the network. 
 
@@ -24,12 +16,7 @@ For a client to be fooled, an adversary would need to give a complete alternativ
 
 ![Block Height Compared To Block Depth](/img/dev/en-block-height-vs-depth.svg)
 
-{% endautocrossref %}
-
 ### Simplified Payment Verification (SPV)
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 An alternative approach detailed in the [original Bitcoin paper][bitcoinpdf] is a client that only downloads the headers of blocks during the initial syncing process and then requests transactions from full nodes as needed. This scales linearly with the height of the block chain at only 80 bytes per block header, or up to 4.2MB per year, regardless of total block size. 
 
@@ -37,12 +24,7 @@ As described in the white paper, the merkle root in the block header along with 
 
 The block's depth in the block chain corresponds to the cumulative difficulty that has been performed to build on top of that particular block. The SPV client knows the merkle root and associated transaction information, and requests the respective merkle branch from a full node. Once the merkle branch has been retrieved, proving the existence of the transaction in the block, the SPV client can then look to block *depth* as a proxy for transaction validity and security. The cost of an attack on a user by a malicious node who inserts an invalid transaction grows with the cumulative difficulty built on top of that block, since the malicious node alone will be mining this forged chain. 
 
-{% endautocrossref %}
-
 #### Potential SPV Weaknesses
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 If implemented naively, an SPV client has a few important weaknesses. 
 
@@ -52,12 +34,7 @@ Second, the SPV client only requests transactions from full nodes corresponding 
 
 To mitigate the latter issue, Bloom filters have been implemented as a method of obfuscation and compression of block data requests. 
 
-{% endautocrossref %}
-
 #### Bloom Filters
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 A Bloom filter is a space-efficient probabilistic data structure that is used to test membership of an element. The data structure achieves great data compression at the expense of a prescribed false positive rate. 
 
@@ -71,12 +48,7 @@ Querying of the Bloom filter is done by using the same hash functions as before.
 
 Removal of elements can only be done by scrapping the bloom filter and re-creating it from scratch.
 
-{% endautocrossref %}
-
 #### Application Of Bloom Filters 
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Rather than viewing the false positive rates as a liability, it is used to create a tunable parameter that represents the desired privacy level and bandwidth trade-off. A SPV client creates their Bloom filter and sends it to a full node using the message `filterload`, which sets the filter for which transactions are desired. The command `filteradd` allows addition of desired data to the filter without needing to send a totally new Bloom filter, and `filterclear` allows the connection to revert to standard block discovery mechanisms. If the filter has been loaded, then full nodes will send a modified form of blocks, called a merkle block. The merkle block is simply the block header with the merkle branch associated with the set Bloom filter. 
 
@@ -89,12 +61,7 @@ If a user is more privacy-conscious, he can set the Bloom filter to include more
 
 Bloom filters were standardized for use via [BIP37](https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki). Review the BIP for implementation details.
 
-{% endautocrossref %}
-
 ### Future Proposals 
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 There are future proposals such as Unspent Transaction Output (UTXO) commitments in the block chain to find a more satisfactory middle-ground for clients between needing a complete copy of the block chain, or trusting that a majority of your connected peers are not lying. UTXO commitments would enable a very secure client using a finite amount of storage using a data structure that is authenticated in the block chain. These type of proposals are, however, in very early stages, and will require soft forks in the network.
 
@@ -102,4 +69,3 @@ Until these types of operating modes are implemented, modes should be chosen bas
 
 **Resources:** [Original Thread on UTXO Commitments](https://bitcointalk.org/index.php?topic=88208.0), [Authenticated Prefix Trees BIP Proposal](https://github.com/maaku/bips/blob/master/drafts/auth-trie.mediawiki)
 
-{% endautocrossref %}

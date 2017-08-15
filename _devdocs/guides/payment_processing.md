@@ -5,9 +5,6 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/guide_payment_processing.md" %}
 
 ## Payment Processing
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Payment processing encompasses the steps spenders and receivers perform
 to make and accept payments in exchange for products or services. The
@@ -27,12 +24,7 @@ occasional or optional steps.
 It is worth mentioning that each of these steps can be outsourced by
 using third party APIs and services.
 
-{% endautocrossref %}
-
 ### Pricing Orders
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Because of exchange rate variability between satoshis and national
 currencies ([fiat][]{:#term-fiat}{:.term}), many Bitcoin orders are priced in fiat but paid
@@ -76,12 +68,7 @@ to request an additional payment or to issue a refund.   Longer
 expiration periods increase the chance that the exchange rate will
 fluctuate a significant amount before payment is received.
 
-{% endautocrossref %}
-
 ### Requesting Payments
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Before requesting payment, your application must create a Bitcoin
 address, or acquire an address from another program such as
@@ -128,12 +115,7 @@ and payment requests should be sent over HTTPS or other secure methods
 to prevent man-in-the-middle attacks from replacing your Bitcoin address
 with the attacker's address.
 
-{% endautocrossref %}
-
 #### Plain Text
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 To specify an amount directly for copying and pasting, you must provide
 the address, the amount, and the denomination. An expiration time for
@@ -141,15 +123,11 @@ the offer may also be specified.  For example:
 
 (Note: all examples in this section use testnet addresses.)
 
-{% endautocrossref %}
-
 ~~~
 Pay: mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN
 Amount: 100 BTC
 You must pay by: 2014-04-01 at 23:00 UTC
 ~~~
-
-{% autocrossref %}
 
 Indicating the denomination is critical. As of this writing, popular
 Bitcoin wallet software defaults to denominating amounts in either bitcoins (BTC)
@@ -165,25 +143,16 @@ some or all of the following options:
 | 0.000001    | microbitcoin (uBTC, "bits") |
 | 0.00000001  | satoshi             |
 
-{% endautocrossref %}
-
 #### bitcoin: URI
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The [`bitcoin:` URI][bitcoin URI]{:#term-bitcoin-uri}{:.term} scheme defined in BIP21 eliminates denomination
 confusion and saves the spender from copying and pasting two separate
 values. It also lets the payment request provide some additional
 information to the spender. An example:
 
-{% endautocrossref %}
-
 ~~~
 bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN?amount=100
 ~~~
-
-{% autocrossref %}
 
 Only the address is required, and if it is the only thing
 specified, wallets will pre-fill a payment request with it and let
@@ -218,12 +187,7 @@ Programs accepting URIs in any form must ask the user for permission
 before paying unless the user has explicitly disabled prompting (as
 might be the case for micropayments).
 
-{% endautocrossref %}
-
 #### QR Codes
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 QR codes are a popular way to exchange `bitcoin:` URIs in person, in
 images, or in videos. Most mobile Bitcoin wallet apps, and some desktop
@@ -246,12 +210,7 @@ Low-level damage correction works well when space is limited, and
 quartile-level damage correction helps ensure fast scanning when
 displayed on high-resolution screens.
 
-{% endautocrossref %}
-
 #### Payment Protocol
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Bitcoin Core 0.9 supports the new [payment protocol][/en/glossary/payment-protocol]{:#term-payment-protocol}{:.term}. The payment protocol
 adds many important features to payment requests:
@@ -409,12 +368,7 @@ If a refund needs to be issued, Bob's server can safely pay the
 refund-to pubkey script provided by Charlie.  See the Refunds section below
 for more details.
 
-{% endautocrossref %}
-
 ### Verifying Payment
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 As explained in the [Transactions][] and [Block Chain][section block chain] sections, broadcasting
 a transaction to the network doesn't ensure that the receiver gets
@@ -504,12 +458,7 @@ savvy merchants manually flag them as high risk. Your program can provide a
 safe mode which stops automatic payment acceptance on a global or per-customer 
 basis.
 
-{% endautocrossref %}
-
 ### Issuing Refunds
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Occasionally receivers using your applications will need to issue
 refunds. The obvious way to do that, which is very unsafe, is simply
@@ -548,12 +497,7 @@ original payment was made.
 This allows you to ensure the user still has access to the key or keys
 for the `refund_to` address.
 
-{% endautocrossref %}
-
 ### Disbursing Income (Limiting Forex Risk)
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Many receivers worry that their satoshis will be less valuable in the
 future than they are now, called foreign exchange (forex) risk. To limit
@@ -577,12 +521,7 @@ which can lead to different results.
   first, which can help ensure that the receiver's payments always
   confirm, although this has utility only in a few edge cases.
 
-{% endautocrossref %}
-
 #### Merge Avoidance
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 When a receiver receives satoshis in an output, the spender can track
 (in a crude way) how the receiver spends those satoshis. But the spender
@@ -612,12 +551,7 @@ to the payment protocol which will allow payers to avoid merging by
 intelligently distributing their payments among multiple outputs
 provided by the receiver.
 
-{% endautocrossref %}
-
 #### Last In, First Out (LIFO)
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Outputs can be spent as soon as they're received---even before they're
 confirmed. Since recent outputs are at the greatest risk of being
@@ -650,12 +584,7 @@ reputation might be at stake, such as when paying employees. In these
 cases, it's better to wait for transactions to be fully verified (see
 the [Verification subsection][] above) before using them to make payments.
 
-{% endautocrossref %}
-
 #### First In, First Out (FIFO)
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The oldest outputs are the most reliable, as the longer it's been since
 they were received, the more blocks would need to be modified to double
@@ -690,12 +619,7 @@ a receiver who holds each payment for six confirmations, and then
 spends 100% of verified payments to vendors and a savings account on
 a bi-hourly schedule.
 
-{% endautocrossref %}
-
 ### Rebilling Recurring Payments
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Automated recurring payments are not possible with decentralized Bitcoin
 wallets. Even if a wallet supported automatically sending non-reversible
@@ -720,4 +644,3 @@ regular basis and authorize payment---but it should be easier and more
 secure for the spender than clicking an emailed invoice, increasing the
 chance receivers get paid on time.
 
-{% endautocrossref %}

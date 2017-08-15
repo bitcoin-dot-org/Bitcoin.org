@@ -5,12 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/example_p2p_networking.md" %}
 
 ## P2P Network
-{% include helpers/subhead-links.md %}
 
 ### Creating A Bloom Filter
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 In this section, we'll use variable names that correspond to the field
 names in the [`filterload` message documentation][filterload message].
@@ -160,12 +156,7 @@ b50f ....... Filter: 1010 1101 1111 0000
 00 ......... nFlags: BLOOM_UPDATE_NONE
 {% endhighlight %}
 
-{% endautocrossref %}
-
 ### Evaluating A Bloom Filter
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Using a bloom filter to find matching data is nearly identical to
 constructing a bloom filter---except that at each step we check to see
@@ -235,12 +226,7 @@ match failure:
 MATCH FAILURE: Index 0x6 not set in 1010110111110000
 {% endhighlight %}
 
-{% endautocrossref %}
-
 ### Retrieving A MerkleBlock
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 For the `merkleblock` message documentation on the reference page, an
 actual merkle block was retrieved from the network and manually
@@ -351,12 +337,7 @@ python get-merkle.py | nc localhost 8333 | hd
 
 Part of the response is shown in the section below.
 
-{% endautocrossref %}
-
 ### Parsing A MerkleBlock
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 In the section above, we retrieved a merkle block from the network; now
 we will parse it. Most of the block header has been omitted. For
@@ -453,4 +434,3 @@ The final steps would be to ensure the computed computed merkle root
 is identical to the merkle root in the header and check the other steps
 of the parsing checklist in the `merkleblock` message section.
 
-{% endautocrossref %}

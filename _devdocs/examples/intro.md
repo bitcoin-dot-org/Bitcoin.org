@@ -4,8 +4,6 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_includes/devdoc/example_intro.md" %}
 
-{% autocrossref %}
-
 The following guide aims to provide examples to help you start
 building Bitcoin-based applications. To make the best use of this document,
 you may want to install the current version of Bitcoin Core, either from
@@ -66,4 +64,3 @@ are continued below. If you hover your mouse over a paragraph, cross-reference
 links will be shown in blue.  If you hover over a cross-reference link, a brief
 definition of the term will be displayed in a tooltip.
 
-{% endautocrossref %}

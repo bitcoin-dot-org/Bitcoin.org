@@ -5,9 +5,6 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/ref_p2p_networking.md" %}
 
 ## P2P Network
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 This section describes the Bitcoin P2P network protocol (but it is [not a
 specification][]). It does not describe the discontinued direct [IP-to-IP
@@ -20,12 +17,7 @@ All peer-to-peer communication occurs entirely over TCP.
 **Note:** unless their description says otherwise, all multi-byte
 integers mentioned in this section are transmitted in little-endian order.
 
-{% endautocrossref %}
-
 ### Constants And Defaults
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The following constants and defaults are taken from Bitcoin Core's
 [chainparams.cpp][core chainparams.cpp] source code file.
@@ -51,12 +43,7 @@ Bitcoin Core's [chainparams.cpp][core chainparams.cpp] also includes
 other constants useful to programs, such as the hash of the genesis
 blocks for the different networks.
 
-{% endautocrossref %}
-
 ### Protocol Versions
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The table below lists some notable versions of the P2P network protocol,
 with the most recent versions listed first. (If you know of a protocol
@@ -82,12 +69,7 @@ As of Bitcoin Core 0.14.1, the most recent protocol version is 70015.
 | 209     | Bitcoin Core 0.2.9 <br>(May 2010)  | • Added checksum field to message headers.
 | 106     | Bitcoin Core 0.1.6 <br>(Oct 2009)  | • Added receive IP address fields to `version` message.
 
-{% endautocrossref %}
-
 ### Message Headers
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 All messages in the network protocol use the same container format,
 which provides a required multi-field message header and an optional payload.
@@ -110,12 +92,7 @@ f9beb4d9 ................... Start string: Mainnet
 5df6e0e2 ................... Checksum: SHA256(SHA256(<empty>))
 {% endhighlight %}
 
-{% endautocrossref %}
-
 ### Data Messages
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The following network messages all request or provide data related to
 transactions and blocks.
@@ -144,12 +121,7 @@ Type identifier zero and type identifiers greater than three are reserved
 for future implementations. Bitcoin Core ignores all inventories with
 one of these unknown types.
 
-{% endautocrossref %}
-
 #### Block
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The `block` message transmits a single serialized block in the format
 described in the [serialized blocks section][section serialized blocks].
@@ -167,12 +139,7 @@ different reasons:
    send the block from multiple nodes, possibly sending the same block
    to some peers more than once.
 
-{% endautocrossref %}
-
 #### GetBlocks
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The `getblocks` message requests an `inv` message that provides block
 header hashes starting from a particular point in the block chain. It
@@ -219,12 +186,7 @@ d39f608a7775b537729884d4e6633bb2
 00000000000000000000000000000000 ... Stop hash
 {% endhighlight %}
 
-{% endautocrossref %}
-
 #### GetData
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The `getdata` message requests one or more data objects from another
 node. The objects are requested by an inventory, which the requesting
@@ -243,12 +205,7 @@ previously advertised it had that data by sending an `inv` message.
 The format and maximum size limitations of the `getdata` message are
 identical to the `inv` message; only the message header differs.
 
-{% endautocrossref %}
-
 #### GetHeaders
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 *Added in protocol version 31800.*
 
@@ -262,12 +219,7 @@ with one minor difference: the `inv` reply to the `getblocks` message
 will include no more than 500 block header hashes; the `headers` reply
 to the `getheaders` message will include as many as 2,000 block headers.
 
-{% endautocrossref %}
-
 #### Headers
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 *Added in protocol version 31800.*
 
@@ -298,12 +250,7 @@ fe9f0864 ........................... Nonce
 00 ................................. Transaction count (0x00)
 {% endhighlight %}
 
-{% endautocrossref %}
-
 #### Inv
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The `inv` message (inventory message) transmits one or more inventories of
 objects known to the transmitting peer.  It can be sent unsolicited to
@@ -334,12 +281,7 @@ de55ffd709ac1f5dc509a0925d0b1fc4
 a055aaf1d872e94ae85e9817b2c68dc7 ... Hash (TXID)
 {% endhighlight %}
 
-{% endautocrossref %}
-
 #### MemPool
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 *Added in protocol version 60002.*
 
@@ -383,12 +325,7 @@ be complete:
 There is no payload in a `mempool` message.  See the [message header
 section][section message header] for an example of a message without a payload.
 
-{% endautocrossref %}
-
 #### MerkleBlock
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 *Added in protocol version 70001 as described by BIP37.*
 
@@ -452,7 +389,6 @@ a `tx` message.
 
 ##### Parsing A MerkleBlock Message
 {:.no_toc}
-{% include helpers/subhead-links.md %}
 
 As seen in the annotated hexdump above, the `merkleblock` message
 provides three special data types: a transaction count, a list of
@@ -525,7 +461,6 @@ example].
 
 ##### Creating A MerkleBlock Message
 {:.no_toc}
-{% include helpers/subhead-links.md %}
 
 It's easier to understand how to create a `merkleblock` message after
 you understand how to parse an already-created message, so we recommend
@@ -569,12 +504,7 @@ instructions in the table above, processing is complete.  Pad your flag
 list to a byte boundary and construct the `merkleblock` message using the
 template near the beginning of this subsection.
 
-{% endautocrossref %}
-
 #### NotFound
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 *Added in protocol version 70001.*
 
@@ -588,12 +518,7 @@ send those blocks.)
 The format and maximum size limitations of the `notfound` message are
 identical to the `inv` message; only the message header differs.
 
-{% endautocrossref %}
-
 #### Tx
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The `tx` message transmits a single transaction in the raw transaction
 format. It can be sent in a variety of situations;
@@ -614,16 +539,7 @@ format. It can be sent in a variety of situations;
 For an example hexdump of the raw transaction format, see the [raw
 transaction section][raw transaction format].
 
-{% endautocrossref %}
-
-
-
-
-
 ### Control Messages
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The following network messages all help control the connection between
 two peers or allow them to advise each other about the rest of the
@@ -637,12 +553,7 @@ information. In addition, this section does not yet cover P2P protocol
 operation over the [Tor network][tor]; if you would like to contribute
 information about Tor, please [open an issue][docs issue].
 
-{% endautocrossref %}
-
 #### Addr
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The `addr` (IP address) message relays connection information
 for peers on the network. Each peer which wants to accept incoming
@@ -683,27 +594,14 @@ d91f4854 ........................... Epoch time: 1414012889
 [...] .............................. (999 more addresses omitted)
 {% endhighlight %}
 
-{% endautocrossref %}
-
-
-
-
 #### Alert
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 *Added in protocol version 311.*
 *Removed in protocol version 70013 and released in Bitcoin Core 0.13.0*
 
 The legacy p2p network alert messaging system has been retired; however, internal alerts, partition detection warnings and the `-alertnotify` option features remain. See [Alert System Retirement](https://bitcoin.org/en/alert/2016-11-01-alert-retirement) for details.
 
-{% endautocrossref %}
-
 #### FeeFilter
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 *Added in protocol version 70013 as described by BIP133.*
 
@@ -742,17 +640,11 @@ inv messages generated from a mempool message are subject to a fee filter if it 
 The annotated hexdump below shows a `feefilter` message. (The message
 header has been omitted.)
 
-{% endautocrossref %}
-
 {% highlight text %}
 7cbd000000000000 ... satoshis per kilobyte: 48,508
 {% endhighlight %}
 
-
 #### FilterAdd
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 *Added in protocol version 70001 as described by BIP37.*
 
@@ -787,12 +679,7 @@ fdacf9b3eb077412e7a968d2e4f11b9a
 9dee312d666187ed77ee7d26af16cb0b ... Element (A TXID)
 {% endhighlight %}
 
-{% endautocrossref %}
-
 #### FilterClear
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 *Added in protocol version 70001 as described by BIP37.*
 
@@ -808,13 +695,7 @@ a `filterload` message before a `filterclear` message.
 There is no payload in a `filterclear` message.  See the [message header
 section][section message header] for an example of a message without a payload.
 
-{% endautocrossref %}
-
-
 #### FilterLoad
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 *Added in protocol version 70001 as described by BIP37.*
 
@@ -1047,12 +928,7 @@ make the filter useless. For this reason, clients using automatic filter
 updates need to monitor the actual false positive rate and send a new
 filter when the rate gets too high.
 
-{% endautocrossref %}
-
 #### GetAddr
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The `getaddr` message requests an `addr` message from the receiving
 node, preferably one with lots of IP addresses of other receiving nodes.
@@ -1063,13 +939,7 @@ messages to arrive over time.
 There is no payload in a `getaddr` message.  See the [message header
 section][section message header] for an example of a message without a payload.
 
-{% endautocrossref %}
-
-
 #### Ping
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The `ping` message helps confirm that the receiving peer is still
 connected. If a TCP/IP error is encountered when sending the `ping`
@@ -1092,12 +962,7 @@ header has been omitted.)
 0094102111e2af4d ... Nonce
 {% endhighlight %}
 
-{% endautocrossref %}
-
 #### Pong
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 *Added in protocol version 60001 as described by BIP31.*
 
@@ -1112,12 +977,7 @@ the same nonce received in the `ping` message it is replying to.
 The format of the `pong` message is identical to the `ping` message;
 only the message header differs.
 
-{% endautocrossref %}
-
 #### Reject
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 *Added in protocol version 70002 as described by BIP61.*
 
@@ -1168,12 +1028,7 @@ header has been omitted.)
 947baf86a31017939575fb2354222821 ... TXID
 {% endhighlight %}
 
-{% endautocrossref %}
-
 #### SendHeaders
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The `sendheaders` message tells the receiving peer to send new block
 announcements using a `headers` message rather than an `inv` message.
@@ -1181,12 +1036,7 @@ announcements using a `headers` message rather than an `inv` message.
 There is no payload in a `sendheaders` message.  See the [message header
 section][section message header] for an example of a message without a payload.
 
-{% endautocrossref %}
-
 #### VerAck
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The `verack` message acknowledges a previously-received `version`
 message, informing the connecting node that it can begin to send
@@ -1194,13 +1044,7 @@ other messages. The `verack` message has no payload; for an example
 of a message with no payload, see the [message headers
 section][section message header].
 
-{% endautocrossref %}
-
-
 #### Version
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The `version` message provides information about the transmitting node
 to the receiving node at the beginning of a connection. Until both peers
@@ -1261,4 +1105,3 @@ cf050500 ........................... Start height: 329167
 01 ................................. Relay flag: true
 {% endhighlight %}
 
-{% endautocrossref %}

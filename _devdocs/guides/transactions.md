@@ -5,9 +5,6 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/guide_transactions.md" %}
 
 ## Transactions
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 <!-- reference tx (made by Satoshi in block 170):
     bitcoind decoderawtransaction $( bitcoind getrawtransaction f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16 )
@@ -154,35 +151,22 @@ network. Each peer and miner independently validates the transaction
 before broadcasting it further or attempting to include it in a new block of
 transactions.
 
-{% endautocrossref %}
-
 ### P2PKH Script Validation
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The validation procedure requires evaluation of the signature script and pubkey script.
 In a P2PKH output, the pubkey script is:
-
-{% endautocrossref %}
 
 ~~~
 OP_DUP OP_HASH160 <PubkeyHash> OP_EQUALVERIFY OP_CHECKSIG
 ~~~
 
-{% autocrossref %}
-
 The spender's signature script is evaluated and prefixed to the beginning of the
 script. In a P2PKH transaction, the signature script contains an secp256k1 signature (sig)
 and full public key (pubkey), creating the following concatenation:
 
-{% endautocrossref %}
-
 ~~~
 <Sig> <PubKey> OP_DUP OP_HASH160 <PubkeyHash> OP_EQUALVERIFY OP_CHECKSIG
 ~~~
-
-{% autocrossref %}
 
 The script language is a
 [Forth-like](https://en.wikipedia.org/wiki/Forth_%28programming_language%29)
@@ -246,12 +230,7 @@ If *false* is not at the top of the stack after the pubkey script has been
 evaluated, the transaction is valid (provided there are no other
 problems with it).
 
-{% endautocrossref %}
-
 ### P2SH Scripts
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Pubkey scripts are created by spenders who have little interest what
 that script does. Receivers do care about the script conditions and, if
@@ -291,12 +270,7 @@ This makes collecting a P2SH-style address as simple as collecting a
 P2PKH-style address. The hash also obfuscates any public keys in the
 redeem script, so P2SH scripts are as secure as P2PKH pubkey hashes.
 
-{% endautocrossref %}
-
 ### Standard Transactions
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 After the discovery of several dangerous bugs in early versions of
 Bitcoin, a test was added which only accepted transactions from the
@@ -320,21 +294,13 @@ a version number---if users started arbitrarily changing the version
 number, it would become useless as a tool for introducing
 backwards-incompatible features.
 
-
 As of Bitcoin Core 0.9, the standard pubkey script types are:
-
-{% endautocrossref %}
 
 #### Pay To Public Key Hash (P2PKH)
 {:.no_toc}
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 P2PKH is the most common form of pubkey script used to send a transaction to one
 or multiple Bitcoin addresses.
-
-{% endautocrossref %}
 
 ~~~
 Pubkey script: OP_DUP OP_HASH160 <PubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
@@ -343,15 +309,10 @@ Signature script: <sig> <pubkey>
 
 #### Pay To Script Hash (P2SH)
 {:.no_toc}
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 P2SH is used to send a transaction to a script hash. Each of the standard
 pubkey scripts can be used as a P2SH redeem script, but in practice only the
 multisig pubkey script makes sense until more transaction types are made standard.
-
-{% endautocrossref %}
 
 ~~~
 Pubkey script: OP_HASH160 <Hash160(redeemScript)> OP_EQUAL
@@ -360,9 +321,6 @@ Signature script: <sig> [sig] [sig...] <redeemScript>
 
 #### Multisig
 {:.no_toc}
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Although P2SH multisig is now generally used for multisig transactions, this base script
 can be used to require multiple signatures before a UTXO can be spent.
@@ -383,18 +341,12 @@ corresponding public keys appear in the pubkey script or redeem
 script. See the description in [`OP_CHECKMULTISIG`][op_checkmultisig]
 for details.
 
-{% endautocrossref %}
-
 ~~~
 Pubkey script: <m> <A pubkey> [B pubkey] [C pubkey...] <n> OP_CHECKMULTISIG
 Signature script: OP_0 <A sig> [B sig] [C sig...]
 ~~~
 
-{% autocrossref %}
-
 Although it’s not a separate transaction type, this is a P2SH multisig with 2-of-3:
-
-{% endautocrossref %}
 
 ~~~
 Pubkey script: OP_HASH160 <Hash160(redeemScript)> OP_EQUAL
@@ -404,16 +356,11 @@ Signature script: OP_0 <A sig> <C sig> <redeemScript>
 
 #### Pubkey
 {:.no_toc}
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Pubkey outputs are a simplified form of the P2PKH pubkey script,
 but they aren’t as
 secure as P2PKH, so they generally
 aren’t used in new transactions anymore.
-
-{% endautocrossref %}
 
 ~~~
 Pubkey script: <pubkey> OP_CHECKSIG
@@ -422,9 +369,6 @@ Signature script: <sig>
 
 #### Null Data
 {:.no_toc}
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 [Null data][/en/glossary/null-data-transaction]{:#term-null-data}{:.term}
 transaction type relayed and mined by default in Bitcoin Core 0.9.0 and
@@ -442,8 +386,6 @@ rules, such as not having any data pushes larger than 520 bytes.
 Bitcoin Core 0.9.x to 0.10.x will, by default, relay and mine null data
 transactions with up to 40 bytes in a single data push and only one null
 data output that pays exactly 0 satoshis:
-
-{% endautocrossref %}
 
 ~~~
 Pubkey Script: OP_RETURN <0 to 40 bytes of data>
@@ -464,9 +406,6 @@ set the maximum number of bytes in null data outputs that you will relay
 or mine.
 
 #### Non-Standard Transactions
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 If you use anything besides a standard pubkey script in an output, peers
 and miners using the default Bitcoin Core settings will neither
@@ -515,12 +454,7 @@ conditions:
   P2PKH or P2SH output on a Bitcoin Core node with the default relay fee.
   Exception: standard null data outputs must receive zero satoshis.
 
-{% endautocrossref %}
-
 ### Signature Hash Types
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 `OP_CHECKSIG` extracts a non-stack argument from each signature it
 evaluates, allowing the signer to decide which parts of the transaction
@@ -579,12 +513,7 @@ between different sigs -->
 <!-- TODO: add to the technical section details about what the different
 hash types sign, including the procedure for inserting the subscript -->
 
-{% endautocrossref %}
-
 ### Locktime And Sequence Number
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 One thing all signature hash types sign is the transaction's [locktime][/en/glossary/locktime]{:#term-locktime}{:.term}.
 (Called nLockTime in the Bitcoin Core source code.)
@@ -638,12 +567,7 @@ enable locktime.
   can be added to any block whose block time is greater
   than the locktime.
 
-{% endautocrossref %}
-
 ### Transaction Fees And Change
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Transactions pay fees based on the total byte size of the signed transaction. Fees per byte are calculated based on current demand for space in mined blocks with fees rising as demand increases.  The transaction fee is given to the
 Bitcoin miner, as explained in the [block chain section][section block chain], and so it is
@@ -672,12 +596,7 @@ or P2SH script hash as was used in the UTXO, but for the reasons
 described in the [next subsection](#avoiding-key-reuse), it is highly recommended that change
 outputs be sent to a new P2PKH or P2SH address.
 
-{% endautocrossref %}
-
 ### Avoiding Key Reuse
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 In a transaction, the spender and receiver each reveal to each other all
 public keys or addresses used in the transaction. This allows either
@@ -726,12 +645,7 @@ users from reusing addresses. If your application needs to provide a
 fixed URI to which payments should be sent, please see the
 [`bitcoin:` URI section][bitcoin URI subsection] below.
 
-{% endautocrossref %}
-
 ### Transaction Malleability
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 None of Bitcoin's signature hash types protect the signature script, leaving
 the door open for a limited denial of service attack called [transaction
@@ -781,4 +695,3 @@ in a way that invalidates the lost transaction. One method which will
 always work is to ensure the reissued payment spends all of the same
 outputs that the lost transaction used as inputs.
 
-{% endautocrossref %}

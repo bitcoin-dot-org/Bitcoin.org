@@ -4,8 +4,6 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_includes/devdoc/ref_intro.md" %}
 
-{% autocrossref %}
-
 The Developer Reference aims to provide technical details and API information
 to help you start building Bitcoin-based applications, but it is [not a
 specification][]. To make the best use of
@@ -24,13 +22,8 @@ are continued below. If you hover your mouse over a paragraph, cross-reference
 links will be shown in blue.  If you hover over a cross-reference link, a brief
 definition of the term will be displayed in a tooltip.
 
-{% endautocrossref %}
-
 #### Not A Specification
 {:.no_toc}
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The Bitcoin.org Developer Documentation describes how Bitcoin works to
 help educate new Bitcoin developers, but it is not a specification---and
@@ -65,4 +58,3 @@ allow you to report an issue or to edit the documentation on GitHub.
 Please use those links if you find any errors or important missing
 information.
 
-{% endautocrossref %}
