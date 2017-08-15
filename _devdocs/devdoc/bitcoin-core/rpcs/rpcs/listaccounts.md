@@ -72,5 +72,4 @@ Result:
 * [GetAddressesByAccount][rpc getaddressesbyaccount]: {{summary_getAddressesByAccount}}
 * [ListReceivedByAccount][rpc listreceivedbyaccount]: {{summary_listReceivedByAccount}}
 
-
 {% endautocrossref %}

@@ -49,7 +49,6 @@ JSON-RPC specification][JSON-RPC version 1.0]. Specifically,
 the HTTP `POST` data of a request must be a JSON object with the following
 format:
 
-
 | Name                 | Type            | Presence                    | Description
 |----------------------|-----------------|-----------------------------|----------------
 | Request              | object          | Required<br>(exactly 1)     | The JSON-RPC<!--noref--> request object
@@ -77,7 +76,6 @@ output<!--noref-->, we use the following conventions
 * "Presence" indicates whether or not a field must be present within its
    containing array or object. Note that an optional object may still have
    required children.
-
 
 The HTTP response data for a RPC request is a JSON object with the following
 format:

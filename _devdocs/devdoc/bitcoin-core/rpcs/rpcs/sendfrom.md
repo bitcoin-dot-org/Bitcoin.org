@@ -90,7 +90,6 @@ using only UTXOs with at least six confirmations, giving the
 transaction the comment "Example spend" and labeling the spender
 "Example.com":
 
-
 {% highlight bash %}
 bitcoin-cli -testnet sendfrom "test" \
             mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe \
@@ -110,6 +109,5 @@ f14ee5368c339644d3037d929bbe1f1544a532f8826c7b7288cb994b0b0ff5d8
 
 * [SendToAddress][rpc sendtoaddress]: {{summary_sendToAddress}}
 * [SendMany][rpc sendmany]: {{summary_sendMany}}
-
 
 {% endautocrossref %}

@@ -57,5 +57,4 @@ Results:
 * [GetPeerInfo][rpc getpeerinfo]: {{summary_getPeerInfo}}
 * [P2P Ping Message][ping message]
 
-
 {% endautocrossref %}

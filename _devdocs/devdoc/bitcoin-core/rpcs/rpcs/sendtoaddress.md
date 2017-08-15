@@ -98,5 +98,4 @@ a2a2eb18cb051b5fe896a32b1cb20b179d981554b6bd7c5a956e56a0eecb04f0
 * [SendMany][rpc sendmany]: {{summary_sendMany}}
 * [Move][rpc move]: {{summary_move}}
 
-
 {% endautocrossref %}

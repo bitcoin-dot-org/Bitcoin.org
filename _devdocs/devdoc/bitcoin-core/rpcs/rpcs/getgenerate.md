@@ -22,5 +22,4 @@ version of Bitcoin Core, use `help getgenerate` to get help.
 * [GenerateToAddress][rpc generatetoaddress]: {{summary_generateToAddress}}
 * [GetMiningInfo][rpc getmininginfo]: {{summary_getMiningInfo}}
 
-
 {% endautocrossref %}
