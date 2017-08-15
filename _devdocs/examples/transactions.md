@@ -5,12 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/example_transactions.md" %}
 
 ## Transactions
-{% include helpers/subhead-links.md %}
 
 ### Transaction Tutorial
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Creating transactions is something most Bitcoin applications do.
 This section describes how to use Bitcoin Core's RPC interface to
@@ -25,17 +21,7 @@ In order to use this tutorial, you will need to setup [Bitcoin Core][core execut
 and create a regression test mode environment with 50 BTC in your test
 wallet.
 
-{% endautocrossref %}
-
-
-
-
-
-
 #### Simple Spending
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Bitcoin Core provides several RPCs which handle all the details of
 spending, including creating change outputs and paying appropriate fees.
@@ -127,17 +113,7 @@ list of UTXOs.
 Create a new block to confirm the transaction above (takes less than a
 second) and clear the shell variable.
 
-{% endautocrossref %}
-
-
-
-
-
-
 #### Simple Raw Transaction
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The raw transaction RPCs allow users to create custom transactions and
 delay broadcasting those transactions. However, mistakes made in raw
@@ -252,7 +228,6 @@ would be a whopping 40 bitcoins. See the Complex Raw Transaction
 subsection below for how to create a transaction with multiple outputs so you
 can send the change back to yourself.
 
-
 <div markdown="1" class="multicode">
 {% highlight bash %}
 > bitcoin-cli -regtest decoderawtransaction $RAW_TX
@@ -353,16 +328,7 @@ connected to other peers because we started in regtest mode.
 Generate a block to confirm the transaction and clear our shell
 variables.
 
-{% endautocrossref %}
-
-
-
-
-
 #### Complex Raw Transaction
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 In this example, we'll create a transaction with two inputs and two
 outputs.  We'll sign each of the inputs separately, as might happen if
@@ -511,7 +477,6 @@ e8677d2cc74df51f738285013c260000000000ffffffff02f028d6dc01000000\
 Create the raw transaction using `createrawtransaction` much the same as
 before, except now we have two inputs and two outputs.
 
-
 <div markdown="1" class="multicode">
 {% highlight bash %}
 > bitcoin-cli -regtest signrawtransaction $RAW_TX '[]' '''
@@ -607,16 +572,7 @@ not going to send this transaction to the connected node with
 Signing subsection below how to spend a transaction which is not yet in
 the block chain or memory pool.
 
-{% endautocrossref %}
-
-
-
-
-
 #### Offline Signing
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 We will now spend the transaction created in the Complex Raw Transaction
 subsection above without sending it to the local node first. This is the
@@ -744,7 +700,6 @@ variable.
 > UTXO_OUTPUT_SCRIPT=76a914fa5139067622fd7e1e722a05c17c2bb7d5fd6[...]
 {% endhighlight %}
 </div>
-
 
 Decode the signed raw transaction so we can get its txid. Also, choose a
 specific one of its UTXOs to spend and save that UTXO's output index number
@@ -906,17 +861,7 @@ are part of the local node's memory pool.
 
 Remove old shell variables. 
 
-{% endautocrossref %}
-
-
-
-
-
-
 #### P2SH Multisig
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 In this subsection, we will create a P2SH multisig address, spend
 satoshis to it, and then spend those satoshis from it to another
@@ -1276,4 +1221,3 @@ complete.
 We send the transaction spending the P2SH multisig output to the local
 node, which accepts it.
 
-{% endautocrossref %}

@@ -5,14 +5,10 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/ref_transactions.md" %}
 
 ## Transactions
-{% include helpers/subhead-links.md %}
 
 The following subsections briefly document core transaction details.
 
 #### OpCodes
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The opcodes used in the pubkey scripts of standard transactions are:
 
@@ -124,12 +120,7 @@ Failure, aborted: two signature matches required but none found so
                   far, and there's only one pubkey remaining
 {% endhighlight %}
 
-{% endautocrossref %}
-
 #### Address Conversion
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The hashes used in P2PKH and P2SH outputs are commonly encoded as Bitcoin
 addresses.  This is the procedure to encode those hashes and decode the
@@ -194,12 +185,7 @@ To convert addresses back into hashes, reverse the base58 encoding, extract
 the checksum, repeat the steps to create the checksum and compare it
 against the extracted checksum, and then remove the version byte.
 
-{% endautocrossref %}
-
 #### Raw Transaction Format
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Bitcoin transactions are broadcast between peers
 in a serialized byte format, called [raw format][/en/glossary/serialized-transaction]{:#term-raw-format}{:.term}.
@@ -231,13 +217,8 @@ txOut structures may recur within a transaction. CompactSize unsigned
 integers are a form of variable-length integers; they are described in
 the [CompactSize section][section CompactSize unsigned integer].
 
-{% endautocrossref %}
-
 ##### TxIn: A Transaction Input (Non-Coinbase) {#txin}
 {:.no_toc}
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Each non-coinbase input spends an outpoint from a previous transaction.
 (Coinbase inputs are described separately after the example section below.)
@@ -249,13 +230,8 @@ Each non-coinbase input spends an outpoint from a previous transaction.
 | *Varies* | signature script | char[]               | A script-language script which satisfies the conditions placed in the outpoint's pubkey script.  Should only contain data pushes; see the [signature script modification warning][].
 | 4        | sequence         | uint32_t             | Sequence number.  Default for Bitcoin Core and almost all other programs is 0xffffffff.
 
-{% endautocrossref %}
-
 ##### Outpoint: The Specific Part Of A Specific Output {#outpoint}
 {:.no_toc}
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Because a single transaction can include multiple outputs, the outpoint
 structure includes both a TXID and an output index number to refer to
@@ -266,13 +242,8 @@ specific output.
 | 32    | hash  | char[32]  | The TXID of the transaction holding the output to spend.  The TXID is a hash provided here in internal byte order.
 | 4     | index | uint32_t  | The output index number of the specific output to spend from the transaction. The first output is 0x00000000.
 
-{% endautocrossref %}
-
 ##### TxOut: A Transaction Output {#txout}
 {:.no_toc}
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Each output spends a certain number of satoshis, placing them under
 control of anyone who can satisfy the provided pubkey script.
@@ -324,13 +295,8 @@ to a new pay-to-pubkey-hash (P2PKH) output.
 00000000 ................................... locktime: 0 (a block height)
 {% endhighlight %}
 
-{% endautocrossref %}
-
 ##### Coinbase Input: The Input Of The First Transaction In A Block {#coinbase}
 {:.no_toc}
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The first transaction in a block, called the coinbase transaction, must
 have exactly one input, called a coinbase. The coinbase input currently
@@ -382,12 +348,7 @@ An itemized coinbase transaction:
 | 00000000 ............................ Locktime
 {% endhighlight %}
 
-{% endautocrossref %}
-
 ### CompactSize Unsigned Integers
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The raw transaction format and several peer-to-peer network messages use
 a type of variable-length integer to indicate the number of bytes in a
@@ -415,4 +376,3 @@ the numbers look like regular unsigned integers in little-endian order.
 
 For example, the number 515 is encoded as 0xfd0302.
 
-{% endautocrossref %}

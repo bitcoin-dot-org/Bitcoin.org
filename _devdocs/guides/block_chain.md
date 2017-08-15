@@ -5,9 +5,6 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/guide_block_chain.md" %}
 
 ## Block Chain
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The block chain provides Bitcoin's public ledger, an ordered and timestamped record
 of transactions. This system is used to protect against double spending
@@ -21,12 +18,7 @@ nodes follow to maintain consensus are called [consensus
 rules][/en/glossary/consensus-rules]{:#term-consensus-rules}{:.term}. This section describes many of
 the consensus rules used by Bitcoin Core.
 
-{% endautocrossref %}
-
 ### Block Chain Overview
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 ![Block Chain Overview](/img/dev/en-blockchain-overview.svg)
 
@@ -76,12 +68,7 @@ For example, in the illustration above, each transaction spends 10,000 satoshis
 fewer than it receives from its combined inputs, effectively paying a 10,000
 satoshi transaction fee.
 
-{% endautocrossref %}
-
 ### Proof Of Work
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 The block chain is collaboratively maintained by anonymous peers on the network, so
 Bitcoin requires that each block prove a significant amount of work was invested in
@@ -151,12 +138,7 @@ a block does not slow down hashing with extra I/O, and adding additional
 transaction data only requires the recalculation of the ancestor hashes in
 the merkle tree.
 
-{% endautocrossref %}
-
 ### Block Height And Forking
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Any Bitcoin miner who successfully hashes a block header to a value
 below the target threshold can add the entire block to the block chain
@@ -196,12 +178,7 @@ Since multiple blocks can have the same height during a block chain fork, block
 height should not be used as a globally unique identifier. Instead, blocks
 are usually referenced by the hash of their header (often with the byte order reversed, and in hexadecimal).
 
-{% endautocrossref %}
-
 ### Transaction Data
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Every block must include one or more transactions. The first one of these
 transactions must be a coinbase transaction, also called a generation transaction, which should collect and
@@ -232,8 +209,6 @@ process repeats until only one hash remains, the merkle root.
 For example, if transactions were merely joined (not hashed), a
 five-transaction merkle tree would look like the following text diagram:
 
-{% endautocrossref %}
-
 ~~~
        ABCDEEEE .......Merkle root
       /        \
@@ -243,8 +218,6 @@ five-transaction merkle tree would look like the following text diagram:
 /  \  /  \  /
 A  B  C  D  E .........Transactions
 ~~~
-
-{% autocrossref %}
 
 As discussed in the Simplified Payment Verification (SPV) subsection,
 the merkle tree allows clients to verify for
@@ -266,12 +239,7 @@ Note: If identical txids are found within the same block, there is a possibility
 Since it is impractical to have separate transactions with identical txids, this does not impose a burden on honest software, but must be checked if the invalid status of a block is to be cached;
 otherwise, a valid block with the duplicates eliminated could have the same merkle root and block hash, but be rejected by the cached invalid outcome, resulting in security bugs such as CVE-2012-2459.
 
-{% endautocrossref %}
-
 ### Consensus Rule Changes
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 To maintain consensus, all full nodes validate blocks using the same
 consensus rules. However, sometimes the consensus rules are changed to
@@ -341,12 +309,7 @@ downgrade was removed. A document from Gavin Andresen outlines [how
 future rule changes may be
 implemented](https://gist.github.com/gavinandresen/2355445).
 
-{% endautocrossref %}
-
 #### Detecting Forks
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Non-upgraded nodes may use and distribute incorrect information during
 both types of forks, creating several situations which could lead to
@@ -387,4 +350,3 @@ SPV clients should also monitor for block and transaction version number
 increases to ensure they process received transactions and create new
 transactions using the current consensus rules.
 
-{% endautocrossref %}
