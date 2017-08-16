@@ -1,7 +1,7 @@
-{% comment %}
-This file is licensed under the MIT License (MIT) available on
-http://opensource.org/licenses/MIT.
-{% endcomment %}
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+---
 {% assign filename="_includes/devdoc/example_intro.md" %}
 
 The following guide aims to provide examples to help you start

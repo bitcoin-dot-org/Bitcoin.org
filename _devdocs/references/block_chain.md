@@ -1,8 +1,7 @@
-{% comment %}
-This file is licensed under the MIT License (MIT) available on
-http://opensource.org/licenses/MIT.
-{% endcomment %}
-{% assign filename="_includes/devdoc/ref_block_chain.md" %}
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+---
 
 ## Block Chain
 

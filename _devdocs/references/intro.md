@@ -1,8 +1,7 @@
-{% comment %}
-This file is licensed under the MIT License (MIT) available on
-http://opensource.org/licenses/MIT.
-{% endcomment %}
-{% assign filename="_includes/devdoc/ref_intro.md" %}
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+---
 
 The Developer Reference aims to provide technical details and API information
 to help you start building Bitcoin-based applications, but it is [not a
