@@ -1,10 +1,9 @@
-{% comment %}
-This file is licensed under the MIT License (MIT) available on
-http://opensource.org/licenses/MIT.
-{% endcomment %}
-{% assign filename="_includes/devdoc/ref_wallets.md" %}
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+---
 
-## Wallets 
+## Wallets
 
 ### Deterministic Wallet Formats
 <!-- no subhead-links here -->

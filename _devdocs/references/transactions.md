@@ -1,8 +1,7 @@
-{% comment %}
-This file is licensed under the MIT License (MIT) available on
-http://opensource.org/licenses/MIT.
-{% endcomment %}
-{% assign filename="_includes/devdoc/ref_transactions.md" %}
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+---
 
 ## Transactions
 
@@ -151,7 +150,7 @@ bytes commonly used by Bitcoin are:
 
 4. Append the checksum to the version and hash, and encode it as a base58
    string: <!--[-->`BASE58(version . hash . checksum)`<!--]-->
- 
+
 Bitcoin's base58 encoding, called [Base58Check][/en/glossary/base58check]{:#term-base58check}{:.term} may not match other implementations. Tier
 Nolan provided the following example encoding algorithm to the Bitcoin
 Wiki [Base58Check
@@ -164,7 +163,7 @@ x = convert_bytes_to_big_integer(hash_result)
 
 output_string = ""
 
-while(x > 0) 
+while(x > 0)
    {
        (x, remainder) = divide(x, 58)
        output_string.append(code_string[remainder])
@@ -210,7 +209,7 @@ A raw transaction has the following top-level format:
 | *Varies* | tx_in        | txIn                | Transaction inputs.  See description of txIn below.
 | *Varies* | tx_out count | compactSize uint    | Number of outputs in this transaction.
 | *Varies* | tx_out       | txOut               | Transaction outputs.  See description of txOut below.
-| 4        | lock_time    | uint32_t            | A time (Unix epoch time) or block number.  See the [locktime parsing rules][]. 
+| 4        | lock_time    | uint32_t            | A time (Unix epoch time) or block number.  See the [locktime parsing rules][].
 
 A transaction may have multiple inputs and outputs, so the txIn and
 txOut structures may recur within a transaction. CompactSize unsigned
