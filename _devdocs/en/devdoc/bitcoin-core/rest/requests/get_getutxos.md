@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rest/requests/get_getutxos.md" %}
 
 ##### GET GetUtxos
-{% include helpers/subhead-links.md %}
 
 {% assign summary_restGetGetUtxos="returns an UTXO set given a set of outpoints." %}
-
-{% autocrossref %}
 
 The `GET getutxos` operation {{summary_restGetGetUtxos}} 
 
@@ -186,4 +183,3 @@ Result (whitespaced added):
 
 * [GetTxOutSetInfo][rpc gettxoutsetinfo] RPC: {{summary_getTxOutSetInfo}}
 
-{% endautocrossref %}

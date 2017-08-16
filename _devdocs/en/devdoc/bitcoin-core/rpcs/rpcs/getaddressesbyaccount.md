@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getaddressesbyaccount.md" %}
 
 ##### GetAddressesByAccount
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getAddressesByAccount="returns a list of every address assigned to a particular account." %}
-
-{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -66,4 +63,3 @@ Result:
 * [GetAccount][rpc getaccount]: {{summary_getAccount}}
 * [GetBalance][rpc getbalance]: {{summary_getBalance}}
 
-{% endautocrossref %}

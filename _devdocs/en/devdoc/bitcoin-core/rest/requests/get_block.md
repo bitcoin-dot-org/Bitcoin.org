@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rest/requests/get_block.md" %}
 
 ##### GET Block
-{% include helpers/subhead-links.md %}
 
 {% assign summary_restGetBlock="gets a block with a particular header hash from the local block database either as a JSON object or as a serialized block." %}
-
-{% autocrossref %}
 
 The `GET block` operation {{summary_restGetBlock}}
 
@@ -237,4 +234,3 @@ Result (whitespaced added):
 * [GetBlock][rpc getblock] RPC: {{summary_getBlock}}
 * [GetBlockHash][rpc getblockhash] RPC: {{summary_getBlockHash}}
 
-{% endautocrossref %}

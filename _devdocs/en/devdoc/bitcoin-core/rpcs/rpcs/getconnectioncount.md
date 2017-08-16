@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getconnectioncount.md" %}
 
 ##### GetConnectionCount
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getConnectionCount="returns the number of connections to other nodes." %}
-
-{% autocrossref %}
 
 The `getconnectioncount` RPC {{summary_getConnectionCount}}
 
@@ -43,4 +40,3 @@ Result:
 * [GetPeerInfo][rpc getpeerinfo]: {{summary_getPeerInfo}}
 * [GetNetworkInfo][rpc getnetworkinfo]: {{summary_getNetworkInfo}}
 
-{% endautocrossref %}

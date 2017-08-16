@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/walletlock.md" %}
 
 ##### WalletLock
-{% include helpers/subhead-links.md %}
 
 {% assign summary_walletLock="removes the wallet encryption key from memory, locking the wallet. After calling this method, you will need to call `walletpassphrase` again before being able to call any methods which require the wallet to be unlocked." %}
-
-{% autocrossref %}
 
 *Requires wallet support. Requires an unlocked wallet.*
 
@@ -41,4 +38,3 @@ bitcoin-cli -testnet walletlock
 * [WalletPassphrase][rpc walletpassphrase]: {{summary_walletPassphrase}}
 * [WalletPassphraseChange][rpc walletpassphrasechange]: {{summary_walletPassphraseChange}}
 
-{% endautocrossref %}

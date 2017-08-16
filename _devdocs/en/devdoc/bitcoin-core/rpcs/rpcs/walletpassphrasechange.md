@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/walletpassphrasechange.md" %}
 
 ##### WalletPassphraseChange
-{% include helpers/subhead-links.md %}
 
 {% assign summary_walletPassphraseChange="changes the wallet passphrase from 'old passphrase' to 'new passphrase'." %}
-
-{% autocrossref %}
 
 *Requires wallet support.  Requires an encrypted wallet.*
 
@@ -65,4 +62,3 @@ bitcoin-cli -testnet walletpassphrasechange test example
 * [WalletPassphrase][rpc walletpassphrase]: {{summary_walletPassphrase}}
 * [WalletLock][rpc walletlock]: {{summary_walletLock}}
 
-{% endautocrossref %}

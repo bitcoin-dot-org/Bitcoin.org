@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/encryptwallet.md" %}
 
 ##### EncryptWallet
-{% include helpers/subhead-links.md %}
 
 {% assign summary_encryptWallet="encrypts the wallet with a passphrase.  This is only to enable encryption for the first time. After encryption is enabled, you will need to enter the passphrase to use private keys." %}
-
-{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -61,4 +58,3 @@ wallet. The keypool has been flushed, you need to make a new backup.
 * [WalletLock][rpc walletlock]: {{summary_walletLock}}
 * [WalletPassphraseChange][rpc walletpassphrasechange]: {{summary_walletPassphraseChange}}
 
-{% endautocrossref %}

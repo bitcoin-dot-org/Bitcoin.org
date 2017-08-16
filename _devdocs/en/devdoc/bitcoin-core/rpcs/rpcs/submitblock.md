@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/submitblock.md" %}
 
 ##### SubmitBlock
-{% include helpers/subhead-links.md %}
 
 {% assign summary_submitBlock="accepts a block, verifies it is a valid addition to the block chain, and broadcasts it to the network. Extra parameters are ignored by Bitcoin Core but may be used by mining pools or other programs." %}
-
-{% autocrossref %}
 
 The `submitblock` RPC {{summary_submitBlock}}
 
@@ -68,4 +65,3 @@ duplicate
 
 * [GetBlockTemplate][rpc getblocktemplate]: {{summary_getBlockTemplate}}
 
-{% endautocrossref %}

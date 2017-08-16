@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getnetworkinfo.md" %}
 
 ##### GetNetworkInfo
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getNetworkInfo="returns information about the node's connection to the network." %}
-
-{% autocrossref %}
 
 The `getnetworkinfo` RPC {{summary_getNetworkInfo}}
 
@@ -187,4 +184,3 @@ Result (actual addresses have been replaced with reserved addresses):
 * [GetPeerInfo][rpc getpeerinfo]: {{summary_getPeerInfo}}
 * [GetNetTotals][rpc getnettotals]: {{summary_getNetTotals}}
 
-{% endautocrossref %}

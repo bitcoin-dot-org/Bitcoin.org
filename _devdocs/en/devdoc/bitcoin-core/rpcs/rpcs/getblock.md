@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getblock.md" %}
 
 ##### GetBlock
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getBlock="gets a block with a particular header hash from the local block database either as a JSON object or as a serialized block." %}
-
-{% autocrossref %}
 
 The `getblock` RPC {{summary_getBlock}}
 
@@ -209,4 +206,3 @@ Result:
 * [GetBlockHash][rpc getblockhash]: {{summary_getBlockHash}}
 * [GetBestBlockHash][rpc getbestblockhash]: {{summary_getBestBlockHash}}
 
-{% endautocrossref %}

@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/importprunedfunds.md" %}
 
 ##### ImportPrunedFunds
-{% include helpers/subhead-links.md %}
 
 {% assign summary_importPrunedFunds="imports funds without the need of a rescan. Meant for use with pruned wallets." %}
-
-{% autocrossref %}
 
 *Added in Bitcoin Core 0.13.0*
 
@@ -62,4 +59,3 @@ bitcoin-cli importprunedfunds "txhex" "txoutproof"
 * [ImportPrivKey][rpc importprivkey]: {{summary_importPrivKey}}
 * [RemovePrunedFunds][rpc removeprunedfunds]: {{summary_removePrunedFunds}}
 
-{% endautocrossref %}

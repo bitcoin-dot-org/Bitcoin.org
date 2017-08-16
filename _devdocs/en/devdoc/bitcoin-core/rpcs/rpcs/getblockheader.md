@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getblockheader.md" %}
 
 ##### GetBlockHeader
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getBlockHeader="gets a block header with a particular header hash from the local block database either as a JSON object or as a serialized block header." %}
-
-{% autocrossref %}
 
 *Added in Bitcoin Core 0.12.0*
 
@@ -175,4 +172,3 @@ Result:
 * [GetBlockHash][rpc getblockhash]: {{summary_getBlockHash}}
 * [GetBestBlockHash][rpc getbestblockhash]: {{summary_getBestBlockHash}}
 
-{% endautocrossref %}

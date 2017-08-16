@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getmempoolinfo.md" %}
 
 ##### GetMemPoolInfo
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getMemPoolInfo="returns information about the node's current transaction memory pool." %}
-
-{% autocrossref %}
 
 The `getmempoolinfo` RPC {{summary_getMemPoolInfo}}
 
@@ -74,4 +71,3 @@ Result:
 * [GetRawMemPool][rpc getrawmempool]: {{summary_getRawMemPool}}
 * [GetTxOutSetInfo][rpc gettxoutsetinfo]: {{summary_getTxOutSetInfo}}
 
-{% endautocrossref %}

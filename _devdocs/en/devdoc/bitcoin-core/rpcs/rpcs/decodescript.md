@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/decodescript.md" %}
 
 ##### DecodeScript
-{% include helpers/subhead-links.md %}
 
 {% assign summary_decodeScript="decodes a hex-encoded P2SH redeem script." %}
-
-{% autocrossref %}
 
 The `decodescript` RPC {{summary_decodeScript}}
 
@@ -95,4 +92,3 @@ Result:
 * [CreateMultiSig][rpc createmultisig]: {{summary_createMultiSig}}
 * [Pay-To-Script-Hash (P2SH)][/en/glossary/p2sh-address]
 
-{% endautocrossref %}

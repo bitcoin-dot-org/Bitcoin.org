@@ -5,9 +5,6 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rest/quick-reference.md" %}
 
 #### Quick Reference {#rest-quick-reference}
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 * [GET Block][rest get block] {{summary_restGetBlock}} {{UPDATED0_13_0}}
 * [GET Block/NoTxDetails][rest get block-notxdetails] {{summary_restGetBlock-noTxDetails}} {{UPDATED0_13_0}}
@@ -18,4 +15,3 @@ http://opensource.org/licenses/MIT.
 * [GET MemPool/Info][rest get mempool-info] {{summary_restGetMemPool-info}} {{NEW0_12_0}}
 * [GET Tx][rest get tx] {{summary_restGetTx}} {{UPDATED0_13_0}}
 
-{% endautocrossref %}

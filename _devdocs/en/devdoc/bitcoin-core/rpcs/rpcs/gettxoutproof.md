@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/gettxoutproof.md" %}
 
 ##### GetTxOutProof
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getTxOutProof="returns a hex-encoded proof that one or more specified transactions were included in a block." %}
-
-{% autocrossref %}
 
 The `gettxoutproof` RPC {{summary_getTxOutProof}}
 
@@ -93,4 +90,3 @@ d06ff359bf2009eaf1b9e000c054b87230567991b447757bc6ca8e1bb6e9816ad604dbd6\
 * [`merkleblock` message][merkleblock message]: A description of the
   format used for the proof.
 
-{% endautocrossref %}

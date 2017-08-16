@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getnewaddress.md" %}
 
 ##### GetNewAddress
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getNewAddress="returns a new Bitcoin address for receiving payments. If an account is specified, payments received with the address will be credited to that account." %}
-
-{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -55,4 +52,3 @@ mft61jjkmiEJwJ7Zw3r1h344D6aL1xwhma
 * [GetRawChangeAddress][rpc getrawchangeaddress]: {{summary_getRawChangeAddress}}
 * [GetBalance][rpc getbalance]: {{summary_getBalance}}
 
-{% endautocrossref %}

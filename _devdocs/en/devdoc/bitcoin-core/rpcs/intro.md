@@ -5,9 +5,6 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/intro.md" %}
 
 ### Remote Procedure Calls (RPCs)
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Bitcoin Core provides a remote procedure call (RPC) interface for various
 administrative tasks, wallet operations, and queries about network and block
@@ -203,4 +200,3 @@ programs using the JSON-RPC interface, you must ensure they handle high-precisio
 real numbers correctly.  See the [Proper Money Handling][wiki proper money handling]
 Bitcoin Wiki article for details and example code.
 
-{% endautocrossref %}

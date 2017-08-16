@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/listaccounts.md" %}
 
 ##### ListAccounts
-{% include helpers/subhead-links.md %}
 
 {% assign summary_listAccounts="lists accounts and their balances." %}
-
-{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -72,4 +69,3 @@ Result:
 * [GetAddressesByAccount][rpc getaddressesbyaccount]: {{summary_getAddressesByAccount}}
 * [ListReceivedByAccount][rpc listreceivedbyaccount]: {{summary_listReceivedByAccount}}
 
-{% endautocrossref %}

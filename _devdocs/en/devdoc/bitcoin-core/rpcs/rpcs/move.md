@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/move.md" %}
 
 ##### Move
-{% include helpers/subhead-links.md %}
 
 {% assign summary_move="moves a specified amount from one account in your wallet to another using an off-block-chain transaction." %}
-
-{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -104,4 +101,3 @@ true
 * [SendFrom][rpc sendfrom]: {{summary_sendFrom}}
 * [SendToAddress][rpc sendtoaddress]: {{summary_sendToAddress}}
 
-{% endautocrossref %}

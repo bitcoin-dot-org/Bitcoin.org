@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/listlockunspent.md" %}
 
 ##### ListLockUnspent
-{% include helpers/subhead-links.md %}
 
 {% assign summary_listLockUnspent="returns a list of temporarily unspendable (locked) outputs." %}
-
-{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -63,4 +60,3 @@ Result:
 
 * [LockUnspent][rpc lockunspent]: {{summary_lockUnspent}}
 
-{% endautocrossref %}

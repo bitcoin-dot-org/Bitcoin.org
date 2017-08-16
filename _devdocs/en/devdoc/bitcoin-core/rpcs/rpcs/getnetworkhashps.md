@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getnetworkhashps.md" %}
 
 ##### GetNetworkHashPS
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getNetworkHashPS="returns the estimated current or historical network hashes per second based on the last *n* blocks." %}
-
-{% autocrossref %}
 
 The `getnetworkhashps` RPC {{summary_getNetworkHashPS}}
 
@@ -63,4 +60,3 @@ Result:
 * [GetDifficulty][rpc getdifficulty]: {{summary_getDifficultly}}
 * [GetBlock][rpc getblock]: {{summary_getBlock}}
 
-{% endautocrossref %}

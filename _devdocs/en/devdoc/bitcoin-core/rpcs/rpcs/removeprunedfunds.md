@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/removeprunedfunds.md" %}
 
 ##### RemovePrunedFunds
-{% include helpers/subhead-links.md %}
 
 {% assign summary_removePrunedFunds="deletes the specified transaction from the wallet. Meant for use with pruned wallets and as a companion to importprunedfunds." %}
-
-{% autocrossref %}
 
 *Added in Bitcoin Core 0.13.0*
 
@@ -51,4 +48,3 @@ ebf46446a512166eae7628734ea0a5
 * [ImportPrivKey][rpc importprivkey]: {{summary_importPrivKey}}
 * [ImportPrunedFunds][rpc importprunedfunds]: {{summary_importPrunedFunds}}
 
-{% endautocrossref %}

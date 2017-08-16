@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/dumpwallet.md" %}
 
 ##### DumpWallet
-{% include helpers/subhead-links.md %}
 
 {% assign summary_dumpWallet="creates or overwrites a file with all wallet keys in a human-readable format." %}
-
-{% autocrossref %}
 
 *Requires wallet support.  Requires an unlocked wallet or an unencrypted
 wallet.*
@@ -65,4 +62,3 @@ cNCD679B4xi17jb4XeLpbRbZCbYUugptD7dCtUTfSU4KPuK2DyKT 2014-02-05T16:58:41Z reserv
 * [BackupWallet][rpc backupwallet]: {{summary_backupWallet}}
 * [ImportWallet][rpc importwallet]: {{summary_importWallet}}
 
-{% endautocrossref %}

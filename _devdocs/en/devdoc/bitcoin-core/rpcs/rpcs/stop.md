@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/stop.md" %}
 
 ##### Stop
-{% include helpers/subhead-links.md %}
 
 {% assign summary_stop="safely shuts down the Bitcoin Core server." %}
-
-{% autocrossref %}
 
 The `stop` RPC {{summary_stop}}
 
@@ -39,4 +36,3 @@ Bitcoin server stopping
 
 *See also: none*
 
-{% endautocrossref %}

@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/setnetworkactive.md" %}
 
 ##### SetNetworkActive
-{% include helpers/subhead-links.md %}
 
 {% assign summary_setNetworkActive="disables/enables all P2P network activity." %}
-
-{% autocrossref %}
 
 *Added in Bitcoin Core 0.14.0*
 
@@ -47,4 +44,3 @@ Result (no output from `bitcoin-cli` because result is set to `null`).
 
 * [GetNetworkInfo][rpc getnetworkinfo]: {{summary_getNetworkInfo}}
 
-{% endautocrossref %}

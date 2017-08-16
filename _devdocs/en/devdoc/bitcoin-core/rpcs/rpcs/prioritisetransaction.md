@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/prioritisetransaction.md" %}
 
 ##### PrioritiseTransaction
-{% include helpers/subhead-links.md %}
 
 {% assign summary_prioritiseTransaction="adds virtual priority or fee to a transaction, allowing it to be accepted into blocks mined by this node (or miners which use this node) with a lower priority or fee. (It can also remove virtual priority or fee, requiring the transaction have a higher priority or fee to be accepted into a locally-mined block.)" %}
-
-{% autocrossref %}
 
 The `prioritisetransaction` RPC {{summary_prioritiseTransaction}}
 
@@ -72,4 +69,3 @@ true
 * [GetRawMemPool][rpc getrawmempool]: {{summary_getRawMemPool}}
 * [GetBlockTemplate][rpc getblocktemplate]: {{summary_getBlockTemplate}}
 
-{% endautocrossref %}

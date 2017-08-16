@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/help.md" %}
 
 ##### Help
-{% include helpers/subhead-links.md %}
 
 {% assign summary_help="lists all available public RPC commands, or gets help for the specified RPC.  Commands which are unavailable will not be listed, such as wallet RPCs if wallet support is disabled." %}
-
-{% autocrossref %}
 
 The `help` RPC {{summary_help}}
 
@@ -60,4 +57,3 @@ Result:
 
 * The [RPC Quick Reference][section RPC quick reference]
 
-{% endautocrossref %}

@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getblockhash.md" %}
 
 ##### GetBlockHash
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getBlockHash="returns the header hash of a block at the given height in the local best block chain." %}
-
-{% autocrossref %}
 
 The `getblockhash` RPC {{summary_getBlockHash}}
 
@@ -50,4 +47,3 @@ Result:
 * [GetBlock][rpc getblock]: {{summary_getBlock}}
 * [GetBestBlockHash][rpc getbestblockhash]: {{summary_getBestBlockHash}}
 
-{% endautocrossref %}

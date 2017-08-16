@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/listunspent.md" %}
 
 ##### ListUnspent
-{% include helpers/subhead-links.md %}
 
 {% assign summary_listUnspent="returns an array of unspent transaction outputs belonging to this wallet." %}
-
-{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -153,4 +150,3 @@ Result:
 * [ListTransactions][rpc listtransactions]: {{summary_listTransactions}}
 * [LockUnspent][rpc lockunspent]: {{summary_lockUnspent}}
 
-{% endautocrossref %}

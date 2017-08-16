@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/ping.md" %}
 
 ##### Ping {#ping-rpc}
-{% include helpers/subhead-links.md %}
 
 {% assign summary_ping-rpc="sends a P2P ping message to all connected nodes to measure ping time. Results are provided by the `getpeerinfo` RPC pingtime and pingwait fields as decimal seconds. The P2P `ping` message is handled in a queue with all other commands, so it measures processing backlog, not just network ping." %}
-
-{% autocrossref %}
 
 The `ping` RPC {{summary_ping-rpc}}
 
@@ -57,4 +54,3 @@ Results:
 * [GetPeerInfo][rpc getpeerinfo]: {{summary_getPeerInfo}}
 * [P2P Ping Message][ping message]
 
-{% endautocrossref %}

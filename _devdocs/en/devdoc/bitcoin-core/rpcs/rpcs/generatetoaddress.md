@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/generatetoaddress.md" %}
 
 ##### GenerateToAddress
-{% include helpers/subhead-links.md %}
 
 {% assign summary_generateToAddress="mines blocks immediately to a specified address." %}
-
-{% autocrossref %}
 
 *Added in Bitcoin Core 0.13.0*
 
@@ -85,4 +82,3 @@ Result:
 * [GetMiningInfo][rpc getmininginfo]: {{summary_getMiningInfo}}
 * [GetBlockTemplate][rpc getblocktemplate]: {{summary_getBlockTemplate}}
 
-{% endautocrossref %}

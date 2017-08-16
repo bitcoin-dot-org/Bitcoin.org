@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getmininginfo.md" %}
 
 ##### GetMiningInfo
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getMiningInfo="returns various mining-related information." %}
-
-{% autocrossref %}
 
 The `getmininginfo` RPC {{summary_getMiningInfo}}
 
@@ -114,4 +111,3 @@ Result:
 * [GetBlockTemplate][rpc getblocktemplate]: {{summary_getBlockTemplate}}
 * [Generate][rpc generate]: {{summary_generate}}
 
-{% endautocrossref %}

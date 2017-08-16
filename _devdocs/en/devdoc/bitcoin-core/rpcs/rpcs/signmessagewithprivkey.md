@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/signmessagewithprivkey.md" %}
 
 ##### SignMessageWithPrivKey
-{% include helpers/subhead-links.md %}
 
 {% assign summary_signMessageWithPrivKey="signs a message with a given private key." %}
-
-{% autocrossref %}
 
 *Added in Bitcoin Core 0.13.0*
 
@@ -65,4 +62,3 @@ G+ZauMFgQExAJRKZSldbAVEaZo4i0p2AVivbFASo50PkUnynAMDUiNMVdXDlpYMWvatxCmYmLn8C9zyg
 * [SignMessage][rpc signmessage]: {{summary_signMessage}}
 * [VerifyMessage][rpc verifymessage]: {{summary_verifyMessage}}
 
-{% endautocrossref %}

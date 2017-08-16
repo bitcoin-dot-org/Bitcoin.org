@@ -5,9 +5,6 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rest/intro.md" %}
 
 ### HTTP REST
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 As of [version 0.10.0][bitcoin core 0.10.0], Bitcoin Core provides
 an **unauthenticated** HTTP REST interface.  The interface runs on the
@@ -32,4 +29,3 @@ The interface uses standard [HTTP status
 codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) and
 returns a plain-text description of errors for debugging.
 
-{% endautocrossref %}

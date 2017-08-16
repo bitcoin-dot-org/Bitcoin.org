@@ -5,9 +5,6 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getaccountaddress.md" %}
 
 ##### GetAccountAddress
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 {% assign summary_getAccountAddress="returns the current Bitcoin address for receiving payments to this account. If the account doesn't exist, it creates both the account and a new address for receiving payment.  Once a payment has been received to an address, future calls to this RPC for the same account will return a different address." %}
 
@@ -58,4 +55,3 @@ msQyFNYHkFUo4PG3puJBbpesvRCyRQax7r
 * [GetRawChangeAddress][rpc getrawchangeaddress]: {{summary_getRawChangeAddress}}
 * [GetAddressesByAccount][rpc getaddressesbyaccount]: {{summary_getAddressesByAccount}}
 
-{% endautocrossref %}
