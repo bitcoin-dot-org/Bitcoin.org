@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getchaintips.md" %}
 
 ##### GetChainTips
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getChainTips="returns information about the highest-height block (tip) of each local block chain." %}
-
-{% autocrossref %}
 
 The `getchaintips` RPC {{summary_getChainTips}}
 
@@ -85,4 +82,3 @@ bitcoin-cli -testnet getchaintips
 * [GetBlock][rpc getblock]: {{summary_getBlock}}
 * [GetBlockChainInfo][rpc getblockchaininfo]: {{summary_getBlockChainInfo}}
 
-{% endautocrossref %}

@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/validateaddress.md" %}
 
 ##### ValidateAddress
-{% include helpers/subhead-links.md %}
 
 {% assign summary_validateAddress="returns information about the given Bitcoin address." %}
-
-{% autocrossref %}
 
 The `validateaddress` RPC {{summary_validateAddress}}
 
@@ -169,4 +166,3 @@ Result:
 * [ImportAddress][rpc importaddress]: {{summary_importAddress}}
 * [GetNewAddress][rpc getnewaddress]: {{summary_getNewAddress}}
 
-{% endautocrossref %}

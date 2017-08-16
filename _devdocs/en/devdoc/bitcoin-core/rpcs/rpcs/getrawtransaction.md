@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getrawtransaction.md" %}
 
 ##### GetRawTransaction
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getRawTransaction="gets a hex-encoded serialized transaction or a JSON object describing the transaction. By default, Bitcoin Core only stores complete transaction data for UTXOs and your own transactions, so the RPC may fail on historic transactions unless you use the non-default `txindex=1` in your Bitcoin Core startup settings." %}
-
-{% autocrossref %}
 
 The `getrawtransaction` RPC {{summary_getRawTransaction}}
 
@@ -167,4 +164,3 @@ Result:
 
 * [GetTransaction][rpc gettransaction]: {{summary_getTransaction}}
 
-{% endautocrossref %}

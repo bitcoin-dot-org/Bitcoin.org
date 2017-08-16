@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/sendfrom.md" %}
 
 ##### SendFrom
-{% include helpers/subhead-links.md %}
 
 {% assign summary_sendFrom="spends an amount from a local account to a bitcoin address." %}
-
-{% autocrossref %}
 
 *Requires wallet support. Requires an unlocked wallet or an
 unencrypted wallet.*
@@ -110,4 +107,3 @@ f14ee5368c339644d3037d929bbe1f1544a532f8826c7b7288cb994b0b0ff5d8
 * [SendToAddress][rpc sendtoaddress]: {{summary_sendToAddress}}
 * [SendMany][rpc sendmany]: {{summary_sendMany}}
 
-{% endautocrossref %}

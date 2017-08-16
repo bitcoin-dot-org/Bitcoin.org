@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/listreceivedbyaccount.md" %}
 
 ##### ListReceivedByAccount
-{% include helpers/subhead-links.md %}
 
 {% assign summary_listReceivedByAccount="lists the total number of bitcoins received by each account." %}
-
-{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -103,4 +100,3 @@ Result (edited to only show the first two results):
 * [GetReceivedByAccount][rpc getreceivedbyaccount]: {{summary_getReceivedByAccount}}
 * [GetReceivedByAddress][rpc getreceivedbyaddress]: {{summary_getReceivedByAddress}}
 
-{% endautocrossref %}

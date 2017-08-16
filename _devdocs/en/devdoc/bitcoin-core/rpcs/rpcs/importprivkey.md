@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/importprivkey.md" %}
 
 ##### ImportPrivKey
-{% include helpers/subhead-links.md %}
 
 {% assign summary_importPrivKey="adds a private key to your wallet. The key should be formatted in the wallet import format created by the `dumpprivkey` RPC." %}
-
-{% autocrossref %}
 
 *Requires wallet support.  Wallet must be unlocked.*
 
@@ -76,4 +73,3 @@ bitcoin-cli -testnet importprivkey \
 * [ImportAddress][rpc importaddress]: {{summary_importAddress}}
 * [ImportWallet][rpc importwallet]: {{summary_importWallet}}
 
-{% endautocrossref %}

@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/addmultisigaddress.md" %}
 
 ##### AddMultiSigAddress
-{% include helpers/subhead-links.md %}
 
 {% assign summary_addMultiSigAddress="adds a P2SH multisig address to the wallet." %}
-
-{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -92,4 +89,3 @@ Result:
 * [DecodeScript][rpc decodescript]: {{summary_decodeScript}}
 * [Pay-To-Script-Hash (P2SH)][/en/glossary/p2sh-address]
 
-{% endautocrossref %}

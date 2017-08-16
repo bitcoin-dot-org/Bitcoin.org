@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/verifymessage.md" %}
 
 ##### VerifyMessage
-{% include helpers/subhead-links.md %}
 
 {% assign summary_verifyMessage="verifies a signed message." %}
-
-{% autocrossref %}
 
 The `verifymessage` RPC {{summary_verifyMessage}}
 
@@ -75,4 +72,3 @@ true
 
 * [SignMessage][rpc signmessage]: {{summary_signMessage}}
 
-{% endautocrossref %}

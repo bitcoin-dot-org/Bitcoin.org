@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getmempoolancestors.md" %}
 
 ##### GetMemPoolAncestors
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getMemPoolAncestors="returns all in-mempool ancestors for a transaction in the mempool." %}
-
-{% autocrossref %}
 
 *Added in Bitcoin Core 0.13.0*
 
@@ -211,4 +208,3 @@ Result:
 * [GetMemPoolDescendants][rpc getmempooldescendants]: {{summary_getMemPoolDescendants}}
 * [GetRawMemPool][rpc getrawmempool]: {{summary_getRawMemPool}}
 
-{% endautocrossref %}

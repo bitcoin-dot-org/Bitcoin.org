@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/signrawtransaction.md" %}
 
 ##### SignRawTransaction
-{% include helpers/subhead-links.md %}
 
 {% assign summary_signRawTransaction="signs a transaction in the serialized transaction format using private keys stored in the wallet or provided in the call." %}
-
-{% autocrossref %}
 
 The `signrawtransaction` RPC {{summary_signRawTransaction}}
 
@@ -130,4 +127,3 @@ Result:
 * [DecodeRawTransaction][rpc decoderawtransaction]: {{summary_decodeRawTransaction}}
 * [SendRawTransaction][rpc sendrawtransaction]: {{summary_sendRawTransaction}}
 
-{% endautocrossref %}

@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getpeerinfo.md" %}
 
 ##### GetPeerInfo
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getPeerInfo="returns data about each connected network node." %}
-
-{% autocrossref %}
 
 The `getpeerinfo` RPC {{summary_getPeerInfo}}
 
@@ -227,4 +224,3 @@ Result (edited to show only a single entry, with IP addresses changed to
 * [GetNetTotals][rpc getnettotals]: {{summary_getNetTotals}}
 * [GetNetworkInfo][rpc getnetworkinfo]: {{summary_getNetworkInfo}}
 
-{% endautocrossref %}

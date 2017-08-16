@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/gettxout.md" %}
 
 ##### GetTxOut
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getTxOut="returns details about a transaction output.  Only unspent transaction outputs (UTXOs) are guaranteed to be available." %}
-
-{% autocrossref %}
 
 The `gettxout` RPC {{summary_getTxOut}}
 
@@ -150,4 +147,3 @@ Result:
 * [GetRawTransaction][rpc getrawtransaction]: {{summary_getRawTransaction}}
 * [GetTransaction][rpc gettransaction]: {{summary_getTransaction}}
 
-{% endautocrossref %}

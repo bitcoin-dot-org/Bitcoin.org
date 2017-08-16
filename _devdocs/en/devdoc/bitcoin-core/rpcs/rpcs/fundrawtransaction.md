@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/fundrawtransaction.md" %}
 
 ##### FundRawTransaction
-{% include helpers/subhead-links.md %}
 
 {% assign summary_fundRawTransaction="adds inputs to a transaction until it has enough in value to meet its out value." %}
-
-{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -139,4 +136,3 @@ Result:
 * [SendRawTransaction][rpc sendrawtransaction]: {{summary_sendRawTransaction}}
 * [Serialized Transaction Format][raw transaction format]
 
-{% endautocrossref %}

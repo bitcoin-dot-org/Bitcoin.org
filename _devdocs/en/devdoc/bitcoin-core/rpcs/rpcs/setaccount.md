@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/setaccount.md" %}
 
 ##### SetAccount
-{% include helpers/subhead-links.md %}
 
 {% assign summary_setAccount="puts the specified address in the given account." %}
-
-{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -65,4 +62,3 @@ bitcoin-cli -testnet setaccount \
 * [ListAccounts][rpc listaccounts]: {{summary_listAccounts}}
 * [GetAddressesByAccount][rpc getaddressesbyaccount]: {{summary_getAddressesByAccount}}
 
-{% endautocrossref %}

@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/listsinceblock.md" %}
 
 ##### ListSinceBlock
-{% include helpers/subhead-links.md %}
 
 {% assign summary_listSinceBlock="gets all transactions affecting the wallet which have occurred since a particular block, plus the header hash of a block at a particular depth." %}
-
-{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -130,4 +127,3 @@ Result (edited to show only two payments):
 * [ListReceivedByAccount][rpc listreceivedbyaccount]: {{summary_listReceivedByAccount}}
 * [ListReceivedByAddress][rpc listreceivedbyaddress]: {{summary_listReceivedByAddress}}
 
-{% endautocrossref %}

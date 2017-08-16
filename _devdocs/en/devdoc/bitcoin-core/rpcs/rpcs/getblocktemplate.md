@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getblocktemplate.md" %}
 
 ##### GetBlockTemplate
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getBlockTemplate="gets a block template or proposal for use with mining software." %}
-
-{% autocrossref %}
 
 The `getblocktemplate` RPC {{summary_getBlockTemplate}} For more
 information, please see the following resources:
@@ -25,4 +22,3 @@ information, please see the following resources:
 * [SubmitBlock][rpc submitblock]: {{summary_submitBlock}}
 * [PrioritiseTransaction][rpc prioritisetransaction]: {{summary_prioritiseTransaction}}
 
-{% endautocrossref %}

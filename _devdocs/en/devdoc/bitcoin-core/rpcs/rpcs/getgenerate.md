@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getgenerate.md" %}
 
 ##### GetGenerate
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getGenerate="was removed in Bitcoin Core 0.13.0." %}
-
-{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -22,4 +19,3 @@ version of Bitcoin Core, use `help getgenerate` to get help.
 * [GenerateToAddress][rpc generatetoaddress]: {{summary_generateToAddress}}
 * [GetMiningInfo][rpc getmininginfo]: {{summary_getMiningInfo}}
 
-{% endautocrossref %}

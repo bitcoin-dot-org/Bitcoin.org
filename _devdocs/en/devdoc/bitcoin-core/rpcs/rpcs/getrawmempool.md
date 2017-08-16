@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getrawmempool.md" %}
 
 ##### GetRawMemPool
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getRawMemPool="returns all transaction identifiers (TXIDs) in the memory pool as a JSON array, or detailed information about each transaction in the memory pool as a JSON object." %}
-
-{% autocrossref %}
 
 The `getrawmempool` RPC {{summary_getRawMemPool}}
 
@@ -198,4 +195,3 @@ Result:
 * [GetMemPoolEntry][rpc getmempoolentry]: {{summary_getMemPoolEntry}}
 * [GetTxOutSetInfo][rpc gettxoutsetinfo]: {{summary_getTxOutSetInfo}}
 
-{% endautocrossref %}

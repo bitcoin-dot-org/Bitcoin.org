@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/bumpfee.md" %}
 
 ##### BumpFee
-{% include helpers/subhead-links.md %}
 
 {% assign summary_bumpFee="replaces an unconfirmed wallet transaction that signaled RBF with a new transaction that pays a higher fee." %}
-
-{% autocrossref %}
 
 *Added in Bitcoin Core 0.14.0*
 
@@ -113,4 +110,3 @@ Result:
 * [SendRawTransaction][rpc sendrawtransaction]: {{summary_sendRawTransaction}}
 * [Serialized Transaction Format][raw transaction format]
 
-{% endautocrossref %}

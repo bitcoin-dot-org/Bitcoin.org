@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/listbanned.md" %}
 
 ##### ListBanned
-{% include helpers/subhead-links.md %}
 
 {% assign summary_listBanned="lists all banned IPs/Subnets." %}
-
-{% autocrossref %}
 
 *Added in Bitcoin Core 0.12.0*
 
@@ -85,4 +82,3 @@ Result:
 * [SetBan][rpc setban]: {{summary_setBan}}
 * [ClearBanned][rpc clearbanned]: {{summary_clearBanned}}
 
-{% endautocrossref %}

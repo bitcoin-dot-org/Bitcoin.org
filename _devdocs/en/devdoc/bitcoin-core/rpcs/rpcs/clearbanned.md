@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/clearbanned.md" %}
 
 ##### ClearBanned
-{% include helpers/subhead-links.md %}
 
 {% assign summary_clearBanned="clears list of banned nodes." %}
-
-{% autocrossref %}
 
 *Added in Bitcoin Core 0.12.0*
 
@@ -42,4 +39,3 @@ Result (no output from `bitcoin-cli` because result is set to `null`).
 * [ListBanned][rpc listbanned]: {{summary_listBanned}}
 * [SetBan][rpc setban]: {{summary_setBan}}
 
-{% endautocrossref %}

@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/sendmany.md" %}
 
 ##### SendMany
-{% include helpers/subhead-links.md %}
 
 {% assign summary_sendMany="creates and broadcasts a transaction which sends outputs to multiple addresses." %}
-
-{% autocrossref %}
 
 *Requires wallet support. Requires an unlocked wallet or an
 unencrypted wallet.*
@@ -108,4 +105,3 @@ ec259ab74ddff199e61caa67a26e29b13b5688dc60f509ce0df4d044e8f4d63d
 * [SendToAddress][rpc sendtoaddress]: {{summary_sendToAddress}}
 * [Move][rpc move]: {{summary_move}}
 
-{% endautocrossref %}

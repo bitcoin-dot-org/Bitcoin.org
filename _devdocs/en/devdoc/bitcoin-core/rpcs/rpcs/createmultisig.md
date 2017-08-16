@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/createmultisig.md" %}
 
 ##### CreateMultiSig
-{% include helpers/subhead-links.md %}
 
 {% assign summary_createMultiSig="creates a P2SH multi-signature address." %}
-
-{% autocrossref %}
 
 The `createmultisig` RPC {{summary_createMultiSig}}
 
@@ -88,4 +85,3 @@ Result:
 * [DecodeScript][rpc decodescript]: {{summary_decodeScript}}
 * [Pay-To-Script-Hash (P2SH)][/en/glossary/p2sh-address]
 
-{% endautocrossref %}

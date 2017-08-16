@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/sendrawtransaction.md" %}
 
 ##### SendRawTransaction
-{% include helpers/subhead-links.md %}
 
 {% assign summary_sendRawTransaction="validates a transaction and broadcasts it to the peer-to-peer network." %}
-
-{% autocrossref %}
 
 The `sendrawtransaction` RPC {{summary_sendRawTransaction}}
 
@@ -69,4 +66,3 @@ f5a5ce5988cc72b9b90e8d1d6c910cda53c88d2175177357cc2f2cf0899fbaad
 * [DecodeRawTransaction][rpc decoderawtransaction]: {{summary_decodeRawTransaction}}
 * [SignRawTransaction][rpc signrawtransaction]: {{summary_signRawTransaction}}
 
-{% endautocrossref %}

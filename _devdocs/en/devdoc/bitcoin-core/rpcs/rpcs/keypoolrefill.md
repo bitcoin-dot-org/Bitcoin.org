@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/keypoolrefill.md" %}
 
 ##### KeyPoolRefill
-{% include helpers/subhead-links.md %}
 
 {% assign summary_keyPoolRefill="fills the cache of unused pre-generated keys (the keypool)." %}
-
-{% autocrossref %}
 
 *Requires wallet support.  Requires an unlocked wallet or an unencrypted
 wallet.*
@@ -52,4 +49,3 @@ bitcoin-cli -testnet keypoolrefill 101
 * [GetAccountAddress][rpc getaccountaddress]: {{summary_getAccountAddress}}
 * [GetWalletInfo][rpc getwalletinfo]: {{summary_getWalletInfo}}
 
-{% endautocrossref %}

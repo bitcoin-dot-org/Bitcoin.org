@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getinfo.md" %}
 
 ##### GetInfo
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getInfo="prints various information about the node and the network." %}
-
-{% autocrossref %}
 
 The `getinfo` RPC {{summary_getInfo}}
 
@@ -144,4 +141,3 @@ Result:
 * [GetNetworkInfo][rpc getnetworkinfo]: {{summary_getNetworkInfo}}
 * [GetWalletInfo][rpc getwalletinfo]: {{summary_getWalletInfo}}
 
-{% endautocrossref %}

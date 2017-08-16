@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getbalance.md" %}
 
 ##### GetBalance
-{% include helpers/subhead-links.md %}
 
 {% assign summary_getBalance="gets the balance in decimal bitcoins across all accounts or for a particular account." %}
-
-{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -65,4 +62,3 @@ Result:
 * [GetReceivedByAccount][rpc getreceivedbyaccount]: {{summary_getReceivedByAccount}}
 * [GetReceivedByAddress][rpc getreceivedbyaddress]: {{summary_getReceivedByAddress}}
 
-{% endautocrossref %}

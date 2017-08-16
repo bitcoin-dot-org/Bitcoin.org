@@ -5,11 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/verifytxoutproof.md" %}
 
 ##### VerifyTxOutProof
-{% include helpers/subhead-links.md %}
 
 {% assign summary_verifyTxOutProof="verifies that a proof points to one or more transactions in a block, returning the transactions the proof commits to and throwing an RPC error if the block is not in our best block chain." %}
-
-{% autocrossref %}
 
 The `verifytxoutproof` RPC {{summary_verifyTxOutProof}}
 
@@ -70,4 +67,3 @@ Result:
 * [`merkleblock` message][merkleblock message]: A description of the
   format used for the proof.
 
-{% endautocrossref %}

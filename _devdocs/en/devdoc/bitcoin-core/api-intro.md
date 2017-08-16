@@ -5,12 +5,8 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/api-intro.md" %}
 
 ## Bitcoin Core APIs
-{% include helpers/subhead-links.md %}
 
 ### Hash Byte Order
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 Bitcoin Core RPCs accept and return the byte-wise reverse of computed
 SHA-256 hash values. For example, the Unix `sha256sum` command displays the
@@ -70,7 +66,6 @@ raw mode of `getblock`, always display hashes as they appear in blocks
 
 The code below may help you check byte order by generating hashes
 from raw hex.
-{% endautocrossref %}
 
 {% highlight python %}
 #!/usr/bin/env python
