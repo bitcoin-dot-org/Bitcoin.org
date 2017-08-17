@@ -1138,6 +1138,27 @@ The next time you login to your desktop, Bitcoin Core daemon will be automatical
 
 {{installFinished}}
 
+## Upgrading Bitcoin Core
+
+If you are running an older version, shut it down. Wait until it has completely
+shut down (which might take a few minutes for older versions), then run the
+installer (on Windows) or just copy over /Applications/Bitcoin-Qt (on Mac) or
+bitcoind/bitcoin-qt (on Linux).
+
+The blockchain and wallet files in the data directory are compatible between
+versions so there is no requirement to make any changes to the data directory
+when upgrading. Occasionally the format of those files changes, but the new
+Bitcoin Core version will include code that automatically upgrades the files to
+the new format so no manual intervention is required.
+
+Sometimes upgrade of the blockchain data files from very old versions to the new
+versions is not supported. In those cases it may be necessary to redownload the
+blockchain. Check the release notes of the new version if you are planning to
+upgrade from a very old version.
+
+Sometimes downgrade is not possible because of changes to the data files. Again,
+check the release notes for the new version if you are planning to downgrade.
+
 ## Network Configuration
 
 If you want to support the Bitcoin network, you must allow inbound
