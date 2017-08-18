@@ -584,7 +584,6 @@ collections:
   ## _devdocs
   devdocs:
     output: false
-<<<<<<< HEAD
 
 donation_banner:
   address: 1GwV7fPX97hmavc6iNrUZUogmjpLPrPFoE
@@ -593,8 +592,6 @@ donation_banner:
     - 5
     - 25
     - 50
-=======
->>>>>>> 72a34d9fb3e5bbf91bb31355163d1fdabb8c8e0f
 
 defaults:
   - scope:
