@@ -38,17 +38,6 @@ third_party_privacy:
     tracks_amounts: "yes"
     tracks_ip_addresses: "yes"
 
-  - name: BitPay
-    css_class: bitpay
-    group: not-displayed
-
-    tracks_real_names: "yes"
-    knows_your_bitcoin_balance: "yes"
-    susceptible_to_taint_analysis: "no"
-    tracks_payments: "yes"
-    tracks_amounts: "yes"
-    tracks_ip_addresses: "yes"
-
   - name: Blockchain.info
     css_class: blockchain_info
     group: not-displayed
