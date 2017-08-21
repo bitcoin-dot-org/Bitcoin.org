@@ -70,17 +70,6 @@ third_party_privacy:
     tracks_payments: "yes"
     tracks_amounts: "yes"
     tracks_ip_addresses: "yes"
-
-  - name: Ninki
-    css_class: ninki
-    group: not-displayed
-
-    tracks_real_names: "no"
-    knows_your_bitcoin_balance: "yes"
-    susceptible_to_taint_analysis: "yes"
-    tracks_payments: "yes"
-    tracks_amounts: "yes"
-    tracks_ip_addresses: "yes"
 ---
 # Bitcoin Core's Excellent Privacy
 {:.not-displayed}
