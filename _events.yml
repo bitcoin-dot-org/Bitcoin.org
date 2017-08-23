@@ -310,14 +310,6 @@
   country: "Russia"
   link: "https://icoevent.ru/en"
 
-- date: 2017-09-23
-  title: "Bitcoin Conference Kiev"
-  venue: "Congress Hall"
-  address: "Cosmopolite, 6 V. Hetmana Street"
-  city: "Kiev"
-  country: "Ukraine"
-  link: "https://bitcoinconf.com.ua/en"
-
 - date: 2017-09-25
   title: "World Blockchain Forum: Investments & ICOs"
   venue: "St Paul's - 200 Aldersgate Conference Centre"
@@ -325,6 +317,14 @@
   city: "London"
   country: "United Kingdom"
   link: "http://london.keynote.ae/"
+
+- date: 2017-10-12
+  title: "Blockchain & Bitcoin Conference Kiev"
+  venue: "Vsi. Svoi | Lokatsia"
+  address: "Desytinnaya St. 12"
+  city: "Kiev"
+  country: "Ukraine"
+  link: "https://kiev.blockchainconf.world/en"
 
 - date: 2017-10-28
   title: "BitBrighton - Crypto/Bitcoin Event"
