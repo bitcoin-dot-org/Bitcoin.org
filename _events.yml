@@ -2,7 +2,7 @@
   title: "CES Digital Money Forum"
   venue: "Las Vegas Convention Center"
   address: "3150 Paradise Road"
-  city: "Las Vegas, NV"
+  city: "Las Vegas"
   country: "United States"
   link: "http://thedigitalmoneyforum.com/"
 
@@ -122,7 +122,7 @@
   title: "BlockchainUA Conference Kyiv"
   venue: "Conference Hall, Oasis, Ultramarine, 3rd floor"
   address: "Vasylia Lypkivskoho St, 1А, 02000"
-  city: "Kyiv"
+  city: "Kiev"
   country: "Ukraine"
   link: "http://blockchainua.com/"
 
@@ -130,7 +130,7 @@
   title: "The 2nd All-Ukrainian Blockchain Hackathon"
   venue: "2nd floor"
   address: "Verkhnii Val st, 10"
-  city: "Kyiv"
+  city: "Kiev"
   country: "Ukraine"
   link: "http://blockchainua-hackathon.com/en"
 
@@ -250,7 +250,7 @@
   title: "State of Digital Money 2017"
   venue: "Cross Campus Downtown Los Angeles"
   address: "800 Wilshire Blvd, 90017"
-  city: "Los Angeles, CA"
+  city: "Los Angeles"
   country: "United States"
   link: "http://stateofdigitalmoney.com/"
 
@@ -286,21 +286,101 @@
   country: "Nigeria"
   link: "http://blockchainnigeria.group/"
 
+- date: 2017-08-23
+  title: "SegWit Activation Party Germany"
+  venue: "Room 77"
+  address: "Graefestr. 77, 10967"
+  city: "Berlin"
+  country: "Germany"
+  link: "http://segwit.party/"
+
+- date: 2017-08-23
+  title: "SegWit Activation Party United States"
+  venue: "Bay Harbor Hotel"
+  address: "7700 West Courtney Campbell Causeway"
+  city: "Tampa"
+  country: "United States"
+  link: "http://segwit.party/"
+
+- date: 2017-08-23
+  title: "SegWit Activation Party Poland"
+  venue: "Bez Slowa"
+  address: "Fosa 3, 02768"
+  city: "Warsaw"
+  country: "Poland"
+  link: "http://segwit.party/"
+
+- date: 2017-08-24
+  title: "SegWit Activation Party Slovakia"
+  venue: "Progressbar Hackerspace"
+  address: "Michalska 3, 811 03"
+  city: "Bratislava"
+  country: "Slovakia"
+  link: "http://segwit.party/"
+
+- date: 2017-08-24
+  title: "SegWit Activation Party Switzerland"
+  venue: "James Joyce Pub"
+  address: "8 Pelikanstrasse"
+  city: "Zurich"
+  country: "Switzerland"
+  link: "http://segwit.party/"
+
+- date: 2017-08-24
+  title: "SegWit Activation Party France"
+  venue: "Sof's Bar"
+  address: "43 rue Saint Sauveur 75002"
+  city: "Paris"
+  country: "France"
+  link: "http://segwit.party/"
+
+- date: 2017-08-25
+  title: "SegWit Activation Party Czech"
+  venue: "Utopia Cajovna"
+  address: "Divadelni 3, 60200"
+  city: "Brno"
+  country: "Czech"
+  link: "http://segwit.party/"
+
+- date: 2017-09-07
+  title: "Blockchain & Bitcoin Conference Stockholm"
+  venue: "Elite Hotel Marina Tower"
+  address: "Saltsjoqvarns kaj 25, 131 71 Nacka"
+  city: "Stockholm"
+  country: "Sweden"
+  link: "https://stockholm.blockchainconf.world/en"
+
+- date: 2017-09-09
+  title: "Breaking Bitcoin Conference"
+  venue: "16 Rue Jean Rey, 75015"
+  address: "16 Rue Jean Rey"
+  city: "Paris"
+  country: "France"
+  link: "https://breaking-bitcoin.com/"
+
 - date: 2017-09-14
   title: "CoinAlts Fund Symposium"
   venue: "The St. Regis San Francisco"
   address: "125 3rd Street"
-  city: "San Francisco, CA"
-  country: "USA"
+  city: "San Francisco"
+  country: "United States"
   link: "https://www.coinaltsfundsymposium.com/"
 
-- date: 2017-09-23
-  title: "Bitcoin Conference Kiev"
-  venue: "Congress Hall"
-  address: "Cosmopolite, 6 V. Hetmana Street"
+- date: 2017-09-20
+  title: "ICO Event Moscow"
+  venue: "Technopolis Moscow"
+  address: "Volgogradskiy dist. 42"
+  city: "Moscow"
+  country: "Russia"
+  link: "https://icoevent.ru/en"
+
+- date: 2017-09-22
+  title: "BlockchainUA Conference Kyiv"
+  venue: "Conference Hall Oasis"
+  address: "Vasylia Lypkivskoho St, 1А"
   city: "Kiev"
   country: "Ukraine"
-  link: "https://bitcoinconf.com.ua/en"
+  link: "https://blockchainua.com/en"
 
 - date: 2017-09-25
   title: "World Blockchain Forum: Investments & ICOs"
@@ -310,6 +390,30 @@
   country: "United Kingdom"
   link: "http://london.keynote.ae/"
 
+- date: 2017-09-26
+  title: "Blockchain Life 2017"
+  venue: "Petrocongress"
+  address: "Lodeynopolskaya st. 5/2"
+  city: "Saint-Petersburg"
+  country: "Russia"
+  link: "https://blockchain-life.com"
+
+- date: 2017-10-12
+  title: "Blockchain & Bitcoin Conference Kiev"
+  venue: "Vsi. Svoi | Lokatsia"
+  address: "Desytinnaya St. 12"
+  city: "Kiev"
+  country: "Ukraine"
+  link: "https://kiev.blockchainconf.world/en"
+
+- date: 2017-10-26
+  title: "Global Fintech & Blockchain China Summit 2017"
+  venue: "Shanghai Marriott Hotel Riverside"
+  address: "No. 99 Jiangbin Road,Huangpu District"
+  city: "Shanghai"
+  country: "China"
+  link: "http://www.gfbccs.com"
+
 - date: 2017-10-28
   title: "BitBrighton - Crypto/Bitcoin Event"
   venue: "Latest Music Bar"
@@ -318,11 +422,19 @@
   country: "United Kingdom"
   link: "http://bitbrighton.org/"
 
+- date: 2017-10-28
+  title: "Texas Bitcoin Conference III"
+  venue: "Canyon View Event Center"
+  address: "4800 Spicewood Springs Rd"
+  city: "Austin"
+  country: "United States"
+  link: "http://texasbitcoinconference.com/conferences"
+
 - date: 2017-11-15
   title: "Blockchain WithTheBest"
   venue: "Online Conference"
   address: "950 Battery Street, 94111"
-  city: "San Francisco, CA"
+  city: "San Francisco"
   country: "United States"
   link: "http://blockchain.withthebest.com"
 
@@ -341,3 +453,11 @@
   city: "Santa Clara"
   country: "United States"
   link: "http://blockchain-expo.com/northamerica/"
+
+- date: 2018-02-16
+  title: "The Bitcoin, Ethereum, And Blockchain Superconference"
+  venue: "Dallas/Fort Worth Airport Marriott"
+  address: "8440 Freeport Pkwy. 75063"
+  city: "Irving"
+  country: "United States"
+  link: "https://www.bitcoinsuperconference.com/"
