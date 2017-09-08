@@ -54,13 +54,13 @@ en:
       special limitations on the minimum or maximum amount you can send.
 
     pci: "No PCI compliance required"
-    pcitext: "Accepting credit cards online typically requires extensive security checks in order to comply with the PCI standard. Bitcoin still requires you to <a href=\"#secure-your-wallet#\">secure your wallet</a> and your payment requests. However, you do not carry the costs and responsibilities that come with processing sensitive information from your customers like credit card numbers."
+    pcitext: "Accepting credit cards online typically requires extensive security checks in order to comply with the PCI standard. Bitcoin still requires you to <a href=\"#secure-your-wallet#\">secure your wallet</a> and your payment requests. However, you do not carry the costs and responsibilities that come with processing sensitive information from your customers (like credit card numbers)."
     visibility: "Get some free visibility"
     visibilitytext: "Bitcoin is an emerging market of new customers who are searching for ways to spend their bitcoins. Accepting them is a good way to get new customers and give your business some new visibility. Accepting a new payment method has often shown to be a clever practice for online businesses."
     multisig: "Multi-signature"
     multisigtext: "Bitcoin also includes a multi-signature feature which allows bitcoins to be spent only if a subset of a group of people authorize the transaction. This can be used by a board of directors to prevent any member to make expenditures without enough consent from other members, as well as to track which members allowed each payment."
     transparency: "Accounting transparency"
-    transparencytext: "Many organizations are required to produce accounting documents about their activity. Using Bitcoin allows you to offer the highest level of transparency since you can provide information your members can use to verify your balances and transactions. Non-profit organizations can also allow the public to see how much they receive in donations."
+    transparencytext: "Many organizations are required to produce accounting documents about their activity. Using Bitcoin allows you to offer the highest level of transparency since you can provide your members information they can use to verify your balances and transactions. Non-profit organizations can also allow the public to see how much they receive in donations."
   bitcoin-for-developers:
     title: "Bitcoin for Developers - Bitcoin"
     pagetitle: "Bitcoin for Developers"
@@ -127,7 +127,7 @@ en:
       send 1 bitcoin.
 
     anonymous: "Protect your identity"
-    anonymoustext: "With Bitcoin, there is no credit card number that some malicious actor can collect in order to impersonate you. In fact, it is even possible to send a payment without revealing your identity, almost like with physical money. You should however take note that some effort can be required to <a href=\"#protect-your-privacy#\">protect your privacy</a>."
+    anonymoustext: "With Bitcoin, there is no credit card number that some malicious actor can collect in order to impersonate you. In fact, it is even possible to send a payment without revealing your identity, almost like with physical money. You should, however, take note that some effort may be required to <a href=\"#protect-your-privacy#\">protect your privacy</a>."
   bitcoin-paper:
     title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
     pagetitle: "Bitcoin: A Peer-to-Peer Electronic Cash System"
@@ -140,7 +140,7 @@ en:
     pagetitle: "How to buy Bitcoin"
     summary: "There are several ways you can buy Bitcoin."
     bitcoin-exchange: "Use a Bitcoin Exchange"
-    bitcoin-exchange-text: "Our <a href=\"/en/exchanges\">Bitcoin Exchange</a> page, lists many different businesses that can help you buy Bitcoin using your bank account."
+    bitcoin-exchange-text: "Our <a href=\"/en/exchanges\">Bitcoin Exchange</a> page lists many different businesses that can help you buy Bitcoin using your bank account."
     local-bitcoins: "Discover people selling Bitcoin in your community"
     local-bitcoins-text: "<a href=\"https://localbitcoins.com/\">Local Bitcoins</a> lets you search and browse through various sellers of Bitcoin in your area. Sellers have reviews and feedback scores to help you choose."
     bitcoin-atm: "Use a Bitcoin ATM"
@@ -548,7 +548,7 @@ en:
     pagedesc: "Using Bitcoin to pay and get paid is easy and accessible to everyone."
     users: "How to use Bitcoin"
     inform: "Inform yourself"
-    informtxt: "Bitcoin is different than what you know and use every day. Before you start using Bitcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls."
+    informtxt: "Bitcoin is different from what you know and use every day. Before you start using Bitcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls."
     informbut: "Read more"
     choose: "Choose your wallet"
     choosetxt: "You can bring a Bitcoin wallet in your everyday life with your mobile or you can have a wallet only for online payments on your computer. In any case, choosing your wallet can be done in a minute."
@@ -564,7 +564,7 @@ en:
     merchantinformtxt: "Bitcoin does not require merchants to change their habits. However, Bitcoin is different than what you know and use every day. Before you start using Bitcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls."
     merchantinformbut: "Read more"
     merchantservice: "Processing payments"
-    merchantservicetxt: "You can process payments and invoices by yourself or you can use merchant services and deposit money in your local currency or bitcoins. Most point of sales businesses use a tablet or a mobile phone to let customers pay with their mobile phones."
+    merchantservicetxt: "You can process payments and invoices by yourself, or you can use merchant services and deposit money in your local currency or bitcoins. Most point of sale businesses use a tablet or a mobile phone to let customers pay with their mobile phones."
     merchantservicebut: "Find merchant services"
     tax: "Accounting and taxes"
     taxtxt: "Merchants often deposit and display prices in their local currency. In other cases, Bitcoin works similarly to a foreign currency. To get appropriate guidance regarding tax compliance for your own jurisdiction, you should contact a qualified accountant."
@@ -830,7 +830,7 @@ en:
     p2p: "P2P"
     p2ptxt: "Peer-to-peer refers to <b>systems that work like an organized collective</b> by allowing each individual to interact directly with the others. In the case of Bitcoin, the network is built in such a way that each user is broadcasting the transactions of other users. And, crucially, no bank is required as a third party."
     privatekey: "Private Key"
-    privatekeytxt: "A private key is a <b>secret piece of data that proves your right to spend bitcoins from a specific wallet</b> through a cryptographic <a href=\"#[vocabulary.signature]\">signature</a>. Your private key(s) are stored in your computer if you use a software wallet; they are stored on some remote servers if you use a web wallet. Private keys must never be revealed as they allow you to spend bitcoins for their respective Bitcoin wallet."
+    privatekeytxt: "A private key is a <b>secret piece of data that proves your right to spend bitcoins from a specific wallet</b> through a cryptographic <a href=\"#[vocabulary.signature]\">signature</a>. Your private key(s) are stored in your computer if you use a software wallet; they are stored on some remote servers if you use a web wallet. Private keys must never be revealed, as they allow bitcoins to be spent from their respective Bitcoin wallet."
     signature: "Signature"
     signaturetxt: "A <a href=\"#[vocabulary.cryptography]\">cryptographic</a> signature is <b>a mathematical mechanism that allows someone to prove ownership</b>. In the case of Bitcoin, a <a href=\"#[vocabulary.wallet]\">Bitcoin wallet</a> and its <a href=\"#[vocabulary.privatekey]\">private key(s)</a> are linked by some mathematical magic. When your Bitcoin software signs a transaction with the appropriate private key, the whole network can see that the signature matches the bitcoins being spent. However, there is no way for the world to guess your private key to steal your hard-earned bitcoins."
     wallet: "Wallet"
