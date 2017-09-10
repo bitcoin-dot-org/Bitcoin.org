@@ -461,7 +461,7 @@
   city: "Palo Alto"
   country: "United States"
   link: "https://scalingbitcoin.org/event/stanford2017"
-  
+
 - date: 2017-11-15
   title: "Blockchain WithTheBest"
   venue: "Online Conference"
@@ -469,6 +469,14 @@
   city: "San Francisco"
   country: "United States"
   link: "http://blockchain.withthebest.com"
+
+- date: 2017-11-15
+  title: "Blockchain & Bitcoin Conference Moscow"
+  venue: "СEC Sokolniki"
+  address: "5-iy Luchevoy prosek 7/1"
+  city: "Moscow"
+  country: "Russia"
+  link: "https://moscow.blockchainconf.world/ru"
 
 - date: 2017-11-19
   title: "BitBrum"
