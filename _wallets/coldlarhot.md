@@ -2,7 +2,7 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-id: coldlerhot
+id: coldlarhot
 title: "Coldlarhot"
 titleshort: "Coldlarhot"
 compat: "android ios"
