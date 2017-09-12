@@ -30,7 +30,7 @@ platform:
           - name: ios
             text: "walletcoldlarhot"
             link: "http://www.coldlar.com/"
-            source: ""
+            source: "https://github.com/cnzkh/coldlar"
             screenshot: "coldlarhot.png"
             check:
              control: "checkgoodcontrolfull"
