@@ -460,8 +460,26 @@ peers using one of the following methods:
    bloom filter in a `merkleblock` message followed by zero or more
    `tx` messages.
 
-By default, Bitcoin Core broadcasts blocks using standard block relay,
-but it will accept blocks sent using either of the methods described above.
+* **[Direct Headers Announcement][]{:#term-direct-headers-announcement}{:.term}:**
+  a relay node may skip the round trip overhead of an `inv` message
+  followed by `getheaders` by instead immediately sending a `headers`
+  message containing the full header of the new block. A HF peer
+  receiving this message will partially validate the block header as it
+  would during headers-first IBD, then request the full block contents
+  with a `getdata` message if the header is valid. The relay node then
+  responds to the `getdata` request with the full or filtered block
+  data in a `block` or `merkleblock` message, respectively. A HF node
+  may signal that it prefers to receive `headers` instead of `inv`
+  announcements by sending a special `sendheaders` message during the
+  connection handshake.
+
+  This protocol for block broadcasting was proposed in BIP 130 and has
+  been implemented in Bitcoin Core since version 0.12.
+
+By default, Bitcoin Core broadcasts blocks using direct headers
+announcement to any peers that have signalled with `sendheaders` and
+uses standard block relay for all peers that have not. Bitcoin Core
+will accept blocks sent using any of the methods described above.
 
 Full nodes validate the received block and then advertise it to their
 peers using the standard block relay method described above.  The condensed
