@@ -460,7 +460,7 @@ peers using one of the following methods:
    bloom filter in a `merkleblock` message followed by zero or more
    `tx` messages.
 
-* **[Direct Headers Announcement][]{:#term-direct-headers-announcement}{:.term}:**
+* **[Direct Headers Announcement][/en/glossary/block-header]{:#term-direct-headers-announcement}{:.term}:**
   a relay node may skip the round trip overhead of an `inv` message
   followed by `getheaders` by instead immediately sending a `headers`
   message containing the full header of the new block. A HF peer
