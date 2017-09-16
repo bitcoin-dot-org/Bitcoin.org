@@ -18,6 +18,11 @@ default: clean build
 preview: clean
 	$S export LANG=C.UTF-8 ; bundle exec jekyll serve --incremental
 
+## `make preview-docker`: start the built-in Jekyll preview, with proper
+## host setting for running in Docker container
+preview-docker: clean
+	$S export LANG=C.UTF-8 ; bundle exec jekyll serve --incremental --watch -H 0.0.0.0
+
 ## `make test`: don't build, but do run all tests
 test: pre-build-tests post-build-tests
 

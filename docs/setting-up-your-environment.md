@@ -188,3 +188,23 @@ before building you preview:
 You can also add this line to your `~/.bashrc` file if you frequently
 build site previews so that you don't have to remember to run it for
 each shell.
+
+## Alternative Local Environment Using Docker Compose
+
+Alternatively, you can run a local site using [Docker Compose](https://docs.docker.com/compose/):
+
+1. [Install Docker](https://docs.docker.com/engine/installation/).
+
+1. Ensure you checked out the site repository as described in [Working with GitHub](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md). Then change directory to the top-level of your local repository (replace `bitcoin.org` with the full path to your local repository clone):
+
+   ```bash
+   cd bitcoin.org
+   ```
+
+1. Run the following:
+
+   ```bash
+   docker-compose up -d
+   ```
+
+1. Visit http://localhost:4000/ in your browser to view the site.
