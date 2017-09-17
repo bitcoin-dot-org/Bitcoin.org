@@ -1123,7 +1123,7 @@ We save that txid to a shell variable as the txid of the UTXO we plan to spend n
 
 We use the `getrawtransaction` RPC with the optional second argument
 (*true*) to get the decoded transaction we just created with
-`spendtoaddress`. We choose one of the outputs to be our UTXO and get
+`sendtoaddress`. We choose one of the outputs to be our UTXO and get
 its output index number (vout) and pubkey script (scriptPubKey).
 
 {% highlight bash %}
