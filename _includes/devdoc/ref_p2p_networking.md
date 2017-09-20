@@ -229,7 +229,7 @@ d39f608a7775b537729884d4e6633bb2
 
 The `getdata` message requests one or more data objects from another
 node. The objects are requested by an inventory, which the requesting
-node typically previously received by way of an `inv` message.
+node typically received previously by way of an `inv` message.
 
 The response to a `getdata` message can be a `tx` message, `block`
 message, `merkleblock` message, or `notfound` message.
