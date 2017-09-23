@@ -449,7 +449,7 @@ more child nodes to process.
 We hash as appropriate to fill out the tree.  Note that the eighth flag is
 not used---this is acceptable as it was required to pad out a flag byte.
 
-The final steps would be to ensure the computed computed merkle root
+The final steps would be to ensure the computed merkle root
 is identical to the merkle root in the header and check the other steps
 of the parsing checklist in the `merkleblock` message section.
 
