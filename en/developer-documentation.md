@@ -61,7 +61,8 @@ end_of_page: |
       <p><a href="/en/developer-guide#payment-processing">Payment Processing Guide</a></p>
       <p><a href="/en/developer-examples#payment-processing">Payment Processing Examples</a></p>
       <p><a href="https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki"><span class="fa fa-external-link"></span> Payment Protocol</a> - BIP70</p>
-    </div><div>
+    </div>
+    <div>
       <h2 id="operating_modes"><span class="fa fa-cogs fa-lg"></span> Operating Modes</h2>
       <p><a href="/en/developer-guide#operating-modes">Operating Modes Guide</a></p>
     </div>
@@ -73,11 +74,20 @@ end_of_page: |
       <p><a href="/en/developer-reference#p2p-network">P2P Network Reference</a></p>
       <p><a href="/en/developer-examples#p2p-network">P2P Network Examples</a></p>
       <p><a href="https://en.bitcoin.it/wiki/Protocol_specification"><span class="fa fa-external-link"></span> Full Protocol Specification</a> - Wiki</p>
-    </div><div>
+    </div>
+    <div>
       <h2 id="mining"><span class="fa fa-puzzle-piece fa-lg"></span> Mining</h2>
       <p><a href="/en/developer-guide#mining">Mining Guide</a></p>
       <p><a href="https://github.com/bitcoin/bips/blob/master/bip-0022.mediawiki"><span class="fa fa-external-link"></span> getblocktemplate Fundamentals</a> - BIP22</p>
       <p><a href="https://github.com/bitcoin/bips/blob/master/bip-0023.mediawiki"><span class="fa fa-external-link"></span> getblocktemplate Pooled Mining</a> - BIP23</p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h2 id="privacy"><span class="fa fa-video-camera fa-lg"></span> Privacy</h2>
+      <p><a href="https://github.com/nopara73/ZeroLink/">ZeroLink: Bitcoin Fungibility Framework</a></p>
+    </div>
+    <div>
     </div>
   </div>
 </div>
