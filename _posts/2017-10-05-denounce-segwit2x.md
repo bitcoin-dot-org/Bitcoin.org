@@ -63,6 +63,7 @@ By default, we will be using the following list of companies known to support S2
 + Netki (United States)
 + OB1 (United States)
 + Purse (United States)
++ Reality Keys (Japan)
 + Ripio (Argentina)
 + Safello (Sweden)
 + SFOX (United States)
