@@ -47,7 +47,7 @@ invalidating previous transactions.
 ![Spending An Output](/img/dev/en-tx-overview-spending.svg)
 
 An output has an implied index number based on its location in the
-transaction---the first output is output zero. The output also has an
+transaction---the index of the first output is zero. The output also has an
 amount in satoshis which it pays to a conditional pubkey script. Anyone
 who can satisfy the conditions of that pubkey script can spend up to the
 amount of satoshis paid to it.
