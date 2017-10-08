@@ -1,9 +1,10 @@
 {% comment %}
+
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="walletmenu" id="walletmenu" onclick="walletMenuListener(event);" ontouchstart="walletMenuListener(event);">
+<div class="walletmenu" id="walletmenu">
 {% assign platformsByPlatform = site.platforms | group_by: "platform" %}
   <ul>
   {% for platform in platformsByPlatform %}

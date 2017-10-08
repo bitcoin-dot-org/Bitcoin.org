@@ -3,7 +3,7 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="wallet-list" id="wallets" onclick="walletListener(event);" ontouchstart="walletListener(event);">
+<div class="wallet-list" id="wallets">
 {% for wallet in site.wallets %}
   {% assign platform = page.platform['name'] %}
   {% assign os = page.os['name'] %}
