@@ -7,7 +7,7 @@ Here are some ways you can help:
   your attention.
 
     Alternatively, email volunteer coordinator Will Binns
-    ([will@bitcoin.org](mailto:will@bitcoin.org)) or Dave Harding ([dave@dtrt.org](dave@dtrt.org))
+    ([will@bitcoin.org](mailto:will@bitcoin.org))
     with a short list of your interests and skills, and they will email you when
     there's an issue or PR that could use your attention.
 
