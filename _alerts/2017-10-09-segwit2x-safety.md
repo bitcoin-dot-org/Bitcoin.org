@@ -34,12 +34,12 @@ to major Bitcoin communication channels and media shortly after the fork so you 
 
 Miners in Bitcoin are responsible for transaction ordering through putting transactions into blocks, and collectively
 creating a chain of these blocks. Most mobile wallets depend on blindly trusting the longest chain produced by the miners in order to safely send and receive transactions.
-There is considerable mining power supporting the contentious hard fork. A supermajority of miners have pledged to support the contentious
+There is considerable mining power supporting the contentious hard fork. A majority of miners have pledged to support the contentious
 hard fork, therefore the longest chain as seen by most mobile wallets may not be the true block chain. As a
 result of this, spending money from a mobile wallet during a hard fork is dangerous. You will be
 vulnerable to many attacks as your wallet is not aware that the miners are breaking the consensus rules on the longest chain.
 
-If the contentious hard fork has failed and the supermajority of miners have broken their pledge
+If the contentious hard fork has failed and the majority of miners have broken their pledge
 to support the hard fork, it is safe to continue using mobile wallets, however you should check multiple
 sources of Bitcoin news such as this website, [/r/bitcoin](https://www.reddit.com/r/Bitcoin/), and the [Bitcoin Forum](https://bitcointalk.org)
 to make sure that it's safe to continue using your particular wallet. As a general rule, you should not perform any transactions
@@ -75,7 +75,6 @@ The following companies and services have pledged to adopt the contentious hard 
 + Bitcoin.com (St. Kitts & Nevis)
 + **BitPay (United States)**
 + BitPesa (Kenya)
-+ BitOasis (United Arab Emirates)
 + **Blockchain.info (UK)**
 + **BTC.com (China)**
 + Circle (United States)
@@ -103,7 +102,6 @@ The following companies and services have pledged to adopt the contentious hard 
 + Safello (Sweden)
 + SFOX (United States)
 + **ShapeShift (Switzerland)**
-+ SurBTC (Chile)
 
 ## Miners
 
@@ -131,4 +129,3 @@ The following companies and services have pledged to adopt the contentious hard 
 + Netki (United States)
 + Purse (United States)
 + Veem (United States)
-+ Yours (United States)
