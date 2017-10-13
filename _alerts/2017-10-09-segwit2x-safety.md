@@ -24,7 +24,7 @@ and transfer out any BTC stored on services that are a signatory to this agreeme
 listed the businesses supporting this contentious hard fork at the bottom of this document.
 
 For users who aren't prepared to install Bitcoin Core and go through the lengthy set up process, we recommend
-a wallet such as [GreenAddress](https://greenaddress.it/) or [Electrum](https://electrum.org/). Avoid using web wallets like blockchain.info.
+a wallet such as [GreenAddress](https://greenaddress.it/), [Electrum](https://electrum.org/) or [TREZOR](https://trezor.io/). Avoid using web wallets like blockchain.info.
 However users should only use these wallets to store their coins and never perform transactions until well after the hard fork. Any transactions you
 make on the Bitcoin blockchain can also be replicated and "replayed" on the altcoin chain. If the coins on the contentious
 hard fork have any value, there will be methods you can use to "split" your coins and have access to them. Pay extra attention
