@@ -375,6 +375,16 @@ function walletRotate() {
   }
 }
 
+function walletScoreListener(e) {
+   // Listen for events on wallet scores and display them on tap.
+   var init = function(e) {
+     var t = getEvent(e, 'target');
+     while (!t.parentNode.parentNode.parentNode.id) t = t.parentNode;
+     (t.className.indexOf('hover') === -1) ? addClass(t, 'hover'): removeClass(t, 'hover');
+   };
+   onTouchClick(e, init);
+ }
+
 function makeEditable(e) {
   // An easter egg that makes the page editable when user click on the page and hold their mouse button for one second.
   // This trick allows translators and writers to preview their work.
