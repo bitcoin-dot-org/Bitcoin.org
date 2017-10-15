@@ -80,8 +80,8 @@ As of Bitcoin Core 0.14.2, the most recent protocol version is 70015.
 | 31800   | Bitcoin Core 0.3.18 <br>(Dec 2010) | • Added `getheaders` message and `headers` message.
 | 31402   | Bitcoin Core 0.3.15 <br>(Oct 2010) | • Added time field to `addr` message.
 | 311     | Bitcoin Core 0.3.11 <br>(Aug 2010) | • Added `alert` message.
-| 209     | Bitcoin Core 0.2.9 <br>(May 2010)  | • Added checksum field to message headers.
-| 106     | Bitcoin Core 0.1.6 <br>(Oct 2009)  | • Added receive IP address fields to `version` message.
+| 209     | Bitcoin Core 0.2.9 <br>(May 2010)  | • Added checksum field to message headers, added `verack` message, and added starting height field to `version` message.
+| 106     | Bitcoin Core 0.1.6 <br>(Oct 2009)  | • Added transmitter IP address fields, nonce, and User Agent (subVer) to `version` message.
 
 {% endautocrossref %}
 
@@ -1189,6 +1189,8 @@ section][section message header] for an example of a message without a payload.
 
 {% autocrossref %}
 
+*Added in protocol version 209.*
+
 The `verack` message acknowledges a previously-received `version`
 message, informing the connecting node that it can begin to send
 other messages. The `verack` message has no payload; for an example
@@ -1217,16 +1219,16 @@ before initializing its half of the connection by first sending a
 | 4        | version               | int32_t          | Required                                 | The highest protocol version understood by the transmitting node.  See the [protocol version section][section protocol versions].
 | 8        | services              | uint64_t         | Required                                 | The services supported by the transmitting node encoded as a bitfield.  See the list of service codes below.
 | 8        | timestamp             | int64_t          | Required                                 | The current Unix epoch time according to the transmitting node's clock.  Because nodes will reject blocks with timestamps more than two hours in the future, this field can help other nodes to determine that their clock is wrong.
-| 8        | addr_recv services    | uint64_t         | Required                                 | *Added in protocol version 106.* <br><br>The services supported by the receiving node as perceived by the transmitting node.  Same format as the 'services' field above. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always send 0.
-| 16       | addr_recv IP address  | char             | Required                                 | *Added in protocol version 106.* <br><br>The IPv6 address of the receiving node as perceived by the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][]. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always return ::ffff:127.0.0.1
-| 2        | addr_recv port        | uint16_t         | Required                                 | *Added in protocol version 106.* <br><br>The port number of the receiving node as perceived by the transmitting node in **big endian byte order**.
-| 8        | addr_trans services   | uint64_t         | Required                                 | The services supported by the transmitting node.  Should be identical to the 'services' field above.
-| 16       | addr_trans IP address | char             | Required                                 | The IPv6 address of the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][].  Set to ::ffff:127.0.0.1 if unknown.
-| 2        | addr_trans port       | uint16_t         | Required                                 | The port number of the transmitting node in **big endian byte order**.
-| 8        | nonce                 | uint64_t         | Required                                 | A random nonce which can help a node detect a connection to itself.  If the nonce is 0, the nonce field is ignored.  If the nonce is anything else, a node should terminate the connection on receipt<!--noref--> of a `version` message with a nonce it previously sent.
-| *Varies* | user_agent bytes      | compactSize uint | Required                                 | Number of bytes in following user\_agent field.  If 0x00, no user agent field is sent.
-| *Varies* | user_agent            | string           | Required if user_agent bytes > 0         | *Renamed in protocol version 60000.* <br><br>User agent as defined by BIP14. Previously called subVer.
-| 4        | start_height          | int32_t          | Required                                 | The height of the transmitting node's best block chain or, in the case of an SPV client, best block header chain.
+| 8        | addr_recv services    | uint64_t         | Required                                 | The services supported by the receiving node as perceived by the transmitting node.  Same format as the 'services' field above. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always send 0.
+| 16       | addr_recv IP address  | char             | Required                                 | The IPv6 address of the receiving node as perceived by the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][]. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always return ::ffff:127.0.0.1
+| 2        | addr_recv port        | uint16_t         | Required                                 | The port number of the receiving node as perceived by the transmitting node in **big endian byte order**.
+| 8        | addr_trans services   | uint64_t         | Required                                 | *Added in protocol version 106.* <br><br>The services supported by the transmitting node.  Should be identical to the 'services' field above.
+| 16       | addr_trans IP address | char             | Required                                 | *Added in protocol version 106.* <br><br>The IPv6 address of the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][].  Set to ::ffff:127.0.0.1 if unknown.
+| 2        | addr_trans port       | uint16_t         | Required                                 | *Added in protocol version 106.* <br><br>The port number of the transmitting node in **big endian byte order**.
+| 8        | nonce                 | uint64_t         | Required                                 | *Added in protocol version 106.* <br><br>A random nonce which can help a node detect a connection to itself.  If the nonce is 0, the nonce field is ignored.  If the nonce is anything else, a node should terminate the connection on receipt<!--noref--> of a `version` message with a nonce it previously sent.
+| *Varies* | user_agent bytes      | compactSize uint | Required                                 | *Added in protocol version 106.* <br><br>Number of bytes in following user\_agent field.  If 0x00, no user agent field is sent.
+| *Varies* | user_agent            | string           | Required if user_agent bytes > 0         | *Added in protocol version 106. Renamed in protocol version 60000.* <br><br>User agent as defined by BIP14. Previously called subVer.
+| 4        | start_height          | int32_t          | Required                                 | *Added in protocol version 209.* <br><br>The height of the transmitting node's best block chain or, in the case of an SPV client, best block header chain.
 | 1        | relay                 | bool             | Optional                                 | *Added in protocol version 70001 as described by BIP37.* <br><br>Transaction relay flag.  If 0x00, no `inv` messages or `tx` messages announcing new transactions should be sent to this client until it sends a `filterload` message or `filterclear` message.  If the relay field is not present or is set to 0x01, this node wants `inv` messages and `tx` messages announcing new transactions.
 
 The following service identifiers have been assigned.
