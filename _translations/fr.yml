@@ -684,6 +684,13 @@ fr:
     footer: "Publié sous la <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licence MIT</a>"
     sponsor: "Un site web communautaire commandité par"
     getstarted: "Débuter avec Bitcoin"
+    donation-banner-text: "Bitcoin.org est un projet créé par une communauté, les dons sont appréciés et utilisés pour améliorer le site internet."
+    donation-banner-toggle-button: "Bitcoin.org a besoin de votre soutien !"
+    donation-banner-donate-button: "Faire un don"
+    donation-modal-header: "Donner à Bitcoin.org"
+    donation-modal-subheader: "Utilisez ce QR Code ou l'adresse ci-dessous"
+    donation-modal-input-custom-amount: "Ou choisir un montant"
+    donation-modal-optional-message: "Description facultative (pour votre portefeuille)"
   url:
     about-us: a-propos-de-nous
     bitcoin-for-developers: bitcoin-pour-developpeurs
