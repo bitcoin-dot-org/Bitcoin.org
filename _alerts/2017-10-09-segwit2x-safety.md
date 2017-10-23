@@ -10,7 +10,7 @@ date: 2017-10-11
 ## Summary
 
 A subsection of the Bitcoin economy including prominent businesses such as Coinbase, Xapo, and BitPay have signed an agreement to adopt
-and implement a contentious hard fork of Bitcoin [sometime](http://bashco.github.io/2x_Countdown/) in November. A hard fork is a
+and implement a contentious hard fork of Bitcoin [sometime](https://bashco.github.io/2x_Countdown/) in November. A hard fork is a
 backwards incompatible change to the Bitcoin network. This hard fork is not supported by
 the majority of the Bitcoin users and developers and is therefore a contentious hard fork.
 By adopting this hard fork, we believe the supporters of this agreement are shifting their users to an alternative currency (an altcoin) which is incompatible with Bitcoin.
