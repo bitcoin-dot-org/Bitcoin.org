@@ -9,7 +9,7 @@ date: 2017-10-11
 
 ## Summary
 
-A subsection of the Bitcoin economy including prominent businesses such as Coinbase, Xapo, and BitPay have signed an agreement to adopt
+A subsection of the Bitcoin economy including prominent businesses such as Xapo and BitPay have signed an agreement to adopt
 and implement a contentious hard fork of Bitcoin [sometime](http://bashco.github.io/2x_Countdown/) in November. A hard fork is a
 backwards incompatible change to the Bitcoin network. This hard fork is not supported by
 the majority of the Bitcoin users and developers and is therefore a contentious hard fork.
@@ -17,7 +17,7 @@ By adopting this hard fork, we believe the supporters of this agreement are shif
 
 The signatories of this agreement wrongly believe that the currency created by adopting
 this contentious hard fork will eventually become Bitcoin. Therefore storing any BTC on services such
-as Coinbase, Bitpay and Xapo is strongly not recommended. By storing BTC on these services, you could
+as Bitpay and Xapo is strongly not recommended. By storing BTC on these services, you could
 find that after the hard fork, your BTC has been renamed to something else or replaced entirely with the new altcoin.
 The best way to ensure that your BTC is protected is to [download the latest version of Bitcoin Core](https://bitcoin.org/en/download)
 and transfer out any BTC stored on services that are a signatory to this agreement. We have
@@ -78,7 +78,6 @@ The following companies and services have pledged to adopt the contentious hard 
 + **Blockchain.info (UK)**
 + **BTC.com (China)**
 + Circle (United States)
-+ **Coinbase (United States)**
 + Coins.ph (Phillipines)
 + GoCoin (Isle of Man)
 + Jaxx (Canada)
@@ -95,7 +94,6 @@ The following companies and services have pledged to adopt the contentious hard 
 + Bitso (Mexico)
 + BTCC (China)
 + BTER.com (China)
-+ **Coinbase (United States)**
 + Coins.ph (Phillipines)
 + CryptoFacilities (UK)
 + Korbit (South Korea)
