@@ -27,7 +27,7 @@ The `generatetoaddress` RPC {{summary_generateToAddress}}
   
 {% enditemplate %}
 
-*Parameter #2---a transaction identifier (TXID)*
+*Parameter #2---an address (P2PKH or P2SH)*
 
 {% itemplate ntpd1 %}
 - n: "Address"
