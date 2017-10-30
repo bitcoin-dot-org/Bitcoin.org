@@ -1,7 +1,7 @@
----
-# This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
----
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
 
 The Developer Guide aims to provide the information you need to understand
 Bitcoin and start building Bitcoin-based applications, but it is [not a

@@ -1,7 +1,7 @@
----
-# This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
----
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
 
 The following guide aims to provide examples to help you start
 building Bitcoin-based applications. To make the best use of this document,
