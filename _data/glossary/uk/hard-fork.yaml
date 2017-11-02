@@ -1,0 +1,34 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Hard Fork, Hard-Forking Change
+
+    summary_max_255_characters_no_formatting: >
+        A permanent divergence in the block chain, commonly occurs
+        when non-upgraded nodes can't validate blocks created by
+        upgraded nodes that follow newer consensus rules.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Hard fork
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - hard forks
+        - hard-forking change
+        - hard-forking
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Fork (a regular fork where all nodes follow the same consensus rules, so the fork is resolved once one chain has more proof of work than another)
+        - Soft fork (a temporary divergence in the block chain caused by non-upgraded nodes not following new consensus rules)
+        - Software fork (when one or more developers permanently develops a codebase separately from other developers)
+        - Git fork (when one or more developers temporarily develops a codebase separately from other developers
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Hard fork](/en/developer-guide#term-hard-fork) --- Bitcoin.org Developer Guide"
+        - "[Hard fork](https://en.bitcoin.it/wiki/Hardfork) --- Bitcoin Wiki"
+        - "[Has a hard fork ever occurred?](http://bitcoin.stackexchange.com/q/36090) --- Bitcoin StackExchange"
+
+---

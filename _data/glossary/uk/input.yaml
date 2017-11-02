@@ -1,0 +1,31 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Input, Transaction Input, TxIn
+
+    summary_max_255_characters_no_formatting: >
+        An input in a transaction which contains three fields: an
+        outpoint, a signature script, and a sequence number.  The
+        outpoint references a previous output and the signature script
+        allows spending it.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Input
+        - TxIn
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - inputs
+        - txins
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Input](/en/developer-guide#term-input) --- Bitcoin.org Developer Guide"
+        - "[TxIn](/en/developer-reference#txin) --- Bitcoin.org Developer Reference"
+        - "[Inputs](https://en.bitcoin.it/wiki/Transaction#Input) --- Bitcoin Wiki"
+
+---

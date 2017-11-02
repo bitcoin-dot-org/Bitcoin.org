@@ -1,0 +1,32 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Mining, Miner
+
+    summary_max_255_characters_no_formatting: >
+        Mining is the act of creating valid Bitcoin blocks, which
+        requires demonstrating proof of work, and miners are devices
+        that mine or people who own those devices.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Mining
+        - Miner
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - mine
+        - miners
+        - mining
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Mining](/en/developer-guide#term-miner) --- Bitcoin.org Developer Guide"
+        - "[Mining](https://en.bitcoin.it/wiki/Mining) --- Bitcoin Wiki"
+        - "[What exactly is mining?](http://bitcoin.stackexchange.com/q/148) --- Bitcoin StackExchange"
+
+
+---

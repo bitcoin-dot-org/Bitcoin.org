@@ -1,0 +1,31 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Pubkey Script, ScriptPubKey
+
+    summary_max_255_characters_no_formatting: >
+        A script included in outputs which sets the conditions that must
+        be fulfilled for those satoshis to be spent.  Data for
+        fulfilling the conditions can be provided in a signature script.
+        Pubkey Scripts are called a scriptPubKey in code.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Pubkey script
+        - ScriptPubKey
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - pubkey scripts
+        - scriptpubkeys
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Pubkey (a public key, which can be used as part of a pubkey script but don't provide a programmable authentication mechanism)
+        - Signature script (a script that provides data to the pubkey script)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Pubkey script](/en/developer-guide#term-pubkey-script) --- Bitcoin.org Developer Guide"
+
+---

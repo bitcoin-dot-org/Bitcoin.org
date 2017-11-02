@@ -272,6 +272,37 @@ uk:
     checkfailfeecontrolstatictxt: "Цей гаманець не передбачає яких-небудь пропозицій щодо комісій, які базуються на поточних умовах мережі. Це означає, що ваші транзакції можуть мати затримки, якщо вибрана сума є занадто низькою або що ви можете сплатити занадто високу плату."
     educate: "Приділіть достатньо часу, щоб усе вивчити"
     educatetxt: "Біткойн відрізняється від того, що ви знаєте і використовуєте повсякденно. Перед тим як почати використовувати Біткойн для здійснення серйозних транзакцій, обов'язково прочитайте розділ <a href=\"#you-need-to-know#\"><b>те, що вам потрібно знати</b></a> і вжийте необхідних заходів щодо <a href=\"#secure-your-wallet#\"><b>захисту вашого гаманця</b></a>. Завжди пам'ятайте, що вибір гаманця та вжиття необхідних заходів щодо захисту власних грошей - це виключно ваша відповідальність."
+  developer-documentation:
+    title: "Документація Розробника - Біткойн"
+    pagetitle: "Документація Розробника"
+    summary: "Знайдіть корисні ресурси, довідники та довідкові матеріали для розробників"
+    glossarysearchplaceholder: "Шукайте в глосарію, RPC тощо"
+    docreferencemenuguide: "Керівництво"
+    docreferencemenureference: "Довідка"
+    docreferencemenuexamples: "Приклади"
+    docreferencemenuglossary: "Глосарій"
+    resourcestitleblockchain: "Блокчейн"
+    resourcesitemblockchainguides: "Блокчейн - Керівництво"
+    resourcesitemblockchainreference: "Блокчейн - Довідка"
+    resourcestitletransactions: "Транзакції"
+    resourcesitemtransactionsguides: "Транзакції - Керівництво"
+    resourcesitemtransactionsreference: "Транзакції - Довідка"
+    resourcesitemtransactionsexamples: "Транзакції - Приклади"
+    resourcestitlecontracts: "Контракти"
+    resourcesitemcontractsguides: "Контракти - Керівництво"
+    resourcestitlewallets: "Гаманці"
+    resourcesitemwalletsguides: "Гаманці - Керівництва"
+    resourcesitemwalletsreference: "Гаманці - Довідка"
+    resourcestitlepaymentprocessing: "Опрацьовування платежів"
+    resourcesitempaymentprocessingguides: "Опрацьовування платежів - Керівництво"
+    resourcesitempaymentprocessingexamples: "Опрацьовування платежів - Приклади"
+    resourcestitleoperatingmodes: "Оперування Режимами"
+    resourcesitemoperatingmodesguides: "Оперування Режимами - Керівництво"
+    resourcestitlep2pnetwork: "P2P Мережа"
+    resourcesitemp2pnetworkguides: "P2P Мережа - Керівництво"
+    resourcesitemp2pnetworkreference: "P2P Мережа - Довідка"
+    resourcesitemp2pnetworkexamples: "P2P Мережа - Приклади"
+    resourcestitleadditional: "Додаткові матеріали"
   development:
     title: "Розробка - Біткойн"
     pagetitle: "Розробка Біткойн"
@@ -867,6 +898,7 @@ uk:
     bitcoin-for-businesses: bitcoin-for-businesses
     choose-your-wallet: choose-your-wallet
     community: community
+    developer-documentation: developer-documentation
     development: development
     download: download
     exchanges: exchanges

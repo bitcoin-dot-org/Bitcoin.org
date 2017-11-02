@@ -1,0 +1,36 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: P2SH Multisig, P2SH Multisig Output
+
+    summary_max_255_characters_no_formatting: >
+        A P2SH output where the redeem script uses one of the multisig
+        opcodes.  Up until Bitcoin Core 0.10.0, P2SH multisig scripts
+        were standard transactions, but most other P2SH scripts were
+        not.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - P2SH multisig
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - P2SH multisig script
+        - P2SH multisig output
+        - P2Sh multisig scripts
+        - P2SH multisig outputs
+        - P2SH multisig redeem script
+        - P2SH multisig redeem scripts
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Multisig pubkey scripts (also called "bare multisig", these multisig scripts don't use P2SH encapsulation)
+        - P2SH (general P2SH, of which P2SH multisig is a specific instance that was special cased up until Bitcoin Core 0.10.0)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[P2SH multisig](/en/developer-guide#term-p2sh-multisig) --- Bitcoin.org Developer Guide"
+        - "[BIP16: pay to script hash](https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki) --- Bitcoin Improvement Proposals"
+        - "[What are the limits of bare multisig and P2SH multisig?](http://bitcoin.stackexchange.com/q/23893) --- Bitcoin StackExchange"
+
+---

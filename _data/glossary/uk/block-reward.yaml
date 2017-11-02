@@ -1,0 +1,30 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Block Reward, Block Miner Reward
+
+    summary_max_255_characters_no_formatting: >
+        The amount that miners may claim as a reward for creating a
+        block. Equal to the sum of the block subsidy (newly available
+        satoshis) plus the transactions fees paid by transactions
+        included in the block.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Block reward
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - block rewards
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Block subsidy
+        - Transaction fees
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Block reward](/en/developer-reference#term-block-reward) --- Bitcoin.org Developer Reference"
+
+
+---

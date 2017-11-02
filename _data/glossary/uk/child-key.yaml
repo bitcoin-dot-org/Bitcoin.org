@@ -1,0 +1,38 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Child Key, HD Wallet Child Key
+
+    summary_max_255_characters_no_formatting: >
+        In HD wallets, a key derived from a parent key.  The key can be
+        either a private key or a public key, and the key derivation may
+        also require a chain code.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Child key
+        - Child public key
+        - Child private key
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Child keys
+        - child public keys
+        - child private keys
+
+        - HD wallet child key
+        - HD wallet child keys
+
+        - child private and public keys
+        - child public and private keys
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Public key (derived from a private key, not a parent key)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Child key](/en/developer-guide#term-child-public-key) --- Bitcoin.org Developer Guide"
+        - "[BIP32: Hierarchical Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) --- Bitcoin Improvement Proposals"
+
+---

@@ -1,0 +1,30 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: SIGHASH_SINGLE
+
+    summary_max_255_characters_no_formatting: >
+        Signature hash type that signs the output corresponding to this input
+        (the one with the same index value), this input, and any other inputs
+        partially. Allows modification of other outputs and the sequence number
+        of other inputs.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - SIGHASH_SINGLE
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - "`SIGHASH_SINGLE`"
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - SIGHASH_ANYONECANPAY (a flag to signature hash types that only signs this single input)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[`SIGHASH_SINGLE`](/en/developer-guide#term-sighash-single) --- Bitcoin.org Developer Guide"
+        - "[OP_CHECKSIG](https://en.bitcoin.it/wiki/OP_CHECKSIG) --- Bitcoin Wiki"
+        - "[Contracts](https://en.bitcoin.it/wiki/Contracts#Theory) --- Bitcoin Wiki"
+
+---

@@ -17,7 +17,7 @@ langsorder:
 # - 'el'
 # - 'bg'
 # - 'ru'
-# - 'uk'
+- 'uk'
 # - 'ar'
 # - 'fa'
 # - 'hi'
@@ -50,7 +50,7 @@ langs:
   # 'sl': 'Slovenščina'
   # 'sv': 'Svenska'
   # 'tr': 'Türkçe'
-  # 'uk': 'Українська'
+  'uk': 'Українська'
   # 'zh_CN': '简体中文'
   # 'zh_TW': '繁體中文'
 

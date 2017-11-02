@@ -1,0 +1,27 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Message Header
+
+    summary_max_255_characters_no_formatting: >
+        The four header fields prefixed to all messages on the Bitcoin
+        P2P network.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Message header
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - message headers
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Message headers](/en/developer-reference#message-headers) --- Bitcoin.org Developer Reference"
+        - "[Message structure](https://en.bitcoin.it/wiki/Protocol_documentation#Message_structure) --- Bitcoin Wiki"
+        - "[What is the function of the payload checksum in message headers?](http://bitcoin.stackexchange.com/q/22882) --- Bitcoin StackExchange"
+
+---

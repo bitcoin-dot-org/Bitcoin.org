@@ -118,7 +118,6 @@ module Jekyll
         next if file == '.' or file == '..'
         lang = 'en'
         src = file
-        srcdir = '_data/glossary/en'
         output_directory = lang + '/glossary/'
         site.pages << GlossaryPage.new(site, site.source, lang, glossary_dir, src, output_directory)
       end

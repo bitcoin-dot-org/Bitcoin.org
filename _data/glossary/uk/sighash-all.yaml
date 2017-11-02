@@ -1,0 +1,28 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: SIGHASH_ALL
+
+    summary_max_255_characters_no_formatting: >
+        Default signature hash type which signs the entire transaction
+        except any signature scripts, preventing modification of the
+        signed parts.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - SIGHASH_ALL
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - "`SIGHASH_ALL`"
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[`SIGHASH_ALL`](/en/developer-guide#term-sighash-all) --- Bitcoin.org Developer Guide"
+        - "[OP_CHECKSIG](https://en.bitcoin.it/wiki/OP_CHECKSIG) --- Bitcoin Wiki"
+        - "[Contracts](https://en.bitcoin.it/wiki/Contracts#Theory) --- Bitcoin Wiki"
+
+---

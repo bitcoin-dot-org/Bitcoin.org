@@ -1,0 +1,31 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Node
+
+    summary_max_255_characters_no_formatting: >
+        A computer that connects to the Bitcoin network.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Node
+        - Full node
+        - Archival node
+        - Pruned node
+        - Peer
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Nodes
+        - Peers
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Lightweight node
+        - SPV node
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Full node](https://en.bitcoin.it/wiki/Full_node) --- Bitcoin Wiki"
+
+---

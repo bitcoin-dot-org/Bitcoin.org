@@ -1,0 +1,36 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Double Spend
+
+    summary_max_255_characters_no_formatting: >
+        A transaction that uses the same input as an already broadcast
+        transaction. The attempt of duplication, deceit, or conversion, 
+        will be adjudicated when only one of the transactions is recorded
+        in the blockchain.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Double spend
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - double spends
+        - double spent
+        - double-spend
+        - double-spends
+        - double-spent
+        - double spending
+        - double-spending
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Double spend](/en/developer-guide#term-double-spend) --- Bitcoin.org Developer Guide"
+        - "[Double spending](https://en.bitcoin.it/wiki/Double-spending) --- Bitcoin Wiki"
+        - "[What is a double spend?](http://bitcoin.stackexchange.com/q/4974) --- Bitcoin StackExchange"
+        - "[How do I detect a double spend?](http://bitcoin.stackexchange.com/q/13370) --- Bitcoin StackExchange"
+
+---

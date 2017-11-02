@@ -1,0 +1,33 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Null Data (OP_RETURN) Transaction
+
+    summary_max_255_characters_no_formatting: >
+        A transaction type relayed and mined by default in Bitcoin Core
+        0.9.0 and later that adds arbitrary data to a provably
+        unspendable pubkey script that full nodes don't have to store in
+        their UTXO database.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Null data transaction
+        - OP_RETURN transaction
+        - Data carrier transaction
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - null data transactions
+        - op_return transactions
+        - data carrier transactions
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - OP_RETURN (an opcode used in one of the outputs in an OP_RETURN transaction)
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Null data transaction](/en/developer-guide#term-null-data) --- Bitcoin.org Developer Guide"
+        - "[Pull request implement null data transactions](https://github.com/bitcoin/bitcoin/pull/2738) --- GitHub"
+
+---

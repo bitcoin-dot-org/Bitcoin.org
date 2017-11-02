@@ -1,0 +1,35 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Soft Fork, Soft-Forking Change
+
+    summary_max_255_characters_no_formatting: >
+        A softfork is a change to the bitcoin protocol 
+        wherein only previously valid blocks/transactions 
+        are made invalid. Since old nodes will recognise 
+        the new blocks as valid, a softfork is backward-compatible.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Soft fork
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - soft forks
+        - soft-forking change
+        - soft-forking
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Fork (a regular fork where all nodes follow the same consensus rules, so the fork is resolved once one chain has more proof of work than another)
+        - Hard fork (a permanent divergence in the block chain caused by non-upgraded nodes not following new consensus rules)
+        - Software fork (when one or more developers permanently develops a codebase separately from other developers)
+        - Git fork (when one or more developers temporarily develops a codebase separately from other developers
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Soft fork](/en/developer-guide#term-soft-fork) --- Bitcoin.org Developer Guide"
+        - "[Soft fork](https://en.bitcoin.it/wiki/Softfork) --- Bitcoin Wiki"
+        - "[What is a soft fork?](http://bitcoin.stackexchange.com/questions/30817) --- Bitcoin StackExchange"
+
+---

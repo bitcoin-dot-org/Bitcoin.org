@@ -1,0 +1,36 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: SPV, Simplified Payment Verification
+
+    summary_max_255_characters_no_formatting: >
+        A method for verifying if particular transactions are included
+        in a block without downloading the entire block.  The method is
+        used by some lightweight Bitcoin clients.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - SPV
+        - Simplified Payment Verification
+        - Lightweight client
+        - Thin client
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - lightweight clients
+        - thin clients
+        - spv client
+        - spv clients
+        - spv node
+        - spv nodes
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[SPV](/en/developer-guide#simplified-payment-verification-spv) --- Bitcoin.org Developer Guide"
+        - "[Thin client security](https://en.bitcoin.it/wiki/Thin_Client_Security) --- Bitcoin Wiki"
+        - "[What is a thin client?](http://bitcoin.stackexchange.com/questions/32529) --- Bitcoin StackExchange"
+
+---

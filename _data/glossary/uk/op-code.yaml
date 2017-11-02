@@ -1,0 +1,34 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Opcode
+
+    summary_max_255_characters_no_formatting: >
+        Operation codes from the Bitcoin Script language which push data
+        or perform functions within a pubkey script or signature script.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Opcode
+        - Data-pushing opcode
+        - Non-data-pushing opcode
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - opcodes
+        - opcode
+        - opcodes
+        - data-pushing opcodes
+        - data-pushing opcodes
+        - non-data-pushing opcodes
+        - non-data-pushing opcodes
+
+    not_to_be_confused_with_capitalize_first_letter:
+
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[Opcodes](/en/developer-reference#opcodes) --- Bitcoin.org Developer Reference"
+        - "[List of opcodes](https://en.bitcoin.it/wiki/Script) --- Bitcoin Wiki"
+
+---

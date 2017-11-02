@@ -297,6 +297,37 @@ en:
     checkfailfeecontrolstatictxt: "This wallet does not provide any fee suggestions which are based on current network conditions.  This means that your transactions may be subject to delays if the fee chosen is too low, or that you may pay a fee which is too high."
     educate: "Take time to educate yourself"
     educatetxt: "Bitcoin is different from what you know and use every day. Before you start using Bitcoin for any serious transaction, be sure to read <a href=\"#you-need-to-know#\"><b>what you need to know</b></a> and take appropriate steps to <a href=\"#secure-your-wallet#\"><b>secure your wallet</b></a>. Always remember that it is your responsibility to choose your wallet carefully and adopt good practices in order to protect your money."
+  developer-documentation:
+    title: "Developer Documentation - Bitcoin"
+    pagetitle: "Developer Documentation"
+    summary: "Find useful resources, guides and reference material for developers."
+    glossarysearchplaceholder: "Search the glossary, RPCs, and more"
+    docreferencemenuguides: "Guides"
+    docreferencemenureference: "Reference"
+    docreferencemenuexamples: "Examples"
+    docreferencemenuglossary: "Glossary"
+    resourcestitleblockchain: "Block Chain"
+    resourcesitemblockchainguides: "Block Chain Guide"
+    resourcesitemblockchainreference: "Block Chain Reference"
+    resourcestitletransactions: "Transactions"
+    resourcesitemtransactionsguides: "Transactions Guide"
+    resourcesitemtransactionsreference: "Transactions Reference"
+    resourcesitemtransactionsexamples: "Transactions Examples"
+    resourcestitlecontracts: "Contracts"
+    resourcesitemcontractsguides: "Contracts Guide"
+    resourcestitlewallets: "Wallets"
+    resourcesitemwalletsguides: "Wallets Guide"
+    resourcesitemwalletsreference: "Wallets Reference"
+    resourcestitlepaymentprocessing: "Payment Processing"
+    resourcesitempaymentprocessingguides: "Payment Processing Guide"
+    resourcesitempaymentprocessingexamples: "Payment Processing Examples"
+    resourcestitleoperatingmodes: "Operating Modes"
+    resourcesitemoperatingmodesguides: "Operating Modes Guide"
+    resourcestitlep2pnetwork: "P2P Network"
+    resourcesitemp2pnetworkguides: "P2P Network Guide"
+    resourcesitemp2pnetworkreference: "P2P Network Reference"
+    resourcesitemp2pnetworkexamples: "P2P Network Examples"
+    resourcestitleadditional: "Additional Resources"
   development:
     title: "Development - Bitcoin"
     pagetitle: "Bitcoin development"
@@ -913,6 +944,7 @@ en:
     buy: buy
     choose-your-wallet: choose-your-wallet
     community: community
+    developer-documentation: developer-documentation
     development: development
     download: download
     exchanges: exchanges
