@@ -26,9 +26,9 @@ http://opensource.org/licenses/MIT.
         {% when "bcc features" %}<a href="/en/bitcoin-core/features/">Features</a>
         {% when "bcc help" %}<a href="/en/bitcoin-core/help">Help</a>
         {% when "bcc news" %}<a href="/en/version-history">News</a>
-        {% when "bitcoin" %}<a href="/{{page.lang}}/">{% translate bitcoin vocabulary %}</a>
-        {% when "dev docs" %}<a href="/en/developer-documentation">Dev Docs</a>
-        {% when "glossary" %}<a href="/en/developer-glossary">Glossary</a>
+        {% when "bitcoin" %}<a href="/{{ page.lang }}/">{% translate bitcoin vocabulary %}</a>
+        {% when "dev docs" %}<a href="/{{ page.lang }}/developer-documentation">{% translate pagetitle developer-documentation %}</a>
+        {% when "glossary" %}<a href="/{{ page.lang }}/developer-glossary">{% translate docreferencemenuglossary developer-documentation %}</a>
         {% else %}{% die "Breadcrumb not found in _includes/layout/breadcrumbs.html" %}
       {% endcase %}
       &gt;

@@ -328,6 +328,12 @@ en:
     resourcesitemp2pnetworkreference: "P2P Network Reference"
     resourcesitemp2pnetworkexamples: "P2P Network Examples"
     resourcestitleadditional: "Additional Resources"
+    fragmentreviewsneeded: >
+      This documentation has not been extensively reviewed by Bitcoin experts
+      and so likely contains numerous errors. Please use the <em>Issue</em> and
+      <em>Edit</em> links on the bottom left menu to help us improve. To close
+      this disclaimer
+    fragmentreviewsneededcloselink: "click here"
   development:
     title: "Development - Bitcoin"
     pagetitle: "Bitcoin development"

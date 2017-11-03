@@ -13,12 +13,12 @@ module Jekyll
             @dir = File.join(lang, 'developer-documentation', category)
             @name = 'index.html'
             self.process(@name)
-            self.read_yaml(File.join(base, '_devdocs', lang), category + '.md')
+            self.read_yaml(File.join(base, '_data/devdocs', lang), category + '.md')
             self.data['lang'] = lang
             self.data['pages'] = []
 
             # This should happen per lang folder
-            Dir.glob('_devdocs/' + lang + '/' + category + '/*.md').sort.each do |itemFname|
+            Dir.glob('_data/devdocs/' + lang + '/' + category + '/*.md').sort.each do |itemFname|
                 next if !is_valid_file(itemFname)
                 self.data['pages'] << itemFname
             end
@@ -37,7 +37,7 @@ module Jekyll
             lang = 'en'
 
             # Loading devdocs categories
-            Dir.foreach('_devdocs/' + lang) do |file|
+            Dir.foreach('_data/devdocs/' + lang) do |file|
                 next if !is_valid_file(file)
 
                 # Category

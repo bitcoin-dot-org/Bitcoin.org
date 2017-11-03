@@ -27,15 +27,19 @@ end_of_page: |
 </div></div>
 <div markdown="1" class="toccontent">
 
-{% include_absolute _devdocs/en/devdoc/fragment_reviews_needed.html %}
+{% include helpers/fragment_reviews_needed.md %}
 
-<input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
+<input id="glossary_term" class="glossary_term" placeholder="{% translate glossarysearchplaceholder developer-documentation %}">
 
+{% if page.skip_auto_include %}
+{{ content }}
+{% else %}
 {% autocrossref %}
 {% for subpage in page.pages %}
 {% include_absolute {{ subpage }} %}
 {% endfor %}
 {% endautocrossref %}
+{% endif %}
 
 {{ site.glossary_links }}
 {% include references.md %}
