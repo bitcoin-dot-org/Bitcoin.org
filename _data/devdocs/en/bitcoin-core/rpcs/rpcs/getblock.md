@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getblock.md" %}
 
 ##### GetBlock
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getBlock="gets a block with a particular header hash from the local block database either as a JSON object or as a serialized block." %}
+
+{% autocrossref %}
 
 The `getblock` RPC {{summary_getBlock}}
 
@@ -23,9 +27,9 @@ The `getblock` RPC {{summary_getBlock}}
 
 {% itemplate ntpd1 %}
 - n: "Format"
-  t: "bool"
-  p: "Optional<br>(0 or 1)"
-  d: "Set to `false` to get the block in serialized block format; set to `true` (the default) to get the decoded block as a JSON object"
+  t: "number"
+  p: "Optional<br>(0, 1 or 2)"
+  d: "Set to `0` to get the block in serialized block format; set to `1` (the default) to get the decoded block as a JSON object; set to `2` to get the decoded block as a JSON object with verbose transaction decoding"
 
 {% enditemplate %}
 
@@ -205,3 +209,4 @@ Result:
 * [GetBlockHash][rpc getblockhash]: {{summary_getBlockHash}}
 * [GetBestBlockHash][rpc getbestblockhash]: {{summary_getBestBlockHash}}
 
+{% endautocrossref %}

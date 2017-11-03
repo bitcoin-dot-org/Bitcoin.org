@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getaccount.md" %}
 
 ##### GetAccount
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getAccount="returns the name of the account associated with the given address." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -47,3 +51,4 @@ doc test
 
 * [GetAddressesByAccount][rpc getaddressesbyaccount]: {{summary_getAddressesByAccount}}
 
+{% endautocrossref %}

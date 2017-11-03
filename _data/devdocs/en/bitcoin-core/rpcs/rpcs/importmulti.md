@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/importmulti.md" %}
 
 ##### ImportMulti
+{% include helpers/subhead-links.md %}
 
 {% assign summary_importMulti="imports addresses or scripts (with private keys, public keys, or P2SH redeem scripts) and optionally performs the minimum necessary rescan for all imports." %}
+
+{% autocrossref %}
 
 *Added in Bitcoin Core 0.14.0*
 
@@ -166,3 +170,4 @@ Result (scriptPubKey import failed because `internal` was not set to `true`):
 * [ImportAddress][rpc importaddress]: {{summary_importAddress}}
 * [ImportWallet][rpc importwallet]: {{summary_importWallet}}
 
+{% endautocrossref %}

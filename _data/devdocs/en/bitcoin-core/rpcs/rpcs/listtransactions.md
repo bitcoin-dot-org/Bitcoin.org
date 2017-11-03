@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/listtransactions.md" %}
 
 ##### ListTransactions
+{% include helpers/subhead-links.md %}
 
 {% assign summary_listTransactions="returns the most recent transactions that affect the wallet." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -215,3 +219,4 @@ Result:
 * [GetTransaction][rpc gettransaction]: {{summary_getTransaction}}
 * [ListSinceBlock][rpc listsinceblock]: {{summary_listSinceBlock}}
 
+{% endautocrossref %}

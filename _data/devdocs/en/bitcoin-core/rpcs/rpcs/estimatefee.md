@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/estimatefee.md" %}
 
 ##### EstimateFee
+{% include helpers/subhead-links.md %}
 
 {% assign summary_estimateFee="estimates the transaction fee per kilobyte that needs to be paid for a transaction to be included within a certain number of blocks." %}
+
+{% autocrossref %}
 
 The `estimatefee` RPC {{summary_estimateFee}}
 
@@ -57,3 +61,4 @@ Result:
 
 * [SetTxFee][rpc settxfee]: {{summary_setTxFee}}
 
+{% endautocrossref %}

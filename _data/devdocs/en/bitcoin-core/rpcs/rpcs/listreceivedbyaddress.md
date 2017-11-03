@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/listreceivedbyaddress.md" %}
 
 ##### ListReceivedByAddress
+{% include helpers/subhead-links.md %}
 
 {% assign summary_listReceivedByAddress="lists the total number of bitcoins received by each address." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -128,3 +132,5 @@ Result (edit to show only two entries):
 * [GetReceivedByAddress][rpc getreceivedbyaddress]: {{summary_getReceivedByAddress}}
 * [GetReceivedByAccount][rpc getreceivedbyaccount]: {{summary_getReceivedByAccount}}
 
+
+{% endautocrossref %}

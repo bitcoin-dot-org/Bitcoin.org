@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/disconnectnode.md" %}
 
 ##### DisconnectNode
+{% include helpers/subhead-links.md %}
 
 {% assign summary_disconnectNode="immediately disconnects from a specified node." %}
+
+{% autocrossref %}
 
 *Added in Bitcoin Core 0.12.0*
 
@@ -46,3 +50,4 @@ Result (no output from `bitcoin-cli` because result is set to `null`).
 * [AddNode][rpc addnode]: {{summary_addNode}}
 * [GetAddedNodeInfo][rpc getaddednodeinfo]: {{summary_getAddedNodeInfo}}
 
+{% endautocrossref %}

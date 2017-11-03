@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/verifychain.md" %}
 
 ##### VerifyChain
+{% include helpers/subhead-links.md %}
 
 {% assign summary_verifyChain="verifies each entry in the local block chain database." %}
+
+{% autocrossref %}
 
 The `verifychain` RPC {{summary_verifyChain}}
 
@@ -59,3 +63,4 @@ true
 * [GetBlockChainInfo][rpc getblockchaininfo]: {{summary_getBlockChainInfo}}
 * [GetTxOutSetInfo][rpc gettxoutsetinfo]: {{summary_getTxOutSetInfo}}
 
+{% endautocrossref %}

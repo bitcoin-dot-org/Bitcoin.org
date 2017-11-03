@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/settxfee.md" %}
 
 ##### SetTxFee
+{% include helpers/subhead-links.md %}
 
 {% assign summary_setTxFee="sets the transaction fee per kilobyte paid by transactions created by this wallet." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -50,3 +54,4 @@ true
 * [GetWalletInfo][rpc getwalletinfo]: {{summary_getWalletInfo}}
 * [GetNetworkInfo][rpc getnetworkinfo]: {{summary_getNetworkInfo}}
 
+{% endautocrossref %}

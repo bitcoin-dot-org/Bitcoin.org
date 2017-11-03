@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getbestblockhash.md" %}
 
 ##### GetBestBlockHash
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getBestBlockHash="returns the header hash of the most recent block on the best block chain." %}
+
+{% autocrossref %}
 
 The `getbestblockhash` RPC {{summary_getBestBlockHash}}
 
@@ -38,3 +42,4 @@ Result:
 * [GetBlock][rpc getblock]: {{summary_getBlock}}
 * [GetBlockHash][rpc getblockhash]: {{summary_getBlockHash}}
 
+{% endautocrossref %}

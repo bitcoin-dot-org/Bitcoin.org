@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/generatetoaddress.md" %}
 
 ##### GenerateToAddress
+{% include helpers/subhead-links.md %}
 
 {% assign summary_generateToAddress="mines blocks immediately to a specified address." %}
+
+{% autocrossref %}
 
 *Added in Bitcoin Core 0.13.0*
 
@@ -23,7 +27,7 @@ The `generatetoaddress` RPC {{summary_generateToAddress}}
   
 {% enditemplate %}
 
-*Parameter #2---a transaction identifier (TXID)*
+*Parameter #2---an address (P2PKH or P2SH)*
 
 {% itemplate ntpd1 %}
 - n: "Address"
@@ -81,3 +85,4 @@ Result:
 * [GetMiningInfo][rpc getmininginfo]: {{summary_getMiningInfo}}
 * [GetBlockTemplate][rpc getblocktemplate]: {{summary_getBlockTemplate}}
 
+{% endautocrossref %}

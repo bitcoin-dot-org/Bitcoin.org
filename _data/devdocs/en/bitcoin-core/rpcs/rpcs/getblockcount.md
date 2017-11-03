@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getblockcount.md" %}
 
 ##### GetBlockCount
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getBlockCount="returns the number of blocks in the local best block chain." %}
+
+{% autocrossref %}
 
 The `getblockcount` RPC {{summary_getBlockCount}}
 
@@ -38,3 +42,4 @@ Result:
 * [GetBlockHash][rpc getblockhash]: {{summary_getBlockHash}}
 * [GetBlock][rpc getblock]: {{summary_getBlock}}
 
+{% endautocrossref %}

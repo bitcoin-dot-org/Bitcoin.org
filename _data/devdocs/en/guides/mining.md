@@ -2,8 +2,12 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/guide_mining.md" %}
 
 ## Mining
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Mining adds new blocks to the block chain, making transaction history
 hard to modify.  Mining today takes on two forms:
@@ -19,7 +23,12 @@ hard to modify.  Mining today takes on two forms:
   they each contributed, allowing the miner to receive small
   payments with a lower variance (shorter time between payments).
 
+{% endautocrossref %}
+
 ### Solo Mining
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 As illustrated below, solo miners typically use `bitcoind` to get new
 transactions from the network. Their mining software periodically polls
@@ -46,7 +55,12 @@ the mining software. The mining software combines the header with the
 block and sends the completed block to `bitcoind` to be broadcast to the network for addition to the
 block chain.
 
+{% endautocrossref %}
+
 ### Pool Mining
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Pool miners follow a similar workflow, illustrated below, which allows
 mining pool operators to pay miners based on their share of the work
@@ -84,7 +98,12 @@ average to create a successful block, so the mining pool can pay 1/100th
 of its payout for each share received.  Different mining pools use
 different reward distribution systems based on this basic share system.
 
+{% endautocrossref %}
+
 ### Block Prototypes
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 In both solo and pool mining, the mining software needs to get the
 information necessary to construct block headers. This subsection
@@ -92,7 +111,12 @@ describes, in a linear way, how that information is transmitted and
 used. However, in actual implementations, parallel threads and queuing
 are used to keep ASIC hashers working at maximum capacity,
 
+{% endautocrossref %}
+
 #### getwork RPC
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The simplest and earliest method was the now-deprecated Bitcoin Core
 `getwork` RPC, which constructs a header for the miner directly. Since a
@@ -101,7 +125,12 @@ many modern miners need to make dozens or hundreds of `getwork` requests
 a second. Solo miners may still use `getwork` on v0.9.5 or below, but most pools today
 discourage or disallow its use.
 
+{% endautocrossref %}
+
 #### getblocktemplate RPC
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 An improved method is the Bitcoin Core `getblocktemplate` RPC. This
 provides the mining software with much more information:
@@ -134,7 +163,12 @@ mining pool to push a new `getblocktemplate` to the miner as soon as any
 miner on the peer-to-peer network publishes a new block or the pool
 wants to send more transactions to the mining software.
 
+{% endautocrossref %}
+
 #### Stratum
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 A widely used alternative to `getblocktemplate` is the [Stratum mining
 protocol][]. Stratum focuses on giving miners the minimal information they
@@ -178,3 +212,4 @@ peer-to-peer network.
 pools. The [libblkmaker][] C library and [python-blkmaker][] library,
 both MIT licensed, can interpret GetBlockTemplate for your programs.
 
+{% endautocrossref %}

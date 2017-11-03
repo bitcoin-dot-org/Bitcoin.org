@@ -3,6 +3,8 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
+{% autocrossref %}
+
 The Developer Guide aims to provide the information you need to understand
 Bitcoin and start building Bitcoin-based applications, but it is [not a
 specification][]. To make the best use of
@@ -21,3 +23,4 @@ are continued below. If you hover your mouse over a paragraph, cross-reference
 links will be shown in blue.  If you hover over a cross-reference link, a brief
 definition of the term will be displayed in a tooltip.
 
+{% endautocrossref %}

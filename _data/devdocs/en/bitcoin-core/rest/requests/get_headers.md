@@ -5,8 +5,11 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rest/requests/get_headers.md" %}
 
 ##### GET Headers
+{% include helpers/subhead-links.md %}
 
 {% assign summary_restGetHeaders="returns a specified amount of block headers in upward direction." %}
+
+{% autocrossref %}
 
 The `GET headers` operation {{summary_restGetHeaders}}
 
@@ -201,3 +204,4 @@ Result (whitespaced added):
 * [GetBlockHash][rpc getblockhash] RPC: {{summary_getBlockHash}}
 * [GetBlockHeader][rpc getblockheader] RPC: {{summary_getBlockHeader}}
 
+{% endautocrossref %}

@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/importaddress.md" %}
 
 ##### ImportAddress
+{% include helpers/subhead-links.md %}
 
 {% assign summary_importAddress="adds an address or pubkey script to the wallet without the associated private key, allowing you to watch for transactions affecting that address or pubkey script without being able to spend any of its outputs." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -82,3 +86,4 @@ watch-only test
 * [ImportPrivKey][rpc importprivkey]: {{summary_importPrivKey}}
 * [ListReceivedByAddress][rpc listreceivedbyaddress]: {{summary_listReceivedByAddress}}
 
+{% endautocrossref %}

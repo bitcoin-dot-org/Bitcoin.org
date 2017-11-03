@@ -301,6 +301,9 @@ en:
     title: "Developer Documentation - Bitcoin"
     pagetitle: "Developer Documentation"
     summary: "Find useful resources, guides and reference material for developers."
+    navigationreturn: "Return To Overview"
+    navigationreport: "Report An Issue"
+    navigationedit: "Edit On GitHub"
     glossarysearchplaceholder: "Search the glossary, RPCs, and more"
     docreferencemenuguides: "Guides"
     docreferencemenureference: "Reference"
@@ -334,6 +337,22 @@ en:
       <em>Edit</em> links on the bottom left menu to help us improve. To close
       this disclaimer
     fragmentreviewsneededcloselink: "click here"
+  developer-examples:
+    title: "Developer Examples - Bitcoin"
+    pagetitle: "Bitcoin Developer Examples"
+    summary: "Find examples of how to build programs using Bitcoin."
+  developer-guide:
+    title: "Developer Guide - Bitcoin"
+    pagetitle: "Bitcoin Developer Guide"
+    summary: "Find detailed information about the Bitcoin protocol and related specifications."
+  developer-reference:
+    title: "Bitcoin Developer Reference - Bitcoin"
+    pagetitle: "Bitcoin Developer Reference"
+    summary: "Find technical details and API documentation."
+  developer-glossary:
+    title: "Developer Glossary - Bitcoin"
+    pagetitle: "Bitcoin Developer Glossary"
+
   development:
     title: "Development - Bitcoin"
     pagetitle: "Bitcoin development"
@@ -729,7 +748,7 @@ en:
     privacytxt11: "We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on the Site. You are advised to review this privacy policy periodically for any changes."
     privacytxt12: "This Privacy Policy was last updated"
     privacycontactus: "Contact Us"
-    privacytxt13: "If you have any questions about our privacy policy, or how your data is being collected and processed, please e-mail <a href=\"mailto:privacy@bitcoin.org?Subject=Privacy\">privacy@bitcoin.org</a>." 
+    privacytxt13: "If you have any questions about our privacy policy, or how your data is being collected and processed, please e-mail <a href=\"mailto:privacy@bitcoin.org?Subject=Privacy\">privacy@bitcoin.org</a>."
   cookie-notification:
     cookiemessage: "<p class=\"cc_message\">We use cookies to ensure you get the best experience on our website. <br><br>Please read our <a href=\"/en/privacy\">privacy policy</a> to find out more.</p>"
     cookieaccept: "OK"
@@ -951,6 +970,10 @@ en:
     choose-your-wallet: choose-your-wallet
     community: community
     developer-documentation: developer-documentation
+    developer-examples: developer-examples
+    developer-glossary: developer-glossary
+    developer-guide: developer-guide
+    developer-reference: developer-reference
     development: development
     download: download
     exchanges: exchanges

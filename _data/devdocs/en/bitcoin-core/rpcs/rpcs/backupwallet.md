@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/backupwallet.md" %}
 
 ##### BackupWallet
+{% include helpers/subhead-links.md %}
 
 {% assign summary_backupWallet="safely copies `wallet.dat`<!--noref--> to the specified file, which can be a directory or a path with filename." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -42,3 +46,4 @@ bitcoin-cli -testnet backupwallet /tmp/backup.dat
 * [DumpWallet][rpc dumpwallet]: {{summary_dumpWallet}}
 * [ImportWallet][rpc importwallet]: {{summary_importWallet}}
 
+{% endautocrossref %}

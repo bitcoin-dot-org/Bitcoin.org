@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/createrawtransaction.md" %}
 
 ##### CreateRawTransaction
+{% include helpers/subhead-links.md %}
 
 {% assign summary_createRawTransaction="creates an unsigned serialized transaction that spends a previous output to a new output with a P2PKH or P2SH address. The transaction is not stored in the wallet or transmitted to the network." %}
+
+{% autocrossref %}
 
 The `createrawtransaction` RPC {{summary_createRawTransaction}}
 
@@ -101,3 +105,4 @@ Result (wrapped):
 * [SendRawTransaction][rpc sendrawtransaction]: {{summary_sendRawTransaction}}
 * [Serialized Transaction Format][raw transaction format]
 
+{% endautocrossref %}

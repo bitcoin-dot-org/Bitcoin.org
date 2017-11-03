@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/gettransaction.md" %}
 
 ##### GetTransaction
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getTransaction="gets detailed information about an in-wallet transaction." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -147,3 +151,4 @@ Result:
 
 * [GetRawTransaction][rpc getrawtransaction]: {{summary_getRawTransaction}}
 
+{% endautocrossref %}

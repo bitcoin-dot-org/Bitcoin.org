@@ -2,8 +2,12 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/guide_wallets.md" %}
 
 ## Wallets
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 A Bitcoin wallet can refer to either a wallet program or a wallet file.
 Wallet programs create public keys to receive satoshis and use the
@@ -15,7 +19,12 @@ Wallet programs and wallet files are addressed below in separate
 subsections, and this document attempts to always make it clear whether
 we're talking about wallet programs or wallet files.
 
+{% endautocrossref %}
+
 ### Wallet Programs
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Permitting receiving and spending of satoshis is the only essential
 feature of wallet software---but a particular wallet program doesn't
@@ -38,7 +47,12 @@ cases, P2PKH or P2SH hashes will be distributed instead of public keys,
 with the actual public keys only being distributed when the outputs
 they control are spent.
 
+{% endautocrossref %}
+
 #### Full-Service Wallets
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The simplest wallet is a program which performs all three functions: it
 generates private keys, derives the corresponding public keys, helps
@@ -66,7 +80,13 @@ This protects the private keys when they aren't being used, but it
 cannot protect against an attack designed to capture the encryption
 key or to read the decrypted keys from memory.
 
+{% endautocrossref %}
+
+
 #### Signing-Only Wallets
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 To increase security, private keys can be generated and stored by a
 separate wallet program operating in a more secure environment. These
@@ -100,7 +120,12 @@ peer-to-peer network.
 The following subsections describe the two most common variants of
 signing-only wallets: offline wallets and hardware wallets.
 
+{% endautocrossref %}
+
 ##### Offline Wallets
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Several full-service wallets programs will also operate as two separate
 wallets: one program instance acting as a signing-only wallet (often called an
@@ -147,7 +172,14 @@ The offline device must be booted up whenever funds are to be spent, and
 the user must physically copy data from the online device to the offline
 device and back.
 
+{% endautocrossref %}
+
+
+
 ##### Hardware Wallets
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Hardware wallets are devices dedicated to running a signing-only wallet.
 Their dedication lets them eliminate many of the vulnerabilities
@@ -186,7 +218,15 @@ writing, very few popular wallet programs support hardware
 wallets---although almost all popular wallet programs have announced
 their intention to support at least one model of hardware wallet.
 
+{% endautocrossref %}
+
+
+
+
 #### Distributing-Only Wallets
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Wallet programs which run in difficult-to-secure environments, such as
 webservers, can be designed to distribute public keys (including P2PKH
@@ -213,19 +253,36 @@ database is used anyway to associate each incoming payment with a
 separate public key for payment tracking. See the [Payment
 Processing][devguide payment processing] section for details.
 
+{% endautocrossref %}
+
+
+
 ### Wallet Files
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Bitcoin wallets at their core are a collection of private keys. These
 collections are stored digitally in a file, or can even be physically
 stored on pieces of paper.
 
+{% endautocrossref %}
+
 #### Private Key Formats
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Private keys are what are used to unlock satoshis from a particular address. In Bitcoin, a private key in standard format is simply a 256-bit number, between the values:
 
 0x01 and 0xFFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFE BAAE DCE6 AF48 A03B BFD2 5E8C D036 4140, representing nearly the entire range of 2<sup>256</sup>-1 values. The range is governed by the secp256k1 ECDSA encryption standard used by Bitcoin. 
 
+{% endautocrossref %}
+
 ##### Wallet Import Format (WIF)
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 In order to make copying of private keys less prone to error, [Wallet Import Format][/en/glossary/wallet-import-format]{:#term-wallet-import-format}{:.term} may be utilized. WIF uses base58Check encoding on an private key, greatly decreasing the chance of copying error, much like standard Bitcoin addresses.
 
@@ -249,7 +306,12 @@ In order to make copying of private keys less prone to error, [Wallet Import For
 
 The process is easily reversible, using the Base58 decoding function, and removing the padding.
 
+{% endautocrossref %}
+
 ##### Mini Private Key Format
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Mini private key format is a method for encoding a private key in under 30 characters, enabling keys to be embedded in a small physical space, such as physical bitcoin tokens, and more damage-resistant QR codes. 
 
@@ -266,7 +328,15 @@ Many implementations disallow the character '1' in the mini private key due to i
 **Resource:** A common tool to create and redeem these keys is the [Casascius Bitcoin Address Utility][casascius
 address utility].
 
+{% endautocrossref %}
+
+
+
+
 #### Public Key Formats
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Bitcoin ECDSA public keys represent a point on a particular Elliptic
 Curve (EC) defined in secp256k1. In their traditional uncompressed form,
@@ -319,12 +389,18 @@ help programs identify how keys should be used:
   the midpoint of the curve.  These prefix bytes are all used in
   official secp256k1 documentation.
 
+{% endautocrossref %}
+
+
 #### Hierarchical Deterministic Key Creation
+{% include helpers/subhead-links.md %}
 
 <!-- 
 For consistent word ordering:
 [normal|hardened|] [master|parent|child|grandchild] [extended|non-extended|] [private|public|chain] [key|code]
 -->
+
+{% autocrossref %}
 
 The hierarchical deterministic key creation and transfer protocol ([HD
 protocol][/en/glossary/hd-protocol]{:#term-hd-protocol}{:.term}) greatly simplifies wallet
@@ -341,7 +417,11 @@ function, [`point()`][point function]{:#term-point-function}{:.term},
 which takes a large integer (the private key) and turns it into a graph
 point (the public key):
 
+{% endautocrossref %}
+
     point(private_key) == public_key
+
+{% autocrossref %}
 
 Because of the way `point()` works, it's possible to create a [child
 public key][/en/glossary/child-key]{:#term-child-public-key}{:.term} by combining an
@@ -351,7 +431,11 @@ would be created by the `point()` function if you added the *i* value to
 the original (parent) private key and then found the remainder of that
 sum divided by a global constant used by all Bitcoin software (*p*):
 
+{% endautocrossref %}
+
     point( (parent_private_key + i) % p ) == parent_public_key + point(i)
+
+{% autocrossref %}
 
 This means that two or more independent programs which agree on a
 sequence of integers can create a series of unique [child key][/en/glossary/child-key]{:#term-child-key}{:.term} pairs from
@@ -365,7 +449,11 @@ Child public keys can also create their own child public keys
 (grandchild public keys) by repeating the child key derivation
 operations:
 
+{% endautocrossref %}
+
     point( (child_private_key + i) % p ) == child_public_key + point(i)
+
+{% autocrossref %}
 
 Whether creating child public keys or further-descended public keys, a
 predictable sequence of integer values would be no better than using a
@@ -409,9 +497,13 @@ lefthand side of the hash output are used as the integer value to be combined
 with either the parent private key or parent public key to,
 respectively, create either a child private key or child public key:
 
+{% endautocrossref %}
+
     child_private_key == (parent_private_key + lefthand_hash_output) % G
     child_public_key == point( (parent_private_key + lefthand_hash_output) % G )
     child_public_key == point(child_private_key) == parent_public_key + point(lefthand_hash_output)
+
+{% autocrossref %}
 
 Specifying different index numbers will create different unlinkable
 child keys from the same parent keys.  Repeating the procedure for the
@@ -449,7 +541,12 @@ key. The master extended keys are functionally equivalent to other
 extended keys; it is only their location at the top of the hierarchy
 which makes them special.
 
+{% endautocrossref %}
+
 ##### Hardened Keys
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Hardened extended keys fix a potential problem with normal extended keys.
 If an attacker gets a normal parent
@@ -534,7 +631,12 @@ public keys and extended private keys.  For details, please see the
 [wallet section in the developer reference][devref wallets] or BIP32
 for the full HD protocol specification.
 
+{% endautocrossref %}
+
 ##### Storing Root Seeds
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Root seeds in the HD protocol are 128, 256, or 512 bits of random data
 which must be backed up precisely. To make it more convenient to use
@@ -563,7 +665,14 @@ duress.
 
 For implementation details, please see BIP39.
 
+{% endautocrossref %}
+
+
+
 #### Loose-Key Wallets
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Loose-Key wallets, also called "Just a Bunch Of Keys (JBOK)", are a deprecated form of wallet that originated from the Bitcoin Core client wallet. The Bitcoin Core client wallet would create 100 private key/public key pairs automatically via a Pseudo-Random-Number Generator (PRNG) for later use.
 
@@ -576,3 +685,4 @@ This created considerable difficulty<!--noref--> in backing up one’s keys, con
 
 This wallet type is being actively phased out and discouraged from being used due to the backup hassle.
 
+{% endautocrossref %}

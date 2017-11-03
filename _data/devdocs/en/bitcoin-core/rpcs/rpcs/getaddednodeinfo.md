@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getaddednodeinfo.md" %}
 
 ##### GetAddedNodeInfo
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getAddedNodeInfo="returns information about the given added node, or all added nodes (except onetry nodes). Only nodes which have been manually added using the `addnode` RPC will have their information displayed." %}
+
+{% autocrossref %}
 
 The `getaddednodeinfo` RPC {{summary_getAddedNodeInfo}}
 
@@ -102,3 +106,4 @@ Result (real hostname and IP address replaced):
 * [AddNode][rpc addnode]: {{summary_addNode}}
 * [GetPeerInfo][rpc getpeerinfo]: {{summary_getPeerInfo}}
 
+{% endautocrossref %}

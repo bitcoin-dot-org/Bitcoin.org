@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/setgenerate.md" %}
 
 ##### SetGenerate
+{% include helpers/subhead-links.md %}
 
 {% assign summary_setGenerate="was removed in Bitcoin Core 0.13.0." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -21,3 +25,4 @@ call has been added to mine to a specific address. This works with wallet disabl
 * [GetMiningInfo][rpc getmininginfo]: {{summary_getMiningInfo}}
 * [GetBlockTemplate][rpc getblocktemplate]: {{summary_getBlockTemplate}}
 
+{% endautocrossref %}

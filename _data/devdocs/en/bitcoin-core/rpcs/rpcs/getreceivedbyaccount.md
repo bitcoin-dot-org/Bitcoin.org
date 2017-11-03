@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getreceivedbyaccount.md" %}
 
 ##### GetReceivedByAccount
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getReceivedByAccount="returns the total amount received by addresses in a particular account from transactions with the specified number of confirmations.  It does not count coinbase transactions." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -59,3 +63,4 @@ Result:
 * [GetAddressesByAccount][rpc getaddressesbyaccount]: {{summary_getAddressesByAccount}}
 * [ListAccounts][rpc listaccounts]: {{summary_listAccounts}}
 
+{% endautocrossref %}

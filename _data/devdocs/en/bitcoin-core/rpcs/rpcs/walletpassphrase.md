@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/walletpassphrase.md" %}
 
 ##### WalletPassphrase
+{% include helpers/subhead-links.md %}
 
 {% assign summary_walletPassphrase="stores the wallet decryption key in memory for the indicated number of seconds. Issuing the `walletpassphrase` command while the wallet is already unlocked will set a new unlock time that overrides the old one." %}
+
+{% autocrossref %}
 
 *Requires wallet support. Requires an encrypted wallet.*
 
@@ -61,3 +65,4 @@ bitcoin-cli -testnet walletpassphrase test 600
 * [WalletPassphraseChange][rpc walletpassphrasechange]: {{summary_walletPassphraseChange}}
 * [WalletLock][rpc walletlock]: {{summary_walletLock}}
 
+{% endautocrossref %}

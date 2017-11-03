@@ -2,8 +2,12 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/guide_contracts.md" %}
 
 ## Contracts
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Contracts are
 transactions which use the decentralized Bitcoin system to enforce financial
@@ -20,7 +24,12 @@ Besides the contract types described below, many other contract types
 have been proposed. Several of them are collected on the [Contracts
 page](https://en.bitcoin.it/wiki/Contracts) of the Bitcoin Wiki.
 
+{% endautocrossref %}
+
 ### Escrow And Arbitration
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Charlie-the-customer wants to buy a product from Bob-the-businessman,
 but neither of them trusts the other person, so they use a contract to
@@ -43,9 +52,13 @@ To create a multiple-signature ([multisig][/en/glossary/multisig]{:#term-multisi
 output, they each give the others a public key. Then Bob creates the
 following [P2SH multisig][/en/glossary/p2sh-multisig]{:#term-p2sh-multisig}{:.term} redeem script:
 
+{% endautocrossref %}
+
 ~~~
 OP_2 [A's pubkey] [B's pubkey] [C's pubkey] OP_3 OP_CHECKMULTISIG
 ~~~
+
+{% autocrossref %}
 
 (Opcodes to push the public keys onto the stack are not shown.)
 
@@ -79,9 +92,13 @@ that Bob created.  She gives a copy of the incomplete transaction to
 both Bob and Charlie.  Either one of them can complete it by adding
 his signature to create the following signature script:
 
+{% endautocrossref %}
+
 ~~~
 OP_0 [A's signature] [B's or C's signature] [serialized redeem script]
 ~~~
+
+{% autocrossref %}
 
 (Opcodes to push the signatures and redeem script onto the stack are
 not shown. `OP_0` is a workaround for an off-by-one error in the original
@@ -108,7 +125,12 @@ need to worry about their arbitrator stealing their money.
 **Resource:** [BitRated](https://www.bitrated.com/) provides a multisig arbitration
 service interface using HTML/JavaScript on a GNU AGPL-licensed website.
 
+{% endautocrossref %}
+
 ### Micropayment Channel
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 <!-- SOMEDAY: try to rewrite using a more likely real-world example without
 making the text or illustration more complicated --> 
@@ -181,7 +203,12 @@ implementation, and [a
 tutorial][bitcoinj micropayment tutorial]
 all under an Apache license.
 
+{% endautocrossref %}
+
 ### CoinJoin
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Alice is concerned about her privacy.  She knows every transaction gets
 added to the public block chain, so when Bob and Charlie pay her, they
@@ -259,3 +286,4 @@ saving each one of them a tiny amount of satoshis.
 CoinJoin is [CoinMux](http://coinmux.com/), available under the Apache
 license.
 
+{% endautocrossref %}

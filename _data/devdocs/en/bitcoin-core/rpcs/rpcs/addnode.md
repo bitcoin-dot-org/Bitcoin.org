@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/addnode.md" %}
 
 ##### AddNode
+{% include helpers/subhead-links.md %}
 
 {% assign summary_addNode="attempts to add or remove a node from the addnode list, or to try a connection to a node once." %}
+
+{% autocrossref %}
 
 The `addnode` RPC {{summary_addNode}}
 
@@ -53,3 +57,4 @@ Result (no output from `bitcoin-cli` because result is set to `null`).
 
 * [GetAddedNodeInfo][rpc getaddednodeinfo]: {{summary_getAddedNodeInfo}}
 
+{% endautocrossref %}

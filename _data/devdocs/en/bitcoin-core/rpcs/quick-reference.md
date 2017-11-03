@@ -2,8 +2,10 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/quick-reference.md" %}
 
 #### Quick Reference {#rpc-quick-reference}
+{% include helpers/subhead-links.md %}
 
 {% comment %}
 Styling notes: use highly-visible style for upcoming changes (not yet
@@ -52,6 +54,8 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 {:.no_toc}
 <!-- no subhead-links here -->
 
+{% autocrossref %}
+
 * [GetBestBlockHash][rpc getbestblockhash]: {{summary_getBestBlockHash}}
 * [GetBlock][rpc getblock]: {{summary_getBlock}} {{UPDATED0_13_0}}
 * [GetBlockChainInfo][rpc getblockchaininfo]: {{summary_getBlockChainInfo}} {{UPDATED0_12_1}}
@@ -73,24 +77,36 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 * [VerifyChain][rpc verifychain]: {{summary_verifyChain}}
 * [VerifyTxOutProof][rpc verifytxoutproof]: {{summary_verifyTxOutProof}} {{NEW0_11_0}}
 
+{% endautocrossref %}
+
 #### Control RPCs
 {:.no_toc}
 <!-- no subhead-links here -->
+
+{% autocrossref %}
 
 * [GetInfo][rpc getinfo]: {{summary_getInfo}} {{DEPRECATED}}
 * [Help][rpc help]: {{summary_help}}
 * [Stop][rpc stop]: {{summary_stop}}
 
+{% endautocrossref %}
+
 #### Generating RPCs
 {:.no_toc}
 <!-- no subhead-links here -->
 
+{% autocrossref %}
+
 * [Generate][rpc generate]: {{summary_generate}} {{NEW0_11_0}}, {{UPDATED0_13_0}}
 * [GenerateToAddress][rpc generatetoaddress]: {{summary_generateToAddress}} {{NEW0_13_0}}
+
+{% endautocrossref %}
 
 #### Mining RPCs
 {:.no_toc}
 <!-- no subhead-links here -->
+
+{% autocrossref %}
 
 * [GetBlockTemplate][rpc getblocktemplate]: {{summary_getBlockTemplate}}
 * [GetMiningInfo][rpc getmininginfo]: {{summary_getMiningInfo}} {{UPDATED0_14_0}}
@@ -98,9 +114,13 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 * [PrioritiseTransaction][rpc prioritisetransaction]: {{summary_prioritiseTransaction}}
 * [SubmitBlock][rpc submitblock]: {{summary_submitBlock}}
 
+{% endautocrossref %}
+
 #### Network RPCs
 {:.no_toc}
 <!-- no subhead-links here -->
+
+{% autocrossref %}
 
 * [AddNode][rpc addnode]: {{summary_addNode}} {{UPDATED0_14_0}}
 * [ClearBanned][rpc clearbanned]: {{summary_clearBanned}} {{NEW0_12_0}}
@@ -115,9 +135,13 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 * [SetBan][rpc setban]: {{summary_setBan}} {{NEW0_12_0}}
 * [SetNetworkActive][rpc setnetworkactive]: {{summary_setNetworkActive}} {{NEW0_14_0}}
 
+{% endautocrossref %}
+
 #### Raw Transaction RPCs
 {:.no_toc}
 <!-- no subhead-links here -->
+
+{% autocrossref %}
 
 * [CreateRawTransaction][rpc createrawtransaction]: {{summary_createRawTransaction}} {{UPDATED0_14_1}}
 * [FundRawTransaction][rpc fundrawtransaction]: {{summary_fundRawTransaction}} {{NEW0_12_0}}, {{UPDATED0_14_0}}
@@ -127,9 +151,13 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 * [SendRawTransaction][rpc sendrawtransaction]: {{summary_sendRawTransaction}}
 * [SignRawTransaction][rpc signrawtransaction]: {{summary_signRawTransaction}}
 
+{% endautocrossref %}
+
 #### Utility RPCs
 {:.no_toc}
 <!-- no subhead-links here -->
+
+{% autocrossref %}
 
 * [CreateMultiSig][rpc createmultisig]: {{summary_createMultiSig}}
 * [EstimateFee][rpc estimatefee]: {{summary_estimateFee}} {{UPDATED0_14_0}}
@@ -138,9 +166,13 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 * [ValidateAddress][rpc validateaddress]: {{summary_validateAddress}} {{UPDATED0_13_0}}
 * [VerifyMessage][rpc verifymessage]: {{summary_verifyMessage}}
 
+{% endautocrossref %}
+
 #### Wallet RPCs
 {:.no_toc}
 <!-- no subhead-links here -->
+
+{% autocrossref %}
 
 **Note:** the wallet RPCs are only available if Bitcoin Core was built
 with [wallet support][]{:#term-wallet-support}{:.term}, which is the
@@ -193,12 +225,17 @@ default.
 * [WalletPassphrase][rpc walletpassphrase]: {{summary_walletPassphrase}}
 * [WalletPassphraseChange][rpc walletpassphrasechange]: {{summary_walletPassphraseChange}}
 
+{% endautocrossref %}
+
 #### Removed RPCs
 {:.no_toc}
 <!-- no subhead-links here -->
+
+{% autocrossref %}
 
 * [GetGenerate][rpc getgenerate]: {{summary_getGenerate}}
 * [GetHashesPerSec][rpc gethashespersec]: {{summary_getHashesPerSec}}
 * [GetWork][rpc getwork]: {{summary_getWork}}
 * [SetGenerate][rpc setgenerate]: {{summary_setGenerate}}
 
+{% endautocrossref %}

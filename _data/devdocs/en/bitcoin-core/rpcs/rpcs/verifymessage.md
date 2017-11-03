@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/verifymessage.md" %}
 
 ##### VerifyMessage
+{% include helpers/subhead-links.md %}
 
 {% assign summary_verifyMessage="verifies a signed message." %}
+
+{% autocrossref %}
 
 The `verifymessage` RPC {{summary_verifyMessage}}
 
@@ -71,3 +75,4 @@ true
 
 * [SignMessage][rpc signmessage]: {{summary_signMessage}}
 
+{% endautocrossref %}

@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getblockchaininfo.md" %}
 
 ##### GetBlockChainInfo
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getBlockChainInfo="provides information about the current state of the block chain." %}
+
+{% autocrossref %}
 
 The `getblockchaininfo` RPC {{summary_getBlockChainInfo}}
 
@@ -243,3 +247,4 @@ Result:
 * [GetNetworkInfo][rpc getnetworkinfo]: {{summary_getNetworkInfo}}
 * [GetWalletInfo][rpc getwalletinfo]: {{summary_getWalletInfo}}
 
+{% endautocrossref %}

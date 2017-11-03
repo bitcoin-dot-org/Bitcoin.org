@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/listaddressgroupings.md" %}
 
 ##### ListAddressGroupings
+{% include helpers/subhead-links.md %}
 
 {% assign summary_listAddressGroupings="lists groups of addresses that may have had their common ownership made public by common use as inputs in the same transaction or from being used as change from a previous transaction." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -77,3 +81,4 @@ Result (edited to only the first two results):
 * [GetAddressesByAccount][rpc getaddressesbyaccount]: {{summary_getAddressesByAccount}}
 * [GetTransaction][rpc gettransaction]: {{summary_getTransaction}}
 
+{% endautocrossref %}

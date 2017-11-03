@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/dumpprivkey.md" %}
 
 ##### DumpPrivKey
+{% include helpers/subhead-links.md %}
 
 {% assign summary_dumpPrivKey="returns the wallet-import-format (WIP) private key corresponding to an address. (But does not remove it from the wallet.)" %}
+
+{% autocrossref %}
 
 *Requires wallet support. Requires an unlocked wallet or an
 unencrypted wallet.*
@@ -49,3 +53,4 @@ cTVNtBK7mBi2yc9syEnwbiUpnpGJKohDWzXMeF4tGKAQ7wvomr95
 * [ImportPrivKey][rpc importprivkey]: {{summary_importPrivKey}}
 * [DumpWallet][rpc dumpwallet]: {{summary_dumpWallet}}
 
+{% endautocrossref %}

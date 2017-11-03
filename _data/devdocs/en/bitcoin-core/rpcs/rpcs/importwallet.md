@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/importwallet.md" %}
 
 ##### ImportWallet
+{% include helpers/subhead-links.md %}
 
 {% assign summary_importWallet="imports private keys from a file in wallet dump file format (see the `dumpwallet` RPC). These keys will be added to the keys currently in the wallet.  This call may need to rescan all or parts of the block chain for transactions affecting the newly-added keys, which may take several minutes." %}
+
+{% autocrossref %}
 
 *Requires wallet support. Requires an unlocked wallet or an
 unencrypted wallet.*
@@ -47,3 +51,4 @@ bitcoin-cli -testnet importwallet /tmp/dump.txt
 * [DumpWallet][rpc dumpwallet]: {{summary_dumpWallet}}
 * [ImportPrivKey][rpc importprivkey]: {{summary_importPrivKey}}
 
+{% endautocrossref %}

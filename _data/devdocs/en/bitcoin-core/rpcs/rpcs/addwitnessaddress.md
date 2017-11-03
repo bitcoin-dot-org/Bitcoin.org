@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/addwitnessaddress.md" %}
 
 ##### AddWitnessAddress
+{% include helpers/subhead-links.md %}
 
 {% assign summary_addWitnessAddress="adds a witness address for a script (with pubkey or redeem script known)." %}
+
+{% autocrossref %}
 
 *Added in Bitcoin Core 0.13.0*
 
@@ -53,3 +57,4 @@ The RPC is disabled by default on mainnet as long as Segregated Witness has not 
 * [BIP-141 - Segregated Witness](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki)
 * [BIP-142 - Address Format for Segregated Witness](https://github.com/bitcoin/bips/blob/master/bip-0142.mediawiki)
 
+{% endautocrossref %}

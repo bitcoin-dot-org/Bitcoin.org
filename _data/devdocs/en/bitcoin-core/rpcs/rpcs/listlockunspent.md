@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/listlockunspent.md" %}
 
 ##### ListLockUnspent
+{% include helpers/subhead-links.md %}
 
 {% assign summary_listLockUnspent="returns a list of temporarily unspendable (locked) outputs." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -59,3 +63,4 @@ Result:
 
 * [LockUnspent][rpc lockunspent]: {{summary_lockUnspent}}
 
+{% endautocrossref %}

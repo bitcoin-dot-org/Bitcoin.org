@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/preciousblock.md" %}
 
 ##### PreciousBlock
+{% include helpers/subhead-links.md %}
 
 {% assign summary_preciousBlock="treats a block as if it were received before others with the same work." %}
+
+{% autocrossref %}
 
 *Added in Bitcoin Core 0.14.0*
 
@@ -40,3 +44,4 @@ bitcoin-cli preciousblock 000000000000000001517a0bac70b8cd6f27ee\
 
 Result (no output from `bitcoin-cli` because result is set to `null`).
 
+{% endautocrossref %}

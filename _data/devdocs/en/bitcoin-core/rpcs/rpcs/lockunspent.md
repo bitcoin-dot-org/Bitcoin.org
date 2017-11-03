@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/lockunspent.md" %}
 
 ##### LockUnspent
+{% include helpers/subhead-links.md %}
 
 {% assign summary_lockUnspent="temporarily locks or unlocks specified transaction outputs. A locked transaction output will not be chosen by automatic coin selection when spending bitcoins. Locks are stored in memory only, so nodes start with zero locked outputs and the locked output list is always cleared when a node stops or fails." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -143,3 +147,4 @@ Result:
 * [ListLockUnspent][rpc listlockunspent]: {{summary_listLockUnspent}}
 * [ListUnspent][rpc listunspent]: {{summary_listUnspent}}
 
+{% endautocrossref %}

@@ -5,8 +5,11 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rest/requests/get_block-notxdetails.md" %}
 
 ##### GET Block/NoTxDetails
+{% include helpers/subhead-links.md %}
 
 {% assign summary_restGetBlock-noTxDetails="gets a block with a particular header hash from the local block database either as a JSON object or as a serialized block.  The JSON object includes TXIDs for transactions within the block rather than the complete transactions [GET block][rest get block] returns." %}
+
+{% autocrossref %}
 
 The `GET block<!--noref-->/notxdetails` operation {{summary_restGetBlock-noTxDetails}}
 
@@ -202,3 +205,4 @@ Result (whitespaced added):
 * [GetBlockHash][rpc getblockhash] RPC: {{summary_getBlockHash}}
 * [GetBestBlockHash][rpc getbestblockhash] RPC: {{summary_getBestBlockHash}}
 
+{% endautocrossref %}

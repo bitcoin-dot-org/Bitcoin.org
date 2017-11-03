@@ -2,8 +2,12 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/estimatepriority.md" %}
 
 ##### EstimatePriority
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 {% assign summary_estimatePriority="estimates the priority (coin age) that a transaction needs in order to be included within a certain number of blocks as a free high-priority transaction." %}
 
@@ -63,3 +67,4 @@ Result:
 
 * [EstimateFee][rpc estimatefee]: {{summary_estimateFee}}
 
+{% endautocrossref %}

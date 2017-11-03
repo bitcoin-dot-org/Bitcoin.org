@@ -5,8 +5,11 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rest/requests/get_mempool-contents.md" %}
 
 ##### GET MemPool/Contents
+{% include helpers/subhead-links.md %}
 
 {% assign summary_restGetMemPool-contents="returns all transaction in the memory pool with detailed information." %}
+
+{% autocrossref %}
 
 The `GET mempool/contents` operation {{summary_restGetMemPool-contents}}  Supports only `json` as output format.
 
@@ -163,3 +166,4 @@ Result (whitespaced added):
 * [GetMemPoolInfo][rpc getmempoolinfo] RPC: {{summary_getMemPoolInfo}}
 * [GetRawMemPool][rpc getrawmempool] RPC: {{summary_getRawMemPool}}
 
+{% endautocrossref %}

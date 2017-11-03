@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getmemoryinfo.md" %}
 
 ##### GetMemoryInfo
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getMemoryInfo="returns information about memory usage." %}
+
+{% autocrossref %}
 
 *Added in Bitcoin Core 0.14.0*
 
@@ -84,3 +88,4 @@ Result:
 
 * [GetMemPoolInfo][rpc getmempoolinfo]: {{summary_getMemPoolInfo}}
 
+{% endautocrossref %}

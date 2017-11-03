@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getnettotals.md" %}
 
 ##### GetNetTotals
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getNetTotals="returns information about network traffic, including bytes in, bytes out, and the current time." %}
+
+{% autocrossref %}
 
 The `getnettotals` RPC {{summary_getNetTotals}}
 
@@ -100,3 +104,4 @@ Result:
 * [GetNetworkInfo][rpc getnetworkinfo]: {{summary_getNetworkInfo}}
 * [GetPeerInfo][rpc getpeerinfo]: {{summary_getPeerInfo}}
 
+{% endautocrossref %}

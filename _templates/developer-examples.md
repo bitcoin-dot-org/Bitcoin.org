@@ -1,0 +1,23 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: devdoc-category
+id: developer-examples
+breadcrumbs:
+  - bitcoin
+  - dev docs
+  - Examples
+show_fragments: true
+show_toc: true
+---
+
+{% include_absolute _data/devdocs/{{ page.lang }}/examples/intro.md %}
+
+{% include_absolute _data/devdocs/{{ page.lang }}/examples/testing.md %}
+
+{% include_absolute _data/devdocs/{{ page.lang }}/examples/transactions.md %}
+
+{% include_absolute _data/devdocs/{{ page.lang }}/examples/payment_processing.md %}
+
+{% include_absolute _data/devdocs/{{ page.lang }}/examples/p2p_networking.md %}

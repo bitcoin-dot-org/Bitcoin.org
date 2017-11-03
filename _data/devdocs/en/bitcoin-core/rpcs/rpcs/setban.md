@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/setban.md" %}
 
 ##### SetBan
+{% include helpers/subhead-links.md %}
 
 {% assign summary_setBan="attempts add or remove a IP/Subnet from the banned list." %}
+
+{% autocrossref %}
 
 *Added in Bitcoin Core 0.12.0*
 
@@ -76,3 +80,4 @@ Result (no output from `bitcoin-cli` because result is set to `null`).
 * [ListBanned][rpc listbanned]: {{summary_listBanned}}
 * [ClearBanned][rpc clearbanned]: {{summary_clearBanned}}
 
+{% endautocrossref %}

@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getdifficulty.md" %}
 
 ##### GetDifficulty
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getDifficultly="returns the proof-of-work difficulty as a multiple of the minimum difficulty." %}
+
+{% autocrossref %}
 
 The `getdifficulty` RPC {{summary_getDifficulty}}
 
@@ -38,3 +42,4 @@ Result:
 * [GetNetworkHashPS][rpc getnetworkhashps]: {{summary_getNetworkHashPS}}
 * [GetMiningInfo][rpc getmininginfo]: {{summary_getMiningInfo}}
 
+{% endautocrossref %}

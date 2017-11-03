@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getrawchangeaddress.md" %}
 
 ##### GetRawChangeAddress
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getRawChangeAddress="returns a new Bitcoin address for receiving change. This is for use with raw transactions, not normal use." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -40,3 +44,4 @@ mnycUc8FRjJodfKhaj9QBZs2PwxxYoWqaK
 * [GetNewAddress][rpc getnewaddress]: {{summary_getNewAddress}}
 * [GetAccountAddress][rpc getaccountaddress]: {{summary_getAccountAddress}}
 
+{% endautocrossref %}

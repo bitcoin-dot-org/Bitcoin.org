@@ -5,6 +5,9 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rpcs/intro.md" %}
 
 ### Remote Procedure Calls (RPCs)
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Bitcoin Core provides a remote procedure call (RPC) interface for various
 administrative tasks, wallet operations, and queries about network and block
@@ -46,6 +49,7 @@ JSON-RPC specification][JSON-RPC version 1.0]. Specifically,
 the HTTP `POST` data of a request must be a JSON object with the following
 format:
 
+
 | Name                 | Type            | Presence                    | Description
 |----------------------|-----------------|-----------------------------|----------------
 | Request              | object          | Required<br>(exactly 1)     | The JSON-RPC<!--noref--> request object
@@ -53,6 +57,7 @@ format:
 | → <br>`id`           | string          | Optional<br>(0 or 1)        | An arbitrary string that will be returned with the response.  May be omitted or set to an empty string ("")
 | → <br>`method`       | string          | Required<br>(exactly 1)     | The RPC method name (e.g. `getblock`).  See the RPC section for a list of available methods.
 | → <br>`params`       | array           | Optional<br>(0 or 1)        | An array containing positional parameter values for the RPC.  May be an empty array or omitted for RPC calls that don't have any required parameters.
+| → <br>`params`       | object          | Optional<br>(0 or 1)        | Starting from Bitcoin Core 0.14.0 (replaces the `params` array above) An object containing named parameter values for the RPC.  May be an empty object or omitted for RPC calls that don't have any required parameters.
 | → → <br>Parameter    | *any*           | Optional<br>(0 or more)       | A parameter.  May be any JSON type allowed by the particular RPC method
 {:.ntpd}
 
@@ -73,6 +78,7 @@ output<!--noref-->, we use the following conventions
 * "Presence" indicates whether or not a field must be present within its
    containing array or object. Note that an optional object may still have
    required children.
+
 
 The HTTP response data for a RPC request is a JSON object with the following
 format:
@@ -200,3 +206,4 @@ programs using the JSON-RPC interface, you must ensure they handle high-precisio
 real numbers correctly.  See the [Proper Money Handling][wiki proper money handling]
 Bitcoin Wiki article for details and example code.
 
+{% endautocrossref %}

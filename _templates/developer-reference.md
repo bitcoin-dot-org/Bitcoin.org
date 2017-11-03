@@ -4,15 +4,12 @@
 
 layout: devdoc-category
 id: developer-reference
-title: "Developer Reference - Bitcoin"
 breadcrumbs:
   - bitcoin
   - dev docs
   - Reference
-header_title: "Bitcoin Developer Reference"
-header_description: "Find technical details and API documentation."
-skip_auto_include: true
-lang: en
+show_fragments: true
+show_toc: true
 ---
 
 {% include_absolute _data/devdocs/{{ page.lang }}/references/intro.md %}

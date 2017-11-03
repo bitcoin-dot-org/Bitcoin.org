@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/gettxoutsetinfo.md" %}
 
 ##### GetTxOutSetInfo
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getTxOutSetInfo="returns statistics about the confirmed unspent transaction output (UTXO) set. Note that this call may take some time and that it only counts outputs from confirmed transactions---it does not count outputs from the memory pool." %}
+
+{% autocrossref %}
 
 The `gettxoutsetinfo` RPC {{summary_getTxOutSetInfo}}
 
@@ -81,3 +85,4 @@ Result:
 * [GetBlockChainInfo][rpc getblockchaininfo]: {{summary_getBlockChainInfo}}
 * [GetMemPoolInfo][rpc getmempoolinfo]: {{summary_getMemPoolInfo}}
 
+{% endautocrossref %}

@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getunconfirmedbalance.md" %}
 
 ##### GetUnconfirmedBalance
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getUnconfirmedBalance="returns the wallet's total unconfirmed balance." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -39,3 +43,4 @@ Result (no unconfirmed incoming payments):
 
 * [GetBalance][rpc getbalance]: {{summary_getBalance}}
 
+{% endautocrossref %}

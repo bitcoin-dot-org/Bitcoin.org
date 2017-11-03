@@ -2,8 +2,12 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/ref_p2p_networking.md" %}
 
 ## P2P Network
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 This section describes the Bitcoin P2P network protocol (but it is [not a
 specification][]). It does not describe the discontinued direct [IP-to-IP
@@ -16,7 +20,12 @@ All peer-to-peer communication occurs entirely over TCP.
 **Note:** unless their description says otherwise, all multi-byte
 integers mentioned in this section are transmitted in little-endian order.
 
+{% endautocrossref %}
+
 ### Constants And Defaults
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The following constants and defaults are taken from Bitcoin Core's
 [chainparams.cpp][core chainparams.cpp] source code file.
@@ -42,7 +51,12 @@ Bitcoin Core's [chainparams.cpp][core chainparams.cpp] also includes
 other constants useful to programs, such as the hash of the genesis
 blocks for the different networks.
 
+{% endautocrossref %}
+
 ### Protocol Versions
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The table below lists some notable versions of the P2P network protocol,
 with the most recent versions listed first. (If you know of a protocol
@@ -66,10 +80,15 @@ As of Bitcoin Core 0.14.2, the most recent protocol version is 70015.
 | 31800   | Bitcoin Core 0.3.18 <br>(Dec 2010) | • Added `getheaders` message and `headers` message.
 | 31402   | Bitcoin Core 0.3.15 <br>(Oct 2010) | • Added time field to `addr` message.
 | 311     | Bitcoin Core 0.3.11 <br>(Aug 2010) | • Added `alert` message.
-| 209     | Bitcoin Core 0.2.9 <br>(May 2010)  | • Added checksum field to message headers.
-| 106     | Bitcoin Core 0.1.6 <br>(Oct 2009)  | • Added receive IP address fields to `version` message.
+| 209     | Bitcoin Core 0.2.9 <br>(May 2010)  | • Added checksum field to message headers, added `verack` message, and added starting height field to `version` message.
+| 106     | Bitcoin Core 0.1.6 <br>(Oct 2009)  | • Added transmitter IP address fields, nonce, and User Agent (subVer) to `version` message.
+
+{% endautocrossref %}
 
 ### Message Headers
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 All messages in the network protocol use the same container format,
 which provides a required multi-field message header and an optional payload.
@@ -92,7 +111,12 @@ f9beb4d9 ................... Start string: Mainnet
 5df6e0e2 ................... Checksum: SHA256(SHA256(<empty>))
 {% endhighlight %}
 
+{% endautocrossref %}
+
 ### Data Messages
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The following network messages all request or provide data related to
 transactions and blocks.
@@ -121,7 +145,12 @@ Type identifier zero and type identifiers greater than three are reserved
 for future implementations. Bitcoin Core ignores all inventories with
 one of these unknown types.
 
+{% endautocrossref %}
+
 #### Block
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The `block` message transmits a single serialized block in the format
 described in the [serialized blocks section][section serialized blocks].
@@ -139,7 +168,12 @@ different reasons:
    send the block from multiple nodes, possibly sending the same block
    to some peers more than once.
 
+{% endautocrossref %}
+
 #### GetBlocks
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The `getblocks` message requests an `inv` message that provides block
 header hashes starting from a particular point in the block chain. It
@@ -186,11 +220,16 @@ d39f608a7775b537729884d4e6633bb2
 00000000000000000000000000000000 ... Stop hash
 {% endhighlight %}
 
+{% endautocrossref %}
+
 #### GetData
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The `getdata` message requests one or more data objects from another
 node. The objects are requested by an inventory, which the requesting
-node typically previously received by way of an `inv` message.
+node typically received previously by way of an `inv` message.
 
 The response to a `getdata` message can be a `tx` message, `block`
 message, `merkleblock` message, or `notfound` message.
@@ -205,7 +244,12 @@ previously advertised it had that data by sending an `inv` message.
 The format and maximum size limitations of the `getdata` message are
 identical to the `inv` message; only the message header differs.
 
+{% endautocrossref %}
+
 #### GetHeaders
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 *Added in protocol version 31800.*
 
@@ -219,7 +263,12 @@ with one minor difference: the `inv` reply to the `getblocks` message
 will include no more than 500 block header hashes; the `headers` reply
 to the `getheaders` message will include as many as 2,000 block headers.
 
+{% endautocrossref %}
+
 #### Headers
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 *Added in protocol version 31800.*
 
@@ -250,7 +299,12 @@ fe9f0864 ........................... Nonce
 00 ................................. Transaction count (0x00)
 {% endhighlight %}
 
+{% endautocrossref %}
+
 #### Inv
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The `inv` message (inventory message) transmits one or more inventories of
 objects known to the transmitting peer.  It can be sent unsolicited to
@@ -281,7 +335,12 @@ de55ffd709ac1f5dc509a0925d0b1fc4
 a055aaf1d872e94ae85e9817b2c68dc7 ... Hash (TXID)
 {% endhighlight %}
 
+{% endautocrossref %}
+
 #### MemPool
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 *Added in protocol version 60002.*
 
@@ -325,7 +384,12 @@ be complete:
 There is no payload in a `mempool` message.  See the [message header
 section][section message header] for an example of a message without a payload.
 
+{% endautocrossref %}
+
 #### MerkleBlock
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 *Added in protocol version 70001 as described by BIP37.*
 
@@ -389,6 +453,7 @@ a `tx` message.
 
 ##### Parsing A MerkleBlock Message
 {:.no_toc}
+{% include helpers/subhead-links.md %}
 
 As seen in the annotated hexdump above, the `merkleblock` message
 provides three special data types: a transaction count, a list of
@@ -461,6 +526,7 @@ example].
 
 ##### Creating A MerkleBlock Message
 {:.no_toc}
+{% include helpers/subhead-links.md %}
 
 It's easier to understand how to create a `merkleblock` message after
 you understand how to parse an already-created message, so we recommend
@@ -504,7 +570,12 @@ instructions in the table above, processing is complete.  Pad your flag
 list to a byte boundary and construct the `merkleblock` message using the
 template near the beginning of this subsection.
 
+{% endautocrossref %}
+
 #### NotFound
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 *Added in protocol version 70001.*
 
@@ -518,7 +589,12 @@ send those blocks.)
 The format and maximum size limitations of the `notfound` message are
 identical to the `inv` message; only the message header differs.
 
+{% endautocrossref %}
+
 #### Tx
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The `tx` message transmits a single transaction in the raw transaction
 format. It can be sent in a variety of situations;
@@ -539,7 +615,16 @@ format. It can be sent in a variety of situations;
 For an example hexdump of the raw transaction format, see the [raw
 transaction section][raw transaction format].
 
+{% endautocrossref %}
+
+
+
+
+
 ### Control Messages
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The following network messages all help control the connection between
 two peers or allow them to advise each other about the rest of the
@@ -553,7 +638,12 @@ information. In addition, this section does not yet cover P2P protocol
 operation over the [Tor network][tor]; if you would like to contribute
 information about Tor, please [open an issue][docs issue].
 
+{% endautocrossref %}
+
 #### Addr
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The `addr` (IP address) message relays connection information
 for peers on the network. Each peer which wants to accept incoming
@@ -594,14 +684,27 @@ d91f4854 ........................... Epoch time: 1414012889
 [...] .............................. (999 more addresses omitted)
 {% endhighlight %}
 
+{% endautocrossref %}
+
+
+
+
 #### Alert
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 *Added in protocol version 311.*
 *Removed in protocol version 70013 and released in Bitcoin Core 0.13.0*
 
 The legacy p2p network alert messaging system has been retired; however, internal alerts, partition detection warnings and the `-alertnotify` option features remain. See [Alert System Retirement](https://bitcoin.org/en/alert/2016-11-01-alert-retirement) for details.
 
+{% endautocrossref %}
+
 #### FeeFilter
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 *Added in protocol version 70013 as described by BIP133.*
 
@@ -640,11 +743,17 @@ inv messages generated from a mempool message are subject to a fee filter if it 
 The annotated hexdump below shows a `feefilter` message. (The message
 header has been omitted.)
 
+{% endautocrossref %}
+
 {% highlight text %}
 7cbd000000000000 ... satoshis per kilobyte: 48,508
 {% endhighlight %}
 
+
 #### FilterAdd
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 *Added in protocol version 70001 as described by BIP37.*
 
@@ -679,7 +788,12 @@ fdacf9b3eb077412e7a968d2e4f11b9a
 9dee312d666187ed77ee7d26af16cb0b ... Element (A TXID)
 {% endhighlight %}
 
+{% endautocrossref %}
+
 #### FilterClear
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 *Added in protocol version 70001 as described by BIP37.*
 
@@ -695,7 +809,13 @@ a `filterload` message before a `filterclear` message.
 There is no payload in a `filterclear` message.  See the [message header
 section][section message header] for an example of a message without a payload.
 
+{% endautocrossref %}
+
+
 #### FilterLoad
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 *Added in protocol version 70001 as described by BIP37.*
 
@@ -928,7 +1048,12 @@ make the filter useless. For this reason, clients using automatic filter
 updates need to monitor the actual false positive rate and send a new
 filter when the rate gets too high.
 
+{% endautocrossref %}
+
 #### GetAddr
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The `getaddr` message requests an `addr` message from the receiving
 node, preferably one with lots of IP addresses of other receiving nodes.
@@ -939,7 +1064,13 @@ messages to arrive over time.
 There is no payload in a `getaddr` message.  See the [message header
 section][section message header] for an example of a message without a payload.
 
+{% endautocrossref %}
+
+
 #### Ping
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The `ping` message helps confirm that the receiving peer is still
 connected. If a TCP/IP error is encountered when sending the `ping`
@@ -962,7 +1093,12 @@ header has been omitted.)
 0094102111e2af4d ... Nonce
 {% endhighlight %}
 
+{% endautocrossref %}
+
 #### Pong
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 *Added in protocol version 60001 as described by BIP31.*
 
@@ -977,7 +1113,12 @@ the same nonce received in the `ping` message it is replying to.
 The format of the `pong` message is identical to the `ping` message;
 only the message header differs.
 
+{% endautocrossref %}
+
 #### Reject
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 *Added in protocol version 70002 as described by BIP61.*
 
@@ -1028,7 +1169,12 @@ header has been omitted.)
 947baf86a31017939575fb2354222821 ... TXID
 {% endhighlight %}
 
+{% endautocrossref %}
+
 #### SendHeaders
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The `sendheaders` message tells the receiving peer to send new block
 announcements using a `headers` message rather than an `inv` message.
@@ -1036,7 +1182,14 @@ announcements using a `headers` message rather than an `inv` message.
 There is no payload in a `sendheaders` message.  See the [message header
 section][section message header] for an example of a message without a payload.
 
+{% endautocrossref %}
+
 #### VerAck
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
+
+*Added in protocol version 209.*
 
 The `verack` message acknowledges a previously-received `version`
 message, informing the connecting node that it can begin to send
@@ -1044,7 +1197,13 @@ other messages. The `verack` message has no payload; for an example
 of a message with no payload, see the [message headers
 section][section message header].
 
+{% endautocrossref %}
+
+
 #### Version
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The `version` message provides information about the transmitting node
 to the receiving node at the beginning of a connection. Until both peers
@@ -1060,16 +1219,16 @@ before initializing its half of the connection by first sending a
 | 4        | version               | int32_t          | Required                                 | The highest protocol version understood by the transmitting node.  See the [protocol version section][section protocol versions].
 | 8        | services              | uint64_t         | Required                                 | The services supported by the transmitting node encoded as a bitfield.  See the list of service codes below.
 | 8        | timestamp             | int64_t          | Required                                 | The current Unix epoch time according to the transmitting node's clock.  Because nodes will reject blocks with timestamps more than two hours in the future, this field can help other nodes to determine that their clock is wrong.
-| 8        | addr_recv services    | uint64_t         | Required                                 | *Added in protocol version 106.* <br><br>The services supported by the receiving node as perceived by the transmitting node.  Same format as the 'services' field above. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always send 0.
-| 16       | addr_recv IP address  | char             | Required                                 | *Added in protocol version 106.* <br><br>The IPv6 address of the receiving node as perceived by the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][]. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always return ::ffff:127.0.0.1
-| 2        | addr_recv port        | uint16_t         | Required                                 | *Added in protocol version 106.* <br><br>The port number of the receiving node as perceived by the transmitting node in **big endian byte order**.
-| 8        | addr_trans services   | uint64_t         | Required                                 | The services supported by the transmitting node.  Should be identical to the 'services' field above.
-| 16       | addr_trans IP address | char             | Required                                 | The IPv6 address of the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][].  Set to ::ffff:127.0.0.1 if unknown.
-| 2        | addr_trans port       | uint16_t         | Required                                 | The port number of the transmitting node in **big endian byte order**.
-| 8        | nonce                 | uint64_t         | Required                                 | A random nonce which can help a node detect a connection to itself.  If the nonce is 0, the nonce field is ignored.  If the nonce is anything else, a node should terminate the connection on receipt<!--noref--> of a `version` message with a nonce it previously sent.
-| *Varies* | user_agent bytes      | compactSize uint | Required                                 | Number of bytes in following user\_agent field.  If 0x00, no user agent field is sent.
-| *Varies* | user_agent            | string           | Required if user_agent bytes > 0         | *Renamed in protocol version 60000.* <br><br>User agent as defined by BIP14. Previously called subVer.
-| 4        | start_height          | int32_t          | Required                                 | The height of the transmitting node's best block chain or, in the case of an SPV client, best block header chain.
+| 8        | addr_recv services    | uint64_t         | Required                                 | The services supported by the receiving node as perceived by the transmitting node.  Same format as the 'services' field above. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always send 0.
+| 16       | addr_recv IP address  | char             | Required                                 | The IPv6 address of the receiving node as perceived by the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][]. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always return ::ffff:127.0.0.1
+| 2        | addr_recv port        | uint16_t         | Required                                 | The port number of the receiving node as perceived by the transmitting node in **big endian byte order**.
+| 8        | addr_trans services   | uint64_t         | Required                                 | *Added in protocol version 106.* <br><br>The services supported by the transmitting node.  Should be identical to the 'services' field above.
+| 16       | addr_trans IP address | char             | Required                                 | *Added in protocol version 106.* <br><br>The IPv6 address of the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][].  Set to ::ffff:127.0.0.1 if unknown.
+| 2        | addr_trans port       | uint16_t         | Required                                 | *Added in protocol version 106.* <br><br>The port number of the transmitting node in **big endian byte order**.
+| 8        | nonce                 | uint64_t         | Required                                 | *Added in protocol version 106.* <br><br>A random nonce which can help a node detect a connection to itself.  If the nonce is 0, the nonce field is ignored.  If the nonce is anything else, a node should terminate the connection on receipt<!--noref--> of a `version` message with a nonce it previously sent.
+| *Varies* | user_agent bytes      | compactSize uint | Required                                 | *Added in protocol version 106.* <br><br>Number of bytes in following user\_agent field.  If 0x00, no user agent field is sent.
+| *Varies* | user_agent            | string           | Required if user_agent bytes > 0         | *Added in protocol version 106. Renamed in protocol version 60000.* <br><br>User agent as defined by BIP14. Previously called subVer.
+| 4        | start_height          | int32_t          | Required                                 | *Added in protocol version 209.* <br><br>The height of the transmitting node's best block chain or, in the case of an SPV client, best block header chain.
 | 1        | relay                 | bool             | Optional                                 | *Added in protocol version 70001 as described by BIP37.* <br><br>Transaction relay flag.  If 0x00, no `inv` messages or `tx` messages announcing new transactions should be sent to this client until it sends a `filterload` message or `filterclear` message.  If the relay field is not present or is set to 0x01, this node wants `inv` messages and `tx` messages announcing new transactions.
 
 The following service identifiers have been assigned.
@@ -1099,9 +1258,10 @@ bc8f5e5400000000 ................... Epoch time: 1415483324
 128035cbc97953f8 ................... Nonce
 
 0f ................................. Bytes in user agent string: 15
-2f5361746f7368693a302e392e332f ..... User agent: /Satoshi:0.9.2.1/
+2f5361746f7368693a302e392e332f ..... User agent: /Satoshi:0.9.3/
 
 cf050500 ........................... Start height: 329167
 01 ................................. Relay flag: true
 {% endhighlight %}
 
+{% endautocrossref %}

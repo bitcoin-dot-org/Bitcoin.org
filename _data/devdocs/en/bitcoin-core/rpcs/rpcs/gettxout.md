@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/gettxout.md" %}
 
 ##### GetTxOut
+{% include helpers/subhead-links.md %}
 
-{% assign summary_getTxOut="returns details about a transaction output.  Only unspent transaction outputs (UTXOs) are guaranteed to be available." %}
+{% assign summary_getTxOut="returns details about an unspent transaction output (UTXO)." %}
+
+{% autocrossref %}
 
 The `gettxout` RPC {{summary_getTxOut}}
 
@@ -18,6 +22,7 @@ The `gettxout` RPC {{summary_getTxOut}}
   d: "The TXID of the transaction containing the output to get, encoded as hex in RPC byte order"
 
 {% enditemplate %}
+
 
 *Parameter #2---the output index number (vout) of the output to get*
 
@@ -45,7 +50,7 @@ The `gettxout` RPC {{summary_getTxOut}}
 - n: "`result`"
   t: "object/null"
   p: "Required<br>(exactly 1)"
-  d: "Information about the output.  If output wasn't found or if an error occurred, this will be JSON `null`"
+  d: "Information about the output.  If output wasn't found, if it was spent or if an error occurred, this will be JSON `null`"
 
 - n: "→<br>`bestblock`"
   t: "string (hex)"
@@ -114,6 +119,7 @@ The `gettxout` RPC {{summary_getTxOut}}
 Get the UTXO from the following transaction from the first output index ("0"),
 searching the memory pool if necessary.
 
+
 {% highlight bash %}
 bitcoin-cli -testnet gettxout \
   d77aee99e8bdc11f40b8a9354956f0346fec5535b82c77c8b5c06047e3bca86a \
@@ -146,3 +152,4 @@ Result:
 * [GetRawTransaction][rpc getrawtransaction]: {{summary_getRawTransaction}}
 * [GetTransaction][rpc gettransaction]: {{summary_getTransaction}}
 
+{% endautocrossref %}

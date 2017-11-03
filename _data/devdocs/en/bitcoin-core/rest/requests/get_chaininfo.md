@@ -5,8 +5,11 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_includes/devdoc/bitcoin-core/rest/requests/get_chaininfo.md" %}
 
 ##### GET ChainInfo
+{% include helpers/subhead-links.md %}
 
 {% assign summary_restGetChainInfo="returns information about the current state of the block chain." %}
+
+{% autocrossref %}
 
 The `GET chaininfo` operation {{summary_restGetChainInfo}}  Supports only `json` as output format.
 
@@ -244,3 +247,4 @@ Result (whitespaced added):
 
 * [GetBlockChainInfo][rpc getblockchaininfo] RPC: {{summary_getBlockChainInfo}}
 
+{% endautocrossref %}

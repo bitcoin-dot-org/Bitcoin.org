@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/abandontransaction.md" %}
 
 ##### AbandonTransaction
+{% include helpers/subhead-links.md %}
 
 {% assign summary_abandonTransaction="marks an in-wallet transaction and all its in-wallet descendants as abandoned. This allows their inputs to be respent." %}
+
+{% autocrossref %}
 
 *Added in Bitcoin Core 0.12.0*
 
@@ -45,3 +49,4 @@ Result (no output from `bitcoin-cli` because result is set to `null`).
 
 * [SendRawTransaction][rpc sendrawtransaction]: {{summary_sendRawTransaction}}
 
+{% endautocrossref %}

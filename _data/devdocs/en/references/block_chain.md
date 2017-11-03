@@ -2,12 +2,17 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/ref_block_chain.md" %}
 
 ## Block Chain
+{% include helpers/subhead-links.md %}
 
 The following subsections briefly document core block details.
 
 ### Block Headers
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Block headers are serialized in the 80-byte format described below and then
 hashed as part of Bitcoin's proof-of-work algorithm, making the
@@ -40,7 +45,12 @@ b6ff0b1b1680a2862a30ca44d346d9e8
 fe9f0864 ........................... Nonce
 {% endhighlight %}
 
+{% endautocrossref %}
+
 #### Block Versions
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 * **Version 1** was introduced in the genesis block (January 2009).
 
@@ -78,7 +88,12 @@ function. Draft BIP9 describes the version bits design as of this
 writing, although it is still being actively edited and may
 substantially change while in the draft state.
 
+{% endautocrossref %}
+
 #### Merkle Trees
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The merkle root is constructed using all the TXIDs of transactions in
 this block, but first the TXIDs are placed in order as required by the
@@ -123,7 +138,12 @@ TXIDs and intermediate hashes are always in internal byte order when they're
 concatenated, and the resulting merkle root is also in internal byte
 order when it's placed in the block header.
 
+{% endautocrossref %}
+
 #### Target nBits
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 The target threshold is a 256-bit unsigned integer which a header hash
 must be equal to or below in order for that header to be a valid part of
@@ -180,7 +200,13 @@ a different difficulty 1 value---0x207fffff, the highest possible value
 below uint32_max which can be encoded; this allows near-instant building
 of blocks in regtest mode.
 
+{% endautocrossref %}
+
+
 ### Serialized Blocks
+{% include helpers/subhead-links.md %}
+
+{% autocrossref %}
 
 Under current consensus rules, a block is not valid unless its
 serialized size is less than or equal to 1 MB. All fields described
@@ -205,4 +231,6 @@ Together, the transaction fees and block subsidy are called the [block
 reward][/en/glossary/block-reward]{:#term-block-reward}{:.term}. A coinbase transaction is
 invalid if it tries to spend more value than is available from the
 block reward.
+
+{% endautocrossref %}
 

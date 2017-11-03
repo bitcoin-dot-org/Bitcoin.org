@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/decoderawtransaction.md" %}
 
 ##### DecodeRawTransaction
+{% include helpers/subhead-links.md %}
 
 {% assign summary_decodeRawTransaction="decodes a serialized transaction hex string into a JSON object describing the transaction." %}
+
+{% autocrossref %}
 
 The `decoderawtransaction` RPC {{summary_decodeRawTransaction}}
 
@@ -90,3 +94,4 @@ Result:
 * [SignRawTransaction][rpc signrawtransaction]: {{summary_signRawTransaction}}
 * [SendRawTransaction][rpc sendrawtransaction]: {{summary_sendRawTransaction}}
 
+{% endautocrossref %}

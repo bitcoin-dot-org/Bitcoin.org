@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getwalletinfo.md" %}
 
 ##### GetWalletInfo
+{% include helpers/subhead-links.md %}
 
 {% assign summary_getWalletInfo="provides information about the wallet." %}
+
+{% autocrossref %}
 
 *Requires wallet support.*
 
@@ -76,3 +80,4 @@ Result:
 
 * [ListTransactions][rpc listtransactions]: {{summary_listTransactions}}
 
+{% endautocrossref %}

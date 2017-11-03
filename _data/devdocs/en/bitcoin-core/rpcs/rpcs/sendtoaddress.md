@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/sendtoaddress.md" %}
 
 ##### SendToAddress
+{% include helpers/subhead-links.md %}
 
 {% assign summary_sendToAddress="spends an amount to a given address." %}
+
+{% autocrossref %}
 
 *Requires wallet support. Requires an unlocked wallet or an
 unencrypted wallet.*
@@ -74,7 +78,7 @@ The `sendtoaddress` RPC {{summary_sendToAddress}}
 
 *Example from Bitcoin Core 0.10.0*
 
-Spend 0.1 bitcoins to the address below with the comment "sendtoadress
+Spend 0.1 bitcoins to the address below with the comment "sendtoaddress
 example" and the comment-to "Nemo From Example.com":
 
 {% highlight bash %}
@@ -94,3 +98,5 @@ a2a2eb18cb051b5fe896a32b1cb20b179d981554b6bd7c5a956e56a0eecb04f0
 * [SendMany][rpc sendmany]: {{summary_sendMany}}
 * [Move][rpc move]: {{summary_move}}
 
+
+{% endautocrossref %}

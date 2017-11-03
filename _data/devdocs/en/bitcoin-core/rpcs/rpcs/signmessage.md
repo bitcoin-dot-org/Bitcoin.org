@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/signmessage.md" %}
 
 ##### SignMessage
+{% include helpers/subhead-links.md %}
 
 {% assign summary_signMessage="signs a message with the private key of an address." %}
+
+{% autocrossref %}
 
 *Requires wallet support. Requires an unlocked wallet or an
 unencrypted wallet.*
@@ -61,3 +65,4 @@ ILypRih424AWRYXK1goB6mskx99aelWcVCTEKolaW7U4VPnwj6Khf+vJSED7pMtPQd3KnXuqq1JvavrQ
 * [SignMessageWithPrivKey][rpc signmessagewithprivkey]: {{summary_signMessageWithPrivKey}}
 * [VerifyMessage][rpc verifymessage]: {{summary_verifyMessage}}
 
+{% endautocrossref %}

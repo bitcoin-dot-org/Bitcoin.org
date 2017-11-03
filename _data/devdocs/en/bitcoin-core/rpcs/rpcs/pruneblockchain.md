@@ -2,10 +2,14 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
+{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/pruneblockchain.md" %}
 
 ##### PruneBlockChain
+{% include helpers/subhead-links.md %}
 
 {% assign summary_pruneBlockChain="prunes the blockchain up to a specified height or timestamp." %}
+
+{% autocrossref %}
 
 *Added in Bitcoin Core 0.14.0*
 
@@ -47,3 +51,4 @@ Result:
 
 * [ImportPrunedFunds][rpc importprunedfunds]: {{summary_importPrunedFunds}}
 
+{% endautocrossref %}
