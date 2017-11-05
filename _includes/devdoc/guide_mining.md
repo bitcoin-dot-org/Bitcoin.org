@@ -80,7 +80,7 @@ miner checked a percentage of the possible hash values.
 
 The miner then sends to the pool a copy of the information the pool
 needs to validate that the header will hash below the target and that
-the the block of transactions referred to by the header merkle root field
+the block of transactions referred to by the header merkle root field
 is valid for the pool's purposes. (This usually means that the coinbase
 transaction must pay the pool.)
 
