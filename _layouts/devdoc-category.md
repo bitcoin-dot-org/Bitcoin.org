@@ -9,9 +9,6 @@ end_of_page: |
   <script src="/js/devsearch.js"></script>
   <script>updateToc();</script>
 ---
-{% assign show_toc = {{ page.show_toc }} %}
-{% assign show_fragments = {{ page.fragments }} %}
-
 <link rel="stylesheet" href="/css/jquery-ui.min.css">
 
 <h1>{% translate pagetitle %}</h1>
@@ -19,7 +16,7 @@ end_of_page: |
 
 {% markdown %}
 
-{% if show_toc %}
+{% if page.show_toc %}
 <div markdown="1" id="toc" class="toc"><div markdown="1">
 
 * Table of contents
@@ -33,7 +30,7 @@ end_of_page: |
 <div markdown="1" class="toccontent">
 {% endif %}
 
-{% if show_fragments %}
+{% if page.show_fragments %}
 {% include helpers/fragment_reviews_needed.md %}
 {% endif %}
 

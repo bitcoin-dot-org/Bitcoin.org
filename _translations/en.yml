@@ -352,7 +352,8 @@ en:
   developer-glossary:
     title: "Developer Glossary - Bitcoin"
     pagetitle: "Bitcoin Developer Glossary"
-
+    subsummary: "This is a technical glossary. Regular users should use the [vocabulary page](/en/vocabulary)."
+    suggestnewterm: "Can't find what you're looking for? [Suggest a new term][1] for the glossary!"
   development:
     title: "Development - Bitcoin"
     pagetitle: "Bitcoin development"

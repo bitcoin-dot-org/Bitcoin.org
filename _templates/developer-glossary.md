@@ -3,6 +3,7 @@
 # http://opensource.org/licenses/MIT.
 
 layout: devdoc-category
+id: developer-glossary
 breadcrumbs:
   - bitcoin
   - dev docs
@@ -12,7 +13,7 @@ show_toc: false
 ---
 
 <div markdown="block" class="notice">
-<span markdown="span">This is a technical glossary. Regular users should use the [vocabulary page](/en/vocabulary).</span>
+<span markdown="span">{% translate subsummary %}</span>
 </div>
 
 {% comment %}
@@ -76,8 +77,7 @@ show_toc: false
 </ul><br class="clear">
 
 <div markdown="block" class="notice">
-<span markdown="span">Can't find what you're looking for?  [Suggest a
-new term][] for the glossary!</span>
+<span markdown="span">{% translate suggestnewterm %}</span>
 </div>
 
-[suggest a new term]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20glossary%20term%20suggestion:
+[1]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20glossary%20term%20suggestion:
