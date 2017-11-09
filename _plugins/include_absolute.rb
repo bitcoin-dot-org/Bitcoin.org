@@ -17,7 +17,15 @@ module Jekyll
         def initialize(tag_name, markup, tokens)
             super
 
-            @file = markup.strip
+            path = markup.strip.split(' ')
+
+            @file = path[0].strip
+
+            puts(path)
+
+            if !path[1].nil?
+                @file_fallback = path[1].strip
+            end
         end
 
         # Render the variable if required (@see https://goo.gl/N5sMV3)
@@ -32,9 +40,9 @@ module Jekyll
         end
 
         def render(context)
-            file  = render_variable(context) || @file
-            source = File.expand_path(context.registers[:site].config['source']).freeze
-            path   = File.join(source, file)
+            file          = render_variable(context) || @file
+            source        = File.expand_path(context.registers[:site].config['source']).freeze
+            path          = File.join(source, file)
 
             begin
                 partial = Liquid::Template.parse(read_file(path, context))
@@ -44,7 +52,22 @@ module Jekyll
                     partial.render!(context)
                 end
             rescue => e
-                raise IncludeTagError.new e.message, path
+                if !@file_fallback.nil?
+                    begin
+                        path_fallback = File.join(source, @file_fallback)
+
+                        partial = Liquid::Template.parse(read_file(path_fallback, context))
+
+                        context.stack do
+                            context['include'] = parse_params(context) if @params
+                            partial.render!(context)
+                        end
+                    rescue => e
+                        raise IncludeTagError.new e.message, path_fallback
+                    end
+                else
+                    raise IncludeTagError.new e.message, path
+                end
             end
         end
 
