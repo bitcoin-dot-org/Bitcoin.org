@@ -306,23 +306,39 @@ uk:
     resourcesitemp2pnetworkreference: "P2P Мережа - Довідка"
     resourcesitemp2pnetworkexamples: "P2P Мережа - Приклади"
     resourcestitleadditional: "Додаткові матеріали"
+    fragmentreviewsneeded: >
+      This documentation has not been extensively reviewed by Bitcoin experts
+      and so likely contains numerous errors. Please use the <em>Issue</em> and
+      <em>Edit</em> links on the bottom left menu to help us improve. To close
+      this disclaimer
+    fragmentreviewsneededcloselink: "click here"
+    fragmenttranslationwarning: >
+      This version of the documentation may contain English (original) parts,
+      if you wish to contribute to translating this document to your language,
+      please use the appropriate links under the headings, or visit
+    fragmenttranslationdoclink: "this link"
+    subheadlinkedit: "Редагувати"
+    subheadlinkhistory: "Зміни"
+    subheadlinkreport: "Зарапортувати помилку"
+    subheadlinkdiscuss: "Обговорити"
+    subheadlinktranslate: "Перекласти"
   developer-examples:
     title: "Приклади розробки - Біткойн"
     pagetitle: "Приклади розробки Біткойн"
-    summary: "Find examples of how to build programs using Біткойн."
+    summary: "Тут ви знайдете приклади того, як будувати програми за допомогою Біткойн."
   developer-guide:
     title: "Керівництво Розробника - Біткойн"
     pagetitle: "Керівництво розробника Біткойн"
-    summary: "Find detailed information about the Біткойн protocol and related specifications."
+    summary: "Тут ви знайдете докладну інформацію про протокол Біткойн та відповідні специфікації."
   developer-reference:
     title: "Довідник Розробника - Біткойн"
     pagetitle: "Довідник розробника Біткойн"
-    summary: "Find technical details and API documentation."
+    summary: "Тут ви знайдете технічні деталі та документацію API."
   developer-glossary:
     title: "Глосарій Розробника - Біткойн"
     pagetitle: "Глосарій розробника Біткойн"
-    subsummary: "This is a technical glossary. Regular users should use the [vocabulary page](/en/vocabulary)."
-    suggestnewterm: "Can't find what you're looking for? [Suggest a new term][1] for the glossary!"
+    subsummary: "Це технічний словник. Звичайним користувачам ми радимо використовувати [сторінку словнику](/uk/vocabulary)."
+    suggestnewterm: "Не можете знайти, що шукали? [Запропонуйте новий термін][1] для глосарія!"
   development:
     title: "Розробка - Біткойн"
     pagetitle: "Розробка Біткойн"

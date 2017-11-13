@@ -21,8 +21,6 @@ module Jekyll
 
             @file = path[0].strip
 
-            puts(path)
-
             if !path[1].nil?
                 @file_fallback = path[1].strip
             end

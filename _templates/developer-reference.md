@@ -7,7 +7,7 @@ id: developer-reference
 breadcrumbs:
   - bitcoin
   - dev docs
-  - Reference
+  - dev docs reference
 show_fragments: true
 show_toc: true
 ---

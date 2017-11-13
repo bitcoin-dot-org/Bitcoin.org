@@ -7,7 +7,7 @@ id: developer-examples
 breadcrumbs:
   - bitcoin
   - dev docs
-  - Examples
+  - dev docs examples
 show_fragments: true
 show_toc: true
 ---

@@ -7,7 +7,7 @@ id: developer-guide
 breadcrumbs:
   - bitcoin
   - dev docs
-  - Guide
+  - dev docs guides
 show_fragments: true
 show_toc: true
 ---

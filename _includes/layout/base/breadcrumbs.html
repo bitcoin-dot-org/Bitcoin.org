@@ -15,6 +15,11 @@ http://opensource.org/licenses/MIT.
         {% when "RELEASE" %}
           {% comment %}<!-- for Bitcoin Core releases, show the version number -->{% endcomment %}
           {{page.required_version}}
+        {% when "dev docs" %}{% translate pagetitle developer-documentation %}
+        {% when "dev docs glossary" %}{% translate docreferencemenuglossary developer-documentation %}
+        {% when "dev docs examples" %}{% translate docreferencemenuexamples developer-documentation %}
+        {% when "dev docs guides" %}{% translate docreferencemenuguides developer-documentation %}
+        {% when "dev docs reference" %}{% translate docreferencemenureference developer-documentation %}
         {% else %}{{crumb}}
       {% endcase %}
     {% else %}
@@ -28,7 +33,10 @@ http://opensource.org/licenses/MIT.
         {% when "bcc news" %}<a href="/en/version-history">News</a>
         {% when "bitcoin" %}<a href="/{{ page.lang }}/">{% translate bitcoin vocabulary %}</a>
         {% when "dev docs" %}<a href="/{{ page.lang }}/developer-documentation">{% translate pagetitle developer-documentation %}</a>
-        {% when "glossary" %}<a href="/{{ page.lang }}/developer-glossary">{% translate docreferencemenuglossary developer-documentation %}</a>
+        {% when "dev docs glossary" %}<a href="/{{ page.lang }}/developer-glossary">{% translate docreferencemenuglossary developer-documentation %}</a>
+        {% when "dev docs examples" %}<a href="/{{ page.lang }}/developer-examples">{% translate docreferencemenuexamples developer-documentation %}</a>
+        {% when "dev docs guides" %}<a href="/{{ page.lang }}/developer-guides">{% translate docreferencemenuguides developer-documentation %}</a>
+        {% when "dev docs reference" %}<a href="/{{ page.lang }}/developer-reference">{% translate docreferencemenureference developer-documentation %}</a>
         {% else %}{% die "Breadcrumb not found in _includes/layout/breadcrumbs.html" %}
       {% endcase %}
       &gt;

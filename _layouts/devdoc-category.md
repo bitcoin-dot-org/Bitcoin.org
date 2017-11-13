@@ -36,6 +36,10 @@ end_of_page: |
 
 <input id="glossary_term" class="glossary_term" placeholder="{% translate glossarysearchplaceholder developer-documentation %}">
 
+{% if page.lang != 'en' %}
+{% include helpers/fragment_translation_warning.md %}
+{% endif %}
+
 {{ content }}
 
 {{ site.glossary_links }}

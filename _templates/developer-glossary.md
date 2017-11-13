@@ -7,7 +7,7 @@ id: developer-glossary
 breadcrumbs:
   - bitcoin
   - dev docs
-  - Glossary
+  - dev docs glossary
 show_fragments: false
 show_toc: false
 ---

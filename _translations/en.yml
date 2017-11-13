@@ -337,6 +337,16 @@ en:
       <em>Edit</em> links on the bottom left menu to help us improve. To close
       this disclaimer
     fragmentreviewsneededcloselink: "click here"
+    fragmenttranslationwarning: >
+      This version of the documentation may contain English (original) parts,
+      if you wish to contribute to translating this document to your language,
+      please use the appropriate links under the headings, or visit
+    fragmenttranslationdoclink: "this link"
+    subheadlinkedit: "Edit"
+    subheadlinkhistory: "History"
+    subheadlinkreport: "Report Issue"
+    subheadlinkdiscuss: "Discuss"
+    subheadlinktranslate: "Translate"
   developer-examples:
     title: "Developer Examples - Bitcoin"
     pagetitle: "Bitcoin Developer Examples"
