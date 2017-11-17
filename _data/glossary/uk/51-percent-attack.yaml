@@ -4,28 +4,24 @@
 
 required:
                                            #-------------40 characters-------------#
-    title_max_40_characters_no_formatting: 51% Attack, Majority Hash Rate Attack
+    title_max_40_characters_no_formatting: Атака 51%, Атака більшості
 
     summary_max_255_characters_no_formatting: >
-        The ability of someone controlling a majority of network
-        hash rate to revise transaction history and prevent new
-        transactions from confirming.
+        Здатність контролювати більшу частину хеш рейту мережі,
+        щоб контролювати історію транзакцій та запобігати створенню
+        нових транзакцій
 
     synonyms_shown_in_glossary_capitalize_first_letter:
-        - 51 percent attack
-        - Majority attack
+        - Атака 51 відсотка
+        - Атака більшості
 
 optional:
     synonyms_and_pluralizations_not_shown_in_glossary:
-        - 51 percent attacks
+        - атаки 51 відсотка
+        - атаки 51%
+        - атака 51%
 
-        - majority attacks
-
-        - 51% attack
-        - 51% attacks
-
-        - majority hash rate attack
-        - majority hash rate attacks
+        - атаки більшості
 
     not_to_be_confused_with_capitalize_first_letter:
 
