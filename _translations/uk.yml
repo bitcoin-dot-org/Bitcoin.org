@@ -339,6 +339,12 @@ uk:
     pagetitle: "Глосарій розробника Біткойн"
     subsummary: "Це технічний словник. Звичайним користувачам ми радимо використовувати [сторінку словнику](/uk/vocabulary)."
     suggestnewterm: "Не можете знайти, що шукали? [Запропонуйте новий термін][1] для глосарія!"
+    definitionnotice: "Це тлумачення з [технічного глосарія](/en/developer-glossary)."
+    sectiontitledefinition: "Визначення"
+    sectiontitlesynonyms: "Синоніми"
+    sectiontitlenottobeconfused: "Не плутати з"
+    sectiontitlelinks: "Посилання"
+    categorynumbers: "Номери"
   development:
     title: "Розробка - Біткойн"
     pagetitle: "Розробка Біткойн"

@@ -11,7 +11,17 @@ end_of_page: |
 ---
 <link rel="stylesheet" href="/css/jquery-ui.min.css">
 
+{% if page.show_subhead_links_on_top %}
+{% capture filename %}{{page.filename}}{% endcapture %}
+{% include helpers/subhead-links.md %}
+<br>
+{% endif %}
+
+{% if page.pagetitle-translated %}
+<h1>{{ page.pagetitle-translated }}</h1>
+{% else %}
 <h1>{% translate pagetitle %}</h1>
+{% endif %}
 <p class="summary">{% translate summary %}</p>
 
 {% markdown %}
@@ -36,9 +46,11 @@ end_of_page: |
 
 <input id="glossary_term" class="glossary_term" placeholder="{% translate glossarysearchplaceholder developer-documentation %}">
 
+{% unless page.hide_translation_disclaimer %}
 {% if page.lang != 'en' %}
 {% include helpers/fragment_translation_warning.md %}
 {% endif %}
+{% endunless %}
 
 {{ content }}
 

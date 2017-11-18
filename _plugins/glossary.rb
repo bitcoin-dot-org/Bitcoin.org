@@ -34,6 +34,9 @@ module Jekyll
 
       self.data['layout'] = 'glossary_entry'
       self.data['category'] = 'glossary_entry'
+      self.data['lang'] = lang
+
+      self.data['pagetitle-translated'] = self.data["required"]["title_max_40_characters_no_formatting"]
 
       ## Combine required (displayed) and optional (non-displayed)
       ## synonyms into an array
@@ -83,9 +86,12 @@ module Jekyll
 
       ## Add only shown synonyms to the glossary hash-tables-inside-sorted-array
       ## for use in the search box and on the master listing page
-      site.config["devsearches"]["Glossary"] = site.config["devsearches"]["Glossary"] ? site.config["devsearches"]["Glossary"] : []
+      site.config["devsearches"]["Glossary"] =
+          site.config["devsearches"]["Glossary"] ? site.config["devsearches"]["Glossary"] : {}
+      site.config["devsearches"]["Glossary"][lang] =
+          site.config["devsearches"]["Glossary"][lang] ? site.config["devsearches"]["Glossary"][lang] : []
       for term in self.data["required"]["synonyms_shown_in_glossary_capitalize_first_letter"] do
-        site.config["devsearches"]["Glossary"].unshift({ term => output_full_path })
+        site.config["devsearches"]["Glossary"][lang].unshift({ term => output_full_path })
       end
 
       ## Sort the shown synonyms array alphabetically (case
@@ -95,7 +101,7 @@ module Jekyll
       ## do support this feature, so if we upgrade to Jekyll 2.2 or
       ## higher, look at doing this at template time to save CPU cycles
       ## and increase flexibility
-      site.config["devsearches"]["Glossary"].sort_by!{|hash|
+      site.config["devsearches"]["Glossary"][lang].sort_by!{|hash|
           hash.to_s.downcase.gsub(/"=>.*/,'')
       }
 

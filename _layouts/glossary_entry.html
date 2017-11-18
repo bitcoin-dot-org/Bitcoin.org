@@ -2,34 +2,23 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-layout: base
+layout: devdoc-category
 breadcrumbs:
   - bitcoin
   - dev docs
   - dev docs glossary
   - GLOSSARY_ENTRY_TITLE
-end_of_page: |
-  <script src="/js/jquery/jquery-1.11.2.min.js"></script>
-  <script src="/js/jquery/jquery-ui.min.js"></script>
-  <script src="/js/devsearch.js"></script>
+show_fragments: false
+show_toc: false
+show_subhead_links_on_top: true
+hide_translation_disclaimer: true
 ---
-<link rel="stylesheet" href="/css/jquery-ui.min.css">
-
-{% capture filename %}{{page.filename}}{% endcapture %}
-{% include helpers/subhead-links.md %}
-<br>
-
-{% capture markdown_content %}
-
-# {{page.required.title_max_40_characters_no_formatting}}
-
-<input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
 
 <div markdown="block" class="notice">
-<span markdown="span">This definition comes from the [technical glossary](/en/developer-glossary).</span>
+  <span markdown="span">{% translate definitionnotice developer-glossary %}</span>
 </div>
 
-## Definition
+## {% translate sectiontitledefinition developer-glossary %}
 
 {% autocrossref %}
 
@@ -37,14 +26,14 @@ end_of_page: |
 
 {% endautocrossref %}
 
-### Synonyms
+### {% translate sectiontitlesynonyms developer-glossary %}
 
 {% for synonym in page.required.synonyms_shown_in_glossary_capitalize_first_letter %}
 * {{synonym}}
 {% endfor %}
 
 {% if page.optional.not_to_be_confused_with_capitalize_first_letter %}
-### Not To Be Confused With
+### {% translate sectiontitlenottobeconfused developer-glossary %}
 
 {% autocrossref %}
 
@@ -57,13 +46,8 @@ end_of_page: |
 {% endif %}
 
 {% if page.optional.links_html_or_markdown_style_capitalize_first_letter %}
-### Links
+### {% translate sectiontitlelinks developer-glossary %}
 {% for link in page.optional.links_html_or_markdown_style_capitalize_first_letter %}
 * {{link}}
 {% endfor %}
 {% endif %}
-
-{% include references.md %}
-{{site.glossary_links}}
-{% endcapture %}
-{{ markdown_content | markdownify }}{% comment %}Why is this hack necessary?  I don't get why this template can't be natively rendered as markdown like the releases template.{% endcomment %}

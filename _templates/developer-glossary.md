@@ -35,14 +35,23 @@ show_toc: false
 ## together. Hopefully this strikes the right balance between
 ## information density and too much whitespace.
 {% endcomment %}
-## Numbers
+## {% translate categorynumbers developer-glossary %}
 <!-- no subhead-links here -->
-{% for item in site.devsearches.Glossary %}
+{% for item in site.devsearches.Glossary[page.lang] %}
 {% if forloop.first %}{% assign first_term = true %}{% else %}{% assign first_term = false %}{% endif %}
 {% for term in item %}
  {% capture text_and_link %}<a href="{{term[1]}}">{{term[0]}}</a>{% endcapture %}
  {% capture first_character %}{{term[0] | downcase | truncate: 1, '' }}{% endcapture %}
- {% if first_character == 'a' %}
+ {% if first_character != '0' ||
+       first_character != '1' ||
+       first_character != '2' ||
+       first_character != '3' ||
+       first_character != '4' ||
+       first_character != '5' ||
+       first_character != '6' ||
+       first_character != '7' ||
+       first_character != '8' ||
+       first_character != '9' %}
   {% assign finished_with_numbers = true %}
  {% endif %}
  {% if first_character == last_first_character %}

@@ -364,6 +364,12 @@ en:
     pagetitle: "Bitcoin Developer Glossary"
     subsummary: "This is a technical glossary. Regular users should use the [vocabulary page](/en/vocabulary)."
     suggestnewterm: "Can't find what you're looking for? [Suggest a new term][1] for the glossary!"
+    definitionnotice: "This definition comes from the [technical glossary](/en/developer-glossary)."
+    sectiontitledefinition: "Definition"
+    sectiontitlesynonyms: "Synonyms"
+    sectiontitlenottobeconfused: "Not To Be Confused With"
+    sectiontitlelinks: "Links"
+    categorynumbers: "Numbers"
   development:
     title: "Development - Bitcoin"
     pagetitle: "Bitcoin development"
