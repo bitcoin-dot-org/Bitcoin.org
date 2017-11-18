@@ -88,7 +88,7 @@ http://opensource.org/licenses/MIT.
   p: "Required<br>(exactly 1)"
   d: "A Unix epoch time when the transaction was added to the wallet"
 
-- n: "{{DEPTH}}<br>`timerecived`"
+- n: "{{DEPTH}}<br>`timereceived`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "A Unix epoch time when the transaction was detected by the local node, or the time of the block on the local best block chain that included the transaction"

@@ -234,7 +234,7 @@ text:
   total_tx_count_in_millions: 230
   typical_ibd_time_in_hours: 4
   typical_144_block_catchup_time_in_minutes: 5
-  bitcoin_org_docs_maintainer_email_link: '<a href="mailto:dave@dtrt.org">Dave Harding</a>'
+  bitcoin_org_docs_maintainer_email_link: '<a href="mailto:will@bitcoin.org">Will Binns</a>'
   ## Before updating this, verify all assertions are still correct: git grep site.text.assertion_month
   ## Use ISO-8601 format, but feel free to round to the nearest month
   assertion_month: 2017-06-01
@@ -587,7 +587,7 @@ collections:
 
 donation_banner:
   address: 1GwV7fPX97hmavc6iNrUZUogmjpLPrPFoE
-  display: true
+  display: false
   amounts_in_usd:
     - 5
     - 25

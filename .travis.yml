@@ -1,11 +1,13 @@
 language: ruby
 rvm:
-  - "2.0.0"
+  - "2.4.1"
 sudo: false
 cache: bundler
 env:
   # http://docs.travis-ci.com/user/environment-variables/#Global-Variables
   global:
     - BITCOINORG_BUILD_TYPE=deployment
+
+before_install: gem install bundler --pre
 
 script: make travis

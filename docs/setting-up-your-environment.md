@@ -42,19 +42,19 @@ following command:
 
     source ~/.rvm/scripts/rvm
 
-**Install Ruby 2.0.0**
+**Install Ruby 2.4.1**
 
-To install Ruby 2.0.0, simply run this command:
+To install Ruby 2.4.1, simply run this command:
 
-    rvm install ruby-2.0.0
+    rvm install 2.4.1
 
 Sometimes this will find a pre-compiled Ruby package for your Linux
 distribution, but sometimes it will need to compile Ruby from scratch
 (which takes about 15 minutes).
 
-After Ruby 2.0.0 is installed, make it your default Ruby:
+After Ruby 2.4.1 is installed, make it your default Ruby:
 
-    rvm alias create default ruby-2.0.0
+    rvm alias create default ruby-2.4.1
 
 And tell your system to use it:
 
