@@ -225,7 +225,7 @@ All blocks with a block height less than 6,930,000 are entitled to
 receive a block subsidy of newly created bitcoin value, which also
 should be spent in the coinbase transaction. (The block subsidy started
 at 50 bitcoins and is being halved every 210,000 blocks---approximately
-once every four years. As of November 2014, it's 25 bitcoins.)
+once every four years. As of November 2017, it's 12.5 bitcoins.)
 
 Together, the transaction fees and block subsidy are called the [block
 reward][/en/glossary/block-reward]{:#term-block-reward}{:.term}. A coinbase transaction is
