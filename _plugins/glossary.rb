@@ -2,6 +2,7 @@
 # http://opensource.org/licenses/MIT.
 
 require 'yaml'
+require 'json'
 
 module Jekyll
 
@@ -131,6 +132,9 @@ module Jekyll
           output_directory = lang + '/glossary/'
           site.pages << GlossaryPage.new(site, site.source, lang, glossary_dir, src, output_directory)
         end
+
+        site.config["devsearches_json"] = site.config["devsearches"].to_json
+
         # #TODO definition pages are only generated for English language,
         # #but they could also be translated at some point. They would however
         # #need to fallback to English when no translation is available.
