@@ -133,7 +133,40 @@ module Jekyll
           site.pages << GlossaryPage.new(site, site.source, lang, glossary_dir, src, output_directory)
         end
 
-        site.config["devsearches_json"] = site.config["devsearches"].to_json
+        devsearches_json = []
+        site.config["devsearches"].each {| cat, items |
+            devsearches_data_item = {}
+
+            if cat == "Glossary"
+                items.each {| lang, list |
+
+                    list.each {| el |
+                        flat = el.flatten
+                        devsearches_json.push({
+                            "label" => flat[0],
+                            "uri" => flat[1],
+                            "category" => cat,
+                            "lang" => lang
+                        })
+                    }
+                    # puts list
+                }
+            else
+                items.each {| el |
+                    flat = el.flatten
+                    devsearches_json.push({
+                        "label" => flat[0],
+                        "uri" => flat[1],
+                        "category" => cat,
+                        "lang" => "en"
+                    })
+                }
+            end
+            # devsearches_json.unshift({ term => output_full_path })
+            # puts items
+        }
+
+        site.config["devsearches_json"] = devsearches_json.to_json
 
         # #TODO definition pages are only generated for English language,
         # #but they could also be translated at some point. They would however

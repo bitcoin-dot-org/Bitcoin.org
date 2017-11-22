@@ -21,26 +21,7 @@ Nested loops below:
 
 "use strict";
 
-var search_data = [
-{% for list in site.devsearches %}{% for item in list %}
-{% if forloop.first %}{% capture category_name %}{{item}}{% endcapture %}
-{% else %}{% for sublist in item %}{% for term in sublist %}
-{% if category_name == "Glossary" %}
-{% for subterm in term %}
-{
-label: "{{subterm[0]}}",
-uri: "{{subterm[1]}}",
-category: "{{category_name}}",
-lang: "{{sublist[0]}}"
-}
-{% unless forloop.last %},{% endunless %}{% endfor %}
-{% else %}
-{
-label: "{{term[0]}}",
-uri: "{{term[1]}}",
-category: "{{category_name}}"
-}{% endif %}{% endfor %}{% unless forloop.last %},{% endunless %}{% endfor %}{% endif %}{% endfor %}{% unless forloop.last %},{% endunless %}{% endfor %}
-];
+var search_data = {{ site.devsearches_json }}
 
 
 {% raw %}
