@@ -66,11 +66,6 @@ The `signrawtransaction` RPC {{summary_signRawTransaction}}
   p: "Optional<br>(0 or 1)"
   d: "An array holding private keys.  If any keys are provided, only they will be used to sign the transaction (even if the wallet has other matching keys).  If this array is empty or not used, and wallet support is enabled, keys from the wallet will be used"
 
-- n: "→<br>Key"
-  t: "string (base58)"
-  p: "Required<br>(1 or more)"
-  d: "A private key in base58check format to use to create a signature for this transaction"
-
 {% enditemplate %}
 
 *Parameter #4---signature hash type*
