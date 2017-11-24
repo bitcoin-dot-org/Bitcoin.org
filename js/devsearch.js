@@ -2,27 +2,9 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 ---
-{% comment %}
-
-NOTICE: if you edit this template, you should also edit
-        /quality-assurance/devsearches.html which creates a page whose
-        links can be checked by HTML proofer
-
-Nested loops below:
-  1. site.devsearches: container for all searches defined in _config.yaml in
-     the arbitrary order they should appear
-  2. list: a list item in devsearches; only has two elements:
-     a. the name of the category
-     b. an array containing the sublist items (pre-sorted)
-  3. sublist: a list of the items we want to display as a one-entry hash table
-  4. term: the term as the key [0] and the uri as the value [1]
-
-{% endcomment %}
-
 "use strict";
 
 var search_data = {{ site.devsearches_json }}
-
 
 {% raw %}
 // code adapted from http://jqueryui.com/autocomplete/#categories
@@ -51,7 +33,18 @@ $.widget("custom.catcomplete", $.ui.autocomplete, {
 });
 $(function() {
   $("#glossary_term").catcomplete({
-    source: search_data,
+    source: function(request, respond) {
+        var lang = $('html').attr('lang');
+        var term = request.term;
+
+        var results = search_data.filter(function(data) {
+            return (
+                (data.label.indexOf(term) !== -1 && data.lang === lang) || data.category !== "Glossary"
+            );
+        });
+
+        respond(results);
+    },
     delay: 0,
     minLength: 2,
     autoFocus: true,
