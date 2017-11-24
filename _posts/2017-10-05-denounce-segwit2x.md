@@ -36,7 +36,6 @@ By default, we will be using the following list of companies known to support S2
 + BitPay (United States)
 + BitPesa (Kenya)
 + BitOasis (United Arab Emirates)
-+ Bitso (Mexico)
 + Bixin.com (China)
 + Blockchain (UK)
 + Bloq (United States)
