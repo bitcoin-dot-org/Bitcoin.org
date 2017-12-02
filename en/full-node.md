@@ -163,7 +163,8 @@ have an easy-to-use node.
 * Desktop or laptop hardware running recent versions of Windows, Mac OS
   X, or Linux.
 
-* {{site.text.bitcoin_datadir_gb}} gigabytes of free disk space
+* {{site.text.bitcoin_datadir_gb}} gigabytes of free disk space,
+  accessable at a minimum read/write speed of 100 MB/s.
 
 * 2 gigabytes of memory (RAM)
 
