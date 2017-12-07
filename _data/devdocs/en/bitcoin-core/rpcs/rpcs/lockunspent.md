@@ -2,7 +2,7 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
-{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/lockunspent.md" %}
+{% assign filename="_data/devdocs/en/bitcoin-core/rpcs/rpcs/lockunspent.md" %}
 
 ##### LockUnspent
 {% include helpers/subhead-links.md %}

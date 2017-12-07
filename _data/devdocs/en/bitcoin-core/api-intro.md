@@ -2,7 +2,7 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
-{% assign filename="_includes/devdoc/bitcoin-core/api-intro.md" %}
+{% assign filename="_data/devdocs/en/bitcoin-core/api-intro.md" %}
 
 ## Bitcoin Core APIs
 {% include helpers/subhead-links.md %}

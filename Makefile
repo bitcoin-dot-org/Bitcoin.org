@@ -222,9 +222,9 @@ check-for-missing-copyright-licenses:
 check-for-missing-rpc-summaries:
 ## Make sure the Quick Reference section has a summary for each RPC we
 ## have documented
-	$S for f in _includes/devdoc/bitcoin-core/rpcs/rpcs/*.md ;\
-	do grep -q "\[$$( grep '^##### ' $$f | sed 's/^##### *\([a-zA-Z]*\).*/\1/')\]\[" _includes/devdoc/bitcoin-core/rpcs/quick-reference.md \
-	|| echo 'missing summary for '$$f', you need to add the summary to _includes/devdoc/bitcoin-core/rpcs/quick-ref.md and run make manual-updates' \
+	$S for f in _data/devdocs/en/bitcoin-core/rpcs/rpcs/*.md ;\
+	do grep -q "\[$$( grep '^##### ' $$f | sed 's/^##### *\([a-zA-Z]*\).*/\1/')\]\[" _data/devdocs/en/bitcoin-core/rpcs/quick-reference.md \
+	|| echo 'missing summary for '$$f', you need to add the summary to _data/devdocs/en/bitcoin-core/rpcs/quick-ref.md and run make manual-updates' \
 	; done | eval $(ERROR_ON_OUTPUT)
 
 manual-update-summaries-file:

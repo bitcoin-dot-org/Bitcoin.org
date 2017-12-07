@@ -57,5 +57,3 @@ end_of_page: |
 {{ site.glossary_links }}
 {% include references.md %}
 {% endmarkdown %}
-
-</div>

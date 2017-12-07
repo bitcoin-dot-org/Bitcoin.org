@@ -2,7 +2,7 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
-{% assign filename="_includes/devdoc/guide_p2p_network.md" %}
+{% assign filename="_data/devdocs/en/guides/p2p_network.md" %}
 
 ## P2P Network
 {% include helpers/subhead-links.md %}

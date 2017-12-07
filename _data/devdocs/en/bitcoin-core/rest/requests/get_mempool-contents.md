@@ -2,7 +2,7 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
-{% assign filename="_includes/devdoc/bitcoin-core/rest/requests/get_mempool-contents.md" %}
+{% assign filename="_data/devdocs/en/bitcoin-core/rest/requests/get_mempool-contents.md" %}
 
 ##### GET MemPool/Contents
 {% include helpers/subhead-links.md %}

@@ -2,7 +2,7 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
-{% assign filename="_includes/devdoc/example_testing.md" %}
+{% assign filename="_data/devdocs/en/examples/testing.md" %}
 
 ## Testing Applications
 {% include helpers/subhead-links.md %}

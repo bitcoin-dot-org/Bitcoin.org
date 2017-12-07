@@ -2,7 +2,7 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
-{% assign filename="_includes/devdoc/bitcoin-core/rpcs/rpcs/getmininginfo.md" %}
+{% assign filename="_data/devdocs/en/bitcoin-core/rpcs/rpcs/getmininginfo.md" %}
 
 ##### GetMiningInfo
 {% include helpers/subhead-links.md %}

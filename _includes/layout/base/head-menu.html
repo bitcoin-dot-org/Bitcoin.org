@@ -19,7 +19,14 @@ http://opensource.org/licenses/MIT.
       <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a>
       {% if page.lang == 'en' %}<li{% if page.id == 'exchanges' %} class="active"{% endif %}><a href="/en/exchanges">Exchanges</a></li>{% endif %}
       <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
+      {% comment %}
+        After the developer-documentation page is translated, add the language
+        to the array below
+      {% endcomment %}
+      {% assign langs = [ 'en', 'uk' ] %}
+      {% if langs contains page.lang %}
       <li{% if page.id == 'developer-documentation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate developer-documentation url %}">{% translate menu-developer-documentation layout %}</a></li>
+      {% endif %}
       <li{% if page.id == 'vocabulary' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
       <li{% if page.id == 'events' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>
       {% if page.lang == 'en' %}

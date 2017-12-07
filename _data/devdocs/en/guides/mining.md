@@ -2,7 +2,7 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
-{% assign filename="_includes/devdoc/guide_mining.md" %}
+{% assign filename="_data/devdocs/en/guides/mining.md" %}
 
 ## Mining
 {% include helpers/subhead-links.md %}

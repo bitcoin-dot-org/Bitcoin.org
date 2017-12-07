@@ -26,5 +26,14 @@ id: bitcoin-for-developers
 <h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />{% translate micro %}</h2>
 <p>{% translate microtext %}</p>
 
+{% comment %}
+  After the developer-documentation page is translated, add the language
+  to the array below
+{% endcomment %}
+{% assign langs = [ 'en', 'uk' ] %}
+{% if langs contains page.lang %}
 <div class="introlink"><a href="/{{ page.lang }}/developer-documentation">{% translate pagetitle developer-documentation %}</a></div>
+{% else %}
+<div class="introlink"><a href="/en/developer-documentation">Developer Documentation (English)</a></div>
+{% endif %}
 <div class="mainbutton"><a href="/{{ page.lang }}/{% translate getting-started url %}"><img src="/img/icons/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>

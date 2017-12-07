@@ -2,7 +2,7 @@
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
-{% assign filename="_includes/devdoc/guide_operating_modes.md" %}
+{% assign filename="_data/devdocs/en/guides/operating_modes.md" %}
 
 ## Operating Modes
 {% include helpers/subhead-links.md %}

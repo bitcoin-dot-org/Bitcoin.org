@@ -50,6 +50,8 @@ HTML::Proofer.new(
           ## page name
           /^(.+)(#.+)/ => '\1.html\2',
 
+          /\/(.html#.+)/ => '\1',
+
           ## (Un-hack) Remove previously-appended '$' from URLs
           /\$$/ => '',
         },
