@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 ## make sure Travis supports that version. Then remind one of the
 ## site maintainers that they need to run `rvm install <VERSION>` on
 ## the build server(s) before they commit to master
-ruby '2.4.2'
+ruby '2.4.1'
 
 ## Used on the build server. If you add a package here (like nokogiri)
 ## that has non-Gem dependencies (like zlib), please remind the site
