@@ -822,3 +822,579 @@ file_filter = .tx/translations/devdocs/<lang>/bitcoin-core/rpcs/rpcs/walletpassp
 source_file = .tx/translations/devdocs/en/bitcoin-core/rpcs/rpcs/walletpassphrase.md
 source_lang = en
 type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-51-percent-attack]
+file_filter = .tx/translations/glossary/<lang>/51-percent-attack.yaml
+source_file = .tx/translations/glossary/en/51-percent-attack.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-address]
+file_filter = .tx/translations/glossary/<lang>/address.yaml
+source_file = .tx/translations/glossary/en/address.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-base58check]
+file_filter = .tx/translations/glossary/<lang>/base58check.yaml
+source_file = .tx/translations/glossary/en/base58check.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-block-chain]
+file_filter = .tx/translations/glossary/<lang>/block-chain.yaml
+source_file = .tx/translations/glossary/en/block-chain.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-block-header]
+file_filter = .tx/translations/glossary/<lang>/block-header.yaml
+source_file = .tx/translations/glossary/en/block-header.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-block-height]
+file_filter = .tx/translations/glossary/<lang>/block-height.yaml
+source_file = .tx/translations/glossary/en/block-height.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-block-reward]
+file_filter = .tx/translations/glossary/<lang>/block-reward.yaml
+source_file = .tx/translations/glossary/en/block-reward.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-blocks-first-sync]
+file_filter = .tx/translations/glossary/<lang>/blocks-first-sync.yaml
+source_file = .tx/translations/glossary/en/blocks-first-sync.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-block-size-limit]
+file_filter = .tx/translations/glossary/<lang>/block-size-limit.yaml
+source_file = .tx/translations/glossary/en/block-size-limit.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-block]
+file_filter = .tx/translations/glossary/<lang>/block.yaml
+source_file = .tx/translations/glossary/en/block.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-bloom-filter]
+file_filter = .tx/translations/glossary/<lang>/bloom-filter.yaml
+source_file = .tx/translations/glossary/en/bloom-filter.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-chain-code]
+file_filter = .tx/translations/glossary/<lang>/chain-code.yaml
+source_file = .tx/translations/glossary/en/chain-code.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-change-address]
+file_filter = .tx/translations/glossary/<lang>/change-address.yaml
+source_file = .tx/translations/glossary/en/change-address.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-child-key]
+file_filter = .tx/translations/glossary/<lang>/child-key.yaml
+source_file = .tx/translations/glossary/en/child-key.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-coinbase-transaction]
+file_filter = .tx/translations/glossary/<lang>/coinbase-transaction.yaml
+source_file = .tx/translations/glossary/en/coinbase-transaction.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-coinbase]
+file_filter = .tx/translations/glossary/<lang>/coinbase.yaml
+source_file = .tx/translations/glossary/en/coinbase.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-compactsize]
+file_filter = .tx/translations/glossary/<lang>/compactsize.yaml
+source_file = .tx/translations/glossary/en/compactsize.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-compressed-public-key]
+file_filter = .tx/translations/glossary/<lang>/compressed-public-key.yaml
+source_file = .tx/translations/glossary/en/compressed-public-key.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-confirmation-score]
+file_filter = .tx/translations/glossary/<lang>/confirmation-score.yaml
+source_file = .tx/translations/glossary/en/confirmation-score.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-consensus-rules]
+file_filter = .tx/translations/glossary/<lang>/consensus-rules.yaml
+source_file = .tx/translations/glossary/en/consensus-rules.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-consensus]
+file_filter = .tx/translations/glossary/<lang>/consensus.yaml
+source_file = .tx/translations/glossary/en/consensus.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-cpfp]
+file_filter = .tx/translations/glossary/<lang>/cpfp.yaml
+source_file = .tx/translations/glossary/en/cpfp.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-denominations]
+file_filter = .tx/translations/glossary/<lang>/denominations.yaml
+source_file = .tx/translations/glossary/en/denominations.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-difficulty]
+file_filter = .tx/translations/glossary/<lang>/difficulty.yaml
+source_file = .tx/translations/glossary/en/difficulty.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-dns-seed]
+file_filter = .tx/translations/glossary/<lang>/dns-seed.yaml
+source_file = .tx/translations/glossary/en/dns-seed.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-double-spend]
+file_filter = .tx/translations/glossary/<lang>/double-spend.yaml
+source_file = .tx/translations/glossary/en/double-spend.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-escrow-contract]
+file_filter = .tx/translations/glossary/<lang>/escrow-contract.yaml
+source_file = .tx/translations/glossary/en/escrow-contract.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-extended-key]
+file_filter = .tx/translations/glossary/<lang>/extended-key.yaml
+source_file = .tx/translations/glossary/en/extended-key.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-fork]
+file_filter = .tx/translations/glossary/<lang>/fork.yaml
+source_file = .tx/translations/glossary/en/fork.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-genesis-block]
+file_filter = .tx/translations/glossary/<lang>/genesis-block.yaml
+source_file = .tx/translations/glossary/en/genesis-block.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-hardened-extended-key]
+file_filter = .tx/translations/glossary/<lang>/hardened-extended-key.yaml
+source_file = .tx/translations/glossary/en/hardened-extended-key.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-hard-fork]
+file_filter = .tx/translations/glossary/<lang>/hard-fork.yaml
+source_file = .tx/translations/glossary/en/hard-fork.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-hd-protocol]
+file_filter = .tx/translations/glossary/<lang>/hd-protocol.yaml
+source_file = .tx/translations/glossary/en/hd-protocol.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-hd-wallet-seed]
+file_filter = .tx/translations/glossary/<lang>/hd-wallet-seed.yaml
+source_file = .tx/translations/glossary/en/hd-wallet-seed.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-header-chain]
+file_filter = .tx/translations/glossary/<lang>/header-chain.yaml
+source_file = .tx/translations/glossary/en/header-chain.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-headers-first-sync]
+file_filter = .tx/translations/glossary/<lang>/headers-first-sync.yaml
+source_file = .tx/translations/glossary/en/headers-first-sync.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-high-priority-transaction]
+file_filter = .tx/translations/glossary/<lang>/high-priority-transaction.yaml
+source_file = .tx/translations/glossary/en/high-priority-transaction.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-initial-block-download]
+file_filter = .tx/translations/glossary/<lang>/initial-block-download.yaml
+source_file = .tx/translations/glossary/en/initial-block-download.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-input]
+file_filter = .tx/translations/glossary/<lang>/input.yaml
+source_file = .tx/translations/glossary/en/input.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-internal-byte-order]
+file_filter = .tx/translations/glossary/<lang>/internal-byte-order.yaml
+source_file = .tx/translations/glossary/en/internal-byte-order.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-inventory]
+file_filter = .tx/translations/glossary/<lang>/inventory.yaml
+source_file = .tx/translations/glossary/en/inventory.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-locktime]
+file_filter = .tx/translations/glossary/<lang>/locktime.yaml
+source_file = .tx/translations/glossary/en/locktime.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-mainnet]
+file_filter = .tx/translations/glossary/<lang>/mainnet.yaml
+source_file = .tx/translations/glossary/en/mainnet.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-malleability]
+file_filter = .tx/translations/glossary/<lang>/malleability.yaml
+source_file = .tx/translations/glossary/en/malleability.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-masf]
+file_filter = .tx/translations/glossary/<lang>/masf.yaml
+source_file = .tx/translations/glossary/en/masf.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-master-chain-code-and-private-key]
+file_filter = .tx/translations/glossary/<lang>/master-chain-code-and-private-key.yaml
+source_file = .tx/translations/glossary/en/master-chain-code-and-private-key.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-merkle-block]
+file_filter = .tx/translations/glossary/<lang>/merkle-block.yaml
+source_file = .tx/translations/glossary/en/merkle-block.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-merkle-root]
+file_filter = .tx/translations/glossary/<lang>/merkle-root.yaml
+source_file = .tx/translations/glossary/en/merkle-root.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-merkle-tree]
+file_filter = .tx/translations/glossary/<lang>/merkle-tree.yaml
+source_file = .tx/translations/glossary/en/merkle-tree.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-message-header]
+file_filter = .tx/translations/glossary/<lang>/message-header.yaml
+source_file = .tx/translations/glossary/en/message-header.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-minimum-relay-fee]
+file_filter = .tx/translations/glossary/<lang>/minimum-relay-fee.yaml
+source_file = .tx/translations/glossary/en/minimum-relay-fee.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-mining]
+file_filter = .tx/translations/glossary/<lang>/mining.yaml
+source_file = .tx/translations/glossary/en/mining.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-multisig]
+file_filter = .tx/translations/glossary/<lang>/multisig.yaml
+source_file = .tx/translations/glossary/en/multisig.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-nbits]
+file_filter = .tx/translations/glossary/<lang>/nbits.yaml
+source_file = .tx/translations/glossary/en/nbits.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-node]
+file_filter = .tx/translations/glossary/<lang>/node.yaml
+source_file = .tx/translations/glossary/en/node.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-null-data-transaction]
+file_filter = .tx/translations/glossary/<lang>/null-data-transaction.yaml
+source_file = .tx/translations/glossary/en/null-data-transaction.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-op-code]
+file_filter = .tx/translations/glossary/<lang>/op-code.yaml
+source_file = .tx/translations/glossary/en/op-code.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-orphan-block]
+file_filter = .tx/translations/glossary/<lang>/orphan-block.yaml
+source_file = .tx/translations/glossary/en/orphan-block.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-outpoint]
+file_filter = .tx/translations/glossary/<lang>/outpoint.yaml
+source_file = .tx/translations/glossary/en/outpoint.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-output]
+file_filter = .tx/translations/glossary/<lang>/output.yaml
+source_file = .tx/translations/glossary/en/output.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-p2pkh-address]
+file_filter = .tx/translations/glossary/<lang>/p2pkh-address.yaml
+source_file = .tx/translations/glossary/en/p2pkh-address.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-p2sh-address]
+file_filter = .tx/translations/glossary/<lang>/p2sh-address.yaml
+source_file = .tx/translations/glossary/en/p2sh-address.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-p2sh-multisig]
+file_filter = .tx/translations/glossary/<lang>/p2sh-multisig.yaml
+source_file = .tx/translations/glossary/en/p2sh-multisig.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-parent-key]
+file_filter = .tx/translations/glossary/<lang>/parent-key.yaml
+source_file = .tx/translations/glossary/en/parent-key.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-payment-protocol]
+file_filter = .tx/translations/glossary/<lang>/payment-protocol.yaml
+source_file = .tx/translations/glossary/en/payment-protocol.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-private-key]
+file_filter = .tx/translations/glossary/<lang>/private-key.yaml
+source_file = .tx/translations/glossary/en/private-key.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-proof-of-work]
+file_filter = .tx/translations/glossary/<lang>/proof-of-work.yaml
+source_file = .tx/translations/glossary/en/proof-of-work.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-pubkey-script]
+file_filter = .tx/translations/glossary/<lang>/pubkey-script.yaml
+source_file = .tx/translations/glossary/en/pubkey-script.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-public-key]
+file_filter = .tx/translations/glossary/<lang>/public-key.yaml
+source_file = .tx/translations/glossary/en/public-key.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-rbf]
+file_filter = .tx/translations/glossary/<lang>/rbf.yaml
+source_file = .tx/translations/glossary/en/rbf.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-redeem-script]
+file_filter = .tx/translations/glossary/<lang>/redeem-script.yaml
+source_file = .tx/translations/glossary/en/redeem-script.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-regression-test-mode]
+file_filter = .tx/translations/glossary/<lang>/regression-test-mode.yaml
+source_file = .tx/translations/glossary/en/regression-test-mode.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-rpc-byte-order]
+file_filter = .tx/translations/glossary/<lang>/rpc-byte-order.yaml
+source_file = .tx/translations/glossary/en/rpc-byte-order.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-sequence-number]
+file_filter = .tx/translations/glossary/<lang>/sequence-number.yaml
+source_file = .tx/translations/glossary/en/sequence-number.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-serialized-block]
+file_filter = .tx/translations/glossary/<lang>/serialized-block.yaml
+source_file = .tx/translations/glossary/en/serialized-block.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-serialized-transaction]
+file_filter = .tx/translations/glossary/<lang>/serialized-transaction.yaml
+source_file = .tx/translations/glossary/en/serialized-transaction.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-sighash-all]
+file_filter = .tx/translations/glossary/<lang>/sighash-all.yaml
+source_file = .tx/translations/glossary/en/sighash-all.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-sighash-anyonecanpay]
+file_filter = .tx/translations/glossary/<lang>/sighash-anyonecanpay.yaml
+source_file = .tx/translations/glossary/en/sighash-anyonecanpay.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-sighash-none]
+file_filter = .tx/translations/glossary/<lang>/sighash-none.yaml
+source_file = .tx/translations/glossary/en/sighash-none.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-sighash-single]
+file_filter = .tx/translations/glossary/<lang>/sighash-single.yaml
+source_file = .tx/translations/glossary/en/sighash-single.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-signature-hash]
+file_filter = .tx/translations/glossary/<lang>/signature-hash.yaml
+source_file = .tx/translations/glossary/en/signature-hash.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-signature-script]
+file_filter = .tx/translations/glossary/<lang>/signature-script.yaml
+source_file = .tx/translations/glossary/en/signature-script.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-signature]
+file_filter = .tx/translations/glossary/<lang>/signature.yaml
+source_file = .tx/translations/glossary/en/signature.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-simplified-payment-verification]
+file_filter = .tx/translations/glossary/<lang>/simplified-payment-verification.yaml
+source_file = .tx/translations/glossary/en/simplified-payment-verification.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-soft-fork]
+file_filter = .tx/translations/glossary/<lang>/soft-fork.yaml
+source_file = .tx/translations/glossary/en/soft-fork.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-stale-block]
+file_filter = .tx/translations/glossary/<lang>/stale-block.yaml
+source_file = .tx/translations/glossary/en/stale-block.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-standard-transaction]
+file_filter = .tx/translations/glossary/<lang>/standard-transaction.yaml
+source_file = .tx/translations/glossary/en/standard-transaction.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-start-string]
+file_filter = .tx/translations/glossary/<lang>/start-string.yaml
+source_file = .tx/translations/glossary/en/start-string.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-testnet]
+file_filter = .tx/translations/glossary/<lang>/testnet.yaml
+source_file = .tx/translations/glossary/en/testnet.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-transaction-fee]
+file_filter = .tx/translations/glossary/<lang>/transaction-fee.yaml
+source_file = .tx/translations/glossary/en/transaction-fee.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-txid]
+file_filter = .tx/translations/glossary/<lang>/txid.yaml
+source_file = .tx/translations/glossary/en/txid.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-uasf]
+file_filter = .tx/translations/glossary/<lang>/uasf.yaml
+source_file = .tx/translations/glossary/en/uasf.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-unspent-transaction-output]
+file_filter = .tx/translations/glossary/<lang>/unspent-transaction-output.yaml
+source_file = .tx/translations/glossary/en/unspent-transaction-output.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-wallet-import-format]
+file_filter = .tx/translations/glossary/<lang>/wallet-import-format.yaml
+source_file = .tx/translations/glossary/en/wallet-import-format.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-wallet]
+file_filter = .tx/translations/glossary/<lang>/wallet.yaml
+source_file = .tx/translations/glossary/en/wallet.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
+[bitcoinorg.glossary-watch-only-address]
+file_filter = .tx/translations/glossary/<lang>/watch-only-address.yaml
+source_file = .tx/translations/glossary/en/watch-only-address.yaml
+source_lang = en
+type = GITHUBMARKDOWN
