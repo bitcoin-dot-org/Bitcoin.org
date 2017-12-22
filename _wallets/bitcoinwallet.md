@@ -5,7 +5,7 @@
 id: bitcoinwallet
 title: "Bitcoin Wallet"
 titleshort: "Bitcoin<br>Wallet"
-compat: "mobile android blackberry"
+compat: "mobile android"
 level: 2
 platform:
   - mobile:
@@ -14,22 +14,6 @@ platform:
       - name: android
         text: "walletbitcoinwallet"
         link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
-        source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
-        screenshot: "bitcoinwalletandroid.png"
-        check:
-          control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationspvp2p"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkpassenvironmentmobile"
-          privacy: "checkpassprivacybasic"
-          fees: "checkgoodfeecontrolfull"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
-      - name: blackberry
-        text: "walletbitcoinwallet"
-        link: "https://appworld.blackberry.com/webstore/content/23952882/"
         source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
         screenshot: "bitcoinwalletandroid.png"
         check:
