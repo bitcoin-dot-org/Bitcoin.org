@@ -25,7 +25,12 @@ The `getwalletinfo` RPC {{summary_getWalletInfo}}
   p: "Required<br>(exactly 1)"
   d: "An object describing the wallet"
 
-- n: "→<br>`walletversion`"
+- n: "→<br>`walletname`"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The filename of the wallet"
+  
+- n: "→<br>`walletversion`
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "The version number of the wallet"
@@ -34,6 +39,11 @@ The `getwalletinfo` RPC {{summary_getWalletInfo}}
   t: "number (bitcoins)"
   p: "Required<br>(exactly 1)"
   d: "The balance of the wallet.  The same as returned by the `getbalance` RPC with default parameters"
+  
+  - n: "→<br>`unconfirmed_balance`
+  t: "number (bitcoins)"
+  p: "Required<br>(exactly 1)"
+  d: "The unconfirmed balance of the wallet"
 
 - n: "→<br>`txcount`"
   t: "number (int)"
@@ -49,15 +59,17 @@ The `getwalletinfo` RPC {{summary_getWalletInfo}}
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "The number of keys in the wallet keypool"
+  
+- n: "→<br>`paytxfee`"
+  t: "number (bitcoins)"
+  p: "Required<br>(exactly 1)"
+  d: "The user set tx-fee. Can be set with settxfee"
 
-- n: "→<br>`unlocked_until`"
-  t: "number (int)"
-  p: "Optional<br>(0 or 1)"
-  d: "Only returned if the wallet was encrypted with the `encryptwallet` RPC. A Unix epoch date when the wallet will be locked, or `0` if the wallet is currently locked"
+
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example from Bitcoin Core 0.15.99.0*
 
 {% highlight bash %}
 bitcoin-cli -testnet getwalletinfo
@@ -67,12 +79,17 @@ Result:
 
 {% highlight json %}
 {
-    "walletversion" : 60000,
-    "balance" : 1.45060000,
-    "txcount" : 17,
-    "keypoololdest" : 1398809500,
-    "keypoolsize" : 196,
-    "unlocked_until" : 0
+  "walletname": "wallet.dat",
+  "walletversion": 159900,
+  "balance": 5.23425902,
+  "unconfirmed_balance": 0.00000000,
+  "immature_balance": 0.00000000,
+  "txcount": 4,
+  "keypoololdest": 1513339537,
+  "keypoolsize": 1000,
+  "keypoolsize_hd_internal": 999,
+  "paytxfee": 0.00000000,
+  "hdmasterkeyid": "af8cdd6080b31bea9c04399c6ff4f62d7f003f47"
 }
 {% endhighlight %}
 
