@@ -1,66 +1,18 @@
-- date: 2017-12-06
-  title: "Blockchain in Africa"
-  venue: "Cyberparc Sidi Abdellah"
-  address: "Rahmania, Sidi Abdellah"
-  city: "Algiers"
-  country: "Algeria"
-  link: "https://www.algeria20.com"
-
-- date: 2017-12-07
-  title: "Blockchain and Bitcoin Conference Malta"
-  venue: "Intercontinental Malta"
-  address: "St George's Bay, STJ 3310"
-  city: "St Julians"
-  country: "Malta"
-  link: "https://malta.blockchainconf.world/en"
-
-- date: 2017-12-08
-  title: "Big Cyber Security Show"
-  venue: "The St. Regis"
-  address: "462, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013"
-  city: "Mumbai"
-  country: "India"
-  link: "https://www.bigcybersecurityshow.com/"
-
-- date: 2017-12-08
-  title: "Cryptospace Conference Moscow"
-  venue: "Platform – Skolkovo School of Management"
-  address: "Novaya street, 100, Skolkovo, Moscovskaya oblast, 143025"
-  city: "Moscow"
-  country: "Russia"
-  link: "http://cryptospace.moscow"
-
-- date: 2017-12-09
-  title: "Seminario Bitcoin"
-  venue: "Torre Millenium"
-  address: "Prolongación Av. Los Leones Torre Millenium Piso 9 Oficina 9-3"
-  city: "Barquisimeto"
-  country: "Venezuela"
-  link: "https://t.me/seminariobitcoin"
-
-- date: 2017-12-12
-  title: "Blockchain & Bitcoin Conference Slovenia"
-  venue: "Ljubljana Exhibition and Convention Centre"
-  address: "Dunajska cesta 18, 100"
-  city: "Ljubljana"
-  country: "Slovenia"
-  link: "https://blockchainconference.si/en"
-
-- date: 2017-12-13
-  title: "CryptoBlockCon 2017"
-  venue: "Mandalay Bay"
-  address: "3950 S Las Vegas Blvd, Las Vegas, NV 89119"
-  city: "Las Vegas"
+- date: 2018-01-04
+  title: "USA versus Costanzo - Is Bitcoin Money?"
+  venue: "Courthouse - Room 505"
+  address: "401 West Washington Street"
+  city: "Phoenix"
   country: "United States"
-  link: "https://www.cryptoblockcon.com/"
+  link: "https://www.meetup.com/Article-78-Against-NYDFS/events/245567185/"
 
-- date: 2017-12-16
-  title: "Blockchain Fairytales"
-  venue: "OK16 - A Space for Creative Projects"
-  address: "16 Kastryčnickaja Street"
-  city: "Minsk"
-  country: "Belarus"
-  link: "http://blockchainfairytales.cyber.fund/"
+- date: 2018-01-06
+  title: "New Year's Cryptoresolutions"
+  venue: "Barley's Biergarten"
+  address: "Pauwstraat 4"
+  city: "Arnhem"
+  country: "The Netherlands"
+  link: "https://www.arnhembitcoinstad.nl"
 
 - date: 2018-01-09
   title: "Dubai International Blockchain Summit"
@@ -69,6 +21,14 @@
   city: "Dubai"
   country: "United Arab Emirates"
   link: "http://www.dibs.ae"
+
+- date: 2018-01-11
+  title: "Decision on the Status of the New York Bitlicense"
+  venue: "Courthouse - Room 308 (Part 34)"
+  address: "80 Centre Street"
+  city: "New York"
+  country: "United States"
+  link: "https://www.meetup.com/Article-78-Against-NYDFS/events/244100380/"
 
 - date: 2018-01-15
   title: "Blockchain Cruise Asia 2018"
@@ -86,6 +46,38 @@
   country: "United States"
   link: "https://btcmiami.com"
 
+- date: 2018-01-25
+  title: "Blockchain & Bitcoin Conference Philippines"
+  venue: "Edsa Shangri-La Hotel"
+  address: "Ortigas Centre, Mandaluyong City, 1650"
+  city: "Manila"
+  country: "Philippines"
+  link: "https://philippines.bc.events/"
+
+- date: 2018-02-08
+  title: "Blockchain & Bitcoin Conference Gibraltar"
+  venue: "Sunborn Gibraltar"
+  address: "35 Marina Bay Square"
+  city: "Gibraltar"
+  country: "United Kingdom"
+  link: "https://gibraltar.bc.events/"
+
+- date: 2018-02-13
+  title: "Blockchain & Bitcoin Conference Saint Petersburg"
+  venue: "Park Inn by Radisson"
+  address: "Pulkovskaya, Ploshchad Pobedy, 1"
+  city: "Saint Petersburg"
+  country: "Russia"
+  link: "https://spb.bc.events/"
+
+- date: 2018-02-16
+  title: "USA versus Stetkiw: Is Bitcoin Money?"
+  venue: "Courthouse"
+  address: "231 W Lafayette Blvd"
+  city: "Detroit"
+  country: "United States"
+  link: "https://www.meetup.com/Article-78-Against-NYDFS/events/245143698/"
+
 - date: 2018-02-16
   title: "The Bitcoin, Ethereum, And Blockchain Superconference"
   venue: "Dallas/Fort Worth Airport Marriott"
@@ -101,6 +93,46 @@
   city: "Paris"
   country: "France"
   link: "https://achat-bitcoin.fr"
+
+- date: 2018-02-21
+  title: "Blockchain & Bitcoin Conference Switzerland"
+  venue: "Grand Hotel Kempinski"
+  address: "Quai du Mont-Blanc 19, 1201"
+  city: "Geneva"
+  country: "Switzerland"
+  link: "https://switzerland.bc.events/"
+
+- date: 2018-02-24
+  title: "Blockchain: Rewiring Governance"
+  venue: "University of Cambridge, Judge Business School"
+  address: "Trumpington St, CB2 1AG"
+  city: "Cambridge"
+  country: "United Kingdom"
+  link: "http://www.blockchaincambridge.com/"
+
+- date: 2017-03-01
+  title: "Blockchain & Bitcoin Conference Turkey"
+  venue: "InterContinental Istanbul"
+  address: "Asker Ocagi Cad. No 1 Taksim 34435"
+  city: "Istanbul"
+  country: "Turkey"
+  link: "https://turkey.bc.events/"
+
+- date: 2018-03-01
+  title: "International Blockchain Summit Moscow"
+  venue: "Infoprostranstvo Event Hall"
+  address: "1st Zachatevsky pereulok, 4"
+  city: "Moscow"
+  country: "Russia"
+  link: "http://ibsmoscow.ru"
+
+- date: 2018-03-10
+  title: "The Crypto Investor Show"
+  venue: "The Queen Elizabeth II Centre"
+  address: "Broad Sanctuary, Westminster, SW1P 3EE"
+  city: "London"
+  country: "United Kingdom"
+  link: "https://www.cryptoinvestor.show/"
 
 - date: 2018-03-27
   title: "Blockchain West"
@@ -118,6 +150,14 @@
   country: "United Kingdom"
   link: "http://coinfestuk.org/"
 
+- date: 2018-04-17
+  title: "First IEEE Workshop on Blockchain Technologies and Applications"
+  venue: "Hyatt Regency"
+  address: "9801 International Drive, 32819"
+  city: "Orlando"
+  country: "United States"
+  link: "https://sites.google.com/view/bta18/"
+
 - date: 2018-04-19
   title: "Blockchain Developer Conference 2018"
   venue: "Hyatt Fishermans’ Wharf"
@@ -125,3 +165,11 @@
   city: "San Francisco"
   country: "United States"
   link: "http://blockdevcon.com/"
+
+- date: 2018-06-20
+  title: "2018 Crypto Valley Conference on Blockchain Technology"
+  venue: "Theater Casino Zug"
+  address: "Artherstrasse 2-4"
+  city: "Zug"
+  country: "Switzerland"
+  link: "https://www.cryptovalleyconference.com/"
