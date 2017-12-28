@@ -1,9 +1,9 @@
 ---
 title: "Beware of Bitcoin's possible incompatibility with some major services"
 shorturl: "segwit2x-safety"
-active: true
-banner: "Beware of Bitcoin's possible incompatibility with some major services"
-bannerclass: "alert"
+active: false
+## banner: "Beware of Bitcoin's possible incompatibility with some major services"
+## bannerclass: "alert"
 date: 2017-10-11
 ---
 

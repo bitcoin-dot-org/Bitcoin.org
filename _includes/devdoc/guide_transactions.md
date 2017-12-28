@@ -756,8 +756,8 @@ added to the block chain.
 Bitcoin developers have been working to reduce transaction malleability
 among standard transaction types, one outcome of those efforts is
 [BIP 141: Segregated Witness](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki),
-which is supported by Bitcoin Core but not activated. At present, new
-transactions should not depend on
+which is supported by Bitcoin Core and was activated in August 2017. 
+When SegWit is not being used, new transactions should not depend on
 previous transactions which have not been added to the block chain yet,
 especially if large amounts of satoshis are at stake.
 

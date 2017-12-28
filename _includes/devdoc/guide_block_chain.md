@@ -182,7 +182,7 @@ Eventually a miner produces another block which attaches to only one of
 the competing simultaneously-mined blocks. This makes that side of
 the fork stronger than the other side.
 Assuming a fork only contains valid
-blocks, normal peers always follow the the most difficult chain
+blocks, normal peers always follow the most difficult chain
 to recreate and throw away [stale blocks][/en/glossary/stale-block]{:#term-stale-block}{:.term} belonging to shorter forks.
 (Stale blocks are also sometimes called orphans or orphan blocks<!--noref-->, but
 those terms are also used for true orphan blocks without a known parent block.)
