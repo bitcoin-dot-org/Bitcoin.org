@@ -289,6 +289,79 @@ en:
     checkfailfeecontrolstatictxt: "This wallet does not provide any fee suggestions which are based on current network conditions.  This means that your transactions may be subject to delays if the fee chosen is too low, or that you may pay a fee which is too high."
     educate: "Take time to educate yourself"
     educatetxt: "Bitcoin is different from what you know and use every day. Before you start using Bitcoin for any serious transaction, be sure to read <a href=\"#you-need-to-know#\"><b>what you need to know</b></a> and take appropriate steps to <a href=\"#secure-your-wallet#\"><b>secure your wallet</b></a>. Always remember that it is your responsibility to choose your wallet carefully and adopt good practices in order to protect your money."
+  developer-documentation:
+    title: "Developer Documentation - Bitcoin"
+    pagetitle: "Developer Documentation"
+    summary: "Find useful resources, guides and reference material for developers."
+    navigationreturn: "Return To Overview"
+    navigationreport: "Report An Issue"
+    navigationedit: "Edit On GitHub"
+    glossarysearchplaceholder: "Search the glossary, RPCs, and more"
+    docreferencemenuguides: "Guides"
+    docreferencemenureference: "Reference"
+    docreferencemenuexamples: "Examples"
+    docreferencemenuglossary: "Glossary"
+    resourcestitleblockchain: "Block Chain"
+    resourcesitemblockchainguides: "Block Chain Guide"
+    resourcesitemblockchainreference: "Block Chain Reference"
+    resourcestitletransactions: "Transactions"
+    resourcesitemtransactionsguides: "Transactions Guide"
+    resourcesitemtransactionsreference: "Transactions Reference"
+    resourcesitemtransactionsexamples: "Transactions Examples"
+    resourcestitlecontracts: "Contracts"
+    resourcesitemcontractsguides: "Contracts Guide"
+    resourcestitlewallets: "Wallets"
+    resourcesitemwalletsguides: "Wallets Guide"
+    resourcesitemwalletsreference: "Wallets Reference"
+    resourcestitlepaymentprocessing: "Payment Processing"
+    resourcesitempaymentprocessingguides: "Payment Processing Guide"
+    resourcesitempaymentprocessingexamples: "Payment Processing Examples"
+    resourcestitleoperatingmodes: "Operating Modes"
+    resourcesitemoperatingmodesguides: "Operating Modes Guide"
+    resourcestitlep2pnetwork: "P2P Network"
+    resourcesitemp2pnetworkguides: "P2P Network Guide"
+    resourcesitemp2pnetworkreference: "P2P Network Reference"
+    resourcesitemp2pnetworkexamples: "P2P Network Examples"
+    resourcestitleadditional: "Additional Resources"
+    fragmentreviewsneeded: >
+      This documentation has not been extensively reviewed by Bitcoin experts
+      and so likely contains numerous errors. Please use the <em>Issue</em> and
+      <em>Edit</em> links on the bottom left menu to help us improve. To close
+      this disclaimer
+    fragmentreviewsneededcloselink: "click here"
+    fragmenttranslationwarning: >
+      This version of the documentation may contain English (original) parts,
+      if you wish to contribute to translating this document to your language,
+      please use the appropriate links under the headings, or visit
+    fragmenttranslationdoclink: "this link"
+    subheadlinkedit: "Edit"
+    subheadlinkhistory: "History"
+    subheadlinkreport: "Report Issue"
+    subheadlinkdiscuss: "Discuss"
+    subheadlinktranslate: "Translate"
+  developer-examples:
+    title: "Developer Examples - Bitcoin"
+    pagetitle: "Bitcoin Developer Examples"
+    summary: "Find examples of how to build programs using Bitcoin."
+  developer-guide:
+    title: "Developer Guide - Bitcoin"
+    pagetitle: "Bitcoin Developer Guide"
+    summary: "Find detailed information about the Bitcoin protocol and related specifications."
+  developer-reference:
+    title: "Bitcoin Developer Reference - Bitcoin"
+    pagetitle: "Bitcoin Developer Reference"
+    summary: "Find technical details and API documentation."
+  developer-glossary:
+    title: "Developer Glossary - Bitcoin"
+    pagetitle: "Bitcoin Developer Glossary"
+    subsummary: "This is a technical glossary. Regular users should use the [vocabulary page](/en/vocabulary)."
+    suggestnewterm: "Can't find what you're looking for? [Suggest a new term][1] for the glossary!"
+    definitionnotice: "This definition comes from the [technical glossary](/en/developer-glossary)."
+    sectiontitledefinition: "Definition"
+    sectiontitlesynonyms: "Synonyms"
+    sectiontitlenottobeconfused: "Not To Be Confused With"
+    sectiontitlelinks: "Links"
+    categorynumbers: "Numbers"
   development:
     title: "Development - Bitcoin"
     pagetitle: "Bitcoin development"
@@ -684,7 +757,7 @@ en:
     privacytxt11: "We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on the Site. You are advised to review this privacy policy periodically for any changes."
     privacytxt12: "This Privacy Policy was last updated"
     privacycontactus: "Contact Us"
-    privacytxt13: "If you have any questions about our privacy policy, or how your data is being collected and processed, please e-mail <a href=\"mailto:privacy@bitcoin.org?Subject=Privacy\">privacy@bitcoin.org</a>." 
+    privacytxt13: "If you have any questions about our privacy policy, or how your data is being collected and processed, please e-mail <a href=\"mailto:privacy@bitcoin.org?Subject=Privacy\">privacy@bitcoin.org</a>."
   cookie-notification:
     cookiemessage: "<p class=\"cc_message\">We use cookies to ensure you get the best experience on our website. <br><br>Please read our <a href=\"/en/privacy\">privacy policy</a> to find out more.</p>"
     cookieaccept: "OK"
@@ -865,6 +938,7 @@ en:
     menu-bitcoin-for-individuals: Individuals
     menu-community: Community
     menu-development: Development
+    menu-developer-documentation: Documentation
     menu-events: Events
     menu-exchanges: Exchanges
     menu-faq: FAQ
@@ -905,6 +979,11 @@ en:
     buy: buy
     choose-your-wallet: choose-your-wallet
     community: community
+    developer-documentation: developer-documentation
+    developer-examples: developer-examples
+    developer-glossary: developer-glossary
+    developer-guide: developer-guide
+    developer-reference: developer-reference
     development: development
     download: download
     exchanges: exchanges

@@ -2,6 +2,7 @@
 # http://opensource.org/licenses/MIT.
 
 require 'yaml'
+require 'json'
 
 module Jekyll
 
@@ -34,6 +35,9 @@ module Jekyll
 
       self.data['layout'] = 'glossary_entry'
       self.data['category'] = 'glossary_entry'
+      self.data['lang'] = lang
+
+      self.data['pagetitle-translated'] = self.data["required"]["title_max_40_characters_no_formatting"]
 
       ## Combine required (displayed) and optional (non-displayed)
       ## synonyms into an array
@@ -83,9 +87,12 @@ module Jekyll
 
       ## Add only shown synonyms to the glossary hash-tables-inside-sorted-array
       ## for use in the search box and on the master listing page
-      site.config["devsearches"]["Glossary"] = site.config["devsearches"]["Glossary"] ? site.config["devsearches"]["Glossary"] : []
+      site.config["devsearches"]["Glossary"] =
+          site.config["devsearches"]["Glossary"] ? site.config["devsearches"]["Glossary"] : {}
+      site.config["devsearches"]["Glossary"][lang] =
+          site.config["devsearches"]["Glossary"][lang] ? site.config["devsearches"]["Glossary"][lang] : []
       for term in self.data["required"]["synonyms_shown_in_glossary_capitalize_first_letter"] do
-        site.config["devsearches"]["Glossary"].unshift({ term => output_full_path })
+        site.config["devsearches"]["Glossary"][lang].unshift({ term => output_full_path })
       end
 
       ## Sort the shown synonyms array alphabetically (case
@@ -95,7 +102,7 @@ module Jekyll
       ## do support this feature, so if we upgrade to Jekyll 2.2 or
       ## higher, look at doing this at template time to save CPU cycles
       ## and increase flexibility
-      site.config["devsearches"]["Glossary"].sort_by!{|hash|
+      site.config["devsearches"]["Glossary"][lang].sort_by!{|hash|
           hash.to_s.downcase.gsub(/"=>.*/,'')
       }
 
@@ -111,20 +118,60 @@ module Jekyll
         return
       end
 
-      glossary_dir='_data/glossary/en'
+      main_dir='_data/glossary/'
 
-      #Generate each definition page based on templates
-      Dir.foreach(glossary_dir) do |file|
-        next if file == '.' or file == '..'
-        lang = 'en'
-        src = file
-        srcdir = '_data/glossary/en'
-        output_directory = lang + '/glossary/'
-        site.pages << GlossaryPage.new(site, site.source, lang, glossary_dir, src, output_directory)
+      Dir.foreach(main_dir) do |dir|
+        next if dir == '.' or dir == '..'
+        lang=dir
+        glossary_dir=main_dir+lang
+
+        #Generate each definition page based on templates
+        Dir.foreach(glossary_dir) do |file|
+          next if file == '.' or file == '..'
+          src = file
+          output_directory = lang + '/glossary/'
+          site.pages << GlossaryPage.new(site, site.source, lang, glossary_dir, src, output_directory)
+        end
+
+        devsearches_json = []
+        site.config["devsearches"].each {| cat, items |
+            devsearches_data_item = {}
+
+            if cat == "Glossary"
+                items.each {| lang, list |
+
+                    list.each {| el |
+                        flat = el.flatten
+                        devsearches_json.push({
+                            "label" => flat[0],
+                            "uri" => flat[1],
+                            "category" => cat,
+                            "lang" => lang
+                        })
+                    }
+                    # puts list
+                }
+            else
+                items.each {| el |
+                    flat = el.flatten
+                    devsearches_json.push({
+                        "label" => flat[0],
+                        "uri" => flat[1],
+                        "category" => cat,
+                        "lang" => "en"
+                    })
+                }
+            end
+            # devsearches_json.unshift({ term => output_full_path })
+            # puts items
+        }
+
+        site.config["devsearches_json"] = devsearches_json.to_json
+
+        # #TODO definition pages are only generated for English language,
+        # #but they could also be translated at some point. They would however
+        # #need to fallback to English when no translation is available.
       end
-      #TODO definition pages are only generated for English language,
-      #but they could also be translated at some point. They would however
-      #need to fallback to English when no translation is available.
     end
   end
 

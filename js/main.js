@@ -203,109 +203,109 @@ function freenodeShow(e) {
 }
 
 function updateToc() {
-  // Update table of content active entry and browser url on scroll.
-  var pageoffset;
-  var windowy;
-  var toc;
-  var fallback;
-  var first;
-  var last;
-  var closer;
-  function init() {
-      setenv();
-      updatehistory();
-      updatetoc();
+    // Update table of content active entry and browser url on scroll.
+    var pageoffset;
+    var windowy;
+    var toc;
+    var fallback;
+    var first;
+    var last;
+    var closer;
+    function init() {
+        setenv();
+        updatehistory();
+        updatetoc();
     }
     // Set variables.
-  function setenv() {
-      pageoffset = getPageYOffset();
-      windowy = getWindowY();
-      toc = document.getElementById('toc');
-      fallback = document.getElementsByTagName('H2')[0];
-      first = [fallback, getTop(fallback)];
-      last = [fallback, getTop(fallback)];
-      closer = [fallback, getTop(fallback)];
-      // Find all titles in toc.
-      var nodes = [];
-      var tags = ['H2', 'H3', 'H4', 'H5', 'H6'];
-      for (var i = 0, n = tags.length; i < n; i++) {
-        for (var ii = 0, t = document.getElementsByTagName(tags[i]), nn = t.length; ii < nn; ii++) {
-          if (t[ii].className.indexOf('no_toc') !== -1) continue;
-          nodes.push(t[ii]);
+    function setenv() {
+        pageoffset = getPageYOffset();
+        windowy = getWindowY();
+        toc = document.getElementById('toc');
+        fallback = document.getElementsByTagName('H2')[0];
+        first = [fallback, getTop(fallback)];
+        last = [fallback, getTop(fallback)];
+        closer = [fallback, getTop(fallback)];
+        // Find all titles in toc.
+        var nodes = [];
+        var tags = ['H2', 'H3', 'H4', 'H5', 'H6'];
+        for (var i = 0, n = tags.length; i < n; i++) {
+            for (var ii = 0, t = document.getElementsByTagName(tags[i]), nn = t.length; ii < nn; ii++) {
+                if (t[ii].className.indexOf('no_toc') !== -1) continue;
+                nodes.push(t[ii]);
+            }
         }
-      }
-      // Find first title, last title and closer title.
-      for (var i = 0, n = nodes.length; i < n; i++) {
-        if (!nodes[i].id) continue;
-        var top = getTop(nodes[i]);
-        if (top < first[1]) first = [nodes[i], top];
-        if (top > last[1]) last = [nodes[i], top];
-        if (top < pageoffset + 10 && top > closer[1]) closer = [nodes[i], top];
-      }
-      // Set closer title to first or last title if at the top or bottom of the page.
-      if (pageoffset < first[1]) closer = [first[0], first[1]];
-      if (windowy + pageoffset >= getHeight(document.body)) closer = [last[0], last[1]];
+        // Find first title, last title and closer title.
+        for (var i = 0, n = nodes.length; i < n; i++) {
+            if (!nodes[i].id) continue;
+            var top = getTop(nodes[i]);
+            if (top < first[1]) first = [nodes[i], top];
+            if (top > last[1]) last = [nodes[i], top];
+            if (top < pageoffset + 10 && top > closer[1]) closer = [nodes[i], top];
+        }
+        // Set closer title to first or last title if at the top or bottom of the page.
+        if (pageoffset < first[1]) closer = [first[0], first[1]];
+        if (windowy + pageoffset >= getHeight(document.body)) closer = [last[0], last[1]];
     }
     // Update toc position and set active toc entry.
-  function updatetoc() {
-      // Set bottom and top to fit within window and not overflow its parent node.
-      var div = toc.getElementsByTagName('DIV')[0];
-      if (pageoffset > getTop(toc)) {
-        addClass(div, 'scroll');
-        div.style.top = '20px';
-        div.style.bottom = Math.max((pageoffset + windowy) - (getHeight(toc.parentNode) + getTop(toc.parentNode)), 20) + 'px';
-      } else removeClass(div, 'scroll');
-      // Remove .active class from toc and find new active toc entry.
-      var a = false;
-      for (var i = 0, t = toc.getElementsByTagName('*'), n = t.length; i < n; i++) {
-        removeClass(t[i], 'active');
-        if (t[i].nodeName === 'A' && t[i].getAttribute('href') === '#' + closer[0].id) a = t[i];
-      }
-      if (a === false) return;
-      // Set .active class on new active toc entry.
-      var nd = a;
-      while (nd.parentNode.nodeName === 'LI' || nd.parentNode.nodeName === 'UL') {
-        addClass(nd, 'active');
-        nd = nd.parentNode;
-      }
-      // Auto-scroll in toc to keep active toc entry visible.
-      var nd = a;
-      var otop = nd.offsetTop;
-      while (nd.offsetParent !== div && nd.offsetParent) {
-        nd = nd.offsetParent;
-        otop += nd.offsetTop;
-      }
-      var bdiff = getHeight(a) + otop - div.scrollTop - getHeight(div);
-      var tdiff = getHeight(a) - otop + div.scrollTop;
-      if (tdiff > 0 || bdiff > 0) div.scrollTop -= tdiff;
+    function updatetoc() {
+        // Set bottom and top to fit within window and not overflow its parent node.
+        var div = toc.getElementsByTagName('DIV')[0];
+        if (pageoffset > getTop(toc)) {
+            addClass(div, 'scroll');
+            div.style.top = '20px';
+            div.style.bottom = Math.max((pageoffset + windowy) - (getHeight(toc.parentNode) + getTop(toc.parentNode)), 20) + 'px';
+        } else removeClass(div, 'scroll');
+        // Remove .active class from toc and find new active toc entry.
+        var a = false;
+        for (var i = 0, t = toc.getElementsByTagName('*'), n = t.length; i < n; i++) {
+            removeClass(t[i], 'active');
+            if (t[i].nodeName === 'A' && t[i].getAttribute('href') === '#' + closer[0].id) a = t[i];
+        }
+        if (a === false) return;
+        // Set .active class on new active toc entry.
+        var nd = a;
+        while (nd.parentNode.nodeName === 'LI' || nd.parentNode.nodeName === 'UL') {
+            addClass(nd, 'active');
+            nd = nd.parentNode;
+        }
+        // Auto-scroll in toc to keep active toc entry visible.
+        var nd = a;
+        var otop = nd.offsetTop;
+        while (nd.offsetParent !== div && nd.offsetParent) {
+            nd = nd.offsetParent;
+            otop += nd.offsetTop;
+        }
+        var bdiff = getHeight(a) + otop - div.scrollTop - getHeight(div);
+        var tdiff = getHeight(a) - otop + div.scrollTop;
+        if (tdiff > 0 || bdiff > 0) div.scrollTop -= tdiff;
     }
     // Update browser url.
-  function updatehistory() {
-      // Don't call window.history if not supported.
-      if (!window.history || !window.history.replaceState) return;
-      // Don't update window url when it doesn't need to be updated.
-      if (new RegExp('#' + closer[0].id + '$').test(window.location.href.toString())) return;
-      // Don't update window url when the window is over the first title in the page.
-      if (pageoffset < first[1]) return;
-      // Don't update window url when page is not loaded, or user just clicked a url.
-      if (!toc.hasAttribute('data-timestamp') || toc.getAttribute('data-timestamp') > new Date().getTime() - 1000) return;
-      window.history.replaceState(null, null, '#' + closer[0].id);
+    function updatehistory() {
+        // Don't call window.history if not supported.
+        if (!window.history || !window.history.replaceState) return;
+        // Don't update window url when it doesn't need to be updated.
+        if (new RegExp('#' + closer[0].id + '$').test(window.location.href.toString())) return;
+        // Don't update window url when the window is over the first title in the page.
+        if (pageoffset < first[1]) return;
+        // Don't update window url when page is not loaded, or user just clicked a url.
+        if (!toc.hasAttribute('data-timestamp') || toc.getAttribute('data-timestamp') > new Date().getTime() - 1000) return;
+        window.history.replaceState(null, null, '#' + closer[0].id);
     }
     // Update the toc when the page stops scrolling.
-  function evtimeout() {
-      toc = document.getElementById('toc');
-      clearTimeout(toc.getAttribute('data-timeout'));
-      toc.setAttribute('data-timeout', setTimeout(init, 1));
+    function evtimeout() {
+        toc = document.getElementById('toc');
+        clearTimeout(toc.getAttribute('data-timeout'));
+        toc.setAttribute('data-timeout', setTimeout(init, 1));
     }
     // Reset timestamp on page load and each time the user clicks a url.
-  function evtimestamp() {
-    toc = document.getElementById('toc');
-    document.getElementById('toc').setAttribute('data-timestamp', new Date().getTime());
-  }
-  addEvent(window, 'scroll', evtimeout);
-  addEvent(window, 'popstate', evtimestamp);
-  addEvent(window, 'load', evtimestamp);
-  init();
+    function evtimestamp() {
+        toc = document.getElementById('toc');
+        document.getElementById('toc').setAttribute('data-timestamp', new Date().getTime());
+    }
+    addEvent(window, 'scroll', evtimeout);
+    addEvent(window, 'popstate', evtimestamp);
+    addEvent(window, 'load', evtimestamp);
+    init();
 }
 
 function updateIssue(e) {

@@ -16,3 +16,10 @@ the page so it runs after all content and CSS has loaded -->
 {% if page.end_of_page %}
   {{page.end_of_page}}
 {% endif %}
+{% comment %}
+<!-- Same as above, but also allows to use end_of_page in
+layout pages -->
+{% endcomment %}
+{% if layout.end_of_page %}
+  {{layout.end_of_page}}
+{% endif %}

@@ -89,14 +89,15 @@ require 'yaml'
             (?![^\[]*\])  ## No subst if key inside [brackets]
             (?![^\{]*\})  ## No subst if key inside {braces}
             (?![^\s]*<!--noref-->)  ## No subst if <!--noref--> after key
-            (?!((?!<pre>).)*(<\/pre>))  ## No subst on a line with a closing pre tag. This 
+            (?!((?!<pre>).)*(<\/pre>))  ## No subst on a line with a closing pre tag. This
                                         ## prevents matching in {% highlight %} code blocks.
-            (?![^\(]*(\.svg|\.png|\.gif))  ## No subst if key inside an image name. This 
-		     ## simple regex has the side effect that we can't
-		     ## use .svg, .png, or .gif in non-image base text; if that
-		     ## becomes an issue, we can devise a more complex
-		     ## regex
+            (?![^\(]*(\.svg|\.png|\.gif))  ## No subst if key inside an image name. This
+             ## simple regex has the side effect that we can't
+             ## use .svg, .png, or .gif in non-image base text; if that
+             ## becomes an issue, we can devise a more complex
+             ## regex
             (?!\w)  ## Don't match inside words
+            (?!.*(<\/h{1-6}>))  ## Don't match inside words
             (?!`)   ## Don't match strings ending with a tic, unless the xref itself ends with a tic
           /xmi) {|s|
               if term[1] == "do not autocrossref"
