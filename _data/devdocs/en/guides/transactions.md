@@ -428,7 +428,7 @@ Signature script: <sig>
 
 [Null data][/en/glossary/null-data-transaction]{:#term-null-data}{:.term}
 transaction type relayed and mined by default in Bitcoin Core 0.9.0 and
-later that adds arbitrary data to a provably unspendable pubkey script
+later that adds arbitrary data to a probably unspendable pubkey script
 that full nodes don't have to store in their UTXO database. It is
 preferable to use null data transactions over transactions that bloat
 the UTXO database because they cannot be automatically pruned; however,
