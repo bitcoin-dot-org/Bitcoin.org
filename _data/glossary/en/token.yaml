@@ -7,7 +7,9 @@ required:
     title_max_40_characters_no_formatting: Token
 
     summary_max_255_characters_no_formatting: >
-        A Token is a programmable digital asset that have their own codebases but exist on underlying blockchains. Can be thought of as public IOUs that facilitates the creation of decentralized applications.
+        A Token is a programmable digital asset that have their own codebases but
+         exist on underlying blockchains. Can be thought of as public IOUs that
+         facilitates the creation of decentralized applications.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
 
