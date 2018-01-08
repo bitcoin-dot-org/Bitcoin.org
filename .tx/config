@@ -1357,6 +1357,12 @@ source_file = .tx/translations/glossary/en/testnet.yaml
 source_lang = en
 type = GITHUBMARKDOWN
 
+[bitcoinorg.glossary-token]
+file_filter = .tx/translations/glossary/<lang>/token.yaml
+source_file = .tx/translations/glossary/en/token.yaml
+source_lang = en
+type = GITHUBMARKDOWN
+
 [bitcoinorg.glossary-transaction-fee]
 file_filter = .tx/translations/glossary/<lang>/transaction-fee.yaml
 source_file = .tx/translations/glossary/en/transaction-fee.yaml
