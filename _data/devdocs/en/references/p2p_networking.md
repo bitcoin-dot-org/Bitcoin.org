@@ -613,7 +613,7 @@ validating that each transaction in the block validly spends existing UTXO set e
 
 The `cmpctblock` message contains a vector of `PrefilledTransaction` whose structure is defined below.
 
-[`PrefilledTransaction`][prefilledtransaction]{:#term-prefilledtransaction}{:.term}
+**[PrefilledTransaction][prefilledtransaction]{:#term-prefilledtransaction}{:.term}**
 
 | Bytes    | Name                 | Data Type        | Description
 |----------|----------------------|------------------|----------------
@@ -626,7 +626,7 @@ relay a block header, the short transactions IDs used for matching
 already-available transactions, and a select few transactions which 
 we expect a peer may be missing.
 
-[`HeaderAndShortIDs`][headerandshortids]{:#term-headerandshortids}{:.term}
+**[HeaderAndShortIDs][headerandshortids]{:#term-headerandshortids}{:.term}**
 
 | Bytes    | Name                 | Data Type              | Description
 |----------|----------------------|------------------------|----------------
@@ -729,7 +729,7 @@ indexes list, in the order requested.
 
 The structure of a `BlockTransactionsRequest` is defined below.
 
-[`BlockTransactionsRequest`][blocktransactionsrequest]{:#term-blocktransactionsrequest}{:.term}
+**[BlockTransactionsRequest][blocktransactionsrequest]{:#term-blocktransactionsrequest}{:.term}**
 
 | Bytes    | Name                 | Data Type              | Description
 |----------|----------------------|------------------------|----------------
@@ -756,7 +756,7 @@ has been reconstructed, it shall be processed as normal, keeping in mind that sh
 are expected to occasionally collide, and that nodes must not be penalized for such collisions, 
 wherever they appear.
 
-[`BlockTransactions`][blocktransactions]{:#term-blocktransactions}{:.term}
+**[BlockTransactions][blocktransactions]{:#term-blocktransactions}{:.term}**
 
 | Bytes    | Name                 | Data Type              | Description
 |----------|----------------------|------------------------|----------------
