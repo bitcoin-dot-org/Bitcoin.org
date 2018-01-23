@@ -71,6 +71,14 @@ message payload:
 '`merchant_data`': pp merchant data
 '`merkleblock` message': merkleblock message
 '`merkleblock` messages': merkleblock message
+'`cmpctblock` message': cmpctblock message
+'`sendcmpct` message': sendcmpct message
+'`getblocktxn` message': getblocktxn message
+'`blocktxn` message': blocktxn message
+'`PrefilledTransaction`': prefilledtransaction
+'`HeaderAndShortIDs`': headerandshortids
+'`BlockTransactionsRequest`': blocktransactionsrequest
+'`BlockTransactions`': blocktransactions
 merge:
 Merge avoidance:
 micropayment channel:
@@ -78,6 +86,10 @@ micropayment channels: micropayment channel
 '`MSG_BLOCK`': msg_block
 '`MSG_FILTERED_BLOCK`': msg_filtered_block
 '`MSG_TX`': msg_tx
+'`MSG_CMPCT_BLOCK`': msg_cmpct_block
+'`MSG_WITNESS_BLOCK`': msg_witness_block
+'`MSG_WITNESS_TX`': msg_witness_tx
+'`MSG_WITNESS_FILTERED_BLOCK`': msg_witness_filtered_block
 multisig p2sh: p2sh multisig
 network:
 '`notfound` message': notfound message
