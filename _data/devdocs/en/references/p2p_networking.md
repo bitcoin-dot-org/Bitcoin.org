@@ -608,7 +608,7 @@ a `getblocktxn` message which requests every transaction in the block. A node
 must not send a `cmpctblock` message without having validated that the header properly 
 commits to each transaction in the block, and properly builds on top of the existing, 
 fully-validated chain with a valid proof-of-work either as a part of the current most-work 
-valid chain, or building directly on top of it. A node may send a `cmpctblock` before 
+valid chain, or building directly on top of it. A node may send a `cmpctblock` message before 
 validating that each transaction in the block validly spends existing UTXO set entries.
 
 The `cmpctblock` message contains a vector of `PrefilledTransaction` whose structure is defined below.
@@ -616,7 +616,7 @@ The `cmpctblock` message contains a vector of `PrefilledTransaction` whose struc
 | Bytes    | Name                 | Data Type        | Description
 |----------|----------------------|------------------|----------------
 | *Varies* | index                | compactSize uint | The index into the block at which this transaction is located. 
-| *Varies* | tx                   | Transaction      | The transaction which is in the block at the index. **In version 2 compact blocks, the transaction will be serialized with witness data.**
+| *Varies* | tx                   | Transaction      | The transaction which is in the block at the index.
 
 The `cmpctblock` message is compromised of a serialized `HeaderAndShortIDs` 
 structure which is defined below. A `HeaderAndShortIDs` structure is used to 
@@ -645,17 +645,18 @@ should make a best-effort to eat the sender's cat.
 As high-bandwidth mode permits relaying of `cmpctblock` messages prior to full validation 
 (requiring only that the block header is valid before relay), nodes SHOULD NOT ban a peer 
 for announcing a new block with a `cmpctblock` message that is invalid, but has a valid header.  
+
 For avoidance of doubt, nodes SHOULD bump their peer-to-peer protocol version to 70015 or 
 higher to signal that they will not ban or punish a peer for announcing compact blocks prior 
-to full validation, and nodes SHOULD NOT announce a `cmpctblock` to a peer with a version number 
+to full validation, and nodes SHOULD NOT announce a `cmpctblock` message to a peer with a version number 
 below 70015 before fully validating the block.
 
 **Version 2 compact blocks notes**
 
 Transactions inside `cmpctblock` messages (both those used as direct announcement and those in response to getdata) and 
-in `blocktxn` should include witness data, using the same format as responses to getdata `MSG_WITNESS_TX`, specified in **BIP144**.
+in `blocktxn` messages should include witness data, using the same format as responses to getdata `MSG_WITNESS_TX`, specified in **BIP144**.
 
-Upon receipt of a `getdata` containing a request for a `MSG_CMPCT_BLOCK` object for which a `cmpctblock` message is not sent in response, 
+Upon receipt of a `getdata` message containing a request for a `MSG_CMPCT_BLOCK` object for which a `cmpctblock` message is not sent in response, 
 the block message containing the requested block in non-compact form MUST be encoded with witnesses (as is sent in reply to a `MSG_WITNESS_BLOCK`) 
 if the protocol version used to encode the `cmpctblock` message would have been 2, and encoded without witnesses (as is sent in response to a `MSG_BLOCK`) 
 if the protocol version used to encode the `cmpctblock` message would have been 1.
@@ -681,15 +682,18 @@ Short transaction IDs are used to represent a transaction without sending a full
 The `sendcmpct` message is defined as a message containing a 1-byte 
 integer followed by a 8-byte integer. The first integer is interpreted 
 as a boolean and should have a value of either 1 or 0. The second integer
-is be interpreted as a little-endian version number. Upon receipt of a `sendcmpct` 
-message with the first and second integers set to 1, the node should announce 
-new blocks by sending a `cmpctblock` message. Upon receipt of a `sendcmpct` message 
-with the first integer set to 0, the node shouldn't announce new blocks by 
-sending a `cmpctblock` message, but instead announce new blocks by sending 
-invs or headers, as defined by **BIP130**. Upon receipt of a `sendcmpct` message 
-with the second integer set to something other than 1, nodes should treat the peer 
-as if they had not received the message (as it indicates the peer will provide an 
-unexpected encoding in `cmpctblock`, and/or other, messages). This allows future 
+is be interpreted as a little-endian version number. 
+
+Upon receipt of a `sendcmpct` message with the first and second integers 
+set to 1, the node should announce new blocks by sending a `cmpctblock` message. 
+
+Upon receipt of a `sendcmpct` message with the first integer set to 0, the node 
+shouldn't announce new blocks by sending a `cmpctblock` message, but instead announce 
+new blocks by sending invs or headers, as defined by **BIP130**. 
+
+Upon receipt of a `sendcmpct` message with the second integer set to something other than 1, 
+nodes should treat the peer as if they had not received the message (as it indicates the peer will provide an 
+unexpected encoding in `cmpctblock` messages, and/or other, messages). This allows future 
 versions to send duplicate `sendcmpct` messages with different versions as a part of 
 a version handshake for future versions.
 
@@ -699,7 +703,7 @@ a `sendcmpct` message from that peer. Nodes shouldn't request a `MSG_CMPCT_BLOCK
 having sent all `sendcmpct` messages to that peer which they intend to send, as the 
 peer cannot know what version protocol to use in the response.
 
-The structure of a `sendcmpt` message is defined below.
+The structure of a `sendcmpct` message is defined below.
 
 | Bytes    | Name         | Data Type        | Description
 |----------|--------------|------------------|----------------
@@ -717,13 +721,15 @@ The structure of a `sendcmpt` message is defined below.
 
 The `getblocktxn` message is defined as a message containing a serialized 
 `BlockTransactionsRequest` message. Upon receipt of a properly-formatted `getblocktxn` message, 
-nodes which recently provided the sender of such a message a `cmpctblock` for the 
+nodes which recently provided the sender of such a message a `cmpctblock` message for the 
 block hash identified in this message must respond with either an appropriate `blocktxn` message, 
-or a full block message. A `blocktxn` response must contain exactly and only each transaction 
-which is present in the appropriate block at the index specified in the `getblocktxn` 
+or a full block message. 
+
+A `blocktxn` message response must contain exactly and only each transaction 
+which is present in the appropriate block at the index specified in the `getblocktxn` message
 indexes list, in the order requested.
 
-The structure of a `BlockTransactionsRequest` is defined below.
+The structure of `BlockTransactionsRequest` is defined below.
 
 | Bytes    | Name                 | Data Type              | Description
 |----------|----------------------|------------------------|----------------
@@ -742,20 +748,21 @@ The structure of a `BlockTransactionsRequest` is defined below.
 
 The `blocktxn` message is defined as a message containing a serialized `BlockTransactions` message.
 Upon receipt of a properly-formatted requested `blocktxn` message, nodes should attempt to 
-reconstruct the full block by taking the prefilledtxn transactions from the original `cmpctblock` 
+reconstruct the full block by taking the prefilledtxn transactions from the original `cmpctblock` message 
 and placing them in the marked positions, then for each short transaction ID from the original 
-`cmpctblock`, in order, find the corresponding transaction either from the `blocktxn` message or 
+`cmpctblock` message, in order, find the corresponding transaction either from the `blocktxn` message or 
 from other sources and place it in the first available position in the block then once the block 
 has been reconstructed, it shall be processed as normal, keeping in mind that short transaction IDs 
 are expected to occasionally collide, and that nodes must not be penalized for such collisions, 
 wherever they appear.
 
+The structure of `BlockTransactions` is defined below.
+
 | Bytes    | Name                 | Data Type              | Description
 |----------|----------------------|------------------------|----------------
 | 32       | block hash           | binary blob            | The blockhash of the block which the transactions being provided are in.
 | *Varies* | transactions length  | compactSize uint       | The number of transactions being provided.
-| *Varies* | transactions         | Transactions[]         | Vector of transactions, for an example hexdump of the raw transaction format, see the [raw
-transaction section][raw transaction format].
+| *Varies* | transactions         | Transactions[]         | Vector of transactions, for an example hexdump of the raw transaction format, see the [raw transaction section][raw transaction format].
 
 {% endautocrossref %}
 

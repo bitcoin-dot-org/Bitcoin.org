@@ -72,13 +72,17 @@ message payload:
 '`merkleblock` message': merkleblock message
 '`merkleblock` messages': merkleblock message
 '`cmpctblock` message': cmpctblock message
+'`cmpctblock` messages': cmpctblock message
 '`sendcmpct` message': sendcmpct message
+'`sendcmpct` messages': sendcmpct message
 '`getblocktxn` message': getblocktxn message
+'`getblocktxn` messages': getblocktxn message
 '`blocktxn` message': blocktxn message
-'`PrefilledTransaction`': prefilledtransaction
-'`HeaderAndShortIDs`': headerandshortids
-'`BlockTransactionsRequest`': blocktransactionsrequest
-'`BlockTransactions`': blocktransactions
+'`blocktxn` messages': blocktxn message
+'`prefilledtransaction`': prefilledtransaction
+'`headerandshortids`': headerandshortids
+'`blocktransactionsrequest`': blocktransactionsrequest
+'`blocktransactions`': blocktransactions
 merge:
 Merge avoidance:
 micropayment channel:
@@ -132,6 +136,7 @@ protocol version 70002: section protocol versions
 protocol version 70012: section protocol versions
 protocol version 70013: section protocol versions
 protocol version 70014: section protocol versions
+protocol version 70015: section protocol versions
 public key infrastructure: pki
 '`r`': r
 receipt:
@@ -195,6 +200,7 @@ BIP125:
 BIP130:
 BIP133:
 BIP141:
+BIP144:
 BIP151:
 BIP152:
 
