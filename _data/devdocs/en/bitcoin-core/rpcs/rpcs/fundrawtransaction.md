@@ -50,7 +50,7 @@ All existing inputs must have their previous output transaction be in the wallet
   p: "Optional<br>(0 or 1)"
   d: "Inputs from watch-only addresses are also considered. The default is `false`"
   
-- n: "→ <br>`lockUnspent`"
+- n: "→ <br>`lockUnspents`"
   t: "bool"
   p: "Optional<br>(0 or 1)"
   d: "The selected outputs are locked after running the rpc call. The default is `false`"
