@@ -31,7 +31,9 @@ into the subpages of the site:
 + Version 2 ([Desktop](https://invis.io/VGFB69IYR#/273185825_12-01-18_Bitcoin-org_Ver2_Desktop_1200px__1) / [Handheld](https://invis.io/TJFC8U3WVK3#/273522832_12-01-18_Bitcoin-org_Ver2__Mobile_320px) / [Tablet](https://invis.io/PXFC8P6MK9W#/273522833_12-01-18_Bitcoin-org_Ver2_Tablet_768px))
 + Version 3 ([Desktop](https://invis.io/6VFF8CB9CJA#/274446152_19-01-18_Bitcoin-org_Ver3_Desktop_1200px) / [Handheld](https://invis.io/SVFG91LJAZ9#/274784637_22-01-18_Bitcoin-org_Ver3__Mobile_320px) / [Tablet](https://invis.io/C6FG9114QGM#/274784638_22-01-18_Bitcoin-org_Ver3_Tablet_768px))
 
-Please help spread the word and choose your favorite design - [voting will be open until 0:00 UTC on Sunday, February 4th](https://dcdt.typeform.com/to/rv9C1j).
+Please help spread the word and choose your favorite design.
+
+[Voting will be open until 0:00 UTC on Sunday, February 4th](https://dcdt.typeform.com/to/rv9C1j).
 
 You can also [view the results](https://dcdt.typeform.com/report/rv9C1j/rZcaOMYTVMaEiLi1).
 
