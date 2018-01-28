@@ -18,15 +18,14 @@ author: |
 
 As one of the most-visited websites in the Bitcoin ecosystem, Bitcoin.org helps
 millions of people each month, learn more about Bitcoin. One of our goals in
-2018, is to modernize the design of the site in an effort to continue to
+2018 is to modernize the design of the site in an effort to continue to
 provide rich content and information to users in an efficient way, as Bitcoin
 technology continues to evolve.
 
-Below are three new homepage design versions we'd like to vote on. Each version
-details what the homepage would look like on a desktop, handheld or tablet
-device. The version that receives the most votes will be selected as the new
-design for Bitcoin.org. It will then be further extended into the subpages of
-the site, with everything going live in the next couple of months.
+Below are three new homepage designs we'd like to vote on. Each version
+shows what the homepage would look like on a desktop, handheld or tablet
+device. The version that receives the most votes will then be further extended
+into the subpages of the site:
 
 + Version 1 ([Desktop](https://invis.io/W6F8UUDPX#/272286353_1-8-18_Bitcoin-org_Ver1_Desktop_1200px) / [Handheld](https://invis.io/BJF8UVJYA#/272475274_1-8-18_Bitcoin-org_Ver1__Mobile_320px) / [Tablet](https://invis.io/MSF8UUNYZ#/272470844_1-8-18_Bitcoin-org_Ver1_Tablet_768px))
 + Version 2 ([Desktop](https://invis.io/VGFB69IYR#/273185825_12-01-18_Bitcoin-org_Ver2_Desktop_1200px__1) / [Handheld](https://invis.io/TJFC8U3WVK3#/273522832_12-01-18_Bitcoin-org_Ver2__Mobile_320px) / [Tablet](https://invis.io/PXFC8P6MK9W#/273522833_12-01-18_Bitcoin-org_Ver2_Tablet_768px))
