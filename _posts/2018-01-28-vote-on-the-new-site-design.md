@@ -33,6 +33,8 @@ into the subpages of the site:
 
 Please help spread the word and choose your favorite design - [voting will be open until 0:00 UTC on Sunday, February 4th](https://dcdt.typeform.com/to/rv9C1j).
 
+You can also [view the results](https://dcdt.typeform.com/report/rv9C1j/rZcaOMYTVMaEiLi1).
+
 ## About Bitcoin.org
 
 Bitcoin.org was originally registered and owned by Satoshi Nakamoto and Martti
