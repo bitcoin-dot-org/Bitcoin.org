@@ -33,9 +33,11 @@ into the subpages of the site:
 
 Please help spread the word and choose your favorite design.
 
-[Voting will be open until 0:00 UTC on Sunday, February 4th](https://dcdt.typeform.com/to/rv9C1j).
+<s>Voting will be open until 0:00 UTC on Sunday, February 4th.</s>
 
-You can also [view the results](https://dcdt.typeform.com/report/rv9C1j/rZcaOMYTVMaEiLi1).
+*Voting has ended* - **the winner is Version 3!**
+
+[View the results](https://dcdt.typeform.com/report/rv9C1j/rZcaOMYTVMaEiLi1).
 
 ## About Bitcoin.org
 
