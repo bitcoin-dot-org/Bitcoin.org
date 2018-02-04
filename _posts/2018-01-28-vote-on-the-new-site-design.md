@@ -33,7 +33,7 @@ into the subpages of the site:
 
 Please help spread the word and choose your favorite design.
 
-~~Voting will be open until 0:00 UTC on Sunday, February 4th.~~
+<s>Voting will be open until 0:00 UTC on Sunday, February 4th.</s>
 
 *Voting has ended* - **the winner is Version 3!**
 
