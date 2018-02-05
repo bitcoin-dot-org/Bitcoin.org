@@ -18,10 +18,10 @@ The `getmempoolancestors` RPC {{summary_getMemPoolAncestors}}
 *Parameter #1---a transaction identifier (TXID)*
 
 {% itemplate ntpd1 %}
-- n: "Address"
-  t: "string"
+- n: "TXID"
+  t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The address whose transactions should be tallied"
+  d: "The TXID of the transaction. The TXID must be encoded as hex in RPC byte order"
 
 {% enditemplate %}
 
