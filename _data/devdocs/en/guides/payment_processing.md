@@ -156,7 +156,7 @@ Bitcoin wallet software defaults to denominating amounts in either bitcoins (BTC
 , millibitcoins (mBTC) or microbitcoins (uBTC, "bits").
 Choosing between each unit is widely supported,
 but other software also lets its users select denomination amounts from
-some preselected or all [possible options](https://en.bitcoin.it/wiki/Units):
+some preselected (e.g. Table below) or all [standard 8 decimal places](https://en.bitcoin.it/wiki/Units):
 
 | Bitcoins    | Unit (Abbreviation) |
 |-------------|---------------------|
