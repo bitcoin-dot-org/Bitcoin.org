@@ -1,75 +1,3 @@
-- date: 2018-01-04
-  title: "USA versus Costanzo - Is Bitcoin Money?"
-  venue: "Courthouse - Room 505"
-  address: "401 West Washington Street"
-  city: "Phoenix"
-  country: "United States"
-  link: "https://www.meetup.com/Article-78-Against-NYDFS/events/245567185/"
-
-- date: 2018-01-06
-  title: "New Year's Cryptoresolutions"
-  venue: "Barley's Biergarten"
-  address: "Pauwstraat 4"
-  city: "Arnhem"
-  country: "The Netherlands"
-  link: "https://www.arnhembitcoinstad.nl"
-
-- date: 2018-01-09
-  title: "Dubai International Blockchain Summit"
-  venue: "Armani Venue"
-  address: "Armani Hotel Burj Khalifa"
-  city: "Dubai"
-  country: "United Arab Emirates"
-  link: "http://www.dibs.ae"
-
-- date: 2018-01-11
-  title: "Decision on the Status of the New York Bitlicense"
-  venue: "Courthouse - Room 308 (Part 34)"
-  address: "80 Centre Street"
-  city: "New York"
-  country: "United States"
-  link: "https://www.meetup.com/Article-78-Against-NYDFS/events/244100380/"
-
-- date: 2018-01-15
-  title: "Blockchain Cruise Asia 2018"
-  venue: "Mariner of The Seas"
-  address: "61 Marina Coastal Drive, 018947"
-  city: "Singapore"
-  country: "Singapore"
-  link: "https://coinsbank.com/cruise-asia"
-
-- date: 2018-01-18
-  title: "The North American Bitcoin Conference"
-  venue: "James L Knight Center"
-  address: "400 SE 2nd Ave, 33131"
-  city: "Miami"
-  country: "United States"
-  link: "https://btcmiami.com"
-
-- date: 2018-01-25
-  title: "Blockchain & Bitcoin Conference Philippines"
-  venue: "Edsa Shangri-La Hotel"
-  address: "Ortigas Centre, Mandaluyong City, 1650"
-  city: "Manila"
-  country: "Philippines"
-  link: "https://philippines.bc.events/"
-
-- date: 2018-02-08
-  title: "Blockchain & Bitcoin Conference Gibraltar"
-  venue: "Sunborn Gibraltar"
-  address: "35 Marina Bay Square"
-  city: "Gibraltar"
-  country: "United Kingdom"
-  link: "https://gibraltar.bc.events/"
-
-- date: 2018-02-13
-  title: "Blockchain & Bitcoin Conference Saint Petersburg"
-  venue: "Park Inn by Radisson"
-  address: "Pulkovskaya, Ploshchad Pobedy, 1"
-  city: "Saint Petersburg"
-  country: "Russia"
-  link: "https://spb.bc.events/"
-
 - date: 2018-02-16
   title: "USA versus Stetkiw: Is Bitcoin Money?"
   venue: "Courthouse"
@@ -102,6 +30,22 @@
   country: "Switzerland"
   link: "https://switzerland.bc.events/"
 
+- date: 2018-02-22
+  title: "Blockchain & Cryptocurrency Con 2018"
+  venue: "Addison Conference & Theatre Centre"
+  address: "15650 Addison Rd., 75001"
+  city: "Addison"
+  country: "United States"
+  link: "https://blockchain-conf.com"
+
+- date: 2018-02-22
+  title: "ICOs, Blockchain and Cryptocurrency"
+  venue: "Circolo del Commercio"
+  address: "Corso Venezia 51"
+  city: "Milan"
+  country: "Italy"
+  link: "http://iusconference.eu/l%27evoluzione-delle-regole-nei-mercati-delle-monete-virtuali-ico-blockchain-e-criptovalute"
+
 - date: 2018-02-24
   title: "Blockchain: Rewiring Governance"
   venue: "University of Cambridge, Judge Business School"
@@ -109,6 +53,22 @@
   city: "Cambridge"
   country: "United Kingdom"
   link: "http://www.blockchaincambridge.com/"
+
+- date: 2018-02-27
+  title: "Blockchain & Bitcoin Conference Belarus"
+  venue: "DoubleTree by Hilton Hotel Minsk"
+  address: "9 Pobediteley Avenue"
+  city: "Minsk"
+  country: "Belarus"
+  link: "https://belarus.bc.events/en"
+
+- date: 2018-02-28
+  title: "Конференция Forbes: Как увеличить стоимость бизнеса с помощью технологии блокчейн"
+  venue: "Центр блокчейн компетенций"
+  address: "2-й Донской пр-д, 9 стр. 3, Москва"
+  city: "Moscow"
+  country: "Russia"
+  link: "http://www.forbes.ru/konferencii/blockchain/"
 
 - date: 2017-03-01
   title: "Blockchain & Bitcoin Conference Turkey"
@@ -126,6 +86,14 @@
   country: "Russia"
   link: "http://ibsmoscow.ru"
 
+- date: 2018-03-06
+  title: "Blockchain & Bitcoin Conference Thailand"
+  venue: "Pullman Bangkok Grande Sukhumvit"
+  address: "30 Soi Sukhumvit 21, Khwaeng Khlong Toei Nuea, Khet Watthana, Krung Thep Maha Nakhon 10110"
+  city: "Bangkok"
+  country: "Thailand"
+  link: "https://thailand.bc.events/"
+
 - date: 2018-03-10
   title: "The Crypto Investor Show"
   venue: "The Queen Elizabeth II Centre"
@@ -133,6 +101,54 @@
   city: "London"
   country: "United Kingdom"
   link: "https://www.cryptoinvestor.show/"
+
+- date: 2018-03-19
+  title: "Blockchain Innovation and Investment Summit"
+  venue: "Ritz Carlton"
+  address: "Gate Village, Difc. off Sheikh Zayed Road"
+  city: "Dubai"
+  country: "United Arab Emirates"
+  link: "https://www.biisummit.com/"
+
+- date: 2018-03-20
+  title: "Token 2049"
+  venue: "Kerry Hotel"
+  address: "38 Hung Luen Rd, Hung Hom, Hong Kong"
+  city: "Hong Kong"
+  country: "China"
+  link: "https://www.token2049.com/"
+
+- date: 2018-03-22
+  title: "Wall Street and The Internet Of Money"
+  venue: "InterContinental New York Times Square"
+  address: "300 West 44th Street, 10036"
+  city: "New York"
+  country: "United States"
+  link: "https://cryptoworldco.com/"
+
+- date: 2018-03-23
+  title: "Blockchain Day Russia"
+  venue: "Hall Mir"
+  address: "Tsvetnoy Boulevard, 11, building 2"
+  city: "Moscow"
+  country: "Russia"
+  link: "http://blockchainday.org/russia"
+
+- date: 2018-03-25
+  title: "Ukrainian Blockchain Day"
+  venue: "NSC Olimpiyskiy Stadium"
+  address: "Velyka Vasylkivska str. 55"
+  city: "Kiev"
+  country: "Ukraine"
+  link: "http://blockchainday.org/en"
+
+- date: 2018-03-27
+  title: "Blockchain Congress Moscow"
+  venue: "World Trade Center Moscow"
+  address: "Krasnopresnenskaya Naberezhnaya, 12, Moskva, Russia, 123610"
+  city: "Moscow"
+  country: "Russia"
+  link: "https://rc.moscow/en"
 
 - date: 2018-03-27
   title: "Blockchain West"
@@ -142,6 +158,46 @@
   country: "United States"
   link: "http://blockchainwest.com/san-francisco-2017/"
 
+- date: 2018-03-28
+  title: "Blockchain & Bitcoin Conference Israel"
+  venue: "InterContinental David"
+  address: "12 Kaufman St., Tel Aviv, 61501"
+  city: "Tel Aviv"
+  country: "Israel"
+  link: "https://israel.bc.events/"
+
+- date: 2018-03-28
+  title: "The Crypto Summit"
+  venue: "Samsung Hall"
+  address: "Hoffnigstrasse 1 Dubendorf, 8600"
+  city: "Zurich"
+  country: "Switzerland"
+  link: "https://cryptosummit.smartvalor.com/crypto-ico-summit-zurich-switzerland-2018/"
+
+- date: 2018-03-29
+  title: "Blockchain & Bitcoin Conference Kyiv"
+  venue: "Parkovy Convention & Exhibition Centre"
+  address: "16a Parkova road"
+  city: "Kiev"
+  country: "Ukraine"
+  link: "https://kiev.bc.events/en"
+
+- date: 2018-04-04
+  title: "CryptoBlockCon"
+  venue: "Hudson Loft"
+  address: "1200 S Hope St, 90015"
+  city: "Los Angeles"
+  country: "United States"
+  link: "http://www.cryptoblockcon.com/"
+
+- date: 2018-04-05
+  title: "Crypto-Confernce Berlin 2018"
+  venue: "Station Berlin"
+  address: "Luckenwalder Str. 4–6, 10963 Berlin"
+  city: "Berlin"
+  country: "Germany"
+  link: "https://crypto-conference.com/"
+
 - date: 2018-04-05
   title: "CoinFestUK 2018"
   venue: "Manchester Conference Centre"
@@ -149,6 +205,38 @@
   city: "Manchester M1 3BB"
   country: "United Kingdom"
   link: "http://coinfestuk.org/"
+
+- date: 2018-04-07
+  title: "Bitcoin Latin Fest"
+  venue: "Bogota Colombia Multiparque"
+  address: "Autopista Norte # 224-60 Costado Oriental, Bogota"
+  city: "Bogota"
+  country: "Colombia"
+  link: "http://www.bitcoinlatinfest.com/"
+
+- date: 2018-04-13
+  title: "University of Texas Blockchain Conference"
+  venue: "University of Texas at Austin - McCombs School of Business"
+  address: "1900 University Ave, 78701"
+  city: "Austin"
+  country: "United States"
+  link: "https://blockchain.mccombs.utexas.edu"
+
+- date: 2018-04-14
+  title: "The London Crypto Currency Show"
+  venue: "Novotel London West"
+  address: "One Shortlands, London W6 8DR"
+  city: "London"
+  country: "United Kingdom"
+  link: "http://www.londoninvestorshow.co.uk/welcome-crypto-currency"
+
+- date: 2018-04-17
+  title: "Blockchain: Interoperability, Scalability, Bitcoin"
+  venue: "Rise London"
+  address: "41 Luke street, Shoreditch EC2A 4DP"
+  city: "London"
+  country: "United Kingdom"
+  link: "https://www.eventbrite.com/e/blockchain-implementation-interoperability-scalability-latest-developments-challenges-tickets-32267817912"
 
 - date: 2018-04-17
   title: "First IEEE Workshop on Blockchain Technologies and Applications"
@@ -166,6 +254,78 @@
   country: "United States"
   link: "http://blockdevcon.com/"
 
+- date: 2018-04-19
+  title: "Global Blockchain Summit 2018"
+  venue: "The Summit Conference and Event Center"
+  address: "411 Sable Blvd., 80011"
+  city: "Aurora"
+  country: "United States"
+  link: "https://globalblockchainsummit.com/"
+
+- date: 2018-04-25
+  title: "Blockchain & Cryptocurrencies"
+  venue: "Reed Smith LLP, New York"
+  address: "599 Lexington Ave., 10022"
+  city: "New York"
+  country: "United States"
+  link: "http://thenycmeetings.com/"
+
+- date: 2018-04-26
+  title: "Blockchain Summit Kyiv 2018"
+  venue: "Concert Hall Oasis"
+  address: "St. Lypkovskoho, 1A, Ultramarine, 3rd floor"
+  city: "Kiev"
+  country: "Ukraine"
+  link: "http://blockchainsummit.com.ua"
+
+- date: 2018-04-30
+  title: "Crypto Invest Summit"
+  venue: "Los Angeles Convention Center"
+  address: "1201 S Figueroa St, 90015"
+  city: "Los Angeles"
+  country: "United States"
+  link: "http://cryptoinvestsummit.io"
+
+- date: 2018-05-03
+  title: "Blockchain Masters 2018"
+  venue: "Resonanzraum"
+  address: "Feldstraße 66"
+  city: "Hamburg"
+  country: "Germany"
+  link: "http://blockchainmasters.rocks"
+
+- date: 2018-05-05
+  title: "State of Digital Money 2018"
+  venue: "Cross Campus Downtown LA"
+  address: "800 Wilshire Blvd, 90017"
+  city: "Los Angeles"
+  country: "United States"
+  link: "http://stateofdigitalmoney.com"
+
+- date: 2018-05-07
+  title: "Blockchain Conference and Awards 2018"
+  venue: "Hotel Ritz Carlton"
+  address: "26 Al Mamsha St Jumeirah Beach Residence, Dubai 26525"
+  city: "Dubai"
+  country: "United Arab Emirates"
+  link: "http://www.blockchainmea.com"
+
+- date: 2018-05-09
+  title: "Blockchain Summit Latam 2018"
+  venue: "CentroParque"
+  address: "Av. Presidente Riesco 5330, Las Condes"
+  city: "Santiago"
+  country: "Chile"
+  link: "http://www.blockchainsummit.la"
+
+- date: 2018-06-02
+  title: "Software Technology for Blockchains, Bitcoin and DLT"
+  venue: "Hotel del Golfo"
+  address: "Via delle Ginestre, 31, 57030 Procchio, Isola d’Elba"
+  city: "Procchio"
+  country: "Italy"
+  link: "https://www.laser-foundation.org/school/"
+
 - date: 2018-06-20
   title: "2018 Crypto Valley Conference on Blockchain Technology"
   venue: "Theater Casino Zug"
@@ -173,3 +333,11 @@
   city: "Zug"
   country: "Switzerland"
   link: "https://www.cryptovalleyconference.com/"
+
+- date: 2018-06-28
+  title: "Distribute 2018 Blockchain Konferenz"
+  venue: "Bucerius Law School"
+  address: "Jungiusstraße 6"
+  city: "Hamburg"
+  country: "Germany"
+  link: "http://www.distribute-conference.com/"
