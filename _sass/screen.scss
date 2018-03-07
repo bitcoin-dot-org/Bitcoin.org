@@ -446,7 +446,8 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .hero {
     padding: 120px 15px 173px;
-    background: #13161F;
+    background: #fff url(../img/hero/hero-bottom.svg) bottom no-repeat;
+    background-size: cover;
 }
 .hero h1 {
     margin-bottom: 20px;
