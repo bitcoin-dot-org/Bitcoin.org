@@ -356,7 +356,7 @@ table td,table th{
     -moz-border-radius:5px;
     border-radius:5px;
 }
-.menusimple li:not(:first-child){
+.menusimple > li:not(:first-child){
     margin-left: 30px;
 }
 .menusimple>li a,
