@@ -502,6 +502,28 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .statusmenu.alert{
     background-image:url(/img/icons/netstatus_alert.svg);
 }
+.card {
+    display: inline-block;
+    width: 31.5%;
+    margin-top: 30px;
+    padding: 40px 30px 0;
+    vertical-align: top;
+    border: 1px solid #DADADA;
+    text-align: center;
+    box-sizing: border-box;
+}
+.card:not(:nth-child(3n+3)) {
+    margin-right: 30px;
+}
+.card h2{
+    min-height: 64px;
+    margin: 20px 0 0;
+    text-align: center;
+}
+.card img{
+    height: 60px;
+    width: 60px;
+}
 
 /*Styles specific to elements in pages*/
 
@@ -760,39 +782,20 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .starttitle a{
     margin:0 20px auto;
 }
-.card {
-    display: inline-block;
-    width: 30.1%;
-    height: 440px;
-    margin-top: 30px;
-    padding: 42px 30px 0;
-    vertical-align: top;
-    border: 1px solid #DADADA;
-    text-align: center;
-    box-sizing: border-box;
-}
-.card:not(:nth-child(3n+3)) {
-    margin-right: 30px;
-}
-.card h2{
-    min-height: 64px;
-    margin: 20px 0 0;
-    text-align: center;
-}
-.card img{
-    height: 60px;
-    width: 60px;
-}
-.card p{
-    margin: 30px 0 0;
-}
 .introlink{
     text-align:center;
     font-size:125%;
     font-weight:bold;
     margin-top:30px;
 }
-
+/* Buy bitcoin page start */
+.buy-card {
+    height: 440px;
+}
+.buy-card p{
+    margin: 30px 0 0;
+}
+/* Buy bitcoin page end */
 .titleicon{
     width:32px;
     height:32px;
@@ -1529,38 +1532,14 @@ button.active {
     color:#aaa;
 }
 
-.resources{
-    text-align:left;
+.resources-card {
+    height: 500px;
 }
-.resources>div{
-    border-top:1px solid #e0e0e0;
+.resources-card p:not(:last-child) {
+    margin: 0 0 5px;
 }
-.resources>div:first-child{
-    border-top:0;
-}
-.resources div div{
-    display:inline-block;
-    width:380px;
-    vertical-align:top;
-    padding:10px 0 25px 0;
-    min-height:200px;
-}
-.resources>div>div:first-child{
-    padding-right:40px;
-    border-right:1px solid #e0e0e0;
-}
-.resources>div>div:first-child+div{
-    padding-left:40px;
-    border-left:1px solid #e0e0e0;
-    margin-left:-1px;
-}
-.resources div div div{
-    display:block;
-    width:auto;
-}
-.resources p{
-    font-size:115%;
-    margin:6px 0;
+.resources-card p:last-child {
+    margin: 0;
 }
 
 .resourcesorg{
