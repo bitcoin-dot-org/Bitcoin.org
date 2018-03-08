@@ -502,9 +502,15 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .statusmenu.alert{
     background-image:url(/img/icons/netstatus_alert.svg);
 }
+
+.card-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .card {
-    display: inline-block;
-    width: 31.5%;
+    float: left;
+    width: 31.6%;
     margin-top: 30px;
     padding: 40px 30px 0;
     vertical-align: top;
@@ -513,16 +519,24 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     box-sizing: border-box;
 }
 .card:not(:nth-child(3n+3)) {
-    margin-right: 30px;
+    margin-right: 2.5%;
+}
+.card img{
+    height: 60px;
+    width: 60px;
 }
 .card h2{
     min-height: 64px;
     margin: 20px 0 0;
     text-align: center;
+    font-size: 137.5%;
+    color: #13161F;
+    font-weight: 600;
 }
-.card img{
-    height: 60px;
-    width: 60px;
+.card p {
+    font-size: 112.5%;
+    color: #9D9D9D;
+    text-align: center;
 }
 
 /*Styles specific to elements in pages*/
@@ -609,30 +623,22 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .mainbutton a:link,
 .mainbutton a:visited,
 .mainbutton a:active{
-    font-family:'Ubuntu', sans-serif;
-    font-weight:400;
-    font-size:150%;
-    text-shadow:0 2px 6px rgba(0,0,0,0.6);
-    text-align:left;
+    font-weight:600;
+    font-size:100%;
     display:inline-block;
-    background-color:#2c6fad;
-    border:1px solid #20598f;
-    background-image:-o-linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
-    background-image:-moz-linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
-    background-image:-webkit-linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
-    background-image:-ms-linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
-    background-image:linear-gradient(bottom, #20598f 14%, #2c6fad 70%);
+    background: #FF9500;
     color:#fff;
-    padding:15px 20px 20px 68px;
-    margin:40px 0 40px 0;
-    -webkit-border-radius:12px;
-    -moz-border-radius:12px;
-    border-radius:12px;
+    padding: 20px 28px;
+    text-transform: uppercase;
+    margin: 50px 0 70px 0;
+    -webkit-border-radius:1px;
+    -moz-border-radius:1px;
+    border-radius:1px;
 }
-.mainbutton a:hover{
-    background-image:none;
-    color:#fff;
-}
+// .mainbutton a:hover{
+//     background-image:none;
+//     color:#fff;
+// }
 .mainbutton img{
     margin-right:10px;
     margin-left:-52px;
