@@ -1532,6 +1532,13 @@ button.active {
     color:#aaa;
 }
 
+/* Bitcoin for individuals page start */
+.individuals-card {
+    height: 500px;
+}
+/* Bitcoin for individuals page end */
+
+/* Resources page start */
 .resources-card {
     height: 500px;
 }
@@ -1541,6 +1548,7 @@ button.active {
 .resources-card p:last-child {
     margin: 0;
 }
+/* Resources page end */
 
 .resourcesorg{
     margin-bottom:40px;
