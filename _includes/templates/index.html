@@ -1,20 +1,172 @@
-{% comment %}
-This file is licensed under the MIT License (MIT) available on
-http://opensource.org/licenses/MIT.
-{% endcomment %}
+{% comment %} This file is licensed under the MIT License (MIT) available on http://opensource.org/licenses/MIT. {% endcomment
+%}
 
-<p class="mainsummary">{% translate listintro %}</p>
-<div class="mainvideo"><div onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/{% if page.lang == 'ro' %}JPNwbWu0tMQ{% else %}Gc2en3nHxA4{% endif %}?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1{% if page.lang != 'en' %}&amp;cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}">
-  <img src="/img/video/video_wuc.jpg" alt="Youtube video">
-  <div class="mainvideoicon"></div>
-  <div class="mainvideoiconhover"></div>
-</div></div>
-<div class="mainlist">
-  <div><div><img src="/img/icons/main_ico_instant.svg" alt="Icon"><div>{% translate list1 %}</div></div></div>
-  <div><div><img src="/img/icons/main_ico_worldwide.svg" alt="Icon"><div>{% translate list2 %}</div></div></div>
-  <div><div><img src="/img/icons/ico_lock.svg" alt="Icon"><div>{% translate list3 %}</div></div></div>
+<div class="mainhero">
+  <div class="container">
+    <p class="mainsummary">{% translate listintro %}</p>
+    <div class="btn-container">
+      <a class="btn btn-bright" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
+      <a class="btn btn-light" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate choosebut getting-started %}</a>
+    </div>
+  </div>
 </div>
-<p class="maindesc">{% translate desc %}</p>
-<div class="mainbutton"><a href="/{{ page.lang }}/{% translate getting-started url %}"><img src="/img/icons/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>
-<div class="mainoverview">{% translate overview %}</div>
-<div class="mainoverviews"><a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a> <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a> <a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a></div>
+<!-- <div class="mainvideo">
+  <div onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/{% if page.lang == 'ro' %}JPNwbWu0tMQ{% else %}Gc2en3nHxA4{% endif %}?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1{% if page.lang != 'en' %}&amp;cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}">
+    <img src="/img/video/video_wuc.jpg" alt="Youtube video">
+    <div class="mainvideoicon"></div>
+    <div class="mainvideoiconhover"></div>
+  </div>
+</div> -->
+<div class="mainoverview">
+  <div class="container">
+    <div class="mainoverview-title">{% translate overview %}</div>
+    <div class="maincard">
+      <img class="maincard-img" src="/img/icons/ico_individuals.svg" alt="Icon">
+      <div>
+        <p class="maincard-title">{% translate menu-bitcoin-for-individuals layout %}</p>
+        <a class="maincard-link" href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate learn-more layout %}</a>
+      </div>
+    </div>
+    <div class="maincard">
+      <img class="maincard-img" src="/img/icons/ico_business.svg" alt="Icon">
+      <div>
+        <p class="maincard-title">{% translate menu-bitcoin-for-businesses layout %}</p>
+        <a class="maincard-link" href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate learn-more layout %}</a>
+      </div>
+      </div>
+    <div class="maincard">
+      <img class="maincard-img" src="/img/icons/ico_developers.svg" alt="Icon">
+      <div>
+        <p class="maincard-title">{% translate menu-bitcoin-for-developers layout %}</p>
+        <a class="maincard-link" href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate learn-more layout %}</a>
+      </div>
+    </div>
+  </div>
+  <a class="btn-down" href="#maindesc-title">
+    <img src="/img/icons/ico_arrow_down.svg" alt="Link">
+  </a>
+</div>
+<div class="maindesc">
+  <div class="container">
+    <h2 class="section-title" id="maindesc-title">{% translate getstarted layout %}</h2>
+    <div class="row maindesc-row">
+      <div>
+        <p class="maindesc-text">{% translate desc %}</p>
+        <ul class="mainlist">
+          
+            <li class="mainlist-item">
+              <img src="/img/icons/main_ico_instant.svg" alt="Icon">
+              <div>{% translate list1 %}</div>
+            </li>
+          
+          
+            <li class="mainlist-item">
+              <img src="/img/icons/main_ico_worldwide.svg" alt="Icon">
+              <div>{% translate list2 %}</div>
+            </li>
+          
+          
+            <li class="mainlist-item">
+              <img src="/img/icons/main_ico_lowfee.svg" alt="Icon">
+              <div>{% translate list3 %}</div>
+            </li>
+          
+        </ul>
+      </div>
+      <img class="maindesc-img" src="/img/home/bitcoin-img.svg" alt="Bitcoin image">
+    </div>
+    <div class="btn-container">
+      <a class="btn btn-dark" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <hr>
+</div>
+
+<div class="recommendation">
+  <div class="container">
+    <h2 class="section-title">{% translate recomendation layout %}</h2>
+    <p class="recommendation-text">{% translate pagedesc choose-your-wallet %}</p>
+    <div class="row recommendation-row">
+      <div class="recommendation-card">
+        <div>
+          <img class="wallet-icon" src="/img/icons/ico_bitcoin_core.svg" alt="Bitcoin core">
+        </div>
+        <div>
+          <p class="wallet-name">{% translate bitcoin-core layout %}</p>
+          <div>
+            <img class="platform-icon" src="/img/icons/ico_windows.svg" alt="Windows">
+            <img class="platform-icon" src="/img/icons/ico_apple.svg" alt="Apple">
+            <img class="platform-icon" src="/img/icons/ico_linux.svg" alt="Linux">
+          </div>
+        </div>
+      </div>
+      <div class="recommendation-card">
+        <div>
+          <img class="wallet-icon" src="/img/icons/ico_lock_black.svg" alt="Trezor">
+        </div>
+        <div>
+          <p class="wallet-name">Trezor</p>
+          <div>
+            <img class="platform-icon" src="/img/icons/ico_lock_black_small.svg" alt="Lock icon">
+          </div>
+        </div>
+      </div>
+      <div class="recommendation-card">
+        <div>
+          <img class="wallet-icon" src="/img/icons/ico_airbitz.svg" alt="Airbitz">
+        </div>
+        <div>
+          <p class="wallet-name">Airbitz</p>
+          <div>
+            <img class="platform-icon" src="/img/icons/ico_android.svg" alt="Android icon">
+            <img class="platform-icon" src="/img/icons/ico_ios.svg" alt="IOS icon">
+          </div>
+        </div>
+      </div>
+      <div class="recommendation-card">
+        <div>
+          <img class="wallet-icon" src="/img/icons/ico_bitgo.svg" alt="BitGo">
+        </div>
+        <div>
+          <p class="wallet-name">BitGo</p>
+          <div>
+            <img class="platform-icon" src="/img/icons/ico_globe.svg" alt="Globe icon">
+          </div>
+        </div>
+      </div>
+      <div class="recommendation-card">
+        <div>
+          <img class="wallet-icon" src="/img/icons/ico_breadwallet.svg" alt="Breadwallet">
+        </div>
+        <div>
+          <p class="wallet-name">Breadwallet</p>
+          <div>
+            <img class="platform-icon" src="/img/icons/ico_android.svg" alt="Android icon">
+            <img class="platform-icon" src="/img/icons/ico_ios.svg" alt="IOS icon">
+          </div>
+        </div>
+      </div>
+      <div class="recommendation-card">
+        <div>
+          <img class="wallet-icon" src="/img/icons/ico_electrum.svg" alt="Electrum">
+        </div>
+        <div>
+          <p class="wallet-name">Electrum</p>
+          <div>
+            <img class="platform-icon" src="/img/icons/ico_windows.svg" alt="Windows">
+            <img class="platform-icon" src="/img/icons/ico_apple.svg" alt="Apple">
+            <img class="platform-icon" src="/img/icons/ico_linux.svg" alt="Linux">
+            <img class="platform-icon" src="/img/icons/ico_android.svg" alt="Android icon">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="btn-container">
+      <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}" class="btn btn-dark">{% translate choosebut getting-started %}</a>
+    </div>
+  </div>
+</div>

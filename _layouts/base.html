@@ -18,20 +18,24 @@
 {% include layout/base/pagetop-alert.html %}
 
 <div class="head"><div>
-  {% include layout/base/head-language-dropdown.html %}
-  {% include layout/base/head-mobile-menu.html %}
   {% include layout/base/head-logo.html %}
-  {% include layout/base/head-language-select.html %}
   {% include layout/base/head-menu.html %}
+  {% include layout/base/head-mobile-menu.html %}
+  {% include layout/base/head-btc-currency.html %}
+  {% include layout/base/head-language-dropdown.html %}
+  {% include layout/base/head-language-select.html %}
 </div></div>
 
 <div class="body">
   {% include layout/base/breadcrumbs.html %}
   {% include layout/base/content.html %}
   <div class="footer">
-    {% include layout/base/footer-menu.html %}
-    {% include layout/base/footer-sponsor.html %}
-    {% include layout/base/footer-license.html %}
+    <div class="container">
+       {% include layout/base/footer-logo.html %} 
+       {% include layout/base/footer-menu.html %} 
+       {% include layout/base/footer-sponsor.html %}
+       {% include layout/base/footer-license.html %}
+    </div>
   </div>
 </div>
 

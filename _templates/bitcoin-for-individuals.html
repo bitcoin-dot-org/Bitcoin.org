@@ -13,43 +13,45 @@ id: bitcoin-for-individuals
 </div>
 
 <div class="container">
-  <div class="card individuals-card">
-    <img src="/img/icons/ico_mobile.svg" alt="Icon" />
-    <h2 id="mobile">{% translate mobile %}</h2>
-    <p>{% translate mobiletext %}</p>
+  <div class="row card-row">
+    <div class="card individuals-card">
+      <img src="/img/icons/ico_mobile.svg" alt="Icon" />
+      <h2 id="mobile">{% translate mobile %}</h2>
+      <p>{% translate mobiletext %}</p>
+    </div>
+    
+    <div class="card individuals-card">
+      <img src="/img/icons/ico_lock.svg" alt="Icon" />
+      <h2 id="secure">{% translate secure %}</h2>
+      <p>{% translate securetext %}</p>
+    </div>
+    
+    <div class="card individuals-card">
+      <img src="/img/icons/ico_simple.svg" alt="Icon" />
+      <h2 id="simple">{% translate simple %}</h2>
+      <p>{% translate simpletext %}</p>
+    </div>
+    
+    <div class="card individuals-card">
+      <img src="/img/icons/ico_international.svg" alt="Icon" />
+      <h2 id="international">{% translate international %}</h2>
+      <p>{% translate internationaltext %}</p>
+    </div>
+    
+    <div class="card individuals-card">
+      <img src="/img/icons/ico_lowfee.svg" alt="Icon" />
+      <h2 id="lowfee">{% translate lowfee %}</h2>
+      <p>{% translate lowfeetext %}</p>
+    </div>
+    
+    <div class="card individuals-card">
+      <img src="/img/icons/ico_anon.svg" alt="Icon" />
+      <h2 id="anonymous">{% translate anonymous %}</h2>
+      <p>{% translate anonymoustext %}</p>
+    </div>
   </div>
   
-  <div class="card individuals-card">
-    <img src="/img/icons/ico_lock.svg" alt="Icon" />
-    <h2 id="secure">{% translate secure %}</h2>
-    <p>{% translate securetext %}</p>
-  </div>
-  
-  <div class="card individuals-card">
-    <img src="/img/icons/ico_simple.svg" alt="Icon" />
-    <h2 id="simple">{% translate simple %}</h2>
-    <p>{% translate simpletext %}</p>
-  </div>
-  
-  <div class="card individuals-card">
-    <img src="/img/icons/ico_international.svg" alt="Icon" />
-    <h2 id="international">{% translate international %}</h2>
-    <p>{% translate internationaltext %}</p>
-  </div>
-  
-  <div class="card individuals-card">
-    <img src="/img/icons/ico_lowfee.svg" alt="Icon" />
-    <h2 id="lowfee">{% translate lowfee %}</h2>
-    <p>{% translate lowfeetext %}</p>
-  </div>
-  
-  <div class="card individuals-card">
-    <img src="/img/icons/ico_anon.svg" alt="Icon" />
-    <h2 id="anonymous">{% translate anonymous %}</h2>
-    <p>{% translate anonymoustext %}</p>
-  </div>
-  
-  <div class="mainbutton">
-    <a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
+  <div class="btn-container">
+    <a class="btn btn-bright" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
   </div>
 </div>
