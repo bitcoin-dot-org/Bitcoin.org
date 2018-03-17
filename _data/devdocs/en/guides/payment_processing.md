@@ -153,9 +153,10 @@ You must pay by: 2014-04-01 at 23:00 UTC
 
 Indicating the denomination is critical. As of this writing, popular
 Bitcoin wallet software defaults to denominating amounts in either bitcoins (BTC)
-, millibitcoins (mBTC) or microbitcoins (uBTC, "bits"). Choosing between each unit is widely supported,
+, millibitcoins (mBTC) or microbitcoins (uBTC, "bits").
+Choosing between each unit is widely supported,
 but other software also lets its users select denomination amounts from
-some or all of the following options:
+some preselected (e.g. Table below) or all [standard 8 decimal places](https://en.bitcoin.it/wiki/Units):
 
 | Bitcoins    | Unit (Abbreviation) |
 |-------------|---------------------|
@@ -163,6 +164,7 @@ some or all of the following options:
 | 0.01        | bitcent (cBTC)      |
 | 0.001       | millibitcoin (mBTC) |
 | 0.000001    | microbitcoin (uBTC, "bits") |
+| 0.0000001   | finney              |
 | 0.00000001  | satoshi             |
 
 {% endautocrossref %}
