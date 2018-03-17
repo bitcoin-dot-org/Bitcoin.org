@@ -83,6 +83,11 @@ The `getblockheader` RPC {{summary_getBlockHeader}}
   p: "Required<br>(exactly 1)"
   d: "The merkle root for this block, encoded as hex in RPC byte order"
 
+- n: "→<br>`time`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The value of the time field in the block header, indicating approximately when the block was created"
+
 - n: "→<br>`mediantime`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
