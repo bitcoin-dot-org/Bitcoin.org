@@ -3,4 +3,11 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="footerlicense">© Bitcoin Project 2009-{{ site.time | date: '%Y' }} {% translate footer layout %}</div>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="row footer-bottom-row">
+      <div class="footerlicense">© Bitcoin Project 2009-{{ site.time | date: '%Y' }} {% translate footer layout %}</div>
+      <a href="/en/alerts" class="statusmenu{% if site.STATUS == 1 %} alert{% endif %}">Network Status</a>
+    </div>
+  </div>
+</div>

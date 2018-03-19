@@ -145,46 +145,6 @@ hr {
     font-weight: normal;
     font-style: italic;
 }
-@font-face{
-    font-family:'Ubuntu';
-    src:url('/font/ubuntu/ubuntu-r-webfont.eot');
-    src:url('/font/ubuntu/ubuntu-r-webfont.eot?iefix') format('eot'),
-    url('/font/ubuntu/ubuntu-r-webfont.woff') format('woff'),
-    url('/font/ubuntu/ubuntu-r-webfont.ttf') format('truetype'),
-    url('/font/ubuntu/ubuntu-r-webfont.svg') format('svg');
-    font-weight:300;
-    font-style:normal;
-}
-@font-face{
-    font-family:'Ubuntu';
-    src:url('/font/ubuntu/ubuntu-ri-webfont.eot');
-    src:url('/font/ubuntu/ubuntu-ri-webfont.eot?iefix') format('eot'),
-    url('/font/ubuntu/ubuntu-ri-webfont.woff') format('woff'),
-    url('/font/ubuntu/ubuntu-ri-webfont.ttf') format('truetype'),
-    url('/font/ubuntu/ubuntu-ri-webfont.svg') format('svg');
-    font-weight:300;
-    font-style:italic;
-}
-@font-face{
-    font-family:'Ubuntu';
-    src:url('/font/ubuntu/ubuntu-b-webfont.eot');
-    src:url('/font/ubuntu/ubuntu-b-webfont.eot?iefix') format('eot'),
-    url('/font/ubuntu/ubuntu-b-webfont.woff') format('woff'),
-    url('/font/ubuntu/ubuntu-b-webfont.ttf') format('truetype'),
-    url('/font/ubuntu/ubuntu-b-webfont.svg') format('svg');
-    font-weight:700;
-    font-style:normal;
-}
-@font-face{
-    font-family:'Ubuntu';
-    src:url('/font/ubuntu/ubuntu-bi-webfont.eot');
-    src:url('/font/ubuntu/ubuntu-bi-webfont.eot?iefix') format('eot'),
-    url('/font/ubuntu/ubuntu-bi-webfont.woff') format('woff'),
-    url('/font/ubuntu/ubuntu-bi-webfont.ttf') format('truetype'),
-    url('/font/ubuntu/ubuntu-bi-webfont.svg') format('svg');
-    font-weight:700;
-    font-style:italic;
-}
 .container {
     max-width: 1230px;
     padding: 0 30px;
@@ -494,6 +454,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .footer {
     padding-top: 60px;
     text-align: left;
+    color: #9D9D9D;
     background: #13161f url(../img/hero/footer-bg.svg) top no-repeat;
 }
 .logo-footer {
@@ -519,20 +480,44 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     background: #F7931A;
     border-radius: 1px;
 }
+.donate-text {
+    margin-top: 5px;
+}
+.donate-link {
+    display: block;
+    margin-top: 5px;
+}
 .footer-title {
     font-size: 100%;
     color: #FFFFFF;
     text-align: left;
     line-height: 52px;
+    font-weight: 600;
 }
-.footermenu{
-    position:relative;
-    padding:0 0 20px 0;
-    font-size:94%;
+.footermenu {
+    justify-content: space-between;
+    max-width: 665px;
+    width: 100%;
 }
-.footermenu a{
-    margin-right:15px;
-    white-space:nowrap;
+.footermenu-title {
+    margin-bottom: 7px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #FFFFFF;
+}
+.footermenu-list{
+    margin: 0;
+    padding: 0;
+}
+.footermenu li{
+    margin: 0;
+    list-style: none;
+}
+.footermenu a {
+    display: block;
+    font-size: 106.25%;
+    line-height: 34px;
+    color: inherit;
 }
 .footersponsor div{
     display:inline-block;
@@ -555,11 +540,20 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     width:245px;
     height:18px;
 }
-.footerlicense{
-    font-size:94%;
-    padding-bottom:20px;
+.footer-bottom {
+    margin-top: 55px;
+    padding: 25px 0;
+    background: #090C14;
 }
-
+.footer-bottom-row {
+    justify-content: space-between;
+}
+.footerlicense a{
+    color: inherit;
+}
+.statusmenu {
+    color: inherit;
+}
 .statusmenu{
     display:inline-block;
     padding-left:20px;
@@ -865,6 +859,23 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .maincard-link {
     font-size: 100%;
     color: #9D9D9D;
+}
+.startbar {
+    justify-content: center;
+    border-bottom: 1px solid #e1e1e1;
+}
+.startbar-link {
+    position: relative;
+    top: 1px;
+    padding: 22px 33px;
+    color: #9D9D9D;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.startbar-link:hover {
+    padding: 22px 33px 19px;
+    color: #FF7E00;
+    border-bottom: 3px solid #FF7E00;
 }
 .starttitle{
     margin:70px 0 50px;
@@ -2324,6 +2335,26 @@ h2 .rssicon{
 
 /*Styles specific to mobiles*/
 
+@media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 67.5em ){
+    .footer {
+        padding-top: 100px;
+    }
+    .logo-footer {
+        margin-bottom: 65px;
+    }
+    .footer-row {
+        flex-direction: column;
+    }
+    .donate {
+        margin-bottom: 65px;
+    }
+    .footermenu {
+        max-width: 100%;
+    }
+    .footer-bottom {
+        margin-top: 75px
+    }
+}
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ){
     img{
         max-width:100%;
@@ -2894,6 +2925,9 @@ h2 .rssicon{
     }
     .btn:not(:first-child) {
         margin: 10px auto 0;
+    }
+    .startbar {
+        display: none;
     }
 }
 
