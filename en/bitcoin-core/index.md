@@ -17,7 +17,14 @@ breadcrumbs:
 # Bitcoin Core
 {:.not-displayed}
 
-![Bitcoin Core: Helping You Keep Bitcoin Decentralized](/img/bitcoin-core/en-big-logo.svg)
+<!-- ![Bitcoin Core: Helping You Keep Bitcoin Decentralized](/img/bitcoin-core/en-big-logo.svg) -->
+
+<div class="hero">
+  <div class="container">
+    <h1>Bitcoin Core</h1>
+    <p class="summary">Helping you keep Bitcoin decentralized.</p>
+  </div>
+</div>
 
 <br class="clear">
 {% include bitcoin-core/download-bitcoin-core.html %}

@@ -426,7 +426,12 @@ hr {
 }
 .breadcrumbs {
     font-size: 75%;
-    padding-left: 10px;
+    background: #13161f;
+    color: #929396;
+    font-size: 81.25%;
+}
+.breadcrumbs a {
+    color: inherit;
 }
 .content{
     position:relative;
@@ -486,6 +491,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .donate-link {
     display: block;
     margin-top: 5px;
+    text-decoration: underline;
 }
 .footer-title {
     font-size: 100%;
