@@ -26,11 +26,11 @@ breadcrumbs:
   </div>
 </div>
 
-<br class="clear">
-{% include bitcoin-core/download-bitcoin-core.html %}
-<br class="clear">
+<div class="container clearfix">
+<div class="core-column-left">{% include bitcoin-core/download-bitcoin-core.html %}</div>
 
-<div class="show_less_more">
+
+<div class="show_less_more core-column-right">
   <div class="show_less" markdown="block">
   Bitcoin Core is programmed to decide which block chain contains
   valid transactions. The users of Bitcoin Core only accept
@@ -39,57 +39,51 @@ breadcrumbs:
   </div>
 
   <div class="show_more" markdown="block">
-  It is these users who <b>keep Bitcoin decentralized.</b> They
-  individually run their own Bitcoin Core full nodes, and each of
-  those full nodes separately follows the exact same rules to decide
-  which block chain is valid.
+  <div class="row show_more-row">
+    <div class="show_more-block">
+      <img class="show_more-icon" src="/img/bitcoin-core/decentralized.svg" alt="icon">
+      <p class="show_more-title">Decentralized</p>
+      <p>
+      It is these users who keep Bitcoin decentralized. They
+      individually run their own Bitcoin Core full nodes, and each of
+      those full nodes separately follows the exact same rules to decide
+      which block chain is valid.
+      </p>
+    </div>
+    <div class="show_more-block">
+      <img class="show_more-icon" src="/img/bitcoin-core/no_voting.svg" alt="icon">
+      <p class="show_more-title">No Voting</p>
+      <p>
+      There's no voting or other corruptible process involved: there's
+      just individual software following identical rules—"math"—to
+      evaluate identical blocks and coming to identical conclusions
+      about which block chain is valid.
+      </p>
+    </div>
+  </div>
 
-  There's no voting or other corruptible process involved: there's
-  just individual software following identical rules—"math"—to
-  evaluate identical blocks and coming to identical conclusions
-  about which block chain is valid.
+  <p>
+  This shared agreement (called consensus) allows people like you to only accept valid bitcoins, enforcing Bitcoin's rules against even the most powerful miners.In addition to improving Bitcoin's decentralization, Bitcoin Core users get:
+  </p>
+  
+  <div class="show_more-list" markdown="block">
 
-  This shared agreement (called consensus) allows people like you to
-  only accept valid bitcoins, <b>enforcing Bitcoin's rules</b> against
-  even the most powerful miners.
+  - <span>[Better security][bcc validation] for their bitcoins</span>
+  - <span>[Privacy features][bcc privacy] not available in other wallets</span>
+  - <span>Choice of [user interfaces][bcc user interface]</span>
 
-  In addition to improving Bitcoin's decentralization, Bitcoin Core users get
-  [better security][bcc validation]
-  for their bitcoins,
-  [privacy features][bcc privacy]
-  not available in other wallets, a choice of
-  [user interfaces][bcc user interface]
-  and several other powerful features.
+  and several other powerful features
+
+  </div>
   </div>
 
   <p class="center"><button class="toggle_show_more_less js not-displayed"><span class="fa fa-caret-down"></span> Read more</button></p>
-
 </div>
+<hr class="bitcoin-core-separator">
 
-<br>
+<div class="core-column-right" markdown="block">
 
-<div markdown="block" class="two-column-list">
-{:.fa-ul}
-- <span class="fa-li fa fa-download fa-2x"></span>
-  <b>[Download][bcc download]</b><br
-  >Download Bitcoin Core&nbsp;{{ site.DOWNLOAD_VERSION }}
-
-- <span class="fa-li fa fa-rocket fa-2x"></span>
-  <b>[Features][bcc features]</b><br
-  >Discover what Bitcoin Core offers
-
-- <span class="fa-li fa fa-question fa-2x"></span>
-  <b>[Get help][bcc help]</b><br
-  >Documentation, forums, chat rooms
-
-- <span class="fa-li fa fa-code-fork fa-2x"></span>
-  <b>[Contribute][bcc contribute]</b><br
-  >Code, translations, and more
-</div>
-
-<br class="clear">
-
-### News
+<h2 id="news" class="section-title news-title">News</h2>
 
 {% comment %}<!-- Capture all the releases into a string and convert it to an array -->{% endcomment %}
 {% capture text_releases %}
@@ -107,12 +101,27 @@ breadcrumbs:
  {% endif %}
 {% endfor %}
 
-For more news, see the complete list of [Bitcoin Core releases][bcc
-version history]. For notifications of new releases, <a
-type="application/rss+xml" href="/en/rss/releases.rss">subscribe to the
-RSS feed</a>.
+</div>
 
-<br class="clear">
+<div>
+  <div class="corecard features-card" markdown="block">
+  [Features][bcc features]
+  Discover what Bitcoin Core offers
+  </div>
+
+  <div class="corecard help-card" markdown="block">
+  [Get help][bcc help]
+  Documentation, forums, chat rooms
+  </div>
+  
+  <div class="corecard contribute-card" markdown="block">
+  [Contribute][bcc contribute]
+  Code, translations, and more
+  </div>
+</div>
+  
+</div>
+
 
 <script>
 if ( $( window ).width() > 400 && $( window ).height() > 600 ) {

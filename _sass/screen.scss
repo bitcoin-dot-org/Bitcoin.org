@@ -155,10 +155,8 @@ hr {
     display: flex;
 }
 .section-title {
-    margin: 0 0 50px;
     font-size: 162.5%;
     font-weight: normal;
-    text-align: center;
     color: #FF7E00;
 }
 .banner-message,
@@ -1592,11 +1590,133 @@ button.active {
 }
 
 .callout {
-        text-align: center;
-        border-top: thin solid #C0C0C0;
-        border-bottom: thin solid #C0C0C0;
+    max-width: 272px;
 }
-
+.callout-btn {
+    display: block;
+    width: 270px;
+    height: 55px;
+    background: #F7931A;
+    border-radius: 1px;
+    font-size: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 52px;
+    text-transform: uppercase;
+}
+.callout-img {
+    width: 15px;
+}
+.callout-img:not(:first-child) {
+    margin-left: 12px;
+}
+.callout-row {
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.show_less {
+    margin-bottom: 50px;
+}
+.show_less_more {
+    margin-bottom: 70px;
+}
+.show_less_more p {
+    font-size: 125%;
+    color: #4D5060;
+    line-height: 34px;
+}
+.show_more-row {
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+.show_more-block {
+    max-width: 370px
+}
+.show_more-icon {
+    width: 30px;
+    margin-bottom: 20px;
+}
+.show_more-title {
+    margin-bottom: 20px;
+    font-size: 137.5%;
+    color: #13161F;
+    line-height: 36px;
+}
+.show_more-list ul {
+    margin: 23px 0 0;
+}
+.show_more-list li {
+    margin: 0 0 10px;
+    color: #FF9500;
+}
+.show_more-list a {
+    color: inherit;
+}
+.show_more-list span {
+    font-size: 125%;
+    color: #4D5060;
+    line-height: 34px;
+}
+.news-title {
+    margin: 0 0 28px;
+}
+.core-column-left {
+    float: left;
+    max-width: 272px;
+}
+.core-column-right {
+    float: right;
+    width: 70%;
+}
+.corecard {
+    position: relative;
+    padding: 15px 20px 15px 70px;
+    margin-bottom: 5px;
+    width: 270px;
+    height: 120px;
+    text-align: left;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+}
+.corecard a {
+    display: block;
+    font-size: 106.25%;
+    color: #13161F;
+    line-height: 30px;
+    font-weight: 600;
+}
+.features-card::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/bitcoin-core/features.svg) 50% 50% no-repeat;
+}
+.help-card::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/bitcoin-core/help.svg) 50% 50% no-repeat;
+}
+.contribute-card::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/bitcoin-core/contribute.svg) 50% 50% no-repeat;
+}
+.bitcoin-core-separator {
+    height: 1px;
+    margin: 0 0 70px;
+    background: #dfdfdf;
+}
 .wallet_accordion img {
         float: left;
         padding-right: 30px;
