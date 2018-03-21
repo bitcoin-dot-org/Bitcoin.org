@@ -2854,11 +2854,12 @@ h2 .rssicon{
     }
     .show_more-row {
         flex-direction: column;
+        margin-bottom: 0;
     }
     .show_more-block {
         width: 100%;
     }
-    .show_more-block:first-child {
+    .show_more-block {
         margin-bottom: 50px;
     }
     .show_more-block .show_more-title {
@@ -2883,6 +2884,10 @@ h2 .rssicon{
         margin: 0 0 11px;
         text-align: left;
         font-size: 125%;
+    }
+    .news-list a {
+        font-size: 112.5%;
+        line-height: 30px;
     }
     .download{
         text-align:left;
@@ -3110,6 +3115,73 @@ h2 .rssicon{
     }
 }
 
+@media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ){
+    .core-content {
+        margin: 20px auto 40px;
+    }
+    .core-column-right,
+    .core-column-left {
+        float: none;
+        width: 100%;
+    }
+    .core-column-right {
+        padding-left: 0;
+        border-left: none;
+    }
+    .core-column-left {
+        margin: 0 auto;
+        max-width: 290px;
+    }
+    .callout {
+        width: 100%;
+    }
+    .callout-btn {
+        width: 100%;
+    }
+    .callout-separator {
+        margin: 30px 0 30px;
+    }
+    .corecard {
+        width: 100%;
+    }
+    .show_less_more {
+        padding-bottom: 30px;
+    }
+    .show_less_more p {
+        font-size: 112.5%;
+        text-align: center;
+    }
+    .show_less {
+        margin-bottom: 30px;
+    }
+    .show_more-block {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .show_more-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .show_more-list ul {
+        margin: 30px 0 0;
+    }
+    .show_more-list span {
+        font-size: 112.5%;
+    }
+    .show_more-list p {
+        text-align: left;
+    }
+    .core-separator {
+        margin: 25px 0;
+    }
+    .news-block {
+        padding-bottom: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
     p {
         line-height: 1.7em;
