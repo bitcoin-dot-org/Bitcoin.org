@@ -159,6 +159,10 @@ hr {
     font-weight: normal;
     color: #FF7E00;
 }
+.separator {
+    height: 1px;
+    background: #dfdfdf;
+}
 .banner-message,
 .banner-message a,
 .banner-message a:link,
@@ -1614,16 +1618,23 @@ button.active {
     justify-content: space-between;
     margin-top: 10px;
 }
+.callout-text {
+    color: #9D9D9D;
+}
+.callout-separator {
+    margin: 44px 0 20px;
+}
 .show_less {
     margin-bottom: 50px;
 }
 .show_less_more {
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 .show_less_more p {
     font-size: 125%;
     color: #4D5060;
     line-height: 34px;
+    text-align: left;
 }
 .show_more-row {
     justify-content: space-between;
@@ -1660,20 +1671,25 @@ button.active {
 .news-title {
     margin: 0 0 28px;
 }
+.core-content {
+    margin: 70px auto 80px;
+}
 .core-column-left {
     float: left;
     max-width: 272px;
 }
 .core-column-right {
     float: right;
-    width: 70%;
+    width: 66%;
+    padding-left: 90px;
+    border-left: 1px solid #dfdfdf;
 }
 .corecard {
     position: relative;
     padding: 15px 20px 15px 70px;
     margin-bottom: 5px;
     width: 270px;
-    height: 120px;
+    min-height: 120px;
     text-align: left;
     border: 1px solid #DADADA;
     box-sizing: border-box;
@@ -1684,6 +1700,13 @@ button.active {
     color: #13161F;
     line-height: 30px;
     font-weight: 600;
+}
+.corecard-label {
+    margin-bottom: 10px;
+    font-size: 81.25%;
+    color: #9D9D9D;
+    letter-spacing: 0.43px;
+    text-transform: uppercase;
 }
 .features-card::before {
     content: '';
@@ -1712,10 +1735,26 @@ button.active {
     height: 30px;
     background: url(../img/bitcoin-core/contribute.svg) 50% 50% no-repeat;
 }
+.releases-card::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/bitcoin-core/news.svg) 50% 50% no-repeat;
+}
+.rss-card::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/bitcoin-core/rss.svg) 50% 50% no-repeat;
+}
 .bitcoin-core-separator {
-    height: 1px;
     margin: 0 0 70px;
-    background: #dfdfdf;
 }
 .wallet_accordion img {
         float: left;

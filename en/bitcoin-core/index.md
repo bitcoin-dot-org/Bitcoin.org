@@ -19,14 +19,14 @@ breadcrumbs:
 
 <!-- ![Bitcoin Core: Helping You Keep Bitcoin Decentralized](/img/bitcoin-core/en-big-logo.svg) -->
 
-<div class="hero">
+<div class="hero core-hero">
   <div class="container">
     <h1>Bitcoin Core</h1>
     <p class="summary">Helping you keep Bitcoin decentralized.</p>
   </div>
 </div>
 
-<div class="container clearfix">
+<div class="container core-content clearfix">
 <div class="core-column-left">{% include bitcoin-core/download-bitcoin-core.html %}</div>
 
 
@@ -79,9 +79,28 @@ breadcrumbs:
 
   <p class="center"><button class="toggle_show_more_less js not-displayed"><span class="fa fa-caret-down"></span> Read more</button></p>
 </div>
-<hr class="bitcoin-core-separator">
 
-<div class="core-column-right" markdown="block">
+<div class="core-column-left">
+  <p class="corecard-label">Shortcut:</p>
+  <div class="corecard features-card" markdown="block">
+  [Features][bcc features]
+  Discover what Bitcoin Core offers
+  </div>
+
+  <div class="corecard help-card" markdown="block">
+  [Get help][bcc help]
+  Documentation, forums, chat rooms
+  </div>
+  
+  <div class="corecard contribute-card" markdown="block">
+  [Contribute][bcc contribute]
+  Code, translations, and more
+  </div>
+</div>
+
+<div class="core-column-right clearfix" markdown="block">
+
+<hr class="separator bitcoin-core-separator">
 
 <h2 id="news" class="section-title news-title">News</h2>
 
@@ -103,23 +122,17 @@ breadcrumbs:
 
 </div>
 
-<div>
-  <div class="corecard features-card" markdown="block">
-  [Features][bcc features]
-  Discover what Bitcoin Core offers
+<div class="core-column-left clearfix">
+  <div class="corecard releases-card" markdown="block">
+  [Bitcoin Core Releases][bcc contribute]
+  For more News, see the complete list
   </div>
-
-  <div class="corecard help-card" markdown="block">
-  [Get help][bcc help]
-  Documentation, forums, chat rooms
-  </div>
-  
-  <div class="corecard contribute-card" markdown="block">
-  [Contribute][bcc contribute]
-  Code, translations, and more
+  <div class="corecard rss-card" markdown="block">
+  [Subscribe to the RSS feed][bcc contribute]
+  For more notifications of new releases
   </div>
 </div>
-  
+
 </div>
 
 
