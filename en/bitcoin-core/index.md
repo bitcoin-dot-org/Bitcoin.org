@@ -11,7 +11,9 @@ breadcrumbs:
   - bitcoin
   - Bitcoin Core
 ---
+
 {% assign date_sorted_releases = site.releases | sort: 'optional_date', 'last' %}
+
 <link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin Core releases">
 
 # Bitcoin Core
@@ -28,7 +30,6 @@ breadcrumbs:
 
 <div class="container core-content clearfix">
 <div class="core-column-left">{% include bitcoin-core/download-bitcoin-core.html %}</div>
-
 
 <div class="show_less_more core-column-right">
   <div class="show_less" markdown="block">
@@ -68,11 +69,11 @@ breadcrumbs:
   
   <div class="show_more-list" markdown="block">
 
-  - <span>[Better security][bcc validation] for their bitcoins</span>
-  - <span>[Privacy features][bcc privacy] not available in other wallets</span>
-  - <span>Choice of [user interfaces][bcc user interface]</span>
+* <span>[Better security][bcc validation] for their bitcoins</span>
+* <span>[Privacy features][bcc privacy] not available in other wallets</span>
+* <span>Choice of [user interfaces][bcc user interface]</span>
 
-  and several other powerful features
+and several other powerful features
 
   </div>
   </div>
@@ -98,12 +99,12 @@ breadcrumbs:
   </div>
 </div>
 
-<div class="core-column-right clearfix" markdown="block">
+<div class="core-column-right news-block clearfix">
 
-<hr class="separator bitcoin-core-separator">
+<hr class="separator core-separator">
 
 <h2 id="news" class="section-title news-title">News</h2>
-
+<div class="news-list" markdown="block">
 {% comment %}<!-- Capture all the releases into a string and convert it to an array -->{% endcomment %}
 {% capture text_releases %}
 {% for p in date_sorted_releases reversed %}
@@ -112,14 +113,14 @@ breadcrumbs:
 {% endcapture %}
 {% assign array_releases = text_releases | strip_newlines | split: '::' %}
 
-  - [New Bitcoin Core website](https://bitcoincore.org)
-{% comment %}<!-- show the latest three releases -->{% endcomment %}
-{% for release in array_releases %}
- {% if forloop.index <= 3 %}
-  - {{ release }}
- {% endif %}
-{% endfor %}
-
+* [New Bitcoin Core website](https://bitcoincore.org)
+  {% comment %}<!-- show the latest three releases -->{% endcomment %}
+  {% for release in array_releases %}
+  {% if forloop.index <= 2 %}
+* {{ release }}
+  {% endif %}
+  {% endfor %}
+  </div>
 </div>
 
 <div class="core-column-left clearfix">
@@ -134,7 +135,6 @@ breadcrumbs:
 </div>
 
 </div>
-
 
 <script>
 if ( $( window ).width() > 400 && $( window ).height() > 600 ) {

@@ -1638,13 +1638,14 @@ button.active {
 }
 .show_more-row {
     justify-content: space-between;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
 }
 .show_more-block {
-    max-width: 370px
+    width: 48%;
 }
 .show_more-icon {
     width: 30px;
+    height: 30px;
     margin-bottom: 20px;
 }
 .show_more-title {
@@ -1667,9 +1668,6 @@ button.active {
     font-size: 125%;
     color: #4D5060;
     line-height: 34px;
-}
-.news-title {
-    margin: 0 0 28px;
 }
 .core-content {
     margin: 70px auto 80px;
@@ -1753,8 +1751,36 @@ button.active {
     height: 30px;
     background: url(../img/bitcoin-core/rss.svg) 50% 50% no-repeat;
 }
-.bitcoin-core-separator {
+.core-separator {
     margin: 0 0 70px;
+}
+.news-title {
+    margin: 0 0 28px;
+}
+.news-list li {
+    position: relative;
+    padding-left: 50px;
+    list-style: none;
+}
+.news-list li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    background: url(../img/bitcoin-core/news.svg) 50% 50% no-repeat;
+    transform: translateY(50%);
+}
+.news-list p {
+    color: #FF9500;
+    line-height: 34px;
+}
+.news-list a {
+    display: block;
+    font-size: 137.5%;
+    color: #13161F;
+    line-height: 36px;
 }
 .wallet_accordion img {
         float: left;
@@ -2500,7 +2526,16 @@ h2 .rssicon{
 
 /*Styles specific to mobiles*/
 
-@media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 67.5em ){
+@media handheld, only screen and ( max-width: 72.5em ), only screen and ( max-device-width: 72.5em ){
+    .core-column-right {
+        padding-left: 60px;
+    }
+}
+
+@media handheld, only screen and ( max-width: 67.5em ), only screen and ( max-device-width: 67.5em ){
+    .core-column-right {
+        padding-left: 24px;
+    }
     .footer {
         padding-top: 100px;
     }
@@ -2806,6 +2841,48 @@ h2 .rssicon{
     .resourcesmore div{
         padding:0;
         border:0;
+    }
+    .core-content {
+        margin: 65px auto 18px;
+    }
+    .callout-btn {
+        width: 216px;
+        height: 53px;
+    }
+    .corecard {
+        width: 217px;
+    }
+    .show_more-row {
+        flex-direction: column;
+    }
+    .show_more-block {
+        width: 100%;
+    }
+    .show_more-block:first-child {
+        margin-bottom: 50px;
+    }
+    .show_more-block .show_more-title {
+        font-size: 112.5%;
+    }
+    .show_less_more {
+        padding-bottom: 30px;
+    }
+    .show_less_more p {
+        font-size: 100%;
+    }
+    .show_more-list span {
+        font-size: 100%;
+    }
+    .core-separator {
+        margin: 0 0 20px;
+    }
+    .news-block {
+        padding-bottom: 200px;
+    }
+    .news-title {
+        margin: 0 0 11px;
+        text-align: left;
+        font-size: 125%;
     }
     .download{
         text-align:left;
