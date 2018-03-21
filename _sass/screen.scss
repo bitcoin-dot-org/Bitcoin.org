@@ -222,9 +222,9 @@ hr {
     box-sizing: border-box;
     z-index:100;
 }
-.body{
-    position:relative;
-}
+// .body{
+//     position:relative;
+// }
 
 .langselect{
     display:none;
@@ -1618,10 +1618,10 @@ button.active {
     justify-content: space-between;
     margin-top: 10px;
 }
-.callout-text {
+.btn-subtext {
     color: #9D9D9D;
 }
-.callout-separator {
+.btn-separator {
     margin: 44px 0 20px;
 }
 .show_less {
@@ -2193,89 +2193,117 @@ h2 .rssicon{
     font-size:75%
 }
 
-.download{
-    text-align:center;
+// .download{
+//     text-align:center;
+// }
+// .download p{
+//     text-align:justify;
+// }
+// .download div p{
+//     text-align:center;
+// }
+// .download h1,
+// .download h2{
+//     text-align:center;
+// }
+// .download .mainbutton a{
+//     margin:10px 0 35px 0;
+// }
+
+.download-title{
+    margin: 0 0 20px;
+    color: #13161F;
+    font-size: 137.5%;
+    font-weight: 400;
+    line-height: 36px;
 }
-.download p{
-    text-align:justify;
+.download-text {
+    margin-bottom: 30px;
+    font-size: 125%;
+    color: #4D5060;
+    line-height: 34px;
+    text-align: left;
 }
-.download div p{
-    text-align:center;
+.downloadmore,
+.downloadkeys {
+    margin-bottom: 30px;
 }
-.download h1,
-.download h2{
-    text-align:center;
+.download-link {
+    display: block;
+    font-size: 125%;
+    line-height: 34px;
 }
-.download .mainbutton a{
-    margin:10px 0 35px 0;
+.downloadkeys-title {
+    display: block;
+    margin-bottom: 10px;
 }
-.downloadbox{
-    display:inline-block;
-    border:2px solid #fad296;
-    padding:20px;
-    font-size:125%;
-    -webkit-border-radius:12px;
-    -moz-border-radius:12px;
-    border-radius:12px;
-    margin:0 auto 20px auto;
-}
-.downloadbox p{
-    margin:0;
-}
-.downloadbox p.downloadmore a{
-    font-size:90%;
-}
-.downloadbox p.downloadkeys{
-    font-size:80%;
-    margin-top:15px;
-}
-.downloadbox p.downloadkeys span{
-    display:block;
-}
-.downloadbox p.downloadkeys a{
-    display:inline-block;
-    padding: 5px 10px 0 20px;
-    background:url(/img/icons/mini_ico_key.svg) left 8px no-repeat;
-}
-.downloadbox div a{
-    display:inline-block;
-}
-.downloadbox div{
-    display:inline-block;
-    margin:0 10px;
-    vertical-align:top;
-}
-.downloadbox div div{
-    display:block;
-    width:190px;
-    height:46px;
-    margin:25px 0;
-    text-align:left;
-}
-.downloadbox div div span{
-    display:inline-block;
-    margin-left:6px;
-}
-.downloadbox div div span span{
-    display:block;
-    margin:6px 0 0 0;
-    font-size:80%;
-}
-.downloadbox img{
-    width:32px;
-    height:32px;
-    vertical-align:top;
-    position:relative;
-    top:4px;
-}
-.downloadbox .magnetlink{
-    display:inline-block;
-    width:16px;
-    height:16px;
-    position:relative;
-    bottom:-1px;
-    background:url(/img/icons/mini_ico_magnet.svg) no-repeat;
-}
+// .downloadbox{
+//     display:inline-block;
+//     border:2px solid #fad296;
+//     padding:20px;
+//     font-size:125%;
+//     -webkit-border-radius:12px;
+//     -moz-border-radius:12px;
+//     border-radius:12px;
+//     margin:0 auto 20px auto;
+// }
+// .downloadbox p{
+//     margin:0;
+// }
+// .downloadbox p.downloadmore a{
+//     font-size:90%;
+// }
+// .downloadbox p.downloadkeys{
+//     font-size:80%;
+//     margin-top:15px;
+// }
+// .downloadbox p.downloadkeys span{
+//     display:block;
+// }
+// .downloadbox p.downloadkeys a{
+//     display:inline-block;
+//     padding: 5px 10px 0 20px;
+//     background:url(/img/icons/mini_ico_key.svg) left 8px no-repeat;
+// }
+// .downloadbox div a{
+//     display:inline-block;
+// }
+// .downloadbox div{
+//     display:inline-block;
+//     margin:0 10px;
+//     vertical-align:top;
+// }
+// .downloadbox div div{
+//     display:block;
+//     width:190px;
+//     height:46px;
+//     margin:25px 0;
+//     text-align:left;
+// }
+// .downloadbox div div span{
+//     display:inline-block;
+//     margin-left:6px;
+// }
+// .downloadbox div div span span{
+//     display:block;
+//     margin:6px 0 0 0;
+//     font-size:80%;
+// }
+// .downloadbox img{
+//     width:32px;
+//     height:32px;
+//     vertical-align:top;
+//     position:relative;
+//     top:4px;
+// }
+// .downloadbox .magnetlink{
+//     display:inline-block;
+//     width:16px;
+//     height:16px;
+//     position:relative;
+//     bottom:-1px;
+//     background:url(/img/icons/mini_ico_magnet.svg) no-repeat;
+// }
 
 .eventmap{
     height:400px;
@@ -2623,9 +2651,9 @@ h2 .rssicon{
         font-size: 30px;
         margin-bottom: 10px;
     }
-    .body{
-        width:auto;
-    }
+    // .body{
+    //     width:auto;
+    // }
     .content{
         position:static;
     }
@@ -2901,25 +2929,25 @@ h2 .rssicon{
     .download .mainbutton{
         display:none;
     }
-    .downloadbox{
-        border:0;
-        padding:0;
-        text-align:left;
-    }
-    .downloadbox div div{
-        margin:15px 0;
-        width:auto;
-    }
-    .downloadbox div{
-        margin:0;
-        display:block;
-    }
-    .downloadbox>p:first-child{
-        display:none;
-    }
-    .downloadbox>p+div+div+p{
-        margin-top:25px;
-    }
+    // .downloadbox{
+    //     border:0;
+    //     padding:0;
+    //     text-align:left;
+    // }
+    // .downloadbox div div{
+    //     margin:15px 0;
+    //     width:auto;
+    // }
+    // .downloadbox div{
+    //     margin:0;
+    //     display:block;
+    // }
+    // .downloadbox>p:first-child{
+    //     display:none;
+    // }
+    // .downloadbox>p+div+div+p{
+    //     margin-top:25px;
+    // }
     .eventmap{
         height:200px;
     }
@@ -3138,7 +3166,7 @@ h2 .rssicon{
     .callout-btn {
         width: 100%;
     }
-    .callout-separator {
+    .btn-separator {
         margin: 30px 0 30px;
     }
     .corecard {
