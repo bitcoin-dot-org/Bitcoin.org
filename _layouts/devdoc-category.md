@@ -34,6 +34,7 @@ end_of_page: |
 
   {% if page.show_toc %}
   <div markdown="1" id="toc" class="toc"><div markdown="1">
+  <div class="sidebar" markdown="1">
   <input id="glossary_term" class="glossary_term" placeholder="{% translate glossarysearchplaceholder developer-documentation %}">
 
   * Table of contents
@@ -42,6 +43,7 @@ end_of_page: |
   <ul class="goback"><li><a href="/{{ page.lang }}/developer-documentation">{% translate navigationreturn developer-documentation %}</a></li></ul>
   <ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new" onmouseover="updateIssue(event);">{% translate navigationreport developer-documentation %}</a></li></ul>
   <ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/_includes" onmouseover="updateSource(event);">{% translate navigationedit developer-documentation %}</a></li></ul>
+  </div>
 
   </div></div>
   <div markdown="1" class="toccontent">

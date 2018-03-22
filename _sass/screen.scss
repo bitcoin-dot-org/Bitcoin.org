@@ -461,10 +461,12 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     margin-bottom: 20px;
 }
 .footer {
+    position: relative;
     padding-top: 60px;
     text-align: left;
     color: #9D9D9D;
     background: #13161f url(../img/hero/footer-bg.svg) top no-repeat;
+    z-index: 10;
 }
 .logo-footer {
     display: block;
@@ -1141,6 +1143,11 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     justify-content: space-between;
     padding: 95px 0 50px;
 }
+.toc > div {
+    height: 100%;
+    padding-right: 30px;
+    border-right: 1px solid #dfdfdf;
+}
 .toc .scroll {
     position: fixed;
     top: 20px;
@@ -1155,6 +1162,9 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     margin-bottom: 20px;
 }
 .toc div > ul > li > a {
+    position: relative;
+    display: block;
+    width: 100%;
     font-size: 22px;
     font-weight: 600;
     color: #13161F;
@@ -1177,13 +1187,31 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .toc ul li.active ul{
     display:block;
 }
-// .toc ul li ul li a:hover:before,
-// .toc ul li ul li a.active:before{
-//     content:">";
-//     position:absolute;
-//     font-weight:bold;
-//     left:0px;
-// }
+.toc div > ul > li > a::after{
+   content: '';
+   position: absolute;
+   top: 50%;
+   right: 0;
+   width: 10px;
+   height: 6px;
+   background: url(../img/icons/ico_angle.svg) no-repeat;
+   transform: translateY(-50%);
+}
+.toc div > ul > .active > a::after{
+   transform: translateY(-50%) rotate(180deg);
+}
+.toc ul li ul li a {
+    position: relative;
+}
+.toc ul li ul li a:hover:before,
+.toc ul li ul li a.active:before{
+    content:"";
+    position:absolute;
+    width: 3px;
+    height: 33px;
+    right: -30px;
+    background: #FF7E00;
+}
 .toccontent {
     max-width: 65.8%;
 }
@@ -2721,9 +2749,6 @@ h2 .rssicon{
         font-size: 30px;
         margin-bottom: 10px;
     }
-    // .body{
-    //     width:auto;
-    // }
     .content{
         position:static;
     }
@@ -2744,50 +2769,50 @@ h2 .rssicon{
         display:block;
         margin:0 auto 40px auto;
     }
-    .toc{
-        position:static;
-        margin-top:0px;
-        padding:10px;
-        border:2px dashed #4892b2;
-        display:inline-block;
-    }
-    .toc div{
-        width:auto;
-    }
-    .toc .scroll{
-        position:static;
-    }
-    .toc ul,
-    .toc.scroll ul{
-        width:auto;
-        padding:0;
-        border:0;
-    }
-    .toc ul li ul{
-        display:block;
-    }
-    .toc ul li ul li ul li{
-        padding-left:0;
-    }
-    .toc ul li a{
-        padding:0;
-    }
-    .toc ul li ul li a:hover:before,
-    .toc ul li ul li a.active:before{
-        content:"";
-    }
-    .toc ul.goback li,
-    .toc ul.reportissue li,
-    .toc ul.editsource li{
-        background:none;
-    }
-    .toccontent{
-        width:auto;
-    }
-    .toccontent a.auto-link:link,
-    .toccontent a.auto-link:visited{
-        color:#2c6fad;
-    }
+    // .toc{
+    //     position:static;
+    //     margin-top:0px;
+    //     padding:10px;
+    //     border:2px dashed #4892b2;
+    //     display:inline-block;
+    // }
+    // .toc div{
+    //     width:auto;
+    // }
+    // .toc .scroll{
+    //     position:static;
+    // }
+    // .toc ul,
+    // .toc.scroll ul{
+    //     width:auto;
+    //     padding:0;
+    //     border:0;
+    // }
+    // .toc ul li ul{
+    //     display:block;
+    // }
+    // .toc ul li ul li ul li{
+    //     padding-left:0;
+    // }
+    // .toc ul li a{
+    //     padding:0;
+    // }
+    // .toc ul li ul li a:hover:before,
+    // .toc ul li ul li a.active:before{
+    //     content:"";
+    // }
+    // .toc ul.goback li,
+    // .toc ul.reportissue li,
+    // .toc ul.editsource li{
+    //     background:none;
+    // }
+    // .toccontent{
+    //     width:auto;
+    // }
+    // .toccontent a.auto-link:link,
+    // .toccontent a.auto-link:visited{
+    //     color:#2c6fad;
+    // }
     .develdocdisclaimer{
         padding:15px;
         width:auto;
@@ -2987,36 +3012,17 @@ h2 .rssicon{
         font-size: 112.5%;
         line-height: 30px;
     }
-    .download{
-        text-align:left;
-    }
-    .download p{
-        text-align:left;
-    }
-    .download div p{
-        text-align:left;
-    }
-    .download .mainbutton{
-        display:none;
-    }
-    // .downloadbox{
-    //     border:0;
-    //     padding:0;
+    // .download{
     //     text-align:left;
     // }
-    // .downloadbox div div{
-    //     margin:15px 0;
-    //     width:auto;
+    // .download p{
+    //     text-align:left;
     // }
-    // .downloadbox div{
-    //     margin:0;
-    //     display:block;
+    // .download div p{
+    //     text-align:left;
     // }
-    // .downloadbox>p:first-child{
+    // .download .mainbutton{
     //     display:none;
-    // }
-    // .downloadbox>p+div+div+p{
-    //     margin-top:25px;
     // }
     .eventmap{
         height:200px;

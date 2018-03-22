@@ -250,8 +250,10 @@ function updateToc() {
     function updatetoc() {
         // Set bottom and top to fit within window and not overflow its parent node.
         var div = toc.getElementsByTagName('DIV')[0];
-        
-        if (window.scrollY >= getTop(toc) - 20) {
+        var sidebarHeight = document.querySelector(".sidebar").offsetHeight; 
+        var footerTop = document.querySelector(".footer").offsetTop; 
+                
+        if (window.scrollY >= getTop(toc) - 20 && window.scrollY + sidebarHeight <= footerTop) {
           addClass(div, "scroll");
         } else {
           removeClass(div, "scroll");
