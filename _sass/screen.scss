@@ -1670,7 +1670,7 @@ button.active {
     line-height: 34px;
 }
 .core-content {
-    margin: 70px auto 80px;
+    margin: 70px auto 70px;
 }
 .core-column-left {
     float: left;
@@ -2209,7 +2209,9 @@ h2 .rssicon{
 // .download .mainbutton a{
 //     margin:10px 0 35px 0;
 // }
+.download-content {
 
+}
 .download-title{
     margin: 0 0 20px;
     color: #13161F;
@@ -2228,10 +2230,69 @@ h2 .rssicon{
 .downloadkeys {
     margin-bottom: 30px;
 }
-.download-link {
+.core-link {
     display: block;
     font-size: 125%;
     line-height: 34px;
+}
+.corecard .download-link {
+    display: inline-block;
+    color: #4D5060;
+    line-height: 22px;
+    font-weight: 400;
+}
+.mac-card,
+.linux-card,
+.arm-card,
+.ubuntu-card {
+    min-height: 60px;
+}
+.windows-card::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/os/med_win.svg) 50% 50% no-repeat;
+}
+.mac-card::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/os/med_osx.svg) 50% 50% no-repeat;
+}
+.linux-card::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/os/med_linux.svg) 50% 50% no-repeat;
+}
+.arm-card::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/os/arm.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.ubuntu-card::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/os/med_ubuntu.svg) 50% 50% no-repeat;
+    background-size: contain;
 }
 .downloadkeys-title {
     display: block;

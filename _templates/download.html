@@ -41,7 +41,7 @@ lin64: "x86_64-linux-gnu.tar.gz"
     </div>
   </div>
   
-  <div class="container clearfix">
+  <div class="container core-content clearfix">
     <div class="core-column-left clearfix">
       <div class="mainbutton">
         <a id="downloadbutton" href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}">
@@ -60,19 +60,19 @@ lin64: "x86_64-linux-gnu.tar.gz"
       <p class="download-text">{% translate notelicense %}</p>
       
       <div class="downloadmore">
-        <a href="{{ PATH_PREFIX }}/SHA256SUMS.asc" class="dl download-link">{% translate downloadsig %}</a>
-        <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}.torrent" class="dl download-link">{% translate downloadtorrent %}</a>
+        <a href="{{ PATH_PREFIX }}/SHA256SUMS.asc" class="dl core-link">{% translate downloadsig %}</a>
+        <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}.torrent" class="dl core-link">{% translate downloadtorrent %}</a>
         {% if site.DOWNLOAD_MAGNETLINK %}
-        <a href="{{ site.DOWNLOAD_MAGNETLINK | replace: '&', '\&amp;'}}" class="magnetlink download-link" data-proofer-ignore></a>{% endif %}
-        <a href="https://github.com/bitcoin/bitcoin" class="dl download-link">{% translate source %}</a>
-        <a href="/en/version-history" class="download-link">{% translate versionhistory %}</a>
+        <a href="{{ site.DOWNLOAD_MAGNETLINK | replace: '&', '\&amp;'}}" class="magnetlink core-link" data-proofer-ignore></a>{% endif %}
+        <a href="https://github.com/bitcoin/bitcoin" class="dl core-link">{% translate source %}</a>
+        <a href="/en/version-history" class="core-link">{% translate versionhistory %}</a>
       </div>
 
       <div class="downloadkeys">
         <span class="download-text downloadkeys-title">{% translate releasekeys %}</span>
-        <a class="download-link" href="/gavinandresen.asc">v0.8.6 - 0.9.2.1</a>
-        <a class="download-link" href="/laanwj.asc">v0.9.3 - 0.10.2</a>
-        <a class="download-link" href="/laanwj-releases.asc">v0.11.0+</a>
+        <a class="core-link" href="/gavinandresen.asc">v0.8.6 - 0.9.2.1</a>
+        <a class="core-link" href="/laanwj.asc">v0.9.3 - 0.10.2</a>
+        <a class="core-link" href="/laanwj-releases.asc">v0.11.0+</a>
       </div>
       
     </div>
@@ -80,43 +80,44 @@ lin64: "x86_64-linux-gnu.tar.gz"
     <div class="downloadbox core-column-left clearfix">
       <p class="corecard-label">{% translate downloados %}</p>
 
-        <div class="corecard">
-          <!-- <img src="/img/os/med_win.png" alt="windows"> -->
+        <div class="corecard windows-card">
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}" id="downloadwinexe">Windows</a>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}" class="dl" id="win64exe">64 bit</a> 
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}" class="dl" id="win32exe">32 bit</a>
+          
+          <div>
+            <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}" class="dl download-link" id="win64exe">64 bit</a>
+            <span> - </span>
+            <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}" class="dl download-link" id="win32exe">32 bit</a>
+          </div>
+
+          <div>
+            <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}" class="dl download-link" id="win64zip">64 bit</a>
+            <span> - </span>
+            <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32zip }}" class="dl download-link" id="win32zip">32 bit (zip)</a>
+          </div>
         </div>
 
-        <div class="corecard">
-          <!-- <img src="/img/os/med_win.png" alt="windows"> -->
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}" id="downloadwinzip">Windows (zip)</a>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}" class="dl" id="win64zip">64 bit</a>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32zip }}" class="dl" id="win32zip">32 bit</a>
-        </div>
-
-        <div class="corecard">
-          <!-- <img src="/img/os/med_osx.png" alt="osx"> -->
+        <div class="corecard mac-card">
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}">Mac OS X</a>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}" class="dl" id="macdmg">dmg</a>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.mactar }}" class="dl" id="mactar">tar.gz</a>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}" class="dl download-link" id="macdmg">dmg</a>
+          <span> - </span>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.mactar }}" class="dl download-link" id="mactar">tar.gz</a>
         </div>
 
-        <div class="corecard">
-          <!-- <img src="/img/os/med_linux.png" alt="linux"> -->
+        <div class="corecard linux-card">
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}" id="downloadlin">Linux (tgz)</a>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}" class="dl" id="lin64">64 bit</a> -
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin32 }}" class="dl" id="lin32">32 bit</a>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}" class="dl download-link" id="lin64">64 bit</a> 
+          <span> - </span>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin32 }}" class="dl download-link" id="lin32">32 bit</a>
         </div>
 
-        <div class="corecard">
-          <!-- <img src="/img/os/arm.png" alt="ARM Linux"> -->
+        <div class="corecard arm-card">
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm-linux-gnueabihf.tar.gz" class="dl">ARM Linux</a>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-aarch64-linux-gnu.tar.gz" class="dl" id="lin64arm">64 bit</a> -
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm-linux-gnueabihf.tar.gz" class="dl" id="lin32arm">32 bit</a>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-aarch64-linux-gnu.tar.gz" class="dl download-link" id="lin64arm">64 bit</a> 
+          <span> - </span>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm-linux-gnueabihf.tar.gz" class="dl download-link" id="lin32arm">32 bit</a>
         </div>
 
-        <div class="corecard">
-          <!-- <img src="/img/os/med_ubuntu.svg" alt="ubuntu"> -->
+        <div class="corecard ubuntu-card">
           <a href="https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin">Ubuntu (PPA)</a>
         </div>
     </div>
