@@ -17,43 +17,50 @@ end_of_page: |
 <br>
 {% endif %}
 
-{% if page.pagetitle-translated %}
-<h1>{{ page.pagetitle-translated }}</h1>
-{% else %}
-<h1>{% translate pagetitle %}</h1>
-{% endif %}
-<p class="summary">{% translate summary %}</p>
+<div class="hero">
+  <div class="container">
+    {% if page.pagetitle-translated %}
+    <h1>{{ page.pagetitle-translated }}</h1>
+    {% else %}
+    <h1>{% translate pagetitle %}</h1>
+    {% endif %}
+    <p class="summary">{% translate summary %}</p>
+  </div>
+</div>
 
-{% markdown %}
+<div class="container">
+  <div class="row toc-row">
+  {% markdown %}
 
-{% if page.show_toc %}
-<div markdown="1" id="toc" class="toc"><div markdown="1">
+  {% if page.show_toc %}
+  <div markdown="1" id="toc" class="toc"><div markdown="1">
+  <input id="glossary_term" class="glossary_term" placeholder="{% translate glossarysearchplaceholder developer-documentation %}">
 
-* Table of contents
-{:toc}
+  * Table of contents
+  {:toc}
 
-<ul class="goback"><li><a href="/{{ page.lang }}/developer-documentation">{% translate navigationreturn developer-documentation %}</a></li></ul>
-<ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new" onmouseover="updateIssue(event);">{% translate navigationreport developer-documentation %}</a></li></ul>
-<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/_includes" onmouseover="updateSource(event);">{% translate navigationedit developer-documentation %}</a></li></ul>
+  <ul class="goback"><li><a href="/{{ page.lang }}/developer-documentation">{% translate navigationreturn developer-documentation %}</a></li></ul>
+  <ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new" onmouseover="updateIssue(event);">{% translate navigationreport developer-documentation %}</a></li></ul>
+  <ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/_includes" onmouseover="updateSource(event);">{% translate navigationedit developer-documentation %}</a></li></ul>
 
-</div></div>
-<div markdown="1" class="toccontent">
-{% endif %}
+  </div></div>
+  <div markdown="1" class="toccontent">
+  {% endif %}
 
-{% if page.show_fragments %}
-{% include helpers/fragment_reviews_needed.md %}
-{% endif %}
+  {% if page.show_fragments %}
+  {% include helpers/fragment_reviews_needed.md %}
+  {% endif %}
 
-<input id="glossary_term" class="glossary_term" placeholder="{% translate glossarysearchplaceholder developer-documentation %}">
+  {% unless page.hide_translation_disclaimer %}
+  {% if page.lang != 'en' %}
+  {% include helpers/fragment_translation_warning.md %}
+  {% endif %}
+  {% endunless %}
 
-{% unless page.hide_translation_disclaimer %}
-{% if page.lang != 'en' %}
-{% include helpers/fragment_translation_warning.md %}
-{% endif %}
-{% endunless %}
+  {{ content }}
 
-{{ content }}
-
-{{ site.glossary_links }}
-{% include references.md %}
-{% endmarkdown %}
+  {{ site.glossary_links }}
+  {% include references.md %}
+  {% endmarkdown %}
+  </div>
+</div>

@@ -250,11 +250,13 @@ function updateToc() {
     function updatetoc() {
         // Set bottom and top to fit within window and not overflow its parent node.
         var div = toc.getElementsByTagName('DIV')[0];
-        if (pageoffset > getTop(toc)) {
-            addClass(div, 'scroll');
-            div.style.top = '20px';
-            div.style.bottom = Math.max((pageoffset + windowy) - (getHeight(toc.parentNode) + getTop(toc.parentNode)), 20) + 'px';
-        } else removeClass(div, 'scroll');
+        
+        if (window.scrollY >= getTop(toc) - 20) {
+          addClass(div, "scroll");
+        } else {
+          removeClass(div, "scroll");
+        }
+        
         // Remove .active class from toc and find new active toc entry.
         var a = false;
         for (var i = 0, t = toc.getElementsByTagName('*'), n = t.length; i < n; i++) {
@@ -291,21 +293,14 @@ function updateToc() {
         if (!toc.hasAttribute('data-timestamp') || toc.getAttribute('data-timestamp') > new Date().getTime() - 1000) return;
         window.history.replaceState(null, null, '#' + closer[0].id);
     }
-    // Update the toc when the page stops scrolling.
-    function evtimeout() {
-        toc = document.getElementById('toc');
-        clearTimeout(toc.getAttribute('data-timeout'));
-        toc.setAttribute('data-timeout', setTimeout(init, 1));
-    }
     // Reset timestamp on page load and each time the user clicks a url.
     function evtimestamp() {
         toc = document.getElementById('toc');
         document.getElementById('toc').setAttribute('data-timestamp', new Date().getTime());
     }
-    addEvent(window, 'scroll', evtimeout);
+    addEvent(window, 'scroll', init);
     addEvent(window, 'popstate', evtimestamp);
     addEvent(window, 'load', evtimestamp);
-    init();
 }
 
 function updateIssue(e) {

@@ -53,33 +53,30 @@ blockquote{
     font-size: 120%;
 }
 pre{
-    background-color:#f5f5f5;
+    background-color:#f8f8f8;
     display:block;
-    padding:17px;
-    line-height:1.5em;
-    font-size:75%;
-    border:1px solid #ccc;
+    padding: 17px 17px 17px 40px;
+    font-size: 125%;
     white-space:pre;
     overflow-y:auto;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    border-radius:3px;
 }
 pre code{
     font-size:100%;
+    color: #1C1F30;
+    line-height: 34px;
     padding:0;
     border:0;
     white-space:pre;
+
 }
 code{
-    padding:2px 4px;
-    background-color:#f5f5f5;
-    font-size:85%;
+    padding: 0 18px;
+    background: #f8f8f8;
+    font-size: 20px;
+    font-family: TitilliumWeb-Regular;
+    line-height: 34px;
+    color: #1C1F30;
     white-space:nowrap;
-    border:1px solid #ccc;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    border-radius:3px;
 }
 ul,ol{
     padding-left:20px;
@@ -158,6 +155,11 @@ hr {
     font-size: 162.5%;
     font-weight: normal;
     color: #FF7E00;
+}
+.text {
+    font-size: 125%;
+    color: #4D5060;
+    line-height: 34px;
 }
 .separator {
     height: 1px;
@@ -1135,20 +1137,13 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     display:block;
     line-height:1.5em;
 }
-.toc{
-    position:absolute;
-    left:20px;
-    text-align:left;
-    padding-top:40px;
-    margin-top:-40px;
+.toc-row {
+    justify-content: space-between;
+    padding: 95px 0 50px;
 }
-.toc div{
-    overflow-y:auto;
-    overflow-x:hidden;
-    width:240px;
-}
-.toc div.scroll{
-    position:fixed;
+.toc .scroll {
+    position: fixed;
+    top: 20px;
 }
 .toc ul,
 .toc li{
@@ -1156,84 +1151,82 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     padding:0;
     margin:0;
 }
-.toc ul{
-    width:220px;
-    border-right:1px solid #e0e0e0;
-    padding:0 19px 0 0;
+.toc div > ul > li {
+    margin-bottom: 20px;
 }
-.toc ul li{
-    padding:0 0 10px 0;
+.toc div > ul > li > a {
+    font-size: 22px;
+    font-weight: 600;
+    color: #13161F;
+    line-height: 36px;
+}
+.toc div > ul > li > ul a {
+    display: block;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #42454c;
+    line-height: 24px;
+}
+.toc div > ul > li > ul > li:first-child {
+    margin-top: 20px;
 }
 .toc ul li ul{
-    position:relative;
-    top:0;
-    padding:10px 0 0 0;
-    border:0;
     display:none;
 }
 .toc ul li.active ul{
     display:block;
 }
-.toc ul li ul li{
-    padding:0 0 4px 0;
+// .toc ul li ul li a:hover:before,
+// .toc ul li ul li a.active:before{
+//     content:">";
+//     position:absolute;
+//     font-weight:bold;
+//     left:0px;
+// }
+.toccontent {
+    max-width: 65.8%;
 }
-.toc ul li ul li ul li{
-    padding-left:10px;
+.toccontent-block {
+    padding-bottom: 40px;
 }
-.toc ul li a{
-    padding-left:20px;
-    font-weight:bold;
+.toccontent-block:not(:last-child) {
+    border-bottom: 1px solid #dfdfdf;
 }
-.toc ul li ul li a{
-    font-weight:normal;
+.toccontent p {
+    margin-bottom: 20px;
+    font-size: 125%;
+    color: #4D5060;
+    line-height: 34px;
 }
-.toc ul li ul li a:hover:before,
-.toc ul li ul li a.active:before{
-    content:">";
-    position:absolute;
-    font-weight:bold;
-    left:0px;
+.toccontent p:last-child {
+    margin-bottom: 0;
 }
-.toc ul.goback{
-    padding-top:8px;
+.toccontent h2{
+    margin-top: 40px;
+    font-size: 162.5%;
+    color: #FF7E00;
+    font-weight: 400;
+    line-height: 65px;
 }
-.toc ul.goback li{
-    background:url(/img/icons/mini_ico_back.svg) no-repeat 0 3px;
+.toccontent h3{
+    margin-top: 20px;
+    font-size: 137.5%;
+    color: #13161F;
+    line-height: 36px;
+    font-weight: 400;
 }
-.toc ul.reportissue li{
-    background:url(/img/icons/mini_ico_report.svg) no-repeat 0 3px;
+
+.toccontent li {
+    color: #ff9500;
 }
-.toc ul.editsource li{
-    background:url(/img/icons/mini_ico_rev.svg) no-repeat 0 3px;
-}
-.toc a,
-.toc a:link,
-.toc a:active,
-.toc a:visited{
-    display:block;
-    text-decoration:none;
-    line-height:1.5em;
-}
-.toccontent{
-    width:600px;
-    margin:auto 0 auto auto;
-    position:relative;
-    text-align: left;
-}
+
 .toccontent h2,
 .toccontent h3,
 .toccontent h4,
 .toccontent h5,
 .toccontent h6{
-    color:#383838;
-    margin-top: 40px;
     margin-bottom: 0;
-}
-.toccontent h2{
-    font-size:150%;
-}
-.toccontent h3{
-    font-size:130%;
 }
 .toccontent h4{
     font-size:110%;
@@ -1275,13 +1268,10 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     color:#646464;
 }
 .multicode{
-    background-color:#f5f5f5;
-    overflow-y:auto;
-    padding:17px;
-    border:1px solid #ccc;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    border-radius:3px;
+    margin-bottom: 20px;
+    padding: 17px 17px 17px 40px;
+    background-color: #f8f8f8;
+    overflow-y: auto;
 }
 .multicode pre{
     border:0px none;
@@ -1367,11 +1357,30 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     color:#fff;
 }
 .glossary_term {
+    position: relative;
     display: block;
-    width: 20em;
-    padding: 5px 10px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 335px;
+    height: 55px;
+    margin-bottom: 43px;
+    padding: 17px 17px 17px 72px;
+    font-size: 112.5%;
+    line-height: 21px;
+    color: #bcb7b8;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    background: url(../img/icons/ico_search.svg) 30px 17px no-repeat;
+}
+.glossary_term::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #bcb7b8;
+}
+.glossary_term::-moz-placeholder { /* Firefox 19+ */
+  color: #bcb7b8;
+}
+.glossary_term:-ms-input-placeholder { /* IE 10+ */
+  color: #bcb7b8;
+}
+.glossary_term:-moz-placeholder { /* Firefox 18- */
+  color: #bcb7b8;
 }
 .ui-autocomplete-category {
     font-weight: bold;
@@ -2735,9 +2744,6 @@ h2 .rssicon{
         display:block;
         margin:0 auto 40px auto;
     }
-    .glossary_term {
-        width: 80%;
-    }
     .toc{
         position:static;
         margin-top:0px;
@@ -2748,7 +2754,7 @@ h2 .rssicon{
     .toc div{
         width:auto;
     }
-    .toc div.scroll{
+    .toc .scroll{
         position:static;
     }
     .toc ul,
@@ -2933,6 +2939,9 @@ h2 .rssicon{
     }
     .core-content {
         margin: 65px auto 18px;
+    }
+    .core-column-right {
+        width: 65%;
     }
     .callout-btn {
         width: 216px;
