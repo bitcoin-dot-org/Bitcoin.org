@@ -667,38 +667,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .mainvideo:hover .mainvideoiconhover{
     display:block;
 }
-// .mainlist{
-//     font-size:125%;
-//     max-width:760px;
-//     margin:30px auto;
-//     display:table;
-// }
-// .mainlist>div{
-//     display:table-cell;
-//     width:240px;
-//     min-width:200px;
-//     text-align:center;
-// }
-// .mainlist>div>div{
-//     display:inline-block;
-//     line-height:1.5em;
-// }
-// .mainlist>div>div>div{
-//     display:inline-block;
-// }
-// .mainlist img{
-//     display:block;
-//     margin:10px auto;
-//     vertical-align:top;
-//     position:relative;
-//     height:48px;
-//     width:48px;
-// }
-// .maindesc{
-//     max-width:760px;
-//     margin:auto;
-//     line-height:1.5em;
-// }
 .maindesc {
     padding: 100px 0 70px;
 }
@@ -804,13 +772,15 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .mainbutton a:visited,
 .mainbutton a:active{
     display:inline-block;
-    width: 250px;
+    width: 272px;
     height: 55px;
+    margin-bottom: 10px;
     padding: 16px 25px;
     box-sizing: border-box;
     background: #FF9500;
     font-weight:600;
     font-size:100%;
+    text-align: center;
     color:#fff;
     text-transform: uppercase;
     -webkit-border-radius:1px;
@@ -1721,7 +1691,7 @@ button.active {
 }
 .corecard {
     position: relative;
-    padding: 15px 20px 15px 70px;
+    padding: 15px 10px 15px 70px;
     margin-bottom: 5px;
     width: 270px;
     min-height: 120px;
@@ -1742,6 +1712,7 @@ button.active {
     color: #9D9D9D;
     letter-spacing: 0.43px;
     text-transform: uppercase;
+    text-align: left;
 }
 .features-card::before {
     content: '';
@@ -2229,23 +2200,6 @@ h2 .rssicon{
 .attribution{
     font-size:75%
 }
-
-// .download{
-//     text-align:center;
-// }
-// .download p{
-//     text-align:justify;
-// }
-// .download div p{
-//     text-align:center;
-// }
-// .download h1,
-// .download h2{
-//     text-align:center;
-// }
-// .download .mainbutton a{
-//     margin:10px 0 35px 0;
-// }
 .download-content {
 
 }
@@ -2335,74 +2289,6 @@ h2 .rssicon{
     display: block;
     margin-bottom: 10px;
 }
-// .downloadbox{
-//     display:inline-block;
-//     border:2px solid #fad296;
-//     padding:20px;
-//     font-size:125%;
-//     -webkit-border-radius:12px;
-//     -moz-border-radius:12px;
-//     border-radius:12px;
-//     margin:0 auto 20px auto;
-// }
-// .downloadbox p{
-//     margin:0;
-// }
-// .downloadbox p.downloadmore a{
-//     font-size:90%;
-// }
-// .downloadbox p.downloadkeys{
-//     font-size:80%;
-//     margin-top:15px;
-// }
-// .downloadbox p.downloadkeys span{
-//     display:block;
-// }
-// .downloadbox p.downloadkeys a{
-//     display:inline-block;
-//     padding: 5px 10px 0 20px;
-//     background:url(/img/icons/mini_ico_key.svg) left 8px no-repeat;
-// }
-// .downloadbox div a{
-//     display:inline-block;
-// }
-// .downloadbox div{
-//     display:inline-block;
-//     margin:0 10px;
-//     vertical-align:top;
-// }
-// .downloadbox div div{
-//     display:block;
-//     width:190px;
-//     height:46px;
-//     margin:25px 0;
-//     text-align:left;
-// }
-// .downloadbox div div span{
-//     display:inline-block;
-//     margin-left:6px;
-// }
-// .downloadbox div div span span{
-//     display:block;
-//     margin:6px 0 0 0;
-//     font-size:80%;
-// }
-// .downloadbox img{
-//     width:32px;
-//     height:32px;
-//     vertical-align:top;
-//     position:relative;
-//     top:4px;
-// }
-// .downloadbox .magnetlink{
-//     display:inline-block;
-//     width:16px;
-//     height:16px;
-//     position:relative;
-//     bottom:-1px;
-//     background:url(/img/icons/mini_ico_magnet.svg) no-repeat;
-// }
-
 .eventmap{
     height:400px;
     margin-bottom:25px;
@@ -3012,18 +2898,22 @@ h2 .rssicon{
         font-size: 112.5%;
         line-height: 30px;
     }
-    // .download{
-    //     text-align:left;
-    // }
-    // .download p{
-    //     text-align:left;
-    // }
-    // .download div p{
-    //     text-align:left;
-    // }
-    // .download .mainbutton{
-    //     display:none;
-    // }
+    .mainbutton {
+        max-width: 217px;
+    }
+    .mainbutton a,
+    .mainbutton a:link,
+    .mainbutton a:visited,
+    .mainbutton a:active {
+        width: 100%;
+        padding: 16px 15px;
+    }
+    .corecard-label {
+        max-width: 217px;
+    }
+    .downloadkeys {
+        margin-bottom: 70px;
+    }
     .eventmap{
         height:200px;
     }
@@ -3216,6 +3106,28 @@ h2 .rssicon{
     }
     .left-column, .left-column h2 {
         text-align: left;
+    }
+    .mainbutton {
+        max-width: 290px;
+    }
+    .corecard-label {
+        max-width: 100%;
+    }
+    .download-title {
+        margin: 0 0 30px;
+        font-size: 125%;
+    }
+    .download-text {
+        margin-bottom: 20px;
+        font-size: 112.5%;
+    }
+    .downloadkeys {
+        margin-bottom: 40px;
+    }
+    .corecard-label {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #dfdfdf;
     }
 }
 
