@@ -1201,11 +1201,25 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     margin-bottom: 0;
 }
 .toccontent h2{
+    position: relative;
     margin-top: 40px;
     font-size: 162.5%;
     color: #FF7E00;
     font-weight: 400;
     line-height: 65px;
+}
+.toccontent h2::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    width: 10px;
+    height: 6px;
+    background: url(../img/icons/ico_angle.svg) no-repeat;
+    transform: translateY(-50%);
+}
+.toccontent .active h2::after {
+    transform: translateY(-50%) rotate(180deg);
 }
 .toccontent h3{
     margin-top: 20px;
@@ -1287,7 +1301,12 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-weight:normal;
     border-bottom: 3px double #ddd;
 }
-
+.accordion-toggle {
+    cursor: pointer;
+}
+.accordion-content {
+    display: none;
+}
 .anchorAf{
     position:relative;
 }

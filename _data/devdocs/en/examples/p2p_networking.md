@@ -4,7 +4,14 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/examples/p2p_networking.md" %}
 
+<div class="accordion-toggle" markdown="block">
+
 ## P2P Network
+
+</div>
+
+<div class="accordion-content" markdown="block">
+
 {% include helpers/subhead-links.md %}
 
 ### Creating A Bloom Filter
@@ -454,3 +461,4 @@ is identical to the merkle root in the header and check the other steps
 of the parsing checklist in the `merkleblock` message section.
 
 {% endautocrossref %}
+</div>

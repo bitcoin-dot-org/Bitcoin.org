@@ -558,3 +558,18 @@ function toggleDonationBanner() {
     toggle.toggleClass('active');
     banner.toggleClass('expanded');
 }
+
+function accordion() {
+  $(document).ready(function($) {
+    $('.accordion-toggle').click(function(){
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('fast');
+      $(this).toggleClass("active");
+
+      //Hide the other panels
+      $(".accordion-content").not($(this).next()).slideUp("fast");
+      $(".accordion-content").not($(this)).removeClass("active");
+    });
+  }); 
+}

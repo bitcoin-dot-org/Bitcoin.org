@@ -4,7 +4,12 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/examples/testing.md" %}
 
+<div class="accordion-toggle" markdown="block">
+
 ## Testing Applications
+
+</div>
+<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -103,3 +108,4 @@ configuration directory locations on various operating systems. Always back up
 mainnet wallets before performing dangerous operations such as deleting.)
 
 {% endautocrossref %}
+</div>
