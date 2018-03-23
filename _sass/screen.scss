@@ -1110,13 +1110,17 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     line-height:1.5em;
 }
 .toc-row {
-    justify-content: space-between;
+    justify-content: center;
     padding: 95px 0 50px;
+}
+.toc {
+    min-width: 370px;
 }
 .toc > div {
     height: 100%;
-    padding-right: 30px;
+    padding-right: 35px;
     border-right: 1px solid #dfdfdf;
+    box-sizing: border-box;
 }
 .toc .scroll {
     position: fixed;
@@ -1147,6 +1151,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-size: 18px;
     color: #42454c;
     line-height: 24px;
+    text-align: left;
 }
 .toc div > ul > li > ul > li:first-child {
     margin-top: 20px;
@@ -1179,14 +1184,14 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     position:absolute;
     width: 3px;
     height: 33px;
-    right: -30px;
+    right: -35px;
     background: #FF7E00;
 }
 .toccontent {
-    max-width: 65.8%;
+    min-width: 290px;
 }
 .toccontent-block {
-    padding-bottom: 40px;
+    padding: 0 0 40px 30px;
 }
 .toccontent-block:not(:last-child) {
     border-bottom: 1px solid #dfdfdf;
@@ -1196,6 +1201,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-size: 125%;
     color: #4D5060;
     line-height: 34px;
+    text-align: left;
 }
 .toccontent p:last-child {
     margin-bottom: 0;
@@ -1206,7 +1212,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-size: 162.5%;
     color: #FF7E00;
     font-weight: 400;
-    line-height: 65px;
+    text-align: left;
 }
 .toccontent h2::after{
     content: '';
@@ -2603,11 +2609,6 @@ h2 .rssicon{
         margin: 0 0 40px;
     }
     .toccontent .multicode,
-    .toccontent .multicode pre,
-    .toccontent pre{
-        display: table; /* Triggers a block formating context so the container expands with the content */
-    }
-    .toccontent .multicode,
     .toccontent pre{
         padding:10px;
     }
@@ -2674,50 +2675,30 @@ h2 .rssicon{
         display:block;
         margin:0 auto 40px auto;
     }
-    // .toc{
-    //     position:static;
-    //     margin-top:0px;
-    //     padding:10px;
-    //     border:2px dashed #4892b2;
-    //     display:inline-block;
-    // }
-    // .toc div{
-    //     width:auto;
-    // }
-    // .toc .scroll{
-    //     position:static;
-    // }
-    // .toc ul,
-    // .toc.scroll ul{
-    //     width:auto;
-    //     padding:0;
-    //     border:0;
-    // }
-    // .toc ul li ul{
-    //     display:block;
-    // }
-    // .toc ul li ul li ul li{
-    //     padding-left:0;
-    // }
-    // .toc ul li a{
-    //     padding:0;
-    // }
-    // .toc ul li ul li a:hover:before,
-    // .toc ul li ul li a.active:before{
-    //     content:"";
-    // }
-    // .toc ul.goback li,
-    // .toc ul.reportissue li,
-    // .toc ul.editsource li{
-    //     background:none;
-    // }
-    // .toccontent{
-    //     width:auto;
-    // }
-    // .toccontent a.auto-link:link,
-    // .toccontent a.auto-link:visited{
-    //     color:#2c6fad;
-    // }
+    .toc-row {
+        padding: 50px 0 70px;
+    }
+    .toc {
+        min-width: 245px;
+    }
+    .toc > div {
+        width: 245px;
+    }
+    .glossary_term {
+        width: 100%;
+    }
+    .toccontent-block {
+        padding: 0 0 30px 30px;
+    }
+    .toccontent h2 {
+        margin-top: 30px;
+    }
+    .toc div>ul>li {
+        margin-bottom: 10px;
+    }
+    .toc div>ul>li>ul>li:first-child {
+        margin-top: 10px;
+    }
     .develdocdisclaimer{
         padding:15px;
         width:auto;
@@ -2942,6 +2923,9 @@ h2 .rssicon{
 }
 
 @media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ){
+    code {
+        white-space: pre-wrap;
+    }
     .container {
         padding: 0 15px;
     }
@@ -3148,6 +3132,9 @@ h2 .rssicon{
         margin-bottom: 30px;
         border-bottom: 1px solid #dfdfdf;
     }
+    .toc-row {
+        padding: 40px 0 50px;
+    }
 }
 
 @media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ){
@@ -3235,15 +3222,6 @@ h2 .rssicon{
         margin: 0 auto 30px;
         font-size: 187.5%;
     }
-    // .mainlist,
-    // .mainlist>div{
-    //     width:auto;
-    //     display:block;
-    // }
-    // .mainlist>div{
-    //     margin:15px auto;
-    // }
-
     .mainoverview {
         padding: 110px 0 50px;
         background: url(../img/hero/overview-mob.svg) top no-repeat;
@@ -3277,6 +3255,105 @@ h2 .rssicon{
     }
     .startbar {
         display: none;
+    }
+    .toc-row {
+        flex-direction: column;
+    }
+    .toc {
+        min-width: 100%;
+    }
+    .toc>div {
+        width: 100%;
+        padding-right: 0;
+        border: 0;
+    }
+    .toc .scroll {
+        position: static;
+    }
+    .glossary_term {
+        margin-bottom: 30px;
+    }
+    .mob-sidebar-open {
+        display: block;
+        min-width: 290px;
+        width: 100%;
+        height: 55px;
+        box-sizing: border-box;
+        padding-left: 60px;
+        margin-bottom: 25px;
+        text-align: left;
+        background: #F7931A url(../img/icons/ico_burger_light.svg) 26px 22px no-repeat;;
+        font-size: 100%;
+        font-weight: 600;
+        color: #FFFFFF;
+        border-radius: 1px;
+        border: none;
+    }
+    .mob-sidebar-open.hide {
+        display: none;
+    }
+    .mob-sidebar-open.is-fixed {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
+        outline: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    .sidebar.is-open {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 265px;
+        height: 100%;
+        background: #1d2028;
+        box-sizing: border-box;
+        z-index: 20;
+    }
+    .mob-sidebar-close {
+        display: block;
+        position: absolute;
+        right: -55px;
+        width: 55px;
+        height: 55px;
+        background: #F7931A url(../img/icons/ico_angle_light.svg) center no-repeat;
+        background-size: 18px;
+        transform: rotate(90deg);
+        border-radius: 1px;
+        border: none;
+    }
+    .toc div>ul>li {
+        padding: 15px 20px;
+        margin: 0;
+        border-bottom: 1px solid #37393D;
+    }
+    .toc div>ul>li>a {
+        font-size: 112.5%;
+        color: #FFFFFF;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .toc div>ul>li>ul a {
+        margin-bottom: 10px;
+        color: #bbbcbe;
+    }
+    .toc div>ul>.active>a {
+        color: #FF9500;
+    }
+    .toc div>ul>li>a::after {
+        background: url(../img/icons/ico_angle_light.svg) no-repeat;
+    }
+    .toccontent-block {
+        padding: 0;
+    }
+    .toc ul li ul li a:hover:before,
+    .toc ul li ul li a.active:before {
+        right: auto;
+        left: -20px;
     }
 }
 

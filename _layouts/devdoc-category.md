@@ -9,6 +9,7 @@ end_of_page: |
   <script src="/js/devsearch.js"></script>
   <script>updateToc();</script>
   <script>accordion();</script>
+  <script>onScrollButton();</script>
 ---
 <link rel="stylesheet" href="/css/jquery-ui.min.css">
 
@@ -35,8 +36,10 @@ end_of_page: |
 
   {% if page.show_toc %}
   <div markdown="1" id="toc" class="toc"><div markdown="1">
-  <div class="sidebar" markdown="1">
   <input id="glossary_term" class="glossary_term" placeholder="{% translate glossarysearchplaceholder developer-documentation %}">
+  <button class="mob-sidebar-open" hidden>ALL TOPICS</button>
+  <div class="sidebar" markdown="1">
+  <button class="mob-sidebar-close"></button>
 
   * Table of contents
   {:toc}
