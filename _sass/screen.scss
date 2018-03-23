@@ -1119,7 +1119,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .toc > div {
     height: 100%;
     padding-right: 35px;
-    border-right: 1px solid #dfdfdf;
     box-sizing: border-box;
 }
 .toc .scroll {
@@ -1189,6 +1188,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .toccontent {
     min-width: 290px;
+    border-left: 1px solid #dfdfdf;
 }
 .toccontent-block {
     padding: 0 0 40px 30px;
@@ -3354,6 +3354,9 @@ h2 .rssicon{
     .toc ul li ul li a.active:before {
         right: auto;
         left: -20px;
+    }
+    .toccontent {
+        border: none;
     }
 }
 

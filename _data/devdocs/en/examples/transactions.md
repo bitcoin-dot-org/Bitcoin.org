@@ -7,6 +7,7 @@ http://opensource.org/licenses/MIT.
 <div class="accordion-toggle" markdown="block">
 
 ## Transactions
+<!-- no subhead-links here -->
 
 </div>
 

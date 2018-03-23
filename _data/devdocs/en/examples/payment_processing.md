@@ -7,6 +7,7 @@ http://opensource.org/licenses/MIT.
 <div class="accordion-toggle" markdown="block">
 
 ## Payment Processing
+<!-- no subhead-links here -->
 
 </div>
 

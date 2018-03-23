@@ -39,7 +39,7 @@ end_of_page: |
   <input id="glossary_term" class="glossary_term" placeholder="{% translate glossarysearchplaceholder developer-documentation %}">
   <button class="mob-sidebar-open" hidden>ALL TOPICS</button>
   <div class="sidebar" markdown="1">
-  <button class="mob-sidebar-close"></button>
+  <button class="mob-sidebar-close" hidden></button>
 
   * Table of contents
   {:toc}
