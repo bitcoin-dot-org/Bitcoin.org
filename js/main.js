@@ -594,20 +594,11 @@ function onScrollButton() {
   function showSidebar() {
     sidebar.classList.add("is-open");
     button.classList.add("hide");
-
-    // $(".mob-sidebar-open").on("click", function() {
-    //   $(".sidebar").addClass("is-open");
-    //   $(".mob-sidebar-open").hide();
-    // });
   }
 
   function hideSidebar() {
     sidebar.classList.remove("is-open");
     button.classList.remove("hide");
-    // $(".mob-sidebar-close").on("click", function() {
-    //   $(".sidebar").removeClass("is-open");
-    //   $(".mob-sidebar-open").show();
-    // });
   }
 
   window.addEventListener("scroll", stickyButton);
