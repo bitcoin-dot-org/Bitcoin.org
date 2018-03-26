@@ -9,7 +9,7 @@ breadcrumbs:
   - dev docs
   - dev docs glossary
 show_fragments: false
-show_toc: false
+show_toc: true
 ---
 
 <div markdown="block" class="notice">

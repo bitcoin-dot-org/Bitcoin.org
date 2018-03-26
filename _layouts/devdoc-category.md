@@ -38,7 +38,8 @@ end_of_page: |
   <div markdown="1" id="toc" class="toc"><div markdown="1">
   <input id="glossary_term" class="glossary_term" placeholder="{% translate glossarysearchplaceholder developer-documentation %}">
   <button class="mob-sidebar-open" hidden>ALL TOPICS</button>
-  <div class="sidebar" markdown="1">
+  <div class="sidebar">
+  <div class="sidebar-inner" markdown="1">
   <button class="mob-sidebar-close" hidden></button>
 
   * Table of contents
@@ -47,6 +48,7 @@ end_of_page: |
   <ul class="goback"><li><a href="/{{ page.lang }}/developer-documentation">{% translate navigationreturn developer-documentation %}</a></li></ul>
   <ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new" onmouseover="updateIssue(event);">{% translate navigationreport developer-documentation %}</a></li></ul>
   <ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/_includes" onmouseover="updateSource(event);">{% translate navigationedit developer-documentation %}</a></li></ul>
+  </div>
   </div>
 
   </div></div>
@@ -69,4 +71,5 @@ end_of_page: |
   {% include references.md %}
   {% endmarkdown %}
   </div>
+</div>
 </div>

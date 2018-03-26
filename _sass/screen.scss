@@ -582,7 +582,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: stretch;
-    margin: 88px 0 50px;
+    margin: 70px 0 70px;
 }
 .card {
     width: 31.7%;
@@ -597,8 +597,8 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .card img {
     display: block;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     margin: 0 auto;
 }
 .card h2 {
@@ -649,8 +649,12 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 1010;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
 }
 .modal-overlay {
     position: fixed;
@@ -662,9 +666,13 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     background: rgba(0, 0, 0, 0.6);
 }
 .modal-video {
-    max-width: 100%;
-    max-height: 100%;
-    border: none;
+    width: 100%;
+    height: 100%;
+}
+.mainvideo-btn-close {
+    position: absolute;
+    top: 0;
+    right: -60px;
 }
 .maindesc {
     padding: 100px 0 70px;
@@ -992,6 +1000,10 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-size:125%;
     font-weight:bold;
     margin-top:30px;
+}
+
+.support-card {
+    min-height: 395px;
 }
 /* Buy bitcoin page start */
 .buy-card {
@@ -1950,32 +1962,32 @@ button.active {
     color:#8c8c8c;
 }
 
-.tablehalf{
-    width:885px;
-    position:relative;
-    left:-40px;
-}
-.tablehalf div{
-    display:inline-block;
-    width:400px;
-    vertical-align:top;
-    margin-left:40px;
-    margin-bottom:20px;
-}
-.tablehalf img{
-    width:400px;
-    height:220px;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    border-radius:10px;
-}
-.tablehalf h2 img{
-    width:auto;
-    height:auto;
-}
-.tablehalf p{
-    text-align:left;
-}
+// .tablehalf{
+//     width:885px;
+//     position:relative;
+//     left:-40px;
+// }
+// .tablehalf div{
+//     display:inline-block;
+//     width:400px;
+//     vertical-align:top;
+//     margin-left:40px;
+//     margin-bottom:20px;
+// }
+// .tablehalf img{
+//     width:400px;
+//     height:220px;
+//     -webkit-border-radius:10px;
+//     -moz-border-radius:10px;
+//     border-radius:10px;
+// }
+// .tablehalf h2 img{
+//     width:auto;
+//     height:auto;
+// }
+// .tablehalf p{
+//     text-align:left;
+// }
 .contributors{
     width:890px;
     text-align:left;
@@ -2382,7 +2394,9 @@ h2 .rssicon{
     text-align:center;
 }
 .summarytxt{
-    margin-bottom:40px;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .press h2{
@@ -2627,6 +2641,9 @@ h2 .rssicon{
     .section-title {
         margin: 0 0 40px;
     }
+    .card {
+        width: 48.3%;
+    }
     .toccontent .multicode,
     .toccontent pre{
         padding:10px;
@@ -2702,21 +2719,21 @@ h2 .rssicon{
     .contributors{
         width:auto;
     }
-    .tablehalf{
-        position:static;
-        width:auto;
-    }
-    .tablehalf div{
-        display:block;
-        width:auto;
-        margin-left:0;
-    }
-    .tablehalf img{
-        width:auto;
-        height:auto;
-        margin:auto;
-        display:block;
-    }
+    // .tablehalf{
+    //     position:static;
+    //     width:auto;
+    // }
+    // .tablehalf div{
+    //     display:block;
+    //     width:auto;
+    //     margin-left:0;
+    // }
+    // .tablehalf img{
+    //     width:auto;
+    //     height:auto;
+    //     margin:auto;
+    //     display:block;
+    // }
     .listtable div div{
         display:block;
     }
@@ -3145,10 +3162,7 @@ h2 .rssicon{
     .toc-row {
         padding: 40px 0 50px;
     }
-}
-
-@media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ){
-    .menusimple {
+     .menusimple {
          padding: 0;
     }
     .btn:not(:first-child) {
@@ -3266,6 +3280,12 @@ h2 .rssicon{
         display: block;
         margin: 0 auto;
     }
+    .card-row {
+        margin: 50px 0;
+    }
+    .card {
+        width: 100%;
+    }
     .startbar {
         display: none;
     }
@@ -3315,6 +3335,10 @@ h2 .rssicon{
     }
     .sidebar {
         display: none;
+    }
+    .sidebar-inner {
+        max-height: 100vh;
+        overflow-y: auto;
     }
     .sidebar.is-open {
         display: block;
