@@ -9,9 +9,8 @@
       <a class="btn btn-light" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate choosebut getting-started %}</a>
     </div>
 
-    <div class="mainvideo" onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/{% if page.lang == 'ro' %}JPNwbWu0tMQ{% else %}Gc2en3nHxA4{% endif %}?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1{% if page.lang != 'en' %}&amp;cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}">
-      <button class="mainvideo-btn"></button>
-      <a href="#" class="mainvideo-link">Watch video and learn “What is Bitcoin?”</a>
+    <div class="mainvideo">
+      <button class="mainvideo-btn-open" onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/{% if page.lang == 'ro' %}JPNwbWu0tMQ{% else %}Gc2en3nHxA4{% endif %}?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1{% if page.lang != 'en' %}&amp;cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}">Watch video and learn “What is Bitcoin?”</button>
     </div>
   </div>
 </div>
@@ -167,4 +166,12 @@
       <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}" class="btn btn-dark">{% translate choosebut getting-started %}</a>
     </div>
   </div>
+</div>
+
+<div class="modal closed">
+  <iframe class="modal-video" width="600px" height="400px">
+  </iframe>
+  <button class="mainvideo-btn-close" onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);">Close</button>
+</div>
+<div class="modal-overlay closed">
 </div>

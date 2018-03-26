@@ -630,28 +630,41 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     color: #1C1F30;
 }
 .mainvideo{
-    max-width:640px;
-    max-height:360px;
     margin: 80px auto 0;
     text-align: center;
 }
-.mainvideo iframe {
-    width:640px;
-    height:360px;
-}
-.mainvideo-btn {
-    width: 50px;
+.mainvideo-btn-open {
+    display: block;
     height: 50px;
-    margin-right: 15px;
-    background: url(../img/icons/play-btn.svg) center no-repeat;
+    margin: 0 auto;
+    padding: 0 0 0 65px;
+    background: url(../img/icons/play-btn.svg) left no-repeat;
     background-size: contain;
     border: none;
-    vertical-align: middle;
 }
-.mainvideo-link {
-    font-size: 100%;
-    text-decoration-line: underline;
-    color: #4D5060;
+.closed {
+    display: none;
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1010;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.6);
+}
+.modal-video {
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
 }
 .maindesc {
     padding: 100px 0 70px;

@@ -119,19 +119,21 @@ function supportCSS(id) {
 }
 
 function loadYoutubeVideo(e) {
-  // Load Youtube video on target node on click.
-  function init(e) {
-    var t = getEvent(e, 'target'),
-      nd = document.createElement('IFRAME');
-    while (t.getAttribute('data-youtubeurl') === null || t.getAttribute('data-youtubeurl') === '') t = t.parentNode;
-    nd.src = t.getAttribute('data-youtubeurl');
-    nd.setAttribute('frameborder', 0);
-    nd.setAttribute('allowfullscreen', true);
-    t.innerHTML = '';
-    t.appendChild(nd);
-    t.onclick = '';
+  var open = document.querySelector(".mainvideo-btn-open");
+  var close = document.querySelector(".mainvideo-btn-close");
+  var modal = document.querySelector(".modal");
+  var video = document.querySelector(".modal-video");
+  var modalOverlay = document.querySelector(".modal-overlay");
+
+  if (e.target === open) {
+    modal.classList.remove("closed");
+    video.src = open.getAttribute("data-youtubeurl");
+    modalOverlay.classList.remove("closed");
+  } else if (e.target === close) {
+    modal.classList.add("closed");
+    video.src = "";
+    modalOverlay.classList.add("closed");
   }
-  onTouchClick(e, init);
 }
 
 function expandBox(t) {
