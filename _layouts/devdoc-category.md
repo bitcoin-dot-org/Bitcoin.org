@@ -72,4 +72,3 @@ end_of_page: |
   {% endmarkdown %}
   </div>
 </div>
-</div>
