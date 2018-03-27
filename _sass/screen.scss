@@ -1189,8 +1189,8 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     background: #FFFFFF;
     border: 1px solid #DADADA;
 }
-.docreference-card img {
-    margin: 0 0 20px;
+.docreference-img-block {
+    min-height: 60px;
 }
 .docreference-card a {
     font-size: 137.5%;
@@ -3017,6 +3017,13 @@ h2 .rssicon{
     }
     .docreference {
         padding: 30px 0 0;
+    }
+    .docreference-card {
+        min-height: 100px;
+        padding: 15px 0;
+    }
+    .docreference-img-block {
+        min-height: 45px;
     }
     .docreference-title {
         margin: 0 0 15px;
