@@ -577,7 +577,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
   clear: both;
 }
 .card-row {
-    justify-content: space-between;
+    justify-content: left;
     flex-wrap: wrap;
     align-items: stretch;
     margin: 70px 0 70px;
@@ -585,13 +585,17 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .card {
     width: 31.7%;
     height: auto;
-    margin-top: 30px;
+    margin-top: 30px ;
+    margin-right: 2.4%;
     padding: 40px 30px 60px;
     vertical-align: top;
     border: 1px solid #DADADA;
     text-align: center;
     box-sizing: border-box;
     list-style: none;
+}
+.card:nth-child(3n+3) {
+    margin-right: 0;
 }
 .card img {
     display: block;
@@ -1104,6 +1108,10 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 /* Bitcoin paper page end */
 
+.how-it-works-content {
+    margin: 100px 0;
+}
+
 .titleicon{
     width:32px;
     height:32px;
@@ -1149,25 +1157,48 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     line-height:1.5em;
 }
 
-.docreference{
-    text-align:center;
+/* Developer Documentation page START*/
+.dev-documentation {
+    padding: 50px 0 70px;
 }
-.docreference a{
-    display:inline-block;
-    margin:20px 0 40px 0;
-    font-size:115%;
-    width:150px;
+.dev-documentation .glossary_term {
+    margin: 0 auto;
 }
-.docreference img{
-    display:block;
-    height:48px;
-    width:48px;
-    margin:0 auto 10px auto;
+.dev-documentation .card-row {
+    margin: 55px 0;
 }
-.docreference span{
-    display:block;
-    line-height:1.5em;
+.doc-card {
+    min-height: 500px;
 }
+.docreference {
+    padding: 50px 0 0;
+    border-top: 1px solid #dfdfdf;
+    text-align: center;
+}
+.docreference-title {
+    margin: 0 0 30px
+}
+.docreference-row {
+    justify-content: space-between;
+}
+.docreference-card {
+    width: 23%;
+    min-height: 190px;
+    padding: 40px 0;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+}
+.docreference-card img {
+    margin: 0 0 20px;
+}
+.docreference-card a {
+    font-size: 137.5%;
+    font-weight: 600;
+    color: #13161F;
+}
+/* Developer Documentation page END*/
+
 .toc-row {
     justify-content: center;
     padding: 95px 0 50px;
@@ -1441,7 +1472,8 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .glossary_term {
     position: relative;
     display: block;
-    width: 335px;
+    max-width: 570px;
+    width: 100%;
     height: 55px;
     margin-bottom: 43px;
     padding: 17px 17px 17px 72px;
@@ -2691,8 +2723,12 @@ h2 .rssicon{
     .column-text h2 {
         margin: 0 0 20px;
     }
+    .card-row {
+        justify-content: space-between;
+    }
     .card {
         width: 48.3%;
+        margin-right: 0;
     }
     .toccontent .multicode,
     .toccontent pre{
@@ -2734,10 +2770,6 @@ h2 .rssicon{
     .index li{
         padding:3px 0;
     }
-    .docreference a{
-        display:block;
-        margin:0 auto 40px auto;
-    }
     .toc-row {
         padding: 50px 0 70px;
     }
@@ -2746,9 +2778,6 @@ h2 .rssicon{
     }
     .toc > div {
         width: 245px;
-    }
-    .glossary_term {
-        width: 100%;
     }
     .toccontent-block {
         padding: 0 0 30px 30px;
@@ -2982,6 +3011,15 @@ h2 .rssicon{
     }
     .detectmobile{
         display:block;
+    }
+    .dev-documentation {
+        padding: 50px 0 70px;
+    }
+    .docreference {
+        padding: 30px 0 0;
+    }
+    .docreference-title {
+        margin: 0 0 15px;
     }
 }
 
@@ -3359,6 +3397,9 @@ h2 .rssicon{
     .card {
         width: 100%;
     }
+    .card:first-child {
+        margin-top: 0;
+    }
     .startbar {
         display: none;
     }
@@ -3467,6 +3508,73 @@ h2 .rssicon{
     }
     .toccontent {
         border: none;
+    }
+    .dev-documentation {
+        padding: 30px 0 50px;
+    }
+    .dev-documentation .card-row {
+        margin: 20px 0 50px;
+    }
+    .doc-card {
+        min-height: auto;
+        padding: 15px 20px;
+    }
+    .doc-card:not(:first-child) {
+        margin-top: 15px;
+    }
+    .doc-card img {
+        margin: 0 30px 0 0;
+        width: 25px;
+    }
+    .doc-card h2 {
+        min-height: auto;
+        margin: 0;
+        line-height: 30px;
+        font-size: 112.5%;
+    }
+    .doc-card p {
+        font-size: 100%;
+        padding-left: 55px;
+        text-align: left;
+    }
+    .doc-card a {
+        line-height: 24px;
+    }
+    .doc-acc-toggle {
+        display: flex;
+        align-items: center;
+    }
+    .resp-acc-toggle {
+        position: relative;
+        cursor: pointer;
+    }
+    .resp-acc-toggle::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 10px;
+        height: 6px;
+        transform: translateY(-50%);
+        background: url(../img/icons/ico_angle.svg) center no-repeat;
+    }
+    .active.resp-acc-toggle::after {
+        transform: translateY(-50%) rotate(180deg);
+    }
+    .resp-acc-content {
+        display: none;
+    }
+    .docreference-row {
+        flex-wrap: wrap;
+    }
+    .docreference-card {
+        width: 47.5%;
+        min-height: 100px;
+        margin-top: 15px;
+        padding: 17px 0;
+    }
+    .docreference-card img {
+        margin: 0;
     }
 }
 
