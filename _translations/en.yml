@@ -410,10 +410,14 @@ en:
     pagetitle: "Bitcoin Exchanges"
     pagedesc: "Places to buy bitcoin in exchange for other currencies."
     exchange: "Bitcoin Exchanges"
+  site-blog:
+    loadmore-posts: "Load more posts"
+  alerts:
+    loadmore-alerts: "Load more alerts"
   events:
     title: "Conferences and events - Bitcoin"
     rsslink: "Subscribe to the RSS"
-    loadmore: "Load more"
+    loadmore-events: "Load more Events"
     pagetitle: "Conferences and events"
     pagedesc: "Find events, conferences and meetups all over the world."
     upcoming: "Upcoming events and conferences"

@@ -2275,21 +2275,45 @@ button.active {
     text-align:left;
 }
 
-.alerttitle img{
-    display:block;
-    margin:auto;
-    width:42px;
-    height:42px;
+// .alerttitle img{
+//     display:block;
+//     margin:auto;
+//     width:42px;
+//     height:42px;
+// }
+.alert {
+    position: relative;
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 43px 50px 43px 140px;
+    box-sizing: border-box;
+    font-size: 112.5%;
+    color: #77767e;
+    background: #FFF9F3;
+    border-radius: 1px;
 }
-.alertstatusinactive{
-    font-size:130%;
-    color:#0d579b;
-    margin-bottom:30px;
+.alerts {
+    padding: 70px 0;
+}
+.alertstatusinactive {
+    margin-bottom: 50px;
+}
+.alertstatusinactive::before {
+    content: '';
+    position: absolute;
+    top: 27px;
+    left: 40px;
+    width: 60px;
+    height: 60px;
+    background: url(../img/icons/badge.svg) center no-repeat;
+    background-size: contain;
 }
 .alertstatusactive{
-    font-size:130%;
-    color:#d57700;
-    margin-bottom:30px;
+    font-size: 162.5%;
+    color: #FF7E00;
+    text-align: center;
+    line-height: 65px;
+    margin-bottom: 20px;
 }
 .alertsactive{
     margin-bottom:20px;
@@ -2420,17 +2444,17 @@ button.active {
 .eventmap{
     top: -28px;
     height:400px;
-    margin-bottom: 35px;
+    margin: 0;
     z-index: 0;
 }
 .events-title {
     margin: 0 auto 55px;
 }
+.events {
+    padding: 35px 0 70px;
+}
 .events-links {
     justify-content: space-between;
-    margin: 70px 0;
-    padding-top: 70px;
-    border-top: 1px solid #dadada;
 }
 .eventdata{
     display:none;
@@ -2532,6 +2556,12 @@ button.active {
     line-height: 34px;
 }
 /* Timeline layout END */
+.additional-links {
+    margin: 70px 0 0;
+    padding-top: 70px;
+    font-size: 125%;
+    border-top: 1px solid #dadada;
+}
 .button {
     position: relative;
     display: inline-block;
