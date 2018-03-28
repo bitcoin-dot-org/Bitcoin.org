@@ -4,7 +4,6 @@
 
 layout: base
 id: events
-end_of_page:
 ---
 {% assign date_sorted_conferences = site.conferences | sort: 'date' %}
 <!-- Note: this file is built non-deterministically -->
@@ -33,24 +32,23 @@ end_of_page:
 
 <div class="container">
   <h2 class="section-title events-title center" id="upcoming">{% translate upcoming %}</h2>
-  <div class="listtable eventtable clearfix">
+  <ul class="post-list clearfix">
     {% for p in date_sorted_conferences %}
-    <div class="event">
-      <div class="event-inner">
-        <p class="event-date">{{ p.date | date:"%Y-%m-%d" }}</p>
-        <p class="event-name">{{ p.title | htmlescape }}</p>
-        <p class="event-location">{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</p>
-        <p class="event-description">
-           Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posu.
-           Mauris accumsan eros eget libero posu. Mauris accumsan eros eget libero posu
+    <li class="post">
+      <div class="post-inner">
+        <p class="post-date">{{ p.date | date:"%Y-%m-%d" }}</p>
+        <p class="post-name">{{ p.title | htmlescape }}</p>
+        <p class="post-location">{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</p>
+        <p class="post-description">
+           <!-- Event description -->
         </p>
         <a class="button btn-bright" href="{{ p.link | htmlescape }}">{% translate informbut getting-started %}</a>
       </div>
-    </div>
+    </li>
     {% endfor %} 
-  </div>
+  </ul>
   <div class="btn-container">
-      <button class="button btn-dark" id="loadMore">Load more Events</button>
+      <button class="button btn-dark" id="loadMore">{% translate loadmore %}</button>
   </div>
   <div class="events-links row">
     <div>
