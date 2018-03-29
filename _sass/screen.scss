@@ -2841,13 +2841,6 @@ button.active {
         width: 48.3%;
         margin-right: 0;
     }
-    .toccontent .multicode,
-    .toccontent pre{
-        padding:10px;
-    }
-    .toccontent .multicode pre{
-        padding:0;
-    }
     .titleicon,
     .warningicon{
         display:block;
@@ -2887,9 +2880,6 @@ button.active {
     .toc {
         min-width: 245px;
     }
-    .toc > div {
-        width: 245px;
-    }
     .toccontent-block {
         padding: 0 0 30px 30px;
     }
@@ -2902,8 +2892,19 @@ button.active {
     .toc div>ul>li>ul>li:first-child {
         margin-top: 10px;
     }
+    .toccontent .multicode,
+    .toccontent pre{
+        padding:10px;
+    }
+    .toccontent .multicode pre{
+        padding:0;
+    }
     .contributors{
         width:auto;
+    }
+    .toc .scroll {
+        min-width: auto;
+        width: 245px;
     }
     // .tablehalf{
     //     position:static;
