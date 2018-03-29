@@ -2305,11 +2305,8 @@ button.active {
     background-size: contain;
 }
 .alertstatusactive{
-    font-size: 162.5%;
-    color: #FF7E00;
     text-align: center;
-    line-height: 65px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .alertsactive{
     margin-bottom:20px;
@@ -2432,7 +2429,7 @@ button.active {
 }
 /* Blog START */
 .blog {
-    padding: 110px 70px;
+    padding: 110px 0 70px;
 }
 /* Blog END*/
 
@@ -2444,7 +2441,7 @@ button.active {
     z-index: 0;
 }
 .events-title {
-    margin: 0 auto 55px;
+    margin: 0 auto 70px;
 }
 .events {
     padding: 35px 0 70px;
@@ -2465,7 +2462,6 @@ button.active {
 }
 .post-list.is-open {
     padding-bottom: 0;
-    overflow-y: hidden;
 }
 .post-list::before {
     content: '';
@@ -2952,22 +2948,6 @@ button.active {
     .mainsummary {
         margin: 0 auto 60px;
     }
-    // .mainvideo>div{
-    //     position:relative;
-    //     padding-bottom:56.25%;
-    //     height:0;
-    //     overflow:hidden;
-    // }
-    // .mainvideo iframe{
-    //     position:absolute;
-    //     top:0;
-    //     left:0;
-    //     width:100%;
-    //     height:100%;
-    // }
-    // .mainvideo img{
-    //     height:auto;
-    // }
     .maincard {
         width: 216px;
     }
@@ -3139,6 +3119,38 @@ button.active {
     }
     .docreference-title {
         margin: 0 0 15px;
+    }
+    .blog {
+        padding: 70px 0 70px;
+    }
+    .post-list::before {
+        top: 40px;
+    }
+    .post:nth-child(odd) {
+        padding-right: 35px;
+    }
+    .post:nth-child(even) {
+        padding-left: 35px;
+    }
+    .post:nth-child(odd)::after {
+        top: 40px;
+        width: 54px;
+        background: url(../img/icons/timeline-point-left-tablet.svg) center no-repeat;
+    }
+    .post:nth-child(even)::after {
+        top: 40px;
+        width: 54px;
+        background: url(../img/icons/timeline-point-right-tablet.svg) center no-repeat;
+    }
+    .post:nth-child(odd) .post-inner {
+        padding: 35px 40px 35px 30px;
+    }
+    .post:nth-child(even) .post-inner {
+        padding: 35px 30px 35px 40px;
+    }
+    .additional-links {
+        margin: 50px 0 0;
+        padding-top: 50px;
     }
 }
 
@@ -3463,6 +3475,62 @@ button.active {
         flex-direction: column;
         align-items: center;
     }
+    .alerts {
+        padding: 50px 0;
+    }
+    .alertstatusinactive {
+        margin-bottom: 30px;
+    }
+    .alertstatusactive {
+        font-size: 137.5%;
+        margin: 0 0 25px;
+    }
+    .alertstatusinactive::before {
+        left: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .alert {
+        padding: 30px 20px 30px 90px;
+        font-size: 100%;
+    }
+    .blog {
+        padding: 50px 0 50px;
+    }
+    .events {
+        padding: 5px 0 50px;
+    }
+    .post-list {
+        margin: 0 0 10px;
+    }
+    .post-list::before {
+        left: 0;
+    }
+    .post:nth-child(odd),
+    .post:nth-child(even) {
+        float: none;
+        padding: 0 0 15px 25px;
+        width: 100%;
+        text-align: right;
+    }
+    .post:nth-child(2) {
+        margin-top: 0;
+    }
+    .post:nth-child(even)::after, 
+    .post:nth-child(odd)::after {
+        right: auto;
+        left: -10px;
+        width: 46px;
+        height: 20px;
+        background: url(../img/icons/timeline-point-right-mob.svg) center no-repeat;
+    }
+    .post:nth-child(odd) .post-inner, 
+    .post:nth-child(even) .post-inner {
+        padding: 35px 15px 35px 15px;
+    }
+    .additional-links {
+        padding-top: 40px;
+    }
 }
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
     p {
@@ -3694,6 +3762,13 @@ button.active {
     }
     .docreference-card img {
         margin: 0;
+    }
+    .events-links {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .event-btn {
+        margin-bottom: 30px;
     }
 }
 
