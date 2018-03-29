@@ -255,7 +255,8 @@ function updateToc() {
         var sidebarHeight = document.querySelector(".sidebar").offsetHeight; 
         var footerTop = document.querySelector(".footer").offsetTop; 
                 
-        if (window.scrollY >= getTop(toc) - 20 && window.scrollY + sidebarHeight <= footerTop) {
+        // if (window.scrollY >= getTop(toc) - 20 && window.scrollY + sidebarHeight <= footerTop) {
+        if (window.scrollY >= getTop(toc) - 20) {
           addClass(div, "scroll");
         } else {
           removeClass(div, "scroll");
@@ -571,7 +572,7 @@ function accordion() {
 
       //Hide the other panels
       $(".accordion-content").not($(this).next()).slideUp("fast");
-      $(".accordion-content").not($(this)).removeClass("active");
+      $(".accordion-toggle").not($(this)).removeClass("active");
     });
   }); 
 }

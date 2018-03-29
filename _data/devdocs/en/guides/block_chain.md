@@ -4,7 +4,13 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/block_chain.md" %}
 
+<div class="accordion-toggle" markdown="block">
+
 ## Block Chain
+<!-- no subhead-links here -->
+</div>
+
+<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -388,3 +394,4 @@ increases to ensure they process received transactions and create new
 transactions using the current consensus rules.
 
 {% endautocrossref %}
+</div>

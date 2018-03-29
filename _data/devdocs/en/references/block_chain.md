@@ -4,7 +4,13 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/references/block_chain.md" %}
 
+<div class="accordion-toggle" markdown="block">
+
 ## Block Chain
+<!-- no subhead-links here -->
+</div>
+
+<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 The following subsections briefly document core block details.
@@ -233,4 +239,5 @@ invalid if it tries to spend more value than is available from the
 block reward.
 
 {% endautocrossref %}
+</div>
 

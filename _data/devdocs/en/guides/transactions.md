@@ -4,7 +4,13 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/transactions.md" %}
 
+<div class="accordion-toggle" markdown="block">
+
 ## Transactions
+<!-- no subhead-links here -->
+</div>
+
+<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -782,3 +788,4 @@ always work is to ensure the reissued payment spends all of the same
 outputs that the lost transaction used as inputs.
 
 {% endautocrossref %}
+</div>

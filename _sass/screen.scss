@@ -1212,6 +1212,9 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .toc .scroll {
     position: fixed;
     top: 20px;
+    min-width: 370px;
+    padding-bottom: 50px;
+    overflow-y: auto;
 }
 .toc ul,
 .toc li{
@@ -1296,7 +1299,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .toccontent h2{
     position: relative;
-    margin-top: 40px;
+    margin: 40px 0 10px;
     font-size: 162.5%;
     color: #FF7E00;
     font-weight: 400;
@@ -1316,23 +1319,11 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     transform: translateY(-50%) rotate(180deg);
 }
 .toccontent h3{
-    margin-top: 20px;
+    margin: 15px 0 10px;
     font-size: 137.5%;
     color: #13161F;
     line-height: 36px;
     font-weight: 400;
-}
-
-.toccontent li {
-    color: #ff9500;
-}
-
-.toccontent h2,
-.toccontent h3,
-.toccontent h4,
-.toccontent h5,
-.toccontent h6{
-    margin-bottom: 0;
 }
 .toccontent h4{
     font-size:110%;
@@ -1359,7 +1350,17 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     color:#63a4e1;
 }
 .toccontent .subhead-links{
-    padding-top: 7px;
+    margin-bottom: 20px;
+}
+.toccontent .subhead-links a {
+    display: inline-block;
+    font-size: 20px;
+}
+.toccontent .subhead-links a:not(:last-child){
+    margin-right: 15px;
+}
+.toccontent .subhead-links a:not(:first-child){
+    margin-left: 15px;
 }
 .toccontent a:link.term,
 .toccontent a:visited.term,
@@ -1427,45 +1428,38 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 
 .develdocdisclaimer{
-    padding:30px 0;
-    background:#fff;
-    bottom:0;
     position:fixed;
-    width:600px;
+    left: 0;
+    bottom:0;
+    padding:30px 0;
+    background:#fff9f3;
+    width: 100%;
     z-index:1000;
-    border-top:1px solid #e0e0e0;
+    text-align: center;
 }
 .develdocdisclaimer div{
-    border:2px dashed #ee9209;
-    background:#fff8ea;
-    padding:10px;
-    line-height:1.5em;
     position:relative;
+    max-width: 990px;
+    margin: 0 auto;
+    padding-right: 90px;
+    font-size: 112.5%;
+    box-sizing: border-box;
+}
+.develdocdisclaimer b{
+    color: #F7931A;
 }
 .develdocdisclaimerclose,
 .develdocdisclaimerclose:visited,
 .develdocdisclaimerclose:link,
 .develdocdisclaimerclose:active{
-    display:block;
-    padding:1px 8px 0 8px;
-    color:#fff;
-    background-color:#ee9209;
     position:absolute;
-    top:-14px;
-    right:-14px;
-    font-weight:bold;
+    top: 0px;
+    right: 0px;
+    width: 10px;
+    height: 10px;
     cursor:pointer;
-    border:2px solid #fff;
-    -webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    border-radius:20px;
-}
-.develdocdisclaimerclose:hover,
-.develdocdisclaimerclose:visited:hover,
-.develdocdisclaimerclose:link:hover,
-.develdocdisclaimerclose:active:hover{
-    border:2px solid #ee9209;
-    color:#fff;
+    background: url(../img/icons/close-btn.svg) center no-repeat;
+    background-size: contain;
 }
 .glossary_term {
     position: relative;
@@ -2768,6 +2762,15 @@ button.active {
     .core-column-right {
         padding-left: 60px;
     }
+    .develdocdisclaimer div {
+        padding: 0 60px 0 90px;
+    }
+    .develdocdisclaimerclose, 
+    .develdocdisclaimerclose:visited, 
+    .develdocdisclaimerclose:link, 
+    .develdocdisclaimerclose:active {
+        right: 30px;
+    }
 }
 
 @media handheld, only screen and ( max-width: 67.5em ), only screen and ( max-device-width: 67.5em ){
@@ -2898,10 +2901,6 @@ button.active {
     }
     .toc div>ul>li>ul>li:first-child {
         margin-top: 10px;
-    }
-    .develdocdisclaimer{
-        padding:15px;
-        width:auto;
     }
     .contributors{
         width:auto;
@@ -3530,6 +3529,17 @@ button.active {
     }
     .additional-links {
         padding-top: 40px;
+    }
+    .develdocdisclaimer {
+        padding: 40px 0 20px;
+    }
+    .develdocdisclaimer div {
+        padding: 0 16px;
+    }
+    .develdocdisclaimerclose, .develdocdisclaimerclose:visited, .develdocdisclaimerclose:link, .develdocdisclaimerclose:active {
+        top: -15px;
+        right: 0;
+        transform: translateX(-50%);
     }
 }
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){

@@ -4,7 +4,13 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/contracts.md" %}
 
+<div class="accordion-toggle" markdown="block">
+
 ## Contracts
+<!-- no subhead-links here -->
+</div>
+
+<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -287,3 +293,4 @@ CoinJoin is [CoinMux](http://coinmux.com/), available under the Apache
 license.
 
 {% endautocrossref %}
+</div>

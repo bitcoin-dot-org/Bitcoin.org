@@ -4,7 +4,14 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/p2p_network.md" %}
 
+<div class="accordion-toggle" markdown="block">
+
 ## P2P Network
+<!-- no subhead-links here -->
+
+</div>
+
+<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -605,3 +612,4 @@ Take note that for both types of broadcasting, mechanisms are in place to punish
 Earlier versions of Bitcoin Core allowed developers and trusted community members to issue [Bitcoin alerts](https://bitcoin.org/en/alerts) to notify users of critical network-wide issues. This messaging system [was retired](https://bitcoin.org/en/alert/2016-11-01-alert-retirement) in Bitcoin Core v0.13.0; however, internal alerts, partition detection warnings and the `-alertnotify` option features remain.
 
 {% endautocrossref %}
+</div>

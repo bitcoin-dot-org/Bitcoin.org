@@ -4,7 +4,13 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/wallets.md" %}
 
+<div class="accordion-toggle" markdown="block">
+
 ## Wallets
+<!-- no subhead-links here -->
+</div>
+
+<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -686,3 +692,4 @@ This created considerable difficulty<!--noref--> in backing up one’s keys, con
 This wallet type is being actively phased out and discouraged from being used due to the backup hassle.
 
 {% endautocrossref %}
+</div>
