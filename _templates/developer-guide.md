@@ -12,7 +12,7 @@ show_fragments: true
 show_toc: true
 ---
 
-<div class="toccontent-block" markdown="block">
+<div class="toccontent-block toccontent-intro" markdown="block">
 {% include_absolute _data/devdocs/{{page.lang}}/guides/intro.md _data/devdocs/en/guides/intro.md %}
 </div>
 

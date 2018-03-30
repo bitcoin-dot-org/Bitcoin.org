@@ -255,7 +255,6 @@ function updateToc() {
         var sidebarHeight = document.querySelector(".sidebar").offsetHeight; 
         var footerTop = document.querySelector(".footer").offsetTop; 
                 
-        // if (window.scrollY >= getTop(toc) - 20 && window.scrollY + sidebarHeight <= footerTop) {
         if (window.scrollY >= getTop(toc) - 20) {
           addClass(div, "scroll");
         } else {
@@ -568,11 +567,11 @@ function accordion() {
 
       //Expand or collapse this panel
       $(this).next().slideToggle('fast');
-      $(this).toggleClass("active");
+      $(this).parent().toggleClass("active");
 
       //Hide the other panels
       $(".accordion-content").not($(this).next()).slideUp("fast");
-      $(".accordion-toggle").not($(this)).removeClass("active");
+      $(".accordion-toggle").not($(this)).parent().removeClass("active");
     });
   }); 
 }
@@ -581,16 +580,19 @@ function onScrollButton() {
   var button = document.querySelector(".mob-sidebar-open");
   var buttonTop = button.offsetTop;
   var buttonHeight = button.offsetHeight;
-  var footerTop = document.querySelector(".footer").offsetTop;
   var sidebar = document.querySelector(".sidebar");
   var closeButton = document.querySelector(".mob-sidebar-close");
 
   function stickyButton() {
+    var footerTop = document.querySelector(".footer").offsetTop;
+    
     // Fixed menu
     if (window.scrollY >= buttonTop && window.scrollY + buttonHeight <= footerTop) {
       button.classList.add("is-fixed");
+      document.body.style.paddingTop = buttonHeight + 25 + "px";      
     } else {
       button.classList.remove("is-fixed");
+      document.body.style.paddingTop = "";
     }
   }
 

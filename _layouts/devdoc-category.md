@@ -30,7 +30,7 @@ end_of_page: |
   </div>
 </div>
 
-<div class="container">
+<div class="toc-container">
   <div class="row toc-row">
   {% markdown %}
 

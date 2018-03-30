@@ -1197,6 +1197,12 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 /* Developer Documentation page END*/
 
+.toc-container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 .toc-row {
     justify-content: center;
     padding: 95px 0 50px;
@@ -1212,7 +1218,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .toc .scroll {
     position: fixed;
     top: 20px;
-    min-width: 370px;
+    width: 370px;
     padding-bottom: 50px;
     overflow-y: auto;
 }
@@ -1281,11 +1287,11 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     min-width: 290px;
     border-left: 1px solid #dfdfdf;
 }
-.toccontent-block {
-    padding: 0 0 40px 30px;
-}
 .toccontent-block:not(:last-child) {
     border-bottom: 1px solid #dfdfdf;
+}
+.toccontent-intro {
+    padding: 0 0 40px 30px;
 }
 .toccontent p {
     margin-bottom: 20px;
@@ -1299,7 +1305,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .toccontent h2{
     position: relative;
-    margin: 40px 0 10px;
+    margin: 0;
     font-size: 162.5%;
     color: #FF7E00;
     font-weight: 400;
@@ -1309,13 +1315,13 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     content: '';
     position: absolute;
     top: 50%;
-    right: 40px;
+    right: 0;
     width: 10px;
     height: 6px;
     background: url(../img/icons/ico_angle.svg) no-repeat;
     transform: translateY(-50%);
 }
-.toccontent .active h2::after {
+.toccontent-block.active h2::after {
     transform: translateY(-50%) rotate(180deg);
 }
 .toccontent h3{
@@ -1398,9 +1404,16 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .accordion-toggle {
     cursor: pointer;
+    background: #f8f8f8;
+    padding: 30px 20px 30px 30px;
+}
+.active .accordion-toggle {
+    background: #fff;
+    padding: 30px 20px 20px 30px;
 }
 .accordion-content {
     display: none;
+    padding: 0 0 40px 30px;
 }
 .anchorAf{
     position:relative;
@@ -2033,33 +2046,6 @@ button.active {
 .titlelight{
     color:#8c8c8c;
 }
-
-// .tablehalf{
-//     width:885px;
-//     position:relative;
-//     left:-40px;
-// }
-// .tablehalf div{
-//     display:inline-block;
-//     width:400px;
-//     vertical-align:top;
-//     margin-left:40px;
-//     margin-bottom:20px;
-// }
-// .tablehalf img{
-//     width:400px;
-//     height:220px;
-//     -webkit-border-radius:10px;
-//     -moz-border-radius:10px;
-//     border-radius:10px;
-// }
-// .tablehalf h2 img{
-//     width:auto;
-//     height:auto;
-// }
-// .tablehalf p{
-//     text-align:left;
-// }
 .contributors{
     width:890px;
     text-align:left;
@@ -2241,21 +2227,6 @@ button.active {
     display:inline-block;
     margin-top:5px;
 }
-// .rss-link {
-//     font-size: 
-// }
-
-// h1 .rssicon{
-//     vertical-align:bottom;
-//     margin-bottom:9px;
-//     margin-left:10px;
-// }
-// h2 .rssicon{
-//     vertical-align:bottom;
-//     margin-bottom:7px;
-//     margin-left:10px;
-// }
-
 .versiontext{
     text-align:left;
     margin-bottom:40px;
@@ -2880,12 +2851,6 @@ button.active {
     .toc {
         min-width: 245px;
     }
-    .toccontent-block {
-        padding: 0 0 30px 30px;
-    }
-    .toccontent h2 {
-        margin-top: 30px;
-    }
     .toc div>ul>li {
         margin-bottom: 10px;
     }
@@ -2906,29 +2871,6 @@ button.active {
         min-width: auto;
         width: 245px;
     }
-    // .tablehalf{
-    //     position:static;
-    //     width:auto;
-    // }
-    // .tablehalf div{
-    //     display:block;
-    //     width:auto;
-    //     margin-left:0;
-    // }
-    // .tablehalf img{
-    //     width:auto;
-    //     height:auto;
-    //     margin:auto;
-    //     display:block;
-    // }
-    // .listtable div div{
-    //     display:block;
-    // }
-    // .eventtable div div:first-child,
-    // .eventtable div div:first-child+div,
-    // .eventtable div div:first-child+div+div{
-    //     width:auto;
-    // }
     .coredevtable div div:first-child,
     .coredevtable div div:first-child+div,
     .coredevtable div div:first-child+div+div{
@@ -3401,8 +3343,40 @@ button.active {
         margin-bottom: 30px;
         border-bottom: 1px solid #dfdfdf;
     }
+    .toc-container {
+        padding: 0;
+    }
     .toc-row {
         padding: 40px 0 50px;
+    }
+    .toc>div {
+        padding-right: 20px;
+        padding-left: 15px;
+    }
+    .toccontent-intro {
+        padding: 0 15px 40px;
+    }
+    .toccontent .subhead-links a {
+        font-size: 17px;
+    }
+    .toccontent .subhead-links a:not(:last-child) {
+        margin-right: 10px;
+    }
+    .toccontent .subhead-links a:not(:first-child) {
+        margin-left: 10px;
+    }
+    .toc ul li ul li a:hover:before,
+    .toc ul li ul li a.active:before {
+        right: -20px;
+    }
+    .accordion-toggle {
+        padding: 30px 15px;
+    }
+    .active .accordion-toggle {
+        padding: 30px 15px 20px;
+    }
+    .accordion-content {
+        padding: 0 15px 40px;
     }
      .menusimple {
          padding: 0;
@@ -3605,26 +3579,27 @@ button.active {
         flex-direction: column;
     }
     .toc {
-        min-width: 100%;
+        padding: 0 15px;
     }
     .toc>div {
         width: 100%;
-        padding-right: 0;
+        padding: 0;
         border: 0;
     }
     .toc .scroll {
         position: static;
+        width: auto;
+        padding-bottom: 0;
     }
     .glossary_term {
-        margin-bottom: 30px;
+        margin: 0 auto 30px;
     }
     .mob-sidebar-open {
         display: block;
-        min-width: 290px;
         width: 100%;
         height: 55px;
+        padding: 0 0 0 60px;
         box-sizing: border-box;
-        padding-left: 60px;
         margin-bottom: 25px;
         text-align: left;
         background: #F7931A url(../img/icons/ico_burger_light.svg) 26px 22px no-repeat;;
@@ -3696,16 +3671,32 @@ button.active {
     .toc div>ul>li>a::after {
         background: url(../img/icons/ico_angle_light.svg) no-repeat;
     }
-    .toccontent-block {
-        padding: 0;
-    }
     .toc ul li ul li a:hover:before,
     .toc ul li ul li a.active:before {
         right: auto;
         left: -20px;
     }
+    .accordion-toggle {
+        padding: 15px;
+    }
+    .active .accordion-toggle {
+        padding: 15px;
+        background: #f8f8f8;
+    }
+    .accordion-content {
+        padding: 20px 15px 40px;
+    }
     .toccontent {
         border: none;
+    }
+    .toccontent h2 {
+        font-size: 112.5%;
+    }
+    .toccontent .subhead-links a:not(:last-child) {
+        margin-right: 5px;
+    }
+    .toccontent .subhead-links a:not(:first-child) {
+        margin-left: 5px;
     }
     .dev-documentation {
         padding: 30px 0 50px;
