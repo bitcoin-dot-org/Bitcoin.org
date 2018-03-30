@@ -1502,6 +1502,39 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .glossary_term:-moz-placeholder { /* Firefox 18- */
   color: #bcb7b8;
 }
+.glossary-subpage-left {
+    float: left;
+    max-width: 57%;
+}
+.glossary-subpage-right {
+    float: right;
+    max-width: 29%;
+    min-width: 340px;
+    padding-left: 27px;
+}
+.glossary-subpage h2 {
+    font-size: 162.5%;
+    color: #FF7E00;
+    font-weight: 400;
+}
+.glossary-subpage h3 {
+    font-size: 137.5%;
+    color: #13161F;
+    line-height: 36px;
+    font-weight: 400;
+}
+.glossary-subpage p {
+    font-size: 125%;
+    color: #4D5060;
+    line-height: 34px;
+}
+.glossary-subpage li {
+    color: #ff9500;
+}
+.glossary-subpage-links li p {
+    font-size: 112.5%;
+    color: #42454c;
+}
 .ui-autocomplete-category {
     font-weight: bold;
     padding: .2em .4em;
@@ -1518,10 +1551,12 @@ br.clear {
     clear: left;
 }
 .notice {
-    text-align: center;
+    text-align: left;
 }
 .notice span {
-    font-style: italic;
+    font-size: 125%;
+    color: #4D5060;
+    line-height: 34px;
 }
 .subhead-links {
     font-size: 85%;
