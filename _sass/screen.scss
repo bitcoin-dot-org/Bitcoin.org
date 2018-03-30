@@ -1258,7 +1258,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .toc ul li.active ul{
     display:block;
 }
-.toc div > ul > li > a::after{
+#markdown-toc > li > a::after{
    content: '';
    position: absolute;
    top: 50%;
@@ -1268,7 +1268,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
    background: url(../img/icons/ico_angle.svg) no-repeat;
    transform: translateY(-50%);
 }
-.toc div > ul > .active > a::after{
+#markdown-toc > .active > a::after{
    transform: translateY(-50%) rotate(180deg);
 }
 .toc ul li ul li a {
@@ -1284,6 +1284,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     background: #FF7E00;
 }
 .toccontent {
+    width: 100%;
     min-width: 290px;
     border-left: 1px solid #dfdfdf;
 }
@@ -1311,7 +1312,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-weight: 400;
     text-align: left;
 }
-.toccontent h2::after{
+.toccontent-block h2::after{
     content: '';
     position: absolute;
     top: 50%;
@@ -2857,6 +2858,9 @@ button.active {
     .toc div>ul>li>ul>li:first-child {
         margin-top: 10px;
     }
+    #markdown-toc>li>a::after {
+        right: -15px;
+    }
     .toccontent .multicode,
     .toccontent pre{
         padding:10px;
@@ -3675,6 +3679,9 @@ button.active {
     .toc ul li ul li a.active:before {
         right: auto;
         left: -20px;
+    }
+    #markdown-toc>li>a::after {
+        right: 0;
     }
     .accordion-toggle {
         padding: 15px;

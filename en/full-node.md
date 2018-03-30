@@ -93,20 +93,35 @@ Core running.
 
 -->
 
+<div class="hero">
+<div class="container" markdown="1">
 # Running A Full Node
 
 <p class="summary">Support the Bitcoin network by running your own full node</p>
+</div>
+</div>
 
+<div class="toc-container">
+<div class="row toc-row">
 <div markdown="1" id="toc" class="toc"><div markdown="1">
+<button class="mob-sidebar-open" hidden>ALL TOPICS</button>
+<div class="sidebar">
+<div class="sidebar-inner" markdown="1">
+<button class="mob-sidebar-close" hidden></button>
+
 
 * Table of contents
 {:toc}
 
 <ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new">Report An Issue</a></li></ul>
 <ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
+</div>
+</div>
 
 </div></div>
 <div markdown="1" class="toccontent">
+
+<div class="toccontent-intro" markdown="1">
 
 ## What Is A Full Node?
 
@@ -125,9 +140,14 @@ Many people and organizations volunteer to run full nodes using spare
 computing and bandwidth resources---but more volunteers are needed to
 allow Bitcoin to continue to grow.  This document describes how you can
 help and what helping will cost you.
+</div>
 
+<div class="toccontent-block" markdown="1">
+<div class="accordion-toggle" markdown="1">
 ## Costs And Warnings
+</div>
 
+<div class="accordion-content" markdown="1">
 Running a Bitcoin full node comes with certain costs and can expose you
 to certain risks. This section will explain those costs and risks so you
 can decide whether you're able to help the network.
@@ -193,9 +213,15 @@ have an easy-to-use node.
 ### Possible Problems
 
 {% include bitcoin-core/bitcoin-core-possible-problems.md %}
+</div>
+</div>
 
+<div class="toccontent-block">
+<div class="accordion-toggle" markdown="1">
 ## Linux Instructions
+</div>
 
+<div class="accordion-content" markdown="1">
 The following instructions describe installing Bitcoin Core on Linux
 systems.
 
@@ -556,12 +582,15 @@ If you're a expert system administrator and want to use an init script instead, 
 </div>
 
 {{installFinished}}
+</div>
+</div>
 
-
-
-
+<div class="toccontent-block">
+<div class="accordion-toggle" markdown="1">
 ## Windows Instructions
+</div>
 
+<div class="accordion-content" markdown="1">
 ### Windows 10
 
 *Instructions for Bitcoin Core 0.14.2 on Windows 10
@@ -1031,11 +1060,15 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 </div>
 
 {{installFinished}}
+</div>
+</div>
 
-
-
+<div class="toccontent-block" markdown="1">
+<div class="accordion-toggle" markdown="1">
 ## Mac OS X Instructions
+</div>
 
+<div class="accordion-content" markdown="1">
 ### Mac OS X Yosemite 10.10.x
 
 *Instructions for Bitcoin Core 0.14.2 on Mac OS X Yosemite*
@@ -1138,9 +1171,15 @@ The next time you login to your desktop, Bitcoin Core daemon will be automatical
 </div>
 
 {{installFinished}}
+</div>
+</div>
 
+<div class="toccontent-block" markdown="1">
+<div class="accordion-toggle" markdown="1">
 ## Upgrading Bitcoin Core
+</div>
 
+<div class="accordion-content" markdown="1">
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over /Applications/Bitcoin-Qt (on Mac) or
@@ -1159,9 +1198,15 @@ upgrade from a very old version.
 
 Sometimes downgrade is not possible because of changes to the data files. Again,
 check the release notes for the new version if you are planning to downgrade.
+</div>
+</div>
 
+<div class="toccontent-block" markdown="1">
+<div class="accordion-toggle" markdown="1">
 ## Network Configuration
+</div>
 
+<div class="accordion-content" markdown="1">
 If you want to support the Bitcoin network, you must allow inbound
 connections.
 
@@ -1423,9 +1468,15 @@ ask for help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
+</div>
+</div>
 
+<div class="toccontent-block" markdown="1">
+<div class="accordion-toggle" markdown="1">
 ## Configuration Tuning
+</div>
 
+<div class="accordion-content" markdown="1">
 This section contains advice about how to change your Bitcoin Core
 configuration to adapt it to your needs.
 
@@ -1435,10 +1486,10 @@ limit it to using one CPU core for signature verification, you can start
 Bitcoin Core like this:
 
 {% highlight bash %}
-## Bitcoin Core daemon
+### Bitcoin Core daemon
 bitcoind -par=1 -daemon
 
-## Bitcoin Core GUI
+### Bitcoin Core GUI
 bitcoin-qt -par=1
 {% endhighlight %}
 
@@ -1551,6 +1602,12 @@ won't see incoming transactions until they've received at least one confirmation
 
 You will still be able to send transactions from the built-in wallet or from
 peers you've whitelisted using the `-whitelist` parameter.
+</div>
+</div>
 
 </div>
+</div>
+</div>
 <script>updateToc();</script>
+<script>accordion();</script>
+<script>onScrollButton();</script>
