@@ -1511,7 +1511,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .glossary-subpage-right {
     float: right;
-    min-width: 340px;
+    width: 340px;
     padding-left: 27px;
     border-left: 1px solid #dfdfdf;
 }
@@ -2602,6 +2602,7 @@ button.active {
     color: #9D9D9D;
     text-align: center;
     margin: 0 auto;
+    font-size: 137.5%;
 }
 
 .press h2{
@@ -3153,7 +3154,7 @@ button.active {
         float: none;
         padding: 0;
         border: none;
-        min-width: auto;
+        width: auto;
     }
     .glossary-subpage-search .glossary_term {    
         max-width: 710px;
@@ -3620,6 +3621,7 @@ button.active {
         float: none;
         height: auto;
         max-width: 100%;
+        width: 100%;
         padding: 0;
         margin-top: 25px;
         border-left: none;
@@ -3629,6 +3631,9 @@ button.active {
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
     p {
         line-height: 1.7em;
+    }
+    .summarytxt {
+        font-size: 112.5%;
     }
     .hero {
         padding: 80px 0 90px;
