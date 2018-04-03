@@ -23,8 +23,9 @@ h1{
 }
 h2{
     font-weight:700;
-    color:#383838;
-    font-size:130%;
+    color:#FF7E00;
+    font-size:162.5%;
+    font-weight: 400;
 }
 h3{
     color:#383838;
@@ -1576,12 +1577,11 @@ br.clear {
 }
 .subhead-links {
     font-size: 85%;
+    background: #13161f;
 }
-.subhead-links img {
-    width: 12px;
-    height: 12px;
+.subhead-links a {
+    color: #9D9D9D;
 }
-
 div.one-column {
         max-width: 600px;
         margin-right: auto;
@@ -1609,8 +1609,11 @@ div.post {
         margin-right: auto;
         margin-left: auto;
 }
-.post img {
-        max-width: 100%;
+.post-content {
+    padding: 70px 0;
+}
+.post-content img {
+    max-width: 100%;
 }
 .post-meta {
         margin-top: 20px;
@@ -3622,7 +3625,7 @@ button.active {
         height: auto;
         max-width: 100%;
         width: 100%;
-        padding: 0;
+        padding: 20px 0 0;
         margin-top: 25px;
         border-left: none;
         border-top: 1px solid #dfdfdf;
@@ -3909,9 +3912,6 @@ button.active {
     }
     .glossary-subpage-left>p {
         margin: 0 0 10px;
-    }
-    .glossary-subpage-links {
-        padding-top: 20px;
     }
 }
 
