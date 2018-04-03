@@ -76,16 +76,6 @@ The `getrawmempool` RPC {{summary_getRawMemPool}}
   p: "Required<br>(exactly 1)"
   d: "The block height when the transaction entered the memory pool"
 
-- n: "→ →<br>`startingpriority`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The priority of the transaction when it first entered the memory pool"
-
-- n: "→ →<br>`currentpriority`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The current priority of the transaction"
-
 - n: "→ →<br>`descendantcount`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
