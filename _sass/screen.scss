@@ -604,11 +604,11 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     display: block;
     height: 50px;
     width: 50px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 .card h2 {
     min-height: 64px;
-    margin: 20px 0 0;
+    margin: 20px 0 30px;
     text-align: center;
     font-size: 137.5%;
     color: #13161F;
@@ -2171,30 +2171,75 @@ button.active {
 }
 /* Resources page end */
 
-.resourcesorg{
-    margin-bottom:40px;
-    text-align:left;
-    font-size:0;
+/* Community page start */
+.community-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 70px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #dfdfdf;
 }
-.resourcesorg div{
-    border-top:1px solid #e0e0e0;
+.community-card {
+    min-height: 475px;
+    margin-right: 30px;
 }
-.resourcesorg div:first-child,.resourcesorg div div{
-    border-top:0;
+.community-card:nth-child(3n+3) {
+    margin-right: 30px;
 }
-.resourcesorg div div{
-    width:278px;
-    font-size:16px;
-    display:inline-block;
-    vertical-align:top;
+.organizations-title {
+    margin: 0 auto 60px;
+    text-align: center;
 }
-.resourcesorg img{
-    margin-right:5px;
-    width:24px;
-    height:24px;
-    position:relative;
-    bottom:-6px;
+/* Community page end */
+
+.organizations-row {
+    justify-content: left;
+    flex-wrap: wrap;
 }
+.organizations-item {
+    width: 31.6%;
+    margin-right: 2.5%;
+    margin-bottom: 50px;
+}
+.organizations-item:nth-child(3n+3) {
+    margin-right: 0;
+}
+.organizations-item img {
+    width: 40px;
+    height: 33px;
+    margin-right: 28px;
+}
+.organizations-item h3 {
+    margin: 0;
+    font-size: 137.5%;
+    color: #13161F;
+    line-height: 36px;
+    font-weight: 400;
+}
+// .resourcesorg{
+//     margin-bottom:40px;
+//     text-align:left;
+//     font-size:0;
+// }
+// .resourcesorg div{
+//     border-top:1px solid #e0e0e0;
+// }
+// .resourcesorg div:first-child,.resourcesorg div div{
+//     border-top:0;
+// }
+// .resourcesorg div div{
+//     width:278px;
+//     font-size:16px;
+//     display:inline-block;
+//     vertical-align:top;
+// }
+// .resourcesorg img{
+//     margin-right:5px;
+//     width:24px;
+//     height:24px;
+//     position:relative;
+//     bottom:-6px;
+// }
 
 .exchanges{
     margin-bottom:40px;
