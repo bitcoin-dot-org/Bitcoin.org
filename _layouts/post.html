@@ -41,14 +41,13 @@ end_of_page: |
         <div class="sidebar-inner" markdown="1">
           <button class="mob-sidebar-close" hidden></button>
            {% include toc.html html=content %}
-
         </div>
       </div>
     </div>
   {% endif %}
 
     <div markdown="1" class="toccontent">
-      <article class="post-content">
+      <article class="article">
         {{ content }}
         <p class="post-meta">Posted to the
         <a href="/en/blog">Bitcoin.org Site Blog</a> on {{ page.date | date: "%d %B %Y" }} {% if page.author %} by {{ page.author }}{% endif

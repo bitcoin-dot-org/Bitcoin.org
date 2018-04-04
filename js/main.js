@@ -567,7 +567,7 @@ function accordion() {
 
       //Expand or collapse this panel
       $(this).next().slideToggle('fast');
-      $(this).parent().toggleClass("active");
+      $(this).toggleClass("active");
 
       //Hide the other panels
       $(".accordion-content").not($(this).next()).slideUp("fast");

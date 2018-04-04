@@ -1277,10 +1277,12 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     right: -35px;
     background: #FF7E00;
 }
+.toc + .toccontent {
+    border-left: 1px solid #dfdfdf;
+}
 .toccontent {
     width: 100%;
     min-width: 290px;
-    border-left: 1px solid #dfdfdf;
 }
 .toccontent-block:not(:last-child) {
     border-bottom: 1px solid #dfdfdf;
@@ -1306,7 +1308,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-weight: 400;
     text-align: left;
 }
-.toccontent-block h2::after{
+.accordion-toggle h2::after{
     content: '';
     position: absolute;
     top: 50%;
@@ -1316,7 +1318,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     background: url(../img/icons/ico_angle.svg) no-repeat;
     transform: translateY(-50%);
 }
-.toccontent-block.active h2::after {
+.accordion-toggle.active h2::after {
     transform: translateY(-50%) rotate(180deg);
 }
 .toccontent h3{
@@ -1597,23 +1599,23 @@ div.one-column {
         text-align: center;
 }
 
-div.post {
-        max-width: 40em;
-        margin-right: auto;
-        margin-left: auto;
-}
-.post-content {
-    padding: 70px 0;
-}
-.post-content img {
+// div.post {
+//         max-width: 40em;
+//         margin-right: auto;
+//         margin-left: auto;
+// }
+.article img {
     max-width: 100%;
 }
+.post-content {
+    padding: 0 0 0 30px;
+}
 .post-meta {
-        margin-top: 20px;
-        font-style: italic;
+    padding-left: 30px;
+    margin-top: 20px;
 }
 .post-title {
-        padding-top: 20px;
+    padding-top: 20px;
 }
 
 table.privacy-comparison td,table.privacy-comparison th{

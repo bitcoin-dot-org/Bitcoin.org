@@ -5,7 +5,7 @@
 type: posts
 layout: post
 category: blog
-
+show_toc: true
 title: "New Bitcoin Core Sub-Site"
 permalink: /en/posts/bitcoin-core-subsite.html
 ## Set correct date at merge
@@ -14,6 +14,7 @@ author: |
   <a href="https://github.com/harding">David A. Harding</a>
 ---
 
+<div class="post-content" markdown="1">
 Bitcoin.org is proud to announce the addition of a dozen new pages to
 the site about [Bitcoin Core][].  Several of the pages describe [Bitcoin
 Core's powerful features][], others [provide help][] for Bitcoin Core
@@ -39,8 +40,13 @@ These new pages give us a chance to introduce more recent Bitcoin users
 to the advantages of full nodes like Bitcoin Core, particularly how full
 validation [helps protect Bitcoin's essential decentralization][] from
 takeover by a handful of miners, Bitcoin banks, and service providers.
+</div>
+
+<div class="accordion-toggle" markdown="1">
 
 ## A Brief Guide to The New Pages
+</div>
+<div class="accordion-content" markdown="1">
 
 - [Bitcoin Core overview][]: provides a brief description of Bitcoin
   Core and links to the other sections of the sub-site.
@@ -54,8 +60,14 @@ takeover by a handful of miners, Bitcoin banks, and service providers.
 
 - [Contribute overview][]: links to ways you can directly contribute to
   Bitcoin Core and Bitcoin Core users.
+</div>
+
+<div class="accordion-toggle" markdown="1">
 
 ## Future Plans
+</div>
+
+<div class="accordion-content" markdown="1">
 
 We plan to enhance this new section of the Bitcoin.org website by
 collecting together some of Bitcoin Core's disparate documentation and
@@ -70,9 +82,14 @@ their own full nodes.
 If you want to help, please feel free to email the Bitcoin.org
 documentation maintainer,
 {{site.text.bitcoin_org_docs_maintainer_email_link}}.
+</div>
+
+<div class="accordion-toggle" markdown="1">
 
 ## Thank You
+</div>
 
+<div class="accordion-content" markdown="1">
 Thank you to everyone who made these pages possible, especially the
 people who reviewed Bitcoin.org pull requests [1044][],
 [1009][], [1007][], [966][], [957][], and [869][] as well as the
@@ -101,3 +118,4 @@ hesitate to [open an issue][].
 [869]: https://github.com/bitcoin-dot-org/bitcoin.org/pull/869
 [Bitcoin Foundation]: https://bitcoinfoundation.org/
 [open an issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
+</div>

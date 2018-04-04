@@ -13,6 +13,7 @@ author: |
   <a href="https://github.com/wbnns">Will Binns</a>
 ---
 
+<div class="post-content" markdown="1">
 {:.center}
 ![Redesigning Bitcoin.org](/img/blog/free/redesigning-homepage.png)
 
@@ -39,7 +40,13 @@ Please help spread the word and choose your favorite design.
 
 [View the results](https://dcdt.typeform.com/report/rv9C1j/rZcaOMYTVMaEiLi1).
 
+</div>
+
+<div class="accordion-toggle" markdown="1">
+
 ## About Bitcoin.org
+</div>
+<div class="accordion-content" markdown="1">
 
 Bitcoin.org was originally registered and owned by Satoshi Nakamoto and Martti
 Malmi. When Satoshi left the project, he gave ownership of the domain to
@@ -52,7 +59,13 @@ There have been over 3,200 commits from 180 contributors from all over the
 world. In addition to this, over 950 translators have helped to make the site
 display natively to visitors by default in their own languages —now 25
 different languages and growing.
+</div>
+
+<div class="accordion-toggle" markdown="1">
 
 ## Interested in getting involved?
+</div>
+<div class="accordion-content" markdown="1">
 
 [Learn how you can participate](https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate).
+</div>

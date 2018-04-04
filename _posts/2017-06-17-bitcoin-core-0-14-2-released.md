@@ -5,6 +5,7 @@
 type: posts
 layout: post
 category: blog
+show_toc: true
 
 title: "Bitcoin Core Version 0.14.2 Released"
 permalink: /en/posts/bitcoin-core-version-0-14-2-released.html
@@ -13,6 +14,7 @@ author: |
   <a href="https://github.com/wbnns">Will Binns</a>
 ---
 
+<div class="post-content" markdown="1">
 {:.center}
 ![Bitcoin Core Version 0.14.2](/img/blog/free/bitcoin-core-0142.png)
 
@@ -25,9 +27,14 @@ Please report bugs using the [issue tracker on GitHub](https://github.com/bitcoi
 
 [Subscribe here](https://bitcoincore.org/en/list/announcements/join/) to receive
 security and update notifications.
+</div>
+
+<div class="accordion-toggle" markdown="1">
 
 ## Compatibility
+</div>
 
+<div class="accordion-content" markdown="1">
 Bitcoin Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
@@ -40,8 +47,14 @@ instabilities and issues. Please do not report issues about Windows XP to the
 
 Bitcoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
+</div>
+
+<div class="accordion-toggle" markdown="1">
 
 ## Notable changes
+</div>
+
+<div class="accordion-content" markdown="1">
 
 ### miniupnp CVE-2017-8798
 
@@ -56,17 +69,27 @@ setting or through the `-upnp` option, as since the last UPnP vulnerability
 
 If you use this option, it is recommended to upgrade to this version as soon as
 possible.
+</div>
+
+<div class="accordion-toggle" markdown="1">
 
 ## Known Bugs
+</div>
 
+<div class="accordion-content" markdown="1">
 Since 0.14.0 the approximate transaction fee shown in Bitcoin-Qt when using coin
 control and smart fee estimation does not reflect any change in target from the
 smart fee slider. It will only present an approximate fee calculated using the
 default target. The fee calculated using the correct target is still applied to
 the transaction and shown in the final send confirmation dialog.
+</div>
+
+<div class="accordion-toggle" markdown="1">
 
 ## 0.14.2 Change log
+</div>
 
+<div class="accordion-content" markdown="1">
 Detailed release notes follow. This overview includes changes that affect
 behavior, not code moves, refactors and string updates. For convenience in locating
 the code changes and accompanying discussion, both the pull request and
@@ -98,9 +121,14 @@ git merge commit are mentioned.
 ### Wallet
 
 - \#10294 `1847642` Unset change position when there is no change (instagibbs)
+</div>
+
+<div class="accordion-toggle" markdown="1">
 
 ## Credits
+</div>
 
+<div class="accordion-content" markdown="1">
 Thanks to everyone who directly contributed to this release:
 
 - Alex Morcos
@@ -115,3 +143,4 @@ Thanks to everyone who directly contributed to this release:
 
 As well as everyone that helped translating on
 [Transifex](https://www.transifex.com/projects/p/bitcoin/).
+</div>

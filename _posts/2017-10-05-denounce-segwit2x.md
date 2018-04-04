@@ -6,7 +6,6 @@ type: posts
 layout: post
 lang: en
 category: blog
-
 title: "Bitcoin.org to denounce \"Segwit2x\""
 permalink: /en/posts/denounce-segwit2x.html
 date: 2017-10-05

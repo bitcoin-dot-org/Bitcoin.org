@@ -5,6 +5,7 @@
 type: posts
 layout: post
 category: blog
+show_toc: true
 
 title: "Bitcoin Core Version 0.14.1 Released"
 permalink: /en/posts/bitcoin-core-version-0-14-1-released.html
@@ -13,6 +14,7 @@ author: |
   <a href="https://github.com/wbnns">Will Binns</a>
 ---
 
+<div class="post-content" markdown="1">
 {:.center}
 ![Bitcoin Core Version 0.14.1](/img/blog/free/bitcoin-core-0141.png)
 
@@ -24,8 +26,14 @@ Please report bugs using the [issue tracker on GitHub](https://github.com/bitcoi
 
 [Subscribe here](https://bitcoincore.org/en/list/announcements/join/) to receive
 security and update notifications.
+</div>
+
+<div class="accordion-toggle" markdown="1">
 
 ## Compatibility
+</div>
+
+<div class="accordion-content" markdown="1">
 
 Bitcoin Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
@@ -39,8 +47,14 @@ instabilities and issues. Please do not report issues about Windows XP to the
 
 Bitcoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
+</div>
+
+<div class="accordion-toggle" markdown="1">
 
 ## Notable changes
+</div>
+
+<div class="accordion-content" markdown="1">
 
 ### RPC changes
 
@@ -84,8 +98,14 @@ this parameter.
 Additional information relating to running on low-memory systems can be found
 here:
 [reducing-bitcoind-memory-usage.md](https://gist.github.com/laanwj/efe29c7661ce9b6620a7).
+</div>
+
+<div class="accordion-toggle" markdown="1">
 
 ## 0.14.1 Change log
+</div>
+
+<div class="accordion-content" markdown="1">
 
 Detailed release notes follow. This overview includes changes that affect
 behavior, not code moves, refactors and string updates. For convenience in locating
@@ -133,8 +153,14 @@ git merge commit are mentioned.
 - \#10037 `4d8e660` Trivial: Fix typo in help getrawtransaction RPC (keystrike)
 - \#10120 `e4c9a90` util: Work around (virtual) memory exhaustion on 32-bit w/ glibc (laanwj)
 - \#10130 `ecc5232` bitcoin-tx input verification (awemany, jnewbery)
+</div>
+
+<div class="accordion-toggle" markdown="1">
 
 ## Credits
+</div>
+
+<div class="accordion-content" markdown="1">
 
 Thanks to everyone who directly contributed to this release:
 
@@ -155,3 +181,4 @@ Thanks to everyone who directly contributed to this release:
 
 As well as everyone that helped translating on
 [Transifex](https://www.transifex.com/projects/p/bitcoin/).
+</div>
