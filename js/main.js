@@ -589,7 +589,7 @@ function onScrollButton() {
     // Fixed menu
     if (window.scrollY >= buttonTop && window.scrollY + buttonHeight <= footerTop) {
       button.classList.add("is-fixed");
-      document.body.style.paddingTop = buttonHeight + 25 + "px";      
+      document.body.style.paddingTop = buttonHeight + 25 + "px";
     } else {
       button.classList.remove("is-fixed");
       document.body.style.paddingTop = "";
