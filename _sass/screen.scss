@@ -3831,7 +3831,7 @@ button.active {
         height: 100%;
         background: #1d2028;
         box-sizing: border-box;
-        z-index: 20;
+        z-index: 100;
     }
     .mob-sidebar-close {
         display: block;
@@ -3995,6 +3995,9 @@ button.active {
     }
     .organizations-item {
         width: 100%;
+    }
+    .post-content {
+        padding: 0 0 30px;
     }
 }
 
