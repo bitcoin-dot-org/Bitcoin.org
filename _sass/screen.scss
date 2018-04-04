@@ -1050,13 +1050,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .starttitle a{
     margin:0 20px auto;
 }
-.introlink{
-    text-align:center;
-    font-size:125%;
-    font-weight:bold;
-    margin-top:30px;
-}
-
 .support-card {
     min-height: 395px;
 }
@@ -2172,6 +2165,9 @@ button.active {
 /* Resources page end */
 
 /* Community page start */
+.community {
+    padding: 70px 0;
+}
 .community-row {
     flex-wrap: wrap;
     justify-content: center;
@@ -2182,6 +2178,7 @@ button.active {
 .community-card {
     min-height: 475px;
     margin-right: 30px;
+    width: 370px;
 }
 .community-card:nth-child(3n+3) {
     margin-right: 30px;
@@ -2190,8 +2187,6 @@ button.active {
     margin: 0 auto 60px;
     text-align: center;
 }
-/* Community page end */
-
 .organizations-row {
     justify-content: left;
     flex-wrap: wrap;
@@ -2200,22 +2195,36 @@ button.active {
     width: 31.6%;
     margin-right: 2.5%;
     margin-bottom: 50px;
+    text-align: left;
 }
 .organizations-item:nth-child(3n+3) {
     margin-right: 0;
 }
-.organizations-item img {
+.organization-img {
     width: 40px;
     height: 33px;
     margin-right: 28px;
 }
-.organizations-item h3 {
+.organization-country {
     margin: 0;
     font-size: 137.5%;
     color: #13161F;
     line-height: 36px;
     font-weight: 400;
 }
+.organization-link {
+    font-size: 112.5%;
+    color: #4D5060;
+    line-height: 34px;
+}
+.introlink{
+    text-align:center;
+    font-size: 125%;
+    color: #4D5060;
+    line-height: 34px;
+}
+/* Community page end */
+
 // .resourcesorg{
 //     margin-bottom:40px;
 //     text-align:left;
@@ -3236,6 +3245,18 @@ button.active {
     .notice {
         margin: 0 0 10px;
     }
+    .community-row {
+        justify-content: space-between;
+    }
+    .community-card:nth-child(3n+3) {
+        margin-right: 0;
+    }
+    .organizations-item {
+        width: 47.5%;
+    }
+    .organizations-item:nth-child(3n+3) {
+        margin-right: 2.5%;
+    }
 }
 
 @media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ){
@@ -3675,6 +3696,9 @@ button.active {
         border-left: none;
         border-top: 1px solid #dfdfdf;
     }
+    .community {
+        padding: 50px 0;
+    }
 }
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
     p {
@@ -3957,6 +3981,9 @@ button.active {
     }
     .glossary-subpage-left>p {
         margin: 0 0 10px;
+    }
+    .organizations-item {
+        width: 100%;
     }
 }
 
