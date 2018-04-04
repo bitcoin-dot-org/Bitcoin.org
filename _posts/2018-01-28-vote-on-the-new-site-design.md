@@ -42,6 +42,7 @@ Please help spread the word and choose your favorite design.
 
 </div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## About Bitcoin.org
@@ -60,7 +61,9 @@ world. In addition to this, over 950 translators have helped to make the site
 display natively to visitors by default in their own languages —now 25
 different languages and growing.
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Interested in getting involved?
@@ -68,4 +71,5 @@ different languages and growing.
 <div class="accordion-content" markdown="1">
 
 [Learn how you can participate](https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate).
+</div>
 </div>

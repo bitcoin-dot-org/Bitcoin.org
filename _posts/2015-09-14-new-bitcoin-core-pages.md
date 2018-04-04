@@ -42,6 +42,7 @@ validation [helps protect Bitcoin's essential decentralization][] from
 takeover by a handful of miners, Bitcoin banks, and service providers.
 </div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## A Brief Guide to The New Pages
@@ -61,7 +62,9 @@ takeover by a handful of miners, Bitcoin banks, and service providers.
 - [Contribute overview][]: links to ways you can directly contribute to
   Bitcoin Core and Bitcoin Core users.
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Future Plans
@@ -83,7 +86,9 @@ If you want to help, please feel free to email the Bitcoin.org
 documentation maintainer,
 {{site.text.bitcoin_org_docs_maintainer_email_link}}.
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Thank You
@@ -118,4 +123,5 @@ hesitate to [open an issue][].
 [869]: https://github.com/bitcoin-dot-org/bitcoin.org/pull/869
 [Bitcoin Foundation]: https://bitcoinfoundation.org/
 [open an issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
+</div>
 </div>

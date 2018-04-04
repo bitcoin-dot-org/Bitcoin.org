@@ -57,6 +57,7 @@ Summary for December 2014, January 2015, and February 2015.
   Reddit](http://www.reddit.com/r/Bitcoin/comments/2wvdko/new_page_on_bitcoinorg_running_a_full_node/).
 </div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Translations
@@ -94,7 +95,9 @@ volunteers and paid translators on our [Transifex project
 page](https://www.transifex.com/projects/p/bitcoinorg/) as well as the
 many reviews made by Saïvann Carignan.
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Developer documentation
@@ -144,7 +147,9 @@ quarter include:
 Most documentation was written by David A. Harding, with reviews
 conducted by Saïvann Carignan, Jonas Schnelli, and others.
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Regular Updates
@@ -189,7 +194,9 @@ page](https://bitcoin.org/en/resources) (and its many translations).
 We are grateful to all of the contributors who opened issues and made
 pull requests to keep the site content current and useful.
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Wallets
@@ -244,7 +251,9 @@ over reviewing wallets and managing wallet requirements. This is a great
 volunteer position for anyone who likes trying new wallets and who wants
 to interact directly with wallet authors.
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## New Full Node Guide
@@ -294,7 +303,9 @@ five days and has received over 4,000 page views.
 The guide was primarily written by David A. Harding, with reviews by
 Saïvann Carignan and Jameson Lopp, and promotion also by Jameson.
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Website Improvements
@@ -341,7 +352,9 @@ Saïvann Carignan wrote the code to enable the torrent and magnet links
 as well as sorting releases by version number. J. Louis optimized the
 SVG images.
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Server And Development Tools
@@ -394,7 +407,9 @@ GitHub user @patrikr, Christopher Gurnee, and David. Preventative
 maintenance and audit code were contributions by Saïvann, and the
 volunteer quick start guide was contributed by David.
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Public Website Statistics
@@ -409,7 +424,9 @@ volunteer quick start guide was contributed by David.
 ![stats January 2015(/img/blog/free/stats-2015-01.png)
 ![stats February 2015](/img/blog/free/stats-2015-02.png)
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Expense Report
@@ -433,7 +450,9 @@ volunteer quick start guide was contributed by David.
 | Developer documentation  | -2.614 684 15 BTC
 | **New balance**          | &nbsp;8.085 174 61  BTC
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Next Quarter's Goals
@@ -492,7 +511,9 @@ following three major goals during the next quarter:
    forthcoming and we will be looking for other ways to encourage and
    simplify first-time contributions.
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Thanks To Sponsors And Volunteers
@@ -524,4 +545,5 @@ requests and issues.
 *If you have any questions about the content of this report, please
 [open an issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) on
 GitHub or email Dave Harding, <dave@dtrt.org>.*
+</div>
 </div>

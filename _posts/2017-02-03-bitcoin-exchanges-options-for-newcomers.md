@@ -23,6 +23,8 @@ author: |
 economies](https://bitcoin.org/en/exchanges), as well as several international
 options (serving many countries) are now available on Bitcoin.org.
 </div>
+
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Helping People Interested in Bitcoin, Get Bitcoin
@@ -48,7 +50,9 @@ because custodial wallets that provide exchange services can be moved off of the
 wallets page to this new page).
 - Is also accessible via the Resources `dropdown` menu.
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Questions, Comments & Feedback
@@ -59,7 +63,9 @@ Questions, issues, suggestions or feedback are always welcome on Bitcoin.org. If
 interested in contributing in this regard, please open an issue or submit a pull
 request.
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Use Discretion when Choosing an Exchange
@@ -76,4 +82,5 @@ before selecting an exchange.
 Interested in getting involved with Bitcoin.org?
 
 [Learn how you can participate](https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate).
+</div>
 </div>

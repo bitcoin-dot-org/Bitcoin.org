@@ -1221,6 +1221,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     list-style:none;
     padding:0;
     margin:0;
+    text-align: left;
 }
 .toc div > ul > li {
     margin-bottom: 20px;
@@ -1284,11 +1285,15 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     width: 100%;
     min-width: 290px;
 }
-.toccontent-block:not(:last-child) {
+.toccontent-block {
+    border-top: 1px solid #dfdfdf;
+}
+.toccontent-block:last-child {
     border-bottom: 1px solid #dfdfdf;
 }
 .toccontent-intro {
     padding: 0 0 40px 30px;
+    border:none;
 }
 .toccontent p {
     margin-bottom: 20px;
@@ -1354,6 +1359,8 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .toccontent .subhead-links{
     margin-bottom: 20px;
+    color: #e1e1e1;
+    font-size: 22px;
 }
 .toccontent .subhead-links a {
     display: inline-block;
@@ -1401,7 +1408,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .accordion-toggle {
     cursor: pointer;
-    background: #f8f8f8;
     padding: 30px 20px 30px 30px;
 }
 .active .accordion-toggle {
@@ -1570,11 +1576,12 @@ br.clear {
     color: #4D5060;
     line-height: 34px;
 }
-.subhead-links {
+
+.content > .subhead-links {
     font-size: 85%;
     background: #13161f;
 }
-.subhead-links a {
+.content > .subhead-links a {
     color: #9D9D9D;
 }
 div.one-column {
@@ -1608,7 +1615,7 @@ div.one-column {
     max-width: 100%;
 }
 .post-content {
-    padding: 0 0 0 30px;
+    padding: 0 0 40px 30px;
 }
 .post-meta {
     padding-left: 30px;
@@ -3869,15 +3876,17 @@ button.active {
     }
     .accordion-toggle {
         padding: 15px;
-    }
-    .active .accordion-toggle {
-        padding: 15px;
         background: #f8f8f8;
+    }
+
+    .accordion-toggle.active {
+        padding: 15px;
+        background: #fff;
     }
     .accordion-content {
         padding: 20px 15px 40px;
     }
-    .toccontent {
+    .toc+.toccontent {
         border: none;
     }
     .toccontent h2 {

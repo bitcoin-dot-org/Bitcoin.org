@@ -28,6 +28,7 @@ Please report bugs using the [issue tracker on GitHub](https://github.com/bitcoi
 security and update notifications.
 </div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Compatibility
@@ -48,7 +49,9 @@ instabilities and issues. Please do not report issues about Windows XP to the
 Bitcoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Notable changes
@@ -99,7 +102,9 @@ Additional information relating to running on low-memory systems can be found
 here:
 [reducing-bitcoind-memory-usage.md](https://gist.github.com/laanwj/efe29c7661ce9b6620a7).
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## 0.14.1 Change log
@@ -154,7 +159,9 @@ git merge commit are mentioned.
 - \#10120 `e4c9a90` util: Work around (virtual) memory exhaustion on 32-bit w/ glibc (laanwj)
 - \#10130 `ecc5232` bitcoin-tx input verification (awemany, jnewbery)
 </div>
+</div>
 
+<div class="toccontent-block" markdown="1">
 <div class="accordion-toggle" markdown="1">
 
 ## Credits
@@ -181,4 +188,5 @@ Thanks to everyone who directly contributed to this release:
 
 As well as everyone that helped translating on
 [Transifex](https://www.transifex.com/projects/p/bitcoin/).
+</div>
 </div>
