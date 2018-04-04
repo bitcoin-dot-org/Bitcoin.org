@@ -16,7 +16,6 @@ show_toc: true
 {% include_absolute _data/devdocs/{{page.lang}}/examples/intro.md _data/devdocs/en/examples/intro.md %}
 </div>
 
-
 <div class="toccontent-block" markdown="block">
 {% include_absolute _data/devdocs/{{page.lang}}/examples/testing.md _data/devdocs/en/examples/testing.md %}
 </div>

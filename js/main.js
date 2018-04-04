@@ -571,7 +571,7 @@ function accordion() {
 
       //Hide the other panels
       $(".accordion-content").not($(this).next()).slideUp("fast");
-      $(".accordion-toggle").not($(this)).parent().removeClass("active");
+      $(".accordion-toggle").not($(this)).removeClass("active");
     });
   }); 
 }

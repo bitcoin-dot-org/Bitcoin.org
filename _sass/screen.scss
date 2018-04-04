@@ -829,6 +829,9 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     background: #fff;
     border: 1px solid #FF7E00;
 }
+.get-started-btn {
+    margin: 0 auto 70px;
+}
 .mainbutton a,
 .mainbutton a:link,
 .mainbutton a:visited,
@@ -1336,8 +1339,12 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .toccontent h4{
     font-size:110%;
 }
-.toccontent h5,.toccontent h6{
+.toccontent h5,
+.toccontent h6{
     font-size:100%;
+}
+.toccontent ol {
+    font-size: 125%;
 }
 .toccontent img{
     max-width:100%;
@@ -2074,10 +2081,21 @@ button.active {
       color: #B8860B;
 }
 
-.box{
-    border:2px dashed #4892b2;
-    padding:0 20px 0 20px;
+/* Secure your wallet page START */
+.secure-content-block .accordion-content > * {
+    margin-left: 30px;
 }
+.secure-content-block .accordion-content {
+    padding: 0 0 40px;
+}
+.secure-content-block .accordion-content > .box {
+    margin: 0 0 40px 0;
+    padding: 20px 70px 20px 30px;
+    background: #f8f8f8;
+}
+/* Secure your wallet page END */
+
+
 .boxexpand{
     overflow:hidden;
     -moz-transition:height 400ms ease-out;
@@ -2087,15 +2105,12 @@ button.active {
 .boxexpand>*{
     display:none;
 }
-.boxexpand>h3:first-child{
+
+.boxexpand>div {
     display:block;
     margin:20px 0;
 }
-.boxexpand>h3:first-child a:link,
-.boxexpand>h3:first-child a:visited,
-.boxexpand>h3:first-child a:active{
-    text-decoration:none;
-}
+
 .boxexpand.expanded>*{
     display:block;
 }
@@ -2150,9 +2165,6 @@ button.active {
 }
 
 /* Bitcoin for individuals page start */
-.individuals {
-    margin: 0 0 70px;
-}
 .individuals-card {
     min-height: 500px;
 }
@@ -2160,6 +2172,16 @@ button.active {
     margin: 0;
 }
 /* Bitcoin for individuals page end */
+
+/* Bitcoin for developers page start */
+.developers-link {
+    margin: 0 0 20px;
+    text-align:center;
+    font-size: 125%;
+    color: #4D5060;
+    line-height: 34px;
+}
+/* Bitcoin for developers page end */
 
 /* Resources page start */
 .resources-card {
@@ -2233,31 +2255,6 @@ button.active {
     line-height: 34px;
 }
 /* Community page end */
-
-// .resourcesorg{
-//     margin-bottom:40px;
-//     text-align:left;
-//     font-size:0;
-// }
-// .resourcesorg div{
-//     border-top:1px solid #e0e0e0;
-// }
-// .resourcesorg div:first-child,.resourcesorg div div{
-//     border-top:0;
-// }
-// .resourcesorg div div{
-//     width:278px;
-//     font-size:16px;
-//     display:inline-block;
-//     vertical-align:top;
-// }
-// .resourcesorg img{
-//     margin-right:5px;
-//     width:24px;
-//     height:24px;
-//     position:relative;
-//     bottom:-6px;
-// }
 
 .exchanges{
     margin-bottom:40px;
@@ -3756,7 +3753,6 @@ button.active {
     }
     .btn {
         display: block;
-        margin: 0 auto;
     }
     .card-row {
         margin: 50px 0;
