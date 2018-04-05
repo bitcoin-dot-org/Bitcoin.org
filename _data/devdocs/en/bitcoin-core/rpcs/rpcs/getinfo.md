@@ -89,7 +89,7 @@ Core.  Use the RPCs listed in the See Also subsection below instead.
 - n: "→<br>`paytxfee`"
   t: "number (bitcoins)"
   p: "Optional<br>(0 or 1)"
-  d: "The minimum fee to pay per kilobyte of transaction; may be `0`.  Only returned if wallet suuport is enabled"
+  d: "The minimum fee to pay per kilobyte of transaction; may be `0`.  Only returned if wallet support is enabled"
 
 - n: "→<br>`relayfee`"
   t: "number (bitcoins)"
