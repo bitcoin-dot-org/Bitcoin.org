@@ -4,14 +4,9 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/examples/transactions.md" %}
 
-<div class="accordion-toggle" markdown="block">
 
 ## Transactions
-<!-- no subhead-links here -->
 
-</div>
-
-<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 ### Transaction Tutorial
@@ -1284,4 +1279,3 @@ We send the transaction spending the P2SH multisig output to the local
 node, which accepts it.
 
 {% endautocrossref %}
-</div>

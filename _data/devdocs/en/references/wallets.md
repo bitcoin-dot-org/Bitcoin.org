@@ -4,13 +4,8 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/references/wallets.md" %}
 
-<div class="accordion-toggle" markdown="block">
 
 ## Wallets 
-<!-- no subhead-links here -->
-</div>
-
-<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 ### Deterministic Wallet Formats
@@ -39,4 +34,3 @@ For an overview of HD wallets, please see the [developer guide
 section][devguide wallets].  For details, please see BIP32.
 
 {% endautocrossref %}
-</div>

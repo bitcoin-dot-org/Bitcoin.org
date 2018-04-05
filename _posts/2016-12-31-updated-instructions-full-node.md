@@ -35,13 +35,10 @@ and [how to tweak the reference client configuration](https://bitcoin.org/en/ful
 are available.
 </div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## Why is running a full bitcoin node important?
-</div>
 
-<div class="accordion-content" markdown="1">
 Full nodes help enforce the consensus rules of the Bitcoin network. When a full
 node client is running, it downloads every new block and every new transaction
 and checks them to make sure they are valid. Here are some examples of consensus
@@ -62,13 +59,10 @@ incentives for supporting the network in the [Bitcoin Wiki](https://en.bitcoin.i
 </div>
 </div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## Minimum Requirements
-</div>
 
-<div class="accordion-content" markdown="1">
 Bitcoin Core full nodes have certain requirements. If you try running a node on
 weak hardware, it may work — but you’ll likely spend more time dealing with
 issues. If you can meet the following requirements, you’ll have an easy-to-use
@@ -101,29 +95,21 @@ desktops. Check your screensaver settings and disable automatic “sleep” or
 “suspend” options to ensure you support the network whenever your computer is
 running.
 </div>
-</div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## What to do if you need help
-</div>
 
-<div class="accordion-content" markdown="1">
 Please seek out assistance in the [community](https://bitcoin.org/en/community)
 if you need help setting up your full node correctly to handle high-value and
 privacy-sensitive tasks. Do your own diligence to ensure who you get help from
 is ethical, reputable and qualified to assist you.
 </div>
-</div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## Acknowledgments
-</div>
 
-<div class="accordion-content" markdown="1">
 A special thanks goes to the contributors (in no preferential order) who have
 worked to improve this page over time:
 
@@ -152,5 +138,4 @@ worked to improve this page over time:
 **Interested in getting involved?**
 
 [Learn how you can participate](https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate).
-</div>
 </div>

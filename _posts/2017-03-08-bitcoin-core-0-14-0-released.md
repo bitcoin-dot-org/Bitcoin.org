@@ -29,13 +29,10 @@ Please report bugs using the [issue tracker on GitHub](https://github.com/bitcoi
 security and update notifications.
 </div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## Compatibility
-</div>
 
-<div class="accordion-content" markdown="1">
 Bitcoin Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
@@ -49,14 +46,10 @@ instabilities and issues. Please do not report issues about Windows XP to the
 Bitcoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 </div>
-</div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## Notable changes
-</div>
-<div class="accordion-content" markdown="1">
 
 ### Performance Improvements
 
@@ -353,15 +346,11 @@ security
   memory usage during IBD for those previously relying on only the `-dbcache`
   option to limit memory during that time.
 </div>
-</div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## 0.14.0 Change log
-</div>
 
-<div class="accordion-content" markdown="1">
 Detailed release notes follow. This overview includes changes that affect
 behavior, not code moves, minor refactors and string updates. For convenience
 in locating the code changes and accompanying discussion, both the pull request
@@ -905,15 +894,11 @@ and git merge commit are mentioned.
 - \#9798 `e22c067` Fix Issue #9775 (Check returned value of fopen) (kirit93)
 - \#9856 `69832aa` Terminate immediately when allocation fails (theuni)
 </div>
-</div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## Credits
-</div>
 
-<div class="accordion-content" markdown="1">
 Thanks to everyone who directly contributed to this release:
 
 - accraze
@@ -1020,5 +1005,4 @@ Thanks to everyone who directly contributed to this release:
 
 As well as everyone that helped translating on
 [Transifex](https://www.transifex.com/projects/p/bitcoin/).
-</div>
 </div>

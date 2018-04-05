@@ -4,13 +4,8 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/mining.md" %}
 
-<div class="accordion-toggle" markdown="block">
 
 ## Mining
-<!-- no subhead-links here -->
-</div>
-
-<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -219,4 +214,3 @@ pools. The [libblkmaker][] C library and [python-blkmaker][] library,
 both MIT licensed, can interpret GetBlockTemplate for your programs.
 
 {% endautocrossref %}
-</div>

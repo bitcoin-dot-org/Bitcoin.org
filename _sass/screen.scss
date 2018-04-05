@@ -1316,7 +1316,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 //     text-align: left;
 // }
 .toccontent h3{
-    margin: 15px 0 10px;
     font-size: 137.5%;
     color: #13161F;
     line-height: 36px;
@@ -2084,23 +2083,29 @@ button.active {
 }
 .boxexpand>*{
     display:none;
-    padding: 0 0 40px;
+    // padding: 0 0 40px;
     margin-left: 30px;
+}
+.boxexpand.expanded {
+    padding-bottom: 40px;
 }
 .boxexpand.expanded>*{
     display:block;
 }
-.boxexpand>h2 {
+.boxexpand>h2:first-child,
+.boxexpand>h3:first-child {
     display:block;
     position: relative;
     padding: 30px 20px 30px 30px;
     margin: 0;
     cursor: pointer;
 }
-.boxexpand.expanded>h2 {
+.boxexpand.expanded>h2:first-child,
+.boxexpand.expanded>h3:first-child {
     padding: 30px 20px 20px 30px;
 }
-.boxexpand>h2::after{
+.boxexpand>h2:first-child::after, 
+.boxexpand>h3:first-child::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -2110,7 +2115,8 @@ button.active {
     background: url(../img/icons/ico_angle.svg) no-repeat;
     transform: translateY(-50%);
 }
-.boxexpand.expanded>h2::after {
+.boxexpand.expanded>h2:first-child::after,
+.boxexpand.expanded>h3:first-child::after {
     transform: translateY(-50%) rotate(180deg);
 }
 .titlelight{

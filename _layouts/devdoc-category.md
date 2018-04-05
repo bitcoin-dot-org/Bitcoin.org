@@ -8,7 +8,7 @@ end_of_page: |
   <script src="/js/jquery/jquery-ui.min.js"></script>
   <script src="/js/devsearch.js"></script>
   <script>updateToc();</script>
-  <script>accordion();</script>
+  <script>boxShow();</script>
   <script>onScrollButton();</script>
 ---
 <link rel="stylesheet" href="/css/jquery-ui.min.css">

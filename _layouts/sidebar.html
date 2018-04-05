@@ -20,11 +20,11 @@ end_of_page: |
 <div class="container">
   <div class="row toc-row">
 
-    <div markdown="1" id="toc" class="toc">
-      <div markdown="1">
+    <div id="toc" class="toc">
+      <div>
         <button class="mob-sidebar-open" hidden>ALL TOPICS</button>
         <div class="sidebar">
-          <div class="sidebar-inner" markdown="1">
+          <div class="sidebar-inner">
             <button class="mob-sidebar-close" hidden></button>
             {% include helpers/toc.html html=content %}
           </div>
@@ -32,7 +32,7 @@ end_of_page: |
       </div>
     </div>
 
-    <div markdown="1" class="toccontent">
+    <div class="toccontent">
       {{ content }}
     </div>
   </div>

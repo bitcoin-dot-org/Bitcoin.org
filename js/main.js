@@ -155,7 +155,10 @@ function boxShow(e) {
     expandBox(t);
     cancelEvent(e);
   }
-  document.querySelectorAll(".boxexpand > h2").forEach(function(accordionToggle) {
+  document.querySelectorAll(".boxexpand > h2:first-child").forEach(function(accordionToggle) {
+    return accordionToggle.addEventListener("click", init);
+  });
+  document.querySelectorAll(".boxexpand > h3:first-child").forEach(function(accordionToggle) {
     return accordionToggle.addEventListener("click", init);
   });
 }
@@ -220,7 +223,7 @@ function updateToc() {
         pageoffset = getPageYOffset();
         windowy = getWindowY();
         toc = document.getElementById('toc');
-        fallback = document.getElementsByTagName('H2')[0];
+        fallback = document.getElementsByTagName("H2")[0] || document.getElementsByTagName("H3")[0];
         first = [fallback, getTop(fallback)];
         last = [fallback, getTop(fallback)];
         closer = [fallback, getTop(fallback)];

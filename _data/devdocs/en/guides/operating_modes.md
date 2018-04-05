@@ -4,13 +4,8 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/operating_modes.md" %}
 
-<div class="accordion-toggle" markdown="block">
 
 ## Operating Modes
-<!-- no subhead-links here -->
-</div>
-
-<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -109,4 +104,3 @@ Until these types of operating modes are implemented, modes should be chosen bas
 **Resources:** [Original Thread on UTXO Commitments](https://bitcointalk.org/index.php?topic=88208.0), [Authenticated Prefix Trees BIP Proposal](https://github.com/maaku/bips/blob/master/drafts/auth-trie.mediawiki)
 
 {% endautocrossref %}
-</div>

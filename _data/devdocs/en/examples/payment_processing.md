@@ -4,15 +4,8 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/examples/payment_processing.md" %}
 
-<div class="accordion-toggle" markdown="block">
 
 ## Payment Processing
-<!-- no subhead-links here -->
-
-</div>
-
-<div class="accordion-content" markdown="block">
-
 {% include helpers/subhead-links.md %}
 
 ### Payment Protocol
@@ -479,4 +472,3 @@ created by the program above appears in the GUI from Bitcoin Core 0.9.
 ![Bitcoin Core Showing Validated Payment Request](/img/dev/en-btcc-payment-request.png)
 
 {% endautocrossref %}
-</div>

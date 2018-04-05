@@ -16,22 +16,22 @@ show_toc: true
 {% include_absolute _data/devdocs/{{page.lang}}/references/intro.md _data/devdocs/en/references/intro.md %}
 </div>
 
-<div class="toccontent-block" markdown="block">
+<div class="toccontent-block boxexpand" markdown="block">
 {% include_absolute _data/devdocs/{{page.lang}}/references/block_chain.md _data/devdocs/en/references/block_chain.md %}
 </div>
 
-<div class="toccontent-block" markdown="block">
+<div class="toccontent-block boxexpand" markdown="block">
 {% include_absolute _data/devdocs/{{page.lang}}/references/transactions.md _data/devdocs/en/references/transactions.md %}
 </div>
 
-<div class="toccontent-block" markdown="block">
+<div class="toccontent-block boxexpand" markdown="block">
 {% include_absolute _data/devdocs/{{page.lang}}/references/wallets.md _data/devdocs/en/references/wallets.md %}
 </div>
 
-<div class="toccontent-block" markdown="block">
+<div class="toccontent-block boxexpand" markdown="block">
 {% include_absolute _data/devdocs/{{page.lang}}/references/p2p_networking.md _data/devdocs/en/references/p2p_networking.md %}
 </div>
 
-<div class="toccontent-block" markdown="block">
+<div class="toccontent-block boxexpand" markdown="block">
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/api-intro.md _data/devdocs/en/bitcoin-core/api-intro.md %}
 </div>

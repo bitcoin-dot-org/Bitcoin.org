@@ -4,13 +4,8 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/payment_processing.md" %}
 
-<div class="accordion-toggle" markdown="block">
 
 ## Payment Processing
-<!-- no subhead-links here -->
-</div>
-
-<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -727,4 +722,3 @@ secure for the spender than clicking an emailed invoice, increasing the
 chance receivers get paid on time.
 
 {% endautocrossref %}
-</div>

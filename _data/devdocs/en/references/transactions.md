@@ -4,14 +4,8 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/references/transactions.md" %}
 
-<div class="accordion-toggle" markdown="block">
 
 ## Transactions
-<!-- no subhead-links here -->
-
-</div>
-
-<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 The following subsections briefly document core transaction details.
@@ -423,4 +417,3 @@ the numbers look like regular unsigned integers in little-endian order.
 For example, the number 515 is encoded as 0xfd0302.
 
 {% endautocrossref %}
-</div>

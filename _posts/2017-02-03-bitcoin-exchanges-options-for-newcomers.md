@@ -24,13 +24,10 @@ economies](https://bitcoin.org/en/exchanges), as well as several international
 options (serving many countries) are now available on Bitcoin.org.
 </div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## Helping People Interested in Bitcoin, Get Bitcoin
-</div>
 
-<div class="accordion-content" markdown="1">
 This new addition to the site:
 
 - Links to the `Find an Exchange` button on the [Getting Started](https://bitcoin.org/en/getting-started)
@@ -50,28 +47,20 @@ because custodial wallets that provide exchange services can be moved off of the
 wallets page to this new page).
 - Is also accessible via the Resources `dropdown` menu.
 </div>
-</div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## Questions, Comments & Feedback
-</div>
 
-<div class="accordion-content" markdown="1">
 Questions, issues, suggestions or feedback are always welcome on Bitcoin.org. If
 interested in contributing in this regard, please open an issue or submit a pull
 request.
 </div>
-</div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## Use Discretion when Choosing an Exchange
-</div>
 
-<div class="accordion-content" markdown="1">
 As noted in the above screen shot, Bitcoin Exchanges provide varying degrees of
 safety, security, privacy, and control over your funds and information. Perform
 your own due diligence and choose a wallet where you will keep your bitcoin
@@ -82,5 +71,4 @@ before selecting an exchange.
 Interested in getting involved with Bitcoin.org?
 
 [Learn how you can participate](https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate).
-</div>
 </div>

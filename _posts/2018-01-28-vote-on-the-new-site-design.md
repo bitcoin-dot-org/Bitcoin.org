@@ -42,12 +42,9 @@ Please help spread the word and choose your favorite design.
 
 </div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## About Bitcoin.org
-</div>
-<div class="accordion-content" markdown="1">
 
 Bitcoin.org was originally registered and owned by Satoshi Nakamoto and Martti
 Malmi. When Satoshi left the project, he gave ownership of the domain to
@@ -61,15 +58,10 @@ world. In addition to this, over 950 translators have helped to make the site
 display natively to visitors by default in their own languages —now 25
 different languages and growing.
 </div>
-</div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## Interested in getting involved?
-</div>
-<div class="accordion-content" markdown="1">
 
 [Learn how you can participate](https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate).
-</div>
 </div>

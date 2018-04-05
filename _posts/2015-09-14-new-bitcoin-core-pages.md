@@ -42,12 +42,9 @@ validation [helps protect Bitcoin's essential decentralization][] from
 takeover by a handful of miners, Bitcoin banks, and service providers.
 </div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## A Brief Guide to The New Pages
-</div>
-<div class="accordion-content" markdown="1">
 
 - [Bitcoin Core overview][]: provides a brief description of Bitcoin
   Core and links to the other sections of the sub-site.
@@ -62,15 +59,10 @@ takeover by a handful of miners, Bitcoin banks, and service providers.
 - [Contribute overview][]: links to ways you can directly contribute to
   Bitcoin Core and Bitcoin Core users.
 </div>
-</div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## Future Plans
-</div>
-
-<div class="accordion-content" markdown="1">
 
 We plan to enhance this new section of the Bitcoin.org website by
 collecting together some of Bitcoin Core's disparate documentation and
@@ -86,15 +78,11 @@ If you want to help, please feel free to email the Bitcoin.org
 documentation maintainer,
 {{site.text.bitcoin_org_docs_maintainer_email_link}}.
 </div>
-</div>
 
-<div class="toccontent-block" markdown="1">
-<div class="accordion-toggle" markdown="1">
+<div class="toccontent-block boxexpand" markdown="1">
 
 ## Thank You
-</div>
 
-<div class="accordion-content" markdown="1">
 Thank you to everyone who made these pages possible, especially the
 people who reviewed Bitcoin.org pull requests [1044][],
 [1009][], [1007][], [966][], [957][], and [869][] as well as the
@@ -123,5 +111,4 @@ hesitate to [open an issue][].
 [869]: https://github.com/bitcoin-dot-org/bitcoin.org/pull/869
 [Bitcoin Foundation]: https://bitcoinfoundation.org/
 [open an issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
-</div>
 </div>

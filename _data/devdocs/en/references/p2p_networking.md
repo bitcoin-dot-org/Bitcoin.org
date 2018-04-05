@@ -4,13 +4,8 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/references/p2p_networking.md" %}
 
-<div class="accordion-toggle" markdown="block">
 
 ## P2P Network
-<!-- no subhead-links here -->
-</div>
-
-<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -1271,4 +1266,3 @@ cf050500 ........................... Start height: 329167
 {% endhighlight %}
 
 {% endautocrossref %}
-</div>
