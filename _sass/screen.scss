@@ -2675,22 +2675,9 @@ button.active {
 .press h2{
     font-size:150%;
 }
-
-.press-volunteer{
-    text-align:left;
-    margin-bottom:40px;
-}
-
 .press-faq{
     text-align:left;
     margin-bottom:40px;
-}
-.press-faq>div{
-    width:380px;
-    display:inline-block;
-    vertical-align:top;
-    margin-bottom:15px;
-    margin-right:30px;
 }
 .press-faq>div>a{
     display:inline-block;
@@ -2738,34 +2725,33 @@ button.active {
     border-radius:10px;
 }
 
-.press-pictures{
-    text-align:left;
-    margin-bottom:40px;
-}
-.press-pictures div{
-    height:270px;
-    overflow:hidden;
-    -moz-transition:height 400ms ease-out;
-    -webkit-transition:height 400ms ease-out;
-    transition:height 400ms ease-out;
-}
-.press-pictures img{
-    margin-right:14px;
-    margin-bottom:14px;
-    height:120px;
-    width:120px;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    border-radius:10px;
-}
-.press-pictures>a{
-    display:inline-block;
-    padding-top:10px;
-    font-weight:bold;
-}
+// .press-pictures{
+//     text-align:left;
+//     margin-bottom:40px;
+// }
+// .press-pictures div{
+//     height:270px;
+//     overflow:hidden;
+//     -moz-transition:height 400ms ease-out;
+//     -webkit-transition:height 400ms ease-out;
+//     transition:height 400ms ease-out;
+// }
+// .press-pictures img{
+//     margin-right:14px;
+//     margin-bottom:14px;
+//     height:120px;
+//     width:120px;
+//     -webkit-border-radius:10px;
+//     -moz-border-radius:10px;
+//     border-radius:10px;
+// }
+// .press-pictures>a{
+//     display:inline-block;
+//     padding-top:10px;
+//     font-weight:bold;
+// }
 
 .press-quotes{
-    margin-bottom:40px;
     overflow:hidden;
     -moz-transition:height 400ms ease-out;
     -webkit-transition:height 400ms ease-out;
@@ -2774,54 +2760,82 @@ button.active {
 .press-quotes.expanded{
     height:auto;
 }
-.press-quotes div{
-    position:relative;
-    left:-20px;
-    text-align:left;
-}
-.press-quotes p{
-    display:inline-block;
-    vertical-align:top;
-    width:380px;
-    margin:0 0 20px 20px;
-        padding-left: 20px;
-}
-.press-quotes p:nth-child(1n+9){
+.quote:nth-child(1n+9){
     display:none;
 }
-.press-quotes.expanded p:nth-child(1n+9){
-    display:inline-block;
+.press-quotes.expanded .quote:nth-child(1n+9){
+    display: block;
 }
-.press-quotes>a{
-    display:inline-block;
-    padding-top:10px;
-    font-weight:bold;
-}
-.press-quotes.expanded>a{
+.press-quotes.expanded .show-more-link{
     display:none;
 }
-.press-quotes span:first-child{
-    font-weight:bold;
-    display:block;
-    margin-bottom:4px;
+.show-more-link {
+    font-size: 112.5%;
 }
-.press-quotes span:first-child:before{
-    position:absolute;
-    margin-left:-16px;
-    font-weight:bold;
-    font-size:180%;
-    content:"";
+.press-quotes .quote {
+    text-align: center;
 }
-.press-quotes span:first-child:after{
-    position:absolute;
-    margin-right:-16px;
-    font-weight:bold;
-    font-size:180%;
-    content:"";
+.quote {
+    position: relative;
+    max-width: 400px;
+    padding-top: 45px;
+    margin: 0 auto 50px;
 }
-.press-quotes p.final {
-    width: 100%;
+.quote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 33px;
+    height: 29px;
+    transform: translateX(-50%);
+    background: url(../img/icons/quote.svg) center no-repeat;
+    background-size: contain;
 }
+.quote-text {
+    margin-bottom: 10px;
+    font-size: 125%;
+    font-weight: 600;
+    line-height: 34px;
+    color: #4D5060;
+}
+.quote-author {
+    font-size: 18px;
+}
+.quote-author-position {
+    font-size: 14px;
+    color: #9D9D9D;
+}
+.quote span {
+    display: block;
+}
+// .press-quotes>a{
+//     display:inline-block;
+//     padding-top:10px;
+//     font-weight:bold;
+// }
+// .press-quotes span:first-child{
+//     font-weight: 600;
+//     display:block;
+//     margin-bottom:4px;
+// }
+// .press-quotes span:first-child:before{
+//     position:absolute;
+//     margin-left:-16px;
+//     font-weight:bold;
+//     font-size:180%;
+//     content:"";
+// }
+// .press-quotes span:first-child:after{
+//     position:absolute;
+//     margin-right:-16px;
+//     font-weight:bold;
+//     font-size:180%;
+//     content:"";
+// }
+// .press-quotes p.final {
+//     width: 100%;
+// }
 
 /*Styles specific to printing*/
 
@@ -3989,6 +4003,9 @@ button.active {
     }
     .post-content {
         padding: 0 0 30px;
+    }
+    .boxexpand>* {
+        margin-left: 0;
     }
 }
 
