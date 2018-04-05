@@ -138,17 +138,12 @@ function loadYoutubeVideo(e) {
 
 function expandBox(t) {
   // Expand or shrink box.
-  var phe = getHeight(t);
   t.style.transition = t.style.MozTransition = t.style.WebkitTransition = 'all 0s ease 0s';
   if (t.className.indexOf('expanded') === -1) addClass(t, 'expanded');
   else removeClass(t, 'expanded');
-  t.style.height = '';
-  var nhe = getHeight(t);
-  t.style.height = phe + 'px';
-  // Async call to prevent transition from applying on last style.height statement.
+  
   setTimeout(function() {
     t.style.transition = t.style.MozTransition = t.style.WebkitTransition = '';
-    t.style.height = nhe + 'px';
   }, 20);
 }
 
@@ -160,7 +155,9 @@ function boxShow(e) {
     expandBox(t);
     cancelEvent(e);
   }
-  onTouchClick(e, init);
+  document.querySelectorAll(".boxexpand > h2").forEach(function(accordionToggle) {
+    return accordionToggle.addEventListener("click", init);
+  });
 }
 
 function faqShow(e) {
@@ -584,15 +581,17 @@ function onScrollButton() {
   var closeButton = document.querySelector(".mob-sidebar-close");
 
   function stickyButton() {
-    var footerTop = document.querySelector(".footer").offsetTop;
-    
-    // Fixed menu
-    if (window.scrollY >= buttonTop && window.scrollY + buttonHeight <= footerTop) {
-      button.classList.add("is-fixed");
-      document.body.style.paddingTop = buttonHeight + 25 + "px";
-    } else {
-      button.classList.remove("is-fixed");
-      document.body.style.paddingTop = "";
+    if (document.documentElement.clientWidth <= 640) {
+      var footerTop = document.querySelector(".footer").offsetTop;
+
+      // Fixed menu
+      if (window.scrollY >= buttonTop && window.scrollY + buttonHeight <= footerTop) {
+        button.classList.add("is-fixed");
+        document.body.style.paddingTop = buttonHeight + 25 + "px";
+      } else {
+        button.classList.remove("is-fixed");
+        document.body.style.paddingTop = "";
+      }
     }
   }
 

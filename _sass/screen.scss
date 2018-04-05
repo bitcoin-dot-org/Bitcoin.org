@@ -1291,7 +1291,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .toccontent-block {
     border-top: 1px solid #dfdfdf;
 }
-.toccontent-block:last-child {
+.toccontent-block:last-of-type {
     border-bottom: 1px solid #dfdfdf;
 }
 .toccontent-intro {
@@ -1308,27 +1308,13 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .toccontent p:last-child {
     margin-bottom: 0;
 }
-.toccontent h2{
-    position: relative;
-    margin: 0;
-    font-size: 162.5%;
-    color: #FF7E00;
-    font-weight: 400;
-    text-align: left;
-}
-.accordion-toggle h2::after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 10px;
-    height: 6px;
-    background: url(../img/icons/ico_angle.svg) no-repeat;
-    transform: translateY(-50%);
-}
-.accordion-toggle.active h2::after {
-    transform: translateY(-50%) rotate(180deg);
-}
+// .toccontent h2{
+//     position: relative;
+//     font-size: 162.5%;
+//     color: #FF7E00;
+//     font-weight: 400;
+//     text-align: left;
+// }
 .toccontent h3{
     margin: 15px 0 10px;
     font-size: 137.5%;
@@ -1413,14 +1399,14 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-weight:normal;
     border-bottom: 3px double #ddd;
 }
-.accordion-toggle {
-    cursor: pointer;
-    padding: 30px 20px 30px 30px;
-}
-.active .accordion-toggle {
-    background: #fff;
-    padding: 30px 20px 20px 30px;
-}
+// .accordion-toggle {
+//     cursor: pointer;
+//     padding: 30px 20px 30px 30px;
+// }
+// .active .accordion-toggle {
+//     background: #fff;
+//     padding: 30px 20px 20px 30px;
+// }
 .accordion-content {
     display: none;
     padding: 0 0 40px 30px;
@@ -2082,13 +2068,7 @@ button.active {
 }
 
 /* Secure your wallet page START */
-.secure-content-block .accordion-content > * {
-    margin-left: 30px;
-}
-.secure-content-block .accordion-content {
-    padding: 0 0 40px;
-}
-.secure-content-block .accordion-content > .box {
+.secure-content-block > .box {
     margin: 0 0 40px 0;
     padding: 20px 70px 20px 30px;
     background: #f8f8f8;
@@ -2104,17 +2084,35 @@ button.active {
 }
 .boxexpand>*{
     display:none;
+    padding: 0 0 40px;
+    margin-left: 30px;
 }
-
-.boxexpand>div {
-    display:block;
-    margin:20px 0;
-}
-
 .boxexpand.expanded>*{
     display:block;
 }
-
+.boxexpand>h2 {
+    display:block;
+    position: relative;
+    padding: 30px 20px 30px 30px;
+    margin: 0;
+    cursor: pointer;
+}
+.boxexpand.expanded>h2 {
+    padding: 30px 20px 20px 30px;
+}
+.boxexpand>h2::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 10px;
+    height: 6px;
+    background: url(../img/icons/ico_angle.svg) no-repeat;
+    transform: translateY(-50%);
+}
+.boxexpand.expanded>h2::after {
+    transform: translateY(-50%) rotate(180deg);
+}
 .titlelight{
     color:#8c8c8c;
 }
@@ -3538,14 +3536,11 @@ button.active {
     .toc ul li ul li a.active:before {
         right: -20px;
     }
-    .accordion-toggle {
+    .boxexpand > h2 {
         padding: 30px 15px;
     }
-    .active .accordion-toggle {
+    .expanded.boxexpand > h2 {
         padding: 30px 15px 20px;
-    }
-    .accordion-content {
-        padding: 0 15px 40px;
     }
      .menusimple {
          padding: 0;
@@ -3870,23 +3865,17 @@ button.active {
     #markdown-toc>li>a::after {
         right: 0;
     }
-    .accordion-toggle {
+    .boxexpand>h2 {
         padding: 15px;
+        font-size: 112.5%;
         background: #f8f8f8;
     }
-
-    .accordion-toggle.active {
+    .boxexpand.expanded > h2 {
         padding: 15px;
         background: #fff;
     }
-    .accordion-content {
-        padding: 20px 15px 40px;
-    }
     .toc+.toccontent {
         border: none;
-    }
-    .toccontent h2 {
-        font-size: 112.5%;
     }
     .toccontent .subhead-links a:not(:last-child) {
         margin-right: 5px;
