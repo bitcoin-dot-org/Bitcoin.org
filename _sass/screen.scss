@@ -1333,6 +1333,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .toccontent img{
     max-width:100%;
+    width:100%;
 }
 .toccontent table thead{
     text-align:center;
@@ -2346,15 +2347,18 @@ button.active {
     display:inline-block;
     margin-top:5px;
 }
-.versiontext{
-    text-align:left;
-    margin-bottom:40px;
-    max-width:600px;
-}
-.versiontext h1{
-    text-align:left;
-}
 
+// .versiontext{
+//     text-align:left;
+//     margin-bottom:40px;
+//     max-width:600px;
+// }
+// .versiontext h1{
+//     text-align:left;
+// }
+.version {
+    padding: 70px 0;
+}
 // .alerttitle img{
 //     display:block;
 //     margin:auto;
@@ -3632,6 +3636,9 @@ button.active {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .version {
+        padding: 50px 0;
     }
     .alerts {
         padding: 50px 0;
