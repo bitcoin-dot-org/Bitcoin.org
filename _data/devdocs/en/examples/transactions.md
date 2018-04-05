@@ -6,7 +6,6 @@ http://opensource.org/licenses/MIT.
 
 
 ## Transactions
-
 {% include helpers/subhead-links.md %}
 
 ### Transaction Tutorial

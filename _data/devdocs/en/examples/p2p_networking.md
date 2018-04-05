@@ -5,7 +5,6 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_data/devdocs/en/examples/p2p_networking.md" %}
 
 ## P2P Network
-
 {% include helpers/subhead-links.md %}
 
 ### Creating A Bloom Filter
