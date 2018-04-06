@@ -1126,36 +1126,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     margin-right:6px;
 }
 
-.index,
-.index ul,
-.index li{
-    list-style:none;
-    padding:0;
-    margin:0;
-}
-.index{
-    padding:10px 20px;
-    border:2px dashed #4892b2;
-    display:inline-block;
-}
-.index ul{
-    margin:10px 0;
-}
-.index li a{
-    font-weight:bold;
-}
-.index ul ul li a{
-    font-weight:normal;
-}
-.index a,
-.index a:link,
-.index a:active,
-.index a:visited{
-    display:block;
-    text-decoration:none;
-    line-height:1.5em;
-}
-
 /* Developer Documentation page START*/
 .dev-documentation {
     padding: 50px 0 70px;
@@ -2959,15 +2929,6 @@ button.active {
     .footer{
         line-height:1.5em;
         width:auto;
-    }
-    .index{
-        padding:15px;
-    }
-    .index ul{
-        padding:5px 0;
-    }
-    .index li{
-        padding:3px 0;
     }
     .toc-row {
         padding: 50px 0 70px;
