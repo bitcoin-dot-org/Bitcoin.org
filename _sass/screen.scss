@@ -2708,9 +2708,6 @@ button.active {
 .press-faq div span p{
     margin-bottom:0;
 }
-.press-videos {
-    text-align: center;
-}
 .press-videos > div{
     display:inline-block;
     vertical-align:top;
@@ -3295,6 +3292,9 @@ button.active {
     }
     .organizations-item:nth-child(3n+3) {
         margin-right: 2.5%;
+    }
+    .press-videos {
+        text-align: center;
     }
 }
 
