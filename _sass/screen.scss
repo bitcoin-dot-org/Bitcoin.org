@@ -2084,34 +2084,19 @@ button.active {
     color:#8c8c8c;
 }
 .contributors{
-    width:890px;
     text-align:left;
-    font-size:80%;
-}
-
-.one-column .contributors {
-        width: 660px;
-}
-
-.contributors img{
-    width:16px;
-    height:16px;
 }
 .contributors div{
     padding:8px 0;
-    width:215px;
-    overflow:hidden;
+    width:230px;
     display:inline-block;
-    vertical-align:top;
 }
 .contributors div div{
     width:auto;
     padding:0;
 }
 .contributors div div:first-child+div{
-    max-width:150px;
     margin:0 2px;
-    white-space:nowrap;
 }
 
 .credit{
@@ -2283,13 +2268,9 @@ button.active {
 
 .devprojectlist{
     overflow:hidden;
-    margin:-10px 0;
     -moz-transition:height 400ms ease-out;
     -webkit-transition:height 400ms ease-out;
     transition:height 400ms ease-out;
-}
-.devprojectlist li{
-    margin:10px 0;
 }
 .devprojectlist li:nth-child(1n+4){
     display:none;
@@ -2307,24 +2288,9 @@ button.active {
     display:inline-block;
     margin-top:5px;
 }
-
-// .versiontext{
-//     text-align:left;
-//     margin-bottom:40px;
-//     max-width:600px;
-// }
-// .versiontext h1{
-//     text-align:left;
-// }
 .version {
     padding: 70px 0;
 }
-// .alerttitle img{
-//     display:block;
-//     margin:auto;
-//     width:42px;
-//     height:42px;
-// }
 .alert {
     position: relative;
     max-width: 970px;
