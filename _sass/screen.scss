@@ -1275,7 +1275,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .toccontent p {
     margin-bottom: 20px;
-    font-size: 125%;
+    font-size: 20px;
     color: #4D5060;
     line-height: 34px;
     text-align: left;
@@ -1283,13 +1283,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .toccontent p:last-child {
     margin-bottom: 0;
 }
-// .toccontent h2{
-//     position: relative;
-//     font-size: 162.5%;
-//     color: #FF7E00;
-//     font-weight: 400;
-//     text-align: left;
-// }
 .toccontent h3{
     margin-top: 0;
     margin-bottom: 10px;
@@ -2769,34 +2762,9 @@ button.active {
 .quote span {
     display: block;
 }
-// .press-quotes>a{
-//     display:inline-block;
-//     padding-top:10px;
-//     font-weight:bold;
-// }
-// .press-quotes span:first-child{
-//     font-weight: 600;
-//     display:block;
-//     margin-bottom:4px;
-// }
-// .press-quotes span:first-child:before{
-//     position:absolute;
-//     margin-left:-16px;
-//     font-weight:bold;
-//     font-size:180%;
-//     content:"";
-// }
-// .press-quotes span:first-child:after{
-//     position:absolute;
-//     margin-right:-16px;
-//     font-weight:bold;
-//     font-size:180%;
-//     content:"";
-// }
-// .press-quotes p.final {
-//     width: 100%;
-// }
+.vocabulary-list {
 
+}
 /*Styles specific to printing*/
 
 @media print{
@@ -3751,9 +3719,9 @@ button.active {
         margin: 0 28px 0 0;
         vertical-align: top;
     }
-    .btn {
-        display: block;
-    }
+    // .btn {
+    //     display: block;
+    // }
     .card-row {
         margin: 50px 0;
     }
