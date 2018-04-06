@@ -1600,12 +1600,6 @@ div.one-column {
 .one-column th {
         text-align: center;
 }
-
-// div.post {
-//         max-width: 40em;
-//         margin-right: auto;
-//         margin-left: auto;
-// }
 .article img {
     max-width: 100%;
 }
@@ -3934,6 +3928,10 @@ button.active {
     .toc+.toccontent {
         border: none;
     }
+    .toccontent .toccontent-block {
+        padding-left:0;
+        padding-right:0;
+    }
     .toccontent-block {
         border-top: none;
         margin-bottom: 2px;
@@ -3946,6 +3944,10 @@ button.active {
     }
     .toccontent .subhead-links a:not(:first-child) {
         margin-left: 2px;
+    }
+    .article>* {
+        padding-left:15px;
+        padding-right:15px;
     }
     .dev-documentation {
         padding: 30px 0 50px;
@@ -4046,7 +4048,7 @@ button.active {
         width: 100%;
     }
     .post-content {
-        padding: 0 0 30px;
+        padding-bottom: 30px;
     }
 }
 

@@ -31,11 +31,11 @@ end_of_page: |
   </div>
 </header>
 
-<div class="container">
+<div class="toc-container">
   <div class="row toc-row">
   {% if page.show_toc %}
-    <div markdown="1" id="toc" class="toc">
-      <div markdown="1">
+    <div id="toc" class="toc">
+      <div>
         <button class="mob-sidebar-open" hidden>ALL TOPICS</button>
         <div class="sidebar">
           <div class="sidebar-inner" markdown="1">
@@ -47,8 +47,8 @@ end_of_page: |
     </div>
   {% endif %}
 
-    <div markdown="1" class="toccontent">
-      <article class="article">
+    <div class="toccontent">
+      <article class="article" markdown="1">
         {{ content }}
         <p class="post-meta">Posted to the
         <a href="/en/blog">Bitcoin.org Site Blog</a> on {{ page.date | date: "%d %B %Y" }} {% if page.author %} by {{ page.author }}{% endif
