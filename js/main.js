@@ -255,7 +255,7 @@ function updateToc() {
         var sidebarHeight = document.querySelector(".sidebar").offsetHeight; 
         var footerTop = document.querySelector(".footer").offsetTop; 
                 
-        if (window.scrollY >= getTop(toc) - 20) {
+        if (window.scrollY >= getTop(toc) - 20 && window.scrollY + sidebarHeight + 20 <= footerTop) {
           addClass(div, "scroll");
         } else {
           removeClass(div, "scroll");
@@ -265,7 +265,9 @@ function updateToc() {
         var a = false;
         for (var i = 0, t = toc.getElementsByTagName('*'), n = t.length; i < n; i++) {
             removeClass(t[i], 'active');
-            if (t[i].nodeName === 'A' && t[i].getAttribute('href') === '#' + closer[0].id) a = t[i];
+            if (t[i].nodeName === 'A' && t[i].getAttribute('href') === '#' + closer[0].id && closer[0].parentNode.classList.contains("expanded")) {
+              a = t[i]
+            }
         }
         if (a === false) return;
         // Set .active class on new active toc entry.

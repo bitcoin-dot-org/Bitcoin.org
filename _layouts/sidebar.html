@@ -16,7 +16,15 @@ end_of_page: |
     <p class="summarytxt">{% translate summary %}</p>
   </div>
 </div>
-
+{% if page.id == 'exchanges' %}
+<div class="container">
+  <h2 class="center"><a name="exchanges">{% translate exchange %}</a></h2>
+  <h4 class="alert exchanges-note">Note: Exchanges provide highly varying degrees of safety, security, privacy, and control over your funds and information.
+    Perform your own due diligence and
+    <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">choose a wallet</a>
+    where you will keep your bitcoin before selecting an exchange.</h4>
+</div>
+{% endif %}
 <div class="toc-container">
   <div class="row toc-row">
 
