@@ -42,7 +42,7 @@ Please help spread the word and choose your favorite design.
 
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## About Bitcoin.org
 
@@ -59,7 +59,7 @@ display natively to visitors by default in their own languages —now 25
 different languages and growing.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Interested in getting involved?
 

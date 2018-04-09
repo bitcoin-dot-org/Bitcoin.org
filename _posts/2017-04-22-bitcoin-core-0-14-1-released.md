@@ -28,7 +28,7 @@ Please report bugs using the [issue tracker on GitHub](https://github.com/bitcoi
 security and update notifications.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Compatibility
 
@@ -46,7 +46,7 @@ Bitcoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Notable changes
 
@@ -94,7 +94,7 @@ here:
 [reducing-bitcoind-memory-usage.md](https://gist.github.com/laanwj/efe29c7661ce9b6620a7).
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## 0.14.1 Change log
 
@@ -146,7 +146,7 @@ git merge commit are mentioned.
 - \#10130 `ecc5232` bitcoin-tx input verification (awemany, jnewbery)
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Credits
 

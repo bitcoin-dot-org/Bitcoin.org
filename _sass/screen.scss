@@ -1193,7 +1193,11 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     width: 370px;
     padding-bottom: 50px;
     overflow-y: auto;
+    -ms-overflow-style: none;
 }
+// .toc .scroll::-webkit-scrollbar {
+//     display: none;
+// }
 .toc ul,
 .toc li{
     list-style:none;

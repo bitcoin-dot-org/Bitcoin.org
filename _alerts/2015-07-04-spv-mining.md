@@ -46,7 +46,7 @@ wallet is secured by Bitcoin Core 0.9.5 or later.
 denial-of-service vulnerabilities unrelated to this alert.)
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ##Miners
 
@@ -57,7 +57,7 @@ suspected) good and bad pools][pool list].
 If you solo mine, please switch to Bitcoin Core 0.10.2.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 <h2 id="solution">When Will Things Go Back To Normal?</h2>
 
 The problem is miners creating invalid blocks.  Some software can detect
@@ -82,7 +82,7 @@ should assume they have the same security as the lightweight
 wallets described above.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 <h2 id="cause">What's Happening</h2>
 
 Summary: Some miners are currently generating invalid blocks. Almost
@@ -135,7 +135,7 @@ current recommendation of waiting {{confs}} extra confirmations to a
 lower number.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Updates
 
@@ -147,7 +147,7 @@ to wait {{confs}} more confirmations than you usually would wait before
 accepting a transaction.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Invalid Blocks
 

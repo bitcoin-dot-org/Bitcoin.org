@@ -35,7 +35,7 @@ and [how to tweak the reference client configuration](https://bitcoin.org/en/ful
 are available.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Why is running a full bitcoin node important?
 
@@ -59,7 +59,7 @@ incentives for supporting the network in the [Bitcoin Wiki](https://en.bitcoin.i
 </div>
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Minimum Requirements
 
@@ -96,7 +96,7 @@ desktops. Check your screensaver settings and disable automatic “sleep” or
 running.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## What to do if you need help
 
@@ -106,7 +106,7 @@ privacy-sensitive tasks. Do your own diligence to ensure who you get help from
 is ethical, reputable and qualified to assist you.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Acknowledgments
 

@@ -33,7 +33,7 @@ additional information and updates.
 *Outdated information from earlier versions of this post follows.*
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Chain split
 
@@ -78,7 +78,7 @@ between now and {{start}}.  If that is the case, this post will be
 updated with details.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Preparation
 
@@ -102,7 +102,7 @@ other currencies.  Learn more about [price volatility][] and ensure you
 aren't holding more bitcoin than you can afford to lose.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## During the event
 
@@ -121,7 +121,7 @@ by "splitting" your coins.  Some of these offers may be scams, and
 software claiming to split your coins can also steal them.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## After the event
 
@@ -131,7 +131,7 @@ trust have stated that the event is resolved before returning to normal Bitcoin
 use.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Document history
 

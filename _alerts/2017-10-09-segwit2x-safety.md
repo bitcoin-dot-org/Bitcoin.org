@@ -34,7 +34,7 @@ hard fork have any value, there will be methods you can use to "split" your coin
 to major Bitcoin communication channels and media shortly after the fork so you stay informed.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Mobile wallets
 
@@ -52,7 +52,7 @@ to make sure that it's safe to continue using your particular wallet. As a gener
 during and shortly after the hard fork.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## After the fork
 
@@ -79,7 +79,7 @@ the Bitcoin system in a contentious manner and therefore are no longer useful to
 The following companies and services have pledged to adopt the contentious hard fork:
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Wallets
 
@@ -100,7 +100,7 @@ The following companies and services have pledged to adopt the contentious hard 
 + **Xapo (United States)**
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Exchanges
 
@@ -119,7 +119,7 @@ The following companies and services have pledged to adopt the contentious hard 
 + **ShapeShift (Switzerland)**
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Miners
 
@@ -132,7 +132,7 @@ The following companies and services have pledged to adopt the contentious hard 
 + ViaBTC (China)
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Other
 

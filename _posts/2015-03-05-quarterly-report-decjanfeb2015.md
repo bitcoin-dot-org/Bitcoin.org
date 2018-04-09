@@ -57,7 +57,7 @@ Summary for December 2014, January 2015, and February 2015.
   Reddit](http://www.reddit.com/r/Bitcoin/comments/2wvdko/new_page_on_bitcoinorg_running_a_full_node/).
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Translations
 
@@ -92,7 +92,7 @@ page](https://www.transifex.com/projects/p/bitcoinorg/) as well as the
 many reviews made by Saïvann Carignan.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Developer documentation
 
@@ -139,7 +139,7 @@ Most documentation was written by David A. Harding, with reviews
 conducted by Saïvann Carignan, Jonas Schnelli, and others.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Regular Updates
 
@@ -181,7 +181,7 @@ We are grateful to all of the contributors who opened issues and made
 pull requests to keep the site content current and useful.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Wallets
 
@@ -233,7 +233,7 @@ volunteer position for anyone who likes trying new wallets and who wants
 to interact directly with wallet authors.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## New Full Node Guide
 
@@ -280,7 +280,7 @@ The guide was primarily written by David A. Harding, with reviews by
 Saïvann Carignan and Jameson Lopp, and promotion also by Jameson.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Website Improvements
 
@@ -324,7 +324,7 @@ as well as sorting releases by version number. J. Louis optimized the
 SVG images.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Server And Development Tools
 
@@ -374,7 +374,7 @@ maintenance and audit code were contributions by Saïvann, and the
 volunteer quick start guide was contributed by David.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Public Website Statistics
 
@@ -386,7 +386,7 @@ volunteer quick start guide was contributed by David.
 ![stats February 2015](/img/blog/free/stats-2015-02.png)
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Expense Report
 
@@ -407,7 +407,7 @@ volunteer quick start guide was contributed by David.
 | **New balance**          | &nbsp;8.085 174 61  BTC
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Next Quarter's Goals
 
@@ -463,7 +463,7 @@ following three major goals during the next quarter:
    simplify first-time contributions.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Thanks To Sponsors And Volunteers
 

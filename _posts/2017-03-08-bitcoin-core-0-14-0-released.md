@@ -29,7 +29,7 @@ Please report bugs using the [issue tracker on GitHub](https://github.com/bitcoi
 security and update notifications.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Compatibility
 
@@ -47,7 +47,7 @@ Bitcoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Notable changes
 
@@ -347,7 +347,7 @@ security
   option to limit memory during that time.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## 0.14.0 Change log
 
@@ -895,7 +895,7 @@ and git merge commit are mentioned.
 - \#9856 `69832aa` Terminate immediately when allocation fails (theuni)
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Credits
 

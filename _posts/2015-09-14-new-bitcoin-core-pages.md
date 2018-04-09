@@ -42,7 +42,7 @@ validation [helps protect Bitcoin's essential decentralization][] from
 takeover by a handful of miners, Bitcoin banks, and service providers.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## A Brief Guide to The New Pages
 
@@ -60,7 +60,7 @@ takeover by a handful of miners, Bitcoin banks, and service providers.
   Bitcoin Core and Bitcoin Core users.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Future Plans
 
@@ -79,7 +79,7 @@ documentation maintainer,
 {{site.text.bitcoin_org_docs_maintainer_email_link}}.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Thank You
 

@@ -24,7 +24,7 @@ economies](https://bitcoin.org/en/exchanges), as well as several international
 options (serving many countries) are now available on Bitcoin.org.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Helping People Interested in Bitcoin, Get Bitcoin
 
@@ -48,7 +48,7 @@ wallets page to this new page).
 - Is also accessible via the Resources `dropdown` menu.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Questions, Comments & Feedback
 
@@ -57,7 +57,7 @@ interested in contributing in this regard, please open an issue or submit a pull
 request.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Use Discretion when Choosing an Exchange
 

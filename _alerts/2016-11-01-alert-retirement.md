@@ -22,7 +22,7 @@ will be published in the coming months.
 * **May 1, 2017**: Postpone release date of Alert key. Older clients may contain Alert handling code which is exploitable using the alert key, therefore the public release of the key has been temporarily postponed until considered safe.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Summary
 
@@ -30,7 +30,7 @@ The network wide Alert system is being retired. **_No Bitcoins are at risk and t
 Upgrade to the newest version of your wallet software to no longer see the alert.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Reasons for Retirement
 
@@ -51,7 +51,7 @@ The Alert system has also lost its usefulness. It is no longer necessary to use 
 events as users can easily get their information from any major Bitcoin news outlet.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## The Retirement Plan
 
@@ -68,7 +68,7 @@ receive the final alert.
 |Alert key release|The Alert key will be made publicly available|Postponed until further notice.|
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Software without the Alert system
 
@@ -80,7 +80,7 @@ are guaranteed to have removed/disabled the Alert system or allow you to disable
 * Armory 0.94.1+
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## See also
 

@@ -29,7 +29,7 @@ Please report bugs using the [issue tracker on GitHub](https://github.com/bitcoi
 security and update notifications.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Compatibility
 
@@ -47,7 +47,7 @@ Bitcoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Notable changes
 
@@ -66,7 +66,7 @@ If you use this option, it is recommended to upgrade to this version as soon as
 possible.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Known Bugs
 
@@ -77,7 +77,7 @@ default target. The fee calculated using the correct target is still applied to
 the transaction and shown in the final send confirmation dialog.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## 0.14.2 Change log
 
@@ -114,7 +114,7 @@ git merge commit are mentioned.
 - \#10294 `1847642` Unset change position when there is no change (instagibbs)
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Credits
 
