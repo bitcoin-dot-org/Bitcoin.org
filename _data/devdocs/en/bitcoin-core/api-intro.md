@@ -4,13 +4,10 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/bitcoin-core/api-intro.md" %}
 
-<div class="accordion-toggle" markdown="block">
 
 ## Bitcoin Core APIs
 <!-- no subhead-links here -->
-</div>
 
-<div class="accordion-content" markdown="block">
 {% include helpers/subhead-links.md %}
 
 ### Hash Byte Order
@@ -353,5 +350,3 @@ untrusted source.
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rest/requests/get_mempool-info.md _data/devdocs/en/bitcoin-core/rest/requests/get_mempool-info.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rest/requests/get_tx.md _data/devdocs/en/bitcoin-core/rest/requests/get_tx.md %}
-
-</div>
