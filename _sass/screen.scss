@@ -2149,37 +2149,15 @@ button.active {
 .titlelight{
     color:#8c8c8c;
 }
-.contributors{
-    text-align:left;
+.help {
+    margin-bottom: 60px;
+    text-align: center;
 }
-.contributors div{
-    padding:8px 0;
-    width:230px;
-    display:inline-block;
+.help p {
+    font-size: 137.5%;
+    color: #13161f;
+    line-height: 36px;
 }
-.contributors div div{
-    width:auto;
-    padding:0;
-}
-.contributors div div:first-child+div{
-    margin:0 2px;
-}
-
-.credit{
-    text-align:left;
-    margin:-10px 0;
-}
-.credit p{
-    display:inline-block;
-    width:275px;
-    vertical-align:top;
-    margin:10px 0;
-}
-.credit span{
-    display:block;
-    color:#aaa;
-}
-
 /* Bitcoin for individuals page start */
 .individuals-card {
     min-height: 500px;
@@ -2620,6 +2598,93 @@ button.active {
 }
 /* Events END */
 
+/* About us page START*/ 
+.about {
+    padding: 70px 0;
+}
+.about-title {
+    margin: 0 0 50px;
+}
+.about-row {
+    justify-content: space-between;
+    margin-bottom: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.own {
+    margin-bottom: 100px;
+}
+.own p {
+    font-size: 112.5%;
+    color: #9D9D9D;
+    line-height: 28px;
+}
+.own h3 {
+    margin: 30px 0 20px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 600;
+}
+.own-alert {
+    margin-top: 70px;
+}
+.own-alert p {
+    font-size: 18px;
+    color: #77767e;
+}
+.controll,
+.mission {
+    text-align: left;
+}
+.controll {
+    width: 48%;
+}
+.controll p {
+    font-size: 137.5%;
+    color: #13161f;
+    line-height: 36px;
+}
+.mission {
+    width: 47%;
+}
+.mission li {
+    font-size: 137.5%;
+    color: #ff9500;
+}
+.mission li span {
+    color: #13161f;
+}
+.expanded .contributor-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contributor-title {
+    font-size: 162.5%;
+    color: #FF7E00;
+}
+.contributor {
+    width: 30%;
+    margin-right: 4%;
+    margin-bottom: 20px;
+}
+.contributor:nth-child(3n+3) {
+    margin-right: 0;
+}
+.contributor-name {
+    display: block;
+    font-size: 20px;
+    color: #4D5060;
+}
+.contributor span {
+    font-size: 18px;
+    color: #9496A0;
+}
+.contributions {
+    font-size: 18px;
+    color: #9496A0;
+}
+/* About us page END*/ 
+
 /* Timeline layout START */
 .post-list {
     position: relative;
@@ -3050,9 +3115,6 @@ button.active {
     .toccontent .multicode pre{
         padding:0;
     }
-    .contributors{
-        width:auto;
-    }
     .toc .scroll {
         min-width: auto;
         width: 245px;
@@ -3355,6 +3417,18 @@ button.active {
     }
     .exchanges-tab-title::before {
         top: 30px;
+    }
+    .about-title {
+        margin: 0 0 30px;
+    }
+    .contributor {
+        width: 48%;
+    }
+    .contributor:nth-child(3n+3) {
+        margin-right: 4%;
+    }
+    .contributor:nth-child(even) {
+        margin-right: 0;
     }
 }
 
@@ -3845,6 +3919,27 @@ button.active {
     .boxexpand.expanded>h3:first-child {
         padding: 30px 30px 15px 15px;
     }
+    .about {
+        padding: 70px 0;
+    }
+    .about-row {
+        flex-direction: column;
+        margin-bottom: 60px;
+        padding-bottom: 60px;
+    }
+    .own {
+        margin-bottom: 60px;
+    }
+    .own-alert {
+        margin-top: 60px;
+    }
+    .controll,
+    .mission {
+        width: 100%;
+    }
+    .controll {
+        margin-bottom: 60px;
+    }
 }
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
     p {
@@ -4185,6 +4280,37 @@ button.active {
     .exchanges-europe .general-marketplace {
         width: 187px;
         margin-bottom: 30px;
+    }
+    .about-title {
+        font-size: 137.5%;
+    }
+    .about-row {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+    .own,
+    .controll {
+        margin-bottom: 50px;
+    }
+    .own-alert {
+        margin-top: 50px;
+    }
+    .own-alert p {
+        font-size: 16px;
+    }
+    .controll p,
+    .mission li,
+    .help p {
+        font-size: 112.5%;
+    }
+    .help {
+        margin: 0;
+    }
+    .expanded .contributor-row {
+        flex-direction: column;
+    }
+    .contributor {
+        width: 100%;
     }
 }
 
