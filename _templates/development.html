@@ -80,11 +80,13 @@ improvement in mind?  Here are a few ideas:
 <div id="contributors" class="toccontent-block boxexpand expanded">
   <h2 id="bitcoin-core-contributors">{% translate contributors %}</h2>
   <p>{% translate contributorsorder %}</p>
-  <div class="contributors">
+  <div class="contributor-row">
     {% for c in site.corecontributors %}
-    <div>
-      <div><a{% if c.login %} href="https://github.com/{{c.login}}"{% endif %}>{{ c.name | htmlescape }}</a></div>
-      <div>({{ c.contributions }})</div>
+    <div class="contributor">
+      <div>
+        <a class="contributor-name" {% if c.login %} href="https://github.com/{{c.login}}"{% endif %}>{{ c.name | htmlescape }}</a>
+      </div>
+      <div class="contributions">({{ c.contributions }})</div>
     </div>
     {% endfor %}
   </div>
