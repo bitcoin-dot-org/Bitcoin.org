@@ -2279,6 +2279,9 @@ button.active {
 /* Community page end */
 
 /* Exchanges page start */
+.exchanges-title a {
+    color: #FF7E00;
+}
 .exchanges-note {
     font-weight: 400;
 }
@@ -2369,7 +2372,12 @@ button.active {
 .marketplace-link {
     color: #4D5060;
 }
-
+.exchanges-introlink {
+    margin-left: 30px;
+}
+.exchanges-buy-link {
+    margin-top: 40px;
+}
 /* Exchanges page end */
 .resourcesmore{
     text-align:center;
@@ -3345,6 +3353,9 @@ button.active {
     .press-videos {
         text-align: center;
     }
+    .exchanges-tab-title::before {
+        top: 30px;
+    }
 }
 
 @media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ){
@@ -3751,6 +3762,7 @@ button.active {
     .alert {
         padding: 30px 20px 30px 90px;
         font-size: 100%;
+        text-align: left;
     }
     .blog {
         padding: 50px 0 50px;
@@ -3881,9 +3893,6 @@ button.active {
         margin: 0 28px 0 0;
         vertical-align: top;
     }
-    // .btn {
-    //     display: block;
-    // }
     .card-row {
         margin: 50px 0;
     }
@@ -4044,6 +4053,12 @@ button.active {
     .toccontent .subhead-links a:not(:first-child) {
         margin-left: 2px;
     }
+    .toccontent .toccontent-intro {
+        padding: 0 15px 40px;
+    }
+    .toccontent p {
+        font-size: 18px;
+    }
     .article>* {
         padding-left:15px;
         padding-right:15px;
@@ -4160,6 +4175,16 @@ button.active {
     }
     .post-content {
         padding-bottom: 30px;
+    }
+    .exchanges-tab-title::before {
+        top: 15px;
+    }
+    .expanded .exchanges-content-row {
+        flex-wrap: wrap;
+    }
+    .exchanges-europe .general-marketplace {
+        width: 187px;
+        margin-bottom: 30px;
     }
 }
 
