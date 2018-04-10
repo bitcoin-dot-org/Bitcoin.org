@@ -61,7 +61,7 @@ show_toc: true
    </ul><br class="clear">
   {% endunless %}
   {% if finished_with_numbers %}
-## {{ first_character | upcase }}
+### {{ first_character | upcase }}
 <!-- no subhead-links here -->
   {% endif %}
 

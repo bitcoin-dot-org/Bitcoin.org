@@ -24,18 +24,18 @@ end_of_page: |
   <div class="container">
     <h2 class="center about-title" id="own">{% translate own %}</h2>
     <div class="own">
-      <h3>{% translate owntxt-title %}</h3>
+      <h3 id="owntxt-title">{% translate owntxt-title %}</h3>
       <!-- no subhead-links here -->
       <p>{% translate owntxt %}</p>
       {% case page.lang %} {% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl'
       or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'ja' or 'zh_CN' or 'zh_TW' %} {% else
       %}
-      <h3>{% translate owntxt2-title %}</h3>
+      <h3 id="owntxt2-title">{% translate owntxt2-title %}</h3>
       <!-- no subhead-links here -->
       <p>{% translate owntxt2 %}</p>
-      <h3>{% translate owntxt3-title %}</h3>
+      <h3 id="owntxt3-title">{% translate owntxt3-title %}</h3>
       <!-- no subhead-links here -->
-      <h3>{% translate owntxt4-title %}</h3>
+      <h3 id="owntxt4-title">{% translate owntxt4-title %}</h3>
       <!-- no subhead-links here -->
       <p>{% translate owntxt3 %}</p>
       <div class="alert own-alert">
