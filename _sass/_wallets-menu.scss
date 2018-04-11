@@ -38,15 +38,15 @@ $oses:
         //     border-bottom-right-radius: 0;
         // }
 
-        > li:hover > ul {
-            display: flex;
-            justify-content: center;
+        > li:hover > div {
+            display: block;
         }
-        > li > ul > li.active,
-        > li > ul > li:hover {
+        > li > div> ul > li.active,
+        > li > div> ul > li:hover {
             border: none;
         }
-        > li:hover > a {
+        > li.active > a, 
+        > li:hover > a, {
             padding: 18px 10px 18px 42px;
         }
         li {
@@ -82,18 +82,21 @@ $oses:
 
             }
             
-            ul {
+            div {
                 display: none;
                 position: absolute;
                 bottom: 0;
                 left: 50%;
                 width: 100%;
-                padding: 0;
                 transform: translate(-50%, 100%);
-                background-color: #f8f8f8;
-                -moz-box-sizing: border-box;
-                -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+                 ul {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0;
+                    background-color: #f8f8f8;
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
 
                 li {
                     font-size: 80%;
@@ -113,6 +116,7 @@ $oses:
                         background-position: right center;
                     }
                 }
+            }
             }
 
             &.active,
@@ -151,17 +155,22 @@ $oses:
     only screen and ( max-width: 48em ),
     only screen and ( max-device-width: 48em ) {
         > ul {
-            display: block;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 15px;
             > li {
                 display: block;
-                margin-bottom: 25px;
-                border: 1px solid $dark-blue;
+                width: 47.5%;
+                height: 95px;
+                margin: 0 3.5% 10px 0;
+                margin-right: 3.5%;
+                margin-bottom: 10px;
+                border: 1px solid $light-grey;
+                background-position: 50% 20px;
+                box-sizing: border-box;
 
-                &:first-child {
-                    margin-left: 10px;
-                }
-                &:last-child {
-                    margin-right: 10px;
+                &:nth-child(even) {
+                    margin-right: 0;
                 }
 
                 &.active {
@@ -170,11 +179,60 @@ $oses:
                     }
                 }
 
+                > a {
+                    padding: 55px 40px 15px;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
+                &.active, &:hover {
+                    border: 2px solid #ff7e00;
+                    background-position: 50% 19px;
+                }
+                &.active>a, 
+                &:hover>a {
+                    padding: 54px 40px 14px;
+                }
                 ul {
                     min-width: 100%;
-                    position: initial;
+                }
+                div ul {
+                    flex-wrap: wrap;
+                    justify-content: left;
+                    padding: 0 15px;
+                    background: #fff;
+                }
+            }
+            li div ul li {
+                width: 47.5%;
+                height: 95px;
+                margin: 0 3.5% 10px 0;
+                margin-right: 3.5%;
+                margin-bottom: 10px;
+                border: 1px solid #dfdfdf;
+                background-position: 50% 20px;
+                box-sizing: border-box;
+                text-align: center;
+
+                &:nth-child(even) {
+                    margin-right: 0;
+                }
+
+                a {
+                    padding: 55px 30px 15px;
                 }
             }
         }
+        .wallet-acc-toggle {
+            display: block;
+            height: 60px;
+            padding: 16px 0 0 55px;
+            margin: 0 0 15px;
+            box-sizing: border-box;
+            background: #f8f8f8;
+            text-align: left;
+        }
     }
+}
+.wallet-acc-toggle {
+    display: none;
 }
