@@ -8,14 +8,13 @@ layout: base
 {{ content }}
 
 {% include layout/base/wallets-menu.html %}
-{% include layout/base/wallets-list.html %}
-
-<div class="walletsdisclaimer">
-  <h2 id="educate-yourself">
-    <img src="/img/icons/warning.svg" class="warningicon" alt="warning">
-    {% translate educate choose-your-wallet %}
-  </h2>
-  <p>
-    {% translate educatetxt choose-your-wallet %}
-  </p>
+<div class="container">
+   {% include layout/base/wallets-list.html %}
+  
+  <div class="walletsdisclaimer">
+    <h2 id="educate-yourself">{% translate educate choose-your-wallet %}</h2>
+    <p>
+      {% translate educatetxt choose-your-wallet %}
+    </p>
+  </div>
 </div>

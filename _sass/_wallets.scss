@@ -1,10 +1,13 @@
 $green: #329239;
 $grey: #8b8b8b;
+$dark-grey: #4D5060;
+$light-grey: #dfdfdf;
 $red: #ee9209;
 $blue: #2c6faf;
 $dark-blue: #255f96;
 $light-blue: #63a4e1;
 $lightest-blue: #f0f8ff;
+$black: #13161F;
 
 @mixin button {
     background-color: transparent;
@@ -36,30 +39,34 @@ $lightest-blue: #f0f8ff;
 
 .wallet-list {
     margin: auto;
-    padding: 60px 0 20px 0;
-    text-align: center;
+    padding: 130px 0 40px 0;
+    text-align: left;
 
     .wallet-list-item {
         display: inline-block;
+        width: 14.2%;
+        height: 165px;
+        padding: 20px 45px;
+        margin-bottom: 30px;
+        margin-right: 2.5%;
+        border: 1px solid #dfdfdf;
+        text-align: center;
+        box-sizing: border-box;
+
+        &:nth-child(6n+6) {
+            margin-right: 0;
+        }
 
         .wallet-list-item-link {
-            color: $blue;
-            text-align: center;
-            text-decoration: none;
-            font-weight: bold;
-            width: 75px;
             display: inline-block;
+            color: $black;
+            text-align: center;
+            font-weight: 600;
             vertical-align: top;
-            margin: 0 14px 20px;
-            white-space: nowrap;
-            outline: 0;
-
-            &:hover {
-                color: $light-blue;
-
-                img {
-                    opacity: 0.9;
-                }
+            text-decoration: none;
+            
+            &:hover img {
+                opacity: 0.9;
             }
 
             img {
@@ -278,7 +285,17 @@ $scores:
     display: none;
 }
 
+.walletsdisclaimer {
+    padding: 70px 0;
+    border-top: 1px solid $light-grey
+}
 .walletsdisclaimer h2 {
+    margin: 0 0 50px;
     text-align: center;
+}
+.walletsdisclaimer p {
+    font-size: 20px;
+    color: $dark-grey;
+    line-height: 34px;
 }
 
