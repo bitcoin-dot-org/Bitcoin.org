@@ -148,8 +148,8 @@ $oses:
     }
 
     @media handheld,
-    only screen and ( max-width: 60em ),
-    only screen and ( max-device-width: 60em ) {
+    only screen and ( max-width: 48em ),
+    only screen and ( max-device-width: 48em ) {
         > ul {
             display: block;
             > li {
