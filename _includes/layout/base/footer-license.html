@@ -10,7 +10,14 @@ http://opensource.org/licenses/MIT.
       <div class="row">
         <a href="/en/alerts" class="statusmenu{% if site.STATUS == 1 %} alert{% endif %}">Network Status</a>
         {% include layout/base/head-language-dropdown.html %} 
-        {% include layout/base/head-language-select.html %}
+        <div id="footer-langselect" class="langselect">
+          <select onchange="window.location=this.value;">
+            {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{%
+            endif %}
+            <option value="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}" {{ active }}>{{ site.langs[lang] }}</option>
+            {% endfor %}
+          </select>
+        </div>
       </div>
     </div>
   </div>
