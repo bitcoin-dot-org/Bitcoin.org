@@ -6,8 +6,8 @@ http://opensource.org/licenses/MIT.
 
 <div class="walletmenu" id="walletmenu">
 {% assign platformsByPlatform = site.platforms | group_by: "platform" %}
-  <p class="wallet-acc-toggle">Select wallet Type</p>
-  <ul>
+  <p class="wallet-acc-toggle wallet-acc-toggle-1">Select wallet Type</p>
+  <ul class="walletmenu-main-list is-hidden">
   {% for platform in platformsByPlatform %}
 
     {% comment %}
@@ -32,12 +32,12 @@ http://opensource.org/licenses/MIT.
       {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" %}
         <a href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% else %}
-        <a>{% translate walletcat{{platformName}} choose-your-wallet %}</a>
+        <a data-platform-target>{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% endif %}
       {% if platform.items.size > 1 %}
       <div>
-        <p class="wallet-acc-toggle">Select Operating system</p>
-      <ul>
+        <p class="wallet-acc-toggle wallet-acc-toggle-2">Select Operating system</p>
+      <ul class="walletmenu-os-list">
         {% for item in platform.items %}
           {% assign osClass = "wallet-" | append: item.os.name %}
           {% if page.id contains item.id %}
@@ -56,3 +56,56 @@ http://opensource.org/licenses/MIT.
   {% endfor %}
   </ul>
 </div>
+
+<script>
+  var mainWalletList = document.querySelector(".walletmenu-main-list");
+  var walletToggle = document.getElementsByClassName("wallet-acc-toggle")[0];
+
+  function platformAcc() {
+    var acc = document.getElementsByClassName("js-acc-item");
+    var osWalletList = document.querySelector(".walletmenu-os-list");
+    var i;
+
+
+    // function calculateHeight() {
+    //   var osWalletListHeight = osWalletList.offsetHeight;
+    // }
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function (event) {
+        
+        if (!event.target.hasAttribute('data-platform-target')) {
+          return;
+        } else {
+          var platformItem = event.target.parentNode;
+          
+          platformItem.classList.toggle("pseudo-acc");
+          walletToggle.classList.toggle("is-hidden");
+          mainWalletList.classList.toggle("is-fullwidth")
+
+          for (var index = 0; index < acc.length; index++) {
+            if (!(platformItem == acc[index])) {
+              acc[index].classList.remove("pseudo-acc");
+              acc[index].classList.toggle("is-hidden");
+            }
+          }
+        }        
+
+        // calculateHeight();
+
+      });
+    }
+  }
+
+  platformAcc();
+
+  function walletTypeAcc() {
+    walletToggle.addEventListener("click", function () {
+      mainWalletList.classList.toggle("is-hidden");
+      walletToggle.classList.toggle("is-expanded");
+    });
+  }
+
+  walletTypeAcc();
+
+</script>

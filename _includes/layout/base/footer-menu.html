@@ -5,17 +5,22 @@ http://opensource.org/licenses/MIT.
 
 <div class="row footer-row">
   <div class="donate">
-    <div>
-      <span class="footer-title">Donate Community:</span>
-      <a href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank" class="donate-btn">{% translate donate layout %}</a>
-      <p class="donate-text">Bitcoin.org is community supported.
-        <a class="donate-link" href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a>
-      </p>
+    <div class="row donate-row">
+      <div>
+        <span class="footer-title">Donate Community:</span>
+        <a href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank" class="donate-btn">{% translate donate layout %}</a>
+        <p class="donate-text">Bitcoin.org is community supported.
+          <a class="donate-link" href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a>
+        </p>
+      </div>
+      <div class="donate-qrcode">
+        <img src="/img/footer/qr.png" alt="QR code">
+      </div>
     </div>
   </div>
   
   <div class="row footermenu">
-    <div class="footermenu-introduction">
+    <div class="footermenu-item footermenu-introduction">
       <p class="footer-title">Introduction:</p>
       <ul class="footermenu-list">
         <li{% if page.id == 'bitcoin-for-individuals' %} class="active"{% endif %}>
@@ -39,7 +44,7 @@ http://opensource.org/licenses/MIT.
       </ul>
     </div>
     
-    <div class="footermenu-resources">
+    <div class="footermenu-item footermenu-resources">
       <p class="footer-title">Resources:</p>
       <ul class="footermenu-list">
         <li{% if page.id == 'resources' %} class="active"{% endif %}>
@@ -71,7 +76,7 @@ http://opensource.org/licenses/MIT.
       </ul>
     </div>
     
-    <div class="footermenu-participate">
+    <div class="footermenu-item footermenu-participate">
       <p class="footer-title">Participate:</p>
       <ul class="footermenu-list">
         <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}>
@@ -91,7 +96,7 @@ http://opensource.org/licenses/MIT.
         </li>
       </ul>
     </div>
-    <div class="footermenu-other">
+    <div class="footermenu-item footermenu-other">
       <p class="footer-title">Other LINKS:</p>
       <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
       {% case page.lang %} {% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl'

@@ -7,7 +7,11 @@ http://opensource.org/licenses/MIT.
   <div class="container">
     <div class="row footer-bottom-row">
       <div class="footerlicense">© Bitcoin Project 2009-{{ site.time | date: '%Y' }} {% translate footer layout %}</div>
-      <a href="/en/alerts" class="statusmenu{% if site.STATUS == 1 %} alert{% endif %}">Network Status</a>
+      <div class="row">
+        <a href="/en/alerts" class="statusmenu{% if site.STATUS == 1 %} alert{% endif %}">Network Status</a>
+        {% include layout/base/head-language-dropdown.html %} 
+        {% include layout/base/head-language-select.html %}
+      </div>
     </div>
   </div>
 </div>

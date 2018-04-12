@@ -148,7 +148,7 @@ function expandBox(t) {
 }
 
 function boxShow(e) {
-  // Display the box content when the user click a box on the "Secure your wallet" page.
+
   function init(e) {
     var t = getEvent(e, 'target');
     while (t.nodeName !== 'DIV') t = t.parentNode;

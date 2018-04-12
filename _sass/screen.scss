@@ -492,6 +492,9 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .donate {
     max-width: 295px;
 }
+.donate-row {
+    flex-direction: column;
+}
 .donate-btn {
     width: 90px;
     height: 35px;
@@ -513,6 +516,13 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     margin-top: 5px;
     text-decoration: underline;
 }
+.donate-qrcode {
+    max-width: 120px;
+    margin-top: 20px;
+}
+.donate-qrcode img {
+    max-width: 100%;
+}
 .footer-title {
     font-size: 100%;
     color: #FFFFFF;
@@ -521,11 +531,15 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-weight: 600;
 }
 .footermenu {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: flex-end;
     max-width: 665px;
     width: 100%;
+}
+.footermenu-item {
+    margin-right: 60px;
+}
+.footermenu-item:last-child {
+    margin-right: 0;
 }
 .footermenu-title {
     margin-bottom: 7px;
@@ -580,6 +594,16 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .footerlicense a{
     color: inherit;
+}
+.footer-bottom-row .lang {
+    margin: 0 0 0 50px;
+}
+.footer-bottom-row .lang > li > a{
+    color: #fff
+}
+.footer-bottom-row .lang > li > ul{
+    top: 0;
+    transform: translateY(-100%);
 }
 .statusmenu {
     color: inherit;
@@ -739,10 +763,10 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     z-index: 1010;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    max-width: 600px;
-    max-height: 400px;
-    width: 100%;
-    height: 100%;
+    width: 600px;
+    height: 350px;
+    max-width: 100%;
+    max-height: 100%;
 }
 .modal-overlay {
     position: fixed;
@@ -754,13 +778,15 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     background: rgba(0, 0, 0, 0.6);
 }
 .modal-video {
+    max-width: 100%;
+    max-height: 100%;
     width: 100%;
     height: 100%;
 }
 .mainvideo-btn-close {
     position: absolute;
-    top: 0;
-    right: -60px;
+    top: -35px;
+    right: 0;
 }
 .maindesc {
     padding: 100px 0 70px;
@@ -1432,7 +1458,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 // }
 .accordion-content {
     display: none;
-    padding: 0 0 40px 30px;
+    // padding: 0 0 40px 30px;
 }
 .anchorAf{
     position:relative;
@@ -2107,7 +2133,6 @@ button.active {
 }
 .boxexpand>*{
     display:none;
-    // padding: 0 0 40px;
     margin-left: 30px;
 }
 .boxexpand.expanded {
@@ -3019,26 +3044,8 @@ button.active {
     .core-column-right {
         padding-left: 24px;
     }
-    .footer {
-        padding-top: 100px;
-    }
-    .logo-footer {
-        margin-bottom: 65px;
-    }
-    .footer-row {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-    .donate {
-        margin-bottom: 65px;
-    }
-    .footermenu {
-        max-width: 100%;
-    }
-    .footer-bottom {
-        margin-top: 75px
+    .footermenu-item {
+        margin-right: 35px;
     }
 }
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ){
@@ -3091,6 +3098,35 @@ button.active {
     .footer{
         line-height:1.5em;
         width:auto;
+        padding-top: 100px;
+    }
+    .logo-footer {
+        margin-bottom: 65px;
+    }
+    .footer-row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .donate {
+        max-width: 100%;
+        margin-bottom: 65px;
+    }
+    .donate-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .donate-qrcode {
+        margin-top: 0;
+    }
+    .footermenu {
+        justify-content: space-between;
+        max-width: 100%;
+    }
+    .footer-bottom {
+        margin-top: 75px
     }
     .toc-row {
         padding: 50px 0 70px;
@@ -3440,14 +3476,14 @@ button.active {
         padding: 0 15px;
     }
     .head {
-        padding: 15px 0;
+        padding: 15px 0 0;
         border: none;
     }
     .head div {
         padding: 0;
     }
     .logo {
-        margin: 0 auto 0 15px;
+        margin: 0 auto 15px 15px
     }
     .logo img {
         width: 92px;
@@ -3485,6 +3521,7 @@ button.active {
         cursor: pointer;
     }
     .menusimple {
+        margin: 0;
         -webkit-transform: none;
                 transform: none;
         border: 0;
@@ -3574,6 +3611,7 @@ button.active {
     }
     .currency {
         margin-right: 75px;
+        margin-bottom: 10px;
     }
     .section-title {
         font-size: 137.5%;
@@ -4062,6 +4100,41 @@ button.active {
                 transform: rotate(90deg);
         border-radius: 1px;
         border: none;
+    }
+    .footer {
+        padding-top: 70px;
+    }
+    .logo-footer {
+        margin-bottom: 30px;
+    }
+    .donate {
+        margin-bottom: 30px;
+    }
+    .donate-row {
+        flex-direction: column;
+    }
+    .donate-btn {
+        margin-left: 60px;
+    }
+    .donate-qrcode {
+        margin-top: 20px;
+    }
+    .footermenu {
+        flex-wrap: wrap;
+    }
+    .footermenu-item {
+        margin-right: 0;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .footermenu-item:nth-child(even) {
+        text-align: right;
+    }
+    .footermenu-item:nth-child(even) .footer-title {
+        text-align: right;
+    }
+    .footer-bottom {
+        margin-top: 0;
     }
     .toc-row {
         -webkit-box-orient: vertical;

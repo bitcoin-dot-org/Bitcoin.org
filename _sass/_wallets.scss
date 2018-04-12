@@ -303,6 +303,38 @@ $scores:
 }
 .wallet-acc-toggle {
     display: none;
+    position: relative;
+}
+.wallet-acc-toggle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 10px;
+    height: 6px;
+    transform: translateY(-50%);
+    background: url(../img/icons/ico_angle.svg) center no-repeat;
+    background-size: contain;
+}
+.is-expanded.wallet-acc-toggle::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+.wallet-acc-toggle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+}
+.wallet-acc-toggle-1::before {
+    background: url(../img/getting-started/number-1.svg) center no-repeat;
+    background-size: contain;
+}
+.wallet-acc-toggle-2::before {
+    background: url(../img/getting-started/number-2.svg) center no-repeat;
+    background-size: contain;
 }
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ) {
     .wallet-list {
@@ -319,6 +351,45 @@ $scores:
         padding: 60px 0;
     }
 }
-// @media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ) {
-    
-// }
+@media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ) {
+    .pseudo-acc > a {
+        position: relative;
+    }
+    .pseudo-acc > a::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -40px;
+        transform: translateY(-50%); 
+        width: 30px;
+        height: 30px;
+        background: url(../img/icons/checkmark.svg) center no-repeat;
+        background-size: contain;
+    }
+}
+@media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ) {
+    .wallet-list {
+        padding: 110px 0 50px 0;
+        text-align: center;
+    }
+    .walletsdisclaimer {
+        padding: 40px 0 30px;
+    }
+    .walletsdisclaimer h2 {
+        margin: 0 0 25px;
+    }
+    .wallet-list .wallet-list-item {
+        width: 47.2%;
+        height: 150px;
+    }
+    .wallet-list .wallet-list-item {
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+    .wallet-list .wallet-list-item:nth-child(3n+3) {
+        margin-right: 2.5%;
+    }
+    .wallet-list .wallet-list-item:nth-child(even) {
+        margin-right: 0;
+    }
+}

@@ -158,6 +158,12 @@ $oses:
             display: flex;
             flex-wrap: wrap;
             padding: 0 15px;
+            > li:hover > div {
+                display: none;
+            }
+            > li.pseudo-acc:hover > div {
+                display: block;
+            }
             > li {
                 display: block;
                 width: 47.5%;
@@ -168,7 +174,6 @@ $oses:
                 border: 1px solid $light-grey;
                 background-position: 50% 20px;
                 box-sizing: border-box;
-
                 &:nth-child(even) {
                     margin-right: 0;
                 }
@@ -230,6 +235,27 @@ $oses:
             box-sizing: border-box;
             background: #f8f8f8;
             text-align: left;
+        }
+        .js-acc-item.pseudo-acc {
+            width: 100%;
+            margin: 0;
+            background: #f8f8f8;
+            border: none;
+            height: 60px;
+            padding: 16px 0 0 55px;
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+        .js-acc-item.pseudo-acc a {
+            padding: 0;
+            text-align: left;
+            font-size: 18px;
+        }
+        .is-hidden {
+            display: none;
+        }
+        .is-fullwidth {
+            padding: 0;
         }
     }
 }

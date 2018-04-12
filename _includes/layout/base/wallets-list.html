@@ -3,8 +3,8 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="wallet-list" id="wallets">
-  <div class="container">
+<div class="container">
+  <div class="wallet-list" id="wallets">
      {% for wallet in site.wallets %} {% assign platform = page.platform['name'] %} {% assign os = page.os['name'] %} {% if wallet.compat
     contains platform and wallet.compat contains os %}
     <div class="wallet-list-item" data-walletlevel="{{ wallet.level }}">
