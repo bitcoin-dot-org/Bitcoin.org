@@ -12,7 +12,17 @@ breadcrumbs:
   - bcc
   - Contribute
 ---
+
+<div class="hero">
+<div class="container" markdown="block">
+
 # Contributing To Bitcoin Core
+
+</div>
+</div>
+
+<div class="bitcore-content">
+<div class="container" markdown="block">
 
 Thank you for considering contributing to Bitcoin Core!  We have
 instructions below to help you get started contributing in several different
@@ -38,3 +48,6 @@ IRC chatroom and discuss your plan with a developer.
 <br class="clear"><br class="big">
 
 {% include references.md %}
+
+</div>
+</div>

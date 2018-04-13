@@ -13,7 +13,17 @@ breadcrumbs:
   - bcc contribute
   - Translations
 ---
+
+<div class="hero">
+<div class="container" markdown="block">
+
 # Translating Bitcoin Core
+
+</div>
+</div>
+
+<div class="bitcore-content">
+<div class="container" markdown="block">
 
 Bitcoin Core has been fully translated into over two dozen languages,
 with dozens more languages partially translated---but more help is
@@ -57,3 +67,6 @@ chatroom.*
 <br class="clear">
 
 {% include references.md %}
+
+</div>
+</div>

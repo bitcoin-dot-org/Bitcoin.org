@@ -47,10 +47,11 @@ a:active img{
     border:0;
 }
 blockquote{
-    margin-left:0;
-    border-left:5px solid #eee;
-    padding-left:15px;
-    font-size: 120%;
+    margin-top:0;
+    border-left: 5px solid #f7931a;
+    border-right: 5px solid #f7931a;
+    padding: 16px 100px 45px;
+    font-size: 137.5%;
 }
 pre{
     background-color:#f8f8f8;
@@ -425,6 +426,9 @@ hr {
 }
 .menusimple.menucore>li:first-child+li+li+li+li a{
     font-weight: 700;
+}
+.bitcore-content {
+    padding: 70px 0;
 }
 .currency {
     font-size: 93.75%;
@@ -871,8 +875,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .btn {
     display:inline-block;
-    width: 325px;
-    height: 55px;
     padding: 16px 25px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -881,6 +883,10 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     color:#fff;
     text-transform: uppercase;
     border-radius:1px;
+}
+.btn-home {
+    width: 325px;
+    height: 55px;
 }
 .btn:not(:first-child) {
     margin-left: 6px;
@@ -1180,6 +1186,30 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     background: url(../img/icons/ico_download.svg) no-repeat;
 }
 /* Bitcoin paper page end */
+.warning {
+    position: relative;
+    max-width: 970px;
+    margin: 0 auto 30px;
+    padding: 43px 50px 43px 140px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 112.5%;
+    color: #77767e;
+    background: #FFF9F3;
+    border-radius: 1px;
+}
+.warning::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    width: 50px;
+    height: 43px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: url(../img/icons/ico_warning.svg) center no-repeat;
+    background-size: contain;
+}
 
 .titleicon{
     width:32px;
@@ -1195,7 +1225,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     vertical-align:middle;
     margin-right:6px;
 }
-
 /* Developer Documentation page START*/
 .dev-documentation {
     padding: 50px 0 70px;
@@ -1448,17 +1477,8 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-weight:normal;
     border-bottom: 3px double #ddd;
 }
-// .accordion-toggle {
-//     cursor: pointer;
-//     padding: 30px 20px 30px 30px;
-// }
-// .active .accordion-toggle {
-//     background: #fff;
-//     padding: 30px 20px 20px 30px;
-// }
 .accordion-content {
     display: none;
-    // padding: 0 0 40px 30px;
 }
 .anchorAf{
     position:relative;
@@ -1675,11 +1695,14 @@ table.privacy-comparison td:nth-child(1n+2) {
     width: 120px;
 }
 
-table.validation { width: 100%; }
+table.validation { 
+    width: 100%; 
+    margin-bottom: 30px;
+}
 
 table.validation tr.details td {
         background-color: #F5F5F5;
-        padding: 10px;
+        padding: 40px 10px;
 }
 table.validation .ui-icon {
         display: inline-block;
@@ -1690,9 +1713,11 @@ table.validation tr:nth-child(even)>td {
 table.validation tr:nth-child(even)>td:hover {
     color:#000;
 }
-
+.received_transactions {
+    margin-bottom: 30px;
+}
 .received_transactions td {
-        width: 50%;
+    width: 50%;
 }
 
 #system-requirements-accordion div {
@@ -1704,6 +1729,12 @@ table.validation tr:nth-child(even)>td:hover {
     margin: 20px 0;
 }
 
+button.js {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #3490E6;
+}
 button.js.showcolumn {
         border:0;
         margin: 10px;
@@ -1787,32 +1818,42 @@ br.big {
         margin-right: 75px;
         clear: both;
 }
-
-button.js {
-        background: transparent;
-        border: 0;
-        padding: 0;
-        border-bottom: 1px dotted #2c6fad;
-        color: #2c6fad;
-        font-weight: inherit;
+.prevnext span {
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    border: 1px solid #dadada;
 }
-
-button.js:hover {
-        color: #63a4e1;
+.prevnext span::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background: url(../img/icons/ico_angle_grey.svg) center no-repeat;
+    background-size: contain;
 }
-
-button.active {
-        text-decoration: underline;
-}
-
-.prevnext {
-    line-height: 1.5em;
+.prevnext span strong {
+    font-weight: 400;
 }
 .prevnext span:first-child {
-        float: left;
+    float: left;
+    padding-left: 50px;
+    padding-right: 21px;
+}
+.prevnext span:first-child::before {
+    left: 21px;
+    transform: translateY(-50%) rotate(90deg);
+}
+.prevnext span:last-child::before {
+    right: 21px;
+    transform: translateY(-50%) rotate(-90deg);
 }
 .prevnext span:last-child {
-        float: right;
+    float: right;
+    padding-right: 50px;
+    padding-left: 21px;
 }
 
 .callout {
@@ -1886,9 +1927,6 @@ button.active {
 .show_more-list li {
     margin: 0 0 10px;
     color: #FF9500;
-}
-.show_more-list a {
-    color: inherit;
 }
 .show_more-list span {
     font-size: 125%;
@@ -2022,10 +2060,9 @@ button.active {
 }
 
 .right-hanger {
-        max-width: 300px;
-        text-align: right;
-        margin-left: auto;
-        font-weight: 700;
+    margin-top: 40px;
+    text-align: right;
+    margin-left: auto;
 }
 
 .left-float {
@@ -2970,7 +3007,95 @@ button.active {
     display: block;
 }
 .vocabulary-list {
-
+    
+}
+.bitcore-content .callout{
+    margin: 0 auto 90px;
+}
+.bitcore-content > div > h2 {
+    margin: 0 0 45px;
+}
+.bitcore-content > div > p {
+    font-size: 125%;
+    margin: 0 0 40px;
+}
+.bitcore-content p > img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 20px;
+}
+.bitcore-content ol, ul{
+    font-size: 125%;
+}
+.bitcore-content .btn-separator{
+    display: none;
+}
+.bitcore-content .card-row{
+    margin-top: 0px;
+}
+.core-card {
+    min-height: 290px;
+}
+.core-card .js {
+    cursor: pointer;
+}
+.ui-accordion {
+    max-width: 770px;
+    margin: 0 auto;
+}
+.ui-accordion .ui-accordion-header {
+    margin: 0;
+    padding: 15px 15px 17px 65px;
+    border-radius: 0;
+    border: 1px solid #dadada;
+    font-size: 112.5%;
+    background: #fff;
+    color: #9d9d9d;
+}
+.ui-accordion .ui-state-active {
+    border: 1px solid #ff7e00;
+    color: #ff7e00;
+}
+.ui-state-default .ui-icon {
+    background: url(../img/icons/ico_angle_grey.svg) center no-repeat;   
+    background-size: contain;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+    left: 24px;
+    transform: translateY(-50%);
+    margin-top: 0;
+}
+.ui-accordion .ui-state-active .ui-accordion-header-icon{
+    width: 17px;
+    background: url(../img/icons/ico_angle_orange.svg) center no-repeat;   
+    background-size: contain;
+}
+.ui-accordion .ui-accordion-content {
+    border-radius: 0;
+}
+.ui-alert {
+    margin: 0 auto 100px;
+}
+.bitcore-content .ui-alert p {
+    margin: 0;
+}
+.lightweight-wallets-row {
+    justify-content: space-between;
+}
+.lightweight-wallets-row div {
+    width: 45%;
+}
+.right-hanger a {
+    display:inline-block;
+    padding: 16px 60px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-weight:600;
+    font-size:100%;
+    color:#fff;
+    text-transform: uppercase;
+    border-radius:1px;
+    background: #13161F;
 }
 /*Styles specific to printing*/
 
@@ -3609,6 +3734,9 @@ button.active {
         -webkit-transform: translateY(-50%) rotate(180deg);
                 transform: translateY(-50%) rotate(180deg); 
     }
+    .bitcore-content {
+        padding: 50px 0;
+    }
     .currency {
         margin-right: 75px;
         margin-bottom: 10px;
@@ -3871,7 +3999,8 @@ button.active {
         width: 50px;
         height: 50px;
     }
-    .alert {
+    .alert,
+    .warning {
         padding: 30px 20px 30px 90px;
         font-size: 100%;
         text-align: left;
@@ -4384,6 +4513,35 @@ button.active {
     }
     .contributor {
         width: 100%;
+    }
+    .lightweight-wallets-row {
+        flex-direction: column
+    }
+    .lightweight-wallets-row div {
+        width: 100%;
+    }
+    .lightweight-wallets-row div:first-child {
+        margin: 0 0 40px;
+    }
+    .prevnext span:first-child {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .prevnext span:last-child {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .prevnext span::before {
+        display:none;
+    }
+    .right-hanger {
+        text-align: center;
+    }
+    .right-hanger a {
+        padding: 16px 30px;
+    }
+    .warning::before {
+        left: 23px;
     }
 }
 

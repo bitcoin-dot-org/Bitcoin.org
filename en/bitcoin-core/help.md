@@ -15,7 +15,17 @@ breadcrumbs:
 end_of_page: |
   <script src="/js/devsearch.js"></script>
 ---
+
+<div class="hero">
+<div class="container" markdown="block">
+
 # Getting Help For Bitcoin Core
+
+</div>
+</div>
+
+<div class="bitcore-content">
+<div class="container" markdown="block">
 
 There are many ways to get help for Bitcoin Core, including
 [documentation](#documentation), [forums](#forums), and [live chatrooms](#live).
@@ -83,3 +93,6 @@ for that chatroom.
   on the Bitcoin Wiki.
 
 {% include references.md %}
+
+</div>
+</div>
