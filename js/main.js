@@ -562,7 +562,32 @@ function toggleDonationBanner() {
     toggle.toggleClass('active');
     banner.toggleClass('expanded');
 }
+function loadBtcExchangeRate() {
+  
+  var request = new XMLHttpRequest();
+  request.open('GET', 'https://apiv2.bitcoinaverage.com/indices/global/ticker/short?crypto=BTC&fiat=USD', true);
+  request.onload = function () {
+    var data = JSON.parse(request.responseText);
+    var rate = formatNumber(data.BTCUSD.last);
+    
+    document.querySelector(".currency-amount").textContent = rate;
+  }
+  
+  function formatNumber(num) {
+    num = num.toFixed(2);
+    var numSplit = num.split('.');
+    var int = numSplit[0];
+    var dec = numSplit[1];
 
+    if (int.length > 3) {
+      int = int.substr(0, int.length - 3) + ',' + int.substr(int.length - 3, 3);
+    }
+
+    return '$' + int + '.' + dec;
+  }
+
+  request.send();
+}
 function accordion() {
   $(document).ready(function($) {
     $('.accordion-toggle').click(function(){

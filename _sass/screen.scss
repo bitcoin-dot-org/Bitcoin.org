@@ -828,6 +828,9 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-size: 106.25%;
     color: #13161F;
 }
+.home-title {
+    margin: 0 0 50px;
+}
 .recommendation {
     padding: 70px 0 130px;
 }
@@ -3235,6 +3238,9 @@ br.big {
             -ms-flex-direction: column;
                 flex-direction: column;
     }
+    .home-title {
+        margin: 0 0 43px;
+    }
     .donate {
         max-width: 100%;
         margin-bottom: 65px;
@@ -4155,6 +4161,9 @@ br.big {
         display: inline-block;
         margin: 0 28px 0 0;
         vertical-align: top;
+    }
+    .home-title {
+        margin: 0 0 30px;
     }
     .card-row {
         margin: 50px 0;
