@@ -897,8 +897,20 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .btn-bright {
     background: #FF9500;
 }
+.btn-bright:hover {
+    background: #F9A136;
+}
+.btn-bright:active {
+    background: #F58A08;
+}
 .btn-dark {
     background: #13161F;
+}
+.btn-dark:hover {
+    background: #333743;
+}
+.btn-dark:active {
+    background: #000000;
 }
 .btn-light {
     padding: 15px 25px;
@@ -1112,7 +1124,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-weight: 600;
     text-transform: uppercase;
     color:#fff;
-    background: #F7931A;
     border-radius:1px;
 }
 .start div div div a:hover{
@@ -1866,7 +1877,6 @@ br.big {
     display: block;
     width: 270px;
     height: 55px;
-    background: #F7931A;
     border-radius: 1px;
     font-size: 100%;
     color: #FFFFFF;
