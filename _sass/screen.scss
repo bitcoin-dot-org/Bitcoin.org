@@ -32,6 +32,18 @@ h3{
     line-height: 36px;
     font-weight: 400;
 }
+h4{
+    color:#13161F;
+    font-size :112.5%;
+    line-height: 36px;
+    font-weight: 400;
+}
+h5{
+    color:#13161F;
+    font-size :100%;
+    line-height: 36px;
+    font-weight: 400;
+}
 a {
     color:#3490E6;
     text-decoration:none;
@@ -47,7 +59,7 @@ a:active img{
     border:0;
 }
 blockquote{
-    margin-top:0;
+    margin: 0 100px 70px;
     border-left: 5px solid #f7931a;
     border-right: 5px solid #f7931a;
     padding: 16px 100px 45px;
@@ -509,7 +521,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
-    background: #F7931A;
     border-radius: 1px;
 }
 .donate-text {
@@ -1696,7 +1707,9 @@ div.one-column {
 .post-title {
     padding-top: 20px;
 }
-
+table.privacy-comparison {
+    margin-bottom: 70px;
+}
 table.privacy-comparison td,table.privacy-comparison th{
     padding:3px;
 }
@@ -1727,7 +1740,8 @@ table.validation tr:nth-child(even)>td {
 table.validation tr:nth-child(even)>td:hover {
     color:#000;
 }
-.received_transactions {
+.received_transactions,
+.center_header {
     margin-bottom: 30px;
 }
 .received_transactions td {
@@ -1742,7 +1756,13 @@ table.validation tr:nth-child(even)>td:hover {
     display: block;
     margin: 20px 0;
 }
-
+.service-choose {
+    margin-bottom: 45px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.service-choose-title {
+    margin-bottom: 30px;
+}
 button.js {
     background: none;
     border: none;
@@ -1750,8 +1770,25 @@ button.js {
     color: #3490E6;
 }
 button.js.showcolumn {
-        border:0;
-        margin: 10px;
+    padding: 22px 30px;
+    margin: 0 100px 0 0;
+    font-size: 112.5%;
+    color: #9D9D9D;
+    text-align: center;
+    border:0;
+}
+button.js.showcolumn:last-child {
+    margin: 0;
+}
+button.js.showcolumn:hover {
+    padding: 22px 30px 19px;
+    border-bottom: 3px solid #FF7E00;
+    color: #FF7E00;
+}
+button.js.showcolumn.active {
+    padding: 22px 30px 19px;
+    border-bottom: 3px solid #FF7E00;
+    color: #FF7E00;
 }
 
 .not-displayed {
@@ -2375,6 +2412,10 @@ br.big {
 }
 .exchanges-australia-title::before {
     background: url(../img/flags/australia.svg) center no-repeat;
+    background-size: contain;
+}
+.exchanges-newzealand-title::before {
+    background: url(../img/flags/newzeland.svg) center no-repeat;
     background-size: contain;
 }
 .exchanges-africa-title::before {
@@ -3100,6 +3141,28 @@ br.big {
     width: 45%;
 }
 .right-hanger a {
+    background: #13161F;
+}
+.right-hanger a:hover {
+    background: #333743;
+}
+.right-hanger a:active {
+    background: #000;
+}
+.bitcore-content .center-hanger.center {
+    margin: 70px 0;
+}
+.center-hanger a {
+    background: #F7931A;
+}
+.center-hanger a:hover {
+    background: #f9a136;
+}
+.center-hanger a:active {
+    background: #f58a08;
+}
+.right-hanger a,
+.center-hanger a {
     display:inline-block;
     padding: 16px 60px;
     -webkit-box-sizing: border-box;
@@ -3109,7 +3172,6 @@ br.big {
     color:#fff;
     text-transform: uppercase;
     border-radius:1px;
-    background: #13161F;
 }
 /*Styles specific to printing*/
 
@@ -3195,6 +3257,10 @@ br.big {
         display: block;
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
+    }
+    blockquote {
+        margin: 0 0 80px;
+        padding: 16px 50px 45px;
     }
     .section-title {
         margin: 0 0 40px;
@@ -4129,6 +4195,12 @@ br.big {
     p {
         line-height: 1.7em;
     }
+    blockquote {
+        margin: 0 0 50px;
+        padding: 15px 20px 16px;
+        text-align: center;
+        font-size: 112.5%;
+    }
     .summarytxt {
         font-size: 112.5%;
     }
@@ -4557,11 +4629,29 @@ br.big {
     .right-hanger {
         text-align: center;
     }
-    .right-hanger a {
+    .right-hanger a,
+    .center-hanger a {
         padding: 16px 30px;
     }
     .warning::before {
         left: 23px;
+    }
+    .bitcore-content>div>h2 {
+        margin: 0 0 30px;
+        font-size: 125%;
+        text-align: left;
+    }
+    .bitcore-content>div>p {
+        font-size: 112.5%;
+    }
+    button.js.showcolumn {
+        padding: 22px 10px;
+        margin: 0 20px 0 0;
+    }
+    button.js.showcolumn.active,
+    button.js.showcolumn:active,
+    button.js.showcolumn:hover {
+        padding: 22px 10px 19px;
     }
 }
 
