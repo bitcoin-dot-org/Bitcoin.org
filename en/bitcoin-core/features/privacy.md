@@ -58,7 +58,7 @@ third_party_privacy:
 </div>
 </div>
 
-<div class="bitcore-content">
+<div class="bitcore-content clearfix">
 <div class="container" markdown="block">
 
 ![Excellent privacy](/img/bitcoin-core/slider-privacy.svg)

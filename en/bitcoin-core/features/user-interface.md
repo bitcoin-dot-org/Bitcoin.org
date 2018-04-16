@@ -380,7 +380,6 @@ Bitcoin Core full node.
 
 </div>
 
-<br class="clear big">
 <div class="prevnext">
 <span markdown="1">**Previous Feature**<br>[Requirements][bcc requirements]</span>
 <span markdown="1">**Next feature**<br>[Network Support][bcc network support]</span>

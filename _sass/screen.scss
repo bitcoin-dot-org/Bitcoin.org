@@ -1581,6 +1581,9 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
             box-sizing: border-box;
     background: url(../img/icons/ico_search.svg) 30px 17px no-repeat;
 }
+.help-search {
+    margin: 30px auto;
+}
 .glossary_term::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #bcb7b8;
 }
@@ -1748,9 +1751,9 @@ table.validation tr:nth-child(even)>td:hover {
     width: 50%;
 }
 
-#system-requirements-accordion div {
-        padding: 0;
-}
+// #system-requirements-accordion div {
+//         padding: 0;
+// }
 
 .service-choose a{
     display: block;
@@ -1802,7 +1805,60 @@ br.big {
 .font2x {
         font-size: 200%;
 }
-
+.system-requirements-list {
+    margin: 0;
+    padding: 0 0 0 50px;
+}
+.system-requirements-list strong {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+}
+.system-requirements-list p {
+    font-family: TitilliumWeb-Regular;
+    font-size: 20px;
+    color: #4D5060;
+    line-height: 34px;
+}
+.system-requirements-list li {
+    margin-bottom: 70px;
+    padding-left: 20px;
+}
+.accordion-icon {
+    position: relative;
+}
+.accordion-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 40px;
+    height: 35px;
+}
+.disk-icon::before {
+    background: url(../img/icons/ico_disk.svg) center no-repeat;
+    background-size: contain;
+}
+.download-icon::before {
+    background: url(../img/icons/download-icon.svg) center no-repeat;
+    background-size: contain;
+}
+.upload-icon::before {
+    background: url(../img/icons/ico_upload.svg) center no-repeat;
+    background-size: contain;
+}
+.memory-icon::before {
+    background: url(../img/icons/ico_memory.svg) center no-repeat;
+    background-size: contain;
+}
+.system-icon::before {
+    background: url(../img/icons/ico_system.svg) center no-repeat;
+    background-size: contain;
+}
+.os-icon::before {
+    background: url(../img/icons/ico_os.svg) center no-repeat;
+    background-size: contain;
+}
 /********** SLIDER **********/
 .sliderbox {
         max-width: 940px;
@@ -1849,16 +1905,15 @@ br.big {
     color: #fff;
 }
 
-.two-column-list ul {
-        margin-left: 4em;
-}
+// .two-column-list ul {
+//         margin-left: 4em;
+// }
 
 .two-column-list li {
         list-style: none;
         float: left;
         width: 14em;
         text-align: left;
-        margin-bottom: 20px;
 }
 
 .two-column-list .fa-li {
@@ -1866,7 +1921,7 @@ br.big {
 }
 
 .two-column-list li:nth-child(2n+1) {
-        margin-right: 75px;
+        margin-right: 50px;
         clear: both;
 }
 .prevnext span {
@@ -3096,7 +3151,7 @@ br.big {
 }
 .ui-accordion {
     max-width: 770px;
-    margin: 0 auto;
+    margin: 0 auto 70px;
 }
 .ui-accordion .ui-accordion-header {
     margin: 0;
@@ -3106,6 +3161,7 @@ br.big {
     font-size: 112.5%;
     background: #fff;
     color: #9d9d9d;
+    text-align: left;
 }
 .ui-accordion .ui-state-active {
     border: 1px solid #ff7e00;
@@ -3127,6 +3183,7 @@ br.big {
 }
 .ui-accordion .ui-accordion-content {
     border-radius: 0;
+    padding: 30px 20px 30px 40px;
 }
 .ui-alert {
     margin: 0 auto 100px;
@@ -3172,6 +3229,10 @@ br.big {
     color:#fff;
     text-transform: uppercase;
     border-radius:1px;
+}
+.release-content h1 {
+    color: #FF7E00;
+    text-align: left;
 }
 /*Styles specific to printing*/
 
@@ -3674,6 +3735,12 @@ br.big {
     .contributor:nth-child(even) {
         margin-right: 0;
     }
+    .ui-accordion .ui-accordion-content {
+        padding: 30px 20px 30px 20px;
+    }
+    .two-column-list li:nth-child(2n+1) {
+        margin-right: 20px;
+    }
 }
 
 @media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ){
@@ -4087,6 +4154,11 @@ br.big {
         padding: 30px 20px 30px 90px;
         font-size: 100%;
         text-align: left;
+    }
+    .warning::before {
+        left: 23px;
+        top: 30px;
+        transform: translateY(0%);
     }
     .blog {
         padding: 50px 0 50px;
@@ -4633,15 +4705,13 @@ br.big {
     .center-hanger a {
         padding: 16px 30px;
     }
-    .warning::before {
-        left: 23px;
-    }
     .bitcore-content>div>h2 {
         margin: 0 0 30px;
         font-size: 125%;
         text-align: left;
     }
-    .bitcore-content>div>p {
+    .bitcore-content>div>p,
+    .bitcore-content>div>ul {
         font-size: 112.5%;
     }
     button.js.showcolumn {
@@ -4652,6 +4722,22 @@ br.big {
     button.js.showcolumn:active,
     button.js.showcolumn:hover {
         padding: 22px 10px 19px;
+    }
+    .ui-accordion .ui-accordion-content {
+        padding: 20px 10px;
+    }
+    .system-requirements-list strong {
+        font-size: 20px;
+    }
+    .system-requirements-list p {
+        font-size: 18px;
+    }
+    .two-column-list li {
+        float: none;
+        width: auto;
+    }
+    .system-requirements-list li {
+        margin-bottom: 35px;
     }
 }
 

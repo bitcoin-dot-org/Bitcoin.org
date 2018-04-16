@@ -13,8 +13,17 @@ breadcrumbs:
   - bcc features
   - Requirements
 ---
+
+<div class="hero">
+<div class="container" markdown="block">
+
 # Bitcoin Core Requirements And Warnings
-{:.not-displayed}
+
+</div>
+</div>
+
+<div class="bitcore-content clearfix">
+<div class="container" markdown="block">
 
 ![Bitcoin Core requirements and warnings](/img/bitcoin-core/slider-warning.svg)
 
@@ -27,10 +36,11 @@ your bitcoins, meet higher [minimum system
 requirements](#system-requirements), and beware of some [possible
 problems](#possible-problems).
 
-![Warning icon](/img/icons/icon_warning.svg)
+<div class="warning" markdown="block">
 **No matter what Bitcoin software you use,** you should never
 buy more bitcoins than you can afford to lose. Bitcoin is still an
 experimental system and bitcoins remain a risky investment.
+</div>
 
 ## Wallet Responsibility Checklist
 
@@ -61,14 +71,14 @@ help].
 
 ## System Requirements
 
-{% assign DISK='<span class="fa fa-li fa-hdd-o fa-2x"></span> **Disk space**<br>' %}
-{% assign DOWNLOAD='<span class="fa fa-li fa-download fa-2x"></span> **Download**<br>' %}
-{% assign UPLOAD='<span class="fa fa-li fa-upload fa-2x"></span> **Upload**<br>' %}
-{% assign MEMORY='<span class="fa fa-li fa-database fa-2x"></span> **Memory (RAM)**<br>' %}
-{% assign SYSTEM='<span class="fa fa-li fa-desktop fa-2x"></span> **System**<br>' %}
-{% assign OS='<span class="fa fa-li fa-windows fa-2x"></span> **Operating system**<br>' %}
+{% assign DISK='<span class="accordion-icon disk-icon"></span> **Disk space**<br>' %}
+{% assign DOWNLOAD='<span class="accordion-icon download-icon"></span> **Download**<br>' %}
+{% assign UPLOAD='<span class="accordion-icon upload-icon"></span> **Upload**<br>' %}
+{% assign MEMORY='<span class="accordion-icon memory-icon"></span> **Memory (RAM)**<br>' %}
+{% assign SYSTEM='<span class="accordion-icon system-icon"></span> **System**<br>' %}
+{% assign OS='<span class="accordion-icon os-icon"></span> **Operating system**<br>' %}
 {% assign FOOTNOTE='<b>*</b>' %}
-{% capture INITIAL_DOWNLOAD %}<b>*</b> Plus a one-time {{site.text.chain_gb}} GB download the first time you start Bitcoin Core.{% endcapture %}
+{% capture INITIAL_DOWNLOAD %}<p class="notation"><b>*</b> Plus a one-time {{site.text.chain_gb}} GB download the first time you start Bitcoin Core.</p>{% endcapture %}
 
 <div markdown="block" class="two-column-list" id="system-requirements-accordion">
 
@@ -76,7 +86,7 @@ help].
 
 <div markdown="block">
 
-{:.fa-ul}
+{:.system-requirements-list.clearfix}
 - {{DISK}} {{site.text.bitcoin_datadir_gb}} GB
 
 - {{DOWNLOAD}} 250 MB/day (8 GB/month){{FOOTNOTE}}
@@ -94,7 +104,6 @@ help].
   >Linux<br
   >Some BSDs
 
-<br class="clear">
 
 {{INITIAL_DOWNLOAD}}
 
@@ -105,7 +114,7 @@ help].
 
 <div markdown="block">
 
-{:.fa-ul}
+{:.system-requirements-list.clearfix}
 - {{DISK}} {{site.text.bitcoin_datadir_gb_pruned}} GB
 
 - {{DOWNLOAD}} 150 MB/day (5 GB/month){{FOOTNOTE}}
@@ -123,7 +132,6 @@ help].
   >Linux<br
   >Some BSDs
 
-<br class="clear">
 
 {{INITIAL_DOWNLOAD}}
 
@@ -136,7 +144,7 @@ help].
 
 <div markdown="block">
 
-{:.fa-ul}
+{:.system-requirements-list.clearfix}
 - {{DISK}} {{site.text.bitcoin_datadir_gb}} GB
 
 - {{DOWNLOAD}} 500 MB/day (15 GB/month){{FOOTNOTE}}
@@ -153,7 +161,6 @@ help].
   >Mac OS X<br
   >Linux
 
-<br class="clear">
 
 {{INITIAL_DOWNLOAD}}
 
@@ -219,11 +226,11 @@ help].
   </div>
 </div>
 
-<br class="clear big">
 <div class="prevnext">
 <span markdown="1">**Previous Feature**<br>[Privacy][bcc privacy]</span>
 <span markdown="1">**Next feature**<br>[User interface][bcc user interface]</span>
 </div>
-<br class="clear">
 
 {% include references.md %}
+</div>
+</div>
