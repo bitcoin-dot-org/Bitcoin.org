@@ -155,6 +155,9 @@ function boxShow(e) {
     expandBox(t);
     cancelEvent(e);
   }
+  document.querySelectorAll(".boxexpand > h1:first-child").forEach(function(accordionToggle) {
+    return accordionToggle.addEventListener("click", init);
+  });
   document.querySelectorAll(".boxexpand > h2:first-child").forEach(function(accordionToggle) {
     return accordionToggle.addEventListener("click", init);
   });

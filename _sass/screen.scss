@@ -1883,6 +1883,7 @@ br.big {
         height: 100%;
         display: none;
         position: absolute;
+        text-align: center;
 }
 
 .slide:first-child {
@@ -1892,19 +1893,17 @@ br.big {
 .slide-buttons {
         text-align: center;
 }
-
-.slide-buttons button {
-        background: transparent;
-        border: 0;
-        font-size: 150%;
-    border-radius: 4px;
+.slide-btn {
+    width: 11px;
+    height: 11px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background: #FFEACC;
+    border: none;
 }
-
-.slide-buttons button.active {
-    background-color: #2c6fad;
-    color: #fff;
+.slide-btn.active {
+    background: #FF9500;
 }
-
 // .two-column-list ul {
 //         margin-left: 4em;
 // }
@@ -2283,6 +2282,7 @@ br.big {
 .boxexpand.expanded>*{
     display:block;
 }
+.boxexpand>h1:first-child,
 .boxexpand>h2:first-child,
 .boxexpand>h3:first-child {
     display:block;
@@ -2292,10 +2292,12 @@ br.big {
     text-align: left;
     cursor: pointer;
 }
+.boxexpand.expanded>h1:first-child,
 .boxexpand.expanded>h2:first-child,
 .boxexpand.expanded>h3:first-child {
     padding: 40px 35px 15px 30px;
 }
+.boxexpand>h1:first-child::after, 
 .boxexpand>h2:first-child::after, 
 .boxexpand>h3:first-child::after {
     content: '';
@@ -2308,6 +2310,7 @@ br.big {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
 }
+.boxexpand.expanded>h1:first-child::after,
 .boxexpand.expanded>h2:first-child::after,
 .boxexpand.expanded>h3:first-child::after {
     -webkit-transform: translateY(-50%) rotate(180deg);
@@ -3424,17 +3427,21 @@ br.big {
         min-width: auto;
         width: 245px;
     }
+    .boxexpand>h1:first-child, 
     .boxexpand>h2:first-child, 
     .boxexpand>h3:first-child {
         padding: 30px 35px 30px 30px;
     }
+    .boxexpand.expanded>h1:first-child, 
     .boxexpand.expanded>h2:first-child, 
     .boxexpand.expanded>h3:first-child {
         padding: 30px 35px 20px 30px;
     }
+    .boxexpand>h1
     .boxexpand>h2 {
         font-size: 150%;
     }
+    .boxexpand>h1:first-child::after, 
     .boxexpand>h2:first-child::after, 
     .boxexpand>h3:first-child::after {
         right: 15px;
@@ -4233,10 +4240,12 @@ br.big {
         margin-left: 15px;
         margin-right: 15px;
     }
+    .boxexpand>h1:first-child, 
     .boxexpand>h2:first-child, 
     .boxexpand>h3:first-child {
         padding: 30px 30px 30px 15px;
     }
+    .boxexpand.expanded>h1:first-child, 
     .boxexpand.expanded>h2:first-child, 
     .boxexpand.expanded>h3:first-child {
         padding: 30px 30px 15px 15px;
@@ -4481,14 +4490,17 @@ br.big {
     #markdown-toc>li>a::after {
         right: 0;
     }
+    .boxexpand>h1
     .boxexpand>h2 {
         font-size: 137.5%;
     }
+    .boxexpand>h1:first-child, 
     .boxexpand>h2:first-child, 
     .boxexpand>h3:first-child {
         padding: 15px 35px 15px 15px;
         background: #f8f8f8
     }
+    .boxexpand.expanded>h1:first-child, 
     .boxexpand.expanded>h2:first-child, 
     .boxexpand.expanded>h3:first-child {
         padding: 15px 35px 15px 15px;

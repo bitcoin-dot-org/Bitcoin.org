@@ -17,8 +17,16 @@ end_of_page: |
   </script>
 ---
 
+<div class="hero">
+<div class="container" markdown="block">
+
 # Bitcoin Core
-{:.not-displayed}
+
+</div>
+</div>
+
+<div class="bitcore-content clearfix">
+<div class="container" markdown="block">
 
 <div id="slidebox">
   <div class="slide-viewer">
@@ -40,22 +48,17 @@ end_of_page: |
       </div>
     </div>
   </div>
-  <div class="slide-buttons"
-   ><button type="image" class="slide-btn button-1" markdown="1"
-     ><span class="fa fa-check-square-o"></span></button>
+  <div class="slide-buttons">
+  <button type="image" class="slide-btn button-1" markdown="1"></button>
 
-   <button type="button" class="slide-btn button-2" markdown="1"
-     ><span class="fa fa-shield"></span></button>
+  <button type="button" class="slide-btn button-2" markdown="1"></button>
 
-   <button type="button" class="slide-btn button-3" markdown="1"
-     ><span class="fa fa-bar-chart"></span></button>
+  <button type="button" class="slide-btn button-3" markdown="1"></button>
 
-   <button type="button" class="slide-btn button-4" markdown="1"
-     ><span class="fa fa-sign-in"></span></button>
+  <button type="button" class="slide-btn button-4" markdown="1"></button>
 
-   <button type="button" class="slide-btn button-5" markdown="1"
-     ><span class="fa fa-globe"></span></button
-  ></div>
+  <button type="button" class="slide-btn button-5" markdown="1"></button>
+  </div>
 </div>
 
 <br class="clear">
@@ -111,3 +114,5 @@ broadband users to contribute** to less well-connected users.
 
 <br>
 {% include references.md %}
+</div>
+</div>

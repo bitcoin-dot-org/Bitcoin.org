@@ -13,8 +13,17 @@ breadcrumbs:
   - bcc features
   - Network Support
 ---
+
+<div class="hero">
+<div class="container" markdown="block">
+
 # Donate Bandwidth Using Bitcoin Core
-{:.not-displayed}
+
+</div>
+</div>
+
+<div class="bitcore-content clearfix">
+<div class="container" markdown="block">
 
 ![Support the network](/img/bitcoin-core/slider-network.svg)
 
@@ -57,3 +66,6 @@ volunteers like you, Bitcoin would never have come as far as it has.
 <br class="clear">
 
 {% include references.md %}
+
+</div>
+</div>
