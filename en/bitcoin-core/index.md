@@ -108,7 +108,7 @@ and several other powerful features
 {% comment %}<!-- Capture all the releases into a string and convert it to an array -->{% endcomment %}
 {% capture text_releases %}
 {% for p in date_sorted_releases reversed %}
-  {% if p.optional_date %}{{ p.optional_date | date:"%Y-%m-%d" }} - {% endif %}<a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a>::
+  {% if p.optional_date %}{{ p.optional_date | date:"%Y-%m-%d" }}{% endif %}<a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a>::
  {% endfor %}
 {% endcapture %}
 {% assign array_releases = text_releases | strip_newlines | split: '::' %}

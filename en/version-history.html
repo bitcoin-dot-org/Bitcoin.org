@@ -26,7 +26,7 @@ breadcrumbs:
       {% for p in date_sorted_releases reversed %}
       <li class="post">
         <div class="post-inner">
-          <p class="post-date">{% if p.optional_date %}{{ p.optional_date | date:"%Y-%m-%d" }} - {% endif %}</p>
+          <p class="post-date">{% if p.optional_date %}{{ p.optional_date | date:"%Y-%m-%d" }}{% endif %}</p>
           <p class="post-name">{{ p.title }}</p>
           <p class="post-description">
             <!-- Version description -->
