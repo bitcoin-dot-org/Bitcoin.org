@@ -55,9 +55,11 @@ first_character != '9' %}
 {% assign finished_with_numbers = true %}
 {% endif %}
 {% if first_character == last_first_character %}
+<!-- Just new word  -->
 <li markdown="span">{{text_and_link}}</li>
 {% else %}
 {% unless first_term %}
+<!-- New first capital letter  -->
 </ul><br class="clear">
 {% endunless %}
 

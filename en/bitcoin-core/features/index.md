@@ -64,55 +64,77 @@ end_of_page: |
 <br class="clear">
 {% include bitcoin-core/download-bitcoin-core.html %}
 
-## <span class="fa fa-check-square-o fa-lg"></span> Full Validation {#validation}
+<div markdown="block" class="row card-row">
+
+<div class="card core-card" markdown="block">
+<img src="/img/icons/ico_validation.svg" alt="icon">
+
+## Full Validation {#validation}
 {:.no_gap}
 
 Bitcoin Core ensures every block and transaction it accepts is valid,
 increasing not only your security but also **helping prevent miners and
 banks from taking control of Bitcoin.**
 
-{:.right-hanger}
 [Learn about full validation][bcc validation]
+{:.overview-link}
 
-## <span class="fa fa-shield fa-lg"></span> Better Privacy {#privacy}
+</div>
+<div class="card core-card" markdown="block">
+<img src="/img/icons/ico_control.svg" alt="icon">
+
+## Better Privacy {#privacy}
 
 Bitcoin Core provides **exclusive privacy features** that can make it
 hard for anyone to link you to your transactions.
 
-{:.right-hanger}
 [Discover the privacy advantages][bcc privacy]
+{:.overview-link}
 
+</div>
+<div class="card core-card" markdown="block">
+<img src="/img/icons/ico_better_security.svg" alt="icon">
 
-## <span class="fa fa-bar-chart fa-lg"></span> Warning: Better Security Has Costs {#requirements}
+## Warning: Better Security Has Costs {#requirements}
 
 Bitcoin Core uses more resources than other wallets, but it's still
 convenient to run on most computers and Internet connections.
 
-{:.right-hanger}
 [System requirements & warnings][bcc requirements]
+{:.overview-link}
 
+</div>
+<div class="card core-card" markdown="block">
+<img src="/img/icons/ico_better_ui.svg" alt="icon">
 
-## <span class="fa fa-sign-in fa-lg"></span> A Better User Interface {#user-interface}
+## A Better User Interface {#user-interface}
 
 Bitcoin Core wallet has **features most other wallets don't have.** But
 if you don't need them, you can use several other wallets on top of
 Bitcoin Core without losing Bitcoin Core's [security][bcc validation] and
 [privacy][bcc privacy] benefits.
 
-{:.right-hanger}
 [Tour the user interface][bcc user interface]
+{:.overview-link}
 
+</div>
+<div class="card core-card" markdown="block">
+<img src="/img/icons/ico_international.svg" alt="icon">
 
-## <span class="fa fa-globe fa-lg"></span> Support The Network {#network-support}
+## Support The Network {#network-support}
 
 Bitcoin Core helps support other peers. This isn't as useful as [helping
 to keep Bitcoin decentralized](#validation), but it's **an easy way for
 broadband users to contribute** to less well-connected users.
 
-{:.right-hanger}
 [Begin donating bandwidth][bcc network support]
+{:.overview-link}
+
+</div>
+</div>
 
 <br>
 {% include references.md %}
+
 </div>
 </div>
