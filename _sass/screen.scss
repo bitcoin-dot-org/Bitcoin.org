@@ -607,6 +607,9 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
+.footer-status-row {
+    align-items: center;
+}
 .footerlicense a{
     color: inherit;
 }

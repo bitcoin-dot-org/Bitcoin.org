@@ -41,7 +41,10 @@ use the base template -->
   {% endif %}
   {% include layout/base-core/content.html %}
   <div class="footer">
-    {% include layout/base-core/footer-menu.html %}
+    <div class="container">
+      {% include layout/base/footer-logo.html %}
+      {% include layout/base-core/footer-menu.html %}
+    </div>
     {% include layout/base-core/footer-license.html %}
   </div>
 </div>
