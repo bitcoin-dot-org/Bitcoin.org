@@ -161,7 +161,7 @@ $oses:
             > li:hover > div {
                 display: none;
             }
-            > li.pseudo-acc:hover > div {
+            > li.pseudo-acc > div {
                 display: block;
             }
             > li {
@@ -178,11 +178,11 @@ $oses:
                     margin-right: 0;
                 }
 
-                &.active {
-                    ul {
-                        display: block;
-                    }
-                }
+                // &.active {
+                //     ul {
+                //         display: block;
+                //     }
+                // }
 
                 > a {
                     padding: 55px 40px 15px;
@@ -235,6 +235,7 @@ $oses:
             box-sizing: border-box;
             background: #f8f8f8;
             text-align: left;
+            cursor: pointer
         }
         .js-acc-item.pseudo-acc {
             width: 100%;
@@ -246,10 +247,11 @@ $oses:
             font-size: 18px;
             margin-bottom: 2px;
         }
-        .js-acc-item.pseudo-acc a {
+        .js-acc-item.pseudo-acc > a {
             padding: 0;
             text-align: left;
             font-size: 18px;
+            color: #FF7E00;
         }
         .is-hidden {
             display: none;
