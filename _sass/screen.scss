@@ -1582,7 +1582,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     background: url(../img/icons/ico_search.svg) 30px 17px no-repeat;
 }
 .help-search {
-    margin: 30px auto;
+    margin: 50px auto;
 }
 .glossary_term::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #bcb7b8;
@@ -4750,6 +4750,9 @@ br.big {
     }
     .system-requirements-list li {
         margin-bottom: 35px;
+    }
+    .help-search {
+        margin: 30px 0;
     }
 }
 
