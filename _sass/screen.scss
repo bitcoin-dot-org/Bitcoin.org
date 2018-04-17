@@ -802,6 +802,11 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     position: absolute;
     top: -35px;
     right: 0;
+    width: 10px;
+    height: 10px;
+    border: none;
+    background: url(../img/icons/close-youtube.svg) center no-repeat;
+    background-size: contain;
 }
 .maindesc {
     padding: 100px 0 70px;
@@ -2473,7 +2478,7 @@ br.big {
     background-size: contain;
 }
 .exchanges-newzealand-title::before {
-    background: url(../img/flags/newzeland.svg) center no-repeat;
+    background: url(../img/flags/newzealand.svg) center no-repeat;
     background-size: contain;
 }
 .exchanges-africa-title::before {
