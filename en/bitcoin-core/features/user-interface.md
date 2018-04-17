@@ -64,26 +64,31 @@ configuration.
 </div>
 
 <div class="card core-card">
+<img src="/img/icons/ico_qrcode.svg" alt="icon">
 <h3 class="popup js" id="qr-codes" data-container="gui_qr_codes">QR codes</h3>
 <p>Generate QR codes to receive payment</p>
 </div>
 
 <div class="card core-card">
+<img src="/img/icons/ico_invoices.svg" alt="icon">
 <h3 class="popup js" id="unique-invoices" data-container="gui_unique_invoices">Unique invoices</h3>
 <p>Easily track who paid you</p>
 </div>
 
 <div class="card core-card">
+<img src="/img/icons/ico_control.svg" alt="icon">
 <h3 class="popup js" id="proxy-configuration" data-container="gui_proxy_configuration">Proxy configuration</h3>
 <p>Use Tor or a proxy for privacy</p>
 </div>
 
 <div class="card core-card">
+<img src="/img/icons/ico_monitoring.svg" alt="icon">
 <h3 class="popup js" id="network-monitoring" data-container="gui_network_monitoring">Network monitoring</h3>
 <p>Track how much bandwidth you use</p>
 </div>
 
 <div class="card core-card">
+<img src="/img/icons/ico_watch-only.svg" alt="icon">
 <h3 class="popup js" id="support" data-container="gui_watch_only">Watch-only support</h3>
 <p>Track bitcoins stored safely offline</p>
 </div>
@@ -98,31 +103,37 @@ configuration.
 <div markdown="block" class="row card-row">
 
 <div class="card core-card">
+<img src="/img/icons/get-new-address.svg" alt="icon">
 <h3 class="popup js" id="GetNewAddress" data-container="rpc_getnewaddress">GetNewAddress</h3>
 <p>Get a new address for receiving payment</p>
 </div>
 
 <div class="card core-card">
+<img src="/img/icons/get-balance.svg" alt="icon">
 <h3 class="popup js" id="GetBalance" data-container="rpc_getbalance">GetBalance</h3>
 <p>Instantly see your available Bitcoin balance</p>
 </div>
 
 <div class="card core-card">
+<img src="/img/icons/ico_send.svg" alt="icon">
 <h3 class="popup js" id="SendMany" data-container="rpc_sendmany">SendMany</h3>
 <p>Send a single payment to multiple addresses</p>
 </div>
 
 <div class="card core-card">
+<img src="/img/icons/ico_list.svg" alt="icon">
 <h3 class="popup js" id="ListUnspent" data-container="rpc_listunspent">ListUnspent</h3>
 <p>See what received transactions you can spend</p>
 </div>
 
 <div class="card core-card">
+<img src="/img/icons/create-sign-send.svg" alt="icon">
 <h3 class="popup js" id="create-sign-send" data-container="rpc_rawtx">Create/Sign/Send</h3>
 <p>Create and send raw transactions</p>
 </div>
 
 <div class="card core-card">
+<img src="/img/icons/ico_notification.svg" alt="icon">
 <h3 class="popup js" id="Notification" data-container="notification">Notification</h3>
 <p>Be notified of new blocks and transactions</p>
 </div>
