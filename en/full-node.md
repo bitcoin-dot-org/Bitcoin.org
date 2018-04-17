@@ -146,7 +146,7 @@ allow Bitcoin to continue to grow.  This document describes how you can
 help and what helping will cost you.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Costs And Warnings
 
@@ -217,7 +217,7 @@ have an easy-to-use node.
 {% include bitcoin-core/bitcoin-core-possible-problems.md %}
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Linux Instructions
 
@@ -583,7 +583,7 @@ If you're a expert system administrator and want to use an init script instead, 
 {{installFinished}}
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Windows Instructions
 
@@ -1057,7 +1057,7 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 {{installFinished}}
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Mac OS X Instructions
 
@@ -1165,7 +1165,7 @@ The next time you login to your desktop, Bitcoin Core daemon will be automatical
 {{installFinished}}
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Upgrading Bitcoin Core
 
@@ -1189,7 +1189,7 @@ Sometimes downgrade is not possible because of changes to the data files. Again,
 check the release notes for the new version if you are planning to downgrade.
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Network Configuration
 
@@ -1456,7 +1456,7 @@ We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
 </div>
 
-<div class="toccontent-block boxexpand" markdown="1">
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Configuration Tuning
 
