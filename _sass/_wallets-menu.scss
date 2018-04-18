@@ -15,6 +15,7 @@ $oses:
 
 // Wallet menu
 .walletmenu {
+    margin-bottom: 75px;
     text-align: center;
     position: relative;
     z-index: 90;
@@ -164,6 +165,31 @@ $oses:
             > li.pseudo-acc > div {
                 display: block;
             }
+            .pseudo-acc > a {
+                position: relative;
+            }
+            .pseudo-acc > a::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -40px;
+                transform: translateY(-50%); 
+                width: 30px;
+                height: 30px;
+                background: url(../img/icons/checkmark.svg) center no-repeat;
+                background-size: contain;
+            }
+            .pseudo-acc > a::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                width: 10px;
+                height: 6px;
+                transform: translateY(-50%);
+                background: url(../img/icons/ico_angle.svg) center no-repeat;
+                background-size: contain;
+            }
             > li {
                 display: block;
                 width: 47.5%;
@@ -215,9 +241,15 @@ $oses:
                 margin-bottom: 10px;
                 border: 1px solid #dfdfdf;
                 background-position: 50% 20px;
+                background-size: 20px;
                 box-sizing: border-box;
                 text-align: center;
 
+                &.active, 
+                &:hover {
+                    border: 2px solid #ff7e00;
+                }
+                
                 &:nth-child(even) {
                     margin-right: 0;
                 }
@@ -263,4 +295,39 @@ $oses:
 }
 .wallet-acc-toggle {
     display: none;
+}
+.wallet-acc-toggle {
+    display: none;
+    position: relative;
+}
+.wallet-acc-toggle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 10px;
+    height: 6px;
+    transform: translateY(-50%);
+    background: url(../img/icons/ico_angle.svg) center no-repeat;
+    background-size: contain;
+}
+.is-expanded.wallet-acc-toggle::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+.wallet-acc-toggle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+}
+.wallet-acc-toggle-1::before {
+    background: url(../img/getting-started/number-1.svg) center no-repeat;
+    background-size: contain;
+}
+.wallet-acc-toggle-2::before {
+    background: url(../img/getting-started/number-2.svg) center no-repeat;
+    background-size: contain;
 }

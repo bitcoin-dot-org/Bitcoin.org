@@ -3,6 +3,7 @@ $grey: #8b8b8b;
 $dark-grey: #4D5060;
 $light-grey: #dfdfdf;
 $red: #ee9209;
+$orange: #FF7E00;
 $blue: #2c6faf;
 $dark-blue: #255f96;
 $light-blue: #63a4e1;
@@ -10,31 +11,15 @@ $lightest-blue: #f0f8ff;
 $black: #13161F;
 
 @mixin button {
-    background-color: transparent;
-    font-weight: bold;
-    border: 1px solid $dark-blue;
-    margin-right: 10px;
-    text-decoration: none;
-    padding: 4px 8px;
-    border-radius: 4px;
+    display:inline-block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 260px;
     text-align: center;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-@mixin active-button {
-    background-color: $blue;
-    background-image: -o-linear-gradient(bottom, $dark-blue 14%, $blue 70%);
-    background-image: -moz-linear-gradient(bottom, $dark-blue 14%, $blue 70%);
-    background-image: -webkit-linear-gradient(bottom, $dark-blue 14%, $blue 70%);
-    background-image: -ms-linear-gradient(bottom, $dark-blue 14%, $blue 70%);
-    background-image: linear-gradient(bottom, $dark-blue 14%, $blue 70%);
-    color: #fff;
-
-    &:hover {
-        background-color: $light-blue;
-        background-image: none;
-    }
+    font-weight:600;
+    font-size:100%;
+    text-transform: uppercase;
+    border-radius:1px;
 }
 
 .wallet-list {
@@ -96,13 +81,18 @@ $checks:
     privacy;
 
 $scores:
-    good $green bold,
-    pass $green normal,
-    neutral $grey normal,
-    fail $red normal;
+    good $black 600,
+    pass $black 600,
+    neutral $black 600,
+    fail $black 600;
 
 .wallet {
 
+    .hero {
+        background: #f8f8f8 url(../img/hero/hero-bg.svg) bottom no-repeat;
+        background-size: cover;
+    }
+    
     .wallet-logo-container {
         text-align: center;
 
@@ -119,50 +109,68 @@ $scores:
     .wallet-platforms {
 
         .wallet-platforms-menu {
+            margin-bottom: 70px;
+            padding: 20px 0;
             text-align: center;
-            margin-bottom: 20px;
+            background: #f8f8f8;
 
             .wallet-os-btn {
-                @include button;
+                display: inline-block;
+                margin-right: 50px;
+                text-align: left;
 
-                &.active {
-                    @include active-button;
+                &:last-child {
+                    margin-right: 0;
                 }
-
+                img {
+                    width: 15px;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
                 span {
-                    vertical-align: text-top;
+                    vertical-align: middle;
+                    font-size: 15px;
+                    color: #13161F;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+                &:hover span {
+                    color: $orange;
+                }
+                &.active span {
+                    color: $orange;
                 }
             }
         }
 
         .wallet-os-container {
-            background-color: $lightest-blue;
-            padding: 20px;
-            border: 2px solid $blue;
-            border-radius: 4px;
-            margin-bottom: 20px;
             display: flex;
             flex-wrap: wrap;
+            margin-bottom: 40px;
+            align-items: flex-start;
+            justify-content: space-between;
 
             &.hidden {
                 display: none;
             }
 
             .wallet-os-screenshot {
-                img {
-                    border: 1px solid $grey;
-                }
+                border: 1px solid #dadada;
+                padding: 20px;
+                margin: 0 auto;
             }
 
             .wallet-os-overview {
                 flex: 1;
                 display: flex;
                 flex-direction: column;
+                max-width: 570px;
+                margin-right: 30px;
+                margin-bottom: 30px;
 
                 .wallet-os-name {
                     h3 {
-                        margin: 0;
-                        margin-right: 5px;
+                        margin: 0 5px 0 10px;
                         display: inline-block;
                         vertical-align: top;
                     }
@@ -171,20 +179,28 @@ $scores:
                 }
 
                 .wallet-os-download-buttons {
-                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-bottom: 35px;
 
                     .wallet-os-source-link,
                     .wallet-os-download-link {
                         @include button;
                     }
-
+                    
+                    .wallet-os-source-link {
+                        padding: 15px 25px;
+                    }
                     .wallet-os-download-link {
-                        @include active-button;
+                        margin-right: 5px;
+                        margin-bottom: 15px;
+                        padding: 16px 25px;
                     }
                 }
 
                 .wallet-os-checks {
-                    padding-right: 40px;
 
                     .wallet-os-check-title {
                         display: inline-block;
@@ -217,10 +233,10 @@ $scores:
                         .wallet-os-check-details {
                             z-index: 100;
                             max-height: 500px;
-                            border: 2px solid;
-                            border-radius: 4px;
-                            margin: 10px 0;
-                            padding: 10px;
+                            background: #f8f8f8;
+                            margin: 10px 0 20px;
+                            padding: 20px;
+                            color: $dark-grey;
 
                             // This is for privacy checks
                             > div {
@@ -242,13 +258,13 @@ $scores:
     @each $score, $color, $font-weight in $scores {
         .check#{$score} {
             background-repeat: no-repeat;
-            background-position-y: 5px;
+            background-position-y: 8px;
             padding-left: 25px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
 
             .wallet-os-check-title {
-                color: $color;
-                font-weight: $font-weight;
+                color: $black;
+                font-weight: 600;
             }
 
             .wallet-os-check-details {
@@ -266,10 +282,27 @@ $scores:
 
             @each $check in $checks {
                 &.check#{$check} {
-                    @if $score == good {
-                        background-image: url('/img/icons/check_#{$check}_pass.svg');
+                    position: relative;
+                    cursor: pointer;
+                    @if $score == fail {
+                        background-image: url('/img/icons/ico_check_orange.svg');
                     } @else {
-                        background-image: url('/img/icons/check_#{$check}_#{$score}.svg');
+                        background-image: url('/img/icons/ico_check_green.svg');
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 8px;
+                        right: 0;
+                        width: 10px;
+                        height: 6px;
+                        transform: translateY(-50%);
+                        background: url(../img/icons/ico_angle.svg) center no-repeat;
+                        background-size: contain;
+                    }
+                    &.hover::after {
+                        transform: translateY(-50%) rotate(180deg);
                     }
                 }
             }
@@ -301,41 +334,6 @@ $scores:
 .wallet-description {
     color: #9d9d9d;
 }
-.wallet-acc-toggle {
-    display: none;
-    position: relative;
-}
-.wallet-acc-toggle::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    width: 10px;
-    height: 6px;
-    transform: translateY(-50%);
-    background: url(../img/icons/ico_angle.svg) center no-repeat;
-    background-size: contain;
-}
-.is-expanded.wallet-acc-toggle::after {
-    transform: translateY(-50%) rotate(180deg);
-}
-.wallet-acc-toggle::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-}
-.wallet-acc-toggle-1::before {
-    background: url(../img/getting-started/number-1.svg) center no-repeat;
-    background-size: contain;
-}
-.wallet-acc-toggle-2::before {
-    background: url(../img/getting-started/number-2.svg) center no-repeat;
-    background-size: contain;
-}
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ) {
     .wallet-list {
         padding: 110px 0 30px 0;
@@ -351,25 +349,30 @@ $scores:
         padding: 60px 0;
     }
 }
-@media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ) {
-    .pseudo-acc > a {
-        position: relative;
-    }
-    .pseudo-acc > a::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: -40px;
-        transform: translateY(-50%); 
-        width: 30px;
-        height: 30px;
-        background: url(../img/icons/checkmark.svg) center no-repeat;
-        background-size: contain;
-    }
-}
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ) {
+    .wallet .hero {
+        background-color: #fff;
+    }
+    .wallet .wallet-platforms .wallet-platforms-menu {
+        background: #fff;
+        text-align: left;
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    .wallet .wallet-platforms .wallet-platforms-menu .wallet-os-btn {
+        margin-right: 0;
+        margin-bottom: 4px;
+        text-align: left;
+        border: 1px solid #dadada;
+        padding: 10px 16px;
+        border-radius: 1px;
+    }
+    .wallet .wallet-platforms .active.wallet-os-btn {
+        border: 2px solid #FF7E00;
+        padding: 8px 14px;
+    }
     .wallet-list {
-        padding: 110px 0 50px 0;
+        padding: 15px 0 50px 0;
         text-align: center;
     }
     .walletsdisclaimer {
