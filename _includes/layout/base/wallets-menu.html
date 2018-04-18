@@ -36,6 +36,8 @@ http://opensource.org/licenses/MIT.
     {% assign platformClass = "wallet-" | append: platformName %}
     {% if page.id contains platformName %}
       {% assign platformClass = platformClass | append: " pseudo-acc active" %}
+    {% elsif page.url contains "en/choose-your-wallet.html" %}
+        {% assign platformClass = platformClass | append: "" %}
     {% else %}
       {% assign platformClass = platformClass | append: " is-hidden" %}
     {% endif %}
@@ -48,11 +50,6 @@ http://opensource.org/licenses/MIT.
       {% endif %}
       {% if platform.items.size > 1 %}
       <div class="walletmenu-subaccordion">
-      <!-- {% if page.url contains "en/choose-your-wallet.html" %}
-        {% assign walletTypeTab = "" | append: "" %}
-      {% else %}
-        {% assign walletTypeTab = "" | append: "is-hidden" %}
-      {% endif %} -->
       <p class="wallet-acc-toggle wallet-acc-toggle-2 is-expanded" data-toggle>Select Operating system</p>
       <ul class="walletmenu-os-list is-hidden">
         {% for item in platform.items %}
@@ -84,6 +81,7 @@ http://opensource.org/licenses/MIT.
     
     for (var i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function (event) {
+        console.log(acc[i]);
         event.preventDefault();
 
         if (!event.target.hasAttribute('data-platform-target')) {
