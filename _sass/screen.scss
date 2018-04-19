@@ -4159,26 +4159,6 @@ br.big {
         width: 92px;
         height: 20px;
     }
-    .langselect {
-        -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2;
-        width: 100%;
-        text-align: left;
-        background-color: #fff;
-        border-top: 2px solid #ebebeb;
-    }
-    .langselect select {
-        background-color: transparent;
-        border: 0;
-        font-size: 115%;
-        padding: 8px 0;
-        margin-top: 12px;
-        margin-left: 10px;
-        width: 95%;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-    }
     .menumobile {
         display: block;
         position: absolute;
@@ -4208,11 +4188,53 @@ br.big {
         margin-left: 0;
     }
     .langselect {
-        border: none;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        width: 100%;
         background-color: #13161F;
+        border: none;
     }
     .langselect select {
+        font-size: 115%;
+        padding: 32px 0;
         color: #fff;
+        margin: 0;
+        width: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        cursor: pointer;
+    }
+    .center-select {
+        display: block;
+        position: relative;
+    }
+    .center-select__input {
+    -webkit-appearance: none;
+        border: 0;
+        background: none;
+        width: 100%;
+        height: 30px;
+    }
+    .center-select__text {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: #13161F;
+        color: #fff;
+        font-size: 112.5%;
+        line-height: 55px;
+        pointer-events: none;
+        text-align: center;
+    }
+    .langselect select:hover + .center-select__text, 
+    .langselect select:active + .center-select__text {
+        color: #F7931A;
+    }
+    .is-capital {
+        text-transform: capitalize;
     }
     .lang,
     .menusimple {
