@@ -15,13 +15,16 @@ http://opensource.org/licenses/MIT.
       <div class="row footer-status-block">
         <a href="/en/alerts" class="statusmenu{% if site.STATUS == 1 %} alert{% endif %}">Network Status</a>
         {% include layout/base/head-language-dropdown.html %} 
-        <div id="footer-langselect" class="langselect">
-          <select onchange="window.location=this.value;">
-            {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{%
-            endif %}
-            <option value="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}" {{ active }}>{{ site.langs[lang] }}</option>
-            {% endfor %}
-          </select>
+        <div id="footer-langselect" class="footer-langselect langselect">
+          <label for="select-input-footer" class="center-select">
+            <select class="center-select__input" onchange="window.location=this.value; ">
+              {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{%
+              endif %}
+              <option value="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}" {{ active }}>{{ site.langs[lang] }}</option>
+              {% endfor %}
+            </select>
+            <span class="center-select__text is-uppercase">{{ page.lang }}</span>
+          </label>
         </div>
       </div>
     </div>

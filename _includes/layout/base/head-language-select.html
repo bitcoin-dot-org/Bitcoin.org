@@ -4,7 +4,7 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 <div id="langselect" class="langselect">
     <label for="select-input" class="center-select">
-        <select id="select-input" class="center-select__input" onchange="window.location=this.value; handleChange(this);">
+        <select id="select-input" class="center-select__input" onchange="window.location=this.value;">
             {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{%
             endif %}
             <option value="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}" {{ active }}>{{ site.langs[lang] }}</option>

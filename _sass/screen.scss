@@ -177,6 +177,12 @@ hr {
     color: #4D5060;
     line-height: 34px;
 }
+.is-capital {
+    text-transform: capitalize;
+}
+.is-uppercase {
+    text-transform: uppercase;
+}
 .separator {
     height: 1px;
     background: #dfdfdf;
@@ -4264,6 +4270,10 @@ br.big {
         -moz-appearance: none;
         cursor: pointer;
     }
+     
+    .footer-langselect {
+        display: block;
+    }
     .center-select {
         display: block;
         position: relative;
@@ -4291,9 +4301,6 @@ br.big {
     .langselect select:hover + .center-select__text, 
     .langselect select:active + .center-select__text {
         color: #F7931A;
-    }
-    .is-capital {
-        text-transform: capitalize;
     }
     .lang,
     .menusimple {
@@ -4543,6 +4550,19 @@ br.big {
     }
     .footer-bottom {
         margin-top: 0;
+    }
+     .footer-status-block {
+        align-items: center;
+    }
+    .footer-bottom-row .center-select__text {
+        background: #090C14;
+        line-height: 60px;
+    }
+    .footer-langselect {
+        width: 70px;
+    }
+    .statusmenu {
+        margin-right: 120px;
     }
     .toc-row {
         -webkit-box-orient: vertical;
