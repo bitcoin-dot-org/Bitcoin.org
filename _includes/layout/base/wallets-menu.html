@@ -81,8 +81,10 @@ http://opensource.org/licenses/MIT.
     
     for (var i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function (event) {
-        console.log(acc[i]);
-        event.preventDefault();
+        if (event.target.parentNode.classList.contains("pseudo-acc")) {
+          console.log(true);
+          event.preventDefault();
+        }
 
         if (!event.target.hasAttribute('data-platform-target')) {
           return;
