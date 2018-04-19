@@ -3343,6 +3343,9 @@ br.big {
     .section-title {
         margin: 0 0 40px;
     }
+    .maindesc-text {
+        max-width: 80%;
+    }
     .two-column-row:not(:last-child) {
         margin: 0 0 50px;
     }
@@ -3771,6 +3774,9 @@ br.big {
     .container {
         padding: 0 15px;
     } 
+    .maindesc-text {
+        max-width: 90%;
+    }
     .bitcore-content {
         padding: 50px 0;
     }
@@ -3812,23 +3818,7 @@ br.big {
     .maincard:not(:last-child) {
         margin: 0 16px 16px 0
     }
-    .maindesc-row {
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-            -ms-flex-direction: column-reverse;
-                flex-direction: column-reverse;
-        margin: 0 0 35px;
-    }
-    .maindesc-img {
-        margin-bottom: 35px;
-    }
-    .maindesc-text {
-        max-width: 100%;
-        font-size: 112.5%;
-    }
+
     .recommendation-text {
         font-size: 125%;
         margin: 0 auto 40px;
@@ -4336,6 +4326,23 @@ br.big {
         display: inline-block;
         margin: 0 28px 0 0;
         vertical-align: top;
+    }
+    .maindesc-row {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        margin: 0 0 35px;
+    }
+    .maindesc-img {
+        margin-bottom: 35px;
+    }
+    .maindesc-text {
+        max-width: 100%;
+        font-size: 112.5%;
     }
     .home-title {
         margin: 0 0 30px;
