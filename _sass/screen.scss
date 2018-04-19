@@ -1542,11 +1542,13 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .anchorAf a:first-child{
     display:none;
     position:absolute;
-    width:24px;
-    left:-24px;
+    width: 20px;
+    height: 34px;
+    left:-20px;
     bottom:0;
     top:0;
     background:url(/img/icons/mini_ico_anchor.svg) no-repeat center center;
+    background-size: contain;
 }
 .anchorAf:hover a:first-child{
     display:block;
@@ -3859,6 +3861,12 @@ br.big {
     .column-text {
         max-width: 100%;
         text-align: center;
+    }
+    .two-column-row:nth-child(odd) .column-text {
+        margin-left: 0;
+    }
+    .two-column-row:nth-child(even) .column-text {
+        margin-right: 0;
     }
     .column-text p {
         font-size: 125%;
