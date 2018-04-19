@@ -13,7 +13,11 @@ end_of_page: |
 <div class="hero">
   <div class="container hero-container">
     <h1>{% translate pagetitle %}</h1>
-    <p class="summarytxt">{% translate summary %}</p>
+    {% if page.id == 'exchanges' %}
+      <p class="summary">{% translate pagedesc %}</p>
+    {% else %}
+      <p class="summarytxt">{% translate summary %}</p>
+    {% endif %}
     {% include helpers/hero-social.html %}
   </div>
 </div>

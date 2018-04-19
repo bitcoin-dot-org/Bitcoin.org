@@ -24,7 +24,7 @@ $black: #13161F;
 
 .wallet-list {
     margin: auto;
-    padding: 130px 0 40px 0;
+    padding: 0 0 40px 0;
     text-align: left;
 
     .wallet-list-item {
@@ -336,7 +336,7 @@ $scores:
 }
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ) {
     .wallet-list {
-        padding: 110px 0 30px 0;
+        padding: 0 0 30px 0;
     }
     .wallet-list .wallet-list-item {
         width: 30.5%;
@@ -372,7 +372,7 @@ $scores:
         padding: 8px 14px;
     }
     .wallet-list {
-        padding: 15px 0 50px 0;
+        padding: 15px 0 50px;
         text-align: center;
     }
     .walletsdisclaimer {
