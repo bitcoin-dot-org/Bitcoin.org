@@ -17,10 +17,10 @@ end_of_page: |
 ---
 
 <div class="hero">
-<div class="container" markdown="block">
+<div class="container hero-container" markdown="block">
 
 # Getting Help For Bitcoin Core
-
+{% include helpers/hero-social.html %}
 </div>
 </div>
 

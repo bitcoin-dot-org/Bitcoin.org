@@ -99,10 +99,11 @@ Core running.
 -->
 
 <div class="hero">
-<div class="container" markdown="1">
+<div class="container hero-container" markdown="1">
 
 # Running A Full Node
 <p class="summary">Support the Bitcoin network by running your own full node</p>
+{% include helpers/hero-social.html %}
 </div>
 </div>
 

@@ -2,7 +2,7 @@
 %}
 
 <div class="mainhero">
-  <div class="container">
+  <div class="container hero-container">
     <p class="mainsummary">{% translate listintro %}</p>
     <div class="btn-container">
       <a class="btn btn-bright btn-home" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
@@ -12,6 +12,7 @@
     <div class="mainvideo">
       <button class="mainvideo-btn-open" onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/{% if page.lang == 'ro' %}JPNwbWu0tMQ{% else %}Gc2en3nHxA4{% endif %}?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1{% if page.lang != 'en' %}&amp;cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}">Watch video and learn “What is Bitcoin?”</button>
     </div>
+    {% include helpers/hero-social.html %}
   </div>
 </div>
 <div class="mainoverview">

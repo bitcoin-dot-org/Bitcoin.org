@@ -51,10 +51,10 @@ third_party_privacy:
 ---
 
 <div class="hero">
-<div class="container" markdown="block">
+<div class="container hero-container" markdown="block">
 
 # Bitcoin Core's Excellent Privacy
-
+{% include helpers/hero-social.html %}
 </div>
 </div>
 

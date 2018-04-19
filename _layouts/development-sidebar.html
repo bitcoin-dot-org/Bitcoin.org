@@ -11,11 +11,12 @@ end_of_page:
 ---
 
 <div class="hero">
-  <div class="container">
+  <div class="container hero-container">
     <!-- Note: this file is built non-deterministically -->
     <h1>{% translate pagetitle %}</h1>
     {% if page.lang != 'en' %}
     <p class="summary">{% translate summary %}</p>{% endif %}
+    {% include helpers/hero-social.html %}
   </div>
 </div>
 

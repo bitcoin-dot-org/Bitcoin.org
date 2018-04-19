@@ -479,13 +479,24 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .hero {
     position: relative;
-    padding: 120px 15px 173px;
+    padding: 120px 30px 173px;
     background: url(../img/hero/hero-bg.svg) bottom no-repeat;
     background-size: cover;
     z-index: 10;
 }
+.hero-container {
+    position: relative;
+    padding: 0 40px;
+}
 .hero h1 {
     margin-bottom: 20px;
+}
+.hero-social {
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 }
 .footer {
     position: relative;
@@ -753,7 +764,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 /*Styles specific to elements in pages*/
 .mainhero {
-    padding: 130px 0 50px;
+    padding: 130px 30px 50px;
     background: #fff;
 }
 .mainsummary {
@@ -3348,7 +3359,7 @@ br.big {
     blockquote {
         margin: 0 0 80px;
         padding: 16px 50px 45px;
-    }
+    } 
     .section-title {
         margin: 0 0 40px;
     }
@@ -3381,7 +3392,7 @@ br.big {
         width:auto;
     }
     .hero {
-        padding: 80px 0 125px;
+        padding: 80px 30px 125px;
     }
     .hero h1 {
         font-size: 30px;
@@ -3496,6 +3507,12 @@ br.big {
     }
     .mainhero {
         padding: 110px 0 100px;
+    }
+    .mainhero .hero-social {
+        top: auto;
+        right: 30px;
+        bottom: 0;
+        transform: translateY(0);
     }
     .mainsummary {
         margin: 0 auto 60px;
@@ -3791,6 +3808,9 @@ br.big {
     }
     .container {
         padding: 0 15px;
+    } 
+    .hero-container {
+        padding: 0 40px;
     } 
     .footer-bottom-row {
         flex-direction: column;
@@ -4343,9 +4363,15 @@ br.big {
     .hero {
         padding: 80px 0 90px;
     }
+    .hero-container {
+        padding: 0 15px;
+    }
     .hero h1 {
         margin-bottom: 0;
         font-size: 137.5%;
+    }
+    .hero-social {
+        display: none;
     }
     .mainhero {
         padding: 55px 0 50px;

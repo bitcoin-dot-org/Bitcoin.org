@@ -20,13 +20,14 @@ end_of_page: |
 {% endif %}
 
 <div class="hero">
-  <div class="container">
+  <div class="container hero-container">
     {% if page.pagetitle-translated %}
     <h1>{{ page.pagetitle-translated }}</h1>
     {% else %}
     <h1>{% translate pagetitle %}</h1>
     {% endif %}
     <p class="summary">{% translate summary %}</p>
+    {% include helpers/hero-social.html %}
   </div>
 </div>
 

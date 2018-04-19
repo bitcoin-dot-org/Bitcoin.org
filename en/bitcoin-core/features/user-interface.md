@@ -14,10 +14,10 @@ breadcrumbs:
   - Interface
 ---
 <div class="hero">
-<div class="container" markdown="block">
+<div class="container hero-container" markdown="block">
 
 # Bitcoin Core's User Interface
-
+{% include helpers/hero-social.html %}
 </div>
 </div>
 

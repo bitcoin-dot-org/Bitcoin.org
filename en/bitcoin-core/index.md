@@ -22,9 +22,10 @@ breadcrumbs:
 <!-- ![Bitcoin Core: Helping You Keep Bitcoin Decentralized](/img/bitcoin-core/en-big-logo.svg) -->
 
 <div class="hero core-hero">
-  <div class="container">
+  <div class="container hero-container">
     <h1>Bitcoin Core</h1>
     <p class="summary">Helping you keep Bitcoin decentralized.</p>
+    {% include helpers/hero-social.html %}
   </div>
 </div>
 

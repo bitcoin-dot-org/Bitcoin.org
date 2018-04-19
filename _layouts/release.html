@@ -11,11 +11,12 @@ end_of_page: |
 ---
 <link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin Core releases">
 <div class="versiontext hero">
-  <div class="container">
+  <div class="container hero-container">
     <h1>{{ page.title }}</h1>
     {% if page.optional_date %}
       <p class="summary">{{ page.optional_date | date:"%e %B %Y" }}</p>
     {% endif %}
+    {% include helpers/hero-social.html %}
   </div>
 </div>
 

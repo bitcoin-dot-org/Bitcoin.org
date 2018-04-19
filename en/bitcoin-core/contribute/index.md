@@ -14,10 +14,10 @@ breadcrumbs:
 ---
 
 <div class="hero">
-<div class="container" markdown="block">
+<div class="container hero-container" markdown="block">
 
 # Contributing To Bitcoin Core
-
+{% include helpers/hero-social.html %}
 </div>
 </div>
 
