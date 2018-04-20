@@ -41,24 +41,36 @@ http://opensource.org/licenses/MIT.
     {% else %}
       {% assign platformClass = platformClass | append: " is-hidden" %}
     {% endif %}
-    <li class="js-acc-item {{ platformClass }}">
+    <li class="js-acc-item acc-item {{ platformClass }}">
       {% if platformName == 'hardware' or platformName == 'web' %}
       {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" %}
-        <a data-platform-target href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
+        <a data-item-target href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% else %}
-        <a data-platform-target class="wallet-platform-link">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
+        <a data-item-target class="wallet-platform-link">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% endif %}
       {% if platform.items.size > 1 %}
       <div class="walletmenu-subaccordion">
-      <p class="wallet-acc-toggle wallet-acc-toggle-2" data-toggle>Select Operating system</p>
-      <ul class="walletmenu-os-list is-hidden">
+        {% if page.url contains "en/choose-your-wallet.html" %}
+          {% assign walletOsTab = "" | append: "" %}
+        {% else %}
+          {% assign walletOsTab = "" | append: "is-hidden" %}
+        {% endif %}
+      <p class="wallet-acc-toggle wallet-acc-toggle-2 {{walletOsTab}}" data-toggle>Select Operating system</p>
+      {% if page.url contains "en/choose-your-wallet.html" %}
+        {% assign walletOsList = "" | append: "is-hidden" %}
+      {% else %}
+        {% assign walletOsList = "" | append: "is-fullwidth" %}
+      {% endif %}
+      <ul class="walletmenu-os-list {{walletOsList}}">
         {% for item in platform.items %}
           {% assign osClass = "wallet-" | append: item.os.name %}
           {% if page.id contains item.id %}
-            {% assign osClass = osClass | append: " active" %}
+            {% assign osClass = osClass | append: " pseudo-acc active" %}
+          {% else %}
+            {% assign osClass = osClass | append: " is-hidden" %}
           {% endif %}
-          <li class="js-acc-item {{ osClass }}">
-            <a href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
+          <li class="js-acc-subitem acc-item {{ osClass }}">
+            <a  href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
               {% translate platform{{item.os.name}} choose-your-wallet %}
             </a>
           </li>
@@ -73,58 +85,89 @@ http://opensource.org/licenses/MIT.
 
 <script>
   var mainWalletList = document.querySelector(".walletmenu-main-list");
-  var accordionToggleTab = document.getElementsByClassName("wallet-acc-toggle");
+  var accordionToggleTabs = document.getElementsByClassName("wallet-acc-toggle");
   var walletMenu = document.querySelector(".walletmenu");
+
+  // Add margin-bottom for walletmenu depending on the height of the second accordion          
+  function calculateHeight(element) {
+    walletMenu.style.marginBottom = element.offsetHeight + 'px'; 
+  }  
+  
+  var accSub = document.getElementsByClassName("js-acc-subitem");
 
   function platformAcc() {
     var acc = document.getElementsByClassName("js-acc-item");
-    
     for (var i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function (event) {
+
+        console.log(event.target.parentNode);
         if (event.target.parentNode.classList.contains("pseudo-acc")) {
-          console.log(true);
           event.preventDefault();
         }
 
-        if (!event.target.hasAttribute('data-platform-target')) {
+        if (!event.target.hasAttribute('data-item-target')) {
           return;
         } else {
-          var activePlatformItem = event.target.parentNode;
-          var activeOsAccordion = activePlatformItem.querySelector(".walletmenu-subaccordion");
-          
-          activePlatformItem.classList.toggle("pseudo-acc");
-          accordionToggleTab[0].classList.toggle("is-hidden");
-          mainWalletList.classList.toggle("is-fullwidth");
 
-          // Add margin-bottom for walletmenu depending on the height of the second accordion          
-          walletMenu.style.marginBottom = activeOsAccordion.offsetHeight + 'px';          
+          var activeItem = event.target.parentNode;
+          var activeList = activeItem.parentNode;
+          var activeTab = activeList.previousElementSibling;
+          var activeOsAccordion = activeItem.querySelector(".walletmenu-subaccordion");
 
+          // Made selected list item as pseudo accordion tab
+          activeItem.classList.toggle("pseudo-acc");
+          // Made parent of selected list item is fullwidth
+          activeList.classList.toggle("is-fullwidth");
+          // Hide tab
+          activeTab.classList.toggle("is-hidden");
+
+          // Calculate height of absolute positioned sublist and add margin-bottom for walletmenu
+          if (activeOsAccordion.classList.contains("walletmenu-subaccordion")) {
+            calculateHeight(activeOsAccordion);
+          }
+
+          // Hide not selected list items
           for (var index = 0; index < acc.length; index++) {
-            if (!(activePlatformItem == acc[index])) {
+            if (!(activeItem == acc[index])) {
               acc[index].classList.remove("pseudo-acc");
               acc[index].classList.toggle("is-hidden");
             }
           }
-        }        
 
+          for (var a = 0; a < accSub.length; a++) {
+            accSub[a].classList.toggle("is-hidden");
+          }
+        }
+      });
+    }
+  }
+
+  function osAcc() {
+    for (var i = 0; i < accSub.length; i++) {
+      accSub[i].addEventListener("click", function (event) {
+        for (var a = 0; a < accSub.length; a++) {
+          accSub[a].classList.toggle("is-hidden");
+        }
       });
     }
   }
 
   platformAcc();
-
+  osAcc();
+       
   function accordionToggle() {
-    for (var i = 0; i < accordionToggleTab.length; i++) {
-      accordionToggleTab[i].addEventListener("click", function (event) {
+    for (var i = 0; i < accordionToggleTabs.length; i++) {
+      accordionToggleTabs[i].addEventListener("click", function (event) {
         
         if (event.target.hasAttribute('data-toggle')) {
+          // p
           event.target.classList.toggle("is-expanded");
+          // ul
           event.target.nextElementSibling.classList.toggle("is-hidden");
         }
 
         if (event.target.classList.contains("wallet-acc-toggle-2")) {
-          // Add margin-bottom for walletmenu depending on the height of the second accordion         
-          walletMenu.style.marginBottom = event.target.parentNode.offsetHeight + 'px';          
+          calculateHeight(event.target.parentNode);
         }
       });
     }

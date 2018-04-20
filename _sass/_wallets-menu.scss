@@ -15,7 +15,6 @@ $oses:
 
 // Wallet menu
 .walletmenu {
-    margin-bottom: 75px;
     text-align: center;
     position: relative;
     z-index: 90;
@@ -269,7 +268,7 @@ $oses:
             text-align: left;
             cursor: pointer
         }
-        .js-acc-item.pseudo-acc {
+        .acc-item.pseudo-acc {
             width: 100%;
             margin: 0;
             background: #f8f8f8;
@@ -279,7 +278,7 @@ $oses:
             font-size: 18px;
             margin-bottom: 2px;
         }
-        .js-acc-item.pseudo-acc > a {
+        .acc-item.pseudo-acc > a {
             padding: 0;
             text-align: left;
             font-size: 18px;
