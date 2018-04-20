@@ -293,6 +293,20 @@ $oses:
         }
     }
 }
+.wallet-platform-link {
+    position: relative;
+}
+.walletmenu>ul li:hover .wallet-platform-link::after {
+        content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border: 8px solid transparent;
+    border-top: 8px solid #ff7e00;
+    transform: translate(-50%, 100%);
+    z-index: 10;
+}
+
 .wallet-acc-toggle {
     display: none;
 }

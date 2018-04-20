@@ -126,11 +126,11 @@ and several other powerful features
 
 <div class="core-column-left clearfix">
   <div class="corecard releases-card" markdown="block">
-  [Bitcoin Core Releases][bcc contribute]
+  <a href="/en/version-history.html">Bitcoin Core Releases</a>
   For more News, see the complete list
   </div>
   <div class="corecard rss-card" markdown="block">
-  [Subscribe to the RSS feed][bcc contribute]
+  <a type="application/atom+xml" href="/en/rss/blog.xml">Subscribe to the RSS feed</a>
   For more notifications of new releases
   </div>
 </div>
