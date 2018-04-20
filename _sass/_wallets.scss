@@ -88,10 +88,10 @@ $scores:
 
 .wallet {
 
-    .hero {
-        background: #f8f8f8 url(../img/hero/hero-bg.svg) bottom no-repeat;
-        background-size: cover;
-    }
+    // .hero {
+    //     background: #f8f8f8 url(../img/hero/hero-bg.svg) bottom no-repeat;
+    //     background-size: cover;
+    // }
     
     .wallet-logo-container {
         text-align: center;
@@ -107,6 +107,7 @@ $scores:
     }
 
     .wallet-platforms {
+        margin-top: 70px;
 
         .wallet-platforms-menu {
             margin-bottom: 70px;
@@ -337,7 +338,7 @@ $scores:
 }
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ) {
     .wallet-list {
-        padding: 0 0 30px 0;
+        padding: 20px 0 30px 0;
     }
     .wallet-list .wallet-list-item {
         width: 30.5%;
@@ -360,6 +361,11 @@ $scores:
     }
     .wallet .wallet-platforms .wallet-os-container .wallet-os-screenshot {
         width: auto;
+    }
+}
+@media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ) {
+    .walletmenu>ul li:hover .wallet-platform-link::after {
+        display: none;
     }
 }
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ) {

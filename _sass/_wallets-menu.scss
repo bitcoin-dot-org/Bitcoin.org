@@ -113,9 +113,9 @@ $oses:
                         padding: 18px 32px 18px 32px;
 
                     }
-                    &.active > a {
-                        background-position: right center;
-                    }
+                    // &.active > a {
+                    //     background-position: right center;
+                    // }
                 }
             }
             }
@@ -179,17 +179,17 @@ $oses:
                 background: url(../img/icons/checkmark.svg) center no-repeat;
                 background-size: contain;
             }
-            .pseudo-acc > a::after {
-                content: '';
-                position: absolute;
-                top: 50%;
-                right: 15px;
-                width: 10px;
-                height: 6px;
-                transform: translateY(-50%);
-                background: url(../img/icons/ico_angle.svg) center no-repeat;
-                background-size: contain;
-            }
+            // .pseudo-acc > a::after {
+            //     content: '';
+            //     position: absolute;
+            //     top: 50%;
+            //     right: 15px;
+            //     width: 10px;
+            //     height: 6px;
+            //     transform: translateY(-50%);
+            //     background: url(../img/icons/ico_angle.svg) center no-repeat;
+            //     background-size: contain;
+            // }
             > li {
                 display: block;
                 width: 47.5%;
@@ -321,7 +321,6 @@ $oses:
     right: 15px;
     width: 10px;
     height: 6px;
-    transform: translateY(-50%);
     background: url(../img/icons/ico_angle.svg) center no-repeat;
     background-size: contain;
 }

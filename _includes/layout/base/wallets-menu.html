@@ -50,14 +50,14 @@ http://opensource.org/licenses/MIT.
       {% endif %}
       {% if platform.items.size > 1 %}
       <div class="walletmenu-subaccordion">
-      <p class="wallet-acc-toggle wallet-acc-toggle-2 is-expanded" data-toggle>Select Operating system</p>
+      <p class="wallet-acc-toggle wallet-acc-toggle-2" data-toggle>Select Operating system</p>
       <ul class="walletmenu-os-list is-hidden">
         {% for item in platform.items %}
           {% assign osClass = "wallet-" | append: item.os.name %}
           {% if page.id contains item.id %}
             {% assign osClass = osClass | append: " active" %}
           {% endif %}
-          <li class="{{ osClass }}">
+          <li class="js-acc-item {{ osClass }}">
             <a href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
               {% translate platform{{item.os.name}} choose-your-wallet %}
             </a>
