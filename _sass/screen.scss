@@ -3426,6 +3426,9 @@ br.big {
     .footer-bottom-row {
         flex-wrap: wrap;
     }
+    .footerlicense {
+        max-width: 410px;
+    }
     .footer-social {
         order: 1;
         width: 100%;
@@ -3828,6 +3831,7 @@ br.big {
         margin-bottom: 15px;
     }
     .footerlicense {
+        max-width: 100%;
         text-align: center;
     }
     .footer-social {
