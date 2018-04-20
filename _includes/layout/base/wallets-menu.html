@@ -100,7 +100,6 @@ http://opensource.org/licenses/MIT.
     for (var i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function (event) {
 
-        console.log(event.target.parentNode);
         if (event.target.parentNode.classList.contains("pseudo-acc")) {
           event.preventDefault();
         }
@@ -135,7 +134,7 @@ http://opensource.org/licenses/MIT.
           }
 
           for (var a = 0; a < accSub.length; a++) {
-            accSub[a].classList.toggle("is-hidden");
+            accSub[a].classList.toggle("is-hidden");            
           }
         }
       });
@@ -144,10 +143,26 @@ http://opensource.org/licenses/MIT.
 
   function osAcc() {
     for (var i = 0; i < accSub.length; i++) {
+
       accSub[i].addEventListener("click", function (event) {
+        console.log(event.target.parentNode);
+        
+        // if (event.target.parentNode.classList.contains("pseudo-acc")) {
+        //   event.preventDefault();
+        // }
+        
+        var activeItem = event.target.parentNode;
+        
         for (var a = 0; a < accSub.length; a++) {
-          accSub[a].classList.toggle("is-hidden");
+          if (!(activeItem == accSub[a])) {
+            accSub[a].classList.toggle("is-hidden");
+          } else {
+            accSub[a].classList.toggle("pseudo-acc");
+          }
         }
+        // for (var a = 0; a < accSub.length; a++) {
+        //   // accSub[a].classList.toggle("is-hidden");
+        // }
       });
     }
   }
