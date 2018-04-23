@@ -38,7 +38,10 @@ $oses:
         //     border-bottom-right-radius: 0;
         // }
 
-        > li:hover > div {
+        // > li:hover > div {
+        //     display: block;
+        // }
+        > li.is-active > div {
             display: block;
         }
         > li > div> ul > li.active,
@@ -158,9 +161,9 @@ $oses:
             display: flex;
             flex-wrap: wrap;
             padding: 0 15px;
-            > li:hover > div {
-                display: none;
-            }
+            // > li:hover > div {
+            //     display: none;
+            // }
             > li.pseudo-acc > div {
                 display: block;
             }
@@ -296,7 +299,7 @@ $oses:
     position: relative;
 }
 .walletmenu>ul li:hover .wallet-platform-link::after {
-        content: '';
+    content: '';
     position: absolute;
     bottom: 0;
     left: 50%;

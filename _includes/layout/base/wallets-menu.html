@@ -13,11 +13,11 @@ http://opensource.org/licenses/MIT.
   {% endif %}
   <p class="wallet-acc-toggle wallet-acc-toggle-1 {{walletTypeTab}}" data-toggle>Select wallet Type</p>
   {% if page.url contains "en/choose-your-wallet.html" %}
-    {% assign walletTyprList = "" | append: "is-hidden" %}
+    {% assign walletTypeList = "" | append: "is-hidden" %}
   {% else %}
-    {% assign walletTyprList = "" | append: "is-fullwidth" %}
+    {% assign walletTypeList = "" | append: "is-fullwidth" %}
   {% endif %}
-  <ul class="walletmenu-main-list {{walletTyprList}}">
+  <ul class="walletmenu-main-list {{walletTypeList}}">
   {% for platform in platformsByPlatform %}
 
     {% comment %}
@@ -87,40 +87,23 @@ http://opensource.org/licenses/MIT.
   var mainWalletList = document.querySelector(".walletmenu-main-list");
   var accordionToggleTabs = document.getElementsByClassName("wallet-acc-toggle");
   var walletMenu = document.querySelector(".walletmenu");
-
+  var accSub = document.getElementsByClassName("js-acc-subitem");
+  var acc = document.getElementsByClassName("js-acc-item");
+  
   // Add margin-bottom for walletmenu depending on the height of the second accordion          
   function calculateHeight(element) {
     walletMenu.style.marginBottom = element.offsetHeight + 'px'; 
   }  
   
-  var accSub = document.getElementsByClassName("js-acc-subitem");
-
-  function platformAcc() {
-    var acc = document.getElementsByClassName("js-acc-item");
+  function accordionDesktop() {
     for (var i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function (event) {
-
-        if (event.target.parentNode.classList.contains("pseudo-acc")) {
-          event.preventDefault();
-        }
-
-        if (!event.target.hasAttribute('data-item-target')) {
-          return;
-        } else {
-
+      acc[i].addEventListener("click", function(event) {
+        if (document.documentElement.clientWidth > 768) {
           var activeItem = event.target.parentNode;
-          var activeList = activeItem.parentNode;
-          var activeTab = activeList.previousElementSibling;
           var activeOsAccordion = activeItem.querySelector(".walletmenu-subaccordion");
 
-          // Made selected list item as pseudo accordion tab
-          activeItem.classList.toggle("pseudo-acc");
-          // Made parent of selected list item is fullwidth
-          activeList.classList.toggle("is-fullwidth");
-          // Hide tab
-          activeTab.classList.toggle("is-hidden");
+          activeItem.classList.toggle("is-active");
 
-          // Calculate height of absolute positioned sublist and add margin-bottom for walletmenu
           if (activeOsAccordion.classList.contains("walletmenu-subaccordion")) {
             calculateHeight(activeOsAccordion);
           }
@@ -128,13 +111,59 @@ http://opensource.org/licenses/MIT.
           // Hide not selected list items
           for (var index = 0; index < acc.length; index++) {
             if (!(activeItem == acc[index])) {
-              acc[index].classList.remove("pseudo-acc");
-              acc[index].classList.toggle("is-hidden");
+              acc[index].classList.remove("is-active");
             }
           }
+          
+        }
+      });
+    }
+  }
+  accordionDesktop();
+  
+  function platformAcc() {
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function (event) {
 
-          for (var a = 0; a < accSub.length; a++) {
-            accSub[a].classList.toggle("is-hidden");            
+        if (document.documentElement.clientWidth <= 768) {
+          
+          if (event.target.parentNode.classList.contains("pseudo-acc")) {
+            event.preventDefault();
+          }
+
+          if (!event.target.hasAttribute('data-item-target')) {
+            return;
+          } else {
+
+            var activeItem = event.target.parentNode;
+            var activeList = activeItem.parentNode;
+            var activeTab = activeList.previousElementSibling;
+            var activeOsAccordion = activeItem.querySelector(".walletmenu-subaccordion");
+
+            // Made selected list item as pseudo accordion tab
+            activeItem.classList.toggle("pseudo-acc");
+            // Made parent of selected list item is fullwidth
+            activeList.classList.toggle("is-fullwidth");
+            // Hide tab
+            activeTab.classList.toggle("is-hidden");
+
+            // Calculate height of absolute positioned sublist and add margin-bottom for walletmenu
+            if (activeOsAccordion.classList.contains("walletmenu-subaccordion")) {
+              calculateHeight(activeOsAccordion);
+            }
+
+            // Hide not selected list items
+            for (var index = 0; index < acc.length; index++) {
+              if (!(activeItem == acc[index])) {
+                acc[index].classList.toggle("is-hidden");
+                acc[index].classList.remove("pseudo-acc");
+              }
+            }
+
+            for (var a = 0; a < accSub.length; a++) {
+              accSub[a].classList.toggle("is-hidden");
+              console.log(accSub[a]);              
+            }
           }
         }
       });
@@ -145,13 +174,21 @@ http://opensource.org/licenses/MIT.
     for (var i = 0; i < accSub.length; i++) {
 
       accSub[i].addEventListener("click", function (event) {
-        console.log(event.target.parentNode);
-        
-        // if (event.target.parentNode.classList.contains("pseudo-acc")) {
-        //   event.preventDefault();
-        // }
+        event.stopPropagation();
+        if (event.target.parentNode.classList.contains("pseudo-acc")) {
+          event.preventDefault();
+        }
         
         var activeItem = event.target.parentNode;
+        var activeList = activeItem.parentNode;
+        var activeTab = activeList.previousElementSibling;
+        var activeOsAccordion = activeList.parentNode;
+        // Made parent of selected list item is fullwidth
+        activeList.classList.toggle("is-fullwidth");
+        // Hide tab
+        activeTab.classList.toggle("is-hidden");
+        
+        
         
         for (var a = 0; a < accSub.length; a++) {
           if (!(activeItem == accSub[a])) {
@@ -160,9 +197,9 @@ http://opensource.org/licenses/MIT.
             accSub[a].classList.toggle("pseudo-acc");
           }
         }
-        // for (var a = 0; a < accSub.length; a++) {
-        //   // accSub[a].classList.toggle("is-hidden");
-        // }
+
+        // Calculate height of absolute positioned sublist and add margin-bottom for walletmenu
+        calculateHeight(activeOsAccordion);
       });
     }
   }
