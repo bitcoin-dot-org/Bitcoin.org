@@ -1,0 +1,149 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+<div class="walletmenu-mobile" hidden>
+  {% assign platformsByPlatform = site.platforms | group_by: "platform" %}
+  <div class="accordion">
+    <div class="accordion-tab accordion-tab-platform js-tab">
+      <p class="accordion-label">Select wallet Type</p>
+      <p class="selected-item selected-platform"></p>
+    </div>
+    <div class="accordion-content platform-accordion-content">
+      {% for platform in platformsByPlatform %}
+
+        {% capture platformName %}{{ platform.name | split: "=>" | last | split: '"' }}{% endcapture %}
+        {% assign platformName = platformName | trim | replace: '}' '' | replace: ' ' '' %}
+      
+        {% assign platformClass = "wallet-" | append: platformName %}
+        {% assign ulClass = "" %}
+        {% if page.id contains platformName %}
+          {% assign platformClass = platformClass | append: " active" %}
+          {% assign ulClass = " active" %}
+        {% endif %}
+        <div class="accordion-item {{ platformClass }}">
+          {% if platformName == 'hardware' or platformName == 'web' %} {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" %}
+            <a class="accordion-link {{platformName}}-link" href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
+            {% else %}
+            <a class="accordion-link js-platform wallet-platform-link {{platformName}}-link">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+    {% for platform in platformsByPlatform %}
+
+      {% capture platformName %}{{ platform.name | split: "=>" | last | split: '"' }}{% endcapture %}
+      {% assign platformName = platformName | trim | replace: '}' '' | replace: ' ' '' %}
+
+      {% if platform.items.size > 1 %}
+        <div class="accordion accordion-os accordion-{{platformName}}" data-os="{{platformName}}" hidden>
+          <div class="accordion-tab accordion-tab-os js-tab">
+            <p class="accordion-label">Select Operating system</p>
+            <p class="selected-item selected-os"></p>
+          </div>
+          <div class="accordion-content">
+
+            {% for item in platform.items %}
+              {% assign osClass = "wallet-" | append: item.os.name %}
+              {% if page.id contains item.id %}
+                {% assign osClass = osClass | append: " active" %}
+              {% endif %}
+              <div class="accordion-item {{osClass}}">
+                <a class="accordion-link link-{{osClass}}" href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
+                  {% translate platform{{item.os.name}} choose-your-wallet %}
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+      
+    {% endfor %}
+</div>
+
+<script>
+    function accordion() {
+      var tabs = document.querySelectorAll('.js-tab');
+
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].addEventListener('click', function() {
+          this.classList.toggle('is-expanded');
+       });
+
+      }
+    }
+    accordion();
+    
+    function showNextAccordion() {
+      var platformItems = document.querySelectorAll('.js-platform');
+      var tabs = document.querySelectorAll('.accordion-tab');
+      var platformTab = document.querySelector('.accordion-tab-platform');
+      var osAccordions = document.querySelectorAll('.accordion-os');
+
+      for (var i = 0; i < platformItems.length; i++) {
+        platformItems[i].addEventListener('click', function (e) {
+          
+          for (var num = 0; num < tabs.length; num++) {
+            tabs[num].classList.remove('is-selected');
+            tabs[num].querySelector('.selected-item').textContent = "";
+          }
+          
+          var selectedPlatform = e.target;
+          var platformName = (selectedPlatform.textContent).toLowerCase();          
+          document.querySelector('.selected-platform').textContent = platformName;
+
+          // Display next accordion and hide non selected accordion
+          for (var a = 0; a < osAccordions.length; a++) {
+            if (platformName === osAccordions[a].dataset.os) {
+              osAccordions[a].classList.add('is-visible');
+              platformTab.classList.add('is-selected');
+            } else {
+              osAccordions[a].classList.remove('is-visible');
+            }           
+          }
+          
+          // Close accordion after selection
+          platformTab.classList.remove('is-expanded');
+          
+        });
+
+      }
+    }
+
+    showNextAccordion();
+</script>
+{% if page.id != "choose-your-wallet" %}
+<script>    
+  var pageUrl = (window.location.pathname).split("/").filter(Boolean);
+  var platform = pageUrl[2];
+  var os = pageUrl[3];
+  var accrodions = document.querySelectorAll('.accordion');
+  var platformTab = document.querySelector('.accordion-tab-platform');
+  var osAccordions = document.querySelectorAll('.accordion-os');
+  
+  platformTab.classList.add('is-selected');
+  document.querySelector('.selected-platform').textContent = platform;
+  
+  if (os) {
+    // Display relevant os accordion
+    for (var a = 0; a < osAccordions.length; a++) {
+      if (platform === osAccordions[a].dataset.os) {
+        var relevantOsAcc = osAccordions[a];
+        relevantOsAcc.classList.add('is-visible');
+        
+        // Made relevant accordion tab selected
+        relevantOsAcc.querySelector('.accordion-tab-os').classList.add('is-selected');
+        relevantOsAcc.querySelector('.selected-os').textContent = os;
+      }
+    }
+
+
+
+
+  }
+
+  
+</script>
+{% endif %}

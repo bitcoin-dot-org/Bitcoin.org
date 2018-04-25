@@ -632,7 +632,6 @@ function onScrollButton() {
   function showSidebar() {
     sidebar.classList.add("is-open");
     button.classList.add("hide");
-    console.log(sidebarLinks);
   }
 
   function hideSidebar() {
