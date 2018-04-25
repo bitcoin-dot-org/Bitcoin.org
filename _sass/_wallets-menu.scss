@@ -157,6 +157,7 @@ $oses:
     @media handheld,
     only screen and ( max-width: 48em ),
     only screen and ( max-device-width: 48em ) {
+        margin-bottom: 75px;
         > ul {
             display: flex;
             flex-wrap: wrap;
@@ -173,7 +174,7 @@ $oses:
             .pseudo-acc > a::before {
                 content: '';
                 position: absolute;
-                top: 50%;
+                top: 0;
                 left: -40px;
                 transform: translateY(-50%); 
                 width: 30px;
@@ -277,7 +278,7 @@ $oses:
             background: #f8f8f8;
             border: none;
             height: 60px;
-            padding: 16px 0 0 55px;
+            padding: 9px 0 9px 55px;
             font-size: 18px;
             margin-bottom: 2px;
         }
@@ -286,12 +287,25 @@ $oses:
             text-align: left;
             font-size: 18px;
             color: #FF7E00;
+            line-height: 20px;
         }
         .is-hidden {
             display: none;
         }
         .is-fullwidth {
             padding: 0;
+        }
+        
+        .wallet-os-label,
+        .wallet-type-label {
+            font-size: 12px;
+            line-height: normal;
+            text-transform: uppercase;
+            text-align: left;
+        }
+        .pseudo-acc > .wallet-os-label,
+        .pseudo-acc > .wallet-type-label {
+            display: block;
         }
     }
 }
