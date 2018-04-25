@@ -612,6 +612,7 @@ function onScrollButton() {
   var buttonHeight = button.offsetHeight;
   var sidebar = document.querySelector(".sidebar");
   var closeButton = document.querySelector(".mob-sidebar-close");
+  var sidebarLinks = document.querySelectorAll(".sidebar-inner ul li");
 
   function stickyButton() {
     if (document.documentElement.clientWidth <= 640) {
@@ -631,6 +632,7 @@ function onScrollButton() {
   function showSidebar() {
     sidebar.classList.add("is-open");
     button.classList.add("hide");
+    console.log(sidebarLinks);
   }
 
   function hideSidebar() {
@@ -640,5 +642,13 @@ function onScrollButton() {
 
   window.addEventListener("scroll", stickyButton);
   button.addEventListener("click", showSidebar); 
-  closeButton.addEventListener("click", hideSidebar); 
+  closeButton.addEventListener("click", hideSidebar);
+
+  for (var i = 0; i < sidebarLinks.length; i++) {
+    sidebarLinks[i].addEventListener("click", function(event) {
+      if (document.documentElement.clientWidth <= 640) {
+        closeButton.click();
+      }
+    });
+  }
 }
