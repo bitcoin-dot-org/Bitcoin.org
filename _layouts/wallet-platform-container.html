@@ -15,6 +15,7 @@ layout: base
     </p>
   </div>
 </div>
+
 <script>
   function accordion() {
     var tabs = document.querySelectorAll('.js-tab');
@@ -22,8 +23,13 @@ layout: base
     for (var i = 0; i < tabs.length; i++) {
       tabs[i].addEventListener('click', function () {
         this.classList.toggle('is-expanded');
-      });
 
+        for (var index = 0; index < tabs.length; index++) {
+          if (!(this == tabs[index])) {
+            tabs[index].classList.remove("is-expanded");
+          } 
+        }
+      });
     }
   }
   accordion();
@@ -61,6 +67,7 @@ layout: base
         platformTab.classList.remove('is-expanded');
         // Hide wallet accordion if user want to change platform
         walletAccordion.classList.remove('is-visible');
+
       });
     }
   }
@@ -75,25 +82,29 @@ layout: base
   var wallet = pageUrl[4];
   // var accrodions = document.querySelectorAll('.accordion');
   var platformTab = document.querySelector('.accordion-tab-1');
-
+  
   platformTab.classList.add('is-selected');
   document.querySelector('.selected-platform').textContent = platform;
 
   if (os) {
-    var osAccordion = document.querySelectorAll('.accordion-os');
-    // Display relevant os accordion
-    for (var a = 0; a < osAccordion.length; a++) {
-      if (platform === osAccordion[a].dataset.os) {
-        var relevantOsAcc = osAccordion[a];
-        relevantOsAcc.classList.add('is-visible');
+    if (platform === "desktop" || platform === "mobile") {   
+      var osAccordion = document.querySelectorAll('.accordion-os');
+      // Display relevant os accordion
+      for (var a = 0; a < osAccordion.length; a++) {
+        if (platform === osAccordion[a].dataset.os) {
+          var relevantOsAcc = osAccordion[a];
+          relevantOsAcc.classList.add('is-visible');
 
-        // Made relevant accordion tab selected
-        relevantOsAcc.querySelector('.accordion-tab-2').classList.add('is-selected');
-        if (os === 'windowsphone') {
-          os = 'windows phone'; 
+          // Made relevant accordion tab selected
+          relevantOsAcc.querySelector('.accordion-tab-2').classList.add('is-selected');
+          if (os === 'windowsphone') {
+            os = 'windows phone';
+          }
+          relevantOsAcc.querySelector('.selected-os').textContent = os;
         }
-        relevantOsAcc.querySelector('.selected-os').textContent = os;
       }
+    } else {
+      wallet = os;
     }
   }
 

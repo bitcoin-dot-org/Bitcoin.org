@@ -97,6 +97,7 @@ $oses:
                     -moz-box-sizing: border-box;
                     -webkit-box-sizing: border-box;
                     box-sizing: border-box;
+                    border-top: 1px solid #dfdfdf;
 
                 li {
                     font-size: 80%;
@@ -148,244 +149,74 @@ $oses:
             background-image: url('/img/os/wallet_menu_#{$os}.svg');
         }
     }
-
-    @media handheld,
-    only screen and ( max-width: 48em ),
-    only screen and ( max-device-width: 48em ) {
-        display: none;
-        // margin-bottom: 75px;
-        // > ul {
-        //     display: flex;
-        //     flex-wrap: wrap;
-        //     padding: 0 15px;
-
-        //     > li.pseudo-acc > div {
-        //         display: block;
-        //     }
-        //     .pseudo-acc > a {
-        //         position: relative;
-        //     }
-        //     .pseudo-acc > a::before {
-        //         content: '';
-        //         position: absolute;
-        //         top: 0;
-        //         left: -40px;
-        //         transform: translateY(-50%); 
-        //         width: 30px;
-        //         height: 30px;
-        //         background: url(../img/icons/checkmark.svg) center no-repeat;
-        //         background-size: contain;
-        //     }
-        //     > li {
-        //         display: block;
-        //         width: 47.5%;
-        //         height: 95px;
-        //         margin: 0 3.5% 10px 0;
-        //         margin-right: 3.5%;
-        //         margin-bottom: 10px;
-        //         border: 1px solid $light-grey;
-        //         background-position: 50% 20px;
-        //         box-sizing: border-box;
-        //         &:nth-child(even) {
-        //             margin-right: 0;
-        //         }
-
-        //         > a {
-        //             padding: 55px 40px 15px;
-        //             box-sizing: border-box;
-        //             text-align: center;
-        //         }
-        //         &.active, &:hover {
-        //             border: 2px solid #ff7e00;
-        //             background-position: 50% 19px;
-        //         }
-        //         &.active>a, 
-        //         &:hover>a {
-        //             padding: 54px 40px 14px;
-        //         }
-        //         ul {
-        //             min-width: 100%;
-        //         }
-        //         div ul {
-        //             flex-wrap: wrap;
-        //             justify-content: left;
-        //             padding: 0 15px;
-        //             background: #fff;
-        //         }
-        //     }
-        //     li div ul li {
-        //         width: 47.5%;
-        //         height: 95px;
-        //         margin: 0 3.5% 10px 0;
-        //         margin-right: 3.5%;
-        //         margin-bottom: 10px;
-        //         border: 1px solid #dfdfdf;
-        //         background-position: 50% 20px;
-        //         background-size: 20px;
-        //         box-sizing: border-box;
-        //         text-align: center;
-
-        //         &.active, 
-        //         &:hover {
-        //             border: 2px solid #ff7e00;
-        //         }
-                
-        //         &:nth-child(even) {
-        //             margin-right: 0;
-        //         }
-
-        //         a {
-        //             padding: 55px 30px 15px;
-        //         }
-        //     }
-        // }
-        // .wallet-acc-toggle {
-        //     display: block;
-        //     height: 60px;
-        //     padding: 16px 0 0 55px;
-        //     margin: 0 0 15px;
-        //     box-sizing: border-box;
-        //     background: #f8f8f8;
-        //     text-align: left;
-        //     cursor: pointer
-        // }
-        // .acc-item.pseudo-acc {
-        //     width: 100%;
-        //     margin: 0;
-        //     background: #f8f8f8;
-        //     border: none;
-        //     height: 60px;
-        //     padding: 9px 0 9px 55px;
-        //     font-size: 18px;
-        //     margin-bottom: 2px;
-        // }
-        // .acc-item.pseudo-acc > a {
-        //     padding: 0;
-        //     text-align: left;
-        //     font-size: 18px;
-        //     color: #FF7E00;
-        //     line-height: 20px;
-        // }
-        // .is-hidden {
-        //     display: none;
-        // }
-        // .is-fullwidth {
-        //     padding: 0;
-        // }
-        
-        // .wallet-os-label,
-        // .wallet-type-label {
-        //     font-size: 12px;
-        //     line-height: normal;
-        //     text-transform: uppercase;
-        //     text-align: left;
-        // }
-        // .pseudo-acc > .wallet-os-label,
-        // .pseudo-acc > .wallet-type-label {
-        //     display: block;
-        // }
-    }
+}
+.wallet-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.wallet-wrapper .wallet-navigation {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+.wallet-wrapper .accordion-content-wallets {
+    display: none;
+}
+.is-expanded + .accordion-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wallet-wrapper .accordion-tab-wallet {
+    display: block;
 }
 .accordion-content-wallets {
     display: block;
 }
-.accordion-tab-3 {
+.accordion-tab-wallet {
     display: none;
 }
-@media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ) {
-    .walletmenu-mobile {
-        display: block;
-    }
-    .accordion-os.is-visible {
-        display: block;
-    }
+.accordion-os.is-visible {
+    display: block;
+}
+.accordion-label {
+    font-size: 18px;
+    color: #FF7E00;
+    line-height: 30px;
+}
+.is-selected .accordion-label {
+    font-size: 12px;
+    color: #56585f;
+    letter-spacing: 0.4px;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.selected-item {
+    font-family: TitilliumWeb-Regular;
+    font-size: 18px;
+    color: #FF7E00;
+    line-height: 20px;
+    text-transform: capitalize; 
+}
 
-    .accordion {
-        margin-bottom: 2px;
-    }
-    .accordion-tab {
-        position: relative;
-        width: 100%;
-        height: 60px;
-        padding: 15px 35px 15px 55px;
-        box-sizing: border-box;
-        background: #f8f8f8;
-    }
-    .is-selected.accordion-tab {
-        padding: 9px 35px 9px 55px;
-    }
-    .accordion-tab::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        transform: translateY(-50%);
-        width: 30px;
-        height: 30px;
-    }
-    .accordion-tab::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: 15px;
-        width: 10px;
-        height: 6px;
-        background: url(../img/icons/ico_angle.svg) center no-repeat;
-        background-size: contain;
-    }
-    .is-expanded.accordion-tab::after {
-        transform: rotate(180deg);
-    }
-    .accordion-tab-1::before {
-        background: url(../img/getting-started/number-1.svg) center no-repeat;
-        background-size: contain;
-    }
-    .accordion-label {
-        font-size: 18px;
-        color: #FF7E00;
-        line-height: 30px;
-    }
-    .is-selected .accordion-label {
-        font-size: 12px;
-        color: #56585f;
-        letter-spacing: 0.4px;
-        line-height: normal;
-        text-transform: uppercase;
-    }
-    .selected-item {
-        font-family: TitilliumWeb-Regular;
-        font-size: 18px;
-        color: #FF7E00;
-        line-height: 20px;
-        text-transform: capitalize; 
-    }
-    .accordion-tab-2::before {
-        background: url(../img/getting-started/number-2.svg) center no-repeat;
-        background-size: contain;
-    }
-    .is-selected.accordion-tab::before {
-        background: url(../img/icons/checkmark.svg) center no-repeat;
-        background-size: contain;
-    }
-    .accordion-content {
-        display: none;
-    }
-    .is-expanded + .accordion-content{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 15px;
-    }
-    .accordion-item {
-        width: 48.1%;
-        height: 93px;
-        margin: 0 3% 10px 0;
-        box-sizing: border-box;
-        text-align: center;
-        background-size: 30px;
-    }
-    .accordion-item:nth-child(even) {
-        margin-right: 0;
-    }
+.accordion-tab {
+    position: relative;
+    cursor: pointer;
+}
+.accordion-tab::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 10px;
+    height: 6px;
+    background: url(../img/icons/ico_angle.svg) center no-repeat;
+    background-size: contain;
+}
+.is-expanded.accordion-tab::after {
+    transform: rotate(180deg);
+}
+.accordion-content {
     .wallet-desktop {
         background: url(../img/icons/wallet_menu_desktop.svg) center 15px no-repeat;
     }
@@ -426,6 +257,237 @@ $oses:
         background: url(../img/os/wallet_menu_windowsphone.svg) center 15px no-repeat;
         background-size: 22px;
     }
+}
+@media handheld, only screen and ( min-width: 48em ) {
+    .wallet-navigation-wrapper {
+        position: relative;
+        z-index: 15;
+        background: #090c14;
+    }
+    .wallet-wrapper .walletmenu-mobile {
+        display: flex;
+        width: auto;
+    }
+    .wallet-wrapper .accordion-tab {
+        width: 255px;
+        height: 80px;
+        padding: 17px 35px 17px 50px;
+        box-sizing: border-box;
+    }
+    .accordion-tab-1 {
+        z-index: 25
+    }
+    .accordion-tab-2 {
+        z-index: 20
+    }
+    .accordion-tab-3 {
+        z-index: 15
+    }
+
+    .accordion-tab-1::before,
+    .accordion-tab-2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -21px;
+        width: 21px;
+        height: 80px;
+        background: url(../img/icons/dark-triangle.svg) center no-repeat;
+        background-size: contain;
+    }
+    .wallet-wrapper .accordion {
+        position: relative;
+    }
+    .wallet-wrapper .accordion-platform {
+        border-left: 1px solid #37393d;
+    }
+    .wallet-wrapper .accordion-wallets {
+        display: none;
+        border-right: 1px solid #37393d;
+    }
+    .wallet-wrapper .is-visible.accordion-wallets {
+        display: block;
+    }
+    .wallet-wrapper .accordion-content {
+        position: absolute;
+        top: 81px;
+        right: 0;
+        background: #1d2028;
+    }
+    .wallet-wrapper .platform-accordion-content {
+        left: 0;
+    }
+    .accordion-platform .accordion-content,
+    .accordion-os .accordion-content {
+        width: 460px;
+    }
+    .accordion-item {
+        width: 230px;
+        height: 100px;
+        margin: 0;
+        padding: 50px 10px 20px;
+        border: 1px solid #27292e;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .accordion-item:hover {
+        border: 1px solid #ff7e00;
+    }
+    .wallet-wrapper .is-selected .accordion-label {
+        color: #CACACA;
+    }
+    .wallet-wrapper .selected-item {
+        text-transform: uppercase;
+    }
+    .wallet-wrapper .is-expanded.accordion-tab {
+        background: #1d2028;
+    }
+    .wallet-wrapper .wallet-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 460px;
+        padding: 0;
+    }
+    .wallet-wrapper .wallet-list-item {
+        width: 230px;
+        height: 100px;
+        margin: 0;
+        padding: 20px 10px;
+        border: 1px solid #27292e;
+        text-align: left;  
+    }
+    .wallet-wrapper .wallet-list-item:hover {
+        border: 1px solid #ff7e00;  
+    }
+    .wallet-wrapper .wallet-list-item .wallet-list-item-link {
+        font-size: 17px;
+        color: #FFFFFF;
+        line-height: 30px;
+        font-weight: 600;
+    }
+    .wallet-wrapper .wallet-list-item .wallet-list-item-link img {
+        display: inline-block;
+        width: 50px;
+        vertical-align: middle;
+        height: 50px;
+    }
+    .wallet-wrapper .wallet-list-item-link br {
+        display: none;
+    }
+    .accordion-link {
+        font-size: 17px;
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+}
+@media handheld, only screen and ( min-width: 67em ) {
+    .wallet-wrapper .wallet-list {
+        width: 690px;
+    }
+    .wallet-wrapper .accordion-tab {
+        width: 300px;
+    }
+}
+@media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ) {
+    .walletmenu {
+        display: none;
+    }
+    .walletmenu-mobile {
+        display: block;
+    }
+    .wallet-wrapper {
+        display: block;
+    }
+    .wallet-wrapper .wallet-navigation {
+        display: block;
+    }
+    .wallet-navigation-wrapper {
+        background: #fff;
+    }
+    .wallet-wrapper .walletmenu-mobile {
+        display: block;
+        width: 100%;
+    }
+    .wallet-wrapper .accordion-tab {
+        width: 100%;
+    }
+    .wallet-wrapper .is-expanded.accordion-tab {
+        background: #f8f8f8;
+    }
+    .wallet-wrapper .accordion-content {
+        position: static;
+    }
+    .accordion {
+        margin-bottom: 2px;
+    }
+    .accordion-platform,
+    .accordion-os {
+        width: 100%;
+    }
+    .accordion-tab {
+        width: 100%;
+        height: 60px;
+        padding: 15px 35px 15px 55px;
+        box-sizing: border-box;
+        background: #f8f8f8;
+    }
+    .accordion-tab::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        width: 10px;
+        height: 6px;
+        background: url(../img/icons/ico_angle.svg) center no-repeat;
+        background-size: contain;
+    }
+    .is-expanded.accordion-tab::after {
+        transform: rotate(180deg);
+    }
+    .is-selected.accordion-tab {
+        padding: 9px 35px 9px 55px;
+    }
+    .accordion-tab::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+    }
+    .accordion-tab-1::before {
+        background: url(../img/getting-started/number-1.svg) center no-repeat;
+        background-size: contain;
+    }
+    .accordion-tab-2::before {
+        background: url(../img/getting-started/number-2.svg) center no-repeat;
+        background-size: contain;
+    }
+    .is-selected.accordion-tab::before {
+        background: url(../img/icons/checkmark.svg) center no-repeat;
+        background-size: contain;
+    }
+    .accordion-content {
+        display: none;
+    }
+    .is-expanded + .accordion-content{
+        // display: flex;
+        // flex-wrap: wrap;
+        padding: 15px;
+    }
+    .accordion-item {
+        width: 48.1%;
+        height: 93px;
+        margin: 0 3% 10px 0;
+        box-sizing: border-box;
+        text-align: center;
+        background-size: 30px;
+    }
+    .accordion-item:nth-child(even) {
+        margin-right: 0;
+    }
+    
     .accordion-link {
         display: block;
         padding: 55px 0 15px;
@@ -445,6 +507,10 @@ $oses:
     }
     .accordion-wallets.is-visible {
         display: block;
+        width: 100%;
+    }
+    .is-visible .accordion-tab-wallet {
+        display: block;
     }
     .accordion-tab-3 {
         display: block;
@@ -457,54 +523,3 @@ $oses:
         background-size: contain;
     }
 }
-// .wallet-platform-link {
-//     position: relative;
-// }
-// .walletmenu>ul li:hover .wallet-platform-link::after {
-//     content: '';
-//     position: absolute;
-//     bottom: 0;
-//     left: 50%;
-//     border: 8px solid transparent;
-//     border-top: 8px solid #ff7e00;
-//     transform: translate(-50%, 100%);
-//     z-index: 10;
-// }
-
-// .wallet-acc-toggle {
-//     display: none;
-// }
-// .wallet-acc-toggle {
-//     display: none;
-//     position: relative;
-// }
-// .wallet-acc-toggle::after {
-//     content: '';
-//     position: absolute;
-//     top: 50%;
-//     right: 15px;
-//     width: 10px;
-//     height: 6px;
-//     background: url(../img/icons/ico_angle.svg) center no-repeat;
-//     background-size: contain;
-// }
-// .is-expanded.wallet-acc-toggle::after {
-//     transform: translateY(-50%) rotate(180deg);
-// }
-// .wallet-acc-toggle::before {
-//     content: '';
-//     position: absolute;
-//     top: 50%;
-//     left: 15px;
-//     transform: translateY(-50%);
-//     width: 30px;
-//     height: 30px;
-// }
-// .wallet-acc-toggle-1::before {
-//     background: url(../img/getting-started/number-1.svg) center no-repeat;
-//     background-size: contain;
-// }
-// .wallet-acc-toggle-2::before {
-//     background: url(../img/getting-started/number-2.svg) center no-repeat;
-//     background-size: contain;
-// }
