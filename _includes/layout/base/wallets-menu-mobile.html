@@ -6,7 +6,7 @@ http://opensource.org/licenses/MIT.
 <div class="walletmenu-mobile" hidden>
   {% assign platformsByPlatform = site.platforms | group_by: "platform" %}
   <div class="accordion">
-    <div class="accordion-tab accordion-tab-platform js-tab">
+    <div class="accordion-tab accordion-tab-1 js-tab">
       <p class="accordion-label">Select wallet Type</p>
       <p class="selected-item selected-platform"></p>
     </div>
@@ -39,7 +39,7 @@ http://opensource.org/licenses/MIT.
 
       {% if platform.items.size > 1 %}
         <div class="accordion accordion-os accordion-{{platformName}}" data-os="{{platformName}}" hidden>
-          <div class="accordion-tab accordion-tab-os js-tab">
+          <div class="accordion-tab accordion-tab-2 js-tab">
             <p class="accordion-label">Select Operating system</p>
             <p class="selected-item selected-os"></p>
           </div>
@@ -62,88 +62,3 @@ http://opensource.org/licenses/MIT.
       
     {% endfor %}
 </div>
-
-<script>
-    function accordion() {
-      var tabs = document.querySelectorAll('.js-tab');
-
-      for (var i = 0; i < tabs.length; i++) {
-        tabs[i].addEventListener('click', function() {
-          this.classList.toggle('is-expanded');
-       });
-
-      }
-    }
-    accordion();
-    
-    function showNextAccordion() {
-      var platformItems = document.querySelectorAll('.js-platform');
-      var tabs = document.querySelectorAll('.accordion-tab');
-      var platformTab = document.querySelector('.accordion-tab-platform');
-      var osAccordions = document.querySelectorAll('.accordion-os');
-
-      for (var i = 0; i < platformItems.length; i++) {
-        platformItems[i].addEventListener('click', function (e) {
-          
-          for (var num = 0; num < tabs.length; num++) {
-            tabs[num].classList.remove('is-selected');
-            tabs[num].querySelector('.selected-item').textContent = "";
-          }
-          
-          var selectedPlatform = e.target;
-          var platformName = (selectedPlatform.textContent).toLowerCase();          
-          document.querySelector('.selected-platform').textContent = platformName;
-
-          // Display next accordion and hide non selected accordion
-          for (var a = 0; a < osAccordions.length; a++) {
-            if (platformName === osAccordions[a].dataset.os) {
-              osAccordions[a].classList.add('is-visible');
-              platformTab.classList.add('is-selected');
-            } else {
-              osAccordions[a].classList.remove('is-visible');
-            }           
-          }
-          
-          // Close accordion after selection
-          platformTab.classList.remove('is-expanded');
-          
-        });
-
-      }
-    }
-
-    showNextAccordion();
-</script>
-{% if page.id != "choose-your-wallet" %}
-<script>    
-  var pageUrl = (window.location.pathname).split("/").filter(Boolean);
-  var platform = pageUrl[2];
-  var os = pageUrl[3];
-  var accrodions = document.querySelectorAll('.accordion');
-  var platformTab = document.querySelector('.accordion-tab-platform');
-  var osAccordions = document.querySelectorAll('.accordion-os');
-  
-  platformTab.classList.add('is-selected');
-  document.querySelector('.selected-platform').textContent = platform;
-  
-  if (os) {
-    // Display relevant os accordion
-    for (var a = 0; a < osAccordions.length; a++) {
-      if (platform === osAccordions[a].dataset.os) {
-        var relevantOsAcc = osAccordions[a];
-        relevantOsAcc.classList.add('is-visible');
-        
-        // Made relevant accordion tab selected
-        relevantOsAcc.querySelector('.accordion-tab-os').classList.add('is-selected');
-        relevantOsAcc.querySelector('.selected-os').textContent = os;
-      }
-    }
-
-
-
-
-  }
-
-  
-</script>
-{% endif %}

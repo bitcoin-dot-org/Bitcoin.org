@@ -286,10 +286,15 @@ $oses:
         // }
     }
 }
+.accordion-content-wallets {
+    display: block;
+}
+.accordion-tab-3 {
+    display: none;
+}
 @media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ) {
     .walletmenu-mobile {
         display: block;
-        margin-bottom: 15px;
     }
     .accordion-os.is-visible {
         display: block;
@@ -331,7 +336,7 @@ $oses:
     .is-expanded.accordion-tab::after {
         transform: rotate(180deg);
     }
-    .accordion-tab-platform::before {
+    .accordion-tab-1::before {
         background: url(../img/getting-started/number-1.svg) center no-repeat;
         background-size: contain;
     }
@@ -354,7 +359,7 @@ $oses:
         line-height: 20px;
         text-transform: capitalize; 
     }
-    .accordion-tab-os::before {
+    .accordion-tab-2::before {
         background: url(../img/getting-started/number-2.svg) center no-repeat;
         background-size: contain;
     }
@@ -434,6 +439,22 @@ $oses:
     .accordion-link:active {
         padding: 54px 0 14px;
         border: 2px solid #ff7e00;
+    }
+    .accordion-wallets {
+        display: none;
+    }
+    .accordion-wallets.is-visible {
+        display: block;
+    }
+    .accordion-tab-3 {
+        display: block;
+    }
+    .is-hidden-mobile {
+        display: none;
+    }
+    .accordion-tab-3::before {
+        background: url(../img/getting-started/number-3.svg) center no-repeat;
+        background-size: contain;
     }
 }
 // .wallet-platform-link {

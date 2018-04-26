@@ -23,8 +23,10 @@ $black: #13161F;
 }
 
 .wallet-list {
-    margin: auto;
-    padding: 20px 0 40px 0;
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 30px 40px;
     text-align: left;
 
     .wallet-list-item {
@@ -317,6 +319,7 @@ $scores:
 
 .walletsdisclaimer {
     padding: 70px 0;
+    margin-top: 50px;
     border-top: 1px solid $light-grey
 }
 .walletsdisclaimer h2 {
