@@ -149,6 +149,13 @@ $oses:
             background-image: url('/img/os/wallet_menu_#{$os}.svg');
         }
     }
+    .wallet-blackberry {
+        background-size: 20px;
+    }
+}
+.wallet-list {
+    display: flex;
+    flex-wrap: wrap;
 }
 .wallet-wrapper {
     display: flex;
@@ -171,7 +178,7 @@ $oses:
     display: block;
 }
 .accordion-content-wallets {
-    display: block;
+    display: flex;
 }
 .accordion-tab-wallet {
     display: none;
@@ -343,8 +350,8 @@ $oses:
         background: #1d2028;
     }
     .wallet-wrapper .wallet-list {
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
         width: 460px;
         padding: 0;
     }
