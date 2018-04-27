@@ -45,8 +45,26 @@ $oses:
         > li > div> ul > li:hover {
             border: none;
         }
-        > li.active > a, 
-        > li:hover > a, {
+        > li > a {
+            position: relative;
+        }
+        > li:hover > a,
+        > li.is-active > a {
+            border-bottom: 3px solid #ff7e00;
+        }
+        > li:hover > a::after,
+        > li.is-active > a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            border: 8px solid transparent;
+            border-top: 8px solid #FF7E00;
+            z-index: 15;
+        } 
+        > li > a:hover,
+        > li.is-active > a {
             padding: 18px 10px 18px 42px;
         }
         li {
@@ -118,10 +136,10 @@ $oses:
             }
             }
 
-            &.active,
-            &:hover {
-                border-bottom: 3px solid #ff7e00;
-            }
+            // &.active,
+            // &:hover {
+            //     border-bottom: 3px solid #ff7e00;
+            // }
 
             &:hover > a,
             &:hover > a:link,
