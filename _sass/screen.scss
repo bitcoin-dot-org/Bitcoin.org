@@ -1437,6 +1437,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .toccontent {
     width: 100%;
     min-width: 290px;
+    word-wrap: break-word;
 }
 .toccontent-block {
     border-top: 1px solid #dfdfdf;
@@ -2628,6 +2629,11 @@ br.big {
 }
 .version {
     padding: 70px 0;
+}
+.back-link {
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
 }
 .alert {
     position: relative;
@@ -4883,6 +4889,9 @@ br.big {
     }
     .help-search {
         margin: 30px 0;
+    }
+    .version-content h1 {
+        font-size: 30px;
     }
 }
 

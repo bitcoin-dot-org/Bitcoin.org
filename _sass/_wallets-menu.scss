@@ -320,6 +320,11 @@ $oses:
         background: url(../img/icons/dark-triangle.svg) center no-repeat;
         background-size: contain;
     }
+    .is-expanded.accordion-tab-1::before,
+    .is-expanded.accordion-tab-2::before {
+        background: url(../img/icons/light-triangle.svg) center no-repeat;
+        background-size: contain;
+    }
     .wallet-wrapper .accordion {
         position: relative;
     }
