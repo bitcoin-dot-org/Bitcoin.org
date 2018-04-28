@@ -13,7 +13,7 @@ http://opensource.org/licenses/MIT.
 
 The `getinfo` RPC {{summary_getInfo}}
 
-{{WARNING}} `getinfo` will be removed in a later version of Bitcoin
+{{WARNING}} `getinfo` was removed in 0.16.0 version of Bitcoin
 Core.  Use the RPCs listed in the See Also subsection below instead.
 
 *Parameters: none*
