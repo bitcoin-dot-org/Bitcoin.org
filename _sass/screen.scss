@@ -2841,9 +2841,10 @@ br.big {
     font-size: 112.5%;
     color: #9D9D9D;
     line-height: 28px;
+    text-align: left;
 }
 .own h3 {
-    margin: 30px 0 20px;
+    margin: 0 0 20px;
     line-height: 30px;
     text-align: left;
     font-weight: 600;
@@ -2854,6 +2855,62 @@ br.big {
 .own-alert p {
     font-size: 18px;
     color: #77767e;
+}
+.own-block {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.own-timeline {
+    display: flex;
+    align-items: flex-start;
+    min-width: 340px;
+    margin-right: 30px;
+}
+.own-timeline-number {
+    position: relative;
+    height: 100%;
+    margin-right: 95px;
+    z-index: 10;
+}
+.own-timeline-number::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    background: url(../img/getting-started/start-path.svg) no-repeat;
+    z-index: -1;
+}
+.own-timeline-number::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    width: 100px;
+    height: 3px;
+    background: #FF7E00;
+    z-index: -1;
+}
+.own-timeline-number-4::before {
+    display: none;
+}
+.own .own-timeline-text {
+    min-width: 100px;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #13161F;
+    line-height: 45px;
+    font-weight: 600;
+}
+.own-timeline-icon {
+    margin-top: 5px;
+}
+.own-text {
+    width: 526px;
+    padding-bottom: 30px;
 }
 .controll,
 .mission {
@@ -4219,6 +4276,15 @@ br.big {
     .privacy {
         padding: 50px 0
     }
+    .own-timeline {
+        min-width: 310px;
+    }
+    .own-timeline-number {
+        margin-right: 60px;
+    }
+    .own-timeline-number::after {
+        width: 80px;
+    }
 }
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
     p {
@@ -4902,6 +4968,30 @@ br.big {
     }
     .version-content h1 {
         font-size: 30px;
+    }
+    .own-timeline {
+        margin-right: 0;
+        min-width: auto;
+    }
+    .own .own-timeline-text,
+    .own-timeline-icon {
+        display: none;
+    }
+    .own-timeline-number {
+        min-width: 50px;
+        margin-right: 20px;
+    }
+    .own-timeline-number::after {
+        width: 60px;
+    }
+    .own-text {
+        padding-top: 10px;
+    }
+    .own-text h3 {
+        font-size: 20px;
+    }
+    .own-text p {
+        font-size: 16px;
     }
 }
 

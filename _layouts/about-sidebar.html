@@ -23,26 +23,71 @@ end_of_page: |
 
 <div class="about">
   <div class="container">
-    <h2 class="center about-title" id="own">{% translate own %}</h2>
+    <h2 class="about-title" id="own">{% translate own %}</h2>
     <div class="own">
-      <h3 id="owntxt-title">{% translate owntxt-title %}</h3>
-      <!-- no subhead-links here -->
-      <p>{% translate owntxt %}</p>
-      {% case page.lang %} {% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl'
-      or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'ja' or 'zh_CN' or 'zh_TW' %} {% else
-      %}
-      <h3 id="owntxt2-title">{% translate owntxt2-title %}</h3>
-      <!-- no subhead-links here -->
-      <p>{% translate owntxt2 %}</p>
-      <h3 id="owntxt3-title">{% translate owntxt3-title %}</h3>
-      <!-- no subhead-links here -->
-      <h3 id="owntxt4-title">{% translate owntxt4-title %}</h3>
-      <!-- no subhead-links here -->
-      <p>{% translate owntxt3 %}</p>
+      <div class="own-block">
+        <div class="own-timeline">
+          <p class="own-timeline-text">Begining</p>
+          <div class="own-timeline-number">
+            <img src="../img/getting-started/number-1.svg" alt="1" class="own-timeline-number-img">
+          </div>
+          <img src="../img/icons/begining.svg" alt="icon" class="own-timeline-icon">
+        </div>
+        <div class="own-text">
+          <h3 id="owntxt-title">{% translate owntxt-title %}</h3>
+          <!-- no subhead-links here -->
+          <p>{% translate owntxt %}</p>
+        </div>
+      </div>
+      <div class="own-block">
+        <div class="own-timeline">
+          <p class="own-timeline-text">2011-2012</p>
+          <div class="own-timeline-number">
+            <img src="../img/getting-started/number-2.svg" alt="2" class="own-timeline-number-img">
+          </div>
+          <img src="../img/icons/bitcoincore.svg" alt="icon" class="own-timeline-icon">
+        </div>
+        <div class="own-text">
+          <h3 id="owntxt2-title">{% translate owntxt2-title %}</h3>
+          <!-- no subhead-links here -->
+          <p>{% translate owntxt2 %}</p>
+        </div>
+      </div>
+      <div class="own-block">
+        <div class="own-timeline">
+          <p class="own-timeline-text">2014</p>
+          <div class="own-timeline-number">
+            <img src="../img/getting-started/number-3.svg" alt="3" class="own-timeline-number-img">
+          </div>
+          <img src="../img/icons/ico_documentation.svg" alt="icon" class="own-timeline-icon">
+        </div>
+        <div class="own-text">
+          <h3 id="owntxt3-title">{% translate owntxt3-title %}</h3>
+          <!-- no subhead-links here -->
+          <p>{% translate owntxt2 %}</p>
+        </div>
+      </div>
+      <div class="own-block">
+        <div class="own-timeline">
+          <p class="own-timeline-text">Today</p>
+          <div class="own-timeline-number own-timeline-number-4">
+            <img src="../img/getting-started/number-4.svg" alt="4" class="own-timeline-number-img">
+          </div>
+          <img src="../img/icons/open-source.svg" alt="icon" class="own-timeline-icon">
+        </div>
+        <div class="own-text">
+          <h3 id="owntxt4-title">{% translate owntxt4-title %}</h3>
+          <!-- no subhead-links here -->
+          <p>{% translate owntxt3 %}</p>
+        </div>
+      </div>
+      
+      
+      
+      
       <div class="alert own-alert">
         <p>{% translate owntxt4 %}</p>
       </div>
-      {% endcase %}
     </div>
   
     <div class="row about-row">
