@@ -1750,6 +1750,9 @@ div.one-column {
 .post-title {
     padding-top: 20px;
 }
+.privacy {
+    padding: 70px 0
+}
 table.privacy-comparison {
     margin-bottom: 70px;
 }
@@ -4208,6 +4211,9 @@ br.big {
     }
     .controll {
         margin-bottom: 60px;
+    }
+    .mainvideo {
+        display: none;
     }
 }
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
