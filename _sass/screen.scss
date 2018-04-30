@@ -4215,6 +4215,9 @@ br.big {
     .mainvideo {
         display: none;
     }
+    .privacy {
+        padding: 50px 0
+    }
 }
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
     p {
