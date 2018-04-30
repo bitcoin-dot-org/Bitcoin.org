@@ -2473,7 +2473,8 @@ br.big {
 .exchanges-title a {
     color: #FF7E00;
 }
-.exchanges-note {
+.alert.exchanges-note {
+    margin-top: 70px;
     font-weight: 400;
 }
 .toc-row .toccontent .exchanges-tab-title {
