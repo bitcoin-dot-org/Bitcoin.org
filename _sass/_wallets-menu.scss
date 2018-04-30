@@ -354,7 +354,6 @@ $oses:
         width: 230px;
         height: 100px;
         margin: 0;
-        padding: 50px 10px 20px;
         border: 1px solid #27292e;
         box-sizing: border-box;
         text-align: center;
@@ -404,6 +403,8 @@ $oses:
         display: none;
     }
     .accordion-link {
+        display: block;
+        padding: 50px 10px 20px;
         font-size: 17px;
         color: #FFFFFF;
         font-weight: 600;
