@@ -136,11 +136,6 @@ $oses:
             }
             }
 
-            // &.active,
-            // &:hover {
-            //     border-bottom: 3px solid #ff7e00;
-            // }
-
             &:hover > a,
             &:hover > a:link,
             &:hover > a:active,
@@ -171,29 +166,163 @@ $oses:
         background-size: 20px;
     }
 }
-.wallet-list {
-    display: flex;
-    flex-wrap: wrap;
+
+/* Wallet filter START */
+.filter {
+    background: #090C14;
 }
-.wallet-wrapper {
-    display: flex;
-    flex-direction: column-reverse;
-}
-.wallet-wrapper .wallet-navigation {
-    display: flex;
+.filter-row {
+    justify-content: flex-start;
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
 }
-.wallet-wrapper .accordion-content-wallets {
+.filter-accordion {
+    position: relative;
+    width: 33%;
+}
+.filter-accordion-tab {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    padding: 12px 35px 17px 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.is-expanded.filter-accordion-tab, {
+    background: #1d2028;
+}
+.filter-accordion-tab::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 10px;
+    height: 6px;
+    background: url(../img/icons/ico_angle.svg) center no-repeat;
+    background-size: contain;
+}
+.is-expanded.filter-accordion-tab::after {
+    transform: rotate(180deg);
+}
+.filter-platform-tab::before,
+.filter-os-tab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -21px;
+    width: 21px;
+    height: 80px;
+    background: url(../img/icons/dark-triangle.svg) center no-repeat;
+    background-size: contain;
+    z-index: 10;
+}
+.is-expanded.filter-platform-tab::before,
+.is-expanded.filter-os-tab::before {
+    background: url(../img/icons/light-triangle.svg) center no-repeat;
+    background-size: contain;
+}
+.filter .accordion-content {
+    background: #1d2028;
+}
+.filter-accordion-label {
+    font-size: 18px;
+    color: #FF7E00;
+    line-height: 30px;
+}
+.is-selected .filter-accordion-label {
+    font-size: 13px;
+    color: #8f9092;
+    letter-spacing: 0.43px;
+}
+.filter-platform-accordion {
+    border-left: 1px solid #37393d;
+}
+.filter-accordion-wallets {
+    border-right: 1px solid #37393d;
+}
+.filter-accordion-wallets.is-visible {
+    display: block;
+}
+.js-filter-wallet.is-hidden {
     display: none;
 }
+.filter-accordion-os.is-visible {
+    display: block;
+}
+.filter-accordion-link {
+    width: 230px;
+    height: 100px;
+    padding: 50px 10px 20px;
+    text-align: center;
+    border: 1px solid #27292E;
+    color: #FFFFFF;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+.filter-accordion-link:hover {
+    border: 1px solid #ff7e00;
+}
+.filter .accordion-content {
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    z-index: 20;
+    width: 460px;
+}
+.filter .filter-os-content {
+    left: auto;
+    right: 0;
+}
+.is-expanded + .filter-wallets-content {
+    left: auto;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 690px;
+}
+.filter-wallet {
+    position: relative;
+    width: 230px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid #27292e;
+}
+.filter-wallet-img {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 50px;
+}
+.filter-wallet:hover {
+    border: 1px solid #ff7e00;
+}
+.filter-wallet-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 40px 10px 20px 70px;
+    font-size: 17px;
+    color: #FFFFFF;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+.filter-wallet-link br{
+    display: none;
+}
+.selected-filter {
+    font-size: 18px;
+    color: #FF7E00;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+/* Wallet filter END */
+
 .is-expanded + .accordion-content{
     display: flex;
     flex-wrap: wrap;
-}
-.wallet-wrapper .accordion-tab-wallet {
-    display: block;
 }
 .accordion-content-wallets {
     display: flex;
@@ -220,7 +349,7 @@ $oses:
     font-size: 18px;
     color: #FF7E00;
     line-height: 20px;
-    text-transform: capitalize; 
+    text-transform: uppercase; 
 }
 
 .accordion-tab {
@@ -282,144 +411,9 @@ $oses:
         background-size: 22px;
     }
 }
-@media handheld, only screen and ( min-width: 48em ) {
-    .wallet-navigation-wrapper {
-        position: relative;
-        z-index: 15;
-        background: #090c14;
-    }
-    .wallet-wrapper .walletmenu-mobile {
-        display: flex;
-        width: auto;
-    }
-    .wallet-wrapper .accordion-tab {
-        width: 255px;
-        height: 80px;
-        padding: 17px 35px 17px 50px;
-        box-sizing: border-box;
-    }
-    .accordion-tab-1 {
-        z-index: 25
-    }
-    .accordion-tab-2 {
-        z-index: 20
-    }
-    .accordion-tab-3 {
-        z-index: 15
-    }
-
-    .accordion-tab-1::before,
-    .accordion-tab-2::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: -21px;
-        width: 21px;
-        height: 80px;
-        background: url(../img/icons/dark-triangle.svg) center no-repeat;
-        background-size: contain;
-    }
-    .is-expanded.accordion-tab-1::before,
-    .is-expanded.accordion-tab-2::before {
-        background: url(../img/icons/light-triangle.svg) center no-repeat;
-        background-size: contain;
-    }
-    .wallet-wrapper .accordion {
-        position: relative;
-    }
-    .wallet-wrapper .accordion-platform {
-        border-left: 1px solid #37393d;
-    }
-    .wallet-wrapper .accordion-wallets {
-        display: none;
-        border-right: 1px solid #37393d;
-    }
-    .wallet-wrapper .is-visible.accordion-wallets {
-        display: block;
-    }
-    .wallet-wrapper .accordion-content {
-        position: absolute;
-        top: 81px;
-        right: 0;
-        background: #1d2028;
-    }
-    .wallet-wrapper .platform-accordion-content {
-        left: 0;
-    }
-    .accordion-platform .accordion-content,
-    .accordion-os .accordion-content {
-        width: 460px;
-    }
-    .accordion-item {
-        width: 230px;
-        height: 100px;
-        margin: 0;
-        border: 1px solid #27292e;
-        box-sizing: border-box;
-        text-align: center;
-    }
-    .accordion-item:hover {
-        border: 1px solid #ff7e00;
-    }
-    .wallet-wrapper .is-selected .accordion-label {
-        color: #CACACA;
-    }
-    .wallet-wrapper .selected-item {
-        text-transform: uppercase;
-    }
-    .wallet-wrapper .is-expanded.accordion-tab {
-        background: #1d2028;
-    }
-    .wallet-wrapper .wallet-list {
-        // display: flex;
-        // flex-wrap: wrap;
-        width: 460px;
-        padding: 0;
-    }
-    .wallet-wrapper .wallet-list-item {
-        width: 230px;
-        height: 100px;
-        margin: 0;
-        padding: 20px 10px;
-        border: 1px solid #27292e;
-        text-align: left;  
-    }
-    .wallet-wrapper .wallet-list-item:hover {
-        border: 1px solid #ff7e00;  
-    }
-    .wallet-wrapper .wallet-list-item .wallet-list-item-link {
-        font-size: 17px;
-        color: #FFFFFF;
-        line-height: 30px;
-        font-weight: 600;
-    }
-    .wallet-wrapper .wallet-list-item .wallet-list-item-link img {
-        display: inline-block;
-        width: 50px;
-        vertical-align: middle;
-        height: 50px;
-    }
-    .wallet-wrapper .wallet-list-item-link br {
-        display: none;
-    }
-    .accordion-link {
-        display: block;
-        padding: 50px 10px 20px;
-        font-size: 17px;
-        color: #FFFFFF;
-        font-weight: 600;
-    }
-}
-@media handheld, only screen and ( min-width: 67em ) {
-    .wallet-wrapper .wallet-list {
-        width: 690px;
-    }
-    .wallet-wrapper .accordion-tab {
-        width: 300px;
-    }
-}
 @media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ) {
-    .walletmenu {
+    .walletmenu,
+    .filter {
         display: none;
     }
     .walletmenu-mobile {
@@ -428,31 +422,8 @@ $oses:
     .wallet-wrapper {
         display: block;
     }
-    .wallet-wrapper .wallet-navigation {
-        display: block;
-    }
-    .wallet-navigation-wrapper {
-        background: #fff;
-    }
-    .wallet-wrapper .walletmenu-mobile {
-        display: block;
-        width: 100%;
-    }
-    .wallet-wrapper .accordion-tab {
-        width: 100%;
-    }
-    .wallet-wrapper .is-expanded.accordion-tab {
-        background: #f8f8f8;
-    }
-    .wallet-wrapper .accordion-content {
-        position: static;
-    }
     .accordion {
         margin-bottom: 2px;
-    }
-    .accordion-platform,
-    .accordion-os {
-        width: 100%;
     }
     .accordion-tab {
         width: 100%;
@@ -470,9 +441,6 @@ $oses:
         height: 6px;
         background: url(../img/icons/ico_angle.svg) center no-repeat;
         background-size: contain;
-    }
-    .is-expanded.accordion-tab::after {
-        transform: rotate(180deg);
     }
     .is-selected.accordion-tab {
         padding: 9px 35px 9px 55px;
@@ -502,8 +470,6 @@ $oses:
         display: none;
     }
     .is-expanded + .accordion-content{
-        // display: flex;
-        // flex-wrap: wrap;
         padding: 15px;
     }
     .accordion-item {

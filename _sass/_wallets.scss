@@ -336,6 +336,11 @@ $scores:
 .wallet-description {
     color: #9d9d9d;
 }
+@media handheld, only screen and ( min-width: 48em ) {
+    .wallet-wrapper .wallet-list {
+        display: none;
+    }
+}
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ) {
     .wallet-list {
         padding: 20px 15px 30px;

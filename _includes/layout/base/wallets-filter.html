@@ -1,0 +1,218 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+<div class="filter">
+  <div class="row filter-row">
+    {% assign platformsByPlatform = site.platforms | group_by: "platform" %}
+    <div class="filter-accordion filter-platform-accordion">
+      <div class="filter-accordion-tab filter-platform-tab filter-accordion-tab-1 js-tab">
+        <p class="filter-accordion-label">WALLET TYPE</p>
+        <p class="selected-filter selected-platform-filter"></p>
+      </div>
+      <div class="accordion-content">
+        {% for platform in platformsByPlatform %} {% capture platformName %}{{ platform.name | split: "=>" | last | split: '"' }}{%
+        endcapture %} {% assign platformName = platformName | trim | replace: '}' '' | replace: ' ' '' %} {% assign platformClass
+        = "wallet-" | append: platformName %} {% assign ulClass = "" %} {% if page.id contains platformName %} {% assign platformClass
+        = platformClass | append: " active" %} {% assign ulClass = " active" %} {% endif %}
+        <div class="filter-accordion-item {{ platformClass }}">
+    
+          <p class="filter-accordion-link js-filter-platform {{platformName}}-link">{% translate walletcat{{platformName}} choose-your-wallet %}</p>
+    
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% for platform in platformsByPlatform %} {% capture platformName %}{{ platform.name | split: "=>" | last | split: '"' }}{%
+    endcapture %} {% assign platformName = platformName | trim | replace: '}' '' | replace: ' ' '' %} {% if platform.items.size
+    > 1 %}
+    <div class="filter-accordion filter-accordion-os filter-accordion-{{platformName}}" data-filter-platform="{{platformName}}"
+      hidden>
+      <div class="filter-accordion-tab filter-os-tab js-tab">
+        <p class="filter-accordion-label">OPERATING SYSTEM</p>
+        <p class="selected-filter selected-os-filter"></p>
+      </div>
+      <div class="accordion-content filter-os-content">
+    
+        {% for item in platform.items %} {% assign osClass = "wallet-" | append: item.os.name %} {% if page.id contains item.id %}
+        {% assign osClass = osClass | append: " active" %} {% endif %}
+        <div class="filter-accordion-item {{osClass}}">
+          <p class="filter-accordion-link js-filter-os link-{{osClass}}">{% translate platform{{item.os.name}} choose-your-wallet %}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %} {% endfor %}
+    <div class="filter-accordion filter-accordion-wallets" hidden>
+      <div class="filter-accordion-tab filter-wallet-tab js-tab is-selected">
+        <p class="filter-accordion-label">WALLET</p>
+        <p class="selected-filter selected-wallet-filter"></p>
+      </div>
+      <div class="accordion-content filter-wallets-content">
+        {% for wallet in site.wallets %} {% for platform in wallet.platform %} {% for os in platform.os %}
+        <div class="js-filter-wallet filter-wallet" data-wallet-os="{{os.name}}" data-walletlevel="{{ wallet.level }}">
+          {% if os.name == platform.name %}
+          <a class="filter-wallet-link" href="/{{ page.lang}}/wallets/{{ platform.name }}/{{ wallet.id }}/">
+            {% else %}
+            <a class="filter-wallet-link" href="/{{ page.lang}}/wallets/{{ platform.name }}/{{ os.name }}/{{ wallet.id }}/">
+              {% endif %}
+              <img class="filter-wallet-img" src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
+            </a>
+        </div>
+        {% endfor %} {% endfor %} {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  function showRelevantWallets(os) {
+    var wallet = document.querySelectorAll('.js-filter-wallet');
+    var walletAccordion = document.querySelector('.filter-accordion-wallets');
+    var walletAccordionTab = document.querySelector('.filter-wallet-tab');
+    
+    // Show wallets accordion
+    walletAccordion.classList.add('is-visible');
+        
+    // Hide non relevant wallets
+    for (var i = 0; i < wallet.length; i++) {
+      if (os != wallet[i].dataset.walletOs) {
+        wallet[i].classList.add('is-hidden');
+      } else {
+        wallet[i].classList.remove('is-hidden');
+      }
+    }
+    
+  }
+
+  function showNextFilter() {
+    var platfromTab = document.querySelector('.filter-platform-tab');
+    var platfroms = document.querySelectorAll('.js-filter-platform');
+    var osAccordions = document.querySelectorAll('.filter-accordion-os')
+    var osArr = document.querySelectorAll('.js-filter-os');
+    var tabs = document.querySelectorAll('.filter-accordion-tab');
+
+    for (var i = 0; i < platfroms.length; i++) {
+      platfroms[i].addEventListener('click', function(e) {
+
+        // Delete user selection
+        for (var num = 0; num < tabs.length; num++) {
+          tabs[num].classList.remove("is-selected");
+          tabs[num].querySelector(".selected-filter").textContent = "";
+        }
+        
+        var selectedPlatform = e.target;
+        var platformName = selectedPlatform.textContent.toLowerCase();
+        platfromTab.classList.add('is-selected');
+        document.querySelector('.selected-platform-filter').textContent = platformName;
+
+        
+        if (platformName === 'web' || platformName === 'hardware') {
+          
+          showRelevantWallets(platformName);
+
+          // Close platform tab
+          platfromTab.classList.remove('is-expanded');
+
+          for (let n = 0; n < osAccordions.length; n++) {
+            osAccordions[n].classList.remove('is-visible');
+          }          
+        } else {
+
+          // Close wallet accordion
+          var walletAccordion = document.querySelector('.filter-accordion-wallets')
+          walletAccordion.classList.remove('is-visible');
+
+          for (var a = 0; a < osAccordions.length; a++) {
+
+            if (platformName === osAccordions[a].dataset.filterPlatform) {
+              
+              // Close platform tab
+              platfromTab.classList.remove('is-expanded');
+              // Show relevant os accordion
+              osAccordions[a].classList.add("is-visible");
+              
+            } else {
+                // hide not relevant os accordion
+                osAccordions[a].classList.remove("is-visible"); 
+            }
+          }
+        }
+      })
+      
+    }
+
+    for (var index = 0; index < osArr.length; index++) {
+      osArr[index].addEventListener('click', function (e) {
+        
+        var selectedOs = e.target;
+        var osName = selectedOs.textContent.toLowerCase().split(' ').join('');
+        var osTab = document.querySelectorAll('.filter-os-tab');
+        var selectedOsLabel = document.querySelectorAll('.selected-os-filter');
+        
+        // Close os accordion
+        for (let counter = 0; counter < osTab.length; counter++) {
+          osTab[counter].classList.add('is-selected');       
+          osTab[counter].classList.remove('is-expanded');       
+        }
+
+        // Show relevant wallets
+        showRelevantWallets(osName);
+
+        for (var count = 0; count < selectedOsLabel.length; count++) {
+          selectedOsLabel[count].textContent = osName;         
+        }
+      });
+
+    }
+
+  }
+  
+  showNextFilter();
+
+  function showUserSelect() {
+    var pageUrl = (window.location.pathname).split("/").filter(Boolean);
+    var platform = pageUrl[2];
+    var os = pageUrl[3];
+    var wallet = pageUrl[4];
+    var platformTab = document.querySelector('.filter-platform-tab');
+    var SelectedWalletLabel = document.querySelector('.selected-wallet-filter');
+    console.log(pageUrl);
+    
+    platformTab.classList.add('is-selected');
+    document.querySelector('.selected-platform-filter').textContent = platform;
+
+    if (platform === 'hardware' || platform === 'web') {
+      showRelevantWallets(platform);
+      SelectedWalletLabel.textContent = os;
+    } else if (platform === 'desktop' || platform === 'mobile') {
+      var osAccordion = document.querySelectorAll('.filter-accordion-os');
+      // Display relevant os accordion
+      for (var a = 0; a < osAccordion.length; a++) {
+        if (platform === osAccordion[a].dataset.filterPlatform) {
+          
+          var relevantOsAcc = osAccordion[a];
+          relevantOsAcc.classList.add('is-visible');
+
+          // Made relevant accordion tab selected
+          relevantOsAcc.querySelector('.filter-os-tab').classList.add('is-selected');
+
+          if (os === 'windowsphone') {
+            os = 'windows phone';
+          }
+          
+          relevantOsAcc.querySelector('.selected-os-filter').textContent = os;
+          showRelevantWallets(os);
+          SelectedWalletLabel.textContent = wallet;
+          
+          
+        }
+      }
+     
+    } 
+    
+  }
+  showUserSelect();
+</script>
