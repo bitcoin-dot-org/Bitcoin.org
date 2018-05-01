@@ -151,13 +151,17 @@ http://opensource.org/licenses/MIT.
         var osName = selectedOs.textContent.toLowerCase().split(' ').join('');
         var osTab = document.querySelectorAll('.filter-os-tab');
         var selectedOsLabel = document.querySelectorAll('.selected-os-filter');
-        
+        var selectedWalletLabel = document.querySelector('.selected-wallet-filter');
+        var walletAccordionTab = document.querySelector('.filter-wallet-tab');
+
         // Close os accordion
         for (let counter = 0; counter < osTab.length; counter++) {
           osTab[counter].classList.add('is-selected');       
           osTab[counter].classList.remove('is-expanded');       
         }
-
+        
+        selectedWalletLabel.textContent = "";
+        walletAccordionTab.classList.remove('is-selected');
         // Show relevant wallets
         showRelevantWallets(osName);
 
@@ -178,7 +182,7 @@ http://opensource.org/licenses/MIT.
     var os = pageUrl[3];
     var wallet = pageUrl[4];
     var platformTab = document.querySelector('.filter-platform-tab');
-    var SelectedWalletLabel = document.querySelector('.selected-wallet-filter');
+    var selectedWalletLabel = document.querySelector('.selected-wallet-filter');
     console.log(pageUrl);
     
     platformTab.classList.add('is-selected');
@@ -186,7 +190,7 @@ http://opensource.org/licenses/MIT.
 
     if (platform === 'hardware' || platform === 'web') {
       showRelevantWallets(platform);
-      SelectedWalletLabel.textContent = os;
+      selectedWalletLabel.textContent = os;
     } else if (platform === 'desktop' || platform === 'mobile') {
       var osAccordion = document.querySelectorAll('.filter-accordion-os');
       // Display relevant os accordion
@@ -205,7 +209,7 @@ http://opensource.org/licenses/MIT.
           
           relevantOsAcc.querySelector('.selected-os-filter').textContent = os;
           showRelevantWallets(os);
-          SelectedWalletLabel.textContent = wallet;
+          selectedWalletLabel.textContent = wallet;
           
           
         }
