@@ -538,6 +538,7 @@ devsearches:
     - "BIP130: sendheaders message": "https://github.com/bitcoin/bips/blob/master/bip-0130.mediawiki"
     - "BIP133: feefilter message": "https://github.com/bitcoin/bips/blob/master/bip-0133.mediawiki"
     - "BIP141: segregated witness": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki"
+    - "BIP144: segregated witness peer services": "https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki"
     - "BIP151: P2P communication encryption": "https://github.com/bitcoin/bips/blob/master/bip-0151.mediawiki"
     - "BIP152: compact block relay": "https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki"
 
