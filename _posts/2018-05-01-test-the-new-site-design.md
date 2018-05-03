@@ -35,7 +35,7 @@ We've reached one of the most critical phases of the project, now, which is
 getting feedback and lots of help testing from a bunch of different people,
 before it goes live.
 
-**[Help test the new design.](https://staging.bitcoin.org/)**
+**[Help test the new design.](https://bitcoin.cryptopelago.com/)**
 
 If you visited the link above and experienced any issues or have feedback, please
 [send us an email](mailto:will@bitcoin.org?subject=Redesign%20Feedback") or
