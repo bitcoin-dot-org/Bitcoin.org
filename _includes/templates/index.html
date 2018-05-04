@@ -18,27 +18,27 @@
 <div class="mainoverview">
   <div class="container">
     <div class="mainoverview-title">{% translate overview %}</div>
-    <div class="maincard">
+    <a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}" class="maincard">
       <img class="maincard-img" src="/img/icons/ico_individuals.svg" alt="Icon">
       <div>
         <p class="maincard-title">{% translate menu-bitcoin-for-individuals layout %}</p>
-        <a class="maincard-link" href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate learn-more layout %}</a>
+        <p class="maincard-link">{% translate learn-more layout %}</p>
       </div>
-    </div>
-    <div class="maincard">
+    </a>
+    <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}" class="maincard">
       <img class="maincard-img" src="/img/icons/ico_business.svg" alt="Icon">
       <div>
         <p class="maincard-title">{% translate menu-bitcoin-for-businesses layout %}</p>
-        <a class="maincard-link" href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate learn-more layout %}</a>
+        <p class="maincard-link">{% translate learn-more layout %}</p>
       </div>
-      </div>
-    <div class="maincard">
+    </a>
+    <a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}" class="maincard">
       <img class="maincard-img" src="/img/icons/ico_developers.svg" alt="Icon">
       <div>
         <p class="maincard-title">{% translate menu-bitcoin-for-developers layout %}</p>
-        <a class="maincard-link" href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate learn-more layout %}</a>
+        <p class="maincard-link">{% translate learn-more layout %}</p>
       </div>
-    </div>
+    </a>
   </div>
   <a class="btn-down" href="#maindesc-title">
     <img src="/img/icons/ico_arrow_down.svg" alt="Link">
