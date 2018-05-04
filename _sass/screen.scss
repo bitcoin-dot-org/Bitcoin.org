@@ -4539,6 +4539,9 @@ br.big {
     .card:first-child {
         margin-top: 0;
     }
+    .card h2 {
+        min-height: auto;
+    }
     .startbar {
         display: none;
     }
@@ -4995,6 +4998,18 @@ br.big {
     }
     .own-text p {
         font-size: 16px;
+    }
+    .glossary_term.help-search::-webkit-input-placeholder { 
+        font-size: 16px
+    }
+    .glossary_term.help-search::-moz-placeholder { 
+        font-size: 16px
+    }
+    .glossary_term.help-search:-ms-input-placeholder { 
+        font-size: 16px
+    }
+    .glossary_term.help-search:-moz-placeholder { 
+        font-size: 16px
     }
 }
 
