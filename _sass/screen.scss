@@ -319,6 +319,7 @@ hr {
     width:180px;
     height: 40px;
     padding-left: 20px;
+    padding-right: 20px;
     font-size: 100%;
     line-height: 37px;
     -webkit-box-sizing: border-box;
@@ -681,7 +682,8 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     width: 31.7%;
     height: auto;
     margin-top: 30px ;
-    margin-right: 2.4%;
+    margin-right: 0.8%;
+    margin-left: 0.8%;
     padding: 40px 30px 60px;
     vertical-align: top;
     border: 1px solid #DADADA;
@@ -689,9 +691,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     list-style: none;
-}
-.card:nth-child(3n+3) {
-    margin-right: 0;
 }
 .card img {
     display: block;
