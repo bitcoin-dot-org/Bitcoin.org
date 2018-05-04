@@ -805,7 +805,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     z-index: 1010;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 600px;
+    width: 622px;
     height: 350px;
     max-width: 100%;
     max-height: 100%;
@@ -4270,7 +4270,9 @@ br.big {
     .controll {
         margin-bottom: 60px;
     }
-    .mainvideo {
+    .mainvideo,
+    .modal,
+    .modal-overlay {
         display: none;
     }
     .privacy {
