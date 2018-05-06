@@ -1021,15 +1021,13 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     display: inline-block;
     width: 260px;
     height: 200px;
+    margin: 0 8px;
     padding: 40px 32px 0;
     text-align: center;
     background: #090c14;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     vertical-align: top;
-}
-.maincard:not(:last-child) {
-    margin-right: 16px;
 }
 .maincard-img {
     display: block;
@@ -4287,6 +4285,9 @@ br.big {
     .own-timeline-number::after {
         width: 80px;
     }
+    .hero-social {
+        display: none;
+    }
 }
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
     p {
@@ -4474,9 +4475,6 @@ br.big {
         font-size: 137.5%;
         line-height: 1.7;
     }
-    .hero-social {
-        display: none;
-    }
     .mainhero {
         padding: 55px 0 50px;
     }
@@ -4497,7 +4495,7 @@ br.big {
         display: -ms-flexbox;
         display: flex;
         width: 290px;
-        height: 100px;
+        height: auto;
         margin: 0 auto;
         padding: 18px 33px 20px;
         text-align: left;
@@ -5011,6 +5009,9 @@ br.big {
     }
     .glossary_term.help-search:-moz-placeholder { 
         font-size: 16px
+    }
+    .recommendation-card {
+        padding: 33px 15px;
     }
 }
 

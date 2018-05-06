@@ -18,7 +18,7 @@ http://opensource.org/licenses/MIT.
         = platformClass | append: " active" %} {% assign ulClass = " active" %} {% endif %}
         <div class="filter-accordion-item {{ platformClass }}">
     
-          <p class="filter-accordion-link js-filter-platform {{platformName}}-link">{% translate walletcat{{platformName}} choose-your-wallet %}</p>
+          <p class="filter-accordion-link js-filter-platform {{platformName}}-link" data-platform="{{platformName}}">{% translate walletcat{{platformName}} choose-your-wallet %}</p>
     
         </div>
         {% endfor %}
@@ -27,7 +27,7 @@ http://opensource.org/licenses/MIT.
     {% for platform in platformsByPlatform %} {% capture platformName %}{{ platform.name | split: "=>" | last | split: '"' }}{%
     endcapture %} {% assign platformName = platformName | trim | replace: '}' '' | replace: ' ' '' %} {% if platform.items.size
     > 1 %}
-    <div class="filter-accordion filter-accordion-os filter-accordion-{{platformName}}" data-filter-platform="{{platformName}}"
+    <div class="filter-accordion filter-accordion-os filter-accordion-{{platformName}}" data-os-platform="{{platformName}}"
       hidden>
       <div class="filter-accordion-tab filter-os-tab js-tab">
         <p class="filter-accordion-label">OPERATING SYSTEM</p>
@@ -38,7 +38,7 @@ http://opensource.org/licenses/MIT.
         {% for item in platform.items %} {% assign osClass = "wallet-" | append: item.os.name %} {% if page.id contains item.id %}
         {% assign osClass = osClass | append: " active" %} {% endif %}
         <div class="filter-accordion-item {{osClass}}">
-          <p class="filter-accordion-link js-filter-os link-{{osClass}}">{% translate platform{{item.os.name}} choose-your-wallet %}</p>
+          <p class="filter-accordion-link js-filter-os link-{{osClass}}" data-os="{{item.os.name}}">{% translate platform{{item.os.name}} choose-your-wallet %}</p>
         </div>
         {% endfor %}
       </div>
@@ -104,9 +104,9 @@ http://opensource.org/licenses/MIT.
         }
         
         var selectedPlatform = e.target;
-        var platformName = selectedPlatform.textContent.toLowerCase();
+        var platformName = selectedPlatform.dataset.platform;
         platfromTab.classList.add('is-selected');
-        document.querySelector('.selected-platform-filter').textContent = platformName;
+        document.querySelector('.selected-platform-filter').textContent = selectedPlatform.textContent;
 
         
         if (platformName === 'web' || platformName === 'hardware') {
@@ -127,7 +127,7 @@ http://opensource.org/licenses/MIT.
 
           for (var a = 0; a < osAccordions.length; a++) {
 
-            if (platformName === osAccordions[a].dataset.filterPlatform) {
+            if (platformName === osAccordions[a].dataset.osPlatform) {
               
               // Close platform tab
               platfromTab.classList.remove('is-expanded');
@@ -148,7 +148,8 @@ http://opensource.org/licenses/MIT.
       osArr[index].addEventListener('click', function (e) {
         
         var selectedOs = e.target;
-        var osName = selectedOs.textContent.toLowerCase().split(' ').join('');
+        var osName = selectedOs.dataset.os;
+        console.log(osName);
         var osTab = document.querySelectorAll('.filter-os-tab');
         var selectedOsLabel = document.querySelectorAll('.selected-os-filter');
         var selectedWalletLabel = document.querySelector('.selected-wallet-filter');
@@ -166,7 +167,7 @@ http://opensource.org/licenses/MIT.
         showRelevantWallets(osName);
 
         for (var count = 0; count < selectedOsLabel.length; count++) {
-          selectedOsLabel[count].textContent = osName;         
+          selectedOsLabel[count].textContent = selectedOs.textContent;         
         }
       });
 
@@ -183,7 +184,6 @@ http://opensource.org/licenses/MIT.
     var wallet = pageUrl[4];
     var platformTab = document.querySelector('.filter-platform-tab');
     var selectedWalletLabel = document.querySelector('.selected-wallet-filter');
-    console.log(pageUrl);
     
     platformTab.classList.add('is-selected');
     document.querySelector('.selected-platform-filter').textContent = platform;
@@ -195,7 +195,7 @@ http://opensource.org/licenses/MIT.
       var osAccordion = document.querySelectorAll('.filter-accordion-os');
       // Display relevant os accordion
       for (var a = 0; a < osAccordion.length; a++) {
-        if (platform === osAccordion[a].dataset.filterPlatform) {
+        if (platform === osAccordion[a].dataset.osPlatform) {
           
           var relevantOsAcc = osAccordion[a];
           relevantOsAcc.classList.add('is-visible');
