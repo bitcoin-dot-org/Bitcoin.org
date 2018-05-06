@@ -326,6 +326,12 @@ h2 .rssicon{
 .wallet .wallet-platforms .wallet-os-container .wallet-os-download-buttons {
 	direction: ltr;
 }
+.own {
+	direction: ltr;
+}
+.own-text {
+	direction: rtl;
+}
 /*Override UbuntuBold by Droid Naskh*/
 
 @font-face{font-family:'DroidNaskh';src:url('/font/droidnaskh/droidnaskh-regular.eot');font-weight:normal;font-style:normal;}
@@ -419,6 +425,9 @@ h2 .rssicon{
 	}
 	.footer-social {
     justify-content: center;
+	}
+	.organizations-item {
+    margin-left: 0;
 	}
 }
 @media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ){
