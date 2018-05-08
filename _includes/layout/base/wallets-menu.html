@@ -4,7 +4,13 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="walletmenu" id="walletmenu">
+
+{% if page.id contains 'desktop' or  page.id contains 'mobile'%}
+   {% assign walletMargin = "55px" %}
+{% else %}
+   {% assign walletMargin = "" %}
+{% endif %}
+<div class="walletmenu" id="walletmenu" style="margin-bottom: {{walletMargin}}">
 {% assign platformsByPlatform = site.platforms | group_by: "platform" %}
   <ul>
   {% for platform in platformsByPlatform %}
@@ -24,9 +30,11 @@ http://opensource.org/licenses/MIT.
 
     {% assign platformClass = "wallet-" | append: platformName %}
     {% assign ulClass = "" %}
-    {% if page.id contains platformName %}
-      {% assign platformClass = platformClass | append: " active" %}
+    {% if page.id contains platformName and platformName != 'web' and platformName != 'hardware' %}
+      {% assign platformClass = platformClass | append: " active is-active" %}
       {% assign ulClass = " active" %}
+    {% elsif page.id contains platformName %}
+      {% assign platformClass = platformClass | append: " active" %}
     {% endif %}
     <li class="js-acc-item {{ platformClass }}">
       {% if platformName == 'hardware' or platformName == 'web' %}
