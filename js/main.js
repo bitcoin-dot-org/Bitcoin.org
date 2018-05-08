@@ -560,10 +560,17 @@ function closeDonationModal() {
 
 function toggleDonationBanner() {
     var banner = $('.donation-text');
-    var toggle = $('.donation-visibility-toggle');
+    var open = $('.donation-visibility-toggle');
 
-    toggle.toggleClass('active');
-    banner.toggleClass('expanded');
+    open.addClass("active");
+    banner.addClass("expanded");
+}
+function closeDonationBanner() {
+  var banner = $(".donation-text");
+  var open = $(".donation-visibility-toggle");
+
+  open.removeClass("active");
+  banner.removeClass("expanded"); 
 }
 function loadBtcExchangeRate() {
   
