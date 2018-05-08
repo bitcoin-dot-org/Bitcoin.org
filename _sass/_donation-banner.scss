@@ -78,18 +78,20 @@ $dark-green: #318f20;
 
 .donation-modal {
     background: white;
-    padding: 0 20px;
-    padding-bottom: 20px;
+    padding:20px;
     position: fixed;
+    padding: 20px 90px;
+    width: 770px;
+    box-sizing: border-box;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
-    max-width: 600px;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 8px;
     transition: transform .2s ease-in, opacity .12s ease-in;
     transform-origin: top;
+    overflow-y: auto;
 
     &.hidden {
         transform: translate(-50%, -50%) scale(0.7);
@@ -102,7 +104,9 @@ $dark-green: #318f20;
     }
 
     .modal-close-btn {
-        float: right;
+        position: absolute;
+        top: 20px;
+        right: 30px;
         cursor: pointer;
         font-size: 200%;
         line-height: 16px;
@@ -113,43 +117,46 @@ $dark-green: #318f20;
     }
 
     .modal-header-text {
-        color: #383838;
-        font-size: 110%;
-        text-align: left;
-        font-weight: bold;
-        margin: 1em 0;
+        line-height: 65px;
+        text-align: center;
     }
 
     .modal-subheader {
         text-align: center;
-        font-size: 16px;
-        font-weight: bold;
-        margin: 1.33em 0;
+        font-size: 20px;
+        line-height: 34px;
+        margin: 47px 0 13px;
     }
 
     .donation-btc-address {
-        text-align: center;
-        font-size: 16px;
-        font-weight: bold;
-        margin: 1.33em 0;
         display: block;
         text-align: center;
+        margin: 27px 0 25px;
+        line-height: 26px;
+        font-size: 17px;
+        color: #3490E6;
+        text-decoration: underline;
     }
 
     .modal-body {
         .donation-amount-btn {
+            width: 170px;
+            height: 65px;
+            box-sizing: border-box;
             cursor: pointer;
-            background-color: #ef9e5b;
-            @include gradient($orange, $dark-orange);
+            background-color: #F7931A;
             border: none;
-            border-radius: 10px;
-            padding: 10px 20px;
+            border-radius: 1px;
             color: white;
-            margin-right: 10px;
-            font-weight: bold;
+            margin-right: 30px;
+            margin-bottom: 30px;
 
+            &:last-child {
+                margin-right: 0;
+            }
+            
             &:hover {
-                @include gradient($dark-orange, $orange);
+                background-color: #F7931A;
             }
 
             .donation-amount-usd-in-btc {
@@ -158,16 +165,16 @@ $dark-green: #318f20;
         }
 
         .donation-amount-input {
-            width: 203px;
-            margin-top: 15px;
-            padding: 10px 15px;
-            border: 2px solid #dadada;
-            border-radius: 10px;
+            width: 41%;
+            margin-top: 20px;
+            padding: 15px 15px 15px 20px;
+            border: 1px solid #dadada;
+            border-radius: 1px;
         }
 
         textarea.donation-amount-input {
-            width: 460px;
-            margin: 15px 0;
+            width: 91%;
+           margin: 33px 0 30px;
         }
     }
 }
