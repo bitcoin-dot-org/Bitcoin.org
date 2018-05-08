@@ -63,10 +63,10 @@ $dark-green: #318f20;
     background: white;
     padding: 0 20px;
     padding-bottom: 20px;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    left: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1000;
     max-width: 600px;
     margin: 0 auto;
@@ -75,12 +75,12 @@ $dark-green: #318f20;
     transform-origin: top;
 
     &.hidden {
-        transform: scale(0.7);
+        transform: translate(-50%, -50%) scale(0.7);
         opacity: 0;
     }
 
     &.open {
-        transform: scale(1);
+        transform: translate(-50%, -50%) scale(1);
         opacity: 1;
     }
 
@@ -156,7 +156,7 @@ $dark-green: #318f20;
 }
 
 .modal-drop {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
