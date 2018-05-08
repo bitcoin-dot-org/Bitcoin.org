@@ -672,17 +672,22 @@ function showNextMobileAccordion() {
   var platformTab = document.querySelector(".accordion-tab-1");
   var osAccordion = document.querySelectorAll(".accordion-os");
   var walletAccordion = document.querySelector(".accordion-wallets");
-
+  
   for (var i = 0; i < platformItems.length; i++) {
+    
     platformItems[i].addEventListener("click", function(e) {
+    
       for (var num = 0; num < tabs.length; num++) {
         tabs[num].classList.remove("is-selected");
         tabs[num].querySelector(".selected-item").textContent = "";
       }
 
       var selectedPlatform = e.target;
-      var platformName = selectedPlatform.textContent.toLowerCase();
-      document.querySelector(".selected-platform").textContent = platformName;
+      
+      var platformName = selectedPlatform.dataset.platformName;
+      console.log(platformName);
+      document.querySelector(".selected-platform").textContent = selectedPlatform.textContent;
+      console.log(selectedPlatform.textContent);
 
       // Display next accordion and hide non selected accordion
       for (var a = 0; a < osAccordion.length; a++) {
