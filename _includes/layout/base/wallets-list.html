@@ -27,9 +27,13 @@ http://opensource.org/licenses/MIT.
               <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
             </div>
             <div class="wallet-list-os">
-              {% for platform in wallet.platform%}
+              {% for platform in wallet.platform %}
                 {% for os in platform.os%}
+                  {% if platform.name == os.name %}
+                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/"><img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}"></a>
+                  {% else %}
                   <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/"><img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}"></a>
+                  {% endif %}
                 {% endfor %}
               {% endfor %}
             </div>

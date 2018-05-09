@@ -13,9 +13,40 @@ max_wallet_text_length: 418  ## Unicode characters
     <div class="hero">
       <div class="container wallet-logo-container hero-container">
         <img class="wallet-logo" src="/img/wallet/{{ page.wallet.id }}.png" alt="{{ page.wallet.title }}" />
-        <h1>
+        <h1 class="wallet-title">
           {{ page.wallet.title }}
         </h1>
+        <div class="dropdown" id="dropdown">
+          <!-- {% for platform in page.wallet.platform%} 
+               {% for os in platform.os%}
+               {% endfor %} 
+               {% endfor %} -->
+          
+          <div id="dropdownContent" class="dropdown-content">
+            {% for platform in page.wallet.platform %} 
+            {% for os in platform.os %} 
+             {% if page.id contains os.name %} 
+              {% assign osName = os.name %} 
+             {% endif %}
+            {% if platform.name == os.name %}
+            <a class="dropdown-item" href="/{{ page.lang}}/wallets/{{platform.name}}/{{page.wallet.id}}/">
+              <img class="dropdown-item-img" src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}">
+              <span class="dropdown-item-text">{{os.name}}</span>
+            </a>
+            {% else %}
+            <a class="dropdown-item" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{page.wallet.id}}/">
+              <img class="dropdown-item-img" src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}">
+              <span class="dropdown-item-text">{{os.name}}</span>
+            </a>
+            {% endif %} 
+            {% endfor %} 
+            {% endfor %}
+          </div>
+          <button class="dropbtn">
+            <img class="dropdown-item-img" src="/img/os/wallet_menu_{{osName}}.svg" alt="{{osName}}">
+            <span class="dropbtn-text">{{osName}}</span>
+          </button>
+        </div>
         <p class="wallet-description">
           {% translate wallet{{page.wallet.id}} choose-your-wallet %}
         </p>
@@ -33,19 +64,7 @@ max_wallet_text_length: 418  ## Unicode characters
     
 
   <div class="wallet-platforms">
-    <!-- <div class="wallet-platforms-menu">
-      {% for platform in page.wallet.platform %} {% for os in platform.os %} {% assign btnClass = "wallet-os-btn" %} {% if page.id
-      contains os.name %} {% assign btnClass = btnClass | append: " active" %} {% endif %} {% if platform.name == os.name %}
-      <a class="{{ btnClass }}" href="/{{ page.lang }}/wallets/{{platform.name}}/{{page.wallet.id}}/">
-        {% else %}
-        <a class="{{ btnClass }}" href="/{{ page.lang }}/wallets/{{platform.name}}/{{os.name}}/{{page.wallet.id}}/">
-          {% endif %}
-          <img src="/img/os/{{ os.name }}.png" alt="{% translate platform{{os.name}} choose-your-wallet %}{% translate walletcat{{os.name}} choose-your-wallet %}"
-            title="{% translate platform{{os.name}} choose-your-wallet %}" />
-          <span>{% translate platform{{os.name}} choose-your-wallet %}{% translate walletcat{{os.name}} choose-your-wallet %}</span>
-        </a>
-        {% endfor %} {% endfor %}
-    </div> -->
+    
     <div class="container">
       {% assign platform = page.platform %} {% assign os = page.os %}
       <div class="wallet-os-list">
@@ -92,3 +111,40 @@ max_wallet_text_length: 418  ## Unicode characters
     </div>
   </div>
 </div>
+
+<script>
+  // function replaceDropdownContent() {
+  //     var dropdownItems = document.querySelectorAll(".dropdown-item");
+  //     for (var i = 0; i < dropdownItems.length; i++) {
+  //       dropdownItems[i].addEventListener("click", function (e) {
+  //         var selectedDropItem = e.target;
+  //         var dropdownValue = selectedDropItem.textContent;
+
+  //         document.querySelector(".dropbtn").textContent = dropdownValue;
+
+  //         // for (var ii = 0; ii < dropdownItems.length; ii++) {
+  //         //   if (dropdownItems[ii] === selectedDropItem) {
+  //         //     selectedDropItem.classList.add("active");
+  //         //   } else {
+  //         //     dropdownItems[ii].classList.remove('active');
+  //         //   }
+  //         // }
+  //       });
+  //     }
+  //   }
+  //   replaceDropdownContent();
+
+    function showDropdownItems() {
+      var btn = document.querySelector(".dropbtn");
+      btn.addEventListener("click", function (e) {
+        console.log(e.target);
+        if (e.target.classList.contains("disabled")) {
+          return;
+        } else {
+          document.getElementById("dropdownContent").classList.toggle("show");
+          document.getElementById("dropdown").classList.toggle("is-expanded");
+        }
+      });
+    }
+    showDropdownItems();
+</script>

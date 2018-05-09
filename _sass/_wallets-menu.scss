@@ -181,13 +181,18 @@ $oses:
 }
 .filter-row {
     justify-content: flex-start;
-    max-width: 900px;
+    align-items: center;
+    max-width: 1040px;
     width: 100%;
     margin: 0 auto;
 }
+.filter-label {
+    text-align: left;
+    padding: 0 30px;
+}
 .filter-accordion {
     position: relative;
-    width: 33%;
+    width: 26.6%;
 }
 .filter-accordion-tab {
     position: relative;
@@ -233,12 +238,12 @@ $oses:
 .filter .accordion-content {
     background: #1d2028;
 }
+// .filter-accordion-label {
+//     font-size: 18px;
+//     color: #FF7E00;
+//     line-height: 30px;
+// }
 .filter-accordion-label {
-    font-size: 18px;
-    color: #FF7E00;
-    line-height: 30px;
-}
-.is-selected .filter-accordion-label {
     font-size: 13px;
     color: #8f9092;
     letter-spacing: 0.43px;
@@ -423,6 +428,18 @@ $oses:
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ) {
     .walletmenu>ul li {
         margin: 0 25px;
+    }
+    .filter-label {
+        padding: 0 10px;
+    }
+    .filter-accordion {
+        width: 28%;
+    }
+    .filter-accordion-tab {
+        padding: 12px 35px 17px 29px;
+    }
+    .is-expanded + .filter-wallets-content {
+        width: 460px;
     }
 }
 @media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ) {
