@@ -404,7 +404,7 @@ Isn't that worth occasionally starting up a few seconds slower?
   The following P2P lightweight wallets use decentralized peer discovery
   by default.
 
-  - BreadWallet
+  - BRD
 
   If you know of another compliant lightweight wallet, please [tell us
   about it][docs issue].

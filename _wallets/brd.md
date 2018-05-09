@@ -2,9 +2,9 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-id: breadwallet
-title: "breadwallet"
-titleshort: "breadwallet"
+id: brd
+title: "BRD"
+titleshort: "BRD"
 compat: "mobile android ios"
 level: 2
 platform:
@@ -12,10 +12,10 @@ platform:
     name: mobile
     os:
       - name: ios
-        text: "walletbreadwallet"
-        link: "https://itunes.apple.com/app/breadwallet/id885251393"
-        source: "https://github.com/voisine/breadwallet"
-        screenshot: "breadwallet.png"
+        text: "walletbrd"
+        link: "https://itunes.apple.com/app/brd-bitcoin-wallet/id885251393"
+        source: "https://github.com/breadwallet/breadwallet-ios"
+        screenshot: "brd.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"
@@ -28,10 +28,10 @@ platform:
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: android
-        text: "walletbreadwallet"
+        text: "walletbrd"
         link: "https://play.google.com/store/apps/details?id=com.breadwallet"
         source: "https://github.com/breadwallet/breadwallet-android"
-        screenshot: "breadwallet.png"
+        screenshot: "brd.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"
