@@ -13,6 +13,10 @@ http://opensource.org/licenses/MIT.
 <div class="walletmenu" id="walletmenu" style="margin-bottom: {{walletMargin}}">
 {% assign platformsByPlatform = site.platforms | group_by: "platform" %}
   <ul>
+     {% if page.id == "choose-your-wallet" %}
+       {% assign statusClass = "active" %}
+     {% endif %}
+    <li class="wallet-all {{statusClass}}"><a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">All wallets</a></li>
   {% for platform in platformsByPlatform %}
 
     {% comment %}

@@ -99,8 +99,12 @@ $dark-green: #318f20;
     }
 
     &.open {
+        height: 755px;
+        max-height: 100%;
         transform: translate(-50%, -50%) scale(1);
         opacity: 1;
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none; 
     }
 
     .modal-close-btn {

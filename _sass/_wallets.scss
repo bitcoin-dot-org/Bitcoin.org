@@ -28,13 +28,13 @@ $black: #13161F;
     max-width: 1230px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px 30px 40px;
+    padding: 40px 30px 40px;
     text-align: left;
 
     .wallet-list-item {
         display: inline-block;
         width: 14.2%;
-        height: 165px;
+        height: auto;
         padding: 20px 0;
         margin-bottom: 30px;
         margin-right: 2.5%;
@@ -311,6 +311,13 @@ $scores:
     }
 }
 
+
+.wallet-list-os {
+    margin-top: 15px;
+}
+.wallet-list-os-link {
+    margin: 0 5px
+}
 .walletsswitch {
     display: none;
 }

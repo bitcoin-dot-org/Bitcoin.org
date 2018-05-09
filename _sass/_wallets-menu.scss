@@ -18,6 +18,7 @@ $oses:
     text-align: center;
     position: relative;
     z-index: 90;
+    border-bottom: 1px solid #dfdfdf;
 
     > ul {
         display: inline-block;
@@ -93,10 +94,11 @@ $oses:
                 color: #383838;
             }
             a {
-                white-space: nowrap;
-                cursor: pointer;
                 display: block;
                 padding: 18px 10px 21px 42px;
+                text-transform: uppercase;
+                white-space: nowrap;
+                cursor: pointer;
 
             }
             
@@ -146,6 +148,12 @@ $oses:
             &.active > a:visited {
                 color: #ff7e00;
             }
+        }
+        .wallet-all a {
+            padding: 18px 10px 21px;
+        }
+        .wallet-all a:hover {
+            padding: 18px 10px 18px;
         }
     }
 
@@ -410,6 +418,11 @@ $oses:
     .wallet-windowsphone {
         background: url(../img/os/wallet_menu_windowsphone.svg) center 15px no-repeat;
         background-size: 22px;
+    }
+}
+@media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ) {
+    .walletmenu>ul li {
+        margin: 0 25px;
     }
 }
 @media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ) {

@@ -20,18 +20,39 @@ http://opensource.org/licenses/MIT.
   </div>
   <div class="accordion-content accordion-content-wallets">
     <div class="wallet-list" id="wallets">
-      {% for wallet in site.wallets %} {% assign platform = page.platform['name'] %} {% assign os = page.os['name'] %} {% if wallet.compat
-      contains platform and wallet.compat contains os %}
-      <div class="wallet-list-item" data-walletlevel="{{ wallet.level }}">
-        {% if platform == os %}
-        <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platform }}/{{ wallet.id }}/">
-          {% else %}
-          <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platform }}/{{ os }}/{{ wallet.id }}/">
-            {% endif %}
-            <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
-          </a>
-      </div>
-      {% endif %} {% endfor %}
+      {% if page.id == "choose-your-wallet" %} 
+        {% for wallet in site.wallets %}
+          <div class="wallet-list-item" data-walletlevel="{{ wallet.level }}">
+            <div class="wallet-list-item-link">
+              <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
+            </div>
+            <div class="wallet-list-os">
+              {% for platform in wallet.platform%}
+                {% for os in platform.os%}
+                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/"><img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}"></a>
+                {% endfor %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        {% for wallet in site.wallets %} 
+        {% assign platform = page.platform['name'] %} 
+        {% assign os = page.os['name'] %} 
+        {% if wallet.compat contains platform and wallet.compat contains os %}
+        <div class="wallet-list-item" data-walletlevel="{{ wallet.level }}">
+          {% if platform == os %}
+          <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platform }}/{{ wallet.id }}/">
+            {% else %}
+            <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platform }}/{{ os }}/{{ wallet.id }}/">
+              {% endif %}
+              <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
+            </a>
+        </div>
+        {% endif %} 
+        {% endfor %}  
+      {% endif %}
+      
     </div>
   </div>
 </div>

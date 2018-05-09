@@ -4,7 +4,7 @@
 
 id: digitalbitbox
 title: "DigitalBitbox"
-titleshort: "Digital<br />Bitbox"
+titleshort: "Digital Bitbox"
 compat: "hardware"
 level: 2
 platform:
