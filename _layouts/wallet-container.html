@@ -17,11 +17,6 @@ max_wallet_text_length: 418  ## Unicode characters
           {{ page.wallet.title }}
         </h1>
         <div class="dropdown" id="dropdown">
-          <!-- {% for platform in page.wallet.platform%} 
-               {% for os in platform.os%}
-               {% endfor %} 
-               {% endfor %} -->
-          
           <div id="dropdownContent" class="dropdown-content">
             {% for platform in page.wallet.platform %} 
             {% for os in platform.os %} 
@@ -113,38 +108,28 @@ max_wallet_text_length: 418  ## Unicode characters
 </div>
 
 <script>
-  // function replaceDropdownContent() {
-  //     var dropdownItems = document.querySelectorAll(".dropdown-item");
-  //     for (var i = 0; i < dropdownItems.length; i++) {
-  //       dropdownItems[i].addEventListener("click", function (e) {
-  //         var selectedDropItem = e.target;
-  //         var dropdownValue = selectedDropItem.textContent;
+  function showDropdownItems() {
+    var btn = document.querySelector(".dropbtn");
+    btn.addEventListener("click", function (e) {
+      if (e.target.classList.contains("disabled")) {
+        return;
+      } else {
+        document.getElementById("dropdownContent").classList.toggle("show");
+        document.getElementById("dropdown").classList.toggle("is-expanded");
+      }
+    });
+  }
+  showDropdownItems();
 
-  //         document.querySelector(".dropbtn").textContent = dropdownValue;
-
-  //         // for (var ii = 0; ii < dropdownItems.length; ii++) {
-  //         //   if (dropdownItems[ii] === selectedDropItem) {
-  //         //     selectedDropItem.classList.add("active");
-  //         //   } else {
-  //         //     dropdownItems[ii].classList.remove('active');
-  //         //   }
-  //         // }
-  //       });
-  //     }
-  //   }
-  //   replaceDropdownContent();
-
-    function showDropdownItems() {
-      var btn = document.querySelector(".dropbtn");
-      btn.addEventListener("click", function (e) {
-        console.log(e.target);
-        if (e.target.classList.contains("disabled")) {
-          return;
-        } else {
-          document.getElementById("dropdownContent").classList.toggle("show");
-          document.getElementById("dropdown").classList.toggle("is-expanded");
-        }
-      });
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches(".dropbtn")) {
+      var dropdown = document.getElementById("dropdownContent");
+      if (dropdown.classList.contains("show")) {
+        dropdown.classList.remove("show");
+        document.querySelector(".dropdown").classList.remove("is-expanded");
+      }
     }
-    showDropdownItems();
+  };
+
 </script>
