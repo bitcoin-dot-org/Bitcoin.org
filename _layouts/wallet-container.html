@@ -38,7 +38,7 @@ max_wallet_text_length: 418  ## Unicode characters
             {% endfor %}
           </div>
           <button class="dropbtn">
-            <img class="dropdown-item-img" src="/img/os/wallet_menu_{{osName}}.svg" alt="{{osName}}">
+            <img class="dropdown-item-img dropbtn-img" src="/img/os/wallet_menu_{{osName}}.svg" alt="{{osName}}">
             <span class="dropbtn-text">{{osName}}</span>
           </button>
         </div>
@@ -110,26 +110,12 @@ max_wallet_text_length: 418  ## Unicode characters
 <script>
   function showDropdownItems() {
     var btn = document.querySelector(".dropbtn");
-    btn.addEventListener("click", function (e) {
-      if (e.target.classList.contains("disabled")) {
-        return;
-      } else {
-        document.getElementById("dropdownContent").classList.toggle("show");
-        document.getElementById("dropdown").classList.toggle("is-expanded");
-      }
+    btn.addEventListener("click", function () {
+      console.log(this);      
+      document.getElementById("dropdownContent").classList.toggle("show");
+      document.getElementById("dropdown").classList.toggle("is-expanded");
     });
   }
   showDropdownItems();
-
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function (event) {
-    if (!event.target.matches(".dropbtn")) {
-      var dropdown = document.getElementById("dropdownContent");
-      if (dropdown.classList.contains("show")) {
-        dropdown.classList.remove("show");
-        document.querySelector(".dropdown").classList.remove("is-expanded");
-      }
-    }
-  };
 
 </script>
