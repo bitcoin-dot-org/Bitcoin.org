@@ -13,7 +13,17 @@ breadcrumbs:
   - bcc contribute
   - Documentation
 ---
+
+<div class="hero">
+<div class="container hero-container" markdown="block">
+
 # Writing Bitcoin Core Documentation
+{% include helpers/hero-social.html %}
+</div>
+</div>
+
+<div class="bitcore-content">
+<div class="container" markdown="block">
 
 Bitcoin Core documentation is spread across three projects: Bitcoin
 Core, the Bitcoin Wiki, and Bitcoin.org---and is further subdivided into
@@ -117,3 +127,6 @@ Bitcoin.org documentation maintainer {{site.text.bitcoin_org_docs_maintainer_ema
 <br class="clear">
 
 {% include references.md %}
+
+</div>
+</div>

@@ -4,7 +4,7 @@
 
 id: ledgernanos
 title: "Ledger Nano S"
-titleshort: "Ledger<br>Nano S"
+titleshort: "Ledger Nano S"
 compat: "hardware"
 level: 2
 platform:

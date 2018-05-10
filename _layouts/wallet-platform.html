@@ -5,5 +5,15 @@
 layout: wallet-platform-container
 ---
 
-<h1>{% translate pagetitle choose-your-wallet %}</h1>
-<p class="summary">{% translate pagedesc choose-your-wallet %}</p>
+<div class="hero">
+  <div class="container hero-container">
+    <h1>{% translate pagetitle choose-your-wallet %}</h1>
+    <p class="summary">{% translate pagedesc choose-your-wallet %}</p>
+    {% include helpers/hero-social.html %}
+  </div>
+</div>
+
+{% include layout/base/wallets-menu.html %}
+{% include layout/base/wallets-menu-mobile.html %}
+{% include layout/base/wallets-list.html %}
+

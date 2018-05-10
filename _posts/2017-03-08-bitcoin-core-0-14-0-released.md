@@ -5,6 +5,7 @@
 type: posts
 layout: post
 category: blog
+show_toc: true
 
 title: "Bitcoin Core Version 0.14.0 Released"
 permalink: /en/posts/bitcoin-core-version-0-14-0-released.html
@@ -13,6 +14,7 @@ author: |
   <a href="https://github.com/wbnns">Will Binns</a>
 ---
 
+<div class="post-content" markdown="1">
 {:.center}
 ![Bitcoin Core Version 0.14.0](/img/blog/free/bitcoin-core-0140.png)
 
@@ -25,6 +27,9 @@ Please report bugs using the [issue tracker on GitHub](https://github.com/bitcoi
 
 [Subscribe here](https://bitcoincore.org/en/list/announcements/join/) to receive
 security and update notifications.
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Compatibility
 
@@ -40,6 +45,9 @@ instabilities and issues. Please do not report issues about Windows XP to the
 
 Bitcoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Notable changes
 
@@ -337,6 +345,9 @@ security
   when there is extra memory available. This may result in an increase in
   memory usage during IBD for those previously relying on only the `-dbcache`
   option to limit memory during that time.
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## 0.14.0 Change log
 
@@ -882,6 +893,9 @@ and git merge commit are mentioned.
 - \#8863,#8807 univalue: Pull subtree (MarcoFalke)
 - \#9798 `e22c067` Fix Issue #9775 (Check returned value of fopen) (kirit93)
 - \#9856 `69832aa` Terminate immediately when allocation fails (theuni)
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Credits
 
@@ -991,3 +1005,4 @@ Thanks to everyone who directly contributed to this release:
 
 As well as everyone that helped translating on
 [Transifex](https://www.transifex.com/projects/p/bitcoin/).
+</div>

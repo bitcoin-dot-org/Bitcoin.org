@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600px" height="412px" viewBox="0 0 1600 412" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>hero bg@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.249644284 16.2844988 32 8.08027151 90 3.09797846 114 1.05784271 155 16.0365944 209 11.0365944 225 19.0802715 296 19.0802715 322 24.0979785 357 23.0743692 417 12.0259702 460 22.0495795 491 22.0495795 528 9.02360927 556 11.0259702 617 11.0365944 648 11.0365944 702 23.0625646 733 11.0365944 779 8.01416556 828 8.02597019 860 13.0743692 906 8.08027151 928 15.1097831 970 17.0908957 1051 2.04957946 1076 8.08027151 1105 13.0861738 1157 9.05784271 1211 13.0861738 1271 6.04957946 1371 11.0365944 1417 18.0448576 1463 7.00826324 1507 0 1546 12.0259702 1571 16.5548915 1600.02487 15.0350922 1600.02487 183 0.249644284 183"></polygon>
+    </defs>
+    <g id="Community" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="22.01.18-Bitcoin.org_Bitcoin-communities_Desktop-1200px--" transform="translate(0.000000, -55.000000)">
+            <g id="//HERO" transform="translate(-1.000000, 0.000000)">
+                <g id="bottom-hero" transform="translate(0.000000, 55.000000)">
+                    <g id="hero-bg">
+                        <g id="ver-3-bg-element-subpages" transform="translate(800.500000, 320.500000) scale(1, -1) translate(-800.500000, -320.500000) translate(0.000000, 229.000000)">
+                            <g id="Group-5">
+                                <g>
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <use id="Mask" fill="#13161F" xlink:href="#path-1"></use>
+                                    <g mask="url(#mask-2)" opacity="0.600000024" stroke="#3D3D3D">
+                                        <g transform="translate(43.000000, -25.000000)">
+                                            <polyline id="Path-4" points="0 149 215.597656 30 519.386719 78.8535156 813 128 1164 29 1514 5"></polyline>
+                                            <polyline id="Path-3" points="0 149 47.328125 5.09765625 215.597656 29 291.480469 138 519.386719 78.8535156 674.890625 29 813 128 848 4.26325641e-14 1165 29 1467 149 1511.74609 23.0820313 1415.69922 23.0820313 1467 149"></polyline>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <rect id="Rectangle" fill="#13161F" x="0" y="0" width="1600" height="280"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

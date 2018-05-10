@@ -4,6 +4,7 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/examples/payment_processing.md" %}
 
+
 ## Payment Processing
 {% include helpers/subhead-links.md %}
 

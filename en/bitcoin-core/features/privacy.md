@@ -49,8 +49,17 @@ third_party_privacy:
     tracks_amounts: "yes"
     tracks_ip_addresses: "yes"
 ---
+
+<div class="hero">
+<div class="container hero-container" markdown="block">
+
 # Bitcoin Core's Excellent Privacy
-{:.not-displayed}
+{% include helpers/hero-social.html %}
+</div>
+</div>
+
+<div class="bitcore-content clearfix">
+<div class="container" markdown="block">
 
 ![Excellent privacy](/img/bitcoin-core/slider-privacy.svg)
 
@@ -83,8 +92,8 @@ privacy. They can increase it by mixing your transactions with those of
 other users; they can decrease it by tracking your activity and directly
 associating it with your real name or other identifying information.
 
-<p class="center service-choose">
-<a>Click an entry below to show it:</a>
+<div class="center service-choose">
+<p class="service-choose-title">Click an entry below to show it:</p>
 
 {% for service in page.third_party_privacy %}
   {% if service.name != 'Bitcoin Core' %}
@@ -98,9 +107,9 @@ associating it with your real name or other identifying information.
     >{{service.name}}</button>
   {% endif %}
 {% endfor %}
-</p>
+</div>
 
-<table class="privacy-comparison">
+<table class="privacy-comparison center">
 {% comment %}
 <!-- Don't overdo it!  Limit table to a total of seven content rows, with a
 maximum of five content rows in each category. -->
@@ -237,7 +246,7 @@ There are {{site.text.total_tx_count_in_millions}} million transactions on the B
 chain. How do you find which ones pay you?  Here are some common
 options:
 
-<table class="received_transactions">
+<table class="received_transactions center">
   <tr>
     <td class="center" markdown="span">**Ask bankers**{:.fgred}<br
       >They'll monitor your every transaction<br><br
@@ -299,8 +308,8 @@ be able to [connect mobile clients][bcc user interface lightweight]
 to your Bitcoin Core full node for increased security and privacy
 wherever you go.
 
-{:.right-hanger}
-[Start using Tor today <span class="fa fa-external-link-square"></span>][setup tor]
+{:.center-hanger.center}
+[Start using Tor today][setup tor]
 
 
 ## Decentralized Peer Discovery
@@ -337,12 +346,10 @@ Bitcoin Core prefers decentralized peer discovery, so after the first
 time it starts, it no longer has to trust the centralized authority.
 Isn't that worth occasionally starting up a few seconds slower?
 
-<br class="clear big">
 <div class="prevnext">
 <span markdown="1">**Previous Feature**<br>[Validation][bcc validation]</span>
 <span markdown="1">**Next feature**<br>[Requirements][bcc requirements]</span>
 </div>
-<br class="clear">
 
 <div class="not-displayed">
   <div id="bitcoin_bank_receiving" title="Bitcoin Bank Receiving Privacy" markdown="block">
@@ -419,3 +426,5 @@ Isn't that worth occasionally starting up a few seconds slower?
 </div>
 
 {% include references.md %}
+</div>
+</div>
