@@ -60,7 +60,7 @@ $dark-green: #318f20;
         cursor: pointer;
         display: inline-block;
         background-color: #F7931A;
-        width: 370px;
+        width: 100%;
         box-sizing: border-box;
         height: 55px;
         color: #FFFFFF;
@@ -196,6 +196,46 @@ $dark-green: #318f20;
 }
 
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ){
+    .donation-container .donation-text {
+        height: auto;
+        padding: 0 0 35px;
+        margin-top: -188px;
+    }
+    .donation-container .donation-text p {
+        margin: 0 auto 28px;
+        line-height: 30px;
+        max-width: 480px;
+        padding-top: 30px;
+    }
+    .donation-container .donation-modal-close {
+        top: 20px;
+        right: 25px;
+    }
+    .donation-modal.open {
+        height: 700px;
+        padding: 20px 38px;
+        width: 620px;
+    }
+    .donation-modal .modal-header-text {
+        margin-bottom: 20px;
+    }
+    .donation-modal .modal-subheader {
+        margin: 0 0 13px;
+    }
+    .donation-modal .modal-body .donation-amount-btn {
+        width: 157px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .donation-modal .modal-body .donation-amount-input {
+        width: 39.4%;
+    }
+    .donation-modal .modal-body textarea.donation-amount-input {
+        width: 88.2%;
+        margin: 30px 0 0;
+    }
+}
+@media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
     .donation-container {
         display: none;
     }
