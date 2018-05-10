@@ -22,7 +22,7 @@ http://opensource.org/licenses/MIT.
     <div class="wallet-list" id="wallets">
       {% if page.id == "choose-your-wallet" %} 
         {% for wallet in site.wallets %}
-          <div class="wallet-list-item" data-walletlevel="{{ wallet.level }}">
+          <div class="wallet-list-item allwallets-list-item" data-walletlevel="{{ wallet.level }}">
             <div class="wallet-list-item-link">
               <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
             </div>

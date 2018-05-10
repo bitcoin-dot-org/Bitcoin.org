@@ -31,11 +31,11 @@ $black: #13161F;
     padding: 40px 30px 40px;
     text-align: left;
 
+    
     .wallet-list-item {
         display: inline-block;
         width: 14.2%;
         height: auto;
-        padding: 20px 0;
         margin-bottom: 30px;
         margin-right: 2.5%;
         border: 1px solid #dfdfdf;
@@ -50,6 +50,7 @@ $black: #13161F;
             display: inline-block;
             width: 100%;
             height: 100%;
+            padding: 0 0 20px;
             color: $black;
             text-align: center;
             font-weight: 600;
@@ -73,6 +74,14 @@ $black: #13161F;
 
     &:nth-child(1n + 15) {
         display: none;
+    }
+    .allwallets-list-item {
+        padding-bottom: 20px;
+        
+        .wallet-list-item-link {
+            height: auto;
+            padding: 0;
+        }
     }
 }
 
@@ -522,9 +531,7 @@ $scores:
     }
     .wallet-list .wallet-list-item {
         width: 48.1%;
-        height: 150px;
-    }
-    .wallet-list .wallet-list-item {
+        height: 140px;
         padding: 0;
         margin-bottom: 10px;
     }
@@ -533,5 +540,9 @@ $scores:
     }
     .wallet-list .wallet-list-item:nth-child(even) {
         margin-right: 0;
+    }
+    .wallet-list .wallet-list-item .wallet-list-item-link {
+        width: 100%;
+        height: 100%;
     }
 }
