@@ -349,8 +349,16 @@ Signature script: <sig> <pubkey>
 {% autocrossref %}
 
 P2SH is used to send a transaction to a script hash. Each of the standard
-pubkey scripts can be used as a P2SH redeem script, but in practice only the
-multisig pubkey script makes sense until more transaction types are made standard.
+pubkey scripts can be used as a P2SH redeem script, excluding P2SH itself. 
+As of Bitcoin Core 0.9.2, P2SH transactions can contain any valid redeemScript, 
+making the P2SH standard much more flexible and allowing for experimentation with 
+many novel and complex types of transactions. The most common use of P2SH is the standard 
+multisig pubkey script, with the second most common use being the [Open Assets Protocol][open assets protocol].
+
+Another common redeemScript used for P2SH is storing textual data on the blockchain.
+The first bitcoin transaction ever made included text, and P2SH is a convenient method
+of storing text on the blockchain as its possible to store up to 1.5kb of text data. An
+example of storing text on the blockchain using P2SH can be found in this [repository][peter todd p2sh example].
 
 {% endautocrossref %}
 
