@@ -909,7 +909,11 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
             box-sizing: border-box;
 }
 .recommendation-card .wallet-icon {
-    margin-right: 23px
+    margin-right: 23px;
+}
+.brd-wallet-icon {
+    width: 72px;
+    height: 72px;
 }
 .recommendation-card .wallet-name {
     margin: 0 0 8px;
