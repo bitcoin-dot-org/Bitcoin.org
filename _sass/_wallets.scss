@@ -48,6 +48,8 @@ $black: #13161F;
 
         .wallet-list-item-link {
             display: inline-block;
+            width: 100%;
+            height: 100%;
             color: $black;
             text-align: center;
             font-weight: 600;
@@ -63,7 +65,7 @@ $black: #13161F;
                 width: 72px;
                 height: 72px;
                 margin: auto;
-                margin-bottom: 5px;
+                margin: 10px auto 5px;
                 transition: opacity .12s ease-in;
             }
         }
@@ -523,7 +525,7 @@ $scores:
         height: 150px;
     }
     .wallet-list .wallet-list-item {
-        padding: 10px 0;
+        padding: 0;
         margin-bottom: 10px;
     }
     .wallet-list .wallet-list-item:nth-child(3n+3) {
