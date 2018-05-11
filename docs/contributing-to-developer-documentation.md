@@ -3,7 +3,8 @@
 Most parts of the documentation can be found in the
 [_includes](https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/_includes)
 directory. Updates, fixes and improvements are welcome and can submitted using
-[pull requests](#working-with-github) on GitHub.
+[pull requests](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md)
+on GitHub.
 
 **Mailing List**: General discussions can take place on the
 [mailing list](https://groups.google.com/forum/#!forum/bitcoin-documentation).
@@ -16,8 +17,7 @@ You are also welcome if you want to assign yourself to any task.
 **Style Guide**: For better consistency, the [style
 guide](https://github.com/bitcoin-dot-org/bitcoin.org/wiki/Documentation-Style-Guide)
 can be used as a reference for terminology, style and formatting. Suggested
-changes
-can also be submitted to this guide to keep it up to date.
+changes can also be submitted to this guide to keep it up to date.
 
 **Cross-Reference Links**: Cross-reference links can be defined in
 _includes/references.md. Terms which should automatically link to these
