@@ -16,32 +16,6 @@ max_wallet_text_length: 418  ## Unicode characters
         <h1 class="wallet-title">
           {{ page.wallet.title }}
         </h1>
-        <div class="dropdown" id="dropdown">
-          <div id="dropdownContent" class="dropdown-content">
-            {% for platform in page.wallet.platform %} 
-            {% for os in platform.os %} 
-             {% if page.id contains os.name %} 
-              {% assign osName = os.name %} 
-             {% endif %}
-            {% if platform.name == os.name %}
-            <a class="dropdown-item" href="/{{ page.lang}}/wallets/{{platform.name}}/{{page.wallet.id}}/">
-              <img class="dropdown-item-img" src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}">
-              <span class="dropdown-item-text">{{os.name}}</span>
-            </a>
-            {% else %}
-            <a class="dropdown-item" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{page.wallet.id}}/">
-              <img class="dropdown-item-img" src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}">
-              <span class="dropdown-item-text">{{os.name}}</span>
-            </a>
-            {% endif %} 
-            {% endfor %} 
-            {% endfor %}
-          </div>
-          <button class="dropbtn">
-            <img class="dropdown-item-img dropbtn-img" src="/img/os/wallet_menu_{{osName}}.svg" alt="{{osName}}">
-            <span class="dropbtn-text">{{osName}}</span>
-          </button>
-        </div>
         <p class="wallet-description">
           {% translate wallet{{page.wallet.id}} choose-your-wallet %}
         </p>
