@@ -80,14 +80,13 @@ max_wallet_text_length: 418  ## Unicode characters
   </div>
 </div>
 
-<script>
-  function showDropdownItems() {
-    var btn = document.querySelector(".dropbtn");
-    btn.addEventListener("click", function () {
-      document.getElementById("dropdownContent").classList.toggle("show");
-      document.getElementById("dropdown").classList.toggle("is-expanded");
-    });
-  }
-  showDropdownItems();
+<div class="container">
+  <div class="walletsdisclaimer">
+    <h2 id="educate-yourself">{% translate educate choose-your-wallet %}</h2>
+    <p>
+      {% translate educatetxt choose-your-wallet %}
+    </p>
+  </div>
+</div>
 
-</script>
+{% include layout/base/wallets-filter.html %} 

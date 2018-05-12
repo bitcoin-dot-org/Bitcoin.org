@@ -67,6 +67,9 @@ $oses:
         > li.is-active > a {
             padding: 18px 10px 18px 42px;
         }
+        > .wallet-all.is-active > a {
+            padding: 18px 10px 18px;
+        }
         li {
             display: inline-block;
             background-repeat: no-repeat;
@@ -174,165 +177,6 @@ $oses:
     }
 }
 
-/* Wallet filter START */
-.filter {
-    background: #090C14;
-}
-.filter-row {
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 1040px;
-    width: 100%;
-    margin: 0 auto;
-}
-.filter-label {
-    text-align: left;
-    padding: 0 30px;
-}
-.filter-accordion {
-    position: relative;
-    width: 26.6%;
-}
-.filter-accordion-tab {
-    position: relative;
-    width: 100%;
-    height: 80px;
-    padding: 12px 35px 17px 50px;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-.is-expanded.filter-accordion-tab, {
-    background: #1d2028;
-}
-.filter-accordion-tab::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    width: 10px;
-    height: 6px;
-    background: url(../img/icons/ico_angle.svg) center no-repeat;
-    background-size: contain;
-}
-.is-expanded.filter-accordion-tab::after {
-    transform: rotate(180deg);
-}
-.filter-platform-tab::before,
-.filter-os-tab::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -21px;
-    width: 21px;
-    height: 80px;
-    background: url(../img/icons/dark-triangle.svg) center no-repeat;
-    background-size: contain;
-    z-index: 10;
-}
-.is-expanded.filter-platform-tab::before,
-.is-expanded.filter-os-tab::before {
-    background: url(../img/icons/light-triangle.svg) center no-repeat;
-    background-size: contain;
-}
-.filter .accordion-content {
-    background: #1d2028;
-}
-// .filter-accordion-label {
-//     font-size: 18px;
-//     color: #FF7E00;
-//     line-height: 30px;
-// }
-.filter-accordion-label {
-    font-size: 13px;
-    color: #8f9092;
-    letter-spacing: 0.43px;
-}
-.filter-platform-accordion {
-    border-left: 1px solid #37393d;
-}
-.filter-accordion-wallets {
-    border-right: 1px solid #37393d;
-}
-.filter-accordion-wallets.is-visible {
-    display: block;
-}
-.js-filter-wallet.is-hidden {
-    display: none;
-}
-.filter-accordion-os.is-visible {
-    display: block;
-}
-.filter-accordion-link {
-    width: 230px;
-    height: 100px;
-    padding: 50px 10px 20px;
-    text-align: center;
-    border: 1px solid #27292E;
-    color: #FFFFFF;
-    line-height: 30px;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-.filter-accordion-link:hover {
-    border: 1px solid #ff7e00;
-}
-.filter .accordion-content {
-    justify-content: flex-end;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translateY(100%);
-    z-index: 20;
-    width: 460px;
-}
-.filter .filter-os-content {
-    left: auto;
-    right: 0;
-}
-.is-expanded + .filter-wallets-content {
-    left: auto;
-    right: 0;
-    display: flex;
-    flex-wrap: wrap;
-    width: 690px;
-}
-.filter-wallet {
-    position: relative;
-    width: 230px;
-    height: 100px;
-    box-sizing: border-box;
-    border: 1px solid #27292e;
-}
-.filter-wallet-img {
-    position: absolute;
-    top: 25px;
-    left: 10px;
-    width: 50px;
-}
-.filter-wallet:hover {
-    border: 1px solid #ff7e00;
-}
-.filter-wallet-link {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 40px 10px 20px 70px;
-    font-size: 17px;
-    color: #FFFFFF;
-    line-height: 30px;
-    box-sizing: border-box;
-}
-.filter-wallet-link br{
-    display: none;
-}
-.selected-filter {
-    font-size: 18px;
-    color: #FF7E00;
-    line-height: 20px;
-    text-transform: uppercase;
-}
-/* Wallet filter END */
-
 .is-expanded + .accordion-content{
     display: flex;
     flex-wrap: wrap;
@@ -428,22 +272,9 @@ $oses:
     .walletmenu>ul li {
         margin: 0 25px;
     }
-    .filter-label {
-        padding: 0 10px;
-    }
-    .filter-accordion {
-        width: 28%;
-    }
-    .filter-accordion-tab {
-        padding: 12px 35px 17px 29px;
-    }
-    .is-expanded + .filter-wallets-content {
-        width: 460px;
-    }
 }
 @media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ) {
-    .walletmenu,
-    .filter {
+    .walletmenu {
         display: none;
     }
     .walletmenu-mobile {

@@ -10,15 +10,6 @@ end_of_page: |
   
 {{ content }}
 
-<div class="container">
-  <div class="walletsdisclaimer">
-    <h2 id="educate-yourself">{% translate educate choose-your-wallet %}</h2>
-    <p>
-      {% translate educatetxt choose-your-wallet %}
-    </p>
-  </div>
-</div>
-
 {% if page.id != "choose-your-wallet" %}
 <script>    
     var pageUrl = (window.location.pathname).split("/").filter(Boolean);
