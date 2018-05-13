@@ -12,7 +12,9 @@ http://opensource.org/licenses/MIT.
 <div class="walletmenu" id="walletmenu" style="margin-bottom: {{walletMargin}}">
 {% assign platformsByPlatform = site.platforms | group_by: "platform" %}
   <ul>
-    <li class="wallet-all js-acc-item"><a data-selector="all-wallets">All wallets</a></li>
+    <li class="wallet-all js-acc-item">
+      <a data-selector="all-wallets">All wallets</a>
+    </li>
     {% for platform in platformsByPlatform %}
 
       {% capture platformName %}{{ platform.name | split: "=>" | last | split: '"' }}{% endcapture %}
@@ -21,10 +23,10 @@ http://opensource.org/licenses/MIT.
       {% assign platformClass = "wallet-" | append: platformName %}
       {% assign ulClass = "" %}
       {% if page.id contains platformName and platformName != 'web' and platformName != 'hardware' %}
-        {% assign platformClass = platformClass | append: " active is-active" %}
-        {% assign ulClass = " active" %}
+      {% assign platformClass = platformClass | append: " active is-active" %}
+      {% assign ulClass = " active" %}
       {% elsif page.id contains platformName %}
-        {% assign platformClass = platformClass | append: " active" %}
+      {% assign platformClass = platformClass | append: " active" %}
       {% endif %}
       {% if platformName == 'hardware' or platformName == 'web' %}
       <li class="js-acc-item {{ platformClass }}">
@@ -54,7 +56,7 @@ http://opensource.org/licenses/MIT.
   </ul>
 </div>
 
-<div class="wallet-list wallet-filter-list" id="wallets">
+<div class="wallet-list wallet-filter-list">
     <!-- All wallets -->
     {% for wallet in site.wallets %}
       <div class="wallet-list-item allwallets-list-item" data-category="all-wallets" data-walletlevel="{{ wallet.level }}">
