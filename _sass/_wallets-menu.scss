@@ -111,7 +111,8 @@ $oses:
                 left: 50%;
                 width: 100%;
                 transform: translate(-50%, 100%);
-                 ul {
+                
+                ul {
                     display: flex;
                     justify-content: center;
                     padding: 0;
@@ -121,23 +122,23 @@ $oses:
                     box-sizing: border-box;
                     border-top: 1px solid #dfdfdf;
 
-                li {
-                    font-size: 80%;
-                    display: block;
-                    margin: 0;
-                    background-position: left 18px;
+                    li {
+                        font-size: 80%;
+                        display: block;
+                        margin: 0;
+                        background-position: left 18px;
 
-                    > a {
-                        font-size: 15px;
-                        background-image: url(/img/icons/wallet_select.svg);
-                        background-repeat: no-repeat;
-                        background-position: -32px center;
-                        padding: 18px 32px 18px 32px;
+                        > a {
+                            font-size: 15px;
+                            background-image: url(/img/icons/wallet_select.svg);
+                            background-repeat: no-repeat;
+                            background-position: -32px center;
+                            padding: 18px 32px 18px 32px;
+
+                        }
 
                     }
-
                 }
-            }
             }
 
             &:hover > a,

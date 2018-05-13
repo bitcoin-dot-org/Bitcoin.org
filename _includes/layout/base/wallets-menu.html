@@ -16,7 +16,9 @@ http://opensource.org/licenses/MIT.
      {% if page.id == "choose-your-wallet" %}
        {% assign statusClass = "active" %}
      {% endif %}
-    <li class="wallet-all {{statusClass}}"><a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">All wallets</a></li>
+    <li class="wallet-all {{statusClass}}">
+      <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">All wallets</a>
+    </li>
   {% for platform in platformsByPlatform %}
 
     {% comment %}
@@ -49,18 +51,18 @@ http://opensource.org/licenses/MIT.
       {% endif %}
       {% if platform.items.size > 1 %}
       <div class="walletmenu-subaccordion">
-      <ul class="walletmenu-os-list {{ulClass}}">
-        {% for item in platform.items %}
-          {% assign osClass = "wallet-" | append: item.os.name %}
-          {% if page.id contains item.id %}
-            {% assign osClass = osClass | append: " active" %}
-          {% endif %}
-          <li class="js-acc-subitem {{ osClass }}">
-            <a  href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
-              {% translate platform{{item.os.name}} choose-your-wallet %}
-            </a>
-          </li>
-        {% endfor %}
+        <ul class="walletmenu-os-list {{ulClass}}">
+          {% for item in platform.items %}
+            {% assign osClass = "wallet-" | append: item.os.name %}
+            {% if page.id contains item.id %}
+              {% assign osClass = osClass | append: " active" %}
+            {% endif %}
+            <li class="js-acc-subitem {{ osClass }}">
+              <a  href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
+                {% translate platform{{item.os.name}} choose-your-wallet %}
+              </a>
+            </li>
+          {% endfor %}
         </ul>
       </div>
       {% endif %}
