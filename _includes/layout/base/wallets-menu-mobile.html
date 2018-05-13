@@ -6,7 +6,10 @@ http://opensource.org/licenses/MIT.
 <div class="walletmenu-mobile" hidden>
   {% assign platformsByPlatform = site.platforms | group_by: "platform" %}
   <div class="accordion accordion-platform">
-    <div class="accordion-tab accordion-tab-1 js-tab">
+    {% if page.id == "choose-your-wallet" %}
+       {% assign platformClass = "is-expanded" %}
+     {% endif %}
+    <div class="accordion-tab accordion-tab-1 js-tab {{platformClass}}">
       <p class="accordion-label">Select wallet Type</p>
       <p class="selected-item selected-platform"></p>
     </div>
