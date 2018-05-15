@@ -692,14 +692,13 @@ function showNextMobileAccordion() {
       var selectedPlatform = e.target;
       
       var platformName = selectedPlatform.dataset.platformName;
-      console.log(platformName);
       document.querySelector(".selected-platform").textContent = selectedPlatform.textContent;
-      console.log(selectedPlatform.textContent);
 
-      // Display next accordion and hide non selected accordion
+      // Display next accordion and hide not selected accordion
       for (var a = 0; a < osAccordion.length; a++) {
         if (platformName === osAccordion[a].dataset.os) {
           osAccordion[a].classList.add("is-visible");
+          osAccordion[a].querySelector('.accordion-tab-2').classList.add('is-expanded');
           platformTab.classList.add("is-selected");
         } else {
           osAccordion[a].classList.remove("is-visible");
