@@ -34,7 +34,7 @@ http://opensource.org/licenses/MIT.
     </li>
     {% else %}
     <li class="js-acc-item {{ platformClass }}" data-accordion="accordion">
-      <a>{% translate walletcat{{platformName}} choose-your-wallet %}</a> 
+      <a data-platform-selector="{{platformName}}" data-selector="all-wallets">{% translate walletcat{{platformName}} choose-your-wallet %}</a> 
       {% if platform.items.size > 1 %}
       <div class="walletmenu-subaccordion">
         <ul class="walletmenu-os-list {{ulClass}}">
@@ -60,7 +60,11 @@ http://opensource.org/licenses/MIT.
 <div class="wallet-list wallet-filter-list">
     <!-- All wallets -->
     {% for wallet in site.wallets %}
-      <div class="wallet-list-item allwallets-list-item" data-category="all-wallets" data-walletlevel="{{ wallet.level }}">
+    {% assign platformList = "" %}
+    {% for platform in wallet.platform %}
+     {% capture platformList %}{{platformList}}{{platform.name}} {% endcapture %}
+    {% endfor %}
+    <div class="wallet-list-item allwallets-list-item" data-platforms="{{platformList}}" data-category="all-wallets" data-walletlevel="{{ wallet.level }}">
         <div class="wallet-list-item-link">
           <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
         </div>
@@ -68,9 +72,9 @@ http://opensource.org/licenses/MIT.
           {% for platform in wallet.platform %}
             {% for os in platform.os%}
               {% if platform.name == os.name %}
-              <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/"><img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}"></a>
+              <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}"><img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}"></a>
               {% else %}
-              <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/"><img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}"></a>
+              <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}"><img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}"></a>
               {% endif %}
             {% endfor %}
           {% endfor %}
@@ -140,7 +144,6 @@ http://opensource.org/licenses/MIT.
       var subItem = accSub[ii];
       subItem.addEventListener('click', function() {
         
-        console.log(this);
         this.classList.add('active');
         
         for (var a = 0; a < accSub.length; a++) {
@@ -179,7 +182,9 @@ http://opensource.org/licenses/MIT.
 
   function hideNotRelevantWallets() {
     var selectorsList = document.querySelectorAll("a[data-selector]");
-    var allWallets = document.querySelectorAll("div[data-category]");    
+    var platformSelectorList = document.querySelectorAll("a[data-platform-selector]");
+    var allWallets = document.querySelectorAll("div[data-category]");
+    var osLinks = document.querySelectorAll("a[data-link-platform]");
     
     for (var i = 0; i < selectorsList.length; i++) {
       var selector = selectorsList[i];
@@ -190,6 +195,10 @@ http://opensource.org/licenses/MIT.
         // Remove .is-hidden class from all wallets
         allWallets.forEach(function(wallet) {
           wallet.classList.remove('is-hidden');
+        })
+        // Remove .is-hidden class from all wallet links
+        osLinks.forEach(function(walletLink) {
+          walletLink.classList.remove('is-hidden');
         })
 
         // Hide not relevant wallets
@@ -202,6 +211,39 @@ http://opensource.org/licenses/MIT.
           } 
         }
 
+      })
+    }
+    
+    // Show only desktop or mobile wallets
+    for (var a = 0; a < platformSelectorList.length; a++) {
+      var platform = platformSelectorList[a];
+
+      platform.addEventListener('click', function(e) {
+
+        var selectedPlatform = e.target.dataset.platformSelector;
+        var regexp = new RegExp(selectedPlatform, 'i');
+                
+        for (var aa = 0; aa < allWallets.length; aa++) {
+          var walletItem = allWallets[aa];
+          var walletPlatform = walletItem.dataset.platforms;
+          
+          if (!(regexp.test(walletPlatform))) {
+            walletItem.classList.add('is-hidden');
+          } else {
+            var walletOsLinks = walletItem.querySelectorAll("a[data-link-platform]");
+            
+            for (var n = 0; n < walletOsLinks.length; n++) {
+              var link = walletOsLinks[n];
+              
+              if (link.dataset.linkPlatform !== selectedPlatform) {
+                link.classList.add("is-hidden")
+              } else {
+                console.log(link.dataset.linkPlatform);
+              }
+            }
+          }
+          
+        }
       })
     }
   }
