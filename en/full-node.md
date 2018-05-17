@@ -44,8 +44,8 @@ key](/laanwj.asc). That key's fingerprint is:
 
     71A3 B167 3540 5025 D447  E8F2 7481 0B01 2346 C9A6
 
-Even earlier releases were signed by [Gavin Andresen's
-key](/gavinandresen.asc). His primary key's fingerprint is:
+Even earlier releases were signed by Gavin Andresen's
+key. His primary key's fingerprint is:
 
     2664 6D99 CBAE C9B8 1982  EF60 29D9 EE6B 1FC7 30C1
 
