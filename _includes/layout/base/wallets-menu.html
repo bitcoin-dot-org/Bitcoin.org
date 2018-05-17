@@ -16,7 +16,7 @@ http://opensource.org/licenses/MIT.
        {% assign statusClass = "active" %}
      {% endif %}
     <li class="wallet-all {{statusClass}}">
-      <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">All wallets</a>
+      <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}/#walletmenu">All wallets</a>
     </li>
   {% for platform in platformsByPlatform %}
 
@@ -44,7 +44,7 @@ http://opensource.org/licenses/MIT.
     <li class="js-acc-item {{ platformClass }}" data-platform-selector="{{platformName}}">
       {% if platformName == 'hardware' or platformName == 'web' %}
       {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" %}
-        <a href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
+        <a href="{{ platformHref }}#walletmenu">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% else %}
         <a class="wallet-platform-link">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% endif %}
@@ -57,7 +57,7 @@ http://opensource.org/licenses/MIT.
               {% assign osClass = osClass | append: " active" %}
             {% endif %}
             <li class="js-acc-subitem {{ osClass }}">
-              <a  href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
+              <a  href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/#walletmenu">
                 {% translate platform{{item.os.name}} choose-your-wallet %}
               </a>
             </li>
@@ -70,17 +70,6 @@ http://opensource.org/licenses/MIT.
   </ul>
 </div>
 
-<script>
-  window.onload = function () {
-    var walletMenu = document.getElementById("walletmenu");
-    var walletMenuPosition = walletMenu.offsetTop;
-
-    window.scroll({
-      top: walletMenuPosition,
-      behavior: "smooth"
-    });
-  }
-</script>
 <script>
   var walletMenu = document.querySelector(".walletmenu");
   
