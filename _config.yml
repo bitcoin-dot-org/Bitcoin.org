@@ -588,7 +588,7 @@ collections:
 
 donation_banner:
   address: 3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa
-  display: true
+  display: false
   amounts_in_usd:
     - 5
     - 25

@@ -22,7 +22,11 @@ http://opensource.org/licenses/MIT.
     <div class="wallet-list" id="wallets">
       {% if page.id == "choose-your-wallet" %} 
         {% for wallet in site.wallets %}
-          <div class="wallet-list-item allwallets-list-item" data-walletlevel="{{ wallet.level }}">
+         {% assign platformList = "" %} 
+         {% for platform in wallet.platform %}
+         {% capture platformList %}{{platformList}}{{platform.name}}{% endcapture %} 
+         {% endfor %}
+          <div class="wallet-list-item allwallets-list-item" data-category="all-wallets" data-platforms="{{platformList}}" data-walletlevel="{{ wallet.level }}">
             <div class="wallet-list-item-link">
               <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
             </div>
@@ -30,9 +34,9 @@ http://opensource.org/licenses/MIT.
               {% for platform in wallet.platform %}
                 {% for os in platform.os%}
                   {% if platform.name == os.name %}
-                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/"><img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}"></a>
+                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}><img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}"></a>
                   {% else %}
-                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/"><img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}"></a>
+                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}><img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}"></a>
                   {% endif %}
                 {% endfor %}
               {% endfor %}
@@ -40,11 +44,37 @@ http://opensource.org/licenses/MIT.
           </div>
         {% endfor %}
       {% else %}
+
+        <!-- All wallets -->
+        {% for wallet in site.wallets %} 
+        {% assign platformList = "" %} 
+        {% for platform in wallet.platform %} 
+        {% capture platformList %}{{platformList}}{{platform.name}} {% endcapture %} 
+        {% endfor %}
+        <div class="wallet-list-item allwallets-list-item is-hidden" data-platforms="{{platformList}}" data-category="all-wallets" data-walletlevel="{{ wallet.level }}">
+          <div class="wallet-list-item-link">
+            <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
+          </div>
+          <div class="wallet-list-os">
+            {% for platform in wallet.platform %} {% for os in platform.os%} {% if platform.name == os.name %}
+            <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}">
+              <img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}">
+            </a>
+            {% else %}
+            <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}">
+              <img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}">
+            </a>
+            {% endif %} {% endfor %} {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+        
+        <!-- Particular Wallets -->
         {% for wallet in site.wallets %} 
         {% assign platform = page.platform['name'] %} 
         {% assign os = page.os['name'] %} 
         {% if wallet.compat contains platform and wallet.compat contains os %}
-        <div class="wallet-list-item" data-walletlevel="{{ wallet.level }}">
+        <div class="wallet-list-item" data-category="{{os}}" data-walletlevel="{{ wallet.level }}">
           {% if platform == os %}
           <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platform }}/{{ wallet.id }}/">
             {% else %}

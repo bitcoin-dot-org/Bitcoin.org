@@ -285,6 +285,7 @@ hr {
     padding: 13px 0;
     border:1px solid #dfdfdf;
     white-space:nowrap;
+    z-index: 100;
 }
 .lang:hover li ul{
     display:block;
@@ -2894,6 +2895,7 @@ br.big {
     content: '';
     position: absolute;
     top: 25px;
+    left: 0;
     width: 100px;
     height: 3px;
     background: #FF7E00;

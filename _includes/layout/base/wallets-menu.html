@@ -4,7 +4,6 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-
 {% if page.id contains 'desktop' or  page.id contains 'mobile'%}
    {% assign walletMargin = "55px" %}
 {% else %}
@@ -17,7 +16,7 @@ http://opensource.org/licenses/MIT.
        {% assign statusClass = "active" %}
      {% endif %}
     <li class="wallet-all {{statusClass}}">
-      <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">All wallets</a>
+      <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}/#walletmenu">All wallets</a>
     </li>
   {% for platform in platformsByPlatform %}
 
@@ -42,10 +41,10 @@ http://opensource.org/licenses/MIT.
     {% elsif page.id contains platformName %}
       {% assign platformClass = platformClass | append: " active" %}
     {% endif %}
-    <li class="js-acc-item {{ platformClass }}">
+    <li class="js-acc-item {{ platformClass }}" data-platform-selector="{{platformName}}">
       {% if platformName == 'hardware' or platformName == 'web' %}
       {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" %}
-        <a href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
+        <a href="{{ platformHref }}#walletmenu">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% else %}
         <a class="wallet-platform-link">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% endif %}
@@ -58,7 +57,7 @@ http://opensource.org/licenses/MIT.
               {% assign osClass = osClass | append: " active" %}
             {% endif %}
             <li class="js-acc-subitem {{ osClass }}">
-              <a  href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
+              <a  href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/#walletmenu">
                 {% translate platform{{item.os.name}} choose-your-wallet %}
               </a>
             </li>
@@ -74,6 +73,7 @@ http://opensource.org/licenses/MIT.
 <script>
   var walletMenu = document.querySelector(".walletmenu");
   
+  
   // Add margin-bottom for walletmenu depending on the height of the second accordion          
   function calculateHeight(element) {
     walletMenu.style.marginBottom = element.offsetHeight + 'px'; 
@@ -85,9 +85,10 @@ http://opensource.org/licenses/MIT.
     for (var i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function(event) {
         if (document.documentElement.clientWidth > 768) {
+          var platformList = document.querySelectorAll("li[data-platform-selector]");
           var activeItem = event.target.parentNode;
           var activeOsAccordion = activeItem.querySelector(".walletmenu-subaccordion");
-
+          
           activeItem.classList.toggle("is-active");
 
           if (activeOsAccordion.classList.contains("walletmenu-subaccordion")) {
@@ -98,6 +99,37 @@ http://opensource.org/licenses/MIT.
           for (var index = 0; index < acc.length; index++) {
             if (!(activeItem == acc[index])) {
               acc[index].classList.remove("is-active");
+            }
+          }
+          
+          if (activeItem.dataset.platformSelector === "desktop" || activeItem.dataset.platformSelector === "mobile") {
+            var allWallets = document.querySelectorAll("div[data-category]");
+            var selectedPlatform = activeItem.dataset.platformSelector;
+            var regexp = new RegExp(selectedPlatform, 'i');
+
+            for (var ii = 0; ii < allWallets.length; ii++) {
+              var walletItem = allWallets[ii];
+              var walletPlatform = walletItem.dataset.platforms;
+              
+              if (regexp.test(walletPlatform)) {
+                walletItem.classList.remove('is-hidden')
+
+                var walletOsLinks = walletItem.querySelectorAll("a[data-link-platform]");
+
+                for (var n = 0; n < walletOsLinks.length; n++) {
+                  var link = walletOsLinks[n];
+
+                  if (link.dataset.linkPlatform !== selectedPlatform) {
+                    link.classList.add("is-hidden")
+                  } else {
+                    link.classList.remove("is-hidden")
+                  }
+                }
+
+              } else {
+                walletItem.classList.add('is-hidden');
+              }
+              
             }
           }
           
