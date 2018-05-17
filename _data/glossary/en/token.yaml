@@ -1,0 +1,30 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+required:
+                                           #-------------40 characters-------------#
+    title_max_40_characters_no_formatting: Token
+
+    summary_max_255_characters_no_formatting: >
+        A Token is a programmable digital asset that have their own codebases but
+        exist on underlying blockchains. Can be thought of as public IOUs that
+        facilitates the creation of decentralized applications.
+
+    synonyms_shown_in_glossary_capitalize_first_letter:
+        - Token
+
+optional:
+    synonyms_and_pluralizations_not_shown_in_glossary:
+        - Initial coin offering
+
+    not_to_be_confused_with_capitalize_first_letter:
+        - Bitcoins
+        - Satoshis
+        - Security token
+        - Denominations
+    links_html_or_markdown_style_capitalize_first_letter:
+        - "[digital tokens that raise millions in minutes](https://qz.com/994466/the-new-cryptocurrency-gold-rush-digital-tokens-that-raise-millions-in-minutes/) --- Nouveau Riche (qz.com)"
+        - "[Thoughts on Tokens](https://news.earn.com/thoughts-on-tokens-436109aabcbe) --- Bitcoin StackExchange"
+
+---
