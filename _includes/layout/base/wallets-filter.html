@@ -145,6 +145,7 @@ http://opensource.org/licenses/MIT.
       subItem.addEventListener('click', function() {
         
         this.classList.add('active');
+        console.log(this);
         
         for (var a = 0; a < accSub.length; a++) {
           if (accSub[a] != this) {
@@ -185,6 +186,7 @@ http://opensource.org/licenses/MIT.
     var platformSelectorList = document.querySelectorAll("a[data-platform-selector]");
     var allWallets = document.querySelectorAll("div[data-category]");
     var osLinks = document.querySelectorAll("a[data-link-platform]");
+    var accSub = document.querySelectorAll(".js-acc-subitem");
     
     for (var i = 0; i < selectorsList.length; i++) {
       var selector = selectorsList[i];
@@ -199,6 +201,10 @@ http://opensource.org/licenses/MIT.
         // Remove .is-hidden class from all wallet links
         osLinks.forEach(function(walletLink) {
           walletLink.classList.remove('is-hidden');
+        })
+        // Remove .active class from all submenu links
+        accSub.forEach(function(subLink) {
+          subLink.classList.remove('active');
         })
 
         // Hide not relevant wallets
@@ -237,9 +243,7 @@ http://opensource.org/licenses/MIT.
               
               if (link.dataset.linkPlatform !== selectedPlatform) {
                 link.classList.add("is-hidden")
-              } else {
-                console.log(link.dataset.linkPlatform);
-              }
+              } 
             }
           }
           
