@@ -670,7 +670,7 @@ Windows key (`⊞ Win`) and type "cmd".  Choose the option labeled
 If you installed Bitcoin Core into the default directory, type the
 following at the command prompt:
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
 Bitcoin Core daemon should start and print a message that Bitcoin Core is starting.
 
@@ -705,7 +705,7 @@ Name the file `start_bitcoind.bat`. Then right-click on it and choose
 Open in Notepad (or whatever editor you prefer). Copy and paste the
 following line into the file.
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
 (If you installed Bitcoin Core in a non-default directory, use that
 directory path instead.)
@@ -826,7 +826,7 @@ Windows key (`⊞ Win`) and type "cmd".  Choose the option labeled
 If you installed Bitcoin Core into the default directory, type the
 following at the command prompt:
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
 Bitcoin Core daemon should start and print a message that Bitcoin Core is starting.
 
@@ -861,7 +861,7 @@ Name the file `start_bitcoind.bat`. Then right-click on it and choose
 Open in Notepad (or whatever editor you prefer). Copy and paste the
 following line into the file.
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
 (If you installed Bitcoin Core in a non-default directory, use that
 directory path instead.)
@@ -980,7 +980,7 @@ Windows key (`⊞ Win`) and type "cmd". Choose the program named "cmd.exe"
 
 If you installed the Bitcoin Core into the default directory, type the following at the command prompt :
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
 Bitcoin Core daemon should start.
 
@@ -1021,7 +1021,7 @@ You can also access this folder by executing the following command after reachin
 
 Right-click on the File Explorer window and choose New → Text file. Name the file `start_bitcoind.bat`. Then right-click on it and choose Open in Notepad (or whatever editor you prefer). Copy and paste the following line into the file.
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
 (If you installed Bitcoin Core in a non-default directory, use that directory path instead.)
 
