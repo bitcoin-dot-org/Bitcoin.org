@@ -180,9 +180,6 @@ hr {
 .is-capital {
     text-transform: capitalize;
 }
-.is-uppercase {
-    text-transform: uppercase;
-}
 .separator {
     height: 1px;
     background: #dfdfdf;
@@ -309,7 +306,6 @@ hr {
 .lang li a:visited,
 .lang li a:active{
     font-size: 93.75%;
-    text-transform: uppercase;
     color:#000;
 }
 .lang li ul li a,
@@ -394,7 +390,6 @@ hr {
     font-family:'Titillium Web', sans-serif;
     font-weight:400;
     font-size: 93.75%;
-    text-transform: uppercase;
     text-decoration:none;
     white-space:nowrap;
     cursor:pointer;
@@ -539,7 +534,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
             box-sizing: border-box;
     color: #FFFFFF;
     text-align: center;
-    text-transform: uppercase;
     border-radius: 1px;
 }
 .donate-text {
@@ -938,7 +932,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-weight:600;
     font-size:100%;
     color:#fff;
-    text-transform: uppercase;
     border-radius:1px;
 }
 .btn-home {
@@ -992,7 +985,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-size:100%;
     text-align: center;
     color:#fff;
-    text-transform: uppercase;
     border-radius:1px;
 }
 .mainoverview {
@@ -1064,7 +1056,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     padding: 22px 33px;
     color: #9D9D9D;
     font-size: 18px;
-    text-transform: uppercase;
 }
 .startbar-link:hover {
     padding: 22px 33px 19px;
@@ -1176,7 +1167,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     padding: 15px 30px;
     font-size:100%;
     font-weight: 600;
-    text-transform: uppercase;
     color:#fff;
     border-radius:1px;
 }
@@ -2022,7 +2012,6 @@ br.big {
     color: #FFFFFF;
     text-align: center;
     line-height: 52px;
-    text-transform: uppercase;
 }
 .callout-img {
     width: 15px;
@@ -2122,7 +2111,6 @@ br.big {
     font-size: 81.25%;
     color: #9D9D9D;
     letter-spacing: 0.43px;
-    text-transform: uppercase;
     text-align: left;
 }
 .features-card::before {
@@ -3082,7 +3070,6 @@ br.big {
     font-weight: 600;
     color: #FFFFFF;
     text-align: center;
-    text-transform: uppercase;
     border: none;
     z-index: 10;
 }
@@ -3346,7 +3333,6 @@ br.big {
     font-weight:600;
     font-size:100%;
     color:#fff;
-    text-transform: uppercase;
     border-radius:1px;
 }
 .release-content h1 {
