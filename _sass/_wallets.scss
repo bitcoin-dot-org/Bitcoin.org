@@ -442,10 +442,8 @@ $scores:
 .wallet-list div[data-category].is-hidden {
     display: none;
 }
-@media handheld, only screen and ( min-width: 48em ) {
-    .wallet-wrapper .wallet-list {
-        display: none;
-    }
+.wallet-wrapper .wallet-list {
+    display: none;
 }
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ) {
     .wallet-list {
@@ -474,6 +472,9 @@ $scores:
 @media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ) {
     .walletmenu>ul li:hover .wallet-platform-link::after {
         display: none;
+    }
+    .wallet-wrapper .wallet-list {
+        display: flex;
     }
     .wallet-list {
         padding: 20px 0 30px;

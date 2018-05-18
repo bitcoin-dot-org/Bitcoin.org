@@ -13,9 +13,9 @@ http://opensource.org/licenses/MIT.
 {% assign platformsByPlatform = site.platforms | group_by: "platform" %}
   <ul>
      {% if page.id == "choose-your-wallet" %}
-       {% assign statusClass = "active" %}
+       {% assign statusClass = "active is-active" %}
      {% endif %}
-    <li class="wallet-all {{statusClass}}">
+    <li class="wallet-all {{statusClass}}" data-platform-selector="all-wallets">
       <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}/#walletmenu">All wallets</a>
     </li>
   {% for platform in platformsByPlatform %}
@@ -39,7 +39,7 @@ http://opensource.org/licenses/MIT.
       {% assign platformClass = platformClass | append: " active is-active" %}
       {% assign ulClass = " active" %}
     {% elsif page.id contains platformName %}
-      {% assign platformClass = platformClass | append: " active" %}
+      {% assign platformClass = platformClass | append: " is-active active" %}
     {% endif %}
     <li class="js-acc-item {{ platformClass }}" data-platform-selector="{{platformName}}">
       {% if platformName == 'hardware' or platformName == 'web' %}
@@ -81,6 +81,7 @@ http://opensource.org/licenses/MIT.
   
   function accordionDesktop() {
     var acc = document.getElementsByClassName("js-acc-item");
+    var allTabs = document.querySelectorAll("li[data-platform-selector]");
 
     for (var i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function(event) {
@@ -89,7 +90,16 @@ http://opensource.org/licenses/MIT.
           var activeItem = event.target.parentNode;
           var activeOsAccordion = activeItem.querySelector(".walletmenu-subaccordion");
           
-          activeItem.classList.toggle("is-active");
+          for (var ii = 0; ii < allTabs.length; ii++) {
+            var tab = allTabs[ii];
+            if (tab === activeItem) {
+              tab.classList.add("is-active");
+              tab.classList.add("active");
+            } else {
+              tab.classList.remove("is-active");
+              tab.classList.remove("active");
+            }
+          }
 
           if (activeOsAccordion.classList.contains("walletmenu-subaccordion")) {
             calculateHeight(activeOsAccordion);
