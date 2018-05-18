@@ -12,7 +12,7 @@ platform:
     name: hardware
     os:
       - name: hardware
-        text: "walletnanos"
+        text: "walletledgernanos"
         link: "https://www.ledgerwallet.com/"
         source: "https://github.com/LedgerHQ/"
         screenshot: "ledgernanos.png"
