@@ -64,7 +64,7 @@ en:
     multisig: "Multi-signature"
     multisigtext: "Bitcoin also includes a multi-signature feature which allows bitcoins to be spent only if a subset of a group of people authorize the transaction. This can be used by a board of directors, for example, to prevent members from making expenditures without enough consent from other members, as well as to track which members permitted particular transactions."
     transparency: "Accounting transparency"
-    transparencytext: "Many organizations are required to produce accounting documents about their activity. Using Bitcoin allows you to offer the highest level of transparency since you can provide information your members can use to verify your balances and transactions. Non-profit organizations can also allow the public to see how much they receive in donations."
+    transparencytext: "Many organizations are required to produce accounting documents about their activity. Using Bitcoin allows you to offer the highest level of transparency since you can provide information to verify balances and transactions through the block chain. For example, non-profit organizations can allow the public to see how much they receive in donations."
   bitcoin-for-developers:
     title: "Bitcoin for Developers - Bitcoin"
     pagetitle: "Bitcoin for Developers"
