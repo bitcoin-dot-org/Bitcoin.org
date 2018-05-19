@@ -82,7 +82,7 @@ en:
       transactions however you would like.
 
     invoice: "Bitcoin addresses to track invoices"
-    invoicetext: "Bitcoin creates a unique address for each transaction. So if you were to build a payment system associated with an invoice, you simply need to generate and monitor a Bitcoin address for each payment. You should never use the same address for more than one transaction."
+    invoicetext: "Bitcoin creates a unique address for each transaction. If you were to build a payment system associated with an invoice, all you would need to do is generate and monitor a Bitcoin address for each payment (you should never use the same address for more than one transaction)."
     security: "Most of the security is on client side"
     securitytext: >
       Most security is handled by the protocol, eliminating the need for
