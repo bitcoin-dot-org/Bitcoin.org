@@ -83,7 +83,7 @@ en:
 
     invoice: "Bitcoin addresses to track invoices"
     invoicetext: "Bitcoin creates a unique address for each transaction. If you were to build a payment system associated with an invoice, all you would need to do is generate and monitor a Bitcoin address for each payment (you should never use the same address for more than one transaction)."
-    security: "Most of the security is on client side"
+    security: "Most of the security is on the client side"
     securitytext: >
       Most security is handled by the protocol, eliminating the need for
       PCI compliance. Fraud prevention can be simplified down to
