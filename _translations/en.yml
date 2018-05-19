@@ -73,10 +73,10 @@ en:
     simpletext: "Unless a payment needs to be associated with automatic invoices, accepting money is as simple as sending some bitcoin - just display an address or QR code. This simple setup is within reach of almost all users and can fulfill the needs of many clients. From an accounting perspective, it's especially suitable for reducing overhead and adding transparency."
     api: "Many third party APIs"
     apitext: "There are many third party payment processing services that provide APIs; you don't need to store bitcoins on your server and handle the security that this implies. Additionally, most of these APIs allow you to process invoices and exchange your bitcoins into your local currency at competitive costs."
-    own: "You can be your own financial system"
+    own: "You can be your own bank"
     owntext: >
       If you don't use any third party APIs, you can integrate a Bitcoin
-      node directly into your applications, allowing you to become your
+      node directly into your applications allowing you to become your
       own bank and payment processor. With all the responsibilities that
       this implies, you can build amazing systems that process Bitcoin
       transactions however you would like.
