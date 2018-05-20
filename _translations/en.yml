@@ -655,7 +655,7 @@ en:
   how-it-works:
     title: "How does Bitcoin work? - Bitcoin"
     pagetitle: "How does Bitcoin work?"
-    intro: "This is a question that often causes confusion. Here's a quick explanation!"
+    intro: "This is a question often surrounded by confusion, so here's a quick explanation!"
     basics: "The basics for a new user"
     basicstxt1: "As a new user, you can <a href=\"#getting-started#\">get started</a> with Bitcoin without understanding the technical details. Once you have installed a Bitcoin wallet on your computer or mobile phone, it will generate your first Bitcoin address and you can create more whenever you need one. You can disclose your addresses to your friends so that they can pay you or vice versa. In fact, this is pretty similar to how email works, except that Bitcoin addresses should only be used once."
     balances: "Balances<span class=\"titlelight\"> - block chain</span>"
