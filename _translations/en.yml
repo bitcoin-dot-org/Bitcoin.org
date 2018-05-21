@@ -790,7 +790,7 @@ en:
     futuretxt: "Many improvements can be expected in the future to improve privacy. For instance, some efforts are ongoing with the payment messages API to avoid tainting multiple addresses together during a payment. Bitcoin Core change addresses might be implemented in other wallets over time. Graphical user interfaces might be improved to provide user friendly payment request features and discourage addresses reuse. Various work and research is also being done to develop other potential extended privacy features like being able to join random users' transactions together."
   resources:
     title: "Resources - Bitcoin"
-    pagetitle: "Bitcoin resources"
+    pagetitle: "Bitcoin Resources"
     pagedesc: "Find useful websites and resources about Bitcoin."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin Wiki</a>"
     linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
