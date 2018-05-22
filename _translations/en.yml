@@ -867,7 +867,7 @@ en:
     mining: "Mining"
     miningtxt: "You can start <a href=\"http://www.bitcoinmining.com/\">mining bitcoins</a> to help processing transactions. In order to protect the network, you should join smaller mining pools and prefer decentralized pools like <a href=\"http://p2pool.in/\">P2Pool</a> or <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> with getblocktemplate (GBT) support."
     develop: "Development"
-    developtxt: "Bitcoin is free software. So if you are a developer, you can use your super-powers to do good and <a href=\"#development#\">improve Bitcoin</a>. Or you can build amazing new services or software that can use Bitcoin."
+    developtxt: "Bitcoin is free software. If you are a developer, you can use your superpowers to do good and <a href=\"#development#\">improve Bitcoin</a>. Or you can build amazing new services or software that use Bitcoin."
     donation: "Donation"
     donationtxt: "The easiest way to help is to <a href=\"http://bitgivefoundation.org/donate-now/\">donate</a> a few bitcoins to BitGive. Or you can help directly fund any project related to Bitcoin that you believe will be helpful in the future."
     nonprofit: "Organizations"
