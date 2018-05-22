@@ -114,13 +114,13 @@ breadcrumbs:
 {% endcapture %}
 {% assign array_releases = text_releases | strip_newlines | split: '::' %}
 
-* [New Bitcoin Core website](https://bitcoincore.org)
   {% comment %}<!-- show the latest three releases -->{% endcomment %}
   {% for release in array_releases %}
   {% if forloop.index <= 2 %}
 * {{ release }}
   {% endif %}
   {% endfor %}
+* [New Bitcoin Core website](https://bitcoincore.org)
   </div>
 </div>
 
