@@ -741,6 +741,7 @@ variable.
  
 > UTXO_TXID=682cad881df69cb9df8f0c996ce96ecad758357ded2da03bad40[...]
 > UTXO_VOUT=1
+> UTXO_VALUE=10.00000000
 > UTXO_OUTPUT_SCRIPT=76a914fa5139067622fd7e1e722a05c17c2bb7d5fd6[...]
 {% endhighlight %}
 </div>
@@ -826,7 +827,8 @@ so it can't automatically insert the previous pubkey script.
       {
         "txid": "'$UTXO_TXID'", 
         "vout": '$UTXO_VOUT', 
-        "scriptPubKey": "'$UTXO_OUTPUT_SCRIPT'"
+        "scriptPubKey": "'$UTXO_OUTPUT_SCRIPT'",
+        "value": '$UTXO_VALUE'
       }
     ]'''
 {% endhighlight %}
