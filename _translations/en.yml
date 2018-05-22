@@ -689,7 +689,7 @@ en:
     donationtext: "Bitcoin has been a particularly efficient solution for tips and donations. Sending a payment only requires one click and receiving donations can be as simple as displaying a QR code. Donations can be visible for the public, giving increased transparency for non-profit organizations. In cases of emergencies such as natural disasters, Bitcoin donations could contribute to a faster international response."
     crowdfunding: "Crowdfunding"
     crowdfundingtext: "Bitcoin can be used to run Kickstarter-like crowdfunding campaigns, in which individuals pledge money to a project that is taken from them only if enough pledges are received to meet the target. Such assurance contracts are processed by the Bitcoin protocol, which prevents a transaction from taking place until all conditions have been met. <a href=\"https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts\">Learn more</a> about the technology behind crowdfunding and try <a href=\"https://www.vinumeris.com/lighthouse\">Lighthouse</a>."
-    micro: "Micro payments"
+    micro: "Micropayments"
     microtext: >
       Imagine listening to Internet radio paid by the second, viewing
       web pages with a small tip for each ad not shown, or buying
