@@ -6,7 +6,7 @@ layout: base-core
 lang: en
 columns: 1
 id: bitcoin-core-requirements
-title: Requirements And Warnings - Bitcoin Core
+title: Requirements and Warnings - Bitcoin Core
 breadcrumbs:
   - bitcoin
   - bcc
@@ -17,7 +17,7 @@ breadcrumbs:
 <div class="hero">
 <div class="container hero-container" markdown="block">
 
-# Bitcoin Core Requirements And Warnings
+# Bitcoin Core Requirements and Warnings
 {% include helpers/hero-social.html %}
 </div>
 </div>
