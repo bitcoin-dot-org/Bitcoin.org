@@ -72,9 +72,9 @@ breadcrumbs:
 
 * <span>[Better security][bcc validation] for their bitcoins</span>
 * <span>[Privacy features][bcc privacy] not available in other wallets</span>
-* <span>Choice of [user interfaces][bcc user interface]</span>
+* <span>[User interfaces][bcc user interface] and other powerful features</span>
 
-and several other powerful features
+&nbsp;
 
   </div>
   </div>
