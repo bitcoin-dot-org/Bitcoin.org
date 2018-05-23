@@ -672,12 +672,10 @@ following at the command prompt:
 
     C:\Program Files\Bitcoin\daemon\bitcoind
 
-Bitcoin Core daemon should start and print a message that Bitcoin Core is starting.
-
-To interact with Bitcoin Core daemon, you will use the command
-`bitcoin-cli` (Bitcoin command line interface).  If you installed Bitcoin
-Core into the default location, type the following at the command
-prompt to see whether it works:
+Bitcoin Core daemon should start. To interact with Bitcoin Core daemon, you will
+use the command `bitcoin-cli` (Bitcoin command line interface).  If you
+installed Bitcoin Core into the default location, type the following at the
+command prompt to see whether it works:
 
     C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
 
@@ -828,12 +826,10 @@ following at the command prompt:
 
     C:\Program Files\Bitcoin\daemon\bitcoind
 
-Bitcoin Core daemon should start and print a message that Bitcoin Core is starting.
-
-To interact with Bitcoin Core daemon, you will use the command
-`bitcoin-cli` (Bitcoin command line interface).  If you installed Bitcoin
-Core into the default location, type the following at the command
-prompt to see whether it works:
+Bitcoin Core daemon should start. To interact with Bitcoin Core daemon, you will
+use the command `bitcoin-cli` (Bitcoin command line interface).  If you
+installed Bitcoin Core into the default location, type the following at the
+command prompt to see whether it works:
 
     C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
 
@@ -982,11 +978,11 @@ If you installed the Bitcoin Core into the default directory, type the following
 
     C:\Program Files\Bitcoin\daemon\bitcoind
 
-Bitcoin Core daemon should start.
+Bitcoin Core daemon should start. You can now try using Bitcoin Cli Utility.
 
-You can now try using Bitcoin Cli Utility.
-
-To interact with Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin command line interface). If you installed Bitcoin Core into the default location, type the following at the command prompt to see whether it works:
+To interact with Bitcoin Core daemon, you will use the command `bitcoin-cli`
+(Bitcoin command line interface). If you installed Bitcoin Core into the default
+location, type the following at the command prompt to see whether it works:
 
     C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
 
