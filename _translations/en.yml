@@ -370,6 +370,7 @@ en:
   development:
     title: "Development - Bitcoin"
     pagetitle: "Bitcoin development"
+    pagedesc: "Bitcoin is a global project and open source software."
     summary: "Find more information about current specification, software and developers."
     spec: "Documentation"
     spectxt: "If you are interested in learning more about the technical details of Bitcoin and how to use existing tools and APIs, it is recommended you start by exploring the <a href=\"/en/developer-documentation\">developer documentation</a>."
