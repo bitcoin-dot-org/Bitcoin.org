@@ -149,33 +149,27 @@ var hreflin64 = document.getElementById('lin64').href;
 var hreflin32 = document.getElementById('lin32').href;
 switch (os) {
 case 'windows64':
-	but.getElementsByTagName('IMG')[0].src = '/img/os/but_windows.svg';
 	but.href = hrefwin64exe;
 	linkwinexe.href = hrefwin64exe;
 	linkwinzip.href = hrefwin64zip;
 break;
 case 'windows32':
-	but.getElementsByTagName('IMG')[0].src = '/img/os/but_windows.svg';
 	but.href = hrefwin32exe;
 	linkwinexe.href = hrefwin32exe;
 	linkwinzip.href = hrefwin32zip;
 break;
 case 'linux64':
-	but.getElementsByTagName('IMG')[0].src = '/img/os/but_linux.png';
 	but.href = hreflin64;
 	linklin.href = hreflin64;
 break;
 case 'linux32':
-	but.getElementsByTagName('IMG')[0].src = '/img/os/but_linux.png';
 	but.href = hreflin32;
 	linklin.href = hreflin32;
 break;
 case 'ubuntu':
-	but.getElementsByTagName('IMG')[0].src = '/img/os/but_ubuntu.svg';
 	but.href = 'https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin';
 break;
 case 'mac':
-	but.getElementsByTagName('IMG')[0].src = '/img/os/but_mac.svg';
 	but.href = hrefmacdmg;
 break;
 }
