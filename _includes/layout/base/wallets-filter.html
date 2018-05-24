@@ -74,12 +74,12 @@ http://opensource.org/licenses/MIT.
             {% for os in platform.os%}
               {% if platform.name == os.name %}
               <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}">
-                {% include svg/wallet_menu_{{os.name}}.html %}
+
                 <p class="wallet-ico-tooltip">{{os.name}}</p>
               </a>
               {% else %}
               <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}">
-                {% include svg/wallet_menu_{{os.name}}.html %}
+
                 <p class="wallet-ico-tooltip">{{os.name}}</p>
               </a>
               {% endif %}
