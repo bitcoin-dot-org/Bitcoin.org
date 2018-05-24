@@ -60,9 +60,9 @@ listed on Transifex or ask (in English) in the [#bitcoin-dev][] IRC
 chatroom.*
 
 <br class="clear big">
-<div class="prevnext">
-<span markdown="1">**Previous**<br>[Documentation][bcc contribute documentation]</span>
-<span markdown="1">**Next**<br>[Tech support][bcc contribute support]</span>
+<div class="prevnext" markdown="block">
+[PREV][bcc contribute documentation]
+[NEXT][bcc contribute support]
 </div>
 <br class="clear">
 

@@ -59,9 +59,9 @@ volunteers like you, Bitcoin would never have come as far as it has.
 
 
 <br class="clear big">
-<div class="prevnext">
-<span markdown="1">**Previous Feature**<br>[User interface][bcc user interface]</span>
-<span markdown="1">**Next feature**<br>[Feature overview][bcc features]</span>
+<div class="prevnext" markdown="block">
+[PREV][bcc user interface]
+[NEXT][bcc features]
 </div>
 <br class="clear">
 

@@ -1854,7 +1854,7 @@ br.big {
     line-height: 36px;
 }
 .system-requirements-list p {
-    font-family: TitilliumWeb-Regular;
+    font-family:"Titillium Web", Arial, sans-serif;
     font-size: 20px;
     color: #4D5060;
     line-height: 34px;
@@ -1962,13 +1962,15 @@ br.big {
         margin-right: 50px;
         clear: both;
 }
-.prevnext span {
+.prevnext a {
     position: relative;
     padding-top: 13px;
     padding-bottom: 15px;
     border: 1px solid #dadada;
+    border-radius: 2px;
+    color: #9D9D9D;
 }
-.prevnext span::before {
+.prevnext a::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -1978,26 +1980,23 @@ br.big {
     background: url(../img/icons/ico_angle_grey.svg) center no-repeat;
     background-size: contain;
 }
-.prevnext span strong {
-    font-weight: 400;
-}
-.prevnext span:first-child {
+.prevnext a:first-child {
     float: left;
     padding-left: 50px;
-    padding-right: 21px;
+    padding-right: 15px;
 }
-.prevnext span:first-child::before {
+.prevnext a:first-child::before {
     left: 21px;
     transform: translateY(-50%) rotate(90deg);
 }
-.prevnext span:last-child::before {
+.prevnext a:last-child::before {
     right: 21px;
     transform: translateY(-50%) rotate(-90deg);
 }
-.prevnext span:last-child {
+.prevnext a:last-child {
     float: right;
     padding-right: 50px;
-    padding-left: 21px;
+    padding-left: 15px;
 }
 
 .callout {
@@ -4918,9 +4917,9 @@ br.big {
         padding-right: 10px;
         padding-left: 10px;
     }
-    .prevnext span::before {
-        display:none;
-    }
+    // .prevnext span::before {
+    //     display:none;
+    // }
     .right-hanger {
         text-align: center;
     }

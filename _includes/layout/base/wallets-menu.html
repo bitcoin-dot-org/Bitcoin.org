@@ -15,7 +15,7 @@ http://opensource.org/licenses/MIT.
      {% if page.id == "choose-your-wallet" %}
        {% assign statusClass = "active is-active" %}
      {% endif %}
-    <li class="wallet-all {{statusClass}}" data-platform-selector="all-wallets">
+    <li class="js-acc-item wallet-all {{statusClass}}" data-platform-selector="all-wallets">
       <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}/#walletmenu">All wallets</a>
     </li>
   {% for platform in platformsByPlatform %}
@@ -56,7 +56,7 @@ http://opensource.org/licenses/MIT.
             {% if page.id contains item.id %}
               {% assign osClass = osClass | append: " active" %}
             {% endif %}
-            <li class="js-acc-subitem {{ osClass }}">
+            <li class="js-acc-subitem {{ osClass }}" data-platform-selector="{{item.os.name}}">
               <a  href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/#walletmenu">
                 {% translate platform{{item.os.name}} choose-your-wallet %}
               </a>
@@ -72,51 +72,58 @@ http://opensource.org/licenses/MIT.
 
 <script>
   var walletMenu = document.querySelector(".walletmenu");
-  
-  
-  // Add margin-bottom for walletmenu depending on the height of the second accordion          
-  function calculateHeight(element) {
-    walletMenu.style.marginBottom = element.offsetHeight + 'px'; 
-  }  
-  
+  var allTabs = document.querySelectorAll("li[data-platform-selector]");
+
+  function highlightActive(elem) {
+    
+    for (var ii = 0; ii < allTabs.length; ii++) {
+      var tab = allTabs[ii];
+      if (tab === elem) {
+        tab.classList.add("is-active");
+        tab.classList.add("active");
+      } else {
+        tab.classList.remove("is-active");
+        tab.classList.remove("active");
+      }
+    }
+  }
+
   function accordionDesktop() {
     var acc = document.getElementsByClassName("js-acc-item");
-    var allTabs = document.querySelectorAll("li[data-platform-selector]");
 
     for (var i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function(event) {
         if (document.documentElement.clientWidth > 768) {
           var platformList = document.querySelectorAll("li[data-platform-selector]");
           var activeItem = event.target.parentNode;
-          var activeOsAccordion = activeItem.querySelector(".walletmenu-subaccordion");
+          var activeOsAccordion = this.querySelector(".walletmenu-subaccordion");
           
-          for (var ii = 0; ii < allTabs.length; ii++) {
-            var tab = allTabs[ii];
-            if (tab === activeItem) {
-              tab.classList.add("is-active");
-              tab.classList.add("active");
-            } else {
-              tab.classList.remove("is-active");
-              tab.classList.remove("active");
-            }
-          }
+          highlightActive(this);
 
-          if (activeOsAccordion.classList.contains("walletmenu-subaccordion")) {
-            calculateHeight(activeOsAccordion);
+          // Add margnin for walletmenu depending on height of submenu
+          if (this.dataset.platformSelector === "mobile" || this.dataset.platformSelector === "desktop") {
+            walletMenu.style.marginBottom = activeOsAccordion.offsetHeight + 'px'; 
+          } else {
+            walletMenu.style.marginBottom ='0px'; 
           }
-
+          
           // Hide not selected list items
           for (var index = 0; index < acc.length; index++) {
-            if (!(activeItem == acc[index])) {
+            if (!(this == acc[index])) {
               acc[index].classList.remove("is-active");
             }
           }
           
-          if (activeItem.dataset.platformSelector === "desktop" || activeItem.dataset.platformSelector === "mobile") {
-            var allWallets = document.querySelectorAll("div[data-category]");
-            var selectedPlatform = activeItem.dataset.platformSelector;
-            var regexp = new RegExp(selectedPlatform, 'i');
+          var allWallets = document.querySelectorAll("div[data-category]");
+          var selectedPlatform = activeItem.dataset.platformSelector;
 
+          if (selectedPlatform === "all-wallets") {
+            allWallets.forEach(function (wallet) {
+              wallet.classList.remove('is-hidden')
+            });
+          } else if(selectedPlatform === "desktop" || selectedPlatform === "mobile") {
+            var regexp = new RegExp(selectedPlatform, 'i');
+            
             for (var ii = 0; ii < allWallets.length; ii++) {
               var walletItem = allWallets[ii];
               var walletPlatform = walletItem.dataset.platforms;
@@ -140,6 +147,19 @@ http://opensource.org/licenses/MIT.
                 walletItem.classList.add('is-hidden');
               }
               
+            }
+          } else {
+            // Hide not relevant wallets
+            document.querySelectorAll('div[data-platforms]').forEach(function (wallet) {
+              wallet.classList.add('is-hidden');
+            });
+
+            // Show not relevant wallets
+            for (var nn = 0; nn < allWallets.length; nn++) {
+              var wallet = allWallets[nn];
+              if (wallet.dataset.category === selectedPlatform) {
+                wallet.classList.remove('is-hidden');
+              }
             }
           }
           

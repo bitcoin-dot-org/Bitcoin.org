@@ -30,13 +30,24 @@ http://opensource.org/licenses/MIT.
             <div class="wallet-list-item-link">
               <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
             </div>
+            <p class="wallet-hint">Select an Operating System</p>
             <div class="wallet-list-os">
               {% for platform in wallet.platform %}
                 {% for os in platform.os%}
                   {% if platform.name == os.name %}
-                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}><img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}"></a>
+                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}>
+                    <span class="wallet-os-ico {{os.name}}-ico"></span>
+                    <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
+                    <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
+                    <p class="wallet-ico-tooltip">{{os.name}}</p>
+                  </a>
                   {% else %}
-                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}><img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}"></a>
+                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}>
+                    <span class="wallet-os-ico {{os.name}}-ico"></span>
+                    <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
+                    <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
+                    <p class="wallet-ico-tooltip">{{os.name}}</p>
+                  </a>
                   {% endif %}
                 {% endfor %}
               {% endfor %}
@@ -55,14 +66,21 @@ http://opensource.org/licenses/MIT.
           <div class="wallet-list-item-link">
             <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
           </div>
+          <p class="wallet-hint">Select an Operating System</p>
           <div class="wallet-list-os">
             {% for platform in wallet.platform %} {% for os in platform.os%} {% if platform.name == os.name %}
             <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}">
-              <img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}">
+              <span class="wallet-os-ico {{os.name}}-ico"></span>
+              <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
+              <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
+              <p class="wallet-ico-tooltip">{{os.name}}</p>
             </a>
             {% else %}
             <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}">
-              <img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}}">
+              <span class="wallet-os-ico {{os.name}}-ico"></span>
+              <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
+              <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
+              <p class="wallet-ico-tooltip">{{os.name}}</p>
             </a>
             {% endif %} {% endfor %} {% endfor %}
           </div>

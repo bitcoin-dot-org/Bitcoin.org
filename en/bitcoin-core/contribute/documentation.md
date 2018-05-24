@@ -120,9 +120,9 @@ To create new RPC/REST documentation or edit the REST documentation:
 Bitcoin.org documentation maintainer {{site.text.bitcoin_org_docs_maintainer_email_link}}.*
 
 <br class="clear big">
-<div class="prevnext">
-<span markdown="1">**Previous**<br>[Code][bcc contribute code]</span>
-<span markdown="1">**Next**<br>[Translations][bcc contribute translations]</span>
+<div class="prevnext" markdown="block">
+[PREV][bcc contribute code]
+[NEXT][bcc contribute translations]
 </div>
 <br class="clear">
 

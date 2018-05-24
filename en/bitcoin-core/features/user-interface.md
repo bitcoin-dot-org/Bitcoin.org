@@ -391,9 +391,9 @@ Bitcoin Core full node.
 
 </div>
 
-<div class="prevnext">
-<span markdown="1">**Previous Feature**<br>[Requirements][bcc requirements]</span>
-<span markdown="1">**Next feature**<br>[Network Support][bcc network support]</span>
+<div class="prevnext" markdown="block">
+[PREV][bcc requirements]
+[NEXT][bcc network support]
 </div>
 <br class="clear">
 

@@ -226,9 +226,9 @@ help].
   </div>
 </div>
 
-<div class="prevnext">
-<span markdown="1">**Previous Feature**<br>[Privacy][bcc privacy]</span>
-<span markdown="1">**Next feature**<br>[User interface][bcc user interface]</span>
+<div class="prevnext" markdown="block">
+[PREV][bcc privacy]
+[NEXT][bcc user interface]
 </div>
 
 {% include references.md %}

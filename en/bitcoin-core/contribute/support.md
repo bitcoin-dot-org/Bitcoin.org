@@ -77,9 +77,9 @@ serious IRC users use a [native IRC client][].
   listing][irc channels] on the Bitcoin Wiki.
 
 <br class="clear big">
-<div class="prevnext">
-<span markdown="1">**Previous**<br>[Translations][bcc contribute translations]</span>
-<span markdown="1">**Next**<br>[Contribute overview][bcc contribute]</span>
+<div class="prevnext" markdown="block">
+[PREV][bcc contribute translations]
+[NEXT][bcc contribute]
 </div>
 <br class="clear">
 
