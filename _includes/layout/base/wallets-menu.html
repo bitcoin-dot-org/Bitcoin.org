@@ -15,7 +15,7 @@ http://opensource.org/licenses/MIT.
      {% if page.id == "choose-your-wallet" %}
        {% assign statusClass = "active is-active" %}
      {% endif %}
-    <li class="wallet-all {{statusClass}}" data-platform-selector="all-wallets">
+    <li class="js-acc-item wallet-all {{statusClass}}" data-platform-selector="all-wallets">
       <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}/#walletmenu">All wallets</a>
     </li>
   {% for platform in platformsByPlatform %}
@@ -73,12 +73,7 @@ http://opensource.org/licenses/MIT.
 <script>
   var walletMenu = document.querySelector(".walletmenu");
   
-  
-  // Add margin-bottom for walletmenu depending on the height of the second accordion          
-  function calculateHeight(element) {
-    walletMenu.style.marginBottom = element.offsetHeight + 'px'; 
-  }  
-  
+
   function accordionDesktop() {
     var acc = document.getElementsByClassName("js-acc-item");
     var allTabs = document.querySelectorAll("li[data-platform-selector]");
@@ -88,7 +83,7 @@ http://opensource.org/licenses/MIT.
         if (document.documentElement.clientWidth > 768) {
           var platformList = document.querySelectorAll("li[data-platform-selector]");
           var activeItem = event.target.parentNode;
-          var activeOsAccordion = activeItem.querySelector(".walletmenu-subaccordion");
+          var activeOsAccordion = this.querySelector(".walletmenu-subaccordion");
           
           for (var ii = 0; ii < allTabs.length; ii++) {
             var tab = allTabs[ii];
@@ -101,8 +96,11 @@ http://opensource.org/licenses/MIT.
             }
           }
 
-          if (activeOsAccordion.classList.contains("walletmenu-subaccordion")) {
-            calculateHeight(activeOsAccordion);
+          // Add margnin for walletmenu depending on height of submenu
+          if (this.dataset.platformSelector === "mobile" || this.dataset.platformSelector === "desktop") {
+            walletMenu.style.marginBottom = activeOsAccordion.offsetHeight + 'px'; 
+          } else {
+            walletMenu.style.marginBottom ='0px'; 
           }
 
           // Hide not selected list items
@@ -112,11 +110,17 @@ http://opensource.org/licenses/MIT.
             }
           }
           
-          if (activeItem.dataset.platformSelector === "desktop" || activeItem.dataset.platformSelector === "mobile") {
-            var allWallets = document.querySelectorAll("div[data-category]");
-            var selectedPlatform = activeItem.dataset.platformSelector;
-            var regexp = new RegExp(selectedPlatform, 'i');
+          var allWallets = document.querySelectorAll("div[data-category]");
+          var selectedPlatform = activeItem.dataset.platformSelector;
 
+          if (selectedPlatform === "all-wallets") {
+            allWallets.forEach(function (wallet) {
+              wallet.classList.remove('is-hidden')
+            });
+          } else {
+            var regexp = new RegExp(selectedPlatform, 'i');
+            console.log(selectedPlatform);
+            
             for (var ii = 0; ii < allWallets.length; ii++) {
               var walletItem = allWallets[ii];
               var walletPlatform = walletItem.dataset.platforms;
