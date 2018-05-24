@@ -71,9 +71,10 @@ write a fix.  Providing more information and organizing it well helps
 significantly.
 
 <br class="clear big">
-<div class="prevnext">
-<span markdown="1">**Previous**<br>[Contribute overview][bcc contribute]</span>
-<span markdown="1">**Next**<br>[Code][bcc contribute code]</span>
+<div class="prevnext" markdown="block">
+
+[PREV][bcc contribute]
+[NEXT][bcc contribute code]
 </div>
 <br class="clear">
 
