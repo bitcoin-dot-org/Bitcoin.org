@@ -35,13 +35,13 @@ http://opensource.org/licenses/MIT.
               {% for platform in wallet.platform %}
                 {% for os in platform.os%}
                   {% if platform.name == os.name %}
-                  <a class="wallet-list-os-link {{os.name}}-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}>
-
+                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}>
+                    <span class="wallet-os-ico {{os.name}}-ico"></span>
                     <p class="wallet-ico-tooltip">{{os.name}}</p>
                   </a>
                   {% else %}
-                  <a class="wallet-list-os-link {{os.name}}-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}>
-
+                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}>
+                    <span class="wallet-os-ico {{os.name}}-ico"></span>
                     <p class="wallet-ico-tooltip">{{os.name}}</p>
                   </a>
                   {% endif %}
@@ -65,13 +65,13 @@ http://opensource.org/licenses/MIT.
           <p class="wallet-hint">Select an Operating System</p>
           <div class="wallet-list-os">
             {% for platform in wallet.platform %} {% for os in platform.os%} {% if platform.name == os.name %}
-            <a class="wallet-list-os-link {{os.name}}-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}">
-
+            <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}">
+              <span class="wallet-os-ico {{os.name}}-ico"></span>
               <p class="wallet-ico-tooltip">{{os.name}}</p>
             </a>
             {% else %}
-            <a class="wallet-list-os-link {{os.name}}-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}">
-
+            <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}">
+              <span class="wallet-os-ico {{os.name}}-ico"></span>
               <p class="wallet-ico-tooltip">{{os.name}}</p>
             </a>
             {% endif %} {% endfor %} {% endfor %}

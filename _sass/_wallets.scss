@@ -31,7 +31,11 @@ $black: #13161F;
     padding: 40px 0 40px;
     text-align: left;
 
-    
+    .allwallets-list-item:hover {
+        .wallet-list-item-link img {
+            margin: 20px auto -12px;
+        }
+    }
     .wallet-list-item {
         display: inline-block;
         width: 14.2%;
@@ -72,52 +76,40 @@ $black: #13161F;
             .wallet-list-os {
                 margin-top: 17px;
             }
-            .wallet-list-item-link img {
-                margin: 20px auto -12px;
-            }
-            .windows-link {
+            .windows-ico {
                 background: url(../img/os/wallet_menu_windows_dark.svg) center no-repeat;
                 background-size: contain;
             }
-            .linux-link {
+            .linux-ico {
                 background: url(../img/os/wallet_menu_linux_dark.svg) center no-repeat;
                 background-size: contain;
             }
-            .mac-link {
+            .mac-ico {
                 background: url(../img/os/wallet_menu_mac_dark.svg) center no-repeat;
                 background-size: contain;
             }
-            .windowsphone-link {
+            .windowsphone-ico {
                 background: url(../img/os/wallet_menu_windowsphone_dark.svg) center no-repeat;
                 background-size: contain;
             }
-            .hardware-link {
+            .hardware-ico {
                 background: url(../img/os/wallet_menu_hardware_dark.svg) center no-repeat;
                 background-size: contain;
             }
-            .web-link {
+            .web-ico {
                 background: url(../img/os/wallet_menu_web_dark.svg) center no-repeat;
                 background-size: contain;
             }
-            .android-link {
+            .android-ico {
                 background: url(../img/os/wallet_menu_android_dark.svg) center no-repeat;
                 background-size: contain;
             }
-            .ios-link {
+            .ios-ico {
                 background: url(../img/os/wallet_menu_ios_dark.svg) center no-repeat;
                 background-size: contain;
             }
-            // .wallet-os-ico {
-            //     fill: #192A39;
-            // }
-            // .wallet-os-ico-stroke {
-            //     stroke: #192A39;
-            // }
         }
-        // .wallet-list-os-link:hover .wallet-os-ico-stroke {
-        //     stroke: #F7931A;
-        // }
-        .windows-link {
+        .windows-ico {
             background: url(../img/os/wallet_menu_windows.svg) center no-repeat;
             background-size: contain;
 
@@ -126,7 +118,7 @@ $black: #13161F;
                 background-size: contain;
             }
         }
-        .mac-link {
+        .mac-ico {
             background: url(../img/os/wallet_menu_mac.svg) center no-repeat;
             background-size: contain;
 
@@ -135,7 +127,7 @@ $black: #13161F;
                 background-size: contain;
             }
         }
-        .linux-link {
+        .linux-ico {
             background: url(../img/os/wallet_menu_linux.svg) center no-repeat;
             background-size: contain;
 
@@ -144,7 +136,7 @@ $black: #13161F;
                 background-size: contain;
             }
         }
-        .windowsphone-link {
+        .windowsphone-ico {
             background: url(../img/os/wallet_menu_windowsphone.svg) center no-repeat;
             background-size: contain;
 
@@ -153,7 +145,7 @@ $black: #13161F;
                 background-size: contain;
             }
         }
-        .web-link {
+        .web-ico {
             background: url(../img/os/wallet_menu_web.svg) center no-repeat;
             background-size: contain;
 
@@ -162,7 +154,7 @@ $black: #13161F;
                 background-size: contain;
             }
         }
-        .android-link {
+        .android-ico {
             background: url(../img/os/wallet_menu_android.svg) center no-repeat;
             background-size: contain;
 
@@ -171,7 +163,7 @@ $black: #13161F;
                 background-size: contain;
             }
         }
-        .ios-link {
+        .ios-ico {
             background: url(../img/os/wallet_menu_ios.svg) center no-repeat;
             background-size: contain;
 
@@ -180,7 +172,7 @@ $black: #13161F;
                 background-size: contain;
             }
         }
-        .hardware-link {
+        .hardware-ico {
             background: url(../img/os/wallet_menu_hardware.svg) center no-repeat;
             background-size: contain;
 
@@ -452,15 +444,18 @@ $scores:
 }
 .wallet-list-os-link {
     position: relative;
-    width: 18px;
-    height: 18px;
-    margin: 4px 5px;
+    padding: 4px 5px;
 }
 .wallet-list-os-link:hover {
     background: #f8f8f8;
 }
 .wallet-list-os-link.is-hidden {
     display: none;
+}
+.wallet-os-ico {
+    display: block;
+    width: 18px;
+    height: 18px;
 }
 .wallet-list-os-link:hover .wallet-ico-tooltip {
     display: block;
