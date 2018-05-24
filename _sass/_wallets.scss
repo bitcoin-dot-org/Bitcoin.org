@@ -70,7 +70,7 @@ $black: #13161F;
         }
         &:hover {
             .wallet-list-os {
-                margin-top: 27px;
+                margin-top: 17px;
             }
             .wallet-list-item-link img {
                 margin: 20px auto -12px;
@@ -353,8 +353,8 @@ $scores:
 }
 .wallet-list-os {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10px;
     transition: all .15s ease-out;
 }
 .wallet-list-os-link {
@@ -511,10 +511,6 @@ $scores:
 .show {
     display: block;
 }
-
-.wallet-list div[data-category].is-hidden {
-    display: none;
-}
 .wallet-wrapper .wallet-list {
     display: none;
 }
@@ -526,13 +522,18 @@ $scores:
 .allwallets-list-item:hover .wallet-hint {
     color: #898f8f;
 }
+@media handheld, only screen and ( min-width: 769px ) {
+    .wallet-list div[data-category].is-hidden {
+        display: none;
+    }
+}
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ) {
     .wallet-list {
         padding: 20px 0 30px;
     }
     .wallet-list .wallet-list-item {
         width: 30.9%;
-        height: 160px;
+        height: auto;
     }
     .walletsdisclaimer {
         padding: 60px 0;
@@ -561,6 +562,9 @@ $scores:
         padding: 20px 0 30px;
     }
     .wallet-filter-list {
+        display: none;
+    }
+    .wallet-list .allwallets-list-item {
         display: none;
     }
 }
