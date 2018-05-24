@@ -75,11 +75,15 @@ http://opensource.org/licenses/MIT.
               {% if platform.name == os.name %}
               <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}">
                 <span class="wallet-os-ico {{os.name}}-ico"></span>
+                <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
+                <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
                 <p class="wallet-ico-tooltip">{{os.name}}</p>
               </a>
               {% else %}
               <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}">
                 <span class="wallet-os-ico {{os.name}}-ico"></span>
+                <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
+                <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
                 <p class="wallet-ico-tooltip">{{os.name}}</p>
               </a>
               {% endif %}
