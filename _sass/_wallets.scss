@@ -180,6 +180,15 @@ $black: #13161F;
                 background-size: contain;
             }
         }
+        .hardware-link {
+            background: url(../img/os/wallet_menu_hardware.svg) center no-repeat;
+            background-size: contain;
+
+            &:hover {
+                background: url(../img/os/wallet_menu_hardware_bright.svg) center no-repeat;
+                background-size: contain;
+            }
+        }
     }
 
     &:nth-child(1n + 15) {
@@ -443,9 +452,9 @@ $scores:
 }
 .wallet-list-os-link {
     position: relative;
-    width: 16px;
-    height: 16px;
-    padding: 4px 5px;
+    width: 18px;
+    height: 18px;
+    margin: 4px 5px;
 }
 .wallet-list-os-link:hover {
     background: #f8f8f8;
