@@ -346,9 +346,9 @@ Bitcoin Core prefers decentralized peer discovery, so after the first
 time it starts, it no longer has to trust the centralized authority.
 Isn't that worth occasionally starting up a few seconds slower?
 
-<div class="prevnext">
-<span markdown="1">**Previous Feature**<br>[Validation][bcc validation]</span>
-<span markdown="1">**Next feature**<br>[Requirements][bcc requirements]</span>
+<div class="prevnext" markdown="block">
+[PREV][bcc validation]
+[NEXT][bcc requirements]
 </div>
 
 <div class="not-displayed">
