@@ -3,6 +3,7 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
+{% if site.donation_banner.display %}
 <div class="donation-container">
   <div class="donation-text">
     <div class="donation-text-container">
@@ -21,6 +22,8 @@ http://opensource.org/licenses/MIT.
     {% translate donation-banner-toggle-button layout %}
   </button>
 </div>
+{% endif %}
+
 
 <div id="donation-modal" style="display: none" class="donation-modal hidden">
   <div class="modal-dialog">
