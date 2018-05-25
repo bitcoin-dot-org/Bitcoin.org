@@ -449,9 +449,9 @@ If you have any questions, please ask on the [forums][bcc forums] or
 
 
 <br class="clear big">
-<div class="prevnext">
-<span markdown="1">**Previous Feature**<br>[Feature Overview][bcc main]</span>
-<span markdown="1">**Next feature**<br>[Privacy][bcc privacy]</span>
+<div class="prevnext" markdown="block">
+[PREV][bcc main]
+[NEXT][bcc privacy]
 </div>
 <br class="clear">
 
