@@ -376,7 +376,7 @@ hr {
    -webkit-transform: translateY(-50%);
            transform: translateY(-50%);
 }
-.is-expand:hover::after{
+.menusimple > li:hover .is-expand::after{
    -webkit-transform: translateY(-50%) rotate(180deg);
            transform: translateY(-50%) rotate(180deg);
 }

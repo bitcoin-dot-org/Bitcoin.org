@@ -36,6 +36,11 @@ $black: #13161F;
             margin: 20px auto -12px;
         }
     }
+    .allwallets-list-item.mouseenter {
+        .wallet-list-item-link img {
+            margin: 20px auto 5px;
+        }
+    }
     .wallet-list-item {
         display: inline-block;
         width: 14.2%;
@@ -84,6 +89,13 @@ $black: #13161F;
                 width: 18px;
                 height: 18px;
                 background-position: center;
+            }
+        }
+        &.mouseenter {
+            cursor: pointer;
+            
+            .wallet-list-os {
+                margin-top: 0;
             }
         }
         .wallet-list-os-link:hover {
@@ -631,6 +643,9 @@ $scores:
 }
 .allwallets-list-item:hover .wallet-hint {
     color: #898f8f;
+}
+.allwallets-list-item.mouseenter .wallet-hint {
+    color: transparent;
 }
 @media handheld, only screen and ( min-width: 769px ) {
     .wallet-list div[data-category].is-hidden {

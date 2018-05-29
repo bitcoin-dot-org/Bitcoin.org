@@ -169,4 +169,42 @@ http://opensource.org/licenses/MIT.
   }
   accordionDesktop();
 
+  function makeWalletClickable() {
+    document.addEventListener('DOMContentLoaded', function () {
+      var walletsList = document.querySelectorAll('.allwallets-list-item');
+
+      for (var i = 0; i < walletsList.length; i++) {
+        var wallet = walletsList[i];
+
+        wallet.addEventListener("mouseenter", function () {
+          var walletOsList = this.querySelectorAll('.wallet-list-os-link:not(.is-hidden)');
+
+          if (walletOsList.length === 1) {
+            this.classList.add('mouseenter');
+          }
+        });
+
+        wallet.addEventListener("mouseleave", function () {
+          var walletOsList = this.querySelectorAll('.wallet-list-os-link:not(.is-hidden)');
+
+          if (walletOsList.length === 1) {
+            this.classList.remove('mouseenter');          }
+        });
+
+      }
+
+      walletsList.forEach(function (wallet) {
+        return wallet.addEventListener("click", function () {
+          var walletOsList = this.querySelectorAll('.wallet-list-os-link:not(.is-hidden)');
+
+          if (walletOsList.length === 1) {
+            var walletHref = walletOsList[0].href;
+            window.location = walletHref;
+          }
+        });
+      });
+    });
+  }
+  makeWalletClickable();
+  
 </script>
