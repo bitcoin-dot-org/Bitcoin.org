@@ -19,7 +19,7 @@ platform:
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
-          transparency: "checkpasstransparencyopensource"
+          transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
           fees: "checkpassfeecontroldynamic"
@@ -35,7 +35,7 @@ platform:
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
-          transparency: "checkpasstransparencyopensource"
+          transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
           fees: "checkpassfeecontroldynamic"
@@ -51,7 +51,7 @@ platform:
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
-          transparency: "checkpasstransparencyopensource"
+          transparency: "checkfailtransparencynew"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
           fees: "checkpassfeecontroldynamic"
