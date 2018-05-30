@@ -74,7 +74,7 @@ pre{
     overflow-y:auto;
 }
 pre code{
-    font-size:100%;
+    font-size: 18px;
     color: #1C1F30;
     line-height: 34px;
     padding:0;
@@ -86,7 +86,7 @@ code{
     padding: 0 18px;
     background: #f8f8f8;
     font-size: 20px;
-    font-family: TitilliumWeb-Regular;
+    font-family:"Titillium Web", Arial, sans-serif;
     line-height: 34px;
     color: #1C1F30;
     white-space:nowrap;
@@ -116,7 +116,7 @@ hr {
 @font-face {
     font-family: 'Titillium Web';
     src: url('/font/titillium/TitilliumWeb-Regular.eot');
-    src: url('/font/titillium/TitilliumWeb-Regular.eot?#iefix') format('embedded-opentype'), url('/font/titilliumTitilliumWeb-Regular.woff2') format('woff2'), url('/font/titillium/TitilliumWeb-Regular.woff') format('woff'), url('TitilliumWeb-Regular.ttf') format('truetype'), url('/font/titillium/TitilliumWeb-Regular.svg#TitilliumWeb-Regular') format('svg');
+    src: url('/font/titillium/TitilliumWeb-Regular.eot?#iefix') format('embedded-opentype'), url('/font/titillium/TitilliumWeb-Regular.woff2') format('woff2'), url('/font/titillium/TitilliumWeb-Regular.woff') format('woff'), url('TitilliumWeb-Regular.ttf') format('truetype'), url('/font/titillium/TitilliumWeb-Regular.svg#TitilliumWeb-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
