@@ -74,7 +74,7 @@ pre{
     overflow-y:auto;
 }
 pre code{
-    font-size:100%;
+    font-size: 18px;
     color: #1C1F30;
     line-height: 34px;
     padding:0;
@@ -86,7 +86,7 @@ code{
     padding: 0 18px;
     background: #f8f8f8;
     font-size: 18px;
-    font-family: TitilliumWeb-Regular;
+    font-family:"Titillium Web", Arial, sans-serif;
     line-height: 34px;
     color: #1C1F30;
     white-space:nowrap;
@@ -1158,7 +1158,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .start div div div a:hover{
     background-image:none;
-    color:#fff;
 }
 .start h2 {
     margin: 0 0 20px;
@@ -1307,7 +1306,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .docreference-img-block {
     min-height: 60px;
 }
-.docreference-card a {
+.docreference-card p {
     font-size: 137.5%;
     font-weight: 600;
     color: #13161F;
@@ -1440,6 +1439,12 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .toccontent p:last-child {
     margin-bottom: 0;
+}
+.toccontent li {
+    font-size: 20px;
+    color: #4D5060;
+    line-height: 34px;
+    text-align: left;
 }
 .toccontent h3{
     margin-top: 0;
@@ -4727,6 +4732,9 @@ br.big {
         padding: 0 15px 40px;
     }
     .toccontent p {
+        font-size: 18px;
+    }
+    .toccontent li {
         font-size: 18px;
     }
     .article>* {

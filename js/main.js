@@ -597,8 +597,11 @@ function onScrollButton() {
 
   function stickyButton() {
     if (document.documentElement.clientWidth <= 640) {
-      var footerTop = document.querySelector(".footer").offsetTop;
-
+      if (buttonTop === 0) {
+        buttonTop = button.offsetTop;
+      }
+      var footerTop = document.querySelector(".footer").offsetTop;      
+      
       // Fixed menu
       if (window.scrollY >= buttonTop && window.scrollY + buttonHeight <= footerTop) {
         button.classList.add("is-fixed");
