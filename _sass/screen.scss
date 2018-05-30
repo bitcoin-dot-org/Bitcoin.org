@@ -1464,6 +1464,12 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .toccontent p:last-child {
     margin-bottom: 0;
 }
+.toccontent li {
+    font-size: 20px;
+    color: #4D5060;
+    line-height: 34px;
+    text-align: left;
+}
 .toccontent h3{
     margin-top: 0;
     margin-bottom: 10px;
@@ -4754,6 +4760,9 @@ br.big {
         padding: 0 15px 40px;
     }
     .toccontent p {
+        font-size: 18px;
+    }
+    .toccontent li {
         font-size: 18px;
     }
     .article>* {
