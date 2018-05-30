@@ -98,7 +98,6 @@ $oses:
             a {
                 display: block;
                 padding: 18px 10px 21px 42px;
-                text-transform: uppercase;
                 white-space: nowrap;
                 cursor: pointer;
 
@@ -201,13 +200,11 @@ $oses:
     color: #56585f;
     letter-spacing: 0.4px;
     line-height: normal;
-    text-transform: uppercase;
 }
 .selected-item {
     font-size: 18px;
     color: #FF7E00;
     line-height: 20px;
-    text-transform: uppercase; 
 }
 
 .accordion-tab {
@@ -352,7 +349,6 @@ $oses:
         font-size: 15px;
         color: #13161F;
         text-align: center;
-        text-transform: uppercase;
         border: 1px solid #dadada;
     }
     .accordion-link:hover,

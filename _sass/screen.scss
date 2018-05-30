@@ -34,13 +34,13 @@ h3{
 }
 h4{
     color:#13161F;
-    font-size :112.5%;
+    font-size :137.5%;
     line-height: 36px;
     font-weight: 400;
 }
 h5{
     color:#13161F;
-    font-size :100%;
+    font-size :137.5%;
     line-height: 36px;
     font-weight: 400;
 }
@@ -69,7 +69,7 @@ pre{
     background-color:#f8f8f8;
     display:block;
     padding: 17px 17px 17px 40px;
-    font-size: 125%;
+    font-size: 100%;
     white-space:pre;
     overflow-y:auto;
 }
@@ -85,7 +85,7 @@ pre code{
 code{
     padding: 0 18px;
     background: #f8f8f8;
-    font-size: 20px;
+    font-size: 18px;
     font-family:"Titillium Web", Arial, sans-serif;
     line-height: 34px;
     color: #1C1F30;
@@ -179,9 +179,6 @@ hr {
 }
 .is-capital {
     text-transform: capitalize;
-}
-.is-uppercase {
-    text-transform: uppercase;
 }
 .separator {
     height: 1px;
@@ -309,7 +306,6 @@ hr {
 .lang li a:visited,
 .lang li a:active{
     font-size: 93.75%;
-    text-transform: uppercase;
     color:#000;
 }
 .lang li ul li a,
@@ -394,7 +390,6 @@ hr {
     font-family:'Titillium Web', sans-serif;
     font-weight:400;
     font-size: 93.75%;
-    text-transform: uppercase;
     text-decoration:none;
     white-space:nowrap;
     cursor:pointer;
@@ -450,17 +445,6 @@ hr {
 .bitcore-content {
     padding: 70px 0;
 }
-.currency {
-    font-size: 93.75%;
-}
-.currency-name {
-    color: #595b62;
-}
-.currency-amount {
-    margin-left: 10px;
-    font-weight: 700;
-    color: #FF7E00;
-}
 .breadcrumbs {
     font-size: 75%;
     background: #13161f;
@@ -487,7 +471,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .hero {
     position: relative;
-    padding: 120px 30px 173px;
+    padding: 96px 30px 138px;
     background: url(../img/hero/hero-bg.svg) bottom no-repeat;
     background-size: cover;
     z-index: 10;
@@ -539,7 +523,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
             box-sizing: border-box;
     color: #FFFFFF;
     text-align: center;
-    text-transform: uppercase;
     border-radius: 1px;
 }
 .donate-text {
@@ -867,13 +850,10 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     height: 30px;
     margin: 0 25px 0 0;
 }
-.mainlist-item div {
+.mainlist-item p {
     font-weight: 600;
     font-size: 106.25%;
     color: #13161F;
-}
-.mainlist-item div br {
-    display: none;
 }
 .home-title {
     margin: 0 0 50px;
@@ -938,7 +918,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-weight:600;
     font-size:100%;
     color:#fff;
-    text-transform: uppercase;
     border-radius:1px;
 }
 .btn-home {
@@ -992,7 +971,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-size:100%;
     text-align: center;
     color:#fff;
-    text-transform: uppercase;
     border-radius:1px;
 }
 .mainoverview {
@@ -1064,7 +1042,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     padding: 22px 33px;
     color: #9D9D9D;
     font-size: 18px;
-    text-transform: uppercase;
 }
 .startbar-link:hover {
     padding: 22px 33px 19px;
@@ -1176,7 +1153,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     padding: 15px 30px;
     font-size:100%;
     font-weight: 600;
-    text-transform: uppercase;
     color:#fff;
     border-radius:1px;
 }
@@ -2026,7 +2002,6 @@ br.big {
     color: #FFFFFF;
     text-align: center;
     line-height: 52px;
-    text-transform: uppercase;
 }
 .callout-img {
     width: 15px;
@@ -2126,7 +2101,6 @@ br.big {
     font-size: 81.25%;
     color: #9D9D9D;
     letter-spacing: 0.43px;
-    text-transform: uppercase;
     text-align: left;
 }
 .features-card::before {
@@ -3086,7 +3060,6 @@ br.big {
     font-weight: 600;
     color: #FFFFFF;
     text-align: center;
-    text-transform: uppercase;
     border: none;
     z-index: 10;
 }
@@ -3350,7 +3323,6 @@ br.big {
     font-weight:600;
     font-size:100%;
     color:#fff;
-    text-transform: uppercase;
     border-radius:1px;
 }
 .release-content h1 {
@@ -3478,7 +3450,7 @@ br.big {
         width:auto;
     }
     .hero {
-        padding: 80px 30px 125px;
+        padding: 64px 30px 100px;
     }
     .hero h1 {
         font-size: 30px;

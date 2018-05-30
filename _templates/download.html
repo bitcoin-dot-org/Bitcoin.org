@@ -71,7 +71,7 @@ lin64: "x86_64-linux-gnu.tar.gz"
 
       <div class="downloadkeys">
         <span class="download-text downloadkeys-title">{% translate releasekeys %}</span>
-        <a class="core-link" href="/gavinandresen.asc">v0.8.6 - 0.9.2.1</a>
+        <a class="core-link" href="/legacy-releases.asc">v0.8.6 - 0.9.2.1</a>
         <a class="core-link" href="/laanwj.asc">v0.9.3 - 0.10.2</a>
         <a class="core-link" href="/laanwj-releases.asc">v0.11.0+</a>
       </div>
@@ -186,32 +186,3 @@ break;
 <p><a href="{{ redirect }}">{{ redirect }}</a></p>
 </div>
 {% endif %}
-<script>
-function loadBtcExchangeRate() {
-  
-  var request = new XMLHttpRequest();
-  request.open('GET', 'https://apiv2.bitcoinaverage.com/indices/global/ticker/short?crypto=BTC&fiat=USD', true);
-  request.onload = function () {
-    var data = JSON.parse(request.responseText);
-    var rate = formatNumber(data.BTCUSD.last);
-    
-    document.querySelector(".currency-amount").textContent = rate;
-  }
-  
-  function formatNumber(num) {
-    num = num.toFixed(2);
-    var numSplit = num.split('.');
-    var int = numSplit[0];
-    var dec = numSplit[1];
-
-    if (int.length > 3) {
-      int = int.substr(0, int.length - 3) + ',' + int.substr(int.length - 3, 3);
-    }
-
-    return '$' + int + '.' + dec;
-  }
-
-  request.send();
-}
-loadBtcExchangeRate();
-</script>

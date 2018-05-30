@@ -10,7 +10,7 @@
     </div>
 
     <div class="mainvideo">
-      <button class="mainvideo-btn-open" onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/{% if page.lang == 'ro' %}JPNwbWu0tMQ{% else %}Gc2en3nHxA4{% endif %}?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1{% if page.lang != 'en' %}&amp;cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}">Watch video and learn “What is Bitcoin?”</button>
+      <button class="mainvideo-btn-open" onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/{% if page.lang == 'ro' %}JPNwbWu0tMQ{% else %}Gc2en3nHxA4{% endif %}?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1{% if page.lang != 'en' %}&amp;cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}">What is Bitcoin?</button>
     </div>
     {% include helpers/hero-social.html %}
   </div>
@@ -54,19 +54,19 @@
           
             <li class="mainlist-item">
               <img src="/img/icons/main_ico_instant.svg" alt="Icon">
-              <div>{% translate list1 %}</div>
+              <p>{% translate list1 %}</p>
             </li>
           
           
             <li class="mainlist-item">
               <img src="/img/icons/main_ico_worldwide.svg" alt="Icon">
-              <div>{% translate list2 %}</div>
+              <p>{% translate list2 %}</p>
             </li>
           
           
             <li class="mainlist-item">
               <img src="/img/icons/main_ico_lowfee.svg" alt="Icon">
-              <div>{% translate list3 %}</div>
+              <p>{% translate list3 %}</p>
             </li>
           
         </ul>
@@ -75,122 +75,6 @@
     </div>
     <div class="btn-container">
       <a class="btn btn-dark btn-home center" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <hr>
-</div>
-
-<div class="recommendation">
-  <div class="container">
-    <p class="section-title center home-title">{% translate recomendation layout %}</p>
-    <p class="recommendation-text">{% translate pagedesc choose-your-wallet %}</p>
-    <div class="row recommendation-row">
-      <div class="recommendation-card">
-        <div>
-          <img class="wallet-icon" src="/img/icons/ico_bitcoin_core.svg" alt="Bitcoin core">
-        </div>
-        <div>
-          <p class="wallet-name">{% translate bitcoin-core layout %}</p>
-          <div>
-            <a href="/{{ page.lang}}/wallets/desktop/windows/bitcoincore/">
-              <img class="platform-icon" src="/img/icons/ico_windows.svg" alt="Windows">
-            </a>
-            <a href="/{{ page.lang}}/wallets/desktop/mac/bitcoincore/">
-              <img class="platform-icon" src="/img/icons/ico_apple.svg" alt="Apple">
-            </a>
-            <a href="/{{ page.lang}}/wallets/desktop/linux/bitcoincore/">
-              <img class="platform-icon" src="/img/icons/ico_linux.svg" alt="Linux">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="recommendation-card">
-        <div>
-          <img class="wallet-icon" src="/img/icons/ico_lock_black.svg" alt="Trezor">
-        </div>
-        <div>
-          <p class="wallet-name">Trezor</p>
-          <div>
-            <a href="/{{ page.lang}}/wallets/hardware/trezor/">
-              <img class="platform-icon" src="/img/icons/ico_lock_black_small.svg" alt="Lock icon">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="recommendation-card">
-        <div>
-          <img class="wallet-icon" src="/img/icons/ico_airbitz.svg" alt="Airbitz">
-        </div>
-        <div>
-          <p class="wallet-name">Airbitz</p>
-          <div>
-            <a href="/{{ page.lang}}/wallets/mobile/android/airbitzwallet/">
-              <img class="platform-icon" src="/img/icons/ico_android.svg" alt="Android icon">
-            </a>
-            <a href="/{{ page.lang}}/wallets/mobile/ios/airbitzwallet/">
-              <img class="platform-icon" src="/img/icons/ico_ios.svg" alt="IOS icon">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="recommendation-card">
-        <div>
-          <img class="wallet-icon" src="/img/icons/ico_bitgo.svg" alt="BitGo">
-        </div>
-        <div>
-          <p class="wallet-name">BitGo</p>
-          <div>
-            <a href="/{{ page.lang}}/wallets/web/bitgo/">
-              <img class="platform-icon" src="/img/icons/ico_globe.svg" alt="Globe icon">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="recommendation-card">
-        <div>
-          <img class="wallet-icon brd-wallet-icon" src="/img/wallet/brd.png" alt="BRD">
-        </div>
-        <div>
-          <p class="wallet-name">BRD</p>
-          <div>
-            <a href="/{{ page.lang}}/wallets/mobile/android/brd/">
-              <img class="platform-icon" src="/img/icons/ico_android.svg" alt="Android icon">
-            </a>
-            <a href="/{{ page.lang}}/wallets/mobile/ios/brd/">
-              <img class="platform-icon" src="/img/icons/ico_ios.svg" alt="IOS icon">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="recommendation-card">
-        <div>
-          <img class="wallet-icon" src="/img/icons/ico_electrum.svg" alt="Electrum">
-        </div>
-        <div>
-          <p class="wallet-name">Electrum</p>
-          <div>
-            <a href="/{{ page.lang}}/wallets/desktop/windows/electrum/">
-              <img class="platform-icon" src="/img/icons/ico_windows.svg" alt="Windows">
-            </a>
-            <a href="/{{ page.lang}}/wallets/desktop/mac/electrum/">
-              <img class="platform-icon" src="/img/icons/ico_apple.svg" alt="Apple">
-            </a>
-            <a href="/{{ page.lang}}/wallets/desktop/linux/electrum/">
-              <img class="platform-icon" src="/img/icons/ico_linux.svg" alt="Linux">
-            </a>
-            <a href="/{{ page.lang}}/wallets/mobile/android/electrum/">
-              <img class="platform-icon" src="/img/icons/ico_android.svg" alt="Android icon">
-            </a>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    <div class="btn-container">
-      <a class="btn btn-dark btn-home center" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate choosebut getting-started %}</a>
     </div>
   </div>
 </div>

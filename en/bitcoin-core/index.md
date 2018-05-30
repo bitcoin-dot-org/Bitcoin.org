@@ -37,7 +37,8 @@ breadcrumbs:
   Bitcoin Core is programmed to decide which block chain contains
   valid transactions. The users of Bitcoin Core only accept
   transactions for that block chain, making it the Bitcoin block
-  chain that everyone else wants to use
+  chain that everyone else wants to use. For the latest developments related to
+  Bitcoin Core, be sure to visit the project's <a href="https://bitcoincore.org">official website</a>.
   </div>
 
   <div class="show_more" markdown="block">
@@ -72,9 +73,9 @@ breadcrumbs:
 
 * <span>[Better security][bcc validation] for their bitcoins</span>
 * <span>[Privacy features][bcc privacy] not available in other wallets</span>
-* <span>Choice of [user interfaces][bcc user interface]</span>
+* <span>[User interfaces][bcc user interface] and other powerful features</span>
 
-and several other powerful features
+&nbsp;
 
   </div>
   </div>
@@ -114,7 +115,6 @@ and several other powerful features
 {% endcapture %}
 {% assign array_releases = text_releases | strip_newlines | split: '::' %}
 
-* [New Bitcoin Core website](https://bitcoincore.org)
   {% comment %}<!-- show the latest three releases -->{% endcomment %}
   {% for release in array_releases %}
   {% if forloop.index <= 2 %}
