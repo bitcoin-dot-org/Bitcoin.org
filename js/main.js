@@ -626,10 +626,7 @@ function onScrollButton() {
       if (buttonTop === 0) {
         buttonTop = button.offsetTop;
       }
-      var footerTop = document.querySelector(".footer").offsetTop;
-
-      console.log(buttonTop);
-      
+      var footerTop = document.querySelector(".footer").offsetTop;      
       
       // Fixed menu
       if (window.scrollY >= buttonTop && window.scrollY + buttonHeight <= footerTop) {
