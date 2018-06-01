@@ -16,7 +16,7 @@ http://opensource.org/licenses/MIT.
        {% assign statusClass = "active is-active" %}
      {% endif %}
     <li class="js-acc-item wallet-all {{statusClass}}" data-platform-selector="all-wallets">
-      <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}#walletmenu">All Wallets</a>
+      <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">All Wallets</a>
     </li>
   {% for platform in platformsByPlatform %}
 
@@ -44,7 +44,7 @@ http://opensource.org/licenses/MIT.
     <li class="js-acc-item {{ platformClass }}" data-platform-selector="{{platformName}}">
       {% if platformName == 'hardware' or platformName == 'web' %}
       {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" %}
-        <a href="{{ platformHref }}#walletmenu">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
+        <a href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% else %}
         <a class="wallet-platform-link">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% endif %}
@@ -57,7 +57,7 @@ http://opensource.org/licenses/MIT.
               {% assign osClass = osClass | append: " active" %}
             {% endif %}
             <li class="js-acc-subitem {{ osClass }}" data-platform-selector="{{item.os.name}}">
-              <a  href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/#walletmenu">
+              <a  href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
                 {% translate platform{{item.os.name}} choose-your-wallet %}
               </a>
             </li>
