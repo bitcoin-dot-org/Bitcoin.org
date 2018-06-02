@@ -14,9 +14,14 @@ http://opensource.org/licenses/MIT.
   {% else %}
     {% assign accordionNumber = "" | append: "accordion-tab-3" %}
   {% endif %}
+  {% for wallet in site.wallets %}
+    {% if page.id contains wallet.id %}
+      {% assign walletName = wallet.titleshort %}
+    {% endif %}
+  {% endfor %}
   <div class="accordion-tab accordion-tab-wallet {{accordionNumber}} js-tab is-expanded">
     <p class="accordion-label">Select Wallet</p>
-    <p class="selected-item selected-wallet"></p>
+    <p class="selected-item selected-wallet">{{walletName}}</p>
   </div>
   <div class="accordion-content accordion-content-wallets">
     <div class="wallet-list" id="wallets">
