@@ -747,7 +747,7 @@ en:
     pagetitle: "Press center"
     summary: "Find interviewees, answers and high quality press materials."
     volunteer: "Interviewees"
-    volunteernonprofit: "Communicate with <a href=\"https://www.bitgivefoundation.org\">BitGive</a>, the <a href=\"https://bitcoincore.org/en/contact\">Bitcoin Core Project</a> or local <a href=\"#community##[community.non-profit]\">non-profit organizations</a>."
+    volunteernonprofit: "Communicate with <a href=\"https://www.bitgivefoundation.org\">BitGive</a>, the <a href=\"https://bitcoincore.org/en/contact\">Bitcoin Core Project</a> or local <a href=\"#community##[community.nonprofit-organizations]\">non-profit organizations</a>."
     faqmore: "To learn more about Bitcoin, please visit the complete <a href=\"/en/faq\">FAQ</a> or the <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
   privacy:
     title: "Privacy Policy - Bitcoin"
@@ -872,7 +872,7 @@ en:
     donation: "Donation"
     donationtxt: "The easiest way to help is to <a href=\"http://bitgivefoundation.org/donate-now/\">donate</a> some bitcoin to BitGive. Or you can help directly fund any project related to Bitcoin that you believe will be helpful in the future."
     nonprofit: "Organizations"
-    nonprofittxt: "Many <a href=\"#community##[community.non-profit]\">non-profit organizations</a> are dedicated to protecting and promoting Bitcoin. You can help these groups by joining them and taking part in their projects, discussions and events."
+    nonprofittxt: "Many <a href=\"#community##[community.nonprofit-organizations]\">non-profit organizations</a> are dedicated to protecting and promoting Bitcoin. You can help these groups by joining them and taking part in their projects, discussions and events."
     spread: "Spread"
     spreadtxt: "Speak about Bitcoin to interested people. Write about it on your blog. Tell your favorite shops you would like to pay with Bitcoin. Help to keep <a href=\"/en/spend-bitcoin\">merchant directories</a> up to date. Or be creative and make yourself a nice Bitcoin T-shirt."
     wiki: "Documentation"
