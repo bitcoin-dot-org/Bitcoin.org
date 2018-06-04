@@ -3268,6 +3268,10 @@ br.big {
     background: url(../img/icons/ico_angle_grey.svg) center no-repeat;   
     background-size: contain;
 }
+.ui-icon-closethick {
+    background: url(../img/icons/close-btn.svg) center no-repeat !important;   
+    background-size: contain;
+}
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
     left: 24px;
     transform: translateY(-50%);
