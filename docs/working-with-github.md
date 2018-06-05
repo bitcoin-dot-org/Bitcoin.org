@@ -1,15 +1,12 @@
 ## Working With GitHub
 
 GitHub allows you to make changes to a project using git, and later submit them
-in a "pull request" so they can be reviewed and discussed. Many online how-tos
-exist so you can learn git, [here's a good
-one](https://www.atlassian.com/git/tutorial/git-basics).
-
-In order to use GitHub, you need to [sign up](http://github.com/signup) and [set
-up git](https://help.github.com/articles/set-up-git). You will also need to
-click the **Fork** button on the bitcoin.org [GitHub
-page](https://github.com/bitcoin-dot-org/bitcoin.org) and clone your GitHub
-repository into a local directory with the following command lines:
+in a "pull request" so they can be reviewed and discussed. In order to use
+GitHub, you need to [sign up](http://github.com/signup) and [set up
+git](https://help.github.com/articles/set-up-git). You will also need to
+[fork](https://help.github.com/articles/fork-a-repo/) the bitcoin.org repository
+from its [GitHub page](https://github.com/bitcoin-dot-org/bitcoin.org) and clone
+your GitHub repository into a local directory with the following command lines:
 
 ```
 git clone (url provided by GitHub on your fork's page) bitcoin.org

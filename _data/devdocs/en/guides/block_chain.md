@@ -91,7 +91,7 @@ to work harder than honest peers who only want to add new blocks to the
 block chain.
 
 Chaining blocks together makes it impossible to modify transactions included
-in any block without modifying all following blocks. As a
+in any block without modifying all subsequent blocks. As a
 result, the cost to modify a particular block increases with every new block
 added to the block chain, magnifying the effect of the proof of work.
 

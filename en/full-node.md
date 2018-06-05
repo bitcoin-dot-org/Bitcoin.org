@@ -225,7 +225,7 @@ have an easy-to-use node.
 The following instructions describe installing Bitcoin Core on Linux
 systems.
 
-### Ubuntu 16.10
+### Ubuntu 16.04
 
 *Instructions for Bitcoin Core 0.14.2
 
@@ -696,14 +696,12 @@ Windows key (`⊞ Win`) and type "cmd".  Choose the option labeled
 If you installed Bitcoin Core into the default directory, type the
 following at the command prompt:
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
-Bitcoin Core daemon should start and print a message that Bitcoin Core is starting.
-
-To interact with Bitcoin Core daemon, you will use the command
-`bitcoin-cli` (Bitcoin command line interface).  If you installed Bitcoin
-Core into the default location, type the following at the command
-prompt to see whether it works:
+Bitcoin Core daemon should start. To interact with Bitcoin Core daemon, you will
+use the command `bitcoin-cli` (Bitcoin command line interface).  If you
+installed Bitcoin Core into the default location, type the following at the
+command prompt to see whether it works:
 
     C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
 
@@ -731,7 +729,7 @@ Name the file `start_bitcoind.bat`. Then right-click on it and choose
 Open in Notepad (or whatever editor you prefer). Copy and paste the
 following line into the file.
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
 (If you installed Bitcoin Core in a non-default directory, use that
 directory path instead.)
@@ -852,14 +850,12 @@ Windows key (`⊞ Win`) and type "cmd".  Choose the option labeled
 If you installed Bitcoin Core into the default directory, type the
 following at the command prompt:
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
-Bitcoin Core daemon should start and print a message that Bitcoin Core is starting.
-
-To interact with Bitcoin Core daemon, you will use the command
-`bitcoin-cli` (Bitcoin command line interface).  If you installed Bitcoin
-Core into the default location, type the following at the command
-prompt to see whether it works:
+Bitcoin Core daemon should start. To interact with Bitcoin Core daemon, you will
+use the command `bitcoin-cli` (Bitcoin command line interface).  If you
+installed Bitcoin Core into the default location, type the following at the
+command prompt to see whether it works:
 
     C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
 
@@ -887,7 +883,7 @@ Name the file `start_bitcoind.bat`. Then right-click on it and choose
 Open in Notepad (or whatever editor you prefer). Copy and paste the
 following line into the file.
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
 (If you installed Bitcoin Core in a non-default directory, use that
 directory path instead.)
@@ -1005,13 +1001,13 @@ Windows key (`⊞ Win`) and type "cmd". Choose the program named "cmd.exe"
 
 If you installed the Bitcoin Core into the default directory, type the following at the command prompt :
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
-Bitcoin Core daemon should start.
+Bitcoin Core daemon should start. You can now try using Bitcoin Cli Utility.
 
-You can now try using Bitcoin Cli Utility.
-
-To interact with Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin command line interface). If you installed Bitcoin Core into the default location, type the following at the command prompt to see whether it works:
+To interact with Bitcoin Core daemon, you will use the command `bitcoin-cli`
+(Bitcoin command line interface). If you installed Bitcoin Core into the default
+location, type the following at the command prompt to see whether it works:
 
     C:\Program Files\Bitcoin\daemon\bitcoin-cli getblockchaininfo
 
@@ -1046,7 +1042,7 @@ You can also access this folder by executing the following command after reachin
 
 Right-click on the File Explorer window and choose New → Text file. Name the file `start_bitcoind.bat`. Then right-click on it and choose Open in Notepad (or whatever editor you prefer). Copy and paste the following line into the file.
 
-    C:\Program Files\Bitcoin\daemon\bitcoind -daemon
+    C:\Program Files\Bitcoin\daemon\bitcoind
 
 (If you installed Bitcoin Core in a non-default directory, use that directory path instead.)
 
@@ -1218,9 +1214,10 @@ subsections for details.
 ### Testing Connections
 
 The BitNodes project provides an online tool to let you test whether
-your node accepts inbound connections. To use it, start Bitcoin Core
-(either the GUI or the daemon), wait 10 minutes, and then [visit the
-Bitnodes page](https://bitnodes.21.co/#join-the-network). The tool
+your node accepts inbound connections. Before using BitNodes, you must first
+ensure that your node is fully synced with the block chain. Once you've done so,
+start Bitcoin Core (either the GUI or the daemon), wait 10 minutes, and then
+[visit the Bitnodes page](https://bitnodes.21.co/#join-the-network). The tool
 will attempt to guess your IP address---if the address is wrong (or
 blank), you will need to enter your address manually.
 
