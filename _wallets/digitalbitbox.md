@@ -3,8 +3,8 @@
 # http://opensource.org/licenses/MIT.
 
 id: digitalbitbox
-title: "DigitalBitbox"
-titleshort: "Digital<br />Bitbox"
+title: "Digital Bitbox"
+titleshort: "Digital Bitbox"
 compat: "hardware"
 level: 2
 platform:
@@ -12,7 +12,7 @@ platform:
     name: hardware
     os:
       - name: hardware
-        text: "walletdbb"
+        text: "walletdigitalbitbox"
         link: "https://digitalbitbox.com/"
         source: "https://github.com/digitalbitbox/"
         screenshot: "digitalbitbox.png"

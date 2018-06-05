@@ -4,7 +4,7 @@
 
 id: greenaddress
 title: "GreenAddress"
-titleshort: "Green<br>Address"
+titleshort: "Green Address"
 compat: "mobile desktop web android ios windows mac linux"
 level: 3
 platform:

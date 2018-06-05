@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="20px" viewBox="0 0 95 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Number</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="85" cy="10" r="10"></circle>
+    </defs>
+    <g id="Blog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bitcoin.org--Blog-Desktop-1200px" transform="translate(-715.000000, -638.000000)">
+            <g id="//Content" transform="translate(0.000000, 393.000000)">
+                <g id="How-to-use-btc" transform="translate(158.000000, 188.000000)">
+                    <g id="1" transform="translate(57.000000, 0.000000)">
+                        <g id="Number" transform="translate(500.000000, 57.000000)">
+                            <polygon id="Line" fill="#FF7E00" points="0 9 60 9 60 12 0 12"></polygon>
+                            <g id="Oval">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <circle stroke="#DADADA" stroke-width="1" cx="85" cy="10" r="9.5"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -4,6 +4,7 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/mining.md" %}
 
+
 ## Mining
 {% include helpers/subhead-links.md %}
 
