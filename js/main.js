@@ -643,7 +643,7 @@ function walletMenuAccordion() {
       this.classList.toggle("is-expanded");
 
       for (var index = 0; index < tabs.length; index++) {
-        if (!(this === tabs[index])) {
+        if (this !== tabs[index]) {
           tabs[index].classList.remove("is-expanded");
         }
       }
