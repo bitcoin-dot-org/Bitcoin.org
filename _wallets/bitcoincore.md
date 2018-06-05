@@ -4,7 +4,7 @@
 
 id: bitcoincore
 title: "Bitcoin Core"
-titleshort: "Bitcoin Core"
+titleshort: "Bitcoin<br>Core"
 compat: "desktop windows mac linux"
 level: 1
 platform:

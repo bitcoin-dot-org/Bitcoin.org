@@ -1,29 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
-    <title>icon/windowsphone</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Bitcoin.org---new-Choose-Your-wallet--Desktop" transform="translate(-1103.000000, -1190.000000)">
-            <g id="//Content" transform="translate(0.000000, 473.000000)">
-                <g id="Wallets-for-Linux" transform="translate(215.000000, 152.000000)">
-                    <g id="Containers">
-                        <g id="Container" transform="translate(800.000000, 420.000000)">
-                            <g id="Group" transform="translate(37.000000, 140.000000)">
-                                <g id="icon/windowsphone">
-                                    <g transform="translate(51.000000, 5.000000)">
-                                        <g>
-                                            <rect id="Rectangle-10" stroke="#5B6A77" x="0.5" y="0.5" width="15" height="15" rx="2"></rect>
-                                            <path d="M7.4252273,8.33816647 L7.4252273,11.6077016 L4,11.1356028 L4,8.33816647 L7.4252273,8.33816647 Z M7.4252273,4.6065772 L7.4252273,7.91629097 L4,7.91629097 L4,5.07867598 L7.4252273,4.6065772 Z M12.3571528,8.33816647 L12.3571528,12.2857158 L7.80190185,11.6579249 L7.80190185,8.33816647 L12.3571528,8.33816647 Z M12.3571528,3.928563 L12.3571528,7.91629097 L7.80190185,7.91629097 L7.80190185,4.55635393 L12.3571528,3.928563 Z" id="windows---FontAwesome" fill="#5B6A77"></path>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="32" height="50" viewBox="0 0 32 50" id="svg4143" version="1.1">
+  <defs id="defs4145"/>
+  <metadata id="metadata4148"/>
+  <g id="layer1" transform="translate(0,-1002.3622)">
+    <path d="m9 1006.2 5.31-0.72 0 5.11-5.31 0.03zm5.31 4.98 0 5.11-5.31-0.73 0-4.42zm0.64-5.79 7.04-1.02 0 6.16-7.04 0.06zm7.05 5.84 0 6.14-7.04-0.99-0.01-5.16z" id="path4" fill="#000"/>
+    <path d="m9 1040.2 5.31-0.72 0 5.11-5.31 0.03zm5.31 4.98 0 5.11-5.31-0.73 0-4.42zm0.64-5.79 7.04-1.02 0 6.16-7.04 0.06zm7.05 5.84 0 6.14-7.04-0.99-0.01-5.16z" id="path4-1" fill="#fff"/>
+  </g>
 </svg>

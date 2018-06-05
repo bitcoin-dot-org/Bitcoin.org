@@ -1,24 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="47px" height="28px" viewBox="0 0 47 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
-    <title>icon/documentaries</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Template-3---Bitcoin-resources" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="22.01.18-Bitcoin.org_Bitcoin-resources_Desktop-1200px--" transform="translate(-777.000000, -1143.000000)">
-            <g id="//contenct" transform="translate(215.000000, 555.000000)">
-                <g id="box5" transform="translate(400.000000, 530.000000)">
-                    <g id="icon/documentaries" transform="translate(155.000000, 42.000000)">
-                        <g id="icon">
-                            <rect id="Rectangle-3" x="0" y="0" width="60" height="60"></rect>
-                            <g id="Group-2" transform="translate(7.000000, 15.000000)">
-                                <rect id="Rectangle-2" stroke="#1C1F30" x="0.5" y="1.5" width="33" height="26" rx="3"></rect>
-                                <path d="M36.6033789,10.7461547 L36.6033789,17.8076906 C36.6033789,18.0359493 36.6814687,18.2573387 36.8246768,18.4350843 L44.0876264,27.4496382 C44.4341264,27.8797035 45.063657,27.9474466 45.4937224,27.6009466 C45.7293346,27.4111158 45.8663286,27.1248149 45.8663286,26.8222444 L45.8663286,3.0972837 C45.8663286,2.54499895 45.4186134,2.0972837 44.8663286,2.0972837 C44.5921344,2.0972837 44.3299682,2.20987176 44.1411646,2.40870757 L36.8782149,10.0575786 C36.7017591,10.2434104 36.6033789,10.4898929 36.6033789,10.7461547 Z" id="Path-2" stroke="#FF9500"></path>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+  <g transform="translate(0 -1020.362)">
+    <rect width="18.67" height="11.956" x="3.909" y="-1047.655" transform="scale(1 -1)" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect width="728.571" height="131.429" x="-531.429" y="-130.495"/>
+    <path d="M23.026 1043.901l5.896 2.341.05-8.93-6.009 2.569z" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M21.999 1029.139c0 1.767-1.432 3.2-3.2 3.2-1.767 0-3.2-1.432-3.2-3.2 0-1.767 1.432-3.2 3.2-3.2 1.767 0 3.2 1.432 3.2 3.2z" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.493"/>
+    <path d="M12.874 1028.43c0 2.391-1.938 4.329-4.329 4.329s-4.329-1.938-4.329-4.329 1.938-4.329 4.329-4.329 4.329 1.938 4.329 4.329z" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.09"/>
+  </g>
 </svg>

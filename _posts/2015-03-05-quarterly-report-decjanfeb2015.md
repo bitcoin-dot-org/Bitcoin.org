@@ -5,7 +5,7 @@
 type: posts
 layout: post
 category: blog
-show_toc: true
+
 title: "Quarterly Report March 2015"
 permalink: /en/posts/quarterly-report-march-2015.html
 date: 2015-03-05
@@ -15,7 +15,6 @@ author: >
   <a href="http://www.reddit.com/user/harda/">Reddit</a>)
 ---
 
-<div class="post-content" markdown="1">
 *Thanks to [our
 volunteers](https://github.com/bitcoin-dot-org/bitcoin.org/graphs/contributors?from=2014-12-01&to=2015-02-28&type=c)
 and the financial sponsorship of [The Bitcoin
@@ -55,9 +54,6 @@ Summary for December 2014, January 2015, and February 2015.
   Bitcoin Core full node. The announcement of the page received over
   [200 upvotes on
   Reddit](http://www.reddit.com/r/Bitcoin/comments/2wvdko/new_page_on_bitcoinorg_running_a_full_node/).
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Translations
 
@@ -90,9 +86,9 @@ We are extremely grateful for all the translations contributed by
 volunteers and paid translators on our [Transifex project
 page](https://www.transifex.com/projects/p/bitcoinorg/) as well as the
 many reviews made by Saïvann Carignan.
-</div>
 
-<div class="toccontent-block boxexpand expanded" markdown="1">
+
+
 
 ## Developer documentation
 
@@ -137,9 +133,6 @@ quarter include:
 
 Most documentation was written by David A. Harding, with reviews
 conducted by Saïvann Carignan, Jonas Schnelli, and others.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Regular Updates
 
@@ -179,9 +172,6 @@ page](https://bitcoin.org/en/resources) (and its many translations).
 
 We are grateful to all of the contributors who opened issues and made
 pull requests to keep the site content current and useful.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Wallets
 
@@ -231,9 +221,8 @@ volunteer](https://github.com/bitcoin-dot-org/bitcoin.org/issues/778) to take
 over reviewing wallets and managing wallet requirements. This is a great
 volunteer position for anyone who likes trying new wallets and who wants
 to interact directly with wallet authors.
-</div>
 
-<div class="toccontent-block boxexpand expanded" markdown="1">
+
 
 ## New Full Node Guide
 
@@ -278,9 +267,6 @@ five days and has received over 4,000 page views.
 
 The guide was primarily written by David A. Harding, with reviews by
 Saïvann Carignan and Jameson Lopp, and promotion also by Jameson.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Website Improvements
 
@@ -322,9 +308,6 @@ changes made this quarter include:
 Saïvann Carignan wrote the code to enable the torrent and magnet links
 as well as sorting releases by version number. J. Louis optimized the
 SVG images.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Server And Development Tools
 
@@ -372,9 +355,6 @@ Troubleshooting was performed by Saïvann Carignan with the help of
 GitHub user @patrikr, Christopher Gurnee, and David. Preventative
 maintenance and audit code were contributions by Saïvann, and the
 volunteer quick start guide was contributed by David.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Public Website Statistics
 
@@ -384,9 +364,6 @@ volunteer quick start guide was contributed by David.
 ![stats December 2014](/img/blog/free/stats-2014-12.png)
 ![stats January 2015(/img/blog/free/stats-2015-01.png)
 ![stats February 2015](/img/blog/free/stats-2015-02.png)
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Expense Report
 
@@ -405,9 +382,6 @@ volunteer quick start guide was contributed by David.
 | Server hosting 	   | -4.552 368 00 BTC
 | Developer documentation  | -2.614 684 15 BTC
 | **New balance**          | &nbsp;8.085 174 61  BTC
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Next Quarter's Goals
 
@@ -433,37 +407,34 @@ following three major goals during the next quarter:
    on Bitcoin.org. In the upcoming quarter we plan to add about 50 more
    printed pages worth of content, including:
 
-  * A [glossary/vocabulary
-    page](https://groups.google.com/forum/#!topic/bitcoin-documentation/s_mL1syxYoQ)
-    providing definitions for the over 150 specialized terms and
-    synonyms used in Bitcoin development
+    * A [glossary/vocabulary
+      page](https://groups.google.com/forum/#!topic/bitcoin-documentation/s_mL1syxYoQ)
+      providing definitions for the over 150 specialized terms and
+      synonyms used in Bitcoin development
 
-  * Documentation for at least the most common opcodes, and possibly
-    all the enabled opcodes. This section will be essentially a more
-    detailed version of the [Bitcoin Wiki script
-    page](https://en.bitcoin.it/wiki/Script)
+    * Documentation for at least the most common opcodes, and possibly
+      all the enabled opcodes. This section will be essentially a more
+      detailed version of the [Bitcoin Wiki script
+      page](https://en.bitcoin.it/wiki/Script)
 
-  * [Improved type
-    information](https://github.com/bitcoin-dot-org/bitcoin.org/pull/753) in
-    the RPC and REST sections, as
-    [requested](http://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg07069.html)
-    by Ocaml-Bitcoin developer Dario Teixeira.
+    * [Improved type
+      information](https://github.com/bitcoin-dot-org/bitcoin.org/pull/753) in
+      the RPC and REST sections, as
+      [requested](http://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg07069.html)
+      by Ocaml-Bitcoin developer Dario Teixeira.
 
-  * Substantially revising and expanding the [current wallet
-    section](https://bitcoin.org/en/developer-guide#wallets), likely
-    leading to a new section focused on ECDSA keys and signatures.
+    * Substantially revising and expanding the [current wallet
+      section](https://bitcoin.org/en/developer-guide#wallets), likely
+      leading to a new section focused on ECDSA keys and signatures.
 
-  * Continuing to expand the [overview of the Bitcoin P2P
-    protocol](https://bitcoin.org/en/developer-guide#p2p-network).
+    * Continuing to expand the [overview of the Bitcoin P2P
+      protocol](https://bitcoin.org/en/developer-guide#p2p-network).
 
 3. **Better volunteer resources:** we want to make it easier for
    community members to volunteer to contribute to Bitcoin.org in ways
    both small and large. New documentation about site procedures is
    forthcoming and we will be looking for other ways to encourage and
    simplify first-time contributions.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Thanks To Sponsors And Volunteers
 
@@ -491,4 +462,3 @@ requests and issues.
 *If you have any questions about the content of this report, please
 [open an issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) on
 GitHub or email Dave Harding, <dave@dtrt.org>.*
-</div>

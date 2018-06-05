@@ -4,7 +4,7 @@
 
 id: bitcoinknots
 title: "Bitcoin Knots"
-titleshort: "Bitcoin Knots"
+titleshort: "Bitcoin<br>Knots"
 compat: "desktop windows mac linux"
 level: 1
 platform:

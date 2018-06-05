@@ -12,17 +12,7 @@ breadcrumbs:
   - bcc
   - Contribute
 ---
-
-<div class="hero">
-<div class="container hero-container" markdown="block">
-
 # Contributing To Bitcoin Core
-{% include helpers/hero-social.html %}
-</div>
-</div>
-
-<div class="bitcore-content">
-<div class="container" markdown="block">
 
 Thank you for considering contributing to Bitcoin Core!  We have
 instructions below to help you get started contributing in several different
@@ -31,47 +21,20 @@ ways.
 If want to contribute in another way, please visit the [#bitcoin-dev][]
 IRC chatroom and discuss your plan with a developer.
 
-<div markdown="block" class="row card-row">
+<div markdown="block" class="two-column-list">
 
-<div class="card core-card" markdown="block">
-<img src="/img/icons/ico_bugs.svg" alt="icon">
+{:.fa-ul}
+- <span class="fa fa-li fa-bug fa-2x"></span> **[Bug reports][bcc contribute issues]**<br>Report bugs, including security issues
 
-[Bug reports][bcc contribute issues]
-<p>Report bugs, including security issues</p>
-</div>
+- <span class="fa fa-li fa-code fa-2x"></span> **[Code][bcc contribute code]**<br>Write & review code
 
-<div class="card core-card" markdown="block">
-<img src="/img/icons/ico_code.svg" alt="icon">
+- <span class="fa fa-li fa-book fa-2x"></span> **[Documentation][bcc contribute documentation]**<br>Write documentation for users and developers
 
-[Code][bcc contribute code]
-<p>Write & review code</p>
-</div>
+- <span class="fa fa-li fa-language fa-2x"></span> **[Translations][bcc contribute translations]**<br>Translate the user interface
 
-<div class="card core-card" markdown="block">
-<img src="/img/icons/ico_documentation.svg" alt="icon">
-
-[Documentation][bcc contribute documentation]
-<p>Write documentation for users and developers</p>
+- <span class="fa fa-li fa-question fa-2x"></span> **[Tech support][bcc contribute support]**<br>Support other users
 
 </div>
-
-<div class="card core-card" markdown="block">
-<img src="/img/icons/ico_translation.svg" alt="icon">
-
-[Translations][bcc contribute translations]
-<p>Translate the user interface</p>
-</div>
-
-
-<div class="card core-card" markdown="block">
-<img src="/img/icons/ico_support.svg" alt="icon">
-
-[Tech support][bcc contribute support]
-<p>Support other users</p>
-</div>
-</div>
+<br class="clear"><br class="big">
 
 {% include references.md %}
-
-</div>
-</div>

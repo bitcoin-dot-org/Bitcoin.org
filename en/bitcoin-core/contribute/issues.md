@@ -13,27 +13,14 @@ breadcrumbs:
   - bcc contribute
   - Issues
 ---
-
-<div class="hero">
-<div class="container hero-container" markdown="block">
-
 # Contribute Bug Reports
-{% include helpers/hero-social.html %}
-</div>
-</div>
-
-<div class="bitcore-content">
-<div class="container" markdown="block">
 
 If you discover a bug or other problem with Bitcoin Core, please report
 it.  The are two different processes, [responsible disclosure](#disclosure) for
 security bugs and [public issue tracking](#public-issue-tracking) for all other bugs.
 
-<div class="warning" markdown="block">
-
-**Please don't open an issue to ask for support.** See the [Get Help][bcc help] page instead.
-
-</div>
+<span class="fa fa-exclamation-triangle"></span> **Please don't open an
+issue to ask for support.** See the [Get Help][bcc help] page instead.
 
 <h2 id="disclosure">{% translate disclosure development %}</h2>
 
@@ -71,14 +58,10 @@ write a fix.  Providing more information and organizing it well helps
 significantly.
 
 <br class="clear big">
-<div class="prevnext" markdown="block">
-
-[PREV][bcc contribute]
-[NEXT][bcc contribute code]
+<div class="prevnext">
+<span markdown="1">**Previous**<br>[Contribute overview][bcc contribute]</span>
+<span markdown="1">**Next**<br>[Code][bcc contribute code]</span>
 </div>
 <br class="clear">
 
 {% include references.md %}
-
-</div>
-</div>

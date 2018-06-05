@@ -3,50 +3,19 @@
 # http://opensource.org/licenses/MIT.
 
 layout: base
-end_of_page: |
-  <script>walletMenuAccordion();</script>
-  <script>showNextMobileAccordion();</script>
 ---
-  
+
 {{ content }}
 
-{% if page.id != "choose-your-wallet" %}
-<script>    
-    var pageUrl = (window.location.pathname).split("/").filter(Boolean);
-    var platform = pageUrl[2];
-    var os = pageUrl[3];
-    var wallet = pageUrl[4];
-    var platformTab = document.querySelector('.accordion-tab-1');
-    
-    platformTab.classList.add('is-selected');
-    document.querySelector('.selected-platform').textContent = platform;
+{% include layout/base/wallets-menu.html %}
+{% include layout/base/wallets-list.html %}
 
-    if (os) {
-      if (platform === "desktop" || platform === "mobile") {
-        var osAccordion = document.querySelectorAll('.accordion-os');
-        // Display relevant os accordion
-        for (var a = 0; a < osAccordion.length; a++) {
-          if (platform === osAccordion[a].dataset.os) {
-            var relevantOsAcc = osAccordion[a];
-            relevantOsAcc.classList.add('is-visible');
-
-            // Made relevant accordion tab selected
-            relevantOsAcc.querySelector('.accordion-tab-2').classList.add('is-selected');
-            if (os === 'windowsphone') {
-              os = 'windows phone';
-            }
-            relevantOsAcc.querySelector('.selected-os').textContent = os;
-          }
-        }
-      } else {
-        wallet = os;
-      }
-    }
-
-    if (wallet) {
-      var walletTab = document.querySelector('.accordion-tab-3');
-      walletTab.classList.add('is-selected');
-      walletTab.classList.remove('is-expanded');
-    }
-</script> 
-{% endif %}
+<div class="walletsdisclaimer">
+  <h2 id="educate-yourself">
+    <img src="/img/icons/warning.svg" class="warningicon" alt="warning">
+    {% translate educate choose-your-wallet %}
+  </h2>
+  <p>
+    {% translate educatetxt choose-your-wallet %}
+  </p>
+</div>

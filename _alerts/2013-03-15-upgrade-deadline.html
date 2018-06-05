@@ -2,13 +2,10 @@
 title: "15 May 2013 Upgrade Deadline"
 shorturl: "may15"
 active: false
-show_toc: true
 banner: ""
 date: 2013-03-15
 ---
-
-<div class="post-content" markdown="1">
-<h2 id="what-is-happening">What is happening</h2>
+        <h2 id="what-is-happening">What is happening</h2>
 <p>
 If you are using an old version of Bitcoin-Qt (or bitcoind, the server bitcoin software),
 you must either upgrade to version 0.8.0 or later before May 15, 2013,
@@ -28,19 +25,13 @@ We recommend that you
 before the 15th of May to avoid any issues.  If you are a solo miner or mining pool operator,
 please see the the notes at the end of this page for how to upgrade safely.
 </p>
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
-<h2 id="backports">If you cannot upgrade to version 0.8.1</h2>
+        <h2 id="backports">If you cannot upgrade to version 0.8.1</h2>
 <p>
 If you cannot upgrade to the latest version,
 <a href="https://bitcointalk.org/?topic=199699">backports to older branches are now in final testing</a>.
 These include not only compatibility for the 15 May changes, but also fixes for known vulnerabilities and bugs, which have already been included and tested in the latest release.
 </p>
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
-<h2 id="workaround">If you cannot upgrade to a backport</h2>
+        <h2 id="workaround">If you cannot upgrade to a backport</h2>
 <p>
 If you cannot upgrade to any of the above, you can still avoid the problem.
 Create a file called DB_CONFIG in the bitcoin data directory, containing this line:
@@ -54,10 +45,7 @@ set_lk_max_locks 537000
 <a href="https://en.bitcoin.it/wiki/Data_directory">Look here</a> if you need help
 finding the bitcoin data directory.
 </p>
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
-<h2 id="miners">Miners/mining pool operators</h2>
+        <h2 id="miners">Miners/mining pool operators</h2>
 <p>
 If you are creating new blocks (you are a solo miner or mining pool operator), then
 you should be aware that upgrading from 0.7 to 0.8 requires a lengthy
@@ -71,10 +59,7 @@ reason, you should <b>not</b> set_lk_max_locks in a DB_CONFIG file until
 May 15th; if you increase locks before then you run the risk of creating
 or building on blocks incompatible with the rest of the network.
 </p>
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
-<h2 id="why-necessary">Why this is necessary</h2>
+        <h2 id="why-necessary">Why this is necessary</h2>
 <p>
 A bug caused a <a href="/chainfork">temporary block chain fork on 11 March, 2013</a>.
 After investigating
@@ -82,7 +67,7 @@ that bug, we determined that the bug can happen even if the entire network was
 still running old versions of Bitcoin-Qt/bitcoind. Therefore, the only option is to
 require everybody to either upgrade or workaround the bug.
 </p>
+
 <div style="text-align:right">
   <i>This notice last updated: Fri, 10 May 2013 21:30:00 UTC</i>
-</div>
 </div>

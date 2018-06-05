@@ -2,419 +2,254 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-layout: sidebar
+layout: base
 id: exchanges
 ---
 
 <!-- Note: this file exempt from check-for-subheading-anchors check -->
 
+<h1>{% translate pagetitle %}</h1>
+<p class="summary">{% translate pagedesc %}</p>
 
-<div class="toccontent-block boxexpand expanded">
-  <h2 class="exchanges-tab-title exchanges-international-title" id="international">International</h2>
-  <p>
-    <a class="marketplace-link" href="https://bisq.network/">Bisq</a>
-    <br>
-    <a class="marketplace-link" href="https://www.bitstamp.net/">Bitstamp</a>
-    <br>
-    <a class="marketplace-link" href="https://bitwage.com/">Bitwage</a>
-    <br>
-    <a class="marketplace-link" href="https://coinmama.com/">Coinmama</a>
-    <br>
-    <a class="marketplace-link" href="https://www.kraken.com/">Kraken</a>
-    <br>
-    <a class="marketplace-link" href="https://localbitcoins.com/">Local Bitcoins</a>
-    <br>
-  </p>
-</div>
-<div class="toccontent-block boxexpand expanded exchanges-europe">
-  <h2 class="exchanges-tab-title exchanges-europe-title" id="europe">Europe</h2>
-  <div class="exchanges-content-row">
-    <div class="general-marketplace">
+  <h2><a name="exchanges">{% translate exchange %}</a></h2>
+  <h4>Note: Exchanges provide highly varying degrees of safety, security,
+    privacy, and control over your funds and information. Perform your own
+    due diligence and <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">choose a wallet</a>
+    where you will keep your bitcoin before selecting an exchange.</h4>
+  <div class="exchanges">
+   <div>
+    <div>
+      <h3 id="international"><img src="/img/flags/ALL.png" alt="Globe">International</h3>
       <p>
-        <a class="marketplace-link" href="https://anycoindirect.eu">AnyCoin Direct</a>
-        <br>
-        <a class="marketplace-link" href="https://www.bitcoin.de/">Bitcoin.de</a>
-        <br>
-        <a class="marketplace-link" href="https://www.bitpanda.com/">BitPanda</a>
-        <br>
-        <a class="marketplace-link" href="https://bl3p.eu/">BL3P</a>
-        <br>
-        <a class="marketplace-link" href="https://www.paymium.com/">Paymium</a>
-        <br>
-        <a class="marketplace-link" href="https://therocktrading.com">The Rock Trading</a>
+        <a href="https://bisq.network/">Bisq</a><br>
+        <a href="https://www.bitstamp.net/">Bitstamp</a><br>
+        <a href="https://bitwage.com/">Bitwage</a><br>
+        <a href="https://coinmama.com/">Coinmama</a><br>
+        <a href="https://www.kraken.com/">Kraken</a><br>
+        <a href="https://localbitcoins.com/">Local Bitcoins</a><br>
       </p>
     </div>
-    <div class="marketplace-row">
-      <div class="row marketplace">
-        <img class="marketplace-flag" src="/img/flags/IT.svg" alt="Italian flag">
-        <div>
-          <h3 id="italy" class="no_toc">Italy</h3>
-          <p>
-            <a class="marketplace-link" href="https://posteb.it/">Postebit</a>
-            <br>
-          </p>
-        </div>
-      </div>
-      <div class="row marketplace">
-        <img class="marketplace-flag" src="/img/flags/UA.svg" alt="Ukraine flag">
-        <div>
-          <h3 id="ukraine" class="no_toc">Ukraine</h3>
-          <p>
-            <a class="marketplace-link" href="https://kuna.io/">Kuna</a>
-          </p>
-        </div>
-      </div>
-      <div class="row marketplace">
-        <img class="marketplace-flag" src="/img/flags/PL.svg" alt="United Kingdom flag">
-        <div>
-          <h3 id="poland" class="no_toc">Poland</h3>
-          <p>
-            <a class="marketplace-link" href="https://www.bitbay.net/">BitBay</a>
-          </p>
-        </div>
-      </div>
-      <div class="row marketplace">
-        <img class="marketplace-flag" src="/img/flags/UK.svg" alt="United Kingdom flag">
-        <div>
-          <h3 id="united-kingdom" class="no_toc">United Kingdom</h3>
-          <p>
-            <a class="marketplace-link" href="https://bittylicious.com/">Bittylicious</a>
-            <br>
-            <a class="marketplace-link" href="https://www.coincorner.com/">CoinCorner</a>
-            <br>
-            <a class="marketplace-link" href="https://www.coinfloor.co.uk/">Coinfloor</a>
-          </p>
-        </div>
-      </div>
+    <div>
+      <h3 id="europe"><img src="/img/flags/EU.png" alt="EU flag">Europe</h3>
+      <p>
+        <a href="https://anycoindirect.eu">AnyCoin Direct</a><br>
+        <a href="https://www.bitcoin.de/">Bitcoin.de</a><br>
+        <a href="https://www.bitpanda.com/">BitPanda</a><br>
+        <a href="https://bl3p.eu/">BL3P</a><br>
+        <a href="https://www.paymium.com/">Paymium</a><br>
+        <a href="https://therocktrading.com">The Rock Trading</a>
+      </p>
+    </div>
+    <div>
+      <h3 id="argentina"><img src="/img/flags/AR.png" alt="Argentinan flag">Argentina</h3>
+      <p>
+        <a href="https://www.satoshitango.com/">SatoshiTango</a>
+      </p>
+    </div>
+   </div>
+   <div>
+    <div>
+      <h3 id="australia"><img src="/img/flags/AU.png" alt="Australian flag">Australia</h3>
+      <p>
+        <a href="https://bitcoin.com.au/">Bitcoin Australia</a><br>
+        <a href="https://www.coinjar.com/">CoinJar</a><br>
+        <a href="https://www.coinloft.com.au/">CoinLoft</a><br>
+        <a href="https://www.coinspot.com.au/">CoinSpot</a><br>
+        <a href="https://www.cointree.com.au/">CoinTree</a><br>
+        <a href="https://www.hardblock.net/">HardBlock</a><br>
+        <a href="https://www.independentreserve.com/">Independent Reserve</a>
+      </p>
+    </div>
+    <div>
+      <h3 id="brazil"><img src="/img/flags/BR.png" alt="Brazilian flag">Brazil</h3>
+      <p>
+        <a href="https://foxbit.com.br/">Foxbit</a><br>
+        <a href="https://www.mercadobitcoin.com.br/">Mercado Bitcoin</a><br>
+        <a href="https://www.omnitrade.io/">OmniTrade</a><br>
+        <a href="https://walltime.info/">Walltime</a>
+      </p>
+    </div>
+    <div>
+      <h3 id="cambodia"><img src="/img/flags/KH.png" alt="Cambodian flag">Cambodia</h3>
+      <p>
+        <a href="https://bitcoincambodia.com/">Bitcoin Cambodia</a>
+      </p>
+    </div>
+   </div>
+   <div>
+    <div>
+      <h3 id="canada"><img src="/img/flags/CA.png" alt="Canadian flag">Canada</h3>
+      <p>
+        <a href="https://bitaccess.co/">Bitaccess</a><br>
+        <a href="https://www.canadianbitcoins.com/">Canadian Bitcoins</a><br>
+        <a href="https://www.quadrigacx.com/">Quadriga CX</a><br>
+        <a href="https://quickbt.com/">QuickBT</a>
+      </p>
+    </div>
+    <div>
+      <h3 id="chile"><img src="/img/flags/CL.png" alt="Chilean flag">Chile</h3>
+      <p>
+        <a href="https://www.surbtc.com/">SurBTC</a><br>
+      </p>
+    </div>
+    <div>
+      <h3 id="china"><img src="/img/flags/CN.png" alt="Chinese flag">China</h3>
+      <p>
+        <a href="https://www.huobi.com/">Huobi</a><br>
+        <a href="https://www.okcoin.cn/">OKCoin</a>
+      </p>
     </div>
   </div>
-</div>
-<div class="toccontent-block boxexpand expanded">
-  <h2 class="exchanges-tab-title exchanges-asia-title" id="asia">Asia</h2>
-  <div class="marketplace-row">
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/KH.svg" alt="Cambodian flag">
-      <div>
-        <h3 id="cambodia" class="no_toc">Cambodia</h3>
-        <p>
-          <a class="marketplace-link" href="https://bitcoincambodia.com/">Bitcoin Cambodia</a>
-        </p>
-      </div>
+  <div>
+    <div>
+      <h3 id="costa-rica"><img src="/img/flags/CR.png" alt="Costa Rican flag">Costa Rica</h3>
+      <p>
+        <a href="https://www.bitmae.com/">BitMae</a>
+      </p>
     </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/CN.svg" alt="Chinese flag">
-      <div>
-        <h3 id="china" class="no_toc">China</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.huobi.com/">Huobi</a>
-          <br>
-          <a class="marketplace-link" href="https://www.okcoin.cn/">OKCoin</a>
-        </p>
-      </div>
+    <div>
+      <h3 id="colombia"><img src="/img/flags/CO.png" alt="Colombia flag">Colombia</h3>
+      <p>
+        <a href="https://www.surbtc.com/">SurBTC</a><br>
+      </p>
     </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/IN.svg" alt="Indian flag">
-      <div>
-        <h3 id="india" class="no_toc">India</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.coindelta.com">Coindelta</a>
-          <br>
-          <a class="marketplace-link" href="https://coinsecure.in/">Coinsecure</a>
-          <br>
-          <a class="marketplace-link" href="https://www.throughbit.com/">ThroughBit</a>
-          <br>
-          <a class="marketplace-link" href="https://www.zebpay.com">Zebpay</a>
-        </p>
-      </div>
-    </div>
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/ID.svg" alt="Indonesian flag">
-      <div>
-        <h3 id="indonesia" class="no_toc">Indonesia</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.bitcoin.co.id/">Bitcoin Indonesia</a>
-          <br>
-        </p>
-      </div>
-    </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/IL.svg" alt="Israeli flag">
-      <div>
-        <h3 id="israel" class="no_toc">Israel</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.bit2c.co.il/">Bit2C</a>
-          <br>
-          <a class="marketplace-link" href="https://www.bitsofgold.co.il/">Bits of Gold</a>
-          <br>
-        </p>
-      </div>
-    </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/JP.svg" alt="Japanese flag">
-      <div>
-        <h3 id="japan" class="no_toc">Japan</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.btcbox.co.jp/">BtcBox</a>
-          <br>
-          <a class="marketplace-link" href="https://coincheck.com/">Coincheck</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/MY.svg" alt="Malaysian flag">
-      <div>
-        <h3 id="malaysia" class="no_toc">Malaysia</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.luno.com/">Luno</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/UAE.svg" alt="United Arab Emirates flag">
-      <div>
-        <h3 id="united-arab-emirates" class="no_toc">United Arab Emirates</h3>
-        <p>
-          <a class="marketplace-link" href="https://bitoasis.net/">BitOasis</a>
-          <br>
-          <a class="marketplace-link" href="https://karsha.biz/">Karsha</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/KR.svg" alt="South Korean flag">
-      <div>
-        <h3 id="south-korea" class="no_toc">South Korea</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.bithumb.com/">Bithumb</a>
-          <br>
-          <a class="marketplace-link" href="https://coinone.co.kr/">Coinone</a>
-          <br>
-          <a class="marketplace-link" href="https://www.korbit.co.kr/">Korbit</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/SG.svg" alt="Singaporean flag">
-      <div>
-        <h3 id="singapore" class="no_toc">Singapore</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.luno.com/">Luno</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/NP.svg" alt="Nepalese flag">
-      <div>
-        <h3 id="nepal" class="no_toc">Nepal</h3>
-        <p>
-          <a class="marketplace-link" href="https://bitsewa.com/">Bitsewa</a>
-        </p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="toccontent-block boxexpand expanded">
-  <h2 class="exchanges-tab-title exchanges-australia-title" id="australia">Australia</h2>
-  <p>
-    <a class="marketplace-link" href="https://bitcoin.com.au/">Bitcoin Australia</a>
-    <br>
-    <a class="marketplace-link" href="https://www.coinjar.com/">CoinJar</a>
-    <br>
-    <a class="marketplace-link" href="https://www.coinloft.com.au/">CoinLoft</a>
-    <br>
-    <a class="marketplace-link" href="https://www.coinspot.com.au/">CoinSpot</a>
-    <br>
-    <a class="marketplace-link" href="https://www.cointree.com.au/">CoinTree</a>
-    <br>
-    <a class="marketplace-link" href="https://www.hardblock.net/">HardBlock</a>
-    <br>
-    <a class="marketplace-link" href="https://www.independentreserve.com/">Independent Reserve</a>
-  </p>
-</div>
-
-<div class="toccontent-block boxexpand expanded">
-  <h2 id="new-zealand" class="exchanges-tab-title exchanges-newzealand-title">New Zealand</h2>
-  <p>
-    <a class="marketplace-link" href="https://www.independentreserve.com/">Independent Reserve</a>
-    <br>
-    <a class="marketplace-link" href="https://kiwi-coin.com/">Kiwi-coin</a>
-  </p>
-</div>
-
-<div class="toccontent-block boxexpand expanded">
-  <h2 class="exchanges-tab-title exchanges-south-america-title" id="south-america">South America</h2>
-  <div class="marketplace-row">
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/AR.svg" alt="Argentinan flag">
-      <div>
-        <h3 id="argentina" class="no_toc">Argentina</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.satoshitango.com/">SatoshiTango</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/BR.svg" alt="Brazilian flag">
-      <div>
-        <h3 id="brazil" class="no_toc">Brazil</h3>
-        <p>
-          <a class="marketplace-link" href="https://foxbit.com.br/">Foxbit</a>
-          <br>
-          <a class="marketplace-link" href="https://www.mercadobitcoin.com.br/">Mercado Bitcoin</a>
-          <br>
-          <a class="marketplace-link" href="https://www.omnitrade.io/">OmniTrade</a>
-          <br>
-          <a class="marketplace-link" href="https://walltime.info/">Walltime</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/CL.svg" alt="Chilean flag">
-      <div>
-        <h3 id="chile" class="no_toc">Chile</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.surbtc.com/">SurBTC</a>
-          <br>
-        </p>
-      </div>
-    </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/CO.svg" alt="Colombia flag">
-      <div>
-        <h3 id="colombia" class="no_toc">Colombia</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.surbtc.com/">SurBTC</a>
-          <br>
-        </p>
-      </div>
-    </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/VE.svg" alt="Venezuelan flag">
-      <div>
-        <h3 id="venezuela" class="no_toc">Venezuela</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.cryptobuyer.io/">Cryptobuyer</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/PE.png" alt="Peruvian flag">
-      <div>
-        <h3 id="peru" class="no_toc">Peru</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.surbtc.com/">SurBTC</a>
-          <br>
-        </p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="toccontent-block boxexpand expanded">
-  <h2 class="exchanges-tab-title exchanges-north-america-title" id="north-america">North America</h2>
-  <div class="row marketplace-row">
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/CA.svg" alt="Canadian flag">
-      <div>
-        <h3 id="canada" class="no_toc">Canada</h3>
-        <p>
-          <a class="marketplace-link" href="https://bitaccess.co/">Bitaccess</a>
-          <br>
-          <a class="marketplace-link" href="https://www.canadianbitcoins.com/">Canadian Bitcoins</a>
-          <br>
-          <a class="marketplace-link" href="https://www.quadrigacx.com/">Quadriga CX</a>
-          <br>
-          <a class="marketplace-link" href="https://quickbt.com/">QuickBT</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/CR.png" alt="Costa Rican flag">
-      <div>
-        <h3 id="costa-rica" class="no_toc">Costa Rica</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.bitmae.com/">BitMae</a>
-        </p>
-      </div>
-    </div>
-    
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/US.svg" alt="United States flag">
-      <div>
-        <h3 id="united-states" class="no_toc">United States</h3>
-        <p>
-          <a class="marketplace-link" href="https://gemini.com/">Gemini</a>
-          <br>
-          <a class="marketplace-link" href="https://www.itbit.com/">itBit</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/MX.svg" alt="Mexican flag">
-      <div>
-        <h3 id="mexico" class="no_toc">Mexico</h3>
-        <p>
-          <a class="marketplace-link" href="https://bitso.com/">Bitso</a>
-          <br>
-          <a class="marketplace-link" href="https://www.volabit.com/">Volabit</a>
-        </p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="toccontent-block boxexpand expanded">
-  <h2 class="exchanges-tab-title exchanges-africa-title" id="africa">Africa</h2>
-  <div class="row marketplace-row">
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/NG.svg" alt="Nigerian flag">
-      <div>
-        <h3 id="nigeria" class="no_toc">Nigeria</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.luno.com/">Luno</a>
-        </p>
-      </div>
-    </div>
-    <div class="row marketplace">
-      <img class="marketplace-flag" src="/img/flags/ZA.svg" alt="South African flag">
-      <div>
-        <h3 id="south-africa" class="no_toc">South Africa</h3>
-        <p>
-          <a class="marketplace-link" href="https://www.ice3x.com/">iceCUBED</a>
-          <br>
-          <a class="marketplace-link" href="https://www.luno.com/">Luno</a>
-        </p>
-      </div>
+    <div>
+      <h3 id="india"><img src="/img/flags/IN.png" alt="Indian flag">India</h3>
+      <p>
+        <a href="https://www.coindelta.com">Coindelta</a><br>
+        <a href="https://coinsecure.in/">Coinsecure</a><br>
+        <a href="https://www.throughbit.com">ThroughBit</a><br>
+        <a href="https://www.zebpay.com">Zebpay</a>
+      </p>
     </div>
   </div>
-</div>
+  <div>
+    <div>
+      <h3 id="indonesia"><img src="/img/flags/ID.png" alt="Indonesian flag">Indonesia</h3>
+      <p>
+        <a href="https://www.bitcoin.co.id/">Bitcoin Indonesia</a><br>
+      </p>
+    </div>
+    <div>
+      <h3 id="israel"><img src="/img/flags/IL.png" alt="Israeli flag">Israel</h3>
+      <p>
+        <a href="https://www.bit2c.co.il/">Bit2C</a><br>
+        <a href="https://www.bitsofgold.co.il/">Bits of Gold</a><br>
+      </p>
+    </div>
+    <div>
+      <h3 id="japan"><img src="/img/flags/JP.png" alt="Japanese flag">Japan</h3>
+      <p>
+        <a href="https://www.btcbox.co.jp/">BtcBox</a><br>
+        <a href="https://coincheck.com/">Coincheck</a>
+      </p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h3 id="malaysia"><img src="/img/flags/MY.png" alt="Malaysian flag">Malaysia</h3>
+      <p>
+        <a href="https://www.luno.com/">Luno</a>
+      </p>
+    </div>
+    <div>
+      <h3 id="mexico"><img src="/img/flags/MX.png" alt="Mexican flag">Mexico</h3>
+      <p>
+        <a href="https://bitso.com/">Bitso</a><br>
+        <a href="https://www.volabit.com/">Volabit</a>
+      </p>
+    </div>
+    <div>
+      <h3 id="new-zealand"><img src="/img/flags/NZ.png" alt="New Zealand Flag">New Zealand</h3>
+      <p>
+        <a href="https://www.independentreserve.com/">Independent Reserve</a><br>
+        <a href="https://kiwi-coin.com/">Kiwi-coin</a>
+      </p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h3 id="nigeria"><img src="/img/flags/NG.png" alt="Nigerian flag">Nigeria</h3>
+      <p>
+        <a href="https://www.luno.com/">Luno</a>
+      </p>
+    </div>
+    <div>
+      <h3 id="peru"><img src="/img/flags/PE.png" alt="Peruvian flag">Peru</h3>
+      <p>
+        <a href="https://www.surbtc.com/">SurBTC</a><br>
+      </p>
+    </div>
+    <div>
+      <h3 id="poland"><img src="/img/flags/PL.png" alt="Polish flag">Poland</h3>
+      <p>
+        <a href="https://www.bitbay.net/">BitBay</a>
+      </p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h3 id="singapore"><img src="/img/flags/SG.png" alt="Singaporean flag">Singapore</h3>
+      <p>
+        <a href="https://www.luno.com/">Luno</a>
+      </p>
+    </div>
+    <div>
+      <h3 id="south-africa"><img src="/img/flags/ZA.png" alt="South African flag">South Africa</h3>
+      <p>
+        <a href="https://www.ice3x.com/">iceCUBED</a><br>
+        <a href="https://www.luno.com/">Luno</a>
+      </p>
+    </div>
+    <div>
+      <h3 id="south-korea"><img src="/img/flags/KR.png" alt="South Korean flag">South Korea</h3>
+      <p>
+        <a href="https://www.bithumb.com/">Bithumb</a><br>
+        <a href="https://coinone.co.kr/">Coinone</a><br>
+        <a href="https://www.korbit.co.kr/">Korbit</a>
+      </p>
+    </div>
+   </div>
+   <div>
+    <div>
+      <h3 id="ukraine"><img src="/img/flags/UA.png" alt="Ukraine flag">Ukraine</h3>
+      <p>
+        <a href="https://kuna.io/">Kuna</a>
+      </p>
+    </div>
+    <div>
+      <h3 id="united-arab-emirates"><img src="/img/flags/UAE.png" alt="United Arab Emirates flag">United Arab Emirates</h3>
+      <p>
+        <a href="https://bitoasis.net/">BitOasis</a><br>
+        <a href="https://karsha.biz/">Karsha</a>
+      </p>
+    </div>
+    <div>
+      <h3 id="united-kingdom"><img src="/img/flags/UK.png" alt="United Kingdom flag">United Kingdom</h3>
+      <p>
+        <a href="https://bittylicious.com/">Bittylicious</a><br>
+        <a href="https://www.coincorner.com/">CoinCorner</a><br>
+        <a href="https://www.coinfloor.co.uk/">Coinfloor</a>
+      </p>
+    </div>
+   </div>
+   <div>
+    <div>
+      <h3 id="united-states"><img src="/img/flags/US.png" alt="United States flag">United States</h3>
+      <p>
+        <a href="https://gemini.com/">Gemini</a><br>
+        <a href="https://www.itbit.com/">itBit</a>
+      </p>
+    </div>
+    <div>
+      <h3 id="venezuela"><img src="/img/flags/VE.png" alt="Venezuelan flag">Venezuela</h3>
+      <p>
+        <a href="https://www.cryptobuyer.io/">Cryptobuyer</a>
+      </p>
+    </div>
+   </div>
+  </div>
 
-
-<p class="introlink exchanges-introlink exchanges-buy-link">Visit
-  <a href="https://www.buybitcoinworldwide.com/">Buy Bitcoin Worldwide</a> for user reviews on some of the above exchanges.
-</p>
-<p class="introlink exchanges-introlink">Visit
-  <a href="https://coinatmradar.com/">Coin ATM Radar</a> to find local Bitcoin ATMs.
-</p>
+<div class="introlink">Visit <a href="https://www.buybitcoinworldwide.com/">Buy Bitcoin Worldwide</a> for
+    user reviews on some of the above exchanges.</div>
+<div class="introlink">Visit <a href="https://coinatmradar.com/">Coin ATM Radar</a> to find local Bitcoin ATMs.</div>

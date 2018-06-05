@@ -32,4 +32,6 @@ Here are some ways you can help:
   either by editing `_events.yml` according to the [event instructions](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-events-release-notes-and-alerts.md)
   or by filling in a [pre-made events issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22).
 
-* Help improve Bitcoin.org another way. Email volunteer coordinator Will Binns ([will@bitcoin.org](mailto:will@bitcoin.org)) to let us know how what you're interested in and how you'd like to get involved.
+* Help improve Bitcoin.org another way. Email volunteer coordinators Will Binns ([will@bitcoin.org](mailto:will@bitcoin.org))
+  or Dave Harding ([dave@dtrt.org](mailto:dave@dtrt.org)) to let us know how
+  what you're interested in and how you'd like to get involved.

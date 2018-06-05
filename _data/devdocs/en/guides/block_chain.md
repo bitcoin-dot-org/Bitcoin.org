@@ -4,7 +4,6 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/block_chain.md" %}
 
-
 ## Block Chain
 {% include helpers/subhead-links.md %}
 

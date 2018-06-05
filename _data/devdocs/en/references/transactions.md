@@ -4,7 +4,6 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/references/transactions.md" %}
 
-
 ## Transactions
 {% include helpers/subhead-links.md %}
 

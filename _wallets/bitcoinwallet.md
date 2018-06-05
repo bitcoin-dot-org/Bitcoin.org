@@ -4,7 +4,7 @@
 
 id: bitcoinwallet
 title: "Bitcoin Wallet"
-titleshort: "Bitcoin Wallet"
+titleshort: "Bitcoin<br>Wallet"
 compat: "mobile android"
 level: 2
 platform:

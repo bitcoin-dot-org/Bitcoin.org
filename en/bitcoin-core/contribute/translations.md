@@ -13,17 +13,7 @@ breadcrumbs:
   - bcc contribute
   - Translations
 ---
-
-<div class="hero">
-<div class="container hero-container" markdown="block">
-
 # Translating Bitcoin Core
-{% include helpers/hero-social.html %}
-</div>
-</div>
-
-<div class="bitcore-content">
-<div class="container" markdown="block">
 
 Bitcoin Core has been fully translated into over two dozen languages,
 with dozens more languages partially translated---but more help is
@@ -60,13 +50,10 @@ listed on Transifex or ask (in English) in the [#bitcoin-dev][] IRC
 chatroom.*
 
 <br class="clear big">
-<div class="prevnext" markdown="block">
-[PREV][bcc contribute documentation]
-[NEXT][bcc contribute support]
+<div class="prevnext">
+<span markdown="1">**Previous**<br>[Documentation][bcc contribute documentation]</span>
+<span markdown="1">**Next**<br>[Tech support][bcc contribute support]</span>
 </div>
 <br class="clear">
 
 {% include references.md %}
-
-</div>
-</div>
