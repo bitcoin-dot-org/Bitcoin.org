@@ -39,20 +39,15 @@ p{
 .menusimple li a:visited,
 .menusimple li a:link{
 	font-family:'DroidNaskh', sans-serif;
+	text-align:right;
 }
 .menusimple li ul{
 	right:0;
 	left:auto;
 }
-.footer-bottom-row {
-	direction: ltr;
-}
 .footermenu a{
 	margin-right:0;
 	margin-left:15px;
-}
-.footer-social-link:not(:last-child) {
-    margin-left: 10px;
 }
 .statusmenu{
 	padding-left:0;
@@ -84,9 +79,6 @@ h2 .rssicon{
 .mainbutton img{
 	margin-left:10px;
 	margin-right:-52px;
-}
-.mainlist-item img {
-	margin: 0 0 0 25px;
 }
 .contributors{
 	text-align:right;
@@ -155,13 +147,22 @@ h2 .rssicon{
 	padding-right:0;
 	padding-left:40px;
 	border-right:0;
+	border-left:1px solid #e0e0e0;
 }
 .start>div>div:first-child+div{
 	padding-left:0;
 	padding-right:40px;
 	border-left:0;
+	border-right:1px solid #e0e0e0;
 	margin-right:-1px
 }
+.start div div div a,
+.start div div div a:link,
+.start div div div a:active,
+.start div div div a:visited{
+	padding:0 8px;
+}
+
 .anchorAf a{
 	left:0;
 	right:-24px;
@@ -190,15 +191,36 @@ h2 .rssicon{
 .tablehalf p{
 	text-align:right;
 }
-.walletmenu {
-	direction: ltr;
-}
+
 .walletmenu>ul{
 	text-align:right;
 }
 .walletmenu>ul li{
 	font-family:'DroidNaskh', sans-serif;
+	background-position:right 6px;
 }
+.walletmenu>ul>li a{
+	padding:8px 42px 5px 10px;
+}
+.walletmenu>ul>li ul{
+	left:auto;
+	right:0;
+}
+.walletmenu>ul>li>ul li{
+	background-position:right 10px;
+}
+.walletmenu>ul>li.active,
+.walletmenu>ul>li:hover{
+	background-position:right -62px;
+}
+.walletmenu>ul>li>ul>li.active,
+.walletmenu>ul>li>ul>li:hover{
+	background-position:right -24px;
+}
+.walletmenu>ul>li>ul li.active>a{
+	background-position:left center;
+}
+
 .wallets{
 	text-align:right;
 }
@@ -289,49 +311,7 @@ h2 .rssicon{
 	margin-right:0;
 	margin-left:14px;
 }
-.recommendation-card .wallet-icon {
-	margin-left: 23px;
-}
-.developers-link {
-	direction: ltr;
-}
-.organizations-item {
-	margin-left: 2.5%;
-	margin-right: 0;
-	text-align: right;
-}
-.organizations-item:nth-child(3n+3) {
-	margin-left: 0;
-	margin-right: 0;
-}
-.organization-img {
-	margin-right: 0;
-	margin-left: 28px;
-}
-.toc-row {
-	direction: ltr;
-}
-.btn-container {
-	direction: ltr;
-}
-.wallet-list {
-	direction: ltr;
-}
-.accordion-item {
-	margin: 0 3% 20px 0;
-}
-.filter-row {
-	direction: ltr;
-}
-.wallet .wallet-platforms .wallet-os-container .wallet-os-download-buttons {
-	direction: ltr;
-}
-.own {
-	direction: ltr;
-}
-.own-text {
-	direction: rtl;
-}
+	
 /*Override UbuntuBold by Droid Naskh*/
 
 @font-face{font-family:'DroidNaskh';src:url('/font/droidnaskh/droidnaskh-regular.eot');font-weight:normal;font-style:normal;}
@@ -422,27 +402,5 @@ h2 .rssicon{
 	}
 	.tablehalf div{
 		margin-right:0;
-	}
-	.footer-social {
-    justify-content: center;
-	}
-	.organizations-item {
-    margin-left: 0;
-	}
-}
-@media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ){
-	.is-expanded+.accordion-content {
-		direction: ltr;
-	}
-	.is-expanded+.accordion-content {
-    direction: ltr;
-	}
-}
-@media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
-	.maincard img {
-		margin: 0 0 0 28px;
-	}
-	.maincard {
-		text-align: right;
 	}
 }

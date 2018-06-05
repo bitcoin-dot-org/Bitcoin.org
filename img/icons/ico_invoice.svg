@@ -1,41 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="34px" height="41px" viewBox="0 0 34 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
-    <title>icon</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <polyline id="path-1" points="0 11.3305964 0 0 30 0 30 37 0 37"></polyline>
-        <polygon id="path-2" points="4 3 22.8504551 3 22.8504551 14.1825112 33 14.1825112 33 41 4 41"></polygon>
-    </defs>
-    <g id="Template-3---Bitcoin-resources" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="22.01.18-Bitcoin.org_Bitcoin-resources_Desktop-1200px--" transform="translate(-784.000000, -607.000000)">
-            <g id="//contenct" transform="translate(215.000000, 555.000000)">
-                <g id="box2" transform="translate(400.000000, 0.000000)">
-                    <g id="icon" transform="translate(155.000000, 42.000000)">
-                        <g id="icon/directories">
-                            <g id="file">
-                                <rect id="Rectangle-2" x="0" y="0" width="60" height="60"></rect>
-                                <g id="Group" transform="translate(14.000000, 10.000000)">
-                                    <g id="Rectangle" transform="translate(15.000000, 18.500000) scale(-1, 1) translate(-15.000000, -18.500000) ">
-                                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
-                                        <path stroke="#FF9500" stroke-width="1" d="M0.5,36.5 L29.5,36.5 L29.5,0.5 L0.5,0.5 L0.5,36.5 Z"></path>
-                                    </g>
-                                    <g id="Rectangle-3">
-                                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
-                                        <path stroke="#1C1F30" stroke-width="1" d="M4.5,3.5 L4.5,40.5 L32.5,40.5 L32.5,14.6825112 L22.3504551,14.6825112 L22.3504551,3.5 L4.5,3.5 Z"></path>
-                                    </g>
-                                    <path d="M27.2962963,17 L9.7037037,17 C9.31525926,17 9,17.2235 9,17.5 C9,17.7765 9.31525926,18 9.7037037,18 L27.2962963,18 C27.6847407,18 28,17.7765 28,17.5 C28,17.2235 27.6847407,17 27.2962963,17 Z" id="Shape" fill="#1C1F30" fill-rule="nonzero"></path>
-                                    <path d="M9.66666667,13 L16.3333333,13 C16.7013333,13 17,12.7765 17,12.5 C17,12.2235 16.7013333,12 16.3333333,12 L9.66666667,12 C9.29866667,12 9,12.2235 9,12.5 C9,12.7765 9.29866667,13 9.66666667,13 Z" id="Shape" fill="#1C1F30" fill-rule="nonzero"></path>
-                                    <path d="M27.2962963,23 L9.7037037,23 C9.31525926,23 9,23.2235 9,23.5 C9,23.7765 9.31525926,24 9.7037037,24 L27.2962963,24 C27.6847407,24 28,23.7765 28,23.5 C28,23.2235 27.6847407,23 27.2962963,23 Z" id="Shape" fill="#1C1F30" fill-rule="nonzero"></path>
-                                    <path d="M27.2962963,28 L9.7037037,28 C9.31525926,28 9,28.2235 9,28.5 C9,28.7765 9.31525926,29 9.7037037,29 L27.2962963,29 C27.6847407,29 28,28.7765 28,28.5 C28,28.2235 27.6847407,28 27.2962963,28 Z" id="Shape" fill="#1C1F30" fill-rule="nonzero"></path>
-                                    <path d="M27.2962963,33 L9.7037037,33 C9.31525926,33 9,33.2235 9,33.5 C9,33.7765 9.31525926,34 9.7037037,34 L27.2962963,34 C27.6847407,34 28,33.7765 28,33.5 C28,33.2235 27.6847407,33 27.2962963,33 Z" id="Shape" fill="#1C1F30" fill-rule="nonzero"></path>
-                                    <path d="M22.4604006,3.33786277 L32.6450836,14.5406476" id="Path-2" stroke="#1C1F30"></path>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+  <g stroke="#000" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M6.676 3.934v24.024l18.519.04.079-17.545-6.371-6.519z" stroke-width="2.699"/>
+    <path d="M25.274 10.305l-6.313-.019.072-6.312z" stroke-width="2.361"/>
+  </g>
 </svg>

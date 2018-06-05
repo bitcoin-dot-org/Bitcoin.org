@@ -13,16 +13,8 @@ breadcrumbs:
   - bcc features
   - Interface
 ---
-<div class="hero">
-<div class="container hero-container" markdown="block">
-
 # Bitcoin Core's User Interface
-{% include helpers/hero-social.html %}
-</div>
-</div>
-
-<div class="bitcore-content">
-<div class="container" markdown="block">
+{:.not-displayed}
 
 ![Bitcoin Core User Interface](/img/bitcoin-core/slider-ui.svg)
 
@@ -43,123 +35,76 @@ configuration.
 ## Bitcoin Core Wallet GUI (Graphical) {#graphical}
 
 {% comment %}<!-- Limit to a maximum of 10 features to avoid overwhelming the reader -->{% endcomment %}
-<div markdown="block" class="row card-row">
+<div markdown="block" class="two-column-list">
 
-<div class="card core-card">
-<img src="/img/icons/ico_clear.svg" alt="icon">
-<h3 class="popup js" id="clear-overview" data-container="gui_overview">Clear overview</h3>
-<p>See your current balance and recent transactions</p>
-</div>
+{:.fa-ul}
+- <span class="fa fa-li fa-desktop fa-2x"></span> **<button class="popup js" data-container="gui_overview">Clear overview</button>**<br
+>See your current balance and recent transactions
 
-<div class="card core-card">
-<img src="/img/icons/ico_fee_slider.svg" alt="icon">
-<h3 class="popup js" id="fee-slider" data-container="gui_fee_slider">Fee slider</h3>
-<p>Easily choose between low fees and fast confirmation</p>
-</div>
+- <span class="fa fa-li fa-toggle-on fa-2x"></span> **<button class="popup js" data-container="gui_fee_slider">Fee slider</button>**<br
+>Easily choose between low fees and fast confirmation
 
-<div class="card core-card">
-<img src="/img/icons/ico_coin_control.svg" alt="icon">
-<h3 class="popup js" id="coin-control" data-container="gui_coin_control">Coin control</h3>
-<p>Enhance privacy or save money by choosing your inputs</p>
-</div>
+- <span class="fa fa-li fa-btc fa-2x"></span> **<button class="popup js" data-container="gui_coin_control">Coin control</button>**<br
+>Enhance privacy or save money by choosing your inputs
 
-<div class="card core-card">
-<img src="/img/icons/ico_qrcode.svg" alt="icon">
-<h3 class="popup js" id="qr-codes" data-container="gui_qr_codes">QR codes</h3>
-<p>Generate QR codes to receive payment</p>
-</div>
+- <span class="fa fa-li fa-qrcode fa-2x"></span> **<button class="popup js" data-container="gui_qr_codes">QR codes</button>**<br
+>Generate QR codes to receive payment
 
-<div class="card core-card">
-<img src="/img/icons/ico_invoices.svg" alt="icon">
-<h3 class="popup js" id="unique-invoices" data-container="gui_unique_invoices">Unique invoices</h3>
-<p>Easily track who paid you</p>
-</div>
+- <span class="fa fa-li fa-file-text-o fa-2x"></span> **<button class="popup js" data-container="gui_unique_invoices">Unique invoices</button>**<br
+>Easily track who paid you
 
-<div class="card core-card">
-<img src="/img/icons/ico_control.svg" alt="icon">
-<h3 class="popup js" id="proxy-configuration" data-container="gui_proxy_configuration">Proxy configuration</h3>
-<p>Use Tor or a proxy for privacy</p>
-</div>
+- <span class="fa fa-li fa-shield fa-2x"></span> **<button class="popup js" data-container="gui_proxy_configuration">Proxy configuration</button>**<br
+>Use Tor or a proxy for privacy
 
-<div class="card core-card">
-<img src="/img/icons/ico_monitoring.svg" alt="icon">
-<h3 class="popup js" id="network-monitoring" data-container="gui_network_monitoring">Network monitoring</h3>
-<p>Track how much bandwidth you use</p>
-</div>
+- <span class="fa fa-li fa-bar-chart fa-2x"></span> **<button class="popup js" data-container="gui_network_monitoring">Network monitoring</button>**<br
+>Track how much bandwidth you use
 
-<div class="card core-card">
-<img src="/img/icons/ico_watch-only.svg" alt="icon">
-<h3 class="popup js" id="support" data-container="gui_watch_only">Watch-only support</h3>
-<p>Track bitcoins stored safely offline</p>
-</div>
+- <span class="fa fa-li fa-power-off fa-2x"></span> **<button class="popup js" data-container="gui_watch_only">Watch-only support</button>**<br
+>Track bitcoins stored safely offline
 
 </div>
+<br class="clear">
 
 
 ## Bitcoin Core Wallet RPC/REST (CLI) {#cli}
 
 {% comment %}<!-- Limit to a maximum of 10 features to avoid overwhelming the reader -->{% endcomment %}
 
-<div markdown="block" class="row card-row">
+<div markdown="block" class="two-column-list">
 
-<div class="card core-card">
-<img src="/img/icons/get-new-address.svg" alt="icon">
-<h3 class="popup js" id="GetNewAddress" data-container="rpc_getnewaddress">GetNewAddress</h3>
-<p>Get a new address for receiving payment</p>
-</div>
+{:.fa-ul}
+- <span class="fa fa-li fa-plus-square-o fa-2x"></span> **<button class="popup js" data-container="rpc_getnewaddress">GetNewAddress</button>**<br
+>Get a new address for receiving payment
 
-<div class="card core-card">
-<img src="/img/icons/get-balance.svg" alt="icon">
-<h3 class="popup js" id="GetBalance" data-container="rpc_getbalance">GetBalance</h3>
-<p>Instantly see your available Bitcoin balance</p>
-</div>
+- <span class="fa fa-li fa-area-chart fa-2x"></span> **<button class="popup js" data-container="rpc_getbalance">GetBalance</button>**<br
+>Instantly see your available Bitcoin balance
 
-<div class="card core-card">
-<img src="/img/icons/ico_send.svg" alt="icon">
-<h3 class="popup js" id="SendMany" data-container="rpc_sendmany">SendMany</h3>
-<p>Send a single payment to multiple addresses</p>
-</div>
+- <span class="fa fa-li fa-arrows fa-2x"></span> **<button class="popup js" data-container="rpc_sendmany">SendMany</button>**<br
+>Send a single payment to multiple addresses
 
-<div class="card core-card">
-<img src="/img/icons/ico_list.svg" alt="icon">
-<h3 class="popup js" id="ListUnspent" data-container="rpc_listunspent">ListUnspent</h3>
-<p>See what received transactions you can spend</p>
-</div>
+- <span class="fa fa-li fa-list fa-2x"></span> **<button class="popup js" data-container="rpc_listunspent">ListUnspent</button>**<br
+>See what received transactions you can spend
 
-<div class="card core-card">
-<img src="/img/icons/create-sign-send.svg" alt="icon">
-<h3 class="popup js" id="create-sign-send" data-container="rpc_rawtx">Create/Sign/Send</h3>
-<p>Create and send raw transactions</p>
-</div>
+- <span class="fa fa-li fa-share-square-o fa-2x"></span> **<button class="popup js" data-container="rpc_rawtx">Create/Sign/Send</button>**<br
+>Create and send raw transactions
 
-<div class="card core-card">
-<img src="/img/icons/ico_notification.svg" alt="icon">
-<h3 class="popup js" id="Notification" data-container="notification">Notification</h3>
-<p>Be notified of new blocks and transactions</p>
-</div>
+- <span class="fa fa-li fa-bell-o fa-2x"></span> **<button class="popup js" data-container="notification">Notification</button>**<br
+>Be notified of new blocks and transactions
+
 
 </div>
+<br class="clear">
 
-<div class="alert ui-alert" markdown="block">
 **Learn more:** documentation for the [RPC][rpc] and [REST][rest] interfaces
-</div>
 
 ## Lightweight Wallets Using Bitcoin Core {#lightweight}
-
-<div class="row lightweight-wallets-row" markdown="block">
-
-<div markdown="block">
-![Non-private connection](/img/bitcoin-core/connection-types-p2p-spv.svg)
 
 Lightweight wallets usually connect to several random full nodes (like
 Bitcoin Core) to send and receive all of their data. In the process they
 [leak private data][bcc privacy data leaking] and make themselves more
 [vulnerable to attacks][bcc validation protection].
-</div>
 
-<div markdown="block">
-
-![Secure and private connection](/img/bitcoin-core/connection-types-trusted-peer.svg)
+![Non-private connection](/img/bitcoin-core/connection-types-p2p-spv.svg)
 
 But it's also possible to connect certain lightweight wallets solely to
 your own Bitcoin Core full node, called a trusted peer. If you do this
@@ -168,8 +113,9 @@ lightweight wallet, you'll get most of the security and privacy
 benefits of a full node as well as [help protect decentralization][bcc
 validation decentralization].
 
-</div>
-</div>
+![Secure and private connection](/img/bitcoin-core/connection-types-trusted-peer.svg)
+
+<br>
 
 ### Trusted Peer Support {#trusted-peer}
 
@@ -205,7 +151,7 @@ you'll have enhanced security as well as privacy from random peers on
 the Bitcoin network.
 
 {:.right-hanger}
-[Get GreenBits](https://play.google.com/store/apps/details?id=com.greenaddress.greenbits_android_wallet)
+[Get GreenBits <span class="fa fa-external-link-square"></span>](https://play.google.com/store/apps/details?id=com.greenaddress.greenbits_android_wallet)
 </div>
 
 ### mSigna
@@ -221,7 +167,7 @@ chain, and then start mSigna---it will automatically connect to your
 Bitcoin Core full node.
 
 {:.right-hanger}
-[Get mSigna](https://ciphrex.com/redirect/?referer=bitcoin.org)
+[Get mSigna <span class="fa fa-external-link-square"></span>](https://ciphrex.com/redirect/?referer=bitcoin.org)
 </div>
 
 </div>
@@ -391,12 +337,11 @@ Bitcoin Core full node.
 
 </div>
 
-<div class="prevnext" markdown="block">
-[PREV][bcc requirements]
-[NEXT][bcc network support]
+<br class="clear big">
+<div class="prevnext">
+<span markdown="1">**Previous Feature**<br>[Requirements][bcc requirements]</span>
+<span markdown="1">**Next feature**<br>[Network Support][bcc network support]</span>
 </div>
 <br class="clear">
 
 {% include references.md %}
-</div>
-</div>

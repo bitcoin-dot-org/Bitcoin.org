@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="50px" height="43px" viewBox="0 0 50 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
-    <title>warning-weather-interface-outlined-symbol</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="new-TEMPLATE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Bitcoin.org---Bitcoin-core-Template" transform="translate(-358.000000, -2314.000000)" fill="#FF9500" fill-rule="nonzero">
-            <g id="Group-26" transform="translate(215.000000, 1483.000000)">
-                <g id="Group-25" transform="translate(100.000000, 510.000000)">
-                    <g id="you-should-know" transform="translate(0.000000, 262.000000)">
-                        <g id="note-rectangle">
-                            <g id="always-remember">
-                                <g id="warning-weather-interface-outlined-symbol" transform="translate(43.000000, 59.000000)">
-                                    <path d="M24.9999497,13.4615385 C23.8421064,13.4615385 23.0769231,14.4268414 23.0769231,15.382089 L23.0769231,26.9255027 C23.0769231,28.0818552 23.8421064,28.8461538 24.9999497,28.8461538 C26.1577929,28.8461538 26.9230769,27.8807504 26.9230769,26.9255027 L26.9230769,15.382089 C26.9230769,14.2257366 26.1577929,13.4615385 24.9999497,13.4615385 Z" id="Shape"></path>
-                                    <circle id="Oval" cx="25" cy="34.6153846" r="1.92307692"></circle>
-                                    <path d="M49.0562773,35.7569539 L28.1013476,2.02568989 C26.3567939,-0.675229963 23.6385359,-0.675229963 21.8939822,2.02568989 L0.949195264,35.7569539 C-1.18078307,39.4152893 0.371058288,42.3076923 4.63101495,42.3076923 L45.1716025,42.3076923 C49.6344143,42.3076923 51.1862556,39.4252666 49.0562773,35.7569539 Z M45.7598822,40.3826822 L4.2455903,40.3826822 C2.11561197,40.3826822 1.33461991,38.8407392 2.50103662,37.107313 L23.8413909,2.80170044 C24.4195279,1.64272364 25.5859446,1.64272364 26.3668353,2.80170044 L47.7071896,37.107313 C48.6708526,38.8407392 47.8898606,40.3826822 45.7598822,40.3826822 Z" id="Shape"></path>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+  <g>
+    <path d="M15.909 6.985l-10.628 17.435h21.299z" fill="#ee9209" stroke="#ee9209" stroke-width="6.54" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M17.439 14.396c0 1.155-.042 2.213-.125 3.174-.084.961-.188 1.928-.313 2.902h-1.796c-.139-.974-.251-1.942-.334-2.902-.084-.974-.125-2.032-.125-3.174v-3.884h2.694v3.884m.313 9.208c0 .487-.16.884-.48 1.19-.32.306-.717.459-1.19.459-.459 0-.856-.153-1.19-.459-.32-.306-.48-.703-.48-1.19s.16-.884.48-1.19c.334-.32.731-.48 1.19-.48.473 0 .87.16 1.19.48.32.306.48.703.48 1.19" style="line-height:125%;-inkscape-font-specification:Ubuntu Medium" font-size="28.564" font-weight="500" letter-spacing="0" word-spacing="0" fill="#fff" font-family="Ubuntu"/>
+  </g>
 </svg>

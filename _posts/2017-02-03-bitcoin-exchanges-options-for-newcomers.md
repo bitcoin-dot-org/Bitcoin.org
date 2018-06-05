@@ -5,7 +5,6 @@
 type: posts
 layout: post
 category: blog
-show_toc: true
 
 title: "Bitcoin Exchanges: Options for Newcomers to Bitcoin Now Available"
 permalink: /en/posts/bitcoin-exchanges-options-for-newcomers.html
@@ -14,20 +13,14 @@ author: |
   <a href="https://github.com/wbnns">Will Binns</a>
 ---
 
-<div class="post-content" markdown="1">
-
 {:.center}
 ![Bitcoin Exchanges](/img/blog/free/bitcoin-exchanges.png)
 
 [A directory of Bitcoin Exchanges servicing the world’s 20 largest
 economies](https://bitcoin.org/en/exchanges), as well as several international
 options (serving many countries) are now available on Bitcoin.org.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Helping People Interested in Bitcoin, Get Bitcoin
-
 This new addition to the site:
 
 - Links to the `Find an Exchange` button on the [Getting Started](https://bitcoin.org/en/getting-started)
@@ -46,21 +39,13 @@ on wallets that allow people to maintain full control over their funds
 because custodial wallets that provide exchange services can be moved off of the
 wallets page to this new page).
 - Is also accessible via the Resources `dropdown` menu.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Questions, Comments & Feedback
-
 Questions, issues, suggestions or feedback are always welcome on Bitcoin.org. If
 interested in contributing in this regard, please open an issue or submit a pull
 request.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Use Discretion when Choosing an Exchange
-
 As noted in the above screen shot, Bitcoin Exchanges provide varying degrees of
 safety, security, privacy, and control over your funds and information. Perform
 your own due diligence and choose a wallet where you will keep your bitcoin
@@ -71,4 +56,3 @@ before selecting an exchange.
 Interested in getting involved with Bitcoin.org?
 
 [Learn how you can participate](https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate).
-</div>

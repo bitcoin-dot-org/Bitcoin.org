@@ -5,7 +5,6 @@
 type: posts
 layout: post
 category: blog
-show_toc: true
 
 title: "Updated Instructions: How to Run a Full Node"
 permalink: /en/posts/how-to-run-a-full-node.html
@@ -14,7 +13,6 @@ author: |
   <a href="https://github.com/wbnns">Will Binns</a>
 ---
 
-<div class="post-content" markdown="1">
 {:.center}
 ![How to Run a Full Node](/img/blog/free/how-to-run-a-full-bitcoin-node.png)
 
@@ -33,12 +31,8 @@ In addition to the above operating systems, tips on [how to configure a full
 bitcoin node for a local area network](https://bitcoin.org/en/full-node#network-configuration)
 and [how to tweak the reference client configuration](https://bitcoin.org/en/full-node#configuration-tuning)
 are available.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Why is running a full bitcoin node important?
-
 Full nodes help enforce the consensus rules of the Bitcoin network. When a full
 node client is running, it downloads every new block and every new transaction
 and checks them to make sure they are valid. Here are some examples of consensus
@@ -56,13 +50,8 @@ rules, though there are many more:
 
 *Read more about what a full node is, the consensus rules above and other
 incentives for supporting the network in the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Full_node).*
-</div>
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Minimum Requirements
-
 Bitcoin Core full nodes have certain requirements. If you try running a node on
 weak hardware, it may work — but you’ll likely spend more time dealing with
 issues. If you can meet the following requirements, you’ll have an easy-to-use
@@ -94,22 +83,14 @@ is often the default setting on laptops and on all Mac OS X laptops and
 desktops. Check your screensaver settings and disable automatic “sleep” or
 “suspend” options to ensure you support the network whenever your computer is
 running.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## What to do if you need help
-
 Please seek out assistance in the [community](https://bitcoin.org/en/community)
 if you need help setting up your full node correctly to handle high-value and
 privacy-sensitive tasks. Do your own diligence to ensure who you get help from
 is ethical, reputable and qualified to assist you.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Acknowledgments
-
 A special thanks goes to the contributors (in no preferential order) who have
 worked to improve this page over time:
 
@@ -138,4 +119,3 @@ worked to improve this page over time:
 **Interested in getting involved?**
 
 [Learn how you can participate](https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate).
-</div>

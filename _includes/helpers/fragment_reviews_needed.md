@@ -8,7 +8,7 @@ http://opensource.org/licenses/MIT.
   <div>
     <b>BETA</b>: {% translate fragmentreviewsneeded developer-documentation %}
     <a href="#" onclick="disclaimerClose(event);">{% translate fragmentreviewsneededcloselink developer-documentation %}</a>
-    <a class="develdocdisclaimerclose" onclick="disclaimerClose(event);"></a>
+    <a class="develdocdisclaimerclose" onclick="disclaimerClose(event);">X</a>
   </div>
 </div>
 <script>disclaimerAutoClose();</script>

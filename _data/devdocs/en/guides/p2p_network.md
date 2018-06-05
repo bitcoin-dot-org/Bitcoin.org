@@ -4,7 +4,6 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/p2p_network.md" %}
 
-
 ## P2P Network
 {% include helpers/subhead-links.md %}
 

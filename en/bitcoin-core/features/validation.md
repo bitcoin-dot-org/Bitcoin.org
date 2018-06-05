@@ -13,16 +13,9 @@ breadcrumbs:
   - bcc features
   - Validation
 ---
-<div class="hero">
-<div class="container hero-container" markdown="block">
-
 # Bitcoin Core Validation
-{% include helpers/hero-social.html %}
-</div>
-</div>
+{:.not-displayed}
 
-<div class="bitcore-content">
-<div class="container" markdown="block">
 ![Full validation](/img/bitcoin-core/slider-validation.svg)
 
 {% include bitcoin-core/download-bitcoin-core.html %}
@@ -88,7 +81,9 @@ real wallet?
   Core**{:.fggreen} users are not vulnerable because they control their
   own private keys.
 
+<div class="callout" markdown="block">
 Direct theft is likely the leading cause of stolen bitcoins so far.
+</div>
 
 ### Real Example
 
@@ -449,9 +444,9 @@ If you have any questions, please ask on the [forums][bcc forums] or
 
 
 <br class="clear big">
-<div class="prevnext" markdown="block">
-[PREV][bcc main]
-[NEXT][bcc privacy]
+<div class="prevnext">
+<span markdown="1">**Previous Feature**<br>[Feature Overview][bcc main]</span>
+<span markdown="1">**Next feature**<br>[Privacy][bcc privacy]</span>
 </div>
 <br class="clear">
 
@@ -480,5 +475,3 @@ If you have any questions, please ask on the [forums][bcc forums] or
 </div>
 
 {% include references.md %}
-</div>
-</div>

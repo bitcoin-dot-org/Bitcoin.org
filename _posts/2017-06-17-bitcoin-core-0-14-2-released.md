@@ -5,7 +5,6 @@
 type: posts
 layout: post
 category: blog
-show_toc: true
 
 title: "Bitcoin Core Version 0.14.2 Released"
 permalink: /en/posts/bitcoin-core-version-0-14-2-released.html
@@ -14,7 +13,6 @@ author: |
   <a href="https://github.com/wbnns">Will Binns</a>
 ---
 
-<div class="post-content" markdown="1">
 {:.center}
 ![Bitcoin Core Version 0.14.2](/img/blog/free/bitcoin-core-0142.png)
 
@@ -27,9 +25,6 @@ Please report bugs using the [issue tracker on GitHub](https://github.com/bitcoi
 
 [Subscribe here](https://bitcoincore.org/en/list/announcements/join/) to receive
 security and update notifications.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Compatibility
 
@@ -45,9 +40,6 @@ instabilities and issues. Please do not report issues about Windows XP to the
 
 Bitcoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Notable changes
 
@@ -64,9 +56,6 @@ setting or through the `-upnp` option, as since the last UPnP vulnerability
 
 If you use this option, it is recommended to upgrade to this version as soon as
 possible.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Known Bugs
 
@@ -75,9 +64,6 @@ control and smart fee estimation does not reflect any change in target from the
 smart fee slider. It will only present an approximate fee calculated using the
 default target. The fee calculated using the correct target is still applied to
 the transaction and shown in the final send confirmation dialog.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## 0.14.2 Change log
 
@@ -112,9 +98,6 @@ git merge commit are mentioned.
 ### Wallet
 
 - \#10294 `1847642` Unset change position when there is no change (instagibbs)
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Credits
 
@@ -132,4 +115,3 @@ Thanks to everyone who directly contributed to this release:
 
 As well as everyone that helped translating on
 [Transifex](https://www.transifex.com/projects/p/bitcoin/).
-</div>

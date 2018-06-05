@@ -4,7 +4,6 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/operating_modes.md" %}
 
-
 ## Operating Modes
 {% include helpers/subhead-links.md %}
 

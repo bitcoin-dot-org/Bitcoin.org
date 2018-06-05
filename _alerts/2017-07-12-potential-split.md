@@ -5,13 +5,9 @@
 title: "Potential network disruption"
 shorturl: "potential-split"
 active: false
-show_toc: true
 ## banner: "Warning: wait for extra confirmations starting July 22nd"
 ## bannerclass: "warning"
 ---
-
-<div class="post-content" markdown="1">
-
 {% assign start='<span class="date">2017/08/01 00:00 UTC</span>' %}
 
 *Last updated: <span class="date">2017/07/21 12:00 UTC</span>.  This
@@ -31,9 +27,6 @@ We also recommend monitoring this page and other Bitcoin news sites for
 additional information and updates.
 
 *Outdated information from earlier versions of this post follows.*
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Chain split
 
@@ -76,9 +69,6 @@ the operators or contributors to this website can do to help you.
 *Note:* there is a chance a milder level of disruption could start
 between now and {{start}}.  If that is the case, this post will be
 updated with details.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Preparation
 
@@ -100,9 +90,6 @@ give you your bitcoins on versions they don't like.
 1. Bitcoin may experience significant price fluctuations in relation to
 other currencies.  Learn more about [price volatility][] and ensure you
 aren't holding more bitcoin than you can afford to lose.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## During the event
 
@@ -119,9 +106,6 @@ recipient at your expense.
 1. Be wary of offers to allow you to invest in the outcome of the event
 by "splitting" your coins.  Some of these offers may be scams, and
 software claiming to split your coins can also steal them.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## After the event
 
@@ -129,9 +113,6 @@ We will update this section with more information after {{start}}.  Please
 monitor this page accordingly and wait until multiple news sources that you
 trust have stated that the event is resolved before returning to normal Bitcoin
 use.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Document history
 
@@ -154,7 +135,6 @@ first.
 [community resources]: /en/community
 [confirmation scoring]: /en/you-need-to-know#instant
 [price volatility]: /en/you-need-to-know#volatile
-</div>
 
 <script src="/js/jquery/jquery-1.11.2.min.js"></script>
 <script>

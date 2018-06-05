@@ -13,17 +13,7 @@ breadcrumbs:
   - bcc contribute
   - Support
 ---
-
-<div class="hero">
-<div class="container hero-container" markdown="block">
-
 # Supporting Bitcoin Core Users
-{% include helpers/hero-social.html %}
-</div>
-</div>
-
-<div class="bitcore-content">
-<div class="container" markdown="block">
 
 This site tells Bitcoin Core users where they can [go to find help][bcc
 help]---but that help is provided by volunteers like you. Many questions
@@ -77,13 +67,10 @@ serious IRC users use a [native IRC client][].
   listing][irc channels] on the Bitcoin Wiki.
 
 <br class="clear big">
-<div class="prevnext" markdown="block">
-[PREV][bcc contribute translations]
-[NEXT][bcc contribute]
+<div class="prevnext">
+<span markdown="1">**Previous**<br>[Translations][bcc contribute translations]</span>
+<span markdown="1">**Next**<br>[Contribute overview][bcc contribute]</span>
 </div>
 <br class="clear">
 
 {% include references.md %}
-
-</div>
-</div>

@@ -10,15 +10,10 @@ breadcrumbs:
   - GLOSSARY_ENTRY_TITLE
 show_fragments: false
 show_toc: false
-show_subhead_links_on_top: false
+show_subhead_links_on_top: true
 hide_translation_disclaimer: true
 ---
 
-<div class="glossary-subpage clearfix" markdown="1">
-<div class="glossary-subpage-right glossary-subpage-search">
-  <input id="glossary_term" class="glossary_term" placeholder="{% translate glossarysearchplaceholder developer-documentation %}">
-</div>
-<div class="glossary-subpage-left" markdown="1">
 <div markdown="block" class="notice">
   <span markdown="span">{% translate definitionnotice developer-glossary %}</span>
 </div>
@@ -49,14 +44,10 @@ hide_translation_disclaimer: true
 {% endautocrossref %}
 
 {% endif %}
-</div>
 
-<div class="glossary-subpage-right glossary-subpage-links" markdown="1">
 {% if page.optional.links_html_or_markdown_style_capitalize_first_letter %}
 ### {% translate sectiontitlelinks developer-glossary %}
 {% for link in page.optional.links_html_or_markdown_style_capitalize_first_letter %}
 * {{link}}
 {% endfor %}
 {% endif %}
-</div>
-</div>

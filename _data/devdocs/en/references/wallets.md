@@ -4,7 +4,6 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/references/wallets.md" %}
 
-
 ## Wallets 
 {% include helpers/subhead-links.md %}
 

@@ -4,7 +4,6 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/references/block_chain.md" %}
 
-
 ## Block Chain
 {% include helpers/subhead-links.md %}
 
@@ -234,3 +233,4 @@ invalid if it tries to spend more value than is available from the
 block reward.
 
 {% endautocrossref %}
+
