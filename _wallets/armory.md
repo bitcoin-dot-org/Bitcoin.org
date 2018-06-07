@@ -14,7 +14,7 @@ platform:
       text: "walletarmory"
       link: "https://btcarmory.com/"
       source: "https://github.com/goatpig/BitcoinArmory"
-      screenshot: "armory.png"
+      screenshot: "armory.png?1528322191"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnoderequired"

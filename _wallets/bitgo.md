@@ -14,7 +14,7 @@ platform:
       - name: web
         text: "walletbitgo"
         link: "https://www.bitgo.com/"
-        screenshot: "bitgo.png"
+        screenshot: "bitgo.png?1528322191"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkfailvalidationcentralized"

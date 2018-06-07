@@ -4,7 +4,7 @@
 
 id: greenaddress
 title: "GreenAddress"
-titleshort: "Green<br>Address"
+titleshort: "Green Address"
 compat: "mobile desktop web android ios windows mac linux"
 level: 3
 platform:
@@ -15,7 +15,7 @@ platform:
         text: "walletgreenaddress"
         link: "https://itunes.apple.com/app/id1206035886"
         source: "https://github.com/greenaddress/WalletCordova"
-        screenshot: "greenaddressandroid.png"
+        screenshot: "greenaddressandroid.png?1528322191"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkpassvalidationservers"
@@ -31,7 +31,7 @@ platform:
         text: "walletgreenaddress"
         link: "https://play.google.com/store/apps/details?id=it.greenaddress.cordova"
         source: "https://github.com/greenaddress/WalletCordova"
-        screenshot: "greenaddressandroid.png"
+        screenshot: "greenaddressandroid.png?1528322191"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkpassvalidationservers"
@@ -49,7 +49,7 @@ platform:
       text: "walletgreenaddress"
       link: "https://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp"
       source: "https://github.com/greenaddress/WalletCrx"
-      screenshot: "greenaddressdesktop.png"
+      screenshot: "greenaddressdesktop.png?1528322191"
       check:
         control: "checkpasscontrolmulti"
         validation: "checkfailvalidationcentralized"
@@ -75,7 +75,7 @@ platform:
         text: "walletgreenaddress"
         link: "https://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp"
         source: "https://github.com/greenaddress/WalletCrx"
-        screenshot: "greenaddressdesktop.png"
+        screenshot: "greenaddressdesktop.png?1528322191"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkfailvalidationcentralized"

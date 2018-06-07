@@ -4,7 +4,7 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 
 <ul id="menusimple" class="menusimple menucore" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
-  <li><a>Features</a>
+  <li><a class="is-expand">Features</a>
     <ul>
       <li{% if page.id == 'bitcoin-core-feature-overview' %} class="active"{% endif %}><a href="/en/bitcoin-core/features/">Overview</a></li>
       <li{% if page.id == 'bitcoin-core-validation' %} class="active"{% endif %}><a href="/en/bitcoin-core/features/validation">Validation</a></li>
@@ -15,7 +15,7 @@ http://opensource.org/licenses/MIT.
     </ul>
   </li>
   <li{% if page.id == 'bitcoin-core-help' %} class="active"{% endif %}><a href="/en/bitcoin-core/help">Get Help</a></li>
-  <li{% if page.id == 'bitcoin-core-contribute' %} class="active"{% endif %}><a>Contribute</a>
+  <li{% if page.id == 'bitcoin-core-contribute' %} class="active"{% endif %}><a class="is-expand">Contribute</a>
     <ul>
       <li{% if page.id == 'bitcoin-core-contribute-issues' %} class="active"{% endif %}><a href="/en/bitcoin-core/contribute/issues">Bug reports</a></li>
       <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate development url %}">Code</a></li>
