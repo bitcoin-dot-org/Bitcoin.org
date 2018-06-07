@@ -8,36 +8,15 @@ id: buy
 
 <!-- Note: this file exempt from check-for-subheading-anchors check -->
 
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summary">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
-  </div>
-</div>
+<h1>{% translate pagetitle %}</h1>
+<p class="summary">{% translate summary %}</p>
 
-<div class="container">
-  <div class="row card-row">
-    <div class="card buy-card">
-      <img src="/img/icons/ico_exchange.svg?{{site.time | date: '%s'}}" alt="Bank icon">
-      <h2 id="bitcoin-exchange">
-        {% translate bitcoin-exchange %}</h2>
-      <p>{% translate bitcoin-exchange-text %}</p>
-    </div>
-    
-    <div class="card buy-card">
-      <img src="/img/icons/ico_local.svg?{{site.time | date: '%s'}}" alt="Signpost icon">
-      <h2 id="local-bitcoins">
-        {% translate local-bitcoins %}</h2>
-      <p>{% translate local-bitcoins-text %}</p>
-    </div>
-    
-    <div class="card buy-card">
-      <img src="/img/icons/ico_atm.svg?{{site.time | date: '%s'}}" alt="Card icon">
-      <h2 id="bitcoin-atm">
-        {% translate bitcoin-atm %}</h2>
-      <p>{% translate bitcoin-atm-text %}</p>
-    </div>
-  </div>
-</div>
+<h2 id="bitcoin-exchange"><span class="fa fa-bank fa-lg"></span> {% translate bitcoin-exchange %}</h2>
+<p>{% translate bitcoin-exchange-text %}</p>
+
+<h2 id="local-bitcoins"><span class="fa fa-map-signs fa-lg"></span> {% translate local-bitcoins %}</h2>
+<p>{% translate local-bitcoins-text %}</p>
+
+<h2 id="bitcoin-atm"><span class="fa fa-credit-card fa-lg"></span> {% translate bitcoin-atm %}</h2>
+<p>{% translate bitcoin-atm-text %}</p>
 

@@ -4,20 +4,9 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-{% if page.id contains 'desktop' or  page.id contains 'mobile'%}
-   {% assign walletMargin = "55px" %}
-{% else %}
-   {% assign walletMargin = "" %}
-{% endif %}
-<div class="walletmenu" id="walletmenu" style="margin-bottom: {{walletMargin}}">
+<div class="walletmenu" id="walletmenu">
 {% assign platformsByPlatform = site.platforms | group_by: "platform" %}
   <ul>
-     {% if page.id == "choose-your-wallet" %}
-       {% assign statusClass = "active is-active" %}
-     {% endif %}
-    <li class="js-acc-item wallet-all {{statusClass}}" data-platform-selector="all-wallets">
-      <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">All Wallets</a>
-    </li>
   {% for platform in platformsByPlatform %}
 
     {% comment %}
@@ -34,177 +23,32 @@ http://opensource.org/licenses/MIT.
     {% endcomment %}
 
     {% assign platformClass = "wallet-" | append: platformName %}
-    {% assign ulClass = "" %}
-    {% if page.id contains platformName and platformName != 'web' and platformName != 'hardware' %}
-      {% assign platformClass = platformClass | append: " active is-active" %}
-      {% assign ulClass = " active" %}
-    {% elsif page.id contains platformName %}
-      {% assign platformClass = platformClass | append: " is-active active" %}
+    {% if page.id contains platformName %}
+      {% assign platformClass = platformClass | append: " active" %}
     {% endif %}
-    <li class="js-acc-item {{ platformClass }}" data-platform-selector="{{platformName}}">
+    <li class="{{ platformClass }}">
       {% if platformName == 'hardware' or platformName == 'web' %}
       {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" %}
         <a href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% else %}
-        <a class="wallet-platform-link">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
+        <a>{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% endif %}
       {% if platform.items.size > 1 %}
-      <div class="walletmenu-subaccordion">
-        <ul class="walletmenu-os-list {{ulClass}}">
-          {% for item in platform.items %}
-            {% assign osClass = "wallet-" | append: item.os.name %}
-            {% if page.id contains item.id %}
-              {% assign osClass = osClass | append: " active" %}
-            {% endif %}
-            <li class="js-acc-subitem {{ osClass }}" data-platform-selector="{{item.os.name}}">
-              <a  href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
-                {% translate platform{{item.os.name}} choose-your-wallet %}
-              </a>
-            </li>
-          {% endfor %}
+        <ul>
+        {% for item in platform.items %}
+          {% assign osClass = "wallet-" | append: item.os.name %}
+          {% if page.id contains item.id %}
+            {% assign osClass = osClass | append: " active" %}
+          {% endif %}
+          <li class="{{ osClass }}">
+            <a href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
+              {% translate platform{{item.os.name}} choose-your-wallet %}
+            </a>
+          </li>
+        {% endfor %}
         </ul>
-      </div>
       {% endif %}
     </li>
   {% endfor %}
   </ul>
 </div>
-
-<script>
-  var walletMenu = document.querySelector(".walletmenu");
-  var allTabs = document.querySelectorAll("li[data-platform-selector]");
-
-  function highlightActive(elem) {
-    
-    for (var ii = 0; ii < allTabs.length; ii++) {
-      var tab = allTabs[ii];
-      if (tab === elem) {
-        tab.classList.add("is-active");
-        tab.classList.add("active");
-      } else {
-        tab.classList.remove("is-active");
-        tab.classList.remove("active");
-      }
-    }
-  }
-
-  function accordionDesktop() {
-    var acc = document.getElementsByClassName("js-acc-item");
-
-    for (var i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function(event) {
-        if (document.documentElement.clientWidth > 768) {
-          var platformList = document.querySelectorAll("li[data-platform-selector]");
-          var activeItem = event.target.parentNode;
-          var activeOsAccordion = this.querySelector(".walletmenu-subaccordion");
-          
-          highlightActive(this);
-
-          // Add margnin for walletmenu depending on height of submenu
-          if (this.dataset.platformSelector === "mobile" || this.dataset.platformSelector === "desktop") {
-            walletMenu.style.marginBottom = activeOsAccordion.offsetHeight + 'px'; 
-          } else {
-            walletMenu.style.marginBottom ='0px'; 
-          }
-          
-          // Hide not selected list items
-          for (var index = 0; index < acc.length; index++) {
-            if (!(this == acc[index])) {
-              acc[index].classList.remove("is-active");
-            }
-          }
-          
-          var allWallets = document.querySelectorAll("div[data-category]");
-          var selectedPlatform = activeItem.dataset.platformSelector;
-
-          if (selectedPlatform === "all-wallets") {
-            allWallets.forEach(function (wallet) {
-              wallet.classList.remove('is-hidden')
-            });
-          } else if(selectedPlatform === "desktop" || selectedPlatform === "mobile") {
-            var regexp = new RegExp(selectedPlatform, 'i');
-            
-            for (var ii = 0; ii < allWallets.length; ii++) {
-              var walletItem = allWallets[ii];
-              var walletPlatform = walletItem.dataset.platforms;
-              
-              if (regexp.test(walletPlatform)) {
-                walletItem.classList.remove('is-hidden')
-
-                var walletOsLinks = walletItem.querySelectorAll("a[data-link-platform]");
-
-                for (var n = 0; n < walletOsLinks.length; n++) {
-                  var link = walletOsLinks[n];
-
-                  if (link.dataset.linkPlatform !== selectedPlatform) {
-                    link.classList.add("is-hidden")
-                  } else {
-                    link.classList.remove("is-hidden")
-                  }
-                }
-
-              } else {
-                walletItem.classList.add('is-hidden');
-              }
-              
-            }
-          } else {
-            // Hide not relevant wallets
-            document.querySelectorAll('div[data-platforms]').forEach(function (wallet) {
-              wallet.classList.add('is-hidden');
-            });
-
-            // Show not relevant wallets
-            for (var nn = 0; nn < allWallets.length; nn++) {
-              var wallet = allWallets[nn];
-              if (wallet.dataset.category === selectedPlatform) {
-                wallet.classList.remove('is-hidden');
-              }
-            }
-          }
-          
-        }
-      });
-    }
-  }
-  accordionDesktop();
-
-  function makeWalletClickable() {
-    document.addEventListener('DOMContentLoaded', function () {
-      var walletsList = document.querySelectorAll('.allwallets-list-item');
-
-      for (var i = 0; i < walletsList.length; i++) {
-        var wallet = walletsList[i];
-
-        wallet.addEventListener("mouseenter", function () {
-          var walletOsList = this.querySelectorAll('.wallet-list-os-link:not(.is-hidden)');
-
-          if (walletOsList.length === 1) {
-            this.classList.add('mouseenter');
-          }
-        });
-
-        wallet.addEventListener("mouseleave", function () {
-          var walletOsList = this.querySelectorAll('.wallet-list-os-link:not(.is-hidden)');
-
-          if (walletOsList.length === 1) {
-            this.classList.remove('mouseenter');          }
-        });
-
-      }
-
-      walletsList.forEach(function (wallet) {
-        return wallet.addEventListener("click", function () {
-          var walletOsList = this.querySelectorAll('.wallet-list-os-link:not(.is-hidden)');
-
-          if (walletOsList.length === 1) {
-            var walletHref = walletOsList[0].href;
-            window.location = walletHref;
-          }
-        });
-      });
-    });
-  }
-  makeWalletClickable();
-  
-</script>

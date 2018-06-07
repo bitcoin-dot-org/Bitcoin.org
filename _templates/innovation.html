@@ -5,88 +5,70 @@
 layout: base
 id: innovation
 ---
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summarytxt">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
-  </div>
+<h1>{% translate pagetitle %}</h1>
+<p class="summarytxt">{% translate summary %}</p>
+
+<div class="tablehalf">
+
+<div>
+<h2 id="control"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />{% translate control %}</h2>
+<p>{% translate controltext %}</p>
 </div>
 
-<div class="container">
-  <div class="row card-row">
-
-    <div class="card innovation-card">
-      <img class="titleicon" src="/img/icons/ico_control.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="control">{% translate control %}</h2>
-      <p>{% translate controltext %}</p>
-    </div>
-    
-    <div class="card innovation-card">
-      <img class="titleicon" src="/img/icons/accessibility.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="global">{% translate global %}</h2>
-      <p>{% translate globaltext %}</p>
-    </div>
-    
-    <div class="card innovation-card">
-      <img class="titleicon" src="/img/icons/efficiency.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="cost">{% translate cost %}</h2>
-      <p>{% translate costtext %}</p>
-    </div>
-    
-    <div class="card innovation-card">
-      <img class="titleicon" src="/img/icons/donation.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="donation">{% translate donation %}</h2>
-      <p>{% translate donationtext %}</p>
-    </div>
-    
-    <div class="card innovation-card">
-      <img class="titleicon" src="/img/icons/crowdfunding.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="crowdfunding">{% translate crowdfunding %}</h2>
-      <p>{% translate crowdfundingtext %}</p>
-    </div>
-    
-    <div class="card innovation-card">
-      <img class="titleicon" src="/img/icons/micro-payments.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="micro">{% translate micro %}</h2>
-      <p>{% translate microtext %}</p>
-    </div>
-    
-    <div class="card innovation-card">
-      <img class="titleicon" src="/img/icons/mediation.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="mediation">{% translate mediation %}</h2>
-      <p>{% translate mediationtext %}</p>
-    </div>
-    
-    <div class="card innovation-card">
-      <img class="titleicon" src="/img/icons/multi-signature.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="multisig">{% translate multisig %}</h2>
-      <p>{% translate multisigtext %}</p>
-    </div>
-    
-    <div class="card innovation-card">
-      <img class="titleicon" src="/img/icons/trust.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="trust">{% translate trust %}</h2>
-      <p>{% translate trusttext %}</p>
-    </div>
-    
-    <div class="card innovation-card">
-      <img class="titleicon" src="/img/icons/decentralization.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="resiliency">{% translate resiliency %}</h2>
-      <p>{% translate resiliencytext %}</p>
-    </div>
-    
-    <div class="card innovation-card">
-      <img class="titleicon" src="/img/icons/transparency.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="transparency">{% translate transparency %}</h2>
-      <p>{% translate transparencytext %}</p>
-    </div>
-    
-    <div class="card innovation-card">
-      <img class="titleicon" src="/img/icons/automatization.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="automation">{% translate automation %}</h2>
-      <p>{% translate automationtext %}</p>
-    </div>
-
-  </div>
+<div>
+<h2 id="global"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />{% translate global %}</h2>
+<p>{% translate globaltext %}</p>
 </div>
+
+<div>
+<h2 id="cost"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />{% translate cost %}</h2>
+<p>{% translate costtext %}</p>
+</div>
+
+<div>
+<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />{% translate donation %}</h2>
+<p>{% translate donationtext %}</p>
+</div>
+
+<div>
+<h2 id="crowdfunding"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />{% translate crowdfunding %}</h2>
+<p>{% translate crowdfundingtext %}</p>
+</div>
+
+<div>
+<h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />{% translate micro %}</h2>
+<p>{% translate microtext %}</p>
+</div>
+
+<div>
+<h2 id="mediation"><img class="titleicon" src="/img/icons/ico_balance.svg" alt="Icon" />{% translate mediation %}</h2>
+<p>{% translate mediationtext %}</p>
+</div>
+
+<div>
+<h2 id="multisig"><img class="titleicon" src="/img/icons/ico_multisig.svg" alt="Icon" />{% translate multisig %}</h2>
+<p>{% translate multisigtext %}</p>
+</div>
+
+<div>
+<h2 id="trust"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />{% translate trust %}</h2>
+<p>{% translate trusttext %}</p>
+</div>
+
+<div>
+<h2 id="resiliency"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />{% translate resiliency %}</h2>
+<p>{% translate resiliencytext %}</p>
+</div>
+
+<div>
+<h2 id="transparency"><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />{% translate transparency %}</h2>
+<p>{% translate transparencytext %}</p>
+</div>
+
+<div>
+<h2 id="automation"><img class="titleicon" src="/img/icons/ico_solve.svg" alt="Icon" />{% translate automation %}</h2>
+<p>{% translate automationtext %}</p>
+</div>
+
+</div>
+

@@ -15,7 +15,7 @@ platform:
         text: "walletkeepkey"
         link: "https://www.keepkey.com/"
         source: "https://github.com/keepkey/"
-        screenshot: "keepkey.png?1528322191"
+        screenshot: "keepkey.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"

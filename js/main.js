@@ -119,51 +119,46 @@ function supportCSS(id) {
 }
 
 function loadYoutubeVideo(e) {
-  var open = document.querySelector(".mainvideo-btn-open");
-  var close = document.querySelector(".mainvideo-btn-close");
-  var modal = document.querySelector(".modal");
-  var video = document.querySelector(".modal-video");
-  var modalOverlay = document.querySelector(".modal-overlay");
-
-  if (e.target === open) {
-    modal.classList.remove("closed");
-    video.src = open.getAttribute("data-youtubeurl");
-    modalOverlay.classList.remove("closed");
-  } else if (e.target === close) {
-    modal.classList.add("closed");
-    video.src = "";
-    modalOverlay.classList.add("closed");
+  // Load Youtube video on target node on click.
+  function init(e) {
+    var t = getEvent(e, 'target'),
+      nd = document.createElement('IFRAME');
+    while (t.getAttribute('data-youtubeurl') === null || t.getAttribute('data-youtubeurl') === '') t = t.parentNode;
+    nd.src = t.getAttribute('data-youtubeurl');
+    nd.setAttribute('frameborder', 0);
+    nd.setAttribute('allowfullscreen', true);
+    t.innerHTML = '';
+    t.appendChild(nd);
+    t.onclick = '';
   }
+  onTouchClick(e, init);
 }
 
 function expandBox(t) {
   // Expand or shrink box.
+  var phe = getHeight(t);
   t.style.transition = t.style.MozTransition = t.style.WebkitTransition = 'all 0s ease 0s';
   if (t.className.indexOf('expanded') === -1) addClass(t, 'expanded');
   else removeClass(t, 'expanded');
-  
+  t.style.height = '';
+  var nhe = getHeight(t);
+  t.style.height = phe + 'px';
+  // Async call to prevent transition from applying on last style.height statement.
   setTimeout(function() {
     t.style.transition = t.style.MozTransition = t.style.WebkitTransition = '';
+    t.style.height = nhe + 'px';
   }, 20);
 }
 
 function boxShow(e) {
-
+  // Display the box content when the user click a box on the "Secure your wallet" page.
   function init(e) {
     var t = getEvent(e, 'target');
     while (t.nodeName !== 'DIV') t = t.parentNode;
     expandBox(t);
     cancelEvent(e);
   }
-  document.querySelectorAll(".boxexpand > h1:first-child").forEach(function(accordionToggle) {
-    return accordionToggle.addEventListener("click", init);
-  });
-  document.querySelectorAll(".boxexpand > h2:first-child").forEach(function(accordionToggle) {
-    return accordionToggle.addEventListener("click", init);
-  });
-  document.querySelectorAll(".boxexpand > h3:first-child").forEach(function(accordionToggle) {
-    return accordionToggle.addEventListener("click", init);
-  });
+  onTouchClick(e, init);
 }
 
 function faqShow(e) {
@@ -226,7 +221,7 @@ function updateToc() {
         pageoffset = getPageYOffset();
         windowy = getWindowY();
         toc = document.getElementById('toc');
-        fallback = document.getElementsByTagName("H2")[0] || document.getElementsByTagName("H3")[0];
+        fallback = document.getElementsByTagName('H2')[0];
         first = [fallback, getTop(fallback)];
         last = [fallback, getTop(fallback)];
         closer = [fallback, getTop(fallback)];
@@ -255,22 +250,16 @@ function updateToc() {
     function updatetoc() {
         // Set bottom and top to fit within window and not overflow its parent node.
         var div = toc.getElementsByTagName('DIV')[0];
-        var sidebarHeight = document.querySelector(".sidebar").offsetHeight; 
-        var footerTop = document.querySelector(".footer").offsetTop; 
-                
-        if (window.scrollY >= getTop(toc) - 20 && window.scrollY + sidebarHeight + 20 <= footerTop) {
-          addClass(div, "scroll");
-        } else {
-          removeClass(div, "scroll");
-        }
-        
+        if (pageoffset > getTop(toc)) {
+            addClass(div, 'scroll');
+            div.style.top = '20px';
+            div.style.bottom = Math.max((pageoffset + windowy) - (getHeight(toc.parentNode) + getTop(toc.parentNode)), 20) + 'px';
+        } else removeClass(div, 'scroll');
         // Remove .active class from toc and find new active toc entry.
         var a = false;
         for (var i = 0, t = toc.getElementsByTagName('*'), n = t.length; i < n; i++) {
             removeClass(t[i], 'active');
-            if (t[i].nodeName === 'A' && t[i].getAttribute('href') === '#' + closer[0].id && closer[0].parentNode.classList.contains("expanded")) {
-              a = t[i];
-            }
+            if (t[i].nodeName === 'A' && t[i].getAttribute('href') === '#' + closer[0].id) a = t[i];
         }
         if (a === false) return;
         // Set .active class on new active toc entry.
@@ -302,14 +291,21 @@ function updateToc() {
         if (!toc.hasAttribute('data-timestamp') || toc.getAttribute('data-timestamp') > new Date().getTime() - 1000) return;
         window.history.replaceState(null, null, '#' + closer[0].id);
     }
+    // Update the toc when the page stops scrolling.
+    function evtimeout() {
+        toc = document.getElementById('toc');
+        clearTimeout(toc.getAttribute('data-timeout'));
+        toc.setAttribute('data-timeout', setTimeout(init, 1));
+    }
     // Reset timestamp on page load and each time the user clicks a url.
     function evtimestamp() {
         toc = document.getElementById('toc');
         document.getElementById('toc').setAttribute('data-timestamp', new Date().getTime());
     }
-    addEvent(window, 'scroll', init);
+    addEvent(window, 'scroll', evtimeout);
     addEvent(window, 'popstate', evtimestamp);
     addEvent(window, 'load', evtimestamp);
+    init();
 }
 
 function updateIssue(e) {
@@ -560,132 +556,8 @@ function closeDonationModal() {
 
 function toggleDonationBanner() {
     var banner = $('.donation-text');
-    var open = $('.donation-visibility-toggle');
+    var toggle = $('.donation-visibility-toggle');
 
-    open.addClass("active");
-    banner.addClass("expanded");
-}
-function closeDonationBanner() {
-  var banner = $(".donation-text");
-  var open = $(".donation-visibility-toggle");
-
-  open.removeClass("active");
-  banner.removeClass("expanded"); 
-}
-function accordion() {
-  $(document).ready(function($) {
-    $('.accordion-toggle').click(function(){
-
-      //Expand or collapse this panel
-      $(this).next().slideToggle('fast');
-      $(this).toggleClass("active");
-
-      //Hide the other panels
-      $(".accordion-content").not($(this).next()).slideUp("fast");
-      $(".accordion-toggle").not($(this)).removeClass("active");
-    });
-  }); 
-}
-
-function onScrollButton() {
-  var button = document.querySelector(".mob-sidebar-open");
-  var buttonTop = button.offsetTop;
-  var buttonHeight = button.offsetHeight;
-  var sidebar = document.querySelector(".sidebar");
-  var closeButton = document.querySelector(".mob-sidebar-close");
-  var sidebarLinks = document.querySelectorAll(".sidebar-inner ul li");
-
-  function stickyButton() {
-    if (document.documentElement.clientWidth <= 640) {
-      if (buttonTop === 0) {
-        buttonTop = button.offsetTop;
-      }
-      var footerTop = document.querySelector(".footer").offsetTop;      
-      
-      // Fixed menu
-      if (window.scrollY >= buttonTop && window.scrollY + buttonHeight <= footerTop) {
-        button.classList.add("is-fixed");
-        document.body.style.paddingTop = buttonHeight + 25 + "px";
-      } else {
-        button.classList.remove("is-fixed");
-        document.body.style.paddingTop = "";
-      }
-    }
-  }
-
-  function showSidebar() {
-    sidebar.classList.add("is-open");
-    button.classList.add("hide");
-  }
-
-  function hideSidebar() {
-    sidebar.classList.remove("is-open");
-    button.classList.remove("hide");
-  }
-
-  window.addEventListener("scroll", stickyButton);
-  button.addEventListener("click", showSidebar); 
-  closeButton.addEventListener("click", hideSidebar);
-
-  for (var i = 0; i < sidebarLinks.length; i++) {
-    sidebarLinks[i].addEventListener("click", function(event) {
-      if (document.documentElement.clientWidth <= 640) {
-        closeButton.click();
-      }
-    });
-  }
-}
-function walletMenuAccordion() {
-  var tabs = document.querySelectorAll(".js-tab");
-
-  for (var i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener("click", function() {
-      this.classList.toggle("is-expanded");
-
-      for (var index = 0; index < tabs.length; index++) {
-        if (this !== tabs[index]) {
-          tabs[index].classList.remove("is-expanded");
-        }
-      }
-    });
-  }
-}
-function showNextMobileAccordion() {
-  var platformItems = document.querySelectorAll(".js-platform");
-  var tabs = document.querySelectorAll(".accordion-tab");
-  var platformTab = document.querySelector(".accordion-tab-1");
-  var osAccordion = document.querySelectorAll(".accordion-os");
-  var walletAccordion = document.querySelector(".accordion-wallets");
-  
-  for (var i = 0; i < platformItems.length; i++) {
-    
-    platformItems[i].addEventListener("click", function(e) {
-    
-      for (var num = 0; num < tabs.length; num++) {
-        tabs[num].classList.remove("is-selected");
-        tabs[num].querySelector(".selected-item").textContent = "";
-      }
-
-      var selectedPlatform = e.target;
-      
-      var platformName = selectedPlatform.dataset.platformName;
-      document.querySelector(".selected-platform").textContent = selectedPlatform.textContent;
-
-      // Display next accordion and hide not selected accordion
-      for (var a = 0; a < osAccordion.length; a++) {
-        if (platformName === osAccordion[a].dataset.os) {
-          osAccordion[a].classList.add("is-visible");
-          osAccordion[a].querySelector('.accordion-tab-2').classList.add('is-expanded');
-          platformTab.classList.add("is-selected");
-        } else {
-          osAccordion[a].classList.remove("is-visible");
-        }
-      }
-
-      // Close accordion after selection
-      platformTab.classList.remove("is-expanded");
-      // Hide wallet accordion if user want to change platform
-      walletAccordion.classList.remove("is-visible");
-    });
-  }
+    toggle.toggleClass('active');
+    banner.toggleClass('expanded');
 }

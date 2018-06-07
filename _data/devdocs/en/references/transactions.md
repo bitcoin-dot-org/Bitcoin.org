@@ -4,7 +4,6 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/references/transactions.md" %}
 
-
 ## Transactions
 {% include helpers/subhead-links.md %}
 
@@ -72,7 +71,7 @@ A complete list of opcodes can be found on the Bitcoin Wiki [Script
 Page][wiki script], with an authoritative list in the `opcodetype` enum
 of the Bitcoin Core [script header file][core script.h]
 
-![Warning icon](/img/icons/icon_warning.svg?{{site.time | date: '%s'}})
+![Warning icon](/img/icons/icon_warning.svg)
 **<span id="signature_script_modification_warning">Signature script modification warning</span>:**
 Signature scripts are not signed, so anyone can modify them. This
 means signature scripts should only contain data and data-pushing opcodes
@@ -82,7 +81,7 @@ makes a transaction non-standard, and future consensus rules may forbid
 such transactions altogether. (Non-data-pushing opcodes are already
 forbidden in signature scripts when spending a P2SH pubkey script.)
 
-![Warning icon](/img/icons/icon_warning.svg?{{site.time | date: '%s'}})
+![Warning icon](/img/icons/icon_warning.svg)
 **`OP_CHECKMULTISIG` warning:** The multisig verification process
 described above requires that signatures in the signature script be
 provided in the same order as their corresponding public keys in

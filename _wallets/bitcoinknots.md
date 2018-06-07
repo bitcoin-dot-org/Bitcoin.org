@@ -4,7 +4,7 @@
 
 id: bitcoinknots
 title: "Bitcoin Knots"
-titleshort: "Bitcoin Knots"
+titleshort: "Bitcoin<br>Knots"
 compat: "desktop windows mac linux"
 level: 1
 platform:
@@ -14,7 +14,7 @@ platform:
       text: "walletbitcoinknots"
       link: "https://bitcoinknots.org/"
       source: "https://github.com/bitcoinknots/bitcoin/"
-      screenshot: "bitcoinknots.png?1528322191"
+      screenshot: "bitcoinknots.png"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnode"

@@ -1,61 +1,27 @@
---- 
-# This file is licensed under the MIT License (MIT) available on # http://opensource.org/licenses/MIT. 
-layout: base 
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: base
 lang: en
-show_toc: true
-end_of_page: |
-  <script src="/js/jquery/jquery-1.11.2.min.js"></script>
-  <script src="/js/jquery/jquery-ui.min.js"></script>
-  <script src="/js/devsearch.js"></script>
-  <script>updateToc();</script>
-  <script>boxShow();</script>
-  <script>onScrollButton();</script> 
 ---
 <link rel="alternate" type="application/atom+xml" href="/en/rss/blog.xml" title="Bitcoin.org Site Blog">
 
-<div class="subhead-links">
-  <div class="container">
-    <a href="/en/blog">Blog home</a>
-    |
-    <a type="application/atom+xml" href="/en/rss/blog.xml">Subscribe to RSS feed</a>
-    |
-    <a href="https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/{{page.path|uri_escape}}">Post history</a>
-    |
-    <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=Source%20File%3A%20{{page.path|uri_escape}}%0A%0A">Report issue</a>
-  </div>
-</div>
+<div class="subhead-links"><a href="/en/blog">Blog home</a>
+| <a type="application/atom+xml" href="/en/rss/blog.xml"><img src="/img/icons/header_rss.svg" alt="rss" class="rssicon"> Subscribe to RSS feed</a>
+| <a href="https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/{{page.path|uri_escape}}">Post history</a>
+| <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=Source%20File%3A%20{{page.path|uri_escape}}%0A%0A">Report issue</a></div>
 
-<header class="hero">
-  <div class="container hero-container">
-    <h1>{{ page.title }}</h1>
-     {% include helpers/hero-social.html %}
-  </div>
-</header>
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
 
-<div class="toc-container">
-  <div class="row toc-row">
-  {% if page.show_toc %}
-    <div id="toc" class="toc">
-      <div>
-        <button class="mob-sidebar-open" hidden>ALL TOPICS</button>
-        <div class="sidebar">
-          <div class="sidebar-inner" markdown="1">
-            <button class="mob-sidebar-close" hidden></button>
-            {% include helpers/toc.html html=content %}
-          </div>
-        </div>
-      </div>
-    </div>
-  {% endif %}
+  <article class="post-content">
+    {{ content }}
+  </article>
 
-    <div class="toccontent">
-      <article class="article" markdown="1">
-        {{ content }}
-        <p class="post-meta">Posted to the
-        <a href="/en/blog">Bitcoin.org Site Blog</a> on {{ page.date | date: "%d %B %Y" }} {% if page.author %} by {{ page.author }}{% endif
-        %}{% if page.meta %} {{ page.meta }}{% endif %}
-        </p>
-      </article>
-    </div>
-  </div>
+  <p class="post-meta">Posted to the <a href="/en/blog">Bitcoin.org Site
+  Blog</a> on {{ page.date | date: "%d %B %Y" }} {% if page.author %} by {{ page.author }}{% endif %}{% if page.meta %} {{ page.meta }}{% endif %}</p>
+
 </div>

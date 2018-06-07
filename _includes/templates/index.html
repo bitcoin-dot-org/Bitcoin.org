@@ -1,89 +1,20 @@
-{% comment %} This file is licensed under the MIT License (MIT) available on http://opensource.org/licenses/MIT. {% endcomment
-%}
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
 
-<div class="mainhero">
-  <div class="container hero-container">
-    <p class="mainsummary">{% translate listintro %}</p>
-    <div class="btn-container">
-      <a class="btn btn-bright btn-home" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
-      <a class="btn btn-light btn-home" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate choosebut getting-started %}</a>
-    </div>
-
-    <div class="mainvideo">
-      <button class="mainvideo-btn-open" onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/{% if page.lang == 'ro' %}JPNwbWu0tMQ{% else %}Gc2en3nHxA4{% endif %}?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1{% if page.lang != 'en' %}&amp;cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}">What is Bitcoin?</button>
-    </div>
-    {% include helpers/hero-social.html %}
-  </div>
+<p class="mainsummary">{% translate listintro %}</p>
+<div class="mainvideo"><div onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/{% if page.lang == 'ro' %}JPNwbWu0tMQ{% else %}Gc2en3nHxA4{% endif %}?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1{% if page.lang != 'en' %}&amp;cc_load_policy=1&amp;hl={{ page.lang }}&amp;cc_lang_pref={{ page.lang }}{% endif %}">
+  <img src="/img/video/video_wuc.jpg" alt="Youtube video">
+  <div class="mainvideoicon"></div>
+  <div class="mainvideoiconhover"></div>
+</div></div>
+<div class="mainlist">
+  <div><div><img src="/img/icons/main_ico_instant.svg" alt="Icon"><div>{% translate list1 %}</div></div></div>
+  <div><div><img src="/img/icons/main_ico_worldwide.svg" alt="Icon"><div>{% translate list2 %}</div></div></div>
+  <div><div><img src="/img/icons/main_ico_lowfee.svg" alt="Icon"><div>{% translate list3 %}</div></div></div>
 </div>
-<div class="mainoverview">
-  <div class="container">
-    <div class="mainoverview-title">{% translate overview %}</div>
-    <a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}" class="maincard">
-      <img class="maincard-img" src="/img/icons/ico_individuals.svg?{{site.time | date: '%s'}}" alt="Icon">
-      <div>
-        <p class="maincard-title">{% translate menu-bitcoin-for-individuals layout %}</p>
-        <p class="maincard-link">{% translate learn-more layout %}</p>
-      </div>
-    </a>
-    <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}" class="maincard">
-      <img class="maincard-img" src="/img/icons/ico_business.svg?{{site.time | date: '%s'}}" alt="Icon">
-      <div>
-        <p class="maincard-title">{% translate menu-bitcoin-for-businesses layout %}</p>
-        <p class="maincard-link">{% translate learn-more layout %}</p>
-      </div>
-    </a>
-    <a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}" class="maincard">
-      <img class="maincard-img" src="/img/icons/ico_developers.svg?{{site.time | date: '%s'}}" alt="Icon">
-      <div>
-        <p class="maincard-title">{% translate menu-bitcoin-for-developers layout %}</p>
-        <p class="maincard-link">{% translate learn-more layout %}</p>
-      </div>
-    </a>
-  </div>
-  <a class="btn-down" href="#maindesc-title">
-    <img src="/img/icons/ico_arrow_down.svg?{{site.time | date: '%s'}}" alt="Link">
-  </a>
-</div>
-<div class="maindesc">
-  <div class="container">
-    <p class="section-title center home-title" id="maindesc-title">{% translate getstarted layout %}</p>
-    <div class="row maindesc-row">
-      <div>
-        <p class="maindesc-text">{% translate desc %}</p>
-        <ul class="mainlist">
-          
-            <li class="mainlist-item">
-              <img src="/img/icons/main_ico_instant.svg?{{site.time | date: '%s'}}" alt="Icon">
-              <p>{% translate list1 %}</p>
-            </li>
-          
-          
-            <li class="mainlist-item">
-              <img src="/img/icons/main_ico_worldwide.svg?{{site.time | date: '%s'}}" alt="Icon">
-              <p>{% translate list2 %}</p>
-            </li>
-          
-          
-            <li class="mainlist-item">
-              <img src="/img/icons/main_ico_lowfee.svg?{{site.time | date: '%s'}}" alt="Icon">
-              <p>{% translate list3 %}</p>
-            </li>
-          
-        </ul>
-      </div>
-      <img class="maindesc-img" src="/img/home/bitcoin-img.svg?{{site.time | date: '%s'}}" alt="Bitcoin image">
-    </div>
-    <div class="btn-container">
-      <a class="btn btn-dark btn-home center" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
-    </div>
-  </div>
-</div>
-
-<!-- Youtube popup video -->
-<div class="modal closed">
-  <iframe class="modal-video" allowfullscreen="" frameborder="0">
-  </iframe>
-  <button class="mainvideo-btn-close" onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);"></button>
-</div>
-<div class="modal-overlay closed">
-</div>
+<p class="maindesc">{% translate desc %}</p>
+<div class="mainbutton"><a href="/{{ page.lang }}/{% translate getting-started url %}"><img src="/img/icons/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>
+<div class="mainoverview">{% translate overview %}</div>
+<div class="mainoverviews"><a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a> <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a> <a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a></div>

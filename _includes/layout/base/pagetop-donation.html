@@ -3,33 +3,28 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-{% if site.donation_banner.display %}
 <div class="donation-container">
   <div class="donation-text">
-    <div class="donation-text-container">
-      <button onclick="closeDonationBanner()" class="donation-modal-close">
-        <img src="/img/icons/ico_close.svg?{{site.time | date: '%s'}}" alt="Close">
-      </button>
-      <p>
-        {% translate donation-banner-text layout %}
-      </p>
-      <button type="button" class="donation-btn" onclick="openDonationModal()">
-        {% translate donation-banner-donate-button layout %}
-      </button>
-    </div>
+    <p>
+      {% translate donation-banner-text layout %}
+    </p>
+    <button type="button" class="donation-btn" onclick="openDonationModal()">
+      {% translate donation-banner-donate-button layout %}
+    </button>
   </div>
   <button type="button" class="donation-visibility-toggle" onclick="toggleDonationBanner()">
     {% translate donation-banner-toggle-button layout %}
   </button>
 </div>
-{% endif %}
 
-
-<div id="donation-modal" style="display: none" class="donation-modal hidden">
+<div
+  id="donation-modal"
+  style="display: none"
+  class="donation-modal hidden">
   <div class="modal-dialog">
     <div class="modal-header">
       <div class="modal-close-btn" onclick="closeDonationModal()">×</div>
-      <p class="modal-header-text section-title">{% translate donation-modal-header layout %}</p>
+      <p class="modal-header-text">{% translate donation-modal-header layout %}</p>
     </div>
     <p class="modal-subheader">{% translate donation-modal-subheader layout %}</p>
     <div style="text-align: center;">

@@ -386,19 +386,19 @@ bb3183301d7a1fb3bd174fcfa40a2b65 ... Hash #2
 We parse the above `merkleblock` message using the following
 instructions.  Each illustration is described in the paragraph below it.
 
-![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-001.svg?{{site.time | date: '%s'}})
+![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-001.svg)
 
 We start by building the structure of a merkle tree based on the number
 of transactions in the block.
 
-![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-002.svg?{{site.time | date: '%s'}})
+![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-002.svg)
 
 The first flag is a 1 and the merkle root is (as always) a non-TXID
 node, so we will need to compute the hash later based on this node's
 children. Accordingly, we descend into the merkle root's left child and
 look at the next flag for instructions.
 
-![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-003.svg?{{site.time | date: '%s'}})
+![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-003.svg)
 
 The next flag in the example is a 0 and this is also a non-TXID node, so
 we apply the first hash from the `merkleblock` message to this node. We
@@ -408,43 +408,43 @@ transactions that match our filter, so we don't need them. We go back up
 to the merkle root and then descend into its right child and look at the
 next (third) flag for instructions.
 
-![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-004.svg?{{site.time | date: '%s'}})
+![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-004.svg)
 
 The third flag in the example is another 1 on another non-TXID node, so
 we descend into its left child.
 
-![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-005.svg?{{site.time | date: '%s'}})
+![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-005.svg)
 
 The fourth flag is also a 1 on another non-TXID node, so we descend
 again---we will always continue descending until we reach a TXID node or
 a non-TXID node with a 0 flag (or we finish filling out the tree).
 
-![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-006.svg?{{site.time | date: '%s'}})
+![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-006.svg)
 
 Finally, on the fifth flag in the example (a 1), we reach a TXID node.
 The 1 flag indicates this TXID's transaction matches our filter and
 that we should take the next (second) hash and use it as this node's
 TXID. 
 
-![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-007.svg?{{site.time | date: '%s'}})
+![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-007.svg)
 
 The sixth flag also applies to a TXID, but it's a 0 flag, so this
 TXID's transaction doesn't match our filter; still, we take the next
 (third) hash and use it as this node's TXID.
 
-![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-008.svg?{{site.time | date: '%s'}})
+![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-008.svg)
 
 We now have enough information to compute the hash for the fourth node
 we encountered---it's the hash of the concatenated hashes of the two
 TXIDs we filled out.
 
-![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-009.svg?{{site.time | date: '%s'}})
+![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-009.svg)
 
 Moving to the right child of the third node we encountered, we fill it
 out using the seventh flag and final hash---and discover there are no
 more child nodes to process.
 
-![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-011.svg?{{site.time | date: '%s'}})
+![Parsing A MerkleBlock](/img/dev/gifs/en-merkleblock-parsing/en-merkleblock-parsing-011.svg)
 
 We hash as appropriate to fill out the tree.  Note that the eighth flag is
 not used---this is acceptable as it was required to pad out a flag byte.

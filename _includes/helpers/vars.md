@@ -119,7 +119,7 @@ http://opensource.org/licenses/MIT.
 
 {% enditemplate %}
 
-![Warning icon](/img/icons/icon_warning.svg?{{site.time | date: '%s'}})
+![Warning icon](/img/icons/icon_warning.svg)
 **Warning:** if account1 receives an unconfirmed payment and transfers
 it to account2 with the `move` RPC, account2 will be able to spend those
 bitcoins even if this parameter is set to `1` or higher.{% endcapture %}
@@ -285,6 +285,6 @@ bitcoins even if this parameter is set to `1` or higher.{% endcapture %}
 {% enditemplate %}
 {% endcapture %}
 
-{% assign WARNING="![Warning icon](/img/icons/icon_warning.svg?1528322191) **Warning:**" %}
+{% assign WARNING="![Warning icon](/img/icons/icon_warning.svg) **Warning:**" %}
 
 {% assign reindexNote="Note: if you begin using `txindex=1` after downloading the block chain, you must rebuild your indexes by starting Bitcoin Core with the option  `-reindex`.  This may take several hours to complete, during which time your node will not process new blocks or transactions. This reindex only needs to be done once." %}

@@ -5,13 +5,9 @@
 title: "Alert System Retirement"
 shorturl: "alert-retirement"
 active: false
-show_toc: true
-
 ## banner: "Alert system is being retired (click here to read)"
 ## bannerclass: "info"
 ---
-
-<div class="post-content" markdown="1">
 
 ## Updates
 
@@ -20,17 +16,12 @@ alerts, preventing other alerts from being broadcast, and displays the static me
 will be published in the coming months.
 * **March 8, 2017**: Bitcoin Core 0.14 released with hard-coded [final alert](https://bitcoin.org/en/release/v0.14.0#final-alert).
 * **May 1, 2017**: Postpone release date of Alert key. Older clients may contain Alert handling code which is exploitable using the alert key, therefore the public release of the key has been temporarily postponed until considered safe.
-</div>
 
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Summary
 
 The network wide Alert system is being retired. **_No Bitcoins are at risk and this warning may be safely ignored._**
 Upgrade to the newest version of your wallet software to no longer see the alert.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Reasons for Retirement
 
@@ -49,9 +40,6 @@ not be imposed on the entire network.
 
 The Alert system has also lost its usefulness. It is no longer necessary to use it to inform users about problematic network
 events as users can easily get their information from any major Bitcoin news outlet.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## The Retirement Plan
 
@@ -66,9 +54,6 @@ receive the final alert.
 |Pre-final Alert|The alert itself warning that the Alert system will be retired|2016-11-02|
 |Final Alert|Max sequence Alert to disable the Alert system|2017-01-19|
 |Alert key release|The Alert key will be made publicly available|Postponed until further notice.|
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Software without the Alert system
 
@@ -78,9 +63,6 @@ are guaranteed to have removed/disabled the Alert system or allow you to disable
 * Bitcoin Core 0.12.1+
 * Bitcoin Core 0.10.3, 0.11.x, and 0.12.x can disable alerts with `-alerts=0`
 * Armory 0.94.1+
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## See also
 
@@ -89,4 +71,3 @@ are guaranteed to have removed/disabled the Alert system or allow you to disable
 * [Removal discussion on github](https://github.com/bitcoin/bitcoin/pull/6260)
 * [Pull request disabling alerts](https://github.com/bitcoin/bitcoin/pull/6274)
 * [IRC Discussion](https://botbot.me/freenode/bitcoin-core-dev/2016-09-22/?msg=73446303&page=6)
-</div>

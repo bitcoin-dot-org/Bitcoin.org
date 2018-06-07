@@ -4,7 +4,7 @@
 ---
 "use strict";
 
-var search_data = {{ site.devsearches_json }};
+var search_data = {{ site.devsearches_json }}
 
 {% raw %}
 // code adapted from http://jqueryui.com/autocomplete/#categories

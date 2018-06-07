@@ -15,7 +15,7 @@ platform:
         text: "walletcoinspace"
         link: "https://play.google.com/store/apps/details?id=com.coinspace.app"
         source: "https://github.com/CoinSpace/CoinSpace"
-        screenshot: "coinspacemobile.png?1528322191"
+        screenshot: "coinspacemobile.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
@@ -31,7 +31,7 @@ platform:
         text: "walletcoinspace"
         link: "https://itunes.apple.com/us/app/coinspace-bitcoin-wallet/id980719434?mt=8"
         source: "https://github.com/CoinSpace/CoinSpace"
-        screenshot: "coinspacemobile.png?1528322191"
+        screenshot: "coinspacemobile.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
@@ -47,7 +47,7 @@ platform:
         text: "walletcoinspace"
         link: "https://www.microsoft.com/en-us/store/apps/coin-space-digital-currency-wallet/9nblgggz58z9"
         source: "https://github.com/CoinSpace/CoinSpace"
-        screenshot: "coinspacemobile.png?1528322191"
+        screenshot: "coinspacemobile.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
@@ -66,7 +66,7 @@ platform:
         text: "walletcoinspace"
         link: "https://coin.space"
         source: "https://github.com/CoinSpace/CoinSpace"
-        screenshot: "coinspaceweb.png?1528322191"
+        screenshot: "coinspaceweb.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"

@@ -15,7 +15,7 @@ platform:
         text: "walletmyceliumwallet"
         link: "https://play.google.com/store/apps/details?id=com.mycelium.wallet"
         source: "https://github.com/mycelium-com/wallet"
-        screenshot: "mycelium.png?1528322191"
+        screenshot: "mycelium.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"

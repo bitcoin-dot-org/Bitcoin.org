@@ -5,76 +5,23 @@
 layout: base
 id: protect-your-privacy
 ---
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summarytxt">{% translate pagedesc %}</p>
-     {% include helpers/hero-social.html %}
-  </div>
-</div>
+<h1>{% translate pagetitle %}</h1>
+<p class="summarytxt">{% translate pagedesc %}</p>
 
-<div class="container">
-  <div class="two-column-layout">
+<h2 id="traceable">{% translate traceable %}</h2>
+<p>{% translate traceabletxt %}</p>
 
-    <div class="row two-column-row">
-      <div>
-        <img class="column-img" src="/img/icons/traceability.svg?{{site.time | date: '%s'}}" alt="icon">
-      </div>
-      <div class="column-text">
-        <h2 class="section-title" id="traceable">{% translate traceable %}</h2>
-        <p>{% translate traceabletxt %}</p>
-      </div>
-    </div>
+<h2 id="receive">{% translate receive %}</h2>
+<p>{% translate receivetxt %}</p>
 
-    <div class="row two-column-row">
-      <div>
-        <img class="column-img" src="/img/icons/addresses.svg?{{site.time | date: '%s'}}" alt="icon">
-      </div>
-      <div class="column-text">
-        <h2 class="section-title" id="receive">{% translate receive %}</h2>
-        <p>{% translate receivetxt %}</p>
-      </div>
-    </div>
+<h2 id="public">{% translate public %}</h2>
+<p>{% translate publictxt %}</p>
 
-    <div class="row two-column-row">
-      <div>
-        <img class="column-img" src="/img/icons/public-spaces.svg?{{site.time | date: '%s'}}" alt="icon">
-      </div>
-      <div class="column-text">
-        <h2 class="section-title" id="public">{% translate public %}</h2>
-        <p>{% translate publictxt %}</p>
-      </div>
-    </div>
+<h2 id="iplog">{% translate iplog %}</h2>
+<p>{% translate iplogtxt %}</p>
 
-    <div class="row two-column-row">
-      <div>
-        <img class="column-img" src="/img/icons/ip-address.svg?{{site.time | date: '%s'}}" alt="icon">
-      </div>
-      <div class="column-text">
-        <h2 class="section-title" id="iplog">{% translate iplog %}</h2>
-        <p>{% translate iplogtxt %}</p>
-      </div>
-    </div>
+<h2 id="mixing">{% translate mixing %}</h2>
+<p>{% translate mixingtxt %}</p>
 
-    <div class="row two-column-row">
-      <div>
-        <img class="column-img" src="/img/icons/mixing-services.svg?{{site.time | date: '%s'}}" alt="icon">
-      </div>
-      <div class="column-text">
-        <h2 class="section-title" id="mixing">{% translate mixing %}</h2>
-        <p>{% translate mixingtxt %}</p>
-      </div>
-    </div>
-
-    <div class="row two-column-row">
-      <div>
-        <img class="column-img" src="/img/icons/future-improvements.svg?{{site.time | date: '%s'}}" alt="icon">
-      </div>
-      <div class="column-text">
-        <h2 class="section-title" id="future">{% translate future %}</h2>
-        <p>{% translate futuretxt %}</p>
-      </div>
-    </div>
-
-  </div>
-</div>
+<h2 id="future">{% translate future %}</h2>
+<p>{% translate futuretxt %}</p>

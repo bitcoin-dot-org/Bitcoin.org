@@ -14,7 +14,7 @@ platform:
       text: "walletarcbit"
       link: "https://chrome.google.com/webstore/detail/arcbit-bitcoin-wallet/dkceiphcnbfahjbomhpdgjmphnpgogfk"
       source: "https://github.com/arcbit/arcbit-web"
-      screenshot: "arcbitdesktop.png?1528322191"
+      screenshot: "arcbitdesktop.png"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"
@@ -40,7 +40,7 @@ platform:
         text: "walletarcbit"
         link: "https://itunes.apple.com/app/arcbit-bitcoin-wallet/id999487888"
         source: "https://github.com/arcbit/arcbit-ios"
-        screenshot: "arcbitios.png?1528322191"
+        screenshot: "arcbitios.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
@@ -56,7 +56,7 @@ platform:
         text: "walletarcbit"
         link: "https://play.google.com/store/apps/details?id=com.arcbit.arcbit"
         source: "https://github.com/arcbit/arcbit-android"
-        screenshot: "arcbitios.png?1528322191"
+        screenshot: "arcbitios.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"

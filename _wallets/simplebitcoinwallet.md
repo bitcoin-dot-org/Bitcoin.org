@@ -4,7 +4,7 @@
 
 id: simplebitcoinwallet
 title: "Simple Bitcoin Wallet"
-titleshort: "Simple Bitcoin"
+titleshort: "Simple<br>Bitcoin"
 compat: "mobile android"
 level: 2
 platform:
@@ -15,7 +15,7 @@ platform:
         text: "walletsimplebitcoinwallet"
         link: "https://play.google.com/store/apps/details?id=com.btcontract.wallet"
         source: "https://github.com/btcontract/wallet"
-        screenshot: "simplebitcoinwalletandroid.png?1528322191"
+        screenshot: "simplebitcoinwalletandroid.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"

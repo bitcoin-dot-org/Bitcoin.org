@@ -4,7 +4,6 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/wallets.md" %}
 
-
 ## Wallets
 {% include helpers/subhead-links.md %}
 
@@ -61,7 +60,7 @@ distribute those public keys as necessary, monitors for outputs spent to
 those public keys, creates and signs transactions spending those
 outputs, and broadcasts the signed transactions.
 
-![Full-Service Wallets](/img/dev/en-wallets-full-service.svg?{{site.time | date: '%s'}})
+![Full-Service Wallets](/img/dev/en-wallets-full-service.svg)
 
 As of this writing, almost all popular wallets can be used as
 full-service wallets.
@@ -98,7 +97,7 @@ Signing-only wallets programs typically use deterministic key creation
 (described in a later subsection) to create parent private and public
 keys which can create child private and public keys.
 
-![Signing-Only Wallets](/img/dev/en-wallets-signing-only.svg?{{site.time | date: '%s'}})
+![Signing-Only Wallets](/img/dev/en-wallets-signing-only.svg)
 
 When first run, the signing-only wallet creates a parent private key and
 transfers the corresponding parent public key to the networked wallet.
@@ -234,7 +233,7 @@ webservers, can be designed to distribute public keys (including P2PKH
 or P2SH addresses) and nothing more.  There are two common ways to
 design these minimalist wallets:
 
-![Distributing-Only Wallets](/img/dev/en-wallets-distributing-only.svg?{{site.time | date: '%s'}})
+![Distributing-Only Wallets](/img/dev/en-wallets-distributing-only.svg)
 
 * Pre-populate a database with a number of public keys or addresses, and
   then distribute on request a pubkey script or address using one of
@@ -347,7 +346,7 @@ shows such a point on the elliptic curve used by Bitcoin,
 y<sup>2</sup>&nbsp;=&nbsp;x<sup>3</sup>&nbsp;+&nbsp;7, over a field of
 contiguous numbers.
 
-![Point On ECDSA Curve](/img/dev/en-ecdsa-compressed-public-key.svg?{{site.time | date: '%s'}})
+![Point On ECDSA Curve](/img/dev/en-ecdsa-compressed-public-key.svg)
 
 (Secp256k1 actually modulos coordinates by a large prime, which produces a
 field of non-contiguous integers and a significantly less clear plot,
@@ -476,7 +475,7 @@ code][/en/glossary/master-chain-code-and-private-key]{:#term-master-chain-code}{
 even if, for example, a web-based public key distribution program
 gets hacked.
 
-![Overview Of Hierarchical Deterministic Key Derivation](/img/dev/en-hd-overview.svg?{{site.time | date: '%s'}})
+![Overview Of Hierarchical Deterministic Key Derivation](/img/dev/en-hd-overview.svg)
 
 As illustrated above, HD key derivation takes four inputs<!--noref-->:
 
@@ -520,7 +519,7 @@ key][/en/glossary/master-chain-code-and-private-key]{:#term-master-private-key}{
 code are derived from random data,
 as illustrated below.
 
-![Creating A Root Extended Key Pair](/img/dev/en-hd-root-keys.svg?{{site.time | date: '%s'}})
+![Creating A Root Extended Key Pair](/img/dev/en-hd-root-keys.svg)
 
 A [root seed][/en/glossary/hd-wallet-seed]{:#term-root-seed}{:.term} is created from either 128
 bits, 256 bits, or 512 bits of random data. This root seed of as little
@@ -528,7 +527,7 @@ as 128 bits is the the only data the user needs to backup in order to
 derive every key created by a particular wallet program using
 particular settings.
 
-![Warning icon](/img/icons/icon_warning.svg?{{site.time | date: '%s'}})
+![Warning icon](/img/icons/icon_warning.svg)
  **Warning:** As of this writing, HD wallet programs are not expected to
 be fully compatible, so users must only use the same HD wallet program
 with the same HD-related settings for a particular root seed.
@@ -557,7 +556,7 @@ further-descended private key, he can use the chain code to generate all
 of the extended private keys descending from that private key, as
 shown in the grandchild and great-grandchild generations of the illustration below.
 
-![Cross-Generational Key Compromise](/img/dev/en-hd-cross-generational-key-compromise.svg?{{site.time | date: '%s'}})
+![Cross-Generational Key Compromise](/img/dev/en-hd-cross-generational-key-compromise.svg)
 
 Perhaps worse, the attacker can reverse the normal child private key
 derivation formula and subtract a parent chain code from a child private
@@ -580,7 +579,7 @@ together the index number, the parent chain code, and the parent public key to c
 child chain code and the integer value which is combined with the parent
 private key to create the child private key.
 
-![Creating Child Public Keys From An Extended Private Key](/img/dev/en-hd-private-parent-to-private-child.svg?{{site.time | date: '%s'}})
+![Creating Child Public Keys From An Extended Private Key](/img/dev/en-hd-private-parent-to-private-child.svg)
 
 The hardened formula, illustrated above, combines together the index
 number, the parent chain code, and the parent private key to create
@@ -618,7 +617,7 @@ key and *M* being a public key. For example, m/0'/0/122' refers to the
 key. The following hierarchy illustrates prime notation and hardened key
 firewalls.
 
-![Example HD Wallet Tree Using Prime Notation](/img/dev/en-hd-tree.svg?{{site.time | date: '%s'}})
+![Example HD Wallet Tree Using Prime Notation](/img/dev/en-hd-tree.svg)
 
 Wallets following the BIP32 HD protocol only create hardened children of
 the master private key (*m*) to prevent a compromised child key from

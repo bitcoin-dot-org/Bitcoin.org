@@ -5,65 +5,35 @@
 layout: base
 id: bitcoin-for-developers
 ---
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summary">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
-  </div>
-</div>
+<h1>{% translate pagetitle %}</h1>
+<p class="summary">{% translate summary %}</p>
 
-<div class="container">
-  <div class="row card-row">
-    <div class="card developers-card">
-      <img class="titleicon" src="/img/icons/ico_simple_payment.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="simple">{% translate simple %}</h2>
-      <p>{% translate simpletext %}</p>
-    </div>
-    
-    <div class="card developers-card">
-      <img class="titleicon" src="/img/icons/ico_api.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="api">{% translate api %}</h2>
-      <p>{% translate apitext %}</p>
-    </div>
+<h2 id="simple"><img class="titleicon" src="/img/icons/ico_simple.svg" alt="Icon" />{% translate simple %}</h2>
+<p>{% translate simpletext %}</p>
 
-    <div class="card developers-card">
-      <img class="titleicon" src="/img/icons/ico_own.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="own">{% translate own %}</h2>
-      <p>{% translate owntext %}</p>
-    </div>
+<h2 id="api"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />{% translate api %}</h2>
+<p>{% translate apitext %}</p>
 
-    <div class="card developers-card">
-      <img class="titleicon" src="/img/icons/ico_address.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="invoice">{% translate invoice %}</h2>
-      <p>{% translate invoicetext %}</p>
-    </div>
+<h2 id="own"><img class="titleicon" src="/img/icons/ico_own.svg" alt="Icon" />{% translate own %}</h2>
+<p>{% translate owntext %}</p>
 
-    <div class="card developers-card">
-      <img class="titleicon" src="/img/icons/ico_security.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="security">{% translate security %}</h2>
-      <p>{% translate securitytext %}</p>
-    </div>
+<h2 id="invoice"><img class="titleicon" src="/img/icons/ico_invoice.svg" alt="Icon" />{% translate invoice %}</h2>
+<p>{% translate invoicetext %}</p>
 
-    <div class="card developers-card">
-      <img class="titleicon" src="/img/icons/ico_new_possibilities.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="micro">{% translate micro %}</h2>
-      <p>{% translate microtext %}</p>
-    </div>
-  </div>
-  
-  {% comment %} After the developer-documentation page is translated, add the language to the array below {% endcomment %}
-  {% assign langs = [ 'en', 'uk' ] %} {% if langs contains page.lang %}
-  <div class="developers-link">
-    <a href="/{{ page.lang }}/developer-documentation">{% translate pagetitle developer-documentation %}</a>
-  </div>
-  {% else %}
-  <div class="developers-link">
-    <a href="/en/developer-documentation">Developer Documentation (English)</a>
-  </div>
-  {% endif %}
-  <div class="btn-container">
-    <a class="btn btn-bright get-started-btn" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
-  </div>
+<h2 id="security"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />{% translate security %}</h2>
+<p>{% translate securitytext %}</p>
 
-</div>
+<h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />{% translate micro %}</h2>
+<p>{% translate microtext %}</p>
+
+{% comment %}
+  After the developer-documentation page is translated, add the language
+  to the array below
+{% endcomment %}
+{% assign langs = [ 'en', 'uk' ] %}
+{% if langs contains page.lang %}
+<div class="introlink"><a href="/{{ page.lang }}/developer-documentation">{% translate pagetitle developer-documentation %}</a></div>
+{% else %}
+<div class="introlink"><a href="/en/developer-documentation">Developer Documentation (English)</a></div>
+{% endif %}
+<div class="mainbutton"><a href="/{{ page.lang }}/{% translate getting-started url %}"><img src="/img/icons/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>

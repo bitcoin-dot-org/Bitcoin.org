@@ -2,8 +2,9 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-layout: development-sidebar
+layout: base-core
 id: development
+columns: 1
 
 breadcrumbs:
   - bitcoin
@@ -11,17 +12,17 @@ breadcrumbs:
   - bcc contribute
   - Code
 ---
+<!-- Note: this file is built non-deterministically -->
+<h1>{% translate pagetitle %}</h1>
+{% if page.lang != 'en' %}<p class="summary">{% translate summary %}</p>{% endif %}
 
-<div class="toccontent-intro" markdown="1">
-  <p>{% translate involvetxt1 development %}</p>
-  <p>{% translate involvetxt2 development %}</p>
-  <div id="chatbox" class="chatbox"></div>
+<p>{% translate involvetxt1 development %}</p>
+<p>{% translate involvetxt2 development %}</p>
+<div id="chatbox" class="chatbox"></div>
 
-  {% capture markdown %}
-
-<div class="warning" markdown="block">
-*To report an issue, please see the [bug reporting][bcc contribute issues] page.*
-</div>
+{% capture markdown %}
+<span class="fa fa-exclamation-triangle"></span> *To report an issue,
+please see the [bug reporting][bcc contribute issues] page.*
 
 ## Code Review
 
@@ -60,14 +61,16 @@ improvement in mind?  Here are a few ideas:
 {% if page.lang == 'en' %}
   {{ markdown | markdownify }}
 {% endif %}
-</div>
 
-<div class="toccontent-block boxexpand expanded">
-  <h2 id="spec">{% translate spec %}</h2>
-  <p>{% translate spectxt %}</p>
-</div>
 
-<div id="devcommunities" class="toccontent-block boxexpand expanded">
+<h2 id="spec">{% translate spec %}</h2>
+<p>{% translate spectxt %}</p>
+
+{% if page.lang == 'en' %}
+  <input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
+{% endif %}
+
+<section id="devcommunities">
   <h2 id="dev-communities">{% translate devcommunities %}</h2>
   <p>{% translate devcommunitiesintro %}</p>
 
@@ -77,24 +80,21 @@ improvement in mind?  Here are a few ideas:
     <li>{% translate stackexchange %}</li>
     <li>{% translate bitcointalkdev %}</li>
   </ul>
-</div>
+</section>
 
-<div id="contributors" class="toccontent-block boxexpand expanded">
+<section id="contributors">
   <h2 id="bitcoin-core-contributors">{% translate contributors %}</h2>
   <p>{% translate contributorsorder %}</p>
-  <div class="contributor-row">
+  <div class="contributors">
     {% for c in site.corecontributors %}
-    <div class="contributor">
-      <div>
-        <a class="contributor-name" {% if c.login %} href="https://github.com/{{c.login}}"{% endif %}>{{ c.name | htmlescape }}</a>
-      </div>
-      <div class="contributions">({{ c.contributions }})</div>
+    <div>
+      <div><a{% if c.login %} href="https://github.com/{{c.login}}"{% endif %}>{{ c.name | htmlescape }}</a></div>
+      <div>({{ c.contributions }})</div>
     </div>
     {% endfor %}
   </div>
-</div>
+</section>
 
-<div class="toccontent-block boxexpand expanded">
 <h2 id="more">{% translate more %}</h2>
 
 <p>
@@ -123,9 +123,9 @@ Want to contribute to a different project?
   <li><a href="https://github.com/jgarzik/picocoin">picocoin</a> - A tiny library with lightweight client and utilities, written in C.</li>
   <li><a href="https://github.com/petertodd/python-bitcoinlib">python-bitcoinlib</a> - A library for structures and protocols, written in Python.</li>
   <li><a href="https://github.com/luke-jr/python-blkmaker">Python Blkmaker</a> - A client library for the getblocktemplate mining protocol, written in Python.</li>
-  <li class="more"><a onclick="librariesShow(event)" ontouchstart="librariesShow(event);" class="link-js">{% translate moremore %}</a></li>
+  <li class="more"><a onclick="librariesShow(event)" ontouchstart="librariesShow(event);" class="link-js"><span class="fa fa-caret-down"></span> {% translate moremore %}</a></li>
 </ul>
-</div>
+
 {% if page.lang == 'en' %}
   <script src="/js/devsearch.js"></script>
 {% endif %}

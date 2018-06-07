@@ -4,7 +4,6 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/references/block_chain.md" %}
 
-
 ## Block Chain
 {% include helpers/subhead-links.md %}
 
@@ -133,7 +132,7 @@ hashed to produce the merkle root.
          sha256(sha256("82501c1178fa0b222c1f3d474ec726b832013f0a532b44bb620cce8624a5feb1169e1e83e930853391bc6f35f605c6754cfead57cf8387639d3b4096c54f18f4".decode("hex")).digest()).digest().encode("hex_codec")
 -->
 
-![Example Merkle Tree Construction](/img/dev/en-merkle-tree-construction.svg?{{site.time | date: '%s'}})
+![Example Merkle Tree Construction](/img/dev/en-merkle-tree-construction.svg)
 
 TXIDs and intermediate hashes are always in internal byte order when they're
 concatenated, and the resulting merkle root is also in internal byte
@@ -153,12 +152,12 @@ However, the header field *nBits* provides only 32 bits of space, so the
 target number uses a less precise format called "compact" which works
 like a base-256 version of scientific notation:
 
-![Converting nBits Into A Target Threshold](/img/dev/en-nbits-overview.svg?{{site.time | date: '%s'}})
+![Converting nBits Into A Target Threshold](/img/dev/en-nbits-overview.svg)
 
 As a base-256 number, nBits can be quickly parsed as bytes the same way
 you might parse a decimal number in base-10 scientific notation:
 
-![Quickly Converting nBits](/img/dev/en-nbits-quick-parse.svg?{{site.time | date: '%s'}})
+![Quickly Converting nBits](/img/dev/en-nbits-quick-parse.svg)
 
 <!-- Source for paragraph below: Bitcoin Core src/tests/bignum_tests.cpp:
 num.SetCompact(0x04923456);
@@ -234,3 +233,4 @@ invalid if it tries to spend more value than is available from the
 block reward.
 
 {% endautocrossref %}
+

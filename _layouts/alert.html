@@ -3,10 +3,6 @@
 # http://opensource.org/licenses/MIT.
 
 layout: base
-end_of_page: |
-  <script>updateToc();</script>
-  <script>boxShow();</script>
-  <script>onScrollButton();</script>
 ## Note: global variables like page.lang must be set in _config.yml for collections
 ---
 {% if page.canonical != nil %}
@@ -17,50 +13,20 @@ end_of_page: |
 <link rel="alternate" type="application/rss+xml" href="/en/rss/alerts.rss" title="Bitcoin network status and alerts">
 
 <div class="subhead-links">
-  <div class="container">
-    <a href="/en/alerts">Network alerts history</a>
-    |
-    <a type="application/rss+xml" href="/en/rss/alerts.rss">
-      <img src="/img/icons/header_rss.svg?{{site.time | date: '%s'}}" alt="rss" class="rssicon"> Subscribe to RSS feed</a>
-    |
-    <a href="https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/{{page.path|uri_escape}}">Post history</a>
-    |
-    <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=Source%20File%3A%20{{page.path|uri_escape}}%0A%0A">Report issue</a>
-  </div>
+  <a href="/en/alerts">Network alerts history</a>
+| <a type="application/rss+xml" href="/en/rss/alerts.rss"><img src="/img/icons/header_rss.svg" alt="rss" class="rssicon"> Subscribe to RSS feed</a>
+| <a href="https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/{{page.path|uri_escape}}">Post history</a>
+| <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=Source%20File%3A%20{{page.path|uri_escape}}%0A%0A">Report issue</a>
 </div>
 
+<div class="post">
 
-<div class="hero">
-  <div class="container hero-container">
-      <h1 class="post-title alerttitle">{{ page.title }}</h1>
-      <p class="summary">{{ page.date | date:"%e %B %Y" }}</p>
-      {% include helpers/hero-social.html %}
-  </div>
+  <header class="post-header">
+    <h1 class="post-title alerttitle"><img src="/img/icons/warning.svg" alt="warning">{{ page.title }}<br><small>{{ page.date | date:"%e %B %Y" }}</small></h1>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
 </div>
-
-<div class="toc-container">
-  <div class="row toc-row">
-    {% if page.show_toc %}
-    <div id="toc" class="toc">
-      <div>
-        <button class="mob-sidebar-open" hidden>ALL TOPICS</button>
-        <div class="sidebar">
-          <div class="sidebar-inner" markdown="1">
-            <button class="mob-sidebar-close" hidden></button>
-            {% include helpers/toc.html html=content %}
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endif %}
-
-    <div class="toccontent">
-      <article class="article">
-        {{ content }}
-      </article>
-    </div>
-
-  </div>
-</div>
-  
-

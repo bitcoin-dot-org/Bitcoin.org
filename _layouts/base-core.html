@@ -22,16 +22,17 @@ use the base template -->
 {% include layout/base-core/pagetop-moved-notice.html %}
 
 <div class="head"><div>
+  {% include layout/base/head-language-dropdown.html %}
   {% include layout/base/head-mobile-menu.html %}
   {% if page.lang == 'en' %}
     {% include layout/base-core/head-logo.html %}
+    {% include layout/base/head-language-select.html %}
     {% include layout/base-core/head-menu.html %}
   {% else %}
     {% include layout/base/head-logo.html %}
+    {% include layout/base/head-language-select.html %}
     {% include layout/base/head-menu.html %}
   {% endif %}
-    {% include layout/base/head-language-dropdown.html %}
-    {% include layout/base/head-language-select.html %}
 </div></div>
 
 <div class="body">
@@ -40,10 +41,7 @@ use the base template -->
   {% endif %}
   {% include layout/base-core/content.html %}
   <div class="footer">
-    <div class="container">
-      {% include layout/base/footer-logo.html %}
-      {% include layout/base-core/footer-menu.html %}
-    </div>
+    {% include layout/base-core/footer-menu.html %}
     {% include layout/base-core/footer-license.html %}
   </div>
 </div>

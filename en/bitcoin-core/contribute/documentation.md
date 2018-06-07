@@ -13,17 +13,7 @@ breadcrumbs:
   - bcc contribute
   - Documentation
 ---
-
-<div class="hero">
-<div class="container hero-container" markdown="block">
-
 # Writing Bitcoin Core Documentation
-{% include helpers/hero-social.html %}
-</div>
-</div>
-
-<div class="bitcore-content">
-<div class="container" markdown="block">
 
 Bitcoin Core documentation is spread across three projects: Bitcoin
 Core, the Bitcoin Wiki, and Bitcoin.org---and is further subdivided into
@@ -120,13 +110,10 @@ To create new RPC/REST documentation or edit the REST documentation:
 Bitcoin.org documentation maintainer {{site.text.bitcoin_org_docs_maintainer_email_link}}.*
 
 <br class="clear big">
-<div class="prevnext" markdown="block">
-[PREV][bcc contribute code]
-[NEXT][bcc contribute translations]
+<div class="prevnext">
+<span markdown="1">**Previous**<br>[Code][bcc contribute code]</span>
+<span markdown="1">**Next**<br>[Translations][bcc contribute translations]</span>
 </div>
 <br class="clear">
 
 {% include references.md %}
-
-</div>
-</div>

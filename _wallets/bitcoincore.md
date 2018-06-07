@@ -4,7 +4,7 @@
 
 id: bitcoincore
 title: "Bitcoin Core"
-titleshort: "Bitcoin Core"
+titleshort: "Bitcoin<br>Core"
 compat: "desktop windows mac linux"
 level: 1
 platform:
@@ -14,7 +14,7 @@ platform:
       text: "walletbitcoincore"
       link: "bitcoincore"
       source: "https://github.com/bitcoin/bitcoin"
-      screenshot: "bitcoincore.png?1528322191"
+      screenshot: "bitcoincore.png"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnode"

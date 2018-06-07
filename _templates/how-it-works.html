@@ -5,83 +5,22 @@
 layout: base
 id: how-it-works
 ---
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summary">{% translate intro %}</p>
-    {% include helpers/hero-social.html %}
-  </div>
-</div>
+<h1>{% translate pagetitle %}</h1>
+<p class="summary">{% translate intro %}</p>
 
-<div class="container">
-  <div class="two-column-layout">
+<h2 id="basics">{% translate basics %}</h2>
+<p>{% translate basicstxt1 %}</p>
 
-    <div class="row two-column-row">
-      <div>
-        <img class="column-img" src="/img/icons/new-user.svg?{{site.time | date: '%s'}}" alt="icon">
-      </div>
-      <div class="column-text">
-        <h2 class="section-title" id="basics">{% translate basics %}</h2>
-        <p>{% translate basicstxt1 %}</p>
-      </div>
-    </div>
+<p><br><img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" /></p>
 
-    <div class="row two-column-row">
-      <div>
-        <img class="column-img" src="/img/icons/blockchain.svg?{{site.time | date: '%s'}}" alt="icon">
-      </div>
-      <div class="column-text">
-        <h2 class="section-title" id="balances">{% translate balances %}</h2>
-        <p>{% translate balancestxt %}</p>
-      </div>
-    </div>
+<h2 id="balances">{% translate balances %}</h2>
+<p>{% translate balancestxt %}</p>
 
-    <div class="row two-column-row">
-      <div>
-        <img class="column-img" src="/img/icons/private-keys.svg?{{site.time | date: '%s'}}" alt="icon">
-      </div>
-      <div class="column-text">
-        <h2 class="section-title" id="transactions">{% translate transactions %}</h2>
-        <p>{% translate transactionstxt %}</p>
-      </div>
-    </div>
+<h2 id="transactions">{% translate transactions %}</h2>
+<p>{% translate transactionstxt %}</p>
 
-    <div class="row two-column-row">
-      <div>
-        <img class="column-img" src="/img/icons/mining.svg?{{site.time | date: '%s'}}" alt="icon">
-      </div>
-      <div class="column-text">
-        <h2 class="section-title" id="processing">{% translate processing %}</h2>
-        <p>{% translate processingtxt %}</p>
-      </div>
-    </div>
+<h2 id="processing">{% translate processing %}</h2>
+<p>{% translate processingtxt %}</p>
 
-    <div class="row two-column-row">
-      <div>
-        <img class="column-img" src="/img/icons/paper.svg?{{site.time | date: '%s'}}" alt="icon">
-      </div>
-      <div class="column-text">
-        <h2 class="section-title" id="readmore">{% translate readmore %}</h2>
-        <p>{% translate readmoretxt %}</p>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- <div class="link-bar">
-    <h3 class="link-bar-title" id="readmore_2">{% translate readmore %}</h3>
-    <p class="link-bar-description"></p>
-    <div class="row link-bar-row">
-      <div class="link-bar-item">
-        <a href="" class="link-bar-link"></a>
-        <p class="link-bar-text"></p>
-      </div>
-      <div class="link-bar-item">
-        <a href="" class="link-bar-link"></a>
-      </div>
-      <div class="link-bar-item">
-        <a href="" class="link-bar-link"></a>
-      </div>
-    </div>
-  </div> -->
-</div>
+<h2 id="readmore">{% translate readmore %}</h2>
+<p>{% translate readmoretxt %}</p>

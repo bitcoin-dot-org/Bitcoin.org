@@ -4,13 +4,7 @@
 
 layout: base
 id: vocabulary
-end_of_page: |
-  <script src="/js/jquery/jquery-1.11.2.min.js"></script>
-  <script src="/js/jquery/jquery-ui.min.js"></script>
-  <script>updateToc();</script>
-  <script>accordion();</script>
-  <script>onScrollButton();</script>
-  <script>boxShow();</script>
+
 voc:
   - address
   - bit
@@ -29,41 +23,17 @@ voc:
   - wallet
 
 ---
+<h1>{% translate pagetitle %}</h1>
+<p class="summarytxt">{% translate summary %}</p>
+<h2 id="table-of-contents">{% translate table %}</h2>
 
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summarytxt">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
-  </div>
+<div class="index">
+{% alphab_for v in page.voc %}
+<a href="#{% translate {{v}} anchor.vocabulary %}">{% translate {{v}} %}</a>
+{% endalphab_for %}
 </div>
 
-<div class="toc-container">
-  <div class="row toc-row">
-    <div id="toc" class="toc">
-      <div>
-        <button class="mob-sidebar-open" hidden>ALL TOPICS</button>
-        <div class="sidebar">
-          <div class="sidebar-inner vocabulary-list">
-            <button class="mob-sidebar-close" hidden></button>
-            <ul>
-            {% alphab_for v in page.voc %}
-              <li><a href="#{% translate {{v}} anchor.vocabulary %}">{% translate {{v}} %}</a></li>
-            {% endalphab_for %}
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="toccontent">
-      {% alphab_for v in page.voc %}
-      <div class="toccontent-block boxexpand expanded">
-        <h2 id="{% translate {{v}} anchor.vocabulary %}">{% translate {{v}} %}</h2>
-        <p>{% translate {{v}}txt %}</p>
-      </div>
-      {% endalphab_for %}
-    </div>
-
-  </div>
-</div>
+{% alphab_for v in page.voc %}
+<h2 id="{% translate {{v}} anchor.vocabulary %}">{% translate {{v}} %}</h2>
+<p>{% translate {{v}}txt %}</p>
+{% endalphab_for %}

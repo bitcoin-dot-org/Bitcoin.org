@@ -1,31 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="31px" height="34px" viewBox="0 0 31 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
-    <title>icon/contract</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Developer-Documentation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="22.01.18-Bitcoin.org_Developer-Documentation-Desktop-1200px--" transform="translate(-1185.000000, -682.000000)">
-            <g id="//contenct" transform="translate(215.000000, 513.000000)">
-                <g id="developer-documentation" transform="translate(0.000000, 115.000000)">
-                    <g id="box3" transform="translate(798.000000, 0.000000)">
-                        <g id="icon/contract" transform="translate(157.000000, 40.000000)">
-                            <g>
-                                <rect id="Rectangle-2" x="0" y="0" width="60" height="60"></rect>
-                                <g id="Group-7" transform="translate(15.000000, 14.000000)">
-                                    <path d="M13,17 L25,3" id="Path-8" stroke="#95AABF"></path>
-                                    <path d="M6,17 L25,17" id="Path-9" stroke="#95AABF"></path>
-                                    <path d="M13,17 L25,31" id="Path-10" stroke="#95AABF"></path>
-                                    <rect id="Rectangle-3" stroke="#FF9500" x="0.5" y="14.5" width="5" height="5"></rect>
-                                    <rect id="Rectangle-3-Copy" stroke="#1C1F30" x="25.5" y="0.5" width="5" height="5"></rect>
-                                    <rect id="Rectangle-3-Copy-2" stroke="#1C1F30" x="25.5" y="14.5" width="5" height="5"></rect>
-                                    <rect id="Rectangle-3-Copy-3" stroke="#1C1F30" x="25.5" y="28.5" width="5" height="5"></rect>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+  <g transform="translate(0 -32)" stroke="#000">
+    <rect width="8.429" height="7.941" x="2.157" y="44.136" fill="#fff" stroke-width="2.299"/>
+    <rect width="8.429" height="7.941" x="20.697" y="53.395" fill="#fff" stroke-width="2.299"/>
+    <rect width="8.429" height="7.941" x="20.702" y="34.815" stroke-width="2.299" fill="none"/>
+    <g stroke-width="2" fill="none">
+      <path d="M6.371 40.821l-.007-4.35h9"/>
+      <path d="M12.518 33.462l2.74 3.022-2.723 3.101"/>
     </g>
+    <g stroke-width="2" fill="none">
+      <path d="M6.379 55.33l-.007 4.35h9"/>
+      <path d="M12.525 62.689l2.74-3.022-2.723-3.101"/>
+    </g>
+  </g>
 </svg>

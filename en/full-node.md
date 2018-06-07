@@ -6,11 +6,6 @@ layout: base-core
 lang: en
 id: full-node
 title: "Running A Full Node - Bitcoin"
-end_of_page: |
-  <script>updateToc();</script>
-  <script>accordion();</script>
-  <script>onScrollButton();</script> 
-  <script>boxShow();</script> 
 breadcrumbs:
   - bitcoin
   - bcc
@@ -44,8 +39,8 @@ key](/laanwj.asc). That key's fingerprint is:
 
     71A3 B167 3540 5025 D447  E8F2 7481 0B01 2346 C9A6
 
-Even earlier releases were signed by Gavin Andresen's
-key. His primary key's fingerprint is:
+Even earlier releases were signed by [Gavin Andresen's
+key](/gavinandresen.asc). His primary key's fingerprint is:
 
     2664 6D99 CBAE C9B8 1982  EF60 29D9 EE6B 1FC7 30C1
 
@@ -98,35 +93,20 @@ Core running.
 
 -->
 
-<div class="hero">
-<div class="container hero-container" markdown="1">
-
 # Running A Full Node
-<p class="summary">Support the Bitcoin network by running your own full node</p>
-{% include helpers/hero-social.html %}
-</div>
-</div>
 
-<div class="toc-container">
-<div class="row toc-row">
+<p class="summary">Support the Bitcoin network by running your own full node</p>
+
 <div markdown="1" id="toc" class="toc"><div markdown="1">
-<button class="mob-sidebar-open" hidden>ALL TOPICS</button>
-<div class="sidebar">
-<div class="sidebar-inner" markdown="1">
-<button class="mob-sidebar-close" hidden></button>
 
 * Table of contents
 {:toc}
 
 <ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new">Report An Issue</a></li></ul>
 <ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
-</div>
-</div>
 
 </div></div>
 <div markdown="1" class="toccontent">
-
-<div class="toccontent-intro" markdown="1">
 
 ## What Is A Full Node?
 
@@ -145,9 +125,6 @@ Many people and organizations volunteer to run full nodes using spare
 computing and bandwidth resources---but more volunteers are needed to
 allow Bitcoin to continue to grow.  This document describes how you can
 help and what helping will cost you.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Costs And Warnings
 
@@ -216,9 +193,6 @@ have an easy-to-use node.
 ### Possible Problems
 
 {% include bitcoin-core/bitcoin-core-possible-problems.md %}
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Linux Instructions
 
@@ -232,7 +206,7 @@ systems.
 If you use Ubuntu Desktop, click the Ubuntu swirl icon to start the Dash and type "term" into the
 input box. Choose any one of the terminals listed:
 
-![Dash term](/img/full-node/en-dash-term.png?{{site.time | date: '%s'}})
+![Dash term](/img/full-node/en-dash-term.png)
 
 Alternatively, access a console or terminal emulator using another
 method, such as SSH on Ubuntu Server or a terminal launcher in an
@@ -310,13 +284,13 @@ want to proceed.  Press enter to continue.
 To start Bitcoin Core GUI, click the Ubuntu swirl icon to open the Dash,
 type `bitcoin`, and click the Bitcoin icon.
 
-![Dash Bitcoin-Qt](/img/full-node/en-dash-bitcoin-qt.png?{{site.time | date: '%s'}})
+![Dash Bitcoin-Qt](/img/full-node/en-dash-bitcoin-qt.png)
 
 You will be prompted to choose a directory to store the Bitcoin block
 chain and your wallet.  Unless you have a separate partition or drive
 you want to use, click Ok to use the default.
 
-![Bitcoin-Qt Welcome](/img/full-node/en-bitcoin-qt-welcome.png?{{site.time | date: '%s'}})
+![Bitcoin-Qt Welcome](/img/full-node/en-bitcoin-qt-welcome.png)
 
 Bitcoin Core GUI will begin to download the block chain.  This
 step will take at least several days, and it may take much more time on
@@ -325,7 +299,7 @@ download, Bitcoin Core will use a significant part of your connection
 bandwidth.  You can stop Bitcoin Core at any time by closing it; it will
 resume from the point where it stopped the next time you start it.
 
-![Bitcoin-Qt Initial Block Download](/img/full-node/en-bitcoin-qt-ibd.png?{{site.time | date: '%s'}})
+![Bitcoin-Qt Initial Block Download](/img/full-node/en-bitcoin-qt-ibd.png)
 
 After download is complete, you may use Bitcoin Core as your wallet or
 you can just let it run to help support the Bitcoin network.
@@ -341,12 +315,12 @@ While running Bitcoin Core GUI, open the Settings menu and choose
 Options.  On the Main tab, click *Start Bitcoin on system login*.  Click
 the Ok button to save the new settings.
 
-![Choosing to start Bitcoin Core at login](/img/full-node/en-start-on-login.png?{{site.time | date: '%s'}})
+![Choosing to start Bitcoin Core at login](/img/full-node/en-start-on-login.png)
 
 The next time you login to your desktop, Bitcoin Core GUI will be
 automatically started in as an icon in the tray.
 
-![Bitcoin-Qt Tray Icon](/img/full-node/en-bitcoin-qt-tray-icon.png?{{site.time | date: '%s'}})
+![Bitcoin-Qt Tray Icon](/img/full-node/en-bitcoin-qt-tray-icon.png)
 </div>
 
 {{installFinished}}
@@ -410,7 +384,7 @@ Bourne-like shell such as `bash`.
 Using any computer, go to the [Bitcoin Core download page](/en/download)
 and verify you have made a secure connection to the server.
 
-![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
+![Verify secure connection](/img/full-node/en-secure-connection.png)
 
 In the "Linux (tgz)" section of the Download page, choose the
 appropriate file for your Linux install (either 32-bit or 64-bit) and
@@ -493,7 +467,7 @@ You will be prompted to choose a directory to store the Bitcoin block
 chain and your wallet.  Unless you have a separate partition or drive
 you want to use, click *Ok* to use the default.
 
-![Bitcoin-Qt Welcome](/img/full-node/en-bitcoin-qt-welcome.png?{{site.time | date: '%s'}})
+![Bitcoin-Qt Welcome](/img/full-node/en-bitcoin-qt-welcome.png)
 
 Bitcoin Core GUI will begin to download the block chain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
@@ -502,7 +476,7 @@ significant part of your connection bandwidth.  You can stop Bitcoin Core at any
 time by closing it; it will resume from the point where it stopped the next time
 you start it.
 
-![Bitcoin-Qt Initial Block Download](/img/full-node/en-bitcoin-qt-ibd.png?{{site.time | date: '%s'}})
+![Bitcoin-Qt Initial Block Download](/img/full-node/en-bitcoin-qt-ibd.png)
 
 After download is complete, you may use Bitcoin Core as your wallet or
 you can just let it run to help support the Bitcoin network.
@@ -521,12 +495,12 @@ While running Bitcoin Core GUI, open the Settings menu and choose
 Options.  On the Main tab, click *Start Bitcoin on system login*.  Click
 the Ok button to save the new settings.
 
-![Choosing to start Bitcoin Core at login](/img/full-node/en-start-on-login.png?{{site.time | date: '%s'}})
+![Choosing to start Bitcoin Core at login](/img/full-node/en-start-on-login.png)
 
 The next time you login to your desktop, Bitcoin Core GUI should be
 automatically started in as an icon in the tray.
 
-![Bitcoin-Qt Tray Icon](/img/full-node/en-bitcoin-qt-tray-icon.png?{{site.time | date: '%s'}})
+![Bitcoin-Qt Tray Icon](/img/full-node/en-bitcoin-qt-tray-icon.png)
 
 If Bitcoin Core GUI does not automatically start, you may need to add it
 to an `.xinit` or `.xsession` file as [described
@@ -582,9 +556,9 @@ If you're a expert system administrator and want to use an init script instead, 
 </div>
 
 {{installFinished}}
-</div>
 
-<div class="toccontent-block boxexpand expanded" markdown="1">
+
+
 
 ## Windows Instructions
 
@@ -595,7 +569,7 @@ If you're a expert system administrator and want to use an init script instead, 
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
 
-![Verify secure connection](/img/full-node/en-win10-secure-connection.png?{{site.time | date: '%s'}})
+![Verify secure connection](/img/full-node/en-win10-secure-connection.png)
 
 Click the large blue *Download Bitcoin Core* button to download the
 Bitcoin Core installer to your desktop.
@@ -609,7 +583,7 @@ Bitcoin installer will start.  It's a typical Windows installer, and it will
 guide you through the decisions you need to make about where to install Bitcoin
 Core.
 
-![Windows 10 installer start](/img/full-node/en-win10-installer-start.png?{{site.time | date: '%s'}})
+![Windows 10 installer start](/img/full-node/en-win10-installer-start.png)
 
 <div class="box" markdown="1">
 *To continue, choose one of the following options*
@@ -635,20 +609,20 @@ Core.
 Press the Windows key (`⊞ Win`) and start typing "bitcoin".  When the
 Bitcoin Core icon appears (as shown below), click on it.
 
-![Starting Bitcoin Core](/img/full-node/en-win10-start-bitcoin-core.png?{{site.time | date: '%s'}})
+![Starting Bitcoin Core](/img/full-node/en-win10-start-bitcoin-core.png)
 
 You will be prompted to choose a directory to store the Bitcoin block
 chain and your wallet.  Unless you have a separate partition or drive
 you want to use, click Ok to use the default.
 
-![Bitcoin-Qt Welcome](/img/full-node/en-win10-welcome-to-bitcoin-core.png?{{site.time | date: '%s'}})
+![Bitcoin-Qt Welcome](/img/full-node/en-win10-welcome-to-bitcoin-core.png)
 
 Your firewall may block Bitcoin Core from making outbound connections.
 It's safe to allow Bitcoin Core to use all networks. (Note: you will
 still need to configure inbound connections as described later in the
 [Network Configuration](#network-configuration) section.)
 
-![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win10-bitcoin-core-outgoing-firewall.png?{{site.time | date: '%s'}})
+![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win10-bitcoin-core-outgoing-firewall.png)
 
 Bitcoin Core GUI will begin to download the block chain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
@@ -657,7 +631,7 @@ significant part of your connection bandwidth.  You can stop Bitcoin Core at any
 time by closing it; it will resume from the point where it stopped the next time
 you start it.
 
-![Bitcoin-Qt Initial Block Download](/img/full-node/en-win10-ibd.png?{{site.time | date: '%s'}})
+![Bitcoin-Qt Initial Block Download](/img/full-node/en-win10-ibd.png)
 
 After download is complete, you may use Bitcoin Core as your wallet or
 you can just let it run to help support the Bitcoin network.
@@ -673,7 +647,7 @@ While running Bitcoin Core GUI, open the Settings menu and choose
 Options.  On the Main tab, click *Start Bitcoin on system login*.  Click
 the Ok button to save the new settings.
 
-![Choosing to start Bitcoin Core at login](/img/full-node/en-win10-start-on-login.png?{{site.time | date: '%s'}})
+![Choosing to start Bitcoin Core at login](/img/full-node/en-win10-start-on-login.png)
 
 The next time you login to your desktop, Bitcoin Core GUI will be
 automatically started minimized in the task bar.
@@ -691,7 +665,7 @@ To start Bitcoin Core daemon, first open a command window: press the
 Windows key (`⊞ Win`) and type "cmd".  Choose the option labeled
 "Command Prompt".
 
-![Running cmd](/img/full-node/en-win10-running-cmd.png?{{site.time | date: '%s'}})
+![Running cmd](/img/full-node/en-win10-running-cmd.png)
 
 If you installed Bitcoin Core into the default directory, type the
 following at the command prompt:
@@ -749,7 +723,7 @@ daemon will be automatically started.
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
 
-![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
+![Verify secure connection](/img/full-node/en-secure-connection.png)
 
 Click the large blue *Download Bitcoin Core* button to download the
 Bitcoin Core installer to your desktop.
@@ -763,7 +737,7 @@ Bitcoin installer will start.  It's a typical Windows installer, and it will
 guide you through the decisions you need to make about where to install Bitcoin
 Core.
 
-![Windows 7 installer start](/img/full-node/en-win7-installer-start.png?{{site.time | date: '%s'}})
+![Windows 7 installer start](/img/full-node/en-win7-installer-start.png)
 
 <div class="box" markdown="1">
 *To continue, choose one of the following options*
@@ -789,20 +763,20 @@ Core.
 Press the Windows key (`⊞ Win`) and start typing "bitcoin".  When the
 Bitcoin Core icon appears (as shown below), click on it.
 
-![Starting Bitcoin Core](/img/full-node/en-win8-start-bitcoin-core.png?{{site.time | date: '%s'}})
+![Starting Bitcoin Core](/img/full-node/en-win8-start-bitcoin-core.png)
 
 You will be prompted to choose a directory to store the Bitcoin block
 chain and your wallet.  Unless you have a separate partition or drive
 you want to use, click Ok to use the default.
 
-![Bitcoin-Qt Welcome](/img/full-node/en-win7-welcome-to-bitcoin-core.png?{{site.time | date: '%s'}})
+![Bitcoin-Qt Welcome](/img/full-node/en-win7-welcome-to-bitcoin-core.png)
 
 Your firewall may block Bitcoin Core from making outbound connections.
 It's safe to allow Bitcoin Core to use all networks. (Note: you will
 still need to configure inbound connections as described later in the
 [Network Configuration](#network-configuration) section.)
 
-![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win7-bitcoin-core-outgoing-firewall.png?{{site.time | date: '%s'}})
+![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win7-bitcoin-core-outgoing-firewall.png)
 
 Bitcoin Core GUI will begin to download the block chain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
@@ -811,7 +785,7 @@ significant part of your connection bandwidth.  You can stop Bitcoin Core at any
 time by closing it; it will resume from the point where it stopped the next time
 you start it.
 
-![Bitcoin-Qt Initial Block Download](/img/full-node/en-win7-ibd.png?{{site.time | date: '%s'}})
+![Bitcoin-Qt Initial Block Download](/img/full-node/en-win7-ibd.png)
 
 After download is complete, you may use Bitcoin Core as your wallet or
 you can just let it run to help support the Bitcoin network.
@@ -827,7 +801,7 @@ While running Bitcoin Core GUI, open the Settings menu and choose
 Options.  On the Main tab, click *Start Bitcoin on system login*.  Click
 the Ok button to save the new settings.
 
-![Choosing to start Bitcoin Core at login](/img/full-node/en-win7-start-on-login.png?{{site.time | date: '%s'}})
+![Choosing to start Bitcoin Core at login](/img/full-node/en-win7-start-on-login.png)
 
 The next time you login to your desktop, Bitcoin Core GUI will be
 automatically started minimized in the task bar.
@@ -845,7 +819,7 @@ To start Bitcoin Core daemon, first open a command window: press the
 Windows key (`⊞ Win`) and type "cmd".  Choose the option labeled
 "Command Prompt".
 
-![Running cmd](/img/full-node/en-win8-running-cmd.png?{{site.time | date: '%s'}})
+![Running cmd](/img/full-node/en-win8-running-cmd.png)
 
 If you installed Bitcoin Core into the default directory, type the
 following at the command prompt:
@@ -903,7 +877,7 @@ daemon will be automatically started.
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
 
-![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
+![Verify secure connection](/img/full-node/en-secure-connection.png)
 
 Click the large blue *Download Bitcoin Core* button to download the
 Bitcoin Core installer to your desktop.
@@ -917,7 +891,7 @@ Bitcoin installer will start.  It's a typical Windows installer, and it will
 guide you through the decisions you need to make about where to install Bitcoin
 Core.
 
-![Windows 7 installer start](/img/full-node/en-win7-installer-start.png?{{site.time | date: '%s'}})
+![Windows 7 installer start](/img/full-node/en-win7-installer-start.png)
 
 <div class="box" markdown="1">
 *To continue, choose one of the following options*
@@ -943,20 +917,20 @@ Core.
 Open the *Start* menu, type `bitcoin` into the search box, and click the
 *Bitcoin Core* icon.
 
-![Start Bitcoin Core](/img/full-node/en-win7-start-bitcoin-core.png?{{site.time | date: '%s'}})
+![Start Bitcoin Core](/img/full-node/en-win7-start-bitcoin-core.png)
 
 You will be prompted to choose a directory to store the Bitcoin block
 chain and your wallet.  Unless you have a separate partition or drive
 you want to use, click Ok to use the default.
 
-![Bitcoin-Qt Welcome](/img/full-node/en-win7-welcome-to-bitcoin-core.png?{{site.time | date: '%s'}})
+![Bitcoin-Qt Welcome](/img/full-node/en-win7-welcome-to-bitcoin-core.png)
 
 Your firewall may block Bitcoin Core from making outbound connections.
 It's safe to allow Bitcoin Core to use all networks. (Note: you will
 still need to configure inbound connections as described later in the
 [Network Configuration](#network-configuration) section.)
 
-![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win7-bitcoin-core-outgoing-firewall.png?{{site.time | date: '%s'}})
+![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win7-bitcoin-core-outgoing-firewall.png)
 
 Bitcoin Core GUI will begin to download the block chain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
@@ -965,7 +939,7 @@ significant part of your connection bandwidth.  You can stop Bitcoin Core at any
 time by closing it; it will resume from the point where it stopped the next time
 you start it.
 
-![Bitcoin-Qt Initial Block Download](/img/full-node/en-win7-ibd.png?{{site.time | date: '%s'}})
+![Bitcoin-Qt Initial Block Download](/img/full-node/en-win7-ibd.png)
 
 After download is complete, you may use Bitcoin Core as your wallet or
 you can just let it run to help support the Bitcoin network.
@@ -981,7 +955,7 @@ While running Bitcoin Core GUI, open the Settings menu and choose
 Options.  On the Main tab, click *Start Bitcoin on system login*.  Click
 the Ok button to save the new settings.
 
-![Choosing to start Bitcoin Core at login](/img/full-node/en-win7-start-on-login.png?{{site.time | date: '%s'}})
+![Choosing to start Bitcoin Core at login](/img/full-node/en-win7-start-on-login.png)
 
 The next time you login to your desktop, Bitcoin Core GUI will be
 automatically started minimized in the task bar.
@@ -991,13 +965,14 @@ automatically started minimized in the task bar.
 
 {{installFinished}}
 
+
 ##### Bitcoin Core Daemon {#win7-daemon}
 {:.no_toc}
 
 To start Bitcoin Core daemon, first open a command window: press the
 Windows key (`⊞ Win`) and type "cmd". Choose the program named "cmd.exe"
 
-![Running cmd](/img/full-node/en-win7-running-cmd.png?{{site.time | date: '%s'}})
+![Running cmd](/img/full-node/en-win7-running-cmd.png)
 
 If you installed the Bitcoin Core into the default directory, type the following at the command prompt :
 
@@ -1052,9 +1027,8 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 </div>
 
 {{installFinished}}
-</div>
 
-<div class="toccontent-block boxexpand expanded" markdown="1">
+
 
 ## Mac OS X Instructions
 
@@ -1065,7 +1039,7 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
 
-![Verify secure connection](/img/full-node/en-osx-safari-secure-connection.png?{{site.time | date: '%s'}})
+![Verify secure connection](/img/full-node/en-osx-safari-secure-connection.png)
 
 Click the large blue *Download Bitcoin Core* button to download the
 Bitcoin Core installer to your Downloads folder.
@@ -1077,7 +1051,7 @@ After downloading the file to your Downloads folder
 its icon. OS X will open a Finder window for you to drag *Bitcoin Core* to your
 Applications folder.
 
-![Window to install](/img/full-node/en-osx-dmg-open.png?{{site.time | date: '%s'}})
+![Window to install](/img/full-node/en-osx-dmg-open.png)
 
 #### Bitcoin Core GUI {#osx-gui}
 {:.no_toc}
@@ -1085,13 +1059,13 @@ Applications folder.
 The first time running *Bitcoin Core*, Max OS X will ask you to confirm that
 you want to run it:
 
-![Mac OS X File Security Dialog](/img/full-node/en-osx-security.png?{{site.time | date: '%s'}})
+![Mac OS X File Security Dialog](/img/full-node/en-osx-security.png)
 
 You will be prompted to choose a directory to store the Bitcoin block
 chain and your wallet.  Unless you have a separate partition or drive
 you want to use, click Ok to use the default.
 
-![Bitcoin Core Welcome](/img/full-node/en-osx-welcome-to-bitcoin-core.png?{{site.time | date: '%s'}})
+![Bitcoin Core Welcome](/img/full-node/en-osx-welcome-to-bitcoin-core.png)
 
 Bitcoin Core GUI will begin to download the block chain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
@@ -1100,7 +1074,7 @@ significant part of your connection bandwidth.  You can stop Bitcoin Core at any
 time by closing it; it will resume from the point where it stopped the next time
 you start it.
 
-![Bitcoin Core Initial Block Download](/img/full-node/en-osx-ibd.png?{{site.time | date: '%s'}})
+![Bitcoin Core Initial Block Download](/img/full-node/en-osx-ibd.png)
 
 After download is complete, you may use Bitcoin Core as your wallet or
 you can just let it run to help support the Bitcoin network.
@@ -1116,7 +1090,7 @@ While running Bitcoin Core GUI, open the Bitcoin Core menu and choose
 Preferences.  On the Main tab, click *Start Bitcoin on system login*.  Click
 the Ok button to save the new settings.
 
-![Choosing to start Bitcoin Core at login](/img/full-node/en-osx-start-on-login.png?{{site.time | date: '%s'}})
+![Choosing to start Bitcoin Core at login](/img/full-node/en-osx-start-on-login.png)
 
 The next time you login to your desktop, Bitcoin Core GUI will be
 automatically started minimized in the task bar.
@@ -1160,9 +1134,6 @@ The next time you login to your desktop, Bitcoin Core daemon will be automatical
 </div>
 
 {{installFinished}}
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Upgrading Bitcoin Core
 
@@ -1184,9 +1155,6 @@ upgrade from a very old version.
 
 Sometimes downgrade is not possible because of changes to the data files. Again,
 check the release notes for the new version if you are planning to downgrade.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Network Configuration
 
@@ -1221,7 +1189,7 @@ start Bitcoin Core (either the GUI or the daemon), wait 10 minutes, and then
 will attempt to guess your IP address---if the address is wrong (or
 blank), you will need to enter your address manually.
 
-![Bitnodes Tool](/img/full-node/en-bitnodes-tool.png?{{site.time | date: '%s'}})
+![Bitnodes Tool](/img/full-node/en-bitnodes-tool.png)
 
 After you press Check Node, the tool will inform you whether your port
 is open (green box) or not open (red box). If you get the green box, you
@@ -1250,14 +1218,14 @@ connections you have. The icon won't turn green until you have more
 than 8 active connections, which only happens if inbound connections
 are allowed.
 
-![Active connections](/img/full-node/en-active-connections.png?{{site.time | date: '%s'}})
+![Active connections](/img/full-node/en-active-connections.png)
 
 For confirmation, you can go to the Help menu, choose Debug Window, and
 open the Information tab. In the Network section, it will tell you
 exactly how many inbound connections you have. If the number is greater
 than zero, then inbound connections are allowed.
 
-![Debug window with inbound connections](/img/full-node/en-debug-inbound-connections.png?{{site.time | date: '%s'}})
+![Debug window with inbound connections](/img/full-node/en-debug-inbound-connections.png)
 
 If you don't have inbound connections, please read the instructions for [enabling inbound
 connections.](#enabling-connections)
@@ -1331,13 +1299,13 @@ related to DHCP, the Dynamic Host Configuration Protocol.  These options
 may also be called Address Reservation.  For example, the router page
 shown below calls the option we need "DHCP Reservation":
 
-![DHCP reservation button](/img/full-node/en-dhcp-reservation.png?{{site.time | date: '%s'}})
+![DHCP reservation button](/img/full-node/en-dhcp-reservation.png)
 
 In the reservation configuration, some routers will display a list of
 computers and devices currently connected to your network, and then let
 you select a device to make its current IP address permanent:
 
-![Easy DHCP reservation](/img/full-node/en-easy-dhcp-reservation.png?{{site.time | date: '%s'}})
+![Easy DHCP reservation](/img/full-node/en-easy-dhcp-reservation.png)
 
 If that's the case, find the computer running Bitcoin Core in the list,
 select it, and add it to the list of reserved addresses. Make a note of
@@ -1377,7 +1345,7 @@ address and make a note of it for the instructions in the next
 subsection. After entering this information, click the Add or Save
 button.
 
-![Manual DHCP reservation](/img/full-node/en-manual-dhcp-reservation.png?{{site.time | date: '%s'}})
+![Manual DHCP reservation](/img/full-node/en-manual-dhcp-reservation.png)
 
 Then reboot your computer to ensure it gets assigned the address you
 selected and proceed to the Port Forwarding instructions below.
@@ -1397,7 +1365,7 @@ The port forwarding settings should allow you to map an external port on
 your router to the "internal port" of a device on your network as shown
 in the screenshot below.
 
-![Port forwarding](/img/full-node/en-port-forwarding.png?{{site.time | date: '%s'}})
+![Port forwarding](/img/full-node/en-port-forwarding.png)
 
 Both the external port and the internal port should be 8333 for Bitcoin.
 (You may also want to map port 18333 for Bitcoin's testnet, although
@@ -1452,9 +1420,6 @@ ask for help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Configuration Tuning
 
@@ -1467,10 +1432,10 @@ limit it to using one CPU core for signature verification, you can start
 Bitcoin Core like this:
 
 {% highlight bash %}
-### Bitcoin Core daemon
+## Bitcoin Core daemon
 bitcoind -par=1 -daemon
 
-### Bitcoin Core GUI
+## Bitcoin Core GUI
 bitcoin-qt -par=1
 {% endhighlight %}
 
@@ -1583,11 +1548,6 @@ won't see incoming transactions until they've received at least one confirmation
 
 You will still be able to send transactions from the built-in wallet or from
 peers you've whitelisted using the `-whitelist` parameter.
-</div>
 
 </div>
-</div>
-</div>
-<!-- <script>updateToc();</script>
-<script>accordion();</script>
-<script>onScrollButton();</script> -->
+<script>updateToc();</script>

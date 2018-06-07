@@ -5,35 +5,15 @@
 layout: base
 id: spend-bitcoin
 ---
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summary">{% translate summary %}</p>
-     {% include helpers/hero-social.html %}
-  </div>
-</div>
+<h1>{% translate pagetitle %}</h1>
+<p class="summary">{% translate summary %}</p>
 
-<div class="container">
-  <div class="row card-row">
-    <div class="card spend-card">
-      <img src="/img/icons/product.svg?{{site.time | date: '%s'}}" alt="icon">
-      <h2 id="products-online">{% translate products-online %}</h2>
-      <p>{% translate products-online-text %}</p>
-    </div>
-    
-    <div class="card spend-card">
-      <img src="/img/icons/directory.svg?{{site.time | date: '%s'}}" alt="icon">
-      <h2 id="directory">{% translate directory %}</h2>
-      <p>{% translate directory-text %}</p>
-    </div>
-    
-    
-    <div class="card spend-card">
-      <img src="/img/icons/local.svg?{{site.time | date: '%s'}}" alt="icon">
-      <h2 id="map">{% translate business-map %}</h2>
-      <p>{% translate business-map-text %}</p>
-    </div>
-    
-  </div>
-</div>
+<h2 id="products-online"><span class="fa fa-shopping-cart fa-lg"></span> {% translate products-online %}</h2>
+<p>{% translate products-online-text %}</p>
+
+<h2 id="directory"><span class="fa fa-book fa-lg"></span> {% translate directory %}</h2>
+<p>{% translate directory-text %}</p>
+
+<h2 id="map"><span class="fa fa-globe fa-lg"></span> {% translate business-map %}</h2>
+<p>{% translate business-map-text %}</p>
 
