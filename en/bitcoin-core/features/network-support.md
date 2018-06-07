@@ -25,7 +25,7 @@ breadcrumbs:
 <div class="bitcore-content clearfix">
 <div class="container" markdown="block">
 
-![Support the network](/img/bitcoin-core/slider-network.svg)
+![Support the network](/img/bitcoin-core/slider-network.svg?{{site.time | date: '%s'}})
 
 {% include bitcoin-core/download-bitcoin-core.html %}
 

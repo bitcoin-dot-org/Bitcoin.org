@@ -17,7 +17,7 @@ id: resources
   <div class="row card-row">
 
       <div class="card resources-card">
-        <img src="/img/icons/ico_solve.svg" alt="Icon">
+        <img src="/img/icons/ico_solve.svg?{{site.time | date: '%s'}}" alt="Icon">
         <h2 id="learn">{% translate learn %}</h2>
         <p>{% translate linkwiki %}</p>
         {% if page.lang == 'fr' %}
@@ -45,7 +45,7 @@ id: resources
       </div>
 
       <div class="card resources-card">
-        <img src="/img/icons/ico_invoice.svg" alt="Icon">
+        <img src="/img/icons/ico_invoice.svg?{{site.time | date: '%s'}}" alt="Icon">
         <h2 id="directories">{% translate directories %}</h2>
         <p>
           <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate linkwallets %}</a> - bitcoin.org</p>
@@ -64,7 +64,7 @@ id: resources
       </div>
 
       <div class="card resources-card">
-        <img src="/img/icons/ico_spread.svg" alt="Icon">
+        <img src="/img/icons/ico_spread.svg?{{site.time | date: '%s'}}" alt="Icon">
         <h2 id="news">{% translate news %}</h2>
         {% if page.lang == 'bg' %}
         <p>
@@ -120,7 +120,7 @@ id: resources
       </div>
 
       <div class="card resources-card">
-        <img src="/img/icons/ico_market.svg" alt="Icon">
+        <img src="/img/icons/ico_market.svg?{{site.time | date: '%s'}}" alt="Icon">
         <h2 id="charts">{% translate charts %}</h2>
         <p>
           <a href="https://live.blockcypher.com/btc">BlockCypher</a>
@@ -143,7 +143,7 @@ id: resources
       </div>
 
       <div class="card resources-card">
-        <img src="/img/icons/ico_doc.svg" alt="Icon">
+        <img src="/img/icons/ico_doc.svg?{{site.time | date: '%s'}}" alt="Icon">
         <h2 id="documentaries">{% translate documentaries %}</h2>
         <p>
           <a href="http://bitcoinfilm.org/">BitcoinFilm.org</a>
@@ -157,7 +157,7 @@ id: resources
       </div>
 
       <div class="card resources-card">
-        <img src="/img/icons/ico_voucher.svg" alt="Icon">
+        <img src="/img/icons/ico_voucher.svg?{{site.time | date: '%s'}}" alt="Icon">
         <h2 id="vouchers">{% translate vouchers %}</h2>
         <p>
           <a href="https://www.bitrefill.com/">Bitrefill</a>

@@ -35,7 +35,7 @@ lin64: "x86_64-linux-gnu.tar.gz"
       <h1>{% translate pagetitle %}</h1>
       <h2 class="summary">{% translate latestversion %} {{ site.DOWNLOAD_VERSION }}
         <!-- <a type="application/rss+xml" href="/en/rss/releases.rss">
-          <img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon">
+          <img src="/img/icons/icon_rss.svg?{{site.time | date: '%s'}}" alt="rss" class="rssicon">
         </a> -->
       {% include helpers/hero-social.html %}
       </h2>
@@ -46,7 +46,7 @@ lin64: "x86_64-linux-gnu.tar.gz"
     <div class="core-column-left clearfix">
       <div class="mainbutton">
         <a id="downloadbutton" href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}">
-          <!-- <img src="/img/os/but_windows.svg" alt="icon"> -->
+          <!-- <img src="/img/os/but_windows.svg?{{site.time | date: '%s'}}" alt="icon"> -->
           {% translate download %}
         </a>
         <p class="btn-subtext">Bitcoin Core {{ site.DOWNLOAD_VERSION }}</p>

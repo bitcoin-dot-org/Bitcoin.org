@@ -19,7 +19,7 @@ breadcrumbs:
 # Bitcoin Core
 {:.not-displayed}
 
-<!-- ![Bitcoin Core: Helping You Keep Bitcoin Decentralized](/img/bitcoin-core/en-big-logo.svg) -->
+<!-- ![Bitcoin Core: Helping You Keep Bitcoin Decentralized](/img/bitcoin-core/en-big-logo.svg?{{site.time | date: '%s'}}) -->
 
 <div class="hero core-hero">
   <div class="container hero-container">
@@ -44,7 +44,7 @@ breadcrumbs:
   <div class="show_more" markdown="block">
   <div class="row show_more-row">
     <div class="show_more-block">
-      <img class="show_more-icon" src="/img/bitcoin-core/decentralized.svg" alt="icon">
+      <img class="show_more-icon" src="/img/bitcoin-core/decentralized.svg?{{site.time | date: '%s'}}" alt="icon">
       <p class="show_more-title">Decentralized</p>
       <p>
       It is these users who keep Bitcoin decentralized. They
@@ -54,7 +54,7 @@ breadcrumbs:
       </p>
     </div>
     <div class="show_more-block">
-      <img class="show_more-icon" src="/img/bitcoin-core/no_voting.svg" alt="icon">
+      <img class="show_more-icon" src="/img/bitcoin-core/no_voting.svg?{{site.time | date: '%s'}}" alt="icon">
       <p class="show_more-title">No Voting</p>
       <p>
       There's no voting or other corruptible process involved: there's

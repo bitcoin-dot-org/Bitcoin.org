@@ -33,24 +33,24 @@ To contribute a translation, create a [Transifex][transifex] account and
 then go to the [Bitcoin Core translation page][bitcoin core transifex].
 From there you can click the Join Team button near the top of the page.
 
-![Help translate Bitcoin](/img/bitcoin-core/transifex-1.png)
+![Help translate Bitcoin](/img/bitcoin-core/transifex-1.png?{{site.time | date: '%s'}})
 
 After you've joined the team, find the language you want to help
 translate.  Click on it and choose what Bitcoin Core release you want to
 contribute to.
 
-![Choose a language](/img/bitcoin-core/transifex-2.png)
+![Choose a language](/img/bitcoin-core/transifex-2.png?{{site.time | date: '%s'}})
 
 From the page listing a specific release, you can click the Translate
 button.
 
-![Translate](/img/bitcoin-core/transifex-3.png)
+![Translate](/img/bitcoin-core/transifex-3.png?{{site.time | date: '%s'}})
 
 On the Translation screen, click the Untranslated tab.  On the left pane
 will appear the English versions of text that needs translating.  On the
 right pane, you can enter your proposed translation.
 
-![Choose untranslated](/img/bitcoin-core/transifex-4.png)
+![Choose untranslated](/img/bitcoin-core/transifex-4.png?{{site.time | date: '%s'}})
 
 After saving your translation, it will be reviewed and (if accepted)
 included in the next release of that version of Bitcoin Core.

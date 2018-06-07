@@ -22,7 +22,7 @@ users, and several make it easier to [start contributing][] to
 Bitcoin Core.
 
 {:.center}
-![Excerpts from Bitcoin.org's Bitcoin Core pages](/img/blog/free/bitcoin-core-pages-collage.png)
+![Excerpts from Bitcoin.org's Bitcoin Core pages](/img/blog/free/bitcoin-core-pages-collage.png?{{site.time | date: '%s'}})
 
 {:.center}
 *Excerpts from Bitcoin.org's <a href="/en/bitcoin-core/">Bitcoin Core</a> pages*
@@ -31,7 +31,7 @@ Both Bitcoin Core and Bitcoin.org have come a long way since the site
 began promoting the earliest public versions of the software.
 
 {:.center}
-![Bitcoin.org homepage, 3 March 2009](/img/blog/free/bitcoin-org-2009-03-03.png)
+![Bitcoin.org homepage, 3 March 2009](/img/blog/free/bitcoin-org-2009-03-03.png?{{site.time | date: '%s'}})
 
 {:.center}
 *Bitcoin.org homepage, 3 March 2009 ([Internet Archive][])*

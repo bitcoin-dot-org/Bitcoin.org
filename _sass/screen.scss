@@ -368,7 +368,7 @@ hr {
    right: 0;
    width: 8px;
    height: 5px;
-   background: url(../img/icons/ico_angle.svg) no-repeat;
+   background: url(../img/icons/ico_angle.svg?1528322191) no-repeat;
    -webkit-transform: translateY(-50%);
            transform: translateY(-50%);
 }
@@ -472,7 +472,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .hero {
     position: relative;
     padding: 96px 30px 138px;
-    background: url(../img/hero/hero-bg.svg) bottom no-repeat;
+    background: url(../img/hero/hero-bg.svg?1528322191) bottom no-repeat;
     background-size: cover;
     z-index: 10;
 }
@@ -495,7 +495,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     padding-top: 60px;
     text-align: left;
     color: #9D9D9D;
-    background: #13161f url(../img/hero/footer-bg.svg) top no-repeat;
+    background: #13161f url(../img/hero/footer-bg.svg?1528322191) top no-repeat;
     z-index: 10;
 }
 .logo-footer {
@@ -640,10 +640,10 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     padding-left:20px;
     background-position:left center;
     background-repeat:no-repeat;
-    background-image:url(/img/icons/netstatus_normal.svg);
+    background-image:url(/img/icons/netstatus_normal.svg?1528322191);
 }
 .statusmenu.alert{
-    background-image:url(/img/icons/netstatus_alert.svg);
+    background-image:url(/img/icons/netstatus_alert.svg?1528322191);
 }
 
 .clearfix::after {
@@ -774,7 +774,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     height: 50px;
     margin: 0 auto;
     padding: 0 0 0 65px;
-    background: url(../img/icons/play-btn.svg) left no-repeat;
+    background: url(../img/icons/play-btn.svg?1528322191) left no-repeat;
     background-size: contain;
     border: none;
 }
@@ -815,7 +815,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     width: 30px;
     height: 30px;
     border: none;
-    background: url(../img/icons/close-youtube.svg) center no-repeat;
+    background: url(../img/icons/close-youtube.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .maindesc {
@@ -976,7 +976,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .mainoverview {
     position: relative;
     padding: 375px 0 130px;
-    background: url(../img/hero/overview-bg.svg) top no-repeat;
+    background: url(../img/hero/overview-bg.svg?1528322191) top no-repeat;
     background-size: cover;
     text-align: center;
 }
@@ -1073,7 +1073,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     height: 100%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    background: url(../img/getting-started/start-path.svg) no-repeat;
+    background: url(../img/getting-started/start-path.svg?1528322191) no-repeat;
 }
 .start-block::after{
     content: '';
@@ -1087,16 +1087,16 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     z-index: 10;
 }
 .start-block:nth-child(1)::after{
-    background: url(../img/getting-started/number-1.svg) no-repeat;
+    background: url(../img/getting-started/number-1.svg?1528322191) no-repeat;
 }
 .start-block:nth-child(2)::after{
-    background: url(../img/getting-started/number-2.svg) no-repeat;
+    background: url(../img/getting-started/number-2.svg?1528322191) no-repeat;
 }
 .start-block:nth-child(3)::after{
-    background: url(../img/getting-started/number-3.svg) no-repeat;
+    background: url(../img/getting-started/number-3.svg?1528322191) no-repeat;
 }
 .start-block:nth-child(4)::after{
-    background: url(../img/getting-started/number-4.svg) no-repeat;
+    background: url(../img/getting-started/number-4.svg?1528322191) no-repeat;
 }
 .start:nth-child(2){
     border-bottom: 1px solid #DADADA;
@@ -1226,7 +1226,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     left: 0;
     width: 12px;
     height: 15px;
-    background: url(../img/icons/ico_download.svg) no-repeat;
+    background: url(../img/icons/ico_download.svg?1528322191) no-repeat;
 }
 /* Bitcoin paper page end */
 .warning {
@@ -1250,7 +1250,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     height: 43px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    background: url(../img/icons/ico_warning.svg) center no-repeat;
+    background: url(../img/icons/ico_warning.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 
@@ -1392,7 +1392,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
    right: 0;
    width: 10px;
    height: 6px;
-   background: url(../img/icons/ico_angle.svg) no-repeat;
+   background: url(../img/icons/ico_angle.svg?1528322191) no-repeat;
    -webkit-transform: translateY(-50%);
            transform: translateY(-50%);
 }
@@ -1542,7 +1542,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     left:-20px;
     bottom:0;
     top:0;
-    background:url(/img/icons/mini_ico_anchor.svg) no-repeat center center;
+    background:url(/img/icons/mini_ico_anchor.svg?1528322191) no-repeat center center;
     background-size: contain;
 }
 .anchorAf:hover a:first-child{
@@ -1590,7 +1590,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     width: 10px;
     height: 10px;
     cursor:pointer;
-    background: url(../img/icons/close-btn.svg) center no-repeat;
+    background: url(../img/icons/close-btn.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .glossary_term {
@@ -1607,7 +1607,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     border: 1px solid #DADADA;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    background: url(../img/icons/ico_search.svg) 30px 17px no-repeat;
+    background: url(../img/icons/ico_search.svg?1528322191) 30px 17px no-repeat;
 }
 .help-search {
     margin: 50px auto;
@@ -1867,27 +1867,27 @@ br.big {
     height: 35px;
 }
 .disk-icon::before {
-    background: url(../img/icons/ico_disk.svg) center no-repeat;
+    background: url(../img/icons/ico_disk.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .download-icon::before {
-    background: url(../img/icons/download-icon.svg) center no-repeat;
+    background: url(../img/icons/download-icon.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .upload-icon::before {
-    background: url(../img/icons/ico_upload.svg) center no-repeat;
+    background: url(../img/icons/ico_upload.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .memory-icon::before {
-    background: url(../img/icons/ico_memory.svg) center no-repeat;
+    background: url(../img/icons/ico_memory.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .system-icon::before {
-    background: url(../img/icons/ico_system.svg) center no-repeat;
+    background: url(../img/icons/ico_system.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .os-icon::before {
-    background: url(../img/icons/ico_os.svg) center no-repeat;
+    background: url(../img/icons/ico_os.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 /********** SLIDER **********/
@@ -1969,7 +1969,7 @@ br.big {
     transform: translateY(-50%);
     width: 14px;
     height: 14px;
-    background: url(../img/icons/ico_angle_grey.svg) center no-repeat;
+    background: url(../img/icons/ico_angle_grey.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .prevnext a:first-child {
@@ -2111,7 +2111,7 @@ br.big {
     left: 20px;
     width: 30px;
     height: 30px;
-    background: url(../img/bitcoin-core/features.svg) 50% 50% no-repeat;
+    background: url(../img/bitcoin-core/features.svg?1528322191) 50% 50% no-repeat;
 }
 .help-card::before {
     content: '';
@@ -2120,7 +2120,7 @@ br.big {
     left: 20px;
     width: 30px;
     height: 30px;
-    background: url(../img/bitcoin-core/help.svg) 50% 50% no-repeat;
+    background: url(../img/bitcoin-core/help.svg?1528322191) 50% 50% no-repeat;
 }
 .contribute-card::before {
     content: '';
@@ -2129,7 +2129,7 @@ br.big {
     left: 20px;
     width: 30px;
     height: 30px;
-    background: url(../img/bitcoin-core/contribute.svg) 50% 50% no-repeat;
+    background: url(../img/bitcoin-core/contribute.svg?1528322191) 50% 50% no-repeat;
 }
 .releases-card::before {
     content: '';
@@ -2138,7 +2138,7 @@ br.big {
     left: 20px;
     width: 30px;
     height: 30px;
-    background: url(../img/bitcoin-core/news.svg) 50% 50% no-repeat;
+    background: url(../img/bitcoin-core/news.svg?1528322191) 50% 50% no-repeat;
 }
 .rss-card::before {
     content: '';
@@ -2147,7 +2147,7 @@ br.big {
     left: 20px;
     width: 30px;
     height: 30px;
-    background: url(../img/bitcoin-core/rss.svg) 50% 50% no-repeat;
+    background: url(../img/bitcoin-core/rss.svg?1528322191) 50% 50% no-repeat;
 }
 .core-separator {
     margin: 0 0 70px;
@@ -2167,7 +2167,7 @@ br.big {
     left: 0;
     width: 17px;
     height: 17px;
-    background: url(../img/bitcoin-core/news.svg) 50% 50% no-repeat;
+    background: url(../img/bitcoin-core/news.svg?1528322191) 50% 50% no-repeat;
     -webkit-transform: translateY(50%);
             transform: translateY(50%);
 }
@@ -2334,7 +2334,7 @@ br.big {
     right: 30px;
     width: 10px;
     height: 6px;
-    background: url(../img/icons/ico_angle.svg) no-repeat;
+    background: url(../img/icons/ico_angle.svg?1528322191) no-repeat;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
 }
@@ -2478,35 +2478,35 @@ br.big {
     height: 40px;
 }
 .exchanges-international-title::before {
-    background: url(../img/flags/ALL.svg) center no-repeat;
+    background: url(../img/flags/ALL.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .exchanges-europe-title::before {
-    background: url(../img/flags/EU.svg) center no-repeat;
+    background: url(../img/flags/EU.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .exchanges-asia-title::before {
-    background: url(../img/flags/asia.svg) center no-repeat;
+    background: url(../img/flags/asia.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .exchanges-south-america-title::before {
-    background: url(../img/flags/south-america.svg) center no-repeat;
+    background: url(../img/flags/south-america.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .exchanges-north-america-title::before {
-    background: url(../img/flags/north-america.svg) center no-repeat;
+    background: url(../img/flags/north-america.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .exchanges-australia-title::before {
-    background: url(../img/flags/australia.svg) center no-repeat;
+    background: url(../img/flags/australia.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .exchanges-newzealand-title::before {
-    background: url(../img/flags/newzealand.svg) center no-repeat;
+    background: url(../img/flags/newzealand.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .exchanges-africa-title::before {
-    background: url(../img/flags/africa.svg) center no-repeat;
+    background: url(../img/flags/africa.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .expanded .exchanges-content-row {
@@ -2645,7 +2645,7 @@ br.big {
     height: 60px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    background: url(../img/icons/badge.svg) center no-repeat;
+    background: url(../img/icons/badge.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .alerts {
@@ -2733,7 +2733,7 @@ br.big {
     left: 20px;
     width: 30px;
     height: 30px;
-    background: url(../img/os/med_win.svg) 50% 50% no-repeat;
+    background: url(../img/os/med_win.svg?1528322191) 50% 50% no-repeat;
 }
 .mac-card::before {
     content: '';
@@ -2742,7 +2742,7 @@ br.big {
     left: 20px;
     width: 30px;
     height: 30px;
-    background: url(../img/os/med_osx.svg) 50% 50% no-repeat;
+    background: url(../img/os/med_osx.svg?1528322191) 50% 50% no-repeat;
 }
 .linux-card::before {
     content: '';
@@ -2751,7 +2751,7 @@ br.big {
     left: 20px;
     width: 30px;
     height: 30px;
-    background: url(../img/os/med_linux.svg) 50% 50% no-repeat;
+    background: url(../img/os/med_linux.svg?1528322191) 50% 50% no-repeat;
 }
 .arm-card::before {
     content: '';
@@ -2760,7 +2760,7 @@ br.big {
     left: 20px;
     width: 30px;
     height: 30px;
-    background: url(../img/os/arm.png) 50% 50% no-repeat;
+    background: url(../img/os/arm.png?1528322191) 50% 50% no-repeat;
     background-size: contain;
 }
 .ubuntu-card::before {
@@ -2770,7 +2770,7 @@ br.big {
     left: 20px;
     width: 30px;
     height: 30px;
-    background: url(../img/os/med_ubuntu.svg) 50% 50% no-repeat;
+    background: url(../img/os/med_ubuntu.svg?1528322191) 50% 50% no-repeat;
     background-size: contain;
 }
 .downloadkeys-title {
@@ -2867,7 +2867,7 @@ br.big {
     height: 100%;
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
-    background: url(../img/getting-started/start-path.svg) no-repeat;
+    background: url(../img/getting-started/start-path.svg?1528322191) no-repeat;
     z-index: -1;
 }
 .own-timeline-number::after {
@@ -2967,7 +2967,7 @@ br.big {
     left: 50%;
     width: 1px;
     height: 100%;
-    background: url(../img/icons/path.svg) center repeat-y;
+    background: url(../img/icons/path.svg?1528322191) center repeat-y;
 }
 .post {
     display: none;
@@ -2991,7 +2991,7 @@ br.big {
     right: -10px;
     width: 95px;
     height: 20px;
-    background:url(../img/icons/timeline-point-left.svg) center no-repeat;
+    background:url(../img/icons/timeline-point-left.svg?1528322191) center no-repeat;
 }
 .post:nth-child(even) {
     position: relative;
@@ -3006,7 +3006,7 @@ br.big {
     left: -10px;
     width: 95px;
     height: 20px;
-    background:url(../img/icons/timeline-point-right.svg) center no-repeat;
+    background:url(../img/icons/timeline-point-right.svg?1528322191) center no-repeat;
 }
 .post:nth-child(2) {
     margin-top: 100px;
@@ -3144,7 +3144,7 @@ br.big {
     height: 20px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    background: url(../img/icons/ico_play.svg) center no-repeat;
+    background: url(../img/icons/ico_play.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .press-videos-more {
@@ -3189,7 +3189,7 @@ br.big {
     height: 29px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    background: url(../img/icons/quote.svg) center no-repeat;
+    background: url(../img/icons/quote.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .quote-text {
@@ -3265,11 +3265,11 @@ br.big {
     color: #ff7e00;
 }
 .ui-state-default .ui-icon {
-    background: url(../img/icons/ico_angle_grey.svg) center no-repeat;   
+    background: url(../img/icons/ico_angle_grey.svg?1528322191) center no-repeat;   
     background-size: contain;
 }
 .ui-icon-closethick {
-    background: url(../img/icons/close-btn.svg) center no-repeat !important;   
+    background: url(../img/icons/close-btn.svg?1528322191) center no-repeat !important;   
     background-size: contain;
 }
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
@@ -3279,7 +3279,7 @@ br.big {
 }
 .ui-accordion .ui-state-active .ui-accordion-header-icon{
     width: 17px;
-    background: url(../img/icons/ico_angle_orange.svg) center no-repeat;   
+    background: url(../img/icons/ico_angle_orange.svg?1528322191) center no-repeat;   
     background-size: contain;
 }
 .ui-accordion .ui-accordion-content {
@@ -3588,7 +3588,7 @@ br.big {
     }
     .mainoverview {
         padding: 225px 0 115px;
-        background: url(../img/hero/overview-tablet.svg) top no-repeat;
+        background: url(../img/hero/overview-tablet.svg?1528322191) top no-repeat;
         background-size: cover;
     }
     .maindesc {
@@ -3773,12 +3773,12 @@ br.big {
     .post:nth-child(odd)::after {
         top: 40px;
         width: 54px;
-        background: url(../img/icons/timeline-point-left-tablet.svg) center no-repeat;
+        background: url(../img/icons/timeline-point-left-tablet.svg?1528322191) center no-repeat;
     }
     .post:nth-child(even)::after {
         top: 40px;
         width: 54px;
-        background: url(../img/icons/timeline-point-right-tablet.svg) center no-repeat;
+        background: url(../img/icons/timeline-point-right-tablet.svg?1528322191) center no-repeat;
     }
     .post:nth-child(odd) .post-inner {
         padding: 35px 40px 35px 30px;
@@ -4182,7 +4182,7 @@ br.big {
         left: -10px;
         width: 46px;
         height: 20px;
-        background: url(../img/icons/timeline-point-right-mob.svg) center no-repeat;
+        background: url(../img/icons/timeline-point-right-mob.svg?1528322191) center no-repeat;
     }
     .post:nth-child(odd) .post-inner, 
     .post:nth-child(even) .post-inner {
@@ -4311,7 +4311,7 @@ br.big {
         height: 12px;
         width: 18px;
         padding: 4px 15px 10px;
-        background: url(/img/icons/menumobile.svg) center no-repeat;
+        background: url(/img/icons/menumobile.svg?1528322191) center no-repeat;
         cursor: pointer;
     }
     .menusimple {
@@ -4474,7 +4474,7 @@ br.big {
     }
     .mainoverview {
         padding: 110px 0 50px;
-        background: url(../img/hero/overview-mob.svg) top no-repeat;
+        background: url(../img/hero/overview-mob.svg?1528322191) top no-repeat;
         background-size: cover;
     }
     .mainoverview-title {
@@ -4546,7 +4546,7 @@ br.big {
                 box-sizing: border-box;
         margin-bottom: 25px;
         text-align: left;
-        background: #F7931A url(../img/icons/ico_burger_light.svg) 26px 22px no-repeat;;
+        background: #F7931A url(../img/icons/ico_burger_light.svg?1528322191) 26px 22px no-repeat;;
         font-size: 100%;
         font-weight: 600;
         color: #FFFFFF;
@@ -4590,7 +4590,7 @@ br.big {
         right: -55px;
         width: 55px;
         height: 55px;
-        background: #F7931A url(../img/icons/ico_angle_light.svg) center no-repeat;
+        background: #F7931A url(../img/icons/ico_angle_light.svg?1528322191) center no-repeat;
         background-size: 18px;
         -webkit-transform: rotate(90deg);
                 transform: rotate(90deg);
@@ -4687,7 +4687,7 @@ br.big {
         color: #FF9500;
     }
     .toc div>ul>li>a::after {
-        background: url(../img/icons/ico_angle_light.svg) no-repeat;
+        background: url(../img/icons/ico_angle_light.svg?1528322191) no-repeat;
     }
     .toc ul li ul li a:hover:before,
     .toc ul li ul li a.active:before {
@@ -4798,7 +4798,7 @@ br.big {
         height: 6px;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
-        background: url(../img/icons/ico_angle.svg) center no-repeat;
+        background: url(../img/icons/ico_angle.svg?1528322191) center no-repeat;
     }
     .active.resp-acc-toggle::after {
         -webkit-transform: translateY(-50%) rotate(180deg);

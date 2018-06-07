@@ -17,7 +17,7 @@ author: |
 <div class="post-content" markdown="1">
 
 {:.center}
-![Bitcoin Exchanges](/img/blog/free/bitcoin-exchanges.png)
+![Bitcoin Exchanges](/img/blog/free/bitcoin-exchanges.png?{{site.time | date: '%s'}})
 
 [A directory of Bitcoin Exchanges servicing the world’s 20 largest
 economies](https://bitcoin.org/en/exchanges), as well as several international

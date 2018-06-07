@@ -31,7 +31,7 @@ and they're an exception to many of the rules listed below. Instead of
 pointing out the coinbase exception to each rule, we invite you to read
 about coinbase transactions in the block chain section of this guide.
 
-![The Parts Of A Transaction](/img/dev/en-tx-overview.svg)
+![The Parts Of A Transaction](/img/dev/en-tx-overview.svg?{{site.time | date: '%s'}})
 
 The figure above shows the main parts of a Bitcoin transaction. Each
 transaction has at least one input and one output. Each [input][/en/glossary/input]{:#term-input}{:.term} spends the
@@ -45,7 +45,7 @@ Bitcoin peers and miners which set of rules to use to validate it.  This
 lets developers create new rules for future transactions without
 invalidating previous transactions.
 
-![Spending An Output](/img/dev/en-tx-overview-spending.svg)
+![Spending An Output](/img/dev/en-tx-overview-spending.svg?{{site.time | date: '%s'}})
 
 An output has an implied index number based on its location in the
 transaction---the index of the first output is zero. The output also has an
@@ -68,7 +68,7 @@ type. [P2PKH][/en/glossary/p2pkh-address]{:#term-p2pkh}{:.term} lets Alice spend
 and then lets Bob further spend those satoshis using a simple
 cryptographic key pair.
 
-![Creating A P2PKH Public Key Hash To Receive Payment](/img/dev/en-creating-p2pkh-output.svg)
+![Creating A P2PKH Public Key Hash To Receive Payment](/img/dev/en-creating-p2pkh-output.svg?{{site.time | date: '%s'}})
 
 Bob must first generate a private/public [key pair][]{:#term-key-pair}{:.term} before Alice can create the
 first transaction. Bitcoin uses the Elliptic Curve Digital Signature Algorithm (ECDSA) with
@@ -122,7 +122,7 @@ Pubkey scripts and signature scripts combine secp256k1 pubkeys
 and signatures with conditional logic, creating a programmable
 authorization mechanism.
 
-![Unlocking A P2PKH Output For Spending](/img/dev/en-unlocking-p2pkh-output.svg)
+![Unlocking A P2PKH Output For Spending](/img/dev/en-unlocking-p2pkh-output.svg?{{site.time | date: '%s'}})
 
 For a P2PKH-style output, Bob's signature script will contain the following two
 pieces of data:
@@ -139,7 +139,7 @@ Bob's secp256k1 signature doesn't just prove Bob controls his private key; it al
 makes the non-signature-script parts of his transaction tamper-proof so Bob can safely
 broadcast them over the peer-to-peer network.
 
-![Some Things Signed When Spending An Output](/img/dev/en-signing-output-to-spend.svg)
+![Some Things Signed When Spending An Output](/img/dev/en-signing-output-to-spend.svg?{{site.time | date: '%s'}})
 
 As illustrated in the figure above, the data Bob signs includes the
 txid and output index of the previous transaction, the previous
@@ -205,7 +205,7 @@ and continuing to the end of Alice's pubkey script. The figure below shows the
 evaluation of a standard P2PKH pubkey script; below the figure is a description
 of the process.
 
-![P2PKH Stack Evaluation](/img/dev/en-p2pkh-stack.svg)
+![P2PKH Stack Evaluation](/img/dev/en-p2pkh-stack.svg?{{site.time | date: '%s'}})
 
 * The signature (from Bob's signature script) is added (pushed) to an empty stack.
   Because it's just data, nothing is done except adding it to the stack.
@@ -274,7 +274,7 @@ wants, hashes the redeem script, and provides the redeem script
 hash to Alice. Alice creates a P2SH-style output containing
 Bob's redeem script hash.
 
-![Creating A P2SH Redeem Script And Hash](/img/dev/en-creating-p2sh-output.svg)
+![Creating A P2SH Redeem Script And Hash](/img/dev/en-creating-p2sh-output.svg?{{site.time | date: '%s'}})
 
 When Bob wants to spend the output, he provides his signature along with
 the full (serialized) redeem script in the signature script. The
@@ -283,7 +283,7 @@ value as the script hash Alice put in her output; it then processes the
 redeem script exactly as it would if it were the primary pubkey script, letting
 Bob spend the output if the redeem script does not return false.
 
-![Unlocking A P2SH Output For Spending](/img/dev/en-unlocking-p2sh-output.svg)
+![Unlocking A P2SH Output For Spending](/img/dev/en-unlocking-p2sh-output.svg?{{site.time | date: '%s'}})
 
 The hash of the redeem script has the same properties as a pubkey
 hash---so it can be transformed into the standard Bitcoin address format

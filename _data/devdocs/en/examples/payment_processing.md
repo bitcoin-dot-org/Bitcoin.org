@@ -55,7 +55,7 @@ not used in this program.)
 The full sequence of events is illustrated below, starting with the
 spender clicking a `bitcoin:` URI or scanning a `bitcoin:` QR code.
 
-![BIP70 Payment Protocol](/img/dev/en-payment-protocol.svg)
+![BIP70 Payment Protocol](/img/dev/en-payment-protocol.svg?{{site.time | date: '%s'}})
 
 For the script to use the protocol buffer, you will need a copy of
 Google's Protocol Buffer compiler (`protoc`), which is available in most
@@ -221,7 +221,7 @@ www.bitcoin.org X.509 certificate and how each certificate (except the
 root certificate) would be loaded into the [X509Certificates][]{:#term-x509certificates}{:.term} protocol
 buffer message.
 
-![X509Certificates Loading Order](/img/dev/en-cert-order.svg)
+![X509Certificates Loading Order](/img/dev/en-cert-order.svg?{{site.time | date: '%s'}})
 
 To be specific, the first certificate provided must be the
 X.509 certificate corresponding to the private SSL key which will make the
@@ -469,6 +469,6 @@ because it would add an extraneous newline.
 The following screenshot shows how the authenticated PaymentDetails
 created by the program above appears in the GUI from Bitcoin Core 0.9.
 
-![Bitcoin Core Showing Validated Payment Request](/img/dev/en-btcc-payment-request.png)
+![Bitcoin Core Showing Validated Payment Request](/img/dev/en-btcc-payment-request.png?{{site.time | date: '%s'}})
 
 {% endautocrossref %}

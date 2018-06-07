@@ -11,7 +11,7 @@ max_wallet_text_length: 418  ## Unicode characters
     </div>
     <div class="hero">
       <div class="container wallet-logo-container hero-container">
-        <img class="wallet-logo" src="/img/wallet/{{ page.wallet.id }}.png" alt="{{ page.wallet.title }}" />
+        <img class="wallet-logo" src="/img/wallet/{{ page.wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ page.wallet.title }}" />
         <h1 class="wallet-title">
           {{ page.wallet.title }}
         </h1>

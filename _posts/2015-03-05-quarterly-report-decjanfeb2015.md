@@ -65,7 +65,7 @@ Summary for December 2014, January 2015, and February 2015.
 > realizado!" (Many thanks for doing this immediately, and for all the
 > work done!) --Adamantike on Transifex.com
 
-![Bitcoin.org available in 26 languages](/img/blog/free/translations.png)
+![Bitcoin.org available in 26 languages](/img/blog/free/translations.png?{{site.time | date: '%s'}})
 
 Non-US/UK visitors accounted for 35% percent of Bitcoin.org's traffic
 this quarter, about 2.5 million page views. Future translation work will
@@ -99,7 +99,7 @@ many reviews made by Saïvann Carignan.
 > "Nice work!" ---Jonas Schnelli about the new HTTP REST documentation
 > ([source](https://github.com/bitcoin-dot-org/bitcoin.org/pull/720#issuecomment-71515413))
 
-![Illustration from new headers-first documentation](/img/blog/free/en-headers-first-moving-window.png)
+![Illustration from new headers-first documentation](/img/blog/free/en-headers-first-moving-window.png?{{site.time | date: '%s'}})
 
 The three main developer documentation webpages received a total
 of about 90,000 page views this quarter. Accomplishments this
@@ -151,7 +151,7 @@ conducted by Saïvann Carignan, Jonas Schnelli, and others.
 > [2](https://github.com/bitcoin-dot-org/bitcoin.org/issues/741),
 > [3](https://github.com/bitcoin-dot-org/bitcoin.org/issues/741))
 
-![Excerpt from the Events page map](/img/blog/free/events.png)
+![Excerpt from the Events page map](/img/blog/free/events.png?{{site.time | date: '%s'}})
 
 The English [homepage](https://bitcoin.org/en/) and [Getting
 Started](https://bitcoin.org/en/getting-started) page by themselves
@@ -189,7 +189,7 @@ pull requests to keep the site content current and useful.
 > a bug in the new GreenBits wallet
 > ([source](https://github.com/bitcoin-dot-org/bitcoin.org/pull/725#issuecomment-73322654))
 
-![Just some of the wallets currently listed](/img/blog/free/wallets.png)
+![Just some of the wallets currently listed](/img/blog/free/wallets.png?{{site.time | date: '%s'}})
 
 The [Choose Your Wallet page](https://bitcoin.org/en/choose-your-wallet)
 is one of our most visited pages---just the English version of the page
@@ -241,7 +241,7 @@ to interact directly with wallet authors.
 > GitHub
 > ([source](https://github.com/bitcoin-dot-org/bitcoin.org/pull/711#issuecomment-70187037))
 
-![Screenshot included in the full node guide](/img/blog/free/bitcoin-core.png)
+![Screenshot included in the full node guide](/img/blog/free/bitcoin-core.png?{{site.time | date: '%s'}})
 
 Fulfilling a [request made by Wladimir J. van der
 Laan](http://www.mail-archive.com/bitcoin-development%40lists.sourceforge.net/msg05406.html),
@@ -291,7 +291,7 @@ Saïvann Carignan and Jameson Lopp, and promotion also by Jameson.
 Sometimes small tweaks to the site can have a large impact. Some of the
 changes made this quarter include:
 
-![New torrent and magnet links](/img/blog/free/torrent.png)
+![New torrent and magnet links](/img/blog/free/torrent.png?{{site.time | date: '%s'}})
 
 * **Bitcoin Core 0.10.0:** it is our privilege to help the
   core developers release new versions of Bitcoin Core by
@@ -333,7 +333,7 @@ SVG images.
 > general
 > ([source](http://www.reddit.com/r/Bitcoin/comments/2oessw/bitcoinorg_what_would_you_want_here/cmmg9r7))
 
-![Travis CI verifying the site builds correctly](/img/blog/free/travis.png)
+![Travis CI verifying the site builds correctly](/img/blog/free/travis.png?{{site.time | date: '%s'}})
 
 With 7 million page views per quarter, Bitcoin.org serves an average of
 54 pages a minute---so even a single second of downtime might prevent us
@@ -381,9 +381,9 @@ volunteer quick start guide was contributed by David.
 > "38,135,685 page views [since January 2014]" ---[The stats
 > page](https://bitcoin.org/stats/)
 
-![stats December 2014](/img/blog/free/stats-2014-12.png)
-![stats January 2015(/img/blog/free/stats-2015-01.png)
-![stats February 2015](/img/blog/free/stats-2015-02.png)
+![stats December 2014](/img/blog/free/stats-2014-12.png?{{site.time | date: '%s'}})
+![stats January 2015(/img/blog/free/stats-2015-01.png?{{site.time | date: '%s'}})
+![stats February 2015](/img/blog/free/stats-2015-02.png?{{site.time | date: '%s'}})
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="1">
@@ -395,7 +395,7 @@ volunteer quick start guide was contributed by David.
 > about the new Full Node page ([source](http://www.reddit.com/r/Bitcoin/comments/2wvdko/new_page_on_bitcoinorg_running_a_full_node/cough5b))
 
 
-![Expense graph](/img/blog/free/expenses.png)
+![Expense graph](/img/blog/free/expenses.png?{{site.time | date: '%s'}})
 
 | Previous balance         | 4.994 784 06 BTC
 |--------------------------|-------------------

@@ -33,7 +33,7 @@ http://opensource.org/licenses/MIT.
          {% endfor %}
           <div class="wallet-list-item allwallets-list-item" data-category="all-wallets" data-platforms="{{platformList}}" data-walletlevel="{{ wallet.level }}">
             <div class="wallet-list-item-link">
-              <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
+              <img src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
             </div>
             <p class="wallet-hint">Select an Operating System</p>
             <div class="wallet-list-os">
@@ -69,7 +69,7 @@ http://opensource.org/licenses/MIT.
         {% endfor %}
         <div class="wallet-list-item allwallets-list-item is-hidden" data-platforms="{{platformList}}" data-category="all-wallets" data-walletlevel="{{ wallet.level }}">
           <div class="wallet-list-item-link">
-            <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
+            <img src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
           </div>
           <p class="wallet-hint">Select an Operating System</p>
           <div class="wallet-list-os">
@@ -103,7 +103,7 @@ http://opensource.org/licenses/MIT.
             {% else %}
             <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platform }}/{{ os }}/{{ wallet.id }}/">
               {% endif %}
-              <img src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
+              <img src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
             </a>
         </div>
         {% endif %} 

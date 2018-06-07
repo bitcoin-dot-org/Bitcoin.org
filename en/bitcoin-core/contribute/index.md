@@ -34,21 +34,21 @@ IRC chatroom and discuss your plan with a developer.
 <div markdown="block" class="row card-row">
 
 <div class="card core-card" markdown="block">
-<img src="/img/icons/ico_bugs.svg" alt="icon">
+<img src="/img/icons/ico_bugs.svg?{{site.time | date: '%s'}}" alt="icon">
 
 [Bug reports][bcc contribute issues]
 <p>Report bugs, including security issues</p>
 </div>
 
 <div class="card core-card" markdown="block">
-<img src="/img/icons/ico_code.svg" alt="icon">
+<img src="/img/icons/ico_code.svg?{{site.time | date: '%s'}}" alt="icon">
 
 [Code][bcc contribute code]
 <p>Write & review code</p>
 </div>
 
 <div class="card core-card" markdown="block">
-<img src="/img/icons/ico_documentation.svg" alt="icon">
+<img src="/img/icons/ico_documentation.svg?{{site.time | date: '%s'}}" alt="icon">
 
 [Documentation][bcc contribute documentation]
 <p>Write documentation for users and developers</p>
@@ -56,7 +56,7 @@ IRC chatroom and discuss your plan with a developer.
 </div>
 
 <div class="card core-card" markdown="block">
-<img src="/img/icons/ico_translation.svg" alt="icon">
+<img src="/img/icons/ico_translation.svg?{{site.time | date: '%s'}}" alt="icon">
 
 [Translations][bcc contribute translations]
 <p>Translate the user interface</p>
@@ -64,7 +64,7 @@ IRC chatroom and discuss your plan with a developer.
 
 
 <div class="card core-card" markdown="block">
-<img src="/img/icons/ico_support.svg" alt="icon">
+<img src="/img/icons/ico_support.svg?{{site.time | date: '%s'}}" alt="icon">
 
 [Tech support][bcc contribute support]
 <p>Support other users</p>

@@ -25,7 +25,7 @@ breadcrumbs:
 <div class="bitcore-content clearfix">
 <div class="container" markdown="block">
 
-![Bitcoin Core requirements and warnings](/img/bitcoin-core/slider-warning.svg)
+![Bitcoin Core requirements and warnings](/img/bitcoin-core/slider-warning.svg?{{site.time | date: '%s'}})
 
 {% include bitcoin-core/download-bitcoin-core.html %}
 

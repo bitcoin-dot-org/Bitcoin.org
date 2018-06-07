@@ -14,7 +14,7 @@ platform:
       text: "walletbitcoincore"
       link: "bitcoincore"
       source: "https://github.com/bitcoin/bitcoin"
-      screenshot: "bitcoincore.png"
+      screenshot: "bitcoincore.png?1528322191"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnode"

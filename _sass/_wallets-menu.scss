@@ -129,7 +129,7 @@ $oses:
 
                         > a {
                             font-size: 15px;
-                            background-image: url(/img/icons/wallet_select.svg);
+                            background-image: url(/img/icons/wallet_select.svg?1528322191);
                             background-repeat: no-repeat;
                             background-position: -32px center;
                             padding: 18px 32px 18px 32px;
@@ -162,14 +162,14 @@ $oses:
     // Generating icon classes for platforms
     @each $platform in $platforms {
         .wallet-#{$platform} {
-            background-image: url('/img/icons/wallet_menu_#{$platform}.svg');
+            background-image: url('/img/icons/wallet_menu_#{$platform}.svg?1528322191');
         }
     }
 
     // Generating icon classes for OSes
     @each $os in $oses {
         .wallet-#{$os} {
-            background-image: url('/img/os/wallet_menu_#{$os}.svg');
+            background-image: url('/img/os/wallet_menu_#{$os}.svg?1528322191');
         }
     }
     .wallet-blackberry {
@@ -219,7 +219,7 @@ $oses:
     right: 15px;
     width: 10px;
     height: 6px;
-    background: url(../img/icons/ico_angle.svg) center no-repeat;
+    background: url(../img/icons/ico_angle.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .is-expanded.accordion-tab::after {
@@ -227,43 +227,43 @@ $oses:
 }
 .accordion-content {
     .wallet-desktop {
-        background: url(../img/icons/wallet_menu_desktop.svg) center 15px no-repeat;
+        background: url(../img/icons/wallet_menu_desktop.svg?1528322191) center 15px no-repeat;
     }
     .wallet-hardware {
-        background: url(../img/icons/wallet_menu_hardware.svg) center 15px no-repeat;
+        background: url(../img/icons/wallet_menu_hardware.svg?1528322191) center 15px no-repeat;
     }
     .wallet-mobile {
-        background: url(../img/icons/wallet_menu_mobile.svg) center 15px no-repeat;
+        background: url(../img/icons/wallet_menu_mobile.svg?1528322191) center 15px no-repeat;
     }
     .wallet-web {
-        background: url(../img/icons/wallet_menu_web.svg) center 15px no-repeat;
+        background: url(../img/icons/wallet_menu_web.svg?1528322191) center 15px no-repeat;
     }
     .wallet-linux {
-        background: url(../img/icons/wallet_menu_linux.svg) center 15px no-repeat;
+        background: url(../img/icons/wallet_menu_linux.svg?1528322191) center 15px no-repeat;
         background-size: 22px;
     }
     .wallet-mac {
-        background: url(../img/icons/wallet_menu_mac.svg) center 15px no-repeat;
+        background: url(../img/icons/wallet_menu_mac.svg?1528322191) center 15px no-repeat;
         background-size: 22px;
     }
     .wallet-windows {
-        background: url(../img/icons/wallet_menu_windows.svg) center 15px no-repeat;
+        background: url(../img/icons/wallet_menu_windows.svg?1528322191) center 15px no-repeat;
         background-size: 22px;
     }
     .wallet-android {
-        background: url(../img/os/wallet_menu_android.svg) center 15px no-repeat;
+        background: url(../img/os/wallet_menu_android.svg?1528322191) center 15px no-repeat;
         background-size: 22px;
     }
     .wallet-blackberry {
-        background: url(../img/os/wallet_menu_blackberry.svg) center 15px no-repeat;
+        background: url(../img/os/wallet_menu_blackberry.svg?1528322191) center 15px no-repeat;
         background-size: 22px;
     }
     .wallet-ios {
-        background: url(../img/os/wallet_menu_ios.svg) center 15px no-repeat;
+        background: url(../img/os/wallet_menu_ios.svg?1528322191) center 15px no-repeat;
         background-size: 22px;
     }
     .wallet-windowsphone {
-        background: url(../img/os/wallet_menu_windowsphone.svg) center 15px no-repeat;
+        background: url(../img/os/wallet_menu_windowsphone.svg?1528322191) center 15px no-repeat;
         background-size: 22px;
     }
 }
@@ -299,7 +299,7 @@ $oses:
         right: 15px;
         width: 10px;
         height: 6px;
-        background: url(../img/icons/ico_angle.svg) center no-repeat;
+        background: url(../img/icons/ico_angle.svg?1528322191) center no-repeat;
         background-size: contain;
     }
     .is-selected.accordion-tab {
@@ -315,15 +315,15 @@ $oses:
         height: 30px;
     }
     .accordion-tab-1::before {
-        background: url(../img/getting-started/number-1.svg) center no-repeat;
+        background: url(../img/getting-started/number-1.svg?1528322191) center no-repeat;
         background-size: contain;
     }
     .accordion-tab-2::before {
-        background: url(../img/getting-started/number-2.svg) center no-repeat;
+        background: url(../img/getting-started/number-2.svg?1528322191) center no-repeat;
         background-size: contain;
     }
     .is-selected.accordion-tab::before {
-        background: url(../img/icons/checkmark.svg) center no-repeat;
+        background: url(../img/icons/checkmark.svg?1528322191) center no-repeat;
         background-size: contain;
     }
     .accordion-content {
@@ -374,7 +374,7 @@ $oses:
         display: none;
     }
     .accordion-tab-3::before {
-        background: url(../img/getting-started/number-3.svg) center no-repeat;
+        background: url(../img/getting-started/number-3.svg?1528322191) center no-repeat;
         background-size: contain;
     }
 }

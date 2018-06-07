@@ -14,7 +14,7 @@ platform:
       text: "walletbitcoinknots"
       link: "https://bitcoinknots.org/"
       source: "https://github.com/bitcoinknots/bitcoin/"
-      screenshot: "bitcoinknots.png"
+      screenshot: "bitcoinknots.png?1528322191"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnode"

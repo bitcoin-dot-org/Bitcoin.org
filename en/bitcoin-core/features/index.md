@@ -32,19 +32,19 @@ end_of_page: |
   <div class="slide-viewer">
     <div class="slide-group">
       <div class="slide slide-1">
-        <a href="#validation"><img src="/img/bitcoin-core/slider-validation.svg" alt="Full Validation: the best possible decentralized security" /></a>
+        <a href="#validation"><img src="/img/bitcoin-core/slider-validation.svg?{{site.time | date: '%s'}}" alt="Full Validation: the best possible decentralized security" /></a>
       </div>
       <div class="slide slide-2">
-        <a href="#privacy"><img src="/img/bitcoin-core/slider-privacy.svg" alt="Strong privacy" /></a>
+        <a href="#privacy"><img src="/img/bitcoin-core/slider-privacy.svg?{{site.time | date: '%s'}}" alt="Strong privacy" /></a>
       </div>
       <div class="slide slide-3">
-        <a href="#requirements"><img src="/img/bitcoin-core/slider-warning.svg" alt="Requirements and warnings" /></a>
+        <a href="#requirements"><img src="/img/bitcoin-core/slider-warning.svg?{{site.time | date: '%s'}}" alt="Requirements and warnings" /></a>
       </div>
       <div class="slide slide-4">
-        <a href="#user-interface"><img src="/img/bitcoin-core/slider-ui.svg" alt="User interface" /></a>
+        <a href="#user-interface"><img src="/img/bitcoin-core/slider-ui.svg?{{site.time | date: '%s'}}" alt="User interface" /></a>
       </div>
       <div class="slide slide-5">
-        <a href="#network-support"><img src="/img/bitcoin-core/slider-network.svg" alt="Support the network" /></a>
+        <a href="#network-support"><img src="/img/bitcoin-core/slider-network.svg?{{site.time | date: '%s'}}" alt="Support the network" /></a>
       </div>
     </div>
   </div>
@@ -67,7 +67,7 @@ end_of_page: |
 <div markdown="block" class="row card-row">
 
 <div class="card core-card" markdown="block">
-<img src="/img/icons/ico_validation.svg" alt="icon">
+<img src="/img/icons/ico_validation.svg?{{site.time | date: '%s'}}" alt="icon">
 
 ## Full Validation {#validation}
 {:.no_gap}
@@ -81,7 +81,7 @@ banks from taking control of Bitcoin.**
 
 </div>
 <div class="card core-card" markdown="block">
-<img src="/img/icons/ico_control.svg" alt="icon">
+<img src="/img/icons/ico_control.svg?{{site.time | date: '%s'}}" alt="icon">
 
 ## Better Privacy {#privacy}
 
@@ -93,7 +93,7 @@ hard for anyone to link you to your transactions.
 
 </div>
 <div class="card core-card" markdown="block">
-<img src="/img/icons/ico_better_security.svg" alt="icon">
+<img src="/img/icons/ico_better_security.svg?{{site.time | date: '%s'}}" alt="icon">
 
 ## Warning: Better Security Has Costs {#requirements}
 
@@ -105,7 +105,7 @@ convenient to run on most computers and Internet connections.
 
 </div>
 <div class="card core-card" markdown="block">
-<img src="/img/icons/ico_better_ui.svg" alt="icon">
+<img src="/img/icons/ico_better_ui.svg?{{site.time | date: '%s'}}" alt="icon">
 
 ## A Better User Interface {#user-interface}
 
@@ -119,7 +119,7 @@ Bitcoin Core without losing Bitcoin Core's [security][bcc validation] and
 
 </div>
 <div class="card core-card" markdown="block">
-<img src="/img/icons/ico_international.svg" alt="icon">
+<img src="/img/icons/ico_international.svg?{{site.time | date: '%s'}}" alt="icon">
 
 ## Support The Network {#network-support}
 

@@ -28,7 +28,7 @@ sharing is extremely limited.
 
 {% autocrossref %}
 
-![Overview Of Hierarchical Deterministic Key Derivation](/img/dev/en-hd-overview.svg)
+![Overview Of Hierarchical Deterministic Key Derivation](/img/dev/en-hd-overview.svg?{{site.time | date: '%s'}})
 
 For an overview of HD wallets, please see the [developer guide
 section][devguide wallets].  For details, please see BIP32.

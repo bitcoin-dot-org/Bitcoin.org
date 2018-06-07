@@ -18,7 +18,7 @@ can, respectively, request and make payments using Bitcoin---and how
 they can deal with complications such as refunds and recurrent
 rebilling.
 
-![Bitcoin Payment Processing](/img/dev/en-payment-processing.svg)
+![Bitcoin Payment Processing](/img/dev/en-payment-processing.svg?{{site.time | date: '%s'}})
 
 The figure above illustrates payment processing using Bitcoin from a
 receiver's perspective, starting with a new order. The following
@@ -122,7 +122,7 @@ payment requests is recommended.
    increased security, authentication of a receiver's identity using X.509 certificates,
    and other important features such as refunds.
 
-![Warning icon](/img/icons/icon_warning.svg)
+![Warning icon](/img/icons/icon_warning.svg?{{site.time | date: '%s'}})
  **Warning:** Special care must be taken to avoid the theft of incoming
 payments. In particular, private keys should not be stored on web servers,
 and payment requests should be sent over HTTPS or other secure methods
@@ -239,7 +239,7 @@ parameters---and any other optional parameters---but they were
 omitted here to keep the QR code small and easy to scan with unsteady
 or low-resolution mobile cameras.
 
-![Bitcoin QR Codes](/img/dev/en-qr-code.svg)
+![Bitcoin QR Codes](/img/dev/en-qr-code.svg?{{site.time | date: '%s'}})
 
 The error correction is combined with a checksum to ensure the Bitcoin QR code
 cannot be successfully decoded with data missing or accidentally altered,
@@ -295,7 +295,7 @@ the other parameters and fetch a PaymentRequest from the URL provided.
 The browser, QR code reader, or other program processing the URI opens
 the spender's Bitcoin wallet program on the URI. 
 
-![BIP70 Payment Protocol](/img/dev/en-payment-protocol.svg)
+![BIP70 Payment Protocol](/img/dev/en-payment-protocol.svg?{{site.time | date: '%s'}})
 
 The Payment Protocol is described in depth in BIP70, BIP71, and BIP72.
 An example CGI program and description of all the parameters which can
@@ -363,7 +363,7 @@ server's X.509 SSL certificate.  (The Payment Protocol has been designed
 to allow other signing methods in the future.)  Bob's server sends the
 payment request to Charlie's wallet in the reply to the HTTP GET.
 
-![Bitcoin Core Showing Validated Payment Request](/img/dev/en-btcc-payment-request.png)
+![Bitcoin Core Showing Validated Payment Request](/img/dev/en-btcc-payment-request.png?{{site.time | date: '%s'}})
 
 Charlie's wallet receives the PaymentRequest message, checks its signature, and
 then displays the details from the PaymentDetails message to Charlie. Charlie

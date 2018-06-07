@@ -15,7 +15,7 @@ platform:
         text: "walletsimplebitcoinwallet"
         link: "https://play.google.com/store/apps/details?id=com.btcontract.wallet"
         source: "https://github.com/btcontract/wallet"
-        screenshot: "simplebitcoinwalletandroid.png"
+        screenshot: "simplebitcoinwalletandroid.png?1528322191"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"

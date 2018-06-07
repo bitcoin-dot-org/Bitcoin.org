@@ -15,7 +15,7 @@ platform:
         text: "walletledgernanos"
         link: "https://www.ledgerwallet.com/"
         source: "https://github.com/LedgerHQ/"
-        screenshot: "ledgernanos.png"
+        screenshot: "ledgernanos.png?1528322191"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"

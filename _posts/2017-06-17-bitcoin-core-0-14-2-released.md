@@ -16,7 +16,7 @@ author: |
 
 <div class="post-content" markdown="1">
 {:.center}
-![Bitcoin Core Version 0.14.2](/img/blog/free/bitcoin-core-0142.png)
+![Bitcoin Core Version 0.14.2](/img/blog/free/bitcoin-core-0142.png?{{site.time | date: '%s'}})
 
 [Bitcoin Core version 0.14.2 is now available](https://bitcoin.org/en/download).
 

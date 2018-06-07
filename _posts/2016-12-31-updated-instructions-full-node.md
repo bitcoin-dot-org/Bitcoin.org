@@ -16,7 +16,7 @@ author: |
 
 <div class="post-content" markdown="1">
 {:.center}
-![How to Run a Full Node](/img/blog/free/how-to-run-a-full-bitcoin-node.png)
+![How to Run a Full Node](/img/blog/free/how-to-run-a-full-bitcoin-node.png?{{site.time | date: '%s'}})
 
 Updated instructions for [how to run a full node](https://bitcoin.org/en/full-node)
 as of version **0.13.1** are now available on Bitcoin.org. These instructions allow

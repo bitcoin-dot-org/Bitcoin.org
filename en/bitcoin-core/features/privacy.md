@@ -61,7 +61,7 @@ third_party_privacy:
 <div class="bitcore-content clearfix">
 <div class="container" markdown="block">
 
-![Excellent privacy](/img/bitcoin-core/slider-privacy.svg)
+![Excellent privacy](/img/bitcoin-core/slider-privacy.svg?{{site.time | date: '%s'}})
 
 {% include bitcoin-core/download-bitcoin-core.html %}
 
@@ -77,7 +77,7 @@ One reason is that Bitcoin Core and some other Bitcoin software tries to
 avoid associating your real-world identity with the transactions you
 make. The difference looks like this:
 
-![Privacy difference: pseudonymous transactions](/img/bitcoin-core/privacy-difference.svg)
+![Privacy difference: pseudonymous transactions](/img/bitcoin-core/privacy-difference.svg?{{site.time | date: '%s'}})
 
 The second type of transaction (a pseudonymous transaction) only provides
 practical privacy if nobody can figure out that "5a35b" is really Alice.
@@ -282,7 +282,7 @@ against eavesdroppers for received transactions.
 To put a transaction on the block chain, you must send it publicly---but
 how you send it can make a big difference.
 
-![Sending privacy](/img/bitcoin-core/sending-privacy.svg)
+![Sending privacy](/img/bitcoin-core/sending-privacy.svg?{{site.time | date: '%s'}})
 
 **Can you guess who made which transactions?** Nearly all peer-to-peer
 lightweight clients today make no attempt to obscure their sent
@@ -353,7 +353,7 @@ Isn't that worth occasionally starting up a few seconds slower?
 
 <div class="not-displayed">
   <div id="bitcoin_bank_receiving" title="Bitcoin Bank Receiving Privacy" markdown="block">
-  ![Bitcoin Core receiving privacy features](/img/bitcoin-core/bank-receiving-privacy.svg)
+  ![Bitcoin Core receiving privacy features](/img/bitcoin-core/bank-receiving-privacy.svg?{{site.time | date: '%s'}})
 
   When you receive bitcoins to a Bitcoin bank, the money is sent to one of
   the bank's addresses---not your own---which can give you excellent
@@ -369,7 +369,7 @@ Isn't that worth occasionally starting up a few seconds slower?
   </div>
 
   <div id="bloom_filter_receiving" title="Bloom Filter Privacy" markdown="block">
-  ![Receiving privacy](/img/bitcoin-core/receiving-privacy.svg)
+  ![Receiving privacy](/img/bitcoin-core/receiving-privacy.svg?{{site.time | date: '%s'}})
 
   By only asking for payments related to your wallet, plus maybe a few
   others as bloom filter camouflage, lightweight wallets may reveal who you
@@ -386,7 +386,7 @@ Isn't that worth occasionally starting up a few seconds slower?
   </div>
 
   <div id="electrum_style_receiving" title="Client Lightweight Wallet Receiving Privacy" markdown="block">
-  ![Electrum-style receiving privacy](/img/bitcoin-core/electrum-receiving-privacy.svg)
+  ![Electrum-style receiving privacy](/img/bitcoin-core/electrum-receiving-privacy.svg?{{site.time | date: '%s'}})
 
   Some lightweight wallets don't connect to the Bitcoin peer-to-peer (P2P)
   network.  Instead, they make a (usually secure) connection to a single

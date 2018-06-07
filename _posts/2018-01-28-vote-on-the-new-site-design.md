@@ -15,7 +15,7 @@ author: |
 
 <div class="post-content" markdown="1">
 {:.center}
-![Redesigning Bitcoin.org](/img/blog/free/redesigning-homepage.png)
+![Redesigning Bitcoin.org](/img/blog/free/redesigning-homepage.png?{{site.time | date: '%s'}})
 
 As one of the most-visited websites in the Bitcoin ecosystem, Bitcoin.org helps
 millions of people each month, learn more about Bitcoin. One of our goals in

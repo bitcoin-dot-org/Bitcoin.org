@@ -15,7 +15,7 @@ platform:
         text: "walletairbitzwallet"
         link: "https://play.google.com/store/apps/details?id=com.airbitz"
         source: "https://github.com/Airbitz"
-        screenshot: "airbitzwalletandroid.png"
+        screenshot: "airbitzwalletandroid.png?1528322191"
         check:
           control: "checkpasscontrolhybrid"
           validation: "checkpassvalidationservers"
@@ -31,7 +31,7 @@ platform:
         text: "walletairbitzwallet"
         link: "https://itunes.apple.com/us/app/bitcoin-wallet-map-directory/id843536046?mt=8"
         source: "https://github.com/Airbitz"
-        screenshot: "airbitzwalletios.png"
+        screenshot: "airbitzwalletios.png?1528322191"
         check:
           control: "checkpasscontrolhybrid"
           validation: "checkpassvalidationservers"

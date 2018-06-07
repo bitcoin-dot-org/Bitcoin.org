@@ -19,21 +19,21 @@
   <div class="container">
     <div class="mainoverview-title">{% translate overview %}</div>
     <a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}" class="maincard">
-      <img class="maincard-img" src="/img/icons/ico_individuals.svg" alt="Icon">
+      <img class="maincard-img" src="/img/icons/ico_individuals.svg?{{site.time | date: '%s'}}" alt="Icon">
       <div>
         <p class="maincard-title">{% translate menu-bitcoin-for-individuals layout %}</p>
         <p class="maincard-link">{% translate learn-more layout %}</p>
       </div>
     </a>
     <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}" class="maincard">
-      <img class="maincard-img" src="/img/icons/ico_business.svg" alt="Icon">
+      <img class="maincard-img" src="/img/icons/ico_business.svg?{{site.time | date: '%s'}}" alt="Icon">
       <div>
         <p class="maincard-title">{% translate menu-bitcoin-for-businesses layout %}</p>
         <p class="maincard-link">{% translate learn-more layout %}</p>
       </div>
     </a>
     <a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}" class="maincard">
-      <img class="maincard-img" src="/img/icons/ico_developers.svg" alt="Icon">
+      <img class="maincard-img" src="/img/icons/ico_developers.svg?{{site.time | date: '%s'}}" alt="Icon">
       <div>
         <p class="maincard-title">{% translate menu-bitcoin-for-developers layout %}</p>
         <p class="maincard-link">{% translate learn-more layout %}</p>
@@ -41,7 +41,7 @@
     </a>
   </div>
   <a class="btn-down" href="#maindesc-title">
-    <img src="/img/icons/ico_arrow_down.svg" alt="Link">
+    <img src="/img/icons/ico_arrow_down.svg?{{site.time | date: '%s'}}" alt="Link">
   </a>
 </div>
 <div class="maindesc">
@@ -53,25 +53,25 @@
         <ul class="mainlist">
           
             <li class="mainlist-item">
-              <img src="/img/icons/main_ico_instant.svg" alt="Icon">
+              <img src="/img/icons/main_ico_instant.svg?{{site.time | date: '%s'}}" alt="Icon">
               <p>{% translate list1 %}</p>
             </li>
           
           
             <li class="mainlist-item">
-              <img src="/img/icons/main_ico_worldwide.svg" alt="Icon">
+              <img src="/img/icons/main_ico_worldwide.svg?{{site.time | date: '%s'}}" alt="Icon">
               <p>{% translate list2 %}</p>
             </li>
           
           
             <li class="mainlist-item">
-              <img src="/img/icons/main_ico_lowfee.svg" alt="Icon">
+              <img src="/img/icons/main_ico_lowfee.svg?{{site.time | date: '%s'}}" alt="Icon">
               <p>{% translate list3 %}</p>
             </li>
           
         </ul>
       </div>
-      <img class="maindesc-img" src="/img/home/bitcoin-img.svg" alt="Bitcoin image">
+      <img class="maindesc-img" src="/img/home/bitcoin-img.svg?{{site.time | date: '%s'}}" alt="Bitcoin image">
     </div>
     <div class="btn-container">
       <a class="btn btn-dark btn-home center" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
