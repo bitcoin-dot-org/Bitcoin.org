@@ -4,7 +4,6 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/operating_modes.md" %}
 
-
 ## Operating Modes
 {% include helpers/subhead-links.md %}
 
@@ -23,7 +22,7 @@ The first and most secure model is the one followed by Bitcoin Core, also known 
 
 For a client to be fooled, an adversary would need to give a complete alternative block chain history that is of greater difficulty than the current “true” chain, which is computationally expensive (if not impossible) due to the fact that the chain with the most cumulative proof of work is by definition the "true" chain. Due to the computational difficulty required to generate a new block at the tip of the chain, the ability to fool a full node becomes very expensive after 6 confirmations. This form of verification is highly resistent to sybil attacks---only a single honest network peer is required in order to receive and verify the complete state of the "true" block chain. 
 
-![Block Height Compared To Block Depth](/img/dev/en-block-height-vs-depth.svg?{{site.time | date: '%s'}})
+![Block Height Compared To Block Depth](/img/dev/en-block-height-vs-depth.svg)
 
 {% endautocrossref %}
 

@@ -4,15 +4,11 @@
 
 title: "Some Miners Generating Invalid Blocks"
 shorturl: "spv-mining"
-show_toc: true
 active: false
 date: 2015-07-04
 #banner: "WARNING: many wallets currently vulnerable to double-spending of confirmed transactions (click here to read)"
 bannerclass: "alert"
 ---
-
-<div class="post-content" markdown="1">
-
 *This document is being updated as new information arrives.  Last
 update: 2015-07-15 13:00.  All times are UTC.*
 
@@ -44,9 +40,6 @@ wallet is secured by Bitcoin Core 0.9.5 or later.
 - **Bitcoin Core 0.9.5 or later users are unaffected.**  (Note:
 [upgrade to 0.10.2][bitcoin core] is recommended due to
 denial-of-service vulnerabilities unrelated to this alert.)
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ##Miners
 
@@ -55,9 +48,7 @@ blocks.  The Wiki Mining Pool Comparison page currently contains a list of [know
 suspected) good and bad pools][pool list].
 
 If you solo mine, please switch to Bitcoin Core 0.10.2.
-</div>
 
-<div class="toccontent-block boxexpand expanded" markdown="1">
 <h2 id="solution">When Will Things Go Back To Normal?</h2>
 
 The problem is miners creating invalid blocks.  Some software can detect
@@ -80,9 +71,7 @@ run and how they handle double spends, so unless you know for sure
 that they use Bitcoin Core 0.9.5 or later for full validation, you
 should assume they have the same security as the lightweight
 wallets described above.
-</div>
 
-<div class="toccontent-block boxexpand expanded" markdown="1">
 <h2 id="cause">What's Happening</h2>
 
 Summary: Some miners are currently generating invalid blocks. Almost
@@ -133,9 +122,6 @@ get all miners off of SPV mining and back to full validation (at
 least temporarily). If this happens, Bitcoin.org will reduce its
 current recommendation of waiting {{confs}} extra confirmations to a
 lower number.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Updates
 
@@ -145,9 +131,6 @@ strongest chain. See the recently-added [list of forks](#list-of-forks).
 Reports that the situation has passed are **not correct.** Please continue
 to wait {{confs}} more confirmations than you usually would wait before
 accepting a transaction.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Invalid Blocks
 
@@ -165,4 +148,3 @@ Please see the list of [invalid block hashes][] on the Bitcoin Wiki.
 [SPV]: http://bitcoin.stackexchange.com/questions/4649/what-is-an-spv-client
 [electrum note]: https://en.bitcoin.it/wiki/July_2015_Forks#Electrum
 [invalid block hashes]: https://en.bitcoin.it/wiki/July_2015_Forks#Invalid_Block_Hashes
-</div>

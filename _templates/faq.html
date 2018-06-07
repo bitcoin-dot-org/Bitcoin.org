@@ -2,221 +2,280 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-layout: sidebar
+layout: base
 id: faq
 ---
+<h1>{% translate pagetitle %}</h1>
+<p class="summary">{% translate summary %}</p>
 
-<div class="toccontent-intro">
-  <h2 id="{% translate general anchor.faq %}">{% translate general %}</h2>
-  
-  <h3 id="{% translate whatisbitcoin anchor.faq %}">{% translate whatisbitcoin %}</h3>
-  <p>{% translate whatisbitcointxt1 %}</p>
-  
-  <h3 id="{% translate creator anchor.faq %}">{% translate creator %}</h3>
-  <p>{% translate creatortxt1 %}</p>
-  <p>{% translate creatortxt2 %}</p>
-  
-  <h3 id="{% translate whocontrols anchor.faq %}">{% translate whocontrols %}</h3>
-  <p>{% translate whocontrolstxt1 %}</p>
-  
-  <h3 id="{% translate howitworks anchor.faq%}">{% translate howitworks %}</h3>
-  <p>{% translate howitworkstxt1 %}</p>
-  <p>{% translate howitworkstxt2 %}</p>
-  
-  <h3 id="{% translate used anchor.faq %}">{% translate used %}</h3>
-  <p>{% translate usedtxt1 %}</p>
-  <p>
-    <img src="/img/faq/merchants_map.png?{{site.time | date: '%s'}}" alt="Screenshot">
-  </p>
-  
-  <h3 id="{% translate acquire anchor.faq %}">{% translate acquire %}</h3>
-  <ul>
-    <li>{% translate acquireli1 %}</li>
-    <li>{% translate acquireli2 %}</li>
-    <li>{% translate acquireli3 %}</li>
-    <li>{% translate acquireli4 %}</li>
-  </ul>
-  <p>{% translate acquiretxt1 %}</p>
-  
-  <h3 id="{% translate makepayment anchor.faq %}">{% translate makepayment %}</h3>
-  <p>{% translate makepaymenttxt1 %}</p>
-  <p>
-    <img src="/img/faq/mobile_send.png?{{site.time | date: '%s'}}" alt="Screenshot">
-    <img src="/img/faq/mobile_receive.png?{{site.time | date: '%s'}}" alt="Screenshot">
-  </p>
-  
-  <h3 id="{% translate advantages anchor.faq %}">{% translate advantages %}</h3>
-  <ul>
-    <li>{% translate advantagesli1 %}</li>
-    <li>{% translate advantagesli2 %}</li>
-    <li>{% translate advantagesli3 %}</li>
-    <li>{% translate advantagesli4 %}</li>
-    <li>{% translate advantagesli5 %}</li>
-  </ul>
-  
-  <h3 id="{% translate disadvantages anchor.faq %}">{% translate disadvantages %}</h3>
-  <ul>
-    <li>{% translate disadvantagesli1 %}</li>
-    <li>{% translate disadvantagesli2 %}</li>
-    <li>{% translate disadvantagesli3 %}</li>
-  </ul>
-  
-  <h3 id="{% translate trust anchor.faq %}">{% translate trust %}</h3>
-  <p>{% translate trusttxt1 %}</p>
-  
-  <h3 id="{% translate makemoney anchor.faq %}">{% translate makemoney %}</h3>
-  <p>{% translate makemoneytxt1 %}</p>
-  <p>{% translate makemoneytxt2 %}</p>
-  
-  <h3 id="{% translate virtual anchor.faq %}">{% translate virtual %}</h3>
-  <p>{% translate virtualtxt1 %}</p>
-  
-  <h3 id="{% translate anonymous anchor.faq %}">{% translate anonymous %}</h3>
-  <p>{% translate anonymoustxt1 %}</p>
-  <p>{% translate anonymoustxt2 %}</p>
-  
-  <h3 id="{% translate lost anchor.faq %}">{% translate lost %}</h3>
-  <p>{% translate losttxt1 %}</p>
-  
-  <h3 id="{% translate scale anchor.faq %}">{% translate scale %}</h3>
-  <p>{% translate scaletxt1 %}</p>
+<h2 id="table-of-contents">{% translate table %}</h2>
 
+<div class="index">
+<ul>
+<li><a href="#{% translate general anchor.faq %}">{% translate general %}</a></li>
+<ul>
+  <li><a href="#{% translate whatisbitcoin anchor.faq %}">{% translate whatisbitcoin %}</a></li>
+  <li><a href="#{% translate creator anchor.faq %}">{% translate creator %}</a></li>
+  <li><a href="#{% translate whocontrols anchor.faq %}">{% translate whocontrols %}</a></li>
+  <li><a href="#{% translate howitworks anchor.faq %}">{% translate howitworks %}</a></li>
+  <li><a href="#{% translate used anchor.faq %}">{% translate used %}</a></li>
+  <li><a href="#{% translate acquire anchor.faq %}">{% translate acquire %}</a></li>
+  <li><a href="#{% translate makepayment anchor.faq %}">{% translate makepayment %}</a></li>
+  <li><a href="#{% translate advantages anchor.faq %}">{% translate advantages %}</a></li>
+  <li><a href="#{% translate disadvantages anchor.faq %}">{% translate disadvantages %}</a></li>
+  <li><a href="#{% translate trust anchor.faq %}">{% translate trust %}</a></li>
+  <li><a href="#{% translate makemoney anchor.faq %}">{% translate makemoney %}</a></li>
+  <li><a href="#{% translate virtual anchor.faq %}">{% translate virtual %}</a></li>
+  <li><a href="#{% translate anonymous anchor.faq %}">{% translate anonymous %}</a></li>
+  <li><a href="#{% translate lost anchor.faq %}">{% translate lost %}</a></li>
+  <li><a href="#{% translate scale anchor.faq %}">{% translate scale %}</a></li>
+</ul>
+<li><a href="#{% translate legal anchor.faq %}">{% translate legal %}</a></li>
+<ul>
+  <li><a href="#{% translate islegal anchor.faq %}">{% translate islegal %}</a></li>
+  <li><a href="#{% translate illegalactivities anchor.faq %}">{% translate illegalactivities %}</a></li>
+  <li><a href="#{% translate regulated anchor.faq %}">{% translate regulated %}</a></li>
+  <li><a href="#{% translate taxes anchor.faq %}">{% translate taxes %}</a></li>
+  <li><a href="#{% translate consumer anchor.faq %}">{% translate consumer %}</a></li>
+</ul>
+<li><a href="#{% translate economy anchor.faq %}">{% translate economy %}</a></li>
+<ul>
+  <li><a href="#{% translate bitcoinscreated anchor.faq %}">{% translate bitcoinscreated %}</a></li>
+  <li><a href="#{% translate whyvalue anchor.faq %}">{% translate whyvalue %}</a></li>
+  <li><a href="#{% translate whatprice anchor.faq %}">{% translate whatprice %}</a></li>
+  <li><a href="#{% translate worthless anchor.faq %}">{% translate worthless %}</a></li>
+  <li><a href="#{% translate bubble anchor.faq %}">{% translate bubble %}</a></li>
+  <li><a href="#{% translate ponzi anchor.faq %}">{% translate ponzi %}</a></li>
+  <li><a href="#{% translate earlyadopter anchor.faq %}">{% translate earlyadopter %}</a></li>
+  <li><a href="#{% translate finitelimitation anchor.faq %}">{% translate finitelimitation %}</a></li>
+  <li><a href="#{% translate deflationaryspiral anchor.faq %}">{% translate deflationaryspiral %}</a></li>
+  <li><a href="#{% translate speculationvolatility anchor.faq %}">{% translate speculationvolatility %}</a></li>
+  <li><a href="#{% translate buyall anchor.faq %}">{% translate buyall %}</a></li>
+  <li><a href="#{% translate bettercurrency anchor.faq %}">{% translate bettercurrency %}</a></li>
+</ul>
+<li><a href="#{% translate transactions anchor.faq %}">{% translate transactions %}</a></li>
+<ul>
+  <li><a href="#{% translate tenminutes anchor.faq %}">{% translate tenminutes %}</a></li>
+  <li><a href="#{% translate fee anchor.faq %}">{% translate fee %}</a></li>
+  <li><a href="#{% translate poweredoff anchor.faq %}">{% translate poweredoff %}</a></li>
+  <li><a href="#{% translate sync anchor.faq %}">{% translate sync %}</a></li>
+</ul>
+<li><a href="#{% translate mining anchor.faq %}">{% translate mining %}</a></li>
+<ul>
+  <li><a href="#{% translate whatismining anchor.faq %}">{% translate whatismining %}</a></li>
+  <li><a href="#{% translate howminingworks anchor.faq %}">{% translate howminingworks %}</a></li>
+  <li><a href="#{% translate miningwaste anchor.faq %}">{% translate miningwaste %}</a></li>
+  <li><a href="#{% translate miningsecure anchor.faq %}">{% translate miningsecure %}</a></li>
+  <li><a href="#{% translate miningstart anchor.faq %}">{% translate miningstart %}</a></li>
+</ul>
+<li><a href="#{% translate security anchor.faq %}">{% translate security %}</a></li>
+<ul>
+  <li><a href="#{% translate secure anchor.faq %}">{% translate secure %}</a></li>
+  <li><a href="#{% translate hacked anchor.faq %}">{% translate hacked %}</a></li>
+  <li><a href="#{% translate collude anchor.faq %}">{% translate collude %}</a></li>
+  <li><a href="#{% translate quantum anchor.faq %}">{% translate quantum %}</a></li>
+</ul>
+<li><a href="#{% translate help anchor.faq %}">{% translate help %}</a></li>
+<ul>
+  <li><a href="#{% translate morehelp anchor.faq %}">{% translate morehelp %}</a></li>
+</ul>
+</ul>
 </div>
 
-<div class="toccontent-block boxexpand expanded">
-  <h2 id="{% translate legal anchor.faq %}">{% translate legal %}</h2>
-  
-  <h3 id="{% translate islegal anchor.faq %}">{% translate islegal %}</h3>
-  <p>{% translate islegaltxt1 %}</p>
-  <p>{% translate islegaltxt2 %}</p>
-  
-  <h3 id="{% translate illegalactivities anchor.faq %}">{% translate illegalactivities %}</h3>
-  <p>{% translate illegalactivitiestxt1 %}</p>
-  <p>{% translate illegalactivitiestxt2 %}</p>
-  <p>{% translate illegalactivitiestxt3 %}</p>
-  
-  <h3 id="{% translate regulated anchor.faq %}">{% translate regulated %}</h3>
-  <p>{% translate regulatedtxt1 %}</p>
-  <p>{% translate regulatedtxt2 %}</p>
-  
-  <h3 id="{% translate taxes anchor.faq %}">{% translate taxes %}</h3>
-  <p>{% translate taxestxt1 %}</p>
-  
-  <h3 id="{% translate consumer anchor.faq %}">{% translate consumer %}</h3>
-  <p>{% translate consumertxt1 %}</p>
-  <p>{% translate consumertxt2 %}</p>
+<h2 id="{% translate general anchor.faq %}">{% translate general %}</h2>
 
-</div>
+<h3 id="{% translate whatisbitcoin anchor.faq %}">{% translate whatisbitcoin %}</h3>
+<p>{% translate whatisbitcointxt1 %}</p>
 
-<div class="toccontent-block boxexpand expanded">
-  <h2 id="{% translate economy anchor.faq %}">{% translate economy %}</h2>
-  
-  <h3 id="{% translate bitcoinscreated anchor.faq %}">{% translate bitcoinscreated %}</h3>
-  <p>{% translate bitcoinscreatedtxt1 %}</p>
-  <p>{% translate bitcoinscreatedtxt2 %}</p>
-  <p>{% translate bitcoinscreatedtxt3 %}</p>
-  
-  <h3 id="{% translate whyvalue anchor.faq %}">{% translate whyvalue %}</h3>
-  <p>{% translate whyvaluetxt1 %}</p>
-  
-  <h3 id="{% translate whatprice anchor.faq %}">{% translate whatprice %}</h3>
-  <p>{% translate whatpricetxt1 %}</p>
-  <p>{% translate whatpriceimg1 %}
-    <br>
-    <img src="/img/faq/price_chart.png?{{site.time | date: '%s'}}" alt="chart">
-  </p>
-  
-  <h3 id="{% translate worthless anchor.faq %}">{% translate worthless %}</h3>
-  <p>{% translate worthlesstxt1 %}</p>
-  
-  <h3 id="{% translate bubble anchor.faq %}">{% translate bubble %}</h3>
-  <p>{% translate bubbletxt1 %}</p>
-  
-  <h3 id="{% translate ponzi anchor.faq %}">{% translate ponzi %}</h3>
-  <p>{% translate ponzitxt1 %}</p>
-  <p>{% translate ponzitxt2 %}</p>
-  
-  <h3 id="{% translate earlyadopter anchor.faq %}">{% translate earlyadopter %}</h3>
-  <p>{% translate earlyadoptertxt1 %}</p>
-  
-  <h3 id="{% translate finitelimitation anchor.faq %}">{% translate finitelimitation %}</h3>
-  <p>{% translate finitelimitationtxt1 %}</p>
-  
-  <h3 id="{% translate deflationaryspiral anchor.faq %}">{% translate deflationaryspiral %}</h3>
-  <p>{% translate deflationaryspiraltxt1 %}</p>
-  <p>{% translate deflationaryspiraltxt2 %}</p>
-  <p>{% translate deflationaryspiraltxt3 %}</p>
-  
-  <h3 id="{% translate speculationvolatility anchor.faq %}">{% translate speculationvolatility %}</h3>
-  <p>{% translate speculationvolatilitytxt1 %}</p>
-  <p>{% translate speculationvolatilitytxt2 %}</p>
-  
-  <h3 id="{% translate buyall anchor.faq %}">{% translate buyall %}</h3>
-  <p>{% translate buyalltxt1 %}</p>
-  
-  <h3 id="{% translate bettercurrency anchor.faq %}">{% translate bettercurrency %}</h3>
-  <p>{% translate bettercurrencytxt1 %}</p>
+<h3 id="{% translate creator anchor.faq %}">{% translate creator %}</h3>
+<p>{% translate creatortxt1 %}</p>
+<p>{% translate creatortxt2 %}</p>
 
-</div>
+<h3 id="{% translate whocontrols anchor.faq %}">{% translate whocontrols %}</h3>
+<p>{% translate whocontrolstxt1 %}</p>
 
+<h3 id="{% translate howitworks anchor.faq%}">{% translate howitworks %}</h3>
+<p>{% translate howitworkstxt1 %}</p>
+<p>{% translate howitworkstxt2 %}</p>
 
-<div class="toccontent-block boxexpand expanded">
-  <h2 id="{% translate transactions anchor.faq %}">{% translate transactions %}</h2>
-  
-  <h3 id="{% translate tenminutes anchor.faq %}">{% translate tenminutes %}</h3>
-  <p>{% translate tenminutestxt1 %}</p>
-  
-  <h3 id="{% translate fee anchor.faq %}">{% translate fee %}</h3>
-  <p>{% translate feetxt1 %}</p>
-  <p>{% translate feetxt2 %}</p>
-  
-  <h3 id="{% translate poweredoff anchor.faq %}">{% translate poweredoff %}</h3>
-  <p>{% translate poweredofftxt1 %}</p>
-  
-  <h3 id="{% translate sync anchor.faq %}">{% translate sync %}</h3>
-  <p>{% translate synctxt1 %}</p>
+<h3 id="{% translate used anchor.faq %}">{% translate used %}</h3>
+<p>{% translate usedtxt1 %}</p>
+<p>
+<img src="/img/faq/merchants_map.png" alt="Screenshot">
+</p>
 
-</div>
+<h3 id="{% translate acquire anchor.faq %}">{% translate acquire %}</h3>
+<ul>
+  <li>{% translate acquireli1 %}</li>
+  <li>{% translate acquireli2 %}</li>
+  <li>{% translate acquireli3 %}</li>
+  <li>{% translate acquireli4 %}</li>
+</ul>
+<p>{% translate acquiretxt1 %}</p>
 
-<div class="toccontent-block boxexpand expanded">
-  <h2 id="{% translate mining anchor.faq %}">{% translate mining %}</h2>
-  <h3 id="{% translate whatismining anchor.faq %}">{% translate whatismining %}</h3>
-  <p>{% translate whatisminingtxt1 %}</p>
-  <h3 id="{% translate howminingworks anchor.faq %}">{% translate howminingworks %}</h3>
-  <p>{% translate howminingworkstxt1 %}</p>
-  <p>{% translate howminingworkstxt2 %}</p>
-  <p>{% translate howminingworkstxt3 %}</p>
-  <p>{% translate howminingworkstxt4 %}</p>
-  <h3 id="{% translate miningwaste anchor.faq %}">{% translate miningwaste %}</h3>
-  <p>{% translate miningwastetxt1 %}</p>
-  <p>{% translate miningwastetxt2 %}</p>
-  <h3 id="{% translate miningsecure anchor.faq %}">{% translate miningsecure %}</h3>
-  <p>{% translate miningsecuretxt1 %}</p>
-  <h3 id="{% translate miningstart anchor.faq %}">{% translate miningstart %}</h3>
-  <p>{% translate miningstarttxt1 %}</p>
-</div>
+<h3 id="{% translate makepayment anchor.faq %}">{% translate makepayment %}</h3>
+<p>{% translate makepaymenttxt1 %}</p>
+<p>
+<img src="/img/faq/mobile_send.png" alt="Screenshot">
+<img src="/img/faq/mobile_receive.png" alt="Screenshot">
+</p>
 
-<div class="toccontent-block boxexpand expanded">
-  <h2 id="{% translate security anchor.faq %}">{% translate security %}</h2>
-  
-  <h3 id="{% translate secure anchor.faq %}">{% translate secure %}</h3>
-  <p>{% translate securetxt1 %}</p>
-  
-  <h3 id="{% translate hacked anchor.faq %}">{% translate hacked %}</h3>
-  <p>{% translate hackedtxt1 %}</p>
-  <p>{% translate hackedtxt2 %}</p>
-  
-  <h3 id="{% translate collude anchor.faq %}">{% translate collude %}</h3>
-  <p>{% translate colludetxt1 %}</p>
-  <p>{% translate colludetxt2 %}</p>
-  
-  <h3 id="{% translate quantum anchor.faq %}">{% translate quantum %}</h3>
-  <p>{% translate quantumtxt1 %}</p>
-</div>
-  
-<div class="toccontent-block boxexpand expanded">
-  <h2 id="{% translate help anchor.faq %}">{% translate help %}</h2>
-  
-  <h3 id="{% translate morehelp anchor.faq %}">{% translate morehelp %}</h3>
-  <p>{% translate morehelptxt1 %}</p>
-</div>
+<h3 id="{% translate advantages anchor.faq %}">{% translate advantages %}</h3>
+<ul>
+  <li>{% translate advantagesli1 %}</li>
+  <li>{% translate advantagesli2 %}</li>
+  <li>{% translate advantagesli3 %}</li>
+  <li>{% translate advantagesli4 %}</li>
+  <li>{% translate advantagesli5 %}</li>
+</ul>
+
+<h3 id="{% translate disadvantages anchor.faq %}">{% translate disadvantages %}</h3>
+<ul>
+  <li>{% translate disadvantagesli1 %}</li>
+  <li>{% translate disadvantagesli2 %}</li>
+  <li>{% translate disadvantagesli3 %}</li>
+</ul>
+
+<h3 id="{% translate trust anchor.faq %}">{% translate trust %}</h3>
+<p>{% translate trusttxt1 %}</p>
+
+<h3 id="{% translate makemoney anchor.faq %}">{% translate makemoney %}</h3>
+<p>{% translate makemoneytxt1 %}</p>
+<p>{% translate makemoneytxt2 %}</p>
+
+<h3 id="{% translate virtual anchor.faq %}">{% translate virtual %}</h3>
+<p>{% translate virtualtxt1 %}</p>
+
+<h3 id="{% translate anonymous anchor.faq %}">{% translate anonymous %}</h3>
+<p>{% translate anonymoustxt1 %}</p>
+<p>{% translate anonymoustxt2 %}</p>
+
+<h3 id="{% translate lost anchor.faq %}">{% translate lost %}</h3>
+<p>{% translate losttxt1 %}</p>
+
+<h3 id="{% translate scale anchor.faq %}">{% translate scale %}</h3>
+<p>{% translate scaletxt1 %}</p>
+
+<h2 id="{% translate legal anchor.faq %}">{% translate legal %}</h2>
+
+<h3 id="{% translate islegal anchor.faq %}">{% translate islegal %}</h3>
+<p>{% translate islegaltxt1 %}</p>
+<p>{% translate islegaltxt2 %}</p>
+
+<h3 id="{% translate illegalactivities anchor.faq %}">{% translate illegalactivities %}</h3>
+<p>{% translate illegalactivitiestxt1 %}</p>
+<p>{% translate illegalactivitiestxt2 %}</p>
+<p>{% translate illegalactivitiestxt3 %}</p>
+
+<h3 id="{% translate regulated anchor.faq %}">{% translate regulated %}</h3>
+<p>{% translate regulatedtxt1 %}</p>
+<p>{% translate regulatedtxt2 %}</p>
+
+<h3 id="{% translate taxes anchor.faq %}">{% translate taxes %}</h3>
+<p>{% translate taxestxt1 %}</p>
+
+<h3 id="{% translate consumer anchor.faq %}">{% translate consumer %}</h3>
+<p>{% translate consumertxt1 %}</p>
+<p>{% translate consumertxt2 %}</p>
+
+<h2 id="{% translate economy anchor.faq %}">{% translate economy %}</h2>
+
+<h3 id="{% translate bitcoinscreated anchor.faq %}">{% translate bitcoinscreated %}</h3>
+<p>{% translate bitcoinscreatedtxt1 %}</p>
+<p>{% translate bitcoinscreatedtxt2 %}</p>
+<p>{% translate bitcoinscreatedtxt3 %}</p>
+
+<h3 id="{% translate whyvalue anchor.faq %}">{% translate whyvalue %}</h3>
+<p>{% translate whyvaluetxt1 %}</p>
+
+<h3 id="{% translate whatprice anchor.faq %}">{% translate whatprice %}</h3>
+<p>{% translate whatpricetxt1 %}</p>
+<p>{% translate whatpriceimg1 %}<br><img src="/img/faq/price_chart.png" alt="chart"></p>
+
+<h3 id="{% translate worthless anchor.faq %}">{% translate worthless %}</h3>
+<p>{% translate worthlesstxt1 %}</p>
+
+<h3 id="{% translate bubble anchor.faq %}">{% translate bubble %}</h3>
+<p>{% translate bubbletxt1 %}</p>
+
+<h3 id="{% translate ponzi anchor.faq %}">{% translate ponzi %}</h3>
+<p>{% translate ponzitxt1 %}</p>
+<p>{% translate ponzitxt2 %}</p>
+
+<h3 id="{% translate earlyadopter anchor.faq %}">{% translate earlyadopter %}</h3>
+<p>{% translate earlyadoptertxt1 %}</p>
+
+<h3 id="{% translate finitelimitation anchor.faq %}">{% translate finitelimitation %}</h3>
+<p>{% translate finitelimitationtxt1 %}</p>
+
+<h3 id="{% translate deflationaryspiral anchor.faq %}">{% translate deflationaryspiral %}</h3>
+<p>{% translate deflationaryspiraltxt1 %}</p>
+<p>{% translate deflationaryspiraltxt2 %}</p>
+<p>{% translate deflationaryspiraltxt3 %}</p>
+
+<h3 id="{% translate speculationvolatility anchor.faq %}">{% translate speculationvolatility %}</h3>
+<p>{% translate speculationvolatilitytxt1 %}</p>
+<p>{% translate speculationvolatilitytxt2 %}</p>
+
+<h3 id="{% translate buyall anchor.faq %}">{% translate buyall %}</h3>
+<p>{% translate buyalltxt1 %}</p>
+
+<h3 id="{% translate bettercurrency anchor.faq %}">{% translate bettercurrency %}</h3>
+<p>{% translate bettercurrencytxt1 %}</p>
+
+<h2 id="{% translate transactions anchor.faq %}">{% translate transactions %}</h2>
+
+<h3 id="{% translate tenminutes anchor.faq %}">{% translate tenminutes %}</h3>
+<p>{% translate tenminutestxt1 %}</p>
+
+<h3 id="{% translate fee anchor.faq %}">{% translate fee %}</h3>
+<p>{% translate feetxt1 %}</p>
+<p>{% translate feetxt2 %}</p>
+
+<h3 id="{% translate poweredoff anchor.faq %}">{% translate poweredoff %}</h3>
+<p>{% translate poweredofftxt1 %}</p>
+
+<h3 id="{% translate sync anchor.faq %}">{% translate sync %}</h3>
+<p>{% translate synctxt1 %}</p>
+
+<h2 id="{% translate mining anchor.faq %}">{% translate mining %}</h2>
+
+<h3 id="{% translate whatismining anchor.faq %}">{% translate whatismining %}</h3>
+<p>{% translate whatisminingtxt1 %}</p>
+
+<h3 id="{% translate howminingworks anchor.faq %}">{% translate howminingworks %}</h3>
+<p>{% translate howminingworkstxt1 %}</p>
+<p>{% translate howminingworkstxt2 %}</p>
+<p>{% translate howminingworkstxt3 %}</p>
+<p>{% translate howminingworkstxt4 %}</p>
+
+<h3 id="{% translate miningwaste anchor.faq %}">{% translate miningwaste %}</h3>
+<p>{% translate miningwastetxt1 %}</p>
+<p>{% translate miningwastetxt2 %}</p>
+
+<h3 id="{% translate miningsecure anchor.faq %}">{% translate miningsecure %}</h3>
+<p>{% translate miningsecuretxt1 %}</p>
+
+<h3 id="{% translate miningstart anchor.faq %}">{% translate miningstart %}</h3>
+<p>{% translate miningstarttxt1 %}</p>
+
+<h2 id="{% translate security anchor.faq %}">{% translate security %}</h2>
+
+<h3 id="{% translate secure anchor.faq %}">{% translate secure %}</h3>
+<p>{% translate securetxt1 %}</p>
+
+<h3 id="{% translate hacked anchor.faq %}">{% translate hacked %}</h3>
+<p>{% translate hackedtxt1 %}</p>
+<p>{% translate hackedtxt2 %}</p>
+
+<h3 id="{% translate collude anchor.faq %}">{% translate collude %}</h3>
+<p>{% translate colludetxt1 %}</p>
+<p>{% translate colludetxt2 %}</p>
+
+<h3 id="{% translate quantum anchor.faq %}">{% translate quantum %}</h3>
+<p>{% translate quantumtxt1 %}</p>
+
+<h2 id="{% translate help anchor.faq %}">{% translate help %}</h2>
+
+<h3 id="{% translate morehelp anchor.faq %}">{% translate morehelp %}</h3>
+<p>{% translate morehelptxt1 %}</p>

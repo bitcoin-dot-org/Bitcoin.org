@@ -4,7 +4,6 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/mining.md" %}
 
-
 ## Mining
 {% include helpers/subhead-links.md %}
 
@@ -37,7 +36,7 @@ transactions from the network. Their mining software periodically polls
 provides the list of new transactions plus the public key to which the
 coinbase transaction should be sent.
 
-![Solo Bitcoin Mining](/img/dev/en-solo-mining-overview.svg?{{site.time | date: '%s'}})
+![Solo Bitcoin Mining](/img/dev/en-solo-mining-overview.svg)
 
 The mining software constructs a block using the template (described below) and creates a
 block header. It then sends the 80-byte block header to its mining
@@ -70,7 +69,7 @@ done. The mining pool gets new transactions from the network using
 software connects to the pool and requests the information it needs to
 construct block headers.
 
-![Pooled Bitcoin Mining](/img/dev/en-pooled-mining-overview.svg?{{site.time | date: '%s'}})
+![Pooled Bitcoin Mining](/img/dev/en-pooled-mining-overview.svg)
 
 In pooled mining, the mining pool sets the target threshold a few orders
 of magnitude higher (less difficult) than the network

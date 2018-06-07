@@ -5,83 +5,35 @@
 layout: base
 id: support-bitcoin
 ---
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summarytxt">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
-  </div>
-</div>
+<h1>{% translate pagetitle %}</h1>
+<p class="summarytxt">{% translate summary %}</p>
 
-<div class="container">
-  
-  <div class="row card-row">
-    <div class="card support-card">
-      <img class="titleicon" src="/img/icons/ico_multi.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="use">{% translate use %}</h2>
-      <p>{% translate usetxt %}</p>
-    </div>
-    
-    <div class="card support-card">
-      <img class="titleicon" src="/img/icons/ico_network.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="node">{% translate node %}</h2>
-      <p>{% translate nodetxt %}</p>
-    </div>
-    
-    <div class="card support-card">
-      <img class="titleicon" src="/img/icons/ico_mining.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="mining">{% translate mining %}</h2>
-      <p>{% translate miningtxt %}</p>
-    </div>
-    
-    <div class="card support-card">
-      <img class="titleicon" src="/img/icons/ico_translate.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="translate">{% translate translate %}</h2>
-      <p>{% translate translatetxt %}</p>
-      <p>
-        <a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> -
-        <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> -
-        <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> -
-        <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> -
-        <a href="https://crowdin.com/project/electrum">Electrum</a>
-      </p>
-    </div>
-    
-    <div class="card support-card">
-      <img class="titleicon" src="/img/icons/ico_conf.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="develop">{% translate develop %}</h2>
-      <p>{% translate developtxt %}</p>
-    </div>
-    
-    <div class="card support-card">
-      <img class="titleicon" src="/img/icons/ico_donate.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="donation">{% translate donation %}</h2>
-      <p>{% translate donationtxt %}</p>
-    </div>
-    
-    <div class="card support-card">
-      <img class="titleicon" src="/img/icons/ico_law.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="nonprofit">{% translate nonprofit %}</h2>
-      <p>{% translate nonprofittxt %}</p>
-    </div>
-    
-    <div class="card support-card">
-      <img class="titleicon" src="/img/icons/ico_spread.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="spread">{% translate spread %}</h2>
-      <p>{% translate spreadtxt %}</p>
-    </div>
-    
-    <div class="card support-card">
-      <img class="titleicon" src="/img/icons/ico_docs.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="wiki">{% translate wiki %}</h2>
-      <p>{% translate wikitxt %}</p>
-    </div>
-    
-    <div class="card support-card">
-      <img class="titleicon" src="/img/icons/ico_chat.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="help">{% translate help %}</h2>
-      <p>{% translate helptxt %}</p>
-    </div>
-  </div>
+<h2 id="use"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />{% translate use %}</h2>
+<p>{% translate usetxt %}</p>
 
-</div>
+<h2 id="node"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />{% translate node %}</h2>
+<p>{% translate nodetxt %}</p>
+
+<h2 id="mining"><img class="titleicon" src="/img/icons/ico_mining.svg" alt="Icon" />{% translate mining %}</h2>
+<p>{% translate miningtxt %}</p>
+
+<h2 id="translate"><img class="titleicon" src="/img/icons/ico_translate.svg" alt="Icon" />{% translate translate %}</h2>
+<p>{% translate translatetxt %}</p>
+<p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> - <a href="https://crowdin.com/project/electrum">Electrum</a></p>
+<h2 id="develop"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />{% translate develop %}</h2>
+<p>{% translate developtxt %}</p>
+
+<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />{% translate donation %}</h2>
+<p>{% translate donationtxt %}</p>
+
+<h2 id="nonprofit"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />{% translate nonprofit %}</h2>
+<p>{% translate nonprofittxt %}</p>
+
+<h2 id="spread"><img class="titleicon" src="/img/icons/ico_spread.svg" alt="Icon" />{% translate spread %}</h2>
+<p>{% translate spreadtxt %}</p>
+
+<h2 id="wiki"><img class="titleicon" src="/img/icons/ico_wiki.svg" alt="Icon" />{% translate wiki %}</h2>
+<p>{% translate wikitxt %}</p>
+
+<h2 id="help"><img class="titleicon" src="/img/icons/ico_help.svg" alt="Icon" />{% translate help %}</h2>
+<p>{% translate helptxt %}</p>

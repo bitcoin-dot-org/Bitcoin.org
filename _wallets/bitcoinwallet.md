@@ -4,7 +4,7 @@
 
 id: bitcoinwallet
 title: "Bitcoin Wallet"
-titleshort: "Bitcoin Wallet"
+titleshort: "Bitcoin<br>Wallet"
 compat: "mobile android"
 level: 2
 platform:
@@ -15,7 +15,7 @@ platform:
         text: "walletbitcoinwallet"
         link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
         source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
-        screenshot: "bitcoinwalletandroid.png?1528322191"
+        screenshot: "bitcoinwalletandroid.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"

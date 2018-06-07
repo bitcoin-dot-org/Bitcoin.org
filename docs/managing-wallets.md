@@ -76,7 +76,8 @@ Optional criteria (some could become requirements):
 *Before adding a wallet,* please make sure your wallet meets all of the
 Basic Requirements listed above, or open a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
 to request an exemption or policy change. Feel free to email Will Binns
-([will@bitcoin.org](mailto:will@bitcoin.org)) if you have any questions.
+([will@bitcoin.org](mailto:will@bitcoin.org)) or Dave Harding ([dave@dtrt.org](mailto:dave@dtrt.org))
+if you have any questions.
 
 Wallets can be added by creating a Markdown file with a wallet name
 in a `_wallets` folder, like this: `_wallets/[wallet_name].md`.

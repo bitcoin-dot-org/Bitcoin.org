@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
-    <title>icon/Desktop</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Choose-Your-wallet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Bitcoin.org--Choose-Your-wallet--Step1-Mobile-320px" transform="translate(-74.000000, -441.000000)">
-            <g id="//Content" transform="translate(0.000000, 342.000000)">
-                <g id="Step-1">
-                    <g id="Container" transform="translate(15.000000, 75.000000)">
-                        <g id="icon/Desktop" transform="translate(56.000000, 20.000000)">
-                            <rect id="Rectangle-2" stroke="#95AABF" x="12.5" y="20.5" width="4" height="4"></rect>
-                            <rect id="Rectangle-5" stroke="#95AABF" x="5.5" y="6.5" width="18.0388184" height="12.0180664"></rect>
-                            <path d="M6.55000906,26.5 L22.4499909,26.5 C22.2183558,25.3588798 21.209479,24.5 20,24.5 L9,24.5 C7.79052104,24.5 6.78164422,25.3588798 6.55000906,26.5 Z" id="Rectangle-3" stroke="#95AABF"></path>
-                            <path d="M23.536036,5 L5.51801802,5 C5.10324177,5 4.75464647,5.14180148 4.44686651,5.43727024 C4.14415417,5.72787409 4,6.06231176 4,6.46996997 L4,18.4729488 C4,18.8834039 4.14651098,19.2291698 4.45415399,19.5368128 C4.761797,19.8444558 5.10756292,19.9909668 5.51801802,19.9909668 L23.536036,19.9909668 C23.9464911,19.9909668 24.2922571,19.8444558 24.5999001,19.5368128 C24.9075431,19.2291698 25.0540541,18.8834039 25.0540541,18.4729488 L25.0540541,6.46996997 C25.0540541,6.06231176 24.9098999,5.72787409 24.6071875,5.43727024 C24.2994076,5.14180148 23.9508123,5 23.536036,5 Z M23.536036,4 C24.2103543,4 24.8066945,4.24257906 25.2997194,4.71588292 C25.7978118,5.19405167 26.0540541,5.78853365 26.0540541,6.46996997 L26.0540541,18.4729488 C26.0540541,19.1515882 25.8001686,19.7507578 25.3070068,20.2439196 C24.8138451,20.7370814 24.2146755,20.9909668 23.536036,20.9909668 L5.51801802,20.9909668 C4.83937859,20.9909668 4.240209,20.7370814 3.74704721,20.2439196 C3.25388542,19.7507578 3,19.1515882 3,18.4729488 L3,6.46996997 C3,5.78853365 3.25624223,5.19405167 3.75433469,4.71588292 C4.24735953,4.24257906 4.84369973,4 5.51801802,4 L23.536036,4 Z" id="desktop_windows---material" fill="#F7931A" fill-rule="nonzero"></path>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="100">
+  <g transform="translate(0 -952.362)">
+    <text style="line-height:125%" x="64.65" y="69.67" transform="translate(0 452.362)" font-size="40" letter-spacing="0" word-spacing="0" font-family="Sans">
+      <tspan x="64.65" y="69.67"/>
+    </text>
+    <text style="line-height:125%" x="67" y="73" transform="translate(0 452.362)" font-size="40" letter-spacing="0" word-spacing="0" font-family="Sans">
+      <tspan x="67" y="73"/>
+    </text>
+    <rect width="24.393" height="16.575" x="8.884" y="957.569" stroke="#000" stroke-width="3" stroke-linejoin="round" fill="none"/>
+    <path d="M18.516 975.379l5.419.026-.169 3.711-5.015.04s-.233-3.776-.235-3.776z" stroke="#000" stroke-width=".73" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15.572 980.623c-.521.545-.135.551-.135.551l11.567-.014s.462 0-.105-.577c-2.647-2.362-8.88-2.341-11.326.031z" stroke="#000" stroke-width=".846" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect width="23.337" height="1.795" x="9.501" y="971.659"/>
+    <rect width="24.393" height="16.575" x="8.884" y="1025.569" stroke="#fff" stroke-width="3" stroke-linejoin="round" fill="none"/>
+    <path d="M18.516 1043.379l5.419.026-.169 3.711-5.015.04s-.233-3.776-.235-3.776z" fill="#fff" stroke="#fff" stroke-width=".73" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15.572 1048.623c-.521.545-.135.551-.135.551l11.567-.014s.462 0-.105-.577c-2.647-2.362-8.88-2.341-11.326.031z" fill="#fff" stroke="#fff" stroke-width=".846" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect width="23.337" height="1.795" x="9.501" y="1039.659" fill="#fff"/>
+  </g>
 </svg>

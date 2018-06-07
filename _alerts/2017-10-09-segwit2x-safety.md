@@ -2,13 +2,10 @@
 title: "Beware of Bitcoin's possible incompatibility with some major services"
 shorturl: "segwit2x-safety"
 active: false
-show_toc: true
 ## banner: "Beware of Bitcoin's possible incompatibility with some major services"
 ## bannerclass: "alert"
 date: 2017-10-11
 ---
-
-<div class="post-content" markdown="1">
 
 ## Summary
 
@@ -32,9 +29,6 @@ However users should only use these wallets to store their coins and never perfo
 make on the Bitcoin blockchain can also be replicated and "replayed" on the altcoin chain. If the coins on the contentious
 hard fork have any value, there will be methods you can use to "split" your coins and have access to them. Pay extra attention
 to major Bitcoin communication channels and media shortly after the fork so you stay informed.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Mobile wallets
 
@@ -50,9 +44,6 @@ to support the hard fork, it is safe to continue using mobile wallets, however y
 sources of Bitcoin news such as this website, [/r/bitcoin](https://www.reddit.com/r/Bitcoin/), and the [Bitcoin Forum](https://bitcointalk.org)
 to make sure that it's safe to continue using your particular wallet. As a general rule, you should not perform any transactions
 during and shortly after the hard fork.
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## After the fork
 
@@ -77,9 +68,6 @@ this altcoin as "Bitcoin" or "BTC" to their users after the hard fork. These ser
 the Bitcoin system in a contentious manner and therefore are no longer useful to our visitors.
 
 The following companies and services have pledged to adopt the contentious hard fork:
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Wallets
 
@@ -98,9 +86,6 @@ The following companies and services have pledged to adopt the contentious hard 
 + Ripio (Argentina)
 + Unocoin (India)
 + **Xapo (United States)**
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Exchanges
 
@@ -117,9 +102,6 @@ The following companies and services have pledged to adopt the contentious hard 
 + Safello (Sweden)
 + SFOX (United States)
 + **ShapeShift (Switzerland)**
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Miners
 
@@ -130,9 +112,6 @@ The following companies and services have pledged to adopt the contentious hard 
 + Bixin.com (China)
 + Genesis Mining (Hong Kong)
 + ViaBTC (China)
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Other
 
@@ -150,4 +129,3 @@ The following companies and services have pledged to adopt the contentious hard 
 + Netki (United States)
 + Purse (United States)
 + Veem (United States)
-</div>

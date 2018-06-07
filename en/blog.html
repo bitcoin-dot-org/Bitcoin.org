@@ -11,39 +11,19 @@ id: site-blog
 
 <div class="home">
 
-  <div class="hero">
-    <div class="container hero-container">
-      <h1 class="page-heading">Bitcoin.org Site Blog</h1>
-      <p class="summary">Discover what's new on Bitcoin.org or
-        <a type="application/atom+xml" href="/en/rss/blog.xml">subscribe to the RSS feed</a>
-      </p>
-      {% include helpers/hero-social.html %}
-    </div>
-  </div>
+  <h1 class="page-heading">Bitcoin.org Site Blog</h1>
 
-  <div class="blog">
-    <div class="container">
-      <ul class="post-list clearfix">
-        {% for post in site.posts %}
-        <li class="post">
-          <div class="post-inner">
-            <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
-            <p class="post-name">{{ post.title }}</p>
-            <p class="post-description">
-              <!-- Event description -->
-            </p>
-            <a class="button btn-bright" href="{{ post.url | remove: '.html' }}">{% translate informbut getting-started %}</a>
-          </div>
-        </li>
-        {% endfor %}
-      </ul>
-      <div class="btn-container">
-        <button class="button btn-dark" id="loadMore">{% translate loadmore-posts %}</button>
-      </div>
-    </div>
-  </div>
+
+  <p class="summary">Discover what's new on Bitcoin.org or <a type="application/atom+xml" href="/en/rss/blog.xml">subscribe to the RSS feed <img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></p>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <a class="post-link" href="{{ post.url | remove: '.html' }}">{{ post.title }}</a>
+        -
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
 
 </div>
-
-<script src="/js/jquery/jquery-1.11.2.min.js"></script>
-<script src="/js/loadMorePosts.js"></script>

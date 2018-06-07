@@ -5,62 +5,28 @@
 layout: base
 id: bitcoin-for-businesses
 ---
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summary">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
-  </div>
-</div>
+<h1>{% translate pagetitle %}</h1>
+<p class="summary">{% translate summary %}</p>
 
+<h2 id="lowfee"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />{% translate lowfee %}</h2>
+<p>{% translate lowfeetext %}</p>
 
-<div class="container">
-  <div class="row card-row">
-    <div class="card business-card">
-      <img class="titleicon" src="/img/icons/ico_lowfee.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="lowfee">{% translate lowfee %}</h2>
-      <p>{% translate lowfeetext %}</p>
-    </div>
+<h2 id="fraud"><img class="titleicon" src="/img/icons/ico_shield.svg" alt="Icon" />{% translate fraud %}</h2>
+<p>{% translate fraudtext %}</p>
 
-    <div class="card business-card">
-      <img class="titleicon" src="/img/icons/ico_control.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="fraud">{% translate fraud %}</h2>
-      <p>{% translate fraudtext %}</p>
-    </div>
+<h2 id="international"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />{% translate international %}</h2>
+<p>{% translate internationaltext %}</p>
 
-    <div class="card business-card">
-      <img class="titleicon" src="/img/icons/ico_international.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="international">{% translate international %}</h2>
-      <p>{% translate internationaltext %}</p>
-    </div>
+<h2 id="pci"><img class="titleicon" src="/img/icons/ico_pci.svg" alt="Icon" />{% translate pci %}</h2>
+<p>{% translate pcitext %}</p>
 
-    <div class="card business-card">
-      <img class="titleicon" src="/img/icons/ico_pci.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="pci">{% translate pci %}</h2>
-      <p>{% translate pcitext %}</p>
-    </div>
+<h2 id="visibility"><img class="titleicon" src="/img/icons/ico_visib.svg" alt="Icon" />{% translate visibility %}</h2>
+<p>{% translate visibilitytext %}</p>
 
-    <div class="card business-card">
-      <img class="titleicon" src="/img/icons/ico_visib.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="visibility">{% translate visibility %}</h2>
-      <p>{% translate visibilitytext %}</p>
-    </div>
+<h2 id="multisig"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />{% translate multisig %}</h2>
+<p>{% translate multisigtext %}</p>
 
-    <div class="card business-card">
-      <img class="titleicon" src="/img/icons/multi-signature.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="multisig">{% translate multisig %}</h2>
-      <p>{% translate multisigtext %}</p>
-    </div>
+<h2 id="transparency"><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />{% translate transparency %}</h2>
+<p>{% translate transparencytext %}</p>
 
-    <div class="card business-card">
-      <img class="titleicon" src="/img/icons/transparency.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="transparency">{% translate transparency %}</h2>
-      <p>{% translate transparencytext %}</p>
-    </div>
-    
-  </div>
-
-  <div class="btn-container">
-    <a class="btn btn-bright get-started-btn" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
-  </div>
-</div>
+<div class="mainbutton"><a href="/{{ page.lang }}/{% translate getting-started url %}"><img src="/img/icons/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>

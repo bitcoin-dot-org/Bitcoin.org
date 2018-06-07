@@ -5,54 +5,25 @@
 layout: base
 id: bitcoin-for-individuals
 ---
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summary">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
-  </div>
-</div>
+<h1>{% translate pagetitle %}</h1>
+<p class="summary">{% translate summary %}</p>
 
-<div class="container">
-  <div class="row card-row">
-    <div class="card individuals-card">
-      <img src="/img/icons/ico_mobile.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="mobile">{% translate mobile %}</h2>
-      <p>{% translate mobiletext %}</p>
-    </div>
+<h2 id="mobile"><img class="titleicon" src="/img/icons/ico_mobile.svg" alt="Icon"/>{% translate mobile %}</h2>
+<p>{% translate mobiletext %}</p>
 
-    <div class="card individuals-card">
-      <img src="/img/icons/ico_lock.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="secure">{% translate secure %}</h2>
-      <p>{% translate securetext %}</p>
-    </div>
+<h2 id="secure"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />{% translate secure %}</h2>
+<p>{% translate securetext %}</p>
 
-    <div class="card individuals-card">
-      <img src="/img/icons/ico_simple.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="simple">{% translate simple %}</h2>
-      <p>{% translate simpletext %}</p>
-    </div>
+<h2 id="simple"><img class="titleicon" src="/img/icons/ico_simple.svg" alt="Icon" />{% translate simple %}</h2>
+<p>{% translate simpletext %}</p>
 
-    <div class="card individuals-card">
-      <img src="/img/icons/ico_international.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="international">{% translate international %}</h2>
-      <p>{% translate internationaltext %}</p>
-    </div>
+<h2 id="international"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />{% translate international %}</h2>
+<p>{% translate internationaltext %}</p>
 
-    <div class="card individuals-card">
-      <img src="/img/icons/ico_lowfee.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="lowfee">{% translate lowfee %}</h2>
-      <p>{% translate lowfeetext %}</p>
-    </div>
+<h2 id="lowfee"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />{% translate lowfee %}</h2>
+<p>{% translate lowfeetext %}</p>
 
-    <div class="card individuals-card">
-      <img src="/img/icons/ico_anon.svg?{{site.time | date: '%s'}}" alt="Icon" />
-      <h2 id="anonymous">{% translate anonymous %}</h2>
-      <p>{% translate anonymoustext %}</p>
-    </div>
-  </div>
+<h2 id="anonymous"><img class="titleicon" src="/img/icons/ico_anon.svg" alt="Icon" />{% translate anonymous %}</h2>
+<p>{% translate anonymoustext %}</p>
 
-  <div class="btn-container ">
-    <a class="btn btn-bright get-started-btn" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
-  </div>
-</div>
+<div class="mainbutton"><a href="/{{ page.lang }}/{% translate getting-started url %}"><img src="/img/icons/but_bitcoin.svg" alt="icon">{% translate getstarted layout %}</a></div>

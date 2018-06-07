@@ -1,24 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="48px" height="36px" viewBox="0 0 48 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
-    <title>icon/laptop</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Template-4--For-Individuals" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="22.01.18-Bitcoin.org_Bitcoin-for-individuals_Desktop-1200px--" transform="translate(-1177.000000, -609.000000)">
-            <g id="//contenct" transform="translate(215.000000, 555.000000)">
-                <g id="box3" transform="translate(798.000000, 0.000000)">
-                    <g id="icon/laptop" transform="translate(157.000000, 42.000000)">
-                        <g id="icon/Desktop">
-                            <g id="Group-3" transform="translate(7.000000, 12.000000)">
-                                <rect id="Rectangle-6" stroke="#1C1F30" x="2.5" y="0.5" width="42" height="30" rx="5"></rect>
-                                <rect id="Rectangle-6" stroke="#FF9500" x="4.5" y="2.5" width="38" height="26" rx="3"></rect>
-                                <path d="M0.522421508,35.5 L47.4775785,35.5 C47.2249641,32.69675 44.8690213,30.5 42,30.5 L6,30.5 C3.13097872,30.5 0.775035897,32.69675 0.522421508,35.5 Z" id="Rectangle-3" stroke="#95AABF" transform="translate(24.000000, 33.000000) rotate(180.000000) translate(-24.000000, -33.000000) "></path>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+  <path d="M7.15 14.811l-4.6 3.614 9.036 9.775 17.3-20.125-3.943-2.464-13.028 15.278z" stroke="#000" stroke-width=".92" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

@@ -157,7 +157,7 @@ by locktime. This is the refund transaction. Bob can't sign the refund transacti
 it to Alice to sign, as shown in the
 illustration below.
 
-![Micropayment Channel Example](/img/dev/en-micropayment-channel.svg?{{site.time | date: '%s'}})
+![Micropayment Channel Example](/img/dev/en-micropayment-channel.svg)
 
 Alice checks that the refund transaction's locktime is 24 hours in the
 future, signs it, and gives a copy of it back to Bob. She then asks Bob
@@ -230,7 +230,7 @@ illustration below, makes this decision easy: they create a single
 transaction which does all of the spending simultaneously, ensuring none
 of them can steal the others' satoshis.
 
-![Example CoinJoin Transaction](/img/dev/en-coinjoin.svg?{{site.time | date: '%s'}})
+![Example CoinJoin Transaction](/img/dev/en-coinjoin.svg)
 
 Each contributor looks through their collection of Unspent Transaction
 Outputs (UTXOs) for 100 millibitcoins they can spend. They then each generate

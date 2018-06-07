@@ -14,7 +14,7 @@ platform:
       text: "walletelectrum"
       link: "https://electrum.org"
       source: "https://github.com/spesmilo/electrum"
-      screenshot: "electrum.png?1528322191"
+      screenshot: "electrum.png"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkpassvalidationspvservers"
@@ -40,7 +40,7 @@ platform:
         text: "walletelectrum"
         link: "https://play.google.com/store/apps/details?id=org.electrum.electrum"
         source: "https://github.com/spesmilo/electrum"
-        screenshot: "electrumandroid.png?1528322191"
+        screenshot: "electrumandroid.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvservers"

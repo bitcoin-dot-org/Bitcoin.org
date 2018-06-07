@@ -1,45 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="39px" height="43px" viewBox="0 0 39 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
-    <title>Be the network icon</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Support-bitcoin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="22.01.18-Bitcoin.org_Support-Bitcoin_Desktop-1200px--" transform="translate(-781.000000, -676.000000)">
-            <g id="//contenct" transform="translate(215.000000, 637.000000)">
-                <g id="box2" transform="translate(400.000000, 0.000000)">
-                    <g id="Be-the-network-icon" transform="translate(155.000000, 30.000000)">
-                        <g>
-                            <rect id="Rectangle-2" x="0" y="0" width="60" height="60"></rect>
-                            <g id="Group-3" transform="translate(12.000000, 10.000000)">
-                                <path d="M3.75962886,11.6444413 L3.50410418,29.4505025 L18.6248944,38.4146206 L33.5,29.111993 L33.5,11.6359717 L18.9445188,2.58542903 L3.75962886,11.6444413 Z M18.9552855,1.41457097 L34.5,11.0802151 L34.5,29.666061 L18.6387922,39.5853794 L2.49589582,30.015322 L2.76774433,11.0717456 L18.9552855,1.41457097 Z" id="Path-2" fill="#1C3C55" fill-rule="nonzero"></path>
-                                <path d="M3,11 L34,29" id="Path-4" stroke="#1C3C55"></path>
-                                <path d="M3,29 L34,11" id="Path-5" stroke="#1C3C55"></path>
-                                <path d="M3,29 L18.9616529,2.7166399" id="Path-6" stroke="#95AABF"></path>
-                                <path d="M18,2 L33,29" id="Path-7" stroke="#95AABF"></path>
-                                <path d="M33,29 L2,29" id="Path-8" stroke="#95AABF"></path>
-                                <path d="M17.8861999,39 L18.1138001,2" id="Path-9" stroke="#1C3C55"></path>
-                                <g id="Group" fill="#FFFFFF">
-                                    <circle id="Oval" cx="19" cy="3" r="3"></circle>
-                                    <circle id="Oval-Copy" cx="34" cy="11" r="3"></circle>
-                                    <circle id="Oval-Copy-2" cx="19" cy="21" r="3"></circle>
-                                    <circle id="Oval-Copy-3" cx="3" cy="11" r="3"></circle>
-                                    <circle id="Oval-Copy-4" cx="3" cy="30" r="3"></circle>
-                                    <circle id="Oval-Copy-5" cx="19" cy="38" r="3"></circle>
-                                    <circle id="Oval-Copy-6" cx="34" cy="30" r="3"></circle>
-                                </g>
-                                <circle id="Oval" stroke="#FF9500" cx="19" cy="3" r="3"></circle>
-                                <circle id="Oval-Copy" stroke="#FF9500" cx="34" cy="11" r="3"></circle>
-                                <circle id="Oval-Copy-2" stroke="#FF9500" cx="19" cy="21" r="3"></circle>
-                                <circle id="Oval-Copy-3" stroke="#FF9500" cx="3" cy="11" r="3"></circle>
-                                <circle id="Oval-Copy-4" stroke="#FF9500" cx="3" cy="30" r="3"></circle>
-                                <circle id="Oval-Copy-5" stroke="#FF9500" cx="19" cy="38" r="3"></circle>
-                                <circle id="Oval-Copy-6" stroke="#FF9500" cx="34" cy="30" r="3"></circle>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+  <g transform="translate(0 -1020.362)">
+    <rect width="104.286" height="154.286" x="138.571" y="175.934" ry="8.201" opacity=".99" fill="#fff"/>
+    <path d="M72.226 43.174a19.193 19.445 0 1 1-38.386 0 19.193 19.445 0 1 1 38.386 0z" transform="matrix(-.163 -.137 -.137 .163 39.942 1038.853)" opacity=".99" stroke="#000" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="0"/>
+    <path transform="matrix(-.159 -.134 -.134 .159 25.528 1027.156)" d="M72.226 43.174a19.193 19.445 0 1 1-38.386 0 19.193 19.445 0 1 1 38.386 0z" opacity=".99" stroke="#000" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="0"/>
+    <path d="M26.289 1039.085l-16.002-13.646" stroke="#000" stroke-width="2.157" fill="none"/>
+    <path d="M72.226 43.174a19.193 19.445 0 1 1-38.386 0 19.193 19.445 0 1 1 38.386 0z" transform="matrix(.238 -.086 -.086 -.238 -1.528 1060.18)" opacity=".99" stroke="#000" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="0"/>
+    <path d="M6.908 1046.163l19.819-7.035" stroke="#000" stroke-width="2.157" fill="none"/>
+    <path d="M10.506 1025.838l-3.817 20.681" stroke="#000" stroke-width="2.157" fill="none"/>
+  </g>
 </svg>

@@ -11,232 +11,81 @@ end_of_page: |
   <script src="/js/jquery/jquery-1.11.2.min.js"></script>
   <script src="/js/jquery/jquery-ui.min.js"></script>
   <script src="/js/devsearch.js"></script>
-  <script src="/js/responsiveAccordion.js"></script>
 ---
 <link rel="stylesheet" href="/css/jquery-ui.min.css">
 
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summary">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
+<h1>{% translate pagetitle %}</h1>
+
+<p class="summary">{% translate summary %}</p>
+
+<input id="glossary_term" class="glossary_term" placeholder="{% translate glossarysearchplaceholder %}">
+
+<div class="docreference">
+  <a href="/{{ page.lang }}/developer-guide"><span class="fa fa-info-circle fa-2x"></span><span>{% translate docreferencemenuguides %}</span></a>
+  <a href="/{{ page.lang }}/developer-reference"><span class="fa fa-book fa-2x"></span><span>{% translate docreferencemenureference %}</span></a>
+  <a href="/{{ page.lang }}/developer-examples"><span class="fa fa-code fa-2x"></span><span>{% translate docreferencemenuexamples %}</span></a>
+  <a href="/{{ page.lang }}/developer-glossary"><span class="fa fa-font fa-2x"></span><span>{% translate docreferencemenuglossary %}</span></a>
+</div>
+
+<div class="resources">
+  <div><div>
+      <h2 id="block_chain"><span class="fa fa-cube fa-lg"></span> {% translate resourcestitleblockchain %}</h2>
+      <p><a href="/{{ page.lang }}/developer-guide#block-chain">{% translate resourcesitemblockchainguides %}</a></p>
+      <p><a href="/{{ page.lang }}/developer-reference#block-chain">{% translate resourcesitemblockchainreference %}</a></p>
+    </div><div>
+      <h2 id="transactions"><span class="fa fa-exchange fa-lg"></span> {% translate resourcestitletransactions %}</h2>
+      <p><a href="/{{ page.lang }}/developer-guide#transactions">{% translate resourcesitemtransactionsguides %}</a></p>
+      <p><a href="/{{ page.lang }}/developer-reference#transactions">{% translate resourcesitemtransactionsreference %}</a></p>
+      <p><a href="/{{ page.lang }}/developer-examples#transactions">{% translate resourcesitemtransactionsexamples %}</a></p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h2 id="contracts"><span class="fa fa-sitemap fa-lg fa-rotate-270"></span> {% translate resourcestitlecontracts %}</h2>
+      <p><a href="/{{ page.lang }}/developer-guide#contracts">{% translate resourcesitemcontractsguides %}</a></p>
+      <p><a href="https://en.bitcoin.it/wiki/Contracts"><span class="fa fa-external-link"></span> More Contracts</a> - Wiki {% if page.lang != "en" %}(English){% endif %}</p>
+      <p><a href="https://bitcoinj.github.io/working-with-micropayments"><span class="fa fa-external-link"></span> Micropayment Channel Example</a> - bitcoinj {% if page.lang != "en" %}(English){% endif %}</p>
+    </div><div>
+      <h2 id="wallets"><span class="fa fa-btc fa-lg"></span> {% translate resourcestitlewallets %}</h2>
+      <p><a href="/{{ page.lang }}/developer-guide#wallets">{% translate resourcesitemwalletsguides %}</a></p>
+      <p><a href="/{{ page.lang }}/developer-reference#wallets">{% translate resourcesitemwalletsreferences %}</a></p>
+      <p><a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki"><span class="fa fa-external-link"></span> HD Wallets</a> - BIP32 {% if page.lang != "en" %}(English){% endif %}</p>
+      <p><a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki"><span class="fa fa-external-link"></span> Mnemonic Code</a> - BIP39 {% if page.lang != "en" %}(English){% endif %}</p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h2 id="payment-processing"><span class="fa fa-cart-plus fa-lg"></span> {% translate resourcestitlepaymentprocessing %}</h2>
+      <p><a href="/{{ page.lang }}/developer-guide#payment-processing">{% translate resourcesitempaymentprocessingguides %}</a></p>
+      <p><a href="/{{ page.lang }}/developer-examples#payment-processing">{% translate resourcesitempaymentprocessingexamples %}</a></p>
+      <p><a href="https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki"><span class="fa fa-external-link"></span> Payment Protocol</a> - BIP70 {% if page.lang != "en" %}(English){% endif %}</p>
+    </div><div>
+      <h2 id="operating_modes"><span class="fa fa-cogs fa-lg"></span> {% translate resourcestitleoperatingmodes %}</h2>
+      <p><a href="/{{ page.lang }}/developer-guide#operating-modes">{% translate resourcesitemoperatingmodesguides %}</a></p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h2 id="p2p-network"><span class="fa fa-share-alt fa-lg"></span> {% translate resourcestitlep2pnetwork %}</h2>
+      <p><a href="/{{ page.lang }}/developer-guide#p2p-network">{% translate resourcesitemp2pnetworkguides %}</a></p>
+      <p><a href="/{{ page.lang }}/developer-reference#p2p-network">{% translate resourcesitemp2pnetworkreference %}</a></p>
+      <p><a href="/{{ page.lang }}/developer-examples#p2p-network">{% translate resourcesitemp2pnetworkexamples %}</a></p>
+      <p><a href="https://en.bitcoin.it/wiki/Protocol_specification"><span class="fa fa-external-link"></span> Full Protocol Specification</a> - Wiki {% if page.lang != "en" %}(English){% endif %}</p>
+    </div><div>
+      <h2 id="mining"><span class="fa fa-puzzle-piece fa-lg"></span> {% translate resourcestitlemining %}</h2>
+      <p><a href="/{{ page.lang }}/developer-guide#mining">{% translate resourcesitemminingguides %}</a></p>
+      <p><a href="https://github.com/bitcoin/bips/blob/master/bip-0022.mediawiki"><span class="fa fa-external-link"></span> getblocktemplate Fundamentals</a> - BIP22 {% if page.lang != "en" %}(English){% endif %}</p>
+      <p><a href="https://github.com/bitcoin/bips/blob/master/bip-0023.mediawiki"><span class="fa fa-external-link"></span> getblocktemplate Pooled Mining</a> - BIP23 {% if page.lang != "en" %}(English){% endif %}</p>
+    </div>
   </div>
 </div>
 
-<div class="dev-documentation">
-  <div class="container">
-    <input id="glossary_term" class="glossary_term" placeholder="{% translate glossarysearchplaceholder %}">
-
-    <div class="row card-row">
-      <div class="card doc-card">
-        <div class="resp-acc-toggle doc-acc-toggle">
-          <img src="/img/icons/ico_blockchain.svg?{{site.time | date: '%s'}}" alt="Bank icon">
-          <h2 id="block_chain">{% translate resourcestitleblockchain %}</h2>
-        </div>
-        <div class="resp-acc-content">
-          <p>
-            <a class="card-link" href="/{{ page.lang }}/developer-guide#block-chain">{% translate resourcesitemblockchainguides %}</a>
-          </p>
-          <p>
-            <a class="card-link" href="/{{ page.lang }}/developer-reference#block-chain">{% translate resourcesitemblockchainreference %}</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="card doc-card">
-        <div class="resp-acc-toggle doc-acc-toggle">
-          <img src="/img/icons/ico_transaction.svg?{{site.time | date: '%s'}}" alt="Bank icon">
-          <h2 id="transactions">{% translate resourcestitletransactions %}</h2>
-        </div>
-        <div class="resp-acc-content">
-          <p>
-            <a href="/{{ page.lang }}/developer-guide#transactions">{% translate resourcesitemtransactionsguides %}</a>
-          </p>
-          <p>
-            <a href="/{{ page.lang }}/developer-reference#transactions">{% translate resourcesitemtransactionsreference %}</a>
-          </p>
-          <p>
-            <a href="/{{ page.lang }}/developer-examples#transactions">{% translate resourcesitemtransactionsexamples %}</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="card doc-card">
-        <div class="resp-acc-toggle doc-acc-toggle">
-          <img src="/img/icons/ico_contract.svg?{{site.time | date: '%s'}}" alt="Bank icon">
-          <h2 id="contracts">{% translate resourcestitlecontracts %}</h2>
-        </div>
-        <div class="resp-acc-content">
-          <p>
-            <a href="/{{ page.lang }}/developer-guide#contracts">{% translate resourcesitemcontractsguides %}</a>
-          </p>
-          <p>
-            <a href="https://en.bitcoin.it/wiki/Contracts">More Contracts</a> - Wiki {% if page.lang != "en" %}(English){% endif %}
-          </p>
-          <p>
-            <a href="https://bitcoinj.github.io/working-with-micropayments">Micropayment Channel Example</a> - bitcoinj {% if page.lang != "en" %}(English){% endif %}
-          </p>
-        </div>
-      </div>
-
-      <div class="card doc-card">
-        <div class="resp-acc-toggle doc-acc-toggle">
-          <img src="/img/icons/ico_wallet.svg?{{site.time | date: '%s'}}" alt="Bank icon">
-          <h2 id="wallets">{% translate resourcestitlewallets %}</h2>
-        </div>
-        <div class="resp-acc-content">
-          <p>
-            <a href="/{{ page.lang }}/developer-guide#wallets">{% translate resourcesitemwalletsguides %}</a>
-          </p>
-          <p>
-            <a href="/{{ page.lang }}/developer-reference#wallets">{% translate resourcesitemwalletsreferences %}</a>
-          </p>
-          <p>
-            <a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki">HD Wallets</a> - BIP32 {% if page.lang != "en" %}(English){% endif %}
-          </p>
-          <p>
-            <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">Mnemonic Code</a> - BIP39 {% if page.lang != "en" %}(English){% endif %}
-          </p>
-        </div>
-      </div>
-
-      <div class="card doc-card">
-        <div class="resp-acc-toggle doc-acc-toggle">
-          <img src="/img/icons/ico_payment.svg?{{site.time | date: '%s'}}" alt="Bank icon">
-          <h2 id="payment-processing">{% translate resourcestitlepaymentprocessing %}</h2>
-        </div>
-        <div class="resp-acc-content">
-          <p>
-            <a href="/{{ page.lang }}/developer-guide#payment-processing">
-              {% translate resourcesitempaymentprocessingguides %}
-            </a>
-          </p>
-          <p>
-            <a href="/{{ page.lang }}/developer-examples#payment-processing">
-              {% translate resourcesitempaymentprocessingexamples %}
-            </a>
-          </p>
-          <p>
-            <a href="https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki">Payment Protocol</a> - BIP70 {% if page.lang != "en" %}(English){% endif %}
-          </p>
-        </div>
-      </div>
-
-      <div class="card doc-card">
-        <div class="resp-acc-toggle doc-acc-toggle">
-          <img src="/img/icons/ico_gear.svg?{{site.time | date: '%s'}}" alt="Bank icon">
-          <h2 id="operating_modes">{% translate resourcestitleoperatingmodes %}</h2>
-        </div>
-        <div class="resp-acc-content">
-          <p>
-            <a href="/{{ page.lang }}/developer-guide#operating-modes">{% translate resourcesitemoperatingmodesguides %}</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="card doc-card">
-        <div class="resp-acc-toggle doc-acc-toggle">
-          <img src="/img/icons/network.svg?{{site.time | date: '%s'}}" alt="Bank icon">
-          <h2 id="p2p-network">{% translate resourcestitlep2pnetwork %}</h2>
-        </div>
-        <div class="resp-acc-content">
-          <p>
-            <a href="/{{ page.lang }}/developer-guide#p2p-network">{% translate resourcesitemp2pnetworkguides %}</a>
-          </p>
-          <p>
-            <a href="/{{ page.lang }}/developer-reference#p2p-network">{% translate resourcesitemp2pnetworkreference %}</a>
-          </p>
-          <p>
-            <a href="/{{ page.lang }}/developer-examples#p2p-network">{% translate resourcesitemp2pnetworkexamples %}</a>
-          </p>
-          <p>
-            <a href="https://en.bitcoin.it/wiki/Protocol_specification">Full Protocol Specification</a> - Wiki {% if page.lang != "en" %}(English){% endif %}
-          </p>
-        </div>
-      </div>
-
-      <div class="card doc-card">
-        <div class="resp-acc-toggle doc-acc-toggle">
-          <img src="/img/icons/ico_puzzle.svg?{{site.time | date: '%s'}}" alt="Bank icon">
-          <h2 id="mining">{% translate resourcestitlemining %}</h2>
-        </div>
-        <div class="resp-acc-content">
-          <p>
-            <a href="/{{ page.lang }}/developer-guide#mining">{% translate resourcesitemminingguides %}</a>
-          </p>
-          <p>
-            <a href="https://github.com/bitcoin/bips/blob/master/bip-0022.mediawiki">getblocktemplate Fundamentals</a> - BIP22 {% if page.lang != "en" %}(English){% endif %}
-          </p>
-          <p>
-            <a href="https://github.com/bitcoin/bips/blob/master/bip-0023.mediawiki">getblocktemplate Pooled Mining</a> - BIP23 {% if page.lang != "en" %}(English){% endif %}
-          </p>
-        </div>
-      </div>
-
-      <div class="card doc-card">
-        <div class="resp-acc-toggle doc-acc-toggle">
-          <img src="/img/icons/ico_puzzle.svg?{{site.time | date: '%s'}}" alt="Bank icon">
-          <h2 id="additional-resources">{% translate resourcestitleadditional %}</h2>
-        </div>
-        <div class="resp-acc-content">
-          <p>
-            <a href="/{{ page.lang }}/bitcoin-paper">Bitcoin: A Peer-to-Peer Electronic Cash System</a> - Satoshi Nakamoto {% if page.lang != "en" %}(English){% endif %}
-          </p>
-          <p>
-            <a href="https://github.com/bitcoin/bips#readme">Bitcoin Improvement Proposals</a> - GitHub {% if page.lang != "en" %}(English){% endif %}
-          </p>
-          <p>
-            <a href="https://github.com/minium/Bitcoin-Spec">Bitcoin Developer Reference (working paper)</a> - Krzysztof Okupski {% if page.lang != "en" %}(English){% endif %}
-          </p>
-          <p>
-            <a href="https://bitcoinj.github.io/#documentation">Bitcoinj Developer Documentation</a> - bitcoinj.org {% if page.lang != "en" %}(English){% endif %}
-          </p>
-          <p>
-            <a href="https://programmingblockchain.gitbooks.io/programmingblockchain/content/">The C# Bitcoin book (NBitcoin Developer Documentation)</a> - Nicolas Dorier {% if page.lang != "en" %}(English){%
-            endif %}
-          </p>
-          <p>
-            <a href="https://en.bitcoin.it/wiki/Category:Technical">Technical Pages</a> - Wiki {% if page.lang != "en" %}(English){% endif %}
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="docreference">
-      <h2 class="section-title docreference-title" id="docreference-title">{% translate docreference-title %}</h2>
-      <div class="row docreference-row">
-
-        <a href="/{{ page.lang }}/developer-guide" class="docreference-card">
-          <div class="docreference-img-block">
-            <img src="/img/icons/info.svg?{{site.time | date: '%s'}}" alt="icon">
-          </div>
-          <p>{% translate docreferencemenuguides %}</p>
-        </a>
-        
-        <a href="/{{ page.lang }}/developer-reference" class="docreference-card">
-          <div class="docreference-img-block">
-            <img src="/img/icons/reference.svg?{{site.time | date: '%s'}}" alt="icon">
-          </div>
-          <p>{% translate docreferencemenureference %}</p>
-        </a>
-        
-        <a href="/{{ page.lang }}/developer-examples" class="docreference-card">
-          <div class="docreference-img-block">
-            <img src="/img/icons/tag.svg?{{site.time | date: '%s'}}" alt="icon">
-          </div>
-          <p>{% translate docreferencemenuexamples %}</p>
-        </a>
-        
-        <a href="/{{ page.lang }}/developer-glossary" class="docreference-card">
-          <div class="docreference-img-block">
-            <img src="/img/icons/letter.svg?{{site.time | date: '%s'}}" alt="icon">
-          </div>
-          <p>{% translate docreferencemenuglossary %}</p>
-        </a>
-        
-      </div>
-    </div>
-
-  </div>
-</div>
+<div class="resourcesmore"><div>
+  <h2 id="additional-resources"><span class="fa fa-link fa-lg"></span> {% translate resourcestitleadditional %}</h2>
+  <p><a href="/{{ page.lang }}/bitcoin-paper"><span class="fa fa-external-link"></span> Bitcoin: A Peer-to-Peer Electronic Cash System</a> - Satoshi Nakamoto {% if page.lang != "en" %}(English){% endif %}</p>
+  <p><a href="https://github.com/bitcoin/bips#readme"><span class="fa fa-external-link"></span> Bitcoin Improvement Proposals</a> - GitHub {% if page.lang != "en" %}(English){% endif %}</p>
+  <p><a href="https://github.com/minium/Bitcoin-Spec"><span class="fa fa-external-link"></span> Bitcoin Developer Reference (working paper)</a> - Krzysztof Okupski {% if page.lang != "en" %}(English){% endif %}</p>
+  <p><a href="https://bitcoinj.github.io/#documentation"><span class="fa fa-external-link"></span> Bitcoinj Developer Documentation</a> - bitcoinj.org {% if page.lang != "en" %}(English){% endif %}</p>
+   <p><a href="https://programmingblockchain.gitbooks.io/programmingblockchain/content/"><span class="fa fa-external-link"></span> The C# Bitcoin book (NBitcoin Developer Documentation)</a> - Nicolas Dorier {% if page.lang != "en" %}(English){% endif %}</p>
+  <p><a href="https://en.bitcoin.it/wiki/Category:Technical"><span class="fa fa-external-link"></span> Technical Pages</a> - Wiki {% if page.lang != "en" %}(English){% endif %}</p>
+</div></div>

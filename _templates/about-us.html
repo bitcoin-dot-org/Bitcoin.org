@@ -2,136 +2,113 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-layout: about-sidebar
+layout: base
 id: about-us
 ---
+{% if site.env.BITCOINORG_BUILD_TYPE %}
+<!-- Note: this file is built non-deterministically -->
+<h1>{% translate pagetitle %}</h1>
+<p class="summary">{% translate pagedesc %}</p>
 
-<div class="toccontent-block boxexpand expanded">
-  <h3 class="contributor-title" id="maintenance">{% translate maintenance %}</h3>
-  <div class="contributor-row">
-    <p class="contributor">
-      <a class="contributor-name" href="https://github.com/wbnns">Will Binns</a>
-      <span>Website maintainer</span>
-    </p>
+<h2 id="own">{% translate own %}</h2>
+<p>{% translate owntxt %}</p>
+{% case page.lang %}
+{% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl' or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'ja' or 'zh_CN' or 'zh_TW' %}
+{% else %}
+  <p>{% translate owntxt2 %}</p>
+  <p>{% translate owntxt3 %}</p>
+  <p>{% translate owntxt4 %}</p>
+{% endcase %}
 
-    <p class="contributor">
-      <a class="contributor-name" href="https://github.com/crwatkins">Craig Watkins</a>
-      <span>Wallet maintainer</span>
-    </p>
-  </div>
-  
+<h2 id="control">{% translate control %}</h2>
+<p>{% translate controltxt %}</p>
+
+<h2 id="mission">{% translate mission %}</h2>
+<ul>
+  <li>{% translate missiontxt1 %}</li>
+  <li>{% translate missiontxt2 %}</li>
+  <li>{% translate missiontxt3 %}</li>
+  <li>{% translate missiontxt4 %}</li>
+  <li>{% translate missiontxt5 %}</li>
+  <li>{% translate missiontxt6 %}</li>
+  <li>{% translate missiontxt7 %}</li>
+</ul>
+
+<h2 id="help">{% translate help %}</h2>
+<p>{% translate helptxt %}</p>
+
+<h3 id="maintenance">{% translate maintenance %}</h3>
+
+<div class="credit">
+  <p><a href="https://github.com/wbnns">Will Binns</a><span>Website maintainer</span></p>
+  <p><a href="https://github.com/crwatkins">Craig Watkins</a><span>Wallet maintainer</span></p>
 </div>
 
-<div class="toccontent-block boxexpand expanded">
-  <h3 class="contributor-title" id="sponsorship">{% translate sponsorship %}</h3>
-  <div class="contributor-row">
-    <p class="contributor">
-      <a class="contributor-name" href="https://bitcoinfoundation.org/">The Bitcoin Foundation</a>
-      <span>2014 - 2015</span>
-    </p>
-  </div>
+<h3 id="sponsorship">{% translate sponsorship %}</h3>
+
+<div class="credit">
+  <p><a href="https://bitcoinfoundation.org/">The Bitcoin Foundation</a><span>2014 - 2015</span></p>
 </div>
 
-<div class="toccontent-block boxexpand expanded">
-  <h3 class="contributor-title" id="translation">{% translate translation %}</h3>
-  <div class="contributor-row">
-    <p class="contributor">Ar Vicco
-      <br>
-      <span>Russian</span>
-    </p>
-    <p class="contributor">Simon Alexander Hinterreiter
-      <br>
-      <span>German</span>
-    </p>
-    <p class="contributor">Jacob Burenstam
-      <br>
-      <span>Swedish</span>
-    </p>
-    <p class="contributor">Péter Kemenczés
-      <br>
-      <span>Hungarian</span>
-    </p>
-    <p class="contributor">Matija Mazi
-      <br>
-      <span>Slovenian</span>
-    </p>
-    <p class="contributor">Mihai Onosie
-      <br>
-      <span>Romanian</span>
-    </p>
-    <p class="contributor">Boštjan Pirnar
-      <br>
-      <span>Slovenian</span>
-    </p>
-    <p class="contributor">Luigigiuseppe Prosperi
-      <br>
-      <span>Italian</span>
-    </p>
-    <p class="contributor">Thomas Pryds
-      <br>
-      <span>Danish</span>
-    </p>
-  </div>
+<h3 id="translation">{% translate translation %}</h3>
+
+<div class="credit">
+  <p>Ar Vicco<span>Russian</span></p>
+  <p>Simon Alexander Hinterreiter<span>German</span></p>
+  <p>Jacob Burenstam<span>Swedish</span></p>
+  <p>Péter Kemenczés<span>Hungarian</span></p>
+  <p>Matija Mazi<span>Slovenian</span></p>
+  <p>Mihai Onosie<span>Romanian</span></p>
+  <p>Boštjan Pirnar<span>Slovenian</span></p>
+  <p>Luigigiuseppe Prosperi<span>Italian</span></p>
+  <p>Thomas Pryds<span>Danish</span></p>
 </div>
 
+<h3 id="service_contributors">{% translate service_contributors %}</h3>
 
-<div class="toccontent-block boxexpand expanded">
-  <h3 class="contributor-title" id="service_contributors">{% translate service_contributors %}</h3>
-  <div class="contributor-row">
-    <p class="contributor">
-      <a class="contributor-name" href="https://www.browserstack.com/">BrowserStack</a>
-      <span>Browser testing</span>
-    </p>
-    <p class="contributor">
-      <a class="contributor-name" href="https://github.com/">GitHub</a>
-      <span>Repository hosting</span>
-    </p>
-    <p class="contributor">
-      <a class="contributor-name" href="https://www.transifex.com/">Transifex</a>
-      <span>Translation tools</span>
-    </p>
-    <p class="contributor">
-      <a class="contributor-name" href="https://travis-ci.org/">Travis CI</a>
-      <span>Continuous integration</span>
-    </p>
-  </div>
+<div class="credit">
+  <p><a href="https://www.browserstack.com/">BrowserStack</a><span>Browser testing</span></p>
+  <p><a href="https://github.com/">GitHub</a><span>Repository hosting</span></p>
+  <p><a href="https://www.transifex.com/">Transifex</a><span>Translation tools</span></p>
+  <p><a href="https://travis-ci.org/">Travis CI</a><span>Continuous integration</span></p>
 </div>
 
-<div class="toccontent-block boxexpand expanded">
-  <h3 class="contributor-title" id="inactive-contributors">{% translate inactive_contributors %}</h3>
-  <div class="contributor-row">
-    <p class="contributor">
-      <a class="contributor-name" href="https://github.com/instagibbs">Greg Sanders</a>
-      <span>Documentation writing</span>
-    </p>
-  </div>
+<h3 id="inactive-contributors">{% translate inactive_contributors %}</h3>
+
+<div class="credit">
+  <p><a href="https://github.com/instagibbs">Greg Sanders</a><span>Documentation writing</span></p>
 </div>
 
-<div class="toccontent-block boxexpand expanded">
-  <h3 class="contributor-title" id="owners">{% translate owners %}</h3>
-  <div class="contributor-row">
-    <p class="contributor">
-      <a class="contributor-name" href="https://github.com/cobra-bitcoin">Cøbra</a>
-      <span>Co-Owner</span>
-    </p>
-    <p class="contributor">
-      <a class="contributor-name" href="https://github.com/theymos">theymos</a>
-      <span>Co-Owner</span>
-    </p>
-  </div>
+<h3 id="owners">{% translate owners %}</h3>
+
+<div class="credit">
+  <p><a href="https://github.com/cobra-bitcoin">Cøbra</a><span>Co-Owner</span></p>
+  <p><a href="https://github.com/theymos">theymos</a><span>Co-Owner</span></p>
 </div>
 
-<div class="toccontent-block boxexpand expanded">
-  <h3 class="contributor-title" id="github">{% translate github %}</h3>
-  <div class="contributor-row">
-    {% for c in site.sitecontributors %}
-    <div class="contributor">
-      <div>
-        <a class="contributor-name" {% if c.login %} href="https://github.com/{{c.login}}" {% endif %}>{{ c.name | htmlescape }}</a>
-      </div>
-      <div class="contributions">({{ c.contributions }})</div>
-    </div>
-    {% endfor %}
+<h3 id="github">{% translate github %}</h3>
+
+<div class="contributors">
+  {% for c in site.sitecontributors %}
+  <div>
+    <div><a{% if c.login %} href="https://github.com/{{c.login}}"{% endif %}>{{ c.name | htmlescape }}</a></div>
+    <div>({{ c.contributions }})</div>
   </div>
+  {% endfor %}
 </div>
-  
+{% else %}
+{% comment %}
+<!-- if you've cloned bitcoin.org, feel free to fill in your own About
+Us below. It would be appreciated it if you link back to Bitcoin.org,
+but please make it clear that your site is not affiliated with
+Bitcoin.org.
+
+It would also be appreciated if you would remove our names and email
+addresses from the README.md file in the top-level directory.  -->
+{% endcomment %}
+<h1>About this site</h1>
+
+This site includes content originally published on <a
+href="https://bitcoin.org">Bitcoin.org</a>, but it is not affiliated with
+Bitcoin.org.
+{% endif %}

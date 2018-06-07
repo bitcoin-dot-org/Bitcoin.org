@@ -5,134 +5,60 @@
 layout: base
 id: getting-started
 ---
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summary">{% translate pagedesc %}</p>
-    {% include helpers/hero-social.html %}
+<h1>{% translate pagetitle %}</h1>
+
+<p class="summary">{% translate pagedesc %}</p>
+
+<div class="starttitle"><span>{% translate users %}</span></div>
+
+<div class="start">
+<div>
+  <div>
+    <h2 id="inform"><span>1.</span> {% translate inform %}</h2>
+    <p>{% translate informtxt %}</p>
+    <div><a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate informbut %}</a></div>
+  </div><div>
+    <h2 id="choose"><span>2.</span> {% translate choose %}</h2>
+    <p>{% translate choosetxt %}</p>
+    <div><a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate choosebut %}</a></div>
+  </div>
+  </div>
+  <div>
+  <div>
+    <h2 id="get"><span>3.</span> {% translate get %}</h2>
+    <p>{% translate gettxt %}</p>
+    <div><a href="/en/buy">{% translate getbut %}</a></div>
+  </div><div>
+    <h2 id="spend"><span>4.</span> {% translate spend %}</h2>
+    <p>{% translate spendtxt %}</p>
+    <div><a href="/en/spend-bitcoin">{% translate spendbut %}</a></div>
   </div>
 </div>
-
-<div class="row startbar">
-  <a class="startbar-link" href="#start-section-1">{% translate users %}</a>
-  <a class="startbar-link" href="#start-section-2">{% translate merchants %}</a>
 </div>
 
-<div class="container">
-  <div id="start-section-1" class="starttitle">
-    <span>{% translate users %}</span>
+<div class="starttitle"><span>{% translate merchants %}</span></div>
+
+<div class="start">
+<div>
+  <div>
+    <h2 id="merchantinform"><span>1.</span> {% translate merchantinform %}</h2>
+    <p>{% translate merchantinformtxt %}</p>
+    <div><a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate merchantinformbut %}</a></div>
+  </div><div>
+    <h2 id="merchantservice"><span>2.</span> {% translate merchantservice %}</h2>
+    <p>{% translate merchantservicetxt %}</p>
+    <div><a href="https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services">{% translate merchantservicebut %}</a></div>
   </div>
-  
-  <div class="start">
-    <div class="start-block">
-      <div class="start-content">
-        <div class="left-column">
-          <h2 id="inform">
-            {% translate inform %}</h2>
-          <p>{% translate informtxt %}</p>
-          <div>
-            <a class="btn-bright" href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate informbut %}</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="start-block">
-      <div class="start-content">
-        <div class="right-column">
-          <h2 id="choose">
-            {% translate choose %}</h2>
-          <p>{% translate choosetxt %}</p>
-          <div>
-            <a class="btn-bright" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate choosebut %}</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="start-block">
-      <div class="start-content">
-        <div class="left-column">
-          <h2 id="get">
-            {% translate get %}</h2>
-          <p>{% translate gettxt %}</p>
-          <div>
-            <a class="btn-bright" href="/en/buy">{% translate getbut %}</a>
-          </div>
-       </div>
-      </div>
-    </div>
-
-    <div class="start-block">
-      <div class="start-content">
-        <div class="right-column">
-          <h2 id="spend">
-            {% translate spend %}</h2>
-          <p>{% translate spendtxt %}</p>
-          <div>
-            <a class="btn-bright" href="/en/spend-bitcoin">{% translate spendbut %}</a>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
-  
-  <div id="start-section-2" class="starttitle">
-    <span>{% translate merchants %}</span>
+  <div>
+  <div>
+    <h2 id="tax"><span>3.</span> {% translate tax %}</h2>
+    <p>{% translate taxtxt %}</p>
+    <div><a href="https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Setting_Prices">{% translate taxbut %}</a></div>
+  </div><div>
+    <h2 id="visibility"><span>4.</span> {% translate visibility %}</h2>
+    <p>{% translate visibilitytxt %}</p>
+    <div><a href="/en/spend-bitcoin">{% translate visibilitybut %}</a></div>
   </div>
-  
-  <div class="start">
-    <div class="start-block">
-      <div class="start-content">
-        <div class="left-column">
-          <h2 id="merchantinform">
-            {% translate merchantinform %}</h2>
-          <p>{% translate merchantinformtxt %}</p>
-          <div>
-            <a class="btn-bright" href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate merchantinformbut %}</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="start-block">
-      <div class="start-content">
-        <div class="right-column">
-          <h2 id="merchantservice">
-            {% translate merchantservice %}</h2>
-          <p>{% translate merchantservicetxt %}</p>
-          <div>
-            <a class="btn-bright" href="https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Merchant_Services">{% translate merchantservicebut %}</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="start-block">
-      <div class="start-content">
-        <div class="left-column">
-          <h2 id="tax">
-            {% translate tax %}</h2>
-          <p>{% translate taxtxt %}</p>
-          <div>
-            <a class="btn-bright" href="https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Setting_Prices">{% translate taxbut %}</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="start-block">
-      <div class="start-content">
-        <div class="right-column">
-          <h2 id="visibility">
-            {% translate visibility %}</h2>
-          <p>{% translate visibilitytxt %}</p>
-          <div>
-            <a class="btn-bright" href="/en/spend-bitcoin">{% translate visibilitybut %}</a>
-          </div>
-        </div>
-      </div>
-    </div>
-      
-  </div>
+</div>
 </div>

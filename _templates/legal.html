@@ -2,135 +2,94 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-layout: sidebar
+layout: base
 id: legal
-show_toc: true
 lastchange: "July 5th, 2016."
 ---
+<h1>{% translate pagetitle %}</h1>
 
-  {% case page.lang %} {% when 'ar' or 'bg' or 'es' or 'sl' %}
+{% case page.lang %}
+{% when 'ar' or 'bg' or 'es' or 'sl' %}
 
-  <div class="toccontent-intro">
-    <p>{% translate termstxt1 %}</p>
-    <p>{% translate termstxt2 %}</p>
-  </div>
-    
-  {% else %}
+<p>{% translate termstxt1 %}</p>
+<p>{% translate termstxt2 %}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="information">1. {% translate information %}</h3>
-    <p>{% translate informationtxt1 %}</p>
-  </div>
+{% else %}
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="translations">2. {% translate translations %}</h3>
-    <p>{% translate translationstxt1 %}</p>
-  </div>
+<h3 id="information">1. {% translate information %}</h3>
+<p>{% translate informationtxt1 %}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="userisks">3. {% translate userisks %}</h3>
-    <p>{% translate useriskstxt1 %}</p>
-    <p>(1) {% translate useriskstxt2 %}</p>
-    <p>(2) {% translate useriskstxt3 %}</p>
-    <p>(3) {% translate useriskstxt4 %}</p>
-    <p>(4) {% translate useriskstxt5 %}</p>
-    <p>(5) {% translate useriskstxt6 %}</p>
-  </div>
+<h3 id="translations">2. {% translate translations %}</h3>
+<p>{% translate translationstxt1 %}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="investmentrisks">4. {% translate investmentrisks %}</h3>
-    <p>{% translate investmentriskstxt1 %}</p>
-  </div>
+<h3 id="userisks">3. {% translate userisks %}</h3>
+<p>{% translate useriskstxt1 %}</p>
+<p>(1) {% translate useriskstxt2 %}</p>
+<p>(2) {% translate useriskstxt3 %}</p>
+<p>(3) {% translate useriskstxt4 %}</p>
+<p>(4) {% translate useriskstxt5 %}</p>
+<p>(5) {% translate useriskstxt6 %}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="taxcompliance">5. {% translate taxcompliance %}</h3>
-    <p>{% translate taxcompliancetxt1 %}</p>
-  </div>
+<h3 id="investmentrisks">4. {% translate investmentrisks %}</h3>
+<p>{% translate investmentriskstxt1 %}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="noissuer">6. {% translate noissuer %}</h3>
-    <p>{% translate noissuertxt1 %}</p>
-  </div>
+<h3 id="taxcompliance">5. {% translate taxcompliance %}</h3>
+<p>{% translate taxcompliancetxt1 %}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="nowarranties">7. {% translate nowarranties %}</h3>
-    <p>{% translate nowarrantiestxt1 %}</p>
-  </div>
+<h3 id="noissuer">6. {% translate noissuer %}</h3>
+<p>{% translate noissuertxt1 %}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="noliability">8. {% translate noliability %}</h3>
-    <p>{% translate noliabilitytxt1 %}</p>
-  </div>
+<h3 id="nowarranties">7. {% translate nowarranties %}</h3>
+<p>{% translate nowarrantiestxt1 %}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="arbitration">9. {% translate arbitration %}</h3>
-    <p>{% translate arbitrationtxt1 %}</p>
-  </div>
+<h3 id="noliability">8. {% translate noliability %}</h3>
+<p>{% translate noliabilitytxt1 %}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="lastchange">10. {% translate lastchange %}</h3>
-    <p>{% translate lastchangetxt1 %} {{ page.lastchange }}</p>
-  </div>
-  
-  {% endcase %} {% if page.lang != 'en' %}
-  
-  <div class="toccontent-intro">
-    <h1 id="english-version">English version</h1>
-  </div>
-  
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="english-information">1. {% translate information legal en %}</h3>
-    <p>{% translate informationtxt1 legal en %}</p>
-  </div>
+<h3 id="arbitration">9. {% translate arbitration %}</h3>
+<p>{% translate arbitrationtxt1 %}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="english-translations">2. {% translate translations legal en %}</h3>
-    <p>{% translate translationstxt1 legal en %}</p>
-  </div>
+<h3 id="lastchange">10. {% translate lastchange %}</h3>
+<p>{% translate lastchangetxt1 %} {{ page.lastchange }}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="english-userisks">3. {% translate userisks legal en %}</h3>
-    <p>{% translate useriskstxt1 legal en %}</p>
-    <p>(1) {% translate useriskstxt2 legal en %}</p>
-    <p>(2) {% translate useriskstxt3 legal en %}</p>
-    <p>(3) {% translate useriskstxt4 legal en %}</p>
-    <p>(4) {% translate useriskstxt5 legal en %}</p>
-    <p>(5) {% translate useriskstxt6 legal en %}</p>
-  </div>
+{% endcase %}
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="english-investmentrisks">4. {% translate investmentrisks legal en %}</h3>
-    <p>{% translate investmentriskstxt1 legal en %}</p>
-  </div>
+{% if page.lang != 'en' %}
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="english-taxcompliance">5. {% translate taxcompliance legal en %}</h3>
-    <p>{% translate taxcompliancetxt1 legal en %}</p>
-  </div>
+<h1 id="english-version">English version</h1>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="english-noissuer">6. {% translate noissuer legal en %}</h3>
-    <p>{% translate noissuertxt1 legal en %}</p>
-  </div>
+<h3 id="english-information">1. {% translate information legal en %}</h3>
+<p>{% translate informationtxt1 legal en %}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="english-nowarranties">7. {% translate nowarranties legal en %}</h3>
-    <p>{% translate nowarrantiestxt1 legal en %}</p>
-  </div>
+<h3 id="english-translations">2. {% translate translations legal en %}</h3>
+<p>{% translate translationstxt1 legal en %}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="english-noliability">8. {% translate noliability legal en %}</h3>
-    <p>{% translate noliabilitytxt1 legal en %}</p>
-  </div>
+<h3 id="english-userisks">3. {% translate userisks legal en %}</h3>
+<p>{% translate useriskstxt1 legal en %}</p>
+<p>(1) {% translate useriskstxt2 legal en %}</p>
+<p>(2) {% translate useriskstxt3 legal en %}</p>
+<p>(3) {% translate useriskstxt4 legal en %}</p>
+<p>(4) {% translate useriskstxt5 legal en %}</p>
+<p>(5) {% translate useriskstxt6 legal en %}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="english-arbitration">9. {% translate arbitration legal en %}</h3>
-    <p>{% translate arbitrationtxt1 legal en %}</p>
-  </div>
+<h3 id="english-investmentrisks">4. {% translate investmentrisks legal en %}</h3>
+<p>{% translate investmentriskstxt1 legal en %}</p>
 
-  <div class="toccontent-block boxexpand expanded">
-    <h3 id="english-lastchange">10. {% translate lastchange legal en %}</h3>
-    <p>{% translate lastchangetxt1 legal en %} {{ page.lastchange }}</p>
-  </div>
-  
-  {% endif %}
+<h3 id="english-taxcompliance">5. {% translate taxcompliance legal en %}</h3>
+<p>{% translate taxcompliancetxt1 legal en %}</p>
+
+<h3 id="english-noissuer">6. {% translate noissuer legal en %}</h3>
+<p>{% translate noissuertxt1 legal en %}</p>
+
+<h3 id="english-nowarranties">7. {% translate nowarranties legal en %}</h3>
+<p>{% translate nowarrantiestxt1 legal en %}</p>
+
+<h3 id="english-noliability">8. {% translate noliability legal en %}</h3>
+<p>{% translate noliabilitytxt1 legal en %}</p>
+
+<h3 id="english-arbitration">9. {% translate arbitration legal en %}</h3>
+<p>{% translate arbitrationtxt1 legal en %}</p>
+
+<h3 id="english-lastchange">10. {% translate lastchange legal en %}</h3>
+<p>{% translate lastchangetxt1 legal en %} {{ page.lastchange }}</p>
+
+{% endif %}

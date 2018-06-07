@@ -5,173 +5,77 @@
 layout: base
 id: resources
 ---
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summary">{% translate pagedesc %}</p>
-     {% include helpers/hero-social.html %}
+<h1>{% translate pagetitle %}</h1>
+<p class="summary">{% translate pagedesc %}</p>
+
+<div class="resources">
+<div>
+ <div>
+    <h2 id="learn"><img src="/img/icons/ico_solve.svg" class="titleicon" alt="Icon">{% translate learn %}</h2>
+    <p>{% translate linkwiki %}</p>
+    {% if page.lang == 'fr' %}<p><a href="https://openclassrooms.com/courses/comprendre-le-bitcoin-et-la-blockchain">OpenClassrooms</a></p>{% endif %}
+    <p><a href="https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/bitcoin/v/bitcoin-what-is-it">Khan Academy</a></p>
+    <p><a href="http://letstalkbitcoin.com/">Let's Talk Bitcoin</a></p>
+    <p><a href="http://www.bitcoin.kn/">Bitcoin Knowledge Podcast</a></p>
+    <p><a href="https://www.weusecoins.com/">WeUseCoins.com</a></p>
+    <p><a href="https://www.bitcoinmining.com/">BitcoinMining.com</a></p>
+    <p><a href="http://www.iamsatoshi.com/category/video-archive/">IamSatoshi</a></p>
+  </div><div>
+    <h2 id="directories"><img src="/img/icons/ico_invoice.svg" class="titleicon" alt="Icon">{% translate directories %}</h2>
+    <p><a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate linkwallets %}</a> - bitcoin.org</p>
+    <p><a href="https://coinmap.org/">{% translate linkmerchants %}</a> - coinmap.org</p>
+    <p><a href="https://spendabit.co/">{% translate linkmerchants %}</a> - spendabit.co</p>
+    <p><a href="https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/">{% translate linkmerchants %}</a> - 99Bitcoins.com</p>
+    <p><a href="https://www.buybitcoinworldwide.com/">{% translate linkexchanges %}</a> - buybitcoinworldwide.com</p>
+    <p><a href="https://en.bitcoin.it/wiki/Category:Shopping_Cart_Interfaces">{% translate linkmerchantstools %}</a> - en.bitcoin.it</p>
+    <p><a href="http://www.bitcoinprojects.net/">{% translate linkprojects %}</a> - BitcoinProjects.net</p>
   </div>
 </div>
-
-<div class="container">
-  <div class="row card-row">
-
-      <div class="card resources-card">
-        <img src="/img/icons/ico_solve.svg?{{site.time | date: '%s'}}" alt="Icon">
-        <h2 id="learn">{% translate learn %}</h2>
-        <p>{% translate linkwiki %}</p>
-        {% if page.lang == 'fr' %}
-        <p>
-          <a href="https://openclassrooms.com/courses/comprendre-le-bitcoin-et-la-blockchain">OpenClassrooms</a>
-        </p>{% endif %}
-        <p>
-          <a href="https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/bitcoin/v/bitcoin-what-is-it">Khan Academy</a>
-        </p>
-        <p>
-          <a href="http://letstalkbitcoin.com/">Let's Talk Bitcoin</a>
-        </p>
-        <p>
-          <a href="http://www.bitcoin.kn/">Bitcoin Knowledge Podcast</a>
-        </p>
-        <p>
-          <a href="https://www.weusecoins.com/">WeUseCoins.com</a>
-        </p>
-        <p>
-          <a href="https://www.bitcoinmining.com/">BitcoinMining.com</a>
-        </p>
-        <p>
-          <a href="http://www.iamsatoshi.com/category/video-archive/">IamSatoshi</a>
-        </p>
-      </div>
-
-      <div class="card resources-card">
-        <img src="/img/icons/ico_invoice.svg?{{site.time | date: '%s'}}" alt="Icon">
-        <h2 id="directories">{% translate directories %}</h2>
-        <p>
-          <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate linkwallets %}</a> - bitcoin.org</p>
-        <p>
-          <a href="https://coinmap.org/">{% translate linkmerchants %}</a> - coinmap.org</p>
-        <p>
-          <a href="https://spendabit.co/">{% translate linkmerchants %}</a> - spendabit.co</p>
-        <p>
-          <a href="https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/">{% translate linkmerchants %}</a> - 99Bitcoins.com</p>
-        <p>
-          <a href="https://www.buybitcoinworldwide.com/">{% translate linkexchanges %}</a> - buybitcoinworldwide.com</p>
-        <p>
-          <a href="https://en.bitcoin.it/wiki/Category:Shopping_Cart_Interfaces">{% translate linkmerchantstools %}</a> - en.bitcoin.it</p>
-        <p>
-          <a href="http://www.bitcoinprojects.net/">{% translate linkprojects %}</a> - BitcoinProjects.net</p>
-      </div>
-
-      <div class="card resources-card">
-        <img src="/img/icons/ico_spread.svg?{{site.time | date: '%s'}}" alt="Icon">
-        <h2 id="news">{% translate news %}</h2>
-        {% if page.lang == 'bg' %}
-        <p>
-          <a href="http://hash.bg">Hash.bg</a>
-        </p>{% endif %} {% if page.lang == 'de' %}
-        <p>
-          <a href="https://bitcoinblog.de">BitcoinBlog.de</a>
-        </p>{% endif %} {% if page.lang == 'fr' %}
-        <p>
-          <a href="https://le-coin-coin.fr">Le Coin Coin</a>
-        </p>
-        <p>
-          <a href="https://bitcoin.fr">Bitcoin.fr</a>
-        </p>
-        <p>
-          <a href="https://achat-bitcoin.fr/">Achat-bitcoin.fr</a>
-        </p>
-        {% endif %} {% if page.lang == 'pl' %}
-        <p>
-          <a href="https://satoshi.pl/">Satoshi.pl</a>
-        </p>{% endif %} {% if page.lang == 'ru' %}
-        <p>
-          <a href="https://bitnovosti.com">Bit•Новости</a>
-        </p>
-        <p>
-          <a href="https://bits.media">Bits Media</a>
-        </p>
-        <p>
-          <a href="http://coinspot.ru">CoinSpot</a>
-        </p>
-        {% endif %} {% if page.lang == 'es' %}
-        <p>
-          <a href="https://www.criptonoticias.com/">CriptoNoticias</a>
-        </p>{% endif %}
-        <p>{% translate linkcointelegraph %}
-          <p>
-            <p>
-              <a href="http://www.coindesk.com">CoinDesk</a>
-            </p>
-            <p>
-              <a href="https://bitcoinmagazine.com">Bitcoin Magazine</a>
-            </p>
-            <p>
-              <a href="http://coinjournal.net">CoinJournal</a>
-            </p>
-            {% if page.lang == 'ru' %}
-            <p>
-              <a href="https://bitcointalk.org/index.php?board=128.0">Биткойн Форум / Новости</a>
-            </p>{% else %}
-            <p>
-              <a href="https://bitcointalk.org/index.php?board=77.0">BitcoinTalk press links</a>
-            </p>{% endif %}
-      </div>
-
-      <div class="card resources-card">
-        <img src="/img/icons/ico_market.svg?{{site.time | date: '%s'}}" alt="Icon">
-        <h2 id="charts">{% translate charts %}</h2>
-        <p>
-          <a href="https://live.blockcypher.com/btc">BlockCypher</a>
-        </p>
-        <p>
-          <a href="https://tradeblock.com">Trade Block</a>
-        </p>
-        <p>
-          <a href="https://bitcoincharts.com/charts/">Bitcoincharts.com</a>
-        </p>
-        <p>
-          <a href="https://gobitcoin.io/{% if 'en,fr,de,it,es' contains page.lang %}{{ page.lang }}/{% endif %}">GoBitcoin.io</a>
-        </p>
-        <p>
-          <a href="https://bitcoinaverage.com/{% if 'en,fr,de,it,es,pl,ru,ht,pt,tr,uk' contains page.lang %}{{ page.lang }}/bitcoin-price/btc-to-usd{% endif %}">BitcoinAverage</a>
-        </p>
-        <p>
-          <a href="https://bitvol.info/">Bitcoin Volatility Index</a>
-        </p>
-      </div>
-
-      <div class="card resources-card">
-        <img src="/img/icons/ico_doc.svg?{{site.time | date: '%s'}}" alt="Icon">
-        <h2 id="documentaries">{% translate documentaries %}</h2>
-        <p>
-          <a href="http://bitcoinfilm.org/">BitcoinFilm.org</a>
-        </p>
-        <p>
-          <a href="http://iamsatoshi.com/">Ulterior States</a>
-        </p>
-        <p>
-          <a href="https://www.youtube.com/watch?v=6pWblf8COH4">The Bitcoin Phenomenon</a>
-        </p>
-      </div>
-
-      <div class="card resources-card">
-        <img src="/img/icons/ico_voucher.svg?{{site.time | date: '%s'}}" alt="Icon">
-        <h2 id="vouchers">{% translate vouchers %}</h2>
-        <p>
-          <a href="https://www.bitrefill.com/">Bitrefill</a>
-        </p>
-        <p>
-          <a href="https://foldapp.com/">Fold</a>
-        </p>
-        <p>
-          <a href="https://gyft.com/bitcoin/">Gyft</a>
-        </p>
-        <p>
-          <a href="https://opendime.com/">Opendime</a>
-        </p>
-      </div>
-
+<div>
+  <div>
+    <h2 id="news"><img src="/img/icons/ico_spread.svg" class="titleicon" alt="Icon">{% translate news %}</h2>
+    {% if page.lang == 'bg' %}<p><a href="http://hash.bg">Hash.bg</a></p>{% endif %}
+    {% if page.lang == 'de' %}<p><a href="https://bitcoinblog.de">BitcoinBlog.de</a></p>{% endif %}
+    {% if page.lang == 'fr' %}
+    <p><a href="https://le-coin-coin.fr">Le Coin Coin</a></p>
+    <p><a href="https://bitcoin.fr">Bitcoin.fr</a></p>
+    <p><a href="https://achat-bitcoin.fr/">Achat-bitcoin.fr</a></p>
+    {% endif %}
+    {% if page.lang == 'pl' %}<p><a href="https://satoshi.pl/">Satoshi.pl</a></p>{% endif %}
+    {% if page.lang == 'ru' %}
+    <p><a href="https://bitnovosti.com">Bit•Новости</a></p>
+    <p><a href="https://bits.media">Bits Media</a></p>
+    <p><a href="http://coinspot.ru">CoinSpot</a></p>
+    {% endif %}
+    {% if page.lang == 'es' %}<p><a href="https://www.criptonoticias.com/">CriptoNoticias</a></p>{% endif %}
+    <p>{% translate linkcointelegraph %}<p>
+    <p><a href="http://www.coindesk.com">CoinDesk</a></p>
+    <p><a href="https://www.getrevue.co/profile/kyletorpey/">Kyle Torpey's Daily Bitcoin Recap</a></p>
+    <p><a href="https://bitcoinmagazine.com">Bitcoin Magazine</a></p>
+    <p><a href="http://coinjournal.net">CoinJournal</a></p>
+    {% if page.lang == 'ru' %}<p><a href="https://bitcointalk.org/index.php?board=128.0">Биткойн Форум / Новости</a></p>{% else %}<p><a href="https://bitcointalk.org/index.php?board=77.0">BitcoinTalk press links</a></p>{% endif %}
+  </div><div>
+    <h2 id="charts"><img src="/img/icons/ico_market.svg" class="titleicon" alt="Icon">{% translate charts %}</h2>
+    <p><a href="https://live.blockcypher.com/btc/">BlockCypher</a></p>
+    <p><a href="https://tradeblock.com">Trade Block</a></p>
+    <p><a href="https://bitcoincharts.com/charts/">Bitcoincharts.com</a></p>
+    <p><a href="https://gobitcoin.io/{% if 'en,fr,de,it,es' contains page.lang %}{{ page.lang }}/{% endif %}">GoBitcoin.io</a></p>
+    <p><a href="https://bitcoinaverage.com/{% if 'en,fr,de,it,es,pl,ru,ht,pt,tr,uk' contains page.lang %}{{ page.lang }}/bitcoin-price/btc-to-usd{% endif %}">BitcoinAverage</a></p>
+    <p><a href="https://bitvol.info/">Bitcoin Volatility Index</a></p>
   </div>
+</div>
+<div>
+  <div>
+    <h2 id="documentaries"><img src="/img/icons/ico_doc.svg" class="titleicon" alt="Icon">{% translate documentaries %}</h2>
+    <p><a href="http://bitcoinfilm.org/">BitcoinFilm.org</a></p>
+    <p><a href="http://iamsatoshi.com/">Ulterior States</a></p>
+    <p><a href="https://www.youtube.com/watch?v=6pWblf8COH4">The Bitcoin Phenomenon</a></p>
+  </div><div>
+    <h2 id="vouchers"><img src="/img/icons/ico_voucher.svg" class="titleicon" alt="Icon">{% translate vouchers %}</h2>
+    <p><a href="https://www.bitrefill.com/">Bitrefill</a></p>
+    <p><a href="https://foldapp.com/">Fold</a></p>
+    <p><a href="https://gyft.com/bitcoin/">Gyft</a></p>
+    <p><a href="https://opendime.com/">Opendime</a></p>
+  </div>
+</div>
 </div>

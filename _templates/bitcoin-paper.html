@@ -5,76 +5,39 @@
 layout: base
 id: bitcoin-paper
 ---
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summary">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
-  </div>
-</div>
+<h1>{% translate pagetitle %}</h1>
+<p class="summary">{% translate summary %}</p>
 
-<div class="bitcoin-paper">
-  <div class="container">
-    <p>{% translate description %} {% comment %} NOTE: before adding a new file, follow these steps: 1. Make sure it has been
-      uploaded in ODT form to https://github.com/saivann/bitcoinwhitepaper 2. Ask a site maintainer to generate the PDF format
-      from the ODT format. 3. Scan the PDF using VirusTotal.com and post a link to the scan report on GitHub (this provides
-      a sha256sum of the file, so it can be verified that the file was scanned). The files should be listed in this order:
-      English orginial first; then UTF-8 alphabetical order {% endcomment %}
-      <ul class="row card-row">
-        <li class="card bitcoin-paper-card">
-          <img src="/img/icons/flag_british.svg?{{site.time | date: '%s'}}" alt="British flag">
-          <b>
-            <a class="language-link" href="/bitcoin.pdf">English original</a>
-          </b>
-        </li>
-  
-        <li class="card bitcoin-paper-card">
-          <img src="/img/icons/flag_spanish.svg?{{site.time | date: '%s'}}" alt="Spanish flag">
-          <a class="language-link" href="/files/bitcoin-paper/bitcoin_es.pdf">Español (España)</a>
-          <div>
-            <span>{% translate translated_by %}</span>
-            <a href="https://github.com/breathingdog">Breathingdog</a>
-          </div>
-        </li>
-        
-        <li class="card bitcoin-paper-card">
-          <img src="/img/icons/flag_spanish.svg?{{site.time | date: '%s'}}" alt="Spanish flag">
-          <a class="language-link" href="/files/bitcoin-paper/bitcoin_es_latam.pdf">Español (Latinoamericano)</a> 
-          <div>
-            <span>{% translate translated_by %}</span>
-            <a href="https://github.com/gubatron">Angel León</a>
-          </div>
-        </li>
-        
-        <li class="card bitcoin-paper-card">
-          <img src="/img/icons/flag_italian.svg?{{site.time | date: '%s'}}" alt="Italian flag">
-          <a class="language-link" href="/files/bitcoin-paper/bitcoin_it.pdf">Italiano</a>
-          <div>
-            <span>{% translate translated_by %}</span>
-            <a href="https://github.com/terzim">Terzim</a>
-          </div>
-        </li>
-        
-        <li class="card bitcoin-paper-card">
-          <img src="/img/icons/flag_russian.svg?{{site.time | date: '%s'}}" alt="Russian flag">
-          <a class="language-link" href="/files/bitcoin-paper/bitcoin_ru.pdf">Русский</a>
-          <div>
-            <span>{% translate translated_by %}</span>
-            <a href="https://github.com/arvicco">Ar Vicco</a>
-          </div>
-        </li>
-        
-        <li class="card bitcoin-paper-card">
-          <img src="/img/icons/flag_swedish.svg?{{site.time | date: '%s'}}" alt="Swedish flag">
-          <a class="language-link" href="/files/bitcoin-paper/bitcoin_se.pdf">Svenska</a> 
-          <div>
-            <span>{% translate translated_by %}</span>
-            <a href="https://github.com/hanspandeya">hanspandeya</a>
-          </div>
-        </li>
-      </ul>
-  
-      <p>{% translate submit_new_translation %}</p>
-  
-  </div>
-</div>
+<p>{% translate description %}
+
+{% comment %}
+NOTE: before adding a new file, follow these steps:
+
+1. Make sure it has been uploaded in ODT form to
+   https://github.com/saivann/bitcoinwhitepaper
+
+2. Ask a site maintainer to generate the PDF format from the ODT format.
+
+3. Scan the PDF using VirusTotal.com and post a link to the scan report
+   on GitHub (this provides a sha256sum of the file, so it can be
+   verified that the file was scanned).
+
+The files should be listed in this order: English orginial first; then
+UTF-8 alphabetical order
+{% endcomment %}
+<ul>
+<li><b><a href="/bitcoin.pdf">English original</a></b></li>
+
+<li><a href="/files/bitcoin-paper/bitcoin_es.pdf">Español (España)</a> {% translate translated_by %} <a href="https://github.com/breathingdog">Breathingdog</a></li>
+
+<li><a href="/files/bitcoin-paper/bitcoin_es_latam.pdf">Español (Latinoamericano)</a> {% translate translated_by %} <a href="https://github.com/gubatron">Angel León</a></li>
+
+<li><a href="/files/bitcoin-paper/bitcoin_it.pdf">Italiano</a> {% translate translated_by %}
+ <a href="https://github.com/terzim">Terzim</a></li>
+
+<li><a href="/files/bitcoin-paper/bitcoin_ru.pdf">Русский</a> {% translate translated_by %} <a href="https://github.com/arvicco">Ar Vicco</a></li>
+
+<li><a href="/files/bitcoin-paper/bitcoin_se.pdf">Svenska</a> {% translate translated_by %} <a href="https://github.com/hanspandeya">hanspandeya</a></li>
+</ul>
+
+<p>{% translate submit_new_translation %}</p>

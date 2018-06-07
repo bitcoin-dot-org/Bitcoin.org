@@ -15,7 +15,7 @@ platform:
         text: "wallettrezor"
         link: "https://trezor.io/"
         source: "https://github.com/trezor/"
-        screenshot: "trezor.png?1528322191"
+        screenshot: "trezor.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
