@@ -5,7 +5,7 @@
 type: posts
 layout: post
 category: blog
-
+show_toc: true
 title: "Vote and Help Choose Bitcoin.org's New Design"
 permalink: /en/posts/vote-on-the-new-site-design.html
 date: 2018-01-28
@@ -13,8 +13,9 @@ author: |
   <a href="https://github.com/wbnns">Will Binns</a>
 ---
 
+<div class="post-content" markdown="1">
 {:.center}
-![Redesigning Bitcoin.org](/img/blog/free/redesigning-homepage.png)
+![Redesigning Bitcoin.org](/img/blog/free/redesigning-homepage.png?{{site.time | date: '%s'}})
 
 As one of the most-visited websites in the Bitcoin ecosystem, Bitcoin.org helps
 millions of people each month, learn more about Bitcoin. One of our goals in
@@ -39,6 +40,10 @@ Please help spread the word and choose your favorite design.
 
 [View the results](https://dcdt.typeform.com/report/rv9C1j/rZcaOMYTVMaEiLi1).
 
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
+
 ## About Bitcoin.org
 
 Bitcoin.org was originally registered and owned by Satoshi Nakamoto and Martti
@@ -52,7 +57,11 @@ There have been over 3,200 commits from 180 contributors from all over the
 world. In addition to this, over 950 translators have helped to make the site
 display natively to visitors by default in their own languages —now 25
 different languages and growing.
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Interested in getting involved?
 
 [Learn how you can participate](https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate).
+</div>
