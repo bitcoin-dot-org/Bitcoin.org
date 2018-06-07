@@ -12,7 +12,7 @@ lang: en
 	<description>This RSS feed allows to follow Bitcoin Core new releases.</description>
 	<image>
 		<title>Bitcoin Core releases</title>
-		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
+		<url>https://bitcoin.org/img/icons/logo_rss.png?1528322191</url>
 		<link>https://bitcoin.org/en/version-history</link>
 	</image>
         {% assign date_sorted_releases = site.releases | sort: 'optional_date', 'last' %}

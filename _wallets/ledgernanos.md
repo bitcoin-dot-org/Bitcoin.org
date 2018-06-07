@@ -4,7 +4,7 @@
 
 id: ledgernanos
 title: "Ledger Nano S"
-titleshort: "Ledger<br>Nano S"
+titleshort: "Ledger Nano S"
 compat: "hardware"
 level: 2
 platform:
@@ -12,10 +12,10 @@ platform:
     name: hardware
     os:
       - name: hardware
-        text: "walletnanos"
+        text: "walletledgernanos"
         link: "https://www.ledgerwallet.com/"
         source: "https://github.com/LedgerHQ/"
-        screenshot: "ledgernanos.png"
+        screenshot: "ledgernanos.png?1528322191"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"

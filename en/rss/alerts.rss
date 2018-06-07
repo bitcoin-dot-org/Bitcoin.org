@@ -12,7 +12,7 @@ lang: en
 	<description>This RSS feed allows to follow events and alerts surrounding the Bitcoin network and software.</description>
 	<image>
 		<title>Bitcoin network status and alerts</title>
-		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
+		<url>https://bitcoin.org/img/icons/logo_rss.png?1528322191</url>
 		<link>https://bitcoin.org/en/alerts</link>
 	</image>
         {% assign date_sorted_alerts = site.alerts | sort: 'date' %}
