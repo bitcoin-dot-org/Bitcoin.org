@@ -375,7 +375,7 @@ zh_TW:
     quantumtxt1: "是的，大部份依賴加密技術的系統一般都會，包括傳統的銀行系統。然而，量子計算器還不存在，而且可能也不會那麼快就存在。如果量子計算會對 Bitcoin 造成巨大的威脅，這個協議可以升級成使用後量子算法的。鑒於這種升級的重要性，可以安全地期待它會被開發人員高度評審并被 Bitcoin 的用戶們接受。"
     help: "幫助"
     morehelp: "我想要瞭解更多。我可以在哪裡得到幫助？"
-    morehelptxt1: "您可以在<a href=\"#resources#\">資源</a> 和<a href=\"#community#\">社群</a> 頁面或<a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki 常見問題</a>中找到更多資訊和幫助。"
+    morehelptxt1: "您可以在<a href=\"#resources#\">資源</a> 和<a href=\"#community#\">社群</a> 頁面或<a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki 常見問題</a>中找到更多資訊和幫助。"
   getting-started:
     title: "開始使用 - Bitcoin"
     pagetitle: "開始使用 Bitcoin"
@@ -492,7 +492,7 @@ zh_TW:
     volunteer: "受訪者"
     volunteernonprofit: "與<a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin 基金會</a> 或本地的 <a href=\"#community##[community.non-profit]\">非牟利機構</a>交流。"
     volunteerpresscenter: "在獨立的<a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>找到更多潛在的媒體聯繫方式。"
-    faqmore: "要瞭解更多關於 Bitcoin 的資訊，請訪問完整的<a href=\"/en/faq\">常見問題</a> 或者<a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>。"
+    faqmore: "要瞭解更多關於 Bitcoin 的資訊，請訪問完整的<a href=\"/en/faq\">常見問題</a> 或者<a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>。"
     materialpicture: "圖片"
     materialpicturemore: "顯示更多圖片……"
   privacy:

@@ -380,7 +380,7 @@ da:
     quantumtxt1: "Ja, det er generelt de fleste systemer, som afhænger af kryptografi, herunder også traditionelle banksystemer. Men kvantecomputere eksisterer ikke endnu, og kommer sandsynligvis ikke til det foreløbig. I tilfælde af, at kvantecomputere bliver en overhængende trussel mod Bitcoin, så kan protokollen givetvis opgraderes til at være sikker imod kvantekryptografi. Taget en sådan udvikling i betragtning, så er det højest forventeligt, at det vil være et stort fokusområde for alle Bitcoin-udviklere og -brugere."
     help: "Hjælp"
     morehelp: "Jeg vil gerne lære mere. Hvor kan jeg få hjælp?"
-    morehelptxt1: "Du kan finde mere information og hjælp på siderne om <a href=\"#resources#\">ressourcer</a> og <a href=\"#community#\">fællesskaber</a> eller på <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki'ens FAQ</a>."
+    morehelptxt1: "Du kan finde mere information og hjælp på siderne om <a href=\"#resources#\">ressourcer</a> og <a href=\"#community#\">fællesskaber</a> eller på <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki'ens FAQ</a>."
   getting-started:
     title: "Kom i gang – Bitcoin"
     pagetitle: "Kom i gang med Bitcoin"
@@ -497,7 +497,7 @@ da:
     volunteer: "Interviewemner"
     volunteernonprofit: "Kommunikér med <a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin Foundation</a> eller lokale <a href=\"#community##[community.non-profit]\">non-profit-organisationer</a>."
     volunteerpresscenter: "Find mere potentielle pressekontakter hos det uafhængige <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>"
-    faqmore: "For at lære mere om Bitcoin kan du besøge den komplette <a href=\"/en/faq\">FAQ</a> eller <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin-wikien</a>."
+    faqmore: "For at lære mere om Bitcoin kan du besøge den komplette <a href=\"/en/faq\">FAQ</a> eller <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin-wikien</a>."
     materialpicture: "Billeder"
     materialpicturemore: "Vis flere billeder …"
   privacy:

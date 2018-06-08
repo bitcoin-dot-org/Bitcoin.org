@@ -379,7 +379,7 @@ pl:
     quantumtxt1: "Tak, podobnie jak dla większości systemów opartych na kryptografii, w tym tradycyjnych systemów bankowych. Jednakże komputery kwantowe jeszcze nie istnieją i przypuszczalnie nie powstaną przez jakiś czas. W wypadku, gdyby komputery kwantowe bezpośrednio zagroziły Bitcoin, protokół mógłby zostać ulepszony w taki sposób, by używał kwantowych algorytmów. Biorąc pod uwagę, jak istotna byłaby taka aktualizacja, można śmiało założyć, że zostałaby pomyślnie przyjęta przez programistów i zaakceptowana przez wszystkich użytkowników Bitcoin."
     help: "Pomoc"
     morehelp: "Chcę dowiedzieć się więcej. Gdzie mogę uzyskać pomoc?"
-    morehelptxt1: "Więcej informacji można znaleźć w sekcji <a href=\"#resources#\">zasoby</a> oraz na stronach <a href=\"#community#\">społeczności</a> lub w <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki FAQ</a>."
+    morehelptxt1: "Więcej informacji można znaleźć w sekcji <a href=\"#resources#\">zasoby</a> oraz na stronach <a href=\"#community#\">społeczności</a> lub w <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a>."
   getting-started:
     title: "Pierwsze kroki - Bitcoin"
     pagetitle: "Pierwsze kroki z Bitcoin"
@@ -496,7 +496,7 @@ pl:
     volunteer: "Rozmówcy"
     volunteernonprofit: "Skontaktuj się z <a href=\"https://bitcoinfoundation.org/contact/\">Fundacją Bitcoin</a> lub lokalnymi <a href=\"#community##[community.non-profit]\">organizacjami non-profit</a>."
     volunteerpresscenter: "Znajdź więcej potencjalnych kontaktów prasowych na niezależnej stronie <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
-    faqmore: "Aby dowiedzieć się więcej o Bitcoin, prosimy odwiedzić kompletne <a href=\"/en/faq\">FAQ</a> lub <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
+    faqmore: "Aby dowiedzieć się więcej o Bitcoin, prosimy odwiedzić kompletne <a href=\"/en/faq\">FAQ</a> lub <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>."
     materialpicture: "Obrazy"
     materialpicturemore: "Więcej obrazów..."
   privacy:

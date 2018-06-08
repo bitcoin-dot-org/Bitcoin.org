@@ -572,7 +572,7 @@ uk:
     quantumtxt1: "Так, більшість систем, що опираються на криптографію, загалом вразливі, включаючи традиційні банківські системи. Проте, <a href=\"https://bitcoinmagazine.com/6021/bitcoin-is-not-quantum-safe-and-how-we-can-fix/\">квантові комп'ютери</a> все ще не існують, і скоріш за все не з'являться у найближчому майбутньому. До того часу, коли квантові обчислення стануть безпосередньою загрозою для біткойн, протокол може бути покращений для використання пост-квантових алгоритмів. Враховуючи важливість подібного покращення, цілком можна очікувати, що воно буде всебічно розглянуте розробниками і прийняте усіма користувачами біткойн."
     help: "Допомога"
     morehelp: "Я бажаю дізнатись більше. Де я можу отримати допомогу?"
-    morehelptxt1: "Ви можете знайти більше інформації та допомогу на цих <a href=\"#resources#\">ресурсах</a> та сторінках <a href=\"#community#\">спільноти</a> чи на <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki FAQ</a>."
+    morehelptxt1: "Ви можете знайти більше інформації та допомогу на цих <a href=\"#resources#\">ресурсах</a> та сторінках <a href=\"#community#\">спільноти</a> чи на <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a>."
   getting-started:
     title: "Початок роботи - Біткойн"
     pagetitle: "Початок роботи з Біткойн"
@@ -696,7 +696,7 @@ uk:
     volunteer: "Респонденти"
     volunteernonprofit: "Поспілкуйтесь із <a href=\"https://bitgive.org\">BitGive</a> чи місцевими <a href=\"#community##[community.non-profit]\">неприбутковими організаціями</a>."
     volunteerpresscenter: "Знайдіть більше контактів для преси у незалежному прес-центрі Біткойн на <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
-    faqmore: "Щоб дізнатися більше про Біткойн, будь ласка, завітайте на сторінку <a href=\"/en/faq\">ЧаПи</a> або відвідайте <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
+    faqmore: "Щоб дізнатися більше про Біткойн, будь ласка, завітайте на сторінку <a href=\"/en/faq\">ЧаПи</a> або відвідайте <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>."
   privacy:
     title: "Конфіденційність - Біткойн"
     pagetitle: "Конфіденційність"

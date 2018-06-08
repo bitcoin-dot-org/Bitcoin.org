@@ -375,7 +375,7 @@ tr:
     quantumtxt1: "Evet, çoğu sistem, geleneksel banka sistemleri dahil genelde kriptografiye dayanır. Yine de kuantum bilgisayarlar şu anda yoklar ve bir süre daha olacak gibi görünmüyorlar. Kuantum bilgisayarların çıkışının yaklaşacağı bir durumda protokol post-kuantum algoritmalarla çalışacak şekilde güncellenebilir. Bu güncellemenin gereksinimi geliştiriciler tarafından yüksek oranda onaylanırsa ve tüm kullanıcılar bu değişikliği isterse elbette güncellenecektir."
     help: "Yardım"
     morehelp: "Daha fazla öğrenmek istiyorum. Nasıl yardım alabilirim?"
-    morehelptxt1: "<a href=\"#resources#\">Kaynaklar</a> ve <a href=\"#community#\">topluluklar</a> sayfalarında daha fazla bilgiye ulaşabilirsiniz ya da<a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki SSS</a>'yi ziyaret edebilirsiniz."
+    morehelptxt1: "<a href=\"#resources#\">Kaynaklar</a> ve <a href=\"#community#\">topluluklar</a> sayfalarında daha fazla bilgiye ulaşabilirsiniz ya da<a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki SSS</a>'yi ziyaret edebilirsiniz."
   getting-started:
     title: "Başlarken - Bitcoin"
     pagetitle: "Bitcoin'e başlarken"
@@ -492,7 +492,7 @@ tr:
     volunteer: "Ropörtaj için kişiler"
     volunteernonprofit: "<a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin Kuruluşu</a> ile yada yerel <a href=\"#community##[community.non-profit]\"> kar amacı gütmeyen kuruluşlar</a> ile iletişime geçin."
     volunteerpresscenter: "Bağımsız <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a> üzerinde daha fazla potansiyel basın kontaklarına ulaşın."
-    faqmore: "Bitcoin hakkında daha fazla bilgi için lütfen <a href=\"/en/faq\">SSS</a> bölümünü yada  <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a> bölümünü ziyaret edin."
+    faqmore: "Bitcoin hakkında daha fazla bilgi için lütfen <a href=\"/en/faq\">SSS</a> bölümünü yada  <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a> bölümünü ziyaret edin."
     materialpicture: "Resimler"
     materialpicturemore: "Daha fazla resim göster..."
   privacy:

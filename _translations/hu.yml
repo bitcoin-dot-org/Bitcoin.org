@@ -375,7 +375,7 @@ hu:
     quantumtxt1: "Igen; a legtöbb, kriptográfián nyugvó rendszer általában igen, beleértve a hagyományos banki rendszereket is. Ugyanakkor kvantumszámítógépek jelenleg nem léteznek, és valószínűleg jó ideig nem is fognak. Amennyiben a kvantum-számítástechnika közelgő veszélyt jelent a Bitcoinra, a protokoll frissíthető posztkvantum algoritmusok használatára. Figyelembe véve e fejlesztés fontosságát, könnyen kijelenthető, hogy szoros fejlesztői ellenőrzés mellett valósulna meg, és az összes Bitcoin-felhasználó használatba venné."
     help: "Súgó"
     morehelp: "Szeretnék többet megtudni. Hol kaphatok segítséget?"
-    morehelptxt1: "További információhoz és segítséghez juthat az <a href=\"#resources#\">Információs anyagok</a> és a <a href=\"#community#\">Közösség</a> oldalakon vagy a <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki GYIK</a> (angol nyelven) segítségével."
+    morehelptxt1: "További információhoz és segítséghez juthat az <a href=\"#resources#\">Információs anyagok</a> és a <a href=\"#community#\">Közösség</a> oldalakon vagy a <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki GYIK</a> (angol nyelven) segítségével."
   getting-started:
     title: "Vágjon bele - Bitcoin"
     pagetitle: "Vágjon bele a Bitcoinba"
@@ -492,7 +492,7 @@ hu:
     volunteer: "Interjúalanyok"
     volunteernonprofit: "Lépjen kapcsolatba a <a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin Alapítvánnyal</a> vagy helyi, <a href=\"#community##[community.non-profit]\">nonprofit szervezetekkel</a>."
     volunteerpresscenter: "További potenciális sajtókapcsolatokat a független <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a> weboldalon találhat."
-    faqmore: "A Bitcoinnal kapcsolatos további információkhoz látogasson el a teljes <a href=\"/en/faq\">GYIK-et</a> tartalmazó oldalra vagy a <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wikire</a>."
+    faqmore: "A Bitcoinnal kapcsolatos további információkhoz látogasson el a teljes <a href=\"/en/faq\">GYIK-et</a> tartalmazó oldalra vagy a <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wikire</a>."
     materialpicture: "Képek"
     materialpicturemore: "További képek..."
   privacy:

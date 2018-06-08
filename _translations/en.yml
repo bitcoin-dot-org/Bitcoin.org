@@ -621,7 +621,7 @@ en:
     quantumtxt1: "Yes, most systems relying on cryptography in general are, including traditional banking systems. However, quantum computers don't yet exist and probably won't for a while. In the event that <a href=\"https://bitcoinmagazine.com/6021/bitcoin-is-not-quantum-safe-and-how-we-can-fix/\">quantum computing</a> could be an imminent threat to Bitcoin, the protocol could be upgraded to use post-quantum algorithms. Given the importance that this update would have, it can be safely expected that it would be highly reviewed by developers and adopted by all Bitcoin users."
     help: "Help"
     morehelp: "I'd like to learn more. Where can I get help?"
-    morehelptxt1: "You can find more information and help on the <a href=\"#resources#\">resources</a> and <a href=\"#community#\">community</a> pages or on the <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki FAQ</a>."
+    morehelptxt1: "You can find more information and help on the <a href=\"#resources#\">resources</a> and <a href=\"#community#\">community</a> pages or on the <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a>."
   getting-started:
     title: "Getting started - Bitcoin"
     pagetitle: "Getting started with Bitcoin"
@@ -747,7 +747,7 @@ en:
     summary: "Find interviewees, answers and high quality press materials."
     volunteer: "Interviewees"
     volunteernonprofit: "Communicate with <a href=\"https://www.bitgivefoundation.org\">BitGive</a>, the <a href=\"https://bitcoincore.org/en/contact\">Bitcoin Core Project</a> or local <a href=\"#community##[community.non-profit]\">non-profit organizations</a>."
-    faqmore: "To learn more about Bitcoin, please visit the complete <a href=\"/en/faq\">FAQ</a> or the <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
+    faqmore: "To learn more about Bitcoin, please visit the complete <a href=\"/en/faq\">FAQ</a> or the <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>."
   privacy:
     title: "Privacy Policy - Bitcoin"
     pagetitle: "Privacy Policy"
