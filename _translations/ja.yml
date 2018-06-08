@@ -375,7 +375,7 @@ ja:
     quantumtxt1: "はい。一般的に暗号学に頼るシステムには、従来の銀行システムなどがあります。しかし、量子コンピューターは、現在もまだ存在しておらず、その実現にはしばらく時間がかかることでしょう。量子コンピューターがビットコインの脅威となる時には、そのプロトコルは量子コンピューター後のアルゴリズムを使ってアップグレードすることができます。このアップグレードの重要さを考えると、それが開発者によって十分に見直され、すべてのビットコイン・ユーザーに採用されることが期待されるでしょう。"
     help: "ヘルプ"
     morehelp: "もっと知りたいのですが、どこで教えてもらえますか？"
-    morehelptxt1: "<a href=\"#resources#\">リソース</a>や <a href=\"#community#\">コミュニティ</a> ページもしくは <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki FAQ</a>で詳細やヘルプを得ることができます。"
+    morehelptxt1: "<a href=\"#resources#\">リソース</a>や <a href=\"#community#\">コミュニティ</a> ページもしくは <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a>で詳細やヘルプを得ることができます。"
   getting-started:
     title: "開始する - ビットコイン"
     pagetitle: "ビットコインを始める"
@@ -492,7 +492,7 @@ ja:
     volunteer: "インタビュー"
     volunteernonprofit: "<a href=\"https://bitcoinfoundation.org/contact/\">ビットコイン財団</a> や地元の<a href=\"#community##[community.non-profit]\">非営利団体</a>とコミュニケーションをとりましょう。"
     volunteerpresscenter: "<a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>で潜在的なプレスの連絡先をもっと見つけましょう。"
-    faqmore: "ビットコインについてより詳しく学びたい方は、<a href=\"/en/faq\">FAQ</a>または、<a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>をご覧下さい。"
+    faqmore: "ビットコインについてより詳しく学びたい方は、<a href=\"/en/faq\">FAQ</a>または、<a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>をご覧下さい。"
     materialpicture: "写真"
     materialpicturemore: "写真をもっと見る"
   privacy:

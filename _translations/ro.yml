@@ -375,7 +375,7 @@ ro:
     quantumtxt1: "Da, majoritatea sistemelor ce se bazează pe criptografie în general sunt vulnerabile, incluzând sistemele bancare tradiţionale. Dar, calculatoarele cuantice nu există încă şi probabil nici nu vor exista pentru o perioadă bună de timp. În cazul în care calculatoarele cuantice ar deveni o ameninţare iminentă pentru Bitcoin, protoculul poate fi actualizat pentru a folosi algoritmi post-cuantici. Dată importanţa pe care această schimbare ar avea-o, poate fi asumat cu siguranţă că va fi revăzută aprofundat de către programatori şi adoptată de toţi utilizatorii Bitcoin."
     help: "Ajutor"
     morehelp: "Mi-ar plăcea să aflu mai multe. Unde pot să primesc ajutor?"
-    morehelptxt1: "Poţi găsi mai multe informaţii şi ajutor pe paginile de <a href=\"#resources#\">resurse</a> şi <a href=\"#community#\">comunitate</a> de pe <a href=\"https://en.bitcoin.it/wiki/FAQ\">FAQ-ul din Wiki</a>."
+    morehelptxt1: "Poţi găsi mai multe informaţii şi ajutor pe paginile de <a href=\"#resources#\">resurse</a> şi <a href=\"#community#\">comunitate</a> de pe <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">FAQ-ul din Wiki</a>."
   getting-started:
     title: "Noțiuni de bază - Bitcoin"
     pagetitle: "Noțiuni de bază despre Bitcoin"
@@ -492,7 +492,7 @@ ro:
     volunteer: "Interviuri"
     volunteernonprofit: "Comunică cu <a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin Foundation</a> sau <a href=\"#community##[community.non-profit]\">organizaţii locale non-profit</a>."
     volunteerpresscenter: "Găseşte mai multe potenţiale contacte de presă la independentul <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
-    faqmore: "Pentru a afla mai multe despre Bitcoin, te rugăm să vizitezi <a href=\"/en/faq\">FAQ-u</a>l complet sau <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
+    faqmore: "Pentru a afla mai multe despre Bitcoin, te rugăm să vizitezi <a href=\"/en/faq\">FAQ-u</a>l complet sau <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>."
     materialpicture: "Imagini"
     materialpicturemore: "Arată mai multe imagini..."
   privacy:

@@ -387,7 +387,7 @@ sv:
     quantumtxt1: "Ja, de flesta system som förlitar sig på kryptografi är generellt sårbara, inklusive traditionella banksystem. Kvantdatorer existerar dock inte än och kommer antagligen inte göra det på ett tag heller. Ifall kvantdatorer utvecklas skulle det utgöra ett direkt hot mot Bitcoin, protokollet kan uppgraderas till att använda algoritmer som är säkra mot kvantdatorer. På grund av uppdaterings vikt kan det med säkerhet antas att den skulle granskas av utvecklare och tas i bruk av alla Bitcoin-användare."
     help: "Hjälp"
     morehelp: "Jag skulle vilja veta mer. Var kan jag få hjälp?"
-    morehelptxt1: "Du kan hitta mer information och tjälp på <a href=\"#resources#\">resurser</a> och <a href=\"#community#\">community</a> sidor eller på <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki FAQ</a>."
+    morehelptxt1: "Du kan hitta mer information och tjälp på <a href=\"#resources#\">resurser</a> och <a href=\"#community#\">community</a> sidor eller på <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a>."
   getting-started:
     title: "Kom igång - Bitcoin"
     pagetitle: "Kom igång med Bitcoin"
@@ -504,7 +504,7 @@ sv:
     volunteer: "Intervju"
     volunteernonprofit: "Prata med <a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin Foundation</a> eller lokala <a href=\"#community##[community.non-profit]\">ideella organisation</a>."
     volunteerpresscenter: "Hitta fler potentiella presskontakter på oberoende <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
-    faqmore: "För att lära dig mer om Bitcoin, besök den kompletta <a href=\"/en/faq\">FAQ</a> eller <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
+    faqmore: "För att lära dig mer om Bitcoin, besök den kompletta <a href=\"/en/faq\">FAQ</a> eller <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>."
     materialpicture: "Bilder"
     materialpicturemore: "Visa fler bilder..."
   privacy:

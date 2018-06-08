@@ -375,7 +375,7 @@ zh_CN:
     quantumtxt1: "是的，包括传统银行系统在内的大部分依赖于密码学的系统都是这样。但是量子计算机还不存在，也许短期内也不会出现。当量子计算确实即将成为比特币威胁的时候，可以利用后量子算法来更新比特币协议。基于这一更新的重要性，有理由相信开发人员会将其反复审核，最终为所有比特币用户接受。"
     help: "帮助"
     morehelp: "我想了解更多。我在哪里可以得到帮助？"
-    morehelptxt1: "你可以在<a href=\"#resources#\">资源</a>和 <a href=\"#community#\">社区</a>页，或<a href=\"https://en.bitcoin.it/wiki/FAQ\">维基常见问题</a>中获得更多的信息和帮助。"
+    morehelptxt1: "你可以在<a href=\"#resources#\">资源</a>和 <a href=\"#community#\">社区</a>页，或<a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">维基常见问题</a>中获得更多的信息和帮助。"
   getting-started:
     title: "入门指南 - 比特币"
     pagetitle: "比特币入门指南"
@@ -492,7 +492,7 @@ zh_CN:
     volunteer: "受访者"
     volunteernonprofit: "与 <a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin 基金会</a> 或当地<a href=\"#community##[community.non-profit]\">非盈利机构</a>交流。"
     volunteerpresscenter: "通过独立的 <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>找到更多潜在新闻媒体联系人。"
-    faqmore: "欲了解更多Bitcoin 详情，请浏览完整的 <a href=\"/en/faq\">常见问题</a>或 <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin 维基</a>。"
+    faqmore: "欲了解更多Bitcoin 详情，请浏览完整的 <a href=\"/en/faq\">常见问题</a>或 <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin 维基</a>。"
     materialpicture: "图片"
     materialpicturemore: "显示更多图片……"
   privacy:

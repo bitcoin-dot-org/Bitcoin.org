@@ -375,7 +375,7 @@ es:
     quantumtxt1: "Si, la mayoría de los sistemas basados en criptografía lo son, incluyendo los sistemas tradicionales de banca. Sin embargo, la computación cuántica aun no existe y probablemente por mucho tiempo. En el caso de que la computación cuántica pueda ser una amenaza inminente para Bitcoin, el protocolo podría ser actualizado para usar algoritmos post-cuánticos. Dada la importancia que esta actualización tendría, se puede asegurar que será analizado por los desarrolladores y adoptado por todos los usuarios de Bitcoin."
     help: "Ayuda"
     morehelp: "Me gustaría aprender más. ¿Dónde puedo encontrar ayuda?"
-    morehelptxt1: "Puedes encontrar más información y ayuda en las páginas de  <a href=\"#resources#\">recursos</a> y <a href=\"#community#\">comunidad</a> o en el<a href=\"https://en.bitcoin.it/wiki/FAQ\"> FAQ de la Wiki</a>."
+    morehelptxt1: "Puedes encontrar más información y ayuda en las páginas de  <a href=\"#resources#\">recursos</a> y <a href=\"#community#\">comunidad</a> o en el<a href=\"https://en.bitcoin.it/wiki/Help:FAQ\"> FAQ de la Wiki</a>."
   getting-started:
     title: "Cómo empezar - Bitcoin"
     pagetitle: "Cómo empezar a usar Bitcoin"
@@ -472,7 +472,7 @@ es:
     volunteer: "Entrevistados"
     volunteernonprofit: "Comuníquese con <a href=\"https://bitcoinfoundation.org/contact/\"> la Fundación Bitcoin</a> o con <a href=\"#community##[community.non-profit]\"> organizaciones locales sin fines de lucro</a>."
     volunteerpresscenter: "Encuentre más contacto potencial para la prensa en la independiente <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
-    faqmore: "Para aprender más acerca de Bitcoin, por favor visite la sección completa de <a href=\"/en/faq\">FAQ</a> o el <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
+    faqmore: "Para aprender más acerca de Bitcoin, por favor visite la sección completa de <a href=\"/en/faq\">FAQ</a> o el <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>."
     materialpicture: "Imágenes"
     materialpicturemore: "Mostrar más imágenes..."
   protect-your-privacy:

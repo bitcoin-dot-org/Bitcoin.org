@@ -375,7 +375,7 @@ hi:
     quantumtxt1: "हाँ, सब प्रणालियाँ जो क्रिप्टोग्राफी पर निर्भर करते हैं वे सामान्य रूप से परंपरागत बैंकिंग सिस्टम शामिल करते हैं। हालांकि, क्वांटम कंप्यूटर अभी तक अस्तित्व नहीं है और शायद थोड़ी और समय तक नहीं होगा। यदि कभी क्वांटम कंप्यूटिंग का खतरा Bitcoin को हो तो प्रोटोकॉल पोस्ट-क्वांटम एल्गोरिदम का उपयोग कर के उन्नत किया जा सकता है।  इस अद्यतन  के महत्व को देखते हुए यह आसानी से उम्मीद कर सकते हैं कि इनकी अत्यधिक डेवलपर्स द्वारा समीक्षा और सब Bitcoin उपयोगकर्ताओं द्वारा अपनाए जाएंगे।"
     help: "मदद"
     morehelp: "मैं और अधिक जानकारी चाहत हुं। मुझे मदद कहां मिल सकती है?"
-    morehelptxt1: "आप अधिक जानकारी और सहायता प्राप्त कर सकते हैं यहां <a href=\"#resources#\">संसाधन</a> और <a href=\"#community#\">समुदाय</a> पन्ने या <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki FAQ</a> पर।"
+    morehelptxt1: "आप अधिक जानकारी और सहायता प्राप्त कर सकते हैं यहां <a href=\"#resources#\">संसाधन</a> और <a href=\"#community#\">समुदाय</a> पन्ने या <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a> पर।"
   getting-started:
     title: "प्रारंभ करें - Bitcoin"
     pagetitle: "Bitcoin के साथ शुरू हो जाइए"
@@ -492,7 +492,7 @@ hi:
     volunteer: "जिन का इंटरव्यू किया गया"
     volunteernonprofit: "संवाद करें <a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin फाउंडेशन</a> या स्थानीय <a href=\"#community##[community.non-profit]\">गैर लाभ संगठनों</a> के साथ।"
     volunteerpresscenter: "स्वतंत्र  <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a> पर अधिक संभावित प्रेस संपर्कों का पता लगाएं"
-    faqmore: "Bitcoin के बारे में अधिक जानने के लिए, कृपया पूर्ण  विजिट करें <a href=\"/en/faq\">FAQ</a> या <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
+    faqmore: "Bitcoin के बारे में अधिक जानने के लिए, कृपया पूर्ण  विजिट करें <a href=\"/en/faq\">FAQ</a> या <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>."
     materialpicture: "तस्वीरें"
     materialpicturemore: "अधिक तस्वीर दिखाएं ..."
   privacy:

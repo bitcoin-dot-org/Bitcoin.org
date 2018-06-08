@@ -375,7 +375,7 @@ el:
     quantumtxt1: "Ναι, τα περισσότερα από τα συστήματα που βασίζονται στην κρυπτογραφία γενικά είναι, συμπεριλαμβανομένων και των παραδοσιακών τραπεζικών συστημάτων. Ωστόσο, οι κβαντικοί υπολογιστές δεν υπάρχουν ακόμα και πιθανώς να μην υπάρξουν για αρκετό καιρό ακόμα. Στην περίπτωση που η κβαντική πληροφορική θα μπορούσε να είναι επικείμενη απειλή για το Bitcoin, το πρωτόκολλο θα μπορούσε να αναβαθμιστεί για να χρησιμοποιεί μετα-κβαντικούς αλγόριθμους. Δεδομένης της σπουδαιότητας που θα είχε αυτή η ενημέρωση, μπορεί να αναμένεται με ασφάλεια ότι θα ελέγχονταν σε μεγάλο βαθμό από τους προγραμματιστές και θα υιοθετούνταν από όλους τους χρήστες του Bitcoin."
     help: "Βοήθεια"
     morehelp: "Θα ήθελα να μάθω περισσότερα. Πού μπορώ να βρω βοήθεια;"
-    morehelptxt1: "Μπορείτε να βρείτε περισσότερες πληροφορίες και βοήθεια στις <a href=\"#resources#\">πόροι</a> and <a href=\"#community#\">κοινότητα</a> σελίδες ή στο <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki FAQ</a>."
+    morehelptxt1: "Μπορείτε να βρείτε περισσότερες πληροφορίες και βοήθεια στις <a href=\"#resources#\">πόροι</a> and <a href=\"#community#\">κοινότητα</a> σελίδες ή στο <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a>."
   getting-started:
     title: "Ξεκινώντας - Bitcoin"
     pagetitle: "Ξεκινώντας με το Bitcoin"
@@ -492,7 +492,7 @@ el:
     volunteer: "Ερωτηθέντες"
     volunteernonprofit: "Επικοινωνήστε με το <a href=\"https://bitcoinfoundation.org/contact/\">Ίδρυμα Bitcoin</a> ή τοπικούς <a href=\"#community##[community.non-profit]\">μη κερδοσκοπικούς οργανισμούς</a>."
     volunteerpresscenter: "Βρείτε περισσότερες δυνατότητες επαφών με τον τύπο στο ανεξάρτητο <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
-    faqmore: "Για να μάθετε περισσότερα για το Bitcoin, παρακαλούμε επισκεφθείτε το ολοκληρωμένο  <a href=\"/en/faq\">Συχνές Ερωτήσεις (FAQ)</a> ή το <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
+    faqmore: "Για να μάθετε περισσότερα για το Bitcoin, παρακαλούμε επισκεφθείτε το ολοκληρωμένο  <a href=\"/en/faq\">Συχνές Ερωτήσεις (FAQ)</a> ή το <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>."
     materialpicture: "Εικόνες"
     materialpicturemore: "Δείξτε περισσότερες εικόνες..."
   privacy:

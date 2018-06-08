@@ -368,7 +368,7 @@ sl:
     quantumtxt1: "Da, kvantno računalništvo lahko škoduje večini sistemov, ki uporabljajo kriptografijo, vključno z vsemi klasičnimi bančnimi sistemi. Vendar pa kvantni računalniki še ne obstajajo in najbrž še nekaj časa ne bodo. V primeru, da se pojavi skorajšnja grožnja bitcoinu s strani kvantnega računalništva, je mogoče protokol bitcoin spremeniti tako, da bo uporabljal kvantnemu računalništvu primerne algoritme. Glede na visok pomen takšnega popravka, lahko pričakujemo, da bi ga razvijalci skrajno temeljito premislili in da bi ga vsi uporabniki bitcoina sprejeli."
     help: "Pomoč"
     morehelp: "Rad bi izvedel več. Kam naj se obrnem?"
-    morehelptxt1: "Več informacij in pomoč najdete na straneh <a href=\"#resources#\">Viri</a> in <a href=\"#community#\">Skupnost</a> ter med <a href=\"https://en.bitcoin.it/wiki/FAQ\">pogostimi vprašanji</a> na wikiju."
+    morehelptxt1: "Več informacij in pomoč najdete na straneh <a href=\"#resources#\">Viri</a> in <a href=\"#community#\">Skupnost</a> ter med <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">pogostimi vprašanji</a> na wikiju."
   getting-started:
     title: "Prvi koraki - bitcoin"
     pagetitle: "Prvi koraki z bitcoinom"
@@ -465,7 +465,7 @@ sl:
     volunteer: "Intervjuvanci"
     volunteernonprofit: "Stopite v stik s <a href=\"https://bitcoinfoundation.org/contact/\">Fundacijo Bitcoin</a> ali lokalnimi <a href=\"#community##[community.non-profit]\">neprofitnimi organizacijami</a>."
     volunteerpresscenter: "Še več stikov za medije najdete na neodvisnem spletišču <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
-    faqmore: "Za več informacij o bitcoinu si oglejte <a href=\"/en/faq\">VinO</a> ali <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki o bitcoinu</a>."
+    faqmore: "Za več informacij o bitcoinu si oglejte <a href=\"/en/faq\">VinO</a> ali <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki o bitcoinu</a>."
     materialpicture: "Slikovni material"
     materialpicturemore: "Prikaži več slik..."
   protect-your-privacy:

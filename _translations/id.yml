@@ -375,7 +375,7 @@ id:
     quantumtxt1: "Ya, kebanyakan dari sistem yang berdasar pada kriptografi umumnya memang rentan terhadap komputerisasi kuantum, termasuk sistem bank tradisional. Meski demikian, komputer kuantum belum ada dan setidaknya belum akan ada untuk sementara ini. Pada saat komputerisasi quantum bisa menjadi ancaman serius bagi Bitcoin, protokol sudah bisa ditingkatkan sampai tahap algoritma post-kuantum. Mengingat pentingnya pembaruan ini, dapat diharapkan bahwa hal ini akan menjadi tinjauan penting bagi pengembang dan diadopsi oleh semua pengguna Bitcoin."
     help: "Bantuan"
     morehelp: "Saya ingin mempelajari lebih lanjut. Di mana saya bisa mendapatkan bantuan?"
-    morehelptxt1: "Anda dapat menemukan lebih banyak informasi dan bantuan pada laman <a href=\"#resources#\">sumber daya</a> dan <a href=\"#community#\">komunitas</a> atau pada laman <a href=\"https://en.bitcoin.it/wiki/FAQ\">FAQ Wiki</a>."
+    morehelptxt1: "Anda dapat menemukan lebih banyak informasi dan bantuan pada laman <a href=\"#resources#\">sumber daya</a> dan <a href=\"#community#\">komunitas</a> atau pada laman <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">FAQ Wiki</a>."
   getting-started:
     title: "Memulai - Bitcoin"
     pagetitle: "Memulai dengan Bitcoin"
@@ -492,7 +492,7 @@ id:
     volunteer: "Orang-orang yang diwawancara"
     volunteernonprofit: "Berkomunikasi dengan <a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin Foundation</a> atau <a href=\"#community##[community.non-profit]\">organisasi nirlaba</a> lokal."
     volunteerpresscenter: "Temukan kontak-kontak pers potensial di <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a> yang independen."
-    faqmore: "Untuk mengetahui lebih lanjut tentang Bitcoin, silakan kunjungi laman lengkap <a href=\"/en/faq\">FAQ</a> atau <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
+    faqmore: "Untuk mengetahui lebih lanjut tentang Bitcoin, silakan kunjungi laman lengkap <a href=\"/en/faq\">FAQ</a> atau <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>."
     materialpicture: "Gambar"
     materialpicturemore: "Lihat lebih banyak gambar..."
   privacy:

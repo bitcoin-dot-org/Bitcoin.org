@@ -372,7 +372,7 @@ bg:
     quantumtxt1: "Да, повечето системи, разчитащи на криптографията като цяло са, включително и традиционните банкови системи. Въпреки това, квантовите компютри все още не съществуват и най-вероятно няма да се появят скоро. В случай, че квантовите изчисления представляват непосредствена заплаха за Биткойн, то протоколът може да бъде обновен, за да използва квантови алгоритми. Предвид значението, което това обновяване ще има, то може да се очаква, че ще бъде добре развито от разработчиците и прието от всички Биткойн потребители."
     help: "Помощ"
     morehelp: "Искам да науча повече. Къде мога да намеря още информация?"
-    morehelptxt1: "Още информация може да бъде намерена на страниците <a href=\"#resources#\">ресурси</a> и <a href=\"#community#\">общност</a> или на <a href=\"https://en.bitcoin.it/wiki/FAQ\">ЧЗВ wiki</a>."
+    morehelptxt1: "Още информация може да бъде намерена на страниците <a href=\"#resources#\">ресурси</a> и <a href=\"#community#\">общност</a> или на <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">ЧЗВ wiki</a>."
   getting-started:
     title: "Първи стъпки - Биткойн"
     pagetitle: "Първи стъпки в Биткойн"
@@ -466,7 +466,7 @@ bg:
     volunteer: "Интервюирани лица"
     volunteernonprofit: "Свържете се с <a href=\"https://bitcoinfoundation.org/contact/\">Биткойн фондацията</a> или местни <a href=\"#community##[community.non-profit]\">неправителствени организации</a>."
     volunteerpresscenter: "Намерете повече потенциални контакти в независимия <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
-    faqmore: "За да научите повече за Биткойн, моля посетете <a href=\"/en/faq\">ЧЗВ</a> или <a href=\"https://en.bitcoin.it/wiki/FAQ\">Биткойн уики</a>."
+    faqmore: "За да научите повече за Биткойн, моля посетете <a href=\"/en/faq\">ЧЗВ</a> или <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Биткойн уики</a>."
     materialpicture: "Снимки"
     materialpicturemore: "Покажи още снимки..."
   protect-your-privacy:

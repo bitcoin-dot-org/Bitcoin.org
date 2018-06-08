@@ -380,7 +380,7 @@ it:
     quantumtxt1: "Si, la maggior parte dei sistemi si affidano alla crittografia, inclusi i sistemi bancari. Tuttavia, i computer quantici non esistono ancora e non esisteranno per un po'. Nell'evenienza che le computazioni quantiche costituiscano una minaccia immediata per Bitcoin, il protocollo sarà aggiornato per l'uso di algoritmi post-quantici. Data l'importanza che avrà questo aggiornamento, ci si può ragionevolmente aspettare che sarà altamente revisionato dagli sviluppatori ed adottato da tutti gli utenti Bitcoin"
     help: "Aiuto"
     morehelp: "Vorrei saperne di più. Dove posso ottenere aiuto?"
-    morehelptxt1: "Puoi trovare maggiori informazioni e aiuto sulle <a href=\"#resources#\">risorse</a> e sulle pagine della<a href=\"#community#\">comunità</a> o sul <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki FAQ</a>."
+    morehelptxt1: "Puoi trovare maggiori informazioni e aiuto sulle <a href=\"#resources#\">risorse</a> e sulle pagine della<a href=\"#community#\">comunità</a> o sul <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a>."
   getting-started:
     title: "Come iniziare - Bitcoin"
     pagetitle: "Come iniziare con Bitcoin"
@@ -497,7 +497,7 @@ it:
     volunteer: "Interviste"
     volunteernonprofit: "Comunica con la <a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin Foundation</a> o con <a href=\"#community##[community.non-profit]\">organizzazioni no-profit</a>."
     volunteerpresscenter: "Trova più contatti stampa nel sito indipendente <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
-    faqmore: "Per conoscere meglio Bitcoin potete visitare la <a href=\"/en/faq\">FAQ</a> completa o <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
+    faqmore: "Per conoscere meglio Bitcoin potete visitare la <a href=\"/en/faq\">FAQ</a> completa o <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>."
     materialpicture: "Immagini"
     materialpicturemore: "Mostra più immagini..."
   privacy:

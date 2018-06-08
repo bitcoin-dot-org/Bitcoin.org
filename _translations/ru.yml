@@ -498,7 +498,7 @@ ru:
     quantumtxt1: "Да, большинство систем опирающихся на криптографию в общем уязвимы, включая традиционные банковские системы. Однако, квантовые компьютеры все еще не существуют, и скорее всего не появятся в ближайшее время. К тому времени, когда квантовые компьютеры станут представлять непосредственную угрозу для Биткойна, протокол может быть улучшен для использования пост-квантовых алгоритмов. Учитывая важность подобного улучшения, вполне можно ожидать, что оно будет всесторонне рассмотрено разработчиками и принято всеми пользователями Биткойна."
     help: "Помощь"
     morehelp: "Я хочу узнать больше. Где я могу получить помощь?"
-    morehelptxt1: "Вы можете найти больше информации и помощь на этих <a href=\"#resources#\">ресурсах</a> и страницах <a href=\"#community#\">сообществ</a> или на <a href=\"https://en.bitcoin.it/wiki/FAQ\">Wiki FAQ</a>."
+    morehelptxt1: "Вы можете найти больше информации и помощь на этих <a href=\"#resources#\">ресурсах</a> и страницах <a href=\"#community#\">сообществ</a> или на <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a>."
   getting-started:
     title: "Начать - Биткойн"
     pagetitle: "Новичку о Биткойне"
@@ -622,7 +622,7 @@ ru:
     volunteer: "Пресс-контакты"
     volunteernonprofit: "Свяжитесь с <a href=\"https://bitgive.org\">BitGive</a> или местными <a href=\"#community##[community.non-profit]\">некоммерческими организациями</a>."
     volunteerpresscenter: "Больше контактов для прессы на сайте <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
-    faqmore: "Еще больше информации о Биткойне в подробном <a href=\"/en/faq\">FAQ</a> или <a href=\"https://en.bitcoin.it/wiki/FAQ\">Bitcoin Wiki</a>."
+    faqmore: "Еще больше информации о Биткойне в подробном <a href=\"/en/faq\">FAQ</a> или <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>."
   privacy:
     title: "Конфиденциальность - Bitcoin"
     pagetitle: "Конфиденциальность"

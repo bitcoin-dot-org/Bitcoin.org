@@ -375,7 +375,7 @@ ko:
     quantumtxt1: "그렇습니다. 전통적인 은행시스템과 같은 대부분의 암호 작성술에 의존하는 시스템들이 그렇습니다. 그러나 아직은 양자 컴퓨터가 존재하지 않으며, 이는 한동안 그러할 것입니다. 양자 컴퓨터가 비트코인에 임박한 위혐이 되었을 경우에는 프로토콜이 양자 알고리즘을 입양한 업그레이드를 하면 될 것입니다. 이 업데이트가 가질 중요성을 고려했을 때, 이는 아마 많은 개발자들에 의해 단단히 검토될 것이고 후에 비트코인 사용자들에 의해 받아들여질 것입니다."
     help: "도움말"
     morehelp: "저는 더 배우고 싶어요. 어디에서 도움을 얻을 수 있죠?"
-    morehelptxt1: "<a href=\"#resources#\">리소스</a>, <a href=\"#community#\">커뮤니티</a> 페이지 또는 <a href=\"https://en.bitcoin.it/wiki/FAQ\">위키 질문과답변</a>에서 더 많은 정보와 도움을 얻을 수 있습니다."
+    morehelptxt1: "<a href=\"#resources#\">리소스</a>, <a href=\"#community#\">커뮤니티</a> 페이지 또는 <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">위키 질문과답변</a>에서 더 많은 정보와 도움을 얻을 수 있습니다."
   getting-started:
     title: "시작하기 - Bitcoin"
     pagetitle: "비트코인 시작하기"
@@ -492,7 +492,7 @@ ko:
     volunteer: "면접대상자"
     volunteernonprofit: " <a href=\"https://bitcoinfoundation.org/contact/\">비트코인 신설</a> 또는 지역<a href=\"#community##[community.non-profit]\">비영리 기관</a>과 의사소통하세요."
     volunteerpresscenter: "독립적인<a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>에서 더 많은 잠재적인 언론 연락처를 찾으세요"
-    faqmore: "Bitcoin에 대해 더 많은 것을 배우시려면, <a href=\"/en/faq\">질문과답변</a> 또는 <a href=\"https://en.bitcoin.it/wiki/FAQ\">비트코인 위키</a>를 방문해주세요."
+    faqmore: "Bitcoin에 대해 더 많은 것을 배우시려면, <a href=\"/en/faq\">질문과답변</a> 또는 <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">비트코인 위키</a>를 방문해주세요."
     materialpicture: "사진"
     materialpicturemore: "더 많은 사진 보기..."
   privacy:
