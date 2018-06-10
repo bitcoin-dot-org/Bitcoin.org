@@ -9,8 +9,9 @@ ranksep=-0.1;
 overlap = true;
 nodesep = 0.1;
 
-node [ shape = box, penwidth = 1.75 ];
-edge [ penwidth = 1.75, minlen = 2 ];
+node [ shape = box, penwidth = 1.75, fontname="Sans" ];
+edge [ penwidth = 1.75, minlen = 2, fontname="Sans" ];
+graph [ fontname="Sans" ];
 penwidth = 1.75;
 
 subgraph cluster_tx1 {
@@ -18,7 +19,7 @@ subgraph cluster_tx1 {
     tx1_vout [ label = "Output Index Number" ];
     tx1_script [ label = "Pubkey Script" ];
 
-    label = "Transaction 1 (TX 1)"
+    label = "Transaction 1 (TX 0)"
 }
 
 
@@ -46,7 +47,7 @@ subgraph cluster_tx2 {
     tx2_amount [ label = "Amount" ];
     tx2_signature [ label = "Signature" ];
 
-    label = "Transaction 2"
+    label = "Transaction 2 (TX 1)"
 }
 
 subgraph cluster_bob {
@@ -57,7 +58,7 @@ subgraph cluster_tx2t {
     tx2t_script [ label = "Pubkey Script" ];
     tx2t_amount [ label = "Amount" ];
 
-    label = "TX2 Template"
+    label = "Transaction 2 (TX 1)\nTemplate"
 }
 
 }
