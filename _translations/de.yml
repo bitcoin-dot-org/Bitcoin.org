@@ -620,7 +620,7 @@ de:
     block: "Block"
     blocktxt: "Ein Block ist ein <b>Datensatz in der Blockkette, der viele ausstehende Transaktionen enthält und diese bestätigt</b>. Im Durchschnitt wird etwa alle 10 Minuten ein neuer Block inkl. der Transaktionen an die <a href=\"#[vocabulary.blockchain]\">Blockkette</a> angehängt, dies geschieht durch <a href=\"#[vocabulary.mining]\">Mining</a>."
     btc: "BTC"
-    btctxt: "Die Abkürzung BTC wird häufig als Einheit für Bitcoin (B⃦). verwendet (1 BTC = 1 Bitcoin)."
+    btctxt: "Die Abkürzung BTC wird häufig als Einheit für Bitcoin (₿). verwendet (1 BTC = 1 Bitcoin)."
     confirmation: "Bestätigung"
     confirmationtxt: "Wenn eine Transaktion durch das Netzwerk bestätigt wurde, heißt das, dass sie <b>durch das Netzwerk verifiziert wurde und eine Rückabwicklung sehr unwahrscheinlich ist</b>. Transaktionen erhalten eine Bestätigung wenn sie in einem <a href=\"#vocabulary##[vocabulary.block]\">Block</a> gespeichert sind, sowie in jedem darauffolgenden Block. Selbst eine Bestätigung kann für kleine Transaktionen als sicher betrachtet werden, wobei es bei größeren Geldmengen (z.B. 1000€ und mehr)  Sinn macht auf sechs oder mehr Bestätigungen zu warten. Jede neue Bestätigung reduziert das Risiko einer Rückabwicklung <i>exponentiell</i>."
     cryptography: "Kryptographie"

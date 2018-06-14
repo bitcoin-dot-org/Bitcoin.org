@@ -578,7 +578,7 @@ sl:
     block: "Blok"
     blocktxt: "Blok je <b>zapis v verigi blokov, ki vsebuje in potrjuje nakazila</b>. V povprečju vsakih 10 minut nastane nov blok in se doda na rep <a href=\"#[vocabulary.blockchain]\">verige blokov</a>; nastajanju novih blokov pravimo <a href=\"#[vocabulary.mining]\">rudarjenje</a>."
     btc: "BTC"
-    btctxt: "BTC je osnovna enota valute bitcoin. Ta oznaka se uporablja kot B⃦ - podobno kot EUR za euro ali €."
+    btctxt: "BTC je osnovna enota valute bitcoin. Ta oznaka se uporablja kot ₿ - podobno kot EUR za euro ali €."
     confirmation: "Potrditev"
     confirmationtxt: "Potrditev pomeni, da <b>je nakazilo obdelalo omrežje in ni več verjetno, da bi to nakazilo postalo neveljavno ali stornirano</b>. Nakazilo prejme prvo potrditev, ko se vključi v <a href=\"#vocabulary##[vocabulary.block]\">blok</a>, in nadaljnje za vsak nadaljnji blok, ki nastane v <a href=\"#vocabulary##[vocabulary.blockchain]\">verigi blokov</a>. Nakazila z manjšimi zneski lahko obravnavate kot potrjena in varna že po prvi potrditvi, pri večjih zneskih (recimo 1000 EUR ali več) pa je običajno smiselno počakati na 6 potrditev ali več. Z novimi potrditvami tveganje za stornacijo nakazila eksponentno pada."
     cryptography: "Kriptografija"
