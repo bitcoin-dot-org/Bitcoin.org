@@ -1,7 +1,9 @@
 digraph {
 size=6.25;
 rankdir=BT
-node [ shape = "box" ]
+node [ shape = "box", fontname="Sans" ]
+edge [ fontname="Sans" ]
+graph [ fontname="Sans" ]
 
 subgraph cluster_height {
     h0 [ label = "Block 0" ]
@@ -21,8 +23,8 @@ subgraph cluster_height {
 subgraph cluster_depth {
     edge [ dir = "back" ];
 
-    d0 [ label = "Depth 101" ]
-    d1 [ label = "Depth 100" ]
+    d0 [ label = "Depth 103" ]
+    d1 [ label = "Depth 102" ]
     d100 [ label = "Depth 3" ]
     d101 [ label = "Depth 2" ]
     d102 [ label = "Depth 1" ]
