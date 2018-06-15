@@ -367,6 +367,14 @@ Pubkey script: OP_HASH160 <Hash160(redeemScript)> OP_EQUAL
 Signature script: <sig> [sig] [sig...] <redeemScript>
 ~~~
 
+{% autocrossref %}
+
+This script combination looks perfectly fine to old nodes as long as the script hash matches the redeem script. However, after the soft fork is activated, new nodes will perform a further verification for the redeem script. They will extract the redeem script from the signature script, decode it, and execute it with the remaining stack items(&lt;sig&gt; &#91;sig&#93; &#91;sig..&#93;part). Therefore, to redeem a P2SH transaction, the spender must provide the valid signature or answer in addition to the correct redeem script.
+
+This last step is similar to the verification step in P2PKH or P2Multisig scripts, where the initial part of the signature script(&lt;sig&gt; &#91;sig&#93; &#91;sig..&#93;) acts as the "signature script" in P2PKH/P2Multisig, and the redeem script acts as the "pubkey script".
+
+{% endautocrossref %}
+
 #### Multisig
 {:.no_toc}
 {% include helpers/subhead-links.md %}
