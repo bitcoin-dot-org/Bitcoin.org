@@ -1,155 +1,3 @@
-- date: 2018-05-05
-  title: "State of Digital Money 2018"
-  venue: "Cross Campus Downtown LA"
-  address: "800 Wilshire Blvd, 90017"
-  city: "Los Angeles"
-  country: "United States"
-  link: "http://stateofdigitalmoney.com"
-
-- date: 2018-05-05
-  title: "Vi Bitconf"
-  venue: "World Trade Center"
-  address: "Nacoes Unidas Avenue, 12551"
-  city: "Sao Paulo"
-  country: "Brazil"
-  link: "http://www.bitconf.com.br/"
-
-- date: 2018-05-06
-  title: "Blockchain in Healthcare Summit 2018"
-  venue: "Almana General Hospital"
-  address: "7918 16 St, Abdullah Fuad, 32236"
-  city: "Dammam"
-  country: "Saudi Arabia"
-  link: "http://www.medchained.com/"
-
-- date: 2018-05-07
-  title: "Blockchain Conference and Awards 2018"
-  venue: "Hotel Ritz Carlton"
-  address: "26 Al Mamsha St Jumeirah Beach Residence, Dubai 26525"
-  city: "Dubai"
-  country: "United Arab Emirates"
-  link: "http://www.blockchainmea.com"
-
-- date: 2018-05-09
-  title: "Blockchain Summit Latam 2018"
-  venue: "CentroParque"
-  address: "Av. Presidente Riesco 5330, Las Condes"
-  city: "Santiago"
-  country: "Chile"
-  link: "http://www.blockchainsummit.la"
-
-- date: 2018-05-10
-  title: "Beach Blockchain Conference"
-  venue: "Henann Regency Resort Boracay"
-  address: "Station 2 Balabag Boracay Island Malay Boracay"
-  city: "Boracay"
-  country: "Philippines"
-  link: "http://www.beachblockchainconference.com/"
-
-- date: 2018-05-11
-  title: "Polish Bitcoin Congress"
-  venue: "Sheraton Warsaw Hotel"
-  address: "B. Prusa 2, 00-493"
-  city: "Warsaw"
-  country: "Poland"
-  link: "http://congressbitcoin.com/"
-
-- date: 2018-05-12
-  title: "Blockchain to People Conference"
-  venue: "STU FIIT"
-  address: "Ilkovicova 2, Bratislava"
-  city: "Bratislava"
-  country: "Slovakia"
-  link: "http://www.b2p.sk"
-
-- date: 2018-05-15
-  title: "Let's Talk About Blockchain"
-  venue: "Rise Tel Aviv"
-  address: "54 Ahad Haam"
-  city: "Tel Aviv"
-  country: "Israel"
-  link: "https://www.meetup.com/Rise-Tel-Aviv-FinTech-and-Cyber/events/249895967/"
-
-- date: 2018-05-16
-  title: "ABC Summit"
-  venue: "Casino Estoril (Lisbon)"
-  address: "Av. Dr. Stlanley Ho"
-  city: "Estoril"
-  country: "Portugal"
-  link: "http://www.abcsummit.com"
-
-- date: 2018-05-17
-  title: "Blockchain Workshop Geared for Women"
-  venue: "Galvanize"
-  address: "303 Spring St"
-  city: "New York"
-  country: "United States"
-  link: "https://www.eventbrite.com/e/multi-disciplinary-hands-on-blockchain-workshop-geared-for-women-tickets-43206067511"
-
-- date: 2018-05-18
-  title: "Next Block Conference"
-  venue: "Hilton Hotel Kyiv"
-  address: "Tarasa Shevchenko Blvd, 30, 01030"
-  city: "Kiev"
-  country: "Ukraine"
-  link: "http://next-block.org/"
-
-- date: 2018-05-23
-  title: "The African Blockchain Conference 2018"
-  venue: "The Kampala Serena Hotel"
-  address: "Kintu Road"
-  city: "Kampala"
-  country: "Uganda"
-  link: "https://africanblockchain.org/"
-
-- date: 2018-05-25
-  title: "BTCM2018"
-  venue: "Blockchain Hotel"
-  address: "Friedrich-Ebert-Straße 18"
-  city: "Essen"
-  country: "Germany"
-  link: "https://www.blockchainhotel.de/en/conference/"
-
-- date: 2018-05-31
-  title: "Unchain Convention"
-  venue: "Theater Kehrwieder"
-  address: "Kehrwieder 6"
-  city: "Hamburg"
-  country: "Germany"
-  link: "https://unchain.hamburg/"
-
-- date: 2018-06-02
-  title: "Software Technology for Blockchains, Bitcoin and DLT"
-  venue: "Hotel del Golfo"
-  address: "Via delle Ginestre, 31, 57030 Procchio, Isola d’Elba"
-  city: "Procchio"
-  country: "Italy"
-  link: "https://www.laser-foundation.org/school/"
-
-- date: 2018-06-02
-  title: "Cripto Latin Fest"
-  venue: "Multiparque"
-  address: "Autopista Nte. #224-60, Bogotá, Cundinamarca"
-  city: "Bogota"
-  country: "Colombia"
-  link: "http://www.criptolatinfest.com"
-
-- date: 2018-06-06
-  title: "Crypto Coin Turkey"
-  venue: "Istanbul University"
-  address: "Istanbul Universitesi Fen Fakultesi Vezneciler Mh."
-  city: "Istanbul"
-  country: "Turkey"
-  link: "https://cryptocointurkey.org/"
-
-- date: 2018-06-13
-  title: "CryptoCompare & MJAC London Blockchain Summit"
-  venue: "Old Billingsgate"
-  address: "Old Billingsgate Walk, EC3R 6DX"
-  city: "London"
-  country: "United Kingdom"
-  link: "https://mjac.io/"
-
 - date: 2018-06-16
   title: "Blockchain Economic Forum"
   venue: "San Francisco Marriott Marquis"
@@ -182,6 +30,14 @@
   country: "Netherlands"
   link: "https://rethinktrust.org/"
 
+- date: 2018-07-03
+  title: "Building on Bitcoin"
+  venue: "Auditorio A. Domingues de Azevedo"
+  address: "Av. Defensores de Chaves 85B 1000-070"
+  city: "Lisboa"
+  country: "Portugal"
+  link: "https://building-on-bitcoin.com"
+
 - date: 2018-07-13
   title: "Blockchain Super Conference"
   venue: "KWIC"
@@ -189,6 +45,14 @@
   city: "Kitchener - Waterloo"
   country: "Canada"
   link: "https://blockchainsuperconference.com/"
+
+- date: 2018-07-23
+  title: "SPOT Conference"
+  venue: "Hong Kong Exchange"
+  address: "8 Connaught Pl, Central"
+  city: "Hong Kong"
+  country: "Hong Kong"
+  link: "https://www.spotconf.com/"
 
 - date: 2018-09-14
   title: "Blockchain & FutureTech Expo"
