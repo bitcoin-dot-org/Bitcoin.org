@@ -585,7 +585,7 @@ es:
     block: "Bloque"
     blocktxt: "Un bloque es <b>un registro en la cadena de bloques que contiene confirmaciones de transacciones pendientes</b>. Aproximadamente cada 10 minutos, en promedio, un nuevo bloque que incluye nuevas transacciones se anexa a la <a href=\"#[vocabulary.blockchain]\">cadena de bloques</a> a traves de la <a href=\"#[vocabulary.mining]\">minería</a>."
     btc: "BTC"
-    btctxt: "BTC es la unidad común de la moneda Bitcoin. Puede utilizarse igual que se utiliza USD cuando nos referimos al dólar estadounidense, en lugar de usar B⃦ o $ para referirnos a ellos."
+    btctxt: "BTC es la unidad común de la moneda Bitcoin. Puede utilizarse igual que se utiliza USD cuando nos referimos al dólar estadounidense, en lugar de usar ₿ o $ para referirnos a ellos."
     confirmation: "Confirmación"
     confirmationtxt: "Una confirmación significa que una transacción ha sido <b>procesada por la red y es poco probable que sea revertida</b>. Las transacciones son confirmadas cuando son incluidas en un <a href=\"#vocabulary##[vocabulary.block]\">bloque</a> y por cada bloque siguiente. Incluso una única confirmación se puede considerar segura para transacciones pequeñas, aunque para transacciones más grandes como 1000 USD, tiene sentido esperar hasta 6 confirmaciones o más. Cada confirmación reduce <i>exponecialmente</i> el riesgo de que la transacción sea revertida."
     cryptography: "Criptografía"
