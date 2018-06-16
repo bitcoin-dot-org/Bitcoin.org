@@ -220,6 +220,25 @@ have an easy-to-use node.
 
 <div class="toccontent-block boxexpand expanded" markdown="1">
 
+## Initial Block Download(IBD)
+
+[Initial block download](https://bitcoin.org/en/developer-guide#initial-block-download)
+refers to the process where nodes synchronize themselves
+to the network by downloading blocks that are new to them.
+This will happen whenever a new or offline node starts up.
+
+If you are trying to set up a new node following the instructions below, you will go
+through the IBD process at the first run, and it may take a considerable amount of time since a new
+node has to download the entire blockchain(which is more than 100 gigabytes by the time this paragraph is written).
+During the download, there could be a high usage for the network and CPU
+(since the node has to verify the blocks downloaded), and the client will take up an
+increasing amount of storage space. Before the node finishes IBD, you cannot send/receive Bitcoins.
+
+If you are using Bitcoin Core GUI, you can monitor the progress of IBD at the
+bottom left corner in the software.
+
+![Bitcoin-Qt Initial Block Download](/img/full-node/en-bitcoin-qt-ibd.png?{{site.time | date: '%s'}})
+
 ## Linux Instructions
 
 The following instructions describe installing Bitcoin Core on Linux
