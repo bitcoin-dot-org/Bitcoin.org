@@ -222,7 +222,7 @@ have an easy-to-use node.
 
 ## Initial Block Download(IBD)
 
-[Initial block download](https://bitcoin.org/en/developer-guide#initial-block-download)
+[Initial block download](/en/developer-guide#initial-block-download)
 refers to the process where nodes synchronize themselves
 to the network by downloading blocks that are new to them.
 This will happen whenever a new or offline node starts up.
@@ -234,8 +234,7 @@ During the download, there could be a high usage for the network and CPU
 (since the node has to verify the blocks downloaded), and the client will take up an
 increasing amount of storage space. Before the node finishes IBD, you cannot send/receive Bitcoins.
 
-If you are using Bitcoin Core GUI, you can monitor the progress of IBD at the
-bottom left corner in the software.
+If you are using Bitcoin Core GUI, you can monitor the progress of IBD in the status bar(left bottom corner).
 
 ![Bitcoin-Qt Initial Block Download](/img/full-node/en-bitcoin-qt-ibd.png?{{site.time | date: '%s'}})
 
