@@ -25,6 +25,6 @@ platform:
           fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacydisclosure: "checkpassprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
 ---

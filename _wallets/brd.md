@@ -25,7 +25,7 @@ platform:
           fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacydisclosure: "checkpassprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: android
         text: "walletbrd"
@@ -41,6 +41,6 @@ platform:
           fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacydisclosure: "checkpassprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
 ---

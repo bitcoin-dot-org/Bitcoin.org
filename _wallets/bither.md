@@ -25,7 +25,7 @@ platform:
           fees: "checkfailfeecontrolstatic"
         privacycheck:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacydisclosure: "checkpassprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: android
         text: "walletbither"
@@ -41,7 +41,7 @@ platform:
           fees: "checkfailfeecontrolstatic"
         privacycheck:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacydisclosure: "checkpassprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
   - desktop:
     name: desktop
@@ -59,7 +59,7 @@ platform:
         fees: "checkfailfeecontrolstatic"
       privacycheck:
         privacyaddressreuse: "checkfailprivacyaddressrotation"
-        privacydisclosure: "checkfailprivacydisclosurespv"
+        privacydisclosure: "checkpassprivacydisclosurespv"
         privacynetwork: "checkfailprivacynetworknosupporttor"
     os:
       - name: windows

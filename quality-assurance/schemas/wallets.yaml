@@ -210,8 +210,8 @@ properties:
                     description: To whom, if anyone, does the wallet reveal the addresses it uses?
                     type: string
                     enum:
-                      - checkpassprivacydisclosurefullnode
-                      - checkfailprivacydisclosurespv
+                      - checkgoodprivacydisclosurefullnode
+                      - checkpassprivacydisclosurespv
                       - checkfailprivacydisclosurecentralized
                       - checkfailprivacydisclosureaccount
                   privacynetwork:
