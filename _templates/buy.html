@@ -17,27 +17,20 @@ id: buy
 </div>
 
 <div class="container">
-  <div class="row card-row">
-    <div class="card buy-card">
-      <img src="/img/icons/ico_exchange.svg?{{site.time | date: '%s'}}" alt="Bank icon">
-      <h2 id="bitcoin-exchange">
-        {% translate bitcoin-exchange %}</h2>
-      <p>{% translate bitcoin-exchange-text %}</p>
-    </div>
-    
-    <div class="card buy-card">
-      <img src="/img/icons/ico_local.svg?{{site.time | date: '%s'}}" alt="Signpost icon">
-      <h2 id="local-bitcoins">
-        {% translate local-bitcoins %}</h2>
-      <p>{% translate local-bitcoins-text %}</p>
-    </div>
-    
-    <div class="card buy-card">
-      <img src="/img/icons/ico_atm.svg?{{site.time | date: '%s'}}" alt="Card icon">
-      <h2 id="bitcoin-atm">
-        {% translate bitcoin-atm %}</h2>
-      <p>{% translate bitcoin-atm-text %}</p>
+  <div class="two-column-layout">
+
+    <div class="row two-column-row">
+      <div>
+        <a href="https://paxful.com/" target="_blank"><img class="column-img" src="/img/buy/paxful.png?{{site.time | date: '%s'}}" alt="Buy Bitcoin with Paxful"></a>
+      </div>
+      <div class="column-text">
+        <p>{% translate paxful %}</p>
+        <div>
+          <p>
+          <a class="btn btn-bright btn-buy" href="https://paxful.com/">{% translate button %}</a>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
