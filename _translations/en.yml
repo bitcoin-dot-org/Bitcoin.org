@@ -140,15 +140,11 @@ en:
     translated_by: "translated by"
     submit_new_translation: 'Do you want to translate the paper into your language? Visit the <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitcoin whitepaper repository on GitHub</a> for instructions and <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">open an issue</a> if you have any questions.'
   buy:
-    title: "Buy - Bitcoin"
-    pagetitle: "How to buy Bitcoin"
-    summary: "There are several ways you can buy Bitcoin."
-    bitcoin-exchange: "Use a Bitcoin Exchange"
-    bitcoin-exchange-text: "Our <a href=\"/en/exchanges\">Bitcoin Exchange</a> page, lists many different businesses that can help you buy Bitcoin using your bank account."
-    local-bitcoins: "Discover people selling Bitcoin in your community"
-    local-bitcoins-text: "<a href=\"https://localbitcoins.com/\">Local Bitcoins</a> lets you search and browse through various sellers of Bitcoin in your area. Sellers have reviews and feedback scores to help you choose."
-    bitcoin-atm: "Use a Bitcoin ATM"
-    bitcoin-atm-text: "Bitcoin ATMs work like a regular ATM, except they allow you to deposit and withdrawal money so that you can buy and sell Bitcoin. <a href=\"https://coinatmradar.com/\">Coin ATM Radar</a> has an interactive map to help you find the closest Bitcoin ATM near you."
+    title: "Buy Bitcoin"
+    pagetitle: "Buy Bitcoin with Paxful"
+    summary: "Find dozens of ways to buy and sell bitcoin using Paxful."
+    paxful: "Paxful is a peer to peer (P2P) marketplace for buying and selling bitcoin. Simply select your preferred payment method and enter the quantity of bitcoin(s) you'll be transacting. A dedicated support team is available to help guide you through the process."
+    button: "Buy Bitcoin with Paxful"
   community:
     title: "Community - Bitcoin"
     pagetitle: "Bitcoin Communities"
