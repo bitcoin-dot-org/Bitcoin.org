@@ -25,6 +25,6 @@ platform:
           fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacydisclosure: "checkpassprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
 ---
