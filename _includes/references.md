@@ -20,6 +20,10 @@ http://opensource.org/licenses/MIT.
 [msg_tx]: /en/developer-reference#term-msg_tx "The TXID data type identifier of an inventory on the P2P network"
 [msg_block]: /en/developer-reference#term-msg_block "The block header hash data type identifier of an inventory on the P2P network"
 [msg_filtered_block]: /en/developer-reference#term-msg_block "An alternative to the block header hash data type identifier of an inventory on the P2P network used to request a merkle block"
+[msg_cmpct_block]: /en/developer-reference#term-msg_cmpct_block "An alternative to the block header hash data type identifier of an inventory on the P2P network used to request a compact block"
+[msg_witness_block]: /en/developer-reference#term-msg_witness_block "An alternative to the block header hash data type identifier of an inventory on the P2P network used to request a block with witness serialization for SegWit"
+[msg_witness_tx]: /en/developer-reference#term-msg_witness_tx "An alternative of the transaction data type identifier of an inventory on the P2P network used to request a transaction with witness serialization for SegWit"
+[msg_filtered_witness_block]: /en/developer-reference#term-msg_filtered_witness_block "An alternative to the block header hash data type identifier of an inventory on the P2P network that is reserved for future use and unused."
 [network]: /en/developer-guide#term-network "The Bitcoin P2P network which broadcasts transactions and blocks"
 [op_checkmultisig]: /en/developer-reference#term-op-checkmultisig "Opcode which returns true if one or more provided signatures (m) sign the correct parts of a transaction and match one or more provided public keys (n)"
 [op_checksig]: /en/developer-reference#term-op-checksig "Opcode which returns true if a signature signs the correct parts of a transaction and matches a provided public key"
@@ -62,6 +66,10 @@ http://opensource.org/licenses/MIT.
 [v2 block]: /en/developer-reference#term-v2-block "The current version of Bitcoin blocks"
 [verified payments]: /en/developer-guide#verifying-payment "Payments which the receiver believes won't be double spent"
 [wallet support]: /en/developer-reference#term-wallet-support "A Bitcoin Core ./configure option that enables (default) or disables the wallet"
+[prefilledtransaction]: /en/developer-reference#cmpctblock "A P2P Networking data structure used to represent a vector of a few transactions"
+[headerandshortids]: /en/developer-reference#cmpctblock "A P2P Networking data structure used to relay a block header, the short transactions IDs used for matching already-available transactions, and a select few transactions which a peer may be missing"
+[blocktransactionsrequest]: /en/developer-reference#getblocktxn "A P2P Networking data structure used to list transaction indexes in a block being requested by a peer"
+[blocktransactions]: /en/developer-reference#blocktxn "A P2P Networking data structure used to provide some of the transactions in a block as requested"
 
 {% comment %}<!-- RPCs; alphabetical order -->{% endcomment %}
 [rpc abandontransaction]: /en/developer-reference#abandontransaction
@@ -196,6 +204,10 @@ http://opensource.org/licenses/MIT.
 [inv message]: /en/developer-reference#inv "A P2P protocol message used to send inventories of transactions and blocks known to the transmitting peer"
 [mempool message]: /en/developer-reference#mempool "A P2P protocol message used to request one or more inv messages with currently-unconfirmed transactions"
 [merkleblock message]: /en/developer-reference#merkleblock "A P2P protocol message used to request a filtered block useful for SPV proofs"
+[cmpctblock message]: /en/developer-reference#cmpctblock "A P2P protocol message used to request a compact block"
+[sendcmpct message]: /en/developer-reference#sendcmpct "A P2P protocol message used to begin the receipt of a compact block between a peer and node"
+[getblocktxn message]: /en/developer-reference#getblocktxn "A P2P protocol message used to request block transactions for the given block hash"
+[blocktxn message]: /en/developer-reference#blocktxn "A P2P protocol message used to send available transaction data to requesting peers for a given block hash"
 [notfound message]: /en/developer-reference#notfound "A P2P protocol message sent to indicate that the requested data was not available"
 [ping message]: /en/developer-reference#ping "A P2P network message used to see if the remote host is still connected"
 [pong message]: /en/developer-reference#pong "A P2P network message used to reply to a P2P network ping message"
@@ -335,6 +347,7 @@ http://opensource.org/licenses/MIT.
 [BIP130]: https://github.com/bitcoin/bips/blob/master/bip-0130.mediawiki
 [BIP133]: https://github.com/bitcoin/bips/blob/master/bip-0133.mediawiki
 [BIP141]: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
+[BIP144]: https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki
 [BIP151]: https://github.com/bitcoin/bips/blob/master/bip-0151.mediawiki
 [BIP152]: https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki
 [CVE-2012-2459]: https://en.bitcoin.it/wiki/CVEs#CVE-2012-2459
@@ -380,7 +393,7 @@ http://opensource.org/licenses/MIT.
 [BitcoinJ]: http://bitcoinj.github.io
 [BitcoinJ documentation about pending transaction safety]: https://bitcoinj.github.io/security-model#pending-transactions
 [bitcoinj micropayment tutorial]: https://bitcoinj.github.io/working-with-micropayments
-[block170]: https://www.biteasy.com/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee
+[block170]: https://live.blockcypher.com/btc/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee/
 [casascius address utility]: https://github.com/casascius/Bitcoin-Address-Utility
 [core base58.h]: https://github.com/bitcoin/bitcoin/blob/master/src/base58.h
 [core chainparams.cpp]: https://github.com/bitcoin/bitcoin/blob/master/src/chainparams.cpp
@@ -430,7 +443,9 @@ http://opensource.org/licenses/MIT.
 [offline transactions]: http://bitcoin.stackexchange.com/a/34122/21052
 [open a pull request]: https://github.com/bitcoin-dot-org/bitcoin.org#working-with-github
 [open an issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
+[open assets protocol]: https://github.com/OpenAssets/open-assets-protocol/blob/master/specification.mediawiki
 [Payment Request Generator]: https://github.com/gavinandresen/paymentrequest/blob/master/php/demo_website/createpaymentrequest.php
+[peter todd p2sh example]: https://github.com/petertodd/checklocktimeverify-demos/blob/master/lib/python-bitcoinlib/examples/publish-text.py
 [Piotr Piasecki's testnet faucet]: https://tpfaucet.appspot.com/
 [prime symbol]: https://en.wikipedia.org/wiki/Prime_%28symbol%29
 [protobuf]: https://developers.google.com/protocol-buffers/

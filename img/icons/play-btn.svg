@@ -1,0 +1,18 @@
+<svg width="100" height="100" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Btn\</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(2 0 0 2 -10920 -508)">
+<g id="Btn\">
+<g id="Oval">
+<use xlink:href="#path0_fill" transform="translate(5460 254)" fill="#13161F"/>
+</g>
+<g id="Icon/Play">
+<use xlink:href="#path1_fill" transform="translate(5480 270)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 25 50C 38.8071 50 50 38.8071 50 25C 50 11.1929 38.8071 0 25 0C 11.1929 0 0 11.1929 0 25C 0 38.8071 11.1929 50 25 50Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 0 0L 14.624 9.312L 0 18.624L 0 0Z"/>
+</defs>
+</svg>

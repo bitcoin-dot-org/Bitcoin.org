@@ -143,7 +143,7 @@ Result:
         "amount" : 0.00010000,
         "confirmations" : 6210,
         "spendable" : true,
-        "sovable" : true
+        "solvable" : true
     }
 ]
 {% endhighlight %}

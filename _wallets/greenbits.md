@@ -15,7 +15,7 @@ platform:
         text: "walletgreenbits"
         link: "https://play.google.com/store/apps/details?id=com.greenaddress.greenbits_android_wallet"
         source: "https://github.com/greenaddress/GreenBits"
-        screenshot: "greenbits.png"
+        screenshot: "greenbits.png?1528322191"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkpassvalidationspvp2p"

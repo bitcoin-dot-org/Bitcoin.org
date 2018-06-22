@@ -15,11 +15,11 @@ platform:
         text: "walletkeepkey"
         link: "https://www.keepkey.com/"
         source: "https://github.com/keepkey/"
-        screenshot: "keepkey.png"
+        screenshot: "keepkey.png?1528322191"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
-          transparency: "checkfailtransparencynew"
+          transparency: "checkpasstransparencyopensource"
           environment: "checkgoodenvironmenthardware"
           privacy: "checkneutralprivacyvariable"
           fees: "checkneutralfeecontrolvariable"

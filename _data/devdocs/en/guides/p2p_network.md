@@ -4,6 +4,7 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/p2p_network.md" %}
 
+
 ## P2P Network
 {% include helpers/subhead-links.md %}
 
@@ -177,14 +178,14 @@ Bitcoin Core (up until version [0.9.3][bitcoin core 0.9.3]) uses a
 simple initial block download (IBD) method we'll call *blocks-first*.
 The goal is to download the blocks from the best block chain in sequence.
 
-![Overview Of Blocks-First Method](/img/dev/en-blocks-first-flowchart.svg)
+![Overview Of Blocks-First Method](/img/dev/en-blocks-first-flowchart.svg?{{site.time | date: '%s'}})
 
 The first time a node is started, it only has a single block in its
 local best block chain---the hardcoded genesis block (block 0).  This
 node chooses a remote peer, called the sync node, and sends it the
 `getblocks` message illustrated below.
 
-![First GetBlocks Message Sent During IBD](/img/dev/en-ibd-getblocks.svg)
+![First GetBlocks Message Sent During IBD](/img/dev/en-ibd-getblocks.svg?{{site.time | date: '%s'}})
 
 In the header hashes field of the `getblocks` message, this new node
 sends the header hash of the only block it has, the genesis block
@@ -198,7 +199,7 @@ replies with 500 block inventories (the maximum response to a
 `getblocks` message) starting from block 1. It sends these inventories
 in the `inv` message illustrated below.
 
-![First Inv Message Sent During IBD](/img/dev/en-ibd-inv.svg)
+![First Inv Message Sent During IBD](/img/dev/en-ibd-inv.svg?{{site.time | date: '%s'}})
 
 Inventories are unique identifiers for information on the network. Each
 inventory contains a type field and the unique identifier for an
@@ -213,7 +214,7 @@ is 4860...0000 as seen in the illustration above.)
 The IBD node uses the received inventories to request 128 blocks from
 the sync node in the `getdata` message illustrated below.
 
-![First GetData Message Sent During IBD](/img/dev/en-ibd-getdata.svg)
+![First GetData Message Sent During IBD](/img/dev/en-ibd-getdata.svg?{{site.time | date: '%s'}})
 
 It's important to blocks-first nodes that the blocks be requested and
 sent in order because each block header references the header hash of
@@ -227,7 +228,7 @@ of the blocks requested. Each block is put into serialized block format
 and sent in a separate `block` message. The first `block` message sent
 (for block 1) is illustrated below.
 
-![First Block Message Sent During IBD](/img/dev/en-ibd-block.svg)
+![First Block Message Sent During IBD](/img/dev/en-ibd-block.svg?{{site.time | date: '%s'}})
 
 The IBD node downloads each block, validates it, and then requests the
 next block it hasn't requested yet, maintaining a queue of up to 128
@@ -237,7 +238,7 @@ requesting the inventories of up to 500 more blocks.  This second
 `getblocks` message contains multiple header hashes as illustrated
 below:
 
-![Second GetBlocks Message Sent During IBD](/img/dev/en-ibd-getblocks2.svg)
+![Second GetBlocks Message Sent During IBD](/img/dev/en-ibd-getblocks2.svg?{{site.time | date: '%s'}})
 
 Upon receipt of the second `getblocks` message, the sync node searches
 its local best block chain for a block that matches one of the header
@@ -324,14 +325,14 @@ chain][/en/glossary/header-chain]{:#term-header-chain}{:.term}, partially valida
 as possible, and then download the corresponding blocks in parallel.  This
 solves several problems with the older blocks-first IBD method.
 
-![Overview Of Headers-First Method](/img/dev/en-headers-first-flowchart.svg)
+![Overview Of Headers-First Method](/img/dev/en-headers-first-flowchart.svg?{{site.time | date: '%s'}})
 
 The first time a node is started, it only has a single block in its
 local best block chain---the hardcoded genesis block (block 0).  The
 node chooses a remote peer, which we'll call the sync node, and sends it the
 `getheaders` message illustrated below.
 
-![First getheaders message](/img/dev/en-ibd-getheaders.svg)
+![First getheaders message](/img/dev/en-ibd-getheaders.svg?{{site.time | date: '%s'}})
 
 In the header hashes field of the `getheaders` message, the new node
 sends the header hash of the only block it has, the genesis block
@@ -345,7 +346,7 @@ replies with 2,000 header (the maximum response) starting from
 block 1. It sends these header hashes in the `headers` message
 illustrated below.
 
-![First headers message](/img/dev/en-ibd-headers.svg)
+![First headers message](/img/dev/en-ibd-headers.svg?{{site.time | date: '%s'}})
 
 The IBD node can partially validate these block headers by ensuring that
 all fields follow consensus rules and that the hash of the header is
@@ -393,7 +394,7 @@ two things in parallel:
     during IBD (the same maximum number that blocks-first Bitcoin Core
     requested from its sync node).
 
-![Simulated Headers-First Download Window](/img/dev/en-headers-first-moving-window.svg)
+![Simulated Headers-First Download Window](/img/dev/en-headers-first-moving-window.svg?{{site.time | date: '%s'}})
 
 Bitcoin Core's headers-first mode uses a 1,024-block moving download
 window to maximize download speed. The lowest-height block in the window
@@ -508,7 +509,7 @@ hasn't seen yet. In other words, orphan blocks have no known parent
 (unlike stale blocks, which have known parents but which aren't part of
 the best block chain).
 
-![Difference Between Orphan And Stale Blocks](/img/dev/en-orphan-stale-definition.svg)
+![Difference Between Orphan And Stale Blocks](/img/dev/en-orphan-stale-definition.svg?{{site.time | date: '%s'}})
 
 When a blocks-first node downloads an orphan block, it will not validate
 it. Instead, it will send a `getblocks` message to the node which sent

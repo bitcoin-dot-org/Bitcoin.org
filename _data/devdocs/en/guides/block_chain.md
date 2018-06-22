@@ -4,6 +4,7 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/block_chain.md" %}
 
+
 ## Block Chain
 {% include helpers/subhead-links.md %}
 
@@ -28,7 +29,7 @@ the consensus rules used by Bitcoin Core.
 
 {% autocrossref %}
 
-![Block Chain Overview](/img/dev/en-blockchain-overview.svg)
+![Block Chain Overview](/img/dev/en-blockchain-overview.svg?{{site.time | date: '%s'}})
 
 The illustration above shows a simplified version of a block chain.
 A [block][/en/glossary/block]{:#term-block}{:.term} of one or more new transactions
@@ -49,7 +50,7 @@ transaction spends the satoshis previously received in one or more earlier
 transactions, so the input of one transaction is the output of a
 previous transaction.
 
-![Transaction Propagation](/img/dev/en-transaction-propagation.svg)
+![Transaction Propagation](/img/dev/en-transaction-propagation.svg?{{site.time | date: '%s'}})
 
 A single transaction can create multiple outputs, as would be
 the case when sending to multiple addresses, but each output of
@@ -90,7 +91,7 @@ to work harder than honest peers who only want to add new blocks to the
 block chain.
 
 Chaining blocks together makes it impossible to modify transactions included
-in any block without modifying all following blocks. As a
+in any block without modifying all subsequent blocks. As a
 result, the cost to modify a particular block increases with every new block
 added to the block chain, magnifying the effect of the proof of work.
 
@@ -166,7 +167,7 @@ by their [block height][/en/glossary/block-height]{:#term-block-height}{:.term}-
 block (block 0, most commonly known as the [genesis block][/en/glossary/genesis-block]{:#term-genesis-block}{:.term}). For example,
 block 2016 is where difficulty could have first been adjusted.
 
-![Common And Uncommon Block Chain Forks](/img/dev/en-blockchain-fork.svg)
+![Common And Uncommon Block Chain Forks](/img/dev/en-blockchain-fork.svg?{{site.time | date: '%s'}})
 
 Multiple blocks can all have the same block height, as is common when
 two or more miners each produce a block at roughly the same time. This
@@ -299,7 +300,7 @@ nodes. This creates permanently divergent chains---one for non-upgraded
 nodes and one for upgraded nodes---called a [hard
 fork][/en/glossary/hard-fork]{:#term-hard-fork}{:.term}.
 
-![Hard Fork](/img/dev/en-hard-fork.svg)
+![Hard Fork](/img/dev/en-hard-fork.svg?{{site.time | date: '%s'}})
 
 In the second case, rejection by upgraded nodes, it's possible to keep
 the block chain from permanently diverging if upgraded nodes control a
@@ -309,7 +310,7 @@ upgraded nodes can build a stronger chain that the non-upgraded nodes
 will accept as the best valid block chain. This is called a [soft
 fork][/en/glossary/soft-fork]{:#term-soft-fork}{:.term}.
 
-![Soft Fork](/img/dev/en-soft-fork.svg)
+![Soft Fork](/img/dev/en-soft-fork.svg?{{site.time | date: '%s'}})
 
 Although a fork is an actual divergence in block chains, changes to the
 consensus rules are often described by their potential to create either

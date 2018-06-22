@@ -13,7 +13,7 @@ lang: en
 	<description>This RSS feed allows to follow Bitcoin events and conferences.</description>
 	<image>
 		<title>Bitcoin conferences and events</title>
-		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
+		<url>https://bitcoin.org/img/icons/logo_rss.png?1528322191</url>
 		<link>https://bitcoin.org/en/events</link>
 	</image>
         {% assign date_sorted_conferences = site.conferences | sort: 'date' %}

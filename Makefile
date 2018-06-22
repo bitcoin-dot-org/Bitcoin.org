@@ -296,7 +296,7 @@ check-for-consistent-bitcoin-core-titles:
 	$S grep -r -L '^title:.*Bitcoin Core' en/bitcoin-core/ | eval $(ERROR_ON_OUTPUT)
 
 check-for-too-many-wallets-on-one-platform:
-	$S for platform in desktop windows mac linux mobile android ios blackberry windowsphone web hardware \
+	$S for platform in desktop windows mac linux mobile android ios windowsphone web hardware \
 	   ; do count=$$( grep -c "compat:.*$$platform" _templates/choose-your-wallet.html ) \
 	   ; if [ $$count -gt 14 ] \
 	   ; then echo "ERROR: too many wallets in $$platform platform.  Remove one or change layout" \

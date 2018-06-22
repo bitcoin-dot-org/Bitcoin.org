@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### DumpPrivKey
 {% include helpers/subhead-links.md %}
 
-{% assign summary_dumpPrivKey="returns the wallet-import-format (WIP) private key corresponding to an address. (But does not remove it from the wallet.)" %}
+{% assign summary_dumpPrivKey="returns the wallet-import-format (WIF) private key corresponding to an address. (But does not remove it from the wallet.)" %}
 
 {% autocrossref %}
 
