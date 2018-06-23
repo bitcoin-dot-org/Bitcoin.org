@@ -225,14 +225,19 @@ have an easy-to-use node.
 [Initial block download](/en/developer-guide#initial-block-download)
 refers to the process where nodes synchronize themselves
 to the network by downloading blocks that are new to them.
-This will happen whenever a new or offline node starts up.
+This will happen when a node is far behind the tip of the [best block chain](/en/glossary/block-chain).
+In the process of IBD, a node does not accept incoming transactions nor request mempool transactions.
 
 If you are trying to set up a new node following the instructions below, you will go
 through the IBD process at the first run, and it may take a considerable amount of time since a new
-node has to download the entire blockchain(which is more than 100 gigabytes by the time this paragraph is written).
+node has to download the entire blockchain (which is roughly {{site.text.chain_gb}} now).
 During the download, there could be a high usage for the network and CPU
 (since the node has to verify the blocks downloaded), and the client will take up an
-increasing amount of storage space. Before the node finishes IBD, you cannot send/receive Bitcoins.
+increasing amount of storage space([reduce storage](#reduce-storage) provides more details on reducing storage).
+
+Before the node finishes IBD, you will not be able to see a new transaction related to your account until
+the client has caught up to block containing that transaction.
+So your wallet may not count new payments/spendings into the balance.
 
 If you are using Bitcoin Core GUI, you can monitor the progress of IBD in the status bar(left bottom corner).
 
