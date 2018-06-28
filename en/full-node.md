@@ -230,7 +230,7 @@ In the process of IBD, a node does not accept incoming transactions nor request 
 
 If you are trying to set up a new node following the instructions below, you will go
 through the IBD process at the first run, and it may take a considerable amount of time since a new
-node has to download the entire blockchain (which is roughly {{site.text.chain_gb}} now).
+node has to download the entire block chain (which is roughly {{site.text.chain_gb}} now).
 During the download, there could be a high usage for the network and CPU
 (since the node has to verify the blocks downloaded), and the client will take up an
 increasing amount of storage space([reduce storage](#reduce-storage) provides more details on reducing storage).
