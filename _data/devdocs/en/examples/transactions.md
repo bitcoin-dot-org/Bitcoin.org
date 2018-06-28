@@ -200,7 +200,7 @@ This subsection covers one of the simplest possible raw transactions.
 {% endhighlight %}
 </div>
 
-Re-rerun `listunspent`. We now have three UTXOs: the two transactions we
+Re-run `listunspent`. We now have three UTXOs: the two transactions we
 created before plus the coinbase transaction from block #2. We save the
 txid and output index number (vout) of that coinbase UTXO to shell
 variables.
@@ -459,7 +459,7 @@ cT26DX6Ctco7pxaUptJujRfbMS2PJvdqiSMaGaoSktHyon8kQUSg
 {% endhighlight %}
 
 Use the `dumpprivkey` RPC to get the private keys corresponding to the
-public keys used in the two UTXOs out inputs we will be spending.  We need
+public keys used in the two UTXOs we will be spending.  We need
 the private keys so we can sign each of the inputs separately.
 
 ![Warning icon](/img/icons/icon_warning.svg?{{site.time | date: '%s'}})
