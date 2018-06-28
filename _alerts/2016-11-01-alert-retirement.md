@@ -20,6 +20,7 @@ alerts, preventing other alerts from being broadcast, and displays the static me
 will be published in the coming months.
 * **March 8, 2017**: Bitcoin Core 0.14 released with hard-coded [final alert](https://bitcoin.org/en/release/v0.14.0#final-alert).
 * **May 1, 2017**: Postpone release date of Alert key. Older clients may contain Alert handling code which is exploitable using the alert key, therefore the public release of the key has been temporarily postponed until considered safe.
+* **July 3, 2018**: The Alert key and Alert System vulnerabilities [have been disclosed](/en/posts/alert-key-and-vulnerabilities-disclosure).
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="1">
