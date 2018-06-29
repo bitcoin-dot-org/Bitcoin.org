@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="33px" viewBox="0 0 40 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>TR</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="33"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-253.000000, -196.000000)">
+            <g id="TR" transform="translate(253.000000, 196.000000)">
+                <g id="Clipped">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="path-1"></g>
+                    <rect id="Rectangle-path" fill="#E30A17" fill-rule="nonzero" mask="url(#mask-2)" x="0" y="0" width="49.5" height="33"></rect>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)" cx="17.53125" cy="16.5" r="8.25"></circle>
+                    <circle id="Oval" fill="#E30A17" fill-rule="nonzero" mask="url(#mask-2)" cx="19.59375" cy="16.5" r="6.6"></circle>
+                    <polygon id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)" points="24.0625275 16.5 31.5246937 18.9246338 26.9127787 12.5768775 26.9127787 20.4231225 31.5246937 14.0753663"></polygon>
+                </g>
+                <rect id="Rectangle-path" stroke="#000000" stroke-width="0.3" x="0.15" y="0.15" width="39.7" height="32.7"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
