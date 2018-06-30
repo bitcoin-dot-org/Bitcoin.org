@@ -1,34 +1,10 @@
-- date: 2018-06-16
-  title: "Blockchain Economic Forum"
-  venue: "San Francisco Marriott Marquis"
-  address: "780 Mission St, 94103"
-  city: "San Francisco"
-  country: "United States"
-  link: "http://bef.latoken.com"
-
-- date: 2018-06-20
-  title: "2018 Crypto Valley Conference on Blockchain Technology"
-  venue: "Theater Casino Zug"
-  address: "Artherstrasse 2-4"
-  city: "Zug"
-  country: "Switzerland"
-  link: "https://www.cryptovalleyconference.com/"
-
-- date: 2018-06-28
-  title: "Distribute 2018 Blockchain Konferenz"
-  venue: "Bucerius Law School"
-  address: "Jungiusstraße 6"
-  city: "Hamburg"
-  country: "Germany"
-  link: "http://www.distribute-conference.com/"
-
-- date: 2018-06-29
-  title: "Blockchain: Rethink Trust"
-  venue: "Beurs van Berlage"
-  address: "Damrak 243, 1012 ZJ"
-  city: "Amsterdam"
-  country: "Netherlands"
-  link: "https://rethinktrust.org/"
+- date: 2018-06-30
+  title: "Saturday Night Bitcoin Fever"
+  venue: "Stroom"
+  address: "Sonsbeeksingel 160"
+  city: "Arnhem Bitcoin City"
+  country: "The Netherlands"
+  link: "https://www.meetup.com/ArnhemBitcoinCity/events/251548968/"
 
 - date: 2018-07-03
   title: "Building on Bitcoin"
@@ -62,6 +38,14 @@
   country: "United States"
   link: "https://www.bftexpo.com/"
 
+- date: 2018-09-22
+  title: "Baltic Honeybadger"
+  venue: "RISEBA Arhitektūras un mediju centrs H20 6"
+  address: "Durbes iela 4"
+  city: "Riga"
+  country: "Latvia"
+  link: "https://bh2018.hodlhodl.com/"
+
 - date: 2018-10-15
   title: "CryptoEconomics Security Conference 2018"
   venue: "Pauly Ballroom"
@@ -69,6 +53,14 @@
   city: "Berkeley"
   country: "United States"
   link: "https://cesc.io"
+
+- date: 2018-10-27
+  title: "Texas Bitcoin Conference"
+  venue: "AT&T Executive Education & Conference Center"
+  address: "1900 University Ave, 78705"
+  city: "Austin"
+  country: "United States"
+  link: "https://texasbitcoinconference.com"
 
 - date: 2018-10-31
   title: "World Crypto Con"
@@ -85,6 +77,14 @@
   city: "St Julian's"
   country: "Malta"
   link: "http://maltablockchainsummit.com/"
+
+- date: 2018-11-16
+  title: "Bitconf Summer Edition"
+  venue: "Fabrica de negocios"
+  address: "Av. Monsenhor Tabosa, 740"
+  city: "Fortaleza"
+  country: "Brasil"
+  link: "http://www.bitconf.com.br/2018CE/"
 
 - date: 2018-11-22
   title: "Decrypted Forum"
