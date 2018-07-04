@@ -143,9 +143,16 @@ en:
     title: "Buy Bitcoin"
     pagetitle: "Buy Bitcoin with Paxful"
     summary: "Paxful offers you many ways to buy and sell bitcoin."
-    paxful: 'Paxful is an easy to use platform for buying and selling bitcoin. They are a leading peer-to-peer (P2P) marketplace because they let their users select their preferred payment method when buying bitcoin. A dedicated support team is available to provide guidance and assist with any questions. Paxful is also a <a href="/en/posts/new-supporting-sponsorship-from-paxful">sponsor</a> of Bitcoin.org. For more ways to purchase bitcoin, visit the <a href="https://bitcoin.cryptopelago.com/en/exchanges">exchanges directory</a>.'
+    paxful: 'Paxful is an easy to use platform for buying and selling bitcoin. They are a leading peer-to-peer (P2P) marketplace because they let their users select their preferred payment method when buying bitcoin. A dedicated support team is available to provide guidance and assist with any questions. Paxful is also a <a href="/en/posts/new-supporting-sponsorship-from-paxful">sponsor</a> of Bitcoin.org.'
     button: "Buy Bitcoin with Paxful"
     sponsor: "Sponsored Content"
+    discover: "Discover more ways to buy Bitcoin:"
+    bitcoin-exchange: "Use a Bitcoin Exchange"
+    bitcoin-exchange-text: "Our <a href=\"/en/exchanges\">Bitcoin Exchange</a> page, lists many different businesses that can help you buy Bitcoin using your bank account."
+    p2p-bitcoins: "Browse a P2P Directory"
+    p2p-bitcoins-text: "Using a peer-to-peer directory lets you search and browse through various sellers of Bitcoin in your area. Sellers have reviews and feedback scores to help you choose."
+    bitcoin-atm: "Use a Bitcoin ATM"
+    bitcoin-atm-text: "Bitcoin ATMs work like a regular ATM, except they allow you to deposit and withdrawal money so that you can buy and sell Bitcoin. <a href=\"https://coinatmradar.com/\">Coin ATM Radar</a> has an interactive map to help you find the closest Bitcoin ATM near you."
   community:
     title: "Community - Bitcoin"
     pagetitle: "Bitcoin Communities"
