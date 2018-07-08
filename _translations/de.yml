@@ -1,5 +1,5 @@
 de:
-  about-us:
+ about-us:
     title: "Über bitcoin.org"
     pagetitle: "Über bitcoin.org"
     pagedesc: "Bitcoin.org ist einer nachhaltigen Entwicklung von Bitcoin gewidmet."
@@ -56,7 +56,7 @@ de:
         Zahlungen und keine Limitationen in Bezug auf den minimalen oder maximalen
         Betrag, der versendet werden kann.
     pci: "Keine PCI-Konformität nötig"
-    pcitext: "Damit Kreditkartenzahlungen online akzeptiert werden können, sind normalerweise erhebliche Sicherheitsüberprüfungen nötig, um den PCI-Standard zu erfüllen. Bitcoin erfordert zwar, dass Sie Ihre Zahlungsaufforderung und Ihre </a>Wallet absichern</a>. Sie tragen aber nicht die Kosten und die Verantwortung, die mit der Verarbeitung von sensiblen Informationen Ihrer Kunden, wie etwa Kreditkartennummern, einhergehen."
+    pcitext: "Damit Kreditkartenzahlungen online akzeptiert werden können, sind normalerweise erhebliche Sicherheitsüberprüfungen nötig, um den PCI-Standard zu erfüllen. Bitcoin erfordert zwar, dass Sie Ihre Zahlungsaufforderung und Ihre <a href=\"#secure-your-wallet#\">Wallet absichern</a>. Sie tragen aber nicht die Kosten und die Verantwortung, die mit der Verarbeitung von sensiblen Informationen Ihrer Kunden, wie etwa Kreditkartennummern, einhergehen."
     visibility: "Vergrößern Sie kostenfrei Ihren Bekanntheitsgrad"
     visibilitytext: "Bitcoin ist ein Wachstumsmarkt voller neuer Kunden, die nach Möglichkeiten suchen, ihre Bitcoins auszugeben. Bitcoin als Zahlungsmittel zu akzeptieren ist ein einfacher Weg neue Kunden zu gewinnen und Ihr Geschäft bekannter zu machen. Eine neue Zahlungsmethode zu akzeptieren hat sich schon häufig als eine gute Entscheidung für Online-Unternehmen herausgestellt."
     multisig: "Multi-Signatur"
@@ -112,7 +112,7 @@ de:
     simple: "Funktioniert immer und überall"
     simpletext: "Genauso wie bei E-Mails müssen Sie Personen, denen Sie Bitcoins senden, nicht darum bitten, die gleiche Software, Wallet, oder den selben Service Anbieter zu verwenden. Sie benötigen nur deren Bitcoin-Adresse um jederzeit Transaktionen tätigen zu können. Das Bitcoin-Netzwerk ist immer erreichbar und schläft nie, auch nicht an Wochenenden und während Ferien."
     secure: "Sicherheit und Kontrolle über ihr Geld"
-    securetext: "Bitcoin-Transaktionen sind durch Kryptographie auf militärischem Niveau gesichert. Niemand kann eine Zahlung in Ihrem Namen machen oder Geld einziehen. Solange Sie die notwendigen Schritte zur </a>Sicherung Ihrer Wallet</a> beachten, kann Bitcoin Ihnen Kontrolle über Ihr Geld und ein hohes Maß an Sicherheit gegenüber viele Arten von Betrug bieten."
+    securetext: "Bitcoin-Transaktionen sind durch Kryptographie auf militärischem Niveau gesichert. Niemand kann eine Zahlung in Ihrem Namen machen oder Geld einziehen. Solange Sie die notwendigen Schritte zur <a href=\"#secure-your-wallet#\">Sicherung Ihrer Wallet</a> beachten, kann Bitcoin Ihnen Kontrolle über Ihr Geld und ein hohes Maß an Sicherheit gegenüber viele Arten von Betrug bieten."
     lowfee: "Wählen Sie die Gebühren selbst"
     lowfeetext: >
         Es ist keine Gebühr nötig, um Bitcoins zu empfangen und viele Wallets lassen
@@ -505,7 +505,7 @@ de:
     economy: "Ökonomie"
     bitcoinscreated: "Wie werden Bitcoins erzeugt?"
     bitcoinscreatedtxt1: "Neue Bitcoins werden durch \"Mining\", ein konkurrierendes und dezentrales Verfahren, generiert. In diesem Vorgang ist mit inbegriffen, dass Einzelne durch das Netzwerk für ihren Dienst belohnt werden. Bitcoin Miner verarbeiten Transaktionen und sichern das Netzwerk durch die Benutzung von spezieller Hardware ab, und erhalten im Austausch dafür neue Bitcoins."
-    bitcoinscreatedtxt2: "Das Bitcoin-Protokoll ist so entworfen, dass neue Bitcoins zu einer fixen Rate erzeugt werden. Das macht das Bitcoin-Mining zu einer sehr wettbewerbsorientierten Angelegenheit. Wenn mehr Miner dem Netzwerk beitreten, wird es zunehmend schwieriger Gewinn zu machen und die Schürfer müssen ihre Effizienz erhöhen, um ihre Betriebskosten zu senken. Keine zentrale Autorität oder ein Entwickler hat irgendeine Macht, um das System zu kontrollieren oder zu manipulieren, um den Gewinn zu vergrößern. Jeder Bitcoin Knoten auf der Welt weist alles ab, was nicht mit den erwarteten Regeln übereinstimmt."
+    bitcoinscreatedtxt2: "Das Bitcoin-Protokoll ist so entworfen, dass neue Bitcoins zu einer fixen Rate erzeugt werden. Das macht das Bitcoin-Mining zu einer sehr wettbewerbsorientierten Angelegenheit. Wenn mehr Miner dem Netzwerk beitreten, wird es zunehmend schwieriger, Gewinn zu machen und die Miner müssen ihre Effizienz erhöhen, um ihre Betriebskosten zu senken. Keine zentrale Autorität oder ein Entwickler hat irgendeine Macht, um das System zu kontrollieren oder zu manipulieren, um den Gewinn zu vergrößern. Jeder Bitcoin Knoten auf der Welt weist alles ab, was nicht mit den erwarteten Regeln übereinstimmt."
     bitcoinscreatedtxt3: "Bitcoins werden mit einer abnehmenden und vorhersagbaren Rate erzeugt. Die Anzahl neuer Bitcoins, die jedes Jahr erzeugt wird, wird automatisch über die Zeit halbiert, bis die Generierung bei einer Gesamtsumme von 21 Millionen existierender Bitcoins komplett eingestellt wird. Zu diesem Zeitpunkt werden die Bitcoin-Miner wahrscheinlich ausschließlich durch eine Vielzahl kleiner Transaktionsgebühren unterstützt"
     whyvalue: "Warum haben Bitcoins einen Wert?"
     whyvaluetxt1: "Bitcoins haben einen Wert, weil sie als eine Form von Geld nützlich sind. Bitcoin hat die Charakteristik von Geld (Beständigkeit, Portabilität, Übertragbarkeit, Knappheit, Teilbarkeit, und Erkennbarkeit), und basiert auf Eigenschaften der Mathematik anstatt auf physikalische Eigenschaften (wie Gold oder Silber) oder dem Vertrauen in zentrale Autoritäten (wie bei gesetzlichen Zahlungsmittel). In Kurzform; Bitcoin ist durch Mathematik gesichert. Mit diesen Attributen sind Vertrauen und Akzeptanz alles was benötigt wird, damit eine Form von Geld seinen Wert behält. Wie bei allen Währungen entsteht der Wert von Bitcoin direkt und nur durch den Menschen, die es als Bezahlung akzeptieren."
@@ -557,6 +557,10 @@ de:
         Transaktionen können ohne Gebühren vorgenommen werden, aber es kann Tage oder
         Wochen dauern, bis eine kostenlose Transaktion bestätigt wird. Auch wenn sich
         die Gebühren zukünftig erhöhen können, kosten normale Gebühren aktuell sehr
+        wenig. Alle <a href="#choose-your-wallet#">Bitcoin Wallets</a>, die auf Bitcoin.org
+        aufgelistet sind, fügen einer Transaktion eine deren Ansicht nach angemessene
+        Gebühr hinzu; die meisten Wallets geben Ihnen auch die Möglichkeit, die Gebühr
+        zu überprüfen, bevor die Transaktion gesendet wird.
     feetxt2: >
         Transaktionsgebühren dienen als Schutz vor Nutzern, die Transaktionen senden,
         um das Netzwerk zu überlasten, und um Miner, die dabei helfen das Netzwerk
@@ -1069,4 +1073,3 @@ de:
       quantum: ist-bitcoin-verwundbar-durch-quantencomputing
       help: hilfe
       morehelp: mehr-hilfe
-
