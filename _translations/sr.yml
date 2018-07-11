@@ -378,7 +378,7 @@ sr:
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">IRC Kanal #bitcoin-core-dev</a>na Freenode-u."
     slack: "<a href=\"https://slack.bitcoincore.org/\">Bitcoin Core Slack Kanal</a>"
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StachExchange</a>"
-    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Razvoj & Tehnicka diskusija Forum</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Razvoj &amp; Tehnicka diskusija Forum</a>"
   download:
     title: "Preuzimanje - Bitkoin"
     pagetitle: "Preuzimanje Bitcoin Core"
@@ -867,7 +867,7 @@ sr:
     confirmation: "Potvrda"
     confirmationtxt: "Potvda znači da je transakcija <b>obrađena na mreži i da je vrlo malo verovatno da ona bude obrnuta</b>. Transakcije primaju potvrde kada se uključe u blok i za svaki kasniji <a href=\"#vocabulary##[vocabulary.block]\">blok</a>. Čak i jedna potvrda može se smatrati sigurnom za transakcije manje vrednosti, međutim za veće transakcije poput 1000$ USD, ima smisla sačekati 6 ili više potvrda. Svaka potvrda <i>eksponencijalno</i> smanjuje rizik od obrtanja transakcije."
     cryptography: "Kriptografija"
-    cryptographytxt: "Kriptografija je grana matematike koja nam dozvoljava da napravimo </b>matematičke dokaze koji pružaju veoma visok nivo zaštite</b>. Poslovni subjetki na internetu i bankarstvu već koriste kriptografiju. U slučaju Bitkoina, kriptografija se koristi kako bi učinila nemogućim da bilo ko potroši sredstva drugog korisnika ili da korumpira <a href=\"#[vocabulary.blockchain]\">blokčejn</a>. Takođe se koristi i za enkripciju novčanika, tako da se on ne može koristiti bez šifre."
+    cryptographytxt: "Kriptografija je grana matematike koja nam dozvoljava da napravimo <b>matematičke dokaze koji pružaju veoma visok nivo zaštite</b>. Poslovni subjetki na internetu i bankarstvu već koriste kriptografiju. U slučaju Bitkoina, kriptografija se koristi kako bi učinila nemogućim da bilo ko potroši sredstva drugog korisnika ili da korumpira <a href=\"#[vocabulary.blockchain]\">blokčejn</a>. Takođe se koristi i za enkripciju novčanika, tako da se on ne može koristiti bez šifre."
     doublespend: "Dvostrano Trošenje"
     doublespendtxt: "Ukoliko maliciozan korisnik pokuša da <b>potroši svoje bitkoine na dva različita primaoca u isto vreme</b>, ovo se zove duplo trošenje. Bitkoin <a href=\"#[vocabulary.mining]\">rudarenje</a> i <a href=\"#[vocabulary.blockchain]\">blokčejn</a> su tu da naprave koncenzus na mreži, koja od dve transakcije će biti potvrđena i smatrana validnom."
     hashrate: "Haš stopa"
