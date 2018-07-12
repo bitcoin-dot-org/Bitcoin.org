@@ -921,7 +921,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     border-radius:1px;
 }
 .btn-home {
-    width: 325px;
+    width: 270px;
     height: 55px;
 }
 .btn:not(:first-child) {
@@ -951,6 +951,9 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     color: #FF7E00;
     background: #fff;
     border: 1px solid #FF7E00;
+}
+.btn-buy {
+    margin-top: 2em;
 }
 .get-started-btn {
     margin: 0 auto 70px;
@@ -1185,6 +1188,16 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .buy-card p {
     margin: 30px 0 0;
+}
+.buy-discover h2 {
+    color: #13161F;
+    font-size: 1.5em;
+}
+.paxful-sponsor {
+  color: #9D9D9D !important;
+  display: inline-block;
+  font-size: 1em !important;
+  padding: 6px 72px;
 }
 /* Buy bitcoin page end */
 
