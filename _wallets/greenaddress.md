@@ -47,13 +47,13 @@ platform:
     name: desktop
     default: &DEFAULT
       text: "walletgreenaddress"
-      link: "https://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp"
-      source: "https://github.com/greenaddress/WalletCrx"
+      link: "https://github.com/greenaddress/WalletElectron/releases"
+      source: "https://github.com/greenaddress/WalletElectron"
       screenshot: "greenaddressdesktop.png?1528322191"
       check:
         control: "checkpasscontrolmulti"
         validation: "checkfailvalidationcentralized"
-        transparency: "checkfailtransparencyremote"
+        transparency: "checkpasstransparencyopensource"
         environment: "checkpassenvironmenttwofactor"
         privacy: "checkpassprivacybasic"
         fees: "checkgoodfeecontrolfull"
