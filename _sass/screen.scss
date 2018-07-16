@@ -2521,6 +2521,10 @@ br.big {
     background: url(../img/flags/africa.svg?1528322191) center no-repeat;
     background-size: contain;
 }
+.exchanges-p2p-title::before {
+    background: url(../img/flags/ALL.svg?1528322191) center no-repeat;
+    background-size: contain;
+}
 .expanded .exchanges-content-row {
     display: -webkit-box;
     display: -ms-flexbox;
