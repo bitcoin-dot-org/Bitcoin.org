@@ -396,8 +396,7 @@ one of the following topics.
 
 * [ ] Multisig wallets like GreenAddress.it
 * [x] Hardware wallets like Trezor
-* [ ] Assurance contracts such as those created by [Lighthouse](http://blog.vinumeris.com/2014/05/17/lighthouse/)
-    * [ ] Mention that the recipients of assurance contracts can pay to their own contract to guarantee that they meet their goal and receive the funds.
+* [ ] Mention that the recipients of assurance contracts can pay to their own contract to guarantee that they meet their goal and receive the funds.
 * [ ] Document BIP62 changes which will be soft fork introduced at some point in the future
 * [ ] Prepare documentation for floating fees currently in the main branch and scheduled for the 0.10 release.
 
