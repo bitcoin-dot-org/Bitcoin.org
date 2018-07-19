@@ -5,28 +5,12 @@
 id: bither
 title: "Bither"
 titleshort: "Bither"
-compat: "mobile ios android desktop windows mac linux"
+compat: "mobile android desktop windows mac linux"
 level: 2
 platform:
   - mobile:
     name: mobile
     os:
-      - name: ios
-        text: "walletbither"
-        link: "https://itunes.apple.com/us/app/bither/id899478936"
-        source: "https://github.com/bither/bither-ios"
-        screenshot: "bithermobile.png?1528322191"
-        check:
-          control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationspvp2p"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
-          fees: "checkfailfeecontrolstatic"
-        privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: android
         text: "walletbither"
         link: "https://play.google.com/store/apps/details?id=net.bither"
