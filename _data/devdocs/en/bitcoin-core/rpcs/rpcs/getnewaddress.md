@@ -22,7 +22,15 @@ The `getnewaddress` RPC {{summary_getNewAddress}}
   t: "string"
   p: "Optional<br>(0 or 1)"
   d: "The name of the account to put the address in.  The default is the default account, an empty string (\"\")"
+{% enditemplate %}
 
+*Parameter #2---address type*
+
+{% itemplate ntpd1 %}
+- n: "Address Type"
+  t: "string"
+  p: "Optional<br>(0 or 1)"
+  d: "The address type to use. Options are 'legacy', 'p2sh-segwit', and 'bech32'. Default is set by -addresstype"
 {% enditemplate %}
 
 *Result---a bitcoin address never previously returned*
