@@ -141,18 +141,18 @@ en:
     submit_new_translation: 'Do you want to translate the paper into your language? Visit the <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitcoin whitepaper repository on GitHub</a> for instructions and <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">open an issue</a> if you have any questions.'
   buy:
     title: "Buy Bitcoin"
-    pagetitle: "How to buy Bitcoin"
-    summary: "There are several ways you can buy Bitcoin."
+    pagetitle: "How to buy bitcoin"
+    summary: "There are several ways you can buy bitcoin."
     paxful: 'With more than 300 ways to buy and sell bitcoin, Paxful, a leading peer-to-peer (P2P) exchange and <a href="/en/posts/new-supporting-sponsorship-from-paxful">Bitcoin.org sponsor</a>, offers a convenient bitcoin marketplace.'
     button: "Buy Bitcoin with Paxful"
     sponsor: "Sponsored Content"
-    discover: "Discover more ways to buy Bitcoin:"
+    discover: "Discover more ways to buy bitcoin:"
     bitcoin-exchange: "Use a Bitcoin Exchange"
-    bitcoin-exchange-text: "Our <a href=\"/en/exchanges\">Bitcoin Exchange</a> page, lists many different businesses that can help you buy Bitcoin using your bank account."
+    bitcoin-exchange-text: "Our <a href=\"/en/exchanges\">Bitcoin Exchange</a> page, lists many different businesses that can help you buy bitcoin using your bank account."
     p2p-bitcoins: "Browse a P2P Directory"
-    p2p-bitcoins-text: "Using a peer-to-peer directory lets you search and browse through various sellers of Bitcoin in your area. Sellers have reviews and feedback scores to help you choose."
+    p2p-bitcoins-text: "Using an exchange based off of a <a href=\"/en/exchanges#p2p\">peer-to-peer directory</a> lets you search and browse through various sellers of bitcoin. Sellers have reviews and feedback scores to help you choose."
     bitcoin-atm: "Use a Bitcoin ATM"
-    bitcoin-atm-text: "Bitcoin ATMs work like a regular ATM, except they allow you to deposit and withdrawal money so that you can buy and sell Bitcoin. <a href=\"https://coinatmradar.com/\">Coin ATM Radar</a> has an interactive map to help you find the closest Bitcoin ATM near you."
+    bitcoin-atm-text: "Bitcoin ATMs work like a regular ATM, except they allow you to deposit and withdrawal money so that you can buy and sell bitcoin. <a href=\"https://coinatmradar.com/\">Coin ATM Radar</a> has an interactive map to help you find the closest bitcoin ATM near you."
   community:
     title: "Community - Bitcoin"
     pagetitle: "Bitcoin Communities"
