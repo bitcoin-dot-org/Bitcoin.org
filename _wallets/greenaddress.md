@@ -5,7 +5,7 @@
 id: greenaddress
 title: "GreenAddress"
 titleshort: "Green Address"
-compat: "mobile desktop web android ios windows mac linux"
+compat: "mobile desktop android ios windows mac linux"
 level: 3
 platform:
   - mobile:
@@ -47,13 +47,13 @@ platform:
     name: desktop
     default: &DEFAULT
       text: "walletgreenaddress"
-      link: "https://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp"
-      source: "https://github.com/greenaddress/WalletCrx"
+      link: "https://github.com/greenaddress/WalletElectron/releases"
+      source: "https://github.com/greenaddress/WalletElectron"
       screenshot: "greenaddressdesktop.png?1528322191"
       check:
         control: "checkpasscontrolmulti"
         validation: "checkfailvalidationcentralized"
-        transparency: "checkfailtransparencyremote"
+        transparency: "checkpasstransparencyopensource"
         environment: "checkpassenvironmenttwofactor"
         privacy: "checkpassprivacybasic"
         fees: "checkgoodfeecontrolfull"
@@ -68,23 +68,4 @@ platform:
         <<: *DEFAULT
       - name: linux
         <<: *DEFAULT
-  - web:
-    name: web
-    os:
-      - name: web
-        text: "walletgreenaddress"
-        link: "https://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp"
-        source: "https://github.com/greenaddress/WalletCrx"
-        screenshot: "greenaddressdesktop.png?1528322191"
-        check:
-          control: "checkpasscontrolmulti"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencyremote"
-          environment: "checkpassenvironmenttwofactor"
-          privacy: "checkpassprivacybasic"
-          fees: "checkgoodfeecontrolfull"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 ---

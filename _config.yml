@@ -12,6 +12,7 @@ langsorder:
 - 'pt_BR'
 - 'ro'
 - 'sl'
+- 'sr'
 - 'sv'
 - 'tr'
 - 'el'
@@ -48,6 +49,7 @@ langs:
   'ro': 'Română'
   'ru': 'Русский'
   'sl': 'Slovenščina'
+  'sr': 'Srpski'
   'sv': 'Svenska'
   'tr': 'Türkçe'
   'uk': 'Українська'
@@ -106,6 +108,12 @@ redirects:
   /tr/yeni-baslamak: /tr/baslarken
   /en/bitcoin-for-press: /en/press
   /de/ueber: /de/faq
+  /de/bitcoin-paper: /de/bitcoin-abhandlung
+  /de/developer-examples: /de/entwickler-beispiele
+  /de/developer-glossary: /de/entwickler-glossar
+  /de/developer-guide: /de/entwickler-guide
+  /de/developer-reference: /de/entwickler-referenzen
+  /de/developer-documentation: /de/entwickler-dokumentation
   /en/about: /en/faq
   /es/acerca-de: /es/faq
   /fr/a-propos: /fr/faq
@@ -122,6 +130,12 @@ redirects:
   /it/bitcoin-per-appassionati: /it/innovazione
   /nl/bitcoin-voor-liefhebbers: /nl/innovatie
   /pl/bitcoin-dla-entuzjastow: /pl/innowacje
+  /sr/bitcoin-paper: /sr/bitcoin-papir
+  /sr/developer-documentation: /sr/programeri-dokumentacija
+  /sr/developer-examples: /sr/programeri-primeri
+  /sr/developer-glossary: /sr/programeri-recnik
+  /sr/developer-guide: /sr/programeri-vodic
+  /sr/developer-reference: /sr/programeri-reference
   ## Old releases pages; stop adding to this list after 0.8.2
   /releases/2011/04/27/v0.3.21: /en/release/v0.3.21
   /releases/2011/06/05/v0.3.22: /en/release/v0.3.22
