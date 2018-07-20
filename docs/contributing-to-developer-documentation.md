@@ -396,7 +396,6 @@ one of the following topics.
 
 * [ ] Multisig wallets like GreenAddress.it
 * [x] Hardware wallets like Trezor
-* [ ] Mention that the recipients of assurance contracts can pay to their own contract to guarantee that they meet their goal and receive the funds.
 * [ ] Document BIP62 changes which will be soft fork introduced at some point in the future
 * [ ] Prepare documentation for floating fees currently in the main branch and scheduled for the 0.10 release.
 
