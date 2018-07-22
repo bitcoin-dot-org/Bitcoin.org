@@ -24,6 +24,7 @@ The `getblock` RPC {{summary_getBlock}}
 {% enditemplate %}
 
 *Parameter #2---whether to get JSON or hex output*
+Prior to 0.15.0 release the verbose parameter was of boolean type. After the 0.15.0 release, the variable has been renamed to `verbosity` and now takes an integer from 0 to 2. It is backward compatible with prior releases with verbose level 0 equivalent to verbose=false, whilst verbose level 1 is equivalent to verbose=true.
 
 {% itemplate ntpd1 %}
 - n: "Format"
@@ -33,7 +34,7 @@ The `getblock` RPC {{summary_getBlock}}
 
 {% enditemplate %}
 
-*Result (if format was `false`)---a serialized block*
+*Result (if format was `0`)---a serialized block*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
@@ -43,7 +44,7 @@ The `getblock` RPC {{summary_getBlock}}
 
 {% enditemplate %}
 
-*Result (if format was `true` or omitted)---a JSON block*
+*Result (if format was `1` or omitted)---a JSON block*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
@@ -115,6 +116,111 @@ The `getblock` RPC {{summary_getBlock}}
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "*Added in Bitcoin Core 0.12.0*<br><br>The median block time in Unix epoch time"  
+
+- n: "→<br>`nonce`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The nonce which was successful at turning this particular block into one that could be added to the best block chain"
+
+- n: "→<br>`bits`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The value of the *nBits* field in the block header, indicating the target threshold this block's header had to pass"
+
+- n: "→<br>`difficulty`"
+  t: "number (real)"
+  p: "Required<br>(exactly 1)"
+  d: "The estimated amount of work done to find this block relative to the estimated amount of work done to find block 0"
+
+- n: "→<br>`chainwork`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The estimated number of block header hashes miners had to check from the genesis block to this block, encoded as big-endian hex"
+
+- n: "→<br>`previousblockhash`"
+  t: "string (hex)"
+  p: "Optional<br>(0 or 1)"
+  d: "The hash of the header of the previous block, encoded as hex in RPC byte order.  Not returned for genesis block"
+
+- n: "→<br>`nextblockhash`"
+  t: "string (hex)"
+  p: "Optional<br>(0 or 1)"
+  d: "The hash of the next block on the best block chain, if known, encoded as hex in RPC byte order"
+
+{% enditemplate %}
+
+*Result (if format was `2`)--- a decoded block as a JSON object with verbose transaction data*
+
+{% itemplate ntpd1 %}
+- n: "`result`"
+  t: "object/null"
+  p: "Required<br>(exactly 1)"
+  d: "An object containing the requested block, or JSON `null` if an error occurred"
+
+- n: "→<br>`hash`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The hash of this block's block header encoded as hex in RPC byte order.  This is the same as the hash provided in parameter #1"
+
+- n: "→<br>`confirmations`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The number of confirmations the transactions in this block have, starting at 1 when this block is at the tip of the best block chain.  This score will be -1 if the the block is not part of the best block chain"
+
+- n: "→<br>`size`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The size of this block in serialized block format, counted in bytes"
+
+- n: "→<br>`strippedsize`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>The size of this block in serialized block format excluding witness data, counted in bytes"
+
+- n: "→<br>`weight`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>This block's weight as defined in BIP141"
+
+- n: "→<br>`height`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The height of this block on its block chain"
+
+- n: "→<br>`version`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "This block's version number.  See [block version numbers][section block versions]"
+
+- n: "→<br>`versionHex`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>This block's version formatted in hexadecimal"
+
+- n: "→<br>`merkleroot`"
+  t: "string (hex)"
+  p: "Required<br>(exactly 1)"
+  d: "The merkle root for this block, encoded as hex in RPC byte order"
+
+- n: "→<br>`tx`"
+  t: "array"
+  p: "Required<br>(exactly 1)"
+  d: "An array containing the full transaction details of each transaction in the output as given by `getrawtransaction` in this block. The transactions appear in the array in the same order they appear in the serialized block"
+
+- n: "→ →<br>TXID"
+  t: "string (hex)"
+  p: "Required<br>(1 or more)"
+  d: "The TXID of a transaction in this block, encoded as hex in RPC byte order"
+
+- n: "→<br>`time`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "The value of the *time* field in the block header, indicating approximately when the block was created"
+
+- n: "→<br>`mediantime`"
+  t: "number (int)"
+  p: "Required<br>(exactly 1)"
+  d: "*Added in Bitcoin Core 0.12.0*<br><br>The median block time in Unix epoch time"
 
 - n: "→<br>`nonce`"
   t: "number (int)"
