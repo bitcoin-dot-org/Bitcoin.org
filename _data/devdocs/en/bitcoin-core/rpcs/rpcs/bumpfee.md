@@ -39,7 +39,7 @@ if the wallet or mempool contains a transaction that spends one of the transacti
 - n: "→ <br>`confTarget`"
   t: "numeric (int)"
   p: "Optional<br>(0 or 1)"
-  d: "The confirmation target in blocks. Based on this value the new fee will be calculated using the same code as the `estimatefee` RPC. If not set, the default target of ´6´ blocks will be used"
+  d: "The confirmation target in blocks. Based on this value the new fee will be calculated using the same code as the `estimatefee` RPC (deprecated). If not set, the default target of ´6´ blocks will be used"
   
 - n: "→ <br>`totalFee`"
   t: "numeric (satoshis)"
