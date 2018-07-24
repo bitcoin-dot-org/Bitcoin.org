@@ -19,7 +19,9 @@ The `estimatefee` RPC {{summary_estimateFee}}
 - n: "Blocks"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block. Has to be between 2 and 25 blocks"
+  d: "Deprecated: will be removed in a later version of Bitcoin Core
+  
+  The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block. Has to be between 2 and 25 blocks"
 
 {% enditemplate %}
 
