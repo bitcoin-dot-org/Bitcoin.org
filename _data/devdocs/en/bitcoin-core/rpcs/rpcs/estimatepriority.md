@@ -26,9 +26,7 @@ Transaction priority is relative to a transaction's byte size.
 - n: "Blocks"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "Deprecated: will be removed in a later version of Bitcoin Core
-  
-  The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block based purely on its priority"
+  d: "Deprecated: will be removed in a later version of Bitcoin Core<br><br>The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block based purely on its priority"
 
 {% enditemplate %}
 
