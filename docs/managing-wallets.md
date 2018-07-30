@@ -29,6 +29,7 @@ in the future
 - The identity of CEOs and/or developers is public
 - Avoid address reuse by displaying a new receiving address for each transaction
   in the wallet UI
+- Uses deterministic ECDSA nonces (RFC 6979)
 - Avoid address reuse by using a new change address for each transaction
 - User has access to private keys
 - If private keys or encryption keys are stored online:
@@ -58,7 +59,6 @@ Optional criteria (some could become requirements):
 
 - Received independent security audit(s)
 - Does not show "received from" Bitcoin addresses in the UI
-- Uses deterministic ECDSA nonces (RFC 6979)
 - Provides a bug reporting policy on the website
 - Website serving executable code or requiring authentication is included in the
   [HSTS preload list](https://hstspreload.appspot.com/)
