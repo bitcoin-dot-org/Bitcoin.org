@@ -3,6 +3,7 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/bitcoin-core/rpcs/rpcs/estimatepriority.md" %}
+{% assign DEPRECATED='Deprecated' %}
 
 ##### EstimatePriority
 {% include helpers/subhead-links.md %}
@@ -25,7 +26,7 @@ Transaction priority is relative to a transaction's byte size.
 - n: "Blocks"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block based purely on its priority"
+  d: "Deprecated: will be removed in a later version of Bitcoin Core<br><br>The maximum number of blocks a transaction should have to wait before it is predicted to be included in a block based purely on its priority"
 
 {% enditemplate %}
 
@@ -65,6 +66,6 @@ Result:
 
 *See also*
 
-* [EstimateFee][rpc estimatefee]: {{summary_estimateFee}}
+* [EstimateFee][rpc estimatefee]: {{summary_estimateFee}} {{DEPRECATED}}
 
 {% endautocrossref %}
