@@ -160,7 +160,7 @@ Use v0.n.n in abbreviation title to prevent autocrossrefing.
 {% autocrossref %}
 
 * [CreateMultiSig][rpc createmultisig]: {{summary_createMultiSig}}
-* [EstimateFee][rpc estimatefee]: {{summary_estimateFee}} {{UPDATED0_14_0}}
+* [EstimateFee][rpc estimatefee]: {{summary_estimateFee}} {{UPDATED0_14_0}}{{DEPRECATED}}
 * [EstimatePriority][rpc estimatepriority]: {{summary_estimatePriority}} {{DEPRECATED}}
 * [GetMemoryInfo][rpc getmemoryinfo]: {{summary_getMemoryInfo}} {{NEW_14_0}}
 * [ValidateAddress][rpc validateaddress]: {{summary_validateAddress}} {{UPDATED0_13_0}}
