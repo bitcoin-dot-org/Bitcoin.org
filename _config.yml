@@ -142,6 +142,29 @@ redirects:
   /sr/developer-glossary: /sr/programeri-recnik
   /sr/developer-guide: /sr/programeri-vodic
   /sr/developer-reference: /sr/programeri-reference
+  ## Buy bitcoin page; remove as each language is updated to include the translated page
+  /ar/buy: /en/buy
+  /bg/buy: /en/buy
+  /da/buy: /en/buy
+  /el/buy: /en/buy
+  /es/buy: /en/buy
+  /fa/buy: /en/buy
+  /fr/buy: /en/buy
+  /hi/buy: /en/buy
+  /hu/buy: /en/buy
+  /it/buy: /en/buy
+  /ja/buy: /en/buy
+  /ko/buy: /en/buy
+  /nl/buy: /en/buy
+  /pl/buy: /en/buy
+  /pt_BR/buy: /en/buy
+  /ro/buy: /en/buy
+  /ru/buy: /en/buy
+  /sl/buy: /en/buy
+  /sv/buy: /en/buy
+  /tr/buy: /en/buy
+  /uk/buy: /en/buy
+  /zh_TW/buy: /en/buy  
   ## Old releases pages; stop adding to this list after 0.8.2
   /releases/2011/04/27/v0.3.21: /en/release/v0.3.21
   /releases/2011/06/05/v0.3.22: /en/release/v0.3.22
