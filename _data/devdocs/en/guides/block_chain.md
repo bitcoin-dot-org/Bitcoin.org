@@ -218,9 +218,9 @@ miners almost always do include additional transactions in order to
 collect their transaction fees.
 
 All transactions, including the coinbase transaction, are encoded into
-blocks in binary rawtransaction format.
+blocks in binary raw transaction format.
 
-The rawtransaction format is hashed to create the transaction
+The raw transaction format is hashed to create the transaction
 identifier (txid). From these txids, the [merkle tree][/en/glossary/merkle-tree]{:#term-merkle-tree}{:.term} is constructed by pairing each
 txid with one other txid and then hashing them together. If there are
 an odd number of txids, the txid without a partner is hashed with a
