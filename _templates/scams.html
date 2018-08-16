@@ -1,0 +1,68 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: base
+id: scams
+end_of_page: |
+  <script src="/js/jquery/jquery-1.11.2.min.js"></script>
+  <script src="/js/jquery/jquery-ui.min.js"></script>
+  <script src="/js/jquery/jquery.qrcode.min.js"></script>
+  <script>updateToc();</script>
+  <script>accordion();</script>
+  <script>onScrollButton();</script>
+  <script>boxShow();</script>
+voc:
+  - blackmail
+  - fake exchanges
+  - free giveaways
+  - malware
+  - money transfer fraud
+  - phishing emails
+  - phishing websites
+  - ponzi schemes
+  - pyramid schemes
+  - prize giveaways
+  - pump and dumps
+  - ransomware
+  - scam coins
+
+---
+
+<div class="hero">
+  <div class="container hero-container">
+    <h1>{% translate pagetitle %}</h1>
+    <p class="summarytxt">{% translate summary %}</p>
+    {% include helpers/hero-social.html %}
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="row toc-row">
+    <div id="toc" class="toc">
+      <div>
+        <button class="mob-sidebar-open" hidden>ALL TOPICS</button>
+        <div class="sidebar">
+          <div class="sidebar-inner vocabulary-list">
+            <button class="mob-sidebar-close" hidden></button>
+            <ul>
+            {% alphab_for v in page.voc %}
+              <li><a href="#{% translate {{v}} anchor.scams %}">{% translate {{v}} %}</a></li>
+            {% endalphab_for %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="toccontent">
+      {% alphab_for v in page.voc %}
+      <div class="toccontent-block boxexpand expanded">
+        <h2 id="{% translate {{v}} anchor.scams %}">{% translate {{v}} %}</h2>
+        <p>{% translate {{v}}txt %}</p>
+      </div>
+      {% endalphab_for %}
+    </div>
+
+  </div>
+</div>
