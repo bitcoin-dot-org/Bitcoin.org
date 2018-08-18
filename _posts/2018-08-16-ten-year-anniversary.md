@@ -47,7 +47,7 @@ Here are a few mentions and links to bitcoin.org from over the years:
 
 Today, bitcoin.org is one of the most visited Bitcoin websites and receives
 millions of visitors. Many thanks to all of the
-[contributors](/en/about-us#github) who have spent time their improving the
+[contributors](/en/about-us#github) who have spent their time improving the
 site!
 
 ## Interested in getting involved?
