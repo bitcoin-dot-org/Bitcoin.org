@@ -8,7 +8,7 @@ required:
 
     summary_max_255_characters_no_formatting: >
         The target is the threshold below which a block header hash must
-        be in order for the block to valid, and nBits is the encoded
+        be in order for the block to be valid, and nBits is the encoded
         form of the target threshold as it appears in the block header.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
