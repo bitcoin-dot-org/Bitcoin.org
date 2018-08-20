@@ -3,8 +3,8 @@
 # http://opensource.org/licenses/MIT.
 
 id: safetmini
-title: "ARCHOS Safe-T mini"
-titleshort: "ARCHOS Safe-T mini"
+title: "Archos Safe-T mini"
+titleshort: "Safe-T mini"
 compat: "hardware"
 level: 2
 platform:
@@ -19,7 +19,7 @@ platform:
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
-          transparency: "checkgoodtransparencydeterministic"
+          transparency: "checkfailtransparencynew"
           environment: "checkgoodenvironmenthardware"
           privacy: "checkneutralprivacyvariable"
           fees: "checkneutralfeecontrolvariable"
