@@ -149,7 +149,7 @@ de:
     forums: "Foren"
     bitcointalk: "<a href=\"https://bitcointalk.org/\">BitcoinTalk-Forum</a>"
     reddit: "Reddits Bitcoin-Community"
-    stackexchange: "Bitcoin StackExchange (Frage & Antwort, englisch)"
+    stackexchange: "Bitcoin StackExchange (Frage &amp; Antwort, englisch)"
     irc: "IRC-Chat"
     ircjoin: "IRC-Channels auf <a href=\"https://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">freenode</a>."
     chanbitcoin: "(Bitcoin allgemein, englisch)"
@@ -385,7 +385,7 @@ de:
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">IRC Channel #bitcoin-core-dev</a> auf freenode."
     slack: "<a href=\"https://slack.bitcoincore.org/\">Bitcoin Core Slack Channel</a>"
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
-    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development & Technical Discussion Forum</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
     title: "Download - Bitcoin"
     pagetitle: "Download Bitcoin Core"
