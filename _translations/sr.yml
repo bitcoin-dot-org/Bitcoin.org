@@ -18,7 +18,7 @@ sr:
     missiontxt1: "Informisanje korisnika kako bi izbegli uobičajene greške."
     missiontxt2: "Pružiti tačan opis Bitkoinovih osobina, potencijalnih upotreba i ograničenja."
     missiontxt3: "Transparento prikazivanje upozorenja i događaja u Bitkoin mreži."
-    missiontxt4: "Uključiti talentovane ljude da pomognu razvoj Bitcoina na različite načine."
+    missiontxt4: "Uključiti talentovane ljude da pomognu razvoj Bitkoina na različite načine."
     missiontxt5: "Obezbediti vidljivost i prilagodljivost Bitkoin ekosistema na u većoj meri."
     missiontxt6: "Unaprediti dostupnost Bitkoina širom sveta pomoću internacionalizacije."
     missiontxt7: "Ostati nepristrasan izvor informacija o Bitkoinu."
@@ -57,7 +57,7 @@ sr:
     pci: "Ne postoje PCI propisi koje morate ispuniti"
     pcitext: "Prihvatanje kreditnih kartica na internetu zahteva opširne sigurnosne provere kako bi se ispoštovali PCI standardi. Bitkoin od vas zahteva da osigurate svoj novčanik i svoje zahteve za uplatu, međutim, nemate troškove i odgovornost prilikom procesuiranje osetljivih informacija vaših kupaca, kao kod kreditnih kartica."
     visibility: "Dobijte malo besplatne reklame"
-    visibilitytext: "Bitcoin je rastuće tržište novih kupaca u potrazi za načinima da svoje Bitkoine potroše. Prihvatanje Bitkoina kao inovativnog načina plaćanja pokazalo se kao pametna ideja u praksi za mnoge online biznise."
+    visibilitytext: "Bitkoin je rastuće tržište novih kupaca u potrazi za načinima da svoje Bitkoine potroše. Prihvatanje Bitkoina kao inovativnog načina plaćanja pokazalo se kao pametna ideja u praksi za mnoge online biznise."
     multisig: "Zajedički-potpis"
     multisigtext: "Bitkoin takođe ima i svojstvo zajedničkog potpisa, koje omogućuje da bitkoin bude potrošen jedino ukoliko većina ili sva ovlašćena lica daju svoj potpis, čime odobravaju transakciju. Zajedinčki potpisi, odnosno autorizacija transakcija od strane većeg broja lica kako bi ona bila potvrđena, može bii korisna kod upravnih odbora za sprečavanje pronevere kao i praćenja odobrenja pojedinih članova i kontroli troškova."
     transparency: "Računovodstvena transparentnost"
@@ -116,14 +116,14 @@ sr:
         odabirom visine provizije. Veliki broj novčanika podrazumeva razumne provizije.
         Veća provizija ohrabruje bržu <a href="#you-need-to-know##instant">potvrdu
         </a>transkacije. Provizije ne zavise od iznosa koji šaljete, možete poslati
-        100,000 bitkoina za i provizija će biti ista kao i kada šaljete 1 bitcoin.
+        100,000 bitkoina za i provizija će biti ista kao i kada šaljete 1 bitkoin.
     anonymous: "Zaštitite svoj indetitet"
     anonymoustext: "U Bitkoin sistemu nema brojeva kreditnih kartica koje neovlašćeno lice može zloupotrebiti i upotrebiti to kao krađju i zloupotrebu vašeg identiteta. Zapravo, uplate je moguće slati i bez otkrivanja identiteta, kao i prilikom keš transakcije papirnog novca. Bitno je da znate da je potrebno preuzeti određjene korake kako bi se <a href=\"#protect-your-privacy#\">zaštitila privatnost</a>."
   bitcoin-paper:
-    title: "Bitcoin: Direktan Elektronski Keš Sistem"
-    pagetitle: "Bitcoin: Direktan Elektronski Keš Sistem"
-    summary: "Dokument koji je predstavio Bitcoin"
-    description: "Svakome ko želi da sazna kako Bitcoin funkcioniše, preporučujemo da pročita originalni dokument koji je napisao Satoshi Nakamoto. Odaberite koju prevedenu verziju dokumenta želite da pročitate."
+    title: "Bitkoin: Direktan Elektronski Keš Sistem"
+    pagetitle: "Bitkoin: Direktan Elektronski Keš Sistem"
+    summary: "Dokument koji je predstavio Bitkoin"
+    description: "Svakome ko želi da sazna kako Bitkoin funkcioniše, preporučujemo da pročita originalni dokument koji je napisao Satoshi Nakamoto. Odaberite koju prevedenu verziju dokumenta želite da pročitate."
     translated_by: "prevod"
     submit_new_translation: 'Da li želite da prevedete dokument na svoj maternji jezik? Posetite <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitkoin whitepaper repozitorijum na GitHub-u</a> za instrukcije i <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">otvorite problem</a> ukoliko imate pitanja.'
   buy:
@@ -157,7 +157,7 @@ sr:
     facebook: "<a href=\"https://www.facebook.com/bitcoins\">Facebook Stranica</a>"
     meetups: "Okupljanja"
     meetupevents: "Bitkoin Konferencije i Događaji"
-    meetupgroup: "Bitcoin Okupljanja"
+    meetupgroup: "Bitkoin Okupljanja"
     meetupbitcointalk: "Bitkoin Okupljanja na BitcoinTalk"
     meetupwiki: "Bitkoin okupljanja na Wiki"
     nonprofit: "Neprofitne organizacije"
@@ -172,23 +172,23 @@ sr:
     walletcatweb: "Internet"
     walletbitcoincore: "Bitcoin Core je potpuni Bitkoin klijent i čini okosnicu mreže. Pruža visoki nivo bezbednosti, privatnosti, i stabilnosti. Medjutim, ima manjak mogućnosti i zauzima mnogo prostora i memorije."
     walletbitcoinknots: "Bitcoin Knots je potpuni Bitkoin klijent bitan deo mreže, Nudi veliki niv sigurnosti, privatnosti i stabilnosti. Uključuje naprednije opcije od Bitcoin Core softvera, ali nije toliko detaljno testiran. Zauzima mnogo prostora i memorije."
-    walletarmory: "Armorz je Bitcoin klijent za napredne korisnike. Nudi mnoštvo opcija za backup i enkripciju, i daje mogućnost hladnog-skladištenja na računarima koji nisu povezani na mrežu."
-    walletelectrum: "Electrum je fokusiran na brzinu i jednostavnost i ne konzumira mnogo resursa. Koristi servere koji mogu da podnesu i najzahtevnije delove Bitcoin sistema, takodje ima i opciju da oporaviti svoj novčanik uz pomoć tajne fraze."
+    walletarmory: "Armorz je Bitkoin klijent za napredne korisnike. Nudi mnoštvo opcija za backup i enkripciju, i daje mogućnost hladnog-skladištenja na računarima koji nisu povezani na mrežu."
+    walletelectrum: "Electrum je fokusiran na brzinu i jednostavnost i ne konzumira mnogo resursa. Koristi servere koji mogu da podnesu i najzahtevnije delove Bitkoin sistema, takodje ima i opciju da oporaviti svoj novčanik uz pomoć tajne fraze."
     walletmsigna: "mSIGNA je napredan, ali i lak za korišćenje novčanik sa fokusom na brzinu i jedonstanost, visoku sigurnost i upotrebljivost na nivou preduzeća. Podržava BIP32, transakcije sa više potpisa, hladno skladištenje, sinhronizaciju na više uredjaja i enkriptovani elektronski i papirni bekap."
     walletbitcoinwallet: "Bitcoin Wallet je lak za korišćenje i pouzdan, istovremeno siguran i brz. Osnovna vizija je decentralizacija, i nulto-poverenje. Nije potrebna centalizovana usluga za operacije vezane za Bitkoin. Aplikacije je dobar izbor za ljude sa manje stručnog znanja."
-    walletairbitzwallet: "Airbitz je Bitcoin novcanik za mobilne telefone sa visokim nivoom privatnosti, sigurnosti i decentralizovanosti, koji se masovno koristi. Airbitz novžanici su uvek automatski enkriptovani i funkcionisu čak i kada Airbitz serverima desi prekid u radu."
+    walletairbitzwallet: "Airbitz je Bitkoin novcanik za mobilne telefone sa visokim nivoom privatnosti, sigurnosti i decentralizovanosti, koji se masovno koristi. Airbitz novžanici su uvek automatski enkriptovani i funkcionisu čak i kada Airbitz serverima desi prekid u radu."
     walletbrd: "BRD je jedan od najjednostavnijih novčanika za nove Bitkoin korisnike. Takođe, veoma je siguran. BRD se povezuje direktno na Bitkoin mrežu i koristi ugrađenu enkripciju hardverskih komponenti kako bi novac bio siguran."
-    walletmyceliumwallet: "Mycelium Bitcoin novčanik za Android dizajniran je na principima sigurnosti, brzine i lakoće upotrebe. Upravljanje privatnim ključem, hladno čuvanje i kompatibilnost sa Trezorom neke su od jedinstvenih karakteristika uz mnoge druge."
-    walletcoinspace: "Coin.Space HD je besplatan Bitcoin veb-novčanik. koji možete koristi za plaćanja širom sveta besplatno. Plaćanje bitkoinima je jednostavno i sigurno, dostupno na telefonu ili desktop računaru."
-    walletbitgo: "BitGo je multi-sig novčanik, koji štiti vaš bitcoin od gubitka ili kradje. Zadržavate potpunu kontrolu; BitGo ne može da potroši ili zamrzne novčana sredstva. BitGo je novčanik lak za upotrebu koji nudi napredna sigurnosna svojstva poput ograničenja na trošenje sredstava i višekorisnički pristup."
+    walletmyceliumwallet: "Mycelium Bitkoin novčanik za Android dizajniran je na principima sigurnosti, brzine i lakoće upotrebe. Upravljanje privatnim ključem, hladno čuvanje i kompatibilnost sa Trezorom neke su od jedinstvenih karakteristika uz mnoge druge."
+    walletcoinspace: "Coin.Space HD je besplatan Bitkoin veb-novčanik. koji možete koristi za plaćanja širom sveta besplatno. Plaćanje bitkoinima je jednostavno i sigurno, dostupno na telefonu ili desktop računaru."
+    walletbitgo: "BitGo je multi-sig novčanik, koji štiti vaš bitkoin od gubitka ili kradje. Zadržavate potpunu kontrolu; BitGo ne može da potroši ili zamrzne novčana sredstva. BitGo je novčanik lak za upotrebu koji nudi napredna sigurnosna svojstva poput ograničenja na trošenje sredstava i višekorisnički pristup."
     walletgreenaddress: "GreenAddress je multi-sig novčanik lag za korišćeǌe uz poboljšanu bezbednost i privatnost. Privatni ključevi su enkriptovanii ne nalaze se na serveru. Zbog sigurnosti, preporucuje se korišćenje F2A pristupa aplikaciji."
     wallettrezor: "Trezor je hardverski novčanik koji pruža visok nivo sigurnosti bez žrtvovanja upotrebljivosti. Za razliku od hladnog skladišta, Trezor ima mogućnost da potpisuje transakcije dok je uređaj konektovan na internet. To znači da je vršenje transakcija bezbedno, pa čak i na kompromitovanom kompjuteru."
-    walletkeepkey: "KeepKey je hardverski novčanik koji Bitcoin sigurnost čini jednostavnom. Kada svoja sredstva poverite KeepKey novčaniku, svaka transakcija se mora prethodno proveriti na OLED ekranu i  potvrditi pritiskom na dugme."
-    walletledgernanos: "Ledger Nano S je siguran Bitcoin hardverski novčanik. Može se konektovati na bilo koji računar preko USB priključka i sadrži ugrađeni OLED ekran na kome se transakcije mogu proveriti i potvrditi jednostavnim pritiskom na dugme."
+    walletkeepkey: "KeepKey je hardverski novčanik koji Bitkoin sigurnost čini jednostavnom. Kada svoja sredstva poverite KeepKey novčaniku, svaka transakcija se mora prethodno proveriti na OLED ekranu i  potvrditi pritiskom na dugme."
+    walletledgernanos: "Ledger Nano S je siguran Bitkoin hardverski novčanik. Može se konektovati na bilo koji računar preko USB priključka i sadrži ugrađeni OLED ekran na kome se transakcije mogu proveriti i potvrditi jednostavnim pritiskom na dugme."
     walletdigitalbitbox: "Digital Bitbox je harverski novčanik neupadljivog izgleda proizveden u Švajcarskoj čiji je naglasak sigurnost i privatnost. Odlikuje se jednostavnom metodom pravljenja rezervne kopije, opcija prihvatljivog poricanja, multi-sig podrška, desktop i mobilna aplikacija za verifikovanje transakcija kao i 2FA."
     walletbither: "Bither je jednostavan i sugran novčanik koji radi na više platformi. Napravljen posebno za hladno ili toplo skladištenje, korisnici dobijaju sigurnost i udobnost korišćenja. Bither koristi XRANDOM entropiju iz različitih izvora kako bi stvorio pravi nasumični broj za korisnike. Uz pomoć HDM, korisnicu imaju HD prednosti i multi-sig sigurnost."
     walletgreenbits: "GreenBits je brz i lak za korišćenje novčanik. Uživajte u povoljšanoj sigurnosti i pristupu nultog poverenja, kompatibilnošću sa hardverskim novčanicima, multisig zasnovanoj na 2FA i funkciji ograničavanje trošenja."
-    walletsimplebitcoinwallet: "Jednostavan, bezbedan i pouzdan Bitcoin novčanik."
+    walletsimplebitcoinwallet: "Jednostavan, bezbedan i pouzdan Bitkoin novčanik."
     walletarcbit: "ArcBit je dizajniran kako bi bio jednostavan i lak za upotrebu, a da u isto vreme korisniku daju potpunu kontrolu nad njihovim novcem. Nudi dodatnu opciju hladnog skladištenja sa mogućnošću odobrenja plaćanja van mreže za povećanu sigurnost."
     walletdownload: "Instaliraj"
     walletvisit: "Poseti Web sajt"
@@ -210,13 +210,13 @@ sr:
     checkfailcontrolthirdparty: "Novac kontrolisan od treće strane"
     checkfailcontrolthirdpartytxt: "Ovaj servis ima punu kontrolu nad vašim bitkoinima. To znači da morate verovati ovom servisu da vam neće izgubiti sredstva ako se desi incident na njihovoj strani. Danas, mnogi web novčanici ne osiguravaju svoje depozite kao banka, i mnogi takvi servisi su pretrpeli proboj bezbednosti u prošlosti"
     checkgoodvalidationfullnode: "Potpuna validacija"
-    checkgoodvalidationfullnodetxt: "Ovaj novčanik zaheteva da instalirate full node softver koji potvrđuje i prenosi transakcije na Bitcoin mrežu. Ovo znači da poverenje u treću partiju nije neophodno za verifikovanje uplata. Full node pruža najviši nivo bezbednosti i krucijalan za zaštitu mreže. Medjutim, zahteva više skladišnog prostora, protoka i dužeg vremena za prvobitnu sinhronizaciju. "
+    checkgoodvalidationfullnodetxt: "Ovaj novčanik zaheteva da instalirate full node softver koji potvrđuje i prenosi transakcije na Bitkoin mrežu. Ovo znači da poverenje u treću partiju nije neophodno za verifikovanje uplata. Full node pruža najviši nivo bezbednosti i krucijalan za zaštitu mreže. Medjutim, zahteva više skladišnog prostora, protoka i dužeg vremena za prvobitnu sinhronizaciju. "
     checkgoodvalidationfullnoderequired: "Potpuna validacija"
-    checkgoodvalidationfullnoderequiredtxt: "Ovaj novčanik zaheteva da instalirate full node softver koji potvrđuje i prenosi transakcije na Bitcoin mrežu. Ovo znači da poverenje u treću partiju nije neophodno za verifikovanje uplata. Full node pruža najviši nivo bezbednosti i krucijalan za zaštitu mreže. Medjutim, zahteva više skladišnog prostora, protoka i dužeg vremena za sinhronizaciju."
+    checkgoodvalidationfullnoderequiredtxt: "Ovaj novčanik zaheteva da instalirate full node softver koji potvrđuje i prenosi transakcije na Bitkoin mrežu. Ovo znači da poverenje u treću partiju nije neophodno za verifikovanje uplata. Full node pruža najviši nivo bezbednosti i krucijalan za zaštitu mreže. Medjutim, zahteva više skladišnog prostora, protoka i dužeg vremena za sinhronizaciju."
     checkneutralvalidationvariable: "Promenljiva validacija"
     checkneutralvalidationvariabletxt: "Opcija validacije uplata pruža se od strane softver novčanika koji koristite na ovom uređaju. Molimo pogledajte validacionu bodovnu tabelu za softverski novčanik koji želite da koristite."
     checkpassvalidationspvp2p: "Pojednostavljena validacija"
-    checkpassvalidationspvp2ptxt: "Ovaj novčanik koristi SPV i Bitcoin mrežu. To znači da je vrlo malo poverenja potrebeno u treću partiju kada se uplata verifikuje. Međutim, nije siguran koliko i full node poput <a href=\"#download#\">Bitcoin Core</a>"
+    checkpassvalidationspvp2ptxt: "Ovaj novčanik koristi SPV i Bitkoin mrežu. To znači da je vrlo malo poverenja potrebeno u treću partiju kada se uplata verifikuje. Međutim, nije siguran koliko i full node poput <a href=\"#download#\">Bitcoin Core</a>"
     checkpassvalidationspvservers: "Pojednostavljena validacija"
     checkpassvalidationspvserverstxt: "Ovaj novčanik koristi SPV i nasumično odabrane servere sa liste. To znači da je vrlo malo poverenja potrebno u treće lice prilikom verifikovanja uplate. Međutim, nije siguran koliko i full node poput <a href=\"#download#\">Bitcoin Core</a>."
     checkpassvalidationservers: "Decentralizovana validacija"
@@ -234,7 +234,7 @@ sr:
     checkfailtransparencyclosedsource: "Bez transparentnost"
     checkfailtransparencyclosedsourcetxt: "Ovaj novčanik nije otvorenog tipa. To znači da nije moguće ispitati kod i uveriti se da finalni sotver ne krije opasan kod ili radi nešto sa čim niste saglasni."
     checkfailtransparencyremote: "Daljinska aplikacija"
-    checkfailtransparencyremotetxt: "Ovaj novčanik se učitava sa udaljene lokacije. Ovo znači da kada koristite novčanik, morate imati poverenja u programere da neće ukrasti ili izgubiti vaše bitcoine prilikom neke vrste incidenta na njihovom sajtu."
+    checkfailtransparencyremotetxt: "Ovaj novčanik se učitava sa udaljene lokacije. Ovo znači da kada koristite novčanik, morate imati poverenja u programere da neće ukrasti ili izgubiti vaše bitkoine prilikom neke vrste incidenta na njihovom sajtu."
     checkfailtransparencynew: "Nova aplikacija"
     checkfailtransparencynewtxt: "Ovaj novčanik nije testiran i javno pregledan od strane značajnijeg broja ljudi. Ovo znači da postoji mogućnost da ova aplikacija krije maliciozni kod ili radi nešto protiv vaše saglasnosti."
     checkgoodenvironmenthardware: "Veoma bezbedno okruženje"
@@ -361,7 +361,7 @@ sr:
     spec: "Dokumentacija"
     spectxt: "Ukoliko ste zainteresovani da naučite više o stručnim i tehničkim detaljima o Bitkoinu i kako da iskoristite alate i API, preporučujemo da počnete sa istraživanjem <a href=\"/en/developer-documentation\">dokumentacije za programere</a>."
     coredev: "Core programeri"
-    inventor: "Bitcoin system originalno je dizajnirao Satoshi Nakamoto. Njegov originalna baza koda sada se održava od strane sledećih Bitcoin Core programera i dobrovoljaca."
+    inventor: "Bitkoin system originalno je dizajnirao Satoshi Nakamoto. Njegov originalna baza koda sada se održava od strane sledećih Bitcoin Core programera i dobrovoljaca."
     disclosure: "Odgovorno obelodanjivanje"
     disclosuretxt: "Ukoliko nadjete ranjivost vezanu za Bitkoin, ranjivosti koje nisu kritične možete poslati emailom na Engleskom bilo kom core programeru ili na gore pomenutu privatnu bitcoin-security email listu. Na primer, nekritična ranjivost bilo bi otkriće skupocenog DDOS.\nRanjivosti od kritične važnosti, koje su previše važne da bi bile poslate preko emaila bez enkripcije, treba poslati jednom ili većem broju Core programera, enkriptovanih sa njihovim PGP ključem."
     involve: "Uključi se i ti"
@@ -371,7 +371,7 @@ sr:
     morewant: "Želite da pomognete drgačijem projektu?"
     morechoose: "Možete izabrati projekat kojem bi ste doprineli odgovorivši na par <a href=\"http://whatcanidoforbitcoin.org/\">pitanja o vašim veštinama</a>."
     moremore: "Prikaži još..."
-    contributors: "Bitcoin Core dobroboljci"
+    contributors: "Bitkoin Core dobroboljci"
     contributorsorder: "Po angažovanju"
     devcommunities: "Programerske zajednice"
     devcommunitiesintro: "Sledeće sobe za ćaskanje i web sajtovi održavaju diskusije o razvoju Bitkoina. Molimo vas da pročitate njihova pravila ponašanja pre nego što se uključite."
@@ -381,25 +381,25 @@ sr:
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Razvoj &amp; Tehnicka diskusija Forum</a>"
   download:
     title: "Preuzimanje - Bitkoin"
-    pagetitle: "Preuzimanje Bitcoin Core"
+    pagetitle: "Preuzimanje Bitkoin Core"
     latestversion: "Najnovija verzija :"
-    download: "Preuzmi Bitcoin Core"
+    download: "Preuzmi Bitkoin Core"
     downloados: "Ili izaberi svoj operativni sistem"
     downloadsig: "Verifikujte potpis verzije"
     downloadtorrent: "Preuzmi torrent"
     source: "Izvorni kod"
     versionhistory: "Prikaži istoriju verzije"
-    notelicense: "Bitcoin Core je <a href=\"https://www.fsf.org/about/what-is-free-software\">besplatan softver</a> orijentisan na zajednicu, objavljen pod <a href=\"http://opensource.org/licenses/mit-license.php\">MIT licencom</a>."
+    notelicense: "Bitkoin Core je <a href=\"https://www.fsf.org/about/what-is-free-software\">besplatan softver</a> orijentisan na zajednicu, objavljen pod <a href=\"http://opensource.org/licenses/mit-license.php\">MIT licencom</a>."
     notesync: "Prvobitna sinhronizacija Bitcoi Core-a će potrajati jer preuzima veliki broj podataka sa interneta. Budite sigurni da imate dovoljno protoka i skladišnog prostora za preuzimanje block chain veličine (over {{site.text.bitcoin_datadir_gb}}GB). Ukoliko imate jaku internet konekciju, možete pomoći ojačavanju mreže tako što ćete na vaš računar pokrenuti Bitcoin Core uz otvoreni 8833 port."
     full_node_guide: "Pročitajte <a href=\"/en/full-node\">full node</a> uputstvo za više informacija."
     patient: "Proverite vaš internet protok i skladišni prostor računara."
     releasekeys: "Bitcoin Core Objave Potpisanih Ključeva"
   exchanges:
-    title: "Menjačnice - Bitcoin"
-    metadescription: "Mesta gde možete kupiti bitcoin u zamenu za lokalne valute. Razmenite dolar, (BTC/USD), evro (BTC/EUR), Yuan (BTC/CNY) i druge valute za bitcoin."
+    title: "Menjačnice - Bitkoin"
+    metadescription: "Mesta gde možete kupiti bitkoin u zamenu za lokalne valute. Razmenite dolar, (BTC/USD), evro (BTC/EUR), Yuan (BTC/CNY) i druge valute za bitcoin."
     pagetitle: "Bitcoin Menjačnice"
-    pagedesc: "Mesta gde možete kupiti bitcoin u zamenu za druge valute."
-    exchange: "Bitcoin Menjačnice"
+    pagedesc: "Mesta gde možete kupiti bitkoin u zamenu za druge valute."
+    exchange: "Bitkoin Menjačnice"
   site-blog:
     loadmore-posts: "Učitaj više postova"
   alerts:
@@ -414,7 +414,7 @@ sr:
     eventsubmit: "Prijavi događaj"
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitkoin okupljanja na BitcoinTalk</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitkoin okupljanja na Wiki</a>"
-    meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin meetup grupe</a>"
+    meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitkoin meetup grupe</a>"
   faq:
     title: "ČPP - Bitkoin"
     pagetitle: "Često Postavljana Pitanja"
@@ -422,30 +422,30 @@ sr:
     table: "Pregled sadržaja"
     general: "Generalno"
     whatisbitcoin: "Šta je Bitkoin?"
-    whatisbitcointxt1: "Bitcoin je mreža koncenzusa koja omogućuje novi sistem plaćanja i potpuno digitalitalan novac. To je prva decentralizovana, P2P mreža plaćanja koju pokreću korisnici, bez centralne vlasti ili posrednika. Iz korisničke perspektive, Bitcoin je poput keša za Internet. Bitcoin se takođe može gledati kao najbitniji sistem <a href=\"http://financialcryptography.com/mt/archives/001325.html\">trostrukog knjigovodstva</a> koji postoji."
+    whatisbitcointxt1: "Bitkoin je mreža koncenzusa koja omogućuje novi sistem plaćanja i potpuno digitalan novac. To je prva decentralizovana, P2P mreža plaćanja koju pokreću korisnici, bez centralne vlasti ili posrednika. Iz korisničke perspektive, Bitcoin je poput keša za Internet. Bitcoin se takođe može gledati kao najbitniji sistem <a href=\"http://financialcryptography.com/mt/archives/001325.html\">trostrukog knjigovodstva</a> koji postoji."
     creator: "Ko je stvorio Bitkoin?"
-    creatortxt1: "Bitcoin je prva implementacija koncepta zvanom kripto valuta, koji je prvi put opisan 1998 godine od strane Wei Dai-a na kriptografskoj email listi, predlažući novi oblik novca koji koristi kriptografiju da kontroliše njegvo stvaranje i transakcije bez centralne vlasti. Prva Bitcoin specifikacija i dokaz koncepta objavljen je 2009 na kriptografskoj email listi od strane programera pod pseudonimom Satoshi Nakamoto. Satoshi je napustio projekat 2010 godine, bez otrkivanja previše detalja o sebi i odluci. Zajednica od tada raste eksponencijalnim rastom sa <a href=\"#development#\">velikim brojem programera</a> koji rade na Bitcoin protokolu."
-    creatortxt2: "Satošijeva anonimonst često je predmet neopravdanih briga i rasprava. Takvu rasprave uglavnom su povezane sa nepoznavanjem prirode koda otvorenog tipa. Bitcoin protokol i softver dostupni su otvoreno javnosti i svaki programer na svetu može da ispita kod ili da napravi sopstvenu izmenjenu verziju Bitcoin programa. Kao i kod sadašnjih programera koji rade na protokolu, Satošijev uticaj bio je ograničen promenama koje su drugi prihvatali, tako da on nikada nije imao kontrolu nad Bitkoinom. S tim u vezi, identitet tvorca Bitcoina relevantan je poput identiteta osobe koja je izumela papir."
+    creatortxt1: "Bitkoin je prva implementacija koncepta zvanom kriptovaluta, koji je prvi put opisan 1998 godine od strane Wei Dai-a na kriptografskoj email listi, predlažući novi oblik novca koji koristi kriptografiju da kontroliše njegovo stvaranje i transakcije bez centralne vlasti. Prva Bitkoin specifikacija i dokaz koncepta objavljen je 2009 na kriptografskoj email listi od strane programera pod pseudonimom Satoshi Nakamoto. Satoshi je napustio projekat 2010 godine, bez otrkivanja previše detalja o sebi i odluci. Zajednica od tada raste eksponencijalnim rastom sa <a href=\"#development#\">velikim brojem programera</a> koji rade na Bitkoin protokolu."
+    creatortxt2: "Satošijeva anonimnost često je predmet neopravdanih briga i rasprava. Takvu rasprave uglavnom su povezane sa nepoznavanjem prirode koda otvorenog tipa. Bitkoin protokol i softver dostupni su otvoreno javnosti i svaki programer na svetu može da ispita kod ili da napravi sopstvenu izmenjenu verziju Bitkoin programa. Kao i kod sadašnjih programera koji rade na protokolu, Satošijev uticaj bio je ograničen promenama koje su drugi prihvatali, tako da on nikada nije imao kontrolu nad Bitkoinom. S tim u vezi, identitet tvorca Bitkoina relevantan je poput identiteta osobe koja je izumela papir."
     whocontrols: "Ko kontroliše Bitkoin mrežu?"
     whocontrolstxt1: "Niko ne kontroliše Bitcoin mrežu, kao što niko nije vlasnik email tehnologije. Bitcoin je kontrolisan od strane ljudi koji ga koriste širom sveta. I dok programeri vrše poboljšanja softvera, oni ne mogu silom primorati promenu u Bitcoin protokolu, zato što je svaki korisnik sloodan u izboru softvera i verzije koju želi da koristi. Kako bi bili kompatabilni jedni sa drugima, svi korisnici moraju koristiti softver koji poštuje ista pravila. Bitcoin može da radi jedino ukoliko postoji koncenzus među korisnicima. Tako da je u interesu korisnika i programera da štite koncenzus."
     howitworks: "Kako Bitkoin funkcioniše?"
     howitworkstxt1: "Sa korisničke perspektive, Bitoin nije ništa više od mobilne aplikacije ili računarskog programa koji pruža lični Bitkoin novčanik i dozvoljava korisniku da šalje i prima bitkoine preko njega. To je način na koji Bitkoin funkcioniše za većinu korisnika."
-    howitworkstxt2: "Iza kulisa, Bitcoin mreža sadrži javnu knjigu zvanu \"block chain\". Ova knjiga sardži svaku transakciju ikada obrađenu, omogućavajući računarima korisnika verifikaciju i validaciju svake transakcije. Autentičnost svake transakcije zaštićena je digitalnim potpisim vezanim za adresu pošiljaoca, što daje punu kontrolu korisnicima nad bitkoina sa svojih Bitcoin adresa. Svako može obrađivati transakcije koristeći svoju računarsku snagu specijalizovanim harverima i zaraditi nagradu u bitkoinima za svoju uslugu. Ova radnja se zove \"rudarenje\". Ukoliko želite da naučite još o Bitcoin-u, pogledajte <a href=\"#how-it-works#\">stranicu posvećenu tome</a> kao i <a href=\"#bitcoin-paper#\">originalni beli papir</a>."
-    used: "Da li ljudi stvarno koriste Bitcoin?"
-    usedtxt1: "Da. Postoji <a href=\"/en/spend-bitcoin\">sve veći broj poslovnihi pojedninačnih subjekata</a> koji koriste Bitcoin. Ovo uključuje prodavnice sa fizičkom lokacijom poput restorana, hotelijerstva, adokatskih kancelarija kao i popularnih onlajn servisa poput Namecheap, Overstock.com i Reddit-a. Iako relativno novi fenomen, Bitcoin raste brzo. Zaključno sa Majem 2018 <a href=\"https://bitcoincharts.com/bitcoin/\">celokupna vrednost svih bitkoina u opticaju</a> premašuje je vrednost od stotinu milijardi američkih dolara, sa dnevnom vrednošću razmene koja se odvija svakog dana koja je višemilionska."
-    acquire: "Kako se Bitcoin može steći?"
+    howitworkstxt2: "Iza kulisa, Bitkoin mreža sadrži javnu knjigu zvanu \"block chain\". Ova knjiga sardži svaku transakciju ikada obrađenu, omogućavajući računarima korisnika verifikaciju i validaciju svake transakcije. Autentičnost svake transakcije zaštićena je digitalnim potpisim vezanim za adresu pošiljaoca, što daje punu kontrolu korisnicima nad bitkoina sa svojih Bitkoin adresa. Svako može obrađivati transakcije koristeći svoju računarsku snagu specijalizovanim harverima i zaraditi nagradu u bitkoinima za svoju uslugu. Ova radnja se zove \"rudarenje\". Ukoliko želite da naučite još o Bitcoin-u, pogledajte <a href=\"#how-it-works#\">stranicu posvećenu tome</a> kao i <a href=\"#bitcoin-paper#\">originalni beli papir</a>."
+    used: "Da li ljudi stvarno koriste Bitkoin?"
+    usedtxt1: "Da. Postoji <a href=\"/en/spend-bitcoin\">sve veći broj poslovnihi pojedninačnih subjekata</a> koji koriste Bitkoin. Ovo uključuje prodavnice sa fizičkom lokacijom poput restorana, hotelijerstva, adokatskih kancelarija kao i popularnih onlajn servisa poput Namecheap, Overstock.com i Reddit-a. Iako relativno novi fenomen, Bitkoin raste brzo. Zaključno sa Majem 2018 <a href=\"https://bitcoincharts.com/bitcoin/\">celokupna vrednost svih bitkoina u opticaju</a> premašuje je vrednost od stotinu milijardi američkih dolara, sa dnevnom vrednošću razmene koja se odvija svakog dana koja je višemilionska."
+    acquire: "Kako se Bitkoin može steći?"
     acquireli1: "Kao platno sredstvo za robu i usluge."
-    acquireli2: "Kupi bitkoin preko <a href=\"https://www.buybitcoinworldwide.com\">Bitcoin menjačnica</a>."
+    acquireli2: "Kupi bitkoin preko <a href=\"https://www.buybitcoinworldwide.com\">Bitkoin menjačnica</a>."
     acquireli3: "Razmeni bitkoine sa <a href=\"https://localbitcoins.com/\">nekim u blizini</a>."
     acquireli4: "Zaradi bitkoine preko konkurentnog <a href=\"http://www.bitcoinmining.com/\">rudarenja</a>."
     acquiretxt1: "Iako je moguće da pojedinci prodaju svoje bitkoine preko u zamenu za uplatu preko kreditne kartice ili PayPal-a, većina menjačnica neće dozvoliti kupovinu preko ovih metoda plaćanja. Razlog tome je veliki rizik od poništavanje transakcije i povraćaja novca od strane kupca, a samim tim i veća mogućnost prevare."
     makepayment: "Koliko je teško izvršiti uplatu u Bitkoinu?"
-    makepaymenttxt1: "Bitcoin uplate su lakše plaćanja preko debitih ili kreditnih kartica i mogu se primati bez posebnog trgovinskog naloga. Uplate se šalju preko specijalnih novčanika, aplikacija koje se nalaze na vašem računaru ili telefonu, tako što ćete uneti adresu primaoca, iznos, i pritisnuti na dugme pošalji. Kako bi unos adrese primaoca bio ubrzan i olakšan, veliki broj novčanika koristi tehnologiju skeniranja QR koda sa uređaja ili samim dodirivanjem dva telefona uz pomoć NFC tehnologije."
+    makepaymenttxt1: "Bitkoin uplate su lakše plaćanja preko debitih ili kreditnih kartica i mogu se primati bez posebnog trgovinskog naloga. Uplate se šalju preko specijalnih novčanika, aplikacija koje se nalaze na vašem računaru ili telefonu, tako što ćete uneti adresu primaoca, iznos, i pritisnuti na dugme pošalji. Kako bi unos adrese primaoca bio ubrzan i olakšan, veliki broj novčanika koristi tehnologiju skeniranja QR koda sa uređaja ili samim dodirivanjem dva telefona uz pomoć NFC tehnologije."
     advantages: "Koje su prednosti Bitkoina?"
     advantagesli1: >
-        <em><b>Sloboda plaćanja</b></em> - Moguće je slati i primati bitcoin bilo
+        <em><b>Sloboda plaćanja</b></em> - Moguće je slati i primati bitkoin bilo
         gde u svetu u bilo koje vreme. Nema praznika, nema granica, nema biroktratije.
-        Bitcoin daje korisnicima potpunu vlas nad svojim sredstvima.
+        Bitkoin daje korisnicima potpunu vlas nad svojim sredstvima.
     advantagesli2: >
         <em><b>Sami birate proviziju</b></em> - Ne postoji naknada kada primate uplatu
         u bitkoinima, i veliki broj novčanika pruža mogućnost izbora visine provizije
@@ -455,34 +455,34 @@ sr:
         poslati 1 ili 100,000 bitkoina, nakdnada će biti ista. Takođe postoje sistemi
         koji trgovcima pomažu prilikom prihvatanja uplate u bitkoinima, vrše konverziju
         u lokalnu monetarnu valutu i automatski prebacuju novčana sredstva direktno
-        na račun banke trgovca dnecno. Obzirom da se ove usluge baziraju na BItcoin-u,
-        mogu biti ponuđene za znatno manje novca nego PaPal provizije ili provizije
+        na račun banke trgovca dnecno. Obzirom da se ove usluge baziraju na BItkoin-u,
+        mogu biti ponuđene za znatno manje novca nego PayPal provizije ili provizije
         koje imaju kreditne kartice.
-    advantagesli3: "<em><b>Smanjeni rizik za trgovce</b></em>BItcoin transakcije su sigurne, bespovratne i ne sadže osetljive privatne informacije korisnika. Ovim se prodavci štite od gubitaka od prevare neosnovanih zahteva za povraćajem i nije potrebno biti usklađen sa PCI standardima koji su neophodni kod kreditnih kartica. Trgovci mogu lako da se prošire na tržišta na kojima kreditne kartice nisu prihvaćene zbog visokih stopa prevara. Konačan rezultat su smanjeni troškovi, veće tržište i smanjeni administranivni  troškovi."
-    advantagesli4: "<em><b>Sigurnost i kontrola</b></em> - Bitcoin korisnici imaju potpunu kontrolu nad svojim transakcijama; ne postoji mogućnost da trgovci prinudno izvše neželje naplate ili skinu novac kao kod ostalih metoda plaćanja. Bitcoin uplate mogu da se vrše bez otkrivanja ličnih podataka koji se mogu vezati za transakciju. Upravo ovo svojstvo pruža jaku zaštitu protvi krađe identiteta. Bitcoin korisnici mogu da zaštite svoja sredstva pravljenjem rezervne kopije svojih privatnih ključeva i šifrovanjem putem enkripcije."
-    advantagesli5: "<em><b>Transparetnost i neutralnost</b></em>- <a href=\"https://live.blockcypher.com/btc/\">Sve informacije</a>o cirkulaciji i broju bitkoina u ponudi mogu se videti na blockchain-u, gde svako ima uvid o transakcijama u realnom vremenu. Ni jedan pojedinac ili organizacija ne mogu kontrolisati ili manipulisati Bitcoin protokolom jer je kriptografski siguran. Upravo je ovo razlog zbog kojeg se protokolu može verovati : neutralnost, transaprentnost i predvidljivost."
+    advantagesli3: "<em><b>Smanjeni rizik za trgovce</b></em>BItkoin transakcije su sigurne, bespovratne i ne sadže osetljive privatne informacije korisnika. Ovim se prodavci štite od gubitaka od prevare neosnovanih zahteva za povraćajem i nije potrebno biti usklađen sa PCI standardima koji su neophodni kod kreditnih kartica. Trgovci mogu lako da se prošire na tržišta na kojima kreditne kartice nisu prihvaćene zbog visokih stopa prevara. Konačan rezultat su smanjeni troškovi, veće tržište i smanjeni administranivni  troškovi."
+    advantagesli4: "<em><b>Sigurnost i kontrola</b></em> - Bitkoin korisnici imaju potpunu kontrolu nad svojim transakcijama; ne postoji mogućnost da trgovci prinudno izvše neželje naplate ili skinu novac kao kod ostalih metoda plaćanja. Bitcoin uplate mogu da se vrše bez otkrivanja ličnih podataka koji se mogu vezati za transakciju. Upravo ovo svojstvo pruža jaku zaštitu protvi krađe identiteta. Bitcoin korisnici mogu da zaštite svoja sredstva pravljenjem rezervne kopije svojih privatnih ključeva i šifrovanjem putem enkripcije."
+    advantagesli5: "<em><b>Transparentnost i neutralnost</b></em>- <a href=\"https://live.blockcypher.com/btc/\">Sve informacije</a>o cirkulaciji i broju bitkoina u ponudi mogu se videti na blockchain-u, gde svako ima uvid o transakcijama u realnom vremenu. Ni jedan pojedinac ili organizacija ne mogu kontrolisati ili manipulisati Bitkoin protokolom jer je kriptografski siguran. Upravo je ovo razlog zbog kojeg se protokolu može verovati : neutralnost, transaprentnost i predvidljivost."
     disadvantages: "Koji su nedostaci Bitkoina?"
-    disadvantagesli1: "<em><b>Stepen prihvatanja</b></em> - Mnogi ljudi još uvek ne znaju za Bitcoin. Svakoga dana, sve više poslovnih subjekata prihvata bitcoin zbog prednosti koje nudi, ali lista i dalje ostaje mala i još uvek mora da raste kako bi imala korist od <a href=\"https://en.wikipedia.org/wiki/Network_effect\">efekta mreže</a>."
-    disadvantagesli2: "<em><b>Nestalnost</b></em>- Iznos <a href=\"https://bitcoincharts.com/bitcoin/\">ukupne vrednosti</a>svih bitkoina u cirkulaciji i broja poslovnih subjekata koji koriste Bitcoin još je veoma mali u poređenju sa mogućnostima. Iz tog razloga, razni događaji malog obima, razmena ili aktivnost poslovnih subjekata mogu u znatnoj meri uticati na cenu. U teoriji, ova nestalnost smanjivaće se kako tržište i tehnologija sazrevaju. Nikada do sada svet nije imao ovakvu valutu i tehnologiju, tako da je zaista teško (i istovremeno uzbudljivo) razmišljati kako će se stvari odigrati u budućnosti."
-    disadvantagesli3: "<em><b>Tekući razvoj</b></em> - Bitcoin sotver još uvek je u ranoj vazi razvoja sa velikim brojem svojstava u aktivnoj fazi razvoja. Novi alati, opcije i usluge razvijaju se kako bi se Bitcoin učinio još sigurnijim i dostupnijim širokom broju ljudi. Neke od opcija još uvek nisu spremne za svakodnevnu upotrebu niti za svakoga. Većina preduzeća koja svoje poslovanje zasnivaju na Bitcoin protokolu, još uvek su nova i ne nude osiguranje. Generalno, Bitcoin je još uvek u fazi sazrevanja."
+    disadvantagesli1: "<em><b>Stepen prihvatanja</b></em> - Mnogi ljudi još uvek ne znaju za Bitkoin. Svakoga dana, sve više poslovnih subjekata prihvata bitkoin zbog prednosti koje nudi, ali lista i dalje ostaje mala i još uvek mora da raste kako bi imala korist od <a href=\"https://en.wikipedia.org/wiki/Network_effect\">efekta mreže</a>."
+    disadvantagesli2: "<em><b>Nestalnost</b></em>- Iznos <a href=\"https://bitcoincharts.com/bitcoin/\">ukupne vrednosti</a>svih bitkoina u cirkulaciji i broja poslovnih subjekata koji koriste Bitkoin još je veoma mali u poređenju sa mogućnostima. Iz tog razloga, razni događaji malog obima, razmena ili aktivnost poslovnih subjekata mogu u znatnoj meri uticati na cenu. U teoriji, ova nestalnost smanjivaće se kako tržište i tehnologija sazrevaju. Nikada do sada svet nije imao ovakvu valutu i tehnologiju, tako da je zaista teško (i istovremeno uzbudljivo) razmišljati kako će se stvari odigrati u budućnosti."
+    disadvantagesli3: "<em><b>Tekući razvoj</b></em> - Bitkoin sotver još uvek je u ranoj vazi razvoja sa velikim brojem svojstava u aktivnoj fazi razvoja. Novi alati, opcije i usluge razvijaju se kako bi se Bitkoin učinio još sigurnijim i dostupnijim širokom broju ljudi. Neke od opcija još uvek nisu spremne za svakodnevnu upotrebu niti za svakoga. Većina preduzeća koja svoje poslovanje zasnivaju na Bitkoin protokolu, još uvek su nova i ne nude osiguranje. Generalno, Bitkoin je još uvek u fazi sazrevanja."
     trust: "Zašto ljudi veruju u Bitkoin?"
-    trusttxt1: "Poverenje u Bitcoin dolazi iz činjenice da on ne zahteva poverenje uopšte. Bitcoin je potpuno decentralizovan i protokol otvorenog-tipa. Svako ima pristup izvornom kodu i može ga ukoliko poseduje stručno znanje i ispitati. Svaki programer na svetu može da verifikuje kako Bitcoin radi. Sve transakcije i bitkoini koji postoje u cirkulaciji mogu se transparentno videti u realnom vremu od strane bilo koga. Sve uplate mogu se vršiti bez oslanjanja na treće lice, a ceo sistem zaštićen je robustnim sistemom kriptografskih algoritama slični onim korišćenim u internet bankarstvu. Niti jedna organizacija ili pojedican ne mogu da kontrolišu Bitcoin, mreža ostaje sigurno čak i kada se korisnicima u njoj ne može verovati."
+    trusttxt1: "Poverenje u Bitkoin dolazi iz činjenice da on ne zahteva poverenje uopšte. Bitkoin je potpuno decentralizovan i protokol otvorenog-tipa. Svako ima pristup izvornom kodu i može ga ukoliko poseduje stručno znanje i ispitati. Svaki programer na svetu može da verifikuje kako Bitkoin radi. Sve transakcije i bitkoini koji postoje u cirkulaciji mogu se transparentno videti u realnom vremu od strane bilo koga. Sve uplate mogu se vršiti bez oslanjanja na treće lice, a ceo sistem zaštićen je robustnim sistemom kriptografskih algoritama slični onim korišćenim u internet bankarstvu. Niti jedna organizacija ili pojedican ne mogu da kontrolišu Bitkoin, mreža ostaje sigurno čak i kada se korisnicima u njoj ne može verovati."
     makemoney: "Da li mogu da zaradim novac sa Bitkoinom?"
-    makemoneytxt1: "Nikada ne treba očekivati da ćete se na Bitcoinu ili bilo kojoj novoj tehnologiji obogatiti brzo. Uvek treba biti obrezan bilo čeka što zvuči previđe dobro da bi bilo istina ili odudara od osnovnih pravila ekonomije."
-    makemoneytxt2: "Bitcoin je okruženje inovacija i postoje prilike za poslovanje koje istovremeno uključuju znatne rizike. Ne postoji garancija da će Bitcoin nastaviti da raste uprkos uzlaznoj stopi rasta do sada. Investiranje vremena i sredstava u bilo koju Bitcoin aktivnost zahteva preduzetničke veštine. Postoji veliki broj načina da se zaradi novac u Bitcoinu, kao rudarenje, špekulacija ili pokretanjem sopstvenog biznisa. U svim ovim načinima postoji konkurencija i uspeh i zarada nisu zagarantovani. Na pojedincu je da napravi dobru procenu troškova i rizika koje takav poduhvat zahteva."
-    virtual: "Da li je Bitkoin u potpunosti virtuelan i nematerijalan?"
+    makemoneytxt1: "Nikada ne treba očekivati da ćete se na Bitkoinu ili bilo kojoj novoj tehnologiji obogatiti brzo. Uvek treba biti obrezan bilo čeka što zvuči previđe dobro da bi bilo istina ili odudara od osnovnih pravila ekonomije."
+    makemoneytxt2: "Bitkoin je okruženje inovacija i postoje prilike za poslovanje koje istovremeno uključuju znatne rizike. Ne postoji garancija da će Bitkoin nastaviti da raste uprkos uzlaznoj stopi rasta do sada. Investiranje vremena i sredstava u bilo koju Bitkoin aktivnost zahteva preduzetničke veštine. Postoji veliki broj načina da se zaradi novac u Bitkoinu, kao rudarenje, špekulacija ili pokretanjem sopstvenog biznisa. U svim ovim načinima postoji konkurencija i uspeh i zarada nisu zagarantovani. Na pojedincu je da napravi dobru procenu troškova i rizika koje takav poduhvat zahteva."
+    virtual: "Da li je Bitkoin u potpunosti virtualan i nematerijalan?"
     virtualtxt1: "Bitkoin je apstraktan i neopipljiv, kao i internet bankarstvo i kreditne kartice koje ljudi svakodnevno koriste. Bitkoin se moze koristiti za placanje u prodavnicama na interentu ili lokalno, kao i bilo koji drugi oblik novca. Bitkoin se moze razmeniti u fizickoj formi, poput <a href=\"https://denarium.com/\">Denarium novčića-a</a> , ali plaćanje preko mobilnog telefona i dalje ostaje najlakša opcija. Bitkoin balans skladišti u distributivnoj mrezi koja je sigurna i ne moze se izmeniti od strane nikoga. Drugim rečima, Bitkoin korisnici isključivo imaju kontrolu nad svojim novcem."
     anonymous: "Da li je Bitkoin anoniman?"
-    anonymoustxt1: "Bitcoin je dizajniran da omogući plaćanje i primanje uplata sa prihvatljivim nivoom privatnosti za korisnike. Međutim, Bitcoin nije potpuno anoniman i ne nudi isti nivo privatnosti kao keš. Korišćenje Bitkoina ostavlja vidljiv javni trag. <a href=\"#protect-your-privacy#\">Različiti mehanizm</a>i postoje da zaštite privatnost korisnika a postoje i oni koji su još uvek u razvoju. Ima još posla sa stanovišta poboljšanja ovih mehanizama kako bi se ona pravilno mogla koristiti od strane većine Bitcoin korisnika."
-    anonymoustxt2: "Postoji bojazan izvesnog broja ljudi da upotrebom Bitcoin-a privatne transakcije mogu da se koriste nedozvoljene svhe. Bitno je napomenuti da će Bitcoin sigurno biti predmet regulacija koje postoje u finansijskim sistemima. Bitcoin nije anonimniji od keš plaćanja tako da je vrlo malo verovatno da će omesti bilo kakvu kriminalnu istragu. Bitcoin je takodje dizajniran kako bi sprečio veliki broj finansijskih kriminalnih radnji."
+    anonymoustxt1: "Bitkoin je dizajniran da omogući plaćanje i primanje uplata sa prihvatljivim nivoom privatnosti za korisnike. Međutim, Bitkoin nije potpuno anoniman i ne nudi isti nivo privatnosti kao keš. Korišćenje Bitkoina ostavlja vidljiv javni trag. <a href=\"#protect-your-privacy#\">Različiti mehanizm</a>i postoje da zaštite privatnost korisnika a postoje i oni koji su još uvek u razvoju. Ima još posla sa stanovišta poboljšanja ovih mehanizama kako bi se ona pravilno mogla koristiti od strane većine Bitkoin korisnika."
+    anonymoustxt2: "Postoji bojazan izvesnog broja ljudi da upotrebom Bitkoin-a privatne transakcije mogu da se koriste nedozvoljene svhe. Bitno je napomenuti da će Bitkoin sigurno biti predmet regulacija koje postoje u finansijskim sistemima. Bitkoin nije anonimniji od keš plaćanja tako da je vrlo malo verovatno da će omesti bilo kakvu kriminalnu istragu. Bitkoin je takodje dizajniran kako bi sprečio veliki broj finansijskih kriminalnih radnji."
     lost: "Šta se dešava ako se bitkoini izgube?"
-    losttxt1: "Kada korisnik izgubi svoj nočanik ili privatni ključ, to znači da su bitkoini u njegovom vlasništvu trajno van cirkulacije. Izgubljeni bitcoini i dalje ostaju u block chain-u kao i bilo koji drugi. Međutim, izgubljeni bitkoini ostaju trajno zaključani i ne postoji mogućnost da ih bilo ko bez pristupa privatnom ključu pomeri i potroši. Izgubljeni bitkoini čine one na mreži vrednijima, jer što je manje bitkoina, oni koji su ostali imaće veću potražnju i samim tim i vrednost."
-    scale: "Da li Bitcoin može dostići skalibilnost velikih platežnih mreža?"
-    scaletxt1: "Dok Bitcoin mreža može obraditi ogroman broj transakcija u sekundi, još uvek nije u potpunosti spremna da se meri sa nivoom skalibilnosti koje imaju kreditne kartice.  Radi se na podizanju postojećih limitacija i problemi u vezi sa tim su već poznati. Od svog nastanka, Bitcoin je predmet kontinuiranog procesa sazrevanja, optimizacije i specijalizacije i to treba očekivati i u narednim godinama. Kako upotreba i broj korisnika rastu, veći broj ljudi korstiće lakše verzije novčanika, i pokretanje full-node-a možda će postati specijalizovana usluga. Za više informacija pogledajte  <a href=\"https://en.bitcoin.it/wiki/Scalability\">Skalibilnost</a> Wiki stranicu."
+    losttxt1: "Kada korisnik izgubi svoj nočanik ili privatni ključ, to znači da su bitkoini u njegovom vlasništvu trajno van cirkulacije. Izgubljeni bitcoini i dalje ostaju u blokčejn-u kao i bilo koji drugi. Međutim, izgubljeni bitkoini ostaju trajno zaključani i ne postoji mogućnost da ih bilo ko bez pristupa privatnom ključu pomeri i potroši. Izgubljeni bitkoini čine one na mreži vrednijima, jer što je manje bitkoina, oni koji su ostali imaće veću potražnju i samim tim i vrednost."
+    scale: "Da li Bitkoin može dostići skalibilnost velikih platežnih mreža?"
+    scaletxt1: "Dok Bitkoin mreža može obraditi ogroman broj transakcija u sekundi, još uvek nije u potpunosti spremna da se meri sa nivoom skalibilnosti koje imaju kreditne kartice.  Radi se na podizanju postojećih limitacija i problemi u vezi sa tim su već poznati. Od svog nastanka, Bitkoin je predmet kontinuiranog procesa sazrevanja, optimizacije i specijalizacije i to treba očekivati i u narednim godinama. Kako upotreba i broj korisnika rastu, veći broj ljudi korstiće lakše verzije novčanika, i pokretanje full-node-a možda će postati specijalizovana usluga. Za više informacija pogledajte  <a href=\"https://en.bitcoin.it/wiki/Scalability\">Skalibilnost</a> Wiki stranicu."
     legal: "Zakonitost"
     islegal: "Da li je Bitkoin legalan?"
-    islegaltxt1: "Koliko je poznato Bitcoin se <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">ne smatra nelegalnim u najvećem broju jurisdikcija</a>. Međitm, neke jurisdikcije (poput Argentine i Rusije) ozbiljno se trude da zabrane inostrane valute. Druge države (poput Tajlanda) mogu ograničiti licenciranje određenim entitetima poput Bitcoin menjačnica."
-    islegaltxt2: "Regulatori iz različitih jurisdikcija čine korake kako bi pojedincima i poslovnim entitetima omogućili pravila integrisanja ove nove tehnologije sa formalnim, regulisanim finansijskim sistemom. Na primer, odeljenje za finansijski kriminal (FinCEN) uprave za trezor, izdalo je neobavezujući nis praila kako se pojedine aktivnosti u vezi kripto valuta karakterišu."
+    islegaltxt1: "Koliko je poznato Bitkoin se <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">ne smatra nelegalnim u najvećem broju jurisdikcija</a>. Međitm, neke jurisdikcije (poput Argentine i Rusije) ozbiljno se trude da zabrane inostrane valute. Druge države (poput Tajlanda) mogu ograničiti licenciranje određenim entitetima poput Bitkoin menjačnica."
+    islegaltxt2: "Regulatori iz različitih jurisdikcija čine korake kako bi pojedincima i poslovnim entitetima omogućili pravila integrisanja ove nove tehnologije sa formalnim, regulisanim finansijskim sistemom. Na primer, odeljenje za finansijski kriminal (FinCEN) uprave za trezor, izdalo je neobavezujući nis praila kako se pojedine aktivnosti u vezi kriptovaluta karakterišu."
     illegalactivities: "Da li Bitkoin može da se koristi za nelegalne aktivnosti?"
     illegalactivitiestxt1: "Bitkoin je novac i novac je uvek bio korišćen za zakonite i nezakonite radnje. Keš, kreditne kartice i bankarski sistemi premašuju upotrebu u nelegalnim aktivnostima u poređenju sa korišćanjem Bitkoina za slične aktivnosti. Bitkoin donosi ogromne prednosti u odnosu na mane, kada ga uporedimo sa tradicionalnim načina plaćanja, da su osvrti na kriminalizaciju Bitkoina beznačajni."
     illegalactivitiestxt2: "Bitkoin je dizajniran kao ogroman korak napred u povećanju bezbednosti finansija i kao takav pruža značajnu zaštitu od finansijskih prevara. Na primer, BItkoin je nemoguće falsifikovati. Korisnici imaju potpunu kontrolu nad svojim sredstvima i imuni su na već poznate probleme koje imaju kreditne kartice, poput neosnovanog skidanja novca sa istih od strane treće partije. Bitkoin transakcije su nepovratne i imune na lažne povraćaje novca. Bitkoin je osiguran mehanizmima poput dodatnih kopija (backup), enkripcije i multi-sig potpisima koji zahtevaju odobrenje većeg broja lica kako bi novac bio potrošen iz zajedničkog novčanika."
@@ -639,7 +639,7 @@ sr:
   index:
     title: "Bitkoin - P2P novac otvorenog koda"
     metadescription: "Bitkoin je inovativna mreža plaćanja i nova vrsta novca. Saznajte sve i počnite sa Bitkoinom na bitcoin.org."
-    listintro: "Bitkoin je inovatina mreža za plaćanje i nova vrsta novca."
+    listintro: "Bitkoin je inovativna mreža za plaćanje i nova vrsta novca."
     list1: "brze-transakcije-od-osobe-do-osobe"
     list2: "Plaćajte širom sveta"
     list3: "Niske provizije"
@@ -681,7 +681,7 @@ sr:
     automation: "Automatizovana rešenja"
     automationtext: "Automatizovani servisi obično moraju da se nose sa troškovima i limitacijama keša ili kreditnih kartica. Ovo uključuje različite aparate za slatkiše, karte za vozve, mašine za sokove. Bitkoin je podoban za korišćenje automatizovanih usluga nove generacije i smanjenje njihovih troškova. Zamislite taksi vozila koja sama voze, ili radnju gde plaćate bez čekanja u redu. Mnoge ideje su ostvarljive."
   legal:
-    title: "Pravno obaveštenje - Bitcoin"
+    title: "Pravno obaveštenje - Bitkoin"
     pagetitle: "Pravno obaveštenje"
     information: "Informacije objavljene na bitcoin.org"
     informationtxt1: "Veb sajt https://bitcoin.org/ (u daljem tekstu \"vebsajt\") pruža informacije i materijal opšte prirode. Niste ovlašćeni, niti se trebate pouzdati u vebsajt za pravne savete, poslovne savete ili savjete bilo koje vrste. Delujete na sopstveni rizik kada se oslanjate na sadržaj veb sajta. Ako donesete odluku da postupite ili ne postupite, trebalo bi da kontaktirate licenciranog advokata u nadležnoj jurisdikciji u kojoj želite ili trebate pomoć. Ni na koji način nisu vlasnici ili doprinosi Internet stranici odgovorni za radnje, odluke ili drugo ponašanje koje ste preduzeli ili niste preduzeli u oslanjanju na vebsajt."
@@ -689,7 +689,7 @@ sr:
     translationstxt1: "Sajt može sadržavati prevode engleske verzije sadržaja koji su dostupni na vebsajtu. Ovi prevodi su dostupni samo kao pogodnost. U slučaju bilo kakvog sukoba između verzije na engleskom jeziku i prevedene verzije, verzija na engleskom jeziku ima prednost. Ako primetite bilo kakvu nedoslednost, molimo vas da je prijavite na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org\">GitHub-u</a>."
     userisks: "Rizici povezani u vezi sa korišćenjem Bitkoina"
     useriskstxt1: "Sajt neće biti odgovoran za bilo kakve gubitke, štete ili potraživanja koja proizilaze iz događaja koji spadaju u područje sljedećih pet kategorija:"
-    useriskstxt2: "Greške koje je napravio korisnik bilo kog softvera ili usluge vezanih za Bitcoin, npr. zaboravljene lozinke, plaćanja poslata na pogrešne Bitcoin adrese i slučajno brisanje novčanika."
+    useriskstxt2: "Greške koje je napravio korisnik bilo kog softvera ili usluge vezanih za Bitkoin, npr. zaboravljene lozinke, plaćanja poslata na pogrešne Bitkoin adrese i slučajno brisanje novčanika."
     useriskstxt3: "Softverski problemi sa vebsajtom i / ili bilo kojim softverom ili uslugom vezanim za Bitkoin, npr. korumpiranu datoteku novčanika, pogrešno konstruisane transakcije, nebezbedne kriptografske biblioteke, malver koji utiče na sajt i / ili bilo koji softver ili uslugu vezanu za Bitkoin."
     useriskstxt4: "Tehnički nedostaci u hardveru korisnika bilo kog softvera ili usluge vezanog za Bitkoin, npr. Gubitak podataka zbog neispravnog ili oštećenog uređaja za skladištenje."
     useriskstxt5: "Sigurnosne probleme koje korisnik ima od bilo kog softvera ili usluge vezanih za Bitkoin, npr. Neovlašćen pristup novčanikima i / ili računima korisnika."
@@ -828,7 +828,7 @@ sr:
     pagetitle: "Podržite Bitkoin"
     summary: "Bitkoin je rođen iz male zajednice i brzo je porastao. Postoji mnogo stvari koje možete uraditi da ga podržite i pomognete drugima da nauče više."
     use: "Korišćenje Bitkoina"
-    usetxt: "<a href=\"#getting-started#\">Korišćenje Bitkoina</a> je prva stvar koju možete da uradite kako bi ste podržali Bitcoin. Verovatno postoji mnogo slučajeva u kojima vam može olakšati život. Možete primati uplate i obavljati kupovinu koristeći Bitkoine."
+    usetxt: "<a href=\"#getting-started#\">Korišćenje Bitkoina</a> je prva stvar koju možete da uradite kako bi ste podržali Bitkoin. Verovatno postoji mnogo slučajeva u kojima vam može olakšati život. Možete primati uplate i obavljati kupovinu koristeći Bitkoine."
     node: "Budite mreža"
     nodetxt: "Ukoliko imate dobru internet konekciju, možete pomoći ojačavanju mreže tako što ćete na vaš računar ili server pokrenuti potpuni softverski klijent (full node) uz otvoreni 8833 port. Full node osigurava mrežu i transakcije."
     mining: "Rudarstvo"
@@ -881,7 +881,7 @@ sr:
     signature: "Potpis"
     signaturetxt: "<a href=\"#[vocabulary.cryptography]\">Kriptografski</a> potpis je <b>matematički mehanizam koji omogućava nekome da dokaže vlasništvo</b>. U slučaju Bitkoina, <a href=\"#[vocabulary.wallet]\">Bitkoin novčanik</a> i njegovi <a href=\"#[vocabulary.privatekey]\">privatni ključ(evi)</a> su povezani su matematičkim magijom. Kada vaš Bitkoin softver potpiše transakciju sa odgovarajućim privatnim ključem, cela mreža može videti da se potpis podudara sa bitkoinima koji se troše. Međutim, ne postoji način da svet pogodi vaš privatni ključ da ukrade vaše mukom stečene bitkoine."
     wallet: "Novčanik"
-    wallettxt: "Bitcoin novčanik je otprilike <b>ekvivalent fizičkom novčaniku na Bitkoin mreži</b>. Novčanik zapravo sadrži vaš <a href=\"#[vocabulary.privatekey]\">privatni ključ(eve)</a> koji vam omogućavaju da potrošite bitkoine raspoređene u <a href=\"#[vocabulary.blockchain]\">lancu blokova (blokčejnu)</a>. Svaki Bitkoin novčanik može vam pokazati ukupan bilans svih bitkoina koje kontroliše i omogućava vam da platite određenu količinu određenoj osobi, baš kao pravi novčanik. Razlikuje se od kreditnih kartica sa kojima vam trgovac naplaćuje."
+    wallettxt: "Bitkoin novčanik je otprilike <b>ekvivalent fizičkom novčaniku na Bitkoin mreži</b>. Novčanik zapravo sadrži vaš <a href=\"#[vocabulary.privatekey]\">privatni ključ(eve)</a> koji vam omogućavaju da potrošite bitkoine raspoređene u <a href=\"#[vocabulary.blockchain]\">lancu blokova (blokčejnu)</a>. Svaki Bitkoin novčanik može vam pokazati ukupan bilans svih bitkoina koje kontroliše i omogućava vam da platite određenu količinu određenoj osobi, baš kao pravi novčanik. Razlikuje se od kreditnih kartica sa kojima vam trgovac naplaćuje."
   you-need-to-know:
     title: "Neke stvari koje bi trebali da znate - Bitkoin"
     pagetitle: "Neke stvari koje bi trebali da znate"
@@ -906,11 +906,11 @@ sr:
     high_value_minimum: "Preporuke za transfere visoke vrednosti"
     alert_recommendation: "Preporuke prilikom <a href=\"/en/alerts\">vanrednih situacija</a>"
     experimental: "Bitkoin je i dalje eksperimentalan"
-    experimentaltxt: "Bitcoin je eksperimentalna nova valuta koja ima aktivnu zajednicu programera. Svako poboljšanje čini Bitcoin privlačnijim ali takođje nosi sa sobom i nove izazove kako Bitcoin raste. Tokom pojedinih faza razvoja možete iskusiti uvećane provizije, sporije potvrde pa čak i veće probleme. Budite spremi na probleme i konsultujte stručnno lice pre nego što napravite znatnu investiciju, imajte na umu da niko ne može predvideti budućnost Bitcoin-a."
+    experimentaltxt: "Bitkoin je eksperimentalna nova valuta koja ima aktivnu zajednicu programera. Svako poboljšanje čini Bitkoin privlačnijim ali takođje nosi sa sobom i nove izazove kako Bitkoin raste. Tokom pojedinih faza razvoja možete iskusiti uvećane provizije, sporije potvrde pa čak i veće probleme. Budite spremi na probleme i konsultujte stručnno lice pre nego što napravite znatnu investiciju, imajte na umu da niko ne može predvideti budućnost Bitkoin-a."
     tax: "Vladini porezi i zakonska regulativa"
-    taxtxt: "Bitcoin nije zvanična valuta. S tim u vezi, neke jurisdikcije zahtevaju da platite porez na sve što ima vrednost, uključujući i Bitcoin. Vaša je obaveza da se ponašate u skladu sa <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">poreskim i zakonskim obavezama</a> propisanih od strane vlade i/ili nadležne opštine."
+    taxtxt: "Bitkoin nije zvanična valuta. S tim u vezi, neke jurisdikcije zahtevaju da platite porez na sve što ima vrednost, uključujući i Bitkoin. Vaša je obaveza da se ponašate u skladu sa <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">poreskim i zakonskim obavezama</a> propisanih od strane vlade i/ili nadležne opštine."
   layout:
-    menu-about-us: "U vezi bitcoin.org"
+    menu-about-us: "O nama - bitcoin.org"
     menu-bitcoin-for-businesses: Preduzeća
     menu-bitcoin-for-developers: Programeri
     menu-bitcoin-for-individuals: Fizička lica
@@ -955,9 +955,9 @@ sr:
     donation-modal-optional-message: "Opcioni opis (za vaš novčanik)"
   url:
     about-us: o-nama
-    bitcoin-for-developers: bitcoin-za-programere
-    bitcoin-for-individuals: bitcoin-za-lica
-    bitcoin-for-businesses: bitcoin-za-preduzeca
+    bitcoin-for-developers: bitkoin-za-programere
+    bitcoin-for-individuals: bitkoin-za-lica
+    bitcoin-for-businesses: bitkoin-za-preduzeca
     buy: kupi
     choose-your-wallet: izaberite-vas-novcanik
     community: zajednica
@@ -983,8 +983,8 @@ sr:
     support-bitcoin: podrzite-bitkoin
     vocabulary: vokabular
     you-need-to-know: trebali-bi-da-znate
-    bitcoin-paper: bitcoin-papir
-    spend-bitcoin: potrosi-bitcoin
+    bitcoin-paper: bitkoin-papir
+    spend-bitcoin: potrosi-bitkoin
   anchor:
     community:
       non-profit: neprofitna
@@ -1006,17 +1006,17 @@ sr:
       wallet: novcanik
     faq:
       general: generalno
-      whatisbitcoin: sta-je-bitcoin
+      whatisbitcoin: sta-je-bitkoin
       creator: ko-je-napravio-bitkoine
       whocontrols: ko-kontrolise-bitkoin-mrezu
       howitworks: kako-bitkoini-funkcionisu
       acquire: kako-doci-do-bitkoina
-      used: da-li-ljudi-stvarno-koriste-bitkoine
+      used: "da-li-ljudi-stvarno-koriste-bitkoine"
       makepayment: koliko-je-tesko-izvrsiti-bitkoin-placanje
       advantages: koje-su-prednosti-bitkoina
       disadvantages: koji-su-nedostaci-bitkoina
       trust: zasto-ljudi-imaju-poverenje-u-bitkoin
-      makemoney: mogu-li-da-napravim-novac-sa-bitkoinima
+      makemoney: mogu-li-da-zaradim-sa-bitkoinima
       virtual: da-li-su-bitkoini-u-potpunosti-virtuelni-i-nematerijalni
       anonymous: da-li-su-bitkoini-anonimni
       lost: sta-se-desava-kad-se-bitkoini-izgube
@@ -1038,7 +1038,7 @@ sr:
       finitelimitation: da-li-je-limitirani-iznos-bitkoina-ogranicenje
       deflationaryspiral: da-li-ce-bitkoin-propasti-zbog-deflatorne-spirale
       speculationvolatility: da-li-je-spekulacija-i-nestabilnost-problem-za-bitkoin
-      buyall: sta-ako-neko-kupi-sve-preostale-bitcoine
+      buyall: sta-ako-neko-kupi-sve-preostale-bitkoine
       bettercurrency: sta-ako-neko-napravi-bolju-digitalnu-valutu
       transactions: transakcije
       tenminutes: zasto-treba-da-cekam-10-minuta
@@ -1052,8 +1052,8 @@ sr:
       miningsecure: kako-rudarenje-pruza-bezbednost-bitkoinu
       miningstart: kako-da-pocnem-sa-rudarenjem
       security: bezbednost
-      secure: da-li-je-bitcoin-bezbedan
-      hacked: da-li-je-bitcoin-hakovan-u-proslosti
+      secure: da-li-je-bitkoin-bezbedan
+      hacked: da-li-je-bitkoin-hakovan-u-proslosti
       collude: da-li-se-korisnici-mogu-da-se-udruze-protiv-bictoin
       quantum: da-li-je-bitkoin-ranjiv-na-kvantnum-racunare
       help: pomoc
