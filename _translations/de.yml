@@ -875,7 +875,7 @@ de:
     bitcoin: " Bitcoin"
     bitcointxt: "\"Bitcoin\" wird zur Beschreibung des Konzepts von Bitcoin, aber auch für das gesamte Bitcoin-Netzwerk verwendet. Zum Beispiel: \"Ich habe heute etwas über das Bitcoin-Protokoll gelernt\". \"Bitcoin\" wird aber auch als Rechnungseinheit verwendet. Zum Beispiel: \"Ich habe heute zehn Bitcoins versendet\". Als Rechnungseinheit wird er häufig mit BTC oder XBT abgekürzt."
     blockchain: "Blockchain"
-    blockchaintxt: "Die Blockchain ist ein chronologisch geordnetes <b>öffentliches Register aller Bitcoin-Transaktionen. Alle Bitcoin-Nutzer teilen sich die selbe Blockchain. Sie wird verwendet, um die Beständigkeit von Bitcoin-Transaktionen zu bestätigen und um <a href=\"#[vocabulary.doublespend]\">doppelte Ausgaben</a> zu verhindern."
+    blockchaintxt: "Die Blockchain ist ein chronologisch geordnetes <b>öffentliches Register aller Bitcoin-Transaktionen</b>. Alle Bitcoin-Nutzer teilen sich die selbe Blockchain. Sie wird verwendet, um die Beständigkeit von Bitcoin-Transaktionen zu bestätigen und um <a href=\"#[vocabulary.doublespend]\">doppelte Ausgaben</a> zu verhindern."
     block: "Block"
     blocktxt: "Ein Block ist ein <b>Datensatz in der Blockchain, der viele ausstehende Transaktionen enthält und bestätigt</b>. Durch <a href=\"#[vocabulary.mining]\">Mining</a>wird durchschnittlich alle 10 Minuten ein neuer Block inkl. Transaktionen an die <a href=\"#[vocabulary.blockchain]\">Blockchain</a> angehangen."
     btc: "BTC"
