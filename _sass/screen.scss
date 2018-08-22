@@ -778,6 +778,14 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     background-size: contain;
     border: none;
 }
+.mainannouncement {
+  margin: 18px auto 0;
+  text-align: center;
+}
+.mainannouncement a {
+  color: #FF7E00;
+  text-decoration: underline;
+}
 .closed {
     display: none;
 }
