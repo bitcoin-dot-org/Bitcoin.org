@@ -98,6 +98,9 @@ http://opensource.org/licenses/MIT.
     </div>
     <div class="footermenu-item footermenu-other">
       <p class="footer-title">{% translate menu-other layout %}:</p>
+      {% if page.lang == 'en' %}
+      <a href="/{{ page.lang }}/{% translate scams url %}">{% translate menu-scams layout %}</a>
+      {% endif %}
       <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
       {% case page.lang %} {% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl'
       or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'ja' or 'zh_CN' or 'zh_TW' %}

@@ -812,6 +812,41 @@ en:
     documentaries: "Documentaries"
     learn: "Learning Resources"
     vouchers: "Vouchers"
+  scams:
+    title: "Avoid Scams - Bitcoin"
+    pagetitle: "Avoid Scams"
+    summary: "Familiarize yourself with some of the most commonly observed bitcoin scams to help protect yourself and your finances."
+    table: "Table of contents"
+    blackmail: "blackmail"
+    blackmailtxt: "Be wary of blackmail attempts in which strangers threaten you in exchange for bitcoin as a means of extortion. One common execution of this method is by email, where-in the sender transmits a message claiming that he/she has hacked into your computer and is operating it via remote desktop protocol (RDP). The sender says that a key logger has been installed and that your web cam was used to record you doing something you may not want others to know about. The sender provides two options - send bitcoin to suppress the material, or send nothing and see the content sent to your email contacts and spread across your social networks. Scammers use stolen email lists and other leaked user information to run this scheme across thousands of people en masse."
+    fake-exchanges: "fake exchanges"
+    fake-exchangestxt: "As bitcoin has become more popular, more people have sought to acquire it. Unfortunately, nefarious people have taken advantage of this and have been known to set up fake bitcoin exchanges. These fake exchanges may trick users by offering extremely competitive market prices that lull them into thinking they're getting a steal, with quick and easy access to some cheap bitcoin. Be sure to use a <a href=\"/en/exchanges\">reputable exchange</a> when buying or selling bitcoin."
+    free-giveaways: "free giveaways"
+    free-giveawaystxt: "Due to the viral nature of how information spreads across on the internet, scammers seek to take advantage of people by offering free giveaways of bitcoin or other digital currencies in exchange for sending a small amount to register, or by providing some personal information. When you see this on a website or social network, it's best to immediately report the content as fraudulent, so that others don't fall victim."
+    impersonation: "impersonation"
+    impersonationtxt: "Unfortunately it's very easy for con-artists to create social media accounts and impersonate people. Often times they lie in wait, until the person they're trying to impersonate publishes content. The impersonator then replies to it with a follow-up message or call to action - like a free giveaway - using an account that looks almost identical to the original poster or author. This makes it seem like the original person is saying it. Alternatively, impersonators may also try to use these same fake accounts to trick others via private or direct message into taking some kind of action in an attempt to defraud or compromise. Never participate in free giveaways, and if you receive an odd request via someone in your network, it's best to double check to confirm the authenticity via multiple mediums of communication."
+    malware: "malware"
+    malwaretxt: "Hackers have become very creative at finding ways to steal from people. When sending bitcoin, always be sure to double or triple check the address you're sending to. Some malware programs, once installed, will change bitcoin addresses when they're pasted from a user's clipboard, so that all of the bitcoin unknowingly gets sent to the hacker's address instead. Since there is little chance of reversing a bitcoin transaction once it's confirmed by the network, noticing this after the fact means it's too late and most likely can't be recovered. It's a good idea to be super-cautious about what programs you allow to have administrator access on your devices. An up-to-date, reputable virus scanner can also help but is not foolproof."
+    meet-in-person: "meet in person"
+    meet-in-persontxt: "When buying or selling bitcoin locally, a counterparty may ask you to meet in person to conduct the exchange. If it isn't a trusted party that you already know, this is a very risky proposition that could result in you getting robbed or injured. Con-artists have also been known to exchange counterfeit fiat currency in exchange for bitcoin. Consider using a peer-to-peer platform to escrow the funds in place of meeting in person."
+    money-transfer-fraud: "money transfer fraud"
+    money-transfer-fraudtxt: "Do not reply to emails or inbound communications from strangers telling you they need help moving some money, whereafter in exchange for your services, you'll get a portion of the funds."
+    phishing-emails: "phishing emails"
+    phishing-emailstxt: "Beware of emails purported to be from services you use soliciting you for action, such as resetting your password, or clicking through to provide some sort of interaction with regard to your account. It can be very difficult to spot the difference in a fake email that's trying to entice you to compromise your account, and a legitimate one sent on behalf of a product or service that you use. When in doubt, considering triple-checking the authenticity of the communication by forwarding it to the company, using the contact email address on their website, calling them on the telephone, and/or reaching out to them via their official social media accounts."
+    phishing-websites: "phishing websites"
+    phishing-websitestxt: "Phishing websites often go hand-in-hand with phishing emails. Phishing emails can link to a replica website designed to steal login credentials or prompt one to install malware. Do not install software or log in to a website unless you are 100% sure it isn't a fake one. Phishing websites may also appear as sponsored results on search engines or in app marketplaces used by mobile devices. Be wary that you aren't downloading a fake app or clicking a sponsored link to a fake website."
+    ponzi-schemes: "ponzi schemes"
+    ponzi-schemestxt: "Do not participate in offerings where one or more people offer you a guaranteed return in exchange for an upfront deposit. This is known as a ponzi scheme, where-in future depositors' principals are used to pay previous investors. The end result is usually a lot of people losing a lot of money."
+    pyramid-schemes: "pyramid schemes"
+    pyramid-schemestxt: "A pyramid scheme promises returns to participants based on the number of people they invite to join. This enables the scheme to grow virally and rapidly, however, it most often doesn't result in any kind of meaningful return for the members and/or those invited who also joined. Never invite your personal network under the sole goal of accumulating rewards or returns from a product or service, and do not contribute your own capital at the behest of others to accelerate the process."
+    prize-giveaways: "prize giveaways"
+    prize-giveawaystxt: "Similarly to free giveaways, prize giveaway scams trick people into taking action or supplying information about themselves. For example, supplying a name, address, email and phone number in order to claim a prize. This can allow a hacker to attempt to use the information to gain access to accounts by impersonating you."
+    pump-and-dumps: "pump and dumps"
+    pump-and-dumpstxt: "Do not trust people who entice you or others to invest because they claim that they know what the bitcoin price is going to be. In a pump and dump scheme, a person (or persons) try to artificially drive up or pump the price so that they can dump their holdings for a profit."
+    ransomware: "ransomware"
+    ransomwaretxt: "This is a type of malware that partially or completely blocks access to a device unless you pay a ransom in bitcoin. It's best to consult the advice of a trusted computer professional for removal assistance, rather than paying the ransom. Be careful about what programs you install on your devices, especially those that request administrator access. Also be sure to double-check that the application you are downloading isn't a fake one that's impersonating a legitimate one you've used in the past."
+    scam-coins: "scam coins"
+    scam-coinstxt: "Be careful when investing in alternative coins (altcoins). Amongst altcoins there may be scam coins, enticing users to invest via private sales, or with presale discounts. Scam coins may feature a flashy website and/or boast a large community to create a fear of missing out effect on people who discover it. This helps early holders pump up the price so that they can dump and exit their positions for a profit. Scam coins without large communities may do airdrops - offering free coins (or tokens) to people in exchange for joining their communities. This enables scam coins to present their initiatives with inflated traction metrics to make investors feel like they're missing out when it comes time for them to decide if they'd like to buy-in. Scam coins may also use the word Bitcoin in them in an effort to trick or mislead people into thinking there is a legitimate relationship."
   secure-your-wallet:
     title: "Securing your wallet - Bitcoin"
     pagetitle: "Securing your wallet"
@@ -968,6 +1003,7 @@ en:
     menu-press: "Press"
     menu-privacy: "Privacy Policy"
     menu-resources: Resources
+    menu-scams: "Avoid Scams"
     menu-support-bitcoin: "Support Bitcoin"
     menu-buy: "Buy Bitcoin"
     menu-full-node: "Running a full node"
@@ -1020,6 +1056,7 @@ en:
     privacy: privacy
     protect-your-privacy: protect-your-privacy
     resources: resources
+    scams: scams
     secure-your-wallet: secure-your-wallet
     support-bitcoin: support-bitcoin
     vocabulary: vocabulary
@@ -1029,6 +1066,22 @@ en:
   anchor:
     community:
       non-profit: non-profit
+    scams:
+      blackmail: blackmail
+      fake-exchanges: fake-exchanges
+      free-giveaways: free-giveaways
+      impersonation: impersonation
+      malware: malware
+      meet-in-person: meet-in-person
+      money-transfer-fraud: money-transfer-fraud
+      phishing-emails: phishing-emails
+      phishing-websites: phishing-websites
+      ponzi-schemes: ponzi-schemes
+      pyramid-schemes: pyramid-schemes
+      prize-giveaways: prize-giveaways
+      pump-and-dumps: pump-and-dumps
+      ransomware: ransomware
+      scam-coins: scam-coins
     vocabulary:
       address: address
       bit: bit
