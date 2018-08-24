@@ -7,10 +7,10 @@ required:
     title_max_40_characters_no_formatting: Soft Fork, Soft-Forking Change
 
     summary_max_255_characters_no_formatting: >
-        A softfork is a change to the bitcoin protocol 
+        A soft fork is a change to the bitcoin protocol 
         wherein only previously valid blocks/transactions 
         are made invalid. Since old nodes will recognise 
-        the new blocks as valid, a softfork is backward-compatible.
+        the new blocks as valid, a soft fork is backward-compatible.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Soft fork

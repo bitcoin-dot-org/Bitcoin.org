@@ -50,7 +50,7 @@ per i miglioramenti specifici descritti nella [roadmap][]
   attraverso la possibilità per gli utenti di lasciare il canale aperto quanto
   lo desiderano.
 
-- **[VersionBits][BIP9]:** aumenta il numero dei softforks che è possibile
+- **[VersionBits][BIP9]:** aumenta il numero dei soft forks che è possibile
   mettere in campo. Da 1 a 29 rilasci di nuove versioni simultaneamente, questo
   permette più veloci e più decentralizzati miglioramenti futuri del network.
 
