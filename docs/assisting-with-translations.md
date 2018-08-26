@@ -5,7 +5,6 @@
 * [Responsibilities and Tasks for each User Role](#responsibilities-and-tasks-for-each-user-role)
 
 ___
-___
 
 ## Handling Translations on GitHub
 
@@ -65,7 +64,6 @@ translations at once:
     tx push -s -t -f --skip --no-interactive
     
 ___
-___
 
 ## Getting started with the Bitcoin.org Translation Team
 
@@ -116,7 +114,6 @@ General guidelines provided by Transifex itself can be found [here](https://docs
 ### 7.	Take a look at the Responsibilities and Tasks for each User Role
 * The next section [Responsibilities and Tasks for each User Role](#responsibilities-and-tasks-for-each-user-role) outlines - as the title says - the responsibilities and tasks for each user role.
 
-___
 ___
 
 ## Responsibilities and Tasks for each User Role
