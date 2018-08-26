@@ -71,7 +71,7 @@ ___
 ## Getting started with the Translation Team
 
 While the website itself is managed on [GitHub](https://github.com/bitcoin-dot-org/bitcoin.org/), the translations are handled through [Transifex](https://www.transifex.com/bitcoinorg/bitcoinorg/).
-This document shall explain the first steps on Transifex for new volunteers who want to help with translating bitcoin.org.
+This section shall explain the first steps on Transifex for new volunteers who want to help with translating bitcoin.org.
 
 General guidelines provided by Transifex itself can be found [here](https://docs.transifex.com/getting-started/translators).
 
@@ -121,7 +121,7 @@ ___
 
 ## Responsibilities and Tasks for each User Role
 
-This document shall outline the responsibilities and tasks for each user role.
+This section shall outline the responsibilities and tasks for each user role.
 
 ### 1. Team Leaders
 Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: “Komodorpudel”) and Apple AKA “ajsolbrilla”.
