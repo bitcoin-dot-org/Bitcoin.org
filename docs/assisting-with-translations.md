@@ -1,5 +1,8 @@
-# Assisting with Translations
+# Assisting with Translations#
 
+This document provides information regarding translations for bitcoin.org.
+
+## Table of Content
 * [Handling Translations on GitHub](#handling-translations-on-github)
 * [Getting started with the Translation Team](#getting-started-with-the-translation-team)
 * [Responsibilities and Tasks for each User Role](#responsibilities-and-tasks-for-each-user-role)
