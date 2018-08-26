@@ -2,11 +2,13 @@ Table of content
 
 [B. Getting started with the Bitcoin.org Translation Team](#B.-Getting-started-with-the-Bitcoin.org-Translation-Team)
 
-
+[Go to Real Cool Heading section](#real-cool-heading)
 ___
 ___
 
-## A. Handling Translations on GitHub.md
+# real-cool-heading
+
+## A. Handling Translations on GitHub
 
 This section outlines how to handle translations on GitHub. If you only want to help by translating content, scroll down to section [B. Getting started with the Bitcoin.org Translation Team](#b.-getting-started-with-the-bitcoin.org-translation-team)
 
