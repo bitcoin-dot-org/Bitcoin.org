@@ -1,6 +1,6 @@
 Table of content
 
-[B. Getting started with the Bitcoin.org Translation Team](#b.-getting-started-with-the-bitcoin.org-translation-team)
+[B. Getting started with the Bitcoin.org Translation Team](#B.-Getting-started-with-the-Bitcoin.org-Translation-Team)
 
 
 ___
