@@ -58,7 +58,7 @@ translations at once:
     # Push changes back to Transifex
     tx push -s -t -f --skip --no-interactive
     
-    ___
+___
 
 ## B. Getting started with the Bitcoin.org Translation Team
 
