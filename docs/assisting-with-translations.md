@@ -8,7 +8,7 @@ Table of content
 ___
 ___
 
-#Real Cool Heading
+# Real Cool Heading
 
 ## Handling Translations on GitHub
 
