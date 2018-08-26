@@ -4,8 +4,11 @@ Table of content
 * [Getting started with the Bitcoin.org Translation Team](#Getting-started-with-the-Bitcoin.org-Translation-Team)
 * [Responsibilities and Tasks for each User Role](#Responsibilities-and-Tasks-for-each-User-Role)
 
+[Go to Real Cool Heading section](#real-cool-heading)
 ___
 ___
+
+#Real Cool Heading
 
 ## Handling Translations on GitHub
 
