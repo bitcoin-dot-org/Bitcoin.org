@@ -1,4 +1,4 @@
-# Assisting with Translations#
+# Assisting with Translations
 
 This document provides information regarding translations for bitcoin.org.
 
