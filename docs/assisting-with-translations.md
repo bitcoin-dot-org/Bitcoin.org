@@ -8,7 +8,7 @@ ___
 
 ## Handling Translations on GitHub
 
-This section outlines how to handle translations on GitHub. If you only want to help by translating content, scroll down to section [Getting started with the Bitcoin.org Translation Team](#getting-started-with-the-bitcoin.org-translation-team)
+This section outlines how to handle translations on GitHub. If you only want to help by translating content, scroll down to section [Getting started with the Translation Team](#getting-started-with-the-translation-team)
 
 ### Import Translations
 
