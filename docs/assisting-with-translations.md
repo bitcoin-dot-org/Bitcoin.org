@@ -2,11 +2,11 @@ Table of content
 
 [B. Getting started with the Bitcoin.org Translation Team](#B.-Getting-started-with-the-Bitcoin.org-Translation-Team)
 
-[Go to Real Cool Heading section](#real-cool-heading)
+[Go to Real Cool Heading section](#A.-real-cool-heading)
 ___
 ___
 
-# Real Cool Heading
+# A. Real Cool Heading
 
 ## A. Handling Translations on GitHub
 
