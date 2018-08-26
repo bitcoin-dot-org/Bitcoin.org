@@ -6,7 +6,7 @@ Table of content
 ___
 ___
 
-# real-cool-heading
+# Real Cool Heading
 
 ## A. Handling Translations on GitHub
 
