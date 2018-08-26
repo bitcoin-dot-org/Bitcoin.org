@@ -1,18 +1,15 @@
-Table of content
+# Assisting with Translations
 
 * [Handling Translations on GitHub](#handling-translations-on-github)
 * [Getting started with the Bitcoin.org Translation Team](#getting-started-with-the-bitcoin.org-translation-team)
 * [Responsibilities and Tasks for each User Role](#responsibilities-and-tasks-for-each-user-role)
 
-
 ___
 ___
-
-# Real Cool Heading
 
 ## Handling Translations on GitHub
 
-This section outlines how to handle translations on GitHub. If you only want to help by translating content, scroll down to section [B. Getting started with the Bitcoin.org Translation Team](#b.-getting-started-with-the-bitcoin.org-translation-team)
+This section outlines how to handle translations on GitHub. If you only want to help by translating content, scroll down to section [Getting started with the Bitcoin.org Translation Team](#getting-started-with-the-bitcoin.org-translation-team)
 
 ### Import Translations
 
@@ -117,7 +114,7 @@ General guidelines provided by Transifex itself can be found [here](https://docs
   appreciated.**
   
 ### 7.	Take a look at the Responsibilities and Tasks for each User Role
-* The next document in this folder, "2. responsibilities-and-tasks-for-each-user-role", outlines - as the title says - the responsibilities and tasks for each user role.
+* The next section [Responsibilities and Tasks for each User Role](#responsibilities-and-tasks-for-each-user-role) outlines - as the title says - the responsibilities and tasks for each user role.
 
 ___
 ___
