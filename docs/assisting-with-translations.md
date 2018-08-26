@@ -1,7 +1,7 @@
 # Assisting with Translations
 
 * [Handling Translations on GitHub](#handling-translations-on-github)
-* [Getting started with the Bitcoin.org Translation Team](#getting-started-with-the-bitcoin.org-translation-team)
+* [Getting started with the Translation Team](#getting-started-with-the-translation-team)
 * [Responsibilities and Tasks for each User Role](#responsibilities-and-tasks-for-each-user-role)
 
 ___
@@ -65,7 +65,7 @@ translations at once:
     
 ___
 
-## Getting started with the Bitcoin.org Translation Team
+## Getting started with the Translation Team
 
 While the website itself is managed on [GitHub](https://github.com/bitcoin-dot-org/bitcoin.org/), the translations are handled through [Transifex](https://www.transifex.com/bitcoinorg/bitcoinorg/).
 This document shall explain the first steps on Transifex for new volunteers who want to help with translating bitcoin.org.
