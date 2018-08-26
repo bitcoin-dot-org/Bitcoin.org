@@ -1,10 +1,14 @@
+Table of content
+
+[B. Getting started with the Bitcoin.org Translation Team](#b.-getting-started-with-the-bitcoin.org-translation-team)
+
 
 ___
 ___
 
 ## A. Handling Translations on GitHub.md
 
-This document outlines how to handle translations on GitHub. If you only want to help by translating content, take a look at document "1. getting-started.md" in this folder.
+This section outlines how to handle translations on GitHub. If you only want to help by translating content, scroll down to section [B. Getting started with the Bitcoin.org Translation Team](#b.-getting-started-with-the-bitcoin.org-translation-team)
 
 ### Import Translations
 
