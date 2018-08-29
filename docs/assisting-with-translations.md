@@ -102,7 +102,7 @@ General guidelines provided by Transifex itself can be found [here](https://docs
 * Each resource consists of a number of strings, with a string being for example a paragraph or headline.
 * Each string has three possible states: "untranslated", "translated but unreviewed", and "reviewed". Only the first state "untranslated" is relevant for new volunteers. However, if you find a "translated but unreviewed" string that contains obvious mistakes, you are free to correct them. "Reviewed" strings can only be changed or unreviewed by reviewers.
 * **The first resource "bitcoin.org" contains all strings of the main page. If you are no Bitcoin expert, start here.**
-* **Everything else that follows starts with "devdocs...", indicating that these files are part of the developer documentation. Is is recommended that you only try to translate the developer documentation if you are an experienced Bitcoin user and/or developer with a profound understanding.**
+* **Everything else that follows starts with "devdocs...", indicating that these files are part of the developer documentation. It is recommended that you only try to translate the developer documentation if you are an experienced Bitcoin user and/or developer with a profound understanding.**
 
 ### 6.	Start translating
 * You must be a native speaker for the language you choose to translate.
