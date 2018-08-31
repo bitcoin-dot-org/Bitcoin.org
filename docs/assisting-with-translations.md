@@ -4,14 +4,14 @@ This document provides information regarding translations for bitcoin.org.
 
 ## Table of Contents
 * [Handling Translations on GitHub](#handling-translations-on-github)
-* [Getting started with the Translation Team](#getting-started-with-the-translation-team)
+* [Getting Started with the Translation Team](#getting-started-with-the-translation-team)
 * [Responsibilities and Tasks for each User Role](#responsibilities-and-tasks-for-each-user-role)
 
 ___
 
 ## Handling Translations on GitHub
 
-This section outlines how to handle translations on GitHub. If you only want to help by translating content, scroll down to section [Getting started with the Translation Team](#getting-started-with-the-translation-team).
+This section outlines how to handle translations on GitHub. If you only want to help by translating content, scroll down to the section [Getting Started with the Translation Team](#getting-started-with-the-translation-team).
 
 ### Import Translations
 
@@ -68,7 +68,7 @@ translations at once:
     
 ___
 
-## Getting started with the Translation Team
+## Getting Started with the Translation Team
 
 While the website itself is managed on [GitHub](https://github.com/bitcoin-dot-org/bitcoin.org/), the translations are handled through [Transifex](https://www.transifex.com/bitcoinorg/bitcoinorg/).
 This section shall explain the first steps on Transifex for new volunteers who want to help with translating bitcoin.org.
@@ -76,7 +76,7 @@ This section shall explain the first steps on Transifex for new volunteers who w
 General guidelines provided by Transifex itself can be found [here](https://docs.transifex.com/getting-started/translators).
 
 ### 1. Create a Transifex Account
-* Follow this [link](https://www.transifex.com/signup/) and create an account. Not much information is needed.
+* Follow this [link](https://www.transifex.com/signup/) and create an account. Creating a Transifex account is free and not much information is needed.
 
 ### 2. Login and join the Bitcoin.org Translation Team
 
@@ -88,7 +88,7 @@ General guidelines provided by Transifex itself can be found [here](https://docs
 ### 3.	Get to know the Interface
 * Play around with the interface. Transifex's interface can be a bit confusing and it cannot hurt to take a look around.
 * As Translator, you cannot cause any harm as you can only edit unreviewed strings. A complete history is saved for every string, making it impossible to destroy previous work.
-* For the beginning, stay away from the Glossary as this can be edited by new translators but no history is saved.
+* In the beginning, stay away from the Glossary as this can be edited by new translators but no history is saved.
 
 ### 4.	Join our Telegram Group
 * Join our [Telegram Group](https://t.me/joinchat/Bgh47RC1BZb2YE6u8iznOg).
@@ -134,7 +134,7 @@ Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: “Komodorpud
 
 ### 2.	Coordinators
 Various people across all language teams are coordinators. For a number of languages, no active coordinator exists. If there are any questions or you want to assist by becoming a coordinator, write one of the Team Leaders.
-* If man power is needed: Translating, thereby using translations provided by the glossary if applicable and striving for consistency across strings.
+* When additional help is needed: Translating, thereby using translations provided by the glossary if applicable and striving for consistency across strings.
 * Oversight on the complete translation efforts for a specific language.
 * Notifying Team Leaders if a resource is ready to be put on the website.
 * Being a contact person for the Team Leaders.
@@ -147,8 +147,8 @@ Various people across all language teams are coordinators. For a number of langu
 * Translating, thereby using translations provided by the glossary if applicable and striving for consistency across strings.
 * Reviewing strings (preferably not your own strings if possible).
 * Checking translations for correctness regarding meaning and spelling.
-* Checking for consistency across translations (e.g. is “transaction malleability” translated consistently across all string?).
+* Checking for consistency across translations (e.g. is “transaction malleability” translated consistently across all strings?).
 
 ### 4. Translators
 * Translating, thereby using translations provided by the glossary if applicable and striving for consistency across strings.
-* Extending the glossary with translations for necessary and general term
+* Extending the glossary with translations for necessary and general terms.
