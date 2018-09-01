@@ -85,17 +85,17 @@ General guidelines provided by Transifex itself can be found [here](https://docs
 * Your request to join a team will be accepted instantly, and you will be a translator for the language you selected.
 * If your language is not available yet, close the pop-up, scroll down, and click on “Request language” on the right side. Please consider first if it is necessary that bitcoin.org is available in your language. There is a lot of content to be translated and especially for languages with a low number of native speakers, there won’t be many people available that are willing to assist you.
 
-### 3.	Get to know the Interface
+### 3. Get to know the Interface
 * Play around with the interface. Transifex's interface can be a bit confusing and it cannot hurt to take a look around.
 * As Translator, you cannot cause any harm as you can only edit unreviewed strings. A complete history is saved for every string, making it impossible to destroy previous work.
 * In the beginning, stay away from the Glossary as this can be edited by new translators but no history is saved.
 
-### 4.	Join our Telegram Group
+### 4. Join our Telegram Group
 * Join our [Telegram Group](https://t.me/joinchat/Bgh47RC1BZb2YE6u8iznOg).
 * The website maintainer, both Team Leaders for translations, a number of language coordinators, and various translators are present in this group.
 * We are happy to help in case you need assistance.
 
-### 5.	Choose what you want to translate
+### 5. Choose what you want to translate
 * Click on "Dashboard" on the top.
 * Once you are on the "Dashboard", click on "Languages" on the left side and select your language.
 * You will see a lot of different resources and their progress.
@@ -104,7 +104,7 @@ General guidelines provided by Transifex itself can be found [here](https://docs
 * **The first resource "bitcoin.org" contains all strings of the main page. If you are no Bitcoin expert, start here.**
 * **Everything else that follows starts with "devdocs...", indicating that these files are part of the developer documentation. It is recommended that you only try to translate the developer documentation if you are an experienced Bitcoin user and/or developer with a profound understanding.**
 
-### 6.	Start translating
+### 6. Start translating
 * You must be a native speaker for the language you choose to translate.
 * Please be careful to preserve the original meaning of each text.
 * Sentences and popular expressions should sound native in your language.
@@ -114,7 +114,7 @@ General guidelines provided by Transifex itself can be found [here](https://docs
 * **In doubt, please contact coordinators on Transifex. That'll be much
   appreciated.**
   
-### 7.	Take a look at the Responsibilities and Tasks for each User Role
+### 7. Take a look at the Responsibilities and Tasks for each User Role
 * The next section [Responsibilities and Tasks for each User Role](#responsibilities-and-tasks-for-each-user-role) outlines - as the title says - the responsibilities and tasks for each user role.
 
 ___
@@ -132,7 +132,7 @@ Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: “Komodorpud
 * Promoting or demoting users (e.g. promoting a reviewer to coordinator).
 * Managing groups that have no active coordinator.
 
-### 2.	Coordinators
+### 2. Coordinators
 Various people across all language teams are coordinators. For a number of languages, no active coordinator exists. If there are any questions or you want to assist by becoming a coordinator, write one of the Team Leaders.
 * When additional help is needed: Translating, thereby using translations provided by the glossary if applicable and striving for consistency across strings.
 * Oversight on the complete translation efforts for a specific language.
