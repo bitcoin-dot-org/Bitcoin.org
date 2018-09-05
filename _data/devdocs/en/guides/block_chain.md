@@ -98,8 +98,8 @@ added to the block chain, magnifying the effect of the proof of work.
 The [proof of work][/en/glossary/proof-of-work]{:#term-proof-of-work}{:.term} used in Bitcoin
 takes advantage of the apparently random nature of cryptographic hashes.
 A good cryptographic hash algorithm converts arbitrary data into a
-seemingly-random number. If the data is modified in any way and
-the hash re-run, a new seemingly-random number is produced, so there is
+seemingly random number. If the data is modified in any way and
+the hash re-run, a new seemingly random number is produced, so there is
 no way to modify the data to make the hash number predictable.
 
 To prove you did some extra work to create a block, you must create a
