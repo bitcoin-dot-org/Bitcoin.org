@@ -156,7 +156,6 @@ first.
 [price volatility]: /en/you-need-to-know#volatile
 </div>
 
-<script src="/js/jquery/jquery-1.11.2.min.js"></script>
 <script>
 // Localize dates
 $(".date").each(function() {

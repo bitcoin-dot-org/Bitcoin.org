@@ -13,10 +13,10 @@ use the base template -->
 <head>
 {% include layout/base-core/html-head-jquery-css.html %}
 {% include layout/base/html-head.html %}
-{% include layout/base-core/html-head-extra.html %}
 </head>
 
 <body>
+{% include layout/base/pagetop-donation.html %}
 {% include layout/base/pagetop-detect-mobile.html %}
 {% include layout/base/pagetop-alert.html %}
 {% include layout/base-core/pagetop-moved-notice.html %}
@@ -42,7 +42,7 @@ use the base template -->
   <div class="footer">
     <div class="container">
       {% include layout/base/footer-logo.html %}
-      {% include layout/base-core/footer-menu.html %}
+      {% include layout/base/footer-menu.html %}
     </div>
     {% include layout/base-core/footer-license.html %}
   </div>
