@@ -2624,6 +2624,7 @@ br.big {
     overflow:hidden;
     -webkit-transition:height 400ms ease-out;
     transition:height 400ms ease-out;
+    padding-left:24px;
 }
 .devprojectlist li:nth-child(1n+4){
     display:none;
