@@ -135,7 +135,7 @@ service interface using HTML/JavaScript on a GNU AGPL-licensed website.
 <!-- SOMEDAY: try to rewrite using a more likely real-world example without
 making the text or illustration more complicated --> 
 
-Alice also works part-time moderating forum posts for Bob. Every time
+Alice also works part time moderating forum posts for Bob. Every time
 someone posts to Bob's busy forum, Alice skims the post to make sure it
 isn't offensive or spam. Alas, Bob often forgets to pay her, so Alice
 demands to be paid immediately after each post she approves or rejects.
