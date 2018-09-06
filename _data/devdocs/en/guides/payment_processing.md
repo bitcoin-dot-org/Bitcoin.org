@@ -333,7 +333,7 @@ to that URL looking for a PaymentRequest message.
 
 The PaymentRequest message returned may include private information, such as Charlie's
 mailing address, but the wallet must be able to access it without using prior
-authentication, such as HTTP cookies, so a publicly-accessible HTTPS URL
+authentication, such as HTTP cookies, so a publicly accessible HTTPS URL
 with a guess-resistant part is typically used. The
 unique public key created for the payment request can be used to create
 a unique identifier. This is why, in the example URI above, the PaymentRequest
@@ -397,7 +397,7 @@ After Bob's server verifies from the block chain that Charlie's
 transaction has been suitably confirmed, it authorizes shipping
 Charlie's order.
 
-In the case of a dispute, Charlie can generate a cryptographically-proven
+In the case of a dispute, Charlie can generate a cryptographically proven
 [receipt][]{:#term-receipt}{:.term} out of the various signed or
 otherwise-proven information.
 
