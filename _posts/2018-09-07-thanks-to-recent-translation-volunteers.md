@@ -19,7 +19,7 @@ author: |
 
 Thanks to a [sponsorship from Paxful](https://bitcoin.org/en/posts/new-supporting-sponsorship-from-paxful),
 the following volunteer translators who have been the most active contributors
-in recent months have all been given bitcoin for their efforts:
+in recent months are being given bitcoin for their efforts:
 
 * Abegi
 * FrancescoGalati
