@@ -91,7 +91,7 @@ point where it stopped the next time you start it.
 
 
 {% capture windows_shutdown_warning %}
-**Warning:** to prevent data corruption, do not force shutdown your
+**Warning:** to prevent data corruption, do not force shutdown of your
 computer from the Windows shutdown screen when you have Bitcoin
 Core running.
 {% endcapture %}
@@ -367,7 +367,7 @@ the Ok button to save the new settings.
 ![Choosing to start Bitcoin Core at login](/img/full-node/en-start-on-login.png?{{site.time | date: '%s'}})
 
 The next time you login to your desktop, Bitcoin Core GUI will be
-automatically started in as an icon in the tray.
+automatically started as an icon in the tray.
 
 ![Bitcoin-Qt Tray Icon](/img/full-node/en-bitcoin-qt-tray-icon.png?{{site.time | date: '%s'}})
 </div>
@@ -547,7 +547,7 @@ the Ok button to save the new settings.
 ![Choosing to start Bitcoin Core at login](/img/full-node/en-start-on-login.png?{{site.time | date: '%s'}})
 
 The next time you login to your desktop, Bitcoin Core GUI should be
-automatically started in as an icon in the tray.
+automatically started as an icon in the tray.
 
 ![Bitcoin-Qt Tray Icon](/img/full-node/en-bitcoin-qt-tray-icon.png?{{site.time | date: '%s'}})
 
@@ -644,7 +644,7 @@ Core.
    useful for programmers and advanced users, proceed to the [Bitcoin
    Core Daemon](#win10-daemon) section below.
 
-3. To want to use both the GUI and the daemon, read both the [GUI
+3. If you want to use both the GUI and the daemon, read both the [GUI
    instructions](#win10-gui) and the [daemon
    instructions](#win10-daemon). Note that you can't run both the GUI
    and the daemon at the same time using the same configuration
@@ -743,7 +743,7 @@ Starting your node automatically each time your computer boots makes it
 easy for you to contribute to the network.  The easiest way to do this
 is to start Bitcoin Core daemon when you login to your computer.
 
-Start File Explorer and go to,
+Start File Explorer and go to:
 
     C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
 
@@ -798,7 +798,7 @@ Core.
    useful for programmers and advanced users, proceed to the [Bitcoin
    Core Daemon](#win8-daemon) section below.
 
-3. To want to use both the GUI and the daemon, read both the [GUI
+3. If you want to use both the GUI and the daemon, read both the [GUI
    instructions](#win8-gui) and the [daemon
    instructions](#win8-daemon). Note that you can't run both the GUI
    and the daemon at the same time using the same configuration
@@ -897,7 +897,7 @@ Starting your node automatically each time your computer boots makes it
 easy for you to contribute to the network.  The easiest way to do this
 is to start Bitcoin Core daemon when you login to your computer.
 
-Start File Explorer and go to,
+Start File Explorer and go to:
 
     C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
 
@@ -952,7 +952,7 @@ Core.
    useful for programmers and advanced users, proceed to the [Bitcoin
    Core Daemon](#win7-daemon) section below.
 
-3. To want to use both the GUI and the daemon, read both the [GUI
+3. If you want to use both the GUI and the daemon, read both the [GUI
    instructions](#win7-gui) and the [daemon
    instructions](#win7-daemon). Note that you can't run both the GUI
    and the daemon at the same time using the same configuration
@@ -1055,7 +1055,7 @@ point where it stopped the next time you start it.
 
 Starting your node automatically each time your computer boots makes it easy for you to contribute to the network. The easiest way to do this is to start Bitcoin Core daemon when you login to your computer.
 
-Start File Explorer and go to,
+Start File Explorer and go to:
 
     C:\Users\Example\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\StartUp
 
