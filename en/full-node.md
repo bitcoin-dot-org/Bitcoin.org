@@ -1405,7 +1405,7 @@ the DHCP assignment table in the subsection above.
 
 Login to your router using the same steps described near the top of the
 [DHCP subsection](#configuring-dhcp).  Look for an option called Port Forwarding, Port
-Assignment, or anything with "Port" in its name.  On the some routers,
+Assignment, or anything with "Port" in its name.  On some routers,
 this option is buried in an Applications & Gaming menu.
 
 The port forwarding settings should allow you to map an external port on
@@ -1537,8 +1537,8 @@ blocks could be served to other nodes.
 
 Some node operators need to deal with bandwidth caps imposed by their ISPs.
 
-By default, bitcoin-core allows up to 125 connections to different peers, 8 of
-which are outbound. You can therefore, have at most 117 inbound connections.
+By default, Bitcoin Core allows up to 125 connections to different peers, 8 of
+which are outbound. You can therefore have at most 117 inbound connections.
 
 The default settings can result in relatively significant traffic consumption.
 
@@ -1577,7 +1577,7 @@ blocks and transactions to fewer nodes.
 {% endhighlight %}
 
 Reducing the maximum connected nodes to a minimum could be desirable if traffic
-limits are tiny. Keep in mind that bitcoin's trustless model works best if you are
+limits are tiny. Keep in mind that Bitcoin's trustless model works best if you are
 connected to a handful of nodes.
 
 #### Blocks-only mode
