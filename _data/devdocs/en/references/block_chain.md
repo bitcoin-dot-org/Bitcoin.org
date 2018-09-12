@@ -67,7 +67,7 @@ fe9f0864 ........................... Nonce
   script -->
 
 * **Version 3** blocks were introduced in Bitcoin Core 0.10.0 (February
-  2015) as a soft fork. When the fork reach full enforcement (July
+  2015) as a soft fork. When the fork reached full enforcement (July
   2015), it required strict DER encoding of all ECDSA signatures in new
   blocks as described in BIP66. Transactions that do not use strict DER
   encoding had previously been non-standard since Bitcoin Core 0.8.0
