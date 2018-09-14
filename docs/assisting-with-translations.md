@@ -7,11 +7,13 @@ This document provides information regarding translations for bitcoin.org.
 * [Getting Started with the Translation Team](#getting-started-with-the-translation-team)
 * [Responsibilities and Tasks for each User Role](#responsibilities-and-tasks-for-each-user-role)
 
-___
+---
 
 ## Handling Translations on GitHub
 
-This section outlines how to handle translations on GitHub. If you only want to help by translating content, scroll down to the section [Getting Started with the Translation Team](#getting-started-with-the-translation-team).
+This section outlines how to handle translations on GitHub. In order to handle translations on GitHub, it's important that you have a fundamental understanding of [Ruby](https://ruby.github.io/TryRuby/), [HTML](https://www.w3schools.com/html/default.asp)/[CSS](https://www.w3schools.com/css/default.asp), [JavaScript](https://www.javascript.com/try), [Jekyll](https://jekyllrb.com/), [Git](https://guides.github.com/) and [Travis CI](https://travis-ci.org/bitcoin-dot-org/bitcoin.org). You should also be able to [set up your environment](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/setting-up-your-environment.md).
+
+**If you only want to help by translating content, simply navigate to [Getting Started with the Translation Team](#getting-started-with-the-translation-team).**
 
 ### Import Translations
 
