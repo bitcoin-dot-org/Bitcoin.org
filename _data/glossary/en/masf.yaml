@@ -7,7 +7,7 @@ required:
     title_max_40_characters_no_formatting: Miner Activated Soft Fork, MASF
 
     summary_max_255_characters_no_formatting: >
-        A Soft Fork activated by through miner signalling.
+        A Soft Fork activated by miner signalling.
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Miner-activated soft fork

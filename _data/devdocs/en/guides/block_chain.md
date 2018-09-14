@@ -238,9 +238,9 @@ five-transaction merkle tree would look like the following text diagram:
 ~~~
        ABCDEEEE .......Merkle root
       /        \
-   ABCD        EEEE
+   ABCD        EEEE ...EE is paired with itself
   /    \      /
- AB    CD    EE .......E is paired with itself
+ AB    CD    EE ........E is paired with itself
 /  \  /  \  /
 A  B  C  D  E .........Transactions
 ~~~
