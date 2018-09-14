@@ -126,7 +126,7 @@ ___
 This section shall outline the responsibilities and tasks for each user role.
 
 ### 1. Team Leaders
-Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: “Komodorpudel”) and Apple AKA “ajsolbrilla”.
+Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: “Komodorpudel”) and Hendrawan AKA “khendraw”.
 
 * Oversight on the complete translation efforts on Transifex.
 * Keeping track on everything.
