@@ -105,7 +105,7 @@ way to help Bitcoin continue to spread.
 
 [__If you want to be like one of the people above and join the effort, learn how to get started.__](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#getting-started-with-the-translation-team)
 
-_A special thanks also goes to Simon AKA "Komodorpudel" who has spent a lot of
+*A special thanks also goes to Simon AKA "Komodorpudel" who has spent a lot of
 time co-organizing various translation-related efforts. Thank you, Simon. Lastly,
 but not least, to [Transifex](https://transifex.com/), for graciously providing
-enterprise-grade localization services to support Bitcoin.org.
+enterprise-grade localization services to support Bitcoin.org.*
