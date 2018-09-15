@@ -66,7 +66,7 @@ profound understanding.
 you choose to translate. Please be careful to preserve the original meaning of
 each text. Sentences and popular expressions should sound native in your
 language. Translations need to be reviewed by a reviewer or coordinator before
-publication. Once reviewed, coordinators will notify the Team Leaders that a
+publication. Once reviewed, coordinators will notify the team leaders that a
 certain translation is ready for publication. If in doubt, please contact the
 coordinator(s) for your language on Transifex.
 
@@ -82,8 +82,8 @@ Team Leaders are currently Simon AKA “[Komodorpudel](https://telegram.me/komod
 
 **Responsibilities and Tasks**
 
-- Oversight on the complete translation efforts on Transifex.
-- Keeping track on everything.
+- Providing oversight on the complete translation efforts on Transifex.
+- Keeping track of everything.
 - Being a contact person for all sorts of questions that cannot be answered by language coordinators.
 - Promoting or demoting users (e.g. promoting a reviewer to coordinator).
 - Managing groups that have no active coordinator.
@@ -92,25 +92,25 @@ Team Leaders are currently Simon AKA “[Komodorpudel](https://telegram.me/komod
 
 Various people across all language teams are coordinators. For a number of
 languages, no active coordinator exists. If there are any questions or you want
-to assist by becoming a coordinator, write one of the Team Leaders.
+to assist by becoming a coordinator, please write one of the team leaders.
 
 **Responsibilities and Tasks**
 
-- When additional help is needed: Translating, thereby using translations provided by the glossary if applicable and striving for consistency across strings.
-- Oversight on the complete translation efforts for a specific language.
-- Notifying Team Leaders if a resource is ready to be put on the website.
-- Being a contact person for the Team Leaders.
+- Translating and striving for consistency across strings.
+- Providing oversight on the complete translation efforts for a specific language.
+- Notifying team leaders if a resource is ready to be put on the website.
+- Being a contact person for the team leaders.
 - Being a contact person for all reviewers and translators within a specific language team.
 - Introducing and helping new volunteers.
 - Promoting or demoting users (e.g. promoting a translator to reviewer).
-- Kicking out users that do not behave (e.g. only use Google Translator) or are completely inactive.
+- Removing user that do not follow instructions (e.g. using Google Translate).
 
 ### Reviewers
 
 **Responsibilities and Tasks**
 
-- Translating, thereby using translations provided by the glossary if applicable and striving for consistency across strings.
-- Reviewing strings (preferably not your own strings if possible).
+- Translating and striving for consistency across strings.
+- Reviewing strings (preferably not their own strings if possible).
 - Checking translations for correctness regarding meaning and spelling.
 - Checking for consistency across translations (e.g. is “transaction malleability” translated consistently across all strings?).
 
@@ -118,7 +118,7 @@ to assist by becoming a coordinator, write one of the Team Leaders.
 
 **Responsibilities and Tasks**
 
-- Translating, thereby using translations provided by the glossary if applicable and striving for consistency across strings.
+- Translating and striving for consistency across strings.
 - Extending the glossary with translations for necessary and general terms.
 
 ## About Bitcoin.org
