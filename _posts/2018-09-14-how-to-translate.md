@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "How to Help Translate Bitcoin.org"
-permalink: /en/posts/help-translate.html
+permalink: /en/posts/how-to-help-translate.html
 date: 2018-09-14
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>
@@ -80,7 +80,7 @@ when helping translate Bitcoin.org.
 
 Team Leaders are currently Simon AKA “[Komodorpudel](https://telegram.me/komodorpudel)” and Hendrawan AKA “[khendraw](https://telegram.me/khendraw)”.
 
-#### Responsibilities and Tasks
+**Responsibilities and Tasks**
 
 - Oversight on the complete translation efforts on Transifex.
 - Keeping track on everything.
@@ -94,7 +94,7 @@ Various people across all language teams are coordinators. For a number of
 languages, no active coordinator exists. If there are any questions or you want
 to assist by becoming a coordinator, write one of the Team Leaders.
 
-#### Responsibilities and Tasks
+**Responsibilities and Tasks**
 
 - When additional help is needed: Translating, thereby using translations provided by the glossary if applicable and striving for consistency across strings.
 - Oversight on the complete translation efforts for a specific language.
@@ -107,7 +107,7 @@ to assist by becoming a coordinator, write one of the Team Leaders.
 
 ### Reviewers
 
-#### Responsibilities and Tasks
+**Responsibilities and Tasks**
 
 - Translating, thereby using translations provided by the glossary if applicable and striving for consistency across strings.
 - Reviewing strings (preferably not your own strings if possible).
@@ -116,7 +116,7 @@ to assist by becoming a coordinator, write one of the Team Leaders.
 
 ### Translators
 
-#### Responsibilities and Tasks
+**Responsibilities and Tasks**
 
 - Translating, thereby using translations provided by the glossary if applicable and striving for consistency across strings.
 - Extending the glossary with translations for necessary and general terms.
