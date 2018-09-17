@@ -29,7 +29,6 @@ Configuration](#network-configuration) section for details.
 {% endcapture %}
 
 {% capture verifyReleaseSignatures %}
-<div class="box" markdown="1">
 *Optional: Verify the release signatures*
 
 If you know how to use PGP, you should also click the *Verify Release
@@ -55,8 +54,6 @@ on the release signatures file. Finally, use PGP or another utility to
 compute the SHA256 hash of the archive you downloaded, and ensure the
 computed hash matches the hash listed in the verified release
 signatures file.
-
-</div>
 {% endcapture %}
 
 
