@@ -2621,9 +2621,10 @@ br.big {
 }
 
 .devprojectlist{
-    overflow:hidden;
+    overflow:auto;
     -webkit-transition:height 400ms ease-out;
     transition:height 400ms ease-out;
+    list-style-position:inside;
 }
 .devprojectlist li:nth-child(1n+4){
     display:none;
