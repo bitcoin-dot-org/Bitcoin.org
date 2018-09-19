@@ -128,7 +128,7 @@ directory.  The following alternative options are available:
 
 #### Fast Partial Previews Or Builds
 
-In order to preview some changes faster, you can disable all plugins and
+In order to preview some changes faster (such as markup and CSS), you can disable all plugins and
 languages except those you need by prefixing the `ENABLED_LANGS` and
 `ENABLED_PLUGINS` environment variables to your command line.  For
 example, do this to disable everything:
