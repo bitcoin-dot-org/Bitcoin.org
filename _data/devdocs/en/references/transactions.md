@@ -121,8 +121,7 @@ OP_0            A pubkey
 1. A sig compared to C pubkey (no match)
 2. A sig compared to B pubkey (no match)
 
-Failure, aborted: two signature matches required but none found so
-                  far, and there's only one pubkey remaining
+Failure, aborted: two signature matches required but none found so far, and there's only one pubkey remaining
 {% endhighlight %}
 
 {% endautocrossref %}
