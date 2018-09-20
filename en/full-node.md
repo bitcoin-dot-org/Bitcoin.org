@@ -247,7 +247,7 @@ systems.
 
 ### Ubuntu 16.04
 
-*Instructions for Bitcoin Core 0.14.2
+*Instructions for Bitcoin Core 0.16.2
 
 If you use Ubuntu Desktop, click the Ubuntu swirl icon to start the Dash and type "term" into the
 input box. Choose any one of the terminals listed:
