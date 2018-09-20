@@ -2624,7 +2624,10 @@ br.big {
     overflow:auto;
     -webkit-transition:height 400ms ease-out;
     transition:height 400ms ease-out;
+<<<<<<< HEAD
     list-style-position:inside;
+=======
+>>>>>>> parent of e90c67d0... Correct list bullet overflow
 }
 .devprojectlist li:nth-child(1n+4){
     display:none;
