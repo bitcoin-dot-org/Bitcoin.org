@@ -1,7 +1,7 @@
 ---
 title: "Critical Inflation and DoS Vulnerability"
 shorturl: "dos-inflation"
-active: false
+active: true
 show_toc: true
 banner: "UPGRADE IMMEDIATELY - Critical Inflation and DoS Vulnerability"
 bannerclass: "alert"
