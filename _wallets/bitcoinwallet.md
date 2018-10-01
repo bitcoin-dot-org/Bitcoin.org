@@ -19,7 +19,7 @@ platform:
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"
-          transparency: "checkpasstransparencyopensource"
+          transparency: "checkgoodtransparencydeterministic"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
           fees: "checkgoodfeecontrolfull"
