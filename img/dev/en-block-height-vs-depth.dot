@@ -6,8 +6,8 @@ edge [ fontname="Sans" ]
 graph [ fontname="Sans" ]
 
 subgraph cluster_height {
-    h0 [ label = "Block 0" ]
-    h1 [ label = "Block 1" ]
+    h0 [ label = "Block 90" ]
+    h1 [ label = "Block 91" ]
     h100 [ label = "Block 100" ]
     h101 [ label = "Block 101" ]
     h102 [ label = "Block 102" ]
@@ -23,8 +23,8 @@ subgraph cluster_height {
 subgraph cluster_depth {
     edge [ dir = "back" ];
 
-    d0 [ label = "Depth 103" ]
-    d1 [ label = "Depth 102" ]
+    d0 [ label = "Depth 13" ]
+    d1 [ label = "Depth 12" ]
     d100 [ label = "Depth 3" ]
     d101 [ label = "Depth 2" ]
     d102 [ label = "Depth 1" ]
