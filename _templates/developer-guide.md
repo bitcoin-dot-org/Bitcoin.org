@@ -12,38 +12,44 @@ show_fragments: true
 show_toc: true
 ---
 
+<script>handleDevDocsRedirect(window.location.hash.substring(1).toLowerCase());</script>
+
 <div class="toccontent-block toccontent-intro" markdown="block">
-{% include_absolute _data/devdocs/{{page.lang}}/guides/intro.md _data/devdocs/en/guides/intro.md %}
+## Block Chain
+[The block chain guide has been moved.](/en/blockchain-guide)
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="block">
-{% include_absolute _data/devdocs/{{page.lang}}/guides/block_chain.md _data/devdocs/en/guides/block_chain.md %}
+## Transactions
+[The transactions guide has been moved.](/en/transactions-guide)
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="block">
-{% include_absolute _data/devdocs/{{page.lang}}/guides/transactions.md _data/devdocs/en/guides/transactions.md %}
+## Contracts
+[The contracts guide has been moved.](/en/contracts-guide)
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="block">
-{% include_absolute _data/devdocs/{{page.lang}}/guides/contracts.md _data/devdocs/en/guides/contracts.md %}
+## Wallets
+[The wallets guide has been moved.](/en/wallets-guide)
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="block">
-{% include_absolute _data/devdocs/{{page.lang}}/guides/wallets.md _data/devdocs/en/guides/wallets.md %}
+## Payment Processing
+[The payment processing guide has been moved.](/en/payment-processing-guide)
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="block">
-{% include_absolute _data/devdocs/{{page.lang}}/guides/payment_processing.md _data/devdocs/en/guides/payment_processing.md %}
+## Operating Modes
+[The operating modes guide has been moved.](/en/operating-modes-guide)
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="block">
-{% include_absolute _data/devdocs/{{page.lang}}/guides/operating_modes.md _data/devdocs/en/guides/operating_modes.md %}
+## P2P Network
+[The P2P network guide has been moved.](/en/p2p-network-guide)
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="block">
-{% include_absolute _data/devdocs/{{page.lang}}/guides/p2p_network.md _data/devdocs/en/guides/p2p_network.md %}
-</div>
-
-<div class="toccontent-block boxexpand expanded" markdown="block">
-{% include_absolute _data/devdocs/{{page.lang}}/guides/mining.md _data/devdocs/en/guides/mining.md %}
+## Mining
+[The mining guide has been moved.](/en/mining-guide)
 </div>

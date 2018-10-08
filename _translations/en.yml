@@ -313,6 +313,7 @@ en:
     docreferencemenuglossary: "Glossary"
     resourcestitleblockchain: "Block Chain"
     resourcesitemblockchainguides: "Block Chain Guide"
+    resourcesitemmininguides: "Mining Guide"
     resourcesitemblockchainreference: "Block Chain Reference"
     resourcestitletransactions: "Transactions"
     resourcesitemtransactionsguides: "Transactions Guide"
@@ -373,6 +374,39 @@ en:
     sectiontitlenottobeconfused: "Not To Be Confused With"
     sectiontitlelinks: "Links"
     categorynumbers: "Numbers"
+  blockchain-guide:
+    title: "Blockchain Guide - Bitcoin"
+    pagetitle: "Blockchain"
+    summary: "The block chain provides Bitcoin's public ledger, an ordered and timestamped record of transactions. This system is used to protect against double spending and modification of previous transaction records."
+  contracts-guide:
+    title: "Contracts Guide - Bitcoin"
+    pagetitle: "Contracts"
+    summary: "Contracts are transactions which use the decentralized Bitcoin system to enforce financial agreements. Bitcoin contracts can often be crafted to minimize dependency on outside agents, such as the court system, which significantly decreases the risk of dealing with unknown entities in financial transactions."
+  mining-guide:
+    title: "Mining Guide - Bitcoin"
+    pagetitle: "Mining"
+    summary: "Mining adds new blocks to the block chain, making transaction history hard to modify."
+  operating-modes-guide:
+    title: "Operating Modes Guide - Bitcoin"
+    pagetitle: "Operating Modes"
+    summary: "The Bitcoin software has different levels of security and tradeoffs in order to verify the blockchain."
+  p2p-network-guide:
+    title: "P2P Network Guide - Bitcoin"
+    pagetitle: "P2P Network"
+    summary: "The Bitcoin network protocol allows full nodes (peers) to collaboratively maintain a peer-to-peer network for block and transaction exchange. "
+  payment-processing-guide:
+    title: "Payment Processing Guide - Bitcoin"
+    pagetitle: "Payment Processing"
+    summary: "Payment processing encompasses the steps spenders and receivers perform to make and accept payments in exchange for products or services. The basic steps have not changed since the dawn of commerce, but the technology has. "
+  transactions-guide:
+    title: "Transactions Guide - Bitcoin"
+    pagetitle: "Transactions"
+    summary: "Transactions let users spend satoshis. Each transaction is constructed out of several parts which enable both simple direct payments and complex transactions. "
+  wallets-guide:
+    title: "Wallets Guide - Bitcoin"
+    pagetitle: "Wallets"
+    summary: "A Bitcoin wallet can refer to either a wallet program or a wallet file."
+
   development:
     title: "Development - Bitcoin"
     pagetitle: "Bitcoin development"
@@ -1044,6 +1078,14 @@ en:
     developer-glossary: developer-glossary
     developer-guide: developer-guide
     developer-reference: developer-reference
+    blockchain-guide: blockchain-guide
+    contracts-guide: contracts-guide
+    mining-guide: mining-guide
+    operating-modes-guide: operating-modes-guide
+    p2p-network-guide: p2p-network-guide
+    payment-processing-guide: payment-processing-guide
+    transactions-guide: transactions-guide
+    wallets-guide: wallets-guide
     development: development
     download: download
     exchanges: exchanges
