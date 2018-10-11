@@ -33,24 +33,15 @@ $.widget("custom.catcomplete", $.ui.autocomplete, {
 });
 $(function() {
   $("#glossary_term").catcomplete({
-    source: function(request, respond) {
-        var lang = $('html').attr('lang');
-        var term = request.term;
-
-        var results = search_data.filter(function(data) {
-            return (
-                (data.label.indexOf(term) !== -1 && data.lang === lang) || data.category !== "Glossary"
-            );
-        });
-
-        respond(results);
-    },
+    source: search_data,
     delay: 0,
     minLength: 2,
     autoFocus: true,
     select: function(event, ui) {
       location.href = ui.item.uri;
     }
-  });
+  }).bind('focus', function(){ $(this).catcomplete("search"); if (this.setSelectionRange) { var len = $(this).val().length * 2; var input = this; window.setTimeout(function() { input.setSelectionRange(len, len); }, 0); } else { $(this).val($(this).val());}});
+
+
 });
 {% endraw %}
