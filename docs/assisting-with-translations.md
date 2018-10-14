@@ -32,7 +32,7 @@ General guidelines provided by Transifex itself can be found [here](https://docs
 
 ### 3. Get to know the Interface
 * Play around with the interface. Transifex's interface can be a bit confusing and it cannot hurt to take a look around.
-* An introduction, provided by Transifex, can be found [here](https://docs.transifex.com/translation/translating-with-the-web-editor/?utm_source=welcome&utm_medium=email&utm_content=translator)
+* An introduction, provided by Transifex, can be found [here](https://docs.transifex.com/translation/translating-with-the-web-editor/?utm_source=welcome&utm_medium=email&utm_content=translator).
 * As Translator, you cannot cause any harm as you can only edit unreviewed strings. A complete history is saved for every string, making it impossible to destroy previous work.
 * In the beginning, stay away from the Glossary as this can be edited by new translators but no history is saved.
 
