@@ -140,7 +140,7 @@ If (a) is true, you won’t be able to change the string yourself. Thus, make a 
 
 If (b) is true, and you are sure that the translation contains a mistake, just edit the string. If you are not 100% sure, make a comment about the issue and mention reviewers and/or coordinators within your language team from whom you know that they are active by using @username. 
      
-### 8. Will I be paid for translating for bitcoin.org? 
+### 8. Will I be paid for translating bitcoin.org? 
 
 In general, no, however there are periods like during the summer 2018, in which we were able to compensate many volunteers. Compensating volunteers from time to time for their efforts is something we strive to be able to continue to do. 
 
