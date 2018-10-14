@@ -24,7 +24,6 @@ General guidelines provided by Transifex itself can be found [here](https://docs
 * Follow this [link](https://www.transifex.com/signup/) and create an account. Creating a Transifex account is free and not much information is needed.
 
 ### 2. Login and join the Bitcoin.org Translation Team
-
 * Follow this [link](https://www.transifex.com/bitcoinorg/bitcoinorg/) and click on “Join team”.
 * Select the language you want to translate into.
 * Your request to join a team will be accepted instantly, and you will be a translator for the language you selected.
@@ -206,13 +205,7 @@ In general, no. Translated strings can be as long as they need to be.
 
 However, if a translated string is significantly longer than the English string, this could cause formatting issues. If this should be the case, we would notify you. 
 
-### 20. I cannot find an answer to my problem in the FAQ. What should I do? 
-
-Join our [Telegram Group](https://t.me/joinchat/Bgh47RC1BZb2YE6u8iznOg) and ask your question there. 
-
-Alternatively, you can directly contact the Team Leaders. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). We are happy to help. 
-
-### 21. Sometimes “Bitcoin” is written with a capital letter (“Bitcoin”) and other times with a small letter (“bitcoin). Why? 
+### 20. Sometimes “Bitcoin” is written with a capital letter (“Bitcoin”) and other times with a small letter (“bitcoin). Why? 
 
 "Bitcoin" is used when talking about the protocol itself: "You should create a new Bitcoin address for every payment". 
 
@@ -222,7 +215,7 @@ All together: "You should create a new Bitcoin address every time you want to re
 
 Please note that the English version is not entirely consistent on this. If you find an issue, please contact the Team Leaders. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). 
 
-### 22. A certain string is hard to translate without any context. Where can I get some? 
+### 21. A certain string is hard to translate without any context. Where can I get some? 
 
 In the best case, on Transifex the “string instructions” field between the source text-field and the translation-field contains a link to the location of the string on the website. 
 
@@ -230,18 +223,23 @@ If no link can be found, click on “Context” below the field to enter the tra
 
 Alternatively, you can just google parts of the string in English + "bitcoin.org" attached. Usually this leads to the part of bitcoin.org where the string is located. 
 
-### 23. I finished a string but Transifex displays a warning. What should I do? 
+### 22. I finished a string but Transifex displays a warning. What should I do? 
 
 The usual warning message you will see is “Glossary translation for term 'xyz' missing from translation”. However, this warning message can usually be ignored because in most cases it makes sense to translate certain words not according to the glossary. 
 
 However, if you see an URL-related warning message, this must be corrected because otherwise it will cause issues while publishing the translations. Usually, the problem can easily be solved by checking all the links in the translated text. 
 
-### 24. When and how should I open an Issue? 
+### 23. When and how should I open an Issue? 
 
 You can open Issues by leaving a comment and flagging it as an “Issue”. 
 
 We strongly recommend to not use this function at all. Instead, please contact either the coordinator for your language or one of the Team Leaders directly. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw).
 
+### 24. I cannot find an answer to my problem in the FAQ. What should I do? 
+
+Join our [Telegram Group](https://t.me/joinchat/Bgh47RC1BZb2YE6u8iznOg) and ask your question there. 
+
+Alternatively, you can directly contact the Team Leaders. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). We are happy to help. 
 ___
 
 ## Handling Translations on GitHub
