@@ -172,7 +172,7 @@ Instead, please ask your question in the [Telegram Group](https://t.me/joinchat/
      
 ### 14. I can’t find a team for my own language. Who should I contact to add a new language? 
 
-If you do not have a Transifex account yet, just look at point “2. Login and join the Bitcoin.org Translation Team” of the section “Getting Started with the Translation Team” in this document. When your language request is accepted or denied you will receive a notification. 
+If you do not have a Transifex account yet, just look at point “2. Login and join the Bitcoin.org Translation Team” of the section [Getting Started with the Translation Team](#getting-started-with-the-translation-team) in this document. When your language request is accepted or denied you will receive a notification. 
 
 You can also contact one of the Team Leaders about this. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). 
 
@@ -182,7 +182,7 @@ Don’t worry. Just ignore it and continue translating. Transifex will display a
 
 ### 16. I made a mistake in my own translation. What should I do? 
 
-If your translation is not reviewed yet, just correct the mistake and save the new translations. 
+If your translation is not reviewed yet, just correct the mistake and save the new translation. 
 
 If your translation was reviewed and the mistake not corrected in the process, correct the mistake if you are a reviewer yourself or contact the person that reviewed your translation. 
 
@@ -232,7 +232,7 @@ Alternatively, you can just google parts of the string in English + "bitcoin.org
 
 ### 23. I finished a string but Transifex displays a warning. What should I do? 
 
-The usual warning message you will see is “Glossary translation for term 'confirmation' missing from translation”. However, this warning message can usually be ignored because in most cases it makes sense to translate certain words not according to the glossary. 
+The usual warning message you will see is “Glossary translation for term 'xyz' missing from translation”. However, this warning message can usually be ignored because in most cases it makes sense to translate certain words not according to the glossary. 
 
 However, if you see an URL-related warning message, this must be corrected because otherwise it will cause issues while publishing the translations. Usually, the problem can easily be solved by checking all the links in the translated text. 
 
