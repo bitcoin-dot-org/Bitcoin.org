@@ -61,7 +61,7 @@ Optional criteria (some could become requirements):
 - Does not show "received from" Bitcoin addresses in the UI
 - Provides a bug reporting policy on the website
 - Website serving executable code or requiring authentication is included in the
-  [HSTS preload list](https://hstspreload.appspot.com/)
+  [HSTS preload list](https://hstspreload.org/)
 - If user has exclusive access over its private keys:
   - Supports HD wallets (BIP32)
   - Provides users with step to print or write their wallet seed on setup
