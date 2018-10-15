@@ -102,7 +102,9 @@ http://opensource.org/licenses/MIT.
       <a href="/{{ page.lang }}/{% translate scams url %}">{% translate menu-scams layout %}</a>
       {% endif %}
       <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
-      <a href="/{{ page.lang }}/{% translate privacy url %}">{% translate menu-privacy layout %}</a>
+      {% if page.lang != 'ar' or 'es' or 'sl' %}
+      <a href="/en/privacy">Privacy Policy</a>
+      {% endif %}
       <a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a>
       <a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a>
       <a href="/en/blog">Blog</a>
