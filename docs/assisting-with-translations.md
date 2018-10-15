@@ -9,8 +9,6 @@ This document provides information regarding translations for bitcoin.org.
 * [Handling Translations on GitHub](#handling-translations-on-github)
 
 
----
-
 ___
 
 ## Getting Started with the Translation Team
