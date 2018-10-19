@@ -7,11 +7,12 @@ id:
     owntxt-title: "Satoshi Nakamoto dan Martti Malmi"
     owntxt: "Bitcoin.org aslinya terdaftar dan dimiliki oleh dua developer pertama Bitcoin,<a href=\"https://en.bitcoin.it/wiki/Satoshi_Nakamoto\"> Satoshi Nakamoto</a> dan <a href=\"https://en.bitcoin.it/wiki/Sirius\"> Martti Malmi</a>. Ketika Nakamoto meninggalkan proyeknya, dia memberikan hak akses kepemilikan domain itu kepada beberapa orang, namun terpisah dari pengembang Bitcoin, untuk membagi peran dan tanggung jawab untuk mencegah adanya kontrol sepihak oleh seseorang atau kelompok tertentu terhadap proyek Bitcoin."
     owntxt2-title: "Bitcoin Core"
-    owntxt2: "Sejak 2011 hingga 2013, situs ini digunakan untuk merilis versi piranti lunak baru yang sekarang disebut Bitcoin Core. Tahun 2013, situs ini didesain ulang menjadi seperti bentuk sekarang, dengan menambahkan banyak halaman, mendaftarkan piranti lunak Bitcoin lain, dan membuat sistem terjemahan. Dokumentasi untuk pengembang piranti lunak ditambahkan pada tahun 2014."
+    owntxt2: "Sejak tahun 2011 hingga 2013, fungsi utama situs ini digunakan untuk merilis piranti lunak yang disebut dengan Bitcoin Core. Di tahun 2013, situs ini kemudian di desain ulang, dengan menambahkan cukup banyak halaman, dan membuat list untuk tambahan piranti lunak bitcoin lain, serta membuat sistem penterjemahan. "
     owntxt3-title: "Dokumentasi pengembang mulai ditambahkan di tahun 2014"
-    owntxt3: "Saat ini situs ini merupakan proyek open source dengan kontributor dari seluruh dunia. Otoritas publikasi dipegang oleh pemilik, namun semua aktivitas umum diorganisasi melalui <a href=\"https://github.com/bitcoin/bitcoin.org#working-with-github\">proses pull request</a> yang terbuka dan dikelola oleh pengelola-pengelola situs."
+    owntxt3: "Anggota komunitas dapat memberikan update baru, perbaikan, saran, dan melakukan penyempurnaan. "
     owntxt4-title: "Situs ini merupakan proyek open source idependen"
-    owntxt4: "Bitcoin.org bukanlah situs resmi Bitcoin. Sama halnya dengan teknologi email, tidak ada pemilik jaringan Bitcoin. Karena itu, tidak ada yang bisa berbicara mewakili nama Bitcoin."
+    owntxt4: "Sekarang situs ini adalah proyek open source independen dengan kontributor yang berasal dari seluruh penjuru dunia. Co-owner memegang otoritas untuk menyetujui tahap publikasi akhir, namun aktifitas keseharian diorganisir secara terbuka melalui proses <a href=\"https://github.com/bitcoin/bitcoin.org#working-with-github\">pull request</a>dan dikelola oleh pengelola bersama situs ini. "
+    owntxt5: "Bitcoin.org bukanlah website resmi Bitcoin. Sama halnya seperti tidak ada juga yang memiliki teknologi email, tidak ada pemilik jaringan bitcoin. Sehingga, tidak ada siapapun yang berbicara dengan otoritas atas nama Bitcoin."
     control: "Lalu... siapa yang mengendalikan Bitcoin?"
     controltxt: "Bitcoin dikendalikan oleh semua pengguna Bitcoin di seluruh dunia. Para pengembang meningkatkan perangkat lunak mereka namun tidak dapat memaksakan perubahan aturan pada protokol Bitcoin karena semua pengguna dibebaskan untuk memilih perangkat lunak apa yang akan mereka pakai. Untuk menjaga kompatibilitas dengan pengguna lain, semua pengguna harus menggunakan perangkat lunak yang mematuhi aturan yang sama. Bitcoin hanya bisa berfungsi dengan baik jika ada kesepakatan yang lengkap di antara semua pengguna. Oleh karena itu, semua pengguna dan para pengembang memiliki insentif yang kuat untuk mengadopsi dan melindungi kesepakatan ini."
     mission: "Misi"
@@ -127,15 +128,19 @@ id:
     translated_by: "diterjemahkan oleh"
     submit_new_translation: 'Apakah anda ingin menerjemahkan tulisan ini kedalam bahasa anda? Kunjungi <a href="https://github.com/wbnns/bitcoinwhitepaper">repositori whitepaper Bitcoin di GitHub</a> untuk instruksi dan <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">buka issue baru</a> jika anda memiliki pertanyaan apapun.'
   buy:
-    title: "Beli - Bitcoin"
-    pagetitle: "Bagaimana membeli Bitcoin"
-    summary: "Ada beberapa cara untuk membeli Bitcoin"
+    title: "Beli Bitcoin"
+    pagetitle: "Bagaimana membeli bitcoin"
+    summary: "Beberapa cara untuk dapat membeli bitcoin."
+    paxful: 'Terdapat 300 lebih cara untuk membeli dan menjual bitcoin, Paxful, pionir bursa peer-to-peer (P2P) dan <a href="/en/posts/new-supporting-sponsorship-from-paxful">sponsor Bitcoin.org</a>, menawarkan bursa bitcoin yang nyaman. '
+    button: "Beli Bitcoin dengan Paxful"
+    sponsor: "Konten Bersponsor"
+    discover: "Temukan cara lain membeli bitcoin:"
     bitcoin-exchange: "Menggunakan bursa Bitcoin"
-    bitcoin-exchange-text: "Halaman <a href=\"/en/exchanges\">bursa Bitcoin </a> kami, mencatat banyak layanan bursa yang bisa membantu anda membeli Bitcoin dengan akun Bank anda. "
-    local-bitcoins: "Temukan seseorang yang menjual Bitcoin di komunitas anda"
-    local-bitcoins-text: "<a href=\"https://localbitcoins.com/\">Local Bitcoin</a>memungkinkan anda mencari dan menemukan beragam penjual Bitcoin di sekitar anda. Penjual mempunyai skor review dan feedback untuk membantu anda dalam memilih. "
+    bitcoin-exchange-text: "Halaman <a href=\"/en/exchanges\">Bursa Bitcoin</a>kami, memuat banyak daftar bisnis berbeda yang dapat membantu dalam membeli bitcoin dengan akun bank anda."
+    p2p-bitcoins: "Cari Direktori P2P"
+    p2p-bitcoins-text: "Menggunakan bursa kripto berbasis <a href=\"/en/exchanges#p2p\">direktori peer-to-peer</a>memungkinan anda untuk mencari berbagai penjual bitcoin. Para penjual mempunyai rating skor dan review yang dapat membantu anda dalam memilih. "
     bitcoin-atm: "Menggunakan ATM Bitcoin"
-    bitcoin-atm-text: "ATM Bitcoin bekerja seperti ATM biasanya, kecuali memungkinkan anda untuk deposit dan menarik uang sehingga anda bisa membeli dan menjual Bitcoin. <a href=\"https://coinatmradar.com/\">Coin ATM Radar</a> mempunyai peta interaktif yang membantu anda menemukan lokasi ATM Bitcoin terdekat dengan mudah."
+    bitcoin-atm-text: "ATM Bitcoin bekerja seperti ATM biasa, kecuali mereka memungkinkan anda untuk menyimpan dan menarik uang sehingga anda dapat membeli dan menjual bitcoin. <a href=\"https://coinatmradar.com/\">Coin ATM Radar</a> memiliki peta interaktif yang dapat membantu anda menemukan ATM bitcoin terdekat."
   community:
     title: "Komunitas - Bitcoin"
     pagetitle: "Komunitas Bitcoin"
@@ -177,6 +182,7 @@ id:
     walletmsigna: "mSIGNA adalah jenis wallet yang canggih namun mudah digunakan, dengan fitur kecepatan dan kesederhanaan, dapat disesuaikan dengan level perusahaan, dan keamanan yang kuat. mSIGNA mendukung BIP32, transaksi dengan tanda tangan berganda, penyimpanan offline, sinkronisasi dengan banyak perangkat, dan pencadangan elektronik maupun kertas yang bersandi."
     walletbitcoinwallet: "Dompet Bitcoin mudah digunakan dan dapat diandalkan, serta aman dan cepat. Visinya adalah desentralisasi dan nol kepercayaan: tidak perlu layanan sentral untuk segala operasi yang berhubungan dengan Bitcoin. Aplikasi ini adalah pilihan yang bagus untuk pengguna awam. "
     walletairbitzwallet: "Airbitz adalah Wallet Bitcoin mobile yang menjadikan privasi, keamanan, dan desentralisasi kian umum dan mudah digunakan untuk khalayak umum. Wallet Airbitz akan selalu terenkripsi secara otomatis, ter-backup, dan tetap berfungsi meskipun tidak tersambung dengan server Airbitz."
+    walletedgewallet: "Edge sudah kompatibel untuk segwit, wallet Bitcoin untuk mobile ini mempunyai level privasi tinggi, keamanan dan desentralisasi yang lebih populer untuk digunakan untuk banyak orang. Wallet Edge akan selalu ter-enkripsi, ter-back-up, meskipun server Edge sedang turun. "
     walletbrd: "BRD adalah salah satu wallet termudah untuk digunakan pengguna Bitcoin baru. Namun juga cukup aman. BRD menghubungkan secara langsung kepada jaringan Bitcoin, dan menggunakan enkripsi bawaan dari perangkat keras agar uang anda tetap aman. "
     walletmyceliumwallet: "Mycelium Bitcoin Wallet untuk Android didesain untuk keamanan, kecepatan, dan kemudahan penggunaan. Wallet ini memiliki fitur unik untuk mengelola kunci-kunci Anda dan untuk cold storage, serta kompatibel dengan Trezor dan lain-lain. "
     walletcoinspace: "Coin.Space HD Wallet adalah wallet bitcoin online gratis, yang bisa anda gunakan untuk melakukan pembayaran internasional secara gratis. Pembayaran dengan bitcoin secara mudah dan aman tersedia baik di ponsel maupun desktop."
@@ -188,6 +194,7 @@ id:
     walletdigitalbitbox: "Digital Bitbox adalah wallet bitcoin berbentuk piranti keras dari Swiss yang fokus pada keamanan dan privasi. Fiturnya termasuk sepenuhnya offline &amp; cadangan yang lebih sederhana, deniability, dukungan multi-sig, aplikasi desktop asli, dan aplikasi seluler untuk verifikasi &amp; 2FA."
     walletbither: "Bither adalah wallet yang simpel dan aman di berbagai platform. Didesain secara khusus dengan mode Cold/Hot, pengguna bisa mendapat keamanan dan kemudahan sekaligus. Fitur XRANDOM menggunakan berbagai sumber entropi yang berbeda untuk menghasilkan angka yang benar-benar acak bagi pengguna. Juga dengan HDM, pengguna bisa mendapatkan keunggulan HD dan keamanan Multisig."
     walletgreenbits: "GreenBits adalah wallet yang cepat dan mudah digunakan. Nikmati keamanan lebih dengan pendekatan tingkat kepercayaan minimal/nol, pilihan dukungan dompet piranti keras, 2FA berdasarkan multisignature, dan fungsi limit pengeluaran."
+    walletbtccom: "Aman dan mudah digunakan, Wallet Bitcoin BTC.com menjaga anda, pengguna, memegang kontrol penuh atas bicoin anda. Fitur yang tersedia HD dan teknologi multi-signature, multi platform, bahasa dan dukungan mata uang lokal, kode QR dan masih banyak lagi."
     walletsimplebitcoinwallet: "Mudah, aman dan wallet Bitcoin yang dapat diandalkan."
     walletarcbit: "ArcBit didesain lebih sederhana dan mudah digunakan, sambil memberi pengguna kendali penuh atas uangnya. ArcBit memberi pilihan fitur tambahan bersifat cold wallet dengan kemampuan untuk mengizinkan pembayaran secara offline untuk keamanan lebih."
     walletdownload: "Memasang"
@@ -776,6 +783,41 @@ id:
     documentaries: "Dokumentasi"
     learn: "Sumber referensi pembelajaran"
     vouchers: "Voucher"
+  scams:
+    title: "Hindari Scam - Bitcoin"
+    pagetitle: "Hindari Scam"
+    summary: "Kenali beberapa tindakan penipuan bitcoin yang umum terjadi untuk melindungi anda dan keuangan anda."
+    table: "Tipe Scam"
+    blackmail: "Blackmail"
+    blackmailtxt: "Harap berhati-hati terhadap upaya pemerasan, di mana orang yang tidak dikenal mengancam dengan imbalan bitcoin sebagai alat pemerasan. Satu satu modus yang digunakan umumnya melalui email, di mana pelaku mengirimkan pesan yang mengklaim bahwa ia telah meretas komputer anda dan mengoperasikannya melalui protokol desktop jarak jauh (RDP). Pelaku mengklaim telah menanamkan key logger dan merekam aktifitas pribadi anda yang mungkin tidak ingin diketahui orang lain melalui kamera web anda. Pelaku memberikan dua pilihan - mengirim bitcoin agar rekaman aktifitas itu tidak tersebar, atau tidak membayar apa-apa dan konten tersebut akan dikirim ke seluruh kontak email dan tersebar di seluruh jaringan sosial media. Scammers menggunakan daftar email yang telah dicuri maupun kebocorran informasi pengguna lainnya untuk menjalankan skema ini kepada ribuan orang secara massal."
+    fake-exchanges: "Bursa Palsu"
+    fake-exchangestxt: "Karena bitcoin sekarang lebih populer, semakin banyak orang yang berusaha untuk bisa mendapatkannya. Sayangnya, orang-orang jahat juga telah memanfaatkannya, lalu membangun bursa kripto palsu. Bursa kripto palsu ini mungkin menipu pengguna dengan menawarkan harga pasar yang lebih kompetitif yang menidurkan mereka tanpa menyadari bahwa mereka sedang dicuri, dengan iming-iming akses cepat dan mudah untuk membeli beberapa bitcoin murah. Pastikan untuk menggunakan <a href=\"/en/exchanges\">bursa dengan reputasi yang baik</a> saat membeli atau menjual bitcoin."
+    free-giveaways: "Giveaway Gratis"
+    free-giveawaystxt: "Karena sifat alami yang memungkinkan penyebaran informasi menjadi viral melalui internet, scammer berusaha untuk bisa mengambil keuntungan dari orang-orang dengan menawarkan hadiah bitcoin gratis atau mata uang digital lain sebagai imbalan untuk mengirim sejumlah kecil untuk mendaftar, atau dengan memberikan beberapa infromasi pribadi. Jika anda melihat informasi semacam ini di web atau jejaring sosial, sebaikna segera laporkan konten tersebut sebagai penipuan, sehingga orang lain tidak jadi korban."
+    impersonation: "Plagiat"
+    impersonationtxt: "Sayangnya memang cukup mudah bagi para penipu untuk membuat akun sosial media dan menyamar sebagai orang lain. Sering kali mereka menunggu sebelum mulai menipu, sampai orang akan ditiru mempublikasikan suatu konten. Peniru itu kemudian memberikan balasan komentar dengan pesan untuk segera bergabung - seperti giveaway gratis -  menggunakan akun yang hampir identik seperti pemposting atau penulis aslinya. Hal Ini tampak seperti orang asli yang mengatakannya. Atau, peniru juga bisa mencoba dengan memakai akun palsu yang sama untuk menipu orang lain melalui pesan pribadi atau pesan langsung agar segera bergabung sebagai upaya penipuannya. Jangan pernah berpartisipasi dalam giveaway gratis, dan jika anda menerima permintaan aneh seseorang di jaringan sosial anda, sebaiknya periksa kembali untuk mengonfirmasi kebenarannya melalui beberapa media komunikasi."
+    malware: "Malware"
+    malwaretxt: "Hacker jadi cukup kreatif mencari cara lain untuk bisa mencuri dari seseorang. Saat mengirim bitcoin, pastikan untuk memeriksa address penerima dua atau tiga kali. Beberapa program malware, sekali terinstal, dapat merubah address bitcoin saat pengguna mempaste dari clipboard, sehingga tanpa disadari bitcoin jadi terkirim ke address hacker. Karena cukup kecil peluang untuk dapat membalikkan transaksi setelah terkonfirmasi di jaringan, maka ini menjadi sebuah fakta bahwa sudah terlambat untuk dapat memulihkan transaksi itu. "
+    meet-in-person: "Bertatap Muka"
+    meet-in-persontxt: "Ketika membeli atau menjual bitcoin secara langsung, pihak lawan di perdagangan tersebut mungkin akan meminta anda untuk bertemu untuk melakukan pertukaran. Jika pihak itu bukanlah pihak yang anda kenal sebelumnya, hal ini jadi cukup beresiko dan dapat membuat anda dirampok dan terluka. Penipu juga kerap menukarkan mata uang palsu dengan bitcoin. Pertimbangkan menggunakan platform peer-to-peer untuk membuat esrcrow dana tersebut saat bertemu secara langsung. "
+    money-transfer-fraud: "Penipuan Transfer Uang"
+    money-transfer-fraudtxt: "Jangan membalas email atau permintaan komunikasi dari orang asing yang meminta bantuan untuk memindahkan sejumlah uang, meskipun ditawari sebagian dari dana tersebut sebagai imbalan jasa anda nantinya. "
+    phishing-emails: "Email Phishing"
+    phishing-emailstxt: "Berhati-hatilah terhadap email yang mengaku berasal dari layanan yang anda gunakan, agar anda segera mengambil tindakan langsung, seperti merubah kata sandi, atau menekan tombol yang memberikan interaksi pada akun anda. Cukup sulit untuk mengetahui perbedaan email palsu yang mencoba membujuk agar terbuka celah terhadap akun anda, dengan akun asli yang dikirim atas nama produk atau layanan yang anda gunakan. Jika ragu, pertimbangkan untuk memeriksa ulang keaslian informasi itu dengan meneruskan ke pihak perusahaan, menggunakan kontak alamat email di situs web mereka, menghubungi melalui telepon, dan /atau menghubungi melalui akun resmi media sosial mereka."
+    phishing-websites: "Website Phishing"
+    phishing-websitestxt: "Website phishing seringkali bersamaan pula dengan email phising. Email phising dapat merujuk pada sebuah tautan web replika yang didesain untuk mencuri informasi login penting atau tautan agar menginstal malware. Jangan instal piranti lunak atau login ke sebuah website kecuali anda yakin 100% bahwa itu bukanlah website palsu. Website phishing juga mungkin muncul di iklan mesin pencari atau di aplikasi bursa kripto di perangkat seluler. Waspada agar anda tidak mengunduh aplikasi palsu ataupun klik tautan iklan yang merujuk pada website palsu. "
+    ponzi-schemes: "Skema Ponzi"
+    ponzi-schemestxt: "Jangan berpartisipasi pada penawaran satu atau lebih orang yang memberikan jaminan keuntungan besar setelah anda melakukan deposit. Ini disebut dengan skema ponzi, dimana penyetor selanjutnya pada prinsipnya digunakan untuk membayar investor sebelumnya. Hasil akhir umumnya akan ada banyak orang yang akan kehilangan banyak uang. "
+    pyramid-schemes: "Skema Piramida"
+    pyramid-schemestxt: "Sebuah skema piramida menjanjikan keuntungan kepada partisipan berdasarkan sejumlah orang yang berhasil diajak untuk bergabung. Hal ini membuat skema ini dapat tumbuh dan berkembang cepat, bagaimanapun, seringkali tidak memberikan keuntungan yang berarti bagi member dan/atau orang yang berhasil diajak bergabung. Jangan pernah mengundang jaringan anda demi mencapai target reward atau keuntungan dari sebuah produk atau layanan, dan jangan membuat kontribusi dari modal anda sendiri atas perintah orang lain untuk mempercepat prosesnya."
+    prize-giveaways: "Hadiah Giveaway"
+    prize-giveawaystxt: "Sama halnya seperti giveaway gratis, hadiah untuk giveaway scam menipu orang agar memberikan informasi tentang dirinya sendiri. Contohnya seperti memberikan nama, alamat, email dan nomor telefon untuk dapat mengklaim hadiah tersebut. Hal ini memungkinkan hacker untuk menggunakan informasi tersebut dalam upayanya mendapatkan akses akun dengan meniru identitas anda."
+    pump-and-dumps: "Pump and Dump"
+    pump-and-dumpstxt: "Jangan percaya pada orang-orang yang berupaya untuk menarik anda atau orang lain agar mau berinvestasi dengan klaim bahwa mereka mengetahui pergerakan harga bitcoin mendatang. Dalam skema pump and dump, seseorang (atau oknum) mencoba untuk menaikkan atau memompa harga secara tidak wajar, sehingga mereka dapat menjatuhkan harga dengan aset simpanannya untuk mendapatkan keuntungan."
+    ransomware: "Ransomware"
+    ransomwaretxt: "Ini adalah jenis malware yang sebagian atau sepenuhnya memblokir akses perangkat kecuali anda membayar tebusan berupa bitcoin. Cara yang terbaik adalah dengan meminta saran dan berkonsultasi dari pakar komputer profesional dan tepercaya untuk bantuan cara mengatasinya, daripada membayar tebusan. Hati-hatilah dengan program apa yang anda instal pada perangkat anda, terutama untuk yang meminta akses administrator. Pastikan juga untuk memeriksa kembali bahwa aplikasi tersebut bukanlah aplikasi palsu dengan meniru aplikasi asli yang pernah anda gunakan di sebelumnya."
+    scam-coins: "Koin Scam"
+    scam-coinstxt: "Berhati-hati saat berinvestasi pada coin alternatif (altcoin). Diantara altcoin, mungkin ada coin scam, menarik pengguna untuk berinvestasi melalui private sale, atau diskon presale. Coin scam bisa menggunakan tampilan website yang mencolok dan/atau membanggakan komunitas besarnya untuk menciptakan efek agar orang lain merasa takut jika ketinggalan momen. Ini membantu pemegang awal untuk dapat memompa harga, selanjutnya menekan harga jatuh untuk memperoleh keuntungan. Untuk coin scam yang tidak didukung komunitas besar mungkin akan menggunakan airdrops - menawarkan coin (atau token) gratis untuk bergabung di komunitasnya. Hal ini memberikan ruang bagi coin scam sebagai inisiatif memperbesar metrik daya tariknya agar investor merasa ketinggalan momen jika terlambat memutuskan untuk membeli. Coin scam mungkin juga menggunakan kata Bitcoin sebagai upaya untuk mengelabui atau menyesatkan orang, dan berpikir seolah ada keterkaitan dengan bitcoin."
   secure-your-wallet:
     title: "Amankan wallet - Bitcoin anda"
     pagetitle: "Amankan wallet anda"
@@ -896,7 +938,7 @@ id:
     irreversible: "Pembayaran Bitcoin tidak dapat dibatalkan"
     irreversibletxt: "Transaksi Bitcoin tidak dapat dibatalkan, dana hanya bisa dikembalikan oleh penerima dana tersebut. Artinya bahwa anda harus berhati-hati dan hanya melakukan bisnis dengan orang atau organisasi yang anda ketahui dan percayai, atau mereka yang telah memiliki reputasi baik. Di sisi lain, pemilik bisnis perlu mengontrol permintaan pembayaran yang diperlihatkan kepada pelanggan. Bitcoin dapat mendeteksi kesalahan ketik dan biasanya tidak mengizinkan untuk mengirim uang ke alamat yang salah tanpa sengaja. Layanan tambahan bisa dibuat di kemudian hari untuk memberikan lebih banyak pilihan dan perlindungan bagi konsumen."
     anonymous: "Bitcoin tidak anonim"
-    anonymoustxt: "Diperlukan beberapa upaya untuk melindungi privasi dengan Bitcoin. Semua transaksi Bitcoin disimpan secara umum dan permanen dalam jaringan, yang berarti siapapun dapat melihat saldo dan transaksi dari alamat Bitcoin siapapun. Bagaimanapun juga, identitas pemilik alamat tetap tidak diketahui, sampai informasi itu terungkap saat melakukan pembelian atau dalam situasi lainnya. Inilah salah satu alasan mengapa alamat Bitcoin sebaiknya hanya digunakan sekali saja. Perlu diingat bahwa tanggung jawab anda untuk melakukan tindakan-tindakan pengamanan privasi anda. Baca lebih lanjut mengenai pengamanan privasi Anda."
+    anonymoustxt: "Diperlukan beberapa upaya untuk melindungi privasi dengan Bitcoin. Semua transaksi Bitcoin disimpan secara umum dan permanen dalam jaringan, yang berarti siapapun dapat melihat saldo dan transaksi dari alamat Bitcoin siapapun. Bagaimanapun juga, identitas pemilik alamat tetap tidak diketahui, sampai informasi itu terungkap saat melakukan pembelian atau dalam situasi lainnya. Inilah salah satu alasan mengapa alamat Bitcoin sebaiknya hanya digunakan sekali saja. Perlu diingat bahwa tanggung jawab anda untuk melakukan tindakan-tindakan pengamanan privasi anda. <a href=\"#protect-your-privacy#\">Baca lebih lanjut mengenai pengamanan privasi Anda</a>."
     instant: "Transaksi yang belum dikonfirmasi tidak aman"
     instanttxt: "Transaksi tidak digunakan menjadi transaksi yang dapat dibatalkan. Sebaliknya, transaksi-transaksi itu mendapatkan skor <i>konfirmasi</i>yang menunjukkan betapa sulitnya untuk membatalkan atau merubahnya (lihat tabel). Setiap konfirmasi membutuhkan waktu antara beberapa detik dan 90 menit, dengan rata-rata 10 menit. Jika biaya transaksi terlalu rendah atau tidak lazim, akan mendapatkan konfirmasi pertama yang mungkin akan memakan waktu lebih lama."
     confirmations: "Konfirmasi"
@@ -932,6 +974,7 @@ id:
     menu-press: "Pers"
     menu-privacy: "Privasi"
     menu-resources: Sumber daya
+    menu-scams: "Hindari Scam"
     menu-support-bitcoin: "Bantu Bitcoin"
     menu-buy: "Beli Bitcoin"
     menu-full-node: "Jalankan full node"
@@ -983,6 +1026,7 @@ id:
     privacy: privasi
     protect-your-privacy: lindungi-privasi-anda
     resources: sumber-daya
+    scams: scam
     secure-your-wallet: amankan-wallet-anda
     support-bitcoin: dukung-bitcoin
     vocabulary: kosa-kata
@@ -992,6 +1036,22 @@ id:
   anchor:
     community:
       non-profit: nirlaba
+    scams:
+      blackmail: blackmail
+      fake-exchanges: bursa-palsu
+      free-giveaways: giveaway-gratis
+      impersonation: plagiat
+      malware: malware
+      meet-in-person: bertatap-muka
+      money-transfer-fraud: penipuan-transfer-uang
+      phishing-emails: email-phishing
+      phishing-websites: website-phishing
+      ponzi-schemes: skema-ponzi
+      pyramid-schemes: skema-piramida
+      prize-giveaways: hadiah-giveaway
+      pump-and-dumps: pump-and-dump
+      ransomware: ransomware
+      scam-coins: koin-scam
     vocabulary:
       address: alamat
       bit: bit
