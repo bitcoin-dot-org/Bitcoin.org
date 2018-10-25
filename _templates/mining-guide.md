@@ -7,6 +7,7 @@ id: mining-guide
 breadcrumbs:
   - bitcoin
   - dev docs
+  - dev docs guides
   - Mining Guide
 show_fragments: true
 show_toc: true

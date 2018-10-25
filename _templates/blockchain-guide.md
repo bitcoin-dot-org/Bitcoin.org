@@ -7,6 +7,7 @@ id: blockchain-guide
 breadcrumbs:
   - bitcoin
   - dev docs
+  - dev docs guides
   - Blockchain Guide
 show_fragments: true
 show_toc: true

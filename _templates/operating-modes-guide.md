@@ -7,6 +7,7 @@ id: operating-modes-guide
 breadcrumbs:
   - bitcoin
   - dev docs
+  - dev docs guides
   - Operating Modes Guide
 show_fragments: true
 show_toc: true

@@ -2,7 +2,7 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-layout: devdoc-category
+layout: base
 id: developer-guide
 breadcrumbs:
   - bitcoin
@@ -16,50 +16,72 @@ show_toc: true
 
 <script>handleDevDocsRedirect(window.location.hash.substring(1).toLowerCase());</script>
 
-<div class="toccontent-block toccontent-intro" markdown="block">
-## Block Chain
-{% include helpers/subhead-links.md %}
-[The block chain guide has been moved.](/en/blockchain-guide)
+<div class="hero">
+  <div class="container hero-container">
+    <h1>{% translate pagetitle %}</h1>
+    <p class="summarytxt">{% translate summary %}</p>
+    {% include helpers/hero-social.html %}
+  </div>
 </div>
 
-<div class="toccontent-block boxexpand expanded" markdown="block">
-## Transactions
-{% include helpers/subhead-links.md %}
-[The transactions guide has been moved.](/en/transactions-guide)
-</div>
+<div class="container">
+  <div class="row card-row">
 
-<div class="toccontent-block boxexpand expanded" markdown="block">
-## Contracts
-{% include helpers/subhead-links.md %}
-[The contracts guide has been moved.](/en/contracts-guide)
-</div>
+    <div class="card devguide-card">
+      <img class="titleicon" src="/img/icons/ico_blockchain.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="blockchain">{% translate blockchaintitle %}</h2>
+      <div class="btn-container"><a class="btn btn-bright" href="/en/blockchain-guide">{% translate readblockchain %}</a></div>
+      <p>{% translate blockchainsummary %}</p>
+    </div>
 
-<div class="toccontent-block boxexpand expanded" markdown="block">
-## Wallets
-{% include helpers/subhead-links.md %}
-[The wallets guide has been moved.](/en/wallets-guide)
-</div>
+    <div class="card devguide-card">
+      <img class="titleicon" src="/img/icons/ico_transaction.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="transactions">{% translate transactionstitle %}</h2>
+      <div class="btn-container"><a class="btn btn-bright" href="/en/transactions-guide">{% translate readtransactions %}</a></div>
+      <p>{% translate transactionssummary %}</p>
+    </div>
 
-<div class="toccontent-block boxexpand expanded" markdown="block">
-## Payment Processing
-{% include helpers/subhead-links.md %}
-[The payment processing guide has been moved.](/en/payment-processing-guide)
-</div>
+    <div class="card devguide-card">
+      <img class="titleicon" src="/img/icons/ico_contract.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="contracts">{% translate contractstitle %}</h2>
+      <div class="btn-container"><a class="btn btn-bright" href="/en/contracts-guide">{% translate readcontracts %}</a></div>
+      <p>{% translate contractssummary %}</p>
+    </div>
 
-<div class="toccontent-block boxexpand expanded" markdown="block">
-## Operating Modes
-{% include helpers/subhead-links.md %}
-[The operating modes guide has been moved.](/en/operating-modes-guide)
-</div>
+    <div class="card devguide-card">
+      <img class="titleicon" src="/img/icons/ico_wallet.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="wallets">{% translate walletstitle %}</h2>
+      <div class="btn-container"><a class="btn btn-bright" href="/en/wallets-guide">{% translate readwallets %}</a></div>
+      <p>{% translate walletssummary %}</p>
+    </div>
 
-<div class="toccontent-block boxexpand expanded" markdown="block">
-## P2P Network
-{% include helpers/subhead-links.md %}
-[The P2P network guide has been moved.](/en/p2p-network-guide)
-</div>
+    <div class="card devguide-card">
+      <img class="titleicon" src="/img/icons/ico_payment.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="payment-processing">{% translate paymenttitle %}</h2>
+      <div class="btn-container"><a class="btn btn-bright" href="/en/payment-processing-guide">{% translate readpayments %}</a></div>
+      <p>{% translate paymentsummary %}</p>
+    </div>
 
-<div class="toccontent-block boxexpand expanded" markdown="block">
-## Mining
-{% include helpers/subhead-links.md %}
-[The mining guide has been moved.](/en/mining-guide)
+    <div class="card devguide-card">
+      <img class="titleicon" src="/img/icons/ico_gear.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="operating-modes">{% translate operatingtitle %}</h2>
+      <div class="btn-container"><a class="btn btn-bright" href="/en/operating-modes-guide">{% translate readoperating %}</a></div>
+      <p>{% translate operatingsummary %}</p>
+    </div>
+
+    <div class="card devguide-card">
+      <img class="titleicon" src="/img/icons/network.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="p2p-network">{% translate p2ptitle %}</h2>
+      <div class="btn-container"><a class="btn btn-bright" href="/en/p2p-network-guide">{% translate readp2p %}</a></div>
+      <p>{% translate p2psummary %}</p>
+    </div>
+
+    <div class="card devguide-card">
+      <img class="titleicon" src="/img/icons/ico_mining.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="mining">{% translate miningtitle %}</h2>
+      <div class="btn-container"><a class="btn btn-bright" href="/en/mining-guide">{% translate readmining %}</a></div>
+      <p>{% translate miningsummary %}</p>
+    </div>
+
+  </div>
 </div>

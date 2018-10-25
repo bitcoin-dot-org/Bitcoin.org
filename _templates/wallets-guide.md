@@ -7,6 +7,7 @@ id: wallets-guide
 breadcrumbs:
   - bitcoin
   - dev docs
+  - dev docs guides
   - Wallets Guide
 show_fragments: true
 show_toc: true

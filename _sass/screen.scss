@@ -1035,7 +1035,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     margin: 0;
     font-size: 137.5%;
     line-height: 1.9;
-    color: #FFFFFF; 
+    color: #FFFFFF;
 }
 .maincard-link {
     font-size: 100%;
@@ -1299,6 +1299,9 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .dev-documentation .card-row {
     margin: 55px 0;
+}
+.devguide-card .btn-container {
+  margin-bottom: 30px;
 }
 .doc-card {
     min-height: 500px;
@@ -1777,8 +1780,8 @@ table.privacy-comparison td:nth-child(1n+2) {
     width: 120px;
 }
 
-table.validation { 
-    width: 100%; 
+table.validation {
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -2346,8 +2349,8 @@ br.big {
 .boxexpand.expanded>h3:first-child {
     padding: 40px 35px 15px 30px;
 }
-.boxexpand>h1:first-child::after, 
-.boxexpand>h2:first-child::after, 
+.boxexpand>h1:first-child::after,
+.boxexpand>h2:first-child::after,
 .boxexpand>h3:first-child::after {
     content: '';
     position: absolute;
@@ -2834,7 +2837,7 @@ br.big {
 }
 /* Events END */
 
-/* About us page START*/ 
+/* About us page START*/
 .about {
     padding: 70px 0;
 }
@@ -2977,7 +2980,7 @@ br.big {
     font-size: 18px;
     color: #9496A0;
 }
-/* About us page END*/ 
+/* About us page END*/
 
 /* Timeline layout START */
 .post-list {
@@ -3238,7 +3241,7 @@ br.big {
     display: block;
 }
 .vocabulary-list {
-    
+
 }
 .bitcore-content .callout{
     margin: 0 auto 90px;
@@ -3255,7 +3258,7 @@ br.big {
     max-width: 100%;
     margin: 0 auto 20px;
 }
-.bitcore-content ol, 
+.bitcore-content ol,
 .bitcore-content ul{
     font-size: 125%;
 }
@@ -3293,11 +3296,11 @@ br.big {
     color: #ff7e00;
 }
 .ui-state-default .ui-icon {
-    background: url(../img/icons/ico_angle_grey.svg?1528322191) center no-repeat;   
+    background: url(../img/icons/ico_angle_grey.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .ui-icon-closethick {
-    background: url(../img/icons/close-btn.svg?1528322191) center no-repeat !important;   
+    background: url(../img/icons/close-btn.svg?1528322191) center no-repeat !important;
     background-size: contain;
 }
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
@@ -3307,7 +3310,7 @@ br.big {
 }
 .ui-accordion .ui-state-active .ui-accordion-header-icon{
     width: 17px;
-    background: url(../img/icons/ico_angle_orange.svg?1528322191) center no-repeat;   
+    background: url(../img/icons/ico_angle_orange.svg?1528322191) center no-repeat;
     background-size: contain;
 }
 .ui-accordion .ui-accordion-content {
@@ -3395,9 +3398,9 @@ br.big {
     .develdocdisclaimer div {
         padding: 0 60px 0 90px;
     }
-    .develdocdisclaimerclose, 
-    .develdocdisclaimerclose:visited, 
-    .develdocdisclaimerclose:link, 
+    .develdocdisclaimerclose,
+    .develdocdisclaimerclose:visited,
+    .develdocdisclaimerclose:link,
     .develdocdisclaimerclose:active {
         right: 30px;
     }
@@ -3450,7 +3453,7 @@ br.big {
     blockquote {
         margin: 0 0 80px;
         padding: 16px 50px 45px;
-    } 
+    }
     .section-title {
         margin: 0 0 40px;
     }
@@ -3567,13 +3570,13 @@ br.big {
         min-width: auto;
         width: 245px;
     }
-    .boxexpand>h1:first-child, 
-    .boxexpand>h2:first-child, 
+    .boxexpand>h1:first-child,
+    .boxexpand>h2:first-child,
     .boxexpand>h3:first-child {
         padding: 30px 35px 30px 30px;
     }
-    .boxexpand.expanded>h1:first-child, 
-    .boxexpand.expanded>h2:first-child, 
+    .boxexpand.expanded>h1:first-child,
+    .boxexpand.expanded>h2:first-child,
     .boxexpand.expanded>h3:first-child {
         padding: 30px 35px 20px 30px;
     }
@@ -3581,8 +3584,8 @@ br.big {
     .boxexpand>h2 {
         font-size: 150%;
     }
-    .boxexpand>h1:first-child::after, 
-    .boxexpand>h2:first-child::after, 
+    .boxexpand>h1:first-child::after,
+    .boxexpand>h2:first-child::after,
     .boxexpand>h3:first-child::after {
         right: 15px;
     }
@@ -3655,7 +3658,7 @@ br.big {
     .left-column div {
         bottom: -87px;
     }
-    .start-content div div a, 
+    .start-content div div a,
     .start-content div div a:link {
         padding: 15px 20px;
     }
@@ -3824,7 +3827,7 @@ br.big {
         border: none;
         width: auto;
     }
-    .glossary-subpage-search .glossary_term {    
+    .glossary-subpage-search .glossary_term {
         max-width: 710px;
         margin: 0 auto 50px;
     }
@@ -3902,10 +3905,10 @@ br.big {
     }
     .container {
         padding: 0 15px;
-    } 
+    }
     .hero-container {
         padding: 0 40px;
-    } 
+    }
     .footer-bottom-row {
         flex-direction: column;
     }
@@ -4006,11 +4009,11 @@ br.big {
         -webkit-transform: translate(-50%, -4px);
                 transform: translate(-50%, -4px);
     }
-    .left-column, 
+    .left-column,
     .right-column {
         max-width: 100%;
     }
-    .left-column div, 
+    .left-column div,
     .right-column div {
         position: static;
     }
@@ -4204,7 +4207,7 @@ br.big {
     .post:nth-child(2) {
         margin-top: 0;
     }
-    .post:nth-child(even)::after, 
+    .post:nth-child(even)::after,
     .post:nth-child(odd)::after {
         right: auto;
         left: -10px;
@@ -4212,7 +4215,7 @@ br.big {
         height: 20px;
         background: url(../img/icons/timeline-point-right-mob.svg?1528322191) center no-repeat;
     }
-    .post:nth-child(odd) .post-inner, 
+    .post:nth-child(odd) .post-inner,
     .post:nth-child(even) .post-inner {
         padding: 35px 15px 35px 15px;
     }
@@ -4255,13 +4258,13 @@ br.big {
         margin-left: 15px;
         margin-right: 15px;
     }
-    .boxexpand>h1:first-child, 
-    .boxexpand>h2:first-child, 
+    .boxexpand>h1:first-child,
+    .boxexpand>h2:first-child,
     .boxexpand>h3:first-child {
         padding: 30px 30px 30px 15px;
     }
-    .boxexpand.expanded>h1:first-child, 
-    .boxexpand.expanded>h2:first-child, 
+    .boxexpand.expanded>h1:first-child,
+    .boxexpand.expanded>h2:first-child,
     .boxexpand.expanded>h3:first-child {
         padding: 30px 30px 15px 15px;
     }
@@ -4377,7 +4380,7 @@ br.big {
         -moz-appearance: none;
         cursor: pointer;
     }
-     
+
     .footer-langselect {
         display: block;
     }
@@ -4405,7 +4408,7 @@ br.big {
         pointer-events: none;
         text-align: center;
     }
-    .langselect select:hover + .center-select__text, 
+    .langselect select:hover + .center-select__text,
     .langselect select:active + .center-select__text {
         color: #F7931A;
     }
@@ -4452,7 +4455,7 @@ br.big {
         background-color: #090c14;
         border: none;
     }
-    .menusimple.menutap li.hover>ul a, 
+    .menusimple.menutap li.hover>ul a,
     .menusimple.menutap li.active>ul a {
         color: #9d9d9d;
         background: #090c14;
@@ -4473,11 +4476,11 @@ br.big {
     }
     .is-expand:hover::after {
         -webkit-transform: translateY(-50%);
-                transform: translateY(-50%); 
+                transform: translateY(-50%);
     }
     .hover .is-expand:hover::after {
         -webkit-transform: translateY(-50%) rotate(180deg);
-                transform: translateY(-50%) rotate(180deg); 
+                transform: translateY(-50%) rotate(180deg);
     }
     .summarytxt {
         font-size: 112.5%;
@@ -4729,14 +4732,14 @@ br.big {
     .boxexpand>h2 {
         font-size: 137.5%;
     }
-    .boxexpand>h1:first-child, 
-    .boxexpand>h2:first-child, 
+    .boxexpand>h1:first-child,
+    .boxexpand>h2:first-child,
     .boxexpand>h3:first-child {
         padding: 15px 35px 15px 15px;
         background: #f8f8f8
     }
-    .boxexpand.expanded>h1:first-child, 
-    .boxexpand.expanded>h2:first-child, 
+    .boxexpand.expanded>h1:first-child,
+    .boxexpand.expanded>h2:first-child,
     .boxexpand.expanded>h3:first-child {
         padding: 15px 35px 15px 15px;
         background: #fff;
@@ -5021,16 +5024,16 @@ br.big {
     .own-text p {
         font-size: 16px;
     }
-    .glossary_term.help-search::-webkit-input-placeholder { 
+    .glossary_term.help-search::-webkit-input-placeholder {
         font-size: 16px
     }
-    .glossary_term.help-search::-moz-placeholder { 
+    .glossary_term.help-search::-moz-placeholder {
         font-size: 16px
     }
-    .glossary_term.help-search:-ms-input-placeholder { 
+    .glossary_term.help-search:-ms-input-placeholder {
         font-size: 16px
     }
-    .glossary_term.help-search:-moz-placeholder { 
+    .glossary_term.help-search:-moz-placeholder {
         font-size: 16px
     }
     .recommendation-card {

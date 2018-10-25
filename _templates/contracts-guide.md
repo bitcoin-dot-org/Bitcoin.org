@@ -7,6 +7,7 @@ id: contracts-guide
 breadcrumbs:
   - bitcoin
   - dev docs
+  - dev docs guides
   - Contracts Guide
 show_fragments: true
 show_toc: true

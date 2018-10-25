@@ -7,6 +7,7 @@ id: payment-processing-guide
 breadcrumbs:
   - bitcoin
   - dev docs
+  - dev docs guides
   - Payment Processing Guide
 show_fragments: true
 show_toc: true

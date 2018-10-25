@@ -7,6 +7,7 @@ id: p2p-network-guide
 breadcrumbs:
   - bitcoin
   - dev docs
+  - dev docs guides
   - P2P Network Guide
 show_fragments: true
 show_toc: true

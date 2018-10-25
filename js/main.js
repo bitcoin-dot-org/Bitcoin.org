@@ -691,7 +691,7 @@ function showNextMobileAccordion() {
 }
 
 function handleDevDocsRedirect(name) {
-  var blockchainGuideRedirects = ["block-chain", "block-chain-overview", "proof-of-work", "block-height-and-forking", "transaction-data", "consensus-rule-changes", "detecting-forks"];
+  var blockchainGuideRedirects = ["proof-of-work", "block-height-and-forking", "transaction-data", "consensus-rule-changes", "detecting-forks"];
   var transactionGuideRedirects = ["p2pkh-script-validation", "p2sh-scripts", "standard-transactions", "signature-hash-types", "locktime-and-sequence-number", "transaction-fees-and-change", "avoiding-key-reuse", "transaction-malleability"];
   var contractsGuideRedirects = ["escrow-and-arbitration", "micropayment-channel", "coinjoin"];
   var walletsGuideRedirects = ["wallet-programs", "full-service-wallets", "signing-only-wallets", "offline-wallets", "hardware-wallets", "distributing-only-wallets", "wallet-files", "private-key-formats", "wallet-import-format-wif", "mini-private-key-format", "public-key-formats", "hierarchical-deterministic-key-creation", "hardened-keys", "storing-root-seeds", "loose-key-wallets"];
