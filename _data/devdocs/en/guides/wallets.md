@@ -524,7 +524,7 @@ as illustrated below.
 
 A [root seed][/en/glossary/hd-wallet-seed]{:#term-root-seed}{:.term} is created from either 128
 bits, 256 bits, or 512 bits of random data. This root seed of as little
-as 128 bits is the the only data the user needs to backup in order to
+as 128 bits is the only data the user needs to backup in order to
 derive every key created by a particular wallet program using
 particular settings.
 
@@ -572,7 +572,7 @@ better secured than standard public keys and users should be advised
 against exporting even non-extended private keys to
 possibly-untrustworthy environments.
 
-This can be fixed, with some tradeoffs, by replacing the the normal
+This can be fixed, with some tradeoffs, by replacing the normal
 key derivation formula with a hardened key derivation formula.
 
 The normal key derivation formula, described in the section above, combines
