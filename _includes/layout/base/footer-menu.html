@@ -9,7 +9,7 @@ http://opensource.org/licenses/MIT.
       <div>
         <span class="footer-title">{% translate donate-community layout %}:</span>
         <a onclick="openDonationModal()" class="donate-btn btn-bright">{% translate donate layout %}</a>
-        <p class="donate-text">Bitcoin.org is community supported.
+        <p class="donate-text">{% translate donate-community-support layout %}
           <a class="donate-link" href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a>
         </p>
       </div>
@@ -102,12 +102,9 @@ http://opensource.org/licenses/MIT.
       <a href="/{{ page.lang }}/{% translate scams url %}">{% translate menu-scams layout %}</a>
       {% endif %}
       <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
-      {% case page.lang %} {% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl'
-      or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'ja' or 'zh_CN' or 'zh_TW' %}
+      {% if page.lang != 'ar' or 'es' or 'sl' %}
       <a href="/en/privacy">Privacy Policy</a>
-      {% else %}
-      <a href="/{{ page.lang }}/{% translate privacy url %}">{% translate menu-privacy layout %}</a>
-      {% endcase %}
+      {% endif %}
       <a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a>
       <a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a>
       <a href="/en/blog">Blog</a>

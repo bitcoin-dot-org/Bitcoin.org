@@ -1,43 +1,3 @@
-- date: 2018-09-01
-  title: "Lightning Hackday #3"
-  venue: "Ahoy Berlin"
-  address: "Wattstrasse 11"
-  city: "Berlin"
-  country: "Germany"
-  link: "https://lightninghackday.fulmo.org"
-
-- date: 2018-09-07
-  title: "CoinsBank Blockchain Cruise"
-  venue: "Vision of the Seas cruise ship"
-  address: "Barcelona Cruise Terminal B, c. Moll Adossat"
-  city: "Barcelona"
-  country: "Spain"
-  link: "https://coinsbank.com/cruise-europe"
-
-- date: 2018-09-22
-  title: "Baltic Honeybadger"
-  venue: "RISEBA Arhitektūras un mediju centrs H20 6"
-  address: "Durbes iela 4"
-  city: "Riga"
-  country: "Latvia"
-  link: "https://bh2018.hodlhodl.com/"
-
-- date: 2018-10-6
-  title: "Scaling Bitcoin 2018"
-  venue: "Keio University"
-  address: "2 Chome-15-45 Mita, Minato-ku Tōkyō-to 108-8345, Japan"
-  city: "Tokyo"
-  country: "Japan"
-  link: "https://tokyo2018.scalingbitcoin.org/"
-
-- date: 2018-10-15
-  title: "CryptoEconomics Security Conference 2018"
-  venue: "Pauly Ballroom"
-  address: "2475 Bancroft Way, 94720"
-  city: "Berkeley"
-  country: "United States"
-  link: "https://cesc.io"
-
 - date: 2018-10-27
   title: "Texas Bitcoin Conference"
   venue: "AT&T Executive Education & Conference Center"
@@ -45,6 +5,22 @@
   city: "Austin"
   country: "United States"
   link: "https://texasbitcoinconference.com"
+
+- date: 2018-10-27
+  title: "Lightning Hackday NYC"
+  venue: "Flatiron school"
+  address: "11 Broadway #260"
+  city: "New York"
+  country: "United States"
+  link: "https://lightninghackday.fulmo.org"
+
+- date: 2018-10-26
+  title: "Who's afraid of Bitcoin?"
+  venue: "Ham Yard Hotel"
+  address: "Soho, W1D 7DT"
+  city: "London"
+  country: "United Kingdom"
+  link: "http://events.spectator.co.uk/events/whos-afraid-bitcoin/"
 
 - date: 2018-10-31
   title: "World Crypto Con"
@@ -69,3 +45,11 @@
   city: "Fortaleza"
   country: "Brasil"
   link: "http://www.bitconf.com.br/2018CE/"
+
+- date: 2018-02-20
+  title: "Blockchain Economy Istanbul Summit"
+  venue: "Haliç Kongre Merkezi"
+  address: "Maslak mah. Taşyoncası sk. T4 blok. No:1 U/B246"
+  city: "Istanbul"
+  country: "Turkey"
+  link: "http://blockchaineconomy.istanbul"
