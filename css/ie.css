@@ -9,10 +9,10 @@ body{
 }
 
 .head div{
-	width:940px;
+	width:960px;
 }
 /* .body{
-	width:940px;
+	width:960px;
 } */
 .lang{
 	border-left:2px solid #f7f7f7;
@@ -37,10 +37,10 @@ body{
 .menusimple{
 	margin:0;
 	position:absolute;
-	top:8px;
+	top:9px;
 	left:245px;
 	padding:0;
-	height:35px;
+	height:36px;
 }
 .menusimple li{
 	list-style:none;
