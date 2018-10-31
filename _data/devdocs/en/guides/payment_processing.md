@@ -4,16 +4,13 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/payment_processing.md" %}
 
-
-## Payment Processing
+<div class="toccontent-block toccontent-intro" markdown="block">
+## Introduction
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
-Payment processing encompasses the steps spenders and receivers perform
-to make and accept payments in exchange for products or services. The
-basic steps have not changed since the dawn of commerce, but the
-technology has. This section will explain how receivers and spenders
+This section will explain how receivers and spenders
 can, respectively, request and make payments using Bitcoin---and how
 they can deal with complications such as refunds and recurrent
 rebilling.
@@ -29,8 +26,10 @@ It is worth mentioning that each of these steps can be outsourced by
 using third party APIs and services.
 
 {% endautocrossref %}
+</div>
 
-### Pricing Orders
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Pricing Orders
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -78,8 +77,10 @@ expiration periods increase the chance that the exchange rate will
 fluctuate a significant amount before payment is received.
 
 {% endautocrossref %}
+</div>
 
-### Requesting Payments
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Requesting Payments
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -131,7 +132,7 @@ with the attacker's address.
 
 {% endautocrossref %}
 
-#### Plain Text
+### Plain Text
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -170,7 +171,7 @@ some preselected (e.g. Table below) or all [standard 8 decimal places](https://e
 
 {% endautocrossref %}
 
-#### bitcoin: URI
+### bitcoin: URI
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -223,7 +224,7 @@ might be the case for micropayments).
 
 {% endautocrossref %}
 
-#### QR Codes
+### QR Codes
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -251,7 +252,7 @@ displayed on high-resolution screens.
 
 {% endautocrossref %}
 
-#### Payment Protocol
+### Payment Protocol
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -288,12 +289,12 @@ bitcoin:mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN\
 None of the parameters provided above, except `r`, are required for the
 payment protocol---but your applications may include them for backwards
 compatibility with wallet programs which don't yet handle the payment
-protocol. 
+protocol.
 
 The [`r`][r]{:#term-r-parameter}{:.term} parameter tells payment-protocol-aware wallet programs to ignore
 the other parameters and fetch a PaymentRequest from the URL provided.
 The browser, QR code reader, or other program processing the URI opens
-the spender's Bitcoin wallet program on the URI. 
+the spender's Bitcoin wallet program on the URI.
 
 ![BIP70 Payment Protocol](/img/dev/en-payment-protocol.svg?{{site.time | date: '%s'}})
 
@@ -324,7 +325,7 @@ invoice database:
   before used) secp256k1 public key.
 
 After adding all that information to the database, Bob's server displays
-a `bitcoin:` URI for Charlie to click to pay. 
+a `bitcoin:` URI for Charlie to click to pay.
 
 Charlie clicks on the `bitcoin:` URI in his browser. His browser's URI
 handler sends the URI to his wallet program. The wallet is aware of the
@@ -413,8 +414,10 @@ refund-to pubkey script provided by Charlie.  See the Refunds section below
 for more details.
 
 {% endautocrossref %}
+</div>
 
-### Verifying Payment
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Verifying Payment
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -432,84 +435,86 @@ to as a [double spend][/en/glossary/double-spend]{:#term-double-spend}{:.term}.
 Once the transaction is included in a block, double spends are
 impossible without modifying block chain history to replace the
 transaction, which is quite difficult. Using this system,
-the Bitcoin protocol can give each of your transactions an updating confidence 
-score based on the number of blocks which would need to be modified to replace 
+the Bitcoin protocol can give each of your transactions an updating confidence
+score based on the number of blocks which would need to be modified to replace
 a transaction. For each block, the transaction gains one [confirmation][/en/glossary/confirmation-score]{:#term-confirmation}{:.term}. Since
-modifying blocks is quite difficult, higher confirmation scores indicate 
+modifying blocks is quite difficult, higher confirmation scores indicate
 greater protection.
 
-**0 confirmations**: The transaction has been broadcast but is still not 
+**0 confirmations**: The transaction has been broadcast but is still not
 included in any block. Zero confirmation transactions (unconfirmed
 transactions) should generally not be
-trusted without risk analysis. Although miners usually confirm the first 
+trusted without risk analysis. Although miners usually confirm the first
 transaction they receive, fraudsters may be able to manipulate the
 network into including their version of a transaction.
 
-**1 confirmation**: The transaction is included in the latest block and 
+**1 confirmation**: The transaction is included in the latest block and
 double-spend risk decreases dramatically. Transactions which pay
 sufficient transaction fees need 10 minutes on average to receive one
 confirmation. However, the most recent block gets replaced fairly often by
 accident, so a double spend is still a real possibility.
 
-**2 confirmations**: The most recent block was chained to the block which 
-includes the transaction. As of March 2014, two block replacements were 
-exceedingly rare, and a two block replacement attack was impractical without 
+**2 confirmations**: The most recent block was chained to the block which
+includes the transaction. As of March 2014, two block replacements were
+exceedingly rare, and a two block replacement attack was impractical without
 expensive mining equipment.
 
-**6 confirmations**: The network has spent about an hour working to protect 
-the transaction against double spends and the transaction is buried under six 
-blocks. Even a reasonably lucky attacker would require a large percentage of 
-the total network hashing power to replace six blocks. Although this number is 
-somewhat arbitrary, software handling high-value transactions, or otherwise at 
-risk for fraud, should wait for at least six confirmations before treating a 
+**6 confirmations**: The network has spent about an hour working to protect
+the transaction against double spends and the transaction is buried under six
+blocks. Even a reasonably lucky attacker would require a large percentage of
+the total network hashing power to replace six blocks. Although this number is
+somewhat arbitrary, software handling high-value transactions, or otherwise at
+risk for fraud, should wait for at least six confirmations before treating a
 payment as accepted.
 
-Bitcoin Core provides several RPCs which can provide your program with the 
-confirmation score for transactions in your wallet or arbitrary transactions. 
-For example, the `listunspent` RPC provides an array of every satoshi you can 
+Bitcoin Core provides several RPCs which can provide your program with the
+confirmation score for transactions in your wallet or arbitrary transactions.
+For example, the `listunspent` RPC provides an array of every satoshi you can
 spend along with its confirmation score.
 
-Although confirmations provide excellent double-spend protection most of the 
-time, there are at least three cases where double-spend risk analysis can be 
+Although confirmations provide excellent double-spend protection most of the
+time, there are at least three cases where double-spend risk analysis can be
 required:
 
-1. In the case when the program or its user cannot wait for a confirmation and 
+1. In the case when the program or its user cannot wait for a confirmation and
 wants to accept unconfirmed payments.
 
-2. In the case when the program or its user is accepting high value 
+2. In the case when the program or its user is accepting high value
 transactions and cannot wait for at least six confirmations or more.
 
-3. In the case of an implementation bug or prolonged attack against Bitcoin 
+3. In the case of an implementation bug or prolonged attack against Bitcoin
 which makes the system less reliable than expected.
 
-An interesting source of double-spend risk analysis can be acquired by 
-connecting to large numbers of Bitcoin peers to track how transactions and 
-blocks differ from each other. Some third-party APIs can provide you with this 
+An interesting source of double-spend risk analysis can be acquired by
+connecting to large numbers of Bitcoin peers to track how transactions and
+blocks differ from each other. Some third-party APIs can provide you with this
 type of service.
 
 <!-- TODO Example of double spend risk analysis using bitcoinj, eventually? -->
 
-For example, unconfirmed transactions can be compared among all connected peers 
-to see if any UTXO is used in multiple unconfirmed transactions, indicating a 
-double-spend attempt, in which case the payment can be refused until it is 
+For example, unconfirmed transactions can be compared among all connected peers
+to see if any UTXO is used in multiple unconfirmed transactions, indicating a
+double-spend attempt, in which case the payment can be refused until it is
 confirmed. Transactions can also be ranked by their transaction fee to
 estimate the amount of time until they're added to a block.
 
-Another example could be to detect a fork when multiple peers report differing 
-block header hashes at the same block height. Your program can go into a safe mode if the 
-fork extends for more than two blocks, indicating a possible problem with the 
+Another example could be to detect a fork when multiple peers report differing
+block header hashes at the same block height. Your program can go into a safe mode if the
+fork extends for more than two blocks, indicating a possible problem with the
 block chain. For more details, see the [Detecting Forks
 subsection][section detecting forks].
 
-Another good source of double-spend protection can be human intelligence. For 
-example, fraudsters may act differently from legitimate customers, letting 
-savvy merchants manually flag them as high risk. Your program can provide a 
-safe mode which stops automatic payment acceptance on a global or per-customer 
+Another good source of double-spend protection can be human intelligence. For
+example, fraudsters may act differently from legitimate customers, letting
+savvy merchants manually flag them as high risk. Your program can provide a
+safe mode which stops automatic payment acceptance on a global or per-customer
 basis.
 
 {% endautocrossref %}
+</div>
 
-### Issuing Refunds
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Issuing Refunds
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -520,7 +525,7 @@ to return the satoshis to the pubkey script from which they came.
 For example:
 
 * Alice wants to buy a widget from Bob, so Bob gives Alice a price and
-  Bitcoin address. 
+  Bitcoin address.
 
 * Alice opens her wallet program and sends some satoshis to that
   address. Her wallet program automatically chooses to spend those
@@ -552,8 +557,10 @@ This allows you to ensure the user still has access to the key or keys
 for the `refund_to` address.
 
 {% endautocrossref %}
+</div>
 
-### Disbursing Income (Limiting Forex Risk)
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Disbursing Income (Limiting Forex Risk)
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -582,7 +589,7 @@ which can lead to different results.
 
 {% endautocrossref %}
 
-#### Merge Avoidance
+### Merge Avoidance
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -617,7 +624,7 @@ provided by the receiver.
 
 {% endautocrossref %}
 
-#### Last In, First Out (LIFO)
+### Last In, First Out (LIFO)
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -632,7 +639,7 @@ There are two closely-related downsides to LIFO:
 
 * If you spend an output from one unconfirmed transaction in a second
   transaction, the second transaction becomes invalid if transaction
-  malleability changes the first transaction. 
+  malleability changes the first transaction.
 
 * If you spend an output from one unconfirmed transaction in a second
   transaction and the first transaction's output is successfully double
@@ -655,7 +662,7 @@ the [Verification subsection][] above) before using them to make payments.
 
 {% endautocrossref %}
 
-#### First In, First Out (FIFO)
+### First In, First Out (FIFO)
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -694,8 +701,10 @@ spends 100% of verified payments to vendors and a savings account on
 a bi-hourly schedule.
 
 {% endautocrossref %}
+</div>
 
-### Rebilling Recurring Payments
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Rebilling Recurring Payments
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -724,3 +733,4 @@ secure for the spender than clicking an emailed invoice, increasing the
 chance receivers get paid on time.
 
 {% endautocrossref %}
+</div>

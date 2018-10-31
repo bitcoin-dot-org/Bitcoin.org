@@ -4,13 +4,12 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/wallets.md" %}
 
-
-## Wallets
+<div class="toccontent-block toccontent-intro" markdown="block">
+## Introductions
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
-A Bitcoin wallet can refer to either a wallet program or a wallet file.
 Wallet programs create public keys to receive satoshis and use the
 corresponding private keys to spend those satoshis. Wallet files
 store private keys and (optionally) other information related to
@@ -21,8 +20,10 @@ subsections, and this document attempts to always make it clear whether
 we're talking about wallet programs or wallet files.
 
 {% endautocrossref %}
+</div>
 
-### Wallet Programs
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Wallet Programs
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -50,7 +51,7 @@ they control are spent.
 
 {% endautocrossref %}
 
-#### Full-Service Wallets
+### Full-Service Wallets
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -84,7 +85,7 @@ key or to read the decrypted keys from memory.
 {% endautocrossref %}
 
 
-#### Signing-Only Wallets
+### Signing-Only Wallets
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -92,7 +93,7 @@ key or to read the decrypted keys from memory.
 To increase security, private keys can be generated and stored by a
 separate wallet program operating in a more secure environment. These
 signing-only wallets work in conjunction with a networked wallet which
-interacts with the peer-to-peer network. 
+interacts with the peer-to-peer network.
 
 Signing-only wallets programs typically use deterministic key creation
 (described in a later subsection) to create parent private and public
@@ -123,7 +124,7 @@ signing-only wallets: offline wallets and hardware wallets.
 
 {% endautocrossref %}
 
-##### Offline Wallets
+#### Offline Wallets
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -177,7 +178,7 @@ device and back.
 
 
 
-##### Hardware Wallets
+#### Hardware Wallets
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -224,7 +225,7 @@ their intention to support at least one model of hardware wallet.
 
 
 
-#### Distributing-Only Wallets
+### Distributing-Only Wallets
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -255,10 +256,11 @@ separate public key for payment tracking. See the [Payment
 Processing][devguide payment processing] section for details.
 
 {% endautocrossref %}
+</div>
 
 
-
-### Wallet Files
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Wallet Files
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -269,18 +271,18 @@ stored on pieces of paper.
 
 {% endautocrossref %}
 
-#### Private Key Formats
+### Private Key Formats
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
 Private keys are what are used to unlock satoshis from a particular address. In Bitcoin, a private key in standard format is simply a 256-bit number, between the values:
 
-0x01 and 0xFFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFE BAAE DCE6 AF48 A03B BFD2 5E8C D036 4140, representing nearly the entire range of 2<sup>256</sup>-1 values. The range is governed by the secp256k1 ECDSA encryption standard used by Bitcoin. 
+0x01 and 0xFFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFE BAAE DCE6 AF48 A03B BFD2 5E8C D036 4140, representing nearly the entire range of 2<sup>256</sup>-1 values. The range is governed by the secp256k1 ECDSA encryption standard used by Bitcoin.
 
 {% endautocrossref %}
 
-##### Wallet Import Format (WIF)
+#### Wallet Import Format (WIF)
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -309,18 +311,18 @@ The process is easily reversible, using the Base58 decoding function, and removi
 
 {% endautocrossref %}
 
-##### Mini Private Key Format
+#### Mini Private Key Format
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
-Mini private key format is a method for encoding a private key in under 30 characters, enabling keys to be embedded in a small physical space, such as physical bitcoin tokens, and more damage-resistant QR codes. 
+Mini private key format is a method for encoding a private key in under 30 characters, enabling keys to be embedded in a small physical space, such as physical bitcoin tokens, and more damage-resistant QR codes.
 
-1. The first character of mini keys is 'S'. 
+1. The first character of mini keys is 'S'.
 
 2. In order to determine if a mini private key is well-formatted, a question mark is added to the private key.
 
-3. The SHA256 hash is calculated. If the first byte produced is a `00’, it is well-formatted. This key restriction acts as a typo-checking mechanism. A user brute forces the process using random numbers until a well-formatted mini private key is produced. 
+3. The SHA256 hash is calculated. If the first byte produced is a `00’, it is well-formatted. This key restriction acts as a typo-checking mechanism. A user brute forces the process using random numbers until a well-formatted mini private key is produced.
 
 4. In order to derive the full private key, the user simply takes a single SHA256 hash of the original mini private key. This process is one-way: it is intractable to compute the mini private key format from the derived key.
 
@@ -334,7 +336,7 @@ address utility].
 
 
 
-#### Public Key Formats
+### Public Key Formats
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -393,10 +395,10 @@ help programs identify how keys should be used:
 {% endautocrossref %}
 
 
-#### Hierarchical Deterministic Key Creation
+### Hierarchical Deterministic Key Creation
 {% include helpers/subhead-links.md %}
 
-<!-- 
+<!--
 For consistent word ordering:
 [normal|hardened|] [master|parent|child|grandchild] [extended|non-extended|] [private|public|chain] [key|code]
 -->
@@ -544,7 +546,7 @@ which makes them special.
 
 {% endautocrossref %}
 
-##### Hardened Keys
+#### Hardened Keys
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -591,7 +593,7 @@ keys can't create hardened child public keys.
 
 Because of that, a [hardened extended private
 key][/en/glossary/hardened-extended-key]{:#term-hardened-extended-private-key}{:.term} is much less
-useful than a normal extended private key---however, 
+useful than a normal extended private key---however,
 hardened extended private keys create a firewall through which
 multi-level key derivation compromises cannot happen. Because hardened
 child extended public keys cannot generate grandchild chain codes on
@@ -634,7 +636,7 @@ for the full HD protocol specification.
 
 {% endautocrossref %}
 
-##### Storing Root Seeds
+#### Storing Root Seeds
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -670,7 +672,7 @@ For implementation details, please see BIP39.
 
 
 
-#### Loose-Key Wallets
+### Loose-Key Wallets
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -687,3 +689,5 @@ This created considerable difficulty<!--noref--> in backing up one’s keys, con
 This wallet type is being actively phased out and discouraged from being used due to the backup hassle.
 
 {% endautocrossref %}
+
+</div>

@@ -34,7 +34,7 @@ http://opensource.org/licenses/MIT.
     {% when "dev docs examples" %}
     <a href="/{{ page.lang }}/developer-examples">{% translate docreferencemenuexamples developer-documentation %}</a>
     {% when "dev docs guides" %}
-    <a href="/{{ page.lang }}/developer-guides">{% translate docreferencemenuguides developer-documentation %}</a>
+    <a href="/{{ page.lang }}/developer-guide">{% translate docreferencemenuguides developer-documentation %}</a>
     {% when "dev docs reference" %}
     <a href="/{{ page.lang }}/developer-reference">{% translate docreferencemenureference developer-documentation %}</a>
     {% else %}{% die "Breadcrumb not found in _includes/layout/breadcrumbs.html" %} {% endcase %} &gt; {% endif %} {% endfor
