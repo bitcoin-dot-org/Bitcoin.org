@@ -4,11 +4,17 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/contracts.md" %}
 
-<div class="toccontent-block toccontent-intro" markdown="block">
+## Contracts
+{% include helpers/subhead-links.md %}
+
 {% autocrossref %}
 
-## Introduction
-{% include helpers/subhead-links.md %}
+Contracts are
+transactions which use the decentralized Bitcoin system to enforce financial
+agreements.
+Bitcoin contracts can often be crafted to minimize dependency on outside
+agents, such as the court system, which significantly decreases the risk
+of dealing with unknown entities in financial transactions. 
 
 The following subsections will describe a variety of Bitcoin contracts
 already in use. Because contracts deal with real people, not just
@@ -19,10 +25,8 @@ have been proposed. Several of them are collected on the [Contracts
 page](https://en.bitcoin.it/wiki/Contracts) of the Bitcoin Wiki.
 
 {% endautocrossref %}
-</div>
 
-<div class="toccontent-block boxexpand expanded" markdown="block">
-## Escrow And Arbitration
+### Escrow And Arbitration
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -75,7 +79,7 @@ Unfortunately, the merchandise gets slightly damaged in transit. Charlie
 wants a full refund, but Bob thinks a 10% refund is sufficient. They
 turn to Alice to resolve the issue. Alice asks for photo evidence from
 Charlie along with a copy of the redeem script Bob created and
-Charlie checked.
+Charlie checked. 
 
 After looking at the evidence, Alice thinks a 40% refund is sufficient,
 so she creates and signs a transaction with two outputs, one that spends 60%
@@ -122,16 +126,14 @@ need to worry about their arbitrator stealing their money.
 service interface using HTML/JavaScript on a GNU AGPL-licensed website.
 
 {% endautocrossref %}
-</div>
 
-<div class="toccontent-block boxexpand expanded" markdown="block">
-## Micropayment Channel
+### Micropayment Channel
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
 <!-- SOMEDAY: try to rewrite using a more likely real-world example without
-making the text or illustration more complicated -->
+making the text or illustration more complicated --> 
 
 Alice also works part time moderating forum posts for Bob. Every time
 someone posts to Bob's busy forum, Alice skims the post to make sure it
@@ -202,10 +204,8 @@ tutorial][bitcoinj micropayment tutorial]
 all under an Apache license.
 
 {% endautocrossref %}
-</div>
 
-<div class="toccontent-block boxexpand expanded" markdown="block">
-## CoinJoin
+### CoinJoin
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -287,4 +287,3 @@ CoinJoin is [CoinMux](http://coinmux.com/), available under the Apache
 license.
 
 {% endautocrossref %}
-</div>

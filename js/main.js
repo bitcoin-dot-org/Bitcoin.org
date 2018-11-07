@@ -141,7 +141,7 @@ function expandBox(t) {
   t.style.transition = t.style.MozTransition = t.style.WebkitTransition = 'all 0s ease 0s';
   if (t.className.indexOf('expanded') === -1) addClass(t, 'expanded');
   else removeClass(t, 'expanded');
-
+  
   setTimeout(function() {
     t.style.transition = t.style.MozTransition = t.style.WebkitTransition = '';
   }, 20);
@@ -255,15 +255,15 @@ function updateToc() {
     function updatetoc() {
         // Set bottom and top to fit within window and not overflow its parent node.
         var div = toc.getElementsByTagName('DIV')[0];
-        var sidebarHeight = document.querySelector(".sidebar").offsetHeight;
-        var footerTop = document.querySelector(".footer").offsetTop;
-
+        var sidebarHeight = document.querySelector(".sidebar").offsetHeight; 
+        var footerTop = document.querySelector(".footer").offsetTop; 
+                
         if (window.scrollY >= getTop(toc) - 20 && window.scrollY + sidebarHeight + 20 <= footerTop) {
           addClass(div, "scroll");
         } else {
           removeClass(div, "scroll");
         }
-
+        
         // Remove .active class from toc and find new active toc entry.
         var a = false;
         for (var i = 0, t = toc.getElementsByTagName('*'), n = t.length; i < n; i++) {
@@ -570,7 +570,7 @@ function closeDonationBanner() {
   var open = $(".donation-visibility-toggle");
 
   open.removeClass("active");
-  banner.removeClass("expanded");
+  banner.removeClass("expanded"); 
 }
 function accordion() {
   $(document).ready(function($) {
@@ -584,7 +584,7 @@ function accordion() {
       $(".accordion-content").not($(this).next()).slideUp("fast");
       $(".accordion-toggle").not($(this)).removeClass("active");
     });
-  });
+  }); 
 }
 
 function onScrollButton() {
@@ -600,8 +600,8 @@ function onScrollButton() {
       if (buttonTop === 0) {
         buttonTop = button.offsetTop;
       }
-      var footerTop = document.querySelector(".footer").offsetTop;
-
+      var footerTop = document.querySelector(".footer").offsetTop;      
+      
       // Fixed menu
       if (window.scrollY >= buttonTop && window.scrollY + buttonHeight <= footerTop) {
         button.classList.add("is-fixed");
@@ -624,7 +624,7 @@ function onScrollButton() {
   }
 
   window.addEventListener("scroll", stickyButton);
-  button.addEventListener("click", showSidebar);
+  button.addEventListener("click", showSidebar); 
   closeButton.addEventListener("click", hideSidebar);
 
   for (var i = 0; i < sidebarLinks.length; i++) {
@@ -656,18 +656,18 @@ function showNextMobileAccordion() {
   var platformTab = document.querySelector(".accordion-tab-1");
   var osAccordion = document.querySelectorAll(".accordion-os");
   var walletAccordion = document.querySelector(".accordion-wallets");
-
+  
   for (var i = 0; i < platformItems.length; i++) {
-
+    
     platformItems[i].addEventListener("click", function(e) {
-
+    
       for (var num = 0; num < tabs.length; num++) {
         tabs[num].classList.remove("is-selected");
         tabs[num].querySelector(".selected-item").textContent = "";
       }
 
       var selectedPlatform = e.target;
-
+      
       var platformName = selectedPlatform.dataset.platformName;
       document.querySelector(".selected-platform").textContent = selectedPlatform.textContent;
 
@@ -688,48 +688,4 @@ function showNextMobileAccordion() {
       walletAccordion.classList.remove("is-visible");
     });
   }
-}
-
-function handleDevDocsRedirect(name) {
-  var blockchainGuideRedirects = ["proof-of-work", "block-height-and-forking", "transaction-data", "consensus-rule-changes", "detecting-forks"];
-  var transactionGuideRedirects = ["p2pkh-script-validation", "p2sh-scripts", "standard-transactions", "signature-hash-types", "locktime-and-sequence-number", "transaction-fees-and-change", "avoiding-key-reuse", "transaction-malleability"];
-  var contractsGuideRedirects = ["escrow-and-arbitration", "micropayment-channel", "coinjoin"];
-  var walletsGuideRedirects = ["wallet-programs", "full-service-wallets", "signing-only-wallets", "offline-wallets", "hardware-wallets", "distributing-only-wallets", "wallet-files", "private-key-formats", "wallet-import-format-wif", "mini-private-key-format", "public-key-formats", "hierarchical-deterministic-key-creation", "hardened-keys", "storing-root-seeds", "loose-key-wallets"];
-  var paymentProcessingGuideRedirects = ["pricing-orders", "requesting-payments", "plain-text", "bitcoin-uri", "qr-codes", "payment-protocol", "verifying-payment", "issuing-refunds", "disbursing-income-limiting-forex-risk", "merge-avoidance", "last-in-first-out-lifo", "first-in-first-out-fifo", "rebilling-recurring-payments"];
-  var operatingModesGuideRedirects = ["full-node", "simplified-payment-verification-spv", "potential-spv-weaknesses", "bloom-filters", "application-of-bloom-filters", "future-proposals"];
-  var p2pNetworkOpertingGuideRedirects = ["peer-discovery", "connecting-to-peers", "initial-block-download", "blocks-first", "headers-first", "block-broadcasting", "orphan-blocks", "transaction-broadcasting", "memory-pool", "misbehaving-nodes", "alerts"];
-  var miningGuideRedirects = ["solo-mining", "pool-mining", "block-prototypes", "getwork-rpc", "getblocktemplate-rpc", "stratum"];
-
-  if (blockchainGuideRedirects.indexOf(name) > -1) {
-    window.location.href = "/en/blockchain-guide#" + name;
-  }
-
-  if (transactionGuideRedirects.indexOf(name) > -1) {
-    window.location.href = "/en/transactions-guide#" + name;
-  }
-
-  if (contractsGuideRedirects.indexOf(name) > -1) {
-    window.location.href = "/en/contracts-guide#" + name;
-  }
-
-  if (walletsGuideRedirects.indexOf(name) > -1) {
-    window.location.href = "/en/wallets-guide#" + name;
-  }
-
-  if (paymentProcessingGuideRedirects.indexOf(name) > -1) {
-    window.location.href = "/en/payment-processing-guide#" + name;
-  }
-
-  if (operatingModesGuideRedirects.indexOf(name) > -1) {
-    window.location.href = "/en/operating-modes-guide#" + name;
-  }
-
-  if (p2pNetworkOpertingGuideRedirects.indexOf(name) > -1) {
-    window.location.href = "/en/p2p-network-guide#" + name;
-  }
-
-  if (miningGuideRedirects.indexOf(name) > -1) {
-    window.location.href = "/en/mining-guide#" + name;
-  }
-
 }
