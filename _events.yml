@@ -1,50 +1,34 @@
-- date: 2018-10-27
-  title: "Texas Bitcoin Conference"
-  venue: "AT&T Executive Education & Conference Center"
-  address: "1900 University Ave, 78705"
-  city: "Austin"
-  country: "United States"
-  link: "https://texasbitcoinconference.com"
+- date: 2018-12-05
+  title: "LABITCONF 2018"
+  venue: "Centro cultural Corpartes."
+  address: "Rosario Norte 660, Las Condes."
+  city: "Santiago"
+  country: "Chile"
+  link: "https://www.labitconf.com/"
 
-- date: 2018-10-27
-  title: "Lightning Hackday NYC"
-  venue: "Flatiron school"
-  address: "11 Broadway #260"
-  city: "New York"
-  country: "United States"
-  link: "https://lightninghackday.fulmo.org"
+- date: 2018-12-06
+  title: "Terra Mining 2018"
+  venue: "Central Moscow Hippodrome"
+  address: "Begovaya str. 22 build. 1"
+  city: "Moscow"
+  country: "Russia"
+  link: "http://terramining.icu"
 
-- date: 2018-10-26
-  title: "Who's afraid of Bitcoin?"
-  venue: "Ham Yard Hotel"
-  address: "Soho, W1D 7DT"
-  city: "London"
-  country: "United Kingdom"
-  link: "http://events.spectator.co.uk/events/whos-afraid-bitcoin/"
-
-- date: 2018-10-31
-  title: "World Crypto Con"
-  venue: "Aria Hotel and Casino"
-  address: "3730 South Las Vegas Blvd."
+- date: 2019-01-24
+  title: "Tone Vays's Unconfiscatable Conference"
+  venue: "The D Hotel"
+  address: "301 Fremont St, 89101"
   city: "Las Vegas"
   country: "United States"
-  link: "http://www.worldcryptocon.com"
+  link: "http://unconfiscatable.com/"
 
-- date: 2018-11-01
-  title: "Malta Blockchain Summit"
-  venue: "InterContinental"
-  address: "St George's Bay"
-  city: "St Julian's"
-  country: "Malta"
-  link: "http://maltablockchainsummit.com/"
-
-- date: 2018-11-16
-  title: "Bitconf Summer Edition"
-  venue: "Fabrica de negocios"
-  address: "Av. Monsenhor Tabosa, 740"
-  city: "Fortaleza"
-  country: "Brasil"
-  link: "http://www.bitconf.com.br/2018CE/"
+- date: 2019-02-07
+  title: "Advancing Bitcoin Conference and Workshops"
+  venue: "Code Node"
+  address: "10 South Pl, EC2M 7EB"
+  city: "London"
+  country: "United Kingdom"
+  link: "https://www.advancingbitcoin.com"
 
 - date: 2018-02-20
   title: "Blockchain Economy Istanbul Summit"
