@@ -259,7 +259,7 @@ that script does. Receivers do care about the script conditions and, if
 they want, they can ask spenders to use a particular pubkey script.
 Unfortunately, custom pubkey scripts are less convenient than short
 Bitcoin addresses and there was no standard way to communicate them
-between programs prior to widespread implementation of the BIP70 Payment
+between programs prior to widespread implementation of the now deprecated BIP70 Payment
 Protocol discussed later.
 
 To solve these problems, pay-to-script-hash
