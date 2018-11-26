@@ -7,7 +7,7 @@ required:
     title_max_40_characters_no_formatting: Payment Protocol, Payment Request, BIP70
 
     summary_max_255_characters_no_formatting: >
-        The protocol defined in BIP70 (and other BIPs) which lets
+        The deprecated protocol defined in BIP70 (and other BIPs) which lets
         spenders get signed payment details from receivers.
 
     synonyms_shown_in_glossary_capitalize_first_letter:

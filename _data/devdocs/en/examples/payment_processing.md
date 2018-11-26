@@ -3,6 +3,7 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/examples/payment_processing.md" %}
+{% assign DEPRECATED='Deprecated' %}
 
 
 ## Payment Processing
@@ -15,6 +16,13 @@ http://opensource.org/licenses/MIT.
 
 To request payment using the payment protocol, you use an extended (but
 backwards-compatible) `bitcoin:` URI.  For example:
+
+![Warning icon](/img/icons/icon_warning.svg?{{site.time | date: '%s'}})
+ **Warning:** The payment protocol is considered to be deprecated and will be removed in a later version of Bitcoin Core. 
+The protocol has multiple security design flaws and implementation flaws in some wallets.
+Users will begin receiving deprecation warnings in Bitcoin Core version 0.18 when using BIP70 URI's.
+Merchants should transition away from BIP70 to more secure options such as BIP21.
+Merchants should never require BIP70 payments and should provide BIP21 fallbacks.
 
 {% endautocrossref %}
 
