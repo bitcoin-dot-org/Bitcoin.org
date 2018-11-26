@@ -139,7 +139,7 @@ whitespace to make the object more readable. Speaking of which, `bitcoin-cli`
 also transforms the raw response to make it more human-readable. It:
 
 - Adds whitespace indentation to JSON objects
-- Expands escaped newline characters ("\n") into actual newlines
+- Expands escaped newline characters (`\n`) into actual newlines
 - Returns only the value of the `result` field if there's no error
 - Strips the outer double-quotes around `result`s of type string
 - Returns only the `error` field if there's an error
