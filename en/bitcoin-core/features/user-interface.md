@@ -173,7 +173,7 @@ validation decentralization].
 
 ### Trusted Peer Support {#trusted-peer}
 
-The following wallets can securely connect to a trusted peer.
+The following wallet can securely connect to a trusted peer.
 
 <div markdown="block" class="wallet_accordion">
 {% comment %}<!-- Put wallets in alphabetical order -->{% endcomment %}
@@ -206,22 +206,6 @@ the Bitcoin network.
 
 {:.right-hanger}
 [Get GreenBits](https://play.google.com/store/apps/details?id=com.greenaddress.greenbits_android_wallet)
-</div>
-
-### mSigna
-
-<div markdown="block">
-![mSigma screenshot](/img/screenshots/msigna.png?{{site.time | date: '%s'}})
-
-{% translate walletmsigna choose-your-wallet %}
-
-**No configuration necessary:** just install Bitcoin Core on the same
-computer you plan to use mSigna, wait for Bitcoin Core to sync the block
-chain, and then start mSigna---it will automatically connect to your
-Bitcoin Core full node.
-
-{:.right-hanger}
-[Get mSigna](https://ciphrex.com/redirect/?referer=bitcoin.org)
 </div>
 
 </div>
