@@ -19,8 +19,8 @@ platform:
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
-          transparency: "checkpasstransparencyopenspechardware"
+          transparency: "checkfailtransparencyclosedsource"
           environment: "checkgoodenvironmenthardware"
           privacy: "checkneutralprivacyvariable"
-          fees: "checkneutralfeecontrolvariable"
+          fees: "checkpassfeecontroloverride"
 ---
