@@ -137,6 +137,11 @@ redirects:
   /nl/bitcoin-paper: /nl/bitcoin-document
   /nl/over-bitcoin: /nl/faq
   /pl/o: /pl/faq
+  /pt_BR/developer-documentation: /pt_BR/documentacao-do-desenvolvedor
+  /pt_BR/developer-reference: /pt_BR/referencias-para-desenvolvedores
+  /pt_BR/developer-guide: /pt_BR/guia-do-desenvolvedor
+  /pt_BR/developer-glossary: /pt_BR/glossario-do-desenvolvedor
+  /pt_BR/developer-examples: /pt_BR/exemplos-para-desenvolvedores
   /tr/hakkinda: /tr/sss
   /zh_CN/about: /zh_CN/faq
   /zh_TW/about: /zh_TW/faq
@@ -168,7 +173,6 @@ redirects:
   /ko/buy: /en/buy
   /nl/buy: /en/buy
   /pl/buy: /en/buy
-  /pt_BR/buy: /en/buy
   /ro/buy: /en/buy
   /ru/buy: /en/buy
   /sl/buy: /en/buy
