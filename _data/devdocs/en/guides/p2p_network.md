@@ -5,18 +5,16 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_data/devdocs/en/guides/p2p_network.md" %}
 
 
-## P2P Network
+<div class="toccontent-block toccontent-intro" markdown="block">
+## Introduction
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
-The Bitcoin network protocol allows full nodes
-(peers) to collaboratively maintain a
-[peer-to-peer network][network]{:#term-network}{:.term} for block and
-transaction exchange. Full nodes download and verify every block and transaction
+Full nodes download and verify every block and transaction
 prior to relaying them to other nodes. Archival nodes are full nodes which
 store the entire blockchain and can serve historical blocks to other nodes.
-Pruned nodes are full nodes which do not store the entire blockchain. Many SPV 
+Pruned nodes are full nodes which do not store the entire blockchain. Many SPV
 clients also use the Bitcoin network protocol to connect to full nodes.
 
 Consensus rules do not cover networking, so Bitcoin programs may use
@@ -33,8 +31,10 @@ in the example output below have been replaced with [RFC5737][] reserved
 IP addresses.
 
 {% endautocrossref %}
+</div>
 
-### Peer Discovery
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Peer Discovery
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -126,8 +126,10 @@ Policy][].  The hardcoded list of IP addresses used by Bitcoin Core and
 BitcoinJ is generated using the [makeseeds script][].
 
 {% endautocrossref %}
+</div>
 
-### Connecting To Peers
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Connecting To Peers
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -143,8 +145,10 @@ Once connected, the client can send to the remote node `getaddr` and `addr` mess
 In order to maintain a connection with a peer, nodes by default will send a message to peers before 30 minutes of inactivity. If 90 minutes pass without a message being received by a peer, the client will assume that connection has closed.
 
 {% endautocrossref %}
+</div>
 
-### Initial Block Download
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Initial Block Download
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -169,7 +173,7 @@ the local block chain is more than about 24 hours in the past).
 
 {% endautocrossref %}
 
-#### Blocks-First
+### Blocks-First
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -264,7 +268,7 @@ in a later subsection.
 
 {% endautocrossref %}
 
-##### Blocks-First Advantages & Disadvantages
+#### Blocks-First Advantages & Disadvantages
 {:.no_toc}
 {% include helpers/subhead-links.md %}
 
@@ -314,7 +318,7 @@ to the reference page for that message.
 
 {% endautocrossref %}
 
-#### Headers-First
+### Headers-First
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -419,8 +423,10 @@ to the reference page for that message.
 | **Payload** | One or more header hashes          | Up to 2,000 block headers    | One or more block inventories derived from header hashes | One serialized block
 
 {% endautocrossref %}
+</div>
 
-### Block Broadcasting
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Block Broadcasting
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -536,8 +542,10 @@ However, orphan discarding does mean that headers-first nodes will
 ignore orphan blocks sent by miners in an unsolicited block push.
 
 {% endautocrossref %}
+</div>
 
-### Transaction Broadcasting
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Transaction Broadcasting
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -546,7 +554,7 @@ In order to send a transaction to a peer, an `inv` message is sent. If a `getdat
 
 {% endautocrossref %}
 
-#### Memory Pool
+### Memory Pool
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -583,11 +591,11 @@ they can't know which transactions are eligible to be included in the
 next block.
 
 {% endautocrossref %}
+</div>
 
 
-
-
-### Misbehaving Nodes
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Misbehaving Nodes
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -595,8 +603,10 @@ next block.
 Take note that for both types of broadcasting, mechanisms are in place to punish misbehaving peers who take up bandwidth and computing resources by sending false information. If a peer gets a banscore above the `-banscore=<n>` threshold, he will be banned for the number of seconds defined by `-bantime=<n>`, which is 86,400 by default (24 hours).
 
 {% endautocrossref %}
+</div>
 
-### Alerts
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Alerts
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -606,3 +616,4 @@ Take note that for both types of broadcasting, mechanisms are in place to punish
 Earlier versions of Bitcoin Core allowed developers and trusted community members to issue [Bitcoin alerts](https://bitcoin.org/en/alerts) to notify users of critical network-wide issues. This messaging system [was retired](https://bitcoin.org/en/alert/2016-11-01-alert-retirement) in Bitcoin Core v0.13.0; however, internal alerts, partition detection warnings and the `-alertnotify` option features remain.
 
 {% endautocrossref %}
+</div>

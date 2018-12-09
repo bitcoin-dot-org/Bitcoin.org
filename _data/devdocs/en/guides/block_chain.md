@@ -4,15 +4,12 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/block_chain.md" %}
 
-
-## Block Chain
-{% include helpers/subhead-links.md %}
+<div class="toccontent-block toccontent-intro" markdown="block">
 
 {% autocrossref %}
 
-The block chain provides Bitcoin's public ledger, an ordered and timestamped record
-of transactions. This system is used to protect against double spending
-and modification of previous transaction records.
+## Introduction
+{% include helpers/subhead-links.md %}
 
 Each full node in the Bitcoin network independently stores a block chain
 containing only blocks validated by that node. When several nodes all
@@ -21,13 +18,6 @@ have the same blocks in their block chain, they are considered to be in
 nodes follow to maintain consensus are called [consensus
 rules][/en/glossary/consensus-rules]{:#term-consensus-rules}{:.term}. This section describes many of
 the consensus rules used by Bitcoin Core.
-
-{% endautocrossref %}
-
-### Block Chain Overview
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
 
 ![Block Chain Overview](/img/dev/en-blockchain-overview.svg?{{site.time | date: '%s'}})
 
@@ -78,8 +68,10 @@ fewer than it receives from its combined inputs, effectively paying a 10,000
 satoshi transaction fee.
 
 {% endautocrossref %}
+</div>
 
-### Proof Of Work
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Proof Of Work
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -153,8 +145,10 @@ transaction data only requires the recalculation of the ancestor hashes in
 the merkle tree.
 
 {% endautocrossref %}
+</div>
 
-### Block Height And Forking
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Block Height And Forking
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -198,8 +192,11 @@ height should not be used as a globally unique identifier. Instead, blocks
 are usually referenced by the hash of their header (often with the byte order reversed, and in hexadecimal).
 
 {% endautocrossref %}
+</div>
 
-### Transaction Data
+
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Transaction Data
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -268,8 +265,11 @@ Since it is impractical to have separate transactions with identical txids, this
 otherwise, a valid block with the duplicates eliminated could have the same merkle root and block hash, but be rejected by the cached invalid outcome, resulting in security bugs such as CVE-2012-2459.
 
 {% endautocrossref %}
+</div>
 
-### Consensus Rule Changes
+
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Consensus Rule Changes
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -318,17 +318,17 @@ a hard or soft fork. For example, "increasing the block size above 1 MB
 requires a hard fork." In this example, an actual block chain fork is
 not required---but it is a possible outcome.
 
-Consensus rule changes may be activated in various ways. During Bitcoin's 
-first two years, Satoshi Nakamoto performed several soft forks by just 
-releasing the backwards-compatible change in a client that began immediately 
+Consensus rule changes may be activated in various ways. During Bitcoin's
+first two years, Satoshi Nakamoto performed several soft forks by just
+releasing the backwards-compatible change in a client that began immediately
 enforcing the new rule. Multiple soft forks such as BIP30 have
-been activated via a flag day where the new rule began to be enforced at a 
+been activated via a flag day where the new rule began to be enforced at a
 preset time or block height. Such forks activated via a flag day are known as
 [User Activated Soft Forks][/en/glossary/uasf]{:#term-uasf}{:.term} (UASF) as
 they are dependent on having sufficient users (nodes) to enforce the new rules
 after the flag day.
 
-Later soft forks waited for a majority of hash rate (typically 75% or 95%) 
+Later soft forks waited for a majority of hash rate (typically 75% or 95%)
 to signal their readiness for enforcing the new consensus rules. Once the signalling
 threshold has been passed, all nodes will begin enforcing the new rules. Such
 forks are known as [Miner Activated Soft Forks][/en/glossary/masf]{:#term-masf}{:.term} (MASF)
@@ -343,8 +343,11 @@ future rule changes may be
 implemented](https://gist.github.com/gavinandresen/2355445).
 
 {% endautocrossref %}
+</div>
 
-#### Detecting Forks
+
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Detecting Forks
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -371,11 +374,11 @@ best block chain.
 Full nodes can also check block and transaction version numbers. If the
 block or transaction version numbers seen in several recent blocks are
 higher than the version numbers the node uses, it can assume it doesn't
-use the current consensus rules. Bitcoin Core reports this situation 
+use the current consensus rules. Bitcoin Core reports this situation
 through the `getnetworkinfo` RPC and `-alertnotify` command if set.
 
-In either case, block and transaction data should not be relied upon 
-if it comes from a node that apparently isn't using the current 
+In either case, block and transaction data should not be relied upon
+if it comes from a node that apparently isn't using the current
 consensus rules.
 
 SPV clients which connect to full nodes can detect a likely hard fork by
@@ -389,3 +392,4 @@ increases to ensure they process received transactions and create new
 transactions using the current consensus rules.
 
 {% endautocrossref %}
+</div>
