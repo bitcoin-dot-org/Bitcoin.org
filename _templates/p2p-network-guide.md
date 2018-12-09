@@ -8,7 +8,7 @@ breadcrumbs:
   - bitcoin
   - dev docs
   - dev docs guides
-  - P2P Network Guide
+  - P2P Network
 show_fragments: true
 show_toc: true
 ---

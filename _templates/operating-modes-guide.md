@@ -8,7 +8,7 @@ breadcrumbs:
   - bitcoin
   - dev docs
   - dev docs guides
-  - Operating Modes Guide
+  - Operating Modes
 show_fragments: true
 show_toc: true
 ---

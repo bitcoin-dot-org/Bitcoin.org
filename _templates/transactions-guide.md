@@ -8,7 +8,7 @@ breadcrumbs:
   - bitcoin
   - dev docs
   - dev docs guides
-  - Transactions Guide
+  - Transactions
 show_fragments: true
 show_toc: true
 ---
