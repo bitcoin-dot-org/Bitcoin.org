@@ -29,7 +29,6 @@ Configuration](#network-configuration) section for details.
 {% endcapture %}
 
 {% capture verifyReleaseSignatures %}
-<div class="box" markdown="1">
 *Optional: Verify the release signatures*
 
 If you know how to use PGP, you should also click the *Verify Release
@@ -55,8 +54,6 @@ on the release signatures file. Finally, use PGP or another utility to
 compute the SHA256 hash of the archive you downloaded, and ensure the
 computed hash matches the hash listed in the verified release
 signatures file.
-
-</div>
 {% endcapture %}
 
 
@@ -91,7 +88,7 @@ point where it stopped the next time you start it.
 
 
 {% capture windows_shutdown_warning %}
-**Warning:** to prevent data corruption, do not force shutdown your
+**Warning:** to prevent data corruption, do not force shutdown of your
 computer from the Windows shutdown screen when you have Bitcoin
 Core running.
 {% endcapture %}
@@ -187,7 +184,7 @@ have an easy-to-use node.
   X, or Linux.
 
 * {{site.text.bitcoin_datadir_gb}} gigabytes of free disk space,
-  accessable at a minimum read/write speed of 100 MB/s.
+  accessible at a minimum read/write speed of 100 MB/s.
 
 * 2 gigabytes of memory (RAM)
 
@@ -233,13 +230,13 @@ through the IBD process at the first run, and it may take a considerable amount 
 node has to download the entire block chain (which is roughly {{site.text.chain_gb}} gigabytes now).
 During the download, there could be a high usage for the network and CPU
 (since the node has to verify the blocks downloaded), and the client will take up an
-increasing amount of storage space([reduce storage](#reduce-storage) provides more details on reducing storage).
+increasing amount of storage space ([reduce storage](#reduce-storage) provides more details on reducing storage).
 
 Before the node finishes IBD, you will not be able to see a new transaction related to your account until
-the client has caught up to block containing that transaction.
+the client has caught up to the block containing that transaction.
 So your wallet may not count new payments/spendings into the balance.
 
-If you are using Bitcoin Core GUI, you can monitor the progress of IBD in the status bar(left bottom corner).
+If you are using Bitcoin Core GUI, you can monitor the progress of IBD in the status bar (left bottom corner).
 
 ![Bitcoin-Qt Initial Block Download](/img/full-node/en-bitcoin-qt-ibd.png?{{site.time | date: '%s'}})
 
@@ -250,7 +247,7 @@ systems.
 
 ### Ubuntu 16.04
 
-*Instructions for Bitcoin Core 0.14.2
+*Instructions for Bitcoin Core 0.14.2 and Higher
 
 If you use Ubuntu Desktop, click the Ubuntu swirl icon to start the Dash and type "term" into the
 input box. Choose any one of the terminals listed:
@@ -367,7 +364,7 @@ the Ok button to save the new settings.
 ![Choosing to start Bitcoin Core at login](/img/full-node/en-start-on-login.png?{{site.time | date: '%s'}})
 
 The next time you login to your desktop, Bitcoin Core GUI will be
-automatically started in as an icon in the tray.
+automatically started as an icon in the tray.
 
 ![Bitcoin-Qt Tray Icon](/img/full-node/en-bitcoin-qt-tray-icon.png?{{site.time | date: '%s'}})
 </div>
@@ -424,7 +421,7 @@ script](https://github.com/bitcoin/bitcoin/tree/0.13/contrib/init/bitcoind.conf)
 
 ### Other Linux Distributions
 
-*Instructions for Bitcoin Core 0.14.2
+*Instructions for Bitcoin Core 0.14.2 and Higher
 
 The following instructions describe installing Bitcoin Core using tools
 available in most mainstream Linux distributions.  We assume you use a
@@ -547,7 +544,7 @@ the Ok button to save the new settings.
 ![Choosing to start Bitcoin Core at login](/img/full-node/en-start-on-login.png?{{site.time | date: '%s'}})
 
 The next time you login to your desktop, Bitcoin Core GUI should be
-automatically started in as an icon in the tray.
+automatically started as an icon in the tray.
 
 ![Bitcoin-Qt Tray Icon](/img/full-node/en-bitcoin-qt-tray-icon.png?{{site.time | date: '%s'}})
 
@@ -613,7 +610,7 @@ If you're a expert system administrator and want to use an init script instead, 
 
 ### Windows 10
 
-*Instructions for Bitcoin Core 0.14.2 on Windows 10
+*Instructions for Bitcoin Core 0.14.2 and Higher on Windows 10
 
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
@@ -644,7 +641,7 @@ Core.
    useful for programmers and advanced users, proceed to the [Bitcoin
    Core Daemon](#win10-daemon) section below.
 
-3. To want to use both the GUI and the daemon, read both the [GUI
+3. If you want to use both the GUI and the daemon, read both the [GUI
    instructions](#win10-gui) and the [daemon
    instructions](#win10-daemon). Note that you can't run both the GUI
    and the daemon at the same time using the same configuration
@@ -743,7 +740,7 @@ Starting your node automatically each time your computer boots makes it
 easy for you to contribute to the network.  The easiest way to do this
 is to start Bitcoin Core daemon when you login to your computer.
 
-Start File Explorer and go to,
+Start File Explorer and go to:
 
     C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
 
@@ -767,7 +764,7 @@ daemon will be automatically started.
 
 ### Windows 8.x
 
-*Instructions for Bitcoin Core 0.14.2 on Windows 8 and 8.1.*
+*Instructions for Bitcoin Core 0.14.2 and Higher on Windows 8 and 8.1.*
 
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
@@ -798,7 +795,7 @@ Core.
    useful for programmers and advanced users, proceed to the [Bitcoin
    Core Daemon](#win8-daemon) section below.
 
-3. To want to use both the GUI and the daemon, read both the [GUI
+3. If you want to use both the GUI and the daemon, read both the [GUI
    instructions](#win8-gui) and the [daemon
    instructions](#win8-daemon). Note that you can't run both the GUI
    and the daemon at the same time using the same configuration
@@ -897,7 +894,7 @@ Starting your node automatically each time your computer boots makes it
 easy for you to contribute to the network.  The easiest way to do this
 is to start Bitcoin Core daemon when you login to your computer.
 
-Start File Explorer and go to,
+Start File Explorer and go to:
 
     C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
 
@@ -921,7 +918,7 @@ daemon will be automatically started.
 
 ### Windows 7
 
-*Instructions for Bitcoin Core 0.14.2
+*Instructions for Bitcoin Core 0.14.2 and Higher
 
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
@@ -952,7 +949,7 @@ Core.
    useful for programmers and advanced users, proceed to the [Bitcoin
    Core Daemon](#win7-daemon) section below.
 
-3. To want to use both the GUI and the daemon, read both the [GUI
+3. If you want to use both the GUI and the daemon, read both the [GUI
    instructions](#win7-gui) and the [daemon
    instructions](#win7-daemon). Note that you can't run both the GUI
    and the daemon at the same time using the same configuration
@@ -1042,20 +1039,12 @@ For example, to safely stop your node, run the following command:
 
 {{complete_list_of_commands_and_ibd}}
 
-
-When Bitcoin Core daemon first starts, it will begin to download the block
-chain. This step will take at least several days, and it may take much more time
-on a slow Internet connection or with a slow computer. During the download,
-Bitcoin Core will use a significant part of your connection bandwidth. You can
-stop Bitcoin Core at any time using the stop command; it will resume from the
-point where it stopped the next time you start it.
-
 <div class="box" markdown="1">
 *Optional: Start Your Node At Boot*
 
 Starting your node automatically each time your computer boots makes it easy for you to contribute to the network. The easiest way to do this is to start Bitcoin Core daemon when you login to your computer.
 
-Start File Explorer and go to,
+Start File Explorer and go to:
 
     C:\Users\Example\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\StartUp
 
@@ -1083,7 +1072,7 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 
 ### Mac OS X Yosemite 10.10.x
 
-*Instructions for Bitcoin Core 0.14.2 on Mac OS X Yosemite*
+*Instructions for Bitcoin Core 0.14.2 and Higher on Mac OS X Yosemite*
 
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
@@ -1413,7 +1402,7 @@ the DHCP assignment table in the subsection above.
 
 Login to your router using the same steps described near the top of the
 [DHCP subsection](#configuring-dhcp).  Look for an option called Port Forwarding, Port
-Assignment, or anything with "Port" in its name.  On the some routers,
+Assignment, or anything with "Port" in its name.  On some routers,
 this option is buried in an Applications & Gaming menu.
 
 The port forwarding settings should allow you to map an external port on
@@ -1545,8 +1534,8 @@ blocks could be served to other nodes.
 
 Some node operators need to deal with bandwidth caps imposed by their ISPs.
 
-By default, bitcoin-core allows up to 125 connections to different peers, 8 of
-which are outbound. You can therefore, have at most 117 inbound connections.
+By default, Bitcoin Core allows up to 125 connections to different peers, 8 of
+which are outbound. You can therefore have at most 117 inbound connections.
 
 The default settings can result in relatively significant traffic consumption.
 
@@ -1585,7 +1574,7 @@ blocks and transactions to fewer nodes.
 {% endhighlight %}
 
 Reducing the maximum connected nodes to a minimum could be desirable if traffic
-limits are tiny. Keep in mind that bitcoin's trustless model works best if you are
+limits are tiny. Keep in mind that Bitcoin's trustless model works best if you are
 connected to a handful of nodes.
 
 #### Blocks-only mode

@@ -5,7 +5,7 @@
 id: greenaddress
 title: "GreenAddress"
 titleshort: "Green Address"
-compat: "mobile desktop android ios windows mac linux"
+compat: "mobile desktop ios windows mac linux"
 level: 3
 platform:
   - mobile:
@@ -14,22 +14,6 @@ platform:
       - name: ios
         text: "walletgreenaddress"
         link: "https://itunes.apple.com/app/id1206035886"
-        source: "https://github.com/greenaddress/WalletCordova"
-        screenshot: "greenaddressandroid.png?1528322191"
-        check:
-          control: "checkpasscontrolmulti"
-          validation: "checkpassvalidationservers"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkpassenvironmenttwofactor"
-          privacy: "checkpassprivacybasic"
-          fees: "checkgoodfeecontrolfull"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
-      - name: android
-        text: "walletgreenaddress"
-        link: "https://play.google.com/store/apps/details?id=it.greenaddress.cordova"
         source: "https://github.com/greenaddress/WalletCordova"
         screenshot: "greenaddressandroid.png?1528322191"
         check:

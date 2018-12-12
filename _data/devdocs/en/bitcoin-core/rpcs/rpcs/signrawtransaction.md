@@ -3,6 +3,7 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/bitcoin-core/rpcs/rpcs/signrawtransaction.md" %}
+{% assign DEPRECATED='Deprecated' %}
 
 ##### SignRawTransaction
 {% include helpers/subhead-links.md %}
@@ -12,6 +13,9 @@ http://opensource.org/licenses/MIT.
 {% autocrossref %}
 
 The `signrawtransaction` RPC {{summary_signRawTransaction}}
+
+{{WARNING}} `signrawtransaction` will be removed in a later version of Bitcoin
+Core.
 
 *Parameter #1---the transaction to sign*
 

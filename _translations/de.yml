@@ -7,11 +7,12 @@ de:
     owntxt-title: "Satoshi Nakamoto und Martti Malmi"
     owntxt: "Bitcoin.org wurde ursprünglich registriert und war im Besitz von Bitcoins ersten zwei Entwicklern, <a href=\"https://en.bitcoin.it/wiki/Satoshi_Nakamoto\">Satoshi Nakamoto</a> und <a href=\"https://en.bitcoin.it/wiki/Sirius\">Martti Malmi</a>. Als Nakamoto das Projekt verließ, übergab er die Eigentumsrechte an der Domain an zusätzliche Personen, unabhängig von den Bitcoin Entwicklern, um so Verantwortung aufzuteilen und um zu verhindern, dass eine Person oder Gruppe ohne großen Aufwand die Kontrolle über das Bitcoin Projekt erlangt."
     owntxt2-title: "Bitcoin Core"
-    owntxt2: "Von 2011 bis 2013 wurde die Website vor allem für die Veröffentlichung neuer Versionen der Software namens Bitcoin Core verwendet. Im Jahr 2013 wurde die Website in ihre aktuelle Form umgestaltet, indem zahlreiche Seiten hinzugefügt, zusätzliche Bitcoin-Software aufgelistet, und das Übersetzungssystem erstellt wurden. Eine Entwicklerdokumentation wurde 2014 hinzugefügt."
+    owntxt2: "Von 2011 bis 2013 wurde die Website vor allem für die Veröffentlichung neuer Versionen der Software namens Bitcoin Core verwendet. Im Jahr 2013 wurde die Website in ihre aktuelle Form umgestaltet, indem zahlreiche Seiten hinzugefügt, zusätzliche Bitcoin-Software aufgelistet, und das Übersetzungssystem erstellt wurden."
     owntxt3-title: "Eine Entwicklerdokumentation wurde 2014 hinzugefügt."
-    owntxt3: "Heutzutage ist die Website ein unabhängiges Open-Source-Projekt mit Unterstützern aus der ganzen Welt. Die letztliche Entscheidung zur Veröffentlichung liegt bei den Miteigentümern, aber alle regulären Aktivitäten werden über ein öffentliches <a href=\"https://github.com/bitcoin/bitcoin.org#working-with-github\">Pull-Request Verfahren</a> organisiert und von den Instandhaltern der Website verwaltet."
+    owntxt3: "Updates, Korrekturen, Hinweise und Verbesserungen der Community-Mitglieder sind willkommen."
     owntxt4-title: "Diese Website ist ein unabhängiges Open-Source-Projekt"
-    owntxt4: "Bitcoin.org ist nicht die offizielle Website von Bitcoin. Genauso wie niemanden die Technologie hinter E-Mails gehört, gibt es niemanden, dem das Bitcoin-Netzwerk gehört. Daher kann niemand im Namen von Bitcoin sprechen."
+    owntxt4: "Heutzutage ist die Website ein unabhängiges Open-Source-Projekt mit Unterstützern aus der ganzen Welt. Die letztliche Entscheidung zur Veröffentlichung liegt bei den Miteigentümern, aber alle regulären Aktivitäten werden über ein öffentliches <a href=\"https://github.com/bitcoin/bitcoin.org#working-with-github\">Pull-Request Verfahren</a> organisiert und von den Co-Maintainern der Website verwaltet."
+    owntxt5: "Bitcoin.org ist nicht die offizielle Website von Bitcoin. Genauso wie niemanden die Technologie hinter E-Mails gehört, gibt es niemanden, dem das Bitcoin-Netzwerk gehört. Daher kann niemand im Namen von Bitcoin sprechen."
     control: "Aber... wer kontrolliert Bitcoin?"
     controltxt: "Bitcoin wird durch alle Bitcoin-Nutzer auf der ganzen Welt kontrolliert. Entwickler verbessern die Software, aber sie können keine Änderung der Regeln im Bitcoin-Protokoll erzwingen, da alle Nutzer die freie Wahl bei der Softwarenutzung haben. Um untereinander kompatibel zu bleiben, müssen alle Nutzer Software verwenden, die dieselben Regeln befolgen. Bitcoin kann nur bei einem vollständigen Konsens zwischen allen Benutzern ordentlich arbeiten. Daher haben alle Benutzer und Entwickler ein starkes Interesse daran, diesen Konsens zu übernehmen und zu schützen."
     mission: "Auftrag"
@@ -86,7 +87,7 @@ de:
         PCI-Konformität überflüssig ist. Betrugsprävention kann auf das Überwachen
         einer einzigen Variable reduziert werden: Den <a href="#you-need-to-know##instant">Bestätigungs-Score</a>.
         Abgesehen davon ist die sichere Aufbewahrung von Bitcoins eine Sache der <a
-        href="#secure-your-wallet#">Sicherung der Wallet</a>und der Verwendung von
+        href="#secure-your-wallet#">Sicherung der Wallet</a> und der Verwendung von
         HTTPS oder anderen gesicherten Protokollen, um Zahlungsaufforderungen an Kunden
         zu senden.
     micro: "Eine neue Welt voller Möglichkeiten"
@@ -133,13 +134,17 @@ de:
     translated_by: "übersetzt von"
     submit_new_translation: 'Wollen Sie dieses Paper in Ihre Sprache übersetzten? Besuchen Sie das <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitcoin-Whitepaper Repository auf GitHub</a> für eine Einführung und <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">öffnen Sie ein "Issue"</a>, falls Sie Fragen haben.'
   buy:
-    title: "Kaufen - Bitcoin"
+    title: "Bitcoin kaufen"
     pagetitle: "Wie man Bitcoins kauft"
     summary: "Es gibt mehrere Wege, Bitcoins zu kaufen."
+    paxful: 'Mit über 300 Möglichkeiten zum Kauf und Verkauf von Bitcoin bietet Paxful, eine führende Peer-to-Peer (P2P) Börse und <a href="/en/posts/new-supporting-sponsorship-from-paxful">Bitcoin.org-Sponsor</a>, einen komfortablen Bitcoin-Marktplatz.'
+    button: "Bitcoin kaufen mit Paxful"
+    sponsor: "Gesponserter Inhalt"
+    discover: "Weitere Möglichkeiten zum Kauf von Bitcoin entdecken:"
     bitcoin-exchange: "Benutzen Sie eine Bitcoin-Börse"
-    bitcoin-exchange-text: "Unsere Seite zu <a href=\"/en/exchanges\">Bitcoin-Börsen</a> listet viele verschiedene Unternehmen auf, die Ihnen helfen können Bitcoins über Ihr Bankkonto zu kaufen."
-    local-bitcoins: "Entdecken Sie Personen, die in Ihrer Umgebung Bitcoins verkaufen"
-    local-bitcoins-text: "<a href=\"https://localbitcoins.com/\">Local Bitcoins</a> ermöglicht es Ihnen, Bitcoin-Verkäufer in Ihrer Nähe zu finden. Verkäufer haben Bewertungen, um die Auswahl zu erleichtern."
+    bitcoin-exchange-text: "Unsere Seite zu <a href=\"/en/exchanges\">Bitcoin-Börsen</a> listet viele verschiedene Unternehmen auf, die Ihnen helfen können, Bitcoins über Ihr Bankkonto zu kaufen."
+    p2p-bitcoins: "Ein P2P-Verzeichnis durchsuchen"
+    p2p-bitcoins-text: "Bei einer Börse, die auf einem <a href=\"/en/exchanges#p2p\">Peer-to-Peer-Verzeichnis</a> basiert, können Sie nach den unterschiedlichsten Bitcoin-Verkäufern suchen. Reviews und Bewertungen helfen Ihnen dabei, einen passenden Verkäufer zu finden."
     bitcoin-atm: "Benutzen Sie einen Bitcoin-Automaten"
     bitcoin-atm-text: "Bitcoin-Automaten funktionieren wie herkömmliche Geldautomaten, mit dem Unterschied, dass Sie Geld abheben und einzahlen können um Bitcoins zu kaufen oder zu verkaufen. <a href=\"https://coinatmradar.com/\">Coin ATM Radar</a> stellt eine interaktive Karte zur Verfügung, die Ihnen hilft den nächsten Bitcoin-Automaten zu finden."
   community:
@@ -183,6 +188,7 @@ de:
     walletmsigna: "mSIGNA ist eine fortgeschrittene aber dennoch leicht zu benutzende Wallet, die Geschwindigkeit, Einfachheit, Skalierbarkeit auf Unternehmensebene und ein hohes Maß an Sicherheit bietet. Es wird BIP32, Multisignatur-Transaktionen, Offline-Speicherung, Synchronisierung mit mehreren Geräten sowie verschlüsselte elektronische und physische Backups geboten."
     walletbitcoinwallet: "Bitcoin Wallet ist einfach zu verwenden und zuverlässig, gleichzeitig aber sicher und schnell. Der Fokus ist auf Dezentralisierung und Zero Trust gerichtet: Kein zentraler Dienst wird für Bitcoin-bezogene Aktionen benötigt. Die App ist eine gute Wahl für technisch nicht versierte Personen."
     walletairbitzwallet: "Airbitz ist eine mobile Bitcoin-Wallet, die Privatsphäre, Sicherheit und Dezentralisierung für jeden zugänglich und nutzbar macht. Airbitz-Wallets sind immer automatisch verschlüsselt, gesichert und funktionieren sogar dann, wenn der Airbitz-Server nicht mehr erreichbar ist."
+    walletedgewallet: "Edge ist eine Segwit-kompatible, mobile Bitcoin-Wallet, die Privatsphäre, Sicherheit und Dezentralisierung für jeden zugänglich und nutzbar macht. Edge-Wallets sind immer automatisch verschlüsselt, gesichert und funktionieren auch dann noch, wenn die Edge-Server nicht erreichbar sind."
     walletbrd: "BRD ist eine der simpelsten und sichersten Wallets für neue Bitcoin-Nutzer. BRD verbindet sich direkt mit dem Bitcoin-Netzwerk und verwendet die in Ihrem Endgerät integrierte Hardware-Verschlüsselung um Ihr Geld zu schützen."
     walletmyceliumwallet: "Die Mycelium Bitcoin Wallet für Android ist auf Sicherheit, Geschwindigkeit und Benutzerfreundlichkeit ausgerichtet. Sie hat besondere Features zur Verwaltung der privaten Schlüssel und dem Cold Storage und ist kompatibel mit Trezor und anderen Hardware-Wallets."
     walletcoinspace: "Coin.Space HD Wallet ist eine kostenlose online Bitcoin-Wallet, welche verwendet werden kann, um gebührenfrei weltweit Zahlungen zu tätigen. Sie macht das Bezahlen mit Bitcoin überall per Smartphone oder PC einfach und sicher."
@@ -194,6 +200,7 @@ de:
     walletdigitalbitbox: "Digital Bitbox ist eine minimalistische Hardware-Wallet aus der Schweiz mit Fokus auf Sicherheit und Privatsphäre. Features beinhalten vereinfachte und vollständige Online-Backups, glaubhafte Abstreitbarkeit, Multisignatur-Unterstützung, eine native Desktop-App sowie eine mobile App zur Verifizierung und 2-Faktor-Authentifizierung."
     walletbither: "Bither ist eine einfache und sichere Wallet, die auf vielen Plattformen funktioniert. Mit speziell konzipierten Cold/Hot-Modi können Nutzer sowohl Sicherheit als auch Einfachheit erreichen. Bithers XRANDOM verwendet verschiedene Entrophiequellen, um echte Zufallszahlen für Nutzer zu generieren. Zusätzlich bietet HDM Nutzern die Vorteile von HD und gleichzeitig die Sicherheit von Multisignaturen."
     walletgreenbits: "GreenBits ist eine schnelle und einfach zu benutzende Wallet. Genießen Sie erhöhte Sicherheit dank eines auf minimalem/null Vertrauen basierenden Ansatzes, optionaler Hardware-Wallet-Unterstützung, auf Multisignatur basierende 2-Faktor-Authentifizierung sowie Ausgabenobergrenzen."
+    walletbtccom: "Sicher und einfach zu verwenden, bietet die BTC.com Bitcoin-Wallet Ihnen, dem Nutzer, die volle Kontrolle über Ihre Bitcoins. Features beinhalten HD- und Multisignatur-Technologie, Multi-Plattform-Unterstützung für verschiedene Sprachen und Währungen, QR Codes und mehr."
     walletsimplebitcoinwallet: "Einfache, sichere und zuverlässige Bitcoin-Wallet."
     walletarcbit: "ArcBit ist darauf ausgelegt, einfach und leicht bedienbar zu sein, während Nutzer weiterhin die volle Kontrolle über ihr Geld behalten. Es bietet eine optionale Cold Storage-Wallet mit der Möglichkeit, zur erhöhten Sicherheit Zahlungen offline zu bestätigen."
     walletdownload: "Installieren"
@@ -789,6 +796,41 @@ de:
     documentaries: "Dokumentationen"
     learn: "Lernquellen"
     vouchers: "Gutscheine"
+  scams:
+    title: "Scams vermeiden - Bitcoin"
+    pagetitle: "Scams vermeiden"
+    summary: "Machen Sie sich mit einigen der gängigen Bitcoin-Scams vertraut, um sich und Ihre Finanzen zu schützen."
+    table: "Arten von Scams"
+    blackmail: "Erpressung"
+    blackmailtxt: "Vorsicht vor E-Mails, bei denen Fremde versuchen, Bitcoins von ihnen zu erpressen. Bei dieser Masche erhalten Sie üblicherweise eine E-Mail, in der der Absender behauptet, Ihren Computer gehackt zu haben und per RDP (Remote Desktop-Protokoll) fernzusteuern. Der Absender behauptet außerdem, einen Keylogger installiert zu haben und mit ihrer Webcam Dinge aufgenommen zu haben, die andere möglicherweise nicht sehen sollten. Der Absender bietet zwei Möglichkeiten an: entweder Sie bezahlen die Bitcoins, oder das Material wird an Ihre E-Mail-Kontakte und in den sozialen Netzwerken verbreitet. Scammer verwenden gestohlene E-Mail-Listen und anderweitig beschaffte Nutzer-Informationen, um diese Masche bei tausenden Menschen anzuwenden."
+    fake-exchanges: "Fake-Börsen"
+    fake-exchangestxt: "Mit der steigenden Beliebtheit von Bitcoin ist auch die Zahl der Menschen gestiegen, die welche kaufen möchten. Leider haben einige ruchlose Gestalten das ausgenutzt, um Fake-Börsen zu betreiben. Diese Fake-Börsen locken Nutzer mit vermeintlich attraktiven Marktpreise an und lassen den Nutzer glauben, dass er schnell und einfach an günstige Bitcoins kommt. Achten Sie beim Kauf und Verkauf von Bitcoins darauf, eine <a href=\"/en/exchanges\">namhafte Börse</a> zu nutzen."
+    free-giveaways: "Giveaways (Geschenke)"
+    free-giveawaystxt: "Durch die virale Natur der Informationsverbreitung im Internet versuchen Scammer gerne die Leute auszunutzen, indem sie angeblich mit Bitcoins oder anderen Digitalwährungen belohnt werden, wenn sie einen kleinen Betrag für eine Registrierung bezahlen, oder persönliche Informationen preisgeben. Wenn Sie so etwas auf einer Website oder in einem sozialen Netzwerk sehen, sollten Sie das sofort als Betrugsversuch melden, damit andere diesem nicht zum Opfer fallen."
+    impersonation: "Identitätsdiebstahl"
+    impersonationtxt: "Leider ist es für Betrüger sehr einfach, Accounts in sozialen Medien einzurichten und Identitäten zu stehlen. Häufig liegen sie auf der Lauer, bis die Person, deren Identität gestohlen werden soll, Inhalte veröffentlicht. Die Betrüger reagieren dann mit einer Follow-Up-Nachricht oder einem Aktionsaufruf - etwa einem vermeintlichen Giveaway - und verwenden dabei einen Account, der dem des ursprünglichen Verfassers sehr ähnlich ist. Es sieht dann so aus, als käme der Text vom ursprünglichen Verfasser. Alternativ können die Betrüger auch versuchen, Nutzer über diese Fake-Accounts mit privaten oder direkten Nachrichten zu irgendeiner Aktion zu bewegen, die einen Betrug oder eine Kompromittierung ermöglicht. Lassen Sie sich niemals auf vermeintliche Geschenke ein. Und wenn Sie seltsame Nachrichten von jemandem aus Ihrem Netzwerk erhalten, sollten Sie die Authentizität über verschiedene Kommunikationsmedien doppelt und dreifach prüfen."
+    malware: "Malware"
+    malwaretxt: "Hacker sind sehr kreativ, wenn es darum geht, etwas zu stehlen. Wenn Sie Bitcoin senden, sollten Sie die Empfängeradresse immer doppelt und dreifach prüfen. Einige Malware-Programme verändern (sobald sie einmal installiert sind) Bitcoin-Adressen, wenn diese aus der Zwischenablage kopiert werden. Die Bitcoins werden dann unwissentlich an die Adresse des Hackers geschickt. Da eine Bitcoin-Transaktion nach der Bestätigung durch das Netzwerk kaum noch rückgängig gemacht werden kann, ist es zu spät, wenn Sie es bemerken. Sie sollten übervorsichtig sein, wenn es darum geht, welche Programme Administrator-Rechte auf Ihrem Geräten haben. Ein aktueller, namhafter Virenscanner ist ebenfalls hilfreich, wenn auch nicht absolut sicher."
+    meet-in-person: "Persönliche Treffen"
+    meet-in-persontxt: "Wenn Sie Bitcoin lokal kaufen oder verkaufen wollen, könnte die Gegenpartei ein persönliches Treffen vorschlagen, um den Austausch abzuwickeln. Wenn es sich nicht um eine bereits bekannte, vertrauenswürdige Person handelt, ist das eine sehr riskanter Vorschlag, bei dem Sie ausgeraubt oder verletzt werden könnten. Es ist auch bekannt, dass Betrüger Falschgeld gegen Bitcoin tauschen. Statt eines persönlichen Treffens sollten Sie die Nutzung einer Peer-to-Peer-Plattform in Erwägung ziehen, um den Wechsel treuhänderisch abzuwickeln."
+    money-transfer-fraud: "Überweisungsbetrug"
+    money-transfer-fraudtxt: "Reagieren Sie nicht auf E-Mails oder eingehende Kommunikation von Fremden die behaupten, Hilfe bei einer Geldüberweisung zu benötigen und Ihnen als Belohnung für Ihre Dienste einen Teil des Geldes versprechen."
+    phishing-emails: "Phishing E-Mails"
+    phishing-emailstxt: "Vorsicht bei E-Mails von Ihnen genutzter Dienste, die Sie auffordern, Ihr Passwort zurückzusetzen, oder sich durch ihre Account-Daten zu klicken. Es kann sehr schwierig sein, zu erkennen, ob es sich um eine Fake-E-Mail handelt, die ihren Account kompromittieren will, oder um eine legitime E-Mail, die von dem von Ihnen genutzten Produkt oder Dienst versendet wird. Im Zweifel sollten Sie die Authentizität prüfen, indem Sie die E-Mail über die E-Mail-Adresse auf der Website an das Unternehmen weiterleiten, das Unternehmen anrufen, oder es über die offiziellen sozialen Medien kontaktieren."
+    phishing-websites: "Phishing-Websites"
+    phishing-websitestxt: "Phishing-Websites gehen häufig Hand in Hand mit Phishing-E-Mails. Phishing-E-Mails können auf eine gefälschte Website verlinken, um ihre Anmeldedaten zu stehlen oder Sie zur Installation von Malware zu bewegen. Installieren Sie keine Software und melden Sie sich auf keiner Website an, solange Sie nicht 100% sicher sind, das es sich um die richtige Website handelt. Phishing-Websites können auch als gesponserte Ergebnisse in Suchmaschinen oder in App-Stores auftauchen. Achten Sie darauf, keine Fake-App herunterzuladen und keinen gesponserten Link zu einer Fake-Website anzuklicken."
+    ponzi-schemes: "Ponzi-Schema"
+    ponzi-schemestxt: "Meiden Sie Angebote, bei denen Ihnen ein oder mehrere Personen für eine Vorauszahlung eine garantierte Rendite versprechen. Diese Masche wird Ponzi-Schema genannt. Dabei werden die Einlagen der späteren Investoren genutzt, um die frühen Investoren zu bezahlen. Üblicherweise endet das damit, dass sehr viele Leute sehr viel Geld verlieren. "
+    pyramid-schemes: "Pyramiden-Schema"
+    pyramid-schemestxt: "Ein Pyramidensystem verspricht Renditen basierend auf der Anzahl von Leuten, die Sie zur Teilnahme bewegen konnten. Auf diese Weise kann das System viral und schnell wachsen, führt aber kaum zu nennenswerten Renditen für die Teilnehmer und/oder die Personen, die Sie zur Teilnahme überredet haben. Laden Sie niemals ihr persönliches Netzwerk zur Teilnahme an einem solchen System ein, nur weil Sie sich eine Rendite von einem Produkt oder Dienst versprechen, und investieren Sie selbst kein Kapital, um diesen Prozess noch zu beschleunigen."
+    prize-giveaways: "Prize Giveaways (Preisausschreiben)"
+    prize-giveawaystxt: "Ähnlich wie bei normalen Giveaways sollen Prize Giveaways die Leute zu einer Handlung bewegen, oder dazu, Informationen über sich selbst preiszugeben. Zum Beispiel sollen Sie Name, Adresse, E-Mail und Telefonnummer angeben, um an Prize Giveaways teilnehmen zu können. Ein Hacker kann diese Informationen dann für einen Identitätsdiebstahl nutzen."
+    pump-and-dumps: "Pump and Dump"
+    pump-and-dumpstxt: "Misstrauen Sie Leuten, die Sie oder andere zu einer Investition bewegen wollen und behaupten zu wissen, wie sich der Bitcoin-Preis entwickeln wird. Bei einem Pump-and-Dump-Schema versucht jemand, den Preis künstlich in die Höhe zu treiben (Pump), um seine Bestände mit Profit verkaufen zu können (Dump)."
+    ransomware: "Ransomware"
+    ransomwaretxt: "Diese Art Malware blockiert teilweise oder vollständig den Zugriff auf ein Gerät, bis ein Lösegeld (engl. ransom) in Bitcoin bezahlt wird. Statt dieses Lösegeld zu zahlen, sollten Sie sich von einem vertrauenswürdigen Profi bei der Entfernung der Software helfen lassen. Achten Sie darauf, welche Programme Sie auf ihren Geräten installieren, inbesondere bei solchen, die Administrator-Rechte verlangen. Achten Sie auch darauf, das Sie keine Fake-Anwendung herunterladen, die sich als normale, von ihnen bereits genutzte, Anwendung ausgibt."
+    scam-coins: "Scam-Coins"
+    scam-coinstxt: "Seien Sie vorsichtig, wenn Sie in alternative Coins (Altcoins) investieren wollen. Unter den Altcoins gibt es Scam-Coins, die Investoren über private Verkäufe und Preisnachlässe anlocken wollen. Scam-Coins arbeiten häufig mit schicken Websites und/oder aufgeblasenen Communities, die bei den Leuten die Angst schüren sollen, etwas zu verpassen (engl. fear of missing out, FOMO). Das hilft den frühen Haltern, den Preis aufzupumpen und ihre Positionen mit einem Gewinn zu verkaufen. Scam-Coins ohne große Communities könnten Airdrops anbieten, d.h. kostenlose Coins (oder Tokens) anbieten, wenn man der Community beitritt. Auf diese Weise können Scam-Coins ihr Vorhaben mit aufgeblasenen Daten präsentieren und bei bei der Entscheidung der Investoren wieder die Angst schüren, etwas zu verpassen. Scam-Coins können auch das Wort Bitcoin nutzen, um den falschen Eindruck zu erwecken, dass es eine legitime Beziehung zu Bitcoin gibt."
   secure-your-wallet:
     title: "Sichern Sie Ihre Wallet - Bitcoin"
     pagetitle: "Sichern Sie Ihre Wallet"
@@ -945,6 +987,7 @@ de:
     menu-press: "Presse"
     menu-privacy: "Privatsphäre"
     menu-resources: Ressourcen
+    menu-scams: "Scams vermeiden"
     menu-support-bitcoin: "Bitcoin unterstützen"
     menu-buy: "Bitcoin kaufen"
     menu-full-node: "Einen Full Node betreiben"
@@ -996,6 +1039,7 @@ de:
     privacy: privatsphaere
     protect-your-privacy: schuetzen-sie-ihre-privatsphaere
     resources: ressourcen
+    scams: scams
     secure-your-wallet: sichern-sie-ihre-wallet
     support-bitcoin: bitcoin-unterstuetzen
     vocabulary: glossar
@@ -1005,6 +1049,22 @@ de:
   anchor:
     community:
       non-profit: non-profit
+    scams:
+      blackmail: erpressung
+      fake-exchanges: fake-boersen
+      free-giveaways: geschenke
+      impersonation: identitaetsdiebstahl
+      malware: malware
+      meet-in-person: persoenliche-treffen
+      money-transfer-fraud: ueberweisungsbetrug
+      phishing-emails: phishing-e-mails
+      phishing-websites: phishing-websites
+      ponzi-schemes: ponzi-schema
+      pyramid-schemes: pyramiden-schema
+      prize-giveaways: preisausschreiben
+      pump-and-dumps: pump-and-dump
+      ransomware: ransomware
+      scam-coins: scam-coins
     vocabulary:
       address: adresse
       bit: bit

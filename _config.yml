@@ -108,7 +108,6 @@ redirects:
   /tr/yeni-baslamak: /tr/baslarken
   /en/bitcoin-for-press: /en/press
   /de/ueber: /de/faq
-  /de/bitcoin-paper: /de/bitcoin-abhandlung
   /de/developer-examples: /de/entwickler-beispiele
   /de/developer-glossary: /de/entwickler-glossar
   /de/developer-guide: /de/entwickler-guide
@@ -123,9 +122,26 @@ redirects:
   /id/developer-glossary: /id/glosarium-pengembang
   /id/developer-guide: /id/panduan-pengembang
   /id/developer-reference: /id/referensi-pengembang
+  /it/bitcoin-paper: /it/documento-bitcoin
+  /it/developer-documentation: /it/documentazione-sviluppatori
+  /it/developer-examples: /it/esempi-sviluppatori
+  /it/developer-glossary: /it/glossario-sviluppatori
+  /it/developer-guide: /it/guida-sviluppatori
+  /it/developer-reference: /it/riferimento-per-sviluppatori
   /it/a-proposito: /it/faq
+  /nl/developer-documentation: /nl/documentatie-voor-ontwikkelaars
+  /nl/developer-reference: /nl/ontwikkelaars-referentie
+  /nl/developer-guide: /nl/ontwikkelaars-handleiding
+  /nl/developer-glossary: /nl/woordenlijst-ontwikkelaar
+  /nl/developer-examples: /nl/ontwikkelvoorbeelden
+  /nl/bitcoin-paper: /nl/bitcoin-document
   /nl/over-bitcoin: /nl/faq
   /pl/o: /pl/faq
+  /pt_BR/developer-documentation: /pt_BR/documentacao-do-desenvolvedor
+  /pt_BR/developer-reference: /pt_BR/referencias-para-desenvolvedores
+  /pt_BR/developer-guide: /pt_BR/guia-do-desenvolvedor
+  /pt_BR/developer-glossary: /pt_BR/glossario-do-desenvolvedor
+  /pt_BR/developer-examples: /pt_BR/exemplos-para-desenvolvedores
   /tr/hakkinda: /tr/sss
   /zh_CN/about: /zh_CN/faq
   /zh_TW/about: /zh_TW/faq
@@ -157,7 +173,6 @@ redirects:
   /ko/buy: /en/buy
   /nl/buy: /en/buy
   /pl/buy: /en/buy
-  /pt_BR/buy: /en/buy
   /ro/buy: /en/buy
   /ru/buy: /en/buy
   /sl/buy: /en/buy
@@ -254,7 +269,7 @@ kramdown:
     coderay_css: style
 
 text:
-  ## Values last updated 2017-05-21
+  ## Values last updated 2018-10-16
   ## All variable names must indicate unit type for easy translation of adjacent text,
   ##   such as: subsidy_in_decimal_bitcoins or
   ##   bitcoin_org_docs_maintainer_email_link
@@ -262,9 +277,9 @@ text:
   ##   value so we don't need to update too often
   subsidy_in_decimal_bitcoins: 12.5
   ## cd ~ ; du -sh .bitcoin/ --exclude=testnet3 --exclude=regtest
-  bitcoin_datadir_gb: 145
+  bitcoin_datadir_gb: 200
   ## Slightly smaller than the total datadir size
-  chain_gb: 140
+  chain_gb: 195
   ## The main difference between the datadir size and the chain size, if
   ## you don't have any extra indices
   bitcoin_datadir_gb_pruned: 5

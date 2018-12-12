@@ -121,8 +121,7 @@ OP_0            A pubkey
 1. A sig compared to C pubkey (no match)
 2. A sig compared to B pubkey (no match)
 
-Failure, aborted: two signature matches required but none found so
-                  far, and there's only one pubkey remaining
+Failure, aborted: two signature matches required but none found so far, and there's only one pubkey remaining
 {% endhighlight %}
 
 {% endautocrossref %}
@@ -220,7 +219,7 @@ A raw transaction has the following top-level format:
 
 | Bytes    | Name         | Data Type           | Description
 |----------|--------------|---------------------|-------------
-| 4        | version      | uint32_t            | Transaction version number; currently version 1.  Programs creating transactions using newer consensus rules may use higher version numbers.
+| 4        | version      | uint32_t            | Transaction version number; currently version 1 or 2.  Programs creating transactions using newer consensus rules may use higher version numbers. Version 2 means that [BIP 68](https://github.com/bitcoin/bips/blob/master/bip-0068.mediawiki#specification) applies.
 | *Varies* | tx_in count  | compactSize uint    | Number of inputs in this transaction.
 | *Varies* | tx_in        | txIn                | Transaction inputs.  See description of txIn below.
 | *Varies* | tx_out count | compactSize uint    | Number of outputs in this transaction.

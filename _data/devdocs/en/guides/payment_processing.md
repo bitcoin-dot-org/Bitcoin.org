@@ -256,6 +256,13 @@ displayed on high-resolution screens.
 
 {% autocrossref %}
 
+![Warning icon](/img/icons/icon_warning.svg?{{site.time | date: '%s'}})
+ **Warning:** The payment protocol is considered to be deprecated and will be removed in a later version of Bitcoin Core. 
+The protocol has multiple security design flaws and implementation flaws in some wallets.
+Users will begin receiving deprecation warnings in Bitcoin Core version 0.18 when using BIP70 URI's.
+Merchants should transition away from BIP70 to more secure options such as BIP21.
+Merchants should never require BIP70 payments and should provide BIP21 fallbacks.
+
 Bitcoin Core 0.9 supports the new [payment protocol][/en/glossary/payment-protocol]{:#term-payment-protocol}{:.term}. The payment protocol
 adds many important features to payment requests:
 
