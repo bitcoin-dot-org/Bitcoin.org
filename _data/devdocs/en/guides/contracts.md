@@ -282,7 +282,7 @@ because they reduced overhead by combining multiple transactions, saving
 bytes, they may be able to pay a smaller aggregate transaction fee,
 saving each one of them a tiny amount of satoshis.
 
-**Current Working Implementations** As of today, in 1018,
+**Current Working Implementations:** As of today, in 1018,
 [JoinMarket](https://github.com/JoinMarket-Org/) and
 [Wasabi Wallet](http://wasabiwallet.io) are the operational CoinJoin implementations
 for Bitcoin.
@@ -298,7 +298,7 @@ Wasabi Wallet style CoinJoins are called Chaumian CoinJoins. It employs
 a CoinJoin coordinator, where various peers can register. When the pre-defined
 number of participants registered, a CoinJoin-round kicks in. In this scheme Chaumian
 Blind Signatures are utilized to prevent the coordinator and the peers from learning
-which outputs correspond to which inputs. An expample Chaumian CoinJoin is the
+which outputs correspond to which inputs. An example for Chaumian CoinJoin is the
 following transaction:
 [8fee07b90f26e85e22e87da13e1618cd9eeaf98f3f3774273c9307cd40ff98e8](https://www.smartbit.com.au/tx/8fee07b90f26e85e22e87da13e1618cd9eeaf98f3f3774273c9307cd40ff98e8)
 
