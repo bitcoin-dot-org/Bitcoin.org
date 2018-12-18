@@ -216,7 +216,7 @@ can each easily track those satoshis to learn what Bitcoin
 addresses she pays, how much she pays them, and possibly how many
 satoshis she has left.
 
-Alice is not a criminal, she just wants plausible deniability about
+Alice isn't a criminal, she just wants plausible deniability about
 where she has spent her satoshis and how many she has left, so she
 starts up the Tor anonymity network on her computer and logs into an
 IRC chatroom as "AnonGirl."
@@ -246,13 +246,13 @@ to Neminem, who also signs it the same way. Neminem then broadcasts
 the transaction to the Bitcoin peer-to-peer network, mixing all of the millibitcoins in
 a single transaction.
 
-As you can see in the illustration, there is no way for anyone besides
+As you can see in the illustration, there's no way for anyone besides
 AnonGirl, Nemo, and Neminem to confidently determine who received
 which output, so they can each spend their output with plausible
 deniability.
 
 Now when Bob or Charlie try to track Alice's transactions through the
-block chain, they will also see transactions made by Nemo and
+block chain, they'll also see transactions made by Nemo and
 Neminem. If Alice does a few more CoinJoins, Bob and Charlie might
 have to guess which transactions made by dozens or hundreds of people
 were actually made by Alice.
@@ -276,8 +276,8 @@ to the separate merchant addresses so nobody will be able to figure
 out solely from block chain history which one of them bought what from
 the merchants.
 
-Since they would have had to pay a transaction fee to make their purchases
-anyway, AnonGirl and her co-spenders do not pay anything extra---but
+Since they would've had to pay a transaction fee to make their purchases
+anyway, AnonGirl and her co-spenders don't pay anything extra---but
 because they reduced overhead by combining multiple transactions, saving
 bytes, they may be able to pay a smaller aggregate transaction fee,
 saving each one of them a tiny amount of satoshis.
