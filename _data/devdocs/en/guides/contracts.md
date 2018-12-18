@@ -221,7 +221,7 @@ where she has spent her satoshis and how many she has left, so she
 starts up the Tor anonymity service on her computer and logs into an
 IRC chatroom as "AnonGirl."
 
-"Nemo" and "Neminem" are Also in the chatroom. They collectively
+Also in the chatroom are "Nemo" and "Neminem." They collectively
 agree to transfer satoshis between each other so no one besides them
 can reliably determine who controls which satoshis. But they're faced
 with a dilemma: who transfers their satoshis to one of the other two
