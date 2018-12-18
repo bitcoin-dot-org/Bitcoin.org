@@ -282,7 +282,7 @@ because they reduced overhead by combining multiple transactions, saving
 bytes, they may be able to pay a smaller aggregate transaction fee,
 saving each one of them a tiny amount of satoshis.
 
-**Current Working Implementations:** As of today, in 1018,
+**Current Working Implementations:** As of today, in 2018,
 [JoinMarket](https://github.com/JoinMarket-Org/) and
 [Wasabi Wallet](http://wasabiwallet.io) are the operational CoinJoin implementations
 for Bitcoin.
