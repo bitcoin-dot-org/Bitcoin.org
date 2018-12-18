@@ -218,7 +218,7 @@ satoshis she has left.
 
 Alice isn't a criminal, she just wants plausible deniability about
 where she has spent her satoshis and how many she has left, so she
-starts up the Tor anonymity network on her computer and logs into an
+starts up the Tor anonymity service on her computer and logs into an
 IRC chatroom as "AnonGirl."
 
 "Nemo" and "Neminem" are Also in the chatroom. They collectively
