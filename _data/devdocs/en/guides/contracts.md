@@ -211,7 +211,7 @@ all under an Apache license.
 {% autocrossref %}
 
 Alice is concerned about her privacy. She knows every transaction gets
-added to the public Blockchain, so when Bob and Charlie pay her, they
+added to the public block chain, so when Bob and Charlie pay her, they
 can each easily track those satoshis to learn what Bitcoin
 addresses she pays, how much she pays them, and possibly how many
 satoshis she has left.
@@ -252,12 +252,12 @@ which output, so they can each spend their output with plausible
 deniability.
 
 Now when Bob or Charlie try to track Alice's transactions through the
-Blockchain, they will also see transactions made by Nemo and
+block chain, they will also see transactions made by Nemo and
 Neminem. If Alice does a few more CoinJoins, Bob and Charlie might
 have to guess which transactions made by dozens or hundreds of people
 were actually made by Alice.
 
-The complete history of Alice's satoshis is still in the Blockchain,
+The complete history of Alice's satoshis is still in the block chain,
 so a determined investigator could talk to the people AnonGirl
 CoinJoined with to find out the ultimate origin of her satoshis and
 possibly reveal AnonGirl as Alice. But against anyone casually browsing
