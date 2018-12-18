@@ -292,7 +292,7 @@ the participants into two sections: market makers and market takers.
 Market makers are publishing their CoinJoin intentions to an IRC
 room and waiting for market takers to take their offers. When a taker comes along,
 it selects a set of makers and creates a shared transaction with them,
-while also paying a small fee. Unlike the above described sheme, this happens automatically.
+while also paying a small fee. Unlike the above described scheme, this happens automatically.
 
 Wasabi Wallet style CoinJoins are called Chaumian CoinJoins. It employs
 a CoinJoin coordinator, where various peers can register. When the pre-defined
