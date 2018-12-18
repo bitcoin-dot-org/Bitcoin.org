@@ -223,7 +223,7 @@ IRC chatroom as "AnonGirl."
 
 "Nemo" and "Neminem" are Also in the chatroom. They collectively
 agree to transfer satoshis between each other so no one besides them
-can reliably determine who controls which satoshis. But they are faced
+can reliably determine who controls which satoshis. But they're faced
 with a dilemma: who transfers their satoshis to one of the other two
 pseudonymous persons first? The CoinJoin-style contract, shown in the
 illustration below, makes this decision easy: they create a single
