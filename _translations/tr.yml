@@ -118,6 +118,7 @@ tr:
     walletgreenaddress: "GreenAddress geliştirilmiş güvenlik ve gizliliğe sahip, kullanıcı dostu çoklu imza cüzdanıdır. Anahtarlarınız hiçbir zaman sunucuda bulundurulmaz, şifrelenmiş olsalar dahi. Güvenlik nedenlerinden dolayı her zaman 2FA ve tarayıcı eklentisi ya da Android uygulaması kullanmalısınız."
     wallettrezor: "TREZOR kullanım kolaylığından ödün vermeden yüksek seviye güvenlik sağlayan bir cüzdan sistemidir. Soğuk depodan farklı olarak TREZOR işlemleri online bir cihaza bağlıykende imzalayabilir. Bu da güvenli olmayan bir bilgisayar kullanırken bile bitcoin harcamalarınızda güvenlik sağlar."
     walletnano: "Ledger Nano, ST23YT66 bankacılık akıllı kart platformu üzerine kurulu bir cüzdandır. Kullanıcının özel anahtarlarını güvende tutar, işlemleri onaylar, güvenli bir ön-ödemeli kart olarak yada çoklu-imza partisi olarak kullanılabilir. Açık-kaynak kodlu olmasa da belirleyici şekilde onaylanabilir olabilir."
+    walletwasabi: "Wasabi gizlilik odaklı bir bitcoin cüzdanı."
     walletdownload: "Yükle"
     walletvisit: "Siteyi ziyaret edin"
     walletsourcecode: "Kaynak kodu"
