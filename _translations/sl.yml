@@ -117,6 +117,7 @@ sl:
     walletbitgo: "BitGo je denarnica z večstranskim podpisovanjem, ki nudi visoko stopnjo varnosti. Vsaka transakcija zahteva dva podpisa, kar ščiti vaša sredstva pred napadi na strežnike in zlonamerno programsko opremo. Uporabnik hrani zasebne ključe, zato BitGo ne more sam dostopati do uporabnikovih novcev. BitGo je dobra izbira za tehnično manj podkovane uporabnike."
     walletgreenaddress: "GreenAddress je uporabniku prijazna večpodpisna denarnica z višjo stopnjo varnosti in zasebnosti. Strežniki ponudnika nikoli ne vidijo vaših zasebnih ključev niti v šifrirani obliki. Za še večjo varnost svetujemo uporabo dvostopenjske overitve ter aplikacije za brskalnik ali Android."
     wallettrezor: "TREZOR je strojna denarnica, ki nudi visoko stopnjo varnosti, ne da bi za to žrtvovala udobje. Za razliko od hladne hrambe lahko TREZOR podpisuje nakazila, kadar je povezan z napravo, ki je povezana v internet. To pomeni, da je pošiljanje bitcoinov varno celo na varnostno ogroženem računalniku."
+    walletwasabi: "Wasabi je osebno orientirana bitcoin denarnica."
     walletdownload: "Namesti"
     walletvisit: "Obiščite spletno stran"
     walletsourcecode: "Izvorna koda"
