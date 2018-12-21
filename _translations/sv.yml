@@ -128,6 +128,7 @@ sv:
     wallettrezor: "TREZOR är en hårdvaruplånbok som är mycket säker utan att kompromissa på bekvämlighet. Till skillnad från kalllagring kan TREZOR signera transaktioner medan den är kopplad till en enhet med internetåtkomst. Det innebär att det är säkert att spendera bitcoins även på en hackad dator."
     wallethw1: "HW.1 är en hårdvaruplånbok byggd ovanpå en ST23YT66 bank-smartcards-platform. Den håller användarens privata nycklar säkra, validerar transaktioner, kan användas som ett säkert förbetalat kort eller ett multisignaturssällskap. Trots att den inte har öppen källkod så kan den valideras deterministiskt."
     walletninki: "Ninki är en multi-signatursplånbok med ett snyggt användargränssnitt som gör det lika enkelt att skicka bitcoin som att skicka email. Du har hela tiden full kontroll över dina bitcoins."
+    walletwasabi: "Wasabi är en integritetsfokuserad plånbok för bitcoin."
     walletdownload: "Installera"
     walletvisit: "Besök hemsidan"
     walletsourcecode: "Källkod"
