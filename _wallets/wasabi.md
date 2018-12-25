@@ -14,7 +14,7 @@ platform:
       text: "walletwasabi"
       link: "https://wasabiwallet.io/"
       source: "https://github.com/zkSNACKs/WalletWasabi/"
-      screenshot: "bitcoincore.png?1528322191"
+      screenshot: "wasabi.png?1528322191"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"
