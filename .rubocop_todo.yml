@@ -6,28 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 1
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyleAlignWith.
-# SupportedStylesAlignWith: either, start_of_block, start_of_line
-Layout/BlockAlignment:
-  Exclude:
-    - '_plugins/autocrossref.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-Layout/ClosingParenthesisIndentation:
-  Exclude:
-    - '_contrib/bco-htmlproof'
-
-# Offense count: 4
-# Cop supports --auto-correct.
-Layout/CommentIndentation:
-  Exclude:
-    - '_plugins/events.rb'
-    - '_plugins/glossary.rb'
-    - '_plugins/sitemap.rb'
-
 # Offense count: 33
 # Cop supports --auto-correct.
 Layout/EmptyLineAfterGuardClause:
