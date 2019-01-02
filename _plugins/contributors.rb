@@ -35,6 +35,7 @@ module Jekyll
         end
         # Stop calling GitHub API when no new results are returned
         break if (ar.length == 0)
+
         # Merge contributors into a single array
         data.push(*ar)
         page += 1
@@ -45,6 +46,7 @@ module Jekyll
         # Skip incomplete / invalid data and set contributor's name
         next if !c.is_a?(Hash)
         next if !c.has_key?('contributions') or !c['contributions'].is_a?(Integer) or c['contributions'] > 1000000
+
         if c.has_key?('name') and c['name'].is_a?(String) and /^[A-Za-z0-9\-]{1,150}$/.match(c['name'])
           name = c['name']
         elsif c.has_key?('login') and c['login'].is_a?(String) and /^[A-Za-z0-9\-]{1,150}$/.match(c['login'])

@@ -23,6 +23,7 @@ module Jekyll
         site['loc'] = {}
         Dir.foreach('_translations') do |file|
           next if file == '.' or file == '..' or file == 'COPYING'
+
           lang=file.split('.')[0]
           site['loc'][lang] = YAML.load_file('_translations/'+file)[lang]
         end
@@ -30,6 +31,7 @@ module Jekyll
       #load collection and context variables
       sorted_collection = collection_to_sort context
       return if sorted_collection.empty?
+
       lang = Liquid::Template.parse('{{page.lang}}').render context
       page = Liquid::Template.parse('{{page.id}}').render context
       #build translated array and associative hash
@@ -37,6 +39,7 @@ module Jekyll
       assoc = {}
       for key in sorted_collection do
         next if !site['loc'][lang].has_key?(page) || !site['loc'][lang][page].has_key?(key) || site['loc'][lang][page][key].nil? || site['loc'][lang][page][key] == ' '
+
         t = site['loc'][lang][page][key]
         translated.push(t)
         assoc[key] = t

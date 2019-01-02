@@ -15,6 +15,7 @@ end
 
 Dir.foreach(path_to_check) do |file|
   next if !/\.js$/.match(file)
+
   res = Jshintrb.report(File.read(path_to_check + '/' + file), :jshintrc)
   print path_to_check + '/' + file + "\n" + res if res.length != 0
 end

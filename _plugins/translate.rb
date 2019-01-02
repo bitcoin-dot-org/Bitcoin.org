@@ -36,6 +36,7 @@ module Jekyll
         site['loc'] = {}
         Dir.foreach('_translations') do |file|
           next if file == '.' or file == '..'
+
           lang=file.split('.')[0]
           site['loc'][lang] = YAML.load_file('_translations/'+file)[lang]
         end
@@ -63,6 +64,7 @@ module Jekyll
       #recursive loop to handle cases where category is like "anchor.vocabulary"
       for key in keys do
         break if !ar.is_a?(Hash) || !ar.has_key?(key) || !ar[key].is_a?(Hash)
+
         ar = ar[key]
       end
       if ar.has_key?(id) && ar[id].is_a?(String)
@@ -74,6 +76,7 @@ module Jekyll
         ar = site['loc'][lang]
         for key in keys do
           break if !ar.is_a?(Hash) || !ar.has_key?(key) || !ar[key].is_a?(Hash)
+
           ar = ar[key]
         end
         if ar.has_key?(id) && ar[id].is_a?(String)
