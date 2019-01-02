@@ -61,6 +61,7 @@ module Jekyll
       enabled = enabled.split(' ') if !enabled.nil?
       Dir.foreach('_translations') do |file|
         next if file == '.' or file == '..' or file == 'COPYING'
+
         lang = file.split('.')[0]
         # Ignore language if it's disabled
         if lang != 'en' and !enabled.nil? and !enabled.include?(lang)

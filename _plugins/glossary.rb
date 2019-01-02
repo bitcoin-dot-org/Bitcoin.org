@@ -122,12 +122,14 @@ module Jekyll
 
       Dir.foreach(main_dir) do |dir|
         next if dir == '.' or dir == '..'
+
         lang=dir
         glossary_dir=main_dir+lang
 
         #Generate each definition page based on templates
         Dir.foreach(glossary_dir) do |file|
           next if file == '.' or file == '..'
+
           src = file
           output_directory = lang + '/glossary/'
           site.pages << GlossaryPage.new(site, site.source, lang, glossary_dir, src, output_directory)

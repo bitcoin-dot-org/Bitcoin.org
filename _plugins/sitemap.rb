@@ -28,11 +28,13 @@ module Jekyll
       enabled = enabled.split(' ') if !enabled.nil?
       Dir.foreach('_translations') do |file|
         next if file == '.' or file == '..' or file == 'COPYING'
+
         lang=file.split('.')[0]
         #Ignore lang if disabled
         if lang != 'en' and !enabled.nil? and !enabled.include?(lang)
           next
         end
+
         locs[lang] = YAML.load_file('_translations/'+file)[lang]
       end
       #Create destination directory if does not exists
@@ -49,10 +51,12 @@ module Jekyll
           locs.each do |lang,value|
             #Don't add a page if their url is not translated
             next if locs[lang]['url'][id].nil? or locs[lang]['url'][id] == ''
+
             sitemap.puts '<url>'
             sitemap.puts '  <loc>https://bitcoin.org/'+lang+'/'+CGI::escape(locs[lang]['url'][id])+'</loc>'
             locs.each do |altlang,value|
               next if locs[altlang]['url'][id].nil? or locs[altlang]['url'][id] == '' or altlang == lang
+
               sitemap.puts '  <xhtml:link'
               sitemap.puts '    rel="alternate"'
               sitemap.puts '    hreflang="'+altlang+'"'
@@ -64,9 +68,11 @@ module Jekyll
         #Add static non-translated pages
         Dir.glob('en/**/*.{md,html}').concat(Dir.glob('*.{md,html}')).each do |file|
           next if file == 'index.html' or file == '404.html' or file == 'README.md'
+
           #Ignore google webmaster tools
           data = File.read(file)
           next if !data.index('google-site-verification:').nil?
+
           sitemap.puts '<url>'
           sitemap.puts '  <loc>https://bitcoin.org/'+file.gsub('.html','').gsub('.md','')+'</loc>'
           sitemap.puts '</url>'
@@ -74,6 +80,7 @@ module Jekyll
         #Add alerts pages
         Dir.foreach('_alerts') do |file|
           next if file == '.' or file == '..'
+
           sitemap.puts '<url>'
           sitemap.puts '  <loc>https://bitcoin.org/en/alert/'+file.gsub('.html','')+'</loc>'
           sitemap.puts '</url>'
@@ -81,8 +88,10 @@ module Jekyll
         #Add releases pages
         Dir.foreach('_releases') do |file|
           next if file == '.' or file == '..'
+
           file = file.split('-')
           next if file.length < 4
+
           file.shift()
           file.shift()
           file.shift()
