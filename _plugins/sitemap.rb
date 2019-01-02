@@ -61,7 +61,7 @@ module Jekyll
             sitemap.puts '</url>'
           end
         end
-	#Add static non-translated pages
+        #Add static non-translated pages
         Dir.glob('en/**/*.{md,html}').concat(Dir.glob('*.{md,html}')).each do |file|
           next if file == 'index.html' or file == '404.html' or file == 'README.md'
           #Ignore google webmaster tools
