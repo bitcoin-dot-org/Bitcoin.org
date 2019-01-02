@@ -105,7 +105,7 @@ require 'yaml'
               else
                   "[#{s}][#{term[1]}]{:.auto-link}"
               end
-              }
+          }
       }
       output.gsub!(/<!--.*?-->/m,'')  ## Remove all HTML comments
 

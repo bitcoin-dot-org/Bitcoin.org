@@ -62,4 +62,4 @@ HTML::Proofer.new(
         ## and me (usually 2 processors)
         :parallel => { :in_processes => 2 },
     }
-).run
+  ).run

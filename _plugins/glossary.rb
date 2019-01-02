@@ -149,7 +149,7 @@ module Jekyll
                             "lang" => lang
                         })
                     }
-                    # puts list
+                  # puts list
                 }
             else
                 items.each {| el |
@@ -162,8 +162,8 @@ module Jekyll
                     })
                 }
             end
-            # devsearches_json.unshift({ term => output_full_path })
-            # puts items
+          # devsearches_json.unshift({ term => output_full_path })
+          # puts items
         }
 
         site.config["devsearches_json"] = devsearches_json.to_json
