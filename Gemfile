@@ -19,6 +19,7 @@ group :development do
   gem 'less', '2.4.0'
   gem 'kramdown'
   gem 'RedCloth'
+  gem 'rubocop'
   gem 'therubyracer' # required by less
   gem 'jshintrb', '~>0.3.0'
   gem 'safe_yaml'
