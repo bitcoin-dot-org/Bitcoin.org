@@ -35,6 +35,7 @@ def fetchlinks()
 		content.scan(/ href *= *"(.*?)"/).each { |link|
 			link = link[0].to_s.gsub(/^(https?:\/\/(www\.)?bitcoin\.org)?\//,'/')
 			next if (link.match(/^#|^http:\/\/www.meetup.com\//))
+
 			if(!link.match(/^https?:\/\/|^\/[^\/]|^mailto:/))
 				link = File.dirname(file.sub(WORKDIR + '/_site','')) + '/' + File.basename(link)
 			end
@@ -78,10 +79,12 @@ Dir.mktmpdir{|workdir|
 	diffrmlinks = []
 	newlinks.each { |link, etag|
 		next if oldlinks.has_key?(link)
+
 		diffaddlinks.push(link)
 	}
 	oldlinks.each { |link, etag|
 		next if newlinks.has_key?(link)
+
 		diffrmlinks.push(link)
 	}
 

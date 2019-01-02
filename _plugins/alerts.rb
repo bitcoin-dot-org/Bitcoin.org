@@ -67,6 +67,7 @@ module Jekyll
       end
       Dir.foreach('_alerts') do |file|
         next if file == '.' or file == '..'
+
         lang = 'en'
         src = file
         dst = file
@@ -74,8 +75,10 @@ module Jekyll
         dstdir = lang + '/alert'
         date = dst.split('-')
         next if date.length < 4
+
         date = date[0] + '-' + date[1] + '-' + date[2]
         next if !/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.match(date)
+
         site.pages << AlertPage.new(site, site.source, lang, '_alerts', src, dstdir, dst, date)
       end
       #TODO alerts are only generated for english language,

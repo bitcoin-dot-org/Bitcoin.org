@@ -6,24 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 33
-# Cop supports --auto-correct.
-Layout/EmptyLineAfterGuardClause:
-  Exclude:
-    - '_contrib/comparelinks.rb'
-    - '_contrib/jshint'
-    - '_contrib/updatetx.rb'
-    - '_plugins/alerts.rb'
-    - '_plugins/alphab_for.rb'
-    - '_plugins/contributors.rb'
-    - '_plugins/events.rb'
-    - '_plugins/glossary.rb'
-    - '_plugins/releases.rb'
-    - '_plugins/sitemap.rb'
-    - '_plugins/templates.rb'
-    - '_plugins/translate.rb'
-    - '_plugins/wallets.rb'
-
 # Offense count: 7
 # Cop supports --auto-correct.
 Layout/EmptyLines:
@@ -846,3 +828,5 @@ Style/ZeroLengthPredicate:
 # URISchemes: http, https
 Metrics/LineLength:
   Max: 237
+
+# Add Rubocop to Travis

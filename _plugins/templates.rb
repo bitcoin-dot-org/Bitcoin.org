@@ -29,6 +29,7 @@ module Jekyll
       enabled = enabled.split(' ') if !enabled.nil?
       Dir.foreach('_translations') do |file|
         next if file == '.' or file == '..' or file == 'COPYING'
+
         lang = file.split('.')[0]
         #Ignore lang if disabled
         if lang != 'en' and !enabled.nil? and !enabled.include?(lang)
@@ -44,9 +45,11 @@ module Jekyll
       locs.each do |lang,value|
         Dir.foreach('_templates') do |file|
           next if file == '.' or file == '..'
+
           id = file.split('.')[0]
           dst = locs[lang]['url'][id]
           next if dst.nil? or dst == ''
+
           src = file
           ## For files ending in a slash, such as path/to/dir/, give them
           ## the index.html file name
