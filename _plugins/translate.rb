@@ -21,9 +21,7 @@ require 'yaml'
 require 'cgi'
 
 module Jekyll
-
   class TranslateTag < Liquid::Tag
-
     def initialize(tag_name, id, tokens)
       super
       @id = id
@@ -110,7 +108,6 @@ module Jekyll
       text
     end
   end
-
 end
 
 Liquid::Template.register_tag('translate', Jekyll::TranslateTag)

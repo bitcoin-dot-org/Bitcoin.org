@@ -21,11 +21,9 @@
 ## <!--[-->`src/qt/paymentrequest.proto`<!--]-->
 
 module Jekyll
-
 require 'yaml'
 
   class AutoCrossRefBlock < Liquid::Block
-
     def initialize(tag_name, text, tokens)
       super
     end
@@ -63,13 +61,11 @@ require 'yaml'
         site['crossref_loaded'] = true
       end
 
-
       ## Sort terms by reverse length, so longest matches get linked
       ## first (e.g. "block chain" before "block"). Otherwise short
       ## terms would get linked first and there'd be nothing for long
       ## terms to link to.
       site['crossref'].sort_by { |k, v| -k.length }.each { |term|
-
         term[1] = term[0] if term[1].nil? || term[1].empty?
 
         term[0] = Regexp.escape(term[0])
@@ -115,11 +111,9 @@ require 'yaml'
 end
 
 module Jekyll
-
 require 'yaml'
 
   class AutoCrossRefBlockDisabled < Liquid::Block
-
     def initialize(tag_name, text, tokens)
       super
     end
@@ -131,8 +125,6 @@ require 'yaml'
     end
   end
 end
-
-
 
 #Do nothing if plugin is disabled
 if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('autocrossref').nil?

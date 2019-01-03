@@ -10,11 +10,9 @@
 ## {% enditemplate %}
 
 module Jekyll
-
 require 'yaml'
 
   class InlineTemplateBlock < Liquid::Block
-
     def initialize(tag_name, text, tokens)
       super
       @template_name = '_templates/' + text.gsub(' ','') + '.inline'
@@ -32,11 +30,9 @@ require 'yaml'
 end
 
 module Jekyll
-
 require 'yaml'
 
   class InlineTemplateBlockDisabled < Liquid::Block
-
     def initialize(tag_name, text, tokens)
       super
     end
@@ -49,8 +45,6 @@ require 'yaml'
     end
   end
 end
-
-
 
 #Do nothing if plugin is disabled
 ## Note: tested 2015-04-12 and the site actually compiles 5 seconds
