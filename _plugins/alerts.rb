@@ -19,7 +19,6 @@
 require 'yaml'
 
 module Jekyll
-
   class AlertPage < Page
     def initialize(site, base, lang, srcdir, src, dstdir, dst, date)
       @site = site
@@ -86,5 +85,4 @@ module Jekyll
       #need to fallback to english when no translation is available.
     end
   end
-
 end

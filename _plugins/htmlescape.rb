@@ -9,11 +9,9 @@
 # {{ page.title | htmlescape }}
 
 module Entities
-
   def htmlescape(input)
     input.gsub(/['&\"<>]/, { "'" => '&apos;', '&' => '&amp;', '"' => '&quot;', '<' => '&lt;', '>' => '&gt;' })
   end
 
   Liquid::Template.register_filter self
-
 end

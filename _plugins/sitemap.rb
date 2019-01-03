@@ -8,7 +8,6 @@ require 'yaml'
 require 'cgi'
 
 module Jekyll
-
   class SitemapFile < StaticFile
     def write(dest)
       # do nothing
@@ -106,5 +105,4 @@ module Jekyll
       site.static_files << SitemapFile.new(site, site.source, '', 'sitemap.xml')
     end
   end
-
 end

@@ -5,9 +5,7 @@ require 'yaml'
 require 'json'
 
 module Jekyll
-
   class GlossaryPage < Page
-
     def initialize(site, base, lang, srcdir, src, output_directory)
       @site = site
       @base = base
@@ -105,13 +103,11 @@ module Jekyll
       site.config["devsearches"]["Glossary"][lang].sort_by!{|hash|
           hash.to_s.downcase.gsub(/"=>.*/,'')
       }
-
     end
   end
 
   class GlossaryPageGenerator < Generator
     def generate(site)
-
       #Do nothing if plugin is disabled
       if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('glossary').nil?
         print 'Glossary disabled' + "\n"
@@ -141,7 +137,6 @@ module Jekyll
 
             if cat == "Glossary"
                 items.each {| lang, list |
-
                     list.each {| el |
                         flat = el.flatten
                         devsearches_json.push({
@@ -176,5 +171,4 @@ module Jekyll
       end
     end
   end
-
 end

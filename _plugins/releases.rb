@@ -15,9 +15,7 @@
 require 'yaml'
 
 module Jekyll
-
   class ReleasePage < Page
-
     def initialize(site, base, lang, srcdir, src, output_directory)
       @site = site
       @base = base
@@ -68,12 +66,10 @@ module Jekyll
       end
       return x
     end
-
   end
 
   class ReleasePageGenerator < Generator
     def generate(site)
-
       #Do nothing if plugin is disabled
       if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('releases').nil?
         print 'Releases disabled' + "\n"
@@ -95,5 +91,4 @@ module Jekyll
       #need to fallback to english when no translation is available.
     end
   end
-
 end

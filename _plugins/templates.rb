@@ -9,7 +9,6 @@ require 'yaml'
 require 'cgi'
 
 module Jekyll
-
   class TranslatePage < Page
     def initialize(site, base, lang, srcdir, src, dstdir, dst)
       @site = site
@@ -62,5 +61,4 @@ module Jekyll
       end
     end
   end
-
 end

@@ -6,68 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 7
-# Cop supports --auto-correct.
-Layout/EmptyLines:
-  Exclude:
-    - '_plugins/autocrossref.rb'
-    - '_plugins/githubify.rb'
-    - '_plugins/inline-template.rb'
-    - '_plugins/liquid-die.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-Layout/EmptyLinesAroundArguments:
-  Exclude:
-    - '_contrib/bco-htmlproof'
-
-# Offense count: 8
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: empty_lines, no_empty_lines
-Layout/EmptyLinesAroundBlockBody:
-  Exclude:
-    - '_contrib/comparelinks.rb'
-    - '_plugins/autocrossref.rb'
-    - '_plugins/glossary.rb'
-    - '_plugins/wallets.rb'
-
-# Offense count: 16
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: empty_lines, empty_lines_except_namespace, empty_lines_special, no_empty_lines, beginning_only, ending_only
-Layout/EmptyLinesAroundClassBody:
-  Exclude:
-    - '_plugins/autocrossref.rb'
-    - '_plugins/contributors.rb'
-    - '_plugins/events.rb'
-    - '_plugins/githubify.rb'
-    - '_plugins/glossary.rb'
-    - '_plugins/inline-template.rb'
-    - '_plugins/liquid-die.rb'
-    - '_plugins/liquid-warn.rb'
-    - '_plugins/releases.rb'
-    - '_plugins/translate.rb'
-
-# Offense count: 9
-# Cop supports --auto-correct.
-Layout/EmptyLinesAroundMethodBody:
-  Exclude:
-    - '_contrib/comparelinks.rb'
-    - '_plugins/contributors.rb'
-    - '_plugins/events.rb'
-    - '_plugins/glossary.rb'
-    - '_plugins/redirects.rb'
-    - '_plugins/releases.rb'
-    - '_plugins/wallets.rb'
-
-# Offense count: 32
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: empty_lines, empty_lines_except_namespace, empty_lines_special, no_empty_lines
-Layout/EmptyLinesAroundModuleBody:
-  Enabled: false
-
 # Offense count: 1
 # Cop supports --auto-correct.
 # Configuration parameters: AllowForAlignment, ForceEqualSignAlignment.

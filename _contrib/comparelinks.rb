@@ -27,7 +27,6 @@ if !File.exist?('_config.yml')
 end
 
 def fetchlinks()
-
 	# Fetch new list of links
 	links = {}
 	dirs = Dir.glob(WORKDIR + "/_site/**/*.html").each { |file| 
@@ -48,11 +47,9 @@ def fetchlinks()
 	}
 
 	return links
-
 end
 
 Dir.mktmpdir{|workdir|
-
 	WORKDIR=workdir.gsub("\n",'')
 
 	# Copy current repository to a temporary directory
@@ -63,7 +60,6 @@ Dir.mktmpdir{|workdir|
 	newlinks = {}
 
 	Dir.chdir(WORKDIR) do
-
 		`git checkout #{srcbr}`
 		`jekyll`
 		oldlinks = fetchlinks()
@@ -71,7 +67,6 @@ Dir.mktmpdir{|workdir|
 		`git checkout #{dstbr}`
 		`jekyll`
 		newlinks = fetchlinks()
-
 	end
 
 	# Find added links, removed links
@@ -97,5 +92,4 @@ Dir.mktmpdir{|workdir|
 		diff = diff + "## links removed\n\n" + diffrmlinks.join("\n") + "\n\n"
 	end
 	print diff
-
 }
