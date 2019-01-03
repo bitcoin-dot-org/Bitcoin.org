@@ -14,7 +14,6 @@ require 'yaml'
 require 'ffi-icu'
 
 module Jekyll
-
   module AlphabForImpl
     def render(context)
       #Load translations
@@ -81,7 +80,6 @@ module Jekyll
       'endalphab_for'
     end
   end
-
 end
  
 Liquid::Template.register_tag('alphab_for', Jekyll::AlphabForTag)

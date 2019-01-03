@@ -10,11 +10,9 @@
 ## {% endgithubify %}
 
 module Jekyll
-
 require 'yaml'
 
   class GitHubifyBlock < Liquid::Block
-
     def initialize(tag_name, text, tokens)
       super
       @repository_url = text.strip()
@@ -43,14 +41,11 @@ require 'yaml'
   end
 end
 
-
 ## Code to run if plugin is disabled
 module Jekyll
-
 require 'yaml'
 
   class GitHubifyBlockDisabled < Liquid::Block
-
     def initialize(tag_name, text, tokens)
       super
     end

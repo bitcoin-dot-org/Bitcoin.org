@@ -12,9 +12,7 @@
 ## {% endif %}
 
 module Jekyll
-
   class LiquidDie < Liquid::Tag
-
     def initialize(tag_name, text, tokens)
       super
       @error = text
@@ -26,6 +24,5 @@ module Jekyll
     end
   end
 end
-
 
 Liquid::Template.register_tag('die', Jekyll::LiquidDie)

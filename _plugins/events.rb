@@ -13,9 +13,7 @@ require 'yaml'
 require 'cgi'
 
 module Jekyll
-
   class EventPageGenerator < Generator
-
     def conferences
       conferences = []
       # Loop in _events.yml
@@ -95,9 +93,6 @@ module Jekyll
           site.conferences = Marshal.load(file)
         end
       end
-
     end
-
   end
-
 end
