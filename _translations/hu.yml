@@ -118,7 +118,7 @@ hu:
     walletgreenaddress: "A GreenAddress egy felhasználóbarát, csoportos aláírást igénylő pénztárca megnövelt biztonsággal és adatvédelemmel. A privát kulcsai sohasem lesznek szerveroldalon, még titkosított állapotban sem. Biztonsági okokból 2FA-t (kétszintű hitelesítést) és a böngészőkiterjesztést vagy Android-alkalmazást érdemes használnia."
     wallettrezor: "A TREZOR egy, a kényelem feláldozása nélkül magas szintű biztonságot kínáló hardverpénztárca. A hidegtárolással ellentétben a TREZOR egy online készülékhez csatlakozva is képes tranzakciókat aláírni. Ez azt jelenti, hogy a bitcoinok küldése akár akkor is biztonságos, ha egy feltört számítógépet használ."
     walletnano: "A Ledger Nano egy ST23YT66 banki okoskártya platformra épülő hardverpénztárca. Biztonságban tartja a felhasználó privát kulcsait, érvényesíti a tranzakciókat és biztonságos feltöltőkártyaként vagy egy csoportos aláírású félként használható. Bár nem nyílt forráskódú, determinisztikusan érvényesíthető."
-    walletwasabi: "Nyílt forráskódú, bizalmasság orientált Bitcoin tárca Windowsra, Linuxra és Mac-re. Beépített Tor anonimitási hálózattal, érmetársítási és érme-irányítási funkciókkal. Magyarok által fejlesztve."
+    walletwasabi: "A Wasabi egy nyílt forráskódú, anonimitás/adatvédelem orientált Bitcoin tárca Windowsra, Mac-re és Linuxra. Beépített Tor anonimitási hálózaton, érme-keverési és érme-irányítási funkciókkal. Magyarok által fejlesztve."
     walletdownload: "Telepítés"
     walletvisit: "Tovább a weboldalra"
     walletsourcecode: "Forráskód"
