@@ -86,9 +86,9 @@ module Jekyll
       ## Add only shown synonyms to the glossary hash-tables-inside-sorted-array
       ## for use in the search box and on the master listing page
       site.config["devsearches"]["Glossary"] =
-          site.config["devsearches"]["Glossary"] ? site.config["devsearches"]["Glossary"] : {}
+        site.config["devsearches"]["Glossary"] ? site.config["devsearches"]["Glossary"] : {}
       site.config["devsearches"]["Glossary"][lang] =
-          site.config["devsearches"]["Glossary"][lang] ? site.config["devsearches"]["Glossary"][lang] : []
+        site.config["devsearches"]["Glossary"][lang] ? site.config["devsearches"]["Glossary"][lang] : []
       for term in self.data["required"]["synonyms_shown_in_glossary_capitalize_first_letter"] do
         site.config["devsearches"]["Glossary"][lang].unshift({ term => output_full_path })
       end
@@ -140,11 +140,11 @@ module Jekyll
                     list.each {| el |
                         flat = el.flatten
                         devsearches_json.push({
-                            "label" => flat[0],
-                            "uri" => flat[1],
-                            "category" => cat,
-                            "lang" => lang
-                        })
+                                                "label" => flat[0],
+                                                "uri" => flat[1],
+                                                "category" => cat,
+                                                "lang" => lang
+                                              })
                     }
                   # puts list
                 }
@@ -152,11 +152,11 @@ module Jekyll
                 items.each {| el |
                     flat = el.flatten
                     devsearches_json.push({
-                        "label" => flat[0],
-                        "uri" => flat[1],
-                        "category" => cat,
-                        "lang" => "en"
-                    })
+                                            "label" => flat[0],
+                                            "uri" => flat[1],
+                                            "category" => cat,
+                                            "lang" => "en"
+                                          })
                 }
             end
           # devsearches_json.unshift({ term => output_full_path })
