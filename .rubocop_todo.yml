@@ -6,23 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 61
-# Cop supports --auto-correct.
-# Configuration parameters: Width, IgnoredPatterns.
-Layout/IndentationWidth:
-  Exclude:
-    - '_build/txpreview/addlang.rb'
-    - '_contrib/comparelinks.rb'
-    - '_contrib/updatetx.rb'
-    - '_plugins/autocrossref.rb'
-    - '_plugins/events.rb'
-    - '_plugins/githubify.rb'
-    - '_plugins/glossary.rb'
-    - '_plugins/include_absolute.rb'
-    - '_plugins/inline-template.rb'
-    - '_plugins/liquid-die.rb'
-    - '_plugins/liquid-warn.rb'
-
 # Offense count: 106
 # Cop supports --auto-correct.
 Layout/LeadingCommentSpace:

@@ -7,8 +7,8 @@
 #Example: ./_contrib/updatetx.rb
 
 def prompt(*args)
-    print(*args)
-    gets
+  print(*args)
+  gets
 end
 
 if ARGV.empty?
