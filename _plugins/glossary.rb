@@ -59,11 +59,11 @@ module Jekyll
         site.config["crossref"].merge!({ term => output_full_path }) {
             |key, old_value, new_value|
 
-            if old_value != new_value
-              abort("Error: autocrossref key '#{key}' wants to point to both '#{old_value}' and '#{new_value}'")
-            end
+          if old_value != new_value
+            abort("Error: autocrossref key '#{key}' wants to point to both '#{old_value}' and '#{new_value}'")
+          end
 
-            new_value
+          new_value
         }
       end
 
@@ -101,7 +101,7 @@ module Jekyll
       ## higher, look at doing this at template time to save CPU cycles
       ## and increase flexibility
       site.config["devsearches"]["Glossary"][lang].sort_by!{|hash|
-          hash.to_s.downcase.gsub(/"=>.*/,'')
+        hash.to_s.downcase.gsub(/"=>.*/,'')
       }
     end
   end
@@ -133,32 +133,32 @@ module Jekyll
 
         devsearches_json = []
         site.config["devsearches"].each {| cat, items |
-            devsearches_data_item = {}
+          devsearches_data_item = {}
 
-            if cat == "Glossary"
-                items.each {| lang, list |
-                    list.each {| el |
-                        flat = el.flatten
-                        devsearches_json.push({
-                                                "label" => flat[0],
-                                                "uri" => flat[1],
-                                                "category" => cat,
-                                                "lang" => lang
-                                              })
-                    }
-                  # puts list
-                }
-            else
-                items.each {| el |
-                    flat = el.flatten
-                    devsearches_json.push({
-                                            "label" => flat[0],
-                                            "uri" => flat[1],
-                                            "category" => cat,
-                                            "lang" => "en"
-                                          })
-                }
-            end
+          if cat == "Glossary"
+            items.each {| lang, list |
+              list.each {| el |
+                flat = el.flatten
+                devsearches_json.push({
+                                        "label" => flat[0],
+                                        "uri" => flat[1],
+                                        "category" => cat,
+                                        "lang" => lang
+                                      })
+              }
+              # puts list
+            }
+          else
+            items.each {| el |
+              flat = el.flatten
+              devsearches_json.push({
+                                      "label" => flat[0],
+                                      "uri" => flat[1],
+                                      "category" => cat,
+                                      "lang" => "en"
+                                    })
+            }
+          end
           # devsearches_json.unshift({ term => output_full_path })
           # puts items
         }

@@ -10,40 +10,40 @@
 ## {% enditemplate %}
 
 module Jekyll
-require 'yaml'
+  require 'yaml'
 
-class InlineTemplateBlock < Liquid::Block
-  def initialize(tag_name, text, tokens)
-    super
-    @template_name = '_templates/' + text.gsub(' ','') + '.inline'
+  class InlineTemplateBlock < Liquid::Block
+    def initialize(tag_name, text, tokens)
+      super
+      @template_name = '_templates/' + text.gsub(' ','') + '.inline'
+    end
+
+    def render(context)
+      output = super
+
+      data = YAML.load(output)
+      template = File.open(@template_name, mode="r")
+      @mytemplate = Liquid::Template.parse(template.read())
+      @mytemplate.render('entry' => data)
+    end
   end
-
-  def render(context)
-    output = super
-
-    data = YAML.load(output)
-    template = File.open(@template_name, mode="r")
-    @mytemplate = Liquid::Template.parse(template.read())
-    @mytemplate.render('entry' => data)
-  end
-end
 end
 
 module Jekyll
-require 'yaml'
+  require 'yaml'
 
-class InlineTemplateBlockDisabled < Liquid::Block
-  def initialize(tag_name, text, tokens)
-    super
+  class InlineTemplateBlockDisabled < Liquid::Block
+    def initialize(tag_name, text, tokens)
+      super
+    end
+
+    def render(context)
+      output = super
+
+      output
+      #return('Inline Template (itemplate) disabled' + "\n")
+    end
   end
-
-  def render(context)
-    output = super
-
-    output
-    #return('Inline Template (itemplate) disabled' + "\n")
-  end
-end
 end
 
 #Do nothing if plugin is disabled
