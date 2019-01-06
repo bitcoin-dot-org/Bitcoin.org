@@ -19,9 +19,9 @@ module Jekyll
     end
 
     def render(context)
-        ## Use "notice" instead of "warning" because we use grep to
-        ## treat some Jekyll warnings as errors
-        print "Notice: " + @warning + "\n"
+      ## Use "notice" instead of "warning" because we use grep to
+      ## treat some Jekyll warnings as errors
+      print "Notice: " + @warning + "\n"
     end
   end
 end

@@ -18,23 +18,23 @@ module Jekyll
       conferences = []
       # Loop in _events.yml
       YAML.load_file('_events.yml').each do |data|
- # Skip event if it has started more than five days ago
-	date = data['date'].to_s.split('-')
- next if Time.new.to_i > (Time.new(date[0].to_i,date[1].to_i,date[2].to_i).to_i + 432000)
+        # Skip event if it has started more than five days ago
+	       date = data['date'].to_s.split('-')
+        next if Time.new.to_i > (Time.new(date[0].to_i,date[1].to_i,date[2].to_i).to_i + 432000)
 
- # Get geolocalisation data from Google Maps
- if data.has_key?('address')
-   begin
-     geoloc = JSON.parse(open("https://maps.googleapis.com/maps/api/geocode/json?address=" + CGI::escape(data['address'] + ', ' + data['city'] + ', ' + data['country']) + "&sensor=false","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
-     if geoloc['status'] == 'OK'
-       data['geoloc'] = {'lat' => geoloc['results'][0]['geometry']['location']['lat'].to_s, 'lon' => geoloc['results'][0]['geometry']['location']['lng'].to_s}
-     end
-   rescue
-     print 'Google Maps API Call Failed!'
-   end
- end
- # Populate conferences array
- conferences.push(data)
+        # Get geolocalisation data from Google Maps
+        if data.has_key?('address')
+          begin
+            geoloc = JSON.parse(open("https://maps.googleapis.com/maps/api/geocode/json?address=" + CGI::escape(data['address'] + ', ' + data['city'] + ', ' + data['country']) + "&sensor=false","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
+            if geoloc['status'] == 'OK'
+              data['geoloc'] = {'lat' => geoloc['results'][0]['geometry']['location']['lat'].to_s, 'lon' => geoloc['results'][0]['geometry']['location']['lng'].to_s}
+            end
+          rescue
+            print 'Google Maps API Call Failed!'
+          end
+        end
+        # Populate conferences array
+        conferences.push(data)
       end
       return conferences
     end
