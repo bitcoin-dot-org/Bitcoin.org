@@ -1,8 +1,8 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-#redirects.rb generates all redirection pages
-#from _config.yml .
+# redirects.rb generates all redirection pages
+# from _config.yml .
 
 require 'yaml'
 require 'cgi'
@@ -24,15 +24,15 @@ module Jekyll
 
   class RedirectPageGenerator < Generator
     def generate(site)
-      #Do nothing if plugin is disabled
+      # Do nothing if plugin is disabled
       if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('redirects').nil?
         print 'Redirects disabled' + "\n"
         return
       end
 
-      #Load redirections
+      # Load redirections
       redirects = YAML.load_file("_config.yml")['redirects']
-      #Generate each redirection page
+      # Generate each redirection page
       if !File.directory?(site.dest)
         Dir.mkdir(site.dest)
       end

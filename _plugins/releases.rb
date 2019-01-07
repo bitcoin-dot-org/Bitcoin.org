@@ -1,12 +1,12 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-#releases.rb generates release pages using files in _releases
-#and assign them the 'release' category.
+# releases.rb generates release pages using files in _releases
+# and assign them the 'release' category.
 
-#This is later used to loop through site.pages in order
-#to display the release's list in version order, both
-#on the "Version history" page and RSS file.
+# This is later used to loop through site.pages in order
+# to display the release's list in version order, both
+# on the "Version history" page and RSS file.
 
 # This plugin also finds the highest required_version of
 # Bitcoin Core and populates the Download page with variables set in
@@ -70,13 +70,13 @@ module Jekyll
 
   class ReleasePageGenerator < Generator
     def generate(site)
-      #Do nothing if plugin is disabled
+      # Do nothing if plugin is disabled
       if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('releases').nil?
         print 'Releases disabled' + "\n"
         return
       end
 
-      #generate each release based on templates
+      # generate each release based on templates
       Dir.foreach('_releases') do |file|
         next if file == '.' or file == '..'
 
@@ -86,9 +86,9 @@ module Jekyll
         output_directory = lang + '/release'
         site.pages << ReleasePage.new(site, site.source, lang, '_releases', src, output_directory)
       end
-      #TODO releases are only generated for english language,
-      #but they could also be translated at some point. They would however
-      #need to fallback to english when no translation is available.
+      # TODO releases are only generated for english language,
+      # but they could also be translated at some point. They would however
+      # need to fallback to english when no translation is available.
     end
   end
 end

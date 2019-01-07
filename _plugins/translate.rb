@@ -1,21 +1,21 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-#translate( id [,category ,lang] )
-#Return translated string using translations files
+# translate( id [,category ,lang] )
+# Return translated string using translations files
 
-#category and lang are set to current page.id and page.lang, but they can
-#also be set manually to get translations for global layout and urls.
-#Example: {% translate button-wallet layout %} will return the
-#translated button-wallet string for the global layout file
+# category and lang are set to current page.id and page.lang, but they can
+# also be set manually to get translations for global layout and urls.
+# Example: {% translate button-wallet layout %} will return the
+# translated button-wallet string for the global layout file
 
-#dynamic variables can be used as arguments
-#Example: {% translate menu-{{id}} %}
+# dynamic variables can be used as arguments
+# Example: {% translate menu-{{id}} %}
 
-#urls and anchors are automatically replaced and translated.
-#Example: #vocabulary##[vocabulary.wallet] is replaced by
-#/en/vocabulary#wallet when the page is in english or
-#/fr/vocabulaire#porte-monnaie when the page is in french.
+# urls and anchors are automatically replaced and translated.
+# Example: #vocabulary##[vocabulary.wallet] is replaced by
+# /en/vocabulary#wallet when the page is in english or
+# /fr/vocabulaire#porte-monnaie when the page is in french.
 
 require 'yaml'
 require 'cgi'
@@ -28,7 +28,7 @@ module Jekyll
     end
 
     def render(context)
-      #Load translations
+      # Load translations
       site = context.registers[:site].config
       if !site.has_key?("loc")
         site['loc'] = {}
@@ -39,7 +39,7 @@ module Jekyll
           site['loc'][lang] = YAML.load_file('_translations/'+file)[lang]
         end
       end
-      #define id, category and lang
+      # define id, category and lang
       defaulten = true
       lang = Liquid::Template.parse("{{page.lang}}").render context
       cat = Liquid::Template.parse("{{page.id}}").render context
@@ -55,11 +55,11 @@ module Jekyll
       if lang == ''
         lang = 'en'
       end
-      #get translated string
+      # get translated string
       text = ''
       keys = cat.split('.')
       ar = site['loc'][lang]
-      #recursive loop to handle cases where category is like "anchor.vocabulary"
+      # recursive loop to handle cases where category is like "anchor.vocabulary"
       for key in keys do
         break if !ar.is_a?(Hash) || !ar.has_key?(key) || !ar[key].is_a?(Hash)
 
@@ -68,7 +68,7 @@ module Jekyll
       if ar.has_key?(id) && ar[id].is_a?(String)
         text = ar[id]
       end
-      #fallback to English if string is empty
+      # fallback to English if string is empty
       if text == '' and defaulten == true
         lang = 'en'
         ar = site['loc'][lang]
@@ -81,10 +81,10 @@ module Jekyll
           text = ar[id]
         end
       end
-      #interpret Liquid templating in string
+      # interpret Liquid templating in string
       text = Liquid::Template.parse(text).render context
 
-      #replace urls and anchors in string
+      # replace urls and anchors in string
       url = site['loc'][lang]['url']
       url.each do |key,value|
         if !value.nil?

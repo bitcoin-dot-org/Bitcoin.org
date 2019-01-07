@@ -1,10 +1,10 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-#events.rb sets the site.conferences array based
-#on events in _events/
-#This is later used to populate the events map and display the
-#list in chronological order, in the RSS file and events pages.
+# events.rb sets the site.conferences array based
+# on events in _events/
+# This is later used to populate the events map and display the
+# list in chronological order, in the RSS file and events pages.
 
 require 'open-uri'
 require 'json'
@@ -58,7 +58,7 @@ module Jekyll
       # Set site.conferences array
       site.conferences = {}
 
-      #Do nothing if plugin is disabled
+      # Do nothing if plugin is disabled
       if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('events').nil?
         print 'Events disabled' + "\n"
         return
