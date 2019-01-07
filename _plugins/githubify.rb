@@ -58,7 +58,7 @@ module Jekyll
   end
 end
 
-#Do nothing if plugin is disabled
+# Do nothing if plugin is disabled
 plugin_name = "githubify"
 if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index(plugin_name).nil?
   print plugin_name + ' disabled' + "\n"

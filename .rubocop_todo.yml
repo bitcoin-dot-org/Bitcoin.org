@@ -6,18 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 106
-# Cop supports --auto-correct.
-Layout/LeadingCommentSpace:
-  Enabled: false
-
-# Offense count: 2
-# Cop supports --auto-correct.
-Layout/MultilineBlockLayout:
-  Exclude:
-    - '_plugins/autocrossref.rb'
-    - '_plugins/glossary.rb'
-
 # Offense count: 3
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle, IndentationWidth.

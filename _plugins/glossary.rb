@@ -108,7 +108,7 @@ module Jekyll
 
   class GlossaryPageGenerator < Generator
     def generate(site)
-      #Do nothing if plugin is disabled
+      # Do nothing if plugin is disabled
       if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('glossary').nil?
         print 'Glossary disabled' + "\n"
         return
@@ -122,7 +122,7 @@ module Jekyll
         lang=dir
         glossary_dir=main_dir+lang
 
-        #Generate each definition page based on templates
+        # Generate each definition page based on templates
         Dir.foreach(glossary_dir) do |file|
           next if file == '.' or file == '..'
 

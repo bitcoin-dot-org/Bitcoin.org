@@ -126,7 +126,7 @@ module Jekyll
   end
 end
 
-#Do nothing if plugin is disabled
+# Do nothing if plugin is disabled
 if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('autocrossref').nil?
   print 'Autocrossref disabled' + "\n"
   Liquid::Template.register_tag('autocrossref', Jekyll::AutoCrossRefBlockDisabled)
