@@ -12,7 +12,7 @@ end
 ## work. The Makefile will terminate on the failure
 HTML::Proofer.new(
   ## To test, uncomment the array below and comment out ./_site and :disable_external
-  #[ "/foo/bar#baz", "/foo/bar", "#", "#wallet", "/foo.css", "/bar.png", "/zh_TW/bitcoin-for-businesses" ],
+  # [ "/foo/bar#baz", "/foo/bar", "#", "#wallet", "/foo.css", "/bar.png", "/zh_TW/bitcoin-for-businesses" ],
   path_to_check,
   {
     ## Disable external link checking by default to avoid spurious

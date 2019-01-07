@@ -41,15 +41,15 @@ module Jekyll
       output = super
 
       output
-      #return('Inline Template (itemplate) disabled' + "\n")
+      # return('Inline Template (itemplate) disabled' + "\n")
     end
   end
 end
 
-#Do nothing if plugin is disabled
+# Do nothing if plugin is disabled
 ## Note: tested 2015-04-12 and the site actually compiles 5 seconds
 ##       *faster* with this enabled, so hardcoding it to enabled for now
-if false #!ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('itemplate').nil?
+if false # !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('itemplate').nil?
   print 'Inline Template (itemplate) disabled' + "\n"
   Liquid::Template.register_tag('itemplate', Jekyll::InlineTemplateBlockDisabled)
 else

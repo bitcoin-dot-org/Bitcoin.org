@@ -1,20 +1,20 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-#alerts.rb generates alert pages using files in _alerts
-#and assign them the 'alert' category.
+# alerts.rb generates alert pages using files in _alerts
+# and assign them the 'alert' category.
 
-#This is later used to loop through site.pages in order
-#to display the alert's list in chronological order, both
-#on the "Alerts" page and RSS file.
+# This is later used to loop through site.pages in order
+# to display the alert's list in chronological order, both
+# on the "Alerts" page and RSS file.
 
-#If "banner" variable is set in one alert file, site.ALERT
-#variable is set, allowing a clickable alert banner to be
-#displayed in _layouts/base.html .
+# If "banner" variable is set in one alert file, site.ALERT
+# variable is set, allowing a clickable alert banner to be
+# displayed in _layouts/base.html .
 
-#If "shorturl" variable is set in one alert file, a short alias
-#file for the alert (like /android.html) is generated for
-#Bitcoin Core non-clickable alerts.
+# If "shorturl" variable is set in one alert file, a short alias
+# file for the alert (like /android.html) is generated for
+# Bitcoin Core non-clickable alerts.
 
 require 'yaml'
 
@@ -56,10 +56,10 @@ module Jekyll
 
   class AlertPageGenerator < Generator
     def generate(site)
-      #Generate each alert based on templates
+      # Generate each alert based on templates
       site.config['STATUS'] = 0
       site.config['ALERTCLASS'] = 'alert'
-      #Do nothing if plugin is disabled
+      # Do nothing if plugin is disabled
       if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('alerts').nil?
         print 'Alerts disabled' + "\n"
         return
@@ -80,9 +80,9 @@ module Jekyll
 
         site.pages << AlertPage.new(site, site.source, lang, '_alerts', src, dstdir, dst, date)
       end
-      #TODO alerts are only generated for english language,
-      #but they could also be translated at some point. They would however
-      #need to fallback to english when no translation is available.
+      # TODO alerts are only generated for english language,
+      # but they could also be translated at some point. They would however
+      # need to fallback to english when no translation is available.
     end
   end
 end
