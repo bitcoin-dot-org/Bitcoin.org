@@ -56,9 +56,7 @@ module Jekyll
       ## Add all synonyms to the autocrossref hash table for automatic linking
       site.config["crossref"] = site.config["crossref"] ? site.config["crossref"] : {}
       for term in terms do
-        site.config["crossref"].merge!({ term => output_full_path }) {
-            |key, old_value, new_value|
-
+        site.config["crossref"].merge!({ term => output_full_path }) { |key, old_value, new_value|
           if old_value != new_value
             abort("Error: autocrossref key '#{key}' wants to point to both '#{old_value}' and '#{new_value}'")
           end

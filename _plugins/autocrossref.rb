@@ -45,9 +45,7 @@ module Jekyll
 
         if site.has_key?("crossref")
           ## We already have refs loaded, so merge
-          site['crossref'].merge!(unvalidated_refs) {
-            |key, old_value, new_value|
-
+          site['crossref'].merge!(unvalidated_refs) { |key, old_value, new_value|
             if old_value != new_value
               abort("Error: autocrossref key '#{key}' wants to point to both '#{old_value}' and '#{new_value}'")
             end
