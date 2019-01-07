@@ -21,13 +21,23 @@ id: bitcoin-paper
       a sha256sum of the file, so it can be verified that the file was scanned). The files should be listed in this order:
       English orginial first; then UTF-8 alphabetical order {% endcomment %}
       <ul class="row card-row">
+
         <li class="card bitcoin-paper-card">
           <img src="/img/icons/flag_british.svg?{{site.time | date: '%s'}}" alt="British flag">
           <b>
             <a class="language-link" href="/bitcoin.pdf">English original</a>
           </b>
         </li>
-  
+
+        <li class="card bitcoin-paper-card">
+          <img src="/img/flags/de.svg?{{site.time | date: '%s'}}" alt="German flag">
+          <a class="language-link" href="/files/bitcoin-paper/bitcoin_de.pdf">Deutsch</a> 
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/99coins">99coins</a>
+          </div>
+        </li>     
+
         <li class="card bitcoin-paper-card">
           <img src="/img/icons/flag_spanish.svg?{{site.time | date: '%s'}}" alt="Spanish flag">
           <a class="language-link" href="/files/bitcoin-paper/bitcoin_es.pdf">Español (España)</a>
@@ -44,7 +54,7 @@ id: bitcoin-paper
             <span>{% translate translated_by %}</span>
             <a href="https://github.com/gubatron">Angel León</a>
           </div>
-        </li>
+        </li>   
         
         <li class="card bitcoin-paper-card">
           <img src="/img/icons/flag_italian.svg?{{site.time | date: '%s'}}" alt="Italian flag">
