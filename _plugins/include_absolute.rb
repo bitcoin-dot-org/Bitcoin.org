@@ -30,9 +30,9 @@ module Jekyll
     def render_variable(context)
       if @file.match(VARIABLE_SYNTAX)
         partial = context.registers[:site]
-            .liquid_renderer
-            .file("(variable)")
-            .parse(@file)
+                         .liquid_renderer
+                         .file("(variable)")
+                         .parse(@file)
         partial.render!(context)
       end
     end
