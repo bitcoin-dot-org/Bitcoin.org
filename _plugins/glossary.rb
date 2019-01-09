@@ -43,7 +43,7 @@ module Jekyll
         mixed_case_terms = self.data["required"]["synonyms_shown_in_glossary_capitalize_first_letter"]
       else
         mixed_case_terms = self.data["required"]["synonyms_shown_in_glossary_capitalize_first_letter"] +\
-        self.data["optional"]["synonyms_and_pluralizations_not_shown_in_glossary"]
+                           self.data["optional"]["synonyms_and_pluralizations_not_shown_in_glossary"]
       end
 
       ## Downcase all terms so we can easily detect when we create
