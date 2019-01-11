@@ -11,7 +11,7 @@ http://opensource.org/licenses/MIT.
       <li{% if page.id == 'bitcoin-for-developers' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a></li>
       <li{% if page.id == 'getting-started' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate menu-getting-started layout %}</a></li>
       <li{% if page.id == 'how-it-works' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate how-it-works url %}">{% translate menu-how-it-works layout %}</a></li>
-      <li{% if page.id == 'bitcoin-paper' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-paper url %}">{% translate menu-white-paper layout %}</a></li>
+      {% if page.lang == 'en' %}<li{% if page.id == 'bitcoin-paper' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-paper url %}">{% translate menu-white-paper layout %}</a></li>{% endif %}
     </ul>
   </li>
   <li><a class="is-expand">{% translate menu-resources layout %}</a>
