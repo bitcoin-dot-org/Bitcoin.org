@@ -48,7 +48,7 @@ module Jekyll
       # recreate collection with new ordering
       sorted_collection = []
       for va in translated do
-        val = assoc.select{|k, v| v == va}
+        val = assoc.select {|k, v| v == va}
         # compatibility with old ruby versions that return an Array
         if val.is_a?(Array)
           val = { val[0][0] => va }
