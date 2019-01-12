@@ -93,7 +93,7 @@ module Jekyll
             (?!\w)  ## Don't match inside words
             (?!.*(<\/h{1-6}>))  ## Don't match inside words
             (?!`)   ## Don't match strings ending with a tic, unless the xref itself ends with a tic
-          /xmi) {|s|
+          /xmi) { |s|
             if term[1] == "do not autocrossref"
               s.gsub(/( |$)/, "<!--noref-->\\&")
             else
