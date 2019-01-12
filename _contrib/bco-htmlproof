@@ -3,9 +3,9 @@
 require 'html/proofer'
 
 if ARGV[0].nil?
-  path_to_check="./_site"
+  path_to_check = "./_site"
 else
-  path_to_check=ARGV[0]
+  path_to_check = ARGV[0]
 end
 
 ## Will throw an exception (exiting false) if any internal links don't

@@ -35,15 +35,15 @@ module Jekyll
         Dir.foreach('_translations') do |file|
           next if file == '.' or file == '..'
 
-          lang=file.split('.')[0]
-          site['loc'][lang] = YAML.load_file('_translations/'+file)[lang]
+          lang = file.split('.')[0]
+          site['loc'][lang] = YAML.load_file('_translations/' + file)[lang]
         end
       end
       # define id, category and lang
       defaulten = true
       lang = Liquid::Template.parse("{{page.lang}}").render context
       cat = Liquid::Template.parse("{{page.id}}").render context
-      id=@id.split(' ')
+      id = @id.split(' ')
       if !id[1].nil?
         cat = Liquid::Template.parse(id[1]).render context
       end
@@ -51,7 +51,7 @@ module Jekyll
         lang = Liquid::Template.parse(id[2]).render context
         defaulten = false
       end
-      id=Liquid::Template.parse(id[0]).render context
+      id = Liquid::Template.parse(id[0]).render context
       if lang == ''
         lang = 'en'
       end
@@ -88,7 +88,7 @@ module Jekyll
       url = site['loc'][lang]['url']
       url.each do |key, value|
         if !value.nil?
-          text.gsub!("#"+key+"#", '/'+lang+'/'+CGI::escape(value))
+          text.gsub!("#" + key + "#", '/' + lang + '/' + CGI::escape(value))
         end
       end
 
@@ -101,7 +101,7 @@ module Jekyll
       anc.each do |page, anch|
         anch.each do |key, value|
           if !value.nil?
-            text.gsub!("["+page+'.'+key+"]", CGI::escape(value))
+            text.gsub!("[" + page + '.' + key + "]", CGI::escape(value))
           end
         end
       end

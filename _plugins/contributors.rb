@@ -17,7 +17,7 @@ module Jekyll
       data = []
       while page < 10 do
         begin
-          ar = JSON.parse(open("https://api.github.com/repos/"+repo+"/contributors?page=#{page}&per_page=100", "User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
+          ar = JSON.parse(open("https://api.github.com/repos/" + repo + "/contributors?page=#{page}&per_page=100", "User-Agent" => "Ruby/#{RUBY_VERSION}").read)
         # Prevent any error to stop the build process, return an empty array instead
         rescue
           print 'GitHub API Call Failed!'
