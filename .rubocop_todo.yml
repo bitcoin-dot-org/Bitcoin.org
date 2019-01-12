@@ -6,16 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 56
-# Cop supports --auto-correct.
-# Configuration parameters: IndentationWidth.
-Layout/Tab:
-  Exclude:
-    - '_build/txpreview/addlang.rb'
-    - '_contrib/comparelinks.rb'
-    - '_plugins/events.rb'
-    - '_plugins/sitemap.rb'
-
 # Offense count: 4
 # Cop supports --auto-correct.
 # Configuration parameters: AllowInHeredoc.
