@@ -12,7 +12,7 @@ module Jekyll
       site.config["env"] = site.config["env"] ? site.config["env"] : {}
 
       ## Load matching environmental variables in to array
-      ENV.keys.grep /^BITCOINORG_/ do |key|
+      ENV.keys.grep(/^BITCOINORG_/) do |key|
         site.config['env'].merge!({ key => ENV[key] })
       end
     end
