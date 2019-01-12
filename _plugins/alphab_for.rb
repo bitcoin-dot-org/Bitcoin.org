@@ -69,17 +69,17 @@ module Jekyll
       result
     end
   end
- 
+
   class AlphabForTag < Liquid::For
     include AlphabForImpl
     def collection_to_sort(context)
       return context[@collection_name].dup
     end
- 
+
     def end_tag
       'endalphab_for'
     end
   end
 end
- 
+
 Liquid::Template.register_tag('alphab_for', Jekyll::AlphabForTag)
