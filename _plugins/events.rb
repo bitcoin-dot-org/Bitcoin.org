@@ -19,7 +19,7 @@ module Jekyll
       # Loop in _events.yml
       YAML.load_file('_events.yml').each do |data|
         # Skip event if it has started more than five days ago
-	       date = data['date'].to_s.split('-')
+        date = data['date'].to_s.split('-')
         next if Time.new.to_i > (Time.new(date[0].to_i, date[1].to_i, date[2].to_i).to_i + 432000)
 
         # Get geolocalisation data from Google Maps
