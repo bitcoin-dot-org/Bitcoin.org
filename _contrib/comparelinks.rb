@@ -35,7 +35,7 @@ def fetchlinks()
   			 link = link[0].to_s.gsub(/^(https?:\/\/(www\.)?bitcoin\.org)?\//, '/')
   			 next if (link.match(/^#|^http:\/\/www.meetup.com\//))
 
-  			 if(!link.match(/^https?:\/\/|^\/[^\/]|^mailto:/))
+  			 if (!link.match(/^https?:\/\/|^\/[^\/]|^mailto:/))
    				 link = File.dirname(file.sub(WORKDIR + '/_site', '')) + '/' + File.basename(link)
    			end
   			 links[link] = "0"
