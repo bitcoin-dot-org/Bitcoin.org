@@ -24,7 +24,7 @@ if !File.exist?('_translations/' + lang + '.yml')
   exit
 end
 
-dirs = [ '_templates', '_layouts' ]
+dirs = ['_templates', '_layouts']
 
 dirs.each do |dir|
   Dir.foreach(dir) do |file|
