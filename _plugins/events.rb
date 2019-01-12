@@ -66,7 +66,7 @@ module Jekyll
       end
 
       ## Create cache directory if it doesn't exist
-      if !File.exists?('_cache')
+      if !File.exist?('_cache')
         Dir.mkdir('_cache')
       end
 
@@ -78,7 +78,7 @@ module Jekyll
       events_file = '_events.yml'
 
       events_file_unix_time = File.stat(events_file).mtime.to_i
-      if File.exists?(conferences_cache)
+      if File.exist?(conferences_cache)
         conferences_cache_unix_time = File.stat(conferences_cache).mtime.to_i
       else
         conferences_cache_unix_time = 0
