@@ -49,7 +49,7 @@ def fetchlinks()
 	 return links
 end
 
-Dir.mktmpdir {|workdir|
+Dir.mktmpdir { |workdir|
 	 WORKDIR = workdir.gsub("\n", '')
 
 	 # Copy current repository to a temporary directory
