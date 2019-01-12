@@ -13,7 +13,7 @@ module Jekyll
     def initialize(site, base, lang, srcdir, src, dstdir, dst)
       @site = site
       @base = base
-      @dir = '/'+dstdir
+      @dir = '/' + dstdir
       @name = dst
       self.process(dst)
       self.read_yaml(File.join(base, srcdir), src)
@@ -35,7 +35,7 @@ module Jekyll
           print 'Lang ' + lang + ' disabled' + "\n"
           next
         end
-        locs[lang] = YAML.load_file("_translations/"+file)[lang]
+        locs[lang] = YAML.load_file("_translations/" + file)[lang]
       end
       # Generate each translated page based on templates
       if !File.directory?(site.dest)
@@ -54,7 +54,7 @@ module Jekyll
           ## the index.html file name
           dst.gsub!(/\/$/, '/index')
 
-          dst = dst+'.html'
+          dst = dst + '.html'
           site.pages << TranslatePage.new(site, site.source, lang, '_templates', src, lang, dst)
         end
         site.pages << TranslatePage.new(site, site.source, lang, '_templates', 'index.html', lang, 'index.html')

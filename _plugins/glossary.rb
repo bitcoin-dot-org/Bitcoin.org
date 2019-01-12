@@ -42,7 +42,7 @@ module Jekyll
       if self.data["optional"]["synonyms_and_pluralizations_not_shown_in_glossary"].nil?
         mixed_case_terms = self.data["required"]["synonyms_shown_in_glossary_capitalize_first_letter"]
       else
-        mixed_case_terms = self.data["required"]["synonyms_shown_in_glossary_capitalize_first_letter"] +\
+        mixed_case_terms = self.data["required"]["synonyms_shown_in_glossary_capitalize_first_letter"] + \
                            self.data["optional"]["synonyms_and_pluralizations_not_shown_in_glossary"]
       end
 
@@ -112,13 +112,13 @@ module Jekyll
         return
       end
 
-      main_dir='_data/glossary/'
+      main_dir = '_data/glossary/'
 
       Dir.foreach(main_dir) do |dir|
         next if dir == '.' or dir == '..'
 
-        lang=dir
-        glossary_dir=main_dir+lang
+        lang = dir
+        glossary_dir = main_dir + lang
 
         # Generate each definition page based on templates
         Dir.foreach(glossary_dir) do |file|

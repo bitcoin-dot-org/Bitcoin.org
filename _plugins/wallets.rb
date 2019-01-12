@@ -67,7 +67,7 @@ module Jekyll
           puts('Lang ' + lang + ' disabled')
           next
         end
-        locs[lang] = YAML.load_file("_translations/"+file)[lang]
+        locs[lang] = YAML.load_file("_translations/" + file)[lang]
       end
 
       # Getting information about each found wallet
