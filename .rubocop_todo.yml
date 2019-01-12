@@ -6,13 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 2
-# Cop supports --auto-correct.
-Lint/ScriptPermission:
-  Exclude:
-    - '_build/txpreview/addlang.rb'
-    - '_contrib/jshint'
-
 # Offense count: 7
 Lint/ShadowingOuterLocalVariable:
   Exclude:
