@@ -130,12 +130,12 @@ module Jekyll
         end
 
         devsearches_json = []
-        site.config["devsearches"].each {| cat, items |
+        site.config["devsearches"].each {|cat, items|
           devsearches_data_item = {}
 
           if cat == "Glossary"
-            items.each {| lang, list |
-              list.each {| el |
+            items.each {|lang, list|
+              list.each {|el|
                 flat = el.flatten
                 devsearches_json.push({
                                         "label" => flat[0],
@@ -147,7 +147,7 @@ module Jekyll
               # puts list
             }
           else
-            items.each {| el |
+            items.each {|el|
               flat = el.flatten
               devsearches_json.push({
                                       "label" => flat[0],
