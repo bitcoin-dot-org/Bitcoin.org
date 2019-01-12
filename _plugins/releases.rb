@@ -62,7 +62,7 @@ module Jekyll
       x = 0
       ar = v.split('.').map{|s| s.to_i}
       ar.each_index do |k|
-        x += ar[k] * (1000 ** (5 - k))
+        x += ar[k] * (1000**(5 - k))
       end
       return x
     end

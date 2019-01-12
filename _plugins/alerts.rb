@@ -23,23 +23,23 @@ module Jekyll
     def initialize(site, base, lang, srcdir, src, dstdir, dst, date)
       @site = site
       @base = base
-      @dir = '/'+dstdir
+      @dir = '/' + dstdir
       @name = dst
       extension = dst.split('.')[-1]
       self.process(dst)
       self.read_yaml(File.join(base, srcdir), src)
       self.data['lang'] = lang
       self.data['date'] = date
-      self.data['path'] = srcdir+'/'+src
+      self.data['path'] = srcdir + '/' + src
       self.data['layout'] = 'alert'
       if dstdir == ''
         self.data['canonical'] = '/en/alert/' + src.split('.')[0]
       else
         self.data['category'] = 'alert'
-        if self.data.has_key?('banner') and !self.data['banner'].nil? and self.data['banner'].length>0
-          site.config['ALERT']=self.data['banner']
-          site.config['ALERTURL']='/'+dstdir+'/'+dst.gsub('.html', '').gsub('.md', '')
-          if self.data.has_key?('bannerclass') and !self.data['bannerclass'].nil? and self.data['bannerclass'].length>0
+        if self.data.has_key?('banner') and !self.data['banner'].nil? and self.data['banner'].length > 0
+          site.config['ALERT'] = self.data['banner']
+          site.config['ALERTURL'] = '/' + dstdir + '/' + dst.gsub('.html', '').gsub('.md', '')
+          if self.data.has_key?('bannerclass') and !self.data['bannerclass'].nil? and self.data['bannerclass'].length > 0
             site.config['ALERTCLASS'] = self.data['bannerclass']
           end
         end
@@ -47,8 +47,8 @@ module Jekyll
           site.config['STATUS'] = 1
         end
         if self.data.has_key?('shorturl')
-          site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['shorturl']+'.'+extension, date)
-          site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['shorturl']+'/index.'+extension, date)
+          site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['shorturl'] + '.' + extension, date)
+          site.pages << AlertPage.new(site, base, lang, srcdir, src, '', self.data['shorturl'] + '/index.' + extension, date)
         end
       end
     end

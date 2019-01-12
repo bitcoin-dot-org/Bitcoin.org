@@ -23,8 +23,8 @@ module Jekyll
         Dir.foreach('_translations') do |file|
           next if file == '.' or file == '..' or file == 'COPYING'
 
-          lang=file.split('.')[0]
-          site['loc'][lang] = YAML.load_file('_translations/'+file)[lang]
+          lang = file.split('.')[0]
+          site['loc'][lang] = YAML.load_file('_translations/' + file)[lang]
         end
       end
       # load collection and context variables

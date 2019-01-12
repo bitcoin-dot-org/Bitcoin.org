@@ -6,26 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 67
-# Cop supports --auto-correct.
-# Configuration parameters: AllowForAlignment.
-Layout/SpaceAroundOperators:
-  Exclude:
-    - '_contrib/bco-htmlproof'
-    - '_contrib/comparelinks.rb'
-    - '_contrib/jshint'
-    - '_plugins/alerts.rb'
-    - '_plugins/alphab_for.rb'
-    - '_plugins/contributors.rb'
-    - '_plugins/events.rb'
-    - '_plugins/glossary.rb'
-    - '_plugins/inline-template.rb'
-    - '_plugins/releases.rb'
-    - '_plugins/sitemap.rb'
-    - '_plugins/templates.rb'
-    - '_plugins/translate.rb'
-    - '_plugins/wallets.rb'
-
 # Offense count: 7
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle, EnforcedStyleForEmptyBraces.

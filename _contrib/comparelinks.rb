@@ -50,7 +50,7 @@ def fetchlinks()
 end
 
 Dir.mktmpdir{|workdir|
-	 WORKDIR=workdir.gsub("\n", '')
+	 WORKDIR = workdir.gsub("\n", '')
 
 	 # Copy current repository to a temporary directory
 	 `rsync -a ./ "#{WORKDIR}/"`
