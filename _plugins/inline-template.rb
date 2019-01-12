@@ -15,7 +15,7 @@ module Jekyll
   class InlineTemplateBlock < Liquid::Block
     def initialize(tag_name, text, tokens)
       super
-      @template_name = '_templates/' + text.gsub(' ','') + '.inline'
+      @template_name = '_templates/' + text.gsub(' ', '') + '.inline'
     end
 
     def render(context)

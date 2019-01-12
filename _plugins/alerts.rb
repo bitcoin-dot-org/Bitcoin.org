@@ -38,7 +38,7 @@ module Jekyll
         self.data['category'] = 'alert'
         if self.data.has_key?('banner') and !self.data['banner'].nil? and self.data['banner'].length>0
           site.config['ALERT']=self.data['banner']
-          site.config['ALERTURL']='/'+dstdir+'/'+dst.gsub('.html','').gsub('.md','')
+          site.config['ALERTURL']='/'+dstdir+'/'+dst.gsub('.html', '').gsub('.md', '')
           if self.data.has_key?('bannerclass') and !self.data['bannerclass'].nil? and self.data['bannerclass'].length>0
             site.config['ALERTCLASS'] = self.data['bannerclass']
           end

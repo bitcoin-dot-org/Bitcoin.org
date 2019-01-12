@@ -101,7 +101,7 @@ module Jekyll
             end
           }
       }
-      output.gsub!(/<!--.*?-->/m,'') ## Remove all HTML comments
+      output.gsub!(/<!--.*?-->/m, '') ## Remove all HTML comments
 
       output
     end

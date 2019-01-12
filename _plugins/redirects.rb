@@ -36,7 +36,7 @@ module Jekyll
       if !File.directory?(site.dest)
         Dir.mkdir(site.dest)
       end
-      redirects.each do |src,dst|
+      redirects.each do |src, dst|
         srcar = src.split('/')
         src = srcar.pop + '.html'
         srcdir = srcar.join('/')

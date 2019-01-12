@@ -17,7 +17,7 @@ module Jekyll
       data = []
       while page < 10 do
         begin
-          ar = JSON.parse(open("https://api.github.com/repos/"+repo+"/contributors?page=#{page}&per_page=100","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
+          ar = JSON.parse(open("https://api.github.com/repos/"+repo+"/contributors?page=#{page}&per_page=100", "User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
         # Prevent any error to stop the build process, return an empty array instead
         rescue
           print 'GitHub API Call Failed!'
@@ -126,19 +126,19 @@ module Jekyll
       end
 
       if corecontributors_cache_age > 86400 || sitecontributors_cache_age > 86400
-        site.corecontributors = contributors('bitcoin/bitcoin',site.config['aliases'])
-        File.open(corecontributors_cache,'w') do |file|
+        site.corecontributors = contributors('bitcoin/bitcoin', site.config['aliases'])
+        File.open(corecontributors_cache, 'w') do |file|
           Marshal.dump(site.corecontributors, file)
         end
-        site.sitecontributors = contributors('bitcoin-dot-org/bitcoin.org',site.config['aliases'])
-        File.open(sitecontributors_cache,'w') do |file|
+        site.sitecontributors = contributors('bitcoin-dot-org/bitcoin.org', site.config['aliases'])
+        File.open(sitecontributors_cache, 'w') do |file|
           Marshal.dump(site.sitecontributors, file)
         end
       else
-        File.open(corecontributors_cache,'r') do |file|
+        File.open(corecontributors_cache, 'r') do |file|
           site.corecontributors = Marshal.load(file)
         end
-        File.open(sitecontributors_cache,'r') do |file|
+        File.open(sitecontributors_cache, 'r') do |file|
           site.sitecontributors = Marshal.load(file)
         end
       end

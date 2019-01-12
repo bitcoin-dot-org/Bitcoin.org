@@ -99,7 +99,7 @@ module Jekyll
       ## higher, look at doing this at template time to save CPU cycles
       ## and increase flexibility
       site.config["devsearches"]["Glossary"][lang].sort_by!{|hash|
-        hash.to_s.downcase.gsub(/"=>.*/,'')
+        hash.to_s.downcase.gsub(/"=>.*/, '')
       }
     end
   end
