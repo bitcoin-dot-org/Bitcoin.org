@@ -98,7 +98,7 @@ module Jekyll
       ## do support this feature, so if we upgrade to Jekyll 2.2 or
       ## higher, look at doing this at template time to save CPU cycles
       ## and increase flexibility
-      site.config["devsearches"]["Glossary"][lang].sort_by! {|hash|
+      site.config["devsearches"]["Glossary"][lang].sort_by! { |hash|
         hash.to_s.downcase.gsub(/"=>.*/, '')
       }
     end
@@ -130,12 +130,12 @@ module Jekyll
         end
 
         devsearches_json = []
-        site.config["devsearches"].each {|cat, items|
+        site.config["devsearches"].each { |cat, items|
           devsearches_data_item = {}
 
           if cat == "Glossary"
-            items.each {|lang, list|
-              list.each {|el|
+            items.each { |lang, list|
+              list.each { |el|
                 flat = el.flatten
                 devsearches_json.push({
                                         "label" => flat[0],
@@ -147,7 +147,7 @@ module Jekyll
               # puts list
             }
           else
-            items.each {|el|
+            items.each { |el|
               flat = el.flatten
               devsearches_json.push({
                                       "label" => flat[0],
