@@ -73,7 +73,7 @@ module Jekyll
       result.each do |key, value|
         contributors.push(value)
       end
-      contributors.sort_by{|c| - c['contributions']}
+      contributors.sort_by {|c| - c['contributions']}
     end
 
     def generate(site)

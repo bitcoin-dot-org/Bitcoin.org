@@ -98,7 +98,7 @@ module Jekyll
       ## do support this feature, so if we upgrade to Jekyll 2.2 or
       ## higher, look at doing this at template time to save CPU cycles
       ## and increase flexibility
-      site.config["devsearches"]["Glossary"][lang].sort_by!{|hash|
+      site.config["devsearches"]["Glossary"][lang].sort_by! {|hash|
         hash.to_s.downcase.gsub(/"=>.*/, '')
       }
     end

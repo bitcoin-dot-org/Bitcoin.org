@@ -25,14 +25,14 @@ module Jekyll
       ## If #1234 links to an issue, GitHub automatically redirects
       #
       ## Require at least two digits to reduce false positive matches
-      output.gsub!(/#([0-9][0-9][0-9]*)/){ |s|
+      output.gsub!(/#([0-9][0-9][0-9]*)/) { |s|
         '<a href="' + @repository_url + '/pull/' + $1 + '">' + s + '</a>'
       }
 
       ## Convert `123abcd` into URL for the commit
       #
       ## Only operate on 7 to 10 chars to reduce false positive matches
-      output.gsub!(/`([0-9abcdef]{7,10})`/){ |s|
+      output.gsub!(/`([0-9abcdef]{7,10})`/) { |s|
         '<a href="' + @repository_url + '/commit/' + $1 + '">' + s + '</a>'
       }
 
