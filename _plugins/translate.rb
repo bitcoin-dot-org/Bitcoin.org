@@ -86,22 +86,22 @@ module Jekyll
 
       # replace urls and anchors in string
       url = site['loc'][lang]['url']
-      url.each do |key,value|
+      url.each do |key, value|
         if !value.nil?
-          text.gsub!("#"+key+"#",'/'+lang+'/'+CGI::escape(value))
+          text.gsub!("#"+key+"#", '/'+lang+'/'+CGI::escape(value))
         end
       end
 
       ## Hack for renaming links to the Bitcoin paper. Safe to remove
       ## when all languages have "bitcoin-paper:" defined in the "url:"
       ## section of their '_translations' YAML file.
-      text.gsub!('#bitcoin-paper#','/bitcoin.pdf')
+      text.gsub!('#bitcoin-paper#', '/bitcoin.pdf')
 
       anc = site['loc'][lang]['anchor']
-      anc.each do |page,anch|
-        anch.each do |key,value|
+      anc.each do |page, anch|
+        anch.each do |key, value|
           if !value.nil?
-            text.gsub!("["+page+'.'+key+"]",CGI::escape(value))
+            text.gsub!("["+page+'.'+key+"]", CGI::escape(value))
           end
         end
       end
