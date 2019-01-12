@@ -78,7 +78,7 @@ module Jekyll
 
     def generate(site)
       # Set site.contributors global variables for liquid/jekyll
-      if ! site.respond_to?('corecontributors')
+      if !site.respond_to?('corecontributors')
         class << site
           attr_accessor :corecontributors
           attr_accessor :sitecontributors
