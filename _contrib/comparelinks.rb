@@ -32,16 +32,16 @@ def fetchlinks()
 	 dirs = Dir.glob(WORKDIR + "/_site/**/*.html").each { |file| 
  		 content = File.read(file)
  		 content.scan(/ href *= *"(.*?)"/).each { |link|
-  			 link = link[0].to_s.gsub(/^(https?:\/\/(www\.)?bitcoin\.org)?\//,'/')
+  			 link = link[0].to_s.gsub(/^(https?:\/\/(www\.)?bitcoin\.org)?\//, '/')
   			 next if (link.match(/^#|^http:\/\/www.meetup.com\//))
 
   			 if(!link.match(/^https?:\/\/|^\/[^\/]|^mailto:/))
-   				 link = File.dirname(file.sub(WORKDIR + '/_site','')) + '/' + File.basename(link)
+   				 link = File.dirname(file.sub(WORKDIR + '/_site', '')) + '/' + File.basename(link)
    			end
   			 links[link] = "0"
   		}
  		 content.scan(/ src *= *"(.*?)"/).each { |link|
-  			 link = link[0].to_s.gsub(/^(https?:\/\/(www\.)?bitcoin\.org)?\//,'/')
+  			 link = link[0].to_s.gsub(/^(https?:\/\/(www\.)?bitcoin\.org)?\//, '/')
   			 links[link] = "0"
   		}
  	}
@@ -50,7 +50,7 @@ def fetchlinks()
 end
 
 Dir.mktmpdir{|workdir|
-	 WORKDIR=workdir.gsub("\n",'')
+	 WORKDIR=workdir.gsub("\n", '')
 
 	 # Copy current repository to a temporary directory
 	 `rsync -a ./ "#{WORKDIR}/"`
