@@ -15,7 +15,7 @@ platform:
         text: "walletlunes"
         link: "https://itunes.apple.com/us/app/lunes-wallet/id1447150748"
         source: "https://github.com/Lunes-platform/Lunes_Wallet"
-        screenshot: "luneswallet.png"
+        screenshot: "lunes.png"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkfailvalidationcentralized"
@@ -50,7 +50,7 @@ platform:
         text: "walletlunes"
         link: "https://luneswallet.app"
         source: "https://github.com/Lunes-platform/Lunes_Wallet"
-        screenshot: "luneswallet.png"
+        screenshot: "lunes.png"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkfailvalidationcentralized"
