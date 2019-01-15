@@ -31,7 +31,7 @@ platform:
         text: "walletlunes"
         link: "https://play.google.com/store/apps/details?id=com.luneswallet&hl=en"
         source: "https://github.com/Lunes-platform/Lunes_Wallet"
-        screenshot: "luneswallet.png"
+        screenshot: "lunes.png"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkfailvalidationcentralized"
