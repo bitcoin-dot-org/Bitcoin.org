@@ -29,7 +29,7 @@ platform:
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: android
         text: "walletlunes"
-        link: "https://play.google.com/store/apps/details?id=com.luneswallet&hl=en"
+        link: "https://play.google.com/store/apps/details?id=com.luneswallet"
         source: "https://github.com/Lunes-platform/Lunes_Wallet"
         screenshot: "lunes.png"
         check:
