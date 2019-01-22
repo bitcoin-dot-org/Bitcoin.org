@@ -177,6 +177,23 @@ redirects:
   /tr/buy: /en/buy
   /uk/buy: /en/buy
   /zh_TW/buy: /en/buy
+  ## Exchanges page; remove as each language is updated to include the translated page
+  /ar/exchanges: /en/exchanges
+  /bg/exchanges: /en/exchanges
+  /da/exchanges: /en/exchanges
+  /el/exchanges: /en/exchanges
+  /es/exchanges: /en/exchanges
+  /fa/exchanges: /en/exchanges
+  /fr/exchanges: /en/exchanges
+  /hi/exchanges: /en/exchanges
+  /hu/exchanges: /en/exchanges
+  /ko/exchanges: /en/exchanges
+  /pl/exchanges: /en/exchanges
+  /ro/exchanges: /en/exchanges
+  /sl/exchanges: /en/exchanges
+  /sv/exchanges: /en/exchanges
+  /tr/exchanges: /en/exchanges
+  /zh_TW/exchanges: /en/exchanges
   ## Old releases pages; stop adding to this list after 0.8.2
   /releases/2011/04/27/v0.3.21: /en/release/v0.3.21
   /releases/2011/06/05/v0.3.22: /en/release/v0.3.22
