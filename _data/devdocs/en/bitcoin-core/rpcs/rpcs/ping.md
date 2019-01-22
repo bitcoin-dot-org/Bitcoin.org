@@ -41,7 +41,7 @@ bitcoin-cli -testnet getpeerinfo | grep ping
 
 Results:
 
-{% highlight json %}
+{% highlight text %}
         "pingtime" : 0.11790800,
         "pingtime" : 0.22673400,
         "pingtime" : 0.16451900,
