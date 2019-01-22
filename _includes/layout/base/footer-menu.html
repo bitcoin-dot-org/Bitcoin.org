@@ -52,11 +52,9 @@ http://opensource.org/licenses/MIT.
       <ul class="footermenu-list">
         <li{% if page.id == 'resources' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a>
-        {% if page.lang == 'en' %}
         <li{% if page.id == 'exchanges' %} class="active"{% endif %}>
-          <a href="/en/exchanges">{% translate menu-exchanges layout %}</a>
+          <a href="/{{ page.lang }}/{% translate exchanges url %}">{% translate menu-exchanges layout %}</a>
         </li>
-        {% endif %}
         <li{% if page.id == 'community' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a>
         </li>
