@@ -63,7 +63,7 @@ module Jekyll
       ## first (e.g. "block chain" before "block"). Otherwise short
       ## terms would get linked first and there'd be nothing for long
       ## terms to link to.
-      site['crossref'].sort_by { |k, v| -k.length }.each { |term|
+      site['crossref'].sort_by { |k, _v| -k.length }.each { |term|
         term[1] = term[0] if term[1].nil? || term[1].empty?
 
         term[0] = Regexp.escape(term[0])
