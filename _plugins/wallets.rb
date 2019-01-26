@@ -71,7 +71,7 @@ module Jekyll
       end
 
       # Getting information about each found wallet
-      locs.each do |lang, value|
+      locs.each do |lang, _value|
         title = locs[lang]['choose-your-wallet']['title']
 
         platformsCol.docs.each do |doc|

@@ -41,7 +41,7 @@ module Jekyll
       if !File.directory?(site.dest)
         Dir.mkdir(site.dest)
       end
-      locs.each do |lang, value|
+      locs.each do |lang, _value|
         Dir.foreach('_templates') do |file|
           next if file == '.' or file == '..'
 

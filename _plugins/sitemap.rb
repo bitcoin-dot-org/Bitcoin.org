@@ -46,14 +46,14 @@ module Jekyll
         sitemap.puts '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
         sitemap.puts '	xmlns:xhtml="http://www.w3.org/1999/xhtml">'
         # Add translated pages with their alternative in each languages
-        locs['en']['url'].each do |id, value|
-          locs.each do |lang, var|
+        locs['en']['url'].each do |id, _value|
+          locs.each do |lang, _var|
             # Don't add a page if their url is not translated
             next if locs[lang]['url'][id].nil? or locs[lang]['url'][id] == ''
 
             sitemap.puts '<url>'
             sitemap.puts '  <loc>https://bitcoin.org/' + lang + '/' + CGI::escape(locs[lang]['url'][id]) + '</loc>'
-            locs.each do |altlang, altvar|
+            locs.each do |altlang, _altvar|
               next if locs[altlang]['url'][id].nil? or locs[altlang]['url'][id] == '' or altlang == lang
 
               sitemap.puts '  <xhtml:link'

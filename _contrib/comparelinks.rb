@@ -72,12 +72,12 @@ Dir.mktmpdir { |workdir|
   # Find added links, removed links
   diffaddlinks = []
   diffrmlinks = []
-  newlinks.each { |link, etag|
+  newlinks.each { |link, _etag|
     next if oldlinks.has_key?(link)
 
     diffaddlinks.push(link)
   }
-  oldlinks.each { |link, etag|
+  oldlinks.each { |link, _etag|
     next if newlinks.has_key?(link)
 
     diffrmlinks.push(link)
