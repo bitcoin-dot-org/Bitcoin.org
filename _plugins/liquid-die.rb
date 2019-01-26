@@ -18,7 +18,7 @@ module Jekyll
       @error = text
     end
 
-    def render(context)
+    def render(_context)
       ## Produces: Liquid die tag called. [<Error.>] -- Error creating output [in <output file name>]
       abort("Liquid die tag called. " + @error + " -- Error creating output")
     end
