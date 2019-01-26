@@ -70,7 +70,7 @@ module Jekyll
         end
       end
       # Generate final ordered contributors array
-      result.each do |key, value|
+      result.each do |_key, value|
         contributors.push(value)
       end
       contributors.sort_by { |commits| - commits['contributions'] }
