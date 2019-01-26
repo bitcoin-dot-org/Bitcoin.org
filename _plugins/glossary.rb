@@ -134,14 +134,14 @@ module Jekyll
           devsearches_data_item = {}
 
           if cat == "Glossary"
-            items.each { |lang, list|
+            items.each { |language, list|
               list.each { |el|
                 flat = el.flatten
                 devsearches_json.push({
                                         "label" => flat[0],
                                         "uri" => flat[1],
                                         "category" => cat,
-                                        "lang" => lang
+                                        "language" => language
                                       })
               }
               # puts list
