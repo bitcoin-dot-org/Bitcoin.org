@@ -41,8 +41,8 @@ dirs.each do |dir|
     # Drop language in statements applied to many languages ( e.g. {% when 'ar' or 'fr' .. %} )
     contents.gsub!(Regexp.new("{% when '" + lang + "' or (.*?) %}"), '{% when \1 %}')
     contents.gsub!(Regexp.new("{% when (.*?) or '" + lang + "' (.*?)%}"), '{% when \1 \2%}')
-    File.open(dir + '/' + file, 'w') do |file|
-      file.write(contents)
+    File.open(dir + '/' + file, 'w') do |f|
+      f.write(contents)
     end
   end
 end
