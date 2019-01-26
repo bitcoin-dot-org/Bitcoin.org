@@ -86,9 +86,9 @@ module Jekyll
 
       # replace urls and anchors in string
       url = site['loc'][lang]['url']
-      url.each do |key, value|
+      url.each do |k, v|
         if !value.nil?
-          text.gsub!("#" + key + "#", '/' + lang + '/' + CGI::escape(value))
+          text.gsub!("#" + k + "#", '/' + lang + '/' + CGI::escape(v))
         end
       end
 
@@ -99,9 +99,9 @@ module Jekyll
 
       anc = site['loc'][lang]['anchor']
       anc.each do |page, anch|
-        anch.each do |key, value|
+        anch.each do |k, v|
           if !value.nil?
-            text.gsub!("[" + page + '.' + key + "]", CGI::escape(value))
+            text.gsub!("[" + page + '.' + k + "]", CGI::escape(v))
           end
         end
       end

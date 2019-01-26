@@ -6,15 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 7
-Lint/ShadowingOuterLocalVariable:
-  Exclude:
-    - '_contrib/updatetx.rb'
-    - '_plugins/contributors.rb'
-    - '_plugins/glossary.rb'
-    - '_plugins/sitemap.rb'
-    - '_plugins/translate.rb'
-
 # Offense count: 10
 # Cop supports --auto-correct.
 # Configuration parameters: IgnoreEmptyBlocks, AllowUnusedKeywordArguments.
