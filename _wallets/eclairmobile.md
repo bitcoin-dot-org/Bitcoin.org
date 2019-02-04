@@ -22,9 +22,9 @@ platform:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
-          fees: "checkgoodfeecontrolfull"
+          fees: "checkpassfeecontroloverride"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacydisclosure: "checkfailprivacydisclosurecentralized"
           privacynetwork: "checkfailprivacynetworknosupporttor"
 ---
