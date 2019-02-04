@@ -120,6 +120,7 @@ pl:
     walletgreenaddress: "GreenAddress to prosty w obsłudze portfel oparty na funkcji multipodpisu z ulepszeniami w zakresie bezpieczeństwa i prywatności. Twoje klucze nigdy nie znajdują się po stronie serwera, nawet zaszyfrowane. Z przyczyn bezpieczeństwa, zawsze powinieneś używać 2FA oraz rozszerzenia przeglądarki lub aplikacji na Androida."
     wallettrezor: "TREZOR to portfel sprzętowy, który zapewnia wysoki poziom bezpieczeństwa bez kompromisów w zakresie wygody. W przeciwieństwie do portfeli offline, TREZOR jest w stanie podpisywać transakcje będąc podłączonym do urządzenia online. Oznacza to, że wydawanie bitcoinów  jest bezpieczne nawet podczas korzystania z zagrożonego komputera."
     walletnano: "Ledger Nano jest portelem sprzętowym zbudowanym na platformie bankowej kart elektronicznych ST23YT66. Bezpiecznie przechowuje on prywatne klucze użytkownika, waliduje transakcje, może być użyty jako bezpieczna karta prepaid lub strona multipodpisu. Choć nie ma otwartego źródła, może być walidowany deterministycznie."
+    walletwasabi: "Wasabi jest bitcoinowym portfelem skoncentrowanym na prywatności."
     walletdownload: "Instaluj"
     walletvisit: "Odwiedź witrynę"
     walletsourcecode: "Kod źródłowy"

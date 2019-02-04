@@ -121,6 +121,7 @@ da:
     wallettrezor: "Trezor er en hardware-tegnebog, der giver et højt sikkerhedsniveau uden at ofre bekvemmeligheden. Modsat kold opbevaring er Trezor i stand til at signere transaktioner, mens den er forbundet til en enhed med Internetforbindelse. Dette betyder, at det er sikkert at bruge bitcoin, selv fra en kompromitteret computer."
     walletnano: "Ledger Nano er en hardware-tegnebog, der er opbygget omkring en ST23YT66-smartcard-platform for banker. Den opbevarer brugernes private nøgler sikkert, validerer transaktioner, kan bruges som et sikkert forudbetalt kort eller en part til multisignaturer. Selvom det ikke har åben kildekode, kan det valideres deterministisk."
     walletninki: "Ninki er en tegnebog med multi-signaturer og en smuk brugerflade, som gør det at sende bitcoin lige så nemt som at sende en email. Du har på ethvert tidspunkt fuld styring over dine bitcoin."
+    walletwasabi: "Åben kildekode og privatlivsbeskyttende fokuseret Bitcoin tegnebog til Windows, Linux og Mac. Indbygget Tor anonymitet netværk, CoinJoin (MøntSaml) og mønt kontrol funktioner."
     walletdownload: "Installér"
     walletvisit: "Besøg hjemmeside"
     walletsourcecode: "Kildekode"
