@@ -19,7 +19,7 @@ platform:
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
-          transparency: "checkpasstransparencyopensource"
+          transparency: "checkgoodtransparencydeterministic"
           environment: "checkgoodenvironmenthardware"
           privacy: "checkneutralprivacyvariable"
           fees: "checkneutralfeecontrolvariable"
