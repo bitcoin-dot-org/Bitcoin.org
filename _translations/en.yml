@@ -139,7 +139,7 @@ en:
     summary: "The paper that first introduced Bitcoin"
     description: "Satoshi Nakamoto's original paper is still recommended reading for anyone studying how Bitcoin works. Choose which translation of the paper you want to read:"
     translated_by: "translated by"
-    submit_new_translation: 'Do you want to translate the paper into your language? Visit the <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitcoin whitepaper repository on GitHub</a> for instructions and <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">open an issue</a> if you have any questions.'
+    submit_new_translation: 'Do you want to translate the paper into your language? Visit the <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitcoin white paper repository on GitHub</a> for instructions and <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">open an issue</a> if you have any questions.'
   buy:
     title: "Buy Bitcoin"
     pagetitle: "How to buy bitcoin"
@@ -208,6 +208,7 @@ en:
     walletsimplebitcoinwallet: "Simple, secure and reliable Bitcoin wallet."
     walletarcbit: "ArcBit is designed to be simple and easy to use, while giving users full control over their money. It offers an optional cold wallet storage feature with the ability to authorize payments offline for enhanced security."
     walleteclairmobile: "Eclair Mobile is a next generation, Lightning-ready Bitcoin wallet. It can be used as a regular Bitcoin wallet, and can also connect to the Lightning Network for cheap and instant payments."
+    walletwasabi: "Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for Windows, Linux and Mac. Built-in Tor anonymity network, CoinJoin and coin control features."
     walletdownload: "Install"
     walletvisit: "Visit website"
     walletsourcecode: "Source code"
@@ -1009,6 +1010,7 @@ en:
     menu-other: "Other"
     menu-vocabulary: Vocabulary
     menu-you-need-to-know: "You need to know"
+    menu-white-paper: "White paper"
     banner-core-moved: |
       This page has moved to the new Bitcoin Core
       website (click here to be redirected)
