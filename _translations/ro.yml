@@ -118,6 +118,7 @@ ro:
     walletgreenaddress: "GreenAddress este un portofel cu semnătură multiplă uşor de utilizat având o securitate şi confidenţialitate îmbunătăţită. Cheile tale nu sunt stocate deloc pe server, nici măcar criptate. Pentru motive de securitate, este recomandat să activezi 2FA şi extensia de browser sau aplicaţia pentru Android."
     wallettrezor: "TREZOR este un portofel hardware ce oferă un grad înalt de securitate fără a sacrifica convenienţa. Spre deosebire de stocarea la rece, TREZOR este capabil să semneze tranzacţii în timp ce este conectat la un dispozitiv online. Asta înseamnă că bitcoinii pot fi cheltuiţi într-un mod sigur chiar dacă este folosit un computer compromis."
     walletnano: "Ledger Nano este un portofel hardware construit pe o platforma bancară smartcard ST23YT66. Această păstrează cheile private în siguranţă, validează tranzacţiile şi poate fi folosit în siguranţă ca un card prepaid sau o parte dintr-o multisemnatura. Deşi nu este opensource, poate fi validat deterministic."
+    walletwasabi: "Wasabi este un portofel pentru bitcoin care axat pe confidențialitate."
     walletdownload: "Instaleaza"
     walletvisit: "Vizitează site-ul web"
     walletsourcecode: "Codul sursa"
