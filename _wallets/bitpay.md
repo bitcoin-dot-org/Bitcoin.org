@@ -11,7 +11,7 @@ platform:
   - mobile:
     name: mobile
     default: &DEFAULT
-      text: "walletcopay"
+      text: "walletbitpay"
       link: "https://bitpay.com/wallet"
       source: "https://github.com/bitpay/copay"
       screenshot: "bitpay.png"
@@ -36,7 +36,7 @@ platform:
   - desktop:
     name: desktop
     default: &DEFAULT
-      text: "walletcopay"
+      text: "walletbitpay"
       link: "https://bitpay.com/wallet"
       source: "https://github.com/bitpay/copay"
       screenshot: "bitpay.png"
