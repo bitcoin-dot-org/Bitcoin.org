@@ -19,10 +19,10 @@ platform:
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
-          transparency: "checkpasstransparencyopensource"
+          transparency: "checkfailtransparencyclosedsource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
-          fees: "checkneutralfeecontrolvariable"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -35,10 +35,10 @@ platform:
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
-          transparency: "checkpasstransparencyopensource"
+          transparency: "checkfailtransparencyclosedsource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
-          fees: "checkneutralfeecontrolvariable"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
