@@ -1,26 +1,10 @@
-- date: 2019-01-20
-  title: "Bitcoin: 10 Years (2009 - 2019)"
-  venue: "Barley's Oriental Garden"
-  address: "Pauwstraat 4"
-  city: "Arnhem Bitcoin City"
-  country: "The Netherlands"
-  link: "https://www.arnhembitcoinstad.nl"
-
-- date: 2019-01-24
-  title: "Tone Vays's Unconfiscatable Conference"
-  venue: "The D Hotel"
-  address: "301 Fremont St, 89101"
-  city: "Las Vegas"
-  country: "United States"
-  link: "http://unconfiscatable.com/"
-
-- date: 2019-02-07
-  title: "Advancing Bitcoin Conference and Workshops"
-  venue: "Code Node"
-  address: "10 South Pl, EC2M 7EB"
-  city: "London"
-  country: "United Kingdom"
-  link: "https://www.advancingbitcoin.com"
+- date: 2019-02-12
+  title: "Bitcoin TechDays 2019"
+  venue: "JetBrains Event Space"
+  address: "Elsenheimerstraße 47A"
+  city: "Munich"
+  country: "Germany"
+  link: "https://bitcoin-techdays.org/"
 
 - date: 2018-02-20
   title: "Blockchain Economy Istanbul Summit"
@@ -29,3 +13,35 @@
   city: "Istanbul"
   country: "Turkey"
   link: "http://blockchaineconomy.istanbul"
+
+- date: 2019-02-22
+  title: "Bitcoins by Starlight"
+  venue: "Stella by Starlight"
+  address: "Coehoornstraat 33"
+  city: "Arnhem Bitcoin City"
+  country: "The Netherlands"
+  link: "https://www.arnhembitcoinstad.nl"
+
+- date: 2019-06-08
+  title: "Breaking Bitcoin"
+  venue: "Beurs Van Berlage"
+  address: "Damrak 243, 1012 ZJ"
+  city: "Amsterdam"
+  country: "The Netherlands"
+  link: "https://breaking-bitcoin.com"
+
+- date: 2019-08-17
+  title: "BitBlockBoom"
+  venue: "Renaissance Dallas Addison Hotel"
+  address: "15201 Dallas Parkway, 75001"
+  city: "Addison"
+  country: "United States"
+  link: "https://bitblockboom.com/"
+
+- date: 2019-09-11
+  title: "Scaling Bitcoin: Tel Aviv"
+  venue: "Tel Aviv University, Smolarz Auditorium"
+  address: "Tel Aviv-Yafo"
+  city: "Tel Aviv"
+  country: "Israel"
+  link: "https://scalingbitcoin.org"
