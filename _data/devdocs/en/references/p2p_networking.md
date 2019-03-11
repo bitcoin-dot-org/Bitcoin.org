@@ -146,7 +146,7 @@ The currently-available type identifiers are:
 | 6               | [`MSG_WITNESS_TX`][msg_witness_tx]{:#term-msg_witness_tx}{:.term}                                     | The hash is a TXID. When used in a `getdata` message, this indicates the response should be a transaction message, if the witness structure is nonempty, the witness serialization will be used. **Only for use in `getdata` messages.**
 | 7               | [`MSG_FILTERED_WITNESS_BLOCK`][msg_filtered_witness_block]{:#term-msg_filtered_witness_block}{:.term} | Reserved for future use, not used as of Protocol Version 70015.
 
-Type identifier zero and type identifiers greater than three are reserved
+Type identifier zero and type identifiers greater than seven are reserved
 for future implementations. Bitcoin Core ignores all inventories with
 one of these unknown types.
 
