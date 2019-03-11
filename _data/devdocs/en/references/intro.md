@@ -53,9 +53,8 @@ anywhere else.
 
 However, the Bitcoin Core developers are working on making their
 consensus code portable so other implementations can use it. Bitcoin
-Core 0.10.0 will provide `libbitcoinconsensus`, a first attempt at
-exporting some consensus code. Future versions of Bitcoin Core will
-likely provide consensus code that is more complete, more portable, and
+Core 0.10.0 provided `libbitcoinconsensus`, as the first attempt at
+exporting some consensus code. Future versions of Bitcoin Core also provided consensus code that is more complete, more portable, and
 more consistent in diverse environments.
 
 In addition, we also warn you that this documentation has not been
