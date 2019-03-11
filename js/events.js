@@ -15,7 +15,7 @@ var map = L.map('eventmap', {
   'minZoom': minzoom,
   'center': [20.00, 10.00]
 });
-L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: 'Data &copy; by <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.',
   maxZoom: 18
 }).addTo(map);
