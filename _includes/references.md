@@ -336,6 +336,7 @@ http://opensource.org/licenses/MIT.
 [BIP50]: https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki
 [BIP61]: https://github.com/bitcoin/bips/blob/master/bip-0061.mediawiki
 [BIP62]: https://github.com/bitcoin/bips/blob/master/bip-0062.mediawiki
+[BIP64]: https://github.com/bitcoin/bips/blob/master/bip-0064.mediawiki
 [BIP66]: https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki
 [BIP70]: https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki
 [BIP71]: https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki
@@ -350,6 +351,7 @@ http://opensource.org/licenses/MIT.
 [BIP144]: https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki
 [BIP151]: https://github.com/bitcoin/bips/blob/master/bip-0151.mediawiki
 [BIP152]: https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki
+[BIP159]: https://github.com/bitcoin/bips/blob/master/bip-0159.mediawiki
 [CVE-2012-2459]: https://en.bitcoin.it/wiki/CVEs#CVE-2012-2459
 [RFC5737]: http://tools.ietf.org/html/rfc5737
 [secp256k1]: http://www.secg.org/sec2-v2.pdf
