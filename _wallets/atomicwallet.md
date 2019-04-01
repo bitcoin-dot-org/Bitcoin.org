@@ -8,7 +8,7 @@ titleshort: "Atomic Wallet"
 compat: "mobile android desktop windows mac linux"
 level: 2
 platform:
-- mobile:
+  - mobile:
     name: mobile
     os:
       - name: android
