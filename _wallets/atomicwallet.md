@@ -3,9 +3,9 @@
 # http://opensource.org/licenses/MIT.
 
 id: atomicwallet
-title: "Atomic Wallet"
+title: "AtomicWallet"
 titleshort: "Atomic Wallet"
-compat: "mobile android desktop windows mac linux"
+compat: "mobile desktop android windows mac linux"
 level: 2
 platform:
   - mobile:
