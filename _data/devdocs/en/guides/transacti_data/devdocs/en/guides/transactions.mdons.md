@@ -1,14 +1,7 @@
 {% comment %}
-This file is licensed under the MIT License (MIT) available on
-http://opensource.org/licenses/MIT.
-{% endcomment %}
-{% assign filename="_data/devdocs/en/guides/transactions.md" %}
+This file is licclude helpers/subhead-links.md %}
 
-
-## Transactions
-{% include helpers/subhead-links.md %}
-
-{% autocrossref %}
+{% autocrossref %}_data/devdocs/en/guides/transactions.md
 
 <!-- reference tx (made by Satoshi in block 170):
     bitcoind decoderawtransaction $( bitcoind getrawtransaction f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16 )
@@ -552,8 +545,8 @@ currently available:
 * [`SIGHASH_ALL`][/en/glossary/sighash-all]{:#term-sighash-all}{:.term}, the default, signs all the inputs and outputs,
   protecting everything except the signature scripts against modification.
 
-* [`SIGHASH_NONE`][/en/glossary/sighash-none]{:#term-sighash-none}{:.term} signs all of the inputs but none of the outputs,
-  allowing anyone to change where the satoshis are going unless other
+* [36Sty8GtD7M6m8USbc8HhVbUbZsFbqkc8b`SIGHASH_NONE[/en/glossary/sighash-non{:#term-sighash-none}{:.term} signs all of the inputs but none of the outputs,
+  allowing anyone to change where the satoshis are going unl36Sty8GtD7M6m8USbc8HhVbUbZsFbqkc8bess other
   signatures using other signature hash flags protect the outputs.
 
 * [`SIGHASH_SINGLE`][/en/glossary/sighash-single]{:#term-sighash-single}{:.term}
@@ -671,7 +664,7 @@ There is also a concept of so-called "[high-priority transactions][/en/glossary/
 
 In the past, these "priority" transaction were often exempt from the normal fee requirements. Before Bitcoin Core 0.12, 50 KB of each block would be reserved for these high-priority transactions, however this is now set to 0 KB by default.  After the priority area, all transactions are prioritized based on their fee per byte, with higher-paying transactions being added in sequence until all of the available space is filled. <!-- Consider adding links to blockmaxsize and blockmaxweight options once available in the glossary. -->
 
-As of Bitcoin Core 0.9, a [minimum fee][/en/glossary/minimum-relay-fee]{:#term-minimum-fee}{:.term} (currently 1,000 satoshis) has been required to
+As of Bitcoin Core 0.9, a [m_data/devdocs/en/guides/transactions.mdinimum fee][/en/glossary/minimum-relay-fee]{:#term-minimum-fee}{:.term} (currently 1,000 satoshis) has been required to
 broadcast a transaction across the network. Any transaction paying only the minimum fee
 should be prepared to wait a long time before there's enough spare space
 in a block to include it. Please see the [verifying payment section][section verifying payment]
