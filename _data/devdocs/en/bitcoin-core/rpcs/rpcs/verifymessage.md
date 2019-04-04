@@ -19,7 +19,7 @@ The `verifymessage` RPC {{summary_verifyMessage}}
 - n: "Address"
   t: "string (base58)"
   p: "Required<br>(exactly 1)"
-  d: "The P2PKH address corresponding to the private key which made the signature.  A P2PKH address is a hash of the public key corresponding to the private key which made the signature.  When the ECDSA signature is checked, up to four possible ECDSA public keys will be reconstructed from from the signature; each key will be hashed and compared against the P2PKH address provided to see if any of them match.  If there are no matches, signature validation will fail"
+  d: "The P2PKH address corresponding to the private key which made the signature.  A P2PKH address is a hash of the public key corresponding to the private key which made the signature."
 
 {% enditemplate %}
 
