@@ -868,7 +868,7 @@ broadcasts it.
 > bitcoin-cli -regtest sendrawtransaction $SIGNED_RAW_TX
 {% endhighlight %}
 {% highlight json %}
-error: {"code":-22,"message":"TX rejected"}
+{"error": {"code":-22,"message":"TX rejected"}}
 {% endhighlight %}
 </div>
 

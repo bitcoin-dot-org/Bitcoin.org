@@ -2,29 +2,29 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-id: simplebitcoinwallet
-title: "Simple Bitcoin Wallet"
-titleshort: "Simple Bitcoin"
+id: eclairmobile
+title: "Eclair Mobile"
+titleshort: "Eclair Mobile"
 compat: "mobile android"
 level: 2
 platform:
   - mobile:
     name: mobile
     os:
-      - name: android
-        text: "walletsimplebitcoinwallet"
-        link: "https://play.google.com/store/apps/details?id=com.btcontract.wallet"
-        source: "https://github.com/btcontract/wallet"
-        screenshot: "simplebitcoinwalletandroid.png?1528322191"
+      - name:  android
+        text: "walleteclairmobile"
+        link: "https://play.google.com/store/apps/details?id=fr.acinq.eclair.wallet"
+        source: "https://github.com/ACINQ/eclair-mobile"
+        screenshot: "eclairmobile.png?1528322191"
         check:
           control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationspvp2p"
+          validation: "checkpassvalidationspvservers"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
-          fees: "checkpassfeecontroldynamic"
+          fees: "checkpassfeecontroloverride"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacydisclosure: "checkfailprivacydisclosurecentralized"
           privacynetwork: "checkfailprivacynetworknosupporttor"
 ---

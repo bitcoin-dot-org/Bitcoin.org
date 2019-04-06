@@ -41,6 +41,9 @@ http://opensource.org/licenses/MIT.
         <li{% if page.id == 'you-need-to-know' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a>
         </li>
+        {% if page.lang == 'en' %}<li{% if page.id == 'bitcoin-paper' %} class="active"{% endif %}>
+          <a href="/{{ page.lang }}/{% translate bitcoin-paper url %}">{% translate menu-white-paper layout %}</a>
+        </li>{% endif %}
       </ul>
     </div>
     
@@ -49,11 +52,9 @@ http://opensource.org/licenses/MIT.
       <ul class="footermenu-list">
         <li{% if page.id == 'resources' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a>
-        {% if page.lang == 'en' %}
         <li{% if page.id == 'exchanges' %} class="active"{% endif %}>
-          <a href="/en/exchanges">{% translate menu-exchanges layout %}</a>
+          <a href="/{{ page.lang }}/{% translate exchanges url %}">{% translate menu-exchanges layout %}</a>
         </li>
-        {% endif %}
         <li{% if page.id == 'community' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a>
         </li>
@@ -83,7 +84,7 @@ http://opensource.org/licenses/MIT.
           <a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a>
         {% if page.lang == 'en' %}
         <li{% if page.id == 'buy' %} class="active"{% endif %}>
-          <a href="/en/buy">{% translate menu-buy layout %}</a>
+          <a href="/{{ page.lang }}/{% translate buy url %}">{% translate menu-buy layout %}</a>
         </li>
         {% endif %}
         {% if page.lang == 'en' %}

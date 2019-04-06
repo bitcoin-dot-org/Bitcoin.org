@@ -210,7 +210,7 @@ all under an Apache license.
 
 {% autocrossref %}
 
-Alice is concerned about her privacy.  She knows every transaction gets
+Alice is concerned about her privacy. She knows every transaction gets
 added to the public block chain, so when Bob and Charlie pay her, they
 can each easily track those satoshis to learn what Bitcoin
 addresses she pays, how much she pays them, and possibly how many
@@ -221,9 +221,9 @@ where she has spent her satoshis and how many she has left, so she
 starts up the Tor anonymity service on her computer and logs into an
 IRC chatroom as "AnonGirl."
 
-Also in the chatroom are "Nemo" and "Neminem."  They collectively
+Also in the chatroom are "Nemo" and "Neminem." They collectively
 agree to transfer satoshis between each other so no one besides them
-can reliably determine who controls which satoshis.  But they're faced
+can reliably determine who controls which satoshis. But they're faced
 with a dilemma: who transfers their satoshis to one of the other two
 pseudonymous persons first? The CoinJoin-style contract, shown in the
 illustration below, makes this decision easy: they create a single
@@ -235,15 +235,15 @@ of them can steal the others' satoshis.
 Each contributor looks through their collection of Unspent Transaction
 Outputs (UTXOs) for 100 millibitcoins they can spend. They then each generate
 a brand new public key and give UTXO details and pubkey hashes to the
-facilitator.  In this case, the facilitator is AnonGirl; she creates
+facilitator. In this case, the facilitator is AnonGirl; she creates
 a transaction spending each of the UTXOs to three equally-sized outputs.
 One output goes to each of the contributors' pubkey hashes.
 
 AnonGirl then signs her inputs using `SIGHASH_ALL` to ensure nobody can
 change the input or output details.  She gives the partially-signed
 transaction to Nemo who signs his inputs the same way and passes it
-to Neminem, who also signs it the same way.  Neminem then broadcasts
-the transaction to the peer-to-peer network, mixing all of the millibitcoins in
+to Neminem, who also signs it the same way. Neminem then broadcasts
+the transaction to the Bitcoin peer-to-peer network, mixing all of the millibitcoins in
 a single transaction.
 
 As you can see in the illustration, there's no way for anyone besides
@@ -253,7 +253,7 @@ deniability.
 
 Now when Bob or Charlie try to track Alice's transactions through the
 block chain, they'll also see transactions made by Nemo and
-Neminem.  If Alice does a few more CoinJoins, Bob and Charlie might
+Neminem. If Alice does a few more CoinJoins, Bob and Charlie might
 have to guess which transactions made by dozens or hundreds of people
 were actually made by Alice.
 
@@ -264,7 +264,7 @@ possibly reveal AnonGirl as Alice. But against anyone casually browsing
 block chain history, Alice gains plausible deniability.
 
 The CoinJoin technique described above costs the participants a small
-amount of satoshis to pay the transaction fee.  An alternative
+amount of satoshis to pay the transaction fee. An alternative
 technique, purchaser CoinJoin, can actually save them satoshis and
 improve their privacy at the same time.
 
@@ -282,9 +282,25 @@ because they reduced overhead by combining multiple transactions, saving
 bytes, they may be able to pay a smaller aggregate transaction fee,
 saving each one of them a tiny amount of satoshis.
 
-**Resource:** An alpha-quality (as of this writing) implementation of decentralized
-CoinJoin is [CoinMux](http://coinmux.com/), available under the Apache
-license.
+**Current Working Implementations:** As of today, in 2018,
+[JoinMarket](https://github.com/JoinMarket-Org/) and
+[Wasabi Wallet](http://wasabiwallet.io) are the operational CoinJoin implementations
+for Bitcoin.
+
+JoinMarket style CoinJoins differ from the above described scheme by splitting
+the participants into two sections: market makers and market takers.
+Market makers are publishing their CoinJoin intentions to an IRC
+room and waiting for market takers to take their offers. When a taker comes along,
+it selects a set of makers and creates a shared transaction with them,
+while also paying a small fee. Unlike the above described scheme, this happens automatically.
+
+Wasabi Wallet style CoinJoins are called Chaumian CoinJoins. It employs
+a CoinJoin coordinator, where various peers can register. When the pre-defined
+number of participants registered, a CoinJoin-round kicks in. In this scheme Chaumian
+Blind Signatures are utilized to prevent the coordinator and the peers from learning
+which outputs correspond to which inputs. An example for Chaumian CoinJoin is the
+following transaction:
+[8fee07b90f26e85e22e87da13e1618cd9eeaf98f3f3774273c9307cd40ff98e8](https://www.smartbit.com.au/tx/8fee07b90f26e85e22e87da13e1618cd9eeaf98f3f3774273c9307cd40ff98e8)
 
 {% endautocrossref %}
 </div>

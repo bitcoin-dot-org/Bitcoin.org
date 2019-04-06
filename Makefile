@@ -304,4 +304,4 @@ check-for-too-many-wallets-on-one-platform:
 
 check-validate-yaml:
 ## Validate YAML files against schemas
-	$S find _wallets -type f -exec bundle exec _contrib/schema-validator.rb quality-assurance/schemas/wallets.yaml {} \;
+	$S ! find _wallets -type f -exec bundle exec _contrib/schema-validator.rb quality-assurance/schemas/wallets.yaml {} \; | grep .

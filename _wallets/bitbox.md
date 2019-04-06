@@ -2,9 +2,9 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-id: digitalbitbox
-title: "Digital Bitbox"
-titleshort: "Digital Bitbox"
+id: bitbox
+title: "BitBox"
+titleshort: "BitBox"
 compat: "hardware"
 level: 2
 platform:
@@ -12,10 +12,10 @@ platform:
     name: hardware
     os:
       - name: hardware
-        text: "walletdigitalbitbox"
-        link: "https://digitalbitbox.com/"
+        text: "walletbitbox"
+        link: "https://shiftcrypto.ch/"
         source: "https://github.com/digitalbitbox/"
-        screenshot: "digitalbitbox.png?1528322191"
+        screenshot: "bitbox.png?1528322191"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"

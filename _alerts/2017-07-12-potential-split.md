@@ -65,7 +65,7 @@ extra steps in order to begin safely receiving bitcoins again.
 This post currently describes what actions you can take to prepare for
 this situation.  Subsequent to {{start}}, we will update this post as
 best we can with relevant information, but you are also advised to
-monitor other Bitcoin [news sites][] and [community resources][] for
+monitor other Bitcoin news sites and [community resources][] for
 updates and to cross-check all information, as someone may attempt to
 spread false news in order to exploit the situation.
 
@@ -150,7 +150,6 @@ first.
 
 [full history]: https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/_alerts/2017-07-12-potential-split.md
 [list of updates]: #document-history
-[news sites]: /en/resources#news
 [community resources]: /en/community
 [confirmation scoring]: /en/you-need-to-know#instant
 [price volatility]: /en/you-need-to-know#volatile

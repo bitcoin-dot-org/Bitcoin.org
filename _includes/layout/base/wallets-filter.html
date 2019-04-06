@@ -60,9 +60,6 @@ http://opensource.org/licenses/MIT.
 <div class="wallet-list wallet-filter-list">
     <!-- All wallets -->
     {% for wallet in site.wallets %}
-    {% if page.id contains wallet.id %}
-     {% continue %}
-    {% endif %}
     {% assign platformList = "" %}
     {% for platform in wallet.platform %}
      {% capture platformList %}{{platformList}}{{platform.name}} {% endcapture %}
@@ -98,9 +95,6 @@ http://opensource.org/licenses/MIT.
 
     <!-- Particular wallets-->
     {% for wallet in site.wallets %}
-    {% if page.id contains wallet.id %}
-      {% continue %}
-    {% endif %}
         {% for platform in wallet.platform %}
           {% for os in platform.os%}
           <div class="wallet-list-item" data-category="{{os.name}}" data-walletlevel="{{ wallet.level }}">
