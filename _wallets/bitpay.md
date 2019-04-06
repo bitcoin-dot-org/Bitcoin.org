@@ -2,26 +2,26 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-id: copay
-title: "Copay"
-titleshort: "Copay"
-compat: "mobile desktop android ios windowsphone windows mac linux"
+id: bitpay
+title: "BitPay Wallet"
+titleshort: "BitPay"
+compat: "mobile desktop android ios windows mac linux"
 level: 3
 platform:
   - mobile:
     name: mobile
     default: &DEFAULT
-      text: "walletcopay"
-      link: "https://copay.io"
+      text: "walletbitpay"
+      link: "https://bitpay.com/wallet"
       source: "https://github.com/bitpay/copay"
-      screenshot: "copay.png"
+      screenshot: "bitpay.png"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"
         transparency: "checkpasstransparencyopensource"
         environment: "checkpassenvironmentmobile"
         privacy: "checkpassprivacybasic"
-        fees: "checkpassfeecontroldynamic"
+        fees: "checkpassfeecontroloverride"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
         privacydisclosure: "checkfailprivacydisclosurecentralized"
@@ -36,17 +36,17 @@ platform:
   - desktop:
     name: desktop
     default: &DEFAULT
-      text: "walletcopay"
-      link: "https://copay.io/"
+      text: "walletbitpay"
+      link: "https://bitpay.com/wallet"
       source: "https://github.com/bitpay/copay"
-      screenshot: "copay.png"
+      screenshot: "bitpay.png"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"
         transparency: "checkpasstransparencyopensource"
         environment: "checkfailenvironmentdesktop"
         privacy: "checkpassprivacybasic"
-        fees: "checkpassfeecontroldynamic"
+        fees: "checkpassfeecontroloverride"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
         privacydisclosure: "checkfailprivacydisclosurecentralized"

@@ -5,9 +5,9 @@ http://opensource.org/licenses/MIT.
 ><a href="https://github.com/bitcoin-dot-org/bitcoin.org/edit/master/{{filename|uri_escape}}">{% translate subheadlinkedit developer-documentation %}</a>
 | <a href="https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/{{filename|uri_escape}}">{% translate subheadlinkhistory developer-documentation %}</a>
 | <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=Source%20File%3A%20{{filename|uri_escape}}%0A%0A">{% translate subheadlinkreport developer-documentation %}</a>
-| <a href="/{{ page.lang }}/development#devcommunities">{% translate subheadlinkdiscuss developer-documentation %}</a>
+| <a href="/en/development#devcommunities">{% translate subheadlinkdiscuss developer-documentation %}</a>
 {% if page.lang != "en" %}
-| <a href="/{{ page.lang }}/development#devcommunities">{% translate subheadlinktranslate developer-documentation %}</a>
+| <a href="/en/development#devcommunities">{% translate subheadlinktranslate developer-documentation %}</a>
 {% endif %}
 </div>
 {% else %}

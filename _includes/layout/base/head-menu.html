@@ -11,13 +11,13 @@ http://opensource.org/licenses/MIT.
       <li{% if page.id == 'bitcoin-for-developers' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a></li>
       <li{% if page.id == 'getting-started' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate menu-getting-started layout %}</a></li>
       <li{% if page.id == 'how-it-works' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate how-it-works url %}">{% translate menu-how-it-works layout %}</a></li>
-      <li{% if page.id == 'you-need-to-know' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a></li>
+      {% if page.lang == 'en' %}<li{% if page.id == 'bitcoin-paper' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-paper url %}">{% translate menu-white-paper layout %}</a></li>{% endif %}
     </ul>
   </li>
   <li><a class="is-expand">{% translate menu-resources layout %}</a>
     <ul>
       <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a>
-      {% if page.lang == 'en' %}<li{% if page.id == 'exchanges' %} class="active"{% endif %}><a href="/en/exchanges">Exchanges</a></li>{% endif %}
+      <li{% if page.id == 'exchanges' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate exchanges url %}">{% translate menu-exchanges layout %}</a></li>
       <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
       {% comment %}
         After the developer-documentation page is translated, add the language
@@ -42,7 +42,7 @@ http://opensource.org/licenses/MIT.
   <li><a class="is-expand">{% translate menu-participate layout %}</a>
     <ul>
       <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a>
-      {% if page.lang == 'en' %}<li{% if page.id == 'buy' %} class="active"{% endif %}><a href="/en/buy">Buy Bitcoin</a></li>{% endif %}
+      <li{% if page.id == 'buy' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate buy url %}">{% translate menu-buy layout %}</a></li>
       {% if page.lang == 'en' %}<li{% if page.id == 'full-node' %} class="active"{% endif %}><a href="/en/full-node">Running a full node</a></li>{% endif %}
       <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
     </ul>

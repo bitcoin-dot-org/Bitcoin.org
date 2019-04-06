@@ -124,6 +124,7 @@ es:
     walletbitgo: "BitGo es un monedero multifirma que ofrece un alto nivel de seguridad. Cada transacción requiere dos firmas, protegiendo sus bitcoins de malware y de ataques a los servidores. Las claves privadas son resguardadas por el usuario de tal manera que BitGo no puede acceder a los bitcoins. Es una buena elección para los usuarios sin conocimientos técnicos."
     walletgreenaddress: "GreenAddress es una cartera fácil de usar de firmas múltiples, con una seguridad y privacidad mejorada. En ningún momento tus llaves se encuentran en el lado del servidor, ni siquiera encriptadas. Por razones de seguridad, debes usar autenticación de 2 pasos (2FA) y la extensión de tu navegador o la aplicación de Android."
     wallettrezor: "TREZOR es una cartera de hardware que proporciona un alto nivel de seguridad sin sacrificar conveniencia. Al contrario del almacenamiento en frío, TREZOR es capaz de firmar transacciones mientras esté conectado a un dispositivo online. Esto significa que gastar bitcoins es seguro, aún usando un ordenador infectado."
+    walletwasabi: "Wasabi es un monedero de Bitcoin enfocado en recuperar la privacidad de sus usuarios, de código abierto y disponible para Windows, Linux y Mac, detaca por su integración con la red anónima Tor, su motor de CoinJoin y su característica de control fino de monedas."
     walletdownload: "Instalar"
     walletvisit: "Ir al sitio"
     walletsourcecode: "Código fuente"
