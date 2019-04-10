@@ -18,7 +18,7 @@ platform:
       check:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"
-        transparency: "checkpasstransparencyopensource"
+        transparency: "checkgoodtransparencydeterministic"
         environment: "checkfailenvironmentdesktop"
         privacy: "checkgoodprivacyimproved"
         fees: "checkpassfeecontroldynamic"
