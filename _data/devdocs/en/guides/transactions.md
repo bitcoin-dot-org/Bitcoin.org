@@ -324,6 +324,12 @@ backwards-incompatible features.
 
 As of Bitcoin Core 0.9, the standard pubkey script types are:
 
+* Pay To Public Key Hash (P2PKH)
+* Pay To Script Hash (P2SH)
+* Multisig
+* Pubkey
+* Null Data
+
 {% endautocrossref %}
 
 #### Pay To Public Key Hash (P2PKH)
