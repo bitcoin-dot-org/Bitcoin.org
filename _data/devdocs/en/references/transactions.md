@@ -239,7 +239,7 @@ the [CompactSize section][section CompactSize unsigned integer].
 
 {% autocrossref %}
 
-Each non-coinbase input spends an outpoint from a previous transaction.
+Each non-coinbase input spends an output from a previous transaction.
 (Coinbase inputs are described separately after the example section below.)
 
 | Bytes    | Name             | Data Type            | Description
