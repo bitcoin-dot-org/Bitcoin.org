@@ -414,7 +414,7 @@ your reboot your computer.
 
 If you're an Ubuntu expert and want to use an init script instead, see
 [this Upstart
-script](https://github.com/bitcoin/bitcoin/tree/0.13/contrib/init/bitcoind.conf).
+script](https://github.com/bitcoin/bitcoin/blob/master/contrib/init/bitcoind.conf).
 </div>
 
 {{installFinished}}
