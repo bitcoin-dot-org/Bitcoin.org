@@ -24,7 +24,7 @@ optional:
         - Parent key (a key used to create child keys, not necessarily a private key)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Private key](/en/developer-guide#term-private-key) --- Bitcoin.org Developer Guide"
+        - "[Private key](/en/transactions-guide#term-private-key) --- Bitcoin.org Developer Guide"
         - "[Private key](https://en.bitcoin.it/wiki/Private_key) --- Bitcoin Wiki"
         - "[What is a private key?](http://bitcoin.stackexchange.com/q/4675) --- Bitcoin StackExchange"
 

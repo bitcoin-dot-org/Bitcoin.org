@@ -25,7 +25,7 @@ optional:
         - Mnemonic code / mnemonic seed (a binary root seed formatted as words to make it easier for humans to transcribe and possibly remember)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Root seed](/en/developer-guide#term-root-seed) --- Bitcoin.org Developer Guide"
+        - "[Root seed](/en/wallets-guide#term-root-seed) --- Bitcoin.org Developer Guide"
         - "[BIP32: hierarchical deterministic wallets](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) --- Bitcoin Improvement Proposals"
         - "[BIP39: mnemonic code for generating deterministic keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) --- Bitcoin Improvement Proposals"
 

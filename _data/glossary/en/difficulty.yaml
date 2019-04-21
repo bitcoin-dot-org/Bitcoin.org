@@ -23,7 +23,7 @@ optional:
         - Target threshold (the value from which difficulty is calculated)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Difficulty](/en/developer-guide#term-difficulty) --- Bitcoin.org Developer Guide"
+        - "[Difficulty](/en/blockchain-guide#term-difficulty) --- Bitcoin.org Developer Guide"
         - "[Difficulty](https://en.bitcoin.it/wiki/Difficulty) --- Bitcoin Wiki"
         - "[How is difficulty calculated?](http://bitcoin.stackexchange.com/q/5838) --- Bitcoin StackExchange"
 

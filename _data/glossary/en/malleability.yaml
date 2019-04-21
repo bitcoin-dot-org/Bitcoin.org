@@ -25,7 +25,7 @@ optional:
         - BIP62 (a proposal for an optional new transaction version that reduces the set of known mutations for common transactions)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Transaction malleability](/en/developer-guide#transaction-malleability) --- Bitcoin.org Developer Guide"
+        - "[Transaction malleability](/en/transactions-guide#transaction-malleability) --- Bitcoin.org Developer Guide"
         - "[Transaction malleability](https://en.bitcoin.it/wiki/Transaction_Malleability) --- Bitcoin Wiki"
         - "[BIP62: dealing with malleability](https://github.com/bitcoin/bips/blob/master/bip-0062.mediawiki) --- Bitcoin Improvement Proposals"
 

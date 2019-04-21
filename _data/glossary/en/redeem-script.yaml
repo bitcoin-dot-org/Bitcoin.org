@@ -29,7 +29,7 @@ optional:
         - Signature script (a script that provides data to the pubkey script, which includes the redeem script in a P2SH input)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Redeem script](/en/developer-guide#term-redeem-script) --- Bitcoin.org Developer Guide"
+        - "[Redeem script](/en/transactions-guide#term-redeem-script) --- Bitcoin.org Developer Guide"
         - "[BIP16: pay to script hash](https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki) --- Bitcoin Improvement Proposals"
 
 ---

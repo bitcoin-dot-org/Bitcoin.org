@@ -23,7 +23,7 @@ optional:
         - Blocks-first sync (Downloading entire blocks immediately without first getting their headers)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Headers-first sync](/en/developer-guide#headers-first) --- Bitcoin.org Developer Guide"
+        - "[Headers-first sync](/en/p2p-network-guide#headers-first) --- Bitcoin.org Developer Guide"
         - "[Pull request adding headers-first sync to Bitcoin Core](https://github.com/bitcoin/bitcoin/pull/4468) --- GitHub"
 
 ---

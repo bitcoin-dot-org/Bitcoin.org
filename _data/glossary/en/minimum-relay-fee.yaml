@@ -26,7 +26,7 @@ optional:
         - Transaction fee (the minimum relay fee is a policy setting that filters out transactions with too-low transaction fees)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Minimum relay fee](/en/developer-guide#term-minimum-fee) --- Bitcoin.org Developer Guide"
+        - "[Minimum relay fee](/en/transactions-guide#term-minimum-fee) --- Bitcoin.org Developer Guide"
         - "[Transaction fees](https://en.bitcoin.it/wiki/Transaction_fees) --- Bitcoin Wiki"
 
 ---

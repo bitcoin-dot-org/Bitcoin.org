@@ -28,7 +28,7 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Chain code](/en/developer-guide#term-chain-code) --- Bitcoin.org Developer Guide"
+        - "[Chain code](/en/wallets-guide#term-chain-code) --- Bitcoin.org Developer Guide"
         - "[BIP32: Hierarchical Deterministic Wallets](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) --- Bitcoin Improvement Proposals"
         - "[Deterministic wallet](https://en.bitcoin.it/wiki/Deterministic_Wallet) --- Bitcoin wiki"
 

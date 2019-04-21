@@ -27,7 +27,7 @@ optional:
         - Minimum relay fee (the lowest fee a transaction must pay to be accepted into the memory pool and relayed by Bitcoin Core nodes)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Transaction fee](/en/developer-guide#term-transaction-fee) --- Bitcoin.org Developer Guide"
+        - "[Transaction fee](/en/blockchain-guide#term-transaction-fee) --- Bitcoin.org Developer Guide"
         - "[Transaction fees](https://en.bitcoin.it/wiki/Transaction_fees) --- Bitcoin Wiki"
         - "[How to calculate transaction fees before sending?](http://bitcoin.stackexchange.com/q/1195) --- Bitcoin StackExchange"
 

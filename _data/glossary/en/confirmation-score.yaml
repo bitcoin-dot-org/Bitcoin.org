@@ -31,7 +31,7 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Confirmations](/en/developer-guide#term-confirmation) --- Bitcoin.org Developer Guide"
+        - "[Confirmations](/en/payment-processing-guide#term-confirmation) --- Bitcoin.org Developer Guide"
         - "[Confirmation](https://en.bitcoin.it/wiki/Confirmation) --- Bitcoin Wiki"
         - "[What are confirmations?](http://bitcoin.stackexchange.com/a/160) --- Bitcoin StackExchange"
         - "[When should I worry about 1-confirmation payments?](http://bitcoin.stackexchange.com/q/32562) --- Bitcoin StackExchange"

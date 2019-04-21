@@ -88,9 +88,9 @@ fluctuate a significant amount before payment is received.
 Before requesting payment, your application must create a Bitcoin
 address, or acquire an address from another program such as
 Bitcoin Core.  Bitcoin addresses are described in detail in the
-[Transactions](#transactions) section. Also described in that section
-are two important reasons to [avoid using an address more than
-once](#avoiding-key-reuse)---but a third reason applies especially to
+[Transactions](/en/transactions-guide) guide. Also described in that section
+are two important reasons to avoid using an address more than
+once---but a third reason applies especially to
 payment requests:
 
 Using a separate address for each incoming payment makes it trivial to
@@ -258,7 +258,7 @@ displayed on high-resolution screens.
 {% autocrossref %}
 
 ![Warning icon](/img/icons/icon_warning.svg?{{site.time | date: '%s'}})
- **Warning:** The payment protocol is considered to be deprecated and will be removed in a later version of Bitcoin Core. 
+ **Warning:** The payment protocol is considered to be deprecated and will be removed in a later version of Bitcoin Core.
 The protocol has multiple security design flaws and implementation flaws in some wallets.
 Users will begin receiving deprecation warnings in Bitcoin Core version 0.18 when using BIP70 URI's.
 Merchants should transition away from BIP70 to more secure options such as BIP21.
