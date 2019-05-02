@@ -10,9 +10,7 @@ breadcrumbs:
   - bcc
   - Download
 
-win32zip: "win32.zip"
 win64zip: "win64.zip"
-win32exe: "win32-setup.exe"
 win64exe: "win64-setup.exe"
 macdmg: "-osx.dmg"
 #macdmg: ".dmg"
@@ -45,7 +43,7 @@ lin64: "x86_64-linux-gnu.tar.gz"
   <div class="container core-content clearfix">
     <div class="core-column-left clearfix">
       <div class="mainbutton">
-        <a id="downloadbutton" href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}">
+        <a id="downloadbutton" href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}">
           <!-- <img src="/img/os/but_windows.svg?{{site.time | date: '%s'}}" alt="icon"> -->
           {% translate download %}
         </a>
@@ -83,18 +81,9 @@ lin64: "x86_64-linux-gnu.tar.gz"
 
         <div class="corecard windows-card">
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}" id="downloadwinexe">Windows</a>
-          
-          <div>
-            <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}" class="dl download-link" id="win64exe">64 bit</a>
-            <span> - </span>
-            <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}" class="dl download-link" id="win32exe">32 bit</a>
-          </div>
-
-          <div>
-            <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}" class="dl download-link" id="win64zip">64 bit</a>
-            <span> - </span>
-            <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32zip }}" class="dl download-link" id="win32zip">32 bit (zip)</a>
-          </div>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}" class="dl download-link" id="win64exe">exe</a>
+          <span> - </span>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}" class="dl download-link" id="win64zip">zip</a>
         </div>
 
         <div class="corecard mac-card">
