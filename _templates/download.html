@@ -10,9 +10,7 @@ breadcrumbs:
   - bcc
   - Download
 
-win32zip: "win32.zip"
 win64zip: "win64.zip"
-win32exe: "win32-setup.exe"
 win64exe: "win64-setup.exe"
 macdmg: "-osx.dmg"
 #macdmg: ".dmg"
@@ -45,7 +43,7 @@ lin64: "x86_64-linux-gnu.tar.gz"
   <div class="container core-content clearfix">
     <div class="core-column-left clearfix">
       <div class="mainbutton">
-        <a id="downloadbutton" href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}">
+        <a id="downloadbutton" href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}">
           <!-- <img src="/img/os/but_windows.svg?{{site.time | date: '%s'}}" alt="icon"> -->
           {% translate download %}
         </a>
@@ -83,18 +81,9 @@ lin64: "x86_64-linux-gnu.tar.gz"
 
         <div class="corecard windows-card">
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}" id="downloadwinexe">Windows</a>
-          
-          <div>
-            <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}" class="dl download-link" id="win64exe">64 bit</a>
-            <span> - </span>
-            <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32exe }}" class="dl download-link" id="win32exe">32 bit</a>
-          </div>
-
-          <div>
-            <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}" class="dl download-link" id="win64zip">64 bit</a>
-            <span> - </span>
-            <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win32zip }}" class="dl download-link" id="win32zip">32 bit (zip)</a>
-          </div>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}" class="dl download-link" id="win64exe">exe</a>
+          <span> - </span>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64zip }}" class="dl download-link" id="win64zip">zip</a>
         </div>
 
         <div class="corecard mac-card">
@@ -127,7 +116,7 @@ lin64: "x86_64-linux-gnu.tar.gz"
   </div>
 </div>
 <script type="text/javascript">
-var os = 'windows32';
+var os = 'windows64';
 if (navigator.userAgent.indexOf('Mac') != -1) var os = 'mac'
 else if (navigator.userAgent.indexOf('Linux') != -1) {
 	var os='linux32';
@@ -140,9 +129,7 @@ var linkwinexe = document.getElementById('downloadwinexe');
 var linkwinzip = document.getElementById('downloadwinzip');
 var linklin = document.getElementById('downloadlin');
 var hrefwin64exe = document.getElementById('win64exe').href;
-var hrefwin32exe = document.getElementById('win32exe').href;
 var hrefwin64zip = document.getElementById('win64zip').href;
-var hrefwin32zip = document.getElementById('win32zip').href;
 var hrefmacdmg = document.getElementById('macdmg').href;
 var hrefmactar = document.getElementById('mactar').href;
 var hreflin64 = document.getElementById('lin64').href;
@@ -152,11 +139,6 @@ case 'windows64':
 	but.href = hrefwin64exe;
 	linkwinexe.href = hrefwin64exe;
 	linkwinzip.href = hrefwin64zip;
-break;
-case 'windows32':
-	but.href = hrefwin32exe;
-	linkwinexe.href = hrefwin32exe;
-	linkwinzip.href = hrefwin32zip;
 break;
 case 'linux64':
 	but.href = hreflin64;
