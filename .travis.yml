@@ -1,7 +1,6 @@
 language: ruby
 rvm:
   - "2.4.1"
-sudo: false
 cache: bundler
 env:
   # http://docs.travis-ci.com/user/environment-variables/#Global-Variables
