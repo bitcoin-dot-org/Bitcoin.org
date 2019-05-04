@@ -967,7 +967,7 @@ en:
     anonymoustxt: "Some effort is required to protect your privacy with Bitcoin. All Bitcoin transactions are stored publicly and permanently on the network, which means anyone can see the balance and transactions of any Bitcoin address. However, the identity of the user behind an address remains unknown until information is revealed during a purchase or in other circumstances. This is one reason why Bitcoin addresses should only be used once. Always remember that it is your responsibility to adopt good practices in order to protect your privacy. <a href=\"#protect-your-privacy#\">Read more about protecting your privacy</a>."
     instant: "Unconfirmed transactions aren't secure"
     instanttxt: "Transactions don't start out as irreversible. Instead, they get a <i>confirmation</i> score that indicates how hard it is to reverse them (see table).  Each confirmation takes between a few seconds and 90 minutes, with 10 minutes being the average. If the transaction pays too low a fee or is otherwise atypical, getting the first confirmation can take much longer."
-    confirmations: "Confirm&shy;ations"
+    confirmations: "Confirmations"
     lightweight_wallets: "Lightweight wallets"
     bitcoin_core: "<a href=\"#download#\">Bitcoin Core</a>"
     unconfirmed_only_safe: "Only safe if you trust the person paying you"

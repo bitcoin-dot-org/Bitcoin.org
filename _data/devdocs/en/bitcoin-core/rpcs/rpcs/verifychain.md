@@ -45,7 +45,7 @@ The `verifychain` RPC {{summary_verifyChain}}
 
 *Example from Bitcoin Core 0.10.0*
 
-Verify the most recent 10,000 blocks in the most through way:
+Verify the most recent 10,000 blocks in the most thorough way:
 
 {% highlight bash %}
 bitcoin-cli -testnet verifychain 4 10000
