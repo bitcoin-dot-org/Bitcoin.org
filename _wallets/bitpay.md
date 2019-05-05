@@ -31,8 +31,6 @@ platform:
         <<: *DEFAULT
       - name: ios
         <<: *DEFAULT
-      - name: windowsphone
-        <<: *DEFAULT
   - desktop:
     name: desktop
     default: &DEFAULT
