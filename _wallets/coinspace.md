@@ -5,7 +5,7 @@
 id: coinspace
 title: "Coin.Space"
 titleshort: "Coin.Space"
-compat: "mobile web android windowsphone ios"
+compat: "mobile web android ios"
 level: 3
 platform:
   - mobile:
@@ -30,22 +30,6 @@ platform:
       - name: ios
         text: "walletcoinspace"
         link: "https://itunes.apple.com/us/app/coinspace-bitcoin-wallet/id980719434?mt=8"
-        source: "https://github.com/CoinSpace/CoinSpace"
-        screenshot: "coinspacemobile.png?1528322191"
-        check:
-          control: "checkgoodcontrolfull"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkpasstransparencyopensource"
-          environment: "checkpassenvironmentmobile"
-          privacy: "checkpassprivacybasic"
-          fees: "checkpassfeecontroldynamic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
-      - name: windowsphone
-        text: "walletcoinspace"
-        link: "https://www.microsoft.com/en-us/store/apps/coin-space-digital-currency-wallet/9nblgggz58z9"
         source: "https://github.com/CoinSpace/CoinSpace"
         screenshot: "coinspacemobile.png?1528322191"
         check:
