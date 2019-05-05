@@ -95,7 +95,6 @@ properties:
                 enum:
                   # mobile os
                   - android
-                  - windowsphone
                   - ios
                   # desktop os
                   - windows
