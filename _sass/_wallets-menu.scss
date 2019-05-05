@@ -7,7 +7,6 @@ $platforms:
 $oses:
     ios,
     android,
-    windowsphone,
     linux,
     mac,
     windows;
@@ -260,10 +259,6 @@ $oses:
     }
     .wallet-ios {
         background: url(../img/os/wallet_menu_ios.svg?1528322191) center 15px no-repeat;
-        background-size: 22px;
-    }
-    .wallet-windowsphone {
-        background: url(../img/os/wallet_menu_windowsphone.svg?1528322191) center 15px no-repeat;
         background-size: 22px;
     }
 }
