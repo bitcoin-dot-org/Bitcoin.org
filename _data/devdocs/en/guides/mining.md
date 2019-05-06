@@ -116,7 +116,7 @@ In both solo and pool mining, the mining software needs to get the
 information necessary to construct block headers. This subsection
 describes, in a linear way, how that information is transmitted and
 used. However, in actual implementations, parallel threads and queuing
-are used to keep ASIC hashers working at maximum capacity,
+are used to keep ASIC hashers working at maximum capacity.
 
 {% endautocrossref %}
 
