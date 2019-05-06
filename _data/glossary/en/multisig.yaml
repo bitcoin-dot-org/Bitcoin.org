@@ -29,7 +29,7 @@ optional:
         - Advanced scripts that require multiple signatures without using OP_CHECKMULTISIG or OP_CHECKMULTISIGVERIFY
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Multisig](/en/developer-guide#term-multisig) --- Bitcoin.org Developer Guide"
+        - "[Multisig](/en/contracts-guide#term-multisig) --- Bitcoin.org Developer Guide"
         - "[BIP11: m-of-n standard transactions](https://github.com/bitcoin/bips/blob/master/bip-0011.mediawiki) --- Bitcoin Improvement Proposals"
         - "[What are multi-signature transactions?](http://bitcoin.stackexchange.com/q/3718) --- Bitcoin StackExchange"
 

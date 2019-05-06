@@ -23,7 +23,7 @@ optional:
         - Outpoint (the combination of a txid with a vout used to identify a specific output)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Txid](/en/developer-guide#term-txid) --- Bitcoin.org Developer Guide"
+        - "[Txid](/en/blockchain-guide#term-txid) --- Bitcoin.org Developer Guide"
         - "[How do I calculate the txid of this raw transaction?](http://bitcoin.stackexchange.com/q/32765) --- Bitcoin StackExchange"
 
 ---

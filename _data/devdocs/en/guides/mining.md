@@ -5,13 +5,13 @@ http://opensource.org/licenses/MIT.
 {% assign filename="_data/devdocs/en/guides/mining.md" %}
 
 
-## Mining
+<div class="toccontent-block toccontent-intro" markdown="block">
+## Introduction
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
-Mining adds new blocks to the block chain, making transaction history
-hard to modify.  Mining today takes on two forms:
+Mining today takes on two forms:
 
 * Solo mining, where the miner attempts to generate new blocks on his
   own, with the proceeds from the block reward and transaction fees
@@ -25,8 +25,10 @@ hard to modify.  Mining today takes on two forms:
   payments with a lower variance (shorter time between payments).
 
 {% endautocrossref %}
+</div>
 
-### Solo Mining
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Solo Mining
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -57,8 +59,10 @@ block and sends the completed block to `bitcoind` to be broadcast to the network
 block chain.
 
 {% endautocrossref %}
+</div>
 
-### Pool Mining
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Pool Mining
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -100,8 +104,10 @@ of its payout for each share received.  Different mining pools use
 different reward distribution systems based on this basic share system.
 
 {% endautocrossref %}
+</div>
 
-### Block Prototypes
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Block Prototypes
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -114,7 +120,8 @@ are used to keep ASIC hashers working at maximum capacity.
 
 {% endautocrossref %}
 
-#### getwork RPC
+
+### getwork RPC
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -128,7 +135,7 @@ discourage or disallow its use.
 
 {% endautocrossref %}
 
-#### getblocktemplate RPC
+### getblocktemplate RPC
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -165,8 +172,10 @@ miner on the peer-to-peer network publishes a new block or the pool
 wants to send more transactions to the mining software.
 
 {% endautocrossref %}
+</div>
 
-#### Stratum
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Stratum
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -214,3 +223,4 @@ pools. The [libblkmaker][] C library and [python-blkmaker][] library,
 both MIT licensed, can interpret GetBlockTemplate for your programs.
 
 {% endautocrossref %}
+</div>

@@ -27,7 +27,7 @@ optional:
         - Transaction malleability / transaction mutability (although non-default sighash flags do allow optional malleability, malleability comprises any way a transaction may be mutated)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Signature hash](/en/developer-guide#term-signature-hash) --- Bitcoin.org Developer Guide"
+        - "[Signature hash](/en/transactions-guide#term-signature-hash) --- Bitcoin.org Developer Guide"
         - "[OP_CHECKSIG](https://en.bitcoin.it/wiki/OP_CHECKSIG) --- Bitcoin Wiki"
         - "[Contracts](https://en.bitcoin.it/wiki/Contracts#Theory) --- Bitcoin Wiki"
 

@@ -29,7 +29,7 @@ optional:
         - P2SH multisig (a particular instance of P2SH where the script uses a multisig opcode)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[P2SH](/en/developer-guide#term-p2sh) --- Bitcoin.org Developer Guide"
+        - "[P2SH](/en/transactions-guide#term-p2sh) --- Bitcoin.org Developer Guide"
         - "[BIP16: pay to script hash](https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki) --- Bitcoin Improvement Proposals"
         - "[P2SH](https://en.bitcoin.it/wiki/P2SH) --- Bitcoin Wiki"
 

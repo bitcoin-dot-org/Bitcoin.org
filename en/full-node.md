@@ -9,8 +9,8 @@ title: "Running A Full Node - Bitcoin"
 end_of_page: |
   <script>updateToc();</script>
   <script>accordion();</script>
-  <script>onScrollButton();</script> 
-  <script>boxShow();</script> 
+  <script>onScrollButton();</script>
+  <script>boxShow();</script>
 breadcrumbs:
   - bitcoin
   - bcc
@@ -219,7 +219,7 @@ have an easy-to-use node.
 
 ## Initial Block Download(IBD)
 
-[Initial block download](/en/developer-guide#initial-block-download)
+[Initial block download](/en/p2p-network-guide#initial-block-download)
 refers to the process where nodes synchronize themselves
 to the network by downloading blocks that are new to them.
 This will happen when a node is far behind the tip of the [best block chain](/en/glossary/block-chain).

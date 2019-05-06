@@ -25,7 +25,7 @@ optional:
         - Outpoint (a reference to a particular output)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Output](/en/developer-guide#term-output) --- Bitcoin.org Developer Guide"
+        - "[Output](/en/transactions-guide#term-output) --- Bitcoin.org Developer Guide"
         - "[TxOut](/en/developer-reference#txout) --- Bitcoin.org Developer Reference"
         - "[Output](https://en.bitcoin.it/wiki/Transaction#Output) --- Bitcoin Wiki"
 

@@ -22,6 +22,6 @@ optional:
         - Blocks-first sync (syncing includes getting any amount of blocks; IBD is only used for large numbers of blocks)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Initial block download](/en/developer-guide#initial-block-download) --- Bitcoin.org Developer Guide"
+        - "[Initial block download](/en/p2p-network-guide#initial-block-download) --- Bitcoin.org Developer Guide"
 
 ---

@@ -23,7 +23,7 @@ optional:
         - SIGHASH_ANYONECANPAY (a flag to signature hash types that only signs this single input)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[`SIGHASH_SINGLE`](/en/developer-guide#term-sighash-single) --- Bitcoin.org Developer Guide"
+        - "[`SIGHASH_SINGLE`](/en/transactions-guide#term-sighash-single) --- Bitcoin.org Developer Guide"
         - "[OP_CHECKSIG](https://en.bitcoin.it/wiki/OP_CHECKSIG) --- Bitcoin Wiki"
         - "[Contracts](https://en.bitcoin.it/wiki/Contracts#Theory) --- Bitcoin Wiki"
 

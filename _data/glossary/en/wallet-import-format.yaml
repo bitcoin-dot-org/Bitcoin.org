@@ -22,7 +22,7 @@ optional:
         - Extended private keys (which allow importing a hierarchy of private keys)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Wallet import format](/en/developer-guide#term-wallet-import-format) --- Bitcoin.org Developer Guide"
+        - "[Wallet import format](/en/wallets-guide#term-wallet-import-format) --- Bitcoin.org Developer Guide"
         - "[Wallet import format](https://en.bitcoin.it/wiki/Wallet_import_format) --- Bitcoin Wiki"
         - "[What is the role of wallet import format?](http://bitcoin.stackexchange.com/q/35723) --- Bitcoin StackExchange"
 

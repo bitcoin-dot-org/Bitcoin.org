@@ -39,7 +39,7 @@ optional:
         - SIGHASH_SINGLE (which signs this input, its corresponding output, and other inputs partially)
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[SIGHASH_ANYONECANPAY](/en/developer-guide#term-sighash-anyonecanpay) --- Bitcoin.org Developer Guide"
+        - "[SIGHASH_ANYONECANPAY](/en/transactions-guide#term-sighash-anyonecanpay) --- Bitcoin.org Developer Guide"
         - "[OP_CHECKSIG](https://en.bitcoin.it/wiki/OP_CHECKSIG) --- Bitcoin Wiki"
         - "[Contracts](https://en.bitcoin.it/wiki/Contracts#Theory) --- Bitcoin Wiki"
 

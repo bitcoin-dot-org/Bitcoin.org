@@ -4,8 +4,8 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/guides/transactions.md" %}
 
-
-## Transactions
+<div class="toccontent-block toccontent-intro" markdown="block">
+## Introduction
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -20,9 +20,7 @@ various ways the outputs/inputs are used, such as "prevout", "nextout",
 when I'm terribly bored, I should rewrite this whole transaction section
 to use those terms and then get feedback to see if it actually helps. -harding -->
 
-Transactions let users spend satoshis. Each transaction is constructed
-out of several parts which enable both simple direct payments and complex
-transactions. This section will describe each part and
+This section will describe each part and
 demonstrate how to use them together to build complete transactions.
 
 To keep things simple, this section pretends coinbase transactions do
@@ -156,8 +154,10 @@ before broadcasting it further or attempting to include it in a new block of
 transactions.
 
 {% endautocrossref %}
+</div>
 
-### P2PKH Script Validation
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## P2PKH Script Validation
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -248,8 +248,10 @@ evaluated, the transaction is valid (provided there are no other
 problems with it).
 
 {% endautocrossref %}
+</div>
 
-### P2SH Scripts
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## P2SH Scripts
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -293,8 +295,10 @@ P2PKH-style address. The hash also obfuscates any public keys in the
 redeem script, so P2SH scripts are as secure as P2PKH pubkey hashes.
 
 {% endautocrossref %}
+</div>
 
-### Standard Transactions
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Standard Transactions
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -332,8 +336,7 @@ As of Bitcoin Core 0.9, the standard pubkey script types are:
 
 {% endautocrossref %}
 
-#### Pay To Public Key Hash (P2PKH)
-{:.no_toc}
+### Pay To Public Key Hash (P2PKH)
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -348,17 +351,16 @@ Pubkey script: OP_DUP OP_HASH160 <PubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
 Signature script: <sig> <pubkey>
 ~~~
 
-#### Pay To Script Hash (P2SH)
-{:.no_toc}
+### Pay To Script Hash (P2SH)
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
 
 P2SH is used to send a transaction to a script hash. Each of the standard
-pubkey scripts can be used as a P2SH redeem script, excluding P2SH itself. 
-As of Bitcoin Core 0.9.2, P2SH transactions can contain any valid redeemScript, 
-making the P2SH standard much more flexible and allowing for experimentation with 
-many novel and complex types of transactions. The most common use of P2SH is the standard 
+pubkey scripts can be used as a P2SH redeem script, excluding P2SH itself.
+As of Bitcoin Core 0.9.2, P2SH transactions can contain any valid redeemScript,
+making the P2SH standard much more flexible and allowing for experimentation with
+many novel and complex types of transactions. The most common use of P2SH is the standard
 multisig pubkey script, with the second most common use being the [Open Assets Protocol][open assets protocol].
 
 Another common redeemScript used for P2SH is storing textual data on the blockchain.
@@ -381,8 +383,7 @@ This last step is similar to the verification step in P2PKH or P2Multisig script
 
 {% endautocrossref %}
 
-#### Multisig
-{:.no_toc}
+### Multisig
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -425,7 +426,7 @@ Redeem script: <OP_2> <A pubkey> <B pubkey> <C pubkey> <OP_3> OP_CHECKMULTISIG
 Signature script: OP_0 <A sig> <C sig> <redeemScript>
 ~~~
 
-#### Pubkey
+### Pubkey
 {:.no_toc}
 {% include helpers/subhead-links.md %}
 
@@ -443,8 +444,7 @@ Pubkey script: <pubkey> OP_CHECKSIG
 Signature script: <sig>
 ~~~
 
-#### Null Data
-{:.no_toc}
+### Null Data
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -486,7 +486,7 @@ The `-datacarriersize` Bitcoin Core configuration option allows you to
 set the maximum number of bytes in null data outputs that you will relay
 or mine.
 
-#### Non-Standard Transactions
+### Non-Standard Transactions
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -539,8 +539,10 @@ conditions:
   Exception: standard null data outputs must receive zero satoshis.
 
 {% endautocrossref %}
+</div>
 
-### Signature Hash Types
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Signature Hash Types
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -603,8 +605,10 @@ between different sigs -->
 hash types sign, including the procedure for inserting the subscript -->
 
 {% endautocrossref %}
+</div>
 
-### Locktime And Sequence Number
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Locktime And Sequence Number
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -662,8 +666,10 @@ enable locktime.
   than the locktime.
 
 {% endautocrossref %}
+</div>
 
-### Transaction Fees And Change
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Transaction Fees And Change
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -696,8 +702,10 @@ described in the [next subsection](#avoiding-key-reuse), it is highly recommende
 outputs be sent to a new P2PKH or P2SH address.
 
 {% endautocrossref %}
+</div>
 
-### Avoiding Key Reuse
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Avoiding Key Reuse
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -750,8 +758,10 @@ fixed URI to which payments should be sent, please see the
 [`bitcoin:` URI section][bitcoin URI subsection] below.
 
 {% endautocrossref %}
+</div>
 
-### Transaction Malleability
+<div class="toccontent-block boxexpand expanded" markdown="block">
+## Transaction Malleability
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -779,7 +789,7 @@ added to the block chain.
 Bitcoin developers have been working to reduce transaction malleability
 among standard transaction types, one outcome of those efforts is
 [BIP 141: Segregated Witness](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki),
-which is supported by Bitcoin Core and was activated in August 2017. 
+which is supported by Bitcoin Core and was activated in August 2017.
 When SegWit is not being used, new transactions should not depend on
 previous transactions which have not been added to the block chain yet,
 especially if large amounts of satoshis are at stake.
@@ -805,3 +815,4 @@ always work is to ensure the reissued payment spends all of the same
 outputs that the lost transaction used as inputs.
 
 {% endautocrossref %}
+</div>

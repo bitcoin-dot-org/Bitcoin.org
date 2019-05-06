@@ -20,7 +20,7 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[`SIGHASH_NONE`](/en/developer-guide#term-sighash-none) --- Bitcoin.org Developer Guide"
+        - "[`SIGHASH_NONE`](/en/transactions-guide#term-sighash-none) --- Bitcoin.org Developer Guide"
         - "[OP_CHECKSIG](https://en.bitcoin.it/wiki/OP_CHECKSIG) --- Bitcoin Wiki"
         - "[Contracts](https://en.bitcoin.it/wiki/Contracts#Theory) --- Bitcoin Wiki"
 

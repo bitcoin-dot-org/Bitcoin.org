@@ -24,7 +24,7 @@ optional:
     not_to_be_confused_with_capitalize_first_letter:
 
     links_html_or_markdown_style_capitalize_first_letter:
-        - "[Hardened extended private keys](/en/developer-guide#term-hardened-extended-private-key) --- Bitcoin.org Developer Guide"
+        - "[Hardened extended private keys](/en/wallets-guide#term-hardened-extended-private-key) --- Bitcoin.org Developer Guide"
         - "[BIP32: hierarchical deterministic wallets](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) --- Bitcoin Improvement Proposals"
 
 ---

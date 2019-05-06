@@ -4,19 +4,19 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 
 {% comment %}<!-- Terms; must have tooltip description in "quotes"; alphabetical order -->{% endcomment %}
-[bitcoin URI]: /en/developer-guide#term-bitcoin-uri "A URI which allows receivers to encode payment details so spenders don't have to manually enter addresses and other details"
+[bitcoin URI]: /en/payment-processing-guide#term-bitcoin-uri "A URI which allows receivers to encode payment details so spenders don't have to manually enter addresses and other details"
 [certificate chain]: /en/developer-examples#term-certificate-chain "A chain of certificates connecting a individual's leaf certificate to the certificate authority's root certificate"
 [coinbase block height]: /en/developer-reference#term-coinbase-block-height "The current block's height encoded into the first bytes of the coinbase field"
 [data-pushing opcode]: https://en.bitcoin.it/wiki/Script#Constants "Any opcode from 0x01 to 0x4e which pushes data on to the script evaluation stack"
-[fiat]: /en/developer-guide#term-fiat "National currencies such as the dollar or euro"
+[fiat]: /en/payment-processing-guide#term-fiat "National currencies such as the dollar or euro"
 [intermediate certificate]: /en/developer-examples#term-intermediate-certificate "A intermediate certificate authority certificate which helps connect a leaf (receiver) certificate to a root certificate authority"
-[key index]: /en/developer-guide#term-key-index "An index number used in the HD wallet formula to generate child keys from a parent key"
-[key pair]: /en/developer-guide#term-key-pair "A private key and its derived public key"
-[label]: /en/developer-guide#term-label "The label parameter of a bitcoin: URI which provides the spender with the receiver's name (unauthenticated)"
+[key index]: /en/wallets-guide#term-key-index "An index number used in the HD wallet formula to generate child keys from a parent key"
+[key pair]: /en/transactions-guide#term-key-pair "A private key and its derived public key"
+[label]: /en/payment-processing-guide#term-label "The label parameter of a bitcoin: URI which provides the spender with the receiver's name (unauthenticated)"
 [leaf certificate]: /en/developer-examples#term-leaf-certificate "The end-node in a certificate chain; in the payment protocol, it is the certificate belonging to the receiver of satoshis"
-[merge]: /en/developer-guide#term-merge "Spending, in the same transaction, multiple outputs which can be traced back to different previous spenders, leaking information about how many satoshis you control"
-[merge avoidance]: /en/developer-guide#term-merge-avoidance "A strategy for selecting which outputs to spend that avoids merging outputs with different histories that could leak private information"
-[message]: /en/developer-guide#term-message "A parameter of bitcoin: URIs which allows the receiver to optionally specify a message to the spender"
+[merge]: /en/payment-processing-guide#term-merge "Spending, in the same transaction, multiple outputs which can be traced back to different previous spenders, leaking information about how many satoshis you control"
+[merge avoidance]: /en/payment-processing-guide#term-merge-avoidance "A strategy for selecting which outputs to spend that avoids merging outputs with different histories that could leak private information"
+[message]: /en/payment-processing-guide#term-message "A parameter of bitcoin: URIs which allows the receiver to optionally specify a message to the spender"
 [msg_tx]: /en/developer-reference#term-msg_tx "The TXID data type identifier of an inventory on the P2P network"
 [msg_block]: /en/developer-reference#term-msg_block "The block header hash data type identifier of an inventory on the P2P network"
 [msg_filtered_block]: /en/developer-reference#term-msg_block "An alternative to the block header hash data type identifier of an inventory on the P2P network used to request a merkle block"
@@ -24,7 +24,7 @@ http://opensource.org/licenses/MIT.
 [msg_witness_block]: /en/developer-reference#term-msg_witness_block "An alternative to the block header hash data type identifier of an inventory on the P2P network used to request a block with witness serialization for SegWit"
 [msg_witness_tx]: /en/developer-reference#term-msg_witness_tx "An alternative of the transaction data type identifier of an inventory on the P2P network used to request a transaction with witness serialization for SegWit"
 [msg_filtered_witness_block]: /en/developer-reference#term-msg_filtered_witness_block "An alternative to the block header hash data type identifier of an inventory on the P2P network that is reserved for future use and unused."
-[network]: /en/developer-guide#term-network "The Bitcoin P2P network which broadcasts transactions and blocks"
+[network]: /en/p2p-network-guide "The Bitcoin P2P network which broadcasts transactions and blocks"
 [op_checkmultisig]: /en/developer-reference#term-op-checkmultisig "Opcode which returns true if one or more provided signatures (m) sign the correct parts of a transaction and match one or more provided public keys (n)"
 [op_checksig]: /en/developer-reference#term-op-checksig "Opcode which returns true if a signature signs the correct parts of a transaction and matches a provided public key"
 [op_dup]: /en/developer-reference#term-op-dup "Operation which duplicates the entry below it on the stack"
@@ -33,12 +33,12 @@ http://opensource.org/licenses/MIT.
 [op_hash160]: /en/developer-reference#term-op-hash160 "Operation which converts the entry below it on the stack into a RIPEMD(SHA256()) hashed version of itself"
 [op_return]: /en/developer-reference#term-op-return "Operation which terminates the script in failure"
 [op_verify]: /en/developer-reference#term-op-verify "Operation which terminates the script if the entry below it on the stack is non-true (zero)"
-[output index]: /en/developer-guide#term-output-index "The sequentially-numbered index of outputs in a single transaction starting from 0"
+[output index]: /en/transactions-guide#term-output-index "The sequentially-numbered index of outputs in a single transaction starting from 0"
 [PaymentDetails]: /en/developer-examples#term-paymentdetails "The PaymentDetails of the payment protocol which allows the receiver to specify the payment details to the spender"
 [PaymentRequest]: /en/developer-examples#term-paymentrequest "The PaymentRequest of the payment protocol which contains and allows signing of the PaymentDetails"
 [PaymentRequests]: /en/developer-examples#term-paymentrequest "The PaymentRequest of the payment protocol which contains and allows signing of the PaymentDetails"
 [PKI]: /en/developer-examples#term-pki "Public Key Infrastructure; usually meant to indicate the X.509 certificate system used for HTTP Secure (https)."
-[point function]: /en/developer-guide#term-point-function "The ECDSA function used to create a public key from a private key"
+[point function]: /en/wallets-guide#term-point-function "The ECDSA function used to create a public key from a private key"
 [pp amount]: /en/developer-examples#term-pp-amount "Part of the Output part of the PaymentDetails part of a payment protocol where receivers can specify the amount of satoshis they want paid to a particular pubkey script"
 [pp expires]: /en/developer-examples#term-pp-expires "The expires field of a PaymentDetails where the receiver tells the spender when the PaymentDetails expires"
 [pp memo]: /en/developer-examples#term-pp-memo "The memo fields of PaymentDetails, Payment, and PaymentACK which allow spenders and receivers to send each other memos"
@@ -48,23 +48,23 @@ http://opensource.org/licenses/MIT.
 [pp script]: /en/developer-examples#term-pp-script "The script field of a PaymentDetails where the receiver tells the spender what pubkey scripts to pay"
 [previous block header hash]: /en/developer-reference#term-previous-block-header-hash "A field in the block header which contains the SHA256(SHA256()) hash of the previous block's header"
 [proper money handling]: /en/developer-reference#term-proper-money-handling "Bitcoin amounts need to be correctly processed without introducing rounding errors that could cause monetary loss"
-[r]: /en/developer-guide#term-r-parameter "The payment request parameter in a bitcoin: URI"
-[receipt]: /en/developer-guide#term-receipt "A cryptographically-verifiable receipt created using parts of a payment request and a confirmed transaction"
-[recurrent rebilling]: /en/developer-guide#rebilling-recurring-payments "Billing a spender on a regular schedule"
-[refund]: /en/developer-guide#issuing-refunds "A transaction which refunds some or all satoshis received in a previous transaction"
+[r]: /en/payment-processing-guide#term-r-parameter "The payment request parameter in a bitcoin: URI"
+[receipt]: /en/payment-processing-guide#term-receipt "A cryptographically-verifiable receipt created using parts of a payment request and a confirmed transaction"
+[recurrent rebilling]: /en/payment-processing-guide#rebilling-recurring-payments "Billing a spender on a regular schedule"
+[refund]: /en/payment-processing-guide#issuing-refunds "A transaction which refunds some or all satoshis received in a previous transaction"
 [root certificate]: /en/developer-examples#term-root-certificate "A certificate belonging to a certificate authority (CA)"
 [ssl signature]: /en/developer-examples#term-ssl-signature "Signatures created and recognized by major SSL implementations such as OpenSSL"
-[standard block relay]: /en/developer-guide#term-standard-block-relay "The regular block relay method: announcing a block with an inv message and waiting for a response"
-[transaction]: /en/developer-guide#transactions "A transaction spending satoshis"
-[transaction version number]: /en/developer-guide#term-transaction-version-number "A version number prefixed to transactions to allow upgrading""
-[transactions]: /en/developer-guide#transactions "A transaction spending satoshis"
+[standard block relay]: /en/p2p-network-guide#term-standard-block-relay "The regular block relay method: announcing a block with an inv message and waiting for a response"
+[transaction]: /en/transactions-guide "A transaction spending satoshis"
+[transaction version number]: /en/transactions-guide#term-transaction-version-number "A version number prefixed to transactions to allow upgrading""
+[transactions]: /en/transactions-guide "A transaction spending satoshis"
 [unencrypted wallet]: /en/developer-reference#encryptwallet "A wallet that has not been encrypted with the encryptwallet RPC"
-[unique addresses]: /en/developer-guide#term-unique-address "Address which are only used once to protect privacy and increase security"
+[unique addresses]: /en/transactions-guide#term-unique-address "Address which are only used once to protect privacy and increase security"
 [unlocked wallet]: /en/developer-reference#walletpassphrase "An encrypted wallet that has been unlocked with the walletpassphrase RPC"
-[unsolicited block push]: /en/developer-guide#term-unsolicited-block-push "When a miner sends a block message without sending an inv message first"
-[URI QR Code]: /en/developer-guide#term-uri-qr-code "A QR code containing a bitcoin: URI"
+[unsolicited block push]: /en/p2p-network-guide#term-unsolicited-block-push "When a miner sends a block message without sending an inv message first"
+[URI QR Code]: /en/payment-processing-guide#term-uri-qr-code "A QR code containing a bitcoin: URI"
 [v2 block]: /en/developer-reference#term-v2-block "The current version of Bitcoin blocks"
-[verified payments]: /en/developer-guide#verifying-payment "Payments which the receiver believes won't be double spent"
+[verified payments]: /en/payment-processing-guide#verifying-payment "Payments which the receiver believes won't be double spent"
 [wallet support]: /en/developer-reference#term-wallet-support "A Bitcoin Core ./configure option that enables (default) or disables the wallet"
 [prefilledtransaction]: /en/developer-reference#cmpctblock "A P2P Networking data structure used to represent a vector of a few transactions"
 [headerandshortids]: /en/developer-reference#cmpctblock "A P2P Networking data structure used to relay a block header, the short transactions IDs used for matching already-available transactions, and a select few transactions which a peer may be missing"
@@ -268,7 +268,7 @@ http://opensource.org/licenses/MIT.
 [Bitcoin Core 0.14.0]: /en/release/v0.14.0
 [Bitcoin Core 0.14.1]: /en/release/v0.14.1
 [Bitcoin Core 0.14.2]: /en/release/v0.14.2
-[bitcoin URI subsection]: /en/developer-guide#bitcoin-uri
+[bitcoin URI subsection]: /en/payment-processing-guide#bitcoin-uri
 [bitcoind initial setup]: /en/developer-examples
 [bitcoinpdf]: https://bitcoin.org/en/bitcoin-paper
 [choose your wallet]: /en/choose-your-wallet
@@ -280,27 +280,27 @@ http://opensource.org/licenses/MIT.
 [devex payment protocol]: /en/developer-examples#payment-protocol
 [devexamples]: /en/developer-examples
 [devguide]: /en/developer-guide
-[devguide avoiding key reuse]: /en/developer-guide#avoiding-key-reuse
-[devguide hardened keys]: /en/developer-guide#hardened-keys
-[devguide payment processing]: /en/developer-guide#payment-processing
-[devguide wallets]: /en/developer-guide#wallets
+[devguide avoiding key reuse]: /en/transactions-guide#avoiding-key-reuse
+[devguide hardened keys]: /en/wallets-guide#hardened-keys
+[devguide payment processing]: /en/payment-processing-guide
+[devguide wallets]: /en/wallets-guide
 [devref]: /en/developer-reference
 [devref wallets]: /en/developer-reference#wallets
-[locktime parsing rules]: /en/developer-guide#locktime_parsing_rules
-[Merge Avoidance subsection]: /en/developer-guide#merge-avoidance
-[micropayment channel]: /en/developer-guide#term-micropayment-channel
+[locktime parsing rules]: /en/transactions-guide#locktime_parsing_rules
+[Merge Avoidance subsection]: /en/payment-processing-guide#merge-avoidance
+[micropayment channel]: /en/contracts-guide#term-micropayment-channel
 [not a specification]: /en/developer-reference#not-a-specification
 [raw transaction format]: /en/developer-reference#raw-transaction-format
 [REST]: /en/developer-reference#http-rest
 [RPC]: /en/developer-reference#remote-procedure-calls-rpcs
 [RPCs]: /en/developer-reference#remote-procedure-calls-rpcs
-[section block chain]: /en/developer-guide#block-chain
+[section block chain]: /en/blockchain-guide
 [section block header]: /en/developer-reference#block-headers
 [section block versions]: /en/developer-reference#block-versions
 [section creating a bloom filter]: /en/developer-examples#creating-a-bloom-filter
 [section compactSize unsigned integer]: /en/developer-reference#compactsize-unsigned-integers
-[section detecting forks]: /en/developer-guide#detecting-forks
-[section getblocktemplate]: /en/developer-guide#getblocktemplate-rpc
+[section detecting forks]: /en/blockchain-guide#detecting-forks
+[section getblocktemplate]: /en/mining-guide#getblocktemplate-rpc
 [section hash byte order]: /en/developer-reference#hash-byte-order
 [section merkle trees]: /en/developer-reference#merkle-trees
 [section merkleblock example]: /en/developer-examples#parsing-a-merkleblock
@@ -310,11 +310,11 @@ http://opensource.org/licenses/MIT.
 [section rpc quick reference]: /en/developer-reference#rpc-quick-reference
 [section serialized blocks]: /en/developer-reference#serialized-blocks
 [section simple raw transaction]: /en/developer-examples#simple-raw-transaction
-[section verifying payment]: /en/developer-guide#verifying-payment
+[section verifying payment]: /en/payment-processing-guide#verifying-payment
 [secure your wallet]: /en/secure-your-wallet
 [signature script modification warning]: /en/developer-reference#signature_script_modification_warning
 [v0.8 chain fork]: /en/alert/2013-03-11-chain-fork
-[Verification subsection]: /en/developer-guide#verifying-payment
+[Verification subsection]: /en/payment-processing-guide#verifying-payment
 [X509Certificates]: /en/developer-examples#term-x509certificates
 
 {% comment %}<!-- Official reference documents (BIPs should not use zero padding:
