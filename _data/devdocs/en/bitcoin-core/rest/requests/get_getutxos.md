@@ -45,7 +45,7 @@ GET /getutxos/<checkmempool>/<txid>-<n>/<txid>-<n>/.../<txid>-<n>.<bin|hex|json>
 - n: "Format"
   t: "suffix"
   p: "Required<br>(exactly 1)"
-  d: "Set to `.json` for decoded block contents in JSON, or `.bin` or `hex` for a serialized block in binary or hex"
+  d: "Set to `.json` for decoded UTXO entries in JSON, or `.bin` or `hex` for serialized UTXO entries in binary or hex"
 
 {% enditemplate %}
 
