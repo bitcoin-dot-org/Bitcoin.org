@@ -7,7 +7,6 @@ $platforms:
 $oses:
     ios,
     android,
-    windowsphone,
     linux,
     mac,
     windows;
@@ -172,9 +171,6 @@ $oses:
             background-image: url('/img/os/wallet_menu_#{$os}.svg?1528322191');
         }
     }
-    .wallet-blackberry {
-        background-size: 20px;
-    }
 }
 
 .is-expanded + .accordion-content{
@@ -254,16 +250,8 @@ $oses:
         background: url(../img/os/wallet_menu_android.svg?1528322191) center 15px no-repeat;
         background-size: 22px;
     }
-    .wallet-blackberry {
-        background: url(../img/os/wallet_menu_blackberry.svg?1528322191) center 15px no-repeat;
-        background-size: 22px;
-    }
     .wallet-ios {
         background: url(../img/os/wallet_menu_ios.svg?1528322191) center 15px no-repeat;
-        background-size: 22px;
-    }
-    .wallet-windowsphone {
-        background: url(../img/os/wallet_menu_windowsphone.svg?1528322191) center 15px no-repeat;
         background-size: 22px;
     }
 }
