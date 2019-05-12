@@ -5,7 +5,23 @@
   city: "New York"
   country: "United States"
   link: "https://www.magicalcryptoconference.com/"
-  
+
+- date: 2019-05-22
+  title: "Bitcoin Pizza Day in Arnhem Bitcoin City"
+  venue: "De Pizzabakkers"
+  address: "Broerenstraat 35"
+  city: "Arnhem"
+  country: "The Netherlands"
+  link: "https://www.meetup.com/ArnhemBitcoinCity/events/260563058/"
+
+- date: 2019-06-01
+  title: "#LightningHackdayMUC"
+  venue: "Plug and Play Insurtech"
+  address: "Balanstraße 73/Haus 10, 81541"
+  city: "Munich"
+  country: "Germany"
+  link: "https://lightninghackday.fulmo.org/"
+
 - date: 2019-06-03
   title: "Value of Bitcoin Conference"
   venue: "Bavarian State Bank - BayernLB"
@@ -13,7 +29,15 @@
   city: "Munich"
   country: "Germany"
   link: "https://vob-conference.com/"
-  
+
+- date: 2019-06-06
+  title: "Breaking Arnhem"
+  venue: "Barley's Oriental Garden"
+  address: "Pauwstraat 4"
+  city: "Arnhem"
+  country: "The Netherlands"
+  link: "https://www.meetup.com/ArnhemBitcoinCity/events/260731872/"
+
 - date: 2019-06-08
   title: "Breaking Bitcoin"
   venue: "Beurs Van Berlage"
@@ -21,7 +45,7 @@
   city: "Amsterdam"
   country: "The Netherlands"
   link: "https://breaking-bitcoin.com"
-  
+
 - date: 2019-06-14
   title: "UNCHAIN Bitcoin & Blockchain Convention"
   venue: "Säälchen"
@@ -29,7 +53,7 @@
   city: "Berlin"
   country: "Germany"
   link: "https://www.unchain-convention.com/"
-  
+
 - date: 2019-06-25
   title: "Bitcoin 2019"
   venue: "SVN West"
@@ -37,7 +61,7 @@
   city: "San Francisco"
   country: "United States"
   link: "https://www.bitcoin2019conference.com/"
-  
+
 - date: 2019-08-17
   title: "BitBlockBoom"
   venue: "Renaissance Dallas Addison Hotel"
