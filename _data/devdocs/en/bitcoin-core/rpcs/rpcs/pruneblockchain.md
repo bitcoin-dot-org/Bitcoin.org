@@ -7,44 +7,39 @@ http://opensource.org/licenses/MIT.
 ##### PruneBlockChain
 {% include helpers/subhead-links.md %}
 
-{% assign summary_pruneBlockChain="prunes the blockchain up to a specified height or timestamp." %}
+{% assign summary_pruneBlockChain="does PruneBlockChain." %}
 
 {% autocrossref %}
 
 *Added in Bitcoin Core 0.14.0*
 
-The `pruneblockchain` RPC {{summary_pruneBlockChain}} The `-prune` option needs to be enabled (disabled by default).
+The `pruneblockchain` RPC {{summary_pruneBlockChain}}
 
-*Parameter #1---the block height or timestamp*
+*Parameter #1---height*
 
 {% itemplate ntpd1 %}
-- n: "Height"
+- n: "height"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The block height to prune up to. May be set to a particular height, or a unix timestamp to prune blocks whose block time is at least 2 hours older than the provided timestamp"
+  d: "The block height to prune up to. May be set to a discrete height, or a unix timestamp
+       to prune blocks whose block time is at least 2 hours older than the provided timestamp."
 
 {% enditemplate %}
 
-*Result---the height of the last block pruned*
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The height of the last block pruned"
+  d: "Height of the last block pruned."
 
 {% enditemplate %}
 
-*Examples from Bitcoin Core 0.14.1*
+*Example*
 
 {% highlight bash %}
-bitcoin-cli pruneblockchain 413555
-{% endhighlight %}
-
-Result:
-
-{% highlight text %}
-413555
+bitcoin-cli pruneblockchain 1000
 {% endhighlight %}
 
 *See also*

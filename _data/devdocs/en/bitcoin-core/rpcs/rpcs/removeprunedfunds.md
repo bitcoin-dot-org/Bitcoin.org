@@ -7,23 +7,23 @@ http://opensource.org/licenses/MIT.
 ##### RemovePrunedFunds
 {% include helpers/subhead-links.md %}
 
-{% assign summary_removePrunedFunds="deletes the specified transaction from the wallet. Meant for use with pruned wallets and as a companion to importprunedfunds." %}
+{% assign summary_removePrunedFunds="deletes the specified transaction from the wallet." %}
 
 {% autocrossref %}
 
 *Added in Bitcoin Core 0.13.0*
 
-*Requires wallet support.*
+The `removeprunedfunds` RPC {{summary_removePrunedFunds}}
 
-The `removeprunedfunds` RPC {{summary_removePrunedFunds}} This will effect wallet balances.
+Meant for use with pruned wallets and as a companion to importprunedfunds. This will affect wallet balances.
 
-*Parameter #1---the raw transaction to import*
+*Parameter #1---txid*
 
 {% itemplate ntpd1 %}
-- n: "TXID"
-  t: "string<br>(hex)"
+- n: "txid"
+  t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The hex-encoded id of the transaction you are removing"
+  d: "The hex-encoded id of the transaction you are deleting"
 
 {% enditemplate %}
 
@@ -33,18 +33,15 @@ The `removeprunedfunds` RPC {{summary_removePrunedFunds}} This will effect walle
 - n: "`result`"
   t: "null"
   p: "Required<br>(exactly 1)"
-  d: "If the funds are removed from the wallet, JSON `null` will be returned"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.13.1*
+*Example*
 
 {% highlight bash %}
-bitcoin-cli removeprunedfunds a8d0c0184dde994a09ec054286f1ce581b\
-ebf46446a512166eae7628734ea0a5
+bitcoin-cli removeprunedfunds "a8d0c0184dde994a09ec054286f1ce581bebf46446a512166eae7628734ea0a5"
 {% endhighlight %}
-
-(Success: no result displayed.)
 
 *See also*
 

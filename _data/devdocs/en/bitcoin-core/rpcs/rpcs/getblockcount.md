@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### GetBlockCount
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getBlockCount="returns the number of blocks in the local best block chain." %}
+{% assign summary_getBlockCount="returns the number of blocks in the longest blockchain." %}
 
 {% autocrossref %}
 
@@ -15,26 +15,20 @@ The `getblockcount` RPC {{summary_getBlockCount}}
 
 *Parameters: none*
 
-*Result---the number of blocks in the local best block chain*
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The number of blocks in the local best block chain.  For a new node with only the hardcoded genesis block, this number will be 0"
+  d: "The current block count"
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet getblockcount
-{% endhighlight %}
-
-Result:
-
-{% highlight text %}
-315280
+bitcoin-cli getblockcount
 {% endhighlight %}
 
 *See also*

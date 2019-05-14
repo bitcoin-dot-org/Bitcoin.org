@@ -7,51 +7,52 @@ http://opensource.org/licenses/MIT.
 ##### AddNode
 {% include helpers/subhead-links.md %}
 
-{% assign summary_addNode="attempts to add or remove a node from the addnode list, or to try a connection to a node once." %}
+{% assign summary_addNode="attempts to add or remove a node from the addnode list." %}
 
 {% autocrossref %}
 
 The `addnode` RPC {{summary_addNode}}
 
-*Parameter #1---hostname/IP address and port of node to add or remove*
+Or try a connection to a node once.
+
+Nodes added using addnode (or -connect) are protected from DoS disconnection and are not required to be
+full nodes/support SegWit as other outbound peers are (though such peers will not be synced from).
+
+*Parameter #1---node*
 
 {% itemplate ntpd1 %}
-- n: "Node"
+- n: "node"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The node to add as a string in the form of `<IP address>:<port>`.  The IP address may be a hostname resolvable through DNS, an IPv4 address, an IPv4-as-IPv6 address, or an IPv6 address"
+  d: "The node (see getpeerinfo for nodes). The node to add as a string in the form of `<IP address>:<port>`.  The IP address may be a hostname resolvable through DNS, an IPv4 address, an IPv4-as-IPv6 address, or an IPv6 address"
 
 {% enditemplate %}
 
-*Parameter #2---whether to add or remove the node, or to try only once to connect*
+*Parameter #2---command*
 
 {% itemplate ntpd1 %}
-- n: "Command"
+- n: "command"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "What to do with the IP address above.  Options are:<br>• `add` to add a node to the addnode list.  Up to 8 nodes can be added additional to the default 8 nodes. Not limited by `-maxconnections`<br>• `remove` to remove a node from the list.  If currently connected, this will disconnect immediately<br>• `onetry` to immediately attempt connection to the node even if the outgoing connection slots are full; this will only attempt the connection once"
+  d: "'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once. What to do with the IP address above.  Options are:<br>• `add` to add a node to the addnode list.  Up to 8 nodes can be added additional to the default 8 nodes. Not limited by `-maxconnections`<br>• `remove` to remove a node from the list.  If currently connected, this will disconnect immediately<br>• `onetry` to immediately attempt connection to the node even if the outgoing connection slots are full; this will only attempt the connection once"
 
 {% enditemplate %}
 
-*Result---`null` plus error on failed remove*
+*Result---`null` on success*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
   t: "null"
   p: "Required<br>(exactly 1)"
-  d: "Always JSON `null` whether the node was added, removed, tried-and-connected, or tried-and-not-connected.  The JSON-RPC error field will be set only if you try removing a node that is not on the addnodes list"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
-
-Try connecting to the following node.
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet addnode 192.0.2.113:18333 onetry
+bitcoin-cli addnode "192.168.0.6:8333" "onetry"
 {% endhighlight %}
-
-Result (no output from `bitcoin-cli` because result is set to `null`).
 
 *See also*
 

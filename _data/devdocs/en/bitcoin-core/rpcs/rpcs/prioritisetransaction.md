@@ -7,64 +7,60 @@ http://opensource.org/licenses/MIT.
 ##### PrioritiseTransaction
 {% include helpers/subhead-links.md %}
 
-{% assign summary_prioritiseTransaction="adds virtual priority or fee to a transaction, allowing it to be accepted into blocks mined by this node (or miners which use this node) with a lower priority or fee. (It can also remove virtual priority or fee, requiring the transaction have a higher priority or fee to be accepted into a locally-mined block.)" %}
+{% assign summary_prioritiseTransaction="accepts the transaction into mined blocks at a higher (or lower) priority." %}
 
 {% autocrossref %}
 
 The `prioritisetransaction` RPC {{summary_prioritiseTransaction}}
 
-*Parameter #1---the TXID of the transaction to modify*
+*Parameter #1---txid*
 
 {% itemplate ntpd1 %}
-- n: "TXID"
+- n: "txid"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The TXID of the transaction whose virtual priority or fee you want to modify, encoded as hex in RPC byte order"
+  d: "The transaction id."
 
 {% enditemplate %}
 
-*Parameter #2---the change to make to the virtual priority*
+*Parameter #2---dummy*
 
 {% itemplate ntpd1 %}
-- n: "Priority"
-  t: "number (real)"
-  p: "Required<br>(exactly 1)"
-  d: "If positive, the priority to add to the transaction in addition to its computed priority; if negative, the priority to subtract from the transaction's computed priory.  Computed priority is the age of each input in days since it was added to the block chain as an output (coinage) times the value of the input in satoshis (value) divided by the size of the serialized transaction (size), which is `coinage * value / size`"
+- n: "dummy"
+  t: "number (int)"
+  p: "Optional"
+  d: "API-Compatibility for previous API. Must be zero or null.
+       DEPRECATED. For forward compatibility use named arguments and omit this parameter."
 
 {% enditemplate %}
 
-*Parameter #3---the change to make to the virtual fee*
+*Parameter #3---fee_delta*
 
 {% itemplate ntpd1 %}
-- n: "Fee"
+- n: "fee_delta"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "**Warning:** this value is in satoshis, not bitcoins<br><br>If positive, the virtual fee to add to the actual fee paid by the transaction; if negative, the virtual fee to subtract from the actual fee paid by the transaction.  No change is made to the actual fee paid by the transaction"
+  d: "The fee value (in satoshis) to add (or subtract, if negative).
+       Note, that this value is not a fee rate. It is a value to modify absolute fee of the TX.
+       The fee is not actually paid, only the algorithm for selecting transactions into a block
+       considers the transaction as it would have paid a higher (or lower) fee."
 
 {% enditemplate %}
 
-*Result---`true` if the priority is changed*
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
-  t: "bool (true only)"
+  t: "boolean"
   p: "Required<br>(exactly 1)"
-  d: "Always set to `true` if all three parameters are provided.  Will not return an error if the TXID is not in the memory pool.  If fewer or more than three arguments are provided, or if something goes wrong, will be set to `null`"
+  d: "Returns true"
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet prioritisetransaction \
-    fe0165147da737e16f5096ab6c1709825217377a95a882023ed089a89af4cff9 \
-    1234 456789
-{% endhighlight %}
-
-Result:
-
-{% highlight json %}
-true
+bitcoin-cli prioritisetransaction "txid" 0.0 10000
 {% endhighlight %}
 
 *See also*

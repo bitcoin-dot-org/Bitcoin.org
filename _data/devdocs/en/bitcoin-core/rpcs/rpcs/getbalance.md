@@ -7,62 +7,70 @@ http://opensource.org/licenses/MIT.
 ##### GetBalance
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getBalance="gets the balance in decimal bitcoins across all accounts or for a particular account." %}
+{% assign summary_getBalance="returns the total available balance." %}
 
 {% autocrossref %}
 
-*Requires wallet support.*
-
 The `getbalance` RPC {{summary_getBalance}}
 
-*Parameter #1---an account name*
+The available balance is what the wallet considers currently spendable, and is
+thus affected by options which limit spendability such as -spendzeroconfchange.
+
+*Parameter #1---dummy*
 
 {% itemplate ntpd1 %}
-- n: "Account"
+- n: "dummy"
   t: "string"
-  p: "Optional<br>(0 or 1)"
-  d: "*Deprecated: will be removed in a later version of Bitcoin Core*<br><br>The name of an account to get the balance for.  An empty string (\"\") is the default account.  The string `*` will get the balance for all accounts (this is the default behavior)"
+  p: "Optional"
+  d: "Remains for backward compatibility. Must be excluded or set to \"*\"."
 
 {% enditemplate %}
 
-*Parameter #2---the minimum number of confirmations*
+*Parameter #2---minconf*
 
-{{INCLUDE_CONFIRMATIONS_PARAMETER}}
+{% itemplate ntpd1 %}
+- n: "minconf"
+  t: "number (int)"
+  p: "Optional<br>Default=0"
+  d: "Only include transactions confirmed at least this many times."
 
-*Parameter #3---whether to include watch-only addresses*
+{% enditemplate %}
 
-{{INCLUDE_INCLUDE_WATCH_ONLY_PARAMETER}}
+*Parameter #3---include_watchonly*
 
-*Result---the balance in bitcoins*
+{% itemplate ntpd1 %}
+- n: "include_watchonly"
+  t: "boolean"
+  p: "Optional<br>Default=false"
+  d: "Also include balance in watch-only addresses (see 'importaddress')"
+
+{% enditemplate %}
+
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
-  t: "number (bitcoins)"
+  t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The balance of the account (or all accounts) in bitcoins"
+  d: "The total amount in BTC received for this wallet."
 
 {% enditemplate %}
 
-*Examples from Bitcoin Core 0.10.0*
+*Example*
 
-Get the balance for the "test1" account, including transactions with
-at least one confirmation and those spent to watch-only addresses in
-that account.
+The total amount in the wallet with 1 or more confirmations
 
 {% highlight bash %}
-bitcoin-cli -testnet getbalance "test1" 1 true
+bitcoin-cli getbalance
 {% endhighlight %}
+The total amount in the wallet at least 6 blocks confirmed
 
-Result:
-
-{% highlight json %}
-1.99900000
+{% highlight bash %}
+bitcoin-cli getbalance "*" 6
 {% endhighlight %}
 
 *See also*
 
-* [ListAccounts][rpc listaccounts]: {{summary_listAccounts}}
-* [GetReceivedByAccount][rpc getreceivedbyaccount]: {{summary_getReceivedByAccount}}
 * [GetReceivedByAddress][rpc getreceivedbyaddress]: {{summary_getReceivedByAddress}}
 
 {% endautocrossref %}

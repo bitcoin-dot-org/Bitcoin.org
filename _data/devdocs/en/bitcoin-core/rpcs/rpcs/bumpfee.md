@@ -1,4 +1,4 @@
-﻿{% comment %}
+{% comment %}
 This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
@@ -7,110 +7,99 @@ http://opensource.org/licenses/MIT.
 ##### BumpFee
 {% include helpers/subhead-links.md %}
 
-{% assign summary_bumpFee="replaces an unconfirmed wallet transaction that signaled RBF with a new transaction that pays a higher fee." %}
+{% assign summary_bumpFee="bumps the fee of an opt-in-RBF transaction T, replacing it with a new transaction B." %}
 
 {% autocrossref %}
 
 *Added in Bitcoin Core 0.14.0*
 
-*Requires wallet support. Wallet must be unlocked.*
+The `bumpfee` RPC {{summary_bumpFee}}
 
-The `bumpfee` RPC {{summary_bumpFee}} The increased fee is deducted from the change output. The command fails if the change output is too small to increase the fee or 
-if the wallet or mempool contains a transaction that spends one of the transaction's outputs. The `-walletrbf` option needs to be enabled (default is `false`).
+An opt-in RBF transaction with the given txid must be in the wallet.
 
-*Parameter #1---The TXID of the transaction*
+The command will pay the additional fee by decreasing (or perhaps removing) its change output.
+
+If the change output is not big enough to cover the increased fee, the command will currently fail
+instead of adding new inputs to compensate. (A future implementation could improve this.)
+The command will fail if the wallet or mempool contains a transaction that spends one of T's outputs.
+
+By default, the new fee will be calculated automatically using estimatesmartfee.
+
+The user can specify a confirmation target for estimatesmartfee.
+
+Alternatively, the user can specify totalFee, or use RPC settxfee to set a higher fee rate.
+
+At a minimum, the new fee rate must be high enough to pay an additional new relay fee (incrementalfee
+returned by getnetworkinfo) to enter the node's mempool.
+
+*Parameter #1---txid*
 
 {% itemplate ntpd1 %}
-- n: "TXID"
-  t: "string (hex)"
+- n: "txid"
+  t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The id of the transaction"
+  d: "The txid to be bumped"
 
 {% enditemplate %}
 
-*Parameter #2---Additional options*
+*Parameter #2---options*
 
 {% itemplate ntpd1 %}
-- n: "Options"
-  t: "Object"
-  p: "Optional<br>(0 or 1)"
-  d: "Additional options"
-
-- n: "→ <br>`confTarget`"
-  t: "numeric (int)"
-  p: "Optional<br>(0 or 1)"
-  d: "The confirmation target in blocks. Based on this value the new fee will be calculated using the same code as the `estimatefee` RPC. If not set, the default target of ´6´ blocks will be used"
-  
-- n: "→ <br>`totalFee`"
-  t: "numeric (satoshis)"
-  p: "Optional<br>(0 or 1)"
-  d: "The total fee to pay in satoshis (not the feerate). The actual fee can be higher in rare cases if the change output is close to the dust limit"
-
-- n: "→ <br>`replaceable`"
-  t: "bool"
-  p: "Optional<br>(0 or 1)"
-  d: "Whether the new transaction should still be BIP 125 replaceable. Even if set to `false` the transaction may still be replacable, for example if it has unconfirmed ancestors which are replaceable. The default is `true`"
-  
-{% enditemplate %}
-
-*Result---information about the new transaction*
-
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "object"
-  p: "Required<br>(exactly 1)"
-  d: "An object including information about the new transaction"
-
-- n: "→ <br>`txid`"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The id of the new transaction"
-
-- n: "→ <br>`origfee`"
-  t: "numeric (bitcoins)"
-  p: "Required<br>(exactly 1)"
-  d: "The fee of the replaced transaction"
-
-- n: "→ <br>`fee`"
-  t: "numeric (bitcoins)"
-  p: "Required<br>(exactly 1)"
-  d: "The fee of the new transaction"
-  
-- n: "→ <br>`errors`"
-  t: "array"
-  p: "Required<br>(exactly 1)"
-  d: "Errors encountered during processing (may be empty)"
+- n: "options"
+  t: "json object"
+  p: "Optional"
+  d: ""
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.14.1*
+{% endautocrossref %}
+
+    {
+      "confTarget": n,           (numeric, optional, default=fallback to wallet's default) Confirmation target (in blocks)
+      "totalFee": n,             (numeric, optional, default=fallback to 'confTarget') Total fee (NOT feerate) to pay, in satoshis.
+                                 In rare cases, the actual fee paid might be slightly higher than the specified
+                                 totalFee if the tx change output has to be removed because it is too close to
+                                 the dust threshold.
+      "replaceable": bool,       (boolean, optional, default=true) Whether the new transaction should still be
+                                 marked bip-125 replaceable. If true, the sequence numbers in the transaction will
+                                 be left unchanged from the original. If false, any input sequence numbers in the
+                                 original transaction that were less than 0xfffffffe will be increased to 0xfffffffe
+                                 so the new transaction will not be explicitly bip-125 replaceable (though it may
+                                 still be replaceable in practice, for example if it has unconfirmed ancestors which
+                                 are replaceable).
+      "estimate_mode": "str",    (string, optional, default=UNSET) The fee estimate mode, must be one of:
+                                 "UNSET"
+                                 "ECONOMICAL"
+                                 "CONSERVATIVE"
+    }
+
+{% autocrossref %}
+
+*Result*
+
+{% endautocrossref %}
+
+    {
+      "txid":    "value",   (string)  The id of the new transaction
+      "origfee":  n,         (numeric) Fee of the replaced transaction
+      "fee":      n,         (numeric) Fee of the new transaction
+      "errors":  [ str... ] (json array of strings) Errors encountered during processing (may be empty)
+    }
+
+{% autocrossref %}
+
+*Example*
+
+Bump the fee, get the new transaction's txid
 
 {% highlight bash %}
-bitcoin-cli -testnet bumpfee d4a33e0cabaz723149e1fcab4e033a40173\
-88a644c65370e3cb06ba2f0e13975\
-'{
-    "totalFee": 4000,
-    "replaceable": false
-}'
-{% endhighlight %}
-
-Result:
-
-{% highlight json %}
-{
-	"txid": "37a55ce49636977k79bcb04ee1143573b570b1743e09660e79e7ec3320968ca54",
-	"origfee": 0.00002450,
-	"fee": 0.00004000,
-	"errors": ""
-}
+bitcoin-cli bumpfee <txid>
 {% endhighlight %}
 
 *See also*
 
 * [CreateRawTransaction][rpc createrawtransaction]: {{summary_createRawTransaction}}
 * [FundRawTransaction][rpc fundrawtransaction]: {{summary_fundRawTransaction}}
-* [SignRawTransaction][rpc signrawtransaction]: {{summary_signRawTransaction}}
 * [SendRawTransaction][rpc sendrawtransaction]: {{summary_sendRawTransaction}}
-* [Serialized Transaction Format][raw transaction format]
 
 {% endautocrossref %}

@@ -7,35 +7,29 @@ http://opensource.org/licenses/MIT.
 ##### WalletPassphraseChange
 {% include helpers/subhead-links.md %}
 
-{% assign summary_walletPassphraseChange="changes the wallet passphrase from 'old passphrase' to 'new passphrase'." %}
+{% assign summary_walletPassphraseChange="changes the wallet passphrase from 'oldpassphrase' to 'newpassphrase'." %}
 
 {% autocrossref %}
 
-*Requires wallet support.  Requires an encrypted wallet.*
-
 The `walletpassphrasechange` RPC {{summary_walletPassphraseChange}}
 
-{{WARNING}} if using this RPC on the command line, remember
-that your shell probably saves your command lines (including the
-value of the passphrase parameter).
-
-*Parameter #1---the current passphrase*
+*Parameter #1---oldpassphrase*
 
 {% itemplate ntpd1 %}
-- n: "Current Passphrase"
+- n: "oldpassphrase"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The current wallet passphrase"
+  d: "The current passphrase"
 
 {% enditemplate %}
 
-*Parameter #2---the new passphrase*
+*Parameter #2---newpassphrase*
 
 {% itemplate ntpd1 %}
-- n: "New Passphrase"
+- n: "newpassphrase"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The new passphrase for the wallet"
+  d: "The new passphrase"
 
 {% enditemplate %}
 
@@ -45,19 +39,15 @@ value of the passphrase parameter).
 - n: "`result`"
   t: "null"
   p: "Required<br>(exactly 1)"
-  d: "Always set to JSON `null`"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
-
-Change the wallet passphrase from "test" to "example":
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet walletpassphrasechange test example
+bitcoin-cli walletpassphrasechange "old one" "new one"
 {% endhighlight %}
-
-(Success: no result printed.)
 
 *See also*
 

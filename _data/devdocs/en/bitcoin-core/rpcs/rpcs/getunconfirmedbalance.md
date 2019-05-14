@@ -7,37 +7,23 @@ http://opensource.org/licenses/MIT.
 ##### GetUnconfirmedBalance
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getUnconfirmedBalance="returns the wallet's total unconfirmed balance." %}
+{% assign summary_getUnconfirmedBalance="returns the server's total unconfirmed balance." %}
 
 {% autocrossref %}
-
-*Requires wallet support.*
 
 The `getunconfirmedbalance` RPC {{summary_getUnconfirmedBalance}}
 
 *Parameters: none*
 
-*Result---the balance of unconfirmed transactions paying this wallet*
+*Result---`null` on success*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
-  t: "number (bitcoins)"
+  t: "null"
   p: "Required<br>(exactly 1)"
-  d: "The total number of bitcoins paid to this wallet in unconfirmed transactions"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
-
-*Example from Bitcoin Core 0.10.0*
-
-{% highlight bash %}
-bitcoin-cli -testnet getunconfirmedbalance
-{% endhighlight %}
-
-Result (no unconfirmed incoming payments):
-
-{% highlight json %}
-0.00000000
-{% endhighlight %}
 
 *See also*
 

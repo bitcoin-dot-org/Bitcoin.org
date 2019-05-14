@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### DisconnectNode
 {% include helpers/subhead-links.md %}
 
-{% assign summary_disconnectNode="immediately disconnects from a specified node." %}
+{% assign summary_disconnectNode="immediately disconnects from the specified peer node." %}
 
 {% autocrossref %}
 
@@ -15,35 +15,48 @@ http://opensource.org/licenses/MIT.
 
 The `disconnectnode` RPC {{summary_disconnectNode}}
 
-*Parameter #1---hostname/IP address and port of node to disconnect*
+Strictly one out of 'address' and 'nodeid' can be provided to identify the node.
+
+To disconnect by nodeid, either set 'address' to the empty string, or call using the named 'nodeid' argument only.
+
+*Parameter #1---address*
 
 {% itemplate ntpd1 %}
-- n: "Address"
+- n: "address"
   t: "string"
-  p: "Required<br>(exactly 1)"
-  d: "*Updated in Bitcoin Core 0.14.1*<br><br>The node you want to disconnect from as a string in the form of `<IP address>:<port>`.  The IP address may be a hostname resolvable through DNS, an IPv4 address, an IPv4-as-IPv6 address, or an IPv6 address"
+  p: "Optional<br>Default=fallback to nodeid"
+  d: "The IP address/port of the node"
 
 {% enditemplate %}
 
-*Result---`null` on success or error on failed disconnect*
+*Parameter #2---nodeid*
+
+{% itemplate ntpd1 %}
+- n: "nodeid"
+  t: "number (int)"
+  p: "Optional<br>Default=fallback to address"
+  d: "The node ID (see getpeerinfo for node IDs)"
+
+{% enditemplate %}
+
+*Result---`null` on success*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
   t: "null"
   p: "Required<br>(exactly 1)"
-  d: "JSON `null` when the node was disconnected"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.14.1*
-
-Disconnects following node from your node.
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet disconnectnode 192.0.2.113:18333
+bitcoin-cli disconnectnode "192.168.0.6:8333"
 {% endhighlight %}
-
-Result (no output from `bitcoin-cli` because result is set to `null`).
+{% highlight bash %}
+bitcoin-cli disconnectnode "" 1
+{% endhighlight %}
 
 *See also*
 

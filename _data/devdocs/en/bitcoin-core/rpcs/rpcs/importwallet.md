@@ -7,22 +7,21 @@ http://opensource.org/licenses/MIT.
 ##### ImportWallet
 {% include helpers/subhead-links.md %}
 
-{% assign summary_importWallet="imports private keys from a file in wallet dump file format (see the `dumpwallet` RPC). These keys will be added to the keys currently in the wallet.  This call may need to rescan all or parts of the block chain for transactions affecting the newly-added keys, which may take several minutes." %}
+{% assign summary_importWallet="imports keys from a wallet dump file (see dumpwallet)." %}
 
 {% autocrossref %}
 
-*Requires wallet support. Requires an unlocked wallet or an
-unencrypted wallet.*
-
 The `importwallet` RPC {{summary_importWallet}}
 
-*Parameter #1---the file to import*
+Requires a new wallet backup to include imported keys.
+
+*Parameter #1---filename*
 
 {% itemplate ntpd1 %}
-- n: "Filename"
+- n: "filename"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The file to import.  The path is relative to Bitcoin Core's working directory"
+  d: "The wallet file"
 
 {% enditemplate %}
 
@@ -32,19 +31,24 @@ The `importwallet` RPC {{summary_importWallet}}
 - n: "`result`"
   t: "null"
   p: "Required<br>(exactly 1)"
-  d: "If all the keys in the file are added to the wallet (or are already part of the wallet), JSON `null` will be returned"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
 
-Import the file shown in the example subsection of the `dumpwallet` RPC.
+Dump the wallet
 
 {% highlight bash %}
-bitcoin-cli -testnet importwallet /tmp/dump.txt
+bitcoin-cli dumpwallet "test"
 {% endhighlight %}
+Import the wallet
 
-(Success: no result displayed.)
+{% highlight bash %}
+bitcoin-cli importwallet "test"
+{% endhighlight %}
+Import using the json rpc call
+
 
 *See also*
 

@@ -7,68 +7,68 @@ http://opensource.org/licenses/MIT.
 ##### VerifyMessage
 {% include helpers/subhead-links.md %}
 
-{% assign summary_verifyMessage="verifies a signed message." %}
+{% assign summary_verifyMessage="verify a signed message." %}
 
 {% autocrossref %}
 
 The `verifymessage` RPC {{summary_verifyMessage}}
 
-*Parameter #1---the address corresponding to the signing key*
+*Parameter #1---address*
 
 {% itemplate ntpd1 %}
-- n: "Address"
-  t: "string (base58)"
-  p: "Required<br>(exactly 1)"
-  d: "The P2PKH address corresponding to the private key which made the signature.  A P2PKH address is a hash of the public key corresponding to the private key which made the signature."
-
-{% enditemplate %}
-
-*Parameter #2---the signature*
-
-{% itemplate ntpd1 %}
-- n: "Signature"
-  t: "string (base64)"
-  p: "Required<br>(exactly 1)"
-  d: "The signature created by the signer encoded as base-64 (the format output by the `signmessage` RPC)"
-
-{% enditemplate %}
-
-*Parameter #3---the message*
-
-{% itemplate ntpd1 %}
-- n: "Message"
+- n: "address"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The message exactly as it was signed (e.g. no extra whitespace)"
+  d: "The bitcoin address to use for the signature."
 
 {% enditemplate %}
 
-*Result: `true`, `false`, or an error*
+*Parameter #2---signature*
+
+{% itemplate ntpd1 %}
+- n: "signature"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The signature provided by the signer in base 64 encoding (see signmessage)."
+
+{% enditemplate %}
+
+*Parameter #3---message*
+
+{% itemplate ntpd1 %}
+- n: "message"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The message that was signed."
+
+{% enditemplate %}
+
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
-  t: "bool/null"
+  t: "boolean"
   p: "Required<br>(exactly 1)"
-  d: "Set to `true` if the message was signed by a key corresponding to the provided P2PKH address; set to `false` if it was not signed by that key; set to JSON `null` if an error occurred"
+  d: "If the signature is verified or not."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
 
-Check the signature on the message created in the example for
-`signmessage`:
+Unlock the wallet for 30 seconds
 
 {% highlight bash %}
-bitcoin-cli -testnet verifymessage \
-  mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe \
-  IL98ziCmwYi5pL+dqKp4Ux+zCa4hP/xbjHmWh+Mk/lefV/0pWV1p/gQ94jgExSmgH2/+PDcCCrOHAady2IEySSI= \
-  'Hello, World!'
+bitcoin-cli walletpassphrase "mypassphrase" 30
 {% endhighlight %}
+Create the signature
 
-Result:
+{% highlight bash %}
+bitcoin-cli signmessage "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX" "my message"
+{% endhighlight %}
+Verify the signature
 
-{% highlight json %}
-true
+{% highlight bash %}
+bitcoin-cli verifymessage "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX" "signature" "my message"
 {% endhighlight %}
 
 *See also*

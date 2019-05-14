@@ -7,91 +7,88 @@ http://opensource.org/licenses/MIT.
 ##### DecodeRawTransaction
 {% include helpers/subhead-links.md %}
 
-{% assign summary_decodeRawTransaction="decodes a serialized transaction hex string into a JSON object describing the transaction." %}
+{% assign summary_decodeRawTransaction="return a JSON object representing the serialized, hex-encoded transaction." %}
 
 {% autocrossref %}
 
 The `decoderawtransaction` RPC {{summary_decodeRawTransaction}}
 
-*Parameter #1---serialized transaction in hex*
+*Parameter #1---hexstring*
 
 {% itemplate ntpd1 %}
-- n: "Serialized Transaction"
-  t: "string (hex)"
+- n: "hexstring"
+  t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The transaction to decode in serialized transaction format"
+  d: "The transaction hex string"
 
 {% enditemplate %}
 
-*Result---the decoded transaction*
+*Parameter #2---iswitness*
 
 {% itemplate ntpd1 %}
-- n: "`result`"
-  t: "object"
-  p: "Required<br>(exactly 1)"
-  d: "An object describing the decoded transaction, or JSON `null` if the transaction could not be decoded"
+- n: "iswitness"
+  t: "boolean"
+  p: "Optional<br>Default=depends on heuristic tests"
+  d: "Whether the transaction hex is a serialized witness transaction
+       If iswitness is not present, heuristic tests will be used in decoding"
 
-{{INCLUDE_DECODE_RAW_TRANSACTION}}
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.13.1*
+*Result*
 
-Decode a signed one-input, three-output transaction:
+{% endautocrossref %}
+
+    {
+      "txid" : "id",        (string) The transaction id
+      "hash" : "id",        (string) The transaction hash (differs from txid for witness transactions)
+      "size" : n,             (numeric) The transaction size
+      "vsize" : n,            (numeric) The virtual transaction size (differs from size for witness transactions)
+      "weight" : n,           (numeric) The transaction's weight (between vsize*4 - 3 and vsize*4)
+      "version" : n,          (numeric) The version
+      "locktime" : ttt,       (numeric) The lock time
+      "vin" : [               (array of json objects)
+         {
+           "txid": "id",    (string) The transaction id
+           "vout": n,         (numeric) The output number
+           "scriptSig": {     (json object) The script
+             "asm": "asm",  (string) asm
+             "hex": "hex"   (string) hex
+           },
+           "txinwitness": ["hex", ...] (array of string) hex-encoded witness data (if any)
+           "sequence": n     (numeric) The script sequence number
+         }
+         ,...
+      ],
+      "vout" : [             (array of json objects)
+         {
+           "value" : x.xxx,            (numeric) The value in BTC
+           "n" : n,                    (numeric) index
+           "scriptPubKey" : {          (json object)
+             "asm" : "asm",          (string) the asm
+             "hex" : "hex",          (string) the hex
+             "reqSigs" : n,            (numeric) The required sigs
+             "type" : "pubkeyhash",  (string) The type, eg 'pubkeyhash'
+             "addresses" : [           (json array of string)
+               "12tvKAXCxZjSmdNbao16dKXC8tRWfcF5oc"   (string) bitcoin address
+               ,...
+             ]
+           }
+         }
+         ,...
+      ],
+    }
+
+{% autocrossref %}
+
+*Example*
 
 {% highlight bash %}
-bitcoin-cli decoderawtransaction 0100000001bafe2175b9d7b3041ebac\
-529056b393cf2997f7964485aa382ffa449ffdac02a000000008a47304402201\
-3d212c22f0b46bb33106d148493b9a9723adb2c3dd3a3ebe3a9c9e3b95d8cb00\
-220461661710202fbab550f973068af45c294667fc4dc526627a7463eb23ab39\
-e9b01410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815\
-b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08\
-ffb10d4b8ffffffff01b0a86a00000000001976a91401b81d5fa1e55e069e3cc\
-2db9c19e2e80358f30688ac00000000
-{% endhighlight %}
-
-Result:
-
-{% highlight json %}
-{
-    "txid": "52309405287e737cf412fc42883d65a392ab950869fae80b2a5f1e33326aca46",
-    "hash": "52309405287e737cf412fc42883d65a392ab950869fae80b2a5f1e33326aca46",
-    "size": 223,
-    "vsize": 223,
-    "version": 1,
-    "locktime": 0,
-    "vin": [
-        {
-            "txid": "2ac0daff49a4ff82a35a4864797f99f23c396b0529c5ba1e04b3d7b97521feba",
-            "vout": 0,
-            "scriptSig": {
-                "asm": "3044022013d212c22f0b46bb33106d148493b9a9723adb2c3dd3a3ebe3a9c9e3b95d8cb00220461661710202fbab550f973068af45c294667fc4dc526627a7463eb23ab39e9b[ALL] 0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
-                "hex": "473044022013d212c22f0b46bb33106d148493b9a9723adb2c3dd3a3ebe3a9c9e3b95d8cb00220461661710202fbab550f973068af45c294667fc4dc526627a7463eb23ab39e9b01410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8"
-            },
-            "sequence": 4294967295
-        }
-    ],
-    "vout": [
-        {
-            "value": 0.06990000,
-            "n": 0,
-            "scriptPubKey": {
-            "asm": "OP_DUP OP_HASH160 01b81d5fa1e55e069e3cc2db9c19e2e80358f306 OP_EQUALVERIFY OP_CHECKSIG",
-                "hex": "76a91401b81d5fa1e55e069e3cc2db9c19e2e80358f30688ac",
-                "reqSigs": 1,
-                "type": "pubkeyhash",
-                "addresses": [
-                    "1A6Ei5cRfDJ8jjhwxfzLJph8B9ZEthR9Z"
-                ]
-            }
-        }
-    ]
-}
+bitcoin-cli decoderawtransaction "hexstring"
 {% endhighlight %}
 
 *See also*
 
 * [CreateRawTransaction][rpc createrawtransaction]: {{summary_createRawTransaction}}
-* [SignRawTransaction][rpc signrawtransaction]: {{summary_signRawTransaction}}
 * [SendRawTransaction][rpc sendrawtransaction]: {{summary_sendRawTransaction}}
 
 {% endautocrossref %}

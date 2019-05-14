@@ -7,56 +7,51 @@ http://opensource.org/licenses/MIT.
 ##### ListLockUnspent
 {% include helpers/subhead-links.md %}
 
-{% assign summary_listLockUnspent="returns a list of temporarily unspendable (locked) outputs." %}
+{% assign summary_listLockUnspent="returns list of temporarily unspendable outputs." %}
 
 {% autocrossref %}
 
-*Requires wallet support.*
-
 The `listlockunspent` RPC {{summary_listLockUnspent}}
+
+See the lockunspent call to lock and unlock transactions for spending.
 
 *Parameters: none*
 
-*Result---an array of locked outputs*
+*Result*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "array"
-  p: "Required<br>(exactly 1)"
-  d: "An array containing all locked outputs.  May be empty"
+{% endautocrossref %}
 
-- n: "→<br>Output"
-  t: "object"
-  p: "Optional<br>(1 or more)"
-  d: "An object describing a particular locked output"
+    [
+      {
+        "txid" : "transactionid",     (string) The transaction id locked
+        "vout" : n                      (numeric) The vout value
+      }
+      ,...
+    ]
 
-- n: "→ →<br>`txid`"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The TXID of the transaction containing the locked output, encoded as hex in RPC byte order"
+{% autocrossref %}
 
-- n: "→ →<br>`vout`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The output index number (vout) of the locked output within the transaction.  Output index `0` is the first output within the transaction"
+*Example*
 
-{% enditemplate %}
-
-*Example from Bitcoin Core 0.10.0*
+List the unspent transactions
 
 {% highlight bash %}
-bitcoin-cli -testnet listlockunspent
+bitcoin-cli listunspent
 {% endhighlight %}
+Lock an unspent transaction
 
-Result:
+{% highlight bash %}
+bitcoin-cli lockunspent false "[{\"txid\":\"a08e6907dbbd3d809776dbfc5d82e371b764ed838b5655e72f463568df1aadf0\",\"vout\":1}]"
+{% endhighlight %}
+List the locked transactions
 
-{% highlight json %}
-[
-    {
-        "txid" : "ca7cb6a5ffcc2f21036879493db4530c0ce9b5bff9648f9a3be46e2dfc8e0166",
-        "vout" : 0
-    }
-]
+{% highlight bash %}
+bitcoin-cli listlockunspent
+{% endhighlight %}
+Unlock the transaction again
+
+{% highlight bash %}
+bitcoin-cli lockunspent true "[{\"txid\":\"a08e6907dbbd3d809776dbfc5d82e371b764ed838b5655e72f463568df1aadf0\",\"vout\":1}]"
 {% endhighlight %}
 
 *See also*

@@ -15,76 +15,83 @@ http://opensource.org/licenses/MIT.
 
 The `addmultisigaddress` RPC {{summary_addMultiSigAddress}}
 
-*Parameter #1---the number of signatures required*
+Add a nrequired-to-sign multisignature address to the wallet. Requires a new wallet backup.
+
+Each key is a Bitcoin address or hex-encoded public key.
+
+This functionality is only intended for use with non-watchonly addresses.
+
+See `importaddress` for watchonly p2sh address support.
+
+If 'label' is specified, assign address to that label.
+
+*Parameter #1---nrequired*
 
 {% itemplate ntpd1 %}
-- n: "Required"
+- n: "nrequired"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The minimum (*m*) number of signatures required to spend this m-of-n multisig script"
+  d: "The number of required signatures out of the n keys or addresses."
 
 {% enditemplate %}
 
-*Parameter #2---the full public keys, or addresses for known public keys*
+*Parameter #2---keys*
 
 {% itemplate ntpd1 %}
-- n: "Keys Or Addresses"
-  t: "array"
+- n: "keys"
+  t: "json array"
   p: "Required<br>(exactly 1)"
-  d: "An array of strings with each string being a public key or address"
-
-- n: "→<br>Key Or Address"
-  t: "string"
-  p: "Required<br>(1 or more)"
-  d: "A public key against which signatures will be checked.  Alternatively, this may be a P2PKH address belonging to the wallet---the corresponding public key will be substituted.  There must be at least as many keys as specified by the Required parameter, and there may be more keys"
+  d: "A json array of bitcoin addresses or hex-encoded public keys"
 
 {% enditemplate %}
 
-*Parameter #3---the account name*
+{% endautocrossref %}
+
+    [
+      "key",      (string) bitcoin address or hex-encoded public key
+      ...
+    ]
+
+{% autocrossref %}
+
+*Parameter #3---label*
 
 {% itemplate ntpd1 %}
-- n: "Account"
+- n: "label"
   t: "string"
-  p: "Optional<br>(0 or 1)"
-  d: "The account name in which the address should be stored.  Default is the default account, \"\" (an empty string)"
+  p: "Optional"
+  d: "A label to assign the addresses to."
 
 {% enditemplate %}
 
-*Result---a P2SH address printed and stored in the wallet*
+*Parameter #4---address_type*
 
 {% itemplate ntpd1 %}
-- n: "`result`"
-  t: "string (base58)"
-  p: "Required<br>(exactly 1)"
-  d: "The P2SH multisig address.  The address will also be added to the wallet, and outputs paying that address will be tracked by the wallet"
+- n: "address_type"
+  t: "string"
+  p: "Optional<br>Default=set by -addresstype"
+  d: "The address type to use. Options are \"legacy\", \"p2sh-segwit\", and \"bech32\"."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Result*
 
-Adding a 2-of-3 P2SH multisig address to the "test account" by mixing
-two P2PKH addresses and one full public key:
+{% endautocrossref %}
+
+    {
+      "address":"multisigaddress",    (string) The value of the new multisig address.
+      "redeemScript":"script"         (string) The string value of the hex-encoded redemption script.
+    }
+
+{% autocrossref %}
+
+*Example*
+
+Add a multisig address from 2 addresses
 
 {% highlight bash %}
-bitcoin-cli -testnet addmultisigaddress \
-  2 \
-  '''
-    [
-      "mjbLRSidW1MY8oubvs4SMEnHNFXxCcoehQ",
-      "02ecd2d250a76d204011de6bc365a56033b9b3a149f679bc17205555d3c2b2854f",
-      "mt17cV37fBqZsnMmrHnGCm9pM28R1kQdMG"
-    ]
-  ''' \
-  'test account'
+bitcoin-cli addmultisigaddress 2 "[\"16sSauSf5pF2UkUwvKGq4qjNRzBZYqgEL5\",\"171sgjn4YtPu27adkKGrdDwzRTxnRkBfKV\"]"
 {% endhighlight %}
-
-Result:
-
-{% highlight text %}
-2MyVxxgNBk5zHRPRY2iVjGRJHYZEp1pMCSq
-{% endhighlight %}
-
-(New P2SH multisig address also stored in wallet.)
 
 *See also*
 

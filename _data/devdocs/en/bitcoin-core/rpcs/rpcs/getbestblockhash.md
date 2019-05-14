@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### GetBestBlockHash
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getBestBlockHash="returns the header hash of the most recent block on the best block chain." %}
+{% assign summary_getBestBlockHash="returns the hash of the best (tip) block in the longest blockchain." %}
 
 {% autocrossref %}
 
@@ -15,26 +15,20 @@ The `getbestblockhash` RPC {{summary_getBestBlockHash}}
 
 *Parameters: none*
 
-*Result---hash of the tip from the best block chain*
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
   t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The hash of the block header from the most recent block on the best block chain, encoded as hex in RPC byte order"
+  d: "the block hash, hex-encoded"
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet getbestblockhash
-{% endhighlight %}
-
-Result:
-
-{% highlight text %}
-0000000000075c58ed39c3e50f99b32183d090aefa0cf8c324a82eea9b01a887
+bitcoin-cli getbestblockhash
 {% endhighlight %}
 
 *See also*

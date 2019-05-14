@@ -7,57 +7,58 @@ http://opensource.org/licenses/MIT.
 ##### SignMessage
 {% include helpers/subhead-links.md %}
 
-{% assign summary_signMessage="signs a message with the private key of an address." %}
+{% assign summary_signMessage="sign a message with the private key of an address." %}
 
 {% autocrossref %}
 
-*Requires wallet support. Requires an unlocked wallet or an
-unencrypted wallet.*
-
 The `signmessage` RPC {{summary_signMessage}}
 
-*Parameter #1---the address corresponding to the private key to sign with*
+*Parameter #1---address*
 
 {% itemplate ntpd1 %}
-- n: "Address"
-  t: "string (base58)"
-  p: "Required<br>(exactly 1)"
-  d: "A P2PKH address whose private key belongs to this wallet"
-
-{% enditemplate %}
-
-*Parameter #2---the message to sign*
-
-{% itemplate ntpd1 %}
-- n: "Message"
+- n: "address"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The message to sign"
+  d: "The bitcoin address to use for the private key."
 
 {% enditemplate %}
 
-*Result---the message signature*
+*Parameter #2---message*
+
+{% itemplate ntpd1 %}
+- n: "message"
+  t: "string"
+  p: "Required<br>(exactly 1)"
+  d: "The message to create a signature of."
+
+{% enditemplate %}
+
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
-  t: "string (base64)"
+  t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The signature of the message, encoded in base64.  Note that Bitcoin Core before 0.10.0 creates signatures with random *k* values, so each time you sign the same message, it will create a different signature"
+  d: "The signature of the message encoded in base 64"
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.13.1*
+*Example*
 
-Sign a the message "Hello, World!" using the following address:
+Unlock the wallet for 30 seconds
 
 {% highlight bash %}
-bitcoin-cli signmessage 17fshh33qUze2yifiJ2sXgijSMzJ2KNEwu "Hello, World!"
+bitcoin-cli walletpassphrase "mypassphrase" 30
 {% endhighlight %}
+Create the signature
 
-Result:
+{% highlight bash %}
+bitcoin-cli signmessage "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX" "my message"
+{% endhighlight %}
+Verify the signature
 
-{% highlight text %}
-ILypRih424AWRYXK1goB6mskx99aelWcVCTEKolaW7U4VPnwj6Khf+vJSED7pMtPQd3KnXuqq1JvavrQdPMFFB0=
+{% highlight bash %}
+bitcoin-cli verifymessage "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX" "signature" "my message"
 {% endhighlight %}
 
 *See also*

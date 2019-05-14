@@ -15,26 +15,20 @@ The `getconnectioncount` RPC {{summary_getConnectionCount}}
 
 *Parameters: none*
 
-*Result---the number of connections to other nodes*
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The total number of connections to other nodes (both inbound and outbound)"
+  d: "The connection count"
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet getconnectioncount
-{% endhighlight bash %}
-
-Result:
-
-{% highlight json %}
-14
+bitcoin-cli getconnectioncount
 {% endhighlight %}
 
 *See also*

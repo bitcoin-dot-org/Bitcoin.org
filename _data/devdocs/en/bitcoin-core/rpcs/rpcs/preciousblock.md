@@ -13,35 +13,36 @@ http://opensource.org/licenses/MIT.
 
 *Added in Bitcoin Core 0.14.0*
 
-The `preciousblock` RPC {{summary_preciousBlock}} A later `preciousblock` call can override the effect of an earlier one. The effects of `preciousblock` are not retained across restarts.
+The `preciousblock` RPC {{summary_preciousBlock}}
 
-*Parameter #1---the block hash*
+A later preciousblock call can override the effect of an earlier one.
+
+The effects of preciousblock are not retained across restarts.
+
+*Parameter #1---blockhash*
 
 {% itemplate ntpd1 %}
-- n: "Header Hash"
-  t: "string (hex)"
+- n: "blockhash"
+  t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The hash of the block to mark as precious"
+  d: "the hash of the block to mark as precious"
 
 {% enditemplate %}
 
-*Result---`null` or error on failure*
+*Result---`null` on success*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
   t: "null"
   p: "Required<br>(exactly 1)"
-  d: "JSON `null`.  The JSON-RPC error field will be set only if you entered an invalid block hash"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.14.1*
+*Example*
 
 {% highlight bash %}
-bitcoin-cli preciousblock 000000000000000001517a0bac70b8cd6f27ee\
-1b50a8f12bf606ea6fb6d561cd
+bitcoin-cli preciousblock "blockhash"
 {% endhighlight %}
-
-Result (no output from `bitcoin-cli` because result is set to `null`).
 
 {% endautocrossref %}
