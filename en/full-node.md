@@ -598,7 +598,7 @@ you. On most distributions, this will cause Bitcoin Core daemon to be
 automatically started each time your reboot your computer.
 
 If you're a expert system administrator and want to use an init script instead, see
-[the init scripts directory in Bitcoin Core's source tree](https://github.com/bitcoin/bitcoin/tree/0.13/contrib/init).
+[the init scripts directory in Bitcoin Core's source tree](https://github.com/bitcoin/bitcoin/tree/master/contrib/init).
 </div>
 
 {{installFinished}}
