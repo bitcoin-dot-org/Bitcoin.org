@@ -787,7 +787,7 @@ hu:
     blackmailtxt: "Légy óvatos a zsarolási támadásokkal, ahol idegenek zsarolnak a bitcoinjaidért cserébe. Egy mindennapos módszer erre az e-mail, ahol a küldő küld egy üzenetet melyben azt állítja, hogy meghackelte a számítógépedet és távoli asztali protokollról (RDP) irányítja. A küldő azt állítja, hogy billentyűzetfigyelőt telepített és a webkameráddal olyat rögzített, amit nem szeretnél, ha mások is tudnának. A küldő két opciót ajánl - küldj neki bitcoint, hogy eltüntesse az anyagot vagy küldj semmit és figyeld ahogy elküldi az e-mail kapcsolataidnak és elterjeszti a közösségi médián. A csalók lopott e-mail listákat és más kiszivárgott információkat használnak a séma tömeges futtatásához."
     fake-exchanges: "Hamis tőzsdék"
     fake-exchangestxt: "Ahogy egyre népszerűbbé vált a bitcoin, egyre több embert kívánt szerezni belőle. Sajnos a csaló emberek kihasználták ezt és e célra hamis bitcoin tőzsdéket hoztak létre. Ezek a hamis tőzsdék tőrbe csalhatják a felhasználókat extrém kedvező piaci árakkal, ami miatt az áldozatok azt hiszik, megütötték a főnyereményt a gyors és könnyen hozzáférhető olcsó bitcoinnal. Győződj meg róla hogy <a href=\"/en/exchanges\">bevált tőzsdét</a> használsz mikor bitcoint adsz vagy veszel."
-    free-giveaways: "Ajándékosztások"
+    free-giveaways: "Ingyenes Ajándék"
     free-giveawaystxt: "Az információ virális természete miatt és ahogy terjed az interneten, a csalók úgy akarnak hasznot húzni az emberekből, hogy ingyenes bitcoin osztást vagy más digitális pénzosztást szerveznek a tőzsdéken egy kis összegű regisztrációért cserébe, vagy bizonyos személyes információ megadásával. Amikor ilyet látsz egy oldalon vagy közösségi médián, jobb, ha azonnal jelented a tartalmat mint csalás, hogy még véletlenül se essenek mások is áldozatukul."
     impersonation: "Megszemélyesítés"
     impersonationtxt: "Sajnos nagyon könnyű a csalóknak közösségi média számlákat kreálniuk és másoknak kiadni magukat. Gyakran kivárnak mindaddig, amíg a személy akinek kiadják magukat tartalmakat tesz közzé. A dublőr ilyenkor egy követő üzenetet vagy egy cselekvésre való felhívást küld - mint például ingyenes osztást - egy olyan számláról, ami szinte megegyezik az eredeti posztolóéval vagy íróéval. Ez úgy fog látszani, mintha az eredeti személy írta volna. Alternatívaként az imposztorok ezeket a hamis számlákat arra is felhasználhatják, hogy másokat becsapva privát vagy közvetlen üzenetekkel bizonyos akciókra bírják rá az áldozatokat annak érdekében, hogy átverjék vagy aláássák őket. Soha ne vegyél részt ingyenes osztásokban és ha egy furcsa felkérést kapsz valakitől a közösségi hálódból, a legjobb megoldás, ha kétszer is ellenőrzöd az autentikusságát különböző kommunikációs médiumokon keresztül."
@@ -805,7 +805,7 @@ hu:
     ponzi-schemestxt: "Ne vegyél részt olyan ajánlatokban, ahol egy vagy több ember garantált hozamot biztosít egy előre befizetett összegért cserébe. Ezt Ponzi-sémának nevezik, ahol a jövőbeni betétesek díjait a korábban befektetőknek fizetik ki. A végeredmény általában, hogy sok ember egy csomó pénzt veszít."
     pyramid-schemes: "Piramisjátékok"
     pyramid-schemestxt: "A piramisjáték a résztvevők számára jutalékot garantál az általuk meghívott személyek után. Ez lehetővé teszi, hogy a rendszer virálisan és gyorsan növekedjen, de leggyakrabban nem eredményez semmilyen komolyabb hozamot a tagok és/vagy a meghívottak számára. Soha ne kérd fel a személyes ismerőseidet egy termék vagy szolgáltatás jutalmának vagy megtérülésének összegyűjtésére, és ne járulj hozzá a saját tőkéddel mások megbízásából, hogy felgyorsítsd a folyamatot."
-    prize-giveaways: "Ajándékosztások"
+    prize-giveaways: "Nyereményajánlat"
     prize-giveawaystxt: "Az ingyenes ajándékosztásokhoz hasonlóan a díjnyeremény csalások arra veszik rá az embereket, hogy cselekedjenek, vagy hogy információt szolgáltassanak magukról. Például a nevük, címük, e-mail címük és telefonszámuk megadását kérik a nyereményük kikéréséhez. Ez lehetővé teszi a hacker számára, hogy az így gyűjtött információkkal fiókokhoz férjen hozzá vagy a nevedben járjanak el."
     pump-and-dumps: "Pumpa sémák"
     pump-and-dumpstxt: "Ne bízz olyan emberekben, akik arra biztatnak téged vagy másokat, hogy befektess, mert tudják, hogy mi lesz a bitcoin ára. A pumpa-sémák során egy személy (vagy személyek) megpróbálják mesterségesen emelni az árat annak érdekében, hogy nyereségesen szabadulhassanak meg a vagyonuktól."
@@ -1037,7 +1037,7 @@ hu:
     scams:
       blackmail: zsarolas
       fake-exchanges: hamis-tozsdek
-      free-giveaways: ingyenes-ajandekosztasok
+      free-giveaways: ingyenes-ajandek
       impersonation: megszemelyesites
       malware: malware
       meet-in-person: szemelyes-talalkozo
@@ -1046,7 +1046,7 @@ hu:
       phishing-websites: adathalasz-oldalak
       ponzi-schemes: ponzi-semak
       pyramid-schemes: piramisjatekok
-      prize-giveaways: ajandekosztasok
+      prize-giveaways: nyeremenyajanlat
       pump-and-dumps: pumpa-semak
       ransomware: ransomware
       scam-coins: scamcoinok
@@ -1073,7 +1073,7 @@ hu:
       whocontrols: ki-iranyitja-a-bitcoin-halozatot
       howitworks: hogyan-mukodik-a-bitcoin
       acquire: hogyan-szerezhetoek-bitcoinok
-      used: "tenyleg-hasznaljak-az-emberek-a-bitcoint"
+      used: tenyleg-hasznaljak-az-emberek-a-bitcoint
       makepayment: mennyire-bonyolult-bitcoinnal-fizetni
       advantages: mik-a-bitcoin-elonyei
       disadvantages: mik-a-bitcoin-hatranyai
