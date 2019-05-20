@@ -245,182 +245,6 @@ If you are using Bitcoin Core GUI, you can monitor the progress of IBD in the st
 The following instructions describe installing Bitcoin Core on Linux
 systems.
 
-### Ubuntu 16.04
-
-*Instructions for Bitcoin Core 0.14.2 and Higher
-
-If you use Ubuntu Desktop, click the Ubuntu swirl icon to start the Dash and type "term" into the
-input box. Choose any one of the terminals listed:
-
-![Dash term](/img/full-node/en-dash-term.png?{{site.time | date: '%s'}})
-
-Alternatively, access a console or terminal emulator using another
-method, such as SSH on Ubuntu Server or a terminal launcher in an
-alternative desktop environment.
-
-Type the following line to add the Bitcoin Personal Package Archive
-(PPA) to your system:
-
-    sudo apt-add-repository ppa:bitcoin/bitcoin
-
-You will be prompted for your user password.  Provide it to continue.
-Afterwards, the following text will be displayed:
-
-    Stable Channel of bitcoin-qt and bitcoind for Ubuntu, and their
-    dependencies
-
-    Note that you should prefer to use the official binaries, where possible, to
-    limit trust in Launchpad/the PPA owner.
-
-    No longer supports precise, due to its ancient gcc and Boost versions.
-    More info: https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin
-    Press [ENTER] to continue or ctrl-c to cancel adding it
-
-Press enter to continue. The following text (with some variations) will
-be displayed and you will be returned to the command line prompt:
-
-    gpg: keyring `/tmp/tmpixuqu73x/secring.gpg' created
-    gpg: keyring `/tmp/tmpixuqu73x/pubring.gpg' created
-    gpg: requesting key 8842CE5E from hkp server keyserver.ubuntu.com
-    gpg: /tmp/tmpixuqu73x/trustdb.gpg: trustdb created
-    gpg: key 8842CE5E: public key "Launchpad PPA for Bitcoin" imported
-    gpg: no ultimately trusted keys found
-    gpg: Total number processed: 1
-    gpg:               imported: 1  (RSA: 1)
-    OK
-
-Type the following line to get the most recent list of packages:
-
-    sudo apt-get update
-
-A large number of lines will be displayed as different update files are
-downloaded.  This step may take several minutes on a slow Internet
-connection.
-
-<div class="box" markdown="1">
-*To continue, choose one of the following options*
-
-1. To install the Bitcoin Core Graphical User Interface (GUI), type the
-   following line and proceed to the [Bitcoin Core GUI](#ubuntu-gui)
-   section below:
-
-        sudo apt-get install bitcoin-qt
-
-2. To install the Bitcoin Core daemon (bitcoind), which is useful for
-   programmers and advanced users, type the following line and proceed
-   to the [Bitcoin Core Daemon](#ubuntu-daemon) section below:
-
-        sudo apt-get install bitcoind
-
-3. To install both the GUI and the daemon, type the following line and
-   read both the [GUI instructions](#ubuntu-gui) and the [daemon
-   instructions](#ubuntu-daemon). Note that you can't run both the GUI
-   and the daemon at the same time using the same configuration
-   directory.
-
-        sudo apt-get install bitcoin-qt bitcoind
-
-After choosing what packages to install, you will be asked whether you
-want to proceed.  Press enter to continue.
-</div>
-
-#### Bitcoin Core GUI {#ubuntu-gui}
-{:.no_toc}
-
-To start Bitcoin Core GUI, click the Ubuntu swirl icon to open the Dash,
-type `bitcoin`, and click the Bitcoin icon.
-
-![Dash Bitcoin-Qt](/img/full-node/en-dash-bitcoin-qt.png?{{site.time | date: '%s'}})
-
-You will be prompted to choose a directory to store the Bitcoin block
-chain and your wallet.  Unless you have a separate partition or drive
-you want to use, click Ok to use the default.
-
-![Bitcoin-Qt Welcome](/img/full-node/en-bitcoin-qt-welcome.png?{{site.time | date: '%s'}})
-
-Bitcoin Core GUI will begin to download the block chain.  This
-step will take at least several days, and it may take much more time on
-a slow Internet connection or with a slow computer.  During the
-download, Bitcoin Core will use a significant part of your connection
-bandwidth.  You can stop Bitcoin Core at any time by closing it; it will
-resume from the point where it stopped the next time you start it.
-
-![Bitcoin-Qt Initial Block Download](/img/full-node/en-bitcoin-qt-ibd.png?{{site.time | date: '%s'}})
-
-After download is complete, you may use Bitcoin Core as your wallet or
-you can just let it run to help support the Bitcoin network.
-
-<div class="box" markdown="1">
-*Optional: Start Your Node At Login*
-
-Starting your node automatically each time you login to your computer
-makes it easy for you to contribute to the network. The easiest way
-to do this is to tell Bitcoin Core GUI to start at login.
-
-While running Bitcoin Core GUI, open the Settings menu and choose
-Options.  On the Main tab, click *Start Bitcoin on system login*.  Click
-the Ok button to save the new settings.
-
-![Choosing to start Bitcoin Core at login](/img/full-node/en-start-on-login.png?{{site.time | date: '%s'}})
-
-The next time you login to your desktop, Bitcoin Core GUI will be
-automatically started as an icon in the tray.
-
-![Bitcoin-Qt Tray Icon](/img/full-node/en-bitcoin-qt-tray-icon.png?{{site.time | date: '%s'}})
-</div>
-
-{{installFinished}}
-
-#### Bitcoin Core Daemon {#ubuntu-daemon}
-{:.no_toc}
-
-If you're logged in as an administrative user with sudo access, you may
-log out.  The steps in this section should be performed as the user you
-want to run Bitcoin Core. (If you're an expert administrator, you can
-make this a locked account used only by Bitcoin Core.)
-
-From the terminal, type:
-
-    bitcoind -daemon
-
-It will print a message that Bitcoin Core is starting.  To interact with
-Bitcoin Core daemon, you will use the command `bitcoin-cli` (Bitcoin
-command line interface).
-{{start_up_and_recommended_commands}}
-
-For example, to safely stop your node, run the following command:
-
-    bitcoin-cli stop
-
-{{complete_list_of_commands_and_ibd}}
-
-<div class="box" markdown="1">
-*Optional: Start Your Node At Boot*
-
-Starting your node automatically each time your computer boots makes it
-easy for you to contribute to the network.  The easiest way to do this
-is to start Bitcoin Core daemon from your crontab.  To edit your
-crontab, run the following command:
-
-    crontab -e
-
-Scroll to the bottom of the file displayed and add the following line:
-
-    @reboot bitcoind -daemon
-
-Save the file and exit; the updated crontab file will be installed for
-you. Now Bitcoin Core daemon will be automatically started each time
-your reboot your computer.
-
-If you're an Ubuntu expert and want to use an init script instead, see
-[this Upstart
-script](https://github.com/bitcoin/bitcoin/blob/master/contrib/init/bitcoind.conf).
-</div>
-
-{{installFinished}}
-
-### Other Linux Distributions
-
 *Instructions for Bitcoin Core 0.14.2 and Higher
 
 The following instructions describe installing Bitcoin Core using tools
@@ -488,8 +312,7 @@ If you use `su` to run commands as root, use the following command line:
 
 </div>
 
-#### Bitcoin Core GUI {#other-linux-gui}
-{:.no_toc}
+### Bitcoin Core GUI {#other-linux-gui}
 
 In order to use Bitcoin Core GUI, you will need several libraries
 installed. All of them should be available in all major
@@ -555,8 +378,7 @@ here](https://en.wikibooks.org/wiki/Guide_to_X11/Starting_Sessions).
 
 {{installFinished}}
 
-#### Bitcoin Core Daemon {#other-linux-daemon}
-{:.no_toc}
+### Bitcoin Core Daemon {#other-linux-daemon}
 
 If you're logged in as an administrative user with sudo access, you may
 log out.  The steps in this section should be performed as the user you
