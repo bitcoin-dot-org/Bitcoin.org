@@ -242,11 +242,6 @@ If you are using Bitcoin Core GUI, you can monitor the progress of IBD in the st
 
 ## Linux Instructions
 
-The following instructions describe installing Bitcoin Core on Linux
-systems.
-
-*Instructions for Bitcoin Core 0.14.2 and Higher
-
 The following instructions describe installing Bitcoin Core using tools
 available in most mainstream Linux distributions.  We assume you use a
 Bourne-like shell such as `bash`.
@@ -432,8 +427,6 @@ If you're a expert system administrator and want to use an init script instead, 
 
 ### Windows 10
 
-*Instructions for Bitcoin Core 0.14.2 and Higher on Windows 10
-
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
 
@@ -585,8 +578,6 @@ daemon will be automatically started.
 {{installFinished}}
 
 ### Windows 8.x
-
-*Instructions for Bitcoin Core 0.14.2 and Higher on Windows 8 and 8.1.*
 
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
@@ -740,8 +731,6 @@ daemon will be automatically started.
 
 ### Windows 7
 
-*Instructions for Bitcoin Core 0.14.2 and Higher
-
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
 
@@ -892,9 +881,7 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 
 ## Mac OS X Instructions
 
-### Mac OS X Yosemite 10.10.x
-
-*Instructions for Bitcoin Core 0.14.2 and Higher on Mac OS X Yosemite*
+### Mac OS X Yosemite 10.10.x+
 
 Go to the [Bitcoin Core download page](/en/download) and verify you have
 made a secure connection to the server.
