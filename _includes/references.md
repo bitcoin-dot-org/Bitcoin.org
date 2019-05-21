@@ -56,7 +56,7 @@ http://opensource.org/licenses/MIT.
 [ssl signature]: /en/developer-examples#term-ssl-signature "Signatures created and recognized by major SSL implementations such as OpenSSL"
 [standard block relay]: /en/p2p-network-guide#term-standard-block-relay "The regular block relay method: announcing a block with an inv message and waiting for a response"
 [transaction]: /en/transactions-guide "A transaction spending satoshis"
-[transaction version number]: /en/transactions-guide#term-transaction-version-number "A version number prefixed to transactions to allow upgrading""
+[transaction version number]: /en/transactions-guide#term-transaction-version-number "A version number prefixed to transactions to allow upgrading"
 [transactions]: /en/transactions-guide "A transaction spending satoshis"
 [unencrypted wallet]: /en/developer-reference#encryptwallet "A wallet that has not been encrypted with the encryptwallet RPC"
 [unique addresses]: /en/transactions-guide#term-unique-address "Address which are only used once to protect privacy and increase security"
