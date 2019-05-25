@@ -130,15 +130,11 @@ it:
     summary: "Il documento che introdusse per primo il bitcoin"
     description: "Il documento originale di Satoshi Nakamoto è ancora una lettura consigliata per chiunque voglia studiare il funzionamento del Bitcoin. Scegli quale traduzione del documento vuoi leggere:"
     translated_by: "tradotto da"
-    submit_new_translation: 'Vuoi tradurre il documento nella tua lingua? Visita l''archivio del <a href="https://github.com/wbnns/bitcoinwhitepaper">"Bitcoin white paper" su GitHub</a> per istruzioni e <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">apri un argomento</a> se hai domande.'
+    submit_new_translation: 'Vuoi tradurre questo documento nella tua lingua? Visita <a href="https://github.com/wbnns/bitcoinwhitepaper">l''archivio Bitcoin di white papers su GitHub</a> per le istruzioni e <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">apri una discussione</a> se hai domande.'
   buy:
     title: "Compra Bitcoin"
     pagetitle: "Come comprare bitcoin"
     summary: "Esistono diversi modi per acquistare bitcoin."
-    paxful: 'Con oltre 300 modi di acquistare e vendere bitcoin, Paxful, uno dei principali operatori di scambio peer-to-peer (P2P) e sponsor di Bitcoin.org, rappresenta un comodo mercato di bitcoin.'
-    button: "Compra Bitcoin con Paxful"
-    sponsor: "Contenuto Sponsorizzato"
-    discover: "Scopri altri modi per comprare bitcoin:"
     bitcoin-exchange: "Usa un Exchange Bitcoin."
     bitcoin-exchange-text: "La nostra pagina di <a href=\"/en/exchanges\">Bitcoin Exchange</a> elenca le diverse attività commerciali che possono aiutarti a comprare bitcoin utilizzando il tuo conto corrente bancario."
     p2p-bitcoins: "Sfoglia una directory peer-to-peer"
@@ -191,18 +187,22 @@ it:
     walletbitgo: "BitGo è un portafoglio multi-firma ad alta sicurezza, che protegge i tuoi bitcoin da furti e perdite. Tu ne hai la gestione totale, infatti BitGo non può spendere o bloccare i fondi. I portafogli BitGo sono facili da utilizzare e offrono funzioni di sicurezza avanzata come limiti di spesa e accesso multi-utente."
     walletgreenaddress: "GreenAddress é un portafoglio a firma multipla con sicurezza e riservatezza migliorate. Le tue chiavi non risiedono mai sul server, neanche in forma crittografata. Per ragioni di sicurezza dovresti usare sempre un'applicazione 2FA e l'estensione del browser o l'App per Android."
     wallettrezor: "Trezor è un portafoglio hardware che fornisce un elevato livello di sicurezza senza sacrificare la comodità. A differenza del cold storage, trezor è in grado di firmare le transazioni quando connesso a un dispositivo online. Ciò significa che è sicuro spendere Bitcoin anche quando si utilizza un computer compromesso."
+    walletcoldcard: "Coldcard è un portafoglio fisico, facile da usare, ultrasicuro, open-source ed economico, di cui si può fare una copia di back-up in maniera semplice usando una scheda microSD criptata. La tua chiave privata è salvata in un chip di sicurezza dedicato. Il programma in MicroPython ti permette ti effettuare modifiche."
     walletkeepkey: "KeepKey é un wallet hardware che mette in sicurezza facilmente i bitcoin. Quanto ci si affida a KeepKey ogni transazione che effettui con bitcoin va riverificata e approvata tramite il display OLED e il pulsante di conferma."
+    walletbitpay: "BitPay Wallet è il portafoglio HD-multifirma realizzato originariamente per proteggere i fondi di BitPay. BitPay supporta più portafogli personali e condivisi, testnet e il protocollo di pagamento completo. Per una maggiore sicurezza e privacy si può utilizzare un nodo <a href=\"https://github.com/bitpay/bitcore-wallet-service\">BWS</a> privato."
     walletledgernanos: "Ledger Nano S è un portafoglio hardware sicuro di Bitcoin. Connette ogni computer tramite USB e incorpora un display OLED integrato per ricontrollare e confermare ogni transazione con un semplice tocco."
-    walletdigitalbitbox: "Digital Bitbox è un portafoglio hardware minimalista svizzero, che pone particolare attenzione sulla sicurezza e la privacy. Le caratteristiche includono offline &amp; backup semplificato, negabilità plausibile, supporto multi-sig, app desktop nativa e app mobile per verifica &amp; 2FA."
+    walletbitbox: "BitBox è un portafoglio hardware minimalista svizzero, con particolare focus sulla sicurezza e la privacy. Le caratteristiche includono &amp; completamente offline; backup semplificato, negabilità plausibile, supporto multifirma, app desktop nativa e app mobile per verifica &amp; 2FA."
     walletbither: "Bither è un portafoglio semplice e sicuro che funziona su diverse piattaforme. Con specifiche modalità online/offline, l'utente può avere insieme sicurezza e semplicità. La funzione XRANDOM di Bither utilizza l'ambiente in cui vive l'utente per generare chiavi in maniera realmente casuale. Inoltre con la funzione HDM, gli utenti possono avere i vantaggi delle funzioni HD e la sicurezza del multifirma."
     walletgreenbits: "GreenBit è un portafoglio veloce e facile da usare. Prova la sicurezza migliorata con l'approccio minimal/zero trust, la possibilità di utilizzare wallet hardware, 2FA basata su multifirma e funzionalità per limiti di spesa."
     walletbtccom: "Sicuro e facile da usare, BTC.com Bitcoin Wallet permette a te, utente, di mantenere il controllo totale dei tuoi bitcoin. Le funzionalità includono tecnologia HD e multi-firma, supporto multipiattaforma, lingua locale e valuta, codici QR e altro ancora."
-    walletwasabi: "Wasabi é un portafogli  Bitcoin con attenzione alla privacy."
+    walleteclairmobile: "Eclair Mobile è un portafoglio Bitcoin per Lightning di nuova generazione. Si può usare come un normale portafoglio Bitcoin, e si può anche connettere alla Rete Lightning per pagamenti economici ed immediati."
+    walletwasabi: "Wasabi è un portafoglio Bitcoin open-source, non custodito, con un particolare focus sulla privacy, per Windows, Linux e Mac. Sistema di comunicazione anonima Tor incorporata, funzionalità CoinJoin e controllo monete."
     walletdownload: "Installa"
     walletvisit: "Visita il sito web"
     walletsourcecode: "Codice sorgente"
     platformandroid: "Android"
     platformios: "iOS"
+    platformwindowsphone: "Windows Phone"
     platformwindows: "Windows"
     platformmac: "Mac"
     platformlinux: "Linux"
@@ -981,12 +981,15 @@ it:
     menu-other: "Altro"
     menu-vocabulary: Glossario
     menu-you-need-to-know: "Da sapere"
+    menu-white-paper: "White paper"
     banner-core-moved: |
         Questa pagina è stata spostata nel nuovo sito web di Bitcoin Core
         (clicca qui per essere reindirizzato)
     banner-translate: "La traduzione per questa lingua è ormai datata.  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Clicca qui per aiutarci a tradurre il sito bitcoin.org nella tua lingua</a>."
     footer: "Rilasciato sotto <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licenza MIT</a>"
     donate-community: "Sostieni Bitcoin.org"
+    donate-support: "Bitcoin.org è sostenuto dalla comunità."
+    network-status: "Stato della Rete"
     sponsor: "Un sito web della comunità sponsorizzato da"
     getstarted: "Come iniziare con Bitcoin"
     recomendation: "Portafogli Bitcoin raccomandati"
