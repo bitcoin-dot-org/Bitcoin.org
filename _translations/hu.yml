@@ -4,77 +4,143 @@ hu:
     pagetitle: "A bitcoin.org-ról"
     pagedesc: "A bitcoin.org célja a Bitcoin fenntartható módon történő fejlesztése."
     own: "Ki birtokolja a bitcoin.org-ot?"
-    owntxt: "A bitcoin.org az első Bitcoin-weboldal által használt, eredeti domainnév. A <a href=\"#development#\">Bitcoin magfejlesztői</a> és más közösségi tagok regisztrálták és kezelik a mai napig, a <a href=\"#community#\">Bitcoin-közösségek</a> hozzájárulása mellett. A bitcoin.org nem egy hivatalos weboldal. Ahogyan senki nem birtokolja az e-mail technológiáját, úgy senki sem birtokolja a Bitcoin-hálózatot. Ily módon senki nem nyilatkozhat a Bitcoin egészének nevében."
+    owntxt-title: "Satoshi Nakamoto és Martti Malmi"
+    owntxt: "A bitcoin.org weboldalt eredetileg a Bitcoin első két fejlesztője, <a href=\"https://en.bitcoin.it/wiki/Satoshi_Nakamoto\">Satoshi Nakamoto</a> és <a href=\"https://en.bitcoin.it/wiki/Sirius\">Martti Malmi</a> regisztrálta és birtokolta. Amikor Nakamoto elhagyta a projektet, a doménnév tulajdonjogát más, a Bitcoinfejlesztőktől független embereknek adta át. Így szerette volna szétosztani a felelősséget, valamint megakadályozni, hogy egy adott személy vagy csoport vegye az ellenőrzést a projekt fölött."
+    owntxt2-title: "Bitcoin Core"
+    owntxt2: "2011 és 2013 között az oldalt elsősorban új szoftververziók kibocsátására használták. Ezt ma már Bitcoin Core-nak hívják. 2013-ban újratervezték az weblapot: több oldalt adtak hozzá, további Bitcoinszoftvereket listáztak, illetve létrehozták a fordítórendszert."
+    owntxt3-title: "A fejlesztői dokumentációt 2014-ben tették közzé."
+    owntxt3: "Örömmel fogadunk frissítéseket, javításokat, ajánlásokat és fejlesztéseket a közösség tagjaitól."
+    owntxt4-title: "Az oldal egy független, nyílt forráskódú projekt"
+    owntxt4: "Az oldal ma egy független, nyílt forráskódú projekt. Támogatói a világ számos részéről foglalkoznak vele. A végső közzétételi jogot a társtulajdonosok birtokolják, de minden szabályos tevékenységet egy publikus <a href=\"https://github.com/bitcoin/bitcoin.org#working-with-github\">pull request folyamattal</a> a társfenntartók szerveznek és kezelnek."
+    owntxt5: "A Bitcoin.org nem a Bitcoin hivatalos weboldala. Ahogy senki sem birtokolja az e-mail technológiát, úgy senki sem birtokolja a Bitcoin-hálózatot. És mint ilyen, senki nem beszélhet a Bitcoin nevében."
     control: "Szóval... ki irányítja a Bitcoint?"
-    controltxt: "A Bitcoint a világ minden táján élő Bitcoin-felhasználók irányítják. A fejlesztők tökéletesítik ugyan a szoftvert, de nem kényszeríthetik ki a Bitcoin-protokoll szabályainak változását, mivel az összes felhasználó szabadon választhatja meg, hogy milyen szoftvert használ. A kompatibilitás megteremtése érdekében minden felhasználónak azonos szabályokat követő szoftvert kell használna. A Bitcoin csak a felhasználók teljes egyetértése mellett tud megfelelően működni. Ebből fakadóan minden felhasználó és fejlesztő erősen érdekelt e konszenzus megteremtésében és fenntartásában."
-    mission: "Misszió"
+    controltxt: "A Bitcoint a világ minden táján élő Bitcoin-felhasználók irányítják. A fejlesztők tökéletesítik ugyan a szoftvert, de nem kényszeríthetik ki a Bitcoin-protokoll szabályainak megváltoztatását, mivel az összes felhasználó szabadon választhatja meg, hogy milyen szoftvert használ. A kompatibilitás megteremtése érdekében minden felhasználónak azonos szabályokat követő szoftvert kell használna. A Bitcoin csak a felhasználók teljes egyetértése mellett tud megfelelően működni. Ebből fakadóan minden felhasználó és fejlesztő erősen érdekelt e konszenzus megteremtésében és fenntartásában."
+    mission: "Küldetés"
     missiontxt1: "A felhasználók tájékoztatása az alapvető hibák elkerülése érdekében."
-    missiontxt2: "A Bitcoin tulajdonságainak, lehetséges használati módjainak és korlátainak pontos leírása."
-    missiontxt3: "A Bitcoin-hálózattal kapcsolatos riasztások és események transzparens megjelenítése."
+    missiontxt2: "A Bitcoin tulajdonságainak, lehetséges felhasználásának és korlátainak pontos leírása."
+    missiontxt3: "A Bitcoin-hálózattal kapcsolatos riasztások és események átlátható megjelenítése."
     missiontxt4: "Tehetséges személyek felkérése a Bitcoin különböző szintjeinek fejlesztésére."
-    missiontxt5: "A nagy léptékű Bitcoin-ökoszisztéma ismertségének biztosítása."
-    missiontxt6: "A Bitcoin világszintű hozzáférhetőségének nemzetköziesítésen keresztül történő biztosítása."
-    missiontxt7: "Mindenkor pártatlan Bitcoin-információforrásként fellépni."
-    help: "Segítsen nekünk"
-    helptxt: "A bitcoin.org-on tapasztalt bármilyen probléma jelentése vagy fejlesztési támogatás a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> weboldalán angol nyelvű, ún. issue vagy pull request segítségével kezdeményezhető. Pull request készítésekor, kérjük, szánjon megfelelő időt változtatásai megtárgyalására és munkája alkalmassá tételére. Segíthet fordítani a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a> valamely csapatához csatlakozva. Kérjük, ne kérje saját vállalkozásának vagy weboldalának reklámozását, kivéve különleges esetekben - például konferenciák alkalmával. Nagy köszönet illeti az összes közreműködőt, aki időt szakít a bitcoin.org fejlesztésére!"
+    missiontxt5: "A nagy jelentőségű Bitcoin-ökoszisztéma ismertségének biztosítása."
+    missiontxt6: "A Bitcoin világszintű hozzáférhetőségének nemzetközi módon történő biztosítása."
+    missiontxt7: "Mindenkor pártatlan információkat szolgáltatni a Bitcoinról."
+    help: "Segíts nekünk!"
+    helptxt: "A bitcoin.org-on tapasztalt bármilyen problémát jelenthetsz, illetve fejlesztési javaslatokat tehetsz a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> weboldalán, ún. issue vagy pull request segítségével, angol nyelven. Pull request készítésekor kérjük szánj megfelelő időt változtatásaid megtárgyalására, és munkád alkalmassá tételére. Ha fordítani szeretnél, csatlakozz a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a> valamely csapatához! Ne kérd saját vállalkozásod vagy weboldalad reklámozását, kivéve különleges esetekben – például konferenciák alkalmával. Nagy köszönet illeti az összes közreműködőt, aki időt szakít a bitcoin.org fejlesztésére!"
     maintenance: "Karbantartás"
     documentation: "Dokumentáció"
+    sponsorship: "Támogatás"
+    service_contributors: "A szolgáltatás fejlesztői"
     translation: "Fordítás"
+    inactive_contributors: "Passzív közreműködők"
+    owners: "A domén tulajdonosai"
+    partial_list: "Részleges lista"
     github: "Közreműködők a GitHubon"
   bitcoin-for-businesses:
     title: "Bitcoin vállalkozásoknak - Bitcoin"
     pagetitle: "Bitcoin vállalkozásoknak"
-    summary: "A Bitcoinnal a kifizetések rendkívül biztonságosan és gazdaságosan kezelhetőek."
-    lowfee: "Az elérhető legalacsonyabb díjak"
-    lowfeetext: "A Bitcoin magas szintű titkosítása lehetőséget teremt arra, hogy a tranzakciók nagyon hatékonyan és gazdaságosan feldolgozhatóak legyenek. A Bitcoin-hálózat használatával szinte díjtalanul kezdeményezhet és fogadhat kifizetéseket. A legtöbb esetben a díjak nem szigorúan elvártak, ugyanakkor ajánlottak tranzakciója gyorsabb visszaigazolásához."
+    summary: "A Bitcoinnal történő kifizetések rendkívül biztonságosan és gazdaságosan kezelhetőek."
+    lowfee: "Válaszd ki te, mennyi díjat akarsz fizetni"
+    lowfeetext: >
+        A bitcoin fogadása semmibe sem kerül. Sok tárca ezen felül megengedi, hogy
+        Te határozd meg, mekkora díjjal szeretnél egy tranzakciót végrehajtani. A
+        legtöbb tárcának észszerű, alapértelmezett díjai vannak, a magasabb tranzakciós
+        költség pedig az utalások gyorsabb <a href="#you-need-to-know##instant">visszaigazolásához</a>
+        szükségesek. A díjak nem függnek a küldött összeg nagyságától, azaz teljesen
+        mindegy, hogy 100.000, vagy 1 bitcoint küldesz – a költség ugyanannyi.
     fraud: "Csalás elleni védelem"
-    fraudtext: "Minden, hitelkártyát és PayPalt elfogadó vállalkozás ismeri a visszavont kifizetésekkel kapcsolatos problémákat. A visszaszámlázási csalások korlátozott piaci eléréshez és megnövekedett árakhoz vezetnek, ami végső soron a fogyasztókat bünteti. A Bitcoin-kifizetések visszavonhatatlanok és biztonságosak, ami azt eredményezi, hogy a csalások költségének viselése nem terhelődik a kereskedőre."
+    fraudtext: "Minden, hitelkártyát és PayPalt elfogadó vállalkozás ismeri a visszavont kifizetésekkel kapcsolatos problémákat. A visszaszámlázási csalások korlátozott piaci eléréshez és megnövekedett árakhoz vezetnek, amely végső soron a fogyasztókat sújtja. A Bitcoin-fizetések visszavonhatatlanok és biztonságosak, amely azt eredményezi, hogy a csalásokból eredő kiadásokat nem a kereskedőnek kell elszenvednie."
     international: "Gyors nemzetközi kifizetések"
-    internationaltext: "Afrikából Kanadába 10 perc alatt utalhat bitcoint. Sőt, a bitcoinok sohasem öltenek fizikai formát, így bármennyi utalható belőlük korlátok, késések vagy rendkívül magas díjak nélkül. Nincsenek közvetítő bankok, amelyek három munkanap várakozásra kényszerítik."
+    internationaltext: >
+        A bitcoin határon át történő utalása olyan, mintha csak az utca másik végére
+        küldenéd. Nincsenek bankok, amelyek három munkanapig várakoztatnak, nincsenek
+        extra díjak vagy speciális korlátok a minimális és maximális küldött összeg
+        tekintetében.
     pci: "Nem szükséges PCI-megfelelés"
-    pcitext: "Az online hitelkártya-elfogadás általában kiterjedt biztonsági ellenőrzésekkel jár, a PCI-sztenderdeknek való megfelelés érdekében. A Bitcoin is elvárja, hogy <a href=\"#secure-your-wallet#\">biztonságossá tegye pénztárcáját</a> és fizetési igényeit. Ugyanakkor Önt nem terhelik fogyasztói érzékeny információinak - mint például hitelkártya-számok - feldolgozásából fakadó költségek és felelősségek."
+    pcitext: "Bankkártya online elfogadása esetében általában kimerítő biztonsági ellenőrzésekkel kell számolni. Minderre azért van szükség, hogy a felhasználó megfeleljen a PCI-szabványoknak. Bitcoinnal történő fizetéskor szintén <a href=\"#secure-your-wallet#\">biztosítanod kell a tárcádat</a> és az utalási kérelmeidet, de ez nem hordoz az ügyfelek bizalmas információinak feldolgozásával, mint a bankkártyaszámok megadásával."
     visibility: "Tegyen szert némi ingyenes ismertségre"
     visibilitytext: "A Bitcoin új fogyasztók fejlődő piaca, akik bitcoinjaik elköltési módjait kutatják. A bitcoinok elfogadásával új fogyasztók szerezhetőek, valamint vállalkozása új ismertségre tehet szert. Egy új fizetési mód bevezetése gyakran bizonyul okos ötletnek az online vállalkozások számára."
     multisig: "Csoportos aláírás"
-    multisigtext: "A Bitcoin rendelkezik egy csoportos aláírási funkcióval, amely lehetővé teszi, hogy hogy a bitcoinokat csak abban az esetben lehessen elkölteni, amennyiben személyek csoportjának egy részhalmaza engedélyezi a tranzakciót. Ezt egy igazgatótanács tagjai arra használhatják, hogy megakadályozzák, hogy bármely tag a többiek egyetértése nélkül költhessen; illetve, hogy kövessék, hogy melyik tag milyen kifizetést hagyott jóvá."
+    multisigtext: "A Bitcoinnal jár egy csoportos aláírás funkció is, amely lehetővé teszi, hogy a bitcoinokat csak akkor használják fel, ha egy csoport csoportja engedélyezi a tranzakciót. Ezt például egy igazgatótanács használhatja a célból, hogy megakadályozza a tagok számára, hogy a többi tag hozzájárulása nélkül költsenek, valamint hogy nyomon tudják követni, hogy mely tagok engedélyeztethetnek egyes ügyleteket."
     transparency: "Könyvelési transzparencia"
-    transparencytext: "Számos szervezetnek kötelessége könyvelési dokumentumokkal igazolnia működését. A Bitcoin használata a legmagasabb szintű transzparenciát biztosítja, mivel megadhat olyan információkat, amelyeket szervezetének tagjai felhasználhatnak egyenlegeinek és tranzakcióinak visszaigazolására. A nonprofit szervezetek is bemutathatják a nyilvánosságnak, hogy mekkora összegű adományhoz jutnak."
+    transparencytext: "Számos szervezet kötelezve van a tevékenységükről számviteli dokumentumokat kiállítani. A Bitcoin használatával lehetővé válik, hogy a lehető legmagasabb szintű átláthatóságot biztosítsa, mivel információt tudsz szolgáltatni az egyenlegek és tranzakciók ellenőrzésére a blokkláncon keresztül. Például a nonprofit szervezetek elérhetővé tehetik a nyilvánosság számára, hogy lássák mennyi adományban részesülnek."
   bitcoin-for-developers:
     title: "Bitcoin fejlesztőknek - Bitcoin"
     pagetitle: "Bitcoin fejlesztőknek"
-    summary: "A Bitcoin csodálatos dolgok létrehozására vagy egyszerű igények kielégítésére is használható."
+    summary: "A Bitcoint csodás dolgok építésére és hétköznapi problémák megoldásaként lehet használni."
     simple: "A legegyszerűbb fizetési rendszer"
-    simpletext: "Hacsak a kifizetést nem szükséges automatikusan generált számlával igazolni, a pénz fogadása olyan egyszerű, mint a bitcoin-küldés: egy QR-kód linkelése vagy megjelentése. Ez az egyszerű beállítás bármely felhasználó által elvégezhető, és a legtöbb ügyfél igényeit kielégíti. Nyilvánosan végezve különösen alkalmas a transzparens adományozáshoz."
+    simpletext: "Hacsak nem az utalásnak egy automatikus számlával kell társítva lennie, pénzt fogadni olyan egyszerű, mint egy kis bitcoin küldése - csak mutass egy címet vagy QR-kódot. Ez az egyszerű felépítés szinte minden felhasználó számára elérhető, és számos ügyfél igényeinek megfelel. Számviteli szempontból különösen alkalmas az önköltség csökkentésére és az átláthatóság növelésére."
     api: "Számos, harmadik fél által használható API"
     apitext: "Számos harmadik fél által használható kifizetésfeldolgozási szolgáltatás létezik, amely biztosít API-kat; nem szükséges bitcoinjait szerverén tárolnia, és viselnie az ezzel járó, biztonsággal kapcsolatos következményeket. Ezenkívül a legtöbb ilyen API lehetőséget teremt arra, hogy számláit kezelje, valamint bitcoinjait versenyképes költséggel váltsa helyi pénznemre."
-    own: "Önmaga saját pénzügyi rendszere lehet"
-    owntext: "Amennyiben nem használ harmadik fél által használható API-t, egy Bitcoin-szervert közvetlenül is integrálhat alkalmazásaiba, lehetőséget teremtve ezáltal az önmaga saját bankjává vagy kifizetésfeldolgozójává válásra. A mindezzel járó felelősség figyelembe vétele mellett nagyszerű rendszereket építhet, amelyek szinte díjtalanul dolgozzák fel a Bitcoin-tranzakciókat."
+    own: "Te lehetsz a saját bankod"
+    owntext: >
+        Ha nem használsz harmadik fél API-kat, integrálhatsz egy Bitcoin csomópontot
+        közvetlenül az alkalmazásaidba, lehetővé téve, hogy saját banki és fizetési
+        processzorrá válj. Az ezzel járó felelősséggel együtt csodálatos rendszereket
+        hozhatsz létre a bitcoin tranzakciók feldolgozására úgy ahogy szeretnéd.
     invoice: "Bitcoin-címek a számlák követéséhez"
-    invoicetext: "A Bitcoin minden tranzakcióhoz egy egyedi címet hoz létre. Ily módon, ha egy, számlához rendelt fizetési rendszert hoz létre, akkor nem kell mást tennie, mint minden egyes kifizetéshez egy Bitcoin-címet rendelnie és e címet figyelemmel kísérnie. Soha nem célszerű ugyanazt a címet több tranzakcióhoz is használnia."
-    security: "A biztonság oroszlánrésze kliensoldalon található"
-    securitytext: "A védelem java részét a protokoll biztosítja. Ez azt jelenti, hogy nem szükséges PCI-megfelelés, és a csalásészlelés csak abban az esetben elvárt, amennyiben a termékek vagy szolgáltatások azonnal érkeznek. Az Ön fő feladata bitcoinjainak <a href=\"#secure-your-wallet#\">biztonságos környezetben</a> való tárolása, és a felhasználók számára megjelenített kifizetési kérelmek védelme."
-    micro: "Olcsó mikrokifizetések"
-    microtext: "A Bitcoin ajánlja a legalacsonyabb kifizetés-feldolgozási díjakat, és általában néhány dollár értékű mikrokifizetések küldésére használható. A Bitcoin új, kreatív online szolgáltatások tervezésére teremt lehetőséget, amelyek létezése elé pusztán a pénzügyi korlátozások gördítenek akadályt. E szolgáltatások magukban foglalják a különböző, kis összegű adományokat menedzselő rendszereket és automatizált fizetési megoldásokat."
+    invoicetext: "A Bitcoin egyedi címet hoz létre minden tranzakcióhoz. Ha egy számlához kapcsolódó fizetési rendszert fejlesztenél, akkor mindössze annyit kell tenned, hogy minden kifizetéshez egy Bitcoin címet generálsz és figyeled az utalásokat (soha ne használd ugyanazt a címet több tranzakcióhoz)."
+    security: "A biztonság nagy része a kliensoldalon van"
+    securitytext: >
+        A védelem java részét a protokoll biztosítja, ami kiiktatja a PCI megfelelést.
+        A csalásmegelőzést le lehet egyszerűsíteni egyetlen variáns monitorozására:
+        a <a href="#you-need-to-know##instant">visszaigazolási értékre</a>. Ezen kívül
+        a bitcoinjaid védelme elsősorban a <a href="#secure-your-wallet#">tárcád biztonsága</a>
+        és HTTPS vagy más biztonságos protokollok használata arra, hogy utalási kérelmet
+        küldj ügyfeleidnek.
+    micro: "Lehetőségek új világa"
+    microtext: >
+        A Bitcoin lehetővé teszi, hogy olyan új és kreatív online szolgáltatásokat
+        fejlessz, amelyek a pénzügyi korlátok miatt korábban nem létezhettek. Ez magában
+        foglalja a borravalórendszereket, az automatizált fizetési megoldásokat, az
+        elosztott crowdfunding szolgáltatásokat, az időzített fizetési menedzsmentet,
+        a nyilvános eszközök nyomon követését, az alacsony bizalmi letétkezelési szolgáltatásokat,
+        a mikroutalásokat és még sok mást.
   bitcoin-for-individuals:
     title: "Bitcoin magánszemélyeknek - Bitcoin"
     pagetitle: "Bitcoin magánszemélyeknek"
-    summary: "A Bitcoin az igen alacsony költséggel történő pénzátutalás legegyszerűbb módja."
+    summary: "A bitcoin a nagyon olcsó tranzaktálás legegyszerűbb módja."
     mobile: "Egyszerű mobilfizetés"
-    mobiletext: "A Bitcoin mobiltelefonokon történő használata lehetővé teszi az egyszerű, kétlépcsős, ún. scan-and-pay fizetést. Nem szükséges hozzá regisztráció, kártyalehúzás, PIN kód beütés vagy bármi aláírása. A Bitcoin-kifizetések fogadásához mindössze egy QR-kód megjelenítésére van szükség Bitcoin-pénztárcájában, és engedélyeznie kell barátai számára, hogy beolvashassák mobilját vagy összeérinthessék a két telefont (NFC rádiótechnológia használata mellett)."
+    mobiletext: "A mobileszközön használt Bitcoin lehetővé teszi, hogy egyszerű kétlépcsős szkennelj-és-fizess megoldással utalj. Nincs szükség regisztrációra, bankkártya lehúzásra, PIN-kód beírására vagy akármilyen aláírásra. Mindössze annyit kell tenned, hogy a bitcoin utalásokhoz meg kell mutatnod a Bitcoin tárca alkalmazás QR kódját mialatt a másik fél leszkenneli a mobilodat, vagy összeérinti a két telefont (NFC rádió technológia segítségével)."
     international: "Gyors nemzetközi kifizetések"
-    internationaltext: "Afrikából Kanadába 10 perc alatt utalhat bitcoint. Nincsen közvetítő bank, amely lelassítaná a folyamatot, felháborító díjakat állapítana meg vagy befagyasztaná a tranzakciót. Ugyanúgy fizethet szomszédai számára, mint egy másik országban élő családtagjának."
+    internationaltext: >
+        A bitcoin utalás ugyanolyan könnyű, mint az utca másik végére pénzt küldeni.
+        Nincsenek közvetítő bankok, ahol három munkanapot kellene várni, se extra
+        nemzetközi utalási költségek vagy speciális korlátozások a minimális vagy
+        maximális küldhető összegekre.
     simple: "Bárhol, bármikor működik"
-    simpletext: "Az e-mail esetéhez hasonlóan nem kell megkérnie családtagjait, hogy ugyanazt a szoftvert vagy szolgáltatót használják. Nyugodtan hagyhatja, hogy a nekik tetszőket használják. Ezzel nincs is probléma: mindegyik kompatibilis a másikkal, mivel mindannyian ugyanazt a nyitott technológiát használják. A Bitcoin-hálózat soha nem alszik, még munkaszüneti napokon sem!"
+    simpletext: "Az e-mailhez hasonlóan nem kell megkérned a fogadókat, hogy ugyanazt a szoftvert, tárcát vagy szolgáltatót használják. Csak a bitcoin címükre van szükség és onnantól bármikor tudsz velük tranzaktálni. A Bitcoin hálózat mindig fut és soha nem alszik, még hétvégén és ünnepnapokon sem."
     secure: "Védelem és kontroll a pénze felett"
-    securetext: "A Bitcoin-tranzakciók védelmét katonai szintű kriptográfia biztosítja. Senki sem számíthat fel Önnek díjat vagy kezdeményezhet fizetést az Ön nevében. Amíg betartja az elvárt lépéseket <a href=\"#secure-your-wallet#\">pénztárcája védelmére</a>, a Bitcoin kontrollt biztosít Önnek a pénze felett, valamint magas szintű védelmet a csalás számos formájával szemben."
-    lowfee: "Zéró vagy alacsony díjak"
-    lowfeetext: "A Bitcoin lehetővé teszi, hogy igen alacsony költséggel küldjön és fogadjon kifizetéseket. Az olyan speciális eseteket leszámítva, mint a nagyon kis összegű kifizetések, nincsen kötelező díj. Ugyanakkor ajánlatos nagyobb összegű, önkéntes díjat fizetni a tranzakciók gyorsabb visszaigazolása, valamint a Bitcoin-hálózatot üzemeltető személyek díjazása érdekében."
+    securetext: "A Bitcoin tranzakciókat egy katonai fokozatú kriptográfia védi. Senki sem veheti el a pénzed és utalhat a nevedben. Mindaddig, amíg betartod a <a href=\"#secure-your-wallet#\">tárcád védelméhez</a> szükséges lépéseket, a Bitcoin ellenőrzést biztosít a pénzed fölött és egy nagyon erős szintű védelmet számos csalás ellen."
+    lowfee: "Válaszd ki a díjaidat"
+    lowfeetext: >
+        A bitcoin utalások fogadásának nincs díja és sok tárca lehetővé teszi, hogy
+        azt is beállítsd, hogy mekkora utalási díjat fizess. A legtöbb tárcának ésszerű
+        alapértelmezett díjai vannak és magasabb díjai, hogy így ösztönözzék a gyorsabb
+        tranzakció <a href="#you-need-to-know##instant">megerősítést</a>. A díjak
+        függetlenek az utalt összegtől, szóval akár 100,000 bitcoint ugyanakkora díjért
+        utalhatsz, mint 1 bitcoint.
     anonymous: "Védje meg személyazonosságát"
-    anonymoustext: "A Bitcoin esetében nincsen hitelkártyaszám, amelyet egy rosszindulatú szereplő begyűjthet, hogy Önnek adja ki magát. Sőt mi több, még az is lehetséges, hogy személyazonossága felfedése nélkül indítson kifizetést, a fizikai pénzhez majdnem hasonlóan. Ugyanakkor tekintettel kell lennie arra, hogy némi erőfeszítésbe kerül <a href=\"#protect-your-privacy#\">személyes adatainak védelme</a>."
+    anonymoustext: "A Bitcoinnal nincs bankkártyaszám, amit a rosszindulatú szereplők összegyűjthetnek hogy később lopni tudjanak tőled. Sőt, bizonyos esetekben még úgy is tudsz utalást küldeni, hogy felfednéd a személyazonosságodat, majdnem ugyanúgy, mint a készpénzzel. Azt viszont hozzá kell tenni, bizonyos erőfeszítéseket meg kell tenned a <a href=\"#protect-your-privacy#\">személyazonosságod védelme érdekében</a>."
+  bitcoin-paper:
+    title: "Bitcoin: Egy peer-to-peer elektronikus készpénzrendszer"
+    pagetitle: "Bitcoin: Egy peer-to-peer elektronikus készpénzrendszer"
+    summary: "A papír, ami először mutatta be a Bitcoint"
+    description: "Satoshi Nakamoto eredeti könyve jelenleg is ajánlott olvasmány mindenkinek, akit érdekel Bitcoin működése. Válaszd ki, melyik fordítást kívánod elolvasni:"
+    translated_by: "fordította"
+    submit_new_translation: 'Le szeretnéd fordítani a papírt anyanyelvedre? Látogasd meg a <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitcoin fehér könyv adatbázist a GitHubon</a> a további utasításokért és <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">nyiss egy kérelmet</a>, ha kérdésed merülne fel.'
+  buy:
+    title: "Vásárolj bitcoint"
+    pagetitle: "Hogyan tudsz bitcoint venni"
+    summary: "Több mód létezik a bitcoin vásárlásra."
+    bitcoin-exchange: "Használj egy bitcoin tőzsdét"
+    bitcoin-exchange-text: "A <a href=\"/en/exchanges\">bitcoin tőzsde</a> oldalunk számos különböző vállalkozást listáz, ami segíthet bitcoint venni a bankkártyáddal."
+    p2p-bitcoins: "Keress a P2P címtárban"
+    p2p-bitcoins-text: "A <a href=\"/en/exchanges#p2p\">peer-to-peer címjegyzék</a> alapján választott tőzsde használatával különböző bitcoin értékesítők között válogathatsz. Az értékesítőknek értékeléseik és visszajelzéseik vannak annak érdekében, hogy segítsen a választásban."
+    bitcoin-atm: "Használj egy bitcoin ATM-et"
+    bitcoin-atm-text: "A bitcoin ATM-ek hasonlóan a hagyományos ATM-ekhez hasonlóan működnek kivéve, hogy pénzt tudsz letétbe helyezni és lehívni annak érdekében, hogy bitcoint tudjál adni vagy venni. <a href=\"https://coinatmradar.com/\">Coin ATM Radar</a> oldalon találsz egy interaktív térképet, hogy a közeledben található ATM-ek listázására."
   community:
     title: "Közösség - Bitcoin"
-    pagetitle: "Bitcoin-közösségek"
-    pagedesc: "Leljen érdekes, Bitcoinnal foglalkozó emberekre, csoportokra és közösségekre."
+    pagetitle: "Bitcoin közösségek"
+    pagedesc: "Találj Bitcoinhoz kapcsolódó érdekes embereket, csoportokat és közösségeket."
     forums: "Fórumok"
     bitcointalk: "<a href=\"https://bitcointalk.org/\">BitcoinTalk fórum</a>"
     reddit: "A Reddit Bitcoin-közössége "
@@ -99,30 +165,40 @@ hu:
   choose-your-wallet:
     title: "Válasszon pénztárcát - Bitcoin"
     pagetitle: "Válasszon Bitcoin-pénztárcát"
-    pagedesc: "Válassza ki a megfelelő pénztárcát, és küldjön, illetve fogadjon kifizetéseket."
+    pagedesc: "Válassz tárcát a bitcoinjaid tárolására, hogy elkezdhess tranzaktálni a hálózaton."
     walletcatmobile: "Mobil"
     walletcatdesktop: "Asztali gép"
     walletcathardware: "Hardver"
     walletcatweb: "Web"
-    walletbitcoincore: "A Bitcoin Core egy teljes Bitcoin-kliens, és a hálózat gerincét képzi. Magas szintű biztonságot, titkosságot és stabilitást kínál. Azonban kevesebb szolgáltatást nyújt, illetve sok helyet és memóriát használ."
-    walletmultibit: "A MultiBit egy pehelykönnyű kliens, amely a gyors működésre és az egyszerű használatra koncentrál. Szinkronizálódik a hálózattal, és percek alatt használatra kész. A MultiBit ugyanakkor számos nyelvet támogat. Jó választás számítástechnikai háttérrel nem rendelkező felhasználók számára."
+    walletbitcoincore: "A Bitcoin Core egy teljes Bitcoin kliens és a hálózat gerincére lett építve. Magas szintű biztonságot, adatvédelmet és stabilitást biztosít. Ugyanakkor kevesebb funkciója van és rengeteg helyet és memóriát igényel."
+    walletbitcoinknots: "A Bitcoin Knots egy teljes Bitcoin-kliens, amely a hálózat gerincét alkotja. Biztosítja a magas szintű biztonságot, titkosságot és stabilitást. A Bitcoin Core-nál fejlettebb funkcionalitással rendelkezik, ám ennek tesztelése még nem teljes körű. Rengeteg tárhelyet és memóriát igényel."
     walletarmory: "Az Armory egy haladó ismereteket igénylő Bitcoin-kliens, amely szolgáltatásaival a Bitcoin kiemelt felhasználóit célozza. Számos biztonsági mentési, valamint titkosítási szolgáltatást kínál, és lehetőséget teremt a hidegtárolások interneteléréssel nem rendelkező számítógépen való biztonságos elhelyezésére."
     walletelectrum: "Az Electrum fókuszában a sebesség és az egyszerűség áll, alacsony erőforrás-használattal párosulva. Távoli szervereket használ a Bitcoin rendszere legbonyolultabb részeinek kezeléshez, és lehetővé teszi pénztárcája visszaállítását egy titkos szó(kapcsolat) segítségével."
     walletmsigna: "Az mSIGNA egy haladó szintű, mégis egyszerűen használható pénztárca. amely gyors, letisztult, cégszintű használatra is alkalmas, valamint nagyon biztonságos. Támogatja a BIP32-t, a csoportos aláírású tranzakciókat, a többkészülékes szinkronizációt, valamint a titkosított elektronikus és papíralapú biztonsági másolatokat."
     walletbitcoinwallet: "A Bitcoin Wallet egyszerűen használható és megbízható, mindemellett pedig biztonságos és gyors. A fejlesztők víziója a decentralizáció és a zéró bizalom; a Bitcoinnal kapcsolatos műveletek elvégzéséhez nem szükséges központi szolgáltatás. Az alkalmazás jó választás fejlesztői háttérrel nem rendelkező felhasználók számára."
-    walletbrd: "A BRD központi tervezési elve az egyszerűség. Valódi különálló Bitcoin-kliensként nincs feltört vagy leálló szerver, és az iOS erős biztonságára építve a breadwallletet úgy tervezték, hogy megvédje Önt a rosszindulatú szoftverektől, a böngészők biztonsági réseitől és akár a fizikai lopástól is."
-    walletmyceliumwallet: "A Mycelium Bitcoin Wallet egy nyílt forráskódú, androidra letölthető pénztárca, amelyet a biztonság, sebesség és egyszerű használat jegyében terveztek. Egyedi szolgáltatásokat biztosít kulcsai és hidegtárolásai kezeléséhez, bitcoinjai védelme érdekben."
-    walletcoinkite: "A Coinkite egy webes pénztárca-, valamint hitelkártya-szolgáltatás, amely fő célja az egyszerű használatóság. Mobiltelefonos böngészőkből is működik, tartalmaz kereskedői eszközöket és POS fizetési terminálokat. Egy hibrid pénztárca és maximális (kész)pénztartású trezor."
-    walletbitgo: "A BitGo egy csoportos aláírást igénylő pénztárca, amely magas szintű biztonságot garantál. Minden tranzakció két aláírást igényel, megvédve ezzel bitcoinjait a rosszindulatú szoftverektől és szervertámadásoktól. A privát kulcsokat a felhasználók birtokolják, ily módon a BitGo nem férhet hozzá a bitcoinokhoz. Jó választás a számítástechnikai ismeretekkel nem rendelkező felhasználók számára."
+    walletedgewallet: "Az Edge egy Segwit kompatibilis mobile bitcoin tárca ami magas szintű adatvédelmet, biztonságot és decentralizációt garantál, mely nagyon könnyen használható mindenki számára. Az Edge tárca minden esetben automatikusan titkosításra, biztonsági mentésre kerül és még akkor is működik amikor az Edge szerverek nem elérhetőek."
+    walletbrd: "BRD az egyik legkönnyebben használható tárca az új Bitcoin felhasználóknak. Egyben extrém biztonságos. BRD közvetlenül a Bitcoin hálózatra kapcsolódik és a készüléked beépített titkosítását használja a pénzed biztosítására."
+    walletmyceliumwallet: "A Mycelium Bitcoin pénztárca Androidra biztonságos, gyors és egyszerű használatra lett tervezve. Egyedülálló tulajdonsága, hogy kezeli a kulcsaidat és a hidegtárolást és ajánlat kompatibilitást a Trezorral és másokkal. "
+    walletcoinspace: "A Coin.Space HD Wallet egy ingyenes bitcoin tárca, mellyel világszerte ingyenes fizetésre használható. Egyszerűvé teszi a bitcoin utalást, biztonságos, mobilon vagy asztali gépen bárhol elérhető."
+    walletbitgo: "A BitGo egy nagy biztonságú multi-sig tárca, amely megvédheted bitcoinjaidat a lopástól és az elvesztéstől. Teljes ellenőrzés alatt tarthatod; a BitGo nem tudja befagyasztani vagy elkölteni a forrásaidat. A BitGo pénztárcák használata egyszerű, és olyan biztonsági jellemzőkkel rendelkeznek, mint a fizetési korlátok és többfelhasználós hozzáférés."
     walletgreenaddress: "A GreenAddress egy felhasználóbarát, csoportos aláírást igénylő pénztárca megnövelt biztonsággal és adatvédelemmel. A privát kulcsai sohasem lesznek szerveroldalon, még titkosított állapotban sem. Biztonsági okokból 2FA-t (kétszintű hitelesítést) és a böngészőkiterjesztést vagy Android-alkalmazást érdemes használnia."
     wallettrezor: "A TREZOR egy, a kényelem feláldozása nélkül magas szintű biztonságot kínáló hardverpénztárca. A hidegtárolással ellentétben a TREZOR egy online készülékhez csatlakozva is képes tranzakciókat aláírni. Ez azt jelenti, hogy a bitcoinok küldése akár akkor is biztonságos, ha egy feltört számítógépet használ."
-    walletnano: "A Ledger Nano egy ST23YT66 banki okoskártya platformra épülő hardverpénztárca. Biztonságban tartja a felhasználó privát kulcsait, érvényesíti a tranzakciókat és biztonságos feltöltőkártyaként vagy egy csoportos aláírású félként használható. Bár nem nyílt forráskódú, determinisztikusan érvényesíthető."
-    walletwasabi: "A Wasabi egy nyílt forráskódú, anonimitás/adatvédelem orientált Bitcoin tárca Windowsra, Mac-re és Linuxra. Beépített Tor anonimitási hálózaton, érme-keverési és érme-irányítási funkciókkal. Magyarok által fejlesztve."
+    walletcoldcard: "A Coldcard egy könnyen használható, ultrabiztonságos, nyílt forrású és megfizethető hardvertárca amit könnyen vissza lehet állítani egy titkosított microSD kártya segítségével. A privát kulcsodat egy erre tervezett biztonsági chipen tárolják. A MicroPython szoftverdizájn segítségével lehet változtatásokat végrehajtani."
+    walletkeepkey: "A KeepKey egy hardver tárca, amely leegyszerűsíti a bitcoin védelmét. Amikor a KeepKey-re bízzuk a pénzünket, akkor minden bitcoin tranzakciót végrehajtás előtt meg tekintenünk az OLED kijelzőn, és egy nyomógombbal jóvá kell hagynunk."
+    walletbitpay: "A BitPay Wallet a HD-többaláírásos tárca, amit eredetileg a BitPay BitPay források tárolására fejlesztettek. A BitPay több személyes és megosztott tárcát is támogat, tesztnetet és a teljes fizetési protokollt. Egy privát <a href=\"https://github.com/bitpay/bitcore-wallet-service\">BWS</a> csomópont használatával fokozni lehet a biztonságot és az adatvédelmet."
+    walletledgernanos: "A Ledger Nano S egy biztonságos Bitcoin hardvertárca. Bármilyen számítógéphez csatlakozhat az USB-n keresztül és beágyaz egy beépített OLED kijelzőt a másodszori ellenőrzésre és minden tranzakció hitelesítését egyetlen gombérintéssel el lehet végezni."
+    walletbitbox: "BitBox egy minimalista hardvertárca Svájcból, ami a biztonságra és az adatbiztonságra koncentrál. Funkciói között található teljes offline &amp; egyszerűsített biztonsági mentés, plauzibilis elfogadhatóság, több aláírás támogatás, egy natív asztali app és egy mobilalkalmazás hitelesítésre &amp; 2FA-hoz."
+    walletbither: "Bither egy egyszerű és biztonságos tárca több platformra. Speciális fejlesztésű hideg/meleg módokkal a felhasználók biztonságot és egyszerűséget kapnak. A Bither XRANDOM-ja különböző entrópia forrásokat használ valóban véletlenszerű számok generálására a felhasználók számára. A HDM-mel a felhasználók HD előnyöket és Multisig biztonságot kapnak.."
+    walletgreenbits: "A GreenBits egy gyorsan és könnyen használható tárca. Részesülj a minimális/zéró bizalmi megközelítésű biztonságból, opcionális hardver tárca támogatásból, a multisignature alapú 2FA és költési korlát funkciók előnyeiből."
+    walletbtccom: "A könnyen és biztonságosan használható BTC.com bitcoin tárcánál a felhasználó teljes kontrollal rendelkezik a bitcoinjai felett. A funkciók között van HD és csoportos aláírás technológia, multiplatform, helyi nyelv és fiatpénz támogatás, QR kódok és még sok más."
+    walleteclairmobile: "Eclair Mobile egy újgenerációs, Lightning-kész Bitcoin tárca. Használható normális Bitcoin tárcaként és összekapcsolható a Lightning hálózattal is olcsó és azonnali utalások érdekében."
+    walletwasabi: "A Wasabi egy nyílt forrású, nem letéti, személyes adatok védelmére fókuszáló Bitcoin tárca Windowsra, Linuxra és Macre. Beépített Tor anonimitás hálózat, CoinJoin és érmekontroll funkciókkal jön."
     walletdownload: "Telepítés"
     walletvisit: "Tovább a weboldalra"
     walletsourcecode: "Forráskód"
     platformandroid: "Android"
     platformios: "iOS"
+    platformwindowsphone: "Windows telefon"
     platformwindows: "Windows"
     platformmac: "Mac"
     platformlinux: "Linux"
@@ -137,9 +213,9 @@ hu:
     checkfailcontrolthirdparty: "Harmadik fél által kontrollált pénz"
     checkfailcontrolthirdpartytxt: "Ez a szolgáltatás teljes kontrollal rendelkezik a pénze felett. Ez azt jelenti, hogy meg kell bíznia abban, hogy ez a szolgáltatás a saját hibájából fakadóan nem veszíti el a pénzét. A mai napig a legtöbb webes pénztárca nem biztosítja a betétjeit bank módjára, és sok ehhez hasonló szolgáltatás esett áldozatul lopásoknak."
     checkgoodvalidationfullnode: "Teljes érvényesítés"
-    checkgoodvalidationfullnodetxt: "Ez a pénztárca egy teljes csomópont, amely hitelesíti és továbbítja a tranzakciókat a Bitcoin-hálózaton. Ez azt jelenti, hogy nem szükséges harmadik félbe vetett bizalom a tranzakciók hitelesítéséhez. A teljes csomópontok biztosítják a legmagasabb szintű biztonságot, és elengedhetetlenek a hálózat védelme fenntartásához. Ugyanakkor több helyet (több mint 65 GB), sávszélességet és hosszabb szinkronizációs időt igényelnek."
+    checkgoodvalidationfullnodetxt: "Ez a pénztárca egy teljes csomópont, amely hitelesíti és továbbítja a tranzakciókat a Bitcoin hálózaton. Ez azt jelenti, hogy nem szükséges harmadik félbe vetett bizalom a tranzakciók hitelesítéséhez. A teljes csomópontok biztosítják a legmagasabb szintű biztonságot, és elengedhetetlenek a hálózat védelmének fenntartásához. Ugyanakkor több helyet (több mint {{site.text.bitcoin_datadir_gb}} GB), sávszélességet és hosszabb szinkronizációs időt igényelnek."
     checkgoodvalidationfullnoderequired: "Teljes érvényesítés"
-    checkgoodvalidationfullnoderequiredtxt: "Ez a pénztárca egy teljes csomóponti szoftver telepítését igényli, amely érvényesíti és továbbítja a tranzakciókat a Bitcoin-hálózaton. Ez azt jelenti, hogy nem szükséges harmadik félbe vetett bizalom a tranzakciók hitelesítéséhez. A teljes csomópontok biztosítják a legmagasabb szintű biztonságot, és elengedhetetlenek a hálózat védelmének fenntartásához. Ugyanakkor több helyet (több mint 65 GB-ot), sávszélességet és hosszabb kezdeti szinkronizációs időt igényelnek."
+    checkgoodvalidationfullnoderequiredtxt: "Ez a pénztárca egy teljes csomóponti szoftver telepítését igényli, amely érvényesíti és továbbítja a tranzakciókat a Bitcoin hálózaton. Ez azt jelenti, hogy nem szükséges harmadik félbe vetett bizalom a tranzakciók hitelesítéséhez. A teljes csomópontok biztosítják a legmagasabb szintű biztonságot, és elengedhetetlenek a hálózat védelmének fenntartásához. Ugyanakkor több helyet (több mint {{site.text.bitcoin_datadir_gb}} GB-ot), sávszélességet és hosszabb kezdeti szinkronizációs időt igényelnek."
     checkneutralvalidationvariable: "Változékony érvényesítés"
     checkneutralvalidationvariabletxt: "A kifizetésérvényesítési funkciókat az ezzel a készülékkel használt szoftveres pénztárca biztosítja. Kérjük, tekintse meg használni tervezett pénztárca Érvényesítési értékét."
     checkpassvalidationspvp2p: "Egyszerűsített érvényesítés"
@@ -193,11 +269,97 @@ hu:
     checkpassprivacynetworksupporttorproxytxt: "Ez a pénztárca megengedi, hogy a <a href=\"https://www.torproject.org/\">Tort</a> proxyként állítsa be és használja annak megakadályozására, hogy támadók vagy internetszolgáltatók hozzárendeljék az IP-címét a kifizetéseihez."
     checkfailprivacynetworknosupporttor: "A Tor nem támogatott"
     checkfailprivacynetworknosupporttortxt: "Ez a pénztárca nem teszi lehetővé a Tor használatát ahhoz, hogy megakadályozza, hogy támadók vagy internetszolgáltatók hozzárendeljék az IP-címét a kifizetéseihez."
+    checkgoodfeecontrolfull: "Teljes ellenőrzés a díjak fölött"
+    checkgoodfeecontrolfulltxt: "Ez a tárca teljes kontrollt biztosít a díjak felett. Ez azt jelenti, hogy lehetővé teszi a díjak megváltoztatását RBF vagy CPFP használatával miután elküldték a forrást. A tárca egyben az aktuális hálózati körülmények alapján díjat is ajánl azért, hogy a tranzakciók időben megerősítésre kerüljenek anélkül, hogy többet kelljen fizetni."
+    checkpassfeecontroldynamic: "Dinamikus díjjavaslatok"
+    checkpassfeecontroldynamictxt: "Ez a pénztárca a pillanatnyi hálózati viszonyok alapján díjkalkulációkat végez. Ez azt jelenti, hogy segít megtalálni azt a minimális díjat, ami biztosítja a tranzakció időben történő feldolgozását anélkül, hogy többet kellene fizetned."
+    checkpassfeecontroloverride: "Felülírható dinamikus díjak"
+    checkpassfeecontroloverridetxt: "Ez a tárca ingyenes ajánlásokat tesz a hálózat aktuális állapota alapján amit egyben felülírhatsz. Ez azt jelenti, hogy ez a tárca segít kiválasztani a megfelelő díjat azért, hogy a tranzakcióid időben megerősítésre kerüljenek anélkül, hogy többet kelljen fizetni, de alapvetően teljes kontrollt biztosít egy ajánlás felülírására."
+    checkneutralfeecontrolvariable: "Változó díjak felügyelete"
+    checkneutralfeecontrolvariabletxt: "Díjszabási funkciókat a készülékhez használt szoftvertárca biztosít. Kérjük pillants rá a díjszabás értékre annál a szoftvertárcánál, amit használni tervezel."
+    checkfailfeecontrolstatic: "Statikus díjjavaslatok"
+    checkfailfeecontrolstatictxt: "Ez a tárca nem nyújt díjajánlást az aktuális piaci körülmények alapján. Ez azt jelenti, hogy  a tranzakcióid késés tárgyai lehetnek akkor, ha a kiválasztott díj túl alacsony vagy épp olyan díjat fizethetsz, ami túl magas."
     educate: "Szánjon időt a tájékozódásra"
     educatetxt: "A Bitcoin különbözik attól, amit ismer és nap mint nap használ. Mielőtt a Bitcoint bármilyen komoly tranzakcióra használná, olvassa el azt a <a href=\"#you-need-to-know#\"><b>néhány dolgot, amelyet érdemes tudnia</b></a>, valamint tegyen lépéseket a <a href=\"#secure-your-wallet#\"><b>pénztárcája biztosítására</b></a>. Soha ne feledje, hogy az Ön felelőssége, hogy gondosan kiválassza a pénztárcáját, és jó gyakorlatokat sajátítson el a pénze védelmére."
+  developer-documentation:
+    title: "Fejlesztői dokumentáció - Bitcoin"
+    pagetitle: "Fejlesztői dokumentáció"
+    summary: "Találj hasznos fejlesztői anyagot, útmutatót és referenciaanyagot."
+    docreference-title: "Lásd még:"
+    navigationreturn: "Vissza a felülnézetre"
+    navigationreport: "Jelents egy problémát"
+    navigationedit: "Szerkeszd a GitHubon"
+    glossarysearchplaceholder: "Keresés"
+    docreferencemenuguides: "Útmutatók"
+    docreferencemenureference: "Referencia"
+    docreferencemenuexamples: "Példák"
+    docreferencemenuglossary: "Magyarázó"
+    resourcestitleblockchain: "Blokklánc"
+    resourcesitemblockchainguides: "Blokklánc útmutató"
+    resourcesitemblockchainreference: "Blokklánc referencia"
+    resourcestitletransactions: "Tranzakciók"
+    resourcesitemtransactionsguides: "Tranzakció útmutató"
+    resourcesitemtransactionsreference: "Tranzakció referencia"
+    resourcesitemtransactionsexamples: "Tranzakció példák"
+    resourcestitlecontracts: "Szerződések"
+    resourcesitemcontractsguides: "Szerződés útmutató"
+    resourcestitlewallets: "Tárcák"
+    resourcesitemwalletsguides: "Tárca útmutató"
+    resourcesitemwalletsreference: "Tárca referencia"
+    resourcestitlepaymentprocessing: "Fizetésfeldolgozás"
+    resourcesitempaymentprocessingguides: "Fizetésfeldolgozási útmutató"
+    resourcesitempaymentprocessingexamples: "Fizetésfeldolgozási példa"
+    resourcestitleoperatingmodes: "Műveleti módok"
+    resourcesitemoperatingmodesguides: "Műveleti mód útmutató"
+    resourcestitlep2pnetwork: "P2P hálózat"
+    resourcesitemp2pnetworkguides: "P2P hálózat útmutató"
+    resourcesitemp2pnetworkreference: "P2P hálózat referencia"
+    resourcesitemp2pnetworkexamples: "P2P hálózat példák"
+    resourcestitleadditional: "További források"
+    resourcestitlemining: "Blokksablon lekérése"
+    fragmentreviewsneeded: >
+        Ez a dokumentáció nem lett alaposan átnézve a Bitcoin szakértők által és valószínűsíthetően
+        számos hibát tartalmaz. Kérjük használd a bal alsó sarokban található<em>Kibocsátás</em>
+        és <em>Szerkesztés</em> linkeket a segítségnyújtáshoz. A felelősségkizáró
+        nyilatkozat bezárása
+    fragmentreviewsneededcloselink: "kattints ide"
+    fragmenttranslationwarning: >
+        A dokumentáció ezen verziója angol (eredeti) részeket is tartalmazhat, ha
+        hozzá szeretnél járulni ennek a dokumentumnak a lefordításához a nyelvedre,
+        kérjük használd a megfelelő linkeket a fejlécek alatt, vagy keresd fel
+    fragmenttranslationdoclink: "ez a link"
+    subheadlinkedit: "Szerkesztés"
+    subheadlinkhistory: "Történet"
+    subheadlinkreport: "Jelentsd a problémát"
+    subheadlinkdiscuss: "Beszélgetés"
+    subheadlinktranslate: "Fordítás"
+  developer-examples:
+    title: "Fejlesztői példák - bitcoin"
+    pagetitle: "Bitcoin fejlesztői példák"
+    summary: "Keress példákat arra, hogy tudsz programokat fejleszteni a Bitcoinnal."
+  developer-guide:
+    title: "Fejlesztői útmutató - bitcoin"
+    pagetitle: "Bitcoin fejlesztői útmutató"
+    summary: "Keress részletes információt a Bitcoin protokollról és a kapcsolódó specifikációkról."
+  developer-reference:
+    title: "Bitcoin fejlesztői referencia - bitcoin"
+    pagetitle: "Bitcoin fejlesztői referencia"
+    summary: "Találj technikai részleteket és API dokumentációt."
+  developer-glossary:
+    title: "Fejlesztői magyarázó - bitcoin"
+    pagetitle: "Bitcoin fejlesztői magyarázó"
+    subsummary: "Ez egy technikai magyarázó. A nem technikai felhasználók a [szószedet oldal] (/hu/szószedet/) oldalt használják."
+    suggestnewterm: "Nem találod amit keresel? [Ajánl egy új definíciót][1] a magyarázónak!"
+    definitionnotice: "Ez a definíció a [technikai magyarázó](/hu/fejlesztői-magyarazo) oldalról jön."
+    sectiontitledefinition: "Definíció"
+    sectiontitlesynonyms: "Szinonimák"
+    sectiontitlenottobeconfused: "Ne keverd össze a"
+    sectiontitlelinks: "Linkek"
+    categorynumbers: "Számok"
   development:
     title: "Fejlesztés - Bitcoin"
     pagetitle: "Bitcoinfejlesztés"
+    pagedesc: "A Bitcoin egy világméretű projekt és nyílt forráskódú szoftver."
     summary: "Jusson több információhoz a jelenlegi specifikációval, szoftverrel és fejlesztőkkel kapcsolatban."
     spec: "Dokumentáció"
     spectxt: "Amennyiben szeretne többet megtudni a Bitcoin technikai részleteiről, és arról, hogy hogyan használhatóak a rendelkezésre álló eszközök és API-k, érdemes a <a href=\"/en/developer-documentation\">fejlesztői dokumentáció</a> tanulmányozásával kezdnie."
@@ -207,17 +369,19 @@ hu:
     disclosuretxt: "Amennyiben bármilyen, a Bitcoinnal kapcsolatos sebezhetőségre bukkan, a nem kritikus biztonsági réseket angol nyelvű e-mailben a magfejlesztők bármelyikének elküldheti, vagy megoszthatja a fent látható privát bitcoin-security levelezőlistán. Egy nem kritikus biztonsági résre jó példa egy, csak nagy költséggel kivitelezhető szolgáltatásmegtagadással járó támadás (DoS). Azokat a kritikus biztonsági réseket, amelyek túlságosan érzékenyek egy titkosítás nélküli e-mailben való elküldéshez, a PGP kulcsukkal titkosítva célszerű elküldenie egy vagy több magfejlesztőnek."
     involve: "Legyen részese a projektnek"
     involvetxt1: "A Bitcoin egy ingyenes szoftver, és bármely fejlesztő hozzájárulhat a projekthez. Minden, amire csak szüksége van, megtalálható a <a href=\"https://github.com/bitcoin/bitcoin\">GitHub-repozitóriumban</a>. Kérjük, mindenképpen olvassa el a README-ben található fejlesztési folyamatot, illetve készítsen jó minőségű kódot, valamint tartson tiszteletben minden irányelvet."
-    involvetxt2: "A fejlesztéssel kapcsolatos megbeszélések a GitHub weboldalán és a sourceforge <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a>  levelezőlistáján történnek. A fejlesztéssel kapcsolatos, kevésbé formális megbeszélések az irc.freenode.net #bitcoin-dev hashtag alatt kapnak helyet (<a href=\"#\" onclick=\"freenodeShow(event);\">webes interfész</a>, <a href=\"http://bitcoinstats.com\">naplók</a>)."
+    involvetxt2: "Fejlesztői beszélgetések a GitHubon és a <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> levelezőlistán kerülnek lebonyolításra. A kevésbé formális beszélgetések az irc.freenode.net #bitcoin-core-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">webes interfész, <a href=\"http://bitcoinstats.com/irc/bitcoin-core-dev/logs\">naplók</a>)."
     more: "Még több ingyenes szoftverprojekt"
-    morechoose: "Néhány, <a href=\"http://whatcanidoforbitcoin.xyz/\">készségeire vonatkozó kérdés</a> megválaszolásával megállapíthatja, hogy melyik projektben érdemes részt vennie."
+    morewant: "Egy másik projektben szeretnél közreműködni?"
+    morechoose: "Néhány, <a href=\"http://whatcanidoforbitcoin.org/\">készségeire vonatkozó kérdés</a> megválaszolásával megállapíthatja, hogy melyik projektben érdemes részt vennie."
     moremore: "Tovább..."
     contributors: "Bitcoin Core közreműködők"
     contributorsorder: "(A hozzájárulások menyiségének sorrendjében:)"
     devcommunities: "Fejlesztői közösségek"
     devcommunitiesintro: "A következő chatszobák és weboldalak a Bitcoin fejlesztésével kapcsolatos párbeszédnek biztosítanak felületet. A posztolás előtt, kérjük, olvassa el a magatartási szabályokat."
-    ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-dev\">#bitcoin-dev IRC-csatona </a> a freenode-on."
+    ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-dev\">#bitcoin-core-dev IRC-csatorna </a> a freenode-on."
+    slack: "<a href=\"https://slack.bitcoincore.org/\">Bitcoin Core Slack csatorna</a>"
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
-    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Fejlesztés &amp; Technikai Vélemény Fórum</a>"
   download:
     title: "Letöltés - Bitcoin"
     pagetitle: "Töltse le a Bitcoin Core-t"
@@ -225,16 +389,31 @@ hu:
     download: "Töltse le a Bitcoin Core-t"
     downloados: "Vagy válassza ki operációs rendszerét"
     downloadsig: "Kibocsátási aláírások megerősítése"
-    sourcecode: "Hozzáférés a forráskódhoz"
+    downloadtorrent: "Torrent letöltése"
+    source: "Forráskód"
     versionhistory: "Korábbi verziók mutatása"
     notelicense: "A Bitcoin Core egy közösség által vezérelt, az <a href=\"http://opensource.org/licenses/mit-license.php\">MIT licence</a> alatt kibocsátott, <a href=\"https://www.fsf.org/about/what-is-free-software\">ingyenes szoftverprojekt</a>."
-    notesync: "A Bitcoin Core kezdeti szinkronizációja hosszú időt vehet igénybe. Győződjön meg róla, hogy elegendő sávszélessége és tárhelye van a teljes blokklánc-mérethez (több mint 65 GB). Amennyiben tudja, hogy hogyan lehet torrentfájlt letölteni, felgyorsíthatja a folyamatot a szoftver elindítása előtt, <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (a blokklánc egy korábbi másolata) Bitcoin Core adatkönyvtárhoz való hozzáadásával."
-    patient: "Legyen türelemmel"
+    notesync: "A Bitcoin Core kezdeti szinkronizációja hosszú időt és rengeteg adat letöltését veszi igénybe. Győződj meg róla, hogy rendelkezel elegendő sávszélességgel és tárhellyel a teljes blokklánc-mérethez (több mint {{site.text.bitcoin_datadir_gb}}GB). Amennyiben jó internetkapcsolattal rendelkezel, akkor úgy tudod erősíteni a hálózatot, hogy hagyod futni a számítógépedet a Bitcoin Core-ral és 8333 porttal megnyitva."
+    full_node_guide: "Olvasd el a <a href=\"/en/full-node\">full node tájékoztatót</a> a részletekért."
+    patient: "Ellenőrizd sávszélességed és a tárhelyet"
+    releasekeys: "Bitcoin Core kiadás aláírás kulcs"
+  exchanges:
+    title: "Tőzsdék - Bitcoin"
+    metadescription: "Itt tudsz bitcoint vásárolni váltókon más fizetőeszközökért cserébe. Válts amerikai dollárt (BTC/USD), eurót (BTC/EUR), jüant (BTC/CNY) és más devizát bitcoinra."
+    pagetitle: "Bitcoin tőzsdék"
+    pagedesc: "Helyek, ahol bitcoint vásárolhatunk más valutáért."
+    exchange: "Bitcoin Tőzsdék"
+  site-blog:
+    loadmore-posts: "Még több bejegyzés betöltése"
+  alerts:
+    loadmore-alerts: "Még több riasztás betöltése"
   events:
-    title: "Konferenciák és egyéb rendezvények - Bitcoin"
-    pagetitle: "Konferenciák és egyéb rendezvények"
+    title: "Konferenciák és rendezvények - bitcoin"
+    rsslink: "Feliratkozás az RSS feedre."
+    loadmore-events: "Még több esemény betöltése"
+    pagetitle: "Konferenciák és események"
     pagedesc: "Vegyen részt rendezvényeken, konferenciákon és meetupokon a világ minden táján."
-    upcoming: "Hamarosan megrendezésre kerülő rendezvények és konferenciák"
+    upcoming: "Soron következő események és konferenciák"
     eventsubmit: "Esemény elküldése"
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitcoin-meetupok a BitcoinTalkon</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitcoin-meetupok a Wikin</a>"
@@ -242,7 +421,7 @@ hu:
   faq:
     title: "GYIK - Bitcoin"
     pagetitle: "Gyakran ismételt kérdések"
-    summary: "Kapjon válaszokat a Bitcoinnal kapcsolatos, visszatérő kérdésekre és mítoszokra."
+    summary: "Kapj válaszokat a Bitcoinnal kapcsolatos, visszatérő kérdésekre és mítoszokra."
     table: "Tartalomjegyzék"
     general: "Általános jellemzők"
     whatisbitcoin: "Mi az a Bitcoin?"
@@ -254,23 +433,37 @@ hu:
     whocontrolstxt1: "Éppen úgy senki nem birtokolja a Bitcoin-hálózatot, ahogyan senki sem birtokolja az e-mail technológiáját. A Bitcoint a világ minden táján élő Bitcoin-felhasználók irányítják. Bár a fejlesztők tökéletesítik a szoftvert, mégsem kényszeríthetik ki a Bitcoin-protokoll változását, mivel minden felhasználó szabadon választhatja meg, hogy milyen szoftvert és verziót használ. A kompatibilitás megteremtése érdekében az összes felhasználónak azonos szabályokat követő szoftvert kell használnia. A Bitcoin csak a felhasználók teljes egyetértése mellett képes megfelelően működni. Ebből fakadóan minden felhasználó és fejlesztő erősen érdekelt e konszenzus megteremtésében és fenntartásában."
     howitworks: "Hogyan működik a Bitcoin?"
     howitworkstxt1: "Felhasználói szemszögből a Bitcoin nem más, mint egy mobilalkalmazás vagy számítógépes program, amely személyes Bitcoin-pénztárcát biztosít, és amely lehetővé teszi a felhasználó számára, hogy segítségével bitcoinokat küldjön és fogadjon. A legtöbb felhasználó számára a Bitcoin így működik."
-    howitworkstxt2: "A színfalak mögött a Bitcoin-hálózat egy \"blokkláncnak\" nevezett nyilvános főkönyvet oszt meg. Ez a főkönyv tartalmaz minden valaha feldolgozott tranzakciót, lehetőséget teremtve a felhasználók számítógépeinek minden egyes tranzakció érvényességének megerősítésére. Minden egyes tranzakció hitelességét a küldő féllel megegyező digitális aláírások védik, teljes irányítást biztosítva minden felhasználó számára a Bitcoin-címekről történő bitcoin-küldéshez. Ezenkívül bárki feldolgozhatja a tranzakciókat specializált hardver számítási kapacitását kihasználva, valamint e szolgáltatásért cserébe bitcoin-jutalomban részesülhet. Erre a tevékenységre gyakran \"bányászatként\" hivatkoznak. A Bitcoinnal kapcsolatos további információkért keresse fel az <a href=\"#how-it-works#\">e célnak szentelt oldalt</a> és olvassa el az <a href=\"#bitcoin-paper#\">eredeti tanulmányt</a> (angol nyelven)."
+    howitworkstxt2: "A színfalak mögött a Bitcoin hálózat egy \"blokkláncnak\" nevezett nyilvános főkönyvet oszt meg. Ez a főkönyv tartalmaz minden valaha feldolgozott tranzakciót, lehetőséget teremtve a felhasználók számítógépeinek minden egyes tranzakció érvényességének megerősítésére. Minden egyes tranzakció hitelességét a küldő féllel megegyező digitális aláírások védik, teljes irányítást biztosítva minden felhasználó számára a Bitcoin címekről történő bitcoin küldéshez. Ezenkívül bárki feldolgozhatja a tranzakciókat specializált hardver számítási kapacitását kihasználva, valamint e szolgáltatásért cserébe bitcoin jutalomban részesülhet. Erre a tevékenységre gyakran \"bányászatként\" hivatkoznak. A Bitcoinnal kapcsolatos további információkért keresd fel az <a href=\"#how-it-works#\">e célnak szentelt oldalt</a> és olvasd el az <a href=\"#bitcoin-paper#\">eredeti tanulmányt</a>."
     used: "Tényleg használják az emberek a Bitcoint?"
-    usedtxt1: "Igen. A Bitcoint használó magánszemélyek és <a href=\"http://usebitcoins.info/\">vállalkozások</a> száma egyre növekszik. Ez magában foglal fizikai vállalkozásokat - például éttermeket, ügyvédi irodákat -, illetve a Namecheaphez, Wordpresshez, Reddithez és Flattrhöz hasonló, népszerű online szolgáltatásokat. Mivel a Bitcoin továbbra is relatíve új jelenségnek tekinthető, ezért gyorsan növekszik. 2013 augusztásának végén a <a href=\"https://bitcoincharts.com/bitcoin/\">forgalomban lévő bitcoinok értéke</a> meghaladta az 1,5 milliárd dollárt; valamint nap mint nap több millió dollár értékű bitcoin cserél gazdát."
+    usedtxt1: "Igen. A bitcoint használó <a href=\"/en/spend-bitcoin\">vállalkozások</a> és magánszemélyek száma egyre növekszik. Ez magában foglal fizikai vállalkozásokat - például éttermeket, ügyvédi irodákat -, illetve a Namecheaphez, Overstock.com-hoz és Reddithez hasonló, népszerű online szolgáltatásokat. Ugyan a Bitcoin továbbra is relatíve új jelenségnek tekinthető, azért gyorsan növekszik. 2018 májusában a <a href=\"https://bitcoincharts.com/bitcoin/\">forgalomban lévő bitcoinok értéke</a> meghaladta a 100 milliárd dollárt; valamint nap mint nap több millió dollár értékű bitcoin cserél gazdát."
     acquire: "Hogyan szerezhetőek bitcoinok?"
     acquireli1: "Termékek és szolgáltatások ellenértékeként."
-    acquireli2: "Vásároljon bitcoinokat egy <a href=\"https://www.buybitcoinworldwide.com\">Bitcoin-tőzsdén</a>."
+    acquireli2: "Vásároljon bitcoint egy <a href=\"https://www.buybitcoinworldwide.com\">Bitcoin tőzsdén</a>."
     acquireli3: "Kereskedjen bitcoinnal <a href=\"https://localbitcoins.com/\">lakhelye környékén</a>."
     acquireli4: "Jusson bitcoinokhoz versenyszerű <a href=\"http://www.bitcoinmining.com/\">bányászat</a> segítségével."
     acquiretxt1: "Bár lehetséges lenne olyan magánszemélyt találni, aki hajlandó lenne bitcoinokat eladni hitelkártya vagy PayPal-kifizetés ellenében, a legtöbb kereskedés nem engedélyezi e fizetési módok használatát. Ennek oka az, hogy vannak olyan esetek, amikor valaki PayPal segítségével vásárol bitcoinokat, ezt követően pedig visszavonja a tranzakciót őt érintő felét. Ezen esetre gyakran visszaszámlázásként utalnak."
     makepayment: "Mennyire bonyolult a Bitcoinnal fizetni?"
     makepaymenttxt1: "A Bitcoin-kifizetések egyszerűbben kezdeményezhetőek, mint a bank- vagy hitelkártyával történő vásárlások; valamint kereskedői fiók nélkül is fogadhatóak. A kifizetések egy pénztárca-alkalmazás segítségével hozhatóak létre számítógépén vagy okostelefonján, a címzett címe és a kifizetési összeg megadásával, valamint a küldés gomb megnyomásával. A címzett címe megadásának leegyszerűsítésére számos pénztárca hozzájuthat a címhez egy QR-kód beolvasásával vagy - az NFC technológiának köszönhetően - két telefon összeérintésével."
     advantages: "Mik a Bitcoin előnyei?"
-    advantagesli1: "<em><b>Fizetési szabadság</b></em> - Lehetségessé válik bármekkora összegű pénzt küldeni és fogadni azonnal, bármikor, a világ bármelyik sarkából. Nincsenek munkaszüneti napok. Nincsenek határok. A Bitcoin teljes irányítást biztosít felhasználóinak pénzük ellenőrzése felett."
-    advantagesli2: "<em><b>Nagyon alacsony díjak</b></em> - A Bitcoin-kifizetések feldolgozása jelenleg vagy díjtalanul vagy rendkívül alacsony díjak mellett történik. A felhasználók díjat mellékelhetnek tranzakcióikhoz az elsőbbségi feldolgozáshoz, amely a tranzakció hálózat által történő gyorsabb visszaigazolását eredményezi. Továbbá a kereskedői feldolgozószoftverek a kereskedők tranzakcióinak feldolgozását, a bitcoinok hivatalos pénznemre történő átváltását, valamint az átváltott pénz kereskedői bankszámlára történő napi elhelyezését segítik. Mivel e rendszerek a Bitcoinon alapulnak, a PayPalnál és a hitelkártya-hálózatoknál sokkal alacsonyabb díjakkal működnek."
+    advantagesli1: >
+        <em><b>Fizetési szabadság</b></em> - Lehetségessé válik bármekkora összegű
+        pénzt küldeni és fogadni azonnal, bármikor, a világ bármelyik sarkából. Nincsenek
+        munkaszüneti napok. Nincsenek határok. Nincs bürokrácia. A Bitcoin teljes
+        irányítást biztosít felhasználóinak pénzük ellenőrzése felett.
+    advantagesli2: >
+        <em><b>Válaszd ki a saját díjadat</b></em> - Nincs díja annak, hogy bitcoint
+        fogadj és sok tárca lehetővé teszi, hogy Te válaszd ki a küldési díjat. A
+        magasabb díjak gyorsabb tranzakció <a href="#you-need-to-know##instant">megerősítést</a>
+        eredményeznek. A díjak függetlenek a küldött összegektől, szóval lehetőséged
+        van 100,000 bitcoint küldeni ugyanazon a díjon, mint 1 bitcoint. Továbbá a
+        kereskedői feldolgozószoftverek a kereskedők tranzakcióinak feldolgozását,
+        a bitcoinok hivatalos pénznemre történő átváltását, valamint az átváltott
+        pénz kereskedői bankszámlára történő napi elhelyezését segítik. Mivel e rendszerek
+        a Bitcoinon alapulnak, a PayPalnál és a hitelkártya-hálózatoknál sokkal alacsonyabb
+        díjakkal működnek.
     advantagesli3: "<em><b>Kisebb kereskedői kockázat</b></em> - A Bitcoin-tranzakciók biztonságosak, visszavonhatatlanok és nem tartalmaznak érzékeny vagy személyes információkat. Ez megvédi a kereskedőket a csalásokból vagy a tisztességtelen visszaszámlázásoktól, és szükségtelenné teszi a PCI-megfelelés használatát. A kereskedők könnyedén új piacokra léphetnek be, amelyeken vagy a hitelkártyák nem elérhetőek vagy a csalások aránya elfogadhatatlanul magas. A végső eredmény alacsonyabb díjakban, nagyobb piacokban és kevesebb adminisztrációs költségben testesül meg."
     advantagesli4: "<em><b>Biztonság és kontroll</b></em> - A Bitcoin-felhasználók teljes irányítást élveznek tranzakcióik felett; a kereskedők számára lehetetlen kéretlen vagy rejtett díjak felszámítása, amelyek más fizetési módok esetén megtörténhetnek. A Bitcoin-kifizetések a tranzakcióhoz csatolt személyes információk nélkül kezdeményezhetőek. Ez erős védelmet jelent a személyazonosság ellopását célzó támadásokkal szemben. A Bitcoin-felhasználók ezenkívül biztonsági mentéssel és titkosítással védhetik meg pénzüket."
-    advantagesli5: "<em><b>Transzparens és semleges</b></em> - <a href=\"https://live.blockcypher.com/btc/\">Minden, a Bitcoin pénzkínálatát érintő információ</a> a blokkláncon azonnal, bárki számára, valós időben hozzáférhető, visszaigazolható és használható. Egyetlen magánszemély vagy szervezet sem irányíthatja vagy befolyásolhatja a Bitcoin-protokollt, mivel kriptográfiailag biztonságosnak tekinthető. Ez lehetővé teszi, hogy a Bitcoin magja teljes mértékben semleges, transzparens és kiszámítható legyen."
+    advantagesli5: "<em><b>Transzparens és semleges</b></em> - <a href=\"https://live.blockcypher.com/btc/\">Minden, a Bitcoin pénzkínálatát érintő információ</a> a blokkláncon azonnal, bárki számára, valós időben hozzáférhető, visszaigazolható és használható. Egyetlen magánszemély vagy szervezet sem irányíthatja vagy befolyásolhatja a Bitcoin-protokollt, mivel kriptográfiailag védett. Ez lehetővé teszi, hogy a Bitcoin magja teljes mértékben semleges, transzparens és kiszámítható legyen."
     disadvantages: "Mik a Bitcoin hátrányai?"
     disadvantagesli1: "<em><b>Az elfogadás mértéke</b></em> - Az emberek többsége nem ismeri a Bitcoint. Minden nappal egyre több vállalkozás fogad el bitcoinokat, mivel rendelkezni kívánnak az elfogadás biztosította előnyökkel. Ugyanakkor a lista egyelőre rövid, illetve további növekedésre van szüksége a <a href=\"https://en.wikipedia.org/wiki/Network_effect\">hálózati hatás</a> (angol nyelven) kihasználásához."
     disadvantagesli2: "<em><b>Volatilitás</b></em> - A forgalomban lévő bitcoinok <a href=\"https://bitcoincharts.com/bitcoin/\">összértéke</a> és a Bitcoint használó vállalkozások száma továbbra is nagyon alacsony ahhoz képest, hogy mennyi lehetne. Ezért relatíve kis események, megkötött üzletek vagy kereskedelmi tevékenységek jelentősen befolyásolhatják az árfolyamot. Elméletileg a volatilitás a Bitcoin-piacok és a technológia éretté válásával csökkenni fog. Soha nem látott még a világ startup-pénznemet, így igazán nehéz (és egyben izgalmas) elképzelni, hogy hogyan fog teljesíteni."
@@ -281,7 +474,7 @@ hu:
     makemoneytxt1: "Soha nem várhatja el, hogy a Bitcoinnal vagy bármely más, fejlődő technológia segítségével meggazdagodjon. Fontos, hogy mindig legyen óvatos mindennel szemben, ami túl szép, hogy igaz legyen, vagy figyelmen kívül hagyja az alapvető gazdasági törvényszerűségeket."
     makemoneytxt2: "A Bitcoin az innováció növekvő terepe, és vannak olyan üzleti lehetőségek, amelyek kockázatokkal járnak. Nincs garancia arra, hogy a Bitcoin továbbra is növekedni fog, még akkor sem, ha eddig nagyon erős ütemben fejlődött. A Bitcoinba való pénz és egyéb erőforrások befektetéséhez vállalkozó szellemre van szükség. Számos módon lehet pénzt keresni a Bitcoinnal, például bányászattal, spekulációval vagy új vállalkozások alapításával. Az összes mód versenyre épül, és nem garantál profitot. Minden egyénnek önállóan, a költségek és kockázatok megfelelő mérlegelése útján kell döntenie az ilyen jellegű projektekről."
     virtual: "Teljesen virtuális és immateriális-e a Bitcoin?"
-    virtualtxt1: "A Bitcoin éppen annyira virtuális, mint az emberek által mindennap használt hitelkártyák és online banki hálózatok. A Bitcoin használható online fizetésre és fizikai üzletekben is - éppúgy, mint bármely más pénzforma. A <a href=\"https://www.casascius.com/\">Casascius érmékhez</a> hasonlóan a bitcoinokkal is lehetséges fizikai formában kereskedni, ugyanakkor a mobiltelefonnal való fizetés általában továbbra is kényelmesebbnek tekinthető. A Bitcoin-egyenlegek egy nagy, megosztott hálózaton tárolódnak, és nem lehetséges tisztességtelenül módosítani rajtuk. Másképpen fogalmazva a Bitcoin-felhasználók kizárólagos irányítást élveznek vagyonuk felett, és bitcoinjaik nem tűnhetnek el csak azért, mert virtuálisak."
+    virtualtxt1: "A Bitcoin éppen annyira virtuális, mint az emberek által mindennap használt hitelkártyák és online banki hálózatok. A Bitcoin használható online fizetésre és fizikai üzletekben is - éppúgy, mint bármely más pénzforma. A <a href=\"https://denarium.com/\">Denarium érmékhez</a> hasonlóan a bitcoinokkal is lehetséges fizikai formában kereskedni, ugyanakkor a mobiltelefonnal való fizetés általában továbbra is kényelmesebbnek tekinthető. A Bitcoin egyenlegek egy nagy, megosztott hálózaton tárolódnak, és nem lehetséges tisztességtelenül módosítani azokat. Másképpen fogalmazva, a Bitcoin felhasználók kizárólagos irányítást élveznek vagyonuk felett, és bitcoinjaik nem tűnhetnek el csak azért, mert virtuálisak."
     anonymous: "Anonim-e a Bitcoin?"
     anonymoustxt1: "A Bitcoint úgy tervezték, hogy lehetőséget biztosítson felhasználói számára a kifizetések elfogadható titkossági szinten történő küldésére és fogadásra, éppen úgy, mint bármely más pénzforma esetében. Ugyanakkor a Bitcoin nem anonim és a készpénz titkossági szintjét sem képes biztosítani. A Bitcoin használata kiterjedt, nyilvános adatmennyiség létrehozásával jár. <a href=\"#protect-your-privacy#\">Különböző mechanizmusok</a> léteznek a felhasználók személyes adatainak védelmére, és még több áll jelenleg is fejlesztés alatt. Mindazonáltal további munka szükséges ahhoz, hogy e szolgáltatásokat a legtöbb Bitcoin-felhasználó helyesen tudja használni."
     anonymoustxt2: "Némi aggodalmat kelt, hogy a Bitcoin privát tranzakcióit fel lehet-e használni illegális célokra. Ennek kapcsán érdemes megjegyezni, hogy a Bitcoint kétségtelenül a meglévő pénzügyi rendszerekhez hasonló szabályozásnak fogják alávetni. A Bitcoin nem lehet névtelenebb a készpénznél, valamint nem valószínű, hogy általa elkerülhetőek a nyomozások. Mindemellett a Bitcoint úgy tervezték, hogy a pénzügyi bűntettek széles skáláját megelőzze."
@@ -291,7 +484,7 @@ hu:
     scaletxt1: "A Bitcoin-hálózat jelenleg is nagyobb mennyiségű tranzakciót képes másodpercenként feldolgozni, mint amennyi jelenleg munkát ad számára. Ugyanakkor e feldolgozási kapacitás nem összemérhető a fő hitelkártya-hálózatokéval. A jelenlegi korlátok lebontására érdekében komoly munka folyik, valamint a jövőbeli elvárások is jól ismertek. A Bitcoin-hálózat születése óta a folyamatos érés, optimalizálás és specializálás állapotában van, és ez még jó néhány évig így lesz. A forgalom növekedésével párhuzamosan feltehetőleg több Bitcoin-felhasználó fog pehelykönnyű klienseket használni, és a teljes hálózati csomópontok valószínűleg specializált szolgáltatássá válnak. További részletekért keresse fel a <a href=\"https://en.bitcoin.it/wiki/Scalability\">Scalability</a> oldalt (angol nyelven) a Wikin."
     legal: "Jogi vonatkozások"
     islegal: "Legális-e a Bitcoin?"
-    islegaltxt1: "A legjobb tudomásunk szerint a <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">legtöbb törvényalkotó nem tiltotta be a Bitcoint</a>. Ugyanakkor néhány ország törvényalkotója (például Argentínában és Oroszországban) súlyosan büntet vagy tilt minden külföldi pénznemet. Más törvényalkotók (például Thaiföldön) korlátozhatják meghatározott jogi személyek - mint például a Bitcoin-tőzsdék - bejegyzését."
+    islegaltxt1: "A legjobb tudomásunk szerint a <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">legtöbb törvényalkotó nem tiltotta be a Bitcoint</a>. Ugyanakkor néhány ország törvényalkotója (például Argentínában és Oroszországban) súlyosan büntet vagy tilt minden külföldi pénznemet. Más törvényalkotók (például Thaiföldön) korlátozhatják meghatározott jogi személyek - mint például a Bitcoin tőzsdék - bejegyzését."
     islegaltxt2: "Számos törvényalkotó szabályozója tesz lépéseket annak irányába, hogy magánszemélyek és vállalkozások számára ezen új technológia hivatalos, szabályozott pénzügyi rendszerrel való integrálására vonatkozó szabályokat biztosítson. Például a FinCEN, az USA pénzügyminisztériumának kijelölt osztálya kibocsátott egy nem törvényerejű iránymutatást a virtuális pénznemekkel végzett különböző tevékenységek jellemzőiről."
     illegalactivities: "Hasznos-e a Bitcoin illegális tevékenységekhez?"
     illegalactivitiestxt1: "A bitcoin pénz, és a pénzt mindig is egyaránt használták legális és illegális célokra. A készpénz, a hitelkártyák és a jelenlegi bankrendszerek messze túlszárnyalják a Bitcoint az elkövetett pénzügyi bűntettek tekintetében. A Bitcoin jelentős innovációt jelent a fizetési rendszerekre nézve, és ilyesfajta innovációk előnyeit gyakran sokkal nagyobbnak tekintik, mint lehetséges hátrányait."
@@ -314,7 +507,7 @@ hu:
     whyvaluetxt1: "A bitcoinok azért rendelkeznek értékkel, mert fizetőeszközként használhatóak. A bitcoin inkább matematikai jellemzői, mintsem fizikai tulajdonságai (mint például az arany és ezüst) vagy egy központi hatalomban való bizalom (például hivatalos pénznemek) alapján rendelkezik a(z) (áru)pénz funkcióival (tartósság, hordozhatóság, helyettesíthetőség, ritkaság, oszthatóság és felismerhetőség). Röviden szólva a bitcoin matematikai hátterű. Ezekkel a jellemzőkkel egy fizetőeszköz számára nem szükséges más, mint a bizalom és az elfogadás. A Bitcoin esetében mindez a növekvő felhasználói, kereskedői és startup-vállalkozói körrel mérhető. Ahogyan bármely pénznem, úgy a bitcoin értékét is kizárólag és közvetlenül az azt fizetőeszközként elfogadó emberek teremtik meg."
     whatprice: "Mi határozza meg a bitcoin árfolyamát?"
     whatpricetxt1: "A bitcoin árfolyamát a kereslet és kínálat határozza meg. Ha a bitcoinok iránti kereslet növekszik, az ár is növekszik; ha a kereslet esik, az ár is esik. A forgalomban lévő bitcoinok száma véges, és új bitcoinok csökkenő és kiszámítható ütemben keletkeznek, ami azt jelenti, hogy a keresletnek az infláció szintjéhez kell igazodnia az árfolyam szinten tartásához. Mivel a Bitcoin még mindig relatíve kis piacnak számít ahhoz képest, hogy mekkora lehetne, kisebb összegekkel is lefelé vagy felfelé mozdítható a piaci ár, így tehát a bitcoin árfolyama továbbra is nagyon volatilis."
-    whatpriceimg1: "A Bitcoin árfolyama 2013-2015 között:"
+    whatpriceimg1: "Bitcoin árfolyam az idő múlásával:"
     worthless: "Elveszíthetik-e értéküket a bitcoinok?"
     worthlesstxt1: "Igen. A történelem hemzseg az összeomlott és megszűnt pénznemektől, mint például a Weimari Köztársaság idején használt <a href=\"https://en.wikipedia.org/wiki/German_gold_mark\">német márka</a>, vagy a közelmúlt <a href=\"https://en.wikipedia.org/wiki/Zimbabwean_dollar\">zimbabwei dollárja</a>. Habár a múlt pénznemeinek bukását tipikusan a hiperinfláció okozta - amelyet a Bitcoin lehetetlenné tesz -, mindig fennáll az esélye a technikai hibáknak, konkurens pénznemek felbukkanásának, politikai problémáknak és így tovább. Egyszerű ökölszabályként elmondható, hogy egyetlen pénznem sem tekinthető tökéletesen hibátlannak vagy nehéz időszakoktól mentesnek. A Bitcoin bevezetése óta bizonyította megbízhatóságát, és nagy lehetőségek vannak benne a további fejlődésre. Mindazonáltal senki nincs olyan helyzetben, hogy megjósolja a Bitcoin jövőjét."
     bubble: "Buborék-e a Bitcoin?"
@@ -338,11 +531,39 @@ hu:
     bettercurrency: "Mi történik, ha valaki egy jobb digitális pénznemet hoz létre?"
     bettercurrencytxt1: "Ez megtörténhet. Addig is a bitcoin megmarad messze a legnépszerűbb, decentralizált, virtuális pénznemnek, de nincs garancia arra, hogy meg tudja tartani ezt a pozíciót. Jelenleg is léteznek a bitcoin által ihletett alternatív pénznemek. Mindemellett feltehetően nem hibás azzal a feltételezni élni, hogy szignifikáns fejlesztések szükségesek egy pénznem számára a bitcoin legyőzéséhez a bejáratott piac tekintetében; még akkor is, ha ez megjósolhatatlan marad. Ugyanakkor a Bitcoin a versenytárs pénznemek fejlesztéseit feltételezhetően magáévá teheti; abban az esetben, ha ezek nem változtatják meg a protokoll alapvető részeit."
     transactions: "Tranzakciók"
-    tenminutes: "Miért kell 10 percet várnom?"
-    tenminutestxt1: "A kifizetés fogadása szinte azonnal megtörténik a Bitcoin segítségével. Ugyanakkor átlagosan 10 percet vesz igénybe, amíg a hálózat egy blokkra való felfűzéssel elkezdi tranzakcióját visszaigazolni, és amíg nekiláthat fogadott bitcoinjai elköltésének. A visszaigazolás azt jelenti, hogy egyetértés áll fenn a hálózaton azzal kapcsolatban, hogy nem másnak szánták-e a bitcoinokat és az Ön tulajdonát képezik-e. Ha egy tranzakció felfűződött egy blokkra, az idő előrehaladtával további tranzakciók fűződnek fölé, ily módon exponenciálisan erősítve e konszenzust, és csökkentve a visszavont tranzakció kockázatát. Minden felhasználó szabadon határozhatja meg, hogy mely ponttól kezdve tekint egy tranzakciót visszaigazoltnak, de 6 visszaigazolás lényegében olyan biztonságosnak tekinthető, mint 6 hónapot várni egy hitelkártya-tranzakciót követően."
+    tenminutes: "Miért kell várnom a visszaigazolásra?"
+    tenminutestxt1: >
+        A kifizetésről szóló értesítés szinte azonnali a Bitcoinnal. Ugyanakkor átlagosan
+        10 percet vesz igénybe, amíg a hálózat egy blokkra való felfűzéssel elkezdi
+        a tranzakciódat visszaigazolni. A visszaigazolás azt jelenti, hogy egyetértés
+        áll fenn a hálózaton azzal kapcsolatban, hogy nem másnak szánták a bitcoinokat
+        és a Te tulajdonodat képezik. Ha egy tranzakció felkerül egy blokkra, az idő
+        előrehaladtával további tranzakciók fűződnek fölé, ily módon exponenciálisan
+        erősítve e konszenzust, és csökkentve a visszavont tranzakció kockázatát.
+        Minden megerősítés néhány másodperc és 90 perc között tart és 10 perc jelenti
+        az átlagot. Minden felhasználó szabadon határozhatja meg, hogy mely ponttól
+        kezdve tekint egy tranzakciót visszaigazoltnak, de <a href="#you-need-to-know##instant">6
+        visszaigazolás</a>lényegében olyan biztonságosnak tekinthető, mint 6 hónapot
+        várni egy hitelkártya-tranzakciót követően.
     fee: "Mekkora lesz a tranzakciós költség?"
-    feetxt1: "A legtöbb tranzakció díjak nélkül feldolgozható, de a felhasználókat a gyorsabb visszaigazolás kis összegű, önkéntes díjak megfizetésére ösztönzi, amelyekkel a bányászok munkáját is honorálhatják. Amennyiben díjakra van szükség, ezek rendszerint nem haladják meg a pár pennys összeget. A Bitcoin-kliens általában kísérletet tesz a szükséges díj összegének kiszámítására."
-    feetxt2: "A tranzakciós díjak a hálózat védelmét szolgálják, a szándékos felhasználói túlterhelés megakadályozása révén. A díjak felszámításának pontos részletei jelenleg kidolgozás alatt állnak, és az idő előrehaladtával változni fognak. Mivel a díj mértéke nem az elköltött bitcoinok mennyiségének függvénye, ezért néha nagyon alacsonynak (0,0005 BTC egy 1,000 BTC értékű tranzakcióért), néha pedig igazságtalanul magasnak (0,004 BTC egy 0,02 BTC értékű kifizetésért) tűnhetnek. A díjat olyan jellemzők határozzák meg, mint például a transzakció adatai, illetve a tranzakció ismétlődése. Például, ha sok kis összegű kifizetést fogad, a küldés díja magasabb lesz. Ezek a kifizetések egy éttermi számla fillérekkel való kifizetéséhez hasonlíthatóak. Bitcoinjai kis részének hirtelen való elköltése szintén díjat vonhat maga után. Amennyiben tevékenysége a megszokott tranzakciós mintázatot követi, a díjaknak alacsonynak kell maradniuk."
+    feetxt1: >
+        A tranzakciók díjak nélkül is feldolgozhatóak, de ingyenes tranzakciók küldése
+        napokig vagy hetekig tartó várakozást igényelhet. Habár a díjak emelkedhetnek
+        idővel, a normális díjak jelenleg nagyon alacsony összeget jelentenek. Alapértelmezettként
+        minden a Bitcoin.org-on listázott <a href="#choose-your-wallet#">Bitcoin tárca</a>
+        olyan díjat számol fel, amit jónak talál a tranzakciódért, de a legtöbbjük
+        lehetővé teszi, hogy felülírd a díjat még mielőtt elküldenéd a tranzakciót.
+    feetxt2: >
+        A tranzakciós díjak a hálózat védelmét szolgálják, a szándékos felhasználói
+        túlterhelés megakadályozása révén és bányász fizetségképp azért, hogy biztosítsák
+        a hálózatot. A díjak felszámításának pontos részletei jelenleg kidolgozás
+        alatt állnak, és az idő előrehaladtával változni fognak. Mivel a díj mértéke
+        nem az elköltött bitcoinok mennyiségének függvénye, ezért néha nagyon alacsonynak,
+        néha pedig igazságtalanul magasnak tűnhetnek. A díjat ezzel szemben olyan
+        jellemzők határozzák meg, mint például a tranzakcióban lévő byte-ok, szóval
+        például több aláírás használata vagy több korábban kapott összeg küldése többe
+        kerülhet mint egy egyszerű tranzakció. Amennyiben tevékenységed a megszokott
+        tranzakciós mintázatot követi, akkor nem kell szokatlanul magas díjat fizetni.
     poweredoff: "Mi történik akkor, ha egy bitcoin fogadása közben megszűnik a számítógépem áramellátása?"
     poweredofftxt1: "Ez nem jelent problémát. A bitcoinok a pénztárca-alkalmazás legközelebbi elindításakor fognak megjelenni. A bitcoinokat igazából nem a számítógépén található szoftver fogadja, hanem egy nyilvános főkönyvön jelennek meg, amely a hálózaton található minden készülékkel meg van osztva. Amennyiben akkor küld bitcoinokat, amikor a pénztárca-alkalmazása ki van kapcsolva, akkor az alkalmazás legközelebbi elindításakor letölti a blokkokat, és frissíti az új tranzakciókat, így a bitcoinok végső soron úgy jelennek meg, mintha valós időben fogadta volna őket. A pénztárcájára csak akkor lesz szüksége, ha bitcoinjait el szeretné költeni."
     sync: "Mit jelent a \"szinkronizálás\", és miért tart ilyen hosszú ideig?"
@@ -369,30 +590,30 @@ hu:
     hackedtxt1: "A Bitcoinhoz használt kriptográfia és protokoll szabályai évekkel megszületésüket követően is működnek, ami egyértelműen arra utal, hogy a koncepció jól tervezett. Ugyanakkor különböző szoftveres implementációkban <a href=\"/en/alerts\">biztonsági résekre</a> derült fény, amelyek javítása megtörtént. Bármely más szoftverhez hasonlóan a Bitcoin szoftverének biztonsága is a problémák feltárásának és kijavításának sebességétől függ. Minél több ehhez hasonló probléma lát napvilágot, annál inkább éretté válik majd a Bitcoin."
     hackedtxt2: "A különböző üzletkötések és vállalkozások kapcsán gyakoriak a félreértések lopásokkal és biztonsági szabályok megsértésével kapcsolatban. Noha ezek az események szerencsétlenségek voltak, egyikük sem jelentette a Bitcoin feltörését vagy utalt a Bitcoin belső hibájára - éppen úgy, ahogy egy bankrablás sem jelenti a dollár veszélyeztetését. A pontosság kedvéért ugyanakkor érdemes megjegyezni, hogy jó gyakorlatok és ösztönös biztonsági megoldások egész sora szükséges ahhoz, hogy a felhasználók erősebb védelmet tudjanak pénzüknek biztosítani, illetve a lopás és elvesztés általános kockázatát csökkenteni tudják. Az elmúlt évek folyamán e biztonsági szolgáltatások - mint például a pénztárca-titkosítás, offline pénztárcák, hardverpénztárcák és csoportos aláírást igénylő tranzakciók - gyorsan fejlődtek."
     collude: "Összeesküdhetnek-e a felhasználók a Bitcoin ellen?"
-    colludetxt1: "Nem lehetséges ilyen egyszerűen megváltoztatni a Bitcoin-protokollt. Bármely, nem azonos szabályok szerint működő Bitcoin-kliens képtelen rákényszeríteni saját szabályait más felhasználókra. A jelenlegi specifikációkkal összhangban a dupla költés nem lehetséges ugyanazon a blokkláncon, sem a bitcoinok érvényes aláírás nélküli elköltése. Ebből következően nem lehetséges a semmiből történő kontrollálatlan bitcoinkibocsátás, a felhasználók pénzének elköltése, a hálózat veszélyeztetése vagy bármilyen más, hasonló cselekedet."
+    colludetxt1: "Nem lehetséges ilyen egyszerűen megváltoztatni a Bitcoin protokollt. Bármely, nem azonos szabályok szerint működő Bitcoin kliens képtelen rákényszeríteni saját szabályait más felhasználókra. A jelenlegi specifikációkkal összhangban a dupla költés nem lehetséges ugyanazon a blokkláncon, sem a bitcoinok érvényes aláírás nélküli elköltése. Ebből következően nem lehetséges a semmiből történő kontrollálatlan bitcoin kibocsátás, a felhasználók pénzének elköltése, a hálózat veszélyeztetése vagy bármilyen más, hasonló cselekedet."
     colludetxt2: "Ugyanakkor a bányászok önkényesen dönthetnek a közelmúlt tranzakcióinak megakasztása vagy visszavonása mellett. A felhasználók nagy többsége is nyomást fejthet ki változások elérése érdekében. Mivel a Bitcoin az összes felhasználó teljes egyetértése mellett működik megfelelően, a protokoll megváltoztatása roppant nehéz lehet, illetve a változásokat a felhasználók elsöprő többségének kell elfogadnia ahhoz, hogy a maradék felhasználónak ne maradjon más választása, mint követni a változtatásokat. Általános szabályként elmondható, hogy nehéz elképzelni, hogy bármely Bitcoin-felhasználó miért támogatna olyan változtatásokat, amelyek elfogadásával veszélybe sodorhatja saját pénzét."
     quantum: "Megtámadható-e a Bitcoin a kvantum-számítástechnika segítségével?"
-    quantumtxt1: "Igen; a legtöbb, kriptográfián nyugvó rendszer általában igen, beleértve a hagyományos banki rendszereket is. Ugyanakkor kvantumszámítógépek jelenleg nem léteznek, és valószínűleg jó ideig nem is fognak. Amennyiben a kvantum-számítástechnika közelgő veszélyt jelent a Bitcoinra, a protokoll frissíthető posztkvantum algoritmusok használatára. Figyelembe véve e fejlesztés fontosságát, könnyen kijelenthető, hogy szoros fejlesztői ellenőrzés mellett valósulna meg, és az összes Bitcoin-felhasználó használatba venné."
+    quantumtxt1: "Igen; a legtöbb, kriptográfián nyugvó rendszer általában igen, beleértve a hagyományos banki rendszereket is. Ugyanakkor kvantumszámítógépek jelenleg nem léteznek, és valószínűleg jó ideig nem is fognak. Amennyiben a <a href=\"https://bitcoinmagazine.com/6021/bitcoin-is-not-quantum-safe-and-how-we-can-fix/\">kvantumszámítástechnika</a> közelgő veszélyt jelent a Bitcoinra, a protokoll frissíthető posztkvantum algoritmusok használatára. Figyelembe véve e fejlesztés fontosságát, könnyen kijelenthető, hogy szoros fejlesztői ellenőrzés mellett valósulna meg, és az összes Bitcoin-felhasználó használatba venné."
     help: "Súgó"
     morehelp: "Szeretnék többet megtudni. Hol kaphatok segítséget?"
-    morehelptxt1: "További információhoz és segítséghez juthat az <a href=\"#resources#\">Információs anyagok</a> és a <a href=\"#community#\">Közösség</a> oldalakon vagy a <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki GYIK</a> (angol nyelven) segítségével."
+    morehelptxt1: "További információhoz és segítséghez juthatsz a <a href=\"#resources#\">források</a> és a <a href=\"#community#\">közösségi</a> oldalakon vagy a <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki GYIK</a> oldalon."
   getting-started:
     title: "Vágjon bele - Bitcoin"
     pagetitle: "Vágjon bele a Bitcoinba"
-    pagedesc: "A Bitcoint pénzküldésre és fogadásra használni egyszerű és mindenki számára elérhető."
+    pagedesc: "A bitcoin használata tranzakciókkor könnyű és bárki számára elérhető."
     users: "Hogyan használható a Bitcoin"
     inform: "Tájékozódjon"
     informtxt: "A Bitcoin különbözik attól, amit ismer és nap mint nap használ. Mielőtt elkezdi használni a Bitcoint, van néhány dolog, amelyet érdemes tudnia a biztonságos használat és az általános csapdák elkerülése érdekében."
     informbut: "Tudjon meg többet"
     choose: "Válasszon pénztárcát"
-    choosetxt: "Egy Bitcoin-pénztárcát mobiltelefonja segítségével mindennapi élete részévé tehet, vagy létrehozhat számítógépén egy pénztárcát, amelyet kizárólag online fizetésekre használ. Bármelyik esetet is választja, pénztárcáját percek alatt létrehozhatja."
+    choosetxt: "Ingyenes bitcoin tárcák minden vezető operációs rendszerre és készülékre elérhető, hogy a változatos szükségleteidet kielégítse. Például letölthetsz egy tárcát a mobilodra vagy lehet egy tárcád a számítógépeden kizárólag az online utalásokhoz. Bármelyik esetet is választod, könnyű tárcát választani és percek alatt létrehozhatóak."
     choosebut: "Válasszon pénztárcát"
-    get: "Jusson bitcoinokhoz"
-    gettxt: "Termékek és szolgáltatások ellenértékeként, valamint egy barátjának vagy egy, az Ön környezetében élő személynek vásárolva juthat hozzá bitcoinokhoz. Ezenkívül bankszámlájával fizetve egy tőzsdén közvetlenül is megvásárolhatja őket."
-    getbut: "Találjon egy tőzsdét"
-    spend: "Költse el bitcoinjait"
-    spendtxt: "Világszerte egyre több szolgáltató és kereskedő fogadja el a Bitcoint. Használja a Bitcoint a náluk való fizetésre, és értékelje tapasztalatait, hogy a tisztességes cégek nagyobb ismertségre tehessenek szert."
-    spendbut: "Leljen kereskedőkre"
+    get: "Szerezz bitcoint"
+    gettxt: "Bitcoint termékek és szolgáltatások ellenértékeként fogadhatunk el. De van jó pár módja a bitcoin vásárlásnak."
+    getbut: "Vásárolj bitcoint"
+    spend: "Utalj bitcoint"
+    spendtxt: "Világszerte egyre több szolgáltató és kereskedő fogadja el a bitcoint. Használd a bitcoint fizetéskor és értékeld a vásárlói élményedet, hogy így növekedjen az ismertségük."
+    spendbut: "Találj kereskedőket és termékeket"
     merchants: "Hogyan fogadható bitcoin"
     merchantinform: "Tájékozódjon"
     merchantinformtxt: "A Bitcoin nem igényli a kereskedői szokások megváltoztatását. A Bitcoin különbözik attól, amit ismer és nap mint nap használ. Mielőtt elkezdi használni a Bitcoint, van néhány dolog, amelyet érdemes tudnia a biztonságos használat és az általános csapdák elkerülése érdekében."
@@ -409,44 +630,51 @@ hu:
   how-it-works:
     title: "Hogyan működik a Bitcoin? - Bitcoin"
     pagetitle: "Hogyan működik a Bitcoin?"
-    intro: "Ez a kérdés gyakran okoz zavart. Itt egy gyors magyarázat!"
+    intro: "Ez a kérdés gyakran zavart okoz, de álljon itt egy gyors magyarázat!"
     basics: "Az alapok új felhasználók számára"
-    basicstxt1: "Új felhasználóként a technikai részletek megértése nélkül is <a href=\"#getting-started#\">belevághat</a> a Bitcoin használatába. Amint telepített egy Bitcoin-pénztárcát számítógépére vagy mobiltelefonjára, a pénztárca létre fogja hozni az első Bitcoin-címét, Ön pedig létrehozhat újabbakat, amikor csak szüksége van egyre. Megoszthatja címeit barátaival, így fizethetnek Önnek, és fordítva. Sőt mi több, ez a folyamat az e-mailhez nagyon hasonlóan működik; kivéve, hogy a Bitcoin-címeket csak egyszer érdemes használni."
-    balances: "Egyenlegek <span class=\"titlelight\"> - blokklánc</span>"
-    balancestxt: "A blokklánc egy <b>megosztott, nyilvános főkönyv</b>, amelyen a teljes Bitcoin-hálózat nyugszik. Az összes visszaigazolt tranzakció felfűződik a blokkláncra. Ily módon a Bitcoin-pénztárcák ki tudják számítani elkölthető egyenlegüket, valamint az új tranzakciók esetében visszaigazolható, hogy ténylegesen a tulajdonos által birtokolt bitcoinok elköltése történt-e meg. A blokklánc sértetlenségét és elemeinek időrendi sorrendjét <a href=\"#vocabulary##[vocabulary.cryptography]\">kriptográfia</a> biztosítja."
-    transactions: "Tranzakciók <span class=\"titlelight\"> - privát kulcsok</span>"
-    transactionstxt: "A tranzakció egy <b>Bitcoin-pénztárcák közötti értéktranszfer</b>, amely felfűződik a blokkláncra. A Bitcoin-pénztárcák tartalmaznak egy  <a href=\"#vocabulary##[vocabulary.privatekey]\"><i>privát kulcsnak</i></a> vagy magnak nevezett titkos adathalmazt, amely a tranzakciók aláírására szolgál, és amely matematikai bizonyításul szolgál arra nézvést, hogy a pénztárca tulajdonosától érkezik-e a tranzakció. Az <a href=\"#vocabulary##[vocabulary.signature]\"><i>aláírás</i></a> mindemellett megakadályozza, hogy a tranzakciót bárki módosíthassa az elindítását követően. Az összes tranzakció felhasználók között folyik, és általában a tranzakció elindítását követő 10 percben megkezdődik visszaigazolásuk, egy <a href=\"#vocabulary##[vocabulary.mining]\"><i>bányászatnak</i></a> nevezett folyamaton keresztül."
+    basicstxt1: "Új felhasználóként a technikai részletek megértése nélkül is <a href=\"#getting-started#\">belevághatsz</a> a bitcoin használatába. Amint telepítettél egy bitcoin tárcát a számítógépedre vagy mobiltelefonodra, a pénztárca létre fogja hozni az első bitcoin címedet, mialatt Te bármikor létrehozhatsz egy újabbat, amikor csak szükséged van egyre. Megoszthatod a címeit barátaiddal így fizethetnek számodra, vagy éppen fordítva. Lényegében hasonlít az e-mailhez működéséhez kivéve, hogy a bitcoin címeket csak egyszer érdemes használni."
+    balances: "Egyenlegek<span class=\"titlelight\"> - blokklánc</span>"
+    balancestxt: "A blokklánc egy <b>megosztott, nyilvános főkönyv</b>, amelyre a teljes Bitcoin hálózat támaszkodik. Az összes visszaigazolt tranzakció felfűződik a blokkláncra. Ily módon a bitcoin tárcák ki tudják számítani elkölthető egyenlegüket, valamint az új tranzakciók esetében visszaigazolható, hogy ténylegesen a tulajdonos által birtokolt bitcoinok elköltése történt-e meg. A blokklánc sértetlenségét és elemeinek időrendi sorrendjét <a href=\"#vocabulary##[vocabulary.cryptography]\">kriptográfia</a> biztosítja."
+    transactions: "Tranzakciók<span class=\"titlelight\"> - privát kulcsok</span>"
+    transactionstxt: "A tranzakció egy <b>bitcoin tárcák közötti értéktranszfer</b>, amely felfűződik a blokkláncra. A bitcoin tárcák tartalmaznak egy  <a href=\"#vocabulary##[vocabulary.privatekey]\"><i>privát kulcsnak</i></a> vagy magot, amely a tranzakciók aláírására szolgál, és amely matematikai bizonyításul szolgál arra nézvést, hogy a pénztárca tulajdonosától érkezik a tranzakció. Az <a href=\"#vocabulary##[vocabulary.signature]\"><i>aláírás</i></a> mindemellett megakadályozza, hogy a tranzakciót bárki módosíthassa az elindítását követően. Az összes tranzakció kiközvetítésre kerül a hálózatra és általában a tranzakció elindítását követő 10-20 percben megkezdődik visszaigazolásuk, egy <a href=\"#vocabulary##[vocabulary.mining]\"><i>bányászatnak</i></a> nevezett folyamaton keresztül."
     processing: "Feldolgozás<span class=\"titlelight\"> - bányászat</span>"
-    processingtxt: "A bányászat egy <b>megosztott, konszenzusra épülő rendszer</b>, amely a blokkláncra való fűzéssel a visszaigazolásra váró tranzakciók <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>megerősítésére</i></a> szolgál. Kikényszeríti a blokkláncon belül található elemek időrendi sorrendet, biztosítja a hálózat semlegességét és lehetővé teszi, hogy különböző számítógépek egyetérthessenek a rendszer állapotát illetően. A visszaigazoláshoz a tranzakcióknak <a href=\"#vocabulary##[vocabulary.block]\"><i>blokkba</i></a> csomagoltnak kell lenniük, amely nagyon szigorú kriptográfiai szabályokat követ, és amelyet a hálózat visszaigazol. E szabályok megakadályozzák a korábbi blokkok módosítását, mivel a módosítás érvénytelenítené az azt követő összes blokkot. A bányászat ezenkívül egyfajta lottót hoz létre, amely meggátolja, hogy bármely személy egyszerűen egymás után blokkokat adjon hozzá a blokklánchoz. Ily módon egyetlen személy sem befolyásolhatja a blokklánc tartalmát vagy cserélheti ki a blokklánc egyes részeit kifizetései visszatérítése érdekében."
+    processingtxt: "A bányászat egy <b>elosztott, konszenzusra épülő rendszer</b>, amely a blokkláncra való fűzéssel a visszaigazolásra váró tranzakciók <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>megerősítésére</i></a> szolgál. Kikényszeríti a blokkláncon belül található elemek időrendi sorrendjét, biztosítja a hálózat semlegességét és lehetővé teszi, hogy különböző számítógépek egyetérthessenek a rendszer állapotát illetően. A visszaigazoláshoz a tranzakcióknak <a href=\"#vocabulary##[vocabulary.block]\"><i>blokkba</i></a> csomagoltnak kell lenniük, amely nagyon szigorú kriptográfiai szabályokat követ, és amelyet a hálózat visszaigazol. E szabályok megakadályozzák a korábbi blokkok módosítását, mivel a módosítás érvénytelenítené az azt követő összes blokkot. A bányászat ezenkívül egyfajta lottót hoz létre, amely meggátolja, hogy bármely személy egyszerűen egymás után blokkokat adjon hozzá a blokklánchoz. Ily módon egyetlen személy sem vonhatja ellenőrzése alá a blokklánc tartalmát vagy cserélheti ki a blokklánc egyes részeit kifizetései visszatérítése érdekében."
     readmore: "Fejest ugrani az ismeretlenbe"
-    readmoretxt: "Ez csak a rendszer nagyon rövid és tömör összefoglalása. Amennyiben szeretné megismerni a részleteket, <a href=\"#bitcoin-paper#\">elolvashatja az eredeti tanulmányt</a>, amely leírja a rendszer felépítését, vagy belenézhet a <a href=\"/en/developer-documentation\">fejlesztői dokumentációba</a>, valamint felfedezheti a <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wikit</a>."
+    readmoretxt: "Ez csak a Bitcoin nagyon rövid összefoglalása. Amennyiben szeretnéd megismerni a részleteket, <a href=\"#bitcoin-paper#\">végigolvashatod az eredeti tanulmányt</a>, amely leírja a rendszer felépítését, vagy belenézhetsz a <a href=\"/en/developer-documentation\">fejlesztői dokumentációba</a>, vagy a <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wikiben</a> kutakodhatsz kedvedre."
   index:
     title: "Bitcoin - Nyílt forráskódú, P2P pénz"
     metadescription: "A Bitcoin egy innovatív fizetési hálózat és egy újfajta pénz. Tudjon meg mindent, és vágjon bele a Bitcoinba a bitcoin.org weboldalon."
     listintro: "A Bitcoin egy innovatív fizetési hálózat és egy újfajta pénz."
-    list1: "Azonnali peer-to-peer<br>tranzakciók"
-    list2: "Világméretű<br>kifizetések"
-    list3: "Zéró vagy alacsony<br>feldolgozási díjak"
+    list1: "Gyors peer-to-peer tranzakciók"
+    list2: "Globális utalások"
+    list3: "Alacsony feldolgozási díjak"
     desc: "A Bitcoin működéséhez peer-to-peer technológiát használ, központi hatalom vagy bankok nélkül; a tranzakciók kezelése és a bitcoinok kibocsátása a hálózat közössége által történik. <b>A Bitcoin nyílt forráskódú, konstrukciója nyilvános, senki sem birtokolja és irányítja, ugyanakkor <a href=\"#support-bitcoin#\">bárki hozzájárulhat fejlődéséhez.</a></b> Számos egyedi tulajdonsága révén olyan izgalmas használati módokat biztosít, amelyeket korábban egy fizetési rendszer sem tett lehetővé."
-    overview: "Vagy tekintse meg rövid összefoglalóinkat a következő felhasználói csoportok számára:"
+    overview: "Legyen egy gyors rápillantásod"
   innovation:
     title: "Innováció - Bitcoin"
     pagetitle: "Innováció a fizetési rendszerek terén"
-    summary: "A Bitcoin-protokoll nem csak a pénz A-ból B-be való elküldéséről szól. Számos szolgáltatást biztosít, valamint sokféle lehetőséget teremt, amelyekkel a közösség továbbra is ismerkedik. Ezen az oldalon található néhány, jelenleg is kutatott technológia, amely néhány esetben valós termékké és szolgáltatássá vált. A Bitcoin legérdekesebb felhasználási módjai feltehetően még felfedezésre várnak."
+    summary: "A Bitcoin-protokoll nem csak a pénzküldésről szól. Számos szolgáltatást biztosít, valamint sokféle lehetőséget teremt, amelyekkel a közösség továbbra is csak ismerkedik. Ezen az oldalon található néhány, jelenleg is kutatott technológia, amely néhány esetben valós termékké és szolgáltatássá vált. A Bitcoin legérdekesebb felhasználási módjai feltehetően még felfedezésre várnak."
     control: "Csalással szembeni kontroll"
-    controltext: "A Bitcoin eddig soha nem látott biztonsági szintet biztosít. A hálózat a felhasználók számára védelmet biztosít a legtöbb, széles körben elterjedt csalás - mint például visszaszámlázás vagy kéretlen díjak - ellen, valamint a bitcoinokat lehetetlen hamisítani. A felhasználók biztonsági mentést készíthetnek pénztárcájukról vagy titkosíthatják azt, és a hardverpénztárcák pedig a jövőben igen nehézzé tehetik a pénz ellopását vagy elvesztését. A Bitcoint úgy tervezték, hogy a felhasználók számára pénzük felett teljes irányítást biztosítson."
+    controltext: "A Bitcoin eddig soha nem látott biztonsági szintet garantál. A hálózat a felhasználók számára védelmet biztosít a legtöbb, széles körben elterjedt csalás - mint például visszaszámlázás vagy kéretlen díjak - ellen, valamint a bitcoinokat lehetetlen hamisítani. A felhasználók biztonsági mentést készíthetnek tárcájukról vagy titkosíthatják azt. A hardvertárcák pedig nagyon nehézzé teszik a pénz ellopását vagy elvesztését. A Bitcoint úgy tervezték, hogy a felhasználók számára pénzük felett teljes irányítást biztosítson."
     global: "Globális hozzáférhetőség"
-    globaltext: "A világ összes kifizetése együttműködhet. A Bitcoin lehetővé teszi bármely bank, vállalkozás vagy magánszemély számára a biztonságos kifizetésküldést és fogadást, bárhol, bármikor, bankszámlával vagy anélkül. A Bitcoin elérhető nagyszámú, más fizetési rendszer segítségével, saját korlátaiból fakadóan nem meghódítható országban. A Bitcoin növeli a kereskedelemhez való globális hozzáférést, és elősegítheti a nemzetközi üzletek virágzását."
+    globaltext: "A Bitcoinnal a világ összes utalási rendszere kooperálhat. A Bitcoin lehetővé teszi bármely bank, vállalkozás vagy magánszemély számára a biztonságos utalást, bárhol, bármikor, bankszámlával vagy anélkül. A Bitcoin elérhető nagyszámú, más fizetési rendszer által a saját korlátaiból fakadóan nem meghódítható országban. A Bitcoin növeli a kereskedelemhez való globális hozzáférést, és elősegítheti a nemzetközi üzletek virágzását."
     cost: "Költséghatékonyság"
     costtext: "A titkosítás használatával a biztonságos kifizetések lassú és költséges közvetítők nélkül kivitelezhetőek. A Bitcoin tranzakciói sokkal olcsóbbak a versenytársakénál, valamint rövid idő alatt teljesülnek. Ez azt jelenti, hogy a Bitcoin magában hordozza annak lehetőségét, hogy a jövőben bármely valuta átutalásának általános eszköze legyen. A Bitcoin ezenkívül a <a href=\"https://www.youtube.com/watch?v=BrRXP1tp6Kw\">szegénység csökkentésében</a> is szerepet játszhat a magas, munkavállalói fizetéseket sújtó tranzakciós költségek csökkentése révén."
     donation: "Adományok"
-    donationtext: "A Bitcoin különösen hatékony megoldást jelent az adományozás számos esetére. Egy kifizetés elküldése mindössze egy kattintásba kerül, és az adományok fogadása olyan egyszerű, mint egy QR-kód megjelentése. Az adományok láthatóak lehetnek a nyilvánosság számára, ezzel megnövekedett transzparenciát biztosítva a nonprofit szervezetek részére. Vészhelyzetben, például természeti katasztrófák esetén a Bitcoin-adományok a gyorsabb nemzetközi reagáláshoz járulhatnak hozzá."
+    donationtext: "A Bitcoin különösen hatékony megoldást jelent az adományozás terén. Egy utalás mindössze egy kattintásba kerül, és az adományok fogadása olyan egyszerű, mint egy QR-kód megjelenítése. Az adományok láthatóak a nyilvánosság számára, ezzel megnövekedett transzparenciát biztosít a nonprofit szervezetek részére. Vészhelyzetben, például természeti katasztrófák esetén, a bitcoin adományok segíthetik a gyorsabb reakciót."
     crowdfunding: "Közösségi finanszírozás"
-    crowdfundingtext: "Bár jelenleg még nem használható egyszerűen, a Bitcoin a jövőben felhasználható Kickstarter jellegű közösségi finanszírozás-kampányokhoz, amelyek során az emberek egy projektnek pénz juttatnak, és e juttatás csak akkor lép életbe, ha a kitűzött célnak megfelelő összeg összegyűlik. Az ilyen jellegű bizonyossági szerződéseket a Bitcoin-protokoll dolgozza fel, amely megakadályozza, hogy egy tranzakció aktiválódjon, mielőtt minden feltétel teljesülne. <a href=\"https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts\">Tudjon meg többet</a> (angol nyelven) a közösségi finanszírozás technológiai hátteréről."
+    crowdfundingtext: "A bitcoint használni lehet Kickstarter jellegű közösségi finanszírozási kampányokhoz, ahol az emberek egy projektnek forrást ígérnek, és e juttatás csak akkor lép életbe, ha a kitűzött célnak megfelelő összeg összegyűlik. Az ilyen jellegű bizonyossági szerződéseket a Bitcoin hálózat dolgozza fel, amely megakadályozza, hogy egy tranzakció aktiválódjon, mielőtt minden feltétel teljesülne. <a href=\"https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts\">Tudj meg többet</a> (angol nyelven) a közösségi finanszírozás technológiai hátteréről."
     micro: "Mikrokifizetések"
-    microtext: "A Bitcoin dollárnyi - hamarosan pedig még ennél is kisebb - összegű kifizetések feldogozására képes. Az előbb említett kifizetések teljesítése jelenleg is rutinszerűen zajlik. Képzelje el, hogy az internetes rádióadásért másodperc alapon fizet, weboldalak esetén minden meg nem jelenített reklámért egy kisebb összeget adományoz vagy egy wifi hotspot sávszélességét kilobájt alapon vásárolja meg. A Bitcoin minden ilyesfajta ötlet megvalósításához kellően hatékony. <a href=\"https://bitcoinj.github.io/working-with-micropayments\">Tudjon meg többet</a> (angol nyelven) a Bitcoin-mikrokifizetések mögötti technológiáról."
+    microtext: >
+        Képzeld el, hogy az internetes rádióadásért másodperc alapon fizetsz, weboldalak
+        esetén minden meg nem jelenített reklámért egy kisebb összeget adományozol
+        vagy egy wifi hotspot sávszélességét kilobájt alapon vásárolod meg. A bitcoin
+        minden ilyesfajta ötlet megvalósításához kellően hatékony. <a href="https://bitcoinj.github.io/working-with-micropayments">Tudj
+        meg többet</a> (angol nyelven) a bitcoin mikroutalásokról vagy a <a href="http://lightning.network/">jövőbeli
+        frissítésekről</a>, melyeket azért terveznek és használnak, hogy a mikroutalásokat
+        hozzáférhetőbbé tegyék.
     mediation: "Mediáció"
-    mediationtext: "A Bitcoin felhasználható innovatív, csoportos aláírást használó mediációs rendszerek fejlesztésére. E szolgáltatások lehetővé tehetik egy harmadik fél részére egy tranzakció elfogadását vagy elutasítását, a két fél egyet nem értése esetén, a pénzük feletti kontroll gyakorlása nélkül. Mivel e szolgáltatások bármely Bitcoin-felhasználóval és kereskedővel kompatibilisek lennének, ez valószínűleg szabad versenyt és magasabb minőségi sztenderdeket eredményezne."
+    mediationtext: "A Bitcoin felhasználható innovatív, csoportos aláírást használó mediációs rendszerek fejlesztésére. E szolgáltatások lehetővé tehetik egy harmadik fél részére egy tranzakció elfogadását vagy elutasítását, a két fél egyet nem értése esetén, a pénzük feletti kontroll gyakorlása nélkül. Mivel e szolgáltatások bármely bitcoin felhasználóval és kereskedővel kompatibilisek lennének, ez valószínűleg szabad versenyt és magasabb minőségi sztenderdeket eredményezne."
     multisig: "Csoportos aláírást igénylő fiókok"
     multisigtext: "A csoportos aláírások lehetővé teszik, hogy egy tranzakciót csak akkor fogadjon el a hálózat, ha egy meghatározott számú személyből álló csoport egyetért a tranzakció aláírásával. Ez felhasználható egy igazgatótanács által arra, hogy megakadályozza, hogy valamely tag elköltse a vagyon egy részét a tagok egyetértése nélkül. Ez ezenkívül felhasználható arra, hogy egy bank megelőzze a lopásokat úgy, hogy egy határérték felett blokkolja a kifizetéseket, amennyiben a felhasználó nem biztosít további igazolásokat."
     trust: "Bizalom és tisztesség"
@@ -454,16 +682,16 @@ hu:
     resiliency: "Rugalmasság és decentralizáció"
     resiliencytext: "A Bitcoin nagyfokú decentralizációján keresztül, megnövelt rugalmasságával és redundanciájával a fizetési rendszerek eltérő formáját hozta létre. A Bitcoin több millió dollárban mérhető kereskedelmet bonyolít le anélkül, hogy katonai védelemre lenne szüksége. A központi hibázási lehetőségek - mint például egy adatközpont - hiányában a rendszer megtámadása sokkal nehezebb feladat. A Bitcoin érdekes előrelépést jelenthet a helyi és globális pénzügyi rendszerek biztosítása terén."
     transparency: "Rugalmas transzparencia"
-    transparencytext: "Az összes Bitcoin-tranzakció nyilvános és transzparens, valamint a kifizetéseket kezdeményező emberek személyazonossága alapértelmezett módon rejtett. Ez lehetővé teszi a magánszemélyek és szervezetek számára, hogy rugalmas transzparenciaszabályokkal dolgozzanak. Például egy vállalkozás dönthet úgy, hogy meghatározott tranzakciókat és egyenlegeket csak meghatározott munkatársakkal oszt meg; egy nonprofit szervezet pedig szabadon bemutathatja a nyilvánosság számára, hogy mekkora összegű napi és havi összegű adományban részesül."
+    transparencytext: "Az összes bitcoin tranzakció nyilvános és transzparens, valamint a kifizetéseket kezdeményező emberek személyazonossága alapértelmezett módon rejtett. Ez lehetővé teszi a magánszemélyek és szervezetek számára, hogy rugalmas transzparenciaszabályokkal dolgozzanak. Például egy vállalkozás dönthet úgy, hogy meghatározott tranzakciókat és egyenlegeket csak meghatározott munkatársakkal oszt meg; egy nonprofit szervezet pedig szabadon bemutathatja a nyilvánosság számára, hogy mekkora összegű napi és havi összegű adományban részesül."
     automation: "Automatizált megoldások"
-    automationtext: "Az automatizált szolgáltatások gyakran a készpénzt és hitelkártya-kifizetéseket sújtó költségekkel és korlátokkal szembesülnek. Ez magában foglal mindenfajta automatát - a buszjegyautomatától a kávéautomatáig. A Bitcoin az új generációs automatizált szolgáltatások során való használatra, valamint e szolgáltatások működési költségeinek csökkentésére szolgál. Képzeljen el önmagukat vezető taxikat, vagy egy üzletet, ahol a kosara segítségével sorban állás nélkül fizethet. Sok ötlet lehetséges."
+    automationtext: "Az automatizált szolgáltatások gyakran a készpénzt és bankkártya utalásokat sújtó költségekkel és korlátokkal szembesülnek. Ez magában foglal mindenfajta automatát - a buszjegyautomatától a kávéautomatáig. A Bitcoin az új generációs automatizált szolgáltatások során való használatra, valamint e szolgáltatások működési költségeinek csökkentésére szolgál. Képzelj el önvezető taxikat, vagy egy üzletet, ahol a kosarad segítségével sorbaállás nélkül fizethetsz. Számos ötlet közül lehet választani."
   legal:
     title: "Jogi felelősségkizárás - Bitcoin"
     pagetitle: "Jogi felelősségkizárás"
     information: "A bitcoin.org weboldalon közzétett információ"
-    informationtxt1: "A http://bitcoin.org/ weboldal (a továbbiakban a \"Weboldal\") általános természetű információkat és anyagokat biztosít. Ön nincs felhatalmazva és nem célszerű a Weboldalra hagyatkoznia jogi tanácsért, üzleti tanácsért, vagy bármilyen jellegű tanácsért. A Weboldal tartalmára való hagyatkozás során saját felelősségére cselekszik. Amennyiben döntési helyzetbe kerül, érdemes okleveles jogászt felkeresnie abban a joghatóságban, ahol segítségre vágyik vagy segítségre van szüksége. A Weboldal tulajdonosai, közreműködői semmilyen formában nem felelősek az Ön Weboldalra való hagyatkozásából következő tettek, döntések vagy egyéb magatartások megvalósulásáért vagy elmaradásáért."
+    informationtxt1: "A http://bitcoin.org/ weboldal (a továbbiakban a \"Weboldal\") általános természetű információkat és anyagokat biztosít. Nem vagy felhatalmazva és nem célszerű a Weboldalra hagyatkoznod jogi tanácsért, üzleti tanácsért, vagy bármilyen jellegű tanácsért. A Weboldal tartalmára való hagyatkozás során saját felelősségre cselekszel. Amennyiben döntési helyzetbe kerülsz, érdemes okleveles jogászt felkeresni abban a joghatóságban, ahol segítségre van szükséged. A Weboldal tulajdonosai, közreműködői semmilyen formában nem felelősek a Weboldalra való hagyatkozásból bekövetkező tettek, döntések vagy egyéb magatartások megvalósulásáért vagy elmaradásáért."
     translations: "Fordítások"
-    translationstxt1: "A Weboldal a Weboldalon található, eredeti, angol nyelvű tartalom fordításait tartalmazhatja. Ezek a fordítások csupán a felhasználói kényelmet biztosítják. Bármilyen, az angol nyelvű és a fordított változattal kapcsolatos probléma esetén az angol nyelvű verzió élvez elsőbbséget. Amennyiben bármilyen jellegű következetlenséget észlel, kérjük, jelentse ezeket a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org\">GitHubon</a>."
+    translationstxt1: "A Weboldal az oldalon található, eredeti, angol nyelvű tartalom fordításait tartalmazhatja. Ezek a fordítások csupán a felhasználói kényelmet biztosítják. Bármilyen, az angol nyelvű és a fordított változattal kapcsolatos probléma esetén az angol nyelvű verzió élvez elsőbbséget. Amennyiben bármilyen jellegű következetlenséget észlel, kérjük, jelentse ezeket a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org\">GitHubon</a>."
     userisks: "A Bitcoin használatával kapcsolatos kockázatok"
     useriskstxt1: "A Weboldal nem felelős az alábbi öt kategóriába eső események következtében felmerülő bármilyen veszteségért, kárért vagy követelésért:"
     useriskstxt2: "Bármely Bitcoinhoz köthető szoftver vagy szolgáltatás felhasználója által elkövetett hibák; például elfelejtett jelszavak, rossz Bitcoin-címekre küldött kifizetések és pénztárcák véletlen törlése."
@@ -474,7 +702,7 @@ hu:
     investmentrisks: "Befektetési kockázatok"
     investmentriskstxt1: "A Bitcoinba való befektetés rövid vagy akár hosszútávú pénzveszteséghez vezethet. A Bitcoinba befektetők az árak nagy mértékű fluktuációjára számíthatnak. A Weboldalon közzétett információ nem garantálja, hogy a Bitcoinba befektetők elkerülik a pénzveszteséget."
     taxcompliance: "Megfelelés az adózási kötelezettségeknek"
-    taxcompliancetxt1: "A Weboldal felhasználói egyedül felelősek a Bitcoin-tranzakcióikkal kapcsolatban felmerülő adók meghatározásáért. A Weboldal tulajdonosai vagy közreműködői NEM felelősek a Bitcoin-transzakciókkal kapcsolatban felmerülő adók meghatározásáért."
+    taxcompliancetxt1: "A Weboldal felhasználói egyedül felelősek a Bitcoin-tranzakcióikkal kapcsolatban felmerülő adók meghatározásáért. A Weboldal tulajdonosai vagy közreműködői NEM felelősek a Bitcoin-tranzakciókkal kapcsolatban felmerülő adók meghatározásáért."
     noissuer: "A Weboldal nem tárol, küld vagy fogad bitcoinokat"
     noissuertxt1: "A Weboldal nem tárol, küld vagy fogad bitcoinokat. Ennek oka az, hogy a bitcoinok kizárólag a Bitcoin-hálózat által fenntartott tulajdonosi adatok révén léteznek. Bármely bitcoin tulajdonjogának átruházása egy decentralizált Bitcoin-hálózaton keresztül történik, és nem a Weboldalon."
     nowarranties: "Nincs jótállás"
@@ -490,24 +718,38 @@ hu:
     pagetitle: "Sajtóközpont"
     summary: "Böngésszen interjúalanyok, válaszok és kiváló minőségű sajtóanyagok között."
     volunteer: "Interjúalanyok"
-    volunteernonprofit: "Lépjen kapcsolatba a <a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin Alapítvánnyal</a> vagy helyi, <a href=\"#community##[community.non-profit]\">nonprofit szervezetekkel</a>."
-    volunteerpresscenter: "További potenciális sajtókapcsolatokat a független <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a> weboldalon találhat."
-    faqmore: "A Bitcoinnal kapcsolatos további információkhoz látogasson el a teljes <a href=\"/en/faq\">GYIK-et</a> tartalmazó oldalra vagy a <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wikire</a>."
-    materialpicture: "Képek"
-    materialpicturemore: "További képek..."
+    volunteernonprofit: "Lépjen kapcsolatba a <a href=\"https://www.bitgivefoundation.org\">BitGive</a> projekttel, a <a href=\"https://bitcoincore.org/en/contact\">Bitcoin Core projekttel</a> vagy helyi <a href=\"#community##[community.non-profit]\">nonprofit szervezetekkel</a>."
+    faqmore: "Ha többet szeretnél megtudni a Bitcoinról, látogass el a <a href=\"/en/faq\">GYIK-et</a> tartalmazó oldalra vagy a <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wikire</a>."
   privacy:
     title: "Adatvédelem - Bitcoin"
     pagetitle: "Adatvédelem"
-    datacollect: "Összegyűjtött adatok"
-    datacollecttxt: "A bitcoin.org anonimizált szervernapló-adatokat gyűjt. Ezek a naplók kicserélt utolsó bájttal rendelkező IP-címeket, a látogatás idejét, a lekért oldalt, a felhasználói ágenst (user agent) és a hivatkozó (referer) URL-t tartalmazzák. A bitcoin.org cookie-k használatával nem gyűjt adatokat."
-    datause: "Adatfelhasználás"
-    datausetxt: "Az összegyűjtött adatokat <a href=\"/stats/\">transzparens, nyilvános statisztikákhoz</a> használjuk fel."
+    privacytxt1: "Ez az oldal arról tájékoztat hogyan gyűjtjük, használjuk fel és osszuk meg a személyes adataidat amit a felhasználóktól kapunk az oldalon (https://bitcoin.org). Az adataidat arra használjuk, hogy jobban megértsük a honlap használatára vonatkozó szokásaidat és hogy látogatói statisztikát gyűjtsünk."
+    privacytxt2: "Az oldal használatával elfogadod az információk gyűjtését és felhasználását az irányelvben meghatározottak szerint."
+    privacylogdata: "Naplózási adatok"
+    privacytxt3: "Mint sok más oldalüzemeltető is, információkat gyűjtünk amit a böngésző küld át minden egyes alkalommal mikor felkeresed az oldalt (\"naplózási adat\"). Ez a naplózási adat tartalmazhat információt a számítógéped internet protokolljáról (\"IP\"), címéről (egy kicserélt utolsó byte-tal), böngésző típusáról, böngésző verziójáról, a felkeresett oldalainkról, a látogatásod idejéről és dátumáról, az oldalakon eltöltött időről és egyéb statisztikákat."
+    privacycookies: "Sütik"
+    privacytxt4: "A sütik olyan fájlok, amelyek kis mennyiségű adatot tartalmaznak, amelyek akár tartalmazhatnak egy névtelen egyedi azonosítót. A sütiket egy webhelyről küldjük a böngésződbe és a számítógéped merevlemezén tároljuk. Utasíthatod a böngésződet, hogy utasítsa el az összes sütit, vagy jelezheti, mikor egy sütit küld. Ha azonban nem fogadod el a sütiket, előfordulhat, hogy nem fogod tudni használni a webhelyünk egyes részeit."
+    privacytxt5: "Az alábbiak miatt használunk sütiket:"
+    privacytxt6: "Annak érdekében, hogy nyomon kövessük azt, hogy megnyomtad-e az \"OK\" gombot a süti nyilatkozaton, ezért nem is zavarunk egy értesítéssel, hogy ha van."
+    privacytxt7: "Az Analytics szoftverünk (Google Analytics) sütiket használ az oldalunk felhasználói interakcióinak mérésére és jobb megértésére. <a href=\"https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage\">Itt</a> megtudhatsz több információt a Google Analytics sütik használatáról."
+    privacyanalytics: "Google Analytics"
+    privacytxt8: "Google által biztosított \"Google Analytics\" nevű harmadik feles JavaScript bővítményt használunk, amely segítségével hasznos látogatottsági statisztikát kapunk és jobb rálátásunk lesz arra, hogyan használod az oldalunkat. Nincs direkt hozzáférésünk a Google Analytics-ről szerzett információkhoz, de a Google a kezelőfelületén keresztül egy összegzést biztosít."
+    privacytxt9: "A Google Analytics-től kapott információkat megoszthatjuk olyan üzleti partnerekkel, akik hirdetni szeretnének a weboldalunkon. Az így üzleti partnerekkel megosztott információk nem tartalmaznak személyes azonosításra alkalmas információkat (a Google nem biztosít közvetlen hozzáférést az adatokhoz, ezért nem látjuk az információt)."
+    privacytxt10: "A Google Analytics opt-out böngésző kiegészítő letöltésével elutasíthatod a rólad gyűjtött Google Analytics információk átadását. Ez megakadályozza a Google Analytics-et a információid használatában. A döntés nem befolyásolja a weboldalunk bármilyen módon történő használatát. <a href=\"https://tools.google.com/dlpage/gaoptout\">Itt</a> töltheted le az opt-out böngésző kiegészítőt. Tiszteletben tartjuk a Do Not Track fejlécet is és nem fogjuk nyomon követni azokat a látogatókat, akiknek a Do Not Track be van kapcsolva."
+    privacychanges: "Változások az adatvédelmi szabályzatban"
+    privacytxt11: "Néha frissíthetjük adatvédelmi szabályzatunkat. Értesíteni fogunk az esetleges változásokról új adatvédelmi politika formájában a weboldalunkon. Javasoljuk nézd át adatvédelmi szabályzatunkat időnként."
+    privacytxt12: "Az adatvédelmi szabályzat utoljára frissítve"
+    privacycontactus: "Kapcsolat"
+    privacytxt13: "Amennyiben kérdésed merülne fel az adatvédelmi politikánkról, vagy az adatgyűjtés és feldolgozás módjáról, kérjük küldj egy e-mailt a <a href=\"mailto:privacy@bitcoin.org?Subject=Privacy\">privacy@bitcoin.org</a> címre."
+  cookie-notification:
+    cookiemessage: "<p class=\"cc_message\">Sütiket használunk annak érdekében, hogy a legjobb felhasználói élményt tudjuk nyújtani. <br><br>Kérjük olvasd el az <a href=\"/en/privacy\">adatvédelmi politikánk</a>, hogy többet megtudhass.</p>"
+    cookieaccept: "OKÉ"
   protect-your-privacy:
     title: "Védje meg személyes adatait - Bitcoin"
     pagetitle: "Védje meg személyes adatait"
     pagedesc: "A Bitcoinra gyakran anonim fizetési rendszerként tekintenek. A valóságban a Bitcoin a világ feltehetően legtranszparensebb fizetési rendszere. Ugyanakkor a Bitcoin elfogadható szintű titkosságot biztosít megfelelő használat esetén. <b>Soha ne feledje, hogy az Ön felelőssége, hogy jó gyakorlatok elsajátításával megvédje személyes adatait</b>."
     traceable: "A Bitcoin nyomonkövethetőségének megértése"
-    traceabletxt: "A Bitcoin korábban soha nem tapasztalt transzparenciával működik, amihez az emberek többsége nincsen hozzászokva. Az összes Bitcoin-tranzakció nyilvános, nyomon követhető, illetve azonnal tárolódik a Bitcoin-hálózaton. A Bitcoin-címek jelentik a bitcoinok helyének és küldési címének egyetlen azonosítóját. E címeket privát módon hozza létre a felhasználók pénztárcája. Ugyanakkor, ha egy cím használttá válik, akkor \"beszennyeződik\" az összes olyan tranzakció történetével, amelyben részt vett. Bárki láthatja bármelyik cím <a href=\"https://live.blockcypher.com/btc\">egyenlegét és összes tranzakcióját</a>. Mivel a felhasználóknak általában fel kell fedniük személyazonosságukat ahhoz, hogy termékeket vásárolhassanak vagy szolgáltatásokat vehessenek igénybe, a Bitcoin-címek nem lehetnek teljes mértékben anonimok. Ezen okok miatt a Bitcoin-címeket csak egyszer célszerű használni, valamint a felhasználónak óvakodniuk kell címeik felfedésétől."
+    traceabletxt: "A Bitcoin korábban soha nem tapasztalt szintű transzparenciával működik, amihez az emberek többsége nincsen hozzászokva. Az összes bitcoin tranzakció nyilvános, nyomon követhető, illetve azonnal tárolódik a Bitcoin hálózaton. A Bitcoin címek jelentik a bitcoinok helyének és küldési címének egyetlen azonosítóját. E címeket privát módon hozza létre a felhasználók pénztárcája. Ugyanakkor, ha egy cím használttá válik, akkor \"beszennyeződik\" az összes olyan tranzakció történetével, amelyben részt vett. Bárki láthatja bármelyik cím egyenlegét és összes tranzakcióját. Mivel a felhasználóknak általában fel kell fedniük személyazonosságukat ahhoz, hogy termékeket vásárolhassanak vagy szolgáltatásokat vehessenek igénybe, a Bitcoin-címek nem lehetnek teljes mértékben anonimok. Ezen okok miatt a Bitcoin-címeket csak egyszer célszerű használni, valamint a felhasználónak óvakodniuk kell címeik felfedésétől."
     receive: "Használjon új címeket a kifizetések fogadására"
     receivetxt: "Személyes adatainak védelme érdekében minden új kifizetés fogadására új Bitcoin-címet érdemes használnia. Továbbá különböző célokra többféle pénztárcát használhat. Ily módon úgy különítheti el tranzakcióit egymástól, hogy összekapcsolásuk nem lehetséges. Az Önnek fizető személyek nem látják, hogy milyen Bitcoin-címeket birtokol, és mire használja őket. Valószínűleg ez a legfontosabb szabály, amelyet érdemes észben tartania."
     public: "Legyen óvatos nyilvános helyeken"
@@ -520,20 +762,57 @@ hu:
     futuretxt: "Számos fejlesztés várható a jövőben a személyes adatok védelemének javítása érdekében. Például a közösség jelenleg is erőfeszítéseket tesz a kifizetési üzenetek API-jában azért, hogy egy kifizetés során több cím \"szennyezése\" elkerülhetővé váljon. A Bitcoin Core változáscímeket az idő előrehaladtával valószínűleg más pénztárcákba is implementálni lehet majd. A grafikus felhasználói felületek fejleszthetőek lesznek egy felhasználóbarát kifizetési kérelmi szolgáltatás megvalósítására, és a címek újrafelhasználásának gátlására. További munkák és kutatások folynak további potenciális, kiterjesztett, személyes adatok védelmével kapcsolatos szolgáltatások - mint például véletlenszerűen kiválasztott felhasználók tranzakcióinak összekapcsolása - megalkotására."
   resources:
     title: "Információs anyagok - Bitcoin"
-    pagetitle: "Bitcoin információs anyagok"
-    pagedesc: "Leljen hasznos weboldalakra és információs anyagokra a Bitcoinról (idegen nyelven):"
-    useful: "Hasznos helyek"
+    pagetitle: "Bitcoin források"
+    pagedesc: "Hasznos oldalak és források a Bitcoinról."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin Wiki</a>"
     linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Könyvtárak"
     linkwallets: "Pénztárcák"
     linkmerchants: "Kereskedők"
     linkexchanges: "Tőzsdék"
+    linkprojects: "Projektek"
     linkmerchantstools: "Kereskedői eszközök"
-    charts: "Diagramok és statisztikák"
+    linknonprofits: "Non-profit"
+    charts: "Grafikonok és statisztikák"
     news: "Hírek"
     documentaries: "Dokumentumfilmek"
     learn: "Oktatóanyagok"
+    vouchers: "Kuponok"
+  scams:
+    title: "Átverések megelőzése - Bitcoin"
+    pagetitle: "Átverések megelőzése"
+    summary: "Ismerkedj meg a legismertebb bitcoin átverésekkel, hogy megvédhesd magadat és a pénzügyeidet."
+    table: "Átverés típusok"
+    blackmail: "Zsarolás"
+    blackmailtxt: "Légy óvatos a zsarolási támadásokkal, ahol idegenek zsarolnak a bitcoinjaidért cserébe. Egy mindennapos módszer erre az e-mail, ahol a küldő küld egy üzenetet melyben azt állítja, hogy meghackelte a számítógépedet és távoli asztali protokollról (RDP) irányítja. A küldő azt állítja, hogy billentyűzetfigyelőt telepített és a webkameráddal olyat rögzített, amit nem szeretnél, ha mások is tudnának. A küldő két opciót ajánl - küldj neki bitcoint, hogy eltüntesse az anyagot vagy küldj semmit és figyeld ahogy elküldi az e-mail kapcsolataidnak és elterjeszti a közösségi médián. A csalók lopott e-mail listákat és más kiszivárgott információkat használnak a séma tömeges futtatásához."
+    fake-exchanges: "Hamis tőzsdék"
+    fake-exchangestxt: "Ahogy egyre népszerűbbé vált a bitcoin, egyre több embert kívánt szerezni belőle. Sajnos a csaló emberek kihasználták ezt és e célra hamis bitcoin tőzsdéket hoztak létre. Ezek a hamis tőzsdék tőrbe csalhatják a felhasználókat extrém kedvező piaci árakkal, ami miatt az áldozatok azt hiszik, megütötték a főnyereményt a gyors és könnyen hozzáférhető olcsó bitcoinnal. Győződj meg róla hogy <a href=\"/en/exchanges\">bevált tőzsdét</a> használsz mikor bitcoint adsz vagy veszel."
+    free-giveaways: "Ingyenes Ajándék"
+    free-giveawaystxt: "Az információ virális természete miatt és ahogy terjed az interneten, a csalók úgy akarnak hasznot húzni az emberekből, hogy ingyenes bitcoin osztást vagy más digitális pénzosztást szerveznek a tőzsdéken egy kis összegű regisztrációért cserébe, vagy bizonyos személyes információ megadásával. Amikor ilyet látsz egy oldalon vagy közösségi médián, jobb, ha azonnal jelented a tartalmat mint csalás, hogy még véletlenül se essenek mások is áldozatukul."
+    impersonation: "Megszemélyesítés"
+    impersonationtxt: "Sajnos nagyon könnyű a csalóknak közösségi média számlákat kreálniuk és másoknak kiadni magukat. Gyakran kivárnak mindaddig, amíg a személy akinek kiadják magukat tartalmakat tesz közzé. A dublőr ilyenkor egy követő üzenetet vagy egy cselekvésre való felhívást küld - mint például ingyenes osztást - egy olyan számláról, ami szinte megegyezik az eredeti posztolóéval vagy íróéval. Ez úgy fog látszani, mintha az eredeti személy írta volna. Alternatívaként az imposztorok ezeket a hamis számlákat arra is felhasználhatják, hogy másokat becsapva privát vagy közvetlen üzenetekkel bizonyos akciókra bírják rá az áldozatokat annak érdekében, hogy átverjék vagy aláássák őket. Soha ne vegyél részt ingyenes osztásokban és ha egy furcsa felkérést kapsz valakitől a közösségi hálódból, a legjobb megoldás, ha kétszer is ellenőrzöd az autentikusságát különböző kommunikációs médiumokon keresztül."
+    malware: "Malware"
+    malwaretxt: "A hackerek nagyon kreatívakká váltak az emberektől való lopásban. Bitcoin küldésekor mindig győződj meg róla, hogy kétszer vagy háromszor is ellenőrzöd a küldött címet. Néhány rosszindulatú program, amit csak egyszer kell telepíteni, megváltoztatja a bitcoin címeket mikor a felhasználó beilleszti őket a vágólapjából, így a bitcoinok a hacker címére érkeznek. Mivel nagyon kevés az esélye annak, hogy egy bitcoin tranzakciót visszafordíthassanak akkor, ha azt a hálózat már megerősítette, és ezért ezt később észrevéve már nem lehet visszacsinálni. Fontos, hogy rendkívül óvatos legyél abban, hogy milyen programoknak engedélyezed az adminisztrátori hozzáférést az eszközökön. Egy naprakész, jó hírű víruskereső is segít, de nem jelent garantált védettséget."
+    meet-in-person: "Találkozz személyesen"
+    meet-in-persontxt: "Amikor helyben vásárolsz vagy adsz el bitcoint, a másik fél arra kérhet, hogy személyesen találkozzatok az ügylet kivitelezésére. Amennyiben egy olyan személy, akit még nem ismersz, akkor ez egy nagyon kockázatos ajánlat és akár ki is rabolhatnak, vagy akár bajod is eshet. A csalók arról ismertek, hogy hamis fiatpénzekkel fizetnek a bitcoinjaidért cserébe. Tanácsos egy peer-to-peer platformot használni a források letétbe helyezése érdekében ahelyett, hogy személyesen találkoznál a személlyel."
+    money-transfer-fraud: "Pénzutalási átverések"
+    money-transfer-fraudtxt: "Ne válaszolj idegenek e-mailjeire vagy bejövő üzenetekre, amelyek azt állítják, hogy segítségre van szükségük egy kis pénz átutalásához és majd a szolgáltatásaidért cserébe megkapod a források egy részét."
+    phishing-emails: "Adathalász e-mailek"
+    phishing-emailstxt: "Figyelj az olyan e-mailekre, melyek hamisan olyan szolgáltatásoktól erednek, ahol például jelszavad visszaállítására kérnek fel, vagy interakcióra késztetnek a számláddal kapcsolatosan. Nagyon nehéz észrevenni a különbséget egy valódi és egy hamis e-mail között, egy olyan között, ami arra próbál rávenni, hogy kompromittáld a számládat, és egy olyan között, amit jogszerűen küldtek ki egy általad használt termék vagy szolgáltatás kapcsán. Mikor nem vagy biztos benne, ellenőrizd le háromszor is az üzenet hitelességét a honlapon talált e-mail használatával, telefonon történő hívás útján, és/vagy hivatalos közösségi médiafiókjukon keresztül."
+    phishing-websites: "Adathalász oldalak"
+    phishing-websitestxt: "Az adathalász oldalak gyakran kéz a kézben járnak az adathalász e-mailekkel. Az adathalász e-mailek olyan oldalmásolatokra linkelhetnek, amelyek ellophatják a bejelentkezéskor megadott hitelesítő adatokat, vagy kártékony programokat telepíthetnek. Ne telepíts szoftvert, vagy jelentkezz be egy webhelyre, csak akkor, ha 100%-ban biztos vagy abban, hogy nem hamis. Az adathalász webhelyek a keresőmotorok vagy a mobileszközök alkalmazáspiacainak szponzorált találatai is lehetnek. Ügyelj arra, hogy nem töltesz le hamis alkalmazást, vagy kattintasz egy szponzorált linkre ami egy hamis weboldalra visz."
+    ponzi-schemes: "Ponzi-sémák"
+    ponzi-schemestxt: "Ne vegyél részt olyan ajánlatokban, ahol egy vagy több ember garantált hozamot biztosít egy előre befizetett összegért cserébe. Ezt Ponzi-sémának nevezik, ahol a jövőbeni betétesek díjait a korábban befektetőknek fizetik ki. A végeredmény általában, hogy sok ember egy csomó pénzt veszít."
+    pyramid-schemes: "Piramisjátékok"
+    pyramid-schemestxt: "A piramisjáték a résztvevők számára jutalékot garantál az általuk meghívott személyek után. Ez lehetővé teszi, hogy a rendszer virálisan és gyorsan növekedjen, de leggyakrabban nem eredményez semmilyen komolyabb hozamot a tagok és/vagy a meghívottak számára. Soha ne kérd fel a személyes ismerőseidet egy termék vagy szolgáltatás jutalmának vagy megtérülésének összegyűjtésére, és ne járulj hozzá a saját tőkéddel mások megbízásából, hogy felgyorsítsd a folyamatot."
+    prize-giveaways: "Nyereményajánlat"
+    prize-giveawaystxt: "Az ingyenes ajándékosztásokhoz hasonlóan a díjnyeremény csalások arra veszik rá az embereket, hogy cselekedjenek, vagy hogy információt szolgáltassanak magukról. Például a nevük, címük, e-mail címük és telefonszámuk megadását kérik a nyereményük kikéréséhez. Ez lehetővé teszi a hacker számára, hogy az így gyűjtött információkkal fiókokhoz férjen hozzá vagy a nevedben járjanak el."
+    pump-and-dumps: "Pumpa sémák"
+    pump-and-dumpstxt: "Ne bízz olyan emberekben, akik arra biztatnak téged vagy másokat, hogy befektess, mert tudják, hogy mi lesz a bitcoin ára. A pumpa-sémák során egy személy (vagy személyek) megpróbálják mesterségesen emelni az árat annak érdekében, hogy nyereségesen szabadulhassanak meg a vagyonuktól."
+    ransomware: "Ransomware"
+    ransomwaretxt: "Az ilyesfajta malware program részben vagy teljesen blokkolja az eszközhöz való hozzáférést, kivéve, ha bitcoinban megfizeted a váltságdíjat. A legjobb megoldás egy megbízható számítógépes szakember tanácsának kikérése az eltávolításáról, sem mint a váltságdíj megfizetése. Ügyelj arra, hogy milyen eszközöket telepítesz az eszközeidre, különösen azokkal légy óvatos, amelyek rendszergazdai hozzáférést kérnek. Győződj meg róla kétszer is, hogy a letöltött alkalmazás nem egy olyan hamisítvány, ami egy korábban használt legitim szoftver másolata."
+    scam-coins: "Scamcoinok"
+    scam-coinstxt: "Légy óvatos az alternatív érmékbe (altcoinok) történő befektetésnél. Az altcoinok között lehetnek átverések, amik arra csábítják a felhasználókat, hogy privát módon vagy előzetes kedvezményekkel fektessenek be. A csaló érmék (scamcoinok) harsány weboldallal rendelkeznek, és/vagy nagy közösséggel büszkélkednek azért, hogy az emberekben félelmet keltsenek, ha kihagyják a lehetőséget. Ez segít a korai tulajdonosok számára, hogy felpumpálják az árat azért, hogy profitért el tudják adni és zárhassák a pozíciójukat. A nagy közösségek nélküli scamcoinok airdropot alkalmazhatnak - ingyenes érméket (vagy tokeneket) kínálnak a csatlakozásáért cserébe. Ez lehetővé teszi, hogy a scamcoinok léggömbszerű trakcióval prezentálják kezdeményezéseiket, hogy a befektetők úgy érezzék, ki fogják hagyni amikor eljön az ideje, hogy eldönthessék, szeretnének-e befektetni. A scamcoinok gyakran használják a Bitcoin szót arra, hogy megpróbálják becsapni vagy félrevezetni az embereket azt sejtetve, hogy legitim kapcsolat van a scamcoinjuk és a Bitcoin között."
   secure-your-wallet:
     title: "Védje meg pénztárcáját - Bitcoin"
     pagetitle: "Védje meg pénztárcáját"
@@ -561,7 +840,7 @@ hu:
     offline: "Offline pénztárca megtakarításai számára"
     offlinetxt: "A hidegtárolásként is ismert offline pénztárca a megtakarítások legmagasabb szintű védelmét biztosítja. A lényege egy pénztárca biztonságos, hálózathoz nem kapcsolódó helyen való tárolása. Megfelelő kialakítás esetén nagyszerű védelmet biztosít a számítógépek sebezhetőségeivel szemben. Az offline pénztárca biztonsági mentésekkel és titkosítással kombinálva jó gyakorlatot jelent. Az alábbiakban néhány megközelítés áttekintését olvashatja:"
     offlinetx: "Offline tranzakció-aláírás"
-    offlinetxtxt1: "E megközelítés szerint két számítógép egyazon pénztárca egyes, közös részein osztozik. Az elsőt minden hálózatról le kell választani. Ez az egyetlen gép, amely tartalmazza az egész pénztárcát, és amellyel aláírhatóak a tranzakciók. A második gép csatlakozik a hálózathoz, és mindössze egy figyelő pénztárcát tartalmaz, amellyel kizárólag aláíratlan tranzakciók hozhatóak létre. Ily módon biztonságosan hozhat létre tranzakciókat a következő lépésekkel:"
+    offlinetxtxt1: "E megközelítés szerint két számítógép egyazon tárca egyes, közös részein osztozik. Az elsőt minden hálózatról le kell választani. Ez az egyetlen gép, amely tartalmazza az egész tárcát, és amellyel aláírhatóak a tranzakciók. A második gép csatlakozik a hálózathoz, és mindössze egy figyelő tárcát tartalmaz, amellyel kizárólag aláíratlan tranzakciók hozhatóak létre. Ily módon biztonságosan hozhatsz létre tranzakciókat a következő lépésekkel."
     offlinetxtxt2: "Hozzon létre egy új tranzakciót az online számítógépén, és mentse el egy pendrive-ra."
     offlinetxtxt3: "Írja alá a tranzakciót az offline számítógép segítségével."
     offlinetxtxt4: "Küldje el az aláírt tranzakciót az online számítógép segítségével."
@@ -574,39 +853,49 @@ hu:
     offlinemultitxt: "A Bitcoin rendelkezik egy csoportos aláírási szolgáltatással, amely lehetővé teszi, hogy egy tranzakció aláírásához több független jóváhagyás elköltése legyen szükséges. A csoportos aláírás például lehetővé teszi, hogy egy szervezet hozzáférést engedélyezzen tagjai számára pénztárához, ugyanakkor kizárólag akkor engedélyezve egy tranzakciót, ha 3-ból 5 felhasználó aláírja azt. Néhány webes pénztárca-szolgáltató is biztosít csoportos aláírású pénztárcákat a felhasználók számára, a pénzük feletti kontrollt lehetővé téve, ugyanakkor a tolvajok számára lehetetlenné téve, hogy egyetlen készülék vagy szerver feltörésével ellopják a pénzüket."
     offlinetestament: "Gondoljon végrendeletére"
     offlinetestamenttxt: "A bitcoinjai örökre elveszhetnek, amennyiben nincsen biztonsági mentésre vonatkozó terve az ismerősei és családja számára. Ha halálát követően a pénztárcáinak vagy jelszavainak helye nem ismert senki számára, nincs remény a vagyonához való hozzáférésre. Már az is óriási különbséget jelenthet, ha egy kis időt szentel ennek a kérdésnek."
+  spend-bitcoin:
+    title: "A Bitcoin elköltése - Bitcoin"
+    pagetitle: "A bitcoin elköltése"
+    summary: "Világszerte több ezer vállalkozásnál lehet bitcoinnal fizetni."
+    products-online: "Eladó termékek keresése online"
+    products-online-text: "A bitcoin egyik szokásos felhasználási területe az online vásárlás. Ma már több száz online üzletben és kereskedőnél lehet bitcoinnal fizetni. Az olyan keresőszolgáltatásokkal, mint például a <a href=\"https://spendabit.co/\">Spendabit</a> milliónyi, bitcoinnal megvásárolható termék között kereshetünk."
+    directory: "Keresés a cégnyilvántartásban"
+    directory-text: "Számos vállalkozást találhatsz az <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">online címjegyzékben</a> is."
+    business-map: "Helyi vállalkozások keresése"
+    business-map-text: "Rengeteg helyi vállalkozás van, mint kávézók és éttermek, amik elfogadnak bitcoint. Használd a <a href=\"https://coinmap.org/\">Coinmap.org</a> oldalt, hogy világszerte több ezer vállalkozás között böngészhess."
   support-bitcoin:
     title: "Támogassa a Bitcoint - Bitcoin"
     pagetitle: "Támogassa a Bitcoint"
-    summary: "A Bitcoin egy olyan protokoll, amelyet egy kis közösség hívott életre, és amely születése óta gyorsan növekszik. Sok mindent tehet a Bitcoin széles körben való elterjedéséért, illetve további fejlődéséért."
+    summary: "A Bitcoint egy kis közösség hívta életre és azóta gyorsan növekszik. Sok mindent tehet tenni a támogatása érdekében és segíteni, hogy mások többet megtudjanak róla."
     use: "A Bitcoin használata"
     usetxt: "A <a href=\"#getting-started#\">Bitcoin használata</a> az első lépés, amelyet a Bitcoin támogatásának irányában tehet. Valószínűleg számos esetben könnyítheti meg életét. Kifizetéseket fogadhat, illetve vásárolhat is a Bitcoin segítségével."
     node: "Legyen Ön a hálózat"
-    nodetxt: "Ha gyors interneteléréssel rendelkezik, a Bitcoin-hálózatot a számítógépén vagy szerverén - nyitott 8333-as porttal - egy <a href=\"#download#\">teljes csomóponti szoftver</a> folyamatos futtatásával erősítheti. A teljes csomópontok az összes tranzakció biztonságát szavatolják, valamint továbbítják azokat."
+    nodetxt: "Ha gyors interneteléréssel rendelkezel, a Bitcoin-hálózatot a számítógépén vagy szerverén - nyitott 8333-as porttal - egy <a href=\"/en/full-node\">teljes csomóponti szoftver</a> folyamatos futtatásával erősítheted. A teljes csomópontok az összes tranzakció biztonságát szavatolják, valamint továbbítják azokat."
     mining: "Bányászat"
-    miningtxt: "Ön is elkezdhet <a href=\"http://www.bitcoinmining.com/\">bitcoint bányászni</a> a tranzakciók feldogozásának támogatásához. A hálózat védelme érdekében érdemes kisebb bányászati közösségekhez, a <a href=\"http://p2pool.in/\">P2Poolhoz hasonló</a>, decentralizált közösségekhez vagy getblocktemplate (GBT) támogatással rendelkező <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">közösségekhez</a> csatlakoznia."
+    miningtxt: "Te is elkezdhetsz <a href=\"http://www.bitcoinmining.com/\">bitcoint bányászni</a> a tranzakciók feldogozásának támogatásához. A hálózat védelme érdekében érdemes kisebb bányászati közösségekhez, mint a <a href=\"http://p2pool.in/\">P2Poolhoz hasonló</a> vagy getblocktemplate (GBT) támogatással rendelkező <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">közösségekhez</a> csatlakozni."
     develop: "Fejlesztés"
-    developtxt: "A Bitcoin egy ingyenes szoftver. Amennyiben Ön fejlesztő, szuper erőit jóra fordíthatja, és segíthet a <a href=\"#development#\">Bitcoin fejlesztésében</a>. Vagy létrehozhat Bitcoint használó, nagyszerű, új szolgáltatásokat vagy szoftvereket."
+    developtxt: "A Bitcoin egy ingyenes szoftver. Ha fejlesztő vagy, akkor a szuperképességeidet jó célra fordíthatod és segíthetsz a <a href=\"#development#\">Bitcoin fejlesztésében</a>. Vagy létrehozhatsz Bitcoint használó, nagyszerű, új szolgáltatásokat vagy szoftvereket."
     donation: "Adományozás"
-    donationtxt: "A legegyszerűbb módon néhány bitcoin a Bitcoin Alapítványnak történő <a href=\"https://bitcoinfoundation.org/about/donate/\">adományázásával</a> segíthet. Vagy közvetlenül is segíthet bármely, Ön szerint a jövőben hasznos, Bitcoinhoz kapcsolódó projekt finanszírozásában."
+    donationtxt: "A legegyszerűbb módja néhány bitcoin <a href=\"http://bitgivefoundation.org/donate-now/\">adományozása</a> a BitGive-nek. Vagy közvetlenül is segíthetsz bármely, szerinted a jövőben hasznos, Bitcoinhoz kapcsolódó projekt finanszírozásában."
     nonprofit: "Szervezetek"
-    nonprofittxt: "A <a href=\"https://bitcoinfoundation.org/\">Bitcoin Alapítvány</a> és számos más <a href=\"#community##[community.non-profit]\">nonprofit szervezet</a> célja a Bitcoin védelme és népszerűsítése. Ezeket a csoportokat a hozzájuk való csatlakozással és projektjeikben, megbeszéléseiken, illetve rendezvényeiken való részvételével segítheti."
+    nonprofittxt: "Számos <a href=\"#community##[community.non-profit]\">nonprofit szervezet</a> célja a Bitcoin védelme és népszerűsítése. Ezeket a csoportokat a hozzájuk való csatlakozással és projektjeikben, megbeszéléseiken, illetve rendezvényeiken való részvételével segítheti."
     spread: "Népszerűsítés"
-    spreadtxt: "Beszéljen a Bitcoinról az érdeklődő embereknek. Írjon róla blogján. Nevezze meg kedvenc üzleteit, ahol szívesen fizetne bitcoinnal. Segítsen a <a href=\"http://usebitcoins.info/\">kereskedői adatbázis</a> naprakészen tartásban. Vagy legyen kreatív, és készítsen magának egy szép Bitcoin pólót."
+    spreadtxt: "Beszélj a Bitcoinról az érdeklődő embereknek. Írj róla a blogodon. Nevezd meg a kedvenc üzleteidet, ahol szívesen fizetnél bitcoinnal. Segíts a <a href=\"/en/spend-bitcoin\">kereskedői adatbázis</a> frissen tartásban. Vagy legyél kreatív és készíts magadnak egy szép Bitcoin pólót."
     wiki: "Dokumentáció"
-    wikitxt: "A <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> és a <a href=\"https://en.bitcoin.it/\">Bitcoin Wiki</a> hasznos leírásokat biztosít, ezenkívül folyamatosan pontosítjuk a bennük található információkat. Ön is segíthet ezen információforrásokat fejleszteni és naprakészen tartani."
+    wikitxt: "A <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> és a <a href=\"https://en.bitcoin.it/\">Bitcoin Wiki</a> hasznos leírásokat biztosít, ezenkívül folyamatosan fejlesszük az ott található információkat. Te is segíthetsz ezen információforrások fejlesztésében és naprakészen tartásában."
     translate: "Fordítás"
-    translatetxt: "Ön is segíthet a Bitcoin hozzáférhetőségének növelésében a Bitcoin-ökoszisztéma fontos részeinek fordításával, illetve meglévő fordításának pontosításával. Bátran vágjon bele egy olyan projektbe, amelyben segíteni kíván."
+    translatetxt: "Te is segíthetsz a Bitcoin tudatosság növelésében a Bitcoin ökoszisztéma fontos részeinek fordításával vagy a meglévő fordítások pontosításával. Bátran válassz egy olyan projektet, amelyben segíteni kívánsz."
     help: "Ismerje meg a közösségeket"
     helptxt: "Ön is csatlakozhat a <a href=\"#community#\">Bitcoin-közösségekhez</a>, és beszélgethet más Bitcoin-rajongókkal. Minden nappal egyre többet tudhat meg a Bitcoinról, segíthet az új felhasználóknak, valamint érdekes projektekben vehet részt."
   vocabulary:
     title: "Szótár - Bitcoin"
     pagetitle: "Néhány Bitcoinnal kapcsolatos kifejezés, amellyel találkozhat"
-    summary: "A Bitcoin a kifizetések új megközelítését jelenti, és mint ilyen, néhány új szóval gyarapíthatja szókincsét. Ne aggódjon - még a ma már hétköznapinak számító televízió is új szavakat hívott életre!"
+    summary: "A Bitcoin új megközelítést hoz az utalások világába, és mint ilyen, néhány új szóval érdemes gyarapítani a szókincsedet."
     table: "Tartalomjegyzék"
     address: "Cím"
     addresstxt: "A Bitcoin-cím <b>hasonló egy fizikai vagy e-mail címhez</b>. Ez minden információ, amelyet Önnek a Bitcoin segítségével történő kifizetéshez biztosítania szükséges. Fontos különbség ugyanakkor, hogy egy címet csak egyetlen tranzakcióhoz célszerű használnia."
     bit: "Bit"
-    bittxt: "A bit a bitcoin alegységeinek alapegysége - 1000000 bit alkot egy bitcoint (BTC vagy ₿) Ezen egység általában kényelmesebben használható kis összegű adományok, termékek és szolgáltatások árazására."
+    bittxt: "A bit az elfogadott egység a bitcoin részegységeinek mérésére - 1 000 000 bit 1 bitcoinnal (BTC) egyenlő. Ezen egység általában kényelmesebben használható adományok, termékek és szolgáltatások árazására."
     bitcoin: "Bitcoin"
     bitcointxt: "A Bitcoin - nagy kezdőbetűvel - a Bitcoin koncepciójának leírására vagy a teljes hálózat elnevezésére szolgál. Például \"Ma a Bitcoin-protokollról tanultam.\" A bitcoin - kisbetűvel - a bitcoinok, mint mértékegység leírására szolgál. Például: \"Ma 10 bitcoint küldtem.\"; ezenkívül gyakran rövidítik BTC-ként vagy XBT-ként."
     blockchain: "Blokklánc"
@@ -614,9 +903,9 @@ hu:
     block: "Blokk"
     blocktxt: "Egy blokk <b>egy olyan elem a blokkláncban, amely tartalmaz és visszaigazol számos várakozó tranzakciót</b>. <a href=\"#[vocabulary.mining]\">Bányászaton</a> keresztül hozzávetőleg, illetve átlagosan 10 percenként fűződik hozzá egy tranzakciókat tartalmazó, új blokk a <a href=\"#[vocabulary.blockchain]\">blokklánchoz</a>."
     btc: "BTC"
-    btctxt: "A BTC a bitcoin alapegysége (₿)."
+    btctxt: "A BTC az elterjedt rövidítése egy bitcoinnak."
     confirmation: "Visszaigazolás"
-    confirmationtxt: "A visszaigazolás azt jelenti, hogy egy tranzakciót <b>feldolgozott a hálózat, valamint igen kevéssé valószínű, hogy visszavonható</b>. A tranzakciók akkor nyernek visszaigazolást, amennyiben hozzáadódnak egy adott <a href=\"#vocabulary##[vocabulary.block]\">blokkhoz</a>, valamint minden, az adott blokkot megelőző blokkhoz. Egyetlen visszaigazolás is biztonságosnak tekinthető alacsony összegű tranzakciók esetén, azonban nagyobb, például 1000 USD értékű összeg esetén célszerű legalább 6 visszaigazolást megvárni. Minden egyes visszaigazolás <i>exponenciálisan</i> csökkenti a visszavont tranzakció kockázatát."
+    confirmationtxt: "A visszaigazolás azt jelenti, hogy egy tranzakciót <b>feldolgozott a hálózat, valamint igen kevéssé valószínű, hogy visszavonható</b>. A tranzakciók akkor nyernek visszaigazolást, amikor hozzáadódnak egy adott <a href=\"#vocabulary##[vocabulary.block]\">blokkhoz</a>, valamint minden, az adott blokkot megelőző blokkhoz. Minden egyes visszaigazolás biztonságosnak tekinthető alacsony összegű tranzakciók esetén, azonban nagyobb, például 1000 USD értékű összeg esetén célszerű legalább 6 vagy több visszaigazolást megvárni. Minden egyes visszaigazolás <i>exponenciálisan</i> csökkenti a visszavont tranzakció kockázatát."
     cryptography: "Kriptográfia"
     cryptographytxt: "A kriptográfia a matematika azon ága, amely lehetővé teszi számunkra, hogy olyan <b>matematikai bizonyításokat hozzunk létre, amelyek magas szintű biztonságot teremtenek</b>. Az online kereskedelem és bankolás ugyancsak kriptográfiát használ. A Bitcoin esetében a kriptográfiát arra használjuk, hogy lehetetlenné tegyük más felhasználók pénztárcájából való költést, valamint a <a href=\"#[vocabulary.blockchain]\">blokklánc</a> károsítását. Ugyanakkor pénztárcák titkosítására is használható, amelyek ily módon nem használhatóak jelszó nélkül."
     doublespend: "Dupla költés"
@@ -636,56 +925,95 @@ hu:
   you-need-to-know:
     title: "Néhány dolog, amelyet érdemes tudnia - Bitcoin"
     pagetitle: "Néhány dolog, amelyet érdemes tudnia"
-    summary: "Amennyiben éppen felfedezni készül a Bitcoint, néhány dolgot érdemes tudnia. A Bitcoin segítségével a szokásos bankokhoz képest eltérő módon bánhat a pénzzel. Ezért érdemes időt szánnia a tájékozódásra, mielőtt bármilyen komoly tranzakcióra használja a Bitcoint. A Bitcoin rendes pénztárcájához hasonló bánásmódot igényel - bizonyos esetekben pedig még nagyobb odafigyelést!"
+    summary: "Amennyiben most kezded felfedezni a Bitcoint, néhány dolgot érdemes tudnod. A Bitcoin segítségével a normálistól eltérő módon tudsz pénzt váltani és utalni. Ezért érdemes időt szánnod a tájékozódásra, mielőtt bármilyen komoly tranzakcióra használnád a Bitcoint. A Bitcoin a rendes tárcához hasonló bánásmódot igényel - bizonyos esetekben akár még nagyobb odafigyelést is!"
     secure: "Védje meg pénztárcáját"
-    securetxt: "Akárcsak a való életben, a pénztárcáját ez esetben is védenie szükséges. A Bitcoin az értékek továbbítását nagyon egyszerű módon teszi lehetővé, és lehetőséget teremt a pénze feletti irányítás megszerzésére. E nagyszerű szolgáltatások azonban komoly biztonsági megfontolásokat igényelnek. A Bitcoin megfelelő használat esetén igen magas szintű biztonságot nyújthat. Soha ne feledje, az Ön felelőssége, hogy jó gyakorlatokat sajátítson el pénze védelmére. <a href=\"#secure-your-wallet#\"><b>Tudjon meg többet pénztárcája megóvásáról</b></a>."
+    securetxt: "Mint a valós életben, a tárcádat védeni kell. A Bitcoin lehetővé teszi az értéktranszfert bárhova egy nagyon egyszerű módon, és lehetővé teszi, hogy ellenőrzést gyakorolj a pénzed fölött. Ugyanakkor az ilyen nagyszerű funkciók óriási biztonsági kockázatokkal járnak. Ugyanazon időben a Bitcoin magas szintű védelmet biztosít, ha helyesen használják. Sose feledd, hogy a te felelősséged a jó gyakorlatok kialakítása a pénzed védelme érdekében. <a href=\"#secure-your-wallet#\">Tudj meg többet arról, hogyan tudod védeni a tárcádat</a>."
     volatile: "A Bitcoin árfolyama volatilis"
     volatiletxt: "A bitcoin árfolyama fiatal piac lévén, újdonságából fakadóan, illetve néha a likviditáshiánnyal küzdő piacok miatt kiszámíthatatlanul emelkedhet és eshet rövid időn belül. Ebből következően megtakarításai bitcoinban való tartása jelenleg nem javasolt. A bitcoin nagy kockázatú eszköznek tekinthető, ezért soha ne tartson olyan pénzt bitcoinban, amelynek elvesztését nem engedheti meg magának. Amennyiben kifizetéseket kap kézhez Bitcoin segítségével, számos szolgáltató képes helyi pénznemre váltani a bitcoinokat."
     irreversible: "A Bitcoin-kifizetések visszavonhatatlanok"
-    irreversibletxt: "Bármely, Bitcoin segítségével kibocsátott tranzakció visszavonhatatlan, mindössze arra van lehetőség, hogy a kifizetést fogadó fél visszatérítse a kifizetett összeget. Ez azt jelenti, hogy célszerű olyan emberekkel és vállalkozásokkal üzletelnie, akikben és amikben megbízik vagy megalapozott, jó hírnevük van. A vállalkozások feladata a fogyasztók felé közvetített fizetési igények kontrollja. A Bitcoin képes az elütéseket jelezni, és általában nem engedi, hogy egy hiba folytán érvénytelen címre küldjön pénzt. A jövőben elképzelhetőek olyan kiegészítő szolgáltatások, amelyek nagyobb választási szabadságot és védelmet fognak nyújtani a fogyasztók számára."
+    irreversibletxt: "A bitcoin tranzakciók visszavonhatatlanok, mindössze arra van lehetőség, hogy a kifizetést fogadó fél visszatérítse a kifizetett összeget. Ez azt jelenti, hogy célszerű olyan emberekkel és vállalkozásokkal üzletelni, akikben és amikben megbízol vagy megalapozott, jó hírnevük van. A vállalkozások feladata a fogyasztók felé közvetített fizetési igények kontrollja. A Bitcoin képes az elütéseket jelezni, és általában nem engedi, hogy egy hiba folytán érvénytelen címre küldj pénzt, de fontos, hogy legyenek kontrollok a kiegészítő biztonság és redundancia miatt. A jövőbeni kiegészítő szolgáltatások lesznek olyan szolgáltatások, amelyek nagyobb választási szabadságot és védelmet fognak nyújtani mind a vállalkozások, mind a fogyasztók számára."
     anonymous: "A Bitcoin nem anonim"
-    anonymoustxt: "Némi erőfeszítést igényel, hogy megvédje személyes adatait a Bitcoinnal. Az összes Bitcoin-tranzakció nyilvánosan és azonnal tárolódik a rendszerben, ami azt jelenti, hogy bárki láthatja bármely Bitcoin-cím tranzakcióegyenlegét. Ugyanakkor a cím mögött lévő felhasználó személyazonossága rejtett marad mindaddig, amíg az információkra fény nem derül egy vásárlás vagy más körülmények folytán. Ez az oka annak, hogy a Bitcoin-címeket célszerű csak egyszer használni. Soha ne feledje, hogy az Ön felelőssége, hogy jó gyakorlatok elsajátításával megvédje személyes adatait. <a href=\"#protect-your-privacy#\"><b>Tudjon meg többet személyes adatai védelméről</b></a>."
-    instant: "Az azonnali tranzakciók kevésbé biztonságosak"
-    instanttxt: "A Bitcoin-tranzakciók néhány másodpercen belül aktiválódnak, és visszaigazolásuk a következő 10 percben megkezdődik. Ezen idő alatt a tranzakció hitelesnek tekinthető, ugyanakkor még visszavonható. A tisztességtelen felhasználók megpróbálhatnak csalni. Ha nem tud várni a visszaigazolásra, kis összegű tranzakciós díj megállapításával vagy egy, nem biztonságos tranzakciókat észlelő rendszer segítségével növelhető a biztonság. Nagyobb összegek - mint például 1000 USD - esetén célszerű 6 visszaigazolást megvárni. Minden egyes visszaigazolás <i>exponenciálisan</i> csökkenti a visszavont tranzakció kockázatát."
+    anonymoustxt: "Némi erőfeszítést igényel, hogy megvédd a személyes adataid a Bitcoinnal. Az összes Bitcoin tranzakció nyilvánosan és azonnal tárolódik a hálózaton, ami azt jelenti, hogy bárki láthatja bármely Bitcoin cím tranzakcióegyenlegét. Ugyanakkor a cím mögött lévő felhasználó személyazonossága rejtett marad mindaddig, amíg az információkra fény nem derül egy vásárlás vagy más körülmények folytán. Ez az oka annak, hogy a Bitcoin címeket célszerű csak egyszer használni. Soha ne feledd, hogy a te felelősséged, hogy jó gyakorlatok elsajátításával megvédd személyes adataid. <a href=\"#protect-your-privacy#\">Tudj meg többet a személyes adataid védelméről</a>."
+    instant: "A visszaigazolatlan tranzakciók nem biztonságosak"
+    instanttxt: "A tranzakciók a kezdetben nem visszavonhatatlanok. Helyette kapnak egy <i>konfirmációs</i> értéket ami azt indukálja, hogy milyen nehéz visszavonni azokat (lásd a táblázatot).  Minden egyes konfirmáció pár másodperc és 90 perc között változik, és ahol 10 perc az átlagos. Ha egy tranzakció túlságosan alacsony díjat fizet vagy másképp szokatlan, akkor az első konfirmáció sokkal tovább tarthat."
+    confirmations: "Visszaigazolások"
+    lightweight_wallets: "Ultrakönnyű tárcák"
+    bitcoin_core: "<a href=\"#download#\">Bitcoin Core</a>"
+    unconfirmed_only_safe: "Csak akkor biztonságos, ha megbízol a fizető személyben"
+    somewhat_reliable: "Kissé megbízható"
+    mostly_reliable: "Többnyire megbízható"
+    highly_reliable: "Rendkívül megbízható"
+    high_value_minimum: "Minimálisan ajánlott érték nagy értékű bitcoin tranzakcióknál"
+    alert_recommendation: "Javaslatok <a href=\"/en/alerts\">vészhelyzet</a> esetén az emberi beavatkozás lehetővé tételére"
     experimental: "A Bitcoin továbbra is a fejlesztés fázisában van"
-    experimentaltxt: "A bitcoin egy új, kísérleti pénznem, amely aktív fejlesztés alatt áll. Bár a használat növekedésével egyre kiforrottabbá fog válni, mégis érdemes észben tartania, hogy a Bitcoin egy új találmány, amely olyan ötleteket hasznosít, amelyeket korábban még sohasem próbáltak megvalósítani. Ily módon jövőjét senki nem tudja megjósolni."
+    experimentaltxt: "A bitcoin egy új, kísérleti pénznem, amely aktív fejlesztés alatt áll. Minden fejlesztés egyre vonzóbbá teszi, de közben új kihívásokat is tartogat a Bitcoin elfogadottság növekedésével. Ezen növekvő időszakok alatt magasabb díjakat, lassabb visszaigazolást vagy még komolyabb problémákat tapasztalhatsz. Készülj fel a problémákra és tárgyalj egy technikai szakértővel mielőtt komolyabb befektetést eszközölnél, de ne felejtsd, senki sem tudja a Bitcoin jövőjét megjósolni."
     tax: "Kormányzati adók és szabályozások"
-    taxtxt: "A bitcoin nem hivatalos pénznem. Mindemellett a legtöbb törvényalkotó elvárja, hogy minden után, aminek értéke van - beleértve a bitcoinokat is - vállalkozói, forgalmi, jövedelem- és kamatadót fizessen. Az Ön felelőssége, hogy pontosan betartsa a kormánya és/vagy helyi önkormányzata által kibocsátott <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">adó- és egyéb jogi vagy szabályozói rendelkezéseket</a>."
+    taxtxt: "A bitcoin nem hivatalos pénznem. Mindemellett a legtöbb törvényalkotó elvárja, hogy személyi, forgalmi, jövedelem és nyereségadót fizess. A te felelősséged, hogy pontosan betartsd a kormányod és/vagy helyi önkormányzatod által kibocsátott <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">adó- és egyéb jogi rendelkezéseket</a>."
   layout:
-    menu-support-bitcoin: "Támogassa a Bitcoint"
     menu-about-us: "A bitcoin.org-ról"
     menu-bitcoin-for-businesses: Vállalkozások
     menu-bitcoin-for-developers: Fejlesztők
     menu-bitcoin-for-individuals: Magánszemélyek
     menu-community: Közösség
     menu-development: Fejlesztés
+    menu-developer-documentation: Dokumentáció
     menu-events: Rendezvények
+    menu-exchanges: Tőzsdék
     menu-faq: GYIK
     menu-getting-started: "Vágjon bele"
     menu-how-it-works: "Hogyan működik"
     menu-innovation: Innováció
     menu-intro: Bevezetés
     menu-legal: "Jogi vonatkozások"
+    menu-participate: Vegyél részt
     menu-press: "Sajtó"
     menu-privacy: "Adatvédelem"
     menu-resources: Információs anyagok
-    menu-stats: "Statisztikák"
-    menu-participate: Részvétel
+    menu-scams: "Kerüld az átveréseket"
+    menu-support-bitcoin: "Támogasd a Bitcoint"
+    menu-buy: "Vásárolj bitcoint"
+    menu-full-node: "Teljes csomópont futtatása"
+    menu-other: "Egyéb"
     menu-vocabulary: Szótár
     menu-you-need-to-know: "Érdemes tudnia"
-    banner-translate: "Az ehhez a nyelvhez tartozó fordítások elavultak. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">A bitcoin.org saját nyelvére történő fordításában való segítséghez kattintson ide </a>."
+    menu-white-paper: "Fehérkönyv"
+    banner-core-moved: |
+        Ez az oldal elköltözött az új Bitcoin Core
+        oldalra (kattints ide az átirányításhoz)
+    banner-translate: "Az ehhez a nyelvhez tartozó fordítások elavultak. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">A bitcoin.org saját nyelvére történő fordításában való segítséghez kattintson ide</a>."
     footer: "Az <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licence</a> alatt közzétéve"
+    donate-community: "Támogasd a Bitcoin.org-ot"
+    donate-support: "A Bitcoin.org honlapot a közösség támogatja."
+    network-status: "Hálózat státusza"
     sponsor: "E közösségi weboldal szponzora a"
     getstarted: "Vágjon bele a Bitcoinba"
+    recomendation: "Ajánlott Bitcoin tárcák"
+    learn-more: "Tudj meg többet"
+    donate: "Adományozás"
+    bitcoin-core: "Bitcoin Core"
+    donation-banner-text: "A Bitcoin.org egy közösség finanszírozta projekt, nagyra értékeljük az adományokat és segítségével fejleszteni tudjuk a honlapot."
+    donation-banner-toggle-button: "A Bitcoin.org-nak szüksége van a támogatásodra!"
+    donation-banner-donate-button: "Adományozás"
+    donation-modal-header: "Adományozz a Bitcoin.org-nak"
+    donation-modal-subheader: "Használd a lenti QR kódot vagy címet"
+    donation-modal-input-custom-amount: "Vagy tetszőleges összeg?"
+    donation-modal-optional-message: "Opcionális leírás (a tárcádhoz)"
   url:
     about-us: rolunk
     bitcoin-for-developers: bitcoin-fejlesztoknek
     bitcoin-for-individuals: bitcoin-maganszemelyeknek
     bitcoin-for-businesses: bitcoin-vallalkozasoknak
+    buy: vasarlas
     choose-your-wallet: valasszon-penztarcat
     community: kozosseg
+    developer-documentation: fejlesztoi-dokumentacio
+    developer-examples: fejlesztoi-peldak
+    developer-glossary: fejlesztoi-kisokos
+    developer-guide: fejlesztoi-utmutato
+    developer-reference: fejlesztoi-referencia
     development: fejlesztes
     download: letoltes
+    exchanges: tozsdek
     events: rendezvenyek
     faq: gyik
     getting-started: vagjon-bele
@@ -696,13 +1024,32 @@ hu:
     privacy: adatvedelem
     protect-your-privacy: vedje-meg-szemelyes-adatait
     resources: informacios-anyagok
+    scams: atveresek
     secure-your-wallet: vedje-meg-penztarcajat
     support-bitcoin: tamogassa-a-bitcoint
     vocabulary: szotar
     you-need-to-know: amit-tudnia-erdemes
+    bitcoin-paper: papir-bitcoin
+    spend-bitcoin: fizess-bitcoinnal
   anchor:
     community:
       non-profit: nonprofit
+    scams:
+      blackmail: zsarolas
+      fake-exchanges: hamis-tozsdek
+      free-giveaways: ingyenes-ajandek
+      impersonation: megszemelyesites
+      malware: malware
+      meet-in-person: szemelyes-talalkozo
+      money-transfer-fraud: penzutalasi-csalasok
+      phishing-emails: adathalasz-e-mailek
+      phishing-websites: adathalasz-oldalak
+      ponzi-schemes: ponzi-semak
+      pyramid-schemes: piramisjatekok
+      prize-giveaways: nyeremenyajanlat
+      pump-and-dumps: pumpa-semak
+      ransomware: ransomware
+      scam-coins: scamcoinok
     vocabulary:
       address: cim
       bit: bit
@@ -726,7 +1073,7 @@ hu:
       whocontrols: ki-iranyitja-a-bitcoin-halozatot
       howitworks: hogyan-mukodik-a-bitcoin
       acquire: hogyan-szerezhetoek-bitcoinok
-      used: "tenyleg-hasznaljak-az-emberek-a-bitcoint"
+      used: tenyleg-hasznaljak-az-emberek-a-bitcoint
       makepayment: mennyire-bonyolult-bitcoinnal-fizetni
       advantages: mik-a-bitcoin-elonyei
       disadvantages: mik-a-bitcoin-hatranyai
