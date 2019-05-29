@@ -13,7 +13,6 @@ breadcrumbs:
 win64zip: "win64.zip"
 win64exe: "win64-setup.exe"
 macdmg: "-osx.dmg"
-#macdmg: ".dmg"
 mactar: "osx64.tar.gz"
 lin32: "i686-pc-linux-gnu.tar.gz"
 lin64: "x86_64-linux-gnu.tar.gz"
@@ -107,8 +106,8 @@ lin64: "x86_64-linux-gnu.tar.gz"
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm-linux-gnueabihf.tar.gz" class="dl download-link" id="lin32arm">32 bit</a>
         </div>
 
-        <div class="corecard ubuntu-card">
-          <a href="https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin">Ubuntu (PPA)</a>
+        <div class="corecard snap-card">
+          <a href="https://snapcraft.io/bitcoin-core">Linux (Snap Store)</a>
         </div>
     </div>
     
@@ -121,7 +120,7 @@ if (navigator.userAgent.indexOf('Mac') != -1) var os = 'mac'
 else if (navigator.userAgent.indexOf('Linux') != -1) {
 	var os='linux32';
 	if (navigator.userAgent.indexOf('x86_64') != -1) var os = 'linux64';
-	if (navigator.userAgent.indexOf('Ubuntu') != -1) var os = 'ubuntu';
+	if (navigator.userAgent.indexOf('Ubuntu') != -1) var os = 'snap';
 }
 else if (navigator.userAgent.indexOf('WOW64') != -1 || navigator.userAgent.indexOf('Win64') != -1) var os='windows64';
 var but = document.getElementById('downloadbutton');
@@ -148,8 +147,8 @@ case 'linux32':
 	but.href = hreflin32;
 	linklin.href = hreflin32;
 break;
-case 'ubuntu':
-	but.href = 'https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin';
+case 'snap':
+	but.href = 'https://snapcraft.io/bitcoin-core';
 break;
 case 'mac':
 	but.href = hrefmacdmg;

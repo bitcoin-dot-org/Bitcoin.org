@@ -2753,7 +2753,7 @@ br.big {
 .mac-card,
 .linux-card,
 .arm-card,
-.ubuntu-card {
+.snap-card {
     min-height: 60px;
 }
 .windows-card::before {
@@ -2793,14 +2793,14 @@ br.big {
     background: url(../img/os/arm.png?1528322191) 50% 50% no-repeat;
     background-size: contain;
 }
-.ubuntu-card::before {
+.snap-card::before {
     content: '';
     position: absolute;
     top: 15px;
     left: 20px;
     width: 30px;
     height: 30px;
-    background: url(../img/os/med_ubuntu.svg?1528322191) 50% 50% no-repeat;
+    background: url(../img/os/med_snap.svg?1528322191) 50% 50% no-repeat;
     background-size: contain;
 }
 .downloadkeys-title {
