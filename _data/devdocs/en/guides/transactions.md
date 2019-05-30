@@ -62,7 +62,7 @@ The figures below help illustrate how these features are used by
 showing the workflow Alice uses to send Bob a transaction and which Bob
 later uses to spend that transaction. Both Alice and Bob will use the
 most common form of the standard Pay-To-Public-Key-Hash (P2PKH) transaction
-type. [P2PKH][/en/glossary/p2pkh-address]{:#term-p2pkh}{:.term} lets Alice spend satoshis to a typical Bitcoin address,
+type. [P2PKH][/en/glossary/p2pkh-address]{:#term-p2pkh}{:.term} lets Alice send satoshis to a typical Bitcoin address,
 and then lets Bob further spend those satoshis using a simple
 cryptographic key pair.
 
