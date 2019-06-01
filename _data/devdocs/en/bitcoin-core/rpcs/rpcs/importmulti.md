@@ -7,161 +7,99 @@ http://opensource.org/licenses/MIT.
 ##### ImportMulti
 {% include helpers/subhead-links.md %}
 
-{% assign summary_importMulti="imports addresses or scripts (with private keys, public keys, or P2SH redeem scripts) and optionally performs the minimum necessary rescan for all imports." %}
+{% assign summary_importMulti="import addresses/scripts (with private or public keys, redeem script (P2SH)), optionally rescanning the blockchain from the earliest creation time of the imported scripts." %}
 
 {% autocrossref %}
 
 *Added in Bitcoin Core 0.14.0*
 
-*Requires wallet support.  Wallet must be unlocked.*
-
 The `importmulti` RPC {{summary_importMulti}}
 
-*Parameter #1---the addresses/scripts to import*
+Requires a new wallet backup.
+
+If an address/script is imported without all of the private keys required to spend from that address, it will be watchonly. The 'watchonly' option must be set to true in this case or a warning will be returned.
+
+Conversely, if all the private keys are provided and the address/script is spendable, the watchonly option must be set to false, or a warning will be returned.
+
+Note: This call can take over an hour to complete if rescan is true, during that time, other rpc calls
+may report that the imported keys, addresses or scripts exists but related transactions are still missing.
+
+*Parameter #1---requests*
 
 {% itemplate ntpd1 %}
-- n: "Imports"
-  t: "array"
+- n: "requests"
+  t: "json array"
   p: "Required<br>(exactly 1)"
-  d: "An array of JSON objects, each one being an address or script to be imported"
-
-- n: "→ Import"
-  t: "object"
-  p: "Required<br>(1 or more)"
-  d: "A JSON object describing a particular import"
-
-- n: "→ →<br>`scriptPubKey`"
-  t: "string (hex)"
-  p: "Optional<br>(0 or 1)"
-  d: "The script (string) to be imported.  Must have either this field or `address` below"
-
-- n: "→ →<br>`address`"
-  t: "string (base58)"
-  p: "Optional<br>(0 or 1)"
-  d: "The P2PKH or P2SH address to be imported.  Must have either this field or `scriptPubKey` above"
-
-- n: "→ →<br>`timestamp`"
-  t: "number (int) / string"
-  p: "Required<br>(exactly 1)"
-  d: "The creation time of the key in Unix epoch time or the string “now” to substitute the current synced block chain time. The timestamp of the oldest key will determine how far back block chain rescans need to begin. Specify `now` to bypass scanning for keys which are known to never have been used.  Specify `0` to scan the entire block chain. Blocks up to 2 hours before the earliest key creation time will be scanned"
-
-- n: "→ →<br>`redeemscript`"
-  t: "string"
-  p: "Optional<br>(0 or 1)"
-  d: "A redeem script. Only allowed if either the `address` field is a P2SH address or the `scriptPubKey` field is a P2SH scriptPubKey"
-  
-- n: "→ →<br>`pubkeys`"
-  t: "array"
-  p: "Optional<br>(0 or 1)"
-  d: "Array of strings giving pubkeys that must occur in the scriptPubKey or redeemscript"
-
-- n: "→ →<br>`keys`"
-  t: "array"
-  p: "Optional<br>(0 or 1)"
-  d: "Array of strings giving private keys whose corresponding public keys must occur in the scriptPubKey or redeemscript"
-  
-- n: "→ →<br>`internal`"
-  t: "bool"
-  p: "Optional<br>(0 or 1)"
-  d: "Stating whether matching outputs should be treated as change rather than incoming payments. The default is `false`"
-
-- n: "→ →<br>`watchonly`"
-  t: "bool"
-  p: "Optional<br>(0 or 1)"
-  d: "Stating whether matching outputs should be considered watched even when they're not spendable. This is only allowed if keys are empty. The default is `false`"
-
-- n: "→ →<br>`label`"
-  t: "string"
-  p: "Optional<br>(0 or 1)"
-  d: "Label to assign to the address, only allowed with `internal` set to `false`. The default is an empty string (“”)"  
+  d: "Data to be imported
+       \"range\": n or [n,n],                                       (numeric or array) If a ranged descriptor is used, this specifies the end or the range (in the form [begin,end]) to import
+       \"internal\": bool,                                          (boolean, optional, default=false) Stating whether matching outputs should be treated as not incoming payments (also known as change)
+       \"watchonly\": bool,                                         (boolean, optional, default=false) Stating whether matching outputs should be considered watchonly.
+       \"label\": \"str\",                                            (string, optional, default='') Label to assign to the address, only allowed with internal=false
+       \"keypool\": bool,                                           (boolean, optional, default=false) Stating whether imported public keys should be added to the keypool for when users request new addresses. Only allowed when wallet private keys are disabled
+       },
+       ...
+       ]"
 
 {% enditemplate %}
 
-*Parameter #2---options regarding the import*
+{% endautocrossref %}
+
+    [
+      {                                                            (json object)
+        "desc": "str",                                             (string) Descriptor to import. If using descriptor, do not also provide address/scriptPubKey, scripts, or pubkeys
+        "scriptPubKey": "<script>" | { "address":"<address>" },    (string / json, required) Type of scriptPubKey (string for script, json for address). Should not be provided if using a descriptor
+        "timestamp": timestamp | "now",                            (integer / string, required) Creation time of the key in seconds since epoch (Jan 1 1970 GMT),
+                                                                   or the string "now" to substitute the current synced blockchain time. The timestamp of the oldest
+                                                                   key will determine how far back blockchain rescans need to begin for missing wallet transactions.
+                                                                   "now" can be specified to bypass scanning, for keys which are known to never have been used, and
+                                                                   0 can be specified to scan the entire blockchain. Blocks up to 2 hours before the earliest key
+                                                                   creation time of all keys being imported by the importmulti call will be scanned.
+        "redeemscript": "str",                                     (string) Allowed only if the scriptPubKey is a P2SH or P2SH-P2WSH address/scriptPubKey
+        "witnessscript": "str",                                    (string) Allowed only if the scriptPubKey is a P2SH-P2WSH or P2WSH address/scriptPubKey
+        "pubkeys": [                                               (json array, optional, default=empty array) Array of strings giving pubkeys to import. They must occur in P2PKH or P2WPKH scripts. They are not required when the private key is also provided (see the "keys" argument).
+          "pubKey",                                                (string)
+          ...
+        ],
+        "keys": [                                                  (json array, optional, default=empty array) Array of strings giving private keys to import. The corresponding public keys must occur in the output or redeemscript.
+          "key",                                                   (string)
+          ...
+        ],
+
+{% autocrossref %}
+
+*Parameter #2---options*
 
 {% itemplate ntpd1 %}
-- n: "Option"
-  t: "object"
-  p: "Optional<br>(0 or 1)"
-  d: "JSON object with options regarding the import"
-
-- n: "→ <br>`rescan`"
-  t: "bool"
-  p: "Optional<br>(0 or 1)"
-  d: "Set to `true` (the default) to rescan the entire local block chain for transactions affecting any imported address or script. Set to `false` to not rescan after the import. Rescanning may take a considerable amount of time and may require re-downloading blocks if using block chain pruning"
+- n: "options"
+  t: "json object"
+  p: "Optional"
+  d: ""
 
 {% enditemplate %}
 
-*Result---execution result*
+{% endautocrossref %}
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "array"
-  p: "Required<br>(exactly 1)"
-  d: "An array of JSON objects, with each object describing the execution result of each import"
-  
-- n: "→ Result"
-  t: "object"
-  p: "Required<br>(1 or more)"
-  d: "A JSON object describing the execution result of an imported address or script" 
+    {
+      "rescan": bool,                                              (boolean, optional, default=true) Stating if should rescan the blockchain after all imports
+    }
 
-- n: "→ → <br>`success`"
-  t: "string"
-  p: "Required<br>(exactly 1)"
-  d: "Displays `true` if the import has been successful or `false` if it failed" 
+{% autocrossref %}
 
-- n: "→ → <br>`error`"
-  t: "string : object"
-  p: "Optional<br>(0 or 1)"
-  d: "A JSON object containing details about the error. Only displayed if the import fails"
-  
-- n: "→ → → <br>`code`"
-  t: "number (int)"
-  p: "Optional<br>(0 or 1)"
-  d: "The error code"  
-  
-- n: "→ → → <br>`message`"
-  t: "string"
-  p: "Optional<br>(0 or 1)"
-  d: "The error message"    
+*Result*
 
-{% enditemplate %}
+{% endautocrossref %}
 
-*Example from Bitcoin Core 0.14.1*
+    Response is an array with the same size as the input that has the execution result :
 
-Import the address 1NL9w5fP9kX2D9ToNZPxaiwFJCngNYEYJo (giving it a label and scanning the entire block chain) and the scriptPubKey 76a9149e857da0a5b397559c78c98c9d3f7f655d19c68688ac (giving a specific timestamp and label):
+{% autocrossref %}
+
+*Example*
 
 {% highlight bash %}
-bitcoin-cli importmulti '
-  [
-    {
-      "scriptPubKey" : { "address": "1NL9w5fP9kX2D9ToNZPxaiwFJCngNYEYJo" },
-      "timestamp" : 0,
-      "label" : "Personal"
-    },
-    {
-      "scriptPubKey" : "76a9149e857da0a5b397559c78c98c9d3f7f655d19c68688ac",
-      "timestamp" : 1493912405,
-      "label" : "TestFailure"
-    }
-  ]' '{ "rescan": true }'
+bitcoin-cli importmulti '[{ "scriptPubKey": { "address": "<my address>" }, "timestamp":1455191478 }, { "scriptPubKey": { "address": "<my 2nd address>" }, "label": "example 2", "timestamp": 1455191480 }]'
 {% endhighlight %}
-
-Result (scriptPubKey import failed because `internal` was not set to `true`):
-
-{% highlight json %}
-  [
-    {
-      "success": true
-    }, 
-    {
-      "success": false,
-      "error": {
-      "code": -8,
-      "message": "Internal must be set for hex scriptPubKey"
-      }
-    }
-  ]
+{% highlight bash %}
+bitcoin-cli importmulti '[{ "scriptPubKey": { "address": "<my address>" }, "timestamp":1455191478 }]' '{ "rescan": false}'
 {% endhighlight %}
 
 *See also*

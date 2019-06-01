@@ -7,55 +7,46 @@ http://opensource.org/licenses/MIT.
 ##### VerifyChain
 {% include helpers/subhead-links.md %}
 
-{% assign summary_verifyChain="verifies each entry in the local block chain database." %}
+{% assign summary_verifyChain="verifies blockchain database." %}
 
 {% autocrossref %}
 
 The `verifychain` RPC {{summary_verifyChain}}
 
-*Parameter #1---how thoroughly to check each block*
+*Parameter #1---checklevel*
 
 {% itemplate ntpd1 %}
-- n: "Check Level"
+- n: "checklevel"
   t: "number (int)"
-  p: "Optional<br>(0 or 1)"
-  d: "How thoroughly to check each block, from 0 to 4.  Default is the level set with the `-checklevel` command line argument; if that isn't set, the default is `3`.  Each higher level includes the tests from the lower levels<br><br>Levels are:<br>**0.** Read from disk to ensure the files are accessible<br>**1.**  Ensure each block is valid<br>**2.** Make sure undo files can be read from disk and are in a valid format<br>**3.** Test each block undo to ensure it results in correct state<br>**4.** After undoing blocks, reconnect them to ensure they reconnect correctly"
+  p: "Optional"
+  d: "How thorough the block verification is."
 
 {% enditemplate %}
 
-*Parameter #2---the number of blocks to check*
+*Parameter #2---nblocks*
 
 {% itemplate ntpd1 %}
-- n: "Number Of Blocks"
+- n: "nblocks"
   t: "number (int)"
-  p: "Optional<br>(0 or 1)"
-  d: "The number of blocks to verify.  Set to `0` to check all blocks.  Defaults to the value of the `-checkblocks` command-line argument; if that isn't set, the default is `288`"
+  p: "Optional"
+  d: "The number of blocks to check."
 
 {% enditemplate %}
 
-*Result---verification results*
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
-  t: "bool"
+  t: "boolean"
   p: "Required<br>(exactly 1)"
-  d: "Set to `true` if verified; set to `false` if verification failed for any reason"
+  d: "Verified or not"
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
-
-Verify the most recent 10,000 blocks in the most thorough way:
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet verifychain 4 10000
-{% endhighlight %}
-
-Result (took 4 minutes and 25 seconds on a generic PC laptop; it
-would've taken much longer on mainnet):
-
-{% highlight json %}
-true
+bitcoin-cli verifychain
 {% endhighlight %}
 
 *See also*

@@ -7,127 +7,109 @@ http://opensource.org/licenses/MIT.
 ##### ListSinceBlock
 {% include helpers/subhead-links.md %}
 
-{% assign summary_listSinceBlock="gets all transactions affecting the wallet which have occurred since a particular block, plus the header hash of a block at a particular depth." %}
+{% assign summary_listSinceBlock="get all transactions in blocks since block [blockhash], or all transactions if omitted." %}
 
 {% autocrossref %}
 
-*Requires wallet support.*
-
 The `listsinceblock` RPC {{summary_listSinceBlock}}
 
-*Parameter #1---a block header hash*
+If "blockhash" is no longer a part of the main chain, transactions from the fork point onward are included.
+
+Additionally, if include_removed is set, transactions affecting the wallet which were removed are returned in the "removed" array.
+
+*Parameter #1---blockhash*
 
 {% itemplate ntpd1 %}
-- n: "Header Hash"
-  t: "string (hex)"
-  p: "Optional<br>(0 or 1)"
-  d: "The hash of a block header encoded as hex in RPC byte order.  All transactions affecting the wallet which are not in that block or any earlier block will be returned, including unconfirmed transactions.  Default is the hash of the genesis block, so all transactions affecting the wallet are returned by default"
+- n: "blockhash"
+  t: "string"
+  p: "Optional"
+  d: "If set, the block hash to list transactions since, otherwise list all transactions."
 
 {% enditemplate %}
 
-*Parameter #2---the target confirmations for the lastblock field*
+*Parameter #2---target_confirmations*
 
 {% itemplate ntpd1 %}
-- n: "Target Confirmations"
+- n: "target_confirmations"
   t: "number (int)"
-  p: "Optional<br>(0 or 1)"
-  d: "Sets the lastblock field of the results to the header hash of a block with this many confirmations.  This does not affect which transactions are returned.  Default is `1`, so the hash of the most recent block on the local best block chain is returned"
+  p: "Optional<br>Default=1"
+  d: "Return the nth block hash from the main chain. e.g. 1 would mean the best block hash. Note: this is not used as a filter, but only affects [lastblock] in the return value"
 
 {% enditemplate %}
 
-*Parameter #3---whether to include watch-only addresses in details and calculations*
-
-{{INCLUDE_INCLUDE_WATCH_ONLY_PARAMETER}}
-
-**Result**
-
-{% assign DEPTH="→ → → " %}
-{% include helpers/vars.md %}
+*Parameter #3---include_watchonly*
 
 {% itemplate ntpd1 %}
-- n: "`result`"
-  t: "object"
-  p: "Required<br>(exactly 1)"
-  d: "An object containing an array of transactions and the lastblock field"
-
-- n: "→<br>`transactions`"
-  t: "array"
-  p: "Required<br>(exactly 1)"
-  d: "An array of objects each describing a particular **payment** to or from this wallet.  The objects in this array do not describe an actual transactions, so more than one object in this array may come from the same transaction.  This array may be empty"
-
-- n: "→ →<br>Payment"
-  t: "object"
-  p: "Optional<br>(0 or more)"
-  d: "An payment which did not appear in the specified block or an earlier block"
-
-{{INCLUDE_F_LIST_TRANSACTIONS}}
-{{INCLUDE_F_LIST_TRANSACTIONS_F_FULL}}
-- n: "→<br>`lastblock`"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The header hash of the block with the number of confirmations specified in the *target confirmations* parameter, encoded as hex in RPC byte order"
+- n: "include_watchonly"
+  t: "boolean"
+  p: "Optional<br>Default=false"
+  d: "Include transactions to watch-only addresses (see 'importaddress')"
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.13.1*
+*Parameter #4---include_removed*
 
-Get all transactions since a particular block (including watch-only
-transactions) and the header hash of the sixth most recent block.
+{% itemplate ntpd1 %}
+- n: "include_removed"
+  t: "boolean"
+  p: "Optional<br>Default=true"
+  d: "Show transactions that were removed due to a reorg in the \"removed\" array
+       (not guaranteed to work on pruned nodes)"
+
+{% enditemplate %}
+
+*Result*
+
+{% endautocrossref %}
+
+    {
+      "transactions": [
+        "address":"address",    (string) The bitcoin address of the transaction.
+        "category":               (string) The transaction category.
+                    "send"                  Transactions sent.
+                    "receive"               Non-coinbase transactions received.
+                    "generate"              Coinbase transactions received with more than 100 confirmations.
+                    "immature"              Coinbase transactions received with 100 or fewer confirmations.
+                    "orphan"                Orphaned coinbase transactions received.
+        "amount": x.xxx,          (numeric) The amount in BTC. This is negative for the 'send' category, and is positive
+                                             for all other categories
+        "vout" : n,               (numeric) the vout value
+        "fee": x.xxx,             (numeric) The amount of the fee in BTC. This is negative and only available for the 'send' category of transactions.
+        "confirmations": n,       (numeric) The number of confirmations for the transaction.
+                                              When it's < 0, it means the transaction conflicted that many blocks ago.
+        "blockhash": "hashvalue",     (string) The block hash containing the transaction.
+        "blockindex": n,          (numeric) The index of the transaction in the block that includes it.
+        "blocktime": xxx,         (numeric) The block time in seconds since epoch (1 Jan 1970 GMT).
+        "txid": "transactionid",  (string) The transaction id.
+        "time": xxx,              (numeric) The transaction time in seconds since epoch (Jan 1 1970 GMT).
+        "timereceived": xxx,      (numeric) The time received in seconds since epoch (Jan 1 1970 GMT).
+        "bip125-replaceable": "yes|no|unknown",  (string) Whether this transaction could be replaced due to BIP125 (replace-by-fee);
+                                                       may be unknown for unconfirmed transactions not in the mempool
+        "abandoned": xxx,         (bool) 'true' if the transaction has been abandoned (inputs are respendable). Only available for the 'send' category of transactions.
+        "comment": "...",       (string) If a comment is associated with the transaction.
+        "label" : "label"       (string) A comment for the address/transaction, if any
+        "to": "...",            (string) If a comment to is associated with the transaction.
+      ],
+      "removed": [
+        <structure is the same as "transactions" above, only present if include_removed=true>
+        Note: transactions that were re-added in the active chain will appear as-is in this array, and may thus have a positive confirmation count.
+      ],
+      "lastblock": "lastblockhash"     (string) The hash of the block (target_confirmations-1) from the best block on the main chain. This is typically used to feed back into listsinceblock the next time you call it. So you would generally use a target_confirmations of say 6, so you will be continually re-notified of transactions until they've reached 6 confirmations plus any new ones
+    }
+
+{% autocrossref %}
+
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet listsinceblock \
-              00000000688633a503f69818a70eac281302e9189b1bb57a76a05c329fcda718 \
-              6 true
+bitcoin-cli listsinceblock
 {% endhighlight %}
-
-Result (edited to show only two payments):
-
-{% highlight json %}
-{
-    "transactions" : [
-        {
-            "account" : "doc test",
-            "address" : "mmXgiR6KAhZCyQ8ndr2BCfEq1wNG2UnyG6",
-            "category" : "receive",
-            "amount" : 0.10000000,
-            "vout" : 0,
-            "confirmations" : 76478,
-            "blockhash" : "000000000017c84015f254498c62a7c884a51ccd75d4dd6dbdcb6434aa3bd44d",
-            "blockindex" : 1,
-            "blocktime" : 1399294967,
-            "txid" : "85a98fdf1529f7d5156483ad020a51b7f3340e47448cf932f470b72ff01a6821",
-            "walletconflicts" : [
-            ],
-            "time" : 1399294967,
-            "timereceived" : 1418924714,
-            "bip125-replaceable": "no"		
-        },
-        {
-            "involvesWatchonly" : true,
-            "account" : "someone else's address2",
-            "address" : "n3GNqMveyvaPvUbH469vDRadqpJMPc84JA",
-            "category" : "receive",
-            "amount" : 0.00050000,
-            "vout" : 0,
-            "confirmations" : 34714,
-            "blockhash" : "00000000bd0ed80435fc9fe3269da69bb0730ebb454d0a29128a870ea1a37929",
-            "blockindex" : 11,
-            "blocktime" : 1411051649,
-            "txid" : "99845fd840ad2cc4d6f93fafb8b072d188821f55d9298772415175c456f3077d",
-            "walletconflicts" : [
-            ],
-            "time" : 1418695703,
-            "timereceived" : 1418925580,
-            "bip125-replaceable": "no"
-        }
-    ],
-    "lastblock" : "0000000000984add1a686d513e66d25686572c7276ec3e358a7e3e9f7eb88619"
-}
+{% highlight bash %}
+bitcoin-cli listsinceblock "000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad" 6
 {% endhighlight %}
 
 *See also*
 
-* [ListReceivedByAccount][rpc listreceivedbyaccount]: {{summary_listReceivedByAccount}}
 * [ListReceivedByAddress][rpc listreceivedbyaddress]: {{summary_listReceivedByAddress}}
 
 {% endautocrossref %}

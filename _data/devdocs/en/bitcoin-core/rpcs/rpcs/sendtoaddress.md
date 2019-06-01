@@ -7,96 +7,123 @@ http://opensource.org/licenses/MIT.
 ##### SendToAddress
 {% include helpers/subhead-links.md %}
 
-{% assign summary_sendToAddress="spends an amount to a given address." %}
+{% assign summary_sendToAddress="send an amount to a given address." %}
 
 {% autocrossref %}
 
-*Requires wallet support. Requires an unlocked wallet or an
-unencrypted wallet.*
-
 The `sendtoaddress` RPC {{summary_sendToAddress}}
 
-*Parameter #1---to address*
+*Parameter #1---address*
 
 {% itemplate ntpd1 %}
-- n: "To Address"
+- n: "address"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "A P2PKH or P2SH address to which the bitcoins should be sent"
+  d: "The bitcoin address to send to."
 
 {% enditemplate %}
 
-*Parameter #2---amount to spend*
+*Parameter #2---amount*
 
 {% itemplate ntpd1 %}
-- n: "Amount"
-  t: "number (bitcoins)"
+- n: "amount"
+  t: "numeric or string"
   p: "Required<br>(exactly 1)"
-  d: "The amount to spent in bitcoins"
+  d: "The amount in BTC to send. eg 0.1"
 
 {% enditemplate %}
 
-*Parameter #3---a comment*
+*Parameter #3---comment*
 
 {% itemplate ntpd1 %}
-- n: "Comment"
+- n: "comment"
   t: "string"
-  p: "Optional<br>(0 or 1)"
-  d: "A locally-stored (not broadcast) comment assigned to this transaction.  Default is no comment"
+  p: "Optional"
+  d: "A comment used to store what the transaction is for.
+       This is not part of the transaction, just kept in your wallet."
 
 {% enditemplate %}
 
-*Parameter #4---a comment about who the payment was sent to*
+*Parameter #4---comment_to*
 
 {% itemplate ntpd1 %}
-- n: "Comment To"
+- n: "comment_to"
   t: "string"
-  p: "Optional<br>(0 or 1)"
-  d: "A locally-stored (not broadcast) comment assigned to this transaction.  Meant to be used for describing who the payment was sent to. Default is no comment"
+  p: "Optional"
+  d: "A comment to store the name of the person or organization
+       to which you're sending the transaction. This is not part of the 
+       transaction, just kept in your wallet."
 
 {% enditemplate %}
 
-*Parameter #5---automatic fee subtraction*
+*Parameter #5---subtractfeefromamount*
 
 {% itemplate ntpd1 %}
-- n: "Subtract Fee From Amount"
+- n: "subtractfeefromamount"
   t: "boolean"
-  p: "Optional<br>(0 or 1)"
-  d: "The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. Default is `false`"
-  
+  p: "Optional<br>Default=false"
+  d: "The fee will be deducted from the amount being sent.
+       The recipient will receive less bitcoins than you enter in the amount field."
+
 {% enditemplate %}
 
-*Result---a TXID of the sent transaction*
+*Parameter #6---replaceable*
+
+{% itemplate ntpd1 %}
+- n: "replaceable"
+  t: "boolean"
+  p: "Optional<br>Default=fallback to wallet's default"
+  d: "Allow this transaction to be replaced by a transaction with higher fees via BIP 125"
+
+{% enditemplate %}
+
+*Parameter #7---conf_target*
+
+{% itemplate ntpd1 %}
+- n: "conf_target"
+  t: "number (int)"
+  p: "Optional<br>Default=fallback to wallet's default"
+  d: "Confirmation target (in blocks)"
+
+{% enditemplate %}
+
+*Parameter #8---estimate_mode*
+
+{% itemplate ntpd1 %}
+- n: "estimate_mode"
+  t: "string"
+  p: "Optional<br>Default=UNSET"
+  d: "The fee estimate mode, must be one of:
+       \"UNSET\"
+       \"ECONOMICAL\"
+       \"CONSERVATIVE\""
+
+{% enditemplate %}
+
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
-  t: "string"
+  t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The TXID of the sent transaction, encoded as hex in RPC byte order"
-  
+  d: "The transaction id."
+
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
-
-Spend 0.1 bitcoins to the address below with the comment "sendtoaddress
-example" and the comment-to "Nemo From Example.com":
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet sendtoaddress mmXgiR6KAhZCyQ8ndr2BCfEq1wNG2UnyG6 \
-  0.1 "sendtoaddress example" "Nemo From Example.com"
+bitcoin-cli sendtoaddress "1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd" 0.1
 {% endhighlight %}
-
-Result:
-
-{% highlight text %}
-a2a2eb18cb051b5fe896a32b1cb20b179d981554b6bd7c5a956e56a0eecb04f0
+{% highlight bash %}
+bitcoin-cli sendtoaddress "1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd" 0.1 "donation" "seans outpost"
+{% endhighlight %}
+{% highlight bash %}
+bitcoin-cli sendtoaddress "1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd" 0.1 "" "" true
 {% endhighlight %}
 
 *See also*
 
-* [SendFrom][rpc sendfrom]: {{summary_sendFrom}}
 * [SendMany][rpc sendmany]: {{summary_sendMany}}
-* [Move][rpc move]: {{summary_move}}
-
 
 {% endautocrossref %}

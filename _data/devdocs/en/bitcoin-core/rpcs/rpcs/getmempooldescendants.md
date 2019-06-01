@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### GetMemPoolDescendants
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getMemPoolDescendants="returns all in-mempool descendants for a transaction in the mempool." %}
+{% assign summary_getMemPoolDescendants="if txid is in the mempool, returns all in-mempool descendants." %}
 
 {% autocrossref %}
 
@@ -15,195 +15,77 @@ http://opensource.org/licenses/MIT.
 
 The `getmempooldescendants` RPC {{summary_getMemPoolDescendants}}
 
-*Parameter #1---a transaction identifier (TXID)*
+*Parameter #1---txid*
 
 {% itemplate ntpd1 %}
-- n: "TXID"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The TXID of the transaction. The TXID must be encoded as hex in RPC byte order"
-
-{% enditemplate %}
-
-*Parameter #2---desired output format*
-
-{% itemplate ntpd1 %}
-- n: "Format"
-  t: "bool"
-  p: "Optional<br>(0 or 1)"
-  d: "Set to `true` to get json objects describing each transaction in the memory pool; set to `false` (the default) to only get an array of TXIDs"
-
-{% enditemplate %}
-
-*Result---list of descendant transactions*
-
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "array"
-  p: "Required<br>(exactly 1)"
-  d: "An array of TXIDs belonging to transactions in the memory pool.  The array may be empty if there are no transactions in the memory pool"
-
-- n: "→<br>TXID"
+- n: "txid"
   t: "string"
-  p: "Optional<br>(0 or more)"
-  d: "The TXID of a transaction in the memory pool, encoded as hex in RPC byte order"
+  p: "Required<br>(exactly 1)"
+  d: "The transaction id (must be in mempool)"
 
 {% enditemplate %}
 
-*Result (format: `true`)---a JSON object describing each transaction*
+*Parameter #2---verbose*
 
 {% itemplate ntpd1 %}
-- n: "`result`"
-  t: "object"
-  p: "Required<br>(exactly 1)"
-  d: "A object containing transactions currently in the memory pool.  May be empty"
-
-- n: "→<br>TXID"
-  t: "string : object"
-  p: "Optional<br>(0 or more)"
-  d: "The TXID of a transaction in the memory pool, encoded as hex in RPC byte order"
-
-- n: "→ →<br>`size`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The size of the serialized transaction in bytes"
-
-- n: "→ →<br>`fee`"
-  t: "number (bitcoins)"
-  p: "Required<br>(exactly 1)"
-  d: "The transaction fee paid by the transaction in decimal bitcoins"
-  
-- n: "→ →<br>`modifiedfee`"
-  t: "number (bitcoins)"
-  p: "Required<br>(exactly 1)"
-  d: "The transaction fee with fee deltas used for mining priority in decimal bitcoins"
-
-- n: "→ →<br>`time`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The time the transaction entered the memory pool, Unix epoch time format"
-
-- n: "→ →<br>`height`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The block height when the transaction entered the memory pool"
-
-- n: "→ →<br>`startingpriority`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The priority of the transaction when it first entered the memory pool"
-
-- n: "→ →<br>`currentpriority`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The current priority of the transaction"
-
-- n: "→ →<br>`descendantcount`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The number of in-mempool descendant transactions (including this one)"
-
-- n: "→ →<br>`descendantsize`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The size of in-mempool descendants (including this one)"
-
-- n: "→ →<br>`descendantfees`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The modified fees (see `modifiedfee` above) of in-mempool descendants (including this one)"
-
-- n: "→ →<br>`ancestorcount`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The number of in-mempool ancestor transactions (including this one)"
-
-- n: "→ →<br>`ancestorsize`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The size of in-mempool ancestors (including this one)"
-
-- n: "→ →<br>`ancestorfees`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The modified fees (see `modifiedfee` above) of in-mempool ancestors (including this one)"
-
-- n: "→ →<br>`depends`"
-  t: "array"
-  p: "Required<br>(exactly 1)"
-  d: "An array holding TXIDs of unconfirmed transactions this transaction depends upon (parent transactions).  Those transactions must be part of a block before this transaction can be added to a block, although all transactions may be included in the same block.  The array may be empty"
-
-- n: "→ → →<br>Depends TXID"
-  t: "string"
-  p: "Optional (0 or more)"
-  d: "The TXIDs of any unconfirmed transactions this transaction depends upon, encoded as hex in RPC byte order"
+- n: "verbose"
+  t: "boolean"
+  p: "Optional<br>Default=false"
+  d: "True for a json object, false for array of transaction ids"
 
 {% enditemplate %}
 
-*Examples from Bitcoin Core 0.13.1*
+*Result---(for verbose = false)*
 
-The default (`false`):
+{% endautocrossref %}
+
+    [                       (json array of strings)
+      "transactionid"           (string) The transaction id of an in-mempool descendant transaction
+      ,...
+    ]
+
+{% autocrossref %}
+
+*Result---(for verbose = true)*
+
+{% endautocrossref %}
+
+    {                           (json object)
+      "transactionid" : {       (json object)
+        "size" : n,             (numeric) virtual transaction size as defined in BIP 141. This is different from actual serialized size for witness transactions as witness data is discounted.
+        "fee" : n,              (numeric) transaction fee in BTC (DEPRECATED)
+        "modifiedfee" : n,      (numeric) transaction fee with fee deltas used for mining priority (DEPRECATED)
+        "time" : n,             (numeric) local time transaction entered pool in seconds since 1 Jan 1970 GMT
+        "height" : n,           (numeric) block height when transaction entered pool
+        "descendantcount" : n,  (numeric) number of in-mempool descendant transactions (including this one)
+        "descendantsize" : n,   (numeric) virtual transaction size of in-mempool descendants (including this one)
+        "descendantfees" : n,   (numeric) modified fees (see above) of in-mempool descendants (including this one) (DEPRECATED)
+        "ancestorcount" : n,    (numeric) number of in-mempool ancestor transactions (including this one)
+        "ancestorsize" : n,     (numeric) virtual transaction size of in-mempool ancestors (including this one)
+        "ancestorfees" : n,     (numeric) modified fees (see above) of in-mempool ancestors (including this one) (DEPRECATED)
+        "wtxid" : hash,         (string) hash of serialized transaction, including witness data
+        "fees" : {
+            "base" : n,         (numeric) transaction fee in BTC
+            "modified" : n,     (numeric) transaction fee with fee deltas used for mining priority in BTC
+            "ancestor" : n,     (numeric) modified fees (see above) of in-mempool ancestors (including this one) in BTC
+            "descendant" : n,   (numeric) modified fees (see above) of in-mempool descendants (including this one) in BTC
+        }
+        "depends" : [           (array) unconfirmed transactions used as inputs for this transaction
+            "transactionid",    (string) parent transaction id
+           ... ]
+        "spentby" : [           (array) unconfirmed transactions spending outputs from this transaction
+            "transactionid",    (string) child transaction id
+           ... ]
+        "bip125-replaceable" : true|false,  (boolean) Whether this transaction could be replaced due to BIP125 (replace-by-fee)
+      }, ...
+    }
+
+{% autocrossref %}
+
+*Example*
 
 {% highlight bash %}
-bitcoin-cli getmempooldescendants 52273e0ce6cf3452932cfbc1c517c0\
-ce1af1d255fda67a6e3bd63ba1d908c8c2
-{% endhighlight %}
-
-Result:
-
-{% highlight json %}
-[
-    "b104586f229e330caf42c475fd52684e9eb5e2d02f0fcd216d9554c5347b0873",
-    "094f7dcbc7494510d4daeceb2941ed73b1bd011bf527f6c3b7c897fee85c11d4"
-]
-{% endhighlight %}
-
-Verbose output (`true`):
-
-{% highlight bash %}
-bitcoin-cli getmempooldescendants 52273e0ce6cf3452932cfbc1c517c0\
-ce1af1d255fda67a6e3bd63ba1d908c8c2 true
-{% endhighlight %}
-
-Result:
-
-{% highlight json %}
-{
-  "b104586f229e330caf42c475fd52684e9eb5e2d02f0fcd216d9554c5347b0873": {
-    "size": 485,
-    "fee": 0.00009700,
-    "modifiedfee": 0.00009700,
-    "time": 1479423635,
-    "height": 439431,
-    "startingpriority": 15327081.81818182,
-    "currentpriority": 21536936.36363636,
-    "descendantcount": 1,
-    "descendantsize": 485,
-    "descendantfees": 9700,
-    "ancestorcount": 1,
-    "ancestorsize": 485,
-    "ancestorfees": 9700,
-    "depends": [
-    ]
-  },
-  "094f7dcbc7494510d4daeceb2941ed73b1bd011bf527f6c3b7c897fee85c11d4": {
-    "size": 554,
-    "fee": 0.00005540,
-    "modifiedfee": 0.00005540,
-    "time": 1479423327,
-    "height": 439430,
-    "startingpriority": 85074.91071428571,
-    "currentpriority": 3497174.4375,
-    "descendantcount": 1,
-    "descendantsize": 554,
-    "descendantfees": 5540,
-    "ancestorcount": 1,
-    "ancestorsize": 554,
-    "ancestorfees": 5540,
-    "depends": [
-    ]
-  }
-}
+bitcoin-cli getmempooldescendants "mytxid"
 {% endhighlight %}
 
 *See also*

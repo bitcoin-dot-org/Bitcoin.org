@@ -15,13 +15,21 @@ http://opensource.org/licenses/MIT.
 
 The `abandontransaction` RPC {{summary_abandonTransaction}}
 
-*Parameter #1---a transaction identifier (TXID)*
+Mark in-wallet transaction <txid> as abandoned
+This will mark this transaction and all its in-wallet descendants as abandoned which will allow
+for their inputs to be respent.  It can be used to replace "stuck" or evicted transactions.
+
+It only works on transactions which are not included in a block and are not currently in the mempool.
+
+It has no effect on transactions which are already abandoned.
+
+*Parameter #1---txid*
 
 {% itemplate ntpd1 %}
-- n: "TXID"
+- n: "txid"
   t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The TXID of the transaction that you want to abandon.  The TXID must be encoded as hex in RPC byte order"
+  d: "The transaction id"
 
 {% enditemplate %}
 
@@ -31,19 +39,15 @@ The `abandontransaction` RPC {{summary_abandonTransaction}}
 - n: "`result`"
   t: "null"
   p: "Required<br>(exactly 1)"
-  d: "JSON `null` when the transaction and all descendants were abandoned"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.13.1*
-
-Abandons the transaction on your node.
+*Example*
 
 {% highlight bash %}
-bitcoin-cli abandontransaction fa3970c341c9f5de6ab13f128cbfec58d732e736a505fe32137ad551c799ecc4
+bitcoin-cli abandontransaction "1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"
 {% endhighlight %}
-
-Result (no output from `bitcoin-cli` because result is set to `null`).
 
 *See also*
 

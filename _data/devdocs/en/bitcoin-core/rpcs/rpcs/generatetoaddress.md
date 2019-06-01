@@ -7,76 +7,63 @@ http://opensource.org/licenses/MIT.
 ##### GenerateToAddress
 {% include helpers/subhead-links.md %}
 
-{% assign summary_generateToAddress="mines blocks immediately to a specified address." %}
+{% assign summary_generateToAddress="mine blocks immediately to a specified address (before the RPC call returns)." %}
 
 {% autocrossref %}
 
 *Added in Bitcoin Core 0.13.0*
 
-*Requires wallet support.*
-
 The `generatetoaddress` RPC {{summary_generateToAddress}}
 
-*Parameter #1---the number of blocks to generate*
+*Parameter #1---nblocks*
 
 {% itemplate ntpd1 %}
-- n: "Blocks"
+- n: "nblocks"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The number of blocks to generate.  The RPC call will not return until all blocks have been generated or the maxium number of iterations has been reached"
-  
+  d: "How many blocks are generated immediately."
+
 {% enditemplate %}
 
-*Parameter #2---an address (P2PKH or P2SH)*
+*Parameter #2---address*
 
 {% itemplate ntpd1 %}
-- n: "Address"
-  t: "string (base58)"
+- n: "address"
+  t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The address to send the newly generated Bitcoin to"
-  
+  d: "The address to send the newly generated bitcoin to."
+
 {% enditemplate %}
 
-*Parameter #3---the maximum number of iterations to try*
+*Parameter #3---maxtries*
 
 {% itemplate ntpd1 %}
-- n: "Maxtries"
+- n: "maxtries"
   t: "number (int)"
-  p: "Optional<br>(0 or 1)"
-  d: "The maximum number of iterations that are tried to create the requested number of blocks.  Default is `1000000`"
+  p: "Optional<br>Default=1000000"
+  d: "How many iterations to try."
 
 {% enditemplate %}
 
-*Result---the generated block header hashes*
+*Result*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "array"
-  p: "Required<br>(exactly 1)"
-  d: "An array containing the block header hashes of the generated blocks (may be empty if used with `generate 0`)"
+{% endautocrossref %}
 
-- n: "→<br>Header Hashes"
-  t: "string (hex)"
-  p: "Required<br>(1 or more)"
-  d: "The hashes of the headers of the blocks generated, as hex in RPC byte order"
-{% enditemplate %}
+    [ blockhashes ]     (array) hashes of blocks generated
 
-*Example from Bitcoin Core 0.13.1*
+{% autocrossref %}
 
-Using regtest mode, generate 2 blocks with maximal 500000 iterations:
+*Example*
+
+Generate 11 blocks to myaddress
 
 {% highlight bash %}
-bitcoin-cli -regtest generatetoaddress 2 "1BRo7qrYHMPrzdBDzfjmzt\
-eBdYAyTMXW75" 500000
+bitcoin-cli generatetoaddress 11 "myaddress"
 {% endhighlight %}
+If you are running the bitcoin core wallet, you can get a new address to send the newly generated bitcoin to with:
 
-Result:
-
-{% highlight json %}
-[
-    "36252b5852a5921bdfca8701f936b39edeb1f8c39fffe73b0d8437921401f9af",
-    "5f2956817db1e386759aa5794285977c70596b39ea093b9eab0aa4ba8cd50c06"
-]
+{% highlight bash %}
+bitcoin-cli getnewaddress
 {% endhighlight %}
 
 *See also*

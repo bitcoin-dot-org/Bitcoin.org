@@ -7,41 +7,46 @@ http://opensource.org/licenses/MIT.
 ##### ImportPrivKey
 {% include helpers/subhead-links.md %}
 
-{% assign summary_importPrivKey="adds a private key to your wallet. The key should be formatted in the wallet import format created by the `dumpprivkey` RPC." %}
+{% assign summary_importPrivKey="adds a private key (as returned by dumpprivkey) to your wallet." %}
 
 {% autocrossref %}
 
-*Requires wallet support.  Wallet must be unlocked.*
-
 The `importprivkey` RPC {{summary_importPrivKey}}
 
-*Parameter #1---the private key to import*
+Requires a new wallet backup.
+
+Hint: use importmulti to import more than one private key.
+
+Note: This call can take over an hour to complete if rescan is true, during that time, other rpc calls
+may report that the imported key exists but related transactions are still missing, leading to temporarily incorrect/bogus balances and unspent outputs until rescan completes.
+
+*Parameter #1---privkey*
 
 {% itemplate ntpd1 %}
-- n: "Private Key"
-  t: "string (base58)"
-  p: "Required<br>(exactly 1)"
-  d: "The private key to import into the wallet encoded in base58check using wallet import format (WIF)"
-
-{% enditemplate %}
-
-*Parameter #2---the account into which the key should be placed*
-
-{% itemplate ntpd1 %}
-- n: "Account"
+- n: "privkey"
   t: "string"
-  p: "Optional<br>(0 or 1)"
-  d: "The name of an account to which transactions involving the key should be assigned.  The default is the default account, an empty string (\"\")"
+  p: "Required<br>(exactly 1)"
+  d: "The private key (see dumpprivkey)"
 
 {% enditemplate %}
 
-*Parameter #3---whether to rescan the block chain*
+*Parameter #2---label*
 
 {% itemplate ntpd1 %}
-- n: "Rescan"
-  t: "bool"
-  p: "Optional<br>(0 or 1)"
-  d: "Set to `true` (the default) to rescan the entire local block database for transactions affecting any address or pubkey script in the wallet (including transaction affecting the newly-added address for this private key).  Set to `false` to not rescan the block database (rescanning can be performed at any time by restarting Bitcoin Core with the `-rescan` command-line argument).  Rescanning may take several minutes.  Notes: if the address for this key is already in the wallet, the block database will not be rescanned even if this parameter is set"
+- n: "label"
+  t: "string"
+  p: "Optional"
+  d: "An optional label"
+
+{% enditemplate %}
+
+*Parameter #3---rescan*
+
+{% itemplate ntpd1 %}
+- n: "rescan"
+  t: "boolean"
+  p: "Optional<br>Default=true"
+  d: "Rescan the wallet for transactions"
 
 {% enditemplate %}
 
@@ -51,24 +56,32 @@ The `importprivkey` RPC {{summary_importPrivKey}}
 - n: "`result`"
   t: "null"
   p: "Required<br>(exactly 1)"
-  d: "If the private key is added to the wallet (or is already part of the wallet), JSON `null` will be returned"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
 
-Import the private key for the address
-mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe, giving it a label and scanning the
-entire block chain:
+Dump a private key
 
 {% highlight bash %}
-bitcoin-cli -testnet importprivkey \
-              cU8Q2jGeX3GNKNa5etiC8mgEgFSeVUTRQfWE2ZCzszyqYNK4Mepy \
-              "test label" \
-              true
+bitcoin-cli dumpprivkey "myaddress"
 {% endhighlight %}
+Import the private key with rescan
 
-(Success: no result displayed.)
+{% highlight bash %}
+bitcoin-cli importprivkey "mykey"
+{% endhighlight %}
+Import using a label and without rescan
+
+{% highlight bash %}
+bitcoin-cli importprivkey "mykey" "testing" false
+{% endhighlight %}
+Import using default blank label and without rescan
+
+{% highlight bash %}
+bitcoin-cli importprivkey "mykey" "" false
+{% endhighlight %}
 
 *See also*
 

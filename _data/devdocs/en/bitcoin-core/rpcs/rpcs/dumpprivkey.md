@@ -7,45 +7,41 @@ http://opensource.org/licenses/MIT.
 ##### DumpPrivKey
 {% include helpers/subhead-links.md %}
 
-{% assign summary_dumpPrivKey="returns the wallet-import-format (WIF) private key corresponding to an address. (But does not remove it from the wallet.)" %}
+{% assign summary_dumpPrivKey="reveals the private key corresponding to 'address'." %}
 
 {% autocrossref %}
 
-*Requires wallet support. Requires an unlocked wallet or an
-unencrypted wallet.*
-
 The `dumpprivkey` RPC {{summary_dumpPrivKey}}
 
-*Parameter #1---the address corresponding to the private key to get*
+Then the importprivkey can be used with this output
+
+*Parameter #1---address*
 
 {% itemplate ntpd1 %}
-- n: "P2PKH Address"
-  t: "string (base58)"
+- n: "address"
+  t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The P2PKH address corresponding to the private key you want returned.  Must be the address corresponding to a private key in this wallet"
+  d: "The bitcoin address for the private key"
 
 {% enditemplate %}
 
-*Result---the private key*
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
-  t: "string (base58)"
+  t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The private key encoded as base58check using wallet import format"
+  d: "The private key"
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet dumpprivkey moQR7i8XM4rSGoNwEsw3h4YEuduuP6mxw7
+bitcoin-cli dumpprivkey "myaddress"
 {% endhighlight %}
-
-Result:
-
-{% highlight text %}
-cTVNtBK7mBi2yc9syEnwbiUpnpGJKohDWzXMeF4tGKAQ7wvomr95
+{% highlight bash %}
+bitcoin-cli importprivkey "mykey"
 {% endhighlight %}
 
 *See also*

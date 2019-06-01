@@ -7,59 +7,53 @@ http://opensource.org/licenses/MIT.
 ##### GetNewAddress
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getNewAddress="returns a new Bitcoin address for receiving payments. If an account is specified, payments received with the address will be credited to that account." %}
+{% assign summary_getNewAddress="returns a new Bitcoin address for receiving payments." %}
 
 {% autocrossref %}
 
-*Requires wallet support.*
-
 The `getnewaddress` RPC {{summary_getNewAddress}}
 
-*Parameter #1---an account name*
+If 'label' is specified, it is added to the address book
+so payments received with the address will be associated with 'label'.
+
+*Parameter #1---label*
 
 {% itemplate ntpd1 %}
-- n: "Account"
+- n: "label"
   t: "string"
-  p: "Optional<br>(0 or 1)"
-  d: "The name of the account to put the address in.  The default is the default account, an empty string (\"\")"
+  p: "Optional<br>Default=\"\""
+  d: "The label name for the address to be linked to. It can also be set to the empty string \"\" to represent the default label. The label does not need to exist, it will be created if there is no label by the given name."
+
 {% enditemplate %}
 
-*Parameter #2---address type*
+*Parameter #2---address_type*
 
 {% itemplate ntpd1 %}
-- n: "Address Type"
+- n: "address_type"
   t: "string"
-  p: "Optional<br>(0 or 1)"
-  d: "The address type to use. Options are 'legacy', 'p2sh-segwit', and 'bech32'. Default is set by -addresstype"
+  p: "Optional<br>Default=set by -addresstype"
+  d: "The address type to use. Options are \"legacy\", \"p2sh-segwit\", and \"bech32\"."
+
 {% enditemplate %}
 
-*Result---a bitcoin address never previously returned*
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
-  t: "string (base58)"
+  t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "A P2PKH address which has not previously been returned by this RPC.  The address will be marked as a receiving address in the wallet.  The address may already have been part of the keypool, so other RPCs such as the `dumpwallet` RPC may have disclosed it previously.  If the wallet is unlocked, its keypool will also be filled to its max (by default, 100 unused keys).  If the wallet is locked and its keypool is empty, this RPC will fail"
+  d: "The new bitcoin address"
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
-
-Create a new address in the "doc test" account:
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet getnewaddress "doc test"
-{% endhighlight %}
-
-Result:
-
-{% highlight text %}
-mft61jjkmiEJwJ7Zw3r1h344D6aL1xwhma
+bitcoin-cli getnewaddress
 {% endhighlight %}
 
 *See also*
 
-* [GetAccountAddress][rpc getaccountaddress]: {{summary_getAccountAddress}}
 * [GetRawChangeAddress][rpc getrawchangeaddress]: {{summary_getRawChangeAddress}}
 * [GetBalance][rpc getbalance]: {{summary_getBalance}}
 

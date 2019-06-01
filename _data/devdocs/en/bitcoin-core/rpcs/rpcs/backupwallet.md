@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### BackupWallet
 {% include helpers/subhead-links.md %}
 
-{% assign summary_backupWallet="safely copies `wallet.dat`<!--noref--> to the specified file, which can be a directory or a path with filename." %}
+{% assign summary_backupWallet="safely copies current wallet file to destination, which can be a directory or a path with filename." %}
 
 {% autocrossref %}
 
@@ -15,30 +15,30 @@ http://opensource.org/licenses/MIT.
 
 The `backupwallet` RPC {{summary_backupWallet}}
 
-*Parameter #1---destination directory or filename*
+*Parameter #1---destination*
 
 {% itemplate ntpd1 %}
-- n: "Destination"
+- n: "destination"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "A filename or directory name.  If a filename, it will be created or overwritten.  If a directory name, the file `wallet.dat`<!--noref--> will be created or overwritten within that directory"
+  d: "The destination directory or file"
 
 {% enditemplate %}
 
-*Result---`null` or error*
+*Result---`null` on success*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
   t: "null"
   p: "Required<br>(exactly 1)"
-  d: "Always `null` whether success or failure.  The JSON-RPC error and message fields will be set if a failure occurred"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet backupwallet /tmp/backup.dat
+bitcoin-cli backupwallet "backup.dat"
 {% endhighlight %}
 
 *See also*

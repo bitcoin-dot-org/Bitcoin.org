@@ -104,11 +104,13 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/abandontransaction.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/abandontransaction.md %}
 
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/abortrescan.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/abortrescan.md %}
+
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/addmultisigaddress.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/addmultisigaddress.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/addnode.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/addnode.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/addwitnessaddress.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/addwitnessaddress.md %}
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/analyzepsbt.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/analyzepsbt.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/backupwallet.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/backupwallet.md %}
 
@@ -116,13 +118,27 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/clearbanned.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/clearbanned.md %}
 
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/combinepsbt.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/combinepsbt.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/combinerawtransaction.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/combinerawtransaction.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/converttopsbt.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/converttopsbt.md %}
+
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/createmultisig.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/createmultisig.md %}
 
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/createpsbt.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/createpsbt.md %}
+
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/createrawtransaction.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/createrawtransaction.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/createwallet.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/createwallet.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/decodepsbt.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/decodepsbt.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/decoderawtransaction.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/decoderawtransaction.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/decodescript.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/decodescript.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/deriveaddresses.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/deriveaddresses.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/disconnectnode.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/disconnectnode.md %}
 
@@ -132,9 +148,9 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/encryptwallet.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/encryptwallet.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/estimatefee.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/estimatefee.md %}
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/estimatesmartfee.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/estimatesmartfee.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/estimatepriority.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/estimatepriority.md %}
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/finalizepsbt.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/finalizepsbt.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/fundrawtransaction.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/fundrawtransaction.md %}
 
@@ -142,13 +158,11 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/generatetoaddress.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/generatetoaddress.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getaccountaddress.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getaccountaddress.md %}
-
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getaccount.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getaccount.md %}
-
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getaddednodeinfo.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getaddednodeinfo.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getaddressesbyaccount.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getaddressesbyaccount.md %}
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getaddressesbylabel.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getaddressesbylabel.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getaddressinfo.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getaddressinfo.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getbalance.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getbalance.md %}
 
@@ -164,19 +178,19 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getblockheader.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getblockheader.md %}
 
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getblockstats.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getblockstats.md %}
+
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getblocktemplate.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getblocktemplate.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getchaintips.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getchaintips.md %}
 
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getchaintxstats.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getchaintxstats.md %}
+
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getconnectioncount.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getconnectioncount.md %}
 
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getdescriptorinfo.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getdescriptorinfo.md %}
+
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getdifficulty.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getdifficulty.md %}
-
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getgenerate.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getgenerate.md %}
-
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/gethashespersec.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/gethashespersec.md %}
-
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getinfo.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getinfo.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getmemoryinfo.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getmemoryinfo.md %}
 
@@ -198,6 +212,8 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getnewaddress.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getnewaddress.md %}
 
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getnodeaddresses.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getnodeaddresses.md %}
+
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getpeerinfo.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getpeerinfo.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getrawchangeaddress.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getrawchangeaddress.md %}
@@ -206,9 +222,11 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getrawtransaction.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getrawtransaction.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getreceivedbyaccount.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getreceivedbyaccount.md %}
-
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getreceivedbyaddress.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getreceivedbyaddress.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getreceivedbylabel.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getreceivedbylabel.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getrpcinfo.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getrpcinfo.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/gettransaction.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/gettransaction.md %}
 
@@ -222,8 +240,6 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getwalletinfo.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getwalletinfo.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/getwork.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/getwork.md %}
-
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/help.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/help.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/importaddress.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/importaddress.md %}
@@ -234,21 +250,25 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/importprunedfunds.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/importprunedfunds.md %}
 
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/importpubkey.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/importpubkey.md %}
+
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/importwallet.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/importwallet.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/keypoolrefill.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/keypoolrefill.md %}
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/joinpsbts.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/joinpsbts.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/listaccounts.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/listaccounts.md %}
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/keypoolrefill.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/keypoolrefill.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/listaddressgroupings.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/listaddressgroupings.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/listbanned.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/listbanned.md %}
 
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/listlabels.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/listlabels.md %}
+
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/listlockunspent.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/listlockunspent.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/listreceivedbyaccount.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/listreceivedbyaccount.md %}
-
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/listreceivedbyaddress.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/listreceivedbyaddress.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/listreceivedbylabel.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/listreceivedbylabel.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/listsinceblock.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/listsinceblock.md %}
 
@@ -256,9 +276,15 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/listunspent.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/listunspent.md %}
 
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/listwalletdir.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/listwalletdir.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/listwallets.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/listwallets.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/loadwallet.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/loadwallet.md %}
+
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/lockunspent.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/lockunspent.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/move.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/move.md %}
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/logging.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/logging.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/ping.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/ping.md %}
 
@@ -270,7 +296,11 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/removeprunedfunds.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/removeprunedfunds.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/sendfrom.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/sendfrom.md %}
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/rescanblockchain.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/rescanblockchain.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/savemempool.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/savemempool.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/scantxoutset.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/scantxoutset.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/sendmany.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/sendmany.md %}
 
@@ -278,11 +308,11 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/sendtoaddress.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/sendtoaddress.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/setaccount.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/setaccount.md %}
-
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/setban.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/setban.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/setgenerate.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/setgenerate.md %}
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/sethdseed.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/sethdseed.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/setlabel.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/setlabel.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/setnetworkactive.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/setnetworkactive.md %}
 
@@ -292,11 +322,23 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/signmessagewithprivkey.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/signmessagewithprivkey.md %}
 
-{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/signrawtransaction.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/signrawtransaction.md %}
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/signrawtransactionwithkey.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/signrawtransactionwithkey.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/signrawtransactionwithwallet.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/signrawtransactionwithwallet.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/stop.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/stop.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/submitblock.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/submitblock.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/submitheader.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/submitheader.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/testmempoolaccept.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/testmempoolaccept.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/unloadwallet.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/unloadwallet.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/uptime.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/uptime.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/utxoupdatepsbt.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/utxoupdatepsbt.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/validateaddress.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/validateaddress.md %}
 
@@ -306,11 +348,15 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/verifytxoutproof.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/verifytxoutproof.md %}
 
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/walletcreatefundedpsbt.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/walletcreatefundedpsbt.md %}
+
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/walletlock.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/walletlock.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/walletpassphrase.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/walletpassphrase.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/walletpassphrasechange.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/walletpassphrasechange.md %}
+
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rpcs/rpcs/walletprocesspsbt.md _data/devdocs/en/bitcoin-core/rpcs/rpcs/walletprocesspsbt.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rest/intro.md _data/devdocs/en/bitcoin-core/rest/intro.md %}
 

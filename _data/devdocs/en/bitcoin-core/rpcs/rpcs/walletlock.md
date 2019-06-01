@@ -7,13 +7,14 @@ http://opensource.org/licenses/MIT.
 ##### WalletLock
 {% include helpers/subhead-links.md %}
 
-{% assign summary_walletLock="removes the wallet encryption key from memory, locking the wallet. After calling this method, you will need to call `walletpassphrase` again before being able to call any methods which require the wallet to be unlocked." %}
+{% assign summary_walletLock="removes the wallet encryption key from memory, locking the wallet." %}
 
 {% autocrossref %}
 
-*Requires wallet support. Requires an unlocked wallet.*
-
 The `walletlock` RPC {{summary_walletLock}}
+
+After calling this method, you will need to call walletpassphrase again
+before being able to call any methods which require the wallet to be unlocked.
 
 *Parameters: none*
 
@@ -23,17 +24,27 @@ The `walletlock` RPC {{summary_walletLock}}
 - n: "`result`"
   t: "null"
   p: "Required<br>(exactly 1)"
-  d: "Always set to JSON `null`"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
+
+Set the passphrase for 2 minutes to perform a transaction
 
 {% highlight bash %}
-bitcoin-cli -testnet walletlock
+bitcoin-cli walletpassphrase "my pass phrase" 120
 {% endhighlight %}
+Perform a send (requires passphrase set)
 
-(Success: nothing printed.)
+{% highlight bash %}
+bitcoin-cli sendtoaddress "1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd" 1.0
+{% endhighlight %}
+Clear the passphrase since we are done before 2 minutes is up
+
+{% highlight bash %}
+bitcoin-cli walletlock
+{% endhighlight %}
 
 *See also*
 

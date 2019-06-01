@@ -7,42 +7,36 @@ http://opensource.org/licenses/MIT.
 ##### GetBlockHash
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getBlockHash="returns the header hash of a block at the given height in the local best block chain." %}
+{% assign summary_getBlockHash="returns hash of block in best-block-chain at height provided." %}
 
 {% autocrossref %}
 
 The `getblockhash` RPC {{summary_getBlockHash}}
 
-*Parameter---a block height*
+*Parameter #1---height*
 
 {% itemplate ntpd1 %}
-- n: "Block Height"
+- n: "height"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The height of the block whose header hash should be returned.  The height of the hardcoded genesis block is 0"
+  d: "The height index"
 
 {% enditemplate %}
 
-*Result---the block header hash*
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
-  t: "string (hex)/null"
+  t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The hash of the block at the requested height, encoded as hex in RPC byte order, or JSON `null` if an error occurred"
+  d: "The block hash"
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet getblockhash 240886
-{% endhighlight %}
-
-Result:
-
-{% highlight text %}
-00000000a0faf83ab5799354ae9c11da2a2bd6db44058e03c528851dee0a3fff
+bitcoin-cli getblockhash 1000
 {% endhighlight %}
 
 *See also*

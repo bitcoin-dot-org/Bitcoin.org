@@ -7,57 +7,58 @@ http://opensource.org/licenses/MIT.
 ##### GetReceivedByAddress
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getReceivedByAddress="returns the total amount received by the specified address in transactions with the specified number of confirmations. It does not count coinbase transactions." %}
+{% assign summary_getReceivedByAddress="returns the total amount received by the given address in transactions with at least minconf confirmations." %}
 
 {% autocrossref %}
 
-*Requires wallet support.*
-
 The `getreceivedbyaddress` RPC {{summary_getReceivedByAddress}}
 
-*Parameter #1---the address*
+*Parameter #1---address*
 
 {% itemplate ntpd1 %}
-- n: "Address"
+- n: "address"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The address whose transactions should be tallied"
+  d: "The bitcoin address for transactions."
 
 {% enditemplate %}
 
-*Parameter #2---the minimum number of confirmations*
+*Parameter #2---minconf*
 
-{{INCLUDE_CONFIRMATIONS_PARAMETER}}
+{% itemplate ntpd1 %}
+- n: "minconf"
+  t: "number (int)"
+  p: "Optional<br>Default=1"
+  d: "Only include transactions confirmed at least this many times."
 
-*Result---the number of bitcoins received*
+{% enditemplate %}
+
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
-  t: "number (bitcoins)"
+  t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The number of bitcoins received by the address, excluding coinbase transactions.  May be `0`"
+  d: "The total amount in BTC received at this address."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
 
-Get the bitcoins received for a particular address, only counting
-transactions with six or more confirmations:
+The amount from transactions with at least 1 confirmation
 
 {% highlight bash %}
-bitcoin-cli -testnet getreceivedbyaddress mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN 6
+bitcoin-cli getreceivedbyaddress "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX"
 {% endhighlight %}
+The amount including unconfirmed transactions, zero confirmations
 
-Result:
-
-{% highlight json %}
-0.30000000
+{% highlight bash %}
+bitcoin-cli getreceivedbyaddress "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX" 0
 {% endhighlight %}
+The amount with at least 6 confirmations
 
-*See also*
-
-* [GetReceivedByAccount][rpc getreceivedbyaccount]: {{summary_getReceivedByAccount}}
-* [GetAddressesByAccount][rpc getaddressesbyaccount]: {{summary_getAddressesByAccount}}
-* [ListAccounts][rpc listaccounts]: {{summary_listAccounts}}
+{% highlight bash %}
+bitcoin-cli getreceivedbyaddress "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX" 6
+{% endhighlight %}
 
 {% endautocrossref %}

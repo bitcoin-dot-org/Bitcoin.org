@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### SetNetworkActive
 {% include helpers/subhead-links.md %}
 
-{% assign summary_setNetworkActive="disables/enables all P2P network activity." %}
+{% assign summary_setNetworkActive="disable/enable all p2p network activity." %}
 
 {% autocrossref %}
 
@@ -15,33 +15,25 @@ http://opensource.org/licenses/MIT.
 
 The `setnetworkactive` RPC {{summary_setNetworkActive}}
 
-*Parameter #1---whether to disable or enable all P2P network activity*
+*Parameter #1---state*
 
 {% itemplate ntpd1 %}
-- n: "Activate"
-  t: "bool"
+- n: "state"
+  t: "boolean"
   p: "Required<br>(exactly 1)"
-  d: "Set to `true` to enable all P2P network activity. Set to `false` to disable all P2P network activity"
+  d: "true to enable networking, false to disable"
 
 {% enditemplate %}
 
-*Result---`null` or error on failure*
+*Result---`null` on success*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
   t: "null"
   p: "Required<br>(exactly 1)"
-  d: "JSON `null`.  The JSON-RPC error field will be set only if you entered an invalid parameter"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
-
-*Example from Bitcoin Core 0.14.1*
-
-{% highlight bash %}
-bitcoin-cli setnetworkactive true
-{% endhighlight %}
-
-Result (no output from `bitcoin-cli` because result is set to `null`).
 
 *See also*
 

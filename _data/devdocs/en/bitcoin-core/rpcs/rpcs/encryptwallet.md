@@ -7,52 +7,62 @@ http://opensource.org/licenses/MIT.
 ##### EncryptWallet
 {% include helpers/subhead-links.md %}
 
-{% assign summary_encryptWallet="encrypts the wallet with a passphrase.  This is only to enable encryption for the first time. After encryption is enabled, you will need to enter the passphrase to use private keys." %}
+{% assign summary_encryptWallet="encrypts the wallet with 'passphrase'." %}
 
 {% autocrossref %}
 
-*Requires wallet support.*
-
 The `encryptwallet` RPC {{summary_encryptWallet}}
 
-{{WARNING}} if using this RPC on the command line, remember
-that your shell probably saves your command lines (including the value
-of the passphrase parameter). In addition, there is no RPC to completely
-disable encryption. If you want to return to an unencrypted wallet, you
-must create a new wallet and restore your data from a backup made with
-the `dumpwallet` RPC.
+This is for first time encryption.
 
-*Parameter #1---a passphrase*
+After this, any calls that interact with private keys such as sending or signing
+will require the passphrase to be set prior the making these calls.
+
+Use the walletpassphrase call for this, and then walletlock call.
+
+If the wallet is already encrypted, use the walletpassphrasechange call.
+
+*Parameter #1---passphrase*
 
 {% itemplate ntpd1 %}
-- n: "Passphrase"
+- n: "passphrase"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The passphrase to use for the encrypted wallet.  Must be at least one character"
+  d: "The pass phrase to encrypt the wallet with. It must be at least 1 character, but should be long."
 
 {% enditemplate %}
 
-*Result---a notice (with program shutdown)*
+*Result---`null` on success*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
-  t: "string"
+  t: "null"
   p: "Required<br>(exactly 1)"
-  d: "A notice that the server is stopping and that you need to make a new backup.  The wallet is now encrypted"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
+
+Encrypt your wallet
 
 {% highlight bash %}
-bitcoin-cli -testnet encryptwallet "test"
+bitcoin-cli encryptwallet "my pass phrase"
 {% endhighlight %}
+Now set the passphrase to use the wallet, such as for signing or sending bitcoin
 
-Result:
+{% highlight bash %}
+bitcoin-cli walletpassphrase "my pass phrase"
+{% endhighlight %}
+Now we can do something like sign
 
-{% highlight text %}
-wallet encrypted; Bitcoin server stopping, restart to run with encrypted
-wallet. The keypool has been flushed, you need to make a new backup.
+{% highlight bash %}
+bitcoin-cli signmessage "address" "test message"
+{% endhighlight %}
+Now lock the wallet again by removing the passphrase
+
+{% highlight bash %}
+bitcoin-cli walletlock
 {% endhighlight %}
 
 *See also*

@@ -7,35 +7,35 @@ http://opensource.org/licenses/MIT.
 ##### WalletPassphrase
 {% include helpers/subhead-links.md %}
 
-{% assign summary_walletPassphrase="stores the wallet decryption key in memory for the indicated number of seconds. Issuing the `walletpassphrase` command while the wallet is already unlocked will set a new unlock time that overrides the old one." %}
+{% assign summary_walletPassphrase="stores the wallet decryption key in memory for 'timeout' seconds." %}
 
 {% autocrossref %}
 
-*Requires wallet support. Requires an encrypted wallet.*
-
 The `walletpassphrase` RPC {{summary_walletPassphrase}}
 
-{{WARNING}} if using this RPC on the command line, remember
-that your shell probably saves your command lines (including the
-value of the passphrase parameter).
+This is needed prior to performing transactions related to private keys such as sending bitcoins
+Note:
 
-*Parameter #1---the passphrase*
+Issuing the walletpassphrase command while the wallet is already unlocked will set a new unlock
+time that overrides the old one.
+
+*Parameter #1---passphrase*
 
 {% itemplate ntpd1 %}
-- n: "Passphrase"
+- n: "passphrase"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "The passphrase that unlocks the wallet"
+  d: "The wallet passphrase"
 
 {% enditemplate %}
 
-*Parameter #2---the number of seconds to leave the wallet unlocked*
+*Parameter #2---timeout*
 
 {% itemplate ntpd1 %}
-- n: "Seconds"
+- n: "timeout"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The number of seconds after which the decryption key will be automatically deleted from memory"
+  d: "The time to keep the decryption key in seconds; capped at 100000000 (~3 years)."
 
 {% enditemplate %}
 
@@ -45,19 +45,22 @@ value of the passphrase parameter).
 - n: "`result`"
   t: "null"
   p: "Required<br>(exactly 1)"
-  d: "Always set to JSON `null`"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
 
-Unlock the wallet for 10 minutes (the passphrase is "test"):
+Unlock the wallet for 60 seconds
 
 {% highlight bash %}
-bitcoin-cli -testnet walletpassphrase test 600
+bitcoin-cli walletpassphrase "my pass phrase" 60
 {% endhighlight %}
+Lock the wallet again (before 60 seconds)
 
-(Success: no result printed.)
+{% highlight bash %}
+bitcoin-cli walletlock
+{% endhighlight %}
 
 *See also*
 

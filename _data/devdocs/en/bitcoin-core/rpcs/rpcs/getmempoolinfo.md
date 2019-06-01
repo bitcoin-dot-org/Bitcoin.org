@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### GetMemPoolInfo
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getMemPoolInfo="returns information about the node's current transaction memory pool." %}
+{% assign summary_getMemPoolInfo="returns details on the active state of the TX memory pool." %}
 
 {% autocrossref %}
 
@@ -15,57 +15,25 @@ The `getmempoolinfo` RPC {{summary_getMemPoolInfo}}
 
 *Parameters: none*
 
-*Result---information about the transaction memory pool*
+*Result*
 
-{% itemplate ntpd1 %}
-- n: "`result`"
-  t: "object"
-  p: "Required<br>(exactly 1)"
-  d: "A object containing information about the memory pool"
+{% endautocrossref %}
 
-- n: "→<br>`size`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The number of transactions currently in the memory pool"
+    {
+      "size": xxxxx,               (numeric) Current tx count
+      "bytes": xxxxx,              (numeric) Sum of all virtual transaction sizes as defined in BIP 141. Differs from actual serialized size because witness data is discounted
+      "usage": xxxxx,              (numeric) Total memory usage for the mempool
+      "maxmempool": xxxxx,         (numeric) Maximum memory usage for the mempool
+      "mempoolminfee": xxxxx       (numeric) Minimum fee rate in BTC/kB for tx to be accepted. Is the maximum of minrelaytxfee and minimum mempool fee
+      "minrelaytxfee": xxxxx       (numeric) Current minimum relay fee for transactions
+    }
 
-- n: "→<br>`bytes`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The total number of bytes in the transactions in the memory pool"
+{% autocrossref %}
 
-- n: "→<br>`usage`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.11.0*<br><br>Total memory usage for the mempool in bytes"
-
-- n: "→<br>`maxmempool`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.12.0*<br><br>Maximum memory usage for the mempool in bytes"
-
-- n: "→<br>`mempoolminfee`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.12.0*<br><br>The lowest fee per kilobyte paid by any transaction in the memory pool"
-
-{% enditemplate %}
-
-*Example from Bitcoin Core 0.14.1*
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet getmempoolinfo
-{% endhighlight %}
-
-Result:
-
-{% highlight json %}
-{
-  "size": 1237,
-  "bytes": 591126,
-  "usage": 1900416,
-  "maxmempool": 300000000,
-  "mempoolminfee": 0.00000000
-}
+bitcoin-cli getmempoolinfo
 {% endhighlight %}
 
 *See also*

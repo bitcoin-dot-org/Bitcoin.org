@@ -7,105 +7,147 @@ http://opensource.org/licenses/MIT.
 ##### SendMany
 {% include helpers/subhead-links.md %}
 
-{% assign summary_sendMany="creates and broadcasts a transaction which sends outputs to multiple addresses." %}
+{% assign summary_sendMany="send multiple times." %}
 
 {% autocrossref %}
 
-*Requires wallet support. Requires an unlocked wallet or an
-unencrypted wallet.*
-
 The `sendmany` RPC {{summary_sendMany}}
 
-*Parameter #1---from account*
+Amounts are double-precision floating point numbers.
+
+*Parameter #1---dummy*
 
 {% itemplate ntpd1 %}
-- n: "From Account"
+- n: "dummy"
   t: "string"
   p: "Required<br>(exactly 1)"
-  d: "*Deprecated: will be removed in a later version of Bitcoin Core*<br><br>The name of the account from which the bitcoins should be spent.  Use an empty string (\"\") for the default account. Bitcoin Core will ensure the account has sufficient bitcoins to pay the total amount in the *outputs* field described below (but the transaction fee paid is not included in the calculation, so an account can spend a total of its balance plus the transaction fee)"
+  d: "Must be set to \"\" for backwards compatibility."
 
 {% enditemplate %}
 
-*Parameter #2---the addresses and amounts to pay*
+*Parameter #2---amounts*
 
 {% itemplate ntpd1 %}
-- n: "Outputs"
-  t: "object"
+- n: "amounts"
+  t: "json object"
   p: "Required<br>(exactly 1)"
-  d: "An object containing key/value pairs corresponding to the addresses and amounts to pay"
-
-- n: "→<br>Address/Amount"
-  t: "string (base58) : number (bitcoins)"
-  p: "Required<br>(1 or more)"
-  d: "A key/value pair with a base58check-encoded string containing the P2PKH or P2SH address to pay as the key, and an amount of bitcoins to pay as the value"
+  d: "A json object with addresses and amounts"
 
 {% enditemplate %}
 
-*Parameter #3---minimum confirmations*
+{% endautocrossref %}
 
-{{INCLUDE_SPEND_CONFIRMATIONS}}
+    {
+      "address": amount,    (numeric or string, required) The bitcoin address is the key, the numeric amount (can be string) in BTC is the value
+    }
 
-*Parameter #4---a comment*
+{% autocrossref %}
+
+*Parameter #3---minconf*
 
 {% itemplate ntpd1 %}
-- n: "Comment"
+- n: "minconf"
+  t: "number (int)"
+  p: "Optional<br>Default=1"
+  d: "Only use the balance confirmed at least this many times."
+
+{% enditemplate %}
+
+*Parameter #4---comment*
+
+{% itemplate ntpd1 %}
+- n: "comment"
   t: "string"
-  p: "Optional<br>(0 or 1)"
-  d: "A locally-stored (not broadcast) comment assigned to this transaction.  Default is no comment"
+  p: "Optional"
+  d: "A comment"
 
 {% enditemplate %}
 
-*Parameter #5---automatic fee subtraction*
+*Parameter #5---subtractfeefrom*
 
 {% itemplate ntpd1 %}
-- n: "Subtract Fee From Amount"
-  t: "array"
-  p: "Optional<br>(0 or 1)"
-  d: "An array of addresses.  The fee will be equally divided by as many addresses as are entries in this array and subtracted from each address.  If this array is empty or not provided, the fee will be paid by the sender"
-  
-- n: "→<br>Address"
-  t: "string (base58)"
-  p: "Optional (0 or more)"
-  d: "An address previously listed as one of the recipients."
+- n: "subtractfeefrom"
+  t: "json array"
+  p: "Optional"
+  d: "A json array with addresses.
+       The fee will be equally deducted from the amount of each selected address.
+       Those recipients will receive less bitcoins than you enter in their corresponding amount field.
+       If no addresses are specified here, the sender pays the fee."
+
 {% enditemplate %}
 
-*Result---a TXID of the sent transaction*
+{% endautocrossref %}
+
+    [
+      "address",            (string) Subtract fee from this address
+      ...
+    ]
+
+{% autocrossref %}
+
+*Parameter #6---replaceable*
+
+{% itemplate ntpd1 %}
+- n: "replaceable"
+  t: "boolean"
+  p: "Optional<br>Default=fallback to wallet's default"
+  d: "Allow this transaction to be replaced by a transaction with higher fees via BIP 125"
+
+{% enditemplate %}
+
+*Parameter #7---conf_target*
+
+{% itemplate ntpd1 %}
+- n: "conf_target"
+  t: "number (int)"
+  p: "Optional<br>Default=fallback to wallet's default"
+  d: "Confirmation target (in blocks)"
+
+{% enditemplate %}
+
+*Parameter #8---estimate_mode*
+
+{% itemplate ntpd1 %}
+- n: "estimate_mode"
+  t: "string"
+  p: "Optional<br>Default=UNSET"
+  d: "The fee estimate mode, must be one of:
+       \"UNSET\"
+       \"ECONOMICAL\"
+       \"CONSERVATIVE\""
+
+{% enditemplate %}
+
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
-  t: "string"
+  t: "string (hex)"
   p: "Required<br>(exactly 1)"
-  d: "The TXID of the sent transaction, encoded as hex in RPC byte order"
+  d: "The transaction id for the send. Only 1 transaction is created regardless of "
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
+*Example*
 
-From the account *test1*, send 0.1 bitcoins to the first address and 0.2
-bitcoins to the second address, with a comment of "Example Transaction".
+Send two amounts to two different addresses:
 
 {% highlight bash %}
-bitcoin-cli -testnet sendmany \
-  "test1" \
-  '''
-    {
-      "mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN": 0.1,
-      "mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe": 0.2
-    } ''' \
-  6       \
-  "Example Transaction"
+bitcoin-cli sendmany "" "{\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\":0.01,\"1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz\":0.02}"
 {% endhighlight %}
+Send two amounts to two different addresses setting the confirmation and comment:
 
-Result:
+{% highlight bash %}
+bitcoin-cli sendmany "" "{\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\":0.01,\"1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz\":0.02}" 6 "testing"
+{% endhighlight %}
+Send two amounts to two different addresses, subtract fee from amount:
 
-{% highlight text %}
-ec259ab74ddff199e61caa67a26e29b13b5688dc60f509ce0df4d044e8f4d63d
+{% highlight bash %}
+bitcoin-cli sendmany "" "{\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\":0.01,\"1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz\":0.02}" 1 "" "[\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\",\"1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz\"]"
 {% endhighlight %}
 
 *See also*
 
-* [SendFrom][rpc sendfrom]: {{summary_sendFrom}}
 * [SendToAddress][rpc sendtoaddress]: {{summary_sendToAddress}}
-* [Move][rpc move]: {{summary_move}}
 
 {% endautocrossref %}

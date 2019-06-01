@@ -210,26 +210,42 @@ CVE-2012-2459:
 ## RPCs
 '`abandontransaction`': rpc abandontransaction
 '`abandontransaction` RPC': rpc abandontransaction
+'`abortrescan`': rpc abortrescan
+'`abortrescan` RPC': rpc abortrescan
 '`addmultisigaddress`': rpc addmultisigaddress
 '`addmultisigaddress` RPC': rpc addmultisigaddress
 '`addnode`': rpc addnode
 '`addnode` RPC': rpc addnode
-'`addwitnessaddress`': rpc addwitnessaddress
-'`addwitnessaddress` RPC': rpc addwitnessaddress
+'`analyzepsbt`': rpc analyzepsbt
+'`analyzepsbt` RPC': rpc analyzepsbt
 '`backupwallet`': rpc backupwallet
 '`backupwallet` RPC': rpc backupwallet
 '`bumpfee`': rpc bumpfee
 '`bumpfee` RPC': rpc bumpfee
 '`clearbanned`': rpc clearbanned
 '`clearbanned` RPC': rpc clearbanned
+'`combinepsbt`': rpc combinepsbt
+'`combinepsbt` RPC': rpc combinepsbt
+'`combinerawtransaction`': rpc combinerawtransaction
+'`combinerawtransaction` RPC': rpc combinerawtransaction
+'`converttopsbt`': rpc converttopsbt
+'`converttopsbt` RPC': rpc converttopsbt
 '`createmultisig`': rpc createmultisig
 '`createmultisig` RPC': rpc createmultisig
+'`createpsbt`': rpc createpsbt
+'`createpsbt` RPC': rpc createpsbt
 '`createrawtransaction`': rpc createrawtransaction
 '`createrawtransaction` RPC': rpc createrawtransaction
+'`createwallet`': rpc createwallet
+'`createwallet` RPC': rpc createwallet
+'`decodepsbt`': rpc decodepsbt
+'`decodepsbt` RPC': rpc decodepsbt
 '`decoderawtransaction`': rpc decoderawtransaction
 '`decoderawtransaction` RPC': rpc decoderawtransaction
 '`decodescript`': rpc decodescript
 '`decodescript` RPC': rpc decodescript
+'`deriveaddresses`': rpc deriveaddresses
+'`deriveaddresses` RPC': rpc deriveaddresses
 '`disconnectnode`': rpc disconnectnode
 '`disconnectnode` RPC': rpc disconnectnode
 '`dumpprivkey`': rpc dumpprivkey
@@ -238,24 +254,22 @@ CVE-2012-2459:
 '`dumpwallet` RPC': rpc dumpwallet
 '`encryptwallet`': rpc encryptwallet
 '`encryptwallet` RPC': rpc encryptwallet
-'`estimatefee`': rpc estimatefee
-'`estimatefee` RPC': rpc estimatefee
-'`estimatepriority`': rpc estimatepriority
-'`estimatepriority` RPC': rpc estimatepriority
+'`estimatesmartfee`': rpc estimatesmartfee
+'`estimatesmartfee` RPC': rpc estimatesmartfee
+'`finalizepsbt`': rpc finalizepsbt
+'`finalizepsbt` RPC': rpc finalizepsbt
 '`fundrawtransaction`': rpc fundrawtransaction
 '`fundrawtransaction` RPC': rpc fundrawtransaction
 '`generate`': rpc generate
 '`generate` RPC': rpc generate
 '`generatetoaddress`': rpc generatetoaddress
 '`generatetoaddress` RPC': rpc generatetoaddress
-'`getaccount`': rpc getaccount
-'`getaccount` RPC': rpc getaccount
-'`getaccountaddress`': rpc getaccountaddress
-'`getaccountaddress` RPC': rpc getaccountaddress
 '`getaddednodeinfo`': rpc getaddednodeinfo
 '`getaddednodeinfo` RPC': rpc getaddednodeinfo
-'`getaddressesbyaccount`': rpc getaddressesbyaccount
-'`getaddressesbyaccount` RPC': rpc getaddressesbyaccount
+'`getaddressesbylabel`': rpc getaddressesbylabel
+'`getaddressesbylabel` RPC': rpc getaddressesbylabel
+'`getaddressinfo`': rpc getaddressinfo
+'`getaddressinfo` RPC': rpc getaddressinfo
 '`getbalance`': rpc getbalance
 '`getbalance` RPC': rpc getbalance
 '`getbestblockhash`': rpc getbestblockhash
@@ -270,20 +284,20 @@ CVE-2012-2459:
 '`getblockhash` RPC': rpc getblockhash
 '`getblockheader`': rpc getblockheader
 '`getblockheader` RPC': rpc getblockheader
+'`getblockstats`': rpc getblockstats
+'`getblockstats` RPC': rpc getblockstats
 '`getblocktemplate`': rpc getblocktemplate
 '`getblocktemplate` RPC': rpc getblocktemplate
 '`getchaintips`': rpc getchaintips
 '`getchaintips` RPC': rpc getchaintips
+'`getchaintxstats`': rpc getchaintxstats
+'`getchaintxstats` RPC': rpc getchaintxstats
 '`getconnectioncount`': rpc getconnectioncount
 '`getconnectioncount` RPC': rpc getconnectioncount
+'`getdescriptorinfo`': rpc getdescriptorinfo
+'`getdescriptorinfo` RPC': rpc getdescriptorinfo
 '`getdifficulty`': rpc getdifficulty
 '`getdifficulty` RPC': rpc getdifficulty
-'`getgenerate`': rpc getgenerate
-'`getgenerate` RPC': rpc getgenerate
-'`gethashespersec`': rpc gethashespersec
-'`gethashespersec` RPC': rpc gethashespersec
-'`getinfo`': rpc getinfo
-'`getinfo` RPC': rpc getinfo
 '`getmemoryinfo`': rpc getmemoryinfo
 '`getmemoryinfo` RPC': rpc getmemoryinfo
 '`getmempoolancestors`': rpc getmempoolancestors
@@ -304,6 +318,8 @@ CVE-2012-2459:
 '`getnetworkinfo` RPC': rpc getnetworkinfo
 '`getnewaddress`': rpc getnewaddress
 '`getnewaddress` RPC': rpc getnewaddress
+'`getnodeaddresses`': rpc getnodeaddresses
+'`getnodeaddresses` RPC': rpc getnodeaddresses
 '`getpeerinfo`': rpc getpeerinfo
 '`getpeerinfo` RPC': rpc getpeerinfo
 '`getrawchangeaddress`': rpc getrawchangeaddress
@@ -312,10 +328,12 @@ CVE-2012-2459:
 '`getrawmempool` RPC': rpc getrawmempool
 '`getrawtransaction`': rpc getrawtransaction
 '`getrawtransaction` RPC': rpc getrawtransaction
-'`getreceivedbyaccount`': rpc getreceivedbyaccount
-'`getreceivedbyaccount` RPC': rpc getreceivedbyaccount
 '`getreceivedbyaddress`': rpc getreceivedbyaddress
 '`getreceivedbyaddress` RPC': rpc getreceivedbyaddress
+'`getreceivedbylabel`': rpc getreceivedbylabel
+'`getreceivedbylabel` RPC': rpc getreceivedbylabel
+'`getrpcinfo`': rpc getrpcinfo
+'`getrpcinfo` RPC': rpc getrpcinfo
 '`gettransaction`': rpc gettransaction
 '`gettransaction` RPC': rpc gettransaction
 '`gettxout`': rpc gettxout
@@ -328,8 +346,6 @@ CVE-2012-2459:
 '`getunconfirmedbalance` RPC': rpc getunconfirmedbalance
 '`getwalletinfo`': rpc getwalletinfo
 '`getwalletinfo` RPC': rpc getwalletinfo
-'`getwork`': rpc getwork
-'`getwork` RPC': rpc getwork
 '`help`': rpc help
 '`help` RPC': rpc help
 '`importaddress`': rpc importaddress
@@ -340,32 +356,42 @@ CVE-2012-2459:
 '`importprivkey` RPC': rpc importprivkey
 '`importprunedfunds`': rpc importprunedfunds
 '`importprunedfunds` RPC': rpc importprunedfunds
+'`importpubkey`': rpc importpubkey
+'`importpubkey` RPC': rpc importpubkey
 '`importwallet`': rpc importwallet
 '`importwallet` RPC': rpc importwallet
+'`joinpsbts`': rpc joinpsbts
+'`joinpsbts` RPC': rpc joinpsbts
 '`keypoolrefill`': rpc keypoolrefill
 '`keypoolrefill` RPC': rpc keypoolrefill
-'`listaccounts`': rpc listaccounts
-'`listaccounts` RPC': rpc listaccounts
 '`listaddressgroupings`': rpc listaddressgroupings
 '`listaddressgroupings` RPC': rpc listaddressgroupings
 '`listbanned`': rpc listbanned
 '`listbanned` RPC': rpc listbanned
+'`listlabels`': rpc listlabels
+'`listlabels` RPC': rpc listlabels
 '`listlockunspent`': rpc listlockunspent
 '`listlockunspent` RPC': rpc listlockunspent
-'`listreceivedbyaccount`': rpc listreceivedbyaccount
-'`listreceivedbyaccount` RPC': rpc listreceivedbyaccount
 '`listreceivedbyaddress`': rpc listreceivedbyaddress
 '`listreceivedbyaddress` RPC': rpc listreceivedbyaddress
+'`listreceivedbylabel`': rpc listreceivedbylabel
+'`listreceivedbylabel` RPC': rpc listreceivedbylabel
 '`listsinceblock`': rpc listsinceblock
 '`listsinceblock` RPC': rpc listsinceblock
 '`listtransactions`': rpc listtransactions
 '`listtransactions` RPC': rpc listtransactions
 '`listunspent`': rpc listunspent
 '`listunspent` RPC': rpc listunspent
+'`listwalletdir`': rpc listwalletdir
+'`listwalletdir` RPC': rpc listwalletdir
+'`listwallets`': rpc listwallets
+'`listwallets` RPC': rpc listwallets
+'`loadwallet`': rpc loadwallet
+'`loadwallet` RPC': rpc loadwallet
 '`lockunspent`': rpc lockunspent
 '`lockunspent` RPC': rpc lockunspent
-'`move`': rpc move
-'`move` RPC': rpc move
+'`logging`': rpc logging
+'`logging` RPC': rpc logging
 '`ping`': rpc ping
 '`ping` RPC': rpc ping
 '`preciousblock`': rpc preciousblock
@@ -376,23 +402,24 @@ CVE-2012-2459:
 '`pruneblockchain` RPC': rpc pruneblockchain
 '`removeprunedfunds`': rpc removeprunedfunds
 '`removeprunedfunds` RPC': rpc removeprunedfunds
-'`sendfrom`': rpc sendfrom
-'`sendfrom` RPC': rpc sendfrom
-'`sendheaders`': sendheaders message
-'`sendheaders` message': sendheaders message
-'`sendheaders` messages': sendheaders message
+'`rescanblockchain`': rpc rescanblockchain
+'`rescanblockchain` RPC': rpc rescanblockchain
+'`savemempool`': rpc savemempool
+'`savemempool` RPC': rpc savemempool
+'`scantxoutset`': rpc scantxoutset
+'`scantxoutset` RPC': rpc scantxoutset
 '`sendmany`': rpc sendmany
 '`sendmany` RPC': rpc sendmany
 '`sendrawtransaction`': rpc sendrawtransaction
 '`sendrawtransaction` RPC': rpc sendrawtransaction
 '`sendtoaddress`': rpc sendtoaddress
 '`sendtoaddress` RPC': rpc sendtoaddress
-'`setaccount`': rpc setaccount
-'`setaccount` RPC': rpc setaccount
 '`setban`': rpc setban
 '`setban` RPC': rpc setban
-'`setgenerate`': rpc setgenerate
-'`setgenerate` RPC': rpc setgenerate
+'`sethdseed`': rpc sethdseed
+'`sethdseed` RPC': rpc sethdseed
+'`setlabel`': rpc setlabel
+'`setlabel` RPC': rpc setlabel
 '`setnetworkactive`': rpc setnetworkactive
 '`setnetworkactive` RPC': rpc setnetworkactive
 '`settxfee`': rpc settxfee
@@ -401,12 +428,24 @@ CVE-2012-2459:
 '`signmessage` RPC': rpc signmessage
 '`signmessagewithprivkey`': rpc signmessagewithprivkey
 '`signmessagewithprivkey` RPC': rpc signmessagewithprivkey
-'`signrawtransaction`': rpc signrawtransaction
-'`signrawtransaction` RPC': rpc signrawtransaction
+'`signrawtransactionwithkey`': rpc signrawtransactionwithkey
+'`signrawtransactionwithkey` RPC': rpc signrawtransactionwithkey
+'`signrawtransactionwithwallet`': rpc signrawtransactionwithwallet
+'`signrawtransactionwithwallet` RPC': rpc signrawtransactionwithwallet
 '`stop`': rpc stop
 '`stop` RPC': rpc stop
 '`submitblock`': rpc submitblock
 '`submitblock` RPC': rpc submitblock
+'`submitheader`': rpc submitheader
+'`submitheader` RPC': rpc submitheader
+'`testmempoolaccept`': rpc testmempoolaccept
+'`testmempoolaccept` RPC': rpc testmempoolaccept
+'`unloadwallet`': rpc unloadwallet
+'`unloadwallet` RPC': rpc unloadwallet
+'`uptime`': rpc uptime
+'`uptime` RPC': rpc uptime
+'`utxoupdatepsbt`': rpc utxoupdatepsbt
+'`utxoupdatepsbt` RPC': rpc utxoupdatepsbt
 '`validateaddress`': rpc validateaddress
 '`validateaddress` RPC': rpc validateaddress
 '`verifychain`': rpc verifychain
@@ -415,12 +454,16 @@ CVE-2012-2459:
 '`verifymessage` RPC': rpc verifymessage
 '`verifytxoutproof`': rpc verifytxoutproof
 '`verifytxoutproof` RPC': rpc verifytxoutproof
+'`walletcreatefundedpsbt`': rpc walletcreatefundedpsbt
+'`walletcreatefundedpsbt` RPC': rpc walletcreatefundedpsbt
 '`walletlock`': rpc walletlock
 '`walletlock` RPC': rpc walletlock
 '`walletpassphrase`': rpc walletpassphrase
 '`walletpassphrase` RPC': rpc walletpassphrase
 '`walletpassphrasechange`': rpc walletpassphrasechange
 '`walletpassphrasechange` RPC': rpc walletpassphrasechange
+'`walletprocesspsbt`': rpc walletprocesspsbt
+'`walletprocesspsbt` RPC': rpc walletprocesspsbt
 
 ## Versions of Bitcoin Core (linked to Bitcoin.org release notes)
 Bitcoin Core 0.1.6:

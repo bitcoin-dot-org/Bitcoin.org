@@ -4,63 +4,58 @@ http://opensource.org/licenses/MIT.
 {% endcomment %}
 {% assign filename="_data/devdocs/en/bitcoin-core/rpcs/rpcs/getnetworkhashps.md" %}
 
-##### GetNetworkHashPS
+##### GetNetworkHashPs
 {% include helpers/subhead-links.md %}
 
-{% assign summary_getNetworkHashPS="returns the estimated current or historical network hashes per second based on the last *n* blocks." %}
+{% assign summary_getNetworkHashPs="returns the estimated network hashes per second based on the last n blocks." %}
 
 {% autocrossref %}
 
-The `getnetworkhashps` RPC {{summary_getNetworkHashPS}}
+The `getnetworkhashps` RPC {{summary_getNetworkHashPs}}
 
-*Parameter #1---number of blocks to average*
+Pass in [blocks] to override # of blocks, -1 specifies since last difficulty change.
+
+Pass in [height] to estimate the network speed at the time when a certain block was found.
+
+*Parameter #1---nblocks*
 
 {% itemplate ntpd1 %}
-- n: "Blocks"
+- n: "nblocks"
   t: "number (int)"
-  p: "Optional<br>(0 or 1)"
-  d: "The number of blocks to average together for calculating the estimated hashes per second.  Default is `120`.  Use `-1` to average all blocks produced since the last difficulty change"
+  p: "Optional<br>Default=120"
+  d: "The number of blocks, or -1 for blocks since last difficulty change."
 
 {% enditemplate %}
 
-*Parameter #2---block height*
+*Parameter #2---height*
 
 {% itemplate ntpd1 %}
-- n: "Height"
+- n: "height"
   t: "number (int)"
-  p: "Optional<br>(0 or 1)"
-  d: "The height of the last block to use for calculating the average.  Defaults to `-1` for the highest-height block on the local best block chain.  If the specified height is higher than the highest block on the local best block chain, it will be interpreted the same as `-1`"
+  p: "Optional<br>Default=-1"
+  d: "To estimate at the time of the given height."
 
 {% enditemplate %}
 
-*Result---estimated hashes per second*
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The estimated number of hashes per second based on the parameters provided.  May be 0 (for Height=`0`, the genesis block) or a negative value if the highest-height block averaged has a block header time earlier than the lowest-height block averaged"
+  d: "Hashes per second estimated"
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
-
-Get the average hashes per second for all the blocks since the last
-difficulty change before block 227255.
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet getnetworkhashps -1 227255
-{% endhighlight %}
-
-Result:
-
-{% highlight json %}
-79510076167
+bitcoin-cli getnetworkhashps
 {% endhighlight %}
 
 *See also*
 
-* [GetDifficulty][rpc getdifficulty]: {{summary_getDifficultly}}
+* [GetDifficulty][rpc getdifficulty]: {{summary_getDifficulty}}
 * [GetBlock][rpc getblock]: {{summary_getBlock}}
 
 {% endautocrossref %}

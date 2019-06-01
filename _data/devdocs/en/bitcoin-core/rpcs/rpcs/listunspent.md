@@ -7,145 +7,122 @@ http://opensource.org/licenses/MIT.
 ##### ListUnspent
 {% include helpers/subhead-links.md %}
 
-{% assign summary_listUnspent="returns an array of unspent transaction outputs belonging to this wallet." %}
+{% assign summary_listUnspent="returns array of unspent transaction outputs with between minconf and maxconf (inclusive) confirmations." %}
 
 {% autocrossref %}
 
-*Requires wallet support.*
+The `listunspent` RPC {{summary_listUnspent}}
 
-The `listunspent` RPC {{summary_listUnspent}} **Note:** as of Bitcoin
-Core 0.10.0, outputs affecting watch-only addresses will be returned; see
-the *spendable* field in the results described below.
+Optionally filter to only include txouts paid to specified addresses.
 
-*Parameter #1---the minimum number of confirmations an output must have*
+*Parameter #1---minconf*
 
 {% itemplate ntpd1 %}
-- n: "Minimum Confirmations"
+- n: "minconf"
   t: "number (int)"
-  p: "Optional<br>(0 or 1)"
-  d: "The minimum number of confirmations the transaction containing an output must have in order to be returned.  Use `0` to return outputs from unconfirmed transactions. Default is `1`"
+  p: "Optional<br>Default=1"
+  d: "The minimum confirmations to filter"
 
 {% enditemplate %}
 
-*Parameter #2---the maximum number of confirmations an output may have*
+*Parameter #2---maxconf*
 
 {% itemplate ntpd1 %}
-- n: "Maximum Confirmations"
+- n: "maxconf"
   t: "number (int)"
-  p: "Optional<br>(0 or 1)"
-  d: "The maximum number of confirmations the transaction containing an output may have in order to be returned.  Default is `9999999` (~10 million)"
+  p: "Optional<br>Default=9999999"
+  d: "The maximum confirmations to filter"
 
 {% enditemplate %}
 
-*Parameter #3---the addresses an output must pay*
+*Parameter #3---addresses*
 
 {% itemplate ntpd1 %}
-- n: "Addresses"
-  t: "array"
-  p: "Optional<br>(0 or 1)"
-  d: "If present, only outputs which pay an address in this array will be returned"
-
-- n: "→<br>Address"
-  t: "string (base58)"
-  p: "Required<br>(1 or more)"
-  d: "A P2PKH or P2SH address"
+- n: "addresses"
+  t: "json array"
+  p: "Optional<br>Default=empty array"
+  d: "A json array of bitcoin addresses to filter"
 
 {% enditemplate %}
 
-*Result---the list of unspent outputs*
+{% endautocrossref %}
+
+    [
+      "address",                     (string) bitcoin address
+      ...
+    ]
+
+{% autocrossref %}
+
+*Parameter #4---include_unsafe*
 
 {% itemplate ntpd1 %}
-- n: "`result`"
-  t: "array"
-  p: "Required<br>(exactly 1)"
-  d: "An array of objects each describing an unspent output.  May be empty"
-
-- n: "→<br>Unspent Output"
-  t: "object"
-  p: "Optional<br>(0 or more)"
-  d: "An object describing a particular unspent output belonging to this wallet"
-
-- n: "→ →<br>`txid`"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The TXID of the transaction containing the output, encoded as hex in RPC byte order"
-
-- n: "→ →<br>`vout`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The output index number (vout) of the output within its containing transaction"
-
-- n: "→ →<br>`address`"
-  t: "string (base58)"
-  p: "Optional<br>(0 or 1)"
-  d: "The P2PKH or P2SH address the output paid.  Only returned for P2PKH or P2SH output scripts"
-
-- n: "→ →<br>`account`"
-  t: "string"
-  p: "Optional<br>(0 or 1)"
-  d: "*Deprecated: will be removed in a later version of Bitcoin Core*<br><br>If the address returned belongs to an account, this is the account.  Otherwise not returned"
-
-- n: "→ →<br>`scriptPubKey`"
-  t: "string (hex)"
-  p: "Required<br>(exactly 1)"
-  d: "The output script paid, encoded as hex"
-
-- n: "→ →<br>`redeemScript`"
-  t: "string (hex)"
-  p: "Optional<br>(0 or 1)"
-  d: "If the output is a P2SH whose script belongs to this wallet, this is the redeem script"
-
-- n: "→ →<br>`amount`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The amount paid to the output in bitcoins"
-
-- n: "→ →<br>`confirmations`"
-  t: "number (int)"
-  p: "Required<br>(exactly 1)"
-  d: "The number of confirmations received for the transaction containing this output"
-
-- n: "→ →<br>`spendable`"
-  t: "bool"
-  p: "Required<br>(exactly 1)"
-  d: "Set to `true` if the private key or keys needed to spend this output are part of the wallet.  Set to `false` if not (such as for watch-only addresses)"
-  
-- n: "→ →<br>`solvable`"
-  t: "bool"
-  p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.13.0*<br><br>Set to `true` if the wallet knows how to spend this output.  Set to `false` if the wallet does not know how to spend the output.  It is ignored if the private keys are available "
+- n: "include_unsafe"
+  t: "boolean"
+  p: "Optional<br>Default=true"
+  d: "Include outputs that are not safe to spend
+       See description of \"safe\" attribute below."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.13.1*
+*Parameter #5---query_options*
 
-Get all outputs confirmed at least 6 times for a particular
-address:
+{% itemplate ntpd1 %}
+- n: "query_options"
+  t: "json object"
+  p: "Optional"
+  d: "JSON with query options"
+
+{% enditemplate %}
+
+{% endautocrossref %}
+
+    {
+      "minimumAmount": amount,       (numeric or string, optional, default=0) Minimum value of each UTXO in BTC
+      "maximumAmount": amount,       (numeric or string, optional, default=unlimited) Maximum value of each UTXO in BTC
+      "maximumCount": n,             (numeric, optional, default=unlimited) Maximum number of UTXOs
+      "minimumSumAmount": amount,    (numeric or string, optional, default=unlimited) Minimum sum value of all UTXOs in BTC
+    }
+
+{% autocrossref %}
+
+*Result*
+
+{% endautocrossref %}
+
+    [                   (array of json object)
+      {
+        "txid" : "txid",          (string) the transaction id
+        "vout" : n,               (numeric) the vout value
+        "address" : "address",    (string) the bitcoin address
+        "label" : "label",        (string) The associated label, or "" for the default label
+        "scriptPubKey" : "key",   (string) the script key
+        "amount" : x.xxx,         (numeric) the transaction output amount in BTC
+        "confirmations" : n,      (numeric) The number of confirmations
+        "redeemScript" : "script" (string) The redeemScript if scriptPubKey is P2SH
+        "witnessScript" : "script" (string) witnessScript if the scriptPubKey is P2WSH or P2SH-P2WSH
+        "spendable" : xxx,        (bool) Whether we have the private keys to spend this output
+        "solvable" : xxx,         (bool) Whether we know how to spend this output, ignoring the lack of keys
+        "desc" : xxx,             (string, only when solvable) A descriptor for spending this output
+        "safe" : xxx              (bool) Whether this output is considered safe to spend. Unconfirmed transactions
+                                  from outside keys and unconfirmed replacement transactions are considered unsafe
+                                  and are not eligible for spending by fundrawtransaction and sendtoaddress.
+      }
+      ,...
+    ]
+
+{% autocrossref %}
+
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet listunspent 6 99999999 '''
-  [
-    "mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe"
-  ]
-'''
+bitcoin-cli listunspent
 {% endhighlight %}
-
-Result:
-
-{% highlight json %}
-[
-    {
-        "txid" : "d54994ece1d11b19785c7248868696250ab195605b469632b7bd68130e880c9a",
-        "vout" : 1,
-        "address" : "mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe",
-        "account" : "test label",
-        "scriptPubKey" : "76a9140dfc8bafc8419853b34d5e072ad37d1a5159f58488ac",
-        "amount" : 0.00010000,
-        "confirmations" : 6210,
-        "spendable" : true,
-        "solvable" : true
-    }
-]
+{% highlight bash %}
+bitcoin-cli listunspent 6 9999999 "[\"1PGFqEzfmQch1gKD3ra4k18PNj3tTUUSqg\",\"1LtvqCaApEdUGFkpKMM4MstjcaL4dKg8SP\"]"
+{% endhighlight %}
+{% highlight bash %}
+bitcoin-cli listunspent 6 9999999 '[]' true '{ "minimumAmount": 0.005 }'
 {% endhighlight %}
 
 *See also*

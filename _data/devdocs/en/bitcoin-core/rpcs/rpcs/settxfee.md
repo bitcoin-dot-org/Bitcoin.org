@@ -7,46 +7,38 @@ http://opensource.org/licenses/MIT.
 ##### SetTxFee
 {% include helpers/subhead-links.md %}
 
-{% assign summary_setTxFee="sets the transaction fee per kilobyte paid by transactions created by this wallet." %}
+{% assign summary_setTxFee="set the transaction fee per kB for this wallet." %}
 
 {% autocrossref %}
 
-*Requires wallet support.*
-
 The `settxfee` RPC {{summary_setTxFee}}
 
-*Parameter #1---the transaction fee amount per kilobyte*
+Overrides the global -paytxfee command line parameter.
+
+*Parameter #1---amount*
 
 {% itemplate ntpd1 %}
-- n: "Transaction Fee Per Kilobyte"
-  t: "number (bitcoins)"
+- n: "amount"
+  t: "numeric or string"
   p: "Required<br>(exactly 1)"
-  d: "The transaction fee to pay, in bitcoins, for each kilobyte of transaction data.  Be careful setting the fee too low---your transactions may not be relayed or included in blocks"
+  d: "The transaction fee in BTC/kB"
 
 {% enditemplate %}
 
-*Result: `true` on success*
+*Result*
 
 {% itemplate ntpd1 %}
 - n: "`result`"
-  t: "bool (true)"
+  t: "boolean"
   p: "Required<br>(exactly 1)"
-  d: "Set to `true` if the fee was successfully set"
+  d: "Returns true if successful"
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.10.0*
-
-Set the transaction fee per kilobyte to 100,000 satoshis.
+*Example*
 
 {% highlight bash %}
-bitcoin-cli -testnet settxfee 0.00100000
-{% endhighlight %}
-
-Result:
-
-{% highlight json %}
-true
+bitcoin-cli settxfee 0.00001
 {% endhighlight %}
 
 *See also*

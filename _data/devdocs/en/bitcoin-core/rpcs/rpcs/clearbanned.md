@@ -7,7 +7,7 @@ http://opensource.org/licenses/MIT.
 ##### ClearBanned
 {% include helpers/subhead-links.md %}
 
-{% assign summary_clearBanned="clears list of banned nodes." %}
+{% assign summary_clearBanned="clear all banned IPs." %}
 
 {% autocrossref %}
 
@@ -23,19 +23,15 @@ The `clearbanned` RPC {{summary_clearBanned}}
 - n: "`result`"
   t: "null"
   p: "Required<br>(exactly 1)"
-  d: "JSON `null` when the list was cleared"
+  d: "JSON `null` when the command was successfull or a JSON with an error field on error."
 
 {% enditemplate %}
 
-*Example from Bitcoin Core 0.13.1*
-
-Clears the ban list.
+*Example*
 
 {% highlight bash %}
 bitcoin-cli clearbanned
 {% endhighlight %}
-
-Result (no output from `bitcoin-cli` because result is set to `null`).
 
 *See also*
 
