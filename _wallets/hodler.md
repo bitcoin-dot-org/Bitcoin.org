@@ -5,7 +5,7 @@
 id: hodler
 title: "HODLER Open Source Multi-Asset Wallet"
 titleshort: "HODLER"
-compat: "desktop windows mobile android ios"
+compat: "desktop windows mobile android linux"
 level: 3
 platform:
   - desktop:
@@ -20,7 +20,7 @@ platform:
         validation: "checkfailvalidationcentralized"
         transparency: "checkgoodtransparencydeterministic"
         environment: "checkfailenvironmentdesktop"
-        privacy: "checkpassprivacybasic"
+        privacy: "checkpassprivacyaddressrotation"
         fees: "checkpassfeecontroloverride"
       privacycheck:
         privacyaddressreuse: "checkfailprivacyaddressrotation"
@@ -28,6 +28,8 @@ platform:
         privacynetwork: "checkfailprivacynetworknosupporttor"
     os:
       - name: windows
+        <<: *DEFAULT
+      - name: linux
         <<: *DEFAULT
   - mobile:
     name: mobile
@@ -41,7 +43,7 @@ platform:
         validation: "checkfailvalidationcentralized"
         transparency: "checkgoodtransparencydeterministic"
         environment: "checkpassenvironmentmobile"
-        privacy: "checkpassprivacybasic"
+        privacy: "checkpassprivacyaddressrotation"
         fees: "checkpassfeecontroloverride"
       privacycheck:
         privacyaddressreuse: "checkfailprivacyaddressrotation"
@@ -50,6 +52,5 @@ platform:
     os:
       - name: android
         <<: *DEFAULT
-      - name: ios
-        <<: *DEFAULT
+      
 ---
