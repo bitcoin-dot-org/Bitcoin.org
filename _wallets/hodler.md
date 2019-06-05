@@ -20,10 +20,10 @@ platform:
         validation: "checkfailvalidationcentralized"
         transparency: "checkgoodtransparencydeterministic"
         environment: "checkfailenvironmentdesktop"
-        privacy: "checkpassprivacyaddressrotation"
+        privacy: "checkpassprivacybasic"
         fees: "checkpassfeecontroloverride"
       privacycheck:
-        privacyaddressreuse: "checkfailprivacyaddressrotation"
+        privacyaddressreuse: "checkpassprivacyaddressrotation"
         privacydisclosure: "checkfailprivacydisclosurecentralized"
         privacynetwork: "checkfailprivacynetworknosupporttor"
     os:
@@ -43,10 +43,10 @@ platform:
         validation: "checkfailvalidationcentralized"
         transparency: "checkgoodtransparencydeterministic"
         environment: "checkpassenvironmentmobile"
-        privacy: "checkpassprivacyaddressrotation"
+        privacy: "checkpassprivacybasic"
         fees: "checkpassfeecontroloverride"
       privacycheck:
-        privacyaddressreuse: "checkfailprivacyaddressrotation"
+        privacyaddressreuse: "checkpassprivacyaddressrotation"
         privacydisclosure: "checkfailprivacydisclosurecentralized"
         privacynetwork: "checkfailprivacynetworknosupporttor"
     os:
