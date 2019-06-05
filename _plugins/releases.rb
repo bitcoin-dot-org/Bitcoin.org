@@ -82,7 +82,6 @@ module Jekyll
 
         lang = 'en'
         src = file
-        srcdir = '_releases'
         output_directory = lang + '/release'
         site.pages << ReleasePage.new(site, site.source, lang, '_releases', src, output_directory)
       end

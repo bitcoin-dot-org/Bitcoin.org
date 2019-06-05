@@ -131,8 +131,6 @@ module Jekyll
 
         devsearches_json = []
         site.config["devsearches"].each { |cat, items|
-          devsearches_data_item = {}
-
           if cat == "Glossary"
             items.each { |language, list|
               list.each { |el|

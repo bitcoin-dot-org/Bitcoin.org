@@ -29,7 +29,7 @@ end
 def fetchlinks()
   # Fetch new list of links
   links = {}
-  dirs = Dir.glob(WORKDIR + "/_site/**/*.html").each { |file|
+  Dir.glob(WORKDIR + "/_site/**/*.html").each { |file|
     content = File.read(file)
     content.scan(/ href *= *"(.*?)"/).each { |link|
       link = link[0].to_s.gsub(/^(https?:\/\/(www\.)?bitcoin\.org)?\//, '/')
