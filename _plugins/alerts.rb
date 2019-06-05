@@ -70,7 +70,6 @@ module Jekyll
         lang = 'en'
         src = file
         dst = file
-        srcdir = '_alerts'
         dstdir = lang + '/alert'
         date = dst.split('-')
         next if date.length < 4

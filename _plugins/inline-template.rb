@@ -22,7 +22,7 @@ module Jekyll
       output = super
 
       data = YAML.load(output)
-      template = File.open(@template_name, mode = "r")
+      template = File.open(@template_name)
       @mytemplate = Liquid::Template.parse(template.read())
       @mytemplate.render('entry' => data)
     end

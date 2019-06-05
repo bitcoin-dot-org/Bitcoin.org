@@ -6,15 +6,6 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 5
-Lint/UselessAssignment:
-  Exclude:
-    - '_contrib/comparelinks.rb'
-    - '_plugins/alerts.rb'
-    - '_plugins/glossary.rb'
-    - '_plugins/inline-template.rb'
-    - '_plugins/releases.rb'
-
 # Offense count: 20
 Metrics/AbcSize:
   Max: 136
