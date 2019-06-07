@@ -339,13 +339,13 @@ $scores:
                     position: relative;
                     cursor: pointer;
                     @if $score == fail {
-                        background-image: url('/img/icons/ico_check_red.svg?1528322191');
+                        background-image: url('/img/icons/ico_check_fail.svg?1528322191');
                     } @else if $score == pass {
-                        background-image: url('/img/icons/ico_check_orange.svg?1528322191');
+                        background-image: url('/img/icons/ico_check_pass.svg?1528322191');
                     } @else if $score == neutral {
-                        background-image: url('/img/icons/ico_check_gray.svg?1528322191');
+                        background-image: url('/img/icons/ico_check_neutral.svg?1528322191');
                     } @else {
-                        background-image: url('/img/icons/ico_check_green.svg?1528322191');
+                        background-image: url('/img/icons/ico_check_good.svg?1528322191');
                     }
 
                     &::after {
