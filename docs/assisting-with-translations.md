@@ -34,7 +34,7 @@ General guidelines provided by Transifex itself can be found [here](https://docs
 * In the beginning, stay away from the Glossary as this can be edited by new translators but no history is saved.
 
 ### 4. Join our Telegram Group
-* Join our [Telegram Group](https://t.me/joinchat/Bgh47RC1BZb2YE6u8iznOg).
+* Join our [Telegram Group](https://t.me/bitcoinaroundtheworld).
 * The Website Maintainer, both Team Leaders for translations, a number of language coordinators, and various translators are present in this group.
 * We are happy to help in case you need assistance.
 
@@ -151,7 +151,7 @@ Comment the mistake and mention one of the Team Leaders by using @username or co
 
 ### 11. How do I get in contact with other translators? 
 
-You can join our [Telegram Group](https://t.me/joinchat/Bgh47RC1BZb2YE6u8iznOg). The Website Maintainer, both Team Leaders for translations, and a bunch of coordinators, reviewers, and translators are present in this group. 
+You can join our [Telegram Group](https://t.me/bitcoinaroundtheworld). The Website Maintainer, both Team Leaders for translations, and a bunch of coordinators, reviewers, and translators are present in this group. 
 
 If you only want to contact members of your language team on Transifex, click on "Teams" on the top and then on the small blue chat bubble symbol. By clicking on “New discussion”, you can create language specific discussions. Everyone in the language team will receive an (email) notification about this. 
 
@@ -165,7 +165,7 @@ Great work! Now that the string is translated, it has to be reviewed. If there a
 
 While it is possible to use the comment function on Transifex to ask for help, unfortunately no notification is sent out regarding a comment. Thus, your comment will probably stay unread until someone accidentally finds it. Therefore, we do not recommend using the comment function in this case. 
 
-Instead, please ask your question in the [Telegram Group](https://t.me/joinchat/Bgh47RC1BZb2YE6u8iznOg) or contact one of the Team Leaders. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). 
+Instead, please ask your question in the [Telegram Group](https://t.me/bitcoinaroundtheworld) or contact one of the Team Leaders. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). 
      
 ### 14. I can’t find a team for my own language. Who should I contact to add a new language? 
 
@@ -235,7 +235,7 @@ We strongly recommend to not use this function at all. Instead, please contact e
 
 ### 24. I cannot find an answer to my problem in the FAQ. What should I do? 
 
-Join our [Telegram Group](https://t.me/joinchat/Bgh47RC1BZb2YE6u8iznOg) and ask your question there. 
+Join our [Telegram Group](https://t.me/bitcoinaroundtheworld) and ask your question there. 
 
 Alternatively, you can directly contact the Team Leaders. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). We are happy to help. 
 ___

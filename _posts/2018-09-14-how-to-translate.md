@@ -42,7 +42,7 @@ every string, making it impossible to destroy previous work. In the beginning,
 stay away from the Glossary as this can be edited by new translators but no
 history is saved.
 
-4. [Join the Telegram group for translators](https://t.me/joinchat/Bgh47RC1BZb2YE6u8iznOg).
+4. [Join the Telegram group for translators](https://t.me/bitcoinaroundtheworld).
 The website maintainer, both team leaders for translations, a number of language
 coordinators, and various translators are present in this group. We are happy to
 help in case you need assistance.
