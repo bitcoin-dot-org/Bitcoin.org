@@ -78,6 +78,16 @@ es:
     decription: "El documento original de Satoshi continúa siendo lectura recomendada para cualquiera que estudie cómo funciona Bitcoin. Escoge qué traducción del documento quieres leer:"
     translated_by: "traducido por"
     submit_new_translation: '¿Quieres traducir el documento a tu lengua? Para consultar las instrucciones, visita el <a href="https://github.com/saivann/bitcoinwhitepaper">Bitcoin Paper repository</a> y si tienes preguntas, visita: <a href="https://github.com/saivann/bitcoinwhitepaper/issues/new">open an issue</a>.'
+  buy:
+    title: "Compra Bitcoin"
+    pagetitle: "Cómo comprar bitcoin"
+    summary: "Existen muchas maneras por las que puede comprar bitcoin."
+    bitcoin-exchange: "Use una casa de cambio de Bitcoin"
+    bitcoin-exchange-text: "Nuestra página <a href=\"/en/exchanges\">Bitcoin Exchange</a>, tiene una lista de diferentes negocios que le pueden ayudar a comprar Bitcoin empleando su cuenta bancaria."
+    p2p-bitcoins: "Explore un directorio P2P"
+    p2p-bitcoins-text: "El efectuar un intercambio basado en un <a href=\"/en/exchanges#p2p\">directorio punto a punto</a> le permite buscar y explorar diferentes vendedores de bitcoin. Los vendedores reciben calificaciones en forma de reseñas y puntajes para ayudarle a elegir."
+    bitcoin-atm: "Use un cajero Bitcoin"
+    bitcoin-atm-text: "Los cajeros Bitcoin funcionan como un cajero estándar, excepto que estos le permiten depositar y retirar dinero de manera que pueda comprar o vender bitcoin. <a href=\"https://coinatmradar.com/\">Coin ATM Radar</a> tiene un mapa interactivo para ayudarle a encontrar el cajero bitcoin más próximo a usted."
   community:
     title: "Comunidad - Bitcoin"
     pagetitle: "Comunidades Bitcoin"
@@ -639,6 +649,7 @@ es:
     menu-legal: "Legal"
     menu-press: "Prensa"
     menu-resources: Recursos
+    menu-buy: "Compra Bitcoin"
     menu-participate: Participe
     menu-vocabulary: Vocabulario
     menu-you-need-to-know: "Cosas que necesita saber"
@@ -652,6 +663,7 @@ es:
     bitcoin-for-individuals: bitcoin-para-personas
     bitcoin-for-businesses: bitcoin-para-empresas
     bitcoin-paper: bitcoin-documento
+    buy: compra
     choose-your-wallet: elige-tu-monedero
     community: comunidad
     development: desarrollo
