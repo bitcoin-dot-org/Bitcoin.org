@@ -1,0 +1,95 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+<div class="wallet-selector">
+  <div class="container">
+    
+    <p class="wallet-table-headline">Below is a list of wallets available for your operating system</p>
+    <table class="wallet-table">
+      <thead>
+        <tr>
+          <th class="wallet-table-head">
+            <p class="wallet-table-title">iOS Wallets:</p>
+          </th>
+          <th class="wallet-table-head">
+            <p class="wallet-table-title">Control</p>
+          </th>
+          <th class="wallet-table-head">
+            <p class="wallet-table-title">Validation</p>
+          </th>
+          <th class="wallet-table-head">
+            <p class="wallet-table-title">Transparency</p>
+          </th>
+          <th class="wallet-table-head">
+            <p class="wallet-table-title">Environment</p>
+          </th>
+          <th class="wallet-table-head">
+            <p class="wallet-table-title">Fees</p>
+          </th>
+          <th class="wallet-table-head">
+            <p class="wallet-table-title">Reuse</p>
+          </th>
+          <th class="wallet-table-head">
+            <p class="wallet-table-title">Privacy<br>Disclosure</p>
+          </th>
+          <th class="wallet-table-head">
+            <p class="wallet-table-title">Tor</p>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for wallet in site.wallets %}
+          {% for platform in wallet.platform %}
+            {% for os in platform.os %}
+              <tr class="wallet-table-row">
+                <td class="wallet-table-data">
+                  <img class="wallet-img" src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" />
+                  <span class="wallet-label">{{wallet.title}}</span>
+                </td>
+                {% for check in os.check %}
+                  {% assign checkName = check[0] %}
+                  {% if checkName == "privacy" %}
+                    {% continue %}
+                  {% endif %}
+                  {% assign checkValue = check[1] %}
+                  <td class="wallet-table-data">
+                    <div class="wallet-{% if checkValue contains 'checkgood' %}good{% elsif checkValue contains 'checkpass' %}good{% elsif checkValue contains 'checkfail' %}caution{% elsif checkValue contains 'checkneutral' %}neutral{% endif %}"></div>
+                  </td>
+                {% endfor %}
+                {% if os.privacycheck %}
+                  {% for privacycheck in os.privacycheck %}
+                    {% assign privacycheckValue = privacycheck[1] %}
+                    <td class="wallet-table-data">
+                      <div class="wallet-{% if privacycheckValue contains 'checkgood' %}good{% elsif privacycheckValue contains 'checkpass' %}good{% elsif privacycheckValue contains 'checkfail' %}caution{% elsif privacycheckValue contains 'checkneutral' %}neutral{% endif %}"></div>
+                    </td>
+                  {% endfor %}
+                {% else %}
+                  <td class="wallet-table-data">-</td>
+                  <td class="wallet-table-data">-</td>
+                  <td class="wallet-table-data">-</td>
+                {% endif %}
+              </tr>
+            {% endfor %}
+          {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div class="wallet-hints-row">
+      <div class="wallet-hint">
+        <div class="wallet-good"></div>
+        <p class="wallet-hint-text">- Good</p>
+      </div>
+      <div class="wallet-hint">
+        <div class="wallet-caution"></div>
+        <p class="wallet-hint-text">- Caution</p>
+      </div>
+      <div class="wallet-hint">
+        <div class="wallet-neutral"></div>
+        <p class="wallet-hint-text">- Neural</p>
+      </div>
+    </div>
+  </div>
+</div>  
