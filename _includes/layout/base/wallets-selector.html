@@ -167,7 +167,7 @@ http://opensource.org/licenses/MIT.
         <div class="sidebar-selector-section">
           <div class="sidebar-selector-section-top">
             <h3 class="sidebar-selector-title">Important criteria:</h3>
-            <span class="allowed-criteria-amount">1/3</span>
+            <span class="allowed-criteria-amount">0/3</span>
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
@@ -269,7 +269,7 @@ http://opensource.org/licenses/MIT.
         <div class="sidebar-selector-section">
           <div class="sidebar-selector-section-top">
             <h3 class="sidebar-selector-title">Features:</h3>
-            <span class="allowed-criteria-amount">1/2</span>
+            <span class="allowed-criteria-amount">0/2</span>
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
@@ -350,75 +350,83 @@ http://opensource.org/licenses/MIT.
 
       <div class="wallet-selector-content">
         <p class="wallet-table-headline">Below is a list of wallets available for your operating system</p>
-        <table class="wallet-table">
-          <thead>
-            <tr>
-              <th class="wallet-table-head">
+        <div class="wallet-table">
+          
+            <div class="wallet-table-row">
+              <div class="wallet-table-head">
                 <p class="wallet-table-title">iOS Wallets:</p>
-              </th>
-              <th class="wallet-table-head">
+              </div>
+              <div class="wallet-table-head">
                 <p class="wallet-table-title">Control</p>
-              </th>
-              <th class="wallet-table-head">
+              </div>
+              <div class="wallet-table-head">
                 <p class="wallet-table-title">Validation</p>
-              </th>
-              <th class="wallet-table-head">
+              </div>
+              <div class="wallet-table-head">
                 <p class="wallet-table-title">Transparency</p>
-              </th>
-              <th class="wallet-table-head">
+              </div>
+              <div class="wallet-table-head">
                 <p class="wallet-table-title">Environment</p>
-              </th>
-              <th class="wallet-table-head">
+              </div>
+              <div class="wallet-table-head">
                 <p class="wallet-table-title">Fees</p>
-              </th>
-              <th class="wallet-table-head">
+              </div>
+              <div class="wallet-table-head">
                 <p class="wallet-table-title">Reuse</p>
-              </th>
-              <th class="wallet-table-head">
+              </div>
+              <div class="wallet-table-head">
                 <p class="wallet-table-title">Privacy<br>Disclosure</p>
-              </th>
-              <th class="wallet-table-head">
+              </div>
+              <div class="wallet-table-head">
                 <p class="wallet-table-title">Tor</p>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
+              </div>
+            </div>
+          
             {% for wallet in site.wallets %}
               {% for platform in wallet.platform %}
                 {% for os in platform.os %}
-                  <tr class="wallet-table-row">
-                    <td class="wallet-table-data">
+                  <a
+                    href="
+                      {% if platform.name == os.name %}
+                        /{{page.lang}}/wallets/{{platform.name}}/{{wallet.id}}/
+                      {% else %}
+                        /{{page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{wallet.id}}/
+                      {% endif %}
+                    "
+                    class="wallet-table-row"
+                    data-os="{{os.name}}"
+                  >
+                    <div class="wallet-table-data">
                       <img class="wallet-img" src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" />
                       <span class="wallet-label">{{wallet.title}}</span>
-                    </td>
+                    </div>
                     {% for check in os.check %}
                       {% assign checkName = check[0] %}
                       {% if checkName == "privacy" %}
                         {% continue %}
                       {% endif %}
                       {% assign checkValue = check[1] %}
-                      <td class="wallet-table-data">
+                      <div class="wallet-table-data">
                         <div class="wallet-{% if checkValue contains 'checkgood' %}good{% elsif checkValue contains 'checkpass' %}good{% elsif checkValue contains 'checkfail' %}caution{% elsif checkValue contains 'checkneutral' %}neutral{% endif %}"></div>
-                      </td>
+                      </div>
                     {% endfor %}
                     {% if os.privacycheck %}
                       {% for privacycheck in os.privacycheck %}
                         {% assign privacycheckValue = privacycheck[1] %}
-                        <td class="wallet-table-data">
+                        <div class="wallet-table-data">
                           <div class="wallet-{% if privacycheckValue contains 'checkgood' %}good{% elsif privacycheckValue contains 'checkpass' %}good{% elsif privacycheckValue contains 'checkfail' %}caution{% elsif privacycheckValue contains 'checkneutral' %}neutral{% endif %}"></div>
-                        </td>
+                        </div>
                       {% endfor %}
                     {% else %}
-                      <td class="wallet-table-data">-</td>
-                      <td class="wallet-table-data">-</td>
-                      <td class="wallet-table-data">-</td>
+                      <div class="wallet-table-data">-</div>
+                      <div class="wallet-table-data">-</div>
+                      <div class="wallet-table-data">-</div>
                     {% endif %}
-                  </tr>
+                  </a>
                 {% endfor %}
               {% endfor %}
             {% endfor %}
-          </tbody>
-        </table>
+        </div>
 
         <div class="wallet-hints-row">
           <div class="wallet-hint">

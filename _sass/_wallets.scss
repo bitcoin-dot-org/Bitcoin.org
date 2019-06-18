@@ -983,9 +983,12 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   width: 100%;
 }
 .wallet-table-head {
+  display: table-cell;
 	border: none;
 }
 .wallet-table {
+  display: table;
+  width: 100%;
 	border-collapse: separate;
 	border-spacing: 0 9px;
 }
@@ -1004,9 +1007,10 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 	vertical-align: middle;
 }
 .wallet-table-row {
-	cursor: pointer;
+  display: table-row;
 }
 .wallet-table-data {
+  display: table-cell;
 	padding: 20px;
 	border: 1px solid #DADADA;
 	border-left: 0;
