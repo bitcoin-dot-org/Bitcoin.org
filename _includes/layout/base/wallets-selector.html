@@ -24,21 +24,21 @@ http://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio" name="platform"/>
+                    <input id="walletSelector" type="radio" class="platform-radio" name="platform" value="android"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_android.svg" alt="android" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_android_bright.svg" alt="android" class="platform-radio-icon-active">
                     </div>
                   </label>
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio" name="platform"/>
+                    <input id="walletSelector" type="radio" class="platform-radio" name="platform" value="ios"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_mac.svg" alt="ios" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_mac_bright.svg" alt="ios" class="platform-radio-icon-active">
                     </div>
                   </label>
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio" name="platform"/>
+                    <input id="walletSelector" type="radio" class="platform-radio" name="platform" value="windows"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_windows.svg" alt="windows" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_windows_bright.svg" alt="windows" class="platform-radio-icon-active">
@@ -58,21 +58,21 @@ http://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio" name="platform"/>
+                    <input id="walletSelector" type="radio" class="platform-radio" name="platform" value="linux"/>
                     <div class="platform-radio-custom">
-                      <img src="/img/os/wallet_menu_linux.svg" alt="android" class="platform-radio-icon-inactive">
-                      <img src="/img/os/wallet_menu_linux_bright.svg" alt="android" class="platform-radio-icon-active">
+                      <img src="/img/os/wallet_menu_linux.svg" alt="linux" class="platform-radio-icon-inactive">
+                      <img src="/img/os/wallet_menu_linux_bright.svg" alt="linux" class="platform-radio-icon-active">
                     </div>
                   </label>
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio" name="platform"/>
+                    <input id="walletSelector" type="radio" class="platform-radio" name="platform" value="mac"/>
                     <div class="platform-radio-custom">
-                      <img src="/img/os/wallet_menu_mac.svg" alt="ios" class="platform-radio-icon-inactive">
-                      <img src="/img/os/wallet_menu_mac_bright.svg" alt="ios" class="platform-radio-icon-active">
+                      <img src="/img/os/wallet_menu_mac.svg" alt="mac" class="platform-radio-icon-inactive">
+                      <img src="/img/os/wallet_menu_mac_bright.svg" alt="mac" class="platform-radio-icon-active">
                     </div>
                   </label>
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio" name="platform"/>
+                    <input id="walletSelector" type="radio" class="platform-radio" name="platform" value="windows"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_windows.svg" alt="windows" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_windows_bright.svg" alt="windows" class="platform-radio-icon-active">
@@ -94,7 +94,7 @@ http://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio" name="platform"/>
+                    <input id="walletSelector" type="radio" class="platform-radio" name="platform" value="hardware"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_hardware.svg" alt="hardware" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_hardware_bright.svg" alt="hardware" class="platform-radio-icon-active">
@@ -114,10 +114,10 @@ http://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio" name="platform"/>
+                    <input id="walletSelector" type="radio" class="platform-radio" name="platform" value="web"/>
                     <div class="platform-radio-custom">
-                      <img src="/img/os/wallet_menu_web.svg" alt="windows" class="platform-radio-icon-inactive">
-                      <img src="/img/os/wallet_menu_web_bright.svg" alt="windows" class="platform-radio-icon-active">
+                      <img src="/img/os/wallet_menu_web.svg" alt="web" class="platform-radio-icon-inactive">
+                      <img src="/img/os/wallet_menu_web_bright.svg" alt="web" class="platform-radio-icon-active">
                     </div>
                   </label>
                 </div>
@@ -129,7 +129,7 @@ http://opensource.org/licenses/MIT.
           <h3 class="sidebar-selector-title">User type:</h3>
           <div class="user-radio-row">
             <label class="user-radio-wrapper">
-              <input type="radio" class="user-radio" name="user" />
+              <input id="walletSelector" type="radio" class="user-radio" name="user" />
               <div class="user-radio-text">Bitcoin beginner</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -141,7 +141,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="user-radio-row">
             <label class="user-radio-wrapper">
-              <input type="radio" class="user-radio" name="user" />
+              <input id="walletSelector" type="radio" class="user-radio" name="user" />
               <div class="user-radio-text">Normal User</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -153,7 +153,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="user-radio-row">
             <label class="user-radio-wrapper">
-              <input type="radio" class="user-radio" name="user" />
+              <input id="walletSelector" type="radio" class="user-radio" name="user" />
               <div class="user-radio-text">Advance User</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -171,7 +171,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="important" value="control" class="checkbox" />
               <div class="checkbox-text">Control</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -183,7 +183,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="important" value="validation" class="checkbox" />
               <div class="checkbox-text">Validation</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -195,7 +195,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="important" value="fees" class="checkbox" />
               <div class="checkbox-text">Fees</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -207,7 +207,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="important" value="transparency" class="checkbox" />
               <div class="checkbox-text">Transparency</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -219,7 +219,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="important" value="environment" class="checkbox" />
               <div class="checkbox-text">Environment</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -231,7 +231,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="important" value="reuse" class="checkbox" />
               <div class="checkbox-text">Reuse</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -243,7 +243,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="important" value="disclosure" class="checkbox" />
               <div class="checkbox-text">Disclosure</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -255,7 +255,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="important" value="tor" class="checkbox" />
               <div class="checkbox-text">Tor</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -273,7 +273,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="features" value="multisig" class="checkbox" />
               <div class="checkbox-text">Multisig</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -285,7 +285,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="features" value="segwit" class="checkbox" />
               <div class="checkbox-text">Segwit</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -297,7 +297,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="features" value="bech32" class="checkbox" />
               <div class="checkbox-text">Bech32</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -309,32 +309,8 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="features" value="lightning" class="checkbox" />
               <div class="checkbox-text">Lightning</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" class="checkbox" />
-              <div class="checkbox-text">Lorem ipsum</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" class="checkbox" />
-              <div class="checkbox-text">Lorem ipsum</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
               <img src="/img/icons/info-alt.svg" alt="info">
@@ -386,13 +362,8 @@ http://opensource.org/licenses/MIT.
               {% for platform in wallet.platform %}
                 {% for os in platform.os %}
                   <a
-                    href="
-                      {% if platform.name == os.name %}
-                        /{{page.lang}}/wallets/{{platform.name}}/{{wallet.id}}/
-                      {% else %}
-                        /{{page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{wallet.id}}/
-                      {% endif %}
-                    "
+                    id="walletLink"
+                    href="{% if platform.name == os.name %}/{{page.lang}}/wallets/{{platform.name}}/{{wallet.id}}/{% else %}/{{page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{wallet.id}}/{% endif %}"
                     class="wallet-table-row"
                     data-os="{{os.name}}"
                   >
@@ -453,3 +424,48 @@ http://opensource.org/licenses/MIT.
     </div>
   </div>
 </div>  
+
+<script>
+  var queries = {
+    platform: 'android',
+    user: 'normal',
+    important: [],
+    features: []
+  }
+
+  function onSelectorChange(selector) {
+    if (selector.name === 'important' || selector.name === 'features') {
+      if (selector.checked) {
+        queries[selector.name].push(selector.value);
+      }
+      else {
+        var filteredQueries = queries[selector.name].filter(function(element) {
+          return element !== selector.value;
+        });
+        queries[selector.name] = filteredQueries;
+      }
+    } else {
+      queries[selector.name] = selector.value;
+    }
+    console.log(queries);
+  }
+
+  var selectorsList = document.querySelectorAll('#walletSelector');
+  selectorsList.forEach(function(selector) {
+    selector.addEventListener('change', function() {
+      onSelectorChange(selector)
+    })
+  })
+  
+  var linksList = document.querySelectorAll('#walletLink');
+  console.log(linksList)
+  
+  linksList.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      var href = this.getAttribute("href");
+      console.log(href)
+      e.preventDefault()
+    })
+  })
+  
+</script>
