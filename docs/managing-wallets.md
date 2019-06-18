@@ -158,3 +158,9 @@ change address for each transaction.
 Wallet entries are validated against the schema in
 `quality-assurance/schemas/wallets.yaml` and you will find a
 description of every available option in that file.
+
+### TODO
+
++ Review existing instructions
++ Add instructions for declaring features alongside wallet additions
++ Update instructions for declaring criteria
