@@ -129,7 +129,7 @@ http://opensource.org/licenses/MIT.
           <h3 class="sidebar-selector-title">Ease of use:</h3>
           <div class="user-radio-row">
             <label class="user-radio-wrapper">
-              <input id="walletSelector" type="radio" class="user-radio" name="user" />
+              <input id="walletSelector" type="radio" class="user-radio" name="user" value="beginner"  />
               <div class="user-radio-text">Beginners</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -141,7 +141,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="user-radio-row">
             <label class="user-radio-wrapper">
-              <input id="walletSelector" type="radio" class="user-radio" name="user" />
+              <input id="walletSelector" type="radio" class="user-radio" name="user" value="experienced" />
               <div class="user-radio-text">Experienced</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -219,7 +219,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input id="walletSelector" type="checkbox" name="important" value="reuse" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="important" value="privacyaddressreuse" class="checkbox" />
               <div class="checkbox-text">Reuse</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -231,7 +231,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input id="walletSelector" type="checkbox" name="important" value="disclosure" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="important" value="privacydisclosure" class="checkbox" />
               <div class="checkbox-text">Disclosure</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -243,7 +243,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input id="walletSelector" type="checkbox" name="important" value="tor" class="checkbox" />
+              <input id="walletSelector" type="checkbox" name="important" value="privacynetwork" class="checkbox" />
               <div class="checkbox-text">Tor</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -411,8 +411,8 @@ http://opensource.org/licenses/MIT.
                   <a
                     id="walletLink"
                     href="{% if platform.name == os.name %}/{{page.lang}}/wallets/{{platform.name}}/{{wallet.id}}/{% else %}/{{page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{wallet.id}}/{% endif %}"
-                    class="wallet-table-row"
-                    data-os="{{os.name}}"
+                    class="wallet-table-row hidden"
+                    data-categories="{% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' %}{{checkName}} {% endif %}{% endfor %}{{os.name}}"
                   >
                     <div class="wallet-table-data">
                       <img class="wallet-img" src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" />
@@ -461,11 +461,17 @@ http://opensource.org/licenses/MIT.
           </div>
         </div>
 
-        <div class="empty-box">
+        <div class="empty-box no-matching-box hidden">
           <img src="/img/icons/emty.svg" alt="wallet with magnifier">
           <h2 class="empty-box-title">No matching wallets found</h2>
           <p class="empty-box-text">No wallets matching your search criteria
           were found. Please update your search criteria and try again.</p>
+        </div>
+
+        <div class="empty-box browse-wallets-box">
+          <img src="/img/icons/emty.svg" alt="wallet with magnifier">
+          <h2 class="empty-box-title">Browse wallets</h2>
+          <p class="empty-box-text">Use the wallet selector to browse wallets that match your search criteria</p>
         </div>
       </div>
 
@@ -474,46 +480,83 @@ http://opensource.org/licenses/MIT.
 </div>  
 
 <script>
-  var queries = {
-    platform: 'android',
-    user: 'normal',
-    important: [],
-    features: []
-  }
+  var queries = {};
 
-  function onSelectorChange(selector) {
-    if (selector.name === 'important' || selector.name === 'features') {
-      if (selector.checked) {
-        queries[selector.name].push(selector.value);
-      }
-      else {
-        var filteredQueries = queries[selector.name].filter(function(element) {
-          return element !== selector.value;
-        });
-        queries[selector.name] = filteredQueries;
-      }
-    } else {
-      queries[selector.name] = selector.value;
+  function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  };
+
+  function updateQueryStringParameter(key, value) {
+    var uri = window.location.href;
+    var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+    var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+    if (uri.match(re)) {
+      return uri.replace(re, '$1' + key + "=" + value + '$2');
     }
-    console.log(queries);
+    else {
+      return uri + separator + key + "=" + value;
+    }
   }
 
-  var selectorsList = document.querySelectorAll('#walletSelector');
-  selectorsList.forEach(function(selector) {
-    selector.addEventListener('change', function() {
-      onSelectorChange(selector)
-    })
-  })
+  function setUrlParametr(key, value) {
+    history.pushState(null, null, updateQueryStringParameter(key, value));
+  }
   
-  var linksList = document.querySelectorAll('#walletLink');
-  console.log(linksList)
+  var categoryFilters = [];
+  function onSelectorChange(selector) {
+    if (selector.checked) {
+      categoryFilters.push(selector.value)
+      console.log(categoryFilters)
+    } else {
+      
+    }
+  }
   
-  linksList.forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      var href = this.getAttribute("href");
-      console.log(href)
-      e.preventDefault()
-    })
-  })
+  var linksList = document.querySelectorAll('#walletLink');  
+  function setListners() {  
+    var selectorsList = document.querySelectorAll('#walletSelector');
+    selectorsList.forEach(function(selector) {
+      selector.addEventListener('change', function() {
+        onSelectorChange(selector);
+      });
+    });
+    
+    linksList.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var href = this.getAttribute("href");
+        var parameters = '?';
+        
+        for (const query in queries) {
+          if (parameters.length > 1) parameters += '&' + query + '=' + queries[query]
+          else parameters += query + '=' + queries[query]
+        }
+        location.href = href + parameters;
+        e.preventDefault()
+      });
+    });
+  }
+  
+  function filterWallets() {
+    for (var query in queries) {
+      var relevantLinks = document.querySelectorAll('[data-' + query + '=' + queries[query] + ']' );
+
+      relevantLinks.forEach(function(link) {
+        link.classList.remove('hidden')
+      })
+    }
+  }
+
+  var emptyBox = document.querySelector('.browse-wallets-box')
+  function init() {
+    if (window.location.search) {
+      emptyBox.classList.add('hidden')
+    }
+    setListners()
+  }
+
+  init()
   
 </script>

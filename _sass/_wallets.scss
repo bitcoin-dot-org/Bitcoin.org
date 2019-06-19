@@ -1009,6 +1009,9 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 .wallet-table-row {
   display: table-row;
 }
+.wallet-table-row.hidden {
+  display: none;
+}
 .wallet-table-data {
   display: table-cell;
 	padding: 20px;
@@ -1079,6 +1082,9 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   border: 1px solid #DADADA;
   text-align: center;
   padding: 75px 30px 60px;
+}
+.empty-box.hidden {
+  display: none;
 }
 .empty-box-title {
   margin: 15px 0;
