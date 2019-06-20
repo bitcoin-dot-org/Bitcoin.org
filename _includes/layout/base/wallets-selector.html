@@ -409,7 +409,7 @@ http://opensource.org/licenses/MIT.
                   >
                     <div class="wallet-table-data">
                       <img class="wallet-img" src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" />
-                      <span class="wallet-label">{{wallet.title}}</span>
+                      <span class="wallet-label">{{wallet.titleshort}}</span>
                     </div>
                     {% for check in os.check %}
                       {% assign checkName = check[0] %}
