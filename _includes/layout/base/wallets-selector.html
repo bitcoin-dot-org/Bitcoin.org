@@ -510,7 +510,7 @@ http://opensource.org/licenses/MIT.
         selectedInputs.forEach(function(input) {
           filters.push(input.value);
         });
-        filterWallets(filters);
+        renderContent(filters);
       });
     });
     
@@ -531,42 +531,68 @@ http://opensource.org/licenses/MIT.
     return true;
   }
   
+  function displayContentSections() {
+    var visibleWallets = document.querySelectorAll('#walletLink.visible');
+    var walletsTable = document.querySelector('.wallet-table-wrapper');
+    var noMatchBox = document.querySelector('.no-matching-box');
+    var browseBox = document.querySelector('.browse-wallets-box');
+    var isCategorySelected = !!getUrlParameter('filters');
+    var isWalletsVisible = !!visibleWallets.length;
+    
+    if (!isWalletsVisible && isCategorySelected) {
+      noMatchBox.classList.remove('hidden');
+      walletsTable.classList.add('hidden');
+      browseBox.classList.add('hidden');
+    } else if (!isWalletsVisible && !isCategorySelected) {
+      browseBox.classList.remove('hidden');
+      noMatchBox.classList.add('hidden');
+      walletsTable.classList.add('hidden');
+    } else {
+      walletsTable.classList.remove('hidden');
+      browseBox.classList.add('hidden');
+      noMatchBox.classList.add('hidden');
+    }
+  }
+
   function filterWallets(filters) {
     linksList.forEach(function(link) {
       var categories = link.dataset.categories.split(' ');
-      if (checkIfFiltersInclude(categories, filters)) link.classList.add('visible')
-      else link.classList.remove('visible')
+      if (checkIfFiltersInclude(categories, filters)) link.classList.add('visible');
+      else link.classList.remove('visible');
     });
-
-    var visibleWallets = document.querySelectorAll('#walletLink.visible');
-    var walletsTable = document.querySelector('.wallet-table-wrapper')
-    var emptyBox = document.querySelector('.no-matching-box')
-    if (visibleWallets.length) {
-      emptyBox.classList.add('hidden');
-      walletsTable.classList.remove('hidden')
-    } else {
-      emptyBox.classList.remove('hidden');
-      walletsTable.classList.add('hidden')
-    }
-
-    setFilterUrlParameter(filters)
+  }
+  
+  function disableInputs(isDisabled) {
+    var checkboxes = document.querySelectorAll('#walletSelector:not(.platform-radio)');
+    checkboxes.forEach(function(checkbox) {
+      checkbox.disabled = isDisabled;
+    })
   }
 
-  function checkSelectedInputs(filters) {
+  function setInputActivity() {
+    var platformSelectors = document.querySelectorAll('.platform-radio:checked');
+    if (platformSelectors.length) disableInputs(false);
+    else disableInputs(true);
+  }
+  
+  function renderContent(filters) {
+    filterWallets(filters);
+    setInputActivity();
+    displayContentSections();
+    setFilterUrlParameter(filters);
+  }
+
+  function selectChckedInputs(filters) {
     selectorsList.forEach(function(selector) {
       if (filters.includes(selector.value)) selector.checked = true;
       else selector.checked = false;
     })
   }
-
-  var emptyBox = document.querySelector('.browse-wallets-box')
+  
   function init() {
-    if (!getUrlParameter('filters')) {
-      setFilterUrlParameter('android')
-    }
     var defaultParameters = getUrlParameter('filters').split(',');
-    checkSelectedInputs(defaultParameters)
-    filterWallets(defaultParameters);
+    selectChckedInputs(defaultParameters)
+    renderContent(defaultParameters);
     setListners();
   }
 

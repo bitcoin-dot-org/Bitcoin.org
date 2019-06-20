@@ -792,7 +792,7 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   line-height: 30px;
   cursor: pointer;
 }
-.checkbox-text:before {
+.checkbox-text::before {
   content: '';
   position: absolute;
   top: 4px;
@@ -802,12 +802,18 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   background: #fff;
   border: 1px solid #dadada;
 }
-.checkbox-wrapper .checkbox:checked + .checkbox-text:before {
+.checkbox:checked + .checkbox-text::before {
   background: #F7931A url('../img/icons/check.svg') center no-repeat;
   border: 1px solid #F7931A;
 }
-.checkbox-wrapper .checkbox:checked + .checkbox-text {
+.checkbox:checked + .checkbox-text {
   color: #13161F;
+}
+.checkbox[disabled] + .checkbox-text {
+  cursor: not-allowed;
+}
+.checkbox[disabled] + .checkbox-text::before {
+  background: lightgrey;
 }
 
 
@@ -834,7 +840,7 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   line-height: 30px;
   cursor: pointer;
 }
-.user-radio-text:before {
+.user-radio-text::before {
   content: '';
   position: absolute;
   top: 3px;
@@ -845,7 +851,7 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   border-radius: 50%;
   background: #FFF;
 }
-.user-radio-text:after {
+.user-radio-text::after {
   content: '';
   position: absolute;
   top: 10px;
@@ -856,11 +862,17 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   background: #F7931A;
   opacity: 0;
 }
-.user-radio-wrapper .user-radio:checked + .user-radio-text:after {
+.user-radio:checked + .user-radio-text::after {
   opacity: 1;
 }
-.user-radio-wrapper .user-radio:checked + .user-radio-text {
+.user-radio:checked + .user-radio-text {
   color: #13161F
+}
+.user-radio[disabled] + .user-radio-text {
+  cursor: not-allowed;
+}
+.user-radio[disabled] + .user-radio-text::before {
+  background: lightgrey;
 }
 
 .platform-radio-wrapper + .platform-radio-wrapper {
