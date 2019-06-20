@@ -366,8 +366,8 @@ http://opensource.org/licenses/MIT.
       </div>
 
       <div class="wallet-selector-content">
-        <div class="wallet-table">
-          
+        <div class="wallet-table-wrapper">        
+          <div class="wallet-table">        
             <div class="wallet-table-row">
               <div class="wallet-table-head">
                 <p class="wallet-table-title">iOS Wallets:</p>
@@ -404,8 +404,8 @@ http://opensource.org/licenses/MIT.
                   <a
                     id="walletLink"
                     href="{% if platform.name == os.name %}/{{page.lang}}/wallets/{{platform.name}}/{{wallet.id}}/{% else %}/{{page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{wallet.id}}/{% endif %}"
-                    class="wallet-table-row hidden"
-                    data-categories="{% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' %}{{checkName}} {% endif %}{% endfor %}{{os.name}}"
+                    class="wallet-table-row wallet-link"
+                    data-categories="{% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' %}{{checkName}} {% endif %}{% endfor %}{% if os.privacycheck %}{% for privacycheck in os.privacycheck %}{% assign privacycheckValue = privacycheck[1] %}{% assign privacycheckName = privacycheck[0] %}{% if privacycheckValue contains 'checkgood' or privacycheckValue contains 'checkpass' %}{{privacycheckName}} {% endif %}{% endfor %}{% endif %}{{os.name}}"
                   >
                     <div class="wallet-table-data">
                       <img class="wallet-img" src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" />
@@ -437,22 +437,23 @@ http://opensource.org/licenses/MIT.
                 {% endfor %}
               {% endfor %}
             {% endfor %}
+          </div>
+          <div class="wallet-hints-row">
+            <div class="wallet-hint">
+              <div class="wallet-good"></div>
+              <p class="wallet-hint-text">- Good</p>
+            </div>
+            <div class="wallet-hint">
+              <div class="wallet-caution"></div>
+              <p class="wallet-hint-text">- Caution</p>
+            </div>
+            <div class="wallet-hint">
+              <div class="wallet-neutral"></div>
+              <p class="wallet-hint-text">- Neutral</p>
+            </div>
+          </div>
         </div>
 
-        <div class="wallet-hints-row">
-          <div class="wallet-hint">
-            <div class="wallet-good"></div>
-            <p class="wallet-hint-text">- Good</p>
-          </div>
-          <div class="wallet-hint">
-            <div class="wallet-caution"></div>
-            <p class="wallet-hint-text">- Caution</p>
-          </div>
-          <div class="wallet-hint">
-            <div class="wallet-neutral"></div>
-            <p class="wallet-hint-text">- Neutral</p>
-          </div>
-        </div>
 
         <div class="empty-box no-matching-box hidden">
           <img src="/img/icons/emty.svg" alt="wallet with magnifier">
@@ -461,7 +462,7 @@ http://opensource.org/licenses/MIT.
           were found. Please update your search criteria and try again.</p>
         </div>
 
-        <div class="empty-box browse-wallets-box">
+        <div class="empty-box browse-wallets-box hidden">
           <img src="/img/icons/emty.svg" alt="wallet with magnifier">
           <h2 class="empty-box-title">Browse wallets</h2>
           <p class="empty-box-text">Use the wallet selector to find wallets that
@@ -495,60 +496,78 @@ http://opensource.org/licenses/MIT.
     }
   }
 
-  function setUrlParametr(key, value) {
-    history.pushState(null, null, updateQueryStringParameter(key, value));
-  }
-  
-  var categoryFilters = [];
-  function onSelectorChange(selector) {
-    if (selector.checked) {
-      categoryFilters.push(selector.value)
-      console.log(categoryFilters)
-    } else {
-      
-    }
+  function setFilterUrlParameter(value) {
+    history.pushState(null, null, updateQueryStringParameter('filters', value));
   }
   
   var linksList = document.querySelectorAll('#walletLink');  
+  var selectorsList = document.querySelectorAll('#walletSelector');
   function setListners() {  
-    var selectorsList = document.querySelectorAll('#walletSelector');
     selectorsList.forEach(function(selector) {
       selector.addEventListener('change', function() {
-        onSelectorChange(selector);
+        var filters = []
+        var selectedInputs = document.querySelectorAll('#walletSelector:checked');
+        selectedInputs.forEach(function(input) {
+          filters.push(input.value);
+        });
+        filterWallets(filters);
       });
     });
     
     linksList.forEach(function(link) {
       link.addEventListener('click', function(e) {
         var href = this.getAttribute("href");
-        var parameters = '?';
-        
-        for (const query in queries) {
-          if (parameters.length > 1) parameters += '&' + query + '=' + queries[query]
-          else parameters += query + '=' + queries[query]
-        }
-        location.href = href + parameters;
+        location.href = href + window.location.search;
         e.preventDefault()
       });
     });
   }
   
-  function filterWallets() {
-    for (var query in queries) {
-      var relevantLinks = document.querySelectorAll('[data-' + query + '=' + queries[query] + ']' );
-
-      relevantLinks.forEach(function(link) {
-        link.classList.remove('hidden')
-      })
+  function checkIfFiltersInclude(categories, filters) {
+    for (var i = 0; i < filters.length; i++) {
+      var filter = filters[i];
+      if (!categories.includes(filter)) return false;
     }
+    return true;
+  }
+  
+  function filterWallets(filters) {
+    linksList.forEach(function(link) {
+      var categories = link.dataset.categories.split(' ');
+      if (checkIfFiltersInclude(categories, filters)) link.classList.add('visible')
+      else link.classList.remove('visible')
+    });
+
+    var visibleWallets = document.querySelectorAll('#walletLink.visible');
+    var walletsTable = document.querySelector('.wallet-table-wrapper')
+    var emptyBox = document.querySelector('.no-matching-box')
+    if (visibleWallets.length) {
+      emptyBox.classList.add('hidden');
+      walletsTable.classList.remove('hidden')
+    } else {
+      emptyBox.classList.remove('hidden');
+      walletsTable.classList.add('hidden')
+    }
+
+    setFilterUrlParameter(filters)
+  }
+
+  function checkSelectedInputs(filters) {
+    selectorsList.forEach(function(selector) {
+      if (filters.includes(selector.value)) selector.checked = true;
+      else selector.checked = false;
+    })
   }
 
   var emptyBox = document.querySelector('.browse-wallets-box')
   function init() {
-    if (window.location.search) {
-      emptyBox.classList.add('hidden')
+    if (!getUrlParameter('filters')) {
+      setFilterUrlParameter('android')
     }
-    setListners()
+    var defaultParameters = getUrlParameter('filters').split(',');
+    checkSelectedInputs(defaultParameters)
+    filterWallets(defaultParameters);
+    setListners();
   }
 
   init()

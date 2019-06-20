@@ -986,6 +986,9 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   display: table-cell;
 	border: none;
 }
+.wallet-table-wrapper.hidden {
+  display: none;
+}
 .wallet-table {
   display: table;
   width: 100%;
@@ -1009,8 +1012,11 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 .wallet-table-row {
   display: table-row;
 }
-.wallet-table-row.hidden {
+.wallet-link {
   display: none;
+}
+.wallet-link.visible {
+  display: table-row;
 }
 .wallet-table-data {
   display: table-cell;
