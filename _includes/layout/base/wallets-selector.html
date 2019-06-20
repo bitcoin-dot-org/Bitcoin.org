@@ -405,7 +405,7 @@ http://opensource.org/licenses/MIT.
                     id="walletLink"
                     href="{% if platform.name == os.name %}/{{page.lang}}/wallets/{{platform.name}}/{{wallet.id}}/{% else %}/{{page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{wallet.id}}/{% endif %}"
                     class="wallet-table-row wallet-link"
-                    data-categories="{% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' %}{{checkName}} {% endif %}{% endfor %}{% if os.privacycheck %}{% for privacycheck in os.privacycheck %}{% assign privacycheckValue = privacycheck[1] %}{% assign privacycheckName = privacycheck[0] %}{% if privacycheckValue contains 'checkgood' or privacycheckValue contains 'checkpass' %}{{privacycheckName}} {% endif %}{% endfor %}{% endif %}{{os.name}}"
+                    data-categories="{% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' or checkValue contains 'checkpass' %}{{checkName}} {% endif %}{% endfor %}{% if os.privacycheck %}{% for privacycheck in os.privacycheck %}{% assign privacycheckValue = privacycheck[1] %}{% assign privacycheckName = privacycheck[0] %}{% if privacycheckValue contains 'checkgood' or privacycheckValue contains 'checkpass' %}{{privacycheckName}} {% endif %}{% endfor %}{% endif %}{{os.name}}"
                   >
                     <div class="wallet-table-data">
                       <img class="wallet-img" src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" />
@@ -536,17 +536,19 @@ http://opensource.org/licenses/MIT.
     var walletsTable = document.querySelector('.wallet-table-wrapper');
     var noMatchBox = document.querySelector('.no-matching-box');
     var browseBox = document.querySelector('.browse-wallets-box');
-    var isCategorySelected = !!getUrlParameter('filters');
+    var selectedCategories = getUrlParameter('filters').split(',');
+    var isCategoriesSelected = !!selectedCategories.length;
     var isWalletsVisible = !!visibleWallets.length;
+    var isPlatformSelected = checkIfPlatformSelected(selectedCategories)
     
-    if (!isWalletsVisible && isCategorySelected) {
-      noMatchBox.classList.remove('hidden');
-      walletsTable.classList.add('hidden');
-      browseBox.classList.add('hidden');
-    } else if (!isWalletsVisible && !isCategorySelected) {
+    if (!isWalletsVisible && !isPlatformSelected) {
       browseBox.classList.remove('hidden');
       noMatchBox.classList.add('hidden');
       walletsTable.classList.add('hidden');
+    } else if (!isWalletsVisible && selectedCategories) {
+      noMatchBox.classList.remove('hidden');
+      walletsTable.classList.add('hidden');
+      browseBox.classList.add('hidden');
     } else {
       walletsTable.classList.remove('hidden');
       browseBox.classList.add('hidden');
@@ -554,10 +556,10 @@ http://opensource.org/licenses/MIT.
     }
   }
 
-  function filterWallets(filters) {
+  function setWalletsVisibility(filters) {
     linksList.forEach(function(link) {
       var categories = link.dataset.categories.split(' ');
-      if (checkIfFiltersInclude(categories, filters)) link.classList.add('visible');
+      if (checkIfFiltersInclude(categories, filters) && checkIfPlatformSelected(filters)) link.classList.add('visible');
       else link.classList.remove('visible');
     });
   }
@@ -569,6 +571,19 @@ http://opensource.org/licenses/MIT.
     })
   }
 
+  function checkIfPlatformSelected(filters) {
+    var platforms = [];
+    var platfomrSelectors = document.querySelectorAll('.platform-radio');
+    platfomrSelectors.forEach(function(selector) {
+      platforms.push(selector.value)
+    });
+    for (var i = 0; i < platforms.length; i++) {
+      var platform = platforms[i];
+      if (filters.includes(platform)) return true;
+    }
+    return false;
+  }
+
   function setInputActivity() {
     var platformSelectors = document.querySelectorAll('.platform-radio:checked');
     if (platformSelectors.length) disableInputs(false);
@@ -576,22 +591,24 @@ http://opensource.org/licenses/MIT.
   }
   
   function renderContent(filters) {
-    filterWallets(filters);
+    setWalletsVisibility(filters);
     setInputActivity();
     displayContentSections();
     setFilterUrlParameter(filters);
   }
 
-  function selectChckedInputs(filters) {
-    selectorsList.forEach(function(selector) {
-      if (filters.includes(selector.value)) selector.checked = true;
-      else selector.checked = false;
-    })
+  function selectCheckedInputs(filters) {
+    if (checkIfPlatformSelected(filters)) {  
+      selectorsList.forEach(function(selector) {
+        if (filters.includes(selector.value)) selector.checked = true;
+        else selector.checked = false;
+      })
+    } 
   }
   
   function init() {
     var defaultParameters = getUrlParameter('filters').split(',');
-    selectChckedInputs(defaultParameters)
+    selectCheckedInputs(defaultParameters)
     renderContent(defaultParameters);
     setListners();
   }
