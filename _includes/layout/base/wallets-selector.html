@@ -212,32 +212,8 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input id="walletSelector" type="checkbox" name="important" value="privacyaddressreuse" class="checkbox" />
-              <div class="checkbox-text">Reuse</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input id="walletSelector" type="checkbox" name="important" value="privacydisclosure" class="checkbox" />
-              <div class="checkbox-text">Disclosure</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input id="walletSelector" type="checkbox" name="important" value="privacynetwork" class="checkbox" />
-              <div class="checkbox-text">Tor</div>
+              <input id="walletSelector" type="checkbox" name="important" value="privacy" class="checkbox" />
+              <div class="checkbox-text">Privacy</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
               <img src="/img/icons/info-alt.svg" alt="info">
@@ -388,13 +364,7 @@ http://opensource.org/licenses/MIT.
                 <p class="wallet-table-title">Fees</p>
               </div>
               <div class="wallet-table-head">
-                <p class="wallet-table-title">Reuse</p>
-              </div>
-              <div class="wallet-table-head">
-                <p class="wallet-table-title">Privacy<br>Disclosure</p>
-              </div>
-              <div class="wallet-table-head">
-                <p class="wallet-table-title">Tor</p>
+                <p class="wallet-table-title">Privacy</p>
               </div>
             </div>
           
@@ -405,7 +375,7 @@ http://opensource.org/licenses/MIT.
                     id="walletLink"
                     href="{% if platform.name == os.name %}/{{page.lang}}/wallets/{{platform.name}}/{{wallet.id}}/{% else %}/{{page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{wallet.id}}/{% endif %}"
                     class="wallet-table-row wallet-link"
-                    data-categories="{% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' or checkValue contains 'checkpass' %}{{checkName}} {% endif %}{% endfor %}{% if os.privacycheck %}{% for privacycheck in os.privacycheck %}{% assign privacycheckValue = privacycheck[1] %}{% assign privacycheckName = privacycheck[0] %}{% if privacycheckValue contains 'checkgood' or privacycheckValue contains 'checkpass' %}{{privacycheckName}} {% endif %}{% endfor %}{% endif %}{{os.name}}"
+                    data-categories="{% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' or checkValue contains 'checkpass' %}{{checkName}} {% endif %}{% endfor %}{{os.name}}"
                   >
                     <div class="wallet-table-data">
                       <img class="wallet-img" src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" />
@@ -413,26 +383,11 @@ http://opensource.org/licenses/MIT.
                     </div>
                     {% for check in os.check %}
                       {% assign checkName = check[0] %}
-                      {% if checkName == "privacy" %}
-                        {% continue %}
-                      {% endif %}
                       {% assign checkValue = check[1] %}
                       <div class="wallet-table-data">
                         <div class="wallet-{% if checkValue contains 'checkgood' %}good{% elsif checkValue contains 'checkpass' %}good{% elsif checkValue contains 'checkfail' %}caution{% elsif checkValue contains 'checkneutral' %}neutral{% endif %}"></div>
                       </div>
                     {% endfor %}
-                    {% if os.privacycheck %}
-                      {% for privacycheck in os.privacycheck %}
-                        {% assign privacycheckValue = privacycheck[1] %}
-                        <div class="wallet-table-data">
-                          <div class="wallet-{% if privacycheckValue contains 'checkgood' %}good{% elsif privacycheckValue contains 'checkpass' %}good{% elsif privacycheckValue contains 'checkfail' %}caution{% elsif privacycheckValue contains 'checkneutral' %}neutral{% endif %}"></div>
-                        </div>
-                      {% endfor %}
-                    {% else %}
-                      <div class="wallet-table-data">-</div>
-                      <div class="wallet-table-data">-</div>
-                      <div class="wallet-table-data">-</div>
-                    {% endif %}
                   </a>
                 {% endfor %}
               {% endfor %}
