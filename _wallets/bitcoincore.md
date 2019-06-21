@@ -6,6 +6,7 @@ id: bitcoincore
 title: "Bitcoin Core"
 titleshort: "Bitcoin Core"
 compat: "desktop windows mac linux"
+user: experienced
 level: 1
 platform:
   - desktop:

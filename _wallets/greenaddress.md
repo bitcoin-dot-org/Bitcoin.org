@@ -6,6 +6,7 @@ id: greenaddress
 title: "GreenAddress"
 titleshort: "Green Address"
 compat: "desktop windows mac linux"
+user: experienced
 level: 3
 platform:
   - desktop:

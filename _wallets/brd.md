@@ -6,6 +6,7 @@ id: brd
 title: "BRD"
 titleshort: "BRD"
 compat: "mobile android ios"
+user: beginner
 level: 2
 platform:
   - mobile:

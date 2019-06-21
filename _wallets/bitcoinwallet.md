@@ -6,6 +6,7 @@ id: bitcoinwallet
 title: "Bitcoin Wallet"
 titleshort: "Bitcoin Wallet"
 compat: "mobile android"
+user: beginner
 level: 2
 platform:
   - mobile:

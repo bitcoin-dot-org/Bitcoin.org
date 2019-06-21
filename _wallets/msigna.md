@@ -6,6 +6,7 @@ id: msigna
 title: "mSIGNA"
 titleshort: "mSIGNA"
 compat: "desktop windows mac linux"
+user: experienced
 level: 2
 platform:
   - desktop:

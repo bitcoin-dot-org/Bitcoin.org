@@ -6,6 +6,7 @@ id: bitcoinknots
 title: "Bitcoin Knots"
 titleshort: "Bitcoin Knots"
 compat: "desktop windows mac linux"
+user: experienced
 level: 1
 platform:
   - desktop:

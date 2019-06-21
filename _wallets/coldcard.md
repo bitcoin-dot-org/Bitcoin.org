@@ -6,6 +6,7 @@ id: coldcard
 title: "Coldcard"
 titleshort: "Coldcard"
 compat: "hardware"
+user: experienced
 level: 2
 platform:
   - hardware:

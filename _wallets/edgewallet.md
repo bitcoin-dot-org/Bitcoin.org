@@ -6,6 +6,7 @@ id: edgewallet
 title: "Edge Mobile Wallet"
 titleshort: "Edge"
 compat: "mobile android ios"
+user: experienced
 level: 3
 platform:
   - mobile:

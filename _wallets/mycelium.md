@@ -6,6 +6,7 @@ id: mycelium
 title: "Mycelium"
 titleshort: "Mycelium"
 compat: "mobile android"
+user: experienced
 level: 3
 platform:
   - mobile:

@@ -6,6 +6,7 @@ id: wasabi
 title: "Wasabi Wallet"
 titleshort: "Wasabi"
 compat: "desktop windows mac linux"
+user: experienced
 level: 3
 platform:
   - desktop:

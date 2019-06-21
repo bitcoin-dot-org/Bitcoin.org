@@ -6,6 +6,7 @@ id: bitpay
 title: "BitPay Wallet"
 titleshort: "BitPay"
 compat: "mobile desktop android ios windows mac linux"
+user: beginner
 level: 3
 platform:
   - mobile:

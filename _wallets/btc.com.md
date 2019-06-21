@@ -6,6 +6,7 @@ id: btc.com
 title: "BTC.com Bitcoin Wallet"
 titleshort: "BTC.com"
 compat: "mobile web android ios"
+user: experienced
 level: 3
 platform:
   - mobile:

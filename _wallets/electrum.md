@@ -6,6 +6,7 @@ id: electrum
 title: "Electrum"
 titleshort: "Electrum"
 compat: "desktop windows mac linux mobile android"
+user: beginner
 level: 2
 platform:
   - desktop:

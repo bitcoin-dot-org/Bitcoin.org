@@ -6,6 +6,7 @@ id: coinspace
 title: "Coin.Space"
 titleshort: "Coin.Space"
 compat: "mobile web android ios"
+user: experienced
 level: 3
 platform:
   - mobile:

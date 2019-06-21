@@ -6,6 +6,7 @@ id: bitgo
 title: "BitGo"
 titleshort: "BitGo"
 compat: "web"
+user: experienced
 level: 3
 platform:
   - web:

@@ -6,6 +6,7 @@ id: bitbox
 title: "BitBox"
 titleshort: "BitBox"
 compat: "hardware"
+user: experienced
 level: 2
 platform:
   - hardware:
