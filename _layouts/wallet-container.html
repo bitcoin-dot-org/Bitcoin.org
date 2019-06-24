@@ -32,39 +32,36 @@ max_wallet_text_length: 418  ## Unicode characters
     
 
   <div class="wallet-platforms">
-    
     <div class="container">
       {% assign platform = page.platform %} {% assign os = page.os %}
-      <div class="wallet-os-list">
-        <div class="wallet-os-container clearfix" id="{{ os.name }}">
-          <div class="wallet-os-btn-block">
-            <div class="wallet-os-download-buttons">
-              {% if os.link == 'bitcoincore' %}
-              <a class="wallet-os-download-link btn-bright" href="/{{ page.lang }}/{% translate download url %}">{% translate walletdownload choose-your-wallet %}</a>
-              {% elsif os.link contains 'play.google.com' or os.link contains 'itunes.apple.com' or os.link contains 'chrome.google.com'
-              %}
-              <a class="wallet-os-download-link btn-bright" href="{{ os.link }}">{% translate walletdownload choose-your-wallet %}</a>
-              {% else %}
-              <a class="wallet-os-download-link btn-bright" href="{{ os.link }}">{% translate walletvisit choose-your-wallet %}</a>
-              {% endif %} {% if os.source %}
-              <a class="wallet-os-source-link btn-light" href="{{ os.source }}"> {% translate walletsourcecode choose-your-wallet %}</a>
-              {% endif %}
+      <div class="wallet-platforms-row">
+        <div>
+          <div class="wallet-hints-row">
+            <div class="wallet-hint">
+              <div class="wallet-good"></div>
+              <p class="wallet-hint-text">- Good</p>
+            </div>
+            <div class="wallet-hint">
+              <div class="wallet-caution"></div>
+              <p class="wallet-hint-text">- Caution</p>
+            </div>
+            <div class="wallet-hint">
+              <div class="wallet-neutral"></div>
+              <p class="wallet-hint-text">- Neutral</p>
             </div>
           </div>
-          <div class="wallet-os-screenshot">
-            <img src="/img/screenshots/{{ os.screenshot }}" alt="screenshot">
-          </div>
+  
           <div class="wallet-os-overview">
             <div class="wallet-os-checks">
               {% for check in os.check %} {% assign checkName = check[0] %} {% assign checkValue = check[1] %}
-              <div class="check{{ checkName }} {% if checkValue contains "checkgood" %}checkgood{% elsif checkValue contains "checkpass" %}checkpass{% elsif checkValue contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}" onclick="walletScoreListener(event);" ontouchstart="walletScoreListener(event);">
+              <div class="wallet-os-check-item check{{ checkName }} {% if checkValue contains 'checkgood' %}checkgood{% elsif checkValue contains 'checkpass' %}checkpass{% elsif checkValue contains 'checkneutral' %}checkneutral{% else %}checkfail{% endif %}">
                 <p class="wallet-os-check-title">
                   {% translate {{checkValue}} choose-your-wallet %}
                 </p>
                 <div class="wallet-os-check-details">
                   <p>{% translate {{checkValue}}txt choose-your-wallet %}</p>
                   {% if checkName == 'privacy' and os.privacycheck %} {% for privacycheck in os.privacycheck %}
-                  <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains "checkgood" %}checkgood{% elsif privacycheck[1] contains "checkpass" %}checkpass{% elsif privacycheck[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">
+                  <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains 'checkgood' %}checkgood{% elsif privacycheck[1] contains 'checkpass' %}checkpass{% elsif privacycheck[1] contains 'checkneutral' %}checkneutral{% else %}checkfail{% endif %}">
                     <p>{% translate {{privacycheck[1]}} choose-your-wallet %}</p>
                     <p>{% translate {{privacycheck[1]}}txt choose-your-wallet %}</p>
                   </div>
@@ -75,18 +72,86 @@ max_wallet_text_length: 418  ## Unicode characters
             </div>
           </div>
         </div>
+  
+        <div class="os-selector">
+          <div class="os-selector-tabs">
+            {% for platform in page.wallet.platform %}
+              {% for os in platform.os %}
+                <button class="os-selector-tab" data-tab="{{os.name}}">
+                  <img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}} logo" class="os-selector-icon os-selector-icon-inactive">
+                  <img src="/img/os/wallet_menu_{{os.name}}_bright.svg" alt="{{os.name}} logo" class="os-selector-icon os-selector-icon-active">
+                  {{os.name}}
+                </button>
+              {% endfor %}
+            {% endfor %}
+          </div>
+        
+          {% for platform in page.wallet.platform %}
+            {% for os in platform.os %}
+              <div class="os-selector-content" data-content="{{os.name}}">
+                <div class="os-selector-links-row">
+                  {% if os.link == 'bitcoincore' %}
+                    <a class="os-selector-link btn-bright" href="/{{ page.lang }}/{% translate download url %}">{% translate walletdownload choose-your-wallet %}</a>
+                  {% elsif os.link contains 'play.google.com' or os.link contains 'itunes.apple.com' or os.link contains 'chrome.google.com' %}
+                    <a class="os-selector-link btn-bright" href="{{ os.link }}">{% translate walletdownload choose-your-wallet %}</a>
+                  {% else %}
+                    <a class="os-selector-link btn-bright" href="{{ os.link }}">{% translate walletvisit choose-your-wallet %}</a>
+                  {% endif %} 
+                  {% if os.source %}
+                    <a class="os-selector-link btn-light" href="{{ os.source }}"> {% translate walletsourcecode choose-your-wallet %}</a>
+                  {% endif %}
+                </div>
+                <img src="/img/screenshots/{{os.screenshot}}" class="os-screenshot" alt="screenshot">
+              </div>
+            {% endfor %}
+          {% endfor %}
+        </div>
       </div>
+      
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="walletsdisclaimer">
-    <h2 id="educate-yourself">{% translate educate choose-your-wallet %}</h2>
-    <p>
-      {% translate educatetxt choose-your-wallet %}
-    </p>
-  </div>
-</div>
+<script>
+  (function() {
+    var parameters = getUrlParameter('filters').split(',');  
+    var tabSelectors = document.querySelectorAll('.os-selector-tab');
+    var tabContents = document.querySelectorAll('.os-selector-content');
 
-{% include layout/base/wallets-filter.html %} 
+    function selectRelevantTab(os) {
+      tabSelectors.forEach(function(tab) {
+        if (tab.dataset.tab === os) tab.classList.add('active');
+        else tab.classList.remove('active');
+      });
+      tabContents.forEach(function(content) {
+        if (content.dataset.content === os) content.classList.add('visible');
+        else content.classList.remove('visible');
+      });
+    }
+
+    function displayDefaultTabContent() {
+      for (var i = 0; i < tabSelectors.length; i++) {
+        var tabName = tabSelectors[i].dataset.tab;
+        if (parameters.includes(tabName)) {
+          selectRelevantTab(tabName);
+          break;
+        }
+      }
+    }
+
+    function setupListners() {
+      tabSelectors.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          selectRelevantTab(this.dataset.tab);
+        });
+      })
+    }
+    
+    function init() {
+      displayDefaultTabContent();
+      setupListners();
+    }
+    init();
+    
+  })();
+</script>

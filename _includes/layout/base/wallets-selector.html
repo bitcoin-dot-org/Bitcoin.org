@@ -370,7 +370,6 @@ http://opensource.org/licenses/MIT.
               {% for platform in wallet.platform %}
                 {% for os in platform.os %}
                   <a
-                    id="walletLink"
                     href="{% if platform.name == os.name %}/{{page.lang}}/wallets/{{platform.name}}/{{wallet.id}}/{% else %}/{{page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{wallet.id}}/{% endif %}"
                     class="wallet-table-row wallet-link"
                     data-categories="{{wallet.user}} {% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' or checkValue contains 'checkpass' %}{{checkName}} {% endif %}{% endfor %}{{os.name}}"
@@ -429,30 +428,11 @@ http://opensource.org/licenses/MIT.
 <script>
   var queries = {};
 
-  function getUrlParameter(name) {
-    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-    var results = regex.exec(location.search);
-    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-  };
-
-  function updateQueryStringParameter(key, value) {
-    var uri = window.location.href;
-    var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
-    var separator = uri.indexOf('?') !== -1 ? "&" : "?";
-    if (uri.match(re)) {
-      return uri.replace(re, '$1' + key + "=" + value + '$2');
-    }
-    else {
-      return uri + separator + key + "=" + value;
-    }
-  }
-
   function setFilterUrlParameter(value) {
     history.pushState(null, null, updateQueryStringParameter('filters', value));
   }
   
-  var linksList = document.querySelectorAll('#walletLink');  
+  var linksList = document.querySelectorAll('.wallet-link');  
   var selectorsList = document.querySelectorAll('.walletSelector');
   function setListners() {  
     selectorsList.forEach(function(selector) {
@@ -484,7 +464,7 @@ http://opensource.org/licenses/MIT.
   }
   
   function displayContentSections() {
-    var visibleWallets = document.querySelectorAll('#walletLink.visible');
+    var visibleWallets = document.querySelectorAll('.wallet-link.visible');
     var walletsTable = document.querySelector('.wallet-table-wrapper');
     var noMatchBox = document.querySelector('.no-matching-box');
     var browseBox = document.querySelector('.browse-wallets-box');

@@ -133,229 +133,150 @@ $checks: control, validation, transparency, environment, fees, privacy;
 
 $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 
+
 .wallet {
   .wallet-logo-container {
     text-align: center;
-
+    
     .wallet-logo {
       width: 72px;
       height: 72px;
     }
-
+    
     h1 {
       text-align: center;
     }
   }
+}
 
-  .wallet-platforms {
-    margin-top: 70px;
-
-    .wallet-platforms-menu {
-      margin-bottom: 70px;
-      padding: 20px 0;
-      text-align: center;
-      background: #f8f8f8;
-
-      .wallet-os-btn {
-        display: inline-block;
-        margin-right: 50px;
-        text-align: left;
-
-        &:last-child {
-          margin-right: 0;
-        }
-        img {
-          width: 15px;
-          margin-right: 10px;
-          vertical-align: middle;
-        }
-        span {
-          vertical-align: middle;
-          font-size: 15px;
-          color: #13161f;
-          font-weight: 400;
-        }
-        &:hover span {
-          color: $orange;
-        }
-        &.active span {
-          color: $orange;
-        }
-      }
-    }
-
-    .wallet-os-container {
-      margin-bottom: 40px;
-
-      &.hidden {
-        display: none;
-      }
-
-      .wallet-os-screenshot {
-        float: right;
-        width: 30%;
-        margin: 0 auto;
-
-        img {
-          border: 1px solid #dadada;
-          padding: 20px;
-        }
-      }
-
-      .wallet-os-btn-block {
-        float: left;
-      }
-
-      .wallet-os-download-buttons {
-        display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        margin-bottom: 35px;
-
-        .wallet-os-source-link,
-        .wallet-os-download-link {
-          @include button;
-        }
-
-        .wallet-os-source-link {
-          padding: 15px 25px;
-        }
-        .wallet-os-download-link {
-          margin-right: 30px;
-          margin-bottom: 15px;
-          padding: 16px 25px;
-        }
-      }
-      .wallet-os-name {
-        margin-bottom: 20px;
-        h3 {
-          margin: 0 5px 0 10px;
-          display: inline-block;
-          vertical-align: top;
-        }
-      }
-
-      .wallet-os-overview {
-        float: left;
-        width: 60%;
-        max-width: 570px;
-        margin-right: 30px;
-        margin-bottom: 30px;
-
-        .wallet-os-checks {
-          .wallet-os-check-title {
-            display: inline-block;
-            margin: 0;
-          }
-
-          .wallet-os-check-help-icon {
-            display: inline-block;
-            background-image: url(/img/icons/wallet_help.png?1528322191);
-            background-image: none, url(/img/icons/wallet_help.svg?1528322191),
-              url(/img/icons/wallet_help.png?1528322191);
-            width: 16px;
-            height: 16px;
-            vertical-align: text-bottom;
-            cursor: pointer;
-          }
-
-          .wallet-os-check-details {
-            max-height: 0px;
-            overflow: hidden;
-            background-color: #ffffff;
-            transition: all 0.24s ease-in;
-            font-size: 85%;
-            p {
-              margin: 0;
-              text-align: left;
-            }
-          }
-
-          .hover {
-            .wallet-os-check-details {
-              z-index: 100;
-              max-height: 500px;
-              background: #f8f8f8;
-              margin: 10px 0 20px;
-              padding: 20px;
-              color: $dark-grey;
-
-              // This is for privacy checks
-              > div {
-                padding: 0;
-
-                // This is the privacy check item title
-                &:first-child {
-                  font-weight: bold;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  // Generate backgrounds for checks and scores
-  @each $score, $color, $font-weight in $scores {
-    .check#{$score} {
-      background-repeat: no-repeat;
-      background-position-y: 8px;
-      padding-left: 25px;
-      margin-bottom: 15px;
-
-      .wallet-os-check-title {
-        color: $black;
-        font-weight: 600;
-      }
-
-      .wallet-os-check-details {
-        color: $color;
-        border-color: $color;
-      }
-
-      > div > span {
-        @if $score == good {
-          background-image: url('/img/icons/checkbubble_good.svg?1528322191');
-        } @else {
-          background-image: url('/img/icons/checkbubble_#{$score}.svg?1528322191');
-        }
-      }
-
-      @each $check in $checks {
-        &.check#{$check} {
-          position: relative;
-          cursor: pointer;
-          @if $score == fail {
-            background-image: url('/img/icons/ico_check_fail.svg?1528322191');
-          } @else if $score == pass {
-            background-image: url('/img/icons/ico_check_pass.svg?1528322191');
-          } @else if $score == neutral {
-            background-image: url('/img/icons/ico_check_neutral.svg?1528322191');
-          } @else {
-            background-image: url('/img/icons/ico_check_good.svg?1528322191');
-          }
-
-          &::after {
-            content: '';
-            position: absolute;
-            top: 8px;
-            right: 0;
-            width: 10px;
-            height: 6px;
-            transform: translateY(-50%);
-            background: url(../img/icons/ico_angle.svg?1528322191)
-              center
-              no-repeat;
-            background-size: contain;
-          }
-          &.hover::after {
-            transform: translateY(-50%) rotate(180deg);
-          }
-        }
-      }
-    }
-  }
+.wallet-platforms {
+  margin-top: 50px;
+}
+.wallet-platforms-row {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #dadada;
+}
+.wallet-os-overview {
+  margin-top: 28px;
+}
+.wallet-os-check-item {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 30px;
+}
+.wallet-os-check-item::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 0;
+}
+.wallet-os-check-item.checkgood::before,
+.wallet-os-check-item.checkpass::before {
+  width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: #7EBF1E;
+}
+.wallet-os-check-item.checkfail::before {
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 11px solid #F7931A;
+}
+.wallet-os-check-item.checkneutral::before {
+  width: 12px;
+	height: 12px;
+	background: #aaa;
+}
+.wallet-os-check-title {
+  margin-bottom: 5px;
+  font-size: 22px;
+  color: #13161F;
+  line-height: 36px;
+}
+.wallet-os-check-details {
+  font-size: 16px;
+  color: #4D5060;
+  line-height: 22px;
+  text-align: left;
+}
+.os-selector {
+  padding: 30px 25px 25px;
+  background: #f8f8f8;
+  min-width: 570px;
+  margin-left: 65px;
+}
+.os-selector-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #DADADA;
+}
+.os-selector-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 17px;
+  transform: translateY(1.5px);
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #13161F;
+  background: none;
+  border: none;
+  outline: none;
+}
+.os-selector-tab + .os-selector-tab {
+  margin-left: 15px;
+}
+.os-selector-tab.active {
+  border-bottom: 2px solid #FF7E00;
+  color: #ff7e00;
+}
+.os-selector-icon-active{
+  display: none;
+}
+.os-selector-tab.active .os-selector-icon-active{
+  display: block;
+}
+.os-selector-tab.active .os-selector-icon-inactive{
+  display: none;
+}
+.os-selector-icon {
+  margin-right: 10px;
+}
+.os-selector-content {
+  display: none;
+}
+.os-selector-content.visible {
+  display: block;
+}
+.os-selector-links-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.os-selector-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 55px;
+  padding: 0;
+  text-transform: uppercase;
+}
+.os-selector-link.btn-light {
+  background: none;
+}
+.os-selector-link:first-child {
+  margin-right: 25px;
+}
+.os-screenshot {
+  margin: 0 auto;
+  display: block;
 }
 
 .wallet-title {
@@ -639,18 +560,6 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   .walletsdisclaimer {
     padding: 60px 0;
   }
-  .wallet .wallet-platforms .wallet-os-container .wallet-os-btn-block {
-    float: none;
-  }
-  .wallet .wallet-platforms .wallet-os-container .wallet-os-download-buttons {
-    justify-content: center;
-  }
-  .wallet .wallet-platforms .wallet-os-container .wallet-os-overview {
-    width: 46%;
-  }
-  .wallet .wallet-platforms .wallet-os-container .wallet-os-screenshot {
-    width: auto;
-  }
 }
 @media handheld,
   only screen and (max-width: 48em),
@@ -676,45 +585,6 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   only screen and (max-device-width: 40em) {
   .wallet .hero {
     background-color: #fff;
-  }
-  .wallet .wallet-platforms .wallet-platforms-menu {
-    background: #fff;
-    text-align: left;
-    padding: 15px;
-    margin-bottom: 30px;
-  }
-  .wallet .wallet-platforms .wallet-os-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .wallet .wallet-platforms .wallet-platforms-menu .wallet-os-btn {
-    margin-right: 0;
-    margin-bottom: 4px;
-    text-align: left;
-    border: 1px solid #dadada;
-    padding: 10px 16px;
-    border-radius: 1px;
-  }
-  .wallet .wallet-platforms .active.wallet-os-btn {
-    border: 2px solid #ff7e00;
-    padding: 8px 14px;
-  }
-  .wallet .wallet-platforms .wallet-os-container .wallet-os-download-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  .wallet
-    .wallet-platforms
-    .wallet-os-container
-    .wallet-os-download-buttons
-    .wallet-os-download-link {
-    margin-right: 0;
-  }
-  .wallet .wallet-platforms .wallet-os-container .wallet-os-screenshot {
-    order: 1;
-  }
-  .wallet .wallet-platforms .wallet-os-container .wallet-os-overview {
-    width: 100%;
   }
   .wallet-list {
     padding: 0 0 50px;
@@ -992,6 +862,7 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 }
 .wallet-table-wrapper.hidden {
   display: none;
+  margin-bottom: 20px;
 }
 .wallet-table {
   display: table;
@@ -1046,7 +917,6 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 .wallet-hints-row {
 	display: flex;
 	align-items: center;
-	margin-top: 20px;
 }
 .wallet-hint {
 	display: flex;
