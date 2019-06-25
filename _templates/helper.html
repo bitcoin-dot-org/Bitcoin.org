@@ -31,11 +31,11 @@ id: helper
     </div>
 
     <div class="helper-row">
-      <div class="helper-pagination">
-        <button class="helper-pagination-btn active" disabled="true">1</button>
-        <button class="helper-pagination-btn" disabled="true">2</button>
-        <button class="helper-pagination-btn" disabled="true">3</button>
-        <button class="helper-pagination-btn" disabled="true">4</button>
+      <div class="helper-page-numbers">
+        <div class="helper-page-number active">1</div>
+        <div class="helper-page-number">2</div>
+        <div class="helper-page-number">3</div>
+        <div class="helper-page-number">4</div>
       </div>
 
       <div class="helper-content">
@@ -142,7 +142,7 @@ id: helper
         </div>
       </div>
 
-      <div">
+      <div>
         <div class="discover">
           <h2 class="discover-title">Discover more</h2>
           <a href="#" class="discover-link">Read about each wallet type</a>
@@ -151,5 +151,43 @@ id: helper
       </div>
 
     </div>
+
+    <div class="helper-row">
+      <div class="helper-page-numbers">
+        <div class="helper-page-number completed"></div>
+        <div class="helper-page-number active">2</div>
+        <div class="helper-page-number">3</div>
+        <div class="helper-page-number">4</div>
+      </div>
+
+      <div class="helper-content">
+        <div class="helper-header">
+          <div class="helper-header-row">
+            <h2 class="helper-title previous">What’s your operating system?</h2> 
+            <div class="row">
+              <div class="helper-selected-filter">Desktop wallets / OS X</div>
+              <button class="helper-change-btn">Change</button>
+            </div>
+          </div>
+        </div>
+        <div class="helper-header">
+          <h2 class="helper-title">How much do I know about Bitcoin?</h2>  
+        </div>
+        
+        <div class="helper-navigation">
+          <a class="skip-helper-btn" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">Skip helper</a>
+          <button class="helper-next-btn btn-bright">Next</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="discover">
+          <h2 class="discover-title">Discover more</h2>
+          <a href="#" class="discover-link">Learn about Bitcoin</a>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </div>
