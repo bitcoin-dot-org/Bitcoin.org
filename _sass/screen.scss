@@ -5043,6 +5043,8 @@ br.big {
     }
 }
 
+@import 'helper';
 @import 'wallets';
+@import 'wallet-selector';
 @import 'wallets-menu';
 @import 'donation-banner';

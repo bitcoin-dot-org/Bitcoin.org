@@ -1,0 +1,36 @@
+.helper {
+  padding: 50px 0;
+}
+.helper-intro {
+  display: flex;
+  justify-content: space-between;
+}
+.helper-intro-img-wrapper {
+  width: 40.5%;
+}
+.helper-intro-description {
+  width: 57%;
+  margin-left: 2.5%;
+}
+.helper-intro-title {
+  margin: 0 0 20px;
+}
+.helper-intro-text {
+  margin-bottom: 35px;
+}
+.helper-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  border-top: 1px solid #dadada;
+}
+.skip-helper-btn {
+  font-size: 16px;
+  color: #4D5060;
+  line-height: 52px;
+  text-decoration: underline;
+}
+.helper-next-btn {
+  width: 170px;
+  border: none;
+}

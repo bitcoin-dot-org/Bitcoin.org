@@ -635,60 +635,6 @@ function onScrollButton() {
     });
   }
 }
-function walletMenuAccordion() {
-  var tabs = document.querySelectorAll(".js-tab");
-
-  for (var i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener("click", function() {
-      this.classList.toggle("is-expanded");
-
-      for (var index = 0; index < tabs.length; index++) {
-        if (this !== tabs[index]) {
-          tabs[index].classList.remove("is-expanded");
-        }
-      }
-    });
-  }
-}
-function showNextMobileAccordion() {
-  var platformItems = document.querySelectorAll(".js-platform");
-  var tabs = document.querySelectorAll(".accordion-tab");
-  var platformTab = document.querySelector(".accordion-tab-1");
-  var osAccordion = document.querySelectorAll(".accordion-os");
-  var walletAccordion = document.querySelector(".accordion-wallets");
-
-  for (var i = 0; i < platformItems.length; i++) {
-
-    platformItems[i].addEventListener("click", function(e) {
-
-      for (var num = 0; num < tabs.length; num++) {
-        tabs[num].classList.remove("is-selected");
-        tabs[num].querySelector(".selected-item").textContent = "";
-      }
-
-      var selectedPlatform = e.target;
-
-      var platformName = selectedPlatform.dataset.platformName;
-      document.querySelector(".selected-platform").textContent = selectedPlatform.textContent;
-
-      // Display next accordion and hide not selected accordion
-      for (var a = 0; a < osAccordion.length; a++) {
-        if (platformName === osAccordion[a].dataset.os) {
-          osAccordion[a].classList.add("is-visible");
-          osAccordion[a].querySelector('.accordion-tab-2').classList.add('is-expanded');
-          platformTab.classList.add("is-selected");
-        } else {
-          osAccordion[a].classList.remove("is-visible");
-        }
-      }
-
-      // Close accordion after selection
-      platformTab.classList.remove("is-expanded");
-      // Hide wallet accordion if user want to change platform
-      walletAccordion.classList.remove("is-visible");
-    });
-  }
-}
 
 function handleDevDocsRedirect(name) {
   var blockchainGuideRedirects = ["proof-of-work", "block-height-and-forking", "transaction-data", "consensus-rule-changes", "detecting-forks", "term-consensus", "term-consensus-rules", "term-block", "term-merkle-root", "term-txid", "term-utxo", "term-transaction-fee", "term-miner", "term-proof-of-work", "term-target", "term-difficulty", "term-51-attack", "term-block-height", "term-genesis-block", "term-fork", "term-stale-block", "term-merkle-tree", "term-hard-fork", "term-soft-fork", "term-uasf", "term-masf"];

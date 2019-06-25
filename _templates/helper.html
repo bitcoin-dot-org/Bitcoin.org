@@ -1,0 +1,33 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: base
+id: helper
+---
+
+<div class="hero">
+  <div class="container hero-container">
+    <h1>{% translate pagetitle choose-your-wallet %}</h1>
+    <p class="summary">{% translate pagedesc choose-your-wallet %}</p>
+    {% include helpers/hero-social.html %}
+  </div>
+</div>
+
+<div class="container">
+    <div class="helper">
+      <div class="helper-intro">
+        <div class="helper-intro-img-wrapper">
+          <img src="/img/helper/helper-illustration.svg" alt="people and wallet">
+        </div>
+        <div class="helper-intro-description">
+          <h2 class="section-title helper-intro-title">Let us help you to choose a Bitcoin wallet.</h2>
+          <p class="helper-intro-text">Please answer the following questions to find the best matching wallet. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <div class="helper-navigation">
+            <a class="skip-helper-btn" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">Skip helper</a>
+            <button class="helper-next-btn btn-bright">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
