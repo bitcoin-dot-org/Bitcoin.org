@@ -390,6 +390,7 @@ http://opensource.org/licenses/MIT.
               {% endfor %}
             {% endfor %}
           </div>
+
           <div class="wallet-hints-row">
             <div class="wallet-hint">
               <div class="wallet-good"></div>
@@ -404,6 +405,7 @@ http://opensource.org/licenses/MIT.
               <p class="wallet-hint-text">- Neutral</p>
             </div>
           </div>
+          
         </div>
 
 
@@ -434,7 +436,7 @@ http://opensource.org/licenses/MIT.
   
   var linksList = document.querySelectorAll('.wallet-link');  
   var selectorsList = document.querySelectorAll('.js-wallet-selector');
-  function setListners() {  
+  function setListners() {
     selectorsList.forEach(function(selector) {
       selector.addEventListener('change', function() {
         var filters = []
@@ -453,14 +455,6 @@ http://opensource.org/licenses/MIT.
         e.preventDefault()
       });
     });
-  }
-  
-  function checkIfFiltersInclude(categories, filters) {
-    for (var i = 0; i < filters.length; i++) {
-      var filter = filters[i];
-      if (!categories.includes(filter)) return false;
-    }
-    return true;
   }
   
   function displayContentSections() {

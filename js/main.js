@@ -752,3 +752,11 @@ function updateQueryStringParameter(key, value) {
     return uri + separator + key + "=" + value;
   }
 }
+
+function checkIfFiltersInclude(categories, filters) {
+  for (var i = 0; i < filters.length; i++) {
+    var filter = filters[i];
+    if (!categories.includes(filter)) return false;
+  }
+  return true;
+}
