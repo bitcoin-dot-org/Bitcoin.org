@@ -198,9 +198,11 @@ max_wallet_text_length: 418  ## Unicode characters
     }
 
     function displayDefaultTabContent() {
+      var urlPath = window.location.pathname.split('/');
+      
       for (var i = 0; i < tabSelectors.length; i++) {
         var tabName = tabSelectors[i].dataset.tab;
-        if (parameters.includes(tabName)) {
+        if (urlPath.includes(tabName)) {
           selectRelevantTab(tabName);
           break;
         }
