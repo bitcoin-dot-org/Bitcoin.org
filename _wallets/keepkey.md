@@ -6,7 +6,6 @@ id: keepkey
 title: "KeepKey"
 titleshort: "KeepKey"
 compat: "hardware"
-user: experienced
 level: 2
 platform:
   - hardware:

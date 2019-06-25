@@ -6,7 +6,6 @@ id: trezor
 title: "Trezor"
 titleshort: "Trezor"
 compat: "hardware"
-user: experienced
 level: 2
 platform:
   - hardware:

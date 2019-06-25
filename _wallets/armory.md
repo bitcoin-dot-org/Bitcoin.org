@@ -6,7 +6,6 @@ id: armory
 title: "Armory"
 titleshort: "Armory"
 compat: "desktop windows mac linux"
-user: experienced
 level: 2
 platform:
   - desktop:

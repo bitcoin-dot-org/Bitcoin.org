@@ -6,7 +6,6 @@ id: ledgernanos
 title: "Ledger Nano S"
 titleshort: "Ledger Nano S"
 compat: "hardware"
-user: experienced
 level: 2
 platform:
   - hardware:

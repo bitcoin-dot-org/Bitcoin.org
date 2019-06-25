@@ -6,7 +6,6 @@ id: eclairmobile
 title: "Eclair Mobile"
 titleshort: "Eclair Mobile"
 compat: "mobile android"
-user: experienced
 level: 2
 platform:
   - mobile:

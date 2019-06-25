@@ -6,7 +6,6 @@ id: bither
 title: "Bither"
 titleshort: "Bither"
 compat: "mobile ios android desktop windows mac linux"
-user: experienced
 level: 2
 platform:
   - mobile:
