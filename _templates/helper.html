@@ -174,9 +174,32 @@ id: helper
           <h2 class="helper-title">How much do I know about Bitcoin?</h2>  
         </div>
         
+        <div class="helper-user-types">
+          <label class="helper-user-radio-wrapper">
+            <input type="radio" class="helper-user-radio js-wallet-selector" name="user" value="new"/>
+            <div class="helper-user-radio-custom">
+              <img src="/img/icons/plant.svg" alt="plant & bitcoin">
+              <h4 class="helper-user-radio-title">I’m a Bitcoin Beginner</h4>
+              <p class="helper-user-radio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </label>
+          <p class="helper-user-separator">or</p>
+          <label class="helper-user-radio-wrapper">
+            <input type="radio" class="helper-user-radio js-wallet-selector" name="user" value="experienced"/>
+            <div class="helper-user-radio-custom">
+              <img src="/img/icons/trees.svg" alt="trees & bitcoin">
+              <h4 class="helper-user-radio-title">I’m an advance Bitcoin user</h4>
+              <p class="helper-user-radio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </label>
+        </div>
+        
         <div class="helper-navigation">
           <a class="skip-helper-btn" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">Skip helper</a>
-          <button class="helper-next-btn btn-bright">Next</button>
+          <div class="helper-navigation-row">
+            <button class="helper-back-btn btn-light">Back</button>
+            <button class="helper-next-btn btn-bright">Next</button>
+          </div>
         </div>
       </div>
 
