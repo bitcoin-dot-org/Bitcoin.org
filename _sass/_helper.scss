@@ -427,6 +427,15 @@
   .helper-user-separator {
     margin: 20px 0;
   }
+  .helper-checkboxes-row {
+    flex-direction: column;
+  }
+  .helper-checkbox-wrapper {
+    width: 100%;
+  }
+  .helper-checkbox-wrapper:nth-child(even) {
+    margin: 0 0 30px;
+  }
   .helper-navigation-row {
     flex-direction: column-reverse
   }
