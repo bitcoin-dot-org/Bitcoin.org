@@ -126,7 +126,7 @@
   text-align: right;
   line-height: 30px;
   text-decoration: underline;
-  border: none;
+  background: none;
   border: none;
 }
 .helper-title {
@@ -312,11 +312,27 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .helper-platforms-radio {
-    width: 105px;
+  .helper-row {
+    flex-direction: column;
   }
-  .helper-radio-wrapper + .helper-radio-wrapper {
-    margin-left: 12px;
+  .helper-page-numbers {
+    display: flex;
+    margin: 0 0 15px;
+  }
+  .helper-page-number + .helper-page-number {
+    margin: 0 0 0 27px;
+  }
+  .helper-page-number+.helper-page-number::after {
+    top: 50%;
+    left: -1px;
+    transform: translate(-100%, -50%);
+    width: 27px;
+    height: 1px;
+  }
+  .discover {
+    margin: 50px 0 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 @media screen and (max-width: 992px) {
@@ -341,27 +357,20 @@
     left: 0;
     width: 100%;
   }
-  .helper-row {
+  .helper-header-row {
     flex-direction: column;
+    align-items: flex-start;
   }
-  .helper-page-numbers {
-    display: flex;
-    margin: 0 0 15px;
+  .helper-header-row .row {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 11px;
   }
-  .helper-page-number + .helper-page-number {
-    margin: 0 0 0 27px;
+  .helper-platforms-radio {
+    width: 105px;
   }
-  .helper-page-number+.helper-page-number::after {
-    top: 50%;
-    left: -1px;
-    transform: translate(-100%, -50%);
-    width: 27px;
-    height: 1px;
-  }
-  .discover {
-    margin: 50px 0 0;
-    max-width: 100%;
-    box-sizing: border-box;
+  .helper-radio-wrapper + .helper-radio-wrapper {
+    margin-left: 12px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -407,5 +416,21 @@
   }
   .discover {
     margin: 30px 0 0;
+  }
+  .helper-user-types {
+    flex-direction: column;
+    margin: 20px 0 30px;
+  }
+  .helper-user-radio-wrapper {
+    width: 290px;
+  }
+  .helper-user-separator {
+    margin: 20px 0;
+  }
+  .helper-navigation-row {
+    flex-direction: column-reverse
+  }
+  .helper-back-btn {
+    margin: 15px 0 0;
   }
 }
