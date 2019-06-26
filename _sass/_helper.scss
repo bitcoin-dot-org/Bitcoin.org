@@ -51,6 +51,7 @@
 .helper-row {
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 .helper-page-numbers {
   margin-right: 30px;
@@ -133,6 +134,7 @@
   font-size: 22px;
   color: #13161F;
   line-height: 36px;
+  text-align: left;
 }
 .helper-title.previous {
   opacity: 0.6;
@@ -181,13 +183,13 @@
   font-size: 16px;
   color: #4D5060;
   line-height: 34px;
+  text-align: left;
 }
 .bullet::before {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 8px;
   left: 0;
-  transform: translateY(-50%);
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -286,10 +288,10 @@
 }
 
 .discover {
-  width: 270px;
+  max-width: 270px;
+  width: 100%;
   margin-left: 30px;
   padding: 25px 25px 30px;
-  box-sizing: border-box;
   background: #f8f8f8;
 }
 .discover-title {
@@ -309,6 +311,14 @@
   margin-top: 10px;
 }
 
+@media screen and (max-width: 1100px) {
+  .helper-platforms-radio {
+    width: 105px;
+  }
+  .helper-radio-wrapper + .helper-radio-wrapper {
+    margin-left: 12px;
+  }
+}
 @media screen and (max-width: 992px) {
   .helper-intro {
     padding: 120px 0 155px;
@@ -331,6 +341,36 @@
     left: 0;
     width: 100%;
   }
+  .helper-row {
+    flex-direction: column;
+  }
+  .helper-page-numbers {
+    display: flex;
+    margin: 0 0 15px;
+  }
+  .helper-page-number + .helper-page-number {
+    margin: 0 0 0 27px;
+  }
+  .helper-page-number+.helper-page-number::after {
+    top: 50%;
+    left: -1px;
+    transform: translate(-100%, -50%);
+    width: 27px;
+    height: 1px;
+  }
+  .discover {
+    margin: 50px 0 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 700px) {
+  .helper-platforms {
+    flex-direction: column;
+  }
+  .helper-platforms-section + .helper-platforms-section {
+    margin: 30px 0 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .helper-intro {
@@ -350,11 +390,22 @@
   }
   .helper-intro-navigation {
     position: static;
+  }
+  .helper-navigation {
     flex-direction: column-reverse;
     align-items: center;
   }
   .helper-next-btn,
   .helper-back-btn {
     width: 290px;
+  }
+  .helper-platforms-radio {
+    width: 90px; 
+  }
+  .bullet-positive + .bullet-negative {
+    margin-top: 25px;
+  }
+  .discover {
+    margin: 30px 0 0;
   }
 }
