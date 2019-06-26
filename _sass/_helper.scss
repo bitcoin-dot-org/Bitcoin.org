@@ -4,9 +4,13 @@
 .helper-intro {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .helper-intro-img-wrapper {
   width: 40.5%;
+}
+.helper-intro-img-wrapper img {
+  max-width: 100%;
 }
 .helper-intro-description {
   width: 57%;
@@ -17,6 +21,7 @@
 }
 .helper-intro-text {
   margin-bottom: 35px;
+  text-align: left;
 }
 .helper-navigation {
   display: flex;
@@ -35,10 +40,12 @@
 }
 .helper-back-btn {
   width: 170px;
+  height: 55px;
   margin-right: 30px;
 }
 .helper-next-btn {
   width: 170px;
+  height: 55px;
   border: none;
 }
 .helper-row {
@@ -300,4 +307,54 @@
 }
 .discover-link + .discover-link {
   margin-top: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .helper-intro {
+    padding: 120px 0 155px;
+    position: relative;
+  }
+  .helper-intro-title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+  }
+  .helper-intro-description {
+    width: 50%;
+  }
+  .helper-intro-navigation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .helper-intro {
+    flex-direction: column;
+    padding: 100px 0 0;
+  }
+  .helper-intro-img-wrapper {
+    width: 100%;
+  }
+  .helper-intro-description {
+    width: 100%;
+    margin: 30px 0 0;
+  }
+  .helper-intro-text {
+    text-align: center;
+    font-size: 18px;
+  }
+  .helper-intro-navigation {
+    position: static;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .helper-next-btn,
+  .helper-back-btn {
+    width: 290px;
+  }
 }
