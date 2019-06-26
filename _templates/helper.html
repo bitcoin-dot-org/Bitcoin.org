@@ -212,5 +212,106 @@ id: helper
 
     </div>
 
+    <div class="helper-row">
+      <div class="helper-page-numbers">
+        <div class="helper-page-number completed"></div>
+        <div class="helper-page-number completed"></div>
+        <div class="helper-page-number active">3</div>
+        <div class="helper-page-number">4</div>
+      </div>
+
+      <div class="helper-content">
+        <div class="helper-header">
+          <div class="helper-header-row">
+            <h2 class="helper-title previous">What’s your operating system?</h2> 
+            <div class="row">
+              <div class="helper-selected-filter">Desktop wallets / OS X</div>
+              <button class="helper-change-btn">Change</button>
+            </div>
+          </div>
+        </div>
+        <div class="helper-header">
+          <div class="helper-header-row">
+            <h2 class="helper-title previous">How much do I know about Bitcoin?</h2> 
+            <div class="row">
+              <div class="helper-selected-filter">New user</div>
+              <button class="helper-change-btn">Change</button>
+            </div>
+          </div>
+        </div>
+        <div class="helper-header">
+          <h2 class="helper-title">Which criteria are the most important to me?</h2> 
+        </div>
+
+        <div class="helper-content">
+          <div class="helper-checkboxes-row">
+            <label class="checkbox-wrapper helper-checkbox-wrapper">
+              <input type="checkbox" name="important" value="control" class="checkbox js-wallet-selector" />
+              <div class="checkbox-text helper-checkbox-text">
+                <p class="helper-checkbox-title">Control</p>
+                <p class="helper-checkbox-description">Some wallets can give you a full control over your bitcoins. This means no third party can freeze or lose your funds. You are however still responsible for securing and backing up your wallet.</p>
+              </div>
+            </label>
+            <label class="checkbox-wrapper helper-checkbox-wrapper">
+              <input type="checkbox" name="important" value="transparency" class="checkbox js-wallet-selector" />
+              <div class="checkbox-text helper-checkbox-text">
+                <p class="helper-checkbox-title">Transparency</p>
+                <p class="helper-checkbox-description">Some wallets can be open-source and built deterministically. This means nay developer in the world can audit the code and make sure the final software isn’t hiding any secrets.</p>
+              </div>
+            </label>
+            <label class="checkbox-wrapper helper-checkbox-wrapper">
+              <input type="checkbox" name="important" value="fees" class="checkbox js-wallet-selector" />
+              <div class="checkbox-text helper-checkbox-text">
+                <p class="helper-checkbox-title">Fees</p>
+                <p class="helper-checkbox-description">Some wallets can give you a full control over fees. This means that this wallet allows changing the fees after funds are sent using RBF or CPFP. This wallet also provides fee suggestions based on current network conditions so that your transactions are confirmed in a timely manner without paying more than you have to.</p>
+              </div>
+            </label>
+            <label class="checkbox-wrapper helper-checkbox-wrapper">
+              <input type="checkbox" name="important" value="validation" class="checkbox js-wallet-selector" />
+              <div class="checkbox-text helper-checkbox-text">
+                <p class="helper-checkbox-title">Validation</p>
+                <p class="helper-checkbox-description">Some wallets are a full node that validates and relays transaction on the Bitcoin network. This means no trust in a third party required when verifying payments Full nodes provide the highest level of security and are essential to protecting the network. However, they require more space (over 200GB), bandwidth, and a longer initial synchronisation time.</p>
+              </div>
+            </label>
+            <label class="checkbox-wrapper helper-checkbox-wrapper">
+              <input type="checkbox" name="important" value="environment" class="checkbox js-wallet-selector" />
+              <div class="checkbox-text helper-checkbox-text">
+                <p class="helper-checkbox-title">Environment</p>
+                <p class="helper-checkbox-description">Some wallets can be loaded on computers which are vulnerable to malware. Securing your computer, using a stron passphrase, moving most of your funds to cold storage, or enabling two-factor authentication can make it harder to steal your bitcoins.</p>
+              </div>
+            </label>
+            <label class="checkbox-wrapper helper-checkbox-wrapper">
+              <input type="checkbox" name="important" value="privacy" class="checkbox js-wallet-selector" />
+              <div class="checkbox-text helper-checkbox-text">
+                <p class="helper-checkbox-title">Privacy</p>
+                <p class="helper-checkbox-description">Some wallets make it harder to spy on your transactions by rotating addresses. They do not disclose information to peers on the network. They can also optionally let you setup and use Tor as a proxy to prevent others from associating transactions with your IP address.</p>
+              </div>
+            </label>
+          </div>
+        </div>
+        
+        <div class="helper-navigation">
+          <a class="skip-helper-btn" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">Skip helper</a>
+          <div class="helper-navigation-row">
+            <button class="helper-back-btn btn-light">Back</button>
+            <button class="helper-next-btn btn-bright">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="discover">
+          <h2 class="discover-title">Discover more</h2>
+          <a href="#" class="discover-link">Read more about Control</a>
+          <a href="#" class="discover-link">Read more about Validation</a>
+          <a href="#" class="discover-link">Read more about Fees</a>
+          <a href="#" class="discover-link">Read more about Transparency</a>
+          <a href="#" class="discover-link">Read more about Environment</a>
+          <a href="#" class="discover-link">Read more about Privacy</a>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </div>
