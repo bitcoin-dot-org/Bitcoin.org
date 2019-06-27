@@ -2484,100 +2484,14 @@ br.big {
     margin-top: 70px;
     font-weight: 400;
 }
-.toc-row .toccontent .exchanges-tab-title {
-    position: relative;
-    padding-left: 95px;
-}
-.toc-row .toccontent .expanded .exchanges-tab-title {
-    padding-left: 95px;
-}
-.exchanges-tab-title::before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 25px;
-    width: 40px;
-    height: 40px;
-}
-.exchanges-international-title::before {
-    background: url(../img/flags/ALL.svg?1528322191) center no-repeat;
-    background-size: contain;
-}
-.exchanges-europe-title::before {
-    background: url(../img/flags/EU.svg?1528322191) center no-repeat;
-    background-size: contain;
-}
-.exchanges-asia-title::before {
-    background: url(../img/flags/asia.svg?1528322191) center no-repeat;
-    background-size: contain;
-}
-.exchanges-south-america-title::before {
-    background: url(../img/flags/south-america.svg?1528322191) center no-repeat;
-    background-size: contain;
-}
-.exchanges-north-america-title::before {
-    background: url(../img/flags/north-america.svg?1528322191) center no-repeat;
-    background-size: contain;
-}
-.exchanges-australia-title::before {
-    background: url(../img/flags/australia.svg?1528322191) center no-repeat;
-    background-size: contain;
-}
-.exchanges-newzealand-title::before {
-    background: url(../img/flags/newzealand.svg?1528322191) center no-repeat;
-    background-size: contain;
-}
-.exchanges-africa-title::before {
-    background: url(../img/flags/africa.svg?1528322191) center no-repeat;
-    background-size: contain;
-}
-.exchanges-p2p-title::before {
-    background: url(../img/flags/ALL.svg?1528322191) center no-repeat;
-    background-size: contain;
-}
-.expanded .exchanges-content-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-}
-.general-marketplace {
-    width: 240px;
-}
-.expanded .marketplace-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-}
-.exchanges-europe .marketplace-row {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: 61%;
-}
-
-.marketplace {
-    width: 240px;
-    margin: 0 0 45px 0;
-}
-.exchanges-europe .marketplace:nth-child(even) {
-    width: 225px;
-}
 .marketplace h3 {
-    margin-bottom: 0;
-    text-align: left;
-}
-.marketplace img {
-    width: 40px;
-    height: 33px;
-    margin-right: 30px;
+    margin-top: 10px;
 }
 .marketplace-link {
     color: #3490E6;
+}
+.marketplace-flag {
+    height: 15px;
 }
 .exchanges-introlink {
     margin-left: 30px;
