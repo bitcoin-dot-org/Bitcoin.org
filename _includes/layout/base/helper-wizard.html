@@ -1,0 +1,65 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+<div class="wizard js-wizard">
+  <div class="helper-row">
+    <div class="helper-page-numbers">
+      <div class="helper-page-number active">1</div>
+      <div class="helper-page-number">2</div>
+      <div class="helper-page-number">3</div>
+      <div class="helper-page-number">4</div>
+    </div>
+    <div class="helper-content">
+      <div class="helper-header" data-number="1" data-type="platform">
+        <div class="helper-header-row">
+          <div>
+            <h2 class="helper-title">What’s your operating system?</h2> 
+            <p class="helper-subtitle">Please choose one</p>  
+          </div>
+          <div class="helper-selected-block">
+            <div class="row">
+              <div class="helper-selected-filter js-selected-platform"></div>
+              <button class="helper-change-btn">Change</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="helper-header" data-number="2" data-type="user">
+        <div class="helper-header-row">
+          <h2 class="helper-title">How much do I know about Bitcoin?</h2> 
+          <div class="helper-selected-block">
+            <div class="row">
+              <div class="helper-selected-filter">Not selected</div>
+              <button class="helper-change-btn">Change</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="helper-header" data-number="3" data-type="important">
+        <div class="helper-header-row">
+          <h2 class="helper-title">Which criteria are the most important to me?</h2> 
+          <div class="helper-selected-block">
+            <div class="row">
+              <div class="helper-selected-filter">Not selected</div>
+              <button class="helper-change-btn">Change</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="helper-header" data-number="4" data-type="features">
+        <h2 class="helper-title">What features am I looking for?</h2> 
+      </div>
+      {% include layout/base/helper-step-1.html %}
+      {% include layout/base/helper-step-2.html %}
+      {% include layout/base/helper-step-3.html %}
+      {% include layout/base/helper-step-4.html %}
+    </div>
+    <div class="discover">
+      <h2 class="discover-title">Discover more</h2>
+      <a href="#" class="discover-link">Read about each wallet type</a>
+      <a href="#" class="discover-link">Which wallet is the best?</a>
+    </div>
+  </div>
+</div>

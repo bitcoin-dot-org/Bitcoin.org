@@ -43,19 +43,30 @@
   color: #4D5060;
   line-height: 52px;
   text-decoration: underline;
+  background: none;
+  border: none;
 }
 .helper-back-btn {
   width: 170px;
   height: 55px;
-  margin-right: 30px;
 }
 .helper-next-btn {
+  display: none;
+  width: 170px;
+  height: 55px;
+  margin-left: 30px;
+  border: none;
+}
+.helper-next-btn.visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 55px;
-  border: none;
+}
+.wizard {
+  display: none;
+}
+.wizard.visible {
+  display: block;
 }
 .helper-row {
   display: flex;
@@ -104,17 +115,28 @@
 .helper-page-number.completed {
   background: #F7931A url('../img/icons/check.svg') center no-repeat;
   border: 1px solid #F7931A;
+  color: transparent;
 }
 
 .helper-content {
   width: 100%;
 }
 .helper-header {
+  display: none;
   padding-bottom: 16px;
   border-bottom: 1px solid #dadada;
 }
+.helper-header.visible {
+  display: block;
+}
 .helper-header + .helper-header {
   margin-top: 15px;
+}
+.helper-selected-block {
+  display: none;
+}
+.helper-selected-block.visible {
+  display: block;
 }
 .helper-header-row {
   display: flex;
@@ -448,7 +470,7 @@
   .helper-navigation-row {
     flex-direction: column-reverse
   }
-  .helper-back-btn {
-    margin: 15px 0 0;
+  .helper-next-btn {
+    margin: 0 0 15px;
   }
 }
