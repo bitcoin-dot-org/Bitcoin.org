@@ -23,3 +23,43 @@ id: helper
     {% include layout/base/helper-step-4.html %}
   </div>
 </div>
+
+<script>
+  function displayRelevantStep(selectedStep) {
+    var sectionsList = document.querySelectorAll('.helper-step');
+    sectionsList.forEach(function(section) {
+      if (section.dataset.step === selectedStep) section.classList.add('visible');
+      else section.classList.remove('visible');
+    })
+    setUrlParameter('step', selectedStep);
+  }
+  
+  function setListners() {
+    var nextButtons = document.querySelectorAll('.js-helper-next')
+    nextButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        displayRelevantStep(this.dataset.selector);
+      })
+    })
+
+    var backButtons = document.querySelectorAll('.js-helper-back');
+    backButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        displayRelevantStep(this.dataset.selector);
+      })
+    })
+  }
+  
+  function displayDefaultStep() {
+    var step = getUrlParameter('step');
+    if (step) displayRelevantStep(step);
+    else displayRelevantStep('intro');
+  }
+  
+  function init() {
+    displayDefaultStep();
+    setListners();
+  }
+
+  init();
+</script>

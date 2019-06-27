@@ -3,7 +3,8 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="helper-row">
+<div class="helper-step" data-step="important">
+  <div class="helper-row">
     <div class="helper-page-numbers">
       <div class="helper-page-number completed"></div>
       <div class="helper-page-number completed"></div>
@@ -84,8 +85,8 @@ http://opensource.org/licenses/MIT.
       <div class="helper-navigation">
         <a class="skip-helper-btn" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">Skip helper</a>
         <div class="helper-navigation-row">
-          <button class="helper-back-btn btn-light">Back</button>
-          <button class="helper-next-btn btn-bright">Next</button>
+          <button class="helper-back-btn btn-light js-helper-back" data-selector="user">Back</button>
+          <button class="helper-next-btn btn-bright js-helper-next" data-selector="features">Next</button>
         </div>
       </div>
     </div>
@@ -101,3 +102,4 @@ http://opensource.org/licenses/MIT.
     </div>
 
   </div>
+</div>

@@ -706,3 +706,7 @@ function checkIfFiltersInclude(categories, filters) {
   }
   return true;
 }
+
+function setUrlParameter(parameter, value) {
+  history.pushState(null, null, updateQueryStringParameter(parameter, value));
+}

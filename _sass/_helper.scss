@@ -1,6 +1,12 @@
 .helper {
   padding: 50px 0;
 }
+.helper-step {
+  display: none;
+}
+.helper-step.visible {
+  display: block;
+}
 .helper-intro {
   display: flex;
   justify-content: space-between;
@@ -44,6 +50,9 @@
   margin-right: 30px;
 }
 .helper-next-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 55px;
   border: none;

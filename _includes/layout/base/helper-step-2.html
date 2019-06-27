@@ -3,60 +3,62 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="helper-row">
-  <div class="helper-page-numbers">
-    <div class="helper-page-number completed"></div>
-    <div class="helper-page-number active">2</div>
-    <div class="helper-page-number">3</div>
-    <div class="helper-page-number">4</div>
-  </div>
-
-  <div class="helper-content">
-    <div class="helper-header">
-      <div class="helper-header-row">
-        <h2 class="helper-title previous">What’s your operating system?</h2> 
-        <div class="row">
-          <div class="helper-selected-filter">Desktop wallets / OS X</div>
-          <button class="helper-change-btn">Change</button>
+<div class="helper-step" data-step="user">
+  <div class="helper-row">
+    <div class="helper-page-numbers">
+      <div class="helper-page-number completed"></div>
+      <div class="helper-page-number active">2</div>
+      <div class="helper-page-number">3</div>
+      <div class="helper-page-number">4</div>
+    </div>
+  
+    <div class="helper-content">
+      <div class="helper-header">
+        <div class="helper-header-row">
+          <h2 class="helper-title previous">What’s your operating system?</h2> 
+          <div class="row">
+            <div class="helper-selected-filter">Desktop wallets / OS X</div>
+            <button class="helper-change-btn">Change</button>
+          </div>
+        </div>
+      </div>
+      <div class="helper-header">
+        <h2 class="helper-title">How much do I know about Bitcoin?</h2>  
+      </div>
+      
+      <div class="helper-user-types">
+        <label class="helper-user-radio-wrapper">
+          <input type="radio" class="helper-user-radio js-wallet-selector" name="user" value="new"/>
+          <div class="helper-user-radio-custom">
+            <img src="/img/icons/plant.svg" alt="plant & bitcoin">
+            <h4 class="helper-user-radio-title">I’m a Bitcoin Beginner</h4>
+            <p class="helper-user-radio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </label>
+        <p class="helper-user-separator">or</p>
+        <label class="helper-user-radio-wrapper">
+          <input type="radio" class="helper-user-radio js-wallet-selector" name="user" value="experienced"/>
+          <div class="helper-user-radio-custom">
+            <img src="/img/icons/trees.svg" alt="trees & bitcoin">
+            <h4 class="helper-user-radio-title">I’m an advance Bitcoin user</h4>
+            <p class="helper-user-radio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </label>
+      </div>
+      
+      <div class="helper-navigation">
+        <a class="skip-helper-btn" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">Skip helper</a>
+        <div class="helper-navigation-row">
+          <button class="helper-back-btn btn-light js-helper-back" data-selector="os">Back</button>
+          <button class="helper-next-btn btn-bright js-helper-next" data-selector="important">Next</button>
         </div>
       </div>
     </div>
-    <div class="helper-header">
-      <h2 class="helper-title">How much do I know about Bitcoin?</h2>  
+  
+    <div class="discover">
+      <h2 class="discover-title">Discover more</h2>
+      <a href="#" class="discover-link">Learn about Bitcoin</a>
     </div>
-    
-    <div class="helper-user-types">
-      <label class="helper-user-radio-wrapper">
-        <input type="radio" class="helper-user-radio js-wallet-selector" name="user" value="new"/>
-        <div class="helper-user-radio-custom">
-          <img src="/img/icons/plant.svg" alt="plant & bitcoin">
-          <h4 class="helper-user-radio-title">I’m a Bitcoin Beginner</h4>
-          <p class="helper-user-radio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </label>
-      <p class="helper-user-separator">or</p>
-      <label class="helper-user-radio-wrapper">
-        <input type="radio" class="helper-user-radio js-wallet-selector" name="user" value="experienced"/>
-        <div class="helper-user-radio-custom">
-          <img src="/img/icons/trees.svg" alt="trees & bitcoin">
-          <h4 class="helper-user-radio-title">I’m an advance Bitcoin user</h4>
-          <p class="helper-user-radio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </label>
-    </div>
-    
-    <div class="helper-navigation">
-      <a class="skip-helper-btn" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">Skip helper</a>
-      <div class="helper-navigation-row">
-        <button class="helper-back-btn btn-light">Back</button>
-        <button class="helper-next-btn btn-bright">Next</button>
-      </div>
-    </div>
+  
   </div>
-
-  <div class="discover">
-    <h2 class="discover-title">Discover more</h2>
-    <a href="#" class="discover-link">Learn about Bitcoin</a>
-  </div>
-
 </div>

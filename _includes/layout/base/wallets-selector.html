@@ -429,10 +429,6 @@ http://opensource.org/licenses/MIT.
 
 <script>
   var queries = {};
-
-  function setFilterUrlParameter(value) {
-    history.pushState(null, null, updateQueryStringParameter('filters', value));
-  }
   
   var linksList = document.querySelectorAll('.wallet-link');  
   var selectorsList = document.querySelectorAll('.js-wallet-selector');
@@ -530,7 +526,7 @@ http://opensource.org/licenses/MIT.
     setWalletsVisibility(filters);
     setInputActivity();
     displayContentSections();
-    setFilterUrlParameter(filters);
+    setUrlParameter('filters', filters);
     displaySelectedOs();
   }
 

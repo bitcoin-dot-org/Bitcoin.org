@@ -3,96 +3,98 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="helper-row">
-  <div class="helper-page-numbers">
-    <div class="helper-page-number completed"></div>
-    <div class="helper-page-number completed"></div>
-    <div class="helper-page-number completed"></div>
-    <div class="helper-page-number active">4</div>
-  </div>
-
-  <div class="helper-content">
-    <div class="helper-header">
-      <div class="helper-header-row">
-        <h2 class="helper-title previous">What’s your operating system?</h2> 
-        <div class="row">
-          <div class="helper-selected-filter">Desktop wallets / OS X</div>
-          <button class="helper-change-btn">Change</button>
-        </div>
-      </div>
+<div class="helper-step" data-step="features">
+  <div class="helper-row">
+    <div class="helper-page-numbers">
+      <div class="helper-page-number completed"></div>
+      <div class="helper-page-number completed"></div>
+      <div class="helper-page-number completed"></div>
+      <div class="helper-page-number active">4</div>
     </div>
-    <div class="helper-header">
-      <div class="helper-header-row">
-        <h2 class="helper-title previous">How much do I know about Bitcoin?</h2> 
-        <div class="row">
-          <div class="helper-selected-filter">New user</div>
-          <button class="helper-change-btn">Change</button>
-        </div>
-      </div>
-    </div>
-    <div class="helper-header">
-      <div class="helper-header-row">
-        <h2 class="helper-title previous">Which criteria are the most important to me?</h2> 
-        <div class="row">
-          <div class="helper-selected-filter">Control, Fees</div>
-          <button class="helper-change-btn">Change</button>
-        </div>
-      </div>
-    </div>
-    <div class="helper-header">
-      <h2 class="helper-title">What features am I looking for?</h2> 
-    </div>
-
+  
     <div class="helper-content">
-      <div class="helper-checkboxes-row">
-        <label class="checkbox-wrapper helper-checkbox-wrapper">
-          <input type="checkbox" name="features" value="multisig" class="checkbox js-wallet-selector" />
-          <div class="checkbox-text helper-checkbox-text">
-            <p class="helper-checkbox-title">Multisig</p>
-            <p class="helper-checkbox-description">Refers to requiring more than one key to authorize a Bitcoin transaction. It is generally used to divide up responsibility for possession of bitcoins</p>
+      <div class="helper-header">
+        <div class="helper-header-row">
+          <h2 class="helper-title previous">What’s your operating system?</h2> 
+          <div class="row">
+            <div class="helper-selected-filter">Desktop wallets / OS X</div>
+            <button class="helper-change-btn">Change</button>
           </div>
-        </label>
-        <label class="checkbox-wrapper helper-checkbox-wrapper">
-          <input type="checkbox" name="features" value="segwit" class="checkbox js-wallet-selector" />
-          <div class="checkbox-text helper-checkbox-text">
-            <p class="helper-checkbox-title">Segwit</p>
-            <p class="helper-checkbox-description">Is an implemented protocol upgrade intended to provide protection from transaction malleability and increase block capacity. SegWit separates the witness from the list of inputs. The witness contains data required to check transaction validity but is not required to determine transaction effects.</p>
+        </div>
+      </div>
+      <div class="helper-header">
+        <div class="helper-header-row">
+          <h2 class="helper-title previous">How much do I know about Bitcoin?</h2> 
+          <div class="row">
+            <div class="helper-selected-filter">New user</div>
+            <button class="helper-change-btn">Change</button>
           </div>
-        </label>
-        <label class="checkbox-wrapper helper-checkbox-wrapper">
-          <input type="checkbox" name="features" value="2fa" class="checkbox js-wallet-selector" />
-          <div class="checkbox-text helper-checkbox-text">
-            <p class="helper-checkbox-title">2FA</p>
-            <p class="helper-checkbox-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, deserunt! Nesciunt fugit maiores, quidem sed labore modi nihil in quaerat laboriosam, atque repudiandae perferendis fuga ducimus amet rem. Est, ipsam?</p>
+        </div>
+      </div>
+      <div class="helper-header">
+        <div class="helper-header-row">
+          <h2 class="helper-title previous">Which criteria are the most important to me?</h2> 
+          <div class="row">
+            <div class="helper-selected-filter">Control, Fees</div>
+            <button class="helper-change-btn">Change</button>
           </div>
-        </label>
-        <label class="checkbox-wrapper helper-checkbox-wrapper">
-          <input type="checkbox" name="features" value="bech32" class="checkbox js-wallet-selector" />
-          <div class="checkbox-text helper-checkbox-text">
-            <p class="helper-checkbox-title">Bech32</p>
-            <p class="helper-checkbox-description">Bech32 is a new bitcoin address format specified by BIP 0173. This page tracks the adoption of Bech32. Ideally wallets and services would first support sending to bech32 addresses. After almost everything can send to. then people may willing to adopt bech 32 widely for receiving.</p>
-          </div>
-        </label>
+        </div>
+      </div>
+      <div class="helper-header">
+        <h2 class="helper-title">What features am I looking for?</h2> 
+      </div>
+  
+      <div class="helper-content">
+        <div class="helper-checkboxes-row">
+          <label class="checkbox-wrapper helper-checkbox-wrapper">
+            <input type="checkbox" name="features" value="multisig" class="checkbox js-wallet-selector" />
+            <div class="checkbox-text helper-checkbox-text">
+              <p class="helper-checkbox-title">Multisig</p>
+              <p class="helper-checkbox-description">Refers to requiring more than one key to authorize a Bitcoin transaction. It is generally used to divide up responsibility for possession of bitcoins</p>
+            </div>
+          </label>
+          <label class="checkbox-wrapper helper-checkbox-wrapper">
+            <input type="checkbox" name="features" value="segwit" class="checkbox js-wallet-selector" />
+            <div class="checkbox-text helper-checkbox-text">
+              <p class="helper-checkbox-title">Segwit</p>
+              <p class="helper-checkbox-description">Is an implemented protocol upgrade intended to provide protection from transaction malleability and increase block capacity. SegWit separates the witness from the list of inputs. The witness contains data required to check transaction validity but is not required to determine transaction effects.</p>
+            </div>
+          </label>
+          <label class="checkbox-wrapper helper-checkbox-wrapper">
+            <input type="checkbox" name="features" value="2fa" class="checkbox js-wallet-selector" />
+            <div class="checkbox-text helper-checkbox-text">
+              <p class="helper-checkbox-title">2FA</p>
+              <p class="helper-checkbox-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, deserunt! Nesciunt fugit maiores, quidem sed labore modi nihil in quaerat laboriosam, atque repudiandae perferendis fuga ducimus amet rem. Est, ipsam?</p>
+            </div>
+          </label>
+          <label class="checkbox-wrapper helper-checkbox-wrapper">
+            <input type="checkbox" name="features" value="bech32" class="checkbox js-wallet-selector" />
+            <div class="checkbox-text helper-checkbox-text">
+              <p class="helper-checkbox-title">Bech32</p>
+              <p class="helper-checkbox-description">Bech32 is a new bitcoin address format specified by BIP 0173. This page tracks the adoption of Bech32. Ideally wallets and services would first support sending to bech32 addresses. After almost everything can send to. then people may willing to adopt bech 32 widely for receiving.</p>
+            </div>
+          </label>
+        </div>
+      </div>
+      
+      <div class="helper-navigation">
+        <a class="skip-helper-btn" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">Skip helper</a>
+        <div class="helper-navigation-row">
+          <button class="helper-back-btn btn-light js-helper-back" data-selector="important">Back</button>
+          <a class="helper-next-btn btn-bright" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">Next</a>
+        </div>
       </div>
     </div>
-    
-    <div class="helper-navigation">
-      <a class="skip-helper-btn" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">Skip helper</a>
-      <div class="helper-navigation-row">
-        <button class="helper-back-btn btn-light">Back</button>
-        <button class="helper-next-btn btn-bright">Next</button>
-      </div>
+  
+    <div class="discover">
+      <h2 class="discover-title">Discover more</h2>
+      <a href="#" class="discover-link">Read more about Control</a>
+      <a href="#" class="discover-link">Read more about Validation</a>
+      <a href="#" class="discover-link">Read more about Fees</a>
+      <a href="#" class="discover-link">Read more about Transparency</a>
+      <a href="#" class="discover-link">Read more about Environment</a>
+      <a href="#" class="discover-link">Read more about Privacy</a>
     </div>
+  
   </div>
-
-  <div class="discover">
-    <h2 class="discover-title">Discover more</h2>
-    <a href="#" class="discover-link">Read more about Control</a>
-    <a href="#" class="discover-link">Read more about Validation</a>
-    <a href="#" class="discover-link">Read more about Fees</a>
-    <a href="#" class="discover-link">Read more about Transparency</a>
-    <a href="#" class="discover-link">Read more about Environment</a>
-    <a href="#" class="discover-link">Read more about Privacy</a>
-  </div>
-
 </div>
