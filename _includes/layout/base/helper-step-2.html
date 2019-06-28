@@ -3,15 +3,15 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="helper-accordion">
+<div class="helper-accordion js-helper-accordion" data-number="2" data-type="user">
 
-  <div class="helper-header" data-number="2" data-type="user">
+  <div class="helper-header">
     <div class="helper-header-row">
       <h2 class="helper-title">How much do I know about Bitcoin?</h2> 
       <div class="helper-selected-block">
         <div class="row">
           <div class="helper-selected-filter"></div>
-          <button class="helper-change-btn">Change</button>
+          <button class="helper-change-btn" data-selector="2">Change</button>
         </div>
       </div>
     </div>
@@ -20,7 +20,7 @@ http://opensource.org/licenses/MIT.
   <div class="helper-step" data-step="2">
     <div class="helper-user-types">
       <label class="helper-user-radio-wrapper">
-        <input type="radio" class="helper-user-radio js-wallet-selector" name="user" value="new"/>
+        <input type="radio" class="helper-user-radio js-helper-user" name="user" value="new" data-text="New user" />
         <div class="helper-user-radio-custom">
           <img src="/img/icons/plant.svg" alt="plant & bitcoin">
           <h4 class="helper-user-radio-title">New</h4>
@@ -29,7 +29,7 @@ http://opensource.org/licenses/MIT.
       </label>
       <p class="helper-user-separator">or</p>
       <label class="helper-user-radio-wrapper">
-        <input type="radio" class="helper-user-radio js-wallet-selector" name="user" value="experienced"/>
+        <input type="radio" class="helper-user-radio js-helper-user" name="user" value="experienced" data-text="Experienced user" />
         <div class="helper-user-radio-custom">
           <img src="/img/icons/trees.svg" alt="trees & bitcoin">
           <h4 class="helper-user-radio-title">Experienced</h4>
@@ -42,7 +42,7 @@ http://opensource.org/licenses/MIT.
       <button class="skip-helper-btn">Skip helper</button>
       <div class="helper-navigation-row">
         <button class="helper-back-btn btn-light js-helper-back" data-selector="1">Back</button>
-        <button class="helper-next-btn btn-bright js-helper-next" data-selector="3">Next</button>
+        <button class="helper-next-btn btn-bright js-helper-next js-user-next" data-selector="3">Next</button>
       </div>
     </div>
     

@@ -16,11 +16,14 @@ http://opensource.org/licenses/MIT.
   var selectedUser;
   var selectedImportantCheckboxes = [];
   var selectedImportantCheckboxes = [];
+  var accordionsList = document.querySelectorAll('.js-helper-accordion');
   var headersList = document.querySelectorAll('.helper-header');
   
   function displayRelevantStep(selectedStep) {
     var sectionsList = document.querySelectorAll('.helper-step');
-    if (selectedStep !== '0') onNextIntroButtonClick();
+
+    if (selectedStep !== '0') showWizard();
+    
     sectionsList.forEach(function(section) {
       if (section.dataset.step === selectedStep) section.classList.add('visible');
       else section.classList.remove('visible');
@@ -28,13 +31,18 @@ http://opensource.org/licenses/MIT.
   }
   
   function displaySelectedHeaderValues() {
-    headersList.forEach(function(header) {
-      var headerType = header.dataset.type;
-      var selectedFilters = getUrlParameter(headerType);
-      
-      if (selectedFilters) {
+    accordionsList.forEach(function(accordion) {
+      var accordionType = accordion.dataset.type;
+      var selectedFilters = getUrlParameter(accordionType);
+
+      if (selectedFilters && accordionType === 'important' || accordionType === 'features') {
+        var text = selectedFilters.split(',').map(function(s) {
+          return s.split('_').join(' ');
+        }).join(', ');
+        accordion.querySelector('.helper-selected-filter').textContent = text;
+      } else if (selectedFilters) {
         var text = document.querySelector('input[value=' + selectedFilters + ']').dataset.text;
-        header.querySelector('.helper-selected-filter').textContent = text;
+        accordion.querySelector('.helper-selected-filter').textContent = text;
       }
     })
   }
@@ -42,20 +50,25 @@ http://opensource.org/licenses/MIT.
   function highlightRelevantHeader(step) {    
     step = Number(step);
     
-    headersList.forEach(function(header) {
-      var headerType = header.dataset.type;
-      var headerStep = Number(header.dataset.number);
+    accordionsList.forEach(function(accordion) {
+      var accordionType = accordion.dataset.type;
+      var accordionStep = Number(accordion.dataset.number);
       
-      if (headerStep === step) header.classList.add('active');
-      else header.classList.remove('active');
+      if (accordionStep === step) accordion.classList.add('active');
+      else accordion.classList.remove('active');
 
-      var selectedFilters = getUrlParameter(headerType);
-      if (selectedFilters && headerStep !== step) header.querySelector('.helper-selected-block').classList.add('visible');
-      else header.querySelector('.helper-selected-block').classList.remove('visible');
+      var selectedFilters = getUrlParameter(accordionType);
+      if (selectedFilters && accordionStep !== step) {
+        accordion.querySelector('.helper-selected-block').classList.add('visible');
+        accordion.classList.add('complete');
+      } else {
+        accordion.querySelector('.helper-selected-block').classList.remove('visible');
+        accordion.classList.remove('complete');
+      }
     })      
   }
   
-  function onNextIntroButtonClick() {
+  function showWizard() {
     var wizard = document.querySelector('.js-wizard');
     wizard.classList.add('visible')
   }
@@ -67,9 +80,39 @@ http://opensource.org/licenses/MIT.
     displaySelectedHeaderValues();
   }
   
+  function scrollIntoHeader(number) {
+    document.querySelector('[data-number="' + number + '"]').scrollIntoView();
+  }
+  
   function onUserRadioChange(radio) {
-    var nextButton = document.querySelector('.js-platform-next');
-    var selectedPlatformText = document.querySelector('.js-selected-user');
+    var nextButton = document.querySelector('.js-user-next');
+    nextButton.classList.add('visible');
+    setUrlParameter(radio.name, radio.value);
+    displaySelectedHeaderValues();
+  }
+
+  function onImportantCheckboxChange(checkbox) {
+    var nextButton = document.querySelector('.js-important-next');
+    nextButton.classList.add('visible');
+    var filters = [];
+    var selectedCheckboxes = document.querySelectorAll('.js-helper-important:checked');
+    selectedCheckboxes.forEach(function(input) {
+      filters.push(input.value);
+    });
+    setUrlParameter(checkbox.name, filters);
+    displaySelectedHeaderValues();
+  }
+
+  function onFeaturesCheckboxChange(checkbox) {
+    var nextButton = document.querySelector('.js-features-next');
+    nextButton.classList.add('visible');
+    var filters = []
+    var selectedCheckboxes = document.querySelectorAll('.js-helper-features:checked');
+    selectedCheckboxes.forEach(function(input) {
+      filters.push(input.value);
+    });
+    setUrlParameter(checkbox.name, filters);
+    displaySelectedHeaderValues();
   }
   
   function setListners() {
@@ -80,16 +123,18 @@ http://opensource.org/licenses/MIT.
         displayRelevantStep(step);
         setUrlParameter('step', step);
         highlightRelevantHeader(step);
+        scrollIntoHeader(step);
       });
     });
 
-    var backButtons = document.querySelectorAll('.js-helper-back');
+    var backButtons = document.querySelectorAll('[data-selector]');
     backButtons.forEach(function(button) {
       button.addEventListener('click', function() {
         var step = this.dataset.selector;
         displayRelevantStep(step);
         setUrlParameter('step', step);
         highlightRelevantHeader(step);
+        scrollIntoHeader(step);
       });
     });
 
@@ -97,7 +142,6 @@ http://opensource.org/licenses/MIT.
     platformRadioList.forEach(function(radio) {
       radio.addEventListener('change', function() {
         onPlatformRadioChange(radio);
-        displaySelectedHeaderValues(radio.dataset.text);
       });
     });
 
@@ -107,20 +151,62 @@ http://opensource.org/licenses/MIT.
         onUserRadioChange(radio);
       });
     });
+
+    var impotantCheckboxesList = document.querySelectorAll('.js-helper-important');
+    impotantCheckboxesList.forEach(function(checkbox) {
+      checkbox.addEventListener('change', function() {
+        onImportantCheckboxChange(checkbox);
+      });
+    });
+
+    var featuresCheckboxesList = document.querySelectorAll('.js-helper-features');
+    featuresCheckboxesList.forEach(function(checkbox) {
+      checkbox.addEventListener('change', function() {
+        onFeaturesCheckboxChange(checkbox);
+      });
+    });
+  }
+  
+  function checkInputsValues(parameterName, parameterValues) {
+    var filters = parameterValues.split(',');
+    var inputValues = [];
+    var inputsList = document.getElementsByName(parameterName);
+    inputsList.forEach(function(input) {
+      inputValues.push(input.value);
+    })
+    console.log(filters, inputValues)
+    for (var i = 0; i < filters.length; i++) {
+      var filter = filters[i];
+      if (!inputValues.includes(filter)) return false;
+    }
+    return true;
+  }
+  
+  function verifyPreviousStepsChecks(step) {
+    for (var i = step - 1; i > 0; i--) {
+      var parameterName = document.querySelector('[data-number="' + i + '"]').dataset.type;
+      var parameterValues = getUrlParameter(parameterName);
+      if (!!parameterValues && !checkInputsValues(parameterName, parameterValues)) return false;
+    }
+    return true;
   }
   
   function displayDefaultContent(step) {
-    if (step) {
+    currentStep = Number(step);
+    var isWizardStep = currentStep > 0 && currentStep < 5;
+    if (isWizardStep && verifyPreviousStepsChecks(step)) {
       displayRelevantStep(step);
-      highlightRelevantHeader(step)
       displaySelectedHeaderValues();
-    } else displayRelevantStep('0');
+      highlightRelevantHeader(step)
+    } else {
+      displayRelevantStep('0');
+      window.history.replaceState(null, null, window.location.pathname);
+    }
   }
   
   function init() {
     var step = getUrlParameter('step');
     displayDefaultContent(step);
-    highlightRelevantHeader(step);
     setListners();
   }
 
