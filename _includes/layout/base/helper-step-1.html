@@ -3,101 +3,115 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="helper-step" data-step="1">
-  <div class="helper-platforms">
-    <div class="helper-platforms-section">
-      <h3 class="helper-platforms-title">Mobile wallets</h3>
-      <div class="helper-platforms-row">
-        <label class="helper-radio-wrapper">
-          <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="android" data-text="Mobile / Android"/>
-          <div class="platform-radio-custom helper-platforms-radio">
-            <img src="/img/os/wallet_menu_android.svg" alt="android" class="platform-radio-icon-inactive">
-            <img src="/img/os/wallet_menu_android_bright.svg" alt="android" class="platform-radio-icon-active">
-          </div>
-        </label>
-        <label class="helper-radio-wrapper">
-          <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="ios" data-text="Mobile / iOS"/>
-          <div class="platform-radio-custom helper-platforms-radio">
-            <img src="/img/os/wallet_menu_mac.svg" alt="ios" class="platform-radio-icon-inactive">
-            <img src="/img/os/wallet_menu_mac_bright.svg" alt="ios" class="platform-radio-icon-active">
-          </div>
-        </label>
+<div class="helper-accordion">
+  <div class="helper-header" data-number="1" data-type="platform">
+    <div class="helper-header-row">
+      <div>
+        <h2 class="helper-title">What’s your operating system?</h2> 
       </div>
-      <p class="bullet bullet-positive">Fast</p>
-      <p class="bullet bullet-positive">Safer than online wallets</p>
-      <p class="bullet bullet-positive">Use on the go</p>
-      <p class="bullet bullet-negative">Easy to lost</p>
-      <p class="bullet bullet-negative">Risk of mobile viruses</p>
-    </div>
-    <div class="helper-platforms-section">
-      <h3 class="helper-platforms-title">Desktop wallets</h3>
-      <div class="helper-platforms-row">
-        <label class="helper-radio-wrapper">
-          <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="linux" data-text="Desktop / Linux"/>
-          <div class="platform-radio-custom helper-platforms-radio">
-            <img src="/img/os/wallet_menu_linux.svg" alt="linux" class="platform-radio-icon-inactive">
-            <img src="/img/os/wallet_menu_linux_bright.svg" alt="linux" class="platform-radio-icon-active">
-          </div>
-        </label>
-        <label class="helper-radio-wrapper">
-          <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="mac" data-text="Desktop / OS X"/>
-          <div class="platform-radio-custom helper-platforms-radio">
-            <img src="/img/os/wallet_menu_mac.svg" alt="mac" class="platform-radio-icon-inactive">
-            <img src="/img/os/wallet_menu_mac_bright.svg" alt="mac" class="platform-radio-icon-active">
-          </div>
-        </label>
-        <label class="helper-radio-wrapper">
-          <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="windows" data-text="Desktop / Windows"/>
-          <div class="platform-radio-custom helper-platforms-radio">
-            <img src="/img/os/wallet_menu_windows.svg" alt="windows" class="platform-radio-icon-inactive">
-            <img src="/img/os/wallet_menu_windows_bright.svg" alt="windows" class="platform-radio-icon-active">
-          </div>
-        </label>
+      <div class="helper-selected-block">
+        <div class="row">
+          <p class="helper-selected-filter js-selected-platform"></p>
+          <button class="helper-change-btn">Change</button>
+        </div>
       </div>
-      <p class="bullet bullet-positive">For those who trade cryptos form their computers</p>
-      <p class="bullet bullet-positive">Private keys are not stored on a third-party server</p>
-      <p class="bullet bullet-negative">Less secure wallet</p>
-      <p class="bullet bullet-negative">Lorem ipsum</p>
     </div>
   </div>
-  <div class="helper-platforms">
-    <div class="helper-platforms-section">
-      <h3 class="helper-platforms-title">Web wallets</h3>
-      <div class="helper-platforms-row">
-        <label class="helper-radio-wrapper">
-          <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="web" data-text="Web"/>
-          <div class="platform-radio-custom helper-platforms-radio">
-            <img src="/img/os/wallet_menu_web.svg" alt="web" class="platform-radio-icon-inactive">
-            <img src="/img/os/wallet_menu_web_bright.svg" alt="web" class="platform-radio-icon-active">
-          </div>
-        </label>
+  <div class="helper-step" data-step="1">
+    <div class="helper-platforms">
+      <div class="helper-platforms-section">
+        <h3 class="helper-platforms-title">Mobile wallets</h3>
+        <div class="helper-platforms-row">
+          <label class="helper-radio-wrapper">
+            <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="android" data-text="Mobile / Android"/>
+            <div class="platform-radio-custom helper-platforms-radio">
+              <img src="/img/os/wallet_menu_android.svg" alt="android" class="platform-radio-icon-inactive">
+              <img src="/img/os/wallet_menu_android_bright.svg" alt="android" class="platform-radio-icon-active">
+            </div>
+          </label>
+          <label class="helper-radio-wrapper">
+            <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="ios" data-text="Mobile / iOS"/>
+            <div class="platform-radio-custom helper-platforms-radio">
+              <img src="/img/os/wallet_menu_mac.svg" alt="ios" class="platform-radio-icon-inactive">
+              <img src="/img/os/wallet_menu_mac_bright.svg" alt="ios" class="platform-radio-icon-active">
+            </div>
+          </label>
+        </div>
+        <p class="bullet bullet-positive">Portable and convenient; ideal when making transactions with others face-to-face</p>
+        <p class="bullet bullet-positive"> Designed to be able to use QR codes to make quick and seamless transactions</p>
+        <p class="bullet bullet-negative">App marketplaces can delist/remove wallet making it difficult to receive future updates</p>
+        <p class="bullet bullet-negative">Damage, loss of device or mobile viruses can potentially lead to total loss of funds</p>
       </div>
-      <p class="bullet bullet-positive">Enable fast transactions</p>
-      <p class="bullet bullet-positive">Manage multiple cryptocurrencies</p>
-      <p class="bullet bullet-positive">Use on the go and far active trading</p>
-      <p class="bullet bullet-negative">Risk of online security and viruses</p>
-      <p class="bullet bullet-negative">A third-party is a storing your crypto</p>
-    </div>
-    <div class="helper-platforms-section">
-      <h3 class="helper-platforms-title">Hardware wallets</h3>
-      <div class="helper-platforms-row">
-        <label class="helper-radio-wrapper">
-          <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="hardware" data-text="Hardware"/>
-          <div class="platform-radio-custom helper-platforms-radio">
-            <img src="/img/os/wallet_menu_hardware.svg" alt="hardware" class="platform-radio-icon-inactive">
-            <img src="/img/os/wallet_menu_hardware_bright.svg" alt="hardware" class="platform-radio-icon-active">
-          </div>
-        </label>
+      <div class="helper-platforms-section">
+        <h3 class="helper-platforms-title">Desktop wallets</h3>
+        <div class="helper-platforms-row">
+          <label class="helper-radio-wrapper">
+            <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="linux" data-text="Desktop / Linux"/>
+            <div class="platform-radio-custom helper-platforms-radio">
+              <img src="/img/os/wallet_menu_linux.svg" alt="linux" class="platform-radio-icon-inactive">
+              <img src="/img/os/wallet_menu_linux_bright.svg" alt="linux" class="platform-radio-icon-active">
+            </div>
+          </label>
+          <label class="helper-radio-wrapper">
+            <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="mac" data-text="Desktop / OS X"/>
+            <div class="platform-radio-custom helper-platforms-radio">
+              <img src="/img/os/wallet_menu_mac.svg" alt="mac" class="platform-radio-icon-inactive">
+              <img src="/img/os/wallet_menu_mac_bright.svg" alt="mac" class="platform-radio-icon-active">
+            </div>
+          </label>
+          <label class="helper-radio-wrapper">
+            <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="windows" data-text="Desktop / Windows"/>
+            <div class="platform-radio-custom helper-platforms-radio">
+              <img src="/img/os/wallet_menu_windows.svg" alt="windows" class="platform-radio-icon-inactive">
+              <img src="/img/os/wallet_menu_windows_bright.svg" alt="windows" class="platform-radio-icon-active">
+            </div>
+          </label>
+        </div>
+        <p class="bullet bullet-positive">Environment enables users to have complete control over funds</p>
+        <p class="bullet bullet-positive">Some desktop wallets offer hardware wallet support, or can operate as full nodes</p>
+        <p class="bullet bullet-negative">Difficult to utilize QR codes when making transactions</p>
+        <p class="bullet bullet-negative">Susceptible to bitcoin-stealing malware/spyware/viruses</p>
       </div>
-      <p class="bullet bullet-positive">Safest crypto wallet options</p>
-      <p class="bullet bullet-positive">Great for storing large amounts of cryptocurrencies</p>
-      <p class="bullet bullet-negative">Most expensive type of wallet</p>
-      <p class="bullet bullet-negative">Not as user-friendly especially for beginners</p>
     </div>
-  </div>
-  
-  <div class="helper-navigation">
-    <button class="skip-helper-btn">Skip helper</button>
-    <button class="helper-next-btn btn-bright js-platform-next js-helper-next" data-selector="2">Next</button>
+    <div class="helper-platforms">
+      <div class="helper-platforms-section">
+        <h3 class="helper-platforms-title">Web wallets</h3>
+        <div class="helper-platforms-row">
+          <label class="helper-radio-wrapper">
+            <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="web" data-text="Web"/>
+            <div class="platform-radio-custom helper-platforms-radio">
+              <img src="/img/os/wallet_menu_web.svg" alt="web" class="platform-radio-icon-inactive">
+              <img src="/img/os/wallet_menu_web_bright.svg" alt="web" class="platform-radio-icon-active">
+            </div>
+          </label>
+        </div>
+        <p class="bullet bullet-positive">Easy to access from different devices, only a web browser is needed</p>
+        <p class="bullet bullet-positive">Funds can potentially be recovered if a device is damaged or lost</p>
+        <p class="bullet bullet-negative">Requires trust in a third party and shared control over funds</p>
+        <p class="bullet bullet-negative">Web wallets compromised by hackers can potentially result in loss of funds</p>
+      </div>
+      <div class="helper-platforms-section">
+        <h3 class="helper-platforms-title">Hardware wallets</h3>
+        <div class="helper-platforms-row">
+          <label class="helper-radio-wrapper">
+            <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="hardware" data-text="Hardware"/>
+            <div class="platform-radio-custom helper-platforms-radio">
+              <img src="/img/os/wallet_menu_hardware.svg" alt="hardware" class="platform-radio-icon-inactive">
+              <img src="/img/os/wallet_menu_hardware_bright.svg" alt="hardware" class="platform-radio-icon-active">
+            </div>
+          </label>
+        </div>
+        <p class="bullet bullet-positive">One of the most methods to store funds</p>
+        <p class="bullet bullet-positive">Ideal for storing large amounts of bitcoin</p>
+        <p class="bullet bullet-negative">Difficult to use while mobile; not designed for scanning QR codes</p>
+        <p class="bullet bullet-negative">Loss of device without proper backup can make funds unrecoverable</p>
+      </div>
+    </div>
+    
+    <div class="helper-navigation">
+      <button class="skip-helper-btn">Skip helper</button>
+      <button class="helper-next-btn btn-bright js-platform-next js-helper-next" data-selector="2">Next</button>
+    </div>
   </div>
 </div>
+

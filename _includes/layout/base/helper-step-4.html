@@ -3,43 +3,82 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="helper-step" data-step="4">
-  <div class="helper-checkboxes-row">
-    <label class="checkbox-wrapper helper-checkbox-wrapper">
-      <input type="checkbox" name="features" value="multisig" class="checkbox js-helper-selector" />
-      <div class="checkbox-text helper-checkbox-text">
-        <p class="helper-checkbox-title">Multisig</p>
-        <p class="helper-checkbox-description">Refers to requiring more than one key to authorize a Bitcoin transaction. It is generally used to divide up responsibility for possession of bitcoins</p>
-      </div>
-    </label>
-    <label class="checkbox-wrapper helper-checkbox-wrapper">
-      <input type="checkbox" name="features" value="segwit" class="checkbox js-helper-selector" />
-      <div class="checkbox-text helper-checkbox-text">
-        <p class="helper-checkbox-title">Segwit</p>
-        <p class="helper-checkbox-description">Is an implemented protocol upgrade intended to provide protection from transaction malleability and increase block capacity. SegWit separates the witness from the list of inputs. The witness contains data required to check transaction validity but is not required to determine transaction effects.</p>
-      </div>
-    </label>
-    <label class="checkbox-wrapper helper-checkbox-wrapper">
-      <input type="checkbox" name="features" value="2fa" class="checkbox js-helper-selector" />
-      <div class="checkbox-text helper-checkbox-text">
-        <p class="helper-checkbox-title">2FA</p>
-        <p class="helper-checkbox-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, deserunt! Nesciunt fugit maiores, quidem sed labore modi nihil in quaerat laboriosam, atque repudiandae perferendis fuga ducimus amet rem. Est, ipsam?</p>
-      </div>
-    </label>
-    <label class="checkbox-wrapper helper-checkbox-wrapper">
-      <input type="checkbox" name="features" value="bech32" class="checkbox js-helper-selector" />
-      <div class="checkbox-text helper-checkbox-text">
-        <p class="helper-checkbox-title">Bech32</p>
-        <p class="helper-checkbox-description">Bech32 is a new bitcoin address format specified by BIP 0173. This page tracks the adoption of Bech32. Ideally wallets and services would first support sending to bech32 addresses. After almost everything can send to. then people may willing to adopt bech 32 widely for receiving.</p>
-      </div>
-    </label>
-  </div>
+    
+<div class="hepler-accordion">
   
-  <div class="helper-navigation">
-    <button class="skip-helper-btn">Skip helper</button>
-    <div class="helper-navigation-row">
-      <button class="helper-back-btn btn-light js-helper-back" data-selector="3">Back</button>
-      <button class="helper-next-btn btn-bright">Next</button>
+  <div class="helper-header" data-number="4" data-type="features">
+    <div class="helper-header-row">
+      <h2 class="helper-title">What features am I looking for?</h2>
+      <div class="helper-selected-block">
+        <div class="row">
+          <div class="helper-selected-filter"></div>
+          <button class="helper-change-btn">Change</button>
+        </div>
+      </div>
     </div>
   </div>
+
+  <div class="helper-step" data-step="4">
+    <div class="helper-checkboxes-row">
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="multisig" class="checkbox js-helper-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">Multisig</p>
+          <p class="helper-checkbox-description">Refers to requiring more than one key to authorize a Bitcoin transaction. It is generally used to divide up responsibility for possession of bitcoins</p>
+        </div>
+      </label>
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="segwit" class="checkbox js-helper-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">Segwit</p>
+          <p class="helper-checkbox-description">Is an implemented protocol upgrade intended to provide protection from transaction malleability and increase block capacity. SegWit separates the witness from the list of inputs. The witness contains data required to check transaction validity but is not required to determine transaction effects.</p>
+        </div>
+      </label>
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="multisig" class="checkbox js-wallet-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">Multisig</p>
+          <p class="helper-checkbox-description">Refers to requiring more than one key to authorize a Bitcoin transaction. It is generally used to divide up responsibility for possession of bitcoins</p>
+        </div>
+      </label>
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="segwit" class="checkbox js-wallet-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">SegWit</p>
+          <p class="helper-checkbox-description">Is an implemented protocol upgrade intended to provide protection from transaction malleability and increase block capacity. SegWit separates the witness from the list of inputs. The witness contains data required to check transaction validity but is not required to determine transaction effects.</p>
+        </div>
+      </label>
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="2fa" class="checkbox js-wallet-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">2FA</p>
+          <p class="helper-checkbox-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, deserunt! Nesciunt fugit maiores, quidem sed labore modi nihil in quaerat laboriosam, atque repudiandae perferendis fuga ducimus amet rem. Est, ipsam?</p>
+        </div>
+      </label>
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="bech32" class="checkbox js-wallet-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">Bech32</p>
+          <p class="helper-checkbox-description">Bech32 is a new bitcoin address format specified by BIP 0173. This page tracks the adoption of Bech32. Ideally wallets and services would first support sending to bech32 addresses. After almost everything can send to. then people may willing to adopt bech 32 widely for receiving.</p>
+        </div>
+      </label>
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="bech32" class="checkbox js-helper-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">Bech32</p>
+          <p class="helper-checkbox-description">Bech32 is a new bitcoin address format specified by BIP 0173. This page tracks the adoption of Bech32. Ideally wallets and services would first support sending to bech32 addresses. After almost everything can send to. then people may willing to adopt bech 32 widely for receiving.</p>
+        </div>
+      </label>
+    </div>
+    
+    <div class="helper-navigation">
+      <button class="skip-helper-btn">Skip helper</button>
+      <div class="helper-navigation-row">
+        <button class="helper-back-btn btn-light js-helper-back" data-selector="3">Back</button>
+        <button class="helper-next-btn btn-bright">Next</button>
+      </div>
+    </div>
+
+  </div>
+
 </div>

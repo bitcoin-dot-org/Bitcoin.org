@@ -39,21 +39,19 @@ http://opensource.org/licenses/MIT.
     })
   }
   
-  function displayRelevantHeader(step) {    
+  function highlightRelevantHeader(step) {    
     step = Number(step);
     
     headersList.forEach(function(header) {
       var headerType = header.dataset.type;
       var headerStep = Number(header.dataset.number);
-
-      if (headerStep <= step) header.classList.add('visible');
-      else header.classList.remove('visible');
       
-      if (headerStep < step) header.querySelector('.helper-title').classList.add('previous');
-      else header.querySelector('.helper-title').classList.remove('previous');
+      if (headerStep === step) header.classList.add('active');
+      else header.classList.remove('active');
 
       var selectedFilters = getUrlParameter(headerType);
-      if (selectedFilters) header.querySelector('.helper-selected-block').classList.add('visible');
+      if (selectedFilters && headerStep !== step) header.querySelector('.helper-selected-block').classList.add('visible');
+      else header.querySelector('.helper-selected-block').classList.remove('visible');
     })      
   }
   
@@ -81,7 +79,7 @@ http://opensource.org/licenses/MIT.
         var step = this.dataset.selector;
         displayRelevantStep(step);
         setUrlParameter('step', step);
-        displayRelevantHeader(step);
+        highlightRelevantHeader(step);
       });
     });
 
@@ -91,7 +89,7 @@ http://opensource.org/licenses/MIT.
         var step = this.dataset.selector;
         displayRelevantStep(step);
         setUrlParameter('step', step);
-        displayRelevantHeader(step);
+        highlightRelevantHeader(step);
       });
     });
 
@@ -114,7 +112,7 @@ http://opensource.org/licenses/MIT.
   function displayDefaultContent(step) {
     if (step) {
       displayRelevantStep(step);
-      displayRelevantHeader(step)
+      highlightRelevantHeader(step)
       displaySelectedHeaderValues();
     } else displayRelevantStep('0');
   }
@@ -122,7 +120,7 @@ http://opensource.org/licenses/MIT.
   function init() {
     var step = getUrlParameter('step');
     displayDefaultContent(step);
-    // displayRelevantHeader(step);
+    highlightRelevantHeader(step);
     setListners();
   }
 

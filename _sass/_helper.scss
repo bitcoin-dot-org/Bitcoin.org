@@ -32,8 +32,8 @@
 .helper-navigation {
   display: flex;
   justify-content: space-between;
-  padding-top: 15px;
-  border-top: 1px solid #dadada;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dadada;
 }
 .helper-navigation-row {
   display: flex;
@@ -73,8 +73,8 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
-.helper-page-numbers {
-  margin-right: 30px;
+.helper-page-numbers-mobile {
+  display: none;
 }
 .helper-page-number {
   position: relative;
@@ -120,17 +120,54 @@
 
 .helper-content {
   width: 100%;
+  padding-left: 73px;
+}
+.helper-accordion {
+  position: relative;
+  padding-top: 15px;
+}
+.helper-accordion::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  transform: translateX(-100%);
+  width: 1px;
+  height: 100%;
+  background: #dadada;
+}
+.helper-accordion:last-child::before {
+  display: none;
 }
 .helper-header {
-  display: none;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #dadada;
+  position: relative;
+  padding-bottom: 15px;
 }
-.helper-header.visible {
-  display: block;
+.helper-header::after {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100%);
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #dadada;
 }
-.helper-header + .helper-header {
-  margin-top: 15px;
+.helper-header[data-number="1"]::after {
+  content: '1';
+}
+.helper-header[data-number="2"]::after {
+  content: '2';
+}
+.helper-header[data-number="3"]::after {
+  content: '3';
+}
+.helper-header[data-number="4"]::after {
+  content: '4';
 }
 .helper-selected-block {
   display: none;
@@ -142,6 +179,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 0 15px;
+  border-bottom: 1px solid #dadada;
 }
 .helper-selected-filter {
   font-weight: 600;
@@ -163,15 +202,15 @@
 .helper-title {
   margin: 0;
   font-size: 22px;
+  opacity: 0.6;
   color: #13161F;
   line-height: 36px;
   text-align: left;
 }
-.helper-title.previous {
-  opacity: 0.6;
+.helper-header.active .helper-title {
+  opacity: 1;
 }
 .helper-subtitle {
-  font-family: TitilliumWeb-Regular;
   font-size: 16px;
   color: #4D5060;
   line-height: 22px;
@@ -346,7 +385,7 @@
   .helper-row {
     flex-direction: column;
   }
-  .helper-page-numbers {
+  .helper-page-numbers-mobile {
     display: flex;
     margin: 0 0 15px;
   }

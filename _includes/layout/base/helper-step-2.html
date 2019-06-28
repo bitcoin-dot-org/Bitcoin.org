@@ -3,34 +3,49 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="helper-step" data-step="2">
-      
-  <div class="helper-user-types">
-    <label class="helper-user-radio-wrapper">
-      <input type="radio" class="helper-user-radio js-helper-selector js-helper-user" name="user" value="new"/>
-      <div class="helper-user-radio-custom">
-        <img src="/img/icons/plant.svg" alt="plant & bitcoin">
-        <h4 class="helper-user-radio-title">I’m a Bitcoin Beginner</h4>
-        <p class="helper-user-radio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="helper-accordion">
+
+  <div class="helper-header" data-number="2" data-type="user">
+    <div class="helper-header-row">
+      <h2 class="helper-title">How much do I know about Bitcoin?</h2> 
+      <div class="helper-selected-block">
+        <div class="row">
+          <div class="helper-selected-filter"></div>
+          <button class="helper-change-btn">Change</button>
+        </div>
       </div>
-    </label>
-    <p class="helper-user-separator">or</p>
-    <label class="helper-user-radio-wrapper">
-      <input type="radio" class="helper-user-radio js-helper-selector js-helper-user" name="user" value="experienced"/>
-      <div class="helper-user-radio-custom">
-        <img src="/img/icons/trees.svg" alt="trees & bitcoin">
-        <h4 class="helper-user-radio-title">I’m an advance Bitcoin user</h4>
-        <p class="helper-user-radio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </label>
-  </div>
-      
-  <div class="helper-navigation">
-    <button class="skip-helper-btn">Skip helper</button>
-    <div class="helper-navigation-row">
-      <button class="helper-back-btn btn-light js-helper-back" data-selector="1">Back</button>
-      <button class="helper-next-btn btn-bright js-helper-next" data-selector="3">Next</button>
     </div>
   </div>
   
+  <div class="helper-step" data-step="2">
+    <div class="helper-user-types">
+      <label class="helper-user-radio-wrapper">
+        <input type="radio" class="helper-user-radio js-wallet-selector" name="user" value="new"/>
+        <div class="helper-user-radio-custom">
+          <img src="/img/icons/plant.svg" alt="plant & bitcoin">
+          <h4 class="helper-user-radio-title">New</h4>
+          <p class="helper-user-radio-text">Only show me wallets ideal for new users.</p>
+        </div>
+      </label>
+      <p class="helper-user-separator">or</p>
+      <label class="helper-user-radio-wrapper">
+        <input type="radio" class="helper-user-radio js-wallet-selector" name="user" value="experienced"/>
+        <div class="helper-user-radio-custom">
+          <img src="/img/icons/trees.svg" alt="trees & bitcoin">
+          <h4 class="helper-user-radio-title">Experienced</h4>
+          <p class="helper-user-radio-text">Show me all of the wallets.</p>
+        </div>
+      </label>
+    </div>
+        
+    <div class="helper-navigation">
+      <button class="skip-helper-btn">Skip helper</button>
+      <div class="helper-navigation-row">
+        <button class="helper-back-btn btn-light js-helper-back" data-selector="1">Back</button>
+        <button class="helper-next-btn btn-bright js-helper-next" data-selector="3">Next</button>
+      </div>
+    </div>
+    
+  </div>
+
 </div>
