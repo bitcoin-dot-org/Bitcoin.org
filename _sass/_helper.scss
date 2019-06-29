@@ -1,13 +1,16 @@
-.helper {
-  padding: 50px 0;
+.choose-wallet-screen {
+  display: none;
+}
+.choose-wallet-screen.visible {
+  display: block;
 }
 .helper-step {
   display: none;
 }
-.helper-step.visible {
+.helper-accordion.active .helper-step {
   display: block;
 }
-.helper-intro {
+.helper-intro-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,6 +70,7 @@
 }
 .wizard.visible {
   display: block;
+  padding: 50px 0;
 }
 .helper-row {
   display: flex;
@@ -423,7 +427,7 @@
   }
 }
 @media screen and (max-width: 992px) {
-  .helper-intro {
+  .helper-intro-row {
     padding: 120px 0 155px;
     position: relative;
   }
@@ -469,7 +473,7 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .helper-intro {
+  .helper-intro-row {
     flex-direction: column;
     padding: 100px 0 0;
   }

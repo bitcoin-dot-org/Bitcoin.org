@@ -702,7 +702,7 @@ function updateQueryStringParameter(key, value) {
 function checkIfFiltersInclude(categories, filters) {
   for (var i = 0; i < filters.length; i++) {
     var filter = filters[i];
-    if (!categories.includes(filter)) return false;
+    if (!categories.includes(filter) && filter !== '') return false;
   }
   return true;
 }

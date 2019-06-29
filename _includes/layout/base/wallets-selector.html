@@ -3,7 +3,7 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="wallet-selector">
+<div class="wallet-selector choose-wallet-screen" data-number="5" data-screen-name="selector">
   <div class="container">
     
     <div class="wallet-selector-row">
@@ -24,14 +24,14 @@ http://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-wallet-selector" name="platform" value="android"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="android"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_android.svg" alt="android" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_android_bright.svg" alt="android" class="platform-radio-icon-active">
                     </div>
                   </label>
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-wallet-selector" name="platform" value="ios"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="ios"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_mac.svg" alt="ios" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_mac_bright.svg" alt="ios" class="platform-radio-icon-active">
@@ -51,21 +51,21 @@ http://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-wallet-selector" name="platform" value="linux"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="linux"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_linux.svg" alt="linux" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_linux_bright.svg" alt="linux" class="platform-radio-icon-active">
                     </div>
                   </label>
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-wallet-selector" name="platform" value="mac"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="mac"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_mac.svg" alt="mac" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_mac_bright.svg" alt="mac" class="platform-radio-icon-active">
                     </div>
                   </label>
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-wallet-selector" name="platform" value="windows"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="windows"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_windows.svg" alt="windows" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_windows_bright.svg" alt="windows" class="platform-radio-icon-active">
@@ -87,7 +87,7 @@ http://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-wallet-selector" name="platform" value="hardware"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="hardware"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_hardware.svg" alt="hardware" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_hardware_bright.svg" alt="hardware" class="platform-radio-icon-active">
@@ -107,7 +107,7 @@ http://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-wallet-selector" name="platform" value="web"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="web"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_web.svg" alt="web" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_web_bright.svg" alt="web" class="platform-radio-icon-active">
@@ -122,7 +122,7 @@ http://opensource.org/licenses/MIT.
           <h3 class="sidebar-selector-title">User type</h3>
           <div class="user-radio-row">
             <label class="user-radio-wrapper">
-              <input type="radio" class="user-radio js-wallet-selector" name="user" value="beginner"  />
+              <input type="radio" class="user-radio js-wallet-selector js-selector" name="user" value="beginner"  />
               <p class="user-radio-text">New</p>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -134,7 +134,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="user-radio-row">
             <label class="user-radio-wrapper">
-              <input type="radio" class="user-radio js-wallet-selector" name="user" value="experienced" />
+              <input type="radio" class="user-radio js-wallet-selector js-selector" name="user" value="experienced" />
               <p class="user-radio-text">Experienced</p>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -151,7 +151,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="important" value="control" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="important" value="control" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">Control</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -163,7 +163,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="important" value="validation" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="important" value="validation" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">Validation</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -175,7 +175,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="important" value="transparency" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="important" value="transparency" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">Transparency</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -187,7 +187,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="important" value="environment" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="important" value="environment" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">Environment</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -199,7 +199,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="important" value="fees" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="important" value="fees" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">Fees</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -211,7 +211,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="important" value="privacy" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="important" value="privacy" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">Privacy</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -228,7 +228,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="2fa" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="features" value="2fa" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">2FA</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -240,7 +240,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="bech32" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="features" value="bech32" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">Bech32</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -252,7 +252,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="full_node" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="features" value="full_node" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">Full Node</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -264,7 +264,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="hardware_wallet" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="features" value="hardware_wallet" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">Hardware Wallet</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -276,7 +276,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="legacy_addresses" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="features" value="legacy_addresses" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">Legacy Addresses</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -288,7 +288,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="lightning" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="features" value="lightning" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">Lightning</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -300,7 +300,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="mixing_shuffling" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="features" value="mixing_shuffling" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">Mixing / Shuffling</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -312,7 +312,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="multisig" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="features" value="multisig" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">Multisig</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -324,7 +324,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="important-checkbox-row">
             <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="segwit" class="checkbox js-wallet-selector" />
+              <input type="checkbox" name="features" value="segwit" class="checkbox js-wallet-selector js-selector" />
               <div class="checkbox-text">SegWit</div>
             </label>
             <div class="sidebar-selector-info tooltip-trigger">
@@ -340,7 +340,7 @@ http://opensource.org/licenses/MIT.
       </div>
 
       <div class="wallet-selector-content">
-        <div class="wallet-table-wrapper">        
+        <div class="wallet-table-wrapper wallet-selector-section" data-section-name="walletsList">        
           <div class="wallet-table">        
             <div class="wallet-table-row">
               <div class="wallet-table-head">
@@ -408,14 +408,13 @@ http://opensource.org/licenses/MIT.
           
         </div>
 
-
-        <div class="empty-box no-matching-box hidden">
+        <div class="wallet-selector-section empty-box" data-section-name="noMatch">
           <img src="/img/icons/empty.svg" alt="wallet with magnifier">
           <h2 class="empty-box-title">No matching wallets found</h2>
           <p class="empty-box-text">Please update your search criteria and try again.</p>
         </div>
 
-        <div class="empty-box browse-wallets-box hidden">
+        <div class="wallet-selector-section empty-box" data-section-name="browseWallets">
           <img src="/img/icons/empty.svg" alt="wallet with magnifier">
           <h2 class="empty-box-title">Browse wallets</h2>
           <p class="empty-box-text">Use the wallet selector to find wallets that
@@ -426,127 +425,3 @@ http://opensource.org/licenses/MIT.
     </div>
   </div>
 </div>  
-
-<script>  
-(function name(params) {
-  
-  var linksList = document.querySelectorAll('.wallet-link');  
-  var selectorsList = document.querySelectorAll('.js-wallet-selector');
-  function setListners() {
-    selectorsList.forEach(function(selector) {
-      selector.addEventListener('change', function() {
-        var filters = []
-        var selectedInputs = document.querySelectorAll('.js-wallet-selector:checked');
-        selectedInputs.forEach(function(input) {
-          filters.push(input.value);
-        });
-        renderContent(filters);
-      });
-    });
-    
-    linksList.forEach(function(link) {
-      link.addEventListener('click', function(e) {
-        var href = this.getAttribute("href");
-        location.href = href + window.location.search;
-        e.preventDefault()
-      });
-    });
-  }
-  
-  function displayContentSections() {
-    var visibleWallets = document.querySelectorAll('.wallet-link.visible');
-    var walletsTable = document.querySelector('.wallet-table-wrapper');
-    var noMatchBox = document.querySelector('.no-matching-box');
-    var browseBox = document.querySelector('.browse-wallets-box');
-    var selectedCategories = getUrlParameter('filters').split(',');
-    var isCategoriesSelected = !!selectedCategories.length;
-    var isWalletsVisible = !!visibleWallets.length;
-    var isPlatformSelected = checkIfPlatformSelected(selectedCategories)
-    
-    if (!isWalletsVisible && !isPlatformSelected) {
-      browseBox.classList.remove('hidden');
-      noMatchBox.classList.add('hidden');
-      walletsTable.classList.add('hidden');
-    } else if (!isWalletsVisible && selectedCategories) {
-      noMatchBox.classList.remove('hidden');
-      walletsTable.classList.add('hidden');
-      browseBox.classList.add('hidden');
-    } else {
-      walletsTable.classList.remove('hidden');
-      browseBox.classList.add('hidden');
-      noMatchBox.classList.add('hidden');
-    }
-  }
-
-  function setWalletsVisibility(filters) {
-    linksList.forEach(function(link) {
-      var categories = link.dataset.categories.split(' ');
-      if (checkIfFiltersInclude(categories, filters) && checkIfPlatformSelected(filters)) link.classList.add('visible');
-      else link.classList.remove('visible');
-    });
-  }
-  
-  function disableInputs(isDisabled) {
-    var checkboxes = document.querySelectorAll('.js-wallet-selector:not(.platform-radio)');
-    checkboxes.forEach(function(checkbox) {
-      checkbox.disabled = isDisabled;
-    })
-  }
-
-  function checkIfPlatformSelected(filters) {
-    var platforms = [];
-    var platfomrSelectors = document.querySelectorAll('.platform-radio');
-    platfomrSelectors.forEach(function(selector) {
-      platforms.push(selector.value)
-    });
-    for (var i = 0; i < platforms.length; i++) {
-      var platform = platforms[i];
-      if (filters.includes(platform)) return true;
-    }
-    return false;
-  }
-
-  function setInputActivity() {
-    var platformSelectors = document.querySelectorAll('.platform-radio:checked');
-    if (platformSelectors.length) disableInputs(false);
-    else disableInputs(true);
-  }
-  
-  function displaySelectedOs() {
-    var selectedOs = document.querySelector('.js-wallet-selector:checked');
-    if (selectedOs) {  
-      var selectedOsValue = selectedOs.value;
-      if (selectedOsValue === 'ios') selectedOsValue = 'iOS';
-      else selectedOsValue = selectedOsValue.charAt(0).toUpperCase() + selectedOsValue.slice(1);
-      document.getElementById('selectedOs').textContent = selectedOsValue;
-    }
-  }
-  
-  function renderContent(filters) {
-    setWalletsVisibility(filters);
-    setInputActivity();
-    displayContentSections();
-    setUrlParameter('filters', filters);
-    displaySelectedOs();
-  }
-
-  function selectCheckedInputs(filters) {
-    if (checkIfPlatformSelected(filters)) {  
-      selectorsList.forEach(function(selector) {
-        if (filters.includes(selector.value)) selector.checked = true;
-        else selector.checked = false;
-      })
-    } 
-  }
-  
-  function init() {
-    var defaultParameters = getUrlParameter('filters').split(',');
-    selectCheckedInputs(defaultParameters)
-    renderContent(defaultParameters);
-    setListners();
-  }
-
-  init()
-})();
-  
-</script>

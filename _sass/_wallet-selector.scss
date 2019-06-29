@@ -191,7 +191,17 @@
 }
 
 .wallet-selector {
+  display: none;
 	padding: 50px 0 25px;
+}
+.wallet-selector.visible {
+  display: block;
+}
+.wallet-selector-section {
+  display: none;
+}
+.wallet-selector-section.visible {
+  display: block;
 }
 .wallet-selector-row {
   display: flex;
@@ -273,8 +283,7 @@
   display: table-cell;
 	border: none;
 }
-.wallet-table-wrapper.hidden {
-  display: none;
+.wallet-table-wrapper {
   margin-bottom: 20px;
 }
 .wallet-table {
@@ -375,9 +384,6 @@
   border: 1px solid #DADADA;
   text-align: center;
   padding: 75px 30px 60px;
-}
-.empty-box.hidden {
-  display: none;
 }
 .empty-box-title {
   margin: 15px 0;

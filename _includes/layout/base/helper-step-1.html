@@ -12,25 +12,25 @@ http://opensource.org/licenses/MIT.
       <div class="helper-selected-block">
         <div class="row">
           <p class="helper-selected-filter js-selected-platform"></p>
-          <button class="helper-change-btn" data-selector="1">Change</button>
+          <button class="helper-change-btn js-helper-nav-btn" data-selector="1">Change</button>
         </div>
       </div>
     </div>
   </div>
-  <div class="helper-step" data-step="1">
+  <div class="helper-step">
     <div class="helper-platforms">
       <div class="helper-platforms-section">
         <h3 class="helper-platforms-title">Mobile wallets</h3>
         <div class="helper-platforms-row">
           <label class="helper-radio-wrapper">
-            <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="android" data-text="Mobile / Android"/>
+            <input type="radio" class="platform-radio js-wizard-selector js-helper-radio" name="platform" value="android" data-text="Mobile / Android"/>
             <div class="platform-radio-custom helper-platforms-radio">
               <img src="/img/os/wallet_menu_android.svg" alt="android" class="platform-radio-icon-inactive">
               <img src="/img/os/wallet_menu_android_bright.svg" alt="android" class="platform-radio-icon-active">
             </div>
           </label>
           <label class="helper-radio-wrapper">
-            <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="ios" data-text="Mobile / iOS"/>
+            <input type="radio" class="platform-radio js-wizard-selector js-helper-radio" name="platform" value="ios" data-text="Mobile / iOS"/>
             <div class="platform-radio-custom helper-platforms-radio">
               <img src="/img/os/wallet_menu_mac.svg" alt="ios" class="platform-radio-icon-inactive">
               <img src="/img/os/wallet_menu_mac_bright.svg" alt="ios" class="platform-radio-icon-active">
@@ -46,21 +46,21 @@ http://opensource.org/licenses/MIT.
         <h3 class="helper-platforms-title">Desktop wallets</h3>
         <div class="helper-platforms-row">
           <label class="helper-radio-wrapper">
-            <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="linux" data-text="Desktop / Linux"/>
+            <input type="radio" class="platform-radio js-wizard-selector js-helper-radio" name="platform" value="linux" data-text="Desktop / Linux"/>
             <div class="platform-radio-custom helper-platforms-radio">
               <img src="/img/os/wallet_menu_linux.svg" alt="linux" class="platform-radio-icon-inactive">
               <img src="/img/os/wallet_menu_linux_bright.svg" alt="linux" class="platform-radio-icon-active">
             </div>
           </label>
           <label class="helper-radio-wrapper">
-            <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="mac" data-text="Desktop / OS X"/>
+            <input type="radio" class="platform-radio js-wizard-selector js-helper-radio" name="platform" value="mac" data-text="Desktop / OS X"/>
             <div class="platform-radio-custom helper-platforms-radio">
               <img src="/img/os/wallet_menu_mac.svg" alt="mac" class="platform-radio-icon-inactive">
               <img src="/img/os/wallet_menu_mac_bright.svg" alt="mac" class="platform-radio-icon-active">
             </div>
           </label>
           <label class="helper-radio-wrapper">
-            <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="windows" data-text="Desktop / Windows"/>
+            <input type="radio" class="platform-radio js-wizard-selector js-helper-radio" name="platform" value="windows" data-text="Desktop / Windows"/>
             <div class="platform-radio-custom helper-platforms-radio">
               <img src="/img/os/wallet_menu_windows.svg" alt="windows" class="platform-radio-icon-inactive">
               <img src="/img/os/wallet_menu_windows_bright.svg" alt="windows" class="platform-radio-icon-active">
@@ -78,7 +78,7 @@ http://opensource.org/licenses/MIT.
         <h3 class="helper-platforms-title">Web wallets</h3>
         <div class="helper-platforms-row">
           <label class="helper-radio-wrapper">
-            <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="web" data-text="Web"/>
+            <input type="radio" class="platform-radio js-wizard-selector js-helper-radio" name="platform" value="web" data-text="Web"/>
             <div class="platform-radio-custom helper-platforms-radio">
               <img src="/img/os/wallet_menu_web.svg" alt="web" class="platform-radio-icon-inactive">
               <img src="/img/os/wallet_menu_web_bright.svg" alt="web" class="platform-radio-icon-active">
@@ -94,7 +94,7 @@ http://opensource.org/licenses/MIT.
         <h3 class="helper-platforms-title">Hardware wallets</h3>
         <div class="helper-platforms-row">
           <label class="helper-radio-wrapper">
-            <input type="radio" class="platform-radio js-helper-selector js-helper-platform" name="platform" value="hardware" data-text="Hardware"/>
+            <input type="radio" class="platform-radio js-wizard-selector js-helper-radio" name="platform" value="hardware" data-text="Hardware"/>
             <div class="platform-radio-custom helper-platforms-radio">
               <img src="/img/os/wallet_menu_hardware.svg" alt="hardware" class="platform-radio-icon-inactive">
               <img src="/img/os/wallet_menu_hardware_bright.svg" alt="hardware" class="platform-radio-icon-active">
@@ -109,8 +109,8 @@ http://opensource.org/licenses/MIT.
     </div>
     
     <div class="helper-navigation">
-      <button class="skip-helper-btn">Skip helper</button>
-      <button class="helper-next-btn btn-bright js-platform-next js-helper-next" data-selector="2">Next</button>
+      <button class="skip-helper-btn js-skip-btn">Skip helper</button>
+      <button class="helper-next-btn btn-bright js-helper-nav-btn" data-selector="2" data-button-type="platform">Next</button>
     </div>
   </div>
 </div>
