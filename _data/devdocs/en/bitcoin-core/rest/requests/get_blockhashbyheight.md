@@ -88,9 +88,11 @@ Result (whitespaced added):
 
 *See also*
 
-* [GET Block/NoTxDetails][rest get block-notxdetails] {{summary_restGetBlockHashByHeight-noTxDetails}}
+* [GET Block][rest get block]: {{summary_restGetBlock}}
+* [GetBlock][rpc getblock] RPC: {{summary_getBlock}}
+* [GET Block/NoTxDetails][rest get block-notxdetails] {{summary_restGetBlock-noTxDetails}}
 * [GetBestBlockHash][rpc getbestblockhash] RPC: {{summary_getBestBlockHash}}
-* [GetBlockHashByHeight][rpc GetBlockHashByHeight] RPC: {{summary_GetBlockHashByHeight}}
-* [GetBlockHashByHeightHash][rpc GetBlockHashByHeighthash] RPC: {{summary_GetBlockHashByHeightHash}}
+* [GetBlock][rpc getblock] RPC: {{summary_getBlock}}
+* [GetBlockHash][rpc getblockhash] RPC: {{summary_getBlockHash}}
 
 {% endautocrossref %}
