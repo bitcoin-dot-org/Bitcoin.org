@@ -59,7 +59,7 @@ GET /blockhashbyheight/<height>.<format>
 
 *Examples from Bitcoin Core 0.18.0*
 
-Request a blockhash in hex-encoded serialized block format:
+Request a blockhash in hex format:
 
 {% highlight bash %}
 curl http://localhost:8332/rest/blockhashbyheight/1.hex
