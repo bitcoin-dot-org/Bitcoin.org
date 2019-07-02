@@ -64,16 +64,23 @@ max_wallet_text_length: 418  ## Unicode characters
         </div>
   
         <div class="os-selector">
-          <div class="os-selector-tabs">
-            {% for platform in page.wallet.platform %}
-              {% for os in platform.os %}
-                <button class="os-selector-tab" data-tab="{{os.name}}">
-                  <img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}} logo" class="os-selector-icon os-selector-icon-inactive">
-                  <img src="/img/os/wallet_menu_{{os.name}}_bright.svg" alt="{{os.name}} logo" class="os-selector-icon os-selector-icon-active">
-                  {{os.name}}
-                </button>
-              {% endfor %}
-            {% endfor %}
+          <div id="accordion" class="wallet-accordion">
+            <button id="accordionButton" class="wallet-accordion-btn" data-button-os="">
+              MAC
+            </button>
+            <div class="wallet-accordion-content">
+              <div class="os-selector-tabs">
+                {% for platform in page.wallet.platform %}
+                  {% for os in platform.os %}
+                    <button class="os-selector-tab" data-tab="{{os.name}}">
+                      <img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}} logo" class="os-selector-icon os-selector-icon-inactive">
+                      <img src="/img/os/wallet_menu_{{os.name}}_bright.svg" alt="{{os.name}} logo" class="os-selector-icon os-selector-icon-active">
+                      {{os.name}}
+                    </button>
+                  {% endfor %}
+                {% endfor %}
+              </div>
+            </div>
           </div>
         
           {% for platform in page.wallet.platform %}
@@ -175,6 +182,8 @@ max_wallet_text_length: 418  ## Unicode characters
     var tabSelectors = document.querySelectorAll('.os-selector-tab');
     var tabContents = document.querySelectorAll('.os-selector-content');
     var linksList = document.querySelectorAll('.wallet-link');
+    var accordionButton = document.getElementById('accordionButton');
+    var accordion = document.getElementById('accordion');
 
     function selectRelevantTab(os) {
       tabSelectors.forEach(function(tab) {
@@ -185,6 +194,10 @@ max_wallet_text_length: 418  ## Unicode characters
         if (content.dataset.content === os) content.classList.add('visible');
         else content.classList.remove('visible');
       });
+
+      accordionButton.dataset.buttonOs = os;
+      accordionButton.textContent = os;
+      accordion.classList.remove('open');
     }
 
     function displayDefaultTabContent() {
@@ -213,6 +226,10 @@ max_wallet_text_length: 418  ## Unicode characters
           e.preventDefault()
         });
       });
+
+      accordionButton.addEventListener('click', function() {
+        accordion.classList.toggle('open');
+      })
     }
     
     function displaySimilarWallets() {

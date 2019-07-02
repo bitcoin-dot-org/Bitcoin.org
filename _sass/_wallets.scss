@@ -113,7 +113,6 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 .os-selector-tabs {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
   border-bottom: 1px solid #DADADA;
 }
 .os-selector-tab {
@@ -200,6 +199,36 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 .show {
   display: block;
 }
+.wallet-accordion {
+  margin-bottom: 25px;
+}
+.wallet-accordion-btn {
+  display: none;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  padding: 0 25px 0 37px;
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: left;
+  color: #FF7E00;
+}
+.wallet-accordion-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 9px;
+  height: 8px;
+  transform: translateY(-50%);
+  background: url('../img/icons/angle.svg') center no-repeat;
+  background-size: contain;
+}
+.wallet-accordion.open .wallet-accordion-btn::after {
+  transform: translateY(-50%) rotate(180deg);
+}
 
 @media screen and (max-width: 1024px) {
   .wallet-platforms-row {
@@ -212,5 +241,16 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   .os-selector {
     max-width: initial;
     margin: 0 0 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wallet-accordion-content {
+    display: none;
+  }
+  .wallet-accordion.open .wallet-accordion-content {
+    display: block;
+  }
+  .wallet-accordion-btn {
+    display: block;
   }
 }
