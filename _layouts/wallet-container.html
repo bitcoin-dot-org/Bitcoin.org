@@ -6,26 +6,16 @@ layout: base
 max_wallet_text_length: 418  ## Unicode characters
 ---
 <div class="wallet" data-id="{{page.wallet.id}}">
-  <div class="wallet-wrapper">
-    <div class="wallet-filter">
-    </div>
-    <div class="hero">
-      <div class="container wallet-logo-container hero-container">
-        <img class="wallet-logo" src="/img/wallet/{{ page.wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ page.wallet.title }}" />
-        <h1 class="wallet-title">
-          {{ page.wallet.title }}
-        </h1>
-        <p class="wallet-description">
-          {% translate wallet{{page.wallet.id}} choose-your-wallet %}
-        </p>
-        {% include helpers/hero-social.html %}
-      </div>
-    </div>
-    <div class="wallet-navigation-wrapper">
-      <div class="wallet-navigation">
-        {% include layout/base/wallets-menu-mobile.html %} 
-        {% include layout/base/wallets-list.html %}
-      </div>
+  <div class="hero">
+    <div class="container wallet-logo-container hero-container">
+      <img class="wallet-logo" src="/img/wallet/{{ page.wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ page.wallet.title }}" />
+      <h1 class="wallet-title">
+        {{ page.wallet.title }}
+      </h1>
+      <p class="wallet-description">
+        {% translate wallet{{page.wallet.id}} choose-your-wallet %}
+      </p>
+      {% include helpers/hero-social.html %}
     </div>
   </div>
 
