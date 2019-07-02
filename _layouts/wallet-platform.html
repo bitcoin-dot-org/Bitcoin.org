@@ -108,6 +108,7 @@ layout: base
   }
   
   function onSkipButtonClick() {
+    clearUrlParameters();
     setUrlParameter('step', '5');
     displayRelevantContent();
   }
