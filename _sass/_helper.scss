@@ -80,51 +80,6 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
-.helper-page-numbers-mobile {
-  display: none;
-}
-.helper-page-number {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 16px;
-  color: #4D5060;
-  text-align: center;
-  line-height: 38px;
-  background: #fff;
-  border: 1px solid #dadada;
-}
-.helper-page-number + .helper-page-number {
-  margin-top: 27px;
-}
-.helper-page-number + .helper-page-number::after {
-  content: '';
-  position: absolute;
-  top: -1px;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  width: 1px;
-  height: 27px;
-  background: #dadada;
-}
-.helper-page-number.completed + .helper-page-number.active::after {
-  background: #FF7E00;
-}
-.helper-page-number.active {
-  font-weight: 600;
-  border: 1px solid #FF7E00;
-  color: #FF7E00;
-}
-.helper-page-number.completed {
-  background: #F7931A url('../img/icons/check.svg') center no-repeat;
-  border: 1px solid #F7931A;
-  color: transparent;
-}
-
 .helper-content {
   width: 100%;
   padding-left: 73px;
@@ -409,19 +364,55 @@
   .helper-row {
     flex-direction: column;
   }
-  .helper-page-numbers-mobile {
-    display: flex;
-    margin: 0 0 15px;
+  .helper-content {
+    position: relative;
+    padding: 55px 0 0;
   }
-  .helper-page-number + .helper-page-number {
-    margin: 0 0 0 27px;
+  .helper-accordion,
+  .helper-header {
+    position: static;
   }
-  .helper-page-number+.helper-page-number::after {
-    top: 50%;
-    left: -1px;
-    transform: translate(-100%, -50%);
-    width: 27px;
+  .helper-accordion .helper-header::after {
+    transform: translateX(0);
+  }
+  .helper-accordion[data-number="1"] .helper-header::after {
+    top: 0;
+    left: 0;
+  }
+  .helper-accordion[data-number="2"] .helper-header::after {
+    top: 0;
+    left: 67px;
+  }
+  .helper-accordion[data-number="3"] .helper-header::after {
+    top: 0;
+    left: 134px;
+  }
+  .helper-accordion[data-number="4"] .helper-header::after {
+    top: 0;
+    left: 201px;
+  }
+  .helper-accordion::before {
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+  }
+  .helper-accordion::before {
+    top: 21px;
+    width: 25px;
     height: 1px;
+    transform: translateX(0);
+  }
+  .helper-accordion[data-number="1"]::before {
+    left: 42px;
+  }
+  .helper-accordion[data-number="2"]::before {
+    left: 108px;
+  }
+  .helper-accordion[data-number="3"]::before {
+    left: 176px;
+  }
+  .helper-accordion[data-number="4"]::before {
+    display: none;
   }
   .discover {
     margin: 50px 0 0;
