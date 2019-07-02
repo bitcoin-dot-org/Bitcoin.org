@@ -69,6 +69,7 @@ layout: base
     
     inputsList.forEach(function(input) {
       if (filters.includes(input.value)) input.checked = true;
+      else input.checked = false;
     })
   }
   
@@ -289,6 +290,10 @@ layout: base
         location.href = href + window.location.search;
         e.preventDefault()
       });
+    });
+
+    window.addEventListener('popstate', (event) => {
+      displayRelevantContent();
     });
   }
   
