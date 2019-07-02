@@ -98,11 +98,17 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   line-height: 22px;
   text-align: left;
 }
+.wallet-points {
+  max-width: 536px;
+  min-width: 400px;
+}
 .os-selector {
   padding: 30px 25px 25px;
   background: #f8f8f8;
-  min-width: 570px;
+  max-width: 570px;
+  width: 100%;
   margin-left: 65px;
+  box-sizing: border-box;
 }
 .os-selector-tabs {
   display: flex;
@@ -193,4 +199,18 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 }
 .show {
   display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .wallet-platforms-row {
+    flex-direction: column-reverse;
+  }
+  .wallet-points {
+    max-width: initial;
+    min-width: initial;
+  }
+  .os-selector {
+    max-width: initial;
+    margin: 0 0 40px;
+  }
 }
