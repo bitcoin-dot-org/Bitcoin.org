@@ -182,7 +182,6 @@ max_wallet_text_length: 418  ## Unicode characters
 
 <script>
   (function() {
-    var parameters = getUrlParameter('filters').split(',');  
     var tabSelectors = document.querySelectorAll('.os-selector-tab');
     var tabContents = document.querySelectorAll('.os-selector-content');
     var linksList = document.querySelectorAll('.wallet-link');
@@ -227,6 +226,7 @@ max_wallet_text_length: 418  ## Unicode characters
     }
     
     function displaySimilarWallets() {
+      var parameters = queryStringToArray();
       var currentWalletId = document.querySelector('.wallet').dataset.id;
 
       linksList.forEach(function(link) {

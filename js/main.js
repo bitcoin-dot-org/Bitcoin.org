@@ -710,3 +710,15 @@ function checkIfFiltersInclude(categories, filters) {
 function setUrlParameter(parameter, value) {
   history.pushState(null, null, updateQueryStringParameter(parameter, value));
 }
+
+function queryStringToArray() {            
+  var categories = ['platform', 'user', 'important', 'features'];
+  var result = [];
+  var pairs = location.search.slice(1).split('&');
+  pairs.forEach(function(pair) {
+    pair = pair.split('=');
+    if (pair[1] && categories.includes(pair[0])) result = result.concat(pair[1].split(','));
+  });
+
+  return result;
+}

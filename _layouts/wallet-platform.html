@@ -213,21 +213,8 @@ layout: base
     }
     return true;
   }
-  
   function clearUrlParameters() {
     window.history.replaceState(null, null, window.location.pathname);
-  }
-  
-  function queryStringToArray() {            
-    var categories = ['platform', 'user', 'important', 'features'];
-    var result = [];
-    var pairs = location.search.slice(1).split('&');
-    pairs.forEach(function(pair) {
-      pair = pair.split('=');
-      if (pair[1] && categories.includes(pair[0])) result = result.concat(pair[1].split(','));
-    });
-
-    return result;
   }
   
   function displayRelevantContent() {
@@ -245,7 +232,6 @@ layout: base
       displayRelevantSelectorContent();
     } else {
       displayRelevantScreen('intro');
-      clearUrlParameters();
     }
   }
     
@@ -300,9 +286,6 @@ layout: base
     linksList.forEach(function(link) {
       link.addEventListener('click', function(e) {
         var href = this.getAttribute("href");
-        var filters = queryStringToArray();
-        clearUrlParameters();
-        setUrlParameter('filters', filters)
         location.href = href + window.location.search;
         e.preventDefault()
       });
