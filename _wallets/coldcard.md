@@ -6,6 +6,7 @@ id: coldcard
 title: "Coldcard"
 titleshort: "Coldcard"
 compat: "hardware"
+features: "bech32 hardware_wallet legacy_addresses multisig segwit"
 level: 2
 platform:
   - hardware:
