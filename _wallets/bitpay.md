@@ -6,6 +6,7 @@ id: bitpay
 title: "BitPay Wallet"
 titleshort: "BitPay"
 compat: "mobile desktop android ios windows mac linux"
+features: "legacy_addresses multisig"
 user: beginner
 level: 3
 platform:
