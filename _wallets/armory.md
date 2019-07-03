@@ -6,6 +6,7 @@ id: armory
 title: "Armory"
 titleshort: "Armory"
 compat: "desktop windows mac linux"
+features: "full_node legacy_addresses multisig segwit"
 level: 2
 platform:
   - desktop:
