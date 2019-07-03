@@ -6,6 +6,7 @@ id: bitcoincore
 title: "Bitcoin Core"
 titleshort: "Bitcoin Core"
 compat: "desktop windows mac linux"
+features: "bech32 full_node legacy_addresses segwit"
 level: 1
 platform:
   - desktop:
