@@ -6,6 +6,7 @@ id: bither
 title: "Bither"
 titleshort: "Bither"
 compat: "mobile ios android desktop windows mac linux"
+features: "legacy_addresses segwit"
 level: 2
 platform:
   - mobile:
