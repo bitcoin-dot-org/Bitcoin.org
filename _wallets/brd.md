@@ -17,6 +17,7 @@ platform:
         link: "https://itunes.apple.com/app/brd-bitcoin-wallet/id885251393"
         source: "https://github.com/breadwallet/breadwallet-ios"
         screenshot: "brd.png?1528322191"
+        features: "legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"
@@ -33,6 +34,7 @@ platform:
         link: "https://play.google.com/store/apps/details?id=com.breadwallet"
         source: "https://github.com/breadwallet/breadwallet-android"
         screenshot: "brd.png?1528322191"
+        features: "legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"
