@@ -6,6 +6,7 @@ id: electrum
 title: "Electrum"
 titleshort: "Electrum"
 compat: "desktop windows mac linux mobile android"
+features: "2fa bech32 hardware_wallet legacy_addresses multisig segwit"
 user: beginner
 level: 2
 platform:
