@@ -16,6 +16,7 @@ platform:
         link: "https://itunes.apple.com/us/app/blocktrail-bitcoin-wallet/id1019614423"
         source: "https://github.com/blocktrail/blocktrail-wallet"
         screenshot: "btccomwallet.png"
+        features: "2fa legacy_addresses segwit"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkfailvalidationcentralized"
@@ -32,6 +33,7 @@ platform:
         link: "https://play.google.com/store/apps/details?id=com.blocktrail.mywallet"
         source: "https://github.com/blocktrail/blocktrail-wallet"
         screenshot: "btccomwallet.png"
+        features: "2fa legacy_addresses segwit"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkfailvalidationcentralized"
@@ -51,6 +53,7 @@ platform:
         link: "https://wallet.btc.com"
         source: "https://github.com/blocktrail/blocktrail-webwallet"
         screenshot: "btccomwallet.png"
+        features: "2fa legacy_addresses segwit"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkfailvalidationcentralized"
