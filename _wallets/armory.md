@@ -6,7 +6,6 @@ id: armory
 title: "Armory"
 titleshort: "Armory"
 compat: "desktop windows mac linux"
-features: "full_node legacy_addresses multisig segwit"
 level: 2
 platform:
   - desktop:
@@ -16,6 +15,7 @@ platform:
       link: "https://btcarmory.com/"
       source: "https://github.com/goatpig/BitcoinArmory"
       screenshot: "armory.png?1528322191"
+      features: "full_node legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnoderequired"

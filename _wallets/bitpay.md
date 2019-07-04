@@ -6,7 +6,6 @@ id: bitpay
 title: "BitPay Wallet"
 titleshort: "BitPay"
 compat: "mobile desktop android ios windows mac linux"
-features: "legacy_addresses multisig"
 user: beginner
 level: 3
 platform:
@@ -17,6 +16,7 @@ platform:
       link: "https://bitpay.com/wallet"
       source: "https://github.com/bitpay/copay"
       screenshot: "bitpay.png"
+      features: "legacy_addresses multisig"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"
@@ -40,6 +40,7 @@ platform:
       link: "https://bitpay.com/wallet"
       source: "https://github.com/bitpay/copay"
       screenshot: "bitpay.png"
+      features: "legacy_addresses multisig"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"

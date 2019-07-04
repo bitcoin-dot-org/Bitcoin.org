@@ -6,7 +6,6 @@ id: bitcoincore
 title: "Bitcoin Core"
 titleshort: "Bitcoin Core"
 compat: "desktop windows mac linux"
-features: "bech32 full_node legacy_addresses segwit"
 level: 1
 platform:
   - desktop:
@@ -16,6 +15,7 @@ platform:
       link: "bitcoincore"
       source: "https://github.com/bitcoin/bitcoin"
       screenshot: "bitcoincore.png?1528322191"
+      features: "bech32 full_node legacy_addresses segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnode"

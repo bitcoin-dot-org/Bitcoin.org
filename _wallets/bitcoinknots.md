@@ -6,7 +6,6 @@ id: bitcoinknots
 title: "Bitcoin Knots"
 titleshort: "Bitcoin Knots"
 compat: "desktop windows mac linux"
-features: "bech32 full_node legacy_addresses segwit"
 level: 1
 platform:
   - desktop:
@@ -16,6 +15,7 @@ platform:
       link: "https://bitcoinknots.org/"
       source: "https://github.com/bitcoinknots/bitcoin/"
       screenshot: "bitcoinknots.png?1528322191"
+      features: "bech32 full_node legacy_addresses segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnode"

@@ -6,7 +6,6 @@ id: trezor
 title: "Trezor"
 titleshort: "Trezor"
 compat: "hardware"
-features: "bech32 hardware_wallet legacy_addresses multisig segwit"
 level: 2
 platform:
   - hardware:
@@ -17,6 +16,7 @@ platform:
         link: "https://trezor.io/"
         source: "https://github.com/trezor/"
         screenshot: "trezor.png?1528322191"
+        features: "bech32 hardware_wallet legacy_addresses multisig segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
