@@ -16,6 +16,7 @@ platform:
         link: "https://play.google.com/store/apps/details?id=com.mycelium.wallet"
         source: "https://github.com/mycelium-com/wallet"
         screenshot: "mycelium.png?1528322191"
+        features: "bech32 legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
