@@ -6,7 +6,6 @@ id: electrum
 title: "Electrum"
 titleshort: "Electrum"
 compat: "desktop windows mac linux mobile android"
-features: "2fa bech32 hardware_wallet legacy_addresses multisig segwit"
 user: beginner
 level: 2
 platform:
@@ -17,6 +16,7 @@ platform:
       link: "https://electrum.org"
       source: "https://github.com/spesmilo/electrum"
       screenshot: "electrum.png?1528322191"
+      features: "2fa bech32 hardware_wallet legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkpassvalidationspvservers"
@@ -43,6 +43,7 @@ platform:
         link: "https://play.google.com/store/apps/details?id=org.electrum.electrum"
         source: "https://github.com/spesmilo/electrum"
         screenshot: "electrumandroid.png?1528322191"
+        features: "bech32 legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvservers"
