@@ -16,6 +16,7 @@ platform:
         link: "https://play.google.com/store/apps/details?id=fr.acinq.eclair.wallet"
         source: "https://github.com/ACINQ/eclair-mobile"
         screenshot: "eclairmobile.png?1528322191"
+        features: "legacy_addresses lightning segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvservers"
