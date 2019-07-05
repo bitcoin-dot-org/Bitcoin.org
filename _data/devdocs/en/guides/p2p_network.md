@@ -312,9 +312,12 @@ headers-first IBD method used in Bitcoin Core 0.10.0.
 throughout this subsection. The links in the message field will take you
 to the reference page for that message.
 
-| **Message** | [`getblocks`][getblocks message] | [`inv`][inv message]                             | [`getdata`][getdata message]  | [`block`][block message]
-| **From→To** | IBD→Sync                         | Sync→IBD                                         | IBD→Sync                      | Sync→IBD
-| **Payload** | One or more header hashes        | Up to 500 block inventories (unique identifiers) | One or more block inventories | One serialized block
+| Message                          | From→To  | Payload
+|----------------------------------|----------|--------------------------
+| [`getblocks`][getblocks message] | IBD→Sync | One or more header hashes
+| [`inv`][inv message]             | Sync→IBD | Up to 500 block inventories (unique identifiers)
+| [`getdata`][getdata message]     | IBD→Sync | One or more block inventories
+| [`block`][block message]         | Sync→IBD | One serialized block
 
 {% endautocrossref %}
 
@@ -418,9 +421,12 @@ later subsection.
 throughout this subsection. The links in the message field will take you
 to the reference page for that message.
 
-| **Message** | [`getheaders`][getheaders message] | [`headers`][headers message] | [`getdata`][getdata message]                             | [`block`][block message]
-| **From→To** | IBD→Sync                           | Sync→IBD                     | IBD→*Many*                                               | *Many*→IBD
-| **Payload** | One or more header hashes          | Up to 2,000 block headers    | One or more block inventories derived from header hashes | One serialized block
+| Message                            | From→To    | Payload
+|------------------------------------|------------|--------------------------
+| [`getheaders`][getheaders message] | IBD→Sync   | One or more header hashes
+| [`headers`][headers message]       | Sync→IBD   | Up to 2,000 block headers
+| [`getdata`][getdata message]       | IBD→*Many* | One or more block inventories derived from header hashes
+| [`block`][block message]           | *Many*→IBD | One serialized block
 
 {% endautocrossref %}
 </div>
@@ -495,12 +501,15 @@ table below highlights the operation of the messages described above
 headers-first node, and an SPV client; *any* refers to a node using any
 block retrieval method.)
 
-| **Message** | [`inv`][inv message]                                   | [`getdata`][getdata message]               | [`getheaders`][getheaders message]                                     | [`headers`][headers message]
-| **From→To** | Relay→*Any*                                            | BF→Relay                                   | HF→Relay                                                               | Relay→HF
-| **Payload** | The inventory of the new block                         | The inventory of the new block             | One or more header hashes on the HF node's best header chain (BHC)     | Up to 2,000 headers connecting HF node's BHC to relay node's BHC
-| **Message** | [`block`][block message]                               | [`merkleblock`][merkleblock message]       | [`tx`][tx message]                                                     |
-| **From→To** | Relay→BF/HF                                            | Relay→SPV                                  | Relay→SPV                                                              |
-| **Payload** | The new block in [serialized format][section serialized blocks] | The new block filtered into a merkle block | Serialized transactions from the new block that match the bloom filter |
+| Message                              | From→To     | Payload
+|--------------------------------------|-------------|--------------------------
+| [`inv`][inv message]                 | Relay→*Any* | The inventory of the new block
+| [`getdata`][getdata message]         | BF→Relay    | The inventory of the new block
+| [`getheaders`][getheaders message]   | HF→Relay    | One or more header hashes on the HF node's best header chain (BHC)
+| [`headers`][headers message]         | Relay→HF    | Up to 2,000 headers connecting HF node's BHC to relay node's BHC
+| [`block`][block message]             | Relay→BF/HF | The new block in [serialized format][section serialized blocks]
+| [`merkleblock`][merkleblock message] | Relay→SPV   | The new block filtered into a merkle block
+| [`tx`][tx message]                   | Relay→SPV   | Serialized transactions from the new block that match the bloom filter
 
 {% endautocrossref %}
 

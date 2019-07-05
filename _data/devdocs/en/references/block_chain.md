@@ -214,6 +214,7 @@ serialized size is less than or equal to 1 MB. All fields described
 below are counted towards the serialized size.
 
 | Bytes    | Name         | Data Type        | Description
+|----------|--------------|------------------|----------------------
 | 80       | block header | block_header     | The block header in the format described in the [block header section][section block header].
 | *Varies* | txn_count    | compactSize uint | The total number of transactions in this block, including the coinbase transaction.
 | *Varies* | txns         | raw transaction  | Every transaction in this block, one after another, in raw transaction format.  Transactions must appear in the data stream in the same order their TXIDs appeared in the first row of the merkle tree.  See the [merkle tree section][section merkle trees] for details.
