@@ -48,7 +48,7 @@ GET /blockhashbyheight/<height>.<format>
 - n: "Result"
   t: "object"
   p: "Required<br>(exactly 1)"
-  d: "An object containing the requested block"
+  d: "An object containing the requested block hash"
 
 - n: "→<br>`blockhash`"
   t: "string (hex)"
