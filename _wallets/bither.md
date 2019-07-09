@@ -24,7 +24,7 @@ platform:
           privacy: "checkfailprivacyweak"
           fees: "checkfailfeecontrolstatic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: android
@@ -40,7 +40,7 @@ platform:
           privacy: "checkfailprivacyweak"
           fees: "checkfailfeecontrolstatic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
   - desktop:
@@ -58,7 +58,7 @@ platform:
         privacy: "checkfailprivacyweak"
         fees: "checkfailfeecontrolstatic"
       privacycheck:
-        privacyaddressreuse: "checkfailprivacyaddressrotation"
+        privacyaddressreuse: "checkpassprivacyaddressrotation"
         privacydisclosure: "checkfailprivacydisclosurespv"
         privacynetwork: "checkfailprivacynetworknosupporttor"
     os:
