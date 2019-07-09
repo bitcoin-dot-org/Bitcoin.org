@@ -15,6 +15,7 @@ platform:
         text: "walletbitgo"
         link: "https://www.bitgo.com/"
         screenshot: "bitgo.png?1528322191"
+        source: "https://github.com/bitgo/bitgojs"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkfailvalidationcentralized"
