@@ -21,7 +21,7 @@ platform:
           validation: "checkpassvalidationspvp2p"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
+          privacy: "checkpassprivacybasic"
           fees: "checkfailfeecontrolstatic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
@@ -37,7 +37,7 @@ platform:
           validation: "checkpassvalidationspvp2p"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
+          privacy: "checkpassprivacybasic"
           fees: "checkfailfeecontrolstatic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
@@ -55,7 +55,7 @@ platform:
         validation: "checkpassvalidationspvp2p"
         transparency: "checkpasstransparencyopensource"
         environment: "checkfailenvironmentdesktop"
-        privacy: "checkfailprivacyweak"
+        privacy: "checkpassprivacybasic"
         fees: "checkfailfeecontrolstatic"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
