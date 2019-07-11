@@ -128,9 +128,6 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   border: none;
   outline: none;
 }
-.os-selector-tab + .os-selector-tab {
-  margin-left: 15px;
-}
 .os-selector-tab.active {
   border-bottom: 2px solid #FF7E00;
   color: #ff7e00;
@@ -146,6 +143,26 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 }
 .os-selector-icon {
   margin-right: 10px;
+}
+.os-selector-android-icon {
+  width: 12px;
+  height: 14px;
+}
+.os-selector-windows-icon {
+  width: 15px;
+  height: 15px;
+}
+.os-selector-ios-icon {
+  width: 16px;
+  height: 16px;
+}
+.os-selector-mac-icon {
+  width: 12px;
+  height: 15px;
+}
+.os-selector-linux-icon {
+  width: 15px;
+  height: 18px;
 }
 .os-selector-content {
   display: none;
@@ -202,32 +219,50 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 .wallet-accordion {
   margin-bottom: 25px;
 }
-.wallet-accordion-btn {
-  display: none;
-  position: relative;
-  height: 50px;
-  width: 100%;
+.wallet-accordion .wallet-accordion-btn {
   padding: 0 25px 0 37px;
-  background: #FFFFFF;
-  border: 1px solid #DADADA;
   text-transform: uppercase;
-  font-size: 15px;
-  text-align: left;
   color: #FF7E00;
 }
-.wallet-accordion-btn::after {
+.wallet-accordion-btn {
+  display: none;
+}
+.wallet-accordion-btn::before {
   content: '';
   position: absolute;
   top: 50%;
-  right: 15px;
-  width: 9px;
-  height: 8px;
-  transform: translateY(-50%);
-  background: url('../img/icons/angle.svg') center no-repeat;
+  left: 15px;
+  transform: translate(0, -50%);
+}
+.wallet-accordion-btn[data-button-os="ios"]::before {
+  width: 16px;
+  height: 16px;
+  background: url('../img/os/wallet_menu_ios_bright.svg') center no-repeat;
   background-size: contain;
 }
-.wallet-accordion.open .wallet-accordion-btn::after {
-  transform: translateY(-50%) rotate(180deg);
+.wallet-accordion-btn[data-button-os="android"]::before {
+  width: 12px;
+  height: 14px;
+  background: url('../img/os/wallet_menu_android_bright.svg') center no-repeat;
+  background-size: contain;
+}
+.wallet-accordion-btn[data-button-os="windows"]::before {
+  width: 15px;
+  height: 15px;
+  background: url('../img/os/wallet_menu_windows_bright.svg') center no-repeat;
+  background-size: contain;
+}
+.wallet-accordion-btn[data-button-os="mac"]::before {
+  width: 12px;
+  height: 15px;
+  background: url('../img/os/wallet_menu_mac_bright.svg') center no-repeat;
+  background-size: contain;
+}
+.wallet-accordion-btn[data-button-os="linux"]::before {
+  width: 15px;
+  height: 18px;
+  background: url('../img/os/wallet_menu_linux_bright.svg') center no-repeat;
+  background-size: contain;
 }
 
 @media screen and (max-width: 1024px) {
@@ -243,14 +278,66 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
     margin: 0 0 40px;
   }
 }
-@media screen and (max-width: 600px) {
-  .wallet-accordion-content {
-    display: none;
+@media screen and (max-width: 700px) {
+  .wallet-accordion-btn {
+    display: flex;
   }
-  .wallet-accordion.open .wallet-accordion-content {
-    display: block;
+  .os-selector-tabs {
+    flex-direction: column;
+  }
+  .os-selector-tab {
+    padding: 0 0 0 10px;
+    justify-content: flex-start;
+    height: 50px;
+  }
+  .os-selector-tab.active {
+    border-bottom: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wallet-platforms {
+    margin-top: 30px;
+  }
+  .wallet-platforms-row {
+    padding-bottom: 35px;
+    margin-bottom: 30px;
+  }
+  .os-selector {
+    padding: 20px 15px 15px;
+    margin: 0 0 15px;
+  }
+  .wallet-accordion {
+    margin-bottom: 11px;
   }
   .wallet-accordion-btn {
     display: block;
+  }
+  .os-selector-links-row {
+    flex-direction: column;
+  }
+  .os-selector-link {
+    width: 100%;
+  }
+  .os-selector-link:first-child {
+    margin: 0 0 10px;
+  }
+  .wallet-points {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .wallet-os-overview {
+    margin: 0;
+  }
+  .wallet-os-check-title {
+    font-size: 20px;
+  }
+  .wallet-hints-row .wallet-hint {
+    margin-right: 0;
+  }
+  .wallet-hint + .wallet-hint {
+    margin-left: 35px;
+  }
+  .similar-wallets-table .wallet-hints-row {
+    display: none;
   }
 }

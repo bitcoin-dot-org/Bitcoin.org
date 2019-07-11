@@ -330,6 +330,13 @@
 	padding-right: 25px;
 	border-right: 1px solid #DADADA;
 }
+.wallet-table-text {
+  display: none;
+  font-size: 14px;
+  color: #13161F;
+  text-align: right;
+  line-height: 30px;
+}
 .wallet-img {
 	width: 35px;
 	margin-right: 13px;
@@ -396,4 +403,99 @@
 .empty-box-text {
   max-width: 505px;
   margin: 0 auto;
+}
+.table-sort {
+  display: none;
+}
+.acc {
+  position: relative;
+}
+.acc-btn {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  padding: 0 25px 0 15px;
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+}
+.acc-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 9px;
+  height: 8px;
+  transform: translateY(-50%);
+  background: url('../img/icons/angle.svg') center no-repeat;
+  background-size: contain;
+}
+.acc.open .acc-btn::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+.acc.open .acc-content {
+  display: block;
+}
+.acc-content-btn {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 0 25px 0 15px;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .acc-btn {
+    display: flex;
+  }
+  .acc-content {
+    display: none;
+    border: 1px solid #DADADA;
+    border-top: none;
+    background: #fff;
+  }
+  .acc-content-btn {
+    background: #fff;
+  }
+  .acc-content-btn + .acc-content-btn {
+    border-top: 1px solid #dadada;
+  }
+  .table-sort {
+    display: block;
+  }
+  .table-sort .acc-btn {
+    font-weight: 600;
+  }
+  .table-sort-title {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #13161F;
+    line-height: 36px;
+  }
+  .wallet-table-head {
+    display: none;
+  }
+  .wallet-table-text {
+    display: block;
+  }
+  .wallet-img {
+    margin-right: 5px;
+  }
+  .wallet-label {
+    font-size: 14px;
+  }
+  .wallet-table-data {
+    padding: 20px 0 20px 5px;
+  }
+  .wallet-table-data.hidden {
+    display: none;
+  }
+  .wallet-table-data[data-cell]:not(.hidden) {
+    border-right: 1px solid #dadada;
+  }
+  .wallet-table-text {
+    margin-right: 8px;
+  }
 }

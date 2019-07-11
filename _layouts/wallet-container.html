@@ -64,17 +64,17 @@ max_wallet_text_length: 418  ## Unicode characters
         </div>
   
         <div class="os-selector">
-          <div id="accordion" class="wallet-accordion">
-            <button id="accordionButton" class="wallet-accordion-btn" data-button-os="">
+          <div id="walletAccordion" class="acc wallet-accordion">
+            <button id="walletAccordionButton" class="acc-btn wallet-accordion-btn" data-button-os="">
               MAC
             </button>
-            <div class="wallet-accordion-content">
+            <div class="acc-content wallet-accordion-content">
               <div class="os-selector-tabs">
                 {% for platform in page.wallet.platform %}
                   {% for os in platform.os %}
-                    <button class="os-selector-tab" data-tab="{{os.name}}">
-                      <img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}} logo" class="os-selector-icon os-selector-icon-inactive">
-                      <img src="/img/os/wallet_menu_{{os.name}}_bright.svg" alt="{{os.name}} logo" class="os-selector-icon os-selector-icon-active">
+                    <button class="acc-content-btn os-selector-tab" data-tab="{{os.name}}">
+                      <img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}} logo" class="os-selector-icon os-selector-{{os.name}}-icon os-selector-icon-inactive">
+                      <img src="/img/os/wallet_menu_{{os.name}}_bright.svg" alt="{{os.name}} logo" class="os-selector-icon os-selector-{{os.name}}-icon os-selector-icon-active">
                       {{os.name}}
                     </button>
                   {% endfor %}
@@ -104,6 +104,22 @@ max_wallet_text_length: 418  ## Unicode characters
           {% endfor %}
         </div>
       </div>
+
+      <div class="table-sort">
+        <h3 class="table-sort-title">Sort by:</h3>
+        <div id="tableAccordion" class="acc">
+          <button id="tableAccordionButton" class="acc-btn">Control</button>
+          <div class="acc-content">
+            <button class="acc-content-btn table-sort-btn">Control</button>
+            <button class="acc-content-btn table-sort-btn">Validation</button>
+            <button class="acc-content-btn table-sort-btn">Transparency</button>
+            <button class="acc-content-btn table-sort-btn">Environment</button>
+            <button class="acc-content-btn table-sort-btn">Fees</button>
+            <button class="acc-content-btn table-sort-btn">Privacy</button>
+          </div>
+        </div>
+      </div>
+      
       <div class="wallet-table-wrapper wallet-selector-section similar-wallets-table">        
         <div class="wallet-table">        
           <div class="wallet-table-row">
@@ -146,8 +162,19 @@ max_wallet_text_length: 418  ## Unicode characters
                   {% for check in os.check %}
                     {% assign checkName = check[0] %}
                     {% assign checkValue = check[1] %}
-                    <div class="wallet-table-data">
-                      <div class="wallet-{% if checkValue contains 'checkgood' %}good{% elsif checkValue contains 'checkpass' %}good{% elsif checkValue contains 'checkfail' %}caution{% elsif checkValue contains 'checkneutral' %}neutral{% endif %}"></div>
+                    <div class="wallet-table-data" data-cell="{{checkName}}">
+                      <div class="row align-items-center">
+                        {% if checkValue contains 'checkgood' or checkValue contains 'checkpass' %}
+                          <span class="wallet-table-text">Good</span>
+                          <div class="wallet-good"></div>
+                        {% elsif checkValue contains 'checkfail' %}
+                          <span class="wallet-table-text">Caution</span>
+                          <div class="wallet-caution"></div>
+                        {% elsif checkValue contains 'checkneutral' %}
+                          <span class="wallet-table-text">Neutral</span>
+                          <div class="wallet-neutral"></div>
+                        {% endif %}
+                      </div>
                     </div>
                   {% endfor %}
                 </a>
@@ -180,24 +207,29 @@ max_wallet_text_length: 418  ## Unicode characters
 <script>
   (function() {
     var tabSelectors = document.querySelectorAll('.os-selector-tab');
-    var tabContents = document.querySelectorAll('.os-selector-content');
     var linksList = document.querySelectorAll('.wallet-link');
-    var accordionButton = document.getElementById('accordionButton');
-    var accordion = document.getElementById('accordion');
+
+    function changeAccordionButtonText(button, text) {
+      button.textContent = text;
+    }
 
     function selectRelevantTab(os) {
       tabSelectors.forEach(function(tab) {
         if (tab.dataset.tab === os) tab.classList.add('active');
         else tab.classList.remove('active');
       });
+
+      var tabContents = document.querySelectorAll('.os-selector-content');
       tabContents.forEach(function(content) {
         if (content.dataset.content === os) content.classList.add('visible');
         else content.classList.remove('visible');
       });
 
-      accordionButton.dataset.buttonOs = os;
-      accordionButton.textContent = os;
-      accordion.classList.remove('open');
+      var walletAccordionButton = document.getElementById('walletAccordionButton');
+      var walletAccordion = document.getElementById('walletAccordion');
+      changeAccordionButtonText(walletAccordionButton, os)
+      walletAccordionButton.dataset.buttonOs = os;
+      walletAccordion.classList.remove('open');
     }
 
     function displayDefaultTabContent() {
@@ -212,6 +244,21 @@ max_wallet_text_length: 418  ## Unicode characters
       }
     }
 
+    function sortTableColumn(selectedOption) {
+      var tableAccordion = document.getElementById('tableAccordion');
+      var tableAccordionButton = document.getElementById('tableAccordionButton');
+      
+      changeAccordionButtonText(tableAccordionButton, selectedOption);
+      tableAccordion.classList.remove('open');
+
+      var tableCells = document.querySelectorAll('.wallet-table-row.visible .wallet-table-data[data-cell]');
+      tableCells.forEach(function(cell) {
+        if (cell.dataset.cell === selectedOption.toLowerCase()) {
+          cell.classList.remove('hidden');
+        } else cell.classList.add('hidden');
+      })
+    }
+    
     function setListners() {
       tabSelectors.forEach(function(tab) {
         tab.addEventListener('click', function() {
@@ -227,9 +274,20 @@ max_wallet_text_length: 418  ## Unicode characters
         });
       });
 
-      accordionButton.addEventListener('click', function() {
-        accordion.classList.toggle('open');
-      })
+      var accordionButtons = document.querySelectorAll('.acc-btn');
+      accordionButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          this.parentNode.classList.toggle('open');
+        });
+      });
+
+      var tableSortButtons = document.querySelectorAll('.table-sort-btn');
+      tableSortButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          sortTableColumn(this.textContent);
+        });
+      });
+
     }
     
     function displaySimilarWallets() {
@@ -252,6 +310,7 @@ max_wallet_text_length: 418  ## Unicode characters
     function init() {
       displayDefaultTabContent();
       displaySimilarWallets();
+      sortTableColumn('Control')
       setListners();
     }
     init();
