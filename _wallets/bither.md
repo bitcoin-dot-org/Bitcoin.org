@@ -21,10 +21,10 @@ platform:
           validation: "checkpassvalidationspvp2p"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
+          privacy: "checkpassprivacybasic"
           fees: "checkfailfeecontrolstatic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: android
@@ -37,10 +37,10 @@ platform:
           validation: "checkpassvalidationspvp2p"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
+          privacy: "checkpassprivacybasic"
           fees: "checkfailfeecontrolstatic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
   - desktop:
@@ -55,10 +55,10 @@ platform:
         validation: "checkpassvalidationspvp2p"
         transparency: "checkpasstransparencyopensource"
         environment: "checkfailenvironmentdesktop"
-        privacy: "checkfailprivacyweak"
+        privacy: "checkpassprivacybasic"
         fees: "checkfailfeecontrolstatic"
       privacycheck:
-        privacyaddressreuse: "checkfailprivacyaddressrotation"
+        privacyaddressreuse: "checkpassprivacyaddressrotation"
         privacydisclosure: "checkfailprivacydisclosurespv"
         privacynetwork: "checkfailprivacynetworknosupporttor"
     os:
