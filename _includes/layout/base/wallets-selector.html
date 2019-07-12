@@ -7,7 +7,11 @@ http://opensource.org/licenses/MIT.
   <div class="container">
     
     <div class="wallet-selector-row">
-      <div class="sidebar-selector"> 
+      <button id="sidebarOpenButton" class="sidebar-selector-btn-open">Filters</button>
+      <div id="sidebarSelector" class="sidebar-selector"> 
+        <button id="sidebarCloseButton" class="sidebar-selector-btn-close">
+          <img src="/img/icons/close-selector.svg" alt="Close">
+        </button>
         <div class="sidebar-selector-section">
           <h3 class="sidebar-selector-title">Operating System</h3>
           <div class="sidebar-selector-platforms">
@@ -120,226 +124,272 @@ http://opensource.org/licenses/MIT.
         </div>
         <div class="sidebar-selector-section">
           <h3 class="sidebar-selector-title">User type</h3>
-          <div class="user-radio-row">
-            <label class="user-radio-wrapper">
-              <input type="radio" class="user-radio js-wallet-selector js-selector" name="user" value="beginner"  />
-              <p class="user-radio-text">New</p>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Show wallets ideal for new bitcoin users, based on your search criteria.
+
+          <div class="sidebar-selector-types-row">
+            <div class="user-radio-row">
+              <label class="user-radio-wrapper">
+                <input type="radio" class="user-radio js-wallet-selector js-selector" name="user" value="beginner"  />
+                <p class="user-radio-text">New</p>
+              </label>
+              <div class="sidebar-selector-info tooltip-trigger">
+                <img src="/img/icons/info-alt.svg" alt="info">
+                <div class="wallet-selector-tooltip tooltip">
+                  Show wallets ideal for new bitcoin users, based on your search criteria.
+                </div>
+              </div>
+            </div>
+            <div class="user-radio-row">
+              <label class="user-radio-wrapper">
+                <input type="radio" class="user-radio js-wallet-selector js-selector" name="user" value="experienced" />
+                <p class="user-radio-text">Experienced</p>
+              </label>
+              <div class="sidebar-selector-info tooltip-trigger">
+                <img src="/img/icons/info-alt.svg" alt="info">
+                <div class="wallet-selector-tooltip tooltip">
+                  Show all wallets, based on your search criteria.
+                </div>
               </div>
             </div>
           </div>
-          <div class="user-radio-row">
-            <label class="user-radio-wrapper">
-              <input type="radio" class="user-radio js-wallet-selector js-selector" name="user" value="experienced" />
-              <p class="user-radio-text">Experienced</p>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Show all wallets, based on your search criteria.
+
+        </div>
+        
+        <div class="sidebar-checkboxes-row">
+          <div class="sidebar-selector-section">
+            <div class="sidebar-selector-section-top">
+              <h3 class="sidebar-selector-title">Criteria</h3>
+            </div>
+            <div class="checkboxes-acc">
+              <div class="checkboxes-acc-header">
+                <div id="importantSelectedBox" class="checkboxes-acc-selected-list"></div>
+                <button id="importantAccordionButton" class="checkboxes-acc-btn">
+                  <img src="/img/icons/angle.svg" alt="angle">
+                </button>
+              </div>
+              <div class="checkboxes-acc-content">
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="important" value="control" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">Control</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Some wallets give you full control over your bitcoin. This means no third party can freeze or take away your funds. You are still responsible, however, for securing and backing up your wallet.
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="important" value="validation" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">Validation</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Some wallets have the ability to operate as a full node. This means no trust in a third party is required when processing transactions. Full nodes provide a high level of security, but they require a large amount of memory.
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="important" value="transparency" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">Transparency</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Some wallets are open-source and can be built deterministically, a process of compiling software which ensures the resulting code can be reproduced to help ensure it hasn't been tampered with.
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="important" value="environment" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">Environment</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Some wallets can be loaded on computers which are vulnerable to malware. Securing your computer, using a strong passphrase, moving most of your funds to cold store or enabling 2FA or multifactor authentication can help you protect your bitcoin.
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="important" value="fees" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">Fees</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Some wallets give you full control over setting the fee paid to the bitcoin network before making a transaction, or modifying it afterward, to ensure that your transactions are confirmed in a timely manner without paying more than you have to.
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="important" value="privacy" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">Privacy</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Some wallets make it harder to spy on your transactions by rotating addresses. They do not disclose information to peers on the network. They can also optionally let you setup and use Tor as a proxy to prevent others from associating transactions with your IP address.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-selector-section features-selectors-section">
+            <div class="sidebar-selector-section-top">
+              <h3 class="sidebar-selector-title">Features</h3>
+            </div>
+            <div class="checkboxes-acc">
+              <div class="checkboxes-acc-header">
+                <div id="featuresSelectedBox" class="checkboxes-acc-selected-list"></div>
+                <button class="checkboxes-acc-btn">
+                  <img src="/img/icons/angle.svg" alt="angle">
+                </button>
+              </div>
+              <div class="checkboxes-acc-content">
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="features" value="2fa" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">2FA</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Two-factor authentication (2FA) is a way to add additional security to your wallet. The first "factor" is your password for your wallet. The second "factor" is a verification code retrieved via text message or from an app on a mobile device. 2FA is conceptually similar to a security token device that banks in some countries require for online banking.  It likely requires relying on the availability of a third party to provide the service.
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="features" value="bech32" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">Bech32</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Bech32 is a special address format made possible by SegWit (see the feature description for SegWit for more info). This address format is also known as "bc1 addresses". Some bitcoin wallets and services do not yet support sending and/or receiving to or from Bech32 addresses.
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="features" value="full_node" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">Full Node</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Some wallets fully validate transactions and blocks. Almost all full nodes help the network by accepting transactions and blocks from other full nodes, validating those transactions and blocks, and then relaying them to further full nodes.
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="features" value="hardware_wallet" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">Hardware Wallet</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Some wallets include hardware wallet support. A hardware wallet is a security device that allows you to store your keys offline. You connect it to your computer when you need to manage your funds.
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="features" value="legacy_addresses" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">Legacy Addresses</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Most wallets have the ability to send and receive legacy bitcoin addresses. Legacy addresses start with 1 or 3 (as opposed to starting with bc1).  Without legacy address support you may not be able to receive bitcoin from older wallets or exchanges.
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="features" value="lightning" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">Lightning</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Some wallets support transactions on the Lightning Network.  The Lightning Network is new and somewhat experimental.  It supports transferring bitcoin without having to record each transaction on the blockchain, resulting in faster transactions and lower fees.
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="features" value="mixing_shuffling" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">Mixing / Shuffling</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Some wallets support coin mixing and/or shuffling, which pools transactions from multiple parties in order to increase privacy and reduce traceability.
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="features" value="multisig" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">Multisig</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Some wallets have the ability to require more than one key to authorize a transaction. This can be used to divide responsibility and control over multiple parties.
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="features" value="segwit" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">SegWit</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      Some wallets support SegWit, which uses block chain space more efficiently. This helps reduce fees paid by helping the Bitcoin network scale and sets the foundation for second layer solutions such as the Lightning Network.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="sidebar-selector-section">
-          <div class="sidebar-selector-section-top">
-            <h3 class="sidebar-selector-title">Criteria</h3>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="important" value="control" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">Control</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Some wallets give you full control over your bitcoin. This means no third party can freeze or take away your funds. You are still responsible, however, for securing and backing up your wallet.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="important" value="validation" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">Validation</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Some wallets have the ability to operate as a full node. This means no trust in a third party is required when processing transactions. Full nodes provide a high level of security, but they require a large amount of memory.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="important" value="transparency" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">Transparency</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Some wallets are open-source and can be built deterministically, a process of compiling software which ensures the resulting code can be reproduced to help ensure it hasn't been tampered with.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="important" value="environment" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">Environment</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Some wallets can be loaded on computers which are vulnerable to malware. Securing your computer, using a strong passphrase, moving most of your funds to cold store or enabling 2FA or multifactor authentication can help you protect your bitcoin.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="important" value="fees" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">Fees</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Some wallets give you full control over setting the fee paid to the bitcoin network before making a transaction, or modifying it afterward, to ensure that your transactions are confirmed in a timely manner without paying more than you have to.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="important" value="privacy" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">Privacy</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Some wallets make it harder to spy on your transactions by rotating addresses. They do not disclose information to peers on the network. They can also optionally let you setup and use Tor as a proxy to prevent others from associating transactions with your IP address.
-              </div>
-            </div>
-          </div>
+        
+        <div class="wallet-selector-help">
+          <h3 class="sidebar-selector-title">Need some help?</h3>
+          <p class="sidebar-selector-text">You can find more information and help on the resources and community pages or on the Wiki FAQ</p>
         </div>
-        <div class="sidebar-selector-section">
-          <div class="sidebar-selector-section-top">
-            <h3 class="sidebar-selector-title">Features</h3>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="2fa" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">2FA</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Two-factor authentication (2FA) is a way to add additional security to your wallet. The first "factor" is your password for your wallet. The second "factor" is a verification code retrieved via text message or from an app on a mobile device. 2FA is conceptually similar to a security token device that banks in some countries require for online banking.  It likely requires relying on the availability of a third party to provide the service.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="bech32" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">Bech32</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Bech32 is a special address format made possible by SegWit (see the feature description for SegWit for more info). This address format is also known as "bc1 addresses". Some bitcoin wallets and services do not yet support sending and/or receiving to or from Bech32 addresses.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="full_node" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">Full Node</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Some wallets fully validate transactions and blocks. Almost all full nodes help the network by accepting transactions and blocks from other full nodes, validating those transactions and blocks, and then relaying them to further full nodes.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="hardware_wallet" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">Hardware Wallet</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Some wallets include hardware wallet support. A hardware wallet is a security device that allows you to store your keys offline. You connect it to your computer when you need to manage your funds.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="legacy_addresses" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">Legacy Addresses</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Most wallets have the ability to send and receive legacy bitcoin addresses. Legacy addresses start with 1 or 3 (as opposed to starting with bc1).  Without legacy address support you may not be able to receive bitcoin from older wallets or exchanges.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="lightning" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">Lightning</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Some wallets support transactions on the Lightning Network.  The Lightning Network is new and somewhat experimental.  It supports transferring bitcoin without having to record each transaction on the blockchain, resulting in faster transactions and lower fees.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="mixing_shuffling" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">Mixing / Shuffling</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Some wallets support coin mixing and/or shuffling, which pools transactions from multiple parties in order to increase privacy and reduce traceability.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="multisig" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">Multisig</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Some wallets have the ability to require more than one key to authorize a transaction. This can be used to divide responsibility and control over multiple parties.
-              </div>
-            </div>
-          </div>
-          <div class="important-checkbox-row">
-            <label class="checkbox-wrapper">
-              <input type="checkbox" name="features" value="segwit" class="checkbox js-wallet-selector js-selector" />
-              <div class="checkbox-text">SegWit</div>
-            </label>
-            <div class="sidebar-selector-info tooltip-trigger">
-              <img src="/img/icons/info-alt.svg" alt="info">
-              <div class="wallet-selector-tooltip tooltip">
-                Some wallets support SegWit, which uses block chain space more efficiently. This helps reduce fees paid by helping the Bitcoin network scale and sets the foundation for second layer solutions such as the Lightning Network.
-              </div>
-            </div>
-          </div>
-        </div>
-        <h3 class="sidebar-selector-title">Need some help?</h3>
-        <p class="sidebar-selector-text">You can find more information and help on the resources and community pages or on the Wiki FAQ</p>
       </div>
 
       <div class="wallet-selector-content">
+
+        <div class="table-sort">
+          <h3 class="table-sort-title">Sort by:</h3>
+          <div id="tableAccordion" class="acc">
+            <button id="tableAccordionButton" class="acc-btn">Control</button>
+            <div class="acc-content">
+              <button class="acc-content-btn table-sort-btn">Control</button>
+              <button class="acc-content-btn table-sort-btn">Validation</button>
+              <button class="acc-content-btn table-sort-btn">Transparency</button>
+              <button class="acc-content-btn table-sort-btn">Environment</button>
+              <button class="acc-content-btn table-sort-btn">Fees</button>
+              <button class="acc-content-btn table-sort-btn">Privacy</button>
+            </div>
+          </div>
+        </div>
+
         <div class="wallet-table-wrapper wallet-selector-section" data-section-name="walletsList">        
           <div class="wallet-table">        
             <div class="wallet-table-row">
@@ -381,8 +431,19 @@ http://opensource.org/licenses/MIT.
                     {% for check in os.check %}
                       {% assign checkName = check[0] %}
                       {% assign checkValue = check[1] %}
-                      <div class="wallet-table-data">
-                        <div class="wallet-{% if checkValue contains 'checkgood' %}good{% elsif checkValue contains 'checkpass' %}good{% elsif checkValue contains 'checkfail' %}caution{% elsif checkValue contains 'checkneutral' %}neutral{% endif %}"></div>
+                      <div class="wallet-table-data" data-cell="{{checkName}}">
+                        <div class="row align-items-center justify-content-end">
+                          {% if checkValue contains 'checkgood' or checkValue contains 'checkpass' %}
+                            <span class="wallet-table-text">Good</span>
+                            <div class="wallet-score wallet-good"></div>
+                          {% elsif checkValue contains 'checkfail' %}
+                            <span class="wallet-table-text">Caution</span>
+                            <div class="wallet-score wallet-caution"></div>
+                          {% elsif checkValue contains 'checkneutral' %}
+                            <span class="wallet-table-text">Neutral</span>
+                            <div class="wallet-score wallet-neutral"></div>
+                          {% endif %}
+                        </div>
                       </div>
                     {% endfor %}
                   </a>

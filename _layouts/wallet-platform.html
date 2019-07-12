@@ -190,6 +190,7 @@ layout: base
     highlightCheckedSelectorInputs(filters);
     setWalletsVisibility(filters);
     displayRelevantSelectortSection(filters);
+    displaySelectedCheckbox();
   }
   
   function checkParametersValues(parameterName, parameterValues) {
@@ -232,6 +233,7 @@ layout: base
     } else if (isSelectorStep) {
       displayRelevantScreen('selector');
       displayRelevantSelectorContent();
+      sortTableColumn('Control');
     } else {
       displayRelevantScreen('intro');
     }
@@ -245,11 +247,43 @@ layout: base
     return selectedInputsValues;
   }
   
+  function renderCheckboxesHTML(filters, position) {
+    filters = filters.split(',');
+    var template = '<div class="checkboxes-acc-selected"><p class="checkboxes-acc-selected-text">%value%</p><button class="checkboxes-acc-selected-remove" data-checkbox-remove="%attribute%"><img src="/img/icons/close-btn.svg" alt="close"></button></div>';
+
+    position.innerHTML = '';
+    filters.forEach(function(filter) {
+      var html = template.replace('%value%', filter.split('_').join(' '));
+      html = html.replace('%attribute%', filter);
+      position.insertAdjacentHTML("beforeend", html);
+    });
+  }
+  
+  function displaySelectedCheckbox() {
+    var importantFilters = getUrlParameter('important');
+    var featuresFilters = getUrlParameter('features');
+    var importantSelectedBox = document.getElementById('importantSelectedBox');
+    var featuresSelectedBox = document.getElementById('featuresSelectedBox');
+    
+    if (importantFilters) renderCheckboxesHTML(importantFilters, importantSelectedBox);
+    else importantSelectedBox.innerHTML = '';
+    
+    if (featuresFilters) renderCheckboxesHTML(featuresFilters, featuresSelectedBox);
+    else featuresSelectedBox.innerHTML = '';
+
+    var removeCheckboxFilterButtons = document.querySelectorAll('.checkboxes-acc-selected-remove');
+    removeCheckboxFilterButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        removeCheckboxFilter(button.dataset.checkboxRemove);
+      });
+    });
+  }
+  
   function onWizardInputChange(input) {
     var selectedInputs = document.querySelectorAll('.js-wizard-selector[name="' + input.name + '"]:checked');
     var filters = collectCheckedInputsValues(selectedInputs);
     setUrlParameter(input.name, filters);
-    displayNextButton(input.name)
+    displayNextButton(input.name);
   }
 
   function onWalletSelectorInputChange(input) {
@@ -257,6 +291,17 @@ layout: base
     var filters = collectCheckedInputsValues(selectedInputs);
     setUrlParameter(input.name, filters);
     displayRelevantSelectorContent();
+  }
+  
+  function toggleSidebarVisibility() {
+    sidebarOpenButton.classList.toggle('visible');
+    sidebarSelector.classList.toggle('hidden');
+  }
+  
+  function removeCheckboxFilter(filterValue) {
+    var filter = document.querySelector('.js-wallet-selector[value="' + filterValue +'"]');
+    filter.checked = false;
+    onWalletSelectorInputChange(filter);
   }
   
   function setListners() {
@@ -281,7 +326,7 @@ layout: base
     
     selectorsList.forEach(function(selector) {
       selector.addEventListener('change', function() {
-        onWalletSelectorInputChange(selector)
+        onWalletSelectorInputChange(selector);
       });
     });
     
@@ -293,6 +338,34 @@ layout: base
       });
     });
 
+    var sidebarOpenButton = document.getElementById('sidebarOpenButton');
+    var sidebarSelector = document.getElementById('sidebarSelector');
+    sidebarOpenButton.addEventListener('click', toggleSidebarVisibility);
+
+    var sidebarCloseButton = document.getElementById('sidebarCloseButton');
+    sidebarCloseButton.addEventListener('click', toggleSidebarVisibility);
+    
+    var filtersAccordionButtons = document.querySelectorAll('.checkboxes-acc-btn');
+    filtersAccordionButtons.forEach(function(button) {
+      button.addEventListener('click', function(e) {
+        button.parentNode.parentNode.classList.toggle('open');
+      });
+    });
+    
+    var accordionButtons = document.querySelectorAll('.acc-btn');
+    accordionButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        this.parentNode.classList.toggle('open');
+      });
+    });
+    
+    var tableSortButtons = document.querySelectorAll('.table-sort-btn');
+    tableSortButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        sortTableColumn(this.textContent);
+      });
+    });
+    
     window.addEventListener('popstate', (event) => {
       displayRelevantContent();
     });

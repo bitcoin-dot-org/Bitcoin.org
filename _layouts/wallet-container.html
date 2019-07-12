@@ -163,16 +163,16 @@ max_wallet_text_length: 418  ## Unicode characters
                     {% assign checkName = check[0] %}
                     {% assign checkValue = check[1] %}
                     <div class="wallet-table-data" data-cell="{{checkName}}">
-                      <div class="row align-items-center">
+                      <div class="row align-items-center justify-content-end">
                         {% if checkValue contains 'checkgood' or checkValue contains 'checkpass' %}
                           <span class="wallet-table-text">Good</span>
-                          <div class="wallet-good"></div>
+                          <div class="wallet-score wallet-good"></div>
                         {% elsif checkValue contains 'checkfail' %}
                           <span class="wallet-table-text">Caution</span>
-                          <div class="wallet-caution"></div>
+                          <div class="wallet-score wallet-caution"></div>
                         {% elsif checkValue contains 'checkneutral' %}
                           <span class="wallet-table-text">Neutral</span>
-                          <div class="wallet-neutral"></div>
+                          <div class="wallet-score wallet-neutral"></div>
                         {% endif %}
                       </div>
                     </div>
@@ -209,10 +209,6 @@ max_wallet_text_length: 418  ## Unicode characters
     var tabSelectors = document.querySelectorAll('.os-selector-tab');
     var linksList = document.querySelectorAll('.wallet-link');
 
-    function changeAccordionButtonText(button, text) {
-      button.textContent = text;
-    }
-
     function selectRelevantTab(os) {
       tabSelectors.forEach(function(tab) {
         if (tab.dataset.tab === os) tab.classList.add('active');
@@ -242,21 +238,6 @@ max_wallet_text_length: 418  ## Unicode characters
           break;
         }
       }
-    }
-
-    function sortTableColumn(selectedOption) {
-      var tableAccordion = document.getElementById('tableAccordion');
-      var tableAccordionButton = document.getElementById('tableAccordionButton');
-      
-      changeAccordionButtonText(tableAccordionButton, selectedOption);
-      tableAccordion.classList.remove('open');
-
-      var tableCells = document.querySelectorAll('.wallet-table-row.visible .wallet-table-data[data-cell]');
-      tableCells.forEach(function(cell) {
-        if (cell.dataset.cell === selectedOption.toLowerCase()) {
-          cell.classList.remove('hidden');
-        } else cell.classList.add('hidden');
-      })
     }
     
     function setListners() {

@@ -722,3 +722,22 @@ function queryStringToArray() {
 
   return result;
 }
+
+function changeAccordionButtonText(button, text) {
+  button.textContent = text;
+}
+
+function sortTableColumn(selectedOption) {
+  var tableAccordion = document.getElementById('tableAccordion');
+  var tableAccordionButton = document.getElementById('tableAccordionButton');
+  
+  changeAccordionButtonText(tableAccordionButton, selectedOption);
+  tableAccordion.classList.remove('open');
+
+  var tableCells = document.querySelectorAll('.wallet-table-row.visible .wallet-table-data[data-cell]');
+  tableCells.forEach(function(cell) {
+    if (cell.dataset.cell === selectedOption.toLowerCase()) {
+      cell.classList.remove('hidden');
+    } else cell.classList.add('hidden');
+  })
+}
