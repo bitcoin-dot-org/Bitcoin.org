@@ -152,7 +152,7 @@ max_wallet_text_length: 418  ## Unicode characters
                 <a
                   href="{% if platform.name == os.name %}/{{page.lang}}/wallets/{{platform.name}}/{{wallet.id}}/{% else %}/{{page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{wallet.id}}/{% endif %}"
                   class="wallet-table-row wallet-link"
-                  data-categories="{% if wallet.user %}{{wallet.user}}{% endif %} experienced {% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' or checkValue contains 'checkpass' %}{{checkName}} {% endif %}{% endfor %}{{os.name}}"
+                  data-categories="{% if wallet.user %}{{wallet.user}}{% endif %} experienced {% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' or checkValue contains 'checkpass' %}{{checkName}} {% endif %}{% endfor %}{{os.name}} {{os.features}}"
                   data-id="{{wallet.id}}"
                 >
                   <div class="wallet-table-data">

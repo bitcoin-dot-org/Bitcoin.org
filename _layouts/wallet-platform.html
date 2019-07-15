@@ -19,7 +19,6 @@ layout: base
 
 <script>
 (function() {
-  var selectedPlatform;
   var selectedUser;
   var selectedImportantCheckboxes = [];
   var selectedImportantCheckboxes = [];
@@ -83,6 +82,7 @@ layout: base
       highlightCompletedHeader(selectedFilters, selectedStep, accordionStep, accordion);
       displaySelectedHeaderValues(accordionType, selectedFilters, accordion);
     })
+    checkInputsActivity();
   }
 
   function scrollIntoHeader(number) {
@@ -279,10 +279,46 @@ layout: base
     });
   }
   
+  function checkUserInputsActivity(selectedPlatform) {
+    setWalletsVisibility([selectedPlatform, 'beginner']);
+    var wallets = document.querySelectorAll('.wallet-link.visible');
+    var separatorText = document.querySelector('.helper-user-separator');
+    if (!wallets.length) {
+      setUrlParameter('user', 'experienced');
+      separatorText.classList.add('disabled');
+    } else separatorText.classList.remove('disabled');
+  }
+  
+  function checkInputsActivity() {
+    var inputsList = document.querySelectorAll('.js-wizard-selector');
+    var selectedPlatform = getUrlParameter('platform');
+    if (selectedPlatform) checkUserInputsActivity(selectedPlatform);
+    
+    inputsList.forEach(function(input) {
+      var filters = queryStringToArray();
+      filters.push(input.value);
+      setWalletsVisibility(filters);
+      var wallets = document.querySelectorAll('.wallet-link.visible');
+      if (!wallets.length && input.name !== 'platform') input.disabled = true;
+      else input.disabled = false;
+    });
+  }
+  
+  function clearSelection(type) {
+    var accordion = document.querySelector('.js-helper-accordion[data-type="' + type + '"]');
+    accordion.classList.remove('complete');
+    accordion.querySelector('.helper-selected-block').classList.remove('visible');
+    setUrlParameter(type, '');
+  }
+  
   function onWizardInputChange(input) {
     var selectedInputs = document.querySelectorAll('.js-wizard-selector[name="' + input.name + '"]:checked');
     var filters = collectCheckedInputsValues(selectedInputs);
     setUrlParameter(input.name, filters);
+    
+    if (input.name === 'platform' && getUrlParameter('important')) clearSelection('important');
+    if (input.name === 'platform' && getUrlParameter('features')) clearSelection('features');
+    
     displayNextButton(input.name);
   }
 
@@ -316,6 +352,7 @@ layout: base
     wizardInputsList.forEach(function(input) {
       input.addEventListener('change', function() {
         onWizardInputChange(input);
+        checkInputsActivity();
       });
     });
 
