@@ -220,6 +220,14 @@ layout: base
     window.history.replaceState(null, null, window.location.pathname);
   }
   
+  function displayDiscoverBox(currentStep) {
+    var discoverBoxLinks = document.querySelectorAll('.discover-links-list[data-links-step]');
+    discoverBoxLinks.forEach(function(linksList) {
+      if (linksList.dataset.linksStep === currentStep) linksList.classList.add('visible');
+      else linksList.classList.remove('visible');
+    });
+  }
+  
   function displayRelevantContent() {
     var step = getUrlParameter('step');
     var currentStep = Number(step);
@@ -230,6 +238,7 @@ layout: base
       highlightSelectedWizardInputs();
       displayNextButton();
       displayRelevantWizardContent(step)
+      displayDiscoverBox(step);
     } else if (isSelectorStep) {
       displayRelevantScreen('selector');
       displayRelevantSelectorContent();

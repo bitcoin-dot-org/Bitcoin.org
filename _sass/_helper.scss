@@ -373,6 +373,12 @@
   color: #13161F;
   line-height: 36px;
 }
+.discover-links-list {
+  display: none;
+}
+.discover-links-list.visible {
+  display: block;
+}
 .discover-link {
   display: block;
   font-size: 16px;
