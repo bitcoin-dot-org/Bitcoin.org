@@ -242,7 +242,7 @@ layout: base
     } else if (isSelectorStep) {
       displayRelevantScreen('selector');
       displayRelevantSelectorContent();
-      sortTableColumn('Control');
+      sortTableColumn('control');
     } else {
       displayRelevantScreen('intro');
     }
@@ -408,7 +408,7 @@ layout: base
     var tableSortButtons = document.querySelectorAll('.table-sort-btn');
     tableSortButtons.forEach(function(button) {
       button.addEventListener('click', function() {
-        sortTableColumn(this.textContent); // TODO: Change it to dataset!!!
+        sortTableColumn(button.dataset.sort); 
       });
     });
     

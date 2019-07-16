@@ -736,7 +736,7 @@ function sortTableColumn(selectedOption) {
 
   var tableCells = document.querySelectorAll('.wallet-table-row.visible .wallet-table-data[data-cell]');
   tableCells.forEach(function(cell) {
-    if (cell.dataset.cell === selectedOption.toLowerCase()) {
+    if (cell.dataset.cell === selectedOption) {
       cell.classList.remove('hidden');
     } else cell.classList.add('hidden');
   });
