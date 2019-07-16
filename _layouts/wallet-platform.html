@@ -408,7 +408,7 @@ layout: base
     var tableSortButtons = document.querySelectorAll('.table-sort-btn');
     tableSortButtons.forEach(function(button) {
       button.addEventListener('click', function() {
-        sortTableColumn(this.textContent);
+        sortTableColumn(this.textContent); // TODO: Change it to dataset!!!
       });
     });
     
