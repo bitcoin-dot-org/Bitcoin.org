@@ -320,6 +320,61 @@ h2 .rssicon{
 .own-text {
 	direction: rtl;
 }
+.helper-intro-text {
+	text-align: right;
+}
+.helper-next-btn {
+	margin: 0 30px 0 0;
+}
+.helper-content {
+	padding: 0 73px 0 0;
+}
+.helper-accordion::before {
+	left: auto;
+	right: -50px;
+	transform: translateX(100%);
+}
+.helper-header::after {
+	left: auto;
+	right: -30px;
+	transform: translateX(100%);
+}
+.helper-title {
+	text-align: right;
+}
+.helper-platforms-section + .helper-platforms-section {
+	margin: 0 30px 0 0;
+}
+.helper-radio-wrapper + .helper-radio-wrapper {
+	margin: 0 15px 0 0;	
+}
+.bullet {
+	padding: 0 25px 0 0;
+	text-align: right;
+}
+.bullet::before {
+	left: auto;
+	right: 0;
+}
+.helper-change-btn {
+	margin: 0 20px 0 0;
+}
+.helper-checkbox-text {
+	padding: 0 45px 0 0;
+}
+.helper-checkbox-description {
+	text-align: right;
+}
+.checkbox-text::before {
+	left: auto;
+	right: 0;
+}
+.disabled-checkbox-text {
+	text-align: right;
+}
+.discover {
+	margin: 0 30px 0 0;
+}
 /*Override UbuntuBold by Droid Naskh*/
 
 @font-face{font-family:'DroidNaskh';src:url('/font/droidnaskh/droidnaskh-regular.eot');font-weight:normal;font-style:normal;}
