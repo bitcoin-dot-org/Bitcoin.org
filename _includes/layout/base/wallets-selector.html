@@ -13,12 +13,12 @@ http://opensource.org/licenses/MIT.
           <img src="/img/icons/close-selector.svg" alt="Close">
         </button>
         <div class="sidebar-selector-section">
-          <h3 class="sidebar-selector-title">Operating System</h3>
+          <h3 id="sidebarOsSelectorTitle" class="sidebar-selector-title">Operating System</h3>
           <div class="sidebar-selector-platforms">
             <div class="sidebar-selector-platforms-row">
               <div class="sidebar-selector-platform">
                 <div class="sidebar-selector-label-row">
-                  <h3 class="sidebar-selector-label">Mobile</h3>
+                  <h3 id="sidebarHardwareSelectorTitle" class="sidebar-selector-label">Mobile</h3>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
@@ -45,7 +45,7 @@ http://opensource.org/licenses/MIT.
               </div>
               <div class="sidebar-selector-platform sidebar-desktop-platform">
                 <div class="sidebar-selector-label-row">
-                  <h3 class="sidebar-selector-label">Desktop</h3>
+                  <h3 id="sidebarDesktopSelectorTitle" class="sidebar-selector-label">Desktop</h3>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
@@ -81,7 +81,7 @@ http://opensource.org/licenses/MIT.
             <div class="sidebar-selector-platforms-row">
               <div class="sidebar-selector-platform sidebar-hardware-platform">
                 <div class="sidebar-selector-label-row">
-                  <h3 class="sidebar-selector-label">Hardware</h3>
+                  <h3 id="sidebarHardwareSelectorTitle" class="sidebar-selector-label">Hardware</h3>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
@@ -101,7 +101,7 @@ http://opensource.org/licenses/MIT.
               </div>
               <div class="sidebar-selector-platform sidebar-web-platform">
                 <div class="sidebar-selector-label-row">
-                  <h3 class="sidebar-selector-label">Web</h3>
+                  <h3 id="sidebarWebSelectorTitle" class="sidebar-selector-label">Web</h3>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
@@ -123,7 +123,7 @@ http://opensource.org/licenses/MIT.
           </div>
         </div>
         <div class="sidebar-selector-section">
-          <h3 class="sidebar-selector-title">User type</h3>
+          <h3 id="sidebarHardwareSelector" class="sidebar-selector-title">User type</h3>
 
           <div class="sidebar-selector-types-row">
             <div class="user-radio-row">
@@ -157,7 +157,7 @@ http://opensource.org/licenses/MIT.
         <div class="sidebar-checkboxes-row">
           <div class="sidebar-selector-section">
             <div class="sidebar-selector-section-top">
-              <h3 class="sidebar-selector-title">Criteria</h3>
+              <h3 id="sidebarCriteriaSelectorTitle" class="sidebar-selector-title">Criteria</h3>
             </div>
             <div class="checkboxes-acc">
               <div class="checkboxes-acc-header">
@@ -244,7 +244,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="sidebar-selector-section features-selectors-section">
             <div class="sidebar-selector-section-top">
-              <h3 class="sidebar-selector-title">Features</h3>
+              <h3 id="sidebarFeaturesSelectorTitle" class="sidebar-selector-title">Features</h3>
             </div>
             <div class="checkboxes-acc">
               <div class="checkboxes-acc-header">
@@ -368,7 +368,7 @@ http://opensource.org/licenses/MIT.
         </div>
         
         <div class="wallet-selector-help">
-          <h3 class="sidebar-selector-title">Need some help?</h3>
+          <h3 id="sidebarHelpTitle" class="sidebar-selector-title">Need some help?</h3>
           <p class="sidebar-selector-text">You can find more information and help on the resources and community pages or on the Wiki FAQ</p>
         </div>
       </div>
@@ -377,10 +377,10 @@ http://opensource.org/licenses/MIT.
 
         <div class="wallet-table-wrapper wallet-selector-section" data-section-name="walletsList">        
           
-          <h2 class="wallet-selector-title">Below is a list of wallets available for your operating system</h2>
+          <h2 id="walletTableTitle" class="wallet-selector-title">Below is a list of wallets available for your operating system</h2>
           
           <div class="table-sort">
-            <h3 class="table-sort-title">Sort by:</h3>
+            <h3 id="walletTableSortTitle" class="table-sort-title">Sort by:</h3>
             <div id="tableAccordion" class="acc">
               <button id="tableAccordionButton" class="acc-btn">Control</button>
               <div class="acc-content">
@@ -474,13 +474,13 @@ http://opensource.org/licenses/MIT.
 
         <div class="wallet-selector-section empty-box" data-section-name="noMatch">
           <img src="/img/icons/empty.svg" alt="wallet with magnifier">
-          <h2 class="empty-box-title">No matching wallets found</h2>
+          <h2 id="noMatchBoxTitle" class="empty-box-title">No matching wallets found</h2>
           <p class="empty-box-text">Please update your search criteria and try again.</p>
         </div>
 
         <div class="wallet-selector-section empty-box" data-section-name="browseWallets">
           <img src="/img/icons/empty.svg" alt="wallet with magnifier">
-          <h2 class="empty-box-title">Browse wallets</h2>
+          <h2 id="browseBoxTitle" class="empty-box-title">Browse wallets</h2>
           <p class="empty-box-text">Use the wallet selector to find wallets that
           match your search criteria.</p>
         </div>
