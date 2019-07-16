@@ -404,7 +404,7 @@ h2 .rssicon{
 	border-right: none;
 	border-left: 1px solid #DADADA;
 }
-.platform-radio-wrapper+.platform-radio-wrapper {
+.platform-radio-wrapper + .platform-radio-wrapper {
 	margin: 0 5px 0 0;
 }
 .sidebar-selector-btn-close {
@@ -418,6 +418,16 @@ h2 .rssicon{
 .sidebar-selector-btn-open::after {
 	right: auto;
 	left: 30px;
+}
+.wallet-selector-tooltip {
+	left: auto;
+	right: -20px;
+	text-align: right;
+}
+.tooltip::after, 
+.tooltip::before {
+	left: auto;
+	right: 22px;
 }
 /*Override UbuntuBold by Droid Naskh*/
 
@@ -469,12 +479,122 @@ h2 .rssicon{
 	}
 }
 
+@media screen and (max-width: 990px) {
+	.sidebar-selector {
+		margin: 0 0 60px;
+	}
+	.sidebar-selector-label {
+		margin: 0 0 0 8px;
+	}
+	.user-radio-row + .user-radio-row {
+    margin: 0 40px 0 0;
+	}
+	.user-radio-text {
+		padding: 0 36px 0 0;
+	}
+	.user-radio-text::before {
+		left: auto;
+		right: 0;
+	}
+	.user-radio-text::after {
+		left: auto;
+		right: 7px;
+	}
+	.user-radio-wrapper {
+		margin: 0 0 0 9px;
+	}
+	.checkboxes-acc-header {
+		padding: 0 7px 7px 36px;
+	}
+	.checkboxes-acc-btn {
+		right: auto;
+		left: 0;
+	}
+	.checkboxes-acc-selected-text {
+		margin: 0 0 0 10px;
+	}
+	.sidebar-selector-platform+.sidebar-selector-platform {
+		margin: 0 0 0 15px;
+	}
+	.user-radio-row+.user-radio-row {
+		margin: 0 40px 0 0;
+	}
+	.features-selectors-section {
+		margin: 0 10px 0 0;
+	}
+	.sidebar-hardware-platform .tooltip::after,
+	.sidebar-hardware-platform .tooltip::before {
+		left: auto;
+	}
+	.features-selectors-section .wallet-selector-tooltip {
+		left: -20px;
+    right: auto;
+	}
+	.features-selectors-section .tooltip::after, 
+	.features-selectors-section .tooltip::before {
+		right: auto;
+    left: 22px;
+	}
+	.important-checkbox-row .tooltip::after,
+	.important-checkbox-row .tooltip::before {
+		right: auto;
+    left: 22px;
+	}
+	.important-checkbox-row .wallet-selector-tooltip {
+		right: auto;
+    left: -20px;
+	}
+}
 @media screen and (max-width: 700px) {
 	.helper-platforms-section + .helper-platforms-section {
 		margin: 30px 0 0;
 	}
 	.helper-next-btn {
 		margin: 0 0 15px;
+	}
+	.acc-btn {
+		padding: 0 15px 0 25px;
+	}
+	.acc-btn::after {
+		right: auto;
+		left: 15px;
+	}
+	.wallet-table-data[data-cell]:not(.hidden) {
+		border-right: none;
+		border-left: 1px solid #dadada;
+	}
+	.sidebar-web-platform .wallet-selector-tooltip {
+		right: auto;
+		left: -27px;
+	}
+	.sidebar-web-platform .tooltip::after, 
+	.sidebar-web-platform .tooltip::before {
+    right: auto;
+    left: 28px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.user-radio-row + .user-radio-row {
+		margin: 10px 0 0;
+	}
+	.user-radio-row .wallet-selector-tooltip {
+		left: -7px;
+    right: auto;
+	}
+	.user-radio-row .tooltip::after,
+	.user-radio-row .tooltip::before {
+		left: 10px;
+    right: auto;
+	}
+	.features-selectors-section {
+		margin: 13px 0 0;
+	}
+	.wallet-hints-row .wallet-hint:first-child {
+		margin: 0;
+	}
+	.wallet-hints-row .wallet-hint {
+		margin: 0 30px 0 0;
 	}
 }
 

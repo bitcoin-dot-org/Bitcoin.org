@@ -284,6 +284,7 @@ layout: base
     removeCheckboxFilterButtons.forEach(function(button) {
       button.addEventListener('click', function() {
         removeCheckboxFilter(button.dataset.checkboxRemove);
+        sortTableColumn('control');
       });
     });
   }
@@ -408,7 +409,7 @@ layout: base
     var tableSortButtons = document.querySelectorAll('.table-sort-btn');
     tableSortButtons.forEach(function(button) {
       button.addEventListener('click', function() {
-        sortTableColumn(button.dataset.sort); 
+        sortTableColumn(button.dataset.sort);
       });
     });
     
