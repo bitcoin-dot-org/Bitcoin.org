@@ -734,7 +734,7 @@ function sortTableColumn(selectedOption) {
   changeAccordionButtonText(tableAccordionButton, selectedOption);
   tableAccordion.classList.remove('open');
 
-  var tableCells = document.querySelectorAll('.wallet-table-row.visible .wallet-table-data[data-cell]');
+  var tableCells = document.querySelectorAll('.wallet-table-data[data-cell]');
   tableCells.forEach(function(cell) {
     if (cell.dataset.cell === selectedOption) {
       cell.classList.remove('hidden');

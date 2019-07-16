@@ -25,6 +25,11 @@ HTML::Proofer.new(
         ## Check whether HTML is well-formed
         :check_html => true,
 
+        :validation => {
+          :report_script_embeds => false,
+          :report_missing_names => false,
+        },
+        
         ## Links to ignore
         :href_ignore => [
           '#',           ## hrefs pointing to the current page (htmlproofer fails them)

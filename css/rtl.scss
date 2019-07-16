@@ -431,6 +431,7 @@ h2 .rssicon{
 }
 .os-selector-icon {
 	margin: 0 0 0 10px;
+	transform: translateY(-4px)
 }
 .os-selector-tab {
 	line-height: 1.6;
@@ -440,6 +441,13 @@ h2 .rssicon{
 }
 .os-selector {
 	margin: 0 65px 0 0;
+}
+.wallet-accordion .wallet-accordion-btn {
+	padding: 0 37px 0 25px;
+}
+.wallet-accordion-btn::before {
+	left: auto;
+	right: 15px;
 }
 /*Override UbuntuBold by Droid Naskh*/
 
@@ -491,6 +499,11 @@ h2 .rssicon{
 	}
 }
 
+@media screen and (max-width: 1024px) {
+	.os-selector {
+    margin: 0 0 40px;
+	}
+}
 @media screen and (max-width: 990px) {
 	.sidebar-selector {
 		margin: 0 0 60px;
@@ -607,6 +620,9 @@ h2 .rssicon{
 	}
 	.wallet-hints-row .wallet-hint {
 		margin: 0 30px 0 0;
+	}
+	.os-selector-link:first-child {
+		margin: 0 0 10px;
 	}
 }
 
