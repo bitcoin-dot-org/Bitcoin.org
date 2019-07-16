@@ -173,6 +173,7 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 .os-selector-links-row {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 25px;
 }
 .os-selector-link {
@@ -258,13 +259,27 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   background: url('../img/os/wallet_menu_mac_bright.svg') center no-repeat;
   background-size: contain;
 }
+.wallet-accordion-btn[data-button-os="web"]::before {
+  width: 16px;
+  height: 16px;
+  background: url('../img/os/wallet_menu_web_bright.svg') center no-repeat;
+  background-size: contain;
+}
 .wallet-accordion-btn[data-button-os="linux"]::before {
   width: 15px;
   height: 18px;
   background: url('../img/os/wallet_menu_linux_bright.svg') center no-repeat;
   background-size: contain;
 }
-
+.wallet-table-label {
+  display: none;
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  color: #13161F;
+  text-align: center;
+  line-height: 36px;
+}
 @media screen and (max-width: 1024px) {
   .wallet-platforms-row {
     flex-direction: column-reverse;
@@ -282,6 +297,10 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   .wallet-accordion-btn {
     display: flex;
   }
+  .wallet-points {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .os-selector-tabs {
     flex-direction: column;
   }
@@ -292,6 +311,9 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   }
   .os-selector-tab.active {
     border-bottom: none;
+  }
+  .wallet-table-label {
+    display: block;
   }
 }
 @media screen and (max-width: 600px) {
@@ -320,10 +342,6 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   }
   .os-selector-link:first-child {
     margin: 0 0 10px;
-  }
-  .wallet-points {
-    display: flex;
-    flex-direction: column-reverse;
   }
   .wallet-os-overview {
     margin: 0;

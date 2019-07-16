@@ -351,6 +351,9 @@
   font-weight: 600;
   margin-bottom: 20px;
 }
+.disabled-checkbox-text span {
+  color: #ff7e00;
+}
 .checkbox[disabled] + .helper-checkbox-text .disabled-checkbox-text {
   display: block;
 }
@@ -497,6 +500,7 @@
   }
   .helper-intro-img-wrapper {
     width: 100%;
+    text-align: center;
   }
   .helper-intro-description {
     width: 100%;
