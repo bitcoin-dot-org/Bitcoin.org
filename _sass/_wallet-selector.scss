@@ -568,6 +568,31 @@
   .user-radio-row + .user-radio-row {
     margin: 0 0 0 40px;
   }
+  .sidebar-web-platform .wallet-selector-tooltip {
+    left: auto;
+    right: -20px;
+  }
+  .sidebar-web-platform .tooltip::after,
+  .sidebar-web-platform .tooltip::before {
+    left: auto;
+    right: 22px;
+  }
+  .sidebar-hardware-platform .wallet-selector-tooltip {
+    left: -55px;
+  }
+  .sidebar-hardware-platform .tooltip::after,
+  .sidebar-hardware-platform .tooltip::before {
+    left: 55px;
+  }
+  .features-selectors-section .wallet-selector-tooltip {
+    left: auto;
+    right: -20px;
+  }
+  .features-selectors-section .tooltip::after,
+  .features-selectors-section .tooltip::before {
+    left: auto;
+    right: 22px;
+  }
   .wallet-selector-content {
     padding: 0 30px;
     box-sizing: border-box;
@@ -734,6 +759,33 @@
   }
   .user-radio-row + .user-radio-row {
     margin: 10px 0 0;
+  }
+  .user-radio-row .wallet-selector-tooltip {
+    left: auto;
+    right: -7px;
+  }
+  .user-radio-row .tooltip::after,
+  .user-radio-row .tooltip::before {
+    left: auto;
+    right: 10px;
+  }
+  .sidebar-desktop-platform .wallet-selector-tooltip {
+    left: auto;
+    right: -10px;
+  }
+  .sidebar-desktop-platform .tooltip::after,
+  .sidebar-desktop-platform .tooltip::before  {
+    left: auto;
+    right: 12px;
+  }
+  .important-checkbox-row .wallet-selector-tooltip {
+    left: auto;
+    right: -20px;
+  }
+  .important-checkbox-row .tooltip::after,
+  .important-checkbox-row .tooltip::before {
+    left: auto;
+    right: 22px;
   }
   .sidebar-checkboxes-row {
     display: block;
