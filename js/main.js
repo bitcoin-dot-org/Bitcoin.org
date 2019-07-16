@@ -685,7 +685,7 @@ function getUrlParameter(name) {
   var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
   var results = regex.exec(location.search);
   return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-};
+}
 
 function updateQueryStringParameter(key, value) {
   var uri = window.location.href;
@@ -739,5 +739,5 @@ function sortTableColumn(selectedOption) {
     if (cell.dataset.cell === selectedOption.toLowerCase()) {
       cell.classList.remove('hidden');
     } else cell.classList.add('hidden');
-  })
+  });
 }
