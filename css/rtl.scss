@@ -382,6 +382,58 @@ h2 .rssicon{
 
 /*Styles specific to mobiles*/
 
+@media screen and (max-width: 1100px) {
+	.helper-content {
+    padding: 55px 0 0;
+	}
+	.helper-accordion[data-number="1"] .helper-header::after {
+		left: auto;
+    right: 0;
+  }
+  .helper-accordion[data-number="2"] .helper-header::after {
+		left: auto;
+    right: 67px;
+  }
+  .helper-accordion[data-number="3"] .helper-header::after {
+		left: auto;
+    right: 134px;
+  }
+  .helper-accordion[data-number="4"] .helper-header::after {
+		left: auto;
+    right: 201px;
+	}
+	.helper-accordion::before {
+		transform: translateX(0);
+	}
+	.helper-accordion[data-number="1"]::before {
+		left: auto;
+    right: 42px;
+  }
+  .helper-accordion[data-number="2"]::before {
+		left: auto;
+    right: 108px;
+  }
+  .helper-accordion[data-number="3"]::before {
+		left: auto;
+    right: 176px;
+  }
+  .helper-accordion[data-number="4"]::before {
+    display: none;
+	}
+	.discover {
+		margin: 50px 0 0;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.helper-platforms-section + .helper-platforms-section {
+		margin: 30px 0 0;
+	}
+	.helper-next-btn {
+		margin: 0 0 15px;
+	}
+}
+
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ){
 	h2{
 		text-align:center;
