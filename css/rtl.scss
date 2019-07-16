@@ -429,6 +429,18 @@ h2 .rssicon{
 	left: auto;
 	right: 22px;
 }
+.os-selector-icon {
+	margin: 0 0 0 10px;
+}
+.os-selector-tab {
+	line-height: 1.6;
+}
+.os-selector-link:first-child {
+	margin: 0 0 0 25px;
+}
+.os-selector {
+	margin: 0 65px 0 0;
+}
 /*Override UbuntuBold by Droid Naskh*/
 
 @font-face{font-family:'DroidNaskh';src:url('/font/droidnaskh/droidnaskh-regular.eot');font-weight:normal;font-style:normal;}

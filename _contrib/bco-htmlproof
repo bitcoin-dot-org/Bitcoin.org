@@ -61,6 +61,5 @@ HTML::Proofer.new(
         ## think 2 is a good setting for Travis CI ("1.5 processors")
         ## and me (usually 2 processors)
         :parallel => { :in_processes => 2 },
-        :validation => { :report_script_embeds => true }
     }
 ).run
