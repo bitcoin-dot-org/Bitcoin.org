@@ -279,6 +279,13 @@
 .wallet-selector-content {
   width: 100%;
 }
+.wallet-selector-title {
+  margin: 0 0 40px;
+  text-align: center;
+  font-size: 22px;
+  color: #13161F;
+  line-height: 36px;
+}
 .wallet-table-head {
   display: table-cell;
 	border: none;
@@ -583,16 +590,18 @@
     border: 1px solid #DADADA;
   }
   .checkboxes-acc-btn {
-    height: 100%;
-    width: 36px;
-    box-sizing: border-box;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 36px;
+    background: none;
+    border: none;
+    box-sizing: border-box;
+    padding: 0;
   }
   .checkboxes-acc.open .checkboxes-acc-btn img {
     transform: rotate(180deg)
@@ -744,5 +753,9 @@
   .sidebar-selector-btn-close {
     top: 19px;
     right: 16px;
+  }
+  .wallet-selector-title {
+    margin-bottom: 15px;
+    font-size: 20px;
   }
 }
