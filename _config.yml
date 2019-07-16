@@ -164,26 +164,6 @@ redirects:
   /sr/developer-glossary: /sr/programeri-recnik
   /sr/developer-guide: /sr/programeri-vodic
   /sr/developer-reference: /sr/programeri-reference
-  ## Helper bitcoin page; remove as each language is updated to include the translated page
-  /ar/helper: /en/helper
-  /bg/helper: /en/helper
-  /da/helper: /en/helper
-  /el/helper: /en/helper
-  /es/helper: /en/helper
-  /fa/helper: /en/helper
-  /fr/helper: /en/helper
-  /hi/helper: /en/helper
-  /hu/helper: /en/helper
-  /ko/helper: /en/helper
-  /nl/helper: /en/helper
-  /pl/helper: /en/helper
-  /ro/helper: /en/helper
-  /ru/helper: /en/helper
-  /sl/helper: /en/helper
-  /sv/helper: /en/helper
-  /tr/helper: /en/helper
-  /uk/helper: /en/helper
-  /zh_TW/helper: /en/helper
   ## Buy bitcoin page; remove as each language is updated to include the translated page
   /ar/buy: /en/buy
   /bg/buy: /en/buy

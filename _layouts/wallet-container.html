@@ -209,96 +209,93 @@ max_wallet_text_length: 418  ## Unicode characters
 </div>
 
 <script>
-  (function() {
-    var tabSelectors = document.querySelectorAll('.os-selector-tab');
-    var linksList = document.querySelectorAll('.wallet-link');
+  var tabSelectors = document.querySelectorAll('.os-selector-tab');
+  var linksList = document.querySelectorAll('.wallet-link');
 
-    function selectRelevantTab(os) {
-      tabSelectors.forEach(function(tab) {
-        if (tab.dataset.tab === os) tab.classList.add('active');
-        else tab.classList.remove('active');
-      });
+  function selectRelevantTab(os) {
+    tabSelectors.forEach(function(tab) {
+      if (tab.dataset.tab === os) tab.classList.add('active');
+      else tab.classList.remove('active');
+    });
 
-      var tabContents = document.querySelectorAll('.os-selector-content');
-      tabContents.forEach(function(content) {
-        if (content.dataset.content === os) content.classList.add('visible');
-        else content.classList.remove('visible');
-      });
+    var tabContents = document.querySelectorAll('.os-selector-content');
+    tabContents.forEach(function(content) {
+      if (content.dataset.content === os) content.classList.add('visible');
+      else content.classList.remove('visible');
+    });
 
-      var walletAccordionButton = document.getElementById('walletAccordionButton');
-      var walletAccordion = document.getElementById('walletAccordion');
-      changeAccordionButtonText(walletAccordionButton, os)
-      walletAccordionButton.dataset.buttonOs = os;
-      walletAccordion.classList.remove('open');
-    }
+    var walletAccordionButton = document.getElementById('walletAccordionButton');
+    var walletAccordion = document.getElementById('walletAccordion');
+    changeAccordionButtonText(walletAccordionButton, os)
+    walletAccordionButton.dataset.buttonOs = os;
+    walletAccordion.classList.remove('open');
+  }
 
-    function displayDefaultTabContent() {
-      var urlPath = window.location.pathname.split('/');
+  function displayDefaultTabContent() {
+    var urlPath = window.location.pathname.split('/');
 
-      for (var i = 0; i < tabSelectors.length; i++) {
-        var tabName = tabSelectors[i].dataset.tab;
-        if (urlPath.includes(tabName)) {
-          selectRelevantTab(tabName);
-          break;
-        }
+    for (var i = 0; i < tabSelectors.length; i++) {
+      var tabName = tabSelectors[i].dataset.tab;
+      if (urlPath.includes(tabName)) {
+        selectRelevantTab(tabName);
+        break;
       }
     }
-    
-    function setListners() {
-      tabSelectors.forEach(function(tab) {
-        tab.addEventListener('click', function() {
-          selectRelevantTab(this.dataset.tab);
-        });
-      })
-
-      linksList.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-          var href = this.getAttribute("href");
-          location.href = href + window.location.search;
-          e.preventDefault()
-        });
+  }
+  
+  function setListners() {
+    tabSelectors.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        selectRelevantTab(this.dataset.tab);
       });
+    })
 
-      var accordionButtons = document.querySelectorAll('.acc-btn');
-      accordionButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-          this.parentNode.classList.toggle('open');
-        });
+    linksList.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var href = this.getAttribute("href");
+        location.href = href + window.location.search;
+        e.preventDefault()
       });
+    });
 
-      var tableSortButtons = document.querySelectorAll('.table-sort-btn');
-      tableSortButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-          sortTableColumn(button.dataset.sort);
-        });
+    var accordionButtons = document.querySelectorAll('.acc-btn');
+    accordionButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        this.parentNode.classList.toggle('open');
       });
+    });
 
-    }
-    
-    function displaySimilarWallets() {
-      var parameters = queryStringToArray();
-      var currentWalletId = document.querySelector('.wallet').dataset.id;
-
-      linksList.forEach(function(link) {
-        var categories = link.dataset.categories.split(' ');
-        var linkId = link.dataset.id;
-
-        if (checkIfFiltersInclude(categories, parameters) && linkId !== currentWalletId) link.classList.add('visible');
-        else link.classList.remove('visible');
+    var tableSortButtons = document.querySelectorAll('.table-sort-btn');
+    tableSortButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        sortTableColumn(button.dataset.sort);
       });
+    });
 
-      var visibleWalletsLinks = document.querySelectorAll('.wallet-link.visible');
-      var walletsTable = document.querySelector('.wallet-selector-section');
-      if (visibleWalletsLinks.length) walletsTable.classList.add('visible');
-    }
-    
-    function init() {
-      displayDefaultTabContent();
-      displaySimilarWallets();
-      sortTableColumn('control')
-      setListners();
-    }
-    init();
-    
-  })();
+  }
+  
+  function displaySimilarWallets() {
+    var parameters = queryStringToArray();
+    var currentWalletId = document.querySelector('.wallet').dataset.id;
+
+    linksList.forEach(function(link) {
+      var categories = link.dataset.categories.split(' ');
+      var linkId = link.dataset.id;
+
+      if (checkIfFiltersInclude(categories, parameters) && linkId !== currentWalletId) link.classList.add('visible');
+      else link.classList.remove('visible');
+    });
+
+    var visibleWalletsLinks = document.querySelectorAll('.wallet-link.visible');
+    var walletsTable = document.querySelector('.wallet-selector-section');
+    if (visibleWalletsLinks.length) walletsTable.classList.add('visible');
+  }
+  
+  function init() {
+    displayDefaultTabContent();
+    displaySimilarWallets();
+    sortTableColumn('control')
+    setListners();
+  }
+  init();  
 </script>

@@ -18,12 +18,6 @@ layout: base
 {% include layout/base/wallets-selector.html %}
 
 <script>
-(function() {
-  var selectedUser;
-  var selectedImportantCheckboxes = [];
-  var selectedImportantCheckboxes = [];
-  var accordionsList = document.querySelectorAll('.js-helper-accordion');
-  var headersList = document.querySelectorAll('.helper-header');
   var linksList = document.querySelectorAll('.wallet-link');  
   var selectorsList = document.querySelectorAll('.js-wallet-selector');
   
@@ -73,6 +67,7 @@ layout: base
   }
   
   function displayRelevantWizardContent(selectedStep) {    
+    var accordionsList = document.querySelectorAll('.js-helper-accordion');
     accordionsList.forEach(function(accordion) {
       var accordionType = accordion.dataset.type;
       var accordionStep = accordion.dataset.number;
@@ -422,7 +417,5 @@ layout: base
     displayRelevantContent();
     setListners();
   }
-
   init();
-})();
 </script>
