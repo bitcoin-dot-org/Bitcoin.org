@@ -375,6 +375,50 @@ h2 .rssicon{
 .discover {
 	margin: 0 30px 0 0;
 }
+.sidebar-selector {
+	margin: 0 0 0 30px;
+}
+.wallet-table-head:first-child .wallet-table-title {
+	text-align: right;
+}
+.sidebar-selector-platform+.sidebar-selector-platform {
+	margin: 0 15px 0 0;
+}
+.checkbox-text {
+	padding: 0 36px 0 0;
+}
+.sidebar-selector-text {
+	text-align: right;
+}
+.wallet-hint-text {
+	margin: 0 8px 0 0;
+}
+.wallet-img {
+	margin: 0 0 0 13px;
+}
+.wallet-table-data:first-child {
+	border-left: none;
+	border-right: 1px solid #DADADA;
+}
+.wallet-table-data:last-child {
+	border-right: none;
+	border-left: 1px solid #DADADA;
+}
+.platform-radio-wrapper+.platform-radio-wrapper {
+	margin: 0 5px 0 0;
+}
+.sidebar-selector-btn-close {
+	right: auto;
+	left: 32px;
+}
+.sidebar-selector-btn-open {
+	text-align: right;
+	padding: 28px 30px 20px 43px;
+}
+.sidebar-selector-btn-open::after {
+	right: auto;
+	left: 30px;
+}
 /*Override UbuntuBold by Droid Naskh*/
 
 @font-face{font-family:'DroidNaskh';src:url('/font/droidnaskh/droidnaskh-regular.eot');font-weight:normal;font-style:normal;}

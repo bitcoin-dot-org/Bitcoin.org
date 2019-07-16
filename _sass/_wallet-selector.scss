@@ -219,10 +219,12 @@
   border-bottom: 1px solid #dadada;
 }
 .sidebar-selector-title {
+  position: relative;
 	margin: 0 0 5px;
 	font-size: 20px;
 	color: #13161F;
-	line-height: 36px;
+  line-height: 36px;
+  z-index: 0;
 }
 .sidebar-selector-text {
   font-size: 16px;
@@ -505,6 +507,7 @@
     right: 32px;
     border: none;
     background: none;
+    z-index: 10;
   }
   .sidebar-selector-btn-close img {
     width: 13px;
