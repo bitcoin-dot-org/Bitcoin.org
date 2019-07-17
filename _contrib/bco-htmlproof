@@ -24,11 +24,6 @@ HTML::Proofer.new(
 
         ## Check whether HTML is well-formed
         :check_html => true,
-
-        :validation => {
-          :report_script_embeds => true,
-          :report_missing_names => true,
-        },
         
         ## Links to ignore
         :href_ignore => [
