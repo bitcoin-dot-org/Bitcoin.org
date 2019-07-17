@@ -26,7 +26,7 @@ HTML::Proofer.new(
         :check_html => true,
 
         :validation => {
-          :report_script_embeds => false,
+          :report_script_embeds => true,
           :report_missing_names => false,
         },
         
