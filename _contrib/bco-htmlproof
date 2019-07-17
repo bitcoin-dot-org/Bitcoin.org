@@ -27,7 +27,7 @@ HTML::Proofer.new(
 
         :validation => {
           :report_script_embeds => true,
-          :report_missing_names => false,
+          :report_missing_names => true,
         },
         
         ## Links to ignore
