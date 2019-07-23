@@ -287,7 +287,7 @@ Private keys are what are used to unlock satoshis from a particular address. In 
 
 {% autocrossref %}
 
-In order to make copying of private keys less prone to error, [Wallet Import Format][/en/glossary/wallet-import-format]{:#term-wallet-import-format}{:.term} may be utilized. WIF uses base58Check encoding on an private key, greatly decreasing the chance of copying error, much like standard Bitcoin addresses.
+In order to make copying of private keys less prone to error, [Wallet Import Format][/en/glossary/wallet-import-format]{:#term-wallet-import-format}{:.term} may be utilized. WIF uses base58Check encoding on a private key, greatly decreasing the chance of copying error, much like standard Bitcoin addresses.
 
 1. Take a private key.
 
