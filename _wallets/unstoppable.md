@@ -11,7 +11,7 @@ platform:
   - mobile:
     name: mobile
     default: &DEFAULT
-      text: "unstoppablewallet"
+      text: "walletunstoppable"
       link: "https://unstoppable.money"
       source: "https://github.com/horizontalsystems"
       screenshot: "unstoppable.png"
