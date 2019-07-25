@@ -61,6 +61,7 @@ pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignme
     check-for-consistent-bitcoin-core-titles \
     check-for-too-many-wallets-on-one-platform \
     check-validate-yaml \
+    check-wallet-description-length \
 
 ## Post-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
 post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
@@ -305,3 +306,7 @@ check-for-too-many-wallets-on-one-platform:
 check-validate-yaml:
 ## Validate YAML files against schemas
 	$S ! find _wallets -type f -exec bundle exec _contrib/schema-validator.rb quality-assurance/schemas/wallets.yaml {} \; | grep .
+
+check-wallet-description-length:
+## Ensure wallet descriptions are 320 characters or less
+	$S sed -n '/^  choose-your-wallet:/,/^  [-a-z]\+:/{/wallet.*:.\{320\}/p} ' _translations/en.yml | eval $(ERROR_ON_OUTPUT)
