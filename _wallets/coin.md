@@ -2,9 +2,9 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-id: coinspace
-title: "Coin.Space"
-titleshort: "Coin.Space"
+id: coin
+title: "Coin Wallet"
+titleshort: "Coin"
 compat: "mobile web android ios"
 level: 3
 platform:
@@ -12,10 +12,10 @@ platform:
     name: mobile
     os:
       - name: android
-        text: "walletcoinspace"
+        text: "walletcoin"
         link: "https://play.google.com/store/apps/details?id=com.coinspace.app"
         source: "https://github.com/CoinSpace/CoinSpace"
-        screenshot: "coinspacemobile.png?1528322191"
+        screenshot: "coinmobile.png?1528322191"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
@@ -28,10 +28,10 @@ platform:
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: ios
-        text: "walletcoinspace"
+        text: "walletcoin"
         link: "https://itunes.apple.com/us/app/coinspace-bitcoin-wallet/id980719434?mt=8"
         source: "https://github.com/CoinSpace/CoinSpace"
-        screenshot: "coinspacemobile.png?1528322191"
+        screenshot: "coinmobile.png?1528322191"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
@@ -47,10 +47,10 @@ platform:
     name: web
     os:
       - name: web
-        text: "walletcoinspace"
+        text: "walletcoin"
         link: "https://coin.space"
         source: "https://github.com/CoinSpace/CoinSpace"
-        screenshot: "coinspaceweb.png?1528322191"
+        screenshot: "coinweb.png?1528322191"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
