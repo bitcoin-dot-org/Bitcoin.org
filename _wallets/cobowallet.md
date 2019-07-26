@@ -4,7 +4,7 @@
 
 id: Cobo
 title: "Cobo Wallet"
-titleshort: "Cobo Wallet"
+titleshort: "Cobo"
 compat: "mobile android ios"
 level: 3
 platform:
@@ -12,7 +12,7 @@ platform:
     name: mobile
     os:
       - name: android
-        text: "Cobo Wallet"
+        text: "walletcobo"
         link: "https://play.google.com/store/apps/details?id=cobo.wallet"
         source: "https://github.com/cobowallet"
         screenshot: "##"
@@ -28,7 +28,7 @@ platform:
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: ios
-        text: "Cobo Wallet"
+        text: "walletcobo"
         link: "https://itunes.apple.com/us/app/cobo-cryptocurrency-wallet/id1406282615"
         source: "https://github.com/cobowallet"
         screenshot: "##"
@@ -47,7 +47,7 @@ platform:
     name: web
     os:
       - name: web
-        text: "Cobo Wallet"
+        text: "walletcobo"
         link: "https://cobo.com/"
         source: "https://github.com/cobowallet"
         screenshot: "##"
