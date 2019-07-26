@@ -67,12 +67,17 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   top: 14px;
   left: 0;
 }
-.wallet-os-check-item.checkgood::before,
-.wallet-os-check-item.checkpass::before {
+.wallet-os-check-item.checkgood::before {
   width: 13px;
 	height: 13px;
 	border-radius: 50%;
-	background: #7EBF1E;
+	background: #286b1d;
+}
+.wallet-os-check-item.checkpass::before {
+  width: 13px;
+	height: 13px;
+  border-radius: 13px 0 0 0;
+	background: #6dca5c;
 }
 .wallet-os-check-item.checkfail::before {
   width: 0; 
