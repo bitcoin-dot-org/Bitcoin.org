@@ -92,7 +92,11 @@ with `optipng -o7 file.png`. The icon must fit within 96 X 96 px inside the png,
 or 85 X 85 px for square icons.
 
 **Description**: The text must go in `_translations/en.yml` alongside other
-wallets' descriptions.
+wallets' descriptions.  The description must be less than 320 characters and
+be consistent in style with the other descriptions.  Do not use superlatives
+or exclusive phrases.  For example, you might want to comment on ease of use.
+Don't write  "This wallet is the easiest to use" or "This wallet is extremely
+easy to use"; write "This wallet is easy to use."
 
 **Level**: Each wallet must have a level property assigned. A value must be in a range
 between 1 and 4. Level represents a category of a wallet:
