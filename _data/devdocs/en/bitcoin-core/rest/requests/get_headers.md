@@ -56,7 +56,7 @@ GET /headers/<count>/<hash>.<format>
   t: "array"
   p: "Required<br>(exactly 1)"
   d: "An array containing the requested block headers"
-  
+
 - n: "→<br>Block Header"
   t: "object"
   p: "Required<br>(1 or more)"
@@ -81,7 +81,7 @@ GET /headers/<count>/<hash>.<format>
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "This block's version number.  See [block version numbers][section block versions]"
-  
+
 - n: "→→<br>`versionHex`"
   t: "string (hex)"
   p: "Required<br>(exactly 1)"
@@ -96,7 +96,7 @@ GET /headers/<count>/<hash>.<format>
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "The value of the *time* field in the block header, indicating approximately when the block was created"
-  
+
 - n: "→→<br>`mediantime`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
@@ -202,6 +202,7 @@ Result (whitespaced added):
 * [GET Block/NoTxDetails][rest get block-notxdetails] {{summary_restGetBlock-noTxDetails}}
 * [GetBlock][rpc getblock] RPC: {{summary_getBlock}}
 * [GetBlockHash][rpc getblockhash] RPC: {{summary_getBlockHash}}
+* [GET BlockHashByHeight][rest get blockhashbyheight]: {{summary_restGetBlockHashByHeight}}
 * [GetBlockHeader][rpc getblockheader] RPC: {{summary_getBlockHeader}}
 
 {% endautocrossref %}
