@@ -15,7 +15,7 @@ platform:
         text: "walletcobo"
         link: "https://play.google.com/store/apps/details?id=cobo.wallet"
         source: "https://github.com/cobowallet"
-        screenshot: "##"
+        screenshot: "cobowallet.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
@@ -31,7 +31,7 @@ platform:
         text: "walletcobo"
         link: "https://itunes.apple.com/us/app/cobo-cryptocurrency-wallet/id1406282615"
         source: "https://github.com/cobowallet"
-        screenshot: "##"
+        screenshot: "cobowallet.png"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
@@ -43,23 +43,5 @@ platform:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkfailprivacynetworknosupporttor"
-  - web:
-    name: web
-    os:
-      - name: web
-        text: "walletcobo"
-        link: "https://cobo.com/"
-        source: "https://github.com/cobowallet"
-        screenshot: "##"
-        check:
-          control: "checkgoodcontrolfull"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencyremote"
-          environment: "checkfailenvironmentdesktop"
-          privacy: "checkpassprivacybasic"
-          fees: "checkpassfeecontroldynamic"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+ 
 ---
