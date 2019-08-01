@@ -428,7 +428,7 @@ http://opensource.org/licenses/MIT.
                     data-categories="{% if wallet.user %}{{wallet.user}}{% endif %} experienced {% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' %}{{checkName}} {% endif %}{% endfor %}{{os.name}} {{os.features}}"
                   >
                     <div class="wallet-table-data">
-                      <img class="wallet-img" src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" />
+                      <img class="wallet-img" src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" />
                       <span class="wallet-label">{{wallet.titleshort}}</span>
                     </div>
                     {% for check in os.check %}

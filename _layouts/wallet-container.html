@@ -8,7 +8,7 @@ max_wallet_text_length: 418  ## Unicode characters
 <div class="wallet" data-id="{{page.wallet.id}}">
   <div class="hero">
     <div class="container wallet-logo-container hero-container">
-      <img class="wallet-logo" src="/img/wallet/{{ page.wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ page.wallet.title }}" />
+      <img class="wallet-logo" src="/img/wallet/{{ page.wallet.id }}.png" alt="{{ page.wallet.title }}" />
       <h1 class="wallet-title">
         {{ page.wallet.title }}
       </h1>
@@ -164,7 +164,7 @@ max_wallet_text_length: 418  ## Unicode characters
                   data-id="{{wallet.id}}"
                 >
                   <div class="wallet-table-data">
-                    <img class="wallet-img" src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" />
+                    <img class="wallet-img" src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" />
                     <span class="wallet-label">{{wallet.titleshort}}</span>
                   </div>
                   {% for check in os.check %}
