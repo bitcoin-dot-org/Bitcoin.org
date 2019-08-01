@@ -11,6 +11,7 @@ http://opensource.org/licenses/MIT.
 
 * [GET Block][rest get block] {{summary_restGetBlock}} {{UPDATED0_13_0}}
 * [GET Block/NoTxDetails][rest get block-notxdetails] {{summary_restGetBlock-noTxDetails}} {{UPDATED0_13_0}}
+* [GET BlockHashByHeight][rest get blockhashbyheight] {{summary_restGetBlockHashByHeight}} {{NEW0_18_0}}
 * [GET ChainInfo][rest get chaininfo] {{summary_restGetChainInfo}} {{NEW0_11_0}}, {{UPDATED0_12_0}}
 * [GET GetUtxos][rest get getutxos] {{summary_restGetGetUtxos}} {{NEW0_11_0}}
 * [GET Headers][rest get headers] {{summary_restGetHeaders}} {{NEW0_11_0}}, {{UPDATED0_13_0}}

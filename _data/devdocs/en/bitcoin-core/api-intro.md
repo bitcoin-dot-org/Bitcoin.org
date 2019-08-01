@@ -378,6 +378,8 @@ untrusted source.
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rest/requests/get_block-notxdetails.md _data/devdocs/en/bitcoin-core/rest/requests/get_block-notxdetails.md %}
 
+{% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rest/requests/get_blockhashbyheight.md _data/devdocs/en/bitcoin-core/rest/requests/get_blockhashbyheight.md %}
+
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rest/requests/get_chaininfo.md _data/devdocs/en/bitcoin-core/rest/requests/get_chaininfo.md %}
 
 {% include_absolute _data/devdocs/{{page.lang}}/bitcoin-core/rest/requests/get_getutxos.md _data/devdocs/en/bitcoin-core/rest/requests/get_getutxos.md %}

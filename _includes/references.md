@@ -204,6 +204,7 @@ http://opensource.org/licenses/MIT.
 {% comment %}<!-- REST requests; alphabetical order -->{% endcomment %}
 [rest get block]: /en/developer-reference#get-block
 [rest get block-notxdetails]: /en/developer-reference#get-blocknotxdetails
+[rest get blockhashbyheight]: /en/developer-reference#get-blockhashbyheight
 [rest get chaininfo]: /en/developer-reference#get-chaininfo
 [rest get getutxos]: /en/developer-reference#get-getutxos
 [rest get headers]: /en/developer-reference#get-headers

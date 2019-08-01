@@ -60,8 +60,8 @@ GET /block/notxdetails/<hash>.<format>
 - n: "→<br>`strippedsize`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.13.0*<br><br>The size of this block in serialized block format excluding witness data, counted in bytes"  
-  
+  d: "*Added in Bitcoin Core 0.13.0*<br><br>The size of this block in serialized block format excluding witness data, counted in bytes"
+
 - n: "→<br>`size`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
@@ -71,7 +71,7 @@ GET /block/notxdetails/<hash>.<format>
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "The height of this block on its block chain"
-  
+
 - n: "→<br>`weight`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
@@ -81,7 +81,7 @@ GET /block/notxdetails/<hash>.<format>
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "This block's version number.  See [block version numbers][section block versions]"
-  
+
 - n: "→<br>`versionHex`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
@@ -110,8 +110,8 @@ GET /block/notxdetails/<hash>.<format>
 - n: "→<br>`mediantime`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "*Added in Bitcoin Core 0.12.0*<br><br>The median time of the 11 blocks before the most recent block on the blockchain.  Used for validating transaction locktime under BIP113"  
-  
+  d: "*Added in Bitcoin Core 0.12.0*<br><br>The median time of the 11 blocks before the most recent block on the blockchain.  Used for validating transaction locktime under BIP113"
+
 - n: "→<br>`nonce`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
@@ -203,6 +203,7 @@ Result (whitespaced added):
 * [GET Block][rest get block]: {{summary_restGetBlock}}
 * [GetBlock][rpc getblock] RPC: {{summary_getBlock}}
 * [GetBlockHash][rpc getblockhash] RPC: {{summary_getBlockHash}}
+* [GET BlockHashByHeight][rest get blockhashbyheight]: {{summary_restGetBlockHashByHeight}}
 * [GetBestBlockHash][rpc getbestblockhash] RPC: {{summary_getBestBlockHash}}
 
 {% endautocrossref %}
