@@ -14,7 +14,7 @@ platform:
       text: "walletmsigna"
       link: "https://ciphrex.com/redirect/?referer=bitcoin.org"
       source: "https://ciphrex.com/redirect/?url=https://github.com/ciphrex/CoinVault?referer=bitcoin.org"
-      screenshot: "msigna.png?1528322191"
+      screenshot: "msigna.png"
       features: "full_node legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"

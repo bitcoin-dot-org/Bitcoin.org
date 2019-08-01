@@ -14,7 +14,7 @@ platform:
       text: "walletgreenaddress"
       link: "https://github.com/greenaddress/WalletElectron/releases"
       source: "https://github.com/greenaddress/WalletElectron"
-      screenshot: "greenaddressdesktop.png?1528322191"
+      screenshot: "greenaddressdesktop.png"
       features: "2fa bech32 legacy_addresses multisig segwit"
       check:
         control: "checkpasscontrolmulti"

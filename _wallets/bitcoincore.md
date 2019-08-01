@@ -14,7 +14,7 @@ platform:
       text: "walletbitcoincore"
       link: "bitcoincore"
       source: "https://github.com/bitcoin/bitcoin"
-      screenshot: "bitcoincore.png?1528322191"
+      screenshot: "bitcoincore.png"
       features: "bech32 full_node legacy_addresses segwit"
       check:
         control: "checkgoodcontrolfull"

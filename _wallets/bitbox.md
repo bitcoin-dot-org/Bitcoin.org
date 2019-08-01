@@ -15,7 +15,7 @@ platform:
         text: "walletbitbox"
         link: "https://shiftcrypto.ch/"
         source: "https://github.com/digitalbitbox/"
-        screenshot: "bitbox.png?1528322191"
+        screenshot: "bitbox.png"
         features: "bech32 hardware_wallet legacy_addresses multisig segwit"
         check:
           control: "checkgoodcontrolfull"

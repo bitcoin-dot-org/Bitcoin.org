@@ -15,7 +15,7 @@ platform:
         text: "walletkeepkey"
         link: "https://www.keepkey.com/"
         source: "https://github.com/keepkey/"
-        screenshot: "keepkey.png?1528322191"
+        screenshot: "keepkey.png"
         features: "bech32 hardware_wallet legacy_addresses multisig segwit"
         check:
           control: "checkgoodcontrolfull"

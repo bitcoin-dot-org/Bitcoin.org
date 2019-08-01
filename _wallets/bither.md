@@ -15,7 +15,7 @@ platform:
         text: "walletbither"
         link: "https://itunes.apple.com/us/app/bither/id899478936"
         source: "https://github.com/bither/bither-ios"
-        screenshot: "bithermobile.png?1528322191"
+        screenshot: "bithermobile.png"
         features: "legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
@@ -32,7 +32,7 @@ platform:
         text: "walletbither"
         link: "https://play.google.com/store/apps/details?id=net.bither"
         source: "https://github.com/bither/bither-android"
-        screenshot: "bithermobile.png?1528322191"
+        screenshot: "bithermobile.png"
         features: "legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
@@ -51,7 +51,7 @@ platform:
       text: "walletbither"
       link: "https://bither.net"
       source: "https://github.com/bither/bither-desktop-java"
-      screenshot: "bitherdesktop.png?1528322191"
+      screenshot: "bitherdesktop.png"
       features: "legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"

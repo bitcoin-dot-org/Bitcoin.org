@@ -15,7 +15,7 @@ platform:
       text: "walletelectrum"
       link: "https://electrum.org"
       source: "https://github.com/spesmilo/electrum"
-      screenshot: "electrum.png?1528322191"
+      screenshot: "electrum.png"
       features: "2fa bech32 hardware_wallet legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"
@@ -42,7 +42,7 @@ platform:
         text: "walletelectrum"
         link: "https://play.google.com/store/apps/details?id=org.electrum.electrum"
         source: "https://github.com/spesmilo/electrum"
-        screenshot: "electrumandroid.png?1528322191"
+        screenshot: "electrumandroid.png"
         features: "bech32 legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
