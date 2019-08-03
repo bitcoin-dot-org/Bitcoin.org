@@ -710,7 +710,7 @@ The structure of a `sendcmpct` message is defined below.
 
 | Bytes    | Name         | Data Type        | Description
 |----------|--------------|------------------|----------------
-| 1        | announce     | block_header     | An integer representing a boolean value, must be 1 or 0 (1 is true, 0 is false).
+| 1        | announce     | bool             | An integer representing a boolean value, must be 0x01 (true) or 0x00 (false).
 | 8        | version      | uint64_t         | A little-endian representation of a version number. **Version 2 compact blocks should be specified by setting version to 2**
 
 {% endautocrossref %}
