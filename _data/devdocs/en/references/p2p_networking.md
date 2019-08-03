@@ -64,7 +64,7 @@ with the most recent versions listed first. (If you know of a protocol
 version that implemented a major change but which is not listed here,
 please [open an issue][docs issue].)
 
-As of Bitcoin Core 0.14.2, the most recent protocol version is 70015.
+As of Bitcoin Core 0.18.0, the most recent protocol version is 70015.
 
 | Version | Initial Release                    | Major Changes
 |---------|------------------------------------|--------------
