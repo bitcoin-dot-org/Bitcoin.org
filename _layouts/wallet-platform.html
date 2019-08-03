@@ -17,4 +17,10 @@ layout: base
 {% include layout/base/helper-wizard.html %}
 {% include layout/base/wallets-selector.html %}
 
+<noscript>
+  {% include layout/base/wallets-menu.html %}
+  {% include layout/base/wallets-menu-mobile.html %}
+  {% include layout/base/wallets-list.html %}
+</noscript>
+
 <script type="text/javascript" src="/js/walletSelector.js"></script>

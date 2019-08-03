@@ -1,0 +1,73 @@
+{% comment %}
+
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+{% if page.id contains 'desktop' or  page.id contains 'mobile'%}
+   {% assign walletMargin = "55px" %}
+{% else %}
+   {% assign walletMargin = "" %}
+{% endif %}
+<div class="walletmenu" id="walletmenu" style="margin-bottom: {{walletMargin}}">
+{% assign platformsByPlatform = site.platforms | group_by: "platform" %}
+  <ul class="walletmenu-list">
+     {% if page.id == "choose-your-wallet" %}
+       {% assign statusClass = "active" %}
+     {% endif %}
+    <li class="walletmenu-list-item">
+      <a class="walletmenu-platform-link allwallets-link {{statusClass}}" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">All Wallets</a>
+    </li>
+  {% for platform in platformsByPlatform %}
+
+    {% comment %}
+      ! WORKAROUND START
+      Working around an issue with getting proper platform name from the list
+      of platforms. After original group_by, the "name" key becomes a stringified
+      hash. So we need to make these "hackish" transformations to make it working
+      properly.
+    {% endcomment %}
+    {% capture platformName %}{{ platform.name | split: "=>" | last | split: '"' }}{% endcapture %}
+    {% assign platformName = platformName | trim | replace: '}' '' | replace: ' ' '' %}
+    {% comment %}
+      ! WORKAROUND END
+    {% endcomment %}
+
+    {% assign platformClass = "wallet-" | append: platformName %}
+    {% assign ulClass = "" %}
+    {% if page.id contains platformName and platformName != 'web' and platformName != 'hardware' %}
+      {% assign platformClass = platformClass | append: " active" %}
+      {% assign ulClass = " active" %}
+    {% elsif page.id contains platformName %}
+      {% assign platformClass = platformClass | append: " active" %}
+    {% endif %}
+    <li class="walletmenu-list-item">
+      {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" %}
+      {% if platformName == 'hardware' or platformName == 'web' %}
+        <a class="walletmenu-platform-link {{ platformClass }}" href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
+      {% else %}
+        <a class="walletmenu-platform-link {{ platformClass }}" href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
+      {% endif %}
+      {% if platform.items.size > 1 %}
+      <div class="walletmenu-accordion">
+        <ul class="walletmenu-sublist {{ulClass}}">
+          {% for item in platform.items %}
+            {% assign osClass = "wallet-" | append: item.os.name %}
+            {% if page.id contains item.id %}
+              {% assign osClass = osClass | append: " active" %}
+            {% endif %}
+            {% if item.os.name != 'desktop' and item.os.name != 'mobile' %}
+              <li class="walletmenu-sublist-item">
+                <a class="walletmenu-sublist-link {{ osClass }}"  href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
+                  {% translate platform{{item.os.name}} choose-your-wallet %}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>

@@ -1558,9 +1558,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     font-weight:normal;
     border-bottom: 3px double #ddd;
 }
-.accordion-content {
-    display: none;
-}
 .anchorAf{
     position:relative;
 }
@@ -5049,6 +5046,7 @@ br.big {
     }
 }
 
+@import 'wallet-menu-noscript';
 @import 'wallets';
 @import 'wallet-selector';
 @import 'helper';
