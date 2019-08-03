@@ -1319,6 +1319,8 @@ only the message header differs.
 
 *Added in protocol version 70002 as described by BIP61.*
 
+*Deprecated in Bitcoin Core 0.18.0.*
+
 The `reject` message informs the receiving node that one of its previous
 messages has been rejected.
 
