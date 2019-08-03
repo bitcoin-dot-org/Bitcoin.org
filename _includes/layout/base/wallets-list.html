@@ -47,6 +47,7 @@ http://opensource.org/licenses/MIT.
                     <p class="wallet-ico-tooltip">{{os.name}}</p>
                   </a>
                   {% else %}
+                  
                   <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}>
                     <span class="wallet-os-ico {{os.name}}-ico"></span>
                     <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
@@ -59,59 +60,56 @@ http://opensource.org/licenses/MIT.
             </div>
           </div>
         {% endfor %}
-      {% else %}
 
-        <!-- All wallets -->
-        {% for wallet in site.wallets %} 
-        {% if page.id contains wallet.id %}
-          {% continue %}
-        {% endif %}
-        {% assign platformList = "" %} 
-        {% for platform in wallet.platform %} 
-        {% capture platformList %}{{platformList}}{{platform.name}} {% endcapture %} 
-        {% endfor %}
-        <div class="wallet-list-item allwallets-list-item is-hidden" data-platforms="{{platformList}}" data-category="all-wallets" data-walletlevel="{{ wallet.level }}">
-          <div class="wallet-list-item-link">
-            <img src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
-          </div>
-          <p class="wallet-hint">Select an Operating System</p>
-          <div class="wallet-list-os">
-            {% for platform in wallet.platform %} {% for os in platform.os%} {% if platform.name == os.name %}
-            <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}">
-              <span class="wallet-os-ico {{os.name}}-ico"></span>
-              <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
-              <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
-              <p class="wallet-ico-tooltip">{{os.name}}</p>
-            </a>
-            {% else %}
-            <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform="{{platform.name}}">
-              <span class="wallet-os-ico {{os.name}}-ico"></span>
-              <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
-              <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
-              <p class="wallet-ico-tooltip">{{os.name}}</p>
-            </a>
-            {% endif %} {% endfor %} {% endfor %}
-          </div>
-        </div>
-        {% endfor %}
+      
+      
+      {% else %}
         
         <!-- Particular Wallets -->
         {% for wallet in site.wallets %} 
         {% if page.id contains wallet.id %}
           {% continue %}
         {% endif %}
-        {% assign platform = page.platform['name'] %} 
-        {% assign os = page.os['name'] %} 
-        {% if wallet.compat contains platform and wallet.compat contains os %}
-        <div class="wallet-list-item" data-category="{{os}}" data-walletlevel="{{ wallet.level }}">
-          {% if platform == os %}
-          <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platform }}/{{ wallet.id }}/">
-            {% else %}
-            <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platform }}/{{ os }}/{{ wallet.id }}/">
-              {% endif %}
+        {% assign platformName = page.platform['name'] %} 
+        {% assign osName = page.os['name'] %} 
+        {% if wallet.compat contains platformName and wallet.compat contains osName %}
+
+        {% if osName == 'desktop' or osName == 'mobile' %}
+
+          <div class="wallet-list-item allwallets-list-item">
+            <div class="wallet-list-item-link">
               <img src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
-            </a>
+            </div>
+            <p class="wallet-hint">Select an Operating System</p>
+            <div class="wallet-list-os">
+              {% for platform in wallet.platform %}
+                {% for os in platform.os%}
+                  {% if platform.name == osName %}
+                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}>
+                    <span class="wallet-os-ico {{os.name}}-ico"></span>
+                    <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
+                    <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
+                    <p class="wallet-ico-tooltip">{{os.name}}</p>
+                  </a>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            </div>
+          </div>
+          
+        {% else %}
+        <div class="wallet-list-item">
+          {% if platformName == osName %}
+          <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platformName }}/{{ wallet.id }}/">
+          {% else %}
+          <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platformName }}/{{ osName }}/{{ wallet.id }}/">
+          {% endif %}
+            <img src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
+          </a>
         </div>
+        {% endif %} 
+
+        
         {% endif %} 
         {% endfor %}  
       {% endif %}
