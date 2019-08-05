@@ -13,7 +13,7 @@ platform:
     default: &DEFAULT
       text: "walletmsigna"
       link: "https://ciphrex.com/"
-      source: "https://ciphrex.com/redirect/?url=https://github.com/ciphrex/CoinVault?referer=bitcoin.org"
+      source: "https://github.com/ciphrex/CoinVault"
       screenshot: "msigna.png"
       features: "full_node legacy_addresses multisig segwit"
       check:
