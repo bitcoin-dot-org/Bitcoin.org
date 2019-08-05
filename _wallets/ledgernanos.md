@@ -14,7 +14,7 @@ platform:
       - name: hardware
         text: "walletledgernanos"
         link: "https://www.ledgerwallet.com/"
-        source: "https://github.com/LedgerHQ/"
+        source: "https://github.com/LedgerHQ/nanos-nonsecure-firmware-releases"
         screenshot: "ledgernanos.png"
         features: "bech32 hardware_wallet legacy_addresses multisig segwit"
         check:
