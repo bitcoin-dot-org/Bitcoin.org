@@ -14,7 +14,7 @@ platform:
       - name: hardware
         text: "walletcoldcard"
         link: "https://coldcardwallet.com/"
-        source: "https://github.com/coldcard/"
+        source: "https://github.com/Coldcard/firmware"
         screenshot: "coldcard.png"
         features: "bech32 hardware_wallet legacy_addresses multisig segwit"
         check:
