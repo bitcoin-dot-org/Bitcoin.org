@@ -178,36 +178,6 @@ The following wallets can securely connect to a trusted peer.
 <div markdown="block" class="wallet_accordion">
 {% comment %}<!-- Put wallets in alphabetical order -->{% endcomment %}
 
-### GreenBits
-
-<div markdown="block">
-![GreenBits screenshot](/img/screenshots/greenbits.png?{{site.time | date: '%s'}})
-
-GreenBits is a fast and easy to use wallet. Enjoy improved security with
-a minimal/zero trust approach, optional hardware wallets support,
-multisignature based 2FA and spending limits functionality.
-
-**Requires you setup a [Tor .onion address][bcc tor hs].**
-
-1. Open the GreenBits app
-
-2. Go to the configuration screen
-
-3. Choose to *Enable SPV* (default) and tap *Only connect to a
-   trusted peer*.
-
-4. Enter your .onion address in the *trusted peer* field.
-
-5. Restart the app.
-
-Note that GreenAddress will still be able to see your payments; however,
-you'll have enhanced security as well as privacy from random peers on
-the Bitcoin network.
-
-{:.right-hanger}
-[Get GreenBits](https://play.google.com/store/apps/details?id=com.greenaddress.greenbits_android_wallet)
-</div>
-
 ### mSigna
 
 <div markdown="block">
