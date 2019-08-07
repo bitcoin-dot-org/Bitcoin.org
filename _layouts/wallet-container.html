@@ -285,10 +285,22 @@ max_wallet_text_length: 418  ## Unicode characters
 
   }
   
+  function checkIfPlatformSelected(filters) {
+    var platforms = document.querySelectorAll('[data-tab]');
+    var isPlatformSelected = false;
+
+    platforms.forEach(function(platform) {
+      if(filters.includes(platform.dataset.tab)) isPlatformSelected = true;
+    });
+
+    return isPlatformSelected;
+  }
+  
   function displaySimilarWallets() {
     var parameters = queryStringToArray();
-    var currentWalletId = document.querySelector('.wallet').dataset.id;
+    if (!checkIfPlatformSelected(parameters)) return;
 
+    var currentWalletId = document.querySelector('.wallet').dataset.id;    
     linksList.forEach(function(link) {
       var categories = link.dataset.categories.split(' ');
       var linkId = link.dataset.id;
@@ -305,7 +317,7 @@ max_wallet_text_length: 418  ## Unicode characters
   function init() {
     displayDefaultTabContent();
     displaySimilarWallets();
-    sortTableColumn('control')
+    sortTableColumn('control');
     setListners();
   }
   init();  
