@@ -16,7 +16,7 @@ http://opensource.org/licenses/MIT.
        {% assign statusClass = "active" %}
      {% endif %}
     <li class="walletmenu-list-item">
-      <a class="walletmenu-platform-link allwallets-link {{statusClass}}" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">All Wallets</a>
+      <a class="walletmenu-platform-link allwallets-link {{statusClass}}" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate wallet-all choose-your-wallet %}</a>
     </li>
   {% for platform in platformsByPlatform %}
 

@@ -247,6 +247,7 @@ en:
     wizard-feature-multisig-description: "Some wallets have the ability to require more than one key to authorize a transaction. This can be used to divide responsibility and control over multiple parties."
     wizard-feature-segwit: "SegWit"
     wizard-feature-segwit-description: "Some wallets support SegWit, which uses block chain space more efficiently. This helps reduce fees paid by helping the Bitcoin network scale and sets the foundation for second layer solutions such as the Lightning Network."
+    wallet-all: "All Wallets"
     wallet-select: "Select Wallet"
     wallet-select-type: "Select Wallet Type"
     wallet-select-operating-system: "Select an Operating System"
