@@ -292,6 +292,7 @@ http://opensource.org/licenses/MIT.
 [Bitcoin Core 0.14.0]: /en/release/v0.14.0
 [Bitcoin Core 0.14.1]: /en/release/v0.14.1
 [Bitcoin Core 0.14.2]: /en/release/v0.14.2
+[Bitcoin Core 0.18.0]: /en/release/v0.18.0
 [bitcoin URI subsection]: /en/payment-processing-guide#bitcoin-uri
 [bitcoind initial setup]: /en/developer-examples
 [bitcoinpdf]: https://bitcoin.org/en/bitcoin-paper
@@ -358,6 +359,7 @@ http://opensource.org/licenses/MIT.
 [BIP37]: https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki
 [BIP39]: https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
 [BIP50]: https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki
+[BIP60]: https://github.com/bitcoin/bips/blob/master/bip-0060.mediawiki
 [BIP61]: https://github.com/bitcoin/bips/blob/master/bip-0061.mediawiki
 [BIP62]: https://github.com/bitcoin/bips/blob/master/bip-0062.mediawiki
 [BIP64]: https://github.com/bitcoin/bips/blob/master/bip-0064.mediawiki

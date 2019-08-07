@@ -64,7 +64,7 @@ with the most recent versions listed first. (If you know of a protocol
 version that implemented a major change but which is not listed here,
 please [open an issue][docs issue].)
 
-As of Bitcoin Core 0.14.2, the most recent protocol version is 70015.
+As of Bitcoin Core 0.18.0, the most recent protocol version is 70015.
 
 | Version | Initial Release                    | Major Changes
 |---------|------------------------------------|--------------
@@ -589,42 +589,42 @@ template near the beginning of this subsection.
 **Version 1 compact blocks are pre-segwit (txids)**
 **Version 2 compact blocks are post-segwit (wtxids)**
 
-The `cmpctblock` message is a reply to a `getdata` message which 
-requested a block using the inventory type `MSG_CMPCT_BLOCK`. If the 
+The `cmpctblock` message is a reply to a `getdata` message which
+requested a block using the inventory type `MSG_CMPCT_BLOCK`. If the
 requested block was recently announced and is close to the tip of the
-best chain of the receiver and after having sent the requesting peer 
-a `sendcmpct` message, nodes respond with a `cmpctblock` message containing 
-data for the block. 
+best chain of the receiver and after having sent the requesting peer
+a `sendcmpct` message, nodes respond with a `cmpctblock` message containing
+data for the block.
 
 **If the requested block is too old, the node responds with a *full non-compact block***
 
-Upon receipt of a `cmpctblock` message, after sending a `sendcmpct` message, 
-nodes should calculate the short transaction ID for each unconfirmed 
-transaction they have available (ie in their mempool) and compare each 
-to each short transaction ID in the `cmpctblock` message. After finding 
-already-available transactions, nodes which do not have all transactions 
-available to reconstruct the full block should request the missing transactions 
+Upon receipt of a `cmpctblock` message, after sending a `sendcmpct` message,
+nodes should calculate the short transaction ID for each unconfirmed
+transaction they have available (ie in their mempool) and compare each
+to each short transaction ID in the `cmpctblock` message. After finding
+already-available transactions, nodes which do not have all transactions
+available to reconstruct the full block should request the missing transactions
 using a `getblocktxn` message.
 
-A node must not send a `cmpctblock` message unless they are able to respond to 
-a `getblocktxn` message which requests every transaction in the block. A node 
-must not send a `cmpctblock` message without having validated that the header properly 
-commits to each transaction in the block, and properly builds on top of the existing, 
-fully-validated chain with a valid proof-of-work either as a part of the current most-work 
-valid chain, or building directly on top of it. A node may send a `cmpctblock` message before 
+A node must not send a `cmpctblock` message unless they are able to respond to
+a `getblocktxn` message which requests every transaction in the block. A node
+must not send a `cmpctblock` message without having validated that the header properly
+commits to each transaction in the block, and properly builds on top of the existing,
+fully-validated chain with a valid proof-of-work either as a part of the current most-work
+valid chain, or building directly on top of it. A node may send a `cmpctblock` message before
 validating that each transaction in the block validly spends existing UTXO set entries.
 
 The `cmpctblock` message contains a vector of `PrefilledTransaction` whose structure is defined below.
 
 | Bytes    | Name                 | Data Type        | Description
 |----------|----------------------|------------------|----------------
-| *Varies* | index                | compactSize uint | The index into the block at which this transaction is located. 
+| *Varies* | index                | compactSize uint | The index into the block at which this transaction is located.
 | *Varies* | tx                   | Transaction      | The transaction which is in the block at the index.
 
-The `cmpctblock` message is compromised of a serialized `HeaderAndShortIDs` 
-structure which is defined below. A `HeaderAndShortIDs` structure is used to 
-relay a block header, the short transactions IDs used for matching 
-already-available transactions, and a select few transactions which 
+The `cmpctblock` message is compromised of a serialized `HeaderAndShortIDs`
+structure which is defined below. A `HeaderAndShortIDs` structure is used to
+relay a block header, the short transactions IDs used for matching
+already-available transactions, and a select few transactions which
 we expect a peer may be missing.
 
 | Bytes    | Name                 | Data Type              | Description
@@ -641,27 +641,27 @@ we expect a peer may be missing.
 New banning behavior was added to the compact block logic in protocol version 70015 to prevent node abuse,
 the new changes are outlined below as defined in **BIP152**.
 
-Any undefined behavior in this spec may cause failure to transfer block to, peer disconnection by, or 
-self-destruction by the receiving node. A node receiving non-minimally-encoded CompactSize encodings 
+Any undefined behavior in this spec may cause failure to transfer block to, peer disconnection by, or
+self-destruction by the receiving node. A node receiving non-minimally-encoded CompactSize encodings
 should make a best-effort to eat the sender's cat.
 
-As high-bandwidth mode permits relaying of `cmpctblock` messages prior to full validation 
-(requiring only that the block header is valid before relay), nodes SHOULD NOT ban a peer 
-for announcing a new block with a `cmpctblock` message that is invalid, but has a valid header.  
+As high-bandwidth mode permits relaying of `cmpctblock` messages prior to full validation
+(requiring only that the block header is valid before relay), nodes SHOULD NOT ban a peer
+for announcing a new block with a `cmpctblock` message that is invalid, but has a valid header.
 
-For avoidance of doubt, nodes SHOULD bump their peer-to-peer protocol version to 70015 or 
-higher to signal that they will not ban or punish a peer for announcing compact blocks prior 
-to full validation, and nodes SHOULD NOT announce a `cmpctblock` message to a peer with a version number 
+For avoidance of doubt, nodes SHOULD bump their peer-to-peer protocol version to 70015 or
+higher to signal that they will not ban or punish a peer for announcing compact blocks prior
+to full validation, and nodes SHOULD NOT announce a `cmpctblock` message to a peer with a version number
 below 70015 before fully validating the block.
 
 **Version 2 compact blocks notes**
 
-Transactions inside `cmpctblock` messages (both those used as direct announcement and those in response to getdata) and 
+Transactions inside `cmpctblock` messages (both those used as direct announcement and those in response to getdata) and
 in `blocktxn` messages should include witness data, using the same format as responses to getdata `MSG_WITNESS_TX`, specified in **BIP144**.
 
-Upon receipt of a `getdata` message containing a request for a `MSG_CMPCT_BLOCK` object for which a `cmpctblock` message is not sent in response, 
-the block message containing the requested block in non-compact form MUST be encoded with witnesses (as is sent in reply to a `MSG_WITNESS_BLOCK`) 
-if the protocol version used to encode the `cmpctblock` message would have been 2, and encoded without witnesses (as is sent in response to a `MSG_BLOCK`) 
+Upon receipt of a `getdata` message containing a request for a `MSG_CMPCT_BLOCK` object for which a `cmpctblock` message is not sent in response,
+the block message containing the requested block in non-compact form MUST be encoded with witnesses (as is sent in reply to a `MSG_WITNESS_BLOCK`)
+if the protocol version used to encode the `cmpctblock` message would have been 2, and encoded without witnesses (as is sent in response to a `MSG_BLOCK`)
 if the protocol version used to encode the `cmpctblock` message would have been 1.
 
 **Short Transaction ID calculation**
@@ -682,35 +682,35 @@ Short transaction IDs are used to represent a transaction without sending a full
 
 *Added in protocol version 70014 as described by BIP152.*
 
-The `sendcmpct` message is defined as a message containing a 1-byte 
-integer followed by a 8-byte integer. The first integer is interpreted 
+The `sendcmpct` message is defined as a message containing a 1-byte
+integer followed by a 8-byte integer. The first integer is interpreted
 as a boolean and should have a value of either 1 or 0. The second integer
-is be interpreted as a little-endian version number. 
+is be interpreted as a little-endian version number.
 
-Upon receipt of a `sendcmpct` message with the first and second integers 
-set to 1, the node should announce new blocks by sending a `cmpctblock` message. 
+Upon receipt of a `sendcmpct` message with the first and second integers
+set to 1, the node should announce new blocks by sending a `cmpctblock` message.
 
-Upon receipt of a `sendcmpct` message with the first integer set to 0, the node 
-shouldn't announce new blocks by sending a `cmpctblock` message, but instead announce 
-new blocks by sending invs or headers, as defined by **BIP130**. 
+Upon receipt of a `sendcmpct` message with the first integer set to 0, the node
+shouldn't announce new blocks by sending a `cmpctblock` message, but instead announce
+new blocks by sending invs or headers, as defined by **BIP130**.
 
-Upon receipt of a `sendcmpct` message with the second integer set to something other than 1, 
-nodes should treat the peer as if they had not received the message (as it indicates the peer will provide an 
-unexpected encoding in `cmpctblock` messages, and/or other, messages). This allows future 
-versions to send duplicate `sendcmpct` messages with different versions as a part of 
+Upon receipt of a `sendcmpct` message with the second integer set to something other than 1,
+nodes should treat the peer as if they had not received the message (as it indicates the peer will provide an
+unexpected encoding in `cmpctblock` messages, and/or other, messages). This allows future
+versions to send duplicate `sendcmpct` messages with different versions as a part of
 a version handshake for future versions.
 
 Nodes should check for a protocol version of >= 70014 before sending `sendcmpct` messages.
-Nodes shouldn't send a request for a `MSG_CMPCT_BLOCK` object to a peer before having received 
-a `sendcmpct` message from that peer. Nodes shouldn't request a `MSG_CMPCT_BLOCK` object before 
-having sent all `sendcmpct` messages to that peer which they intend to send, as the 
+Nodes shouldn't send a request for a `MSG_CMPCT_BLOCK` object to a peer before having received
+a `sendcmpct` message from that peer. Nodes shouldn't request a `MSG_CMPCT_BLOCK` object before
+having sent all `sendcmpct` messages to that peer which they intend to send, as the
 peer cannot know what version protocol to use in the response.
 
 The structure of a `sendcmpct` message is defined below.
 
 | Bytes    | Name         | Data Type        | Description
 |----------|--------------|------------------|----------------
-| 1        | announce     | block_header     | An integer representing a boolean value, must be 1 or 0 (1 is true, 0 is false).
+| 1        | announce     | bool             | An integer representing a boolean value, must be 0x01 (true) or 0x00 (false).
 | 8        | version      | uint64_t         | A little-endian representation of a version number. **Version 2 compact blocks should be specified by setting version to 2**
 
 {% endautocrossref %}
@@ -722,13 +722,13 @@ The structure of a `sendcmpct` message is defined below.
 
 *Added in protocol version 70014 as described by BIP152.*
 
-The `getblocktxn` message is defined as a message containing a serialized 
-`BlockTransactionsRequest` message. Upon receipt of a properly-formatted `getblocktxn` message, 
-nodes which recently provided the sender of such a message a `cmpctblock` message for the 
-block hash identified in this message must respond with either an appropriate `blocktxn` message, 
-or a full block message. 
+The `getblocktxn` message is defined as a message containing a serialized
+`BlockTransactionsRequest` message. Upon receipt of a properly-formatted `getblocktxn` message,
+nodes which recently provided the sender of such a message a `cmpctblock` message for the
+block hash identified in this message must respond with either an appropriate `blocktxn` message,
+or a full block message.
 
-A `blocktxn` message response must contain exactly and only each transaction 
+A `blocktxn` message response must contain exactly and only each transaction
 which is present in the appropriate block at the index specified in the `getblocktxn` message
 indexes list, in the order requested.
 
@@ -750,13 +750,13 @@ The structure of `BlockTransactionsRequest` is defined below.
 *Added in protocol version 70014 as described by BIP152.*
 
 The `blocktxn` message is defined as a message containing a serialized `BlockTransactions` message.
-Upon receipt of a properly-formatted requested `blocktxn` message, nodes should attempt to 
-reconstruct the full block by taking the prefilledtxn transactions from the original `cmpctblock` message 
-and placing them in the marked positions, then for each short transaction ID from the original 
-`cmpctblock` message, in order, find the corresponding transaction either from the `blocktxn` message or 
-from other sources and place it in the first available position in the block then once the block 
-has been reconstructed, it shall be processed as normal, keeping in mind that short transaction IDs 
-are expected to occasionally collide, and that nodes must not be penalized for such collisions, 
+Upon receipt of a properly-formatted requested `blocktxn` message, nodes should attempt to
+reconstruct the full block by taking the prefilledtxn transactions from the original `cmpctblock` message
+and placing them in the marked positions, then for each short transaction ID from the original
+`cmpctblock` message, in order, find the corresponding transaction either from the `blocktxn` message or
+from other sources and place it in the first available position in the block then once the block
+has been reconstructed, it shall be processed as normal, keeping in mind that short transaction IDs
+are expected to occasionally collide, and that nodes must not be penalized for such collisions,
 wherever they appear.
 
 The structure of `BlockTransactions` is defined below.
@@ -863,7 +863,7 @@ Each encapsulated network IP address currently uses the following structure:
 |-------|------------|-----------|---------------
 | 4     | time       | uint32    | *Added in protocol version 31402.* <br><br>A time in Unix epoch time format.  Nodes advertising their own IP address set this to the current time.  Nodes advertising IP addresses they've connected to set this to the last time they connected to that node.  Other nodes just relaying the IP address should not change the time.  Nodes can use the time field to avoid relaying old `addr` messages.  <br><br>Malicious nodes may change times or even set them in the future.
 | 8     | services   | uint64_t  | The services the node advertised in its `version` message.
-| 16    | IP address | char      | IPv6 address in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][]
+| 16    | IP address | char[16]  | IPv6 address in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][]
 | 2     | port       | uint16_t  | Port number in **big endian byte order**.  Note that Bitcoin Core will only connect to nodes with non-standard port numbers as a last resort for finding peers.  This is to prevent anyone from trying to use the network to disrupt non-Bitcoin services that run on other ports.
 
 The following annotated hexdump shows part of an `addr` message. (The
@@ -1319,6 +1319,8 @@ only the message header differs.
 
 *Added in protocol version 70002 as described by BIP61.*
 
+*Deprecated in Bitcoin Core 0.18.0.*
+
 The `reject` message informs the receiving node that one of its previous
 messages has been rejected.
 
@@ -1417,16 +1419,16 @@ before initializing its half of the connection by first sending a
 | 8        | services              | uint64_t         | Required                                 | The services supported by the transmitting node encoded as a bitfield.  See the list of service codes below.
 | 8        | timestamp             | int64_t          | Required                                 | The current Unix epoch time according to the transmitting node's clock.  Because nodes will reject blocks with timestamps more than two hours in the future, this field can help other nodes to determine that their clock is wrong.
 | 8        | addr_recv services    | uint64_t         | Required                                 | The services supported by the receiving node as perceived by the transmitting node.  Same format as the 'services' field above. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always send 0.
-| 16       | addr_recv IP address  | char             | Required                                 | The IPv6 address of the receiving node as perceived by the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][]. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always return ::ffff:127.0.0.1
+| 16       | addr_recv IP address  | char[16]         | Required                                 | The IPv6 address of the receiving node as perceived by the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][]. Bitcoin Core will attempt to provide accurate information.  BitcoinJ will, by default, always return ::ffff:127.0.0.1
 | 2        | addr_recv port        | uint16_t         | Required                                 | The port number of the receiving node as perceived by the transmitting node in **big endian byte order**.
 | 8        | addr_trans services   | uint64_t         | Required                                 | *Added in protocol version 106.* <br><br>The services supported by the transmitting node.  Should be identical to the 'services' field above.
-| 16       | addr_trans IP address | char             | Required                                 | *Added in protocol version 106.* <br><br>The IPv6 address of the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][].  Set to ::ffff:127.0.0.1 if unknown.
+| 16       | addr_trans IP address | char[16]         | Required                                 | *Added in protocol version 106.* <br><br>The IPv6 address of the transmitting node in **big endian byte order**. IPv4 addresses can be provided as [IPv4-mapped IPv6 addresses][].  Set to ::ffff:127.0.0.1 if unknown.
 | 2        | addr_trans port       | uint16_t         | Required                                 | *Added in protocol version 106.* <br><br>The port number of the transmitting node in **big endian byte order**.
 | 8        | nonce                 | uint64_t         | Required                                 | *Added in protocol version 106.* <br><br>A random nonce which can help a node detect a connection to itself.  If the nonce is 0, the nonce field is ignored.  If the nonce is anything else, a node should terminate the connection on receipt<!--noref--> of a `version` message with a nonce it previously sent.
 | *Varies* | user_agent bytes      | compactSize uint | Required                                 | *Added in protocol version 106.* <br><br>Number of bytes in following user\_agent field.  If 0x00, no user agent field is sent.
 | *Varies* | user_agent            | string           | Required if user_agent bytes > 0         | *Added in protocol version 106. Renamed in protocol version 60000.* <br><br>User agent as defined by BIP14. Previously called subVer.
 | 4        | start_height          | int32_t          | Required                                 | *Added in protocol version 209.* <br><br>The height of the transmitting node's best block chain or, in the case of an SPV client, best block header chain.
-| 1        | relay                 | bool             | Optional                                 | *Added in protocol version 70001 as described by BIP37.* <br><br>Transaction relay flag.  If 0x00, no `inv` messages or `tx` messages announcing new transactions should be sent to this client until it sends a `filterload` message or `filterclear` message.  If the relay field is not present or is set to 0x01, this node wants `inv` messages and `tx` messages announcing new transactions.
+| 1        | relay                 | bool             | Optional                                 | *Added in protocol version 70001 as described by BIP37.* <br><br>Transaction relay flag.  If 0x00, no `inv` messages or `tx` messages announcing new transactions should be sent to this client until it sends a `filterload` message or `filterclear` message.  If the relay field is not present or is set to 0x01, this node wants `inv` messages and `tx` messages announcing new transactions. *Note: This field introduces a potential incompability with clients implementing protocol versions prior to when the field was added. Details are described in BIP60.*
 
 The following service identifiers have been assigned.
 
