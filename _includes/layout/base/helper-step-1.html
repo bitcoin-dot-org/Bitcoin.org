@@ -7,12 +7,12 @@ http://opensource.org/licenses/MIT.
   <div class="helper-header">
     <div class="helper-header-row">
       <div>
-        <h2 id="wizardOsTitle" class="helper-title">What’s your operating system?</h2> 
+        <h2 id="wizardOsTitle" class="helper-title">{% translate wizard-os-title choose-your-wallet %}</h2>
       </div>
       <div class="helper-selected-block">
         <div class="row">
           <p class="helper-selected-filter js-selected-platform"></p>
-          <button class="helper-change-btn js-helper-nav-btn" data-selector="1">Change</button>
+          <button class="helper-change-btn js-helper-nav-btn" data-selector="1">{% translate helper-change-btn choose-your-wallet %}</button>
         </div>
       </div>
     </div>
@@ -20,7 +20,7 @@ http://opensource.org/licenses/MIT.
   <div class="helper-step">
     <div class="helper-platforms">
       <div class="helper-platforms-section">
-        <h3 id="wizardMobileTitle" class="helper-platforms-title">Mobile wallets</h3>
+        <h3 id="wizardMobileTitle" class="helper-platforms-title">{% translate wizard-mobile-title choose-your-wallet %}</h3>
         <div class="helper-platforms-row">
           <label class="helper-radio-wrapper">
             <input type="radio" class="platform-radio js-wizard-selector js-helper-radio" name="platform" value="android" data-text="Mobile / Android"/>
@@ -37,13 +37,13 @@ http://opensource.org/licenses/MIT.
             </div>
           </label>
         </div>
-        <p class="bullet bullet-positive">Portable and convenient; ideal when making transactions with others face-to-face</p>
-        <p class="bullet bullet-positive"> Designed to be able to use QR codes to make quick and seamless transactions</p>
-        <p class="bullet bullet-negative">App marketplaces can delist/remove wallet making it difficult to receive future updates</p>
-        <p class="bullet bullet-negative">Damage, loss of device or mobile viruses can potentially lead to total loss of funds</p>
+        <p class="bullet bullet-positive">{% translate wizard-mobile-pro1 choose-your-wallet %}</p>
+        <p class="bullet bullet-positive">{% translate wizard-mobile-pro2 choose-your-wallet %}</p>
+        <p class="bullet bullet-negative">{% translate wizard-mobile-con1 choose-your-wallet %}</p>
+        <p class="bullet bullet-negative">{% translate wizard-mobile-con2 choose-your-wallet %}</p>
       </div>
       <div class="helper-platforms-section">
-        <h3 id="wizardDesktopTitle" class="helper-platforms-title">Desktop wallets</h3>
+        <h3 id="wizardDesktopTitle" class="helper-platforms-title">{% translate wizard-desktop-title choose-your-wallet %}</h3>
         <div class="helper-platforms-row">
           <label class="helper-radio-wrapper">
             <input type="radio" class="platform-radio js-wizard-selector js-helper-radio" name="platform" value="linux" data-text="Desktop / Linux"/>
@@ -67,15 +67,15 @@ http://opensource.org/licenses/MIT.
             </div>
           </label>
         </div>
-        <p class="bullet bullet-positive">Environment enables users to have complete control over funds</p>
-        <p class="bullet bullet-positive">Some desktop wallets offer hardware wallet support, or can operate as full nodes</p>
-        <p class="bullet bullet-negative">Difficult to utilize QR codes when making transactions</p>
-        <p class="bullet bullet-negative">Susceptible to bitcoin-stealing malware/spyware/viruses</p>
+        <p class="bullet bullet-positive">{% translate wizard-desktop-pro1 choose-your-wallet %}</p>
+        <p class="bullet bullet-positive">{% translate wizard-desktop-pro2 choose-your-wallet %}</p>
+        <p class="bullet bullet-negative">{% translate wizard-desktop-con1 choose-your-wallet %}</p>
+        <p class="bullet bullet-negative">{% translate wizard-desktop-con2 choose-your-wallet %}</p>
       </div>
     </div>
     <div class="helper-platforms">
       <div class="helper-platforms-section">
-        <h3 id="wizardWebTitle" class="helper-platforms-title">Web wallets</h3>
+        <h3 id="wizardWebTitle" class="helper-platforms-title">{% translate wizard-web-title choose-your-wallet %}</h3>
         <div class="helper-platforms-row">
           <label class="helper-radio-wrapper">
             <input type="radio" class="platform-radio js-wizard-selector js-helper-radio" name="platform" value="web" data-text="Web"/>
@@ -85,13 +85,13 @@ http://opensource.org/licenses/MIT.
             </div>
           </label>
         </div>
-        <p class="bullet bullet-positive">Easy to access from different devices, only a web browser is needed</p>
-        <p class="bullet bullet-positive">Funds can potentially be recovered if a device is damaged or lost</p>
-        <p class="bullet bullet-negative">Requires trust in a third party and shared control over funds</p>
-        <p class="bullet bullet-negative">Web wallets compromised by hackers can potentially result in loss of funds</p>
+        <p class="bullet bullet-positive">{% translate wizard-web-pro1 choose-your-wallet %}</p>
+        <p class="bullet bullet-positive">{% translate wizard-web-pro2 choose-your-wallet %}</p>
+        <p class="bullet bullet-negative">{% translate wizard-web-con1 choose-your-wallet %}</p>
+        <p class="bullet bullet-negative">{% translate wizard-web-con2 choose-your-wallet %}</p>
       </div>
       <div class="helper-platforms-section">
-        <h3 id="wizardHardwareTitle" class="helper-platforms-title">Hardware wallets</h3>
+        <h3 id="wizardHardwareTitle" class="helper-platforms-title">{% translate wizard-hardware-title choose-your-wallet %}</h3>
         <div class="helper-platforms-row">
           <label class="helper-radio-wrapper">
             <input type="radio" class="platform-radio js-wizard-selector js-helper-radio" name="platform" value="hardware" data-text="Hardware"/>
@@ -101,17 +101,16 @@ http://opensource.org/licenses/MIT.
             </div>
           </label>
         </div>
-        <p class="bullet bullet-positive">One of the most secure methods to store funds</p>
-        <p class="bullet bullet-positive">Ideal for storing large amounts of bitcoin</p>
-        <p class="bullet bullet-negative">Difficult to use while mobile; not designed for scanning QR codes</p>
-        <p class="bullet bullet-negative">Loss of device without proper backup can make funds unrecoverable</p>
+        <p class="bullet bullet-positive">{% translate wizard-hardware-pro1 choose-your-wallet %}</p>
+        <p class="bullet bullet-positive">{% translate wizard-hardware-pro2 choose-your-wallet %}</p>
+        <p class="bullet bullet-negative">{% translate wizard-hardware-con1 choose-your-wallet %}</p>
+        <p class="bullet bullet-negative">{% translate wizard-hardware-con2 choose-your-wallet %}</p>
       </div>
     </div>
-    
+
     <div class="helper-navigation">
-      <button class="skip-helper-btn js-skip-btn">Skip helper</button>
-      <button class="helper-next-btn btn-bright js-helper-nav-btn" data-selector="2" data-button-type="platform">Next</button>
+      <button class="skip-helper-btn js-skip-btn">{% translate skip-helper-btn choose-your-wallet %}</button>
+      <button class="helper-next-btn btn-bright js-helper-nav-btn" data-selector="2" data-button-type="platform">{% translate helper-next-btn choose-your-wallet %}</button>
     </div>
   </div>
 </div>
-
