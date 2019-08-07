@@ -7,74 +7,74 @@ http://opensource.org/licenses/MIT.
 
   <div class="helper-header">
     <div class="helper-header-row">
-      <h2 id="wizardCriteriaTitle" class="helper-title">Which criteria are important to me?</h2> 
+      <h2 id="wizardCriteriaTitle" class="helper-title">{% translate wizard-criteria-title choose-your-wallet %}</h2>
       <div class="helper-selected-block">
         <div class="row">
           <div class="helper-selected-filter"></div>
-          <button class="helper-change-btn js-helper-nav-btn" data-selector="3">Change</button>
+          <button class="helper-change-btn js-helper-nav-btn" data-selector="3">{% translate helper-change-btn choose-your-wallet %}</button>
         </div>
       </div>
     </div>
   </div>
-  
+
   <div class="helper-step">
     <div class="helper-checkboxes-row">
       <label class="checkbox-wrapper helper-checkbox-wrapper">
         <input type="checkbox" name="important" value="control" class="checkbox js-helper-checkbox js-wizard-selector" />
         <div class="checkbox-text helper-checkbox-text">
-          <p class="helper-checkbox-title">Control</p>
-          <p class="disabled-checkbox-text"><span>Note:</span> This feature is unavailable based on the options you've selected</p>
-          <p class="helper-checkbox-description">Some wallets give you full control over your bitcoin. This means no third party can freeze or take away your funds. You are still responsible, however, for securing and backing up your wallet.</p>
+          <p class="helper-checkbox-title">{% translate wizard-criteria-control choose-your-wallet %}</p>
+          <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+          <p class="helper-checkbox-description">{% translate wizard-criteria-control-description choose-your-wallet %}</p>
         </div>
       </label>
       <label class="checkbox-wrapper helper-checkbox-wrapper">
         <input type="checkbox" name="important" value="validation" class="checkbox js-helper-checkbox js-wizard-selector" />
         <div class="checkbox-text helper-checkbox-text">
-          <p class="helper-checkbox-title">Validation</p>
-          <p class="disabled-checkbox-text"><span>Note:</span> This feature is unavailable based on the options you've selected</p>
-          <p class="helper-checkbox-description">Some wallets have the ability to operate as a full node. This means no trust in a third party is required when processing transactions. Full nodes provide a high level of security, but they require a large amount of memory.</p>
+          <p class="helper-checkbox-title">{% translate wizard-criteria-validation choose-your-wallet %}</p>
+          <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+          <p class="helper-checkbox-description">{% translate wizard-criteria-validation-description choose-your-wallet %}</p>
         </div>
       </label>
       <label class="checkbox-wrapper helper-checkbox-wrapper">
         <input type="checkbox" name="important" value="transparency" class="checkbox js-helper-checkbox js-wizard-selector" />
         <div class="checkbox-text helper-checkbox-text">
-          <p class="helper-checkbox-title">Transparency</p>
-          <p class="disabled-checkbox-text"><span>Note:</span> This feature is unavailable based on the options you've selected</p>
-          <p class="helper-checkbox-description">Some wallets are open-source and can be built deterministically, a process of compiling software which ensures the resulting code can be reproduced to help ensure it hasn't been tampered with.</p>
+          <p class="helper-checkbox-title">{% translate wizard-criteria-transparency choose-your-wallet %}</p>
+          <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+          <p class="helper-checkbox-description">{% translate wizard-criteria-transparency-description choose-your-wallet %}</p>
         </div>
       </label>
       <label class="checkbox-wrapper helper-checkbox-wrapper">
         <input type="checkbox" name="important" value="environment" class="checkbox js-helper-checkbox js-wizard-selector" />
         <div class="checkbox-text helper-checkbox-text">
-          <p class="helper-checkbox-title">Environment</p>
-          <p class="disabled-checkbox-text"><span>Note:</span> This feature is unavailable based on the options you've selected</p>
-          <p class="helper-checkbox-description">Some wallets can be loaded on computers which are vulnerable to malware. Securing your computer, using a strong passphrase, moving most of your funds to cold store or enabling 2FA or multifactor authentication can help you protect your bitcoin.</p>
+          <p class="helper-checkbox-title">{% translate wizard-criteria-environment choose-your-wallet %}</p>
+          <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+          <p class="helper-checkbox-description">{% translate wizard-criteria-environment-description choose-your-wallet %}</p>
         </div>
       </label>
       <label class="checkbox-wrapper helper-checkbox-wrapper">
         <input type="checkbox" name="important" value="fees" class="checkbox js-helper-checkbox js-wizard-selector" />
         <div class="checkbox-text helper-checkbox-text">
-          <p class="helper-checkbox-title">Fees</p>
-          <p class="disabled-checkbox-text"><span>Note:</span> This feature is unavailable based on the options you've selected</p>
-          <p class="helper-checkbox-description">Some wallets give you full control over setting the fee paid to the bitcoin network before making a transaction, or modifying it afterward, to ensure that your transactions are confirmed in a timely manner without paying more than you have to.</p>
+          <p class="helper-checkbox-title">{% translate wizard-criteria-fees choose-your-wallet %}</p>
+          <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+          <p class="helper-checkbox-description">{% translate wizard-criteria-fees-description choose-your-wallet %}</p>
         </div>
       </label>
       <label class="checkbox-wrapper helper-checkbox-wrapper">
         <input type="checkbox" name="important" value="privacy" class="checkbox js-helper-checkbox js-wizard-selector" />
         <div class="checkbox-text helper-checkbox-text">
-          <p class="helper-checkbox-title">Privacy</p>
-          <p class="disabled-checkbox-text"><span>Note:</span> This feature is unavailable based on the options you've selected</p>
-          <p class="helper-checkbox-description">Some wallets make it harder to spy on your transactions by rotating addresses. They do not disclose information to peers on the network. They can also optionally let you setup and use Tor as a proxy to prevent others from associating transactions with your IP address.</p>
+          <p class="helper-checkbox-title">{% translate wizard-criteria-privacy choose-your-wallet %}</p>
+          <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+          <p class="helper-checkbox-description">{% translate wizard-criteria-privacy-description choose-your-wallet %}</p>
         </div>
       </label>
     </div>
     <div class="helper-navigation">
-      <button class="skip-helper-btn js-skip-btn">Skip helper</button>
+      <button class="skip-helper-btn js-skip-btn">{% translate skip-helper-btn choose-your-wallet %}</button>
       <div class="helper-navigation-row">
-        <button class="helper-back-btn btn-light js-helper-nav-btn" data-selector="2">Back</button>
-        <button class="helper-next-btn btn-bright js-helper-nav-btn" data-selector="4" data-button-type="important">Next</button>
+        <button class="helper-back-btn btn-light js-helper-nav-btn" data-selector="2">{% translate helper-back-btn choose-your-wallet %}</button>
+        <button class="helper-next-btn btn-bright js-helper-nav-btn" data-selector="4" data-button-type="important">{% translate helper-next-btn choose-your-wallet %}</button>
       </div>
     </div>
   </div>
-  
+
 </div>
