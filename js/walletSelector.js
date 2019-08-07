@@ -250,6 +250,7 @@ function checkParametersValues(parameterName, parameterValues) {
 
 function verifyPreviousStepsChecks(step) {
   for (var i = step - 1; i > 0; i--) {
+    if (i > 2) continue;
     var parameterName = document.querySelector('[data-number="' + i + '"]').dataset.type;
     var parameterValues = getUrlParameter(parameterName);
     if (!parameterValues || !checkParametersValues(parameterName, parameterValues)) return false;
