@@ -23,7 +23,7 @@ max_wallet_text_length: 418  ## Unicode characters
 
   <div class="wallet-platforms">
     <div class="container">
-      {% assign platform = page.platform %} {% assign os = page.os %}
+      {% assign platform = page.platform %} {% assign pageOs = page.os %}
       <div class="wallet-platforms-row">
         <div class="wallet-points">
           <div class="wallet-hints-row">
@@ -47,14 +47,14 @@ max_wallet_text_length: 418  ## Unicode characters
 
           <div class="wallet-os-overview">
             <div class="wallet-os-checks">
-              {% for check in os.check %} {% assign checkName = check[0] %} {% assign checkValue = check[1] %}
+              {% for check in pageOs.check %} {% assign checkName = check[0] %} {% assign checkValue = check[1] %}
               <div class="wallet-os-check-item check{{ checkName }} {% if checkValue contains 'checkgood' %}checkgood{% elsif checkValue contains 'checkpass' %}checkpass{% elsif checkValue contains 'checkneutral' %}checkneutral{% else %}checkfail{% endif %}">
                 <p class="wallet-os-check-title">
                   {% translate {{checkValue}} choose-your-wallet %}
                 </p>
                 <div class="wallet-os-check-details">
                   <p>{% translate {{checkValue}}txt choose-your-wallet %}</p>
-                  {% if checkName == 'privacy' and os.privacycheck %} {% for privacycheck in os.privacycheck %}
+                  {% if checkName == 'privacy' and pageOs.privacycheck %} {% for privacycheck in pageOs.privacycheck %}
                   <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains 'checkgood' %}checkgood{% elsif privacycheck[1] contains 'checkpass' %}checkpass{% elsif privacycheck[1] contains 'checkneutral' %}checkneutral{% else %}checkfail{% endif %}">
                     <p>{% translate {{privacycheck[1]}} choose-your-wallet %}</p>
                     <p>{% translate {{privacycheck[1]}}txt choose-your-wallet %}</p>
@@ -69,17 +69,15 @@ max_wallet_text_length: 418  ## Unicode characters
 
         <div class="os-selector">
           <div id="walletAccordion" class="acc wallet-accordion">
-            <button id="walletAccordionButton" class="acc-btn wallet-accordion-btn" data-button-os="">
-              MAC
-            </button>
+            <button id="walletAccordionButton" class="acc-btn wallet-accordion-btn" data-button-os=""></button>
             <div class="acc-content wallet-accordion-content">
               <div class="os-selector-tabs">
                 {% for platform in page.wallet.platform %}
-                  {% for os in platform.os %}
-                    <button class="acc-content-btn os-selector-tab" data-tab="{{os.name}}">
-                      <img src="/img/os/wallet_menu_{{os.name}}.svg" alt="{{os.name}} logo" class="os-selector-icon os-selector-{{os.name}}-icon os-selector-icon-inactive">
-                      <img src="/img/os/wallet_menu_{{os.name}}_bright.svg" alt="{{os.name}} logo" class="os-selector-icon os-selector-{{os.name}}-icon os-selector-icon-active">
-                      {{os.name}}
+                  {% for platformOs in platform.os %}
+                    <button class="acc-content-btn os-selector-tab" data-tab="{{platformOs.name}}">
+                      <img src="/img/os/wallet_menu_{{platformOs.name}}.svg" alt="{{platformOs.name}} logo" class="os-selector-icon os-selector-{{platformOs.name}}-icon os-selector-icon-inactive">
+                      <img src="/img/os/wallet_menu_{{platformOs.name}}_bright.svg" alt="{{platformOs.name}} logo" class="os-selector-icon os-selector-{{platformOs.name}}-icon os-selector-icon-active">
+                      {{platformOs.name}}
                     </button>
                   {% endfor %}
                 {% endfor %}
@@ -88,21 +86,27 @@ max_wallet_text_length: 418  ## Unicode characters
           </div>
 
           {% for platform in page.wallet.platform %}
-            {% for os in platform.os %}
-              <div class="os-selector-content" data-content="{{os.name}}">
+            {% for platformOs in platform.os %}
+              {% capture url %}{{ page.url | split: "/"}}{% endcapture %}
+              {% if url contains platformOs.name %}
+                {% assign tabContentClass = 'visible' %}
+              {% else %}
+                {% assign tabContentClass = '' %}
+              {% endif %}
+              <div class="os-selector-content {{tabContentClass}}" data-content="{{platformOs.name}}">
                 <div class="os-selector-links-row">
-                  {% if os.link == 'bitcoincore' %}
+                  {% if platformOs.link == 'bitcoincore' %}
                     <a class="os-selector-link btn-bright" href="/{{ page.lang }}/{% translate download url %}">{% translate walletdownload choose-your-wallet %}</a>
-                  {% elsif os.link contains 'play.google.com' or os.link contains 'itunes.apple.com' or os.link contains 'chrome.google.com' %}
-                    <a class="os-selector-link btn-bright" href="{{ os.link }}">{% translate walletdownload choose-your-wallet %}</a>
+                  {% elsif platformOs.link contains 'play.google.com' or platformOs.link contains 'itunes.apple.com' or platformOs.link contains 'chrome.google.com' %}
+                    <a class="os-selector-link btn-bright" href="{{ platformOs.link }}">{% translate walletdownload choose-your-wallet %}</a>
                   {% else %}
-                    <a class="os-selector-link btn-bright" href="{{ os.link }}">{% translate walletvisit choose-your-wallet %}</a>
+                    <a class="os-selector-link btn-bright" href="{{ platformOs.link }}">{% translate walletvisit choose-your-wallet %}</a>
                   {% endif %}
-                  {% if os.source %}
-                    <a class="os-selector-link btn-light" href="{{ os.source }}"> {% translate walletsourcecode choose-your-wallet %}</a>
+                  {% if platformOs.source %}
+                    <a class="os-selector-link btn-light" href="{{ platformOs.source }}"> {% translate walletsourcecode choose-your-wallet %}</a>
                   {% endif %}
                 </div>
-                <img src="/img/screenshots/{{os.screenshot}}" class="os-screenshot" alt="screenshot">
+                <img src="/img/screenshots/{{platformOs.screenshot}}" class="os-screenshot" alt="screenshot">
               </div>
             {% endfor %}
           {% endfor %}
@@ -243,6 +247,8 @@ max_wallet_text_length: 418  ## Unicode characters
   }
 
   function displayDefaultTabContent() {
+    var tabSelector = document.querySelector('.wallet-accordion');
+    tabSelector.classList.add('visible');
     var urlPath = window.location.pathname.split('/');
 
     for (var i = 0; i < tabSelectors.length; i++) {

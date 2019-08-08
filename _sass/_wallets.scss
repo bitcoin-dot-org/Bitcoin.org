@@ -27,16 +27,15 @@ $checks: control, validation, transparency, environment, fees, privacy;
 
 $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 
-
 .wallet {
   .wallet-logo-container {
     text-align: center;
-    
+
     .wallet-logo {
       width: 72px;
       height: 72px;
     }
-    
+
     h1 {
       text-align: center;
     }
@@ -69,37 +68,37 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 }
 .wallet-os-check-item.checkgood::before {
   width: 13px;
-	height: 13px;
-	border-radius: 50%;
-	background: #286b1d;
+  height: 13px;
+  border-radius: 50%;
+  background: #286b1d;
 }
 .wallet-os-check-item.checkpass::before {
   width: 13px;
-	height: 13px;
+  height: 13px;
   border-radius: 13px 0 0 0;
-	background: #6dca5c;
+  background: #6dca5c;
 }
 .wallet-os-check-item.checkfail::before {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-bottom: 11px solid #F7931A;
+  border-bottom: 11px solid #f7931a;
 }
 .wallet-os-check-item.checkneutral::before {
   width: 12px;
-	height: 12px;
-	background: #aaa;
+  height: 12px;
+  background: #aaa;
 }
 .wallet-os-check-title {
   margin-bottom: 5px;
   font-size: 22px;
-  color: #13161F;
+  color: #13161f;
   line-height: 36px;
 }
 .wallet-os-check-details {
   font-size: 16px;
-  color: #4D5060;
+  color: #4d5060;
   line-height: 22px;
   text-align: left;
 }
@@ -118,7 +117,7 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 .os-selector-tabs {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #DADADA;
+  border-bottom: 1px solid #dadada;
 }
 .os-selector-tab {
   display: flex;
@@ -128,22 +127,22 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   transform: translateY(1.5px);
   text-transform: uppercase;
   font-size: 15px;
-  color: #13161F;
+  color: #13161f;
   background: none;
   border: none;
   outline: none;
 }
 .os-selector-tab.active {
-  border-bottom: 2px solid #FF7E00;
+  border-bottom: 2px solid #ff7e00;
   color: #ff7e00;
 }
-.os-selector-icon-active{
+.os-selector-icon-active {
   display: none;
 }
-.os-selector-tab.active .os-selector-icon-active{
+.os-selector-tab.active .os-selector-icon-active {
   display: block;
 }
-.os-selector-tab.active .os-selector-icon-inactive{
+.os-selector-tab.active .os-selector-icon-inactive {
   display: none;
 }
 .os-selector-icon {
@@ -223,12 +222,16 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   display: block;
 }
 .wallet-accordion {
+  display: none;
   margin-bottom: 25px;
+}
+.wallet-accordion.visible {
+  display: block;
 }
 .wallet-accordion .wallet-accordion-btn {
   padding: 0 25px 0 37px;
   text-transform: uppercase;
-  color: #FF7E00;
+  color: #ff7e00;
 }
 .wallet-accordion-btn {
   display: none;
@@ -240,37 +243,37 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   left: 15px;
   transform: translate(0, -50%);
 }
-.wallet-accordion-btn[data-button-os="ios"]::before {
+.wallet-accordion-btn[data-button-os='ios']::before {
   width: 16px;
   height: 16px;
   background: url('../img/os/wallet_menu_ios_bright.svg') center no-repeat;
   background-size: contain;
 }
-.wallet-accordion-btn[data-button-os="android"]::before {
+.wallet-accordion-btn[data-button-os='android']::before {
   width: 12px;
   height: 14px;
   background: url('../img/os/wallet_menu_android_bright.svg') center no-repeat;
   background-size: contain;
 }
-.wallet-accordion-btn[data-button-os="windows"]::before {
+.wallet-accordion-btn[data-button-os='windows']::before {
   width: 15px;
   height: 15px;
   background: url('../img/os/wallet_menu_windows_bright.svg') center no-repeat;
   background-size: contain;
 }
-.wallet-accordion-btn[data-button-os="mac"]::before {
+.wallet-accordion-btn[data-button-os='mac']::before {
   width: 12px;
   height: 15px;
   background: url('../img/os/wallet_menu_mac_bright.svg') center no-repeat;
   background-size: contain;
 }
-.wallet-accordion-btn[data-button-os="web"]::before {
+.wallet-accordion-btn[data-button-os='web']::before {
   width: 16px;
   height: 16px;
   background: url('../img/os/wallet_menu_web_bright.svg') center no-repeat;
   background-size: contain;
 }
-.wallet-accordion-btn[data-button-os="linux"]::before {
+.wallet-accordion-btn[data-button-os='linux']::before {
   width: 15px;
   height: 18px;
   background: url('../img/os/wallet_menu_linux_bright.svg') center no-repeat;
@@ -281,7 +284,7 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   margin: 0;
   font-weight: 400;
   font-size: 20px;
-  color: #13161F;
+  color: #13161f;
   text-align: center;
   line-height: 36px;
 }
