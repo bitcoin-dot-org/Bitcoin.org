@@ -175,7 +175,7 @@ max_wallet_text_length: 418  ## Unicode characters
                     {% assign checkName = check[0] %}
                     {% assign checkValue = check[1] %}
                     <div class="wallet-table-data" data-cell="{{checkName}}">
-                      <div class="row align-items-center justify-content-end">
+                      <div class="wallet-score-wrapper">
                         {% if checkValue contains 'checkgood' %}
                           <span class="wallet-table-text">{% translate wallet-scoring-good choose-your-wallet %}</span>
                           <div class="wallet-score wallet-good"></div>

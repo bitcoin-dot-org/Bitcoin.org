@@ -749,6 +749,11 @@
   .wallet-table-data[data-cell]:not(.hidden) {
     border-right: 1px solid #dadada;
   }
+  .wallet-score-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
   .wallet-score {
     margin: 0 12px;
   }
