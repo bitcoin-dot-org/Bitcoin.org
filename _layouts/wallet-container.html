@@ -56,7 +56,7 @@ max_wallet_text_length: 418  ## Unicode characters
                   <p>{% translate {{checkValue}}txt choose-your-wallet %}</p>
                   {% if checkName == 'privacy' and pageOs.privacycheck %} {% for privacycheck in pageOs.privacycheck %}
                   <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains 'checkgood' %}checkgood{% elsif privacycheck[1] contains 'checkpass' %}checkpass{% elsif privacycheck[1] contains 'checkneutral' %}checkneutral{% else %}checkfail{% endif %}">
-                    <p>{% translate {{privacycheck[1]}} choose-your-wallet %}</p>
+                    <p class="wallet-privacy-subhead">{% translate {{privacycheck[1]}} choose-your-wallet %}</p>
                     <p>{% translate {{privacycheck[1]}}txt choose-your-wallet %}</p>
                   </div>
                   {% endfor %} {% endif %}
