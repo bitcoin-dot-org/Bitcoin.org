@@ -5,24 +5,24 @@ http://opensource.org/licenses/MIT.
 
 <div class="wallet-selector choose-wallet-screen" data-number="5" data-screen-name="selector">
   <div class="container">
-    
+
     <div class="wallet-selector-row">
-      <button id="sidebarOpenButton" class="sidebar-selector-btn-open">Filters</button>
-      <div id="sidebarSelector" class="sidebar-selector"> 
+      <button id="sidebarOpenButton" class="sidebar-selector-btn-open">{% translate wallet-selector-filters choose-your-wallet %}</button>
+      <div id="sidebarSelector" class="sidebar-selector">
         <button id="sidebarCloseButton" class="sidebar-selector-btn-close">
           <img src="/img/icons/close-selector.svg" alt="Close">
         </button>
         <div class="sidebar-selector-section">
-          <h3 id="sidebarOsSelectorTitle" class="sidebar-selector-title">Operating System</h3>
+          <h3 id="sidebarOsSelectorTitle" class="sidebar-selector-title">{% translate wallet-selector-operating-system choose-your-wallet %}</h3>
           <div class="sidebar-selector-platforms">
             <div class="sidebar-selector-platforms-row">
               <div class="sidebar-selector-platform">
                 <div class="sidebar-selector-label-row">
-                  <h3 id="sidebarMobileSelectorTitle" class="sidebar-selector-label">Mobile</h3>
+                  <h3 id="sidebarMobileSelectorTitle" class="sidebar-selector-label">{% translate walletcatmobile choose-your-wallet %}</h3>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Wallets are available for Android and iOS based operating systems.
+                      {% translate walletcatmobile-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
@@ -45,11 +45,11 @@ http://opensource.org/licenses/MIT.
               </div>
               <div class="sidebar-selector-platform sidebar-desktop-platform">
                 <div class="sidebar-selector-label-row">
-                  <h3 id="sidebarDesktopSelectorTitle" class="sidebar-selector-label">Desktop</h3>
+                  <h3 id="sidebarDesktopSelectorTitle" class="sidebar-selector-label">{% translate walletcatdesktop choose-your-wallet %}</h3>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Wallets are available for Linux, MacOS and Windows based operating systems.
+                      {% translate walletcatdesktop-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
@@ -81,11 +81,11 @@ http://opensource.org/licenses/MIT.
             <div class="sidebar-selector-platforms-row">
               <div class="sidebar-selector-platform sidebar-hardware-platform">
                 <div class="sidebar-selector-label-row">
-                  <h3 id="sidebarHardwareSelectorTitle" class="sidebar-selector-label">Hardware</h3>
+                  <h3 id="sidebarHardwareSelectorTitle" class="sidebar-selector-label">{% translate walletcathardware choose-your-wallet %}</h3>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      A hardware wallet is a high-security bitcoin wallet that enables you to store your funds offline. You connect it to your computer when you need to manage your funds.
+                      {% translate walletcathardware-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
@@ -101,11 +101,11 @@ http://opensource.org/licenses/MIT.
               </div>
               <div class="sidebar-selector-platform sidebar-web-platform">
                 <div class="sidebar-selector-label-row">
-                  <h3 id="sidebarWebSelectorTitle" class="sidebar-selector-label">Web</h3>
+                  <h3 id="sidebarWebSelectorTitle" class="sidebar-selector-label">{% translate walletcatweb choose-your-wallet %}</h3>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Web wallets are bitcoin wallets that are accessible using a web browser. No installation of additional software is needed.
+                      {% translate walletcatweb-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
@@ -123,41 +123,41 @@ http://opensource.org/licenses/MIT.
           </div>
         </div>
         <div class="sidebar-selector-section">
-          <h3 id="sidebarHardwareSelector" class="sidebar-selector-title">User type</h3>
+          <h3 id="sidebarHardwareSelector" class="sidebar-selector-title">{% translate wallet-selector-user-type choose-your-wallet %}</h3>
 
           <div class="sidebar-selector-types-row">
             <div class="user-radio-row">
               <label class="user-radio-wrapper">
                 <input type="radio" class="user-radio js-wallet-selector js-selector" name="user" value="beginner"  />
-                <p class="user-radio-text">New</p>
+                <p class="user-radio-text">{% translate wizard-user-new choose-your-wallet %}</p>
               </label>
               <div class="sidebar-selector-info tooltip-trigger">
                 <img src="/img/icons/info-alt.svg" alt="info">
                 <div class="wallet-selector-tooltip tooltip">
-                  Show wallets ideal for new bitcoin users, based on your search criteria.
+                  {% translate wizard-user-new-description-search choose-your-wallet %}
                 </div>
               </div>
             </div>
             <div class="user-radio-row">
               <label class="user-radio-wrapper">
                 <input type="radio" class="user-radio js-wallet-selector js-selector" name="user" value="experienced" />
-                <p class="user-radio-text">Experienced</p>
+                <p class="user-radio-text">{% translate wizard-user-experienced choose-your-wallet %}</p>
               </label>
               <div class="sidebar-selector-info tooltip-trigger">
                 <img src="/img/icons/info-alt.svg" alt="info">
                 <div class="wallet-selector-tooltip tooltip">
-                  Show all wallets, based on your search criteria.
+                  {% translate wizard-user-experienced-description-search choose-your-wallet %}
                 </div>
               </div>
             </div>
           </div>
 
         </div>
-        
+
         <div class="sidebar-checkboxes-row">
           <div class="sidebar-selector-section">
             <div class="sidebar-selector-section-top">
-              <h3 id="sidebarCriteriaSelectorTitle" class="sidebar-selector-title">Criteria</h3>
+              <h3 id="sidebarCriteriaSelectorTitle" class="sidebar-selector-title">{% translate wallet-selector-criteria choose-your-wallet %}</h3>
             </div>
             <div class="checkboxes-acc">
               <div class="checkboxes-acc-header">
@@ -170,72 +170,72 @@ http://opensource.org/licenses/MIT.
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="important" value="control" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">Control</div>
+                    <div class="checkbox-text">{% translate wizard-criteria-control choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Some wallets give you full control over your bitcoin. This means no third party can freeze or take away your funds. You are still responsible, however, for securing and backing up your wallet.
+                      {% translate wizard-criteria-control-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="important" value="validation" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">Validation</div>
+                    <div class="checkbox-text">{% translate wizard-criteria-validation choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Some wallets have the ability to operate as a full node. This means no trust in a third party is required when processing transactions. Full nodes provide a high level of security, but they require a large amount of memory.
+                      {% translate wizard-criteria-validation-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="important" value="transparency" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">Transparency</div>
+                    <div class="checkbox-text">{% translate wizard-criteria-transparency choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Some wallets are open-source and can be built deterministically, a process of compiling software which ensures the resulting code can be reproduced to help ensure it hasn't been tampered with.
+                      {% translate wizard-criteria-transparency-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="important" value="environment" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">Environment</div>
+                    <div class="checkbox-text">{% translate wizard-criteria-environment choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Some wallets can be loaded on computers which are vulnerable to malware. Securing your computer, using a strong passphrase, moving most of your funds to cold store or enabling 2FA or multifactor authentication can help you protect your bitcoin.
+                      {% translate wizard-criteria-environment-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="important" value="fees" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">Fees</div>
+                    <div class="checkbox-text">{% translate wizard-criteria-fees choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Some wallets give you full control over setting the fee paid to the bitcoin network before making a transaction, or modifying it afterward, to ensure that your transactions are confirmed in a timely manner without paying more than you have to.
+                      {% translate wizard-criteria-fees-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="important" value="privacy" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">Privacy</div>
+                    <div class="checkbox-text">{% translate wizard-criteria-privacy choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Some wallets make it harder to spy on your transactions by rotating addresses. They do not disclose information to peers on the network. They can also optionally let you setup and use Tor as a proxy to prevent others from associating transactions with your IP address.
+                      {% translate wizard-criteria-privacy-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
@@ -244,7 +244,7 @@ http://opensource.org/licenses/MIT.
           </div>
           <div class="sidebar-selector-section features-selectors-section">
             <div class="sidebar-selector-section-top">
-              <h3 id="sidebarFeaturesSelectorTitle" class="sidebar-selector-title">Features</h3>
+              <h3 id="sidebarFeaturesSelectorTitle" class="sidebar-selector-title">{% translate wallet-selector-features choose-your-wallet %}</h3>
             </div>
             <div class="checkboxes-acc">
               <div class="checkboxes-acc-header">
@@ -257,108 +257,108 @@ http://opensource.org/licenses/MIT.
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="2fa" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">2FA</div>
+                    <div class="checkbox-text">{% translate wizard-feature-2fa choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Two-factor authentication (2FA) is a way to add additional security to your wallet. The first "factor" is your password for your wallet. The second "factor" is a verification code retrieved via text message or from an app on a mobile device. 2FA is conceptually similar to a security token device that banks in some countries require for online banking.  It likely requires relying on the availability of a third party to provide the service.
+                      {% translate wizard-feature-2fa-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="bech32" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">Bech32</div>
+                    <div class="checkbox-text">{% translate wizard-feature-bech32 choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Bech32 is a special address format made possible by SegWit (see the feature description for SegWit for more info). This address format is also known as "bc1 addresses". Some bitcoin wallets and services do not yet support sending and/or receiving to or from Bech32 addresses.
+                      {% translate wizard-feature-bech32-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="full_node" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">Full Node</div>
+                    <div class="checkbox-text">{% translate wizard-feature-full-node choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Some wallets fully validate transactions and blocks. Almost all full nodes help the network by accepting transactions and blocks from other full nodes, validating those transactions and blocks, and then relaying them to further full nodes.
+                      {% translate wizard-feature-full-node-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="hardware_wallet" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">Hardware Wallet</div>
+                    <div class="checkbox-text">{% translate wizard-feature-hardware-wallet choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Some wallets include hardware wallet support. A hardware wallet is a security device that allows you to store your keys offline. You connect it to your computer when you need to manage your funds.
+                      {% translate wizard-feature-hardware-wallet-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="legacy_addresses" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">Legacy Addresses</div>
+                    <div class="checkbox-text">{% translate wizard-feature-legacy-address choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Most wallets have the ability to send and receive legacy bitcoin addresses. Legacy addresses start with 1 or 3 (as opposed to starting with bc1).  Without legacy address support you may not be able to receive bitcoin from older wallets or exchanges.
+                      {% translate wizard-feature-legacy-address-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="lightning" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">Lightning</div>
+                    <div class="checkbox-text">{% translate wizard-feature-lightning choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Some wallets support transactions on the Lightning Network.  The Lightning Network is new and somewhat experimental.  It supports transferring bitcoin without having to record each transaction on the blockchain, resulting in faster transactions and lower fees.
+                      {% translate wizard-feature-lightning-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="mixing_shuffling" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">Mixing / Shuffling</div>
+                    <div class="checkbox-text">{% translate wizard-feature-mixing choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Some wallets support coin mixing and/or shuffling, which pools transactions from multiple parties in order to increase privacy and reduce traceability.
+                      {% translate wizard-feature-mixing-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="multisig" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">Multisig</div>
+                    <div class="checkbox-text">{% translate wizard-feature-multisig choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Some wallets have the ability to require more than one key to authorize a transaction. This can be used to divide responsibility and control over multiple parties.
+                      {% translate wizard-feature-multisig-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="segwit" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">SegWit</div>
+                    <div class="checkbox-text">{% translate wizard-feature-segwit choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
-                      Some wallets support SegWit, which uses block chain space more efficiently. This helps reduce fees paid by helping the Bitcoin network scale and sets the foundation for second layer solutions such as the Lightning Network.
+                      {% translate wizard-feature-segwit-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
@@ -366,59 +366,55 @@ http://opensource.org/licenses/MIT.
             </div>
           </div>
         </div>
-        
-        <div class="wallet-selector-help">
-          <h3 id="sidebarHelpTitle" class="sidebar-selector-title">Need some help?</h3>
-          <p class="sidebar-selector-text">You can find more information and help on the resources and community pages or on the Wiki FAQ</p>
-        </div>
+
       </div>
 
       <div class="wallet-selector-content">
 
-        <div class="wallet-table-wrapper wallet-selector-section" data-section-name="walletsList">        
-          
-          <h2 id="walletTableTitle" class="wallet-selector-title">Below is a list of wallets available for your operating system</h2>
-          
+        <div class="wallet-table-wrapper wallet-selector-section" data-section-name="walletsList">
+
+          <h2 id="walletTableTitle" class="wallet-selector-title">{% translate wallet-selector-results choose-your-wallet %}</h2>
+
           <div class="table-sort">
-            <h3 id="walletTableSortTitle" class="table-sort-title">Sort by:</h3>
+            <h3 id="walletTableSortTitle" class="table-sort-title">{% translate wallet-selector-sort choose-your-wallet %}:</h3>
             <div id="tableAccordion" class="acc">
-              <button id="tableAccordionButton" class="acc-btn">Control</button>
+              <button id="tableAccordionButton" class="acc-btn">{% translate wizard-criteria-control choose-your-wallet %}</button>
               <div class="acc-content">
-                <button class="acc-content-btn table-sort-btn" data-sort="control">Control</button>
-                <button class="acc-content-btn table-sort-btn" data-sort="validation">Validation</button>
-                <button class="acc-content-btn table-sort-btn" data-sort="transparency">Transparency</button>
-                <button class="acc-content-btn table-sort-btn" data-sort="environment">Environment</button>
-                <button class="acc-content-btn table-sort-btn" data-sort="fees">Fees</button>
-                <button class="acc-content-btn table-sort-btn" data-sort="privacy">Privacy</button>
+                <button class="acc-content-btn table-sort-btn" data-sort="control">{% translate wizard-criteria-control choose-your-wallet %}</button>
+                <button class="acc-content-btn table-sort-btn" data-sort="validation">{% translate wizard-criteria-validation choose-your-wallet %}</button>
+                <button class="acc-content-btn table-sort-btn" data-sort="transparency">{% translate wizard-criteria-transparency choose-your-wallet %}</button>
+                <button class="acc-content-btn table-sort-btn" data-sort="environment">{% translate wizard-criteria-environment choose-your-wallet %}</button>
+                <button class="acc-content-btn table-sort-btn" data-sort="fees">{% translate wizard-criteria-fees choose-your-wallet %}</button>
+                <button class="acc-content-btn table-sort-btn" data-sort="privacy">{% translate wizard-criteria-privacy choose-your-wallet %}</button>
               </div>
             </div>
           </div>
-          
-          <div class="wallet-table">        
+
+          <div class="wallet-table">
             <div class="wallet-table-row">
               <div class="wallet-table-head">
-                <p class="wallet-table-title"><span id="selectedOs"></span> Wallets</p>
+                <p class="wallet-table-title"><span id="selectedOs"></span> {% translate wallet-selector-results-wallets choose-your-wallet %}</p>
               </div>
               <div class="wallet-table-head">
-                <p class="wallet-table-title">Control</p>
+                <p class="wallet-table-title">{% translate wizard-criteria-control choose-your-wallet %}</p>
               </div>
               <div class="wallet-table-head">
-                <p class="wallet-table-title">Validation</p>
+                <p class="wallet-table-title">{% translate wizard-criteria-validation choose-your-wallet %}</p>
               </div>
               <div class="wallet-table-head">
-                <p class="wallet-table-title">Transparency</p>
+                <p class="wallet-table-title">{% translate wizard-criteria-transparency choose-your-wallet %}</p>
               </div>
               <div class="wallet-table-head">
-                <p class="wallet-table-title">Environment</p>
+                <p class="wallet-table-title">{% translate wizard-criteria-environment choose-your-wallet %}</p>
               </div>
               <div class="wallet-table-head">
-                <p class="wallet-table-title">Fees</p>
+                <p class="wallet-table-title">{% translate wizard-criteria-fees choose-your-wallet %}</p>
               </div>
               <div class="wallet-table-head">
-                <p class="wallet-table-title">Privacy</p>
+                <p class="wallet-table-title">{% translate wizard-criteria-privacy choose-your-wallet %}</p>
               </div>
             </div>
-          
+
             {% for wallet in site.wallets %}
               {% for platform in wallet.platform %}
                 {% for os in platform.os %}
@@ -437,16 +433,16 @@ http://opensource.org/licenses/MIT.
                       <div class="wallet-table-data" data-cell="{{checkName}}">
                         <div class="row align-items-center justify-content-end">
                           {% if checkValue contains 'checkgood' %}
-                            <span class="wallet-table-text">Good</span>
+                            <span class="wallet-table-text">{% translate wallet-scoring-good choose-your-wallet %}</span>
                             <div class="wallet-score wallet-good"></div>
                           {% elsif checkValue contains 'checkpass' %}
-                            <span class="wallet-table-text">Pass</span>
+                            <span class="wallet-table-text">{% translate wallet-scoring-pass choose-your-wallet %}</span>
                             <div class="wallet-score wallet-pass"></div>
                           {% elsif checkValue contains 'checkfail' %}
-                            <span class="wallet-table-text">Caution</span>
+                            <span class="wallet-table-text">{% translate wallet-scoring-fail choose-your-wallet %}</span>
                             <div class="wallet-score wallet-caution"></div>
                           {% elsif checkValue contains 'checkneutral' %}
-                            <span class="wallet-table-text">Neutral</span>
+                            <span class="wallet-table-text">{% translate wallet-scoring-neutral choose-your-wallet %}</span>
                             <div class="wallet-score wallet-neutral"></div>
                           {% endif %}
                         </div>
@@ -461,38 +457,37 @@ http://opensource.org/licenses/MIT.
           <div class="wallet-hints-row">
             <div class="wallet-hint">
               <div class="wallet-good"></div>
-              <p class="wallet-hint-text">- Good</p>
+              <p class="wallet-hint-text">- {% translate wallet-scoring-good choose-your-wallet %}</p>
             </div>
             <div class="wallet-hint">
               <div class="wallet-pass"></div>
-              <p class="wallet-hint-text">- Pass</p>
+              <p class="wallet-hint-text">- {% translate wallet-scoring-pass choose-your-wallet %}</p>
             </div>
             <div class="wallet-hint">
               <div class="wallet-caution"></div>
-              <p class="wallet-hint-text">- Caution</p>
+              <p class="wallet-hint-text">- {% translate wallet-scoring-fail choose-your-wallet %}</p>
             </div>
             <div class="wallet-hint">
               <div class="wallet-neutral"></div>
-              <p class="wallet-hint-text">- Neutral</p>
+              <p class="wallet-hint-text">- {% translate wallet-scoring-neutral choose-your-wallet %}</p>
             </div>
           </div>
-          
+
         </div>
 
         <div class="wallet-selector-section empty-box" data-section-name="noMatch">
           <img src="/img/icons/empty.svg" alt="wallet with magnifier">
-          <h2 id="noMatchBoxTitle" class="empty-box-title">No matching wallets found</h2>
-          <p class="empty-box-text">Please update your search criteria and try again.</p>
+          <h2 id="noMatchBoxTitle" class="empty-box-title">{% translate wallet-selector-results-no-match choose-your-wallet %}</h2>
+          <p class="empty-box-text">{% translate wallet-selector-results-no-match-cta choose-your-wallet %}</p>
         </div>
 
         <div class="wallet-selector-section empty-box" data-section-name="browseWallets">
           <img src="/img/icons/empty.svg" alt="wallet with magnifier">
-          <h2 id="browseBoxTitle" class="empty-box-title">Browse wallets</h2>
-          <p class="empty-box-text">Use the wallet selector to find wallets that
-          match your search criteria.</p>
+          <h2 id="browseBoxTitle" class="empty-box-title">{% translate wallet-selector-browse choose-your-wallet %}</h2>
+          <p class="empty-box-text">{% translate wallet-selector-browse-cta choose-your-wallet %}</p>
         </div>
       </div>
 
     </div>
   </div>
-</div>  
+</div>

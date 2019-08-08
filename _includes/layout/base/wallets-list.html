@@ -20,22 +20,22 @@ http://opensource.org/licenses/MIT.
     {% endif %}
   {% endfor %}
   <div class="accordion-tab accordion-tab-wallet {{accordionNumber}} js-tab is-expanded">
-    <p class="accordion-label">Select Wallet</p>
+    <p class="accordion-label">{% translate wallet-select choose-your-wallet %}</p>
     <p class="selected-item selected-wallet">{{walletName}}</p>
   </div>
   <div class="accordion-content accordion-content-wallets">
     <div class="wallet-list" id="wallets">
-      {% if page.id == "choose-your-wallet" %} 
+      {% if page.id == "choose-your-wallet" %}
         {% for wallet in site.wallets %}
-         {% assign platformList = "" %} 
+         {% assign platformList = "" %}
          {% for platform in wallet.platform %}
-         {% capture platformList %}{{platformList}}{{platform.name}}{% endcapture %} 
+         {% capture platformList %}{{platformList}}{{platform.name}}{% endcapture %}
          {% endfor %}
           <div class="wallet-list-item allwallets-list-item">
             <div class="wallet-list-item-link">
               <img src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
             </div>
-            <p class="wallet-hint">Select an Operating System</p>
+            <p class="wallet-hint">{% translate wallet-select-operating-system choose-your-wallet %}</p>
             <div class="wallet-list-os">
               {% for platform in wallet.platform %}
                 {% for os in platform.os%}
@@ -47,7 +47,7 @@ http://opensource.org/licenses/MIT.
                     <p class="wallet-ico-tooltip">{{os.name}}</p>
                   </a>
                   {% else %}
-                  
+
                   <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}>
                     <span class="wallet-os-ico {{os.name}}-ico"></span>
                     <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
@@ -61,17 +61,17 @@ http://opensource.org/licenses/MIT.
           </div>
         {% endfor %}
 
-      
-      
+
+
       {% else %}
-        
+
         <!-- Particular Wallets -->
-        {% for wallet in site.wallets %} 
+        {% for wallet in site.wallets %}
         {% if page.id contains wallet.id %}
           {% continue %}
         {% endif %}
-        {% assign platformName = page.platform['name'] %} 
-        {% assign osName = page.os['name'] %} 
+        {% assign platformName = page.platform['name'] %}
+        {% assign osName = page.os['name'] %}
         {% if wallet.compat contains platformName and wallet.compat contains osName %}
 
         {% if osName == 'desktop' or osName == 'mobile' %}
@@ -80,7 +80,7 @@ http://opensource.org/licenses/MIT.
             <div class="wallet-list-item-link">
               <img src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
             </div>
-            <p class="wallet-hint">Select an Operating System</p>
+            <p class="wallet-hint">{% translate wallet-select-operating-system choose-your-wallet %}</p>
             <div class="wallet-list-os">
               {% for platform in wallet.platform %}
                 {% for os in platform.os%}
@@ -96,7 +96,7 @@ http://opensource.org/licenses/MIT.
               {% endfor %}
             </div>
           </div>
-          
+
         {% else %}
         <div class="wallet-list-item">
           {% if platformName == osName %}
@@ -107,13 +107,13 @@ http://opensource.org/licenses/MIT.
             <img src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
           </a>
         </div>
-        {% endif %} 
+        {% endif %}
 
-        
-        {% endif %} 
-        {% endfor %}  
+
+        {% endif %}
+        {% endfor %}
       {% endif %}
-      
+
     </div>
   </div>
 </div>

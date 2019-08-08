@@ -19,7 +19,7 @@ max_wallet_text_length: 418  ## Unicode characters
     </div>
   </div>
 
-    
+
 
   <div class="wallet-platforms">
     <div class="container">
@@ -29,22 +29,22 @@ max_wallet_text_length: 418  ## Unicode characters
           <div class="wallet-hints-row">
             <div class="wallet-hint">
               <div class="wallet-good"></div>
-              <p class="wallet-hint-text">- Good</p>
+              <p class="wallet-hint-text">- {% translate wallet-scoring-good choose-your-wallet %}</p>
             </div>
             <div class="wallet-hint">
               <div class="wallet-pass"></div>
-              <p class="wallet-hint-text">- Pass</p>
+              <p class="wallet-hint-text">- {% translate wallet-scoring-pass choose-your-wallet %}</p>
             </div>
             <div class="wallet-hint">
               <div class="wallet-caution"></div>
-              <p class="wallet-hint-text">- Caution</p>
+              <p class="wallet-hint-text">- {% translate wallet-scoring-fail choose-your-wallet %}</p>
             </div>
             <div class="wallet-hint">
               <div class="wallet-neutral"></div>
-              <p class="wallet-hint-text">- Neutral</p>
+              <p class="wallet-hint-text">- {% translate wallet-scoring-neutral choose-your-wallet %}</p>
             </div>
           </div>
-  
+
           <div class="wallet-os-overview">
             <div class="wallet-os-checks">
               {% for check in os.check %} {% assign checkName = check[0] %} {% assign checkValue = check[1] %}
@@ -66,7 +66,7 @@ max_wallet_text_length: 418  ## Unicode characters
             </div>
           </div>
         </div>
-  
+
         <div class="os-selector">
           <div id="walletAccordion" class="acc wallet-accordion">
             <button id="walletAccordionButton" class="acc-btn wallet-accordion-btn" data-button-os="">
@@ -86,7 +86,7 @@ max_wallet_text_length: 418  ## Unicode characters
               </div>
             </div>
           </div>
-        
+
           {% for platform in page.wallet.platform %}
             {% for os in platform.os %}
               <div class="os-selector-content" data-content="{{os.name}}">
@@ -97,7 +97,7 @@ max_wallet_text_length: 418  ## Unicode characters
                     <a class="os-selector-link btn-bright" href="{{ os.link }}">{% translate walletdownload choose-your-wallet %}</a>
                   {% else %}
                     <a class="os-selector-link btn-bright" href="{{ os.link }}">{% translate walletvisit choose-your-wallet %}</a>
-                  {% endif %} 
+                  {% endif %}
                   {% if os.source %}
                     <a class="os-selector-link btn-light" href="{{ os.source }}"> {% translate walletsourcecode choose-your-wallet %}</a>
                   {% endif %}
@@ -109,51 +109,51 @@ max_wallet_text_length: 418  ## Unicode characters
         </div>
       </div>
 
-      
-      <div class="wallet-table-wrapper wallet-selector-section similar-wallets-table">        
-        
-        <h2 id="walletTableLabel" class="wallet-table-label">Similar {{os.name}} wallets</h2>
+
+      <div class="wallet-table-wrapper wallet-selector-section similar-wallets-table">
+
+        <h2 id="walletTableLabel" class="wallet-table-label">{% translate wallet-selector-similar choose-your-wallet %} {{os.name}} {% translate wallet-selector-results-wallets choose-your-wallet %}</h2>
 
         <div class="table-sort">
-          <h3 id="tableSortTitle" class="table-sort-title">Sort by:</h3>
+          <h3 id="tableSortTitle" class="table-sort-title">{% translate wallet-selector-sort choose-your-wallet %}:</h3>
           <div id="tableAccordion" class="acc">
-            <button id="tableAccordionButton" class="acc-btn">Control</button>
+            <button id="tableAccordionButton" class="acc-btn">{% translate wizard-criteria-control choose-your-wallet %}</button>
             <div class="acc-content">
-              <button class="acc-content-btn table-sort-btn" data-sort="control">Control</button>
-              <button class="acc-content-btn table-sort-btn" data-sort="validation">Validation</button>
-              <button class="acc-content-btn table-sort-btn" data-sort="transparency">Transparency</button>
-              <button class="acc-content-btn table-sort-btn" data-sort="environment">Environment</button>
-              <button class="acc-content-btn table-sort-btn" data-sort="fees">Fees</button>
-              <button class="acc-content-btn table-sort-btn" data-sort="privacy">Privacy</button>
+              <button class="acc-content-btn table-sort-btn" data-sort="control">{% translate wizard-criteria-control choose-your-wallet %}</button>
+              <button class="acc-content-btn table-sort-btn" data-sort="validation">{% translate wizard-criteria-validation choose-your-wallet %}</button>
+              <button class="acc-content-btn table-sort-btn" data-sort="transparency">{% translate wizard-criteria-transparency choose-your-wallet %}</button>
+              <button class="acc-content-btn table-sort-btn" data-sort="environment">{% translate wizard-criteria-environment choose-your-wallet %}</button>
+              <button class="acc-content-btn table-sort-btn" data-sort="fees">{% translate wizard-criteria-fees choose-your-wallet %}</button>
+              <button class="acc-content-btn table-sort-btn" data-sort="privacy">{% translate wizard-criteria-privacy choose-your-wallet %}</button>
             </div>
           </div>
         </div>
-        
-        <div class="wallet-table">        
+
+        <div class="wallet-table">
           <div class="wallet-table-row">
             <div class="wallet-table-head">
               <p class="wallet-table-title">Similar {{os.name}} wallets</p>
             </div>
             <div class="wallet-table-head">
-              <p class="wallet-table-title">Control</p>
+              <p class="wallet-table-title">{% translate wizard-criteria-control choose-your-wallet %}</p>
             </div>
             <div class="wallet-table-head">
-              <p class="wallet-table-title">Validation</p>
+              <p class="wallet-table-title">{% translate wizard-criteria-validation choose-your-wallet %}</p>
             </div>
             <div class="wallet-table-head">
-              <p class="wallet-table-title">Transparency</p>
+              <p class="wallet-table-title">{% translate wizard-criteria-transparency choose-your-wallet %}</p>
             </div>
             <div class="wallet-table-head">
-              <p class="wallet-table-title">Environment</p>
+              <p class="wallet-table-title">{% translate wizard-criteria-environment choose-your-wallet %}</p>
             </div>
             <div class="wallet-table-head">
-              <p class="wallet-table-title">Fees</p>
+              <p class="wallet-table-title">{% translate wizard-criteria-fees choose-your-wallet %}</p>
             </div>
             <div class="wallet-table-head">
-              <p class="wallet-table-title">Privacy</p>
+              <p class="wallet-table-title">{% translate wizard-criteria-privacy choose-your-wallet %}</p>
             </div>
           </div>
-          
+
           {% for wallet in site.wallets %}
             {% for platform in wallet.platform %}
               {% for os in platform.os %}
@@ -173,16 +173,16 @@ max_wallet_text_length: 418  ## Unicode characters
                     <div class="wallet-table-data" data-cell="{{checkName}}">
                       <div class="row align-items-center justify-content-end">
                         {% if checkValue contains 'checkgood' %}
-                          <span class="wallet-table-text">Good</span>
+                          <span class="wallet-table-text">{% translate wallet-scoring-good choose-your-wallet %}</span>
                           <div class="wallet-score wallet-good"></div>
                         {% elsif checkValue contains 'checkpass' %}
-                          <span class="wallet-table-text">Pass</span>
+                          <span class="wallet-table-text">{% translate wallet-scoring-pass choose-your-wallet %}</span>
                           <div class="wallet-score wallet-pass"></div>
                         {% elsif checkValue contains 'checkfail' %}
-                          <span class="wallet-table-text">Caution</span>
+                          <span class="wallet-table-text">{% translate wallet-scoring-fail choose-your-wallet %}</span>
                           <div class="wallet-score wallet-caution"></div>
                         {% elsif checkValue contains 'checkneutral' %}
-                          <span class="wallet-table-text">Neutral</span>
+                          <span class="wallet-table-text">{% translate wallet-scoring-neutral choose-your-wallet %}</span>
                           <div class="wallet-score wallet-neutral"></div>
                         {% endif %}
                       </div>
@@ -197,19 +197,19 @@ max_wallet_text_length: 418  ## Unicode characters
         <div class="wallet-hints-row">
           <div class="wallet-hint">
             <div class="wallet-good"></div>
-            <p class="wallet-hint-text">- Good</p>
+            <p class="wallet-hint-text">- {% translate wallet-scoring-good choose-your-wallet %}</p>
           </div>
           <div class="wallet-hint">
             <div class="wallet-pass"></div>
-            <p class="wallet-hint-text">- Pass</p>
+            <p class="wallet-hint-text">- {% translate wallet-scoring-pass choose-your-wallet %}</p>
           </div>
           <div class="wallet-hint">
             <div class="wallet-caution"></div>
-            <p class="wallet-hint-text">- Caution</p>
+            <p class="wallet-hint-text">- {% translate wallet-scoring-fail choose-your-wallet %}</p>
           </div>
           <div class="wallet-hint">
             <div class="wallet-neutral"></div>
-            <p class="wallet-hint-text">- Neutral</p>
+            <p class="wallet-hint-text">- {% translate wallet-scoring-neutral choose-your-wallet %}</p>
           </div>
         </div>
 
@@ -253,7 +253,7 @@ max_wallet_text_length: 418  ## Unicode characters
       }
     }
   }
-  
+
   function setListners() {
     tabSelectors.forEach(function(tab) {
       tab.addEventListener('click', function() {
@@ -313,12 +313,12 @@ max_wallet_text_length: 418  ## Unicode characters
     var walletsTable = document.querySelector('.wallet-selector-section');
     if (visibleWalletsLinks.length) walletsTable.classList.add('visible');
   }
-  
+
   function init() {
     displayDefaultTabContent();
     displaySimilarWallets();
     sortTableColumn('control');
     setListners();
   }
-  init();  
+  init();
 </script>
