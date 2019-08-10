@@ -292,18 +292,6 @@ http://opensource.org/licenses/MIT.
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
-                    <input type="checkbox" name="features" value="hardware_wallet" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">{% translate wizard-feature-hardware-wallet choose-your-wallet %}</div>
-                  </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-feature-hardware-wallet-description choose-your-wallet %}
-                    </div>
-                  </div>
-                </div>
-                <div class="important-checkbox-row">
-                  <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="legacy_addresses" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-feature-legacy-address choose-your-wallet %}</div>
                   </label>
@@ -457,19 +445,19 @@ http://opensource.org/licenses/MIT.
           <div class="wallet-hints-row">
             <div class="wallet-hint">
               <div class="wallet-good"></div>
-              <p class="wallet-hint-text">- {% translate wallet-scoring-good choose-your-wallet %}</p>
+              <p class="wallet-hint-text">{% translate wallet-scoring-good choose-your-wallet %}</p>
             </div>
             <div class="wallet-hint">
               <div class="wallet-pass"></div>
-              <p class="wallet-hint-text">- {% translate wallet-scoring-pass choose-your-wallet %}</p>
+              <p class="wallet-hint-text">{% translate wallet-scoring-pass choose-your-wallet %}</p>
             </div>
             <div class="wallet-hint">
               <div class="wallet-caution"></div>
-              <p class="wallet-hint-text">- {% translate wallet-scoring-fail choose-your-wallet %}</p>
+              <p class="wallet-hint-text">{% translate wallet-scoring-fail choose-your-wallet %}</p>
             </div>
             <div class="wallet-hint">
               <div class="wallet-neutral"></div>
-              <p class="wallet-hint-text">- {% translate wallet-scoring-neutral choose-your-wallet %}</p>
+              <p class="wallet-hint-text">{% translate wallet-scoring-neutral choose-your-wallet %}</p>
             </div>
           </div>
 

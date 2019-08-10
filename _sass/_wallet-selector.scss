@@ -398,7 +398,7 @@
 }
 .wallet-hint-text {
 	margin-left: 8px;
-	font-size: 14px;
+	font-size: 1.5em;
 	color: #13161F;
 	line-height: 30px;
 }
@@ -734,6 +734,9 @@
   .wallet-table-text {
     display: block;
   }
+  .wallet-hints-row {
+    display: none;
+  }
   .wallet-img {
     margin-right: 5px;
   }
@@ -828,6 +831,9 @@
   .sidebar-selector-btn-close {
     top: 19px;
     right: 16px;
+  }
+  .wallet-hints-row {
+    display: none;
   }
   .wallet-selector-title {
     margin-bottom: 15px;
