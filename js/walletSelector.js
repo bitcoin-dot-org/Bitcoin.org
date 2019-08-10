@@ -133,10 +133,9 @@ function displayNextButton() {
   var nextButtonsList = document.querySelectorAll('[data-button-type]');
   
   nextButtonsList.forEach(function(button) {
-    var type = button.dataset.buttonType;
-    var checkedInputs = document.querySelectorAll('.js-wizard-selector[name="' + type + '"]:checked');
-    if (checkedInputs.length) button.classList.add('visible');
-    else button.classList.remove('visible');
+    var radioType = button.dataset.buttonType;
+    var checkedRadio = document.querySelector('.js-helper-radio[name="' + radioType + '"]:checked');
+    if (checkedRadio) button.classList.add('visible');
   });
 }
 
@@ -362,15 +361,20 @@ function clearSelection(type) {
   setUrlParameter(type, '');
 }
 
-function onWizardInputChange(input) {
-  var selectedInputs = document.querySelectorAll('.js-wizard-selector[name="' + input.name + '"]:checked');
-  var filters = collectCheckedInputsValues(selectedInputs);
-  setUrlParameter(input.name, filters);
+function onWizardRadioChange(input) {
+  var selectedInputValue = document.querySelector('.js-wizard-selector[name="' + input.name + '"]:checked').value;
+  setUrlParameter(input.name, selectedInputValue);
   
   if (input.name === 'platform' && getUrlParameter('important')) clearSelection('important');
   if (input.name === 'platform' && getUrlParameter('features')) clearSelection('features');
   
   displayNextButton(input.name);
+}
+
+function onWizardCheckboxChange(checkbox) {
+  var selectedCheckboxes = document.querySelectorAll('.js-helper-checkbox[name="' + checkbox.name + '"]:checked');
+  var filters = collectCheckedInputsValues(selectedCheckboxes);
+  setUrlParameter(checkbox.name, filters);
 }
 
 function onWalletSelectorInputChange(input) {
@@ -399,10 +403,18 @@ function setListners() {
     });
   });
 
-  var wizardInputsList = document.querySelectorAll('.js-wizard-selector');
-  wizardInputsList.forEach(function(input) {
-    input.addEventListener('change', function() {
-      onWizardInputChange(input);
+  var wizardRadioList = document.querySelectorAll('.js-helper-radio');
+  wizardRadioList.forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      onWizardRadioChange(radio);
+      checkInputsActivity();
+    });
+  });
+
+  var wizardCheckboxesList = document.querySelectorAll('.js-helper-checkbox');
+  wizardCheckboxesList.forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+      onWizardCheckboxChange(checkbox);
       checkInputsActivity();
     });
   });
