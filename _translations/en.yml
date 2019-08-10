@@ -237,7 +237,7 @@ en:
     wizard-feature-full-node: "Full Node"
     wizard-feature-full-node-description: "Some wallets fully validate transactions and blocks. Almost all full nodes help the network by accepting transactions and blocks from other full nodes, validating those transactions and blocks, and then relaying them to further full nodes."
     wizard-feature-hardware-wallet: "Hardware Wallet Pairing"
-    wizard-feature-hardware-wallet-description: "A hardware wallet is a security device that allows you to store your keys offline. You connect it to your computer when you need to manage your funds. Some wallets can pair and connect to a hardware wallet in addition to being able to send to them. While sending to a hardware wallet is something most all wallets can do, being able to pair with one is a unique feature. This feature enables you to be able to send and receive directly to and from a hardware wallet."
+    wizard-feature-hardware-wallet-description: "Some wallets can pair and connect to a hardware wallet in addition to being able to send to them. While sending to a hardware wallet is something most all wallets can do, being able to pair with one is a unique feature. This feature enables you to be able to send and receive directly to and from a hardware wallet."
     wizard-feature-legacy-address: "Legacy Addresses"
     wizard-feature-legacy-address-description: "Most wallets have the ability to send and receive legacy bitcoin addresses. Legacy addresses start with 1 or 3 (as opposed to starting with bc1).  Without legacy address support you may not be able to receive bitcoin from older wallets or exchanges."
     wizard-feature-lightning: "Lightning"
