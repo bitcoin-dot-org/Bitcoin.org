@@ -125,8 +125,26 @@ function displayRelevantWizardContent(selectedStep) {
   checkInputsActivity();
 }
 
-function scrollIntoHeader(number) {
+function scrollToHeader(number) {
   document.querySelector('[data-number="' + number + '"]').scrollIntoView();
+}
+
+function isInViewport(element) {
+  var bounding = element.getBoundingClientRect();
+  return (
+      bounding.top >= 0 &&
+      bounding.left >= 0 &&
+      bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+};
+
+function scrollToNextButton(buttonType) {
+  var nextButton = document.querySelector('[data-button-type="' + buttonType + '"]')
+  if (!isInViewport(nextButton)) {
+    nextButton.scrollIntoView(false);
+    window.scrollBy(0, 20); 
+  }
 }
 
 function displayNextButton() {
@@ -143,7 +161,7 @@ function onNavigationButtonClick(button) {
   var step = button.dataset.selector;
   setUrlParameter('step', step);
   displayRelevantContent(step);
-  scrollIntoHeader(step);
+  scrollToHeader(step);
 }
 
 function onSkipButtonClick() {
@@ -361,14 +379,16 @@ function clearSelection(type) {
   setUrlParameter(type, '');
 }
 
-function onWizardRadioChange(input) {
-  var selectedInputValue = document.querySelector('.js-wizard-selector[name="' + input.name + '"]:checked').value;
-  setUrlParameter(input.name, selectedInputValue);
+function onWizardRadioChange(radio) {
+  var radioName = radio.name;
+  var selectedInputValue = document.querySelector('.js-wizard-selector[name="' + radioName + '"]:checked').value;
+  setUrlParameter(radioName, selectedInputValue);
   
-  if (input.name === 'platform' && getUrlParameter('important')) clearSelection('important');
-  if (input.name === 'platform' && getUrlParameter('features')) clearSelection('features');
+  if (radioName === 'platform' && getUrlParameter('important')) clearSelection('important');
+  if (radioName === 'platform' && getUrlParameter('features')) clearSelection('features');
   
-  displayNextButton(input.name);
+  displayNextButton(radioName);
+  scrollToNextButton(radioName);
 }
 
 function onWizardCheckboxChange(checkbox) {
