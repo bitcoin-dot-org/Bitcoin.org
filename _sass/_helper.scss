@@ -52,10 +52,6 @@
   background: none;
   border: none;
 }
-.helper-back-btn {
-  width: 170px;
-  height: 55px;
-}
 .helper-next-btn {
   display: none;
   width: 170px;
@@ -517,7 +513,6 @@
     flex-direction: column-reverse;
     align-items: center;
   }
-  .helper-next-btn,
   .helper-back-btn {
     width: 290px;
   }
