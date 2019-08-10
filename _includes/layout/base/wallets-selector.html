@@ -409,7 +409,7 @@ http://opensource.org/licenses/MIT.
                   <a
                     href="{% if platform.name == os.name %}/{{page.lang}}/wallets/{{platform.name}}/{{wallet.id}}/{% else %}/{{page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{wallet.id}}/{% endif %}"
                     class="wallet-table-row wallet-link"
-                    data-categories="{% if wallet.user %}{{wallet.user}}{% endif %} experienced {% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' %}{{checkName}} {% endif %}{% endfor %}{{os.name}} {{os.features}}"
+                    data-categories="{% if wallet.user %}{{wallet.user}}{% endif %} experienced {% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' %}{{checkName}} {% endif %}{% if platform.name == 'hardware' and checkValue contains 'checkneutral' %}{{checkName}} {% endif %}{% endfor %}{{os.name}} {{os.features}}"
                   >
                     <div class="wallet-table-data">
                       <img class="wallet-img" src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" />

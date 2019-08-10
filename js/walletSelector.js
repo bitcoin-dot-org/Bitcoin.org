@@ -137,10 +137,10 @@ function isInViewport(element) {
       bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
       bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
-};
+}
 
 function scrollToNextButton(buttonType) {
-  var nextButton = document.querySelector('[data-button-type="' + buttonType + '"]')
+  var nextButton = document.querySelector('[data-button-type="' + buttonType + '"]');
   if (!isInViewport(nextButton)) {
     nextButton.scrollIntoView(false);
     window.scrollBy(0, 20); 
