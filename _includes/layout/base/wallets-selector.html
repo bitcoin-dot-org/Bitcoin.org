@@ -292,6 +292,18 @@ http://opensource.org/licenses/MIT.
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
+                    <input type="checkbox" name="features" value="hardware_wallet" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">{% translate wizard-feature-hardware-wallet choose-your-wallet %}</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      {% translate wizard-feature-hardware-wallet-description choose-your-wallet %}
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="legacy_addresses" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-feature-legacy-address choose-your-wallet %}</div>
                   </label>
