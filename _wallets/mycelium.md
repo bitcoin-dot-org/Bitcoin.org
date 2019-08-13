@@ -2,7 +2,7 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-id: mycelium
+id: myceliumwallet
 title: "Mycelium"
 titleshort: "Mycelium"
 compat: "mobile android"
