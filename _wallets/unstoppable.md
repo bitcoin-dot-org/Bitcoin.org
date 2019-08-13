@@ -10,33 +10,37 @@ level: 2
 platform:
   - mobile:
     name: mobile
-    default: &DEFAULT
-      text: "walletunstoppable"
-      link: "https://unstoppable.money"
-      source: "https://github.com/horizontalsystems"
-      screenshot: "unstoppable.png"
-      check:
-        control: "checkgoodcontrolfull"
-        validation: "checkpassvalidationspvp2p"
-        transparency: "checkpasstransparencyopensource"
-        environment: "checkpassenvironmentmobile"
-        privacy: "checkpassprivacybasic"
-        fees: "checkpassfeecontroldynamic"
-      privacycheck:
-        privacyaddressreuse: "checkpassprivacyaddressrotation"
-        privacydisclosure: "checkfailprivacydisclosurespv"
-        privacynetwork: "checkfailprivacynetworknosupporttor"
     os:
       - name: android
-        <<: *DEFAULT
+        text: "walletunstoppable"
+        link: "https://play.google.com/store/apps/details?id=io.horizontalsystems.bankwallet"
+        source: "https://github.com/horizontalsystems/unstoppable-wallet-android"      
+        screenshot: "unstoppable.png"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationspvp2p"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: ios
-        <<: *DEFAULT
-
+        text: "walletunstoppable"
+        link: "https://itunes.apple.com/app/bank-bitcoin-wallet/id1447619907?ls=1&mt=8"
+        source: "https://github.com/horizontalsystems/unstoppable-wallet-ios"
+        screenshot: "unstoppable.png"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationspvp2p"          
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 ---
-
-
-
-
-
-
-
