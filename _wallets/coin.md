@@ -16,6 +16,7 @@ platform:
         link: "https://play.google.com/store/apps/details?id=com.coinspace.app"
         source: "https://github.com/CoinSpace/CoinSpace"
         screenshot: "coinmobile.png"
+        features: "legacy_addresses"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
@@ -32,6 +33,7 @@ platform:
         link: "https://itunes.apple.com/us/app/coinspace-bitcoin-wallet/id980719434?mt=8"
         source: "https://github.com/CoinSpace/CoinSpace"
         screenshot: "coinmobile.png"
+        features: "legacy_addresses"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
@@ -51,6 +53,7 @@ platform:
         link: "https://coin.space"
         source: "https://github.com/CoinSpace/CoinSpace"
         screenshot: "coinweb.png"
+        features: "legacy_addresses"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
