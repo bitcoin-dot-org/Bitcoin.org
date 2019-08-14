@@ -29,7 +29,7 @@ platform:
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: ios
         text: "walletunstoppable"
-        link: "https://itunes.apple.com/app/bank-bitcoin-wallet/id1447619907?ls=1&mt=8"
+        link: "https://itunes.apple.com/app/bank-bitcoin-wallet/id1447619907/"
         source: "https://github.com/horizontalsystems/unstoppable-wallet-ios"
         screenshot: "unstoppable.png"
         check:
