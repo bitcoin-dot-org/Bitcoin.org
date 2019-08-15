@@ -2,6 +2,7 @@ var linksList = document.querySelectorAll('.wallet-link');
 var selectorsList = document.querySelectorAll('.js-wallet-selector');
 var sidebarOpenButton = document.getElementById('sidebarOpenButton');
 var sidebarSelector = document.getElementById('sidebarSelector');
+var platformSelectors = document.querySelectorAll('.platform-radio');
 
 function queryStringToArray() {            
   var categories = ['platform', 'user', 'important', 'features'];
@@ -179,8 +180,7 @@ function disableInputs(isDisabled) {
 
 function checkIfPlatformSelected(filters) {
   var platforms = [];
-  var platfomrSelectors = document.querySelectorAll('.platform-radio');
-  platfomrSelectors.forEach(function(selector) {
+  platformSelectors.forEach(function(selector) {
     platforms.push(selector.value);
   });
   for (var i = 0; i < platforms.length; i++) {
@@ -285,26 +285,6 @@ function displayDiscoverBox(currentStep) {
     else linksList.classList.remove('visible');
   });
 }
-
-function displayRelevantContent() {
-  var step = getUrlParameter('step');
-  var currentStep = Number(step);
-  var isWizardStep = currentStep > 0 && currentStep < 5;
-  var isSelectorStep = currentStep === 5;
-  if (isWizardStep && verifyPreviousStepsChecks(step)) {
-    displayRelevantScreen('wizard');
-    highlightSelectedWizardInputs();
-    displayNextButton();
-    displayRelevantWizardContent(step);
-    displayDiscoverBox(step);
-  } else if (isSelectorStep) {
-    displayRelevantScreen('selector');
-    displayRelevantSelectorContent();
-    sortTableColumn('control');
-  } else {
-    displayRelevantScreen('intro');
-  }
-}
   
 function collectCheckedInputsValues(selectedInputs) {
   var selectedInputsValues = [];
@@ -397,9 +377,30 @@ function onWizardCheckboxChange(checkbox) {
   setUrlParameter(checkbox.name, filters);
 }
 
+function updateOldUrls(input) {
+  var pathnameElements = window.location.pathname.split('/');
+  
+  if (pathnameElements.includes('wallets')) {
+    var pathnameFirstElement = pathnameElements[0];
+    var pathnameLastElement = pathnameElements[pathnameElements.length - 1];
+    if (pathnameFirstElement === '') pathnameElements.shift();
+    if (pathnameLastElement === '') pathnameElements.pop();
+    
+    var url;
+    if (window.location.port) {
+      url = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port + input.dataset.path + window.location.search;
+    } else {
+      url = window.location.protocol + '//' + window.location.hostname + input.dataset.path + window.location.search;
+    }
+
+    history.pushState(null, null, url);
+  }
+}
+
 function onWalletSelectorInputChange(input) {
   var selectedInputs = document.querySelectorAll('.js-wallet-selector[name="' + input.name + '"]:checked');
   var filters = collectCheckedInputsValues(selectedInputs);
+
   setUrlParameter(input.name, filters);
   displayRelevantSelectorContent();
 }
@@ -423,6 +424,7 @@ function setListners() {
     });
   });
 
+  
   var wizardRadioList = document.querySelectorAll('.js-helper-radio');
   wizardRadioList.forEach(function(radio) {
     radio.addEventListener('change', function() {
@@ -430,7 +432,7 @@ function setListners() {
       checkInputsActivity();
     });
   });
-
+  
   var wizardCheckboxesList = document.querySelectorAll('.js-helper-checkbox');
   wizardCheckboxesList.forEach(function(checkbox) {
     checkbox.addEventListener('change', function() {
@@ -438,10 +440,17 @@ function setListners() {
       checkInputsActivity();
     });
   });
-
+  
   var skipButtons = document.querySelectorAll('.js-skip-btn');
   skipButtons.forEach(function(button) {
     button.addEventListener('click', onSkipButtonClick);
+  });
+
+  var walletSelectorPlatforms = document.querySelectorAll('.js-platform-radio');
+  walletSelectorPlatforms.forEach(function(input) {
+    input.addEventListener('change', function() {
+      updateOldUrls(input);
+    });
   });
   
   selectorsList.forEach(function(selector) {
@@ -489,7 +498,42 @@ function setListners() {
   });
 }
 
+function checkOldUrls() {
+  var pathnameElements = window.location.pathname.substr(1).slice(0, -1).split('/');
+  
+  for (var i = 0; i < platformSelectors.length; i++) {
+    var platform = platformSelectors[i].value;
+    
+    if (pathnameElements.includes(platform)) {
+      setUrlParameter('platform', platform);
+      setUrlParameter('step', 5);
+      break;
+    }
+  }
+}
+
+function displayRelevantContent() {
+  var step = getUrlParameter('step');
+  var currentStep = Number(step);
+  var isWizardStep = currentStep > 0 && currentStep < 5;
+  var isSelectorStep = currentStep === 5;
+  if (isWizardStep && verifyPreviousStepsChecks(step)) {
+    displayRelevantScreen('wizard');
+    highlightSelectedWizardInputs();
+    displayNextButton();
+    displayRelevantWizardContent(step);
+    displayDiscoverBox(step);
+  } else if (isSelectorStep) {
+    displayRelevantScreen('selector');
+    displayRelevantSelectorContent();
+    sortTableColumn('control');
+  } else {
+    displayRelevantScreen('intro');
+  }
+}
+
 function init() {
+  checkOldUrls();
   displayRelevantContent();
   setListners();
 }
