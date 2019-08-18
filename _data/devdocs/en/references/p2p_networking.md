@@ -1428,7 +1428,7 @@ before initializing its half of the connection by first sending a
 | *Varies* | user_agent bytes      | compactSize uint | Required                                 | *Added in protocol version 106.* <br><br>Number of bytes in following user\_agent field.  If 0x00, no user agent field is sent.
 | *Varies* | user_agent            | string           | Required if user_agent bytes > 0         | *Added in protocol version 106. Renamed in protocol version 60000.* <br><br>User agent as defined by BIP14. Previously called subVer.
 | 4        | start_height          | int32_t          | Required                                 | *Added in protocol version 209.* <br><br>The height of the transmitting node's best block chain or, in the case of an SPV client, best block header chain.
-| 1        | relay                 | bool             | Optional                                 | *Added in protocol version 70001 as described by BIP37.* <br><br>Transaction relay flag.  If 0x00, no `inv` messages or `tx` messages announcing new transactions should be sent to this client until it sends a `filterload` message or `filterclear` message.  If the relay field is not present or is set to 0x01, this node wants `inv` messages and `tx` messages announcing new transactions. *Note: This field introduces a potential incompability with clients implementing protocol versions prior to when the field was added. Details are described in BIP60.*
+| 1        | relay                 | bool             | Optional                                 | *Added in protocol version 70001 as described by BIP37.* <br><br>Transaction relay flag.  If 0x00, no `inv` messages or `tx` messages announcing new transactions should be sent to this client until it sends a `filterload` message or `filterclear` message.  If the relay field is not present or is set to 0x01, this node wants `inv` messages and `tx` messages announcing new transactions.
 
 The following service identifiers have been assigned.
 
@@ -1441,6 +1441,8 @@ The following service identifiers have been assigned.
 | 0x08  | NODE_WITNESS | This is a full node that can be asked for blocks and transactions including witness data. See [BIP144][] for details.
 | 0x10  | NODE_XTHIN | This is a full node that supports Xtreme Thinblocks. This is not supported by any currently-maintained Bitcoin node.
 | 0x0400  | NODE_NETWORK_LIMITED | This is the same as NODE_NETWORK but the node has at least the last 288 blocks (last 2 days). See [BIP159][] for details on how this is implemented.
+
+**Note:** Protocol version 70001 introduced the optional `relay` field, adding the possibility of an additional byte to the `version` message. This introduces an incompatibility with implementations of lower protocol versions which validate the `version` message size. When implementing support for protocol versions less than 70001 you may want to handle the case of a peer potentially sending an extra byte, treating it as invalid only in the case of a requested protocol version less than 70001.
 
 The following annotated hexdump shows a `version` message. (The
 message header has been omitted and the actual IP addresses have been
