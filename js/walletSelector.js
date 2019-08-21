@@ -254,12 +254,14 @@ function checkParametersValues(parameterName, parameterValues) {
   var filters = parameterValues.split(',');
   var inputValues = [];
   var inputsList = document.getElementsByName(parameterName);
-  inputsList.forEach(function(input) {
+
+  for (var i = 0; i < inputsList.length; i++) {
+    var input = inputsList[i];
     inputValues.push(input.value);
-  });
+  }
   
-  for (var i = 0; i < filters.length; i++) {
-    var filter = filters[i];
+  for (var j = 0; j < filters.length; j++) {
+    var filter = filters[j];
     if (!inputValues.includes(filter)) return false;
   }
   return true;
