@@ -69,10 +69,11 @@ function sortTableColumn(selectedOption) {
 
 function displayRelevantScreen(relevantScreenName) {
   var screens = document.querySelectorAll('[data-screen-name]');
-  screens.forEach(function(screen) {
+  for (var i = 0; i < screens.length; i++) {
+    var screen = screens[i];
     if (screen.dataset.screenName ===  relevantScreenName) screen.classList.add('visible');
     else screen.classList.remove('visible');
-  });
+  }
 }
 
 function displaySelectedHeaderValues(accordionType, selectedFilters, accordion) {
