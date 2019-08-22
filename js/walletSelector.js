@@ -183,9 +183,11 @@ function onSkipButtonClick() {
 
 function disableInputs(isDisabled) {
   var checkboxes = document.querySelectorAll('.js-wallet-selector:not(.platform-radio)');
-  checkboxes.forEach(function(checkbox) {
+
+  for (var i = 0; i < checkboxes.length; i++) {
+    var checkbox = checkboxes[i];
     checkbox.disabled = isDisabled;
-  });
+  }
 }
 
 function checkIfPlatformSelected(filters) {
@@ -236,10 +238,12 @@ function displaySelectedOs() {
 
 function displaySelectorSection(relevantSectionName) {
   var sectionsList = document.querySelectorAll('[data-section-name]');
-  sectionsList.forEach(function(section) {
+
+  for (var i = 0; i < sectionsList.length; i++) {
+    var section = sectionsList[i];
     if (section.dataset.sectionName ===  relevantSectionName) section.classList.add('visible');
     else section.classList.remove('visible');
-  });
+  }
 }
 
 function displayRelevantSelectortSection(filters) {
@@ -309,9 +313,12 @@ function displayDiscoverBox(currentStep) {
   
 function collectCheckedInputsValues(selectedInputs) {
   var selectedInputsValues = [];
-  selectedInputs.forEach(function(selectedInput) {
+
+  for (var i = 0; i < selectedInputs.length; i++) {
+    var selectedInput = selectedInputs[i];
     selectedInputsValues.push(selectedInput.value);
-  });
+  }
+  
   return selectedInputsValues;
 }
 

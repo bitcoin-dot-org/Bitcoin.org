@@ -702,7 +702,7 @@ function updateQueryStringParameter(key, value) {
 function checkIfFiltersInclude(categories, filters) {
   for (var i = 0; i < filters.length; i++) {
     var filter = filters[i];
-    if (!categories.includes(filter) && filter !== '') return false;
+    if (categories.indexOf(filter) === -1 && filter !== '') return false;
   }
   return true;
 }
@@ -715,10 +715,12 @@ function queryStringToArray() {
   var categories = ['platform', 'user', 'important', 'features'];
   var result = [];
   var pairs = location.search.slice(1).split('&');
-  pairs.forEach(function(pair) {
+
+  for (var i = 0; i < pairs.length; i++) {
+    var pair = pairs[i];
     pair = pair.split('=');
-    if (pair[1] && categories.includes(pair[0])) result = result.concat(pair[1].split(','));
-  });
+    if (pair[1] && categories.indexOf(pair[0]) > -1) result = result.concat(pair[1].split(','));
+  }
 
   return result;
 }
@@ -735,9 +737,11 @@ function sortTableColumn(selectedOption) {
   tableAccordion.classList.remove('open');
 
   var tableCells = document.querySelectorAll('.wallet-table-data[data-cell]');
-  tableCells.forEach(function(cell) {
+
+  for (var i = 0; i < tableCells.length; i++) {
+    var cell = tableCells[i];
     if (cell.dataset.cell === selectedOption) {
       cell.classList.remove('hidden');
     } else cell.classList.add('hidden');
-  });
+  }
 }

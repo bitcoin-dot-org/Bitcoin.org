@@ -224,24 +224,25 @@ max_wallet_text_length: 418  ## Unicode characters
 </div>
 
 <script data-proofer-ignore>
-  var tabSelectors = document.querySelectorAll('.os-selector-tab');
-  var linksList = document.querySelectorAll('.wallet-link');
+  var tabSelectors = Array.prototype.slice.call(document.querySelectorAll('.os-selector-tab'));
+  var linksList = Array.prototype.slice.call(document.querySelectorAll('.wallet-link'));
 
   function selectRelevantTab(os) {
-    tabSelectors.forEach(function(tab) {
+    for (var i = 0; i < tabSelectors.length; i++) {
+      var tab = tabSelectors[i];
       if (tab.dataset.tab === os) tab.classList.add('active');
       else tab.classList.remove('active');
-    });
+    }
 
     var tabContents = document.querySelectorAll('.os-selector-content');
-    tabContents.forEach(function(content) {
+    for (var j = 0; j < tabContents.length; j++) {
+      var content = tabContents[j];
       if (content.dataset.content === os) content.classList.add('visible');
       else content.classList.remove('visible');
-    });
-
+    }
     var walletAccordionButton = document.getElementById('walletAccordionButton');
     var walletAccordion = document.getElementById('walletAccordion');
-    changeAccordionButtonText(walletAccordionButton, os)
+    changeAccordionButtonText(walletAccordionButton, os);
     walletAccordionButton.dataset.buttonOs = os;
     walletAccordion.classList.remove('open');
   }
@@ -253,7 +254,7 @@ max_wallet_text_length: 418  ## Unicode characters
 
     for (var i = 0; i < tabSelectors.length; i++) {
       var tabName = tabSelectors[i].dataset.tab;
-      if (urlPath.includes(tabName)) {
+      if (urlPath.indexOf(tabName) > -1) {
         selectRelevantTab(tabName);
         break;
       }
@@ -271,18 +272,18 @@ max_wallet_text_length: 418  ## Unicode characters
       link.addEventListener('click', function(e) {
         var href = this.getAttribute("href");
         location.href = href + window.location.search;
-        e.preventDefault()
+        e.preventDefault();
       });
     });
 
-    var accordionButtons = document.querySelectorAll('.acc-btn');
+    var accordionButtons = Array.prototype.slice.call(document.querySelectorAll('.acc-btn'));
     accordionButtons.forEach(function(button) {
       button.addEventListener('click', function() {
         this.parentNode.classList.toggle('open');
       });
     });
 
-    var tableSortButtons = document.querySelectorAll('.table-sort-btn');
+    var tableSortButtons = Array.prototype.slice.call(document.querySelectorAll('.table-sort-btn'));
     tableSortButtons.forEach(function(button) {
       button.addEventListener('click', function() {
         sortTableColumn(button.dataset.sort);
@@ -295,9 +296,10 @@ max_wallet_text_length: 418  ## Unicode characters
     var platforms = document.querySelectorAll('[data-tab]');
     var isPlatformSelected = false;
 
-    platforms.forEach(function(platform) {
-      if(filters.includes(platform.dataset.tab)) isPlatformSelected = true;
-    });
+    for (var i = 0; i < platforms.length; i++) {
+      var platform = platforms[i]; 
+      if(filters.indexOf(platform.dataset.tab) > -1) isPlatformSelected = true;
+    }
 
     return isPlatformSelected;
   }
@@ -305,15 +307,16 @@ max_wallet_text_length: 418  ## Unicode characters
   function displaySimilarWallets() {
     var parameters = queryStringToArray();
     if (!checkIfPlatformSelected(parameters)) return;
-
     var currentWalletId = document.querySelector('.wallet').dataset.id;    
-    linksList.forEach(function(link) {
+
+    for (var i = 0; i < linksList.length; i++) {
+      var link = linksList[i];
       var categories = link.dataset.categories.split(' ');
       var linkId = link.dataset.id;
-
+  
       if (checkIfFiltersInclude(categories, parameters) && linkId !== currentWalletId) link.classList.add('visible');
       else link.classList.remove('visible');
-    });
+    }
 
     var visibleWalletsLinks = document.querySelectorAll('.wallet-link.visible');
     var walletsTable = document.querySelector('.wallet-selector-section');
