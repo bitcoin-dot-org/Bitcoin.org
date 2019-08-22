@@ -112,26 +112,6 @@ http://opensource.org/licenses/MIT. {% endcomment %}
         <input
           type="checkbox"
           name="important"
-          value="fees"
-          class="checkbox js-helper-checkbox js-wizard-selector"
-        />
-        <div class="checkbox-text helper-checkbox-text">
-          <p class="helper-checkbox-title">
-            {% translate wizard-criteria-fees choose-your-wallet %}
-          </p>
-          <p class="disabled-checkbox-text">
-            <span>{% translate helper-note choose-your-wallet %}:</span> {%
-            translate helper-feature-unavailable choose-your-wallet %}
-          </p>
-          <p class="helper-checkbox-description">
-            {% translate wizard-criteria-fees-description choose-your-wallet %}
-          </p>
-        </div>
-      </label>
-      <label class="checkbox-wrapper helper-checkbox-wrapper">
-        <input
-          type="checkbox"
-          name="important"
           value="privacy"
           class="checkbox js-helper-checkbox js-wizard-selector"
         />
@@ -146,6 +126,26 @@ http://opensource.org/licenses/MIT. {% endcomment %}
           <p class="helper-checkbox-description">
             {% translate wizard-criteria-privacy-description choose-your-wallet
             %}
+          </p>
+        </div>
+      </label>
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input
+          type="checkbox"
+          name="important"
+          value="fees"
+          class="checkbox js-helper-checkbox js-wizard-selector"
+        />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">
+            {% translate wizard-criteria-fees choose-your-wallet %}
+          </p>
+          <p class="disabled-checkbox-text">
+            <span>{% translate helper-note choose-your-wallet %}:</span> {%
+            translate helper-feature-unavailable choose-your-wallet %}
+          </p>
+          <p class="helper-checkbox-description">
+            {% translate wizard-criteria-fees-description choose-your-wallet %}
           </p>
         </div>
       </label>

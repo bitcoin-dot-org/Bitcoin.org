@@ -217,18 +217,6 @@ http://opensource.org/licenses/MIT.
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
-                    <input type="checkbox" name="important" value="fees" class="checkbox js-wallet-selector js-selector" />
-                    <div class="checkbox-text">{% translate wizard-criteria-fees choose-your-wallet %}</div>
-                  </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-criteria-fees-description choose-your-wallet %}
-                    </div>
-                  </div>
-                </div>
-                <div class="important-checkbox-row">
-                  <label class="checkbox-wrapper">
                     <input type="checkbox" name="important" value="privacy" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-criteria-privacy choose-your-wallet %}</div>
                   </label>
@@ -236,6 +224,18 @@ http://opensource.org/licenses/MIT.
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
                       {% translate wizard-criteria-privacy-description choose-your-wallet %}
+                    </div>
+                  </div>
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="important" value="fees" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">{% translate wizard-criteria-fees choose-your-wallet %}</div>
+                  </label>
+                  <div class="sidebar-selector-info tooltip-trigger">
+                    <img src="/img/icons/info-alt.svg" alt="info">
+                    <div class="wallet-selector-tooltip tooltip">
+                      {% translate wizard-criteria-fees-description choose-your-wallet %}
                     </div>
                   </div>
                 </div>
@@ -384,8 +384,8 @@ http://opensource.org/licenses/MIT.
                 <button class="acc-content-btn table-sort-btn" data-sort="validation">{% translate wizard-criteria-validation choose-your-wallet %}</button>
                 <button class="acc-content-btn table-sort-btn" data-sort="transparency">{% translate wizard-criteria-transparency choose-your-wallet %}</button>
                 <button class="acc-content-btn table-sort-btn" data-sort="environment">{% translate wizard-criteria-environment choose-your-wallet %}</button>
-                <button class="acc-content-btn table-sort-btn" data-sort="fees">{% translate wizard-criteria-fees choose-your-wallet %}</button>
                 <button class="acc-content-btn table-sort-btn" data-sort="privacy">{% translate wizard-criteria-privacy choose-your-wallet %}</button>
+                <button class="acc-content-btn table-sort-btn" data-sort="fees">{% translate wizard-criteria-fees choose-your-wallet %}</button>
               </div>
             </div>
           </div>
@@ -408,10 +408,10 @@ http://opensource.org/licenses/MIT.
                 <p class="wallet-table-title">{% translate wizard-criteria-environment choose-your-wallet %}</p>
               </div>
               <div class="wallet-table-head">
-                <p class="wallet-table-title">{% translate wizard-criteria-fees choose-your-wallet %}</p>
+                <p class="wallet-table-title">{% translate wizard-criteria-privacy choose-your-wallet %}</p>
               </div>
               <div class="wallet-table-head">
-                <p class="wallet-table-title">{% translate wizard-criteria-privacy choose-your-wallet %}</p>
+                <p class="wallet-table-title">{% translate wizard-criteria-fees choose-your-wallet %}</p>
               </div>
             </div>
 
