@@ -167,6 +167,12 @@ hr {
     display: -ms-flexbox;
     display: flex;
 }
+.align-items-center {
+    align-items: center;
+}
+.justify-content-end {
+    justify-content: flex-end;
+}
 .section-title {
     font-size: 162.5%;
     font-weight: normal;
@@ -1551,9 +1557,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .toccontent table thead th{
     font-weight:normal;
     border-bottom: 3px double #ddd;
-}
-.accordion-content {
-    display: none;
 }
 .anchorAf{
     position:relative;
@@ -5043,6 +5046,8 @@ br.big {
     }
 }
 
+@import 'wallet-menu-noscript';
 @import 'wallets';
-@import 'wallets-menu';
+@import 'wallet-selector';
+@import 'helper';
 @import 'donation-banner';

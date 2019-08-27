@@ -14,8 +14,9 @@ platform:
       - name: hardware
         text: "wallettrezor"
         link: "https://trezor.io/"
-        source: "https://github.com/trezor/"
-        screenshot: "trezor.png?1528322191"
+        source: "https://github.com/trezor/trezor-firmware"
+        screenshot: "trezor.png"
+        features: "bech32 hardware_wallet legacy_addresses multisig segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"

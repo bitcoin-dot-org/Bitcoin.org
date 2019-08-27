@@ -190,15 +190,6 @@ h2 .rssicon{
 .tablehalf p{
 	text-align:right;
 }
-.walletmenu {
-	direction: ltr;
-}
-.walletmenu>ul{
-	text-align:right;
-}
-.walletmenu>ul li{
-	font-family:'DroidNaskh', sans-serif;
-}
 .wallets{
 	text-align:right;
 }
@@ -314,9 +305,6 @@ h2 .rssicon{
 .btn-container {
 	direction: ltr;
 }
-.wallet-list {
-	direction: ltr;
-}
 .accordion-item {
 	margin: 0 3% 20px 0;
 }
@@ -332,12 +320,311 @@ h2 .rssicon{
 .own-text {
 	direction: rtl;
 }
+.helper-intro-text {
+	text-align: right;
+}
+.helper-next-btn {
+	margin: 0 30px 0 0;
+}
+.helper-content {
+	padding: 0 73px 0 0;
+}
+.helper-accordion::before {
+	left: auto;
+	right: -50px;
+	transform: translateX(100%);
+}
+.helper-header::after {
+	left: auto;
+	right: -30px;
+	transform: translateX(100%);
+}
+.helper-title {
+	text-align: right;
+}
+.helper-platforms-section + .helper-platforms-section {
+	margin: 0 30px 0 0;
+}
+.helper-radio-wrapper + .helper-radio-wrapper {
+	margin: 0 15px 0 0;	
+}
+.bullet {
+	padding: 0 25px 0 0;
+	text-align: right;
+}
+.bullet::before {
+	left: auto;
+	right: 0;
+}
+.helper-change-btn {
+	margin: 0 20px 0 0;
+}
+.helper-checkbox-text {
+	padding: 0 45px 0 0;
+}
+.helper-checkbox-description {
+	text-align: right;
+}
+.checkbox-text::before {
+	left: auto;
+	right: 0;
+}
+.disabled-checkbox-text {
+	text-align: right;
+}
+.discover {
+	margin: 0 30px 0 0;
+}
+.sidebar-selector {
+	margin: 0 0 0 30px;
+}
+.wallet-table-head:first-child .wallet-table-title {
+	text-align: right;
+}
+.sidebar-selector-platform+.sidebar-selector-platform {
+	margin: 0 15px 0 0;
+}
+.checkbox-text {
+	padding: 0 36px 0 0;
+}
+.sidebar-selector-text {
+	text-align: right;
+}
+.wallet-hint-text {
+	margin: 0 8px 0 0;
+}
+.wallet-img {
+	margin: 0 0 0 13px;
+}
+.wallet-table-data:first-child {
+	border-left: none;
+	border-right: 1px solid #DADADA;
+}
+.wallet-table-data:last-child {
+	border-right: none;
+	border-left: 1px solid #DADADA;
+}
+.platform-radio-wrapper + .platform-radio-wrapper {
+	margin: 0 5px 0 0;
+}
+.sidebar-selector-btn-close {
+	right: auto;
+	left: 32px;
+}
+.sidebar-selector-btn-open {
+	text-align: right;
+	padding: 28px 30px 20px 43px;
+}
+.sidebar-selector-btn-open::after {
+	right: auto;
+	left: 30px;
+}
+.wallet-selector-tooltip {
+	left: auto;
+	right: -20px;
+	text-align: right;
+}
+.tooltip::after, 
+.tooltip::before {
+	left: auto;
+	right: 22px;
+}
+.os-selector-icon {
+	margin: 0 0 0 10px;
+	transform: translateY(-4px)
+}
+.os-selector-tab {
+	line-height: 1.6;
+}
+.os-selector-link:first-child {
+	margin: 0 0 0 25px;
+}
+.os-selector {
+	margin: 0 65px 0 0;
+}
+.wallet-accordion .wallet-accordion-btn {
+	padding: 0 37px 0 25px;
+}
+.wallet-accordion-btn::before {
+	left: auto;
+	right: 15px;
+}
 /*Override UbuntuBold by Droid Naskh*/
 
 @font-face{font-family:'DroidNaskh';src:url('/font/droidnaskh/droidnaskh-regular.eot');font-weight:normal;font-style:normal;}
 @font-face{font-family:'DroidNaskh';src:url('/font/droidnaskh/droidnaskh-regular.ttf') format('truetype');font-weight:normal;font-style:normal;}
 
 /*Styles specific to mobiles*/
+
+@media screen and (max-width: 1100px) {
+	.helper-content {
+    padding: 55px 0 0;
+	}
+	.helper-accordion[data-number="1"] .helper-header::after {
+		left: auto;
+    right: 0;
+  }
+  .helper-accordion[data-number="2"] .helper-header::after {
+		left: auto;
+    right: 67px;
+  }
+  .helper-accordion[data-number="3"] .helper-header::after {
+		left: auto;
+    right: 134px;
+  }
+  .helper-accordion[data-number="4"] .helper-header::after {
+		left: auto;
+    right: 201px;
+	}
+	.helper-accordion::before {
+		transform: translateX(0);
+	}
+	.helper-accordion[data-number="1"]::before {
+		left: auto;
+    right: 42px;
+  }
+  .helper-accordion[data-number="2"]::before {
+		left: auto;
+    right: 108px;
+  }
+  .helper-accordion[data-number="3"]::before {
+		left: auto;
+    right: 176px;
+  }
+  .helper-accordion[data-number="4"]::before {
+    display: none;
+	}
+	.discover {
+		margin: 50px 0 0;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.os-selector {
+    margin: 0 0 40px;
+	}
+}
+@media screen and (max-width: 990px) {
+	.sidebar-selector {
+		margin: 0 0 60px;
+	}
+	.sidebar-selector-label {
+		margin: 0 0 0 8px;
+	}
+	.user-radio-row + .user-radio-row {
+    margin: 0 40px 0 0;
+	}
+	.user-radio-text {
+		padding: 0 36px 0 0;
+	}
+	.user-radio-text::before {
+		left: auto;
+		right: 0;
+	}
+	.user-radio-text::after {
+		left: auto;
+		right: 7px;
+	}
+	.user-radio-wrapper {
+		margin: 0 0 0 9px;
+	}
+	.checkboxes-acc-header {
+		padding: 0 7px 7px 36px;
+	}
+	.checkboxes-acc-btn {
+		right: auto;
+		left: 0;
+	}
+	.checkboxes-acc-selected-text {
+		margin: 0 0 0 10px;
+	}
+	.sidebar-selector-platform+.sidebar-selector-platform {
+		margin: 0 0 0 15px;
+	}
+	.user-radio-row+.user-radio-row {
+		margin: 0 40px 0 0;
+	}
+	.features-selectors-section {
+		margin: 0 10px 0 0;
+	}
+	.sidebar-hardware-platform .tooltip::after,
+	.sidebar-hardware-platform .tooltip::before {
+		left: auto;
+	}
+	.features-selectors-section .wallet-selector-tooltip {
+		left: -20px;
+    right: auto;
+	}
+	.features-selectors-section .tooltip::after, 
+	.features-selectors-section .tooltip::before {
+		right: auto;
+    left: 22px;
+	}
+	.important-checkbox-row .tooltip::after,
+	.important-checkbox-row .tooltip::before {
+		right: auto;
+    left: 22px;
+	}
+	.important-checkbox-row .wallet-selector-tooltip {
+		right: auto;
+    left: -20px;
+	}
+}
+@media screen and (max-width: 700px) {
+	.helper-platforms-section + .helper-platforms-section {
+		margin: 30px 0 0;
+	}
+	.helper-next-btn {
+		margin: 0 0 15px;
+	}
+	.acc-btn {
+		padding: 0 15px 0 25px;
+	}
+	.acc-btn::after {
+		right: auto;
+		left: 15px;
+	}
+	.wallet-table-data[data-cell]:not(.hidden) {
+		border-right: none;
+		border-left: 1px solid #dadada;
+	}
+	.sidebar-web-platform .wallet-selector-tooltip {
+		right: auto;
+		left: -27px;
+	}
+	.sidebar-web-platform .tooltip::after, 
+	.sidebar-web-platform .tooltip::before {
+    right: auto;
+    left: 28px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.user-radio-row + .user-radio-row {
+		margin: 10px 0 0;
+	}
+	.user-radio-row .wallet-selector-tooltip {
+		left: -7px;
+    right: auto;
+	}
+	.user-radio-row .tooltip::after,
+	.user-radio-row .tooltip::before {
+		left: 10px;
+    right: auto;
+	}
+	.features-selectors-section {
+		margin: 13px 0 0;
+	}
+	.wallet-hints-row .wallet-hint:first-child {
+		margin: 0;
+	}
+	.wallet-hints-row .wallet-hint {
+		margin: 0 30px 0 0;
+	}
+	.os-selector-link:first-child {
+		margin: 0 0 10px;
+	}
+}
 
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ){
 	h2{
@@ -371,18 +658,6 @@ h2 .rssicon{
 		border-right:0;
 		padding-right:0;
 		margin-right:0;
-	}
-	.walletmenu>ul.menutap>li:hover{
-		background-position:right 6px;
-	}
-	.walletmenu>ul.menutap>li>ul>li:hover{
-		background-position:right 10px;
-	}
-	.walletmenu>ul.menutap>li.hover{
-		background-position:right -62px;
-	}
-	.walletmenu>ul.menutap>li>ul>li.hover{
-		background-position:right -24px;
 	}
 	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div{
 		padding:8px 22px 8px 0;

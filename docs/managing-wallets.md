@@ -89,6 +89,73 @@ For examples refer to the existing wallet files or check
 **Screenshot**: The png files must go in `/img/screenshots`, be 250 X 350 px and
 optimized with `optipng -o7 file.png`.
 
+**Features**: Each wallet must properly specify its available features. The
+following features are available for assignment:
+
+* 2fa
+* bech32
+* full_node
+* hardware_wallet
+* legacy_addresses
+* lightning
+* mixing_shuffling
+* multisig
+* segwit
+
+To determine whether a wallet supports a feature, we've described each one
+below:
+
+* 2fa: Two-factor authentication (2FA) is a way to add additional security to
+  your wallet. The first 'factor' is your password for your wallet. The second
+  'factor' is a verification code retrieved via text message or from an app on a
+  mobile device. 2FA is conceptually similar to a security token device that banks
+  in some countries require for online banking. It likely requires relying on the
+  availability of a third party to provide the service.
+
+* bech32: Bech32 is a special address format made possible by SegWit (see the
+  feature description for SegWit for more info). This address format is also
+  known as 'bc1 addresses'. Some bitcoin wallets and services do not yet support
+  sending and/or receiving to or from Bech32 addresses.
+
+* full_node: Some wallets fully validate transactions and blocks. Almost all
+  full nodes help the network by accepting transactions and blocks from other
+  full nodes, validating those transactions and blocks, and then relaying them to
+  further full nodes.
+
+* hardware_wallet: Some wallets can pair and connect to a hardware wallet in
+  addition to being able to send to them. While sending to a hardware wallet is
+  something most all wallets can do, being able to pair with one is a unique
+  feature. This feature enables you to be able to send and receive directly to and
+  from a hardware wallet.
+
+* legacy_addresses: Most wallets have the ability to send and receive legacy
+  bitcoin addresses. Legacy addresses start with 1 or 3 (as opposed to starting
+  with bc1). Without legacy address support you may not be able to receive bitcoin
+  from older wallets or exchanges.
+
+* lightning: Some wallets support transactions on the Lightning Network. The
+  Lightning Network is new and somewhat experimental. It supports transferring
+  bitcoin without having to record each transaction on the blockchain, resulting
+  in faster transactions and lower fees.
+
+* mixing_shuffling: Some wallets support coin mixing and/or shuffling, which
+  pools transactions from multiple parties in order to increase privacy and
+  reduce traceability.
+
+* multisig: Some wallets have the ability to require more than one key to
+  authorize a transaction. This can be used to divide responsibility and control
+  over multiple parties.
+
+* segwit: Some wallets support SegWit, which uses block chain space more
+  efficiently. This helps reduce fees paid by helping the Bitcoin network scale
+  and sets the foundation for second layer solutions such as the Lightning
+  Network.
+
+Assignment of the features are done below the `screenshot` field and assigning
+multiple features can be done like so, for example:
+
+`features: "bech32 legacy_addresses mixing_shuffling segwit"`
+
 **Icon**: The png file must go in `/img/wallet`, be 144 X 144 px and optimized
 with `optipng -o7 file.png`. The icon must fit within 96 X 96 px inside the png,
 or 85 X 85 px for square icons.
@@ -164,3 +231,9 @@ change address for each transaction.
 Wallet entries are validated against the schema in
 `quality-assurance/schemas/wallets.yaml` and you will find a
 description of every available option in that file.
+
+### TODO
+
++ Review existing instructions
++ Add instructions for declaring features alongside wallet additions
++ Update instructions for declaring criteria

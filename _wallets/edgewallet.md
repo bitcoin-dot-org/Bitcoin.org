@@ -16,6 +16,7 @@ platform:
         link: "https://play.google.com/store/apps/details?id=co.edgesecure.app"
         source: "https://github.com/Airbitz"
         screenshot: "edgewalletandroid.png"
+        features: "2fa legacy_addresses segwit"
         check:
           control: "checkpasscontrolhybrid"
           validation: "checkpassvalidationservers"
@@ -32,6 +33,7 @@ platform:
         link: "https://itunes.apple.com/us/app/edge-bitcoin-wallet/id1344400091"
         source: "https://github.com/Airbitz"
         screenshot: "edgewalletios.png"
+        features: "2fa legacy_addresses segwit"
         check:
           control: "checkpasscontrolhybrid"
           validation: "checkpassvalidationservers"

@@ -14,7 +14,8 @@ platform:
       - name: web
         text: "walletbitgo"
         link: "https://www.bitgo.com/"
-        screenshot: "bitgo.png?1528322191"
+        screenshot: "bitgo.png"
+        features: "2fa bech32 legacy_addresses multisig segwit"
         check:
           control: "checkpasscontrolmulti"
           validation: "checkfailvalidationcentralized"
