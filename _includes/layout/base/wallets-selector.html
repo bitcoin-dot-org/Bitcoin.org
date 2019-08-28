@@ -19,7 +19,7 @@ http://opensource.org/licenses/MIT.
               <div class="sidebar-selector-platform">
                 <div class="sidebar-selector-label-row">
                   <h3 id="sidebarMobileSelectorTitle" class="sidebar-selector-label">{% translate walletcatmobile choose-your-wallet %}</h3>
-                  <div class="sidebar-selector-info tooltip-trigger">
+                  <div class="tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
                       {% translate walletcatmobile-description choose-your-wallet %}
@@ -46,7 +46,7 @@ http://opensource.org/licenses/MIT.
               <div class="sidebar-selector-platform sidebar-desktop-platform">
                 <div class="sidebar-selector-label-row">
                   <h3 id="sidebarDesktopSelectorTitle" class="sidebar-selector-label">{% translate walletcatdesktop choose-your-wallet %}</h3>
-                  <div class="sidebar-selector-info tooltip-trigger">
+                  <div class="tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
                       {% translate walletcatdesktop-description choose-your-wallet %}
@@ -82,7 +82,7 @@ http://opensource.org/licenses/MIT.
               <div class="sidebar-selector-platform sidebar-hardware-platform">
                 <div class="sidebar-selector-label-row">
                   <h3 id="sidebarHardwareSelectorTitle" class="sidebar-selector-label">{% translate walletcathardware choose-your-wallet %}</h3>
-                  <div class="sidebar-selector-info tooltip-trigger">
+                  <div class="tooltip-trigger">
                     <img src="/img/icons/info-alt.svg" alt="info">
                     <div class="wallet-selector-tooltip tooltip">
                       {% translate walletcathardware-description choose-your-wallet %}
@@ -131,10 +131,13 @@ http://opensource.org/licenses/MIT.
                 <input type="radio" class="user-radio js-wallet-selector js-selector" name="user" value="beginner"  />
                 <p class="user-radio-text">{% translate wizard-user-new choose-your-wallet %}</p>
               </label>
-              <div class="sidebar-selector-info tooltip-trigger">
-                <img src="/img/icons/info-alt.svg" alt="info">
-                <div class="wallet-selector-tooltip tooltip">
-                  {% translate wizard-user-new-description-search choose-your-wallet %}
+              <div class="sidebar-selector-info">
+                <p class="sidebar-selector-info-text">Not available</p>
+                <div class="tooltip-trigger">
+                  <img src="/img/icons/info-alt.svg" alt="info">
+                  <div class="wallet-selector-tooltip tooltip">
+                    {% translate wizard-user-new-description-search choose-your-wallet %}
+                  </div>
                 </div>
               </div>
             </div>
@@ -143,10 +146,13 @@ http://opensource.org/licenses/MIT.
                 <input type="radio" class="user-radio js-wallet-selector js-selector" name="user" value="experienced" />
                 <p class="user-radio-text">{% translate wizard-user-experienced choose-your-wallet %}</p>
               </label>
-              <div class="sidebar-selector-info tooltip-trigger">
-                <img src="/img/icons/info-alt.svg" alt="info">
-                <div class="wallet-selector-tooltip tooltip">
-                  {% translate wizard-user-experienced-description-search choose-your-wallet %}
+              <div class="sidebar-selector-info">
+                <p class="sidebar-selector-info-text">Not available</p>
+                <div class="tooltip-trigger">
+                  <img src="/img/icons/info-alt.svg" alt="info">
+                  <div class="wallet-selector-tooltip tooltip">
+                    {% translate wizard-user-experienced-description-search choose-your-wallet %}
+                  </div>
                 </div>
               </div>
             </div>
@@ -172,10 +178,13 @@ http://opensource.org/licenses/MIT.
                     <input type="checkbox" name="important" value="control" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-criteria-control choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-criteria-control-description choose-your-wallet %}
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-criteria-control-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -184,10 +193,13 @@ http://opensource.org/licenses/MIT.
                     <input type="checkbox" name="important" value="validation" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-criteria-validation choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-criteria-validation-description choose-your-wallet %}
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-criteria-validation-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -196,10 +208,13 @@ http://opensource.org/licenses/MIT.
                     <input type="checkbox" name="important" value="transparency" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-criteria-transparency choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-criteria-transparency-description choose-your-wallet %}
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-criteria-transparency-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -208,10 +223,13 @@ http://opensource.org/licenses/MIT.
                     <input type="checkbox" name="important" value="environment" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-criteria-environment choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-criteria-environment-description choose-your-wallet %}
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-criteria-environment-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -220,10 +238,13 @@ http://opensource.org/licenses/MIT.
                     <input type="checkbox" name="important" value="privacy" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-criteria-privacy choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-criteria-privacy-description choose-your-wallet %}
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-criteria-privacy-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -232,10 +253,13 @@ http://opensource.org/licenses/MIT.
                     <input type="checkbox" name="important" value="fees" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-criteria-fees choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-criteria-fees-description choose-your-wallet %}
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-criteria-fees-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -259,108 +283,153 @@ http://opensource.org/licenses/MIT.
                     <input type="checkbox" name="features" value="2fa" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-feature-2fa choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-feature-2fa-description choose-your-wallet %}
+
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-feature-2fa-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
+
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="bech32" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-feature-bech32 choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-feature-bech32-description choose-your-wallet %}
+
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-feature-bech32-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
+
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="full_node" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-feature-full-node choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-feature-full-node-description choose-your-wallet %}
+
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-feature-full-node-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
+                  
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="hardware_wallet" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-feature-hardware-wallet choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-feature-hardware-wallet-description choose-your-wallet %}
+
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-feature-hardware-wallet-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
+
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="legacy_addresses" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-feature-legacy-address choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-feature-legacy-address-description choose-your-wallet %}
+
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-feature-legacy-address-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
+                  
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="lightning" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-feature-lightning choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-feature-lightning-description choose-your-wallet %}
+
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-feature-lightning-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
+                  
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="mixing_shuffling" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-feature-mixing choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-feature-mixing-description choose-your-wallet %}
+
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-feature-mixing-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
+                  
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="multisig" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-feature-multisig choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-feature-multisig-description choose-your-wallet %}
+
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-feature-multisig-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
+                
                 </div>
                 <div class="important-checkbox-row">
                   <label class="checkbox-wrapper">
                     <input type="checkbox" name="features" value="segwit" class="checkbox js-wallet-selector js-selector" />
                     <div class="checkbox-text">{% translate wizard-feature-segwit choose-your-wallet %}</div>
                   </label>
-                  <div class="sidebar-selector-info tooltip-trigger">
-                    <img src="/img/icons/info-alt.svg" alt="info">
-                    <div class="wallet-selector-tooltip tooltip">
-                      {% translate wizard-feature-segwit-description choose-your-wallet %}
+
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-feature-segwit-description choose-your-wallet %}
+                      </div>
                     </div>
                   </div>
+                  
                 </div>
               </div>
             </div>

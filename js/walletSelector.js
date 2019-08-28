@@ -131,6 +131,7 @@ function displayRelevantWizardContent(selectedStep) {
     displaySelectedHeaderValues(accordionType, selectedFilters, accordion);
   }
   
+
   checkInputsActivity();
 }
 
@@ -198,8 +199,8 @@ function checkIfPlatformSelected(filters) {
     platforms.push(selector.value);
   }
   
-  for (var i = 0; i < platforms.length; i++) {
-    var platform = platforms[i];
+  for (var j = 0; j < platforms.length; j++) {
+    var platform = platforms[j];
     if (filters.indexOf(platform) > -1) return true;
   }
   return false;
@@ -207,15 +208,12 @@ function checkIfPlatformSelected(filters) {
 
 function highlightCheckedSelectorInputs(filters) {
   if (checkIfPlatformSelected(filters)) {  
-
     for (var i = 0; i < selectorsList.length; i++) {
       var selector = selectorsList[i];
       if (filters.indexOf(selector.value) > -1) selector.checked = true;
       else selector.checked = false;
     }
-    
-    disableInputs(false);
-  } else disableInputs(true);
+  } 
 }
 
 function setWalletsVisibility(filters) {
@@ -262,6 +260,52 @@ function displayRelevantSelectortSection(filters) {
   }
 }
 
+var inputsList = document.querySelectorAll('.js-wallet-selector');
+var walletsList = document.querySelectorAll('.wallet-link');
+
+function disableUnavailableInputs() {
+  var platform = getUrlParameter('platform');
+  if (!platform) {
+    disableInputs(true);
+    return;
+  }
+  
+  for (var i = 0; i < inputsList.length; i++) {
+    var input = inputsList[i];
+    var filtersList = queryStringToArray();
+    filtersList.push(input.value);
+    
+    var matchedWallets = [];
+    for (var j = 0; j < walletsList.length; j++) {
+      var wallet = walletsList[j];
+      var isWalletMatch = true;
+
+      for (var k = 0; k < filtersList.length; k++) {
+        var filter = filtersList[k];
+        var walletCategories = wallet.dataset.categories.split(' ');
+        if (walletCategories.indexOf(filter) === -1) {
+          isWalletMatch = false;
+          break;
+        }
+      }
+
+      isWalletMatch && matchedWallets.push(wallet);
+    }
+    
+    if (!matchedWallets.length && input.name !== 'platform') {
+      input.disabled = true;
+      input.parentNode.classList.add('disabled');
+    } else {
+      input.disabled = false;
+      input.parentNode.classList.remove('disabled');
+    }
+  }
+
+  var isNewUserInputDisabled = document.querySelector('.js-wallet-selector[value="beginner"]').disabled;
+  var experiencedUser = document.querySelector('.js-wallet-selector[value="experienced"]');
+  if (isNewUserInputDisabled) experiencedUser.checked = true;
+}
+
 function displayRelevantSelectorContent() {
   var filters = queryStringToArray();
 
@@ -269,6 +313,7 @@ function displayRelevantSelectorContent() {
   setWalletsVisibility(filters);
   displayRelevantSelectortSection(filters);
   displaySelectedCheckbox();
+  disableUnavailableInputs();
 }
 
 function checkParametersValues(parameterName, parameterValues) {
@@ -297,6 +342,7 @@ function verifyPreviousStepsChecks(step) {
   }
   return true;
 }
+
 function clearUrlParameters() {
   window.history.replaceState(null, null, window.location.pathname);
 }
@@ -434,7 +480,12 @@ function onWalletSelectorInputChange(input) {
   var selectedInputs = document.querySelectorAll('.js-wallet-selector[name="' + input.name + '"]:checked');
   var filters = collectCheckedInputsValues(selectedInputs);
 
-  setUrlParameter(input.name, filters);
+  if (input.name === 'platform') {
+    clearUrlParameters();
+    setUrlParameter('step', '5');
+    setUrlParameter('platform', input.value);
+  } else setUrlParameter(input.name, filters);
+  
   displayRelevantSelectorContent();
 }
 
@@ -550,7 +601,7 @@ function displayRelevantContent() {
   var currentStep = Number(step);
   var isWizardStep = currentStep > 0 && currentStep < 5;
   var isSelectorStep = currentStep === 5;
-  if (isWizardStep && verifyPreviousStepsChecks(step)) {
+  if (isWizardStep && verifyPreviousStepsChecks(currentStep)) {
     displayRelevantScreen('wizard');
     highlightSelectedWizardInputs();
     displayNextButton();
