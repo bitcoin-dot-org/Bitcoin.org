@@ -43,6 +43,6 @@ platform:
           fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkpassprivacydisclosurefullnode"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
 ---
