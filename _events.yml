@@ -1,11 +1,3 @@
-- date: 2019-08-17
-  title: "BitBlockBoom"
-  venue: "Renaissance Dallas Addison Hotel"
-  address: "15201 Dallas Parkway, 75001"
-  city: "Addison"
-  country: "United States"
-  link: "https://bitblockboom.com/"
-
 - date: 2019-09-11
   title: "Scaling Bitcoin: Tel Aviv"
   venue: "Tel Aviv University, Smolarz Auditorium"
@@ -13,7 +5,7 @@
   city: "Tel Aviv"
   country: "Israel"
   link: "https://scalingbitcoin.org"
-  
+
 - date: 2019-09-14
   title: "Baltic Honeybadger 2019"
   venue: "RISEBA Arhitekt&umacr;ras un mediju centrs H20 6"
@@ -21,3 +13,27 @@
   city: "Riga"
   country: "Latvia"
   link: "https://bh2019.hodlhodl.com/"
+
+- date: 2019-10-19
+  title: "The Lightning Conference"
+  venue: "Magazin in der Heeresbaeckerei"
+  address: "Koepenicker Str. 16"
+  city: "10997 Berlin"
+  country: "Germany"
+  link: "http://thelightningconference.com"
+
+- date: 2019-11-03
+  title: "BitBrum 2019"
+  venue: "The Studio"
+  address: "7 Cannon St"
+  city: "Birmingham"
+  country: "United Kingdom"
+  link: "http://www.bitbrum.org"
+
+- date: 2020-02-06
+  title: "Advancing Bitcoin Developer Conference"
+  venue: "Code Node"
+  address: "10 South Pl, London EC2M 7EB"
+  city: "London"
+  country: "United Kingdom"
+  link: "https://www.advancingbitcoin.com"
