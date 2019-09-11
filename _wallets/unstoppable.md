@@ -16,6 +16,7 @@ platform:
         link: "https://play.google.com/store/apps/details?id=io.horizontalsystems.bankwallet"
         source: "https://github.com/horizontalsystems/unstoppable-wallet-android"      
         screenshot: "unstoppable.png"
+        features: "bech32 legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"
@@ -32,6 +33,7 @@ platform:
         link: "https://itunes.apple.com/app/bank-bitcoin-wallet/id1447619907/"
         source: "https://github.com/horizontalsystems/unstoppable-wallet-ios"
         screenshot: "unstoppable.png"
+        features: "bech32 legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"          
