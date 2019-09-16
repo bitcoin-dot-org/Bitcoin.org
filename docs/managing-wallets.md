@@ -112,15 +112,21 @@ below:
   in some countries require for online banking. It likely requires relying on the
   availability of a third party to provide the service.
 
+  - To qualify for supporting this feature, the wallet must be able authorize the spending of funds based on factors of authentication other than and in addition to the wallet password or PIN.
+
 * bech32: Bech32 is a special address format made possible by SegWit (see the
   feature description for SegWit for more info). This address format is also
   known as 'bc1 addresses'. Some bitcoin wallets and services do not yet support
   sending and/or receiving to or from Bech32 addresses.
 
+  - To qualify for supporting this feature, the wallet must be able to send and receive Bech32 format addresses.  Bech32 does not need to be the default receive address format, but it should be easy and obvious for users to generate a Bech32 format receive address.
+
 * full_node: Some wallets fully validate transactions and blocks. Almost all
   full nodes help the network by accepting transactions and blocks from other
   full nodes, validating those transactions and blocks, and then relaying them to
   further full nodes.
+
+  - To qualify for supporting this feature, the wallet must fully validate transactions and blocks and by default maintain a local private representation of the blockchain.
 
 * hardware_wallet: Some wallets can pair and connect to a hardware wallet in
   addition to being able to send to them. While sending to a hardware wallet is
@@ -128,28 +134,41 @@ below:
   feature. This feature enables you to be able to send and receive directly to and
   from a hardware wallet.
 
+  - To qualify for supporting this feature, the wallet must support using a hardware wallet listed on bitcoin.org for signing transactions.
+
 * legacy_addresses: Most wallets have the ability to send and receive legacy
   bitcoin addresses. Legacy addresses start with 1 or 3 (as opposed to starting
   with bc1). Without legacy address support you may not be able to receive bitcoin
   from older wallets or exchanges.
+
+    - To qualify for supporting this feature, the wallet must be able to send and receive legacy format addresses.  This does not need to be the default receive address format, but it should be easy and obvious for users to generate a legacy format receive address.
+
 
 * lightning: Some wallets support transactions on the Lightning Network. The
   Lightning Network is new and somewhat experimental. It supports transferring
   bitcoin without having to record each transaction on the blockchain, resulting
   in faster transactions and lower fees.
 
+  - To qualify for supporting this feature, the wallet must be able to send and receive lightning network transactions.
+
 * mixing_shuffling: Some wallets support coin mixing and/or shuffling, which
   pools transactions from multiple parties in order to increase privacy and
   reduce traceability.
+
+  - To qualify for supporting this feature, the wallet must be able to participate in transactions which mix or shuffle funds with funds from other users.
 
 * multisig: Some wallets have the ability to require more than one key to
   authorize a transaction. This can be used to divide responsibility and control
   over multiple parties.
 
+  - To qualify for supporting this feature, the wallet must give the user the ability to delegate authority to other users participating in multiple party transactions.  While some services provide authorization features (such as 2FA) based on multisignature technology, that is not this feature.
+
 * segwit: Some wallets support SegWit, which uses block chain space more
   efficiently. This helps reduce fees paid by helping the Bitcoin network scale
   and sets the foundation for second layer solutions such as the Lightning
   Network.
+
+  - To qualify for supporting this feature, the wallet must be able to receive SegWit transactions (with either Bech32 format or legacy format addresses).
 
 Assignment of the features are done below the `screenshot` field and assigning
 multiple features can be done like so, for example:
