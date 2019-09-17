@@ -21,6 +21,7 @@ in the future
 - No indication that changes to the code are not properly tested
 - Wallet was publicly announced and released since at least 3 months
 - No concerning bug is found when testing the wallet
+- Provides a bug reporting method on the website and in app
 - Website supports HTTPS and 301 redirects HTTP requests
 - SSL certificate passes [Qualys SSL Labs SSL
   test](https://www.ssllabs.com/ssltest/)
@@ -29,8 +30,8 @@ in the future
 - The identity of CEOs and/or developers is public
 - Avoid address reuse by displaying a new receiving address for each transaction
   in the wallet UI
-- Uses deterministic ECDSA nonces (RFC 6979)
 - Avoid address reuse by using a new change address for each transaction
+- Uses deterministic ECDSA nonces (RFC 6979)
 - User has access to private keys
 - If private keys or encryption keys are stored online:
   - Refuses weak passwords (short passwords and/or common passwords) used to
@@ -59,7 +60,6 @@ Optional criteria (some could become requirements):
 
 - Received independent security audit(s)
 - Does not show "received from" Bitcoin addresses in the UI
-- Provides a bug reporting policy on the website
 - Website serving executable code or requiring authentication is included in the
   [HSTS preload list](https://hstspreload.org/)
 - If user has exclusive access over its private keys:
