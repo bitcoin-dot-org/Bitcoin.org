@@ -21,7 +21,7 @@ in the future
 - No indication that changes to the code are not properly tested
 - Wallet was publicly announced and released since at least 3 months
 - No concerning bug is found when testing the wallet
-- Provides a bug reporting method on the website and in app
+- Provides a bug reporting method on the website and in the app
 - Website supports HTTPS and 301 redirects HTTP requests
 - SSL certificate passes [Qualys SSL Labs SSL
   test](https://www.ssllabs.com/ssltest/)
