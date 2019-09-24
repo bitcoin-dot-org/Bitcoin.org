@@ -51,7 +51,7 @@ way.
 Wallets are given one of four ratings - good, acceptable, caution or neutral.
 These ratings are applied across six categories:
 
-+ **Criteria:** Some wallets give you full control over your bitcoin. This means
++ **Control:** Some wallets give you full control over your bitcoin. This means
   no third party can freeze or take away your funds. You are still responsible,
 however, for securing and backing up your wallet.
 + **Validation:** Some wallets have the ability to operate as a full node. This
