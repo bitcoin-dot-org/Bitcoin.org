@@ -114,6 +114,9 @@ the translation project wouldn't be possible without the help of Simon
 Hinterreiter and Koichi Hendrawan, who help manage and organize the translation
 project, as well as the teams.
 
+A special thanks is also owed to Transifex, for providing us with special access
+to their platform.
+
 ## About bitcoin.org
 
 Bitcoin.org was originally registered and owned by Satoshi Nakamoto and Martti
