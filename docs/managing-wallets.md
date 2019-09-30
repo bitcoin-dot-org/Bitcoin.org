@@ -58,7 +58,6 @@ recovery process.
 
 Optional criteria (some could become requirements):
 
-- Received independent security audit(s)
 - Does not show "received from" Bitcoin addresses in the UI
 - Website serving executable code or requiring authentication is included in the
   [HSTS preload list](https://hstspreload.org/)
