@@ -2,9 +2,9 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-id: trezor
-title: "Trezor"
-titleshort: "Trezor"
+id: trezormodelt
+title: "Trezor Model T"
+titleshort: "Trezor Model T"
 compat: "hardware"
 level: 2
 platform:
@@ -12,10 +12,10 @@ platform:
     name: hardware
     os:
       - name: hardware
-        text: "wallettrezor"
+        text: "wallettrezormodelt"
         link: "https://trezor.io/"
         source: "https://github.com/trezor/trezor-firmware"
-        screenshot: "trezor.png"
+        screenshot: "trezormodelt.png"
         features: "bech32 hardware_wallet legacy_addresses multisig segwit"
         check:
           control: "checkgoodcontrolfull"
