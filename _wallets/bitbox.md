@@ -3,8 +3,8 @@
 # http://opensource.org/licenses/MIT.
 
 id: bitbox
-title: "BitBox"
-titleshort: "BitBox"
+title: "BitBox02-BTC"
+titleshort: "BitBox02-BTC"
 compat: "hardware"
 level: 2
 platform:
@@ -16,7 +16,7 @@ platform:
         link: "https://shiftcrypto.ch/"
         source: "https://github.com/digitalbitbox/bitbox02-firmware"
         screenshot: "bitbox.png"
-        features: "bech32 hardware_wallet legacy_addresses multisig segwit"
+        features: "bech32 hardware_wallet legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
