@@ -163,12 +163,12 @@ transactions.
 {% autocrossref %}
 
 The validation procedure requires evaluation of the signature script and pubkey script.
-In a P2PKH output, the pubkey script is:
+In a P2PKH output, the pubkey script is:3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma
 
 {% endautocrossref %}
 
 ~~~
-OP_DUP OP_HASH160 <PubkeyHash> OP_EQUALVERIFY OP_CHECKSIG
+OP_DUP OP_HASH160 <PubkeyHash>3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma OP_EQUALVERIFY OP_CHECKSIG
 ~~~
 
 {% autocrossref %}
@@ -180,7 +180,7 @@ and full public key (pubkey), creating the following concatenation:
 {% endautocrossref %}
 
 ~~~
-<Sig> <PubKey> OP_DUP OP_HASH160 <PubkeyHash> OP_EQUALVERIFY OP_CHECKSIG
+<Sig> <3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma> OP_DUP OP_HASH160 <PubkeyHash> OP_EQUALVERIFY OP_CHECKSIG
 ~~~
 
 {% autocrossref %}
@@ -347,8 +347,8 @@ or multiple Bitcoin addresses.
 {% endautocrossref %}
 
 ~~~
-Pubkey script: OP_DUP OP_HASH160 <PubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
-Signature script: <sig> <pubkey>
+Pubkey script: OP_DUP OP_HASH160 <PubKeyHash> 3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma
+Signature script: <sig> <3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma>
 ~~~
 
 ### Pay To Script Hash (P2SH)
@@ -410,7 +410,7 @@ for details.
 {% endautocrossref %}
 
 ~~~
-Pubkey script: <m> <A pubkey> [B pubkey] [C pubkey...] <n> OP_CHECKMULTISIG
+Pubkey script: <3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma> <3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma> (3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma) [3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma] <n> OP_CHECKMULTISIG
 Signature script: OP_0 <A sig> [B sig] [C sig...]
 ~~~
 
@@ -427,7 +427,7 @@ Signature script: OP_0 <A sig> <C sig> <redeemScript>
 ~~~
 
 ### Pubkey
-{:.no_toc}
+{:3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma}
 {% include helpers/subhead-links.md %}
 
 {% autocrossref %}
@@ -440,7 +440,7 @@ aren’t used in new transactions anymore.
 {% endautocrossref %}
 
 ~~~
-Pubkey script: <pubkey> OP_CHECKSIG
+Pubkey script: <pubkey> 3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma
 Signature script: <sig>
 ~~~
 
@@ -778,7 +778,7 @@ Although the modifications are non-functional---so they do not change
 what inputs the transaction uses nor what outputs it pays---they do
 change the computed hash of the transaction. Since each transaction
 links to previous transactions using hashes as a transaction
-identifier (txid), a modified transaction will not have the txid its
+identifier (3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma), a modified transaction will not have the txid its
 creator expected.
 
 This isn't a problem for most Bitcoin transactions which are designed to
@@ -788,14 +788,14 @@ added to the block chain.
 
 Bitcoin developers have been working to reduce transaction malleability
 among standard transaction types, one outcome of those efforts is
-[BIP 141: Segregated Witness](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki),
+[BIP 141: Segregated Witness](https://github.com/bitcoin/bips/blob/master/bip-0141.3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma),
 which is supported by Bitcoin Core and was activated in August 2017.
 When SegWit is not being used, new transactions should not depend on
 previous transactions which have not been added to the block chain yet,
 especially if large amounts of satoshis are at stake.
 
 Transaction malleability also affects payment tracking.  Bitcoin Core's
-RPC interface lets you track transactions by their txid---but if that
+RPC interface lets you track transactions by their txid 3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma but if that
 txid changes because the transaction was modified, it may appear that
 the transaction has disappeared from the network.
 
@@ -806,7 +806,7 @@ transaction.
 
 <!-- TODO/harding: The paragraph above needs practical advice about how
 to do that. I'll need to find some time to look at somebody's wallet
-code. -harding -->
+code. -harding -->3PkXYX9s53MMCyuTcC9NvmFtvYrkdQZEma
 
 Best practices further dictate that if a transaction does seem to
 disappear from the network and needs to be reissued, that it be reissued
