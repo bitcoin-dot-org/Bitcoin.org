@@ -14,7 +14,7 @@ platform:
       - name: android
         text: "walletedgewallet"
         link: "https://play.google.com/store/apps/details?id=co.edgesecure.app"
-        source: "https://github.com/Airbitz"
+        source: "https://github.com/EdgeApp"
         screenshot: "edgewalletandroid.png"
         features: "2fa legacy_addresses segwit"
         check:
@@ -31,7 +31,7 @@ platform:
       - name: ios
         text: "walletedgewallet"
         link: "https://itunes.apple.com/us/app/edge-bitcoin-wallet/id1344400091"
-        source: "https://github.com/Airbitz"
+        source: "https://github.com/EdgeApp"
         screenshot: "edgewalletios.png"
         features: "2fa legacy_addresses segwit"
         check:
