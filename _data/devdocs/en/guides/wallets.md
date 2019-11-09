@@ -341,18 +341,18 @@ address utility].
 
 {% autocrossref %}
 
-Bitcoin ECDSA public keys represent a point on a particular Elliptic
-Curve (EC) defined in secp256k1. In their traditional uncompressed form,
-public keys contain an identification byte, a 32-byte X coordinate, and
+Bitcoin ECDSA public key represents a point on a particular Elliptic
+Curve (EC) defined in secp256k1. In its traditional uncompressed form,
+public key contains an identification byte, a 32-byte X coordinate, and
 a 32-byte Y coordinate. The extremely simplified illustration below
 shows such a point on the elliptic curve used by Bitcoin,
 y<sup>2</sup>&nbsp;=&nbsp;x<sup>3</sup>&nbsp;+&nbsp;7, over a field of
-contiguous numbers.
+real numbers.
 
 ![Point On ECDSA Curve](/img/dev/en-ecdsa-compressed-public-key.svg?{{site.time | date: '%s'}})
 
-(Secp256k1 actually modulos coordinates by a large prime, which produces a
-field of non-contiguous integers and a significantly less clear plot,
+(Secp256k1 actually uses coordinates modulo by a large prime, which produces a
+field of "discontinuous" integers and a significantly less clear plot,
 although the principles are the same.)
 
 An almost 50% reduction in public key size can be realized without
