@@ -2459,6 +2459,7 @@ br.big {
     width: 40px;
     height: 33px;
     margin-right: 28px;
+    border: 1px solid #dfdfdf;
 }
 .organization-country {
     margin: 0;
@@ -2578,6 +2579,9 @@ br.big {
     width: 40px;
     height: 33px;
     margin-right: 30px;
+}
+.marketplace-flag {
+    border: 1px solid #dfdfdf;
 }
 .marketplace-link {
     color: #3490E6;
