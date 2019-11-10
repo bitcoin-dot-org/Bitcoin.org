@@ -1,27 +1,11 @@
-- date: 2019-10-10
-  title: "Transylvania Crypto Conference"
-  venue: "Cluj-Hub"
-  address: "22-26 Regele Ferdinand Street, Central Commercial Center, 3rd Floor"
-  city: "Cluj-Napoca"
-  country: "Romania"
-  link: "https://tcconf.ro/"
-
-- date: 2019-10-19
-  title: "The Lightning Conference"
-  venue: "Magazin in der Heeresbaeckerei"
-  address: "Koepenicker Str. 16"
-  city: "10997 Berlin"
-  country: "Germany"
-  link: "http://thelightningconference.com"
-
-- date: 2019-11-03
-  title: "BitBrum 2019"
-  venue: "The Studio"
-  address: "7 Cannon St"
-  city: "Birmingham"
-  country: "United Kingdom"
-  link: "http://www.bitbrum.org"
-
+- date: 2019-11-20
+  title: "Bizar Bitcoin Bazar"
+  venue: "Bizar-Bazar"
+  address: "Ing. J.P. van Muijlwijkstraat 19-a"
+  city: "Arnhem Bitcoin City"
+  country: "the Netherlands"
+  link: "https://www.arnhembitcoinstad.nl"
+  
 - date: 2020-02-06
   title: "Advancing Bitcoin Developer Conference"
   venue: "Code Node"
@@ -29,3 +13,11 @@
   city: "London"
   country: "United Kingdom"
   link: "https://www.advancingbitcoin.com"
+
+- date: 2020-03-27
+  title: "Bitcoin 2020"
+  venue: "SVN West"
+  address: "10 S Van Ness Ave"
+  city: "San Francisco"
+  country: "USA"
+  link: "https://www.bitcoin2020conference.com/"
