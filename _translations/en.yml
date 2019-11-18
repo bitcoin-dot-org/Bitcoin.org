@@ -241,7 +241,7 @@ en:
     wizard-feature-hardware-wallet: "Hardware Wallet"
     wizard-feature-hardware-wallet-description: "Some wallets can pair and connect to a hardware wallet in addition to being able to send to them. While sending to a hardware wallet is something most all wallets can do, being able to pair with one is a unique feature. This feature enables you to be able to send and receive directly to and from a hardware wallet."
     wizard-feature-legacy-address: "Legacy Addresses"
-    wizard-feature-legacy-address-description: "Most wallets have the ability to send and receive legacy bitcoin addresses. Legacy addresses start with 1 or 3 (as opposed to starting with bc1).  Without legacy address support you may not be able to receive bitcoin from older wallets or exchanges."
+    wizard-feature-legacy-address-description: "Most wallets have the ability to send and receive with legacy bitcoin addresses. Legacy addresses start with 1 or 3 (as opposed to starting with bc1). Without legacy address support, you may not be able to receive bitcoin from older wallets or exchanges."
     wizard-feature-lightning: "Lightning"
     wizard-feature-lightning-description: "Some wallets support transactions on the Lightning Network.  The Lightning Network is new and somewhat experimental.  It supports transferring bitcoin without having to record each transaction on the blockchain, resulting in faster transactions and lower fees."
     wizard-feature-mixing: "Mixing / Shuffling"
