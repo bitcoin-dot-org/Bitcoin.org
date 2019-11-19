@@ -105,7 +105,6 @@ da:
     walletcathardware: "Hardware"
     walletcatweb: "Web"
     walletbitcoincore: "Bitcoin Core er en komplet Bitcoin-klient, og den udgør rygraden af netværket. Den tilbyder et højt niveau af sikkerhed, privatlivsbeskyttelse og stabilitet. Den har dog færre funktioner og den optager store mængder plads og hukommelse."
-    walletmultibit: "MultiBit er en letvægtsklient, som fokuserer på at være hurtig og nem at bruge. Den synkroniserer med netværket og er klar til brug på minutter. MultiBit understøtter også mange sprog. Den er et godt valg for ikke-tekniske brugere."
     walletarmory: "Armory er en avanceret Bitcoin-klient, som giver udvidede funktionaliteter for Bitcoin-superbrugere. Den tilbyder mange funktionaliteter for sikkerhedskopiering og kryptering, og den tillader sikker \"kold opbevaring\" på offline-computere."
     walletelectrum: "Electrum fokuserer på hastighed og simplicitet med lav ressourcebrug. Den gør brug af fjerne servere, som håndterer de mest komplicerede dele af Bitcoin-systemet, og den tillader dig at genskabe din tegnebog udfra en hemmelig sætning."
     walletmsigna: "mSIGNA er en advanceret tegnebog, der dog er nem at gå til, som fokuserer på simplicitet, skalabilitet på virksomhedsniveau og stærk sikkerhed. Den understøtter BIP32, transaktioner med multisignaturer, offline-opbevaring, synkronisering mellem flere enheder og krypterede elektroniske og papir-sikkerhedskopier."
