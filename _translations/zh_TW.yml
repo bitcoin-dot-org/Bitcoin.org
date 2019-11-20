@@ -105,7 +105,6 @@ zh_TW:
     walletcathardware: "硬體"
     walletcatweb: "網頁"
     walletbitcoincore: "Bitcoin Core 是原生 Bitcoin 客戶端，也是整個網路的骨幹。它提供最高等級的安全性、隱密性及穩定性。但是它的功能較少，也需要許多空間和記憶體。"
-    walletmultibit: "MultiBit 是一個輕量級的客戶端，著重在快速與容易上手。它會與網路同步，幾分鐘內就可以使用。它也支援多種語言。MultiBit 是非技術背景使用者的好選擇。"
     walletarmory: "Armory 是一個先進的 Bitcoin 客戶端，它給 Bitcoin 的高級用戶擴充了很多功能。它提供多種備份與加密功能，也允許將冷資料儲存放在離線的電腦上以保障安全。"
     walletelectrum: "Electrum 注重速度和簡單性，只佔用少量的資源。它將 Bitcoin 系統裡最複雜的計算留給遠端伺服器執行，也讓使用者可透過密語來還原錢包。"
     walletmsigna: "mSIGNA 是一個先進而方便使用的錢包，它具有高速、簡單、企業級別的可升級性和很強的安全性等特點。它支持 BIP32、多重簽署交易、線下存儲、多設備同步和加密的電子和紙質備份。"
