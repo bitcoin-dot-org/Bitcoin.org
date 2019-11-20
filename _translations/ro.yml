@@ -105,7 +105,6 @@ ro:
     walletcathardware: "Hardware"
     walletcatweb: "Web"
     walletbitcoincore: "Bitcoin Core este un client Bitcoin complet şi reprezintă coloana vertebrală a reţelei. Oferă un nivel înalt de securitate, confidenţialitate şi stabilitate. Pe de altă parte, are mai puţine servicii adiţionale şi ocupă mai mult spaţiu şi memorie."
-    walletmultibit: "MultiBit este un client uşor ce se axează pe rapidatate şi uşurinţă în utilizare. Se sincronizează cu reţeaua şi este gata de utilizare în câteva minute. MultiBit de asemenea este tradus în multe limbi. Este o alegere bună pentru utilizatori obişnuiţi."
     walletarmory: "Armory este un client Bitcoin avansat, ce are capabilităţi extinse, fiind orientat către utilizatorii Bitcoin avansaţi. Oferă multe opţiuni de backup şi de criptare şi oferă stocare la rece sigură pe calculatoare neconectate la Internet."
     walletelectrum: "Electrum se bazează pe rapiditate şi simplitate, consumând puţine resurse. Foloseşte servere la distanţă ce se ocupă de majoritatea părţilor complicate ale sistemului Bitcoin şi îţi permit să-ţi recuperezi portofelul folosind o frază secretă."
     walletmsigna: "mSIGNA este un portofel avansat şi totuşi uşor de folosit ce oferă viteză şi simplicitate, scalabilitate mărită şi un nivel de securitate sporit. Suportă BIP32, tranzacţii multi-semnătură, stocare offline, sincronizare pe dispozitive multiple şi backupuri criptate pe suport electronic dar şi hârtie."
