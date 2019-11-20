@@ -105,7 +105,6 @@ sl:
     walletcathardware: "Strojne"
     walletcatweb: "Spletne"
     walletbitcoincore: "Bitcoin Core je poln odjemalec za bitcoin in tvori hrbtenico omrežja bitcoin. Nudi visoko stopnjo varnosti, zasebnosti in stabilnosti. Ima pa manj uporabniških funkcij in visoko porabo pomnilnika ter prostora za hrambo podatkov."
-    walletmultibit: "MultiBit je lahek odjemalec s poudarkom na hitrosti in enostavnosti uporabe. V nekaj sekundah ali minutah po namestitvi se uskladi z omrežjem in je pripravljen za uporabo. Podpira tudi mnogo jezikov, med drugim slovenščino. MultiBit je dobra izbira za tehnično manj podkovane uporabnike."
     walletarmory: "Armory je napreden odjemalec za bitcoin z mnogimi funkcijami za naprednejše uporabnike, kot so različne možnosti izdelave rezervnih kopij in šifriranja ter varno \"hladno hranjenje\" novcev na sistemih brez povezave."
     walletelectrum: "Electrum se osredotoča na hitrost in enostavnost ter nizko porabo virov na računalniku. Za najbolj zapletena opravila uporablja oddaljene strežnike. Omogoča restavriranje denarnice iz skrivnega stavka (semena)."
     walletmsigna: "mSIGNA je napredna denarnica, enostavna za uporabo, ki prinaša hitrost in enostavnost, poslovno povečljivost in visoko stopnjo varnosti. Podpira BIP32, večstransko podpisovanje, hladno hrambo, usklajevanje več naprav ter šifrirane digitalne in papirne rezervne kopije."
