@@ -105,7 +105,6 @@ pl:
     walletcathardware: "Sprzęt"
     walletcatweb: "Sieć"
     walletbitcoincore: "Bitcoin Core to kompletny klient Bitcoin, który stanowi kręgosłup sieci. Oferuje on wysoki poziom bezpieczeństwa, prywatności oraz stabilności. Jednakże posiada mniejszą ilość funkcji oraz zajmuje o wiele więcej miejsca i pamięci."
-    walletmultibit: "MultiBit jest niewielką aplikacją, która koncentruje się na szybkości i łatwości obsługi. Synchronizuje się z siecią i jest gotowa do użycia w minuty. MultiBit obsługuje również wiele języków. Jest to dobry wybór dla użytkowników, którzy nie czują się zbyt pewnie w kwestiach technicznych."
     walletarmory: "Armory jest zaawansowanym klientem Bitcoin, który daje szersze możliwości zaawansowanym użytkownikom. Oferuje wiele funkcji kopii zapasowych i szyfrowania oraz umożliwia bezpieczne przechowywanie \"cold-storage\", na komputerach niepodłączonych do sieci."
     walletelectrum: "Electrum koncentruje się na szybkości oraz prostocie przy niewielkim użyciu zasobów. Wykorzystuje on zdalne serwery, które wykonują najbardziej skomplikowane zadania systemu Bitcoin, oraz pozwala Ci na odtworzenie twojego portfela przy użyciu hasła."
     walletmsigna: "mSIGNA to zaawansowany i prosty w obsłudze portfel oferujący szybkość i prostotę, skalowalność na poziomie przedsiębiorstwa oraz silne zabezpieczenia. Obsługuje on BIP32, transakcje z multipodpisem, przechowywanie offline, synchronizację pomiędzy wieloma urządzeniami oraz szyfrowane kopie zapasowe, zarówno elektroniczne, jak i papierowe."
