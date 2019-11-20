@@ -105,7 +105,6 @@ tr:
     walletcathardware: "Donanım"
     walletcatweb: "Web"
     walletbitcoincore: "Bitcoin Core tam bir Bitcoin istemcidir ve ağ'ın bel kemiğini oluşturmaktadır. Yüksek seviyede güvenlik, gizlilik ve stabilite sunar. Ancak az sayıda özelliğe sahiptir ve yüksek miktarda boş alan ve hafıza kullanıyor."
-    walletmultibit: "MultiBit hızlı ve kullanılması kolay olan hafif bir istemcidir. Ağla senkronize olup kullanılmaya hazır olması sadece birkaç dakika sürer. Ayrıca birçok dili destekler. Teknik detaylarla uğraşmak istemeyen kullanıcılar için iyi bir seçimdir."
     walletarmory: "Armory, Bitcoin kullanıcıları için özellikleri arttırılmış, gelişmiş bir Bitcoin istemcisidir. Bir çok yedekleme ve şifreleme özelliği içerir ve çevrimdışı bilgisayarlarda yedeklemeyi güvenli kılar."
     walletelectrum: "Electrum, daha az kaynak kullanarak, hız ve basitliğe önem verir. Bitcoin sisteminin en karışık kısımlarını halleden uzak bilgisayarları kullanır ve cüzdanınızı gizli bir şifreyle kurtarmanızı sağlar."
     walletmsigna: "mSIGNA gelişmiş fakat kullanımı kolay, hızlı ve sade yapıda bir cüzdandır  ayrıca güçlü güvenliği sayesinde firmalar için uygundur. BIP32 desteği, çoklu-imza işlemleri, offline depolama, çoklu cihaz senkronizasyonu, şifreli elektronik ve kağıt yedekleme desteği bulunmaktadır."
