@@ -7,8 +7,8 @@ required:
     title_max_40_characters_no_formatting: Block Size Limit
 
     summary_max_255_characters_no_formatting: >
-        The maximum size in bytes that the consensus rules allow a block to be.
-        The current block size limit is 1000000 bytes.
+        The maximum size of a block according to the consensus rules.
+        The current block size limit is 4 million weight units (1 million vbytes).
 
     synonyms_shown_in_glossary_capitalize_first_letter:
         - Maximum Block Size

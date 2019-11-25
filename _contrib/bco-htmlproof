@@ -24,7 +24,7 @@ HTML::Proofer.new(
 
         ## Check whether HTML is well-formed
         :check_html => true,
-
+        
         ## Links to ignore
         :href_ignore => [
           '#',           ## hrefs pointing to the current page (htmlproofer fails them)
@@ -60,6 +60,6 @@ HTML::Proofer.new(
         ## for settings specific to particular systems, but for now I
         ## think 2 is a good setting for Travis CI ("1.5 processors")
         ## and me (usually 2 processors)
-        :parallel => { :in_processes => 2 }
+        :parallel => { :in_processes => 2 },
     }
 ).run

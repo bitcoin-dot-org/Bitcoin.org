@@ -2,70 +2,61 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-layout: wallet-platform-container
+layout: base
 max_wallet_text_length: 418  ## Unicode characters
 ---
-<div class="wallet">
-  <div class="wallet-wrapper">
-    <div class="wallet-filter">
-    </div>
-    <div class="hero">
-      <div class="container wallet-logo-container hero-container">
-        <img class="wallet-logo" src="/img/wallet/{{ page.wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ page.wallet.title }}" />
-        <h1 class="wallet-title">
-          {{ page.wallet.title }}
-        </h1>
-        <p class="wallet-description">
-          {% translate wallet{{page.wallet.id}} choose-your-wallet %}
-        </p>
-        {% include helpers/hero-social.html %}
-      </div>
-    </div>
-    <div class="wallet-navigation-wrapper">
-      <div class="wallet-navigation">
-        {% include layout/base/wallets-menu-mobile.html %} 
-        {% include layout/base/wallets-list.html %}
-      </div>
+<div class="wallet" data-id="{{page.wallet.id}}">
+  <div class="hero">
+    <div class="container wallet-logo-container hero-container">
+      <img class="wallet-logo" src="/img/wallet/{{ page.wallet.id }}.png" alt="{{ page.wallet.title }}" />
+      <h1 class="wallet-title">
+        {{ page.wallet.title }}
+      </h1>
+      <p class="wallet-description">
+        {% translate wallet{{page.wallet.id}} choose-your-wallet %}
+      </p>
+      {% include helpers/hero-social.html %}
     </div>
   </div>
 
-    
+
 
   <div class="wallet-platforms">
-    
     <div class="container">
-      {% assign platform = page.platform %} {% assign os = page.os %}
-      <div class="wallet-os-list">
-        <div class="wallet-os-container clearfix" id="{{ os.name }}">
-          <div class="wallet-os-btn-block">
-            <div class="wallet-os-download-buttons">
-              {% if os.link == 'bitcoincore' %}
-              <a class="wallet-os-download-link btn-bright" href="/{{ page.lang }}/{% translate download url %}">{% translate walletdownload choose-your-wallet %}</a>
-              {% elsif os.link contains 'play.google.com' or os.link contains 'itunes.apple.com' or os.link contains 'chrome.google.com'
-              %}
-              <a class="wallet-os-download-link btn-bright" href="{{ os.link }}">{% translate walletdownload choose-your-wallet %}</a>
-              {% else %}
-              <a class="wallet-os-download-link btn-bright" href="{{ os.link }}">{% translate walletvisit choose-your-wallet %}</a>
-              {% endif %} {% if os.source %}
-              <a class="wallet-os-source-link btn-light" href="{{ os.source }}"> {% translate walletsourcecode choose-your-wallet %}</a>
-              {% endif %}
+      {% assign platform = page.platform %} {% assign pageOs = page.os %}
+      <div class="wallet-platforms-row">
+        <div class="wallet-points">
+          <div class="wallet-hints-row">
+            <div class="wallet-hint">
+              <div class="wallet-good"></div>
+              <p class="wallet-hint-text">{% translate wallet-scoring-good choose-your-wallet %}</p>
+            </div>
+            <div class="wallet-hint">
+              <div class="wallet-pass"></div>
+              <p class="wallet-hint-text">{% translate wallet-scoring-pass choose-your-wallet %}</p>
+            </div>
+            <div class="wallet-hint">
+              <div class="wallet-caution"></div>
+              <p class="wallet-hint-text">{% translate wallet-scoring-fail choose-your-wallet %}</p>
+            </div>
+            <div class="wallet-hint">
+              <div class="wallet-neutral"></div>
+              <p class="wallet-hint-text">{% translate wallet-scoring-neutral choose-your-wallet %}</p>
             </div>
           </div>
-          <div class="wallet-os-screenshot">
-            <img src="/img/screenshots/{{ os.screenshot }}" alt="screenshot">
-          </div>
+
           <div class="wallet-os-overview">
             <div class="wallet-os-checks">
-              {% for check in os.check %} {% assign checkName = check[0] %} {% assign checkValue = check[1] %}
-              <div class="check{{ checkName }} {% if checkValue contains "checkgood" %}checkgood{% elsif checkValue contains "checkpass" %}checkpass{% elsif checkValue contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}" onclick="walletScoreListener(event);" ontouchstart="walletScoreListener(event);">
+              {% for check in pageOs.check %} {% assign checkName = check[0] %} {% assign checkValue = check[1] %}
+              <div class="wallet-os-check-item check{{ checkName }} {% if checkValue contains 'checkgood' %}checkgood{% elsif checkValue contains 'checkpass' %}checkpass{% elsif checkValue contains 'checkneutral' %}checkneutral{% else %}checkfail{% endif %}">
                 <p class="wallet-os-check-title">
                   {% translate {{checkValue}} choose-your-wallet %}
                 </p>
                 <div class="wallet-os-check-details">
                   <p>{% translate {{checkValue}}txt choose-your-wallet %}</p>
-                  {% if checkName == 'privacy' and os.privacycheck %} {% for privacycheck in os.privacycheck %}
-                  <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains "checkgood" %}checkgood{% elsif privacycheck[1] contains "checkpass" %}checkpass{% elsif privacycheck[1] contains "checkneutral" %}checkneutral{% else %}checkfail{% endif %}">
-                    <p>{% translate {{privacycheck[1]}} choose-your-wallet %}</p>
+                  {% if checkName == 'privacy' and pageOs.privacycheck %} {% for privacycheck in pageOs.privacycheck %}
+                  <div class="check{{ privacycheck[0] }} {% if privacycheck[1] contains 'checkgood' %}checkgood{% elsif privacycheck[1] contains 'checkpass' %}checkpass{% elsif privacycheck[1] contains 'checkneutral' %}checkneutral{% else %}checkfail{% endif %}">
+                    <p class="wallet-privacy-subhead">{% translate {{privacycheck[1]}} choose-your-wallet %}</p>
                     <p>{% translate {{privacycheck[1]}}txt choose-your-wallet %}</p>
                   </div>
                   {% endfor %} {% endif %}
@@ -75,18 +66,268 @@ max_wallet_text_length: 418  ## Unicode characters
             </div>
           </div>
         </div>
+
+        <div class="os-selector">
+          <div id="walletAccordion" class="acc wallet-accordion">
+            <button id="walletAccordionButton" class="acc-btn wallet-accordion-btn" data-button-os=""></button>
+            <div class="acc-content wallet-accordion-content">
+              <div class="os-selector-tabs">
+                {% for platform in page.wallet.platform %}
+                  {% for platformOs in platform.os %}
+                    <button class="acc-content-btn os-selector-tab" data-tab="{{platformOs.name}}">
+                      <img src="/img/os/wallet_menu_{{platformOs.name}}.svg" alt="{{platformOs.name}} logo" class="os-selector-icon os-selector-{{platformOs.name}}-icon os-selector-icon-inactive">
+                      <img src="/img/os/wallet_menu_{{platformOs.name}}_bright.svg" alt="{{platformOs.name}} logo" class="os-selector-icon os-selector-{{platformOs.name}}-icon os-selector-icon-active">
+                      {{platformOs.name}}
+                    </button>
+                  {% endfor %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+
+          {% for platform in page.wallet.platform %}
+            {% for platformOs in platform.os %}
+              {% capture url %}{{ page.url | split: "/"}}{% endcapture %}
+              {% if url contains platformOs.name %}
+                {% assign tabContentClass = 'visible' %}
+              {% else %}
+                {% assign tabContentClass = '' %}
+              {% endif %}
+              <div class="os-selector-content {{tabContentClass}}" data-content="{{platformOs.name}}">
+                <div class="os-selector-links-row">
+                  {% if platformOs.link == 'bitcoincore' %}
+                    <a class="os-selector-link btn-bright" href="/{{ page.lang }}/{% translate download url %}">{% translate walletdownload choose-your-wallet %}</a>
+                  {% elsif platformOs.link contains 'play.google.com' or platformOs.link contains 'itunes.apple.com' or platformOs.link contains 'chrome.google.com' %}
+                    <a class="os-selector-link btn-bright" href="{{ platformOs.link }}">{% translate walletdownload choose-your-wallet %}</a>
+                  {% else %}
+                    <a class="os-selector-link btn-bright" href="{{ platformOs.link }}">{% translate walletvisit choose-your-wallet %}</a>
+                  {% endif %}
+                  {% if platformOs.source %}
+                    <a class="os-selector-link btn-light" href="{{ platformOs.source }}"> {% translate walletsourcecode choose-your-wallet %}</a>
+                  {% endif %}
+                </div>
+                <img src="/img/screenshots/{{platformOs.screenshot}}" class="os-screenshot" alt="screenshot">
+              </div>
+            {% endfor %}
+          {% endfor %}
+        </div>
       </div>
+
+
+      <div class="wallet-table-wrapper wallet-selector-section similar-wallets-table">
+
+        <h2 id="walletTableLabel" class="wallet-table-label">{% translate wallet-selector-similar choose-your-wallet %} {{os.name}} {% translate wallet-selector-results-wallets choose-your-wallet %}</h2>
+
+        <div class="table-sort">
+          <h3 id="tableSortTitle" class="table-sort-title">{% translate wallet-selector-sort choose-your-wallet %}:</h3>
+          <div id="tableAccordion" class="acc">
+            <button id="tableAccordionButton" class="acc-btn">{% translate wizard-criteria-control choose-your-wallet %}</button>
+            <div class="acc-content">
+              <button class="acc-content-btn table-sort-btn" data-sort="control">{% translate wizard-criteria-control choose-your-wallet %}</button>
+              <button class="acc-content-btn table-sort-btn" data-sort="validation">{% translate wizard-criteria-validation choose-your-wallet %}</button>
+              <button class="acc-content-btn table-sort-btn" data-sort="transparency">{% translate wizard-criteria-transparency choose-your-wallet %}</button>
+              <button class="acc-content-btn table-sort-btn" data-sort="environment">{% translate wizard-criteria-environment choose-your-wallet %}</button>
+              <button class="acc-content-btn table-sort-btn" data-sort="privacy">{% translate wizard-criteria-privacy choose-your-wallet %}</button>
+              <button class="acc-content-btn table-sort-btn" data-sort="fees">{% translate wizard-criteria-fees choose-your-wallet %}</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="wallet-table">
+          <div class="wallet-table-row">
+            <div class="wallet-table-head">
+              <p class="wallet-table-title">Similar {{os.name}} wallets</p>
+            </div>
+            <div class="wallet-table-head">
+              <p class="wallet-table-title">{% translate wizard-criteria-control choose-your-wallet %}</p>
+            </div>
+            <div class="wallet-table-head">
+              <p class="wallet-table-title">{% translate wizard-criteria-validation choose-your-wallet %}</p>
+            </div>
+            <div class="wallet-table-head">
+              <p class="wallet-table-title">{% translate wizard-criteria-transparency choose-your-wallet %}</p>
+            </div>
+            <div class="wallet-table-head">
+              <p class="wallet-table-title">{% translate wizard-criteria-environment choose-your-wallet %}</p>
+            </div>
+            <div class="wallet-table-head">
+              <p class="wallet-table-title">{% translate wizard-criteria-privacy choose-your-wallet %}</p>
+            </div>
+            <div class="wallet-table-head">
+              <p class="wallet-table-title">{% translate wizard-criteria-fees choose-your-wallet %}</p>
+            </div>
+          </div>
+
+          {% for wallet in site.wallets %}
+            {% for platform in wallet.platform %}
+              {% for os in platform.os %}
+                <a
+                  href="{% if platform.name == os.name %}/{{page.lang}}/wallets/{{platform.name}}/{{wallet.id}}/{% else %}/{{page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{wallet.id}}/{% endif %}"
+                  class="wallet-table-row wallet-link"
+                  data-categories="{% if wallet.user %}{{wallet.user}}{% endif %} experienced {% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' %}{{checkName}} {% endif %}{% endfor %}{{os.name}} {{os.features}}"
+                  data-id="{{wallet.id}}"
+                >
+                  <div class="wallet-table-data">
+                    <img class="wallet-img" src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" />
+                    <span class="wallet-label">{{wallet.titleshort}}</span>
+                  </div>
+                  {% for check in os.check %}
+                    {% assign checkName = check[0] %}
+                    {% assign checkValue = check[1] %}
+                    <div class="wallet-table-data" data-cell="{{checkName}}">
+                      <div class="wallet-score-wrapper">
+                        {% if checkValue contains 'checkgood' %}
+                          <span class="wallet-table-text">{% translate wallet-scoring-good choose-your-wallet %}</span>
+                          <div class="wallet-score wallet-good"></div>
+                        {% elsif checkValue contains 'checkpass' %}
+                          <span class="wallet-table-text">{% translate wallet-scoring-pass choose-your-wallet %}</span>
+                          <div class="wallet-score wallet-pass"></div>
+                        {% elsif checkValue contains 'checkfail' %}
+                          <span class="wallet-table-text">{% translate wallet-scoring-fail choose-your-wallet %}</span>
+                          <div class="wallet-score wallet-caution"></div>
+                        {% elsif checkValue contains 'checkneutral' %}
+                          <span class="wallet-table-text">{% translate wallet-scoring-neutral choose-your-wallet %}</span>
+                          <div class="wallet-score wallet-neutral"></div>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endfor %}
+                </a>
+              {% endfor %}
+            {% endfor %}
+          {% endfor %}
+        </div>
+
+        <div class="wallet-hints-row">
+          <div class="wallet-hint">
+            <div class="wallet-good"></div>
+            <p class="wallet-hint-text">{% translate wallet-scoring-good choose-your-wallet %}</p>
+          </div>
+          <div class="wallet-hint">
+            <div class="wallet-pass"></div>
+            <p class="wallet-hint-text">{% translate wallet-scoring-pass choose-your-wallet %}</p>
+          </div>
+          <div class="wallet-hint">
+            <div class="wallet-caution"></div>
+            <p class="wallet-hint-text">{% translate wallet-scoring-fail choose-your-wallet %}</p>
+          </div>
+          <div class="wallet-hint">
+            <div class="wallet-neutral"></div>
+            <p class="wallet-hint-text">{% translate wallet-scoring-neutral choose-your-wallet %}</p>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="walletsdisclaimer">
-    <h2 id="educate-yourself">{% translate educate choose-your-wallet %}</h2>
-    <p>
-      {% translate educatetxt choose-your-wallet %}
-    </p>
-  </div>
-</div>
+<script data-proofer-ignore>
+  var tabSelectors = Array.prototype.slice.call(document.querySelectorAll('.os-selector-tab'));
+  var linksList = Array.prototype.slice.call(document.querySelectorAll('.wallet-link'));
 
-{% include layout/base/wallets-filter.html %} 
+  function selectRelevantTab(os) {
+    for (var i = 0; i < tabSelectors.length; i++) {
+      var tab = tabSelectors[i];
+      if (tab.dataset.tab === os) tab.classList.add('active');
+      else tab.classList.remove('active');
+    }
+
+    var tabContents = document.querySelectorAll('.os-selector-content');
+    for (var j = 0; j < tabContents.length; j++) {
+      var content = tabContents[j];
+      if (content.dataset.content === os) content.classList.add('visible');
+      else content.classList.remove('visible');
+    }
+    var walletAccordionButton = document.getElementById('walletAccordionButton');
+    var walletAccordion = document.getElementById('walletAccordion');
+    changeAccordionButtonText(walletAccordionButton, os);
+    walletAccordionButton.dataset.buttonOs = os;
+    walletAccordion.classList.remove('open');
+  }
+
+  function displayDefaultTabContent() {
+    var tabSelector = document.querySelector('.wallet-accordion');
+    tabSelector.classList.add('visible');
+    var urlPath = window.location.pathname.split('/');
+
+    for (var i = 0; i < tabSelectors.length; i++) {
+      var tabName = tabSelectors[i].dataset.tab;
+      if (urlPath.indexOf(tabName) > -1) {
+        selectRelevantTab(tabName);
+        break;
+      }
+    }
+  }
+
+  function setListners() {
+    tabSelectors.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        selectRelevantTab(this.dataset.tab);
+      });
+    })
+
+    linksList.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var href = this.getAttribute("href");
+        location.href = href + window.location.search;
+        e.preventDefault();
+      });
+    });
+
+    var accordionButtons = Array.prototype.slice.call(document.querySelectorAll('.acc-btn'));
+    accordionButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        this.parentNode.classList.toggle('open');
+      });
+    });
+
+    var tableSortButtons = Array.prototype.slice.call(document.querySelectorAll('.table-sort-btn'));
+    tableSortButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        sortTableColumn(button.dataset.sort);
+      });
+    });
+
+  }
+  
+  function checkIfPlatformSelected(filters) {
+    var platforms = document.querySelectorAll('[data-tab]');
+    var isPlatformSelected = false;
+
+    for (var i = 0; i < platforms.length; i++) {
+      var platform = platforms[i]; 
+      if(filters.indexOf(platform.dataset.tab) > -1) isPlatformSelected = true;
+    }
+
+    return isPlatformSelected;
+  }
+  
+  function displaySimilarWallets() {
+    var parameters = queryStringToArray();
+    if (!checkIfPlatformSelected(parameters)) return;
+    var currentWalletId = document.querySelector('.wallet').dataset.id;    
+
+    for (var i = 0; i < linksList.length; i++) {
+      var link = linksList[i];
+      var categories = link.dataset.categories.split(' ');
+      var linkId = link.dataset.id;
+  
+      if (checkIfFiltersInclude(categories, parameters) && linkId !== currentWalletId) link.classList.add('visible');
+      else link.classList.remove('visible');
+    }
+
+    var visibleWalletsLinks = document.querySelectorAll('.wallet-link.visible');
+    var walletsTable = document.querySelector('.wallet-selector-section');
+    if (visibleWalletsLinks.length) walletsTable.classList.add('visible');
+  }
+
+  function init() {
+    displayDefaultTabContent();
+    displaySimilarWallets();
+    sortTableColumn('control');
+    setListners();
+  }
+  init();
+</script>
