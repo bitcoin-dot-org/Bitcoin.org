@@ -32,7 +32,7 @@ in the future
   in the wallet UI
 - Avoid address reuse by using a new change address for each transaction
 - Uses deterministic ECDSA nonces (RFC 6979)
-- User has access to private keys
+- User has access to private keys for all major components of the wallet
 - If private keys or encryption keys are stored online:
   - Refuses weak passwords (short passwords and/or common passwords) used to
     secure access to any funds, or provides an aggressive account lock-out
