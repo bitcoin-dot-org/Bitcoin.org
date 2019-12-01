@@ -191,7 +191,7 @@ chain, and then start mSigna---it will automatically connect to your
 Bitcoin Core full node.
 
 {:.right-hanger}
-[Get mSigna](https://ciphrex.com/redirect/?referer=bitcoin.org)
+[Get mSigna](https://github.com/ciphrex/mSIGNA)
 </div>
 
 </div>
