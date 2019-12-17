@@ -107,7 +107,6 @@ zh_TW:
     walletbitcoincore: "Bitcoin Core 是原生 Bitcoin 客戶端，也是整個網路的骨幹。它提供最高等級的安全性、隱密性及穩定性。但是它的功能較少，也需要許多空間和記憶體。"
     walletarmory: "Armory 是一個先進的 Bitcoin 客戶端，它給 Bitcoin 的高級用戶擴充了很多功能。它提供多種備份與加密功能，也允許將冷資料儲存放在離線的電腦上以保障安全。"
     walletelectrum: "Electrum 注重速度和簡單性，只佔用少量的資源。它將 Bitcoin 系統裡最複雜的計算留給遠端伺服器執行，也讓使用者可透過密語來還原錢包。"
-    walletmsigna: "mSIGNA 是一個先進而方便使用的錢包，它具有高速、簡單、企業級別的可升級性和很強的安全性等特點。它支持 BIP32、多重簽署交易、線下存儲、多設備同步和加密的電子和紙質備份。"
     walletbitcoinwallet: "Bitcoin Wallet 是容易使用和可信賴的，它也一直很安全和快速。它的版本是去中心化和零信任的，與 Bitcoin 有關的操作不需要一個中央服務。這個程式對非技術人員是一個很好的選擇。"
     walletbrd: "簡單是 BRD 的核心設計理念。作為一個真正獨立的 Bitcoin 客戶端，沒有伺服器可以駭或者當。而且，通過建立在 iOS 的高安全基礎之上，BRD 是專門設計來讓您免受惡意軟件、瀏覽器安全漏洞甚至是真實小偷的安全威脅。"
     walletmyceliumwallet: "Mycelium Bitcoin Wallet 是一個給 Android 設計的開放原始碼錢包，它安全、高速且容易使用。它有密鈅管理功能和冷儲存功能，這些獨特的功能能保障您的比特幣安全。"
