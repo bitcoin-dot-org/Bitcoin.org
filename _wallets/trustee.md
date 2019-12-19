@@ -19,11 +19,11 @@ platform:
         features: "legacy_addresses"
         check:
           control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationspvservers"
+          validation: "checkfailvalidationcentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
-          fees: "checkgoodfeecontrolfull"
+          fees: "checkpassfeecontroloverride"
         privacycheck:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -36,11 +36,11 @@ platform:
         features: "legacy_addresses"
         check:
           control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationspvservers"
+          validation: "checkfailvalidationcentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
-          fees: "checkgoodfeecontrolfull"
+          fees: "checkpassfeecontroloverride"
         privacycheck:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
