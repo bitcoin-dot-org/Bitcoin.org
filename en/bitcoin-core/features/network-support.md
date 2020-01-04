@@ -18,7 +18,6 @@ breadcrumbs:
 <div class="container hero-container" markdown="block">
 
 # Donate Bandwidth Using Bitcoin Core
-{% include helpers/hero-social.html %}
 </div>
 </div>
 

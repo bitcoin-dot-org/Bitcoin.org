@@ -17,7 +17,6 @@ breadcrumbs:
 <div class="container hero-container" markdown="block">
 
 # Contributing To Bitcoin Core
-{% include helpers/hero-social.html %}
 </div>
 </div>
 

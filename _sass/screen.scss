@@ -489,13 +489,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .hero h1 {
     margin-bottom: 20px;
 }
-.hero-social {
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
 .footer {
     position: relative;
     padding-top: 60px;
@@ -631,12 +624,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .footer-bottom-row .lang > li > ul{
     top: 0;
     transform: translateY(-100%);
-}
-.footer-social-link {
-    height: 30px;
-}
-.footer-social-link:not(:last-child) {
-    margin-right: 10px;
 }
 .statusmenu {
     color: inherit;
@@ -3521,12 +3508,6 @@ br.big {
     .footerlicense {
         max-width: 410px;
     }
-    .footer-social {
-        order: 1;
-        width: 100%;
-        margin-top: 20px;
-        justify-content: flex-end;
-    }
     .home-title {
         margin: 0 0 43px;
     }
@@ -3611,7 +3592,7 @@ br.big {
     .mainhero {
         padding: 110px 0 100px;
     }
-    .mainhero .hero-social {
+    .mainhero {
         top: auto;
         right: 30px;
         bottom: 0;
@@ -3925,9 +3906,6 @@ br.big {
     .footerlicense {
         max-width: 100%;
         text-align: center;
-    }
-    .footer-social {
-        justify-content: center;
     }
     .maindesc-text {
         max-width: 90%;
@@ -4311,9 +4289,6 @@ br.big {
     }
     .own-timeline-number::after {
         width: 80px;
-    }
-    .hero-social {
-        display: none;
     }
 }
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){

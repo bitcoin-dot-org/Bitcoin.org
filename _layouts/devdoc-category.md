@@ -25,7 +25,6 @@ end_of_page: |
     <h1>{% translate pagetitle %}</h1>
     {% endif %}
     <p class="summary">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
   </div>
 </div>
 

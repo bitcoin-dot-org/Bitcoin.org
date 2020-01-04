@@ -21,7 +21,6 @@ moved_url: https://bitcoincore.org/en/2015/12/23/capacity-increases-faq/
 
 # Capacity increases FAQ
 
-{% include helpers/hero-social.html %}
 </div>
 </div>
 
