@@ -87,8 +87,8 @@ da:
     chanmarket: "(markedsnoteringer i realtid)"
     chanmining: "(relateret til Bitcoin-mining)"
     social: "Sociale netværk"
-    linktwitter: "Twitter-søgning"
-    facebook: "<a href=\"https://www.facebook.com/bitcoins\">Facebook-side</a>"
+    linktwitter: "Twitter"
+    facebook: '<a href="https://www.facebook.com/hashtag/bitcoin">Facebook</a>'
     meetups: "Sammenkomster"
     meetupevents: "Bitcoin-konferencer og -begivenheder"
     meetupgroup: "Bitcoin-sammenkomstgrupper"
