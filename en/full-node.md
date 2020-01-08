@@ -100,7 +100,6 @@ Core running.
 
 # Running A Full Node
 <p class="summary">Support the Bitcoin network by running your own full node</p>
-{% include helpers/hero-social.html %}
 </div>
 </div>
 
