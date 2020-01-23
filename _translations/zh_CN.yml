@@ -153,7 +153,7 @@ zh_CN:
     wallettrezorone: "TREZOR 是一个硬件钱包，它具有高安全性，同时又不会以牺牲方便性为代价。与冷储存（cold storage）不同，TREZOR在连接到一个在线设备时是可以实现交易的。这意味着即便是在使用不安全的电脑的时候，使用比特币都是十分安全的。"
     walletkeepkey: "KeepKey是一个物理钱包，它让比特币的安全性变得容易。当您委托KeepKey管理你的货币时，每次比特币交易您都要回顾并通过OLED显示屏批准，并且要按确认按键。"
     walletledgernanos: "Ledger Nano S是一个安全的比特币硬件钱包。它通过USB来连接电脑并有一个内嵌的OLED显示屏来双重验证每一次交易。"
-    walletbitbox: "BitBox是一个来自瑞士的，强调安全和隐私的极简主义硬件钱包。它的特性包括完全离线且简化的备份、可否任性（plausible deniability）、多重签名支持、原生桌面应用、可用于验证的移动端应用以及双因素认证（2FA）。"
+    walletbitbox: "BitBox02是一款硬件钱包，在瑞士研发和制造。它配备了OLED显示屏、隐形触摸传感器、支持USB-C和USB-A接口、可通过microSD卡和BIP39助记词进行离线备份。通过配套的BitBoxApp，您可以轻松设置BitBox02钱包并进行数字货币的管理。"
     walletbither: "Bither 是一个可以运行在许多平台上的简单又安全的钱包。使用了具体的冷/热方法设计，用户可以使用2种安全方法并且简单易用。Bither的XRANDOM使用了不同的加密源来生成真随机数字给用户。同时使用HDM，用户可以拥有HD的优势与多重签名的安全性。"
     walletwasabi: "Wasabi软件是一个着重于隐私保护的比特币钱包工具。"
     walletdownload: "安装"
