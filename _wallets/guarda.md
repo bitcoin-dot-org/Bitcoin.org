@@ -42,8 +42,8 @@ platform:
         text: "walletguarda"
         link: "https://play.google.com/store/apps/details?id=com.crypto.multiwallet"
         source: "https://github.com/guardaco/"
-        screenshot: "electrumandroid.png"
-        features: "2fa bech32 legacy_addresses segwit"
+        screenshot: "guarda.png"
+        features: "bech32 legacy_addresses hardware_wallet segwit multisig"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvservers"
