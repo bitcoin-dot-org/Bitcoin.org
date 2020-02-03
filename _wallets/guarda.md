@@ -1,6 +1,7 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
+
 id: guarda
 title: "Guarda Wallet"
 titleshort: "Guarda"
@@ -12,10 +13,10 @@ platform:
     name: desktop
     default: &DEFAULT
       text: "walletguarda"
-      link: "https://electrum.org"
-      source: "https://github.com/spesmilo/electrum"
-      screenshot: "electrum.png"
-      features: "2fa bech32 hardware_wallet legacy_addresses multisig segwit"
+      link: "https://guarda.co/"
+      source: "https://github.com/guardaco/"
+      screenshot: "guarda.png"
+      features: "bech32 hardware_wallet legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkpassvalidationspvservers"
@@ -38,11 +39,11 @@ platform:
     name: mobile
     os:
       - name: android
-        text: "walletelectrum"
-        link: "https://play.google.com/store/apps/details?id=org.electrum.electrum"
-        source: "https://github.com/spesmilo/electrum"
+        text: "walletguarda"
+        link: "https://play.google.com/store/apps/details?id=com.crypto.multiwallet"
+        source: "https://github.com/guardaco/"
         screenshot: "electrumandroid.png"
-        features: "bech32 legacy_addresses segwit"
+        features: "2fa bech32 legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvservers"
@@ -55,12 +56,3 @@ platform:
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
 ---
-  ## TODO: we should probably use names here and translate to
-  ##       numbers (if required) in the template
-  level:
-    description: |
-      The wallet's overall security level.
-        1 - full nodes
-        2 - SPV using random servers (e.g. P2P SPV, Electrum servers, etc...)
-        3 - Hybrid & multisig wallets
-        4 - Web wallets
