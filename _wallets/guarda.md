@@ -5,7 +5,7 @@
 id: guarda
 title: "Guarda Wallet"
 titleshort: "Guarda"
-compat: "web chrome desktop windows mac linux mobile android iOS"
+compat: "web desktop windows mac linux mobile android ios chrome"
 user: beginner
 level: 2
 platform:
@@ -19,11 +19,11 @@ platform:
       features: "bech32 hardware_wallet legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"
-        validation: "checkpassvalidationspvservers"
+        validation: "checkgoodvalidationspvservers"
         transparency: "checkpasstransparencyopensource"
         environment: "checkpassenvironmenttwofactor"
         privacy: "checkpassprivacybasic"
-        fees: "checkgoodfeecontrolfull"
+        fees: "checkpassfeecontrolfull"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
         privacydisclosure: "checkfailprivacydisclosurecentralized"
@@ -43,14 +43,31 @@ platform:
         link: "https://play.google.com/store/apps/details?id=com.crypto.multiwallet"
         source: "https://github.com/guardaco/"
         screenshot: "guarda.png"
-        features: "bech32 legacy_addresses hardware_wallet segwit multisig"
+        features: "bech32 legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationspvservers"
+          validation: "checkgoodvalidationspvservers"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
-          fees: "checkgoodfeecontrolfull"
+          fees: "checkpassfeecontrolfull"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+      - name: ios
+        text: "walletguarda"
+        link: "https://apps.apple.com/app/apple-store/id1442083982"
+        source: "https://github.com/guardaco/"
+        screenshot: "guarda.png"
+        features: "bech32 legacy_addresses segwit"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkgoodvalidationspvservers"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
@@ -66,9 +83,9 @@ platform:
         features: "bech32 legacy_addresses hardware_wallet segwit multisig"
         check:
           control: "checkgoodcontrolfull"
-          validation: "checkfailvalidationcentralized"
-          transparency: "checkfailtransparencyremote"
-          environment: "checkfailenvironmentdesktop"
+          validation: "checkgoodvalidationcentralized"
+          transparency: "checkpasstransparencyremote"
+          environment: "checkpassenvironmentdesktop"
           privacy: "checkpassprivacybasic"
           fees: "checkpassfeecontroldynamic"
         privacycheck:
