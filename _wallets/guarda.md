@@ -55,4 +55,24 @@ platform:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
+  - web:
+    name: web
+    os:
+      - name: web
+        text: "walletguarda"
+        link: "https://guarda.co/"
+        source: "https://github.com/guardaco/"
+        screenshot: "guarda.png"
+        features: "bech32 legacy_addresses hardware_wallet segwit multisig"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkfailvalidationcentralized"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkfailenvironmentdesktop"
+          privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroldynamic"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 ---
