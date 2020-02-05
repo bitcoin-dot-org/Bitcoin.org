@@ -271,7 +271,7 @@ followed by the argument `xzf` followed by the file name. The argument
 
     tar xzf bitcoin-0.19.0.1-x86_64-linux-gnu.tar.gz
 
-This will create the directory `bitcoin-0.18.0` within your current
+This will create the directory `bitcoin-0.19.0.1` within your current
 working directory. We will install the contents of its `bin`
 subdirectory into the `/usr/local/bin` directory using the the `install`
 command. The install command is part of the GNU coreutils available on
