@@ -15,7 +15,7 @@ platform:
       text: "walletguarda"
       link: "https://guarda.co/"
       source: "https://github.com/guardaco/"
-      screenshot: "guarda.png"
+      screenshot: "GuardaScreen.png"
       features: "bech32 hardware_wallet legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"
@@ -42,7 +42,7 @@ platform:
         text: "walletguarda"
         link: "https://play.google.com/store/apps/details?id=com.crypto.multiwallet"
         source: "https://github.com/guardaco/"
-        screenshot: "guarda.png"
+        screenshot: "GuardaScreen.png"
         features: "bech32 legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
@@ -59,7 +59,7 @@ platform:
         text: "walletguarda"
         link: "https://apps.apple.com/app/apple-store/id1442083982"
         source: "https://github.com/guardaco/"
-        screenshot: "guarda.png"
+        screenshot: "GuardaScreen.png"
         features: "bech32 legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
@@ -79,7 +79,7 @@ platform:
         text: "walletguarda"
         link: "https://guarda.co/"
         source: "https://github.com/guardaco/"
-        screenshot: "guarda.png"
+        screenshot: "GuardaScreen.png"
         features: "bech32 legacy_addresses hardware_wallet segwit multisig"
         check:
           control: "checkgoodcontrolfull"
