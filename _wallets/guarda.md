@@ -19,7 +19,7 @@ platform:
       features: "bech32 hardware_wallet legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"
-        validation: "checkgoodvalidationspvservers"
+        validation: "checkgoodvalidationfullnoderequired"
         transparency: "checkpasstransparencyopensource"
         environment: "checkpassenvironmenttwofactor"
         privacy: "checkpassprivacybasic"
@@ -46,7 +46,7 @@ platform:
         features: "bech32 legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
-          validation: "checkgoodvalidationspvservers"
+          validation: "checkgoodvalidationfullnoderequired"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
@@ -63,7 +63,7 @@ platform:
         features: "bech32 legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
-          validation: "checkgoodvalidationspvservers"
+          validation: "checkgoodvalidationfullnoderequired"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
@@ -83,7 +83,7 @@ platform:
         features: "bech32 legacy_addresses hardware_wallet segwit multisig"
         check:
           control: "checkgoodcontrolfull"
-          validation: "checkgoodvalidationcentralized"
+          validation: "checkgoodvalidationfullnoderequired"
           transparency: "checkpasstransparencyremote"
           environment: "checkpassenvironmentdesktop"
           privacy: "checkpassprivacybasic"
