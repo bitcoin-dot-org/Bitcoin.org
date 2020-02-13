@@ -84,8 +84,8 @@ platform:
         check:
           control: "checkgoodcontrolfull"
           validation: "checkgoodvalidationfullnoderequired"
-          transparency: "checkpasstransparencyremote"
-          environment: "checkpassenvironmentdesktop"
+          transparency: "checkfailtransparencyremote"
+          environment: "checkfailenvironmentdesktop"
           privacy: "checkpassprivacybasic"
           fees: "checkpassfeecontroldynamic"
         privacycheck:
