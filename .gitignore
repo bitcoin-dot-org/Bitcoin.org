@@ -10,6 +10,7 @@ Thumbs.db
 vendor
 _cache
 .jekyll-metadata
+.jekyll-cache/
 .sass-cache/
 
 # To prevent accidental push of translations from
