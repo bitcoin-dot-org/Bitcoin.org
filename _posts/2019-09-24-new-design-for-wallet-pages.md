@@ -109,9 +109,6 @@ from older wallets or exchanges.
   Lightning Network is new and somewhat experimental. It supports transferring
 bitcoin without having to record each transaction on the blockchain, resulting
 in faster transactions and lower fees.
-+ **Mixing / Shuffling:** Some wallets support coin mixing and/or shuffling,
-  which pools transactions from multiple parties in order to increase privacy
-and reduce traceability.
 + **Multisig:** Some wallets have the ability to require more than one key to
   authorize a transaction. This can be used to divide responsibility and control
 over multiple parties.
