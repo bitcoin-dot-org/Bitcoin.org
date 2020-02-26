@@ -13,14 +13,14 @@ platform:
     name: desktop
     default: &DEFAULT
       text: "walletguarda"
-      link: "https://guarda.co/"
+      link: "https://guarda.co/apps/Guarda_Setup_1.0.0x64.exe"
       source: "https://github.com/guardaco/"
       screenshot: "GuardaScreen.png"
       features: "bech32 hardware_wallet legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnoderequired"
-        transparency: "checkpasstransparencyopensource"
+        transparency: "checkfailtransparencyremote"
         environment: "checkpassenvironmenttwofactor"
         privacy: "checkpassprivacybasic"
         fees: "checkpassfeecontroldynamic"
@@ -41,7 +41,7 @@ platform:
       - name: android
         text: "walletguarda"
         link: "https://play.google.com/store/apps/details?id=com.crypto.multiwallet"
-        source: "https://github.com/guardaco/"
+        source: "https://github.com/guardaco/guarda-android-wallets"
         screenshot: "GuardaScreen.png"
         features: "bech32 legacy_addresses segwit"
         check:
@@ -64,7 +64,7 @@ platform:
         check:
           control: "checkgoodcontrolfull"
           validation: "checkgoodvalidationfullnoderequired"
-          transparency: "checkpasstransparencyopensource"
+          transparency: "checkfailtransparencyremote"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
           fees: "checkpassfeecontroldynamic"
