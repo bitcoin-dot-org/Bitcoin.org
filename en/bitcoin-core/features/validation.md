@@ -17,7 +17,6 @@ breadcrumbs:
 <div class="container hero-container" markdown="block">
 
 # Bitcoin Core Validation
-{% include helpers/hero-social.html %}
 </div>
 </div>
 

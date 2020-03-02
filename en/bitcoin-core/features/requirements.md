@@ -18,7 +18,6 @@ breadcrumbs:
 <div class="container hero-container" markdown="block">
 
 # Bitcoin Core Requirements and Warnings
-{% include helpers/hero-social.html %}
 </div>
 </div>
 

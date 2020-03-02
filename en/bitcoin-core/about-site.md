@@ -17,7 +17,6 @@ breadcrumbs:
 <div class="container hero-container" markdown="block">
 
 # About the Bitcoin Core pages on Bitcoin.org
-{% include helpers/hero-social.html %}
 
 </div>
 </div>

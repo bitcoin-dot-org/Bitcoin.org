@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    RedCloth (4.2.9)
+    RedCloth (4.3.2)
     addressable (2.4.0)
     colorator (0.1)
     colored (1.2)
@@ -51,10 +51,10 @@ GEM
     mercenary (0.3.5)
     mini_portile2 (2.4.0)
     multi_json (1.11.2)
-    nokogiri (1.10.4)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     parallel (1.12.0)
-    rake (10.4.2)
+    rake (13.0.1)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -73,7 +73,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  RedCloth
+  RedCloth (>= 4.3.0)
   ffi-icu
   html-proofer (= 2.1.0)
   jekyll (~> 3.0)
@@ -89,4 +89,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.16.1
+   1.17.3
