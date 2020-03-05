@@ -203,8 +203,6 @@ ja:
     wizard-feature-legacy_addresses-description: "殆どのウォレットには、レガシービットコインアドレスを送受信する機能があります。レガシーアドレスは1または3で始まるアドレスです（bc1で始まるものではありません。）。レガシーアドレスのサポートがない場合、古いウォレットまたは取引所からビットコインを受信できない可能性があります。"
     wizard-feature-lightning: "ライトニング"
     wizard-feature-lightning-description: "一部のウォレットでは、Lightning Networkのトランザクションをサポートしています。 Lightning Networkは新しく、実験的な面がありますが、ブロックチェーンに各トランザクションを記録する事なくビットコインの転送をサポートする事で、トランザクションの高速化と手数料削減を実現します。"
-    wizard-feature-mixing_shuffling: "ミキシングまたはシャッフリング"
-    wizard-feature-mixing_shuffling-description: "一部のウォレットでは、コインのミキシングやシャッフリングをサポートするものもあります。これにより、複数当事者からのトランザクションがプールされるため、プライバシーの向上や、トレーサビリティの低下に役立ちます。"
     wizard-feature-multisig: "マルチシグ"
     wizard-feature-multisig-description: "一部のウォレットには、トランザクションの承認にあたり、複数キーを要求する機能があります。これにより、複数当事者に責任と制御権を分散する事が可能となります。"
     wizard-feature-segwit: "SegWit"
