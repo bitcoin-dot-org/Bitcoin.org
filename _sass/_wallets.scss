@@ -246,6 +246,7 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   text-transform: uppercase;
   color: #FFFFFF;
   margin: 0 12px 0 8px;
+  white-space: nowrap;
 }
 .tooltip-title {
   text-align: left;

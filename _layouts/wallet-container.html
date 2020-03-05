@@ -30,20 +30,20 @@ max_wallet_text_length: 418 ## Unicode characters
         <div class="features-element">
           <div class="left-column">
             <img src="/img/icons/checked.svg" alt="checked" />
-            <p class="features-text">{{ feature }}</p>
+            <p class="features-text">
+              {% translate wizard-feature-{{feature}} choose-your-wallet %}
+            </p>
           </div>
           <div class="information-icon">
-            <img src="/img/icons/information.svg" alt="information" onclick="showModal({{ feature }})" />
+            <img src="/img/icons/information.svg" alt="information" onclick="showModal({{feature}})" />
             <div class="features-tooltip-overlay"></div>
-            <div id="{{ feature }}" class="tooltip features-tooltip">
+            <div id="{{feature}}" class="tooltip features-tooltip">
               <div class="close-btn" onclick="closeModal({{feature}})">×</div>
               <div class="tooltip-title">
-                {{ feature }}:
+                {% translate wizard-feature-{{feature}} choose-your-wallet %}:
               </div>
-              <div class="tooltip-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
+              <div class="tooltip-text">                
+                {% translate wizard-feature-{{feature}}-description choose-your-wallet %}
               </div>
             </div>
           </div>
@@ -320,7 +320,7 @@ max_wallet_text_length: 418 ## Unicode characters
     }
   }
 
-  function setListeners() {
+  function setListners() {
     tabSelectors.forEach(function(tab) {
       tab.addEventListener('click', function() {
         selectRelevantTab(this.dataset.tab);
@@ -386,7 +386,7 @@ max_wallet_text_length: 418 ## Unicode characters
     displayDefaultTabContent();
     displaySimilarWallets();
     sortTableColumn('control');
-    setListeners();
+    setListners();
   }
   init();
 </script>
