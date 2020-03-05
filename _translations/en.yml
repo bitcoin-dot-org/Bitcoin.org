@@ -244,8 +244,6 @@ en:
     wizard-feature-legacy_addresses-description: "Most wallets have the ability to send and receive with legacy bitcoin addresses. Legacy addresses start with 1 or 3 (as opposed to starting with bc1). Without legacy address support, you may not be able to receive bitcoin from older wallets or exchanges."
     wizard-feature-lightning: "Lightning"
     wizard-feature-lightning-description: "Some wallets support transactions on the Lightning Network.  The Lightning Network is new and somewhat experimental.  It supports transferring bitcoin without having to record each transaction on the blockchain, resulting in faster transactions and lower fees."
-    wizard-feature-mixing_shuffling: "Mixing / Shuffling"
-    wizard-feature-mixing_shuffling-description: "Some wallets support coin mixing and/or shuffling, which pools transactions from multiple parties in order to increase privacy and reduce traceability."
     wizard-feature-multisig: "Multisig"
     wizard-feature-multisig-description: "Some wallets have the ability to require more than one key to authorize a transaction. This can be used to divide responsibility and control over multiple parties."
     wizard-feature-segwit: "SegWit"

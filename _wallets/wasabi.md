@@ -15,7 +15,7 @@ platform:
       link: "https://wasabiwallet.io/"
       source: "https://github.com/zkSNACKs/WalletWasabi/"
       screenshot: "wasabi.png"
-      features: "bech32 mixing_shuffling segwit"
+      features: "bech32 segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"
