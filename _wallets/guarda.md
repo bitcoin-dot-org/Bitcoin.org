@@ -5,7 +5,7 @@
 id: guarda
 title: "Guarda Wallet"
 titleshort: "Guarda"
-compat: "web desktop windows mac linux mobile android ios chrome"
+compat: "mobile android"
 user: beginner
 level: 2
 platform:
