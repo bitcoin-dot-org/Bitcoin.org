@@ -224,18 +224,25 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 .features {
   border-top: 1px solid #DADADA;
   border-bottom: 1px solid #DADADA;
-  height: 55px;
-  max-width: 655px;
+  max-width: 100%;
   margin: 39px auto 0;
   display: flex;
-  justify-content: space-between;
   padding: 0 15px;
+}
+.features-elements {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .features-element {
   display: flex;
+  padding: 15px 0;
+  margin-left: 15px;
 }
 .features-title {
+  padding: 8px 0;
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
@@ -384,6 +391,11 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
     margin: 0 0 40px;
   }
 }
+@media screen and (max-width: 900px) {
+  .features-elements {
+    justify-content: flex-start;
+  }
+}
 @media screen and (max-width: 700px) {
   .wallet-accordion-btn {
     display: flex;
@@ -458,6 +470,7 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
     margin-top: 17px;
   }
   .features-title {
+    padding: 0;
     margin: 0 7px;
   }
   .line {
@@ -474,6 +487,7 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 12px;
+    padding: 0;
   }
   .information-icon {
     position: initial;
