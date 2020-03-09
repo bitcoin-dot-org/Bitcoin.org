@@ -67,8 +67,11 @@ Start `bitcoind` in regtest mode to create a private block chain.
 ## Bitcoin Core 0.10.1 and earlier
 bitcoin-cli -regtest setgenerate true 101
 
-## Bitcoin Core master (as of commit 48265f3)
+## Bitcoin Core 17.1 and earlier
 bitcoin-cli -regtest generate 101
+
+## Bitcoin Core 18.0 and later
+bitcoin-cli -regtest generatetoaddress 101 $(bitcoin-cli -regtest getnewaddress)
 ~~~
 
 {% autocrossref %}

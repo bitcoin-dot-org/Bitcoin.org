@@ -6,6 +6,7 @@ id: brd
 title: "BRD"
 titleshort: "BRD"
 compat: "mobile android ios"
+user: beginner
 level: 2
 platform:
   - mobile:
@@ -15,7 +16,8 @@ platform:
         text: "walletbrd"
         link: "https://itunes.apple.com/app/brd-bitcoin-wallet/id885251393"
         source: "https://github.com/breadwallet/breadwallet-ios"
-        screenshot: "brd.png?1528322191"
+        screenshot: "brd.png"
+        features: "legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"
@@ -31,7 +33,8 @@ platform:
         text: "walletbrd"
         link: "https://play.google.com/store/apps/details?id=com.breadwallet"
         source: "https://github.com/breadwallet/breadwallet-android"
-        screenshot: "brd.png?1528322191"
+        screenshot: "brd.png"
+        features: "legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"

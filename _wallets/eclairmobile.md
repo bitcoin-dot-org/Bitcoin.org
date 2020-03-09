@@ -13,9 +13,10 @@ platform:
     os:
       - name:  android
         text: "walleteclairmobile"
-        link: "https://play.google.com/store/apps/details?id=fr.acinq.eclair.wallet"
+        link: "https://play.google.com/store/apps/details?id=fr.acinq.eclair.wallet.mainnet2"
         source: "https://github.com/ACINQ/eclair-mobile"
-        screenshot: "eclairmobile.png?1528322191"
+        screenshot: "eclairmobile.png"
+        features: "legacy_addresses lightning segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvservers"

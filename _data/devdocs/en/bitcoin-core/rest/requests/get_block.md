@@ -64,12 +64,12 @@ GET /block/<hash>.<format>
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "*Added in Bitcoin Core 0.13.0*<br><br>The size of this block in serialized block format excluding witness data, counted in bytes"
-  
+
 - n: "→<br>`size`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
-  d: "The size of this block in serialized block format, counted in bytes" 
-  
+  d: "The size of this block in serialized block format, counted in bytes"
+
 - n: "→<br>`weight`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
@@ -84,7 +84,7 @@ GET /block/<hash>.<format>
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "This block's version number.  See [block version numbers][section block versions]"
-  
+
 - n: "→<br>`versionHex`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
@@ -110,7 +110,7 @@ GET /block/<hash>.<format>
   t: "number (int)"
   p: "Required<br>(exactly 1)"
   d: "The value of the *time* field in the block header, indicating approximately when the block was created"
-  
+
 - n: "→<br>`mediantime`"
   t: "number (int)"
   p: "Required<br>(exactly 1)"
@@ -172,7 +172,7 @@ e62294721166bf621e73a82cbf2342c858eeac00000000
 Get the same block in JSON:
 
 {% highlight bash %}
-curl http://localhost:8332/rest/block/00000000839a8e6886ab5951d76f411475428afc90947ee320161bbf18eb6048.json 
+curl http://localhost:8332/rest/block/00000000839a8e6886ab5951d76f411475428afc90947ee320161bbf18eb6048.json
 {% endhighlight %}
 
 Result (whitespaced added):
@@ -236,5 +236,6 @@ Result (whitespaced added):
 * [GetBestBlockHash][rpc getbestblockhash] RPC: {{summary_getBestBlockHash}}
 * [GetBlock][rpc getblock] RPC: {{summary_getBlock}}
 * [GetBlockHash][rpc getblockhash] RPC: {{summary_getBlockHash}}
+* [GET BlockHashByHeight][rest get blockhashbyheight]: {{summary_restGetBlockHashByHeight}}
 
 {% endautocrossref %}

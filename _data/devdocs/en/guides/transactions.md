@@ -650,14 +650,15 @@ had not expired.
 Even today, setting all sequence numbers to 0xffffffff (the default in
 Bitcoin Core) can still disable the time lock, so if you want to use
 locktime, at least one input must have a sequence number below the
-maximum. Since sequence numbers are not used by the network for any
-other purpose, setting any sequence number to zero is sufficient to
-enable locktime.
+maximum. As sequence numbers are also used to indicate BIP-125
+replaceability, the sequence should be set to 0xfffffffe when using
+only locktime.
 
 <span id="locktime_parsing_rules">Locktime itself is an unsigned 4-byte integer which can be parsed two ways:</span>
 
 * If less than 500 million, locktime is parsed as a block height. The
-  transaction can be added to any block which has this height or higher.
+  transaction can be added to any block whose height is greater than
+  the locktime.
 
 * If greater than or equal to 500 million, locktime is parsed using the
   Unix epoch time format (the number of seconds elapsed since
