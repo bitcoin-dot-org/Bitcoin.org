@@ -222,11 +222,10 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   line-height: 34px;
 }
 .features {
-  border-top: 1px solid #DADADA;
-  border-bottom: 1px solid #DADADA;
+  display: flex;
+  justify-content: center;
   max-width: 100%;
   margin: 39px auto 0;
-  display: flex;
   padding: 0 15px;
 }
 .features-elements {
@@ -234,12 +233,19 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
+  border-top: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
+  padding-right: 15px;
 }
 .features-element {
   display: flex;
   padding: 15px 0;
-  margin-left: 15px;
+  margin-left: 50px;
+}
+.feature-header {
+  border-top: 1px solid #DADADA;
+  border-bottom: 1px solid #DADADA;
+  padding-left: 15px;
 }
 .features-title {
   padding: 8px 0;
@@ -483,10 +489,18 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
     display: flex;
     width: 100%;
   }
+  .feature-header {
+    padding: 0;
+    border: none;
+  }
+  .features-elements {
+    border-top: none;
+    padding: 0 0 4px;
+  }
   .features-element {
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 12px;
+    margin: 0 0 12px;
     padding: 0;
   }
   .information-icon {
