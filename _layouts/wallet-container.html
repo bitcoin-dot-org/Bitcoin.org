@@ -33,7 +33,6 @@ max_wallet_text_length: 418 ## Unicode characters
               </div>
               <div class="information-icon">
                 <img src="/img/icons/information.svg" alt="information" onclick="showModal('feature-{{featureName}}')" />
-                <div class="features-tooltip-overlay"></div>
                 <div id="feature-{{featureName}}" class="tooltip features-tooltip">
                   <div class="close-btn" onclick="closeModal('feature-{{featureName}}')">×</div>
                   <div class="tooltip-title">
@@ -265,24 +264,26 @@ max_wallet_text_length: 418 ## Unicode characters
   var tabSelectors = Array.prototype.slice.call(document.querySelectorAll('.os-selector-tab'));
   var linksList = Array.prototype.slice.call(document.querySelectorAll('.wallet-link'));
   var tooltipsList = Array.prototype.slice.call(document.querySelectorAll('.tooltip'));
-  var tooltipsOverlay = document.querySelector('.features-tooltip-overlay');
 
-  tooltipsOverlay.addEventListener('click', function (e) {
-    tooltipsList.forEach(function (tooltip) {
-      console.log(tooltip)
-      closeModal(tooltip);
+  tooltipsList.forEach(function (tooltip) {
+    document.addEventListener('click', function(e){   
+      if (e.target.closest('.tooltip')){
+        console.log('click inside');
+        return;
+      } 
+      tooltip.style.display === 'block' && closeModal(tooltip.id)
     });
-  });
+  })
 
   function showModal(feature) {
     var tooltip = document.getElementById(feature);
-    tooltipsOverlay.style.display = "block";
-    tooltip.style.display = "block";
+    setTimeout(function() {
+      tooltip.style.display = "block";
+    }, 0);
   }
 
   function closeModal(feature) {
     var tooltip = document.getElementById(feature);
-    tooltipsOverlay.style.display = "none";
     tooltip.style.display = "none";
   }
 
