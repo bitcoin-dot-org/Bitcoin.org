@@ -251,7 +251,6 @@ ja:
     walletbitpay: "BitPayウォレットは元々、BitPayの資産を保護するために作成されたHDマルチシグウォレットです。 BitPayは、複数の個人用および共有のウォレット、テストネット、そして全支払プロトコルをサポートしています。プライベートな<a href=\"https://github.com/bitpay/bitcore-wallet-service\">BWS</a>ノードは、セキュリティとプライバシーを強化するために使用可能です。"
     walletledgernanos: "Ledger Nano S はセキュアなビットコイン・ハードウェアウォレットです。USBでどのコンピュータにでも接続でき、備え付けのOLEDディスプレイで毎回のトランザクションを再度確認し、そしてボタンを一度タップする事で承認します。"
     walletbither: "Bitherは多くのプラットフォームで使用可能な、シンプルかつ安全なウォレットです。独自のコールドモードまたはホットモードにより、ユーザーは安全かつシンプルなウォレットを、簡単に使用する事ができます。BitherのXRANDOMは、異なるエントロピーソースを使用して真の乱数を生成し、ユーザーに提供します。また、HDMの機能により、ユーザーはHDの利点とマルチシグのセキュリティを得る事ができます。"
-    walletbtccom: "BTC.comのBitcoin Walletは安全で使いやすく、ビットコインを完全に管理する事ができます。機能としては、HD、マルチシグ技術、マルチプラットフォーム、ローカル言語および通貨のサポート、QRコード等を備えています。"
     walletblw: "Lightning Networkのサポートがあるモバイルウォレット"
     walleteclairmobile: "Eclair MobileはLightningに対応する、次世代のビットコインウォレットです。通常のビットコインウォレットとして使用可能なほか、Lightning Networkに接続して安価な即時払いが可能です。"
     walletwasabi: "Wasabiは、Windows、LinuxおよびMacに対応しており、オープンソース、非保管、プライバシーを重視したビットコインウォレットです。Torの匿名ネットワーク、CoinJoin、およびコインコントロール機能が組み込まれています。"
