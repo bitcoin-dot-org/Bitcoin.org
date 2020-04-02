@@ -469,8 +469,8 @@ function generateDonationQrCode() {
 }
 
 function loadTickerPrices() {
-    $.ajax('https://apiv2.bitcoinaverage.com/indices/global/ticker/short?crypto=BTC&fiat=USD').then(function(data) {
-        var rate = data.BTCUSD.last;
+    $.ajax('https://blockchain.info/ticker').then(function(data) {
+        var rate = data.USD.last;
 
         function usdToBtc(amount) {
             var amountUsd = parseFloat(amount);
