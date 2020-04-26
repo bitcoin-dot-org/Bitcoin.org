@@ -120,7 +120,7 @@ someone else, that second transaction would not be displayed in our
 list of UTXOs.
 
 {% highlight bash %}
-> bitcoin-cli -regtest generate 1
+> bitcoin-cli -regtest generatetoaddress 1 $(bitcoin-cli -regtest getnewaddress)
 
 > unset NEW_ADDRESS
 {% endhighlight %}
@@ -305,7 +305,7 @@ we just created does.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransaction $RAW_TX
+> bitcoin-cli -regtest signrawtransactionwithwallet $RAW_TX
 {% endhighlight %}
 {% highlight json %}
 {
@@ -325,7 +325,7 @@ we just created does.
 {% endhighlight %}
 </div>
 
-Use the `signrawtransaction` RPC to sign the transaction created by
+Use the `signrawtransactionwithwallet` RPC to sign the transaction created by
 `createrawtransaction` and save the returned "hex" raw format signed
 transaction to a shell variable. 
 
@@ -346,7 +346,7 @@ would usually then broadcast it to other peers, but we're not currently
 connected to other peers because we started in regtest mode.
 
 {% highlight bash %}
-> bitcoin-cli -regtest generate 1
+> bitcoin-cli -regtest generatetoaddress 1 $(bitcoin-cli -regtest getnewaddress)
 
 > unset UTXO_TXID UTXO_VOUT NEW_ADDRESS RAW_TX SIGNED_RAW_TX
 {% endhighlight %}
@@ -515,7 +515,7 @@ before, except now we have two inputs and two outputs.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransaction $RAW_TX '[]' '''
+> bitcoin-cli -regtest signrawtransactionwithkey $RAW_TX '[]' '''
     [
       "'$UTXO1_PRIVATE_KEY'"
     ]'''
@@ -550,7 +550,7 @@ before, except now we have two inputs and two outputs.
 {% endhighlight %}
 </div>
 
-Signing the raw transaction with `signrawtransaction` gets more
+Signing the raw transaction with `signrawtransactionwithkey` gets more
 complicated as we now have three arguments:
 
 1. The unsigned raw transaction.
@@ -568,7 +568,7 @@ transaction hex to a shell variable.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransaction $PARTLY_SIGNED_RAW_TX '[]' '''
+> bitcoin-cli -regtest signrawtransactionwithkey $PARTLY_SIGNED_RAW_TX '[]' '''
     [
       "'$UTXO2_PRIVATE_KEY'"
     ]'''
@@ -786,7 +786,7 @@ subsections.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-    > bitcoin-cli -regtest signrawtransaction $RAW_TX
+    > bitcoin-cli -regtest signrawtransactionwithwallet $RAW_TX
 {% endhighlight %}
 {% highlight json %}
     {
@@ -823,7 +823,7 @@ so it can't automatically insert the previous pubkey script.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransaction $RAW_TX '''
+> bitcoin-cli -regtest signrawtransactionwithwallet $RAW_TX '''
     [
       {
         "txid": "'$UTXO_TXID'", 
@@ -1185,7 +1185,10 @@ complex raw transaction].
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransaction $RAW_TX '''
+> bitcoin-cli -regtest signrawtransactionwithkey $RAW_TX '''
+    [
+      "'$NEW_ADDRESS1_PRIVATE_KEY'"
+    ]''' '''
     [
       {
         "txid": "'$UTXO_TXID'", 
@@ -1194,10 +1197,7 @@ complex raw transaction].
         "redeemScript": "'$P2SH_REDEEM_SCRIPT'"
       }
     ]
-    ''' '''
-    [
-      "'$NEW_ADDRESS1_PRIVATE_KEY'"
-    ]'''
+    '''
 {% endhighlight %}
 {% highlight json %}
 {
@@ -1227,7 +1227,10 @@ to the signature script after the two signatures.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransaction $PARTLY_SIGNED_RAW_TX '''
+> bitcoin-cli -regtest signrawtransactionwithkey $PARTLY_SIGNED_RAW_TX '''
+    [
+      "'$NEW_ADDRESS3_PRIVATE_KEY'"
+    ]''' '''
     [
       {
         "txid": "'$UTXO_TXID'",
@@ -1236,10 +1239,7 @@ to the signature script after the two signatures.
         "redeemScript": "'$P2SH_REDEEM_SCRIPT'"
       }
     ]
-    ''' '''
-    [
-      "'$NEW_ADDRESS3_PRIVATE_KEY'"
-    ]'''
+    '''
 {% endhighlight %}
 {% highlight json %}
 {
@@ -1266,7 +1266,7 @@ to the signature script after the two signatures.
 {% endhighlight %}
 </div>
 
-The `signrawtransaction` call used here is nearly identical to the one
+The `signrawtransactionwithkey` call used here is nearly identical to the one
 used above.  The only difference is the private key used.  Now that the
 two required signatures have been provided, the transaction is marked as
 complete.
