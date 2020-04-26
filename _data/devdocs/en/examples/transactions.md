@@ -515,7 +515,7 @@ before, except now we have two inputs and two outputs.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransactionwithkey $RAW_TX '[]' '''
+> bitcoin-cli -regtest signrawtransactionwithkey $RAW_TX '''
     [
       "'$UTXO1_PRIVATE_KEY'"
     ]'''
@@ -551,15 +551,11 @@ before, except now we have two inputs and two outputs.
 </div>
 
 Signing the raw transaction with `signrawtransactionwithkey` gets more
-complicated as we now have three arguments:
+complicated as we now have two arguments:
 
 1. The unsigned raw transaction.
 
-2. An empty array. We don't do anything with this argument in this
-   operation, but some valid JSON must be provided to get access to the
-   later positional arguments.
-
-3. The private key we want to use to sign one of the inputs.
+2. The private key we want to use to sign one of the inputs.
 
 The result is a raw transaction with only one input signed; the fact
 that the transaction isn't fully signed is indicated by value of the
@@ -568,7 +564,7 @@ transaction hex to a shell variable.
 
 <div markdown="1" class="multicode">
 {% highlight bash %}
-> bitcoin-cli -regtest signrawtransactionwithkey $PARTLY_SIGNED_RAW_TX '[]' '''
+> bitcoin-cli -regtest signrawtransactionwithkey $PARTLY_SIGNED_RAW_TX '''
     [
       "'$UTXO2_PRIVATE_KEY'"
     ]'''
