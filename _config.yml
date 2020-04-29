@@ -57,6 +57,10 @@ langs:
   'zh_TW': '繁體中文'
 
 redirects:
+  /en/developer-guide: https://bitcoindeveloper.netlify.app/devguide/
+  /en/developer-reference: https://bitcoindeveloper.netlify.app/reference/
+  /en/developer-examples: https://bitcoindeveloper.netlify.app/examples/
+  /en/developer-glossary: https://bitcoindeveloper.netlify.app/glossary
   /news: /en/version-history
   /clients: /en/choose-your-wallet
   /about: /en/faq
