@@ -127,8 +127,8 @@ ja:
     chanmarket: "（市場からのリアルタイム相場）"
     chanmining: "（ビットコインマイニング関連）"
     social: "ソーシャル・ネットワーク"
-    linktwitter: "Twitter"
-    facebook: '<a href="https://www.facebook.com/hashtag/bitcoin">Facebook</a>'
+    linktwitter: "Twitterでの検索"
+    facebook: "<a href=\"https://www.facebook.com/bitcoins\">Facebookページ</a>"
     meetups: "ミートアップ"
     meetupevents: " ビットコイン・カンファレンスとイベント "
     meetupgroup: "ビットコインのミートアップグループ"
@@ -195,14 +195,16 @@ ja:
     wizard-feature-2fa-description: "2要素認証（2FA）により、ウォレットのセキュリティを向上させる事が出来ます。最初の「要素」は、ウォレットのパスワードであり、 2番目の「要素」は、テキストメッセージまたはモバイルデバイスのアプリから取得される確認コードです。2FAはその概念として、一部の国の銀行がオンラインバンキングで必要とするセキュリティトークンデバイスに似ています。サービスを提供する上では、特定のサードパーティに依存する必要があります。"
     wizard-feature-bech32: "Bech32"
     wizard-feature-bech32-description: "Bech32は、SegWitの導入により利用可能となった、特別なアドレス形式です（詳細は、SegWitの機能説明を参照ください。）。このアドレス形式は「bc1アドレス」とも呼ばれます。一部のビットコインウォレットやサービスでは、Bech32アドレスとの送受信をサポートしていないものもあります。"
-    wizard-feature-full_node: "フルノード"
-    wizard-feature-full_node-description: "一部のウォレットでは、トランザクションとブロックを完全に検証します。ほぼ全てのフルノードでは、他のフルノードからトランザクションとブロックを受け入れて検証し、それらを更なるフルノードに中継する事により、ネットワークを維持します。"
-    wizard-feature-hardware_wallet: "ハードウェアウォレット"
-    wizard-feature-hardware_wallet-description: "一部のウォレットは、ハードウェアウォレットに送信可能である事に加え、ペアリングして接続する事もできます。ハードウェアウォレットへの送信は殆ど全てのウォレットで実行可能ですが、ペアリングはユニークな機能です。この機能により、ハードウェアウォレット間で送受信が直接できる様になります。"
-    wizard-feature-legacy_addresses: "レガシーアドレス"
-    wizard-feature-legacy_addresses-description: "殆どのウォレットには、レガシービットコインアドレスを送受信する機能があります。レガシーアドレスは1または3で始まるアドレスです（bc1で始まるものではありません。）。レガシーアドレスのサポートがない場合、古いウォレットまたは取引所からビットコインを受信できない可能性があります。"
+    wizard-feature-full-node: "フルノード"
+    wizard-feature-full-node-description: "一部のウォレットでは、トランザクションとブロックを完全に検証します。ほぼ全てのフルノードでは、他のフルノードからトランザクションとブロックを受け入れて検証し、それらを更なるフルノードに中継する事により、ネットワークを維持します。"
+    wizard-feature-hardware-wallet: "ハードウェアウォレット"
+    wizard-feature-hardware-wallet-description: "一部のウォレットは、ハードウェアウォレットに送信可能である事に加え、ペアリングして接続する事もできます。ハードウェアウォレットへの送信は殆ど全てのウォレットで実行可能ですが、ペアリングはユニークな機能です。この機能により、ハードウェアウォレット間で送受信が直接できる様になります。"
+    wizard-feature-legacy-address: "レガシーアドレス"
+    wizard-feature-legacy-address-description: "殆どのウォレットには、レガシービットコインアドレスを送受信する機能があります。レガシーアドレスは1または3で始まるアドレスです（bc1で始まるものではありません。）。レガシーアドレスのサポートがない場合、古いウォレットまたは取引所からビットコインを受信できない可能性があります。"
     wizard-feature-lightning: "ライトニング"
     wizard-feature-lightning-description: "一部のウォレットでは、Lightning Networkのトランザクションをサポートしています。 Lightning Networkは新しく、実験的な面がありますが、ブロックチェーンに各トランザクションを記録する事なくビットコインの転送をサポートする事で、トランザクションの高速化と手数料削減を実現します。"
+    wizard-feature-mixing: "ミキシングまたはシャッフリング"
+    wizard-feature-mixing-description: "一部のウォレットでは、コインのミキシングやシャッフリングをサポートするものもあります。これにより、複数当事者からのトランザクションがプールされるため、プライバシーの向上や、トレーサビリティの低下に役立ちます。"
     wizard-feature-multisig: "マルチシグ"
     wizard-feature-multisig-description: "一部のウォレットには、トランザクションの承認にあたり、複数キーを要求する機能があります。これにより、複数当事者に責任と制御権を分散する事が可能となります。"
     wizard-feature-segwit: "SegWit"
@@ -240,21 +242,24 @@ ja:
     walletbitcoinknots: "Bitcoin Knotsはフルクライアントであり、ネットワークの基幹を構築するものです。最高レベルのセキュリティやプライバシー、安定性を提供します。Bitcoin Coreよりも優れた機能を提供しますが、それらの機能のテストはやや不十分です。また、多くのディスク容量とメモリを使用します。"
     walletarmory: "Armoryは、ビットコインのパワーユーザーのための、機能を拡張可能な高度なビットコイン・クライアントです。数多くのバックアップと暗号化機能を提供し、オフラインコンピューター上での安全なコールドストレージ機能も備えています。"
     walletelectrum: "Electrumの特徴は、低リソース、高速、シンプルな点です。ビットコインシステムの最も複雑な部分を扱うリモート・サーバーを使用しており、秘密の復元フレーズを使用してビットコイン・ウォレットを復元する事ができます。"
+    walletmsigna: "mSIGNAは高性能かつ簡単に使用できるウォレットで、高速性、シンプルさ、企業レベルの拡張性、セキュリティーの強さが特徴です。これは、BIP32、マルチシグトランザクション、オフラインストレージ、マルチデバイス間の同期、暗号化された電子的および紙面によるバックアップをサポートしています。"
     walletbitcoinwallet: "ビットコインウォレットは、使用が簡単で信頼性があり、安全かつ高速な取引ができます。そのビジョンは、非中央集権化とゼロトラストにあります。つまり、ビットコインの運用に、中央集権的なサービスは必要ないと言う事です。このアプリは、技術的な知識を持たない方にも適しています。"
-    walletedgewallet: "Edgeは高レベルのプライバシー、セキュリティ、非中央集権性を備える、とても使いやすく、Segwitと互換性のあるビットコインモバイルウォレットです。Edgeウォレットは自動的に暗号化やバックアップがなされ。"
+    walletedgewallet: "Edgeは高レベルのプライバシー、セキュリティ、非中央集権性を備える、とても使いやすく、Segwitと互換性のあるビットコインモバイルウォレットです。Edgeウォレットは自動的に暗号化やバックアップがなされ、Edgeサーバーが停止しても機能します。"
     walletbrd: "BRDは初めてビットコインを利用するユーザーにとって最も簡単なウォレットの一つであり、非常に高い安全性を備えています。BRDはビットコインネットワークに直接接続し、端末に内蔵されたハードウェアの暗号化を利用する事で、資産を守ります。"
     walletmyceliumwallet: "Android向けのMyceliumビットコインウォレットは、セキュリティ、速度、利用の簡便さを追求して設計されています。キーやコールドストレージを管理する独自の機能を搭載しており、Trezor等とも互換性があります。"
-    walletcoin: "Coin ウォレットは無料のオンライン・ビットコインウォレットであり、国際支払いのために利用する事ができます。スマートフォンまたはデスクトップPCのどこからでも利用可能で、ビットコインでの支払いを簡単かつ安全にします。"
-    wallettrezorone: "TREZOR は、便利で高レベルのセキュリティーを提供する、ハードウェアウォレットです。コールドストレージとは異なり、TREZOR はオンラインデバイスに繋がっている際にもトランザクションに署名ができます。つまり、ウィルスに感染したコンピューターでも、ビットコインを安全に使用する事ができるのです。"
+    walletcoin: "Coinは無料のオンラインビットコインウォレットで、世界中の支払いを無料で行う事ができます。お使いのスマートフォンまたはデスクトップのどこからでも、簡単かつ安全にビットコインでお支払い頂けます。"
+    walletbitgo: "BitGoは高度なセキュリティ機能を備えるマルチシグウォレットであり、ビットコインを盗難や紛失から守ります。ビットコインを完全に管理する事ができ、BitGoがあなたの資産を使用したり凍結する事はできません。BitGoウォレットは簡単に使用でき、利用上限額や複数ユーザーによるアクセス等の、高度なセキュリティ機能を備えています。"
+    wallettrezor: "TREZOR は、便利で高レベルのセキュリティーを提供する、ハードウェアウォレットです。コールドストレージとは異なり、TREZOR はオンラインデバイスに繋がっている際にもトランザクションに署名ができます。つまり、ウィルスに感染したコンピューターでも、ビットコインを安全に使用する事ができるのです。"
     walletcoldcard: "Coldcardは、暗号化されたmicroSDカードを介して簡単にバックアップが可能であり、使い易く、安全性が非常に高く、オープンソースで手頃な価格のハードウェアウォレットです。プライベートキーは専用のセキュリティチップに保存されています。MicroPythonソフトウェアの設計により、変更可能です。"
     walletkeepkey: "KeepKeyはビットコインのセキュリティ保護をシンプルにするハードウェアウォレットです。KeepKeyを使用する場合、ビットコインの全てのトランザクションをKeepKeyのOLEDディスプレイ上で確認し、承認ボタンにより承認する必要があります。"
     walletbitpay: "BitPayウォレットは元々、BitPayの資産を保護するために作成されたHDマルチシグウォレットです。 BitPayは、複数の個人用および共有のウォレット、テストネット、そして全支払プロトコルをサポートしています。プライベートな<a href=\"https://github.com/bitpay/bitcore-wallet-service\">BWS</a>ノードは、セキュリティとプライバシーを強化するために使用可能です。"
     walletledgernanos: "Ledger Nano S はセキュアなビットコイン・ハードウェアウォレットです。USBでどのコンピュータにでも接続でき、備え付けのOLEDディスプレイで毎回のトランザクションを再度確認し、そしてボタンを一度タップする事で承認します。"
+    walletbitbox: "BitBoxは、セキュリティとプライバシーを重視した、スイス発の最小機能のハードウェアウォレットです。機能としては、完全にオフライン化かつシンプル化されたバックアップ、もっともらしい否認、マルチシグサポート、デスクトップアプリケーション、検証用と2FA用のモバイルアプリケーションが含まれます。"
     walletbither: "Bitherは多くのプラットフォームで使用可能な、シンプルかつ安全なウォレットです。独自のコールドモードまたはホットモードにより、ユーザーは安全かつシンプルなウォレットを、簡単に使用する事ができます。BitherのXRANDOMは、異なるエントロピーソースを使用して真の乱数を生成し、ユーザーに提供します。また、HDMの機能により、ユーザーはHDの利点とマルチシグのセキュリティを得る事ができます。"
+    walletbtccom: "BTC.comのBitcoin Walletは安全で使いやすく、ビットコインを完全に管理する事ができます。機能としては、HD、マルチシグ技術、マルチプラットフォーム、ローカル言語および通貨のサポート、QRコード等を備えています。"
     walletblw: "Lightning Networkのサポートがあるモバイルウォレット"
     walleteclairmobile: "Eclair MobileはLightningに対応する、次世代のビットコインウォレットです。通常のビットコインウォレットとして使用可能なほか、Lightning Networkに接続して安価な即時払いが可能です。"
     walletwasabi: "Wasabiは、Windows、LinuxおよびMacに対応しており、オープンソース、非保管、プライバシーを重視したビットコインウォレットです。Torの匿名ネットワーク、CoinJoin、およびコインコントロール機能が組み込まれています。"
-    walletbitbox: "BitBox02はスイスで開発・製造されたハードウェア・ウォレットです。OLEDディスプレイ、タッチセンサー、USB-CならびにUSB-Aのサポート、そしてmicroSDカード及びBIP39ニーモニックでのオフライン・バックアップ機能が備わっています。コンパニオンアプリであるBitBoxAppをしようすることでウォレットのセットアップ・管理が簡単に行えます。"
     walletdownload: "インストール"
     walletvisit: "Webサイトへ"
     walletsourcecode: "ソースコード"
@@ -475,7 +480,7 @@ ja:
     pagedesc: "ビットコインは国際的なプロジェクトであり、オープンソースのソフトウェアです。"
     summary: "現在の仕様、ソフトウェア、開発者の詳細を調べる。"
     spec: "文献"
-    spectxt: "ビットコインの技術面に関する詳細のほか、既存のツールやAPIの使用方法をお知りになりたい方は、まず<a href=\"/en/developer-documentation\">開発者用ドキュメンテーション</a>をお読みになる事をお勧めします。"
+    spectxt: "ビットコインの技術面に関する詳細のほか、既存のツールやAPIの使用方法についてご興味がある方は、まず<a href=\"/en/developer-documentation\">開発者用ドキュメンテーション</a>をご覧ください。"
     coredev: "コア開発者"
     inventor: "ビットコインのシステムは、ナカモト・サトシによって創設されました。彼のオリジナルのコードソースは、今もビットコイン・コアとして、後継開発者とボランティア・コミュニティーによって維持されています。"
     disclosure: "責任ある情報公開"
@@ -951,7 +956,7 @@ ja:
     develop: "開発"
     developtxt: "ビットコインはフリーソフトウエアです。もし、開発者であれば、その素晴らしい能力を<a href=\"#development#\">ビットコインの改善</a>に活かす事ができます。あるいは、ビットコインを使用した素晴らしいサービスやソフトウェアを開発する事もできます。"
     donation: "寄付"
-    donationtxt: "当ウェブサイトを支援する最も簡単な方法は、BitGiveにビットコインを<a href=\"http://bitgivefoundation.org/donate/\">寄付</a>して頂く事です。また、将来有益と思われるビットコイン関連プロジェクトに直接資産を送付する事も、援助となります。"
+    donationtxt: "当ウェブサイトを支援する最も簡単な方法は、BitGiveにビットコインを<a href=\"http://bitgivefoundation.org/donate-now/\">寄付</a>して頂く事です。また、将来有益と思われるビットコイン関連プロジェクトに直接資産を送付する事も、援助となります。"
     nonprofit: "組織"
     nonprofittxt: "<a href=\"https://bitcoinfoundation.org/\">ビットコイン基金</a> と、その他多くの<a href=\"#community##[community.non-profit]\">非営利組織</a>は、ビットコインを保護し促進する事に専念しています。これらのグループに加わり、プロジェクト、討論、イベント等に参加する事で、彼らを支援できます。"
     spread: "広める"
@@ -1086,14 +1091,14 @@ ja:
     developer-glossary: developer-glossary
     developer-guide: developer-guide
     developer-reference: developer-reference
-    blockchain-guide: blockchain-guide
-    contracts-guide: contracts-guide
-    mining-guide: mining-guide
-    operating-modes-guide: operating-modes-guide
-    p2p-network-guide: p2p-network-guide
-    payment-processing-guide: payment-processing-guide
-    transactions-guide: transactions-guide
-    wallets-guide: wallets-guide
+    blockchain-guide: ブロックチェーンガイド
+    contracts-guide: 契約ガイド
+    mining-guide: マイニングガイド
+    operating-modes-guide: オペレーティングモードガイド
+    p2p-network-guide: P2Pネットワークのガイド
+    payment-processing-guide: 支払いプロセスガイド
+    transactions-guide: トランザクションガイド
+    wallets-guide: ウォレットガイド
     development: development
     download: download
     exchanges: exchanges
