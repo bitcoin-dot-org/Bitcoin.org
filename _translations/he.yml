@@ -1127,132 +1127,96 @@ he:
     donation-modal-input-custom-amount: "או כל סכום אחר?"
     donation-modal-optional-message: "תאור אופציונלי (לארנקך)"
   url:
-    about-us: אודותינו
-    bitcoin-for-developers: ביטקוין למפתחים bitcoin-for-developers
-    bitcoin-for-individuals: ביטקוין למשתמשים פרטיים bitcoin-for-individuals
-    bitcoin-for-businesses: ביטקוין לעסקים bitcoin-for-businesses
-    buy: קנייה
-    choose-your-wallet: בחירת ארנקך choose-your-wallet
-    community: קהילה
-    developer-documentation: תיעוד למפתח developer-documentation
-    developer-examples: דוגמאות למפתח developer-examples
-    developer-glossary: מילון למפתח developer-glossary
-    developer-guide: מדריך למפתח developer-guide
-    developer-reference: איזכורים למפתח developer-reference
-    blockchain-guide: מדריך בלוקצ'יין blockchain-guide
-    contracts-guide: מדריך חוזי עסקות contracts-guide
-    mining-guide: מדריך כרייה mining-guide
-    operating-modes-guide: מדריך מצבי הפעלה operating-modes-guide
-    p2p-network-guide: מדריך רשת עמית לעמית p2p-network-guide
-    payment-processing-guide: מדריך עיבוד עסקות payment-processing-guide
-    transactions-guide: מדריך עסקות transactions-guide
-    wallets-guide: מדריך ארנקים wallets-guide
-    development: פיתוח
-    download: הורדה
-    exchanges: בורסות
-    events: ארועים
-    faq: שאלות שכיחות
-    getting-started: התחלה getting-started
-    how-it-works: כיצד זה פועל how-it-works
-    innovation: חדשנות
-    legal: חוקיות
-    press: תקשורת
-    privacy: פרטיות
-    protect-your-privacy: הגנה על פרטיותך protect-your-privacy
-    resources: משאבים
-    scams: רמאויות
-    secure-your-wallet: אבטחת ארנקך secure-your-wallet
-    support-bitcoin: תמיכה בביטקוין support-bitcoin
-    vocabulary: מילון
-    you-need-to-know: מה שעליך לדעת you-need-to-know
-    bitcoin-paper: מאמר הביטקוין bitcoin-paper
-    spend-bitcoin: שימוש בביטקוין spend-bitcoin
+    about-us: about-us
+    bitcoin-for-developers: bitcoin-for-developers
+    bitcoin-for-individuals: bitcoin-for-individuals
+    bitcoin-for-businesses: bitcoin-for-businesses
+    choose-your-wallet: choose-your-wallet
+    community: community
+    development: development
+    download: download
+    events: events
+    faq: faq
+    getting-started: getting-started
+    how-it-works: how-it-works
+    innovation: innovation
+    legal: legal
+    press: press
+    protect-your-privacy: protect-your-privacy
+    resources: resources
+    secure-your-wallet: secure-your-wallet
+    support-bitcoin: support-bitcoin
+    vocabulary: vocabulary
+    you-need-to-know: you-need-to-know
   anchor:
     community:
-      non-profit: שלא למטרות רווח non-profit
-    scams:
-      blackmail: סחיטה
-      fake-exchanges: בורסות פיקטיביות fake-exchanges
-      free-giveaways: מתנות חינמיות free-giveaways
-      impersonation: התחזות
-      malware: תוכנה זדונית
-      meet-in-person: פגישה פנים אל פנים meet-in-person
-      money-transfer-fraud: הונאת העברת כסף money-transfer-fraud
-      phishing-emails: הונאת (דייג) דוא"ל phishing-emails
-      phishing-websites: אתרי דייג phishing-websites
-      ponzi-schemes: הונאות פונזי ponzi-schemes
-      pyramid-schemes: הונאות פירמידה pyramid-schemes
-      prize-giveaways: מתן פרסים prize-giveaways
-      pump-and-dumps: ניפוח מחיר והתפטרות ממלאי pump-and-dumps
-      ransomware: דרישות כופר
-      scam-coins: מטבעות מזויפים scam-coins
+      non-profit: non-profit
     vocabulary:
-      address: כתובת
-      bit: ביט
-      bitcoin: ביטקוין
-      blockchain: שרשרת בלוקים block-chain
-      block: בלוק
+      address: address
+      bitcoin: bitcoin
+      blockchain: block-chain
+      block: block
       btc: btc
-      confirmation: אישור
-      cryptography: קריפטוגרפיה
-      doublespend: שימוש כפול double-spend
-      hashrate: דרגת הקושי hash-rate
-      mining: כרייה
-      p2p: עמית לעמית p2p
-      privatekey: מפתח פרטי private-key
-      signature: חתימה
-      wallet: ארנק
+      confirmation: confirmation
+      cryptography: cryptography
+      doublespend: double-spend
+      hashrate: hash-rate
+      mining: mining
+      p2p: p2p
+      privatekey: private-key
+      signature: signature
+      wallet: wallet
     faq:
-      general: כללי
-      whatisbitcoin: ביטקוין מהו what-is-bitcoin
-      creator: מי יצר את ביטקוין  who-created-bitcoin
-      whocontrols: מיהם השולטים ברשת ביטקוין  who-controls-the-bitcoin-network
-      howitworks: כיצד ביטקוין פועל how-does-bitcoin-work
-      acquire: כיצד ניתן לרכוש ביטקוינים how-does-one-acquire-bitcoins
-      used: "האם ביטקוין באמת נמצא בשימוש אנשים is-bitcoin-really-used-by-people"
-      makepayment: כמה קשה לבצע תשלום ביטקוין how-difficult-is-it-to-make-a-bitcoin-payment
-      advantages: מהם היתרונות של ביטקוין what-are-the-advantages-of-bitcoin
-      disadvantages: מהם החסרונות של ביטקוין what-are-the-disadvantages-of-bitcoin
-      trust: מדוע אנשים סומכים על ביטקוין why-do-people-trust-bitcoin
-      makemoney: האם אוכל להרוויח כסף עם ביטקוין can-i-make-money-with-bitcoin
-      virtual: האם ביטקוין לגמרי וירטואלי ולא מוחשי is-bitcoin-fully-virtual-and-immaterial
-      anonymous: האם ביטקוין אנונימי is-bitcoin-anonymous
-      lost: מה קורה כשביטקוין הולך לאיבוד what-happens-when-bitcoins-are-lost
-      scale: האם ביטקוין יכול להפוך לרשת תשלומים מובילה  can-bitcoin-scale-to-become-a-major-payment-network
-      legal: חוקיות
-      islegal: האם ביטקוין חוקי is-bitcoin-legal
-      illegalactivities: האם ביטקוין שימושי לפעילויות לא חוקיות is-bitcoin-useful-for-illegal-activities
-      regulated: האם ניתן להחיל רגולציה על ביטקוין can-bitcoin-be-regulated
-      taxes: מה עם הקשר ביטקוין ומיסוי what-about-bitcoin-and-taxes
-      consumer: מה עם הקשר ביטקוין והגנת הצרכן what-about-bitcoin-and-consumer-protection
-      economy: כלכלה
-      bitcoinscreated: כיצד נוצרים ביטקוינים how-are-bitcoins-created
-      whyvalue: מדוע יש ערך לביטקוינים why-do-bitcoins-have-value
-      whatprice: מה מכתיב את מחיר ביטקוין what-determines-bitcoins-price
-      worthless: האם ביטקוין יכול להפוך לחסר ערך can-bitcoins-become-worthless
-      bubble: האם ביטקוין זו בועה is-bitcoin-a-bubble
-      ponzi: האם ביטקוין זו הונאת פונזי is-bitcoin-a-ponzi-scheme
-      earlyadopter: האם ביטקוין יוצר יתרון לא הוגן למי שאימץ אותו בתחילה doesnt-bitcoin-unfairly-benefit-early-adopters
-      finitelimitation: האם הכמות הסופית של ביטקוינים תהפוך למגבלה wont-the-finite-amount-of-bitcoins-be-a-limitation
-      deflationaryspiral: האם ביטקוין עלול להסחף למערבולת דיפלציונית wont-bitcoin-fall-in-a-deflationary-spiral
-      speculationvolatility: האין הספקולציות וחוסר היציבות בעיה עבור ביטקוין snt-speculation-and-volatility-a-problem-for-bitcoin
-      buyall: מה יקרה אם מישהו יחליט לרכוש את כל מצאי הביטקוינים הקיים what-if-someone-bought-up-all-the-existing-bitcoins
-      bettercurrency: מה אם מישהו יצור מטבע דיגיטלי יותר טוב what-if-someone-creates-a-better-digital-currency
-      transactions: טרנזקציות
-      tenminutes: מדוע יש לחכות 10 דקות why-do-i-have-to-wait-10-minutes
-      fee: כמה תעלה הטרנזקציה how-much-will-the-transaction-fee-be
-      poweredoff: מה קורה אם אקבל ביטקוין כאשר המחשב שלי כבוי what-if-i-receive-a-bitcoin-when-my-computer-is-powered-off
-      sync: מה משמעות הסינכרון ומדוע הדבר נמשך כל כך הרבה זמן what-does-synchronizing-mean-and-why-does-it-take-so-long
-      mining: כרייה
-      whatismining: מהי כריית ביטקוין what-is-bitcoin-mining
-      howminingworks: כיצד פועלת כריית ביטקוין how-does-bitcoin-mining-work
-      miningwaste: האין כריית ביטקוין ביזבוז של אנרגיה isnt-bitcoin-mining-a-waste-of-energy
-      miningsecure: כיצד כרייה עוזרת לבטיחות ביטקוין how-does-mining-help-secure-bitcoin
-      miningstart: מה צריך כדי להתחיל בכרייה what-do-i-need-to-start-mining
-      security: בטיחות
-      secure: האם ביטקוין בטוח is-bitcoin-secure
-      hacked: האם לא קרה שביטקוין נפרץ בעבר hasnt-bitcoin-been-hacked-in-the-past
-      collude: האם משתמשים יכולים לחבור כנגד ביטקוין could-users-collude-against-bitcoin
-      quantum: האם ביטקוין פגיע לטכנולוגיות מכניקת הקוונטים is-bitcoin-vulnerable-to-quantum-computing
-      help: עזרה
-      morehelp: עזרה נוספת
+      general: general
+      whatisbitcoin: what-is-bitcoin
+      creator: who-created-bitcoin
+      whocontrols: who-controls-the-bitcoin-network
+      howitworks: how-does-bitcoin-work
+      acquire: how-does-one-acquire-bitcoins
+      used: "is-bitcoin-really-used-by-people"
+      makepayment: how-difficult-is-it-to-make-a-bitcoin-payment
+      advantages: what-are-the-advantages-of-bitcoin
+      disadvantages: what-are-the-disadvantages-of-bitcoin
+      trust: why-do-people-trust-bitcoin
+      makemoney: can-i-make-money-with-bitcoin
+      virtual: is-bitcoin-fully-virtual-and-immaterial
+      anonymous: is-bitcoin-anonymous
+      lost: what-happens-when-bitcoins-are-lost
+      scale: can-bitcoin-scale-to-become-a-major-payment-network
+      legal: legal
+      islegal: is-bitcoin-legal
+      illegalactivities: is-bitcoin-useful-for-illegal-activities
+      regulated: can-bitcoin-be-regulated
+      taxes: what-about-bitcoin-and-taxes
+      consumer: what-about-bitcoin-and-consumer-protection
+      economy: economy
+      bitcoinscreated: how-are-bitcoins-created
+      whyvalue: why-do-bitcoins-have-value
+      whatprice: what-determines-bitcoins-price
+      worthless: can-bitcoins-become-worthless
+      bubble: is-bitcoin-a-bubble
+      ponzi: is-bitcoin-a-ponzi-scheme
+      earlyadopter: doesnt-bitcoin-unfairly-benefit-early-adopters
+      finitelimitation: wont-the-finite-amount-of-bitcoins-be-a-limitation
+      deflationaryspiral: wont-bitcoin-fall-in-a-deflationary-spiral
+      speculationvolatility: isnt-speculation-and-volatility-a-problem-for-bitcoin
+      buyall: what-if-someone-bought-up-all-the-existing-bitcoins
+      bettercurrency: what-if-someone-creates-a-better-digital-currency
+      transactions: transactions
+      tenminutes: why-do-i-have-to-wait-10-minutes
+      fee: how-much-will-the-transaction-fee-be
+      poweredoff: what-if-i-receive-a-bitcoin-when-my-computer-is-powered-off
+      sync: what-does-synchronizing-mean-and-why-does-it-take-so-long
+      mining: mining
+      whatismining: what-is-bitcoin-mining
+      howminingworks: how-does-bitcoin-mining-work
+      miningwaste: isnt-bitcoin-mining-a-waste-of-energy
+      miningsecure: how-does-mining-help-secure-bitcoin
+      miningstart: what-do-i-need-to-start-mining
+      security: security
+      secure: is-bitcoin-secure
+      hacked: hasnt-bitcoin-been-hacked-in-the-past
+      collude: could-users-collude-against-bitcoin
+      quantum: is-bitcoin-vulnerable-to-quantum-computing
+      help: help
+      morehelp: more-help
