@@ -166,18 +166,15 @@ redirects:
   /en/developer-reference#merkle-trees: https://developer.bitcoin.org/reference/block_chain#merkle-trees
   /en/developer-reference#target-nbits: https://developer.bitcoin.org/reference/block_chain#target-nbits
   /en/developer-reference#serialized-blocks: https://developer.bitcoin.org/reference/block_chain#serialized-blocks
-
   /en/developer-reference#transactions: https://developer.bitcoin.org/reference/transactions
   /en/developer-reference#opcodes: https://developer.bitcoin.org/reference/transactions#opcodes
   /en/developer-reference#address-conversion: https://developer.bitcoin.org/reference/transactions#address-conversion
   /en/developer-reference#raw-transaction-format: https://developer.bitcoin.org/reference/transactions#raw-transaction-format
   /en/developer-reference#compactsize-unsigned-integers: https://developer.bitcoin.org/reference/transactions#compactsize-unsigned-integers
-
   /en/developer-reference#wallets: https://developer.bitcoin.org/reference/wallets
   /en/developer-reference#deterministic-wallet-formats: https://developer.bitcoin.org/reference/wallets#deterministic-wallet-formats
   /en/developer-reference#type-1-single-chain-wallets: https://developer.bitcoin.org/reference/wallets#type-1-single-chain-wallets
   /en/developer-reference#type-2-hierarchical-deterministic-hd-wallets: https://developer.bitcoin.org/reference/wallets#type-2-hierarchical-deterministic-hd-wallets
-
   /en/developer-reference#p2p-network: https://developer.bitcoin.org/reference/p2p_networking#p2p-network
   /en/developer-reference#constants-and-defaults: https://developer.bitcoin.org/reference/p2p_networking#constants-and-defaults
   /en/developer-reference#protocol-versions: https://developer.bitcoin.org/reference/p2p_networking#protocol-versions
@@ -307,6 +304,30 @@ redirects:
   /en/developer-reference#ping-rpc: https://developer.bitcoin.org/reference/rpc/ping-rpc
 
   /en/developer-examples: https://developer.bitcoin.org/examples/
+  /en/developer-examples#testing-applications: https://developer.bitcoin.org/examples/testing#testing-applications 
+  /en/developer-examples#testnet: https://developer.bitcoin.org/examples/testing#testnet
+  /en/developer-examples#regtest-mode: https://developer.bitcoin.org/examples/testing#regtest-mode
+  /en/developer-examples#transactions: https://developer.bitcoin.org/examples/transactions#transactions
+  /en/developer-examples#transaction-tutorial: https://developer.bitcoin.org/examples/transactions#transaction-tutorial
+  /en/developer-examples#simple-spending: https://developer.bitcoin.org/examples/transactions#simple-spending
+  /en/developer-examples#simple-raw-transaction: https://developer.bitcoin.org/examples/transactions#simple-raw-transaction
+  /en/developer-examples#complex-raw-transaction: https://developer.bitcoin.org/examples/transactions#complex-raw-transaction
+  /en/developer-examples#offline-signing: https://developer.bitcoin.org/examples/transactions#offline-signing
+  /en/developer-examples#p2sh-multisig: https://developer.bitcoin.org/examples/transactions#p2sh-multisig
+  /en/developer-examples#payment-processing: https://developer.bitcoin.org/examples/payment_processing
+  /en/developer-examples#payment-protocol: https://developer.bitcoin.org/examples/payment_processing#payment-protocol
+  /en/developer-examples#paymentrequest--paymentdetails: https://developer.bitcoin.org/examples/payment_processing#paymentrequest-paymentdetails
+  /en/developer-examples#initialization-code: https://developer.bitcoin.org/examples/payment_processing#initialization-code
+  /en/developer-examples#configuration-code: https://developer.bitcoin.org/examples/payment_processing#configuration-code
+  /en/developer-examples#code-variables: https://developer.bitcoin.org/examples/payment_processing#code-variables
+  /en/developer-examples#derivable-data: https://developer.bitcoin.org/examples/payment_processing#derivable-data
+  /en/developer-examples#output-code: https://developer.bitcoin.org/examples/payment_processing#output-code
+  /en/developer-examples#p2p-network: https://developer.bitcoin.org/examples/p2p_networking
+  /en/developer-examples#creating-a-bloom-filter: https://developer.bitcoin.org/examples/p2p_networking#creating-a-bloom-filter
+  /en/developer-examples#evaluating-a-bloom-filter: https://developer.bitcoin.org/examples/p2p_networking#evaluating-a-bloom-filter
+  /en/developer-examples#retrieving-a-merkleblock: https://developer.bitcoin.org/examples/p2p_networking#retrieving-a-merkleblock
+  /en/developer-examples#parsing-a-merkleblock: https://developer.bitcoin.org/examples/p2p_networking#parsing-a-merkleblock
+  
   /en/developer-glossary: https://developer.bitcoin.org/glossary
   /news: /en/version-history
   /clients: /en/choose-your-wallet
