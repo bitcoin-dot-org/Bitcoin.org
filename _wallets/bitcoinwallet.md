@@ -27,6 +27,6 @@ platform:
           fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacydisclosure: "checkpassprivacydisclosurefullnode"
           privacynetwork: "checkpassprivacynetworksupporttorproxy"
 ---
