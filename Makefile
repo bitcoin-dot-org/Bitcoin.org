@@ -116,7 +116,7 @@ build:
 ## Jekyll annoyingly returns success even when it emits errors and
 ## exceptions, so we'll grep its output for error strings
 check-for-build-errors:
-	$S egrep -i '(error|exception)' $(JEKYLL_LOG) \
+	$S egrep -i '(error|warn|exception)' $(JEKYLL_LOG) \
 	    | grep -vi 'rouge/lexers/shell.rb' \
 	    | eval $(ERROR_ON_OUTPUT)
 
