@@ -166,25 +166,6 @@ redirects:
   /sr/developer-glossary: /sr/programeri-recnik
   /sr/developer-guide: /sr/programeri-vodic
   /sr/developer-reference: /sr/programeri-reference
-  ## Buy bitcoin page; remove as each language is updated to include the translated page
-  ## Exchanges page; remove as each language is updated to include the translated page
-  /ar/exchanges: /en/exchanges
-  /bg/exchanges: /en/exchanges
-  /da/exchanges: /en/exchanges
-  /el/exchanges: /en/exchanges
-  /es/exchanges: /en/exchanges
-  /fa/exchanges: /en/exchanges
-  /fr/exchanges: /en/exchanges
-  /he/exchanges: /en/exchanges
-  /hi/exchanges: /en/exchanges
-  /hu/exchanges: /en/exchanges
-  /ko/exchanges: /en/exchanges
-  /pl/exchanges: /en/exchanges
-  /ro/exchanges: /en/exchanges
-  /sl/exchanges: /en/exchanges
-  /sv/exchanges: /en/exchanges
-  /tr/exchanges: /en/exchanges
-  /zh_TW/exchanges: /en/exchanges
   ## Spend bitcoin page; remove as each language is updated to include the translated page
   /ar/spend-bitcoin: /en/spend-bitcoin
   /bg/spend-bitcoin: /en/spend-bitcoin
