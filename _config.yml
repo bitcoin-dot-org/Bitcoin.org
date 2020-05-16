@@ -166,63 +166,6 @@ redirects:
   /sr/developer-glossary: /sr/programeri-recnik
   /sr/developer-guide: /sr/programeri-vodic
   /sr/developer-reference: /sr/programeri-reference
-  ## Buy bitcoin page; remove as each language is updated to include the translated page
-  /ar/buy: /en/buy
-  /bg/buy: /en/buy
-  /da/buy: /en/buy
-  /el/buy: /en/buy
-  /es/buy: /en/buy
-  /fa/buy: /en/buy
-  /fr/buy: /en/buy
-  /he/buy: /en/buy
-  /hi/buy: /en/buy
-  /hu/buy: /en/buy
-  /ko/buy: /en/buy
-  /nl/buy: /en/buy
-  /pl/buy: /en/buy
-  /ro/buy: /en/buy
-  /ru/buy: /en/buy
-  /sl/buy: /en/buy
-  /sv/buy: /en/buy
-  /tr/buy: /en/buy
-  /uk/buy: /en/buy
-  /zh_TW/buy: /en/buy
-  ## Exchanges page; remove as each language is updated to include the translated page
-  /ar/exchanges: /en/exchanges
-  /bg/exchanges: /en/exchanges
-  /da/exchanges: /en/exchanges
-  /el/exchanges: /en/exchanges
-  /es/exchanges: /en/exchanges
-  /fa/exchanges: /en/exchanges
-  /fr/exchanges: /en/exchanges
-  /he/exchanges: /en/exchanges
-  /hi/exchanges: /en/exchanges
-  /hu/exchanges: /en/exchanges
-  /ko/exchanges: /en/exchanges
-  /pl/exchanges: /en/exchanges
-  /ro/exchanges: /en/exchanges
-  /sl/exchanges: /en/exchanges
-  /sv/exchanges: /en/exchanges
-  /tr/exchanges: /en/exchanges
-  /zh_TW/exchanges: /en/exchanges
-  ## Spend bitcoin page; remove as each language is updated to include the translated page
-  /ar/spend-bitcoin: /en/spend-bitcoin
-  /bg/spend-bitcoin: /en/spend-bitcoin
-  /da/spend-bitcoin: /en/spend-bitcoin
-  /el/spend-bitcoin: /en/spend-bitcoin
-  /es/spend-bitcoin: /en/spend-bitcoin
-  /fa/spend-bitcoin: /en/spend-bitcoin
-  /fr/spend-bitcoin: /en/spend-bitcoin
-  /he/spend-bitcoin: /en/spend-bitcoin
-  /hi/spend-bitcoin: /en/spend-bitcoin
-  /hu/spend-bitcoin: /en/spend-bitcoin
-  /ko/spend-bitcoin: /en/spend-bitcoin
-  /pl/spend-bitcoin: /en/spend-bitcoin
-  /ro/spend-bitcoin: /en/spend-bitcoin
-  /sl/spend-bitcoin: /en/spend-bitcoin
-  /sv/spend-bitcoin: /en/spend-bitcoin
-  /tr/spend-bitcoin: /en/spend-bitcoin
-  /zh_TW/spend-bitcoin: /en/spend-bitcoin
   ## Old releases pages; stop adding to this list after 0.8.2
   /releases/2011/04/27/v0.3.21: /en/release/v0.3.21
   /releases/2011/06/05/v0.3.22: /en/release/v0.3.22

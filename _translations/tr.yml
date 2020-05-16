@@ -677,10 +677,12 @@ tr:
     bitcoin-for-developers: gelistiriciler-icin-bitcoin
     bitcoin-for-individuals: bireyler-icin-bitcoin
     bitcoin-for-businesses: isletmeler-icin-bitcoin
+    buy: satin
     choose-your-wallet: cuzdaninizi-secin
     community: topluluk
     development: gelistirme
     download: indir
+    exchanges: borsalari
     events: etkinlikler
     faq: sss
     getting-started: baslarken
@@ -695,6 +697,7 @@ tr:
     support-bitcoin: bitcoini-destekleyin
     vocabulary: kelime-haznesi
     you-need-to-know: bilmeniz-gerekenler
+    spend-bitcoin: bitcoin-para-harcamak
   anchor:
     community:
       non-profit: kar-etmeyen
