@@ -18,6 +18,7 @@ group :development do
   gem 'json', '>= 1.9'
   gem 'less', '2.4.0'
   gem 'kramdown', '~>2.1'
+  gem 'rubocop', '>= 0.83.0'
   gem 'RedCloth', ">= 4.3.0"
   gem 'therubyracer' # required by less
   gem 'jshintrb', '~>0.3.0'
