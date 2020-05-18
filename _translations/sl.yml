@@ -16,7 +16,7 @@ sl:
     missiontxt6: "Izboljšati globalno dostopnost bitcoina z internacionalizacijo."
     missiontxt7: "Ostati nevtralen vir novic o Bitcoinu."
     help: "Pomagajte nam"
-    helptxt: "Če na spletišču bitcoin.org opazite problem ali imate kak predlog za izboljšavo, lahko na  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHubu</a> odprete zadevo (<i>issue</i>) ali zahtevek za poteg (<i>pull request</i>) v angleščini. Pri tem si, prosimo, vzemite potrebni čas za razpravo o predlagani spremembi in morebitne prilagoditve. Pomagate lahko tudi pri prevajanju: pridružite se ekipi na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifexu</a>. Prosimo, ne zaprošajte za promocijo svojih storitev ali spletišč, razen v posebnih primerih, kot so konference. Najlepša hvala vsem sodelujočim, ki vlagajo svoj čas za izboljšave bitcoin.org!"
+    helptxt: "Če na spletišču bitcoin.org opazite problem ali imate kak predlog za izboljšavo, lahko na  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHubu</a> odprete zadevo (<i>issue</i>) ali zahtevek za poteg (<i>pull request</i>) v angleščini. Pri tem si, prosimo, vzemite potrebni čas za razpravo o predlagani spremembi in morebitne prilagoditve. Pomagate lahko tudi pri prevajanju: pridružite se ekipi na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifexu</a>. Prosimo, ne zaprošajte za promocijo svojih storitev ali spletišč, razen v posebnih primerih, kot so konference. Najlepša hvala vsem sodelujočim, ki vlagajo svoj čas za izboljšave bitcoin.org!"
     maintenance: "Vzdrževanje"
     documentation: "Dokumentacija"
     translation: "Prevod"
@@ -631,7 +631,7 @@ sl:
     menu-participate: Sodelujte
     menu-vocabulary: Slovar
     menu-you-need-to-know: "Obvezno branje"
-    banner-translate: "Prevodi v tem jeziku so zastareli. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Kliknite tu, če želite pomagati prevajati bitcoin.org v svoj jezik</a>."
+    banner-translate: "Prevodi v tem jeziku so zastareli. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Kliknite tu, če želite pomagati prevajati bitcoin.org v svoj jezik</a>."
     footer: "Objavljeno pod pogoji <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licence</a>"
     sponsor: "Spletišče skupnosti pod pokroviteljstvom"
     getstarted: "Prvi koraki z bitcoinom"

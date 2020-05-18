@@ -24,7 +24,7 @@ sr:
     missiontxt6: "Unaprediti dostupnost Bitkoina širom sveta pomoću internacionalizacije."
     missiontxt7: "Ostati nepristrasan izvor informacija o Bitkoinu."
     help: "Pomozite nam"
-    helptxt: "Možete prijaviti problem ili poboljšati bitcoin.org na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub-u</a> tako što ćete otvoriti \"pull request\" na Engleskom jeziku. Kada podnosite zahtev za povlačenjem (pull request), molimo da pojasnite predložene promene. Možete pomoći prevodjenjem, tako što ćete se pridružiti timu na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex-u.</a> Molimo, nemojte pitati za promociju vašeg projekta ili biznisa, osim u specijalnim okolnostima, kao što su konferencije. Veliko hvala svim dobrovoljcima koji ulažu vreme, trud i pomažu nam da poboljšamo bitcoin.org!"
+    helptxt: "Možete prijaviti problem ili poboljšati bitcoin.org na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub-u</a> tako što ćete otvoriti \"pull request\" na Engleskom jeziku. Kada podnosite zahtev za povlačenjem (pull request), molimo da pojasnite predložene promene. Možete pomoći prevodjenjem, tako što ćete se pridružiti timu na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex-u.</a> Molimo, nemojte pitati za promociju vašeg projekta ili biznisa, osim u specijalnim okolnostima, kao što su konferencije. Veliko hvala svim dobrovoljcima koji ulažu vreme, trud i pomažu nam da poboljšamo bitcoin.org!"
     maintenance: "Održavanje"
     documentation: "Dokumentacija"
     sponsorship: "Sponzorstva"
@@ -1126,7 +1126,7 @@ sr:
     menu-white-paper: "Osnovni dokument - beli papir"
     banner-core-moved: |
         Ova stranica premeštena je na novi Bitcoin Core sajt (klikni ovde za preusmeravanje)
-    banner-translate: "Prevod za ovaj jezik je zastareo. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Kliknite ovde kako bi pomogli prevođenje bitcoin.org na vaš jezik</a>."
+    banner-translate: "Prevod za ovaj jezik je zastareo. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Kliknite ovde kako bi pomogli prevođenje bitcoin.org na vaš jezik</a>."
     footer: "Izbačeno pod <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licencom</a>"
     donate-community: "Podržite Bitcoin.org"
     donate-support: "Bitcoin.org se održava od strane zajednice."

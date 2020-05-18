@@ -24,7 +24,7 @@ ja:
     missiontxt6: "ビットコインの国際化に伴う世界的なアクセス可能性を改善"
     missiontxt7: "ビットコインに関する中立的な情報源である事の存続"
     help: "支援のお願い"
-    helptxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>上で問題やプルリクエストを英語で作成する事で、bitcoin.orgの問題点を報告したり、改善の手助けができます。プルリクエストを送信する場合、変更点の考察や修正に十分な時間を設けてください。また、<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>上のチームに参加する事で、翻訳作業を手伝う事もできます。ただし、カンファレンス等の特別な事情を除き、個人的なビジネスやウェブサイトの宣伝はご遠慮ください。bitcoin.orgの改善にお時間を割いて頂いている全ての貢献者の方に、感謝しています！"
+    helptxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>上で問題やプルリクエストを英語で作成する事で、bitcoin.orgの問題点を報告したり、改善の手助けができます。プルリクエストを送信する場合、変更点の考察や修正に十分な時間を設けてください。また、<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>上のチームに参加する事で、翻訳作業を手伝う事もできます。ただし、カンファレンス等の特別な事情を除き、個人的なビジネスやウェブサイトの宣伝はご遠慮ください。bitcoin.orgの改善にお時間を割いて頂いている全ての貢献者の方に、感謝しています！"
     maintenance: "メンテナンス"
     documentation: "ドキュメンテーション"
     sponsorship: "後援"
@@ -1060,7 +1060,7 @@ ja:
     banner-core-moved: |
         このページは新しいBitcoin Coreのウェブサイトに移動しました。
         （リダイレクトにはこちらをクリックください）
-    banner-translate: "この言語の翻訳は古くなっています。<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">ご自身の言語で bitcoin.org の翻訳援助されたい場合、こちらをクリックください</a>。"
+    banner-translate: "この言語の翻訳は古くなっています。<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">ご自身の言語で bitcoin.org の翻訳援助されたい場合、こちらをクリックください</a>。"
     footer: "<a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MITライセンス</a>の下でのリリース"
     donate-community: "Bitcoin.orgを支援する"
     donate-support: "Bitcoin.orgはコミュニティに支えられています。"

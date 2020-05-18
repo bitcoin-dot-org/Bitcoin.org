@@ -19,7 +19,7 @@ ru:
     missiontxt6: "Улучшить доступность Биткойна во всем мире с помощью перевода на другие языки."
     missiontxt7: "Оставаться нейтральным информационным ресурсом о Биткойне."
     help: "Помогите нам"
-    helptxt: "Вы можете сообщить о проблемах или помочь улучшить bitcoin.org, открыв новый тикет на английском языке или запрос на изменение на <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>. Отправляя запрос, пожалуйста не забывайте обсудить предлагаемые изменения и при необходимости их исправить. Вы можете помочь переводить сайт, присоединившись к команде переводчиков на <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Пожалуйста не используйте это для продвижения своего личного бизнеса или сайта, за исключением особых случаев вроде биткойн-конференций. Спасибо всем, кто вкладывает свое время и усилия в улучшение bitcoin.org!"
+    helptxt: "Вы можете сообщить о проблемах или помочь улучшить bitcoin.org, открыв новый тикет на английском языке или запрос на изменение на <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>. Отправляя запрос, пожалуйста не забывайте обсудить предлагаемые изменения и при необходимости их исправить. Вы можете помочь переводить сайт, присоединившись к команде переводчиков на <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Пожалуйста не используйте это для продвижения своего личного бизнеса или сайта, за исключением особых случаев вроде биткойн-конференций. Спасибо всем, кто вкладывает свое время и усилия в улучшение bitcoin.org!"
     maintenance: "Обслуживание"
     documentation: "Документация"
     sponsorship: "Спонсорство"
@@ -830,7 +830,7 @@ ru:
     banner-core-moved: |
       Эта страница была перемещена на новый сайт
       Bitcoin Core (нажмите для перехода)
-    banner-translate: "Перевод на этот язык устарел. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Кликните здесь чтобы помочь перевести bitcoin.org на ваш язык</a>."
+    banner-translate: "Перевод на этот язык устарел. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Кликните здесь чтобы помочь перевести bitcoin.org на ваш язык</a>."
     footer: "ПО распространяется под лицензией <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT</a>"
     sponsor: "Веб-сайт сообщества спонсируется"
     getstarted: "Начало работы с Биткойном"

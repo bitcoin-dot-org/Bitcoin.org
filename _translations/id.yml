@@ -24,7 +24,7 @@ id:
     missiontxt6: "Meningkatkan aksesibilitas Bitcoin di seluruh dunia dengan internasionalisasi."
     missiontxt7: "Terus menjadi sumber informatif netral mengenai Bitcoin."
     help: "Bantu kami"
-    helptxt: "Anda bisa melaporkan masalah atau bantuan apapun untuk meningkatkan bitcoin.org di <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>dengan membuka sebuah isu atau pull request dalam Bahasa Inggris. Ketika memasukkan sebuah tarikan permintaan, mohon ambil waktu yang diperlukan untuk mendiskusikan perubahan dan mengadaptasi kerja Anda. Anda bisa bantu menerjemahkan dengan bergabung dengan tim di <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex </a>. Mohon jangan berpromosi bisnis atau situs web pribadi, kecuali untuk kasus khusus seperti konferensi. Terima kasih banyak untuk semua kontributor yang meluangkan waktu untuk meningkatkan bitcoin.org!"
+    helptxt: "Anda bisa melaporkan masalah atau bantuan apapun untuk meningkatkan bitcoin.org di <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>dengan membuka sebuah isu atau pull request dalam Bahasa Inggris. Ketika memasukkan sebuah tarikan permintaan, mohon ambil waktu yang diperlukan untuk mendiskusikan perubahan dan mengadaptasi kerja Anda. Anda bisa bantu menerjemahkan dengan bergabung dengan tim di <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex </a>. Mohon jangan berpromosi bisnis atau situs web pribadi, kecuali untuk kasus khusus seperti konferensi. Terima kasih banyak untuk semua kontributor yang meluangkan waktu untuk meningkatkan bitcoin.org!"
     maintenance: "Pemeliharaan"
     documentation: "Dokumentasi"
     sponsorship: "Sponsor"
@@ -1130,7 +1130,7 @@ id:
     banner-core-moved: |
         Halaman ini telah dipindahkan ke situs Bitcoin Core
         yang baru (klik disini untuk redirect)
-    banner-translate: "Terjemahan bahasa ini sudah ketinggalan jaman. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Klik di sini untuk membantu menerjemahkan bitcoin.org dalam bahasa anda</a>."
+    banner-translate: "Terjemahan bahasa ini sudah ketinggalan jaman. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Klik di sini untuk membantu menerjemahkan bitcoin.org dalam bahasa anda</a>."
     footer: "Dirilis di bawah <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">lisensi MIT</a>"
     donate-community: "Bantu Bitcoin.org"
     donate-support: "BItcoin.org merupakan pendukung komunitas."

@@ -16,7 +16,7 @@ ar:
     missiontxt6: "تحسين إمكانية الوصول للبت كوين عالمياً من خلال الوصول المحلي لجميع أنحاء العالم."
     missiontxt7: "البقاء كمصدر معلومات محايد حول البت كوين."
     help: "ساعدنا!"
-    helptxt: "يمكنك الإبلاغ عن أي مشكلة تواجهك أو المساعدة في تحسين موقع bitcoin.org عن طريق <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> و ذلك من خلال فتح تذكرة دعم أو سؤال بالإنجليزية. عند رفع الملفات، من فضلك تأكد من قضاء الوقت الكافي في مناقشة التغييرات التي قمت بعملها وتحسين وتبني العمل الخاص بك. يمكنك المساعدة في الترجمة من خلال الإنضمام للفريق على موقع <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. من فضلك لا تسأل عن دعاية خاصة لموقعك أو لشركتك أو عملك الخاص، إلا في الحالات الخاصة كالمؤتمرات. الشكر الجزيل لكل المساهمين و المساعدين على تطوير و تحسين موقع bitcoin.org !"
+    helptxt: "يمكنك الإبلاغ عن أي مشكلة تواجهك أو المساعدة في تحسين موقع bitcoin.org عن طريق <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> و ذلك من خلال فتح تذكرة دعم أو سؤال بالإنجليزية. عند رفع الملفات، من فضلك تأكد من قضاء الوقت الكافي في مناقشة التغييرات التي قمت بعملها وتحسين وتبني العمل الخاص بك. يمكنك المساعدة في الترجمة من خلال الإنضمام للفريق على موقع <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. من فضلك لا تسأل عن دعاية خاصة لموقعك أو لشركتك أو عملك الخاص، إلا في الحالات الخاصة كالمؤتمرات. الشكر الجزيل لكل المساهمين و المساعدين على تطوير و تحسين موقع bitcoin.org !"
     maintenance: "الصيانة"
     documentation: "التوثيق"
     translation: "الترجمة"
@@ -630,7 +630,7 @@ ar:
     menu-participate: المشاركة
     menu-vocabulary: المفردات
     menu-you-need-to-know: "يجب عليك معرفة"
-    banner-translate: "الترجمة لهذه اللغة قديمة. </a> إضغط هنا لتساعد في ترجمة موقع bitcoin.org بلغتك<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">."
+    banner-translate: "الترجمة لهذه اللغة قديمة. </a> إضغط هنا لتساعد في ترجمة موقع bitcoin.org بلغتك<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">."
     footer: "مصدر تحت <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT ترخيص</a>"
     sponsor: "موقع إلكتروني خاص بمجتمع البت كوين مدعم من قبل"
     getstarted: "إبدأ الآن مع البت كوين"

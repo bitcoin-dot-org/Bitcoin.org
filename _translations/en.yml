@@ -24,7 +24,7 @@ en:
     missiontxt6: "Improve Bitcoin worldwide accessibility with internationalization."
     missiontxt7: "Remain a neutral informative resource about Bitcoin."
     help: "Help us"
-    helptxt: "You can report any problem or help to improve bitcoin.org on <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> by opening an issue or a pull request in English. When submitting a pull request, please take required time to discuss your changes and adapt your work. You can help with translations by joining a team on <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Please don't ask for promotion for your personal business or website, except for special cases like conferences. Many thanks to all contributors who are spending time improving bitcoin.org!"
+    helptxt: "You can report any problem or help to improve bitcoin.org on <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> by opening an issue or a pull request in English. When submitting a pull request, please take required time to discuss your changes and adapt your work. You can help with translations by joining a team on <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Please don't ask for promotion for your personal business or website, except for special cases like conferences. Many thanks to all contributors who are spending time improving bitcoin.org!"
     maintenance: "Maintenance"
     documentation: "Documentation"
     sponsorship: "Sponsorship"
@@ -1161,7 +1161,7 @@ en:
       This page has moved to the new Bitcoin Core
       website (click here to be redirected)
 
-    banner-translate: "Translations for this language are outdated. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Click here to help translate bitcoin.org in your language</a>."
+    banner-translate: "Translations for this language are outdated. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Click here to help translate bitcoin.org in your language</a>."
     footer: "Released under the <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT license</a>"
     donate-community: "Support Bitcoin.org"
     donate-support: "Bitcoin.org is community supported."

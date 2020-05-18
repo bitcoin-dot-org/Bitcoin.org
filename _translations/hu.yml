@@ -24,7 +24,7 @@ hu:
     missiontxt6: "A Bitcoin világszintű hozzáférhetőségének nemzetközi módon történő biztosítása."
     missiontxt7: "Mindenkor pártatlan információkat szolgáltatni a Bitcoinról."
     help: "Segíts nekünk!"
-    helptxt: "A bitcoin.org-on tapasztalt bármilyen problémát jelenthetsz, illetve fejlesztési javaslatokat tehetsz a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> weboldalán, ún. issue vagy pull request segítségével, angol nyelven. Pull request készítésekor kérjük szánj megfelelő időt változtatásaid megtárgyalására, és munkád alkalmassá tételére. Ha fordítani szeretnél, csatlakozz a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a> valamely csapatához! Ne kérd saját vállalkozásod vagy weboldalad reklámozását, kivéve különleges esetekben – például konferenciák alkalmával. Nagy köszönet illeti az összes közreműködőt, aki időt szakít a bitcoin.org fejlesztésére!"
+    helptxt: "A bitcoin.org-on tapasztalt bármilyen problémát jelenthetsz, illetve fejlesztési javaslatokat tehetsz a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> weboldalán, ún. issue vagy pull request segítségével, angol nyelven. Pull request készítésekor kérjük szánj megfelelő időt változtatásaid megtárgyalására, és munkád alkalmassá tételére. Ha fordítani szeretnél, csatlakozz a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a> valamely csapatához! Ne kérd saját vállalkozásod vagy weboldalad reklámozását, kivéve különleges esetekben – például konferenciák alkalmával. Nagy köszönet illeti az összes közreműködőt, aki időt szakít a bitcoin.org fejlesztésére!"
     maintenance: "Karbantartás"
     documentation: "Dokumentáció"
     sponsorship: "Támogatás"
@@ -974,7 +974,7 @@ hu:
     banner-core-moved: |
         Ez az oldal elköltözött az új Bitcoin Core
         oldalra (kattints ide az átirányításhoz)
-    banner-translate: "Az ehhez a nyelvhez tartozó fordítások elavultak. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">A bitcoin.org saját nyelvére történő fordításában való segítséghez kattintson ide</a>."
+    banner-translate: "Az ehhez a nyelvhez tartozó fordítások elavultak. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">A bitcoin.org saját nyelvére történő fordításában való segítséghez kattintson ide</a>."
     footer: "Az <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licence</a> alatt közzétéve"
     donate-community: "Támogasd a Bitcoin.org-ot"
     donate-support: "A Bitcoin.org honlapot a közösség támogatja."

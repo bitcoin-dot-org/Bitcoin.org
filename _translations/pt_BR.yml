@@ -24,7 +24,7 @@ pt_BR:
     missiontxt6: "Melhorar a acessibilidade do Bitcoin no mundo todo através da internacionalização."
     missiontxt7: "Continua a ser um recurso informativo neutro sobre Bitcoin."
     help: "Ajude-nos"
-    helptxt: "Você pode reportar qualquer problema ou ajudar a melhorar o site bitcoin.org no <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> abrindo uma nova requisição ou um \"pull request\" em inglês. Quando for submeter um pull request, por favor tome o tempo necessário para discutir suas mudanças e adaptar seu trabalho. Você pode ajudar com as traduções, para isso basta se juntar a um time no <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex.</a> Por favor, não peça para promover o seu negócio ou o seu site pessoal, exceto em casos especiais, como conferências. Muito obrigado a todos os contribuidores que dedicam seu tempo melhorando o bitcoin.org!"
+    helptxt: "Você pode reportar qualquer problema ou ajudar a melhorar o site bitcoin.org no <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> abrindo uma nova requisição ou um \"pull request\" em inglês. Quando for submeter um pull request, por favor tome o tempo necessário para discutir suas mudanças e adaptar seu trabalho. Você pode ajudar com as traduções, para isso basta se juntar a um time no <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex.</a> Por favor, não peça para promover o seu negócio ou o seu site pessoal, exceto em casos especiais, como conferências. Muito obrigado a todos os contribuidores que dedicam seu tempo melhorando o bitcoin.org!"
     maintenance: "Manutenção"
     documentation: "Documentação"
     sponsorship: "Patrocínio "
@@ -975,7 +975,7 @@ pt_BR:
     banner-core-moved: |
         Esta página se mudou para o novo site do Bitcoin
         Core (clique aqui para ser redirecionado)
-    banner-translate: "Traduções para esse idioma não estão atualizadas. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Clique aqui para ajudar a traduzir o bitcoin.org para o seu idioma.</a>"
+    banner-translate: "Traduções para esse idioma não estão atualizadas. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Clique aqui para ajudar a traduzir o bitcoin.org para o seu idioma.</a>"
     footer: "Liberado sob a <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">Licença MIT</a>"
     donate-community: "Ajude o Bitcoin.org"
     sponsor: "Um site comunitário patrocinado por "

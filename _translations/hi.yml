@@ -16,7 +16,7 @@ hi:
     missiontxt6: "अंतर्राष्ट्रीयकरण के साथ दुनिया भर में Bitcoin पर पहुँच में सुधार लाएं।"
     missiontxt7: "Bitcoin के बारे में तटस्थ जानकारीपूर्ण संसाधन बने रहे। "
     help: "हमारी मदद करें"
-    helptxt: " <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> पर एक मुद्दा खोलकर या  अंग्रेजी में अनुरोध खींच कर, आप किसी भी समस्या के बारे में रिपोर्ट कर सकते हैं या bitcoin.org पर सुधार करने में मदद दे सकते हैं। अनुरोध देने के दौरान कृपया अपने काम के लिए अनुकूल परिवर्तनों पर चर्चा के लिए आवश्यक समय दें।  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. पर किसी एक टीम में शामिल हो कर आप अनुवाद में हमारी मदद कर सकते हैं। सम्मेलनों की तरह विशेष मामलों के अलावा, कृपया अपने निजी व्यवसाय या वेबसाइट के लिए पदोन्नति की मांग न करें। Bitcoin.org के सुधार पर समय खर्च करने वाले सभी योगदानकर्ताओं को बहुत बहुत धन्यवाद!"
+    helptxt: " <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> पर एक मुद्दा खोलकर या  अंग्रेजी में अनुरोध खींच कर, आप किसी भी समस्या के बारे में रिपोर्ट कर सकते हैं या bitcoin.org पर सुधार करने में मदद दे सकते हैं। अनुरोध देने के दौरान कृपया अपने काम के लिए अनुकूल परिवर्तनों पर चर्चा के लिए आवश्यक समय दें।  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. पर किसी एक टीम में शामिल हो कर आप अनुवाद में हमारी मदद कर सकते हैं। सम्मेलनों की तरह विशेष मामलों के अलावा, कृपया अपने निजी व्यवसाय या वेबसाइट के लिए पदोन्नति की मांग न करें। Bitcoin.org के सुधार पर समय खर्च करने वाले सभी योगदानकर्ताओं को बहुत बहुत धन्यवाद!"
     maintenance: "अनुरक्षण"
     documentation: "प्रलेखीकरण"
     translation: "अनुवाद"
@@ -668,7 +668,7 @@ hi:
     menu-participate: भाग लें
     menu-vocabulary: शब्दावली
     menu-you-need-to-know: "आपको पता होना चाहिए "
-    banner-translate: "इन भाषाओं के लिए अनुवाद पुरानी हो चुकी है <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">अपनी भाषा में bitcoin.org के अनुवाद में मदद करने के लिए यहां क्लिक करें </a>."
+    banner-translate: "इन भाषाओं के लिए अनुवाद पुरानी हो चुकी है <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">अपनी भाषा में bitcoin.org के अनुवाद में मदद करने के लिए यहां क्लिक करें </a>."
     footer: " <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\"> MIT लाइसेंस </a> के तहत जारी किया गया है "
     sponsor: " समुदाय वेबसाइट प्रायोजित किया गया निम्न के द्वारा"
     getstarted: " Bitcoin के साथ शुरू हो जाइए "

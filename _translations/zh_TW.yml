@@ -16,7 +16,7 @@ zh_TW:
     missiontxt6: "以國際化方式改善 Bitcoin 的全球接入度。"
     missiontxt7: "保持 Bitcoin 各方面資訊資源的中立性。"
     help: "協助我們"
-    helptxt: "你可以用英文在 <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> 匯報問題，或透過新增議題及請求協助來改善 bitcoin.org。當你請求協助時，請花點時間解釋你所作的改變並調整你的工作內容。你也可以加入 <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a> 的專案小組來協助翻譯。除了像會議這種特殊情況之外，請不要推廣你個人或企業的網站。非常感謝所有花時間改善 bitcoin.org 的貢獻者！"
+    helptxt: "你可以用英文在 <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> 匯報問題，或透過新增議題及請求協助來改善 bitcoin.org。當你請求協助時，請花點時間解釋你所作的改變並調整你的工作內容。你也可以加入 <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a> 的專案小組來協助翻譯。除了像會議這種特殊情況之外，請不要推廣你個人或企業的網站。非常感謝所有花時間改善 bitcoin.org 的貢獻者！"
     maintenance: "維護"
     documentation: "文檔"
     translation: "翻譯"
@@ -668,7 +668,7 @@ zh_TW:
     menu-participate: 參與
     menu-vocabulary: 詞彙
     menu-you-need-to-know: "使用須知"
-    banner-translate: "這種語言的翻譯已經過時。<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">點擊這裡來幫助把bitcoin.org 翻譯成您的語言</a>。"
+    banner-translate: "這種語言的翻譯已經過時。<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">點擊這裡來幫助把bitcoin.org 翻譯成您的語言</a>。"
     footer: "以 <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT 授權</a>發佈"
     sponsor: "一個由其贊助的社群網站"
     getstarted: "開始使用 Bitcoin"
