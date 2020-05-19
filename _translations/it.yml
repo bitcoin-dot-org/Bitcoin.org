@@ -11,7 +11,7 @@ it:
     owntxt3-title: "La documentazione per gli sviluppatori è stata aggiunta nel 2014"
     owntxt3: "Aggiornamenti, correzioni, suggerimenti e miglioramenti da parte dei membri della comunità sono i benvenuti."
     owntxt4-title: "Il sito è un progetto open source indipendente"
-    owntxt4: "Oggi il sito è un progetto open source indipendente con collaboratori da tutto il mondo. L'autorità di pubblicazione finale è detenuta dai comproprietari, ma tutte le attività regolari sono organizzate attraverso il processo di <a href=\"https://github.com/bitcoin/bitcoin.org#working-with-github\">richiesta di attrazione pubblica</a> e gestite dai co-manutentori del sito."
+    owntxt4: "Oggi il sito è un progetto open source indipendente con collaboratori da tutto il mondo. L'autorità di pubblicazione finale è detenuta dai comproprietari, ma tutte le attività regolari sono organizzate attraverso il processo di <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md\">richiesta di attrazione pubblica</a> e gestite dai co-manutentori del sito."
     owntxt5: "Bitcoin.org non è il sito ufficiale di Bitcoin. Proprio come nessuno possiede la tecnologia email, nessuno possiede la rete Bitcoin. Come tale, nessuno può parlare con autorità nel nome di Bitcoin."
     control: "Quindi... chi controlla Bitcoin?"
     controltxt: "Bitcoin è controllato da tutti gli utenti Bitcoin di tutto il mondo. Gli sviluppatori stanno migliorando il software ma non possono forzare un cambiamento nelle regole del protocollo Bitcoin, perché tutti gli utenti sono liberi di scegliere il software utilizzare. Per rimanere compatibili con tutti gli altri, ogni utente ha bisogno di usare software conforme alle stesse regole. Bitcoin può lavorare in modo decente solo con un consenso completo tra tutti gli utenti. Quindi, tutti gli utenti e gli sviluppatori sono molto incentivati ad adottare e proteggere questo consenso."
@@ -24,7 +24,7 @@ it:
     missiontxt6: "Migliorare l'accessibilità a Bitcoin in tutto il mondo con l'internazionalizzazione."
     missiontxt7: "Conservare una risorsa informativa neutrale riguardante Bitcoin."
     help: "Aiutaci"
-    helptxt: "È possibile segnalare qualsiasi problema o contribuire a migliorare bitcoin.org su <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>aprendo una segnalazione o inviando un suggerimento di modifica in Inglese . Quando si invia un suggerimento di modifica, si prega di attendere il tempo necessario per discutere le vostre modifiche e adattare il vostro lavoro. Potete aiutare con le traduzioni unendovi a una squadra su <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Per favore non chiedete di avere pubblicità per i vostri affari personali o il vostro sito Web, ad eccezione di casi particolari come le conferenze. Molte grazie a tutti i collaboratori che stanno spendendo tempo su bitcoin.org migliorando!"
+    helptxt: "È possibile segnalare qualsiasi problema o contribuire a migliorare bitcoin.org su <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>aprendo una segnalazione o inviando un suggerimento di modifica in Inglese . Quando si invia un suggerimento di modifica, si prega di attendere il tempo necessario per discutere le vostre modifiche e adattare il vostro lavoro. Potete aiutare con le traduzioni unendovi a una squadra su <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Per favore non chiedete di avere pubblicità per i vostri affari personali o il vostro sito Web, ad eccezione di casi particolari come le conferenze. Molte grazie a tutti i collaboratori che stanno spendendo tempo su bitcoin.org migliorando!"
     maintenance: "Manutenzione"
     documentation: "Documentazione"
     sponsorship: "Sponsorizzazione"
@@ -1134,7 +1134,7 @@ it:
     banner-core-moved: |
         Questa pagina è stata spostata nel nuovo sito web di Bitcoin Core
         (clicca qui per essere reindirizzato)
-    banner-translate: "La traduzione per questa lingua è ormai datata.  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Clicca qui per aiutarci a tradurre il sito bitcoin.org nella tua lingua</a>."
+    banner-translate: "La traduzione per questa lingua è ormai datata.  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Clicca qui per aiutarci a tradurre il sito bitcoin.org nella tua lingua</a>."
     footer: "Rilasciato sotto <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licenza MIT</a>"
     donate-community: "Sostieni Bitcoin.org"
     donate-support: "Bitcoin.org è sostenuto dalla comunità."

@@ -11,7 +11,7 @@ id:
     owntxt3-title: "Dokumentasi pengembang mulai ditambahkan di tahun 2014"
     owntxt3: "Anggota komunitas dapat memberikan update baru, perbaikan, saran, dan melakukan penyempurnaan. "
     owntxt4-title: "Situs ini merupakan proyek open source idependen"
-    owntxt4: "Sekarang situs ini adalah proyek open source independen dengan kontributor yang berasal dari seluruh penjuru dunia. Co-owner memegang otoritas untuk menyetujui tahap publikasi akhir, namun aktifitas keseharian diorganisir secara terbuka melalui proses <a href=\"https://github.com/bitcoin/bitcoin.org#working-with-github\">pull request</a>dan dikelola oleh pengelola bersama situs ini. "
+    owntxt4: "Sekarang situs ini adalah proyek open source independen dengan kontributor yang berasal dari seluruh penjuru dunia. Co-owner memegang otoritas untuk menyetujui tahap publikasi akhir, namun aktifitas keseharian diorganisir secara terbuka melalui proses <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md\">pull request</a>dan dikelola oleh pengelola bersama situs ini. "
     owntxt5: "Bitcoin.org bukanlah website resmi Bitcoin. Sama halnya seperti tidak ada juga yang memiliki teknologi email, tidak ada pemilik jaringan bitcoin. Sehingga, tidak ada siapapun yang berbicara dengan otoritas atas nama Bitcoin."
     control: "Lalu... siapa yang mengendalikan Bitcoin?"
     controltxt: "Bitcoin dikendalikan oleh semua pengguna Bitcoin di seluruh dunia. Para pengembang meningkatkan perangkat lunak mereka namun tidak dapat memaksakan perubahan aturan pada protokol Bitcoin karena semua pengguna dibebaskan untuk memilih perangkat lunak apa yang akan mereka pakai. Untuk menjaga kompatibilitas dengan pengguna lain, semua pengguna harus menggunakan perangkat lunak yang mematuhi aturan yang sama. Bitcoin hanya bisa berfungsi dengan baik jika ada kesepakatan yang lengkap di antara semua pengguna. Oleh karena itu, semua pengguna dan para pengembang memiliki insentif yang kuat untuk mengadopsi dan melindungi kesepakatan ini."
@@ -24,7 +24,7 @@ id:
     missiontxt6: "Meningkatkan aksesibilitas Bitcoin di seluruh dunia dengan internasionalisasi."
     missiontxt7: "Terus menjadi sumber informatif netral mengenai Bitcoin."
     help: "Bantu kami"
-    helptxt: "Anda bisa melaporkan masalah atau bantuan apapun untuk meningkatkan bitcoin.org di <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>dengan membuka sebuah isu atau pull request dalam Bahasa Inggris. Ketika memasukkan sebuah tarikan permintaan, mohon ambil waktu yang diperlukan untuk mendiskusikan perubahan dan mengadaptasi kerja Anda. Anda bisa bantu menerjemahkan dengan bergabung dengan tim di <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex </a>. Mohon jangan berpromosi bisnis atau situs web pribadi, kecuali untuk kasus khusus seperti konferensi. Terima kasih banyak untuk semua kontributor yang meluangkan waktu untuk meningkatkan bitcoin.org!"
+    helptxt: "Anda bisa melaporkan masalah atau bantuan apapun untuk meningkatkan bitcoin.org di <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>dengan membuka sebuah isu atau pull request dalam Bahasa Inggris. Ketika memasukkan sebuah tarikan permintaan, mohon ambil waktu yang diperlukan untuk mendiskusikan perubahan dan mengadaptasi kerja Anda. Anda bisa bantu menerjemahkan dengan bergabung dengan tim di <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex </a>. Mohon jangan berpromosi bisnis atau situs web pribadi, kecuali untuk kasus khusus seperti konferensi. Terima kasih banyak untuk semua kontributor yang meluangkan waktu untuk meningkatkan bitcoin.org!"
     maintenance: "Pemeliharaan"
     documentation: "Dokumentasi"
     sponsorship: "Sponsor"
@@ -1130,7 +1130,7 @@ id:
     banner-core-moved: |
         Halaman ini telah dipindahkan ke situs Bitcoin Core
         yang baru (klik disini untuk redirect)
-    banner-translate: "Terjemahan bahasa ini sudah ketinggalan jaman. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Klik di sini untuk membantu menerjemahkan bitcoin.org dalam bahasa anda</a>."
+    banner-translate: "Terjemahan bahasa ini sudah ketinggalan jaman. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Klik di sini untuk membantu menerjemahkan bitcoin.org dalam bahasa anda</a>."
     footer: "Dirilis di bawah <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">lisensi MIT</a>"
     donate-community: "Bantu Bitcoin.org"
     donate-support: "BItcoin.org merupakan pendukung komunitas."

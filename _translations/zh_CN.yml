@@ -9,7 +9,7 @@ zh_CN:
     owntxt2-title: "比特币核心"
     owntxt2: "2011年到2013年这段时间，这个网站主要是为了发布比特币核心的新版本。2013年的时候，网站被重新设计成当前的形式，增加了更多页面，包含了更多关于比特币软件，以及创建了翻译系统。而开发者文档在2014年被加入。"
     owntxt3-title: "开发者文档在2014年被加入"
-    owntxt3: "如今该网站是一个独立的开源项目，其中贡献者来自世界各地。最终发布权是由联合拥有者们持有，但所有的常规活动均通过公开的<a href=\"https://github.com/bitcoin/bitcoin.org#working-with-github\">拉取请求（pull request）过程</a>进行组织，并且由网站联合运维者进行管理。"
+    owntxt3: "如今该网站是一个独立的开源项目，其中贡献者来自世界各地。最终发布权是由联合拥有者们持有，但所有的常规活动均通过公开的<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md\">拉取请求（pull request）过程</a>进行组织，并且由网站联合运维者进行管理。"
     owntxt4-title: "该站点是一个独立的开源项目"
     owntxt4: "比特币Bitcoin.org不是比特币官方网站。就像没有人拥有电子邮件技术一样，没有人拥有比特币网络。因此，没有人能代表比特币的权威。"
     control: "那么……比特币由谁控制？"
@@ -23,7 +23,7 @@ zh_CN:
     missiontxt6: "致力国际化，促进比特币全球无障碍。"
     missiontxt7: "保留一个中立的、内容翔实的比特币资源站点。"
     help: "帮助我们"
-    helptxt: "您可以在<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>上用英语来报告任何问题或帮助提升比特币站点bitcoin.org，办法就是发起一个问题或者合并请求（pull request）。当提交一项合并请求时，请花些时间来讨论你的变更以及调整你的工作。您可以在<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>网站上加入一个团队来帮助翻译。请不要推销你自己的企业或网站，除特殊情况（如会议）外。感谢所有花费了时间改善bitcoin.org的贡献者们！"
+    helptxt: "您可以在<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>上用英语来报告任何问题或帮助提升比特币站点bitcoin.org，办法就是发起一个问题或者合并请求（pull request）。当提交一项合并请求时，请花些时间来讨论你的变更以及调整你的工作。您可以在<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>网站上加入一个团队来帮助翻译。请不要推销你自己的企业或网站，除特殊情况（如会议）外。感谢所有花费了时间改善bitcoin.org的贡献者们！"
     maintenance: "维护"
     documentation: "文档"
     sponsorship: "赞助关系"
@@ -861,7 +861,7 @@ zh_CN:
     banner-core-moved: |
         本页面已经移到新的比特币核心
         网站（点击这里进行重定向）
-    banner-translate: "这种语言的翻译已经过期了。<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">点击这里来帮助把 bitcoin.org 翻译成你的语言</a>。"
+    banner-translate: "这种语言的翻译已经过期了。<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">点击这里来帮助把 bitcoin.org 翻译成你的语言</a>。"
     footer: "基于<a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT协议</a>授权发布"
     donate-community: "支持Bitcoin.org"
     sponsor: "社区网站主办方："

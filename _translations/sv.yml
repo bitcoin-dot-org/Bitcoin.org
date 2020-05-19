@@ -16,7 +16,7 @@ sv:
     missiontxt6: "Förbättra Bitcoins tillgänglighet globalt med internationalisering."
     missiontxt7: "Förbli en neutral informativ resurs kring Bitcoin."
     help: "Hjälp oss"
-    helptxt: "Du kan rapportera alla problem eller hjälpa till med att förbättra bitcoin.org på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> genom att öppna en \"issue\" eller \"pull request\", på engelska. När du vill skapa en \"pull request\", tag dig tid att diskutera dina ändringar och anpassa ditt arbete. Du kan hjälpa till med översättningar genom att gå med i ett team på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Fråga inte efter marknadsföring för din personliga hemsida eller företag, förrutom i special fall, t.ex en konferens. Tack så mycket till alla som har bidragit och spenderar tid med att förbättra bitcoin.org!"
+    helptxt: "Du kan rapportera alla problem eller hjälpa till med att förbättra bitcoin.org på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> genom att öppna en \"issue\" eller \"pull request\", på engelska. När du vill skapa en \"pull request\", tag dig tid att diskutera dina ändringar och anpassa ditt arbete. Du kan hjälpa till med översättningar genom att gå med i ett team på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Fråga inte efter marknadsföring för din personliga hemsida eller företag, förrutom i special fall, t.ex en konferens. Tack så mycket till alla som har bidragit och spenderar tid med att förbättra bitcoin.org!"
     maintenance: "Underhåll"
     documentation: "Dokumentation"
     translation: "Översättning"
@@ -677,7 +677,7 @@ sv:
     menu-support-bitcoin: "Stöd Bitcoin"
     menu-vocabulary: Ordlista
     menu-you-need-to-know: "Du måste veta"
-    banner-translate: "Översättningar för det här språket är utdaterade. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Klicka här för att hjälpa till att översätta bitcoin.org till ditt språk</a>."
+    banner-translate: "Översättningar för det här språket är utdaterade. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Klicka här för att hjälpa till att översätta bitcoin.org till ditt språk</a>."
     footer: "Publicerad under  <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licensen</a>"
     sponsor: "En community hemsida sponsrat av"
     getstarted: "Kom igång med Bitcoin"

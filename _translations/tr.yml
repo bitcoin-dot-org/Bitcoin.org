@@ -16,7 +16,7 @@ tr:
     missiontxt6: "Uluslararasılaştırma ile Bitcoin'in dünya çapındaki erişilebilirliğini geliştirmek."
     missiontxt7: "Bitcoin hakkında tarafsız bilgi kaynağı olmak."
     help: "Bize yardım edin"
-    helptxt: "Herhangi bir problemi yada bitcoin.org'a yardım tekliflerinizi buradan <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> İngilizce bir talep vererek yada sorgu açarak iletebilirsiniz. Bir talepte bulunurken lütfen değişikliklerinizi değerlendirmek ve işinizi ayarlamak için biraz zaman ayırın.  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a> üzerinde bir takıma kayıt olarak çevirilere yardım edebilirsiniz. Lütfen kişisel işiniz yada websiteniz için, konferanslar gibi özel durumlar hariç, promosyon sormayınız. Bitcoin.org'u geliştirmek için zaman harcayan tüm katkıda bulunanlara teşekkürler!"
+    helptxt: "Herhangi bir problemi yada bitcoin.org'a yardım tekliflerinizi buradan <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> İngilizce bir talep vererek yada sorgu açarak iletebilirsiniz. Bir talepte bulunurken lütfen değişikliklerinizi değerlendirmek ve işinizi ayarlamak için biraz zaman ayırın.  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a> üzerinde bir takıma kayıt olarak çevirilere yardım edebilirsiniz. Lütfen kişisel işiniz yada websiteniz için, konferanslar gibi özel durumlar hariç, promosyon sormayınız. Bitcoin.org'u geliştirmek için zaman harcayan tüm katkıda bulunanlara teşekkürler!"
     maintenance: "Bakım"
     documentation: "Belgeleme"
     translation: "Çeviri"
@@ -668,7 +668,7 @@ tr:
     menu-participate: Katılın
     menu-vocabulary: Sözlük
     menu-you-need-to-know: "Bilmeniz gerekenler"
-    banner-translate: "Bu dil için çeviriler güncel değildir.  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">bitcoin.org'un dilinize çevrilmesine yardım etmek için buraya tıklayın</a>."
+    banner-translate: "Bu dil için çeviriler güncel değildir.  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">bitcoin.org'un dilinize çevrilmesine yardım etmek için buraya tıklayın</a>."
     footer: "<a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT lisansı</a> altında yayınlanmaktadır"
     sponsor: "Sponsor bir topluluğun web sitesi"
     getstarted: "Bitcoin'e başlarken"

@@ -11,7 +11,7 @@ sr:
     owntxt3-title: "Dokumentacija za programere dodata je 2014."
     owntxt3: "Ažuriranja, ispravke i poboljšanja od strane zajednice uvek su dobrodošla."
     owntxt4-title: "Sajt je nezavisni projekat potpuno otvorenog tipa."
-    owntxt4: "Sajt je danas nezavisan projekat otvorenog koda sa saradnicima širom sveta. Konačnu reč za objavljivanje imaju suvlasnici, ali su sve redovne aktivnosti organizovane preko javnih <a href=\"https://github.com/bitcoin/bitcoin.org#working-with-github\">pull request procesa</a> i njima upravljaju suodržavači sajta."
+    owntxt4: "Sajt je danas nezavisan projekat otvorenog koda sa saradnicima širom sveta. Konačnu reč za objavljivanje imaju suvlasnici, ali su sve redovne aktivnosti organizovane preko javnih <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md\">pull request procesa</a> i njima upravljaju suodržavači sajta."
     owntxt5: "Bitcoin.org nije zvaničan sajt Bitkoina. Kao što niko ne poseduje imejl tehnologiju, tako niko ne poseduje ni Bitcoin mrežu. Sa obzirom na to, niko ne može govoriti sa autoritetom u ime Bitkoina."
     control: "Ko onda kontroliše Bitkoin?"
     controltxt: "Bitkoin kontrolišu svi njegovi korisnici širom sveta. Programeri unapređuju softver ali oni ne mogu prisilno promeniti pravila Bitkoin protokola, jer su svi korisnici slobodni da izaberu koji softver će koristiti. Da bi korisnici ostali u saglasju jedni sa drugima, potrebno je da svi koriste softver koji je u skladu sa istim pravilima. Bitkoin može funkcionisati ispravno jedino ako postoji apsolutni konsenzus među svim korisnicima. Stoga, svi korisnici i programeri imaju jaku motivaciju da usvoje i čuvaju ovaj konsenzus."
@@ -24,7 +24,7 @@ sr:
     missiontxt6: "Unaprediti dostupnost Bitkoina širom sveta pomoću internacionalizacije."
     missiontxt7: "Ostati nepristrasan izvor informacija o Bitkoinu."
     help: "Pomozite nam"
-    helptxt: "Možete prijaviti problem ili poboljšati bitcoin.org na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub-u</a> tako što ćete otvoriti \"pull request\" na Engleskom jeziku. Kada podnosite zahtev za povlačenjem (pull request), molimo da pojasnite predložene promene. Možete pomoći prevodjenjem, tako što ćete se pridružiti timu na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex-u.</a> Molimo, nemojte pitati za promociju vašeg projekta ili biznisa, osim u specijalnim okolnostima, kao što su konferencije. Veliko hvala svim dobrovoljcima koji ulažu vreme, trud i pomažu nam da poboljšamo bitcoin.org!"
+    helptxt: "Možete prijaviti problem ili poboljšati bitcoin.org na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub-u</a> tako što ćete otvoriti \"pull request\" na Engleskom jeziku. Kada podnosite zahtev za povlačenjem (pull request), molimo da pojasnite predložene promene. Možete pomoći prevodjenjem, tako što ćete se pridružiti timu na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex-u.</a> Molimo, nemojte pitati za promociju vašeg projekta ili biznisa, osim u specijalnim okolnostima, kao što su konferencije. Veliko hvala svim dobrovoljcima koji ulažu vreme, trud i pomažu nam da poboljšamo bitcoin.org!"
     maintenance: "Održavanje"
     documentation: "Dokumentacija"
     sponsorship: "Sponzorstva"
@@ -1126,7 +1126,7 @@ sr:
     menu-white-paper: "Osnovni dokument - beli papir"
     banner-core-moved: |
         Ova stranica premeštena je na novi Bitcoin Core sajt (klikni ovde za preusmeravanje)
-    banner-translate: "Prevod za ovaj jezik je zastareo. <a href=\"https://github.com/bitcoin/bitcoin.org#translation\">Kliknite ovde kako bi pomogli prevođenje bitcoin.org na vaš jezik</a>."
+    banner-translate: "Prevod za ovaj jezik je zastareo. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Kliknite ovde kako bi pomogli prevođenje bitcoin.org na vaš jezik</a>."
     footer: "Izbačeno pod <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licencom</a>"
     donate-community: "Podržite Bitcoin.org"
     donate-support: "Bitcoin.org se održava od strane zajednice."

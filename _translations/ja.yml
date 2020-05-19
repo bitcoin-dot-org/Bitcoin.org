@@ -11,7 +11,7 @@ ja:
     owntxt3-title: "開発者用ドキュメントは2014年に追加されました。"
     owntxt3: "コミュニティーのメンバーによるアップデート、修正、改善を歓迎します。"
     owntxt4-title: "このサイトは独立したオープンソース・プロジェクトの一つです。"
-    owntxt4: "現在、このサイトは世界中の貢献者が集まる独立したオープンソースプロジェクトです。共同所有者は最終的な公開権限を保持していますが、全ての活動は公開の<a href=\"https://github.com/bitcoin/bitcoin.org#working-with-github\">プルリクエスト処理</a>を通して行われており、サイトの共同管理者によって運営されています。 "
+    owntxt4: "現在、このサイトは世界中の貢献者が集まる独立したオープンソースプロジェクトです。共同所有者は最終的な公開権限を保持していますが、全ての活動は公開の<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md\">プルリクエスト処理</a>を通して行われており、サイトの共同管理者によって運営されています。 "
     owntxt5: "Bitcoin.orgは公式サイトではありません。電子メールの技術の所有者が存在しないのと同様に、ビットコイン・ネットワークの所有者は存在しません。そのため、ビットコインを代表して公式的に発言する者は存在しないのです。 "
     control: "では、誰がビットコインをコントロールしているのでしょうか？"
     controltxt: "ビットコインは、世界中の全ビットコイン・ユーザーに管理されています。開発者は、ソフトウェアの改善を進めていますが、全ユーザーがどのソフトウェアを選ぶかを自由に決められるため、開発者がビットコイン・プロトコルのルールを強制的に変更する事はできません。互換性を保つため、全ユーザーは同じルールに従うソフトウェアを使用する必要があります。ビットコインは、全ユーザーの完全な合意の元でしか作動しません。従って、全ユーザーと開発者には、この合意を採用し、守るための強い動機があるのです。"
@@ -24,7 +24,7 @@ ja:
     missiontxt6: "ビットコインの国際化に伴う世界的なアクセス可能性を改善"
     missiontxt7: "ビットコインに関する中立的な情報源である事の存続"
     help: "支援のお願い"
-    helptxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>上で問題やプルリクエストを英語で作成する事で、bitcoin.orgの問題点を報告したり、改善の手助けができます。プルリクエストを送信する場合、変更点の考察や修正に十分な時間を設けてください。また、<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>上のチームに参加する事で、翻訳作業を手伝う事もできます。ただし、カンファレンス等の特別な事情を除き、個人的なビジネスやウェブサイトの宣伝はご遠慮ください。bitcoin.orgの改善にお時間を割いて頂いている全ての貢献者の方に、感謝しています！"
+    helptxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>上で問題やプルリクエストを英語で作成する事で、bitcoin.orgの問題点を報告したり、改善の手助けができます。プルリクエストを送信する場合、変更点の考察や修正に十分な時間を設けてください。また、<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>上のチームに参加する事で、翻訳作業を手伝う事もできます。ただし、カンファレンス等の特別な事情を除き、個人的なビジネスやウェブサイトの宣伝はご遠慮ください。bitcoin.orgの改善にお時間を割いて頂いている全ての貢献者の方に、感謝しています！"
     maintenance: "メンテナンス"
     documentation: "ドキュメンテーション"
     sponsorship: "後援"
@@ -1060,7 +1060,7 @@ ja:
     banner-core-moved: |
         このページは新しいBitcoin Coreのウェブサイトに移動しました。
         （リダイレクトにはこちらをクリックください）
-    banner-translate: "この言語の翻訳は古くなっています。<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">ご自身の言語で bitcoin.org の翻訳援助されたい場合、こちらをクリックください</a>。"
+    banner-translate: "この言語の翻訳は古くなっています。<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">ご自身の言語で bitcoin.org の翻訳援助されたい場合、こちらをクリックください</a>。"
     footer: "<a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MITライセンス</a>の下でのリリース"
     donate-community: "Bitcoin.orgを支援する"
     donate-support: "Bitcoin.orgはコミュニティに支えられています。"
