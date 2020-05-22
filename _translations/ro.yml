@@ -195,7 +195,7 @@ ro:
     pagetitle: "Dezvoltarea Bitcoin"
     summary: "Găseşte mai multe informaţii despre specificaţiile curente, software şi dezvoltatori."
     spec: "Documentaţie"
-    spectxt: "Dacă doreşti să înveţi mai multe despre detaliile tehnice ale Bitcoin şi cum să foloseşti unelte şi API-uri existente, este recomandat să începi prin a explora <a href=\"/en/developer-documentation\">documentaţia pentru dezvoltatori</a>."
+    spectxt: "Dacă doreşti să înveţi mai multe despre detaliile tehnice ale Bitcoin şi cum să foloseşti unelte şi API-uri existente, este recomandat să începi prin a explora <a href=\"https://developer.bitcoin.org/\">documentaţia pentru dezvoltatori</a>."
     coredev: "Dezvoltatori principali"
     inventor: "Sistemul Bitcoin a fost creat original si gandit de Satoshi Nakamoto. Baza originala a Bitcoin este acum intretinuta ca BitcoinCore de urmatori dezvoltatori si de comunitatea de voluntari."
     disclosure: "Aducere la cunoştiinţă"
@@ -414,7 +414,7 @@ ro:
     processing: "Procesare<span class=\"titlelight\"> - minerit</span>"
     processingtxt: "Minatul este un <b>sistem consensual distribuit</b> folosit pentru a <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>confirma</i></a> tranzacţiile în aşteptare prin includerea lor în lanţul de blocuri. Minatul impune o ordine cronologică în lanţul de blocuri, protejează neutralitatea reţelei şi de asemenea permite diferitelor calculatoare din reţea să cadă de acord asupra condiţiei sistemului. Pentru a fi confirmate, tranzacţiile trebuie să fie incluse într-un <a href=\"#vocabulary##[vocabulary.block]\"><i>bloc</i></a> ce respectă reguli criptografice foarte stricte ce va fi verificat de reţeaua Bitcoin. Aceste reguli previn blocurile anterioare să fie modificate pentru că astfel s-ar invalida toate blocurile următoare. Minatul de asemenea este echivalentul unei loterii competitive ce previne un caz în care un individ poate să adauge cu uşurinţă blocuri noi în mod consecutiv în lanţul de blocuri. În acest fel, niciun individ nu poate controla ce este inclus în lanţul de blocuri sau să înlocuiască părţi din lanţul de blocuri pentru a retrage tranzacţiile proprii."
     readmore: "Mai adânc în viziuna iupurelui"
-    readmoretxt: "Acesta este doar un sumar foarte scurt şi concis al sistemului. Dacă doreşti să intri în detalii, poţi citi <a href=\"#bitcoin-paper#\">lucrarea originală</a> ce descrie designul sistemului, să citeşti <a href=\"/en/developer-documentation\">documentaţia pentru dezvoltatori</a> şi să explorezi <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin Wiki</a>."
+    readmoretxt: "Acesta este doar un sumar foarte scurt şi concis al sistemului. Dacă doreşti să intri în detalii, poţi citi <a href=\"#bitcoin-paper#\">lucrarea originală</a> ce descrie designul sistemului, să citeşti <a href=\"https://developer.bitcoin.org/\">documentaţia pentru dezvoltatori</a> şi să explorezi <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin Wiki</a>."
   index:
     title: "Bitcoin - bani P2P open source "
     metadescription: "Bitcoin este o reţea de plăţi inovativă şi un nou fel de bani. Găseşte tot ce trebuie să ştii pentru a începe să foloseşti Bitcoin pe bitcoin.org."

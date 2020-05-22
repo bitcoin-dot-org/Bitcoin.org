@@ -358,7 +358,7 @@ pt_BR:
     pagedesc: "Bitcoin é um projeto global e um software de edição aberta."
     summary: "Encontre mais informações sobre a especificação atual, software e desenvolvedores."
     spec: "Documentação"
-    spectxt: "Se você estiver interessado em aprender mais a respeito dos detalhes técnicos de Bitcoin e em como usar as ferramentas e APIs existentes, recomendamos começar com <a href=\"/en/developer-documentation\">a documentação para programadores</a>."
+    spectxt: "Se você estiver interessado em aprender mais a respeito dos detalhes técnicos de Bitcoin e em como usar as ferramentas e APIs existentes, recomendamos começar com <a href=\"https://developer.bitcoin.org/\">a documentação para programadores</a>."
     coredev: "Desenvolvedores"
     inventor: "O sistema Bitcoin foi originalmente projetado por Satoshi Nakamoto. O código Bitcoin dele é hoje mantido como Bitcoin Core pelos programadores seguidores e uma comunidade de voluntários."
     disclosure: "Declaração responsável"
@@ -636,7 +636,7 @@ pt_BR:
     processing: "Processando - mineração"
     processingtxt: "A mineração é um <b>sistema de consenso distribuído</b> que serve para <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>confirmar</i></a> as transações e incluí-las no blockchain. Isso impõe uma ordem cronológica no block chain, protege a neutralidade da rede, e permite que computadores diferentes concordem sobre o estado do sistema. Para serem confirmadas, as transações devem ser incluídas em um <a href=\"#vocabulary##[vocabulary.block]\"><i>bloco</i></a> e verificadas pela rede através de regras criptográficas. Essa regras previnem que blocos antigos sejam modificados, o que provocaria a invalidação dos blocos posteriores. A mineração também cria um jogo equivalente à loteria, que previne qualquer indivíduo de facilmente adicionar novos blocos consecutivamente no block chain. Isto evita que pessoas possam decidir o que incluir no block chain ou mudar partes do block chain e assim conseguir reverter suas próprias transações."
     readmore: "Até onde você está disposto a descobrir?"
-    readmoretxt: "Este é somente um resumo muito breve e conciso do sistema. Caso queira saber mais a fundo, você pode <a href=\"#bitcoin-paper#\">ler o documento original</a> que descreve o projeto do sistema, ler a <a href=\"/en/developer-documentation\">documentação para programadores</a>, e explorar a <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Wiki de Bitcoin</a>."
+    readmoretxt: "Este é somente um resumo muito breve e conciso do sistema. Caso queira saber mais a fundo, você pode <a href=\"#bitcoin-paper#\">ler o documento original</a> que descreve o projeto do sistema, ler a <a href=\"https://developer.bitcoin.org/\">documentação para programadores</a>, e explorar a <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Wiki de Bitcoin</a>."
   index:
     title: "Bitcoin - Dinheiro P2P de código aberto"
     metadescription: "Bitcoin é uma rede inovadora de pagamento e um novo tipo de moeda. Encontre tudo o que você precisa saber e comece com Bitcoin em bitcoin.org."

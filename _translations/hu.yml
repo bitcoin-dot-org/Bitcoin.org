@@ -356,7 +356,7 @@ hu:
     pagedesc: "A Bitcoin egy világméretű projekt és nyílt forráskódú szoftver."
     summary: "Jusson több információhoz a jelenlegi specifikációval, szoftverrel és fejlesztőkkel kapcsolatban."
     spec: "Dokumentáció"
-    spectxt: "Amennyiben szeretne többet megtudni a Bitcoin technikai részleteiről, és arról, hogy hogyan használhatóak a rendelkezésre álló eszközök és API-k, érdemes a <a href=\"/en/developer-documentation\">fejlesztői dokumentáció</a> tanulmányozásával kezdnie."
+    spectxt: "Amennyiben szeretne többet megtudni a Bitcoin technikai részleteiről, és arról, hogy hogyan használhatóak a rendelkezésre álló eszközök és API-k, érdemes a <a href=\"https://developer.bitcoin.org/\">fejlesztői dokumentáció</a> tanulmányozásával kezdnie."
     coredev: "Magfejlesztők"
     inventor: "A Bitcoin-rendszer eredeti tervei Satoshi Nakamotótól származnak. Az eredeti Bitcoin-alapkódot jelenleg a Bitcoin Core alábbi fejlesztői, valamint önkéntesi közössége tartja karban."
     disclosure: "Felelős közzététel"
@@ -634,7 +634,7 @@ hu:
     processing: "Feldolgozás<span class=\"titlelight\"> - bányászat</span>"
     processingtxt: "A bányászat egy <b>elosztott, konszenzusra épülő rendszer</b>, amely a blokkláncra való fűzéssel a visszaigazolásra váró tranzakciók <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>megerősítésére</i></a> szolgál. Kikényszeríti a blokkláncon belül található elemek időrendi sorrendjét, biztosítja a hálózat semlegességét és lehetővé teszi, hogy különböző számítógépek egyetérthessenek a rendszer állapotát illetően. A visszaigazoláshoz a tranzakcióknak <a href=\"#vocabulary##[vocabulary.block]\"><i>blokkba</i></a> csomagoltnak kell lenniük, amely nagyon szigorú kriptográfiai szabályokat követ, és amelyet a hálózat visszaigazol. E szabályok megakadályozzák a korábbi blokkok módosítását, mivel a módosítás érvénytelenítené az azt követő összes blokkot. A bányászat ezenkívül egyfajta lottót hoz létre, amely meggátolja, hogy bármely személy egyszerűen egymás után blokkokat adjon hozzá a blokklánchoz. Ily módon egyetlen személy sem vonhatja ellenőrzése alá a blokklánc tartalmát vagy cserélheti ki a blokklánc egyes részeit kifizetései visszatérítése érdekében."
     readmore: "Fejest ugrani az ismeretlenbe"
-    readmoretxt: "Ez csak a Bitcoin nagyon rövid összefoglalása. Amennyiben szeretnéd megismerni a részleteket, <a href=\"#bitcoin-paper#\">végigolvashatod az eredeti tanulmányt</a>, amely leírja a rendszer felépítését, vagy belenézhetsz a <a href=\"/en/developer-documentation\">fejlesztői dokumentációba</a>, vagy a <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wikiben</a> kutakodhatsz kedvedre."
+    readmoretxt: "Ez csak a Bitcoin nagyon rövid összefoglalása. Amennyiben szeretnéd megismerni a részleteket, <a href=\"#bitcoin-paper#\">végigolvashatod az eredeti tanulmányt</a>, amely leírja a rendszer felépítését, vagy belenézhetsz a <a href=\"https://developer.bitcoin.org/\">fejlesztői dokumentációba</a>, vagy a <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wikiben</a> kutakodhatsz kedvedre."
   index:
     title: "Bitcoin - Nyílt forráskódú, P2P pénz"
     metadescription: "A Bitcoin egy innovatív fizetési hálózat és egy újfajta pénz. Tudjon meg mindent, és vágjon bele a Bitcoinba a bitcoin.org weboldalon."

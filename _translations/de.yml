@@ -364,7 +364,7 @@ de:
     pagedesc: "Bitcoin ist ein weltweites Projekt und eine Open-Source-Software"
     summary: "Finden Sie weitere Informationen zur gegenwärtigen Spezifikation, zur Software und zu Entwicklern."
     spec: "Dokumentation"
-    spectxt: "Falls Sie daran interessiert sind mehr über die technischen Details von Bitcoin zu erfahren und wie man vorhandene Tools und APIs verwendet, dann wird empfohlen bei der <a href=\"/en/developer-documentation\">Dokumentation für Entwickler</a> zu beginnen."
+    spectxt: "Falls Sie daran interessiert sind mehr über die technischen Details von Bitcoin zu erfahren und wie man vorhandene Tools und APIs verwendet, dann wird empfohlen bei der <a href=\"https://developer.bitcoin.org/\">Dokumentation für Entwickler</a> zu beginnen."
     coredev: "Kernentwickler"
     inventor: "Das Bitcoin-System wurde ursprünglich von Satoshi Nakamoto konzipiert. Die ursprüngliche Bitcoin-Codebasis wird nun als Bitcoin Core von den nachfolgenden Entwicklern und einer Community von Freiwilligen verwaltet."
     disclosure: "Verantwortungsvolle Offenlegung"
@@ -648,7 +648,7 @@ de:
     processing: "Verarbeitung<span class=\"titlelight\"> - Mining</span>"
     processingtxt: "Mining ist ein <b>verteiltes Konsens-System</b>, das verwendet wird, um ausstehende Transaktionen durch deren Aufnahme in die Blockchain zu <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>bestätigen</i></a>. Mining erzwingt eine chronologische Reihenfolge der Blockchain, schützt die Neutralität des Netzwerks und sorgt dafür, das sich die verschiedenen Computer über den Status des Systems einig sind. Um bestätigt zu werden, müssen Transaktionen in einen <a href=\"#vocabulary##[vocabulary.block]\"><i>Block</i></a> eingefügt werden. Dieser muss sehr strengen kryptographischen Regeln genügen, die durch das Netzwerk verifiziert werden. Diese Regeln verhindern, dass vorangegangene Blöcke modifiziert werden können, denn eine Änderung würde alle darauffolgende Blöcke ungültig machen. Das Mining ist auch eine Art Lotterie mit starker Konkurrenz, die verhindert, dass jemand einfach neue aufeinanderfolgende Blöcke zu der Blockchain hinzufügt. Auf diese Weise kann niemand kontrollieren, was in die Blockchain aufgenommen wird, oder Teile der Blockchain so modifizieren, dass eigene Ausgaben rückgängig gemacht werden."
     readmore: "Hinunter in den Kaninchenbau"
-    readmoretxt: "Dies ist nur eine kurze Zusammenfassung von Bitcoin. Wenn Sie ins Detail gehen möchten, können Sie das <a href=\"#bitcoin-paper#\">Original-Paper</a> lesen, das das Design von Bitcoin beschreibt, die <a href=\"/en/developer-documentation\">Entwicklerdokumentation</a> lesen, oder das <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin-Wiki</a> erkunden."
+    readmoretxt: "Dies ist nur eine kurze Zusammenfassung von Bitcoin. Wenn Sie ins Detail gehen möchten, können Sie das <a href=\"#bitcoin-paper#\">Original-Paper</a> lesen, das das Design von Bitcoin beschreibt, die <a href=\"https://developer.bitcoin.org/\">Entwicklerdokumentation</a> lesen, oder das <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin-Wiki</a> erkunden."
   index:
     title: "Bitcoin - Open Source-P2P-Geld"
     metadescription: "Bitcoin ist ein innovatives Zahlungsnetzwerk und eine neue Form von Geld. Alles was sie wissen müssen, um mit Bitcoin loszulegen, finden Sie auf bitcoin.org."

@@ -195,7 +195,7 @@ da:
     pagetitle: "Bitcoin-udvikling"
     summary: "Find mere information om den aktuelle specifikation, software og udviklere."
     spec: "Dokumentation"
-    spectxt: "Hvis du er interesseret i at lære mere om de tekniske detaljer om Bitcoin og hvordan de eksisterende værktøjer og API'er kan bruges, kan det anbefales, at du starter med at udforske <a href=\"/en/developer-documentation\">udviklerdokumentationen</a>."
+    spectxt: "Hvis du er interesseret i at lære mere om de tekniske detaljer om Bitcoin og hvordan de eksisterende værktøjer og API'er kan bruges, kan det anbefales, at du starter med at udforske <a href=\"https://developer.bitcoin.org/\">udviklerdokumentationen</a>."
     coredev: "Kerneudviklere"
     inventor: "Bitcoin-systemet blev oprindeligt designet af Satoshi Nakamoto. Hans oprindelige kodebase vedligeholdes nu som Bitcoin Core af de følgende udviklere og en samling af frivillige."
     disclosure: "Ansvarsfuld afsløring"
@@ -416,7 +416,7 @@ da:
     processing: "Håndtering<span class=\"titlelight\"> – mining</span>"
     processingtxt: "Mining er et <b>distribueret konsensussystem</b>, som bruges til at <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>bekræfte</i></a> ventende transaktioner, ved at inkludere dem i blokkæden. Det opretholder en kronologisk rækkefølge i blokkæden, beskytter netværkets neutralitet og tillader forskellige computere at være enige om systemets tilstand. For at blive bekræftet skal transaktioner pakkes i en <a href=\"#vocabulary##[vocabulary.block]\"><i>blok</i></a>, som passer ind i meget strikte kryptografiske regler, som verificeres af netværket. Disse regler forhindrer tidligere blokke at blive ændret, fordi hvis det skete, ville alle efterfølgende blokke blive ugyldige. Mining skaber også det der svarer til et konkurrencepræget lotteri, som forhindrer enhver enkeltperson i let at tilføje nye blokke fortløbende i blokkæden. På denne måde kan ingen enkeltpersoner styre, hvad der inkluderes i blokkæden eller erstatte dele af blokkæden for at annullere egne overførsler."
     readmore: "I flere detaljer"
-    readmoretxt: "Dette er kun en meget kortfattet opsummering af systemet. Hvis du vil vide mere om detaljerne, kan du <a href=\"#bitcoin-paper#\">læse den oprindelige videnskabelige artikel</a>, som beskriver systemets design, læse <a href=\"/en/developer-documentation\">udviklerdokumentationen</a> og udforske <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin-wikien</a>."
+    readmoretxt: "Dette er kun en meget kortfattet opsummering af systemet. Hvis du vil vide mere om detaljerne, kan du <a href=\"#bitcoin-paper#\">læse den oprindelige videnskabelige artikel</a>, som beskriver systemets design, læse <a href=\"https://developer.bitcoin.org/\">udviklerdokumentationen</a> og udforske <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin-wikien</a>."
   index:
     title: "Bitcoin – P2P-penge med åben kildekode"
     metadescription: "Bitcoin er et innovativt betalingsnetværk og en ny slags penge. Find alt hvad du behøver at vide og kom i gang med Bitcoin på bitcoin.org."

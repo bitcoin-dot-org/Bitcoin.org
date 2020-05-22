@@ -350,7 +350,7 @@ sr:
     pagedesc: "Bitkoin je globalan projekat i softver otvorenog tipa."
     summary: "Pronađi više informacija o trenutnim specifikacijama, programu i porgramerima."
     spec: "Dokumentacija"
-    spectxt: "Ukoliko ste zainteresovani da naučite više o stručnim i tehničkim detaljima o Bitkoinu i kako da iskoristite alate i API, preporučujemo da počnete sa istraživanjem <a href=\"/en/developer-documentation\">dokumentacije za programere</a>."
+    spectxt: "Ukoliko ste zainteresovani da naučite više o stručnim i tehničkim detaljima o Bitkoinu i kako da iskoristite alate i API, preporučujemo da počnete sa istraživanjem <a href=\"https://developer.bitcoin.org/\">dokumentacije za programere</a>."
     coredev: "Core programeri"
     inventor: "Bitkoin system originalno je dizajnirao Satoshi Nakamoto. Njegov originalna baza koda sada se održava od strane sledećih Bitcoin Core programera i dobrovoljaca."
     disclosure: "Odgovorno obelodanjivanje"
@@ -626,7 +626,7 @@ sr:
     processing: "Obrađivanje - <span class=\"titlelight\">rudarenje</span>"
     processingtxt: "Rudarenje, ili kopanje je <b>distribuisani sistem koncenzusa</b> koji sekoristi kako bi se <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>potvrdile</i></a> transakcijena čekanju, tako što će se uključiti u blokčejn. Ovaj proces sprovodi hronološki red u blokćejnu, štiteći neutralnost mreže i dozvoljavajući različitim kompjuterima da se saglase o stanju sistema. Kako bi se potvrdila, transakcija mora biti upakovana u <a href=\"#vocabulary##[vocabulary.block]\"><i>blok </i></a>koji odgovara veoma strogim kriptofrafskim pravilima koja se verifikuju na mreži. Ova pravila sprečavavaju modifikaciju ranijih blokova, zbog toga što svaka izmena u jednom, menja i naredni blok. Rudarenje je ekvivalent konkurentskoj lutriji koja onemogućava bilo kog pojedinca da olako dodaje novi blok uzastopno. Na ovaj način nijedna grupa ili individua ne može konrolisati šta se uključuje u blokčejn iliizmeniti delove blokčejna kako bi  vratila svoje potrošene bitkoine."
     readmore: "Ulaženje u srž"
-    readmoretxt: "Ovo je samo ukratka priča o Bitkoinu. Ukoliko želite da naučite više i detaljnije, <a href=\"#bitcoin-paper#\">pročitajte originalni papir</a> koji opisuje njegov dizajn, <a href=\"/en/developer-documentation\">dokumentaciju za programere</a>, ili istražite <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitkoin wiki</a>."
+    readmoretxt: "Ovo je samo ukratka priča o Bitkoinu. Ukoliko želite da naučite više i detaljnije, <a href=\"#bitcoin-paper#\">pročitajte originalni papir</a> koji opisuje njegov dizajn, <a href=\"https://developer.bitcoin.org/\">dokumentaciju za programere</a>, ili istražite <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitkoin wiki</a>."
   index:
     title: "Bitkoin - P2P novac otvorenog koda"
     metadescription: "Bitkoin je inovativna mreža plaćanja i nova vrsta novca. Saznajte sve i počnite sa Bitkoinom na bitcoin.org."
