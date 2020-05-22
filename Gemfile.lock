@@ -95,6 +95,7 @@ GEM
       ethon (>= 0.8.0)
     unicode-display_width (1.7.0)
     yell (2.2.2)
+    yell (2.0.7)
 
 PLATFORMS
   ruby
@@ -109,6 +110,7 @@ DEPENDENCIES
   json-schema
   kramdown (~> 2.1)
   less (= 2.4.0)
+  rubocop (>= 0.83.0)
   safe_yaml
   therubyracer
 
