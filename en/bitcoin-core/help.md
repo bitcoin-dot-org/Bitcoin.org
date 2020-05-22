@@ -11,9 +11,6 @@ breadcrumbs:
   - bitcoin
   - bcc
   - Help
-
-end_of_page: |
-  <script src="/js/devsearch.js"></script>
 ---
 
 <div class="hero">
