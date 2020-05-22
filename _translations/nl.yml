@@ -11,7 +11,7 @@ nl:
     owntxt3-title: "De documentatie van de ontwikkelaar is in 2014 toegevoegd."
     owntxt3: "Updates, oplossingen, suggesties en verbeteringen vanuit de leden van de gemeenschap zijn welkom."
     owntxt4-title: "De website is een onafhankelijk open-source project."
-    owntxt4: "Tegenwoordig is de site een onafhankelijk opensource project met contribuanten van over de gehele wereld. De uiteindelijke publicatie wordt door de mede-eigenaars van het platform bepaald, maar alle 'normale' activiteit wordt door publieke <a href=\"https://github.com/bitcoin/bitcoin.org#working-with-github\">pull requests</a>-proces geregeld, en door degenen die de site onderhouden beheerd."
+    owntxt4: "Tegenwoordig is de site een onafhankelijk opensource project met contribuanten van over de gehele wereld. De uiteindelijke publicatie wordt door de mede-eigenaars van het platform bepaald, maar alle 'normale' activiteit wordt door publieke <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md\">pull requests</a>-proces geregeld, en door degenen die de site onderhouden beheerd."
     owntxt5: "Bitcoin.org is niet de officiële website van Bitcoin. Net als dat er niet één eigenaar is van e-mailtechnologie, is er niet één eigenaar van het Bitcoin-netwerk. Daarom kan niemand terecht (met authoriteit) claimen te spreken in naam van Bitcoin."
     control: "Maar wie heeft bij Bitcoin dan de touwtjes in handen?"
     controltxt: "Bitcoin wordt beheerd door alle Bitcoin-gebruikers ter wereld. Ontwikkelaars zijn continu bezig de software te verbeteren, maar kunnen geen wijzigingen in de regels van het Bitcoin-protocol doorvoeren omdat alle gebruikers vrij zijn om te kiezen welke software ze gebruiken. Om met elkaar compatibel te blijven, dienen alle gebruikers software te gebruiken die aan dezelfde regels voldoet. Bitcoin werkt alleen naar behoren met een complete overeenstemming tussen alle gebruikers. Daarom hebben alle gebruikers en ontwikkelaars een sterke drijfveer om deze overeenstemming over te nemen en te beschermen."
@@ -24,7 +24,7 @@ nl:
     missiontxt6: "Verbeter de wereldwijde toegankelijkheid van Bitcoin via internationalisatie."
     missiontxt7: "Blijf een neutrale informatiebron over Bitcoin."
     help: "Help ons"
-    helptxt: "U kunt elk probleem of hulp bij het verbeteren van bitcoin.org op <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> melden door een probleem of een pull-verzoek in het Engels te openen. Neem bij het indienen van een pull-verzoek de nodige tijd om uw wijzigingen te bespreken en uw werk aan te passen. U kunt helpen met vertalingen door deel te nemen aan een team op <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Vraag geen promoties aan voor uw persoonlijke bedrijf of website, behalve in speciale gevallen zoals conferenties. Hartelijk dank aan alle medewerkers die tijd besteden aan het verbeteren van bitcoin.org!"
+    helptxt: "U kunt elk probleem of hulp bij het verbeteren van bitcoin.org op <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> melden door een probleem of een pull-verzoek in het Engels te openen. Neem bij het indienen van een pull-verzoek de nodige tijd om uw wijzigingen te bespreken en uw werk aan te passen. U kunt helpen met vertalingen door deel te nemen aan een team op <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Vraag geen promoties aan voor uw persoonlijke bedrijf of website, behalve in speciale gevallen zoals conferenties. Hartelijk dank aan alle medewerkers die tijd besteden aan het verbeteren van bitcoin.org!"
     maintenance: "Onderhoud"
     documentation: "Documentatie"
     sponsorship: "Sponsoring"
@@ -981,7 +981,7 @@ nl:
     banner-core-moved: |
         Deze pagina is verhuisd naar de nieuwe Bitcoin Core
         website (klik hier om te worden doorgestuurd)
-    banner-translate: "Vertalingen voor deze taal zijn verouderd. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Klik hier om te helpen bitcoin.org naar uw taal te vertalen</a>."
+    banner-translate: "Vertalingen voor deze taal zijn verouderd. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Klik hier om te helpen bitcoin.org naar uw taal te vertalen</a>."
     footer: "Beschikbaar onder de <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-licentie</a>"
     donate-community: "Steun Bitcoin.org"
     sponsor: "Een communitywebsite gesponsord door"

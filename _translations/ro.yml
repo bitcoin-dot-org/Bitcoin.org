@@ -16,7 +16,7 @@ ro:
     missiontxt6: "Să îmbunătăţească accesibilitatea Bitcoin la nivel mondial prin internaţionalizare."
     missiontxt7: "Să rămână o resursă informativă neutră despre Bitcoin."
     help: "Ajută-ne"
-    helptxt: "Poţi raporta orice problemă sau să ajuţi la îmbunătăţirea bitcoin.org vizitând pagina de <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> şi deschizând un tichet sau un pull request în limba engleză. Dacă faci un pull request, te rugăm să îţi verifici munca şi să aştepţi să se discute schimbările propuse de tine. Poţi ajuta cu traducerea bitcoin.org prin a te alătura unei echipe de traducători pe <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Te rugăm să nu ne ceri promovarea afacerii sau site-ului tău personal, în afara cazurilor speciale cum ar fi conferinţele. Mulţumim mult tuturor contributorilor ce au dedicat timp îmbunătăţirii bitcoin.org!"
+    helptxt: "Poţi raporta orice problemă sau să ajuţi la îmbunătăţirea bitcoin.org vizitând pagina de <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> şi deschizând un tichet sau un pull request în limba engleză. Dacă faci un pull request, te rugăm să îţi verifici munca şi să aştepţi să se discute schimbările propuse de tine. Poţi ajuta cu traducerea bitcoin.org prin a te alătura unei echipe de traducători pe <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Te rugăm să nu ne ceri promovarea afacerii sau site-ului tău personal, în afara cazurilor speciale cum ar fi conferinţele. Mulţumim mult tuturor contributorilor ce au dedicat timp îmbunătăţirii bitcoin.org!"
     maintenance: "Lucrari de intretinere"
     documentation: "Documentare"
     translation: "Traducere"
@@ -668,7 +668,7 @@ ro:
     menu-participate: Participă
     menu-vocabulary: Vocabular
     menu-you-need-to-know: "Trebuie să știi"
-    banner-translate: "Traducerile in aceasta limba sunt vechi.<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Click aici pentru a ajuta traducerea bitcoin.org in limba ta</a>."
+    banner-translate: "Traducerile in aceasta limba sunt vechi.<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Click aici pentru a ajuta traducerea bitcoin.org in limba ta</a>."
     footer: "Lansat sub <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licența MIT</a>"
     sponsor: "Un site comunitar sponsorizat de"
     getstarted: "Noțiuni de bază despre Bitcoin"
@@ -677,10 +677,12 @@ ro:
     bitcoin-for-developers: bitcoin-pentru-dezvoltatori
     bitcoin-for-individuals: bitcoin-pentru-persoane-fizice
     bitcoin-for-businesses: bitcoin-pentru-companii
+    buy: cumpara
     choose-your-wallet: alege-portofelul
     community: comunitate
     development: dezvoltare
     download: descarca
+    exchanges: schimburi
     events: evenimente
     faq: intrebari-frecvente
     getting-started: notiuni-de-baza
@@ -695,6 +697,7 @@ ro:
     support-bitcoin: sustine-bitcoin
     vocabulary: vocabular
     you-need-to-know: ce-trebuie-sa-stii
+    spend-bitcoin: petrece-bitcoin
   anchor:
     community:
       non-profit: non-profit

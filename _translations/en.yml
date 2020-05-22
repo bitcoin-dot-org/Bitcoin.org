@@ -11,7 +11,7 @@ en:
     owntxt3-title: "Developer documentation was added in 2014"
     owntxt3: "Updates, fixes, suggestions and improvements from members of the community are welcome."
     owntxt4-title: "Site is an independent open source project"
-    owntxt4: "Today the site is an independent open source project with contributors from around the world. Final publication authority is held by the co-owners, but all regular activity is organized through the public <a href=\"https://github.com/bitcoin/bitcoin.org#working-with-github\">pull request process</a> and managed by the site co-maintainers."
+    owntxt4: "Today the site is an independent open source project with contributors from around the world. Final publication authority is held by the co-owners, but all regular activity is organized through the public <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md\">pull request process</a> and managed by the site co-maintainers."
     owntxt5: "Bitcoin.org is not Bitcoin's official website. Just like nobody owns the email technology, nobody owns the Bitcoin network. As such, nobody can speak with authority in the name of Bitcoin."
     control: "Then... who controls Bitcoin?"
     controltxt: "Bitcoin is controlled by all Bitcoin users around the world. Developers are improving the software but they can't force a change in the rules of the Bitcoin protocol because all users are free to choose what software they use. In order to stay compatible with each other, all users need to use software complying with the same rules. Bitcoin can only work decently with a complete consensus between all users. Therefore, all users and developers have strong incentives to adopt and protect this consensus."
@@ -24,7 +24,7 @@ en:
     missiontxt6: "Improve Bitcoin worldwide accessibility with internationalization."
     missiontxt7: "Remain a neutral informative resource about Bitcoin."
     help: "Help us"
-    helptxt: "You can report any problem or help to improve bitcoin.org on <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> by opening an issue or a pull request in English. When submitting a pull request, please take required time to discuss your changes and adapt your work. You can help with translations by joining a team on <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Please don't ask for promotion for your personal business or website, except for special cases like conferences. Many thanks to all contributors who are spending time improving bitcoin.org!"
+    helptxt: "You can report any problem or help to improve bitcoin.org on <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> by opening an issue or a pull request in English. When submitting a pull request, please take required time to discuss your changes and adapt your work. You can help with translations by joining a team on <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Please don't ask for promotion for your personal business or website, except for special cases like conferences. Many thanks to all contributors who are spending time improving bitcoin.org!"
     maintenance: "Maintenance"
     documentation: "Documentation"
     sponsorship: "Sponsorship"
@@ -1161,7 +1161,7 @@ en:
       This page has moved to the new Bitcoin Core
       website (click here to be redirected)
 
-    banner-translate: "Translations for this language are outdated. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Click here to help translate bitcoin.org in your language</a>."
+    banner-translate: "Translations for this language are outdated. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Click here to help translate bitcoin.org in your language</a>."
     footer: "Released under the <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT license</a>"
     donate-community: "Support Bitcoin.org"
     donate-support: "Bitcoin.org is community supported."

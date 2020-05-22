@@ -16,7 +16,7 @@ es:
     missiontxt6: "Mejorar el acceso mundial a Bitcoin haciéndolo internacional."
     missiontxt7: "Permanecer como un recurso informativo neutral sobre Bitcoin."
     help: "Ayúdanos"
-    helptxt: "Usted puede reportar cualquier problema o ayudar a mejorar bitcoin.org accediendo a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> para abrir un problema o enviar un pull request en Ingles. Cuando envíe un pull request, por favor tome en cuenta el tiempo requerido para discutir sus cambios y la adaptación de su trabajo. Puede ayudar con las traducciones uniéndose a un equipo de traducción en <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Por favor no pida una promoción para su negocio personal o página web, a excepción de casos especiales como conferencias. ¡Muchas gracias a todos los contribuidores que han pasado tiempo mejorando bitcoin.org!"
+    helptxt: "Usted puede reportar cualquier problema o ayudar a mejorar bitcoin.org accediendo a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> para abrir un problema o enviar un pull request en Ingles. Cuando envíe un pull request, por favor tome en cuenta el tiempo requerido para discutir sus cambios y la adaptación de su trabajo. Puede ayudar con las traducciones uniéndose a un equipo de traducción en <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Por favor no pida una promoción para su negocio personal o página web, a excepción de casos especiales como conferencias. ¡Muchas gracias a todos los contribuidores que han pasado tiempo mejorando bitcoin.org!"
     maintenance: "Mantenimiento"
     documentation: "Documentación"
     translation: "Traducción"
@@ -638,7 +638,7 @@ es:
     menu-participate: Participe
     menu-vocabulary: Vocabulario
     menu-you-need-to-know: "Cosas que necesita saber"
-    banner-translate: "Las traducciones para este idioma están desactualizadas. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Haga clic aquí para ayudar a traducir bitcoin.org a su idioma</a>."
+    banner-translate: "Las traducciones para este idioma están desactualizadas. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Haga clic aquí para ayudar a traducir bitcoin.org a su idioma</a>."
     footer: "Publicado bajo la <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licencia MIT</a>"
     sponsor: "Una comunidad web patrocinada por"
     getstarted: "Cómo comenzar a usar Bitcoin"
@@ -648,10 +648,12 @@ es:
     bitcoin-for-individuals: bitcoin-para-personas
     bitcoin-for-businesses: bitcoin-para-empresas
     bitcoin-paper: bitcoin-documento
+    buy: comprar
     choose-your-wallet: elige-tu-monedero
     community: comunidad
     development: desarrollo
     download: descargar
+    exchanges: intercambios
     events: eventos
     faq: faq
     getting-started: como-empezar
@@ -665,6 +667,7 @@ es:
     support-bitcoin: apoya-bitcoin
     vocabulary: vocabulario
     you-need-to-know: debes-saber
+    spend-bitcoin: gastar-bitcoin
   anchor:
     community:
       non-profit: sin-animo-de-lucro

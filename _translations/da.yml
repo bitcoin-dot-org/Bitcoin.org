@@ -16,7 +16,7 @@ da:
     missiontxt6: "Forøge tilgængeligheden på verdensbasis gennem internationalisering."
     missiontxt7: "Fortsat være en neutral og informativ ressource omkring Bitcoin."
     help: "Hjælp os"
-    helptxt: "Du kan rapportere ethvert problem eller hjælpe med at forbedre bitcoin.org på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> ved at åbne en sag (issue) eller et pull request på engelsk. Når du sender et pull request, bedes du tage dig den fornødne tid til at beskrive dine ændringer og tilrette dit arbejde. Du kan hjælpe med oversættelse ved at melde dig til et hold på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Spørg venligst ikke efter reklame for din personlige virksomhed eller webside, undtaget i specielle tilfælde, som fx konferencer. Mange tak til alle bidragydere, som bruger tid på at forbedre bitcoin.org!"
+    helptxt: "Du kan rapportere ethvert problem eller hjælpe med at forbedre bitcoin.org på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> ved at åbne en sag (issue) eller et pull request på engelsk. Når du sender et pull request, bedes du tage dig den fornødne tid til at beskrive dine ændringer og tilrette dit arbejde. Du kan hjælpe med oversættelse ved at melde dig til et hold på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Spørg venligst ikke efter reklame for din personlige virksomhed eller webside, undtaget i specielle tilfælde, som fx konferencer. Mange tak til alle bidragydere, som bruger tid på at forbedre bitcoin.org!"
     maintenance: "Vedligeholdelse"
     documentation: "Dokumentation"
     translation: "Oversættelse"
@@ -671,7 +671,7 @@ da:
     menu-participate: Deltag
     menu-vocabulary: Ordliste
     menu-you-need-to-know: "Du bør vide"
-    banner-translate: "Oversættelsen til dette sprog er uddateret. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Klik her for at hjælpe med at oversætte bitcoin.org til dit sprog</a>."
+    banner-translate: "Oversættelsen til dette sprog er uddateret. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Klik her for at hjælpe med at oversætte bitcoin.org til dit sprog</a>."
     footer: "Udgivet under <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-licensen</a>"
     sponsor: "En fællesskabswebside sponsoreret af"
     getstarted: "Kom i gang med Bitcoin"
@@ -680,10 +680,12 @@ da:
     bitcoin-for-developers: bitcoin-for-udviklere
     bitcoin-for-individuals: bitcoin-for-enkeltpersoner
     bitcoin-for-businesses: bitcoin-for-virksomheder
+    buy: kobe
     choose-your-wallet: vaelg-din-tegnebog
     community: faellesskab
     development: udvikling
     download: hent
+    exchanges: udvekslinger
     events: begivenheder
     faq: faq
     getting-started: kom-i-gang
@@ -698,6 +700,7 @@ da:
     support-bitcoin: stoet-bitcoin
     vocabulary: ordliste
     you-need-to-know: du-boer-vide
+    spend-bitcoin: bruge-bitcoin
   anchor:
     community:
       non-profit: non-profit

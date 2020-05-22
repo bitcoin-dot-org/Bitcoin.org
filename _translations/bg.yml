@@ -16,7 +16,7 @@ bg:
     missiontxt6: "Подобряване на Биткойн достъпността в световен и интернационален мащаб."
     missiontxt7: "Запазване на неутрален информационен ресурс за Биткойн."
     help: "Помогнете ни"
-    helptxt: "Може да съобщавате за проблеми или да помагате за подобряване на bitcoin.org в <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub-а</a>, като отваряте билети за бъгове или публикувате искания за промени на английски език. Когато публикувате искане, моля, да ни дадете необходимото време, за да обсъдим промените и да адаптираме направеното от вас. Можете да помогнете с преводите като се присъедините към екипа на<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Моля, не ни питайте за промоции, свързани с вашия бизнес или уеб сайт, с изключение на специалните случаи, като конференции. Благодарим на всички, които отделят от своето време, за да подобрим bitcoin.org!"
+    helptxt: "Може да съобщавате за проблеми или да помагате за подобряване на bitcoin.org в <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub-а</a>, като отваряте билети за бъгове или публикувате искания за промени на английски език. Когато публикувате искане, моля, да ни дадете необходимото време, за да обсъдим промените и да адаптираме направеното от вас. Можете да помогнете с преводите като се присъедините към екипа на<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Моля, не ни питайте за промоции, свързани с вашия бизнес или уеб сайт, с изключение на специалните случаи, като конференции. Благодарим на всички, които отделят от своето време, за да подобрим bitcoin.org!"
     maintenance: "Поддръжка"
     documentation: "Документация"
     translation: "Превод"
@@ -636,7 +636,7 @@ bg:
     menu-participate: Участвайте
     menu-vocabulary: Речник
     menu-you-need-to-know: "Трябва да знаете"
-    banner-translate: "Преводите за този език са остарели. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Натиснете тук, за да помогнете с превода на bitcoin.org на вашия език</a>."
+    banner-translate: "Преводите за този език са остарели. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Натиснете тук, за да помогнете с превода на bitcoin.org на вашия език</a>."
     footer: "разпространен под <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">лиценза на Масачузетския технологичен институт</a>"
     sponsor: "Сайтът на общността е спонсориран от"
     getstarted: "Първи стъпки в Биткойн"
@@ -645,10 +645,12 @@ bg:
     bitcoin-for-developers: bitcoin-for-developers
     bitcoin-for-individuals: bitcoin-for-individuals
     bitcoin-for-businesses: bitcoin-for-businesses
+    buy: buy
     choose-your-wallet: choose-your-wallet
     community: community
     development: development
     download: download
+    exchanges: exchanges
     events: events
     faq: faq
     getting-started: getting-started
@@ -663,6 +665,7 @@ bg:
     support-bitcoin: support-bitcoin
     vocabulary: vocabulary
     you-need-to-know: you-need-to-know
+    spend-bitcoin: spend-bitcoin
   anchor:
     community:
       non-profit: non-profit

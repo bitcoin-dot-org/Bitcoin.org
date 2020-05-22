@@ -16,7 +16,7 @@ fa:
     missiontxt6: "بهبود دسترسی جهانی به بیت کوین از طریق بین المللی کردن آن"
     missiontxt7: "تداوم ارائه یک منبع آموزنده بیطرف در مورد بیت کوین"
     help: "ما را یاری کنید"
-    helptxt: "برای گزارش هر گونه مشکل یا کمک به بهبود bitcoin.org می توانید در ، \n <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> از طریق بازکردن بحث یا پول ریکوئست به زبان انگلیسی عمل کنید. لطفاً هنگامی که یک پول ریکوست میفرستید، مدت زمان لازم برای بحث در مورد تغییرات خود و تنظیم کارتان را رعایت کنید. با پیوستن به یکی از تیمهای\n <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a> می توانید در ترجمه آن شرکت کنید. خواهشمند است درخواست ارتقای کسب و کار یا وبسایت شخصی  خود را جز در موارد خاصی مانند کنفرانس ها، نداشته باشید. از تمامی کسانی که وقت خود را برای بهبود bitcoin.org صرف می کنند، بسیار سپاسگزاریم!"
+    helptxt: "برای گزارش هر گونه مشکل یا کمک به بهبود bitcoin.org می توانید در ، \n <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> از طریق بازکردن بحث یا پول ریکوئست به زبان انگلیسی عمل کنید. لطفاً هنگامی که یک پول ریکوست میفرستید، مدت زمان لازم برای بحث در مورد تغییرات خود و تنظیم کارتان را رعایت کنید. با پیوستن به یکی از تیمهای\n <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a> می توانید در ترجمه آن شرکت کنید. خواهشمند است درخواست ارتقای کسب و کار یا وبسایت شخصی  خود را جز در موارد خاصی مانند کنفرانس ها، نداشته باشید. از تمامی کسانی که وقت خود را برای بهبود bitcoin.org صرف می کنند، بسیار سپاسگزاریم!"
     maintenance: "نگهداری"
     documentation: "مستندات"
     translation: "ترجمه"
@@ -636,7 +636,7 @@ fa:
     menu-participate: مشارکت
     menu-vocabulary: دایره واژگان
     menu-you-need-to-know: "لازم است بدانید"
-    banner-translate: "ترجمه ها به این زبان، منسوخ شده اند.  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\"> اینجا را کلیک کنید و به ترجمه bitcoin.org  به زبان خود، کمک کنید</a>."
+    banner-translate: "ترجمه ها به این زبان، منسوخ شده اند.  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\"> اینجا را کلیک کنید و به ترجمه bitcoin.org  به زبان خود، کمک کنید</a>."
     footer: " منتشر شده تحت <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT license</a>"
     sponsor: "یک وب سایت جامعه با تامین مالی از سوی"
     getstarted: "آغاز به کار با بیت‌کوین"
@@ -645,10 +645,12 @@ fa:
     bitcoin-for-developers: bitcoin-for-developers
     bitcoin-for-individuals: bitcoin-for-individuals
     bitcoin-for-businesses: bitcoin-for-businesses
+    buy: buy
     choose-your-wallet: choose-your-wallet
     community: community
     development: development
     download: download
+    exchanges: exchanges
     events: events
     faq: faq
     getting-started: getting-started
@@ -663,6 +665,7 @@ fa:
     support-bitcoin: support-bitcoin
     vocabulary: vocabulary
     you-need-to-know: you-need-to-know
+    spend-bitcoin: spend-bitcoin
   anchor:
     community:
       non-profit: non-profit

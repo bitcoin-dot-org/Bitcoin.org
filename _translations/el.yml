@@ -16,7 +16,7 @@ el:
     missiontxt6: "Βελτίωση της παγκόσμιας προσβασιμότητας του Bitcoin μέσω της διεθνοποίησης."
     missiontxt7: "Παραμονή ως μια ουδέτερη πηγή πληροφοριών σχετικά με το Bitcoin."
     help: "Βοηθήστε μας"
-    helptxt: "Μπορείτε να αναφέρετε το οποιοδήποτε πρόβλημα η να βελτιώσετε το bitcoin.org <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> ανοίγοντας ένα θέμα ή κάνοντας ένα pull request στα Αγγλικά. Όταν υποβάλετε ένα pull request, παρακαλούμε αφιερώστε τον απαιτούμενο χρόνο για να συζητήσετε τις αλλαγές σας και να προσαρμόσετε την δουλειά σας. Μπορείτε να βοηθήσετε με τις μεταφράσεις συμμετέχοντας σε μια ομάδα στο <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Παρακαλούμε μην ρωτάτε για προβολή τις προσωπικής σας επιχείρησης ή ιστοσελίδας, εκτός από ειδικές περιπτώσεις όπως συνέδρια. Πολλές ευχαριστίες σε όλους τους συνεισφέροντες που αφιερώνουν χρόνο στη βελτίωση του bitcoin.org!"
+    helptxt: "Μπορείτε να αναφέρετε το οποιοδήποτε πρόβλημα η να βελτιώσετε το bitcoin.org <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> ανοίγοντας ένα θέμα ή κάνοντας ένα pull request στα Αγγλικά. Όταν υποβάλετε ένα pull request, παρακαλούμε αφιερώστε τον απαιτούμενο χρόνο για να συζητήσετε τις αλλαγές σας και να προσαρμόσετε την δουλειά σας. Μπορείτε να βοηθήσετε με τις μεταφράσεις συμμετέχοντας σε μια ομάδα στο <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Παρακαλούμε μην ρωτάτε για προβολή τις προσωπικής σας επιχείρησης ή ιστοσελίδας, εκτός από ειδικές περιπτώσεις όπως συνέδρια. Πολλές ευχαριστίες σε όλους τους συνεισφέροντες που αφιερώνουν χρόνο στη βελτίωση του bitcoin.org!"
     maintenance: "Συντήρηση"
     documentation: "Τεκμηρίωση"
     translation: "Μετάφραση"
@@ -668,7 +668,7 @@ el:
     menu-participate: Συμμετοχή
     menu-vocabulary: Λεξιλόγιο
     menu-you-need-to-know: "Πρέπει να γνωρίζετε"
-    banner-translate: "Οι μεταφράσεις για αυτή την γλώσσα είναι ξεπερασμένες. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Κάντε κλικ εδώ για να βοηθήσετε στην μετάφραση του bitcoin.org στην γλώσσα σας.</a>."
+    banner-translate: "Οι μεταφράσεις για αυτή την γλώσσα είναι ξεπερασμένες. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Κάντε κλικ εδώ για να βοηθήσετε στην μετάφραση του bitcoin.org στην γλώσσα σας.</a>."
     footer: "Κυκλοφόρησε υπό την <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">άδεια MIT</a>"
     sponsor: "Μια κοινοτική ιστοσελίδα χρηματοδοτούμενη από"
     getstarted: "Ξεκινήστε με το Bitcoin"
@@ -677,10 +677,12 @@ el:
     bitcoin-for-developers: bitcoin-for-developers
     bitcoin-for-individuals: bitcoin-for-individuals
     bitcoin-for-businesses: bitcoin-for-businesses
+    buy: buy
     choose-your-wallet: choose-your-wallet
     community: community
     development: development
     download: download
+    exchanges: exchanges
     events: events
     faq: faq
     getting-started: getting-started
@@ -695,6 +697,7 @@ el:
     support-bitcoin: support-bitcoin
     vocabulary: vocabulary
     you-need-to-know: you-need-to-know
+    spend-bitcoin: spend-bitcoin
   anchor:
     community:
       non-profit: non-profit
