@@ -189,7 +189,7 @@ sl:
     pagetitle: "Razvoj bitcoina"
     summary: "Izvedite več o trenutni specifikaciji, programski opremi in razvijalcih."
     spec: "Dokumentacija"
-    spectxt: "Če želite izvedeti več o tehničnih podrobnostih bitcoina in o uporabi obstoječih orodij in programskih vmesnikov (API-jev), si lahko ogledate <a href=\"/en/developer-documentation\">dokumentacijo za razvijalce</a>."
+    spectxt: "Če želite izvedeti več o tehničnih podrobnostih bitcoina in o uporabi obstoječih orodij in programskih vmesnikov (API-jev), si lahko ogledate <a href=\"https://developer.bitcoin.org/\">dokumentacijo za razvijalce</a>."
     coredev: "Glavni razvijalci"
     inventor: "Sistem bitcoin je zasnoval Satoši Nakamoto. Njegovo izvirno kodo sedaj vzdržujejo in razvijajo pod imenom Bitcoin Core naslednji razvijalci in skupnost prostovoljcev."
     disclosure: "Odgovorno razkritje"
@@ -408,7 +408,7 @@ sl:
     processing: "Obdelava<span class=\"titlelight\"> - rudarjenje</span>"
     processingtxt: "Rudarjenje je <b>razpršen sistem doseganja soglasja.</b> Uporablja se za <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>potrjevanje</i></a> nakazil, ki čakajo na vključitev v verigo blokov. Na ta način se v verigi blokov doseže kronološka razvrstitev nakazil, zaščiti se nevtralnost omrežja in se različnim računalnikom omogoči potrjevanje stanja sistema.\nZa potrditev mora biti nakazilo zapakirano v <a href=\"#vocabulary##[vocabulary.block]\"><i>blok</i></a>, blok pa mora zadoščati zelo strogim pravilom šifriranja, ki jih preveri omrežje. Ta pravila onemogočajo kakršnokoli spreminjanje blokov, saj bi s tem posledično razveljavili vse nadaljnje bloke nakazil.\nRudarjenje ustvarja tudi okolje \"tekmovalne loterije\", kar posameznikom onemogoča zaporedno dodajanje novih blokov v verigo. Tako noben posameznik ne more vplivati na vključene bloke v verigi in tudi ne more zamenjati delov verige z namenom spreminjanja ali razveljavljanja lastnih nakazil."
     readmore: "Nadaljnje branje"
-    readmoretxt: "To je le zelo kratek in zgoščen opis sistema. Če vas zanimajo podrobnosti, lahko preberete <a href=\"#bitcoin-paper#\">izvirni članek</a>, ki opisuje zasnovo sistema (v angleščini), si ogledate <a href=\"/en/developer-documentation\">dokumentacijo za razvijalce</a> ali pa pobrskate po <a href=\"https://en.bitcoin.it/wiki/Main_Page\">wikiju</a>."
+    readmoretxt: "To je le zelo kratek in zgoščen opis sistema. Če vas zanimajo podrobnosti, lahko preberete <a href=\"#bitcoin-paper#\">izvirni članek</a>, ki opisuje zasnovo sistema (v angleščini), si ogledate <a href=\"https://developer.bitcoin.org/\">dokumentacijo za razvijalce</a> ali pa pobrskate po <a href=\"https://en.bitcoin.it/wiki/Main_Page\">wikiju</a>."
   index:
     title: "Bitcoin - odprtokodni vrstniški denar"
     metadescription: "Bitcoin je inovativno plačilno omrežje in nova vrsta denarja. Na spletišču bitcoin.org najdete vse potrebne informacije o bitcoinu in napotke za njegovo uporabo."

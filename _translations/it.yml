@@ -515,7 +515,7 @@ it:
     pagedesc: "Bitcoin è un progetto globale e open source."
     summary: "Trova maggiori informazioni riguardo la specifica, il software e gli sviluppatori attuali."
     spec: "Documentazione"
-    spectxt: "Se sei interessato a saperne di più sui dettagli tecnici di Bitcoin e all'utilizzo degli strumenti esistenti e gli API, ti suggeriamo di cominciare ad esplorare la  <a href=\"/en/developer-documentation\">documentazione dello sviluppatore</a>."
+    spectxt: "Se sei interessato a saperne di più sui dettagli tecnici di Bitcoin e all'utilizzo degli strumenti esistenti e gli API, ti suggeriamo di cominciare ad esplorare la  <a href=\"https://developer.bitcoin.org/\">documentazione dello sviluppatore</a>."
     coredev: "Sviluppatori del nucleo"
     inventor: "Il sistema Bitcoin è stato originariamente progettato da Satoshi Nakamoto. Il suo originario codice base è stato mantenuto in Bitcoin Core dagli sviluppatori che lo seguono, e da una comunità di volontari."
     disclosure: "Informativa responsabile"
@@ -794,7 +794,7 @@ it:
     processing: "Elaborazioni<span class=\"titlelight\"> - mining</span>"
     processingtxt: "Il mining (letteralmente: processo minerario) è un <b>sistema di consenso distribuito</b> utilizzato per <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>confermare</i></a> le transazioni in attesa includendole nella block chain. Questo meccanismo mantiene un ordine cronologico nella block chain, protegge la neutralità della rete e consente a diversi computer di concordare sullo stato del sistema. Per essere confermate, le transazioni devono essere impacchettate in un <a href=\"#vocabulary##[vocabulary.block]\"><i>blocco</i></a> che rispetti regole crittografiche molto rigide, che verranno verificate dalla rete. Queste regole impediscono che qualunque blocco precedente venga modificato, perché ciò invaliderebbe tutti i blocchi successivi. Il mining crea inoltre l'equivalente di una lotteria competitiva che impedisce a chiunque di aggiungere facilmente nuovi blocchi consecutivamente nella block chain. In questo modo nessuno può controllare cosa è incluso nella blockchain o sostituire parti della block chain in modo da riottenere quanto speso."
     readmore: "Scendendo nella tana del coniglio"
-    readmoretxt: "Questo è solo un breve sommario di Bitcoin. Se vuoi entrare nei dettagli, puoi <a href=\"#bitcoin-paper#\">leggere la pubblicazione originale</a> che descrive il design del sistema, leggere la <a href=\"/en/developer-documentation\">documentazione degli sviluppatori</a>, o esplorare la <a href=\"https://en.bitcoin.it/wiki/Main_Page\">wiki di Bitcoin</a>."
+    readmoretxt: "Questo è solo un breve sommario di Bitcoin. Se vuoi entrare nei dettagli, puoi <a href=\"#bitcoin-paper#\">leggere la pubblicazione originale</a> che descrive il design del sistema, leggere la <a href=\"https://developer.bitcoin.org/\">documentazione degli sviluppatori</a>, o esplorare la <a href=\"https://en.bitcoin.it/wiki/Main_Page\">wiki di Bitcoin</a>."
   index:
     title: "Bitcoin - Moneta P2P open source"
     metadescription: "Bitcoin è una rete di pagamenti innovativa e un nuovo tipo di moneta. Trova tutto ciò di cui hai bisogno ed entra nel mondo del Bitcoin su bitcoin.org."

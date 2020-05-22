@@ -59,5 +59,6 @@ Pull requests and issues directly relating to Bitcoin Core are tagged as
 *[Core][core github tag]* in the Bitcoin.org repository.
 
 {% include references.md %}
+
 </div>
 </div>

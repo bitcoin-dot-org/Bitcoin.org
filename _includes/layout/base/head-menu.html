@@ -8,7 +8,7 @@ http://opensource.org/licenses/MIT.
     <ul>
       <li{% if page.id == 'bitcoin-for-individuals' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}">{% translate menu-bitcoin-for-individuals layout %}</a></li>
       <li{% if page.id == 'bitcoin-for-businesses' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a></li>
-      <li{% if page.id == 'bitcoin-for-developers' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a></li>
+      <li><a href="https://developer.bitcoin.org/">{% translate menu-bitcoin-for-developers layout %}</a></li>
       <li{% if page.id == 'getting-started' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate menu-getting-started layout %}</a></li>
       <li{% if page.id == 'how-it-works' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate how-it-works url %}">{% translate menu-how-it-works layout %}</a></li>
       {% if page.lang == 'en' %}<li{% if page.id == 'bitcoin-paper' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-paper url %}">{% translate menu-white-paper layout %}</a></li>{% endif %}
@@ -27,7 +27,7 @@ http://opensource.org/licenses/MIT.
         page.lang == 'en' or
         page.lang == 'uk'
       %}
-      <li{% if page.id == 'developer-documentation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate developer-documentation url %}">{% translate menu-developer-documentation layout %}</a></li>
+      <li><a href="https://developer.bitcoin.org/">{% translate menu-developer-documentation layout %}</a></li>
       {% endif %}
       <li{% if page.id == 'vocabulary' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
       <li{% if page.id == 'events' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>

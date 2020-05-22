@@ -28,15 +28,15 @@ http://opensource.org/licenses/MIT.
     {% when "bitcoin" %}
     <a href="/{{ page.lang }}/">{% translate bitcoin vocabulary %}</a>
     {% when "dev docs" %}
-    <a href="/{{ page.lang }}/developer-documentation">{% translate pagetitle developer-documentation %}</a>
+    <a href="https://developer.bitcoin.org/">{% translate pagetitle developer-documentation %}</a>
     {% when "dev docs glossary" %}
-    <a href="/{{ page.lang }}/developer-glossary">{% translate docreferencemenuglossary developer-documentation %}</a>
+    <a href="https://developer.bitcoin.org/glossary">{% translate docreferencemenuglossary developer-documentation %}</a>
     {% when "dev docs examples" %}
-    <a href="/{{ page.lang }}/developer-examples">{% translate docreferencemenuexamples developer-documentation %}</a>
+    <a href="https://developer.bitcoin.org/examples">{% translate docreferencemenuexamples developer-documentation %}</a>
     {% when "dev docs guides" %}
-    <a href="/{{ page.lang }}/developer-guide">{% translate docreferencemenuguides developer-documentation %}</a>
+    <a href="https://developer.bitcoin.org/devguide">{% translate docreferencemenuguides developer-documentation %}</a>
     {% when "dev docs reference" %}
-    <a href="/{{ page.lang }}/developer-reference">{% translate docreferencemenureference developer-documentation %}</a>
+    <a href="https://developer.bitcoin.org/reference">{% translate docreferencemenureference developer-documentation %}</a>
     {% else %}{% die "Breadcrumb not found in _includes/layout/breadcrumbs.html" %} {% endcase %} &gt; {% endif %} {% endfor
     %}
   </div>

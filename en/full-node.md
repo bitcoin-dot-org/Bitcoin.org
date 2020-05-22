@@ -66,17 +66,17 @@ during which it will display the following message whenever you use
 
 After it starts, you may find the following commands useful for basic
 interaction with your node:
-[`getblockchaininfo`](/en/developer-reference#getblockchaininfo),
-[`getnetworkinfo`](/en/developer-reference#getnetworkinfo),
-[`getnettotals`](/en/developer-reference#getnettotals),
-[`getwalletinfo`](/en/developer-reference#getwalletinfo),
-[`stop`](/en/developer-reference#stop), and [`help`](/en/developer-reference#help).
+[`getblockchaininfo`](https://developer.bitcoin.org/reference/rpc/getblockchaininfo),
+[`getnetworkinfo`](https://developer.bitcoin.org/reference/rpc/getnetworkinfo),
+[`getnettotals`](https://developer.bitcoin.org/reference/rpc/getnettotals),
+[`getwalletinfo`](https://developer.bitcoin.org/reference/rpc/getwalletinfo),
+[`stop`](https://developer.bitcoin.org/reference/rpc/stop), and [`help`](https://developer.bitcoin.org/reference/rpc/help).
 {% endcapture %}
 
 
 {% capture complete_list_of_commands_and_ibd %}
 A complete list of commands is available in the [Bitcoin.org developer
-reference](/en/developer-reference#rpc-quick-reference).
+reference](https://developer.bitcoin.org/reference/rpc/).
 
 When Bitcoin Core daemon first starts, it will begin to download the block
 chain. This step will take at least several days, and it may take much more time
@@ -218,10 +218,10 @@ have an easy-to-use node.
 
 ## Initial Block Download(IBD)
 
-[Initial block download](/en/p2p-network-guide#initial-block-download)
+[Initial block download](https://developer.bitcoin.org/devguide/p2p_network.html#initial-block-download)
 refers to the process where nodes synchronize themselves
 to the network by downloading blocks that are new to them.
-This will happen when a node is far behind the tip of the [best block chain](/en/glossary/block-chain).
+This will happen when a node is far behind the tip of the [best block chain](https://developer.bitcoin.org/glossary).
 In the process of IBD, a node does not accept incoming transactions nor request mempool transactions.
 
 If you are trying to set up a new node following the instructions below, you will go
@@ -1084,7 +1084,7 @@ connections.](#enabling-connections)
 
 #### Daemon Peer Info
 
-The [`getconnectioncount`](/en/developer-reference#getconnectioncount)
+The [`getconnectioncount`](https://developer.bitcoin.org/reference/rpc/getconnectioncount)
 command will tell you how many connections you have. If you have more
 than 8 connections, inbound connections are allowed. For example:
 
@@ -1092,7 +1092,7 @@ than 8 connections, inbound connections are allowed. For example:
 52</pre>
 
 For confirmation, you can use the
-[`getpeerinfo`](/en/developer-reference#getpeerinfo) command to get
+[`getpeerinfo`](https://developer.bitcoin.org/reference/rpc/getpeerinfo) command to get
 information about all of your peers.  Each peer's details will include
 an `inbound` field set to true if the connection is inbound.  If you
 have any inbound connections, then inbound connections are allowed.

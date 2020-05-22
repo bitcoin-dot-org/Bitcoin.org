@@ -195,7 +195,7 @@ tr:
     pagetitle: "Bitcoin gelişimi"
     summary: "Şu anki açıklama, yazılım ve geliştiriciler hakkında daha fazla bilgi edinin."
     spec: "Belgeleme"
-    spectxt: "Bitcoin'in teknik detaylarını veya var olan araç ve APIleri nasıl kullanacağınızı öğrenmek istiyorsanız <a href=\"/en/developer-documentation\">geliştirici belgelemesini</a> okuyarak başlamanızı öneririz."
+    spectxt: "Bitcoin'in teknik detaylarını veya var olan araç ve APIleri nasıl kullanacağınızı öğrenmek istiyorsanız <a href=\"https://developer.bitcoin.org/\">geliştirici belgelemesini</a> okuyarak başlamanızı öneririz."
     coredev: "Çekirdek geliştiriciler"
     inventor: "Bitcoin sistemi aslen Satoshi Nakamoto tarafından tasarlanmıştır. Kendisinin asıl Bitcoin kod havuzu artık Bitcoin Core olarak geliştiriciler ve bir gönüllü topluluğu tarafından idare ediliyor."
     disclosure: "Sorumlu ifşa"
@@ -414,7 +414,7 @@ tr:
     processing: "İşleme<span class=\"titlelight\"> - madencilik</span>"
     processingtxt: "Madencilik bekleyen işlemleri blok zincirine katarak <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>onaylayan</i></a>  <b>dağıtımlı fikirbirliği sistemi</b>dir. Blok zincirinde kronolojik sıra sağlar, ağın tarafsızlığını korur, ve farklı bilgisayarların sistemin durumunda uzlaşmasını sağlar. Onaylanmaları için işlemler ağ tarafından belirlenen çok sıkı kurallara uyan bir <a href=\"#vocabulary##[vocabulary.block]\"><i>bloğa</i></a> konurlar. Bu kurallar önceki blokların değiştirilmesini önler çünkü değiştirilirlerse bütün sonraki bloklar geçersiz kılınır. Madencilik ayrıca kimsenin kolayca ard arda yeni blokları blok zincirine eklemesini önleyerek rekabetli bir piyangonun eşdeğerini de yaratır. Bu şekilde kimse blok zincirine neyin dahil olup olmadığını  kontrol edemez ve blok zincirinin kısımlarını değiştirip harcadıkları paralarını geri alamaz."
     readmore: "Daha derine dalmak"
-    readmoretxt: "Bu yalnızca sistemin kısa bir özetidir. Eğer detaylarına inmek isterseniz sistemin tasarımını tarif eden <a href=\"#bitcoin-paper#\">özgün makaleyi okuyabilirsiniz</a>, <a href=\"/en/developer-documentation\">geliştirici belgelemesini</a> okuyabilirsiniz, veya <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a> sayfasını inceleyebilirsiniz."
+    readmoretxt: "Bu yalnızca sistemin kısa bir özetidir. Eğer detaylarına inmek isterseniz sistemin tasarımını tarif eden <a href=\"#bitcoin-paper#\">özgün makaleyi okuyabilirsiniz</a>, <a href=\"https://developer.bitcoin.org/\">geliştirici belgelemesini</a> okuyabilirsiniz, veya <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a> sayfasını inceleyebilirsiniz."
   index:
     title: "Bitcoin - Açık kaynak P2P dijital para"
     metadescription: "Bitcoin yenilikçi bir ödeme ağı ve yeni bir tür para çeşididir. Bilmeniz gereken herşeyi bitcoin.org'da öğrenerek şimdi kullanmaya başlayın."

@@ -195,7 +195,7 @@ pl:
     pagetitle: "Rozwój Bitcoin"
     summary: "Znajdź więcej informacji o aktualnej specyfikacji, oprogramowaniu i programistach."
     spec: "Dokumentacja"
-    spectxt: "Jeśli chciałbyś dowiedzieć się więcej o technicznych szczegółach Bitcoin i o tym, jak używać istniejących narzędzi oraz API, zalecamy, byś zaczął od zapoznania się z <a href=\"/en/developer-documentation\">dokumentacją deweloperską</a>."
+    spectxt: "Jeśli chciałbyś dowiedzieć się więcej o technicznych szczegółach Bitcoin i o tym, jak używać istniejących narzędzi oraz API, zalecamy, byś zaczął od zapoznania się z <a href=\"https://developer.bitcoin.org/\">dokumentacją deweloperską</a>."
     coredev: "Główni programiści"
     inventor: "System Bitcoin był oryginalnie zaprojektowany przez Satoshi Nakamoto. Jego oryginalny kod źródłowy jest obecnie utrzymywany jako Bitcoin Core przez następujących deweloperów oraz społeczność wolontariuszy."
     disclosure: "Odpowiedzialne ujawnianie informacji"
@@ -416,7 +416,7 @@ pl:
     processing: "Przetwarzanie<span class=\"titlelight\"> - wydobywanie</span>"
     processingtxt: "Wydobycie jest <b>rozproszonym systemem konsensu</b>, używanym do <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>potwierdzania</i></a> oczekujących transakcji poprzez włączanie ich do łańcucha bloków. Proces ten zapewnia chronologiczność zdarzeń w łańcuchu, chroni neutralności sieci oraz pozwala różnym komputerom na wzajemnie uzgadnianie stanu systemu. Aby zostały potwierdzone, transakcje muszą być ułożone w <a href=\"#vocabulary##[vocabulary.block]\"><i>blok</i></a> spełniający bardzo ścisłe zasady kryptografii, które zostaną zweryfikowane przez sieć. Zasady te zapobiegają modyfikacji poprzednio zapisanych bloków, gdyż wiązałoby się to z unieważnieniem wszystkich kolejnych bloków. Wydobywanie (kopanie) tworzy również odpowiednik opartej na rywalizacji loterii, która zapobiega prostemu dodawaniu nowych bloków kolejno w łańcuchu bloków przez dowolną jedną osobę. Dzięki temu żadna osoba nie może kontrolować tego, co zostaje zapisane w łańcuchu bloków, ani też zastępować części łańcucha bloków, by cofnąć własne wydatki."
     readmore: "W głąb króliczej nory"
-    readmoretxt: "Prezentujemy tu jedynie krótkie i zwięzłe podsumowanie systemu. Jeśli chcesz poznać detale, możesz <a href=\"#bitcoin-paper#\">przeczytać oryginalną pracę</a> opisującą projekt systemu, przeczytać <a href=\"/en/developer-documentation\">dokumentację dla programistów</a> oraz zagłebić się w lekturę <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>."
+    readmoretxt: "Prezentujemy tu jedynie krótkie i zwięzłe podsumowanie systemu. Jeśli chcesz poznać detale, możesz <a href=\"#bitcoin-paper#\">przeczytać oryginalną pracę</a> opisującą projekt systemu, przeczytać <a href=\"https://developer.bitcoin.org/\">dokumentację dla programistów</a> oraz zagłebić się w lekturę <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>."
   index:
     title: "Bitcoin - Otwarta waluta P2P"
     metadescription: "Bitcoin to innowacyjna sieć płatności i nowy rodzaj pieniądza. Znajdź wszystko, co powinieneś wiedzieć i zacznij korzystać z Bitcoin na bitcoin.org."

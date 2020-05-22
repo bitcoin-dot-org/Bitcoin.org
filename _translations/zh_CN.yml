@@ -319,7 +319,7 @@ zh_CN:
     pagedesc: "比特币是一个国际项目和开源软件。"
     summary: "寻找更多有关当前规范、软件和开发者的信息"
     spec: "文档记录"
-    spectxt: "如果你有兴趣了解更多关于比特币的技术细节以及如何使用现有的工具和 API，建议你先了解 <a href=\"/en/developer-documentation\">开发者文档记录</a>."
+    spectxt: "如果你有兴趣了解更多关于比特币的技术细节以及如何使用现有的工具和 API，建议你先了解 <a href=\"https://developer.bitcoin.org/\">开发者文档记录</a>."
     coredev: "核心开发人员"
     inventor: "比特币系统最初是由中本聪先生设计的。他的最先的比特币代码库现在被后来的开发者和一个社区的志愿者们作为 Bitcoin Core 来维护。"
     disclosure: "负责任的披露"
@@ -563,7 +563,7 @@ zh_CN:
     processing: "处理<span class=\"titlelight\"> - 挖矿</span>"
     processingtxt: "挖矿是个将待确认的交易数据包含到区块链中，从而完成对这些交易进行<a href=\"#vocabulary##[vocabulary.confirmation]\"><i>确认</i></a>的<b>分布式共识系统</b>。通过挖矿，可以强制性保证块链中的数据按时间顺序存储，保持比特币网络的中立性，且允许比特币网络上不同的计算机对系统状态达成一致。交易要获得确认，必须要被打包到一个符合非常严格的密码学规则的<a href=\"#vocabulary##[vocabulary.block]\"><i>区块</i></a>中，并通过比特币网络进行验证。这些规则可以防止对已有块的修改，因为一旦有改动，之后所有的块都将失效。挖矿的难度和中彩票相当，没人可以轻易地、连续地将新块加入到块链中。因此，没有集体和个人可以控制块链中包含什么样的内容或者替换掉块链中的部分内容以达到撤销他们交易的目的。"
     readmore: "深入探究"
-    readmoretxt: "这只是一份比特币的概要。如果你需要更多的细节，你可以阅读描述了比特币设计的<a href=\"#bitcoin-paper#\">最初的论文</a>，<a href=\"/en/developer-documentation\">开发者文档</a>，或者查看<a href=\"https://en.bitcoin.it/wiki/Main_Page\">比特币百科</a>。"
+    readmoretxt: "这只是一份比特币的概要。如果你需要更多的细节，你可以阅读描述了比特币设计的<a href=\"#bitcoin-paper#\">最初的论文</a>，<a href=\"https://developer.bitcoin.org/\">开发者文档</a>，或者查看<a href=\"https://en.bitcoin.it/wiki/Main_Page\">比特币百科</a>。"
   index:
     title: "比特币 - 开源的P2P货币"
     metadescription: "比特币是一个创新的支付网络，也是一种新型货币。了解你必须知道的内容后你就可以开始与比特币和 bitcoin.org 建立关系了。"

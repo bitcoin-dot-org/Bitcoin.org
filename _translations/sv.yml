@@ -201,7 +201,7 @@ sv:
     pagetitle: "Bitcoin-utveckling"
     summary: "Hitta mer information om nuvarande specifikation, program och utvecklare."
     spec: "Dokumentation"
-    spectxt: "Om du är intresserad av att lära dig mer om Bitcoins tekniska detaljer och hur du kan använda befintliga verktyg och API:er, rekommenderas du att börja med att utforska <a href=\"/en/developer-documentation\">utvecklardokumentationen</a>."
+    spectxt: "Om du är intresserad av att lära dig mer om Bitcoins tekniska detaljer och hur du kan använda befintliga verktyg och API:er, rekommenderas du att börja med att utforska <a href=\"https://developer.bitcoin.org/\">utvecklardokumentationen</a>."
     coredev: "Huvudutvecklare"
     inventor: "Bitcoin system var ursprungligen designat av Satoshi Nakamoto. Hans ursprungliga Bitcoin källkod underhålls nu, som Bitcoin Core, av följande utvecklare och ett community av frivilliga."
     disclosure: "Ansvarsfullt avslöjande"

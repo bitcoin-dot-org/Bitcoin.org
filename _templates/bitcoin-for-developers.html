@@ -19,7 +19,7 @@ id: bitcoin-for-developers
       <h2 id="simple">{% translate simple %}</h2>
       <p>{% translate simpletext %}</p>
     </div>
-    
+
     <div class="card developers-card">
       <img class="titleicon" src="/img/icons/ico_api.svg?{{site.time | date: '%s'}}" alt="Icon" />
       <h2 id="api">{% translate api %}</h2>
@@ -50,19 +50,9 @@ id: bitcoin-for-developers
       <p>{% translate microtext %}</p>
     </div>
   </div>
-  
-  {% comment %} After the developer-documentation page is translated, add the language to the array below {% endcomment %}
-  {% assign langs = [ 'en', 'uk' ] %} {% if langs contains page.lang %}
-  <div class="developers-link">
-    <a href="/{{ page.lang }}/developer-documentation">{% translate pagetitle developer-documentation %}</a>
-  </div>
-  {% else %}
-  <div class="developers-link">
-    <a href="/en/developer-documentation">Developer Documentation (English)</a>
-  </div>
-  {% endif %}
+
   <div class="btn-container">
-    <a class="btn btn-bright get-started-btn" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
+    <a class="btn btn-bright get-started-btn" href="https://developer.bitcoin.org/">{% translate pagetitle %}</a>
   </div>
 
 </div>

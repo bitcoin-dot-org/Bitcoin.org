@@ -59,12 +59,368 @@ langs:
   'zh_TW': '繁體中文'
 
 redirects:
+  /en/bitcoin-for-developers: https://developer.bitcoin.org/
+  /en/developer-guide: https://developer.bitcoin.org/devguide/
+  /en/developer-guide#blockchain: https://developer.bitcoin.org/devguide/block_chain#block-chain
+  /en/developer-guide#transactions: https://developer.bitcoin.org/devguide/transactions#transactions
+  /en/developer-guide#wallets: https://developer.bitcoin.org/devguide/wallets#wallets
+  /en/developer-guide#payment-processing: https://developer.bitcoin.org/devguide/payment_processing#payment-processing
+  /en/developer-guide#p2p-network: https://developer.bitcoin.org/devguide/p2p_network#p2p-network
+  /en/developer-guide#mining: https://developer.bitcoin.org/devguide/mining#mining
+  /en/blockchain-guide: https://developer.bitcoin.org/devguide/block_chain
+  /en/blockchain-guide#introduction: https://developer.bitcoin.org/devguide/block_chain#introduction
+  /en/blockchain-guide#proof-of-work: https://developer.bitcoin.org/devguide/block_chain#proof-of-work
+  /en/blockchain-guide#block-height-and-forking: https://developer.bitcoin.org/devguide/block_chain#block-height-and-forking
+  /en/blockchain-guide#transaction-data: https://developer.bitcoin.org/devguide/block_chain#transaction-data
+  /en/blockchain-guide#consensus-rule-changes: https://developer.bitcoin.org/devguide/block_chain#consensus-rule-changes
+  /en/blockchain-guide#detecting-forks: https://developer.bitcoin.org/devguide/block_chain#detecting-forks
+  /en/transactions-guide: https://developer.bitcoin.org/devguide/transactions
+  /en/transactions-guide#introduction: https://developer.bitcoin.org/devguide/transactions#introduction
+  /en/transactions-guide#p2pkh-script-validation: https://developer.bitcoin.org/devguide/transactions#p2pkh-script-validation
+  /en/transactions-guide#p2sh-scripts: https://developer.bitcoin.org/devguide/transactions#p2sh-scripts
+  /en/transactions-guide#standard-transactions: https://developer.bitcoin.org/devguide/transactions#standard-transactions
+  /en/transactions-guide#pay-to-public-key-hash-p2pkh: https://developer.bitcoin.org/devguide/transactions#pay-to-public-key-hash-p2pkh
+  /en/transactions-guide#multisig: https://developer.bitcoin.org/devguide/transactions#multisig
+  /en/transactions-guide#null-data: https://developer.bitcoin.org/devguide/transactions#null-data
+  /en/transactions-guide#non-standard-transactions: https://developer.bitcoin.org/devguide/transactions#non-standard-transactions
+  /en/transactions-guide#signature-hash-types: https://developer.bitcoin.org/devguide/transactions#signature-hash-types
+  /en/transactions-guide#locktime-and-sequence-number: https://developer.bitcoin.org/devguide/transactions#locktime-and-sequence-number
+  /en/transactions-guide#transaction-fees-and-change: https://developer.bitcoin.org/devguide/transactions#transaction-fees-and-change
+  /en/transactions-guide#avoiding-key-reuse: https://developer.bitcoin.org/devguide/transactions#avoiding-key-reuse
+  /en/transactions-guide#transaction-malleability: https://developer.bitcoin.org/devguide/transactions#transaction-malleability
+  /en/contracts-guide: https://developer.bitcoin.org/devguide/contracts
+  /en/contracts-guide#introduction: https://developer.bitcoin.org/devguide/contracts#introduction
+  /en/contracts-guide#escrow-and-arbitration: https://developer.bitcoin.org/devguide/contracts#escrow-and-arbitration
+  /en/contracts-guide#micropayment-channel: https://developer.bitcoin.org/devguide/contracts#micropayment-channel
+  /en/contracts-guide#coinjoin: https://developer.bitcoin.org/devguide/contracts#coinjoin
+  /en/wallets-guide: https://developer.bitcoin.org/devguide/wallets
+  /en/wallets-guide#introductions: https://developer.bitcoin.org/devguide/wallets#introductions
+  /en/wallets-guide#wallet-programs: https://developer.bitcoin.org/devguide/wallets#wallet-programs
+  /en/wallets-guide#full-service-wallets: https://developer.bitcoin.org/devguide/wallets#full-service-wallets
+  /en/wallets-guide#signing-only-wallets: https://developer.bitcoin.org/devguide/wallets#signing-only-wallets
+  /en/wallets-guide#offline-wallets: https://developer.bitcoin.org/devguide/wallets#offline-wallets
+  /en/wallets-guide#hardware-wallets: https://developer.bitcoin.org/devguide/wallets#hardware-wallets
+  /en/wallets-guide#distributing-only-wallets: https://developer.bitcoin.org/devguide/wallets#distributing-only-wallets
+  /en/wallets-guide#wallet-files: https://developer.bitcoin.org/devguide/wallets#wallet-files
+  /en/wallets-guide#private-key-formats: https://developer.bitcoin.org/devguide/wallets#private-key-formats
+  /en/wallets-guide#wallet-import-format-wif: https://developer.bitcoin.org/devguide/wallets#wallet-import-format-wif
+  /en/wallets-guide#mini-private-key-format: https://developer.bitcoin.org/devguide/wallets#mini-private-key-format
+  /en/wallets-guide#public-key-formats: https://developer.bitcoin.org/devguide/wallets#public-key-formats
+  /en/wallets-guide#hierarchical-deterministic-key-creation: https://developer.bitcoin.org/devguide/wallets#hierarchical-deterministic-key-creation
+  /en/wallets-guide#hardened-keys: https://developer.bitcoin.org/devguide/wallets#hardened-keys
+  /en/wallets-guide#storing-root-seeds: https://developer.bitcoin.org/devguide/wallets#storing-root-seeds
+  /en/wallets-guide#loose-key-wallets: https://developer.bitcoin.org/devguide/wallets#loose-key-wallets
+  /en/payment-processing-guide: https://developer.bitcoin.org/devguide/payment_processing
+  /en/payment-processing-guide#introduction: https://developer.bitcoin.org/devguide/payment_processing#introduction
+  /en/payment-processing-guide#pricing-orders: https://developer.bitcoin.org/devguide/payment_processing#pricing-orders
+  /en/payment-processing-guide#requesting-payments: https://developer.bitcoin.org/devguide/payment_processing#requesting-payments
+  /en/payment-processing-guide#plain-text: https://developer.bitcoin.org/devguide/payment_processing#plain-text
+  /en/payment-processing-guide#bitcoin-uri: https://developer.bitcoin.org/devguide/payment_processing#bitcoin-uri
+  /en/payment-processing-guide#qr-codes: https://developer.bitcoin.org/devguide/payment_processing#qr-codes
+  /en/payment-processing-guide#payment-protocol: https://developer.bitcoin.org/devguide/payment_processing#payment-protocol
+  /en/payment-processing-guide#verifying-payment: https://developer.bitcoin.org/devguide/payment_processing#verifying-payment
+  /en/payment-processing-guide#issuing-refunds: https://developer.bitcoin.org/devguide/payment_processing#issuing-refunds
+  /en/payment-processing-guide#disbursing-income-limiting-forex-risk: https://developer.bitcoin.org/devguide/payment_processing#disbursing-income-limiting-forex-risk
+  /en/payment-processing-guide#merge-avoidance: https://developer.bitcoin.org/devguide/payment_processing#merge-avoidance
+  /en/payment-processing-guide#last-in-first-out-lifo: https://developer.bitcoin.org/devguide/payment_processing#last-in-first-out-lifo
+  /en/payment-processing-guide#first-in-first-out-fifo: https://developer.bitcoin.org/devguide/payment_processing#first-in-first-out-fifo
+  /en/payment-processing-guide#rebilling-recurring-payments: https://developer.bitcoin.org/devguide/payment_processing#rebilling-recurring-payments
+  /en/operating-modes-guide: https://developer.bitcoin.org/devguide/operating_modes
+  /en/operating-modes-guide#introduction: https://developer.bitcoin.org/devguide/operating_modes#introduction
+  /en/operating-modes-guide#full-node: https://developer.bitcoin.org/devguide/operating_modes#full-node
+  /en/operating-modes-guide#simplified-payment-verification-spv: https://developer.bitcoin.org/devguide/operating_modes#simplified-payment-verification-spv
+  /en/operating-modes-guide#potential-spv-weaknesses: https://developer.bitcoin.org/devguide/operating_modes#potential-spv-weaknesses
+  /en/operating-modes-guide#bloom-filters: https://developer.bitcoin.org/devguide/operating_modes#bloom-filters
+  /en/operating-modes-guide#application-of-bloom-filters: https://developer.bitcoin.org/devguide/operating_modes#application-of-bloom-filters
+  /en/operating-modes-guide#future-proposals: https://developer.bitcoin.org/devguide/operating_modes#future-proposals
+  /en/p2p-network-guide: https://developer.bitcoin.org/devguide/p2p_network
+  /en/p2p-network-guide#introduction: https://developer.bitcoin.org/devguide/p2p_network#introduction
+  /en/p2p-network-guide#peer-discovery: https://developer.bitcoin.org/devguide/p2p_network#peer-discovery
+  /en/p2p-network-guide#connecting-to-peers: https://developer.bitcoin.org/devguide/p2p_network#connecting-to-peers
+  /en/p2p-network-guide#initial-block-download: https://developer.bitcoin.org/devguide/p2p_network#initial-block-download
+  /en/p2p-network-guide#blocks-first: https://developer.bitcoin.org/devguide/p2p_network#blocks-first
+  /en/p2p-network-guide#headers-first: https://developer.bitcoin.org/devguide/p2p_network#headers-first
+  /en/p2p-network-guide#block-broadcasting: https://developer.bitcoin.org/devguide/p2p_network#block-broadcasting
+  /en/p2p-network-guide#orphan-blocks: https://developer.bitcoin.org/devguide/p2p_network#orphan-blocks
+  /en/p2p-network-guide#transaction-broadcasting: https://developer.bitcoin.org/devguide/p2p_network#transaction-broadcasting
+  /en/p2p-network-guide#misbehaving-nodes: https://developer.bitcoin.org/devguide/p2p_network#misbehaving-nodes
+  /en/p2p-network-guide#alerts: https://developer.bitcoin.org/devguide/p2p_network#alerts
+  /en/mining-guide: https://developer.bitcoin.org/devguide/mining
+  /en/mining-guide#introduction: https://developer.bitcoin.org/devguide/mining#introduction
+  /en/mining-guide#solo-mining: https://developer.bitcoin.org/devguide/mining#solo-mining
+  /en/mining-guide#pool-mining: https://developer.bitcoin.org/devguide/mining#pool-mining
+  /en/mining-guide#block-prototypes: https://developer.bitcoin.org/devguide/mining#block-prototypes
+  /en/mining-guide#getwork-rpc: https://developer.bitcoin.org/devguide/mining#getwork-rpc
+  /en/mining-guide#getblocktemplate-rpc: https://developer.bitcoin.org/devguide/mining#getblocktemplate-rpc
+  /en/mining-guide#stratum: https://developer.bitcoin.org/devguide/mining#stratum
+  /en/developer-reference: https://developer.bitcoin.org/reference/
+  /en/developer-reference#block-chain: https://developer.bitcoin.org/reference/block_chain#block-chain
+  /en/developer-reference#block-headers: https://developer.bitcoin.org/reference/block_chain#block-headers
+  /en/developer-reference#block-versions: https://developer.bitcoin.org/reference/block_chain#block-versions
+  /en/developer-reference#merkle-trees: https://developer.bitcoin.org/reference/block_chain#merkle-trees
+  /en/developer-reference#target-nbits: https://developer.bitcoin.org/reference/block_chain#target-nbits
+  /en/developer-reference#serialized-blocks: https://developer.bitcoin.org/reference/block_chain#serialized-blocks
+  /en/developer-reference#transactions: https://developer.bitcoin.org/reference/transactions
+  /en/developer-reference#opcodes: https://developer.bitcoin.org/reference/transactions#opcodes
+  /en/developer-reference#address-conversion: https://developer.bitcoin.org/reference/transactions#address-conversion
+  /en/developer-reference#raw-transaction-format: https://developer.bitcoin.org/reference/transactions#raw-transaction-format
+  /en/developer-reference#compactsize-unsigned-integers: https://developer.bitcoin.org/reference/transactions#compactsize-unsigned-integers
+  /en/developer-reference#wallets: https://developer.bitcoin.org/reference/wallets
+  /en/developer-reference#deterministic-wallet-formats: https://developer.bitcoin.org/reference/wallets#deterministic-wallet-formats
+  /en/developer-reference#type-1-single-chain-wallets: https://developer.bitcoin.org/reference/wallets#type-1-single-chain-wallets
+  /en/developer-reference#type-2-hierarchical-deterministic-hd-wallets: https://developer.bitcoin.org/reference/wallets#type-2-hierarchical-deterministic-hd-wallets
+  /en/developer-reference#p2p-network: https://developer.bitcoin.org/reference/p2p_networking#p2p-network
+  /en/developer-reference#constants-and-defaults: https://developer.bitcoin.org/reference/p2p_networking#constants-and-defaults
+  /en/developer-reference#protocol-versions: https://developer.bitcoin.org/reference/p2p_networking#protocol-versions
+  /en/developer-reference#message-headers: https://developer.bitcoin.org/reference/p2p_networking#message-headers
+  /en/developer-reference#data-messages: https://developer.bitcoin.org/reference/p2p_networking#data-messages
+  /en/developer-reference#block: https://developer.bitcoin.org/reference/p2p_networking#block
+  /en/developer-reference#getblocks: https://developer.bitcoin.org/reference/p2p_networking#getblocks
+  /en/developer-reference#getdata: https://developer.bitcoin.org/reference/p2p_networking#getdata
+  /en/developer-reference#getheaders: https://developer.bitcoin.org/reference/p2p_networking#getheaders
+  /en/developer-reference#headers: https://developer.bitcoin.org/reference/p2p_networking#headers
+  /en/developer-reference#inv: https://developer.bitcoin.org/reference/p2p_networking#inv
+  /en/developer-reference#mempool: https://developer.bitcoin.org/reference/p2p_networking#mempool
+  /en/developer-reference#merkleblock: https://developer.bitcoin.org/reference/p2p_networking#merkleblock
+  /en/developer-reference#cmpctblock: https://developer.bitcoin.org/reference/p2p_networking#cmpctblock
+  /en/developer-reference#sendcmpct: https://developer.bitcoin.org/reference/p2p_networking#sendcmpct
+  /en/developer-reference#getblocktxn: https://developer.bitcoin.org/reference/p2p_networking#getblocktxn
+  /en/developer-reference#blocktxn: https://developer.bitcoin.org/reference/p2p_networking#blocktxn
+  /en/developer-reference#notfound: https://developer.bitcoin.org/reference/p2p_networking#notfound
+  /en/developer-reference#tx: https://developer.bitcoin.org/reference/p2p_networking#tx
+  /en/developer-reference#control-messages: https://developer.bitcoin.org/reference/p2p_networking#control-messages
+  /en/developer-reference#addr: https://developer.bitcoin.org/reference#addr
+  /en/developer-reference#alert: https://developer.bitcoin.org/reference/p2p_networking#alert
+  /en/developer-reference#feefilter: https://developer.bitcoin.org/reference/p2p_networking#feefilter
+  /en/developer-reference#filteradd: https://developer.bitcoin.org/reference/p2p_networking#filteradd
+  /en/developer-reference#filterclear: https://developer.bitcoin.org/reference/p2p_networking#filterclear
+  /en/developer-reference#filterload: https://developer.bitcoin.org/reference/p2p_networking#filterload
+  /en/developer-reference#getaddr: https://developer.bitcoin.org/reference/p2p_networking#getaddr
+  /en/developer-reference#ping: https://developer.bitcoin.org/reference/p2p_networking#ping
+  /en/developer-reference#pong: https://developer.bitcoin.org/reference/p2p_networking#pong
+  /en/developer-reference#reject: https://developer.bitcoin.org/reference/p2p_networking#reject
+  /en/developer-reference#sendheaders: https://developer.bitcoin.org/reference/p2p_networking#sendheaders
+  /en/developer-reference#verack: https://developer.bitcoin.org/reference/p2p_networking#verack
+  /en/developer-reference#version: https://developer.bitcoin.org/reference/p2p_networking#version
+  /en/developer-reference#abandontransaction: https://developer.bitcoin.org/reference/rpc/abandontransaction#abandontransaction
+  /en/developer-reference#abortrescan: https://developer.bitcoin.org/reference/rpc/abortrescan#abortrescan
+  /en/developer-reference#addmultisigaddress: https://developer.bitcoin.org/reference/rpc/addmultisigaddress#addmultisigaddress
+  /en/developer-reference#addnode: https://developer.bitcoin.org/reference/rpc/addnode#addnode
+  /en/developer-reference#analyzepsbt: https://developer.bitcoin.org/reference/rpc/analyzepsbt#analyzepsbt
+  /en/developer-reference#backupwallet: https://developer.bitcoin.org/reference/rpc/backupwallet#backupwallet
+  /en/developer-reference#bumpfee: https://developer.bitcoin.org/reference/rpc/bumpfee#bumpfee
+  /en/developer-reference#clearbanned: https://developer.bitcoin.org/reference/rpc/clearbanned#clearbanned
+  /en/developer-reference#combinepsbt: https://developer.bitcoin.org/reference/rpc/combinepsbt#combinepsbt
+  /en/developer-reference#combinerawtransaction: https://developer.bitcoin.org/reference/rpc/combinerawtransaction#combinerawtransaction
+  /en/developer-reference#converttopsbt: https://developer.bitcoin.org/reference/rpc/converttopsbt#converttopsbt
+  /en/developer-reference#createmultisig: https://developer.bitcoin.org/reference/rpc/createmultisig#createmultisig
+  /en/developer-reference#createpsbt: https://developer.bitcoin.org/reference/rpc/createpsbt
+  /en/developer-reference#createrawtransaction: https://developer.bitcoin.org/reference/rpc/createrawtransaction
+  /en/developer-reference#createwallet: https://developer.bitcoin.org/reference/rpc/createwallet
+  /en/developer-reference#decodepsbt: https://developer.bitcoin.org/reference/rpc/decodepsbt
+  /en/developer-reference#decoderawtransaction: https://developer.bitcoin.org/reference/rpc/decoderawtransaction
+  /en/developer-reference#decodescript: https://developer.bitcoin.org/reference/rpc/decodescript
+  /en/developer-reference#deriveaddresses: https://developer.bitcoin.org/reference/rpc/deriveaddresses
+  /en/developer-reference#disconnectnode: https://developer.bitcoin.org/reference/rpc/disconnectnode
+  /en/developer-reference#dumpprivkey: https://developer.bitcoin.org/reference/rpc/dumpprivkey
+  /en/developer-reference#dumpwallet: https://developer.bitcoin.org/reference/rpc/dumpwallet
+  /en/developer-reference#encryptwallet: https://developer.bitcoin.org/reference/rpc/encryptwallet
+  /en/developer-reference#estimatesmartfee: https://developer.bitcoin.org/reference/rpc/estimatesmartfee
+  /en/developer-reference#finalizepsbt: https://developer.bitcoin.org/reference/rpc/finalizepsbt
+  /en/developer-reference#fundrawtransaction: https://developer.bitcoin.org/reference/rpc/fundrawtransaction
+  /en/developer-reference#generate: https://developer.bitcoin.org/reference/rpc/generate
+  /en/developer-reference#generatetoaddress: https://developer.bitcoin.org/reference/rpc/generatetoaddress
+  /en/developer-reference#getaddednodeinfo: https://developer.bitcoin.org/reference/rpc/getaddednodeinfo
+  /en/developer-reference#getaddressesbylabel: https://developer.bitcoin.org/reference/rpc/getaddressesbylabel
+  /en/developer-reference#getaddressinfo: https://developer.bitcoin.org/reference/rpc/getaddressinfo
+  /en/developer-reference#getbalance: https://developer.bitcoin.org/reference/rpc/getbalance
+  /en/developer-reference#getbestblockhash: https://developer.bitcoin.org/reference/rpc/getbestblockhash
+  /en/developer-reference#getblock: https://developer.bitcoin.org/reference/rpc/getblock
+  /en/developer-reference#getblockchaininfo: https://developer.bitcoin.org/reference/rpc/getblockchaininfo
+  /en/developer-reference#getblockcount: https://developer.bitcoin.org/reference/rpc/getblockcount
+  /en/developer-reference#getblockhash: https://developer.bitcoin.org/reference/rpc/getblockhash
+  /en/developer-reference#getblockheader: https://developer.bitcoin.org/reference/rpc/getblockheader
+  /en/developer-reference#getblockstats: https://developer.bitcoin.org/reference/rpc/getblockstats
+  /en/developer-reference#getblocktemplate: https://developer.bitcoin.org/reference/rpc/getblocktemplate
+  /en/developer-reference#getchaintips: https://developer.bitcoin.org/reference/rpc/getchaintips
+  /en/developer-reference#getchaintxstats: https://developer.bitcoin.org/reference/rpc/getchaintxstats
+  /en/developer-reference#getconnectioncount: https://developer.bitcoin.org/reference/rpc/getconnectioncount
+  /en/developer-reference#getdescriptorinfo: https://developer.bitcoin.org/reference/rpc/getdescriptorinfo
+  /en/developer-reference#getdifficulty: https://developer.bitcoin.org/reference/rpc/getdifficulty
+  /en/developer-reference#getmemoryinfo: https://developer.bitcoin.org/reference/rpc/getmemoryinfo
+  /en/developer-reference#getmempoolancestors: https://developer.bitcoin.org/reference/rpc/getmempoolancestors
+  /en/developer-reference#getmempooldescendants: https://developer.bitcoin.org/reference/rpc/getmempooldescendants
+  /en/developer-reference#getmempoolentry: https://developer.bitcoin.org/reference/rpc/getmempoolentry
+  /en/developer-reference#getmempoolinfo: https://developer.bitcoin.org/reference/rpc/getmempoolinfo
+  /en/developer-reference#getmininginfo: https://developer.bitcoin.org/reference/rpc/getmininginfo
+  /en/developer-reference#getnettotals: https://developer.bitcoin.org/reference/rpc/getnettotals
+  /en/developer-reference#getnetworkhashps: https://developer.bitcoin.org/reference/rpc/getnetworkhashps
+  /en/developer-reference#getnetworkinfo: https://developer.bitcoin.org/reference/rpc/getnetworkinfo
+  /en/developer-reference#getnewaddress: https://developer.bitcoin.org/reference/rpc/getnewaddress
+  /en/developer-reference#getnodeaddresses: https://developer.bitcoin.org/reference/rpc/getnodeaddresses
+  /en/developer-reference#getpeerinfo: https://developer.bitcoin.org/reference/rpc/getpeerinfo
+  /en/developer-reference#getrawchangeaddress: https://developer.bitcoin.org/reference/rpc/getrawchangeaddress
+  /en/developer-reference#getrawmempool: https://developer.bitcoin.org/reference/rpc/getrawmempool
+  /en/developer-reference#getrawtransaction: https://developer.bitcoin.org/reference/rpc/getrawtransaction
+  /en/developer-reference#getrawtransaction: https://developer.bitcoin.org/reference/rpc/getrawtransaction
+  /en/developer-reference#getreceivedbyaddress: https://developer.bitcoin.org/reference/rpc/getreceivedbyaddress
+  /en/developer-reference#getreceivedbylabel: https://developer.bitcoin.org/reference/rpc/getreceivedbylabel
+  /en/developer-reference#getrpcinfo: https://developer.bitcoin.org/reference/rpc/getrpcinfo
+  /en/developer-reference#gettransaction: https://developer.bitcoin.org/reference/rpc/gettransaction
+  /en/developer-reference#gettxout: https://developer.bitcoin.org/reference/rpc/gettxout
+  /en/developer-reference#gettxoutproof: https://developer.bitcoin.org/reference/rpc/gettxoutproof
+  /en/developer-reference#gettxoutsetinfo: https://developer.bitcoin.org/reference/rpc/gettxoutsetinfo
+  /en/developer-reference#getunconfirmedbalance: https://developer.bitcoin.org/reference/rpc/getunconfirmedbalance
+  /en/developer-reference#getwalletinfo: https://developer.bitcoin.org/reference/rpc/getwalletinfo
+  /en/developer-reference#help: https://developer.bitcoin.org/reference/rpc/help
+  /en/developer-reference#importaddress: https://developer.bitcoin.org/reference/rpc/importaddress
+  /en/developer-reference#importmulti: https://developer.bitcoin.org/reference/rpc/importmulti
+  /en/developer-reference#importprivkey: https://developer.bitcoin.org/reference/rpc/importprivkey
+  /en/developer-reference#importprunedfunds: https://developer.bitcoin.org/reference/rpc/importprunedfunds
+  /en/developer-reference#importpubkey: https://developer.bitcoin.org/reference/rpc/importpubkey
+  /en/developer-reference#importwallet: https://developer.bitcoin.org/reference/rpc/importwallet
+  /en/developer-reference#joinpsbts: https://developer.bitcoin.org/reference/rpc/joinpsbts
+  /en/developer-reference#keypoolrefill: https://developer.bitcoin.org/reference/rpc/keypoolrefill
+  /en/developer-reference#listaddressgroupings: https://developer.bitcoin.org/reference/rpc/listaddressgroupings
+  /en/developer-reference#listbanned: https://developer.bitcoin.org/reference/rpc/listbanned
+  /en/developer-reference#listlabels: https://developer.bitcoin.org/reference/rpc/listlabels
+  /en/developer-reference#listlockunspent: https://developer.bitcoin.org/reference/rpc/listlockunspent
+  /en/developer-reference#listreceivedbyaddress: https://developer.bitcoin.org/reference/rpc/listreceivedbyaddress
+  /en/developer-reference#listreceivedbylabel: https://developer.bitcoin.org/reference/rpc/listreceivedbylabel
+  /en/developer-reference#listsinceblock: https://developer.bitcoin.org/reference/rpc/listsinceblock
+  /en/developer-reference#listtransactions: https://developer.bitcoin.org/reference/rpc/listtransactions
+  /en/developer-reference#listunspent: https://developer.bitcoin.org/reference/rpc/listunspent
+  /en/developer-reference#listwalletdir: https://developer.bitcoin.org/reference/rpc/listwalletdir
+  /en/developer-reference#listwallets: https://developer.bitcoin.org/reference/rpc/listwallets
+  /en/developer-reference#loadwallet: https://developer.bitcoin.org/reference/rpc/loadwallet
+  /en/developer-reference#lockunspent: https://developer.bitcoin.org/reference/rpc/lockunspent
+  /en/developer-reference#logging: https://developer.bitcoin.org/reference/rpc/logging
+  /en/developer-reference#ping-rpc: https://developer.bitcoin.org/reference/rpc/ping-rpc
+  /en/developer-examples: https://developer.bitcoin.org/examples/
+  /en/developer-examples#testing-applications: https://developer.bitcoin.org/examples/testing#testing-applications 
+  /en/developer-examples#testnet: https://developer.bitcoin.org/examples/testing#testnet
+  /en/developer-examples#regtest-mode: https://developer.bitcoin.org/examples/testing#regtest-mode
+  /en/developer-examples#transactions: https://developer.bitcoin.org/examples/transactions#transactions
+  /en/developer-examples#transaction-tutorial: https://developer.bitcoin.org/examples/transactions#transaction-tutorial
+  /en/developer-examples#simple-spending: https://developer.bitcoin.org/examples/transactions#simple-spending
+  /en/developer-examples#simple-raw-transaction: https://developer.bitcoin.org/examples/transactions#simple-raw-transaction
+  /en/developer-examples#complex-raw-transaction: https://developer.bitcoin.org/examples/transactions#complex-raw-transaction
+  /en/developer-examples#offline-signing: https://developer.bitcoin.org/examples/transactions#offline-signing
+  /en/developer-examples#p2sh-multisig: https://developer.bitcoin.org/examples/transactions#p2sh-multisig
+  /en/developer-examples#payment-processing: https://developer.bitcoin.org/examples/payment_processing
+  /en/developer-examples#payment-protocol: https://developer.bitcoin.org/examples/payment_processing#payment-protocol
+  /en/developer-examples#paymentrequest--paymentdetails: https://developer.bitcoin.org/examples/payment_processing#paymentrequest-paymentdetails
+  /en/developer-examples#initialization-code: https://developer.bitcoin.org/examples/payment_processing#initialization-code
+  /en/developer-examples#configuration-code: https://developer.bitcoin.org/examples/payment_processing#configuration-code
+  /en/developer-examples#code-variables: https://developer.bitcoin.org/examples/payment_processing#code-variables
+  /en/developer-examples#derivable-data: https://developer.bitcoin.org/examples/payment_processing#derivable-data
+  /en/developer-examples#output-code: https://developer.bitcoin.org/examples/payment_processing#output-code
+  /en/developer-examples#p2p-network: https://developer.bitcoin.org/examples/p2p_networking
+  /en/developer-examples#creating-a-bloom-filter: https://developer.bitcoin.org/examples/p2p_networking#creating-a-bloom-filter
+  /en/developer-examples#evaluating-a-bloom-filter: https://developer.bitcoin.org/examples/p2p_networking#evaluating-a-bloom-filter
+  /en/developer-examples#retrieving-a-merkleblock: https://developer.bitcoin.org/examples/p2p_networking#retrieving-a-merkleblock
+  /en/developer-examples#parsing-a-merkleblock: https://developer.bitcoin.org/examples/p2p_networking#parsing-a-merkleblock
+  /en/developer-glossary: https://developer.bitcoin.org/glossary
+  /en/glossary/51-percent-attack: https://developer.bitcoin.org/glossary
+  /en/glossary/address: https://developer.bitcoin.org/glossary
+  /en/glossary/node: https://developer.bitcoin.org/glossary
+  /en/glossary/cpfp: https://developer.bitcoin.org/glossary
+  /en/glossary/multisig: https://developer.bitcoin.org/glossary
+  /en/glossary/header-chain: https://developer.bitcoin.org/glossary
+  /en/glossary/block-chain: https://developer.bitcoin.org/glossary
+  /en/glossary/denominations: https://developer.bitcoin.org/glossary
+  /en/glossary/block: https://developer.bitcoin.org/glossary
+  /en/glossary/genesis-block: https://developer.bitcoin.org/glossary
+  /en/glossary/block-header: https://developer.bitcoin.org/glossary
+  /en/glossary/block-height: https://developer.bitcoin.org/glossary
+  /en/glossary/blocks-first-sync: https://developer.bitcoin.org/glossary
+  /en/glossary/bloom-filter: https://developer.bitcoin.org/glossary
+  /en/glossary/chain-code: https://developer.bitcoin.org/glossary
+  /en/glossary/change-address: https://developer.bitcoin.org/glossary
+  /en/glossary/child-key: https://developer.bitcoin.org/glossary
+  /en/glossary/coinbase: https://developer.bitcoin.org/glossary
+  /en/glossary/coinbase-transaction: https://developer.bitcoin.org/glossary
+  /en/glossary/compactsize: https://developer.bitcoin.org/glossary
+  /en/glossary/compressed-public-key: https://developer.bitcoin.org/glossary
+  /en/glossary/confirmation-score: https://developer.bitcoin.org/glossary
+  /en/glossary/consensus: https://developer.bitcoin.org/glossary
+  /en/glossary/consensus-rules: https://developer.bitcoin.org/glossary
+  /en/glossary/null-data-transaction: https://developer.bitcoin.org/glossary
+  /en/glossary/op-code: https://developer.bitcoin.org/glossary
+  /en/glossary/difficulty: https://developer.bitcoin.org/glossary
+  /en/glossary/dns-seed: https://developer.bitcoin.org/glossary
+  /en/glossary/double-spend: https://developer.bitcoin.org/glossary
+  /en/glossary/escrow-contract: https://developer.bitcoin.org/glossary
+  /en/glossary/extended-key: https://developer.bitcoin.org/glossary
+  /en/glossary/fork: https://developer.bitcoin.org/glossary
+  /en/glossary/high-priority-transaction: https://developer.bitcoin.org/glossary
+  /en/glossary/hard-fork: https://developer.bitcoin.org/glossary
+  /en/glossary/hardened-extended-key: https://developer.bitcoin.org/glossary
+  /en/glossary/hd-protocol: https://developer.bitcoin.org/glossary
+  /en/glossary/hd-wallet-seed: https://developer.bitcoin.org/glossary
+  /en/glossary/headers-first-sync: https://developer.bitcoin.org/glossary
+  /en/glossary/initial-block-download: https://developer.bitcoin.org/glossary
+  /en/glossary/input: https://developer.bitcoin.org/glossary
+  /en/glossary/internal-byte-order: https://developer.bitcoin.org/glossary
+  /en/glossary/inventory: https://developer.bitcoin.org/glossary
+  /en/glossary/simplified-payment-verification: https://developer.bitcoin.org/glossary
+  /en/glossary/locktime: https://developer.bitcoin.org/glossary
+  /en/glossary/mainnet: https://developer.bitcoin.org/glossary
+  /en/glossary/masf: https://developer.bitcoin.org/glossary
+  /en/glossary/master-chain-code-and-private-key: https://developer.bitcoin.org/glossary
+  /en/glossary/block-size-limit: https://developer.bitcoin.org/glossary
+  /en/glossary/merkle-block: https://developer.bitcoin.org/glossary
+  /en/glossary/merkle-root: https://developer.bitcoin.org/glossary
+  /en/glossary/merkle-tree: https://developer.bitcoin.org/glossary
+  /en/glossary/message-header: https://developer.bitcoin.org/glossary
+  /en/glossary/mining: https://developer.bitcoin.org/glossary
+  /en/glossary/transaction-fee: https://developer.bitcoin.org/glossary
+  /en/glossary/minimum-relay-fee: https://developer.bitcoin.org/glossary
+  /en/glossary/nbits: https://developer.bitcoin.org/glossary
+  /en/glossary/start-string: https://developer.bitcoin.org/glossary
+  /en/glossary/rbf: https://developer.bitcoin.org/glossary
+  /en/glossary/orphan-block: https://developer.bitcoin.org/glossary
+  /en/glossary/outpoint: https://developer.bitcoin.org/glossary
+  /en/glossary/output: https://developer.bitcoin.org/glossary
+  /en/glossary/p2pkh-address: https://developer.bitcoin.org/glossary
+  /en/glossary/p2sh-multisig: https://developer.bitcoin.org/glossary
+  /en/glossary/p2sh-address: https://developer.bitcoin.org/glossary
+  /en/glossary/parent-key: https://developer.bitcoin.org/glossary
+  /en/glossary/payment-protocol: https://developer.bitcoin.org/glossary
+  /en/glossary/proof-of-work: https://developer.bitcoin.org/glossary
+  /en/glossary/private-key: https://developer.bitcoin.org/glossary
+  /en/glossary/pubkey-script: https://developer.bitcoin.org/glossary
+  /en/glossary/public-key: https://developer.bitcoin.org/glossary
+  /en/glossary/serialized-transaction: https://developer.bitcoin.org/glossary
+  /en/glossary/redeem-script: https://developer.bitcoin.org/glossary
+  /en/glossary/regression-test-mode: https://developer.bitcoin.org/glossary
+  /en/glossary/rpc-byte-order: https://developer.bitcoin.org/glossary
+  /en/glossary/signature-script: https://developer.bitcoin.org/glossary
+  /en/glossary/sequence-number: https://developer.bitcoin.org/glossary
+  /en/glossary/serialized-block: https://developer.bitcoin.org/glossary
+  /en/glossary/signature-hash: https://developer.bitcoin.org/glossary
+  /en/glossary/sighash-all: https://developer.bitcoin.org/glossary
+  /en/glossary/sighash-anyonecanpay: https://developer.bitcoin.org/glossary
+  /en/glossary/sighash-none: https://developer.bitcoin.org/glossary
+  /en/glossary/sighash-single: https://developer.bitcoin.org/glossary
+  /en/glossary/signature: https://developer.bitcoin.org/glossary
+  /en/glossary/soft-fork: https://developer.bitcoin.org/glossary
+  /en/glossary/standard-transaction: https://developer.bitcoin.org/glossary
+  /en/glossary/testnet: https://developer.bitcoin.org/glossary
+  /en/glossary/token: https://developer.bitcoin.org/glossary
+  /en/glossary/malleability: https://developer.bitcoin.org/glossary
+  /en/glossary/txid: https://developer.bitcoin.org/glossary
+  /en/glossary/uasf: https://developer.bitcoin.org/glossary
+  /en/glossary/unspent-transaction-output: https://developer.bitcoin.org/glossary
+  /en/glossary/wallet: https://developer.bitcoin.org/glossary
+  /en/glossary/wallet-import-format: https://developer.bitcoin.org/glossary
+  /en/glossary/watch-only-address: https://developer.bitcoin.org/glossary
   /news: /en/version-history
   /clients: /en/choose-your-wallet
   /about: /en/faq
   /ar/بت-كوين-للهواة: /ar/innovation
   /ar/عن: /ar/faq
-  /ar/بت-كوين-للمطورين: /ar/bitcoin-for-developers
+  /ar/بت-كوين-للمطورين: https://developer.bitcoin.org/
   /ar/بت-كوين-للأفراد: /ar/bitcoin-for-individuals
   /ar/إختر-محفظتك: /ar/choose-your-wallet
   /ar/بت-كوين-للأعمال: /ar/bitcoin-for-businesses
@@ -79,7 +435,7 @@ redirects:
   /ar/تحتاج-أن-تعلم: /ar/you-need-to-know
   /fa/بیت-کوین-برای-علاقه-مندان: /fa/innovation
   /fa/درباره: /fa/faq
-  /fa/بیت-کوین-برای-توسعه-دهندگان: /fa/bitcoin-for-developers
+  /fa/بیت-کوین-برای-توسعه-دهندگان: https://developer.bitcoin.org/
   /fa/بیت-کوین-برای-افراد: /fa/bitcoin-for-individuals
   /fa/بیت-کوین-برای-کسب-و-کار: /fa/bitcoin-for-businesses
   /fa/انتخاب-کیف-پول: /fa/choose-your-wallet
@@ -92,7 +448,7 @@ redirects:
   /fa/حمایت-از-بیت-کوین: /fa/support-bitcoin
   /fa/واژگان: /fa/vocabulary
   /fa/آن-چه-باید-بدانید: /fa/you-need-to-know
-  /ru/биткоин-разработчикам: /ru/bitcoin-for-developers
+  /ru/биткоин-разработчикам: https://developer.bitcoin.org/
   /ru/биткоин-частным-лицам: /ru/bitcoin-for-individuals
   /ru/биткоин-бизнесу: /ru/bitcoin-for-businesses
   /ru/выберите-свой-кошелек: /ru/choose-your-wallet
@@ -110,46 +466,46 @@ redirects:
   /tr/yeni-baslamak: /tr/baslarken
   /en/bitcoin-for-press: /en/press
   /de/ueber: /de/faq
-  /de/developer-examples: /de/entwickler-beispiele
-  /de/developer-glossary: /de/entwickler-glossar
-  /de/developer-guide: /de/entwickler-guide
-  /de/developer-reference: /de/entwickler-referenzen
-  /de/developer-documentation: /de/entwickler-dokumentation
+  /de/developer-examples: https://developer.bitcoin.org/examples/
+  /de/developer-glossary: https://developer.bitcoin.org/glossary
+  /de/developer-guide: https://developer.bitcoin.org/devguide/
+  /de/developer-reference: https://developer.bitcoin.org/reference/
+  /de/developer-documentation: https://developer.bitcoin.org/
   /en/about: /en/faq
   /es/acerca-de: /es/faq
   /fr/a-propos: /fr/faq
   /hu/bitcoin-paper: /hu/papir-bitcoin
-  /hu/developer-documentation: /hu/fejlesztoi-dokumentacio
-  /hu/developer-examples: /hu/fejlesztoi-peldak
-  /hu/developer-glossary: /hu/fejlesztoi-kisokos
-  /hu/developer-guide: /hu/fejlesztoi-utmutato
-  /hu/developer-reference: /hu/fejlesztoi-referencia
-  /id/developer-documentation: /id/dokumentasi-pengembang
+  /hu/developer-documentation: https://developer.bitcoin.org/
+  /hu/developer-examples: https://developer.bitcoin.org/examples/
+  /hu/developer-glossary: https://developer.bitcoin.org/glossary
+  /hu/developer-guide: https://developer.bitcoin.org/devguide/
+  /hu/developer-reference: https://developer.bitcoin.org/reference/
+  /id/developer-documentation: https://developer.bitcoin.org/
   /id/bitcoin-paper: /id/makalah-bitcoin
-  /id/developer-examples: /id/contoh-pengembang
-  /id/developer-glossary: /id/glosarium-pengembang
-  /id/developer-guide: /id/panduan-pengembang
-  /id/developer-reference: /id/referensi-pengembang
+  /id/developer-examples: https://developer.bitcoin.org/examples/
+  /id/developer-glossary: https://developer.bitcoin.org/glossary
+  /id/developer-guide: https://developer.bitcoin.org/devguide/
+  /id/developer-reference: https://developer.bitcoin.org/reference/
   /it/bitcoin-paper: /it/documento-bitcoin
-  /it/developer-documentation: /it/documentazione-sviluppatori
-  /it/developer-examples: /it/esempi-sviluppatori
-  /it/developer-glossary: /it/glossario-sviluppatori
-  /it/developer-guide: /it/guida-sviluppatori
-  /it/developer-reference: /it/riferimento-per-sviluppatori
+  /it/developer-documentation: https://developer.bitcoin.org/
+  /it/developer-examples: https://developer.bitcoin.org/examples/
+  /it/developer-glossary: https://developer.bitcoin.org/glossary
+  /it/developer-guide: https://developer.bitcoin.org/devguide/
+  /it/developer-reference: https://developer.bitcoin.org/reference/
   /it/a-proposito: /it/faq
-  /nl/developer-documentation: /nl/documentatie-voor-ontwikkelaars
-  /nl/developer-reference: /nl/ontwikkelaars-referentie
-  /nl/developer-guide: /nl/ontwikkelaars-handleiding
-  /nl/developer-glossary: /nl/woordenlijst-ontwikkelaar
-  /nl/developer-examples: /nl/ontwikkelvoorbeelden
+  /nl/developer-documentation: https://developer.bitcoin.org/
+  /nl/developer-reference: https://developer.bitcoin.org/reference/
+  /nl/developer-guide: https://developer.bitcoin.org/devguide/
+  /nl/developer-glossary: https://developer.bitcoin.org/glossary
+  /nl/developer-examples: https://developer.bitcoin.org/examples/
   /nl/bitcoin-paper: /nl/bitcoin-document
   /nl/over-bitcoin: /nl/faq
   /pl/o: /pl/faq
-  /pt_BR/developer-documentation: /pt_BR/documentacao-do-desenvolvedor
-  /pt_BR/developer-reference: /pt_BR/referencias-para-desenvolvedores
-  /pt_BR/developer-guide: /pt_BR/guia-do-desenvolvedor
-  /pt_BR/developer-glossary: /pt_BR/glossario-do-desenvolvedor
-  /pt_BR/developer-examples: /pt_BR/exemplos-para-desenvolvedores
+  /pt_BR/developer-documentation: https://developer.bitcoin.org/
+  /pt_BR/developer-reference: https://developer.bitcoin.org/reference/
+  /pt_BR/developer-guide: https://developer.bitcoin.org/devguide/
+  /pt_BR/developer-glossary: https://developer.bitcoin.org/glossary
+  /pt_BR/developer-examples: https://developer.bitcoin.org/examples/
   /tr/hakkinda: /tr/sss
   /zh_CN/about: /zh_CN/faq
   /zh_TW/about: /zh_TW/faq
@@ -161,11 +517,11 @@ redirects:
   /nl/bitcoin-voor-liefhebbers: /nl/innovatie
   /pl/bitcoin-dla-entuzjastow: /pl/innowacje
   /sr/bitcoin-paper: /sr/bitkoin-papir
-  /sr/developer-documentation: /sr/programeri-dokumentacija
-  /sr/developer-examples: /sr/programeri-primeri
-  /sr/developer-glossary: /sr/programeri-recnik
-  /sr/developer-guide: /sr/programeri-vodic
-  /sr/developer-reference: /sr/programeri-reference
+  /sr/developer-documentation: https://developer.bitcoin.org/
+  /sr/developer-examples: https://developer.bitcoin.org/examples/
+  /sr/developer-glossary: https://developer.bitcoin.org/glossary
+  /sr/developer-guide: https://developer.bitcoin.org/devguide/
+  /sr/developer-reference: https://developer.bitcoin.org/reference/
   ## Old releases pages; stop adding to this list after 0.8.2
   /releases/2011/04/27/v0.3.21: /en/release/v0.3.21
   /releases/2011/06/05/v0.3.22: /en/release/v0.3.22
@@ -277,357 +633,6 @@ text:
   ## Before updating this, verify all assertions are still correct: git grep site.text.assertion_month
   ## Use ISO-8601 format, but feel free to round to the nearest month
   assertion_month: 2017-06-01
-
-
-## Items in devsearches will appear in the search box in the order they
-## are listed below. For the top-level ("Glossary", "RPCs", etc...) this
-## is arbitrary based on whatever we think is most important. For the
-## second-level, this should be alphabetical order or another order that
-## will make intuitive sense to the user.
-devsearches:
-
-  ## Initialize the glossary array here so it appears first in the
-  ## search box. _plugins/glossary.rb will provide alphabetical ordering
-  "Glossary":
-
-  ## RPCs currently documented on Bitcoin.org. CamelCase names (with
-  ## leading capital) for easier quick scanning
-  "RPCs":
-    - 'AbandonTransaction': "/en/developer-reference#abandontransaction"
-    - 'AbortRescan': "/en/developer-reference#abortrescan"
-    - 'AddMultiSigAddress': "/en/developer-reference#addmultisigaddress"
-    - 'AddNode': "/en/developer-reference#addnode"
-    - 'AnalyzePsbt': "/en/developer-reference#analyzepsbt"
-    - 'BackupWallet': "/en/developer-reference#backupwallet"
-    - 'BumpFee': "/en/developer-reference#bumpfee"
-    - 'ClearBanned': "/en/developer-reference#clearbanned"
-    - 'CombinePsbt': "/en/developer-reference#combinepsbt"
-    - 'CombineRawTransaction': "/en/developer-reference#combinerawtransaction"
-    - 'ConvertToPsbt': "/en/developer-reference#converttopsbt"
-    - 'CreateMultiSig': "/en/developer-reference#createmultisig"
-    - 'CreatePsbt': "/en/developer-reference#createpsbt"
-    - 'CreateRawTransaction': "/en/developer-reference#createrawtransaction"
-    - 'CreateWallet': "/en/developer-reference#createwallet"
-    - 'DecodePsbt': "/en/developer-reference#decodepsbt"
-    - 'DecodeRawTransaction': "/en/developer-reference#decoderawtransaction"
-    - 'DecodeScript': "/en/developer-reference#decodescript"
-    - 'DeriveAddresses': "/en/developer-reference#deriveaddresses"
-    - 'DisconnectNode': "/en/developer-reference#disconnectnode"
-    - 'DumpPrivKey': "/en/developer-reference#dumpprivkey"
-    - 'DumpWallet': "/en/developer-reference#dumpwallet"
-    - 'EncryptWallet': "/en/developer-reference#encryptwallet"
-    - 'EstimateSmartFee': "/en/developer-reference#estimatesmartfee"
-    - 'FinalizePsbt': "/en/developer-reference#finalizepsbt"
-    - 'FundRawTransaction': "/en/developer-reference#fundrawtransaction"
-    - 'Generate': "/en/developer-reference#generate"
-    - 'GenerateToAddress': "/en/developer-reference#generatetoaddress"
-    - 'GetAddedNodeInfo': "/en/developer-reference#getaddednodeinfo"
-    - 'GetAddressesByLabel': "/en/developer-reference#getaddressesbylabel"
-    - 'GetAddressInfo': "/en/developer-reference#getaddressinfo"
-    - 'GetBalance': "/en/developer-reference#getbalance"
-    - 'GetBestBlockHash': "/en/developer-reference#getbestblockhash"
-    - 'GetBlock': "/en/developer-reference#getblock"
-    - 'GetBlockChainInfo': "/en/developer-reference#getblockchaininfo"
-    - 'GetBlockCount': "/en/developer-reference#getblockcount"
-    - 'GetBlockHash': "/en/developer-reference#getblockhash"
-    - 'GetBlockHeader': "/en/developer-reference#getblockheader"
-    - 'GetBlockStats': "/en/developer-reference#getblockstats"
-    - 'GetBlockTemplate': "/en/developer-reference#getblocktemplate"
-    - 'GetChainTips': "/en/developer-reference#getchaintips"
-    - 'GetChainTxStats': "/en/developer-reference#getchaintxstats"
-    - 'GetConnectionCount': "/en/developer-reference#getconnectioncount"
-    - 'GetDescriptorInfo': "/en/developer-reference#getdescriptorinfo"
-    - 'GetDifficulty': "/en/developer-reference#getdifficulty"
-    - 'GetMemoryInfo': "/en/developer-reference#getmemoryinfo"
-    - 'GetMemPoolAncestors': "/en/developer-reference#getmempoolancestors"
-    - 'GetMemPoolDescendants': "/en/developer-reference#getmempooldescendants"
-    - 'GetMemPoolEntry': "/en/developer-reference#getmempoolentry"
-    - 'GetMemPoolInfo': "/en/developer-reference#getmempoolinfo"
-    - 'GetMiningInfo': "/en/developer-reference#getmininginfo"
-    - 'GetNetTotals': "/en/developer-reference#getnettotals"
-    - 'GetNetworkHashPs': "/en/developer-reference#getnetworkhashps"
-    - 'GetNetworkInfo': "/en/developer-reference#getnetworkinfo"
-    - 'GetNewAddress': "/en/developer-reference#getnewaddress"
-    - 'GetNodeAddresses': "/en/developer-reference#getnodeaddresses"
-    - 'GetPeerInfo': "/en/developer-reference#getpeerinfo"
-    - 'GetRawChangeAddress': "/en/developer-reference#getrawchangeaddress"
-    - 'GetRawMemPool': "/en/developer-reference#getrawmempool"
-    - 'GetRawTransaction': "/en/developer-reference#getrawtransaction"
-    - 'GetReceivedByAddress': "/en/developer-reference#getreceivedbyaddress"
-    - 'GetReceivedByLabel': "/en/developer-reference#getreceivedbylabel"
-    - 'GetRpcInfo': "/en/developer-reference#getrpcinfo"
-    - 'GetTransaction': "/en/developer-reference#gettransaction"
-    - 'GetTxOut': "/en/developer-reference#gettxout"
-    - 'GetTxOutProof': "/en/developer-reference#gettxoutproof"
-    - 'GetTxOutSetInfo': "/en/developer-reference#gettxoutsetinfo"
-    - 'GetUnconfirmedBalance': "/en/developer-reference#getunconfirmedbalance"
-    - 'GetWalletInfo': "/en/developer-reference#getwalletinfo"
-    - 'Help': "/en/developer-reference#help"
-    - 'ImportAddress': "/en/developer-reference#importaddress"
-    - 'ImportMulti': "/en/developer-reference#importmulti"
-    - 'ImportPrivKey': "/en/developer-reference#importprivkey"
-    - 'ImportPrunedFunds': "/en/developer-reference#importprunedfunds"
-    - 'ImportPubKey': "/en/developer-reference#importpubkey"
-    - 'ImportWallet': "/en/developer-reference#importwallet"
-    - 'JoinPsbts': "/en/developer-reference#joinpsbts"
-    - 'KeyPoolRefill': "/en/developer-reference#keypoolrefill"
-    - 'ListAddressGroupings': "/en/developer-reference#listaddressgroupings"
-    - 'ListBanned': "/en/developer-reference#listbanned"
-    - 'ListLabels': "/en/developer-reference#listlabels"
-    - 'ListLockUnspent': "/en/developer-reference#listlockunspent"
-    - 'ListReceivedByAddress': "/en/developer-reference#listreceivedbyaddress"
-    - 'ListReceivedByLabel': "/en/developer-reference#listreceivedbylabel"
-    - 'ListSinceBlock': "/en/developer-reference#listsinceblock"
-    - 'ListTransactions': "/en/developer-reference#listtransactions"
-    - 'ListUnspent': "/en/developer-reference#listunspent"
-    - 'ListWalletDir': "/en/developer-reference#listwalletdir"
-    - 'ListWallets': "/en/developer-reference#listwallets"
-    - 'LoadWallet': "/en/developer-reference#loadwallet"
-    - 'LockUnspent': "/en/developer-reference#lockunspent"
-    - 'Logging': "/en/developer-reference#logging"
-    - 'Ping': "/en/developer-reference#ping-rpc"
-    - 'PreciousBlock': "/en/developer-reference#preciousblock"
-    - 'PrioritiseTransaction': "/en/developer-reference#prioritisetransaction"
-    - 'PruneBlockChain': "/en/developer-reference#pruneblockchain"
-    - 'RemovePrunedFunds': "/en/developer-reference#removeprunedfunds"
-    - 'RescanBlockChain': "/en/developer-reference#rescanblockchain"
-    - 'SaveMemPool': "/en/developer-reference#savemempool"
-    - 'ScanTxOutSet': "/en/developer-reference#scantxoutset"
-    - 'SendMany': "/en/developer-reference#sendmany"
-    - 'SendRawTransaction': "/en/developer-reference#sendrawtransaction"
-    - 'SendToAddress': "/en/developer-reference#sendtoaddress"
-    - 'SetBan': "/en/developer-reference#setban"
-    - 'SetHdSeed': "/en/developer-reference#sethdseed"
-    - 'SetLabel': "/en/developer-reference#setlabel"
-    - 'SetNetworkActive': "/en/developer-reference#setnetworkactive"
-    - 'SetTxFee': "/en/developer-reference#settxfee"
-    - 'SignMessage': "/en/developer-reference#signmessage"
-    - 'SignMessageWithPrivKey': "/en/developer-reference#signmessagewithprivkey"
-    - 'SignRawTransactionWithKey': "/en/developer-reference#signrawtransactionwithkey"
-    - 'SignRawTransactionWithWallet': "/en/developer-reference#signrawtransactionwithwallet"
-    - 'Stop': "/en/developer-reference#stop"
-    - 'SubmitBlock': "/en/developer-reference#submitblock"
-    - 'SubmitHeader': "/en/developer-reference#submitheader"
-    - 'TestmemPoolAccept': "/en/developer-reference#testmempoolaccept"
-    - 'UnloadWallet': "/en/developer-reference#unloadwallet"
-    - 'Uptime': "/en/developer-reference#uptime"
-    - 'UtxoUpdatePsbt': "/en/developer-reference#utxoupdatepsbt"
-    - 'ValidateAddress': "/en/developer-reference#validateaddress"
-    - 'VerifyChain': "/en/developer-reference#verifychain"
-    - 'VerifyMessage': "/en/developer-reference#verifymessage"
-    - 'VerifyTxOutProof': "/en/developer-reference#verifytxoutproof"
-    - 'WalletCreatefundedPsbt': "/en/developer-reference#walletcreatefundedpsbt"
-    - 'WalletLock': "/en/developer-reference#walletlock"
-    - 'WalletPassphrase': "/en/developer-reference#walletpassphrase"
-    - 'WalletPassphraseChange': "/en/developer-reference#walletpassphrasechange"
-    - 'WalletProcessPsbt': "/en/developer-reference#walletprocesspsbt"
-
-  ## REST calls currently documented on Bitcoin.org. CamelCase names (with
-  ## leading capital) for easier quick scanning
-  "REST":
-    - 'GetBlock': "/en/developer-reference#get-block"
-    - 'GetBlock-noTxDetails': "/en/developer-reference#get-blocknotxdetails"
-    - 'GetChainInfo': "/en/developer-reference#get-chaininfo"
-    - 'GetUtxos': "/en/developer-reference#get-getutxos"
-    - 'GetHeaders': "/en/developer-reference#get-headers"
-    - 'GetMemPool-contents': "/en/developer-reference#get-mempoolcontents"
-    - 'GetMemPool-info': "/en/developer-reference#get-mempoolinfo"
-
-  ## Opcodes currently implemented in Bitcoin Core master branch. After
-  ## we document them on Bitcoin.org, these links will be updated
-  "Opcodes":
-    - "OP_0 (OP_FALSE)": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_PUSHDATA1": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_PUSHDATA2": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_PUSHDATA4": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_1NEGATE": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_1 (OP_TRUE)": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_2": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_3": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_4": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_5": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_6": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_7": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_8": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_9": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_10": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_11": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_12": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_13": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_14": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_15": "https://en.bitcoin.it/wiki/Script#Constants"
-    - "OP_16": "https://en.bitcoin.it/wiki/Script#Constants"
-
-    - "OP_NOP": "https://en.bitcoin.it/wiki/Script#Flow_control"
-    - "OP_IF": "https://en.bitcoin.it/wiki/Script#Flow_control"
-    - "OP_NOTIF": "https://en.bitcoin.it/wiki/Script#Flow_control"
-    - "OP_ELSE": "https://en.bitcoin.it/wiki/Script#Flow_control"
-    - "OP_ENDIF": "https://en.bitcoin.it/wiki/Script#Flow_control"
-    - "OP_VERIFY": "https://en.bitcoin.it/wiki/Script#Flow_control"
-    - "OP_RETURN": "https://en.bitcoin.it/wiki/Script#Flow_control"
-
-    - "OP_TOALTSTACK": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_FROMALTSTACK": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_IFDUP": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_DEPTH": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_DROP": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_DUP": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_NIP": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_OVER": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_PICK": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_ROLL": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_ROT": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_SWAP": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_TUCK": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_2DROP": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_2DUP": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_3DUP": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_2OVER": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_2ROT": "https://en.bitcoin.it/wiki/Script#Stack"
-    - "OP_2SWAP": "https://en.bitcoin.it/wiki/Script#Stack"
-
-    - "OP_CAT (disabled)": "https://en.bitcoin.it/wiki/Script#Splice"
-    - "OP_SUBSTR (disabled)": "https://en.bitcoin.it/wiki/Script#Splice"
-    - "OP_LEFT (disabled)": "https://en.bitcoin.it/wiki/Script#Splice"
-    - "OP_RIGHT (disabled)": "https://en.bitcoin.it/wiki/Script#Splice"
-    - "OP_SIZE": "https://en.bitcoin.it/wiki/Script#Splice"
-
-    - "OP_INVERT (disabled)": "https://en.bitcoin.it/wiki/Script#Bitwise_logic"
-    - "OP_AND (disabled)": "https://en.bitcoin.it/wiki/Script#Bitwise_logic"
-    - "OP_OR (disabled)": "https://en.bitcoin.it/wiki/Script#Bitwise_logic"
-    - "OP_XOR (disabled)": "https://en.bitcoin.it/wiki/Script#Bitwise_logic"
-    - "OP_EQUAL": "https://en.bitcoin.it/wiki/Script#Bitwise_logic"
-    - "OP_EQUALVERIFY": "https://en.bitcoin.it/wiki/Script#Bitwise_logic"
-
-    - "OP_1ADD": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_1SUB": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_2MUL (disabled)": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_2DIV (disabled)": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_NEGATE": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_ABS": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_NOT": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_0NOTEQUAL": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_ADD": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_SUB": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_MUL (disabled)": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_DIV (disabled)": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_MOD (disabled)": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_LSHIFT (disabled)": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_RSHIFT (disabled)": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_BOOLAND": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_BOOLOR": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_NUMEQUAL": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_NUMEQUALVERIFY": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_NUMNOTEQUAL": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_LESSTHAN": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_GREATERTHAN": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_LESSTHANOREQUAL": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_GREATERTHANOREQUAL": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_MIN": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_MAX": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-    - "OP_WITHIN": "https://en.bitcoin.it/wiki/Script#Arithmetic"
-
-    - "OP_RIPEMD160": "https://en.bitcoin.it/wiki/Script#Crypto"
-    - "OP_SHA1": "https://en.bitcoin.it/wiki/Script#Crypto"
-    - "OP_SHA256": "https://en.bitcoin.it/wiki/Script#Crypto"
-    - "OP_HASH160": "https://en.bitcoin.it/wiki/Script#Crypto"
-    - "OP_HASH256": "https://en.bitcoin.it/wiki/Script#Crypto"
-    - "OP_CODESEPARATOR": "https://en.bitcoin.it/wiki/Script#Crypto"
-    - "OP_CHECKSIG": "https://en.bitcoin.it/wiki/Script#Crypto"
-    - "OP_CHECKSIGVERIFY": "https://en.bitcoin.it/wiki/Script#Crypto"
-    - "OP_CHECKMULTISIG": "https://en.bitcoin.it/wiki/Script#Crypto"
-    - "OP_CHECKMULTISIGVERIFY": "https://en.bitcoin.it/wiki/Script#Crypto"
-
-    - "OP_CHECKLOCKTIMEVERIFY": "https://en.bitcoin.it/wiki/Script#Locktime"
-    - "OP_CHECKSEQUENCEVERIFY ": "https://en.bitcoin.it/wiki/Script#Locktime"
-
-    - "OP_PUBKEYHASH (invalid)": "https://en.bitcoin.it/wiki/Script#Pseudo-words"
-    - "OP_PUBKEY (invalid)": "https://en.bitcoin.it/wiki/Script#Pseudo-words"
-    - "OP_INVALIDOPCODE (invalid)": "https://en.bitcoin.it/wiki/Script#Pseudo-words"
-
-    - "OP_RESERVED (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_VER (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_VERIF (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_VERNOTIF (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_RESERVED1 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_RESERVED2 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_NOP1 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_NOP4 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_NOP5 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_NOP6 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_NOP7 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_NOP8 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_NOP9 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-    - "OP_NOP10 (reserved)": "https://en.bitcoin.it/wiki/Script#Reserved_words"
-
-  ## Only notable and non-withdrawn BIPs. Try to keep descriptions short
-  ## and focused on likely keywords
-  "BIPs":
-    - "BIP1: BIP purpose and guidelines": "https://github.com/bitcoin/bips/blob/master/bip-0001.mediawiki"
-    - "BIP9: soft fork mechanism": "https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki"
-    - "BIP11: m-of-n multisig transactions": "https://github.com/bitcoin/bips/blob/master/bip-0011.mediawiki"
-    - "BIP13: P2SH address format": "https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki"
-    - "BIP14: protocol version and user agent": "https://github.com/bitcoin/bips/blob/master/bip-0014.mediawiki"
-    - "BIP16: pay to script hash (P2SH)": "https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki"
-    - "BIP21: URI scheme": "https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki"
-    - "BIP22: GetBlockTemplate fundamentals": "https://github.com/bitcoin/bips/blob/master/bip-0022.mediawiki"
-    - "BIP23: GetBlockTemplate pooled mining": "https://github.com/bitcoin/bips/blob/master/bip-0023.mediawiki"
-    - "BIP30: dealing with duplicate transactions": "https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki"
-    - "BIP31: P2P pong message": "https://github.com/bitcoin/bips/blob/master/bip-0031.mediawiki"
-    - "BIP32: HD wallets": "https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki"
-    - "BIP34: block height in coinbase": "https://github.com/bitcoin/bips/blob/master/bip-0034.mediawiki"
-    - "BIP35: P2P mempool message": "https://github.com/bitcoin/bips/blob/master/bip-0035.mediawiki"
-    - "BIP37: bloom filtering": "https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki"
-    - "BIP38: passphrase-protected private key": "https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki"
-    - "BIP39: mnemonic code for HD wallets": "https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki"
-    - "BIP42: finite monetary supply": "https://github.com/bitcoin/bips/blob/master/bip-0042.mediawiki"
-    - "BIP44: HD wallet account hierarchy": "https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki"
-    - "BIP50: March 2013 fork post-mortem": "https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki"
-    - "BIP60: fixed-length version message": "https://github.com/bitcoin/bips/blob/master/bip-0060.mediawiki"
-    - "BIP61: P2P reject message": "https://github.com/bitcoin/bips/blob/master/bip-0061.mediawiki"
-    - "BIP62: dealing with malleability": "https://github.com/bitcoin/bips/blob/master/bip-0062.mediawiki"
-    - "BIP64: P2P geutxos message": "https://github.com/bitcoin/bips/blob/master/bip-0064.mediawiki"
-    - "BIP65: OP_CHECKLOCKTIMEVERIFY": "https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki"
-    - "BIP66: strict DER signatures": "https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki"
-    - "BIP70: payment protocol": "https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki"
-    - "BIP71: payment protocol MIME types": "https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki"
-    - "BIP72: payment protocol URIs": "https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki"
-    - "BIP73: accept header with payment protocol": "https://github.com/bitcoin/bips/blob/master/bip-0073.mediawiki"
-    - "BIP111: NODE_BLOOM service bit": "https://github.com/bitcoin/bips/blob/master/bip-0111.mediawiki"
-    - "BIP112: OP_CHECKSEQUENCEVERIFY": "https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki"
-    - "BIP113: median time for lock-time": "https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki"
-    - "BIP125: replace-by-fee signaling": "https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki"
-    - "BIP130: sendheaders message": "https://github.com/bitcoin/bips/blob/master/bip-0130.mediawiki"
-    - "BIP133: feefilter message": "https://github.com/bitcoin/bips/blob/master/bip-0133.mediawiki"
-    - "BIP141: segregated witness": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki"
-    - "BIP144: segregated witness peer services": "https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki"
-    - "BIP151: P2P communication encryption": "https://github.com/bitcoin/bips/blob/master/bip-0151.mediawiki"
-    - "BIP152: compact block relay": "https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki"
-
-  ## Bitcoin P2P Protocol messages documented on Bitcoin.org
-  "P2P Messages":
-    - "addr":  "/en/developer-reference#addr"
-    - "alert":  "/en/developer-reference#alert"
-    - "block": "/en/developer-reference#block"
-    - "feefilter": "/en/developer-reference#feefilter"
-    - "filteradd": "/en/developer-reference#filteradd"
-    - "filterclear": "/en/developer-reference#filterclear"
-    - "filterload": "/en/developer-reference#filterload"
-    - "getaddr": "/en/developer-reference#getaddr"
-    - "getblocks": "/en/developer-reference#getblocks"
-    - "getdata": "/en/developer-reference#getdata"
-    - "getheaders": "/en/developer-reference#getheaders"
-    - "headers": "/en/developer-reference#headers"
-    - "inv": "/en/developer-reference#inv"
-    - "mempool": "/en/developer-reference#mempool"
-    - "merkleblock": "/en/developer-reference#merkleblock"
-    - "notfound": "/en/developer-reference#notfound"
-    - "ping": "/en/developer-reference#ping"
-    - "pong": "/en/developer-reference#pong"
-    - "reject": "/en/developer-reference#reject"
-    - "tx": "/en/developer-reference#tx"
-    - "verack": "/en/developer-reference#verack"
-    - "version": "/en/developer-reference#version"
 
 collections:
   ## _alerts

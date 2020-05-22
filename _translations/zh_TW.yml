@@ -195,7 +195,7 @@ zh_TW:
     pagetitle: "Bitcoin 開發"
     summary: "找到更多關於目前的規範、軟體和開發人員的資訊。"
     spec: "文檔"
-    spectxt: "若是您有興趣進一步瞭解 Bitcoin 的更多技術細節和怎麼使用現有的工具和 APIs，建議您從瞭解<a href=\"/en/developer-documentation\">開發人員文檔</a>開始。"
+    spectxt: "若是您有興趣進一步瞭解 Bitcoin 的更多技術細節和怎麼使用現有的工具和 APIs，建議您從瞭解<a href=\"https://developer.bitcoin.org/\">開發人員文檔</a>開始。"
     coredev: "核心開發人員"
     inventor: "Bitcoin 系統由中本聰先生發起設計。他最先的 Bitcoin 代碼庫現在作為 Bitcoin Core 由後來的開發人員和一個由志願者組成的社群共同維護。"
     disclosure: "可靠的披露"
@@ -414,7 +414,7 @@ zh_TW:
     processing: "處理<span class=\"titlelight\"> - 挖礦</span>"
     processingtxt: "挖礦是一種<b>分散式的共識系統</b>，用於<a href=\"#vocabulary##[vocabulary.confirmation]\"><i>確認</i></a>交易並把交易加入區塊鏈之中。挖礦能確保區塊鏈的時間順序、保護網路的中立性，並且讓不同的電腦就系統的狀態取得共識。待確認的交易將會打包到某個<a href=\"#vocabulary##[vocabulary.block]\"><i>區塊</i></a>之中，而區塊必須滿足非常嚴格的密碼學規則。這些規則防止區塊被篡改，因為這樣做會導致被篡改區塊之後的區塊都變得無效。挖礦創造了一個競爭性的隨機系統，可防止任何人輕易地將連續的區塊加到區塊鏈中。藉由這個系統，沒有人能控制區塊鏈中能包含哪些交易，或是更動區塊鏈的某一部份來取消他們自己的支付。"
     readmore: "探索未知的世界"
-    readmoretxt: "這僅僅是 Bitcoin 系統的簡要說明，如果想瞭解更多細節，您可以<a href=\"#bitcoin-paper#\">閱讀原始論文</a>，其中描述了系統的設計，您也可以閱讀<a href=\"/en/developer-documentation\">開發人員文檔</a>，您還可以探索一下<a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>。"
+    readmoretxt: "這僅僅是 Bitcoin 系統的簡要說明，如果想瞭解更多細節，您可以<a href=\"#bitcoin-paper#\">閱讀原始論文</a>，其中描述了系統的設計，您也可以閱讀<a href=\"https://developer.bitcoin.org/\">開發人員文檔</a>，您還可以探索一下<a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>。"
   index:
     title: "Bitcoin - 開放原始碼點對點數位貨幣"
     metadescription: "Bitcoin 是一種創新的支付網路，也是一種新型貨幣。找到您所需要瞭解的資訊然後就可以在bitcoin.org 開始接觸 Bitcoin。"

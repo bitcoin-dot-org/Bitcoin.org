@@ -49,7 +49,7 @@ IRC chatroom and discuss your plan with a developer.
 <div class="card core-card" markdown="block">
 <img src="/img/icons/ico_documentation.svg?{{site.time | date: '%s'}}" alt="icon">
 
-[Documentation][bcc contribute documentation]
+[Documentation](https://github.com/bitcoin-dot-org/developer.bitcoin.org)
 <p>Write documentation for users and developers</p>
 
 </div>

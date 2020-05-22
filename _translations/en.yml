@@ -524,7 +524,7 @@ en:
     pagedesc: "Bitcoin is a global project and open source software."
     summary: "Find more information about current specification, software and developers."
     spec: "Documentation"
-    spectxt: "If you are interested in learning more about the technical details of Bitcoin and how to use existing tools and APIs, it is recommended you start by exploring the <a href=\"/en/developer-documentation\">developer documentation</a>."
+    spectxt: "If you are interested in learning more about the technical details of Bitcoin and how to use existing tools and APIs, it is recommended you start by exploring the <a href=\"https://developer.bitcoin.org/\">developer documentation</a>."
     coredev: "Core developers"
     inventor: "The Bitcoin system was originally designed by Satoshi Nakamoto. His original Bitcoin codebase is now being maintained as Bitcoin Core by the following developers and a community of volunteers."
     disclosure: "Responsible disclosure"
@@ -817,7 +817,7 @@ en:
     processing: "Processing<span class=\"titlelight\"> - mining</span>"
     processingtxt: "Mining is a <b>distributed consensus system</b> that is used to <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>confirm</i></a> pending transactions by including them in the block chain. It enforces a chronological order in the block chain, protects the neutrality of the network, and allows different computers to agree on the state of the system. To be confirmed, transactions must be packed in a <a href=\"#vocabulary##[vocabulary.block]\"><i>block</i></a> that fits very strict cryptographic rules that will be verified by the network. These rules prevent previous blocks from being modified because doing so would invalidate all the subsequent blocks. Mining also creates the equivalent of a competitive lottery that prevents any individual from easily adding new blocks consecutively to the block chain. In this way, no group or individuals can control what is included in the block chain or replace parts of the block chain to roll back their own spends."
     readmore: "Going down the rabbit hole"
-    readmoretxt: "This is just a short summary of Bitcoin. If you want to learn more of the details, you can <a href=\"#bitcoin-paper#\">read the original paper</a> that describes its design, the <a href=\"/en/developer-documentation\">developer documentation</a>, or explore the <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>."
+    readmoretxt: "This is just a short summary of Bitcoin. If you want to learn more of the details, you can <a href=\"#bitcoin-paper#\">read the original paper</a> that describes its design, the <a href=\"https://developer.bitcoin.org/\">developer documentation</a>, or explore the <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>."
   index:
     title: "Bitcoin - Open source P2P money"
     metadescription: "Bitcoin is an innovative payment network and a new kind of money. Find all you need to know and get started with Bitcoin on bitcoin.org."

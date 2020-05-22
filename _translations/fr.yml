@@ -196,7 +196,7 @@ fr:
     pagetitle: "Développement de Bitcoin"
     summary: "Trouvez plus d'information sur les spécifications, les logiciels et les développeurs actuels."
     spec: "Documentation"
-    spectxt: "Si vous désirez en apprendre davantage sur les détails techniques relatifs à Bitcoin et sur l'utilisation des outils et APIs existants, il est recommandé de commencer avec la <a href=\"/en/developer-documentation\">documentation pour développeurs</a>."
+    spectxt: "Si vous désirez en apprendre davantage sur les détails techniques relatifs à Bitcoin et sur l'utilisation des outils et APIs existants, il est recommandé de commencer avec la <a href=\"https://developer.bitcoin.org/\">documentation pour développeurs</a>."
     coredev: "Développeurs principaux"
     inventor: "Le système Bitcoin a été conçu à l'origine par Satoshi Nakamoto. Le code source est maintenant maintenu sous le nom de \"Bitcoin Core\" par les développeurs suivants et une communauté de bénévoles."
     disclosure: "Signalement responsable"
@@ -417,7 +417,7 @@ fr:
     processing: "Traitement<span class=\"titlelight\"> - minage</span>"
     processingtxt: "Le minage est un <b>système de consensus distribué</b> qui est utilisé pour <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>confirmer</i></a> les transactions en attente en les incluant dans la chaine de blocs. Il impose un ordre chronologique dans la chaine de blocs, protège la neutralité du réseau et permet à différents ordinateurs d'être en accord sur l'état du système. Pour être confirmées, les transactions doivent être incluses dans un <a href=\"#vocabulary##[vocabulary.block]\"><i>bloc</i></a> qui doit correspondre à des règles cryptographiques très strictes qui seront vérifiées par le réseau. Ces règles empêchent la modification d'un bloc antérieur car cela invaliderait tous les blocs suivants. Le minage induit également l'équivalent d'une loterie compétitive qui empêche à tout individu d'ajouter facilement des blocs consécutivement dans la chaine de blocs. De cette façon, aucun individu ne peut contrôler ce qui est inclus dans la chaine de blocs ni en remplacer des parties pour annuler ses propres dépenses."
     readmore: "Aller plus loin dans l'aventure"
-    readmoretxt: "Ceci est un cours résumé du système. Si vous voulez rentrer dans les détails, vous pouvez lire <a href=\"#bitcoin-paper#\">le document original</a> (en anglais) qui décrit le fonctionnement du système, lire la <a href=\"/en/developer-documentation\">documentation pour les développeurs</a> (en anglais également), et explorer le <a href=\"https://en.bitcoin.it/wiki/Main_Page\">wiki Bitcoin</a>."
+    readmoretxt: "Ceci est un cours résumé du système. Si vous voulez rentrer dans les détails, vous pouvez lire <a href=\"#bitcoin-paper#\">le document original</a> (en anglais) qui décrit le fonctionnement du système, lire la <a href=\"https://developer.bitcoin.org/\">documentation pour les développeurs</a> (en anglais également), et explorer le <a href=\"https://en.bitcoin.it/wiki/Main_Page\">wiki Bitcoin</a>."
   index:
     title: "Bitcoin - Argent P2P libre et ouvert"
     metadescription: "Bitcoin est un réseau de paiement novateur et une nouvelle forme d'argent. Trouvez tout ce que vous devez savoir et débutez avec Bitcoin sur bitcoin.org."

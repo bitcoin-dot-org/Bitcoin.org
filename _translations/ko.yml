@@ -195,7 +195,7 @@ ko:
     pagetitle: "비트코인 개발 "
     summary: "현재 설계, 소프트웨어, 개발자들에 대해 더 알아보기"
     spec: "다큐멘테이션"
-    spectxt: "비트코인 시스템의 상세 기술과 현재 나와있는 각종 툴, API의 사용법에 대해 더 자세히 알고 싶다면 <a href=\"/en/developer-documentation\">개발자용 문서 페이지</a> 탐색을 추천드립니다."
+    spectxt: "비트코인 시스템의 상세 기술과 현재 나와있는 각종 툴, API의 사용법에 대해 더 자세히 알고 싶다면 <a href=\"https://developer.bitcoin.org/\">개발자용 문서 페이지</a> 탐색을 추천드립니다."
     coredev: "핵심 개발자들"
     inventor: "비트코인 시스템은 사토시 나카모토에의해 디자인되었습니다. 그의 오리지널 비트코인 코드베이스는 다음과같은 개발자와 자원봉사자 커뮤니티에의해 비트코인 코어로 유지되어 왔습니다. "
     disclosure: "책임 있는 정보 공개"
@@ -414,7 +414,7 @@ ko:
     processing: "프로세싱<span class=\"titlelight\"> - 채굴</span>"
     processingtxt: "'채굴'은 대기중인 거래를 블럭 체인에 포함시킴으로써 거래를 <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>승인</i></a>하는 <b>분산 합의 제도</b>입니다. 블럭 체인에 시간적 나열을 강제하고, 네트워크의 중립성을 보호하며, 서로 다른 컴퓨터들이 시스템의 상태에 대해 동의하도록 합니다. 승인이 이루어지려면, 거래는 네트워크에 의해 검증되는 매우 엄격한 암호화 규칙을 만족하는 <a href=\"#vocabulary##[vocabulary.block]\"><i>블럭</i></a>에 반드시 포함되어야 합니다. 이 암호화 규칙은 이전의 블럭들이 변경되는 것을 방지하는데 이는 이러한 변경들이 나중에 연산되는 모든 블럭들을 무효화하기 때문입니다. 채굴은 또한 경쟁적 복권과 같은 것을 생성하여 어떤 개인도 연속하여 새 거래 블럭을 블럭 체인에 더할 수 없게 방지합니다. 이같이 어떤 개인도 블럭 체인에 포함된 것을 통제하거나 자신의 지출을 되돌리기 위해 블럭 체인의 일부를 대체할 수 없습니다."
     readmore: "더 자세히 알아보기"
-    readmoretxt: "위 사항들은 매우 짧고 간결한 개요입니다. 더 많은 자세한 사항을 알고 싶다면 시스템의 주요 설계 내용에 대해 설명하고 있는 <a href=\"#bitcoin-paper#\">비트코인 창시자의 초록 원문</a>을 읽어보세요. 아니면  <a href=\"/en/developer-documentation\">개발자용 문서 페이지</a> 또는 <a href=\"https://en.bitcoin.it/wiki/Main_Page\">비트코인 위키</a>를 탐색해보세요. "
+    readmoretxt: "위 사항들은 매우 짧고 간결한 개요입니다. 더 많은 자세한 사항을 알고 싶다면 시스템의 주요 설계 내용에 대해 설명하고 있는 <a href=\"#bitcoin-paper#\">비트코인 창시자의 초록 원문</a>을 읽어보세요. 아니면  <a href=\"https://developer.bitcoin.org/\">개발자용 문서 페이지</a> 또는 <a href=\"https://en.bitcoin.it/wiki/Main_Page\">비트코인 위키</a>를 탐색해보세요. "
   index:
     title: "비트코인 - 오픈소스 P2P 화폐"
     metadescription: "비트코인은 혁신적인 지불 네트워크이며 돈의 새로운 종류입니다. bitcoin.org에서 비트코인을 알고 시작할 필요가 있으므로 모든 것을 찾아보세요."

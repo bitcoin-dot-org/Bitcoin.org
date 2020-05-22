@@ -511,7 +511,7 @@ id:
     pagedesc: "Bitcoin adalah proyek global dan piranti lunak open source."
     summary: "Temukan informasi lebih lanjut mengenai spesifikasi, perangkat lunak, dan para pengembang."
     spec: "Dokumentasi"
-    spectxt: "Jika Anda tertarik untuk mempelajari lebih lanjut mengenai rincian teknis dari Bitcoin dan bagaimana menggunakan peralatan dan API yang ada, Anda disarankan untuk memulai dengan menjelajahi <a href=\"/en/developer-documentation\">dokumentasi developer</a>."
+    spectxt: "Jika Anda tertarik untuk mempelajari lebih lanjut mengenai rincian teknis dari Bitcoin dan bagaimana menggunakan peralatan dan API yang ada, Anda disarankan untuk memulai dengan menjelajahi <a href=\"https://developer.bitcoin.org/\">dokumentasi developer</a>."
     coredev: "Para Pengembang inti"
     inventor: "Sistem Bitcoin awalnya dirancang oleh Satoshi Nakamoto. Basis kode Bitcoin asli miliknya sekarang dipertahankan sebagai Bitcoin Core oleh para pengembang dan komunitas relawan."
     disclosure: "Pengungkapan tanggung jawab"
@@ -790,7 +790,7 @@ id:
     processing: "Memroses<span class=\"titlelight\"> - pertambangan</span>"
     processingtxt: "Pertambangan adalah <b>sistem konsensus terdistribusi</b> yang digunakan untuk <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>mengonfirmasi</i></a> antrian transaksi dengan memasukkannya ke dalam rantai-blok. Proses ini menegaskan urutan kronologis rantai-blok, melindungi netralitas jaringan, dan memungkinkan komputer lain untuk menyetujui keadaan sistem. Agar dapat dikonfirmasi, transaksi haruslah dirangkai dalam sebuah <a href=\"#vocabulary##[vocabulary.block]\"><i>blok</i></a> yang sesuai dengan aturan kriptografi ketat dan akan diverifikasi oleh jaringan. Aturan itu untuk mencegah manipulasi blok sebelumnya karena hal itu membuat semua urutan blok berikutnya menjadi tidak valid. Pertambangan juga seperti sebuah lotre yang kompetitif dalam mencegah setiap individu menambahkan blok baru dengan mudah secara berturut-turut ke dalam rantai-blok. Sehingga, tidak ada individu atau kelompok yang dapat mengendalikan apa yang dimasukkan ke dalam rantai-blok atau mengganti sebagian dari rantai-blok untuk memutar kembali transaksi mereka."
     readmore: "Pergi ke lubang kelinci"
-    readmoretxt: "Berikut adalah rangkuman singkat Bitcoin. Jika anda ingin belajar lebih detail, anda dapat <a href=\"#bitcoin-paper#\">membaca makalah asli</a>yang menjelaskan rancangan itu,<a href=\"/en/developer-documentation\">dokumentasi pengembang</a>, atau menjelajahi<a href=\"https://en.bitcoin.it/wiki/Main_Page\">Wiki Bitcoin</a>."
+    readmoretxt: "Berikut adalah rangkuman singkat Bitcoin. Jika anda ingin belajar lebih detail, anda dapat <a href=\"#bitcoin-paper#\">membaca makalah asli</a>yang menjelaskan rancangan itu,<a href=\"https://developer.bitcoin.org/\">dokumentasi pengembang</a>, atau menjelajahi<a href=\"https://en.bitcoin.it/wiki/Main_Page\">Wiki Bitcoin</a>."
   index:
     title: "Bitcoin - Uang P2P sumber terbuka"
     metadescription: "Bitcoin adalah jaringan pembayaran inovatif dan jenis uang baru. Temukan semua yang ingin Anda ketahui dan mulai dengan Bitcoin di bitcoin.org"
