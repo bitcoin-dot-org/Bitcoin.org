@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-# frozen_string_literal: true
+# frozen_string_literal: false
 
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
