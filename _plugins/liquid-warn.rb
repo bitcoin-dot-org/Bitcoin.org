@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
@@ -12,18 +14,16 @@
 ## {% endif %}
 
 module Jekyll
-
   class LiquidWarn < Liquid::Tag
-
     def initialize(tag_name, text, tokens)
       super
       @warning = text
     end
 
-    def render(context)
-        ## Use "notice" instead of "warning" because we use grep to
-        ## treat some Jekyll warnings as errors
-        print "Notice: " + @warning + "\n"
+    def render(_context)
+      ## Use "notice" instead of "warning" because we use grep to
+      ## treat some Jekyll warnings as errors
+      puts "Notice: #{@warning}"
     end
   end
 end

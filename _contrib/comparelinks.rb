@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
@@ -9,90 +11,83 @@
 require 'tmpdir'
 
 def prompt(*args)
-    print(*args)
-    gets
+  print(*args)
+  gets
 end
 
 if !ARGV.empty? && !ARGV[0].empty? && !ARGV[1].empty?
   srcbr = ARGV[0]
   dstbr = ARGV[1]
 else
-  print "Usage: comparelinks.rb oldbranch newbranch \n"
+  puts 'Usage: comparelinks.rb oldbranch newbranch'
   exit
 end
 
-if !File.exist?('_config.yml')
-  print "Wrong working directory. \n"
+unless File.exist?('_config.yml')
+  puts 'Wrong working directory.'
   exit
 end
 
-def fetchlinks()
+def fetchlinks
+  # Fetch new list of links
+  links = {}
+  Dir.glob(WORKDIR + '/_site/**/*.html').each do |file|
+    content = File.read(file)
+    content.scan(/ href *= *"(.*?)"/).each do |link|
+      link = link[0].to_s.gsub(%r{^(https?://(www\.)?bitcoin\.org)?/}, '/')
+      next if link.match(%r{^#|^http://www.meetup.com/})
 
-	# Fetch new list of links
-	links = {}
-	dirs = Dir.glob(WORKDIR + "/_site/**/*.html").each { |file| 
-		content = File.read(file)
-		content.scan(/ href *= *"(.*?)"/).each { |link|
-			link = link[0].to_s.gsub(/^(https?:\/\/(www\.)?bitcoin\.org)?\//,'/')
-			next if (link.match(/^#|^http:\/\/www.meetup.com\//))
-			if(!link.match(/^https?:\/\/|^\/[^\/]|^mailto:/))
-				link = File.dirname(file.sub(WORKDIR + '/_site','')) + '/' + File.basename(link)
-			end
-			links[link] = "0"
-		}
-		content.scan(/ src *= *"(.*?)"/).each { |link|
-			link = link[0].to_s.gsub(/^(https?:\/\/(www\.)?bitcoin\.org)?\//,'/')
-			links[link] = "0"
-		}
-	}
+      unless link.match(%r{^https?://|^/[^/]|^mailto:})
+        link = File.dirname(file.sub(WORKDIR + '/_site', '')) + '/' + File.basename(link)
+      end
+      links[link] = '0'
+    end
+    content.scan(/ src *= *"(.*?)"/).each do |link|
+      link = link[0].to_s.gsub(%r{^(https?://(www\.)?bitcoin\.org)?/}, '/')
+      links[link] = '0'
+    end
+  end
 
-	return links
-
+  links
 end
 
-Dir.mktmpdir{|workdir|
+Dir.mktmpdir do |workdir|
+  WORKDIR = workdir.gsub("\n", '')
 
-	WORKDIR=workdir.gsub("\n",'')
+  # Copy current repository to a temporary directory
+  `rsync -a ./ "#{WORKDIR}/"`
 
-	# Copy current repository to a temporary directory
-	`rsync -a ./ "#{WORKDIR}/"`
+  # Build both version of the website and fetch all links
+  oldlinks = {}
+  newlinks = {}
 
-	# Build both version of the website and fetch all links
-	oldlinks = {}
-	newlinks = {}
+  Dir.chdir(WORKDIR) do
+    `git checkout #{srcbr}`
+    `jekyll`
+    oldlinks = fetchlinks
 
-	Dir.chdir(WORKDIR) do
+    `git checkout #{dstbr}`
+    `jekyll`
+    newlinks = fetchlinks
+  end
 
-		`git checkout #{srcbr}`
-		`jekyll`
-		oldlinks = fetchlinks()
+  # Find added links, removed links
+  diffaddlinks = []
+  diffrmlinks = []
+  newlinks.each do |link, _etag|
+    next if oldlinks.key?(link)
 
-		`git checkout #{dstbr}`
-		`jekyll`
-		newlinks = fetchlinks()
+    diffaddlinks.push(link)
+  end
+  oldlinks.each do |link, _etag|
+    next if newlinks.key?(link)
 
-	end
+    diffrmlinks.push(link)
+  end
 
-	# Find added links, removed links
-	diffaddlinks = []
-	diffrmlinks = []
-	newlinks.each { |link, etag|
-		next if oldlinks.has_key?(link)
-		diffaddlinks.push(link)
-	}
-	oldlinks.each { |link, etag|
-		next if newlinks.has_key?(link)
-		diffrmlinks.push(link)
-	}
-
-	# Display resulting diff
-	diff = ''
-	if diffaddlinks.length > 0
-		diff = diff + "## links added\n\n" + diffaddlinks.join("\n") + "\n\n"
-	end
-	if diffrmlinks.length > 0
-		diff = diff + "## links removed\n\n" + diffrmlinks.join("\n") + "\n\n"
-	end
-	print diff
-
-}
+  # Display resulting diff
+  diff = ''
+  diff = diff + "## links added\n\n" + diffaddlinks.join("\n") + "\n\n" unless diffaddlinks.empty?
+  diff = diff + "## links removed\n\n" + diffrmlinks.join("\n") + "\n\n" unless diffrmlinks.empty?
+  print diff
+end
