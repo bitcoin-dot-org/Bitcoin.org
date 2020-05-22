@@ -27,7 +27,7 @@ http://opensource.org/licenses/MIT.
         page.lang == 'en' or
         page.lang == 'uk'
       %}
-      <li{% if page.id == 'developer-documentation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate developer-documentation url %}">{% translate menu-developer-documentation layout %}</a></li>
+      <li><a href="https://developer.bitcoin.org/">{% translate menu-developer-documentation layout %}</a></li>
       {% endif %}
       <li{% if page.id == 'vocabulary' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
       <li{% if page.id == 'events' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>
