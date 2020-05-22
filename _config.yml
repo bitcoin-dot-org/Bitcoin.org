@@ -617,7 +617,7 @@ text:
   ##   bitcoin_org_docs_maintainer_email_link
   ## For increasing variables, like chain size, choose a somewhat higher
   ##   value so we don't need to update too often
-  subsidy_in_decimal_bitcoins: 12.5
+  subsidy_in_decimal_bitcoins: 6.25
   ## cd ~ ; du -sh .bitcoin/ --exclude=testnet3 --exclude=regtest
   bitcoin_datadir_gb: 200
   ## Slightly smaller than the total datadir size
