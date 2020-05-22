@@ -1084,7 +1084,7 @@ connections.](#enabling-connections)
 
 #### Daemon Peer Info
 
-The [`getconnectioncount`](/en/developer-reference#getconnectioncount)
+The [`getconnectioncount`](https://developer.bitcoin.org/reference/rpc/getconnectioncount)
 command will tell you how many connections you have. If you have more
 than 8 connections, inbound connections are allowed. For example:
 
@@ -1092,7 +1092,7 @@ than 8 connections, inbound connections are allowed. For example:
 52</pre>
 
 For confirmation, you can use the
-[`getpeerinfo`](/en/developer-reference#getpeerinfo) command to get
+[`getpeerinfo`](https://developer.bitcoin.org/reference/rpc/getpeerinfo) command to get
 information about all of your peers.  Each peer's details will include
 an `inbound` field set to true if the connection is inbound.  If you
 have any inbound connections, then inbound connections are allowed.
