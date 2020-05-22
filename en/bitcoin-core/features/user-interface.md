@@ -140,7 +140,7 @@ configuration.
 </div>
 
 <div class="alert ui-alert" markdown="block">
-**Learn more:** documentation for the [RPC][rpc] and [REST][rest] interfaces
+**Learn more:** documentation for the [Bitcoin Core APIs](https://bitcoin.org/en/developer-reference#bitcoin-core-apis)
 </div>
 
 ## Lightweight Wallets Using Bitcoin Core {#lightweight}
