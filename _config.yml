@@ -418,7 +418,7 @@ redirects:
   /about: /en/faq
   /ar/بت-كوين-للهواة: /ar/innovation
   /ar/عن: /ar/faq
-  /ar/بت-كوين-للمطورين: /ar/bitcoin-for-developers
+  /ar/بت-كوين-للمطورين: https://developer.bitcoin.org/
   /ar/بت-كوين-للأفراد: /ar/bitcoin-for-individuals
   /ar/إختر-محفظتك: /ar/choose-your-wallet
   /ar/بت-كوين-للأعمال: /ar/bitcoin-for-businesses
@@ -433,7 +433,7 @@ redirects:
   /ar/تحتاج-أن-تعلم: /ar/you-need-to-know
   /fa/بیت-کوین-برای-علاقه-مندان: /fa/innovation
   /fa/درباره: /fa/faq
-  /fa/بیت-کوین-برای-توسعه-دهندگان: /fa/bitcoin-for-developers
+  /fa/بیت-کوین-برای-توسعه-دهندگان: https://developer.bitcoin.org/
   /fa/بیت-کوین-برای-افراد: /fa/bitcoin-for-individuals
   /fa/بیت-کوین-برای-کسب-و-کار: /fa/bitcoin-for-businesses
   /fa/انتخاب-کیف-پول: /fa/choose-your-wallet
@@ -446,7 +446,7 @@ redirects:
   /fa/حمایت-از-بیت-کوین: /fa/support-bitcoin
   /fa/واژگان: /fa/vocabulary
   /fa/آن-چه-باید-بدانید: /fa/you-need-to-know
-  /ru/биткоин-разработчикам: /ru/bitcoin-for-developers
+  /ru/биткоин-разработчикам: https://developer.bitcoin.org/
   /ru/биткоин-частным-лицам: /ru/bitcoin-for-individuals
   /ru/биткоин-бизнесу: /ru/bitcoin-for-businesses
   /ru/выберите-свой-кошелек: /ru/choose-your-wallet
@@ -464,46 +464,46 @@ redirects:
   /tr/yeni-baslamak: /tr/baslarken
   /en/bitcoin-for-press: /en/press
   /de/ueber: /de/faq
-  /de/developer-examples: /de/entwickler-beispiele
-  /de/developer-glossary: /de/entwickler-glossar
-  /de/developer-guide: /de/entwickler-guide
-  /de/developer-reference: /de/entwickler-referenzen
-  /de/developer-documentation: /de/entwickler-dokumentation
+  /de/developer-examples: https://developer.bitcoin.org/examples/
+  /de/developer-glossary: https://developer.bitcoin.org/glossary
+  /de/developer-guide: https://developer.bitcoin.org/devguide/
+  /de/developer-reference: https://developer.bitcoin.org/reference/
+  /de/developer-documentation: https://developer.bitcoin.org/
   /en/about: /en/faq
   /es/acerca-de: /es/faq
   /fr/a-propos: /fr/faq
   /hu/bitcoin-paper: /hu/papir-bitcoin
-  /hu/developer-documentation: /hu/fejlesztoi-dokumentacio
-  /hu/developer-examples: /hu/fejlesztoi-peldak
-  /hu/developer-glossary: /hu/fejlesztoi-kisokos
-  /hu/developer-guide: /hu/fejlesztoi-utmutato
-  /hu/developer-reference: /hu/fejlesztoi-referencia
-  /id/developer-documentation: /id/dokumentasi-pengembang
+  /hu/developer-documentation: https://developer.bitcoin.org/
+  /hu/developer-examples: https://developer.bitcoin.org/examples/
+  /hu/developer-glossary: https://developer.bitcoin.org/glossary
+  /hu/developer-guide: https://developer.bitcoin.org/devguide/
+  /hu/developer-reference: https://developer.bitcoin.org/reference/
+  /id/developer-documentation: https://developer.bitcoin.org/
   /id/bitcoin-paper: /id/makalah-bitcoin
-  /id/developer-examples: /id/contoh-pengembang
-  /id/developer-glossary: /id/glosarium-pengembang
-  /id/developer-guide: /id/panduan-pengembang
-  /id/developer-reference: /id/referensi-pengembang
+  /id/developer-examples: https://developer.bitcoin.org/examples/
+  /id/developer-glossary: https://developer.bitcoin.org/glossary
+  /id/developer-guide: https://developer.bitcoin.org/devguide/
+  /id/developer-reference: https://developer.bitcoin.org/reference/
   /it/bitcoin-paper: /it/documento-bitcoin
-  /it/developer-documentation: /it/documentazione-sviluppatori
-  /it/developer-examples: /it/esempi-sviluppatori
-  /it/developer-glossary: /it/glossario-sviluppatori
-  /it/developer-guide: /it/guida-sviluppatori
-  /it/developer-reference: /it/riferimento-per-sviluppatori
+  /it/developer-documentation: https://developer.bitcoin.org/
+  /it/developer-examples: https://developer.bitcoin.org/examples/
+  /it/developer-glossary: https://developer.bitcoin.org/glossary
+  /it/developer-guide: https://developer.bitcoin.org/devguide/
+  /it/developer-reference: https://developer.bitcoin.org/reference/
   /it/a-proposito: /it/faq
-  /nl/developer-documentation: /nl/documentatie-voor-ontwikkelaars
-  /nl/developer-reference: /nl/ontwikkelaars-referentie
-  /nl/developer-guide: /nl/ontwikkelaars-handleiding
-  /nl/developer-glossary: /nl/woordenlijst-ontwikkelaar
-  /nl/developer-examples: /nl/ontwikkelvoorbeelden
+  /nl/developer-documentation: https://developer.bitcoin.org/
+  /nl/developer-reference: https://developer.bitcoin.org/reference/
+  /nl/developer-guide: https://developer.bitcoin.org/devguide/
+  /nl/developer-glossary: https://developer.bitcoin.org/glossary
+  /nl/developer-examples: https://developer.bitcoin.org/examples/
   /nl/bitcoin-paper: /nl/bitcoin-document
   /nl/over-bitcoin: /nl/faq
   /pl/o: /pl/faq
-  /pt_BR/developer-documentation: /pt_BR/documentacao-do-desenvolvedor
-  /pt_BR/developer-reference: /pt_BR/referencias-para-desenvolvedores
-  /pt_BR/developer-guide: /pt_BR/guia-do-desenvolvedor
-  /pt_BR/developer-glossary: /pt_BR/glossario-do-desenvolvedor
-  /pt_BR/developer-examples: /pt_BR/exemplos-para-desenvolvedores
+  /pt_BR/developer-documentation: https://developer.bitcoin.org/
+  /pt_BR/developer-reference: https://developer.bitcoin.org/reference/
+  /pt_BR/developer-guide: https://developer.bitcoin.org/devguide/
+  /pt_BR/developer-glossary: https://developer.bitcoin.org/glossary
+  /pt_BR/developer-examples: https://developer.bitcoin.org/examples/
   /tr/hakkinda: /tr/sss
   /zh_CN/about: /zh_CN/faq
   /zh_TW/about: /zh_TW/faq
@@ -515,11 +515,11 @@ redirects:
   /nl/bitcoin-voor-liefhebbers: /nl/innovatie
   /pl/bitcoin-dla-entuzjastow: /pl/innowacje
   /sr/bitcoin-paper: /sr/bitkoin-papir
-  /sr/developer-documentation: /sr/programeri-dokumentacija
-  /sr/developer-examples: /sr/programeri-primeri
-  /sr/developer-glossary: /sr/programeri-recnik
-  /sr/developer-guide: /sr/programeri-vodic
-  /sr/developer-reference: /sr/programeri-reference
+  /sr/developer-documentation: https://developer.bitcoin.org/
+  /sr/developer-examples: https://developer.bitcoin.org/examples/
+  /sr/developer-glossary: https://developer.bitcoin.org/glossary
+  /sr/developer-guide: https://developer.bitcoin.org/devguide/
+  /sr/developer-reference: https://developer.bitcoin.org/reference/
   ## Buy bitcoin page; remove as each language is updated to include the translated page
   /ar/buy: /en/buy
   /bg/buy: /en/buy
