@@ -11,10 +11,10 @@ Here are some ways you can help:
     with a short list of your interests and skills, and they will email you when
     there's an issue or PR that could use your attention.
 
-* Help [write new documentation](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/contributing-to-developer-documentation.md)
-  for the [developer documentation pages](https://bitcoin.org/en/developer-documentation)
+* Help [write new documentation](https://github.com/bitcoin-dot-org/developer.bitcoin.org/)
+  for the [developer documentation pages](https://developer.bitcoin.org/)
   or [full node page](https://bitcoin.org/en/full-node), or **[review PRs
-  adding new documentation](https://github.com/bitcoin-dot-org/bitcoin.org/pulls?q=is%3Apr+is%3Aopen+label%3A%22Dev+Docs%22).**
+  adding new documentation](https://github.com/bitcoin-dot-org/developer.bitcoin.org/pulls).**
   You don't need to be a Bitcoin expert to review a PR---these docs are written
   for non-experts, so we need to know if non-experts find them confusing or
   incomplete. If you review a PR and don't find any problems worth commenting
