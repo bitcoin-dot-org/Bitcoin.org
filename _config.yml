@@ -517,11 +517,11 @@ redirects:
   /nl/bitcoin-voor-liefhebbers: /nl/innovatie
   /pl/bitcoin-dla-entuzjastow: /pl/innowacje
   /sr/bitcoin-paper: /sr/bitkoin-papir
-  /sr/developer-documentation: /sr/programeri-dokumentacija
-  /sr/developer-examples: /sr/programeri-primeri
-  /sr/developer-glossary: /sr/programeri-recnik
-  /sr/developer-guide: /sr/programeri-vodic
-  /sr/developer-reference: /sr/programeri-reference
+  /sr/developer-documentation: https://developer.bitcoin.org/
+  /sr/developer-examples: https://developer.bitcoin.org/examples/
+  /sr/developer-glossary: https://developer.bitcoin.org/glossary
+  /sr/developer-guide: https://developer.bitcoin.org/devguide/
+  /sr/developer-reference: https://developer.bitcoin.org/reference/
   ## Old releases pages; stop adding to this list after 0.8.2
   /releases/2011/04/27/v0.3.21: /en/release/v0.3.21
   /releases/2011/06/05/v0.3.22: /en/release/v0.3.22
