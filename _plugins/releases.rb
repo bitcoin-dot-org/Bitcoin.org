@@ -30,7 +30,7 @@ module Jekyll
       if data['required_version']
         version = data['required_version']
       else
-        abort("Error: Variable required_version not set when processing #{src}" )
+        abort("Error: Variable required_version not set when processing #{src}")
       end
 
       ## Output file is v<version>.md (converted later to HTML)

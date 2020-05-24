@@ -27,7 +27,7 @@ module Jekyll
   class RedirectPageGenerator < Generator
     def generate(site)
       # Do nothing if plugin is disabled
-      if !ENV['ENABLED_PLUGINS'].nil? && ENV['ENABLED_PLUGINS'].index('redirects').nil?
+      if ENV['ENABLED_PLUGINS'] && !ENV['ENABLED_PLUGINS'].index('redirects')
         print 'Redirects disabled' + "\n"
         return
       end

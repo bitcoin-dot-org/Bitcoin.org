@@ -19,22 +19,22 @@ module Jekyll
   class SitemapGenerator < Generator
     def generate(site)
       # Do nothing if plugin is disabled
-      if !ENV['ENABLED_PLUGINS'].nil? && ENV['ENABLED_PLUGINS'].index('sitemap').nil?
-        print 'Sitemap disabled' + "\n"
+      if ENV['ENABLED_PLUGINS'] && !ENV['ENABLED_PLUGINS'].index('sitemap')
+        puts 'Sitemap disabled'
         return
       end
       # Load translations
       locs = {}
       enabled = ENV['ENABLED_LANGS']
-      enabled = enabled.split(' ') unless enabled.nil?
+      enabled = enabled.split(' ') if enabled
       Dir.foreach('_translations') do |file|
-        next if (file == '.') || (file == '..') || (file == 'COPYING')
+        next if ['.', '..', 'COPYING'].include?(file)
 
-        lang = file.split('.')[0]
+        lang = file.split('.').first
         # Ignore lang if disabled
         next if (lang != 'en') && !enabled.nil? && !enabled.include?(lang)
 
-        locs[lang] = YAML.load_file('_translations/' + file)[lang]
+        locs[lang] = YAML.load_file('_translations/' << file)[lang]
       end
       # Create destination directory if does not exists
       Dir.mkdir(site.dest) unless File.directory?(site.dest)
@@ -47,7 +47,7 @@ module Jekyll
         locs['en']['url'].each do |id, _value|
           locs.each do |lang, _value|
             # Don't add a page if their url is not translated
-            next if locs[lang]['url'][id].nil? || (locs[lang]['url'][id] == '')
+            next unless locs[lang]['url'][id] || !(locs[lang]['url'][id].empty?)
 
             sitemap.puts '<url>'
             sitemap.puts '  <loc>https://bitcoin.org/' + lang + '/' + CGI.escape(locs[lang]['url'][id]) + '</loc>'
@@ -56,8 +56,9 @@ module Jekyll
 
               sitemap.puts '  <xhtml:link'
               sitemap.puts '    rel="alternate"'
-              sitemap.puts '    hreflang="' + altlang + '"'
-              sitemap.puts '    href="https://bitcoin.org/' + altlang + '/' + CGI.escape(locs[altlang]['url'][id]) + '" />'
+              sitemap.puts '    hreflang="' << altlang << '"'
+              sitemap.puts '    href="https://bitcoin.org/' << altlang << '/' <<
+                CGI.escape(locs[altlang]['url'][id]) << '" />'
             end
             sitemap.puts '</url>'
           end

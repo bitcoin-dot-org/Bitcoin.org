@@ -19,11 +19,14 @@ module Jekyll
       data = []
       while page < 10
         begin
+          # rubocop:disable Security/Open
           ar = JSON.parse(
             open('https://api.github.com/repos/' + repo +
                  "/contributors?page=#{page}&per_page=100",
-                 'User-Agent' => "Ruby/#{RUBY_VERSION}"
-                ).read)
+                 'User-Agent' => "Ruby/#{RUBY_VERSION}")
+                  .read
+          )
+          # rubocop:enable Security/Open
           # Prevent any error to stop the build process, return an empty array instead
         rescue StandardError
           print 'GitHub API Call Failed!'
@@ -84,26 +87,26 @@ module Jekyll
 
     def generate(site)
       # Set site.contributors global variables for liquid/jekyll
-      unless site.respond_to?('corecontributors')
+      unless site.respond_to?('core_contributors')
         class << site
-          attr_accessor :corecontributors
-          attr_accessor :sitecontributors
+          attr_accessor :core_contributors
+          attr_accessor :site_contributors
 
           alias_method :contrib_site_payload, :site_payload
           def site_payload
             h = contrib_site_payload
             payload = h['site']
-            payload['corecontributors'] = corecontributors
-            payload['sitecontributors'] = sitecontributors
+            payload['core_contributors'] = core_contributors
+            payload['site_contributors'] = site_contributors
             h['site'] = payload
             h
           end
         end
       end
 
-      # Set site.corecontributors and site.sitecontributors arrays
-      site.corecontributors = {}
-      site.sitecontributors = {}
+      # Set site.core_contributors and site.site_contributors Hashes
+      site.core_contributors = {}
+      site.site_contributors = {}
 
       # Do nothing if plugin is disabled
       if !ENV['ENABLED_PLUGINS'].nil? && ENV['ENABLED_PLUGINS'].index('contributors').nil?
@@ -114,14 +117,14 @@ module Jekyll
       ## Create cache directory if it doesn't exist
       Dir.mkdir('_cache') unless File.exist?('_cache')
 
-      # Populate site.corecontributors and site.sitecontributors with
+      # Populate site.core_contributors and site.site_contributors with
       # data from GitHub.com. Store data in the cache and only
       # re-retrieve the data if 86,400 seconds (24 hours) passes from
       # the retrieval date or if the cache file is deleted.  For
       # simplicity, updates on the two cache files are linked, so if one
       # file has to be updated, they both get updated.
-      corecontributors_cache = '_cache/corecontributors.marshall'
-      sitecontributors_cache = '_cache/sitecontributors.marshall'
+      corecontributors_cache = '_cache/core_contributors.marshall'
+      sitecontributors_cache = '_cache/site_contributors.marshall'
       if File.exist?(corecontributors_cache) && File.exist?(sitecontributors_cache)
         corecontributors_cache_age = (Time.now - File.stat(corecontributors_cache).mtime).to_i
         sitecontributors_cache_age = (Time.now - File.stat(sitecontributors_cache).mtime).to_i
@@ -130,23 +133,25 @@ module Jekyll
         sitecontributors_cache_age = Time.now.to_i
       end
 
+      # rubocop:disable Security/MarshalLoad
       if corecontributors_cache_age > 86_400 || sitecontributors_cache_age > 86_400
-        site.corecontributors = contributors('bitcoin/bitcoin', site.config['aliases'])
+        site.core_contributors = contributors('bitcoin/bitcoin', site.config['aliases'])
         File.open(corecontributors_cache, 'w') do |file|
-          Marshal.dump(site.corecontributors, file)
+          Marshal.dump(site.core_contributors, file)
         end
-        site.sitecontributors = contributors('bitcoin-dot-org/bitcoin.org', site.config['aliases'])
+        site.site_contributors = contributors('bitcoin-dot-org/bitcoin.org', site.config['aliases'])
         File.open(sitecontributors_cache, 'w') do |file|
-          Marshal.dump(site.sitecontributors, file)
+          Marshal.dump(site.site_contributors, file)
         end
       else
         File.open(corecontributors_cache, 'r') do |file|
-          site.corecontributors = Marshal.load(file)
+          site.core_contributors = Marshal.load(file)
         end
         File.open(sitecontributors_cache, 'r') do |file|
-          site.sitecontributors = Marshal.load(file)
+          site.site_contributors = Marshal.load(file)
         end
       end
+      # rubocop:enable Security/MarshalLoad
     end
   end
 end

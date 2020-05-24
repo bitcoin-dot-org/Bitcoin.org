@@ -27,11 +27,11 @@ module Jekyll
       # load translations files
       locs = {}
       enabled = ENV['ENABLED_LANGS']
-      enabled = enabled.split(' ') unless enabled.nil?
+      enabled = enabled.split(' ') if enabled
       Dir.foreach('_translations') do |file|
-        next if (file == '.') || (file == '..') || (file == 'COPYING')
+        next if ['.', '..', 'COPYING'].include?(file)
 
-        lang = file.split('.')[0]
+        lang = file.split('.').first
         # Ignore lang if disabled
         if (lang != 'en') && !enabled.nil? && !enabled.include?(lang)
           print 'Lang ' + lang + ' disabled' + "\n"
