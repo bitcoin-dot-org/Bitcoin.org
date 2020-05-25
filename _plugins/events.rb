@@ -26,6 +26,7 @@ module Jekyll
 
         # Get geolocalisation data from Google Maps
         if data.key?('address')
+          # rubocop:disable Security/Open
           begin
             geoloc = JSON.parse(open(
               'https://maps.googleapis.com/maps/api/geocode/json?address=' +
@@ -42,6 +43,7 @@ module Jekyll
           rescue StandardError
             print 'Google Maps API Call Failed!'
           end
+          # rubocop:enable Security/Open
         end
         # Populate conferences array
         conferences.push(data)
@@ -98,9 +100,11 @@ module Jekyll
           Marshal.dump(site.conferences, file)
         end
       else
+        # rubocop:disable Security/MarshalLoad
         File.open(conferences_cache, 'r') do |file|
           site.conferences = Marshal.load(file)
         end
+        # rubocop:enable Security/MarshalLoad
       end
     end
   end

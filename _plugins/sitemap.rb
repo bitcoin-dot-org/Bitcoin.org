@@ -47,7 +47,7 @@ module Jekyll
         locs['en']['url'].each do |id, _value|
           locs.each do |lang, _value|
             # Don't add a page if their url is not translated
-            next unless locs[lang]['url'][id] || !(locs[lang]['url'][id].empty?)
+            next unless locs[lang]['url'][id] || !locs[lang]['url'][id] == ''
 
             sitemap.puts '<url>'
             sitemap.puts '  <loc>https://bitcoin.org/' + lang + '/' + CGI.escape(locs[lang]['url'][id]) + '</loc>'
@@ -58,7 +58,7 @@ module Jekyll
               sitemap.puts '    rel="alternate"'
               sitemap.puts '    hreflang="' << altlang << '"'
               sitemap.puts '    href="https://bitcoin.org/' << altlang << '/' <<
-                CGI.escape(locs[altlang]['url'][id]) << '" />'
+                           CGI.escape(locs[altlang]['url'][id]) << '" />'
             end
             sitemap.puts '</url>'
           end
