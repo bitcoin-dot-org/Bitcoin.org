@@ -602,14 +602,6 @@ kramdown:
     ## Might be useful in the future, but turn off for upgrade to Jekyll 3.0
     css_class:
 
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: style
-
 text:
   ## Values last updated 2018-10-16
   ## All variable names must indicate unit type for easy translation of adjacent text,

@@ -15,7 +15,8 @@ http://opensource.org/licenses/MIT.
     {% assign accordionNumber = "" | append: "accordion-tab-3" %}
   {% endif %}
   {% for wallet in site.wallets %}
-    {% if page.id contains wallet.id %}
+    {% assign id = wallet.id | remove: '/wallets/' %}
+    {% if page.id contains id %}
       {% assign walletName = wallet.titleshort %}
     {% endif %}
   {% endfor %}
@@ -28,19 +29,20 @@ http://opensource.org/licenses/MIT.
       {% if page.id == "choose-your-wallet" %}
         {% for wallet in site.wallets %}
          {% assign platformList = "" %}
+         {% assign id = wallet.id | remove: '/wallets/' %}
          {% for platform in wallet.platform %}
-         {% capture platformList %}{{platformList}}{{platform.name}}{% endcapture %}
+          {% capture platformList %}{{platformList}}{{platform.name}}{% endcapture %}
          {% endfor %}
           <div class="wallet-list-item allwallets-list-item">
             <div class="wallet-list-item-link">
-              <img src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
+              <img src="/img/wallet/{{ id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
             </div>
             <p class="wallet-hint">{% translate wallet-select-operating-system choose-your-wallet %}</p>
             <div class="wallet-list-os">
               {% for platform in wallet.platform %}
                 {% for os in platform.os%}
                   {% if platform.name == os.name %}
-                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}>
+                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ id }}/" data-link-platform={{platform.name}}>
                     <span class="wallet-os-ico {{os.name}}-ico"></span>
                     <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
                     <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
@@ -48,7 +50,7 @@ http://opensource.org/licenses/MIT.
                   </a>
                   {% else %}
 
-                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}>
+                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ id }}/" data-link-platform={{platform.name}}>
                     <span class="wallet-os-ico {{os.name}}-ico"></span>
                     <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
                     <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
@@ -67,7 +69,8 @@ http://opensource.org/licenses/MIT.
 
         <!-- Particular Wallets -->
         {% for wallet in site.wallets %}
-        {% if page.id contains wallet.id %}
+        {% assign id = wallet.id | remove: '/wallets/' %}
+        {% if page.id contains id %}
           {% continue %}
         {% endif %}
         {% assign platformName = page.platform['name'] %}
@@ -78,14 +81,14 @@ http://opensource.org/licenses/MIT.
 
           <div class="wallet-list-item allwallets-list-item">
             <div class="wallet-list-item-link">
-              <img src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
+              <img src="/img/wallet/{{ id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
             </div>
             <p class="wallet-hint">{% translate wallet-select-operating-system choose-your-wallet %}</p>
             <div class="wallet-list-os">
               {% for platform in wallet.platform %}
                 {% for os in platform.os%}
                   {% if platform.name == osName %}
-                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ wallet.id }}/" data-link-platform={{platform.name}}>
+                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ id }}/" data-link-platform={{platform.name}}>
                     <span class="wallet-os-ico {{os.name}}-ico"></span>
                     <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
                     <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
@@ -100,11 +103,11 @@ http://opensource.org/licenses/MIT.
         {% else %}
         <div class="wallet-list-item">
           {% if platformName == osName %}
-          <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platformName }}/{{ wallet.id }}/">
+          <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platformName }}/{{ id }}/">
           {% else %}
-          <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platformName }}/{{ osName }}/{{ wallet.id }}/">
+          <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platformName }}/{{ osName }}/{{ id }}/">
           {% endif %}
-            <img src="/img/wallet/{{ wallet.id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
+            <img src="/img/wallet/{{ id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
           </a>
         </div>
         {% endif %}
