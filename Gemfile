@@ -17,15 +17,13 @@ ruby '2.5.8'
 group :development do
   gem 'ffi-icu'
   gem 'jekyll', '~>4.0'
+  gem 'jshintrb', '~>0.3.0'
   gem 'json', '>= 1.9'
   gem 'json-schema'
-  gem 'kramdown'
-  gem 'less', '2.4.0'
   gem 'kramdown', '~>2.1'
-  gem 'rubocop', '>= 0.83.0'
+  gem 'less', '2.4.0'
   gem 'RedCloth', ">= 4.3.0"
-  gem 'therubyracer' # required by less
-  gem 'jshintrb', '~>0.3.0'
+  gem 'rubocop', '>= 0.83.0'
   gem 'safe_yaml'
   gem 'therubyracer' # required by less
 end
