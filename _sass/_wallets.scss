@@ -402,6 +402,11 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
     justify-content: flex-start;
   }
 }
+@media screen and (max-width: 768px) {
+  .left-column {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 700px) {
   .wallet-accordion-btn {
     display: flex;
