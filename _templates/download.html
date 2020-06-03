@@ -14,7 +14,6 @@ win64zip: "win64.zip"
 win64exe: "win64-setup.exe"
 macdmg: "-osx.dmg"
 mactar: "osx64.tar.gz"
-lin32: "i686-pc-linux-gnu.tar.gz"
 lin64: "x86_64-linux-gnu.tar.gz"
 
 ---
@@ -94,8 +93,6 @@ lin64: "x86_64-linux-gnu.tar.gz"
         <div class="corecard linux-card">
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}" id="downloadlin">Linux (tgz)</a>
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin64 }}" class="dl download-link" id="lin64">64 bit</a> 
-          <span> - </span>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.lin32 }}" class="dl download-link" id="lin32">32 bit</a>
         </div>
 
         <div class="corecard arm-card">
@@ -131,7 +128,6 @@ var hrefwin64zip = document.getElementById('win64zip').href;
 var hrefmacdmg = document.getElementById('macdmg').href;
 var hrefmactar = document.getElementById('mactar').href;
 var hreflin64 = document.getElementById('lin64').href;
-var hreflin32 = document.getElementById('lin32').href;
 switch (os) {
 case 'windows64':
 	but.href = hrefwin64exe;
@@ -141,10 +137,6 @@ break;
 case 'linux64':
 	but.href = hreflin64;
 	linklin.href = hreflin64;
-break;
-case 'linux32':
-	but.href = hreflin32;
-	linklin.href = hreflin32;
 break;
 case 'snap':
 	but.href = 'https://snapcraft.io/bitcoin-core';
