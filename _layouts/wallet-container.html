@@ -25,7 +25,7 @@ max_wallet_text_length: 418 ## Unicode characters
         <div class="features-elements">
           {% for featureName in features %}
             <div class="features-element">
-              <div class="left-column">
+              <div class="features-element-left">
                 <img src="/img/icons/checked.svg" alt="checked" />
                 <p class="features-text">
                   {% translate wizard-feature-{{featureName}} choose-your-wallet %}
@@ -196,16 +196,17 @@ max_wallet_text_length: 418 ## Unicode characters
           </div>
 
           {% for wallet in site.wallets %}
+            {% assign id = wallet.id | remove: '/wallets/' %}
             {% for platform in wallet.platform %}
               {% for os in platform.os %}
                 <a
-                  href="{% if platform.name == os.name %}/{{page.lang}}/wallets/{{platform.name}}/{{wallet.id}}/{% else %}/{{page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{wallet.id}}/{% endif %}"
+                  href="{% if platform.name == os.name %}/{{page.lang}}/wallets/{{platform.name}}/{{id}}/{% else %}/{{page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{id}}/{% endif %}"
                   class="wallet-table-row wallet-link"
                   data-categories="{% if wallet.user %}{{wallet.user}}{% endif %} experienced {% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' %}{{checkName}} {% endif %}{% endfor %}{{os.name}} {{os.features}}"
-                  data-id="{{wallet.id}}"
+                  data-id="{{id}}"
                 >
                   <div class="wallet-table-data">
-                    <img class="wallet-img" src="/img/wallet/{{ wallet.id }}.png" alt="{{ wallet.title }}" />
+                    <img class="wallet-img" src="/img/wallet/{{id}}.png" alt="{{ wallet.title }}" />
                     <span class="wallet-label">{{wallet.titleshort}}</span>
                   </div>
                   {% for check in os.check %}
