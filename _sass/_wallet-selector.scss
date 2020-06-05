@@ -689,9 +689,9 @@ label.disabled + .sidebar-selector-info .sidebar-selector-info-text {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    z-index: 1;
   }
   .checkboxes-acc-selected {
+    position: relative;
     height: 36px;
     display: flex;
     align-items: center;
@@ -701,6 +701,7 @@ label.disabled + .sidebar-selector-info .sidebar-selector-info-text {
     background: #FFFFFF;
     border: 2px solid #F7931A;
     box-sizing: border-box;
+    z-index: 1;
   }
   .checkboxes-acc-selected-text {
     margin-right: 10px;
