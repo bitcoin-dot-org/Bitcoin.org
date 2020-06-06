@@ -12,11 +12,7 @@ def prompt(*args)
   gets
 end
 
-lang = if ARGV.empty?
-         prompt 'Language code: '
-       else
-         ARGV[0]
-       end
+lang = ARGV[0] || prompt 'Language code: '
 
 lang = lang.gsub(/[^a-zA-Z_]/, '')
 
