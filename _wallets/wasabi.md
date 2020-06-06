@@ -22,7 +22,7 @@ platform:
         transparency: "checkgoodtransparencydeterministic"
         environment: "checkfailenvironmentdesktop"
         privacy: "checkgoodprivacyimproved"
-        fees: "checkpassfeecontroldynamic"
+        fees: "checkgoodfeecontrolfull"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
         privacydisclosure: "checkpassprivacydisclosurefullnode"
