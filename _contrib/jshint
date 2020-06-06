@@ -8,11 +8,7 @@
 
 require 'jshintrb'
 
-path_to_check = if ARGV[0].nil?
-                  './_site/js'
-                else
-                  ARGV[0]
-                end
+path_to_check = ARGV[0] || './_site/js'
 
 Dir.foreach(path_to_check) do |file|
   next unless /\.js$/.match(file)
