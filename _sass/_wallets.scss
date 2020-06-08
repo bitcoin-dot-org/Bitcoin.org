@@ -275,7 +275,7 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 .line {
   display: none;
 }
-.left-column {
+.features-element-left {
   display: flex;
 }
 .close-btn {
@@ -400,6 +400,11 @@ $scores: good $black 600, pass $black 600, neutral $black 600, fail $black 600;
 @media screen and (max-width: 900px) {
   .features-elements {
     justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 768px) {
+  .left-column {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 700px) {

@@ -39,6 +39,7 @@ p{
 .menusimple li a:visited,
 .menusimple li a:link{
 	font-family:'DroidNaskh', sans-serif;
+	text-align: right;
 }
 .menusimple li ul{
 	right:0;
@@ -50,6 +51,11 @@ p{
 .footermenu a{
 	margin-right:0;
 	margin-left:15px;
+	text-align: right;
+	direction: rtl;
+}
+.footer-title {
+	text-align: right;
 }
 .statusmenu{
 	padding-left:0;
@@ -84,6 +90,9 @@ h2 .rssicon{
 }
 .mainlist-item img {
 	margin: 0 0 0 25px;
+}
+.maindesc-text {
+	text-align: right;
 }
 .contributors{
 	text-align:right;
@@ -158,6 +167,16 @@ h2 .rssicon{
 	padding-right:40px;
 	border-left:0;
 	margin-right:-1px
+}
+.start p {
+	text-align: right;
+}
+.right-column div {
+	left: auto;
+	right: 0;
+}
+.right-column h2 {
+	text-align: left;
 }
 .anchorAf a{
 	left:0;
@@ -298,6 +317,51 @@ h2 .rssicon{
 }
 .toc-row {
 	direction: ltr;
+	flex-direction: row-reverse;
+}
+.toc > div {
+	padding: 0 0 0 35px;
+}
+.toc div>ul>li>a {
+	text-align: right;
+	direction: rtl;
+}
+.toc div>ul>li>ul a {
+	text-align: right;
+	direction: rtl;
+	padding: 0 20px 0 0;
+}
+.toc + .toccontent {
+	border-left: none;
+	border-right: 1px solid #dfdfdf;
+}
+.toccontent p {
+	direction: rtl;
+	text-align: right;
+}
+.toccontent li {
+	text-align: right;
+	direction: rtl;
+}
+.boxexpand>h1:first-child,
+.boxexpand>h2:first-child,
+.boxexpand>h3:first-child {
+	text-align: right;
+	direction: rtl;
+}
+.boxexpand.expanded>h1:first-child,
+.boxexpand.expanded>h2:first-child,
+.boxexpand.expanded>h3:first-child {
+	padding: 40px 30px 15px 35px;	
+}
+.boxexpand>h1:first-child::after,
+.boxexpand>h2:first-child::after,
+.boxexpand>h3:first-child::after {
+	right: auto;
+	left: 30px;
+}
+.toc ul, .toc li {
+	text-align: right;
 }
 .btn-container {
 	direction: ltr;
@@ -316,6 +380,22 @@ h2 .rssicon{
 }
 .own-text {
 	direction: rtl;
+}
+.own-block {
+	flex-direction: row-reverse;
+}
+.own h3,
+.own p {
+	text-align: right;
+}
+.own-timeline-number {
+	margin: 0 0 0 95px;
+}
+.controll p {
+	text-align: right;
+}
+.mission li {
+	text-align: right;
 }
 .helper-intro-text {
 	text-align: right;
@@ -355,6 +435,9 @@ h2 .rssicon{
 }
 .helper-change-btn {
 	margin: 0 20px 0 0;
+}
+.helper-checkbox-title {
+	text-align: right;
 }
 .helper-checkbox-text {
 	padding: 0 45px 0 0;
@@ -445,6 +528,18 @@ h2 .rssicon{
 .wallet-accordion-btn::before {
 	left: auto;
 	right: 15px;
+}
+.download-text {
+	text-align: right;
+}
+.two-column-row:nth-child(odd) .column-text {
+	margin: 0 30px 0 0;
+}
+.two-column-row:nth-child(even) .column-text {
+	margin: 0 0 0 30px;
+}
+.column-text p {
+	text-align: right;
 }
 /*Override UbuntuBold by Droid Naskh*/
 
@@ -565,6 +660,30 @@ h2 .rssicon{
 	.important-checkbox-row .wallet-selector-tooltip {
 		right: auto;
     left: -20px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.start {
+		padding: 0 15px 50px 0;
+	}
+	.start-block {
+		padding-left: 0;
+		padding-right: 30px;
+	}
+	.start-block:not(:last-child)::before {
+		left: auto;
+		right: 0;
+	}
+	.start .start-block::after {
+		left: auto;
+    right: 0;
+		transform: translate(50%, -4px);
+	}
+	.left-column, .left-column h2 {
+		text-align: right;
+	}
+	.right-column, .right-column h2 {
+		text-align: right;
 	}
 }
 @media screen and (max-width: 700px) {
@@ -706,6 +825,18 @@ h2 .rssicon{
 	.is-expanded+.accordion-content {
     direction: ltr;
 	}
+	.own-timeline-number {
+		margin: 0 0 0 60px;
+  }
+	.two-column-row:nth-child(odd) .column-text {
+		margin: 0;
+	}
+	.two-column-row:nth-child(even) .column-text {
+		margin: 0;
+	}
+	.toc>div {
+		padding: 0 15px 0 20px;
+	}
 }
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
 	.maincard img {
@@ -713,5 +844,14 @@ h2 .rssicon{
 	}
 	.maincard {
 		text-align: right;
+	}
+	.own-timeline-number {
+		margin: 0 0 0 20px;
+  }
+	.toc-row {
+		flex-direction: column;
+	}
+	.toc>div {
+		padding: 0;
 	}
 }
