@@ -34,12 +34,19 @@ p{
 	font-family:Arial, sans-serif;
 	text-align:right;
 }
+.menusimple {
+	direction: rtl;
+}
 .menusimple li a,
 .menusimple li a:active,
 .menusimple li a:visited,
 .menusimple li a:link{
 	font-family:'DroidNaskh', sans-serif;
 	text-align: right;
+}
+.menusimple>li:not(:first-child) {
+    margin-left: 0;
+    margin-right: 30px;
 }
 .menusimple li ul{
 	right:0;
@@ -853,5 +860,11 @@ h2 .rssicon{
 	}
 	.toc>div {
 		padding: 0;
+	}
+	.menusimple li a, .menusimple li a:active, .menusimple li a:visited, .menusimple li a:link {
+    text-align: center;
+	}
+	.menusimple li:not(:first-child) {
+    margin-right: 0;
 	}
 }
