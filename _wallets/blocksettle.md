@@ -6,7 +6,7 @@ id: blocksettle
 title: "BlockSettle terminal"
 titleshort: "BlockSettle"
 compat: "desktop windows mac linux"
-user: intermediate
+user: beginner
 level: 2
 platform:
   - desktop:
