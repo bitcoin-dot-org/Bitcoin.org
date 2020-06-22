@@ -487,6 +487,17 @@ h2 .rssicon{
 .sidebar-selector-platform+.sidebar-selector-platform {
 	margin: 0 15px 0 0;
 }
+.user-radio-text {
+	padding: 0 36px 0 0;
+}
+.user-radio-text::before {
+	left: auto;
+	right: 0;
+}
+.user-radio-text::after {
+	left: auto;
+	right: 7px;
+}
 .checkbox-text {
 	padding: 0 36px 0 0;
 }
@@ -628,17 +639,6 @@ h2 .rssicon{
 	}
 	.user-radio-row + .user-radio-row {
     margin: 0 40px 0 0;
-	}
-	.user-radio-text {
-		padding: 0 36px 0 0;
-	}
-	.user-radio-text::before {
-		left: auto;
-		right: 0;
-	}
-	.user-radio-text::after {
-		left: auto;
-		right: 7px;
 	}
 	.user-radio-wrapper {
 		margin: 0 0 0 9px;
