@@ -646,6 +646,7 @@ collections:
     output: false
 
 donation_banner:
+  address: 3NSG2UvEaoHUJZcd5nRXiFsq7EnSP93GCR
   display: false
   amounts_in_usd:
     - 5
