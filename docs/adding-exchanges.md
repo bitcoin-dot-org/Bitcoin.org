@@ -30,26 +30,3 @@ the following areas:
 Once added, exchanges are also re-reviewed at regular intervals in order to
 maintain quality assurance in-line with the above, and may be removed should
 severe and/or unresolved issues be encountered.
-
-### Review Fee
-
-In an effort to help provide funding towards the operation of Bitcoin.org, and
-to remain ad-free and without reliance on corporate sponsorships, an annual
-non-refundable review fee of $2500 USD, payable in bitcoin, is requested of
-exchanges seeking to be added to the site. **Payment of this fee does not
-guarantee inclusion, nor does it prevent removal should problems arise
-post-inclusion.**
-
-Exchanges should email [exchanges@bitcoin.org](mailto:exchanges@bitcoin.org) in
-order to make payment arrangements.
-
-### Fee Waiver
-
-Exchanges may request review fees to be waived if an independent third party
-review has been procured in the past 90 days that satisfactorily addresses the
-Review Criteria mentioned above.
-
-### Questions
-
-Please contact the [Exchange team](mailto:exchanges@bitcoin.org) if you have
-questions or require assistance when adding an exchange.
