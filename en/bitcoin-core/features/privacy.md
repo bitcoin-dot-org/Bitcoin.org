@@ -38,23 +38,12 @@ third_party_privacy:
     tracks_amounts: "yes"
     tracks_ip_addresses: "yes"
 
-  - name: GreenAddress
-    css_class: greenaddress
-    group: not-displayed
-
-    tracks_real_names: "no"
-    knows_your_bitcoin_balance: "yes"
-    susceptible_to_taint_analysis: "yes"
-    tracks_payments: "yes"
-    tracks_amounts: "yes"
-    tracks_ip_addresses: "yes"
 ---
 
 <div class="hero">
 <div class="container hero-container" markdown="block">
 
 # Bitcoin Core's Excellent Privacy
-{% include helpers/hero-social.html %}
 </div>
 </div>
 

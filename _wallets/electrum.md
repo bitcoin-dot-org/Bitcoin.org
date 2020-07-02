@@ -6,6 +6,7 @@ id: electrum
 title: "Electrum"
 titleshort: "Electrum"
 compat: "desktop windows mac linux mobile android"
+user: beginner
 level: 2
 platform:
   - desktop:
@@ -14,7 +15,8 @@ platform:
       text: "walletelectrum"
       link: "https://electrum.org"
       source: "https://github.com/spesmilo/electrum"
-      screenshot: "electrum.png?1528322191"
+      screenshot: "electrum.png"
+      features: "2fa bech32 hardware_wallet legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkpassvalidationspvservers"
@@ -40,7 +42,8 @@ platform:
         text: "walletelectrum"
         link: "https://play.google.com/store/apps/details?id=org.electrum.electrum"
         source: "https://github.com/spesmilo/electrum"
-        screenshot: "electrumandroid.png?1528322191"
+        screenshot: "electrumandroid.png"
+        features: "bech32 legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvservers"
@@ -51,5 +54,5 @@ platform:
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosureaccount"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 ---

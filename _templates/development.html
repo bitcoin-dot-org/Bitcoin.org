@@ -99,7 +99,7 @@ improvement in mind?  Here are a few ideas:
 
 <p>
 {% case page.lang %}
-{% when 'da' or 'es' or 'fr' or 'hu' or 'pl' or 'ro' or 'sl' or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'zh_TW' %}
+{% when 'da' or 'es' or 'fr' or 'pl' or 'ro' or 'sl' or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'zh_TW' %}
 {% else %}
 Want to contribute to a different project?
 {% endcase %}</p>
@@ -126,6 +126,3 @@ Want to contribute to a different project?
   <li class="more"><a onclick="librariesShow(event)" ontouchstart="librariesShow(event);" class="link-js">{% translate moremore %}</a></li>
 </ul>
 </div>
-{% if page.lang == 'en' %}
-  <script src="/js/devsearch.js"></script>
-{% endif %}

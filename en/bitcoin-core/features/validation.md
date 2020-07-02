@@ -17,7 +17,6 @@ breadcrumbs:
 <div class="container hero-container" markdown="block">
 
 # Bitcoin Core Validation
-{% include helpers/hero-social.html %}
 </div>
 </div>
 
@@ -438,8 +437,8 @@ Core right now:
    power users, businesses, and programmers. The [user interface][bcc
    user interface] page provides an overview, the [installation
    instructions][bandwidth sharing guide] can help you get started, and
-   the [RPC][]/[REST][] documentation can help you find specific
-   commands. If you're using [`getnewaddress`][rpc getnewaddress] to
+   the [RPC](https://developer.bitcoin.org/reference/rpc/)documentation can help you find specific
+   commands. If you're using [`getnewaddress`](https://developer.bitcoin.org/reference/rpc/getnewaddress) to
    create receiving addresses, your received transactions will be fully
    validated.
 

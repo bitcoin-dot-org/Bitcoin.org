@@ -16,7 +16,7 @@ sl:
     missiontxt6: "Izboljšati globalno dostopnost bitcoina z internacionalizacijo."
     missiontxt7: "Ostati nevtralen vir novic o Bitcoinu."
     help: "Pomagajte nam"
-    helptxt: "Če na spletišču bitcoin.org opazite problem ali imate kak predlog za izboljšavo, lahko na  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHubu</a> odprete zadevo (<i>issue</i>) ali zahtevek za poteg (<i>pull request</i>) v angleščini. Pri tem si, prosimo, vzemite potrebni čas za razpravo o predlagani spremembi in morebitne prilagoditve. Pomagate lahko tudi pri prevajanju: pridružite se ekipi na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifexu</a>. Prosimo, ne zaprošajte za promocijo svojih storitev ali spletišč, razen v posebnih primerih, kot so konference. Najlepša hvala vsem sodelujočim, ki vlagajo svoj čas za izboljšave bitcoin.org!"
+    helptxt: "Če na spletišču bitcoin.org opazite problem ali imate kak predlog za izboljšavo, lahko na  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHubu</a> odprete zadevo (<i>issue</i>) ali zahtevek za poteg (<i>pull request</i>) v angleščini. Pri tem si, prosimo, vzemite potrebni čas za razpravo o predlagani spremembi in morebitne prilagoditve. Pomagate lahko tudi pri prevajanju: pridružite se ekipi na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifexu</a>. Prosimo, ne zaprošajte za promocijo svojih storitev ali spletišč, razen v posebnih primerih, kot so konference. Najlepša hvala vsem sodelujočim, ki vlagajo svoj čas za izboljšave bitcoin.org!"
     maintenance: "Vzdrževanje"
     documentation: "Dokumentacija"
     translation: "Prevod"
@@ -87,9 +87,8 @@ sl:
     chanmarket: "(Trenutni podatki s trgov)"
     chanmining: "(Povezano z rudarjenjem)"
     social: "Družbena omrežja"
-    linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Bitcoin Skupnost na Google+</a>"
-    linktwitter: "Twitter Iskalnik"
-    facebook: "<a href=\"https://www.facebook.com/bitcoins\">Stran na Facebooku</a>"
+    linktwitter: "Twitter"
+    facebook: '<a href="https://www.facebook.com/hashtag/bitcoin">Facebook</a>'
     meetups: "Srečanja"
     meetupevents: "Konference in dogodki"
     meetupgroup: "Bitcoin skupine na Meetupu"
@@ -106,18 +105,14 @@ sl:
     walletcathardware: "Strojne"
     walletcatweb: "Spletne"
     walletbitcoincore: "Bitcoin Core je poln odjemalec za bitcoin in tvori hrbtenico omrežja bitcoin. Nudi visoko stopnjo varnosti, zasebnosti in stabilnosti. Ima pa manj uporabniških funkcij in visoko porabo pomnilnika ter prostora za hrambo podatkov."
-    walletmultibit: "MultiBit je lahek odjemalec s poudarkom na hitrosti in enostavnosti uporabe. V nekaj sekundah ali minutah po namestitvi se uskladi z omrežjem in je pripravljen za uporabo. Podpira tudi mnogo jezikov, med drugim slovenščino. MultiBit je dobra izbira za tehnično manj podkovane uporabnike."
     walletarmory: "Armory je napreden odjemalec za bitcoin z mnogimi funkcijami za naprednejše uporabnike, kot so različne možnosti izdelave rezervnih kopij in šifriranja ter varno \"hladno hranjenje\" novcev na sistemih brez povezave."
     walletelectrum: "Electrum se osredotoča na hitrost in enostavnost ter nizko porabo virov na računalniku. Za najbolj zapletena opravila uporablja oddaljene strežnike. Omogoča restavriranje denarnice iz skrivnega stavka (semena)."
-    walletmsigna: "mSIGNA je napredna denarnica, enostavna za uporabo, ki prinaša hitrost in enostavnost, poslovno povečljivost in visoko stopnjo varnosti. Podpira BIP32, večstransko podpisovanje, hladno hrambo, usklajevanje več naprav ter šifrirane digitalne in papirne rezervne kopije."
     walletbitcoinwallet: "Bitcoin Wallet je denarnica, ki je enostavna za uporabo in zanesljiva, hkrati pa varna in hitra. Njena vizija je decentralizacija in odsotnost potrebe po zaupanju; za osnovne operacije ni potrebna nobena centralizirana storitev. Ta aplikacija je dobra izbira za tehnično manj podkovane uporabnike."
     walletbrd: "Osnovno zasnovno vodilo denarnice BRD je enostavnost. Ker deluje kot samostojen odjemalec za bitcoin, ni odvisen od nobenega strežnika, ki bi lahko bil nedostopen ali napaden. BRD gradi na trdni varnostni osnovi sistema iOS in je zasnovana za zaščito pred zlonamerno programsko opremo, varnostnimi luknjami brskalnikov in celo krajo naprave."
     walletmyceliumwallet: "Mycelium je odprtokodna denarnica za Android s ciljem biti varna, hitra in enostavna za uporabo. Vsebuje inovativne načine za upravljanje s ključi in za hladno hrambo, ki vam omogočajo varno uporabo vaših novcev."
-    walletcoinkite: "Coinkite ponuja spletno denarnico ter debetne kartice s ciljem enostavnosti uporabe. Deluje tudi na mobilnih brskalnikih, ponujajo pa še orodja za trgovce, npr. POS-terminale. Deluje kot denarnica in hkrati trezor s polno rezervo."
-    walletbitgo: "BitGo je denarnica z večstranskim podpisovanjem, ki nudi visoko stopnjo varnosti. Vsaka transakcija zahteva dva podpisa, kar ščiti vaša sredstva pred napadi na strežnike in zlonamerno programsko opremo. Uporabnik hrani zasebne ključe, zato BitGo ne more sam dostopati do uporabnikovih novcev. BitGo je dobra izbira za tehnično manj podkovane uporabnike."
-    walletgreenaddress: "GreenAddress je uporabniku prijazna večpodpisna denarnica z višjo stopnjo varnosti in zasebnosti. Strežniki ponudnika nikoli ne vidijo vaših zasebnih ključev niti v šifrirani obliki. Za še večjo varnost svetujemo uporabo dvostopenjske overitve ter aplikacije za brskalnik ali Android."
-    wallettrezor: "TREZOR je strojna denarnica, ki nudi visoko stopnjo varnosti, ne da bi za to žrtvovala udobje. Za razliko od hladne hrambe lahko TREZOR podpisuje nakazila, kadar je povezan z napravo, ki je povezana v internet. To pomeni, da je pošiljanje bitcoinov varno celo na varnostno ogroženem računalniku."
+    wallettrezorone: "TREZOR je strojna denarnica, ki nudi visoko stopnjo varnosti, ne da bi za to žrtvovala udobje. Za razliko od hladne hrambe lahko TREZOR podpisuje nakazila, kadar je povezan z napravo, ki je povezana v internet. To pomeni, da je pošiljanje bitcoinov varno celo na varnostno ogroženem računalniku."
     walletwasabi: "Wasabi je osebno orientirana bitcoin denarnica."
+    walletbitbox: "BitBox02 je strojna denarnica, zasnovana in proizvedena v Švici. Opremljena je z OLED zaslonom, nevidnimi drsniki, je kompatibilna z USB-C in USB-A, ponuja možnost izdelave varnostne kopije na microSD kartico in v obliki BIP39 besed. Upravljanje z denarnico in s kovanci je enostavno s pripadajočo aplikacijo BitBoxApp."
     walletdownload: "Namesti"
     walletvisit: "Obiščite spletno stran"
     walletsourcecode: "Izvorna koda"
@@ -194,7 +189,7 @@ sl:
     pagetitle: "Razvoj bitcoina"
     summary: "Izvedite več o trenutni specifikaciji, programski opremi in razvijalcih."
     spec: "Dokumentacija"
-    spectxt: "Če želite izvedeti več o tehničnih podrobnostih bitcoina in o uporabi obstoječih orodij in programskih vmesnikov (API-jev), si lahko ogledate <a href=\"/en/developer-documentation\">dokumentacijo za razvijalce</a>."
+    spectxt: "Če želite izvedeti več o tehničnih podrobnostih bitcoina in o uporabi obstoječih orodij in programskih vmesnikov (API-jev), si lahko ogledate <a href=\"https://developer.bitcoin.org/\">dokumentacijo za razvijalce</a>."
     coredev: "Glavni razvijalci"
     inventor: "Sistem bitcoin je zasnoval Satoši Nakamoto. Njegovo izvirno kodo sedaj vzdržujejo in razvijajo pod imenom Bitcoin Core naslednji razvijalci in skupnost prostovoljcev."
     disclosure: "Odgovorno razkritje"
@@ -250,7 +245,7 @@ sl:
     howitworkstxt1: "S stališča povprečnega uporabnika je bitcoin zgolj aplikacija na računalniku ali pametnem telefonu, ki deluje kot osebna denarnica in omogoča plačevanje in sprejemanje plačil -- podobno kot aplikacija za elektronsko pošto pošilja in sprejema pošto."
     howitworkstxt2: "Bitcoin v ozadju uporablja javno knjigo nakazil, ki se imenuje veriga blokov. To knjigo hranijo vsi udeleženci omrežja, vsebuje pa vsa veljavna nakazila, ki so se kdaj zgodila v omrežju bitcoin. Tako lahko vsak udeleženec omrežja na svojem računalniku preveri veljavnost vseh nakazil. Pristnost nakazil zagotavljajo digitalni podpisi; z njihovo pomočjo lahko bitcoine na nekem naslovu potroši le lastnik tega naslova. Nadalje se lahko vsakdo vključi v procesiranje nakazil s pomočjo namenske strojne opreme in pri tem nekaj zasluži; temu pravimo rudarjenje. Več si lahko preberete na strani  <a href=\"#how-it-works#\">Kako deluje bitcoin?</a> ali pa v izvornem <a href=\"#bitcoin-paper#\">dokumentu</a>."
     used: "Ali ljudje res uporabljajo bitcoin?"
-    usedtxt1: "Da. Vedno več <a href=\"http://usebitcoins.info/\">podjetij</a> in posameznikov uporablja bitcoin; med drugim so to klasična podjetja kot npr. restavracije, prenočišča, pravniška podjetja, pa tudi priljubljene spletne storitve kot npr. Namecheap, WordPress, Reddit in Flattr. Bitcoin je nov, a hitro raste. Aprila 2014 je bila <a href=\"https://bitcoincharts.com/bitcoin/\">skupna vrednost vseh bitcoinov v obtoku</a> ocenjena na 6 milijard dolarjev, na menjalnicah pa so se dnevno izvajali posli skupnega obsega več milijonov dolarjev."
+    usedtxt1: "Da. Vedno več podjetij in posameznikov uporablja bitcoin; med drugim so to klasična podjetja kot npr. restavracije, prenočišča, pravniška podjetja, pa tudi priljubljene spletne storitve kot npr. Namecheap, WordPress, Reddit in Flattr. Bitcoin je nov, a hitro raste. Aprila 2014 je bila <a href=\"https://bitcoincharts.com/bitcoin/\">skupna vrednost vseh bitcoinov v obtoku</a> ocenjena na 6 milijard dolarjev, na menjalnicah pa so se dnevno izvajali posli skupnega obsega več milijonov dolarjev."
     acquire: "Kako pridobim bitcoine?"
     acquireli1: "Kot plačilo za izdelke ali storitve."
     acquireli2: "Z nakupom bitcoinov v <a href=\"https://www.buybitcoinworldwide.com\">menjalnici</a>."
@@ -413,7 +408,7 @@ sl:
     processing: "Obdelava<span class=\"titlelight\"> - rudarjenje</span>"
     processingtxt: "Rudarjenje je <b>razpršen sistem doseganja soglasja.</b> Uporablja se za <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>potrjevanje</i></a> nakazil, ki čakajo na vključitev v verigo blokov. Na ta način se v verigi blokov doseže kronološka razvrstitev nakazil, zaščiti se nevtralnost omrežja in se različnim računalnikom omogoči potrjevanje stanja sistema.\nZa potrditev mora biti nakazilo zapakirano v <a href=\"#vocabulary##[vocabulary.block]\"><i>blok</i></a>, blok pa mora zadoščati zelo strogim pravilom šifriranja, ki jih preveri omrežje. Ta pravila onemogočajo kakršnokoli spreminjanje blokov, saj bi s tem posledično razveljavili vse nadaljnje bloke nakazil.\nRudarjenje ustvarja tudi okolje \"tekmovalne loterije\", kar posameznikom onemogoča zaporedno dodajanje novih blokov v verigo. Tako noben posameznik ne more vplivati na vključene bloke v verigi in tudi ne more zamenjati delov verige z namenom spreminjanja ali razveljavljanja lastnih nakazil."
     readmore: "Nadaljnje branje"
-    readmoretxt: "To je le zelo kratek in zgoščen opis sistema. Če vas zanimajo podrobnosti, lahko preberete <a href=\"#bitcoin-paper#\">izvirni članek</a>, ki opisuje zasnovo sistema (v angleščini), si ogledate <a href=\"/en/developer-documentation\">dokumentacijo za razvijalce</a> ali pa pobrskate po <a href=\"https://en.bitcoin.it/wiki/Main_Page\">wikiju</a>."
+    readmoretxt: "To je le zelo kratek in zgoščen opis sistema. Če vas zanimajo podrobnosti, lahko preberete <a href=\"#bitcoin-paper#\">izvirni članek</a>, ki opisuje zasnovo sistema (v angleščini), si ogledate <a href=\"https://developer.bitcoin.org/\">dokumentacijo za razvijalce</a> ali pa pobrskate po <a href=\"https://en.bitcoin.it/wiki/Main_Page\">wikiju</a>."
   index:
     title: "Bitcoin - odprtokodni vrstniški denar"
     metadescription: "Bitcoin je inovativno plačilno omrežje in nova vrsta denarja. Na spletišču bitcoin.org najdete vse potrebne informacije o bitcoinu in napotke za njegovo uporabo."
@@ -558,7 +553,7 @@ sl:
     nonprofit: "Organizacije"
     nonprofittxt: "<a href=\"https://bitcoinfoundation.org/\">Fundacija Bitcoin</a> in mnoge druge <a href=\"#community##[community.non-profit]\">neprofitne organizacije</a> obstajajo z namenom zaščite in promocije bitcoina. Lahko jih podprete z donacijami ali sodelovanjem v njihovih projektih, razpravah in dogodkih."
     spread: "Povej naprej"
-    spreadtxt: "O bitcoinu se pogovarjajte z ljudmi, ki jih ta tematika zanima. Pišite o njem na svojem blogu. Povejte svojim najljubšim trgovinam, da bi radi plačevali z bitcoinom. Vnašajte podatke v <a href=\"http://usebitcoins.info/\">imenike trgovcev</a>. Bodite ustvarjalni in si naredite in nosite majico z motivom bitcoina."
+    spreadtxt: "O bitcoinu se pogovarjajte z ljudmi, ki jih ta tematika zanima. Pišite o njem na svojem blogu. Povejte svojim najljubšim trgovinam, da bi radi plačevali z bitcoinom. Vnašajte podatke v imenike trgovcev. Bodite ustvarjalni in si naredite in nosite majico z motivom bitcoina."
     wiki: "Dokumentacija"
     wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> in <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> vsebujeta koristno dokumentacijo in informacije in ves čas se trudimo izboljšati njuno vsebino. Če želite, lahko pomagate pri izboljševanju in osveževanju vsebine."
     translate: "Prevodi"
@@ -636,7 +631,7 @@ sl:
     menu-participate: Sodelujte
     menu-vocabulary: Slovar
     menu-you-need-to-know: "Obvezno branje"
-    banner-translate: "Prevodi v tem jeziku so zastareli. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Kliknite tu, če želite pomagati prevajati bitcoin.org v svoj jezik</a>."
+    banner-translate: "Prevodi v tem jeziku so zastareli. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Kliknite tu, če želite pomagati prevajati bitcoin.org v svoj jezik</a>."
     footer: "Objavljeno pod pogoji <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licence</a>"
     sponsor: "Spletišče skupnosti pod pokroviteljstvom"
     getstarted: "Prvi koraki z bitcoinom"
@@ -645,10 +640,12 @@ sl:
     bitcoin-for-developers: bitcoin-za-razvijalce
     bitcoin-for-individuals: bitcoin-za-posameznike
     bitcoin-for-businesses: bitcoin-za-podjetja
+    buy: kupit
     choose-your-wallet: izberite-denarnico
     community: skupnost
     development: razvoj
     download: prenos
+    exchanges: izmenjave
     events: dogodki
     faq: vprasanja-in-odgovori
     getting-started: prvi-koraki
@@ -662,6 +659,7 @@ sl:
     support-bitcoin: podprite-bitcoin
     vocabulary: besednjak
     you-need-to-know: kaj-moram-vedeti
+    spend-bitcoin: porabiti-bitcoin
   anchor:
     community:
       non-profit: neprofitne

@@ -1,0 +1,98 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+
+<div class="helper-accordion js-helper-accordion" data-number="4" data-type="features">
+
+  <div class="helper-header">
+    <div class="helper-header-row">
+      <h2 id="wizardFeaturesTitle" class="helper-title">{% translate wizard-feature-title choose-your-wallet %}</h2>
+      <div>{% translate wizard-optional choose-your-wallet %}</div>
+      <div class="helper-selected-block">
+        <div class="row">
+          <div class="helper-selected-filter"></div>
+          <button class="helper-change-btn js-helper-nav-btn" data-selector="4">{% translate helper-change-btn choose-your-wallet %}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="helper-step">
+    <div class="helper-checkboxes-row">
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="2fa" class="checkbox js-helper-checkbox js-wizard-selector js-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">{% translate wizard-feature-2fa choose-your-wallet %}</p>
+          <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+          <p class="helper-checkbox-description">{% translate wizard-feature-2fa-description choose-your-wallet %}</p>
+        </div>
+      </label>
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="bech32" class="checkbox js-helper-checkbox js-wizard-selector js-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">{% translate wizard-feature-bech32 choose-your-wallet %}</p>
+          <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+          <p class="helper-checkbox-description">{% translate wizard-feature-bech32-description choose-your-wallet %}</p>
+        </div>
+      </label>
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="full_node" class="checkbox js-helper-checkbox js-wizard-selector js-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">{% translate wizard-feature-full_node choose-your-wallet %}</p>
+          <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+          <p class="helper-checkbox-description">{% translate wizard-feature-full_node-description choose-your-wallet %}</p>
+        </div>
+      </label>
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="hardware_wallet" class="checkbox js-helper-checkbox js-wizard-selector js-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">{% translate wizard-feature-hardware_wallet choose-your-wallet %}</p>
+          <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+          <p class="helper-checkbox-description">{% translate wizard-feature-hardware_wallet-description choose-your-wallet %}</p>
+        </div>
+      </label>
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="legacy_addresses" class="checkbox js-helper-checkbox js-wizard-selector js-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">{% translate wizard-feature-legacy_addresses choose-your-wallet %}</p>
+          <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+          <p class="helper-checkbox-description">{% translate wizard-feature-legacy_addresses-description choose-your-wallet %}</p>
+        </div>
+      </label>
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="lightning" class="checkbox js-helper-checkbox js-wizard-selector js-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">{% translate wizard-feature-lightning choose-your-wallet %}</p>
+          <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+          <p class="helper-checkbox-description">{% translate wizard-feature-lightning-description choose-your-wallet %}</p>
+        </div>
+      </label>
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="multisig" class="checkbox js-helper-checkbox js-wizard-selector js-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">{% translate wizard-feature-multisig choose-your-wallet %}</p>
+          <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+          <p class="helper-checkbox-description">{% translate wizard-feature-multisig-description choose-your-wallet %}</p>
+        </div>
+      </label>
+      <label class="checkbox-wrapper helper-checkbox-wrapper">
+        <input type="checkbox" name="features" value="segwit" class="checkbox js-helper-checkbox js-wizard-selector js-selector" />
+        <div class="checkbox-text helper-checkbox-text">
+          <p class="helper-checkbox-title">{% translate wizard-feature-segwit choose-your-wallet %}</p>
+          <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+          <p class="helper-checkbox-description">{% translate wizard-feature-segwit-description choose-your-wallet %}</p>
+        </div>
+      </label>
+    </div>
+
+    <div class="helper-navigation">
+      <button class="skip-helper-btn js-skip-btn">{% translate skip-helper-btn choose-your-wallet %}</button>
+      <div class="helper-navigation-row">
+        <button class="helper-next-btn btn-bright js-helper-nav-btn visible" data-selector="5">{% translate helper-next-btn choose-your-wallet %}</button>
+      </div>
+    </div>
+  </div>
+
+</div>

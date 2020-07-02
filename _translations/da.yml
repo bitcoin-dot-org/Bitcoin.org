@@ -16,7 +16,7 @@ da:
     missiontxt6: "Forøge tilgængeligheden på verdensbasis gennem internationalisering."
     missiontxt7: "Fortsat være en neutral og informativ ressource omkring Bitcoin."
     help: "Hjælp os"
-    helptxt: "Du kan rapportere ethvert problem eller hjælpe med at forbedre bitcoin.org på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> ved at åbne en sag (issue) eller et pull request på engelsk. Når du sender et pull request, bedes du tage dig den fornødne tid til at beskrive dine ændringer og tilrette dit arbejde. Du kan hjælpe med oversættelse ved at melde dig til et hold på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Spørg venligst ikke efter reklame for din personlige virksomhed eller webside, undtaget i specielle tilfælde, som fx konferencer. Mange tak til alle bidragydere, som bruger tid på at forbedre bitcoin.org!"
+    helptxt: "Du kan rapportere ethvert problem eller hjælpe med at forbedre bitcoin.org på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> ved at åbne en sag (issue) eller et pull request på engelsk. Når du sender et pull request, bedes du tage dig den fornødne tid til at beskrive dine ændringer og tilrette dit arbejde. Du kan hjælpe med oversættelse ved at melde dig til et hold på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Spørg venligst ikke efter reklame for din personlige virksomhed eller webside, undtaget i specielle tilfælde, som fx konferencer. Mange tak til alle bidragydere, som bruger tid på at forbedre bitcoin.org!"
     maintenance: "Vedligeholdelse"
     documentation: "Dokumentation"
     translation: "Oversættelse"
@@ -87,9 +87,8 @@ da:
     chanmarket: "(markedsnoteringer i realtid)"
     chanmining: "(relateret til Bitcoin-mining)"
     social: "Sociale netværk"
-    linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Bitcoin-fællesskab på Google+</a>"
-    linktwitter: "Twitter-søgning"
-    facebook: "<a href=\"https://www.facebook.com/bitcoins\">Facebook-side</a>"
+    linktwitter: "Twitter"
+    facebook: '<a href="https://www.facebook.com/hashtag/bitcoin">Facebook</a>'
     meetups: "Sammenkomster"
     meetupevents: "Bitcoin-konferencer og -begivenheder"
     meetupgroup: "Bitcoin-sammenkomstgrupper"
@@ -106,21 +105,13 @@ da:
     walletcathardware: "Hardware"
     walletcatweb: "Web"
     walletbitcoincore: "Bitcoin Core er en komplet Bitcoin-klient, og den udgør rygraden af netværket. Den tilbyder et højt niveau af sikkerhed, privatlivsbeskyttelse og stabilitet. Den har dog færre funktioner og den optager store mængder plads og hukommelse."
-    walletmultibit: "MultiBit er en letvægtsklient, som fokuserer på at være hurtig og nem at bruge. Den synkroniserer med netværket og er klar til brug på minutter. MultiBit understøtter også mange sprog. Den er et godt valg for ikke-tekniske brugere."
     walletarmory: "Armory er en avanceret Bitcoin-klient, som giver udvidede funktionaliteter for Bitcoin-superbrugere. Den tilbyder mange funktionaliteter for sikkerhedskopiering og kryptering, og den tillader sikker \"kold opbevaring\" på offline-computere."
     walletelectrum: "Electrum fokuserer på hastighed og simplicitet med lav ressourcebrug. Den gør brug af fjerne servere, som håndterer de mest komplicerede dele af Bitcoin-systemet, og den tillader dig at genskabe din tegnebog udfra en hemmelig sætning."
-    walletmsigna: "mSIGNA er en advanceret tegnebog, der dog er nem at gå til, som fokuserer på simplicitet, skalabilitet på virksomhedsniveau og stærk sikkerhed. Den understøtter BIP32, transaktioner med multisignaturer, offline-opbevaring, synkronisering mellem flere enheder og krypterede elektroniske og papir-sikkerhedskopier."
     walletbitcoinwallet: "Bitcoin Wallet er nemt at bruge og pålidelig, samtidig med at den også er sikker og hurtig. Dens vision er decentralisering og nul-tillid; ingen central tjeneste behøves til Bitcoin-relaterede handlinger. Denne app er et godt valg til ikke-tekniske folk."
-    walletairbitzwallet: "Airbitz er en mobil bitcoin-tegnebog, der gør høje niveauer af privatlivsbeskyttelse, sikkerhed og decentralisering meget genkendeligt og brugbart for masserne. Airbitz-tegnebøger krypteres og sikkerhedskopieres altid automatisk, og de fungerer endda, hvis Airbitz-servere går ned."
     walletbrd: "Enkelhed er BRDs vigtigste designprincip. Som en rigtig selvstændig Bitcoin-klient er der ingen server, der kan blive hacket eller gå ned, og ved at bygge på iOS's stærke sikkerhedsfundament er BRD designet til at beskytte dig imod malware, sikkerhedshuller i browsere og endda fysisk tyveri."
     walletmyceliumwallet: "Mycelium Bitcoin Wallet er en tegnebog med åben kildekode til Android, der er designet med sikkerhed, hastighed og brugervenlighed for øje. Den har unikke funktionaliteter til at håndtere dine nøgler og for kold opbevaring, som hjælper dig med at sikre dine bitcoin."
-    walletcircle: "Circle er en web-tegnebogstjeneste, som sigter mod at være nem at bruge. Den giver mulighed for øjeblikkelig køb og salg af bitcoin ved at bruge enten et kreditkort eller en U.S.-amerikansk bankkonto. Der er også en Android- og en iOS-webtegnebogsapp tilgængelig."
-    walletcoinkite: "Coinkite er en nettegnebog- og debetkorttjeneste, som bestræber sig på at være nem at bruge. Den fungerer også på mobile browsere, den har værktøjer til handelsdrivende og betalingsterminaler til fysiske forretninger. Det er en hybridtegnebog med \"full reserve vault\""
-    walletbitgo: "BitGo er en tegnebog med multi-signaturer, der tilbyder et højt sikkerhedsniveau. Hver transaktion kræver to signaturer, hvilket beskytter dine bitcoin imod malware og serverangreb. Private nøgler opbevares hos brugeren, sådan at BitGo ikke har adgang til dine bitcoin. Den er et godt valg for ikke-tekniske brugere."
-    walletgreenaddress: "GreenAddress er en brugervenlig tegnebog med multi-signaturer og forbedret sikkerhed og privatlivsbeskyttelse. På intet tidspunkt kommer dine nøgler i nærheden af serveren, heller ikke i krypteret tilstand. Af sikkerhedsårsager bør du altid benytte 2FA og browser-udvidelsen eller Android-app'en."
-    wallettrezor: "Trezor er en hardware-tegnebog, der giver et højt sikkerhedsniveau uden at ofre bekvemmeligheden. Modsat kold opbevaring er Trezor i stand til at signere transaktioner, mens den er forbundet til en enhed med Internetforbindelse. Dette betyder, at det er sikkert at bruge bitcoin, selv fra en kompromitteret computer."
+    wallettrezorone: "Trezor er en hardware-tegnebog, der giver et højt sikkerhedsniveau uden at ofre bekvemmeligheden. Modsat kold opbevaring er Trezor i stand til at signere transaktioner, mens den er forbundet til en enhed med Internetforbindelse. Dette betyder, at det er sikkert at bruge bitcoin, selv fra en kompromitteret computer."
     walletnano: "Ledger Nano er en hardware-tegnebog, der er opbygget omkring en ST23YT66-smartcard-platform for banker. Den opbevarer brugernes private nøgler sikkert, validerer transaktioner, kan bruges som et sikkert forudbetalt kort eller en part til multisignaturer. Selvom det ikke har åben kildekode, kan det valideres deterministisk."
-    walletninki: "Ninki er en tegnebog med multi-signaturer og en smuk brugerflade, som gør det at sende bitcoin lige så nemt som at sende en email. Du har på ethvert tidspunkt fuld styring over dine bitcoin."
     walletwasabi: "Åben kildekode og privatlivsbeskyttende fokuseret Bitcoin tegnebog til Windows, Linux og Mac. Indbygget Tor anonymitet netværk, CoinJoin (MøntSaml) og mønt kontrol funktioner."
     walletdownload: "Installér"
     walletvisit: "Besøg hjemmeside"
@@ -204,7 +195,7 @@ da:
     pagetitle: "Bitcoin-udvikling"
     summary: "Find mere information om den aktuelle specifikation, software og udviklere."
     spec: "Dokumentation"
-    spectxt: "Hvis du er interesseret i at lære mere om de tekniske detaljer om Bitcoin og hvordan de eksisterende værktøjer og API'er kan bruges, kan det anbefales, at du starter med at udforske <a href=\"/en/developer-documentation\">udviklerdokumentationen</a>."
+    spectxt: "Hvis du er interesseret i at lære mere om de tekniske detaljer om Bitcoin og hvordan de eksisterende værktøjer og API'er kan bruges, kan det anbefales, at du starter med at udforske <a href=\"https://developer.bitcoin.org/\">udviklerdokumentationen</a>."
     coredev: "Kerneudviklere"
     inventor: "Bitcoin-systemet blev oprindeligt designet af Satoshi Nakamoto. Hans oprindelige kodebase vedligeholdes nu som Bitcoin Core af de følgende udviklere og en samling af frivillige."
     disclosure: "Ansvarsfuld afsløring"
@@ -262,7 +253,7 @@ da:
     howitworkstxt1: "Bra brugerens synspunkt er Bitcoin ikke andet end en mobil-app eller computerprogram, som giver en personlig Bitcoin-tegnebog og tillader en bruger at sende og modtage bitcoin. Det er sådan, Bitcoin fungerer for de fleste brugere."
     howitworkstxt2: "Under motorhjelmen deler Bitcoin-netværket en offentlig regnskabsbog, der hedder \"blokkæden\". Denne regnskabsbog indeholder alle transaktioner, der nogensinde er foretaget, og den tillader en brugers computer at verificere validiteten af hver transaktion. Autentiteten for hver transaktion beskyttes af digitale signaturer, der svarer til afsendelsesadresserne, hvilket tillader alle brugere at være i fuld kontrol over afsendelse af bitcoin fra deres egne Bitcoin-adresser. Der ud over kan enhver bearbejde transaktioner ved at bruge beregningskraften fra specialiseret hardware og optjene belønninger i bitcoin for denne tjeneste. Dette kaldes ofte \"mining\". For at lære mere om Bitcoin kan du se den <a href=\"#how-it-works#\">dedikerede side</a> og den <a href=\"#bitcoin-paper#\">oprindelige videnskabelige artikel</a>."
     used: "Bruges Bitcoin virkelig af folk?"
-    usedtxt1: "Ja. Der er et <a href=\"http://usebitcoins.info/\">voksende antal virksomheder</a> og enkeltpersoner, der bruger Bitcoin. Dette inkluderer fysiske forretninger, som fx restauranter, lejligheder, advokater, og populære onlinetjenester, som fx Namecheap, WordPress, Reddit og Flattr. Selvom Bitcoin stadig er et relativt nyt fænomen, vokser det hurtigt. I alutningen af august 2013 overstiger <a href=\"https://bitcoincharts.com/bitcoin/\">værdien af alle bitcoin i cirkulation</a> 1,5 milliarder U.S.-dollar, med en dagsomsætning der er flere millioner dollar værd."
+    usedtxt1: "Ja. Der er et voksende antal virksomheder og enkeltpersoner, der bruger Bitcoin. Dette inkluderer fysiske forretninger, som fx restauranter, lejligheder, advokater, og populære onlinetjenester, som fx Namecheap, WordPress, Reddit og Flattr. Selvom Bitcoin stadig er et relativt nyt fænomen, vokser det hurtigt. I alutningen af august 2013 overstiger <a href=\"https://bitcoincharts.com/bitcoin/\">værdien af alle bitcoin i cirkulation</a> 1,5 milliarder U.S.-dollar, med en dagsomsætning der er flere millioner dollar værd."
     acquire: "Hvordan skaffer man bitcoin?"
     acquireli1: "Som betaling for varer eller tjenester."
     acquireli2: "Køb bitcoin på en <a href=\"https://www.buybitcoinworldwide.com\">Bitcoin-børs</a>."
@@ -425,7 +416,7 @@ da:
     processing: "Håndtering<span class=\"titlelight\"> – mining</span>"
     processingtxt: "Mining er et <b>distribueret konsensussystem</b>, som bruges til at <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>bekræfte</i></a> ventende transaktioner, ved at inkludere dem i blokkæden. Det opretholder en kronologisk rækkefølge i blokkæden, beskytter netværkets neutralitet og tillader forskellige computere at være enige om systemets tilstand. For at blive bekræftet skal transaktioner pakkes i en <a href=\"#vocabulary##[vocabulary.block]\"><i>blok</i></a>, som passer ind i meget strikte kryptografiske regler, som verificeres af netværket. Disse regler forhindrer tidligere blokke at blive ændret, fordi hvis det skete, ville alle efterfølgende blokke blive ugyldige. Mining skaber også det der svarer til et konkurrencepræget lotteri, som forhindrer enhver enkeltperson i let at tilføje nye blokke fortløbende i blokkæden. På denne måde kan ingen enkeltpersoner styre, hvad der inkluderes i blokkæden eller erstatte dele af blokkæden for at annullere egne overførsler."
     readmore: "I flere detaljer"
-    readmoretxt: "Dette er kun en meget kortfattet opsummering af systemet. Hvis du vil vide mere om detaljerne, kan du <a href=\"#bitcoin-paper#\">læse den oprindelige videnskabelige artikel</a>, som beskriver systemets design, læse <a href=\"/en/developer-documentation\">udviklerdokumentationen</a> og udforske <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin-wikien</a>."
+    readmoretxt: "Dette er kun en meget kortfattet opsummering af systemet. Hvis du vil vide mere om detaljerne, kan du <a href=\"#bitcoin-paper#\">læse den oprindelige videnskabelige artikel</a>, som beskriver systemets design, læse <a href=\"https://developer.bitcoin.org/\">udviklerdokumentationen</a> og udforske <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin-wikien</a>."
   index:
     title: "Bitcoin – P2P-penge med åben kildekode"
     metadescription: "Bitcoin er et innovativt betalingsnetværk og en ny slags penge. Find alt hvad du behøver at vide og kom i gang med Bitcoin på bitcoin.org."
@@ -598,7 +589,7 @@ da:
     nonprofit: "Organisationer"
     nonprofittxt: "<a href=\"https://bitcoinfoundation.org/\">Bitcoin Foundation</a> og mange andre <a href=\"#community##[community.non-profit]\">non-profit-organisationer</a> er dedikerede til at beskytte og promovere Bitcoin. Du kan hjælpe disse grupper ved at melde dig ind i dem og deltage i deres projekter, diskussioner og begivenheder."
     spread: "Spred"
-    spreadtxt: "Tal om Bitcoin til interesserede personer. Skriv om det på din blog. Fortæl dine favoritforretninger, at du gerne vil kunne betale med Bitcoin. Hjælp med at holde <a href=\"http://usebitcoins.info/\">lister over forretningsdrivende</a> opdateret. Eller vær kreativ og lav dig selv en flot Bitcoin-tshirt."
+    spreadtxt: "Tal om Bitcoin til interesserede personer. Skriv om det på din blog. Fortæl dine favoritforretninger, at du gerne vil kunne betale med Bitcoin. Hjælp med at holde lister over forretningsdrivende opdateret. Eller vær kreativ og lav dig selv en flot Bitcoin-tshirt."
     wiki: "Dokumentation"
     wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> og <a href=\"https://en.bitcoin.it/\">Bitcoin-wiki</a> giver nyttig dokumentation, og vi forbedrer konstant den information, de indeholder. Du kan hjælpe med at forbedre disse ressourcer og holde dem opdateret."
     translate: "Oversæt"
@@ -680,7 +671,7 @@ da:
     menu-participate: Deltag
     menu-vocabulary: Ordliste
     menu-you-need-to-know: "Du bør vide"
-    banner-translate: "Oversættelsen til dette sprog er uddateret. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Klik her for at hjælpe med at oversætte bitcoin.org til dit sprog</a>."
+    banner-translate: "Oversættelsen til dette sprog er uddateret. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Klik her for at hjælpe med at oversætte bitcoin.org til dit sprog</a>."
     footer: "Udgivet under <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-licensen</a>"
     sponsor: "En fællesskabswebside sponsoreret af"
     getstarted: "Kom i gang med Bitcoin"
@@ -689,10 +680,12 @@ da:
     bitcoin-for-developers: bitcoin-for-udviklere
     bitcoin-for-individuals: bitcoin-for-enkeltpersoner
     bitcoin-for-businesses: bitcoin-for-virksomheder
+    buy: kobe
     choose-your-wallet: vaelg-din-tegnebog
     community: faellesskab
     development: udvikling
     download: hent
+    exchanges: udvekslinger
     events: begivenheder
     faq: faq
     getting-started: kom-i-gang
@@ -707,6 +700,7 @@ da:
     support-bitcoin: stoet-bitcoin
     vocabulary: ordliste
     you-need-to-know: du-boer-vide
+    spend-bitcoin: bruge-bitcoin
   anchor:
     community:
       non-profit: non-profit

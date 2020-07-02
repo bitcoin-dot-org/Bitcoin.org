@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 ## make sure Travis supports that version. Then remind one of the
 ## site maintainers that they need to run `rvm install <VERSION>` on
 ## the build server(s) before they commit to master
-ruby '2.4.1'
+ruby '2.5.8'
 
 ## Used on the build server. If you add a package here (like nokogiri)
 ## that has non-Gem dependencies (like zlib), please remind the site
@@ -14,11 +14,11 @@ ruby '2.4.1'
 ## your dependencies, then nothing extra needs to be done
 group :development do
   gem 'ffi-icu'
-  gem 'jekyll', '~>3.0'
+  gem 'jekyll', '~>4.0'
   gem 'json', '>= 1.9'
   gem 'less', '2.4.0'
-  gem 'kramdown'
-  gem 'RedCloth'
+  gem 'kramdown', '~>2.1'
+  gem 'RedCloth', ">= 4.3.0"
   gem 'therubyracer' # required by less
   gem 'jshintrb', '~>0.3.0'
   gem 'safe_yaml'

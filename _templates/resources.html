@@ -9,7 +9,6 @@ id: resources
   <div class="container hero-container">
     <h1>{% translate pagetitle %}</h1>
     <p class="summary">{% translate pagedesc %}</p>
-     {% include helpers/hero-social.html %}
   </div>
 </div>
 
@@ -67,10 +66,13 @@ id: resources
         <img src="/img/icons/ico_market.svg?{{site.time | date: '%s'}}" alt="Icon">
         <h2 id="charts">{% translate charts %}</h2>
         <p>
+          <a href="https://bitaps.com">Bitaps.com</a>
+        </p>
+        <p>
           <a href="https://live.blockcypher.com/btc">BlockCypher</a>
         </p>
         <p>
-          <a href="https://tradeblock.com">Trade Block</a>
+          <a href="https://tradeblock.com/bitcoin">TradeBlock</a>
         </p>
         <p>
           <a href="https://bitcoincharts.com/charts/">Bitcoincharts.com</a>
@@ -80,9 +82,6 @@ id: resources
         </p>
         <p>
           <a href="https://bitcoinaverage.com/{% if 'en,fr,de,it,es,pl,ru,ht,pt,tr,uk' contains page.lang %}{{ page.lang }}/bitcoin-price/btc-to-usd{% endif %}">BitcoinAverage</a>
-        </p>
-        <p>
-          <a href="https://bitvol.info/">Bitcoin Volatility Index</a>
         </p>
       </div>
 

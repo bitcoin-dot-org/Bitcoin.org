@@ -14,14 +14,15 @@ platform:
       text: "walletwasabi"
       link: "https://wasabiwallet.io/"
       source: "https://github.com/zkSNACKs/WalletWasabi/"
-      screenshot: "wasabi.png?1528322191"
+      screenshot: "wasabi.png"
+      features: "bech32 hardware_wallet segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"
-        transparency: "checkpasstransparencyopensource"
+        transparency: "checkgoodtransparencydeterministic"
         environment: "checkfailenvironmentdesktop"
         privacy: "checkgoodprivacyimproved"
-        fees: "checkpassfeecontroldynamic"
+        fees: "checkpassfeecontroloverride"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
         privacydisclosure: "checkpassprivacydisclosurefullnode"

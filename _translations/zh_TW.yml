@@ -16,7 +16,7 @@ zh_TW:
     missiontxt6: "以國際化方式改善 Bitcoin 的全球接入度。"
     missiontxt7: "保持 Bitcoin 各方面資訊資源的中立性。"
     help: "協助我們"
-    helptxt: "你可以用英文在 <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> 匯報問題，或透過新增議題及請求協助來改善 bitcoin.org。當你請求協助時，請花點時間解釋你所作的改變並調整你的工作內容。你也可以加入 <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a> 的專案小組來協助翻譯。除了像會議這種特殊情況之外，請不要推廣你個人或企業的網站。非常感謝所有花時間改善 bitcoin.org 的貢獻者！"
+    helptxt: "你可以用英文在 <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> 匯報問題，或透過新增議題及請求協助來改善 bitcoin.org。當你請求協助時，請花點時間解釋你所作的改變並調整你的工作內容。你也可以加入 <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a> 的專案小組來協助翻譯。除了像會議這種特殊情況之外，請不要推廣你個人或企業的網站。非常感謝所有花時間改善 bitcoin.org 的貢獻者！"
     maintenance: "維護"
     documentation: "文檔"
     translation: "翻譯"
@@ -87,9 +87,8 @@ zh_TW:
     chanmarket: "(市場即時報價)"
     chanmining: "(Bitcoin 挖礦相關)"
     social: "社交網路"
-    linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Google+ Bitcoin 社群</a>"
-    linktwitter: "Twitter 搜尋"
-    facebook: "<a href=\"https://www.facebook.com/bitcoins\">Facebook 頁面</a>"
+    linktwitter: "Twitter"
+    facebook: '<a href="https://www.facebook.com/hashtag/bitcoin">Facebook</a>'
     meetups: "聚會"
     meetupevents: "Bitcoin 研討會與活動"
     meetupgroup: "Bitcoin 社群聚會"
@@ -106,17 +105,12 @@ zh_TW:
     walletcathardware: "硬體"
     walletcatweb: "網頁"
     walletbitcoincore: "Bitcoin Core 是原生 Bitcoin 客戶端，也是整個網路的骨幹。它提供最高等級的安全性、隱密性及穩定性。但是它的功能較少，也需要許多空間和記憶體。"
-    walletmultibit: "MultiBit 是一個輕量級的客戶端，著重在快速與容易上手。它會與網路同步，幾分鐘內就可以使用。它也支援多種語言。MultiBit 是非技術背景使用者的好選擇。"
     walletarmory: "Armory 是一個先進的 Bitcoin 客戶端，它給 Bitcoin 的高級用戶擴充了很多功能。它提供多種備份與加密功能，也允許將冷資料儲存放在離線的電腦上以保障安全。"
     walletelectrum: "Electrum 注重速度和簡單性，只佔用少量的資源。它將 Bitcoin 系統裡最複雜的計算留給遠端伺服器執行，也讓使用者可透過密語來還原錢包。"
-    walletmsigna: "mSIGNA 是一個先進而方便使用的錢包，它具有高速、簡單、企業級別的可升級性和很強的安全性等特點。它支持 BIP32、多重簽署交易、線下存儲、多設備同步和加密的電子和紙質備份。"
     walletbitcoinwallet: "Bitcoin Wallet 是容易使用和可信賴的，它也一直很安全和快速。它的版本是去中心化和零信任的，與 Bitcoin 有關的操作不需要一個中央服務。這個程式對非技術人員是一個很好的選擇。"
     walletbrd: "簡單是 BRD 的核心設計理念。作為一個真正獨立的 Bitcoin 客戶端，沒有伺服器可以駭或者當。而且，通過建立在 iOS 的高安全基礎之上，BRD 是專門設計來讓您免受惡意軟件、瀏覽器安全漏洞甚至是真實小偷的安全威脅。"
     walletmyceliumwallet: "Mycelium Bitcoin Wallet 是一個給 Android 設計的開放原始碼錢包，它安全、高速且容易使用。它有密鈅管理功能和冷儲存功能，這些獨特的功能能保障您的比特幣安全。"
-    walletcoinkite: "Coinkite 是一個網頁錢包 &amp; 提款卡服務，它的目標是方便使用。它在行動瀏覽器上也可以使用，它具有商家工具和賣點支付終端。它是一個綜合性的錢包，也是一個全保管金庫。"
-    walletbitgo: "BitGo 是一款多重簽署錢包，它具有很高的安全性。每一筆交易都要求兩個簽名，這保護了您的比特幣不受惡意軟體和伺服器攻擊的威脅。私密金鑰由用戶自持，這樣 BitGo 就不能動用您的比特幣。這對於非技術人員的用戶是個很好的選擇。"
-    walletgreenaddress: "GreenAddress 是一款方便使用的多重簽署錢包，它具有改進的安全性和隱秘性。你的鑰匙無論何時都不會在伺服器上，不管你的鑰匙有沒有加密。為安全起見，你應當總是使用2FA和瀏覽器擴充套件或者 Android 應用程式。"
-    wallettrezor: "TREZOR 是一款硬體錢包，它提供高水準的安全性，但不會犧牲其方便性。與冷儲存不同，TREZOR 在連接到一個線上設備的時候是可以簽署交易的。這意味著使用比特幣是安全的，甚至在使用有安全威脅的電腦時都是安全的。"
+    wallettrezorone: "TREZOR 是一款硬體錢包，它提供高水準的安全性，但不會犧牲其方便性。與冷儲存不同，TREZOR 在連接到一個線上設備的時候是可以簽署交易的。這意味著使用比特幣是安全的，甚至在使用有安全威脅的電腦時都是安全的。"
     walletnano: "Ledger Nano 是一款建立在 ST23YT66 銀行智能卡平臺上的硬體錢包。它保證用戶的私鑰安全、驗證交易并可用作一個安全的預付卡或一筆多重簽署中的一方。雖非開源碼，它還是可以被決定性驗證。"
     walletwasabi: "Wasabi是一款專注於隱私性的比特幣錢包。"
     walletdownload: "安裝"
@@ -201,7 +195,7 @@ zh_TW:
     pagetitle: "Bitcoin 開發"
     summary: "找到更多關於目前的規範、軟體和開發人員的資訊。"
     spec: "文檔"
-    spectxt: "若是您有興趣進一步瞭解 Bitcoin 的更多技術細節和怎麼使用現有的工具和 APIs，建議您從瞭解<a href=\"/en/developer-documentation\">開發人員文檔</a>開始。"
+    spectxt: "若是您有興趣進一步瞭解 Bitcoin 的更多技術細節和怎麼使用現有的工具和 APIs，建議您從瞭解<a href=\"https://developer.bitcoin.org/\">開發人員文檔</a>開始。"
     coredev: "核心開發人員"
     inventor: "Bitcoin 系統由中本聰先生發起設計。他最先的 Bitcoin 代碼庫現在作為 Bitcoin Core 由後來的開發人員和一個由志願者組成的社群共同維護。"
     disclosure: "可靠的披露"
@@ -257,7 +251,7 @@ zh_TW:
     howitworkstxt1: "從用戶的角度看，Bitcoin 只是一個提供私人 Bitcoin 錢包和讓用戶傳送和接收比特幣的行動應用程式或電腦程式。對大部份的用戶來說，這是 Bitcoin 的用途。"
     howitworkstxt2: "在後臺，Bitcoin 網路分享著一個公開的被稱為“區塊鏈”的總的分類帳。這個分類帳包含所有已經進行的交易，這使得用戶的電腦可以核實每一筆交易的合法性。每一筆交易的真實性被相應的傳送地址的數位簽署保護，這使得所有的用戶都可以對從他們自己的 Bitcoin 地址傳送的比特幣有完全的掌控權。而且，每一個人都可以使用有專門硬體的計算器能力來處理交易并因這個服務而獲得作為獎賞的比特幣。這通常被稱為“挖礦”。如果您想要瞭解更多關於 Bitcoin 的資訊，您可以檢視<a href=\"#how-it-works#\">專門頁</a> 和  <a href=\"#bitcoin-paper#\">原始論文</a>。"
     used: "真的有人在用 Bitcoin 嗎？"
-    usedtxt1: "是的。<a href=\"http://usebitcoins.info/\">越來越多的企業</a>和個人使用 Bitcoin。這包括實體企業，如餐廳、公寓、法律公司和廣受歡迎的線上服務如Namecheap, WordPress, Reddit 和 Flattr等等。雖然 Bitcoin 還是一個相對而言較新鮮的現象，但是它發展迅速。2013年8月底，<a href=\"https://bitcoincharts.com/bitcoin/\">流通中的比特幣價值</a>超過了15億美元（US$ 1.5 billion），而且每天都有價值數百萬的比特幣在交易。"
+    usedtxt1: "是的。越來越多的企業和個人使用 Bitcoin。這包括實體企業，如餐廳、公寓、法律公司和廣受歡迎的線上服務如Namecheap, WordPress, Reddit 和 Flattr等等。雖然 Bitcoin 還是一個相對而言較新鮮的現象，但是它發展迅速。2013年8月底，<a href=\"https://bitcoincharts.com/bitcoin/\">流通中的比特幣價值</a>超過了15億美元（US$ 1.5 billion），而且每天都有價值數百萬的比特幣在交易。"
     acquire: "如何獲得比特幣？"
     acquireli1: "作為商品或服務的支付手段。"
     acquireli2: "透过一個<a href=\"https://www.buybitcoinworldwide.com\">Bitcoin 兑换</a>購買比特幣。"
@@ -420,7 +414,7 @@ zh_TW:
     processing: "處理<span class=\"titlelight\"> - 挖礦</span>"
     processingtxt: "挖礦是一種<b>分散式的共識系統</b>，用於<a href=\"#vocabulary##[vocabulary.confirmation]\"><i>確認</i></a>交易並把交易加入區塊鏈之中。挖礦能確保區塊鏈的時間順序、保護網路的中立性，並且讓不同的電腦就系統的狀態取得共識。待確認的交易將會打包到某個<a href=\"#vocabulary##[vocabulary.block]\"><i>區塊</i></a>之中，而區塊必須滿足非常嚴格的密碼學規則。這些規則防止區塊被篡改，因為這樣做會導致被篡改區塊之後的區塊都變得無效。挖礦創造了一個競爭性的隨機系統，可防止任何人輕易地將連續的區塊加到區塊鏈中。藉由這個系統，沒有人能控制區塊鏈中能包含哪些交易，或是更動區塊鏈的某一部份來取消他們自己的支付。"
     readmore: "探索未知的世界"
-    readmoretxt: "這僅僅是 Bitcoin 系統的簡要說明，如果想瞭解更多細節，您可以<a href=\"#bitcoin-paper#\">閱讀原始論文</a>，其中描述了系統的設計，您也可以閱讀<a href=\"/en/developer-documentation\">開發人員文檔</a>，您還可以探索一下<a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>。"
+    readmoretxt: "這僅僅是 Bitcoin 系統的簡要說明，如果想瞭解更多細節，您可以<a href=\"#bitcoin-paper#\">閱讀原始論文</a>，其中描述了系統的設計，您也可以閱讀<a href=\"https://developer.bitcoin.org/\">開發人員文檔</a>，您還可以探索一下<a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>。"
   index:
     title: "Bitcoin - 開放原始碼點對點數位貨幣"
     metadescription: "Bitcoin 是一種創新的支付網路，也是一種新型貨幣。找到您所需要瞭解的資訊然後就可以在bitcoin.org 開始接觸 Bitcoin。"
@@ -592,7 +586,7 @@ zh_TW:
     nonprofit: "組織"
     nonprofittxt: "The <a href=\"https://bitcoinfoundation.org/\">Bitcoin 基金會</a>和其他的 <a href=\"#community##[community.non-profit]\">非牟利機構</a> 致力於保護和推廣比特幣。您可以加入他們，參與他們的項目、討論及活動來幫助這些團體。"
     spread: "傳播"
-    spreadtxt: "與感興趣的人談論 Bitcoin，在你的部落格上寫關於 Bitcoin 的文章，告訴您最喜歡的商店您想用 Bitcoin 付款，幫助更新<a href=\"http://usebitcoins.info/\">商家名錄</a> ，或者發揮創意為自己做一件好看的 Bitcoin T-shirt。"
+    spreadtxt: "與感興趣的人談論 Bitcoin，在你的部落格上寫關於 Bitcoin 的文章，告訴您最喜歡的商店您想用 Bitcoin 付款，幫助更新商家名錄，或者發揮創意為自己做一件好看的 Bitcoin T-shirt。"
     wiki: "文檔"
     wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> 和<a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> 提供有用的文檔，而且我們還在持續改進它們所包含的資訊。您可以幫助改進和更新這些資源。"
     translate: "翻譯"
@@ -674,7 +668,7 @@ zh_TW:
     menu-participate: 參與
     menu-vocabulary: 詞彙
     menu-you-need-to-know: "使用須知"
-    banner-translate: "這種語言的翻譯已經過時。<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">點擊這裡來幫助把bitcoin.org 翻譯成您的語言</a>。"
+    banner-translate: "這種語言的翻譯已經過時。<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">點擊這裡來幫助把bitcoin.org 翻譯成您的語言</a>。"
     footer: "以 <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT 授權</a>發佈"
     sponsor: "一個由其贊助的社群網站"
     getstarted: "開始使用 Bitcoin"
@@ -683,10 +677,12 @@ zh_TW:
     bitcoin-for-developers: bitcoin-for-developers
     bitcoin-for-individuals: bitcoin-for-individuals
     bitcoin-for-businesses: bitcoin-for-businesses
+    buy: buy
     choose-your-wallet: choose-your-wallet
     community: community
     development: development
     download: download
+    exchanges: exchanges
     events: events
     faq: faq
     getting-started: getting-started
@@ -701,6 +697,7 @@ zh_TW:
     support-bitcoin: support-bitcoin
     vocabulary: vocabulary
     you-need-to-know: you-need-to-know
+    spend-bitcoin: spend-bitcoin
   anchor:
     community:
       non-profit: non-profit

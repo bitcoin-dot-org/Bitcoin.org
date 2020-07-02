@@ -10,15 +10,12 @@ http://opensource.org/licenses/MIT.
         <span class="footer-title">{% translate donate-community layout %}:</span>
         <a onclick="openDonationModal()" class="donate-btn btn-bright">{% translate donate layout %}</a>
         <p class="donate-text">{% translate donate-community-support layout %}
-          <a class="donate-link" href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a>
+          <a class="donate-link" href="bitcoin:3E8ociqZa9mZUSwGdSmAEMAoAxBK3FNDcd" target="_blank">3E8ociqZa9mZUSwGdSmAEMAoAxBK3FNDcd</a>
         </p>
-      </div>
-      <div class="donate-qrcode">
-        <img src="/img/footer/qr.png?{{site.time | date: '%s'}}" alt="QR code">
       </div>
     </div>
   </div>
-  
+
   <div class="row footermenu">
     <div class="footermenu-item footermenu-introduction">
       <p class="footer-title">{% translate menu-intro layout %}:</p>
@@ -29,8 +26,8 @@ http://opensource.org/licenses/MIT.
         <li{% if page.id == 'bitcoin-for-businesses' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a>
         </li>
-        <li{% if page.id == 'bitcoin-for-developers' %} class="active"{% endif %}>
-          <a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a>
+        <li>
+          <a href="https://developer.bitcoin.org/">{% translate menu-bitcoin-for-developers layout %}</a>
         </li>
         <li{% if page.id == 'getting-started' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate menu-getting-started layout %}</a>

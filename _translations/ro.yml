@@ -16,7 +16,7 @@ ro:
     missiontxt6: "Să îmbunătăţească accesibilitatea Bitcoin la nivel mondial prin internaţionalizare."
     missiontxt7: "Să rămână o resursă informativă neutră despre Bitcoin."
     help: "Ajută-ne"
-    helptxt: "Poţi raporta orice problemă sau să ajuţi la îmbunătăţirea bitcoin.org vizitând pagina de <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> şi deschizând un tichet sau un pull request în limba engleză. Dacă faci un pull request, te rugăm să îţi verifici munca şi să aştepţi să se discute schimbările propuse de tine. Poţi ajuta cu traducerea bitcoin.org prin a te alătura unei echipe de traducători pe <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Te rugăm să nu ne ceri promovarea afacerii sau site-ului tău personal, în afara cazurilor speciale cum ar fi conferinţele. Mulţumim mult tuturor contributorilor ce au dedicat timp îmbunătăţirii bitcoin.org!"
+    helptxt: "Poţi raporta orice problemă sau să ajuţi la îmbunătăţirea bitcoin.org vizitând pagina de <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> şi deschizând un tichet sau un pull request în limba engleză. Dacă faci un pull request, te rugăm să îţi verifici munca şi să aştepţi să se discute schimbările propuse de tine. Poţi ajuta cu traducerea bitcoin.org prin a te alătura unei echipe de traducători pe <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Te rugăm să nu ne ceri promovarea afacerii sau site-ului tău personal, în afara cazurilor speciale cum ar fi conferinţele. Mulţumim mult tuturor contributorilor ce au dedicat timp îmbunătăţirii bitcoin.org!"
     maintenance: "Lucrari de intretinere"
     documentation: "Documentare"
     translation: "Traducere"
@@ -87,9 +87,8 @@ ro:
     chanmarket: "(Cursuri live ale burselor)"
     chanmining: "(Discuţii despre minerit Bitcoin)"
     social: "Reţele de socializare"
-    linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Comunitatea Bitcoin pe Google+</a>"
-    linktwitter: "Căutare pe Twitter"
-    facebook: "<a href=\"https://www.facebook.com/bitcoins\">Pagina de Facebook</a>"
+    linktwitter: "Twitter"
+    facebook: '<a href="https://www.facebook.com/hashtag/bitcoin">Facebook</a>'
     meetups: "Întâlniri"
     meetupevents: "Conferințe și evenimente Bitcoin"
     meetupgroup: "Grupuri de întâlniri Bitcoin"
@@ -106,17 +105,12 @@ ro:
     walletcathardware: "Hardware"
     walletcatweb: "Web"
     walletbitcoincore: "Bitcoin Core este un client Bitcoin complet şi reprezintă coloana vertebrală a reţelei. Oferă un nivel înalt de securitate, confidenţialitate şi stabilitate. Pe de altă parte, are mai puţine servicii adiţionale şi ocupă mai mult spaţiu şi memorie."
-    walletmultibit: "MultiBit este un client uşor ce se axează pe rapidatate şi uşurinţă în utilizare. Se sincronizează cu reţeaua şi este gata de utilizare în câteva minute. MultiBit de asemenea este tradus în multe limbi. Este o alegere bună pentru utilizatori obişnuiţi."
     walletarmory: "Armory este un client Bitcoin avansat, ce are capabilităţi extinse, fiind orientat către utilizatorii Bitcoin avansaţi. Oferă multe opţiuni de backup şi de criptare şi oferă stocare la rece sigură pe calculatoare neconectate la Internet."
     walletelectrum: "Electrum se bazează pe rapiditate şi simplitate, consumând puţine resurse. Foloseşte servere la distanţă ce se ocupă de majoritatea părţilor complicate ale sistemului Bitcoin şi îţi permit să-ţi recuperezi portofelul folosind o frază secretă."
-    walletmsigna: "mSIGNA este un portofel avansat şi totuşi uşor de folosit ce oferă viteză şi simplicitate, scalabilitate mărită şi un nivel de securitate sporit. Suportă BIP32, tranzacţii multi-semnătură, stocare offline, sincronizare pe dispozitive multiple şi backupuri criptate pe suport electronic dar şi hârtie."
     walletbitcoinwallet: "Portofelul Bitcoin este uşor, sigur şi rapid de folosit. Viziunea sa este descentralizarea şi zero încredere; niciun serviciu central nu este necesar pentru operaţiunile legate de Bitcoin. Aplicaţia este o alegere bună pentru persoanele fără experienţă tehnică."
     walletbrd: "Simplitatea este principiul principal de design ce stă la baza lui BRD. Ca un adevărat client Bitcoin de sine stătător, nu există un server ce poate fi hackuit sau să fie offline, iar prin construirea lui pe baza sigură a iOS, BRD este făcut pentru a te proteja de malware, găuri de securitate ale browserului, chiar şi furtul fizic."
     walletmyceliumwallet: "Portofelul Bitcoin Mycelium este un portofel open source pentru Android făcut pentru securitate, viteză şi uşurinţă în utilizare. Are trăsături unice pentru a administra cheile tale şi pentru stocare la rece ce ajută la securizarea bitcoinilor tăi."
-    walletcoinkite: "Coinkite este un portofel web şi card de debit cu scopul de a fi uşor de utilizat. Funcţionează de asemenea şi pe browserele mobile, are unelte de comerciant şi terminale de plata point-of-sale. Este un portofel hibrid şi un sistem de trezorerie."
-    walletbitgo: "BitGo este un portofel multi-semnătură ce oferă niveluri înalte de securitate. Fiecare tranzacţie necesită două semnături, protejându-ţi bitcoinii de malware şi de atacuri ale serverului. Cheile private sunt ţinute de utilizator aşa că BitGo nu îţi poate accesa bitcoinii. Este o alege bună pentru utilizatorii mai puţini tehnici."
-    walletgreenaddress: "GreenAddress este un portofel cu semnătură multiplă uşor de utilizat având o securitate şi confidenţialitate îmbunătăţită. Cheile tale nu sunt stocate deloc pe server, nici măcar criptate. Pentru motive de securitate, este recomandat să activezi 2FA şi extensia de browser sau aplicaţia pentru Android."
-    wallettrezor: "TREZOR este un portofel hardware ce oferă un grad înalt de securitate fără a sacrifica convenienţa. Spre deosebire de stocarea la rece, TREZOR este capabil să semneze tranzacţii în timp ce este conectat la un dispozitiv online. Asta înseamnă că bitcoinii pot fi cheltuiţi într-un mod sigur chiar dacă este folosit un computer compromis."
+    wallettrezorone: "TREZOR este un portofel hardware ce oferă un grad înalt de securitate fără a sacrifica convenienţa. Spre deosebire de stocarea la rece, TREZOR este capabil să semneze tranzacţii în timp ce este conectat la un dispozitiv online. Asta înseamnă că bitcoinii pot fi cheltuiţi într-un mod sigur chiar dacă este folosit un computer compromis."
     walletnano: "Ledger Nano este un portofel hardware construit pe o platforma bancară smartcard ST23YT66. Această păstrează cheile private în siguranţă, validează tranzacţiile şi poate fi folosit în siguranţă ca un card prepaid sau o parte dintr-o multisemnatura. Deşi nu este opensource, poate fi validat deterministic."
     walletwasabi: "Wasabi este un portofel pentru bitcoin care axat pe confidențialitate."
     walletdownload: "Instaleaza"
@@ -201,7 +195,7 @@ ro:
     pagetitle: "Dezvoltarea Bitcoin"
     summary: "Găseşte mai multe informaţii despre specificaţiile curente, software şi dezvoltatori."
     spec: "Documentaţie"
-    spectxt: "Dacă doreşti să înveţi mai multe despre detaliile tehnice ale Bitcoin şi cum să foloseşti unelte şi API-uri existente, este recomandat să începi prin a explora <a href=\"/en/developer-documentation\">documentaţia pentru dezvoltatori</a>."
+    spectxt: "Dacă doreşti să înveţi mai multe despre detaliile tehnice ale Bitcoin şi cum să foloseşti unelte şi API-uri existente, este recomandat să începi prin a explora <a href=\"https://developer.bitcoin.org/\">documentaţia pentru dezvoltatori</a>."
     coredev: "Dezvoltatori principali"
     inventor: "Sistemul Bitcoin a fost creat original si gandit de Satoshi Nakamoto. Baza originala a Bitcoin este acum intretinuta ca BitcoinCore de urmatori dezvoltatori si de comunitatea de voluntari."
     disclosure: "Aducere la cunoştiinţă"
@@ -257,7 +251,7 @@ ro:
     howitworkstxt1: "Din perspectiva unui utilizator obişnuit, Bitcoin nu este nimic mai mult decât o aplicaţie pe telefon sau un program pe calculator ce oferă un portofel personal Bitcoin şi permite unui utilizator să trimită şi să primească bitcoini prin el. Acesta este modul în care funcţionează Bitcoin pentru majoritatea utilizatorilor."
     howitworkstxt2: "În culise, reţeaua Bitcoin distribuie un registru public denumit \"lanţul de blocuri\". Acest registru conţine fiecare tranzacţie procesată vreodată, permiţând calculatorului unui utilizator să verifice validitatea fiecărei tranzacţii. Autenticitatea fiecarei tranzacţii este protejată de semnăturile digitale ce corespund cu adresele de unde au fost trimişi bitcoinii, permiţând tuturor utilizatorilor să aibă control total asupra trimiterii de bitcoini din adresele lor Bitcoin personale. Adiţional, oricine poate procesa tranzacţii folosind puterea computaţională a hardware-ului specializat şi să fie răsplătiţi cu bitcoini pentru acest serviciu. Acest lucru este adesea denumit \"minat\". Pentru a afla mai multe despre Bitcoin, poţi consulta <a href=\"#how-it-works#\">pagina dedicată</a> şi <a href=\"#bitcoin-paper#\">lucrarea originală</a>."
     used: "Foloseşte lumea Bitcoin?"
-    usedtxt1: "Da. Este folosit de <a href=\"http://usebitcoins.info/\">un număr tot mai mare de afaceri</a> şi persoane. Acestea includ afaceri fizice, cum ar fi restaurante, firme de avocatură, săli de fitness şi servicii online populare cum ar fi Namecheap, WordPress, Reddit şi Flattr. În timp ce Bitcoin rămâne un fenomen relativ nou, acesta creşte rapid. În luna Martie 2014, <a href=\"https://bitcoincharts.com/bitcoin/\">valorarea tuturor bitcoinilor aflaţi în circulaţie</a> depăşea suma de 8 miliarde de dolari şi bitcoini în valorare de milioane de dolari fiind schimbaţi zilnic."
+    usedtxt1: "Da. Este folosit de un număr tot mai mare de afaceri şi persoane. Acestea includ afaceri fizice, cum ar fi restaurante, firme de avocatură, săli de fitness şi servicii online populare cum ar fi Namecheap, WordPress, Reddit şi Flattr. În timp ce Bitcoin rămâne un fenomen relativ nou, acesta creşte rapid. În luna Martie 2014, <a href=\"https://bitcoincharts.com/bitcoin/\">valorarea tuturor bitcoinilor aflaţi în circulaţie</a> depăşea suma de 8 miliarde de dolari şi bitcoini în valorare de milioane de dolari fiind schimbaţi zilnic."
     acquire: "Cum achiziționăm bitcoini?"
     acquireli1: "Ca plată pentru bunuri şi servicii."
     acquireli2: "Cumpără bitcoini de la un <a href=\"https://www.buybitcoinworldwide.com\">exchange de Bitcoin</a>."
@@ -420,7 +414,7 @@ ro:
     processing: "Procesare<span class=\"titlelight\"> - minerit</span>"
     processingtxt: "Minatul este un <b>sistem consensual distribuit</b> folosit pentru a <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>confirma</i></a> tranzacţiile în aşteptare prin includerea lor în lanţul de blocuri. Minatul impune o ordine cronologică în lanţul de blocuri, protejează neutralitatea reţelei şi de asemenea permite diferitelor calculatoare din reţea să cadă de acord asupra condiţiei sistemului. Pentru a fi confirmate, tranzacţiile trebuie să fie incluse într-un <a href=\"#vocabulary##[vocabulary.block]\"><i>bloc</i></a> ce respectă reguli criptografice foarte stricte ce va fi verificat de reţeaua Bitcoin. Aceste reguli previn blocurile anterioare să fie modificate pentru că astfel s-ar invalida toate blocurile următoare. Minatul de asemenea este echivalentul unei loterii competitive ce previne un caz în care un individ poate să adauge cu uşurinţă blocuri noi în mod consecutiv în lanţul de blocuri. În acest fel, niciun individ nu poate controla ce este inclus în lanţul de blocuri sau să înlocuiască părţi din lanţul de blocuri pentru a retrage tranzacţiile proprii."
     readmore: "Mai adânc în viziuna iupurelui"
-    readmoretxt: "Acesta este doar un sumar foarte scurt şi concis al sistemului. Dacă doreşti să intri în detalii, poţi citi <a href=\"#bitcoin-paper#\">lucrarea originală</a> ce descrie designul sistemului, să citeşti <a href=\"/en/developer-documentation\">documentaţia pentru dezvoltatori</a> şi să explorezi <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin Wiki</a>."
+    readmoretxt: "Acesta este doar un sumar foarte scurt şi concis al sistemului. Dacă doreşti să intri în detalii, poţi citi <a href=\"#bitcoin-paper#\">lucrarea originală</a> ce descrie designul sistemului, să citeşti <a href=\"https://developer.bitcoin.org/\">documentaţia pentru dezvoltatori</a> şi să explorezi <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin Wiki</a>."
   index:
     title: "Bitcoin - bani P2P open source "
     metadescription: "Bitcoin este o reţea de plăţi inovativă şi un nou fel de bani. Găseşte tot ce trebuie să ştii pentru a începe să foloseşti Bitcoin pe bitcoin.org."
@@ -592,7 +586,7 @@ ro:
     nonprofit: "Organizaţii"
     nonprofittxt: "<a href=\"https://bitcoinfoundation.org/\">Fundaţia Bitcoin</a> şi multe alte <a href=\"#community##[community.non-profit]\">organizaţii non-profit</a> sunt dedicate protejării şi promovării Bitcoin. Poţi ajuta aceste grupuri prin a deveni membru şi a-i ajuta cu proiectele, discuţiile şi evenimentele lor."
     spread: "Dă vestea mai departe"
-    spreadtxt: "Vorbeşte despre Bitcoin cu persoane interesate. Scrie despre asta pe blogul tău. Menţionează în magazinele tale preferate că vrei să plăteşti în Bitcoin. Ajută prin a menţine la zi <a href=\"http://usebitcoins.info/\">lista comercianţilor</a>. Sau poţi fi creativ şi să-ţi faci un tricou interesant cu Bitcoin ."
+    spreadtxt: "Vorbeşte despre Bitcoin cu persoane interesate. Scrie despre asta pe blogul tău. Menţionează în magazinele tale preferate că vrei să plăteşti în Bitcoin. Ajută prin a menţine la zi lista comercianţilor. Sau poţi fi creativ şi să-ţi faci un tricou interesant cu Bitcoin ."
     wiki: "Documentaţie"
     wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> şi <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> oferă documentaţie folositoare şi îmbunătăţim în permanență informaţia ce o conţin. Poţi ajuta la îmbunătățirea acestor resurse şi a menţinerii lor la zi."
     translate: "Traduceri"
@@ -674,7 +668,7 @@ ro:
     menu-participate: Participă
     menu-vocabulary: Vocabular
     menu-you-need-to-know: "Trebuie să știi"
-    banner-translate: "Traducerile in aceasta limba sunt vechi.<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Click aici pentru a ajuta traducerea bitcoin.org in limba ta</a>."
+    banner-translate: "Traducerile in aceasta limba sunt vechi.<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Click aici pentru a ajuta traducerea bitcoin.org in limba ta</a>."
     footer: "Lansat sub <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licența MIT</a>"
     sponsor: "Un site comunitar sponsorizat de"
     getstarted: "Noțiuni de bază despre Bitcoin"
@@ -683,10 +677,12 @@ ro:
     bitcoin-for-developers: bitcoin-pentru-dezvoltatori
     bitcoin-for-individuals: bitcoin-pentru-persoane-fizice
     bitcoin-for-businesses: bitcoin-pentru-companii
+    buy: cumpara
     choose-your-wallet: alege-portofelul
     community: comunitate
     development: dezvoltare
     download: descarca
+    exchanges: schimburi
     events: evenimente
     faq: intrebari-frecvente
     getting-started: notiuni-de-baza
@@ -701,6 +697,7 @@ ro:
     support-bitcoin: sustine-bitcoin
     vocabulary: vocabular
     you-need-to-know: ce-trebuie-sa-stii
+    spend-bitcoin: petrece-bitcoin
   anchor:
     community:
       non-profit: non-profit

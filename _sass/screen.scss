@@ -167,6 +167,12 @@ hr {
     display: -ms-flexbox;
     display: flex;
 }
+.align-items-center {
+    align-items: center;
+}
+.justify-content-end {
+    justify-content: flex-end;
+}
 .section-title {
     font-size: 162.5%;
     font-weight: normal;
@@ -483,13 +489,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .hero h1 {
     margin-bottom: 20px;
 }
-.hero-social {
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
 .footer {
     position: relative;
     padding-top: 60px;
@@ -625,12 +624,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .footer-bottom-row .lang > li > ul{
     top: 0;
     transform: translateY(-100%);
-}
-.footer-social-link {
-    height: 30px;
-}
-.footer-social-link:not(:last-child) {
-    margin-right: 10px;
 }
 .statusmenu {
     color: inherit;
@@ -1300,6 +1293,9 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .dev-documentation .card-row {
     margin: 55px 0;
 }
+.devguide-card .btn-container {
+  margin-bottom: 30px;
+}
 .doc-card {
     min-height: 500px;
 }
@@ -1548,9 +1544,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .toccontent table thead th{
     font-weight:normal;
     border-bottom: 3px double #ddd;
-}
-.accordion-content {
-    display: none;
 }
 .anchorAf{
     position:relative;
@@ -2453,6 +2446,7 @@ br.big {
     width: 40px;
     height: 33px;
     margin-right: 28px;
+    border: 1px solid #dfdfdf;
 }
 .organization-country {
     margin: 0;
@@ -2463,7 +2457,6 @@ br.big {
 }
 .organization-link {
     font-size: 112.5%;
-    color: #4D5060;
     line-height: 34px;
 }
 .introlink{
@@ -2574,8 +2567,11 @@ br.big {
     height: 33px;
     margin-right: 30px;
 }
+.marketplace-flag {
+    border: 1px solid #dfdfdf;
+}
 .marketplace-link {
-    color: #4D5060;
+    color: #3490E6;
 }
 .exchanges-introlink {
     margin-left: 30px;
@@ -2747,10 +2743,11 @@ br.big {
     line-height: 22px;
     font-weight: 400;
 }
+.windows-card,
 .mac-card,
 .linux-card,
 .arm-card,
-.ubuntu-card {
+.snap-card {
     min-height: 60px;
 }
 .windows-card::before {
@@ -2790,14 +2787,14 @@ br.big {
     background: url(../img/os/arm.png?1528322191) 50% 50% no-repeat;
     background-size: contain;
 }
-.ubuntu-card::before {
+.snap-card::before {
     content: '';
     position: absolute;
     top: 15px;
     left: 20px;
     width: 30px;
     height: 30px;
-    background: url(../img/os/med_ubuntu.svg?1528322191) 50% 50% no-repeat;
+    background: url(../img/os/med_snap.svg?1528322191) 50% 50% no-repeat;
     background-size: contain;
 }
 .downloadkeys-title {
@@ -3511,12 +3508,6 @@ br.big {
     .footerlicense {
         max-width: 410px;
     }
-    .footer-social {
-        order: 1;
-        width: 100%;
-        margin-top: 20px;
-        justify-content: flex-end;
-    }
     .home-title {
         margin: 0 0 43px;
     }
@@ -3601,7 +3592,7 @@ br.big {
     .mainhero {
         padding: 110px 0 100px;
     }
-    .mainhero .hero-social {
+    .mainhero {
         top: auto;
         right: 30px;
         bottom: 0;
@@ -3915,9 +3906,6 @@ br.big {
     .footerlicense {
         max-width: 100%;
         text-align: center;
-    }
-    .footer-social {
-        justify-content: center;
     }
     .maindesc-text {
         max-width: 90%;
@@ -4301,9 +4289,6 @@ br.big {
     }
     .own-timeline-number::after {
         width: 80px;
-    }
-    .hero-social {
-        display: none;
     }
 }
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
@@ -5040,6 +5025,8 @@ br.big {
     }
 }
 
+@import 'wallet-menu-noscript';
 @import 'wallets';
-@import 'wallets-menu';
+@import 'wallet-selector';
+@import 'helper';
 @import 'donation-banner';
