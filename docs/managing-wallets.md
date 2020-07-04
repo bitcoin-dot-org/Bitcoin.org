@@ -25,8 +25,10 @@ in the future
 - Website supports HTTPS and 301 redirects HTTP requests
 - SSL certificate passes [Qualys SSL Labs SSL
   test](https://www.ssllabs.com/ssltest/)
-- Website serving executable code or requiring authentication uses HSTS with a
-  max-age of at least 180 days
+- Website serving or linking to executable code or requiring authentication uses HSTS
+  - Existing listings: With a max-age of at least 180 days
+  - New listings: With a max-age of at least 1 year, and preload and includeSubDomains directives to qualify for browser preload list inclusion
+  `e.g. Strict-Transport-Security: max-age=31536000; includeSubDomains; preload`
 - The identity of CEOs and/or developers is public
 - Avoid address reuse by displaying a new receiving address for each transaction
   in the wallet UI
