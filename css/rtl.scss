@@ -284,7 +284,16 @@ h2 .rssicon{
 .wallets .checkneutral>div>span{
 	background-image:url(/img/icons/checkbubble_neutral_rtl.svg?1528322191);
 }
-
+.wallet-os-check-item {
+    padding: 0 30px 0 0;
+}
+.wallet-os-check-item::before {
+    left: auto;
+    right: 0;
+}
+.wallet-os-check-details {
+    text-align: right;
+}
 .warningicon{
 	margin-right:0;
 	margin-left:6px;
@@ -478,6 +487,17 @@ h2 .rssicon{
 .sidebar-selector-platform+.sidebar-selector-platform {
 	margin: 0 15px 0 0;
 }
+.user-radio-text {
+	padding: 0 36px 0 0;
+}
+.user-radio-text::before {
+	left: auto;
+	right: 0;
+}
+.user-radio-text::after {
+	left: auto;
+	right: 7px;
+}
 .checkbox-text {
 	padding: 0 36px 0 0;
 }
@@ -619,17 +639,6 @@ h2 .rssicon{
 	}
 	.user-radio-row + .user-radio-row {
     margin: 0 40px 0 0;
-	}
-	.user-radio-text {
-		padding: 0 36px 0 0;
-	}
-	.user-radio-text::before {
-		left: auto;
-		right: 0;
-	}
-	.user-radio-text::after {
-		left: auto;
-		right: 7px;
 	}
 	.user-radio-wrapper {
 		margin: 0 0 0 9px;
