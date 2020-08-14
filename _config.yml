@@ -611,9 +611,9 @@ text:
   ##   value so we don't need to update too often
   subsidy_in_decimal_bitcoins: 6.25
   ## cd ~ ; du -sh .bitcoin/ --exclude=testnet3 --exclude=regtest
-  bitcoin_datadir_gb: 200
+  bitcoin_datadir_gb: 350
   ## Slightly smaller than the total datadir size
-  chain_gb: 195
+  chain_gb: 340
   ## The main difference between the datadir size and the chain size, if
   ## you don't have any extra indices
   bitcoin_datadir_gb_pruned: 5
