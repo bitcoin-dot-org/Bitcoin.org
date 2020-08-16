@@ -358,12 +358,19 @@ h2 .rssicon{
 	border-left: none;
 	border-right: 1px solid #dfdfdf;
 }
+.toccontent-intro {
+    padding: 0 30px 40px 0;
+	direction: rtl;
+}
 .toccontent p {
 	direction: rtl;
 	text-align: right;
 }
 .toccontent li {
 	text-align: right;
+	direction: rtl;
+}
+.boxexpand {
 	direction: rtl;
 }
 .boxexpand>h1:first-child,
