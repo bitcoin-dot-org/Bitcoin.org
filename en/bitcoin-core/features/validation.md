@@ -367,19 +367,19 @@ Bitcoin's rules for all those non-verifying users who outsourced their power.
 
 <table class="received_transactions center">
   <tr>
-    <td class="center" markdown="span">*Users of Bitcoin banks*<br
-      >**Trust bankers**{:.fgred}</td>
+    <td class="center" markdown="span">*Users of Bitcoin banks*<br>
+      **Trust bankers**{:.fgred}</td>
 
-    <td class="center" markdown="span">*Users of P2P lightweight wallets*<br
-    >**Trust miners**{:.fgred}</td>
+    <td class="center" markdown="span">*Users of P2P lightweight wallets*<br>
+    **Trust miners**{:.fgred}</td>
   </tr>
 
   <tr>
-    <td class="center" markdown="span">*Users of client lightweight wallets*<br
-    > **Trust "free" services**{:.fgred}</td>
+    <td class="center" markdown="span">*Users of client lightweight wallets*<br>
+    **Trust "free" services**{:.fgred}</td>
 
-    <td class="center" markdown="span">*Users of Bitcoin Core*<br
-    >**Enforce the rules**{:.fggreen}</td>
+    <td class="center" markdown="span">*Users of Bitcoin Core*<br>
+    **Enforce the rules**{:.fggreen}</td>
   </tr>
 </table>
 

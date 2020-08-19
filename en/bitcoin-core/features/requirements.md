@@ -94,14 +94,14 @@ help].
 
 - {{MEMORY}} 512 MB
 
-- {{SYSTEM}} Desktop<br
-  >Laptop<br
-  >[Some ARM chipsets][wiki bitcoin core compatible devices arm] >1 GHz
+- {{SYSTEM}} Desktop<br>
+  Laptop<br>
+  [Some ARM chipsets][wiki bitcoin core compatible devices arm] >1 GHz
 
-- {{OS}} Windows 7/8.x<br
-  >Mac OS X<br
-  >Linux<br
-  >Some BSDs
+- {{OS}} Windows 7/8.x<br>
+  Mac OS X<br>
+  Linux<br>
+  Some BSDs
 
 
 {{INITIAL_DOWNLOAD}}
@@ -122,14 +122,14 @@ help].
 
 - {{MEMORY}} 256 MB
 
-- {{SYSTEM}} Desktop<br
-  >Laptop<br
-  >[Most ARM chipsets][wiki bitcoin core compatible devices arm]
+- {{SYSTEM}} Desktop<br>
+  Laptop<br>
+  [Most ARM chipsets][wiki bitcoin core compatible devices arm]
 
-- {{OS}} Windows 7/8.x<br
-  >Mac OS X<br
-  >Linux<br
-  >Some BSDs
+- {{OS}} Windows 7/8.x<br>
+  Mac OS X<br>
+  Linux<br>
+  Some BSDs
 
 
 {{INITIAL_DOWNLOAD}}
@@ -152,13 +152,13 @@ help].
 
 - {{MEMORY}} 1 GB
 
-- {{SYSTEM}} Desktop<br
-  >Laptop<br
-  >[Some ARM chipsets][wiki bitcoin core compatible devices arm] >1 GHz
+- {{SYSTEM}} Desktop<br>
+  Laptop<br>
+  [Some ARM chipsets][wiki bitcoin core compatible devices arm] >1 GHz
 
-- {{OS}} Windows 7/8.x/10<br
-  >Mac OS X<br
-  >Linux
+- {{OS}} Windows 7/8.x/10<br>
+  Mac OS X<br>
+  Linux
 
 
 {{INITIAL_DOWNLOAD}}
