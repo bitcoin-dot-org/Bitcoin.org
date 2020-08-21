@@ -48,7 +48,7 @@ http://opensource.org/licenses/MIT.
         {% for amount in site.donation_banner.amounts_in_usd %}
         <button type="button" class="donation-amount-btn" data-amount-usd="{{ amount }}">
           ${{ amount }}.00
-          <div class="donation-amount-usd-in-btc">(... BTC)</div>
+          <span class="donation-amount-usd-in-btc">(... BTC)</span>
         </button>
         {% endfor %}
       </div>
