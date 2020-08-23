@@ -90,6 +90,10 @@ h2 .rssicon{
 	margin-right:10px;
 	margin-bottom:18px;
 }
+..mainvideo-btn-open {
+	padding: 0 65px 0 0;
+	background: url(../img/icons/play-btn.svg?1528322191) right no-repeat;
+}
 .mainbutton a,
 .mainbutton a:link,
 .mainbutton a:visited,
@@ -397,9 +401,6 @@ h2 .rssicon{
 .toc ul, .toc li {
 	text-align: right;
 }
-.btn-container {
-	direction: ltr;
-}
 .accordion-item {
 	margin: 0 3% 20px 0;
 }
@@ -422,8 +423,24 @@ h2 .rssicon{
 .own p {
 	text-align: right;
 }
+.own-timeline {
+	direction: rtl;
+	margin-right: 0;
+	margin-left: 30px;
+}
+.own-timeline-number::after {
+	right: 0;
+	left: auto;
+}
+.own .own-timeline-text {
+	margin-right: 0;
+	margin-left: 20px;
+}
 .own-timeline-number {
 	margin: 0 0 0 95px;
+}
+.own-alert {
+	direction: rtl;
 }
 .controll p {
 	text-align: right;
@@ -515,6 +532,10 @@ h2 .rssicon{
 .sidebar-selector-text {
 	text-align: right;
 }
+.wallet-hint {
+	margin-right: 0;
+	margin-left: 30px;
+}
 .wallet-hint-text {
 	margin: 0 8px 0 0;
 }
@@ -547,6 +568,16 @@ h2 .rssicon{
 .wallet-selector-tooltip {
 	left: auto;
 	right: -20px;
+	text-align: right;
+}
+.tooltip .close-btn {
+	right: auto;
+	left: 7px;
+}
+.tooltip-title {
+	text-align: right;
+}
+.tooltip-text {
 	text-align: right;
 }
 .tooltip::after, 
@@ -873,6 +904,9 @@ h2 .rssicon{
 	}
 }
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
+	.own-timeline {
+		margin-left: 0;
+	}
 	.maincard img {
 		margin: 0 0 0 28px;
 	}
