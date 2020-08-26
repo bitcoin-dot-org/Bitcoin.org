@@ -2550,6 +2550,12 @@ br.big {
             justify-content: flex-start;
     width: 61%;
 }
+.exchanges-north-america .marketplace-row {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 61%;
+}
 
 .marketplace {
     width: 240px;
@@ -2558,7 +2564,7 @@ br.big {
 .exchanges-europe .marketplace:nth-child(even) {
     width: 400px;
 }
-.exchanges-North-America .marketplace:nth-child(even) {
+.exchanges-north-america .marketplace:nth-child(even) {
     width: 400px;
 }
 .marketplace h3 {
