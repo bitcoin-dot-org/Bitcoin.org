@@ -2535,7 +2535,7 @@ br.big {
             justify-content: space-between;
 }
 .general-marketplace {
-    width: 360px;
+    width: 240px;
 }
 .expanded .marketplace-row {
     display: -webkit-box;
@@ -2552,6 +2552,10 @@ br.big {
 }
 
 .marketplace {
+    width: 240px;
+    margin: 0 0 45px 0;
+}
+.marketplace-expended {
     width: 360px;
     margin: 0 0 45px 0;
 }
