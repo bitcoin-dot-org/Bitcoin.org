@@ -11,7 +11,24 @@ http://opensource.org/licenses/MIT.
       <li><a href="https://developer.bitcoin.org/">{% translate menu-bitcoin-for-developers layout %}</a></li>
       <li{% if page.id == 'getting-started' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate menu-getting-started layout %}</a></li>
       <li{% if page.id == 'how-it-works' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate how-it-works url %}">{% translate menu-how-it-works layout %}</a></li>
-      {% if page.lang == 'en' %}<li{% if page.id == 'bitcoin-paper' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-paper url %}">{% translate menu-white-paper layout %}</a></li>{% endif %}
+      {% if
+         page.lang == 'en' or
+         page.lang == 'de' or
+         page.lang == 'es' or
+         page.lang == 'hu' or
+         page.lang == 'id' or
+         page.lang == 'it' or
+         page.lang == 'ja' or
+         page.lang == 'nl' or
+         page.lang == 'pt_BR' or
+         page.lang == 'ru' or
+         page.lang == 'sr' or
+         page.lang == 'sv' or
+         page.lang == 'uk' or
+         page.lang == 'zh_CN'
+      %}
+      <li{% if page.id == 'bitcoin-paper' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate bitcoin-paper url %}">{% translate menu-white-paper layout %}</a></li>
+      {% endif %}
     </ul>
   </li>
   <li><a class="is-expand">{% translate menu-resources layout %}</a>
@@ -23,10 +40,7 @@ http://opensource.org/licenses/MIT.
         After the developer-documentation page is translated, add the language
         to the condition below
       {% endcomment %}
-      {% if
-        page.lang == 'en' or
-        page.lang == 'uk'
-      %}
+      {% if page.lang == 'en' %}
       <li><a href="https://developer.bitcoin.org/">{% translate menu-developer-documentation layout %}</a></li>
       {% endif %}
       <li{% if page.id == 'vocabulary' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
