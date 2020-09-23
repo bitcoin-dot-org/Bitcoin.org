@@ -2,31 +2,31 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-id: armory
-title: "Armory"
-titleshort: "Armory"
+id: infinitywallet
+title: "Infinity Wallet"
+titleshort: "Infinity Wallet"
 compat: "desktop windows mac linux"
 level: 2
 platform:
   - desktop:
     name: desktop
     default: &DEFAULT
-      text: "walletarmory"
-      link: "https://btcarmory.com/"
-      source: "https://github.com/goatpig/BitcoinArmory"
+      text: "walletinfinitywallet"
+      link: "https://infinitywallet.io/"
+      source: "https://infinitywallet.io/download"
       screenshot: "armory.png"
-      features: "full_node legacy_addresses multisig segwit"
+      features: "2fa bech32 legacy_addresses segwit"
       check:
         control: "checkgoodcontrolfull"
-        validation: "checkgoodvalidationfullnoderequired"
-        transparency: "checkpasstransparencyopensource"
-        environment: "checkfailenvironmentdesktop"
-        privacy: "checkgoodprivacyimproved"
+        validation: "checkpassvalidationspvp2p"
+        transparency: "checkgoodtransparencydeterministic"
+        environment: "checkpassenvironmenttwofactor"
+        privacy: "checkpassprivacybasic"
         fees: "checkgoodfeecontrolfull"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
         privacydisclosure: "checkpassprivacydisclosurefullnode"
-        privacynetwork: "checkpassprivacynetworksupporttorproxy"
+        privacynetwork: "checkfailprivacynetworknosupporttor"
     os:
       - name: windows
         <<: *DEFAULT
