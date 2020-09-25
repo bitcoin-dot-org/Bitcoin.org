@@ -14,7 +14,7 @@ platform:
       text: "walletinfinitywallet"
       link: "https://infinitywallet.io/"
       source: "https://infinitywallet.io/download"
-      screenshot: "armory.png"
+      screenshot: "infinitywallet.png"
       features: "2fa bech32 legacy_addresses segwit"
       check:
         control: "checkgoodcontrolfull"
