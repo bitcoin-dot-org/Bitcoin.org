@@ -18,14 +18,14 @@ platform:
       features: "2fa bech32 legacy_addresses segwit"
       check:
         control: "checkgoodcontrolfull"
-        validation: "checkpassvalidationspvp2p"
-        transparency: "checkgoodtransparencydeterministic"
+        validation: "checkpassvalidationspvservers"
+        transparency: "checkpasstransparencyopensource"
         environment: "checkpassenvironmenttwofactor"
         privacy: "checkpassprivacybasic"
         fees: "checkgoodfeecontrolfull"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
-        privacydisclosure: "checkpassprivacydisclosurefullnode"
+        privacydisclosure: "checkfailprivacydisclosurespv"
         privacynetwork: "checkfailprivacynetworknosupporttor"
     os:
       - name: windows
