@@ -76,8 +76,7 @@ Optional criteria (some could become requirements):
 
 *Before adding a wallet,* please make sure your wallet meets all of the
 Basic Requirements listed above, or open a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
-to request an exemption or policy change. Feel free to email Will Binns
-([will@bitcoin.org](mailto:will@bitcoin.org)) if you have any questions.
+to request an exemption or policy change.
 
 You should follow the guidelines of the [Wikipedia Manual of Style](https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Trademarks) for trademark capitalization.  For example, if you call your wallet **WEAKBOX wallet** it should be listed as **Weakbox wallet**.
 
