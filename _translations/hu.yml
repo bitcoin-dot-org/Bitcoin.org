@@ -10,7 +10,7 @@ hu:
     owntxt2: "2011 és 2013 között az oldalt elsősorban új szoftververziók kibocsátására használták. Ezt ma már Bitcoin Core-nak hívják. 2013-ban újratervezték az weblapot: több oldalt adtak hozzá, további Bitcoin-szoftvereket listáztak, illetve létrehozták a fordítórendszert."
     owntxt3-title: "A fejlesztői dokumentációt 2014-ben tették közzé."
     owntxt3: "Örömmel fogadunk frissítéseket, javításokat, ajánlásokat és fejlesztéseket a közösség tagjaitól."
-    owntxt4-title: "Az oldal egy független, nyílt forráskódú projekt""
+    owntxt4-title: "Az oldal egy független, nyílt forráskódú projekt"
     owntxt5: "A Bitcoin.org nem a Bitcoin hivatalos weboldala. Ahogy senki sem birtokolja az e-mail technológiáját, úgy senki sem birtokolja a Bitcoin-hálózatot. És mint ilyen, senki nem beszélhet a Bitcoin nevében."
     control: "Szóval... ki irányítja a Bitcoint?"
     controltxt: "A Bitcoint a világ minden táján élő Bitcoin-felhasználók irányítják. A fejlesztők tökéletesítik ugyan a szoftvert, de nem kényszeríthetik ki a Bitcoin-protokoll szabályainak megváltoztatását, mivel az összes felhasználó szabadon választhatja meg, hogy milyen szoftvert használ. A kompatibilitás megteremtése érdekében minden felhasználónak azonos szabályokat követő szoftvert kell használnia. A Bitcoin csak a felhasználók teljes egyetértése mellett tud megfelelően működni. Ebből fakadóan minden felhasználó és fejlesztő erősen érdekelt e konszenzus megteremtésében és fenntartásában."
@@ -160,7 +160,6 @@ hu:
     wikiportal: "Látogasd meg a <a href=\"https://en.bitcoin.it/wiki/Bitcoin:Community_portal\">Közösségi portált</a> a Wikin."
   choose-your-wallet:
     title: "Válassz pénztárcát – Bitcoin"
-    metadescription: ""
     pagetitle: "Válassz Bitcoin-tárcát"
     pagedesc: "Válaszd ki, milyen tárcában szeretnéd tárolni a bitcoinjaidat, és továbbíts pénzt a hálózaton."
     helper-illustration: "emberek és tárcák"
@@ -196,7 +195,6 @@ hu:
     wizard-user-new: "Új"
     wizard-user-new-description-search: "Mely tárcák ideálisak az új Bitcoin-felhasználók számára a keresési feltételeim alapján."
     wizard-user-experienced: "Tapasztalt"
-    wizard-user-experienced-description: ""
     wizard-user-experienced-description-search: "Mutasd az összes tárcát a keresési feltételeim alapján."
     wizard-criteria-control: "Felügyelet"
     wizard-criteria-control-description: "Néhány tárca teljes kontrollt biztosít bitcoinjaid felett. Ez azt jelenti, hogy semmilyen harmadik fél nem tudja zárolni vagy ellopni a bitcoinjaidat. Ennek ellenére továbbra is a te felelősséged, hogy biztosítsd a tárcádat és biztonsági mentést készíts róla."
@@ -262,6 +260,7 @@ hu:
     walletledgernanos: "A Ledger Nano S egy biztonságos Bitcoin-hardvertárca. Bármilyen számítógéphez csatlakozhat USB-n keresztül, ezenfelül rendelkezik egy OLED-kijelzővel a másodszori ellenőrzés érdekében. Minden tranzakció hitelesítését egyetlen gombnyomással el lehet végezni."
     walletblw: "Lightning hálózatot is támogató mobiltárcák"
     walleteclairmobile: "Az Eclair Mobile egy új generációs, Lightning-kompatibilis Bitcoin-tárca. Használható normális Bitcoin-tárcaként, de összekapcsolható a Lightning hálózatával is, olcsó és azonnali utalások érdekében."
+    walletwasabi: "A Wasabi egy nyílt forrású, nem letéti, személyes adatok védelmére fókuszáló Bitcoin tárca Windowsra, Linuxra és Macre. Beépített Tor anonimitás hálózat, CoinJoin és érmekontroll funkciókkal jön."
     walletdownload: "Telepítés"
     walletvisit: "Tovább a weboldalra"
     walletsourcecode: "Forráskód"
@@ -434,53 +433,6 @@ hu:
     transactionssummary: "A felhasználók szatosikat tranzakciók révén költhetik el. Minden tranzakció több részből áll, amely lehetővé teszi az egyszerű, direkt utalások mellett az összetett tranzakciókat is."
     walletstitle: "Tárcák"
     walletssummary: "A Bitcoin tárca jelentheti mind a tárcaprogramot, mind pedig a tárcafájlt. A tárcaprogramok nyilvános kulcsokat hoznak létre a szatosik fogadására, és ezeknek megfelelő privát kulcsokat generálnak a szatosik elköltésére. A tárcafájlok a privát kulcsok tárolására szolgának, és (opcionálisan) egyéb információt is tartalmazhatnak a tranzakciókról a tárcaprogram számára."
-  developer-reference:
-    title: "Bitcoin-fejlesztői referencia – Bitcoin"
-    pagetitle: "Bitcoin-fejlesztői referencia"
-    summary: "Találj technikai részleteket és API-dokumentációt."
-  developer-glossary:
-    title: "Fejlesztői szótár – Bitcoin"
-    pagetitle: "Bitcoin-fejlesztői szótár"
-    subsummary: "Ez egy technikai szótár. A nem technikai felhasználók a [szószedet oldal] (/hu/szószedet/) oldalt használják."
-    suggestnewterm: "Nem találod amit keresel? [Ajánlj egy új definíciót][1] a szótárnak!"
-    definitionnotice: "A definíció forrása a [technikai magyarázó](/hu/fejlesztői-magyarazo) oldal."
-    sectiontitledefinition: "Definíció"
-    sectiontitlesynonyms: "Szinonimák"
-    sectiontitlenottobeconfused: "Nem összekeverendő"
-    sectiontitlelinks: "Linkek"
-    categorynumbers: "Számok"
-  blockchain-guide:
-    title: "Útmutató a blokkláncról – Bitcoin"
-    pagetitle: "Blokklánc"
-    summary: "A blokklánc tartalmazza a Bitcoin nyilvános főkönyvét, vagyis a rendezett és időbélyeggel ellátott tranzakciókat. A rendszert arra használják, hogy megvédjék a hálózatot a dupla költés, valamint a korábbi tranzakciórekordok megváltoztatásának lehetőségétől."
-  contracts-guide:
-    title: "Útmutató a szerződésekről – Bitcoin"
-    pagetitle: "Szerződések"
-    summary: "A szerződések olyan tranzakciók, amelyet a decentralizált Bitcoin rendszer a pénzügyi megállapodásainak érvényesítésére használ. A Bitcoin szerződések gyakran alakíthatók ki úgy, hogy minimalizálják a külső ügynököktől – például a bírósági rendszerektől – való függőséget. Ez jelentősen csökkentheti annak a kockázatát, hogy ismeretlen entitások vegyenek részt a pénzügyi tranzakciókban."
-  mining-guide:
-    title: "Útmutató a bányászatról – Bitcoin"
-    pagetitle: "Bányászat"
-    summary: "A bányászat új blokkokat ad hozzá a blokklánchoz, és megnehezíti a tranzakciótörténet megváltoztatását."
-  operating-modes-guide:
-    title: "Útmutató a műveleti módokról – Bitcoin"
-    pagetitle: "Műveleti módok"
-    summary: "A Bitcoin szoftver különböző biztonsági szintekkel, egyensúlyokkal és fékekkel rendelkezik a blokklánc hitelesítése érdekében."
-  p2p-network-guide:
-    title: "Útmutató a P2P-hálózatról – Bitcoin"
-    pagetitle: "P2P-hálózat"
-    summary: "A Bitcoin hálózat protokollja lehetővé teszi a teljes csomópontoknak (peerek), hogy együttműködve tarthassák fenn a peer-to-peer hálózatot, a blokkok és tranzakciók egymás között történő kicserélései révén."
-  payment-processing-guide:
-    title: "Utalásfeldolgozási útmutató - Bitcoin"
-    pagetitle: "Utalásfeldolgozás"
-    summary: "Az utalásfeldolgozás magában foglalja azokat a lépéseket, amelyeket a küldők és a pénzt fogadók hajtanak végre valamilyen termékért vagy szolgáltatásért cserébe. A kereskedelem hajnala óta az alapvető lépések nem változtak, a technológia azonban igen."
-  transactions-guide:
-    title: "Útmutató a tranzakciókról – Bitcoin"
-    pagetitle: "Tranzakciók"
-    summary: "A felhasználók a szatosikat tranzakciók révén költhetik el. Minden tranzakció több részből áll, amely lehetővé teszi az egyszerű, közvetlen fizetések mellett az összetett tranzakciókat is."
-  wallets-guide:
-    title: "Útmutató a tárcákról – Bitcoin"
-    pagetitle: "Tárcák"
-    summary: "A Bitcoin tárca jelentheti mind a tárcaprogramot, mind pedig a tárcafájlt. "
   development:
     title: "Fejlesztés – Bitcoin"
     pagetitle: "Bitcoin-fejlesztés"
@@ -764,7 +716,6 @@ hu:
     processing: "Feldolgozás<span class=\"titlelight\"> - bányászat</span>"
     processingtxt: "A bányászat egy <b>elosztott, konszenzusra épülő rendszer</b>, amely a blokkláncra való fűzéssel a visszaigazolásra váró tranzakciók <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>megerősítésére</i></a> szolgál. Kikényszeríti a blokkláncon belül található elemek időrendi sorrendjét, biztosítja a hálózat semlegességét és lehetővé teszi, hogy különböző számítógépek egyetérthessenek a rendszer állapotát illetően. A visszaigazoláshoz a tranzakcióknak <a href=\"#vocabulary##[vocabulary.block]\"><i>blokkba</i></a> csomagoltnak kell lenniük, amely nagyon szigorú kriptográfiai szabályokat követ, és amelyet a hálózat visszaigazol. E szabályok megakadályozzák a korábbi blokkok módosítását, mivel a módosítás érvénytelenítené az azt követő összes blokkot. A bányászat ezenkívül egyfajta lottót hoz létre, amely meggátolja, hogy bármely személy egyszerűen egymás után blokkokat adjon hozzá a blokklánchoz. Ily módon egyetlen személy sem vonhatja ellenőrzése alá a blokklánc tartalmát vagy cserélheti ki a blokklánc egyes részeit kifizetései visszatérítése érdekében."
     readmore: "Fejest ugrani az ismeretlenbe"
-    readmoretxt: ""
   index:
     title: "Bitcoin - Nyílt forráskódú, P2P pénz"
     metadescription: "A Bitcoin egy innovatív fizetési hálózat és egy újfajta pénz. Tudjon meg mindent, és vágjon bele a Bitcoinba a bitcoin.org weboldalon."
@@ -1103,7 +1054,6 @@ hu:
     banner-core-moved: |
         Ez az oldal elköltözött az új Bitcoin Core
         oldalra (kattints ide az átirányításhoz)
-    banner-translate: ""
     footer: "Az <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licence</a> alatt közzétéve"
     donate-community: "Támogasd a Bitcoin.org-ot"
     donate-support: "A Bitcoin.org honlapot a közösség támogatja."
