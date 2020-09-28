@@ -55,8 +55,8 @@ recovery process.
     input)
   - Protects the seed against unsigned firmware upgrades
   - Supports importing custom seeds
-  - Provides source code and/or detailed specification for blackbox testing if
-    using a closed-source Secure Element
+  - Provides source code created for all open components and provides detailed specification for blackbox testing of
+    any closed-source secure elements
 
 Optional criteria (some could become requirements):
 
