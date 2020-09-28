@@ -235,7 +235,7 @@ en:
     wizard-feature-2fa: "2FA"
     wizard-feature-2fa-description: "Two-factor authentication (2FA) is a way to add additional security to your wallet. The first 'factor' is your password for your wallet. The second 'factor' is a verification code retrieved via text message or from an app on a mobile device. 2FA is conceptually similar to a security token device that banks in some countries require for online banking. It likely requires relying on the availability of a third party to provide the service."
     wizard-feature-bech32: "Bech32"
-    wizard-feature-bech32-description: "Bech32 is a special address format made possible by SegWit (see the feature description for SegWit for more info). This address format is also known as 'bc1 addresses'. Some bitcoin wallets and services do not yet support sending and/or receiving to or from Bech32 addresses."
+    wizard-feature-bech32-description: "Bech32 is a special address format made possible by SegWit (see the feature description for SegWit for more info). This address format is also known as 'bc1 addresses'. Some bitcoin wallets and services do not yet support sending or receiving to Bech32 addresses."
     wizard-feature-full_node: "Full Node"
     wizard-feature-full_node-description: "Some wallets fully validate transactions and blocks. Almost all full nodes help the network by accepting transactions and blocks from other full nodes, validating those transactions and blocks, and then relaying them to further full nodes."
     wizard-feature-hardware_wallet: "Hardware Wallet"

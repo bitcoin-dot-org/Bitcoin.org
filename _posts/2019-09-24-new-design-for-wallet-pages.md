@@ -91,7 +91,7 @@ on the availability of a third party to provide the service.
 + **Bech32:** Bech32 is a special address format made possible by SegWit (see
   the feature description for SegWit for more info). This address format is also
 known as 'bc1 addresses'. Some bitcoin wallets and services do not yet support
-sending and/or receiving to or from Bech32 addresses.
+sending or receiving to Bech32 addresses.
 + **Full Node:** Some wallets fully validate transactions and blocks. Almost all
   full nodes help the network by accepting transactions and blocks from other
 full nodes, validating those transactions and blocks, and then relaying them to

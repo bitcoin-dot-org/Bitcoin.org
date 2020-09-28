@@ -17,7 +17,7 @@ group :development do
   gem 'jekyll', '~>4.0'
   gem 'json', '>= 1.9'
   gem 'less', '2.4.0'
-  gem 'kramdown', '~>2.1'
+  gem 'kramdown', '~>2.3'
   gem 'RedCloth', ">= 4.3.0"
   gem 'therubyracer' # required by less
   gem 'jshintrb', '~>0.3.0'
