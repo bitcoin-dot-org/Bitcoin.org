@@ -13,7 +13,7 @@ Submit a pull request resolving the issue along with an accompanying note or
 comment containing a bitcoin address and automatically receive a payment in the
 amount of the bounty if it gets merged.
 
-## How to Participate
+## How to Participate?
 The following quick guides will help you get started:
 
 + [Becoming a Contributor](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/become-a-contributor.md)
