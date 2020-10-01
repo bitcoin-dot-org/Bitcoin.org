@@ -10,7 +10,7 @@ Report problems or help improve the site by opening a [new issue](https://github
 Open issues [labeled with "Bounty"](https://github.com/bitcoin-dot-org/bitcoin.org/labels/Bounty)
 have bounties on them. Viewing the issue will reveal the value of the bounty.
 Submit a pull request resolving the issue along with an accompanying note or
-comment containing a bitcoin address and automatically receive a payment in the
+comment containing a bitcoin address and automatically receive a  payment  as reward in the
 amount of the bounty if it gets merged.
 
 ## How to Participate
