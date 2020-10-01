@@ -4,7 +4,7 @@ Current Build Status: ![Build Status](https://travis-ci.org/bitcoin-dot-org/bitc
 
 Live site: [Bitcoin.org](https://bitcoin.org)
 
-Report problems or help improve the site by opening a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) or [pull request](https://github.com/bitcoin-dot-org/bitcoin.org/compare).
+Feel Free to Report problems or help improve the site by opening a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new) or [pull request](https://github.com/bitcoin-dot-org/bitcoin.org/compare).
 
 ## Earn Bitcoin for Contributing
 Open issues [labeled with "Bounty"](https://github.com/bitcoin-dot-org/bitcoin.org/labels/Bounty)
