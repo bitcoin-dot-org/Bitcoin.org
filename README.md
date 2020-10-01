@@ -13,6 +13,9 @@ Submit a pull request resolving the issue along with an accompanying note or
 comment containing a bitcoin address and automatically receive a payment in the
 amount of the bounty if it gets merged.
 
+Bitcoin is an innovative payment network and a new kind of money. Find all you
+need to know and get started with Bitcoin on bitcoin.org
+
 ## How to Participate
 The following quick guides will help you get started:
 
