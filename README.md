@@ -1,4 +1,4 @@
-# Welcome to Bitcoin.org's Codebase
+# Welcome to Bitcoin.org's Codebase (Know All About Bitcoin)
 
 Current Build Status: ![Build Status](https://travis-ci.org/bitcoin-dot-org/bitcoin.org.svg?branch=master)
 
@@ -8,7 +8,7 @@ Report problems or help improve the site by opening a [new issue](https://github
 
 ## Earn Bitcoin for Contributing
 Open issues [labeled with "Bounty"](https://github.com/bitcoin-dot-org/bitcoin.org/labels/Bounty)
-have bounties on them. Viewing the issue will reveal the value of the bounty.
+have bounties on them. Viewing the issue will reveals the value of the bounty.
 Submit a pull request resolving the issue along with an accompanying note or
 comment containing a bitcoin address and automatically receive a payment in the
 amount of the bounty if it gets merged.
