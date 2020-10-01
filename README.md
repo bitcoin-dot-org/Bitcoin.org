@@ -1,3 +1,4 @@
+Logo -  An Amazing Project
 # Welcome to Bitcoin.org's Codebase
 
 Current Build Status: ![Build Status](https://travis-ci.org/bitcoin-dot-org/bitcoin.org.svg?branch=master)
