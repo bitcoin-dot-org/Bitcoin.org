@@ -1,4 +1,4 @@
-## Contributing
+## its an amazing Contribution
 The following quick guides will help you get started:
 
 + [Becoming a Contributor](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/become-a-contributor.md)
