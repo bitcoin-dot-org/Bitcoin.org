@@ -1,4 +1,5 @@
 # Welcome to Bitcoin.org's Codebase
+Bitcoins are not just a marketing gimmick anymore. More than 80,000 businesses are already on the bandwagon; so why not yours?
 
 Current Build Status: ![Build Status](https://travis-ci.org/bitcoin-dot-org/bitcoin.org.svg?branch=master)
 
@@ -29,4 +30,4 @@ The following quick guides will help you get started:
 
 ### Code of Conduct
 
-Participation in this project is subject to a [Code of Conduct](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/CODE_OF_CONDUCT.md).
+Participation in this project is subject to a [Code of Conduct](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/CODE_OF_CONDUCT.md). 
