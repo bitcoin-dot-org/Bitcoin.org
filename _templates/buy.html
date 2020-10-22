@@ -11,31 +11,13 @@ id: buy
 <div class="hero">
   <div class="container hero-container">
     <h1>{% translate pagetitle %}</h1>
-    <p class="summary">{% translate summary %}</p>
   </div>
 </div>
 
 <div class="container">
-  <div class="row card-row">
-    <div class="card buy-card">
-      <img src="/img/icons/ico_exchange.svg?{{site.time | date: '%s'}}" alt="Bank icon">
-      <h2 id="bitcoin-exchange">
-        {% translate bitcoin-exchange %}</h2>
-      <p>{% translate bitcoin-exchange-text %}</p>
-    </div>
-    
-    <div class="card buy-card">
-      <img src="/img/icons/ico_local.svg?{{site.time | date: '%s'}}" alt="Signpost icon">
-      <h2 id="p2p-directory">
-        {% translate p2p-bitcoins %}</h2>
-      <p>{% translate p2p-bitcoins-text %}</p>
-    </div>
-    
-    <div class="card buy-card">
-      <img src="/img/icons/ico_atm.svg?{{site.time | date: '%s'}}" alt="Card icon">
-      <h2 id="bitcoin-atm">
-        {% translate bitcoin-atm %}</h2>
-      <p>{% translate bitcoin-atm-text %}</p>
+  <div class="row card-row" style="justify-content: center;">
+	  <div class="card buy-card" style="height: 600px;width: 500px;margin-top: -30px;">
+		  <iframe allow="accelerometer; autoplay; camera; gyroscope; payment" src="https://buy.moonpay.io?apiKey=pk_live_QWvwDl3WJAq7S8fDjsOUMfjn09DSw8R&amp;currencyCode=btc&amp;colorCode=%23F7931A" width="100%" height="100%" frameborder="0"></iframe>
     </div>
   </div>
 </div>

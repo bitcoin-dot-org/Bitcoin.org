@@ -30,10 +30,3 @@ The following quick guides will help you get started:
 ### Code of Conduct
 
 Participation in this project is subject to a [Code of Conduct](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/CODE_OF_CONDUCT.md).
-
-### Donations
-
-Bitcoin.org is community supported: [3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa](bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa)
-
-### Questions?
-Please contact Will Binns ([will@bitcoin.org](mailto:will@bitcoin.org)) if you need help.

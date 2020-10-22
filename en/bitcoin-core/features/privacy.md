@@ -237,23 +237,23 @@ options:
 
 <table class="received_transactions center">
   <tr>
-    <td class="center" markdown="span">**Ask bankers**{:.fgred}<br
-      >They'll monitor your every transaction<br><br
-      ><button class="popup js" data-container="bitcoin_bank_receiving">Bitcoin banks</button></td>
+    <td class="center" markdown="span">**Ask bankers**{:.fgred}<br>
+      They'll monitor your every transaction<br><br>
+      <button class="popup js" data-container="bitcoin_bank_receiving">Bitcoin banks</button></td>
 
-    <td class="center" markdown="span">**Ask random nodes**{:.fgred}<br
-      >Some of which sell your data<br><br
-      ><button class="popup js" data-container="bloom_filter_receiving">P2P lightweight wallets</button></td>
+    <td class="center" markdown="span">**Ask random nodes**{:.fgred}<br>
+      Some of which sell your data<br><br>
+      <button class="popup js" data-container="bloom_filter_receiving">P2P lightweight wallets</button></td>
   </tr>
 
   <tr>
-    <td class="center" markdown="span">**Ask a free service**{:.fgred}<br
-      >(Actually, some do care about privacy)<br><br
-      ><button class="popup js" data-container="electrum_style_receiving">Client lightweight wallets</button></td>
+    <td class="center" markdown="span">**Ask a free service**{:.fgred}<br>
+      (Actually, some do care about privacy)<br><br>
+      <button class="popup js" data-container="electrum_style_receiving">Client lightweight wallets</button></td>
 
-    <td class="center" markdown="span">**Get all {{site.text.total_tx_count_in_millions}} million transactions**{:.fggreen}<br
-      >For **perfect** receiving privacy<br><br
-      >**Bitcoin Core**</td>
+    <td class="center" markdown="span">**Get all {{site.text.total_tx_count_in_millions}} million transactions**{:.fggreen}<br>
+      For **perfect** receiving privacy<br><br>
+      **Bitcoin Core**</td>
   </tr>
 </table>
 
