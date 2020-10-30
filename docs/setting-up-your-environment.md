@@ -42,19 +42,19 @@ following command:
 
     source ~/.rvm/scripts/rvm
 
-**Install Ruby 2.4.1**
+**Install Ruby 2.5.8**
 
-To install Ruby 2.4.1, simply run this command:
+To install Ruby 2.5.8, simply run this command:
 
-    rvm install 2.4.1
+    rvm install 2.5.8
 
 Sometimes this will find a pre-compiled Ruby package for your Linux
 distribution, but sometimes it will need to compile Ruby from scratch
 (which takes about 15 minutes).
 
-After Ruby 2.4.1 is installed, make it your default Ruby:
+After Ruby 2.5.8 is installed, make it your default Ruby:
 
-    rvm alias create default ruby-2.4.1
+    rvm alias create default ruby-2.5.8
 
 And tell your system to use it:
 
@@ -128,7 +128,7 @@ directory.  The following alternative options are available:
 
 #### Fast Partial Previews Or Builds
 
-In order to preview some changes faster, you can disable all plugins and
+In order to preview some changes faster (such as markup and CSS), you can disable all plugins and
 languages except those you need by prefixing the `ENABLED_LANGS` and
 `ENABLED_PLUGINS` environment variables to your command line.  For
 example, do this to disable everything:

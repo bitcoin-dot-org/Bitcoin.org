@@ -9,16 +9,13 @@ http://opensource.org/licenses/MIT.
       <div>
         <span class="footer-title">{% translate donate-community layout %}:</span>
         <a onclick="openDonationModal()" class="donate-btn btn-bright">{% translate donate layout %}</a>
-        <p class="donate-text">Bitcoin.org is community supported.
-          <a class="donate-link" href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a>
+        <p class="donate-text">{% translate donate-community-support layout %}
+          <a class="donate-link" href="bitcoin:3E8ociqZa9mZUSwGdSmAEMAoAxBK3FNDcd" target="_blank">3E8ociqZa9mZUSwGdSmAEMAoAxBK3FNDcd</a>
         </p>
-      </div>
-      <div class="donate-qrcode">
-        <img src="/img/footer/qr.png?{{site.time | date: '%s'}}" alt="QR code">
       </div>
     </div>
   </div>
-  
+
   <div class="row footermenu">
     <div class="footermenu-item footermenu-introduction">
       <p class="footer-title">{% translate menu-intro layout %}:</p>
@@ -29,8 +26,8 @@ http://opensource.org/licenses/MIT.
         <li{% if page.id == 'bitcoin-for-businesses' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}">{% translate menu-bitcoin-for-businesses layout %}</a>
         </li>
-        <li{% if page.id == 'bitcoin-for-developers' %} class="active"{% endif %}>
-          <a href="/{{ page.lang }}/{% translate bitcoin-for-developers url %}">{% translate menu-bitcoin-for-developers layout %}</a>
+        <li>
+          <a href="https://developer.bitcoin.org/">{% translate menu-bitcoin-for-developers layout %}</a>
         </li>
         <li{% if page.id == 'getting-started' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate menu-getting-started layout %}</a>
@@ -41,6 +38,26 @@ http://opensource.org/licenses/MIT.
         <li{% if page.id == 'you-need-to-know' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a>
         </li>
+        {% if
+         page.lang == 'en' or
+         page.lang == 'de' or
+         page.lang == 'es' or
+         page.lang == 'hu' or
+         page.lang == 'id' or
+         page.lang == 'it' or
+         page.lang == 'ja' or
+         page.lang == 'nl' or
+         page.lang == 'pt_BR' or
+         page.lang == 'ru' or
+         page.lang == 'sr' or
+         page.lang == 'sv' or
+         page.lang == 'uk' or
+         page.lang == 'zh_CN'
+        %}
+        <li{% if page.id == 'bitcoin-paper' %} class="active"{% endif %}>
+          <a href="/{{ page.lang }}/{% translate bitcoin-paper url %}">{% translate menu-white-paper layout %}</a>
+        </li>
+        {% endif %}
       </ul>
     </div>
     
@@ -49,11 +66,9 @@ http://opensource.org/licenses/MIT.
       <ul class="footermenu-list">
         <li{% if page.id == 'resources' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a>
-        {% if page.lang == 'en' %}
         <li{% if page.id == 'exchanges' %} class="active"{% endif %}>
-          <a href="/en/exchanges">{% translate menu-exchanges layout %}</a>
+          <a href="/{{ page.lang }}/{% translate exchanges url %}">{% translate menu-exchanges layout %}</a>
         </li>
-        {% endif %}
         <li{% if page.id == 'community' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a>
         </li>
@@ -83,7 +98,7 @@ http://opensource.org/licenses/MIT.
           <a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a>
         {% if page.lang == 'en' %}
         <li{% if page.id == 'buy' %} class="active"{% endif %}>
-          <a href="/en/buy">{% translate menu-buy layout %}</a>
+          <a href="/{{ page.lang }}/{% translate buy url %}">{% translate menu-buy layout %}</a>
         </li>
         {% endif %}
         {% if page.lang == 'en' %}
@@ -102,12 +117,9 @@ http://opensource.org/licenses/MIT.
       <a href="/{{ page.lang }}/{% translate scams url %}">{% translate menu-scams layout %}</a>
       {% endif %}
       <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
-      {% case page.lang %} {% when 'id' or 'da' or 'de' or 'es' or 'fr' or 'it' or 'hu' or 'nl' or 'pl' or 'pt_BR' or 'ro' or 'sl'
-      or 'sv' or 'tr' or 'el' or 'bg' or 'ru' or 'uk' or 'ar' or 'fa' or 'hi' or 'ko' or 'ja' or 'zh_CN' or 'zh_TW' %}
+      {% if page.lang != 'ar' or 'es' or 'sl' %}
       <a href="/en/privacy">Privacy Policy</a>
-      {% else %}
-      <a href="/{{ page.lang }}/{% translate privacy url %}">{% translate menu-privacy layout %}</a>
-      {% endcase %}
+      {% endif %}
       <a href="/{{ page.lang }}/{% translate press url %}">{% translate menu-press layout %}</a>
       <a href="/{{ page.lang }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a>
       <a href="/en/blog">Blog</a>

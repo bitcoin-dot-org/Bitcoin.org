@@ -10,16 +10,8 @@ http://opensource.org/licenses/MIT.
         <br> Bitcoin Core pages on Bitcoin.org are
         <a href="/en/bitcoin-core/about-site">maintained separately</a> from the rest of the site.
       </div>
-      <div class="row footer-social">
-        <a href="" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(location.href))" class="footer-social-link" target="_blank">
-          <img src="/img/icons/ico_facebook_dark.svg?{{site.time | date: '%s'}}" alt="facebook" class="footer-social-img">
-        </a>
-        <a href="" onclick="window.open('https://twitter.com/share?url=' + encodeURIComponent(location.href))" class="footer-social-link" target="_blank">
-          <img src="/img/icons/ico_twitter_dark.svg?{{site.time | date: '%s'}}" alt="twitter" class="footer-social-img">
-        </a>
-      </div>
       <div class="row footer-status-block">
-        <a href="/en/alerts" class="statusmenu{% if site.STATUS == 1 %} alert{% endif %}">Network Status</a>
+        <a href="/en/alerts" class="statusmenu{% if site.STATUS == 1 %} alert{% endif %}">{% translate network-status layout %}</a>
         {% include layout/base/head-language-dropdown.html %}
         <div id="footer-langselect" class="footer-langselect langselect">
           <label for="select-input-footer" class="center-select">

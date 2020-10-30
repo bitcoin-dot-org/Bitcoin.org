@@ -78,7 +78,7 @@
 
 @media screen and (min-width: 500px){
 	.cc_container{
-		left:initial;
+		left:auto;
 		right:20px;
 		bottom:20px;
 		width:300px;

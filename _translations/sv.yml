@@ -16,7 +16,7 @@ sv:
     missiontxt6: "Förbättra Bitcoins tillgänglighet globalt med internationalisering."
     missiontxt7: "Förbli en neutral informativ resurs kring Bitcoin."
     help: "Hjälp oss"
-    helptxt: "Du kan rapportera alla problem eller hjälpa till med att förbättra bitcoin.org på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> genom att öppna en \"issue\" eller \"pull request\", på engelska. När du vill skapa en \"pull request\", tag dig tid att diskutera dina ändringar och anpassa ditt arbete. Du kan hjälpa till med översättningar genom att gå med i ett team på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Fråga inte efter marknadsföring för din personliga hemsida eller företag, förrutom i special fall, t.ex en konferens. Tack så mycket till alla som har bidragit och spenderar tid med att förbättra bitcoin.org!"
+    helptxt: "Du kan rapportera alla problem eller hjälpa till med att förbättra bitcoin.org på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> genom att öppna en \"issue\" eller \"pull request\", på engelska. När du vill skapa en \"pull request\", tag dig tid att diskutera dina ändringar och anpassa ditt arbete. Du kan hjälpa till med översättningar genom att gå med i ett team på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Fråga inte efter marknadsföring för din personliga hemsida eller företag, förrutom i special fall, t.ex en konferens. Tack så mycket till alla som har bidragit och spenderar tid med att förbättra bitcoin.org!"
     maintenance: "Underhåll"
     documentation: "Dokumentation"
     translation: "Översättning"
@@ -94,9 +94,8 @@ sv:
     chanmarket: "(Marknadsnoteringar i realtid)"
     chanmining: "(Bitcoin-utvinning relaterat)"
     social: "Sociala nätverk"
-    linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Google+ Bitcoin Community</a>"
-    linktwitter: "Twitter-sökning"
-    facebook: "<a href=\"https://www.facebook.com/bitcoins\">Facebook Sida</a>"
+    linktwitter: "Twitter"
+    facebook: '<a href="https://www.facebook.com/hashtag/bitcoin">Facebook</a>'
     meetups: "Meetups"
     meetupevents: "Bitcoin - Konferenser och evenemang"
     meetupgroup: "Bitcoin Meetup Grupper"
@@ -113,21 +112,13 @@ sv:
     walletcathardware: "Hårdvara"
     walletcatweb: "Webben"
     walletbitcoincore: "Bitcoin Core är en full Bitcoin klient och är en del utav ryggraden i nätverket. Den erbjuder en hög nivå utav säkerhet, integritet och stabilitet. Den här däremot lite färre funktioner och tar upp mycket plats i minnet och på hårddisken."
-    walletmultibit: "MultiBit är en enkel klient med fokus på att vara snabb och enkel att använda. Den synkroniserar med nätet och är klar att användas på några minuter. MultiBit har stöd för många språk. Ett bra val för icke-tekniska användare."
     walletarmory: "Armory är en avancerad Bitcoin-klient som har ett fler funktioner för avancerade Bitcoin användare. Den erbjuder många backup och krypterings funktioner och  och stödjer säker offline lagring."
     walletelectrum: "Electrum's fokus är snabbhet och enkelhet med lågt resursanvändande. Den använder externa datorer för de mest komplicerade delarna av Bitcoin-systemet och tillåter dig att få tillbaka en plånbok genom att ange en hemlig lösenordsfras."
-    walletmsigna: "mSIGNA är en advancerad plånbok samtidigt som den är enkel att använda, skalbar nog för företag och är mycket säker. mSIGNA stödjer BIP32, multisignaturstransaktioner, offlinelagring, synkronisering mellan flera enheter, krypterade säkerhetskopieringar på papper eller elektroniskt."
     walletbitcoinwallet: "Bitcoin Wallet är pålitlig och enkel att använda, samtidigt som den är både säker och snabb. Visionen är decentralisering och \"zero trust\". Ingen central tjänst behövs för Bitcoin relaterad verksamhet. Applikationen är ett bra val för de som inte är så tekniska."
-    walletairbitzwallet: "Airbitz är en mobil Bitcoin-plånbok, som lägger stor vikt på integritet, säkerhet och decentralisering och gör det på ett mycket användarvänligt sätt. Airbitz plånböcker är alltid automatiskt krypterade, säkerhetskopierade och fungerar även fast Airbitz servrar skulle ligga nere."
     walletbrd: "Enkelhet är BRDs viktigaste design princip. Som en riktig fristående Bitcoin-klient finns det ingen server som kan bli hackad eller ligga nere och genom att bygga på iOS starka säkerhet är BRD designad för att skydda dig mot virus, säkerhetshål i webbläsare och även fysisk stöld."
     walletmyceliumwallet: "Mycelium Bitcoin Wallet är en plånboksapplikation med öppen källkod för Android designad för säkerhet, snabbhet och användarvänlighet. Den har unika funktioner för att hantera dina nycklar och för kallagring som hjälper dig säkra dina bitcoins."
-    walletcircle: "Circle är en webbaserad plånbokstjänst med fokus på att vara enkel att använda. Den tillåter köp och sälj av bitcoin utförda omedelbart med antingen ett bankkort eller ett amerikanskt bankkonto. De har också appar för både Android och iOS."
-    walletcoinkite: "Coinkite är en webbplånbok och bankkortstjänst som siktar på att vara enkel att använda. Det fungerar också i mobilwebbläsare, har handlarverktyg och betalningsterminaler."
-    walletbitgo: "BitGo är en multisignatursplånbok som är mycket säker. Varje transaktion kräver två signaturer, vilket skyddar dina bitcoins mot virus och attacker mot servrar. Privata nycklar hålls utav användarna så att BitGo inte kan komma åt dina bitcoins. Det är ett bra val för icke tekniska användare."
-    walletgreenaddress: "GreenAddress är en användarvänligt multisignatursplånbok med ökad säkerhet och integritet. Inte vid något tillfälle finns dina nycklar på deras servrar, inte ens krypterad. Av säkerhetsskäl borde du alltid använda 2FA och webbläsartillägget eller Android applikationen."
-    wallettrezor: "TREZOR är en hårdvaruplånbok som är mycket säker utan att kompromissa på bekvämlighet. Till skillnad från kalllagring kan TREZOR signera transaktioner medan den är kopplad till en enhet med internetåtkomst. Det innebär att det är säkert att spendera bitcoins även på en hackad dator."
-    wallethw1: "HW.1 är en hårdvaruplånbok byggd ovanpå en ST23YT66 bank-smartcards-platform. Den håller användarens privata nycklar säkra, validerar transaktioner, kan användas som ett säkert förbetalat kort eller ett multisignaturssällskap. Trots att den inte har öppen källkod så kan den valideras deterministiskt."
-    walletninki: "Ninki är en multi-signatursplånbok med ett snyggt användargränssnitt som gör det lika enkelt att skicka bitcoin som att skicka email. Du har hela tiden full kontroll över dina bitcoins."
+    wallettrezorone: "TREZOR är en hårdvaruplånbok som är mycket säker utan att kompromissa på bekvämlighet. Till skillnad från kalllagring kan TREZOR signera transaktioner medan den är kopplad till en enhet med internetåtkomst. Det innebär att det är säkert att spendera bitcoins även på en hackad dator."
+    walletwasabi: "Wasabi är en integritetsfokuserad plånbok för bitcoin."
     walletdownload: "Installera"
     walletvisit: "Besök hemsidan"
     walletsourcecode: "Källkod"
@@ -210,7 +201,7 @@ sv:
     pagetitle: "Bitcoin-utveckling"
     summary: "Hitta mer information om nuvarande specifikation, program och utvecklare."
     spec: "Dokumentation"
-    spectxt: "Om du är intresserad av att lära dig mer om Bitcoins tekniska detaljer och hur du kan använda befintliga verktyg och API:er, rekommenderas du att börja med att utforska <a href=\"/en/developer-documentation\">utvecklardokumentationen</a>."
+    spectxt: "Om du är intresserad av att lära dig mer om Bitcoins tekniska detaljer och hur du kan använda befintliga verktyg och API:er, rekommenderas du att börja med att utforska <a href=\"https://developer.bitcoin.org/\">utvecklardokumentationen</a>."
     coredev: "Huvudutvecklare"
     inventor: "Bitcoin system var ursprungligen designat av Satoshi Nakamoto. Hans ursprungliga Bitcoin källkod underhålls nu, som Bitcoin Core, av följande utvecklare och ett community av frivilliga."
     disclosure: "Ansvarsfullt avslöjande"
@@ -268,7 +259,7 @@ sv:
     howitworkstxt1: "Från en användares perspektiv, så är Bitcoin inget annat än ytterligare en mobilapplikation eller datorprogram som ger tillgång till en personlig Bitcoin plånbok och tillåter användare att skicka och ta emot bitcoins med dem. Så fungerar Bitcoins för de allra flesta."
     howitworkstxt2: "Under ytan så består Bitcoin-nätverket av en delad publik loggbok kallad \"block kedjan\". Loggen innehåller alla transaktioner som någonsin har blivit utförd, vilket erbjuder användarens dator att verifiera validiteten för varje transaktion. Autenticiteten av varje transaktion är skyddad av digitala signaturer som tillhör de skickande adresserna, vilket ger att alla användare kan ha full kontroll över skickade bitcoins från deras egna Bitcoin adresser. Dessutom kan alla processa transaktioner genom beräkningskraft från specialiserad hårdvara och få betalt i bitcoins för arbetet. Detta är ofta kallat \"utvinning\". För att lära dig mer om Bitcoin kan du konsultera den <a href=\"#how-it-works#\">dedikerade sidan</a> och <a href=\"#bitcoin-paper#\">original rapporten</a>."
     used: "Använder verkligen människor Bitcoin?"
-    usedtxt1: "Ja. Det är ett <a href=\"http://usebitcoins.info/\">växande antal företag</a> och privatpersoner som använder Bitcoin. Detta inkluderar företag som restauranger, lägenheter, advokatbyråer och populära nättjänster som Namecheap, WordPress, Reddit och Flattr. Medan Bitcoin fortfarande är ett relativt nytt fenomen, växer det fort. I slutet av Augusti 2013 uppskattades <a href=\"https://bitcoincharts.com/bitcoin/\">värdet av alla bitcoins i cirkulation</a> till 1.5 miljarder US dollar varje dag. "
+    usedtxt1: "Ja. Det är ett växande antal företag och privatpersoner som använder Bitcoin. Detta inkluderar företag som restauranger, lägenheter, advokatbyråer och populära nättjänster som Namecheap, WordPress, Reddit och Flattr. Medan Bitcoin fortfarande är ett relativt nytt fenomen, växer det fort. I slutet av Augusti 2013 uppskattades <a href=\"https://bitcoincharts.com/bitcoin/\">värdet av alla bitcoins i cirkulation</a> till 1.5 miljarder US dollar varje dag. "
     acquire: "Hur kan man införskaffa bitcoins?"
     acquireli1: "Som betalning för produkter eller tjänster."
     acquireli2: "Köp Bitcoins på en  <a href=\"https://www.buybitcoinworldwide.com\">Bitcoin exchange</a>."
@@ -604,7 +595,7 @@ sv:
     nonprofit: "Organisationer"
     nonprofittxt: "<a href=\"https://bitcoinfoundation.org/\">Bitcoin Foundation</a> och många andra <a href=\"#community##[community.non-profit]\">ideella organisationer</a> är dedikerade till att skydda och främja Bitcoin. Du kan hjälpa dessa grupper genom att gå med i dem och ta del av deras projekt, diskussioner och evenemang."
     spread: "Sprid det vidate"
-    spreadtxt: "Prata om Bitcoin med intresserade personer. Skriv om det på din blogg. Uppmana dina favoritaffärer att ta emot bitcoins. Hjälp till att hålla <a href=\"http://usebitcoins.info/\">handlarkatalogen</a> uppdaterad. Eller var kreativ och skapa din egen Bitcoin T-shirt."
+    spreadtxt: "Prata om Bitcoin med intresserade personer. Skriv om det på din blogg. Uppmana dina favoritaffärer att ta emot bitcoins. Hjälp till att hålla handlarkatalogen uppdaterad. Eller var kreativ och skapa din egen Bitcoin T-shirt."
     wiki: "Dokumentation"
     wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> och <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> ger användbar dokumentation och vi uppdaterar konstant informationen som finns tillgänglig där. Du kan hjälpa till att förbättra dessa och hålla dem uppdaterade."
     translate: "Översätt"
@@ -621,7 +612,7 @@ sv:
     bit: "Bit"
     bittxt: "Bit är en vanligt använd enhet för att beteckna en del av en bitcoin. 1 000 000 bits är samma sak som 1 bitcoin (BTC eller ₿). Bit enheten är i vanliga fall bekvämare för dricks, varor och tjänster."
     bitcoin: "Bitcoin"
-    bitcointxt: "Bitcoin - med stor bokstav, används för att beskriva konceptet som är Bitcoin eller nätverket i sin helhet. T.ex \"Jag läste om Bitcoin protokollet idag.\"<br>bitcoin - utan stor bokstav, används för att beskriva bitcoins som en betalningsenhet. T.ex \"Jag skickade tio bitcoins idag.\" BCT eller XBT är vanliga förkortningar på bitcoins."
+    bitcointxt: "Bitcoin - med stor bokstav, används för att beskriva konceptet som är Bitcoin eller nätverket i sin helhet. T.ex \"Jag läste om Bitcoin protokollet idag.\"<br>bitcoin - utan stor bokstav, används för att beskriva bitcoins som en betalningsenhet. T.ex \"Jag skickade tio bitcoins idag.\" BTC eller XBT är vanliga förkortningar på bitcoins."
     blockchain: "Blockkedja"
     blockchaintxt: "Blockkedjan är en <b>publik log av Bitcoin-transaktioner</b> i kronologisk ordning. Blockkedjan är delad mellan alla Bitcoin användare. Den används för att verifiera att en transaktion är permanent och för att förhindra <a href=\"#[vocabulary.doublespend]\">dubbelspendering</a>."
     block: "Block"
@@ -637,9 +628,9 @@ sv:
     hashrate: "Hash ratio"
     hashratetxt: "Hash ration är <b>mätenheten för beräkningskapaciteten av Bitcoin-nätverket</b>. Bitcoin nätverket måste utföra intensiva matematiska operationer av säkerhetsskäl. När nätverket nådde en hash ratio på 10 Th/s menas det att nätverket kan utföra 10 biljoner beräkningar per sekund."
     mining: "Utvinning"
-    miningtxt: "Bitcoin-utvinning är processen som <b>tvingar datorns hårdvara att utföra matematiska beräkningar åt Bitcoin nätverket för att konfirmera transaktioner</b> och öka säkerheten. Som en belöning för arbetet får Bitcoin utvinnare ta en transaktionsavgift för de transaktioner de utför, tillsammans med nyskapade bitcoins. Utvinning är en specialiserad och konkurrensutsatt marknad där belöningar är uppdelade efter hur mycket beräkningar som har utförts. Alla Bitcoin användare utför inte Bitcoin utvinning och det är inte ett enkelt sätt att känna pengar."
+    miningtxt: "Bitcoin-utvinning är processen som <b>tvingar datorns hårdvara att utföra matematiska beräkningar åt Bitcoin nätverket för att konfirmera transaktioner</b> och öka säkerheten. Som en belöning för arbetet får Bitcoin utvinnare ta en transaktionsavgift för de transaktioner de utför, tillsammans med nyskapade bitcoins. Utvinning är en specialiserad och konkurrensutsatt marknad där belöningar är uppdelade efter hur mycket beräkningar som har utförts. Alla Bitcoin användare utför inte Bitcoin utvinning och det är inte ett enkelt sätt att tjäna pengar."
     p2p: "P2P"
-    p2ptxt: "Peer-to-peer refererar till <b>system som kan arbeta organiserat kollektivt</b> genom att låta varje individ interagera direkt med varandra. När det gäller Bitcoin är nätverket byggt på ett sådant sätt att varje användare skickar vidare transaktioner gjorde av andra användare. Och viktigast av allt: igen bank krävs som en tredje part. "
+    p2ptxt: "Peer-to-peer refererar till <b>system som kan arbeta organiserat kollektivt</b> genom att låta varje individ interagera direkt med varandra. När det gäller Bitcoin är nätverket byggt på ett sådant sätt att varje användare skickar vidare transaktioner gjorde av andra användare. Och viktigast av allt: ingen bank krävs som en tredje part. "
     privatekey: "Privat nyckel"
     privatekeytxt: "En privat nyckel är <b>en bit hemlig data som bevisar din rätt att spendera bitcoins från en viss plånbok</b> genom en kryptografisk <a href=\"#[vocabulary.signature]\">signatur</a>. Din privata nyckel(ar) är lagrade på din dator ifall du använder en mjukvaruplånbok och om du använder en nätplånbok lagras den på deras server. Privata nycklar ska aldrig avslöjas eftersom de möjliggör spenderandet av bitcoins från deras respektive Bitcoin-plånbok."
     signature: "Signatur"
@@ -686,7 +677,7 @@ sv:
     menu-support-bitcoin: "Stöd Bitcoin"
     menu-vocabulary: Ordlista
     menu-you-need-to-know: "Du måste veta"
-    banner-translate: "Översättningar för det här språket är utdaterade. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Klicka här för att hjälpa till att översätta bitcoin.org till ditt språk</a>."
+    banner-translate: "Översättningar för det här språket är utdaterade. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Klicka här för att hjälpa till att översätta bitcoin.org till ditt språk</a>."
     footer: "Publicerad under  <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licensen</a>"
     sponsor: "En community hemsida sponsrat av"
     getstarted: "Kom igång med Bitcoin"
@@ -695,10 +686,12 @@ sv:
     bitcoin-for-developers: bitcoin-for-utvecklare
     bitcoin-for-individuals: bitcoin-for-privatpersoner
     bitcoin-for-businesses: bitcoin-for-foretag
+    buy: kopa
     choose-your-wallet: valj-din-planbok
     community: community
     development: utveckling
     download: ladda-ner
+    exchanges: utbyten
     events: evenemang
     faq: faq
     getting-started: kom-igang
@@ -714,6 +707,7 @@ sv:
     vocabulary: ordlista
     you-need-to-know: du-maste-veta
     bitcoin-paper: bitcoin-rapport
+    spend-bitcoin: spendera-bitcoin
   anchor:
     community:
       non-profit: ideellt

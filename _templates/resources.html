@@ -9,7 +9,6 @@ id: resources
   <div class="container hero-container">
     <h1>{% translate pagetitle %}</h1>
     <p class="summary">{% translate pagedesc %}</p>
-     {% include helpers/hero-social.html %}
   </div>
 </div>
 
@@ -42,6 +41,9 @@ id: resources
         <p>
           <a href="http://www.iamsatoshi.com/category/video-archive/">IamSatoshi</a>
         </p>
+        <p>
+          <a href="https://www.lopp.net/bitcoin-information.html">Bitcoin Information &amp; Educational Resources</a>
+        </p>
       </div>
 
       <div class="card resources-card">
@@ -49,6 +51,8 @@ id: resources
         <h2 id="directories">{% translate directories %}</h2>
         <p>
           <a href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate linkwallets %}</a> - bitcoin.org</p>
+        <p>
+          <a href="https://bitcoinwide.com/">{% translate linkmerchants %}</a> - BitcoinWide.com</p>
         <p>
           <a href="https://coinmap.org/">{% translate linkmerchants %}</a> - coinmap.org</p>
         <p>
@@ -64,69 +68,16 @@ id: resources
       </div>
 
       <div class="card resources-card">
-        <img src="/img/icons/ico_spread.svg?{{site.time | date: '%s'}}" alt="Icon">
-        <h2 id="news">{% translate news %}</h2>
-        {% if page.lang == 'bg' %}
-        <p>
-          <a href="http://hash.bg">Hash.bg</a>
-        </p>{% endif %} {% if page.lang == 'de' %}
-        <p>
-          <a href="https://bitcoinblog.de">BitcoinBlog.de</a>
-        </p>{% endif %} {% if page.lang == 'fr' %}
-        <p>
-          <a href="https://le-coin-coin.fr">Le Coin Coin</a>
-        </p>
-        <p>
-          <a href="https://bitcoin.fr">Bitcoin.fr</a>
-        </p>
-        <p>
-          <a href="https://achat-bitcoin.fr/">Achat-bitcoin.fr</a>
-        </p>
-        {% endif %} {% if page.lang == 'pl' %}
-        <p>
-          <a href="https://satoshi.pl/">Satoshi.pl</a>
-        </p>{% endif %} {% if page.lang == 'ru' %}
-        <p>
-          <a href="https://bitnovosti.com">Bit•Новости</a>
-        </p>
-        <p>
-          <a href="https://bits.media">Bits Media</a>
-        </p>
-        <p>
-          <a href="http://coinspot.ru">CoinSpot</a>
-        </p>
-        {% endif %} {% if page.lang == 'es' %}
-        <p>
-          <a href="https://www.criptonoticias.com/">CriptoNoticias</a>
-        </p>{% endif %}
-        <p>{% translate linkcointelegraph %}
-          <p>
-            <p>
-              <a href="http://www.coindesk.com">CoinDesk</a>
-            </p>
-            <p>
-              <a href="https://bitcoinmagazine.com">Bitcoin Magazine</a>
-            </p>
-            <p>
-              <a href="http://coinjournal.net">CoinJournal</a>
-            </p>
-            {% if page.lang == 'ru' %}
-            <p>
-              <a href="https://bitcointalk.org/index.php?board=128.0">Биткойн Форум / Новости</a>
-            </p>{% else %}
-            <p>
-              <a href="https://bitcointalk.org/index.php?board=77.0">BitcoinTalk press links</a>
-            </p>{% endif %}
-      </div>
-
-      <div class="card resources-card">
         <img src="/img/icons/ico_market.svg?{{site.time | date: '%s'}}" alt="Icon">
         <h2 id="charts">{% translate charts %}</h2>
+        <p>
+          <a href="https://bitaps.com">Bitaps.com</a>
+        </p>
         <p>
           <a href="https://live.blockcypher.com/btc">BlockCypher</a>
         </p>
         <p>
-          <a href="https://tradeblock.com">Trade Block</a>
+          <a href="https://tradeblock.com/bitcoin">TradeBlock</a>
         </p>
         <p>
           <a href="https://bitcoincharts.com/charts/">Bitcoincharts.com</a>
@@ -137,17 +88,11 @@ id: resources
         <p>
           <a href="https://bitcoinaverage.com/{% if 'en,fr,de,it,es,pl,ru,ht,pt,tr,uk' contains page.lang %}{{ page.lang }}/bitcoin-price/btc-to-usd{% endif %}">BitcoinAverage</a>
         </p>
-        <p>
-          <a href="https://bitvol.info/">Bitcoin Volatility Index</a>
-        </p>
       </div>
 
       <div class="card resources-card">
         <img src="/img/icons/ico_doc.svg?{{site.time | date: '%s'}}" alt="Icon">
         <h2 id="documentaries">{% translate documentaries %}</h2>
-        <p>
-          <a href="http://bitcoinfilm.org/">BitcoinFilm.org</a>
-        </p>
         <p>
           <a href="http://iamsatoshi.com/">Ulterior States</a>
         </p>

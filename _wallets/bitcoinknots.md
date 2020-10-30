@@ -14,7 +14,8 @@ platform:
       text: "walletbitcoinknots"
       link: "https://bitcoinknots.org/"
       source: "https://github.com/bitcoinknots/bitcoin/"
-      screenshot: "bitcoinknots.png?1528322191"
+      screenshot: "bitcoinknots.png"
+      features: "bech32 full_node legacy_addresses segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnode"

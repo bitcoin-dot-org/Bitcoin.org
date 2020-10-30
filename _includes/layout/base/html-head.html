@@ -12,11 +12,12 @@ http://opensource.org/licenses/MIT.
 <link rel="stylesheet" href="/css/main.css?{{site.time | date: '%s'}}">
 <!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
-{% if page.lang == 'ar' or page.lang == 'fa' %}<link rel="stylesheet" href="/css/rtl.css?{{site.time | date: '%s'}}">{% endif %}
+{% if page.lang == 'ar' or page.lang == 'he' or page.lang == 'fa' %}<link rel="stylesheet" href="/css/rtl.css?{{site.time | date: '%s'}}">{% endif %}
 {% if page.lang == 'bg' or page.lang == 'el' or page.lang == 'ko' or page.lang == 'hi' or page.lang == 'pl' or page.lang == 'sl' or page.lang == 'ro' or page.lang == 'ru' or page.lang == 'tr' or page.lang == 'uk' or page.lang == 'zh_CN' or page.lang == 'zh_TW' %}<link rel="stylesheet" href="/css/sans.css?{{site.time | date: '%s'}}">{% endif %}
 <script type="text/javascript" src="/js/base.js?{{site.time | date: '%s'}}"></script>
-{% if page.id != 'download' %}<script type="text/javascript" src="/js/main.js?{{site.time | date: '%s'}}"></script>{% endif %}
+<script type="text/javascript" src="/js/main.js?{{site.time | date: '%s'}}"></script>
 <script src="/js/jquery/jquery-1.11.2.min.js"></script>
+<script src="/js/jquery/jquery-ui.min.js"></script>
 <script src="/js/jquery/jquery.qrcode.min.js"></script>
 <link rel="shortcut icon" href="/favicon.png?{{site.time | date: '%s'}}">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png?{{site.time | date: '%s'}}"/>

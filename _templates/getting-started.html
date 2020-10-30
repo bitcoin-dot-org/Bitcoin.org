@@ -9,7 +9,6 @@ id: getting-started
   <div class="container hero-container">
     <h1>{% translate pagetitle %}</h1>
     <p class="summary">{% translate pagedesc %}</p>
-    {% include helpers/hero-social.html %}
   </div>
 </div>
 
@@ -57,7 +56,7 @@ id: getting-started
             {% translate get %}</h2>
           <p>{% translate gettxt %}</p>
           <div>
-            <a class="btn-bright" href="/en/buy">{% translate getbut %}</a>
+            <a class="btn-bright" href="/{{ page.lang }}/{% translate buy url %}">{% translate getbut %}</a>
           </div>
        </div>
       </div>
@@ -70,7 +69,7 @@ id: getting-started
             {% translate spend %}</h2>
           <p>{% translate spendtxt %}</p>
           <div>
-            <a class="btn-bright" href="/en/spend-bitcoin">{% translate spendbut %}</a>
+            <a class="btn-bright" href="/{{ page.lang }}/{% translate spend-bitcoin url %}">{% translate spendbut %}</a>
           </div>
         </div>
       </div>
@@ -115,7 +114,7 @@ id: getting-started
             {% translate tax %}</h2>
           <p>{% translate taxtxt %}</p>
           <div>
-            <a class="btn-bright" href="https://en.bitcoin.it/wiki/How_to_accept_Bitcoin,_for_small_businesses#Setting_Prices">{% translate taxbut %}</a>
+            <a class="btn-bright" href="https://en.bitcoin.it/wiki/Tax_compliance">{% translate taxbut %}</a>
           </div>
         </div>
       </div>
@@ -128,7 +127,7 @@ id: getting-started
             {% translate visibility %}</h2>
           <p>{% translate visibilitytxt %}</p>
           <div>
-            <a class="btn-bright" href="/en/spend-bitcoin">{% translate visibilitybut %}</a>
+            <a class="btn-bright" href="/{{ page.lang }}/{% translate spend-bitcoin url %}">{% translate visibilitybut %}</a>
           </div>
         </div>
       </div>

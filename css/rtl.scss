@@ -34,15 +34,26 @@ p{
 	font-family:Arial, sans-serif;
 	text-align:right;
 }
+.menusimple {
+	direction: rtl;
+}
 .menusimple li a,
 .menusimple li a:active,
 .menusimple li a:visited,
 .menusimple li a:link{
 	font-family:'DroidNaskh', sans-serif;
+	text-align: right;
+}
+.menusimple>li:not(:first-child) {
+    margin-left: 0;
+    margin-right: 30px;
 }
 .menusimple li ul{
 	right:0;
 	left:auto;
+}
+.footer {
+    text-align: right;
 }
 .footer-bottom-row {
 	direction: ltr;
@@ -50,9 +61,15 @@ p{
 .footermenu a{
 	margin-right:0;
 	margin-left:15px;
+	text-align: right;
+	direction: rtl;
 }
-.footer-social-link:not(:last-child) {
-    margin-left: 10px;
+.footer-title {
+	text-align: right;
+}
+.donate-btn {
+    margin-left: 0px;
+    margin-right: 30px;
 }
 .statusmenu{
 	padding-left:0;
@@ -73,6 +90,11 @@ h2 .rssicon{
 	margin-right:10px;
 	margin-bottom:18px;
 }
+.mainvideo-btn-open {
+	padding: 0 65px 0 0;
+	background: url(../img/icons/play-btn-rtl.svg) right no-repeat;
+	background-size: contain;
+}
 .mainbutton a,
 .mainbutton a:link,
 .mainbutton a:visited,
@@ -87,6 +109,9 @@ h2 .rssicon{
 }
 .mainlist-item img {
 	margin: 0 0 0 25px;
+}
+.maindesc-text {
+	text-align: right;
 }
 .contributors{
 	text-align:right;
@@ -162,6 +187,16 @@ h2 .rssicon{
 	border-left:0;
 	margin-right:-1px
 }
+.start p {
+	text-align: right;
+}
+.right-column div {
+	left: auto;
+	right: 0;
+}
+.right-column h2 {
+	text-align: left;
+}
 .anchorAf a{
 	left:0;
 	right:-24px;
@@ -189,15 +224,6 @@ h2 .rssicon{
 }
 .tablehalf p{
 	text-align:right;
-}
-.walletmenu {
-	direction: ltr;
-}
-.walletmenu>ul{
-	text-align:right;
-}
-.walletmenu>ul li{
-	font-family:'DroidNaskh', sans-serif;
 }
 .wallets{
 	text-align:right;
@@ -252,7 +278,7 @@ h2 .rssicon{
 	left:20px;
 }
 .wallets .checkgood>div>span{
-	background-image:url(/img/icons/checkbubble_pass_rtl.svg?1528322191);
+	background-image:url(/img/icons/checkbubble_good_rtl.svg?1528322191);
 }
 .wallets .checkpass>div>span{
 	background-image:url(/img/icons/checkbubble_pass_rtl.svg?1528322191);
@@ -263,7 +289,16 @@ h2 .rssicon{
 .wallets .checkneutral>div>span{
 	background-image:url(/img/icons/checkbubble_neutral_rtl.svg?1528322191);
 }
-
+.wallet-os-check-item {
+    padding: 0 30px 0 0;
+}
+.wallet-os-check-item::before {
+    left: auto;
+    right: 0;
+}
+.wallet-os-check-details {
+    text-align: right;
+}
 .warningicon{
 	margin-right:0;
 	margin-left:6px;
@@ -310,12 +345,62 @@ h2 .rssicon{
 }
 .toc-row {
 	direction: ltr;
+	flex-direction: row-reverse;
 }
-.btn-container {
-	direction: ltr;
+.toc > div {
+	padding: 0 0 0 35px;
 }
-.wallet-list {
-	direction: ltr;
+.toc div>ul>li>a {
+	text-align: right;
+	direction: rtl;
+}
+.toc div>ul>li>ul a {
+	text-align: right;
+	direction: rtl;
+	padding: 0 20px 0 0;
+}
+.toc + .toccontent {
+	border-left: none;
+	border-right: 1px solid #dfdfdf;
+}
+.toccontent-intro {
+    padding: 0 30px 40px 0;
+	direction: rtl;
+}
+.toccontent p {
+	direction: rtl;
+	text-align: right;
+}
+.toccontent li {
+	text-align: right;
+	direction: rtl;
+}
+.boxexpand {
+	direction: rtl;
+}
+.boxexpand>h1:first-child,
+.boxexpand>h2:first-child,
+.boxexpand>h3:first-child {
+	text-align: right;
+	direction: rtl;
+}
+.boxexpand.expanded>h1:first-child,
+.boxexpand.expanded>h2:first-child,
+.boxexpand.expanded>h3:first-child {
+	padding: 40px 30px 15px 35px;	
+}
+.boxexpand>h1:first-child::after,
+.boxexpand>h2:first-child::after,
+.boxexpand>h3:first-child::after {
+	right: auto;
+	left: 30px;
+}
+.expanded>*{
+	margin-left: 0px;
+	margin-right: 30px;
+}
+.toc ul, .toc li {
+	text-align: right;
 }
 .accordion-item {
 	margin: 0 3% 20px 0;
@@ -332,12 +417,396 @@ h2 .rssicon{
 .own-text {
 	direction: rtl;
 }
+.own-block {
+	flex-direction: row-reverse;
+}
+.own h3,
+.own p {
+	text-align: right;
+}
+.own-timeline {
+	direction: rtl;
+	margin-right: 0;
+	margin-left: 30px;
+}
+.own-timeline-number::after {
+	right: 0;
+	left: auto;
+}
+.own .own-timeline-text {
+	margin-right: 0;
+	margin-left: 20px;
+}
+.own-timeline-number {
+	margin: 0 0 0 95px;
+}
+.own-alert {
+	direction: rtl;
+}
+.controll p {
+	text-align: right;
+}
+.mission li {
+	text-align: right;
+}
+.helper-intro-text {
+	text-align: right;
+}
+.helper-next-btn {
+	margin: 0 30px 0 0;
+}
+.helper-content {
+	padding: 0 73px 0 0;
+}
+.helper-accordion::before {
+	left: auto;
+	right: -50px;
+	transform: translateX(100%);
+}
+.helper-header::after {
+	left: auto;
+	right: -30px;
+	transform: translateX(100%);
+}
+.helper-title {
+	text-align: right;
+}
+.helper-platforms-section + .helper-platforms-section {
+	margin: 0 30px 0 0;
+}
+.helper-radio-wrapper + .helper-radio-wrapper {
+	margin: 0 15px 0 0;	
+}
+.bullet {
+	padding: 0 25px 0 0;
+	text-align: right;
+}
+.bullet::before {
+	left: auto;
+	right: 0;
+}
+.helper-change-btn {
+	margin: 0 20px 0 0;
+}
+.helper-checkbox-title {
+	text-align: right;
+}
+.helper-checkbox-text {
+	padding: 0 45px 0 0;
+}
+.helper-checkbox-description {
+	text-align: right;
+}
+.checkbox-text::before {
+	left: auto;
+	right: 0;
+}
+.disabled-checkbox-text {
+	text-align: right;
+}
+.discover {
+	margin: 0 30px 0 0;
+}
+.sidebar-selector {
+	margin: 0 0 0 30px;
+}
+.wallet-table-head:first-child .wallet-table-title {
+	text-align: right;
+}
+.sidebar-selector-platform+.sidebar-selector-platform {
+	margin: 0 15px 0 0;
+}
+.user-radio-text {
+	padding: 0 36px 0 0;
+}
+.user-radio-text::before {
+	left: auto;
+	right: 0;
+}
+.user-radio-text::after {
+	left: auto;
+	right: 7px;
+}
+.checkbox-text {
+	padding: 0 36px 0 0;
+}
+.sidebar-selector-text {
+	text-align: right;
+}
+.wallet-hint {
+	margin-right: 0;
+	margin-left: 30px;
+}
+.wallet-hint-text {
+	margin: 0 8px 0 0;
+}
+.wallet-img {
+	margin: 0 0 0 13px;
+}
+.wallet-table-data:first-child {
+	border-left: none;
+	border-right: 1px solid #DADADA;
+}
+.wallet-table-data:last-child {
+	border-right: none;
+	border-left: 1px solid #DADADA;
+}
+.platform-radio-wrapper + .platform-radio-wrapper {
+	margin: 0 5px 0 0;
+}
+.sidebar-selector-btn-close {
+	right: auto;
+	left: 32px;
+}
+.sidebar-selector-btn-open {
+	text-align: right;
+	padding: 28px 30px 20px 43px;
+}
+.sidebar-selector-btn-open::after {
+	right: auto;
+	left: 30px;
+}
+.wallet-selector-tooltip {
+	left: auto;
+	right: -20px;
+	text-align: right;
+}
+.tooltip .close-btn {
+	right: auto;
+	left: 7px;
+}
+.tooltip-title {
+	text-align: right;
+}
+.tooltip-text {
+	text-align: right;
+}
+.tooltip::after, 
+.tooltip::before {
+	left: auto;
+	right: 22px;
+}
+.os-selector-icon {
+	margin: 0 0 0 10px;
+	transform: translateY(-4px)
+}
+.os-selector-tab {
+	line-height: 1.6;
+}
+.os-selector-link:first-child {
+	margin: 0 0 0 25px;
+}
+.os-selector {
+	margin: 0 65px 0 0;
+}
+.wallet-accordion .wallet-accordion-btn {
+	padding: 0 37px 0 25px;
+}
+.wallet-accordion-btn::before {
+	left: auto;
+	right: 15px;
+}
+.download-text {
+	text-align: right;
+}
+.two-column-row:nth-child(odd) .column-text {
+	margin: 0 30px 0 0;
+}
+.two-column-row:nth-child(even) .column-text {
+	margin: 0 0 0 30px;
+}
+.column-text p {
+	text-align: right;
+}
 /*Override UbuntuBold by Droid Naskh*/
 
 @font-face{font-family:'DroidNaskh';src:url('/font/droidnaskh/droidnaskh-regular.eot');font-weight:normal;font-style:normal;}
 @font-face{font-family:'DroidNaskh';src:url('/font/droidnaskh/droidnaskh-regular.ttf') format('truetype');font-weight:normal;font-style:normal;}
 
 /*Styles specific to mobiles*/
+
+@media screen and (max-width: 1100px) {
+	.helper-content {
+    padding: 55px 0 0;
+	}
+	.helper-accordion[data-number="1"] .helper-header::after {
+		left: auto;
+    right: 0;
+  }
+  .helper-accordion[data-number="2"] .helper-header::after {
+		left: auto;
+    right: 67px;
+  }
+  .helper-accordion[data-number="3"] .helper-header::after {
+		left: auto;
+    right: 134px;
+  }
+  .helper-accordion[data-number="4"] .helper-header::after {
+		left: auto;
+    right: 201px;
+	}
+	.helper-accordion::before {
+		transform: translateX(0);
+	}
+	.helper-accordion[data-number="1"]::before {
+		left: auto;
+    right: 42px;
+  }
+  .helper-accordion[data-number="2"]::before {
+		left: auto;
+    right: 108px;
+  }
+  .helper-accordion[data-number="3"]::before {
+		left: auto;
+    right: 176px;
+  }
+  .helper-accordion[data-number="4"]::before {
+    display: none;
+	}
+	.discover {
+		margin: 50px 0 0;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.os-selector {
+    margin: 0 0 40px;
+	}
+}
+@media screen and (max-width: 990px) {
+	.sidebar-selector {
+		margin: 0 0 60px;
+	}
+	.sidebar-selector-label {
+		margin: 0 0 0 8px;
+	}
+	.user-radio-row + .user-radio-row {
+    margin: 0 40px 0 0;
+	}
+	.user-radio-wrapper {
+		margin: 0 0 0 9px;
+	}
+	.checkboxes-acc-header {
+		padding: 0 7px 7px 36px;
+	}
+	.checkboxes-acc-btn {
+		right: auto;
+		left: 0;
+	}
+	.checkboxes-acc-selected-text {
+		margin: 0 0 0 10px;
+	}
+	.sidebar-selector-platform+.sidebar-selector-platform {
+		margin: 0 0 0 15px;
+	}
+	.user-radio-row+.user-radio-row {
+		margin: 0 40px 0 0;
+	}
+	.features-selectors-section {
+		margin: 0 10px 0 0;
+	}
+	.sidebar-hardware-platform .tooltip::after,
+	.sidebar-hardware-platform .tooltip::before {
+		left: auto;
+	}
+	.features-selectors-section .wallet-selector-tooltip {
+		left: -20px;
+    right: auto;
+	}
+	.features-selectors-section .tooltip::after, 
+	.features-selectors-section .tooltip::before {
+		right: auto;
+    left: 22px;
+	}
+	.important-checkbox-row .tooltip::after,
+	.important-checkbox-row .tooltip::before {
+		right: auto;
+    left: 22px;
+	}
+	.important-checkbox-row .wallet-selector-tooltip {
+		right: auto;
+    left: -20px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.start {
+		padding: 0 15px 50px 0;
+	}
+	.start-block {
+		padding-left: 0;
+		padding-right: 30px;
+	}
+	.start-block:not(:last-child)::before {
+		left: auto;
+		right: 0;
+	}
+	.start .start-block::after {
+		left: auto;
+    right: 0;
+		transform: translate(50%, -4px);
+	}
+	.left-column, .left-column h2 {
+		text-align: right;
+	}
+	.right-column, .right-column h2 {
+		text-align: right;
+	}
+}
+@media screen and (max-width: 700px) {
+	.helper-platforms-section + .helper-platforms-section {
+		margin: 30px 0 0;
+	}
+	.helper-next-btn {
+		margin: 0 0 15px;
+	}
+	.acc-btn {
+		padding: 0 15px 0 25px;
+	}
+	.acc-btn::after {
+		right: auto;
+		left: 15px;
+	}
+	.wallet-table-data[data-cell]:not(.hidden) {
+		border-right: none;
+		border-left: 1px solid #dadada;
+	}
+	.sidebar-web-platform .wallet-selector-tooltip {
+		right: auto;
+		left: -27px;
+	}
+	.sidebar-web-platform .tooltip::after, 
+	.sidebar-web-platform .tooltip::before {
+    right: auto;
+    left: 28px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.user-radio-row + .user-radio-row {
+		margin: 10px 0 0;
+	}
+	.user-radio-row .wallet-selector-tooltip {
+		left: -7px;
+    right: auto;
+	}
+	.user-radio-row .tooltip::after,
+	.user-radio-row .tooltip::before {
+		left: 10px;
+    right: auto;
+	}
+	.features-selectors-section {
+		margin: 13px 0 0;
+	}
+	.wallet-hints-row .wallet-hint:first-child {
+		margin: 0;
+	}
+	.wallet-hints-row .wallet-hint {
+		margin: 0 30px 0 0;
+	}
+	.os-selector-link:first-child {
+		margin: 0 0 10px;
+	}
+}
 
 @media handheld, only screen and ( max-width: 60em ), only screen and ( max-device-width: 60em ){
 	h2{
@@ -371,18 +840,6 @@ h2 .rssicon{
 		border-right:0;
 		padding-right:0;
 		margin-right:0;
-	}
-	.walletmenu>ul.menutap>li:hover{
-		background-position:right 6px;
-	}
-	.walletmenu>ul.menutap>li>ul>li:hover{
-		background-position:right 10px;
-	}
-	.walletmenu>ul.menutap>li.hover{
-		background-position:right -62px;
-	}
-	.walletmenu>ul.menutap>li>ul>li.hover{
-		background-position:right -24px;
 	}
 	.wallets.walletsmobile>div>div>h2:first-child+div+div+div>div{
 		padding:8px 22px 8px 0;
@@ -423,9 +880,6 @@ h2 .rssicon{
 	.tablehalf div{
 		margin-right:0;
 	}
-	.footer-social {
-    justify-content: center;
-	}
 	.organizations-item {
     margin-left: 0;
 	}
@@ -437,12 +891,50 @@ h2 .rssicon{
 	.is-expanded+.accordion-content {
     direction: ltr;
 	}
+	.own-timeline-number {
+		margin: 0 0 0 60px;
+  }
+	.two-column-row:nth-child(odd) .column-text {
+		margin: 0;
+	}
+	.two-column-row:nth-child(even) .column-text {
+		margin: 0;
+	}
+	.toc>div {
+		padding: 0 15px 0 20px;
+	}
 }
 @media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ){
+	.own-timeline {
+		margin-left: 0;
+	}
 	.maincard img {
 		margin: 0 0 0 28px;
 	}
 	.maincard {
 		text-align: right;
+	}
+	.own-timeline-number {
+		margin: 0 0 0 20px;
+  }
+	.toc-row {
+		flex-direction: column;
+	}
+	.toc>div {
+		padding: 0;
+	}
+	.expanded>*{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.boxexpand.expanded>h1:first-child, .boxexpand.expanded>h2:first-child, .boxexpand.expanded>h3:first-child {
+		padding: 15px 15px 15px 35px;
+		background: #fff;
+	}
+	.menusimple li a, .menusimple li a:active, .menusimple li a:visited, .menusimple li a:link {
+    text-align: center;
+	}
+	.menusimple li:not(:first-child) {
+    margin-right: 0;
 	}
 }

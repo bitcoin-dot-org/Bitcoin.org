@@ -12,24 +12,8 @@ id: events
   <div class="container hero-container">
     <h1>{% translate pagetitle %}</h1>
     <p class="summary">{% translate pagedesc %} <a class="rss-link" type="application/rss+xml" href="/en/rss/events.rss">{% translate rsslink %}</a></p>
-    {% include helpers/hero-social.html %}
   </div>
 </div>
-
-<link rel="stylesheet" type="text/css" href="/js/leaflet/leaflet.css" />
-<link rel="stylesheet" type="text/css" href="/js/leaflet-markercluster/MarkerCluster.css" />
-<link rel="stylesheet" type="text/css" href="/js/leaflet-markercluster/MarkerCluster.Default.css" />
-<script src="/js/leaflet/leaflet.js"></script>
-<script src="/js/leaflet-markercluster/leaflet.markercluster.js"></script>
-<div id="eventmap" class="eventmap"></div>
-<div id="eventdata" class="eventdata">
-
-{% for p in date_sorted_conferences %}{% if p.geoloc %}
-<div data-lat="{{ p.geoloc.lat }}" data-lon="{{ p.geoloc.lon }}"><b><a href="{{ p.link | htmlescape }}">{{ p.title | htmlescape }}</a></b><br>{{ p.date }}<br>{{ p.venue | htmlescape }}<br>{{ p.address | htmlescape }}<br>{{ p.city | htmlescape }}, {{ p.country | htmlescape }}</div>
-{% endif %}{% endfor %}
-
-</div>
-<script src="/js/events.js"></script>
 
 <div class="events">
   <div class="container">

@@ -23,7 +23,7 @@ version=''
 for f in `find "$BINDIR" -maxdepth 1 ! -path "$BINDIR"`; do
 
 	f=${f##*/}
-	
+
 	# Ignore directories that don't end with a version number.
 	if [[ $f =~ [^0-9]$ ]]; then
 		continue
@@ -110,7 +110,7 @@ tmpdir=`mktemp -d`
 rsync -rt -f '- /*/' --delete "$BINDIR/$PREFIX$version/" "$tmpdir/$PREFIX$version/"
 
 # Build new torrent file.
-buildtorrent -a "udp://tracker.openbittorrent.com:80/announce" -A "udp://tracker.openbittorrent.com:80/announce,udp://tracker.publicbt.com:80/announce,udp://tracker.ccc.de:80/announce,udp://tracker.coppersurfer.tk:6969,udp://open.demonii.com:1337" -w "https://bitcoin.org/bin/" -D -C "$tmpdir/$PREFIX$version" "$BINDIR/$PREFIX$version/bitcoin-$version.torrent"
+buildtorrent -a "udp://tracker.openbittorrent.com:80/announce" -A "udp://tracker.openbittorrent.com:80/announce,udp://tracker.coppersurfer.tk:6969" -w "https://bitcoin.org/bin/" -D -C "$tmpdir/$PREFIX$version" "$BINDIR/$PREFIX$version/bitcoin-$version.torrent"
 
 # Update last combined hash and version.
 echo $currenthash > $DATADIR/lasthash

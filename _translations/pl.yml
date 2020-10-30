@@ -16,7 +16,7 @@ pl:
     missiontxt6: "Poprawa światowej dostępności Bitcoin poprzez umiędzynarodowienie."
     missiontxt7: "Pozostanie neutralnym źródłem informacji o Bitcoin."
     help: "Wesprzyj nas"
-    helptxt: "Możesz zgłosić kazdy problem lub pomóc ulepszyć bitcoin.org na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHubie</a> poprzez zgłoszenie problemu lub przygotowanie prośby o dodanie kodu - pull request - w języku angielskim. Prosimy, abyś, zgłaszając taką prośbę, poświęcił trochę czasu na dyskusję nad zmianami wprowadzanymi w Twoim kodzie. Możesz pomóc z tłumaczeniami, dołączając do zespołu tłumaczy na stronie <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Prosimy, by nie pytać o promocję własnych stron lub działalności, za wyjątkiem szczególnych przypadków, takich jak organizowanie konferencji. Serdeczne podziękowania dla wszystkich, którzy poświęcają swój czas, aby rozwijać bitcoin.org!"
+    helptxt: "Możesz zgłosić kazdy problem lub pomóc ulepszyć bitcoin.org na <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHubie</a> poprzez zgłoszenie problemu lub przygotowanie prośby o dodanie kodu - pull request - w języku angielskim. Prosimy, abyś, zgłaszając taką prośbę, poświęcił trochę czasu na dyskusję nad zmianami wprowadzanymi w Twoim kodzie. Możesz pomóc z tłumaczeniami, dołączając do zespołu tłumaczy na stronie <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Prosimy, by nie pytać o promocję własnych stron lub działalności, za wyjątkiem szczególnych przypadków, takich jak organizowanie konferencji. Serdeczne podziękowania dla wszystkich, którzy poświęcają swój czas, aby rozwijać bitcoin.org!"
     maintenance: "Utrzymanie"
     documentation: "Dokumentacja"
     translation: "Tłumaczenie"
@@ -87,9 +87,8 @@ pl:
     chanmarket: "(Cytaty z rynku na żywo)"
     chanmining: "(O wydobywaniu bitcoinów)"
     social: "Sieci społecznościowe"
-    linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Społeczność Bitcoin w Google+</a>"
-    linktwitter: "Wyszukaj na Twitterze"
-    facebook: "<a href=\"https://www.facebook.com/bitcoins\">Strona na Facebook</a>"
+    linktwitter: "Twitter"
+    facebook: '<a href="https://www.facebook.com/hashtag/bitcoin">Facebook</a>'
     meetups: "Spotkania"
     meetupevents: "Konferencje i wydarzenia Bitcoin"
     meetupgroup: "Grupy spotkań Bitcoin"
@@ -106,20 +105,14 @@ pl:
     walletcathardware: "Sprzęt"
     walletcatweb: "Sieć"
     walletbitcoincore: "Bitcoin Core to kompletny klient Bitcoin, który stanowi kręgosłup sieci. Oferuje on wysoki poziom bezpieczeństwa, prywatności oraz stabilności. Jednakże posiada mniejszą ilość funkcji oraz zajmuje o wiele więcej miejsca i pamięci."
-    walletmultibit: "MultiBit jest niewielką aplikacją, która koncentruje się na szybkości i łatwości obsługi. Synchronizuje się z siecią i jest gotowa do użycia w minuty. MultiBit obsługuje również wiele języków. Jest to dobry wybór dla użytkowników, którzy nie czują się zbyt pewnie w kwestiach technicznych."
     walletarmory: "Armory jest zaawansowanym klientem Bitcoin, który daje szersze możliwości zaawansowanym użytkownikom. Oferuje wiele funkcji kopii zapasowych i szyfrowania oraz umożliwia bezpieczne przechowywanie \"cold-storage\", na komputerach niepodłączonych do sieci."
     walletelectrum: "Electrum koncentruje się na szybkości oraz prostocie przy niewielkim użyciu zasobów. Wykorzystuje on zdalne serwery, które wykonują najbardziej skomplikowane zadania systemu Bitcoin, oraz pozwala Ci na odtworzenie twojego portfela przy użyciu hasła."
-    walletmsigna: "mSIGNA to zaawansowany i prosty w obsłudze portfel oferujący szybkość i prostotę, skalowalność na poziomie przedsiębiorstwa oraz silne zabezpieczenia. Obsługuje on BIP32, transakcje z multipodpisem, przechowywanie offline, synchronizację pomiędzy wieloma urządzeniami oraz szyfrowane kopie zapasowe, zarówno elektroniczne, jak i papierowe."
     walletbitcoinwallet: "Portfel Bitcoin jest łatwy w obsłudze oraz niezawodny, jak również bezpieczny i szybki. Wizją jego twórców były decentralizacja oraz brak zaufania; żadne centralne biuro nie jest potrzebne do operacji związanych z Bitcoin. Aplikacja jest dobrym wyborem dla ludzi, którzy nie są zaawansowanymi użytkownikami komputerów. "
-    walletairbitzwallet: "Airbitz jest serwisem portfela mobilnego z wysokim poziomem prywatności, bezpieczeństwa i decentralizacji bardzo znanym i użytecznym dla mas. Portfele Airbitz zawsze są automatycznie szyfrowane i zapisywane, nawet gdy serwery Airbitz nie są dostępne."
     walletbrd: "Prostota jest podstawową zasadą designu BRD. Jako prawdziwie samodzielny klient Bitcoin, nie posiada on żadnego serwera narażonego na ataki czy awarie, zaś oparcie na potężnej podstawie zabezpieczeń iOS świadczy o tym, że BRD został zaprojektowany, aby chronić Cię przed malware, lukami bezpieczeństwa przeglądarek, a nawet przed fizyczną kradzieżą."
     walletmyceliumwallet: "Mycelium jest portfelem Bitcoin o otwartym źródle na Androida. Został zaprojektowany z myślą o bezpieczeństwie, szybkości i łatwości użytkowania. Oferuje niezwykłe możliwości zarządzania Twoimi kluczami i przechowywania offline, aby pomóc Ci zabezpieczyć Twoje bitcoiny."
-    walletcircle: "Circle jest serwisem portfela sieciowego który mierzy w bycie najprostszym w użytkowaniu. Udostępnia możliwość natychmiastowego kupna i sprzedaży bitcoin używając kartę kredytową lub konto bankowe z USA. Udostępnia również aplikację portfela sieciowego na Androida oraz iOS."
-    walletcoinkite: "Coinkite jest internetowym portfelem oraz serwisem kart debetowych. Jego priorytetem jest prostota użycia. Działa również w przeglądarkach na telefonach, posiada narzędzia handlowe oraz terminale płatnicze. Jest to hybrydowy portfel i sejf o rezerwie 100%."
-    walletbitgo: "BitGo jest portfelem bazującym na funkcji multipodpisu. Oferuje on wysoki poziom bezpieczeństwa. Każda transakcja wymaga dwóch podpisów, co chroni Twoje bitcoiny od złośliwego oprogramowania i ataków na serwer. Prywatne klucze są przechowywane przez użytkownika w taki sposób, że BioGo nie ma dostępu do bitcoinów. Jest to dobry wybór dla niezaawansowanych użytkowników. "
-    walletgreenaddress: "GreenAddress to prosty w obsłudze portfel oparty na funkcji multipodpisu z ulepszeniami w zakresie bezpieczeństwa i prywatności. Twoje klucze nigdy nie znajdują się po stronie serwera, nawet zaszyfrowane. Z przyczyn bezpieczeństwa, zawsze powinieneś używać 2FA oraz rozszerzenia przeglądarki lub aplikacji na Androida."
-    wallettrezor: "TREZOR to portfel sprzętowy, który zapewnia wysoki poziom bezpieczeństwa bez kompromisów w zakresie wygody. W przeciwieństwie do portfeli offline, TREZOR jest w stanie podpisywać transakcje będąc podłączonym do urządzenia online. Oznacza to, że wydawanie bitcoinów  jest bezpieczne nawet podczas korzystania z zagrożonego komputera."
+    wallettrezorone: "TREZOR to portfel sprzętowy, który zapewnia wysoki poziom bezpieczeństwa bez kompromisów w zakresie wygody. W przeciwieństwie do portfeli offline, TREZOR jest w stanie podpisywać transakcje będąc podłączonym do urządzenia online. Oznacza to, że wydawanie bitcoinów  jest bezpieczne nawet podczas korzystania z zagrożonego komputera."
     walletnano: "Ledger Nano jest portelem sprzętowym zbudowanym na platformie bankowej kart elektronicznych ST23YT66. Bezpiecznie przechowuje on prywatne klucze użytkownika, waliduje transakcje, może być użyty jako bezpieczna karta prepaid lub strona multipodpisu. Choć nie ma otwartego źródła, może być walidowany deterministycznie."
+    walletwasabi: "Wasabi jest bitcoinowym portfelem skoncentrowanym na prywatności."
     walletdownload: "Instaluj"
     walletvisit: "Odwiedź witrynę"
     walletsourcecode: "Kod źródłowy"
@@ -202,7 +195,7 @@ pl:
     pagetitle: "Rozwój Bitcoin"
     summary: "Znajdź więcej informacji o aktualnej specyfikacji, oprogramowaniu i programistach."
     spec: "Dokumentacja"
-    spectxt: "Jeśli chciałbyś dowiedzieć się więcej o technicznych szczegółach Bitcoin i o tym, jak używać istniejących narzędzi oraz API, zalecamy, byś zaczął od zapoznania się z <a href=\"/en/developer-documentation\">dokumentacją deweloperską</a>."
+    spectxt: "Jeśli chciałbyś dowiedzieć się więcej o technicznych szczegółach Bitcoin i o tym, jak używać istniejących narzędzi oraz API, zalecamy, byś zaczął od zapoznania się z <a href=\"https://developer.bitcoin.org/\">dokumentacją deweloperską</a>."
     coredev: "Główni programiści"
     inventor: "System Bitcoin był oryginalnie zaprojektowany przez Satoshi Nakamoto. Jego oryginalny kod źródłowy jest obecnie utrzymywany jako Bitcoin Core przez następujących deweloperów oraz społeczność wolontariuszy."
     disclosure: "Odpowiedzialne ujawnianie informacji"
@@ -260,7 +253,7 @@ pl:
     howitworkstxt1: "Z perspektywy użytkownika Bitcoin to po prostu mobilna aplikacja lub program komputerowy umożliwiający korzystanie z osobistego portfela Bitcoin w celu wysyłania lub odbierania pieniędzy. Tak działa Bitcoin dla większości użytkowników."
     howitworkstxt2: "Za kulisami sieć Bitcoin udostępnia publiczną księgę rachunkową, zwaną \"łańcuchem blokowym\". Księga ta zawiera każdą transakcję, jaka kiedykolwiek została przetworzona, co umożliwia komputerowi użytkownika weryfikację ważności każdej transakcji. Autentyczność każdej transakcji jest chroniona cyfrowymi podpisami odpowiadającymi adresom wysyłającym, dzięki czemu wszyscy użytkownicy mają pełną kontrolę nad wysyłaniem bitcoinów z ich własnych adresów Bitcoin. Dodatkowo każdy może przetwarzać transakcje, używając mocy obliczeniowej specjalistycznego sprzętu komputerowego. Za tę usługę można zdobywać wynagrodzenie w bitcoinach. Często nazywa się to \"kopaniem\". Aby dowiedzieć się więcej o Bitcoin, możesz zapoznać się ze <a href=\"#how-it-works#\">szczegółową stroną</a> oraz z <a href=\"#bitcoin-paper#\">oryginalną publikacją</a>."
     used: "Czy Bitcoin rzeczywiście jest używany?"
-    usedtxt1: "Tak. <a href=\"http://usebitcoins.info/\">Coraz więcej firm</a> i osób używa Bitcoin. Dotyczy to tradycyjnych biznesów, jak restauracje, hotele, firmy prawnicze oraz popularnych serwisów internetowych, takich jak Namecheap, WordPress, Reddit i Flattr. Mimo że Bitcoin jest stosunkowo nowym fenomenem, szybko się rozwija. Pod koniec sierpnia 2013  <a href=\"https://bitcoincharts.com/bitcoin/\">wartość wszystkich bitcoinów w obiegu</a> przekroczyła 1,5 miliarda USD, zaś wartość bitcoinów wymienianych codziennie sięga milionów dolarów."
+    usedtxt1: "Tak. Coraz więcej firm i osób używa Bitcoin. Dotyczy to tradycyjnych biznesów, jak restauracje, hotele, firmy prawnicze oraz popularnych serwisów internetowych, takich jak Namecheap, WordPress, Reddit i Flattr. Mimo że Bitcoin jest stosunkowo nowym fenomenem, szybko się rozwija. Pod koniec sierpnia 2013  <a href=\"https://bitcoincharts.com/bitcoin/\">wartość wszystkich bitcoinów w obiegu</a> przekroczyła 1,5 miliarda USD, zaś wartość bitcoinów wymienianych codziennie sięga milionów dolarów."
     acquire: "Jak zdobyć bitcoiny?"
     acquireli1: "Jako płatność za towary lub usługi."
     acquireli2: "Kup bitcoiny w <a href=\"https://www.buybitcoinworldwide.com\">kantorze Bitcoin</a>."
@@ -423,7 +416,7 @@ pl:
     processing: "Przetwarzanie<span class=\"titlelight\"> - wydobywanie</span>"
     processingtxt: "Wydobycie jest <b>rozproszonym systemem konsensu</b>, używanym do <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>potwierdzania</i></a> oczekujących transakcji poprzez włączanie ich do łańcucha bloków. Proces ten zapewnia chronologiczność zdarzeń w łańcuchu, chroni neutralności sieci oraz pozwala różnym komputerom na wzajemnie uzgadnianie stanu systemu. Aby zostały potwierdzone, transakcje muszą być ułożone w <a href=\"#vocabulary##[vocabulary.block]\"><i>blok</i></a> spełniający bardzo ścisłe zasady kryptografii, które zostaną zweryfikowane przez sieć. Zasady te zapobiegają modyfikacji poprzednio zapisanych bloków, gdyż wiązałoby się to z unieważnieniem wszystkich kolejnych bloków. Wydobywanie (kopanie) tworzy również odpowiednik opartej na rywalizacji loterii, która zapobiega prostemu dodawaniu nowych bloków kolejno w łańcuchu bloków przez dowolną jedną osobę. Dzięki temu żadna osoba nie może kontrolować tego, co zostaje zapisane w łańcuchu bloków, ani też zastępować części łańcucha bloków, by cofnąć własne wydatki."
     readmore: "W głąb króliczej nory"
-    readmoretxt: "Prezentujemy tu jedynie krótkie i zwięzłe podsumowanie systemu. Jeśli chcesz poznać detale, możesz <a href=\"#bitcoin-paper#\">przeczytać oryginalną pracę</a> opisującą projekt systemu, przeczytać <a href=\"/en/developer-documentation\">dokumentację dla programistów</a> oraz zagłebić się w lekturę <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>."
+    readmoretxt: "Prezentujemy tu jedynie krótkie i zwięzłe podsumowanie systemu. Jeśli chcesz poznać detale, możesz <a href=\"#bitcoin-paper#\">przeczytać oryginalną pracę</a> opisującą projekt systemu, przeczytać <a href=\"https://developer.bitcoin.org/\">dokumentację dla programistów</a> oraz zagłebić się w lekturę <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>."
   index:
     title: "Bitcoin - Otwarta waluta P2P"
     metadescription: "Bitcoin to innowacyjna sieć płatności i nowy rodzaj pieniądza. Znajdź wszystko, co powinieneś wiedzieć i zacznij korzystać z Bitcoin na bitcoin.org."
@@ -576,7 +569,7 @@ pl:
     update: "Aktualizuj swoje oprogramowanie"
     updatetxt: "Korzystanie z najnowszej wersji oprogramowania Bitcoin zapewni Ci ważną stabilność i poprawki bezpieczeństwa. Aktualizacje mogą zapobiec problemom różnego kalibru, zawierać nowe, przydatne funkcje i pomagać zachować bezpieczeństwo Twojego portfela. Instalowanie aktualizacji dla całej reszty oprogramowania na Twoim komputerze lub telefonie jest również istotne dla uczynienia środowiska Twojego portfela bezpieczniejszym."
     offlinemulti: "Multipodpis chroniący przed kradzieżą"
-    offlinemultitxt: "Bitcoin udostępnia usługę multipodpisu, dzięki której pojedyncza transakcja może wymagać wydania wielu niezależnych zezwoleń zanim dojdzie do skutku. Może to być wykorzystane przez dowolną organizację w celu nadania jej członkom dostępu do skarbca przy jednoczesnym zastrzeżeniu, że wypłaty można dokonać jedynie, jeśli 3 lub 5 członków podpisze daną transakcję. Niektóre portfele przeglądarkowe także obsługują funkcję multipodpisu, zapewniając użytkownikowi kontrolę nad jego pieniędzmi i zapobiegając ich kradzieży wynikającej z uzyskania dostępu do jednego urządzenia lub serwera."
+    offlinemultitxt: "Bitcoin udostępnia usługę multipodpisu, dzięki której pojedyncza transakcja może wymagać wydania wielu niezależnych zezwoleń zanim dojdzie do skutku. Może to być wykorzystane przez dowolną organizację w celu nadania jej członkom dostępu do skarbca przy jednoczesnym zastrzeżeniu, że wypłaty można dokonać jedynie, jeśli 3 z 5 członków podpisze daną transakcję. Niektóre portfele przeglądarkowe także obsługują funkcję multipodpisu, zapewniając użytkownikowi kontrolę nad jego pieniędzmi i zapobiegając ich kradzieży wynikającej z uzyskania dostępu do jednego urządzenia lub serwera."
     offlinetestament: "Pomyśl o swoim testamencie"
     offlinetestamenttxt: "Twoje bitcoiny przepadną na zawsze, jeśli nie masz planu przekazania ich swoim znajomym i rodzinie. Jeśli nikt nie będzie znał lokalizacji Twoich portfeli lub haseł, gdy odejdziesz, nie istnieje żadna nadzieja, by Twoje fundusze kiedykolwiek zostały odzyskane. Poświęcenie chwili czasu tym kwestiom może oznaczać wielką różnicę."
   support-bitcoin:
@@ -596,7 +589,7 @@ pl:
     nonprofit: "Organizacje"
     nonprofittxt: "<a href=\"https://bitcoinfoundation.org/\">Fundacja Bitcoin</a> i wiele innych <a href=\"#community##[community.non-profit]\">organizacji non-profit</a> działają w celu ochrony i promocji Bitcoin. Możesz pomóc tym grupom dołączając do nich i uczestnicząc w ich projektach, dyskusjach i wydarzeniach."
     spread: "Rozgłaszaj"
-    spreadtxt: "Rozmawiaj o Bitcoin z zainteresowanymi osobami. Napisz o Bitcoin na swoim blogu. Powiedz Twoim ulubionym sklepom, że chciałbyś zapłacić używając Bitcoin. Pomóż aktualizować <a href=\"http://usebitcoins.info/\">katalogi handlowców</a>. Albo bądź kreatywny i zrób sobie ładną koszulkę Bitcoin. "
+    spreadtxt: "Rozmawiaj o Bitcoin z zainteresowanymi osobami. Napisz o Bitcoin na swoim blogu. Powiedz Twoim ulubionym sklepom, że chciałbyś zapłacić używając Bitcoin. Pomóż aktualizować katalogi handlowców. Albo bądź kreatywny i zrób sobie ładną koszulkę Bitcoin. "
     wiki: "Dokumentacja"
     wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> oraz <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> dostarczają użyteczną dokumentację i stale ulepszamy informacje, które zawierają. Możesz pomóc doskonalić te zasoby oraz dbać o ich aktualność."
     translate: "Tłumacz"
@@ -678,7 +671,7 @@ pl:
     menu-participate: Weź udział
     menu-vocabulary: Słownik
     menu-you-need-to-know: "Musisz to wiedzieć"
-    banner-translate: "Tłumaczenia dla tego języka są przestarzałe. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Kliknij tutaj, aby pomóc w tłumaczeniu bitcoin.org na Twój język</a>."
+    banner-translate: "Tłumaczenia dla tego języka są przestarzałe. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Kliknij tutaj, aby pomóc w tłumaczeniu bitcoin.org na Twój język</a>."
     footer: "Dostępny w ramach <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licencji MIT</a>"
     sponsor: "Strona społecznościowa sponsorowana przez"
     getstarted: "Pierwsze kroki z Bitcoin"
@@ -687,10 +680,12 @@ pl:
     bitcoin-for-developers: bitcoin-dla-deweloperow
     bitcoin-for-individuals: bitcoin-dla-osob-fizycznych
     bitcoin-for-businesses: bitcoin-dla-biznesu
+    buy: kup
     choose-your-wallet: wybierz-swoj-portfel
     community: spolecznosc
     development: rozwoj
     download: pobieranie
+    exchanges: wymiany
     events: wydarzenia
     faq: faq
     getting-started: pierwsze-kroki
@@ -705,6 +700,7 @@ pl:
     support-bitcoin: wesprzyj-bitcoin
     vocabulary: slownik
     you-need-to-know: co-potrzebujesz-wiedziec
+    spend-bitcoin: zuzyc-bitcoin
   anchor:
     community:
       non-profit: non-profit

@@ -141,7 +141,7 @@ function expandBox(t) {
   t.style.transition = t.style.MozTransition = t.style.WebkitTransition = 'all 0s ease 0s';
   if (t.className.indexOf('expanded') === -1) addClass(t, 'expanded');
   else removeClass(t, 'expanded');
-  
+
   setTimeout(function() {
     t.style.transition = t.style.MozTransition = t.style.WebkitTransition = '';
   }, 20);
@@ -255,15 +255,15 @@ function updateToc() {
     function updatetoc() {
         // Set bottom and top to fit within window and not overflow its parent node.
         var div = toc.getElementsByTagName('DIV')[0];
-        var sidebarHeight = document.querySelector(".sidebar").offsetHeight; 
-        var footerTop = document.querySelector(".footer").offsetTop; 
-                
+        var sidebarHeight = document.querySelector(".sidebar").offsetHeight;
+        var footerTop = document.querySelector(".footer").offsetTop;
+
         if (window.scrollY >= getTop(toc) - 20 && window.scrollY + sidebarHeight + 20 <= footerTop) {
           addClass(div, "scroll");
         } else {
           removeClass(div, "scroll");
         }
-        
+
         // Remove .active class from toc and find new active toc entry.
         var a = false;
         for (var i = 0, t = toc.getElementsByTagName('*'), n = t.length; i < n; i++) {
@@ -469,8 +469,8 @@ function generateDonationQrCode() {
 }
 
 function loadTickerPrices() {
-    $.ajax('https://apiv2.bitcoinaverage.com/indices/global/ticker/short?crypto=BTC&fiat=USD').then(function(data) {
-        var rate = data.BTCUSD.last;
+    $.ajax('https://blockchain.info/ticker').then(function(data) {
+        var rate = data.USD.last;
 
         function usdToBtc(amount) {
             var amountUsd = parseFloat(amount);
@@ -570,7 +570,7 @@ function closeDonationBanner() {
   var open = $(".donation-visibility-toggle");
 
   open.removeClass("active");
-  banner.removeClass("expanded"); 
+  banner.removeClass("expanded");
 }
 function accordion() {
   $(document).ready(function($) {
@@ -584,7 +584,7 @@ function accordion() {
       $(".accordion-content").not($(this).next()).slideUp("fast");
       $(".accordion-toggle").not($(this)).removeClass("active");
     });
-  }); 
+  });
 }
 
 function onScrollButton() {
@@ -600,8 +600,8 @@ function onScrollButton() {
       if (buttonTop === 0) {
         buttonTop = button.offsetTop;
       }
-      var footerTop = document.querySelector(".footer").offsetTop;      
-      
+      var footerTop = document.querySelector(".footer").offsetTop;
+
       // Fixed menu
       if (window.scrollY >= buttonTop && window.scrollY + buttonHeight <= footerTop) {
         button.classList.add("is-fixed");
@@ -624,7 +624,7 @@ function onScrollButton() {
   }
 
   window.addEventListener("scroll", stickyButton);
-  button.addEventListener("click", showSidebar); 
+  button.addEventListener("click", showSidebar);
   closeButton.addEventListener("click", hideSidebar);
 
   for (var i = 0; i < sidebarLinks.length; i++) {
@@ -635,57 +635,113 @@ function onScrollButton() {
     });
   }
 }
-function walletMenuAccordion() {
-  var tabs = document.querySelectorAll(".js-tab");
 
-  for (var i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener("click", function() {
-      this.classList.toggle("is-expanded");
+function handleDevDocsRedirect(name) {
+  var blockchainGuideRedirects = ["proof-of-work", "block-height-and-forking", "transaction-data", "consensus-rule-changes", "detecting-forks", "term-consensus", "term-consensus-rules", "term-block", "term-merkle-root", "term-txid", "term-utxo", "term-transaction-fee", "term-miner", "term-proof-of-work", "term-target", "term-difficulty", "term-51-attack", "term-block-height", "term-genesis-block", "term-fork", "term-stale-block", "term-merkle-tree", "term-hard-fork", "term-soft-fork", "term-uasf", "term-masf"];
+  var transactionGuideRedirects = ["p2pkh-script-validation", "p2sh-scripts", "standard-transactions", "signature-hash-types", "locktime-and-sequence-number", "transaction-fees-and-change", "avoiding-key-reuse", "transaction-malleability", "term-key-pair", "term-output-index", "term-transaction-version-number", "term-unique-address", "term-input", "term-output", "term-p2pkh", "term-private-key", "term-public-key", "term-address", "term-pubkey-script", "term-signature-script", "term-signature", "term-p2sh", "term-redeem-script", "term-null-data", "term-signature-hash", "term-sighash-all", "term-sighash-none", "term-sighash-single", "term-sighash-anyonecanpay", "term-locktime", "term-sequence-number", "term-high-priority-transactions", "term-minimum-fee", "term-change-output", "term-transaction-malleability"];
+  var contractsGuideRedirects = ["escrow-and-arbitration", "micropayment-channel", "coinjoin", "term-escrow-contract", "term-multisig", "term-p2sh-multisig", "term-micropayment-channel"];
+  var walletsGuideRedirects = ["wallet-programs", "full-service-wallets", "signing-only-wallets", "offline-wallets", "hardware-wallets", "distributing-only-wallets", "wallet-files", "private-key-formats", "wallet-import-format-wif", "mini-private-key-format", "public-key-formats", "hierarchical-deterministic-key-creation", "hardened-keys", "storing-root-seeds", "loose-key-wallets", "term-key-index", "term-point-function", "term-wallet-import-format", "term-hd-protocol", "term-child-public-key", "term-parent-public-key", "term-child-key", "term-parent-key", "term-chain-code", "term-master-chain-code", "term-parent-private-key", "term-parent-chain-code", "term-extended-key", "term-extended-private-key", "term-extended-public-key", "term-master-private-key", "term-root-seed", "term-hardened-extended-private-key"];
+  var paymentProcessingGuideRedirects = ["pricing-orders", "requesting-payments", "plain-text", "bitcoin-uri", "qr-codes", "payment-protocol", "verifying-payment", "issuing-refunds", "disbursing-income-limiting-forex-risk", "merge-avoidance", "last-in-first-out-lifo", "first-in-first-out-fifo", "rebilling-recurring-payments", "term-bitcoin-uri", "term-fiat", "term-label", "term-merge", "term-merge-avoidance", "term-message", "term-r-parameter", "term-receipt", "term-uri-qr-code", "term-payment-protocol", "term-double-spend", "term-confirmation"];
+  var operatingModesGuideRedirects = ["full-node", "simplified-payment-verification-spv", "potential-spv-weaknesses", "bloom-filters", "application-of-bloom-filters", "future-proposals"];
+  var p2pNetworkOpertingGuideRedirects = ["peer-discovery", "connecting-to-peers", "initial-block-download", "blocks-first", "headers-first", "block-broadcasting", "orphan-blocks", "transaction-broadcasting", "memory-pool", "misbehaving-nodes", "alerts", "term-network", "term-standard-block-relay", "term-unsolicited-block-push", "term-dns-seed", "term-header-chain", "term-direct-headers-announcement"];
+  var miningGuideRedirects = ["solo-mining", "pool-mining", "block-prototypes", "getwork-rpc", "getblocktemplate-rpc", "stratum"];
 
-      for (var index = 0; index < tabs.length; index++) {
-        if (this !== tabs[index]) {
-          tabs[index].classList.remove("is-expanded");
-        }
-      }
-    });
+  if (blockchainGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/blockchain-guide#" + name;
+  }
+
+  if (transactionGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/transactions-guide#" + name;
+  }
+
+  if (contractsGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/contracts-guide#" + name;
+  }
+
+  if (walletsGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/wallets-guide#" + name;
+  }
+
+  if (paymentProcessingGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/payment-processing-guide#" + name;
+  }
+
+  if (operatingModesGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/operating-modes-guide#" + name;
+  }
+
+  if (p2pNetworkOpertingGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/p2p-network-guide#" + name;
+  }
+
+  if (miningGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/mining-guide#" + name;
+  }
+
+}
+
+function getUrlParameter(name) {
+  name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+  var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+  var results = regex.exec(location.search);
+  return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+}
+
+function updateQueryStringParameter(key, value) {
+  var uri = window.location.href;
+  var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+  var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+  if (uri.match(re)) {
+    return uri.replace(re, '$1' + key + "=" + value + '$2');
+  }
+  else {
+    return uri + separator + key + "=" + value;
   }
 }
-function showNextMobileAccordion() {
-  var platformItems = document.querySelectorAll(".js-platform");
-  var tabs = document.querySelectorAll(".accordion-tab");
-  var platformTab = document.querySelector(".accordion-tab-1");
-  var osAccordion = document.querySelectorAll(".accordion-os");
-  var walletAccordion = document.querySelector(".accordion-wallets");
+
+function checkIfFiltersInclude(categories, filters) {
+  for (var i = 0; i < filters.length; i++) {
+    var filter = filters[i];
+    if (categories.indexOf(filter) === -1 && filter !== '') return false;
+  }
+  return true;
+}
+
+function setUrlParameter(parameter, value) {
+  history.pushState(null, null, updateQueryStringParameter(parameter, value));
+}
+
+function queryStringToArray() {            
+  var categories = ['platform', 'user', 'important', 'features'];
+  var result = [];
+  var pairs = location.search.slice(1).split('&');
+
+  for (var i = 0; i < pairs.length; i++) {
+    var pair = pairs[i];
+    pair = pair.split('=');
+    if (pair[1] && categories.indexOf(pair[0]) > -1) result = result.concat(pair[1].split(','));
+  }
+
+  return result;
+}
+
+function changeAccordionButtonText(button, text) {
+  button.textContent = text;
+}
+
+function sortTableColumn(selectedOption) {
+  var tableAccordion = document.getElementById('tableAccordion');
+  var tableAccordionButton = document.getElementById('tableAccordionButton');
   
-  for (var i = 0; i < platformItems.length; i++) {
-    
-    platformItems[i].addEventListener("click", function(e) {
-    
-      for (var num = 0; num < tabs.length; num++) {
-        tabs[num].classList.remove("is-selected");
-        tabs[num].querySelector(".selected-item").textContent = "";
-      }
+  changeAccordionButtonText(tableAccordionButton, selectedOption);
+  tableAccordion.classList.remove('open');
 
-      var selectedPlatform = e.target;
-      
-      var platformName = selectedPlatform.dataset.platformName;
-      document.querySelector(".selected-platform").textContent = selectedPlatform.textContent;
+  var tableCells = document.querySelectorAll('.wallet-table-data[data-cell]');
 
-      // Display next accordion and hide not selected accordion
-      for (var a = 0; a < osAccordion.length; a++) {
-        if (platformName === osAccordion[a].dataset.os) {
-          osAccordion[a].classList.add("is-visible");
-          osAccordion[a].querySelector('.accordion-tab-2').classList.add('is-expanded');
-          platformTab.classList.add("is-selected");
-        } else {
-          osAccordion[a].classList.remove("is-visible");
-        }
-      }
-
-      // Close accordion after selection
-      platformTab.classList.remove("is-expanded");
-      // Hide wallet accordion if user want to change platform
-      walletAccordion.classList.remove("is-visible");
-    });
+  for (var i = 0; i < tableCells.length; i++) {
+    var cell = tableCells[i];
+    if (cell.dataset.cell === selectedOption) {
+      cell.classList.remove('hidden');
+    } else cell.classList.add('hidden');
   }
 }

@@ -17,7 +17,6 @@ breadcrumbs:
 <div class="container hero-container" markdown="block">
 
 # Bitcoin Core's User Interface
-{% include helpers/hero-social.html %}
 </div>
 </div>
 
@@ -141,7 +140,7 @@ configuration.
 </div>
 
 <div class="alert ui-alert" markdown="block">
-**Learn more:** documentation for the [RPC][rpc] and [REST][rest] interfaces
+**Learn more:** documentation for the [Bitcoin Core APIs](https://bitcoin.org/en/developer-reference#bitcoin-core-apis)
 </div>
 
 ## Lightweight Wallets Using Bitcoin Core {#lightweight}
@@ -169,61 +168,6 @@ benefits of a full node as well as [help protect decentralization][bcc
 validation decentralization].
 
 </div>
-</div>
-
-### Trusted Peer Support {#trusted-peer}
-
-The following wallets can securely connect to a trusted peer.
-
-<div markdown="block" class="wallet_accordion">
-{% comment %}<!-- Put wallets in alphabetical order -->{% endcomment %}
-
-### GreenBits
-
-<div markdown="block">
-![GreenBits screenshot](/img/screenshots/greenbits.png?{{site.time | date: '%s'}})
-
-GreenBits is a fast and easy to use wallet. Enjoy improved security with
-a minimal/zero trust approach, optional hardware wallets support,
-multisignature based 2FA and spending limits functionality.
-
-**Requires you setup a [Tor .onion address][bcc tor hs].**
-
-1. Open the GreenBits app
-
-2. Go to the configuration screen
-
-3. Choose to *Enable SPV* (default) and tap *Only connect to a
-   trusted peer*.
-
-4. Enter your .onion address in the *trusted peer* field.
-
-5. Restart the app.
-
-Note that GreenAddress will still be able to see your payments; however,
-you'll have enhanced security as well as privacy from random peers on
-the Bitcoin network.
-
-{:.right-hanger}
-[Get GreenBits](https://play.google.com/store/apps/details?id=com.greenaddress.greenbits_android_wallet)
-</div>
-
-### mSigna
-
-<div markdown="block">
-![mSigma screenshot](/img/screenshots/msigna.png?{{site.time | date: '%s'}})
-
-{% translate walletmsigna choose-your-wallet %}
-
-**No configuration necessary:** just install Bitcoin Core on the same
-computer you plan to use mSigna, wait for Bitcoin Core to sync the block
-chain, and then start mSigna---it will automatically connect to your
-Bitcoin Core full node.
-
-{:.right-hanger}
-[Get mSigna](https://ciphrex.com/redirect/?referer=bitcoin.org)
-</div>
-
 </div>
 
 <div class="not-displayed">

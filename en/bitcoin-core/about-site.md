@@ -17,7 +17,6 @@ breadcrumbs:
 <div class="container hero-container" markdown="block">
 
 # About the Bitcoin Core pages on Bitcoin.org
-{% include helpers/hero-social.html %}
 
 </div>
 </div>
@@ -60,5 +59,6 @@ Pull requests and issues directly relating to Bitcoin Core are tagged as
 *[Core][core github tag]* in the Bitcoin.org repository.
 
 {% include references.md %}
+
 </div>
 </div>

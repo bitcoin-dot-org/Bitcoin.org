@@ -3,8 +3,16 @@ nl:
     title: "Over bitcoin.org"
     pagetitle: "Over bitcoin.org"
     pagedesc: "Bitcoin.org is toegewijd om Bitcoin op een duurzame manier te helpen ontwikkelen."
-    own: "Wie is de eigenaar van bitcoin.org?"
-    owntxt: "Bitcoin.org is de originele domeinnaam die voor de eerste Bitcoin-website is gebruikt. Het werd geregistreerd en wordt nog steeds gebruikt door <a href=\"#development#\">core-ontwikkelaars van Bitcoin</a> en een aantal communityleden, met input van de <a href=\"#community#\">Bitcoin-community's</a>. Bitcoin.org is geen officiële website. Net zoals niemand eigenaar is van de e-mailtechnologie, is niemand eigenaar van het Bitcoin-netwerk. Op die manier kan niemand namens Bitcoin spreken."
+    own: "Wie is eigenaar van bitcoin.org?"
+    owntxt-title: "Satoshi Nakamoto en Martti Malmi"
+    owntxt: "Bitcoin.org werd oorspronkelijk geregistreerd en was eigendom van de eerste twee ontwikkelaars van Bitcoin, <a href=\"https://en.bitcoin.it/wiki/Satoshi_Nakamoto\">Satoshi Nakamoto</a> en <a href=\"https://en.bitcoin.it/wiki/Sirius\">Martti Malmi</a>. Toen Nakamoto het project verliet, gaf hij het eigendom van het domein aan meer mensen, los van de Bitcoin-ontwikkelaars, om de verantwoordelijkheid te spreiden en te voorkomen dat één persoon of groep gemakkelijk de controle over het Bitcoin-project zou krijgen."
+    owntxt2-title: "Bitcoin Core"
+    owntxt2: "Van 2011 tot 2013 werd de site voornamelijk gebruikt voor het uitbrengen van nieuwe versies van de software die nu Bitcoin Core heet. In 2013 werd de site herontworpen. Er werden tal van pagina's toegevoegd met onder andere extra Bitcoin-software, en werd het vertaalsysteem toegevoegd."
+    owntxt3-title: "De documentatie voor ontwikkelaars is in 2014 toegevoegd."
+    owntxt3: "Updates, oplossingen, suggesties en verbeteringen vanuit de leden van de gemeenschap zijn welkom."
+    owntxt4-title: "De website is een onafhankelijk open-source project."
+    owntxt4: "Tegenwoordig is de site een onafhankelijk open source project met contribuanten uit de hele wereld. De uiteindelijke bevoegdheid tot publicatie ligt bij de mede-eigenaars, maar alle reguliere werkzaamheden worden georganiseerd via het openbare <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md\">pull-aanvraagproces</a> en beheerd door de mede-beheerders van de site."
+    owntxt5: "Bitcoin.org is niet de officiële website van Bitcoin. Net als dat er niet één eigenaar is van e-mailtechnologie, is er niet één eigenaar van het Bitcoin-netwerk. Daarom kan niemand terecht (met authoriteit) claimen te spreken in naam van Bitcoin."
     control: "Maar wie heeft bij Bitcoin dan de touwtjes in handen?"
     controltxt: "Bitcoin wordt beheerd door alle Bitcoin-gebruikers ter wereld. Ontwikkelaars zijn continu bezig de software te verbeteren, maar kunnen geen wijzigingen in de regels van het Bitcoin-protocol doorvoeren omdat alle gebruikers vrij zijn om te kiezen welke software ze gebruiken. Om met elkaar compatibel te blijven, dienen alle gebruikers software te gebruiken die aan dezelfde regels voldoet. Bitcoin werkt alleen naar behoren met een complete overeenstemming tussen alle gebruikers. Daarom hebben alle gebruikers en ontwikkelaars een sterke drijfveer om deze overeenstemming over te nemen en te beschermen."
     mission: "Missie"
@@ -16,65 +24,125 @@ nl:
     missiontxt6: "Verbeter de wereldwijde toegankelijkheid van Bitcoin via internationalisatie."
     missiontxt7: "Blijf een neutrale informatiebron over Bitcoin."
     help: "Help ons"
-    helptxt: "U kunt op <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> ieder probleem melden of helpen bitcoin.org te verbeteren door in het Engels een \"issue\" te openen of \"pull request\" in te dienen. Als u een \"pull request\" indient, neem dan de benodigde tijd om uw wijzigingen te bespreken en uw werk aan te passen. U kunt met de vertalingen helpen door u bij een team te voegen op <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>. Vraag a.u.b. geen reclame voor uw eigen bedrijf of website aan, behalve voor speciale gevallen zoals conferenties. Veel dank aan alle bijdragers die tijd spenderen aan het verbeteren van bitcoin.org! "
+    helptxt: "U kunt elk probleem of hulp bij het verbeteren van bitcoin.org op <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> melden door een probleem of een pull-verzoek in het Engels te openen. Als u een pull-verzoek indient, neem dan de nodige tijd om uw wijzigingen te bespreken en uw werk aan te passen. U kunt helpen met vertalen door u aan te sluiten bij een team op <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Vraag alstublieft niet om promotionele activiteiten voor uw eigen bedrijf of website, behalve voor speciale gevallen zoals conferenties. Veel dank aan alle medewerkers, die tijd besteden aan het verbeteren van bitcoin.org!"
     maintenance: "Onderhoud"
     documentation: "Documentatie"
+    sponsorship: "Sponsoring"
+    service_contributors: "Service Contribuanten"
     translation: "Vertaling"
+    inactive_contributors: "Inactieve Bijdragers"
+    owners: "Domein eigenaren"
+    partial_list: "Gedeeltelijke Lijst"
     github: "Bijdragers op GitHub"
   bitcoin-for-businesses:
     title: "Bitcoin voor bedrijven - Bitcoin"
     pagetitle: "Bitcoin voor bedrijven"
     summary: "Bitcoin is een zeer veilige en goedkope manier om betalingen te verwerken."
-    lowfee: "De laagste transactiekosten die er zijn"
-    lowfeetext: "Door de sterke cryptografische beveiliging van Bitcoin kan het op een zeer efficiënte en goedkope manier transacties verwerken. In de meeste gevallen kunnen transacties via het Bitcoin-netwerk vrijwel zonder transactiekosten worden verricht. In de meeste gevallen zijn er geen verplichte kosten, maar wordt dit wel aangeraden voor een snellere bevestiging van uw transactie."
+    lowfee: "Kies uw eigen vergoedingen"
+    lowfeetext: >
+        Er zijn geen kosten verbonden aan het ontvangen van bitcoins, en met veel
+        portefeuilles kun je zelf bepalen hoeveel je moet betalen als je geld uitgeeft.
+        De meeste portefeuilles hebben redelijke standaardkosten, en hogere kosten
+        kunnen leiden tot een snellere bevestiging van uw transacties. De kosten zijn
+        niet gerelateerd aan het over te maken bedrag, dus het is mogelijk om 100.000
+        bitcoins te sturen tegen dezelfde kosten als 1 bitcoin.
     fraud: "Beveiliging tegen fraude"
     fraudtext: "Elk bedrijf dat creditcards of PayPal-betalingen accepteert kent het probleem van betalingen die later worden teruggedraaid. Terugboekingsfraude resulteert in een beperkt marktbereik en hogere prijzen, die op hun beurt klanten benadelen. Bitcoin-betalingen zijn onomkeerbaar en veilig, waardoor de kosten van diefstal niet meer gedragen hoeven te worden door verkopers."
     international: "Snelle internationale betalingen"
-    internationaltext: "Bitcoins kunnen worden overgemaakt van Afrika naar Canada in tien minuten. Sterker nog: bitcoins hebben geen vaste fysieke locatie. Het is dus altijd mogelijk er zoveel van te verzenden als u wilt, overal naartoe, zonder limieten, vertragingen of hoge transactiekosten. Er komen geen banken aan te pas die drie werkdagen nodig hebben om uw geld op de juiste plaats te krijgen."
+    internationaltext: >
+        Bitcoins over de grens sturen is net zo gemakkelijk als ze naar de overkant
+        van de straat sturen. Er zijn geen banken die u drie werkdagen laten wachten,
+        geen extra kosten voor het maken van een internationale overboeking, en geen
+        speciale beperkingen op het minimum of maximum bedrag dat u kunt verzenden.
     pci: "Geen PCI-compliance nodig"
-    pcitext: "Om creditcards via internet te kunnen accepteren, moet u langdurige beveiligingschecks ondergaan om te voldoen aan de PCI-standaard. Bitcoin vereist dat u nog steeds <a href=\"#secure-your-wallet#\">uw portemonnee</a> en uw betalingsverzoeken beveiligt. U draagt echter niet de kosten en verantwoordelijkheden die zijn verbonden aan het verwerken van gevoelige informatie van uw klanten, zoals creditcardnummers."
+    pcitext: "Het online accepteren van creditcards vereist doorgaans uitgebreide veiligheidscontroles om te voldoen aan de PCI-norm. Bitcoin eist nog steeds dat u <a href=\"#secure-your-wallet#\">uw portefeuille en uw betalingsverzoeken beveiligt</a>, maar u draagt niet de kosten en verantwoordelijkheden die gepaard gaan met het verwerken van gevoelige informatie van uw klanten zoals met creditcardnummers."
     visibility: "Gratis publiciteit"
     visibilitytext: "Bitcoin is een nieuwe markt, met nieuwe klanten die op zoek zijn naar producten en diensten om hun bitcoins aan uit te geven. Het accepteren van bitcoins voor uw producten is een goede manier om deze klanten voor u te winnen. Het is altijd een goed idee gebleken voor bedrijven die op het internet opereren om nieuwe manieren van betaling te accepteren."
     multisig: "Meervoudige ondertekening"
-    multisigtext: "Bitcoin heeft ook een functionaliteit voor meerdere handtekeningen, wat ervoor zorgt dat bitcoins alleen uitgegeven worden als een deel van een groep mensen de transactie autoriseert. Dit kan gebruikt worden door een raad van bestuur om te verhinderen dat een lid uitgaven maakt zonder genoeg goedkeuring van de andere leden, en om na te gaan welke leden iedere betaling hebben toegestaan."
+    multisigtext: "Bitcoin bevat ook een functie voor meerdere handtekeningen waardoor bitcoins alleen kunnen worden besteed als een deel van een groep mensen de transactie goedkeurt. Dit kan bijvoorbeeld worden gebruikt door een raad van bestuur om te voorkomen dat leden uitgaven doen zonder voldoende toestemming van andere leden, en om na te gaan welke leden bepaalde transacties hebben toegestaan."
     transparency: "Transparante boekhouding"
-    transparencytext: "Veel organisaties zijn verplicht om boekhoudingsdocumenten over hun activiteit te produceren. Bitcoin biedt u de grootst mogelijke transparantie, omdat u informatie kunt verstrekken die uw leden kunnen gebruiken om uw saldi en transacties te verifiëren. Non-profitorganisaties kan het publiek ook inzage geven in wat er aan donaties is ontvangen."
+    transparencytext: "Veel organisaties zijn verplicht om boekhoudkundige documenten over hun activiteit op te stellen. Door gebruik te maken van Bitcoin kunt u de hoogste mate van transparantie bieden, aangezien u informatie kunt verstrekken om saldi en transacties in de blockchain te verifiëren. Organisaties zonder winstoogmerk kunnen het publiek bijvoorbeeld laten zien hoeveel ze aan donaties ontvangen."
   bitcoin-for-developers:
     title: "Bitcoin voor ontwikkelaars - Bitcoin"
     pagetitle: "Bitcoin voor ontwikkelaars"
-    summary: "Met Bitcoin kunnen geweldige dingen worden gebouwd of gewoon betalingen worden gedaan."
+    summary: "Bitcoin kan worden gebruikt om verbazingwekkende dingen te bouwen en oplossingen te bieden voor veelvoorkomende problemen."
     simple: "Het eenvoudigste betalingssysteem"
-    simpletext: "Tenzij er automatische betaalopdrachten in het spel zijn, is er geen gemakkelijkere manier om geld te accepteren dan Bitcoin. Er hoeft alleen maar een bitcoin: link of een QR-code op een website gezet te worden en dat is dat. Deze supereenvoudige configuratie kan door iedereen worden gebruikt en is over het algemeen genoeg voor het grootste deel van de klanten die met bitcoins kunnen betalen. Het is vooral ook erg geschikt voor donaties."
+    simpletext: "Tenzij een betaling moet worden gekoppeld aan automatische facturen, is het accepteren van geld zo eenvoudig als het verzenden van een beetje bitcoin - gewoon een adres of QR-code. Deze eenvoudige setup is binnen het bereik van bijna alle gebruikers en kan voldoen aan de behoeften van vele klanten. Boekhoudkundig gezien is het vooral geschikt voor het verminderen van overhead en het vergroten van transparantie."
     api: "Veel third-party API's"
     apitext: "Er zijn allerlei third-party diensten die betalings-API's aanbieden; zo hoeft u geen bitcoins op uw eigen server op te slaan en te beveiligen tegen diefstal en verlies. Ook kunnen die API's meestal facturen verwerken en bitcoins inwisselen voor allerlei valuta tegen geldende marktprijzen."
-    own: "U kunt ook uw eigen financiële systeem zijn"
-    owntext: "Als u geen third-party API's gebruikt, kunt u zelf een Bitcoin-server in uw applicaties integreren en zo uw eigen bank en betalingsverwerker worden. Dit brengt natuurlijk wel behoorlijke verantwoordelijkheden met zich mee, maar zo kunt u wel geweldige systemen bouwen die Bitcoin-transacties kunnen verwerken met zeer lage transactiekosten."
+    own: "U kunt uw eigen bank zijn"
+    owntext: >
+        Als u geen API's van derden gebruikt, dan kunt u direct een Bitcoin-node in
+        uw toepassingen integreren, zodat u uw eigen bank en betalingsverwerker kunt
+        worden. Dit brengt natuurlijk wel behoorlijke verantwoordelijkheden met zich
+        mee, maar zo  kunt u geweldige systemen bouwen die Bitcoin transacties verwerken
+        zoals u dat wilt.
     invoice: "Bitcoin-adressen om facturen te traceren"
-    invoicetext: "Bitcoin maakt voor elke transactie een uniek adres aan. Wilt u een betalingssysteem bouwen om facturen te traceren? Genereer dan gewoon een Bitcoin-adres voor elke betaling. U hoeft nooit hetzelfde adres voor meer dan een transactie te gebruiken."
-    security: "Het grootste deel van de beveiliging gebeurt aan de kant van de client"
-    securitytext: "De meeste veiligheidschecks worden gedaan door het protocol. Dit houdt in dat er geen PCI-compliance nodig is en dat fraudedetectie alleen is vereist wanneer diensten of producten direct worden geleverd. U kunt zich op deze manier bezighouden met het opslaan van uw bitcoins in een <a href=\"#secure-your-wallet#\">veilige omgeving</a> en het verifiëren van betalingsverzoeken van gebruikers."
-    micro: "Goedkope microbetalingen"
-    microtext: "Bitcoin biedt de laagste verwerkingskosten voor elk soort transactie en kan doorgaans worden gebruikt voor microbetalingen van slechts een paar dollar. Bitcoin maakt het mogelijk om nieuwe, creatieve online diensten te ontwerpen die eerder niet mogelijk waren vanwege financiële beperkingen. Denk hierbij aan verschillende fooisystemen en automatische betaaloplossingen."
+    invoicetext: "Bitcoin maakt voor elke transactie een uniek adres aan. Als u een betalingssysteem zou moeten bouwen dat gekoppeld is aan een factuur, hoeft u alleen maar voor elke betaling een Bitcoin-adres aan te maken en te controleren (u mag nooit hetzelfde adres voor meer dan één transactie gebruiken)."
+    security: "Het grootste deel van de beveiliging is aan de kant van de client"
+    securitytext: >
+        De meeste beveiligingzaken wordt door het protocol afgehandeld, waardoor PCI-compliance
+        niet meer nodig is. Fraudepreventie kan worden vereenvoudigd door het monitoren
+        van één variabele: de <a href="#you-need-to-know##instant">bevestigingsscore</a>.
+        Daarnaast is het veilig houden van uw bitcoins vooral een kwestie van het
+        <a href="#secure-your-wallet#">beveiligen van uw portemonnee</a> en het gebruik
+        van HTTPS of andere veilige protocollen om betalingsverzoeken naar klanten
+        te sturen.
+    micro: "Een nieuwe wereld van mogelijkheden"
+    microtext: >
+        Met Bitcoin kunt u nieuwe en creatieve online services ontwerpen die voorheen
+        niet konden bestaan vanwege financiële beperkingen. Dit omvat fooisystemen,
+        geautomatiseerde betalingsoplossingen, gedistribueerde crowdfundingdiensten,
+        tijdvergrendeld betalingsbeheer, collectief vermogensbeheer, low-trust escrow-diensten,
+        microbetalingskanalen en nog veel meer.
   bitcoin-for-individuals:
     title: "Bitcoin voor particulieren - Bitcoin"
     pagetitle: "Bitcoin voor particulieren"
-    summary: "Bitcoin is de eenvoudigste manier om geld uit te wisselen tegen zeer lage kosten."
+    summary: "Bitcoin is de gemakkelijkste manier om tegen zeer lage kosten te handelen."
     mobile: "Gemakkelijke mobiele betalingen"
-    mobiletext: "Met Bitcoin op mobiele telefoons kunt u in twee eenvoudige stappen betalen via scan-and-pay. U hoeft u niet aan te melden, kaarten in te steken of pincodes in te voeren. Om Bitcoin-betalingen te ontvangen, hoeft u alleen een QR-code te tonen in de Bitcoin portemonnee-app op uw mobiel en die te laten scannen door degene die geld naar u wil overmaken. U kunt ook uw telefoons tegen elkaar houden (als u telefoons met NFC-radiotechnologie hebt)."
+    mobiletext: "Met Bitcoin, dat op een mobiel apparaat wordt gebruikt, kunt u in twee stappen scannen en betalen. U hoeft zich niet aan te melden, over uw kaart te vegen, een PIN-code in te voeren of iets te ondertekenen. Het enige wat u nodig hebt om Bitcoin-betalingen te ontvangen is om de QR-code weer te geven in uw Bitcoin wallet app en de andere partij uw mobiele telefoon te laten scannen, of de twee telefoons samen aan te raken (met behulp van NFC-radio technologie)."
     international: "Snelle internationale betalingen"
-    internationaltext: "Bitcoins kunnen worden overgemaakt van Afrika naar Canada in tien minuten. Er zit geen bank tussen, dus er zijn geen vertragingen, geen hoge kosten en geen geblokkeerde transacties. Er is geen verschil tussen een betaling aan uw buurman of aan uw familie aan de andere kant van de wereld."
+    internationaltext: >
+        Bitcoins over de grens sturen is net zo gemakkelijk als ze naar de overkant
+        van de straat sturen. Er zijn geen banken die u drie werkdagen laten wachten,
+        geen extra kosten voor het maken van een internationale overboeking, en geen
+        speciale beperkingen op het minimum of maximum bedrag dat u kunt verzenden.
     simple: "Werkt altijd en overal"
-    simpletext: "Net als met e-mail hoeft niet iedereen hetzelfde programma of dezelfde provider te gebruiken. Ze kunnen gewoon de systemen gebruiken die ze het makkelijkst vinden. Alles werkt met elkaar samen, want het is allemaal gebaseerd op dezelfde open technologie. En het Bitcoin-netwerk slaapt nooit, zelfs niet op zon- en feestdagen!"
+    simpletext: "Net als bij e-mail hoef je ontvangers naar wie je bitcoin stuurt niet te vragen om dezelfde software, wallets of serviceproviders te gebruiken. Je hebt alleen hun bitcoin-adres nodig en dan kun je op elk moment met hen handelen. Het Bitcoin netwerk draait altijd en slaapt nooit, zelfs niet in het weekend en tijdens vakanties."
     secure: "Een veilig gevoel en controle over uw geld"
-    securetext: "De cryptografie die Bitcoin-transacties beveiligt is net zo sterk als die die het leger gebruikt. Niemand kan namens u betalingen verrichten of uw geld incasseren. Als u de noodzakelijke stappen onderneemt om <a href=\"#secure-your-wallet#\">uw portemonnee te beschermen</a>, biedt Bitcoin u het beheer van uw geld en bescherming tegen allerlei soorten fraude."
-    lowfee: "Geen of lage verwerkingskosten"
-    lowfeetext: "Met Bitcoin kunt u betalingen tegen zeer lage kosten verzenden en ontvangen. Met uitzondering van speciale gevallen als zeer kleine betalingen, worden er geen kosten in rekening gebracht. Het wordt echter aanbevolen om een ​​hogere vrijwillige vergoeding te betalen voor een snellere bevestiging van uw transactie en om de mensen achter het Bitcoin-netwerk te vergoeden."
+    securetext: "Bitcoin transacties zijn beveiligd met militaire cryptografie. Niemand kan uw geld innemen of namens u een betaling doen. Zolang u de nodige stappen onderneemt om uw <a href=\"#secure-your-wallet#\">portemonnee te beschermen</a>, kan Bitcoin u de controle over uw geld en een sterk niveau van bescherming tegen vele vormen van fraude geven."
+    lowfee: "Kies uw eigen vergoedingen"
+    lowfeetext: >
+        Er zijn geen kosten verbonden aan het ontvangen van bitcoins, en met veel
+        portefeuilles kun je zelf bepalen hoeveel je moet betalen als je geld uitgeeft.
+        De meeste portefeuilles hebben redelijke standaardkosten, en hogere kosten
+        kunnen leiden tot een snellere <a href="#you-need-to-know##instant">bevestiging</a>
+        van uw transacties. De kosten zijn niet gerelateerd aan het over te maken
+        bedrag, dus het is mogelijk om 100.000 bitcoins te sturen tegen dezelfde kosten
+        als 1 bitcoin.
     anonymous: "Bescherm uw identiteit"
-    anonymoustext: "Met Bitcoin bestaat er geen creditcardnummer dat iemand kan verzamelen om zich als u voor te doen. Het is zelfs mogelijk om een betaling te verrichten zonder uw identiteit te onthullen, net als met echt geld. U dient er echter op te letten dat er wel iets moet worden gedaan om <a href=\"#protect-your-privacy#\">uw privacy te beschermen</a>."
+    anonymoustext: "Bij Bitcoin is er geen creditcardnummer dat kwaadwillende personages kunnen achterhalen om van u te stelen. Het is zelfs mogelijk om in sommige gevallen een betaling te sturen zonder uw identiteit te onthullen, bijna zoals met fysiek geld. U dient er echter rekening mee te houden dat enige inspanning vereist kan zijn om <a href=\"#protect-your-privacy#\">uw privacy te beschermen</a>."
+  bitcoin-paper:
+    title: "Bitcoin: Een peer-to-peer electronisch geldsysteem"
+    pagetitle: "Bitcoin: Een peer-to-peer electronisch geldsysteem"
+    summary: "Het document dat Bitcoin voor het eerst introduceerde"
+    description: "Satoshi Nakamoto's originele papier wordt nog steeds aanbevolen om te lezen voor iedereen die bestudeert hoe Bitcoin werkt. Kies welke vertaling van het papier u wilt lezen:"
+    translated_by: "vertaald door"
+    submit_new_translation: 'Wilt u de whitepaper in uw eigen taal vertalen? Bezoek dan de <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitcoin whitepaper repository op GitHub</a> voor instructies en <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">open een issue</a> als u vragen hebt.'
+  buy:
+    title: "Koop Bitcoin"
+    pagetitle: "Hoe bitcoin te kopen"
+    summary: "Er zijn verschillende manieren waarop u bitcoin kunt kopen."
+    bitcoin-exchange: "Gebruik een Bitcoin Beurs"
+    bitcoin-exchange-text: "Op onze <a href=\"/en/exchanges\">Bitcoin Beurs</a>-pagina staan veel verschillende bedrijven die u kunnen helpen bitcoin via uw bankrekening te kopen."
+    p2p-bitcoins: "Bekijk een P2P-catalogus"
+    p2p-bitcoins-text: "Met een beurs uit een <a href=\"/en/exchanges#p2p\">peer-to-peer-catalogus</a> kunt u zoeken naar en bladeren door verschillende verkopers van bitcoin. Verkopers hebben beoordelingen en scores om u te helpen bij het maken van een keuze."
+    bitcoin-atm: "Gebruik een Bitcoin ATM"
+    bitcoin-atm-text: "Bitcoin pinautomaten werken als gewone pinautomaten, behalve dat ze u de mogelijkheid bieden om geld te storten en op te nemen zodat u Bitcoin kunt kopen en verkopen. <a href=\"https://coinatmradar.com/\">Coin ATM Radar</a> heeft een interactieve kaart om u te helpen de dichtstbijzijnde Bitcoin pinautomaat bij u in de buurt te vinden."
   community:
     title: "Community - Bitcoin"
-    pagetitle: "Bitcoin-community's"
-    pagedesc: "Zoek naar interessante mensen, groepen en community's op Bitcoin."
+    pagetitle: "Bitcoin gemeenschappen"
+    pagedesc: "Vind interessante mensen, groepen en gemeenschappen met betrekking tot Bitcoin."
     forums: "Forums"
     bitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=79.0\">BitcoinTalk Forum</a>"
     reddit: "Bitcoin-community op Reddit"
@@ -87,9 +155,8 @@ nl:
     chanmarket: "(Live quotes van verschillende markten)"
     chanmining: "(Over Bitcoin-mining)"
     social: "Sociale netwerken"
-    linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Google+ Bitcoin Community</a>"
-    linktwitter: "Zoek op Twitter"
-    facebook: "<a href=\"https://www.facebook.com/bitcoins\">Facebook-pagina</a>"
+    linktwitter: "Twitter"
+    facebook: '<a href="https://www.facebook.com/hashtag/bitcoin">Facebook</a>'
     meetups: "Meetups"
     meetupevents: "Bitcoin-conferenties en -evenementen"
     meetupgroup: "Bitcoin-meetupgroepen"
@@ -99,25 +166,126 @@ nl:
     wikiportal: "Bezoek de <a href=\"https://en.bitcoin.it/wiki/Bitcoin:Community_portal\">communityportal</a> op de Wiki."
   choose-your-wallet:
     title: "Kies uw portemonnee - Bitcoin"
+    metadescription: "Hulp bij het vinden van een bitcoin portemonnee. Beantwoord een paar eenvoudige vragen om een lijst met portemonnees te maken, die mogelijk aan uw behoeften voldoen."
     pagetitle: "Kies uw Bitcoin-portemonnee"
-    pagedesc: "Kies uw portemonnee en begin met het maken van betalingen naar bedrijven en gebruikers."
+    pagedesc: "Selecteer een portemonnee om uw bitcoin op te slaan, zodat u met transacties op het netwerk kunt beginnen."
+    helper-illustration: "Personen en portemonnee "
+    helper-intro-title: "Laten we je helpen met het vinden van een bitcoin portemonnee."
+    helper-intro-text: "Beantwoord de volgende vragen om een lijst van portemonnees te maken, dat aan uw behoeften voldoet."
+    helper-change-btn: "Wijzig"
+    skip-helper-btn: "Hulp overslaan"
+    helper-next-btn: "Volgende"
+    helper-note: "Opmerking"
+    helper-or: "of"
+    helper-feature-unavailable: "Deze optie is niet beschikbaar op basis van uw voorgaande selecties."
+    wizard-optional: "(Optioneel)"
+    wizard-os-title: "Wat is uw besturingssysteem?"
+    wizard-mobile-title: "Mobiele portemonnees"
+    wizard-mobile-pro1: "Draagbaar en makkelijk; ideaal voor face-to-face transacties"
+    wizard-mobile-pro2: "Ontworpen om QR codes te gebruiken voor snelle en soepele transacties"
+    wizard-mobile-con1: "App-marktplaatsen kunnen de portemonnee uit de lijst halen/verwijderen, waardoor het moeilijk wordt om toekomstige updates te ontvangen."
+    wizard-mobile-con2: "Schade of verlies van het apparaat kan mogelijk leiden tot verlies van middelen"
+    wizard-desktop-title: "Desktop portemonnees"
+    wizard-desktop-pro1: "De omgeving stelt gebruikers in staat om volledige controle over de middelen te hebben."
+    wizard-desktop-pro2: "Sommige desktop portemonnees bieden ondersteuning voor een hardware portemonnee, of kunnen werken als volledige nodes"
+    wizard-desktop-con1: "Moeilijk om QR codes te gebruiken bij het maken van transacties"
+    wizard-desktop-con2: "Kwetsbaar voor malware/spyware/virussen die bitcoin kunnen stelen"
+    wizard-web-title: "Web portemonnees"
+    wizard-web-pro1: "Eenvoudig bereikbaar vanaf verschillende apparaten, alleen een webbrowser is vereist"
+    wizard-web-pro2: "Geld kan mogelijk worden teruggevonden als een apparaat beschadigd of verloren is gegaan"
+    wizard-web-con1: "Storingen in de dienstverlening kunnen de toegang tot fondsen bemoeilijken"
+    wizard-web-con2: "Als het platform van een web-portemonnee wordt gehackt, loopt uw geld gevaar"
+    wizard-hardware-title: "Hardware portemonnees"
+    wizard-hardware-pro1: "Een van de veiligste methoden om middelen op te slaan"
+    wizard-hardware-pro2: "Geschikt voor het opslaan van grote hoeveelheden bitcoin"
+    wizard-hardware-con1: "Moeilijk te gebruiken als u mobiel bent; niet ontworpen voor het scannen van QR codes"
+    wizard-hardware-con2: "Verlies van een apparaat zonder de juiste back-up kan middelen onherstelbaar maken."
+    wizard-user-title: "Hoeveel weet u over Bitcoin?"
+    wizard-user-new: "Nieuw"
+    wizard-user-new-description: "Toon portemonnees, die ideaal zijn voor nieuwe gebruikers."
+    wizard-user-new-description-search: "Toon portemonnees, die ideaal zijn voor nieuwe bitcoin gebruikers, op basis van uw zoekcriteria."
+    wizard-user-experienced: "Ervaren"
+    wizard-user-experienced-description: "Laat alle portemonnees zien."
+    wizard-user-experienced-description-search: "Toon alle portemonnees, op basis van uw zoekcriteria."
+    wizard-criteria-title: "Welke criteria zijn voor u belangrijk?"
+    wizard-criteria-control: "Controle"
+    wizard-criteria-control-description: "Sommige portemonnees geven u de volledige controle over uw bitcoin. Dit betekent dat geen enkele derde partij uw geld kan bevriezen of weghalen. U bent echter nog steeds verantwoordelijk voor het veiligstellen van uw portemonnee en het maken van een back-up."
+    wizard-criteria-validation: "Validatie"
+    wizard-criteria-validation-description: "Sommige portemonnees hebben de mogelijkheid om als een volledige node te werken. Dit betekent dat er geen vertrouwen in een derde partij nodig is bij de verwerking van transacties. Volledige nodes bieden een hoge mate van veiligheid, maar ze vereisen een grote hoeveelheid geheugen."
+    wizard-criteria-transparency: "Transparantie"
+    wizard-criteria-transparency-description: "Sommige portemonnees zijn open-source en kunnen deterministisch worden opgebouwd, een proces van het compileren van software dat ervoor zorgt dat de resulterende code kan worden gereproduceerd om er zeker van te zijn dat er niet mee is geknoeid."
+    wizard-criteria-environment: "Omgeving"
+    wizard-criteria-environment-description: "Sommige portemonnees kunnen worden geladen op computers die kwetsbaar zijn voor malware. Het beveiligen van uw computer, het gebruik van een sterk wachtwoord, het verplaatsen van het grootste deel van uw geld naar een koude opslagplaats of het inschakelen van 2FA of multifactor authenticatie kan u helpen om uw bitcoin te beschermen."
+    wizard-criteria-fees: "Tarieven"
+    wizard-criteria-fees-description: "Sommige portemonnees geven u de volledige controle over het instellen van de vergoeding, die aan het bitcoin netwerk wordt betaald, alvorens een transactie te verrichten, of het achteraf te wijzigen, om ervoor te zorgen dat uw transacties tijdig worden bevestigd, zonder dat u meer hoeft te betalen dan nodig is."
+    wizard-criteria-privacy: "Privacy"
+    wizard-criteria-privacy-description: "Sommige portemonnees bemoeilijken het bespioneren van uw transacties door het rouleren van adressen. Ze geven geen informatie door aan peers op het netwerk. Ze kunnen je ook optioneel Tor als proxy laten instellen en gebruiken om te voorkomen dat anderen transacties naar je IP-adres herleiden."
+    wizard-feature-title: "Welke functionaliteiten zoekt u?"
+    wizard-feature-2fa: "2FA"
+    wizard-feature-2fa-description: "Two factor authenticatie (2FA) is een manier om extra veiligheid toe te voegen aan uw portefeuille. De eerste 'factor' is uw wachtwoord voor uw portemonnee. De tweede 'factor' is een verificatiecode die wordt opgehaald via een sms-bericht of vanuit een app op een mobiel apparaat. 2FA is conceptueel vergelijkbaar met een security token apparaat dat banken in sommige landen vereisen voor online bankieren. Het vereist waarschijnlijk een beroep op de beschikbaarheid van een derde partij om de dienst te verlenen."
+    wizard-feature-bech32: "Bech32"
+    wizard-feature-bech32-description: "Bech32 is een speciaal adresformaat dat door SegWit mogelijk wordt gemaakt (zie voor meer informatie de functiebeschrijving van SegWit). Dit adresformaat wordt ook aangeduid als 'bc1-adressen'. Sommige bitcoin portemonnees en diensten ondersteunen nog niet het versturen en/of ontvangen van Bech32 adressen."
+    wizard-feature-full_node: "Volledige Node"
+    wizard-feature-full_node-description: "Sommige portemonnees valideren transacties en blokken volledig. Bijna alle volledige nodes helpen het netwerk door transacties en blokken van andere volledige nodes te accepteren, die transacties en blokken te valideren en ze vervolgens door te sturen naar andere volledige nodes."
+    wizard-feature-hardware_wallet: "Hardware Portemonnee"
+    wizard-feature-hardware_wallet-description: "Sommige portemonnees kunnen, naast de mogelijkheid er iets naar toe te sturen, worden gekoppeld en aangesloten op een hardware portemonnee. Terwijl het versturen naar een hardware portemonnee iets is wat bijna alle portemonnees kunnen, is de mogelijkheid om te koppelen met een portemonnee een unieke functie. Met deze functie kunt u direct naar en van een hardware portemonnee sturen en ontvangen."
+    wizard-feature-legacy_addresses: "Legacy Adressen"
+    wizard-feature-legacy_addresses-description: "De meeste portemonnees hebben de mogelijkheid om te verzenden en te ontvangen met legacy bitcoin adressen. Legacy adressen beginnen met 1 of 3 (in tegenstelling tot die beginnen met bc1). Zonder legacy adresondersteuning kan het zijn, dat u geen bitcoin kunt ontvangen van oudere portemonnees of beurzen."
+    wizard-feature-lightning: "Lightning"
+    wizard-feature-lightning-description: "Sommige portemonnees ondersteunen transacties op het Lightning Network. Het Lightning Network is nieuw en enigszins experimenteel. Het ondersteunt de overdracht van bitcoin zonder dat elke transactie op de blockchain moet worden geregistreerd, hetgeen resulteert in snellere transacties en lagere kosten."
+    wizard-feature-multisig: "Multisig"
+    wizard-feature-multisig-description: "Sommige portemonnees hebben de mogelijkheid om meer dan één sleutel te vereisen om een transactie te autoriseren. Dit kan worden gebruikt om de verantwoordelijkheid en controle over meerdere partijen te verdelen."
+    wizard-feature-segwit: "SegWit"
+    wizard-feature-segwit-description: "Sommige portemonnees ondersteunen SegWit, die de ruimte van de blockchain efficiënter gebruikt. Dit draagt bij aan het verminderen van de vergoedingen die worden betaald, door het Bitcoin-netwerk te helpen schalen en legt de basis voor oplossingen met een tweede laag, zoals het Lightning Network."
+    wallet-all: "Alle Portemonnees"
+    wallet-select: "Selecteer Portemonnee"
+    wallet-select-type: "Selecteer Type Portemonnee"
+    wallet-select-operating-system: "Kies een Besturingssysteem"
+    wallet-selector-filters: "Filters"
+    wallet-selector-operating-system: "Besturingssysteem"
+    wallet-selector-user-type: "Type gebruiker"
+    wallet-selector-criteria: "Criteria"
+    wallet-selector-features: "Eigenschappen"
+    wallet-selector-browse: "Blader door de portefeuilles"
+    wallet-selector-browse-cta: "Gebruik de portemonnee-keuzeknop om portefeuilles te vinden die aan uw zoekcriteria voldoen."
+    wallet-selector-results: "Hieronder vindt u een lijst met beschikbare portemonnees voor uw besturingssysteem"
+    wallet-selector-results-wallets: "Portemonnees"
+    wallet-selector-results-no-match: "Geen overeenkomstige portemonnees gevonden"
+    wallet-selector-results-no-match-cta: "Wijzig uw zoekcriteria en probeer het opnieuw."
+    wallet-selector-sort: "Sorteer op"
+    wallet-selector-similar: "Vergelijkbaar"
+    wallet-scoring-good: "Goed"
+    wallet-scoring-pass: "Acceptabel"
+    wallet-scoring-fail: "Voorzichtig"
+    wallet-scoring-neutral: "Neutraal"
     walletcatmobile: "Mobiel"
+    walletcatmobile-description: "Portemonnees zijn beschikbaar voor op Android en iOS gebaseerde besturingssystemen."
     walletcatdesktop: "Desktop"
+    walletcatdesktop-description: "Portemonnees zijn beschikbaar voor op Linux, MacOS en Windows gebaseerde besturingssystemen."
     walletcathardware: "Hardware"
+    walletcathardware-description: "Een hardware portemonnee is een zeer veilige bitcoin portemonnee, die u in staat stelt om uw geld offline op te slaan. U sluit hem aan op uw computer, wanneer u uw geld moet beheren."
     walletcatweb: "Web"
-    walletbitcoincore: "Bitcoin Core is een volledige Bitcoin-client en vormt de ruggengraat van het netwerk. Het biedt een hoog niveau van bescherming, privacy en stabiliteit. Het heeft echter minder functies en vereist veel opslagruimte en geheugen."
-    walletmultibit: "MultiBit is een lichte client die vooral gericht is op snelheid en gebruiksgemak. Het is binnen een paar minuten gesynchroniseerd met het netwerk en klaar voor gebruik. MultiBit ondersteunt bovendien veel verschillende talen. Het is een goede keus voor gebruikers die niet technisch onderlegd zijn."
+    walletcatweb-description: "Web-portemonnees zijn bitcoin-portemonnees, die toegankelijk zijn via een webbrowser. Er is geen extra software nodig."
+    walletbitcoincore: "Bitcoin Core is een volledige Bitcoin cliënt en bouwt de backbone van het netwerk. Het biedt een hoog niveau van beveiliging, privacy en stabiliteit. Het heeft echter minder functies en vereist veel opslagruimte en geheugen."
+    walletbitcoinknots: "Bitcoin Knots is een volledige Bitcoin cliënt en bouwt de backbone van het netwerk. Het biedt een hoog niveau van beveiliging, privacy en stabiliteit. Het bevat meer geavanceerde functies dan Bitcoin Core, maar ze zijn niet zo goed getest. Het gebruikt veel opslagruimte en geheugen."
     walletarmory: "Armory is een geavanceerde Bitcoin-client die de functies voor Bitcoin-powerusers uitbreidt. Het biedt verschillende back-up- en encryptiemogelijkheden en beveiligde cold-storage op offline computers."
     walletelectrum: "Electrum is gericht op snelheid en eenvoud en is zeer licht voor uw computer. Het laat de ingewikkeldere taken van het Bitcoin-systeem uitvoeren door servers elders en het biedt de mogelijkheid om uw portemonnee terug te vinden met behulp van een geheime zin."
-    walletmsigna: "mSIGNA is een geavanceerde maar makkelijk te gebruiken wallet die gekenmerkt wordt door snelheid en eenvoud, schaalbaarheid op ondernemingsniveau, en een sterke beveiliging. Het ondersteunt BIP32, transacties met meerdere handtekeningen, offline opslag, synchronisatie op meerdere apparaten, en versleutelde elektronische en papieren back-ups. "
     walletbitcoinwallet: "Bitcoin Wallet is eenvoudig te gebruiken en betrouwbaar, terwijl het ook veilig en snel is. De visie is decentralisatie en \"zero trust\"; er is geen centrale dienst nodig voor de Bitcoin-gerelateerde handelingen. De applicatie is een goede keuze voor niet-technische personen."
-    walletbrd: "Eenvoudigheid is BRD's primaire ontwerpprincipe. Als een op zichzelf staande Bitcoin-client is er geen server om gehackt te worden of uit te vallen, en door te bouwen op de sterke beveiligingsbasis van iOS is BRD ontworpen om u te beschermen tegen malware, gaten in browserbeveiliging en zelfs fysieke diefstal. "
-    walletmyceliumwallet: "Mycelium Bitcoin Wallet is een open source portemonnee voor Android gemaakt voor veiligheid, snelheid en gebruiksvriendelijkheid. Het heeft unieke eigenschappen om uw sleutels te beheren en voor cold storage, die u helpen uw bitcoins veilig te stellen."
-    walletcoinkite: "Coinkite is een webportemonnee- en betaalkaartdienst die zich richt op gebruiksgemak. Het werkt ook op mobiele browsers, beschikt over verkoophulpmiddelen en betaalterminals voor winkels. Het is een hybride portemonnee en volledige back-upkluis."
-    walletbitgo: "Bitgo is een portemonnee met meervoudige ondertekening die een hoog niveau van bescherming biedt. Iedere transactie vereist twee handtekeningen, waarmee uw bitcoins tegen malware en serveraanvallen beschermd worden. Privésleutels worden door de gebruiker bewaard zodat BitGo geen toegang heeft tot de bitcoins. Dit is een goede keus voor niet-technische gebruikers."
-    walletgreenaddress: "GreenAddress is een gebruiksvriendelijke portemonnee voor meervoudige ondertekening met verbeterde beveiliging en privacy. Uw sleutels staan nooit op de server, ook niet versleuteld. Voor veiligheidsredenen dient u altijd gebruik te maken van 2FA en de browserextensie of de Android-app."
-    wallettrezor: "TREZOR is een hardwareportemonnee die een hoog niveau van bescherming biedt zonder gemak op te offeren. In tegenstelling tot cold storage is TREZOR in staat om transacties te tekenen terwijl hij verbonden is met een online apparaat. Dat wil zeggen dat het spenderen van bitcoins zelfs veilig is als er een besmette computer gebruikt wordt."
-    walletnano: "Ledger Nano is een hardwareportemonnee die gebouwd is op een ST23YT66 smartcardplatform voor bankieren. Het houdt de privésleutels van de gebruiker veilig, valideert transacties, kan gebruikt worden als een veilige prepaidkaart of als partij voor meerdere handtekeningen. Hoewel het niet open-source is, kan het deterministisch gevalideerd worden."
+    walletedgewallet: "Edge is een met Segwit compatibele, mobiele Bitcoin-portemonnee, met een hoog niveau van privacy, veiligheid en decentralisatie, waardoor deze zeer vertrouwd en bruikbaar is voor de massa. Edge-portemonnees worden altijd automatisch gecodeerd en er wordt een back-up van gemaakt."
+    walletbrd: "De BRD is een van de gemakkelijkste portemonnees voor nieuwe Bitcoin-gebruikers. Het is ook uiterst veilig. De BRD maakt rechtstreeks verbinding met het Bitcoin-netwerk en gebruikt de ingebouwde hardwareversleuteling van uw apparaat om uw geld veilig te houden."
+    walletmyceliumwallet: "Mycelium Bitcoin Wallet is een portemonnee voor Android, gemaakt voor veiligheid, snelheid en gebruiksvriendelijkheid. Het heeft unieke eigenschappen om uw sleutels te beheren en voor cold storage. Daarnaast is het compatibel met onder andere Trezor."
+    walletcoin: "Coin is een gratis portemonnee, die u in staat stelt om wereldwijd betalingen te doen op het Bitcoin-netwerk. Het is veilig, eenvoudig te gebruiken en kan gemakkelijk op uw telefoon worden geïnstalleerd."
+    wallettrezorone: "Trezor is een hardware portemonnee. dat een hoog niveau van veiligheid biedt zonder dat dit ten koste gaat van de gebruiksvriendelijkheid. In tegenstelling tot koude opslag, is Trezor in staat om transacties te ondertekenen, wanneer deze verbonden is met een online apparaat. Dat betekent dat het besteden van bitcoins veilig is, zelfs bij gebruik van een computer met een virus."
+    wallettrezormodelt: "Trezor Model T is een volgende generatie hardware portemonnee, ontworpen met de voordelen van de originele Trezor in het achterhoofd, gecombineerd met een moderne en intuïtieve interface voor een betere gebruikerservaring en beveiliging. Het beschikt over een touchscreen, een snellere processor en alle kenmerken van de Trezor One."
+    walletcoldcard: "Coldcard is een eenvoudig te gebruiken, veilige en betaalbare hardware portemonnee, waar u gemakkelijk een backup van kunt maken middels een versleutelde microSD kaart. Uw privé sleutel is opgeslagen op een speciaal daarvoor bestemde, beveiligings chip. De in MicroPython ontwikkelde software is open source en eventueel door u zelf aan te passen."
+    walletkeepkey: "KeepKey is een hardware portemonnee die de beveiliging van bitcoin eenvoudig maakt. Wanneer u uw geld aan KeepKey toevertrouwt, moet elke bitcointransactie die u doet worden beoordeeld en goedgekeurd via het OLED-display en de bevestigingsknop."
+    walletbitpay: "BitPay Wallet is de HD-multisignature wallet die oorspronkelijk gebouwd werd om de fondsen van BitPay zelf te beheren. BitPay Wallet ondersteunt meerdere persoonlijke en gedeelde wallets, testnet en het Payment Protocol. Een persoonlijke <a href=\"https://github.com/bitpay/bitcore-wallet-service\">BWS</a> node kan gebruikt worden voor meer veiligheid en privacy."
+    walletledgernanos: "Ledger Nano S is een veilige Bitcoin hardware portefeuille. Het maakt verbinding met elke computer via USB en heeft een ingebouwd OLED-display om elke transactie met een enkele tik op de knoppen te controleren en te bevestigen."
+    walletbitbox: "De BitBox02 is een hardware portemonnee, ontwikkeld en gefabriceerd in Zwitserland. Hij is uitgerust met een OLED-display, onzichtbare aanraaksensoren, USB-C- en USB-A-ondersteuning, offline back-ups naar zowel microSD-kaart als BIP39 mnemonic. Het opzetten van een BitBox02-portemonnee en het beheren van uw coins wordt eenvoudig gemaakt via de bijbehorende BitBoxApp."
+    walletbither: "Bither is een eenvoudige en veilige portemonnee op vele platformen. Met de speciaal ontworpen koude/warme modes, kan de gebruiker gemakkelijk veiligheid en eenvoud krijgen. Bither's XRANDOM gebruikt verschillende entropie bronnen om echte willekeurige getallen voor gebruikers te genereren. Ook met HDM kunnen gebruikers de voordelen van HD en de veiligheid van multisigs hebben."
+    walletblw: "Mobiele portemonnee met Lightning Network ondersteuning."
+    walleteclairmobile: "Eclair Mobile behoort tot de nieuwe generatie Bitcoin portemonnees en is gereed voor Lightning Network. Het kan zowel gebruikt worden als een normale Bitcoin portemonnee, maar ook verbinding maken met het Lightning Network en op die manier goedkope, instant betalingen verrichten."
+    walletwasabi: "Wasabi is een open-source, niet persoonsgebonden, op privacy gerichte Bitcoin portemonnee voor Windows, Linux en Mac. Het bevat ingebouwde Tor, CoinJoin en coin controle functies."
     walletdownload: "Installeer"
     walletvisit: "Naar de website"
     walletsourcecode: "Broncode"
@@ -137,11 +305,11 @@ nl:
     checkfailcontrolthirdparty: "Geld dat gecontroleerd wordt door derden"
     checkfailcontrolthirdpartytxt: "Deze dienst heeft volledige controle over uw bitcoins. Dit betekent dat u erop vertrouwt dat deze dienst uw fondsen niet verliest door een incident aan hun kant. Op dit moment verzekeren de meeste webportemonnees hun stortingen niet zoals dat bij een bank gebeurt, en veel diensten hebben in het verleden reeds geleden aan veiligheidslekken."
     checkgoodvalidationfullnode: "Volledige validatie "
-    checkgoodvalidationfullnodetxt: "Deze portemonnee is een \"full node\" die transacties op het Bitcoin-netwerk valideert en doorstuurt. Dit betekent dat er geen vertrouwen moet geplaatst worden op een derde partij gedurende het verifiëren van betalingen. \"Full nodes\" bieden het hoogste niveau van veiligheid en zijn essentieel bij het beschermen van het netwerk. Ze vereisen echter wel meer harde schijfruimte (meer dan 65GB), bandbreedte en hebben een langere initiële synchronisatietijd."
+    checkgoodvalidationfullnodetxt: "Deze portemonnee is een volledige node die transacties op het Bitcoin netwerk valideert en doorstuurt. Dit betekent dat er bij de verificatie van betalingen geen vertrouwen in een derde partij vereist is. Volledige nodes bieden het hoogste niveau van beveiliging en zijn essentieel voor de bescherming van het netwerk. Ze vragen echter meer ruimte (over {site.text.bitcoin_datadir_gb}}GB), bandbreedte en een langere initiële synchronisatietijd."
     checkgoodvalidationfullnoderequired: "Volledige validatie"
-    checkgoodvalidationfullnoderequiredtxt: "Deze portemonnee vereist het installeren van full-node software die transacties op het Bitcoin-netwerk valideert en doorstuurt. Dit betekent dat u niet in een derde partij hoeft te vertrouwen bij het valideren van betalingen. Full nodes leveren het hoogste niveau van veiligheid en zijn essentieel voor het beschermen van het netwerk. Ze vereisen echter meer ruimte (meer dan 65GB), bandbreedte, en een langere initiële synchronisatietijd."
+    checkgoodvalidationfullnoderequiredtxt: "Deze portemonnee vereist de installatie van een volledige node die transacties op het Bitcoin netwerk valideert en doorstuurt. Dit betekent dat er bij de verificatie van betalingen geen vertrouwen in een derde partij vereist is. Volledige nodes bieden het hoogste niveau van beveiliging en zijn essentieel voor de bescherming van het netwerk. Ze vragen echter meer ruimte (meer dan {site.text.bitcoin_datadir_gb}}GB), bandbreedte en een langere initiële synchronisatietijd."
     checkneutralvalidationvariable: "Variabele validatie "
-    checkneutralvalidationvariabletxt: "Validatie van betalingen wordt verzorgd door de softwareportemonnee die u met dit apparaat gebruikt. Bekijk de Validatiescore voor de softwareportemonnee die u wilt gebruiken. "
+    checkneutralvalidationvariabletxt: "Functies voor betalingsvalidatie worden geleverd door de software portemonnee, die u met dit apparaat gebruikt."
     checkpassvalidationspvp2p: "Vereenvoudigde validatie"
     checkpassvalidationspvp2ptxt: "Deze portemonnee gebruikt SPV en het Bitcoin-netwerk. Dit betekent dat er zeer weinig vertrouwen op derde partijen nodig is bij het verifiëren van betalingen. Het is echter niet zo veilig als een \"full node\" zoals <a href=\"#download#\">Bitcoin Core</a>."
     checkpassvalidationspvservers: "Vereenvoudigde validatie"
@@ -174,7 +342,7 @@ nl:
     checkfailenvironmentdesktoptxt: "Deze portemonnee kan gebruikt worden op computers die kwetsbaar zijn voor malware. Door het beveiligen van uw computer, gebruik te maken van een sterke wachtwoordzin, het verplaatsen van de meeste van uw fondsen naar \"cold storage\" of gebruik te maken van dubbele authenticatie maakt u het moeilijker om uw bitcoins te stelen."
     checkgoodprivacyimproved: "Verbeterde privacy"
     checkneutralprivacyvariable: "Variabele privacy"
-    checkneutralprivacyvariabletxt: "Privacyfuncties worden aangeboden door de softwareportemonnee die u met dit apparaat gebruikt. Zie de Privacyscore voor de softwareportemonnee die u van plan bent te gebruiken."
+    checkneutralprivacyvariabletxt: "Functies voor de privacy worden geleverd door de software portemonnee, die u met dit apparaat gebruikt."
     checkpassprivacybasic: "Basis privacy"
     checkfailprivacyweak: "Zwakke privacy"
     checkpassprivacyaddressrotation: "Voorkomt spionage van uw betalingen"
@@ -193,29 +361,174 @@ nl:
     checkpassprivacynetworksupporttorproxytxt: "Met deze portemonnee kunt u <a href=\"https://www.torproject.org/\">Tor</a> instellen en gebruiken als proxy om aanvallers of internetproviders ervan te weerhouden uw betalingen met uw IP-adres in verband te brengen."
     checkfailprivacynetworknosupporttor: "Tor niet ondersteund"
     checkfailprivacynetworknosupporttortxt: "Met deze portemonnee kunt u geen Tor gebruiken om aanvallers of internetproviders ervan te weerhouden uw betalingen met uw IP-adres in verband te brengen."
+    checkgoodfeecontrolfull: "Volledige controle over vergoedingen"
+    checkgoodfeecontrolfulltxt: "Deze portefeuille geeft u volledige controle over de kosten. Dit betekent dat deze portefeuille het mogelijk maakt om de kosten te wijzigen nadat het geld via RBF of CPFP is verstuurd. Deze portefeuille biedt ook suggesties voor vergoedingen op basis van de huidige voorwaarden van het netwerk, zodat uw transacties tijdig worden bevestigd zonder meer te betalen dan nodig is."
+    checkpassfeecontroldynamic: "Suggesties voor dynamische vergoedingen"
+    checkpassfeecontroldynamictxt: "Deze portefeuille biedt suggesties voor tarieven die op de huidige voorwaarden van het netwerk zijn gebaseerd. Dit betekent dat deze portefeuille u helpt bij het kiezen van de juiste vergoeding, zodat uw transacties tijdig worden bevestigd zonder meer te betalen dan strikt noodzakelijk is."
+    checkpassfeecontroloverride: "Dynamische vergoeding met mogelijkheid tot overschrijving"
+    checkpassfeecontroloverridetxt: "Deze portefeuille biedt suggesties voor tarieven die op de huidige voorwaarden van het netwerk zijn gebaseerd en die u kunt overschrijven. Dit betekent dat deze portefeuille u helpt bij het kiezen van de juiste vergoeding, zodat uw transacties tijdig worden bevestigd zonder meer te betalen dan strikt noodzakelijk, maar uiteindelijk geeft u de controle als u de suggestie wilt overrulen."
+    checkneutralfeecontrolvariable: "Controle over variabele vergoedingen"
+    checkneutralfeecontrolvariabletxt: "Functies voor de vergoedingen worden geleverd door de software portemonnee, die u met dit apparaat gebruikt."
+    checkfailfeecontrolstatic: "Suggesties voor vaste vergoedingen"
+    checkfailfeecontrolstatictxt: "Deze portefeuille bevat geen suggesties voor tarieven die op de huidige voorwaarden van het netwerk zijn gebaseerd. Dit betekent dat uw transacties onderhevig kunnen zijn aan vertragingen als de gekozen vergoeding te laag is, of dat u een vergoeding betaalt die te hoog is."
     educate: "Neem de tijd om uzelf te onderrichten"
-    educatetxt: "Bitcoin is verschillend van wat u kent en elke dag gebruikt. Voor u Bitcoin begint te gebruiken voor belangrijke transacties, lees dan zeker <a href=\"#you-need-to-know#\"><b>wat u moet weten</b></a> en neem de nodige stappen om  <a href=\"#secure-your-wallet#\"><b>uw portemonnee te beveiligen</b></a>. Onthoud altijd dat het uw verantwoordelijkheid is om zorgvuldig uw portemonnee te kiezen en om goede werkwijzen te hanteren om uw geld te beschermen."
+    educatetxt: "Bitcoin is verschillend van wat u kent en elke dag gebruikt. Voor u Bitcoin begint te gebruiken voor belangrijke transacties, lees dan zeker <a href=\"#what-you-need-know#\"><b>wat u moet weten</b></a> en neem de nodige stappen om  <a href=\"#secure-your-wallet#\"><b>uw portemonnee te beveiligen</b></a>. Onthoud altijd dat het uw verantwoordelijkheid is om zorgvuldig uw portemonnee te kiezen en om goede werkwijzen te hanteren om uw geld te beschermen."
+  developer-documentation:
+    title: "Documentatie voor Ontwikkelaars - Bitcoin"
+    pagetitle: "Documentatie voor Ontwikkelaars"
+    summary: "Nuttige bronnen, handleidingen en referentiemateriaal voor ontwikkelaars zoeken."
+    docreference-title: "Zie ook:"
+    navigationreturn: "Terug naar Overzicht"
+    navigationreport: "Een Probleem Melden"
+    navigationedit: "Bewerken op GitHub"
+    glossarysearchplaceholder: "Zoeken"
+    docreferencemenuguides: "Handleidingen"
+    docreferencemenureference: "Referentie"
+    docreferencemenuexamples: "Voorbeelden"
+    docreferencemenuglossary: "Woordenlijst"
+    resourcestitleblockchain: "Block Chain"
+    resourcesitemblockchainguides: "Block Chain Handleiding"
+    resourcesitemmininguides: "Handleiding Mining"
+    resourcesitemblockchainreference: "Block Chain Referentie"
+    resourcestitletransactions: "Transacties"
+    resourcesitemtransactionsguides: "Transacties Handleiding"
+    resourcesitemtransactionsreference: "Transacties Referentie"
+    resourcesitemtransactionsexamples: "Voorbeelden van Transacties"
+    resourcestitlecontracts: "Contracten"
+    resourcesitemcontractsguides: "Contracten Handleiding"
+    resourcestitlewallets: "Portefeuilles"
+    resourcesitemwalletsguides: "Portefeuilles Handleiding"
+    resourcesitemwalletsreference: "Portefeuilles Referentie"
+    resourcestitlepaymentprocessing: "Betaling Verwerking"
+    resourcesitempaymentprocessingguides: "Betaling Verwerking Handleiding"
+    resourcesitempaymentprocessingexamples: "Betaling Verwerken Voorbeelden"
+    resourcestitleoperatingmodes: "Werkwijzen"
+    resourcesitemoperatingmodesguides: "Werkwijzen Handleiding"
+    resourcestitlep2pnetwork: "P2P Netwerk"
+    resourcesitemp2pnetworkguides: "P2P Netwerk Handleiding"
+    resourcesitemp2pnetworkreference: "P2P Netwerk Referentie"
+    resourcesitemp2pnetworkexamples: "P2P Netwerk Voorbeelden"
+    resourcestitleadditional: "Aanvullende Bronnen"
+    resourcestitlemining: "Krijg block sjabloon"
+    fragmentreviewsneeded: >
+        Deze documentatie is niet uitgebreid beoordeeld door Bitcoin-experts en bevat
+        dus waarschijnlijk veel fouten. Gebruik de <em>Probleem</em> en <em>Bewerk</em>
+        links onderaan het menu om ons te helpen verbeteren. Om deze disclaimer te
+        sluiten
+    fragmentreviewsneededcloselink: "klik hier"
+    fragmenttranslationwarning: >
+        Deze versie van de documentatie kan Engelse (originele) delen bevatten. Indien
+        u wenst bij te dragen aan de vertaling van dit document naar uw taal, gelieve
+        dan de juiste links te gebruiken onder de koppen, of bezoek
+    fragmenttranslationdoclink: "deze link"
+    subheadlinkedit: "Wijzig"
+    subheadlinkhistory: "Geschiedenis"
+    subheadlinkreport: "Probleem Melden"
+    subheadlinkdiscuss: "Bespreken"
+    subheadlinktranslate: "Vertaal"
+  developer-examples:
+    title: "Voorbeelden voor Ontwikkelaars - Bitcoin"
+    pagetitle: "Voorbeelden voor Ontwikkelaars - Bitcoin"
+    summary: "Hier vindt u voorbeelden van hoe u programma's kunt bouwen door Bitcoin te gebruiken."
+  developer-guide:
+    title: "Handleiding voor ontwikkelaars - Bitcoin"
+    pagetitle: "Handleiding voor ontwikkelaars - Bitcoin"
+    summary: "De Handleiding voor Ontwikkelaars is bedoeld om de informatie te verschaffen, die u nodig hebt om Bitcoin te begrijpen en te beginnen met het bouwen van op Bitcoin gebaseerde applicaties, maar het is geen specificatie. Om optimaal gebruik te maken van deze documentatie, kunt u de huidige versie van Bitcoin Core installeren, ofwel vanaf de broncode, ofwel vanaf een geprecompileerde executable."
+    readblockchain: "Lees Handleiding Blockchain"
+    readcontracts: "Lees Handleiding Contracten"
+    readtransactions: "Lees Handleiding Transacties"
+    readmining: "Lees Handleiding Mining"
+    readoperating: "Lees Handleiding Werkwijzen"
+    readp2p: "Lees Handleiding P2P Netwerk"
+    readpayments: "Lees Handleiding Betalingsverwerking"
+    readwallets: "Lees Handleiding Portemonnees"
+    blockchaintitle: "Blockchain"
+    blockchainsummary: "De blockchain voorziet in het openbare grootboek van Bitcoin, een geordend en tijdgestempeld transactieregister. Dit systeem wordt gebruikt om te voorkomen dat er dubbele uitgaven worden gedaan en dat eerdere transactieregisters worden gewijzigd."
+    contractstitle: "Contracten"
+    contractssummary: "Contracten zijn transacties, die gebruik maken van het gedecentraliseerde Bitcoin-systeem om financiële afspraken af te dwingen. Bitcoin-contracten kunnen vaak gemaakt worden om de afhankelijkheid van externe tussenpersonen te minimaliseren, zoals het rechtssysteem, wat het risico van het omgaan met onbekende entiteiten in financiële transacties aanzienlijk vermindert."
+    miningtitle: "Mining"
+    miningsummary: "Mining voegt nieuwe blokken toe aan de blockchain, waardoor de transactiegeschiedenis moeilijk aan te passen is."
+    operatingtitle: "Werkwijzen"
+    operatingsummary: "De Bitcoin-software heeft verschillende niveaus van beveiliging en afwegingen om de blockchain te controleren."
+    p2ptitle: "P2P Netwerk"
+    p2psummary: "Het Bitcoin-netwerkprotocol stelt volledige nodes (peers) in staat om samen een peer-to-peer netwerk voor block- en transactie-uitwisseling te onderhouden."
+    paymenttitle: "Betalingsverwerking"
+    paymentsummary: "De betalingsverwerking omvat de stappen, die verzenders en ontvangers uitvoeren om betalingen te doen en te accepteren in ruil voor producten of diensten. De uitgangspunten zijn sinds het begin van de handel niet veranderd, maar de technologie wel."
+    transactionstitle: "Transacties"
+    transactionssummary: "Transacties zorgen ervoor dat gebruikers satoshi's uitgeven. Elke transactie bestaat uit verschillende onderdelen, die zowel eenvoudige directe betalingen als complexe transacties mogelijk maken."
+    walletstitle: "Portemonnees"
+    walletssummary: "Een Bitcoin-portemonnee kan zowel naar een portemonneeprogramma als naar een portemonneebestand verwijzen. Portemonneeprogramma's maken openbare sleutels aan om satoshis te ontvangen en gebruiken de bijbehorende privé-sleutels om die satoshis uit te geven. Portemonneebestanden slaan de privé-sleutels en (optioneel) andere informatie met betrekking tot transacties op voor het portemonneeprogramma."
+  developer-reference:
+    title: "Bitcoin Ontwikkelaar Referentie - Bitcoin"
+    pagetitle: "Bitcoin Ontwikkelaar Referentie"
+    summary: "Hier vindt u technische details en API documentatie."
+  developer-glossary:
+    title: "Woordenlijst Ontwikkelaars - Bitcoin"
+    pagetitle: "Bitcoin Woordenlijst Ontwikkelaars"
+    subsummary: "Dit is een technische woordenlijst. Regelmatige gebruikers dienen de [woordenschatpagina]( /nl/woordenlijst) te gebruiken."
+    suggestnewterm: "Kunt u niet vinden wat u zoekt? [Stel een nieuwe zoekterm voor][1] voor de woordenlijst!"
+    definitionnotice: "Deze definitie komt uit de [technische woordenlijst] (/nl/ontwikkelaar-woordenlijst)."
+    sectiontitledefinition: "Definitie"
+    sectiontitlesynonyms: "Synoniemen"
+    sectiontitlenottobeconfused: "Niet Te Verwarren Met"
+    sectiontitlelinks: "Links"
+    categorynumbers: "Aantallen"
+  blockchain-guide:
+    title: "Handleiding Blockchain - Bitcoin"
+    pagetitle: "Blockchain"
+    summary: "De blockchain voorziet in het openbare grootboek van Bitcoin, een geordend en tijdgestempeld transactieregister. Dit systeem wordt gebruikt om te voorkomen dat er dubbele uitgaven worden gedaan en dat eerdere transactieregisters worden gewijzigd."
+  contracts-guide:
+    title: "Handleiding Contracten - Bitcoin"
+    pagetitle: "Contracten"
+    summary: "Contracten zijn transacties, die gebruik maken van het gedecentraliseerde Bitcoin-systeem om financiële afspraken af te dwingen. Bitcoin-contracten kunnen vaak gemaakt worden om de afhankelijkheid van externe tussenpersonen te minimaliseren, zoals het rechtssysteem, wat het risico van het omgaan met onbekende entiteiten in financiële transacties aanzienlijk vermindert."
+  mining-guide:
+    title: "Handleiding Mining - Bitcoin"
+    pagetitle: "Mining"
+    summary: "Mining voegt nieuwe blokken toe aan de blockchain, waardoor de transactiegeschiedenis moeilijk aan te passen is."
+  operating-modes-guide:
+    title: "Handleiding Werkwijzen - Bitcoin"
+    pagetitle: "Operationele Werkwijzen"
+    summary: "De Bitcoin-software heeft verschillende niveaus van beveiliging en afwegingen om de blockchain te controleren."
+  p2p-network-guide:
+    title: "Handleiding P2P Netwerk - Bitcoin"
+    pagetitle: "P2P Netwerk"
+    summary: "Het Bitcoin-netwerkprotocol stelt volledige nodes (peers) in staat om samen een peer-to-peer netwerk voor block- en transactie-uitwisseling te onderhouden."
+  payment-processing-guide:
+    title: "Handleiding Betalingsverwerking - Bitcoin"
+    pagetitle: "Betalingsverwerking"
+    summary: "De betalingsverwerking omvat de stappen, die verzenders en ontvangers uitvoeren om betalingen te doen en te accepteren in ruil voor producten of diensten. De uitgangspunten zijn sinds het begin van de handel niet veranderd, maar de technologie wel."
+  transactions-guide:
+    title: "Handleiding Transacties - Bitcoin"
+    pagetitle: "Transacties"
+    summary: "Transacties zorgen ervoor dat gebruikers satoshi's kunnen uitgeven. Elke transactie bestaat uit verschillende onderdelen, die zowel eenvoudige directe betalingen als complexe transacties mogelijk maken. "
+  wallets-guide:
+    title: "Handleiding Portemonnees - Bitcoin"
+    pagetitle: "Portemonnees"
+    summary: "Een Bitcoin-portemonnee kan zowel naar een portemonneeprogramma als naar een portemonneebestand verwijzen."
   development:
     title: "Ontwikkeling - Bitcoin"
     pagetitle: "Ontwikkeling van Bitcoin"
+    pagedesc: "Bitcoin is een wereldwijd project en open-sourcesoftware."
     summary: "Zoek naar meer informatie over huidige specificatie, software en ontwikkelaars."
     spec: "Documentatie"
-    spectxt: "Wilt u meer weten over de technische specificaties van Bitcoin en het gebruik van bestaande tools en API's? Begin dan met de <a href=\"/en/developer-documentation\">documentatie voor ontwikkelaars</a>."
+    spectxt: "Als u geïnteresseerd bent in meer informatie over de technische details van Bitcoin en hoe u bestaande tools en API's kunt gebruiken, is het aan te raden om eerst de <a href=\"https://developer.bitcoin.org/\">documentatie voor ontwikkelaars</a> te bekijken."
     coredev: "Core-ontwikkelaars"
     inventor: "Het Bitcoin systeem is oorspronkelijk ontworpen door Satoshi Nakamoto. Zijn originele Bitcoin codebasis wordt tegenwoordig onderhouden als Bitcoin Core door de volgende ontwikkelaars en een gemeenschap van vrijwilligers."
     disclosure: "Verantwoordelijke publicatie"
     disclosuretxt: "Als u een zwakke plek in Bitcoin hebt opgemerkt, kunt u niet-kritieke kwetsbaarheden per e-mail naar een core-ontwikkelaar of naar de hierboven genoemde privémailinglist bitcoin-security sturen (in het Engels!). Een voorbeeld van een niet-kritieke kwetsbaarheid is een duur-om-uit-te-voeren Denial of Service-aanval. Kritieke kwetsbaarheden die te gevoelig zijn voor niet-versleutelde e-mail dienen versleuteld met een PGP-sleutel naar één of meer core-ontwikkelaars worden verstuurd."
     involve: "Doe mee"
     involvetxt1: "Bitcoin-ontwikkeling is opensource en elke ontwikkelaar kan een bijdrage aan het project leveren. Alles wat u nodig hebt, is te vinden in het <a href=\"https://github.com/bitcoin/bitcoin\">GitHub-centrum</a>. Lees het ontwikkelingsproces zoals beschreven in de README door, lever code van goede kwaliteit en leef alle richtlijnen na."
-    involvetxt2: "Discussies over de ontwikkeling vinden plaats op GitHub en de mailinglist <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> op sourceforge. Minder formele discussies over de ontwikkeling vinden plaats op irc.freenode.net #bitcoin-dev (<a href=\"#\" onclick=\"freenodeShow(event);\">web interface</a>, <a href=\"http://bitcoinstats.com\">logs</a>)."
+    involvetxt2: "Discussie over de ontwikkeling vindt plaats op GitHub en de <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> mailinglijst. Minder formele discussie over ontwikkeling gebeurt op irc.freenode.net #bitcoin-core-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">web interface</a>, <a href=\"http://bitcoinstats.com/irc/bitcoin-core-dev/logs\">logs</a>)."
     more: "Meer opensourceprojecten"
-    morechoose: "U kunt een project uitkiezen om aan bij te dragen door een paar <a href=\"http://whatcanidoforbitcoin.xyz/\">vragen over uw vaardigheden</a> te beantwoorden."
+    morewant: "Wil je bijdragen aan een ander project?"
+    morechoose: "U kunt een project uitkiezen om aan bij te dragen door een paar <a href=\"http://whatcanidoforbitcoin.org/\">vragen over uw vaardigheden</a> te beantwoorden."
     moremore: "Meer weergeven..."
     contributors: "Bitcoin Core-bijdragers"
     contributorsorder: "(Gesorteerd op aantal commits)"
     devcommunities: "Gemeenschappen van ontwikkelaren"
     devcommunitiesintro: "De volgende chatrooms en websites bespreken de ontwikkeling van Bitcoin. Lees alstublieft hun gedragsegels voordat u berichten plaatst."
-    ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-dev\">IRC Kanaal #bitcoin-dev</a> op \"freenode\"."
+    ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">IRC Channel #bitcoin-core-dev</a> op freenode."
+    slack: "<a href=\"https://slack.bitcoincore.org/\">Bitcoin Core Slack Kanaal</a>"
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Forum voor Ontwikkeling &amp; Technische Bespreking</a>"
   download:
@@ -225,16 +538,31 @@ nl:
     download: "Download Bitcoin Core"
     downloados: "Of kies uw besturingssysteem"
     downloadsig: "Releasehandtekeningen verifiëren"
-    sourcecode: "Hier is de broncode"
+    downloadtorrent: "Download torrent"
+    source: "Broncode"
     versionhistory: "Toon versiegeschiedenis"
     notelicense: "Bitcoin Core is een <a href=\"https://www.fsf.org/about/what-is-free-software\">vrije-software</a> project dat wordt ontwikkeld door de community en verspreid onder de <a href=\"http://opensource.org/licenses/mit-license.php\">MIT-licentie</a>."
-    notesync: "De initiële synchronisatie van Bitcoin Core kan lang duren. Zorg ervoor dat u genoeg bandbreedte en opslagruimte heeft voor de volledige grootte van de blokketen (meer dan 65GB). Als u weet hoe u een torrentbestand downloadt, kunt u dit proces versnellen door <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (een vorige kopie van de blokketen) in de Bitcoin Core gegevensmap te zetten alvorens het starten van de software."
-    patient: "Wees geduldig"
+    notesync: "Het initieel synchroniseren van de Bitcoin Core kost tijd en het downloaden van veel data. Zorg ervoor dat u voldoende bandbreedte en opslagruimte heeft voor de volledige block chain grootte (meer dan {site.text.bitcoin_datadir_gb}GB). Als u over een goede internetverbinding beschikt, kunt u het netwerk helpen versterken door uw PC draaiende te houden met Bitcoin Core en poort 8333 open."
+    full_node_guide: "Lees de <a href=\"/en/full-node\">full-node-handleiding</a> voor details."
+    patient: "Controleer uw bandbreedte en beschikbare ruimte"
+    releasekeys: "Bitcoin Core Release Ondertekeningssleutels"
+  exchanges:
+    title: "Beurzen - Bitcoin"
+    metadescription: "Plaatsen om bitcoin te kopen met andere valuta. Wissel US dollars (BTC/USD), Euros (BTC/EUR), Yuan (BTC/CNY) en andere valuta's om voor bitcoin."
+    pagetitle: "Bitcoin Beurzen"
+    pagedesc: "Plaatsen om bitcoin te kopen in te wisselen voor andere valuta."
+    exchange: "Bitcoin Beurzen"
+  site-blog:
+    loadmore-posts: "Laad meer berichten"
+  alerts:
+    loadmore-alerts: "Laat meer waarschuwingen"
   events:
-    title: "Conferenties en evenementen - Bitcoin"
-    pagetitle: "Conferenties en evenementen"
+    title: "Conferenties en Evenementen - Bitcoin"
+    rsslink: "Abonneer je op de RSS feed."
+    loadmore-events: "Laad meer evenementen"
+    pagetitle: "Conferenties en Evenementen"
     pagedesc: "Zoek evenementen, conferenties en Meetups over de hele wereld."
-    upcoming: "Aanstaande evenementen en conferenties"
+    upcoming: "Komende Evenementen en Conferenties"
     eventsubmit: "Evenement indienen"
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitcoin-meetups op BitcoinTalk</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitcoin-meetups op de Wiki</a>"
@@ -248,29 +576,44 @@ nl:
     whatisbitcoin: "Wat is Bitcoin?"
     whatisbitcointxt1: "Bitcoin is een consensusnetwerk dat een nieuw betaalsysteem en compleet digitaal geld mogelijk maakt. Het is het eerste gedecentraliseerde door gebruikers gedreven peer-to-peer-betalingsnetwerk zonder centrale autoriteit of tussenpersonen. Vanuit het oogpunt van gebruikers is Bitcoin geld op het internet. Bitcoin kan ook worden gezien als het meest prominente <a href=\"http://financialcryptography.com/mt/archives/001325.html\">triple-entry boekhoudsysteem</a> ter wereld."
     creator: "Wie heeft Bitcoin bedacht?"
-    creatortxt1: "Bitcoin is een van de eerste incarnaties van een concept dat \"cryptovaluta\" heet, voor het eerst beschreven in 1998 door Wei Dai op de cypherpunks-mailinglist. Deze beschrijving suggereerde het idee van een nieuwe geldsoort dat cryptografie in plaats van een centrale autoriteit gebruikt om de creatie en transacties te beheren. In 2009 werd de eerste specificatie en proof-of-concept op een cryptografie-mailinglist gepubliceerd door een lid onder het pseudoniem Satoshi Nakamoto. Tegen het eind van 2010 verliet Satoshi het project, zonder veel over zichzelf te onthullen. De community is sindsdien exponentieel gegroeid met <a href=\"#development#\">veel ontwikkelaars</a> die aan Bitcoin werken."
+    creatortxt1: "Bitcoin is de eerste implementatie van een concept genaamd \" cryptovaluta \", dat voor het eerst in 1998 door Wei Dai op de cypherpunks mailinglijst werd beschreven, wat het idee voorstelt van een nieuwe vorm van geld dat gebruik maakt van cryptografie om de creatie en transacties ervan te beheren, in plaats van een centrale autoriteit. De eerste Bitcoin-specificatie en proof of concept werden in 2009 gepubliceerd in een cryptografie mailinglijst van Satoshi Nakamoto. Satoshi verliet het project eind 2010 zonder veel over zichzelf te onthullen. De gemeenschap is sindsdien exponentieel gegroeid met <a href=\"#development#\">veel ontwikkelaars</a> die aan Bitcoin werken."
     creatortxt2: "De anonimiteit van Satoshi heeft vaak ongegronde bezorgdheden gewekt, vele daarvan zijn gelinkt aan het onbegrip over de opensource-aanpak van Bitcoin. Het Bitcoin-protocol en de software zijn openbaar gepubliceerd, zodat ontwikkelaars van over de hele wereld de code kunnen inzien of hun eigen aangepaste versie van de Bitcoin-software kunnen maken. Net als bij de huidige ontwikkelaars was de invloed van Satoshi beperkt tot de overname van door hem gemaakte wijzigingen door anderen en om die reden had hij de touwtjes van Bitcoin niet in handen. De identiteit van de uitvinder van Bitcoin is daarom vandaag de dag net zo relevant als de identiteit van degene die papier heeft uitgevonden."
     whocontrols: "Wie beheert het Bitcoin-netwerk?"
     whocontrolstxt1: "Niemand is eigenaar van het Bitcoin-netwerk, net als dat niemand eigenaar is van de technologie achter e-mail. Bitcoin wordt beheerd door alle Bitcoin-gebruikers ter wereld. Ontwikkelaars zijn continu bezig de software te verbeteren, maar kunnen geen wijzigingen in het Bitcoin-protocol afdwingen omdat alle gebruikers vrij zijn om te kiezen welke software en versie ze gebruiken. Om met elkaar compatibel te blijven, dienen alle gebruikers software te gebruiken die aan dezelfde regels voldoet. Bitcoin werkt alleen naar behoren met een complete overeenstemming tussen alle gebruikers. Daarom hebben alle gebruikers en ontwikkelaars een sterke drijfveer om deze overeenstemming over te nemen en te beschermen."
     howitworks: "Hoe werkt Bitcoin?"
     howitworkstxt1: "Vanuit het oogpunt van gebruikers is Bitcoin niets meer dan een mobiele app die of computerprogramma dat persoonlijke Bitcoin-adressen biedt en een gebruiker in staat stelt om hiermee bitcoins te verzenden en te ontvangen. Zo werkt Bitcoin voor de meeste gebruikers."
-    howitworkstxt2: "Achter de schermen deelt het Bitcoin-netwerk een openbaar register dat de blokketen wordt genoemd. Dit register bevat elke transactie die ooit is verwerkt, waardoor de computer van een gebruiker de geldigheid van elke transactie kan verifiëren. De authenticiteit van elke transactie wordt beschermd door digitale handtekeningen die aan het verzendadres zijn gekoppeld, zodat gebruikers volledige controle hebben over het verzenden van bitcoins via hun eigen Bitcoin-adres. Daarnaast kan iedereen transacties verwerken met de rekenkracht van gespecialiseerde hardware en voor deze dienst bitcoins verdienen. Dit wordt vaak mining genoemd. Raadpleeg deze <a href=\"#how-it-works#\">speciale pagina</a> en de <a href=\"#bitcoin-paper#\">originele paper</a> voor meer informatie over Bitcoin."
+    howitworkstxt2: "Achter de schermen deelt het Bitcoin-netwerk een openbaar grootboek dat de \"blochchain\" wordt genoemd. Dit grootboek bevat alle transacties die ooit zijn verwerkt, zodat de computer van een gebruiker de geldigheid van elke transactie kan verifiëren. De authenticiteit van elke transactie wordt beschermd door digitale handtekeningen die overeenkomen met de verzendadressen, zodat alle gebruikers volledige controle hebben over het versturen van bitcoins vanaf hun eigen Bitcoin-adressen. Daarnaast kan iedereen transacties verwerken met behulp van de rekenkracht van gespecialiseerde hardware en een beloning in bitcoins verdienen voor deze dienst. Dit wordt vaak \" mining \" genoemd. Voor meer informatie over Bitcoin kunt u de <a href=\"#how-it-works#\">speciale pagina</a> en de <a href=\"#bitcoin-paper#\">originele paper</a> raadplegen."
     used: "Wordt Bitcoin echt door mensen gebruikt?"
-    usedtxt1: "Ja. Een <a href=\"http://usebitcoins.info/\">groeiend aantal bedrijven</a> en personen gebruikt Bitcoin. Hieronder vallen fysieke bedrijven zoals restaurants, appartementen, advocatenkantoren, maar ook populaire online diensten als Namecheap, WordPress, Reddit en Flattr. Hoewel Bitcoin een relatief nieuw fenomeen is, groeit het erg snel. Eind augustus 2013 oversteeg <a href=\"https://bitcoincharts.com/bitcoin/\">de waarde van alle bitcoins in omloop</a> US$ 1,5 miljard en wordt er dagelijks miljoenen dollar aan bitcoins uitgewisseld."
+    usedtxt1: "Ja. Er zijn <a href=\"/en/spend-bitcoin\">steeds meer bedrijven</a> en personen, die Bitcoin gebruiken. Hieronder vallen fysieke bedrijven, zoals restaurants, appartementen en advocatenkantoren, maar ook voor populaire online diensten, zoals Namecheap en Overstock.com. Hoewel Bitcoin een relatief nieuw fenomeen blijft, groeit het snel. Vanaf mei 2018 bedroeg de <a href=\"https://bitcoincharts.com/bitcoin/\">totale waarde van alle bestaande bitcoins</a> meer dan 100 miljard US dollar, met een dagelijkse handel in bitcoins ter waarde van miljoenen dollars."
     acquire: "Hoe kan ik bitcoins vergaren?"
     acquireli1: "Als betaling voor goederen of diensten."
-    acquireli2: "Koop bitcoins bij een <a href=\"https://www.buybitcoinworldwide.com\">Bitcoin-wisselkantoor</a>."
+    acquireli2: "Koop bitcoins bij een <a href=\"https://www.buybitcoinworldwide.com\">Bitcoin-beurs</a>."
     acquireli3: "Wissel bitcoins uit met <a href=\"https://localbitcoins.com/\">iemand uit de buurt</a>."
     acquireli4: "Verdien bitcoins via concurrerende <a href=\"http://www.bitcoinmining.com/\">mining</a>."
     acquiretxt1: "Hoewel het wellicht mogelijk is om personen te vinden die bitcoins in ruil voor een creditcard- of PayPal-betaling willen verkopen, staan de meeste wisselkantoren financiering middels deze betaalmethoden niet toe. Dit komt omdat er zich gevallen kunnen voordoen waarin iemand met PayPal bitcoins aanschaft en vervolgens zijn of haar deel van de transactie terugdraait. Dit wordt ook wel een stornering genoemd."
     makepayment: "Hoe moeilijk is het om een Bitcoin-betaling te doen?"
     makepaymenttxt1: "Bitcoin-betalingen zijn eenvoudiger te doen dan aankopen via een betaalkaart of creditcard en kunnen worden ontvangen zonder verkopersaccount. Betalingen worden via een portemonnee-applicatie op een computer of smartphone verricht door het adres van de ontvanger en het bedrag in te voeren en Verzenden te selecteren. Om het gemakkelijker te maken om het adres van een ontvanger in te voeren, kunnen veel portemonnees het adres verkrijgen door een QR-code te scannen of twee telefoons met NFC-technologie tegen elkaar te houden."
     advantages: "Wat zijn de voordelen van Bitcoin?"
-    advantagesli1: "<em><b>Vrijheid van betaling</b></em>: het is mogelijk om elk bedrag altijd en overal direct te verzenden en te ontvangen. Geen feestdagen. Geen grenzen. Geen opgelegde limieten. Dankzij Bitcoin hebben gebruikers de volledige controle over hun geld."
-    advantagesli2: "<em><b>Zeer lage kosten</b></em>: Bitcoin-betalingen worden momenteel zonder of tegen extreem lage kosten verwerkt. Gebruikers kunnen kosten aan transacties verbinden om prioriteitsverwerking te ontvangen, waardoor transacties sneller door het netwerk worden bevestigd. Daarnaast bestaan er verkoperverwerkers om verkopers te helpen tijdens de verwerking van transacties, de conversie van bitcoins naar fiduciaire valuta en de dagelijkse rechtstreekse storting van geld op de bankrekening van de verkoper. Omdat deze diensten op Bitcoin zijn gebaseerd, kunnen deze tegen veel lagere kosten dan PayPal of andere creditcardnetwerken worden aangeboden."
+    advantagesli1: >
+        <em><b>Betalingsvrijheid</b></em> - Het is mogelijk om op elk moment overal
+        ter wereld bitcoins te versturen en te ontvangen. Geen officiële feestdagen.
+        Geen grenzen. Geen bureaucratie. Met Bitcoin hebben gebruikers volledige controle
+        over hun geld.
+    advantagesli2: >
+        <em><b>Kies uw eigen vergoedingen</b></em> - Er wordt geen vergoeding gevraagd
+        voor het ontvangen van bitcoins, en met veel portemonnees kunt u zelf bepalen
+        hoe hoog de vergoeding is die u moet betalen als u iets uitgeeft. Hogere kosten
+        kunnen leiden tot een snellere <a href="#you-need-to-know##instant">bevestiging</a>
+        van uw transacties. De kosten zijn niet gerelateerd aan het over te maken
+        bedrag, dus het is mogelijk om 100.000 bitcoins te sturen tegen dezelfde kosten
+        als 1 bitcoin. Bovendien bestaan er verkoper-verwerkers die handelaren bijstaan
+        bij het verwerken van transacties, het omzetten van bitcoins in fiatvaluta
+        en het dagelijks rechtstreeks storten van middelen op de bankrekeningen van
+        handelaren. Aangezien deze diensten op Bitcoin gebaseerd zijn, kunnen ze tegen
+        veel lagere kosten worden aangeboden dan met PayPal of creditcardnetwerken.
     advantagesli3: "<em><b>Minder risico's voor verkopers</b></em>: Bitcoin-transacties zijn veilig, onomkeerbaar en bevatten geen gevoelige of persoonlijke informatie van klanten. Op deze manier zijn verkopers beschermd tegen verliezen door fraude of frauduleuze storneringen en is PCI-compliance niet nodig. Verkopers kunnen eenvoudig naar nieuwe markten uitbreiden waar creditcards niet beschikbaar zijn of het fraudepercentage onacceptabel hoog is. De nettoresultaten zijn lagere kosten, grotere markten en minder administratiekosten."
     advantagesli4: "<em><b>Beveiliging en controle</b></em>: Bitcoin-gebruikers hebben de volledige controle over hun transacties. Het is voor verkopers onmogelijk om ongewilde of ongemerkte kosten af te dwingen zoals bij andere betaalmethoden kan gebeuren. Bitcoin-betalingen kunnen worden gedaan zonder dat er persoonlijke gegevens aan de transactie zijn verbonden. Dit zorgt voor een sterke bescherming tegen identiteitsdiefstal. Bitcoin-gebruikers kunnen hun geld daarnaast beschermen via back-ups en versleuteling."
-    advantagesli5: "<em><b>Transparant en neutraal</b></em>: <a href=\"https://live.blockcypher.com/btc/\">alle informatie</a> inzake de Bitcoin-geldtoevoer is direct beschikbaar in de blokketen zodat iedereen deze in realtime kan verifiëren en gebruiken. Personen of organisaties kunnen het Bitcoin-protocol niet controleren of manipuleren omdat het cryptografisch beveiligd is. Hierdoor kunt u ervan op aan dat de kern van Bitcoin volledig neutraal, transparant en voorspelbaar is."
+    advantagesli5: "<em><b>Transparant en neutraal</b></em> - <a href=\"https://live.blockcypher.com/btc/\">Alle informatie</a> over de Bitcoin geldvoorraad zelf is direct beschikbaar op de blockchain, zodat iedereen deze in real-time kan controleren en gebruiken. Geen enkel individu of organisatie kan het Bitcoin protocol aansturen of manipuleren omdat het cryptografisch veilig is. De kern van Bitcoin is daardoor volledig neutraal, transparant en voorspelbaar."
     disadvantages: "Wat zijn de nadelen van Bitcoin?"
     disadvantagesli1: "<em><b>Mate van acceptatie</b></em>: Veel mensen weten nog niet van het bestaan van Bitcoin af. Dagelijks accepteren meer bedrijven bitcoins, omdat ze gebruik willen maken van de voordelen, maar het lijstje blijft kort en moet groeien om van <a href=\"https://en.wikipedia.org/wiki/Network_effect\">netwerkeffecten</a> te profiteren."
     disadvantagesli2: "<em><b>Volatiliteit</b></em>: de <a href=\"https://bitcoincharts.com/bitcoin/\">totaalwaarde</a> van bitcoins in omloop en het aantal bedrijven dat Bitcoin gebruikt is nog steeds erg gering vergeleken met wat het zou kunnen zijn. Daarom beïnvloeden relatief kleine marktveranderingen de prijs aanzienlijk. Theoretisch gezien, zal deze volatiliteit afnemen naarmate Bitcoin een grotere positie in de markt krijgt en de technologie wordt verbeterd. De wereld heeft nog nooit eerder met een startende valuta te maken gehad, dus het is erg moeilijk (maar ook spannend) om voor te stellen hoe dit gaat uitpakken."
@@ -281,7 +624,7 @@ nl:
     makemoneytxt1: "Verwacht nooit dat u rijk wordt met Bitcoin of enige andere opkomende technologie. Het is altijd belangrijk om alert te zijn als u te maken krijgt met iets dat iets te rooskleurig klinkt of in strijd is met de standaard economische normen."
     makemoneytxt2: "Bitcoin blijft continu innoveren en er bestaan zakelijke kansen die risico's met zich meebrengen. Er is geen garantie dat Bitcoin blijft groeien, ook al heeft het zich tot nu toe zeer snel ontwikkeld. Voor het investeren van tijd en hulpmiddelen in alles wat met Bitcoin te maken heeft, is ondernemerschap vereist. Er zijn verschillende manieren om geld te verdienen met Bitcoin, zoals mining, speculatie of nieuwe bedrijven runnen. Al deze methoden zijn competitief en zonder winstgarantie. Het is aan elk persoon om een goede beoordeling van de kosten en risico's te maken die bij elk project om de hoek komen kijken."
     virtual: "Is Bitcoin volledig virtueel en immaterieel?"
-    virtualtxt1: "Bitcoin is net zo virtueel als de netwerken voor creditcards en internetbankieren die dagelijks worden gebruikt. Bitcoin kan worden gebruikt om online en in fysieke winkels te betalen, net als enige andere vorm van geld. Bitcoins kunnen daarnaast voor een fysieke vorm worden ingewisseld zoals de <a href=\"https://www.casascius.com/\">Casascius-munten</a>, maar betalen met een mobiele telefoon blijft het gemakkelijkst. Bitcoin-saldi worden opgeslagen in een groot gedistribueerd netwerk en kunnen niet frauduleus door anderen worden gewijzigd. Met andere woorden: Bitcoin-gebruikers hebben een exclusieve controle over hun geld en bitcoins kunnen niet zomaar verdwijnen omdat ze virtueel zijn."
+    virtualtxt1: "Bitcoin is net zo virtueel als de creditcards en netwerken voor online bankieren die mensen dagelijks gebruiken. Bitcoin kan worden gebruikt om online en in fysieke winkels te betalen, net als elke andere vorm van geld. Bitcoins kunnen ook fysiek worden ingewisseld, zoals de <a href=\"https://denarium.com/\">Denarium-coins</a>, maar betalen met een mobiele telefoon blijft meestal handiger. Bitcoinsaldi worden opgeslagen in een groot gedistribueerd netwerk en kunnen door niemand op frauduleuze wijze worden gewijzigd. Met andere woorden, Bitcoin-gebruikers hebben exclusieve controle over hun fondsen en bitcoins kunnen niet verdwijnen, omdat ze alleen maar virtueel zijn."
     anonymous: "Is Bitcoin anoniem?"
     anonymoustxt1: "Bitcoin is speciaal ontworpen om de gebruikers in staat te stellen om betalingen met een acceptabel privacyniveau te verzenden en ontvangen, net als enige andere vorm van geld. Bitcoin is echter niet anoniem en kan niet hetzelfde privacyniveau als contant geld bieden. Door het gebruik van Bitcoin wordt er een uitgebreide openbare stempel aangemaakt. Er bestaan <a href=\"#protect-your-privacy#\">verschillende mechanismen</a> en er worden er meer ontwikkeld om de privacy van gebruikers te beschermen. Hiervoor moet echter nog wel veel werk worden verzet voordat deze functies op de juiste wijze worden gebruikt door het merendeel van de Bitcoin-gebruikers."
     anonymoustxt2: "Er zijn een aantal bezorgdheden geuit waaruit we opmaken dat mensen kunnen denken dat met Bitcoin privétransacties kunnen worden gebruikt voor illegale doeleinden. Hierbij is echter op te merken dat Bitcoin ongetwijfeld aan gelijksoortige regels zal worden onderworpen die al binnen bestaande financiële systemen zijn geïmplementeerd. Bitcoin kan niet anoniemer zijn dan contant geld en het zal strafrechtelijke onderzoeken in vele gevallen niet tegenhouden. Daarnaast is Bitcoin ontworpen om talloze financiële misdaden te voorkomen."
@@ -291,7 +634,7 @@ nl:
     scaletxt1: "Het Bitcoin-netwerk kan al een veel hoger aantal transacties per seconde verwerken dan andere netwerken vandaag de dag. Het is echter nog niet helemaal klaar om uit te breiden naar het niveau van een creditcardnetwerk. Er wordt aan gewerkt om huidige beperkingen weg te nemen en vereisten voor de toekomst zijn reeds bekend. Vanaf het begin zit elk aspect van het Bitcoin-netwerk in een doorlopend proces van ontwikkeling, optimalisatie en specialisatie, en deze status blijft waarschijnlijk hetzelfde in de aankomende jaren. Naarmate het verkeer toeneemt, gebruiken meer Bitcoin-gebruikers lichtgewicht clients en worden volledige netwerknodes steeds meer gespecialiseerd. Ga voor meer informatie naar de pagina <a href=\"https://en.bitcoin.it/wiki/Scalability\">Scalability</a> op de Wiki."
     legal: "Juridisch"
     islegal: "Is Bitcoin legaal?"
-    islegaltxt1: "Voor zover we weten, <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">is Bitcoin niet als illegaal bestempeldl</a> door wetgeving in enig rechtsgebied. Sommige rechtsgebieden beperken of verbieden alle buitenlandse valuta echter zeer strikt, zoals het geval is in landen als Argentinië en Rusland. Andere rechtsgebieden kunnen het licentiëren van bepaalde entiteiten als Bitcoin-wisselkantoren beperken, zoals Thailand."
+    islegaltxt1: "Voor zover ons bekend, is <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">Bitcoin in de meeste rechtsgebieden niet illegaal gemaakt</a> door de wetgeving. In sommige rechtsgebieden (zoals Argentinië en Rusland) worden vreemde valuta echter streng beperkt of verboden. Andere rechtsgebieden (zoals Thailand) kunnen de vergunning van bepaalde entiteiten, zoals Bitcoin beurzen, beperken."
     islegaltxt2: "Toezichthouders van verschillende rechtsgebieden ondernemen stappen om personen en bedrijven van regels te voorzien over hoe deze nieuwe technologie met het formele, gereguleerde financiële systeem moet worden geïntegreerd. Voorbeeld: het Financial Crimes Enforcement Network (FinCEN), een bureau in de U. S. Department of the Treasury, heeft niet-bindende richtlijnen uitgegeven over hoe het bepaalde activiteiten inzake virtuele valuta kenmerkt."
     illegalactivities: "Kan Bitcoin voor illegale activiteiten worden gebruikt?"
     illegalactivitiestxt1: "Bitcoin is geld en geld wordt gebruikt voor zowel legale als illegale doeleinden. Contant geld, creditcards en de huidige banksystemen kennen een veel hoger percentage financiële misdaad in vergelijking met Bitcoin. Bitcoin kan belangrijke innovaties in betalingssystemen leveren en de voordelen van dergelijke innovaties worden vaak als veel belangrijker beschouwd dan hun mogelijke negatieve kanten."
@@ -314,7 +657,7 @@ nl:
     whyvaluetxt1: "Bitcoins hebben waarde, omdat ze nuttig zijn als geldvorm. Bitcoin heeft de kenmerken van geld (duurzaamheid, draagbaarheid, vervangbaar goed, schaarste, deelbaarheid en herkenbaarheid) gebaseerd op de kenmerken van wiskunde, in plaats van te vertrouwen op fysieke kenmerken (zoals goud en zilver) of vertrouwen in centrale autoriteiten (zoals fiduciaire valuta). Kortom: Bitcoin wordt wiskundig gesteund. Met al deze attributen zijn vertrouwen en aanwending alles wat nodig is voor een geldvorm om waarde te houden. In het geval van Bitcoin kan dit worden gemeten aan de hand van de groeiende basis van gebruikers, verkopers en startende ondernemingen. Net als bij alle valuta komt de waarde van bitcoins uitsluitend en rechtstreeks van mensen die welwillend zijn om deze als betaalmiddel te accepteren."
     whatprice: "Hoe wordt de prijs van bitcoins bepaald?"
     whatpricetxt1: "De prijs van een bitcoin wordt bepaald door vraag en aanbod. Als de vraag naar bitcoins toeneemt, neemt de prijs toe en als de vraag afneemt, neemt ook de prijs af. Er is slechts een beperkt aantal bitcoins in omloop en nieuwe bitcoins worden op een voorspelbaar en afnemend tempo gemaakt, wat inhoudt dat de vraag dit inflatieniveau moet volgen om de prijs stabiel te houden. Omdat Bitcoin nog steeds een relatief kleine markt is in vergelijking met wat het zou kunnen zijn, hoeven er geen aanzienlijke bedragen te worden geïnvesteerd om de marktprijs omhoog of omlaag te drijven. Om die reden is de prijs van een bitcoin nog erg veranderlijk."
-    whatpriceimg1: "Bitcoin-prijs, 2013 tot 2015:"
+    whatpriceimg1: "De waarde van Bitcoin in de tijd:"
     worthless: "Kunnen bitcoins hun waarde verliezen?"
     worthlesstxt1: "Dat kan. De geschiedenis is bezaaid met munten die niet meer gebruikt worden. Voorbeelden zijn de Duitse Mark <a href=\"https://en.wikipedia.org/wiki/German_gold_mark\"> of meer recent <a href=\"https://en.wikipedia.org/wiki/Zimbabwean_dollar\">de Zimbabwaanse dollar</a>. Het verdwijnen van deze munten komt in beide gevallen door extreme hyperinflatie die bij Bitcoin niet kan optreden. Andere redenen zijn technische problemen, concurrentie van andere munten, politieke problemen, etc. Als vuistregel kan men stellen dat geen enkele munt absoluut vrij is van technische fouten of moeilijke tijden. Bitcoin heeft een jarenlange bewezen reputatie sinds de oprichting en er is een groot groeipotentieel voor Bitcoin. Niemand kan echter de toekomst voorspellen, ook niet voor Bitcoin."
     bubble: "Is Bitcoin een luchtbel?"
@@ -338,11 +681,42 @@ nl:
     bettercurrency: "Wat als iemand een betere digitale valuta creëert?"
     bettercurrencytxt1: "Dat kan gebeuren. Op dit moment is Bitcoin verreweg de populairste gedecentraliseerde virtuele valuta, maar er is geen garantie dat dit zo zal blijven. Er bestaat al een aantal alternatieve valuta's die op Bitcoin zijn geïnspireerd. Het is echter waarschijnlijk wel juist om aan te nemen dat aanzienlijke verbeteringen nodig zijn voor een nieuwe valuta om Bitcoin voorbij te streven als het om een gevestigde markt gaat, maar ook dit blijft onvoorspelbaar. Bitcoin zou ook verbeteringen van een concurrerende valuta kunnen overnemen zolang dit de fundamentele onderdelen van het protocol niet wijzigt."
     transactions: "Transacties"
-    tenminutes: "Waarom moet ik 10 minuten wachten?"
-    tenminutestxt1: "Het ontvangen van een betaling is vrijwel direct met Bitcoin. Er geldt echter een vertraging van gemiddeld 10 minuten voordat het netwerk uw transactie gaat verifiëren door deze in een blok te plaatsen en voordat u de ontvangen bitcoins kunt uitgeven. Een bevestiging houdt in dat er overeenstemming is op het netwerk dat de door u ontvangen bitcoins niet naar iemand anders zijn gestuurd en dat deze dus uw bezit zijn. Als uw transactie eenmaal in het blok is geplaatst, wordt het onder elk opvolgend blok begraven, wat deze overeenstemming exponentieel consolideert en het risico van een teruggedraaide transactie verlaagt. Elke gebruiker is vrij om te bepalen op welk punt zij een transactie als bevestigd beschouwen, maar over het algemeen zijn 6 bevestigingen net zo veilig als 6 maanden wachten op een creditcardtransactie."
+    tenminutes: "Waarom moet ik 10 minuten op bevestiging wachten?"
+    tenminutestxt1: >
+        Het ontvangen van een melding van een betaling is vrijwel direct bij Bitcoin.
+        Er is echter een vertraging voordat het netwerk begint met uw transactie te
+        bevestigen door het op te nemen in een blok. Een bevestiging betekent dat
+        er consensus bestaat op het netwerk dat de bitcoins die je hebt ontvangen
+        niet naar iemand anders zijn verzonden en als je eigendom worden beschouwd.
+        Zodra uw transactie in een blok is opgenomen, zal het onder elk blok erna
+        blijven begraven, wat exponentieel deze consensus zal bestendigen en het risico
+        van een omgekeerde transactie zal verminderen. Elke bevestiging duurt enkele
+        seconden tot 90 minuten, waarbij 10 minuten het gemiddelde is. Als voor de
+        transactie een te lage vergoeding wordt betaald of als de transactie op een
+        andere manier atypisch is, kan het veel langer duren voordat de eerste bevestiging
+        wordt ontvangen. Elke gebruiker is vrij om te bepalen op welk moment hij een
+        transactie als voldoende bevestigd beschouwt, maar 6 bevestigingen worden
+        vaak als even veilig beschouwd als 6 maanden op een creditcardtransactie wachten.
     fee: "Wat zijn de transactiekosten?"
-    feetxt1: "De meeste transacties kunnen zonder kosten worden verwerkt, maar gebruikers worden aangemoedigd om een kleine vrijwillige bijdrage te leveren voor snellere bevestiging van transacties en ter beloning van miners. Als er sprake is van kosten, zijn deze vaak niet meer dan een paar cent. Uw Bitcoin-client probeert vrijwel altijd toepasselijke kosten te schatten als dit nodig mocht zijn."
-    feetxt2: "Transactiekosten worden vaak gebruikt als bescherming tegen gebruikers die transacties uitvoeren om het netwerk te overbelasten. De precieze manier waarop kosten werken, is nog steeds in ontwikkeling en zal in de loop der tijd veranderen. Omdat de kosten niet gerelateerd zijn aan de hoeveelheid verzonden bitcoins, zijn deze of extreem laag (0,0005 BTC voor een overdracht van 1000 BTC) of oneerlijk hoog (0,004 BTC voor een betaling van 0,02 BTC). De kosten worden vastgesteld aan de hand van attributen als gegevens in transactie en transactieherhaling. Voorbeeld: als u een groot aantal kleinere bedragen ontvangt, zullen de kosten voor het verzenden hoger liggen. Dergelijke betalingen kunnen worden vergeleken met het betalen van een restaurantbezoek met alleen centen. Het snel uitgeven van kleinere fracties van uw bitcoins kunnen ook kosten met zich meebrengen. Als uw activiteit het patroon van conventionele transacties volgt, zouden de kosten erg laag moeten blijven."
+    feetxt1: >
+        Transacties kunnen zonder kosten worden verwerkt, maar het verzenden van gratis
+        transacties kan dagen of weken in beslag nemen. Hoewel de kosten na verloop
+        van tijd kunnen stijgen, zijn de kosten van normale vergoedingen op dit moment
+        zeer laag. Standaard voegen alle <a href="#choose-your-wallet#">Bitcoin portemonnees</a>
+        die op Bitcoin.org vermeld staan aan uw transacties toe wat zij als een passende
+        vergoeding beschouwen; de meeste van deze portemonnees geven u ook de mogelijkheid
+        om de vergoeding te bekijken voordat u de transactie verzendt.
+    feetxt2: >
+        Transactiekosten worden gebruikt als bescherming tegen gebruikers die transacties
+        verzenden om het netwerk te overbelasten en als een manier om miners te betalen
+        voor hun werk om het netwerk te beveiligen. De nauwkeurige manier waarop vergoedingen
+        werken is nog in ontwikkeling en zal in de loop van de tijd veranderen. Omdat
+        de vergoeding niet gerelateerd is aan de hoeveelheid bitcoins die wordt verzonden,
+        kan deze extreem laag of oneerlijk hoog lijken. In plaats daarvan is de vergoeding
+        gerelateerd aan het aantal bytes in de transactie. Het gebruik van meervoudige
+        ondertekening of het uitgeven van meerdere eerder ontvangen bedragen kan dus
+        meer kosten dan eenvoudigere transacties. Als uw activiteit het patroon van
+        conventionele transacties volgt, hoeft u geen ongewoon hoge kosten te betalen.
     poweredoff: "Wat als ik een bitcoin ontvang als mijn computer is uitgeschakeld?"
     poweredofftxt1: "Dit werkt prima. De bitcoins zullen de volgende keer dat u de portemonnee-applicatie opstart verschijnen. Bitcoins worden namelijk in werkelijkheid niet ontvangen door de software op uw computer, maar worden toegevoegd aan een openbaar register dat gedeeld wordt tussen alle apparaten op het netwerk. Als u bitcoins ontvangt wanneer uw portemonnee-applicatie niet draait en u uw portemonnee later opstart, zal het de blokken downloaden en zichzelf updaten met de transacties die het nog niet kende, en de bitcoins zullen na een tijdje verschijnen alsof ze pas net ontvangen waren. Uw portemonnee is alleen nodig wanneer u bitcoins uit wilt geven."
     sync: "Wat betekent 'synchroniseren' en waarom duurt dit zo lang?"
@@ -369,30 +743,30 @@ nl:
     hackedtxt1: "De regels van het protocol en de cryptografie die wordt gebruikt voor Bitcoin werken jaren na aanvang nog steeds en dat is een goede indicatie dat het concept goed ontworpen is. Er zijn echter <a href=\"/en/alerts\">zwakke plekken in de beveiliging</a> in verschillende software-implementaties gevonden en gerepareerd. Net als enige andere software hangt de beveiliging van Bitcoin-software af van de snelheid waarop de problemen worden gevonden en verholpen. Hoe meer problemen worden ontdekt, hoe volwassener Bitcoin wordt."
     hackedtxt2: "Er zijn veel misverstanden over diefstal en beveiligingslekken in diverse bedrijven en beurzen. Hoewel deze gebeurtenissen betreurenswaardig zijn, is in geen van deze gevallen Bitcoin zelf gehackt, noch impliceren zij fouten in Bitcoin. Op dezelfde manier betekent een bankoverval ook niet dat de Euro onbetrouwbaar is. Het is wel nodig om methodes en veiligheidsoplossingen te vinden die de veiligheid verhogen en het algemene risico op diefstallen en verliezen beperken. Gedurende de laatste jaren zijn een aantal verbeteringen aangebracht zoals portemonnees met encryptie, offline portemonnees, hardwareportemonnees en transacties die meerdere handtekeningen vereisen."
     collude: "Kunnen gebruikers samenzweren tegen Bitcoin?"
-    colludetxt1: "Het is niet mogelijk om gemakkelijk het Bitcoin-protocol te wijzigen. Elke Bitcoin-client die niet aan dezelfde regels voldoet, kan geen eigen regels op andere gebruikers opleggen. Conform de huidige specificatie zijn dubbele uitgaven binnen dezelfde blokketen en het uitgeven van bitcoins zonder geldige handtekening niet mogelijk. Om die reden is het niet mogelijk om ongecontroleerde hoeveelheden bitcoins zomaar te genereren, het geld van andere gebruikers uit te geven, het netwerk te corrumperen, etc."
+    colludetxt1: "Het is niet mogelijk om het Bitcoin protocol eenvoudig te wijzigen. Een Bitcoin-klant die zich niet aan dezelfde regels houdt, kan niet zijn eigen regels opleggen aan andere gebruikers. Volgens de huidige specificatie is het niet mogelijk om tweemaal op dezelfde blockchain uit te geven en evenmin om bitcoins zonder geldige handtekening uit te geven. Daarom is het niet mogelijk om ongecontroleerde hoeveelheden bitcoins uit de lucht te halen, geld van andere gebruikers uit te geven, het netwerk te beschadigen of iets dergelijks."
     colludetxt2: "Een groot deel van de miners kan er echter voor kiezen om recente transacties te blokkeren of terug te draaien. Een groot deel van de gebruikers kan daarnaast druk uitoefenen zodat er bepaalde wijzigingen worden doorgevoerd. Omdat Bitcoin uitsluitend correct werkt met een volledige consensus onder alle gebruikers, kan het wijzigen van het protocol erg moeilijk zijn en vereist het de overgrote meerderheid van de gebruikers om deze wijzigingen over te nemen zodat de resterende gebruikers bijna geen andere keus hebben dan te volgen. Over het algemeen is het moeilijk voor te stellen waarom een Bitcoin-gebruiker ervoor zou kiezen een wijziging te accepteren die hun eigen geld op het spel zet."
     quantum: "Is quantum computing een gevaar voor Bitcoin?"
-    quantumtxt1: "Ja, de meeste cryptografische systemen zijn dit, inclusief alle traditionele banksystemen. Operationele kwantumcomputers bestaan echter nog niet en zullen dit in de nabije toekomst ook niet worden. Indien kwantumcomputers een gevaar dreigen te worden kan het Bitcoin protocol geüpdatet worden om post-kwantum algoritmes te gebruiken. Gezien het belang van deze update kan het verwacht worden dat het in hoge mate nagekeken zal worden door ontwikkelaars voordat dit door alle Bitcoin-gebruikers aanvaard zal worden."
+    quantumtxt1: "Ja, de meeste cryptografische systemen zijn dit, inclusief alle traditionele banksystemen. Operationele kwantumcomputers zijn er echter nog niet en zullen er in de nabije toekomst ook niet komen. Indien kwantumcomputers een gevaar dreigen te worden kan het Bitcoin protocol geüpgraded worden om post-kwantum algoritmes tn gebruiken. Gezien het belang van deze update ligt het in de verwachting dat het in hoge mate door ontwikkelaars bekeken zal worden voordat dit door alle Bitcoin-gebruikers aanvaard zal worden."
     help: "Help"
     morehelp: "Ik wil graag meer te weten komen. Waar kan ik hulp krijgen?"
-    morehelptxt1: "Ga voor meer informatie en hulp naar de pagina met <a href=\"#resources#\">hulpmiddelen</a> en de <a href=\"#community#\">communitypagina</a> of raadpleeg de <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a>."
+    morehelptxt1: "U kunt meer informatie en hulp vinden op de pagina's over <a href=\"#resources#\">hulpmiddelen</a> en <a href=\"#community#\">gemeenschappen</a> of op de <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a>."
   getting-started:
     title: "Aan de slag - Bitcoin"
     pagetitle: "Aan de slag met Bitcoin"
-    pagedesc: "Bitcoin gebruiken voor betalingsverkeer is eenvoudig."
+    pagedesc: "Bitcoin gebruiken om te handelen is eenvoudig en voor iedereen toegankelijk."
     users: "Bitcoin gebruiken"
     inform: "Informeer uzelf"
     informtxt: "Bitcoin is anders dan wat u kent en dagelijks gebruikt. Voordat u begint met Bitcoin, zijn er een paar dingen die u moet weten om het veilig te gebruiken en bekende valkuilen te vermijden."
     informbut: "Meer lezen"
     choose: "Kies uw portemonnee"
-    choosetxt: "Verrijk uw leven met een Bitcoin-portemonnee op uw mobiele telefoon of gebruik de portemonnee uitsluitend voor online betalingen op uw computer. Welke manier u ook kiest, uw portemonnee kiezen is zo gepiept."
+    choosetxt: "Er zijn voor alle belangrijke besturingssystemen en apparaten gratis bitcoin-portefeuilles beschikbaar om aan al uw behoeften te voldoen. U kunt bijvoorbeeld een app installeren op uw mobiele apparaat voor dagelijks gebruik of u kunt een portefeuille alleen voor online betalingen op uw computer zetten. In ieder geval is het kiezen van een portefeuille eenvoudig en kan binnen enkele minuten gerealiseerd worden."
     choosebut: "Kies uw portemonnee"
-    get: "Bitcoins verkrijgen"
-    gettxt: "Ontvang bitcoins door deze als betaalmethode voor goederen en diensten te accepteren of door deze van een vriend of bekende te kopen. U kunt bitcoins ook rechtstreeks aanschaffen via een wisselkantoor."
-    getbut: "Naar een wisselkantoor zoeken"
-    spend: "Bitcoins uitgeven"
-    spendtxt: "Een groeiend aantal services en verkopers van over de hele wereld accepteert Bitcoin. U kunt Bitcoin gebruiken om hen te betalen en uw ervaring een score geven om meer zichtbaarheid voor eerlijke bedrijven te genereren."
-    spendbut: "Verkopers zoeken"
+    get: "Koop Bitcoin"
+    gettxt: "U kunt Bitcoin krijgen door het te accepteren als betaling voor goederen en diensten. Er zijn ook verschillende manieren om Bitcoin te kopen."
+    getbut: "Koop Bitcoin"
+    spend: "Bitcoin Besteden"
+    spendtxt: "Er is een groeiend aantal diensten en handelaren over de gehele wereld die Bitcoin accepteren. Gebruik Bitcoin om ze te betalen en beoordeel uw ervaring om ze zichtbaarder te maken."
+    spendbut: "Verkopers en producten zoeken"
     merchants: "Bitcoins accepteren"
     merchantinform: "Informeer uzelf"
     merchantinformtxt: "Verkopers hoeven niets aan te passen voor het gebruik van Bitcoin. Desalniettemin is Bitcoin anders dan hetgeen u dagelijks gebruikt en waar u bekend mee bent. Voordat u besluit Bitcoin te gaan gebruiken, zijn er een aantal dingen die u dient te weten om Bitcoin veilig te kunnen gebruiken en bekende valkuilen te voorkomen."
@@ -409,59 +783,67 @@ nl:
   how-it-works:
     title: "Hoe werkt Bitcoin? - Bitcoin"
     pagetitle: "Hoe werkt Bitcoin?"
-    intro: "Dit is een vraag die vaak tot verwarring leidt. Hier volgt een snelle uitleg!"
+    intro: "Dit is een vraag waar vaak verwarring over bestaat, dus bij deze een korte uitleg!"
     basics: "De basis voor nieuwe gebruikers"
-    basicstxt1: "U kunt als nieuwe gebruiker zonder technische kennis <a href=\"#getting-started#\">aan de slag gaan</a> met Bitcoin. Zodra u een Bitcoin-portemonnee op uw computer of mobiele telefoon hebt geïnstalleerd, wordt uw eerste Bitcoin-adres gegenereerd en kunt u altijd nieuwe adressen aanmaken. Geef uw adressen door aan uw vrienden zodat zij u kunnen betalen en andersom. Het is eigenlijk vergelijkbaar met hoe e-mail werkt, behalve dan dat Bitcoin-adressen slechts eenmalig kunnen worden gebruikt."
-    balances: "Saldo's<span class=\"titlelight\"> - blokketen</span>"
-    balancestxt: "De blokketen is een <b>gedeeld openbaar register</b> waar het hele Bitcoin-netwerk op is gebouwd. Alle bevestigde transacties zijn in de blokketen opgenomen. Zo kunnen Bitcoin-portemonnees het uit te geven saldo berekenen en kan worden geverifieerd dat de bitcoins in een nieuwe transactie ook echt eigendom zijn van degene die ze uitgeeft. De integriteit en de chronologische volgorde van de blokketen worden intact gehouden door middel van <a href=\"#vocabulary##[vocabulary.cryptography]\">cryptografie</a>."
-    transactions: "Transacties<span class=\"titlelight\"> - geheime sleutels</span>"
-    transactionstxt: "Een transactie is <b>een overdracht van waarde tussen Bitcoin-portemonnees</b> die wordt opgenomen in de blokketen. Bitcoin-portemonnees hebben een geheim stukje data, een <a href=\"#vocabulary##[vocabulary.privatekey]\"><i>geheime sleutel</i></a> of seed, dat wordt gebruikt om transacties te ondertekenen. Zo wordt wiskundig verzekerd dat de betreffende transactie van de eigenaar van de bijbehorende portemonnee komt. De <a href=\"#vocabulary##[vocabulary.signature]\"><i>handtekening</i></a> zorgt er ook voor dat de transactie door niemand kan worden gewijzigd nadat deze is uitgevoerd. Alle transacties worden naar gebruikers gezonden en meestal binnen de volgende 10 minuten door het netwerk bevestigd via een proces dat <a href=\"#vocabulary##[vocabulary.mining]\"><i>mining</i></a> heet."
+    basicstxt1: "Als nieuwe gebruiker kunt u met Bitcoin aan de slag zonder de technische details te begrijpen. Als je eenmaal een Bitcoin portefeuille op je computer of mobiele telefoon hebt geïnstalleerd, zal deze je eerste Bitcoin adres genereren en kun je er meer maken wanneer je er een nodig hebt. U kunt uw adressen aan uw vrienden bekendmaken zodat zij u kunnen betalen of andersom. In feite lijkt dit erg op hoe e-mail werkt, behalve dat Bitcoin-adressen maar één keer gebruikt moeten worden."
+    balances: "Saldo's<span class=\"titlelight\"> - blockchain</span>"
+    balancestxt: "De blockchain is een <b>gemeenschappelijk openbaar grootboek</b> waarop het gehele Bitcoin-netwerk is aangewezen. Alle bevestigde transacties worden in de blockchain opgenomen. Het stelt Bitcoin portefeuilles in staat om hun besteedbare saldo te berekenen, zodat nieuwe transacties kunnen worden geverifieerd om er zeker van te zijn dat ze daadwerkelijk eigendom zijn van de besteder. De integriteit en de chronologische volgorde van de blockchain worden met <a href=\"#vocabulary##[vocabulary.cryptography]\">cryptografie</a> afgedwongen."
+    transactions: "Transacties<span class=\"titlelight\"> - privésleutels</span>"
+    transactionstxt: "Een transactie is <b>een overdracht van waarde tussen Bitcoin portefeuilles</b> die in de blockchain wordt opgenomen. Bitcoin portefeuilles bevatten een geheim stukje gegevens, <a href=\"#vocabulary##[vocabulary.privatekey]\"><i>privé-sleutel</i></a> of zaad genaamd, dat wordt gebruikt om transacties te ondertekenen en een wiskundig bewijs te leveren dat ze van de eigenaar van de portefeuille afkomstig zijn. De <a href=\"#vocabulary##[vocabulary.signature]\"><i>ondertekening</i></a> voorkomt ook dat de transactie na ondertekening door wie dan ook wordt gewijzigd. Alle transacties worden naar het netwerk verzonden en worden gewoonlijk binnen 10-20 minuten bevestigd, via een proces dat <a href=\"#vocabulary##[vocabulary.mining]\"><i>mining</i></a> wordt genoemd."
     processing: "Verwerking<span class=\"titlelight\"> - mining</span>"
-    processingtxt: "Bitcoin-mining is een <b>gedistribueerd consensus-systeem</b> dat wordt gebruikt om nieuwe transacties te <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>bevestigen</i></a> door ze op te nemen in de blokketen. Het garandeert dat transacties in chronologische volgorde in de blokketen worden opgenomen, beschermt de neutraliteit van het netwerk en zorgt ervoor dat verschillende computers hetzelfde idee hebben over de toestand van het systeem. Om bevestigd te kunnen worden, moeten transacties worden verpakt in een <a href=\"#vocabulary##[vocabulary.block]\"><i>blok</i></a> met heel precieze cryptografische voorwaarden, dat dan wordt gecontroleerd door het netwerk. Die voorwaarden voorkomen dat een eerder blok kan worden veranderd, omdat zo'n verandering alle latere blokken ook ongeldig zou maken. Mining werkt ook als een soort loterij waar u meer kans maakt als uw computer meer werk verzet, waardoor het veel te moeilijk wordt voor een individu om blokken aan de blokketen toe te voegen die er niet horen. Zo kan niemand bepalen welk blok als volgende wordt toegevoegd of de blokketen veranderen om zijn eigen uitgaven ongedaan te maken."
+    processingtxt: "Mining is een <b>gedistribueerd consensussysteem</b> dat wordt gebruikt om uitstaande transacties te <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>bevestigen</i></a> door ze in de blockchain op te nemen. Het dwingt een chronologische volgorde in de blockchain af, beschermt de neutraliteit van het netwerk en stelt verschillende computers in staat overeenstemming te bereiken over de staat van het systeem. Om te worden bevestigd, moeten transacties worden verpakt in een <a href=\"#vocabulary##[vocabulary.block]\"><i>blok</i></a> dat aan zeer strenge cryptografische regels voldoet, die door het netwerk zullen worden geverifieerd. Deze regels voorkomen dat vorige blokken worden gewijzigd omdat hierdoor alle volgende blokken ongeldig zouden worden. Mining creëert ook het equivalent van een concurrerende loterij, dat voorkomt dat een individu gemakkelijk achtereenvolgende nieuwe blokken aan de blockchain kan toevoegen. Op deze manier kan geen enkele groep of individu controleren wat er in de blockchain is opgenomen of delen van de blockchain vervangen om hun eigen uitgaven terug te draaien."
     readmore: "Nog meer informatie"
-    readmoretxt: "Dit is maar een korte, bondige samenvatting van het systeem. Wilt u helemaal weten hoe het werkt, lees dan <a href=\"#bitcoin-paper#\">de originele paper</a>, waar het ontwerp van het systeem in wordt beschreven, raadpleeg de <a href=\"/en/developer-documentation\">documentatie voor ontwikkelaars</a> of kijk rond in de <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>."
+    readmoretxt: "Dit is slechts een korte samenvatting van Bitcoin. Als u meer wilt weten over de details, kunt u de <a href=\"#bitcoin-paper#\">originele publicatie lezen</a>, waarin het ontwerp wordt beschreven, de <a href=\"https://developer.bitcoin.org/\">documentatie van de ontwikkelaar</a>, of de <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin-wiki</a> verkennen."
   index:
     title: "Bitcoin - Opensource-P2P-geld"
     metadescription: "Bitcoin is een innovatief betalingsnetwerk en een nieuw soort geld. Vind alle informatie die u nodig heeft en ga aan de slag met Bitcoin op bitcoin.org."
     listintro: "Bitcoin is een innovatief betalingsnetwerk en een nieuw soort geld."
-    list1: "Supersnelle p2p-<br>transacties"
-    list2: "Wereldwijde<br>betalingen"
-    list3: "Geen of lage<br>verwerkingskosten"
+    list1: "Snelle peer-to-peer transacties"
+    list2: "Wereldwijde betalingen"
+    list3: "Lage transactiekosten"
     desc: "Bitcoin gebruikt peer-to-peer-technologie om zonder centrale instantie of banken te kunnen werken; het verwerken van transacties en het uitgeven van bitcoins gebeurt collectief door het hele netwerk. <b>Bitcoin is opensource; het ontwerp is openbaar, niemand is eigenaar of beheerder van Bitcoin en <a href=\"#support-bitcoin#\">iedereen kan meedoen</a></b>. Dankzij de unieke eigenschappen staat Bitcoin vele nieuwe gebruiksmogelijkheden toe die tot nog toe niet mogelijk waren met andere betalingssystemen."
-    overview: "Of bekijk een snel overzicht voor"
+    overview: "Krijg snel een overzicht voor"
   innovation:
     title: "Innovatie - Bitcoin"
-    pagetitle: "Een innovatie binnen betaalsystemen"
-    summary: "Het Bitcoin-protocol draait niet alleen om het verzenden van geld van punt A naar punt B. Het telt vele functies en biedt vele mogelijkheden voor de gemeenschap. Hier volgen een aantal technologieën die momenteel worden onderzocht en, in sommige gevallen, worden omgezet in echte producten en services. De interessantste toepassingen van Bitcoin moeten wellicht nog steeds worden ontdekt."
+    pagetitle: "Innovatie in Betalingssystemen"
+    summary: "Bitcoin gaat niet alleen over het versturen van geld. Het heeft vele functies en opent vele mogelijkheden die de gemeenschap nog steeds onderzoekt. Hier zijn enkele technologieën die momenteel worden onderzocht en in sommige gevallen worden omgevormd tot echte producten en diensten. De interessantste toepassingen van Bitcoin moeten waarschijnlijk nog ontdekt worden."
     control: "Beveiliging tegen fraude"
-    controltext: "Een ongekend niveau van beveiliging is mogelijk met Bitcoin. Het netwerk biedt gebruikers bescherming tegen de meeste voorkomende fraude zoals terugboekingen of ongewenste kosten, en Bitcoins zijn onmogelijk te vervalsen. Gebruikers kunnen back-ups maken of hun portemonnee versleutelen en hardwareportemonnees kunnen het erg moeilijk maken om in de toekomst geld te stelen of te verliezen. Bitcoin is ontworpen om de gebruikers volledige controle over hun geld te geven."
+    controltext: "Een ongekend beveiligingsniveau is met Bitcoin mogelijk. Het netwerk biedt gebruikers bescherming tegen de meest voorkomende vormen van fraude, zoals terugboekingen of ongewenste kosten, en bitcoins zijn onmogelijk te vervalsen. Gebruikers kunnen een back-up van hun portefeuille maken of deze versleutelen. Hardware portefeuilles maken het heel moeilijk om geld te stelen of te verliezen. Bitcoin is zo ontworpen dat gebruikers volledige controle over hun geld hebben."
     global: "Wereldwijde toegankelijkheid"
-    globaltext: "Alle betalingen over de hele wereld kunnen volledig interoperabel zijn. Bitcoin staat elke bank, elk bedrijf en elke persoon toe om betalingen altijd en overal een veilige manier te kunnen verzenden en ontvangen, en dat met of zonder bankrekening. Bitcoin is beschikbaar in een groot aantal landen die vanwege hun eigen beperkingen nog steeds buiten het bereik liggen van de meeste betaalsystemen. Bitcoin verhoogt de internationale toegang tot commercie en kan internationale handel helpen groeien."
+    globaltext: "Met Bitcoin kunnen alle betalingen in de wereld volledig interactief zijn. Met Bitcoin kan elke bank, elk bedrijf of elk individu veilig betalingen verzenden en ontvangen, waar en wanneer dan ook, met of zonder bankrekening. Bitcoin is verkrijgbaar in een groot aantal landen die vanwege hun eigen beperkingen voor de meeste betaalsystemen nog steeds buiten bereik zijn. Bitcoin vergroot de wereldwijde toegang tot handel en kan internationale handel helpen floreren."
     cost: "Kostenefficiëntie"
     costtext: "Door het gebruik van cryptografie kunnen beveiligde betalingen verricht worden zonder trage en dure tussenpersonen. Een Bitcoin-transactie kan dus veel goedkoper en sneller verricht worden dan de alternatieven. Dit betekent dat Bitcoin de potentie heeft om in de toekomst een algemene manier te worden om valuta's te verzenden. Bitcoin kan ook een rol spelen om in veel landen de  <a href=\"https://www.youtube.com/watch?v=BrRXP1tp6Kw\">armoede te verlagen</a> door de hoge transactiekosten voor de salarissen van werknemers te verlagen."
     donation: "Fooien en giften"
-    donationtext: "Bitcoin is een bijzonder efficiënte oplossing voor fooien en donaties geweest in een aantal gevallen. Het verzenden van een betaling vereist slechts een klik en het ontvangen van donaties kan zo simpel zijn als het weergeven van een QR-code. Donaties kunnen zichtbaar zijn voor het publiek, waardoor er een grotere transparantie is voor non-profit organisaties. In gevallen van noodsituaties zoals natuurrampen, konden Bitcoin-donaties bijdragen aan een snellere internationale respons."
+    donationtext: "Bitcoin is een bijzonder efficiënte oplossing voor fooien en donaties. Het versturen van een betaling vereist slechts een klik en het ontvangen van donaties kan zo eenvoudig zijn als het weergeven van een QR-code. Donaties kunnen zichtbaar zijn voor het publiek, wat de transparantie voor non-profitorganisaties vergroot. In noodgevallen, zoals natuurrampen, kunnen Bitcoin donaties bijdragen aan een snellere internationale reactie."
     crowdfunding: "Crowdfunding"
-    crowdfundingtext: "Hoewel het nog niet eenvoudig te gebruiken is, kan Bitcoin worden gebruikt om crowdfunding-campagnes zoals Kickstarter op te zetten, waarin individuen geld toezeggen aan een project dat  alleen wordt aangenomen als er genoeg toezeggingen zijn ontvangen om de doelstelling uit te voeren. Dergelijke verzekeringsovereenkomsten worden verwerkt door het Bitcoin-protocol, dat verhindert dat een transactie zal plaatsvinden totdat aan alle voorwaarden is voldaan. <a href=\"https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts\"> Meer informatie </a> over de technologie achter crowdfunding."
+    crowdfundingtext: "Bitcoin kan worden gebruikt om Kickstarter-achtige crowdfunding-campagnes te voeren, waarbij individuen geld toezeggen aan een project dat er alleen van wordt afgenomen als er voldoende toezeggingen zijn ontvangen om het doel te bereiken. Dergelijke zekerheidscontracten worden door het Bitcoin protocol verwerkt, hetgeen voorkomt dat een transactie plaatsvindt voordat aan alle voorwaarden is voldaan. Lees meer over de technologie achter crowdfunding."
     micro: "Microbetalingen"
-    microtext: "Bitcoin kan betalingen ter grootte van één dollar verwerken, en binnenkort zelfs veel kleinere bedragen. Dergelijke betalingen zijn routine, zelfs vandaag. Stel uzelf voor dat u per seconde betaalt dat u naar internetradio luistert, webpagina's bekijkt met een kleine fooi voor iedere advertentie die niet wordt getoond, of het kopen van bandbreedte van een WiFi-hotspot per kilobyte. Bitcoin is efficiënt genoeg om al deze ideeën mogelijk te maken. <a href=\"https://bitcoinj.github.io/working-with-micropayments\"> Meer informatie </a> over de technologie achter Bitcoin-microbetalingen."
+    microtext: >
+        Stelt u zich eens voor dat u naar de internetradio luistert die door de tweede
+        wordt betaald, webpagina's bekijkt met een kleine tip voor elke advertentie
+        die niet wordt weergegeven, of bandbreedte koopt bij een WiFi-hotspot per
+        kilobyte. Bitcoin is efficiënt genoeg om al deze ideeën mogelijk te maken.
+        <a href="https://bitcoinj.github.io/working-with-micropayments">Leer meer</a>
+        over de technologie achter Bitcoin microbetalingen of over <a href="http://lightning.network/">toekomstige
+        upgrades</a> die momenteel worden ontworpen en geïmplementeerd om microbetalingen
+        toegankelijker te maken.
     mediation: "Bemiddeling bij geschillen"
-    mediationtext: "Bitcoin kan worden gebruikt om innovatieve mediationdiensten te ontwikkelen met behulp van meerdere handtekeningen. Dergelijke diensten zouden het mogelijk maken voor een derde partij om in geval van onenigheid tussen de andere partijen een transactie goed te keuren of te af te keuren zonder controle over hun geld te hebben. Aangezien deze diensten compatibel zouden zijn met elke gebruiker en handelaar die Bitcoin gebruikt, zou dit waarschijnlijk leiden tot vrije concurrentie en hogere kwaliteitsnormen."
+    mediationtext: "Bitcoin kan worden gebruikt om innovatieve diensten voor geschillenbemiddeling te ontwikkelen met meervoudige handtekeningen. Dergelijke diensten zouden het voor een derde partij mogelijk kunnen maken om een transactie goed te keuren of af te wijzen in geval van onenigheid tussen de partijen zonder de controle over hun geld te hebben. Aangezien deze diensten compatibel zouden zijn met elke gebruiker en handelaar die Bitcoin gebruikt, zou dit waarschijnlijk leiden tot vrije concurrentie en hogere kwaliteitsnormen."
     multisig: "Accounts met meervoudige ondertekening"
     multisigtext: "Meerdere handtekeningen staan toe ​​dat een transactie alleen door het netwerk wordt geaccepteerd als een bepaald aantal van een bepaalde groep personen instemmen om de transactie te ondertekenen. Dit kan gebruikt worden door een raad van bestuur om een lid te weerhouden om een gedeelte van hun schatkist uit te geven zonder toestemming van andere leden. Dit kan ook worden gebruikt door banken om diefstal te voorkomen door betalingen boven een drempelwaarde te blokkeren indien de gebruiker geen aanvullende validatie verschaft."
     trust: "Vertrouwen en integriteit"
     trusttext: "Bitcoin biedt oplossingen voor veel van de vertrouwensproblemen waar banken tegenwoordig mee te maken hebben. Met selectieve transparantie van de boekhouding, digitale contracten en onomkeerbare transacties kan Bitcoin worden gebruikt als basis om het vertrouwen en overeenkomsten te herstellen. Slechte banken kunnen het systeem niet om de tuin leiden om een slaatje te slaan ten koste van andere banken of het publiek. Een toekomst waarin grote banken Bitcoin ondersteunen kan helpen om de integriteit van en het vertrouwen in financiële instellingen te herstellen."
     resiliency: "Robuustheid en decentralisatie"
-    resiliencytext: "Vanwege zijn hoge decentralisatie creëerde Bitcoin een andere vorm van betalingsnetwerk met een verhoogd niveau van veerkracht en redundantie. Bitcoin kan miljoenen dollars aan transacties verwerken zonder militaire bescherming nodig te hebben. Zonder een centraal punt dat kan falen zoals een gegevenscentrum, is het een moeilijker project om het netwerk aan te vallen. Bitcoin zou een interessante stap voorwaarts kunnen vertegenwoordigen in het beveiligen van lokale en mondiale financiële systemen."
+    resiliencytext: "Door middel van decentralisatie creëerde Bitcoin een ander type betaalnetwerk met een verhoogde veerkracht en redundantie. Bitcoin kan miljoenen dollars aan zonder gebruik te maken van militaire bescherming. Omdat er geen centraal storingspunt is, zoals een datacenter, is het lastig om het netwerk aan te vallen. Bitcoin zou een interessante stap voorwaarts kunnen betekenen in de beveiliging van lokale en wereldwijde financiële systemen."
     transparency: "Flexibele transparantie"
-    transparencytext: "Alle Bitcoin-transacties zijn openbaar en transparant. De identiteit van de personen achter de betalingen is standaard privé. Hierdoor kunnen personen en organisaties met flexibele regels voor transparantie werken. Zo kan een bedrijf ervoor kiezen om bepaalde transacties en saldi alleen zichtbaar te maken voor bepaalde medewerkers, en is een non-profitorganisatie helemaal vrij om te laten zien hoeveel zij dagelijks en maandelijks aan giften ontvangen."
+    transparencytext: "Alle Bitcoin-transacties zijn openbaar en transparant en de identiteit van de mensen achter de transacties is altijd privé. Dit stelt individuen en organisaties in staat te werken met flexibele transparantieregels. Een bedrijf kan er bijvoorbeeld voor kiezen om bepaalde transacties en saldi alleen bekend te maken aan bepaalde werknemers, net zoals een non-profit organisatie vrij is om het publiek te laten zien hoeveel ze ontvangen aan dagelijkse en maandelijkse donaties."
     automation: "Geautomatiseerde oplossingen"
-    automationtext: "Geautomatiseerde diensten hebben meestal te maken met de kosten en beperkingen van contant geld of creditcard betalingen. Dit omvat alle soorten automaten, van buskaartautomaten tot koffiemachines. Bitcoin is geschikt voor gebruik in een nieuwe generatie geautomatiseerde diensten en om hun exploitatiekosten te verminderen. Stel uzelf zelf rijdende taxi's voor, of een winkel waar uw mandje uw aankopen kan betalen zonder dat u hoeft te wachten in de wachtrij. Veel ideeën zijn mogelijk."
+    automationtext: "Geautomatiseerde diensten hebben gewoonlijk te maken met kosten en beperkingen van contante betalingen of creditcardbetalingen. Hieronder vallen allerlei verkoopautomaten, van treinkaartjes tot frisdrankmachines. Bitcoin is geschikt voor gebruik in een nieuwe generatie van geautomatiseerde diensten om hun operationele kosten te verlagen. Stelt u zich eens voor: zelfrijdende taxi's of een winkel waar u uw aankopen kunt betalen zonder in de rij te staan. Er zijn veel ideeën mogelijk."
   legal:
     title: "Juridische disclaimer - Bitcoin"
     pagetitle: "Juridische disclaimer"
     information: "Informatie die op bitcoin.org gepubliceerd is"
-    informationtxt1: "De website http://bitcoin.org/ (waar hierna naar verwezen wordt als de \"Website\") verschaft informatie en materiaal van algemene aard. U bent niet bevoegd om de Website te gebruiken of erop te vertrouwen voor juridisch advies, zakelijk advies, of enig ander soort advies. Wanneer u handelt in vertrouwen op de inhoud van de Website, doet u dat op eigen risico. Als u een beslissing maakt om te handelen of niet te handelen dient u contact op te nemen met een bevoegde advocaat in de relevante jurisdictie waarin u hulp nodig heeft of wilt. De eigenaren van of bijdragers aan de Website zijn op geen enkele manier verantwoordelijk voor de acties, beslissingen of ander gedrag dat wel of niet door u wordt uitgevoerd waarbij u vertrouwt op de Website."
+    informationtxt1: "De website http://bitcoin.org/ (waar hierna naar verwezen wordt als de \"Website\") verschaft informatie en materiaal van algemene aard. U bent niet bevoegd om de Website te gebruiken of erop te vertrouwen voor juridisch advies, zakelijk advies, of enig ander soort advies. Wanneer u handelt in vertrouwen op de inhoud van de Website, doet u dat op eigen risico. Als u een beslissing neemt om te handelen of niet te handelen dient u contact op te nemen met een bevoegde advocaat in het relevante rechtsgebied indien u hulp nodig heeft of wilt. De eigenaren van of bijdragers aan de Website zijn op geen enkele manier verantwoordelijk voor de handelingen, beslissingen of enig ander gedrag dat wel of niet door u wordt uitgevoerd waarbij u vertrouwt op de Website."
     translations: "Vertalingen"
     translationstxt1: "Deze website kan vertalingen van de Engelse versie van de inhoud die beschikbaar is op de Website bevatten. Deze vertalingen worden uitsluitend voor uw gemak aangeboden. In geval van een conflict tussen de Engelstalige versie en de vertaalde versie, heeft de Engelstalige versie voorrang. Als u enige inconsistentie opmerkt, meld deze dan op <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org\">GitHub</a>."
     userisks: "Risico's verbonden aan het gebruik van Bitcoin"
@@ -490,24 +872,38 @@ nl:
     pagetitle: "Perscentrum"
     summary: "Zoek geïnterviewden, antwoorden en hoogwaardige persmaterialen."
     volunteer: "Geïnterviewden"
-    volunteernonprofit: "Communiceer met de <a href=\"https://bitcoinfoundation.org/contact/\">Bitcoin Foundation</a> of lokale <a href=\"#community##[community.non-profit]\">non-profit organisaties</a>."
-    volunteerpresscenter: "Vind meer potentiële perscontracten bij het onafhankelijke <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
-    faqmore: "Bezoek alstublieft de complete <a href=\"/en/faq\">veel gestelde vragen</a> of de <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a> om meer te weten te komen over Bitcoin."
-    materialpicture: "Afbeeldingen"
-    materialpicturemore: "Toon meer afbeeldingen..."
+    volunteernonprofit: "Communiceer met <a href=\"https://www.bitgivefoundation.org\">BitGive</a>, het <a href=\"https://bitcoincore.org/en/contact\">Bitcoin</a> Core Project of lokale <a href=\"#community##[community.non-profit]\">non-profit organisaties</a>."
+    faqmore: "Om meer over bitcoin te weten te komen, bezoek de volledige <a href=\"/en/faq\">FAQ</a> of de <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>."
   privacy:
     title: "Privacy - Bitcoin"
     pagetitle: "Privacy"
-    datacollect: "Verzamelde gegevens"
-    datacollecttxt: "Bitcoin.org verzamelt anoniem gemaakte serverlogboeken. Deze logboeken bevatten IP-adressen waarvan de laatste byte vervangen is, de bezoektijd, opgevraagde pagina, gebruiker-agent en doorverwijzende URL. Bitcoin.org verzamelt geen gegevens met cookies."
-    datause: "Gebruik van gegevens"
-    datausetxt: "Verzamelde gegevens worden gebruikt om <a href=\"/stats/\">transparante publieke statistieken</a> te leveren."
+    privacytxt1: "Deze pagina informeert u over ons beleid met betrekking tot het verzamelen, gebruiken en openbaar maken van persoonlijke informatie die wij ontvangen van gebruikers van onze site (https://bitcoin.org). Wij gebruiken uw persoonlijke gegevens om een beter inzicht in uw gebruik van de site te krijgen en om traffic statistieken te verzamelen."
+    privacytxt2: "Door gebruik te maken van de site gaat u akkoord met het verzamelen en gebruiken van informatie in overeenstemming met dit beleid."
+    privacylogdata: "Log Data"
+    privacytxt3: "Net als veel andere websitebeheerders verzamelen we informatie die uw browser stuurt wanneer u onze site bezoekt (\"Loggegevens\"). Deze loggegevens kunnen informatie bevatten zoals het IP-adres (met de vervangen laatste byte) van uw computer, het browsertype, de browserversie, de pagina's van onze site die u bezoekt, de tijd en datum van uw bezoek, de tijd die u op die pagina's hebt doorgebracht en andere statistieken."
+    privacycookies: "Cookies"
+    privacytxt4: "Cookies zijn bestanden met een kleine hoeveelheid gegevens, die een anoniem uniek identificatienummer kunnen bevatten. Cookies worden vanaf een website naar uw browser gestuurd en op de harde schijf van uw computer opgeslagen. U kunt uw browser opdracht geven alle cookies te weigeren of aan te geven wanneer een cookie wordt verzonden. Als u echter geen cookies accepteert, is het mogelijk dat u sommige delen van onze site niet kunt gebruiken."
+    privacytxt5: "Wij gebruiken cookies voor de volgende doeleinden:"
+    privacytxt6: "Om bij te houden of u op de \"OK\"-knop op de cookie-disclaimer hebt gedrukt, zodat we u niet lastigvallen met de melding of u dat wel hebt gedaan."
+    privacytxt7: "Onze Analytics-software (Google Analytics) maakt gebruik van cookies om de gebruikersinteracties op onze site te meten en beter te begrijpen. Meer informatie over het gebruik van cookies door Google Analytics vindt u <a href=\"https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage\">hier</a>."
+    privacyanalytics: "Google Analytics"
+    privacytxt8: "We gebruiken een JavaScript plug-in van Google, genaamd \"Google Analytics\" om ons te voorzien van nuttige statistische gegevens over het verkeer en om beter te begrijpen hoe u onze site gebruikt. Wij hebben geen directe toegang tot de verkregen informatie van Google Analytics, maar Google geeft ons een samenvatting via hun dashboard."
+    privacytxt9: "Wij kunnen de verkregen informatie van Google Analytics delen met zakenpartners die geïnteresseerd zijn in het plaatsen van advertenties op onze website. De informatie die met deze zakenpartners wordt gedeeld, bevat geen persoonlijk identificeerbare informatie (Google geeft ons geen directe toegang tot de gegevens en daarom kunnen we deze informatie niet zien)."
+    privacytxt10: "U kunt zich afmelden voor het verzamelen van uw gegevens door Google Analytics door het downloaden van de Google Analytics opt-out browser add-on van Google. Dit voorkomt dat uw gegevens door Google Analytics worden gebruikt. Als u dit doet, heeft dit geen invloed op de mogelijkheden die u hebt om onze site op enigerlei wijze te gebruiken. U kunt hier de opt-out browser add-on downloaden. We respecteren tevens de Do Not Track-header en volgen geen bezoekers die Do Not Track ingeschakeld hebben."
+    privacychanges: "Wijzigingen aan het Privacybeleid"
+    privacytxt11: "We kunnen dit privacybeleid van tijd tot tijd wijzigen. Wij zullen u van eventuele wijzigingen op de hoogte stellen door de nieuwe privacyverklaring op de site te plaatsen. U wordt geadviseerd deze privacyverklaring regelmatig te raadplegen voor eventuele wijzigingen."
+    privacytxt12: "Dit Privacybeleid is onlangs gewijzigd"
+    privacycontactus: "Neem contact met ons op"
+    privacytxt13: "Indien u vragen hebt over ons privacybeleid, of hoe uw data wordt verzameld en verwerkt, mail dan naar <a href=\"mailto:privacy@bitcoin.org?Subject=Privacy\">privacy@bitcoin.org</a>"
+  cookie-notification:
+    cookiemessage: "<p class=\"cc_message\">Wij gebruiken cookies om ervoor te zorgen dat u de beste ervaring op onze website krijgt. <br><br>Lees ons <a href=\"/en/privacy\">privacybeleid</a> voor meer informatie.</p>"
+    cookieaccept: "OK"
   protect-your-privacy:
     title: "Bescherm uw privacy - Bitcoin"
     pagetitle: "Bescherm uw privacy"
     pagedesc: "Bitcoin wordt vaak als een anoniem betalingsnetwerk beschouwd. Maar in de realiteit is Bitcoin waarschijnlijk het meest transparante betalingsnetwerk ter wereld. Tegelijkertijd kan Bitcoin ook acceptabele privacyniveaus bieden, mits dit op de juiste manier wordt gebruikt. <b>Onthoud dat het uw verantwoordelijkheid is om goede praktijken na te leven om uw privacy afdoende te beschermen</b>."
     traceable: "De traceerbaarheid van Bitcoin begrijpen"
-    traceabletxt: "Bitcoin werkt met een ongekend niveau van transparantie waar de meeste mensen niet gewend zijn om mee om te gaan. Alle Bitcoin-transacties zijn openbaar, traceerbaar, en permanent opgeslagen in het Bitcoin-netwerk. Bitcoin-adressen zijn de enige gegevens die worden gebruikt om te bepalen waar Bitcoins worden toegewezen en waarnaar ze worden verzonden. Deze adressen worden privé aangemaakt door de portemonnees van elke gebruiker. Echter, zodra adressen worden gebruikt, worden ze getekend door de geschiedenis van alle transacties die ermee gedaan zijn. Iedereen kan de <a href=\"https://live.blockcypher.com/btc\"> balans en alle transacties </a> van een adres te zien. Omdat gebruikers meestal hun identiteit moeten prijsgeven om diensten of goederen te ontvangen, kunnen Bitcoin-adressen niet volledig anoniem blijven. Om deze redenen dienen Bitcoin-adressen slechts één keer te worden gebruikt en de gebruikers moeten oppassen om hun adressen niet bekend te maken."
+    traceabletxt: "Bitcoin werkt met een ongekende mate van transparantie waar de meeste mensen niet gewend aan zijn. Alle Bitcoin-transacties zijn openbaar, traceerbaar en permanent opgeslagen in het Bitcoin-netwerk. Bitcoin-adressen zijn de enige gegevens die gebruikt worden om te bepalen waar bitcoins worden toegewezen en waar deze naartoe worden verzonden. Deze adressen worden privé aangemaakt door de portefeuille van elke gebruiker. Als de adressen echter eenmaal zijn gebruikt, worden ze beïnvloed door de geschiedenis van alle transacties waarbij ze betrokken zijn. Iedereen kan het saldo en alle transacties van elk adres zien. Aangezien gebruikers meestal hun identiteit moeten onthullen om diensten of goederen te ontvangen, kunnen Bitcoin-adressen niet volledig anoniem blijven. Aangezien de blockchain permanent is, is het belangrijk op te merken dat iets dat op dit moment niet traceerbaar is, dat in de toekomst wel eens zou kunnen worden. Om deze redenen mogen Bitcoin-adressen slechts één keer worden gebruikt en moeten gebruikers ervoor waken hun adressen bekend te maken."
     receive: "Gebruik nieuwe adressen om betalingen te ontvangen"
     receivetxt: "Om uw privacy te beschermen, moet u elke keer dat u een nieuwe betaling ontvangt een nieuw Bitcoin-adres gebruiken. Daarnaast kunt u verschillende portemonnees voor verschillende doeleinden gebruiken. Op deze manier wordt elke transactie op een dusdanige manier geïsoleerd dat het niet mogelijk is om deze met elkaar te associëren. Mensen die u geld sturen, kunnen niet zien welke Bitcoin-adressen u hebt en wat u hiermee doet. Dit is een van de belangrijkste adviezen die u in acht zou moeten houden."
     public: "Wees voorzichtig in openbare ruimten"
@@ -520,20 +916,57 @@ nl:
     futuretxt: "Er worden in de toekomst veel verbeteringen verwacht die de privacy verbeteren. Zo wordt er momenteel gewerkt aan de API voor betalingsberichten om te voorkomen dat meerdere adressen tijdens een betaling worden gebruikt. Bitcoin Core-wijzigingsadressen kunnen over verloop van tijd in andere portemonnees worden geïmplementeerd. Grafische gebruikersinterfaces kunnen worden verbeterd om gebruiksvriendelijke functies voor betalingsverzoeken te bieden en hergebruik van adressen te ontmoedigen. Er wordt ook veel onderzoek gedaan om andere potentieel uitgebreidere privacyfuncties te ontwikkelen, zoals het mogelijk maken om willekeurige gebruikerstransacties samen te voegen."
   resources:
     title: "Hulpmiddelen - Bitcoin"
-    pagetitle: "Hulpmiddelen voor Bitcoin"
-    pagedesc: "Zoek naar handige websites en resources over Bitcoin."
-    useful: "Nuttige pagina's"
+    pagetitle: "Bitcoin hulpmiddelen"
+    pagedesc: "Nuttige websites en bronnen over Bitcoin."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin-wiki</a>"
     linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Directory's"
     linkwallets: "Portemonnees"
     linkmerchants: "Verkopers"
     linkexchanges: "Uitwisselingen"
+    linkprojects: "Projecten"
     linkmerchantstools: "Verkopershulpmiddelen"
+    linknonprofits: "Non-profitorganisaties"
     charts: "Grafieken en statistieken"
     news: "Nieuws"
     documentaries: "Documentaires"
-    learn: "Educatieve hulpmiddelen"
+    learn: "Leermiddelen"
+    vouchers: "Waardebonnen"
+  scams:
+    title: "Vermijd oplichting - Bitcoin"
+    pagetitle: "Vermijd oplichting"
+    summary: "Leer over de meest voorkomende bitcoin-oplichtingspraktijken om uzelf en uw geld te beschermen."
+    table: "Soorten Oplichting"
+    blackmail: "Chantage"
+    blackmailtxt: "Blijf op uw hoede voor chantagepogingen waarin onbekenden u afpersen in ruil voor bitcoin. Een veelvoorkomende manier waarop dit gebeurt is via e-mail, waarin de verzender een boodschap verstuurt, waarin deze beweert de controle te hebben over uw computer, en mee zou kijken via beheer-op-afstand (RDP). De oplichter zegt dat deze een key-logger heeft geïnstalleerd en met uw webcam meekijkt, en iets heeft opgenomen dat u niet aan anderen zou willen laten zien. U krijgt twee opties: bitcoin versturen om het materiaal te onderdrukken, of niet betalen en merken dat het materiaal naar naar uw e-mailcontacten en sociale netwerken wordt verspreid. Oplichters gebruiken gestolen mailadreslijsten en andere gelekte gebruikersinformatie om deze oplichting op grote schaal en naar vele mensen te sturen."
+    fake-exchanges: "Nep-Beurzen"
+    fake-exchangestxt: "Omdat bitcoin steeds populairder werd, wilden ook steeds meer mensen bitcoin bemachtigen. Helaas proberen slechteriken hiervan misbruik te maken door nep-beurzen op te zetten. Deze nep-beurzen misleiden wellicht gebruikers door extreem concurrerende marktprijzen aan te bieden, en hen te laten denken dat ze op een snelle en gemakkelijke manier een goede bitcoin-aankoop doen. Let erop dat je gebruikt maakt van een <a href=\"/en/exchanges\">beurs met een goede reputatie</a> als je bitcoin koopt of verkoopt."
+    free-giveaways: "Gratis Weggevertjes"
+    free-giveawaystxt: "Vanwege de virale aard van de manier waarop informatie zich op het internet verspreidt, proberen oplichters misbruik van personen te maken door gratis bitcoin of andere digitale valuta aan te bieden in ruil voor het versturen van een klein bedrag om zich te registreren, of door het verstrekken van persoonlijke informatie. Wanneer u dit op een website of sociaal netwerk ziet, kunt u de inhoud het beste onmiddellijk als frauduleus melden, zodat anderen er niet het slachtoffer van worden."
+    impersonation: "Impersonatie"
+    impersonationtxt: "Helaas is het voor oplichters heel gemakkelijk om sociale media accounts aan te maken en zich als persoon voor te doen. Vaak liggen ze op de loer, totdat de persoon die ze proberen zich voor te doen, content publiceert. De impersonator antwoordt dan met een vervolgbericht of een oproep tot actie - zoals een gratis giveaway - met behulp van een account dat er bijna identiek uitziet als de oorspronkelijke afzender of auteur. Hierdoor lijkt het alsof de oorspronkelijke persoon het zegt. Een andere mogelijkheid is dat impersonators proberen deze valse accounts te gebruiken om anderen via een privébericht of een directe boodschap te verleiden tot een of andere actie in een poging om te frauderen of compromissen te sluiten. Doe nooit mee aan gratis giveaways, en als u een vreemd verzoek ontvangt via iemand in uw netwerk, kunt u het beste dubbel controleren om de authenticiteit via meerdere communicatiemiddelen te laten bevestigen."
+    malware: "Malware"
+    malwaretxt: "Hackers zijn erg creatief geworden in het vinden van manieren om van mensen te stelen. Wanneer je bitcoin verzendt, zorg er dan ook altijd voor dat je het adres waarnaar je verzendt twee tot driedubbel controleert. Sommige malware programma's zullen, als ze eenmaal geïnstalleerd zijn, de bitcoin-adressen wijzigen wanneer ze vanaf het klembord van een gebruiker worden geplakt, zodat alle bitcoin onbewust naar het adres van de hacker wordt gestuurd. Aangezien er weinig kans is om een bitcoin-transactie om te keren als deze eenmaal door het netwerk is bevestigd, betekent dit dat het te laat is en hoogstwaarschijnlijk niet kan worden hersteld. Het is een goed idee om super voorzichtig te zijn over welke programma's u beheerderstoegang op uw apparaten toekent. Een up-to-date, gerenommeerde virusscanner kan ook helpen, maar is niet waterdicht."
+    meet-in-person: "Persoonlijk Ontmoeten"
+    meet-in-persontxt: "Als u ter plekke bitcoin verhandelt, kan de tegenpartij vragen u persoonlijk ontmoeten om te handelen. Als dit geen vertrouwde tegenpartij is die u al kent, is dit een risicovolle voorstel, waarbij u kunt worden beroofd of verwond. Er zijn tevens gevallen bekend van oplichters die nepgeld hebben gebruikt om voor bitcoin om te wisselen. Overweeg een peer-to-peer-platform te gebruiken als escowdienst, in plaats van een persoonlijke ontmoeting."
+    money-transfer-fraud: "Geld-Overboekingsfraude"
+    money-transfer-fraudtxt: "Beantwoordt geen e-mails of berichten van onbekenden die u vragen hen te helpen om geld over te maken of te verplaatsen, waarna beloofd wordt dat u, als dank voor uw werk, een deel van het geld ontvangt."
+    phishing-emails: "Phishing-E-mails"
+    phishing-emailstxt: "Pas op voor e-mails die zogenaamd afkomstig zijn van diensten die u gebruikt om u te vragen om actie te ondernemen, zoals het resetten van uw wachtwoord of het doorklikken om enige vorm van interactie met betrekking tot uw account te bieden. Het kan heel moeilijk zijn om het verschil te zien tussen een valse email waarmee wordt geprobeerd u te verleiden uw account in gevaar te brengen en een legitieme email die wordt verzonden namens een product of dienst die u gebruikt. In geval van twijfel kunt u overwegen om de authenticiteit van de communicatie drievoudig te controleren door deze door te sturen naar het bedrijf, via het e-mailadres van de contactpersoon op hun website, hen te bellen via de telefoon en/of hen te bereiken via hun officiële sociale media-accounts."
+    phishing-websites: "Phishing-Websites"
+    phishing-websitestxt: "Phishing-websites werken samen met phishing-emails. De emails bevatten een link naar de website die gemaakt is om login-informatie buit te maken, of virussen te installeren. Als u niet 100% zeker dat een website legitiem is, installeer dan geen software en log er niet op in. Phishing-websites kunnen ook voorkomen als gesponsorde links in zoekmachines of in app-marktplaatsen. Wees op uw hoede dat u geen nep-app downloadt of op deze gesponsorde phishing-links klikt."
+    ponzi-schemes: "Ponzifraude"
+    ponzi-schemestxt: "Trap niet in aanbiedingen waar één of meerdere personen, in ruil voor een storting, je een gegarandeerd rendement bieden. Dit staat bekend als een Ponzi-scheme, waar nieuwe betalingen worden gebruikt om huidige investeerders te betalen. Het eindresultaat is doorgaans dat veel mensen veel geld verliezen."
+    pyramid-schemes: "Piramidespelen"
+    pyramid-schemestxt: "Piramidespelen zijn oplichtingspraktijken die beloven deelnemers rendement op basis van heEen piramideconstructie belooft rendement aan deelnemers op basis van het aantal mensen dat zij uitnodigen om mee te doen. Hierdoor kan het stelsel viraal en snel groeien, maar meestal leidt het niet tot enige vorm van zinvol rendement voor de leden en/of de genodigden die ook zijn toegetreden. Nodig nooit je persoonlijke netwerk uit met als enige doel om beloningen of rendementen van een product of dienst te verzamelen, en investeer niet met je eigen kapitaal op aandringen van anderen om het proces te versnellen."
+    prize-giveaways: "Weggeefprijzen"
+    prize-giveawaystxt: "Net als weggevertjes, zijn weggeefprijzen oplichtingspraktijken waarin wordt geprobeerd om mensen een actie te laten ondernemen, of informatie prijs te geven. Een voorbeeld is het opgeven van naam, adres, email en telefoonnummer om een prijs te ontvangen. Door deze informatie te geven kan een hacker zich als u voordoen en toegang krijgen tot uw accounts."
+    pump-and-dumps: "Pump-en-Dump-oplichting"
+    pump-and-dumpstxt: "Vertrouw geen mensen die u en anderen verleiden om te investeren, omdat ze beweren te weten wat de prijs van bitcoin gaat worden. Bij Pump-en-Dump-oplichting probeert een persoon (of groep personen) om de prijs kunstmatig omhoog te drijven, waarna deze oplichters hun eigen aandeel met winst verkopen."
+    ransomware: "Ransomware"
+    ransomwaretxt: "Dit is een type malware dat de toegang tot een apparaat deels of volledig blokkeert, tenzij u losgeld betaalt in bitcoin. De beste oplossing is om advies in te winnen van een betrouwbare professional die de malware kunnen verwijderen, in plaats van het losgeld te betalen. Wees tevens voorzichtig bij het installeren van programma's, in het bijzonder die programma's die om beheerdersrechten vragen. Controleer ook goed of de applicatie die u downloadt niet nep is en/of een legitieme app, die u in het verleden hebt gebruikt,  probeert na te bootsen."
+    scam-coins: "Oplichtersmunten"
+    scam-coinstxt: "Pas op bij het investeren in alternatieve munten (altcoins). Er zijn oplichters actief die proberen slachtoffers altcoins te laten kopen in privétransacties, of ze beloven korting in de voorverkoop. Scam Coins hebben vaak aantrekkelijke websites en beweren grote hoeveelheden volgers in hun gemeenschap te hebben, waardoor slachtoffers angst  krijgen de boot te missen als ze niet meedoen. Deze angst wordt gebruikt om de prijs van het product op te drijven, waarna de oplichters hun deel met winst verkopen. Scam Coins zonder grote hoeveelheden volgers bieden soms ook Airdrops aan, waar mensen gratis munten krijgen als ze bij de gemeenschap komen. Hierdoor kunnen zwendelmunten hun initiatieven met overdreven tractiemetingen presenteren, zodat beleggers het gevoel hebben dat ze de boot missen als het moment is aangebroken om te beslissen of ze willen kopen. Scam Coins kunnen ook het woord Bitcoin misbruiken om mensen valselijk te laten denken dat er een legitieme samenwerking met Bitcoin is."
   secure-your-wallet:
     title: "Beveilig uw portemonnee - Bitcoin"
     pagetitle: "Beveilig uw portemonnee"
@@ -574,39 +1007,49 @@ nl:
     offlinemultitxt: "Bitcoin heeft een functionaliteit voor meerdere handtekeningen, wat ervoor zorgt dat een transactie meerdere onafhankelijke goedkeuringen vereist om uitgevoerd te worden. Dit kan gebruikt worden door een organisatie om zijn leden toegang te geven tot de schatkist, waarbij een opname alleen toegestaan wordt als 3 of 5 leden de transactie ondertekenen. Sommige webportemonnees leveren ook portemonnees met meerdere handtekeningen, wat de gebruikers in staat stelt om controle over hun geld te houden terwijl ze voorkomen dat een dief fondsen steelt door in te breken op een enkel apparaat of server."
     offlinetestament: "Denk aan uw testament"
     offlinetestamenttxt: "Uw bitcoins kunnen voorgoed verloren gaan als u geen back-upplan heeft voor uw naasten en familie. Als niemand de locatie van uw portemonnees en wachtwoorden kent als u er niet meer bent, dan is er geen hoop meer dat uw geld kan worden teruggehaald. Als u hier een beetje tijd in investeert, kan dat een wereld van verschil maken."
+  spend-bitcoin:
+    title: "Bitcoin uitgeven - Bitcoin"
+    pagetitle: "Bitcoin uitgeven"
+    summary: "Er zijn duizenden bedrijven over de hele wereld die Bitcoin accepteren."
+    products-online: "Vind producten die online te koop zijn"
+    products-online-text: "Een veel voorkomend gebruik voor Bitcoin is het doen van online aankopen. Er zijn honderden online winkels en winkeliers die Bitcoin accepteren. Met behulp van een zoekmachine als <a href=\"https://spendabit.co/\">Spendabit</a> kunt u door miljoenen producten zoeken, die allemaal beschikbaar zijn om met bitcoins te kopen."
+    directory: "Navigeer door de bedrijvengids."
+    directory-text: "U kunt ook veel bedrijven vinden die in online <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">directories</a> staan vermeld."
+    business-map: "Vind bedrijven bij u in de buurt"
+    business-map-text: "Er zijn ook veel lokale ondernemingen, zoals cafés en restaurants die Bitcoin accepteren. U kunt <a href=\"https://coinmap.org/\">Coinmap.org</a> gebruiken om te bladeren door duizenden van deze  ondernemingen over de hele wereld."
   support-bitcoin:
     title: "Help Bitcoin - Bitcoin"
     pagetitle: "Help Bitcoin"
-    summary: "Bitcoin is een protocol dat in kleine kring is ontstaan en sindsdien snel is gegroeid. U kunt Bitcoin op veel verschillende manieren helpen verspreiden en verbeteren."
+    summary: "Bitcoin is voortgekomen uit een kleine gemeenschap en is snel gegroeid. Er zijn veel dingen die je kunt doen om het te ondersteunen en anderen te helpen meer te leren."
     use: "Bitcoin gebruiken"
     usetxt: "<a href=\"#getting-started#\">Bitcoin gebruiken</a> is het eerste wat u kunt doen om Bitcoin te ondersteunen. Er zijn waarschijnlijk vele gevallen waarin het uw leven gemakkelijker kan maken. U kunt betalingen accepteren en aankopen doen met Bitcoin."
     node: "Maak deel uit van het netwerk"
-    nodetxt: "Als u een goede internetverbinding heeft, kunt u het Bitcoin-netwerk versterken door <a href=\"#download#\">full node software</a> op uw computer of server te laten draaien met poort 8333 open. \"Full nodes\" beveiligen en versturen alle transacties."
+    nodetxt: "Als u een goede internetverbinding heeft, kunt u het Bitcoin-netwerk versterken door <a href=\"/en/full-node\">full node software</a> op uw computer of server te laten draaien met poort 8333 open. \"Full nodes\" beveiligen en versturen alle transacties."
     mining: "Mining"
-    miningtxt: "U kunt beginnen met de <a href=\"http://www.bitcoinmining.com/\">mining van Bitcoins</a> om de transactieverwerking te ondersteunen. Om het netwerk te beschermen, is het raadzaam om kleinere miningpools of zelfs gedecentraliseerde pools zoals <a href=\"http://p2pool.in/\">P2Pool</a> of <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> met ondersteuning voor getblocktemplate (GBT) te gebruiken."
+    miningtxt: "U kunt beginnen met de <a href=\"http://www.bitcoinmining.com/\">mining van Bitcoins</a> om de transactieverwerking te ondersteunen. Om het netwerk te beschermen, is het raadzaam om u bij kleinere miningpools of zelfs gedecentraliseerde pools zoals <a href=\"http://p2pool.in/\">P2Pool</a> of <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> aan te sl;uiten met ondersteuning voor getblocktemplate (GBT)."
     develop: "Ontwikkeling"
-    developtxt: "Bitcoin is open source. Bent u softwareontwikkelaar, dan kunt u uw superkrachten inzetten voor de goede zaak en helpen <a href=\"#development#\">Bitcoin te verbeteren</a>. Of u kunt verbluffende nieuwe diensten of software ontwikkelen die gebruikmaken van Bitcoin."
+    developtxt: "Bitcoin is gratis software. Als ontwikkelaar kun je je superkrachten gebruiken om goed te doen en <a href=\"#development#\">Bitcoin te verbeteren</a>. Of je kunt verbazingwekkende nieuwe diensten of software bouwen die van Bitcoin gebruik maken."
     donation: "Doneren"
-    donationtxt: "De gemakkelijkste manier om te helpen is door wat bitcoins aan de Bitcoin Foundation te <a href=\"https://bitcoinfoundation.org/about/donate/\">doneren</a>. U kunt ook een aan Bitcoin gerelateerd project financieren waarvan u denkt dat het nuttig zal zijn."
+    donationtxt: "De eenvoudigste manier om te helpen is door wat bitcoin te <a href=\"http://bitgivefoundation.org/donate/\">doneren</a> aan BitGive. Of u kunt direct helpen met het financieren van elk project, dat aan Bitcoin gerelateerd is en waarvan u denkt dat het in de toekomst nuttig zal zijn."
     nonprofit: "Organisaties"
-    nonprofittxt: "De <a href=\"https://bitcoinfoundation.org/\">Bitcoin Foundation</a> en vele andere <a href=\"#community##[community.non-profit]\">non-profitorganisaties</a> richten zich op de bescherming en promotie van Bitcoin. U kunt deze groepen helpen door mee te doen aan hun projecten, discussies en evenementen."
+    nonprofittxt: "Veel <a href=\"#community##[community.non-profit]\">non-profitorganisaties</a> richten zich op de bescherming en promotie van Bitcoin. U kunt deze groepen helpen door mee te doen aan hun projecten, discussies en evenementen."
     spread: "Verspreiden"
-    spreadtxt: "Vertel geïnteresseerden over Bitcoin. Schrijf erover op uw blog. Vraag uw favoriete winkels of u ook met Bitcoin kunt betalen. Help de <a href=\"http://usebitcoins.info/\">winkeliersdirectory</a> up-to-date te houden. Of wees creatief en maak een mooi Bitcoin-shirt voor uzelf."
+    spreadtxt: "Spreek over Bitcoin met geïnteresseerde mensen. Schrijf erover op je blog. Vertel uw favoriete winkels die u graag met Bitcoin wilt betalen. Help om <a href=\"/en/spend-bitcoin\">handelarengidsen</a> up-to-date te houden. Of wees creatief en maak een mooi Bitcoin T-shirt voor jezelf."
     wiki: "Documentatie"
-    wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> en de <a href=\"https://en.bitcoin.it/\">Bitcoin-wiki</a> staan vol met nuttige en gedetailleerde informatie die doorlopend worden verbeterd. U kunt helpen deze informatie kloppend en actueel te houden."
+    wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> en de <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> bieden nuttige documentatie en we zijn voortdurend bezig de informatie die ze bevatten te verbeteren. U kunt helpen om deze hulpmiddelen te verbeteren en up-to-date te houden."
     translate: "Vertalen"
-    translatetxt: "Help Bitcoin nog beschikbaarder te maken door belangrijke delen van het Bitcoin-ecosysteem te vertalen of te verbeteren. Kies gewoon een project waarbij u wilt helpen."
+    translatetxt: "U kunt helpen bij het verspreiden van het bewustmakingsproces van Bitcoin door te vertalen of vertalingen te verbeteren in belangrijke delen van het Bitcoin-ecosysteem. Kies gewoon een project waarmee u wilt helpen."
     help: "Maak kennis met de community's"
     helptxt: "U kunt u bij de Bitcoin-<a href=\"#community#\">community's</a> aansluiten en met andere Bitcoin-liefhebbers praten. U kunt elke dag meer te weten komen over Bitcoin, nieuwe gebruikers helpen en meedoen aan interessante projecten."
   vocabulary:
     title: "Woordenlijst - Bitcoin"
     pagetitle: "Enkele regelmatig gehoorde Bitcoin-termen"
-    summary: "Bitcoin is een geheel nieuwe manier van betalen en gaat als zodanig gepaard met termen die u misschien nog niet eerder hebt gehoord. Geen zorg, zelfs de televisie heeft heel wat woorden toegevoegd aan de internationale woordenschat!"
+    summary: "Bitcoin biedt een nieuwe benadering op het gebied van betalingen en als zodanig zijn er enkele nieuwe woorden die onderdeel van uw woordenschat kunnen worden."
     table: "Inhoudsopgave"
     address: "Bitcoin-adres"
     addresstxt: "Een Bitcoin-adres is <b>vergelijkbaar met een huis- of e-mailadres</b>. Het is het enige wat u aan anderen hoeft te geven om hen in staat te stellen betalingen via Bitcoin aan u te sturen. Een belangrijk verschil is echter dat elk adres slechts één keer voor één transactie dient te worden gebruikt."
     bit: "Bit"
-    bittxt: "Bit is een algemene eenheid die gebruikt wordt om een sub-eenheid aan te duiden van een bitcoin - 1.000.000 bits is gelijk aan 1 bitcoin (BTC of ₿)  Deze eenheid is meestal makkelijker voor het bepalen van de prijs van fooien, goederen en diensten."
+    bittxt: "Bit is een algemene eenheid dat wordt gebruikt om een sub-eenheid van één bitcoin aan te duiden. 1.000.000 bits staat gelijk aan 1 bitcoin (BTC). Deze eenheid is gewoonlijk geschikter voor prijsaanduidingen, goederen en diensten."
     bitcoin: "Bitcoin"
     bitcointxt: "Het met een hoofdletter geschreven Bitcoin wordt gebruikt om het concept van Bitcoin te omschrijven of naar het gehele netwerk te verwijzen, bijv. \"Ik heb vandaag meer geleerd over het Bitcoin-protocol.\"<br>Het met een kleine letter geschreven bitcoin wordt gebruikt om bitcoins als eenheid aan te geven, bijv. \"Ik heb vandaag tien bitcoins uitgegeven.\". Dit laatste wordt vaak afgekort met BTC of XBT."
     blockchain: "Blokketen"
@@ -614,9 +1057,9 @@ nl:
     block: "Blok"
     blocktxt: "Een blok is een <b>verzameling van transacties die moeten worden bevestigd, en een schakel in de <a href=\"#[vocabulary.blockchain]\">blokketen</a></b>. Gemiddeld wordt elke 10 minuten een blok toegevoegd aan de blokketen - en daarmee een pakket transacties bevestigd - door middel van <a href=\"#[vocabulary.mining]\">mining</a>."
     btc: "BTC"
-    btctxt: "BTC is een algemene eenheid die gebruikt wordt om één bitcoin (₿)  aan te duiden."
+    btctxt: "BTC is een algemene eenheid dat wordt gebruikt om één bitcoin aan te duiden."
     confirmation: "Bevestiging"
-    confirmationtxt: "Bevestiging betekent dat een transactie <b>is geverifieerd door het netwerk en (bijna) niet meer ongedaan kan worden gemaakt</b>. Transacties ontvangen een bevestiging wanneer deze in een <a href=\"#vocabulary##[vocabulary.block]\">blok</a> zijn opgenomen en voor elk volgende blok. Eén bevestiging is behoorlijk veilig voor alledaagse transacties met lage bedragen. Voor hogere bedragen, bijvoorbeeld €1000 en hoger, zou u kunnen wachten op 6 of meer bevestigingen. Met elke bevestiging wordt het risico van terugdraaien <i>exponentieel</i> kleiner."
+    confirmationtxt: "Bevestiging betekent dat een transactie <b>door het netwerk is verwerkt en hoogstwaarschijnlijk niet zal worden teruggedraaid</b>. Transacties ontvangen een bevestiging wanneer ze zijn opgenomen in een <a href=\"#vocabulary##[vocabulary.block]\">blok</a> en voor elk volgend blok. Zelfs een enkele bevestiging kan als veilig worden beschouwd voor transacties met een lage waarde, hoewel het voor grotere bedragen zoals 1.000 USD zinvol is om te wachten op 6 bevestigingen of meer. Elke bevestiging vermindert <i>exponentieel</i> het risico van een teruggedraaide transactie."
     cryptography: "Cryptografie"
     cryptographytxt: "Cryptografie is de tak van wiskunde die zorgt voor <b>wiskundig bewezen beveiliging</b>. Winkels en banken gebruiken cryptografie om hun transacties via internet te beveiligen. In het geval van Bitcoin wordt cryptografie gebruikt om te zorgen dat niemand geld kan uitgeven uit andermans <a href=\"#[vocabulary.wallet]\">portemonnee</a> en om te voorkomen dat iemand de integriteit van de <a href=\"#[vocabulary.blockchain]\">blokketen</a> kan aantasten. Het kan ook worden gebruikt om een portemonnee te versleutelen, zodat niemand erbij kan die het bijbehorende wachtwoord niet kent."
     doublespend: "Dubbele uitgave"
@@ -636,56 +1079,103 @@ nl:
   you-need-to-know:
     title: "Wat u moet weten - Bitcoin"
     pagetitle: "Wat u moet weten over Bitcoin"
-    summary: "Als u op het punt staat Bitcoin te verkennen, zijn er een aantal dingen die u moet weten. Via Bitcoin kunt u op een andere manier geld inwisselen dan gebruikelijk is bij banken. Daarom moet u zeker even de tijd nemen om bekend te raken met Bitcoin alvorens u serieuze transacties doet. Bitcoin moet hetzelfde worden behandeld als uw normale portemonnee, en soms zelfs nog beter dan dat!"
+    summary: "Als u met Bitcoin begint, zijn er een paar dingen die u moet weten. Met Bitcoin kunt u geld omwisselen en op een andere manier handelen dan u normaal doet. Daarom moet u de tijd nemen om uzelf te informeren voordat u Bitcoin gebruikt voor een belangrijke transactie. Bitcoin moet met dezelfde zorg worden behandeld als uw normale portemonnee, of in sommige gevallen zelfs meer!"
     secure: "Uw portemonnee beveiligen"
-    securetxt: "Net als in het gewone leven moet u goed op uw portemonnee letten. Bitcoin maakt het eenvoudiger dan ooit om geld wereldwijd te versturen. Daarnaast houdt u altijd controle over uw geld. Aan zulke grote mogelijkheden kleven echter grote veiligheidszorgen. Tegelijkertijd kan Bitcoin heel erg veilig zijn als het correct wordt gebruikt. Onthoud dat u verantwoordelijk bent voor het aanwenden van goede gewoonten om de veiligheid van uw geld te waarborgen. <a href=\"#secure-your-wallet#\"><b>Lees meer over het beveiligen van uw portemonnee</b></a>."
+    securetxt: "Net als in het echte leven, moet uw portefeuille worden beveiligd. Bitcoin maakt het mogelijk om op een zeer eenvoudige manier overal waarde over te dragen en stelt u in staat om uw geld onder controle te houden. Zulke geweldige eigenschappen gaan ook gepaard met grote veiligheidsrisico's. Tegelijkertijd kan Bitcoin bij correct gebruik zeer hoge beveiligingsniveaus bieden. Denk er altijd aan dat het uw verantwoordelijkheid is om goede gewoonten toe te passen om uw geld te beschermen. <a href=\"#secure-your-wallet#\">Lees meer over het beveiligen van uw portefeuille</a>."
     volatile: "De prijs van Bitcoin is erg instabiel"
     volatiletxt: "De prijs van bitcoins kan plotseling stijgen of dalen, omdat de economie zo jong is, Bitcoin zo vernieuwend is en de markten soms niet liquide genoeg zijn. Daarom is het niet raadzaam om al uw spaargeld in bitcoins om te zetten. Bitcoin moet worden beschouwd als een zeer riskante investering en u moet nooit geld in Bitcoin investeren dat u niet kunt missen. Als u geld ontvangt in Bitcoin, kunt u die bij verschillende diensten op internet onmiddellijk in uw eigen valuta laten omzetten."
     irreversible: "Bitcoin-betalingen zijn onomkeerbaar"
-    irreversibletxt: "Een transactie via Bitcoin kan niet ongedaan worden gemaakt. Deze kan alleen worden terugbetaald door de ontvanger. Daarom moet u alleen betalingen doen aan mensen en organisaties die u bekend zijn en die u vertrouwt. Bedrijven moeten de controle kunnen houden over de betaalverzoeken die ze voor klanten mogelijk maken. Bitcoin kan typefouten herkennen en laat u over het algemeen geen geld overmaken naar een ongeldig adres. Er worden in de toekomst wellicht aanvullende services ingezet om meer keuze en bescherming aan consumenten te bieden."
+    irreversibletxt: "Een Bitcoin transactie kan niet worden teruggedraaid, het kan alleen worden terugbetaald door de persoon die het geld ontvangt. Dit betekent dat u ervoor moet zorgen dat u zaken doet met mensen en organisaties die u kent en vertrouwt, of die een gevestigde reputatie hebben. Op hun beurt moeten bedrijven de verzoeken tot betaling bijhouden die ze aan hun klanten doen. Bitcoin kan typefouten detecteren en laat je meestal niet per ongeluk geld sturen naar een ongeldig adres, maar het is het beste om controles uit te voeren voor extra veiligheid en redundantie. In de toekomst kunnen er aanvullende diensten bestaan om zowel bedrijven als consumenten meer keuze en bescherming te bieden."
     anonymous: "Bitcoin is niet anoniem"
-    anonymoustxt: "Het kost enige moeite om uw privacy te beschermen met Bitcoin. Alle Bitcoin-transacties worden permanent openbaar opgeslagen op het netwerk, dus iedereen kan op elk moment het saldo en de transacties van elk Bitcoin-adres inzien. De identiteit van de eigenaar kan echter niet worden vastgesteld aan de hand van zijn Bitcoin-adres zolang de eigenaar geen persoonlijke informatie heeft vrijgegeven bij een transactie. Daarom dienen Bitcoin-adressen slechts één keer te worden gebruikt. Onthoud dat het uw verantwoordelijkheid is om er alles aan te doen om uw privacy te beschermen. <a href=\"#protect-your-privacy#\"><b>Lees meer over het beschermen van uw privacy</b></a>."
-    instant: "Directe transacties zijn minder veilig"
-    instanttxt: "Een Bitcoin-transactie komt binnen een paar seconden aan bij de ontvanger en wordt over het algemeen bevestigd binnen tien minuten. Tot die tijd kan de betaling als authentiek maar omkeerbaar worden beschouwd. Oneerlijke gebruikers kunnen hierdoor proberen vals te spelen. Wilt u echt een directe transactie, dan wordt u aangeraden een kleine commissie bij te voegen en een systeem te gebruiken dat onveilige transacties kan detecteren om de beveiliging te verhogen. Voor grotere bedragen van meer dan €1000 is het logischer om op 6 of meer bevestigingen te wachten. Elke bevestiging verkleint het risico op een teruggedraaide transactie <i>exponentieel</i>."
+    anonymoustxt: "Er is enige inspanning nodig om uw privacy te beschermen met Bitcoin. Alle Bitcoin-transacties worden openbaar en permanent opgeslagen op het netwerk, hetgeen betekent dat iedereen de saldi en transacties van elk Bitcoin-adres kan zien. De identiteit van de gebruiker achter een adres blijft echter onbekend totdat de informatie tijdens een aankoop of in andere omstandigheden wordt onthuld. Dit is één van de redenen waarom Bitcoin-adressen slechts één keer gebruikt mogen worden. Denk er altijd aan dat het uw verantwoordelijkheid is om goede gewoonten toe te passen om uw privacy te beschermen. <a href=\"#protect-your-privacy#\">Lees meer over het beschermen van uw privacy</a>."
+    instant: "Niet-bevestigde transacties zijn niet veilig"
+    instanttxt: "Transacties beginnen niet zo dat ze onomkeerbaar zijn. In plaats daarvan krijgen ze een <i>bevestigingsscore</i> waaruit blijkt hoe moeilijk het is om deze terug te draaien (zie tabel). Elke bevestiging duurt enkele seconden tot 90 minuten, waarbij 10 minuten het gemiddelde is. Als de transactie een te lage vergoeding betaalt of anderszins atypisch is, kan het veel langer duren voordat de eerste bevestiging wordt ontvangen."
+    confirmations: "Bevestigingen"
+    lightweight_wallets: "Lichtgewicht portefeuille"
+    bitcoin_core: "<a href=\"#download#\">Bitcoin Core</a>"
+    unconfirmed_only_safe: "Alleen veilig als u de persoon die u betaalt vertrouwt"
+    somewhat_reliable: "Enigzins betrouwbaar"
+    mostly_reliable: "Meestal betrouwbaar"
+    highly_reliable: "Zeer betrouwbaar"
+    high_value_minimum: "Minimale aanbeveling voor zeer waardevolle bitcoin overboekingen"
+    alert_recommendation: "Aanbevelingen tijdens <a href=\"/en/alerts\">noodgevallen</a> om menselijke interventie toe te staan."
     experimental: "Bitcoin is nog experimenteel"
-    experimentaltxt: "Bitcoin is een experimentele nieuwe valuta die actief wordt ontwikkeld. Hoewel het steeds minder experimenteel wordt naarmate het meer wordt gebruikt, moet u toch in gedachten houden dat Bitcoin een nieuwe uitvinding is. De ideeën die eraan ten grondslag liggen, zijn nog niet eerder geprobeerd in een dergelijk systeem. Hoe het experiment zal aflopen, kan dan ook niemand voorspellen."
+    experimentaltxt: "Bitcoin is een experimentele nieuwe valuta die actief wordt ontwikkeld. Elke verbetering maakt Bitcoin aantrekkelijker, maar brengt ook nieuwe uitdagingen aan het licht naarmate de acceptatie van Bitcoin toeneemt. Tijdens deze groeipijnen kunt u te maken krijgen met hogere kosten, tragere bevestigingen, of zelfs ernstiger problemen. Wees voorbereid op problemen en raadpleeg een technische expert voordat u grote investeringen doet, maar houd er rekening mee dat niemand de toekomst van Bitcoin kan voorspellen."
     tax: "Overheidsbelastingen en regelgeving"
-    taxtxt: "Bitcoin is geen officiële munteenheid. Dat gezegd hebbende, in de meeste landen moeten toch inkomsten-, vennootschaps-, vermogens- en omzetbelastingen worden betaald over alles wat waarde vertegenwoordigt, inclusief bitcoins. Het is uw verantwoordelijkheid om ervoor te zorgen dat u zich houdt aan de <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">belastingwetgeving en enige andere wettelijke of reglementaire mandaten</a> afgegeven door uw overheid en/of plaatselijke gemeenten."
+    taxtxt: "Bitcoin is geen officiële munteenheid. Dat gezegd hebbende, in de meeste landen moeten toch inkomsten-, vennootschaps-, vermogens- en omzetbelastingen worden betaald over alles wat waarde vertegenwoordigt, inclusief bitcoins. Het is uw verantwoordelijkheid om ervoor te zorgen dat u zich houdt aan de <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">belastingwetgeving en enige andere wettelijke of reglementaire mandaten</a> afgegeven door uw overheid en/of plaatselijke gemeente."
   layout:
-    menu-support-bitcoin: "Help Bitcoin"
     menu-about-us: "Over bitcoin.org"
     menu-bitcoin-for-businesses: Bedrijven
     menu-bitcoin-for-developers: Ontwikkelaars
     menu-bitcoin-for-individuals: Particulieren
     menu-community: Community
     menu-development: Ontwikkeling
+    menu-developer-documentation: Documentatie
     menu-events: Evenementen
+    menu-exchanges: Beurzen
     menu-faq: FAQ
     menu-getting-started: "Aan de slag"
     menu-how-it-works: "Hoe het werkt"
     menu-innovation: Innovatie
     menu-intro: Inleiding
     menu-legal: "Juridisch"
+    menu-participate: Meedoen
     menu-press: "Pers"
     menu-privacy: "Privacy"
     menu-resources: Hulpmiddelen
-    menu-stats: "Statistieken"
-    menu-participate: Meedoen
+    menu-scams: "Vermijd oplichting"
+    menu-support-bitcoin: "Ondersteun Bitcoin"
+    menu-buy: "Koop Bitcoin"
+    menu-full-node: "Een volledige node draaien"
+    menu-other: "Overige"
     menu-vocabulary: Woordenlijst
     menu-you-need-to-know: "Wat u moet weten"
-    banner-translate: "Vertalingen voor deze taal zijn verouderd. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Klik hier om bitcoin.org naar uw taal te vertalen</a>."
+    menu-white-paper: "Whitepaper"
+    banner-core-moved: |
+        Deze pagina is verhuisd naar de nieuwe Bitcoin Core
+        website (klik hier om te worden doorgestuurd)
+    banner-translate: "De vertalingen voor deze taal zijn verouderd. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Klik hier om bitcoin.org in uw taal te helpen vertalen</a>."
     footer: "Beschikbaar onder de <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-licentie</a>"
+    donate-community: "Steun Bitcoin.org"
+    donate-support: "Bitcoin.org wordt ondersteund door de gemeenschap."
+    network-status: "Netwerk status"
     sponsor: "Een communitywebsite gesponsord door"
     getstarted: "Ga aan de slag met Bitcoin"
+    recomendation: "Aanbevolen Bitcoin Portefeuilles"
+    learn-more: "Meer informatie"
+    donate: "Doneer"
+    bitcoin-core: "Bitcoin Core"
+    donation-banner-text: "Bitcoin.org is een door de gemeenschap gefinancierd project, donaties worden gewaardeerd en gebruikt om de website te verbeteren."
+    donation-banner-toggle-button: "Bitcoin.org heeft uw steun nodig!"
+    donation-banner-donate-button: "Doneer"
+    donation-modal-header: "Doneer aan Bitcoin.org"
+    donation-modal-subheader: "Gebruik deze QR of onderstaand adres"
+    donation-modal-input-custom-amount: "Of aangepast bedrag?"
+    donation-modal-optional-message: "Optionele beschrijving (voor uw portefeuille)"
   url:
     about-us: over-ons
     bitcoin-for-developers: bitcoin-voor-ontwikkelaars
     bitcoin-for-individuals: bitcoin-voor-particulieren
     bitcoin-for-businesses: bitcoin-voor-bedrijven
+    buy: kopen
     choose-your-wallet: kies-uw-portemonnee
     community: community
+    developer-documentation: documentatie-voor-ontwikkelaars
+    developer-examples: ontwikkelvoorbeelden
+    developer-glossary: woordenlijst-ontwikkelaar
+    developer-guide: ontwikkelaars-handleiding
+    developer-reference: ontwikkelaars-referentie
+    blockchain-guide: handleiding-blockchain
+    contracts-guide: handleiding-contracten
+    mining-guide: handleiding-mining
+    operating-modes-guide: handleiding-operationele-werkwijzen
+    p2p-network-guide: handleiding-p2p-netwerk
+    payment-processing-guide: handleiding-betalingsverwerking
+    transactions-guide: handleiding-transacties
+    wallets-guide: handleiding-portemonnees
     development: ontwikkeling
     download: download
+    exchanges: beurzen
     events: evenementen
     faq: faq
     getting-started: aan-de-slag
@@ -696,13 +1186,32 @@ nl:
     privacy: privacy
     protect-your-privacy: bescherm-uw-privacy
     resources: hulpmiddelen
+    scams: oplichtingspraktijken
     secure-your-wallet: beveilig-uw-portemonnee
     support-bitcoin: help-bitcoin
     vocabulary: woordenlijst
     you-need-to-know: wat-u-moet-weten
+    bitcoin-paper: bitcoin-document
+    spend-bitcoin: bitcoin-uitgeven
   anchor:
     community:
       non-profit: non-profit
+    scams:
+      blackmail: chantage
+      fake-exchanges: nep-beurzen
+      free-giveaways: gratis-weggevertjes
+      impersonation: impersonatie
+      malware: malware
+      meet-in-person: persoonlijk-ontmoeten
+      money-transfer-fraud: geld-overboekingsfraude
+      phishing-emails: phishing-e-mails
+      phishing-websites: phishing-websites
+      ponzi-schemes: ponzifraude
+      pyramid-schemes: piramidespelen
+      prize-giveaways: prijs-weggevertjes
+      pump-and-dumps: pump-en-dump-oplichting
+      ransomware: ransomware
+      scam-coins: oplichtersmunten
     vocabulary:
       address: bitcoin-adres
       bit: bit
@@ -726,7 +1235,7 @@ nl:
       whocontrols: wie-beheert-het-bitcoin-netwerk
       howitworks: hoe-werkt-bitcoin
       acquire: hoe-kan-ik-bitcoins-vergaren
-      used: "wordt-bitcoin-echt-door-mensen-gebruikt"
+      used: wordt-bitcoin-echt-door-mensen-gebruikt
       makepayment: hoe-moeilijk-is-het-om-een-bitcoin-betaling-te-doen
       advantages: wat-zijn-de-voordelen-van-bitcoin
       disadvantages: wat-zijn-de-nadelen-van-bitcoin

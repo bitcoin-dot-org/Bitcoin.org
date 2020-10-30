@@ -9,7 +9,6 @@ id: community
   <div class="container hero-container">
     <h1>{% translate pagetitle %}</h1>
     <p class="summary">{% translate pagedesc %}</p>
-    {% include helpers/hero-social.html %}
   </div>
 </div>
 
@@ -29,6 +28,12 @@ id: community
         </p>{% endif %} {% if page.lang == 'de' %}
         <p>
           <a href="https://www.coinforum.de/">CoinForum.de</a>
+        </p>{% endif %} {% if page.lang == 'zh_CN' %}
+        <p>
+          <a href="https://www.chainnode.com/forum/2">ChainNode 链节点上的比特币社区</a>
+        </p>{% endif %} {% if page.lang == 'zh_TW' %}
+        <p>
+          <a href="https://www.chainnode.com/forum/2">ChainNode 鏈節點上的比特幣社群</a>
         </p>{% endif %} {% if page.lang == 'es' %}
         <p>
           <a href="https://forobits.com/">Foro de Bitcoin en Español</a>
@@ -65,7 +70,6 @@ id: community
         <p>
           <a href="https://vk.com/bitcoin">Страница на ВКонтакте</a>
         </p>{% endif %}
-        <p>{% translate linkgoogle %}</p>
         <p>
           <a href="https://twitter.com/search?q=bitcoin">{% translate linktwitter %}</a>
         </p>
@@ -134,13 +138,15 @@ id: community
       </h2>
     
       <div class="row organizations-row">
+
         <div class="row organizations-item">
           <img class="organization-img" src="/img/flags/AR.svg?{{site.time | date: '%s'}}" alt="Argentinan flag">
           <div>
             <h3 class="organization-country" id="argentina">Argentina</h3>
-            <a class="organization-link" href="http://www.bitcoinargentina.org/">Fundación Bitcoin Argentina</a>
+            <a class="organization-link" href="https://www.bitcoinargentina.org/">Fundación Bitcoin Argentina</a>
           </div>
         </div>
+        
         <div class="row organizations-item">
           <img class="organization-img" src="/img/flags/AT.svg?{{site.time | date: '%s'}}" alt="Austrian flag">
           <div>
@@ -148,35 +154,15 @@ id: community
             <a class="organization-link" href="https://bitcoin-austria.at/">Bitcoin Austria</a>
           </div>
         </div>
+        
         <div class="row organizations-item">
-          <img class="organization-img" src="/img/flags/BE.svg?{{site.time | date: '%s'}}" alt="Belgian flag">
+          <img class="organization-img" src="/img/flags/CL.svg?{{site.time | date: '%s'}}" alt="Chilean flag">
           <div>
-            <h3 class="organization-country" id="belgium">Belgium</h3>
-            <a class="organization-link" href="http://www.bitcoinassociation.be/">Belgian Bitcoin Association</a>
+            <h3 class="organization-country" id="chile">Chile</h3>
+            <a class="organization-link" href="https://www.asociacionbitcoin.org/">Asociación Bitcoin Chile</a>
           </div>
         </div>
-        <div class="row organizations-item">
-          <img class="organization-img" src="/img/flags/CA.svg?{{site.time | date: '%s'}}" alt="Canadian flag">
-          <div>
-            <h3 class="organization-country" id="canada">Canada</h3>
-            <a class="organization-link" href="http://www.bitcoinalliance.ca/">Bitcoin Alliance of Canada</a>
-          </div>
-        </div>
-        <div class="row organizations-item">
-          <img class="organization-img" src="/img/flags/CO.svg?{{site.time | date: '%s'}}" alt="Colombian Flag">
-          <div>
-            <h3 class="organization-country" id="colombia">Colombia</h3>
-            <a class="organization-link" href="http://www.bitcoincolombia.org/">Fundación Bitcoin Colombia</a>
-          </div>
-        </div>
-        <div class="row organizations-item">
-          <img class="organization-img" src="/img/flags/DK.svg?{{site.time | date: '%s'}}" alt="Danish flag">
-          <div>
-            <h3 class="organization-country" id="denmark">Denmark</h3>
-            <a class="organization-link" href="http://www.danskbitcoinforening.dk/">Dansk Bitcoinforening</a>
-            <br>
-          </div>
-        </div>
+        
         <div class="row organizations-item">
           <img class="organization-img" src="/img/flags/DE.svg?{{site.time | date: '%s'}}" alt="German flag">
           <div>
@@ -184,52 +170,47 @@ id: community
             <a class="organization-link" href="https://www.bundesverband-bitcoin.de/">Bundesverband Bitcoin e.V.</a>
           </div>
         </div>
-    
+
+        <div class="row organizations-item">
+          <img class="organization-img" src="/img/flags/IE.svg?{{site.time | date: '%s'}}" alt="Irish flag">
+          <div>
+            <h3 class="organization-country" id="ireland">Ireland</h3>
+            <a class="organization-link" href="https://www.bani.org.uk/">Bitcoin Association of Northern Ireland</a>
+          </div>
+        </div>
+        
         <div class="row organizations-item">
           <img class="organization-img" src="/img/flags/IL.svg?{{site.time | date: '%s'}}" alt="Israeli flag">
           <div>
             <h3 class="organization-country" id="israel">Israel</h3>
-            <a class="organization-link" href="http://www.bitcoin.org.il/">איגוד הביטקוין הישראלי</a>
+            <a class="organization-link" href="https://www.bitcoin.org.il/">איגוד הביטקוין הישראלי</a>
           </div>
         </div>
+        
         <div class="row organizations-item">
           <img class="organization-img" src="/img/flags/IT.svg?{{site.time | date: '%s'}}" alt="Italian flag">
           <div>
             <h3 class="organization-country" id="italy">Italy</h3>
             <a class="organization-link" href="https://www.bitcoin-italia.org/">Bitcoin Foundation Italia</a>
           </div>
-        </div>
-    
+        </div>   
+        
         <div class="row organizations-item">
           <img class="organization-img" src="/img/flags/NL.svg?{{site.time | date: '%s'}}" alt="Dutch flag">
           <div>
             <h3 class="organization-country" id="netherlands">Netherlands</h3>
-            <a class="organization-link" href="http://stichtingbitcoin.nl/">Stichting Bitcoin Nederland</a>
-            <a class="organization-link" href="https://bitcoinembassy.nl/">Bitcoin Embassy Amsterdam</a>
+            <a class="organization-link" href="https://stichtingbitcoin.nl/">Stichting Bitcoin Nederland</a>
           </div>
         </div>
-        <div class="row organizations-item">
-          <img class="organization-img" src="/img/flags/PH.svg?{{site.time | date: '%s'}}" alt="Philippine flag">
-          <div>
-            <h3 class="organization-country" id="philippines">Philippines</h3>
-            <a class="organization-link" href="http://bitcoin.org.ph/">Bitcoin Organization of the Philippines</a>
-          </div>
-        </div>
+        
         <div class="row organizations-item">
           <img class="organization-img" src="/img/flags/PL.svg?{{site.time | date: '%s'}}" alt="Polish flag">
           <div>
             <h3 class="organization-country" id="poland">Poland</h3>
-            <a class="organization-link" href="http://www.bitcoin.org.pl/">Polish Bitcoin Association</a>
+            <a class="organization-link" href="https://www.bitcoin.org.pl/">Polish Bitcoin Association</a>
           </div>
-        </div>
-    
-        <div class="row organizations-item">
-          <img class="organization-img" src="/img/flags/UA.svg?{{site.time | date: '%s'}}" alt="Ukrainian flag">
-          <div>
-            <h3 class="organization-country" id="ukraine">Ukraine</h3>
-            <a class="organization-link" href="https://www.bitcoinua.org/">Bitcoin Foundation Ukraine</a>
-          </div>
-        </div>
+        </div>  
+        
         <div class="row organizations-item">
           <img class="organization-img" src="/img/flags/SI.svg?{{site.time | date: '%s'}}" alt="Slovenian flag">
           <div>
@@ -237,6 +218,7 @@ id: community
             <a class="organization-link" href="https://bitcoin.si/">Bitcoin Društvo Slovenije</a>
           </div>
         </div>
+        
         <div class="row organizations-item">
           <img class="organization-img" src="/img/flags/ES.svg?{{site.time | date: '%s'}}" alt="Spanish flag">
           <div>
@@ -244,29 +226,15 @@ id: community
             <a class="organization-link" href="http://avalbit.org/">Avalbit</a>
           </div>
         </div>
-        <div class="row organizations-item">
-          <img class="organization-img" src="/img/flags/SE.svg?{{site.time | date: '%s'}}" alt="Swedish flag">
-          <div>
-            <h3 class="organization-country" id="sweden">Sweden</h3>
-            <a class="organization-link" href="http://www.bitcoinforeningen.se/">Svenska Bitcoinföreningen</a>
-          </div>
-        </div>
+        
         <div class="row organizations-item">
           <img class="organization-img" src="/img/flags/CH.svg?{{site.time | date: '%s'}}" alt="Swiss flag">
           <div>
             <h3 class="organization-country" id="switzerland">Switzerland</h3>
-            <a class="organization-link" href="http://bitcoinassociation.ch/">Bitcoin Association Switzerland</a>
+            <a class="organization-link" href="https://bitcoinassociation.ch/">Bitcoin Association Switzerland</a>
           </div>
         </div>
-        <div class="row organizations-item">
-          <img class="organization-img" src="/img/flags/VE.svg?{{site.time | date: '%s'}}" alt="Venezuelan flag">
-          <div>
-            <h3 class="organization-country" id="venezuela">Venezuela</h3>
-            <a class="organization-link" href="https://www.bitcoinvenezuela.org/">Fundación Bitcoin de Venezuela</a>
-          </div>
-        </div>
-      </div>
-    
+        
       <div class="introlink">{% translate wikiportal %}</div>
     </div>
   </div>

@@ -18,7 +18,6 @@ breadcrumbs:
 <div class="container hero-container" markdown="block">
 
 # Contribute Bug Reports
-{% include helpers/hero-social.html %}
 </div>
 </div>
 

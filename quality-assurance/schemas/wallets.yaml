@@ -36,6 +36,12 @@ properties:
     type: string
     minLength: 1
 
+  user:
+    description: Denotes whether or not the wallet is designed for new users
+    type: string
+    enum:
+      - beginner
+
   ## TODO: we should probably use names here and translate to
   ##       numbers (if required) in the template
   level:
@@ -84,6 +90,7 @@ properties:
               - text
               - link
               - screenshot
+              - features
               - check
               ## TODO: Not currently required, but we should aim for making it required #
               # - source
@@ -95,7 +102,6 @@ properties:
                 enum:
                   # mobile os
                   - android
-                  - windowsphone
                   - ios
                   # desktop os
                   - windows
@@ -122,6 +128,10 @@ properties:
               screenshot: &screenshot
                 description: File name for screenshot within the /img/screenshots/ directory
                 type: string
+              ## TODO: change this into an array so we can practically test values
+              features:
+                type: string
+                minLength: 1
               check: &check
                 description: The wallet's features (or lack thereof)
                 type: object

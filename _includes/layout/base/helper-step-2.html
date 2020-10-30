@@ -1,0 +1,51 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+<div class="helper-accordion js-helper-accordion" data-number="2" data-type="user">
+
+  <div class="helper-header">
+    <div class="helper-header-row">
+      <h2 id="wizardUserTitle" class="helper-title">{% translate wizard-user-title choose-your-wallet %}</h2>
+      <div class="helper-selected-block">
+        <div class="row">
+          <div class="helper-selected-filter"></div>
+          <button class="helper-change-btn js-helper-nav-btn" data-selector="2">{% translate helper-change-btn choose-your-wallet %}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="helper-step">
+    <div class="helper-user-types">
+      <label class="helper-user-radio-wrapper">
+        <input type="radio" class="helper-user-radio js-helper-radio js-wizard-selector js-selector" name="user" value="beginner" data-text="New user" />
+        <div class="helper-user-radio-custom">
+          <img src="/img/icons/plant.svg" alt="plant &amp; bitcoin">
+          <div id="wizardNewTitle" class="helper-user-radio-title">{% translate wizard-user-new choose-your-wallet %}</div>
+          <p class="helper-user-radio-text">{% translate wizard-user-new-description choose-your-wallet %}</p>
+        </div>
+        <p class="disabled-checkbox-text"><span>{% translate helper-note choose-your-wallet %}:</span> {% translate helper-feature-unavailable choose-your-wallet %}</p>
+      </label>
+      <p class="helper-user-separator">{% translate helper-or choose-your-wallet %}</p>
+      <label class="helper-user-radio-wrapper">
+        <input type="radio" class="helper-user-radio js-helper-radio js-wizard-selector js-selector" name="user" value="experienced" data-text="Experienced user" />
+        <div class="helper-user-radio-custom">
+          <img src="/img/icons/trees.svg" alt="trees &amp; bitcoin">
+          <div id="wizardExperiencedTitle" class="helper-user-radio-title">{% translate wizard-user-experienced choose-your-wallet %}</div>
+          <p class="helper-user-radio-text">{% translate wizard-user-experienced-description choose-your-wallet %}</p>
+        </div>
+      </label>
+    </div>
+
+    <div class="helper-navigation">
+      <button class="skip-helper-btn js-skip-btn">{% translate skip-helper-btn choose-your-wallet %}</button>
+      <div class="helper-navigation-row">
+        <button class="helper-next-btn btn-bright js-helper-nav-btn" data-selector="3" data-button-type="user">{% translate helper-next-btn choose-your-wallet %}</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
