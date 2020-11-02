@@ -527,7 +527,6 @@ id:
     devcommunities: "Komunitas Pengembang"
     devcommunitiesintro: "Beberapa chatroom dan situs berikut menyediakan diskusi tentang perkembangan Bitcoin. Pastikan untuk membaca aturan-aturan mereka sebelum menulis posting."
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">Channel IRC #bitcoin-core-dev</a> pada freenode."
-    slack: "<a href=\"https://slack.bitcoincore.org/\">Bitcoin Core di Channel Slack</a>"
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">Forum Diskusi Pengembangan &amp; Teknis BitcoinTalk</a>"
   download:
