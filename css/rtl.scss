@@ -375,6 +375,18 @@ h2 .rssicon{
 	text-align: right;
 	direction: rtl;
 }
+.toc-row .toccontent .expanded .exchanges-tab-title {
+	padding-left: 35px;
+	padding-right: 95px;
+}
+.exchanges-tab-title::before {
+	left: auto;
+	right: 25px;
+}
+.marketplace img {
+	margin-right: 0;
+	margin-left: 30px;
+}
 .boxexpand {
 	direction: rtl;
 }
