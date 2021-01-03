@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>config-linux</title>
+
+
+
+</head>
+
+<body>
+
+<hr>
+
+<h1 id="toc_0">This file is licensed under the MIT License (MIT) available on</h1>
+
+<h1 id="toc_1">http://opensource.org/licenses/MIT.</h1>
+
+<p>{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.<br>
+{% endcomment %}</p>
+
+<p>layout: base</p>
+
+<h2 id="toc_2">id: config-linux</h2>
+
+<h3 id="toc_3">Configure Linux Tor Service</h3>
+
+<ul>
+<li><a href="https://bitcoin.org/en/full-node#linux-instructions">Review Linux Instructions</a></li>
+</ul>
+
+<p>{% comment %}Scrape wiki content{% endcomment %}
+{% assign url = &#39;https://en.bitcoin.it/wiki/Setting<em>up</em>a<em>Tor</em>hidden<em>service&#39; %}
+{% capture remote</em>page %}
+{% include_remote {{ url }} %}
+{% endcapture %}</p>
+
+<ul>
+<li><a href="https://en.bitcoin.it/wiki/Setting_up_a_Tor_hidden_service">bitcoin.it/wiki/Setting<em>up</em>a<em>Tor</em>hidden_service</a></li>
+</ul>
+
+<p>{% comment %}
+We start from the end of the wiki page to avoid extreneous content
+REF: https://shopify.github.io/liquid/filters/slice/
+{% endcomment %}
+{{ remote<em>page | slice: -15225, 6985 | strip</em>html}}
+<hr>
+<center>
+<iframe width="100%" height="300em" src="https://www.youtube.com/embed/ak_u5d0onJs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center></p>
+
+<p>{% include tor/config-debian.md %}  </p>
+
+<ul>
+<li>TEXT</li>
+</ul>
+
+<p>{% include tor/config-ubuntu.md %}  </p>
+
+<ul>
+<li>TEXT</li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lmMVoBgIzNc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n2IUYL7hCOI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>{% include tor/config-alpine.md %}  </p>
+
+<ul>
+<li>TEXT</li>
+</ul>
+
+<p>{% comment %}<br>
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}</p>
+
+
+
+
+</body>
+
+</html>
