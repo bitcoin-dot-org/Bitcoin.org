@@ -24,7 +24,7 @@ platform:
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
-          fees: "checkgoodfeecontrolfull"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -41,7 +41,7 @@ platform:
           transparency: "checkgoodtransparencydeterministic"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
-          fees: "checkgoodfeecontrolfull"
+          fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
