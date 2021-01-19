@@ -5,7 +5,7 @@
 id: unstoppable
 title: "Unstoppable"
 titleshort: "Unstoppable"
-compat: "android ios"
+compat: "mobile android ios"
 user: beginner
 level: 2
 platform:
