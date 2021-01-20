@@ -115,7 +115,7 @@ Core running.
 {:toc}
 
 <ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new">Report An Issue</a></li></ul>
-<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
+<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/Bitcoin.org/blob/master/en/full-node.md">Edit On GitHub</a></li></ul>
 </div>
 </div>
 
