@@ -140,6 +140,9 @@ en:
     description: "Satoshi Nakamoto's original paper is still recommended reading for anyone studying how Bitcoin works. Choose which translation of the paper you want to read:"
     translated_by: "translated by"
     submit_new_translation: 'Do you want to translate the paper into your language? Visit the <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">Bitcoin white paper repository on GitHub</a> for instructions and <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">open an issue</a> if you have any questions.'
+  whitepaper-mirrors:
+    title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
+    summary: "Mirrors of the Bitcoin whitepaper"
   buy:
     title: "Buy Bitcoin"
     pagetitle: "How to buy bitcoin"
@@ -1220,6 +1223,7 @@ en:
     vocabulary: vocabulary
     you-need-to-know: you-need-to-know
     bitcoin-paper: bitcoin-paper
+    whitepaper-mirrors: whitepaper-mirrors
     spend-bitcoin: spend-bitcoin
   anchor:
     community:
