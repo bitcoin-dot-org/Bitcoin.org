@@ -145,6 +145,14 @@ help and what helping will cost you.
 
 <div class="toccontent-block boxexpand expanded" markdown="1">
 
+## Setup a Full Node
+
+<center><iframe width="100%" height="315" src="https://www.youtube.com/embed/xc_TxlByxeY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
+
 ## Costs And Warnings
 
 Running a Bitcoin full node comes with certain costs and can expose you
