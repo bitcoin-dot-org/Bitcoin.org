@@ -120,7 +120,7 @@ en:
     simple: "Works everywhere, anytime"
     simpletext: "Similarly to email, you don't need to ask recipients you're sending bitcoin to, to use the same software, wallets or service providers. You just need their bitcoin address and then you can transact with them anytime. The Bitcoin network is always running and never sleeps, even on weekends and holidays."
     secure: "Security and control over your money"
-    securetext: "Bitcoin transactions are secured by military-grade cryptography. Nobody can take your money or make a payment on your behalf. So long as you take the required steps to <a href=\"#secure-your-wallet#\">protect your wallet</a>, Bitcoin can give you control over your money and a strong level of protection against many types of fraud."
+    securetext: "Bitcoin transactions are secured by mathematics and energy. <a href=\"https://en.bitcoin.it/wiki/Elliptic_Curve_Digital_Signature_Algorithm\">Cryptographic signatures</a> prevent other people from spending your money. Energy spent by <a href=\"https://en.bitcoin.it/wiki/Proof_of_work\">proof of work (PoW)</a> prevents other people from undoing, rearranging or losing your transactions. So long as you take the required steps to <a href=\"#secure-your-wallet#\">protect your wallet</a>, Bitcoin can give you control over your money and a strong level of protection against many types of fraud."
     lowfee: "Choose your own fees"
     lowfeetext: >
       There is no fee to receive bitcoins, and many wallets let you
