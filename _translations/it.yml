@@ -531,7 +531,6 @@ it:
     devcommunities: "Comunità di sviluppatori"
     devcommunitiesintro: "I seguenti siti e chatroom ospitano discussioni riguardo lo sviluppo di Bitcoin. Si prega di leggere le regole di comportamento prima di inserire messaggi."
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">Canale IRC #bitcoin-core-dev</a> su freenode."
-    slack: "<a href=\"https://slack.bitcoincore.org/\">Canale Slack di Bitcoin Core</a>"
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">Forum di BitcoinTalk - Development &amp; Technical Discussion</a>"
   download:

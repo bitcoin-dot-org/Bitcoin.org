@@ -922,7 +922,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     border-radius:1px;
 }
 .btn-home {
-    width: 325px;
+    width: 290px;
     height: 55px;
 }
 .btn:not(:first-child) {
@@ -2552,11 +2552,15 @@ br.big {
 }
 
 .marketplace {
-    width: 240px;
+    width: 360px;
     margin: 0 0 45px 0;
 }
+
 .exchanges-europe .marketplace:nth-child(even) {
-    width: 225px;
+    width: 400px;
+}
+.exchanges-north-america .marketplace:nth-child(even) {
+    width: 400px;
 }
 .marketplace h3 {
     margin-bottom: 0;

@@ -18,7 +18,7 @@ max_wallet_text_length: 418 ## Unicode characters
       <div class="features">
         <div class="feature-header">
           <div class="line"></div>
-          <p class="features-title">Features:</p>
+          <p class="features-title">{% translate wallet-selector-features choose-your-wallet %}:</p>
           <div class="line"></div>
         </div>
         {% assign features = page.os.features | split: " " %}
@@ -38,7 +38,7 @@ max_wallet_text_length: 418 ## Unicode characters
                   <div class="tooltip-title">
                     {% translate wizard-feature-{{featureName}} choose-your-wallet %}:
                   </div>
-                  <div class="tooltip-text">                
+                  <div class="tooltip-text">
                     {% translate wizard-feature-{{featureName}}-description choose-your-wallet %}
                   </div>
                 </div>
@@ -131,7 +131,7 @@ max_wallet_text_length: 418 ## Unicode characters
               {% if platformOs.link == 'bitcoincore' %}
               <a class="os-selector-link btn-bright"
                 href="/{{ page.lang }}/{% translate download url %}">{% translate walletdownload choose-your-wallet %}</a>
-              {% elsif platformOs.link contains 'play.google.com' or platformOs.link contains 'itunes.apple.com' or platformOs.link contains 'chrome.google.com' %}
+              {% elsif platformOs.link contains 'play.google.com' or platformOs.link contains 'itunes.apple.com' or platformOs.link contains 'apps.apple.com' or platformOs.link contains 'chrome.google.com' %}
               <a class="os-selector-link btn-bright"
                 href="{{ platformOs.link }}">{% translate walletdownload choose-your-wallet %}</a>
               {% else %}
@@ -267,11 +267,11 @@ max_wallet_text_length: 418 ## Unicode characters
   var tooltipsList = Array.prototype.slice.call(document.querySelectorAll('.tooltip'));
 
   tooltipsList.forEach(function (tooltip) {
-    document.addEventListener('click', function(e){   
+    document.addEventListener('click', function(e){
       if (e.target.closest('.tooltip')){
         console.log('click inside');
         return;
-      } 
+      }
       tooltip.style.display === 'block' && closeModal(tooltip.id)
     });
   })
@@ -352,29 +352,29 @@ max_wallet_text_length: 418 ## Unicode characters
     });
 
   }
-  
+
   function checkIfPlatformSelected(filters) {
     var platforms = document.querySelectorAll('[data-tab]');
     var isPlatformSelected = false;
 
     for (var i = 0; i < platforms.length; i++) {
-      var platform = platforms[i]; 
+      var platform = platforms[i];
       if(filters.indexOf(platform.dataset.tab) > -1) isPlatformSelected = true;
     }
 
     return isPlatformSelected;
   }
-  
+
   function displaySimilarWallets() {
     var parameters = queryStringToArray();
     if (!checkIfPlatformSelected(parameters)) return;
-    var currentWalletId = document.querySelector('.wallet').dataset.id;    
+    var currentWalletId = document.querySelector('.wallet').dataset.id;
 
     for (var i = 0; i < linksList.length; i++) {
       var link = linksList[i];
       var categories = link.dataset.categories.split(' ');
       var linkId = link.dataset.id;
-  
+
       if (checkIfFiltersInclude(categories, parameters) && linkId !== currentWalletId) link.classList.add('visible');
       else link.classList.remove('visible');
     }

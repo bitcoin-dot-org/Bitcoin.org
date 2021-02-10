@@ -120,7 +120,7 @@ en:
     simple: "Works everywhere, anytime"
     simpletext: "Similarly to email, you don't need to ask recipients you're sending bitcoin to, to use the same software, wallets or service providers. You just need their bitcoin address and then you can transact with them anytime. The Bitcoin network is always running and never sleeps, even on weekends and holidays."
     secure: "Security and control over your money"
-    securetext: "Bitcoin transactions are secured by military-grade cryptography. Nobody can take your money or make a payment on your behalf. So long as you take the required steps to <a href=\"#secure-your-wallet#\">protect your wallet</a>, Bitcoin can give you control over your money and a strong level of protection against many types of fraud."
+    securetext: "Bitcoin transactions are secured by mathematics and energy. <a href=\"https://en.bitcoin.it/wiki/Elliptic_Curve_Digital_Signature_Algorithm\">Cryptographic signatures</a> prevent other people from spending your money. Energy spent by <a href=\"https://en.bitcoin.it/wiki/Proof_of_work\">proof of work (PoW)</a> prevents other people from undoing, rearranging or losing your transactions. So long as you take the required steps to <a href=\"#secure-your-wallet#\">protect your wallet</a>, Bitcoin can give you control over your money and a strong level of protection against many types of fraud."
     lowfee: "Choose your own fees"
     lowfeetext: >
       There is no fee to receive bitcoins, and many wallets let you
@@ -139,7 +139,10 @@ en:
     summary: "The paper that first introduced Bitcoin"
     description: "Satoshi Nakamoto's original paper is still recommended reading for anyone studying how Bitcoin works. Choose which translation of the paper you want to read:"
     translated_by: "translated by"
-    submit_new_translation: 'Do you want to translate the paper into your language? Visit the <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitcoin white paper repository on GitHub</a> for instructions and <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">open an issue</a> if you have any questions.'
+    submit_new_translation: 'Do you want to translate the paper into your language? Visit the <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">Bitcoin white paper repository on GitHub</a> for instructions and <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">open an issue</a> if you have any questions.'
+  whitepaper-mirrors:
+    title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
+    summary: "Mirrors of the Bitcoin whitepaper"
   buy:
     title: "Buy Bitcoin"
     pagetitle: "How to buy bitcoin"
@@ -235,7 +238,7 @@ en:
     wizard-feature-2fa: "2FA"
     wizard-feature-2fa-description: "Two-factor authentication (2FA) is a way to add additional security to your wallet. The first 'factor' is your password for your wallet. The second 'factor' is a verification code retrieved via text message or from an app on a mobile device. 2FA is conceptually similar to a security token device that banks in some countries require for online banking. It likely requires relying on the availability of a third party to provide the service."
     wizard-feature-bech32: "Bech32"
-    wizard-feature-bech32-description: "Bech32 is a special address format made possible by SegWit (see the feature description for SegWit for more info). This address format is also known as 'bc1 addresses'. Some bitcoin wallets and services do not yet support sending and/or receiving to or from Bech32 addresses."
+    wizard-feature-bech32-description: "Bech32 is a special address format made possible by SegWit (see the feature description for SegWit for more info). This address format is also known as 'bc1 addresses'. Some bitcoin wallets and services do not yet support sending or receiving to Bech32 addresses."
     wizard-feature-full_node: "Full Node"
     wizard-feature-full_node-description: "Some wallets fully validate transactions and blocks. Almost all full nodes help the network by accepting transactions and blocks from other full nodes, validating those transactions and blocks, and then relaying them to further full nodes."
     wizard-feature-hardware_wallet: "Hardware Wallet"
@@ -297,6 +300,7 @@ en:
     walletblw: "Mobile wallet with Lightning Network support."
     walleteclairmobile: "Eclair Mobile is a next generation, Lightning-ready Bitcoin wallet. It can be used as a regular Bitcoin wallet, and can also connect to the Lightning Network for cheap and instant payments."
     walletwasabi: "Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for Windows, Linux and Mac. It includes built-in Tor, CoinJoin and coin control features."
+    walletunstoppable: "Unstoppable is a non-custodial and intuitive mobile wallet for Bitcoin and other cryptocurrencies. This wallet packs some essential features to store, exchange and monitor cryptocurrency  performance while staying private."
     walletdownload: "Install"
     walletvisit: "Visit website"
     walletsourcecode: "Source code"
@@ -540,7 +544,6 @@ en:
     devcommunities: "Developer communities"
     devcommunitiesintro: "The following chatrooms and websites host discussions about Bitcoin development.  Please be sure to read their rules of conduct before posting."
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">IRC Channel #bitcoin-core-dev</a> on freenode."
-    slack: "<a href=\"https://slack.bitcoincore.org/\">Bitcoin Core Slack Channel</a>"
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
@@ -1220,6 +1223,7 @@ en:
     vocabulary: vocabulary
     you-need-to-know: you-need-to-know
     bitcoin-paper: bitcoin-paper
+    whitepaper-mirrors: whitepaper-mirrors
     spend-bitcoin: spend-bitcoin
   anchor:
     community:

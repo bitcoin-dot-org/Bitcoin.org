@@ -55,8 +55,8 @@ recovery process.
     input)
   - Protects the seed against unsigned firmware upgrades
   - Supports importing custom seeds
-  - Provides source code and/or detailed specification for blackbox testing if
-    using a closed-source Secure Element
+  - Provides source code created for all open components and provides detailed specification for blackbox testing of
+    any closed-source secure elements
 
 Optional criteria (some could become requirements):
 
@@ -76,8 +76,7 @@ Optional criteria (some could become requirements):
 
 *Before adding a wallet,* please make sure your wallet meets all of the
 Basic Requirements listed above, or open a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
-to request an exemption or policy change. Feel free to email Will Binns
-([will@bitcoin.org](mailto:will@bitcoin.org)) if you have any questions.
+to request an exemption or policy change.
 
 You should follow the guidelines of the [Wikipedia Manual of Style](https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Trademarks) for trademark capitalization.  For example, if you call your wallet **WEAKBOX wallet** it should be listed as **Weakbox wallet**.
 
@@ -118,7 +117,7 @@ below:
 * bech32: Bech32 is a special address format made possible by SegWit (see the
   feature description for SegWit for more info). This address format is also
   known as 'bc1 addresses'. Some bitcoin wallets and services do not yet support
-  sending and/or receiving to or from Bech32 addresses.
+  sending or receiving to Bech32 addresses.
 
   - To qualify for supporting this feature, the wallet must be able to send and receive Bech32 format addresses.  Bech32 does not need to be the default receive address format, but it should be easy and obvious for users to generate a Bech32 format receive address.
 

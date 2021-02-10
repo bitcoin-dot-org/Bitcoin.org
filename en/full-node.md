@@ -66,11 +66,11 @@ during which it will display the following message whenever you use
 
 After it starts, you may find the following commands useful for basic
 interaction with your node:
-[`getblockchaininfo`](https://developer.bitcoin.org/reference/rpc/getblockchaininfo),
-[`getnetworkinfo`](https://developer.bitcoin.org/reference/rpc/getnetworkinfo),
-[`getnettotals`](https://developer.bitcoin.org/reference/rpc/getnettotals),
-[`getwalletinfo`](https://developer.bitcoin.org/reference/rpc/getwalletinfo),
-[`stop`](https://developer.bitcoin.org/reference/rpc/stop), and [`help`](https://developer.bitcoin.org/reference/rpc/help).
+[`getblockchaininfo`](https://developer.bitcoin.org/reference/rpc/getblockchaininfo.html),
+[`getnetworkinfo`](https://developer.bitcoin.org/reference/rpc/getnetworkinfo.html),
+[`getnettotals`](https://developer.bitcoin.org/reference/rpc/getnettotals.html),
+[`getwalletinfo`](https://developer.bitcoin.org/reference/rpc/getwalletinfo.html),
+[`stop`](https://developer.bitcoin.org/reference/rpc/stop.html), and [`help`](https://developer.bitcoin.org/reference/rpc/help.html).
 {% endcapture %}
 
 
@@ -115,7 +115,7 @@ Core running.
 {:toc}
 
 <ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new">Report An Issue</a></li></ul>
-<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
+<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/Bitcoin.org/blob/master/en/full-node.md">Edit On GitHub</a></li></ul>
 </div>
 </div>
 
@@ -141,6 +141,14 @@ Many people and organizations volunteer to run full nodes using spare
 computing and bandwidth resources---but more volunteers are needed to
 allow Bitcoin to continue to grow.  This document describes how you can
 help and what helping will cost you.
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
+
+## Setup a Full Node
+
+<center><iframe width="100%" height="315" src="https://www.youtube.com/embed/xc_TxlByxeY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="1">
@@ -221,7 +229,7 @@ have an easy-to-use node.
 [Initial block download](https://developer.bitcoin.org/devguide/p2p_network.html#initial-block-download)
 refers to the process where nodes synchronize themselves
 to the network by downloading blocks that are new to them.
-This will happen when a node is far behind the tip of the [best block chain](https://developer.bitcoin.org/glossary).
+This will happen when a node is far behind the tip of the [best block chain](https://developer.bitcoin.org/glossary.html).
 In the process of IBD, a node does not accept incoming transactions nor request mempool transactions.
 
 If you are trying to set up a new node following the instructions below, you will go
@@ -1084,7 +1092,7 @@ connections.](#enabling-connections)
 
 #### Daemon Peer Info
 
-The [`getconnectioncount`](https://developer.bitcoin.org/reference/rpc/getconnectioncount)
+The [`getconnectioncount`](https://developer.bitcoin.org/reference/rpc/getconnectioncount.html)
 command will tell you how many connections you have. If you have more
 than 8 connections, inbound connections are allowed. For example:
 
@@ -1092,7 +1100,7 @@ than 8 connections, inbound connections are allowed. For example:
 52</pre>
 
 For confirmation, you can use the
-[`getpeerinfo`](https://developer.bitcoin.org/reference/rpc/getpeerinfo) command to get
+[`getpeerinfo`](https://developer.bitcoin.org/reference/rpc/getpeerinfo.html) command to get
 information about all of your peers.  Each peer's details will include
 an `inbound` field set to true if the connection is inbound.  If you
 have any inbound connections, then inbound connections are allowed.

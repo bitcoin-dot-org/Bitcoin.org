@@ -38,9 +38,26 @@ http://opensource.org/licenses/MIT.
         <li{% if page.id == 'you-need-to-know' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a>
         </li>
-        {% if page.lang == 'en' %}<li{% if page.id == 'bitcoin-paper' %} class="active"{% endif %}>
+        {% if
+         page.lang == 'en' or
+         page.lang == 'de' or
+         page.lang == 'es' or
+         page.lang == 'hu' or
+         page.lang == 'id' or
+         page.lang == 'it' or
+         page.lang == 'ja' or
+         page.lang == 'nl' or
+         page.lang == 'pt_BR' or
+         page.lang == 'ru' or
+         page.lang == 'sr' or
+         page.lang == 'sv' or
+         page.lang == 'uk' or
+         page.lang == 'zh_CN'
+        %}
+        <li{% if page.id == 'bitcoin-paper' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate bitcoin-paper url %}">{% translate menu-white-paper layout %}</a>
-        </li>{% endif %}
+        </li>
+        {% endif %}
       </ul>
     </div>
     
