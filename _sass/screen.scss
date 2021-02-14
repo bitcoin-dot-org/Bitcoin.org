@@ -3362,6 +3362,45 @@ br.big {
     color: #FF7E00;
     text-align: left;
 }
+/* Styles for dark mode toggle button */
+.dark-theme-toggle input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    cursor: pointer;
+}
+.dark-theme-toggle {
+    position: relative;
+}
+.dark-theme-toggle::before {
+    background-image: url(../img/icons/moon-regular.svg);
+    height: 30px;
+    width: 30px;
+    content: "";
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+}
+html[data-theme="dark"] .dark-theme-toggle::before {
+    background-image: url(../img/icons/moon-solid.svg);
+    -moz-transform: scaleX(-1);
+    /* Gecko */
+    -o-transform: scaleX(-1);
+    /* Opera */
+    -webkit-transform: scaleX(-1);
+    /* Webkit */
+    transform: scaleX(-1);
+    /* Standard */
+    filter: FlipH;
+    /* IE 6/7/8 */
+}
+/* End of styles for dark mode toggle button */
+
 /*Styles specific to printing*/
 
 @media print{
@@ -5034,3 +5073,10 @@ br.big {
 @import 'wallet-selector';
 @import 'helper';
 @import 'donation-banner';
+
+@media screen and (prefers-color-scheme: dark) {
+    @import 'dark-mode';
+}
+html[data-theme="dark"] {
+    @import 'dark-mode'; 
+} 
