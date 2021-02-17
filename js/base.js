@@ -204,6 +204,37 @@ function addAnchorLinks() {
   }
 }
 
+/* Start dark mode toggler */
+function toggleDarkMode() { 
+
+  const toggleSwitch = document.querySelector('.dark-theme-toggle input[type="checkbox"]');
+  const currentTheme = localStorage.getItem('theme');
+
+  if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+      toggleSwitch.checked = true;
+    }
+
+  }
+
+  function switchTheme(e) {
+    if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    }
+    else {
+      document.documentElement.setAttribute('data-theme', 'default');
+      localStorage.setItem('theme', 'default');
+    }
+  }
+
+  toggleSwitch.addEventListener('change', switchTheme, false);
+
+}
+/* End dark mode toggler */
+
 /* jshint ignore:start */
 
  function _gaLt(event) {
