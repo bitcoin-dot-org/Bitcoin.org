@@ -5074,9 +5074,9 @@ html[data-theme="dark"] .dark-theme-toggle::before {
 @import 'helper';
 @import 'donation-banner';
 
-@media screen and (prefers-color-scheme: dark) {
-    @import 'dark-mode';
-}
-html[data-theme="dark"] {
-    @import 'dark-mode'; 
-} 
+// @media screen and (prefers-color-scheme: dark) {
+//     @import 'dark-mode';
+// }
+// html[data-theme="dark"] {
+//     @import 'dark-mode'; 
+// } 
