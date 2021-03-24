@@ -16,7 +16,7 @@ platform:
         link: "https://prokey.io/"
         source: "https://github.com/prokey-io/prokey-optimum-firmware"
         screenshot: "prokeyoptimum.png"
-        features: "hardware_wallet legacy_addresses multisig segwit"
+        features: "bech32 hardware_wallet legacy_addresses multisig segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
