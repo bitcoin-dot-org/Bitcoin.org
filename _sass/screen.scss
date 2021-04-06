@@ -2956,6 +2956,7 @@ br.big {
     font-size: 162.5%;
     color: #FF7E00;
 }
+}
 .contributor {
     width: 30%;
     margin-right: 4%;
@@ -2963,6 +2964,16 @@ br.big {
 }
 .contributor:nth-child(3n+3) {
     margin-right: 0;
+}
+p.contributor-language {
+    width: 30%;
+    margin-right: 4%;
+    margin-bottom: 20px;
+    color: #FF7E00;
+}
+p.contributor-language span {
+    font-size: 18px
+    color: #9496A0;
 }
 .contributor-name {
     display: block;
@@ -5078,5 +5089,5 @@ html[data-theme="dark"] .dark-theme-toggle::before {
 //     @import 'dark-mode';
 // }
 // html[data-theme="dark"] {
-//     @import 'dark-mode'; 
-// } 
+//     @import 'dark-mode';
+// }
