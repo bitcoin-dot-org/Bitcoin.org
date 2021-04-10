@@ -616,7 +616,7 @@ text:
   chain_gb: 340
   ## The main difference between the datadir size and the chain size, if
   ## you don't have any extra indices
-  bitcoin_datadir_gb_pruned: 5
+  bitcoin_datadir_gb_pruned: 7
   ## the tx= field in: grep UpdateTip .bitcoin/debug.log | tail -n1
   total_tx_count_in_millions: 230
   typical_ibd_time_in_hours: 4
