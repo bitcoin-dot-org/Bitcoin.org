@@ -253,7 +253,7 @@ The following instructions describe installing Bitcoin Core using tools
 available in most mainstream Linux distributions.  We assume you use a
 Bourne-like shell such as `bash`.
 
-Using any computer, go to the [Bitcoin Core download page](/en/download)
+Using any computer, go to the [Bitcoin Core download page](https://bitcoin.org/en/download)
 and verify you have made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -434,7 +434,7 @@ If you're a expert system administrator and want to use an init script instead, 
 
 ### Windows 10
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-win10-secure-connection.png?{{site.time | date: '%s'}})
@@ -586,7 +586,7 @@ daemon will be automatically started.
 
 ### Windows 8.x
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -738,7 +738,7 @@ daemon will be automatically started.
 
 ### Windows 7
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -890,7 +890,7 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 
 ### Mac OS X Yosemite 10.10.x+
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-osx-safari-secure-connection.png?{{site.time | date: '%s'}})
