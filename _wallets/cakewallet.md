@@ -26,7 +26,7 @@ platform:
           fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkgoodtransparencydeterministic"
+          privacydisclosure: "checkpassprivacydisclosurefullnode"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: ios
         text: "walletcakewallet"
@@ -43,7 +43,7 @@ platform:
           fees: "checkpassfeecontroldynamic"
         privacycheck:
           privacyaddressreuse: "checkfailprivacyaddressrotation"
-          privacydisclosure: "checkgoodtransparencydeterministic"
+          privacydisclosure: "checkpassprivacydisclosurefullnode"
           privacynetwork: "checkfailprivacynetworknosupporttor"
 ---
 
