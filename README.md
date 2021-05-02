@@ -30,7 +30,7 @@ The following quick guides will help you get started:
 
 Participation in this project is subject to a [Code of Conduct](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/CODE_OF_CONDUCT.md).
 
-### Donations
+### Donations 
 
 Bitcoin.org is community supported: [3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa](bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa)
 
