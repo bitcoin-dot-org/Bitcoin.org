@@ -66,17 +66,17 @@ during which it will display the following message whenever you use
 
 After it starts, you may find the following commands useful for basic
 interaction with your node:
-[`getblockchaininfo`](/en/developer-reference#getblockchaininfo),
-[`getnetworkinfo`](/en/developer-reference#getnetworkinfo),
-[`getnettotals`](/en/developer-reference#getnettotals),
-[`getwalletinfo`](/en/developer-reference#getwalletinfo),
-[`stop`](/en/developer-reference#stop), and [`help`](/en/developer-reference#help).
+[`getblockchaininfo`](https://developer.bitcoin.org/reference/rpc/getblockchaininfo.html),
+[`getnetworkinfo`](https://developer.bitcoin.org/reference/rpc/getnetworkinfo.html),
+[`getnettotals`](https://developer.bitcoin.org/reference/rpc/getnettotals.html),
+[`getwalletinfo`](https://developer.bitcoin.org/reference/rpc/getwalletinfo.html),
+[`stop`](https://developer.bitcoin.org/reference/rpc/stop.html), and [`help`](https://developer.bitcoin.org/reference/rpc/help.html).
 {% endcapture %}
 
 
 {% capture complete_list_of_commands_and_ibd %}
 A complete list of commands is available in the [Bitcoin.org developer
-reference](/en/developer-reference#rpc-quick-reference).
+reference](https://developer.bitcoin.org/reference/rpc/).
 
 When Bitcoin Core daemon first starts, it will begin to download the block
 chain. This step will take at least several days, and it may take much more time
@@ -100,7 +100,6 @@ Core running.
 
 # Running A Full Node
 <p class="summary">Support the Bitcoin network by running your own full node</p>
-{% include helpers/hero-social.html %}
 </div>
 </div>
 
@@ -116,7 +115,7 @@ Core running.
 {:toc}
 
 <ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new">Report An Issue</a></li></ul>
-<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
+<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/Bitcoin.org/blob/master/en/full-node.md">Edit On GitHub</a></li></ul>
 </div>
 </div>
 
@@ -142,6 +141,14 @@ Many people and organizations volunteer to run full nodes using spare
 computing and bandwidth resources---but more volunteers are needed to
 allow Bitcoin to continue to grow.  This document describes how you can
 help and what helping will cost you.
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
+
+## Setup a Full Node
+
+<center><iframe width="100%" height="315" src="https://www.youtube.com/embed/xc_TxlByxeY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="1">
@@ -183,7 +190,7 @@ have an easy-to-use node.
 * Desktop or laptop hardware running recent versions of Windows, Mac OS
   X, or Linux.
 
-* {{site.text.bitcoin_datadir_gb}} gigabytes of free disk space,
+* {{site.text.bitcoin_datadir_gb_pruned}} gigabytes of free disk space,
   accessible at a minimum read/write speed of 100 MB/s.
 
 * 2 gigabytes of memory (RAM)
@@ -219,10 +226,10 @@ have an easy-to-use node.
 
 ## Initial Block Download(IBD)
 
-[Initial block download](/en/p2p-network-guide#initial-block-download)
+[Initial block download](https://developer.bitcoin.org/devguide/p2p_network.html#initial-block-download)
 refers to the process where nodes synchronize themselves
 to the network by downloading blocks that are new to them.
-This will happen when a node is far behind the tip of the [best block chain](/en/glossary/block-chain).
+This will happen when a node is far behind the tip of the [best block chain](https://developer.bitcoin.org/glossary.html).
 In the process of IBD, a node does not accept incoming transactions nor request mempool transactions.
 
 If you are trying to set up a new node following the instructions below, you will go
@@ -246,7 +253,7 @@ The following instructions describe installing Bitcoin Core using tools
 available in most mainstream Linux distributions.  We assume you use a
 Bourne-like shell such as `bash`.
 
-Using any computer, go to the [Bitcoin Core download page](/en/download)
+Using any computer, go to the [Bitcoin Core download page](https://bitcoin.org/en/download)
 and verify you have made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -270,9 +277,9 @@ followed by the argument `xzf` followed by the file name. The argument
 `xzf` means eXtract the gZipped tar archive File. For example, for a
 64-bit tar archive in your current directory, the command is:
 
-    tar xzf bitcoin-0.18.0-x86_64-linux-gnu.tar.gz
+    tar xzf bitcoin-{{site.DOWNLOAD_VERSION}}-x86_64-linux-gnu.tar.gz
 
-This will create the directory `bitcoin-0.18.0` within your current
+This will create the directory `bitcoin-{{site.DOWNLOAD_VERSION}}` within your current
 working directory. We will install the contents of its `bin`
 subdirectory into the `/usr/local/bin` directory using the the `install`
 command. The install command is part of the GNU coreutils available on
@@ -283,11 +290,11 @@ commands below to use a different location).
 If you use `sudo` to run commands as root, use the following command
 line:
 
-    sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.18.0/bin/*
+    sudo install -m 0755 -o root -g root -t /usr/local/bin bitcoin-{{site.DOWNLOAD_VERSION}}/bin/*
 
 If you use `su` to run commands as root, use the following command line:
 
-    su -c 'install -m 0755 -o root -g root -t /usr/local/bin bitcoin-0.18.0/bin/*'
+    su -c 'install -m 0755 -o root -g root -t /usr/local/bin bitcoin-{{site.DOWNLOAD_VERSION}}/bin/*'
 
 <div class="box" markdown="1">
 *To continue, choose one of the following options*
@@ -412,7 +419,7 @@ Scroll to the bottom of the file displayed and add the following line:
 
 Save the file and exit; the updated crontab file will be installed for
 you. On most distributions, this will cause Bitcoin Core daemon to be
-automatically started each time your reboot your computer.
+automatically started each time you reboot your computer.
 
 If you're a expert system administrator and want to use an init script instead, see
 [the init scripts directory in Bitcoin Core's source tree](https://github.com/bitcoin/bitcoin/tree/master/contrib/init).
@@ -427,7 +434,7 @@ If you're a expert system administrator and want to use an init script instead, 
 
 ### Windows 10
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-win10-secure-connection.png?{{site.time | date: '%s'}})
@@ -579,7 +586,7 @@ daemon will be automatically started.
 
 ### Windows 8.x
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -731,7 +738,7 @@ daemon will be automatically started.
 
 ### Windows 7
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -883,7 +890,7 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 
 ### Mac OS X Yosemite 10.10.x+
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-osx-safari-secure-connection.png?{{site.time | date: '%s'}})
@@ -1085,7 +1092,7 @@ connections.](#enabling-connections)
 
 #### Daemon Peer Info
 
-The [`getconnectioncount`](/en/developer-reference#getconnectioncount)
+The [`getconnectioncount`](https://developer.bitcoin.org/reference/rpc/getconnectioncount.html)
 command will tell you how many connections you have. If you have more
 than 8 connections, inbound connections are allowed. For example:
 
@@ -1093,7 +1100,7 @@ than 8 connections, inbound connections are allowed. For example:
 52</pre>
 
 For confirmation, you can use the
-[`getpeerinfo`](/en/developer-reference#getpeerinfo) command to get
+[`getpeerinfo`](https://developer.bitcoin.org/reference/rpc/getpeerinfo.html) command to get
 information about all of your peers.  Each peer's details will include
 an `inbound` field set to true if the connection is inbound.  If you
 have any inbound connections, then inbound connections are allowed.

@@ -36,10 +36,6 @@ travis: clean travis-background-keepalive \
     install-deps-development \
     all
 
-
-
-
-
 ## Install dependencies (development version)
 install-deps-development:
 	bundle install
@@ -54,7 +50,6 @@ endif
 
 ## Pre-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
 pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignments \
-    check-for-missing-rpc-summaries \
     check-for-missing-copyright-licenses \
     check-bundle \
     check-for-english-in-en-dir \
@@ -68,7 +63,7 @@ post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-fo
     check-for-missing-anchors check-for-broken-markdown-reference-links \
     check-for-broken-kramdown-tables check-for-duplicate-header-ids \
     check-for-headers-containing-auto-link check-for-missing-subhead-links \
-	check-for-empty-title-tag \
+    check-for-empty-title-tag \
     check-for-subheading-anchors \
     check-jshint \
     check-for-javascript-in-svgs
@@ -219,14 +214,6 @@ check-for-missing-copyright-licenses:
               grep -iL 'This file is licensed' $$file ; \
             fi ; \
           done | eval $(ERROR_ON_OUTPUT)
-
-check-for-missing-rpc-summaries:
-## Make sure the Quick Reference section has a summary for each RPC we
-## have documented
-	$S for f in _data/devdocs/en/bitcoin-core/rpcs/rpcs/*.md ;\
-	do grep -q "\[$$( grep '^##### ' $$f | sed 's/^##### *\([a-zA-Z]*\).*/\1/')\]\[" _data/devdocs/en/bitcoin-core/rpcs/quick-reference.md \
-	|| echo 'missing summary for '$$f', you need to add the summary to _data/devdocs/en/bitcoin-core/rpcs/quick-ref.md and run make manual-updates' \
-	; done | eval $(ERROR_ON_OUTPUT)
 
 manual-update-summaries-file:
 ## A manually-run command to update the summaries file (currently only

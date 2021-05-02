@@ -500,7 +500,7 @@ function removeCheckboxFilter(filterValue) {
   onWalletSelectorInputChange(filter);
 }
 
-function setListners() {
+function setListeners() {
   var navigationButtons = Array.prototype.slice.call(document.querySelectorAll('.js-helper-nav-btn'));
   navigationButtons.forEach(function(button) {
     button.addEventListener('click', function() {
@@ -619,6 +619,6 @@ function displayRelevantContent() {
 function init() {
   checkOldUrls();
   displayRelevantContent();
-  setListners();
+  setListeners();
 }
 init();
