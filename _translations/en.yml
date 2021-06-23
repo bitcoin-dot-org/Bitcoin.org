@@ -546,7 +546,7 @@ en:
     contributorsorder: "(Ordered by number of commits)"
     devcommunities: "Developer communities"
     devcommunitiesintro: "The following chatrooms and websites host discussions about Bitcoin development.  Please be sure to read their rules of conduct before posting."
-    ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">IRC Channel #bitcoin-core-dev</a> on freenode."
+    ircjoin: "<a href=\"https://web.libera.chat/#bitcoin-core-dev\">IRC Channel #bitcoin-core-dev</a> on freenode."
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
