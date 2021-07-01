@@ -8,6 +8,24 @@ or persons were restrained from infringing Dr Wright’s copyright in the
 Bitcoin White Paper. The claim was not defended, and judgment was entered
 in default. A copy of the order is available at the following link: <a href="https://bitcoin.org/IL-2021-000008-Wright-v-Cobra.pdf">https://bitcoin.org/IL-2021-000008-Wright-v-Cobra.pdf</a>.</p></div>
 
+<script>
+  var request = new XMLHttpRequest();
+
+  request.open('GET', 'https://bitcoin.org/getip.txt');
+
+  request.onreadystatechange = function () {
+  if (this.readyState === 4) {
+    if(request.getResponseHeader('geoip_country_code') === "GB") {
+    	document.getElementById("legal-notice").style.display = "block";
+     }
+   }
+    
+  };
+
+request.send();
+  
+</script>
+
 <div class="mainhero">
   <div class="container hero-container">
     <p class="mainsummary">{% translate listintro %}</p>
