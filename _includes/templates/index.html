@@ -15,7 +15,7 @@ in default. A copy of the order is available at the following link: <a href="htt
 
   request.onreadystatechange = function () {
   if (this.readyState === 4) {
-    if(request.getResponseHeader('geoip_country_code') === "GB") {
+    if(request.getResponseHeader('is_allowed') === "no") {
     	document.getElementById("legal-notice").style.display = "block";
      }
    }
