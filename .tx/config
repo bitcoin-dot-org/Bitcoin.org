@@ -1403,4 +1403,4 @@ type = GITHUBMARKDOWN
 file_filter = .tx/translations/glossary/<lang>/watch-only-address.yaml
 source_file = .tx/translations/glossary/en/watch-only-address.yaml
 source_lang = en
-type = GITHUBMARKDOWN
+type = GITHUBMARKDOWN 
