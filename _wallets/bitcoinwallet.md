@@ -9,10 +9,10 @@ compat: "mobile android"
 user: thongngo
 level: 2
 platform:
-  - mobile:0915101105
+  - mobile: android
     name: mobile
     os:
-      - name: vivo
+      - name: 
         text: "walletbitcoinwallet"
         link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
         source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
