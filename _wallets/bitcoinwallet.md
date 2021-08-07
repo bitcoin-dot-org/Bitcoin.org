@@ -6,13 +6,13 @@ id: bitcoinwallet
 title: "Bitcoin Wallet"
 titleshort: "Bitcoin Wallet"
 compat: "mobile android"
-user: beginner
+user: thongngo
 level: 2
 platform:
-  - mobile:
+  - mobile:0915101105
     name: mobile
     os:
-      - name: android
+      - name: vivo
         text: "walletbitcoinwallet"
         link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
         source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
