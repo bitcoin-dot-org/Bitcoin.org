@@ -1,0 +1,10 @@
+04:19:56 [main] Context - Creating bitcoinj 0.15.10 context.
+04:19:56 [main] WalletApplication - === starting app using flavor: prod, build type: release, network: org.bitcoin.production
+04:19:56 [main] WalletApplication - created notification channels, took 18.14 ms
+04:19:56 [main] BootstrapReceiver - got broadcast: Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=de.schildbach.wallet/.service.BootstrapReceiver (has extras) }
+04:19:56 [AsyncTask #1] StartBlockchainService - last used 5772 minutes ago and expecting large data, rescheduling block chain sync in roughly 720 minutes
+19:53:11 [main] Context - Creating bitcoinj 0.15.10 context.
+19:53:11 [main] WalletApplication - === starting app using flavor: prod, build type: release, network: org.bitcoin.production
+19:53:11 [main] WalletApplication - created notification channels, took 8.796 ms
+19:53:11 [main] BootstrapReceiver - got broadcast: Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=de.schildbach.wallet/.service.BootstrapReceiver (has extras) }
+19:53:11 [AsyncTask #1] StartBlockchainService - last used 6705 minutes ago and expecting large data, rescheduling block chain sync in roughly 720 minutes

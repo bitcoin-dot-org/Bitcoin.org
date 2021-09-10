@@ -1,0 +1,1062 @@
+13:44:03 [main] Context - Creating bitcoinj 0.15.9 context.
+13:44:03 [main] WalletApplication - === starting app using flavor: prod, build type: release, network: org.bitcoin.production
+13:44:03 [main] WalletApplication - created notification channels, took 10.58 ms
+13:44:03 [main] Configuration - just being used - last used 4496 minutes ago
+13:44:03 [pool-1-thread-1] WalletApplication - BIP39 wordlist loaded from: 'bip39-wordlist.txt', took 16.29 ms
+13:44:03 [pool-1-thread-1] WalletApplication - wallet loaded from: '/data/user/0/de.schildbach.wallet/files/wallet-protobuf', took 216.1 ms
+13:44:04 [OkHttp https://api.coingecko.com/...] ExchangeRatesRepository - fetched exchange rates from https://api.coingecko.com/api/v3/exchange_rates, took 674.4 ms
+13:44:04 [main] BlockchainService - acquiring WakeLock{2a46b02 held=false, refCount=0}
+13:44:04 [main] BlockchainService - service start command: de.schildbach.wallet.service.cancel_coins_received
+13:44:04 [main] AbstractBlockChain - chain head is at height 671737:
+ block: 
+   hash: 0000000000000000000a724c221743603da72f01840d9746af3d351bd40a3179
+   version: 536870912 (BIP34, BIP66, BIP65)
+   previous block: 0000000000000000000191e55c4a717a96ab512be13c3634e6db8b4359525d8a
+   time: 1614021125 (2021-02-22T19:12:05Z)
+   difficulty target (nBits): 386725091
+   nonce: 1260462680
+
+13:44:04 [main] BlockchainService - active network is up, type: WIFI, state: CONNECTED/CONNECTED
+13:44:04 [main] BlockchainService - creating org.bitcoinj.core.PeerGroup@5ab0bba, sync mode: CONNECTION_FILTER
+13:44:04 [main] BlockchainService - adding random peers from the P2P network
+13:44:04 [main] BlockchainService - starting org.bitcoinj.core.PeerGroup@5ab0bba asynchronously
+13:44:04 [main] BlockchainService - active network is up, type: WIFI, state: CONNECTED/CONNECTED
+13:44:04 [PeerGroup Thread] PeerGroup - Starting ...
+13:44:04 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.bitcoin.sipa.be
+13:44:04 [Multiplexing discovery] HttpDiscovery - Requesting BLOOM, WITNESS peers from http://httpseed.bitcoin.schildbach.de/peers?srvmask=12
+13:44:04 [Multiplexing discovery] HttpDiscovery - Requesting BLOOM, WITNESS peers from http://lightning-wallet.com:8081/peers?srvmask=12
+13:44:04 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.dnsseed.bluematt.me
+13:44:04 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.bitcoin.jonasschnelli.ch
+13:44:04 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.dnsseed.bitcoin.dashjr.org
+13:44:04 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.dnsseed.emzy.de
+13:44:04 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.bitcoin.sprovoost.nl
+13:44:04 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.btc.petertodd.org
+13:44:04 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.bitcoinstats.com
+13:44:04 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.sipa.be doesn't appear to support service bit filtering: Unable to resolve host "xc.seed.bitcoin.sipa.be": No address associated with hostname
+13:44:04 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.sipa.be
+13:44:04 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.jonasschnelli.ch doesn't appear to support service bit filtering: Unable to resolve host "xc.seed.bitcoin.jonasschnelli.ch": No address associated with hostname
+13:44:04 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.jonasschnelli.ch
+13:44:04 [Multiplexing discovery] DnsDiscovery - Seed dnsseed.bitcoin.dashjr.org doesn't appear to support service bit filtering: Unable to resolve host "xc.dnsseed.bitcoin.dashjr.org": No address associated with hostname
+13:44:04 [Multiplexing discovery] DnsDiscovery - Requesting all peers from dnsseed.bitcoin.dashjr.org
+13:44:05 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.sprovoost.nl doesn't appear to support service bit filtering: Unable to resolve host "xc.seed.bitcoin.sprovoost.nl": No address associated with hostname
+13:44:05 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.sprovoost.nl
+13:44:05 [Multiplexing discovery] DnsDiscovery - Seed seed.btc.petertodd.org doesn't appear to support service bit filtering: Unable to resolve host "xc.seed.btc.petertodd.org": No address associated with hostname
+13:44:05 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.btc.petertodd.org
+13:44:05 [Multiplexing discovery] DnsDiscovery - Seed dnsseed.emzy.de doesn't appear to support service bit filtering: Unable to resolve host "xc.dnsseed.emzy.de": No address associated with hostname
+13:44:05 [Multiplexing discovery] DnsDiscovery - Requesting all peers from dnsseed.emzy.de
+13:44:05 [Multiplexing discovery] DnsDiscovery - Got 24 peers from seed.bitcoin.jonasschnelli.ch
+13:44:05 [Multiplexing discovery] DnsDiscovery - Got 23 peers from dnsseed.bitcoin.dashjr.org
+13:44:05 [Multiplexing discovery] DnsDiscovery - Got 25 peers from seed.bitcoin.sipa.be
+13:44:05 [Multiplexing discovery] DnsDiscovery - Got 23 peers from seed.bitcoin.sprovoost.nl
+13:44:05 [Multiplexing discovery] DnsDiscovery - Got 26 peers from dnsseed.emzy.de
+13:44:05 [Multiplexing discovery] DnsDiscovery - Got 21 peers from xc.dnsseed.bluematt.me
+13:44:05 [Multiplexing discovery] DnsDiscovery - Got 23 peers from seed.btc.petertodd.org
+13:44:05 [Multiplexing discovery] DnsDiscovery - Got 25 peers from xc.seed.bitcoinstats.com
+13:44:05 [AsyncTask #1] AlertDialogsFragment - according to "https://wallet.schildbach.de/version?package=de.schildbach.wallet&installer=com.vivo.appstore&sdk=29&current=808", strongly recommended minimum app version is "807"
+13:44:05 [AsyncTask #1] AlertDialogsFragment - according to "https://wallet.schildbach.de/version?package=de.schildbach.wallet&installer=com.vivo.appstore&sdk=29&current=808", minimum security patch level for bluetooth is 2017-09-01
+13:44:05 [AsyncTask #1] AlertDialogsFragment - all good, no alert dialog shown
+13:44:08 [Multiplexing discovery] HttpDiscovery - Got 30 peers from http://httpseed.bitcoin.schildbach.de/peers?srvmask=12
+13:44:08 [PeerGroup Thread] MultiplexingDiscovery - Seed org.bitcoinj.net.discovery.HttpDiscovery@84cf7cd: failed to look up: org.bitcoinj.net.discovery.PeerDiscoveryException: java.net.ConnectException: Failed to connect to lightning-wallet.com/5.9.83.143:8081
+13:44:08 [PeerGroup Thread] PeerGroup - Peer discovery took 3.472 s and returned 220 items from 1 discoverers
+13:44:08 [PeerGroup Thread] PeerGroup - Waiting 4474 ms before next connect attempt to [108.168.125.57]:8333
+13:44:12 [PeerGroup Thread] PeerGroup - Attempting connection to [111.90.140.46]:8333     (0 connected, 1 pending, 6 max)
+13:44:12 [PeerGroup Thread] PeerGroup - Attempting connection to [35.221.214.98]:8333     (0 connected, 2 pending, 6 max)
+13:44:12 [PeerGroup Thread] PeerGroup - Attempting connection to [143.110.252.124]:8333     (0 connected, 3 pending, 6 max)
+13:44:12 [PeerGroup Thread] PeerGroup - Attempting connection to [165.22.113.168]:8333     (0 connected, 4 pending, 6 max)
+13:44:12 [PeerGroup Thread] PeerGroup - Attempting connection to [176.9.84.209]:8333     (0 connected, 5 pending, 6 max)
+13:44:12 [PeerGroup Thread] PeerGroup - Attempting connection to [163.172.53.103]:8333     (0 connected, 6 pending, 6 max)
+13:44:13 [NioClientManager] NioClientManager - Connected to dnsseed.emzy.de/35.221.214.98:8333
+13:44:13 [NioClientManager] Peer - Announcing to dnsseed.emzy.de/35.221.214.98:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:13 [NioClientManager] NioClientManager - Connected to dnsseed.bitcoin.dashjr.org/111.90.140.46:8333
+13:44:13 [NioClientManager] Peer - Announcing to dnsseed.bitcoin.dashjr.org/111.90.140.46:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:13 [NioClientManager] Peer - Peer{[111.90.140.46]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:13, height=671978}
+13:44:13 [NioClientManager] PeerGroup - Peer{[111.90.140.46]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:13, height=671978}: New peer      (1 connected, 5 pending, 6 max)
+13:44:13 [NioClientManager] Peer - Peer{[111.90.140.46]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:13, height=671978}: Sending Bloom filter and querying mempool
+13:44:13 [NioClientManager] NioClientManager - Connected to dnsseed.bitcoin.dashjr.org/143.110.252.124:8333
+13:44:13 [NioClientManager] Peer - Announcing to dnsseed.bitcoin.dashjr.org/143.110.252.124:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:13 [NioClientManager] NioClientManager - Connected to seed.bitcoin.sprovoost.nl/176.9.84.209:8333
+13:44:13 [NioClientManager] Peer - Announcing to seed.bitcoin.sprovoost.nl/176.9.84.209:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:13 [NioClientManager] NioClientManager - Connected to seed.bitcoin.jonasschnelli.ch/163.172.53.103:8333
+13:44:13 [NioClientManager] Peer - Announcing to seed.bitcoin.jonasschnelli.ch/163.172.53.103:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:13 [NioClientManager] NioClientManager - Connected to /165.22.113.168:8333
+13:44:13 [NioClientManager] Peer - Announcing to /165.22.113.168:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:13 [NioClientManager] Peer - Peer{[143.110.252.124]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:14, height=671978}
+13:44:13 [NioClientManager] PeerGroup - Peer{[143.110.252.124]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:14, height=671978}: New peer      (2 connected, 4 pending, 6 max)
+13:44:13 [NioClientManager] Peer - Peer{[143.110.252.124]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:14, height=671978}: Sending Bloom filter and querying mempool
+13:44:13 [NioClientManager] Peer - Peer{[163.172.53.103]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:14, height=671978}
+13:44:13 [NioClientManager] PeerGroup - Peer{[163.172.53.103]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:14, height=671978}: New peer      (3 connected, 3 pending, 6 max)
+13:44:13 [NioClientManager] Peer - Peer{[163.172.53.103]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:14, height=671978}: Sending Bloom filter and querying mempool
+13:44:13 [NioClientManager] Peer - Peer{[165.22.113.168]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:14, height=671978}
+13:44:13 [NioClientManager] PeerGroup - Peer{[165.22.113.168]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:14, height=671978}: New peer      (4 connected, 2 pending, 6 max)
+13:44:13 [NioClientManager] Peer - Peer{[165.22.113.168]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:14, height=671978}: Sending Bloom filter and querying mempool
+13:44:13 [NioClientManager] PeerGroup - Setting download peer: Peer{[143.110.252.124]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:14, height=671978}
+13:44:14 [NioClientManager] PeerGroup - [163.172.53.103]:8333: Peer died      (3 connected, 2 pending, 6 max)
+13:44:14 [PeerGroup Thread] PeerGroup - Waiting 1000 ms before next connect attempt to [70.19.77.94]:8333
+13:44:14 [NioClientManager] Peer - Peer{[35.221.214.98]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:15, height=671978}
+13:44:14 [NioClientManager] PeerGroup - Peer{[35.221.214.98]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:15, height=671978}: New peer      (4 connected, 1 pending, 6 max)
+13:44:14 [NioClientManager] Peer - Peer{[35.221.214.98]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:15, height=671978}: Sending Bloom filter and querying mempool
+13:44:14 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 7 blocks/sec, 1 tx/sec, 18897 pre-filtered tx/sec, avg/last 2.09/12.20 kilobytes per sec, chain/common height 671744/671978 (warming up 14 more seconds)
+13:44:15 [PeerGroup Thread] PeerGroup - Attempting connection to [52.78.27.230]:8333     (4 connected, 2 pending, 6 max)
+13:44:15 [NioClientManager] NioClientManager - Connected to seed.btc.petertodd.org/52.78.27.230:8333
+13:44:15 [NioClientManager] Peer - Announcing to seed.btc.petertodd.org/52.78.27.230:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:15 [NioClientManager] Peer - Peer{[52.78.27.230]:8333, version=70015, subVer=/Satoshi:0.20.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:16, height=671978}
+13:44:15 [NioClientManager] Peer - Peer{[52.78.27.230]:8333, version=70015, subVer=/Satoshi:0.20.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:16, height=671978}: Peer doesn't support these required services: BLOOM
+13:44:15 [NioClientManager] PeerGroup - [52.78.27.230]:8333: Peer died      (4 connected, 1 pending, 6 max)
+13:44:15 [PeerGroup Thread] PeerGroup - Waiting 999 ms before next connect attempt to [73.230.167.70]:8333
+13:44:15 [NioClientManager] PeerSocketHandler - [52.78.27.230]:8333 - 
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:15 [NioClientManager] WalletApplication - bitcoinj uncaught exception
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:15 [NioClientManager] ConnectionHandler - Error handling SelectionKey: java.lang.IllegalStateException 
+java.lang.IllegalStateException: null
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:495)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:239)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:15 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 14 blocks/sec, 1 tx/sec, 32844 pre-filtered tx/sec, avg/last 2.23/4.35 kilobytes per sec, chain/common height 671758/671978 (warming up 13 more seconds)
+13:44:16 [PeerGroup Thread] PeerGroup - Attempting connection to [212.51.146.9]:8333     (4 connected, 2 pending, 6 max)
+13:44:16 [NioClientManager] NioClientManager - Connected to dnsseed.emzy.de/212.51.146.9:8333
+13:44:16 [NioClientManager] Peer - Announcing to dnsseed.emzy.de/212.51.146.9:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:16 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 9 blocks/sec, 1 tx/sec, 19694 pre-filtered tx/sec, avg/last 2.21/1.03 kilobytes per sec, chain/common height 671767/671978 (warming up 12 more seconds)
+13:44:17 [NioClientManager] Peer - Peer{[212.51.146.9]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:13, height=671978}
+13:44:17 [NioClientManager] PeerGroup - Peer{[212.51.146.9]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:13, height=671978}: New peer      (5 connected, 1 pending, 6 max)
+13:44:17 [NioClientManager] Peer - Peer{[212.51.146.9]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:13, height=671978}: Sending Bloom filter and querying mempool
+13:44:17 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671770, date 2021-02-23T01:46:29Z, hash 000000000000000000055615594928c319d4154ad32f226611a448199bd85d59
+13:44:17 [NioClientManager] PeerGroup - [212.51.146.9]:8333: Peer died      (4 connected, 1 pending, 6 max)
+13:44:17 [PeerGroup Thread] PeerGroup - Waiting 999 ms before next connect attempt to [212.227.39.1]:8333
+13:44:17 [Wallet autosave thread] WalletFiles - Save completed in 78.38 ms
+13:44:17 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 12 blocks/sec, 3 tx/sec, 20732 pre-filtered tx/sec, avg/last 2.21/1.59 kilobytes per sec, chain/common height 671779/671978 (warming up 11 more seconds)
+13:44:18 [PeerGroup Thread] PeerGroup - Attempting connection to [5.9.105.53]:8333     (4 connected, 2 pending, 6 max)
+13:44:18 [NioClientManager] NioClientManager - Connected to dnsseed.emzy.de/5.9.105.53:8333
+13:44:18 [NioClientManager] Peer - Announcing to dnsseed.emzy.de/5.9.105.53:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:18 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 15 blocks/sec, 7 tx/sec, 33380 pre-filtered tx/sec, avg/last 2.30/3.44 kilobytes per sec, chain/common height 671794/671978 (warming up 10 more seconds)
+13:44:19 [NioClientManager] Peer - Peer{[176.9.84.209]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:43:25, height=671978}
+13:44:19 [NioClientManager] Peer - Peer{[176.9.84.209]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:43:25, height=671978}: Peer doesn't support these required services: BLOOM
+13:44:19 [NioClientManager] PeerGroup - [176.9.84.209]:8333: Peer died      (4 connected, 1 pending, 6 max)
+13:44:19 [PeerGroup Thread] PeerGroup - Waiting 1500 ms before next connect attempt to [212.227.39.1]:8333
+13:44:19 [NioClientManager] ConnectionHandler - Error handling SelectionKey: java.nio.channels.CancelledKeyException 
+java.nio.channels.CancelledKeyException: null
+	at sun.nio.ch.SelectionKeyImpl.ensureValid(SelectionKeyImpl.java:73)
+	at sun.nio.ch.SelectionKeyImpl.readyOps(SelectionKeyImpl.java:87)
+	at java.nio.channels.SelectionKey.isWritable(SelectionKey.java:312)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:244)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:19 [NioClientManager] Peer - Peer{[5.9.105.53]:8333, version=70015, subVer=/Satoshi:0.15.0.1/, services=13 (NETWORK, BLOOM, WITNESS), time=2021-02-24 20:44:19, height=671978}
+13:44:19 [NioClientManager] PeerGroup - Peer{[5.9.105.53]:8333, version=70015, subVer=/Satoshi:0.15.0.1/, services=13 (NETWORK, BLOOM, WITNESS), time=2021-02-24 20:44:19, height=671978}: New peer      (5 connected, 0 pending, 6 max)
+13:44:19 [NioClientManager] Peer - Peer{[5.9.105.53]:8333, version=70015, subVer=/Satoshi:0.15.0.1/, services=13 (NETWORK, BLOOM, WITNESS), time=2021-02-24 20:44:19, height=671978}: Sending Bloom filter and querying mempool
+13:44:19 [NioClientManager] PeerGroup - [5.9.105.53]:8333: Peer died      (4 connected, 0 pending, 6 max)
+13:44:19 [PeerGroup Thread] PeerGroup - Waiting 1000 ms before next connect attempt to [103.99.170.210]:8333
+13:44:19 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 12 blocks/sec, 2 tx/sec, 30019 pre-filtered tx/sec, avg/last 2.30/1.63 kilobytes per sec, chain/common height 671806/671978 (warming up 9 more seconds)
+13:44:20 [PeerGroup Thread] PeerGroup - Attempting connection to [176.9.103.216]:8333     (4 connected, 1 pending, 6 max)
+13:44:20 [PeerGroup Thread] PeerGroup - Attempting connection to [103.99.170.210]:8333     (4 connected, 2 pending, 6 max)
+13:44:20 [PeerGroup Thread] PeerGroup - Attempting connection to [212.227.39.1]:8333     (4 connected, 3 pending, 6 max)
+13:44:20 [NioClientManager] NioClientManager - Connected to seed.bitcoin.sipa.be/103.99.170.210:8333
+13:44:20 [NioClientManager] Peer - Announcing to seed.bitcoin.sipa.be/103.99.170.210:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:20 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671816, date 2021-02-23T11:38:18Z, hash 00000000000000000001b99bc2ff04b574427712948a05d0d9563dca86071a73
+13:44:20 [Wallet autosave thread] WalletFiles - Save completed in 52.23 ms
+13:44:20 [NioClientManager] NioClientManager - Failed to connect with exception: java.net.ConnectException: Connection refused
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:762)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:20 [NioClientManager] PeerGroup - [176.9.103.216]:8333: Peer died      (4 connected, 2 pending, 6 max)
+13:44:20 [NioClientManager] Peer - Peer{[103.99.170.210]:8333, version=70015, subVer=/Satoshi:0.20.0(@wiz)/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:21, height=671978}
+13:44:20 [NioClientManager] PeerGroup - Peer{[103.99.170.210]:8333, version=70015, subVer=/Satoshi:0.20.0(@wiz)/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:21, height=671978}: New peer      (5 connected, 1 pending, 6 max)
+13:44:20 [NioClientManager] Peer - Peer{[103.99.170.210]:8333, version=70015, subVer=/Satoshi:0.20.0(@wiz)/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:21, height=671978}: Sending Bloom filter and querying mempool
+13:44:20 [NioClientManager] NioClientManager - Connected to seed.btc.petertodd.org/212.227.39.1:8333
+13:44:20 [NioClientManager] Peer - Announcing to seed.btc.petertodd.org/212.227.39.1:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:20 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 16 blocks/sec, 1 tx/sec, 34615 pre-filtered tx/sec, avg/last 2.31/1.58 kilobytes per sec, chain/common height 671822/671978 (warming up 8 more seconds)
+13:44:21 [NioClientManager] Peer - Peer{[212.227.39.1]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:21, height=671978}
+13:44:21 [NioClientManager] PeerGroup - Peer{[212.227.39.1]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:21, height=671978}: New peer      (6 connected, 0 pending, 6 max)
+13:44:21 [NioClientManager] Peer - Peer{[212.227.39.1]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:21, height=671978}: Sending Bloom filter and querying mempool
+13:44:21 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 6 blocks/sec, 0 tx/sec, 15878 pre-filtered tx/sec, avg/last 2.25/0.47 kilobytes per sec, chain/common height 671828/671978 (warming up 7 more seconds)
+13:44:22 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 11 blocks/sec, 1 tx/sec, 24990 pre-filtered tx/sec, avg/last 2.42/5.01 kilobytes per sec, chain/common height 671839/671978 (warming up 6 more seconds)
+13:44:23 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671849, date 2021-02-23T17:53:00Z, hash 00000000000000000006fbcaeab00ef31451b94a213b166e2c279837904c190c
+13:44:23 [Wallet autosave thread] WalletFiles - Save completed in 42.76 ms
+13:44:23 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 12 blocks/sec, 1 tx/sec, 27029 pre-filtered tx/sec, avg/last 3.14/15.89 kilobytes per sec, chain/common height 671851/671978 (warming up 5 more seconds)
+13:44:24 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 15 blocks/sec, 2 tx/sec, 36150 pre-filtered tx/sec, avg/last 3.15/1.78 kilobytes per sec, chain/common height 671866/671978 (warming up 4 more seconds)
+13:44:25 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 15 blocks/sec, 2 tx/sec, 35558 pre-filtered tx/sec, avg/last 6.50/68.50 kilobytes per sec, chain/common height 671881/671978 (warming up 3 more seconds)
+13:44:26 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671892, date 2021-02-24T01:05:23Z, hash 00000000000000000007d16d52f4c78693fd1e1549a9cfe1d61c7cf4adb0b016
+13:44:26 [Wallet autosave thread] WalletFiles - Save completed in 26.08 ms
+13:44:26 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 12 blocks/sec, 1 tx/sec, 27888 pre-filtered tx/sec, avg/last 9.66/64.80 kilobytes per sec, chain/common height 671893/671978 (warming up 2 more seconds)
+13:44:27 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 1 tx/sec, 21138 pre-filtered tx/sec, avg/last 9.63/1.01 kilobytes per sec, chain/common height 671903/671978 (warming up 1 more seconds)
+13:44:27 [AbstractTimeoutHandler timeouts] PeerSocketHandler - [176.9.84.209]:8333: Timed out
+13:44:28 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 9 blocks/sec, 0 tx/sec, 16962 pre-filtered tx/sec, avg/last 9.59/0.70 kilobytes per sec, chain/common height 671912/671978 (warming up 0 more seconds)
+13:44:29 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671922, date 2021-02-24T06:45:51Z, hash 00000000000000000001f8e2bc6c6097f2a3d9f3c6ce62cdc2f8c1d54151164e
+13:44:29 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 1 tx/sec, 23942 pre-filtered tx/sec, avg/last 9.57/1.14 kilobytes per sec, chain/common height 671922/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:44:29 [Wallet autosave thread] WalletFiles - Save completed in 15.60 ms
+13:44:30 [AbstractTimeoutHandler timeouts] PeerSocketHandler - [52.78.27.230]:8333: Timed out
+13:44:30 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 8 blocks/sec, 1 tx/sec, 19683 pre-filtered tx/sec, avg/last 9.54/0.99 kilobytes per sec, chain/common height 671930/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:44:31 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 9 blocks/sec, 0 tx/sec, 20025 pre-filtered tx/sec, avg/last 9.50/0.70 kilobytes per sec, chain/common height 671939/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:44:32 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 4 blocks/sec, 0 tx/sec, 8890 pre-filtered tx/sec, avg/last 9.43/0.31 kilobytes per sec, chain/common height 671943/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:44:33 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671943, date 2021-02-24T08:40:35Z, hash 0000000000000000000286fc31472f2272ef9407773a4ba75581475580dfecd0
+13:44:33 [Wallet autosave thread] WalletFiles - Save completed in 26.86 ms
+13:44:33 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 0 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 9.36/0.00 kilobytes per sec, chain/common height 671943/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:44:34 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 4 blocks/sec, 0 tx/sec, 8232 pre-filtered tx/sec, avg/last 8.76/0.31 kilobytes per sec, chain/common height 671947/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:44:35 [AbstractTimeoutHandler timeouts] PeerSocketHandler - [176.9.103.216]:8333: Timed out
+13:44:35 [AbstractTimeoutHandler timeouts] PeerGroup - [176.9.103.216]:8333: Peer died      (6 connected, 0 pending, 6 max)
+13:44:35 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 9 blocks/sec, 2 tx/sec, 19664 pre-filtered tx/sec, avg/last 8.95/8.05 kilobytes per sec, chain/common height 671956/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:44:36 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 9 blocks/sec, 3 tx/sec, 18202 pre-filtered tx/sec, avg/last 9.79/17.97 kilobytes per sec, chain/common height 671965/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:44:37 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671970, date 2021-02-24T11:34:51Z, hash 00000000000000000004b376aa4e40568ec4c0b48d0a96abca6b38abf6a3d05d
+13:44:37 [Wallet autosave thread] WalletFiles - Save completed in 29.16 ms
+13:44:37 [main] DiagnosticsFragment - manually initiated block chain reset
+13:44:37 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 9 blocks/sec, 0 tx/sec, 20983 pre-filtered tx/sec, avg/last 9.75/0.70 kilobytes per sec, chain/common height 671974/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:44:37 [main] BlockchainService - service start command: de.schildbach.wallet.service.reset_blockchain
+13:44:37 [main] BlockchainService - will remove blockchain on service shutdown
+13:44:37 [PeerGroup Thread] PeerGroup - Stopping ...
+13:44:37 [main] BlockchainService - stopping org.bitcoinj.core.PeerGroup@5ab0bba asynchronously
+13:44:38 [main] WalletFiles - Saving wallet; last seen block is height 671974, date 2021-02-24T12:32:59Z, hash 0000000000000000000034644859e7534b17e409fa3f3496fa701fe29360269e
+13:44:37 [PeerGroup Thread] PeerGroup - Unsetting download peer: Peer{[143.110.252.124]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:14, height=671978}
+13:44:38 [PeerGroup Thread] PeerGroup - Stopped, took 10.71 ms.
+13:44:38 [main] WalletFiles - Save completed in 10.49 ms
+13:44:38 [main] WalletApplication - wallet saved to: '/data/user/0/de.schildbach.wallet/files/wallet-protobuf', took 11.63 ms
+13:44:38 [main] BlockchainService - removing blockchain
+13:44:38 [main] StartBlockchainService - last used 0 minutes ago, rescheduling block chain sync in roughly 15 minutes
+13:44:38 [main] BlockchainService - released WakeLock{2a46b02 held=false, refCount=0}
+13:44:38 [main] BlockchainService - service was up for 33.35 s
+13:44:39 [main] BlockchainService - acquiring WakeLock{f46e95c held=false, refCount=0}
+13:44:39 [main] BlockchainService - service start command: de.schildbach.wallet.service.cancel_coins_received
+13:44:39 [main] BlockchainService - blockchain does not exist, resetting wallet
+13:44:39 [main] SPVBlockStore - Creating new SPV block chain file /data/user/0/de.schildbach.wallet/app_blockstore/blockchain
+13:44:39 [main] BlockchainService - loading checkpoints for birthdate 2021-02-21T10:47:26Z from 'checkpoints.txt'
+13:44:39 [main] CheckpointManager - Attempting to initialize a new block store with a checkpoint for time 1613299646 (2021-02-14T10:47:26Z)
+13:44:39 [main] CheckpointManager - Read 326 checkpoints up to time 2020-11-16T17:01:59Z, hash is c7e8309d9664a16257b85b2b0678edd6bb7757364e081233b78ccc47b4b1d63f
+13:44:39 [main] BlockchainService - checkpoints loaded, took 39.96 ms
+13:44:39 [main] AbstractBlockChain - chain head is at height 657216:
+ block: 
+   hash: 00000000000000000004a6d259923e7eaad54d1ab1796d52c869ab1863191734
+   version: 536870912 (BIP34, BIP66, BIP65)
+   previous block: 000000000000000000090386439b3e1c7dc56d2e450694e910b366895f05b9ef
+   time: 1605546119 (2020-11-16T17:01:59Z)
+   difficulty target (nBits): 386924253
+   nonce: 949245794
+
+13:44:39 [main] BlockchainService - active network is up, type: WIFI, state: CONNECTED/CONNECTED
+13:44:39 [main] BlockchainService - creating org.bitcoinj.core.PeerGroup@ae3551, sync mode: CONNECTION_FILTER
+13:44:39 [main] BlockchainService - adding random peers from the P2P network
+13:44:39 [main] BlockchainService - starting org.bitcoinj.core.PeerGroup@ae3551 asynchronously
+13:44:39 [main] BlockchainService - active network is up, type: WIFI, state: CONNECTED/CONNECTED
+13:44:39 [PeerGroup Thread] PeerGroup - Starting ...
+13:44:39 [Multiplexing discovery] HttpDiscovery - Requesting BLOOM, WITNESS peers from http://httpseed.bitcoin.schildbach.de/peers?srvmask=12
+13:44:39 [Multiplexing discovery] HttpDiscovery - Requesting BLOOM, WITNESS peers from http://lightning-wallet.com:8081/peers?srvmask=12
+13:44:39 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.btc.petertodd.org
+13:44:39 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.bitcoinstats.com
+13:44:39 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.bitcoin.sipa.be
+13:44:39 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.dnsseed.emzy.de
+13:44:39 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.dnsseed.bluematt.me
+13:44:39 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.bitcoin.jonasschnelli.ch
+13:44:39 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.bitcoin.sprovoost.nl
+13:44:39 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.dnsseed.bitcoin.dashjr.org
+13:44:39 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.jonasschnelli.ch doesn't appear to support service bit filtering: Unable to resolve host "xc.seed.bitcoin.jonasschnelli.ch": No address associated with hostname
+13:44:39 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.jonasschnelli.ch
+13:44:39 [Multiplexing discovery] DnsDiscovery - Seed seed.btc.petertodd.org doesn't appear to support service bit filtering: Unable to resolve host "xc.seed.btc.petertodd.org": No address associated with hostname
+13:44:39 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.btc.petertodd.org
+13:44:39 [Multiplexing discovery] DnsDiscovery - Seed dnsseed.emzy.de doesn't appear to support service bit filtering: Unable to resolve host "xc.dnsseed.emzy.de": No address associated with hostname
+13:44:39 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.sprovoost.nl doesn't appear to support service bit filtering: Unable to resolve host "xc.seed.bitcoin.sprovoost.nl": No address associated with hostname
+13:44:39 [Multiplexing discovery] DnsDiscovery - Requesting all peers from dnsseed.emzy.de
+13:44:39 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.sprovoost.nl
+13:44:39 [Multiplexing discovery] DnsDiscovery - Seed dnsseed.bitcoin.dashjr.org doesn't appear to support service bit filtering: Unable to resolve host "xc.dnsseed.bitcoin.dashjr.org": No address associated with hostname
+13:44:39 [Multiplexing discovery] DnsDiscovery - Requesting all peers from dnsseed.bitcoin.dashjr.org
+13:44:39 [Multiplexing discovery] DnsDiscovery - Got 21 peers from xc.dnsseed.bluematt.me
+13:44:39 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.sipa.be doesn't appear to support service bit filtering: Unable to resolve host "xc.seed.bitcoin.sipa.be": No address associated with hostname
+13:44:39 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.sipa.be
+13:44:39 [Multiplexing discovery] DnsDiscovery - Got 25 peers from xc.seed.bitcoinstats.com
+13:44:39 [Multiplexing discovery] DnsDiscovery - Got 24 peers from seed.bitcoin.jonasschnelli.ch
+13:44:39 [Multiplexing discovery] DnsDiscovery - Got 26 peers from dnsseed.emzy.de
+13:44:39 [Multiplexing discovery] DnsDiscovery - Got 23 peers from seed.btc.petertodd.org
+13:44:39 [Multiplexing discovery] DnsDiscovery - Got 23 peers from seed.bitcoin.sprovoost.nl
+13:44:39 [Multiplexing discovery] DnsDiscovery - Got 23 peers from dnsseed.bitcoin.dashjr.org
+13:44:39 [Multiplexing discovery] DnsDiscovery - Got 25 peers from seed.bitcoin.sipa.be
+13:44:40 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height -1, date unknown, hash null
+13:44:40 [Wallet autosave thread] WalletFiles - Save completed in 25.79 ms
+13:44:44 [PeerGroup Thread] MultiplexingDiscovery - Seed org.bitcoinj.net.discovery.HttpDiscovery@7acb031: timed out
+13:44:44 [PeerGroup Thread] MultiplexingDiscovery - Seed org.bitcoinj.net.discovery.HttpDiscovery@91c2316: failed to look up: org.bitcoinj.net.discovery.PeerDiscoveryException: java.net.ConnectException: Failed to connect to lightning-wallet.com/5.9.83.143:8081
+13:44:44 [PeerGroup Thread] PeerGroup - Peer discovery took 5.009 s and returned 190 items from 1 discoverers
+13:44:44 [PeerGroup Thread] PeerGroup - Waiting 6010 ms before next connect attempt to [18.222.167.188]:8333
+13:44:47 [main] WalletAddressFragment - Current address enlarged: bc1qdxpudg09h7ytcehsun900jtmrn9pmmrqe3ty9l
+13:44:47 [main] WalletAddressDialogFragment - opening dialog de.schildbach.wallet.ui.WalletAddressDialogFragment
+13:44:50 [PeerGroup Thread] PeerGroup - Attempting connection to [174.16.111.167]:8333     (0 connected, 1 pending, 6 max)
+13:44:50 [PeerGroup Thread] PeerGroup - Attempting connection to [188.166.190.154]:8333     (0 connected, 2 pending, 6 max)
+13:44:50 [PeerGroup Thread] PeerGroup - Attempting connection to [212.227.39.1]:8333     (0 connected, 3 pending, 6 max)
+13:44:50 [PeerGroup Thread] PeerGroup - Attempting connection to [62.163.24.180]:8333     (0 connected, 4 pending, 6 max)
+13:44:50 [PeerGroup Thread] PeerGroup - Attempting connection to [176.53.160.170]:8333     (0 connected, 5 pending, 6 max)
+13:44:50 [PeerGroup Thread] PeerGroup - Attempting connection to [161.117.251.223]:8333     (0 connected, 6 pending, 6 max)
+13:44:50 [NioClientManager] NioClientManager - Connected to seed.bitcoin.sipa.be/188.166.190.154:8333
+13:44:50 [NioClientManager] Peer - Announcing to seed.bitcoin.sipa.be/188.166.190.154:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:50 [NioClientManager] Peer - Peer{[188.166.190.154]:8333, version=70016, subVer=/Satoshi:0.21.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:50, height=671978}
+13:44:50 [NioClientManager] Peer - Peer{[188.166.190.154]:8333, version=70016, subVer=/Satoshi:0.21.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:50, height=671978}: Peer doesn't support these required services: BLOOM
+13:44:50 [NioClientManager] PeerGroup - [188.166.190.154]:8333: Peer died      (0 connected, 5 pending, 6 max)
+13:44:50 [PeerGroup Thread] PeerGroup - Waiting 1500 ms before next connect attempt to [91.214.70.63]:8333
+13:44:50 [NioClientManager] PeerSocketHandler - [188.166.190.154]:8333 - 
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:50 [NioClientManager] WalletApplication - bitcoinj uncaught exception
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:50 [NioClientManager] ConnectionHandler - Error handling SelectionKey: java.lang.IllegalStateException 
+java.lang.IllegalStateException: null
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:495)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:239)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:50 [NioClientManager] NioClientManager - Connected to seed.btc.petertodd.org/174.16.111.167:8333
+13:44:50 [NioClientManager] Peer - Announcing to seed.btc.petertodd.org/174.16.111.167:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:50 [NioClientManager] NioClientManager - Connected to xc.dnsseed.bluematt.me/176.53.160.170:8333
+13:44:50 [NioClientManager] Peer - Announcing to xc.dnsseed.bluematt.me/176.53.160.170:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:50 [NioClientManager] NioClientManager - Connected to seed.btc.petertodd.org/212.227.39.1:8333
+13:44:50 [NioClientManager] Peer - Announcing to seed.btc.petertodd.org/212.227.39.1:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:50 [NioClientManager] NioClientManager - Connected to seed.bitcoin.sipa.be/62.163.24.180:8333
+13:44:50 [NioClientManager] Peer - Announcing to seed.bitcoin.sipa.be/62.163.24.180:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:50 [NioClientManager] Peer - Peer{[174.16.111.167]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:49, height=671978}
+13:44:50 [NioClientManager] PeerGroup - Peer{[174.16.111.167]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:49, height=671978}: New peer      (1 connected, 4 pending, 6 max)
+13:44:50 [NioClientManager] Peer - Peer{[174.16.111.167]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:49, height=671978}: Sending Bloom filter and querying mempool
+13:44:50 [NioClientManager] Peer - Peer{[176.53.160.170]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1036 (BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:49, height=671978}
+13:44:50 [NioClientManager] PeerGroup - Peer{[176.53.160.170]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1036 (BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:49, height=671978}: New peer      (2 connected, 3 pending, 6 max)
+13:44:50 [NioClientManager] Peer - Peer{[176.53.160.170]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1036 (BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:49, height=671978}: Sending Bloom filter and querying mempool
+13:44:50 [NioClientManager] Peer - Peer{[62.163.24.180]:8333, version=70016, subVer=/Satoshi:0.21.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:43:43, height=671978}
+13:44:50 [NioClientManager] Peer - Peer{[62.163.24.180]:8333, version=70016, subVer=/Satoshi:0.21.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:43:43, height=671978}: Peer doesn't support these required services: BLOOM
+13:44:50 [NioClientManager] PeerGroup - [62.163.24.180]:8333: Peer died      (2 connected, 2 pending, 6 max)
+13:44:50 [PeerGroup Thread] PeerGroup - Waiting 999 ms before next connect attempt to [212.51.146.9]:8333
+13:44:50 [NioClientManager] PeerSocketHandler - [62.163.24.180]:8333 - 
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:50 [NioClientManager] WalletApplication - bitcoinj uncaught exception
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:50 [NioClientManager] ConnectionHandler - Error handling SelectionKey: java.lang.IllegalStateException 
+java.lang.IllegalStateException: null
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:495)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:239)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:51 [NioClientManager] Peer - Peer{[212.227.39.1]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:51, height=671978}
+13:44:51 [NioClientManager] PeerGroup - Peer{[212.227.39.1]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:51, height=671978}: New peer      (3 connected, 1 pending, 6 max)
+13:44:51 [NioClientManager] Peer - Peer{[212.227.39.1]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:51, height=671978}: Sending Bloom filter and querying mempool
+13:44:51 [PeerGroup Thread] PeerGroup - Attempting connection to [45.48.168.16]:8333     (3 connected, 2 pending, 6 max)
+13:44:51 [PeerGroup Thread] PeerGroup - Attempting connection to [217.19.216.210]:8333     (3 connected, 3 pending, 6 max)
+13:44:51 [PeerGroup Thread] PeerGroup - Attempting connection to [93.209.186.12]:8333     (3 connected, 4 pending, 6 max)
+13:44:52 [NioClientManager] NioClientManager - Connected to xc.dnsseed.bluematt.me/217.19.216.210:8333
+13:44:52 [NioClientManager] Peer - Announcing to xc.dnsseed.bluematt.me/217.19.216.210:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:52 [NioClientManager] NioClientManager - Connected to dnsseed.emzy.de/93.209.186.12:8333
+13:44:52 [NioClientManager] Peer - Announcing to dnsseed.emzy.de/93.209.186.12:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:52 [NioClientManager] Peer - Peer{[217.19.216.210]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:52, height=671978}
+13:44:52 [NioClientManager] PeerGroup - Peer{[217.19.216.210]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:52, height=671978}: New peer      (4 connected, 3 pending, 6 max)
+13:44:52 [NioClientManager] Peer - Peer{[217.19.216.210]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:52, height=671978}: Sending Bloom filter and querying mempool
+13:44:52 [NioClientManager] PeerGroup - Setting download peer: Peer{[217.19.216.210]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:52, height=671978}
+13:44:52 [NioClientManager] PeerGroup - [217.19.216.210]:8333: Peer died      (3 connected, 3 pending, 6 max)
+13:44:52 [NioClientManager] PeerGroup - Download peer died. Picking a new one.
+13:44:52 [NioClientManager] PeerGroup - Unsetting download peer: Peer{[217.19.216.210]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:52, height=671978}
+13:44:52 [NioClientManager] PeerGroup - Setting download peer: Peer{[174.16.111.167]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:49, height=671978}
+13:44:52 [NioClientManager] Peer - Peer{[93.209.186.12]:8333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:53, height=671978}
+13:44:52 [NioClientManager] Peer - Peer{[93.209.186.12]:8333, version=70015, subVer=/Satoshi:0.19.0.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:53, height=671978}: Peer doesn't support these required services: BLOOM
+13:44:52 [NioClientManager] PeerGroup - [93.209.186.12]:8333: Peer died      (3 connected, 2 pending, 6 max)
+13:44:52 [PeerGroup Thread] PeerGroup - Waiting 1500 ms before next connect attempt to [64.98.64.248]:8333
+13:44:52 [NioClientManager] ConnectionHandler - Error handling SelectionKey: java.nio.channels.CancelledKeyException 
+java.nio.channels.CancelledKeyException: null
+	at sun.nio.ch.SelectionKeyImpl.ensureValid(SelectionKeyImpl.java:73)
+	at sun.nio.ch.SelectionKeyImpl.readyOps(SelectionKeyImpl.java:87)
+	at java.nio.channels.SelectionKey.isWritable(SelectionKey.java:312)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:244)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:53 [NioClientManager] NioClientManager - Connected to dnsseed.emzy.de/45.48.168.16:8333
+13:44:53 [NioClientManager] Peer - Announcing to dnsseed.emzy.de/45.48.168.16:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:54 [PeerGroup Thread] PeerGroup - Attempting connection to [77.120.26.102]:8333     (3 connected, 3 pending, 6 max)
+13:44:54 [NioClientManager] NioClientManager - Connected to seed.bitcoin.sprovoost.nl/77.120.26.102:8333
+13:44:54 [NioClientManager] Peer - Announcing to seed.bitcoin.sprovoost.nl/77.120.26.102:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:55 [NioClientManager] Peer - Peer{[77.120.26.102]:8333, version=70016, subVer=/Satoshi:0.21.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:45:06, height=671978}
+13:44:55 [NioClientManager] Peer - Peer{[77.120.26.102]:8333, version=70016, subVer=/Satoshi:0.21.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:45:06, height=671978}: Peer doesn't support these required services: BLOOM
+13:44:55 [NioClientManager] PeerGroup - [77.120.26.102]:8333: Peer died      (3 connected, 2 pending, 6 max)
+13:44:55 [PeerGroup Thread] PeerGroup - Waiting 2250 ms before next connect attempt to [34.125.157.90]:8333
+13:44:55 [NioClientManager] PeerSocketHandler - [77.120.26.102]:8333 - 
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:55 [NioClientManager] WalletApplication - bitcoinj uncaught exception
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:55 [NioClientManager] ConnectionHandler - Error handling SelectionKey: java.lang.IllegalStateException 
+java.lang.IllegalStateException: null
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:495)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:239)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:55 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 2000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 9.14/156.25 kilobytes per sec, chain/common height 659216/671978 (warming up 12 more seconds)
+13:44:56 [NioClientManager] Peer - Peer{[45.48.168.16]:8333, version=70016, subVer=/Satoshi:0.21.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:53, height=671978}
+13:44:56 [NioClientManager] Peer - Peer{[45.48.168.16]:8333, version=70016, subVer=/Satoshi:0.21.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:53, height=671978}: Peer doesn't support these required services: BLOOM
+13:44:56 [NioClientManager] PeerGroup - [45.48.168.16]:8333: Peer died      (3 connected, 1 pending, 6 max)
+13:44:56 [PeerGroup Thread] PeerGroup - Waiting 3375 ms before next connect attempt to [91.214.70.63]:8333
+13:44:56 [NioClientManager] ConnectionHandler - Error handling SelectionKey: java.nio.channels.CancelledKeyException 
+java.nio.channels.CancelledKeyException: null
+	at sun.nio.ch.SelectionKeyImpl.ensureValid(SelectionKeyImpl.java:73)
+	at sun.nio.ch.SelectionKeyImpl.readyOps(SelectionKeyImpl.java:87)
+	at java.nio.channels.SelectionKey.isWritable(SelectionKey.java:312)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:244)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:44:57 [PeerGroup Thread] PeerGroup - Waiting 2107 ms before next connect attempt to [212.51.146.9]:8333
+13:44:57 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 659216, date 2020-11-29T11:34:23Z, hash 00000000000000000004fb958f4a08403be44f9cc3bab0e236bd087dab1dd21b
+13:44:57 [Wallet autosave thread] WalletFiles - Save completed in 18.96 ms
+13:44:59 [PeerGroup Thread] PeerGroup - Attempting connection to [64.98.64.248]:8333     (3 connected, 2 pending, 6 max)
+13:44:59 [PeerGroup Thread] PeerGroup - Attempting connection to [18.222.167.188]:8333     (3 connected, 3 pending, 6 max)
+13:44:59 [PeerGroup Thread] PeerGroup - Attempting connection to [34.125.157.90]:8333     (3 connected, 4 pending, 6 max)
+13:44:59 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 2000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 16.64/156.25 kilobytes per sec, chain/common height 661216/671978 (warming up 8 more seconds)
+13:44:59 [NioClientManager] NioClientManager - Connected to seed.bitcoin.sprovoost.nl/34.125.157.90:8333
+13:44:59 [NioClientManager] Peer - Announcing to seed.bitcoin.sprovoost.nl/34.125.157.90:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:59 [NioClientManager] NioClientManager - Connected to dnsseed.bitcoin.dashjr.org/18.222.167.188:8333
+13:44:59 [NioClientManager] Peer - Announcing to dnsseed.bitcoin.dashjr.org/18.222.167.188:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:59 [NioClientManager] NioClientManager - Connected to seed.btc.petertodd.org/64.98.64.248:8333
+13:44:59 [NioClientManager] Peer - Announcing to seed.btc.petertodd.org/64.98.64.248:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:44:59 [NioClientManager] Peer - Peer{[34.125.157.90]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:45:00, height=671978}
+13:44:59 [NioClientManager] PeerGroup - Peer{[34.125.157.90]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:45:00, height=671978}: New peer      (4 connected, 3 pending, 6 max)
+13:44:59 [NioClientManager] Peer - Peer{[34.125.157.90]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:45:00, height=671978}: Sending Bloom filter and querying mempool
+13:44:59 [NioClientManager] Peer - Peer{[64.98.64.248]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:57, height=671978}
+13:44:59 [NioClientManager] PeerGroup - Peer{[64.98.64.248]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:57, height=671978}: New peer      (5 connected, 2 pending, 6 max)
+13:44:59 [NioClientManager] Peer - Peer{[64.98.64.248]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:57, height=671978}: Sending Bloom filter and querying mempool
+13:44:59 [NioClientManager] Peer - Peer{[18.222.167.188]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:45:00, height=671978}
+13:44:59 [NioClientManager] PeerGroup - Peer{[18.222.167.188]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:45:00, height=671978}: New peer      (6 connected, 1 pending, 6 max)
+13:44:59 [NioClientManager] Peer - Peer{[18.222.167.188]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:45:00, height=671978}: Sending Bloom filter and querying mempool
+13:45:01 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 661216, date 2020-12-13T18:40:31Z, hash 000000000000000000031cc25d213c41425d8b7a41edac564e008d9731f5d995
+13:45:01 [Wallet autosave thread] WalletFiles - Save completed in 16.02 ms
+13:45:02 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 2000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 24.22/156.25 kilobytes per sec, chain/common height 663216/671978 (warming up 5 more seconds)
+13:45:03 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 4000 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 39.77/312.50 kilobytes per sec, chain/common height 667216/671978 (warming up 4 more seconds)
+13:45:04 [NioClientManager] Peer - Passed the fast catchup time (2021-02-14T10:47:26Z) at height 670561, discarding 656 headers and requesting full blocks
+13:45:04 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 3344 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 52.75/261.25 kilobytes per sec, chain/common height 670560/671978 (warming up 3 more seconds)
+13:45:05 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670560, date 2021-02-14T10:32:53Z, hash 0000000000000000000c6ab16363aa105193f55cc771131c93a7627efb7df334
+13:45:05 [AbstractTimeoutHandler timeouts] PeerSocketHandler - [188.166.190.154]:8333: Timed out
+13:45:05 [Wallet autosave thread] WalletFiles - Save completed in 12.47 ms
+13:45:05 [AbstractTimeoutHandler timeouts] PeerSocketHandler - [62.163.24.180]:8333: Timed out
+13:45:05 [AbstractTimeoutHandler timeouts] PeerSocketHandler - [161.117.251.223]:8333: Timed out
+13:45:05 [AbstractTimeoutHandler timeouts] PeerGroup - [161.117.251.223]:8333: Peer died      (6 connected, 0 pending, 6 max)
+13:45:05 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 2 blocks/sec, 0 tx/sec, 4744 pre-filtered tx/sec, avg/last 52.68/0.16 kilobytes per sec, chain/common height 670562/671978 (warming up 2 more seconds)
+13:45:06 [main] BlockchainService - service start command: de.schildbach.wallet.service.cancel_coins_received
+13:45:06 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 12 blocks/sec, 2 tx/sec, 24789 pre-filtered tx/sec, avg/last 52.68/1.66 kilobytes per sec, chain/common height 670574/671978 (warming up 1 more seconds)
+13:45:06 [AbstractTimeoutHandler timeouts] PeerSocketHandler - [45.48.168.16]:8333: Timed out
+13:45:06 [AbstractTimeoutHandler timeouts] PeerSocketHandler - [93.209.186.12]:8333: Timed out
+13:45:07 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 1 tx/sec, 18890 pre-filtered tx/sec, avg/last 54.29/33.61 kilobytes per sec, chain/common height 670584/671978 (warming up 0 more seconds)
+13:45:07 [main] RequestCoinsActivity - Referrer: android-app://de.schildbach.wallet
+13:45:08 [AsyncTask #7] WalletFiles - Saving wallet; last seen block is height 670590, date 2021-02-14T16:02:40Z, hash 000000000000000000049062c3f86f515cd73f28e0923bd5ea380879ee84439c
+13:45:08 [AsyncTask #7] WalletFiles - Save completed in 11.65 ms
+13:45:08 [main] RequestCoinsFragment - request coins address: bc1qhd7m632fr4w6lkndl305sxd3rrxa72q9j9cym2
+13:45:08 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670593, date 2021-02-14T16:21:19Z, hash 00000000000000000006c147d05492d9029a430c5aad521d2e368b18d92e0096
+13:45:08 [Wallet autosave thread] WalletFiles - Save completed in 42.90 ms
+13:45:08 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 1 tx/sec, 23339 pre-filtered tx/sec, avg/last 54.25/0.86 kilobytes per sec, chain/common height 670594/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:09 [AbstractTimeoutHandler timeouts] PeerSocketHandler - [77.120.26.102]:8333: Timed out
+13:45:09 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 12 blocks/sec, 3 tx/sec, 31371 pre-filtered tx/sec, avg/last 54.27/2.00 kilobytes per sec, chain/common height 670606/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:10 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 11 blocks/sec, 1 tx/sec, 23770 pre-filtered tx/sec, avg/last 55.19/19.97 kilobytes per sec, chain/common height 670617/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:10 [main] BlockchainService - service start command: de.schildbach.wallet.service.cancel_coins_received
+13:45:11 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670627, date 2021-02-14T21:18:15Z, hash 0000000000000000000b62b6d3b9002320188a8ac5851d44a7c9358009d804b8
+13:45:11 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 3 tx/sec, 19655 pre-filtered tx/sec, avg/last 58.36/64.94 kilobytes per sec, chain/common height 670627/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:11 [Wallet autosave thread] WalletFiles - Save completed in 28.52 ms
+13:45:12 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 3 tx/sec, 21868 pre-filtered tx/sec, avg/last 59.65/27.39 kilobytes per sec, chain/common height 670637/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:13 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 2 tx/sec, 22205 pre-filtered tx/sec, avg/last 59.71/1.03 kilobytes per sec, chain/common height 670647/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:14 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 0 tx/sec, 11601 pre-filtered tx/sec, avg/last 59.74/0.78 kilobytes per sec, chain/common height 670657/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:14 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670657, date 2021-02-15T03:08:00Z, hash 000000000000000000078c598f9a37183c843f72a11e18034dce9a7a2e0b55c8
+13:45:14 [Wallet autosave thread] WalletFiles - Save completed in 25.80 ms
+13:45:15 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 14 blocks/sec, 2 tx/sec, 24254 pre-filtered tx/sec, avg/last 53.04/22.09 kilobytes per sec, chain/common height 670671/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:16 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 9 blocks/sec, 1 tx/sec, 17807 pre-filtered tx/sec, avg/last 53.11/1.44 kilobytes per sec, chain/common height 670680/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:17 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 9 blocks/sec, 0 tx/sec, 12738 pre-filtered tx/sec, avg/last 53.14/0.70 kilobytes per sec, chain/common height 670689/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:17 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670692, date 2021-02-15T09:11:24Z, hash 000000000000000000056e57c651e1bc9835dd5ee1588fdf3a750a71d456cd2c
+13:45:17 [Wallet autosave thread] WalletFiles - Save completed in 21.75 ms
+13:45:18 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 8 blocks/sec, 1 tx/sec, 19064 pre-filtered tx/sec, avg/last 53.18/0.74 kilobytes per sec, chain/common height 670697/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:19 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 9 blocks/sec, 1 tx/sec, 16899 pre-filtered tx/sec, avg/last 45.41/0.92 kilobytes per sec, chain/common height 670706/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:20 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 12 blocks/sec, 1 tx/sec, 21473 pre-filtered tx/sec, avg/last 46.01/11.88 kilobytes per sec, chain/common height 670718/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:21 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670725, date 2021-02-15T14:11:48Z, hash 0000000000000000000aee6fc291cad88f4b2baccecad111daedd86799518689
+13:45:21 [Wallet autosave thread] WalletFiles - Save completed in 25.39 ms
+13:45:21 [NioClientManager] PeerGroup - [161.117.251.223]:8333: Peer died      (6 connected, 0 pending, 6 max)
+13:45:21 [NioClientManager] NioClientManager - Failed to connect with exception: java.nio.channels.ClosedChannelException: null
+java.nio.channels.ClosedChannelException: null
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:741)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:64)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+13:45:21 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 1 tx/sec, 22251 pre-filtered tx/sec, avg/last 46.67/13.25 kilobytes per sec, chain/common height 670728/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:22 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 2 tx/sec, 23677 pre-filtered tx/sec, avg/last 38.92/1.19 kilobytes per sec, chain/common height 670738/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:23 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 8 blocks/sec, 0 tx/sec, 21453 pre-filtered tx/sec, avg/last 23.32/0.63 kilobytes per sec, chain/common height 670746/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:24 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670752, date 2021-02-15T18:13:38Z, hash 00000000000000000004de04449cfa757c0eb110520bfde1ad82ebfff0a3a106
+13:45:24 [Wallet autosave thread] WalletFiles - Save completed in 30.07 ms
+13:45:24 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 9 blocks/sec, 0 tx/sec, 21586 pre-filtered tx/sec, avg/last 10.30/0.70 kilobytes per sec, chain/common height 670755/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:25 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 9 blocks/sec, 0 tx/sec, 18943 pre-filtered tx/sec, avg/last 10.32/0.70 kilobytes per sec, chain/common height 670764/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:26 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 11 blocks/sec, 0 tx/sec, 22948 pre-filtered tx/sec, avg/last 10.28/0.86 kilobytes per sec, chain/common height 670775/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:27 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670786, date 2021-02-15T22:46:05Z, hash 00000000000000000004dd100b4eafa718948863beb7518c19f99b57d1083479
+13:45:27 [Wallet autosave thread] WalletFiles - Save completed in 29.30 ms
+13:45:27 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 13 blocks/sec, 2 tx/sec, 32257 pre-filtered tx/sec, avg/last 8.67/1.38 kilobytes per sec, chain/common height 670788/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:28 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 9 blocks/sec, 0 tx/sec, 21609 pre-filtered tx/sec, avg/last 8.66/0.70 kilobytes per sec, chain/common height 670797/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:29 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 2 tx/sec, 22379 pre-filtered tx/sec, avg/last 8.66/1.91 kilobytes per sec, chain/common height 670807/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:30 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670814, date 2021-02-16T06:12:02Z, hash 00000000000000000007a374de5aacc9c895a9737ec6478914d0ddfd048c102d
+13:45:30 [Wallet autosave thread] WalletFiles - Save completed in 77.88 ms
+13:45:30 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 8 blocks/sec, 0 tx/sec, 17585 pre-filtered tx/sec, avg/last 7.69/0.63 kilobytes per sec, chain/common height 670815/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:31 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 1 tx/sec, 23248 pre-filtered tx/sec, avg/last 4.50/1.00 kilobytes per sec, chain/common height 670825/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:32 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 1 blocks/sec, 0 tx/sec, 2592 pre-filtered tx/sec, avg/last 3.13/0.08 kilobytes per sec, chain/common height 670826/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:33 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670826, date 2021-02-16T09:14:11Z, hash 0000000000000000000811b759b56e2851c0d17223c0fbb428d34329b11f6eb1
+13:45:33 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 0 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 3.08/0.00 kilobytes per sec, chain/common height 670826/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:33 [Wallet autosave thread] WalletFiles - Save completed in 74.29 ms
+13:45:34 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 0 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 3.04/0.00 kilobytes per sec, chain/common height 670826/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:35 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 8 blocks/sec, 2 tx/sec, 18918 pre-filtered tx/sec, avg/last 2.00/1.27 kilobytes per sec, chain/common height 670834/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:36 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 9 blocks/sec, 2 tx/sec, 22132 pre-filtered tx/sec, avg/last 1.98/1.11 kilobytes per sec, chain/common height 670843/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:37 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 9 blocks/sec, 2 tx/sec, 23444 pre-filtered tx/sec, avg/last 2.01/1.26 kilobytes per sec, chain/common height 670852/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:37 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670853, date 2021-02-16T14:57:43Z, hash 0000000000000000000738b09132e21b1a9c5fb9e52667cd264dc2f4a3d8d7ae
+13:45:37 [Wallet autosave thread] WalletFiles - Save completed in 36.87 ms
+13:45:38 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 11 blocks/sec, 2 tx/sec, 26599 pre-filtered tx/sec, avg/last 2.05/1.55 kilobytes per sec, chain/common height 670863/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:39 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 7 blocks/sec, 0 tx/sec, 20160 pre-filtered tx/sec, avg/last 2.03/0.55 kilobytes per sec, chain/common height 670870/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:40 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 12 blocks/sec, 0 tx/sec, 31459 pre-filtered tx/sec, avg/last 1.48/0.94 kilobytes per sec, chain/common height 670882/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:40 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670883, date 2021-02-16T19:25:11Z, hash 0000000000000000000aa2858b41b836f58d22b664bc2b7cfe9136ba26414d33
+13:45:40 [Wallet autosave thread] WalletFiles - Save completed in 19.44 ms
+13:45:41 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 1 tx/sec, 26832 pre-filtered tx/sec, avg/last 1.43/12.07 kilobytes per sec, chain/common height 670892/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:42 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 11 blocks/sec, 0 tx/sec, 27000 pre-filtered tx/sec, avg/last 1.41/0.86 kilobytes per sec, chain/common height 670903/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:43 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 2 tx/sec, 19073 pre-filtered tx/sec, avg/last 1.55/3.36 kilobytes per sec, chain/common height 670913/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:43 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670915, date 2021-02-17T01:21:15Z, hash 00000000000000000005112f9f94187c931e372d972894db908999bc6eea0bd0
+13:45:43 [Wallet autosave thread] WalletFiles - Save completed in 19.12 ms
+13:45:44 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 10 blocks/sec, 0 tx/sec, 21780 pre-filtered tx/sec, avg/last 1.55/0.78 kilobytes per sec, chain/common height 670923/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:45 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 7 blocks/sec, 1 tx/sec, 13348 pre-filtered tx/sec, avg/last 1.55/0.77 kilobytes per sec, chain/common height 670930/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:46 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 4 blocks/sec, 0 tx/sec, 9697 pre-filtered tx/sec, avg/last 1.53/0.31 kilobytes per sec, chain/common height 670934/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:46 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670936, date 2021-02-17T05:55:39Z, hash 00000000000000000007ad5314aac6dbeb1e9988b22295c74e1aacfff83900e7
+13:45:46 [Wallet autosave thread] WalletFiles - Save completed in 26.48 ms
+13:45:47 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 5 blocks/sec, 0 tx/sec, 10645 pre-filtered tx/sec, avg/last 1.48/0.39 kilobytes per sec, chain/common height 670939/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:48 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 5 blocks/sec, 0 tx/sec, 11958 pre-filtered tx/sec, avg/last 1.46/0.39 kilobytes per sec, chain/common height 670944/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:49 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 0 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 1.37/0.00 kilobytes per sec, chain/common height 670944/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:49 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670945, date 2021-02-17T07:00:07Z, hash 0000000000000000000cb871c6bf6a5c2e9e542ede814e8e8d0567b1e00854af
+13:45:49 [Wallet autosave thread] WalletFiles - Save completed in 22.85 ms
+13:45:50 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 4 blocks/sec, 0 tx/sec, 10121 pre-filtered tx/sec, avg/last 1.35/0.31 kilobytes per sec, chain/common height 670948/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:51 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 5 blocks/sec, 0 tx/sec, 10349 pre-filtered tx/sec, avg/last 1.32/0.39 kilobytes per sec, chain/common height 670953/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:52 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 6 blocks/sec, 0 tx/sec, 15585 pre-filtered tx/sec, avg/last 1.34/0.47 kilobytes per sec, chain/common height 670959/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:53 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670960, date 2021-02-17T09:29:43Z, hash 0000000000000000000326c01cac03b9cded403d2bcc01f1f3f78f768f16c34f
+13:45:53 [Wallet autosave thread] WalletFiles - Save completed in 27.53 ms
+13:45:53 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 1 blocks/sec, 0 tx/sec, 2111 pre-filtered tx/sec, avg/last 1.34/0.08 kilobytes per sec, chain/common height 670960/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:54 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 1 blocks/sec, 0 tx/sec, 2087 pre-filtered tx/sec, avg/last 1.35/0.08 kilobytes per sec, chain/common height 670961/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:55 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 5 blocks/sec, 0 tx/sec, 10458 pre-filtered tx/sec, avg/last 1.30/0.39 kilobytes per sec, chain/common height 670966/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:56 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 6 blocks/sec, 1 tx/sec, 13875 pre-filtered tx/sec, avg/last 1.28/0.63 kilobytes per sec, chain/common height 670972/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:57 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670977, date 2021-02-17T12:11:53Z, hash 0000000000000000000587ddb657f0dcd1179d27048830b35248546ed558c122
+13:45:57 [Wallet autosave thread] WalletFiles - Save completed in 50.36 ms
+13:45:57 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 5 blocks/sec, 0 tx/sec, 10863 pre-filtered tx/sec, avg/last 1.24/0.39 kilobytes per sec, chain/common height 670977/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:58 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 4 blocks/sec, 0 tx/sec, 11342 pre-filtered tx/sec, avg/last 1.17/0.31 kilobytes per sec, chain/common height 670981/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:45:59 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 2 blocks/sec, 0 tx/sec, 5165 pre-filtered tx/sec, avg/last 1.15/0.16 kilobytes per sec, chain/common height 670983/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:00 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 0 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 1.11/0.00 kilobytes per sec, chain/common height 670983/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:00 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 670983, date 2021-02-17T14:10:55Z, hash 0000000000000000000353605076251ec51e897cea22968b226d702d292f4484
+13:46:00 [Wallet autosave thread] WalletFiles - Save completed in 21.60 ms
+13:46:01 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 0 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 0.50/0.00 kilobytes per sec, chain/common height 670983/671978, STALLED (threshold <0.78 KB/sec for 20 seconds)
+13:46:01 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - Chain download stalled: received 0.50 KB/sec for 20 seconds, require average of 0.78 KB/sec, disconnecting Peer{[174.16.111.167]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:49, height=671978}, 2 stalls left
+13:46:01 [PeerGroup Thread] PeerGroup - [174.16.111.167]:8333: Peer died      (5 connected, 0 pending, 6 max)
+13:46:01 [PeerGroup Thread] PeerGroup - Download peer died. Picking a new one.
+13:46:01 [PeerGroup Thread] PeerGroup - Unsetting download peer: Peer{[174.16.111.167]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:49, height=671978}
+13:46:01 [PeerGroup Thread] PeerGroup - Setting download peer: Peer{[212.227.39.1]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:51, height=671978}
+13:46:01 [PeerGroup Thread] PeerGroup - Waiting 2249 ms before next connect attempt to [91.214.70.63]:8333
+13:46:03 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 11 blocks/sec, 3 tx/sec, 28627 pre-filtered tx/sec, avg/last 1.48/1.58 kilobytes per sec, chain/common height 670994/671978 (warming up 13 more seconds)
+13:46:03 [PeerGroup Thread] PeerGroup - Attempting connection to [212.51.146.9]:8333     (5 connected, 1 pending, 6 max)
+13:46:04 [NioClientManager] NioClientManager - Connected to dnsseed.emzy.de/212.51.146.9:8333
+13:46:04 [NioClientManager] Peer - Announcing to dnsseed.emzy.de/212.51.146.9:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+13:46:04 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 27 blocks/sec, 1 tx/sec, 60097 pre-filtered tx/sec, avg/last 1.54/2.78 kilobytes per sec, chain/common height 671021/671978 (warming up 12 more seconds)
+13:46:04 [NioClientManager] Peer - Peer{[212.51.146.9]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:46:01, height=671978}
+13:46:04 [NioClientManager] PeerGroup - Peer{[212.51.146.9]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:46:01, height=671978}: New peer      (6 connected, 0 pending, 6 max)
+13:46:04 [NioClientManager] Peer - Peer{[212.51.146.9]:8333, version=70015, subVer=/Satoshi:0.18.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:46:01, height=671978}: Sending Bloom filter and querying mempool
+13:46:05 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 25 blocks/sec, 3 tx/sec, 60832 pre-filtered tx/sec, avg/last 2.52/21.06 kilobytes per sec, chain/common height 671046/671978 (warming up 11 more seconds)
+13:46:06 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671059, date 2021-02-18T01:12:38Z, hash 0000000000000000000420e26e0118085d0049d0b1f2c89ed8f617ab29ca7629
+13:46:06 [Wallet autosave thread] WalletFiles - Save completed in 20.35 ms
+13:46:06 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 23 blocks/sec, 4 tx/sec, 49519 pre-filtered tx/sec, avg/last 3.96/30.44 kilobytes per sec, chain/common height 671069/671978 (warming up 10 more seconds)
+13:46:07 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 25 blocks/sec, 1 tx/sec, 45606 pre-filtered tx/sec, avg/last 4.38/9.81 kilobytes per sec, chain/common height 671094/671978 (warming up 9 more seconds)
+13:46:08 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 23 blocks/sec, 3 tx/sec, 54531 pre-filtered tx/sec, avg/last 7.08/55.72 kilobytes per sec, chain/common height 671117/671978 (warming up 8 more seconds)
+13:46:09 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671133, date 2021-02-18T13:54:43Z, hash 00000000000000000004f663ba10a69696fa23707f17f37770948906fb16d1cc
+13:46:09 [Wallet autosave thread] WalletFiles - Save completed in 33.06 ms
+13:46:09 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 24 blocks/sec, 4 tx/sec, 61364 pre-filtered tx/sec, avg/last 7.69/13.62 kilobytes per sec, chain/common height 671141/671978 (warming up 7 more seconds)
+13:46:10 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 23 blocks/sec, 0 tx/sec, 57578 pre-filtered tx/sec, avg/last 7.70/1.80 kilobytes per sec, chain/common height 671164/671978 (warming up 6 more seconds)
+13:46:11 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 24 blocks/sec, 3 tx/sec, 60151 pre-filtered tx/sec, avg/last 11.14/70.33 kilobytes per sec, chain/common height 671188/671978 (warming up 5 more seconds)
+13:46:12 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671206, date 2021-02-19T04:11:36Z, hash 0000000000000000000929a6e41ef49ed11f2a76d8d0e3a14f4fd91500624a69
+13:46:12 [Wallet autosave thread] WalletFiles - Save completed in 20.04 ms
+13:46:12 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 25 blocks/sec, 2 tx/sec, 55276 pre-filtered tx/sec, avg/last 12.12/21.30 kilobytes per sec, chain/common height 671213/671978 (warming up 4 more seconds)
+13:46:13 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 23 blocks/sec, 0 tx/sec, 42384 pre-filtered tx/sec, avg/last 12.14/1.80 kilobytes per sec, chain/common height 671236/671978 (warming up 3 more seconds)
+13:46:14 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 25 blocks/sec, 5 tx/sec, 53887 pre-filtered tx/sec, avg/last 12.84/15.69 kilobytes per sec, chain/common height 671261/671978 (warming up 2 more seconds)
+13:46:15 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671282, date 2021-02-19T14:57:26Z, hash 00000000000000000002e66ad4c747603173d230bfba46fb44bfe02090378719
+13:46:15 [Wallet autosave thread] WalletFiles - Save completed in 32.12 ms
+13:46:15 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 23 blocks/sec, 3 tx/sec, 53461 pre-filtered tx/sec, avg/last 18.27/110.13 kilobytes per sec, chain/common height 671284/671978 (warming up 1 more seconds)
+13:46:16 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 24 blocks/sec, 3 tx/sec, 62003 pre-filtered tx/sec, avg/last 18.49/5.99 kilobytes per sec, chain/common height 671308/671978 (warming up 0 more seconds)
+13:46:17 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 22 blocks/sec, 5 tx/sec, 48669 pre-filtered tx/sec, avg/last 20.45/40.69 kilobytes per sec, chain/common height 671330/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:18 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671350, date 2021-02-20T01:47:35Z, hash 00000000000000000001c74ed98e430e54420acd380b2fe704007cfa2819c5da
+13:46:18 [Wallet autosave thread] WalletFiles - Save completed in 21.47 ms
+13:46:18 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 22 blocks/sec, 2 tx/sec, 47841 pre-filtered tx/sec, avg/last 22.05/33.64 kilobytes per sec, chain/common height 671352/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:19 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 26 blocks/sec, 3 tx/sec, 51701 pre-filtered tx/sec, avg/last 22.35/7.57 kilobytes per sec, chain/common height 671378/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:20 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 23 blocks/sec, 1 tx/sec, 50222 pre-filtered tx/sec, avg/last 22.48/4.20 kilobytes per sec, chain/common height 671401/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:21 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671426, date 2021-02-20T13:49:03Z, hash 00000000000000000007036a41076695de650204c9fc888e3613a6b5d81e9317
+13:46:21 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 25 blocks/sec, 2 tx/sec, 56169 pre-filtered tx/sec, avg/last 24.30/37.84 kilobytes per sec, chain/common height 671427/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:21 [Wallet autosave thread] WalletFiles - Save completed in 107.6 ms
+13:46:22 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 27 blocks/sec, 4 tx/sec, 61742 pre-filtered tx/sec, avg/last 26.95/53.09 kilobytes per sec, chain/common height 671453/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:23 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 26 blocks/sec, 3 tx/sec, 59810 pre-filtered tx/sec, avg/last 29.99/62.24 kilobytes per sec, chain/common height 671479/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:24 [NioClientManager] AbstractBlockChain - Block does not connect: 00000000000000000003eca9cefb3f3e23877399e897ad8f3b067805f6d2cd54 prev 0000000000000000000c2bf6d07cd037b7e9b9ed3ca15265a2c0569e786ff4a1
+13:46:24 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 4 blocks/sec, 0 tx/sec, 9095 pre-filtered tx/sec, avg/last 29.86/0.31 kilobytes per sec, chain/common height 671483/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:24 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671483, date 2021-02-20T23:57:52Z, hash 0000000000000000000397445dad4cd6d91e5a6c361f1ffa787715bd023d125e
+13:46:24 [Wallet autosave thread] WalletFiles - Save completed in 101.3 ms
+13:46:25 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 0 blocks/sec, 0 tx/sec, 0 pre-filtered tx/sec, avg/last 28.81/0.00 kilobytes per sec, chain/common height 671483/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:26 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 24 blocks/sec, 2 tx/sec, 41121 pre-filtered tx/sec, avg/last 32.02/94.69 kilobytes per sec, chain/common height 671507/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:27 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 22 blocks/sec, 3 tx/sec, 26927 pre-filtered tx/sec, avg/last 32.54/20.28 kilobytes per sec, chain/common height 671529/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:28 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 25 blocks/sec, 1 tx/sec, 52249 pre-filtered tx/sec, avg/last 30.73/19.37 kilobytes per sec, chain/common height 671554/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:28 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671556, date 2021-02-21T11:59:33Z, hash 0000000000000000000bd244d18a673d29cb1b59af09124ce06b7dd2079c7d58
+13:46:28 [Wallet autosave thread] WalletFiles - Save completed in 38.05 ms
+13:46:29 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 27 blocks/sec, 2 tx/sec, 55443 pre-filtered tx/sec, avg/last 30.18/2.75 kilobytes per sec, chain/common height 671581/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:30 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 19 blocks/sec, 0 tx/sec, 38006 pre-filtered tx/sec, avg/last 30.17/1.48 kilobytes per sec, chain/common height 671600/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:31 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 20 blocks/sec, 0 tx/sec, 47621 pre-filtered tx/sec, avg/last 26.73/1.56 kilobytes per sec, chain/common height 671620/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:31 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671627, date 2021-02-22T00:39:14Z, hash 0000000000000000000b2a76155b1b5ce4aa06f787f35cc98d60ecab00599375
+13:46:31 [Wallet autosave thread] WalletFiles - Save completed in 17.99 ms
+13:46:32 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 22 blocks/sec, 2 tx/sec, 46735 pre-filtered tx/sec, avg/last 26.59/18.55 kilobytes per sec, chain/common height 671642/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:33 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 20 blocks/sec, 0 tx/sec, 33111 pre-filtered tx/sec, avg/last 26.58/1.56 kilobytes per sec, chain/common height 671663/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:34 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 22 blocks/sec, 1 tx/sec, 38146 pre-filtered tx/sec, avg/last 26.32/10.40 kilobytes per sec, chain/common height 671684/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:34 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671684, date 2021-02-22T09:16:21Z, hash 0000000000000000000689ec0bdc96cc97d121b4bc5679ca2d81548de1bd2d1d
+13:46:34 [Wallet autosave thread] WalletFiles - Save completed in 20.04 ms
+13:46:35 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 12 blocks/sec, 1 tx/sec, 28393 pre-filtered tx/sec, avg/last 20.90/1.73 kilobytes per sec, chain/common height 671696/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:36 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 23 blocks/sec, 0 tx/sec, 54668 pre-filtered tx/sec, avg/last 20.69/1.80 kilobytes per sec, chain/common height 671719/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:37 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 16 blocks/sec, 3 tx/sec, 39020 pre-filtered tx/sec, avg/last 24.17/110.41 kilobytes per sec, chain/common height 671735/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:37 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671746, date 2021-02-22T21:14:13Z, hash 0000000000000000000395d932004908da43ee9678e9ee660efe908f47b99400
+13:46:37 [Wallet autosave thread] WalletFiles - Save completed in 33.39 ms
+13:46:38 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 24 blocks/sec, 1 tx/sec, 60912 pre-filtered tx/sec, avg/last 23.61/22.38 kilobytes per sec, chain/common height 671759/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:39 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 24 blocks/sec, 3 tx/sec, 44679 pre-filtered tx/sec, avg/last 26.18/58.97 kilobytes per sec, chain/common height 671783/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:40 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 21 blocks/sec, 3 tx/sec, 50259 pre-filtered tx/sec, avg/last 26.58/12.14 kilobytes per sec, chain/common height 671804/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:41 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671817, date 2021-02-23T11:40:02Z, hash 0000000000000000000adbac4cc50a2de2ee01b78e1f5eec0ec9e221f9e86bbf
+13:46:41 [Wallet autosave thread] WalletFiles - Save completed in 29.82 ms
+13:46:41 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 24 blocks/sec, 2 tx/sec, 56310 pre-filtered tx/sec, avg/last 25.02/6.70 kilobytes per sec, chain/common height 671828/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:42 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 19 blocks/sec, 1 tx/sec, 42034 pre-filtered tx/sec, avg/last 24.24/37.55 kilobytes per sec, chain/common height 671847/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:43 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 19 blocks/sec, 1 tx/sec, 46135 pre-filtered tx/sec, avg/last 21.22/1.71 kilobytes per sec, chain/common height 671866/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:44 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671881, date 2021-02-23T23:32:06Z, hash 000000000000000000056f8a8ef08296533de2471860a0ebe85af09146bcca23
+13:46:44 [Wallet autosave thread] WalletFiles - Save completed in 39.80 ms
+13:46:44 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 21 blocks/sec, 3 tx/sec, 49637 pre-filtered tx/sec, avg/last 21.32/2.41 kilobytes per sec, chain/common height 671887/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:45 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 22 blocks/sec, 2 tx/sec, 46529 pre-filtered tx/sec, avg/last 21.55/4.48 kilobytes per sec, chain/common height 671909/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:46 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 20 blocks/sec, 0 tx/sec, 46224 pre-filtered tx/sec, avg/last 16.89/1.56 kilobytes per sec, chain/common height 671929/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:47 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671948, date 2021-02-24T08:57:02Z, hash 0000000000000000000826b7176a0ad1ac29368247da1aed759463e5d3003dfc
+13:46:47 [Wallet autosave thread] WalletFiles - Save completed in 66.86 ms
+13:46:47 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 22 blocks/sec, 4 tx/sec, 48912 pre-filtered tx/sec, avg/last 17.21/26.69 kilobytes per sec, chain/common height 671951/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:48 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 21 blocks/sec, 3 tx/sec, 45370 pre-filtered tx/sec, avg/last 17.40/23.10 kilobytes per sec, chain/common height 671972/671978, not stalled (threshold <0.78 KB/sec for 20 seconds)
+13:46:49 [NioClientManager] AbstractBlockChain - Connected orphan 00000000000000000003eca9cefb3f3e23877399e897ad8f3b067805f6d2cd54
+13:46:49 [NioClientManager] AbstractBlockChain - Connected 1 orphan blocks.
+13:46:49 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - End of sync detected at height 671978.
+13:46:50 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 671978, date 2021-02-24T13:05:41Z, hash 00000000000000000003eca9cefb3f3e23877399e897ad8f3b067805f6d2cd54
+13:46:50 [Wallet autosave thread] WalletFiles - Save completed in 27.14 ms
+13:47:20 [main] BlockchainService - service idling detected, trying to stop
+13:47:20 [main] BlockchainService - stopping org.bitcoinj.core.PeerGroup@ae3551 asynchronously
+13:47:20 [PeerGroup Thread] PeerGroup - Stopping ...
+13:47:20 [PeerGroup Thread] PeerGroup - Unsetting download peer: Peer{[212.227.39.1]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-24 20:44:51, height=671978}
+13:47:20 [main] WalletFiles - Saving wallet; last seen block is height 671978, date 2021-02-24T13:05:41Z, hash 00000000000000000003eca9cefb3f3e23877399e897ad8f3b067805f6d2cd54
+13:47:20 [PeerGroup Thread] PeerGroup - Stopped, took 45.35 ms.
+13:47:20 [main] WalletFiles - Save completed in 30.96 ms
+13:47:20 [main] WalletApplication - wallet saved to: '/data/user/0/de.schildbach.wallet/files/wallet-protobuf', took 36.27 ms
+13:47:20 [main] StartBlockchainService - last used 3 minutes ago, rescheduling block chain sync in roughly 15 minutes
+13:47:20 [main] BlockchainService - released WakeLock{f46e95c held=false, refCount=0}
+13:47:20 [main] BlockchainService - service was up for 2.689 min
+15:29:29 [main] Context - Creating bitcoinj 0.15.9 context.
+15:29:30 [main] WalletApplication - === starting app using flavor: prod, build type: release, network: org.bitcoin.production
+15:29:30 [main] WalletApplication - created notification channels, took 34.66 ms
+15:29:30 [main] BootstrapReceiver - got broadcast: Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=de.schildbach.wallet/.service.BootstrapReceiver (has extras) }
+15:29:30 [AsyncTask #1] StartBlockchainService - last used 105 minutes ago and expecting large data, rescheduling block chain sync in roughly 60 minutes
+17:00:48 [main] Context - Creating bitcoinj 0.15.9 context.
+17:00:48 [main] WalletApplication - === starting app using flavor: prod, build type: release, network: org.bitcoin.production
+17:00:48 [main] WalletApplication - created notification channels, took 9.897 ms
+17:00:48 [main] Configuration - just being used - last used 196 minutes ago
+17:00:48 [pool-1-thread-1] WalletApplication - BIP39 wordlist loaded from: 'bip39-wordlist.txt', took 13.22 ms
+17:00:48 [pool-1-thread-1] WalletApplication - wallet loaded from: '/data/user/0/de.schildbach.wallet/files/wallet-protobuf', took 219.7 ms
+17:00:48 [OkHttp https://api.coingecko.com/...] ExchangeRatesRepository - fetched exchange rates from https://api.coingecko.com/api/v3/exchange_rates, took 425.6 ms
+17:00:49 [main] BlockchainService - acquiring WakeLock{d95004f held=false, refCount=0}
+17:00:49 [main] BlockchainService - service start command: de.schildbach.wallet.service.cancel_coins_received
+17:00:49 [main] AbstractBlockChain - chain head is at height 671978:
+ block: 
+   hash: 00000000000000000003eca9cefb3f3e23877399e897ad8f3b067805f6d2cd54
+   version: 541065216 (BIP34, BIP66, BIP65)
+   previous block: 0000000000000000000c2bf6d07cd037b7e9b9ed3ca15265a2c0569e786ff4a1
+   time: 1614171941 (2021-02-24T13:05:41Z)
+   difficulty target (nBits): 386725091
+   nonce: 1163394313
+
+17:00:49 [main] BlockchainService - active network is up, type: WIFI, state: CONNECTED/CONNECTED
+17:00:49 [main] BlockchainService - creating org.bitcoinj.core.PeerGroup@22d40a4, sync mode: CONNECTION_FILTER
+17:00:49 [main] BlockchainService - adding random peers from the P2P network
+17:00:49 [main] BlockchainService - starting org.bitcoinj.core.PeerGroup@22d40a4 asynchronously
+17:00:49 [main] BlockchainService - active network is up, type: WIFI, state: CONNECTED/CONNECTED
+17:00:49 [PeerGroup Thread] PeerGroup - Starting ...
+17:00:49 [Multiplexing discovery] HttpDiscovery - Requesting BLOOM, WITNESS peers from http://httpseed.bitcoin.schildbach.de/peers?srvmask=12
+17:00:49 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.dnsseed.bluematt.me
+17:00:49 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.bitcoin.jonasschnelli.ch
+17:00:49 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.bitcoin.sipa.be
+17:00:49 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.btc.petertodd.org
+17:00:49 [Multiplexing discovery] HttpDiscovery - Requesting BLOOM, WITNESS peers from http://lightning-wallet.com:8081/peers?srvmask=12
+17:00:49 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.bitcoin.sprovoost.nl
+17:00:49 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.dnsseed.emzy.de
+17:00:49 [AsyncTask #1] AlertDialogsFragment - according to "https://wallet.schildbach.de/version?package=de.schildbach.wallet&installer=com.vivo.appstore&sdk=29&current=808", strongly recommended minimum app version is "807"
+17:00:49 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.seed.bitcoinstats.com
+17:00:49 [AsyncTask #1] AlertDialogsFragment - according to "https://wallet.schildbach.de/version?package=de.schildbach.wallet&installer=com.vivo.appstore&sdk=29&current=808", minimum security patch level for bluetooth is 2017-09-01
+17:00:49 [AsyncTask #1] AlertDialogsFragment - all good, no alert dialog shown
+17:00:49 [Multiplexing discovery] DnsDiscovery - Requesting BLOOM, WITNESS peers from xc.dnsseed.bitcoin.dashjr.org
+17:00:49 [Multiplexing discovery] DnsDiscovery - Seed dnsseed.emzy.de doesn't appear to support service bit filtering: Unable to resolve host "xc.dnsseed.emzy.de": No address associated with hostname
+17:00:49 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.jonasschnelli.ch doesn't appear to support service bit filtering: Unable to resolve host "xc.seed.bitcoin.jonasschnelli.ch": No address associated with hostname
+17:00:49 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.sprovoost.nl doesn't appear to support service bit filtering: Unable to resolve host "xc.seed.bitcoin.sprovoost.nl": No address associated with hostname
+17:00:49 [Multiplexing discovery] DnsDiscovery - Requesting all peers from dnsseed.emzy.de
+17:00:49 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.jonasschnelli.ch
+17:00:49 [Multiplexing discovery] DnsDiscovery - Seed seed.btc.petertodd.org doesn't appear to support service bit filtering: Unable to resolve host "xc.seed.btc.petertodd.org": No address associated with hostname
+17:00:49 [Multiplexing discovery] DnsDiscovery - Seed dnsseed.bitcoin.dashjr.org doesn't appear to support service bit filtering: Unable to resolve host "xc.dnsseed.bitcoin.dashjr.org": No address associated with hostname
+17:00:49 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.sipa.be doesn't appear to support service bit filtering: Unable to resolve host "xc.seed.bitcoin.sipa.be": No address associated with hostname
+17:00:49 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.sprovoost.nl
+17:00:49 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.sipa.be
+17:00:49 [Multiplexing discovery] DnsDiscovery - Requesting all peers from dnsseed.bitcoin.dashjr.org
+17:00:49 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.btc.petertodd.org
+17:00:49 [Multiplexing discovery] DnsDiscovery - Got 21 peers from xc.dnsseed.bluematt.me
+17:00:49 [Multiplexing discovery] DnsDiscovery - Got 23 peers from seed.btc.petertodd.org
+17:00:49 [Multiplexing discovery] DnsDiscovery - Got 23 peers from seed.bitcoin.sprovoost.nl
+17:00:49 [Multiplexing discovery] DnsDiscovery - Got 25 peers from seed.bitcoin.sipa.be
+17:00:49 [Multiplexing discovery] DnsDiscovery - Got 24 peers from seed.bitcoin.jonasschnelli.ch
+17:00:49 [Multiplexing discovery] DnsDiscovery - Got 23 peers from dnsseed.bitcoin.dashjr.org
+17:00:49 [Multiplexing discovery] DnsDiscovery - Got 26 peers from dnsseed.emzy.de
+17:00:49 [Multiplexing discovery] DnsDiscovery - Got 25 peers from xc.seed.bitcoinstats.com
+17:00:50 [PeerGroup Thread] MultiplexingDiscovery - Seed org.bitcoinj.net.discovery.HttpDiscovery@9e3eef7: failed to look up: org.bitcoinj.net.discovery.PeerDiscoveryException: HTTP request failed: 404 Not Found
+17:00:50 [PeerGroup Thread] MultiplexingDiscovery - Seed org.bitcoinj.net.discovery.HttpDiscovery@2e63164: failed to look up: org.bitcoinj.net.discovery.PeerDiscoveryException: java.net.ConnectException: Failed to connect to lightning-wallet.com/5.9.83.143:8081
+17:00:50 [PeerGroup Thread] PeerGroup - Peer discovery took 671.6 ms and returned 190 items from 1 discoverers
+17:00:50 [PeerGroup Thread] PeerGroup - Waiting 1672 ms before next connect attempt to [109.134.232.81]:8333
+17:00:51 [PeerGroup Thread] PeerGroup - Attempting connection to [185.51.60.148]:8333     (0 connected, 1 pending, 6 max)
+17:00:51 [PeerGroup Thread] PeerGroup - Attempting connection to [86.0.33.192]:8333     (0 connected, 2 pending, 6 max)
+17:00:51 [PeerGroup Thread] PeerGroup - Attempting connection to [54.65.201.164]:8333     (0 connected, 3 pending, 6 max)
+17:00:51 [PeerGroup Thread] PeerGroup - Attempting connection to [54.67.29.114]:8333     (0 connected, 4 pending, 6 max)
+17:00:51 [PeerGroup Thread] PeerGroup - Attempting connection to [157.7.211.107]:8333     (0 connected, 5 pending, 6 max)
+17:00:51 [PeerGroup Thread] PeerGroup - Attempting connection to [35.229.189.237]:8333     (0 connected, 6 pending, 6 max)
+17:00:52 [NioClientManager] NioClientManager - Connected to dnsseed.bitcoin.dashjr.org/35.229.189.237:8333
+17:00:52 [NioClientManager] Peer - Announcing to dnsseed.bitcoin.dashjr.org/35.229.189.237:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+17:00:52 [NioClientManager] NioClientManager - Connected to seed.btc.petertodd.org/54.65.201.164:8333
+17:00:52 [NioClientManager] Peer - Announcing to seed.btc.petertodd.org/54.65.201.164:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+17:00:52 [NioClientManager] NioClientManager - Connected to dnsseed.bitcoin.dashjr.org/157.7.211.107:8333
+17:00:52 [NioClientManager] Peer - Announcing to dnsseed.bitcoin.dashjr.org/157.7.211.107:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+17:00:52 [NioClientManager] Peer - Peer{[35.229.189.237]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}
+17:00:52 [NioClientManager] PeerGroup - Peer{[35.229.189.237]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}: New peer      (1 connected, 5 pending, 6 max)
+17:00:52 [NioClientManager] Peer - Peer{[35.229.189.237]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}: Sending Bloom filter and querying mempool
+17:00:52 [NioClientManager] NioClientManager - Connected to xc.seed.bitcoinstats.com/54.67.29.114:8333
+17:00:52 [NioClientManager] Peer - Announcing to xc.seed.bitcoinstats.com/54.67.29.114:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+17:00:52 [NioClientManager] Peer - Peer{[157.7.211.107]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}
+17:00:52 [NioClientManager] PeerGroup - Peer{[157.7.211.107]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}: New peer      (2 connected, 4 pending, 6 max)
+17:00:52 [NioClientManager] Peer - Peer{[157.7.211.107]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}: Sending Bloom filter and querying mempool
+17:00:52 [NioClientManager] Peer - Peer{[54.65.201.164]:8333, version=70015, subVer=/Satoshi:0.16.3/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}
+17:00:52 [NioClientManager] PeerGroup - Peer{[54.65.201.164]:8333, version=70015, subVer=/Satoshi:0.16.3/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}: New peer      (3 connected, 3 pending, 6 max)
+17:00:52 [NioClientManager] Peer - Peer{[54.65.201.164]:8333, version=70015, subVer=/Satoshi:0.16.3/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}: Sending Bloom filter and querying mempool
+17:00:52 [NioClientManager] NioClientManager - Connected to seed.btc.petertodd.org/185.51.60.148:8333
+17:00:52 [NioClientManager] Peer - Announcing to seed.btc.petertodd.org/185.51.60.148:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+17:00:52 [NioClientManager] NioClientManager - Connected to xc.seed.bitcoinstats.com/86.0.33.192:8333
+17:00:52 [NioClientManager] Peer - Announcing to xc.seed.bitcoinstats.com/86.0.33.192:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+17:00:52 [NioClientManager] Peer - Peer{[54.67.29.114]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}
+17:00:52 [NioClientManager] PeerGroup - Peer{[54.67.29.114]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}: New peer      (4 connected, 2 pending, 6 max)
+17:00:52 [NioClientManager] Peer - Peer{[54.67.29.114]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}: Sending Bloom filter and querying mempool
+17:00:52 [NioClientManager] PeerGroup - Setting download peer: Peer{[157.7.211.107]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}
+17:00:52 [NioClientManager] Peer - Peer{[185.51.60.148]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}
+17:00:52 [NioClientManager] Peer - Peer{[185.51.60.148]:8333, version=70015, subVer=/Satoshi:0.20.1/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}: Peer doesn't support these required services: BLOOM
+17:00:52 [NioClientManager] PeerGroup - [185.51.60.148]:8333: Peer died      (4 connected, 1 pending, 6 max)
+17:00:52 [PeerGroup Thread] PeerGroup - Waiting 1000 ms before next connect attempt to [144.91.121.51]:8333
+17:00:52 [NioClientManager] PeerSocketHandler - [185.51.60.148]:8333 - 
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+17:00:52 [NioClientManager] WalletApplication - bitcoinj uncaught exception
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+17:00:52 [NioClientManager] ConnectionHandler - Error handling SelectionKey: java.lang.IllegalStateException 
+java.lang.IllegalStateException: null
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:495)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:239)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+17:00:53 [NioClientManager] Peer - Peer{[86.0.33.192]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}
+17:00:53 [NioClientManager] PeerGroup - Peer{[86.0.33.192]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}: New peer      (5 connected, 0 pending, 6 max)
+17:00:53 [NioClientManager] Peer - Peer{[86.0.33.192]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}: Sending Bloom filter and querying mempool
+17:00:53 [PeerGroup Thread] PeerGroup - Attempting connection to [109.134.232.81]:8333     (5 connected, 1 pending, 6 max)
+17:00:54 [NioClientManager] NioClientManager - Connected to xc.seed.bitcoinstats.com/109.134.232.81:8333
+17:00:54 [NioClientManager] Peer - Announcing to xc.seed.bitcoinstats.com/109.134.232.81:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+17:00:54 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - 8 blocks/sec, 0 tx/sec, 20725 pre-filtered tx/sec, avg/last 1.44/0.63 kilobytes per sec, chain/common height 671986/672000 (warming up 13 more seconds)
+17:00:54 [NioClientManager] Peer - Peer{[109.134.232.81]:8333, version=70016, subVer=/Satoshi:0.21.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:53, height=672000}
+17:00:54 [NioClientManager] Peer - Peer{[109.134.232.81]:8333, version=70016, subVer=/Satoshi:0.21.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:53, height=672000}: Peer doesn't support these required services: BLOOM
+17:00:54 [NioClientManager] PeerGroup - [109.134.232.81]:8333: Peer died      (5 connected, 0 pending, 6 max)
+17:00:54 [PeerGroup Thread] PeerGroup - Waiting 999 ms before next connect attempt to [144.91.121.51]:8333
+17:00:54 [NioClientManager] PeerSocketHandler - [109.134.232.81]:8333 - 
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+17:00:54 [NioClientManager] WalletApplication - bitcoinj uncaught exception
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+17:00:54 [NioClientManager] ConnectionHandler - Error handling SelectionKey: java.lang.IllegalStateException 
+java.lang.IllegalStateException: null
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:495)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:239)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+17:00:55 [PeerGroup Thread] PeerGroup$ChainDownloadSpeedCalculator - End of sync detected at height 672000.
+17:00:55 [PeerGroup Thread] PeerGroup - Attempting connection to [83.208.193.242]:8333     (5 connected, 1 pending, 6 max)
+17:00:55 [main] RequestCoinsActivity - Referrer: android-app://de.schildbach.wallet
+17:00:55 [AsyncTask #3] WalletFiles - Saving wallet; last seen block is height 672000, date 2021-02-24T16:54:21Z, hash 00000000000000000002afff8a043519b16d37789d103f56dfdddd725cfc4d48
+17:00:55 [AsyncTask #3] WalletFiles - Save completed in 64.79 ms
+17:00:55 [main] RequestCoinsFragment - request coins address: bc1qkxx2n7ms7alsxhqqgr2pq7ahmgdk9efnsuyt8y
+17:00:55 [NioClientManager] NioClientManager - Connected to dnsseed.bitcoin.dashjr.org/83.208.193.242:8333
+17:00:55 [NioClientManager] Peer - Announcing to dnsseed.bitcoin.dashjr.org/83.208.193.242:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+17:00:56 [NioClientManager] Peer - Peer{[83.208.193.242]:8333, version=70015, subVer=/Satoshi:0.17.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:53, height=672000}
+17:00:56 [NioClientManager] PeerGroup - Peer{[83.208.193.242]:8333, version=70015, subVer=/Satoshi:0.17.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:53, height=672000}: New peer      (6 connected, 0 pending, 6 max)
+17:00:56 [NioClientManager] Peer - Peer{[83.208.193.242]:8333, version=70015, subVer=/Satoshi:0.17.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:53, height=672000}: Sending Bloom filter and querying mempool
+17:00:57 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 672000, date 2021-02-24T16:54:21Z, hash 00000000000000000002afff8a043519b16d37789d103f56dfdddd725cfc4d48
+17:00:57 [Wallet autosave thread] WalletFiles - Save completed in 62.73 ms
+17:01:01 [NioClientManager] PeerGroup - [54.65.201.164]:8333: Peer died      (5 connected, 0 pending, 6 max)
+17:01:01 [PeerGroup Thread] PeerGroup - Waiting 1000 ms before next connect attempt to [144.91.121.51]:8333
+17:01:02 [PeerGroup Thread] PeerGroup - Attempting connection to [106.70.245.163]:8333     (5 connected, 1 pending, 6 max)
+17:01:02 [NioClientManager] NioClientManager - Connected to seed.bitcoin.jonasschnelli.ch/106.70.245.163:8333
+17:01:02 [NioClientManager] Peer - Announcing to seed.bitcoin.jonasschnelli.ch/106.70.245.163:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+17:01:03 [NioClientManager] Peer - Peer{[106.70.245.163]:8333, version=70016, subVer=/Satoshi:0.21.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:01:02, height=672000}
+17:01:03 [NioClientManager] Peer - Peer{[106.70.245.163]:8333, version=70016, subVer=/Satoshi:0.21.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:01:02, height=672000}: Peer doesn't support these required services: BLOOM
+17:01:03 [NioClientManager] PeerGroup - [106.70.245.163]:8333: Peer died      (5 connected, 0 pending, 6 max)
+17:01:03 [PeerGroup Thread] PeerGroup - Waiting 1499 ms before next connect attempt to [144.91.121.51]:8333
+17:01:03 [NioClientManager] PeerSocketHandler - [106.70.245.163]:8333 - 
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+17:01:03 [NioClientManager] WalletApplication - bitcoinj uncaught exception
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+17:01:03 [NioClientManager] ConnectionHandler - Error handling SelectionKey: java.lang.IllegalStateException 
+java.lang.IllegalStateException: null
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:495)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:239)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+17:01:04 [PeerGroup Thread] PeerGroup - Attempting connection to [46.165.230.103]:8333     (5 connected, 1 pending, 6 max)
+17:01:05 [NioClientManager] NioClientManager - Connected to seed.btc.petertodd.org/46.165.230.103:8333
+17:01:05 [NioClientManager] Peer - Announcing to seed.btc.petertodd.org/46.165.230.103:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+17:01:05 [NioClientManager] Peer - Peer{[46.165.230.103]:8333, version=70016, subVer=/Satoshi:21.99.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:01:05, height=672000}
+17:01:05 [NioClientManager] Peer - Peer{[46.165.230.103]:8333, version=70016, subVer=/Satoshi:21.99.0/, services=1033 (NETWORK, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:01:05, height=672000}: Peer doesn't support these required services: BLOOM
+17:01:05 [NioClientManager] PeerGroup - [46.165.230.103]:8333: Peer died      (5 connected, 0 pending, 6 max)
+17:01:05 [PeerGroup Thread] PeerGroup - Waiting 2250 ms before next connect attempt to [144.91.121.51]:8333
+17:01:05 [NioClientManager] PeerSocketHandler - [46.165.230.103]:8333 - 
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+17:01:05 [NioClientManager] WalletApplication - bitcoinj uncaught exception
+org.bitcoinj.core.ProtocolException: Received AlertMessage before version handshake is complete.
+	at org.bitcoinj.core.Peer.processMessage(Peer.java:458)
+	at org.bitcoinj.core.PeerSocketHandler.receiveBytes(PeerSocketHandler.java:187)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:238)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+17:01:05 [NioClientManager] ConnectionHandler - Error handling SelectionKey: java.lang.IllegalStateException 
+java.lang.IllegalStateException: null
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:495)
+	at org.bitcoinj.net.ConnectionHandler.handleKey(ConnectionHandler.java:239)
+	at org.bitcoinj.net.NioClientManager.handleKey(NioClientManager.java:86)
+	at org.bitcoinj.net.NioClientManager.run(NioClientManager.java:122)
+	at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:65)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+	at org.bitcoinj.utils.ContextPropagatingThreadFactory$1.run(ContextPropagatingThreadFactory.java:51)
+	at java.lang.Thread.run(Thread.java:919)
+17:01:06 [AbstractTimeoutHandler timeouts] PeerSocketHandler - [185.51.60.148]:8333: Timed out
+17:01:07 [PeerGroup Thread] PeerGroup - Attempting connection to [47.110.92.146]:8333     (5 connected, 1 pending, 6 max)
+17:01:08 [AbstractTimeoutHandler timeouts] PeerSocketHandler - [109.134.232.81]:8333: Timed out
+17:01:10 [NioClientManager] NioClientManager - Connected to seed.btc.petertodd.org/47.110.92.146:8333
+17:01:10 [NioClientManager] Peer - Announcing to seed.btc.petertodd.org/47.110.92.146:8333 as: /bitcoinj:0.15.9/Bitcoin Wallet:8.08/
+17:01:11 [NioClientManager] Peer - Peer{[47.110.92.146]:8333, version=70015, subVer=/Satoshi:0.17.0.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:01:09, height=672000}
+17:01:11 [NioClientManager] PeerGroup - Peer{[47.110.92.146]:8333, version=70015, subVer=/Satoshi:0.17.0.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:01:09, height=672000}: New peer      (6 connected, 0 pending, 6 max)
+17:01:11 [NioClientManager] Peer - Peer{[47.110.92.146]:8333, version=70015, subVer=/Satoshi:0.17.0.1/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:01:09, height=672000}: Sending Bloom filter and querying mempool
+17:01:17 [AbstractTimeoutHandler timeouts] PeerSocketHandler - [106.70.245.163]:8333: Timed out
+17:01:19 [AbstractTimeoutHandler timeouts] PeerSocketHandler - [46.165.230.103]:8333: Timed out
+17:01:22 [main] BitmapFragment - opening dialog de.schildbach.wallet.ui.BitmapFragment
+17:01:35 [main] SendCoinsActivity - Referrer: android-app://de.schildbach.wallet
+17:01:35 [main] SendCoinsFragment - got PaymentIntent[BIP21,[Output[100,bc1qkxx2n7ms7alsxhqqgr2pq7ahmgdk9efnsuyt8y]],null]
+17:01:35 [main] BlockchainService - service start command: null
+17:01:35 [AsyncTask #6] DynamicFeeLiveData - Dynamic fees fetched from https://wallet.schildbach.de/fees, took 286.4 ms
+17:01:35 [main] Wallet - Completing send tx with 1 outputs totalling 100.00 BTC and a fee of 0.00125 BTC/kB
+17:01:48 [main] Wallet - Completing send tx with 1 outputs totalling 0.01 BTC and a fee of 0.00125 BTC/kB
+17:01:49 [main] Wallet - Completing send tx with 1 outputs totalling 0.10 BTC and a fee of 0.00125 BTC/kB
+17:01:49 [main] Wallet - Completing send tx with 1 outputs totalling 1.00 BTC and a fee of 0.00125 BTC/kB
+17:01:49 [main] Wallet - Completing send tx with 1 outputs totalling 10.00 BTC and a fee of 0.00125 BTC/kB
+17:01:50 [main] Wallet - Completing send tx with 1 outputs totalling 100.00 BTC and a fee of 0.00125 BTC/kB
+17:01:56 [main] SendCoinsFragment - switching to PRIORITY fee category
+17:01:56 [main] Wallet - Completing send tx with 1 outputs totalling 100.00 BTC and a fee of 0.00175 BTC/kB
+17:02:00 [main] HelpDialogFragment - opening dialog de.schildbach.wallet.ui.HelpDialogFragment
+17:02:13 [main] BlockchainService - service start command: de.schildbach.wallet.service.cancel_coins_received
+17:02:13 [main] SendCoinsActivity - Referrer: android-app://de.schildbach.wallet
+17:02:13 [main] SendCoinsFragment - got PaymentIntent[null,null,null]
+17:02:13 [main] BlockchainService - service start command: null
+17:02:14 [AsyncTask #8] DynamicFeeLiveData - Dynamic fees not modified at https://wallet.schildbach.de/fees, took 304.3 ms
+17:02:21 [main] BlockchainService - service start command: de.schildbach.wallet.service.cancel_coins_received
+17:03:17 [Wallet autosave thread] WalletFiles - Background saving wallet; last seen block is height 672001, date 2021-02-24T17:03:05Z, hash 00000000000000000005e44c389c63e26c880fe1098d86b6b7d3c45ab6f26847
+17:03:17 [Wallet autosave thread] WalletFiles - Save completed in 98.42 ms
+17:03:44 [main] BlockchainService - service idling detected, trying to stop
+17:03:44 [main] BlockchainService - stopping org.bitcoinj.core.PeerGroup@22d40a4 asynchronously
+17:03:44 [PeerGroup Thread] PeerGroup - Stopping ...
+17:03:44 [PeerGroup Thread] PeerGroup - Unsetting download peer: Peer{[157.7.211.107]:8333, version=70015, subVer=/Satoshi:0.18.0/, services=1037 (NETWORK, BLOOM, WITNESS, NETWORK_LIMITED), time=2021-02-25 00:00:52, height=672000}
+17:03:44 [main] WalletFiles - Saving wallet; last seen block is height 672001, date 2021-02-24T17:03:05Z, hash 00000000000000000005e44c389c63e26c880fe1098d86b6b7d3c45ab6f26847
+17:03:44 [PeerGroup Thread] PeerGroup - Stopped, took 9.042 ms.
+17:03:44 [main] WalletFiles - Save completed in 23.79 ms
+17:03:44 [main] WalletApplication - wallet saved to: '/data/user/0/de.schildbach.wallet/files/wallet-protobuf', took 25.28 ms
+17:03:44 [main] StartBlockchainService - last used 2 minutes ago, rescheduling block chain sync in roughly 15 minutes
+17:03:44 [main] BlockchainService - released WakeLock{d95004f held=false, refCount=0}
+17:03:44 [main] BlockchainService - service was up for 2.917 min
+17:03:53 [main] SettingsFragment - trusted peer 'BTC' unknown host
+17:03:53 [main] SettingsFragment - trusted peer 'Schildbach' unknown host
+17:03:54 [main] SettingsFragment - trusted peer 'Wallet' unknown host
+17:04:19 [main] SettingsFragment - trusted peer 'BITCOIN' unknown host
+17:04:19 [main] SettingsFragment - trusted peer '(VBTC)' unknown host
+17:04:25 [main] SettingsFragment - trusted peer 'BITCOIN' unknown host
+17:04:38 [main] SettingsFragment - trusted peer 'VBTC' unknown host
+17:14:17 [main] SettingsFragment - trusted peer 'Bitcoin' unknown host
