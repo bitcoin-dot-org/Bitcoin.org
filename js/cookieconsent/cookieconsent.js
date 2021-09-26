@@ -154,7 +154,6 @@ id: cookie-notification
 
     /*
      Replace {{variable.name}} with it's property on the scope
-     Also supports {{variable.name || another.name || 'string'}}
      */
     var insertReplacements = function (htmlStr, scope) {
       return htmlStr.replace(/\{\{(.*?)\}\}/g, function (_match, sub) {

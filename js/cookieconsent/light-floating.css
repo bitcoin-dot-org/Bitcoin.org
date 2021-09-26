@@ -78,7 +78,7 @@
 
 @media screen and (min-width: 500px){
 	.cc_container{
-		left:initial;
+		left:auto;
 		right:20px;
 		bottom:20px;
 		width:300px;
@@ -107,7 +107,7 @@
 	background:#fff;
 	color:#999;
 	font-size:17px;
-	font-family:"Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+	font-family:"Titillium Web", Arial, sans-serif;
 	box-sizing:border-box;
 	border:1px solid #ccc
 }
@@ -120,7 +120,7 @@
 
 .cc_container .cc_btn,.cc_container .cc_btn:visited{
 	color:#FFF;
-	background-color:#EF9E5B;
+	background-color:#FF9500;
 	transition:background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
 	-webkit-transition:background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
 	border-radius:5px;
@@ -128,18 +128,18 @@
 }
 
 .cc_container .cc_btn:hover,.cc_container .cc_btn:active{
-	background-color:#E77F2A;
+	background-color:#F9A136;
 	color:#FFF
 }
 
 .cc_container a,.cc_container a:visited{
 	text-decoration:none;
-	color:#31a8f0;
+	color:#3490E6;
 	transition:200ms color
 }
 
 .cc_container a:hover,.cc_container a:active{
-	color:#555
+	color:#3490E6
 }
 
 @-webkit-keyframes fadeInRight{

@@ -1,0 +1,40 @@
+---
+# This file is licensed under the MIT License (MIT) available on # http://opensource.org/licenses/MIT.
+
+layout: base-core
+end_of_page:
+  <script>updateToc();</script>
+  <script>accordion();</script>
+  <script>onScrollButton();</script>
+  <script>boxShow();</script>
+---
+
+<div class="hero">
+  <div class="container hero-container">
+    <!-- Note: this file is built non-deterministically -->
+    <h1>{% translate pagetitle %}</h1>
+    {% if page.lang != 'en' %}
+    <p class="summary">{% translate summary %}</p>{% endif %}
+  </div>
+</div>
+
+<div class="toc-container">
+  <div class="row toc-row">
+
+    <div id="toc" class="toc">
+      <div>
+        <button class="mob-sidebar-open" hidden>ALL TOPICS</button>
+        <div class="sidebar">
+          <div class="sidebar-inner">
+            <button class="mob-sidebar-close" hidden></button>
+            {% include helpers/toc.html html=content %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toccontent">
+      {{ content }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+http://opensource.org/licenses/MIT.
+{% endcomment %}
+
+<div class="walletmenu-mobile" hidden>
+  {% assign platformsByPlatform = site.platforms | group_by: "platform" %}
+  <div class="accordion accordion-platform">
+    {% if page.id == "choose-your-wallet" %}
+       {% assign platformClass = "is-expanded" %}
+     {% endif %}
+    <div class="accordion-tab accordion-tab-1 {{platformClass}}">
+      <p class="accordion-label">{% translate wallet-select-type choose-your-wallet %}</p>
+      <p class="selected-item selected-platform"></p>
+    </div>
+    <div class="accordion-content platform-accordion-content">
+      {% for platform in platformsByPlatform %}
+
+        {% capture platformName %}{{ platform.name | split: "=>" | last | split: '"' }}{% endcapture %}
+        {% assign platformName = platformName | trim | replace: '}' '' | replace: ' ' '' %}
+
+        {% assign platformClass = "wallet-" | append: platformName %}
+        {% assign ulClass = "" %}
+        {% if page.id contains platformName %}
+          {% assign platformClass = platformClass | append: " active" %}
+          {% assign ulClass = " active" %}
+        {% endif %}
+        <div class="accordion-item {{ platformClass }}">
+          {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" %}
+          {% if platformName == 'hardware' or platformName == 'web' %}
+            <a class="accordion-link {{platformName}}-link" href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
+          {% else %}
+            <a class="accordion-link wallet-platform-link {{platformName}}-link" href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+    {% for platform in platformsByPlatform %}
+
+      {% capture platformName %}{{ platform.name | split: "=>" | last | split: '"' }}{% endcapture %}
+      {% assign platformName = platformName | trim | replace: '}' '' | replace: ' ' '' %}
+
+      {% capture pageName %}{{ page.id | split: "-" | last }}{% endcapture %}
+
+      {% if platform.items.size > 1 %}
+        <div class="accordion accordion-os {% if page.id contains platformName %}is-visible{% endif %}" hidden>
+          <div class="accordion-tab accordion-tab-2 {% if pageName == platformName %}is-expanded{% endif %}">
+            <p class="accordion-label">{% translate wallet-select-operating-system choose-your-wallet %}</p>
+            <p class="selected-item selected-os"></p>
+          </div>
+          <div class="accordion-content">
+
+            {% for item in platform.items %}
+              {% assign osClass = "wallet-" | append: item.os.name %}
+              {% if page.id contains item.id %}
+                {% assign osClass = osClass | append: " active" %}
+              {% endif %}
+
+              {% if item.os.name != 'desktop' and item.os.name != 'mobile' %}
+              <div class="accordion-item {{osClass}}">
+                <a class="accordion-link link-{{osClass}}" href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
+                  {% translate platform{{item.os.name}} choose-your-wallet %}
+                </a>
+              </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+
+    {% endfor %}
+</div>

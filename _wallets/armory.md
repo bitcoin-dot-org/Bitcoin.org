@@ -15,6 +15,7 @@ platform:
       link: "https://btcarmory.com/"
       source: "https://github.com/goatpig/BitcoinArmory"
       screenshot: "armory.png"
+      features: "full_node legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnoderequired"

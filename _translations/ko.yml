@@ -16,7 +16,7 @@ ko:
     missiontxt6: "국제화에 따른 비트코인의 전 세계적 접근성 개선"
     missiontxt7: "비트코인에 대한 중립적인 정보 제공과 리소스로서의 위치 고수"
     help: "저희를 도와주세요"
-    helptxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>에서 문제사항이나 풀 영어 요청을 열어서 모든 문제를 보고하거나 bitcoin.org을 향상시키는데 도움을 줄 수 있습니다.  풀 요청을 제출할 때, 변경사항에 대해 논의하고 일에 적용할 시간을 충분히 가지시기 바랍니다. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">Transifex</a>팀에 참여함으로써 번역에 도움을 주실 수도 있습니다. 회의처럼 특별한 경우를 제외하고 당신의 개인 비즈니스 또는 웹사이트를위한 프로모션을 요청하지마세요. bitcoin.org를 향상시키기위해 시간을 보내시는 모든 기여자분들께 감사드립니다."
+    helptxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a>에서 문제사항이나 풀 영어 요청을 열어서 모든 문제를 보고하거나 bitcoin.org을 향상시키는데 도움을 줄 수 있습니다.  풀 요청을 제출할 때, 변경사항에 대해 논의하고 일에 적용할 시간을 충분히 가지시기 바랍니다. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>팀에 참여함으로써 번역에 도움을 주실 수도 있습니다. 회의처럼 특별한 경우를 제외하고 당신의 개인 비즈니스 또는 웹사이트를위한 프로모션을 요청하지마세요. bitcoin.org를 향상시키기위해 시간을 보내시는 모든 기여자분들께 감사드립니다."
     maintenance: "유지 관리"
     documentation: "문서"
     translation: "번역"
@@ -87,9 +87,8 @@ ko:
     chanmarket: "(실시간 시장 거래가)"
     chanmining: "(비트코인 채굴 관련)"
     social: "소셜 네트워크"
-    linkgoogle: "<a href=\"https://plus.google.com/communities/115591368588047305300\">Google+ 비트코인 커뮤니티</a>"
-    linktwitter: "트위터 검색"
-    facebook: "<a href=\"https://www.facebook.com/bitcoins\">페이스북 페이지</a>"
+    linktwitter: "트위터"
+    facebook: '<a href="https://www.facebook.com/hashtag/bitcoin">페이스 북</a>'
     meetups: "모임"
     meetupevents: "비트코인 컨퍼런스 및 이벤트"
     meetupgroup: "비트코인 모임 그룹들"
@@ -106,24 +105,19 @@ ko:
     walletcathardware: "하드웨어"
     walletcatweb: "웹"
     walletbitcoincore: "비트코인 코어는 풀 비트코인 사용자로서 네트워크의 중추적 역할을 구축합니다. 비트코인 코어는 보안, 개인정보보호 및 안전을 제공합니다. 하지만, 비트코인 코어는 기능이 한정되어 있으며 많은 용량과 메모리를 필요로 합니다."
-    walletmultibit: "MultiBit는 사용의 용이함과 속도에 초점을 둔 라이트웨이트 클라이언트입니다. 몇분내로 네트워크와 동기화하고 사용할 수 있습니다. 또한 MultiBit은 다양한 언어를 지원합니다. 비전문의 사용자들에게 좋습니다."
     walletarmory: "Armory는 파워유저들을 위해 향상된 기능을 제공하는 고급 클라이언트입니다. 많은 백업과 인크립션 기능들을 제공하며, 오프라인 컴퓨터를 이용한 콜드 스토리지가 가능합니다."
     walletelectrum: "Electrum의 초점은 적은 자원소모, 간편함, 그리고 속도입니다. 원격 서버들을 이용해 비트코인의 가장 복잡한 부분들을 관리하며 비밀구절을 사용하여 당신의 지갑을 복구할 수 있게 해주는 기능을 제공합니다."
-    walletmsigna: "mSIGNA는 첨단형이지만 사용하기 쉬운 지갑으로 속도 및 간편성 외에도 엔터프라이즈 급의 확장성 및 강력한 보안을 갖추고 있습니다. mSIGNA는 BIP32, 다중 서명 거래, 오프라인 저장소, 멀티디바이스 동기화 및 암호화된 전자 종이 백업을 지원합니다."
     walletbitcoinwallet: "비트코인 지갑은 사용하기 쉽고 안정적일 뿐만 아니라 안전하고 빠릅니다. 비전은 분권성 및 제로트러스트로, 중앙 서비스가 비트코인 관련 운영에 필요하지 않는 다는것을 의미합니다. 본 응용프로그램은 비-전문가를 위한 좋은 선택안 입니다."
-    walletbreadwallet: "간편함이 브레드월렛의 핵심 디자인 원리입니다. 실제 단일형 비트코인 클라이언트로서, 서버가 해킹 또는 다운되는 일이 없으며, iOS의 강력한 보안의 기반을 구축한 브레드월렛은 멀웨어, 브라우저 보안 결점 외에도 물리적 도난으로부터 보호하도록 고안되었습니다."
+    walletbrd: "간편함이 브레드월렛의 핵심 디자인 원리입니다. 실제 단일형 비트코인 클라이언트로서, 서버가 해킹 또는 다운되는 일이 없으며, iOS의 강력한 보안의 기반을 구축한 브레드월렛은 멀웨어, 브라우저 보안 결점 외에도 물리적 도난으로부터 보호하도록 고안되었습니다."
     walletmyceliumwallet: "Mycelium Bitcoin Wallet은 보안, 속도, 용이한 사용에 중점을 두고 설계된 안드로이드용 오픈 소스 지갑입니다. 당신이 비트코인을 안전하게 보호할 수 있게 도와주는 당신의 키 관리와 콜드 스토리지를 위한 독특한 기능들을 가지고 있습니다. "
-    walletcoinkite: "Coinkite는 웹 지갑이자 직불 카드 서비스로서 편리성에 중점을 두었습니다. 모바일 브라우저, 머천트 도구, 판매시점지불 단말기에서 사용이 가능합니다. 하이브리드 지갑이며 완전한 준비금고입니다."
-    walletbitgo: "BitGo는 높은 수준의 보안을 제공하는 다중-서명 지갑입니다. 모든 거래는 두 가지의 서명을 필요로 하며, 귀하의 비트코인을 멀웨어 및 서버 공격으로부터 보호해줍니다. 개인 키는 사용자가 보유함으로써 BitGo가 비트코인에 접근할 수 없습니다. 비 전문가에게 적합한 선택안입니다. "
-    walletgreenaddress: "GreenAddress는 유저친화적인 다중서명 지갑으로서 한층 더 개선된 보안과 프라이버시를 제공합니다. 어떠한 경우에는 개인 키들이 서버에 있지 않고 인크립트가 된 경우에도 서버에 보내지지 않습니다. 보안상 당신은 항상 이중인증-2 Factor Authentication-과 브라우저 익스텐션 또는 안드로이드 앱을 사용해야 합니다."
-    wallettrezor: "TREZOR는 편리함을 희생하지 않고 높은 수준의 보안을 제공하는 하드웨어 지갑입니다. 콜드 스토리지와 달리, TREZOR는 온라인 장치에 연결된 상태에서 거래에 서명할 수 있습니다. 즉, 비트코인을 사용하는 것은 위험에 노출된 컴퓨터를 사용할 시에도 안전하다는 것을 의미합니다."
+    wallettrezorone: "TREZOR는 편리함을 희생하지 않고 높은 수준의 보안을 제공하는 하드웨어 지갑입니다. 콜드 스토리지와 달리, TREZOR는 온라인 장치에 연결된 상태에서 거래에 서명할 수 있습니다. 즉, 비트코인을 사용하는 것은 위험에 노출된 컴퓨터를 사용할 시에도 안전하다는 것을 의미합니다."
     walletnano: "Ledger Nano는 하드웨어 지갑이며 ST23YT66 은행 스마트카드 플랫폼으로 만들어졌습니다. 사용자 개인키를 안전하게 보호하고, 보안 선불 카드 또는 멀티 서명으로 사용되는 거래를 확인합니다. 오픈 소스가 아닌 경우, 엄격하게 확인할 수 있습니다."
+    walletwasabi: "와사비는 개인정보 보호를 중요시 여기는 비트코인 지갑입니다."
     walletdownload: "설치"
     walletvisit: "웹사이트 방문"
     walletsourcecode: "소스 코드"
     platformandroid: "안드로이드"
     platformios: "아이오에스"
-    platformblackberry: "블랙베리"
     platformwindows: "윈도우"
     platformmac: "맥"
     platformlinux: "리눅스"
@@ -201,7 +195,7 @@ ko:
     pagetitle: "비트코인 개발 "
     summary: "현재 설계, 소프트웨어, 개발자들에 대해 더 알아보기"
     spec: "다큐멘테이션"
-    spectxt: "비트코인 시스템의 상세 기술과 현재 나와있는 각종 툴, API의 사용법에 대해 더 자세히 알고 싶다면 <a href=\"/en/developer-documentation\">개발자용 문서 페이지</a> 탐색을 추천드립니다."
+    spectxt: "비트코인 시스템의 상세 기술과 현재 나와있는 각종 툴, API의 사용법에 대해 더 자세히 알고 싶다면 <a href=\"https://developer.bitcoin.org/\">개발자용 문서 페이지</a> 탐색을 추천드립니다."
     coredev: "핵심 개발자들"
     inventor: "비트코인 시스템은 사토시 나카모토에의해 디자인되었습니다. 그의 오리지널 비트코인 코드베이스는 다음과같은 개발자와 자원봉사자 커뮤니티에의해 비트코인 코어로 유지되어 왔습니다. "
     disclosure: "책임 있는 정보 공개"
@@ -257,7 +251,7 @@ ko:
     howitworkstxt1: "사용자 관점에서, Bitcoin은 개인 Bitcoin 지갑을 제공하고, 사용자가 그것을 이용하여 bitcoin을 주고 받을 수 있도록 하는 모바일 앱이나 컴퓨터 프로그램에 불과합니다. "
     howitworkstxt2: "비트코인 네트워크는 블럭 체인이라는 공공 회계원장을 공유하고 있습니다. 이 회계원장에는 여태까지 처리된 모든 거래가 포함되어 있어서, 사용자의 컴퓨터에서 모든 거래의 유효성을 검사할 수 있습니다. 각각의 거래는, 모든 사용자가 자신의 비트코인 주소에서 비트코인을 보내는 것을 완전히 제어할 수 있도록 하는, 보내는 주소에 상응하는 디지털 서명으로 보호됩니다. 또한, 누구나 특수 하드웨어의 연산력을 사용하여 거래를 처리하고 이 서비스에 대한 댓가를 비트코인으로 벌어들일 수 있습니다. 이것을 \"채굴\"이라고도 합니다. 비트코인에 대한 자세한 정보는 <a href=\"#how-it-works#\">전용 페이지</a>와 <a href=\"#bitcoin-paper#\">비트코인 원본</a>을 참고하세요."
     used: "사람들이 정말 비트코인을 사용하나요?"
-    usedtxt1: "네. 비트코인을 사용하는 개인과 <a href=\"http://usebitcoins.info/\">사업자의 수가 증가</a>하고 있습니다. 여기에는 식당, 아파트, 법률사무소 그리고 Namecheap, WordPress, Reddit, Flattr 같은 인기 온라인 서비스를 비롯한 소매상들이 포함됩니다. 비트코인은 아직 새로운 사회 현상이나, 아주 빠르게 성장하고 있습니다. 2013년 8월말 현재, <a href=\"https://bitcoincharts.com/bitcoin/\">유통 중인 모든 비트코인의 가치</a>는 미화 15억 달러를 뛰어 넘었고, 매일 수백만 달러의 비트코인이 교환되고 있습니다."
+    usedtxt1: "네. 비트코인을 사용하는 개인과 사업자의 수가 증가하고 있습니다. 여기에는 식당, 아파트, 법률사무소 그리고 Namecheap, WordPress, Reddit, Flattr 같은 인기 온라인 서비스를 비롯한 소매상들이 포함됩니다. 비트코인은 아직 새로운 사회 현상이나, 아주 빠르게 성장하고 있습니다. 2013년 8월말 현재, <a href=\"https://bitcoincharts.com/bitcoin/\">유통 중인 모든 비트코인의 가치</a>는 미화 15억 달러를 뛰어 넘었고, 매일 수백만 달러의 비트코인이 교환되고 있습니다."
     acquire: "비트코인은 어떻게 얻을 수 있나요?"
     acquireli1: "상품이나 서비스에 대한 대가로서"
     acquireli2: "<a href=\"https://www.buybitcoinworldwide.com\">비트코인 환전소</a>에서 비트코인을 구입하세요."
@@ -271,7 +265,7 @@ ko:
     advantagesli2: "<em><b>매우 낮은 수수료</b></em> - 비트코인 결제는 현재 무료이거나 아주 적은 소액 거래에만 수수료가 붙습니다. 사용자들은 더 빠른 승인을 가져다 주는 처리 우선권을 얻기위해 거래에 수수료를 포함시킬 수 있습니다. 추가적으로, 상인들의 거래 처리, 비트코인의 불환화폐로의 환전, 그리고 매일 상인들의 은행계좌로 자금을 직접 예금하는 것을 돕기 위해 상인 처리기들이 따로 존재합니다. 이 서비스들은 비트코인에 기초해 있기에 PayPal이나 신용카드 네트워크보다 훨씬 더 낮은 가격에 제공될 수 있습니다."
     advantagesli3: "<em><b>상인들에게 적은 위험요소</b></em> - 비트코인 거래들은 안전하고, 철회불가하며, 고객의 민감한 또는 개인 정보를 포함하고 있지 않습니다. 상인들은 이로인해 PCI를 준수하지 않아도 되며, 사기 또는 사기성 지불거부의 피해를 덜 받습니다. 이는 신용카드가 없거나, 사기율이 너무나 높은 시장으로도 사업을 확장할 수 있는 가능성이 열린다는 것입니다. 어찌됐든 결과는 더 낮은 수수료, 더 큰 시장, 그리고 관리비용절약입니다."
     advantagesli4: "<em><b>보안과 통제</b></em> - 비트코인 사용자들은 자신들의 거래에 대한 완전한 통제권을 갖습니다. 다른 결제시스템처럼 상인들이 은근슬쩍 요금을 물리거나, 고객이 원치않은 요금을 물릴 수가 없습니다. 비트코인 거래는 또한 개인정보를 공개하지 않아도 됩니다. 이는 신분도용에 대한 강한 보안이 되며 비트코인 사용자들은 또한 자신들의 돈을 백업과 인크립션으로 보호할 수 있습니다."
-    advantagesli5: "<em><b>투명성 및 중립성</b></em> - 비트코인 통화 공급에 관련된<a href=\"https://www.biteasy.com/\">모든 정보</a>는 블럭 체인에서 누구나 손쉽게 실시간으로 확인하고 사용할 수 있습니다. 어떤 개인이나 단체도 비트코인 프로토콜을 통제하거나 조작할 수 없는데 이는 그것이 암호 작성적으로 안전하기 때문입니다. 이로 인해, 비트코인의 코어는 완전히 중립적이고, 투명하며, 예측될 수 있음을 신뢰할 수 있습니다."
+    advantagesli5: "<em><b>투명성 및 중립성</b></em> - 비트코인 통화 공급에 관련된<a href=\"https://live.blockcypher.com/btc/\">모든 정보</a>는 블럭 체인에서 누구나 손쉽게 실시간으로 확인하고 사용할 수 있습니다. 어떤 개인이나 단체도 비트코인 프로토콜을 통제하거나 조작할 수 없는데 이는 그것이 암호 작성적으로 안전하기 때문입니다. 이로 인해, 비트코인의 코어는 완전히 중립적이고, 투명하며, 예측될 수 있음을 신뢰할 수 있습니다."
     disadvantages: "비트코인의 단점은 무엇인가요?"
     disadvantagesli1: "<em><b>대중의 수용도</b></em> - 많은 사람들이 아직 비트코인에 대해 모릅니다. 매일 더 많은 사업들이 비트코인을 받아들이고 있으나 아직은 그 수가 작고 비트코인이 <a href=\"https://en.wikipedia.org/wiki/Network_effect\">네트워크효과</a>를 보려면 아직 성장이 필요합니다."
     disadvantagesli2: "<em><b>변동성</b></em> - 현재 유통되고 있는 비트코인의 <a href=\"https://bitcoincharts.com/bitcoin/\">시가총액</a>과 비트코인을 사용하는 사업의 수가 아직 가능한 정도에 비해 많이 적습니다. 그렇기 때문에, 비교적 작은 이벤트, 거래, 또는 사업활동들이 비트코인 가격에 큰 영향을 끼칩니다. 이론적으로는, 비트코인 기술과 시장이 성숙함에 따라 가격의 변동성이 줄어들어야 합니다. 그렇지만 세계는 이런 창업적인 화폐를 아직 본적이 없습니다. 비트코인이 어떻게 될지는 두고봐야 할 것입니다. (흥미진진하지 않습니까?)"
@@ -376,7 +370,7 @@ ko:
     quantumtxt1: "그렇습니다. 전통적인 은행시스템과 같은 대부분의 암호 작성술에 의존하는 시스템들이 그렇습니다. 그러나 아직은 양자 컴퓨터가 존재하지 않으며, 이는 한동안 그러할 것입니다. 양자 컴퓨터가 비트코인에 임박한 위혐이 되었을 경우에는 프로토콜이 양자 알고리즘을 입양한 업그레이드를 하면 될 것입니다. 이 업데이트가 가질 중요성을 고려했을 때, 이는 아마 많은 개발자들에 의해 단단히 검토될 것이고 후에 비트코인 사용자들에 의해 받아들여질 것입니다."
     help: "도움말"
     morehelp: "저는 더 배우고 싶어요. 어디에서 도움을 얻을 수 있죠?"
-    morehelptxt1: "<a href=\"#resources#\">리소스</a>, <a href=\"#community#\">커뮤니티</a> 페이지 또는 <a href=\"https://en.bitcoin.it/wiki/FAQ\">위키 질문과답변</a>에서 더 많은 정보와 도움을 얻을 수 있습니다."
+    morehelptxt1: "<a href=\"#resources#\">리소스</a>, <a href=\"#community#\">커뮤니티</a> 페이지 또는 <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">위키 질문과답변</a>에서 더 많은 정보와 도움을 얻을 수 있습니다."
   getting-started:
     title: "시작하기 - Bitcoin"
     pagetitle: "비트코인 시작하기"
@@ -420,7 +414,7 @@ ko:
     processing: "프로세싱<span class=\"titlelight\"> - 채굴</span>"
     processingtxt: "'채굴'은 대기중인 거래를 블럭 체인에 포함시킴으로써 거래를 <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>승인</i></a>하는 <b>분산 합의 제도</b>입니다. 블럭 체인에 시간적 나열을 강제하고, 네트워크의 중립성을 보호하며, 서로 다른 컴퓨터들이 시스템의 상태에 대해 동의하도록 합니다. 승인이 이루어지려면, 거래는 네트워크에 의해 검증되는 매우 엄격한 암호화 규칙을 만족하는 <a href=\"#vocabulary##[vocabulary.block]\"><i>블럭</i></a>에 반드시 포함되어야 합니다. 이 암호화 규칙은 이전의 블럭들이 변경되는 것을 방지하는데 이는 이러한 변경들이 나중에 연산되는 모든 블럭들을 무효화하기 때문입니다. 채굴은 또한 경쟁적 복권과 같은 것을 생성하여 어떤 개인도 연속하여 새 거래 블럭을 블럭 체인에 더할 수 없게 방지합니다. 이같이 어떤 개인도 블럭 체인에 포함된 것을 통제하거나 자신의 지출을 되돌리기 위해 블럭 체인의 일부를 대체할 수 없습니다."
     readmore: "더 자세히 알아보기"
-    readmoretxt: "위 사항들은 매우 짧고 간결한 개요입니다. 더 많은 자세한 사항을 알고 싶다면 시스템의 주요 설계 내용에 대해 설명하고 있는 <a href=\"#bitcoin-paper#\">비트코인 창시자의 초록 원문</a>을 읽어보세요. 아니면  <a href=\"/en/developer-documentation\">개발자용 문서 페이지</a> 또는 <a href=\"https://en.bitcoin.it/wiki/Main_Page\">비트코인 위키</a>를 탐색해보세요. "
+    readmoretxt: "위 사항들은 매우 짧고 간결한 개요입니다. 더 많은 자세한 사항을 알고 싶다면 시스템의 주요 설계 내용에 대해 설명하고 있는 <a href=\"#bitcoin-paper#\">비트코인 창시자의 초록 원문</a>을 읽어보세요. 아니면  <a href=\"https://developer.bitcoin.org/\">개발자용 문서 페이지</a> 또는 <a href=\"https://en.bitcoin.it/wiki/Main_Page\">비트코인 위키</a>를 탐색해보세요. "
   index:
     title: "비트코인 - 오픈소스 P2P 화폐"
     metadescription: "비트코인은 혁신적인 지불 네트워크이며 돈의 새로운 종류입니다. bitcoin.org에서 비트코인을 알고 시작할 필요가 있으므로 모든 것을 찾아보세요."
@@ -493,7 +487,7 @@ ko:
     volunteer: "면접대상자"
     volunteernonprofit: " <a href=\"https://bitcoinfoundation.org/contact/\">비트코인 신설</a> 또는 지역<a href=\"#community##[community.non-profit]\">비영리 기관</a>과 의사소통하세요."
     volunteerpresscenter: "독립적인<a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>에서 더 많은 잠재적인 언론 연락처를 찾으세요"
-    faqmore: "Bitcoin에 대해 더 많은 것을 배우시려면, <a href=\"/en/faq\">질문과답변</a> 또는 <a href=\"https://en.bitcoin.it/wiki/FAQ\">비트코인 위키</a>를 방문해주세요."
+    faqmore: "Bitcoin에 대해 더 많은 것을 배우시려면, <a href=\"/en/faq\">질문과답변</a> 또는 <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">비트코인 위키</a>를 방문해주세요."
     materialpicture: "사진"
     materialpicturemore: "더 많은 사진 보기..."
   privacy:
@@ -508,7 +502,7 @@ ko:
     pagetitle: "당신의 프라이버시를 보호하세요"
     pagedesc: "비트코인은 자주 익명 지불 네트워크로 이해됩니다. 그러나 사실 비트코인은 아마 세계에서 제일 투명한 지불 네트워크일 것입니다. 동시에 비트코인은 올바로 사용되었을 때 충분한 수준의 프라이버시를 제공할 수 있습니다. <b>당신의 프라이버시를 지키기 위해 올바른 습관들을 실천하는 것은 당신의 책임이라는 것을 항상 기억하세요</b>."
     traceable: "비트코인의 추적성 이해하기"
-    traceabletxt: "비트코인은 사람들이 아직 익숙하지 않은 수준의 투명성을 가지고 작동합니다. 모든 비트코인 거래는 공개되며 추적이 가능하고 영구히 비트코인 네트워크에 기록됩니다. 비트코인의 위치와 움직임은 오로지 비트코인 주소라는 정보로서 정의됩니다. 이러한 주소들은 사용자의 지갑에 사적으로 생성됩니다. 그러나 한 번 하나의 주소가 사용되었을 때, 그 주소는 존재하는 모든 거래 역사 정보와 관련이 됩니다.  누구나 어느 주소든지 그 주소의<a href=\"https://www.biteasy.com\">잔액과 거래</a>들을 열어볼 수 있는 것입니다. 사용자가 제품이나 서비스를 받기 위해서는 그들의 신원을 공개해야 하니 비트코인 주소들은 익명성이 완전히 보장될 수는 없습니다. 이러한 이유로 인해, 하나의 비트코인 주소는 단 한번만 사용되어야하며 사용자들은 그들의 주소를 밝히지 않도록 조심해야 합니다."
+    traceabletxt: "비트코인은 사람들이 아직 익숙하지 않은 수준의 투명성을 가지고 작동합니다. 모든 비트코인 거래는 공개되며 추적이 가능하고 영구히 비트코인 네트워크에 기록됩니다. 비트코인의 위치와 움직임은 오로지 비트코인 주소라는 정보로서 정의됩니다. 이러한 주소들은 사용자의 지갑에 사적으로 생성됩니다. 그러나 한 번 하나의 주소가 사용되었을 때, 그 주소는 존재하는 모든 거래 역사 정보와 관련이 됩니다.  누구나 어느 주소든지 그 주소의<a href=\"https://live.blockcypher.com/btc\">잔액과 거래</a>들을 열어볼 수 있는 것입니다. 사용자가 제품이나 서비스를 받기 위해서는 그들의 신원을 공개해야 하니 비트코인 주소들은 익명성이 완전히 보장될 수는 없습니다. 이러한 이유로 인해, 하나의 비트코인 주소는 단 한번만 사용되어야하며 사용자들은 그들의 주소를 밝히지 않도록 조심해야 합니다."
     receive: "지불을 받기 위해서 새 주소를 사용하세요"
     receivetxt: "당신의 프라이버시를 지키기 위해서, 당신은 매번 지불을 받을 때마다 새로운 비트코인 주소를 사용해야 합니다. 또한, 당신은 목적에 따라 다수의 다른 지갑들을 사용할 수 있습니다. 이렇게 하는 것은 각각의 거래들을 서로 격리시켜서 외부에서 보았을 때에 이 거래들이 연관성이 없는 것처럼 보이게 할 수 있습니다. 당신에게 비트코인을 보내는 사람들은 당신이 가지고 있는 다른 비트코인 주소들을 볼 수 없으며 당신이 그 주소들로 무엇을 하는지도 알 수 없습니다. 이는 아마 당신이 기억해야 할 가장 중요한 조언일 것입니다."
     public: "공개 공간을 조심하십시오"
@@ -592,7 +586,7 @@ ko:
     nonprofit: "조직"
     nonprofittxt: " <a href=\"https://bitcoinfoundation.org/\">Bitcoin Foundation</a>과 많은 <a href=\"#community##[community.non-profit]\">비영리 단체</a>들이 비트코인을 홍보하고 보호하는 헌신하고 있습니다. 이들의 프로젝트, 토론, 이벤트에 참여함으로 이들 모임들을 도울 수 있습니다."
     spread: "퍼뜨리세요"
-    spreadtxt: "관심이 있는 이들에게 비트코인에 대해 이야기하거나 블로그에 글을 쓰면 됩니다. 당신이 제일 좋아하는 가게에 비트코인을 이용해 돈을 지불하고 싶다고 말할 수도 있습니다. 비트코인을 취급하는 <a href=\"http://usebitcoins.info/\">상점 주소록</a>을 업데이트하거나 자신만의 비트코인 티셔츠를 만드는 창의적인 방법도 있습니다."
+    spreadtxt: "관심이 있는 이들에게 비트코인에 대해 이야기하거나 블로그에 글을 쓰면 됩니다. 당신이 제일 좋아하는 가게에 비트코인을 이용해 돈을 지불하고 싶다고 말할 수도 있습니다. 비트코인을 취급하는 상점 주소록을 업데이트하거나 자신만의 비트코인 티셔츠를 만드는 창의적인 방법도 있습니다."
     wiki: "다큐멘테이션"
     wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a>와 <a href=\"https://en.bitcoin.it/\">비트코인 위키</a>는 유용한 다큐멘테이션을 제공하며 끊임없이 가지고 있는 정보를 개선하고 있습니다. 당신도 이러한 자료들을 업데이트하고 개선하는데 도움을 줄 수 있습니다."
     translate: "번역"
@@ -674,7 +668,7 @@ ko:
     menu-participate: 참여
     menu-vocabulary: 용어
     menu-you-need-to-know: "여러분이 알아두어야 할 것"
-    banner-translate: "이 언어에 해당하는 번역이 오래되었습니다.<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#translation\">당신의 언어에 해당하는 bitcoin.org를 번역하시려면 이곳을 눌러주세요."
+    banner-translate: "이 언어에 해당하는 번역이 오래되었습니다.<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">당신의 언어에 해당하는 bitcoin.org를 번역하시려면 이곳을 눌러주세요."
     footer: "<a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT 라이센스</a>에 따라 배포되었습니다."
     sponsor: "이 커뮤니티 웹사이트의 후원자"
     getstarted: "비트코인 시작하기"
@@ -683,10 +677,12 @@ ko:
     bitcoin-for-developers: bitcoin-for-developers
     bitcoin-for-individuals: bitcoin-for-individuals
     bitcoin-for-businesses: bitcoin-for-businesses
+    buy: buy
     choose-your-wallet: choose-your-wallet
     community: community
     development: development
     download: download
+    exchanges: exchanges
     events: events
     faq: faq
     getting-started: getting-started
@@ -701,6 +697,7 @@ ko:
     support-bitcoin: support-bitcoin
     vocabulary: vocabulary
     you-need-to-know: you-need-to-know
+    spend-bitcoin: spend-bitcoin
   anchor:
     community:
       non-profit: non-profit

@@ -2,8 +2,24 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-layout: wallet-platform-container
+layout: base
 ---
 
-<h1>{% translate pagetitle choose-your-wallet %}</h1>
-<p class="summary">{% translate pagedesc choose-your-wallet %}</p>
+<div class="hero">
+  <div class="container hero-container">
+    <h1>{% translate pagetitle choose-your-wallet %}</h1>
+    <p class="summary">{% translate pagedesc choose-your-wallet %}</p>
+  </div>
+</div>
+
+{% include layout/base/helper-intro.html %}
+{% include layout/base/helper-wizard.html %}
+{% include layout/base/wallets-selector.html %}
+
+<noscript>
+  {% include layout/base/wallets-menu.html %}
+  {% include layout/base/wallets-menu-mobile.html %}
+  {% include layout/base/wallets-list.html %}
+</noscript>
+
+<script type="text/javascript" src="/js/walletSelector.js"></script>

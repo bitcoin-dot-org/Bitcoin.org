@@ -11,17 +11,25 @@ breadcrumbs:
   - bitcoin
   - bcc
   - Help
-
-end_of_page: |
-  <script src="/js/devsearch.js"></script>
 ---
+
+<div class="hero">
+<div class="container hero-container" markdown="block">
+
 # Getting Help For Bitcoin Core
+</div>
+</div>
+
+<div class="bitcore-content">
+<div class="container" markdown="block">
 
 There are many ways to get help for Bitcoin Core, including
 [documentation](#documentation), [forums](#forums), and [live chatrooms](#live).
 
-<span class="fa fa-exclamation-triangle"></span> *To report an issue,
-please see the [bug reporting][bcc contribute issues] page.*
+
+<div class="warning" markdown="block">
+*To report an issue, please see the [bug reporting][bcc contribute issues] page.*
+</div>
 
 ## Documentation
 
@@ -33,16 +41,8 @@ can use the following resources:
   directory][bcc data directory], and other articles in the [Bitcoin
   Core documentation category][wiki bitcoin core documentation].
 
-    <form id="searchform" action="https://en.bitcoin.it/w/index.php">
-      <input id="searchInput" class="glossary_term" type="search" placeholder="Search the Bitcoin Wiki" name="search"></input>
-    </form>
-
-- The [developer reference][RPCs] provides complete documentation of the
+- The [developer reference](https://developer.bitcoin.org/reference/rpc/) provides complete documentation of the
   RPCs that can be used with `bitcoin-cli` or in third-party programs.
-  The [REST][rest] interface is also fully documented.  Both can be searched
-  using the box below:
-
-    <input id="glossary_term" class="glossary_term" placeholder="Search the RPCs and more">
 
 - The [bandwidth sharing guide][] describes installing Bitcoin Core in
   detail as well as opening port 8333 to allow other Bitcoin programs to
@@ -83,3 +83,6 @@ for that chatroom.
   on the Bitcoin Wiki.
 
 {% include references.md %}
+
+</div>
+</div>

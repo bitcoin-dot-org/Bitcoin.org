@@ -13,10 +13,16 @@ breadcrumbs:
   - bcc features
   - Validation
 ---
-# Bitcoin Core Validation
-{:.not-displayed}
+<div class="hero">
+<div class="container hero-container" markdown="block">
 
-![Full validation](/img/bitcoin-core/slider-validation.svg)
+# Bitcoin Core Validation
+</div>
+</div>
+
+<div class="bitcore-content">
+<div class="container" markdown="block">
+![Full validation](/img/bitcoin-core/slider-validation.svg?{{site.time | date: '%s'}})
 
 {% include bitcoin-core/download-bitcoin-core.html %}
 
@@ -81,9 +87,7 @@ real wallet?
   Core**{:.fggreen} users are not vulnerable because they control their
   own private keys.
 
-<div class="callout" markdown="block">
 Direct theft is likely the leading cause of stolen bitcoins so far.
-</div>
 
 ### Real Example
 
@@ -311,7 +315,7 @@ The cost of this attack depends on the percentage of total network hash
 rate the attacking miner controls. The more centralized mining becomes,
 the less expensive the attack for a powerful miner.
 
-![The cost of a chain rewrite](/img/bitcoin-core/en-confirmed-double-spend-cost.svg)
+![The cost of a chain rewrite](/img/bitcoin-core/en-confirmed-double-spend-cost.svg?{{site.time | date: '%s'}})
 
 ### Real Example
 
@@ -363,19 +367,19 @@ Bitcoin's rules for all those non-verifying users who outsourced their power.
 
 <table class="received_transactions center">
   <tr>
-    <td class="center" markdown="span">*Users of Bitcoin banks*<br
-      >**Trust bankers**{:.fgred}</td>
+    <td class="center" markdown="span">*Users of Bitcoin banks*<br>
+      **Trust bankers**{:.fgred}</td>
 
-    <td class="center" markdown="span">*Users of P2P lightweight wallets*<br
-    >**Trust miners**{:.fgred}</td>
+    <td class="center" markdown="span">*Users of P2P lightweight wallets*<br>
+    **Trust miners**{:.fgred}</td>
   </tr>
 
   <tr>
-    <td class="center" markdown="span">*Users of client lightweight wallets*<br
-    > **Trust "free" services**{:.fgred}</td>
+    <td class="center" markdown="span">*Users of client lightweight wallets*<br>
+    **Trust "free" services**{:.fgred}</td>
 
-    <td class="center" markdown="span">*Users of Bitcoin Core*<br
-    >**Enforce the rules**{:.fggreen}</td>
+    <td class="center" markdown="span">*Users of Bitcoin Core*<br>
+    **Enforce the rules**{:.fggreen}</td>
   </tr>
 </table>
 
@@ -393,7 +397,7 @@ Core users? Then it becomes easy for miners and banks to take control of
 Bitcoin, likely bringing to an end this {{bitcoin_age}} year experiment
 in decentralized currency.
 
-![History of Bitcoin](/img/bitcoin-core/history-of-bitcoin.svg)
+![History of Bitcoin](/img/bitcoin-core/history-of-bitcoin.svg?{{site.time | date: '%s'}})
 
 If you think **Bitcoin should remain decentralized,** the best thing you
 can do is [validate every payment you receive](#do-you-validate) using your own personal
@@ -421,7 +425,7 @@ Core right now:
    using the following screen in Bitcoin Core, your received
    transactions will be fully validated.
 
-    ![Bitcoin Core request payment](/img/bitcoin-core/unique-invoice.png)
+    ![Bitcoin Core request payment](/img/bitcoin-core/unique-invoice.png?{{site.time | date: '%s'}})
 
 2. **Use Bitcoin Core as a trusted peer for certain lightweight
    wallets.** Learn more on the [user interface][bcc user interface
@@ -433,8 +437,8 @@ Core right now:
    power users, businesses, and programmers. The [user interface][bcc
    user interface] page provides an overview, the [installation
    instructions][bandwidth sharing guide] can help you get started, and
-   the [RPC][]/[REST][] documentation can help you find specific
-   commands. If you're using [`getnewaddress`][rpc getnewaddress] to
+   the [RPC](https://developer.bitcoin.org/reference/rpc/)documentation can help you find specific
+   commands. If you're using [`getnewaddress`](https://developer.bitcoin.org/reference/rpc/getnewaddress.html) to
    create receiving addresses, your received transactions will be fully
    validated.
 
@@ -444,9 +448,9 @@ If you have any questions, please ask on the [forums][bcc forums] or
 
 
 <br class="clear big">
-<div class="prevnext">
-<span markdown="1">**Previous Feature**<br>[Feature Overview][bcc main]</span>
-<span markdown="1">**Next feature**<br>[Privacy][bcc privacy]</span>
+<div class="prevnext" markdown="block">
+[PREV][bcc main]
+[NEXT][bcc privacy]
 </div>
 <br class="clear">
 
@@ -475,3 +479,5 @@ If you have any questions, please ask on the [forums][bcc forums] or
 </div>
 
 {% include references.md %}
+</div>
+</div>

@@ -16,15 +16,16 @@ platform:
         link: "https://itunes.apple.com/us/app/bither/id899478936"
         source: "https://github.com/bither/bither-ios"
         screenshot: "bithermobile.png"
+        features: "legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
+          privacy: "checkpassprivacybasic"
           fees: "checkfailfeecontrolstatic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: android
@@ -32,15 +33,16 @@ platform:
         link: "https://play.google.com/store/apps/details?id=net.bither"
         source: "https://github.com/bither/bither-android"
         screenshot: "bithermobile.png"
+        features: "legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkfailprivacyweak"
+          privacy: "checkpassprivacybasic"
           fees: "checkfailfeecontrolstatic"
         privacycheck:
-          privacyaddressreuse: "checkfailprivacyaddressrotation"
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
           privacynetwork: "checkfailprivacynetworknosupporttor"
   - desktop:
@@ -50,15 +52,16 @@ platform:
       link: "https://bither.net"
       source: "https://github.com/bither/bither-desktop-java"
       screenshot: "bitherdesktop.png"
+      features: "legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkpassvalidationspvp2p"
         transparency: "checkpasstransparencyopensource"
         environment: "checkfailenvironmentdesktop"
-        privacy: "checkfailprivacyweak"
+        privacy: "checkpassprivacybasic"
         fees: "checkfailfeecontrolstatic"
       privacycheck:
-        privacyaddressreuse: "checkfailprivacyaddressrotation"
+        privacyaddressreuse: "checkpassprivacyaddressrotation"
         privacydisclosure: "checkfailprivacydisclosurespv"
         privacynetwork: "checkfailprivacynetworknosupporttor"
     os:

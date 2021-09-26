@@ -13,7 +13,16 @@ breadcrumbs:
   - bcc contribute
   - Documentation
 ---
+
+<div class="hero">
+<div class="container hero-container" markdown="block">
+
 # Writing Bitcoin Core Documentation
+</div>
+</div>
+
+<div class="bitcore-content">
+<div class="container" markdown="block">
 
 Bitcoin Core documentation is spread across three projects: Bitcoin
 Core, the Bitcoin Wiki, and Bitcoin.org---and is further subdivided into
@@ -22,18 +31,15 @@ is available and how you can contribute.
 
 ## Bitcoin Core Docs Directory
 
-The [docs directory][bitcoin core docs directory]
+The [developer.bitcoin.org GitHub repository](https://github.com/bitcoin-dot-org/developer.bitcoin.org)
 contains various files describing aspects of Bitcoin Core. Almost all of
-the files are meant for developers and testers rather than users, although
-some (such as the build instructions) may be used by power users.
+the files are meant for developers and testers rather than users.
 
-The files are all written in Markdown, which can be easily edited in
-GitHub's web interface:
+The files can be easily edited in GitHub's web interface:
 
 1. Create a GitHub account, or if you already have one, log in.
 
-2. Find the file you want to edit. For example, [build-unix.md][bitcoin
-   core build unix]
+2. Find the file you want to edit.
 
 3. Click the Edit icon (a pencil).
 
@@ -83,37 +89,38 @@ tell us what documentation you want to write.*
 
 ## Bitcoin.org RPC/REST API Reference
 
-The [Bitcoin.org developer reference][devref] contains over 100 printed
+The [Bitcoin.org developer reference](https://developer.bitcoin.org/) contains over 100 printed
 pages worth of documentation for the Bitcoin Core RPC and REST
 interfaces, which are mainly used by Bitcoin Core command line users and
 developers of apps depending on Bitcoin Core.
 
 To contribute RPC edits, the easiest way is to:
 
-1. Go to the [Bitcoin.org developer documentation main page][developer documentation].
+1. Go to the [developer.bitcoin.org GitHub repository](https://github.com/bitcoin-dot-org/developer.bitcoin.org).
 
-2. Search for the RPC you want to edit.
+2. Create a GitHub account, or if you already have one, log in.
 
-3. Under the subheading for the RPC, click the Edit link.
+3. Find the file you want to edit.
 
-To create new RPC/REST documentation or edit the REST documentation:
+4. Click the Edit icon (a pencil).
 
-1. Follow [these instructions][open a pull request] to clone the Bitcoin.org repository.
+5. Make your change and click the Preview button to preview it. Revise
+   and edit until you're happy with it.
 
-2. RPC files are in the `_includes/ref/bitcoin-core/rpcs` directory.
-
-    REST files are in the `_includes/ref/bitcoin-core/rest` directory.
-
-    New files need to be added to the list in `en/developer-reference.md`
+6. At the bottom of the page, fill out the Propose File Change form and
+   submit it.
 
 *Need help getting started? You can [open an issue][] or email
 Bitcoin.org documentation maintainer {{site.text.bitcoin_org_docs_maintainer_email_link}}.*
 
 <br class="clear big">
-<div class="prevnext">
-<span markdown="1">**Previous**<br>[Code][bcc contribute code]</span>
-<span markdown="1">**Next**<br>[Translations][bcc contribute translations]</span>
+<div class="prevnext" markdown="block">
+[PREV][bcc contribute code]
+[NEXT][bcc contribute translations]
 </div>
 <br class="clear">
 
 {% include references.md %}
+
+</div>
+</div>

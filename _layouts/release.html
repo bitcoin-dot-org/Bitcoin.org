@@ -3,11 +3,45 @@
 # http://opensource.org/licenses/MIT.
 
 layout: base-core
+end_of_page: |
+  <script>updateToc();</script>
+  <script>boxShow();</script>
+  <script>onScrollButton();</script>
 ## Note: global variables like page.lang must be set in _config.yml for collections
 ---
 <link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin Core releases">
-<div class="versiontext">
-  <h1>{{ page.title }}{% if page.optional_date %}<br><small>{{ page.optional_date | date:"%e %B %Y" }}</small>{% endif %}</h1>
-  {{ content }}
+<div class="versiontext hero">
+  <div class="container hero-container">
+    <h1>{{ page.title }}</h1>
+    {% if page.optional_date %}
+      <p class="summary">{{ page.optional_date | date:"%e %B %Y" }}</p>
+    {% endif %}
+  </div>
 </div>
-<a href="/en/version-history">Go back to the version history</a>
+
+<div class="toc-container release-content">
+  <div class="row toc-row">
+    {% if page.show_toc %}
+    <div id="toc" class="toc">
+      <div>
+        <button class="mob-sidebar-open" hidden>ALL TOPICS</button>
+        <div class="sidebar">
+          <div class="sidebar-inner" markdown="1">
+            <button class="mob-sidebar-close" hidden></button>
+            {% include helpers/toc.html html=content %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="toccontent version-content">
+      <article class="article">
+        {{ content }}
+      </article>
+    </div>
+
+  </div>
+</div>
+
+<a class="back-link" href="/en/version-history">Go back to the version history</a>

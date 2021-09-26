@@ -26,7 +26,7 @@ Script-language opcodes, and Bitcoin P2P protocol messages.
 
 ## Developer glossary main page
 
-![Developer glossary main page](/img/blog/free/devglossary-main-page.png)
+![Developer glossary main page](/img/blog/free/devglossary-main-page.png?{{site.time | date: '%s'}})
 
 The glossary main page provides a search box and a sorted list of terms.
 It uses a floating list so that it looks good on both mobiles and
@@ -38,7 +38,7 @@ on the [Events page][].)
 
 ### Glossary entries
 
-![Glossary entries](/img/blog/free/devglossary-entries.png)
+![Glossary entries](/img/blog/free/devglossary-entries.png?{{site.time | date: '%s'}})
 
 Each glossary entry has its own page providing a short definition
 (limited to 255 characters), one or more synonyms, zero or more "not to
@@ -58,7 +58,7 @@ issue about it.
 
 ### Dev search box
 
-![Glossary search box](/img/blog/free/devglossary-search-box.png)
+![Glossary search box](/img/blog/free/devglossary-search-box.png?{{site.time | date: '%s'}})
 
 A Javascript-powered search box is added to the following pages: [Dev
 Guide][], [Dev Reference][], [Dev Examples][], [Dev Glossary][], and individual
@@ -84,7 +84,7 @@ people load them.
 [jquery]: https://jquery.com/
 [jquery ui]: https://jqueryui.com/
 [several volunteers]: https://github.com/bitcoin-dot-org/bitcoin.org/pull/793
-[Bitcoin.org developer documentation]: /en/developer-documentation
+[Bitcoin.org developer documentation]: https://developer.bitcoin.org/
 [the bitcoin foundation]: https://bitcoinfoundation.org/
 [glossary section]: /en/developer-glossary
 [events page]: /en/events

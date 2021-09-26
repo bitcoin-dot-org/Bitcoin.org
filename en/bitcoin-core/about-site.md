@@ -12,7 +12,17 @@ breadcrumbs:
   - bcc
   - About site
 ---
+
+<div class="hero">
+<div class="container hero-container" markdown="block">
+
 # About the Bitcoin Core pages on Bitcoin.org
+
+</div>
+</div>
+
+<div class="bitcore-content">
+<div class="container" markdown="block">
 
 Bitcoin.org hosts several pages about Bitcoin Core as well as the
 [Bitcoin Core downloads][bcc download], but the Bitcoin.org and Bitcoin
@@ -49,3 +59,6 @@ Pull requests and issues directly relating to Bitcoin Core are tagged as
 *[Core][core github tag]* in the Bitcoin.org repository.
 
 {% include references.md %}
+
+</div>
+</div>

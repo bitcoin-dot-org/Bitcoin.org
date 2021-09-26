@@ -14,8 +14,19 @@ breadcrumbs:
 
 moved_url: https://bitcoincore.org/en/2015/12/23/capacity-increases-faq/
 ---
+
+
+<div class="hero">
+<div class="container hero-container" markdown="block">
+
 # Capacity increases FAQ
 
+</div>
+</div>
+
+
+<div class="bitcore-content">
+<div class="container" markdown="block">
 Other versions: [Italiano](/it/bitcoin-core/capacity-increases-faq) \| [简体中文](/zh_CN/bitcoin-core/capacity-increases-faq) \| [繁體中文](/zh_TW/bitcoin-core/capacity-increases-faq)
 
 1. toc
@@ -382,3 +393,5 @@ To get specific suggestions on how you can help, please join the
 [statement]: /en/bitcoin-core/capacity-increases
 [weak blocks and iblts]: https://www.youtube.com/watch?v=ivgxcEOyWNs&t=1h40m20s
 [q simple raise]: #size-bump
+</div>
+</div>

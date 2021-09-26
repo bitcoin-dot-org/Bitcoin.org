@@ -3,4 +3,30 @@ This file is licensed under the MIT License (MIT) available on
 http://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="footerlicense">© Bitcoin Project 2009-{{ site.time | date: '%Y' }} {% translate footer layout %}</div>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="row footer-bottom-row">
+      <div class="footerlicense">© Bitcoin Project 2009-{{ site.time | date: '%Y' }} {% translate footer layout %}</div>
+      <div class="row footer-status-block">
+        <a href="/en/alerts" class="statusmenu{% if site.STATUS == 1 %} alert{% endif %}">{% translate network-status layout %}</a>
+        {% include layout/base/head-language-dropdown.html %} 
+        <div id="footer-langselect" class="footer-langselect langselect">
+          <label for="select-input-footer" class="center-select">
+            <select class="center-select__input" onchange="window.location=this.value; ">
+              {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{%
+              endif %}
+              <option value="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}" {{ active }}>{{ site.langs[lang] }}</option>
+              {% endfor %}
+            </select>
+            <span class="center-select__text">{{ page.lang }}</span>
+          </label>
+        </div>
+      </div>
+<!--      <div class="row">  -->
+        {% comment %}
+          {% include layout/base/dark-mode-toggle.html %}
+        {% endcomment %}
+<!--    </div> -->
+    </div>
+  </div>
+</div>

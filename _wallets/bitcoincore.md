@@ -4,7 +4,7 @@
 
 id: bitcoincore
 title: "Bitcoin Core"
-titleshort: "Bitcoin<br>Core"
+titleshort: "Bitcoin Core"
 compat: "desktop windows mac linux"
 level: 1
 platform:
@@ -15,6 +15,7 @@ platform:
       link: "bitcoincore"
       source: "https://github.com/bitcoin/bitcoin"
       screenshot: "bitcoincore.png"
+      features: "bech32 full_node legacy_addresses segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnode"

@@ -1,0 +1,167 @@
+--- 
+# This file is licensed under the MIT License (MIT) available on 
+# http://opensource.org/licenses/MIT. 
+layout: base
+end_of_page: |
+  <script>updateToc();</script>
+  <script>accordion();</script>
+  <script>onScrollButton();</script>
+  <script>boxShow();</script> 
+---
+
+{% if site.env.BITCOINORG_BUILD_TYPE %}
+<!-- Note: this file is built non-deterministically -->
+
+<div class="hero">
+  <div class="container hero-container">
+    <h1>{% translate pagetitle %}</h1>
+    <p class="summary">{% translate pagedesc %}</p>
+  </div>
+</div>
+
+<div class="about">
+  <div class="container">
+    <h2 class="about-title" id="own">{% translate own %}</h2>
+    <div class="own">
+      <div class="own-block">
+        <div class="own-timeline">
+          <p class="own-timeline-text">Beginning</p>
+          <div class="own-timeline-number">
+            <img src="../img/getting-started/number-1.svg?{{site.time | date: '%s'}}" alt="1" class="own-timeline-number-img">
+          </div>
+          <img src="../img/icons/begining.svg?{{site.time | date: '%s'}}" alt="icon" class="own-timeline-icon">
+        </div>
+        <div class="own-text">
+          <h3 id="owntxt-title">{% translate owntxt-title %}</h3>
+          <!-- no subhead-links here -->
+          <p>{% translate owntxt %}</p>
+        </div>
+      </div>
+      <div class="own-block">
+        <div class="own-timeline">
+          <p class="own-timeline-text">2011-2012</p>
+          <div class="own-timeline-number">
+            <img src="../img/getting-started/number-2.svg?{{site.time | date: '%s'}}" alt="2" class="own-timeline-number-img">
+          </div>
+          <img src="../img/icons/bitcoincore.svg?{{site.time | date: '%s'}}" alt="icon" class="own-timeline-icon">
+        </div>
+        <div class="own-text">
+          <h3 id="owntxt2-title">{% translate owntxt2-title %}</h3>
+          <!-- no subhead-links here -->
+          <p>{% translate owntxt2 %}</p>
+        </div>
+      </div>
+      <div class="own-block">
+        <div class="own-timeline">
+          <p class="own-timeline-text">2014</p>
+          <div class="own-timeline-number">
+            <img src="../img/getting-started/number-3.svg?{{site.time | date: '%s'}}" alt="3" class="own-timeline-number-img">
+          </div>
+          <img src="../img/icons/ico_documentation.svg?{{site.time | date: '%s'}}" alt="icon" class="own-timeline-icon">
+        </div>
+        <div class="own-text">
+          <h3 id="owntxt3-title">{% translate owntxt3-title %}</h3>
+          <!-- no subhead-links here -->
+          <p>{% translate owntxt3 %}</p>
+        </div>
+      </div>
+      <div class="own-block">
+        <div class="own-timeline">
+          <p class="own-timeline-text">Today</p>
+          <div class="own-timeline-number own-timeline-number-4">
+            <img src="../img/getting-started/number-4.svg?{{site.time | date: '%s'}}" alt="4" class="own-timeline-number-img">
+          </div>
+          <img src="../img/icons/open-source.svg?{{site.time | date: '%s'}}" alt="icon" class="own-timeline-icon">
+        </div>
+        <div class="own-text">
+          <h3 id="owntxt4-title">{% translate owntxt4-title %}</h3>
+          <!-- no subhead-links here -->
+          <p>{% translate owntxt4 %}</p>
+        </div>
+      </div>
+      
+      
+      
+      
+      <div class="alert own-alert">
+        <p>{% translate owntxt5 %}</p>
+      </div>
+    </div>
+  
+    <div class="row about-row">
+      <div class="controll">
+        <h2 class="about-title" id="control">{% translate control %}</h2>
+        <p>{% translate controltxt %}</p>
+      </div>
+  
+      <div class="mission">
+        <h2 class="about-title" id="mission">{% translate mission %}</h2>
+        <ul>
+          <li>
+            <span>{% translate missiontxt1 %}</span>
+          </li>
+          <li>
+            <span>{% translate missiontxt2 %}</span>
+          </li>
+          <li>
+            <span>{% translate missiontxt3 %}</span>
+          </li>
+          <li>
+            <span>{% translate missiontxt4 %}</span>
+          </li>
+          <li>
+            <span>{% translate missiontxt5 %}</span>
+          </li>
+          <li>
+            <span>{% translate missiontxt6 %}</span>
+          </li>
+          <li>
+            <span>{% translate missiontxt7 %}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="help">
+      <h2 class="center about-title" id="help">{% translate help %}</h2>
+      <p>{% translate helptxt %}</p>
+    </div>
+  
+  </div>
+  
+  <div class="toc-container">
+    <div class="row toc-row">
+  
+      <div id="toc" class="toc">
+        <div>
+          <button class="mob-sidebar-open" hidden>ALL TOPICS</button>
+          <div class="sidebar">
+            <div class="sidebar-inner">
+              <button class="mob-sidebar-close" hidden></button>
+              {% include helpers/toc.html html=content %}
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="toccontent">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  {% else %} {% comment %}
+  <!-- if you've cloned bitcoin.org, feel free to fill in your own About
+    Us below. It would be appreciated it if you link back to Bitcoin.org,
+    but please make it clear that your site is not affiliated with
+    Bitcoin.org.
+    
+    It would also be appreciated if you would remove our names and email
+    addresses from the README.md file in the top-level directory.  -->
+  {% endcomment %}
+  <div class="container">
+    <h1>About this site</h1>
+    This site includes content originally published on
+    <a href="https://bitcoin.org">Bitcoin.org</a>, but it is not affiliated with Bitcoin.org.
+  </div>
+</div>
+{% endif %}

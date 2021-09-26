@@ -119,46 +119,51 @@ function supportCSS(id) {
 }
 
 function loadYoutubeVideo(e) {
-  // Load Youtube video on target node on click.
-  function init(e) {
-    var t = getEvent(e, 'target'),
-      nd = document.createElement('IFRAME');
-    while (t.getAttribute('data-youtubeurl') === null || t.getAttribute('data-youtubeurl') === '') t = t.parentNode;
-    nd.src = t.getAttribute('data-youtubeurl');
-    nd.setAttribute('frameborder', 0);
-    nd.setAttribute('allowfullscreen', true);
-    t.innerHTML = '';
-    t.appendChild(nd);
-    t.onclick = '';
+  var open = document.querySelector(".mainvideo-btn-open");
+  var close = document.querySelector(".mainvideo-btn-close");
+  var modal = document.querySelector(".modal");
+  var video = document.querySelector(".modal-video");
+  var modalOverlay = document.querySelector(".modal-overlay");
+
+  if (e.target === open) {
+    modal.classList.remove("closed");
+    video.src = open.getAttribute("data-youtubeurl");
+    modalOverlay.classList.remove("closed");
+  } else if (e.target === close) {
+    modal.classList.add("closed");
+    video.src = "";
+    modalOverlay.classList.add("closed");
   }
-  onTouchClick(e, init);
 }
 
 function expandBox(t) {
   // Expand or shrink box.
-  var phe = getHeight(t);
   t.style.transition = t.style.MozTransition = t.style.WebkitTransition = 'all 0s ease 0s';
   if (t.className.indexOf('expanded') === -1) addClass(t, 'expanded');
   else removeClass(t, 'expanded');
-  t.style.height = '';
-  var nhe = getHeight(t);
-  t.style.height = phe + 'px';
-  // Async call to prevent transition from applying on last style.height statement.
+
   setTimeout(function() {
     t.style.transition = t.style.MozTransition = t.style.WebkitTransition = '';
-    t.style.height = nhe + 'px';
   }, 20);
 }
 
 function boxShow(e) {
-  // Display the box content when the user click a box on the "Secure your wallet" page.
+
   function init(e) {
     var t = getEvent(e, 'target');
     while (t.nodeName !== 'DIV') t = t.parentNode;
     expandBox(t);
     cancelEvent(e);
   }
-  onTouchClick(e, init);
+  document.querySelectorAll(".boxexpand > h1:first-child").forEach(function(accordionToggle) {
+    return accordionToggle.addEventListener("click", init);
+  });
+  document.querySelectorAll(".boxexpand > h2:first-child").forEach(function(accordionToggle) {
+    return accordionToggle.addEventListener("click", init);
+  });
+  document.querySelectorAll(".boxexpand > h3:first-child").forEach(function(accordionToggle) {
+    return accordionToggle.addEventListener("click", init);
+  });
 }
 
 function faqShow(e) {
@@ -221,7 +226,7 @@ function updateToc() {
         pageoffset = getPageYOffset();
         windowy = getWindowY();
         toc = document.getElementById('toc');
-        fallback = document.getElementsByTagName('H2')[0];
+        fallback = document.getElementsByTagName("H2")[0] || document.getElementsByTagName("H3")[0];
         first = [fallback, getTop(fallback)];
         last = [fallback, getTop(fallback)];
         closer = [fallback, getTop(fallback)];
@@ -250,16 +255,22 @@ function updateToc() {
     function updatetoc() {
         // Set bottom and top to fit within window and not overflow its parent node.
         var div = toc.getElementsByTagName('DIV')[0];
-        if (pageoffset > getTop(toc)) {
-            addClass(div, 'scroll');
-            div.style.top = '20px';
-            div.style.bottom = Math.max((pageoffset + windowy) - (getHeight(toc.parentNode) + getTop(toc.parentNode)), 20) + 'px';
-        } else removeClass(div, 'scroll');
+        var sidebarHeight = document.querySelector(".sidebar").offsetHeight;
+        var footerTop = document.querySelector(".footer").offsetTop;
+
+        if (window.scrollY >= getTop(toc) - 20 && window.scrollY + sidebarHeight + 20 <= footerTop) {
+          addClass(div, "scroll");
+        } else {
+          removeClass(div, "scroll");
+        }
+
         // Remove .active class from toc and find new active toc entry.
         var a = false;
         for (var i = 0, t = toc.getElementsByTagName('*'), n = t.length; i < n; i++) {
             removeClass(t[i], 'active');
-            if (t[i].nodeName === 'A' && t[i].getAttribute('href') === '#' + closer[0].id) a = t[i];
+            if (t[i].nodeName === 'A' && t[i].getAttribute('href') === '#' + closer[0].id && closer[0].parentNode.classList.contains("expanded")) {
+              a = t[i];
+            }
         }
         if (a === false) return;
         // Set .active class on new active toc entry.
@@ -291,21 +302,14 @@ function updateToc() {
         if (!toc.hasAttribute('data-timestamp') || toc.getAttribute('data-timestamp') > new Date().getTime() - 1000) return;
         window.history.replaceState(null, null, '#' + closer[0].id);
     }
-    // Update the toc when the page stops scrolling.
-    function evtimeout() {
-        toc = document.getElementById('toc');
-        clearTimeout(toc.getAttribute('data-timeout'));
-        toc.setAttribute('data-timeout', setTimeout(init, 1));
-    }
     // Reset timestamp on page load and each time the user clicks a url.
     function evtimestamp() {
         toc = document.getElementById('toc');
         document.getElementById('toc').setAttribute('data-timestamp', new Date().getTime());
     }
-    addEvent(window, 'scroll', evtimeout);
+    addEvent(window, 'scroll', init);
     addEvent(window, 'popstate', evtimestamp);
     addEvent(window, 'load', evtimestamp);
-    init();
 }
 
 function updateIssue(e) {
@@ -456,6 +460,8 @@ function generateDonationQrCode() {
 
     var text = 'bitcoin:' + generateDonationUrl(address, amount, message);
 
+    $('.donation-btc-address').attr('href', text);
+
     $('#donation-qr-code').qrcode({
         width: 150,
         height: 150,
@@ -465,8 +471,8 @@ function generateDonationQrCode() {
 }
 
 function loadTickerPrices() {
-    $.ajax('https://apiv2.bitcoinaverage.com/indices/global/ticker/short?crypto=BTC&fiat=USD').then(function(data) {
-        var rate = data.BTCUSD.last;
+    $.ajax('https://blockchain.info/ticker').then(function(data) {
+        var rate = data.USD.last;
 
         function usdToBtc(amount) {
             var amountUsd = parseFloat(amount);
@@ -556,8 +562,188 @@ function closeDonationModal() {
 
 function toggleDonationBanner() {
     var banner = $('.donation-text');
-    var toggle = $('.donation-visibility-toggle');
+    var open = $('.donation-visibility-toggle');
 
-    toggle.toggleClass('active');
-    banner.toggleClass('expanded');
+    open.addClass("active");
+    banner.addClass("expanded");
+}
+function closeDonationBanner() {
+  var banner = $(".donation-text");
+  var open = $(".donation-visibility-toggle");
+
+  open.removeClass("active");
+  banner.removeClass("expanded");
+}
+function accordion() {
+  $(document).ready(function($) {
+    $('.accordion-toggle').click(function(){
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('fast');
+      $(this).toggleClass("active");
+
+      //Hide the other panels
+      $(".accordion-content").not($(this).next()).slideUp("fast");
+      $(".accordion-toggle").not($(this)).removeClass("active");
+    });
+  });
+}
+
+function onScrollButton() {
+  var button = document.querySelector(".mob-sidebar-open");
+  var buttonTop = button.offsetTop;
+  var buttonHeight = button.offsetHeight;
+  var sidebar = document.querySelector(".sidebar");
+  var closeButton = document.querySelector(".mob-sidebar-close");
+  var sidebarLinks = document.querySelectorAll(".sidebar-inner ul li");
+
+  function stickyButton() {
+    if (document.documentElement.clientWidth <= 640) {
+      if (buttonTop === 0) {
+        buttonTop = button.offsetTop;
+      }
+      var footerTop = document.querySelector(".footer").offsetTop;
+
+      // Fixed menu
+      if (window.scrollY >= buttonTop && window.scrollY + buttonHeight <= footerTop) {
+        button.classList.add("is-fixed");
+        document.body.style.paddingTop = buttonHeight + 25 + "px";
+      } else {
+        button.classList.remove("is-fixed");
+        document.body.style.paddingTop = "";
+      }
+    }
+  }
+
+  function showSidebar() {
+    sidebar.classList.add("is-open");
+    button.classList.add("hide");
+  }
+
+  function hideSidebar() {
+    sidebar.classList.remove("is-open");
+    button.classList.remove("hide");
+  }
+
+  window.addEventListener("scroll", stickyButton);
+  button.addEventListener("click", showSidebar);
+  closeButton.addEventListener("click", hideSidebar);
+
+  for (var i = 0; i < sidebarLinks.length; i++) {
+    sidebarLinks[i].addEventListener("click", function(event) {
+      if (document.documentElement.clientWidth <= 640) {
+        closeButton.click();
+      }
+    });
+  }
+}
+
+function handleDevDocsRedirect(name) {
+  var blockchainGuideRedirects = ["proof-of-work", "block-height-and-forking", "transaction-data", "consensus-rule-changes", "detecting-forks", "term-consensus", "term-consensus-rules", "term-block", "term-merkle-root", "term-txid", "term-utxo", "term-transaction-fee", "term-miner", "term-proof-of-work", "term-target", "term-difficulty", "term-51-attack", "term-block-height", "term-genesis-block", "term-fork", "term-stale-block", "term-merkle-tree", "term-hard-fork", "term-soft-fork", "term-uasf", "term-masf"];
+  var transactionGuideRedirects = ["p2pkh-script-validation", "p2sh-scripts", "standard-transactions", "signature-hash-types", "locktime-and-sequence-number", "transaction-fees-and-change", "avoiding-key-reuse", "transaction-malleability", "term-key-pair", "term-output-index", "term-transaction-version-number", "term-unique-address", "term-input", "term-output", "term-p2pkh", "term-private-key", "term-public-key", "term-address", "term-pubkey-script", "term-signature-script", "term-signature", "term-p2sh", "term-redeem-script", "term-null-data", "term-signature-hash", "term-sighash-all", "term-sighash-none", "term-sighash-single", "term-sighash-anyonecanpay", "term-locktime", "term-sequence-number", "term-high-priority-transactions", "term-minimum-fee", "term-change-output", "term-transaction-malleability"];
+  var contractsGuideRedirects = ["escrow-and-arbitration", "micropayment-channel", "coinjoin", "term-escrow-contract", "term-multisig", "term-p2sh-multisig", "term-micropayment-channel"];
+  var walletsGuideRedirects = ["wallet-programs", "full-service-wallets", "signing-only-wallets", "offline-wallets", "hardware-wallets", "distributing-only-wallets", "wallet-files", "private-key-formats", "wallet-import-format-wif", "mini-private-key-format", "public-key-formats", "hierarchical-deterministic-key-creation", "hardened-keys", "storing-root-seeds", "loose-key-wallets", "term-key-index", "term-point-function", "term-wallet-import-format", "term-hd-protocol", "term-child-public-key", "term-parent-public-key", "term-child-key", "term-parent-key", "term-chain-code", "term-master-chain-code", "term-parent-private-key", "term-parent-chain-code", "term-extended-key", "term-extended-private-key", "term-extended-public-key", "term-master-private-key", "term-root-seed", "term-hardened-extended-private-key"];
+  var paymentProcessingGuideRedirects = ["pricing-orders", "requesting-payments", "plain-text", "bitcoin-uri", "qr-codes", "payment-protocol", "verifying-payment", "issuing-refunds", "disbursing-income-limiting-forex-risk", "merge-avoidance", "last-in-first-out-lifo", "first-in-first-out-fifo", "rebilling-recurring-payments", "term-bitcoin-uri", "term-fiat", "term-label", "term-merge", "term-merge-avoidance", "term-message", "term-r-parameter", "term-receipt", "term-uri-qr-code", "term-payment-protocol", "term-double-spend", "term-confirmation"];
+  var operatingModesGuideRedirects = ["full-node", "simplified-payment-verification-spv", "potential-spv-weaknesses", "bloom-filters", "application-of-bloom-filters", "future-proposals"];
+  var p2pNetworkOpertingGuideRedirects = ["peer-discovery", "connecting-to-peers", "initial-block-download", "blocks-first", "headers-first", "block-broadcasting", "orphan-blocks", "transaction-broadcasting", "memory-pool", "misbehaving-nodes", "alerts", "term-network", "term-standard-block-relay", "term-unsolicited-block-push", "term-dns-seed", "term-header-chain", "term-direct-headers-announcement"];
+  var miningGuideRedirects = ["solo-mining", "pool-mining", "block-prototypes", "getwork-rpc", "getblocktemplate-rpc", "stratum"];
+
+  if (blockchainGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/blockchain-guide#" + name;
+  }
+
+  if (transactionGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/transactions-guide#" + name;
+  }
+
+  if (contractsGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/contracts-guide#" + name;
+  }
+
+  if (walletsGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/wallets-guide#" + name;
+  }
+
+  if (paymentProcessingGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/payment-processing-guide#" + name;
+  }
+
+  if (operatingModesGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/operating-modes-guide#" + name;
+  }
+
+  if (p2pNetworkOpertingGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/p2p-network-guide#" + name;
+  }
+
+  if (miningGuideRedirects.indexOf(name) > -1) {
+    window.location.href = "/en/mining-guide#" + name;
+  }
+
+}
+
+function getUrlParameter(name) {
+  name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+  var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+  var results = regex.exec(location.search);
+  return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+}
+
+function updateQueryStringParameter(key, value) {
+  var uri = window.location.href;
+  var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+  var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+  if (uri.match(re)) {
+    return uri.replace(re, '$1' + key + "=" + value + '$2');
+  }
+  else {
+    return uri + separator + key + "=" + value;
+  }
+}
+
+function checkIfFiltersInclude(categories, filters) {
+  for (var i = 0; i < filters.length; i++) {
+    var filter = filters[i];
+    if (categories.indexOf(filter) === -1 && filter !== '') return false;
+  }
+  return true;
+}
+
+function setUrlParameter(parameter, value) {
+  history.pushState(null, null, updateQueryStringParameter(parameter, value));
+}
+
+function queryStringToArray() {            
+  var categories = ['platform', 'user', 'important', 'features'];
+  var result = [];
+  var pairs = location.search.slice(1).split('&');
+
+  for (var i = 0; i < pairs.length; i++) {
+    var pair = pairs[i];
+    pair = pair.split('=');
+    if (pair[1] && categories.indexOf(pair[0]) > -1) result = result.concat(pair[1].split(','));
+  }
+
+  return result;
+}
+
+function changeAccordionButtonText(button, text) {
+  button.textContent = text;
+}
+
+function sortTableColumn(selectedOption) {
+  var tableAccordion = document.getElementById('tableAccordion');
+  var tableAccordionButton = document.getElementById('tableAccordionButton');
+  
+  changeAccordionButtonText(tableAccordionButton, selectedOption);
+  tableAccordion.classList.remove('open');
+
+  var tableCells = document.querySelectorAll('.wallet-table-data[data-cell]');
+
+  for (var i = 0; i < tableCells.length; i++) {
+    var cell = tableCells[i];
+    if (cell.dataset.cell === selectedOption) {
+      cell.classList.remove('hidden');
+    } else cell.classList.add('hidden');
+  }
 }

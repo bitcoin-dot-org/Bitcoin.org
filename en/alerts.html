@@ -10,33 +10,72 @@ title: Network status and alerts - Bitcoin
 {% assign date_sorted_alerts = site.alerts | sort: 'date' %}
 <link rel="alternate" type="application/rss+xml" href="/en/rss/alerts.rss" title="Bitcoin network status and alerts">
 
-
-<h1>Network status and alerts</h1>
-
-<p class="summary">Stay aware of network alerts by <a type="application/rss+xml" href="/en/rss/alerts.rss">subscribing to the RSS feed <img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></p>
-
-<div>
-  {% if site.STATUS == 0 %}
-  <div class="alertstatusinactive">There is no ongoing event on the Bitcoin network.</div>
-  {% else %}
-  <div class="alertstatusactive">The following network event is ongoing.</div>
-  <ul class="alertsactive">
-  {% for p in date_sorted_alerts reversed %}{% if p.active == true %}
-    <li>
-      {{ p.date | date:"%Y-%m-%d" }} - <a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a>
-    </li>
-  {% endif %}{% endfor %}
-  </ul>
-  {% endif %}
-  <ul class="alertsinactive">
-  {% for p in date_sorted_alerts reversed %}{% if p.active == false %}
-    <li>
-      {{ p.date | date:"%Y-%m-%d" }} - <a href="{{ p.url | replace:'.html','' }}">{{ p.title }}</a>
-    </li>
-  {% endif %}{% endfor %}
-  </ul>
-  <p><a href="http://getaddr.bitnodes.io/">Status and distribution of Bitcoin nodes</a></p>
-  <p><a href="http://bitcoinstats.com/network/propagation/">Propagation time on the network</a></p>
-  <p><a href="https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures">Complete CVE list</a></p>
-  <p>Please refer to the <a href="/en/development">development</a> page if you want to report a vulnerability.</p>
+<div class="hero">
+  <div class="container hero-container">
+    <h1>Network status and alerts</h1>
+    <p class="summary">Stay aware of network alerts by
+      <a type="application/rss+xml" href="/en/rss/alerts.rss">subscribing to the RSS feed</a>
+    </p>
+  </div>
 </div>
+
+<div class="alerts">
+  <div class="container">
+    {% if site.STATUS == 0 %}
+    <div class="alertstatusinactive alert">There is no ongoing event on the Bitcoin network.</div>
+    {% else %}
+    <div class="alertstatusactive section-title">The following network event is ongoing.</div>
+    <ul class="post-list clearfix alertsactive">
+      {% for p in date_sorted_alerts reversed %}{% if p.active == true %}
+      <li class="post">
+        <div class="post-inner">
+          <p class="post-date">{{ p.date | date:"%Y-%m-%d" }} -</p>
+          <p class="post-name">{{ p.title }}</p>
+          <p class="post-description">
+            <!-- Post description -->
+          </p>
+          <a class="button btn-bright" href="{{ p.url | replace:'.html','' }}">{% translate informbut getting-started %}</a>
+        </div>
+      </li>
+      {% endif %}{% endfor %}
+    </ul>
+    <div class="btn-container">
+      <button class="button btn-dark" id="loadMore">{% translate loadmore events%}</button>
+    </div>
+    {% endif %}
+  
+    <ul class="post-list clearfix alertsinactive">
+      {% for p in date_sorted_alerts reversed %}{% if p.active == false %}
+      <li class="post">
+        <div class="post-inner">
+          <p class="post-date">{{ p.date | date:"%Y-%m-%d" }} -</p>
+          <p class="post-name">{{ p.title }}</p>
+          <p class="post-description">
+            <!-- Post description -->
+          </p>
+          <a class="button btn-bright" href="{{ p.url | replace:'.html','' }}">{% translate informbut getting-started %}</a>
+        </div>
+      </li>
+      {% endif %}{% endfor %}
+    </ul>
+    <div class="btn-container">
+      <button class="button btn-dark" id="loadMore">{% translate loadmore-alerts %}</button>
+    </div>
+    <div class="additional-links">
+      <p>
+        <a href="https://bitnodes.earn.com/">Status and distribution of Bitcoin nodes</a>
+      </p>
+      <p>
+        <a href="http://bitcoinstats.com/network/propagation/">Propagation time on the network</a>
+      </p>
+      <p>
+        <a href="https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures">Complete CVE list</a>
+      </p>
+      <p>Please refer to the
+        <a href="/en/development">development</a> page if you want to report a vulnerability.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="/js/loadMorePosts.js"></script>

@@ -5,7 +5,7 @@
 type: posts
 layout: post
 category: blog
-
+show_toc: true
 title: "New Bitcoin Core Sub-Site"
 permalink: /en/posts/bitcoin-core-subsite.html
 ## Set correct date at merge
@@ -14,6 +14,7 @@ author: |
   <a href="https://github.com/harding">David A. Harding</a>
 ---
 
+<div class="post-content" markdown="1">
 Bitcoin.org is proud to announce the addition of a dozen new pages to
 the site about [Bitcoin Core][].  Several of the pages describe [Bitcoin
 Core's powerful features][], others [provide help][] for Bitcoin Core
@@ -21,7 +22,7 @@ users, and several make it easier to [start contributing][] to
 Bitcoin Core.
 
 {:.center}
-![Excerpts from Bitcoin.org's Bitcoin Core pages](/img/blog/free/bitcoin-core-pages-collage.png)
+![Excerpts from Bitcoin.org's Bitcoin Core pages](/img/blog/free/bitcoin-core-pages-collage.png?{{site.time | date: '%s'}})
 
 {:.center}
 *Excerpts from Bitcoin.org's <a href="/en/bitcoin-core/">Bitcoin Core</a> pages*
@@ -30,7 +31,7 @@ Both Bitcoin Core and Bitcoin.org have come a long way since the site
 began promoting the earliest public versions of the software.
 
 {:.center}
-![Bitcoin.org homepage, 3 March 2009](/img/blog/free/bitcoin-org-2009-03-03.png)
+![Bitcoin.org homepage, 3 March 2009](/img/blog/free/bitcoin-org-2009-03-03.png?{{site.time | date: '%s'}})
 
 {:.center}
 *Bitcoin.org homepage, 3 March 2009 ([Internet Archive][])*
@@ -39,6 +40,9 @@ These new pages give us a chance to introduce more recent Bitcoin users
 to the advantages of full nodes like Bitcoin Core, particularly how full
 validation [helps protect Bitcoin's essential decentralization][] from
 takeover by a handful of miners, Bitcoin banks, and service providers.
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## A Brief Guide to The New Pages
 
@@ -54,6 +58,9 @@ takeover by a handful of miners, Bitcoin banks, and service providers.
 
 - [Contribute overview][]: links to ways you can directly contribute to
   Bitcoin Core and Bitcoin Core users.
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Future Plans
 
@@ -70,6 +77,9 @@ their own full nodes.
 If you want to help, please feel free to email the Bitcoin.org
 documentation maintainer,
 {{site.text.bitcoin_org_docs_maintainer_email_link}}.
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
 
 ## Thank You
 
@@ -101,3 +111,4 @@ hesitate to [open an issue][].
 [869]: https://github.com/bitcoin-dot-org/bitcoin.org/pull/869
 [Bitcoin Foundation]: https://bitcoinfoundation.org/
 [open an issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
+</div>

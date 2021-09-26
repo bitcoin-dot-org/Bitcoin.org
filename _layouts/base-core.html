@@ -13,26 +13,25 @@ use the base template -->
 <head>
 {% include layout/base-core/html-head-jquery-css.html %}
 {% include layout/base/html-head.html %}
-{% include layout/base-core/html-head-extra.html %}
 </head>
 
 <body>
+{% include layout/base/pagetop-donation.html %}
 {% include layout/base/pagetop-detect-mobile.html %}
 {% include layout/base/pagetop-alert.html %}
 {% include layout/base-core/pagetop-moved-notice.html %}
 
 <div class="head"><div>
-  {% include layout/base/head-language-dropdown.html %}
   {% include layout/base/head-mobile-menu.html %}
   {% if page.lang == 'en' %}
     {% include layout/base-core/head-logo.html %}
-    {% include layout/base/head-language-select.html %}
     {% include layout/base-core/head-menu.html %}
   {% else %}
     {% include layout/base/head-logo.html %}
-    {% include layout/base/head-language-select.html %}
     {% include layout/base/head-menu.html %}
   {% endif %}
+    {% include layout/base/head-language-dropdown.html %}
+    {% include layout/base/head-language-select.html %}
 </div></div>
 
 <div class="body">
@@ -41,7 +40,10 @@ use the base template -->
   {% endif %}
   {% include layout/base-core/content.html %}
   <div class="footer">
-    {% include layout/base-core/footer-menu.html %}
+    <div class="container">
+      {% include layout/base/footer-logo.html %}
+      {% include layout/base/footer-menu.html %}
+    </div>
     {% include layout/base-core/footer-license.html %}
   </div>
 </div>
