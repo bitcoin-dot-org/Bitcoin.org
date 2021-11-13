@@ -28,13 +28,13 @@ module Jekyll
 
       ## Die if required_ variables aren't set
       if self.data['required_version']
-        version = self.data['required_version']
+        version = self.data['required_version'].to_s
       else
         abort("Error: Variable required_version not set when processing " + src)
       end
 
       ## Output file is v<version>.md (converted later to HTML)
-      output_file = "v" + version.to_s + ".md"
+      output_file = "v" + version + ".md"
       @name = output_file
       self.process(output_file)
 
