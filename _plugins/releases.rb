@@ -46,7 +46,7 @@ module Jekyll
       self.data['lang'] = lang
 
       ## Only processes numeric version numbers with up to five decimals
-      self.data['versionint'] = versiontoint(self.data['required_version'])
+      self.data['versionint'] = versiontoint(self.data['required_version'].to_s)
 
       self.data['layout'] = 'release'
       self.data['category'] = 'release'
