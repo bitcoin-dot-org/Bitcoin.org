@@ -34,7 +34,7 @@ module Jekyll
       end
 
       ## Output file is v<version>.md (converted later to HTML)
-      output_file = "v" + version + ".md"
+      output_file = "v" + version.to_s + ".md"
       @name = output_file
       self.process(output_file)
 
