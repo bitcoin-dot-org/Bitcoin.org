@@ -521,10 +521,10 @@ de:
     disclosuretxt: "Falls Sie eine Sicherheitslücke im Zusammenhang mit Bitcoin finden, können Sie nicht kritische Lücken auf Englisch an einen der Kernentwickler oder an die oben erwähnte private Mailingliste senden. Ein Beispiel für eine nicht kritische Sicherheitslücke wäre ein nur mit extremen Kosten durchführbarer Denial-of-Service-Angriff. Kritische Sicherheitslücken, die zu heikel für eine unverschlüsselte E-Mail sind, sollten mit den jeweiligen PGP-Schlüsseln verschlüsselt an einen oder mehrere Kernentwickler gesendet werden."
     involve: "Mitmachen"
     involvetxt1: "Bitcoin ist freie Software und jeder Entwickler kann zu dem Projekt beitragen. Alles was Sie benötigen finden Sie im <a href=\"https://github.com/bitcoin/bitcoin\">GitHub Repository</a>. Bitte lesen und befolgen Sie den in der README beschriebenen Entwicklungsprozess, liefern Sie Codes von guter Qualität und respektieren Sie alle Richtlinien."
-    involvetxt2: "Diskussionen über die Entwicklung finden auf GitHub und über die <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> E-Mail-Liste statt. Weniger formale Diskussionen über die Entwicklung finden bei irc.freenode.net #bitcoin-core-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">Webinterface</a>, <a href=\"http://gnusha.org/bitcoin-core-dev/\">Logs</a>) statt."
+    involvetxt2: "Diskussionen über die Entwicklung finden auf GitHub und über die <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> E-Mail-Liste statt. Weniger formale Diskussionen über die Entwicklung finden bei irc.freenode.net #bitcoin-core-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">Webinterface</a>, <a href=\"https://gnusha.org/bitcoin-core-dev/\">Logs</a>) statt."
     more: "Weitere freie Software-Projekte"
     morewant: "Sie möchten bei einem anderen Projekt mitwirken?"
-    morechoose: "Sie können ein Projekt auswählen, zu dem Sie beitragen möchten, indem Sie ein paar <a href=\"http://whatcanidoforbitcoin.xyz/\">Fragen zu Ihrem Können</a> beantworten."
+    morechoose: "Sie können ein Projekt auswählen, zu dem Sie beitragen möchten, indem Sie ein paar <a href=\"https://whatcanidoforbitcoin.xyz/\">Fragen zu Ihrem Können</a> beantworten."
     moremore: "Mehr anzeigen..."
     contributors: "Bitcoin Core Mitwirkende"
     contributorsorder: "(Sortiert nach Anzahl der Commits)"
@@ -543,7 +543,7 @@ de:
     downloadtorrent: "Download über Torrent"
     source: "Quelltext"
     versionhistory: "Versionshistorie anzeigen"
-    notelicense: "Bitcoin Core ist ein gemeinschaftliches, <a href=\"https://www.fsf.org/about/what-is-free-software\">freies Software</a>-Projekt, veröffentlicht unter der <a href=\"http://opensource.org/licenses/mit-license.php\">MIT-Lizenz</a>."
+    notelicense: "Bitcoin Core ist ein gemeinschaftliches, <a href=\"https://www.fsf.org/about/what-is-free-software\">freies Software</a>-Projekt, veröffentlicht unter der <a href=\"https://opensource.org/licenses/mit-license.php\">MIT-Lizenz</a>."
     notesync: "Die Erstsynchronisierung von Bitcoin Core dauert sehr lange und lädt eine große Menge Daten herunter. Sie sollten sicherstellen, dass Sie ausreichend Bandbreite und Speicherplatz für die volle Größe der Blockchain (über {{site.text.bitcoin_datadir_gb}}GB) zur Verfügung haben. Falls Sie eine gute Internetverbindung haben, können Sie dabei helfen, das Netzwerk zu stärken, indem Sie auf Ihrem PC Bitcoin Core - mit geöffneten Port 8333 - laufen lassen."
     full_node_guide: "Lesen Sie den <a href=\"/en/full-node\">Full Node-Guide</a> für Details."
     patient: "Überprüfen Sie Ihre Bandbreite und den freien Speicherplatz"
@@ -568,7 +568,7 @@ de:
     eventsubmit: "Event einreichen"
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitcoin-Meetups auf BitcoinTalk (englisch)</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitcoin-Meetups im Wiki (englisch; deutsche Version nicht gepflegt)</a>"
-    meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin-Meetup-Gruppen</a>"
+    meetupgroup: "<a href=\"https://bitcoin.meetup.com/\">Bitcoin-Meetup-Gruppen</a>"
   faq:
     title: "FAQ - Bitcoin"
     pagetitle: "Häufig gestellte Fragen"
@@ -576,7 +576,7 @@ de:
     table: "Inhaltsverzeichnis"
     general: "Allgemein"
     whatisbitcoin: "Was ist Bitcoin?"
-    whatisbitcointxt1: "Bitcoin ist ein konsensorientiertes Netzwerk, welches ein neues Zahlungssystem und vollständig digitales Geld möglich macht. Es ist das erste dezentralisierte Peer-to-Peer Zahlungsnetzwerk, das nur von den Nutzern und ohne zentrale Autorität oder Vermittler betrieben wird. Aus Sicht des Nutzers ist Bitcoin mehr oder weniger Bargeld für das Internet. Bitcoin kann auch als das prominenteste Beispiel für ein bereits bestehendes <a href=\"http://financialcryptography.com/mt/archives/001325.html\">dreifaches Buchführungs-System</a> gesehen werden."
+    whatisbitcointxt1: "Bitcoin ist ein konsensorientiertes Netzwerk, welches ein neues Zahlungssystem und vollständig digitales Geld möglich macht. Es ist das erste dezentralisierte Peer-to-Peer Zahlungsnetzwerk, das nur von den Nutzern und ohne zentrale Autorität oder Vermittler betrieben wird. Aus Sicht des Nutzers ist Bitcoin mehr oder weniger Bargeld für das Internet. Bitcoin kann auch als das prominenteste Beispiel für ein bereits bestehendes <a href=\"https://financialcryptography.com/mt/archives/001325.html\">dreifaches Buchführungs-System</a> gesehen werden."
     creator: "Wer hat Bitcoin erfunden?"
     creatortxt1: "Bitcoin ist die erste Implementierung eines Konzepts namens \"Kryptowährung\", welches erstmals 1998 von Wei Dai auf der Cypherpunk-Mailingliste beschrieben wurde. Dort schlug er die Idee einer neuen Form von Geld vor, die Kryptographie anstelle einer zentralen Instanz nutzt, um deren Schaffung und Transaktionen zu kontrollieren. Die erste Bitcoin-Spezifikation und der Machbarkeitsnachweis wurden 2009 von Satoshi Nakamoto in einer Kryptographie-Mailingliste veröffentlicht. Satoshi verließ das Projekt Ende 2010 ohne viel von sich preiszugeben. Die Community ist seitdem exponentiell gewachsen, mit <a href=\"#development#\">vielen Entwicklern</a> die an Bitcoin arbeiten."
     creatortxt2: "Satoshis Anonymität hat häufig zu unbegründeten Bedenken geführt, von denen viele mit einem falschen Verständnis von der Open-Source-Natur von Bitcoin zusammenhängen. Das Bitcoin-Protokoll und die Software sind allgemein einsehbar und jeder Entwickler auf der ganzen Welt kann den Code begutachten oder eine eigene modifizierte Version der Bitcoin-Software erschaffen. Genau wie bei gegenwärtigen Entwicklern, war Satoshis Einfluss auf jene Veränderungen begrenzt, die von anderen angenommen wurden und demzufolge kontrollierte er Bitcoin nicht. Deshalb ist die Identität des Erfinders von Bitcoin mittlerweile wahrscheinlich so relevant wie die Identität der Person, die das Papier erfunden hat."
@@ -591,7 +591,7 @@ de:
     acquireli1: "Als Zahlung für Waren oder Dienste."
     acquireli2: "Kauf von Bitcoins an einer <a href=\"https://www.buybitcoinworldwide.com\">Bitcoin-Börse</a>."
     acquireli3: "Durch das Tauschen von Bitcoins mit <a href=\"https://localbitcoins.com/\"> jemandem in Ihrer Nähe</a>."
-    acquireli4: "Verdienen von Bitcoins durch kompetitives <a href=\"http://www.bitcoinmining.com/\">Mining</a>."
+    acquireli4: "Verdienen von Bitcoins durch kompetitives <a href=\"https://www.bitcoinmining.com/\">Mining</a>."
     acquiretxt1: "Zwar ist es möglich, Einzelpersonen zu finden, die Bitcoins per Kreditkarte oder Paypal verkaufen, doch die meisten Bitcoin-Börsen erlauben keine Zahlungen auf diesem Weg, da in einigen Fällen Personen Bitcoins mit Paypal gekauft und dann Rückbuchungen ihrer Transaktionen veranlasst haben. Das wird im Englischen gewöhnlich als \"Chargeback\" bezeichnet."
     makepayment: "Wie schwierig ist es, eine Bitcoin-Zahlung durchzuführen?"
     makepaymenttxt1: "Bitcoin-Zahlungen sind leichter durchzuführen als Käufe mit Bank- oder Kreditkarten und können ohne ein Händlerkonto ausgeführt werden. Getätigt werden Zahlungen mit Hilfe einer Wallet-Anwendung entweder auf Ihrem Computer oder Smartphone. Sie geben die Empfängeradresse sowie den Betrag ein und Drücken auf Senden. Um die Eingabe der Empfängeradresse zu erleichtern, können viele Wallets die Adresse durch Scannen eines QR-Codes oder durch das Verbinden zweier Telefone mittels NFC-Technologie abrufen."
@@ -739,7 +739,7 @@ de:
     miningsecure: "Inwiefern hilft Mining dabei, Bitcoin zu schützen?"
     miningsecuretxt1: "Mining schafft das Äquivalent einer wettbewerbsorientierten Lotterie, die es sehr schwierig für jemanden macht, fortlaufend neue Blöcke von Transaktionen zu der Blockchain hinzuzufügen. Das schützt die Neutralität des Netzwerks, da es dafür sorgt, dass niemand die Macht erhält, gewisse Transaktionen zu blockieren. Es verhindert auch, dass jemand seine eigene Ausgaben rückgängig machen und so andere Nutzer betrügen kann. Das Mining macht es exponentiell schwieriger, frühere Transaktionen rückgängig zu machen, da es erforderlich wäre, alle Transaktionen der folgenden Blöcke neu zu schreiben."
     miningstart: "Was benötige ich, um mit dem Mining zu beginnen?"
-    miningstarttxt1: "Früher konnte jeder mit der CPU seines Computers selbst neue Blöcke generieren. Als mehr und mehr Leute mit dem Mining von Bitcoins anfingen, ist die Schwierigkeit bei der Suche nach neuen Blöcken immer weiter angestiegen. Heutzutage ist die einzig rentable Methode, neue Bitcoins zu finden, die Nutzung darauf spezialisierter Hardware. Weitere Informationen finden Sie auf <a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a>"
+    miningstarttxt1: "Früher konnte jeder mit der CPU seines Computers selbst neue Blöcke generieren. Als mehr und mehr Leute mit dem Mining von Bitcoins anfingen, ist die Schwierigkeit bei der Suche nach neuen Blöcken immer weiter angestiegen. Heutzutage ist die einzig rentable Methode, neue Bitcoins zu finden, die Nutzung darauf spezialisierter Hardware. Weitere Informationen finden Sie auf <a href=\"https://www.bitcoinmining.com/\">BitcoinMining.com</a>"
     security: "Sicherheit"
     secure: "Ist Bitcoin sicher?"
     securetxt1: "Die Bitcoin-Technologie - das Protokoll und die Kryptographie - haben eine überzeugende Erfolgsbilanz was Sicherheit angeht, und das Bitcoin-Netzwerk ist vermutlich das größte dezentralisierte Computerprojekt der Welt. Bitcoins wundester Punkt ist der Benutzerfehler. Bitcoin-Wallet-Dateien, die die notwendigen privaten Schlüssel speichern, können versehentlich gelöscht, verloren oder gestohlen werden. Das ist vergleichbar mit Bargeld in digitaler Form. Glücklicherweise können Nutzer solide <a href=\"#secure-your-wallet#\">Sicherheitspraktiken</a> nutzen, oder auf Dienstleister zurrückgreifen, die ein hohes Maß an Schutz und Absicherung vor Diebstahl oder Verlust bieten."
@@ -828,7 +828,7 @@ de:
         nicht gezeigte Werbung, oder kaufen Bandbreite eines WiFi-Hotspots pro Kilobyte.
         Bitcoin ist effizient genug, um alle diese Ideen möglich zu machen. <a href="https://bitcoinj.github.io/working-with-micropayments">Lesen
         Sie mehr</a> über die Technologie, die hinter Bitcoin-Kleinstzahlungen steckt,
-        oder über <a href="http://lightning.network/">zukünftige Upgrades</a>, die
+        oder über <a href="https://lightning.network/">zukünftige Upgrades</a>, die
         gegenwärtig entwickelt und implementiert werden, um Mikrozahlungen allgemein
         zugänglich zu machen.
     mediation: "Schlichtungsstelle"
@@ -923,7 +923,7 @@ de:
     pagetitle: "Bitcoin-Ressourcen"
     pagedesc: "Nützliche Websites und Ressourcen zu Bitcoin."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin-Wiki</a>"
-    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
+    linkcointelegraph: "<a href=\"https://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Verzeichnisse"
     linkwallets: "Wallets"
     linkmerchants: "Händler"
@@ -1030,11 +1030,11 @@ de:
     node: "Seien Sie das Netzwerk"
     nodetxt: "Falls Sie eine gute Internetverbindung haben, dann können Sie das Bitcoin-Netzwerk unterstützen, indem Sie die <a href=\"/en/full-node\">Full Node-Software</a> auf Ihrem Computer oder Server - mit offenem Port 8333 - laufen lassen. Full Nodes sichern und leiten Transaktionen weiter."
     mining: "Mining"
-    miningtxt: "Sie können mit dem <a href=\"http://www.bitcoinmining.com/\">Bitcoin-Mining</a> beginnen, um bei der Verarbeitung von Transaktionen zu helfen. Um das Netzwerk zu schützen, sollten Sie kleineren Mining-Pools beitreten. Bevorzugen Sie  dezentrale Pools wie <a href=\"http://p2pool.in/\">P2Pool</a>, oder <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">Pools</a>, die getblocktemplate (GBT) unterstützen."
+    miningtxt: "Sie können mit dem <a href=\"https://www.bitcoinmining.com/\">Bitcoin-Mining</a> beginnen, um bei der Verarbeitung von Transaktionen zu helfen. Um das Netzwerk zu schützen, sollten Sie kleineren Mining-Pools beitreten. Bevorzugen Sie  dezentrale Pools wie <a href=\"http://p2pool.in/\">P2Pool</a>, oder <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">Pools</a>, die getblocktemplate (GBT) unterstützen."
     develop: "Entwicklung"
     developtxt: "Bitcoin ist freie Software. Als Entwickler können Sie Ihre Superkräfte nutzen, um Gutes zu tun und <a href=\"#development#\">Bitcoin zu verbessern</a>. Oder Sie entwickeln geniale neue Dienste oder Software, die Bitcoin verwenden."
     donation: "Spenden"
-    donationtxt: "Die einfachste Möglichkeit zu helfen ist eine <a href=\"http://bitgivefoundation.org/donate/\">Spende</a> von Bitcoin an BitGive. Oder Sie unterstützen direkt ein Bitcoin-bezogenes Projekt, das Ihrer Meinung nach in Zukunft hilfreich sein wird."
+    donationtxt: "Die einfachste Möglichkeit zu helfen ist eine <a href=\"https://bitgivefoundation.org/donate/\">Spende</a> von Bitcoin an BitGive. Oder Sie unterstützen direkt ein Bitcoin-bezogenes Projekt, das Ihrer Meinung nach in Zukunft hilfreich sein wird."
     nonprofit: "Organisationen"
     nonprofittxt: "Viele <a href=\"#community##[community.non-profit]\">gemeinnützige Organisationen</a> widmen sich dem Schutz und der Förderung von Bitcoin. Sie können diesen Gruppen helfen, indem Sie diesen beitreten und an Projekten, Diskussionen und Events mitwirken."
     spread: "Weitersagen"
@@ -1139,7 +1139,7 @@ de:
         Diese Seite ist auf die neue Bitcoin Core
         Website umgezogen (Klicken Sie hier, um weitergeleitet zu werden)
     banner-translate: "Übersetzungen für diese Sprache sind veraltet. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Klicken Sie hier, um bei der Übersetzung von bitcoin.org in Ihre Sprache zu helfen</a>."
-    footer: "Veröffentlicht unter der <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-Lizenz</a>"
+    footer: "Veröffentlicht unter der <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-Lizenz</a>"
     donate-community: "Bitcoin.org unterstützen"
     donate-support: "Bitcoin.org ist ein Community-Projekt."
     network-status: "Netzwerkstatus"

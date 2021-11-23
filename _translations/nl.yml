@@ -517,10 +517,10 @@ nl:
     disclosuretxt: "Als u een zwakke plek in Bitcoin hebt opgemerkt, kunt u niet-kritieke kwetsbaarheden per e-mail naar een core-ontwikkelaar of naar de hierboven genoemde privémailinglist bitcoin-security sturen (in het Engels!). Een voorbeeld van een niet-kritieke kwetsbaarheid is een duur-om-uit-te-voeren Denial of Service-aanval. Kritieke kwetsbaarheden die te gevoelig zijn voor niet-versleutelde e-mail dienen versleuteld met een PGP-sleutel naar één of meer core-ontwikkelaars worden verstuurd."
     involve: "Doe mee"
     involvetxt1: "Bitcoin-ontwikkeling is opensource en elke ontwikkelaar kan een bijdrage aan het project leveren. Alles wat u nodig hebt, is te vinden in het <a href=\"https://github.com/bitcoin/bitcoin\">GitHub-centrum</a>. Lees het ontwikkelingsproces zoals beschreven in de README door, lever code van goede kwaliteit en leef alle richtlijnen na."
-    involvetxt2: "Discussie over de ontwikkeling vindt plaats op GitHub en de <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> mailinglijst. Minder formele discussie over ontwikkeling gebeurt op irc.freenode.net #bitcoin-core-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">web interface</a>, <a href=\"http://gnusha.org/bitcoin-core-dev/\">logs</a>)."
+    involvetxt2: "Discussie over de ontwikkeling vindt plaats op GitHub en de <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> mailinglijst. Minder formele discussie over ontwikkeling gebeurt op irc.freenode.net #bitcoin-core-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">web interface</a>, <a href=\"https://gnusha.org/bitcoin-core-dev/\">logs</a>)."
     more: "Meer opensourceprojecten"
     morewant: "Wil je bijdragen aan een ander project?"
-    morechoose: "U kunt een project uitkiezen om aan bij te dragen door een paar <a href=\"http://whatcanidoforbitcoin.org/\">vragen over uw vaardigheden</a> te beantwoorden."
+    morechoose: "U kunt een project uitkiezen om aan bij te dragen door een paar <a href=\"https://whatcanidoforbitcoin.org/\">vragen over uw vaardigheden</a> te beantwoorden."
     moremore: "Meer weergeven..."
     contributors: "Bitcoin Core-bijdragers"
     contributorsorder: "(Gesorteerd op aantal commits)"
@@ -539,7 +539,7 @@ nl:
     downloadtorrent: "Download torrent"
     source: "Broncode"
     versionhistory: "Toon versiegeschiedenis"
-    notelicense: "Bitcoin Core is een <a href=\"https://www.fsf.org/about/what-is-free-software\">vrije-software</a> project dat wordt ontwikkeld door de community en verspreid onder de <a href=\"http://opensource.org/licenses/mit-license.php\">MIT-licentie</a>."
+    notelicense: "Bitcoin Core is een <a href=\"https://www.fsf.org/about/what-is-free-software\">vrije-software</a> project dat wordt ontwikkeld door de community en verspreid onder de <a href=\"https://opensource.org/licenses/mit-license.php\">MIT-licentie</a>."
     notesync: "Het initieel synchroniseren van de Bitcoin Core kost tijd en het downloaden van veel data. Zorg ervoor dat u voldoende bandbreedte en opslagruimte heeft voor de volledige block chain grootte (meer dan {site.text.bitcoin_datadir_gb}GB). Als u over een goede internetverbinding beschikt, kunt u het netwerk helpen versterken door uw PC draaiende te houden met Bitcoin Core en poort 8333 open."
     full_node_guide: "Lees de <a href=\"/en/full-node\">full-node-handleiding</a> voor details."
     patient: "Controleer uw bandbreedte en beschikbare ruimte"
@@ -564,7 +564,7 @@ nl:
     eventsubmit: "Evenement indienen"
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitcoin-meetups op BitcoinTalk</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitcoin-meetups op de Wiki</a>"
-    meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin-meetupgroepen</a>"
+    meetupgroup: "<a href=\"https://bitcoin.meetup.com/\">Bitcoin-meetupgroepen</a>"
   faq:
     title: "Veelgestelde vragen - Bitcoin"
     pagetitle: "Veelgestelde vragen"
@@ -572,7 +572,7 @@ nl:
     table: "Inhoudsopgave"
     general: "Algemeen"
     whatisbitcoin: "Wat is Bitcoin?"
-    whatisbitcointxt1: "Bitcoin is een consensusnetwerk dat een nieuw betaalsysteem en compleet digitaal geld mogelijk maakt. Het is het eerste gedecentraliseerde door gebruikers gedreven peer-to-peer-betalingsnetwerk zonder centrale autoriteit of tussenpersonen. Vanuit het oogpunt van gebruikers is Bitcoin geld op het internet. Bitcoin kan ook worden gezien als het meest prominente <a href=\"http://financialcryptography.com/mt/archives/001325.html\">triple-entry boekhoudsysteem</a> ter wereld."
+    whatisbitcointxt1: "Bitcoin is een consensusnetwerk dat een nieuw betaalsysteem en compleet digitaal geld mogelijk maakt. Het is het eerste gedecentraliseerde door gebruikers gedreven peer-to-peer-betalingsnetwerk zonder centrale autoriteit of tussenpersonen. Vanuit het oogpunt van gebruikers is Bitcoin geld op het internet. Bitcoin kan ook worden gezien als het meest prominente <a href=\"https://financialcryptography.com/mt/archives/001325.html\">triple-entry boekhoudsysteem</a> ter wereld."
     creator: "Wie heeft Bitcoin bedacht?"
     creatortxt1: "Bitcoin is de eerste implementatie van een concept genaamd \" cryptovaluta \", dat voor het eerst in 1998 door Wei Dai op de cypherpunks mailinglijst werd beschreven, wat het idee voorstelt van een nieuwe vorm van geld dat gebruik maakt van cryptografie om de creatie en transacties ervan te beheren, in plaats van een centrale autoriteit. De eerste Bitcoin-specificatie en proof of concept werden in 2009 gepubliceerd in een cryptografie mailinglijst van Satoshi Nakamoto. Satoshi verliet het project eind 2010 zonder veel over zichzelf te onthullen. De gemeenschap is sindsdien exponentieel gegroeid met <a href=\"#development#\">veel ontwikkelaars</a> die aan Bitcoin werken."
     creatortxt2: "De anonimiteit van Satoshi heeft vaak ongegronde bezorgdheden gewekt, vele daarvan zijn gelinkt aan het onbegrip over de opensource-aanpak van Bitcoin. Het Bitcoin-protocol en de software zijn openbaar gepubliceerd, zodat ontwikkelaars van over de hele wereld de code kunnen inzien of hun eigen aangepaste versie van de Bitcoin-software kunnen maken. Net als bij de huidige ontwikkelaars was de invloed van Satoshi beperkt tot de overname van door hem gemaakte wijzigingen door anderen en om die reden had hij de touwtjes van Bitcoin niet in handen. De identiteit van de uitvinder van Bitcoin is daarom vandaag de dag net zo relevant als de identiteit van degene die papier heeft uitgevonden."
@@ -587,7 +587,7 @@ nl:
     acquireli1: "Als betaling voor goederen of diensten."
     acquireli2: "Koop bitcoins bij een <a href=\"https://www.buybitcoinworldwide.com\">Bitcoin-beurs</a>."
     acquireli3: "Wissel bitcoins uit met <a href=\"https://localbitcoins.com/\">iemand uit de buurt</a>."
-    acquireli4: "Verdien bitcoins via concurrerende <a href=\"http://www.bitcoinmining.com/\">mining</a>."
+    acquireli4: "Verdien bitcoins via concurrerende <a href=\"https://www.bitcoinmining.com/\">mining</a>."
     acquiretxt1: "Hoewel het wellicht mogelijk is om personen te vinden die bitcoins in ruil voor een creditcard- of PayPal-betaling willen verkopen, staan de meeste wisselkantoren financiering middels deze betaalmethoden niet toe. Dit komt omdat er zich gevallen kunnen voordoen waarin iemand met PayPal bitcoins aanschaft en vervolgens zijn of haar deel van de transactie terugdraait. Dit wordt ook wel een stornering genoemd."
     makepayment: "Hoe moeilijk is het om een Bitcoin-betaling te doen?"
     makepaymenttxt1: "Bitcoin-betalingen zijn eenvoudiger te doen dan aankopen via een betaalkaart of creditcard en kunnen worden ontvangen zonder verkopersaccount. Betalingen worden via een portemonnee-applicatie op een computer of smartphone verricht door het adres van de ontvanger en het bedrag in te voeren en Verzenden te selecteren. Om het gemakkelijker te maken om het adres van een ontvanger in te voeren, kunnen veel portemonnees het adres verkrijgen door een QR-code te scannen of twee telefoons met NFC-technologie tegen elkaar te houden."
@@ -733,7 +733,7 @@ nl:
     miningsecure: "Hoe helpt mining om Bitcoin te beveiligen?"
     miningsecuretxt1: "Mining creëert het equivalent van een competitieve loterij waarin het heel moeilijk is voor dezelfde persoon om achtereenvolgend nieuwe transactieblokken aan de blokketen toe te voegen. Hierdoor wordt de neutraliteit van het netwerk beschermd door te voorkomen dat iemand bepaalde transacties kan blokkeren. Het voorkomt ook dat iemand delen van de blokketen kan vervangen om hun eigen uitgaven terug te draaien, iets wat kan worden gebruikt om andere gebruikers te bedriegen. Mining maakt het exponentieel moeilijker om een gedane transactie te herroepen door alle blokken volgend op deze transactie te herschrijven."
     miningstart: "Wat heb ik nodig om met mining te beginnen?"
-    miningstarttxt1: "In de beginperiode van Bitcoin kon iedereen een nieuw blok vinden door eenvoudig gebruik te maken van de CPU-eenheid van hun pc. Door de enorme stijging van het aantal \"miners\" is de moeilijkheidsgraad voor het vinden van een nieuw blok zodanig gestegen dat dit enkel nog mogelijk en rendabel is met gespecialiseerde hardware. Bezoek  <a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a> voor meer informatie"
+    miningstarttxt1: "In de beginperiode van Bitcoin kon iedereen een nieuw blok vinden door eenvoudig gebruik te maken van de CPU-eenheid van hun pc. Door de enorme stijging van het aantal \"miners\" is de moeilijkheidsgraad voor het vinden van een nieuw blok zodanig gestegen dat dit enkel nog mogelijk en rendabel is met gespecialiseerde hardware. Bezoek  <a href=\"https://www.bitcoinmining.com/\">BitcoinMining.com</a> voor meer informatie"
     security: "Beveiliging"
     secure: "Is Bitcoin veilig?"
     securetxt1: "De Bitcoin-technologie, waaronder het protocol en de cryptografie, hebben een solide staat van dienst als het om beveiliging gaat en het Bitcoin-netwerk is waarschijnlijk het grootste gedistribueerde computerproject ter wereld. De kwetsbaarheid van Bitcoin is te vinden aan de kant van gebruikers. Bitcoin-portemonneebestanden met de noodzakelijke geheime sleutels kunnen per ongeluk worden verwijderd, verloren of gestolen. Dit is vrijwel hetzelfde als bij fysiek geld dat digitaal wordt opgeslagen. Gelukkig kunnen gebruikers robuuste <a href=\"#secure-your-wallet#\">beveiligingsmaatregelen</a> inzetten om hun geld te beschermen of serviceproviders gebruiken die goede beveiligingsniveaus en verzekeringen tegen diefstal of verlies aanbieden."
@@ -822,7 +822,7 @@ nl:
         die niet wordt weergegeven, of bandbreedte koopt bij een WiFi-hotspot per
         kilobyte. Bitcoin is efficiënt genoeg om al deze ideeën mogelijk te maken.
         <a href="https://bitcoinj.github.io/working-with-micropayments">Leer meer</a>
-        over de technologie achter Bitcoin microbetalingen of over <a href="http://lightning.network/">toekomstige
+        over de technologie achter Bitcoin microbetalingen of over <a href="https://lightning.network/">toekomstige
         upgrades</a> die momenteel worden ontworpen en geïmplementeerd om microbetalingen
         toegankelijker te maken.
     mediation: "Bemiddeling bij geschillen"
@@ -841,7 +841,7 @@ nl:
     title: "Juridische disclaimer - Bitcoin"
     pagetitle: "Juridische disclaimer"
     information: "Informatie die op bitcoin.org gepubliceerd is"
-    informationtxt1: "De website http://bitcoin.org/ (waar hierna naar verwezen wordt als de \"Website\") verschaft informatie en materiaal van algemene aard. U bent niet bevoegd om de Website te gebruiken of erop te vertrouwen voor juridisch advies, zakelijk advies, of enig ander soort advies. Wanneer u handelt in vertrouwen op de inhoud van de Website, doet u dat op eigen risico. Als u een beslissing neemt om te handelen of niet te handelen dient u contact op te nemen met een bevoegde advocaat in het relevante rechtsgebied indien u hulp nodig heeft of wilt. De eigenaren van of bijdragers aan de Website zijn op geen enkele manier verantwoordelijk voor de handelingen, beslissingen of enig ander gedrag dat wel of niet door u wordt uitgevoerd waarbij u vertrouwt op de Website."
+    informationtxt1: "De website https://bitcoin.org/ (waar hierna naar verwezen wordt als de \"Website\") verschaft informatie en materiaal van algemene aard. U bent niet bevoegd om de Website te gebruiken of erop te vertrouwen voor juridisch advies, zakelijk advies, of enig ander soort advies. Wanneer u handelt in vertrouwen op de inhoud van de Website, doet u dat op eigen risico. Als u een beslissing neemt om te handelen of niet te handelen dient u contact op te nemen met een bevoegde advocaat in het relevante rechtsgebied indien u hulp nodig heeft of wilt. De eigenaren van of bijdragers aan de Website zijn op geen enkele manier verantwoordelijk voor de handelingen, beslissingen of enig ander gedrag dat wel of niet door u wordt uitgevoerd waarbij u vertrouwt op de Website."
     translations: "Vertalingen"
     translationstxt1: "Deze website kan vertalingen van de Engelse versie van de inhoud die beschikbaar is op de Website bevatten. Deze vertalingen worden uitsluitend voor uw gemak aangeboden. In geval van een conflict tussen de Engelstalige versie en de vertaalde versie, heeft de Engelstalige versie voorrang. Als u enige inconsistentie opmerkt, meld deze dan op <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org\">GitHub</a>."
     userisks: "Risico's verbonden aan het gebruik van Bitcoin"
@@ -917,7 +917,7 @@ nl:
     pagetitle: "Bitcoin hulpmiddelen"
     pagedesc: "Nuttige websites en bronnen over Bitcoin."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin-wiki</a>"
-    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
+    linkcointelegraph: "<a href=\"https://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Directory's"
     linkwallets: "Portemonnees"
     linkmerchants: "Verkopers"
@@ -1024,11 +1024,11 @@ nl:
     node: "Maak deel uit van het netwerk"
     nodetxt: "Als u een goede internetverbinding heeft, kunt u het Bitcoin-netwerk versterken door <a href=\"/en/full-node\">full node software</a> op uw computer of server te laten draaien met poort 8333 open. \"Full nodes\" beveiligen en versturen alle transacties."
     mining: "Mining"
-    miningtxt: "U kunt beginnen met de <a href=\"http://www.bitcoinmining.com/\">mining van Bitcoins</a> om de transactieverwerking te ondersteunen. Om het netwerk te beschermen, is het raadzaam om u bij kleinere miningpools of zelfs gedecentraliseerde pools zoals <a href=\"http://p2pool.in/\">P2Pool</a> of <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> aan te sl;uiten met ondersteuning voor getblocktemplate (GBT)."
+    miningtxt: "U kunt beginnen met de <a href=\"https://www.bitcoinmining.com/\">mining van Bitcoins</a> om de transactieverwerking te ondersteunen. Om het netwerk te beschermen, is het raadzaam om u bij kleinere miningpools of zelfs gedecentraliseerde pools zoals <a href=\"http://p2pool.in/\">P2Pool</a> of <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> aan te sl;uiten met ondersteuning voor getblocktemplate (GBT)."
     develop: "Ontwikkeling"
     developtxt: "Bitcoin is gratis software. Als ontwikkelaar kun je je superkrachten gebruiken om goed te doen en <a href=\"#development#\">Bitcoin te verbeteren</a>. Of je kunt verbazingwekkende nieuwe diensten of software bouwen die van Bitcoin gebruik maken."
     donation: "Doneren"
-    donationtxt: "De eenvoudigste manier om te helpen is door wat bitcoin te <a href=\"http://bitgivefoundation.org/donate/\">doneren</a> aan BitGive. Of u kunt direct helpen met het financieren van elk project, dat aan Bitcoin gerelateerd is en waarvan u denkt dat het in de toekomst nuttig zal zijn."
+    donationtxt: "De eenvoudigste manier om te helpen is door wat bitcoin te <a href=\"https://bitgivefoundation.org/donate/\">doneren</a> aan BitGive. Of u kunt direct helpen met het financieren van elk project, dat aan Bitcoin gerelateerd is en waarvan u denkt dat het in de toekomst nuttig zal zijn."
     nonprofit: "Organisaties"
     nonprofittxt: "Veel <a href=\"#community##[community.non-profit]\">non-profitorganisaties</a> richten zich op de bescherming en promotie van Bitcoin. U kunt deze groepen helpen door mee te doen aan hun projecten, discussies en evenementen."
     spread: "Verspreiden"
@@ -1133,7 +1133,7 @@ nl:
         Deze pagina is verhuisd naar de nieuwe Bitcoin Core
         website (klik hier om te worden doorgestuurd)
     banner-translate: "De vertalingen voor deze taal zijn verouderd. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Klik hier om bitcoin.org in uw taal te helpen vertalen</a>."
-    footer: "Beschikbaar onder de <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-licentie</a>"
+    footer: "Beschikbaar onder de <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-licentie</a>"
     donate-community: "Steun Bitcoin.org"
     donate-support: "Bitcoin.org wordt ondersteund door de gemeenschap."
     network-status: "Netwerk status"

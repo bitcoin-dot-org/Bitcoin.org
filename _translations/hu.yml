@@ -444,10 +444,10 @@ hu:
     disclosuretxt: "Amennyiben bármilyen, a Bitcoinnal kapcsolatos sebezhetőségre bukkansz, a nem kritikus biztonsági réseket angol nyelvű e-mailben a magfejlesztők bármelyikének elküldheted, vagy megoszthatod a fent látható privát bitcoin-security levelezőlistán. Egy nem kritikus biztonsági résre jó példa egy, csak nagy költséggel kivitelezhető szolgáltatásmegtagadással járó támadás (DoS). Azokat a kritikus biztonsági réseket, amelyek túlságosan érzékenyek egy titkosítás nélküli e-mailben való elküldéshez, a PGP-kulcsukkal titkosítva célszerű elküldened egy vagy több magfejlesztőnek."
     involve: "Legyen részese a projektnek"
     involvetxt1: "A Bitcoin egy nyílt szoftver, így bármely fejlesztő hozzájárulhat a projekthez. Minden, amire csak szükséged van, megtalálható a <a href=\"https://github.com/bitcoin/bitcoin\">GitHub-repositoryban</a>. Kérjük, mindenképpen olvasd el a README-ben található fejlesztésifolyamat-leírást, készíts jó minőségű kódot, valamint tarts tiszteletben minden irányelvet."
-    involvetxt2: "Fejlesztői beszélgetések a GitHubon és a <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> levelezőlistán kerülnek lebonyolításra. A kevésbé formális beszélgetések az irc.freenode.net-en történnek #bitcoin-core-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">webes interfész <a href=\"http://gnusha.org/bitcoin-core-dev/\">naplók</a>)."
+    involvetxt2: "Fejlesztői beszélgetések a GitHubon és a <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> levelezőlistán kerülnek lebonyolításra. A kevésbé formális beszélgetések az irc.freenode.net-en történnek #bitcoin-core-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">webes interfész <a href=\"https://gnusha.org/bitcoin-core-dev/\">naplók</a>)."
     more: "Még több ingyenes szoftverprojekt"
     morewant: "Egy másik projektben szeretnél közreműködni?"
-    morechoose: "Néhány, <a href=\"http://whatcanidoforbitcoin.org/\">készségeidre vonatkozó kérdés</a> megválaszolásával megállapíthatod, hogy melyik projektben érdemes részt venned."
+    morechoose: "Néhány, <a href=\"https://whatcanidoforbitcoin.org/\">készségeidre vonatkozó kérdés</a> megválaszolásával megállapíthatod, hogy melyik projektben érdemes részt venned."
     moremore: "Tovább..."
     contributors: "Bitcoin Core-közreműködők"
     contributorsorder: "(A hozzájárulások menyiségének sorrendjében)"
@@ -466,7 +466,7 @@ hu:
     downloadtorrent: "Torrent letöltése"
     source: "Forráskód"
     versionhistory: "Korábbi verziók mutatása"
-    notelicense: "A Bitcoin Core egy közösség által irányított, az <a href=\"http://opensource.org/licenses/mit-license.php\">MIT licence</a> alatt kibocsátott, <a href=\"https://www.fsf.org/about/what-is-free-software\">ingyenes szoftverprojekt</a>."
+    notelicense: "A Bitcoin Core egy közösség által irányított, az <a href=\"https://opensource.org/licenses/mit-license.php\">MIT licence</a> alatt kibocsátott, <a href=\"https://www.fsf.org/about/what-is-free-software\">ingyenes szoftverprojekt</a>."
     notesync: "A Bitcoin Core első szinkronizációja hosszú időt és rengeteg adat letöltését veszi igénybe. Győződj meg róla, hogy rendelkezel elegendő sávszélességgel és tárhellyel a teljes blokkláncmérethez (több mint {{site.text.bitcoin_datadir_gb}}GB). Amennyiben jó internetkapcsolattal rendelkezel, akkor úgy tudod erősíteni a hálózatot, hogy hagyod futni a számítógépedet a Bitcoin Core-ral és 8333-as porttal megnyitva."
     full_node_guide: "Olvasd el a <a href=\"/en/full-node\">teljes csomópontról szóló tájékoztatót</a> a részletekért."
     patient: "Ellenőrizd sávszélességed és a tárhelyed"
@@ -491,7 +491,7 @@ hu:
     eventsubmit: "Esemény beküldése"
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitcoin-meetupok a BitcoinTalkon</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitcoin-meetupok a Wikin</a>"
-    meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin-meetupcsoportok</a>"
+    meetupgroup: "<a href=\"https://bitcoin.meetup.com/\">Bitcoin-meetupcsoportok</a>"
   faq:
     title: "GYIK – Bitcoin"
     pagetitle: "Gyakran ismételt kérdések"
@@ -499,7 +499,7 @@ hu:
     table: "Tartalomjegyzék"
     general: "Általános jellemzők"
     whatisbitcoin: "Mi az a Bitcoin?"
-    whatisbitcointxt1: "A Bitcoin egy konszenzusra épülő hálózat, amely egy új fizetési rendszert, valamint egy teljes mértékben digitális pénzt tesz lehetővé. Ez az első decentralizált, peer-to-peer fizetési hálózat, amelyet felhasználói fejlesztenek, központi hatalom vagy közvetítők nélkül. Felhasználói szemszögből a Bitcoin tulajdonképpen internetes készpénznek tekinthető. A Bitcoin a legjelentősebb létező, ún. <a href=\"http://financialcryptography.com/mt/archives/001325.html\">hármas könyvviteli rendszer</a>."
+    whatisbitcointxt1: "A Bitcoin egy konszenzusra épülő hálózat, amely egy új fizetési rendszert, valamint egy teljes mértékben digitális pénzt tesz lehetővé. Ez az első decentralizált, peer-to-peer fizetési hálózat, amelyet felhasználói fejlesztenek, központi hatalom vagy közvetítők nélkül. Felhasználói szemszögből a Bitcoin tulajdonképpen internetes készpénznek tekinthető. A Bitcoin a legjelentősebb létező, ún. <a href=\"https://financialcryptography.com/mt/archives/001325.html\">hármas könyvviteli rendszer</a>."
     creator: "Ki hozta létre a Bitcoint?"
     creatortxt1: "A Bitcoin a \"kriptovalutának\" nevezett koncepció első megvalósítása, amelyet Wei Dai írt körül először a cypherpunks levelezőlistáján 1998-ban. A pénz egy olyan új formájára tett javaslatot, amely egy központi hatalom helyett kriptográfiát használ önmaga létrehozására és tranzakcióinak irányítására. Az első Bitcoin-specifikációt és koncepcióbizonyítást (PoC) Satoshi Nakamoto publikálta 2009-ben, egy kriptográfiával foglalkozó levelezőlistán. Satoshi 2010 végén kilépett a projektből; anélkül, hogy önmagáról sokat elárult volna. A közösség azóta exponenciális ütemben növekszik, a Bitcoinon pedig <a href=\"#development#\">számos fejlesztő</a> dolgozik."
     creatortxt2: "Satoshi anonimitása gyakran igazságtalan kérdéseket vetett fel, amelyek nagy része a Bitcoin nyílt forráskódú jellegének félreértéséből fakadtak. A Bitcoin-protokoll és -szoftver nyíltan publikált, és a kódot a világ bármely fejlesztője felülvizsgálhatja, vagy létrehozhatja saját, módosított Bitcoin-szoftververzióját. Éppen úgy, ahogy a jelenlegi fejlesztőké, Satoshi befolyása is csak azokra a változtatásokra terjedt ki, amelyeket mások elfogadtak; ily módon nem irányította a Bitcoint. Így tehát a Bitcoin feltalálójának személyazonossága feltehetőleg annyira releváns manapság, mint a papír feltalálójáé."
@@ -513,7 +513,7 @@ hu:
     acquireli1: "Termékekért és szolgáltatásokért való fizetéssel."
     acquireli2: "Vásárolj bitcoint egy <a href=\"https://www.buybitcoinworldwide.com\">Bitcoin-tőzsdén</a>."
     acquireli3: "Kereskedj bitcoinnal <a href=\"https://localbitcoins.com/\">lakhelyed környékén</a>."
-    acquireli4: "Juss bitcoinokhoz versenyszerű <a href=\"http://www.bitcoinmining.com/\">bányászat</a> segítségével."
+    acquireli4: "Juss bitcoinokhoz versenyszerű <a href=\"https://www.bitcoinmining.com/\">bányászat</a> segítségével."
     acquiretxt1: "Bár lehetséges olyan magánszemélyt találni, aki hajlandó bitcoinokat eladni bankkártya- vagy PayPal-fizetés ellenében, a legtöbb kereskedő nem engedélyezi ezen fizetési módok használatát. Ennek oka az, hogy vannak olyan esetek, amikor valaki PayPal segítségével vásárol bitcoinokat, ezt követően pedig visszavonja a tranzakció őt érintő felét. Erre az esetre gyakran mint visszaszámlázás utalnak."
     makepayment: "Mennyire bonyolult Bitcoinnal fizetni?"
     makepaymenttxt1: "A Bitcoin-fizetések egyszerűbben kezdeményezhetőek, mint a bank- vagy hitelkártyával történő internetes vásárlások, valamint kereskedői fiók nélkül is fogadhatók. A kifizetések egy pénztárca-alkalmazás segítségével hozhatók létre számítógépeden vagy okostelefonodon, a címzett címe és a kifizetési összeg megadásával, valamint a küldés gomb megnyomásával. A címzett címe megadásának leegyszerűsítésére számos pénztárca támogatja a QR-kód-beolvasást, vagy az NFC-technológiát."
@@ -656,7 +656,7 @@ hu:
     miningsecure: "Hogyan segíti elő a bányászat a Bitcoin védelmét?"
     miningsecuretxt1: "A bányászat egy olyan - a lottóhoz hasonlítható - rendszer, amelyben rendkívül nehéz egymást követő tranzakcióblokkokat felfűzni a blokkláncra. Ez megvédi a rendszer semlegességét, mivel megakadályozza, hogy bármely egyén olyan hatalomra tegyen szert, amellyel megakaszthat bizonyos tranzakciókat. Ez megakadályozza azt, hogy az egyének a blokklánc egyes elemeit saját költéseik visszafejtésre érdekében kicseréljék, amely segítségével más felhasználókat becsaphatnának. A bányászat egy adott tranzakció megváltoztatásához az azt követő összes blokk újraírásának követelménye révén exponenciálisan nehézzé teszi a múltbeli tranzakciók visszavonását."
     miningstart: "Mit kell tennem ahhoz, hogy elkezdhessek bányászni?"
-    miningstarttxt1: "A Bitcoin születésének hajnalán bárki találhatott egy új blokkot számítógépe processzorának használatával. Ahogy egyre több ember kezdett bányászni, az új blokkok megtalálásának nehézsége olyannyira megnőtt, hogy mára az egyetlen költséghatékony módszert a specializált szoftverek használata jelenti. További információért keresse fel a <a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a> weboldalt (angol nyelven)."
+    miningstarttxt1: "A Bitcoin születésének hajnalán bárki találhatott egy új blokkot számítógépe processzorának használatával. Ahogy egyre több ember kezdett bányászni, az új blokkok megtalálásának nehézsége olyannyira megnőtt, hogy mára az egyetlen költséghatékony módszert a specializált szoftverek használata jelenti. További információért keresse fel a <a href=\"https://www.bitcoinmining.com/\">BitcoinMining.com</a> weboldalt (angol nyelven)."
     security: "Biztonság"
     secure: "Biztonságos-e a Bitcoin?"
     securetxt1: "A Bitcoin technológiája - a protokoll és a kriptográfia - komoly biztonsági tapasztalattal rendelkezik, és a Bitcoin-hálózat valószínűleg a legnagyobb megosztott számítástechnikai projekt a világon. A Bitcoin legáltalánosabb sebezhetőségét a felhasználói hibák okozzák. A szükséges privát kulcsokat tartalmazó Bitcoin-pénztárcafájlok véletlenül kitörölhetőek, elveszíthetőek vagy ellophatják őket. Ez nagyon hasonló a fizikai készpénz digitális formában történő tárolásához. Szerencsére a felhasználók erős <a href=\"#secure-your-wallet#\">biztonsági gyakorlatokat vezethetnek be</a> pénzük megvédése érdekében, vagy magas szintű biztonságot, illetve a lopásokra vagy elvesztésre biztosítást kínáló szolgáltatókat használhatnak."
@@ -743,7 +743,7 @@ hu:
         esetén minden meg nem jelenített reklámért egy kisebb összeget adományozol
         vagy egy wifi hotspot sávszélességét kilobájt alapon vásárolod meg. A bitcoin
         minden ilyesfajta ötlet megvalósításához kellően hatékony. <a href="https://bitcoinj.github.io/working-with-micropayments">Tudj
-        meg többet</a> (angol nyelven) a bitcoin mikroutalásokról vagy a <a href="http://lightning.network/">jövőbeli
+        meg többet</a> (angol nyelven) a bitcoin mikroutalásokról vagy a <a href="https://lightning.network/">jövőbeli
         frissítésekről</a>, melyeket azért terveznek és használnak, hogy a mikroutalásokat
         hozzáférhetőbbé tegyék.
     mediation: "Mediáció"
@@ -762,7 +762,7 @@ hu:
     title: "Jogi felelősségkizárás - Bitcoin"
     pagetitle: "Jogi felelősségkizárás"
     information: "A bitcoin.org weboldalon közzétett információ"
-    informationtxt1: "A http://bitcoin.org/ weboldal (a továbbiakban a \"Weboldal\") általános természetű információkat és anyagokat biztosít. Nem vagy felhatalmazva és nem célszerű a Weboldalra hagyatkoznod jogi tanácsért, üzleti tanácsért, vagy bármilyen jellegű tanácsért. A Weboldal tartalmára való hagyatkozás során saját felelősségre cselekszel. Amennyiben döntési helyzetbe kerülsz, érdemes okleveles jogászt felkeresni abban a joghatóságban, ahol segítségre van szükséged. A Weboldal tulajdonosai, közreműködői semmilyen formában nem felelősek a Weboldalra való hagyatkozásból bekövetkező tettek, döntések vagy egyéb magatartások megvalósulásáért vagy elmaradásáért."
+    informationtxt1: "A https://bitcoin.org/ weboldal (a továbbiakban a \"Weboldal\") általános természetű információkat és anyagokat biztosít. Nem vagy felhatalmazva és nem célszerű a Weboldalra hagyatkoznod jogi tanácsért, üzleti tanácsért, vagy bármilyen jellegű tanácsért. A Weboldal tartalmára való hagyatkozás során saját felelősségre cselekszel. Amennyiben döntési helyzetbe kerülsz, érdemes okleveles jogászt felkeresni abban a joghatóságban, ahol segítségre van szükséged. A Weboldal tulajdonosai, közreműködői semmilyen formában nem felelősek a Weboldalra való hagyatkozásból bekövetkező tettek, döntések vagy egyéb magatartások megvalósulásáért vagy elmaradásáért."
     translations: "Fordítások"
     translationstxt1: "A Weboldal az oldalon található, eredeti, angol nyelvű tartalom fordításait tartalmazhatja. Ezek a fordítások csupán a felhasználói kényelmet biztosítják. Bármilyen, az angol nyelvű és a fordított változattal kapcsolatos probléma esetén az angol nyelvű verzió élvez elsőbbséget. Amennyiben bármilyen jellegű következetlenséget észlel, kérjük, jelentse ezeket a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org\">GitHubon</a>."
     userisks: "A Bitcoin használatával kapcsolatos kockázatok"
@@ -838,7 +838,7 @@ hu:
     pagetitle: "Bitcoin források"
     pagedesc: "Hasznos oldalak és források a Bitcoinról."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin Wiki</a>"
-    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
+    linkcointelegraph: "<a href=\"https://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Könyvtárak"
     linkwallets: "Pénztárcák"
     linkmerchants: "Kereskedők"
@@ -945,7 +945,7 @@ hu:
     node: "Legyen Ön a hálózat"
     nodetxt: "Ha gyors interneteléréssel rendelkezel, a Bitcoin-hálózatot a számítógépén vagy szerverén - nyitott 8333-as porttal - egy <a href=\"/en/full-node\">teljes csomóponti szoftver</a> folyamatos futtatásával erősítheted. A teljes csomópontok az összes tranzakció biztonságát szavatolják, valamint továbbítják azokat."
     mining: "Bányászat"
-    miningtxt: "Te is elkezdhetsz <a href=\"http://www.bitcoinmining.com/\">bitcoint bányászni</a> a tranzakciók feldogozásának támogatásához. A hálózat védelme érdekében érdemes kisebb bányászati közösségekhez, mint a <a href=\"http://p2pool.in/\">P2Poolhoz hasonló</a> vagy getblocktemplate (GBT) támogatással rendelkező <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">közösségekhez</a> csatlakozni."
+    miningtxt: "Te is elkezdhetsz <a href=\"https://www.bitcoinmining.com/\">bitcoint bányászni</a> a tranzakciók feldogozásának támogatásához. A hálózat védelme érdekében érdemes kisebb bányászati közösségekhez, mint a <a href=\"http://p2pool.in/\">P2Poolhoz hasonló</a> vagy getblocktemplate (GBT) támogatással rendelkező <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">közösségekhez</a> csatlakozni."
     develop: "Fejlesztés"
     developtxt: "A Bitcoin egy ingyenes szoftver. Ha fejlesztő vagy, akkor a szuperképességeidet jó célra fordíthatod és segíthetsz a <a href=\"#development#\">Bitcoin fejlesztésében</a>. Vagy létrehozhatsz Bitcoint használó, nagyszerű, új szolgáltatásokat vagy szoftvereket."
     donation: "Adományozás"
@@ -1052,7 +1052,7 @@ hu:
     banner-core-moved: |
         Ez az oldal elköltözött az új Bitcoin Core
         oldalra (kattints ide az átirányításhoz)
-    footer: "Az <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licence</a> alatt közzétéve"
+    footer: "Az <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licence</a> alatt közzétéve"
     donate-community: "Támogasd a Bitcoin.org-ot"
     donate-support: "A Bitcoin.org honlapot a közösség támogatja."
     network-status: "Hálózat státusza"
