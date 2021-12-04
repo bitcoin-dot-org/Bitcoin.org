@@ -3,7 +3,7 @@
 # http://opensource.org/licenses/MIT.
 
 id: sbw
-title: "SBW (Simple Bitcoin Wallet)"
+title: "SBW"
 titleshort: "SBW"
 compat: "mobile android"
 user: beginner
