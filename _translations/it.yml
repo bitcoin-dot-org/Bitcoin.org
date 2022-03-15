@@ -341,7 +341,7 @@ it:
     checkpassenvironmenttwofactor: "Autenticazione a Due Fattori"
     checkpassenvironmenttwofactortxt: "Questo portafoglio può essere utilizzato in ambienti poco sicuri. Comunque questo servizio richiede l'autenticazione a due fattori. Ciò significa che per rubarvi i bitcoin occorrerà avere accesso a più dispositivi o account."
     checkfailenvironmentdesktop: "Ambiente vulnerabile"
-    checkfailenvironmentdesktoptxt: "Questo portafoglio puo esse caricato su computer che sono vulnerabili ai malware. Rendere sicuro il tuo computer, usare una password complessa, spostare la maggior parte dei vostri fondi nei cold storage o abilitare l'autenticazione a due fattori renderà più difficile il furto dei vostri bitcoin."
+    checkfailenvironmentdesktoptxt: "Questo portafoglio può essere caricato su computer che sono vulnerabili ai malware. Rendere sicuro il tuo computer, usare una password complessa, spostare la maggior parte dei vostri fondi nei cold storage o abilitare l'autenticazione a due fattori renderà più difficile il furto dei vostri bitcoin."
     checkgoodprivacyimproved: "Privacy migliorata"
     checkneutralprivacyvariable: "Privacy variabile"
     checkneutralprivacyvariabletxt: "Le funzioni di privacy sono fornite dal portafoglio che utilizzi su questo dispositivo. "
