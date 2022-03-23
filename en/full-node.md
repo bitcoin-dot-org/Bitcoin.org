@@ -1021,10 +1021,10 @@ check the release notes for the new version if you are planning to downgrade.
 If you want to support the Bitcoin network, you must allow inbound
 connections.
 
-When Bitcoin Core starts, it establishes 8 outbound connections to other
+When Bitcoin Core starts, it establishes 10 outbound connections to other
 full nodes so it can download the latest blocks and transactions. If you
 just want to use your full node as a wallet, you don't need more than
-these 8 connections---but if you want to support lightweight clients and
+these 10 connections---but if you want to support lightweight clients and
 other full nodes on the network, you must allow inbound connections.
 
 Servers connected directly to the Internet usually don't require any
@@ -1075,7 +1075,7 @@ instructions below:
 In the bottom right corner of the Bitcoin Core GUI are several icons.
 If you hover over the signal strength icon, it will tell you how many
 connections you have. The icon won't turn green until you have more
-than 8 active connections, which only happens if inbound connections
+than 10 active connections, which only happens if inbound connections
 are allowed.
 
 ![Active connections](/img/full-node/en-active-connections.png?{{site.time | date: '%s'}})
@@ -1094,7 +1094,7 @@ connections.](#enabling-connections)
 
 The [`getconnectioncount`](https://developer.bitcoin.org/reference/rpc/getconnectioncount.html)
 command will tell you how many connections you have. If you have more
-than 8 connections, inbound connections are allowed. For example:
+than 10 connections, inbound connections are allowed. For example:
 
 <pre>$ <b>bitcoin-cli getconnectioncount</b>
 52</pre>
@@ -1350,7 +1350,7 @@ blocks could be served to other nodes.
 
 Some node operators need to deal with bandwidth caps imposed by their ISPs.
 
-By default, Bitcoin Core allows up to 125 connections to different peers, 8 of
+By default, Bitcoin Core allows up to 125 connections to different peers, 10 of
 which are outbound. You can therefore have at most 117 inbound connections.
 
 The default settings can result in relatively significant traffic consumption.
@@ -1379,7 +1379,7 @@ per day)**
 -listen=0
 {% endhighlight %}
 
-Disabling listening will result in fewer nodes connected (remember the maximum of 8
+Disabling listening will result in fewer nodes connected (remember the maximum of 10
 outbound peers). Fewer nodes will result in less traffic usage as you are relaying
 blocks and transactions to fewer nodes.
 
