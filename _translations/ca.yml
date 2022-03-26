@@ -1,0 +1,1282 @@
+ca:
+  about-us:
+    title: "Sobre bitcoin.org"
+    pagetitle: "Sobre bitcoin.org"
+    pagedesc: "Bitcoin.org es dedica a ajudar Bitcoin a desenvolupar-se d'una manera sostenible."
+    own: "A qui pertany bitcoin.org?"
+    owntxt-title: "Satoshi Nakamoto i Martti Malmi"
+    owntxt: "Bitcoin.org va ser originalment registrat i administrat pels dos primers desenvolupadors de Bitcoin, <a href=\"https://en.bitcoin.it/wiki/Satoshi_Nakamoto\">Satoshi Nakamoto</a> i <a href=\"https://en.bitcoin.it/wiki/Sirius\">Martti Malmi</a>. Quan Nakamoto va deixar el projecte, va atorgar l'administració del domini a diferents persones, desvinculades dels desenvolupadors de Bitcoin, amb la finalitat de repartir la responsabilitat i prevenir que qualsevol persona o grup pogués obtenir fàcilment el control sobre el projecte Bitcoin."
+    owntxt2-title: "Bitcoin Core"
+    owntxt2: "Des del 2011 fins el 2013, aquest lloc web es va utilitzar principalment per publicar les noves versions del programari ara anomenat Bitcoin Core. L'any 2013, la web va ser redissenyada i s'hi van afegir diverses pàgines, es va llistar programari Bitcoin addicional, i es va crear el sistema de traduccions."
+    owntxt3-title: "La documentació per a desenvolupadors es va afegir el 2014"
+    owntxt3: "Les actualitzacions, correccions, suggeriments i millores per part dels membres de la comunitat són benvingudes."
+    owntxt4-title: "Aquest lloc web és un projecte independent de codi obert"
+    owntxt4: "A dia d'avui, aquest lloc web és un projecte independent de codi obert amb contribuïdors d'arreu del món. La publicació final la duen a terme els copropietaris, però tota l'activitat regular s'organitza mitjançant el procés públic de <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md\">sol·licitud d’extracció (pull request)</a> i la gestionen els mantenidors del lloc"
+    owntxt5: "Bitcoin.org no és la pàgina oficial de Bitcoin. De la mateixa manera que ningú no és propietari de la tecnologia de l'email, ningú pot ser propietari de la xarxa Bitcoin. Com a tal, ningú pot parlar amb autoritat en nom de Bitcoin."
+    control: "Llavors... Qui controla Bitcoin?"
+    controltxt: "Bitcoin és controlat per tots els usuaris de Bitcoin d'arreu del món. Els desenvolupadors milloren el programari però no poden forçar un canvi de les regles del protocol ja que cada usuari és lliure per triar el programa que utilitza. Per tal de mantenir la compatibilitat els usuaris han d'utilitzar programari que compleixi les mateixes regles. Bitcoin només pot funcionar bé amb un consens complet entre tots els usuaris. Així doncs, tots els usuaris i els desenvolupadors tenen forts incentius per adoptar i protegir aquest consens."
+    mission: "Missió"
+    missiontxt1: "Informar als usuaris per protegir-los d'errors freqüents."
+    missiontxt2: "Donar una descripció acurada de les propietats de Bitcoin, usos potencials i limitacions."
+    missiontxt3: "Mostrar alertes i esdeveniments transparents relacionats amb la xarxa Bitcoin."
+    missiontxt4: "Convidar a persones talentoses a ajudar amb el desenvolupament de Bitcoin a diferents nivells."
+    missiontxt5: "Proporcionar visibilitat a gran escala de l'ecosistema Bitcoin."
+    missiontxt6: "Millorar l'accessibilitat global de Bitcoin amb la internacionalització."
+    missiontxt7: "Romandre un recurs informatiu neutral sobre Bitcoin."
+    help: "Ajuda'ns"
+    helptxt: "Pots avisar d'algun problema o ajudar a millorar bitcoin.org a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> obrint una incidència o fent un \"pull request\" en anglès. Quan enviïs un \"pull request\" si et plau, pren el temps necessari per discutir els teus canvis i adaptar la teva feina. Pots ajudar amb les traduccions unint-te a un grup de <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Si et plau, no preguntis com pots promocionar el teu negoci personal o pàgina web exceptuant casos especials com conferències. Moltes gràcies a tots els contribuïdors que dediquen temps a millorar bitcoin.org!"
+    maintenance: "Manteniment"
+    documentation: "Documentació"
+    sponsorship: "Patrocini"
+    service_contributors: "Contribuidors del Servei"
+    translation: "Traducció"
+    inactive_contributors: "Col·laboradors inactius"
+    owners: "Propietaris del Domini"
+    partial_list: "Llista Parcial"
+    github: "Col·laboradors de GitHub"
+  bitcoin-for-businesses:
+    title: "Bitcoin per a empreses - Bitcoin"
+    pagetitle: "Bitcoin per a empreses"
+    summary: "Bitcoin és una forma molt segura i econòmica de gestionar pagaments."
+    lowfee: "Escull les comissions"
+    lowfeetext: >
+        No hi ha cap comissió per rebre bitcoins i molts moneders et permeten controlar
+        la quantitat a pagar de comissió quan es realitza un enviament. La majoria
+        de moneders tenen per defecte comissions raonables, alhora que comissions
+        més altes per afavorir una  <a href="#you-need-to-know##instant">confirmació</a>
+        més ràpida de les transaccions. Les comissions no tenen relació amb la quantitat
+        transferida, de manera que és possible enviar 100.000 bitcoins amb la mateixa
+        comissió que costa enviar 1 bitcoin.
+    fraud: "Protecció contra el frau"
+    fraudtext: "Qualsevol negoci que accepta targetes de crèdit o PayPal, coneix el problema dels pagaments que més tard són retornats. Aquest tipus de frau comporta una limitació en l'abast del mercat i un augment de preus que acaba penalitzant als clients. Els pagaments amb Bitcoin són irreversibles i segurs, això vol dir que el cost dels fraus de retrocessió ja no afecten als venedors."
+    international: "Pagaments internacionals ràpids"
+    internationaltext: >
+        Enviar bitcoins internacionalment és tan fàcil com enviar-los al mateix carrer.
+        No hi ha bancs que et facin esperar tres dies laborals, no hi ha comissions
+        extra per fer una transferència internacional, i no hi ha limitacions especials
+        en l'import mínim o màxim que pots enviar.
+    pci: "No és necessari complir amb l'estàndard PCI"
+    pcitext: "Acceptar targetes de crèdit en línia requereix moltes comprovacions de seguretat per tal de complir els estàndards PCI. Amb Bitcoin també necessites <a href=\"#secure-your-wallet#\">assegurar el teu moneder</a> i les sol·licituds de pagament encara que no has de carregar amb els costos i responsabilitats que comporta processar informació privada dels clients com és el cas dels números de targeta de crèdit."
+    visibility: "Aconsegueix visibilitat gratuïta"
+    visibilitytext: "Bitcoin és un mercat emergent de nous clients buscant maneres de gastar els seus bitcoins. Acceptar-los és una bona manera d'aconseguir clients i de donar més visibilitat al teu negoci. Acceptar un nou sistema de pagament ha mostrat sovint ser una pràctica intel·ligent per a un negoci en línia."
+    multisig: "Multisignatura"
+    multisigtext: "Bitcoin també inclou una funció de múltiples signatures que permet gastar bitcoins només si un subconjunt d’un grup de persones autoritza la transacció. Això pot ser utilitzat per un consell d'administració, per exemple, per evitar que els membres facin despeses sense el consentiment suficient d'altres membres, així com per fer un seguiment de quins membres van permetre transaccions concretes."
+    transparency: "Transparència comptable"
+    transparencytext: "Moltes organitzacions estan obligades a presentar els documents comptables sobre les seves activitats. Utilitzar Bitcoin ofereix el nivell més alt de transparència, ja que pots proveir tota la informació necessària perquè els seus membres verifiquin els seus salaris i transaccions. Les organitzacions sense ànim de lucre també poden permetre que el públic vegi quantes donacions reben."
+  bitcoin-for-developers:
+    title: "Bitcoin per a desenvolupadors - Bitcoin"
+    pagetitle: "Bitcoin per a desenvolupadors"
+    summary: "Bitcoin es pot utilitzar per construir coses sorprenents i proporcionar solucions a problemes comuns."
+    simple: "El més senzill de tots els sistemes de pagament"
+    simpletext: "A no ser que el pagament hagi d'estar associat amb factures automàtiques, acceptar diners és tan simple com enviar un bitcoin: amb un enllaç o mostrant un codi QR. Aquest sistema està a l'abast de qualsevol usuari i pot satisfer les necessitats d'un bon conjunt de clients. Des d'una perspectiva de comptabilitat, és especialment pràctica per reduir la despesa general i afegir transparència."
+    api: "Moltes APIs de tercers"
+    apitext: "Hi ha molts serveis de tercers que et permeten processar pagaments mitjançant la seva API; no necessites emmagatzemar bitcoins al teu servidor ni gestionar la seguretat que això implica. A més, moltes d'aquestes APIs et permeten processar factures i canviar els teus bitcoin per la teva moneda local a preus competitius."
+    own: "Tu pots ser el teu propi banc"
+    owntext: >
+        Si no utilitzes cap API de tercers, pots integrar un node de Bitcoin directament
+        a les teves aplicacions permetent-te ser el teu propi banc i el processador
+        de pagaments. Amb tota la responsabilitat que això implica, podràs construir
+        sistemes impressionants que processen transaccions de Bitcoin d'una manera
+        totalment personalitzada.
+    invoice: "Adreces Bitcoin per a seguiments de factures"
+    invoicetext: "Bitcoin crea una adreça única per a cada transacció. Així doncs si necessites construir un sistema de pagament amb una factura, només cal que generis i controlis una adreça Bitcoin per cada pagament (mai hauries d'utilitzar la mateixa adreça per més d'una transacció)."
+    security: "La major part de la seguretat recau al client"
+    securitytext: >
+        El protocol gestiona la major part de la seguretat, eliminant la necessitat
+        de complir amb l'estàndard PCI. La prevenció del frau es pot simplificar fins
+        a controlar una única variable: <a href="#you-need-to-know##instant">la puntuació
+        de confirmació</a>. Més enllà d’això, mantenir segurs els bitcoins és principalment
+        qüestió de <a href="#secure-your-wallet#">protegir la cartera</a> i utilitzar
+        HTTPS o altres protocols segurs per enviar sol·licituds de pagament als clients.
+    micro: "Un nou món de possibilitats"
+    microtext: >
+        Bitcoin permet dissenyar serveis en línia nous i creatius que abans no podien
+        existir a causa de les limitacions financeres. Això inclou sistemes de propina,
+        solucions de pagament automatitzades, serveis de finançament col·lectiu distribuït,
+        gestió de pagaments bloquejats per temps, seguiment d’actius públics, serveis
+        de dipòsit fideïcomís, canals de micropagament i molt més.
+  bitcoin-for-individuals:
+    title: "Bitcoin per a individus - Bitcoin"
+    pagetitle: "Bitcoin per a individus"
+    summary: "Bitcoin és la manera més fàcil de fer transaccions a un cost molt baix."
+    mobile: "Pagaments mòbils de forma fàcil"
+    mobiletext: "Quan s'utilitza Bitcoin en un aparell mòbil es pot pagar amb un simple escaneig i pagament. No cal registrar-se, lliscar la targeta, escriure un PIN ni signar res. Tot el que necessiteu per rebre pagaments amb Bitcoin és mostrar el codi QR a la vostra aplicació de cartera Bitcoin i deixar que l’altra persona escanegi el mòbil o fer que es toquin els dos telèfons (mitjançant la tecnologia de ràdio NFC)."
+    international: "Pagaments internacionals ràpids"
+    internationaltext: >
+        Enviar bitcoins a través de fronteres internacionals és igual de senzill que
+        enviar-los en el mateix carrer. No hi ha bancs que et facin esperar 3 dies
+        laborables, sense comissions extres per ser una transferència internacional
+        i no hi ha limitacions especials en el mínim o màxim que pots enviar.
+    simple: "Funciona a tot arreu, en qualsevol moment."
+    simpletext: "De manera similar a l'email, no cal que demanis permís als receptors que els hi enviaràs Bitcoin, ni cal utilitzar el mateix software, ni el mateix moneder, ni tampoc el mateix proveïdor de serveis. Només necessites la seva adreça de Bitcoin, i ja pots fer transaccions amb ells quan vulguis. La xarxa Bitcoin sempre està activa i mai s'atura, fins i tot treballa els caps de setmana i per vacances."
+    secure: "Seguretat i control dels teus diners"
+    securetext: "Les transaccions de Bitcoin estan assegurades amb criptografia de nivell militar. Ningú pot agafar-te els diners o fer un pagament en nom teu nom. Tan aviat com prenguis els passos necessaris per <a href=\"#secure-your-wallet#\">protegir el teu moneder</a>, Bitcoin podrà donar-te control sobre els teus diners i un grau molt fort de protecció contra molts tipus de frau."
+    lowfee: "Tria les teves pròpies tarifes"
+    lowfeetext: >
+        No hi ha comissions per rebre bitcoins, i moltes bitlleteres et permeten controlar
+        la quantitat d'aquesta comissió quan estiguis enviant el bitcoin. Moltes bitlleteres
+        tenen una comissió predeterminada molt raonable, i majors comissions poden
+        incentiva a <a href="#you-need-to-know##instant">confirmacions</a> més ràpides
+        per les teves transaccions. Les comissions són independents a la quantitat
+        transferida, fent possible l'enviament de 100.000 bitcoins amb la mateixa
+        comissió del que costaria enviar 1 bitcon.
+    anonymous: "Protegeix la teva identitat"
+    anonymoustext: "Amb Bitcoin no hi ha un número de targeta de crèdit que algú pugui utilitzar per robar-te. De fet, és possible fer un pagament sense revelar qui ets, quasi com amb els diners físics. Has de considerar. però que cal dedicar cert esforç per a <a href=\"#protect-your-privacy#\">protegir la teva privacitat</a>."
+  bitcoin-paper:
+    title: "Bitcoin: un sistema de diner electrònic d'igual a igual."
+    pagetitle: "Bitcoin: un sistema monetari electrònic d'igual a igual."
+    summary: "El document que va introduir Bitcoin."
+    description: "La lectura de l'article original de Satoshi Nakamoto encara se segueix recomanant per a qualsevol que estudiï com funciona Bitcoin. Escolliu quina traducció del document voleu llegir:"
+    translated_by: "traduït per"
+    submit_new_translation: 'Voleu traduir el document a la vostra llengua? Visiteu el <a href="https://github.com/wbnns/bitcoinwhitepaper">Repositori del paper blanc de Bitcoin a GitHub</a> per obtenir instruccions i <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">obrir un tema</a> en cas de dubtes.'
+  buy:
+    title: "Comprar Bitcoin"
+    pagetitle: "Com comprar bitcoin"
+    summary: "Hi ha diverses formes de comprar bitcoin."
+    bitcoin-exchange: "Utilitza una casa de canvi de Bitcoin"
+    bitcoin-exchange-text: "La nostra pàgina de <a href=\"/en/exchanges\">cases de canvi de Bitcoin</a>, presenta una llista amb molts negocis que t'ajudaran a comprar bitcoins utilitzant la teva conta bancària."
+    p2p-bitcoins: "Navegueu per un directori P2P"
+    p2p-bitcoins-text: "Utilitzar una casa de canvi basada en <a href=\"/en/exchanges#p2p\">un directori entre iguals</a> et permet navegar i buscar diferents venedors de bitcoin. Els venedors tenen ressenyes i comentaris per ajudar-te a triar."
+    bitcoin-atm: "Utilitza un caixer de Bitcoin"
+    bitcoin-atm-text: "Els caixers de Bitcoin funcionen com un caixer normal, amb l'excepció que et permeten dipositar i retirar diners per poder comprar i vendre bitcoin. <a href=\"https://coinatmradar.com/\">Coin ATM Radar</a> té un mapa interactiu que et permetrà trobar el caixer més proper a tu."
+  community:
+    title: "Comunitat - Bitcoin"
+    pagetitle: "Comunitats Bitcoin"
+    pagedesc: "Troba gent, grups i comunitats interessants relacionades amb el Bitcoin."
+    forums: "Fòrums"
+    bitcointalk: "<a href=\"https://bitcointalk.org/\">BitcoinTalk Fòrum</a>"
+    reddit: "Comunitat Bitcoin a Reddit"
+    stackexchange: "Bitcoin a StackExchange (Preguntes i respostes)"
+    irc: "Xat IRC"
+    ircjoin: "Canals IRC a <a href=\"https://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">freenode</a>."
+    chanbitcoin: "(General relacionat amb Bticoin)"
+    chandev: "(Tècnic i desenvolupament)"
+    chanotc: "(sobre l'Oficina de Canvi)"
+    chanmarket: "(cotitzacions dels mercats financers)"
+    chanmining: "(relacionat amb la mineria Bitcoin)"
+    social: "Xarxes socials"
+    linktwitter: "Twitter"
+    facebook: '<a href="https://www.facebook.com/hashtag/bitcoin">Facebook</a>'
+    meetups: "Trobades"
+    meetupevents: "Conferències i Events Bitcoin"
+    meetupgroup: "Grups Meetup Bitcoin"
+    meetupbitcointalk: "Meetups Bitcoin a BitcoinTalk"
+    meetupwiki: "Meetups Bitcoin a la Wiki"
+    nonprofit: "Organitzacions sense ànim de lucre"
+    wikiportal: "Visita el <a href=\"https://en.bitcoin.it/wiki/Bitcoin:Community_portal\">portal de la comunitat</a> a la wiki."
+  choose-your-wallet:
+    title: "Tria el teu moneder - Bitcoin"
+    metadescription: "Rep ajuda per trobar un moneder bitcoin. Respon algunes preguntes bàsiques per crear una llista de moneders que poden cobrir les teves necessitats."
+    pagetitle: "Tria el teu moneder Bitcoin"
+    pagedesc: "Selecciona un moneder per guardar els teus bitcoin per començar a fer transaccions a la xarxa."
+    helper-illustration: "gent i cartera"
+    helper-intro-title: "Us ajudarem a trobar una cartera de bitcoins."
+    helper-intro-text: "Respon les diferents preguntes per crear una llista de carteres que compleixen les teves necessitats. "
+    helper-change-btn: "Canvi"
+    skip-helper-btn: "Saltar ajuda"
+    helper-next-btn: "Següent"
+    helper-note: "Nota"
+    helper-or: "o"
+    helper-feature-unavailable: "Aquesta opció no està disponible segons les teves seleccions anteriors."
+    wizard-optional: "(Opcional)"
+    wizard-os-title: "Quin és el teu sistema operatiu?"
+    wizard-mobile-title: "Moneders per a mòbil"
+    wizard-mobile-pro1: "Portàtil i convenient; ideal per fer transaccions cara a cara"
+    wizard-mobile-pro2: "Dissenyat per utilitzar codis QR per fer transaccions ràpides i sense interrupcions"
+    wizard-mobile-con1: "Els mercats d'aplicacions poden retirar / eliminar les carteres, cosa que dificulta rebre actualitzacions futures"
+    wizard-mobile-con2: "Els danys o la pèrdua del dispositiu poden potencialment provocar les pèrdues del fons"
+    wizard-desktop-title: "Moneders d'escriptori"
+    wizard-desktop-pro1: "L'entorn permet als usuaris tenir un control complet dels seus fons"
+    wizard-desktop-pro2: "Algunes carteres d'escriptori ofereixen suport a la cartera de hardware o fins i tot operar com a nodes complets"
+    wizard-desktop-con1: "És difícil utilitzar codis QR quan es realitzen transaccions"
+    wizard-desktop-con2: "Susceptible de robar bitcoin per part de programari maliciós/programari espia/virus"
+    wizard-web-title: "Moneders web"
+    wizard-web-pro1: "Fàcil d’accedir des de diferents dispositius, només cal un navegador web"
+    wizard-web-pro2: "Els fons es poden recuperar si un dispositiu es fa malbé o es perd"
+    wizard-web-con1: "Les interrupcions del servei poden dificultar l'accés als fons"
+    wizard-web-con2: "Si es pirateja la plataforma d'una cartera web, els seus fons estan en perill"
+    wizard-hardware-title: "Moneders hardware"
+    wizard-hardware-pro1: "Un dels mètodes més segurs per emmagatzemar fons"
+    wizard-hardware-pro2: "Ideal per emmagatzemar grans quantitats de bitcoin"
+    wizard-hardware-con1: "Difícil d’utilitzar si s'està en moviment; no dissenyat per escanejar codis QR"
+    wizard-hardware-con2: "La pèrdua del dispositiu sense una còpia de seguretat adequada pot fer que els fons siguin irrecuperables"
+    wizard-user-title: "Quant saps sobre Bitcoin?"
+    wizard-user-new: "Nou"
+    wizard-user-new-description: "Mostra carteres ideals per a usuaris nous."
+    wizard-user-new-description-search: "Mostra carteres ideals per a usuaris de bitcoin nous, basat en els vostres criteris de cerca."
+    wizard-user-experienced: "Amb experiència"
+    wizard-user-experienced-description: "Mostra tots els moneders."
+    wizard-user-experienced-description-search: "Mostra els moneders segons el teu criteri de cerca."
+    wizard-criteria-title: "Quins criteris són importants per tu?"
+    wizard-criteria-control: "Control"
+    wizard-criteria-control-description: "Algunes carteres us ofereixen un control total sobre el vostre bitcoin. Això significa que cap tercer pot congelar o treure els vostres fons. Tot i així, encara sou responsables de protegir i crear una còpia de seguretat de la vostra cartera."
+    wizard-criteria-validation: "Validació"
+    wizard-criteria-validation-description: "Alguns moneders tenen la capacitat d’operar com un node complet. Això significa que no és necessari confiar en un tercer per processar les transaccions. Els nodes complets proporcionen un alt nivell de seguretat, però requereixen una gran quantitat de memòria."
+    wizard-criteria-transparency: "Transparència"
+    wizard-criteria-transparency-description: "Algunes carteres són de codi obert i es poden construir de manera determinista, un procés de compilació de programari que garanteix la reproducció del codi resultant per assegurar-se que no s’ha manipulat."
+    wizard-criteria-environment: "Entorn"
+    wizard-criteria-environment-description: "Algunes carteres es poden carregar en equips que són vulnerables a programes maliciosos. La protecció del vostre ordinador, l’ús d’una frase de contrasenya forta, el trasllat de la majoria dels seus fons a una cartera freda o l'habilitació 2FA o l’autenticació multifactor us poden ajudar a protegir els vostres bitcoins."
+    wizard-criteria-fees: "Comissions"
+    wizard-criteria-fees-description: "Algunes carteres us ofereixen un control total sobre la configuració de les comissions pagades a la xarxa bitcoin abans de fer una transacció, o de modificar-la després, per garantir que les vostres transaccions es confirmin oportunament sense pagar més del que cal."
+    wizard-criteria-privacy: "Privacitat"
+    wizard-criteria-privacy-description: "Algunes carteres fan que sigui més difícil espiar les vostres transaccions mitjançant la rotació d’adreces. No revelen informació als companys de la xarxa. Opcionalment, també permeten configurar i utilitzar Tor com a servidor intermediari per evitar que altres persones associïn transaccions amb la vostra adreça IP."
+    wizard-feature-title: "Quines característiques estàs buscant?"
+    wizard-feature-2fa: "2FA"
+    wizard-feature-2fa-description: "L’autenticació de dos factors (2FA) és una manera d’afegir seguretat addicional a la cartera. El primer \"factor\" és la vostra contrasenya per a la cartera. El segon \"factor\" és un codi de verificació obtingut mitjançant missatges de text o des d'una aplicació d'un dispositiu mòbil. 2FA és conceptualment similar a un dispositiu de testimoni de seguretat que els bancs d’alguns països necessiten per a la banca en línia. Normalment requereix confiar en la disponibilitat d’un tercer per proporcionar el servei."
+    wizard-feature-bech32: "Bech32"
+    wizard-feature-bech32-description: "Bech32 és un format d'adreça especial que ha fet possible SegWit (per obtenir més informació, vegeu la descripció de la funció de SegWit). Aquest format d'adreça també es coneix com a \"adreces bc1\". Algunes carteres i serveis bitcoin encara no admeten l'enviament o recepció a adreces Bech32 o des d'adreces Bech32."
+    wizard-feature-full_node: "Node complet"
+    wizard-feature-full_node-description: "Algunes carteres validen completament les transaccions i els blocs. Gairebé tots els nodes complets ajuden la xarxa acceptant transaccions i blocs d'altres nodes complets, validant aquelles transaccions i blocs i, després, transmetent-les a altres nodes complets."
+    wizard-feature-hardware_wallet: "Cartera hardware"
+    wizard-feature-hardware_wallet-description: "Algunes carteres poden emparellar-se i connectar-se a una cartera hardware a més de poder enviar cap a elles. Tot i que la majoria de les carteres poden fer enviaments a una cartera hardware, el fet de poder emparellar-se a una és una característica única. Aquesta característica us permet enviar i rebre directament des de i cap a una cartera hardware."
+    wizard-feature-legacy_addresses: "Adreces originals"
+    wizard-feature-legacy_addresses-description: "La majoria de carteres tenen la possibilitat d’enviar i rebre amb adreces bitcoin originals. Les adreces originals comencen per 1 o 3 (a diferència de començar per bc1). Sense assistència d’adreça original, és possible que no pugueu rebre bitcoins de carteres ni cases de canvi antigues."
+    wizard-feature-lightning: "Lightning"
+    wizard-feature-lightning-description: "Algunes carteres suporten transaccions a la xarxa Lightning. La Lightning Network és nova i podríem dir que experimental. Admet la transferència de bitcoins sense haver de registrar cada transacció a la cadena de blocs, cosa que resulta en transaccions més ràpides i comissions més baixes."
+    wizard-feature-multisig: "Multisig"
+    wizard-feature-multisig-description: "Algunes carteres poden requerir més d’una clau per autoritzar una transacció. Es pot utilitzar per dividir la responsabilitat i el control sobre diverses parts."
+    wizard-feature-segwit: "SegWit"
+    wizard-feature-segwit-description: "Algunes carteres admeten SegWit, que utilitza l'espai de la cadena de blocs de manera més eficient. Això ajuda a reduir les comissions pagades ajudant la xarxa Bitcoin a escalar i estableix les bases per a solucions de segona capa, com ara la Lightning Network."
+    wallet-all: "Tots els Moneders"
+    wallet-select: "Seleccionar Moneder"
+    wallet-select-type: "Seleccionar Tipus de Moneder"
+    wallet-select-operating-system: "Seleccionar un Sistema Operatiu"
+    wallet-selector-filters: "Filtres"
+    wallet-selector-operating-system: "Sistema Operatiu"
+    wallet-selector-user-type: "Tipus d'usuari"
+    wallet-selector-criteria: "Criteris"
+    wallet-selector-features: "Característiques"
+    wallet-selector-browse: "Carteres de navegador"
+    wallet-selector-browse-cta: "Utilitzeu el selector de carteres per trobar carteres que coincideixin amb els vostres criteris de cerca."
+    wallet-selector-results: "A continuació es mostra una llista de carteres disponibles per al vostre sistema operatiu"
+    wallet-selector-results-wallets: "Moneders"
+    wallet-selector-results-no-match: "No s'han trobat moneders"
+    wallet-selector-results-no-match-cta: "Si us plau, actualitza els criteris de cerca i torna-ho a intentar."
+    wallet-selector-sort: "Ordena per"
+    wallet-selector-similar: "Similar"
+    wallet-scoring-good: "Bo"
+    wallet-scoring-pass: "Acceptable"
+    wallet-scoring-fail: "Precaució"
+    wallet-scoring-neutral: "Neutral"
+    walletcatmobile: "Mòbil"
+    walletcatmobile-description: "Els moneders estan disponibles per Android i iOS."
+    walletcatdesktop: "Escriptori"
+    walletcatdesktop-description: "Les carteres estan disponibles per a sistemes operatius basats en Linux, MacOS i Windows."
+    walletcathardware: "Maquinari"
+    walletcathardware-description: "Una cartera hardware és una cartera de bitcoins d’alta seguretat que us permet emmagatzemar els vostres fons fora de línia. Es connecta a l'ordinador quan hi ha la necessitat de gestionar els fons."
+    walletcatweb: "Web"
+    walletcatweb-description: "Les carteres web són carteres bitcoin accessibles mitjançant un navegador web. No cal instal·lar cap programari addicional."
+    walletbitcoincore: "Bitcoin Core és un client complet de Bitcoin que forma l'esquelet de la xarxa. Ofereix un alt nivell de seguretat, privacitat i estabilitat. Ara bé, té poques característiques i ocupa molt d'espai de disc i memòria."
+    walletbitcoinknots: "Bitcoin Knots és un client complet de Bitcoin i crea la columna vertebral de la xarxa. Ofereix alts nivells de seguretat, privadesa i estabilitat. Inclou funcions més avançades que Bitcoin Core, però no estan tan ben provades. Utilitza molt espai i memòria."
+    walletarmory: "Armory és un client Bitcoin que amplia les característiques per usuaris Bitcoin avançats. Ofereix molts tipus de còpies de seguretat i encriptacions. Permet emmagatzemament en \"fred\" a màquines fora de línia."
+    walletelectrum: "Electrum se centra en la velocitat i simplicitat, amb una utilització baixa de recursos. Fa servir servidors remots que s'encarreguen de la part més complicada del sistema Bitcoin. Això et permet recuperar el moneder amb una frase secreta en cas de necessitat."
+    walletbitcoinwallet: "El moneder Bitcoin Wallet és molt fàcil d'utilitzar a la vegada que segur i ràpid. La seva visió és la descentralització i la confiança zero; no fa falta cap servei central per a cap operació relacionada amb Bitcoin. Aquesta APP és una bona elecció per als usuaris no tècnics."
+    walletedgewallet: "Edge és un moneder Bitcoin mòbil compatible amb Segwit, que fa que els alts nivells de privadesa, seguretat i descentralització siguin molt familiars i utilitzables per a les masses. Les carteres Edge sempre es xifren automàticament i fan còpies de seguretat. "
+    walletbrd: "BRD és una de les carteres més fàcils per als nous usuaris de Bitcoin. També és extremadament segura. BRD es connecta directament a la xarxa Bitcoin i utilitza el xifratge de hardware integrat del dispositiu per mantenir els vostres diners segurs."
+    walletmyceliumwallet: "Mycelium Bitcoin Wallet per Android està dissenyat per millorar la seguretat, velocitat i facilitat d'ús. Les seves característiques són úniques per a la gestió de les claus i l'emmagatzematge i ofereix compatibilitat amb Trezor i altres."
+    walletcoin: "Coin és una cartera gratuïta que us permet fer pagaments a tot el món a la xarxa Bitcoin. És segur, fàcil d’utilitzar i es pot instal·lar còmodament al telèfon."
+    wallettrezorone: "Trezor és una cartera hardware que proporciona un alt nivell de seguretat sense renunciar a la comoditat. A diferència de l’emmagatzematge en fred, Trezor és capaç de signar transaccions mentre està connectat a un dispositiu en línia. Això significa que gastar bitcoins és segur fins i tot quan s’utilitza un equip compromès."
+    wallettrezormodelt: "Trezor Model T és una cartera hardware d’última generació, dissenyada tenint en compte els avantatges del Trezor original, combinada amb una interfície moderna i intuïtiva per millorar l’experiència i la seguretat de l’usuari. Compta amb una pantalla tàctil, un processador més ràpid, així com totes les funcions del Trezor One."
+    walletcoldcard: "Coldcard és una cartera hardware fàcil d’utilitzar, ultra segura, de codi obert i assequible, que es pot fer fàcilment mitjançant una targeta microSD xifrada. La vostra clau privada s’emmagatzema en un xip de seguretat dedicat. El disseny del programari MicroPython us permet fer canvis."
+    walletkeepkey: "KeepKey és una cartera hardware que dóna senzillesa a la seguretat de Bitcoin. Quan confieu a KeepKey els vostres diners, cada transacció de bitcoins que feu ha de ser revisada i aprovada mitjançant la pantalla OLED i el botó de confirmació."
+    walletbitpay: "BitPay Wallet és la cartera multisignatura HD construïda originalment per assegurar els fons de BitPay. BitPay admet múltiples carteres personals i compartides, testnet i el protocol de pagament complet. Es pot utilitzar un node <a href=\"https://github.com/bitpay/bitcore-wallet-service\">BWS</a> privat per millorar la seguretat i la privadesa."
+    walletledgernanos: "Ledger Nano S és una cartera hardware Bitcoin segura. Es connecta a qualsevol ordinador mitjançant USB i incorpora una pantalla OLED integrada per comprovar i confirmar cada transacció amb un sol toc als botons."
+    walletbitbox: "El BitBox02 és una cartera hardware, desenvolupada i fabricada a Suïssa. Està equipada amb una pantalla OLED, sensors tàctils invisibles, suport USB-C i USB-A, còpies de seguretat fora de línia a la targeta microSD i al mnemotècnic BIP39. Configurar una cartera BitBox02 i gestionar les vostres monedes és fàcil mitjançant la BitBoxApp complementària."
+    walletbither: "Bither és una cartera senzilla i segura en moltes plataformes. Amb els modes fred/calent especials dissenyats, l'usuari pot obtenir seguretat i simplicitat fàcilment. Bither's XRANDOM utilitza diferents fonts d'entropia per generar un nombre aleatori real per als usuaris. També amb HDM, els usuaris poden tenir els avantatges de HD i la seguretat multisig."
+    walletblw: "Cartera mòbil amb suport de Lightning Network."
+    walleteclairmobile: "Eclair Mobile és una cartera de Bitcoin de pròxima generació, preparada per la xarxa Lightning. Es pot utilitzar com a cartera de Bitcoin habitual i també es pot connectar a la xarxa Lightning per a pagaments econòmics i instantanis."
+    walletwasabi: "Wasabi és una cartera de Bitcoin de codi obert, sense custòdia, centrada en la privadesa per a Windows, Linux i Mac. Inclou funcions integrades de Tor, CoinJoin i control de les monedes."
+    walletdownload: "Instal·lar"
+    walletvisit: "Visita el web"
+    walletsourcecode: "Codi font"
+    platformandroid: "Android"
+    platformios: "iOS"
+    platformwindows: "Windows"
+    platformmac: "Mac"
+    platformlinux: "Linux"
+    checkgoodcontrolfull: "Control sobre els teus diners"
+    checkgoodcontrolfulltxt: "Aquest moneder et dóna control total sobre els teus bitcoins. Això vol dir que cap tercera part els pot congelar o perdre. Tu ets l'únic responsable de protegir el teu moneder i fer-ne còpies de seguretat."
+    checkpasscontrolhybrid: "Control allotjat dels teus diners"
+    checkpasscontrolhybridtxt: "Aquest moneder et dóna control sobre els teus bitcoins. El servei, però manté còpies de seguretat xifrades. Això vol dir que si no utilitzes contrasenyes fortes els teus bitcoins poden ser robats i el servei compromès."
+    checkpasscontrolmulti: "Control compartit dels teus diners"
+    checkpasscontrolmultitxt: "Aquesta cartera requereix que totes les transaccions siguin autoritzades tant per tu com per la part tercera. En circumstàncies normals, podeu recuperar el control total dels vostres bitcoins mitjançant la vostra còpia de seguretat inicial o les transaccions prèviament signades enviades per correu electrònic. "
+    checkfailcontrolthirdpartyinsured: "Diners controlats per un tercer"
+    checkfailcontrolthirdpartyinsuredtxt: "Aquest servei te control total sobre els teus bitcoins. Cal que confiïs en que no et congelarà o utilitzarà indegudament els teus fons. Encara que el servei els asseguri sobre errors i fallades per part seva, segueixes sent el responsable de protegir el teu moneder."
+    checkfailcontrolthirdparty: "Diners controlats per un tercer"
+    checkfailcontrolthirdpartytxt: "Aquest servei té control total sobre els teus bitcoins. Cal que confiïs en aquest servei no els perdrà en un incident per part seva. Avui dia la majoria de moneders web no asseguren els seus dipòsits tal com ho fa un banc, i molts d'aquests serveis en el passat han patit fallades de seguretat."
+    checkgoodvalidationfullnode: "Validació completa"
+    checkgoodvalidationfullnodetxt: "Aquest moneder és un node complet que valida i retransmet transaccions per la xarxa Bitcoin. No cal confiar en cap tercera part per a verificar pagaments. Els nodes complets ofereixen el nivell de seguretat més alt i són essencials per tal de protegir la xarxa. Ara bé, necessiten més espai (sobre 20GB), amplada de banda i un major temps de sincronització inicial."
+    checkgoodvalidationfullnoderequired: "Validació completa"
+    checkgoodvalidationfullnoderequiredtxt: "Aquesta cartera requereix que instal·leu programari de node complet que validi i transmeti transaccions a la xarxa Bitcoin. Això significa que no es requereix confiar en un tercer a l’hora de verificar els pagaments. Els nodes complets proporcionen el màxim nivell de seguretat i són essencials per protegir la xarxa. No obstant això, requereixen més espai (més de {{site.text.bitcoin_datadir_gb}} GB), amplada de banda i un temps de sincronització inicial més llarg."
+    checkneutralvalidationvariable: "Validació variable"
+    checkneutralvalidationvariabletxt: "Les funcions de validació de pagaments les proporciona la cartera software que utilitzeu amb aquest dispositiu."
+    checkpassvalidationspvp2p: "Validació simplificada"
+    checkpassvalidationspvp2ptxt: "Aquesta cartera utilitza SPV i la xarxa Bitcoin. Això significa que no cal confiar en terceres parts a l'hora de verificar els pagaments. No obstant això, no és tan segur com un node complet com <a href=\"#download#\"> Bitcoin Core </a>."
+    checkpassvalidationspvservers: "Validació simplificada"
+    checkpassvalidationspvserverstxt: "Aquesta cartera utilitza servidors SPV i aleatoris d’una llista. Això significa que es necessita poca confiança en tercers a l’hora de verificar els pagaments. Tot i això, no és tan segur com un node complet com <a href=\"#download#\">Bitcoin Core</a>."
+    checkpassvalidationservers: "Validació descentralitzada"
+    checkpassvalidationserverstxt: "Aquest moneder es connecta a un servidor triat aleatòriament d'una llista. D'aquesta manera no cal confiar en terceres parts a l'hora de verificar pagaments. Així i tot, no és tan segur com ho seria un node complet com  <a href=\"#download#\">Bitcoin Core</a>"
+    checkfailvalidationcentralized: "Validació centralitzada"
+    checkfailvalidationcentralizedtxt: "Aquest moneder depèn d'un servei centralitzat per defecte. Cal confiar que una tercera part no amagarà o simularà pagaments."
+    checkgoodtransparencydeterministic: "Transparència total"
+    checkgoodtransparencydeterministictxt: "Aquest moneder és de codi obert i compilat de manera determinista. Això vol dir que qualsevol desenvolupador del món pot auditar el codi font i estar segur que el programari final no amaga cap secret."
+    checkpasstransparencyopensource: "Transparència bàsica"
+    checkpasstransparencyopensourcetxt: "El desenvolupador d'aquest moneder publica el codi font pel client. Això vol dir que qualsevol desenvolupador pot auditar el codi font. Així i tot encara caldrà confiar en els desenvolupadors d'aquest moneder a l'hora d'instal·lar el programari final, ja que no ha estat compilat de forma determinista tal com <a href=\"#download#\">Bitcoin Core</a>."
+    checkpasstransparencyopensourcehardware: "Transparència bàsica"
+    checkpasstransparencyopensourcehardwaretxt: "El codi font d'aquesta cartera és públic. Això significa que qualsevol desenvolupador del món pot auditar el codi. Tot i això, encara heu de confiar en els desenvolupadors d'aquesta cartera perquè no es pot verificar que el dispositiu utilitzi el mateix codi font per generar llavors aleatòries segures i per a altres operacions. Actualitzar el firmware del dispositiu, generar la vostra pròpia llavor aleatòria segura o fer servir signatures múltiples pot dificultar el robatori dels bitcoins."
+    checkpasstransparencyopenspechardware: "Transparència bàsica"
+    checkpasstransparencyopenspechardwaretxt: "L'especificació d'aquesta cartera és pública. Això significa que qualsevol desenvolupador del món pot fer proves de blackbox. Tot i això, encara heu de confiar en els desenvolupadors d'aquesta cartera perquè no es pot verificar que el dispositiu generi llavors aleatòries segures i el codi font no es pot auditar. Actualitzar el firmware del dispositiu, generar la vostra pròpia llavor aleatòria segura o fer servir signatures múltiples pot dificultar el robatori dels vostres bitcoins."
+    checkfailtransparencyclosedsource: "Sense transparència"
+    checkfailtransparencyclosedsourcetxt: "Aquest moneder no és de codi obert. Això vol dir que no és possible auditar el codi font i estar segur que el programari final no amagui codi perillós o fent res amb el que no estiguis d'acord."
+    checkfailtransparencyremote: "APP remota"
+    checkfailtransparencyremotetxt: "Aquest moneder es carrega des d'una ubicació remota. Cal que confiïs que els desenvolupadors no perdin o robin els teus bitcoins en un incident causat al seu lloc. Utilitzar una extensió de navegador o una aplicació mòbil, si és possible, pot reduir el risc."
+    checkfailtransparencynew: "Nova APP"
+    checkfailtransparencynewtxt: "Aquesta cartera no ha estat provada i revisada públicament per un nombre important de persones. Això vol dir que és possible que aquesta aplicació tingui més risc d’amagar codi perillós o de fer alguna on tu no estaries d'acord."
+    checkgoodenvironmenthardware: "Entorn molt segur"
+    checkgoodenvironmenthardwaretxt: "Aquest moneder és carregat des d'un entorn segur i especialitzat ofert pel dispositiu. Això aporta una protecció molt forta sobre vulnerabilitats i programari maliciós, ja que en aquest entorn segur no es pot instal·lar cap programa."
+    checkpassenvironmentmobile: "Entorn segur"
+    checkpassenvironmentmobiletxt: "Aquest moneder es carrega a dispositius mòbils a on les aplicacions queden aïllades. Això ofereix una bona protecció contra programari maliciós, ara bé, els mòbils es roben o es perden més fàcilment. Encriptant el teu dispositiu i fent còpies de seguretat pot reduir aquest risc."
+    checkpassenvironmenttwofactor: "Autenticació de dos factors"
+    checkpassenvironmenttwofactortxt: "Aquest moneder es pot utilitzar en entorns insegurs. Requereix autenticació de dos factors. Això vol dir que calen múltiples comptes o dispositius per robar els teus bitcoins."
+    checkfailenvironmentdesktop: "Entorn vulnerable"
+    checkfailenvironmentdesktoptxt: "Aquest moneder es pot carregar a ordinadors vulnerables per programari maliciós. Cal protegir el teu ordinador utilitzant una contrasenya segura i moure la majoria dels teus fons a emmagatzematge fred com moneders de paper. També pots activar l'autenticació de dos factors per fer que els teus bitcoins siguin més difícils de robar."
+    checkgoodprivacyimproved: "Privacitat millorada"
+    checkneutralprivacyvariable: "Privacitat variable"
+    checkneutralprivacyvariabletxt: "Les funcions de privadesa les proporciona la cartera software que utilitzeu amb aquest dispositiu."
+    checkpassprivacybasic: "Privacitat bàsica"
+    checkfailprivacyweak: "Privacitat feble"
+    checkpassprivacyaddressrotation: "Evita que els teus pagaments siguin espiats"
+    checkpassprivacyaddressrotationtxt: "Aquest moneder fa que espiar als teus balanços i pagaments sigui més difícil rotant adreces. Així i tot, encara hauràs d'utilitzar una nova adreça Bitcoin cada vegada que demanis un pagament."
+    checkfailprivacyaddressrotation: "Permet que els teus pagaments siguin espiats"
+    checkfailprivacyaddressrotationtxt: "Aquest moneder fa que sigui fàcil espiar per qualsevol els teus balanços i pagaments, ja que sempre utilitza la mateixa adreça."
+    checkpassprivacydisclosurefullnode: "Evita revelar informació"
+    checkpassprivacydisclosurefullnodetxt: "Aquest moneder no revela informació a cap igual de la xarxa quan rep o envia pagaments."
+    checkfailprivacydisclosurespv: "Revela informació limitada a iguals"
+    checkfailprivacydisclosurespvtxt: "Els iguals o \"peers\" de la xarxa poden registrar la teva adreça IP i associar-hi els teus pagaments quan els envies o reps."
+    checkfailprivacydisclosurecentralized: "Revela informació a terceres parts"
+    checkfailprivacydisclosurecentralizedtxt: "Aquest moneder utilitza servidors centrals els quals poden associar els teus pagaments amb la teva adreça IP."
+    checkfailprivacydisclosureaccount: "Revela informació a terceres parts"
+    checkfailprivacydisclosureaccounttxt: "Aquest servei pot associar els teus pagaments amb la teva adreça IP i la teva informació personal com correu electrònic, nom o compte bancari si el servei la requereix."
+    checkpassprivacynetworksupporttorproxy: "Es pot utilitzar Tor"
+    checkpassprivacynetworksupporttorproxytxt: "Aquest moneder et permet configurar i utilitzar <a href=\"https://www.torproject.org/\">Tor</a> com a proxy per tal d'evitar que possibles atacants o proveïdors d'internet associïn els teus pagaments amb la teva adreça IP."
+    checkfailprivacynetworknosupporttor: "Tor no suportat"
+    checkfailprivacynetworknosupporttortxt: "Aquest moneder no et permet utilitzar Tor per tal d'evitar que possibles atacants o proveïdors d'internet associïn els teus pagaments amb la teva adreça IP."
+    checkgoodfeecontrolfull: "Control total de les comissions"
+    checkgoodfeecontrolfulltxt: "Aquesta cartera us proporciona un control total sobre les comissons. Això significa que aquesta cartera permet canviar les comissions després d’enviar els fons mitjançant RBF o CPFP. Aquesta cartera també proporciona suggeriments de comissions en funció de les condicions actuals de la xarxa, de manera que les vostres transaccions es confirmin oportunament sense pagar més del que necessiteu."
+    checkpassfeecontroldynamic: "Suggeriments dinàmics de comissions"
+    checkpassfeecontroldynamictxt: "Aquesta cartera proporciona suggeriments de comissions que es basen en les condicions actuals de la xarxa. Això significa que aquesta cartera us ajudarà a triar la tarifa adequada perquè les vostres transaccions es confirmin oportunament sense pagar més del que necessiteu."
+    checkpassfeecontroloverride: "Comissió dinàmica amb anul·lació"
+    checkpassfeecontroloverridetxt: "Aquesta cartera proporciona suggeriments de tarifes basats en les condicions actuals de la xarxa que podeu anul·lar. Això vol dir que aquesta cartera us ajudarà a triar la tarifa adequada perquè les vostres transaccions es confirmin oportunament sense pagar més del que necessiteu, però, en última instància, us permetrà controlar si voleu anul·lar el suggeriment."
+    checkneutralfeecontrolvariable: "Control variable de la comissió"
+    checkneutralfeecontrolvariabletxt: "Les funcions de control de tarifes les proporciona la cartera software que utilitzeu amb aquest dispositiu."
+    checkfailfeecontrolstatic: "Suggeriments estàtics de comissions"
+    checkfailfeecontrolstatictxt: "Aquesta cartera no proporciona cap suggeriment de comissions basat en les condicions actuals de la xarxa. Això vol dir que les vostres transaccions poden patir retards si la comissió escollida és massa baixa o que podeu pagar una comissió massa alta."
+    educate: "Dedica temps a educar-te a tu mateix"
+    educatetxt: "Bitcoin és diferent del que coneixes i utilitzes cada dia. Abans de començar a fer-lo servir per a transaccions serioses, llegeix <a href=\"#you-need-to-know#\"><b>el que necessites saber</b></a> i segueix els passos apropiats per tal  <a href=\"#secure-your-wallet#\"><b>d'assegurar el teu moneder</b></a>. Recorda que és responsabilitat teva triar adequadament un moneder i adoptar bones pràctiques per tal de protegir els teus diners."
+  developer-documentation:
+    title: "Documentació per a desenvolupadors - Bitcoin"
+    pagetitle: "Documentació per a desenvolupadors"
+    summary: "Cerqueu recursos útils, guies i material de referència per a desenvolupadors."
+    docreference-title: "Veure també:"
+    navigationreturn: "Tornar a la visió general"
+    navigationreport: "Informa d'un problema"
+    navigationedit: "Edita a GitHub"
+    glossarysearchplaceholder: "Buscar"
+    docreferencemenuguides: "Guies"
+    docreferencemenureference: "Referència"
+    docreferencemenuexamples: "Exemples"
+    docreferencemenuglossary: "Glossari"
+    resourcestitleblockchain: "Block Chain"
+    resourcesitemblockchainguides: "Guia Block Chain"
+    resourcesitemmininguides: "Guia de Mineria"
+    resourcesitemblockchainreference: "Referència Block Chain"
+    resourcestitletransactions: "Transaccions"
+    resourcesitemtransactionsguides: "Guia de Transaccions"
+    resourcesitemtransactionsreference: "Referència de Transaccions"
+    resourcesitemtransactionsexamples: "Exemples de Transaccions"
+    resourcestitlecontracts: "Contractes"
+    resourcesitemcontractsguides: "Guia de Contractes"
+    resourcestitlewallets: "Moneders"
+    resourcesitemwalletsguides: "Guia de Moneders"
+    resourcesitemwalletsreference: "Referència de Moneders"
+    resourcestitlepaymentprocessing: "Processament de Pagaments"
+    resourcesitempaymentprocessingguides: "Guia de Processament de Pagaments"
+    resourcesitempaymentprocessingexamples: "Exemples de Processament de Pagaments"
+    resourcestitleoperatingmodes: "Modes d'operació"
+    resourcesitemoperatingmodesguides: "Guia de modes d'operació"
+    resourcestitlep2pnetwork: "Xarxa P2P"
+    resourcesitemp2pnetworkguides: "Guia de Xarxa P2P"
+    resourcesitemp2pnetworkreference: "Referència de Xarxa P2P"
+    resourcesitemp2pnetworkexamples: "Exemples de Xarxa P2P"
+    resourcestitleadditional: "Recursos Addicionals"
+    resourcestitlemining: "Obtenir la plantilla de blocs"
+    fragmentreviewsneeded: >
+        Aquesta documentació no ha estat exhaustivament revisada pels experts de Bitcoin
+        i, per tant, probablement conté nombrosos errors. Utilitzeu els enllaços de
+        <em>Problemes</em> i d'<em>Edicións</em> del menú inferior esquerre per ajudar-nos
+        a millorar. Per tancar aquesta exempció de responsabilitat
+    fragmentreviewsneededcloselink: "clica aquí"
+    fragmenttranslationwarning: >
+        Aquesta versió de la documentació pot contenir parts en anglès (originals),
+        si voleu contribuir a traduir aquest document al vostre idioma, utilitzeu
+        els enllaços adequats sota els títols o visiteu
+    fragmenttranslationdoclink: "aquest enllaç"
+    subheadlinkedit: "Editar"
+    subheadlinkhistory: "Història"
+    subheadlinkreport: "Informar d'un problema"
+    subheadlinkdiscuss: "Discutir"
+    subheadlinktranslate: "Traduir"
+  developer-examples:
+    title: "Exemples per a desenvolupadors - Bitcoin"
+    pagetitle: "Exemples per a desenvolupadors de Bitcoin"
+    summary: "Cerqueu exemples sobre com construir programes amb Bitcoin."
+  developer-guide:
+    title: "Guia per a desenvolupadors - Bitcoin"
+    pagetitle: "Guia per a desenvolupadors de Bitcoin"
+    summary: "La Guia per a desenvolupadors té com a objectiu proporcionar la informació que necessiteu per entendre Bitcoin i començar a construir aplicacions basades en Bitcoin, però no és una especificació. Per fer el millor ús d'aquesta documentació, és possible que vulgueu instal·lar la versió actual de Bitcoin Core, sigui des de la font o des d'un executable prèviament compilat."
+    readblockchain: "Llegir la guia de la cadena de blocs"
+    readcontracts: "Llegir la guia de contractes"
+    readtransactions: "Llegir la guia de transaccions"
+    readmining: "Llegir la guia de mineria"
+    readoperating: "Llegir la guia de modes d'operació"
+    readp2p: "Llegir la guia de la xarxa entre iguals (P2P)"
+    readpayments: "Llegir la guia de processament de pagaments"
+    readwallets: "Llegir la guia de carteres"
+    blockchaintitle: "Blockchain"
+    blockchainsummary: "La cadena de blocs proporciona el llibre major de Bitcoin, un registre ordenat i marcat en el temps de les transaccions. Aquest sistema s’utilitza per protegir contra la doble despesa i la modificació de registres de transaccions anteriors."
+    contractstitle: "Contractes"
+    contractssummary: "Els contractes són transaccions que utilitzen el sistema descentralitzat de Bitcoin per fer complir els acords financers. Els contractes de Bitcoin sovint es poden dissenyar per minimitzar la dependència d’agents externs, com ara el sistema judicial, que disminueix significativament el risc de tractar amb entitats desconegudes en transaccions financeres."
+    miningtitle: "Mineria"
+    miningsummary: "La mineria afegeix nous blocs a la cadena de blocs, cosa que dificulta la modificació de l'historial de transaccions."
+    operatingtitle: "Modes d'operació"
+    operatingsummary: "El programari Bitcoin té diferents nivells de seguretat i compensacions per verificar la cadena de blocs."
+    p2ptitle: "Xarxa P2P"
+    p2psummary: "El protocol de la xarxa Bitcoin permet que els nodes complets (membres) mantinguin col·laborativament una xarxa entre iguals per a l’intercanvi de blocs i transaccions."
+    paymenttitle: "Processament de Pagaments"
+    paymentsummary: "El processament de pagaments inclou els passos que efectuen els consumidors i els receptors per fer i acceptar pagaments a canvi de productes o serveis. Els passos bàsics no han canviat des dels inicis del comerç, però sí la tecnologia."
+    transactionstitle: "Transaccions"
+    transactionssummary: "Les transaccions permeten als usuaris gastar satoshis. Cada transacció es construeix a partir de diverses parts que permeten tant pagaments directes simples com transaccions complexes."
+    walletstitle: "Moneders"
+    walletssummary: "Una cartera de Bitcoin es pot referir a un programa de cartera o a un fitxer de cartera. Els programes Wallet creen claus públiques per rebre satoshis i utilitzen les claus privades corresponents per enviar-los. Els fitxers Wallet emmagatzemen claus privades i (opcionalment) altres tipus d'informació relacionada amb les transaccions del programa Wallet."
+  developer-reference:
+    title: "Referència per a desenvolupadors de Bitcoin - Bitcoin"
+    pagetitle: "Referència per a desenvolupadors de Bitcoin"
+    summary: "Cerqueu detalls tècnics i documentació de l'API."
+  developer-glossary:
+    title: "Glossari del desenvolupador - Bitcoin"
+    pagetitle: "Glossari per a desenvolupadors de Bitcoin"
+    subsummary: "Es tracta d’un glossari tècnic. Els usuaris habituals haurien d’utilitzar la [pàgina de vocabulari] (/ca/vocabulari)."
+    suggestnewterm: "No trobes el que busques? [Suggereix un terme nou][1] per al glossari!"
+    definitionnotice: "Aquesta definició prové del [glossari tècnic] (/ca/desenvolupador-glossari)."
+    sectiontitledefinition: "Definició"
+    sectiontitlesynonyms: "Sinònims"
+    sectiontitlenottobeconfused: "No confondre amb"
+    sectiontitlelinks: "Enllaços"
+    categorynumbers: "Números"
+  blockchain-guide:
+    title: "Guia Blockchain - Bitcoin"
+    pagetitle: "Blockchain"
+    summary: "La cadena de blocs proporciona el llibre major de Bitcoin, un registre ordenat i marcat en el temps de les transaccions. Aquest sistema s’utilitza per protegir contra la doble despesa i la modificació de registres de transaccions anteriors."
+  contracts-guide:
+    title: "Guia de contractes - Bitcoin"
+    pagetitle: "Contractes"
+    summary: "Els contractes són transaccions que utilitzen el sistema descentralitzat de Bitcoin per fer complir els acords financers. Els contractes de Bitcoin sovint es poden dissenyar per minimitzar la dependència d’agents externs, com ara el sistema judicial, que disminueix significativament el risc de tractar amb entitats desconegudes en transaccions financeres."
+  mining-guide:
+    title: "Guia de mineria - Bitcoin"
+    pagetitle: "Mineria"
+    summary: "La mineria afegeix nous blocs a la cadena de blocs, cosa que dificulta la modificació de l'historial de transaccions."
+  operating-modes-guide:
+    title: "Guia de modes operatius - Bitcoin"
+    pagetitle: "Modes d'operació"
+    summary: "El programari Bitcoin té diferents nivells de seguretat i compensacions per verificar la cadena de blocs."
+  p2p-network-guide:
+    title: "Guia de xarxa P2P - Bitcoin"
+    pagetitle: "Xarxa P2P"
+    summary: "El protocol de xarxa Bitcoin permet que els nodes complets (companys) mantinguin col·laborativament una xarxa entre iguals per a l’intercanvi de blocs i transaccions."
+  payment-processing-guide:
+    title: "Guia de processament de pagaments - Bitcoin"
+    pagetitle: "Processament de Pagaments"
+    summary: "El processament de pagaments inclou els passos que realitzen els consumidors i els receptors per fer i acceptar pagaments a canvi de productes o serveis. Els passos bàsics no han canviat des dels inicis del comerç, però sí la tecnologia."
+  transactions-guide:
+    title: "Guia de transaccions - Bitcoin"
+    pagetitle: "Transaccions"
+    summary: "Les transaccions permeten als usuaris gastar satoshis. Cada transacció es construeix a partir de diverses parts que permeten tant pagaments directes simples com transaccions complexes."
+  wallets-guide:
+    title: "Guia de carteres - Bitcoin"
+    pagetitle: "Moneders"
+    summary: "Una cartera de Bitcoin es pot referir a un programa cartera o a un fitxer cartera."
+  development:
+    title: "Desenvolupament - Bitcoin"
+    pagetitle: "Desenvolupament Bitcoin"
+    pagedesc: "Bitcoin és un projecte global i programari de codi obert."
+    summary: "Troba més informació sobre especificacions, programari i desenvolupadors. "
+    spec: "Documentació"
+    spectxt: "Si esteu interessats en obtenir més informació sobre els detalls tècnics de Bitcoin i sobre com utilitzar les eines i les API existents, és recomanable que comenceu explorant la <a href=\"https://developer.bitcoin.org/\">documentació per desenvolupadors</a>."
+    coredev: "Desenvolupadors principals"
+    inventor: "El sistema Bitcoin va ser dissenyat per Satoshi Nakamoto. El seu codi original es manté com a Bitcoin Core per desenvolupadors que l'han seguit i diversos voluntaris de la comunitat."
+    disclosure: "Declaració de responsabilitat"
+    disclosuretxt: "Si trobes una vulnerabilitat relacionada amb Bitcoin i aquesta no és crítica, pots informar d'ella enviant un correu electrònic en anglès a qualsevol dels desenvolupadors principals. O també enviant un missatge a la llista privada de correu bitcoin-security apuntada més amunt. Un exemple de vulnerabilitat no crítica podria ser un atac de denegació de servei difícil d'aconseguir. Les vulnerabilitats crítiques que siguin massa sensibles per trametre en un missatge en text clar cal enviar-les  a un o més desenvolupadors del nucli xifrades amb les teves clau(s) PGP."
+    involve: "Involucra't"
+    involvetxt1: "Bitcoin és de codi obert i qualsevol desenvolupador pot contribuir al projecte. Tot el que necessites ho trobaràs al <a href=\"https://github.com/bitcoin/bitcoin\">repositori GitHub</a>. Si us plau, assegura't de llegir i seguir el procés de desenvolupament descrit al \"README\", així com d'escriure codi de bona qualitat i respectar totes les directrius."
+    involvetxt2: "El debat sobre el desenvolupament té lloc a GitHub i a la llista de correu <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a>. Es produeix una discussió de desenvolupament menys formal a irc.freenode.net # bitcoin-core-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">interfície web</a>, <a href=\"http://bitcoinstats.com/irc/bitcoin-core-dev/logs\">registres</a>)."
+    more: "Més projectes de programari lliure"
+    morewant: "Voleu contribuir a un projecte diferent?"
+    morechoose: "Pots triar un projecte per tal de contribuir-hi responent a algunes<a href=\"http://whatcanidoforbitcoin.xyz/\"> preguntes sobre les teves habilitats</a>."
+    moremore: "Mostra més..."
+    contributors: "Col·laboradors de Bitcoin Core"
+    contributorsorder: "(Ordenats per ordre de contribucions)"
+    devcommunities: "Comunitats de desenvolupadors"
+    devcommunitiesintro: "Les sales de xat i llocs web següents allotgen discussions sobre el desenvolupament de Bitcoin. Si et plau, llegeix les normes de comportament abans de publicar-hi."
+    ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">Canal IRC #bitcoin-core-dev</a> a freenode."
+    slack: "<a href=\"https://slack.bitcoincore.org/\">Canal d'Slack de Bitcoin Core</a>"
+    stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
+  download:
+    title: "Descarrega - Bitcoin"
+    pagetitle: "Descarrega Bitcoin Core"
+    latestversion: "Última versió:"
+    download: "Descarrega Bitcoin Core"
+    downloados: "O tria el teu sistema operatiu"
+    downloadsig: "Verifica les signatures de llançament"
+    downloadtorrent: "Descarregar torrent"
+    source: "Codi font"
+    versionhistory: "Mostrar l'historial de versions"
+    notelicense: "Bitcoin Core és un projecte de <a href=\"https://www.fsf.org/about/what-is-free-software\">programari lliure</a> gestionat per la comunitat i entregat sota <a href=\"http://opensource.org/licenses/mit-license.php\">llicència MIT</a>."
+    notesync: "La sincronització inicial de Bitcoin Core trigarà temps i baixarà moltes dades. Heu d'assegurar-vos que teniu prou amplada de banda i emmagatzematge per a la mida de la cadena de blocs completa (més de {{site.text.bitcoin_datadir_gb}} GB). Si teniu una bona connexió a Internet, podeu ajudar a enfortir la xarxa mantenint el vostre PC funcionant amb Bitcoin Core i el port 8333 oberts."
+    full_node_guide: "Llegiu la <a href=\"/en/full-node\">guia completa</a> per a més detalls"
+    patient: "Comprova el teu espai i ample de banda"
+    releasekeys: "Claus de signatura de llançament de Bitcoin Core"
+  exchanges:
+    title: "Cases de canvi - Bitcoin"
+    metadescription: "Llocs per comprar Bitcoin a canvi d’altres monedes. Canviar dòlars nord-americans (BTC/USD), euros (BTC/EUR), Yuan (BTC/CNY) i altres monedes per Bitcoin."
+    pagetitle: "Cases de canvi de Bitcoin"
+    pagedesc: "Llocs per comprar Bitcoin a canvi d’altres monedes."
+    exchange: "Cases de canvi de Bitcoin"
+  site-blog:
+    loadmore-posts: "Carrega mes articles"
+  alerts:
+    loadmore-alerts: "Carrega mes alertes"
+  events:
+    title: "Conferències i esdeveniments - Bitcoin"
+    rsslink: "Subscriure's al feed RSS."
+    loadmore-events: "Carrega més esdeveniments"
+    pagetitle: "Conferències i esdeveniments"
+    pagedesc: "Troba esdeveniments, conferències i trobades per tot el món."
+    upcoming: "Pròxims esdeveniments i conferències"
+    eventsubmit: "Envia un esdeveniment"
+    meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Trobades Bitcoin a BitcoinTalk</a>"
+    meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Meetups Bitcoin a la Wiki</a>"
+    meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Grups meetup Bitcoin</a>"
+  faq:
+    title: "FAQ - Bitcoin"
+    pagetitle: "Preguntes més freqüents"
+    summary: "Troba les respostes als mites més recurrents sobre Bitcoin."
+    table: "Taula de continguts"
+    general: "General"
+    whatisbitcoin: "Què és Bitcoin?"
+    whatisbitcointxt1: "Bitcoin és una xarxa consensuada que proporciona un nou sistema de pagament i una moneda completament digital. És la primera xarxa de pagament descentralitzada P2P que és portada a terme pels seus usuaris sense la gestió d'una autoritat central o intermediaris. Des de la perspectiva de l'usuari, Bitcoin és molt similar als diners en efectiu per a Internet. Bitcoin també pot ser vist com el  <a href=\"http://financialcryptography.com/mt/archives/001325.html\">sistema de comptabilitat triple per partida</a> més prominent en existència."
+    creator: "Qui va crear Bitcoin?"
+    creatortxt1: "Bitcoin és la primera implementació d'un concepte anomenat \"criptomoneda\", el qual va ser descrit per primera vegada l'any 1998 per Wei Dai a la llista de correu cypherpunks. Suggeria la idea d'una nou tipus de moneda que en comptes d'una autoritat central utilitzés criptografia per tal de controlar la seva creació i les seves transaccions. La primera especificació Bitcoin i la prova de concepte va ser publicada l'any 2009 per Satoshi Nakamoto en una llista de correu de criptografia. Satoshi va deixar el projecte a finals del 2010 sense revelar gaire res sobre ell mateix. La comunitat des de llavors ha crescut exponencialment amb molts <a href=\"#development#\">desenvolupadors</a> treballant-hi."
+    creatortxt2: "L'anonimat de Satoshi ha plantejat preocupacions injustificades moltes de les quals van lligades a no entendre la naturalesa \"open-source\" de Bitcoin. El protocol Bitcoin i el seu programari es publica obertament i qualsevol desenvolupador del món el pot revisar o fer-ne la seva pròpia versió modificada. Tal com passa amb els desenvolupadors actuals, la influència de Satoshi es limitava als canvis que feia i que posteriorment eren adoptats per altres. Ell no controlava Bitcoin. Vist així, la identitat de l'inventor de Bitcoin podria considerar-se avui tan rellevant com la identitat de la persona que va inventar el paper."
+    whocontrols: "Qui controla la xarxa Bitcoin?"
+    whocontrolstxt1: "La xarxa Bitcoin no pertany a ningú així com la tecnologia del correu electrònic tampoc pertany a ningú. Bitcoin és controlat per tots els usuaris Bitcoin del món. Mentre els desenvolupadors milloren el programari no poden forçar cap canvi al protocol, ja que cada usuari és lliure de triar el programa i la versió a utilitzar. Per tal de ser compatibles els uns amb els altres, tots els usuaris necessiten utilitzar programari que compleixi amb les mateixes regles. Bitcoin només pot funcionar correctament amb un consens total entre usuaris. Així doncs, tant els usuaris com els desenvolupadors estan interessats en protegir aquest consens."
+    howitworks: "Com funciona Bitcoin?"
+    howitworkstxt1: "Des de la perspectiva de l'usuari, Bitcoin no és res més que una aplicació mòbil o un programa informàtic que li proporciona un moneder personal i li permet enviar i rebre bitcoins. Per a la majoria d'usuaris així és com funciona Bitcoin."
+    howitworkstxt2: "Entre bastidors, la xarxa Bitcoin comparteix un registre públic anomenat la \"cadena de blocs\". Aquest registre conté cada transacció processada permetent que es pugui verificar la validesa de cada una d'elles. L'autenticitat de cada transacció es protegeix amb la signatura digital corresponent a l'adreça emissora, permetent als usuaris el ple control sobre l'enviament de bitcoins des de les seves adreces Bitcoin. Addicionalment tothom pot processar transaccions utilitzant maquinari especialitzat i guanyar una recompensa en bitcoins pel seu servei. Això s'anomena \"minat\". Per aprendre més coses sobre Bitcoin, pots consultar la <a href=\"#how-it-works#\">pàgina dedicada</a> i <a href=\"#bitcoin-paper#\">l'article original</a>."
+    used: "És Bitcoin realment utilitzat per les persones?"
+    usedtxt1: "Sí. Hi ha un <a href=\"/en/spend-bitcoin\">nombre creixent d’empreses</a> i particulars que utilitzen Bitcoin. Això inclou empreses físiques com restaurants, apartaments i despatxos d'advocats, així com serveis en línia populars com Namecheap i Overstock.com. Tot i que Bitcoin continua sent un fenomen relativament nou, creix ràpidament. A maig de 2018, el <a href=\"https://bitcoincharts.com/bitcoin/\">valor total de tots els bitcoins</a> existents superava els 100.000 milions de dòlars nord-americans, amb un intercanvi diari de milions de dòlars en bitcoins."
+    acquire: "Com es poden aconseguir bitcoins?"
+    acquireli1: "Com a pagament per a béns o serveis."
+    acquireli2: "Compra bitcoins a una <a href=\"https://www.buybitcoinworldwide.com\">casa de canvi</a>."
+    acquireli3: "Canvia bitcoins amb <a href=\"https://localbitcoins.com/\">algú a prop teu</a>."
+    acquireli4: "Guanya bitcoins a trabés de <a href=\"http://www.bitcoinmining.com/\">mineria</a> competitiva."
+    acquiretxt1: "Tot i que encara és possible trobar persones que desitgin vendre bitcoins amb pagaments PayPal o amb targeta de crèdit, la majoria de cases de canvi no accepten aquests tipus de pagament. Això es deu a casos en què algú ha comprat bitcoins amb PayPal i després ha revertit el pagament. Aquesta acció es coneix com a \"chargeback\"."
+    makepayment: "Quina dificultat té fer un pagament amb Bitcoin?"
+    makepaymenttxt1: "Els pagaments Bitcoin són més fàcils de fer que les compres amb targeta de crèdit o dèbit i es poden rebre sense un compte d'empresa. Els pagaments es fan des de l'aplicació moneder, sigui al teu ordinador o telèfon intel·ligent, entrant l'adreça del beneficiari. Molts moneders poden obtenir l'adreça escanejant un codi QR o tocant els dos telèfons amb tecnologia NFC."
+    advantages: "Quins són els avantatges de Bitcoin?"
+    advantagesli1: >-
+        <em><b>Llibertat de pagament</b></em> - Es pot enviar i rebre qualsevol quantitat
+        de diners instantàniament a qualsevol lloc del món en qualsevol moment. No
+        hi ha bancs que facin vacances, no hi ha fronteres, no hi ha límits imposats.
+        Bitcoin permet als seus usuaris el ple control sobre els seus diners.
+    advantagesli2: >
+        <em><b>Trieu les vostres pròpies tarifes</b></em> - No hi ha cap comissió
+        per rebre bitcoins, i moltes carteres us permeten controlar l'import de la
+        tarifa a pagar en gastar. Les tarifes més altes poden afavorir una <a href="#you-need-to-know##instant">confirmació</a>
+        més ràpida de les vostres transaccions. Les tarifes no estan relacionades
+        amb l'import transferit, de manera que és possible enviar 100.000 bitcoins
+        per la mateixa tarifa que costa enviar 1 bitcoin. A més, existeixen processadors
+        de comerciants per ajudar els comerciants a processar transaccions, convertir
+        bitcoins en moneda fiduciària i dipositar fons directament als comptes bancaris
+        dels comerciants diàriament. Com que aquests serveis es basen en Bitcoin,
+        es poden oferir per tarifes molt més baixes que amb PayPal o xarxes de targetes
+        de crèdit.
+    advantagesli3: "<em><b>Menys riscos per als negocis</b></em> - Les transaccions Bitcoin són segures, irreversibles i no contenen informació personal o sensible del client. Això protegeix a les empreses de pèrdues causades pel frau o per devolucions de pagament fraudulentes, i no hi ha cap necessitat de complir amb l'estàndard PCI. Els negocis poden expandir-se cap a nous mercats on no es permeten targetes de crèdit o on els nivells de frau són massa alts. Els resultats nets són comissions més baixes, mercats més grans i menys costos administratius."
+    advantagesli4: "<em><b>Control i seguretat</b></em> - Els usuaris Bitcoin tenen ple control de les seves transaccions; No és possible per als negocis forçar càrrecs inesperats o no volguts tal com pot passar amb altres mètodes de pagament. Els pagaments Bitcoin poden ser fets sense informació personal lligada a la transacció, oferint millor protecció contra els robatoris d'identitat. Els usuaris Bitcoin també poden protegir els seus diners amb una còpia de seguretat i encriptació."
+    advantagesli5: "<em><b>Transparent i neutral</b></em> - <a href=\"https://live.blockcypher.com/btc/\">Tota la informació</a> concernent al subministrament de Bitcoin està disponible a la cadena de blocs a temps real. Cap individu ni organització pot controlar o manipular el protocol Bitcoin, ja que és criptogràficament segur. Això permet que es pugui confiar amb el nucli de Bitcoin per ser completament neutral, transparent i predictible."
+    disadvantages: "Quins són els desavantatges de Bitcoin?"
+    disadvantagesli1: "<em><b>Grau d'acceptació</b></em> - Molta gent desconeix Bitcoin. Cada dia, més negocis accepten bitcoins perquè volen els avantatges que ofereix. Així i tot, la llista encara és petita i necessita créixer per tal de beneficiar-se de <a href=\"https://en.wikipedia.org/wiki/Network_effect\">l'efecte de xarxa</a>."
+    disadvantagesli2: "<em><b>Volatilitat</b></em> - El <a href=\"https://bitcoincharts.com/bitcoin/\">valor total</a> dels bitcoins en circulació i el nombre de negocis utilitzant-los encara és massa petit comparat amb el qual podria ser. Esdeveniments relativament petits, especulació o activitats empresarials poden afectar-ne significativament el preu. En teoria aquesta volatilitat decreixerà a mesura que els mercats i la tecnologia madurin. El món no havia vist mai una posada en marxa així d'una moneda així que és realment difícil (i excitant) d'imaginar com anirà."
+    disadvantagesli3: "<em><b>Desenvolupament en marxa</b></em> - El programari Bitcoin encara es troba en fase beta amb moltes funcionalitats en desenvolupament. S'estan desenvolupant noves eines, característiques i serveis per fer a Bitcoin més segur i accessible per a les masses. Molts negocis Bitcoin encara són nous i no ofereixen cap assegurança. En general, Bitcoin encara es troba en procés de maduració."
+    trust: "Perquè la gent confia amb Bitcoin?"
+    trusttxt1: "Gran part de la confiança en Bitcoin prové del fet que no requereix cap confiança. Bitcoin és de codi obert i descentralitzat. Això vol dir que qualsevol persona té accés a tot el seu codi font en qualsevol moment. Qualsevol desenvolupador del món pot verificar com funciona Bitcoin. Tots els bitcoins creats i les seves transaccions poden ser consultats de manera transparent en temps real per a qualsevol individu. Tots els pagaments poden ser fets sense dependre d'una tercera part i tot el sistema és protegit per algoritmes criptogràfics intensament revisats i utilitzats en altres àmbits com per exemple la banca en línia. Cap persona ni organització pot controlar Bitcoin, i la xarxa es manté segura encara que no tots els usuaris siguin de confiança."
+    makemoney: "Puc fer diners amb Bitcoin?"
+    makemoneytxt1: "No has d'esperar mai fer-te ric amb Bitcoin o qualsevol altra tecnologia emergent. Sempre és important ser prudent amb qualsevol cosa que soni massa bé per ser real o que desobeeixi les regles bàsiques de l'economia. "
+    makemoneytxt2: "Bitcoin és un espai creixent d'innovació i existeixen oportunitats de negoci que també inclouen riscos. No hi ha garantia que Bitcoin continuï creixent encara que s'hagi desenvolupat a un ritme tan ràpid. Invertir temps i recursos a qualsevol cosa relacionada amb Bitcoin requereix emprenedoria. Hi ha diferents maneres de fer-hi diners com per exemple la mineria, especulació o començant un nou negoci. Tots aquests mètodes són competitius i no hi ha cap garantia de benefici. Dependrà de cada individu fer una avaluació pertinent dels costos i els riscos implicats en cada projecte."
+    virtual: "Bitcoin és completament virtual i immaterial?"
+    virtualtxt1: "Bitcoin és tan virtual com ho és una targeta de crèdit i la banca en línia que la gent utilitza diàriament. Bitcoin es pot usar per a pagar en línia i a les botigues físiques tal com amb qualsevol altre tipus de moneda. Els bitcoins es poden canviar en forma física com la <a href=\"https://denarium.com/\">moneda Denarium</a>, però pagar amb el telèfon mòbil acostuma a ser més convenient. Els saldos Bitcoin es guarden a una gran xarxa distribuïda i no poden ser alterats fraudulentament per a ningú. En altres paraules, els usuaris Bitcoin tenen control exclusiu sobre els seus fons i els bitcoins no poden desaparèixer, ja que són virtuals."
+    anonymous: "Bitcoin és anònim?"
+    anonymoustxt1: "El disseny de Bitcoin permet als seus usuaris enviar i rebre pagaments amb un nivell de privacitat acceptable així com es fa amb qualsevol altre tipus de moneda. Així i tot, Bitcoin no és anònim i no pot oferir el mateix nivell de privacitat que l'efectiu. L'ús de Bitcoin deixa un registre públic. Existeixen <a href=\"#protect-your-privacy#\">varis mecanismes</a> per a protegir la privacitat dels usuaris, i n'hi ha més en desenvolupament. En qualsevol cas encara queda feina per fer abans que aquestes característiques s'utilitzin correctament per la majoria d'usuaris Bitcoin."
+    anonymoustxt2: "S'han plantejat certes preocupacions, ja que les transaccions privades amb Bitcoin podrien ser utilitzades per a propòsits il·legals. Tanmateix val la pena assenyalar que Bitcoin estarà subjecte a regulacions similars a les que actualment hi ha instaurades als sistemes financers. Bitcoin no pot ser més anònim que el metàl·lic i no impedirà cap investigació criminal que es porti a terme. A més a més, el mateix disseny de Bitcoin preveu i evita un bon nombre de crims financers."
+    lost: "Què passa quan es perden bitcoins?"
+    losttxt1: "Quan un usuari perd el seu moneder aquests diners desapareixen de circulació. Els bitcoins perduts encara es mantenen a la cadena de blocs com qualsevol altre bitcoin, ara bé, els bitcoins perduts romandran latents per sempre, ja que no hi ha cap mecanisme amb el qual es pugui recuperar la clau privada(es) que permetria gastar-los de nou. Per la llei de l'oferta i la demanda, quan hi hagi pocs bitcoins disponibles, els que quedin tindran més demanda i s'incrementarà el valor per tal de compensar-ho."
+    scale: "Pot Bitcoin créixer fins a ser una xarxa de pagament principal? "
+    scaletxt1: "La xarxa Bitcoin encara podria processar un nombre molt més alt de transaccions per segon del qual fa avui dia. Així i tot encara no està llesta per ser escalada al nivell de les xarxes de les principals targetes de crèdit. S'està treballant per polir les limitacions actuals i els requeriments futurs són ben coneguts. Des de l'inici cada aspecte de la xarxa Bitcoin ha estat en un procés continu de maduració, optimització i especificació i es mantindrà així encara uns quants anys. Quan el trànsit creix més usuaris comencen a fer servir un client lleuger i els nodes complets esdevenen serveis especialitzats. Per a més detalls, mira la pàgina d'<a href=\"https://en.bitcoin.it/wiki/Scalability\">escalabilitat</a> a la Wiki."
+    legal: "Legal"
+    islegal: "Bitcoin és legal?"
+    islegaltxt1: "El que sabem ara mateix és que  <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">Bitcoin no ha estat il·legalitzat</a> a la majoria de jurisdiccions. N'hi ha però (com la d'Argentina o la de Rússia) que restringeixen o bloquegen les monedes estrangeres. Altres jurisdiccions (com la de Tailàndia) podria limitar les llicències per a certes entitats com podria ser una casa de canvi de Bitcoin."
+    islegaltxt2: "Hi ha legisladors de diverses jurisdiccions treballant per oferir a empreses i a individus regles sobre com integrar aquesta nova tecnologia amb el sistema financer tradicional. Per exemple, la \"Financial Crimes Enforcement Network\" (FinCEN), que forma part del departament del tresor d'Estats Units d'Amèrica, ha publicat una guia no vinculant sobre com caracteritzar certes activitats que involucren monedes virtuals."
+    illegalactivities: "Bitcoin és útil per activitats il·legals?"
+    illegalactivitiestxt1: "Bitcoin és moneda i la moneda s'ha utilitzat sempre tant per coses legals com per coses il·legals. Metàl·lic, targetes de crèdit i sistemes bancaris sobrepassen sobradament a Bitcoin en termes d'ús en finançar crims. Bitcoin pot aportar innovació en els sistemes de pagament i els beneficis d'aquesta innovació sovint són considerats superiors a les seves mancances potencials."
+    illegalactivitiestxt2: "Bitcoin està dissenyat per ser un gran pas endavant en fer que els diners siguin més segurs i pot actuar com a protecció enfront de diverses formes de crims financers. Per exemple, els bitcoins són totalment impossibles de falsificar. Els usuaris tenen ple control sobre els seus pagaments i no poden rebre càrrecs no autoritzats com podria passar amb les targetes de crèdit. Les transaccions Bitcoin són irreversibles i immunes a recàrrecs fraudulents. Bitcoin permet protegir els diners contra robatoris i pèrdues fent servir mecanismes com còpies de seguretat, encriptació i signatures múltiples."
+    illegalactivitiestxt3: "S'han plantejat certes preocupacions en què Bitcoin pot ser més atractiu per als criminals, ja que pot ser utilitzat per fer pagaments privats i irreversibles. Aquestes característiques ja existeixen amb els diners en metàl·lic i les transferències bancàries les quals es fan servir àmpliament i i estan ben establertes. L'ús de Bitcoin sense cap mena de dubte estarà subjecte a regulacions similars a les que existeixen en els sistemes financers actuals i Bitcoin no evitarà que cap investigació criminal es dugui a terme. És comú que avenços importants es percebin com a controvertits abans que els seus beneficis siguin entesos completament. Internet és un bon exemple per il·lustrar-ho."
+    regulated: "Pot ser regulat el Bitcoin?"
+    regulatedtxt1: "El protocol Bitcoin no es pot modificar sense la cooperació de pràcticament tots els seus usuaris, els quals trien el programari que utilitzen. Intentar assignar drets especials a una autoritat local a les normes de la xarxa global Bitcoin no és una possibilitat pràctica. Qualsevol organització amb molts diners podria invertir en maquinari de mineria per tal de controlar la meitat del poder de computació de la xarxa i poder bloquejar o revertir transaccions recents. Ara bé, res no els garantiria la capacitat de retenir aquest poder, ja que requeriria que invertissin tants diners com la resta de miners del món junts."
+    regulatedtxt2: "És possible regular l'ús de Bitcoin d'una forma similar a qualsevol altre instrument. Com el dòlar, Bitcoin es pot utilitzar per a una gran varietat de propòsits, alguns dels quals poden ser considerats legítims o no segons les lleis de cada lloc. En aquest sentit, Bitcoin no és diferent que cap altra eina o recurs i pot ser subjecte a diferents regulacions depenent del país. Es pot dificultar l'ús de Bitcoin per part de regulacions restrictives, en cas en el qual és difícil de determinar quin percentatge d'usuaris seguirien usant aquesta tecnologia. Un govern que decidís prohibir Bitcoin limitaria el desenvolupament d'empreses i mercats mentre enviaria la innovació cap a altres països. El repte per als legisladors és, com sempre, desenvolupar solucions eficients que a la vegada no obstaculitzin el creixement de mercats emergents ni d'empreses."
+    taxes: "Què hi ha sobre Bitcoin i els impostos?"
+    taxestxt1: "Bitcoin no és un una moneda fiduciària de curs legal a cap territori, però sovint els impostos fiscals s'apliquen independentment del mitjà utilitzat. Hi ha una gran varietat de legislacions a diferents territoris que podrien generar ingressos, vendes, nòmines, plusvàlues o qualsevol altre tipus d'acció que comporti càrrega d'impostos amb Bitcoin."
+    consumer: "Què hi ha sobre el Bitcoin i la protecció al consumidor?"
+    consumertxt1: "Bitcoin està alliberant la gent per fer transaccions segons els seus propis termes. Cada usuari pot enviar i rebre pagaments de manera similar a l'efectiu, però també pot participar en contractes més complexos. Les signatures múltiples permeten que la xarxa accepti una transacció només si un nombre determinat d'un grup definit de persones accepta signar la transacció. Això permet desenvolupar serveis innovadors de mediació de conflictes en el futur. Aquests serveis poden permetre a un tercer aprovar o rebutjar una transacció en cas de desacord entre les altres parts sense tenir control sobre els seus diners. A diferència de l'efectiu i altres mètodes de pagament, Bitcoin sempre deixa una prova pública que es va produir una transacció, que pot ser utilitzada en un recurs contra empreses amb pràctiques fraudulentes."
+    consumertxt2: "També val la pena assenyalar que, si bé els comerciants solen dependre de la seva reputació pública per mantenir-se en el negoci i pagar als seus empleats, no tenen accés al mateix nivell d’informació quan tracten amb nous consumidors. La forma de funcionar de Bitcoin permet protegir tant a particulars com a empreses contra retrocessions fraudulentes, alhora que dóna la possibilitat al consumidor de sol·licitar més protecció quan no estigui disposat a confiar en un comerciant en particular."
+    economy: "Economia"
+    bitcoinscreated: "Com es creen els bitcoins?"
+    bitcoinscreatedtxt1: "Els bitcoins es generen per un sistema competitiu i descentralitzat anomenat mineria. Aquest procés implica que la xarxa recompensi individus pels serveis prestats. Els miners Bitcoin processen les transaccions i protegeixen la xarxa utilitzant maquinari especialitzat i recol·lectant a canvi nous bitcoins."
+    bitcoinscreatedtxt2: "El protocol Bitcoin està dissenyat de manera que es creen bitcoins nous a un ritme fix. Això fa que la mineria de Bitcoin sigui un negoci molt competitiu. Com més miners s’uneixen a la xarxa, cada vegada és més difícil obtenir beneficis i els miners han de buscar eficiència per reduir els seus costos operatius. Cap autoritat central o desenvolupador té cap poder per controlar o manipular el sistema per augmentar els seus beneficis. Tots els nodes Bitcoin del món rebutjaran tot allò que no compleixi les regles que esperen que segueixi el sistema."
+    bitcoinscreatedtxt3: "Bitcoin es crea a un ritme previst i decreixent. El nombre de nous bitcoins creats cada any automàticament es divideix passat cert temps fins que la creació es pari completament arribats als 21 milions de bitcoins en existència. A aquest punt, els miners de Bitcoin es pagaran a partir de les comissions de transacció."
+    whyvalue: "Perquè els bitcoins tenen valor?"
+    whyvaluetxt1: "Els bitcoins tenen valor perquè són útils com a forma de diners. Bitcoin té les característiques dels diners (durabilitat, portabilitat, fungibilitat, escassetat, divisibilitat i reconeixement) basades en les propietats de les matemàtiques en lloc de confiar en propietats físiques (com l'or i la plata) o la confiança en les autoritats centrals (com les monedes fiduciàries). En resum, Bitcoin està avalat per les matemàtiques. Amb aquests atributs, tot el que es necessita perquè una forma de diners tingui valor és la confiança i l'adopció. En el cas de Bitcoin, això es pot mesurar per la seva base creixent d'usuaris, comerciants i startups. Com passa amb totes les monedes, el valor de Bitcoin prové només i directament de les persones disposades a acceptar-les com a pagament."
+    whatprice: "Què determina el preu dels bitcoins?"
+    whatpricetxt1: "El preu d'un bitcoin varia en funció de l'oferta i la demanda. Quan la demanda de bitcoins augmenta, el seu preu augmenta; i quan la demanda decreix, el seu preu també. Només hi ha un nombre determinat de bitcoins en circulació i els nou bitcoins es creen a un ritme lent i predictible. Això significa que la demanda segueix el nivell de la inflació per mantenir-se estable. Com que Bitcoin segueix sent un mercat relativament petit en comparació amb el que podria ser, no es necessita una quantitat significativa de diners per moure el preu del mercat cap amunt o cap avall i, per això, el preu d'un bitcoin és tan volàtil."
+    whatpriceimg1: "Preu de Bitcoin al llarg del temps:"
+    worthless: "Poden els bitcoins arribar a no tenir valor?"
+    worthlesstxt1: "Sí. La història està plena de monedes que han fallat i que ja no s’utilitzen, com la <a href=\"https://en.wikipedia.org/wiki/German_gold_mark\">marca alemanya</a> durant la República de Weimar i, més recentment, el <a href=\"https://en.wikipedia.org/wiki/Zimbabwean_dollar\">dòlar Zimbabuès</a>. Tot i que els fracassos monetaris anteriors solien ser deguts a una hiperinflació (això és impossible per Bitcoin) sempre hi ha possibles fallades tècniques, monedes competidores, qüestions polítiques, etc. Com a regla bàsica general, cap moneda no s’ha de considerar absolutament segura davant de fallades o moments difícils. Bitcoin ha demostrat ser fiable durant anys des dels seus inicis i hi ha molt potencial perquè Bitcoin continuï creixent. Tot i això, ningú no està en condicions de predir quin serà el futur de Bitcoin."
+    bubble: "És Bitcoin una bombolla?"
+    bubbletxt1: "Un ràpid augment del preu no constitueix una bombolla. Una sobrevaloració artificial que conduirà a una correcció sobtada a la baixa constitueix una bombolla. Les opcions basades en l'acció humana individual per part de centenars de milers de participants en el mercat són la causa que el preu de Bitcoin fluctuï a mesura que el mercat busca el descobriment de preus. Els motius dels canvis de sentiment poden incloure una pèrdua de confiança en Bitcoin, una gran diferència entre el valor i el preu que no es basa en els fonaments de l’economia de Bitcoin, una major cobertura de premsa que estimula la demanda especulativa, la por a la incertesa i l’exuberància irracional i l’avarícia a l’antiga."
+    ponzi: "Bitcoin és un esquema Ponzi?"
+    ponzitxt1: "Un esquema Ponzi és una operació d'inversió fraudulenta que dóna beneficis als seus inversors dels seus propis diners, o dels diners pagats amb els següents inversors, en lloc dels beneficis guanyats per les persones que porten el negoci. Els esquemes Ponzi estan dissenyats per col·lapsar en expenses dels últims inversors quan no hi ha prou participants."
+    ponzitxt2: "Bitcoin és un projecte de programari lliure sense autoritat central. En conseqüència, ningú no està en condicions de fer declaracions fraudulentes sobre els rendiments de la inversió. Igual que altres monedes importants com l’or, el dòlar nord-americà, l’euro, el ien, etc., no hi ha cap poder adquisitiu garantit i el tipus de canvi flota lliurement. Això condueix a la volatilitat en què els propietaris de bitcoins poden guanyar o perdre diners de forma imprevisible. Més enllà de l’especulació, Bitcoin també és un sistema de pagament amb atributs útils i competitius que estan utilitzant milers d’usuaris i empreses."
+    earlyadopter: "Bitcoin beneficia injustament als primers que el van adoptar?"
+    earlyadoptertxt1: "Alguns primers adoptants tenen un gran nombre de bitcoins perquè van arriscar i van invertir temps i recursos en una tecnologia no demostrada que gairebé no feia servir ningú i que era molt més difícil de garantir correctament. Molts primers adoptants van gastar un gran nombre de bitcoins força vegades abans que fossin valuosos o compressin només petites quantitats i no obtinguessin grans guanys. No hi ha cap garantia que el preu d’un bitcoin augmenti o baixi. Això és molt similar a invertir en una posada en marxa primerenca que pot guanyar valor gràcies a la seva utilitat i popularitat, o simplement no obrir-se mai. Bitcoin encara està en la seva infantesa i s’ha dissenyat amb una visió a llarg termini; és difícil imaginar com podria ser menys esbiaixat cap als primers adoptants, i els usuaris actuals poden ser o no els primers adoptants del demà."
+    finitelimitation: "El número finit de bitcoin no és una limitació?"
+    finitelimitationtxt1: "Bitcoin és únic perquè només es crearan 21 milions de bitcoins. Tanmateix, això mai no serà una limitació perquè les transaccions es poden denominar en subunitats més petites d’un bitcoin, com ara bits: hi ha 1.000.000 de bits en 1 bitcoin. Els bitcoins es poden dividir fins a vuit xifres decimals (0,000 000 01) i unitats potencialment fins i tot més petites si això és necessari en el futur a mesura que disminueixi la mida mitjana de la transacció."
+    deflationaryspiral: "Bitcoin no caurà a una espiral de deflació?"
+    deflationaryspiraltxt1: "La teoria de l’espiral deflacionista diu que si s’espera que caiguin els preus, la gent traslladarà les compres al futur per tal de beneficiar-se dels preus més baixos. Aquesta caiguda de la demanda al seu torn farà que els comerciants abaixin els seus preus per intentar estimular la demanda, cosa que empitjora el problema i provoca una depressió econòmica."
+    deflationaryspiraltxt2: "Tot i que aquesta teoria és una manera popular de justificar la inflació entre els banquers centrals, no sembla que sempre sigui certa i es considera controvertida entre els economistes. L’electrònica de consum és un exemple d’un mercat on els preus baixen constantment, però que no es troba en depressió. De la mateixa manera, el valor dels bitcoins ha augmentat amb el pas del temps i, tot i això, la mida de l’economia de Bitcoin també ha crescut de forma espectacular. Com que tant el valor de la moneda com la mida de la seva economia van començar de zero el 2009, Bitcoin és un contraexemple de la teoria que demostra que a vegades s'equivoca."
+    deflationaryspiraltxt3: "Malgrat això, Bitcoin no està dissenyat per ser una moneda deflacionista. És més precís dir que Bitcoin pretén inflar-se en els seus primers anys i esdevenir estable en els darrers anys. L'única vegada que disminuirà la quantitat de bitcoins en circulació és si les persones perden la seva cartera sense tenir cura de fer còpies de seguretat. Amb una base monetària estable i una economia estable, el valor de la moneda hauria de continuar sent el mateix."
+    speculationvolatility: "L'especulació i la volatilitat no és un problema per a Bitcoin?"
+    speculationvolatilitytxt1: "Aquesta és una situació com la de l'ou i la gallina. Perquè s'estabilitzi el preu de bitcoin, cal que es desenvolupi una economia a gran escala amb més negocis i usuaris. Per tal que aquesta economia a gran escala es desenvolupi, les empreses i els usuaris buscaran l'estabilitat del preu."
+    speculationvolatilitytxt2: "Afortunadament, la volatilitat no afecta els principals beneficis de Bitcoin com a sistema de pagament per transferir diners del punt A al punt B. És possible que les empreses converteixin els pagaments de bitcoins a la seva moneda local a l’instant, cosa que els permet beneficiar-se dels avantatges de Bitcoin sense estar sotmesos a fluctuacions de preus. Atès que Bitcoin ofereix moltes funcions i propietats úniques i útils, molts usuaris opten per utilitzar Bitcoin. Amb aquestes solucions i incentius, és possible que Bitcoin maduri i es desenvolupi fins a un grau en què la volatilitat dels preus es torni limitada."
+    buyall: "Què passaria si algú comprés tots els bitcoins existents?"
+    buyalltxt1: "Només una fracció dels bitcoins emesos fins ara es troba als mercats per vendre. Els mercats de Bitcoin són competitius, és a dir, el preu d'un bitcoin augmentarà o baixarà en funció de l'oferta i la demanda. A més, es continuaran emetent nous bitcoins durant les dècades vinents. Per tant, fins i tot el comprador més decidit no podria comprar tots els bitcoins existents. Aquesta situació no suggereix, però, que els mercats no siguin vulnerables a la manipulació de preus; encara no es necessiten quantitats significatives de diners per apujar o abaixar el preu de mercat i, per tant, Bitcoin continua sent un actiu volàtil."
+    bettercurrency: "Què passa si algú crea una moneda digital millor?"
+    bettercurrencytxt1: "Això pot passar. De moment, Bitcoin continua sent, amb diferència, la moneda virtual descentralitzada més popular, però no hi ha cap garantia que mantingui aquesta posició. Ja hi ha un conjunt de monedes alternatives inspirades en Bitcoin. Tanmateix, seria correcte suposar que es necessitarien millores significatives perquè una nova moneda superés Bitcoin en termes de mercat establert, tot i això és impredictible. Bitcoin també podria adoptar, possiblement, millores d’una moneda competidora sempre que no canviés les parts fonamentals del protocol."
+    transactions: "Transaccions"
+    tenminutes: "Per què he d'esperar 10 minuts?"
+    tenminutestxt1: >
+        Rebre la notificació d’un pagament és gairebé instantani amb Bitcoin. Tanmateix,
+        hi ha un retard abans que la xarxa comenci a confirmar la vostra transacció,
+        incloent-hi en un bloc. Una confirmació significa que hi ha un consens a la
+        xarxa que els bitcoins que heu rebut no han estat enviats a ningú més i que
+        es consideren propietat vostra. Una vegada que la vostra transacció s'hagi
+        inclòs en un bloc, es continuarà enterrant a cada bloc posterior, cosa que
+        consolidarà exponencialment aquest consens i disminuirà el risc d'una transacció
+        invertida. Cada confirmació triga entre uns quants segons i 90 minuts, essent
+        la mitjana 10 minuts. Si la transacció paga una comissió massa baixa o és
+        atípica, obtenir la primera confirmació pot trigar molt més. Tots els usuaris
+        poden determinar en quin moment consideren una transacció prou confirmada,
+        però sovint es considera que <a href="#you-need-to-know##instant">sis confirmacions</a>
+        són tan segures com esperar 6 mesos en una transacció amb targeta de crèdit.
+    fee: "Quan costarà la comissió de transacció?"
+    feetxt1: >
+        Les transaccions es poden processar sense comissions, però intentar enviar
+        transaccions gratuïtes pot requerir dies o setmanes d’espera. Tot i que les
+        taxes poden augmentar amb el pas del temps, les tarifes normals actualment
+        només costen una petita quantitat. Per defecte, totes les <a href="#choose-your-wallet#">carteres
+        de Bitcoin</a> que figuren a Bitcoin.org afegeixen el que creuen que és una
+        tarifa adequada a les vostres transaccions; la majoria d'aquestes carteres
+        també us donaran l'oportunitat de revisar la tarifa abans d'enviar la transacció.
+    feetxt2: >
+        Les tarifes de transaccions s’utilitzen com a protecció contra l’enviament
+        d’usuaris per sobrecarregar la xarxa i com a forma de pagar als miners el
+        seu treball ajudant a protegir la xarxa. La forma exacta en què es treballa
+        la tarifa encara s'està desenvolupant i canviarà amb el pas del temps. Com
+        que la tarifa no està relacionada amb la quantitat d'enviament de bitcoins,
+        pot semblar extremadament baixa o injustament alta. En canvi, la tarifa és
+        relativa al nombre de bytes de la transacció, de manera que fer servir multisig
+        o gastar diversos imports rebuts anteriorment pot costar més que les transaccions
+        més senzilles. Si la vostra activitat segueix el patró de les transaccions
+        convencionals, no caldrà comissions inusualment altes.
+    poweredoff: "Què passa si rebo un bitcoin quan el meu ordinador està apagat?"
+    poweredofftxt1: "Això funciona bé. Els bitcoins apareixeran la propera vegada que inicieu l'aplicació de cartera. El programari del vostre ordinador no rep realment bitcoins, sinó que s'afegeixen a un llibre major públic compartit entre tots els dispositius de la xarxa. Si se us envien bitcoins quan el programa de cartera no s'està executant i l'executeu més tard, descarregarà blocs i es posarà al dia amb les transaccions que encara no coneixia, i els bitcoins apareixeran com si acabessin de rebre's en temps real. La vostra cartera només és necessària quan vulgueu gastar bitcoins."
+    sync: "Què vol dir \"sincronitzant\" i per què tarda tant? "
+    synctxt1: "El temps llarg de sincronització només es requereix amb clients de node complet com Bitcoin Core. Tècnicament, la sincronització és el procés de descàrrega i verificació de totes les transaccions anteriors de Bitcoin a la xarxa. Perquè alguns clients de Bitcoin calculin el saldo invertible de la vostra cartera de Bitcoin i facin noves transaccions, han de ser conscients de totes les transaccions anteriors. Aquest pas pot consumir molts recursos i requereix una amplada de banda i emmagatzematge suficients per adaptar-se a la mida completa de la cadena de blocs. Perquè Bitcoin es mantingui segur, hi ha d'haver prou gent que continuï utilitzant clients de node complet perquè són els que realitzen la tasca de validar i transmetre transaccions."
+    mining: "Mineria"
+    whatismining: "Què és la mineria de Bitcoin?"
+    whatisminingtxt1: "La mineria és el procés a través del qual es realitzen les transaccions, s'assegura la xarxa, i es manté el sistema i a les persones sincronitzats. Podria ser interpretat com el centre de dades de Bitcoin, però aquesta ha estat dissenyada per ser totalment descentralitzada, amb miners que operen a tots els països, i que ningú tingui control sobre la xarxa. Aquest procés es coneix com a \"mineria\", com a analogia a la mineria de l'or, ja que també és un mecanisme temporal que s'utilitza per emetre nous bitcoins. A diferència de la mineria de l'or, la mineria Bitcoin ofereix una recompensa a canvi de serveis útils i necessaris per al funcionament d'una xarxa de pagament segur. La mineria seguirà sent necessària després de l'emissió de l'últim bitcoin."
+    howminingworks: "Com funciona la mineria de Bitcoin?"
+    howminingworkstxt1: "Qualsevol persona pot convertir-se en miner de Bitcoin executant programari amb maquinari especialitzat. El programari de mineria escolta les transaccions transmeses a través de la xarxa peer-to-peer i acompleix les tasques adequades per processar i confirmar aquestes transaccions. Els miners de Bitcoin fan aquest treball perquè poden guanyar comissions de transaccions pagades pels usuaris per processar més ràpidament les transaccions i crear bitcoins de nous segons una fórmula fixa."
+    howminingworkstxt2: "Per confirmar les noves transaccions, cal incloure-les en un bloc juntament amb una prova matemàtica del treball. Aquestes proves són molt difícils de generar perquè no hi ha cap altra manera de crear-les que provant milers de milions de càlculs per segon. Això requereix que els miners realitzin aquests càlculs abans que els seus blocs siguin acceptats per la xarxa i abans que siguin recompensats. A mesura que més gent comença a minar, la xarxa augmenta automàticament la dificultat de trobar blocs vàlids per garantir que el temps mitjà per trobar un bloc es mantingui igual a 10 minuts. Com a resultat, la mineria és un negoci molt competitiu on cap miner no pot controlar el que s’inclou a la cadena de blocs."
+    howminingworkstxt3: "El concepte de \"prova de treball\" també està dissenyada per dependre del bloc anterior per forçar un ordre cronològic a la cadena de blocs. Això fa que sigui exponencialment difícil invertir les transaccions anteriors, ja que requereix un recàlcul de les proves de treball de tots els blocs posteriors. Quan es troben dos blocs al mateix temps, els miners treballen al primer bloc que reben i canvien a la cadena de blocs més llarga tan aviat com es troba el bloc següent. Això permet a la mineria assegurar i mantenir un consens global basat en el poder de processament."
+    howminingworkstxt4: "Els miners de Bitcoin no poden enganyar augmentant la seva pròpia recompensa ni processar transaccions fraudulentes que puguin corrompre la xarxa Bitcoin perquè tots els nodes Bitcoin rebutjarien qualsevol bloc que contingui dades no vàlides segons les regles del protocol Bitcoin. En conseqüència, la xarxa segueix sent segura encara que no es pugui confiar en tots els miners de Bitcoin. "
+    miningwaste: "La mineria no és malgastar energia?"
+    miningwastetxt1: "Gastar energia per assegurar i fer funcionar un sistema de pagament difícilment és una pèrdua. Com qualsevol altre servei de pagament, l’ús de Bitcoin comporta costos de processament. Els serveis necessaris per al funcionament de sistemes monetaris actualment generalitzats, com ara bancs, targetes de crèdit i vehicles blindats, també consumeixen molta energia. Tot i que a diferència de Bitcoin, el seu consum total d’energia no és transparent i no es pot mesurar tan fàcilment."
+    miningwastetxt2: "La mineria de Bitcoin s'ha dissenyat per optimitzar-se amb el pas del temps amb un maquinari especialitzat que consumeix menys energia, fent que els costos operatius de la mineria segueixin sent proporcionals a la demanda. Quan la mineria de Bitcoin es torna massa competitiva i és menys rendible, alguns miners opten per aturar les seves activitats. A més a més, tota la mineria gastada en energia es transforma amb el temps en calor i els miners més rendibles seran els que aprofitin aquesta calor. Una xarxa minera òptimament eficient és aquella que en realitat no consumeix energia addicional. Tot i que aquest és un ideal, l'economia de la mineria és tal que els miners s'esforcen individualment per aconseguir-ho."
+    miningsecure: "Com ajuda la mineria a assegurar Bitcoin?"
+    miningsecuretxt1: "La mineria crea l’equivalent a una loteria competitiva que fa que sigui molt difícil afegir nous blocs de transaccions a la cadena de blocs de manera consecutiva. Això protegeix la neutralitat de la xarxa evitant que qualsevol individu pugui obtenir el poder de bloquejar determinades transaccions. Això també evita que qualsevol individu substitueixi parts de la cadena de blocs per revertir les seves pròpies despeses, que es podrien utilitzar per estafar altres usuaris. La mineria fa que sigui exponencialment més difícil revertir una transacció passada en requerir la reescriptura de tots els blocs posteriors a aquesta transacció."
+    miningstart: "Què necessito per començar a minar?"
+    miningstarttxt1: "En els primers dies de Bitcoin, qualsevol podia trobar un bloc nou utilitzant la CPU del seu ordinador. A mesura que cada cop més gent va començar a explotar la mineria, la dificultat de trobar nous blocs va augmentar molt fins al punt que l'únic mètode rendible d'explotació actual és utilitzar maquinari especialitzat. Podeu visitar <a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a> per obtenir més informació."
+    security: "Seguretat"
+    secure: "Bitcoin és segur?"
+    securetxt1: "La tecnologia Bitcoin - el protocol i la criptografia - té un fort historial de seguretat i la xarxa Bitcoin és probablement el projecte d’informàtica distribuïda més gran del món. La vulnerabilitat més comuna de Bitcoin és l’error de l’usuari. Els fitxers de la cartera Bitcoin que emmagatzemen les claus privades necessàries es poden esborrar accidentalment, perdre o robar. Això és força similar a l’efectiu físic emmagatzemat en forma digital. Afortunadament, els usuaris poden emprar bones <a href=\"#secure-your-wallet#\">pràctiques de seguretat</a> per protegir els seus diners o utilitzar proveïdors de serveis que ofereixen bons nivells de seguretat i assegurança contra robatoris o pèrdues."
+    hacked: "En el passat, ha estat piratejat Bitcoin?"
+    hackedtxt1: "Les regles del protocol i la criptografia utilitzades per a Bitcoin segueixen funcionant anys després del seu inici, cosa que és una bona indicació que el concepte està ben dissenyat. No obstant això, s’han detectat i solucionat <a href=\"/en/alerts\">falles de seguretat</a> al llarg del temps en diverses implementacions de programari. Com qualsevol altra forma de programari, la seguretat del programari Bitcoin depèn de la velocitat amb què es troben i se solucionen els problemes. Com més problemes es descobreixen, Bitcoin guanya més maduresa."
+    hackedtxt2: "Sovint hi ha idees errònies sobre robatoris i incompliments de seguretat ocorreguts en diverses cases de canvi i empreses. Tot i que aquests esdeveniments són desafortunats, cap d'ells implica que el mateix Bitcoin sigui piratejat, ni implica defectes inherents a Bitcoin; igual que un robatori de bancs no vol dir que el dòlar estigui compromès. Així i tot, és necessari dir que es necessita un conjunt complet de bones pràctiques i solucions de seguretat intuïtives per proporcionar als usuaris una millor protecció dels seus diners i reduir el risc general de robatori i pèrdua. Al llarg dels darrers anys, aquestes funcions de seguretat s'han desenvolupat ràpidament, com ara el xifratge de carteres, carteres fora de línia, carteres de maquinari i transaccions amb signatures múltiples."
+    collude: "Podrien els usuaris conspirar contra Bitcoin?"
+    colludetxt1: "No és possible canviar el protocol Bitcoin tan fàcilment. Qualsevol client de Bitcoin que no compleixi les mateixes regles no pot aplicar les seves pròpies regles a altres usuaris. Segons l’especificació actual, la despesa doble no és possible a la mateixa cadena de blocs, ni tampoc la despesa de bitcoins sense una signatura vàlida. Per tant, no és possible generar quantitats descontrolades de bitcoins del no-res, gastar fons d'altres usuaris, corrompre la xarxa o qualsevol cosa similar."
+    colludetxt2: "No obstant això, els miners de gran abast podrien optar arbitràriament per bloquejar o revertir les transaccions recents. La majoria d’usuaris també poden pressionar perquè s’adoptin alguns canvis. Com que Bitcoin només funciona correctament amb un consens complet entre tots els usuaris, canviar el protocol pot ser molt difícil i requereix una aclaparadora majoria d’usuaris que adoptin els canvis de manera que els usuaris restants no tinguin gaire més remei que seguir. Com a regla general, és difícil imaginar per què qualsevol usuari de Bitcoin optaria per adoptar qualsevol canvi que pogués comprometre els seus propis diners."
+    quantum: "És Bitcoin vulnerable a la computació quàntica?"
+    quantumtxt1: "Sí, la majoria de sistemes que depenen de la criptografia en general ho són, inclosos els sistemes bancaris tradicionals. Tot i això, els ordinadors quàntics encara no existeixen i probablement no existiran durant un temps. En el cas que la <a href=\"https://bitcoinmagazine.com/6021/bitcoin-is-not-quantum-safe-and-how-we-can-fix/\">informàtica quàntica</a> pogués ser una amenaça imminent per a Bitcoin, es podria actualitzar el protocol per utilitzar algoritmes postquàntics. Donada la importància que tindria aquesta actualització, es pot esperar amb seguretat que seria altament revisada pels desenvolupadors i adoptada per tots els usuaris de Bitcoin."
+    help: "Ajuda"
+    morehelp: "M'agradaria aprendre més coses. A on puc trobar ajuda?"
+    morehelptxt1: "Podeu trobar més informació i ajuda a les pàgines de <a href=\"#resources#\">recursos</a> i a la<a href=\"#community#\">comunitat</a> o a la <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a>."
+  getting-started:
+    title: "Inicia't - Bitcoin"
+    pagetitle: "Inicia't amb Bitcoin"
+    pagedesc: "Utilitzar Bitcoin per fer transaccions és fàcil i accessible per tothom. "
+    users: "Com utilitzar Bitcoin"
+    inform: "Informa't"
+    informtxt: "Bitcoin és diferent del que coneixes i utilitzes cada dia. Abans de començar a fer un ús de Bitcoin, hi ha unes quantes coses que necessites saber per fer servir-ho de forma segura i evitar errors comuns."
+    informbut: "Llegeix més"
+    choose: "Tria el teu moneder"
+    choosetxt: "Les carteres bitcoin gratuïtes estan disponibles per a tots els sistemes operatius i dispositius principals per satisfer les vostres diferents necessitats. Per exemple, podeu instal·lar una aplicació al dispositiu mòbil per a un ús diari o podeu tenir només una cartera per a pagaments en línia a l’ordinador. En qualsevol cas, triar una cartera és fàcil i es pot fer en qüestió de minuts."
+    choosebut: "Tria el teu moneder"
+    get: "Obtén Bitcoin"
+    gettxt: "Podeu obtenir Bitcoin acceptant-lo com a pagament de béns i serveis. També hi ha diverses maneres de comprar Bitcoin."
+    getbut: "Comprar Bitcoin"
+    spend: "Gasta Bitcoin"
+    spendtxt: "Hi ha un nombre creixent de serveis i comerciants que accepten Bitcoin a tot el món. Utilitzeu Bitcoin per pagar-los i valoreu la vostra experiència per ajudar-los a obtenir més visibilitat."
+    spendbut: "Troba comerciants"
+    merchants: "Com acceptar Bitcoin"
+    merchantinform: "Informa't"
+    merchantinformtxt: "Bitcoin no requereix que els botiguers canviïn els seus hàbits. Ara bé, Bitcoin és diferent de tot el que coneixes i utilitzes cada dia. Abans de començar a fer ús, hi ha unes quantes coses que necessites saber per tal de fer-ho de forma segura i evitar errors comuns."
+    merchantinformbut: "Llegeix més"
+    merchantservice: "Processant pagaments"
+    merchantservicetxt: "Pots processar pagaments i factures tu mateix o pots utilitzar serveis d'empresa i dipositar els teus diners en la teva moneda local o en bitcoins. La major part de negocis de punt de venda fan servir una tauleta o un telèfon mòbil per permetre als clients comprar amb els seus dispositius mòbils."
+    merchantservicebut: "Trobar serveis comercials."
+    tax: "Impostos i Comptabilitat."
+    taxtxt: "Els botiguers sovint mostren els preus en la seva moneda local. En els altres casos, Bitcoin funciona de forma similar a la moneda estrangera. Per rebre una guia apropiada sobre els impostos i taxes de la teva zona, hauries de contactar amb un gestor qualificat."
+    taxbut: "Llegeix més"
+    visibility: "Guanyant visibilitat"
+    visibilitytxt: "Hi ha un nombre creixent d'usuaris buscant formes de gastar els seus bitcoins. Pots registrar el teu negoci a directoris en línia per ajudar-los a trobar-te fàcilment. També pots mostrar el <a href=\"https://en.bitcoin.it/wiki/Promotional_graphics\">logo Bitcoin</a> al teu lloc web o al teu negoci físic."
+    visibilitybut: "Presentar el seu negoci."
+  how-it-works:
+    title: "Com funciona Bitcoin? - Bitcoin"
+    pagetitle: "Com funciona Bitcoin?"
+    intro: "Aquesta és una pregunta sovint envoltada de confusió, així que aquí teniu una ràpida explicació!"
+    basics: "Allò essencial per a un nou usuari"
+    basicstxt1: "Com a nou usuari, podeu <a href=\"#getting-started#\">començar</a> a utilitzar Bitcoin sense entendre els detalls tècnics. Un cop hàgiu instal·lat una cartera Bitcoin a l'ordinador o al telèfon mòbil, generarà la vostra primera adreça Bitcoin i en podreu crear més sempre que en necessiteu. Podeu divulgar les vostres adreces als vostres amics perquè us puguin pagar o viceversa. De fet, això és bastant similar al funcionament del correu electrònic, excepte que les adreces Bitcoin només s’han d’utilitzar una vegada."
+    balances: "Balanços<span class=\"titlelight\"> - cadena de blocs</span>"
+    balancestxt: "La cadena de blocs és un <b>llibre públic compartit</b> en què es basa tota la xarxa Bitcoin. Totes les transaccions confirmades s’inclouen a la cadena de blocs. Permet que les carteres de Bitcoin calculin el seu saldo gastable de manera que es puguin verificar les noves transaccions, garantint així que realment són propietat de la persona gastadora. La integritat i l'ordre cronològic de la cadena de blocs es compleixen mitjançant l'ús de la <a href=\"#vocabulary##[vocabulary.cryptography]\">criptografia</a>."
+    transactions: "Transaccions<span class=\"titlelight\"> - claus privades</span>"
+    transactionstxt: "Una transacció és una <b>transferència de valor entre carteres Bitcoin</b> que s’inclou a la cadena de blocs. Les carteres de Bitcoin guarden una dada secreta anomenada <a href=\"#vocabulary##[vocabulary.privatekey]\"><i>clau privada</i></a> o llavor, que s’utilitza per signar transaccions, proporcionant una prova matemàtica que provenen del propietari de la cartera. La <a href=\"#vocabulary##[vocabulary.signature]\"><i>signatura</i></a> també impedeix que algú pugui alterar la transacció un cop emesa. Totes les transaccions es transmeten a la xarxa i normalment es comencen a confirmar en un termini de 10 a 20 minuts, mitjançant un procés anomenat <a href=\"#vocabulary##[vocabulary.mining]\"><i>mineria</i></a>."
+    processing: "Processant<span class=\"titlelight\"> - mineria</span>"
+    processingtxt: "La mineria és un <b>sistema de consens distribuït</b> que s’utilitza per <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>confirmar</i></a> les transaccions pendents incloent-les a la cadena de blocs. Aplica un ordre cronològic a la cadena de blocs, protegeix la neutralitat de la xarxa i permet a diferents ordinadors acordar l’estat del sistema. Per confirmar, les transaccions s’han d’empaquetar en un <a href=\"#vocabulary##[vocabulary.block]\"><i>bloc</i></a> que s’ajusti estrictament a les regles criptogràfiques que la xarxa verificarà. Aquestes regles impedeixen la modificació de blocs anteriors perquè fer-ho invalidaria tots els blocs posteriors. La mineria també crea l’equivalent a una loteria competitiva que impedeix a qualsevol individu afegir fàcilment blocs nous de manera consecutiva a la cadena de blocs. D'aquesta manera, cap grup o individu pot controlar el que s'inclou a la cadena de blocs o substituir parts de la cadena de blocs per fer retrocedir les seves pròpies despeses."
+    readmore: "En vols saber més?"
+    readmoretxt: "Aquest és només un petit resum de Bitcoin. Si voleu obtenir més informació sobre els detalls, podeu <a href=\"#bitcoin-paper#\">llegir el document original</a> que en descriu el disseny, la <a href=\"https://developer.bitcoin.org/\">documentació del desenvolupador</a> o explorar la <a href=\"https://en.bitcoin.it/wiki/Main_Page\">wiki de Bitcoin</a>."
+  index:
+    title: "Bitcoin - Moneda P2P de codi obert"
+    metadescription: "Bitcoin és una innovadora xarxa de pagament i un nou tipus de moneda. Troba tot el que necessites saber i inicia't amb Bitcoin a bitcoin.org."
+    listintro: "Bitcoin és una innovadora xarxa de pagaments i un nou tipus de moneda. "
+    list1: "Transaccions ràpides entre iguals"
+    list2: "Pagaments globals"
+    list3: "Comissions de processament baixes"
+    desc: "Bitcoin utilitza tecnologia d'igual a igual o \"peer-to-peer\" per operar sense autoritat central o bancs; la gestió de les transaccions i l'emissió de bitcoins es porta de forma col·lectiva per la xarxa. <b>Bitcoin és de codi obert; el seu disseny és públic, ningú en té el control i <a href=\"#support-bitcoin#\">tothom en pot formar part</a></b>. Amb les seves propietats úniques, Bitcoin permet usos interessants i no contemplats per cap sistema de pagament anterior."
+    overview: "Obtén una visió general ràpida de"
+  innovation:
+    title: "Innovació - Bitcoin"
+    pagetitle: "Innovació en sistemes de pagament"
+    summary: "Bitcoin no és només enviar diners. Té moltes funcions i obre moltes possibilitats que la comunitat encara està explorant. Aquí hi ha algunes de les tecnologies que s’estan investigant actualment i, en alguns casos, es converteixen en productes i serveis reals. Probablement encara queden per descobrir els usos més interessants de Bitcoin."
+    control: "Control en contra el frau"
+    controltext: "Un nivell de seguretat sense precedents és possible amb Bitcoin. La xarxa proporciona als usuaris protecció contra els tipus de frau més freqüents, com ara uns retro-càrrega o càrrecs no desitjats, i els bitcoins són impossibles de falsificar. Els usuaris poden fer còpies de seguretat o xifrar les seves carteres. Les carteres de maquinari fan que sigui molt difícil robar o perdre diners. Bitcoin està dissenyat per permetre als seus usuaris tenir un control complet sobre els seus diners."
+    global: "Accés global"
+    globaltext: "Amb Bitcoin, tots els pagaments del món poden ser totalment interoperables. Bitcoin permet a qualsevol banc, empresa o individu enviar i rebre pagaments de manera segura a qualsevol lloc i moment, amb o sense compte bancari. Bitcoin està disponible en un gran nombre de països que encara romanen fora de l'abast de la majoria de sistemes de pagament a causa de les seves pròpies limitacions. Bitcoin augmenta l'accés mundial al comerç i pot ajudar a florir els comerços internacionals."
+    cost: "Rendibilitat"
+    costtext: "Amb l’ús de la criptografia, es poden fer pagaments segurs sense intermediaris lents i costosos. Una transacció de Bitcoin pot ser molt més barata que les seves alternatives i completar-se en poc temps. Això significa que Bitcoin té cert potencial per convertir-se en una forma comuna de transferir qualsevol moneda en el futur. Bitcoin també podria jugar un paper en la <a href=\"https://www.youtube.com/watch?v=BrRXP1tp6Kw\">reducció de la pobresa</a> en molts països mitjançant la reducció de les taxes de transacció elevades del salari dels treballadors."
+    donation: "Propines i donacions"
+    donationtext: "Bitcoin ha estat una solució especialment eficient per donar propines i donacions. Enviar un pagament només requereix un clic i rebre donacions pot ser tan senzill com mostrar un codi QR. Les donacions poden ser visibles per al públic, cosa que proporciona una major transparència per a les organitzacions sense ànim de lucre. En casos d’emergències com desastres naturals, les donacions de Bitcoin podrien contribuir a una resposta internacional més ràpida."
+    crowdfunding: "Micromecenatge"
+    crowdfundingtext: "Bitcoin es pot utilitzar per executar campanyes de finançament col·lectiu semblant a Kickstarter, en què els individus prometen diners a un projecte que se'ls treu només si es reben prou promeses per assolir l'objectiu. Aquests contractes de garantia es processen mitjançant el protocol Bitcoin, que impedeix que es faci una transacció fins que no es compleixin totes les condicions. <a href=\"https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts\">Obteniu més informació</a> sobre la tecnologia del finançament col·lectiu."
+    micro: "Micropagaments"
+    microtext: >
+        Imagineu escoltar la ràdio d’Internet pagant per segon, veure pàgines web
+        per una petita propina per a cada anunci que no es mostra o comprar amplada
+        de banda des d’un punt d’accés WiFi al quilobyte. Bitcoin és prou eficient
+        per fer possible totes aquestes idees. <a href="https://bitcoinj.github.io/working-with-micropayments">Obteniu
+        més informació</a> sobre la tecnologia que hi ha darrere dels micropagaments
+        de Bitcoin o sobre <a href="http://lightning.network/">futures actualitzacions</a>
+        que s’estan dissenyant i implementant per fer els micropagaments més accessibles.
+    mediation: "Mediació de disputes"
+    mediationtext: "Bitcoin es pot utilitzar per desenvolupar serveis innovadors de mediació de conflictes mitjançant múltiples signatures. Aquests serveis podrien fer possible que un tercer aprovés o rebutgés una transacció en cas de desacord entre les altres parts sense tenir el control dels seus diners. Atès que aquests serveis serien compatibles amb qualsevol usuari i comerciant que utilitzi Bitcoin, probablement això conduiria a la lliure competència i a uns estàndards de qualitat més alts."
+    multisig: "Comptes de signatures múltiples."
+    multisigtext: "Les signatures múltiples permeten que la xarxa accepti una transacció només si un nombre determinat d’un grup definit de persones accepta signar la transacció. Això podria ser utilitzat per un consell d'administració per evitar que qualsevol membre gasti parts de la seva tresoreria sense el consentiment d'altres membres. Això també  pot ser utilitzat per bancs per evitar robatoris bloquejant pagaments per sobre d’un llindar si l’usuari no proporciona credencials addicionals."
+    trust: "Integritat i confiança"
+    trusttext: "Bitcoin ofereix solucions a molts dels problemes de confiança que afecten els bancs. Amb transparència comptable selectiva, contractes digitals i transaccions irreversibles, Bitcoin es pot utilitzar com a base per restaurar la confiança i l’acord. Els bancs corruptes no poden enganyar el sistema per obtenir beneficis a costa d’altres bancs o del públic. Un futur en què els principals bancs donarien suport a Bitcoin podria ajudar a restablir la integritat i la confiança en les institucions financeres."
+    resiliency: "Resiliència i descentralització"
+    resiliencytext: "A través de la descentralització, Bitcoin va crear un tipus diferent de xarxa de pagament amb un nivell més gran de resistència i redundància. Bitcoin pot gestionar milions de dòlars en transaccions sense necessitat de protecció militar. Sense cap punt central de fallada, com ara un centre de dades, és difícil atacar la xarxa. Bitcoin podria representar un pas endavant interessant per assegurar els sistemes financers locals i globals."
+    transparency: "Transparència flexible"
+    transparencytext: "Totes les transaccions de Bitcoin són públiques i transparents i la identitat de les persones darrere de les transaccions és privada per defecte. Això permet que les persones i les organitzacions treballin amb regles de transparència flexibles. Per exemple, una empresa pot optar per revelar determinades transaccions i saldos només a determinats empleats, de la mateixa manera que una organització sense ànim de lucre és lliure de permetre que el públic vegi quan rep en donacions diàries i mensuals."
+    automation: "Solucions automatitzades"
+    automationtext: "Els serveis automatitzats solen fer front als costos i limitacions dels pagaments en efectiu o amb targeta de crèdit. Això inclou tota mena de màquines expenedores, des de bitllets de tren fins a màquines de refrescs. Bitcoin és adequat per ser utilitzat en una nova generació de serveis automatitzats per reduir els seus costos operatius. Imagineu-vos taxis autònoms o una botiga on pagar les vostres compres sense fer cua. Moltes idees són possibles."
+  legal:
+    title: "Avís legal - Bitcoin"
+    pagetitle: "Avís legal"
+    information: "Informació publicada a bitcoin.org"
+    informationtxt1: "El lloc web https://bitcoin.org/ (d'ara endavant, el \"Lloc web\") ofereix informació i material de caràcter general. No esteu autoritzat i no hauríeu de confiar en el lloc web per a assessorament legal, assessorament comercial o assessorament de cap mena. Esteu sota el vostre propi risc pel que fa als continguts del lloc web. Si preneu la decisió d'actuar o no, us heu de posar en contacte amb un advocat amb llicència de la jurisdicció corresponent en la qual voleu o necessiteu ajuda. De cap manera els propietaris ni els col·laboradors del lloc web són responsables de les accions, decisions o altres comportaments que vostè hagi pres o no siguin basats en el lloc web."
+    translations: "Traduccions"
+    translationstxt1: "El lloc web pot contenir traduccions de la versió en anglès del contingut disponible al lloc web. Aquestes traduccions només es proporcionen per comoditat. En cas de conflicte entre la versió en anglès i la versió traduïda, la versió en anglès tindrà prioritat. Si observeu alguna incoherència, informeu d'ella a <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org\">GitHub</a>."
+    userisks: "Riscos relacionats amb l'ús de Bitcoin"
+    useriskstxt1: "El portal web no es fa responsable de cap pèrdua, dany o reclamació sorgida d'algun dels esdeveniments contemplats en aquestes cinc categories:"
+    useriskstxt2: "Els errors comesos per l'usuari de qualsevol programari o servei relacionat amb Bitcoin, com ara l'oblit de contrasenyes, els pagaments enviats a adreces Bitcoin errònies, i l'eliminació accidental de carteres."
+    useriskstxt3: "Problemes de programari de la web o de qualsevol programari relacionat amb Bitcoin o servei, com ara arxius de cartera corromputs, transaccions construïdes de forma incorrecta, biblioteques criptogràfiques insegures, programari maliciós que afectin el portal web o qualsevol programari o servei relacionat amb Bitcoin."
+    useriskstxt4: "Avaries tècniques en el maquinari de l'usuari de qualsevol programari relacionat amb Bitcoin o servei, com ara la pèrdua de dades a causa d'un dispositiu d'emmagatzematge defectuós o danyat."
+    useriskstxt5: "Problemes de seguretat experimentats per l'usuari de qualsevol programari o servei relacionat amb Bitcoin, com ara l'accés no autoritzat a les carpetes i/o comptes dels usuaris."
+    useriskstxt6: "Accions o omissions de tercers o esdeveniments experimentats per tercers, com per exemple la fallida dels serveis de seguretat dels proveïdors, els atacs als serveis d'informació dels proveïdors, i els fraus realitzats per tercers."
+    investmentrisks: "Riscos d'inversió"
+    investmentriskstxt1: "La inversió en Bitcoin pot provocar pèrdues de diners en períodes curts o fins i tot llargs. Els inversors de Bitcoin haurien d'esperar que els preus tinguin fluctuacions de gran abast. La informació publicada al lloc web no pot garantir que els inversors en Bitcoin no perdin diners."
+    taxcompliance: "Compliment de les obligacions tributàries."
+    taxcompliancetxt1: "Els usuaris del lloc web són els únics responsables de determinar quins impostos, si n'hi ha, s'apliquen a les seves transaccions de Bitcoin. Els propietaris o els col·laboradors del lloc web NO són responsables de determinar els impostos que s'apliquen a les transaccions de Bitcoin."
+    noissuer: "El portal web no emmagatzema, ni envia ni rep bitcoins."
+    noissuertxt1: "El lloc web no emmagatzema, envia ni rep bitcoins. Això es deu al fet que els bitcoins només existeixen en virtut del registre de propietat que es manté a la xarxa Bitcoin. Qualsevol transferència de títol en bitcoins es produeix dins d'una xarxa Bitcoin descentralitzada, i no al lloc web."
+    nowarranties: "Sense garanties."
+    nowarrantiestxt1: "El lloc web es proporciona \"tal com està\" sense cap garantia de cap mena pel que fa al lloc web o a qualsevol contingut, dades, materials o serveis proporcionats al lloc web."
+    noliability: "Limitació de responsabilitat."
+    noliabilitytxt1: "Llevat que la llei exigeixi el contrari, en cap cas els propietaris o els col·laboradors del lloc web seran responsables de cap dany de cap mena, inclòs, entre d'altres, la pèrdua d'ús, la pèrdua de beneficis o la pèrdua de dades derivades de qualsevol manera relacionada amb l'ús del lloc web."
+    arbitration: "Arbitratge"
+    arbitrationtxt1: "L'usuari del lloc web es compromet a arbitrar qualsevol controvèrsia derivada del lloc web o en relació amb aquest o aquesta exempció de responsabilitat, excepte per a disputes relacionades amb drets d'autor, logotips, marques comercials, noms comercials, secrets comercials o patents."
+    lastchange: "Darrera modificació"
+    lastchangetxt1: "Aquesta exempció de responsabilitat es va modificar per última vegada el"
+  press:
+    title: "Premsa - Bitcoin"
+    pagetitle: "Centre de premsa"
+    summary: "Troba els entrevistats, les respostes i els materials de premsa d'alta qualitat."
+    volunteer: "Entrevistats"
+    volunteernonprofit: "Comunica't amb <a href=\"https://www.bitgivefoundation.org\">BitGive</a>, el <a href=\"https://bitcoincore.org/en/contact\">Bitcoin Core Project</a> o <a href=\"#community##[community.non-profit]\">organitzacions locals sense ànim de lucre</a>."
+    faqmore: "Per obtenir més informació sobre Bitcoin, visiteu les <a href=\"/en/faq\">preguntes freqüents</a> completes o el <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki de Bitcoin</a>."
+  privacy:
+    title: "Privacitat - Bitcoin"
+    pagetitle: "Privacitat"
+    privacytxt1: "Aquesta pàgina us informa de les nostres polítiques sobre la recollida, l'ús i la divulgació de la informació personal que rebem dels usuaris del nostre lloc (https://bitcoin.org). Utilitzem la vostra informació personal per entendre millor el vostre ús del lloc i per recopilar estadístiques de trànsit."
+    privacytxt2: "En utilitzar el lloc, accepteu la recollida i l'ús d'informació d'acord amb aquesta política."
+    privacylogdata: "Dades de registre"
+    privacytxt3: "Com molts operadors de llocs, recollim informació que el vostre navegador envia cada vegada que visiteu el nostre lloc (\"Dades de registre\"). Aquestes dades de registre poden incloure informació com l'adreça del protocol d'Internet (\"IP\") del vostre ordinador (amb l'últim byte substituït), el tipus de navegador, la versió del navegador, les pàgines del nostre lloc que visiteu, l'hora i la data de la vostra visita, el temps gastat en aquestes pàgines i altres estadístiques."
+    privacycookies: "Galetes"
+    privacytxt4: "Les galetes són fitxers amb una petita quantitat de dades, que poden incloure un identificador únic anònim. Les galetes s'envien al vostre navegador des d'un lloc web i s'emmagatzemen al disc dur del vostre ordinador. Podeu indicar al vostre navegador que rebutgi totes les galetes o que indiqui quan remet una galeta. Tanmateix, si no accepteu les galetes, és possible que no pugueu utilitzar algunes parts del nostre lloc."
+    privacytxt5: "Utilitzem cookies pels propòsits següents:"
+    privacytxt6: "Per fer un seguiment de si heu premut el botó \"D'acord\" a l'avís legal de les galetes, de manera que no us molestem amb la notificació si ho heu fet."
+    privacytxt7: "El nostre programari d'Analytics (Google Analytics) utilitza galetes per mesurar i comprendre millor les interaccions dels usuaris al nostre lloc. Podeu obtenir més informació sobre com Google Analytics fa ús de les galetes <a href=\"https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage\">aquí</a>."
+    privacyanalytics: "Anàlisis de Google"
+    privacytxt8: "Utilitzem un connector de JavaScript de tercers proporcionat per Google anomenat \"Google Analytics\" per proporcionar-nos estadístiques de trànsit útils i per entendre millor com feu servir el nostre lloc. No tenim accés directe a la informació obtinguda de Google Analytics, però Google ens proporciona un resum a través del seu tauler."
+    privacytxt9: "Podem compartir la informació obtinguda de Google Analytics amb socis comercials que estiguin interessats a anunciar-se al nostre lloc web. La informació compartida amb aquests socis comercials no contindrà cap informació d'identificació personal (Google no ens proporciona accés directe a les dades i, per tant, no podem veure aquesta informació)."
+    privacytxt10: "Podeu desactivar que Google Analytics recopili la vostra informació si descarregueu el complement del navegador de desactivació de Google Analytics proporcionat per Google. Això evitarà que la vostra informació sigui utilitzada per Google Analytics. Fer això no afectarà de cap manera la vostra capacitat per fer servir el nostre lloc. Podeu descarregar el complement de desactivació del navegador <a href=\"https://tools.google.com/dlpage/gaoptout\">aquí</a>. També honorem la capçalera No rastrejar i no farem un seguiment dels visitants que tinguin activat No rastrejar."
+    privacychanges: "Canvis a aquesta Política de privadesa"
+    privacytxt11: "És possible que actualitzem aquesta política de privadesa de tant en tant. Us notificarem qualsevol canvi mitjançant la publicació de la nova política de privadesa al Lloc. Us recomanem que reviseu aquesta política de privadesa periòdicament per a qualsevol canvi."
+    privacytxt12: "Aquesta Política de privadesa es va actualitzar per última vegada"
+    privacycontactus: "Contacta amb nosaltres"
+    privacytxt13: "Si teniu cap pregunta sobre la nostra política de privadesa o sobre com es recullen i processen les vostres dades, envieu un correu electrònic a <a href=\"mailto:privacy@bitcoin.org?Subject=Privacy\">privacy@bitcoin.org</a>."
+  cookie-notification:
+    cookiemessage: "<p class=\"cc_message\">Utilitzem galetes per garantir que obtingueu la millor experiència al nostre lloc web<br>. <br>Si us plau, llegiu la nostra <a href=\"/en/privacy\">política de privadesa</a> per obtenir més informació</p>."
+    cookieaccept: "D'acord"
+  protect-your-privacy:
+    title: "Protegeix la teva privacitat - Bitcoin"
+    pagetitle: "Protegeix la teva privacitat"
+    pagedesc: "Bitcoin sovint es percep com una xarxa de pagament anònima. Però, en realitat, Bitcoin és probablement la xarxa de pagament més transparent del món. Al mateix temps, Bitcoin pot proporcionar nivells acceptables de privadesa quan s'utilitza correctament. <b>Recordeu sempre que és responsabilitat vostra adoptar bones pràctiques per tal de protegir la vostra privadesa</b>."
+    traceable: "Entenent la traçabilitat de Bitcoin"
+    traceabletxt: "Bitcoin funciona amb un nivell de transparència sense precedents que la majoria de la gent no està acostumada a tractar. Totes les transaccions de Bitcoin són públiques, traçables i emmagatzemades permanentment a la xarxa Bitcoin. Les adreces de Bitcoin són l'única informació que s'utilitza per definir on s'assignen els bitcoins i on s'envien. Aquestes adreces les creen de manera privada les carteres de cada usuari. No obstant això, un cop es fan servir les adreces, es veuen contaminades per l'historial de totes les transaccions en què participen. Qualsevol pot veure el saldo i totes les transaccions de qualsevol adreça. Com que els usuaris solen revelar la seva identitat per rebre serveis o béns, les adreces de Bitcoin no poden romandre completament anònimes. Com que la cadena de blocs és permanent, és important tenir en compte que alguna cosa que no es pugui rastrejar actualment pot ser trivial de rastrejar en el futur. Per aquests motius, les adreces de Bitcoin només s'han de fer servir una vegada i els usuaris han de tenir cura de no revelar les seves adreces."
+    receive: "Utilitza adreces noves per rebre pagaments"
+    receivetxt: "Per protegir la vostra privadesa, heu d'utilitzar una nova adreça de Bitcoin cada vegada que rebeu un nou pagament. A més, podeu utilitzar diverses carteres per a diferents finalitats. En fer-ho, us permet aïllar cadascuna de les vostres transaccions de manera que no sigui possible associar-les totes. Les persones que us envien diners no poden veure quines altres adreces de Bitcoin teniu i què feu amb elles. Aquest és probablement el consell més important que hauríeu de tenir en compte."
+    public: "Vigila amb els espais publics"
+    publictxt: "Llevat que la vostra intenció sigui rebre donacions o pagaments públics amb total transparència, publicar una adreça de Bitcoin a qualsevol espai públic com ara un lloc web o una xarxa social no és una bona idea quan es tracta de privadesa. Si decidiu fer-ho, recordeu sempre que si moveu fons amb aquesta adreça a una de les vostres altres adreces, es veuran contaminats públicament per l'historial de la vostra adreça pública. A més, és possible que també vulgueu tenir cura de no publicar informació sobre les vostres transaccions i compres que puguin permetre a algú identificar les vostres adreces de Bitcoin."
+    iplog: "La teva adreça ip pot ser guardada"
+    iplogtxt: "Com que la xarxa Bitcoin és una xarxa peer-to-peer, és possible escoltar les retransmissions de les transaccions i registrar les seves adreces IP. Els clients de nodes complets transmeten totes les transaccions dels usuaris igual que les seves. Això vol dir que trobar l'origen de qualsevol transacció en particular pot ser difícil i qualsevol node de Bitcoin es pot confondre com l'origen d'una transacció quan no ho són. És possible que vulgueu considerar amagar l'adreça IP del vostre ordinador amb una eina com <a href=\"https://www.torproject.org/\">Tor</a> perquè no es pugui registrar."
+    mixing: "Limitacions dels serveis de mesclat"
+    mixingtxt: "Alguns serveis en línia anomenats serveis de mescla ofereixen combinar la traçabilitat entre usuaris rebent i enviant la mateixa quantitat mitjançant adreces Bitcoin independents. És important tenir en compte que la legalitat de l'ús d'aquests serveis pot variar i estar subjecte a normes diferents en cada jurisdicció. Aquests serveis també requereixen que confieu en les persones que els gestionen per no perdre o robar els vostres fons i no mantenir un registre de les vostres sol·licituds. Tot i que la barreja de serveis pot trencar la traçabilitat per a petites quantitats, es torna més difícil fer el mateix per a transaccions més grans."
+    future: "Millores futures"
+    futuretxt: "Es poden esperar moltes millores en el futur per millorar la privadesa. Per exemple, s'estan realitzant alguns esforços amb l'API de missatges de pagament per evitar contaminar diverses adreces juntes durant un pagament. Canvi d'adreces de Bitcoin Core es podrien implementar en altres carteres amb el pas del temps. Les interfícies gràfiques d'usuari es podrien millorar per oferir funcions de sol·licitud de pagament fàcils d'utilitzar i evitar la reutilització d'adreces. També s'estan fent diversos treballs i investigacions per desenvolupar altres funcions de privadesa ampliades potencials, com ara poder unir transaccions aleatòries d'usuaris."
+  resources:
+    title: "Recursos - Bitcoin"
+    pagetitle: "Recursos de Bitcoin"
+    pagedesc: "Llocs web i recursos útils sobre Bitcoin."
+    linkwiki: "<a href=\"https://en.bitcoin.it/\">Wiki Bitcoin</a>"
+    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
+    directories: "Directoris"
+    linkwallets: "Moneders"
+    linkmerchants: "Comerciants"
+    linkexchanges: "Cases de canvi"
+    linkprojects: "Projectes"
+    linkmerchantstools: "Eines per a comerciants"
+    linknonprofits: "Sense ànim de lucre"
+    charts: "Gràfics i estadístiques"
+    news: "Notícies"
+    documentaries: "Documentals"
+    learn: "Recursos d'aprenentatge"
+    vouchers: "Vals"
+  scams:
+    title: "Evita estafes - Bitcoin"
+    pagetitle: "Evita les estafes"
+    summary: "Familiaritzeu-vos amb algunes de les estafes de bitcoins més habituals per ajudar-vos a protegir a vosaltres i a les vostres finances."
+    table: "Tipus d'estafes"
+    blackmail: "Xantatge"
+    blackmailtxt: "Aneu amb compte amb els intents de xantatge en què desconeguts us amenacen a canvi de bitcoins com a mitjà d'extorsió. Una execució habitual d'aquest mètode és per correu electrònic, on el remitent transmet un missatge dient que ha piratejat el vostre ordinador i que l'està operant mitjançant el protocol d'escriptori remot (RDP). El remitent diu que s'ha instal·lat un registrador de claus i que la vostra càmera web s'ha utilitzat per gravar-vos fent alguna cosa que potser no voleu que coneguin els altres. El remitent ofereix dues opcions: enviar bitcoins per suprimir el material, o no enviar res i veure el contingut enviat als vostres contactes de correu electrònic i difondre's per les vostres xarxes socials. Els estafadors fan servir llistes de correu electrònic robades i altra informació d'usuari filtrada per executar aquest esquema a milers de persones en massa."
+    fake-exchanges: "Cases de canvi falses"
+    fake-exchangestxt: "A mesura que bitcoin s'ha fet més popular, més gent ha intentat adquirir-lo. Malauradament, les persones nefastes s'han aprofitat d'això i se sap que han creat intercanvis de bitcoins falsos. Aquests intercanvis falsos poden enganyar els usuaris oferint preus de mercat extremadament competitius que els fan pensar que estan agafant una oportunitat, amb un accés ràpid i fàcil a alguns bitcoins barats. Assegureu-vos d'utilitzar un <a href=\"/en/exchanges\">intercanvi de bona reputació</a> quan compreu o veneu bitcoins."
+    free-giveaways: "Regals gratuïts"
+    free-giveawaystxt: "A causa de la naturalesa viral de com es difon la informació a Internet, els estafadors intenten aprofitar-se de la gent oferint obsequis gratuïts de bitcoin o altres monedes digitals a canvi d’enviar una petita quantitat per registrar-se o proporcionant informació personal. Quan ho veieu en un lloc web o en una xarxa social, és millor informar immediatament del contingut com a fraudulent, de manera que altres no caiguin víctimes."
+    impersonation: "Suplantació d'identitat"
+    impersonationtxt: "Malauradament, és molt fàcil per als estafadors crear comptes de xarxes socials i suplantar la identitat de persones. Sovint s'estan a l'aguait fins que la persona a la qual intenten suplantar publica contingut. Aleshores, el suplantador li respon amb un missatge de seguiment o una crida a l'acció, com un obsequi gratuït, amb un compte que sembla gairebé idèntic al \"post\" o autor original. Això fa que sembli que la persona original ho està dient. Alternativament, els imitadors també poden intentar utilitzar aquests mateixos comptes falsos per enganyar altres persones mitjançant missatges privats o directes perquè prenguin algun tipus d'acció per intentar estafar o comprometre's. No participeu mai en obsequis gratuïts i, si rebeu una sol·licitud estranya a través d'algú de la vostra xarxa, el millor és comprovar-ne l'autenticitat mitjançant diversos mitjans de comunicació."
+    malware: "Programari maliciós"
+    malwaretxt: "Els pirates informàtics s'han tornat molt creatius per trobar maneres de robar a la gent. Quan envieu bitcoins, assegureu-vos sempre de comprovar dues o tres vegades l'adreça a la qual esteu enviant. Alguns programes de programari maliciós, un cop instal·lats, canviaran les adreces de bitcoins quan s'enganxin des del porta-retalls d'un usuari, de manera que tot el bitcoin sense saber-ho es tramet a l'adreça del pirata informàtic. Com que hi ha poques possibilitats de revertir una transacció de bitcoins un cop confirmada per la xarxa, notar-ho després dels fets significa que és massa tard i probablement no es pot recuperar. És una bona idea ser molt prudent sobre quins programes permeteu tenir accés d'administrador als vostres dispositius. Un escàner de virus actualitzat i de bona reputació també pot ajudar, però no és infal·lible."
+    meet-in-person: "Coneix-te en persona"
+    meet-in-persontxt: "En comprar o vendre Bitcoin localment, una contrapart pot demanar-vos que us reuniu personalment per dur a terme l'intercanvi. Si no és algú de confiança que ja coneixeu, aquesta és una proposta molt arriscada en què podríeu acabar sent robats o ferits. També s'ha sabut que els artistes canvien la moneda falsa a canvi de Bitcoin. Penseu en la possibilitat d'utilitzar una plataforma peer-to-peer per dipositar fons fideïcomís en lloc de reunir-vos en persona."
+    money-transfer-fraud: "Frau de transferència de diners"
+    money-transfer-fraudtxt: "No respongueu als correus electrònics ni a les comunicacions entrants de desconeguts que us diuen que necessiten ajuda per moure diners, i després, a canvi dels vostres serveis, obtindreu una part dels fons."
+    phishing-emails: "Phishing Emails"
+    phishing-emailstxt: "Aneu amb compte amb els correus electrònics que se suposa que provenen de serveis que utilitzeu per demanar-vos acció, com ara restablir la vostra contrasenya o fer clic per proporcionar algun tipus d'interacció amb el vostre compte. Pot ser molt difícil detectar la diferència entre un correu electrònic fals que intenta incitar-vos a comprometre el vostre compte i un de legítim enviat en nom d'un producte o servei que feu ús. En cas de dubte, considera la triple comprovació de l'autenticitat de la comunicació reenviant-la a l'empresa, fent servir l'adreça de correu electrònic de contacte del seu lloc web, trucant-los per telèfon o posant-se en contacte amb ells a través dels seus comptes oficials de xarxes socials."
+    phishing-websites: "Llocs web de Phishing"
+    phishing-websitestxt: "Els llocs web de phishing sovint van de la mà amb els correus electrònics de phishing. Els correus electrònics de phishing poden enllaçar a un lloc web de rèplica dissenyat per robar les credencials d'inici de sessió o demanar-ne que instal·li programari maliciós. No instal·leu programari ni inicieu sessió en un lloc web tret que estigueu 100% segurs que no és un lloc fals. Els llocs web de phishing també poden aparèixer com a resultats patrocinats als motors de cerca o als mercats d'aplicacions utilitzats per dispositius mòbils. Aneu amb compte que no baixeu una aplicació falsa ni feu clic a un enllaç patrocinat a un lloc web fals."
+    ponzi-schemes: "Esquemes Ponzi"
+    ponzi-schemestxt: "No participeu en ofertes en què una o més persones us ofereixen un retorn garantit a canvi d'un dipòsit per avançat. Això es coneix com un esquema ponzi, on els principals dipositants futurs s'utilitzen per pagar als inversors anteriors. El resultat final sol ser que molta gent perd molts diners."
+    pyramid-schemes: "Esquemes piramidals"
+    pyramid-schemestxt: "Un esquema piramidal promet retorns als participants en funció del nombre de persones que conviden a unir-se. Això permet que l'esquema creixi de manera viral i ràpida, però la majoria de les vegades no produeix cap mena de retorn significatiu per als membres o els convidats que també s'han unit. No convideu mai la vostra xarxa personal amb l'únic objectiu d'acumular recompenses o rendiments d'un producte o servei, i no aporteu el vostre propi capital a instàncies d'altres per accelerar el procés."
+    prize-giveaways: "Lliuraments de premis"
+    prize-giveawaystxt: "De la mateixa manera que els obsequis gratuïts, les estafes d'obsequis de premis enganyen les persones perquè actuïn o proporcionin informació sobre elles mateixes. Per exemple, proporcionar un nom, adreça, correu electrònic i número de telèfon per reclamar un premi. Això pot permetre que un pirata informàtic intenti utilitzar la informació per accedir als comptes fent-se passar per tu."
+    pump-and-dumps: "Pump i Dumps"
+    pump-and-dumpstxt: "No confieu en les persones que us atrauen a vosaltres o altres a invertir perquè diuen que saben quin serà el preu del bitcoin. En un esquema de \"pump i dump\", una persona (o persones) intenten augmentar o augmentar artificialment el preu perquè puguin treure les seves inversions per obtenir beneficis."
+    ransomware: "Ransomware"
+    ransomwaretxt: "Aquest és un tipus de programari maliciós que bloqueja parcialment o completament l'accés a un dispositiu tret que pagueu un rescat en bitcoin. El millor és consultar l'assessorament d'un professional informàtic de confiança per obtenir ajuda per a l'eliminació, en lloc de pagar el rescat. Aneu amb compte amb quins programes instal·leu als vostres dispositius, especialment aquells que sol·liciten accés d'administrador. Assegureu-vos també de comprovar que l'aplicació que esteu baixant no és una aplicació falsa que suplanta la identitat d'una legítima que heu utilitzat en el passat."
+    scam-coins: "Monedes d'estafa"
+    scam-coinstxt: "Aneu amb compte quan invertiu en monedes alternatives (altcoins). Entre les altcoins hi pot haver monedes d'estafa, que atrauen els usuaris a invertir mitjançant vendes privades o amb descomptes de prevenda. Les monedes d'estafa poden incloure un lloc web cridaner o presumir d'una gran comunitat per crear la por de perdre l'oportunitat en les persones que la descobreixen. Això ajuda els primers titulars a augmentar el preu perquè puguin abocar i sortir de les seves posicions per obtenir beneficis. Les monedes estafades sense grans comunitats poden fer \"airdrops\", oferint monedes (o tokens) gratuïtes a les persones a canvi d'unir-se a les seves comunitats. Això permet que les monedes d'estafa presentin les seves iniciatives amb mètriques d'inflades per fer que els inversors se sentin que estan perdent una bona oportunitat si no compren. Les monedes d'estafa també poden utilitzar la paraula Bitcoin en un esforç per enganyar a la gent perquè pensi que hi ha una relació legítima."
+  secure-your-wallet:
+    title: "Assegurant el teu moneder - Bitcoin"
+    pagetitle: "Assegurant el teu moneder"
+    summary: "Com a la vida real, el teu moneder ha d'estar protegit. Bitcoin et permet transferir diners a qualsevol lloc de forma fàcil i també tenir-ne el control. Aquestes grans característiques també comporten grans problemes de seguretat. Bitcoin et proveeix amb nivells molt alts de seguretat si és usat correctament. <b>Recorda sempre que adoptar bones pràctiques per tal de protegir els teus diners és la teva responsabilitat</b>."
+    everyday: "Petites quantitats pels usos del dia a dia"
+    everydaytxt: "El teu moneder Bitcoin és com un moneder amb diners. Si normalment no portaries milers d'euros a la butxaca, hauries de fer el mateix amb el teu moneder Bitcoin. Tenir petites quantitats de bitcoins a l'ordinador, al dispositiu mòbil o al un servidor per l'ús diari i mantenir la resta en un entorn més segur, en general és una bon pràctica."
+    online: "Ves amb compte amb els serveis en línia"
+    onlinetxt: "Hauries d'anar amb compte davant dels serveis dissenyats per emmagatzemar els teus diners en línia. Bastantes cases de canvi i moneders en línia han patit problemes de seguretat en el passat. Generalment aquests serveis encara no proporcionen seguretat suficient com per ser utilitzats com a banc. Alternativament pots utilitzar un altre tipus de <a href=\"#choose-your-wallet#\">moneder Bitcoin</a>. En qualsevol cas tria aquests tipus de serveis amb molta cura i addicionalment et recomanem que utilitzis un sistema d'autentificació de dos passos."
+    backup: "Feu una còpia de seguretat del vostre moneder"
+    backuptxt: "Una copia de seguretat del teu moneder guardada a lloc segur, et pot protegir contra fallades informàtiques i la majoria d'errors humans. També et pot permetre recuperar el teu moneder després d'un robatori de dispositiu mòbil o ordinador si mantens el teu moneder encriptat."
+    backupwhole: "Feu una còpia de seguretat completa del vostre bitlleter"
+    backupwholetxt: "Alguns moneders internament utilitzen claus privades. Si només tens còpia de les claus privades de les adreces Bitcoin visibles, no podràs recuperar part dels teus diners amb la còpia."
+    backuponline: "Xifra les còpies de seguretat en línia"
+    backuponlinetxt: "Qualsevol còpia de seguretat que s'emmagatzema en línia és altament vulnerable a ser robada. Fins i tot un ordinador que està connectat a Internet és vulnerable a ser infectat amb programari maliciós. Per tant, el xifratge de qualsevol còpia de seguretat que s'exposa a la xarxa és una bona pràctica de seguretat."
+    backupmany: "Utilitzeu molts llocs segurs"
+    backupmanytxt: "Les fallades tècniques puntuals són dolentes per a la seva seguretat. Si la teva còpia de seguretat depèn només d'un sol lloc, és més probable que qualsevol error impedeixi recuperar la cartera. Hauríeu de considerar l'ús d'altres sistemes com ara claus USB, papers i CD per garantir la seguretat."
+    backupregular: "Fes còpies de seguretat regularment"
+    backupregulartxt: "Cal fer còpies de seguretat del moneder amb regularitat per assegurar que les adreces que hàgiu creat han estat incloses en la vostra còpia de seguretat. Això no obstant, molt aviat totes les aplicacions utilitzaran moneders que només caldrà actualitzar una vegada."
+    encrypt: "Xifra el teu moneder"
+    encrypttxt: "Xifrar la vostra cartera o el vostre telèfon intel·ligent us permet establir una contrasenya per a qualsevol persona que intenti retirar fons. Això ajuda a protegir contra els lladres, tot i que no pot protegir contra el maquinari o programari de registre de tecles."
+    encryptforget: "No oblidis mai la teva contrasenya"
+    encryptforgettxt: "Assegureu-vos de no oblidar mai la contrasenya o els vostres diners es perdran definitivament. A diferència dels bancs, amb Bitcoin les opcions de recuperar una contrasenya són molt limitades. De fet, hauries de ser capaç de recordar la contrasenya, fins i tot, anys després de no utilitzar-la. En cas de dubte, podeu guardar una còpia en paper de la contrasenya en un lloc segur, com ara una cambra cuirassada."
+    encryptstrong: "Fes servir una paraula clau forta"
+    encryptstrongtxt: "Qualsevol contrasenya que contingui només lletres o paraules recognoscibles es pot considerar molt feble i fàcil de trencar. Una contrasenya segura ha de contenir lletres, números, signes de puntuació i ha de tenir almenys 16 caràcters. Les contrasenyes més segures són les generades per programes dissenyats específicament per a aquesta finalitat. Les contrasenyes fortes solen ser més difícils de recordar, per la qual cosa hauríeu de tenir cura en memoritzar-les."
+    offline: "Cartera fora de línia per estalviar "
+    offlinetxt: "Una cartera fora de línia, també coneguda com a emmagatzematge en fred, ofereix el màxim nivell de seguretat per a l'estalvi. Es tracta d'emmagatzemar una cartera en un lloc segur que no estigui connectat a la xarxa. Quan es fa correctament, pot oferir una molt bona protecció contra les vulnerabilitats de l'ordinador. També és una bona pràctica utilitzar una cartera fora de línia juntament amb còpies de seguretat i xifratge. Aquí teniu una visió general d'alguns enfocaments."
+    offlinetx: "Transacció de signatura fora de línia"
+    offlinetxtxt1: "Aquest enfocament implica tenir dos ordinadors compartint algunes parts de la mateixa bitlletera. El primer ha d'estar desconnectat de qualsevol xarxa d'Internet. És l'únic que té tota la bitlletera sencera i pot signar transaccions. El segon ordinador està connectat a Internet i només té una bitlletera observadora que només pot crear transaccions no signades. D'aquesta manera, pots emetre de forma segura noves transaccions seguint els següents passos."
+    offlinetxtxt2: "Creeu una nova transacció amb l'ordinador connectat i guardeu-la en una clau USB."
+    offlinetxtxt3: "Signeu la transacció amb l'ordinador fora de línia."
+    offlinetxtxt4: "Envieu la transacció signada amb l'ordinador connectat a la xarxa."
+    offlinetxtxt5: "Com que l'ordinador connectat a la xarxa no pot signar transaccions, no es pot utilitzar per retirar fons si està compromès. <a href=\"https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/\">Armory</a> es pot fer servir per fer la signatura de transaccions fora de línia."
+    hardwarewallet: "Moneders hardware"
+    hardwarewallettxt: "Les carteres de maquinari són el millor equilibri entre seguretat molt alta i facilitat d'ús. Es tracta de petits dispositius dissenyats des de l'arrel per ser una cartera i res més. No es pot instal·lar cap programari en ells, cosa que els fa molt segurs contra vulnerabilitats informàtiques i lladres en línia. Com que poden permetre còpies de seguretat, podeu recuperar els vostres fons si perdeu el dispositiu."
+    update: "Tingues els teus programes actualitzats"
+    updatetxt: "Quan utilitzes l'última versió de qualsevol programa Bitcoin estàs rebent actualitzacions de seguretat i millores en l'estabilitat. Les actualitzacions poden prevenir problemes de diferents severitats, incloure noves característiques i ajudar-te a mantenir el teu moneder segur. Instal·lar les actualitzacions de la resta de programari del teu ordinador o telèfon també és important per tal de mantenir l'entorn del teu moneder segur."
+    offlinemulti: "Signatura múltiple per protegir-se del robatori"
+    offlinemultitxt: "Bitcoin inclou una funció de signatura múltiple que permet que una transacció requereixi diverses aprovacions independents per gastar. Això pot ser utilitzat per una organització per donar als seus membres accés a la seva tresoreria mentre només permet retirar els fons si 3 de 5 membres signen la transacció. Algunes carteres web també proporcionen carteres multisignatura, cosa que permet a l'usuari mantenir el control dels seus diners alhora que evita que un lladre robi fons comprometent un únic dispositiu o servidor."
+    offlinetestament: "Pensa en el teu testament"
+    offlinetestamenttxt: "Els teus bitcoins poden perdre's per sempre si no tens cap pla de reserva pels teus familiars i amics. Si la situació dels teus bitlleters o les teves contrasenyes no les coneix ningú quan ja no hi siguis, el teu fons no es podrà recuperar de cap manera. Dedicar una mica de temps a aquests temes pot significar una gran diferència. "
+  spend-bitcoin:
+    title: "Gastar Bitcoin - Bitcoin"
+    pagetitle: "Gastar Bitcoin"
+    summary: "Hi ha milers d'empreses a tot el món que accepten Bitcoin."
+    products-online: "Trobeu productes en venda en línia"
+    products-online-text: "Un ús comú de Bitcoin és fer compres en línia. Hi ha centenars de botigues en línia i minoristes que accepten Bitcoin. Mitjançant un motor de cerca com <a href=\"https://spendabit.co/\">Spendabit</a>, podeu cercar entre milions de productes, tots disponibles per a la compra amb bitcoins."
+    directory: "Navegueu per un directori d'empreses"
+    directory-text: "També podeu trobar moltes empreses llistades als <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">directoris en línia</a>."
+    business-map: "Trobeu negocis locals"
+    business-map-text: "També hi ha moltes empreses locals, com ara cafeteries i restaurants, que accepten Bitcoin. Podeu utilitzar <a href=\"https://coinmap.org/\">Coinmap.org</a> per navegar per milers d'empreses arreu del món."
+  support-bitcoin:
+    title: "Dóna suport a Bitcoin - Bitcoin"
+    pagetitle: "Dóna suport a Bitcoin"
+    summary: "Bitcoin va néixer d'una petita comunitat i ha crescut ràpidament. Hi ha moltes coses que pots fer per donar suport i ajudar altres a aprendre més."
+    use: "Utilitzant Bitcoin"
+    usetxt: "<a href=\"#getting-started#\">Utilitzar Bitcoin</a> és el primer que podeu fer per donar suport a Bitcoin. Probablement hi ha molts casos en què et pot fer la vida més fàcil. Podeu acceptar pagaments i fer compres amb Bitcoin."
+    node: "Sigues la xarxa"
+    nodetxt: "Si teniu una bona connexió a Internet, podeu reforçar la xarxa Bitcoin mantenint el <a href=\"/en/full-node\">programari de node complet</a> en execució al vostre ordinador o servidor amb el port 8333 obert. Els nodes complets estan assegurant i transmetent totes les transaccions."
+    mining: "Minant"
+    miningtxt: "Pots començar a <a href=\"http://www.bitcoinmining.com/\">minar bitcoins</a> per ajudar a processar les transaccions. Per tal de protegir la xarxa el millor seria unir-se a un <a href=\"http://p2pool.in/\">\"pool\" petit de minat</a> i entre aquests triar-ne un de descentralitzat com P2Pool o <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">\"pools\"</a> amb suport per (GBT)."
+    develop: "Desenvolupament"
+    developtxt: "Bitcoin és programari lliure. Si sou un desenvolupador/a, podeu utilitzar els vostres superpoders per fer el bé i <a href=\"#development#\">millorar Bitcoin</a>. O podeu crear nous serveis o programes sorprenents que facin servir Bitcoin."
+    donation: "Donació"
+    donationtxt: "La manera més fàcil d'ajudar és <a href=\"http://bitgivefoundation.org/donate/\">donar</a> una mica de bitcoin a BitGive. O podeu ajudar directament a finançar qualsevol projecte relacionat amb Bitcoin que cregueu que serà útil en el futur."
+    nonprofit: "Organitzations"
+    nonprofittxt: "La <a href=\"#community##[community.non-profit]\">Fundació Bitcoin i moltes altres organitzacions sense ànim de lucre</a> es dediquen a protegir i promoure Bitcoin. Pots ajudar aquests grups si t'hi uneixes i formes part en els seus projectes, discussions i esdeveniments."
+    spread: "Escampa"
+    spreadtxt: "Parla de Bitcoin a la gent interessada. Escriu sobre Bitcoin al teu blog. Digues a les teves botigues preferides que t'agradaria pagar amb Bitcoin. Ajuda mantenint el <a href=\"/en/spend-bitcoin\">directori de comerciants</a> actualitzat. O sigues creatiu i fes una samarreta Bitcoin ben bonica."
+    wiki: "Documentació"
+    wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> i la <a href=\"https://en.bitcoin.it/\">wiki de Bitcoin</a> proporcionen documentació útil i estem millorant constantment la informació que contenen. Podeu ajudar a millorar aquests recursos i mantenir-los actualitzats."
+    translate: "Tradueix"
+    translatetxt: "Podeu ajudar a difondre la consciència de Bitcoin traduint o millorant les traduccions dins de parts importants de l'ecosistema de Bitcoin. Només heu de triar un projecte en el qual us agradaria ajudar."
+    help: "Troba't amb les comunitats"
+    helptxt: "Podeu unir-vos a <a href=\"#community#\">comunitats de Bitcoin</a> i parlar amb altres entusiastes de Bitcoin. Podeu aprendre més sobre Bitcoin cada dia, donar ajuda a nous usuaris i participar en projectes interessants."
+  vocabulary:
+    title: "Vocabulari - Bitcoin"
+    pagetitle: "Algunes paraules Bitcoin que pots haver sentit"
+    summary: "Bitcoin ofereix un nou enfocament dels pagaments i, com a tal, hi ha algunes paraules noves que potser formaran part del teu vocabulari."
+    table: "Taula de continguts"
+    address: "Adreça"
+    addresstxt: "Una adreça de Bitcoin és <b>similar a una adreça física o un correu electrònic</b>. És l'única informació que heu de proporcionar perquè algú us pagui amb Bitcoin. Una diferència important, però, és que cada adreça només s'hauria d'utilitzar per a una única transacció."
+    bit: "Bit"
+    bittxt: "El bit és una unitat comuna que s'utilitza per designar una subunitat d'un bitcoin: 1.000.000 de bits és igual a 1 bitcoin (BTC). Aquesta unitat acostuma a ser més convenient per fixar preus, béns i serveis."
+    bitcoin: "Bitcoin"
+    bitcointxt: "Bitcoin - amb majúscules, s'utilitza quan es descriu el concepte de Bitcoin, o tota la xarxa en si, per exemple, \"Avui estava aprenent sobre el protocol Bitcoin.\" <br>bitcoin - sense majúscules, s'utilitza per descriure bitcoins com una unitat de compte, per exemple, \"He enviat deu bitcoins avui.\"; també s'abreuja sovint BTC o XBT."
+    blockchain: "Cadena de blocs"
+    blockchaintxt: "La cadena de blocs és un <b>registre públic de transaccions Bitcoin</b> en ordre cronològic. La cadena de blocs es comparteix entre tots els usuaris Bitcoin. S'utilitza per verificar les transaccions Bitcoin i per evitar la <a href=\"#[vocabulary.doublespend]\">despesa doble</a>."
+    block: "Bloc"
+    blocktxt: "Un bloc és un <b>registre a la cadena de blocs que conté i confirma unes quantes transaccions pendents</b>. Escassament cada 10 minuts de mitjana, s'enganxa un nou bloc, amb les seves transaccions, a la <a href=\"#[vocabulary.blockchain]\">cadena de blocs</a> mitjançant la <a href=\"#[vocabulary.mining]\">mineria</a>."
+    btc: "BTC"
+    btctxt: "BTC és una unitat comuna que s'utilitza per designar un bitcoin."
+    confirmation: "Confirmació"
+    confirmationtxt: "La confirmació significa que una transacció ha estat <b>processada per la xarxa i és molt poc probable que es reverteixi</b>. Les transaccions reben una confirmació quan s'inclouen en un <a href=\"#vocabulary##[vocabulary.block]\">bloc</a> i en el bloc posterior. Fins i tot una sola confirmació es pot considerar segura per a transaccions de baix valor, tot i que per a quantitats més grans, com ara 1.000 USD, té sentit esperar 6 confirmacions o més. Cada confirmació disminueix <i>exponencialment</i> el risc d'una transacció revertida."
+    cryptography: "Criptografia"
+    cryptographytxt: "La criptografia és la branca de les matemàtiques que ens permet crear <b>proves matemàtiques que ens ofereixen un gran nivell de seguretat</b>. El comerç i la banca en línia ja l'utilitzen. En el cas de Bitcoin, la criptografia s'usa per impossibilitar que ningú pugui gastar diners del moneder d'una altra persona o per corrompre la <a href=\"#[vocabulary.blockchain]\">cadena de blocs</a>. També es pot fer servir per xifrar el moneder, de tal manera que no es pugui utilitzar sense una paraula clau."
+    doublespend: "Doble Despesa"
+    doublespendtxt: "Si un usuari maliciós intenta <b>gastar els seus bitcoins a dos destinataris diferents al mateix temps</b>, es tracta d'una despesa doble. La <a href=\"#[vocabulary.mining]\">mineria</a> de Bitcoin i la <a href=\"#[vocabulary.blockchain]\">cadena de blocs</a> estan allà per crear un consens a la xarxa sobre quina de les dues transaccions es confirmarà i es considerarà vàlida."
+    hashrate: "Velocitat Hash"
+    hashratetxt: "La velocitat hash és <b>la unitat de mesura de capacitat de processament de la xarxa Bitcoin</b>. Aquesta xarxa fa operacions matemàtiques intensives per propòsits de seguretat. Quan la xarxa arriba a la velocitat hash de 10 Th/s, vol dir que podria fer 10 trilions de càlculs per segon."
+    mining: "Mineria"
+    miningtxt: "La mineria de Bitcoin és el procés <b>de fer que el maquinari informàtic faci càlculs matemàtics per a la xarxa Bitcoin per confirmar transaccions</b> i augmentar la seguretat. Com a recompensa pels seus serveis, els miners de Bitcoin poden cobrar les tarifes de transacció per les transaccions que confirmen, juntament amb els bitcoins de nova creació. La mineria és un mercat especialitzat i competitiu on les recompenses es reparteixen segons el càlcul que es fa. No tots els usuaris de Bitcoin fan mineria de Bitcoin i no és una manera fàcil de guanyar diners."
+    p2p: "P2P"
+    p2ptxt: "Peer-to-peer o P2P es refereix a <b>sistemes que funcionen com un col·lectiu organitzat</b> permetent que cada individu interactuï directament amb els altres. En el cas de Bitcoin, la xarxa s'ha construït de tal manera que cada usuari retransmet les transaccions dels altres usuaris. Destaca doncs que d'aquesta manera no es necessita cap banc com a intermediari."
+    privatekey: "Clau privada"
+    privatekeytxt: "Una clau privada és <b>una dada secreta que demostra el vostre dret a gastar bitcoins d'una cartera específica</b> mitjançant una signatura <a href=\"#[vocabulary.signature]\">criptogràfica</a>. Les vostres claus privades s'emmagatzemen al vostre ordinador si feu servir una cartera de programari; s'emmagatzemen en alguns servidors remots si utilitzeu una cartera web. Les claus privades no s'han de revelar mai, ja que us permeten gastar bitcoins per a la seva cartera Bitcoin respectiva."
+    signature: "Signatura"
+    signaturetxt: "Una <a href=\"#[vocabulary.cryptography]\">signatura</a> criptogràfica és <b>un mecanisme matemàtic que permet a algú demostrar la propietat</b>. En el cas de Bitcoin, una <a href=\"#[vocabulary.wallet]\">cartera de Bitcoin</a> i les seves <a href=\"#[vocabulary.privatekey]\">claus privades</a> estan enllaçades per màgia matemàtica. Quan el vostre programari de Bitcoin signa una transacció amb la clau privada adequada, tota la xarxa pot veure que la signatura coincideix amb els bitcoins que es gasten. Tanmateix, no hi ha manera que el món endevini la vostra clau privada per robar els vostres bitcoins que heu guanyat amb esforç."
+    wallet: "Cartera"
+    wallettxt: "Una cartera Bitcoin és vagament <b>l'equivalent a una cartera física a la xarxa Bitcoin</b>. En realitat, la cartera conté les vostres <a href=\"#[vocabulary.privatekey]\">claus privades</a> que us permeten gastar els bitcoins assignats a la <a href=\"#[vocabulary.blockchain]\">cadena de blocs</a>. Cada cartera Bitcoin us pot mostrar el saldo total de tots els bitcoins que controla i us permet pagar una quantitat específica a una persona específica, igual que una cartera real. Això és diferent de les targetes de crèdit on el comerciant us cobra."
+  you-need-to-know:
+    title: "Algunes coses que necessites saber - Bitcoin"
+    pagetitle: "Algunes coses que necessites saber"
+    summary: "Si t'estàs iniciat amb Bitcoin, hi ha unes quantes coses que hauries de saber. Bitcoin et permet intercanviar diners i fer transaccions d'una manera diferent de la que estàs acostumat. Per tant, pren el teu temps per informar-te sobre com utilitzar Bitcoin per fer una transacció seriosa. Bitcoin hauria de ser tractat amb la mateixa cura que tractes el teu moneder habitual, o fins i tot més en alguns casos!"
+    secure: "Assegurant el teu moneder"
+    securetxt: "Com a la vida real, la teva cartera ha d'estar segura. Bitcoin fa possible transferir valor a qualsevol lloc d'una manera molt fàcil i et permet tenir el control dels teus diners. Aquestes funcions tan excel·lents també comporten grans problemes de seguretat. Al mateix temps, Bitcoin pot proporcionar nivells de seguretat molt alts si s'utilitza correctament. Recordeu sempre que és responsabilitat vostra adoptar bones pràctiques per protegir els vostres diners. <a href=\"#secure-your-wallet#\">Llegiu més sobre com protegir la vostra cartera</a>."
+    volatile: "El preu del Bitcoin és volàtil"
+    volatiletxt: "El preu d'un bitcoin pot pujar o baixar de forma imprevista en un període molt curt de temps a causa de la seva economia jove, naturalesa novella i algunes vegades mercats líquids. En conseqüència, per ara no es recomana mantenir els teus estalvis amb Bitcoin. Caldria veure-ho com a actius d'alt risc on mai hi hauries de guardar diners que no puguis permetre't perdre. Si reps pagaments amb Bitcoin, hi ha molts proveïdors que els poden convertir a la teva moneda local."
+    irreversible: "Els pagaments Bitcoin són irreversibles"
+    irreversibletxt: "Una transacció de Bitcoin no es pot revertir, només pot ser reemborsada per la persona que rep els fons. Això vol dir que hauríeu de tenir cura de fer negocis amb persones i organitzacions que coneixeu i en qui confieu, o que tinguin una reputació consolidada. Per la seva banda, les empreses han de fer un seguiment de les sol·licituds de pagament que mostren als seus clients. Bitcoin pot detectar errors tipogràfics i normalment no us permetrà enviar diners a una adreça no vàlida per error, però el millor és tenir controls per a més seguretat i redundància. Podrien existir serveis addicionals en el futur per oferir més opcions i protecció tant a les empreses com als consumidors."
+    anonymous: "Bitcoin no és anònim"
+    anonymoustxt: "Es requereix un esforç per protegir la vostra privadesa amb Bitcoin. Totes les transaccions de Bitcoin s'emmagatzemen de manera pública i permanent a la xarxa, el que significa que qualsevol pot veure el saldo i les transaccions de qualsevol adreça de Bitcoin. No obstant això, la identitat de l'usuari darrere d'una adreça continua sent desconeguda fins que es reveli informació durant una compra o en altres circumstàncies. Aquesta és una de les raons per les quals les adreces de Bitcoin només s'han d'utilitzar una vegada. Recordeu sempre que és responsabilitat vostra adoptar bones pràctiques per tal de protegir la vostra privadesa. <a href=\"#protect-your-privacy#\">Llegiu més sobre com protegir la vostra privadesa</a>."
+    instant: "Les transaccions sense confirmar no són segures"
+    instanttxt: "Les transaccions no comencen com a irreversibles. En lloc d'això, obtenen una puntuació de <i>confirmació</i> que indica com és de difícil revertir-les (vegeu la taula). Cada confirmació triga entre uns segons i 90 minuts, sent 10 minuts la mitjana. Si la transacció paga una tarifa massa baixa o és atípica, obtenir la primera confirmació pot trigar molt més."
+    confirmations: "Confirmacions"
+    lightweight_wallets: "Carteres lleugeres"
+    bitcoin_core: "<a href=\"#download#\">Bitcoin Core</a>"
+    unconfirmed_only_safe: "Només segur si confies en la persona que et paga"
+    somewhat_reliable: "Una mica fiable"
+    mostly_reliable: "Majoritàriament fiable"
+    highly_reliable: "Altament fiable"
+    high_value_minimum: "Recomanació mínima per a transferències de bitcoins d'alt valor"
+    alert_recommendation: "Recomanació durant les <a href=\"/en/alerts\">emergències</a> per permetre la intervenció humana"
+    experimental: "Bitcoin encara és experimental"
+    experimentaltxt: "Bitcoin és una nova moneda experimental que està en desenvolupament actiu. Cada millora fa que Bitcoin sigui més atractiu, però també revela nous reptes a mesura que creix l'adopció de Bitcoin. Durant aquests temps de creixement, és possible que trobeu tarifes més elevades, confirmacions més lentes o fins i tot problemes més greus. Estigueu preparats per a problemes i consulteu un expert tècnic abans de fer qualsevol inversió important, però tingueu en compte que ningú pot predir el futur de Bitcoin. "
+    tax: "Impostos governamentals i regulacions"
+    taxtxt: "Bitcoin no és una moneda oficial. Dit això, la majoria de jurisdiccions encara requereixen que pagueu impostos sobre ingressos, vendes, nòmines i guanys de capital sobre qualsevol cosa que tingui valor, inclosos els bitcoins. És la vostra responsabilitat assegurar-vos que us adheriu als <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">mandats fiscals i altres mandats legals o reglamentaris</a> emesos pel vostre govern o municipis locals."
+  layout:
+    menu-about-us: "Sobre bitcoin.org"
+    menu-bitcoin-for-businesses: Empreses
+    menu-bitcoin-for-developers: Desenvolupadors
+    menu-bitcoin-for-individuals: Persones
+    menu-community: Comunitat
+    menu-development: Desenvolupament
+    menu-developer-documentation: Documentació
+    menu-events: Esdeveniments
+    menu-exchanges: Intercanvis
+    menu-faq: FAQ
+    menu-getting-started: "Inicia't"
+    menu-how-it-works: "Com funciona"
+    menu-innovation: Innovació
+    menu-intro: Introducció
+    menu-legal: "Legal"
+    menu-participate: Participa
+    menu-press: "Premsa"
+    menu-privacy: "Privacitat"
+    menu-resources: Recursos
+    menu-scams: "Evita les estafes"
+    menu-support-bitcoin: "Dóna suport a Bitcoin"
+    menu-buy: "Comprar Bitcoin"
+    menu-full-node: "Executant un node complet"
+    menu-other: "Altres"
+    menu-vocabulary: Vocabulari
+    menu-you-need-to-know: "Necessites saber"
+    menu-white-paper: "Paper blanc"
+    banner-core-moved: |
+        Aquesta pàgina s'ha mogut al nou Bitcoin Core
+        lloc web (fes clic aquí per ser redirigit)
+    banner-translate: "Les traduccions d'aquest idioma estan obsoletes. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Feu clic aquí per ajudar a traduir bitcoin.org al vostre idioma</a>."
+    footer: "publicat sota la <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">llicència MIT</a>"
+    donate-community: "Suporta Bitcoin.org"
+    donate-support: "Bitcoin.org està suportat per la comunitat."
+    network-status: "Estat de la xarxa"
+    sponsor: "Una comunitat web esponsoritzada per"
+    getstarted: "Inicia't amb Bitcoin"
+    recomendation: "Moneders de Bitcoin recomanats"
+    learn-more: "Saber mes"
+    donate: "Dóna"
+    bitcoin-core: "Bitcoin Core"
+    donation-banner-text: "Bitcoin.org és un projecte finançat per la comunitat, les donacions s'agraeixen i s'utilitzen per millorar el lloc web."
+    donation-banner-toggle-button: "Bitcoin.org necessita el teu suport!"
+    donation-banner-donate-button: "Fes una donació"
+    donation-modal-header: "Feu una donació a Bitcoin.org "
+    donation-modal-subheader: "Utilitzeu aquest codi QR o adreça a continuació"
+    donation-modal-input-custom-amount: "O quantitat personalitzada?"
+    donation-modal-optional-message: "Descripció opcional (per a la teva cartera)"
+  url:
+    about-us: sobre-nosaltres
+    bitcoin-for-developers: bitcoin-per-desenvolupadors
+    bitcoin-for-individuals: bitcoin-per-persones
+    bitcoin-for-businesses: bitcoin-per-empreses
+    buy: comprar
+    choose-your-wallet: tria-el-teu-moneder
+    community: comunitat
+    developer-documentation: documentacio-de-desenvolupador
+    developer-examples: exemples-de-desenvolupadors
+    developer-glossary: glossari-de-desenvolupadors
+    developer-guide: guia-desenvolupador
+    developer-reference: referencia-del-desenvolupador
+    blockchain-guide: guia-de-la-cadena-de-blocs
+    contracts-guide: guia-de-contractes
+    mining-guide: guia-de-mineria
+    operating-modes-guide: guia-de-modes-operatius
+    p2p-network-guide: guia-de-la-xarxa-entre-iguals
+    payment-processing-guide: guia-de-processament-de-pagaments
+    transactions-guide: guia-de-transaccions
+    wallets-guide: guia-de-moneders
+    development: desenvolupament
+    download: descarrega
+    exchanges: cases de canvi
+    events: events
+    faq: faq
+    getting-started: iniciat
+    how-it-works: com-funciona
+    innovation: innovacio
+    legal: legal
+    press: premsa
+    privacy: privacitat
+    protect-your-privacy: protegeix-la-teva-privacitat
+    resources: recursos
+    scams: estafes
+    secure-your-wallet: assegura-el-teu-moneder
+    support-bitcoin: dona-suport-a-bitcoin
+    vocabulary: vocabulari
+    you-need-to-know: necessites-saber
+    bitcoin-paper: paper-bitcoin
+    spend-bitcoin: gasta-bitcoins
+  anchor:
+    community:
+      non-profit: sense-lucre
+    scams:
+      blackmail: xantatge
+      fake-exchanges: cases-de-canvi-falses
+      free-giveaways: obsequis-gratuits
+      impersonation: suplantacio
+      malware: programari-malicios
+      meet-in-person: trobada-en-persona
+      money-transfer-fraud: frau-de-transferencia-de-diners
+      phishing-emails: phishing-emails
+      phishing-websites: phishing-websites
+      ponzi-schemes: esquemes-ponzi
+      pyramid-schemes: esquemes-piramidals
+      prize-giveaways: lliuraments-de-premis
+      pump-and-dumps: pump-and-dumps
+      ransomware: ransomware
+      scam-coins: monedes estafa
+    vocabulary:
+      address: adreca
+      bit: bit
+      bitcoin: bitcoin
+      blockchain: cadena-de-blocs
+      block: bloc
+      btc: btc
+      confirmation: confirmacio
+      cryptography: criptografia
+      doublespend: doble-despesa
+      hashrate: velocitat-hash
+      mining: minat
+      p2p: p2p
+      privatekey: clau-privada
+      signature: signatura
+      wallet: moneder
+    faq:
+      general: general
+      whatisbitcoin: que-es-bitcoin
+      creator: qui-ha-creat-bitcoin
+      whocontrols: qui-controla-la-xarxa-bitcoin
+      howitworks: com-funciona-bitcoin
+      acquire: com-puc-obtenir-bitcoins
+      used: realment-es-fa-servir-bitcoin
+      makepayment: com-es-de-dificil-fer-un-pagament-amb-bitcoin
+      advantages: quins-son-els-advantatges-de-bitcoin
+      disadvantages: quins-son-els-desavantatges-de-bitcoin
+      trust: perque-la-gent-confia-amb-bitcoin
+      makemoney: puc-fer-diners-amb-bitcoin
+      virtual: es-bitcoin-totalment-virtual-i-immaterial
+      anonymous: es-bitcoin-anonim
+      lost: que-passa-quan-els-bitcoins-es-perden
+      scale: pot-bitcoin-creixer-fins-arribar-a-ser-una-xarxa-de-pagaments-principal
+      legal: legal
+      islegal: es-legal-bitcoin
+      illegalactivities: es-bitcoin-util-per-activitats-illegals
+      regulated: es-pot-regular-bitcoin
+      taxes: que-passa-amb-el-bitcoin-i-els-impostos
+      consumer: que-passa-amb-bitcoin-i-la-proteccio-del-consumidor
+      economy: economia
+      bitcoinscreated: com-es-creen-els-bitcoins
+      whyvalue: perque-tenen-valor-els-bitcoins
+      whatprice: que-determina-el-preu-dels-bitcoins
+      worthless: els-bitcoins-podrien-perdre-el-valor
+      bubble: es-bitcoin-una-bombolla
+      ponzi: bitcoin-es-un-esquema-ponzi
+      earlyadopter: no-premia-bitcoin-injustament-als-primers-en-adoptar
+      finitelimitation: no-sera-el-numero-finit-de-bitcoins-una-limitacio
+      deflationaryspiral: no-caura-bitcoin-en-una-espiral-de-deflacio
+      speculationvolatility: no-sera-la-especulacio-i-la-volatilitat-un-problema-per-a-bitcoin
+      buyall: que-passaria-si-algu-compra-tots-els-bitcoins-existents
+      bettercurrency: que-passaria-si-algu-crea-una-moneda-digital-millor
+      transactions: transaccions
+      tenminutes: per-que-he-d-esperar-10-minuts
+      fee: quan-valdran-les-comisions-de-transaccio
+      poweredoff: que-passa-si-rebo-un-bitcoin-quan-el-meu-ordinador-esta-apagat
+      sync: que-vol-dir-sincronitzar-i-perque-triga-tant
+      mining: mineria
+      whatismining: que-es-la-mineria-bitcoin
+      howminingworks: com-funciona-la-mineria-bitcoin
+      miningwaste: no-es-la-mineria-bitcoin-malgastar-energia
+      miningsecure: com-ajuda-la-mineria-a-protegir-bitcoin
+      miningstart: que-necessito-per-comencar-a-minar
+      security: seguretat
+      secure: es-bitcoin-segur
+      hacked: no-ha-estat-piratejat-bitcoin-en-el-passat
+      collude: podrien-els-usuaris-conspirar-contra-bitcoin
+      quantum: es-el-bitcoin-vulnerable-a-la-computacio-quantica
+      help: ajuda
+      morehelp: mes-ajuda
