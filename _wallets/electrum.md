@@ -17,7 +17,7 @@ platform:
       source: "https://github.com/spesmilo/electrum"
       screenshot: "electrum.png"
       features: "2fa bech32 hardware_wallet legacy_addresses lightning multisig segwit"
-      check:
+      check: &DEFAULT-CHECK
         control: "checkgoodcontrolfull"
         validation: "checkpassvalidationspvservers"
         transparency: "checkpasstransparencyopensource"
@@ -31,10 +31,16 @@ platform:
     os:
       - name: windows
         <<: *DEFAULT
+        check:
+          <<: *DEFAULT-CHECK
+          transparency: "checkgoodtransparencydeterministic"
       - name: mac
         <<: *DEFAULT
       - name: linux
         <<: *DEFAULT
+        check:
+          <<: *DEFAULT-CHECK
+          transparency: "checkgoodtransparencydeterministic"
   - mobile:
     name: mobile
     os:

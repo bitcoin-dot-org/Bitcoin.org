@@ -29,7 +29,8 @@ en:
     documentation: "Documentation"
     sponsorship: "Sponsorship"
     service_contributors: "Service Contributors"
-    translation: "Translation"
+    translations_realname: "Translations(real name)"
+    translations_transifexname: "Translations(transifex name)"
     inactive_contributors: "Inactive Contributors"
     owners: "Domain Owners"
     partial_list: "Partial List"
@@ -120,7 +121,7 @@ en:
     simple: "Works everywhere, anytime"
     simpletext: "Similarly to email, you don't need to ask recipients you're sending bitcoin to, to use the same software, wallets or service providers. You just need their bitcoin address and then you can transact with them anytime. The Bitcoin network is always running and never sleeps, even on weekends and holidays."
     secure: "Security and control over your money"
-    securetext: "Bitcoin transactions are secured by military-grade cryptography. Nobody can take your money or make a payment on your behalf. So long as you take the required steps to <a href=\"#secure-your-wallet#\">protect your wallet</a>, Bitcoin can give you control over your money and a strong level of protection against many types of fraud."
+    securetext: "Bitcoin transactions are secured by mathematics and energy. <a href=\"https://en.bitcoin.it/wiki/Elliptic_Curve_Digital_Signature_Algorithm\">Cryptographic signatures</a> prevent other people from spending your money. Energy spent by <a href=\"https://en.bitcoin.it/wiki/Proof_of_work\">proof of work (PoW)</a> prevents other people from undoing, rearranging or losing your transactions. So long as you take the required steps to <a href=\"#secure-your-wallet#\">protect your wallet</a>, Bitcoin can give you control over your money and a strong level of protection against many types of fraud."
     lowfee: "Choose your own fees"
     lowfeetext: >
       There is no fee to receive bitcoins, and many wallets let you
@@ -139,7 +140,10 @@ en:
     summary: "The paper that first introduced Bitcoin"
     description: "Satoshi Nakamoto's original paper is still recommended reading for anyone studying how Bitcoin works. Choose which translation of the paper you want to read:"
     translated_by: "translated by"
-    submit_new_translation: 'Do you want to translate the paper into your language? Visit the <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitcoin white paper repository on GitHub</a> for instructions and <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">open an issue</a> if you have any questions.'
+    submit_new_translation: 'Do you want to translate the paper into your language? Visit the <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">Bitcoin white paper repository on GitHub</a> for instructions and <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">open an issue</a> if you have any questions.'
+  whitepaper-mirrors:
+    title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
+    summary: "Mirrors of the Bitcoin whitepaper"
   buy:
     title: "Buy Bitcoin"
     pagetitle: "How to buy bitcoin"
@@ -284,7 +288,6 @@ en:
     walletelectrum: "Electrum's focus is speed and simplicity, with low resource usage. It uses remote servers that handle the most complicated parts of the Bitcoin system, and it allows you to recover your wallet from a secret phrase."
     walletbitcoinwallet: "Bitcoin Wallet is easy to use and reliable, while also being secure and fast. Its vision is de-centralization and zero trust; no central service is needed for Bitcoin-related operations. The app is a good choice for non-technical people."
     walletedgewallet: "Edge is a Segwit compatible, mobile Bitcoin Wallet making high levels of privacy, security, and decentralization very familiar and usable to the masses. Edge wallets are always automatically encrypted and backed up."
-    walletbrd: "BRD is one of the easiest wallets for new Bitcoin users. It's also extremely secure. BRD connects directly to the Bitcoin network, and uses your device's built-in hardware encryption to keep your money safe."
     walletmyceliumwallet: "Mycelium Bitcoin Wallet for Android is designed for security, speed, and ease of use. It has unique features to manage your keys and for cold storage and offers compatibility with Trezor and others."
     wallettrezorone: "Trezor is a hardware wallet providing a high level of security without sacrificing convenience. Unlike cold storage, Trezor is able to sign transactions while connected to an online device. That means spending bitcoins is secure even when using a compromised computer."
     wallettrezormodelt: "Trezor Model T is a next-generation hardware wallet, designed with the benefits of the original Trezor in mind, combined with a modern and intuitive interface for improved user experience and security. It features a touchscreen, faster processor, as well as all the features of the Trezor One."
@@ -294,9 +297,11 @@ en:
     walletledgernanos: "Ledger Nano S is a secure Bitcoin hardware wallet. It connects to any computer through USB and embeds a built-in OLED display to double-check and confirm each transaction with a single tap on its buttons."
     walletbitbox: "The BitBox02 is a hardware wallet, developed and manufactured in Switzerland. It is equipped with an OLED display, invisible touch sensors, USB-C and USB-A support, offline backups to both microSD card and BIP39 mnemonic. Setting up a BitBox02 wallet and managing your coins is made easy via the companion BitBoxApp."
     walletbither: "Bither is a simple and secure wallet on many platforms. With special designed cold/hot modes, user can easily get both safety and simplicity. Bither's XRANDOM uses different entropy sources to generate true random number for users. Also with HDM, users can have HD's advantages and multisig's security."
-    walletblw: "Mobile wallet with Lightning Network support."
     walleteclairmobile: "Eclair Mobile is a next generation, Lightning-ready Bitcoin wallet. It can be used as a regular Bitcoin wallet, and can also connect to the Lightning Network for cheap and instant payments."
     walletwasabi: "Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for Windows, Linux and Mac. It includes built-in Tor, CoinJoin and coin control features."
+    walletunstoppable: "Unstoppable is a non-custodial and intuitive mobile wallet for Bitcoin and other cryptocurrencies. This wallet packs some essential features to store, exchange and monitor cryptocurrency  performance while staying private."
+    walletspecterdesktop: "Specter Desktop is a desktop wallet interface for Bitcoin Core with a focus on privacy, coin control, single and multisig setups. Specter is non-custodial and works with all major hardware wallets."
+    walletsparrow: "Sparrow is a Bitcoin wallet with a focus on security, privacy and usability. Sparrow supports single and multisig script types, connects to an Electrum server or Bitcoin Core, interacts with popular hardware wallets, provides full coin and fee control, and contains a transaction editor and a blockchain explorer."
     walletdownload: "Install"
     walletvisit: "Visit website"
     walletsourcecode: "Source code"
@@ -530,7 +535,7 @@ en:
     disclosuretxt: "If you find a vulnerability related to Bitcoin, non-critical vulnerabilities can be emailed in English to any of the core developers or sent to the private bitcoin-security mailing list listed above. An example of a non-critical vulnerability would be an expensive-to-carry-out denial of service attack. Critical vulnerabilities that are too sensitive for unencrypted email should be sent to one or more of the core developers, encrypted with their PGP key(s)."
     involve: "Get involved"
     involvetxt1: "Bitcoin is free software and any developer can contribute to the project. Everything you need is in the <a href=\"https://github.com/bitcoin/bitcoin\">GitHub repository</a>. Please make sure to read and follow the development process described in the README, as well as to provide good quality code and respect all guidelines."
-    involvetxt2: "Development discussion takes place on GitHub and the <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> mailing list. Less formal development discussion happens on irc.freenode.net #bitcoin-core-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">web interface</a>, <a href=\"http://bitcoinstats.com/irc/bitcoin-core-dev/logs\">logs</a>)."
+    involvetxt2: "Development discussion takes place on GitHub and the <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> mailing list. Less formal development discussion happens on irc.freenode.net #bitcoin-core-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">web interface</a>, <a href=\"http://gnusha.org/bitcoin-core-dev/\">logs</a>)."
     more: "More free software projects"
     morewant: "Want to contribute to a different project?"
     morechoose: "You can choose a project to contribute to by answering a few <a href=\"http://whatcanidoforbitcoin.xyz/\">questions about your skills</a>."
@@ -540,7 +545,6 @@ en:
     devcommunities: "Developer communities"
     devcommunitiesintro: "The following chatrooms and websites host discussions about Bitcoin development.  Please be sure to read their rules of conduct before posting."
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">IRC Channel #bitcoin-core-dev</a> on freenode."
-    slack: "<a href=\"https://slack.bitcoincore.org/\">Bitcoin Core Slack Channel</a>"
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
@@ -554,7 +558,7 @@ en:
     source: "Source code"
     versionhistory: "Show version history"
     notelicense: "Bitcoin Core is a community-driven <a href=\"https://www.fsf.org/about/what-is-free-software\">free software</a> project, released under the <a href=\"http://opensource.org/licenses/mit-license.php\">MIT license</a>."
-    notesync: "Bitcoin Core initial synchronization will take time and download a lot of data. You should make sure that you have enough bandwidth and storage for the full block chain size (over {{site.text.bitcoin_datadir_gb}}GB). If you have a good Internet connection, you can help strengthen the network by keeping your PC running with Bitcoin Core and port 8333 open."
+    notesync: "Bitcoin Core initial synchronization will take time and download a lot of data. You should make sure that you have enough bandwidth and storage for the block chain size ({{site.text.bitcoin_datadir_gb_pruned}}GB). If you have a good Internet connection, you can help strengthen the network by keeping your PC running with Bitcoin Core and port 8333 open."
     full_node_guide: "Read the <a href=\"/en/full-node\">full node guide</a> for details."
     patient: "Check your bandwidth and space"
     releasekeys: "Bitcoin Core Release Signing Keys"
@@ -1220,6 +1224,7 @@ en:
     vocabulary: vocabulary
     you-need-to-know: you-need-to-know
     bitcoin-paper: bitcoin-paper
+    whitepaper-mirrors: whitepaper-mirrors
     spend-bitcoin: spend-bitcoin
   anchor:
     community:

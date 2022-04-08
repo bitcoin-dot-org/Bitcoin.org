@@ -460,6 +460,8 @@ function generateDonationQrCode() {
 
     var text = 'bitcoin:' + generateDonationUrl(address, amount, message);
 
+    $('.donation-btc-address').attr('href', text);
+
     $('#donation-qr-code').qrcode({
         width: 150,
         height: 150,

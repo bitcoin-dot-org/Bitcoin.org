@@ -115,7 +115,7 @@ Core running.
 {:toc}
 
 <ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new">Report An Issue</a></li></ul>
-<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
+<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/Bitcoin.org/blob/master/en/full-node.md">Edit On GitHub</a></li></ul>
 </div>
 </div>
 
@@ -141,6 +141,14 @@ Many people and organizations volunteer to run full nodes using spare
 computing and bandwidth resources---but more volunteers are needed to
 allow Bitcoin to continue to grow.  This document describes how you can
 help and what helping will cost you.
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
+
+## Setup a Full Node
+
+<center><iframe width="100%" height="315" src="https://www.youtube.com/embed/xc_TxlByxeY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="1">
@@ -182,7 +190,7 @@ have an easy-to-use node.
 * Desktop or laptop hardware running recent versions of Windows, Mac OS
   X, or Linux.
 
-* {{site.text.bitcoin_datadir_gb}} gigabytes of free disk space,
+* {{site.text.bitcoin_datadir_gb_pruned}} gigabytes of free disk space,
   accessible at a minimum read/write speed of 100 MB/s.
 
 * 2 gigabytes of memory (RAM)
@@ -245,7 +253,7 @@ The following instructions describe installing Bitcoin Core using tools
 available in most mainstream Linux distributions.  We assume you use a
 Bourne-like shell such as `bash`.
 
-Using any computer, go to the [Bitcoin Core download page](/en/download)
+Using any computer, go to the [Bitcoin Core download page](https://bitcoin.org/en/download)
 and verify you have made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -411,7 +419,7 @@ Scroll to the bottom of the file displayed and add the following line:
 
 Save the file and exit; the updated crontab file will be installed for
 you. On most distributions, this will cause Bitcoin Core daemon to be
-automatically started each time your reboot your computer.
+automatically started each time you reboot your computer.
 
 If you're a expert system administrator and want to use an init script instead, see
 [the init scripts directory in Bitcoin Core's source tree](https://github.com/bitcoin/bitcoin/tree/master/contrib/init).
@@ -426,7 +434,7 @@ If you're a expert system administrator and want to use an init script instead, 
 
 ### Windows 10
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-win10-secure-connection.png?{{site.time | date: '%s'}})
@@ -578,7 +586,7 @@ daemon will be automatically started.
 
 ### Windows 8.x
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -730,7 +738,7 @@ daemon will be automatically started.
 
 ### Windows 7
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -882,7 +890,7 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 
 ### Mac OS X Yosemite 10.10.x+
 
-Go to the [Bitcoin Core download page](/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-osx-safari-secure-connection.png?{{site.time | date: '%s'}})
