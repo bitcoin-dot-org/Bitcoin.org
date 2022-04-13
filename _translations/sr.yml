@@ -516,10 +516,10 @@ sr:
     disclosuretxt: "Ukoliko nadjete ranjivost vezanu za Bitkoin, ranjivosti koje nisu kritične možete poslati emailom na Engleskom bilo kom core programeru ili na gore pomenutu privatnu bitcoin-security email listu. Na primer, nekritična ranjivost bilo bi otkriće skupocenog DDOS.\nRanjivosti od kritične važnosti, koje su previše važne da bi bile poslate preko emaila bez enkripcije, treba poslati jednom ili većem broju Core programera, enkriptovanih sa njihovim PGP ključem."
     involve: "Uključi se i ti"
     involvetxt1: "Bitkoin je besplatan program i svaki programer može da doprinese projektu. Sve što vam treba nalazi se u <a href=\"https://github.com/bitcoin/bitcoin\">GitHub skladištu</a>.  Molimo vas da budete sigurni da ste pročitali i da pratite razvojni proces opisan u README, kao i da obezbedite kvalitetan kod i poštujete sve smernice."
-    involvetxt2: "Diskusija vezana za programiranje dešava se na GitHub-u i <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a>email listi. Manje formalna stručna diskusija je na irc.freenode.net #bitcoin-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">web verzija</a>,<a href=\"http://gnusha.org/bitcoin-core-dev/\">prepiska</a>)."
+    involvetxt2: "Diskusija vezana za programiranje dešava se na GitHub-u i <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a>email listi. Manje formalna stručna diskusija je na irc.freenode.net #bitcoin-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">web verzija</a>,<a href=\"https://gnusha.org/bitcoin-core-dev/\">prepiska</a>)."
     more: "Još projekata besplatnog softvera"
     morewant: "Želite da pomognete drgačijem projektu?"
-    morechoose: "Možete izabrati projekat kojem bi ste doprineli odgovorivši na par <a href=\"http://whatcanidoforbitcoin.org/\">pitanja o vašim veštinama</a>."
+    morechoose: "Možete izabrati projekat kojem bi ste doprineli odgovorivši na par <a href=\"https://whatcanidoforbitcoin.org/\">pitanja o vašim veštinama</a>."
     moremore: "Prikaži još..."
     contributors: "Bitkoin Core dobroboljci"
     contributorsorder: "Po angažovanju"
@@ -538,7 +538,7 @@ sr:
     downloadtorrent: "Preuzmi torrent"
     source: "Izvorni kod"
     versionhistory: "Prikaži istoriju verzije"
-    notelicense: "Bitkoin Core je <a href=\"https://www.fsf.org/about/what-is-free-software\">besplatan softver</a> orijentisan na zajednicu, objavljen pod <a href=\"http://opensource.org/licenses/mit-license.php\">MIT licencom</a>."
+    notelicense: "Bitkoin Core je <a href=\"https://www.fsf.org/about/what-is-free-software\">besplatan softver</a> orijentisan na zajednicu, objavljen pod <a href=\"https://opensource.org/licenses/mit-license.php\">MIT licencom</a>."
     notesync: "Prvobitna sinhronizacija Bitcoi Core-a će potrajati jer preuzima veliki broj podataka sa interneta. Budite sigurni da imate dovoljno protoka i skladišnog prostora za preuzimanje block chain veličine (over {{site.text.bitcoin_datadir_gb}}GB). Ukoliko imate jaku internet konekciju, možete pomoći ojačavanju mreže tako što ćete na vaš računar pokrenuti Bitcoin Core uz otvoreni 8833 port."
     full_node_guide: "Pročitajte <a href=\"/en/full-node\">full node</a> uputstvo za više informacija."
     patient: "Proverite vaš internet protok i skladišni prostor računara."
@@ -563,7 +563,7 @@ sr:
     eventsubmit: "Prijavi događaj"
     meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitkoin okupljanja na BitcoinTalk</a>"
     meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitkoin okupljanja na Wiki</a>"
-    meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitkoin meetup grupe</a>"
+    meetupgroup: "<a href=\"https://bitcoin.meetup.com/\">Bitkoin meetup grupe</a>"
   faq:
     title: "ČPP - Bitkoin"
     pagetitle: "Često Postavljana Pitanja"
@@ -571,7 +571,7 @@ sr:
     table: "Pregled sadržaja"
     general: "Generalno"
     whatisbitcoin: "Šta je Bitkoin?"
-    whatisbitcointxt1: "Bitkoin je mreža koncenzusa koja omogućuje novi sistem plaćanja i potpuno digitalan novac. To je prva decentralizovana, P2P mreža plaćanja koju pokreću korisnici, bez centralne vlasti ili posrednika. Iz korisničke perspektive, Bitcoin je poput keša za Internet. Bitcoin se takođe može gledati kao najbitniji sistem <a href=\"http://financialcryptography.com/mt/archives/001325.html\">trostrukog knjigovodstva</a> koji postoji."
+    whatisbitcointxt1: "Bitkoin je mreža koncenzusa koja omogućuje novi sistem plaćanja i potpuno digitalan novac. To je prva decentralizovana, P2P mreža plaćanja koju pokreću korisnici, bez centralne vlasti ili posrednika. Iz korisničke perspektive, Bitcoin je poput keša za Internet. Bitcoin se takođe može gledati kao najbitniji sistem <a href=\"https://financialcryptography.com/mt/archives/001325.html\">trostrukog knjigovodstva</a> koji postoji."
     creator: "Ko je stvorio Bitkoin?"
     creatortxt1: "Bitkoin je prva implementacija koncepta zvanom kriptovaluta, koji je prvi put opisan 1998 godine od strane Wei Dai-a na kriptografskoj email listi, predlažući novi oblik novca koji koristi kriptografiju da kontroliše njegovo stvaranje i transakcije bez centralne vlasti. Prva Bitkoin specifikacija i dokaz koncepta objavljen je 2009 na kriptografskoj email listi od strane programera pod pseudonimom Satoshi Nakamoto. Satoshi je napustio projekat 2010 godine, bez otrkivanja previše detalja o sebi i odluci. Zajednica od tada raste eksponencijalnim rastom sa <a href=\"#development#\">velikim brojem programera</a> koji rade na Bitkoin protokolu."
     creatortxt2: "Satošijeva anonimnost često je predmet neopravdanih briga i rasprava. Takvu rasprave uglavnom su povezane sa nepoznavanjem prirode koda otvorenog tipa. Bitkoin protokol i softver dostupni su otvoreno javnosti i svaki programer na svetu može da ispita kod ili da napravi sopstvenu izmenjenu verziju Bitkoin programa. Kao i kod sadašnjih programera koji rade na protokolu, Satošijev uticaj bio je ograničen promenama koje su drugi prihvatali, tako da on nikada nije imao kontrolu nad Bitkoinom. S tim u vezi, identitet tvorca Bitkoina relevantan je poput identiteta osobe koja je izumela papir."
@@ -586,7 +586,7 @@ sr:
     acquireli1: "Kao platno sredstvo za robu i usluge."
     acquireli2: "Kupi bitkoin preko <a href=\"https://www.buybitcoinworldwide.com\">Bitkoin menjačnica</a>."
     acquireli3: "Razmeni bitkoine sa <a href=\"https://localbitcoins.com/\">nekim u blizini</a>."
-    acquireli4: "Zaradi bitkoine preko konkurentnog <a href=\"http://www.bitcoinmining.com/\">rudarenja</a>."
+    acquireli4: "Zaradi bitkoine preko konkurentnog <a href=\"https://www.bitcoinmining.com/\">rudarenja</a>."
     acquiretxt1: "Iako je moguće da pojedinci prodaju svoje bitkoine preko u zamenu za uplatu preko kreditne kartice ili PayPal-a, većina menjačnica neće dozvoliti kupovinu preko ovih metoda plaćanja. Razlog tome je veliki rizik od poništavanje transakcije i povraćaja novca od strane kupca, a samim tim i veća mogućnost prevare."
     makepayment: "Koliko je teško izvršiti uplatu u Bitkoinu?"
     makepaymenttxt1: "Bitkoin uplate su lakše plaćanja preko debitih ili kreditnih kartica i mogu se primati bez posebnog trgovinskog naloga. Uplate se šalju preko specijalnih novčanika, aplikacija koje se nalaze na vašem računaru ili telefonu, tako što ćete uneti adresu primaoca, iznos, i pritisnuti na dugme pošalji. Kako bi unos adrese primaoca bio ubrzan i olakšan, veliki broj novčanika koristi tehnologiju skeniranja QR koda sa uređaja ili samim dodirivanjem dva telefona uz pomoć NFC tehnologije."
@@ -726,7 +726,7 @@ sr:
     miningsecure: "Kako rudarenje pomaže bezbednost Bitkoina?"
     miningsecuretxt1: "Rudarenje je ekvivalent konkurentnoj lutriji koja otežava bilo kome da uzastopno pronalazi blokove transakcija i dodaje ih u blokčejn. Ta nasumičnost zapravi i kreira neutralnost mreže tako što onemogućava pojedinca da blokira transakcije. Takođe ona isto onemogućuje individualnim rudarima da menjaju delove blokčejna kako bi vratili svoje već potršoene bitkoine, što znači da onemogućava da drugi korisnici budu prevareni. Kopanje otežava obrtanje prethodnih transakcija zbog toga što zahteva  da se nakon promene u transakciji svi blokovi izmene a računari širom sveta saglase sa transakcijom."
     miningstart: "Šta mi je potrebno da bih počeo sa rudarenjem?"
-    miningstarttxt1: "Na početku, svako je mogao da kopa Bitkoin i nađe novi blok, koristeći najobičnij procesor na računaru (CPU). Kako je konkurencija postala jača, pronalaženje bloka se povećalo do mere gde je jedina isplativa metoda korišćenje specijalizovanog hardvera. Možete posetiti <a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a> za više informacija."
+    miningstarttxt1: "Na početku, svako je mogao da kopa Bitkoin i nađe novi blok, koristeći najobičnij procesor na računaru (CPU). Kako je konkurencija postala jača, pronalaženje bloka se povećalo do mere gde je jedina isplativa metoda korišćenje specijalizovanog hardvera. Možete posetiti <a href=\"https://www.bitcoinmining.com/\">BitcoinMining.com</a> za više informacija."
     security: "Bezbednost"
     secure: "Da li je Bitkoin bezbedan?"
     securetxt1: "Bitkoin tehnologija - protokol i kriptografija ima veoma sigurnu podlogu, a Bitkoin mreža je verovatno najveći distribuirani kompjuterski projekat na svetu. Najčešća ranjivost Bitkoina je zapravo - greška samih korisnika. Bitkoin fajlovi i datoteke koje sadže privatni ključ mogu se greškom obrisati, izgubiti ili biti ukradeni. Situacija je potpuno ista kao i kod fizičkog keša koji se čuva u digitalnoj formi. Srećom, korisnici mogu da prate sigurnosne preporuke i prakse, kako bi zaštitili svoj novac ili koristiti service koji nudedobar nivo zaštite i osiguranje od krađe i gubitka."
@@ -814,7 +814,7 @@ sr:
         po sekundi, da pretražujete web stranice sa mogućnošću davanje male napojnice
         za svaku reklamu koja se ne pokaže, ili da kupite WiFi protok po kilobajtu.
         Bitkoin je dovoljno efikasan da učini sve navedene ideje mogućim. <a href="https://bitcoinj.github.io/working-with-micropayments">Saznajte
-        više</a> o tehnologiju Bitkoin mikroplaćanja ili o <a href="http://lightning.network/">budučim
+        više</a> o tehnologiju Bitkoin mikroplaćanja ili o <a href="https://lightning.network/">budučim
         nadogradnjama</a> protokola koje se trenutno dešavaju kako bi mirkoplaćanja
         postala dostupnija.
     mediation: "Posredovanje u sporu"
@@ -909,7 +909,7 @@ sr:
     pagetitle: "Bitkoin Resursi"
     pagedesc: "Korisni sajtovi i resursi o Bitkoinu."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin Wiki</a>"
-    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
+    linkcointelegraph: "<a href=\"https://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Adresar"
     linkwallets: "Novčanici"
     linkmerchants: "Trgovci"
@@ -1016,15 +1016,15 @@ sr:
     node: "Budite mreža"
     nodetxt: "Ukoliko imate dobru internet konekciju, možete pomoći ojačavanju mreže tako što ćete na vaš računar ili server pokrenuti potpuni softverski klijent (full node) uz otvoreni 8833 port. Full node osigurava mrežu i transakcije."
     mining: "Rudarstvo"
-    miningtxt: "Možete početi sa <a href=\"http://www.bitcoinmining.com/\">kopanjem bitkoina</a> kako bi pomogli pri obradi transakcija. Kako bi se mreža zaštitila, učlanite se u manje rudarske grupe (mining pool) i preferirajte decentralizovane grupe, kao <a href=\"http://p2pool.in/\">P2Pool</a> ili <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">grupe</a> sa getblocktemplate (GBT) podškom. "
+    miningtxt: "Možete početi sa <a href=\"https://www.bitcoinmining.com/\">kopanjem bitkoina</a> kako bi pomogli pri obradi transakcija. Kako bi se mreža zaštitila, učlanite se u manje rudarske grupe (mining pool) i preferirajte decentralizovane grupe, kao <a href=\"http://p2pool.in/\">P2Pool</a> ili <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">grupe</a> sa getblocktemplate (GBT) podškom. "
     develop: "Razvoj"
     developtxt: "Bitkoin je besplatan softver. Ako ste programer, možete iskoristiti svoje veštine u dobre svrhe i pomoći razvitku i <a href=\"#development#\">poboljšanju Bitkoina</a>. Možete i izgraditi nove neverovatne usuge i softvere koji koriste Bitkoin."
     donation: "Donacije"
-    donationtxt: "Najlakši način da pomognete je da <a href=\"http://bitgivefoundation.org/donate-now/\">donirate</a> bitkoin BitGive fondaciji. Možete pomoći diretkno tako što ćete donirati bilo kojem projektu povezanim sa Bitkoinom za koji verujete da će biti od koristi u budućnosti."
+    donationtxt: "Najlakši način da pomognete je da <a href=\"https://bitgivefoundation.org/donate-now/\">donirate</a> bitkoin BitGive fondaciji. Možete pomoći diretkno tako što ćete donirati bilo kojem projektu povezanim sa Bitkoinom za koji verujete da će biti od koristi u budućnosti."
     nonprofit: "Organizacije"
     nonprofittxt: "<a href=\"https://bitcoinfoundation.org/\">Bitkoin Fondacija</a> i mnoge druge <a href=\"#community##[community.non-profit]\">neprofitne organizacije</a> su posvećene zaštiti i promociji Bitkoina. Možete pomoći ovim grupama učlanjenjem i uzimanjem uloge u njihovim projektima, diskusijama i događajima."
     spread: "Širenje"
-    spreadtxt: "Pričajte o Bitkoinu ljudima koji su zainteresovani. Pišite o njemu na vašem blogu. Recite svojim omiljenim prodavnicama da bi ste voleli da plaćate sa Bitkoinima. Pomozite sa ažuriranjem <a href=\"http://usebitcoins.info/\">trgovačkog adresara</a>. Ili budite kreativni i napravite sebi lepu Bitkoin majicu."
+    spreadtxt: "Pričajte o Bitkoinu ljudima koji su zainteresovani. Pišite o njemu na vašem blogu. Recite svojim omiljenim prodavnicama da bi ste voleli da plaćate sa Bitkoinima. Pomozite sa ažuriranjem <a href=\"https://usebitcoins.info/\">trgovačkog adresara</a>. Ili budite kreativni i napravite sebi lepu Bitkoin majicu."
     wiki: "Dokumentacija"
     wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> i <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> pružaju korisnu dokumentaciju i mi konstantno unapređujemo informacije koje sadrže. Možete pomoći da unapredimo resurse i da ih redovno ažuriramo."
     translate: "Prevod"
@@ -1124,7 +1124,7 @@ sr:
     banner-core-moved: |
         Ova stranica premeštena je na novi Bitcoin Core sajt (klikni ovde za preusmeravanje)
     banner-translate: "Prevod za ovaj jezik je zastareo. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Kliknite ovde kako bi pomogli prevođenje bitcoin.org na vaš jezik</a>."
-    footer: "Izbačeno pod <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licencom</a>"
+    footer: "Izbačeno pod <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licencom</a>"
     donate-community: "Podržite Bitcoin.org"
     donate-support: "Bitcoin.org se održava od strane zajednice."
     network-status: "Status Mreže"
