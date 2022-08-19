@@ -1,5 +1,6 @@
 langsorder:
 - 'id'
+- 'ca'
 - 'da'
 - 'de'
 - 'en'
@@ -31,6 +32,7 @@ langsorder:
 langs:
   'ar': 'العربية'
   'bg': 'български'
+  'ca': 'Català'
   'da': 'Dansk'
   'de': 'Deutsch'
   'en': 'English'
