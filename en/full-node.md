@@ -115,7 +115,7 @@ Core running.
 {:toc}
 
 <ul class="reportissue"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new">Report An Issue</a></li></ul>
-<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/bitcoin.org/tree/master/en/full-node.md">Edit On GitHub</a></li></ul>
+<ul class="editsource"><li><a href="https://github.com/bitcoin-dot-org/Bitcoin.org/blob/master/en/full-node.md">Edit On GitHub</a></li></ul>
 </div>
 </div>
 
@@ -141,6 +141,14 @@ Many people and organizations volunteer to run full nodes using spare
 computing and bandwidth resources---but more volunteers are needed to
 allow Bitcoin to continue to grow.  This document describes how you can
 help and what helping will cost you.
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
+
+## Setup a Full Node
+
+<center><iframe width="100%" height="315" src="https://www.youtube.com/embed/xc_TxlByxeY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="1">
@@ -411,7 +419,7 @@ Scroll to the bottom of the file displayed and add the following line:
 
 Save the file and exit; the updated crontab file will be installed for
 you. On most distributions, this will cause Bitcoin Core daemon to be
-automatically started each time your reboot your computer.
+automatically started each time you reboot your computer.
 
 If you're a expert system administrator and want to use an init script instead, see
 [the init scripts directory in Bitcoin Core's source tree](https://github.com/bitcoin/bitcoin/tree/master/contrib/init).
