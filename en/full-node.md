@@ -1256,7 +1256,7 @@ This is usually as easy as starting your firewall configuration software
 and defining a new rule to allow inbound connections to port 8333.  For
 additional information for Windows, see the links below:
 
-* [Instructions for Windows Firewall](http://windows.microsoft.com/en-us/windows/open-port-windows-firewall#1TC=windows-7)
+* [Instructions for Windows Firewall](https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-port-rule)
 * [Instructions for Norton Firewall](http://community.norton.com/en/forums/firewall-blocking-program-how-open-ports)
 * [Instructions for Mcafee Personal Firewall](http://service.mcafee.com/FAQDocument.aspx?id=TS100887)
 
