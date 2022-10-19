@@ -1199,7 +1199,7 @@ by operating system:
   with `ether:` and copy the immediately following field that looks like
   01:23:45:67:89:ab. Use that value in the instructions below.
 
-Once you have the MAC address, you can fill it into to your router's
+Once you have the MAC address, you can fill it into your router's
 manual DHCP assignment table, as illustrated below. Also choose an IP
 address and make a note of it for the instructions in the next
 subsection. After entering this information, click the Add or Save
@@ -1328,7 +1328,7 @@ chatrooms](/en/bitcoin-core/help#live).
 
 ### Reduce Storage
 
-It is possible to configure your node to to run in pruned mode in order to
+It is possible to configure your node to run in pruned mode in order to
 reduce storage requirements. This can reduce the disk usage from over {{site.text.bitcoin_datadir_gb}}GB to
 around {{site.text.bitcoin_datadir_gb_pruned}}GB.
 
@@ -1351,7 +1351,7 @@ blocks could be served to other nodes.
 Some node operators need to deal with bandwidth caps imposed by their ISPs.
 
 By default, Bitcoin Core allows up to 125 connections to different peers, 10 of
-which are outbound. You can therefore have at most 117 inbound connections.
+which are outbound. You can therefore have at most 115 inbound connections.
 
 The default settings can result in relatively significant traffic consumption.
 
