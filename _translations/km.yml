@@ -1168,90 +1168,90 @@ km:
     spend-bitcoin: spend-bitcoin
   anchor:
     community:
-      non-profit: មិនគិតចំណេញ
+      non-profit: non-profit
     scams:
-      blackmail: គំរាមរកផលប្រយោជន៏
-      fake-exchanges: ការប្តូរ-ក្លែងក្លាយ
-      free-giveaways: មិនគិតប្រាក់
-      impersonation: ការក្លែងបន្លំ
-      malware: មេរោគ
-      meet-in-person: ជួបផ្ទាល់
+      blackmail: blackmail
+      fake-exchanges: fake-exchanges
+      free-giveaways: free-giveaways
+      impersonation: impersonation
+      malware: malware
+      meet-in-person: meet-in-person
       money-transfer-fraud: money-transfer-fraud
-      phishing-emails: អ៊ីមែលបន្លំ
-      phishing-websites: គេហទំព័របន្លំ
-      ponzi-schemes: គ្រោងការណ៍ ponzi
-      pyramid-schemes: schemes-ពីរ៉ាមីត
-      prize-giveaways: ការផ្តល់ជូន-រង្វាន់
-      pump-and-dumps: បូម-និង-ចាក់សំរាម
+      phishing-emails: phishing-emails
+      phishing-websites: phishing-websites
+      ponzi-schemes: ponzi-schemes
+      pyramid-schemes: pyramid-schemes
+      prize-giveaways: prize-giveaways
+      pump-and-dumps: pump-and-dumps
       ransomware: ransomware
-      scam-coins: កាក់ក្លែងក្លាយ
+      scam-coins: scam-coins
     vocabulary:
-      address: អាស្រយដ្ឋាន
+      address: address
       bit: bit
       bitcoin: bitcoin
-      blockchain: ចង្វាក់ម្តំុ
-      block: ម្តំុ
+      blockchain: block-chain
+      block: block
       btc: btc
-      confirmation: ការគូសបញ្ជាក់បន្ថែម
+      confirmation: confirmation
       cryptography: cryptography
-      doublespend: ចំណាយផ្ទួន
+      doublespend: double-spend
       hashrate: hash-rate
-      mining: ការរករ៉ែ
-      p2p: 2មួយទៅមួយ
-      privatekey: លេខសម្ងាត់
-      signature: ហត្ថលេខា
-      wallet: ការបូបលុយ
+      mining: mining
+      p2p: p2p
+      privatekey: private-key
+      signature: signature
+      wallet: wallet
     faq:
-      general: ទូទៅ
-      whatisbitcoin: អ្វីទៅ-ជា-Bitcoin
-      creator: តើនរណា-ជាអ្នកបង្កើត-bitcoin
-      whocontrols: អ្នកណា-គ្រប់គ្រង-បណ្តាញ-bitcoin
-      howitworks: តើ-bitcoin-ដំណើរការ-យ៉ាងដូចម្តេច
-      acquire: របៀប-ធ្វើ-មួយ-ទទួលបាន-bitcoins
-      used: "គឺ-bitcoin-ពិតជាបានប្រើដោយមនុស្ស"
-      makepayment: របៀប-ពិបាក-គឺ-វា-ដើម្បីធ្វើ-មួយ-bitcoin-ការទូទាត់
-      advantages: តើ-អ្វីជា-គុណសម្បត្តិ-នៃ-bitcoin
-      disadvantages: អ្វីជា-គុណវិបត្តិ-នៃ-bintcoin
-      trust: ហេតុអ្វី-ធ្វើ-មនុស្ស-ទុកចិត្ត-bitcoin
-      makemoney: តេី-ខ្ញុំ-អាច-រកលុយ-ពី-Bitcoin-មែនទេ
-      virtual: គឺ-bitcoin-និម្មិត-ពេញលេញ-និង-មិនសំខាន់
-      anonymous: គឺ-bitcoin-អនាមិក
-      lost: តើ-មានអ្វីកើតឡើង-នៅពេល-ដែលបាត់បង់-​bitcoins
-      scale: តើ-bitcoin-អាច-មានវិសាលភាព-ទៅជា-បណ្តាញ-ទូរទាត់ប្រាក់-ដ៏សំខាន់-មួយបានទេ
-      legal: ស្របច្បាប់
-      islegal: តើ-bitcoins-ស្របច្បាប់ទេ
-      illegalactivities: តើ-bitcoins-មានសារសំខាន់-ចំពោះ-សកម្មភាព-ខុសច្បាប់ទេ
-      regulated: ' តើ-bitcoin-អាច-ត្រូវបានគ្រប់គ្រងទៀងទាត់ទេ'
-      taxes: ចុះ-ចំណែក-bitcoins-និង-ពន្ធ
-      consumer: ចុះ-ចំណែក-bitcoins-និង-ការការពារ-អ្នកប្រើប្រាស់
-      economy: សេដ្ឋកិច្ច
-      bitcoinscreated: តើbitcoinsត្រូវបានបង្កើតឡើងតាមរបៀបណា
-      whyvalue: ហេតុអ្វីបានជាbitcoinsមានតំលៃ
-      whatprice: តើអ្វីខ្លះដែលកំនត់តំលៃbitcoinsបាន
-      worthless: តើ-bitcoins-អាច-និង-អស់តំលៃទេ
-      bubble: តើ-bitcoin-ជាពពុះ
-      ponzi: តេី-bitcoin-a-ponzi-scheme
-      earlyadopter: មិន-bitcoin-ផ្តល់អត្ថប្រយោជន៍-អយុត្តិធម៌-ចំពោះ-អ្នកចាប់ផ្តើមដំបូង
-      finitelimitation: ចំនួនទឹកប្រាក់-ចុងក្រោយនៃ-bitcoin-មិនមែនជា-ដែនកំណត់ទេ
-      deflationaryspiral: នឹងមិន-bitcoin-ធ្លាក់ក្នុង-spiral-បរិត្តផរណា-ទេ
-      speculationvolatility: មិន​មែន​ជា-speculation-និង​-ភាព​ប្រែប្រួល-​ជា​បញ្ហា​សម្រាប់-bitcoin -ទេ
-      buyall: តើនឹងមានអ្វីកើតឡើងប្រសិនបើមានអ្នកណាម្នាក់ទិញយកbitcoinsដែលមានទាំងអស់
-      bettercurrency: តើនឹងមានអ្វីកើតឡើងប្រសិនបើមានអ្នកណាម្នាក់បង្កើតdigital-currencyដែលប្រសើរជាងនេះ
-      transactions: ប្រតិបត្តិការណ៍ជាច្រើន
-      tenminutes: ហេតុអ្វីខ្ញំុត្រូវតែចាំ-10នាទី
-      fee: តើ-ថ្លៃ-ប្រតិបត្តិការ-នឹងមានចំនួន-ប៉ុន្មាន
-      poweredoff: តើមានអ្វី-ប្រសិនបើ-ខ្ញុំ-ទទួល-មួយ-bitcoin-នៅពេលដែល-កុំព្យូទ័ររបស់ខ្ញុំ-ត្រូវបាន-បិទ
-      sync: អ្វី-ធ្វើ-សមកាលកម្ម-មានន័យ-ហើយ-ហេតុអ្វី-ធ្វើ-វា-ចំណាយពេលយូរ
-      mining: ការរករ៉ែ
-      whatismining: អ្វីជាការរករ៉ែbitcoin
-      howminingworks: តើ bitcoin mining ដំណើរការយ៉ាងដូចម្តេច
-      miningwaste: មិនមែនជាការជីកយករ៉ែ - ប៊ីតកាក់ - កាកសំណល់នៃថាមពល
-      miningsecure: តើរបៀបរករ៉ែជួយសង្គ្រោះ bitconយ៉ាងម៉េច
-      miningstart: តើ-អ្វីដែល-ខ្ញំុ-ត្រូវការ-ដើម្បី-រុករករ៉ែ
-      security: សុវត្ថិភាព
-      secure: តើbitcoinមានសុវត្ថិភាពទេ
-      hacked: តើ-bitcoin-មិនដែល-ត្រូវបាន-គេ-hack-ពីមុនទេ
-      collude: តើអ្នក​ប្រើប្រាស់អាចខុបខិតគ្នាប្រឆាំងនិង bitcoin
-      quantum: តើ-bitcoin-មានតំលៃ-quantum-computing-ទេ
-      help: ជំនួយ
-      morehelp: ជំនួយបន្ថែម
+      general: general
+      whatisbitcoin: what-is-bitcoin
+      creator: who-created-bitcoin
+      whocontrols: who-controls-the-bitcoin-network
+      howitworks: how-does-bitcoin-work
+      acquire: how-does-one-acquire-bitcoins
+      used: "is-bitcoin-really-used-by-people"
+      makepayment: how-difficult-is-it-to-make-a-bitcoin-payment
+      advantages: what-are-the-advantages-of-bitcoin
+      disadvantages: what-are-the-disadvantages-of-bitcoin
+      trust: why-do-people-trust-bitcoin
+      makemoney: can-i-make-money-with-bitcoin
+      virtual: is-bitcoin-fully-virtual-and-immaterial
+      anonymous: is-bitcoin-anonymous
+      lost: what-happens-when-bitcoins-are-lost
+      scale: can-bitcoin-scale-to-become-a-major-payment-network
+      legal: legal
+      islegal: is-bitcoin-legal
+      illegalactivities: is-bitcoin-useful-for-illegal-activities
+      regulated: can-bitcoin-be-regulated
+      taxes: what-about-bitcoin-and-taxes
+      consumer: what-about-bitcoin-and-consumer-protection
+      economy: economy
+      bitcoinscreated: how-are-bitcoins-created
+      whyvalue: why-do-bitcoins-have-value
+      whatprice: what-determines-bitcoins-price
+      worthless: can-bitcoins-become-worthless
+      bubble: is-bitcoin-a-bubble
+      ponzi: is-bitcoin-a-ponzi-scheme
+      earlyadopter: doesnt-bitcoin-unfairly-benefit-early-adopters
+      finitelimitation: wont-the-finite-amount-of-bitcoins-be-a-limitation
+      deflationaryspiral: wont-bitcoin-fall-in-a-deflationary-spiral
+      speculationvolatility: isnt-speculation-and-volatility-a-problem-for-bitcoin
+      buyall: what-if-someone-bought-up-all-the-existing-bitcoins
+      bettercurrency: what-if-someone-creates-a-better-digital-currency
+      transactions: transactions
+      tenminutes: why-do-i-have-to-wait-10-minutes
+      fee: how-much-will-the-transaction-fee-be
+      poweredoff: what-if-i-receive-a-bitcoin-when-my-computer-is-powered-off
+      sync: what-does-synchronizing-mean-and-why-does-it-take-so-long
+      mining: mining
+      whatismining: what-is-bitcoin-mining
+      howminingworks: how-does-bitcoin-mining-work
+      miningwaste: isnt-bitcoin-mining-a-waste-of-energy
+      miningsecure: how-does-mining-help-secure-bitcoin
+      miningstart: what-do-i-need-to-start-mining
+      security: security
+      secure: is-bitcoin-secure
+      hacked: hasnt-bitcoin-been-hacked-in-the-past
+      collude: could-users-collude-against-bitcoin
+      quantum: is-bitcoin-vulnerable-to-quantum-computing
+      help: help
+      morehelp: more-help
