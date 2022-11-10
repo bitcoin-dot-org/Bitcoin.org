@@ -74,7 +74,6 @@ pre-build-tests: pre-build-tests-fast
 
 ## All post-build tests, including those which might take multiple minutes
 post-build-tests: post-build-tests-fast \
-    check-for-broken-bitcoin-core-download-links \
     check-html-proofer
 
 ## All manual updates to content that should be run by a human. This
