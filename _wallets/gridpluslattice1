@@ -1,0 +1,27 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+id: gridpluslattice1
+title: "GridPlus Lattice1"
+titleshort: "GridPlus Lattice1"
+compat: "hardware"
+level: 2
+platform:
+  - hardware:
+    name: hardware
+    os:
+      - name: hardware
+        text: "walletgridpluslattice1"
+        link: "https://www.gridplus.io/"
+        source: "https://github.com/GridPlus"
+        screenshot: ""
+        features: "bech32 hardware_wallet legacy_addresses segwit"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkneutralvalidationvariable"
+          transparency: "checkpasstransparencyopenspechardware"
+          environment: "checkgoodenvironmenthardware"
+          privacy: "checkgoodcontrolfull"
+          fees: "checkneutralfeecontrolvariable"
+---
