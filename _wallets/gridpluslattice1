@@ -22,6 +22,6 @@ platform:
           validation: "checkneutralvalidationvariable"
           transparency: "checkpasstransparencyopenspechardware"
           environment: "checkgoodenvironmenthardware"
-          privacy: "checkgoodcontrolfull"
+          privacy: "checkneutralprivacyvariable"
           fees: "checkneutralfeecontrolvariable"
 ---
