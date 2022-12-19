@@ -14,7 +14,7 @@ platform:
       - name: hardware
         text: "walletgridpluslattice1"
         link: "https://www.gridplus.io/"
-        source: "https://github.com/GridPlus"
+        source: "https://docs.gridplus.io/lattice-manager/managing-your-bitcoin-wallet"
         screenshot: ""
         features: "bech32 hardware_wallet legacy_addresses segwit"
         check:
