@@ -15,7 +15,7 @@ platform:
       - name: ios
         text: "walletfltr"
         link: "https://apps.apple.com/app/fltrwallet/id1620857882"
-        source: "https://github.com/fltrWallet"
+        source: "https://github.com/fltrWallet/"
         screenshot: "fltrwallet_ios.png"
         features: "bech32 legacy_addresses segwit"
         check:
@@ -35,7 +35,7 @@ platform:
       - name: mac
         text: "walletfltr"
         link: "https://apps.apple.com/app/fltrwallet/id1620857882"
-        source: "https://github.com/fltrWallet"
+        source: "https://github.com/fltrWallet/"
         screenshot: "fltrwallet_mac.png"
         features: "bech32 legacy_addresses segwit"
         check:
