@@ -301,6 +301,7 @@ en:
     walletunstoppable: "Unstoppable is a non-custodial and intuitive mobile wallet for Bitcoin and other cryptocurrencies. This wallet packs some essential features to store, exchange and monitor cryptocurrency  performance while staying private."
     walletspecterdesktop: "Specter Desktop is a desktop wallet interface for Bitcoin Core with a focus on privacy, coin control, single and multisig setups. Specter is non-custodial and works with all major hardware wallets."
     walletsparrow: "Sparrow is a Bitcoin wallet with a focus on security, privacy and usability. Sparrow supports single and multisig script types, connects to an Electrum server or Bitcoin Core, interacts with popular hardware wallets, provides full coin and fee control, and contains a transaction editor and a blockchain explorer."
+    walletfltr: "fltrWallet is built for privacy first as an open-source and non-custodial app for Apple devices. Peers cannot track which coins are held by a fltrWallet user thanks to compact filter synchronization. Recovers most 12 word wallets including BRD without leaking any information. TapRoot (pay to taproot or P2TR) support."
     walletdownload: "Install"
     walletvisit: "Visit website"
     walletsourcecode: "Source code"
