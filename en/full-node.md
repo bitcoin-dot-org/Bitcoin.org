@@ -1312,7 +1312,7 @@ directories:
 
 - Linux: $HOME/.bitcoin/
 
-The config file, bitcoin.conf, may not exist at these locations if you chose a custom location during the GUI setup. It will be at this custom location. The file may also not exist and need to be created, in the custom data folder you chose, or in the locations above.
+The config file, bitcoin.conf, may not exist at these locations if you chose a custom location during the GUI setup it will be at this custom location. The file may also need to be created: in the custom data folder you chose, or in the locations above.
 
 To add an option to the configuration file, just remove its leading
 dash.  You may also need to remove any quotation marks you used in your shell.
