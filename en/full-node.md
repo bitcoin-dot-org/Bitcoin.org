@@ -444,9 +444,9 @@ Bitcoin Core installer to your desktop.
 
 {{verifyReleaseSignatures}}
 
-After downloading the file to your desktop or your Downloads folder
-(`C:\Users\<YOUR USER NAME>\Downloads`), run it by double-clicking its icon.
-Windows will ask you to confirm that you want to run it. Click Yes and the
+After downloading the file to your desktop or your Downloads folder(`C:\Users\<YOUR USER NAME>\Downloads`), 
+right click and select "Run as administrator".
+Windows will ask you to confirm and then ask if you want to run it. Click Yes and the
 Bitcoin installer will start.  It's a typical Windows installer, and it will
 guide you through the decisions you need to make about where to install Bitcoin
 Core.
