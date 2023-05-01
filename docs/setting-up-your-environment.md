@@ -1,13 +1,13 @@
-## Setting Up Your Environment
+# Setting Up Your Environment
 
-#### Preview Small Text Changes
+## Preview Small Text Changes
 
 Simple text changes can be previewed live on bitcoin.org. You only need to click
 anywhere on the page and hold your mouse button for one second. You'll then be
 able to edit the page just like a document. Changes will be lost as soon as the
 page is refreshed.
 
-#### Build The Site Locally
+## Build The Site Locally
 
 For anything more than simple text previews, you will need to build the
 site. If you can't do this yourself using the instructions below, please
@@ -19,19 +19,19 @@ To build the site, you need to go through a one-time installation
 procedure that takes 15 to 30 minutes.  After that you can build the
 site an unlimited number of times with no extra work.
 
-##### Install The Dependencies
+### Install The Dependencies
 
 Before building the site, you need to install the following
 dependencies and tools, which are pretty easy on any modern Linux:
 
-**Install binary libraries and tools**
+#### Install binary libraries and tools
 
 On recent versions of Ubuntu and Debian, you can run the following
 command to ensure you have the required libraries, headers, and tools:
 
     sudo apt-get install build-essential git libicu-dev zlib1g-dev
 
-**Install RVM**
+#### Install RVM
 
 Install RVM using either the [easy instructions](https://rvm.io/) or the
 [more secure instructions](https://rvm.io/rvm/security).
@@ -42,7 +42,7 @@ following command:
 
     source ~/.rvm/scripts/rvm
 
-**Install Ruby 2.5.8**
+#### Install Ruby 2.5.8
 
 To install Ruby 2.5.8, simply run this command:
 
@@ -52,6 +52,23 @@ Sometimes this will find a pre-compiled Ruby package for your Linux
 distribution, but sometimes it will need to compile Ruby from scratch
 (which takes about 15 minutes).
 
+If Ruby 2.5.8 fails to install with a `make` error, you likely need to install an older version of OpenSSL that is compatible (source for these instructions can be found [here](https://github.com/rbenv/ruby-build/discussions/1940#discussioncomment-2663209)):
+
+    sudo apt install build-essential checkinstall zlib1g-dev
+    wget https://www.openssl.org/source/openssl-1.1.1q.tar.gz
+    tar xf openssl-1.1.1q.tar.gz
+    cd ~/Downloads/openssl-1.1.1q
+    ./config --prefix=/opt/openssl-1.1.1q --openssldir=/opt/openssl-1.1.1q shared zlib
+    make
+    make test
+    sudo make install
+    sudo rm -rf /opt/openssl-1.1.1q/certs
+    sudo ln -s /etc/ssl/certs /opt/openssl-1.1.1q
+
+After this older version of OpenSSL is available you can install Ruby 2.5.8 with the following command:
+
+    rvm install 2.5.8 --with-openssl-dir=/opt/openssl-1.1.1q
+
 After Ruby 2.5.8 is installed, make it your default Ruby:
 
     rvm alias create default ruby-2.5.8
@@ -60,20 +77,25 @@ And tell your system to use it:
 
     rvm use default
 
+Validate that your default version of Ruby is now `2.5.8` (the exact minor version might not match, but should start with `2.5.8`):
+
+    ruby --version
+    ruby 2.5.8p224 (2020-03-31 revision 67882) [x86_64-linux]
+
 (Note: you can use a different default Ruby, but if you ever change
 your default Ruby, you must re-run the `gem install bundle` command
 described below before you can build the site. If you ever receive a
 "eval: bundle: not found" error, you failed to re-run `gem install
 bundle`.)
 
-**Install Bundle**
+#### Install Bundle
 
 When you used RVM to install Ruby, it also installed the `gem` program.
 Use that program to install bundle:
 
     gem install bundle
 
-**Install the Ruby dependencies**
+#### Install the Ruby dependencies
 
 Ensure you checked out the site repository as described in [Working with
 GitHub](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md).
@@ -91,7 +113,7 @@ long time to install on some systems, so be patient.
 
 Once Bundle completes successfully, you can preview or build the site.
 
-##### Preview The Site
+### Preview The Site
 
 To preview the website in your local browser, make sure you're in the
 `bitcoin.org` directory and run the following command:
@@ -107,7 +129,7 @@ message like this:
 
 Visit the indicated URL in your browser to view the site.
 
-##### Build The Site
+### Build The Site
 
 To build the site exactly like we do for the deployment server, make
 sure you're in the `bitcoin.org` directory and run:
@@ -126,7 +148,7 @@ directory.  The following alternative options are available:
     ## Or build the site and run all tests
     make all
 
-#### Fast Partial Previews Or Builds
+## Fast Partial Previews Or Builds
 
 In order to preview some changes faster (such as markup and CSS), you can disable all plugins and
 languages except those you need by prefixing the `ENABLED_LANGS` and
@@ -168,7 +190,7 @@ run if the API site is running slow.
 
 For a list of languages, look in the `_translations` directory.
 
-#### Publishing Previews
+## Publishing Previews
 
 You can publish your previews online to any static hosting service.
 [GitHub pages](https://pages.github.com/) is a free service available to
