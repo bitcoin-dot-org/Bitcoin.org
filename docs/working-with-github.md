@@ -1,4 +1,4 @@
-## Working With GitHub
+# Working With GitHub
 
 GitHub allows you to make changes to a project using git, and later submit them
 in a "pull request" so they can be reviewed and discussed. In order to use
@@ -8,13 +8,13 @@ git](https://help.github.com/articles/set-up-git). You will also need to
 from its [GitHub page](https://github.com/bitcoin-dot-org/bitcoin.org) and clone
 your GitHub repository into a local directory with the following command lines:
 
-```
+```bash
 git clone (url provided by GitHub on your fork's page) bitcoin.org
 cd bitcoin.org
 git remote add upstream https://github.com/bitcoin-dot-org/bitcoin.org.git
 ```
 
-**How to send a pull request**
+## How to send a pull request
 
 1. Checkout to your master branch. `git checkout master`
 2. Create a new branch from the master branch. `git checkout -b (any name)`
@@ -30,7 +30,7 @@ When submitting a pull request, please take required time to discuss your
 changes and adapt your work. It is generally a good practice to split unrelated
 changes into separate branches and pull requests.
 
-**Travis Continuous Integration (CI)**
+## Travis Continuous Integration (CI)
 
 Shortly after your Pull Request (PR) is submitted, a Travis CI job will
 be added to [our queue](https://travis-ci.org/bitcoin-dot-org/bitcoin.org). This
@@ -59,13 +59,13 @@ builds before opening a pull request, it's really simple:
    name when the build finishes, and clicking on the icon will take you
    to the corresponding build report.
 
-**How to make additional changes in a pull request**
+## How to make additional changes in a pull request
 
 You simply need to push additional commits on the appropriate branch of your
 GitHub repository. That's basically the same steps as above, except you don't
 need to re-create the branch and the pull request.
 
-**How to reset and update your master branch with latest upstream changes**
+## How to reset and update your master branch with latest upstream changes
 
 1. Fetch upstream changes. `git fetch upstream`
 2. Checkout to your master branch. `git checkout master`
@@ -73,7 +73,7 @@ need to re-create the branch and the pull request.
    upstream/master`
 4. Replace your master branch on GitHub. `git push origin master -f`
 
-**Advanced GitHub Workflow**
+## Advanced GitHub Workflow
 
 If you continue to contribute to Bitcoin.org beyond a single pull
 request, you may want to use a more [advanced GitHub
