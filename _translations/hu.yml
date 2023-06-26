@@ -258,7 +258,6 @@ hu:
     walletkeepkey: "A KeepKey egy olyan hardvertárca, amely leegyszerűsíti a bitcoin védelmét. Amikor a KeepKey-re bízzuk a pénzünket, akkor minden bitcointranzakciót végrehajtás előtt meg kell tekintenünk az OLED-kijelzőn, és egy nyomógombbal jóvá kell azt hagynunk."
     walletbitpay: "A BitPay Wallet az a HD-multisig tárca, amelyet eredetileg a BitPay vagyonának tárolására fejlesztettek. A BitPay többszemélyes és megosztott tárcát is támogat, valamint tesztnetet és a teljes fizetési protokollt. Egy privát <a href=\"https://github.com/bitpay/bitcore-wallet-service\">BWS</a>-csomópont használatával fokozni lehet a biztonságot és az adatvédelmet."
     walletledgernanos: "A Ledger Nano S egy biztonságos Bitcoin-hardvertárca. Bármilyen számítógéphez csatlakozhat USB-n keresztül, ezenfelül rendelkezik egy OLED-kijelzővel a másodszori ellenőrzés érdekében. Minden tranzakció hitelesítését egyetlen gombnyomással el lehet végezni."
-    walleteclairmobile: "Az Eclair Mobile egy új generációs, Lightning-kompatibilis Bitcoin-tárca. Használható normális Bitcoin-tárcaként, de összekapcsolható a Lightning hálózatával is, olcsó és azonnali utalások érdekében."
     walletwasabi: "A Wasabi egy nyílt forrású, nem letéti, személyes adatok védelmére fókuszáló Bitcoin tárca Windowsra, Linuxra és Macre. Beépített Tor anonimitás hálózat, CoinJoin és érmekontroll funkciókkal jön."
     walletdownload: "Telepítés"
     walletvisit: "Tovább a weboldalra"

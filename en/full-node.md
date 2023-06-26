@@ -1021,10 +1021,10 @@ check the release notes for the new version if you are planning to downgrade.
 If you want to support the Bitcoin network, you must allow inbound
 connections.
 
-When Bitcoin Core starts, it establishes 8 outbound connections to other
+When Bitcoin Core starts, it establishes 10 outbound connections to other
 full nodes so it can download the latest blocks and transactions. If you
 just want to use your full node as a wallet, you don't need more than
-these 8 connections---but if you want to support lightweight clients and
+these 10 connections---but if you want to support lightweight clients and
 other full nodes on the network, you must allow inbound connections.
 
 Servers connected directly to the Internet usually don't require any
@@ -1045,7 +1045,7 @@ The BitNodes project provides an online tool to let you test whether
 your node accepts inbound connections. Before using BitNodes, you must first
 ensure that your node is fully synced with the block chain. Once you've done so,
 start Bitcoin Core (either the GUI or the daemon), wait 10 minutes, and then
-[visit the Bitnodes page](https://bitnodes.21.co/#join-the-network). The tool
+[visit the Bitnodes page](https://bitnodes.io/#join-the-network). The tool
 will attempt to guess your IP address---if the address is wrong (or
 blank), you will need to enter your address manually.
 
@@ -1075,7 +1075,7 @@ instructions below:
 In the bottom right corner of the Bitcoin Core GUI are several icons.
 If you hover over the signal strength icon, it will tell you how many
 connections you have. The icon won't turn green until you have more
-than 8 active connections, which only happens if inbound connections
+than 10 active connections, which only happens if inbound connections
 are allowed.
 
 ![Active connections](/img/full-node/en-active-connections.png?{{site.time | date: '%s'}})
@@ -1094,7 +1094,7 @@ connections.](#enabling-connections)
 
 The [`getconnectioncount`](https://developer.bitcoin.org/reference/rpc/getconnectioncount.html)
 command will tell you how many connections you have. If you have more
-than 8 connections, inbound connections are allowed. For example:
+than 10 connections, inbound connections are allowed. For example:
 
 <pre>$ <b>bitcoin-cli getconnectioncount</b>
 52</pre>
@@ -1199,7 +1199,7 @@ by operating system:
   with `ether:` and copy the immediately following field that looks like
   01:23:45:67:89:ab. Use that value in the instructions below.
 
-Once you have the MAC address, you can fill it into to your router's
+Once you have the MAC address, you can fill it into your router's
 manual DHCP assignment table, as illustrated below. Also choose an IP
 address and make a note of it for the instructions in the next
 subsection. After entering this information, click the Add or Save
@@ -1256,7 +1256,7 @@ This is usually as easy as starting your firewall configuration software
 and defining a new rule to allow inbound connections to port 8333.  For
 additional information for Windows, see the links below:
 
-* [Instructions for Windows Firewall](http://windows.microsoft.com/en-us/windows/open-port-windows-firewall#1TC=windows-7)
+* [Instructions for Windows Firewall](https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-port-rule)
 * [Instructions for Norton Firewall](http://community.norton.com/en/forums/firewall-blocking-program-how-open-ports)
 * [Instructions for Mcafee Personal Firewall](http://service.mcafee.com/FAQDocument.aspx?id=TS100887)
 
@@ -1328,7 +1328,7 @@ chatrooms](/en/bitcoin-core/help#live).
 
 ### Reduce Storage
 
-It is possible to configure your node to to run in pruned mode in order to
+It is possible to configure your node to run in pruned mode in order to
 reduce storage requirements. This can reduce the disk usage from over {{site.text.bitcoin_datadir_gb}}GB to
 around {{site.text.bitcoin_datadir_gb_pruned}}GB.
 
@@ -1350,8 +1350,8 @@ blocks could be served to other nodes.
 
 Some node operators need to deal with bandwidth caps imposed by their ISPs.
 
-By default, Bitcoin Core allows up to 125 connections to different peers, 8 of
-which are outbound. You can therefore have at most 117 inbound connections.
+By default, Bitcoin Core allows up to 125 connections to different peers, 10 of
+which are outbound. You can therefore have at most 115 inbound connections.
 
 The default settings can result in relatively significant traffic consumption.
 
@@ -1379,7 +1379,7 @@ per day)**
 -listen=0
 {% endhighlight %}
 
-Disabling listening will result in fewer nodes connected (remember the maximum of 8
+Disabling listening will result in fewer nodes connected (remember the maximum of 10
 outbound peers). Fewer nodes will result in less traffic usage as you are relaying
 blocks and transactions to fewer nodes.
 

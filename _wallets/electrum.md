@@ -49,11 +49,11 @@ platform:
         link: "https://play.google.com/store/apps/details?id=org.electrum.electrum"
         source: "https://github.com/spesmilo/electrum"
         screenshot: "electrumandroid.png"
-        features: "bech32 legacy_addresses lightning segwit"
+        features: "2fa bech32 legacy_addresses lightning multisig segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvservers"
-          transparency: "checkpasstransparencyopensource"
+          transparency: "checkgoodtransparencydeterministic"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
           fees: "checkgoodfeecontrolfull"
