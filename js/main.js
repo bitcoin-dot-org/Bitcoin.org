@@ -731,6 +731,36 @@ function changeAccordionButtonText(button, text) {
   button.textContent = text;
 }
 
+function showBuySellWidgets() {
+  
+    const sellWidget = window.MoonPayWebSdk.init({
+    flow: 'sell',
+    environment: 'production',
+    containerNodeSelector: '#sell-widget',
+    variant: 'embedded',
+    params: {
+      theme: 'light',
+      colorCode: '#FF9500',
+      apiKey: 'pk_live_QWvwDl3WJAq7S8fDjsOUMfjn09DSw8R'
+    }
+  });
+
+  const buyWidget = window.MoonPayWebSdk.init({
+    flow: 'buy',
+    environment: 'production',
+    containerNodeSelector: '#buy-widget',
+    variant: 'embedded',
+    params: {
+      apiKey: 'pk_live_QWvwDl3WJAq7S8fDjsOUMfjn09DSw8R',
+      theme: 'light',
+      colorCode: '#FF9500'
+    }
+  });
+
+  sellWidget.show();
+  buyWidget.show();
+}
+
 function sortTableColumn(selectedOption) {
   var tableAccordion = document.getElementById('tableAccordion');
   var tableAccordionButton = document.getElementById('tableAccordionButton');
