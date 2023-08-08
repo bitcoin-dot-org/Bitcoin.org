@@ -733,7 +733,7 @@ function changeAccordionButtonText(button, text) {
 
 function showBuySellWidgets() {
   
-    const sellWidget = window.MoonPayWebSdk.init({
+    var sellWidget = window.MoonPayWebSdk.init({
     flow: 'sell',
     environment: 'production',
     containerNodeSelector: '#sell-widget',
@@ -745,7 +745,7 @@ function showBuySellWidgets() {
     }
   });
 
-  const buyWidget = window.MoonPayWebSdk.init({
+  var buyWidget = window.MoonPayWebSdk.init({
     flow: 'buy',
     environment: 'production',
     containerNodeSelector: '#buy-widget',
