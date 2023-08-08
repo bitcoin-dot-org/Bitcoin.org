@@ -19,6 +19,9 @@ http://opensource.org/licenses/MIT.
 <script src="/js/jquery/jquery-1.11.2.min.js"></script>
 <script src="/js/jquery/jquery-ui.min.js"></script>
 <script src="/js/jquery/jquery.qrcode.min.js"></script>
+{% if page.id == "buy" %}
+<script async defer src="https://static.moonpay.com/web-sdk/v1/moonpay-web-sdk.min.js"></script>
+{% endif %}
 <link rel="shortcut icon" href="/favicon.png?{{site.time | date: '%s'}}">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png?{{site.time | date: '%s'}}"/>
 <script>
