@@ -1,0 +1,72 @@
+---
+id: nowwallet
+title: "Now wallet"
+titleshort: "Now wallet"
+compat: "desktop windows mac linux mobile android ios"
+user: beginner
+level: 2
+platform:
+  - desktop:
+    name: desktop
+    default: &DEFAULT
+      text: "walletnowwallet"
+      link: "https://walletnow.app/?download"
+      source: "https://github.com/EvercodeLab"
+      screenshot: "nowwallet.png"
+      features: "bech32 legacy_addresses segwit"
+      check:
+        control: "checkgoodcontrolfull"
+        validation: "checkpassvalidationspvp2p"
+        transparency: "checkpasstransparencyopensource"
+        environment: "checkpassenvironmentmobile"
+        privacy: "checkpassprivacybasic"
+        fees: "checkpassfeecontroldynamic"
+      privacycheck:
+        privacyaddressreuse: "checkpassprivacyaddressrotation"
+        privacydisclosure: "checkfailprivacydisclosurespv"
+        privacynetwork: "checkfailprivacynetworknosupporttor"
+    os:
+      - name: windows
+        <<: *DEFAULT
+      - name: mac
+        <<: *DEFAULT
+      - name: linux
+        <<: *DEFAULT
+  - mobile:
+    name: mobile
+    os:
+      - name: android
+        text: "walletnowwallet"
+        link: "https://play.google.com/store/apps/details?id=com.nowwallet"
+        source: "https://github.com/EvercodeLab"
+        screenshot: "nowwallet.png"
+        features: "2fa legacy_addresses segwit"
+        check:
+          control: "checkpasscontrolhybrid"
+          validation: "checkpassvalidationservers"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroloverride"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+      - name: ios
+        text: "walletnowwallet"
+        link: "https://apps.apple.com/us/app/now-wallet-buy-swap-bitcoin/id1591216386"
+        source: "https://github.com/EvercodeLab"
+        screenshot: "nowwalleti.png"
+        features: "2fa legacy_addresses segwit"
+        check:
+          control: "checkpasscontrolhybrid"
+          validation: "checkpassvalidationservers"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+          fees: "checkpassfeecontroloverride"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosureaccount"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
+---
