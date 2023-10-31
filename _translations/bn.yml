@@ -1,0 +1,1319 @@
+en:
+  about-us:
+    title: "About bitcoin.org"
+    pagetitle: "About bitcoin.org"
+    pagedesc: "Bitcoin.org is dedicated to help Bitcoin to develop in a sustainable way."
+    own: "Who owns bitcoin.org?"
+    owntxt-title: "Satoshi Nakamoto and Martti Malmi"
+    owntxt: "Bitcoin.org was originally registered and owned by Bitcoin's first two developers, <a href=\"https://en.bitcoin.it/wiki/Satoshi_Nakamoto\">Satoshi Nakamoto</a> and <a href=\"https://en.bitcoin.it/wiki/Sirius\">Martti Malmi</a>.  When Nakamoto left the project, he gave ownership of the domain to additional people, separate from the Bitcoin developers, to spread responsibility and prevent any one person or group from easily gaining control over the Bitcoin project."
+    owntxt2-title: "Bitcoin Core"
+    owntxt2: "From 2011 to 2013, the site was primarily used for releasing new versions of the software now called Bitcoin Core. In 2013, the site was redesigned, adding numerous pages, listing additional Bitcoin software, and creating the translation system."
+    owntxt3-title: "Developer documentation was added in 2014"
+    owntxt3: "Updates, fixes, suggestions and improvements from members of the community are welcome."
+    owntxt4-title: "Site is an independent open source project"
+    owntxt4: "Today the site is an independent open source project with contributors from around the world. Final publication authority is held by the co-owners, but all regular activity is organized through the public <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/working-with-github.md\">pull request process</a> and managed by the site co-maintainers."
+    owntxt5: "Bitcoin.org is not Bitcoin's official website. Just like nobody owns the email technology, nobody owns the Bitcoin network. As such, nobody can speak with authority in the name of Bitcoin."
+    control: "Then... who controls Bitcoin?"
+    controltxt: "Bitcoin is controlled by all Bitcoin users around the world. Developers are improving the software but they can't force a change in the rules of the Bitcoin protocol because all users are free to choose what software they use. In order to stay compatible with each other, all users need to use software complying with the same rules. Bitcoin can only work decently with a complete consensus between all users. Therefore, all users and developers have strong incentives to adopt and protect this consensus."
+    mission: "Mission"
+    missiontxt1: "Inform users to protect them from common mistakes."
+    missiontxt2: "Give an accurate description of Bitcoin properties, potential uses and limitations."
+    missiontxt3: "Display transparent alerts and events regarding the Bitcoin network."
+    missiontxt4: "Invite talented humans to help with Bitcoin development at many levels."
+    missiontxt5: "Provide visibility to the large scale Bitcoin ecosystem."
+    missiontxt6: "Improve Bitcoin worldwide accessibility with internationalization."
+    missiontxt7: "Remain a neutral informative resource about Bitcoin."
+    help: "Help us"
+    helptxt: "You can report any problem or help to improve bitcoin.org on <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">GitHub</a> by opening an issue or a pull request in English. When submitting a pull request, please take required time to discuss your changes and adapt your work. You can help with translations by joining a team on <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Transifex</a>. Please don't ask for promotion for your personal business or website, except for special cases like conferences. Many thanks to all contributors who are spending time improving bitcoin.org!"
+    maintenance: "Maintenance"
+    documentation: "Documentation"
+    sponsorship: "Sponsorship"
+    service_contributors: "Service Contributors"
+    translations_realname: "Translations(real name)"
+    translations_transifexname: "Translations(transifex name)"
+    inactive_contributors: "Inactive Contributors"
+    owners: "Domain Owners"
+    partial_list: "Partial List"
+    github: "Contributors on GitHub"
+  bitcoin-for-businesses:
+    title: "Bitcoin for Businesses - Bitcoin"
+    pagetitle: "Bitcoin for Businesses"
+    summary: "Bitcoin is a very secure and inexpensive way to handle payments."
+    lowfee: "Choose your own fees"
+    lowfeetext: >
+      There is no fee to receive bitcoins, and many wallets let you
+      control how large a fee to pay when spending. Most wallets have
+      reasonable default fees, and higher fees can encourage faster <a
+      href="#you-need-to-know##instant">confirmation</a> of your
+      transactions. Fees are unrelated to the amount transferred, so it's
+      possible to send 100,000 bitcoins for the same fee it costs to
+      send 1 bitcoin.
+
+
+    fraud: "Protection against fraud"
+    fraudtext: "Any business that accepts credit cards or PayPal knows the problem of payments that are later reversed. Chargeback frauds result in limited market reach and increased prices, which in turn penalizes customers. Bitcoin payments are irreversible and secure, meaning that the cost of fraud is no longer pushed onto the shoulders of the merchants."
+    international: "Fast international payments"
+    internationaltext: >
+      Sending bitcoins across borders is as easy as sending them across
+      the street. There are no banks to make you wait three business
+      days, no extra fees for making an international transfer, and no
+      special limitations on the minimum or maximum amount you can send.
+
+    pci: "No PCI compliance required"
+    pcitext: "Accepting credit cards online typically requires extensive security checks in order to comply with the PCI standard. Bitcoin still requires you to <a href=\"#secure-your-wallet#\">secure your wallet</a> and your payment requests, however, you do not carry the costs and responsibilities that come with processing sensitive information from your customers like with credit card numbers."
+    visibility: "Get some free visibility"
+    visibilitytext: "Bitcoin is an emerging market of new customers who are searching for ways to spend their bitcoins. Accepting them is a good way to get new customers and give your business some new visibility. Accepting a new payment method has often shown to be a clever practice for online businesses."
+    multisig: "Multi-signature"
+    multisigtext: "Bitcoin also includes a multi-signature feature which allows bitcoins to be spent only if a subset of a group of people authorize the transaction. This can be used by a board of directors, for example, to prevent members from making expenditures without enough consent from other members, as well as to track which members permitted particular transactions."
+    transparency: "Accounting transparency"
+    transparencytext: "Many organizations are required to produce accounting documents about their activity. Using Bitcoin allows you to offer the highest level of transparency since you can provide information to verify balances and transactions through the block chain. For example, non-profit organizations can allow the public to see how much they receive in donations."
+  bitcoin-for-developers:
+    title: "Bitcoin for Developers - Bitcoin"
+    pagetitle: "Bitcoin for Developers"
+    summary: "Bitcoin can be used to build amazing things and provide solutions to common problems."
+    simple: "The simplest of all payment systems"
+    simpletext: "Unless a payment needs to be associated with automatic invoices, accepting money is as simple as sending some bitcoin - just display an address or QR code. This simple setup is within reach of almost all users and can fulfill the needs of many clients. From an accounting perspective, it's especially suitable for reducing overhead and adding transparency."
+    api: "Many third party APIs"
+    apitext: "There are many third party payment processing services that provide APIs; you don't need to store bitcoins on your server and handle the security that this implies. Additionally, most of these APIs allow you to process invoices and exchange your bitcoins into your local currency at competitive costs."
+    own: "You can be your own bank"
+    owntext: >
+      If you don't use any third party APIs, you can integrate a Bitcoin
+      node directly into your applications allowing you to become your
+      own bank and payment processor. With all the responsibilities that
+      this implies, you can build amazing systems that process Bitcoin
+      transactions however you would like.
+
+    invoice: "Bitcoin addresses to track invoices"
+    invoicetext: "Bitcoin creates a unique address for each transaction. If you were to build a payment system associated with an invoice, all you would need to do is generate and monitor a Bitcoin address for each payment (you should never use the same address for more than one transaction)."
+    security: "Most of the security is on the client side"
+    securitytext: >
+      Most security is handled by the protocol, eliminating the need for
+      PCI compliance. Fraud prevention can be simplified down to
+      monitoring a single variable: the <a
+      href="#you-need-to-know##instant">confirmation score</a>. Beyond
+      that, keeping
+      your bitcoins secure is mainly a matter of <a
+      href="#secure-your-wallet#">securing your wallet</a> and using
+      HTTPS or other secure protocols to send payment requests to customers.
+
+    micro: "A new world of possibilities"
+    microtext: >
+      Bitcoin allows you to design new and creative online services
+      that couldn't exist before due to financial limitations. This
+      includes tipping systems, automated payment solutions,
+      distributed crowdfunding services, time locked payment
+      management, public asset tracking, low-trust escrow services,
+      micropayment channels and more.
+
+  bitcoin-for-individuals:
+    title: "Bitcoin for Individuals - Bitcoin"
+    pagetitle: "Bitcoin for Individuals"
+    summary: "Bitcoin is the easiest way to transact at a very low cost."
+    mobile: "Mobile payments made easy"
+    mobiletext: "Bitcoin when used on a mobile device allows you to pay with a simple two-step scan-and-pay. There's no need to sign up, swipe your card, type a PIN, or sign anything. All you need to receive Bitcoin payments is to display the QR code in your Bitcoin wallet app and let the other party scan your mobile, or touch the two phones together (using NFC radio technology)."
+    international: "Fast international payments"
+    internationaltext: >
+      Sending bitcoins across borders is as easy as sending them across
+      the street. There are no banks to make you wait three business
+      days, no extra fees for making an international transfer, and no
+      special limitations on the minimum or maximum amount you can send.
+
+    simple: "Works everywhere, anytime"
+    simpletext: "Similarly to email, you don't need to ask recipients you're sending bitcoin to, to use the same software, wallets or service providers. You just need their bitcoin address and then you can transact with them anytime. The Bitcoin network is always running and never sleeps, even on weekends and holidays."
+    secure: "Security and control over your money"
+    securetext: "Bitcoin transactions are secured by mathematics and energy. <a href=\"https://en.bitcoin.it/wiki/Elliptic_Curve_Digital_Signature_Algorithm\">Cryptographic signatures</a> prevent other people from spending your money. Energy spent by <a href=\"https://en.bitcoin.it/wiki/Proof_of_work\">proof of work (PoW)</a> prevents other people from undoing, rearranging or losing your transactions. So long as you take the required steps to <a href=\"#secure-your-wallet#\">protect your wallet</a>, Bitcoin can give you control over your money and a strong level of protection against many types of fraud."
+    lowfee: "Choose your own fees"
+    lowfeetext: >
+      There is no fee to receive bitcoins, and many wallets let you
+      control how large a fee to pay when spending. Most wallets have
+      reasonable default fees, and higher fees can encourage faster <a
+      href="#you-need-to-know##instant">confirmation</a> of your
+      transactions. Fees are unrelated to the amount transferred, so it's
+      possible to send 100,000 bitcoins for the same fee it costs to
+      send 1 bitcoin.
+
+    anonymous: "Protect your identity"
+    anonymoustext: "With Bitcoin, there's no credit card number that malicious actors can collect in order to steal from you. In fact, it's even possible in some cases to send a payment without revealing your identity, almost like with physical money. You should, however, take note that some effort can be required to <a href=\"#protect-your-privacy#\">protect your privacy</a>."
+  bitcoin-paper:
+    title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
+    pagetitle: "Bitcoin: A Peer-to-Peer Electronic Cash System"
+    summary: "The paper that first introduced Bitcoin"
+    description: "Satoshi Nakamoto's original paper is still recommended reading for anyone studying how Bitcoin works. Choose which translation of the paper you want to read:"
+    translated_by: "translated by"
+    submit_new_translation: 'Do you want to translate the paper into your language? Visit the <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">Bitcoin white paper repository on GitHub</a> for instructions and <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">open an issue</a> if you have any questions.'
+  whitepaper-mirrors:
+    title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
+    summary: "Mirrors of the Bitcoin whitepaper"
+  buy:
+    title: "Buy Bitcoin"
+    pagetitle: "Buy Bitcoin"
+    summary: "There are several ways you can buy bitcoin."
+    bitcoin-exchange: "Use a Bitcoin Exchange"
+    bitcoin-exchange-text: "Our <a href=\"/en/exchanges\">Bitcoin Exchange</a> page, lists many different businesses that can help you buy bitcoin using your bank account."
+    p2p-bitcoins: "Browse a P2P Directory"
+    p2p-bitcoins-text: "Using an exchange based off of a <a href=\"/en/exchanges#p2p\">peer-to-peer directory</a> lets you search and browse through various sellers of bitcoin. Sellers have reviews and feedback scores to help you choose."
+    bitcoin-atm: "Use a Bitcoin ATM"
+    bitcoin-atm-text: "Bitcoin ATMs work like a regular ATM, except they allow you to deposit and withdrawal money so that you can buy and sell bitcoin. <a href=\"https://coinatmradar.com/\">Coin ATM Radar</a> has an interactive map to help you find the closest bitcoin ATM near you."
+  community:
+    title: "Community - Bitcoin"
+    pagetitle: "Bitcoin Communities"
+    pagedesc: "Find interesting people, groups and communities related to Bitcoin."
+    forums: "Forums"
+    bitcointalk: "<a href=\"https://bitcointalk.org/\">BitcoinTalk Forum</a>"
+    reddit: "Reddit's Bitcoin Community"
+    stackexchange: "Bitcoin StackExchange (Q&amp;A)"
+    irc: "IRC Chat"
+    ircjoin: "<a href=\"https://web.libera.chat/#bitcoin-core-dev\">IRC Channel #bitcoin-core-dev</a> on Libera."
+    chanbitcoin: "(General Bitcoin-related)"
+    chandev: "(Development and technical)"
+    chanotc: "(Over The Counter exchange)"
+    chanmarket: "(Live quotes from markets)"
+    chanmining: "(Bitcoin mining related)"
+    social: "Social networks"
+    linktwitter: "Twitter"
+    facebook: '<a href="https://www.facebook.com/hashtag/bitcoin">Facebook</a>'
+    meetups: "Meetups"
+    meetupevents: "Bitcoin Conferences And Events"
+    meetupgroup: "Bitcoin Meetup Groups"
+    meetupbitcointalk: "Bitcoin Meetups On BitcoinTalk"
+    meetupwiki: "Bitcoin Meetups On The Wiki"
+    nonprofit: "Non-profit organizations"
+    wikiportal: "Visit the <a href=\"https://en.bitcoin.it/wiki/Bitcoin:Community_portal\">Community portal</a> on the wiki."
+  choose-your-wallet:
+    title: "Choose your wallet - Bitcoin"
+    metadescription: "Get help finding a bitcoin wallet. Answer a few basic questions to create a list of wallets that might match your needs."
+    pagetitle: "Choose your Bitcoin wallet"
+    pagedesc: "Select a wallet to store your bitcoin so you can start transacting on the network."
+    helper-illustration: "people and wallet"
+    helper-intro-title: "Let's help you find a bitcoin wallet."
+    helper-intro-text: "Answer the following questions to create a list of wallets that meet your needs."
+    helper-change-btn: "Change"
+    skip-helper-btn: "Skip helper"
+    helper-next-btn: "Next"
+    helper-note: "Note"
+    helper-or: "or"
+    helper-feature-unavailable: "This option is unavailable based on your previous selections."
+    wizard-optional: "(Optional)"
+    wizard-os-title: "What’s your operating system?"
+    wizard-mobile-title: "Mobile wallets"
+    wizard-mobile-pro1: "Portable and convenient; ideal when making transactions face-to-face"
+    wizard-mobile-pro2: "Designed to use QR codes to make quick and seamless transactions"
+    wizard-mobile-con1: "App marketplaces can delist/remove wallet making it difficult to receive future updates"
+    wizard-mobile-con2: "Damage or loss of device can potentially lead to loss of funds"
+    wizard-desktop-title: "Desktop wallets"
+    wizard-desktop-pro1: "Environment enables users to have complete control over funds"
+    wizard-desktop-pro2: "Some desktop wallets offer hardware wallet support, or can operate as full nodes"
+    wizard-desktop-con1: "Difficult to utilize QR codes when making transactions"
+    wizard-desktop-con2: "Susceptible to bitcoin-stealing malware/spyware/viruses"
+    wizard-web-title: "Web wallets"
+    wizard-web-pro1: "Easy to access from different devices, only a web browser is needed"
+    wizard-web-pro2: "Funds can potentially be recovered if a device is damaged or lost"
+    wizard-web-con1: "Service disruptions can make it difficult to access funds"
+    wizard-web-con2: "If a web wallet's platform is hacked, your funds are at risk"
+    wizard-hardware-title: "Hardware wallets"
+    wizard-hardware-pro1: "One of the most secure methods to store funds"
+    wizard-hardware-pro2: "Ideal for storing large amounts of bitcoin"
+    wizard-hardware-con1: "Difficult to use while mobile; not designed for scanning QR codes"
+    wizard-hardware-con2: "Loss of device without proper backup can make funds unrecoverable"
+    wizard-user-title: "How much do you know about Bitcoin?"
+    wizard-user-new: "New"
+    wizard-user-new-description: "Show wallets ideal for new users."
+    wizard-user-new-description-search: "Show wallets ideal for new bitcoin users, based on your search criteria."
+    wizard-user-experienced: "Experienced"
+    wizard-user-experienced-description: "Show all of the wallets."
+    wizard-user-experienced-description-search: "Show all wallets, based on your search criteria."
+    wizard-criteria-title: "Which criteria are important to you?"
+    wizard-criteria-control: "Control"
+    wizard-criteria-control-description: "Some wallets give you full control over your bitcoin. This means no third party can freeze or take away your funds. You are still responsible, however, for securing and backing up your wallet."
+    wizard-criteria-validation: "Validation"
+    wizard-criteria-validation-description: "Some wallets have the ability to operate as a full node. This means no trust in a third party is required when processing transactions. Full nodes provide a high level of security, but they require a large amount of memory."
+    wizard-criteria-transparency: "Transparency"
+    wizard-criteria-transparency-description: "Some wallets are open-source and can be built deterministically, a process of compiling software which ensures the resulting code can be reproduced to help ensure it hasn't been tampered with."
+    wizard-criteria-environment: "Environment"
+    wizard-criteria-environment-description: "Some wallets can be loaded on computers which are vulnerable to malware. Securing your computer, using a strong passphrase, moving most of your funds to cold store or enabling 2FA or multifactor authentication can help you protect your bitcoin."
+    wizard-criteria-fees: "Fees"
+    wizard-criteria-fees-description: "Some wallets give you full control over setting the fee paid to the bitcoin network before making a transaction, or modifying it afterward, to ensure that your transactions are confirmed in a timely manner without paying more than you have to."
+    wizard-criteria-privacy: "Privacy"
+    wizard-criteria-privacy-description: "Some wallets make it harder to spy on your transactions by rotating addresses. They do not disclose information to peers on the network. They can also optionally let you setup and use Tor as a proxy to prevent others from associating transactions with your IP address."
+    wizard-feature-title: "What features are you looking for?"
+    wizard-feature-2fa: "2FA"
+    wizard-feature-2fa-description: "Two-factor authentication (2FA) is a way to add additional security to your wallet. The first 'factor' is your password for your wallet. The second 'factor' is a verification code retrieved via text message or from an app on a mobile device. 2FA is conceptually similar to a security token device that banks in some countries require for online banking. It likely requires relying on the availability of a third party to provide the service."
+    wizard-feature-bech32: "Bech32"
+    wizard-feature-bech32-description: "Bech32 is a special address format made possible by SegWit (see the feature description for SegWit for more info). This address format is also known as 'bc1 addresses'. Some bitcoin wallets and services do not yet support sending or receiving to Bech32 addresses."
+    wizard-feature-full_node: "Full Node"
+    wizard-feature-full_node-description: "Some wallets fully validate transactions and blocks. Almost all full nodes help the network by accepting transactions and blocks from other full nodes, validating those transactions and blocks, and then relaying them to further full nodes."
+    wizard-feature-hardware_wallet: "Hardware Wallet"
+    wizard-feature-hardware_wallet-description: "Some wallets can pair and connect to a hardware wallet in addition to being able to send to them. While sending to a hardware wallet is something most all wallets can do, being able to pair with one is a unique feature. This feature enables you to be able to send and receive directly to and from a hardware wallet."
+    wizard-feature-legacy_addresses: "Legacy Addresses"
+    wizard-feature-legacy_addresses-description: "Most wallets have the ability to send and receive with legacy bitcoin addresses. Legacy addresses start with 1 or 3 (as opposed to starting with bc1). Without legacy address support, you may not be able to receive bitcoin from older wallets or exchanges."
+    wizard-feature-lightning: "Lightning"
+    wizard-feature-lightning-description: "Some wallets support transactions on the Lightning Network.  The Lightning Network is new and somewhat experimental.  It supports transferring bitcoin without having to record each transaction on the blockchain, resulting in faster transactions and lower fees."
+    wizard-feature-multisig: "Multisig"
+    wizard-feature-multisig-description: "Some wallets have the ability to require more than one key to authorize a transaction. This can be used to divide responsibility and control over multiple parties."
+    wizard-feature-segwit: "SegWit"
+    wizard-feature-segwit-description: "Some wallets support SegWit, which uses block chain space more efficiently. This helps reduce fees paid by helping the Bitcoin network scale and sets the foundation for second layer solutions such as the Lightning Network."
+    wallet-all: "All Wallets"
+    wallet-select: "Select Wallet"
+    wallet-select-type: "Select Wallet Type"
+    wallet-select-operating-system: "Select an Operating System"
+    wallet-selector-filters: "Filters"
+    wallet-selector-operating-system: "Operating System"
+    wallet-selector-user-type: "User type"
+    wallet-selector-criteria: "Criteria"
+    wallet-selector-features: "Features"
+    wallet-selector-browse: "Browse wallets"
+    wallet-selector-browse-cta: "Use the wallet selector to find wallets that
+    match your search criteria."
+    wallet-selector-results: "Below is a list of wallets available for your operating system"
+    wallet-selector-results-wallets: "Wallets"
+    wallet-selector-results-no-match: "No matching wallets found"
+    wallet-selector-results-no-match-cta: "Please update your search criteria and try again."
+    wallet-selector-sort: "Sort by"
+    wallet-selector-similar: "Similar"
+    wallet-scoring-good: "Good"
+    wallet-scoring-pass: "Acceptable"
+    wallet-scoring-fail: "Caution"
+    wallet-scoring-neutral: "Not applicable"
+    walletcatmobile: "Mobile"
+    walletcatmobile-description: "Wallets are available for Android and iOS based operating systems."
+    walletcatdesktop: "Desktop"
+    walletcatdesktop-description: "Wallets are available for Linux, MacOS and Windows based operating systems."
+    walletcathardware: "Hardware"
+    walletcathardware-description: "A hardware wallet is a high-security bitcoin wallet that enables you to store your funds offline. You connect it to your computer when you need to manage your funds."
+    walletcatweb: "Web"
+    walletcatweb-description: "Web wallets are bitcoin wallets that are accessible using a web browser. No installation of additional software is needed."
+    walletbitcoincore: "Bitcoin Core is a full Bitcoin client and builds the backbone of the network. It offers high levels of security, privacy, and stability. However, it has fewer features and it takes a lot of space and memory."
+    walletbitcoinknots: "Bitcoin Knots is a full Bitcoin client and builds the backbone of the network. It offers high levels of security, privacy, and stability. It includes more advanced features than Bitcoin Core, but they are not as well-tested. It uses a lot of space and memory."
+    walletarmory: "Armory is an advanced Bitcoin client that expands its features for Bitcoin power users. It offers many backup and encryption features, and it allows secure cold-storage on offline computers."
+    walletelectrum: "Electrum's focus is speed and simplicity, with low resource usage. It uses remote servers that handle the most complicated parts of the Bitcoin system, and it allows you to recover your wallet from a secret phrase."
+    walletbitcoinwallet: "Bitcoin Wallet is easy to use and reliable, while also being secure and fast. Its vision is de-centralization and zero trust; no central service is needed for Bitcoin-related operations. The app is a good choice for non-technical people."
+    walletedgewallet: "Edge is a Segwit compatible, mobile Bitcoin Wallet making high levels of privacy, security, and decentralization very familiar and usable to the masses. Edge wallets are always automatically encrypted and backed up."
+    walletmyceliumwallet: "Mycelium Bitcoin Wallet for Android is designed for security, speed, and ease of use. It has unique features to manage your keys and for cold storage and offers compatibility with Trezor and others."
+    wallettrezorone: "Trezor is a hardware wallet providing a high level of security without sacrificing convenience. Unlike cold storage, Trezor is able to sign transactions while connected to an online device. That means spending bitcoins is secure even when using a compromised computer."
+    wallettrezormodelt: "Trezor Model T is a next-generation hardware wallet, designed with the benefits of the original Trezor in mind, combined with a modern and intuitive interface for improved user experience and security. It features a touchscreen, faster processor, as well as all the features of the Trezor One."
+    walletcoldcard: "Coldcard is an easy to use, ultra-secure, open-source and affordable hardware wallet that is easy to back up via an encrypted microSD card. Your private key is stored in a dedicated security chip. MicroPython software design allows you to make changes."
+    walletkeepkey: "KeepKey is a hardware wallet that makes bitcoin security simple. When you entrust KeepKey with your money, every bitcoin transaction you make must be reviewed and approved via its OLED display and confirmation button."
+    walletbitpay: "BitPay Wallet is the HD-multisignature wallet originally built to secure BitPay's funds. BitPay supports multiple personal and shared wallets, testnet, and the full Payment Protocol. A private <a href=\"https://github.com/bitpay/bitcore-wallet-service\">BWS</a> node can be used for enhanced security and privacy."
+    walletledgernanos: "Ledger Nano S is a secure Bitcoin hardware wallet. It connects to any computer through USB and embeds a built-in OLED display to double-check and confirm each transaction with a single tap on its buttons."
+    walletbitbox: "The BitBox02 is a hardware wallet, developed and manufactured in Switzerland. It is equipped with an OLED display, invisible touch sensors, USB-C and USB-A support, offline backups to both microSD card and BIP39 mnemonic. Setting up a BitBox02 wallet and managing your coins is made easy via the companion BitBoxApp."
+    walletpassport: "Passport is a secure, easy-to-use, air-gapped, Bitcoin-only hardware wallet designed to help you reclaim your sovereignty. Passport is fully open source and manufactured in the US. It includes a color IPS display, a rechargeable battery, and an advanced secure element chip to secure your private seed."
+    walletjade: "Blockstream Jade is a versatile, open-source hardware wallet designed for your entire self-custody journey. Jade offers a dedicated companion app on mobile and desktop for a seamless, step-by-step onboarding experience - while advanced users can utilize Jade's built-in camera to perform air-gapped transactions."
+    walletgreen: "Blockstream Green is a simple to use, multi-platform and open-source bitcoin wallet designed to adapt to your needs as they evolve through your self-custody journey. Green offers singlesig, as well as 2FA protected multisig accounts, and it can be paired with your favorite hardware wallet."
+    walletbither: "Bither is a simple and secure wallet on many platforms. With special designed cold/hot modes, user can easily get both safety and simplicity. Bither's XRANDOM uses different entropy sources to generate true random number for users. Also with HDM, users can have HD's advantages and multisig's security."
+    walletwasabi: "Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for Windows, Linux and Mac. It includes built-in Tor, CoinJoin and coin control features."
+    walletunstoppable: "Unstoppable is a non-custodial and intuitive mobile wallet for Bitcoin and other cryptocurrencies. This wallet packs some essential features to store, exchange and monitor cryptocurrency  performance while staying private."
+    walletspecterdesktop: "Specter Desktop is a desktop wallet interface for Bitcoin Core with a focus on privacy, coin control, single and multisig setups. Specter is non-custodial and works with all major hardware wallets."
+    walletsparrow: "Sparrow is a Bitcoin wallet with a focus on security, privacy and usability. Sparrow supports single and multisig script types, connects to an Electrum server or Bitcoin Core, interacts with popular hardware wallets, provides full coin and fee control, and contains a transaction editor and a blockchain explorer."
+    walletdownload: "Install"
+    walletvisit: "Visit website"
+    walletsourcecode: "Source code"
+    platformandroid: "Android"
+    platformios: "iOS"
+    platformwindows: "Windows"
+    platformmac: "Mac"
+    platformlinux: "Linux"
+    checkgoodcontrolfull: "Control over your money"
+    checkgoodcontrolfulltxt: "This wallet gives you full control over your bitcoins. This means no third party can freeze or lose your funds. You are however still responsible for securing and backing up your wallet."
+    checkpasscontrolhybrid: "Hosted control over your money"
+    checkpasscontrolhybridtxt: "This wallet gives you control over your bitcoins. However, this service is retaining an encrypted copy of your wallet. This means your bitcoins can be stolen if you don't use a strong password and the service is compromised."
+    checkpasscontrolmulti: "Shared control over your money"
+    checkpasscontrolmultitxt: "This wallet requires every transaction to be authorized both by you and this third party. Under normal circumstances, you can regain full control over your bitcoins using your initial backup or pre-signed transactions sent by email."
+    checkfailcontrolthirdpartyinsured: "Money controlled by a third party"
+    checkfailcontrolthirdpartyinsuredtxt: "This service has full control over your bitcoins. This means you need to trust this service will not freeze or mismanage your funds. Although this service claims to be providing insurance against failures on their side, you are still responsible for securing your wallet."
+    checkfailcontrolthirdparty: "Money controlled by a third party"
+    checkfailcontrolthirdpartytxt: "This service has full control over your bitcoins. This means you need to trust this service will not lose your funds in an incident on their side. As of today, most web wallets don't insure their deposits like a bank, and many such services have suffered from security breaches in the past."
+    checkgoodvalidationfullnode: "Full validation"
+    checkgoodvalidationfullnodetxt: "This wallet is a full node that validates and relays transactions on the Bitcoin network. This means no trust in a third party is required when verifying payments. Full nodes provide the highest level of security and are essential to protecting the network. However, they require more space (over {{site.text.bitcoin_datadir_gb}}GB), bandwidth, and a longer initial synchronization time."
+    checkgoodvalidationfullnoderequired: "Full validation"
+    checkgoodvalidationfullnoderequiredtxt: "This wallet requires you to install full node software that validates and relays transactions on the Bitcoin network. This means no trust in a third party is required when verifying payments. Full nodes provide the highest level of security and are essential to protecting the network. However, they require more space (over {{site.text.bitcoin_datadir_gb}}GB), bandwidth, and a longer initial synchronization time."
+    checkneutralvalidationvariable: "Variable validation"
+    checkneutralvalidationvariabletxt: "Payment validation features are provided by the software wallet you use with this device."
+    checkpassvalidationspvp2p: "Simplified validation"
+    checkpassvalidationspvp2ptxt: "This wallet uses SPV and the Bitcoin network. This means very little trust in third parties is required when verifying payments. However, it is not as secure as a full node like <a href=\"#download#\">Bitcoin Core</a>."
+    checkpassvalidationspvservers: "Simplified validation"
+    checkpassvalidationspvserverstxt: "This wallet uses SPV and random servers from a list. This means little trust in third parties is required when verifying payments. However, it is not as secure as a full node like <a href=\"#download#\">Bitcoin Core</a>."
+    checkpassvalidationservers: "Decentralized validation"
+    checkpassvalidationserverstxt: "This wallet connects to a random server from a list. This means some trust in third parties is required when verifying payments. However, it is not as secure as a full node like <a href=\"#download#\">Bitcoin Core</a>."
+    checkfailvalidationcentralized: "Centralized validation"
+    checkfailvalidationcentralizedtxt: "This wallet relies on a centralized service by default. This means a third party must be trusted to not hide or simulate payments."
+    checkgoodtransparencydeterministic: "Complete transparency"
+    checkgoodtransparencydeterministictxt: "This wallet is open-source and built deterministically. This means any developer in the world can audit the code and make sure the final software isn't hiding any secrets."
+    checkpasstransparencyopensource: "Basic transparency"
+    checkpasstransparencyopensourcetxt: "The developers of this wallet publish the source code for the client. This means any developer in the world can audit the code. However, you still need to trust developers of this wallet when installing or updating the final software because it was not built deterministically like <a href=\"#download#\">Bitcoin Core</a>."
+    checkpasstransparencyopensourcehardware: "Basic transparency"
+    checkpasstransparencyopensourcehardwaretxt: "The source code for this wallet is public. This means any developer in the world can audit the code. However, you still need to trust developers of this wallet because the device cannot be verified to be using the same source code to generate secure random seeds and for other operations. Updating your device's firmware, generating your own secure random seed or using multi-signature can make it harder to steal your bitcoins."
+    checkpasstransparencyopenspechardware: "Basic transparency"
+    checkpasstransparencyopenspechardwaretxt: "The specification for this wallet is public. This means any developer in the world can do blackbox testing. However, you still need to trust developers of this wallet because the device cannot be verified to be generating secure random seeds and the source code cannot be audited. Updating your device's firmware, generating your own secure random seed or using multi-signature can make it harder to steal your bitcoins."
+    checkfailtransparencyclosedsource: "No transparency"
+    checkfailtransparencyclosedsourcetxt: "This wallet is not open-source. This means it is not possible to audit the code and make sure the final software isn't hiding dangerous code or doing anything you wouldn't agree to."
+    checkfailtransparencyremote: "Remote app"
+    checkfailtransparencyremotetxt: "This wallet is loaded from a remote location. This means that whenever you use your wallet, you need to trust the developers not to steal or lose your bitcoins in an incident on their site. Using a browser extension or mobile app, if available, can reduce that risk."
+    checkfailtransparencynew: "New app"
+    checkfailtransparencynewtxt: "This wallet has not been tested and publicly reviewed by a significant number of people. This means this app might be more at risk of hiding dangerous code or doing something you wouldn't agree to."
+    checkgoodenvironmenthardware: "Very secure environment"
+    checkgoodenvironmenthardwaretxt: "This wallet is loaded from a secure specialized environment provided by the device. This provides very strong protection against computer vulnerabilities and malware since no software can be installed on this environment."
+    checkpassenvironmentmobile: "Secure environment"
+    checkpassenvironmentmobiletxt: "This wallet is loaded on mobiles where apps are usually isolated. This provides a good protection against malware, although mobiles are usually easier to steal or lose. Encrypting your mobile and backing up your wallet can reduce that risk."
+    checkpassenvironmenttwofactor: "Two-factor authentication"
+    checkpassenvironmenttwofactortxt: "This wallet can be used from insecure environments. However, this service requires two-factor authentication. This means access to multiple devices or accounts is required to steal your bitcoins."
+    checkfailenvironmentdesktop: "Vulnerable environment"
+    checkfailenvironmentdesktoptxt: "This wallet can be loaded on computers which are vulnerable to malware. Securing your computer, using a strong passphrase, moving most of your funds to cold storage, or enabling two-factor authentication can make it harder to steal your bitcoins."
+    checkgoodprivacyimproved: "Improved privacy"
+    checkneutralprivacyvariable: "Variable privacy"
+    checkneutralprivacyvariabletxt: "Privacy features are provided by the software wallet you use with this device."
+    checkpassprivacybasic: "Basic privacy"
+    checkfailprivacyweak: "Weak privacy"
+    checkpassprivacyaddressrotation: "Prevents spying on your payments"
+    checkpassprivacyaddressrotationtxt: "This wallet makes it harder to spy on your balance and payments by rotating addresses. You should still take care to use a new Bitcoin address each time you request payment."
+    checkfailprivacyaddressrotation: "Allows spying on your payments"
+    checkfailprivacyaddressrotationtxt: "This wallet makes it easy for anyone to spy on your balance and payments because it reuses the same addresses."
+    checkpassprivacydisclosurefullnode: "Avoids disclosing information"
+    checkpassprivacydisclosurefullnodetxt: "This wallet does not disclose information to peers on the network when receiving or sending a payment."
+    checkfailprivacydisclosurespv: "Discloses limited information to peers"
+    checkfailprivacydisclosurespvtxt: "Peers on the network can log your IP address and associate your payments together when receiving or sending payment."
+    checkfailprivacydisclosurecentralized: "Discloses information to a third party"
+    checkfailprivacydisclosurecentralizedtxt: "This wallet uses central servers which are able to associate your payments together and log your IP address."
+    checkfailprivacydisclosureaccount: "Discloses information to a third party"
+    checkfailprivacydisclosureaccounttxt: "This service can associate your payments together, log your IP address and know your real identity if you provide personal information like your email, name or banking account."
+    checkpassprivacynetworksupporttorproxy: "Tor can be used"
+    checkpassprivacynetworksupporttorproxytxt: "This wallet lets you setup and use <a href=\"https://www.torproject.org/\">Tor</a> as a proxy to prevent attackers or Internet service providers from associating your payments with your IP address."
+    checkfailprivacynetworknosupporttor: "Tor not supported"
+    checkfailprivacynetworknosupporttortxt: "This wallet does not let you use Tor to prevent attackers or Internet service providers from associating your payments with your IP address."
+    checkgoodfeecontrolfull: "Full control over fees"
+    checkgoodfeecontrolfulltxt: "This wallet gives you full control over fees. This means that this wallet allows changing the fees after funds are sent using RBF or CPFP.  This wallet also provides fee suggestions based on current network conditions so that your transactions are confirmed in a timely manner without paying more than you have to."
+    checkpassfeecontroldynamic: "Dynamic fee suggestions"
+    checkpassfeecontroldynamictxt: "This wallet provides fee suggestions which are based on current network conditions.  This means that this wallet will help you choose the appropriate fee so that your transactions are confirmed in a timely manner without paying more than you have to."
+    checkpassfeecontroloverride: "Dynamic fee with override"
+    checkpassfeecontroloverridetxt: "This wallet provides fee suggestions which are based on current network conditions which you can override.  This means that this wallet will help you choose the appropriate fee so that your transactions are confirmed in a timely manner without paying more than you have to, but ultimately gives you control if you want to override the suggestion."
+    checkneutralfeecontrolvariable: "Variable fee control"
+    checkneutralfeecontrolvariabletxt: "Fee control features are provided by the software wallet you use with this device."
+    checkfailfeecontrolstatic: "Static fee suggestions"
+    checkfailfeecontrolstatictxt: "This wallet does not provide any fee suggestions which are based on current network conditions.  This means that your transactions may be subject to delays if the fee chosen is too low, or that you may pay a fee which is too high."
+    educate: "Take time to educate yourself"
+    educatetxt: "Bitcoin is different from what you know and use every day. Before you start using Bitcoin for any serious transaction, be sure to read <a href=\"#you-need-to-know#\"><b>what you need to know</b></a> and take appropriate steps to <a href=\"#secure-your-wallet#\"><b>secure your wallet</b></a>. Always remember that it is your responsibility to choose your wallet carefully and adopt good practices in order to protect your money."
+  developer-documentation:
+    title: "Developer Documentation - Bitcoin"
+    pagetitle: "Developer Documentation"
+    summary: "Find useful resources, guides and reference material for developers."
+    docreference-title: "See also:"
+    navigationreturn: "Return To Overview"
+    navigationreport: "Report An Issue"
+    navigationedit: "Edit On GitHub"
+    glossarysearchplaceholder: "Search"
+    docreferencemenuguides: "Guides"
+    docreferencemenureference: "Reference"
+    docreferencemenuexamples: "Examples"
+    docreferencemenuglossary: "Glossary"
+    resourcestitleblockchain: "Block Chain"
+    resourcesitemblockchainguides: "Block Chain Guide"
+    resourcesitemmininguides: "Mining Guide"
+    resourcesitemblockchainreference: "Block Chain Reference"
+    resourcestitletransactions: "Transactions"
+    resourcesitemtransactionsguides: "Transactions Guide"
+    resourcesitemtransactionsreference: "Transactions Reference"
+    resourcesitemtransactionsexamples: "Transactions Examples"
+    resourcestitlecontracts: "Contracts"
+    resourcesitemcontractsguides: "Contracts Guide"
+    resourcestitlewallets: "Wallets"
+    resourcesitemwalletsguides: "Wallets Guide"
+    resourcesitemwalletsreference: "Wallets Reference"
+    resourcestitlepaymentprocessing: "Payment Processing"
+    resourcesitempaymentprocessingguides: "Payment Processing Guide"
+    resourcesitempaymentprocessingexamples: "Payment Processing Examples"
+    resourcestitleoperatingmodes: "Operating Modes"
+    resourcesitemoperatingmodesguides: "Operating Modes Guide"
+    resourcestitlep2pnetwork: "P2P Network"
+    resourcesitemp2pnetworkguides: "P2P Network Guide"
+    resourcesitemp2pnetworkreference: "P2P Network Reference"
+    resourcesitemp2pnetworkexamples: "P2P Network Examples"
+    resourcestitleadditional: "Additional Resources"
+    resourcestitlemining: "Get block template"
+    fragmentreviewsneeded: >
+      This documentation has not been extensively reviewed by Bitcoin experts
+      and so likely contains numerous errors. Please use the <em>Issue</em> and
+      <em>Edit</em> links on the bottom left menu to help us improve. To close
+      this disclaimer
+    fragmentreviewsneededcloselink: "click here"
+    fragmenttranslationwarning: >
+      This version of the documentation may contain English (original) parts,
+      if you wish to contribute to translating this document to your language,
+      please use the appropriate links under the headings, or visit
+    fragmenttranslationdoclink: "this link"
+    subheadlinkedit: "Edit"
+    subheadlinkhistory: "History"
+    subheadlinkreport: "Report Issue"
+    subheadlinkdiscuss: "Discuss"
+    subheadlinktranslate: "Translate"
+  developer-examples:
+    title: "Developer Examples - Bitcoin"
+    pagetitle: "Bitcoin Developer Examples"
+    summary: "Find examples of how to build programs using Bitcoin."
+  developer-guide:
+    title: "Developer Guide - Bitcoin"
+    pagetitle: "Bitcoin Developer Guide"
+    summary: "The Developer Guide aims to provide the information you need to understand Bitcoin and start building Bitcoin-based applications, but it is not a specification. To make the best use of this documentation, you may want to install the current version of Bitcoin Core, either from source or from a pre-compiled executable."
+    readblockchain: "Read Blockchain Guide"
+    readcontracts: "Read Contracts Guide"
+    readtransactions: "Read Transactions Guide"
+    readmining: "Read Mining Guide"
+    readoperating: "Read Operating Modes Guide"
+    readp2p: "Read P2P Network Guide"
+    readpayments: "Read Payment Processing Guide"
+    readwallets: "Read Wallets Guide"
+    blockchaintitle: "Blockchain"
+    blockchainsummary: "The block chain provides Bitcoin's public ledger, an ordered and timestamped record of transactions. This system is used to protect against double spending and modification of previous transaction records."
+    contractstitle: "Contracts"
+    contractssummary: "Contracts are transactions which use the decentralized Bitcoin system to enforce financial agreements. Bitcoin contracts can often be crafted to minimize dependency on outside agents, such as the court system, which significantly decreases the risk of dealing with unknown entities in financial transactions."
+    miningtitle: "Mining"
+    miningsummary: "Mining adds new blocks to the block chain, making transaction history hard to modify."
+    operatingtitle: "Operating Modes"
+    operatingsummary: "The Bitcoin software has different levels of security and tradeoffs in order to verify the blockchain."
+    p2ptitle: "P2P Network"
+    p2psummary: "The Bitcoin network protocol allows full nodes (peers) to collaboratively maintain a peer-to-peer network for block and transaction exchange."
+    paymenttitle: "Payment Processing"
+    paymentsummary: "Payment processing encompasses the steps spenders and receivers perform to make and accept payments in exchange for products or services. The basic steps have not changed since the dawn of commerce, but the technology has."
+    transactionstitle: "Transactions"
+    transactionssummary: "Transactions let users spend satoshis. Each transaction is constructed out of several parts which enable both simple direct payments and complex transactions."
+    walletstitle: "Wallets"
+    walletssummary: "A Bitcoin wallet can refer to either a wallet program or a wallet file. Wallet programs create public keys to receive satoshis and use the corresponding private keys to spend those satoshis. Wallet files store private keys and (optionally) other information related to transactions for the wallet program."
+  developer-reference:
+    title: "Bitcoin Developer Reference - Bitcoin"
+    pagetitle: "Bitcoin Developer Reference"
+    summary: "Find technical details and API documentation."
+  developer-glossary:
+    title: "Developer Glossary - Bitcoin"
+    pagetitle: "Bitcoin Developer Glossary"
+    subsummary: "This is a technical glossary. Regular users should use the [vocabulary page](/en/vocabulary)."
+    suggestnewterm: "Can't find what you're looking for? [Suggest a new term][1] for the glossary!"
+    definitionnotice: "This definition comes from the [technical glossary](/en/developer-glossary)."
+    sectiontitledefinition: "Definition"
+    sectiontitlesynonyms: "Synonyms"
+    sectiontitlenottobeconfused: "Not To Be Confused With"
+    sectiontitlelinks: "Links"
+    categorynumbers: "Numbers"
+  blockchain-guide:
+    title: "Blockchain Guide - Bitcoin"
+    pagetitle: "Blockchain"
+    summary: "The block chain provides Bitcoin's public ledger, an ordered and timestamped record of transactions. This system is used to protect against double spending and modification of previous transaction records."
+  contracts-guide:
+    title: "Contracts Guide - Bitcoin"
+    pagetitle: "Contracts"
+    summary: "Contracts are transactions which use the decentralized Bitcoin system to enforce financial agreements. Bitcoin contracts can often be crafted to minimize dependency on outside agents, such as the court system, which significantly decreases the risk of dealing with unknown entities in financial transactions."
+  mining-guide:
+    title: "Mining Guide - Bitcoin"
+    pagetitle: "Mining"
+    summary: "Mining adds new blocks to the block chain, making transaction history hard to modify."
+  operating-modes-guide:
+    title: "Operating Modes Guide - Bitcoin"
+    pagetitle: "Operating Modes"
+    summary: "The Bitcoin software has different levels of security and tradeoffs in order to verify the blockchain."
+  p2p-network-guide:
+    title: "P2P Network Guide - Bitcoin"
+    pagetitle: "P2P Network"
+    summary: "The Bitcoin network protocol allows full nodes (peers) to collaboratively maintain a peer-to-peer network for block and transaction exchange. "
+  payment-processing-guide:
+    title: "Payment Processing Guide - Bitcoin"
+    pagetitle: "Payment Processing"
+    summary: "Payment processing encompasses the steps spenders and receivers perform to make and accept payments in exchange for products or services. The basic steps have not changed since the dawn of commerce, but the technology has. "
+  transactions-guide:
+    title: "Transactions Guide - Bitcoin"
+    pagetitle: "Transactions"
+    summary: "Transactions let users spend satoshis. Each transaction is constructed out of several parts which enable both simple direct payments and complex transactions. "
+  wallets-guide:
+    title: "Wallets Guide - Bitcoin"
+    pagetitle: "Wallets"
+    summary: "A Bitcoin wallet can refer to either a wallet program or a wallet file."
+
+  development:
+    title: "Development - Bitcoin"
+    pagetitle: "Bitcoin development"
+    pagedesc: "Bitcoin is a global project and open source software."
+    summary: "Find more information about current specification, software and developers."
+    spec: "Documentation"
+    spectxt: "If you are interested in learning more about the technical details of Bitcoin and how to use existing tools and APIs, it is recommended you start by exploring the <a href=\"https://developer.bitcoin.org/\">developer documentation</a>."
+    coredev: "Core developers"
+    inventor: "The Bitcoin system was originally designed by Satoshi Nakamoto. His original Bitcoin codebase is now being maintained as Bitcoin Core by the following developers and a community of volunteers."
+    disclosure: "Responsible disclosure"
+    disclosuretxt: "If you find a vulnerability related to Bitcoin, non-critical vulnerabilities can be emailed in English to any of the core developers or sent to the private bitcoin-security mailing list listed above. An example of a non-critical vulnerability would be an expensive-to-carry-out denial of service attack. Critical vulnerabilities that are too sensitive for unencrypted email should be sent to one or more of the core developers, encrypted with their PGP key(s)."
+    involve: "Get involved"
+    involvetxt1: "Bitcoin is free software and any developer can contribute to the project. Everything you need is in the <a href=\"https://github.com/bitcoin/bitcoin\">GitHub repository</a>. Please make sure to read and follow the development process described in the README, as well as to provide good quality code and respect all guidelines."
+    involvetxt2: "Development discussion takes place on GitHub and the <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> mailing list. Less formal development discussion happens on irc.libera.chat #bitcoin-core-dev (<a href=\"https://web.libera.chat/#bitcoin-core-dev\">web interface</a>, <a href=\"http://gnusha.org/bitcoin-core-dev/\">logs</a>)."
+    more: "More free software projects"
+    morewant: "Want to contribute to a different project?"
+    morechoose: "You can choose a project to contribute to by answering a few <a href=\"http://whatcanidoforbitcoin.xyz/\">questions about your skills</a>."
+    moremore: "Show more..."
+    contributors: "Bitcoin Core contributors"
+    contributorsorder: "(Ordered by number of commits)"
+    devcommunities: "Developer communities"
+    devcommunitiesintro: "The following chatrooms and websites host discussions about Bitcoin development.  Please be sure to read their rules of conduct before posting."
+    ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">IRC Channel #bitcoin-core-dev</a> on freenode."
+    stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
+    bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
+  download:
+    title: "Download - Bitcoin"
+    pagetitle: "Download Bitcoin Core"
+    latestversion: "Latest version:"
+    download: "Download Bitcoin Core"
+    downloados: "Or choose your operating system"
+    downloadsig: "Verify release signatures"
+    downloadtorrent: "Download torrent"
+    source: "Source code"
+    versionhistory: "Show version history"
+    notelicense: "Bitcoin Core is a community-driven <a href=\"https://www.fsf.org/about/what-is-free-software\">free software</a> project, released under the <a href=\"http://opensource.org/licenses/mit-license.php\">MIT license</a>."
+    notesync: "Bitcoin Core initial synchronization will take time and download a lot of data. You should make sure that you have enough bandwidth and storage for the block chain size ({{site.text.bitcoin_datadir_gb_pruned}}GB). If you have a good Internet connection, you can help strengthen the network by keeping your PC running with Bitcoin Core and port 8333 open."
+    full_node_guide: "Read the <a href=\"/en/full-node\">full node guide</a> for details."
+    patient: "Check your bandwidth and space"
+    releasekeys: "Bitcoin Core Release Signing Keys"
+  exchanges:
+    title: "Exchanges - Bitcoin"
+    metadescription: "Places to buy bitcoin in exchange for other currencies. Exchange US dollars (BTC/USD), Euros (BTC/EUR), Yuan (BTC/CNY) and other currencies for bitcoin."
+    pagetitle: "Bitcoin Exchanges"
+    pagedesc: "Places to buy bitcoin in exchange for other currencies."
+    exchange: "Bitcoin Exchanges"
+  site-blog:
+    loadmore-posts: "Load more posts"
+  alerts:
+    loadmore-alerts: "Load more alerts"
+  events:
+    title: "Conferences and Events - Bitcoin"
+    rsslink: "Subscribe to the RSS feed."
+    loadmore-events: "Load more events"
+    pagetitle: "Conferences and Events"
+    pagedesc: "Find events, conferences and meetups all over the world."
+    upcoming: "Upcoming Events and Conferences"
+    eventsubmit: "Submit an event"
+    meetupbitcointalk: "<a href=\"https://bitcointalk.org/index.php?board=86.0\">Bitcoin meetups on BitcoinTalk</a>"
+    meetupwiki: "<a href=\"https://en.bitcoin.it/wiki/Meetups\">Bitcoin meetups on the Wiki</a>"
+    meetupgroup: "<a href=\"http://bitcoin.meetup.com/\">Bitcoin meetup groups</a>"
+  faq:
+    title: "FAQ - Bitcoin"
+    pagetitle: "Frequently Asked Questions"
+    summary: "Find answers to recurring questions and myths about Bitcoin."
+    table: "Table of contents"
+    general: "General"
+    whatisbitcoin: "What is Bitcoin?"
+    whatisbitcointxt1: "Bitcoin is a consensus network that enables a new payment system and a completely digital money. It is the first decentralized peer-to-peer payment network that is powered by its users with no central authority or middlemen. From a user perspective, Bitcoin is pretty much like cash for the Internet. Bitcoin can also be seen as the most prominent <a href=\"http://financialcryptography.com/mt/archives/001325.html\">triple entry bookkeeping system</a> in existence."
+    creator: "Who created Bitcoin?"
+    creatortxt1: "Bitcoin is the first implementation of a concept called \"cryptocurrency\", which was first described in 1998 by Wei Dai on the cypherpunks mailing list, suggesting the idea of a new form of money that uses cryptography to control its creation and transactions, rather than a central authority. The first Bitcoin specification and proof of concept was published in 2009 in a cryptography mailing list by Satoshi Nakamoto. Satoshi left the project in late 2010 without revealing much about himself. The community has since grown exponentially with <a href=\"#development#\">many developers</a> working on Bitcoin."
+    creatortxt2: "Satoshi's anonymity often raised unjustified concerns, many of which are linked to misunderstanding of the open-source nature of Bitcoin. The Bitcoin protocol and software are published openly and any developer around the world can review the code or make their own modified version of the Bitcoin software. Just like current developers, Satoshi's influence was limited to the changes he made being adopted by others and therefore he did not control Bitcoin. As such, the identity of Bitcoin's inventor is probably as relevant today as the identity of the person who invented paper."
+    whocontrols: "Who controls the Bitcoin network?"
+    whocontrolstxt1: "Nobody owns the Bitcoin network much like no one owns the technology behind email. Bitcoin is controlled by all Bitcoin users around the world. While developers are improving the software, they can't force a change in the Bitcoin protocol because all users are free to choose what software and version they use. In order to stay compatible with each other, all users need to use software complying with the same rules. Bitcoin can only work correctly with a complete consensus among all users. Therefore, all users and developers have a strong incentive to protect this consensus."
+    howitworks: "How does Bitcoin work?"
+    howitworkstxt1: "From a user perspective, Bitcoin is nothing more than a mobile app or computer program that provides a personal Bitcoin wallet and allows a user to send and receive bitcoins with them. This is how Bitcoin works for most users."
+    howitworkstxt2: "Behind the scenes, the Bitcoin network is sharing a public ledger called the \"block chain\". This ledger contains every transaction ever processed, allowing a user's computer to verify the validity of each transaction. The authenticity of each transaction is protected by digital signatures corresponding to the sending addresses, allowing all users to have full control over sending bitcoins from their own Bitcoin addresses. In addition, anyone can process transactions using the computing power of specialized hardware and earn a reward in bitcoins for this service. This is often called \"mining\". To learn more about Bitcoin, you can consult the <a href=\"#how-it-works#\">dedicated page</a> and the <a href=\"#bitcoin-paper#\">original paper</a>."
+    used: "Is Bitcoin really used by people?"
+    usedtxt1: "Yes. There are a <a href=\"/en/spend-bitcoin\">growing number of businesses</a> and individuals using Bitcoin. This includes brick-and-mortar businesses like restaurants, apartments, and law firms, as well as popular online services such as Namecheap and Overstock.com. While Bitcoin remains a relatively new phenomenon, it is growing fast. As of May 2018, the <a href=\"https://bitcoincharts.com/bitcoin/\">total value of all existing bitcoins</a> exceeded 100 billion US dollars, with millions of dollars worth of bitcoins exchanged daily."
+    acquire: "How does one acquire bitcoins?"
+    acquireli1: "As payment for goods or services."
+    acquireli2: "Purchase bitcoins at a <a href=\"https://www.buybitcoinworldwide.com\">Bitcoin exchange</a>."
+    acquireli3: "Exchange bitcoins with <a href=\"https://localbitcoins.com/\">someone near you</a>."
+    acquireli4: "Earn bitcoins through competitive <a href=\"http://www.bitcoinmining.com/\">mining</a>."
+    acquiretxt1: "While it may be possible to find individuals who wish to sell bitcoins in exchange for a credit card or PayPal payment, most exchanges do not allow funding via these payment methods. This is due to cases where someone buys bitcoins with PayPal, and then reverses their half of the transaction. This is commonly referred to as a chargeback."
+    makepayment: "How difficult is it to make a Bitcoin payment?"
+    makepaymenttxt1: "Bitcoin payments are easier to make than debit or credit card purchases, and can be received without a merchant account. Payments are made from a wallet application, either on your computer or smartphone, by entering the recipient's address, the payment amount, and pressing send. To make it easier to enter a recipient's address, many wallets can obtain the address by scanning a QR code or touching two phones together with NFC technology."
+    advantages: "What are the advantages of Bitcoin?"
+    advantagesli1: >
+      <em><b>Payment freedom</b></em> - It is possible to send and
+      receive bitcoins anywhere in the world at any
+      time. No bank holidays. No borders. No bureaucracy. Bitcoin
+      allows its users to be in full control of their money.
+
+    advantagesli2: >
+      <em><b>Choose your own fees</b></em> - There is no fee to receive
+      bitcoins, and many wallets let you control how large a fee to pay
+      when spending. Higher fees can encourage faster <a
+      href="#you-need-to-know##instant">confirmation</a> of your
+      transactions. Fees are unrelated to the amount transferred, so
+      it's possible to send 100,000 bitcoins for the same fee it costs
+      to send 1 bitcoin. Additionally, merchant processors exist to assist
+      merchants in processing transactions, converting bitcoins to fiat
+      currency and depositing funds directly into merchants' bank
+      accounts daily. As these services are based on Bitcoin, they can
+      be offered for much lower fees than with PayPal or credit card
+      networks.
+
+    advantagesli3: "<em><b>Fewer risks for merchants</b></em> - Bitcoin transactions are secure, irreversible, and do not contain customers’ sensitive or personal information. This protects merchants from losses caused by fraud or fraudulent chargebacks, and there is no need for PCI compliance. Merchants can easily expand to new markets where either credit cards are not available or fraud rates are unacceptably high. The net results are lower fees, larger markets, and fewer administrative costs."
+    advantagesli4: "<em><b>Security and control</b></em> - Bitcoin users are in full control of their transactions; it is impossible for merchants to force unwanted or unnoticed charges as can happen with other payment methods. Bitcoin payments can be made without personal information tied to the transaction. This offers strong protection against identity theft. Bitcoin users can also protect their money with backup and encryption."
+    advantagesli5: "<em><b>Transparent and neutral</b></em> - <a href=\"https://live.blockcypher.com/btc/\">All information</a> concerning the Bitcoin money supply itself is readily available on the block chain for anybody to verify and use in real-time. No individual or organization can control or manipulate the Bitcoin protocol because it is cryptographically secure. This allows the core of Bitcoin to be trusted for being completely neutral, transparent and predictable."
+    disadvantages: "What are the disadvantages of Bitcoin?"
+    disadvantagesli1: "<em><b>Degree of acceptance</b></em> - Many people are still unaware of Bitcoin. Every day, more businesses accept bitcoins because they want the advantages of doing so, but the list remains small and still needs to grow in order to benefit from <a href=\"https://en.wikipedia.org/wiki/Network_effect\">network effects</a>."
+    disadvantagesli2: "<em><b>Volatility</b></em> - The <a href=\"https://bitcoincharts.com/bitcoin/\">total value</a> of bitcoins in circulation and the number of businesses using Bitcoin are still very small compared to what they could be. Therefore, relatively small events, trades, or business activities can significantly affect the price. In theory, this volatility will decrease as Bitcoin markets and the technology matures. Never before has the world seen a start-up currency, so it is truly difficult (and exciting) to imagine how it will play out."
+    disadvantagesli3: "<em><b>Ongoing development</b></em> - Bitcoin software is still in beta with many incomplete features in active development. New tools, features, and services are being developed to make Bitcoin more secure and accessible to the masses. Some of these are still not ready for everyone. Most Bitcoin businesses are new and still offer no insurance. In general, Bitcoin is still in the process of maturing."
+    trust: "Why do people trust Bitcoin?"
+    trusttxt1: "Much of the trust in Bitcoin comes from the fact that it requires no trust at all. Bitcoin is fully open-source and decentralized. This means that anyone has access to the entire source code at any time. Any developer in the world can therefore verify exactly how Bitcoin works. All transactions and bitcoins issued into existence can be transparently consulted in real-time by anyone. All payments can be made without reliance on a third party and the whole system is protected by heavily peer-reviewed cryptographic algorithms like those used for online banking. No organization or individual can control Bitcoin, and the network remains secure even if not all of its users can be trusted."
+    makemoney: "Can I make money with Bitcoin?"
+    makemoneytxt1: "You should never expect to get rich with Bitcoin or any emerging technology. It is always important to be wary of anything that sounds too good to be true or disobeys basic economic rules."
+    makemoneytxt2: "Bitcoin is a growing space of innovation and there are business opportunities that also include risks. There is no guarantee that Bitcoin will continue to grow even though it has developed at a very fast rate so far. Investing time and resources on anything related to Bitcoin requires entrepreneurship. There are various ways to make money with Bitcoin such as mining, speculation or running new businesses. All of these methods are competitive and there is no guarantee of profit. It is up to each individual to make a proper evaluation of the costs and the risks involved in any such project."
+    virtual: "Is Bitcoin fully virtual and immaterial?"
+    virtualtxt1: "Bitcoin is as virtual as the credit cards and online banking networks people use everyday. Bitcoin can be used to pay online and in physical stores just like any other form of money. Bitcoins can also be exchanged in physical form such as the <a href=\"https://denarium.com/\">Denarium coins</a>, but paying with a mobile phone usually remains more convenient. Bitcoin balances are stored in a large distributed network, and they cannot be fraudulently altered by anybody. In other words, Bitcoin users have exclusive control over their funds and bitcoins cannot vanish just because they are virtual."
+    anonymous: "Is Bitcoin anonymous?"
+    anonymoustxt1: "Bitcoin is designed to allow its users to send and receive payments with an acceptable level of privacy as well as any other form of money. However, Bitcoin is not anonymous and cannot offer the same level of privacy as cash. The use of Bitcoin leaves extensive public records. <a href=\"#protect-your-privacy#\">Various mechanisms</a> exist to protect users' privacy, and more are in development. However, there is still work to be done before these features are used correctly by most Bitcoin users."
+    anonymoustxt2: "Some concerns have been raised that private transactions could be used for illegal purposes with Bitcoin. However, it is worth noting that Bitcoin will undoubtedly be subjected to similar regulations that are already in place inside existing financial systems. Bitcoin cannot be more anonymous than cash and it is not likely to prevent criminal investigations from being conducted. Additionally, Bitcoin is also designed to prevent a large range of financial crimes."
+    lost: "What happens when bitcoins are lost?"
+    losttxt1: "When a user loses his wallet, it has the effect of removing money out of circulation. Lost bitcoins still remain in the block chain just like any other bitcoins. However, lost bitcoins remain dormant forever because there is no way for anybody to find the private key(s) that would allow them to be spent again. Because of the law of supply and demand, when fewer bitcoins are available, the ones that are left will be in higher demand and increase in value to compensate."
+    scale: "Can Bitcoin scale to become a major payment network?"
+    scaletxt1: "The Bitcoin network can already process a much higher number of transactions per second than it does today. It is, however, not entirely ready to scale to the level of major credit card networks. Work is underway to lift current limitations, and future requirements are well known. Since inception, every aspect of the Bitcoin network has been in a continuous process of maturation, optimization, and specialization, and it should be expected to remain that way for some years to come. As traffic grows, more Bitcoin users may use lightweight clients, and full network nodes may become a more specialized service. For more details, see the <a href=\"https://en.bitcoin.it/wiki/Scalability\">Scalability</a> page on the Wiki."
+    legal: "Legal"
+    islegal: "Is Bitcoin legal?"
+    islegaltxt1: "To the best of our knowledge, <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">Bitcoin has not been made illegal</a> by legislation in most jurisdictions. However, some jurisdictions (such as Argentina and Russia) severely restrict or ban foreign currencies. Other jurisdictions (such as Thailand) may limit the licensing of certain entities such as Bitcoin exchanges."
+    islegaltxt2: "Regulators from various jurisdictions are taking steps to provide individuals and businesses with rules on how to integrate this new technology with the formal, regulated financial system. For example, the Financial Crimes Enforcement Network (FinCEN), a bureau in the United States Treasury Department, issued non-binding guidance on how it characterizes certain activities involving virtual currencies."
+    illegalactivities: "Is Bitcoin useful for illegal activities?"
+    illegalactivitiestxt1: "Bitcoin is money, and money has always been used both for legal and illegal purposes. Cash, credit cards and current banking systems widely surpass Bitcoin in terms of their use to finance crime. Bitcoin can bring significant innovation in payment systems and the benefits of such innovation are often considered to be far beyond their potential drawbacks."
+    illegalactivitiestxt2: "Bitcoin is designed to be a huge step forward in making money more secure and could also act as a significant protection against many forms of financial crime. For instance, bitcoins are completely impossible to counterfeit. Users are in full control of their payments and cannot receive unapproved charges such as with credit card fraud. Bitcoin transactions are irreversible and immune to fraudulent chargebacks. Bitcoin allows money to be secured against theft and loss using very strong and useful mechanisms such as backups, encryption, and multiple signatures."
+    illegalactivitiestxt3: "Some concerns have been raised that Bitcoin could be more attractive to criminals because it can be used to make private and irreversible payments. However, these features already exist with cash and wire transfer, which are widely used and well-established. The use of Bitcoin will undoubtedly be subjected to similar regulations that are already in place inside existing financial systems, and Bitcoin is not likely to prevent criminal investigations from being conducted. In general, it is common for important breakthroughs to be perceived as being controversial before their benefits are well understood. The Internet is a good example among many others to illustrate this."
+    regulated: "Can Bitcoin be regulated?"
+    regulatedtxt1: "The Bitcoin protocol itself cannot be modified without the cooperation of nearly all its users, who choose what software they use. Attempting to assign special rights to a local authority in the rules of the global Bitcoin network is not a practical possibility. Any rich organization could choose to invest in mining hardware to control half of the computing power of the network and become able to block or reverse recent transactions. However, there is no guarantee that they could retain this power since this requires to invest as much than all other miners in the world."
+    regulatedtxt2: "It is however possible to regulate the use of Bitcoin in a similar way to any other instrument. Just like the dollar, Bitcoin can be used for a wide variety of purposes, some of which can be considered legitimate or not as per each jurisdiction's laws. In this regard, Bitcoin is no different than any other tool or resource and can be subjected to different regulations in each country. Bitcoin use could also be made difficult by restrictive regulations, in which case it is hard to determine what percentage of users would keep using the technology. A government that chooses to ban Bitcoin would prevent domestic businesses and markets from developing, shifting innovation to other countries. The challenge for regulators, as always, is to develop efficient solutions while not impairing the growth of new emerging markets and businesses."
+    taxes: "What about Bitcoin and taxes?"
+    taxestxt1: "Bitcoin is not a fiat currency with legal tender status in any jurisdiction, but often tax liability accrues regardless of the medium used. There is a wide variety of legislation in many different jurisdictions which could cause income, sales, payroll, capital gains, or some other form of tax liability to arise with Bitcoin."
+    consumer: "What about Bitcoin and consumer protection?"
+    consumertxt1: "Bitcoin is freeing people to transact on their own terms. Each user can send and receive payments in a similar way to cash but they can also take part in more complex contracts. Multiple signatures allow a transaction to be accepted by the network only if a certain number of a defined group of persons agree to sign the transaction. This allows innovative dispute mediation services to be developed in the future. Such services could allow a third party to approve or reject a transaction in case of disagreement between the other parties without having control on their money. As opposed to cash and other payment methods, Bitcoin always leaves a public proof that a transaction did take place, which can potentially be used in a recourse against businesses with fraudulent practices."
+    consumertxt2: "It is also worth noting that while merchants usually depend on their public reputation to remain in business and pay their employees, they don't have access to the same level of information when dealing with new consumers. The way Bitcoin works allows both individuals and businesses to be protected against fraudulent chargebacks while giving the choice to the consumer to ask for more protection when they are not willing to trust a particular merchant."
+    economy: "Economy"
+    bitcoinscreated: "How are bitcoins created?"
+    bitcoinscreatedtxt1: "New bitcoins are generated by a competitive and decentralized process called \"mining\". This process involves that individuals are rewarded by the network for their services. Bitcoin miners are processing transactions and securing the network using specialized hardware and are collecting new bitcoins in exchange."
+    bitcoinscreatedtxt2: "The Bitcoin protocol is designed in such a way that new bitcoins are created at a fixed rate. This makes Bitcoin mining a very competitive business. When more miners join the network, it becomes increasingly difficult to make a profit and miners must seek efficiency to cut their operating costs. No central authority or developer has any power to control or manipulate the system to increase their profits. Every Bitcoin node in the world will reject anything that does not comply with the rules it expects the system to follow."
+    bitcoinscreatedtxt3: "Bitcoins are created at a decreasing and predictable rate. The number of new bitcoins created each year is automatically halved over time until bitcoin issuance halts completely with a total of 21 million bitcoins in existence. At this point, Bitcoin miners will probably be supported exclusively by numerous small transaction fees."
+    whyvalue: "Why do bitcoins have value?"
+    whyvaluetxt1: "Bitcoins have value because they are useful as a form of money. Bitcoin has the characteristics of money (durability, portability, fungibility, scarcity, divisibility, and recognizability) based on the properties of mathematics rather than relying on physical properties (like gold and silver) or trust in central authorities (like fiat currencies). In short, Bitcoin is backed by mathematics. With these attributes, all that is required for a form of money to hold value is trust and adoption. In the case of Bitcoin, this can be measured by its growing base of users, merchants, and startups. As with all currency, bitcoin's value comes only and directly from people willing to accept them as payment."
+    whatprice: "What determines bitcoin’s price?"
+    whatpricetxt1: "The price of a bitcoin is determined by supply and demand. When demand for bitcoins increases, the price increases, and when demand falls, the price falls. There is only a limited number of bitcoins in circulation and new bitcoins are created at a predictable and decreasing rate, which means that demand must follow this level of inflation to keep the price stable. Because Bitcoin is still a relatively small market compared to what it could be, it doesn't take significant amounts of money to move the market price up or down, and thus the price of a bitcoin is still very volatile."
+    whatpriceimg1: "Bitcoin price over time:"
+    worthless: "Can bitcoins become worthless?"
+    worthlesstxt1: "Yes. History is littered with currencies that failed and are no longer used, such as the <a href=\"https://en.wikipedia.org/wiki/German_gold_mark\">German Mark</a> during the Weimar Republic and, more recently, the <a href=\"https://en.wikipedia.org/wiki/Zimbabwean_dollar\">Zimbabwean dollar</a>. Although previous currency failures were typically due to hyperinflation of a kind that Bitcoin makes impossible, there is always potential for technical failures, competing currencies, political issues and so on. As a basic rule of thumb, no currency should be considered absolutely safe from failures or hard times. Bitcoin has proven reliable for years since its inception and there is a lot of potential for Bitcoin to continue to grow. However, no one is in a position to predict what the future will be for Bitcoin."
+    bubble: "Is Bitcoin a bubble?"
+    bubbletxt1: "A fast rise in price does not constitute a bubble. An artificial over-valuation that will lead to a sudden downward correction constitutes a bubble. Choices based on individual human action by hundreds of thousands of market participants is the cause for bitcoin's price to fluctuate as the market seeks price discovery. Reasons for changes in sentiment may include a loss of confidence in Bitcoin, a large difference between value and price not based on the fundamentals of the Bitcoin economy, increased press coverage stimulating speculative demand, fear of uncertainty, and old-fashioned irrational exuberance and greed."
+    ponzi: "Is Bitcoin a Ponzi scheme?"
+    ponzitxt1: "A Ponzi scheme is a fraudulent investment operation that pays returns to its investors from their own money, or the money paid by subsequent investors, instead of from profit earned by the individuals running the business. Ponzi schemes are designed to collapse at the expense of the last investors when there is not enough new participants."
+    ponzitxt2: "Bitcoin is a free software project with no central authority. Consequently, no one is in a position to make fraudulent representations about investment returns. Like other major currencies such as gold, United States dollar, euro, yen, etc. there is no guaranteed purchasing power and the exchange rate floats freely. This leads to volatility where owners of bitcoins can unpredictably make or lose money. Beyond speculation, Bitcoin is also a payment system with useful and competitive attributes that are being used by thousands of users and businesses."
+    earlyadopter: "Doesn't Bitcoin unfairly benefit early adopters?"
+    earlyadoptertxt1: "Some early adopters have large numbers of bitcoins because they took risks and invested time and resources in an unproven technology that was hardly used by anyone and that was much harder to secure properly. Many early adopters spent large numbers of bitcoins quite a few times before they became valuable or bought only small amounts and didn't make huge gains. There is no guarantee that the price of a bitcoin will increase or drop. This is very similar to investing in an early startup that can either gain value through its usefulness and popularity, or just never break through. Bitcoin is still in its infancy, and it has been designed with a very long-term view; it is hard to imagine how it could be less biased towards early adopters, and today's users may or may not be the early adopters of tomorrow."
+    finitelimitation: "Won't the finite amount of bitcoins be a limitation?"
+    finitelimitationtxt1: "Bitcoin is unique in that only 21 million bitcoins will ever be created. However, this will never be a limitation because transactions can be denominated in smaller sub-units of a bitcoin, such as bits - there are 1,000,000 bits in 1 bitcoin. Bitcoins can be divided up to 8 decimal places (0.000 000 01) and potentially even smaller units if that is ever required in the future as the average transaction size decreases."
+    deflationaryspiral: "Won't Bitcoin fall in a deflationary spiral?"
+    deflationaryspiraltxt1: "The deflationary spiral theory says that if prices are expected to fall, people will move purchases into the future in order to benefit from the lower prices. That fall in demand will in turn cause merchants to lower their prices to try and stimulate demand, making the problem worse and leading to an economic depression."
+    deflationaryspiraltxt2: "Although this theory is a popular way to justify inflation amongst central bankers, it does not appear to always hold true and is considered controversial amongst economists. Consumer electronics is one example of a market where prices constantly fall but which is not in depression. Similarly, the value of bitcoins has risen over time and yet the size of the Bitcoin economy has also grown dramatically along with it. Because both the value of the currency and the size of its economy started at zero in 2009, Bitcoin is a counterexample to the theory showing that it must sometimes be wrong."
+    deflationaryspiraltxt3: "Notwithstanding this, Bitcoin is not designed to be a deflationary currency. It is more accurate to say Bitcoin is intended to inflate in its early years, and become stable in its later years. The only time the quantity of bitcoins in circulation will drop is if people carelessly lose their wallets by failing to make backups. With a stable monetary base and a stable economy, the value of the currency should remain the same."
+    speculationvolatility: "Isn't speculation and volatility a problem for Bitcoin?"
+    speculationvolatilitytxt1: "This is a chicken and egg situation. For bitcoin's price to stabilize, a large scale economy needs to develop with more businesses and users. For a large scale economy to develop, businesses and users will seek for price stability."
+    speculationvolatilitytxt2: "Fortunately, volatility does not affect the main benefits of Bitcoin as a payment system to transfer money from point A to point B. It is possible for businesses to convert bitcoin payments to their local currency instantly, allowing them to profit from the advantages of Bitcoin without being subjected to price fluctuations. Since Bitcoin offers many useful and unique features and properties, many users choose to use Bitcoin. With such solutions and incentives, it is possible that Bitcoin will mature and develop to a degree where price volatility will become limited."
+    buyall: "What if someone bought up all the existing bitcoins?"
+    buyalltxt1: "Only a fraction of bitcoins issued to date are found on the exchange markets for sale. Bitcoin markets are competitive, meaning the price of a bitcoin will rise or fall depending on supply and demand. Additionally, new bitcoins will continue to be issued for decades to come. Therefore even the most determined buyer could not buy all the bitcoins in existence. This situation isn't to suggest, however, that the markets aren't vulnerable to price manipulation; it still doesn't take significant amounts of money to move the market price up or down, and thus Bitcoin remains a volatile asset thus far."
+    bettercurrency: "What if someone creates a better digital currency?"
+    bettercurrencytxt1: "That can happen. For now, Bitcoin remains by far the most popular decentralized virtual currency, but there can be no guarantee that it will retain that position. There is already a set of alternative currencies inspired by Bitcoin. It is however probably correct to assume that significant improvements would be required for a new currency to overtake Bitcoin in terms of established market, even though this remains unpredictable. Bitcoin could also conceivably adopt improvements of a competing currency so long as it doesn't change fundamental parts of the protocol."
+    transactions: "Transactions"
+    tenminutes: "Why do I have to wait for confirmation?"
+    tenminutestxt1: >
+      Receiving notification of a payment is almost instant with Bitcoin. However, there
+      is a delay before the network begins to
+      confirm your transaction by including it in a block.
+      A confirmation means that
+      there is a consensus on the network that the bitcoins you received
+      haven't been sent to anyone else and are considered your property.
+      Once your transaction has been included in one block, it will
+      continue to be buried under every block after it, which will
+      exponentially consolidate this consensus and decrease the risk of
+      a reversed transaction.
+      Each confirmation takes between a few seconds and 90 minutes, with
+      10 minutes being the average. If the transaction pays too low a
+      fee or is otherwise atypical, getting the first confirmation can
+      take much longer.  Every user is free to determine at what
+      point they consider a transaction sufficiently confirmed, but <a href="#you-need-to-know##instant">6 confirmations</a>
+      is often considered to be as safe as waiting 6 months on a credit
+      card transaction.
+
+    fee: "How much will the transaction fee be?"
+    feetxt1: >
+      Transactions can be processed without fees, but trying to send
+      free transactions can require waiting days or weeks. Although fees
+      may increase over time, normal fees currently only cost a tiny
+      amount. By default, all <a href="#choose-your-wallet#">Bitcoin
+      wallets</a> listed on Bitcoin.org add what they think is an
+      appropriate fee to your transactions; most of those wallets will
+      also give you chance to review the fee before sending the
+      transaction.
+
+    feetxt2: >
+      Transaction fees are used as a protection against users sending
+      transactions to overload the network and as a way to pay
+      miners for their work helping to secure the network. The precise manner in which
+      fees work is still being developed and will change over time.
+      Because the fee is not related to the amount of bitcoins being
+      sent, it may seem extremely low or unfairly high. Instead, the
+      fee is relative to the number of bytes in the transaction, so
+      using multisig or spending multiple previously-received amounts
+      may cost more than simpler transactions. If your activity follows
+      the pattern of conventional transactions, you won't have to pay
+      unusually high fees.
+
+    poweredoff: "What if I receive a bitcoin when my computer is powered off?"
+    poweredofftxt1: "This works fine. The bitcoins will appear next time you start your wallet application. Bitcoins are not actually received by the software on your computer, they are appended to a public ledger that is shared between all the devices on the network. If you are sent bitcoins when your wallet client program is not running and you later launch it, it will download blocks and catch up with any transactions it did not already know about, and the bitcoins will eventually appear as if they were just received in real time. Your wallet is only needed when you wish to spend bitcoins."
+    sync: "What does \"synchronizing\" mean and why does it take so long?"
+    synctxt1: "Long synchronization time is only required with full node clients like Bitcoin Core. Technically speaking, synchronizing is the process of downloading and verifying all previous Bitcoin transactions on the network. For some Bitcoin clients to calculate the spendable balance of your Bitcoin wallet and make new transactions, it needs to be aware of all previous transactions. This step can be resource intensive and requires sufficient bandwidth and storage to accommodate the full size of the block chain. For Bitcoin to remain secure, enough people should keep using full node clients because they perform the task of validating and relaying transactions."
+    mining: "Mining"
+    whatismining: "What is Bitcoin mining?"
+    whatisminingtxt1: "Mining is the process of spending computing power to process transactions, secure the network, and keep everyone in the system synchronized together. It can be perceived like the Bitcoin data center except that it has been designed to be fully decentralized with miners operating in all countries and no individual having control over the network. This process is referred to as \"mining\" as an analogy to gold mining because it is also a temporary mechanism used to issue new bitcoins. Unlike gold mining, however, Bitcoin mining provides a reward in exchange for useful services required to operate a secure payment network. Mining will still be required after the last bitcoin is issued."
+    howminingworks: "How does Bitcoin mining work?"
+    howminingworkstxt1: "Anybody can become a Bitcoin miner by running software with specialized hardware. Mining software listens for transactions broadcast through the peer-to-peer network and performs appropriate tasks to process and confirm these transactions. Bitcoin miners perform this work because they can earn transaction fees paid by users for faster transaction processing, and newly created bitcoins issued into existence according to a fixed formula."
+    howminingworkstxt2: "For new transactions to be confirmed, they need to be included in a block along with a mathematical proof of work. Such proofs are very hard to generate because there is no way to create them other than by trying billions of calculations per second. This requires miners to perform these calculations before their blocks are accepted by the network and before they are rewarded. As more people start to mine, the difficulty of finding valid blocks is automatically increased by the network to ensure that the average time to find a block remains equal to 10 minutes. As a result, mining is a very competitive business where no individual miner can control what is included in the block chain."
+    howminingworkstxt3: "The proof of work is also designed to depend on the previous block to force a chronological order in the block chain. This makes it exponentially difficult to reverse previous transactions because this requires the recalculation of the proofs of work of all the subsequent blocks. When two blocks are found at the same time, miners work on the first block they receive and switch to the longest chain of blocks as soon as the next block is found. This allows mining to secure and maintain a global consensus based on processing power."
+    howminingworkstxt4: "Bitcoin miners are neither able to cheat by increasing their own reward nor process fraudulent transactions that could corrupt the Bitcoin network because all Bitcoin nodes would reject any block that contains invalid data as per the rules of the Bitcoin protocol. Consequently, the network remains secure even if not all Bitcoin miners can be trusted."
+    miningwaste: "Isn't Bitcoin mining a waste of energy?"
+    miningwastetxt1: "Spending energy to secure and operate a payment system is hardly a waste. Like any other payment service, the use of Bitcoin entails processing costs. Services necessary for the operation of currently widespread monetary systems, such as banks, credit cards, and armored vehicles, also use a lot of energy. Although unlike Bitcoin, their total energy consumption is not transparent and cannot be as easily measured."
+    miningwastetxt2: "Bitcoin mining has been designed to become more optimized over time with specialized hardware consuming less energy, and the operating costs of mining should continue to be proportional to demand. When Bitcoin mining becomes too competitive and less profitable, some miners choose to stop their activities. Furthermore, all energy expended mining is eventually transformed into heat, and the most profitable miners will be those who have put this heat to good use. An optimally efficient mining network is one that isn't actually consuming any extra energy. While this is an ideal, the economics of mining are such that miners individually strive toward it."
+    miningsecure: "How does mining help secure Bitcoin?"
+    miningsecuretxt1: "Mining creates the equivalent of a competitive lottery that makes it very difficult for anyone to consecutively add new blocks of transactions into the block chain. This protects the neutrality of the network by preventing any individual from gaining the power to block certain transactions. This also prevents any individual from replacing parts of the block chain to roll back their own spends, which could be used to defraud other users. Mining makes it exponentially more difficult to reverse a past transaction by requiring the rewriting of all blocks following this transaction."
+    miningstart: "What do I need to start mining?"
+    miningstarttxt1: "In the early days of Bitcoin, anyone could find a new block using their computer's CPU. As more and more people started mining, the difficulty of finding new blocks increased greatly to the point where the only cost-effective method of mining today is using specialized hardware. You can visit <a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a> for more information."
+    security: "Security"
+    secure: "Is Bitcoin secure?"
+    securetxt1: "The Bitcoin technology - the protocol and the cryptography - has a strong security track record, and the Bitcoin network is probably the biggest distributed computing project in the world. Bitcoin's most common vulnerability is in user error. Bitcoin wallet files that store the necessary private keys can be accidentally deleted, lost or stolen. This is pretty similar to physical cash stored in a digital form. Fortunately, users can employ sound <a href=\"#secure-your-wallet#\">security practices</a> to protect their money or use service providers that offer good levels of security and insurance against theft or loss."
+    hacked: "Hasn't Bitcoin been hacked in the past?"
+    hackedtxt1: "The rules of the protocol and the cryptography used for Bitcoin are still working years after its inception, which is a good indication that the concept is well designed. However, <a href=\"/en/alerts\">security flaws</a> have been found and fixed over time in various software implementations. Like any other form of software, the security of Bitcoin software depends on the speed with which problems are found and fixed. The more such issues are discovered, the more Bitcoin is gaining maturity."
+    hackedtxt2: "There are often misconceptions about thefts and security breaches that happened on diverse exchanges and businesses. Although these events are unfortunate, none of them involve Bitcoin itself being hacked, nor imply inherent flaws in Bitcoin; just like a bank robbery doesn't mean that the dollar is compromised. However, it is accurate to say that a complete set of good practices and intuitive security solutions is needed to give users better protection of their money, and to reduce the general risk of theft and loss. Over the course of the last few years, such security features have quickly developed, such as wallet encryption, offline wallets, hardware wallets, and multi-signature transactions."
+    collude: "Could users collude against Bitcoin?"
+    colludetxt1: "It is not possible to change the Bitcoin protocol that easily. Any Bitcoin client that doesn't comply with the same rules cannot enforce their own rules on other users. As per the current specification, double spending is not possible on the same block chain, and neither is spending bitcoins without a valid signature. Therefore, it is not possible to generate uncontrolled amounts of bitcoins out of thin air, spend other users' funds, corrupt the network, or anything similar."
+    colludetxt2: "However, powerful miners could arbitrarily choose to block or reverse recent transactions. A majority of users can also put pressure for some changes to be adopted. Because Bitcoin only works correctly with a complete consensus between all users, changing the protocol can be very difficult and requires an overwhelming majority of users to adopt the changes in such a way that remaining users have nearly no choice but to follow. As a general rule, it is hard to imagine why any Bitcoin user would choose to adopt any change that could compromise their own money."
+    quantum: "Is Bitcoin vulnerable to quantum computing?"
+    quantumtxt1: "Yes, most systems relying on cryptography in general are, including traditional banking systems. However, quantum computers don't yet exist and probably won't for a while. In the event that <a href=\"https://bitcoinmagazine.com/6021/bitcoin-is-not-quantum-safe-and-how-we-can-fix/\">quantum computing</a> could be an imminent threat to Bitcoin, the protocol could be upgraded to use post-quantum algorithms. Given the importance that this update would have, it can be safely expected that it would be highly reviewed by developers and adopted by all Bitcoin users."
+    help: "Help"
+    morehelp: "I'd like to learn more. Where can I get help?"
+    morehelptxt1: "You can find more information and help on the <a href=\"#resources#\">resources</a> and <a href=\"#community#\">community</a> pages or on the <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a>."
+  getting-started:
+    title: "Getting started - Bitcoin"
+    pagetitle: "Getting started with Bitcoin"
+    pagedesc: "Using Bitcoin to transact is easy and accessible to everyone."
+    users: "How to use Bitcoin"
+    inform: "Inform yourself"
+    informtxt: "Bitcoin is different than what you know and use every day. Before you start using Bitcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls."
+    informbut: "Read more"
+    choose: "Choose your wallet"
+    choosetxt: "Free bitcoin wallets are available for all major operating systems and devices to serve a variety of your needs. For example, you can install an app on your mobile device for everyday use or you can have a wallet only for online payments on your computer. In any case, choosing a wallet is easy and can be done in minutes."
+    choosebut: "Choose your wallet"
+    get: "Get Bitcoin"
+    gettxt: "You can get Bitcoin by accepting it as a payment for goods and services. There are also several ways you can buy Bitcoin."
+    getbut: "Buy Bitcoin"
+    spend: "Spend Bitcoin"
+    spendtxt: "There are a growing number of services and merchants accepting Bitcoin all over the world. Use Bitcoin to pay them and rate your experience to help them gain more visibility."
+    spendbut: "Find merchants and products"
+    merchants: "How to accept Bitcoin"
+    merchantinform: "Inform yourself"
+    merchantinformtxt: "Bitcoin does not require merchants to change their habits. However, Bitcoin is different than what you know and use every day. Before you start using Bitcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls."
+    merchantinformbut: "Read more"
+    merchantservice: "Processing payments"
+    merchantservicetxt: "You can process payments and invoices by yourself or you can use merchant services and deposit money in your local currency or bitcoins. Most point of sales businesses use a tablet or a mobile phone to let customers pay with their mobile phones."
+    merchantservicebut: "Find merchant services"
+    tax: "Accounting and taxes"
+    taxtxt: "Merchants often deposit and display prices in their local currency. In other cases, Bitcoin works similarly to a foreign currency. To get appropriate guidance regarding tax compliance for your own jurisdiction, you should contact a qualified accountant."
+    taxbut: "Read more"
+    visibility: "Gaining visibility"
+    visibilitytxt: "There is a growing number of users searching for ways to spend their bitcoins. You can submit your business in online directories to help them easily find you. You can also display the <a href=\"https://en.bitcoin.it/wiki/Promotional_graphics\">Bitcoin logo</a> on your website or your brick and mortar business."
+    visibilitybut: "Submit your business"
+  how-it-works:
+    title: "How does Bitcoin work? - Bitcoin"
+    pagetitle: "How does Bitcoin work?"
+    intro: "This is a question often surrounded by confusion, so here's a quick explanation!"
+    basics: "The basics for a new user"
+    basicstxt1: "As a new user, you can <a href=\"#getting-started#\">get started</a> with Bitcoin without understanding the technical details. Once you've installed a Bitcoin wallet on your computer or mobile phone, it will generate your first Bitcoin address and you can create more whenever you need one. You can disclose your addresses to your friends so that they can pay you or vice versa. In fact, this is pretty similar to how email works, except that Bitcoin addresses should be used only once."
+    balances: "Balances<span class=\"titlelight\"> - block chain</span>"
+    balancestxt: "The block chain is a <b>shared public ledger</b> on which the entire Bitcoin network relies. All confirmed transactions are included in the block chain. It allows Bitcoin wallets to calculate their spendable balance so that new transactions can be verified thereby ensuring they're actually owned by the spender. The integrity and the chronological order of the block chain are enforced with <a href=\"#vocabulary##[vocabulary.cryptography]\">cryptography</a>."
+    transactions: "Transactions<span class=\"titlelight\"> - private keys</span>"
+    transactionstxt: "A transaction is <b>a transfer of value between Bitcoin wallets</b> that gets included in the block chain. Bitcoin wallets keep a secret piece of data called a <a href=\"#vocabulary##[vocabulary.privatekey]\"><i>private key</i></a> or seed, which is used to sign transactions, providing a mathematical proof that they have come from the owner of the wallet. The <a href=\"#vocabulary##[vocabulary.signature]\"><i>signature</i></a> also prevents the transaction from being altered by anybody once it has been issued. All transactions are broadcast to the network and usually begin to be confirmed within 10-20 minutes, through a process called <a href=\"#vocabulary##[vocabulary.mining]\"><i>mining</i></a>."
+    processing: "Processing<span class=\"titlelight\"> - mining</span>"
+    processingtxt: "Mining is a <b>distributed consensus system</b> that is used to <a href=\"#vocabulary##[vocabulary.confirmation]\"><i>confirm</i></a> pending transactions by including them in the block chain. It enforces a chronological order in the block chain, protects the neutrality of the network, and allows different computers to agree on the state of the system. To be confirmed, transactions must be packed in a <a href=\"#vocabulary##[vocabulary.block]\"><i>block</i></a> that fits very strict cryptographic rules that will be verified by the network. These rules prevent previous blocks from being modified because doing so would invalidate all the subsequent blocks. Mining also creates the equivalent of a competitive lottery that prevents any individual from easily adding new blocks consecutively to the block chain. In this way, no group or individuals can control what is included in the block chain or replace parts of the block chain to roll back their own spends."
+    readmore: "Going down the rabbit hole"
+    readmoretxt: "This is just a short summary of Bitcoin. If you want to learn more of the details, you can <a href=\"#bitcoin-paper#\">read the original paper</a> that describes its design, the <a href=\"https://developer.bitcoin.org/\">developer documentation</a>, or explore the <a href=\"https://en.bitcoin.it/wiki/Main_Page\">Bitcoin wiki</a>."
+  index:
+    title: "Bitcoin - Open source P2P money"
+    metadescription: "Bitcoin is an innovative payment network and a new kind of money. Find all you need to know and get started with Bitcoin on bitcoin.org."
+    listintro: "Bitcoin is an innovative payment network and a new kind of money."
+    list1: "Fast peer-to-peer transactions"
+    list2: "Worldwide payments"
+    list3: "Low processing fees"
+    desc: "Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. <b>Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and <a href=\"#support-bitcoin#\">everyone can take part</a></b>. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system."
+    overview: "Get a quick overview for"
+  innovation:
+    title: "Innovation - Bitcoin"
+    pagetitle: "Innovation in Payment Systems"
+    summary: "Bitcoin isn't just about sending money. It has many features and opens many possibilities that the community is still exploring. Here are some of the technologies currently being researched, and in some cases, being turned into real products and services. The most interesting uses of Bitcoin are probably still to be discovered."
+    control: "Control against fraud"
+    controltext: "An unprecedented level of security is possible with Bitcoin. The network provides users with protection against most prevalent types of fraud like chargebacks or unwanted charges, and bitcoins are impossible to counterfeit. Users can backup or encrypt their wallets. Hardware wallets make it very difficult to steal or lose money. Bitcoin is designed to allow its users to have complete control over their money."
+    global: "Global accessibility"
+    globaltext: "With Bitcoin, all payments in the world can be fully interoperable. Bitcoin allows any bank, business or individual to securely send and receive payments anywhere at any time, with or without a bank account. Bitcoin is available in a large number of countries that still remain out of reach for most payment systems due to their own limitations. Bitcoin increases global access to commerce and it can help international trades to flourish."
+    cost: "Cost efficiency"
+    costtext: "With the use of cryptography, secure payments are possible without slow and costly middlemen. A Bitcoin transaction can be much cheaper than its alternatives and be completed in a short time. This means Bitcoin holds some potential to become a common way to transfer any currency in the future. Bitcoin could also play a role in <a href=\"https://www.youtube.com/watch?v=BrRXP1tp6Kw\">reducing poverty</a> in many countries by cutting high transaction fees on workers' salary."
+    donation: "Tips and donations"
+    donationtext: "Bitcoin has been a particularly efficient solution for tips and donations. Sending a payment only requires one click and receiving donations can be as simple as displaying a QR code. Donations can be visible for the public, giving increased transparency for non-profit organizations. In cases of emergencies such as natural disasters, Bitcoin donations could contribute to a faster international response."
+    crowdfunding: "Crowdfunding"
+    crowdfundingtext: "Bitcoin can be used to run Kickstarter-like crowdfunding campaigns, in which individuals pledge money to a project that is taken from them only if enough pledges are received to meet the target. Such assurance contracts are processed by the Bitcoin protocol, which prevents a transaction from taking place until all conditions have been met. <a href=\"https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts\">Learn more</a> about the technology behind crowdfunding."
+    micro: "Micro payments"
+    microtext: >
+      Imagine listening to Internet radio paid by the second, viewing
+      web pages with a small tip for each ad not shown, or buying
+      bandwidth from a WiFi hotspot by the kilobyte. Bitcoin is
+      efficient enough to make all of these ideas possible. <a
+      href="https://bitcoinj.github.io/working-with-micropayments">Learn
+      more</a> about the technology behind Bitcoin micropayments
+      or about <a href="http://lightning.network/">future upgrades</a> currently
+      being designed and implemented to make micropayments more
+      accessible.
+
+    mediation: "Dispute mediation"
+    mediationtext: "Bitcoin can be used to develop innovative dispute mediation services using multiple signatures. Such services could make it possible for a third party to approve or reject a transaction in case of disagreement between the other parties without having control of their money. Since these services would be compatible with any user and merchant using Bitcoin, this would likely lead to free competition and higher quality standards."
+    multisig: "Multi-signature accounts"
+    multisigtext: "Multiple signatures allow a transaction to be accepted by the network only if a certain number of a defined group of persons agree to sign the transaction. This could be used by a board of directors to prevent any member to spend parts of their treasury without other members' consent. This can also be used by banks to prevent theft by blocking payments above a threshold if the user does not provide additional credentials."
+    trust: "Trust and integrity"
+    trusttext: "Bitcoin offers solutions to many of the trust problems that plague banks. With selective accounting transparency, digital contracts, and irreversible transactions, Bitcoin can be used as a ground to restore trust and agreement. Crooked banks cannot cheat the system to make a profit at the expense of other banks or the public. A future in which major banks would support Bitcoin could help to reinstate integrity and trust in financial institutions."
+    resiliency: "Resilience and decentralization"
+    resiliencytext: "By way of decentralization, Bitcoin created a different type of payment network with an increased level of resilience and redundancy. Bitcoin can handle millions of dollars in trades without requiring military protection. With no central point of failure such as a data center, attacking the network is difficult. Bitcoin could represent an interesting step forward in securing local and global financial systems."
+    transparency: "Flexible transparency"
+    transparencytext: "All Bitcoin transactions are public and transparent and the identity of the people behind transactions are private by default. This allows individuals and organizations to work with flexible transparency rules. For instance, a business can choose to reveal certain transactions and balances only to certain employees just like a non-profit organization is free to allow the public to see how much they receive in daily and monthly donations."
+    automation: "Automated solutions"
+    automationtext: "Automated services usually have to deal with costs and limitations of cash, or credit card payments. This includes all kinds of vending machines, from train tickets to soda machines. Bitcoin is suited to be used in a new generation of automated services to cut their operating costs. Imagine self-driving taxis or a store where you can pay for your purchases without waiting in line. Many ideas are possible."
+  legal:
+    title: "Legal disclaimer - Bitcoin"
+    pagetitle: "Legal disclaimer"
+    information: "Information published on bitcoin.org"
+    informationtxt1: "The website https://bitcoin.org/ (hereinafter, referred to as the \"Website\") provides information and material of a general nature. You are not authorized and nor should you rely on the Website for legal advice, business advice, or advice of any kind. You act at your own risk in reliance on the contents of the Website. Should you make a decision to act or not act you should contact a licensed attorney in the relevant jurisdiction in which you want or need help. In no way are the owners of, or contributors to, the Website responsible for the actions, decisions, or other behavior taken or not taken by you in reliance upon the Website."
+    translations: "Translations"
+    translationstxt1: "The Website may contain translations of the English version of the content available on the Website. These translations are provided only as a convenience. In the event of any conflict between the English language version and the translated version, the English language version shall take precedence. If you notice any inconsistency, please report them on <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org\">GitHub</a>."
+    userisks: "Risks related to the use of Bitcoin"
+    useriskstxt1: "The Website will not be responsible for any losses, damages or claims arising from events falling within the scope of the following five categories:"
+    useriskstxt2: "Mistakes made by the user of any Bitcoin-related software or service, e.g., forgotten passwords, payments sent to wrong Bitcoin addresses, and accidental deletion of wallets."
+    useriskstxt3: "Software problems of the Website and/or any Bitcoin-related software or service, e.g., corrupted wallet file, incorrectly constructed transactions, unsafe cryptographic libraries, malware affecting the Website and/or any Bitcoin-related software or service."
+    useriskstxt4: "Technical failures in the hardware of the user of any Bitcoin-related software or service, e.g., data loss due to a faulty or damaged storage device."
+    useriskstxt5: "Security problems experienced by the user of any Bitcoin-related software or service, e.g., unauthorized access to users' wallets and/or accounts."
+    useriskstxt6: "Actions or inactions of third parties and/or events experienced by third parties, e.g., bankruptcy of service providers, information security attacks on service providers, and fraud conducted by third parties."
+    investmentrisks: "Investment risks"
+    investmentriskstxt1: "The investment in Bitcoin can lead to loss of money over short or even long periods. The investors in Bitcoin should expect prices to have large range fluctuations. The information published on the Website cannot guarantee that the investors in Bitcoin would not lose money."
+    taxcompliance: "Compliance with tax obligations"
+    taxcompliancetxt1: "The users of the Website are solely responsible to determinate what, if any, taxes apply to their Bitcoin transactions. The owners of, or contributors to, the Website are NOT responsible for determining the taxes that apply to Bitcoin transactions."
+    noissuer: "The Website does not store, send, or receive bitcoins"
+    noissuertxt1: "The Website does not store, send or receive bitcoins. This is because bitcoins exist only by virtue of the ownership record maintained in the Bitcoin network. Any transfer of title in bitcoins occurs within a decentralized Bitcoin network, and not on the Website."
+    nowarranties: "No warranties"
+    nowarrantiestxt1: "The Website is provided on an \"as is\" basis without any warranties of any kind regarding the Website and/or any content, data, materials and/or services provided on the Website."
+    noliability: "Limitation of liability "
+    noliabilitytxt1: "Unless otherwise required by law, in no event shall the owners of, or contributors to, the Website be liable for any damages of any kind, including, but not limited to, loss of use, loss of profits, or loss of data arising out of or in any way connected with the use of the Website."
+    arbitration: "Arbitration"
+    arbitrationtxt1: "The user of the Website agrees to arbitrate any dispute arising from or in connection with the Website or this disclaimer, except for disputes related to copyrights, logos, trademarks, trade names, trade secrets or patents."
+    lastchange: "Last amendment"
+    lastchangetxt1: "This disclaimer was amended for the last time on"
+  press:
+    title: "Press - Bitcoin"
+    pagetitle: "Press center"
+    summary: "Find interviewees, answers and high quality press materials."
+    volunteer: "Interviewees"
+    volunteernonprofit: "Communicate with <a href=\"https://www.bitgivefoundation.org\">BitGive</a>, the <a href=\"https://bitcoincore.org/en/contact\">Bitcoin Core Project</a> or local <a href=\"#community##[community.non-profit]\">non-profit organizations</a>."
+    faqmore: "To learn more about Bitcoin, please visit the complete <a href=\"/en/faq\">FAQ</a> or the <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>."
+  privacy:
+    title: "Privacy Policy - Bitcoin"
+    pagetitle: "Privacy Policy"
+    privacytxt1: "This page informs you of our policies regarding the collection, use and disclosure of personal information we receive from users of our site (https://bitcoin.org). We use your personal information to better understand your usage of the site, and to collect traffic statistics."
+    privacytxt2: "By using the site, you agree to the collection and use of information in accordance with this policy."
+    privacylogdata: "Log Data"
+    privacytxt3: "Like many site operators, we collect information that your browser sends whenever you visit our site (\"Log Data\"). This Log Data may include information such as your computer's Internet Protocol (\"IP\") address (with replaced last byte), browser type, browser version, the pages of our site that you visit, the time and date of your visit, the time spent on those pages and other statistics."
+    privacycookies: "Cookies"
+    privacytxt4: "Cookies are files with small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a web site and stored on your computer's hard drive. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our site."
+    privacytxt5: "We use cookies for the following purposes:"
+    privacytxt6: "To keep track of whether you have pressed the \"OK\" button on the cookie disclaimer, so we don't bother you with the notification if you have."
+    privacytxt7: "Our Analytics software (Google Analytics) uses cookies to measure and better understand user-interactions on our Site. You can read more about how Google Analytics uses cookies <a href=\"https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage\">here</a>."
+    privacyanalytics: "Google Analytics"
+    privacytxt8: "We use a third-party JavaScript plug-in provided by Google called \"Google Analytics\" to provide us with useful traffic statistics and to better understand how you use our site. We do not have direct access to the information obtained from Google Analytics, but Google provides us with a summary through their dashboard."
+    privacytxt9: "We may share the information obtained from Google Analytics with business partners who are interested in advertising on our website. The information shared with these business partners will not contain any personally identifying information (Google does not provide us with direct access to the data and therefore we cannot see this information)."
+    privacytxt10: "You can opt-out of having your information collected by Google Analytics by downloading the Google Analytics opt-out browser add-on provided by Google. This will prevent your information being used by Google Analytics. Doing this will not affect your ability to use our Site in any way. You can download the opt-out browser add-on <a href=\"https://tools.google.com/dlpage/gaoptout\">here</a>. We also honor the Do Not Track header and will not track visitors who have Do Not Track switched on."
+    privacychanges: "Changes to this Privacy Policy"
+    privacytxt11: "We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on the Site. You are advised to review this privacy policy periodically for any changes."
+    privacytxt12: "This Privacy Policy was last updated"
+    privacycontactus: "Contact Us"
+    privacytxt13: "If you have any questions about our privacy policy, or how your data is being collected and processed, please e-mail <a href=\"mailto:privacy@bitcoin.org?Subject=Privacy\">privacy@bitcoin.org</a>."
+  cookie-notification:
+    cookiemessage: "<p class=\"cc_message\">We use cookies to ensure you get the best experience on our website. <br><br>Please read our <a href=\"/en/privacy\">privacy policy</a> to find out more.</p>"
+    cookieaccept: "OK"
+  protect-your-privacy:
+    title: "Protect your privacy - Bitcoin"
+    pagetitle: "Protect your privacy"
+    pagedesc: "Bitcoin is often perceived as an anonymous payment network. But in reality, Bitcoin is probably the most transparent payment network in the world. At the same time, Bitcoin can provide acceptable levels of privacy when used correctly. <b>Always remember that it is your responsibility to adopt good practices in order to protect your privacy</b>."
+    traceable: "Understanding Bitcoin traceability"
+    traceabletxt: "Bitcoin works with an unprecedented level of transparency that most people are not used to dealing with. All Bitcoin transactions are public, traceable, and permanently stored in the Bitcoin network. Bitcoin addresses are the only information used to define where bitcoins are allocated and where they are sent. These addresses are created privately by each user's wallets. However, once addresses are used, they become tainted by the history of all transactions they are involved with. Anyone can see the balance and all transactions of any address. Since users usually have to reveal their identity in order to receive services or goods, Bitcoin addresses cannot remain fully anonymous. As the block chain is permanent, it's important to note that something not traceable currently may become trivial to trace in the future. For these reasons, Bitcoin addresses should only be used once and users must be careful not to disclose their addresses."
+    receive: "Use new addresses to receive payments"
+    receivetxt: "To protect your privacy, you should use a new Bitcoin address each time you receive a new payment. Additionally, you can use multiple wallets for different purposes. Doing so allows you to isolate each of your transactions in such a way that it is not possible to associate them all together. People who send you money cannot see what other Bitcoin addresses you own and what you do with them. This is probably the most important advice you should keep in mind."
+    public: "Be careful with public spaces"
+    publictxt: "Unless your intention is to receive public donations or payments with full transparency, publishing a Bitcoin address on any public space such as a website or social network is not a good idea when it comes to privacy. If you choose to do so, always remember that if you move any funds with this address to one of your other addresses, they will be publicly tainted by the history of your public address. Additionally, you might also want to be careful not to publish information about your transactions and purchases that could allow someone to identify your Bitcoin addresses."
+    iplog: "Your IP address can be logged"
+    iplogtxt: "Because the Bitcoin network is a peer-to-peer network, it is possible to listen for transactions' relays and log their IP addresses. Full node clients relay all users' transactions just like their own. This means that finding the source of any particular transaction can be difficult and any Bitcoin node can be mistaken as the source of a transaction when they are not. You might want to consider hiding your computer's IP address with a tool like <a href=\"https://www.torproject.org/\">Tor</a> so that it cannot be logged."
+    mixing: "Limitations of mixing services"
+    mixingtxt: "Some online services called mixing services offer to mix traceability between users by receiving and sending back the same amount using independent Bitcoin addresses. It is important to note that the legality of using such services might vary and be subjected to different rules in each jurisdiction. Such services also require you to trust the individuals running them not to lose or steal your funds and not to keep a log of your requests. Even though mixing services can break traceability for small amounts, it becomes increasingly difficult to do the same for larger transactions."
+    future: "Future improvements"
+    futuretxt: "Many improvements can be expected in the future to improve privacy. For instance, some efforts are ongoing with the payment messages API to avoid tainting multiple addresses together during a payment. Bitcoin Core change addresses might be implemented in other wallets over time. Graphical user interfaces might be improved to provide user friendly payment request features and discourage addresses reuse. Various work and research is also being done to develop other potential extended privacy features like being able to join random users' transactions together."
+  resources:
+    title: "Resources - Bitcoin"
+    pagetitle: "Bitcoin Resources"
+    pagedesc: "Useful websites and resources about Bitcoin."
+    linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin Wiki</a>"
+    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
+    directories: "Directories"
+    linkwallets: "Wallets"
+    linkmerchants: "Merchants"
+    linkexchanges: "Exchanges"
+    linkprojects: "Projects"
+    linkmerchantstools: "Merchant tools"
+    linknonprofits: "Non-profits"
+    charts: "Charts and Statistics"
+    news: "News"
+    documentaries: "Documentaries"
+    learn: "Learning Resources"
+    vouchers: "Vouchers"
+  scams:
+    title: "Avoid Scams - Bitcoin"
+    pagetitle: "Avoid Scams"
+    summary: "Familiarize yourself with some of the most commonly observed bitcoin scams to help protect yourself and your finances."
+    table: "Types of Scams"
+    blackmail: "Blackmail"
+    blackmailtxt: "Be wary of blackmail attempts in which strangers threaten you in exchange for bitcoin as a means of extortion. One common execution of this method is by email, where-in the sender transmits a message claiming that he/she has hacked into your computer and is operating it via remote desktop protocol (RDP). The sender says that a key logger has been installed and that your web cam was used to record you doing something you may not want others to know about. The sender provides two options - send bitcoin to suppress the material, or send nothing and see the content sent to your email contacts and spread across your social networks. Scammers use stolen email lists and other leaked user information to run this scheme across thousands of people en masse."
+    fake-exchanges: "Fake Exchanges"
+    fake-exchangestxt: "As bitcoin has become more popular, more people have sought to acquire it. Unfortunately, nefarious people have taken advantage of this and have been known to set up fake bitcoin exchanges. These fake exchanges may trick users by offering extremely competitive market prices that lull them into thinking they're getting a steal, with quick and easy access to some cheap bitcoin. Be sure to use a <a href=\"/en/exchanges\">reputable exchange</a> when buying or selling bitcoin."
+    free-giveaways: "Free Giveaways"
+    free-giveawaystxt: "Due to the viral nature of how information spreads across on the internet, scammers seek to take advantage of people by offering free giveaways of bitcoin or other digital currencies in exchange for sending a small amount to register, or by providing some personal information. When you see this on a website or social network, it's best to immediately report the content as fraudulent, so that others don't fall victim."
+    impersonation: "Impersonation"
+    impersonationtxt: "Unfortunately it's very easy for con-artists to create social media accounts and impersonate people. Often times they lie in wait, until the person they're trying to impersonate publishes content. The impersonator then replies to it with a follow-up message or call to action - like a free giveaway - using an account that looks almost identical to the original poster or author. This makes it seem like the original person is saying it. Alternatively, impersonators may also try to use these same fake accounts to trick others via private or direct message into taking some kind of action in an attempt to defraud or compromise. Never participate in free giveaways, and if you receive an odd request via someone in your network, it's best to double check to confirm the authenticity via multiple mediums of communication."
+    malware: "Malware"
+    malwaretxt: "Hackers have become very creative at finding ways to steal from people. When sending bitcoin, always be sure to double or triple check the address you're sending to. Some malware programs, once installed, will change bitcoin addresses when they're pasted from a user's clipboard, so that all of the bitcoin unknowingly gets sent to the hacker's address instead. Since there is little chance of reversing a bitcoin transaction once it's confirmed by the network, noticing this after the fact means it's too late and most likely can't be recovered. It's a good idea to be super-cautious about what programs you allow to have administrator access on your devices. An up-to-date, reputable virus scanner can also help but is not foolproof."
+    meet-in-person: "Meet in Person"
+    meet-in-persontxt: "When buying or selling bitcoin locally, a counterparty may ask you to meet in person to conduct the exchange. If it isn't a trusted party that you already know, this is a very risky proposition that could result in you getting robbed or injured. Con-artists have also been known to exchange counterfeit fiat currency in exchange for bitcoin. Consider using a peer-to-peer platform to escrow the funds in place of meeting in person."
+    money-transfer-fraud: "Money Transfer Fraud"
+    money-transfer-fraudtxt: "Do not reply to emails or inbound communications from strangers telling you they need help moving some money, whereafter in exchange for your services, you'll get a portion of the funds."
+    phishing-emails: "Phishing Emails"
+    phishing-emailstxt: "Beware of emails purported to be from services you use soliciting you for action, such as resetting your password, or clicking through to provide some sort of interaction with regard to your account. It can be very difficult to spot the difference in a fake email that's trying to entice you to compromise your account, and a legitimate one sent on behalf of a product or service that you use. When in doubt, considering triple-checking the authenticity of the communication by forwarding it to the company, using the contact email address on their website, calling them on the telephone, and/or reaching out to them via their official social media accounts."
+    phishing-websites: "Phishing Websites"
+    phishing-websitestxt: "Phishing websites often go hand-in-hand with phishing emails. Phishing emails can link to a replica website designed to steal login credentials or prompt one to install malware. Do not install software or log in to a website unless you are 100% sure it isn't a fake one. Phishing websites may also appear as sponsored results on search engines or in app marketplaces used by mobile devices. Be wary that you aren't downloading a fake app or clicking a sponsored link to a fake website."
+    ponzi-schemes: "Ponzi Schemes"
+    ponzi-schemestxt: "Do not participate in offerings where one or more people offer you a guaranteed return in exchange for an upfront deposit. This is known as a ponzi scheme, where-in future depositors' principals are used to pay previous investors. The end result is usually a lot of people losing a lot of money."
+    pyramid-schemes: "Pyramid Schemes"
+    pyramid-schemestxt: "A pyramid scheme promises returns to participants based on the number of people they invite to join. This enables the scheme to grow virally and rapidly, however, it most often doesn't result in any kind of meaningful return for the members and/or those invited who also joined. Never invite your personal network under the sole goal of accumulating rewards or returns from a product or service, and do not contribute your own capital at the behest of others to accelerate the process."
+    prize-giveaways: "Prize Giveaways"
+    prize-giveawaystxt: "Similarly to free giveaways, prize giveaway scams trick people into taking action or supplying information about themselves. For example, supplying a name, address, email and phone number in order to claim a prize. This can allow a hacker to attempt to use the information to gain access to accounts by impersonating you."
+    pump-and-dumps: "Pump and Dumps"
+    pump-and-dumpstxt: "Do not trust people who entice you or others to invest because they claim that they know what the bitcoin price is going to be. In a pump and dump scheme, a person (or persons) try to artificially drive up or pump the price so that they can dump their holdings for a profit."
+    ransomware: "Ransomware"
+    ransomwaretxt: "This is a type of malware that partially or completely blocks access to a device unless you pay a ransom in bitcoin. It's best to consult the advice of a trusted computer professional for removal assistance, rather than paying the ransom. Be careful about what programs you install on your devices, especially those that request administrator access. Also be sure to double-check that the application you are downloading isn't a fake one that's impersonating a legitimate one you've used in the past."
+    scam-coins: "Scam Coins"
+    scam-coinstxt: "Be careful when investing in alternative coins (altcoins). Amongst altcoins there may be scam coins, enticing users to invest via private sales, or with presale discounts. Scam coins may feature a flashy website and/or boast a large community to create a fear of missing out effect on people who discover it. This helps early holders pump up the price so that they can dump and exit their positions for a profit. Scam coins without large communities may do airdrops - offering free coins (or tokens) to people in exchange for joining their communities. This enables scam coins to present their initiatives with inflated traction metrics to make investors feel like they're missing out when it comes time for them to decide if they'd like to buy-in. Scam coins may also use the word Bitcoin in them in an effort to trick or mislead people into thinking there is a legitimate relationship."
+  secure-your-wallet:
+    title: "Securing your wallet - Bitcoin"
+    pagetitle: "Securing your wallet"
+    summary: "Like in real life, your wallet must be secured. Bitcoin makes it possible to transfer value anywhere in a very easy way and it allows you to be in control of your money. Such great features also come with great security concerns. At the same time, Bitcoin can provide very high levels of security if used correctly. <b>Always remember that it is your responsibility to adopt good practices in order to protect your money</b>."
+    everyday: "Small amounts for everyday uses"
+    everydaytxt: "A Bitcoin wallet is like a wallet with cash. If you wouldn't keep a thousand dollars in your pocket, you might want to have the same consideration for your Bitcoin wallet. In general, it is a good practice to keep only small amounts of bitcoins on your computer, mobile, or server for everyday uses and to keep the remaining part of your funds in a safer environment."
+    online: "Be careful with online services"
+    onlinetxt: "You should be wary of any service designed to store your money online. Many exchanges and online wallets suffered from security breaches in the past and such services generally still do not provide enough insurance and security to be used to store money like a bank. Accordingly, you might want to use other types of <a href=\"#choose-your-wallet#\">Bitcoin wallets</a>. Otherwise, you should choose such services very carefully. Additionally, using two-factor authentication is recommended."
+    backup: "Backup your wallet"
+    backuptxt: "Stored in a safe place, a backup of your wallet can protect you against computer failures and many human mistakes.  It can also allow you to recover your wallet after your mobile or computer was stolen if you keep your wallet encrypted."
+    backupwhole: "Backup your entire wallet"
+    backupwholetxt: "Some wallets use many hidden private keys internally. If you only have a backup of the private keys for your visible Bitcoin addresses, you might not be able to recover a great part of your funds with your backup."
+    backuponline: "Encrypt online backups"
+    backuponlinetxt: "Any backup that is stored online is highly vulnerable to theft. Even a computer that is connected to the Internet is vulnerable to malicious software. As such, encrypting any backup that is exposed to the network is a good security practice."
+    backupmany: "Use many secure locations"
+    backupmanytxt: "Single points of failure are bad for security. If your backup is not dependent of a single location, it is less likely that any bad event will prevent you to recover your wallet. You might also want to consider using different medias like USB keys, papers and CDs."
+    backupregular: "Make regular backups"
+    backupregulartxt: "You need to backup your wallet on a regular basis to make sure that all recent Bitcoin change addresses and all new Bitcoin addresses you created are included in your backup. However, all applications will be soon using wallets that only need to be backed up once."
+    encrypt: "Encrypt your wallet"
+    encrypttxt: "Encrypting your wallet or your smartphone allows you to set a password for anyone trying to withdraw any funds. This helps protect against thieves, though it cannot protect against keylogging hardware or software."
+    encryptforget: "Never forget your password"
+    encryptforgettxt: "You should make sure you never forget the password or your funds will be permanently lost. Unlike your bank, there are very limited password recovery options with Bitcoin. In fact, you should be able to remember your password even after many years without using it. In doubt, you might want to keep a paper copy of your password in a safe place like a vault."
+    encryptstrong: "Use a strong password"
+    encryptstrongtxt: "Any password that contains only letters or recognizable words can be considered very weak and easy to break. A strong password must contain letters, numbers, punctuation marks and must be at least 16 characters long. The most secure passwords are those generated by programs designed specifically for that purpose. Strong passwords are usually harder to remember, so you should take care in memorizing it."
+    offline: "Offline wallet for savings"
+    offlinetxt: "An offline wallet, also known as cold storage, provides the highest level of security for savings. It involves storing a wallet in a secured place that is not connected to the network. When done properly, it can offer a very good protection against computer vulnerabilities. Using an offline wallet in conjunction with backups and encryption is also a good practice. Here is an overview of some approaches."
+    offlinetx: "Offline transaction signing"
+    offlinetxtxt1: "This approach involves having two computers sharing some parts of the same wallet. The first one must be disconnected from any network. It is the only one that holds the entire wallet and is able to sign transactions. The second computer is connected to the network and only has a watching wallet that can only create unsigned transactions. This way, you can securely issue new transactions with the following steps."
+    offlinetxtxt2: "Create a new transaction on the online computer and save it on an USB key."
+    offlinetxtxt3: "Sign the transaction with the offline computer."
+    offlinetxtxt4: "Send the signed transaction with the online computer."
+    offlinetxtxt5: "Because the computer that is connected to the network cannot sign transactions, it cannot be used to withdraw any funds if it is compromised. <a href=\"https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/\">Armory</a> can be used to do offline transaction signature."
+    hardwarewallet: "Hardware wallets"
+    hardwarewallettxt: "Hardware wallets are the best balance between very high security and ease of use. These are little devices that are designed from the root to be a wallet and nothing else. No software can be installed on them, making them very secure against computer vulnerabilities and online thieves. Because they can allow backup, you can recover your funds if you lose the device."
+    update: "Keep your software up to date"
+    updatetxt: "Using the latest version of your Bitcoin software allows you to receive important stability and security fixes. Updates can prevent problems of various severity, include new useful features and help keep your wallet safe. Installing updates for all other software on your computer or mobile is also important to keep your wallet environment safer."
+    offlinemulti: "Multi-signature to protect against theft"
+    offlinemultitxt: "Bitcoin includes a multi-signature feature that allows a transaction to require multiple independent approvals to be spent. This can be used by an organization to give its members access to its treasury while only allowing a withdrawal if 3 of 5 members sign the transaction. Some web wallets also provide multi-signature wallets, allowing the user to keep control over their money while preventing a thief from stealing funds by compromising a single device or server."
+    offlinetestament: "Think about your testament"
+    offlinetestamenttxt: "Your bitcoins can be lost forever if you don't have a backup plan for your peers and family. If the location of your wallets or your passwords are not known by anyone when you are gone, there is no hope that your funds will ever be recovered. Taking a bit of time on these matters can make a huge difference."
+  spend-bitcoin:
+    title: "Spending Bitcoin - Bitcoin"
+    pagetitle: "Spending Bitcoin"
+    summary: "There are thousands of businesses, across the globe, that accept Bitcoin."
+    products-online: "Find products for sale online"
+    products-online-text: "One common use for Bitcoin is making purchases online. There are hundreds of online shops and retailers that accept Bitcoin. Using a search engine like <a href=\"https://spendabit.co/\">Spendabit</a> you can search through millions of products, all available for purchase with bitcoins."
+    directory: "Navigate a business directory"
+    directory-text: "You can also find many businesses listed in <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">online directories</a>."
+    business-map: "Find local businesses"
+    business-map-text: "There are also many local businesses, like cafes and restaurants, that accept Bitcoin. You can use <a href=\"https://btcmap.org/\">btcmap.org</a> to browse thousands of businesses across the globe."
+    business-search: "Global local and online business search"
+    business-search-text: "<a href=\"https://bitcoinwide.com/\">BitcoinWide.com</a> is a global, open and free platform to search businesses, organizations or individuals who accept Bitcoin and other Cryptocurrency."
+  support-bitcoin:
+    title: "Support Bitcoin - Bitcoin"
+    pagetitle: "Support Bitcoin"
+    summary: "Bitcoin was born from a small community and has grown fast. There are a lot of things you can do to support it and help others learn more."
+    use: "Using Bitcoin"
+    usetxt: "<a href=\"#getting-started#\">Using Bitcoin</a> is the first thing you can do to support Bitcoin. There are probably many cases where it can make your life easier. You can accept payments and make purchases with Bitcoin."
+    node: "Be the network"
+    nodetxt: "If you have a good Internet connection, you can strengthen the Bitcoin network by keeping <a href=\"/en/full-node\">full node software</a> running on your computer or server with port 8333 open. Full nodes are securing and relaying all transactions."
+    mining: "Mining"
+    miningtxt: "You can start <a href=\"http://www.bitcoinmining.com/\">mining bitcoins</a> to help processing transactions. In order to protect the network, you should join smaller mining pools and prefer decentralized pools like <a href=\"http://p2pool.in/\">P2Pool</a> or <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> with getblocktemplate (GBT) support."
+    develop: "Development"
+    developtxt: "Bitcoin is free software. If you are a developer, you can use your superpowers to do good and <a href=\"#development#\">improve Bitcoin</a>. Or you can build amazing new services or software that use Bitcoin."
+    donation: "Donation"
+    donationtxt: "The easiest way to help is to <a href=\"http://bitgivefoundation.org/donate/\">donate</a> some bitcoin to BitGive. Or you can help directly fund any project related to Bitcoin that you believe will be helpful in the future."
+    nonprofit: "Organizations"
+    nonprofittxt: "Many <a href=\"#community##[community.non-profit]\">non-profit organizations</a> are dedicated to protecting and promoting Bitcoin. You can help these groups by joining them and taking part in their projects, discussions and events."
+    spread: "Spread"
+    spreadtxt: "Speak about Bitcoin to interested people. Write about it on your blog. Tell your favorite shops you would like to pay with Bitcoin. Help to keep <a href=\"/en/spend-bitcoin\">merchant directories</a> up to date. Or be creative and make yourself a nice Bitcoin T-shirt."
+    wiki: "Documentation"
+    wikitxt: "<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate\">Bitcoin.org</a> and the <a href=\"https://en.bitcoin.it/\">Bitcoin wiki</a> provide useful documentation and we are constantly improving the information they contain. You can help to improve these resources and keep them up to date."
+    translate: "Translate"
+    translatetxt: "You can help spread Bitcoin awareness by translating or improving translations inside important parts of the Bitcoin ecosystem. Just pick a project you would like to help with."
+    help: "Meet the communities"
+    helptxt: "You can join Bitcoin <a href=\"#community#\">communities</a> and talk with other Bitcoin enthusiasts. You can learn more about Bitcoin every day, give help to new users and get involved in interesting projects."
+  vocabulary:
+    title: "Vocabulary - Bitcoin"
+    pagetitle: "Some Bitcoin words you might hear"
+    summary: "Bitcoin provides a new approach to payments and, as such, there are some new words that might become a part of your vocabulary."
+    table: "Table of contents"
+    address: "Address"
+    addresstxt: "A Bitcoin address is <b>similar to a physical address or an email</b>. It is the only information you need to provide for someone to pay you with Bitcoin. An important difference, however, is that each address should only be used for a single transaction."
+    bit: "Bit"
+    bittxt: "Bit is a common unit used to designate a sub-unit of a bitcoin - 1,000,000 bits is equal to 1 bitcoin (BTC). This unit is usually more convenient for pricing tips, goods and services."
+    bitcoin: "Bitcoin"
+    bitcointxt: "Bitcoin - with capitalization, is used when describing the concept of Bitcoin, or the entire network itself. e.g. \"I was learning about the Bitcoin protocol today.\"<br>bitcoin - without capitalization, is used to describe bitcoins as a unit of account. e.g. \"I sent ten bitcoins today.\"; it is also often abbreviated BTC or XBT."
+    blockchain: "Block Chain"
+    blockchaintxt: "The block chain is a <b>public record of Bitcoin transactions</b> in chronological order. The block chain is shared between all Bitcoin users. It is used to verify the permanence of Bitcoin transactions and to prevent <a href=\"#[vocabulary.doublespend]\">double spending</a>."
+    block: "Block"
+    blocktxt: "A block is a <b>record in the block chain that contains and confirms many waiting transactions</b>. Roughly every 10 minutes, on average, a new block including transactions is appended to the <a href=\"#[vocabulary.blockchain]\">block chain</a> through <a href=\"#[vocabulary.mining]\">mining</a>."
+    btc: "BTC"
+    btctxt: "BTC is a common unit used to designate one bitcoin."
+    confirmation: "Confirmation"
+    confirmationtxt: "Confirmation means that a transaction has been <b>processed by the network and is highly unlikely to be reversed</b>. Transactions receive a confirmation when they are included in a <a href=\"#vocabulary##[vocabulary.block]\">block</a> and for each subsequent block. Even a single confirmation can be considered secure for low value transactions, although for larger amounts like $1000 USD, it makes sense to wait for 6 confirmations or more. Each confirmation <i>exponentially</i> decreases the risk of a reversed transaction."
+    cryptography: "Cryptography"
+    cryptographytxt: "Cryptography is the branch of mathematics that lets us create <b>mathematical proofs that provide high levels of security</b>. Online commerce and banking already uses cryptography. In the case of Bitcoin, cryptography is used to make it impossible for anybody to spend funds from another user's wallet or to corrupt the <a href=\"#[vocabulary.blockchain]\">block chain</a>. It can also be used to encrypt a wallet, so that it cannot be used without a password."
+    doublespend: "Double Spend"
+    doublespendtxt: "If a malicious user tries to <b>spend their bitcoins to two different recipients at the same time</b>, this is double spending. Bitcoin <a href=\"#[vocabulary.mining]\">mining</a> and the <a href=\"#[vocabulary.blockchain]\">block chain</a> are there to create a consensus on the network about which of the two transactions will confirm and be considered valid."
+    hashrate: "Hash Rate"
+    hashratetxt: "The hash rate is the <b>measuring unit of the processing power of the Bitcoin network</b>. The Bitcoin network must make intensive mathematical operations for security purposes. When the network reached a hash rate of 10 Th/s, it meant it could make 10 trillion calculations per second."
+    mining: "Mining"
+    miningtxt: "Bitcoin mining is the process of <b>making computer hardware do mathematical calculations for the Bitcoin network to confirm transactions</b> and increase security. As a reward for their services, Bitcoin miners can collect transaction fees for the transactions they confirm, along with newly created bitcoins. Mining is a specialized and competitive market where the rewards are divided up according to how much calculation is done. Not all Bitcoin users do Bitcoin mining, and it is not an easy way to make money."
+    p2p: "P2P"
+    p2ptxt: "Peer-to-peer refers to <b>systems that work like an organized collective</b> by allowing each individual to interact directly with the others. In the case of Bitcoin, the network is built in such a way that each user is broadcasting the transactions of other users. And, crucially, no bank is required as a third party."
+    privatekey: "Private Key"
+    privatekeytxt: "A private key is a <b>secret piece of data that proves your right to spend bitcoins from a specific wallet</b> through a cryptographic <a href=\"#[vocabulary.signature]\">signature</a>. Your private key(s) are stored in your computer if you use a software wallet; they are stored on some remote servers if you use a web wallet. Private keys must never be revealed as they allow you to spend bitcoins for their respective Bitcoin wallet."
+    signature: "Signature"
+    signaturetxt: "A <a href=\"#[vocabulary.cryptography]\">cryptographic</a> signature is <b>a mathematical mechanism that allows someone to prove ownership</b>. In the case of Bitcoin, a <a href=\"#[vocabulary.wallet]\">Bitcoin wallet</a> and its <a href=\"#[vocabulary.privatekey]\">private key(s)</a> are linked by some mathematical magic. When your Bitcoin software signs a transaction with the appropriate private key, the whole network can see that the signature matches the bitcoins being spent. However, there is no way for the world to guess your private key to steal your hard-earned bitcoins."
+    wallet: "Wallet"
+    wallettxt: "A Bitcoin wallet is loosely <b>the equivalent of a physical wallet on the Bitcoin network</b>. The wallet actually contains your <a href=\"#[vocabulary.privatekey]\">private key(s)</a> which allow you to spend the bitcoins allocated to it in the <a href=\"#[vocabulary.blockchain]\">block chain</a>. Each Bitcoin wallet can show you the total balance of all bitcoins it controls and lets you pay a specific amount to a specific person, just like a real wallet. This is different to credit cards where you are charged by the merchant."
+  you-need-to-know:
+    title: "Some things you need to know - Bitcoin"
+    pagetitle: "Some things you need to know"
+    summary: "If you're getting started with Bitcoin, there are a few things you should know. Bitcoin lets you exchange money and transact in a different way than you normally do. As such, you should take time to inform yourself before using Bitcoin for any serious transaction. Bitcoin should be treated with the same care as your regular wallet, or even more in some cases!"
+    secure: "Securing your wallet"
+    securetxt: "Like in real life, your wallet must be secured. Bitcoin makes it possible to transfer value anywhere in a very easy way and it allows you to be in control of your money. Such great features also come with great security concerns. At the same time, Bitcoin can provide very high levels of security if used correctly. Always remember that it is your responsibility to adopt good practices in order to protect your money. <a href=\"#secure-your-wallet#\">Read more about securing your wallet</a>."
+    volatile: "Bitcoin price is volatile"
+    volatiletxt: "The price of a bitcoin can unpredictably increase or decrease over a short period of time due to its young economy, novel nature, and sometimes illiquid markets. Consequently, keeping your savings with Bitcoin is not recommended at this point. Bitcoin should be seen like a high risk asset, and you should never store money that you cannot afford to lose with Bitcoin. If you receive payments with Bitcoin, many service providers can convert them to your local currency."
+    irreversible: "Bitcoin payments are irreversible"
+    irreversibletxt: "A Bitcoin transaction cannot be reversed, it can only be refunded by the person receiving the funds. This means you should take care to do business with people and organizations you know and trust, or who have an established reputation. For their part, businesses need to keep track of the payment requests they are displaying to their customers. Bitcoin can detect typos and usually won't let you send money to an invalid address by mistake, but it's best to have controls in place for additional safety and redundancy. Additional services might exist in the future to provide more choice and protection for both businesses and consumers."
+    anonymous: "Bitcoin is not anonymous"
+    anonymoustxt: "Some effort is required to protect your privacy with Bitcoin. All Bitcoin transactions are stored publicly and permanently on the network, which means anyone can see the balance and transactions of any Bitcoin address. However, the identity of the user behind an address remains unknown until information is revealed during a purchase or in other circumstances. This is one reason why Bitcoin addresses should only be used once. Always remember that it is your responsibility to adopt good practices in order to protect your privacy. <a href=\"#protect-your-privacy#\">Read more about protecting your privacy</a>."
+    instant: "Unconfirmed transactions aren't secure"
+    instanttxt: "Transactions don't start out as irreversible. Instead, they get a <i>confirmation</i> score that indicates how hard it is to reverse them (see table).  Each confirmation takes between a few seconds and 90 minutes, with 10 minutes being the average. If the transaction pays too low a fee or is otherwise atypical, getting the first confirmation can take much longer."
+    confirmations: "Confirmations"
+    lightweight_wallets: "Lightweight wallets"
+    bitcoin_core: "<a href=\"#download#\">Bitcoin Core</a>"
+    unconfirmed_only_safe: "Only safe if you trust the person paying you"
+    somewhat_reliable: "Somewhat reliable"
+    mostly_reliable: "Mostly reliable"
+    highly_reliable: "Highly reliable"
+    high_value_minimum: "Minimum recommendation for high-value bitcoin transfers"
+    alert_recommendation: "Recommendation during <a href=\"/en/alerts\">emergencies</a> to allow human intervention"
+    experimental: "Bitcoin is still experimental"
+    experimentaltxt: "Bitcoin is an experimental new currency that is in active development.  Each improvement makes Bitcoin more appealing but also reveals new challenges as Bitcoin adoption grows. During these growing pains you might encounter increased fees, slower confirmations, or even more severe issues. Be prepared for problems and consult a technical expert before making any major investments, but keep in mind that nobody can predict Bitcoin's future."
+    tax: "Government taxes and regulations"
+    taxtxt: "Bitcoin is not an official currency. That said, most jurisdictions still require you to pay income, sales, payroll, and capital gains taxes on anything that has value, including bitcoins. It is your responsibility to ensure that you adhere to <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">tax and other legal or regulatory mandates</a> issued by your government and/or local municipalities."
+  layout:
+    menu-about-us: "About bitcoin.org"
+    menu-bitcoin-for-businesses: Businesses
+    menu-bitcoin-for-developers: Developers
+    menu-bitcoin-for-individuals: Individuals
+    menu-community: Community
+    menu-development: Development
+    menu-developer-documentation: Documentation
+    menu-events: Events
+    menu-exchanges: Exchanges
+    menu-faq: FAQ
+    menu-getting-started: "Getting started"
+    menu-how-it-works: "How it works"
+    menu-innovation: Innovation
+    menu-intro: Introduction
+    menu-legal: "Legal"
+    menu-participate: Participate
+    menu-press: "Press"
+    menu-privacy: "Privacy Policy"
+    menu-resources: Resources
+    menu-scams: "Avoid Scams"
+    menu-support-bitcoin: "Support Bitcoin"
+    menu-buy: "Buy Bitcoin"
+    menu-full-node: "Running a full node"
+    menu-other: "Other"
+    menu-vocabulary: Vocabulary
+    menu-you-need-to-know: "You need to know"
+    menu-white-paper: "White paper"
+    banner-core-moved: |
+      This page has moved to the new Bitcoin Core
+      website (click here to be redirected)
+
+    banner-translate: "Translations for this language are outdated. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Click here to help translate bitcoin.org in your language</a>."
+    footer: "Released under the <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT license</a>"
+    donate-community: "Support Bitcoin.org"
+    donate-support: "Bitcoin.org is community supported."
+    network-status: "Network Status"
+    sponsor: "A community website sponsored by"
+    getstarted: "Get started with Bitcoin"
+    recomendation: "Recommended Bitcoin Wallets"
+    learn-more: "Learn more"
+    donate: "Donate"
+    bitcoin-core: "Bitcoin Core"
+    donation-banner-text: "Bitcoin.org is a community funded project, donations are appreciated and used to improve the website."
+    donation-banner-toggle-button: "Bitcoin.org needs your support!"
+    donation-banner-donate-button: "Make a donation"
+    donation-modal-header: "Donate to Bitcoin.org"
+    donation-modal-subheader: "Use this QR code or address below"
+    donation-modal-input-custom-amount: "Or custom amount?"
+    donation-modal-optional-message: "Optional description (for your wallet)"
+  url:
+    about-us: about-us
+    bitcoin-for-developers: bitcoin-for-developers
+    bitcoin-for-individuals: bitcoin-for-individuals
+    bitcoin-for-businesses: bitcoin-for-businesses
+    buy: buy
+    choose-your-wallet: choose-your-wallet
+    community: community
+    developer-documentation: developer-documentation
+    developer-examples: developer-examples
+    developer-glossary: developer-glossary
+    developer-guide: developer-guide
+    developer-reference: developer-reference
+    blockchain-guide: blockchain-guide
+    contracts-guide: contracts-guide
+    mining-guide: mining-guide
+    operating-modes-guide: operating-modes-guide
+    p2p-network-guide: p2p-network-guide
+    payment-processing-guide: payment-processing-guide
+    transactions-guide: transactions-guide
+    wallets-guide: wallets-guide
+    development: development
+    download: download
+    exchanges: exchanges
+    events: events
+    faq: faq
+    getting-started: getting-started
+    how-it-works: how-it-works
+    innovation: innovation
+    legal: legal
+    press: press
+    privacy: privacy
+    protect-your-privacy: protect-your-privacy
+    resources: resources
+    scams: scams
+    secure-your-wallet: secure-your-wallet
+    support-bitcoin: support-bitcoin
+    vocabulary: vocabulary
+    you-need-to-know: you-need-to-know
+    bitcoin-paper: bitcoin-paper
+    whitepaper-mirrors: whitepaper-mirrors
+    spend-bitcoin: spend-bitcoin
+  anchor:
+    community:
+      non-profit: non-profit
+    scams:
+      blackmail: blackmail
+      fake-exchanges: fake-exchanges
+      free-giveaways: free-giveaways
+      impersonation: impersonation
+      malware: malware
+      meet-in-person: meet-in-person
+      money-transfer-fraud: money-transfer-fraud
+      phishing-emails: phishing-emails
+      phishing-websites: phishing-websites
+      ponzi-schemes: ponzi-schemes
+      pyramid-schemes: pyramid-schemes
+      prize-giveaways: prize-giveaways
+      pump-and-dumps: pump-and-dumps
+      ransomware: ransomware
+      scam-coins: scam-coins
+    vocabulary:
+      address: address
+      bit: bit
+      bitcoin: bitcoin
+      blockchain: block-chain
+      block: block
+      btc: btc
+      confirmation: confirmation
+      cryptography: cryptography
+      doublespend: double-spend
+      hashrate: hash-rate
+      mining: mining
+      p2p: p2p
+      privatekey: private-key
+      signature: signature
+      wallet: wallet
+    faq:
+      general: general
+      whatisbitcoin: what-is-bitcoin
+      creator: who-created-bitcoin
+      whocontrols: who-controls-the-bitcoin-network
+      howitworks: how-does-bitcoin-work
+      acquire: how-does-one-acquire-bitcoins
+      used: "is-bitcoin-really-used-by-people"
+      makepayment: how-difficult-is-it-to-make-a-bitcoin-payment
+      advantages: what-are-the-advantages-of-bitcoin
+      disadvantages: what-are-the-disadvantages-of-bitcoin
+      trust: why-do-people-trust-bitcoin
+      makemoney: can-i-make-money-with-bitcoin
+      virtual: is-bitcoin-fully-virtual-and-immaterial
+      anonymous: is-bitcoin-anonymous
+      lost: what-happens-when-bitcoins-are-lost
+      scale: can-bitcoin-scale-to-become-a-major-payment-network
+      legal: legal
+      islegal: is-bitcoin-legal
+      illegalactivities: is-bitcoin-useful-for-illegal-activities
+      regulated: can-bitcoin-be-regulated
+      taxes: what-about-bitcoin-and-taxes
+      consumer: what-about-bitcoin-and-consumer-protection
+      economy: economy
+      bitcoinscreated: how-are-bitcoins-created
+      whyvalue: why-do-bitcoins-have-value
+      whatprice: what-determines-bitcoins-price
+      worthless: can-bitcoins-become-worthless
+      bubble: is-bitcoin-a-bubble
+      ponzi: is-bitcoin-a-ponzi-scheme
+      earlyadopter: doesnt-bitcoin-unfairly-benefit-early-adopters
+      finitelimitation: wont-the-finite-amount-of-bitcoins-be-a-limitation
+      deflationaryspiral: wont-bitcoin-fall-in-a-deflationary-spiral
+      speculationvolatility: isnt-speculation-and-volatility-a-problem-for-bitcoin
+      buyall: what-if-someone-bought-up-all-the-existing-bitcoins
+      bettercurrency: what-if-someone-creates-a-better-digital-currency
+      transactions: transactions
+      tenminutes: why-do-i-have-to-wait-10-minutes
+      fee: how-much-will-the-transaction-fee-be
+      poweredoff: what-if-i-receive-a-bitcoin-when-my-computer-is-powered-off
+      sync: what-does-synchronizing-mean-and-why-does-it-take-so-long
+      mining: mining
+      whatismining: what-is-bitcoin-mining
+      howminingworks: how-does-bitcoin-mining-work
+      miningwaste: isnt-bitcoin-mining-a-waste-of-energy
+      miningsecure: how-does-mining-help-secure-bitcoin
+      miningstart: what-do-i-need-to-start-mining
+      security: security
+      secure: is-bitcoin-secure
+      hacked: hasnt-bitcoin-been-hacked-in-the-past
+      collude: could-users-collude-against-bitcoin
+      quantum: is-bitcoin-vulnerable-to-quantum-computing
+      help: help
+      morehelp: more-help
