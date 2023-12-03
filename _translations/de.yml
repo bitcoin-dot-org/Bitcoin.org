@@ -286,7 +286,6 @@ de:
     walletledgernanos: "Ledger Nano S ist eine sichere Bitcoin-Hardware-Wallet. Es verbindet sich mit einem beliebigen Computer via USB und besitzt ein integriertes OLED-Display zur Gegenprüfung und Bestätigung einer Transaktion mit einem einfachen Knopfdruck."
     walletbitbox: "Die BitBox02 ist eine in der Schweiz entwickelte und gefertigte Hardware-Wallet. Sie ist mit einem OLED-Display und unsichtbaren Touch-Sensoren ausgestattet, unterstützt USB-C und USB-A sowie Offline-Backups auf microSD-Karte und BIP39-Mnemonic. Die Einrichtung einer BitBox02-Wallet und die Verwaltung ihrer Coins ist dank der zugehörigen BitBoxApp recht einfach."
     walletbither: "Bither ist eine einfache und sichere Wallet für verschiedene Plattformen. Dank speziell entworfener Cold/Hot-Modi ist sie für Nutzer sowohl sicher, als auch einfach. Bithers XRANDOM verwendet verschiedene Entropie-Quellen, um echte Zufallszahlen für die Nutzer zu generieren. Mittels HDM können Anwender die Vorteile von HD und die Sicherheit von Multisigs nutzen."
-    walleteclairmobile: "Eclair Mobile ist eine Lightning-fähige Bitcoin-Wallet der nächsten Generation. Sie kann wie eine normale Wallet verwendet werden, sich aber für günstige und schnelle Zahlungen mit dem Lightning-Netzwerk verbinden."
     walletwasabi: "Wasabi ist eine Open-Source-Bitcoin-Wallet für Windows, Linux und Mac. Sie fokusiert sich auf Freiheitsrechte und Privatsphäre und hat Kontrollfunktionen für Tor, CoinJoin und Coins integriert."
     walletdownload: "Installieren"
     walletvisit: "Website besuchen"
@@ -1020,7 +1019,7 @@ de:
     directory: "Durchstöbern Sie ein Branchenverzeichnis"
     directory-text: "Sie können auch viele Unternehmen über <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">Online-Verzeichnisse</a> finden."
     business-map: "Finden Sie lokale Unternehmen"
-    business-map-text: "Es gibt auch viele lokale Unternehmen wie Cafés und Restaurants, die Bitcoin akzeptieren. Sie können <a href=\"https://coinmap.org/\">Coinmap.org</a> nutzen, um Tausende von Unternehmen auf der ganzen Welt zu finden."
+    business-map-text: "Es gibt auch viele lokale Unternehmen wie Cafés und Restaurants, die Bitcoin akzeptieren. Sie können <a href=\"https://btcmap.org/\">btcmap.org</a> nutzen, um Tausende von Unternehmen auf der ganzen Welt zu finden."
   support-bitcoin:
     title: "Bitcoin unterstützen - Bitcoin"
     pagetitle: "Bitcoin unterstützen"
