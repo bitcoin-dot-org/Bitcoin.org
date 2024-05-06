@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: Build & Deploy Pipeline
 
 on:
   pull_request:
