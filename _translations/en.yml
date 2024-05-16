@@ -352,6 +352,8 @@ en:
     checkfailtransparencynewtxt: "This wallet has not been tested and publicly reviewed by a significant number of people. This means this app might be more at risk of hiding dangerous code or doing something you wouldn't agree to."
     checkgoodenvironmenthardware: "Very secure environment"
     checkgoodenvironmenthardwaretxt: "This wallet is loaded from a secure specialized environment provided by the device. This provides very strong protection against computer vulnerabilities and malware since no software can be installed on this environment."
+    checkpassenvironmentbyod: "User sourced environment"
+    checkpassenvironmentbyodtxt: "This wallet is loaded on a device sourced by the user. This can provide reasonable protection against malware as long as you source your hardware correctly and secure it sufficiently."
     checkpassenvironmentmobile: "Secure environment"
     checkpassenvironmentmobiletxt: "This wallet is loaded on mobiles where apps are usually isolated. This provides a good protection against malware, although mobiles are usually easier to steal or lose. Encrypting your mobile and backing up your wallet can reduce that risk."
     checkpassenvironmenttwofactor: "Two-factor authentication"
