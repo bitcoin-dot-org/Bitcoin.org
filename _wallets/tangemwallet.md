@@ -15,7 +15,7 @@ platform:
       - name: hardware
         text: "wallettangemwallet"
         link: "https://tangem.com/en/?promocode=BITCOINORG&utm_source=BitcoinOrg&utm_medium=article&utm_campaign=hardware"
-        source: "https://github.com/tangem"
+        source: "https://github.com/tangem/tangem-app-ios"
         screenshot: "tangemwallet.png"
         features: "bech32 hardware_wallet legacy_addresses segwit"
         check:
