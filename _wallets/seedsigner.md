@@ -21,7 +21,7 @@ platform:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
           transparency: "checkgoodtransparencydeterministic"
-          environment: "checkgoodenvironmenthardware"
+          environment: "checkpassenvironmentbyod"
           privacy: "checkneutralprivacyvariable"
           fees: "checkneutralfeecontrolvariable"
 ---
