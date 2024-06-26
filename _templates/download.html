@@ -12,7 +12,7 @@ breadcrumbs:
 
 win64zip: "win64.zip"
 win64exe: "win64-setup.exe"
-macdmg: "x86_64-apple-darwin.dmg"
+maczip: "x86_64-apple-darwin.zip"
 mactar: "x86_64-apple-darwin.tar.gz"
 lin64: "x86_64-linux-gnu.tar.gz"
 
@@ -50,7 +50,6 @@ lin64: "x86_64-linux-gnu.tar.gz"
     </div>
 
     <div class="core-column-right clearfix">
-      <div style="margin-bottom: 20px;"><b style="color: #d02020;">(This software is presently not available for download in the UK, and download links will not work if you are located within the UK.)</b></div>
       <h2 class="download-title">{% translate patient %}</h2>
       <p class="download-text">{% translate notesync %} {% translate full_node_guide %}</p>
       <p class="download-text">{% translate notelicense %}</p>
@@ -77,15 +76,15 @@ lin64: "x86_64-linux-gnu.tar.gz"
         </div>
 
         <div class="corecard mac-card">
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.macdmg }}">macOS (x86_64)</a>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.macdmg }}" class="dl download-link" id="macdmg">dmg</a>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.maczip }}">macOS (x86_64)</a>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.maczip }}" class="dl download-link" id="maczip">zip</a>
           <span> - </span>
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.mactar }}" class="dl download-link" id="mactar">tar.gz</a>
         </div>
 
         <div class="corecard mac-card">
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm64-apple-darwin.dmg">macOS (arm64)</a>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm64-apple-darwin.dmg" class="dl download-link" id="macarmdmg">dmg</a>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm64-apple-darwin.zip">macOS (arm64)</a>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm64-apple-darwin.zip" class="dl download-link" id="macarmzip">zip</a>
           <span> - </span>
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm64-apple-darwin.tar.gz" class="dl download-link" id="macarmtar">tar.gz</a>
         </div>
@@ -137,7 +136,7 @@ var linkwinzip = document.getElementById('downloadwinzip');
 var linklin = document.getElementById('downloadlin');
 var hrefwin64exe = document.getElementById('win64exe').href;
 var hrefwin64zip = document.getElementById('win64zip').href;
-var hrefmacdmg = document.getElementById('macdmg').href;
+var hrefmaczip = document.getElementById('maczip').href;
 var hrefmactar = document.getElementById('mactar').href;
 var hreflin64 = document.getElementById('lin64').href;
 switch (os) {
@@ -154,7 +153,7 @@ case 'snap':
 	but.href = 'https://snapcraft.io/bitcoin-core';
 break;
 case 'mac':
-	but.href = hrefmacdmg;
+	but.href = hrefmaczip;
 break;
 }
 
