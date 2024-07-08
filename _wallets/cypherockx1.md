@@ -16,11 +16,11 @@ platform:
         link: "https://www.cypherock.com/"
         source: "https://github.com/Cypherock/x1_wallet_firmware"
         screenshot: "cypherockx1.png"
-        features: "2fa bech32 hardware_wallet legacy_addresses segwit"
+        features: "bech32 hardware_wallet legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
-          transparency: "checkpasstransparencyopensourcehardware"
+          transparency: "checkgoodtransparencydeterministic"
           environment: "checkgoodenvironmenthardware"
           privacy: "checkneutralprivacyvariable"
           fees: "checkneutralfeecontrolvariable"
