@@ -151,7 +151,7 @@ es:
     checkfailvalidationcentralized: "Validación centralizada"
     checkfailvalidationcentralizedtxt: "Esta cartera se apoya en un servicio centralizado por defecto. Esto significa que se tiene que confiar que terceros no escondan ni simulen pagos."
     checkgoodtransparencydeterministic: "Transparencia completa"
-    checkgoodtransparencydeterministictxt: "Este monedero es de código abierto y está construido de una manera determinista. Esto significa que cualquier desarrollador en el mundo puede auditar el código y asegurarse que el programa final no esconda ningún secreto."
+    checkgoodtransparencydeterministictxt: "El código fuente de este monedero es público y el proceso de compilación es determinista. Esto significa que cualquier desarrollador en el mundo puede auditar el código y asegurarse que el programa final no esconda ningún secreto."
     checkpasstransparencyopensource: "Buena transparencia"
     checkpasstransparencyopensourcetxt: "Los desarrolladores de este monedero publican el código fuente del programa cliente. Esto significa que cualquier desarrollador en el mundo puede auditar el código. Sin embargo, aún así usted necesita confiar en los desarrolladores de este monedero al instalar o actualizar el programa final porque no fue construido de una manera determinista como <a href=\"#download#\">Bitcoin Core</a>."
     checkfailtransparencyclosedsource: "Sin transparencia"

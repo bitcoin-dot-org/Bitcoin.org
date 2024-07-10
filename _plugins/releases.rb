@@ -28,7 +28,7 @@ module Jekyll
 
       ## Die if required_ variables aren't set
       if self.data['required_version']
-        version = self.data['required_version']
+        version = self.data['required_version'].to_s
       else
         abort("Error: Variable required_version not set when processing " + src)
       end
@@ -46,7 +46,7 @@ module Jekyll
       self.data['lang'] = lang
 
       ## Only processes numeric version numbers with up to five decimals
-      self.data['versionint'] = versiontoint(self.data['required_version'])
+      self.data['versionint'] = versiontoint(self.data['required_version'].to_s)
 
       self.data['layout'] = 'release'
       self.data['category'] = 'release'

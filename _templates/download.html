@@ -12,8 +12,8 @@ breadcrumbs:
 
 win64zip: "win64.zip"
 win64exe: "win64-setup.exe"
-macdmg: "-osx.dmg"
-mactar: "osx64.tar.gz"
+maczip: "x86_64-apple-darwin.zip"
+mactar: "x86_64-apple-darwin.tar.gz"
 lin64: "x86_64-linux-gnu.tar.gz"
 
 ---
@@ -50,7 +50,6 @@ lin64: "x86_64-linux-gnu.tar.gz"
     </div>
 
     <div class="core-column-right clearfix">
-
       <h2 class="download-title">{% translate patient %}</h2>
       <p class="download-text">{% translate notesync %} {% translate full_node_guide %}</p>
       <p class="download-text">{% translate notelicense %}</p>
@@ -62,13 +61,6 @@ lin64: "x86_64-linux-gnu.tar.gz"
         <a href="{{ site.DOWNLOAD_MAGNETLINK | replace: '&', '\&amp;'}}" class="magnetlink core-link" data-proofer-ignore></a>{% endif %}
         <a href="https://github.com/bitcoin/bitcoin" class="dl core-link">{% translate source %}</a>
         <a href="/en/version-history" class="core-link">{% translate versionhistory %}</a>
-      </div>
-
-      <div class="downloadkeys">
-        <span class="download-text downloadkeys-title">{% translate releasekeys %}</span>
-        <a class="core-link" href="/legacy-releases.asc">v0.8.6 - 0.9.2.1</a>
-        <a class="core-link" href="/laanwj.asc">v0.9.3 - 0.10.2</a>
-        <a class="core-link" href="/laanwj-releases.asc">v0.11.0+</a>
       </div>
       
     </div>
@@ -84,10 +76,17 @@ lin64: "x86_64-linux-gnu.tar.gz"
         </div>
 
         <div class="corecard mac-card">
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}">Mac OS X</a>
-          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}{{ page.macdmg }}" class="dl download-link" id="macdmg">dmg</a>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.maczip }}">macOS (x86_64)</a>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.maczip }}" class="dl download-link" id="maczip">zip</a>
           <span> - </span>
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.mactar }}" class="dl download-link" id="mactar">tar.gz</a>
+        </div>
+
+        <div class="corecard mac-card">
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm64-apple-darwin.zip">macOS (arm64)</a>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm64-apple-darwin.zip" class="dl download-link" id="macarmzip">zip</a>
+          <span> - </span>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm64-apple-darwin.tar.gz" class="dl download-link" id="macarmtar">tar.gz</a>
         </div>
 
         <div class="corecard linux-card">
@@ -100,6 +99,18 @@ lin64: "x86_64-linux-gnu.tar.gz"
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-aarch64-linux-gnu.tar.gz" class="dl download-link" id="lin64arm">64 bit</a> 
           <span> - </span>
           <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-arm-linux-gnueabihf.tar.gz" class="dl download-link" id="lin32arm">32 bit</a>
+        </div>
+
+        <div class="corecard linux-card">
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-riscv64-linux-gnu.tar.gz" id="downloadrisclin">RISC-V Linux</a>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-riscv64-linux-gnu.tar.gz" class="dl download-link" id="riscvlin64">64 bit</a> 
+        </div>
+
+        <div class="corecard linux-card">
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-powerpc64le-linux-gnu.tar.gz" class="dl">PPC64 Linux</a>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-powerpc64-linux-gnu.tar.gz" class="dl download-link" id="ppclin64">64 bit</a> 
+          <span> - </span>
+          <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-powerpc64le-linux-gnu.tar.gz" class="dl download-link" id="ppclin64le">64 bit LE</a>
         </div>
 
         <div class="corecard snap-card">
@@ -125,7 +136,7 @@ var linkwinzip = document.getElementById('downloadwinzip');
 var linklin = document.getElementById('downloadlin');
 var hrefwin64exe = document.getElementById('win64exe').href;
 var hrefwin64zip = document.getElementById('win64zip').href;
-var hrefmacdmg = document.getElementById('macdmg').href;
+var hrefmaczip = document.getElementById('maczip').href;
 var hrefmactar = document.getElementById('mactar').href;
 var hreflin64 = document.getElementById('lin64').href;
 switch (os) {
@@ -142,7 +153,7 @@ case 'snap':
 	but.href = 'https://snapcraft.io/bitcoin-core';
 break;
 case 'mac':
-	but.href = hrefmacdmg;
+	but.href = hrefmaczip;
 break;
 }
 
