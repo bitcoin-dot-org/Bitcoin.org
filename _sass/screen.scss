@@ -1202,7 +1202,18 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
   padding: 6px 72px;
 }
 /* Buy bitcoin page end */
-
+/* Animation styles start */ 
+.herecomesbitcoin { 
+    height: 250px; 
+    width: 250px; 
+} 
+.herecomesbitcoin-container { 
+    display: flex; 
+    align-items: center; 
+    margin-right: 10px; 
+    align-items: end; 
+}
+/* Animation styles end */
 /* Bitcoin paper page start */
 .bitcoin-paper {
     padding: 20px 0 50px;
