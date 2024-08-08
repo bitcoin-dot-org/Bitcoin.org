@@ -761,6 +761,20 @@ function showBuySellWidgets() {
   buyWidget.show();
 }
 
+function hideBuyButtonIfInUK() {
+    $.get('/cdn-cgi/trace', function(response) {
+        let data = response.split('\n').reduce((acc, line) => {
+            let [key, value] = line.split('=');
+            acc[key] = decodeURIComponent(value || '');
+            return acc;
+        }, {});
+        
+        if (data['loc'] === 'GB') {
+            $('#buybitcoinbutton').hide();
+        }
+    });
+}
+
 function sortTableColumn(selectedOption) {
   var tableAccordion = document.getElementById('tableAccordion');
   var tableAccordionButton = document.getElementById('tableAccordionButton');
