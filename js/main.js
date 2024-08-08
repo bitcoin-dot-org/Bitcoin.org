@@ -771,6 +771,7 @@ function hideBuyButtonIfInUK() {
         
         if (data['loc'] === 'GB') {
             $('#buybitcoinbutton').hide();
+            $('#buybitcoinmenulink').hide();
         }
     });
 }
