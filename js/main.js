@@ -787,9 +787,11 @@ function handlePageRedirect(isBuyPage) {
                     showBuySellWidgets();
                 }
             } else {
-                $('#buybitcoinbutton').hide();
-                $('#buybitcoinmenulink').hide();
-                $('#buybitcoinfootermenulink').hide();
+                  if (data.loc === 'GB') {
+                    $('#buybitcoinbutton').hide();
+                    $('#buybitcoinmenulink').hide();
+                    $('#buybitcoinfootermenulink').hide();
+                }
             }
         });
 }
