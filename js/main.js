@@ -791,6 +791,7 @@ function handlePageRedirect(isBuyPage) {
                     $('#buybitcoinbutton').hide();
                     $('#buybitcoinmenulink').hide();
                     $('#buybitcoinfootermenulink').hide();
+                    $('#getstartedbuybutton').hide();
                 }
             }
         });
