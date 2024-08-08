@@ -761,7 +761,11 @@ function showBuySellWidgets() {
   buyWidget.show();
 }
 
-function hideBuyButtonIfInUK() {
+function handlePageRedirect(isBuyPage) {
+    if (isBuyPage === undefined) {
+        isBuyPage = false;
+    }
+
     $.get('/cdn-cgi/trace')
         .done(function(response) {
             var data = {};
@@ -775,7 +779,14 @@ function hideBuyButtonIfInUK() {
                     data[key] = value;
                 }
             }
-            if (data.loc === 'GB') {
+
+            if (isBuyPage) {
+                if (data.loc === 'GB') {
+                    window.location.href = '/';
+                } else {
+                    showBuySellWidgets();
+                }
+            } else {
                 $('#buybitcoinbutton').hide();
                 $('#buybitcoinmenulink').hide();
                 $('#buybitcoinfootermenulink').hide();
