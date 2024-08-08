@@ -762,19 +762,26 @@ function showBuySellWidgets() {
 }
 
 function hideBuyButtonIfInUK() {
-    $.get('/cdn-cgi/trace', function(response) {
-        let data = response.split('\n').reduce((acc, line) => {
-            let [key, value] = line.split('=');
-            acc[key] = decodeURIComponent(value || '');
-            return acc;
-        }, {});
-        
-        if (data['loc'] === 'GB') {
-            $('#buybitcoinbutton').hide();
-            $('#buybitcoinmenulink').hide();
-        }
-    });
+    $.get('/cdn-cgi/trace')
+        .done(function(response) {
+            var data = {};
+            var lines = response.split('\n');
+            for (var i = 0; i < lines.length; i++) {
+                var line = lines[i];
+                var parts = line.split('=');
+                if (parts.length === 2) {
+                    var key = parts[0];
+                    var value = decodeURIComponent(parts[1] || '');
+                    data[key] = value;
+                }
+            }
+            if (data.loc === 'GB') {
+                $('#buybitcoinbutton').hide();
+                $('#buybitcoinmenulink').hide();
+            }
+        });
 }
+
 
 function sortTableColumn(selectedOption) {
   var tableAccordion = document.getElementById('tableAccordion');
