@@ -624,7 +624,7 @@ text:
   ## you don't have any extra indices
   bitcoin_datadir_gb_pruned: 7
   ## the tx= field in: grep UpdateTip .bitcoin/debug.log | tail -n1
-  total_tx_count_in_millions: 230
+  total_tx_count_in_billions: 1.07
   typical_ibd_time_in_hours: 10
   typical_144_block_catchup_time_in_minutes: 5
   bitcoin_org_docs_maintainer_email_link: '<a href="mailto:will@bitcoin.org">Will Binns</a>'
