@@ -73,8 +73,13 @@
           
         </ul>
       </div>
-      <img class="maindesc-img" src="/img/home/bitcoin-img.svg?{{site.time | date: '%s'}}" alt="Bitcoin image">
-    </div>
+      <!-- <img class="maindesc-img" src="/img/home/bitcoin-img.svg?{{site.time | date: '%s'}}" alt="Bitcoin image"> -->
+      <div class="herecomesbitcoin-fairy-container">
+        <div class="herecomesbitcoin-fairy">
+          {% include animations/herecomesbitcoin/fairy.html %}
+        </div>
+      </div>
+   </div>
     <div class="btn-container">
       <a class="btn btn-dark btn-home center" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
     </div>

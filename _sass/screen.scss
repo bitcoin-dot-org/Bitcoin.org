@@ -1203,7 +1203,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 /* Buy bitcoin page end */
 /* Animation styles start */ 
-.herecomesbitcoin { 
+.herecomesbitcoin-fancy { 
     height: 250px; 
     width: 250px; 
 } 
@@ -1212,6 +1212,14 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     align-items: center; 
     margin-right: 10px; 
     align-items: end; 
+}
+.herecomesbitcoin-fairy {
+    width: 503px;
+    height: 503px;
+    margin-bottom: 35px;
+}
+.herecomesbitcoin-fairy-container {
+    flex: 1;
 }
 /* Animation styles end */
 /* Bitcoin paper page start */
@@ -3676,10 +3684,6 @@ html[data-theme="dark"] .dark-theme-toggle::before {
     .maindesc {
         padding: 85px 0 60px;
     }
-    .maindesc-img {
-        width: 311px;
-        height: 312px;
-    }
     .maindesc-text {
         margin: 0 0 25px;
     }
@@ -4584,9 +4588,6 @@ html[data-theme="dark"] .dark-theme-toggle::before {
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
         margin: 0 0 35px;
-    }
-    .maindesc-img {
-        margin-bottom: 35px;
     }
     .maindesc-text {
         max-width: 100%;
