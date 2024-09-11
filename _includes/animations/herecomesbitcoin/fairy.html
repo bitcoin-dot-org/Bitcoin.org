@@ -47,7 +47,10 @@
     animFairy = lottie.loadAnimation(params);
 
     function playAnimation() {
-        if (animFairy.firstFrame === animFairy.currentFrame) {
+        if (
+            animFairy.firstFrame === animFairy.currentFrame || 
+            animFairy.currentFrame === animFairy.totalFrames - 1
+        ) {
             animFairy.goToAndPlay(animFairy.firstFrame);
         }
     }
