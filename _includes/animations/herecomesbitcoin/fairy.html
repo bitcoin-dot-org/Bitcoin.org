@@ -42,13 +42,13 @@
         animationData: animationData
     };
 
-    var anim;
+    var animFairy;
 
-    anim = lottie.loadAnimation(params);
+    animFairy = lottie.loadAnimation(params);
 
     function playAnimation() {
-        if (anim.firstFrame === anim.currentFrame) {
-            anim.goToAndPlay(anim.firstFrame);
+        if (animFairy.firstFrame === animFairy.currentFrame) {
+            animFairy.goToAndPlay(animFairy.firstFrame);
         }
     }
 
