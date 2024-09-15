@@ -1203,7 +1203,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 /* Buy bitcoin page end */
 /* Animation styles start */ 
-.herecomesbitcoin-fancy, .herecomesbitcoin-sir, .herecomesbitcoin-coder { 
+.herecomesbitcoin-fancy, .herecomesbitcoin-sir, .herecomesbitcoin-coder, .herecomesbitcoin-astronaut {
     height: 250px;
     width: 250px;
 }
@@ -1211,8 +1211,12 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
   height: 400px;
   width: 400px;
 }
-.herecomesbitcoin-container { 
-    display: flex; 
+.herecomesbitcoin-astronaut-container {
+  display: flex;
+  justify-content: center;
+}
+.herecomesbitcoin-container {
+    display: flex;
     align-items: center; 
     margin-right: 10px; 
     align-items: end; 
