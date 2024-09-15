@@ -1215,6 +1215,14 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
   display: flex;
   justify-content: center;
 }
+.herecomesbitcoin-flower-heads {
+  position: relative;
+  height: 800px;
+  width: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -67%);
+}
 .herecomesbitcoin-container {
     display: flex;
     align-items: center; 
