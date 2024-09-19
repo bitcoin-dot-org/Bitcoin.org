@@ -609,23 +609,23 @@ kramdown:
     css_class:
 
 text:
-  ## Values last updated 2018-10-16
+  ## Values last updated 2024-08-29
   ## All variable names must indicate unit type for easy translation of adjacent text,
   ##   such as: subsidy_in_decimal_bitcoins or
   ##   bitcoin_org_docs_maintainer_email_link
   ## For increasing variables, like chain size, choose a somewhat higher
   ##   value so we don't need to update too often
-  subsidy_in_decimal_bitcoins: 6.25
+  subsidy_in_decimal_bitcoins: 3.125
   ## cd ~ ; du -sh .bitcoin/ --exclude=testnet3 --exclude=regtest
-  bitcoin_datadir_gb: 350
+  bitcoin_datadir_gb: 600
   ## Slightly smaller than the total datadir size
-  chain_gb: 340
+  chain_gb: 590
   ## The main difference between the datadir size and the chain size, if
   ## you don't have any extra indices
   bitcoin_datadir_gb_pruned: 7
   ## the tx= field in: grep UpdateTip .bitcoin/debug.log | tail -n1
-  total_tx_count_in_millions: 230
-  typical_ibd_time_in_hours: 4
+  total_tx_count_in_billions: 1.07
+  typical_ibd_time_in_hours: 10
   typical_144_block_catchup_time_in_minutes: 5
   bitcoin_org_docs_maintainer_email_link: '<a href="mailto:will@bitcoin.org">Will Binns</a>'
   ## Before updating this, verify all assertions are still correct: git grep site.text.assertion_month
