@@ -6,6 +6,7 @@ id: ginger
 title: "Ginger Wallet"
 titleshort: "Ginger"
 compat: "desktop windows mac linux"
+user: beginner
 level: 3
 platform:
   - desktop:
