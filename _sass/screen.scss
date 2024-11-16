@@ -1223,6 +1223,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
   left: 50%;
   transform: translate(-50%, -67%);
   pointer-events: none;
+  z-index: 10;
 }
 .herecomesbitcoin-container {
     display: flex;
