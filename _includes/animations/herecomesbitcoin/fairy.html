@@ -42,11 +42,10 @@
 		}
 	    }
 
-	    document.querySelector('#animation-fairy').addEventListener('mouseenter', playAnimation);
+	    document.querySelector('#animation-fairy').addEventListener('click', playAnimation);
 	    document.querySelector('#animation-fairy').addEventListener('touchstart', playAnimation);
     })
     .catch((e) => console.error("Error loading animation data: ", e));
-
 </script>
 </body>
 </html>
