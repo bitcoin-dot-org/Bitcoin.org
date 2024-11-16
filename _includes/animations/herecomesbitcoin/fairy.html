@@ -22,28 +22,28 @@
 	.then((response) => response.json())
 	.then((animationData) => {
 	    var params = {
-		container: document.getElementById('animation-fairy'),
-		renderer: 'html',
-		loop: false,
-		autoplay: false,
-		animationData
+        container: document.getElementById('animation-fairy'),
+        renderer: 'html',
+        loop: false,
+        autoplay: false,
+        animationData
 	    };
 
 	    var animFairy;
 
 	    animFairy = lottie.loadAnimation(params);
 
-	    function playAnimation() {
-		if (
-		    animFairy.firstFrame === animFairy.currentFrame || 
-		    animFairy.currentFrame === animFairy.totalFrames - 1
-		) {
-		    animFairy.goToAndPlay(animFairy.firstFrame);
-		}
+	    function playFairyAnimation() {
+        if (
+            animFairy.firstFrame === animFairy.currentFrame || 
+            animFairy.currentFrame === animFairy.totalFrames - 1
+        ) {
+            animFairy.goToAndPlay(animFairy.firstFrame);
+        }
 	    }
 
-	    document.querySelector('#animation-fairy').addEventListener('click', playAnimation);
-	    document.querySelector('#animation-fairy').addEventListener('touchstart', playAnimation);
+	    document.querySelector('#animation-fairy').addEventListener('click', playFairyAnimation);
+	    //document.querySelector('#animation-fairy').addEventListener('touchstart', playFairyAnimation);
     })
     .catch((e) => console.error("Error loading animation data: ", e));
 </script>
