@@ -34,11 +34,14 @@
     </div>
     {% include layout/base/footer-license.html %}
   </div>
-  <div class="herecomesbitcoin-container" style="justify-content: center">
-    <div class="herecomesbitcoin-cat">
-      {% include animations/herecomesbitcoin/cat.html %}
+  
+  {% if page.url == '/' %}
+    <div class="herecomesbitcoin-container" style="justify-content: center">
+      <div class="herecomesbitcoin-cat">
+        {% include animations/herecomesbitcoin/cat.html %}
+      </div>
     </div>
-  </div>
+  {% endif %}
 </div>
 
 {% include layout/base/footer-js.html %}

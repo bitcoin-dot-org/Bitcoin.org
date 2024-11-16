@@ -21,18 +21,37 @@
 	fetch("/json/construction.json")
 		.then((response) => response.json())
 		.then((animationData) => {
+      var params = {
+        container: document.getElementById('animation-construction'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        animationData
+      };
 
-		    var params = {
-			container: document.getElementById('animation-construction'),
-			renderer: 'svg',
-			loop: true,
-			autoplay: true,
-			animationData
-		    };
+      var animConstruction;
 
-		    var anim;
+	    animConstruction = lottie.loadAnimation(params);
 
-		    anim = lottie.loadAnimation(params);
+	    function playConstructionAnimation() {
+        if (
+            animConstruction.firstFrame === animConstruction.currentFrame || 
+            animConstruction.currentFrame === animConstruction.totalFrames - 1
+        ) {
+            animConstruction.goToAndPlay(animConstruction.firstFrame);
+        }
+	    }
+
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && entry.intersectionRatio > 0.8) {
+                playConstructionAnimation();
+            }
+          });
+      }, { threshold: [0.8] });
+
+      const element = document.querySelector('#animation-construction');
+      observer.observe(element);
 	})
 	.catch((e) => console.error("Error loading animation data: ", e));
 </script>
