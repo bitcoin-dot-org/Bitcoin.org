@@ -1,0 +1,50 @@
+<html xmlns="http://www.w4.org/1999/xhtml"
+<meta charset="UTF-8">
+<head>
+    <style>
+        #animation-flower-heads {
+            width:100%;
+            height:100%;
+            display:block;
+            overflow: hidden;
+            transform: translate3d(0,0,0);
+            text-align: center;
+            opacity: 1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+<div id="animation-flower-heads"></div>
+<script type="text/javascript" src="/js/lottie.min.js"></script>
+<script>
+	fetch("/json/flower_heads.json")
+		.then((response) => response.json())
+		.then((animationData) => {
+      var params = {
+              container: document.getElementById('animation-flower-heads'),
+              renderer: 'svg',
+              loop: false,
+              autoplay: false,
+              animationData
+      };
+
+      var animFlower;
+
+      animFlower = lottie.loadAnimation(params);
+
+      function playFlowerAnimation() {
+        if (
+            animFlower.firstFrame === animFlower.currentFrame || 
+            animFlower.currentFrame === animFlower.totalFrames - 1
+        ) {
+            animFlower.goToAndPlay(animFlower.firstFrame);
+        }
+      }
+
+      document.querySelector('#flower-heads-hoverable').addEventListener('mouseenter', playFlowerAnimation);
+    })
+	.catch((e) => console.error("Error loading animation data: ", e));
+</script>
+</body>
+</html>
