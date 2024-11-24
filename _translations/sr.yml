@@ -283,6 +283,7 @@ sr:
     walletbither: "Bither je jednostavan i sugran novčanik koji radi na više platformi. Napravljen posebno za hladno ili toplo skladištenje, korisnici dobijaju sigurnost i udobnost korišćenja. Bither koristi XRANDOM entropiju iz različitih izvora kako bi stvorio pravi nasumični broj za korisnike. Uz pomoć HDM, korisnicu imaju HD prednosti i multi-sig sigurnost."
     walletbtccom: "Bezbedan i lak za korišćenje, BTC.com Bitkoin novčanik postavlja daje vama, korisniku, potpunu kontrolu nad vašim Bitkoinima. Funkcije uključuju HD i multisig tehnologiju, podršku za više platformi, lokalni jezik i valutu, QR kodove i mnogo više od toga."
     walletwasabi: "Wasabi je Bitkoin novčanik otvorenog koda, bez nadređene strane, sa fokusom na privatnost, koji se može koristiti na Windows, Linux i Mac platformama. Ima ugrađenu Tor anonimnu mrežu, CoinJoin i mogućnost kontrole novčića."
+    walletginger: "GingerWallet је отворени, некореспондентни Bitcoin новчаник за десктоп. Функције укључују CoinJoin са подразумеваним координатором, 2FA са шифровањем новчаника, подршку за више језика, филтере блокова, интеграцију са Tor-ом и функционалност QR кода. Компатибилан са различитим хардверским новчаницима за безбедно коришћење."
     walletdownload: "Instaliraj"
     walletvisit: "Poseti Web sajt"
     walletsourcecode: "Izvorni kod"
