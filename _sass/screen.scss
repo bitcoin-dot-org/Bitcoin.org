@@ -977,11 +977,13 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     color:#fff;
     border-radius:1px;
 }
+.mainoverview-parent {
+  background: url(../img/hero/overview-bg-repeat.png);
+  position: relative;
+}
 .mainoverview {
     position: relative;
     padding: 375px 0 130px;
-    background: url(../img/hero/overview-bg.svg?1528322191) top no-repeat;
-    background-size: cover;
     text-align: center;
 }
 .btn-down {
