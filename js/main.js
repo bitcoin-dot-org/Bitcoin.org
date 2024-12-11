@@ -779,13 +779,13 @@ function sortTableColumn(selectedOption) {
 }
 
 window.addEventListener('wheel', (event) => {
+  let cat = document.querySelector('.herecomesbitcoin-cat');
+
   const screenBottom = window.innerHeight;
   const scrollBottom = window.scrollY + window.innerHeight;
-    if (scrollBottom + screenBottom >= document.body.offsetHeight && event.deltaY > 300) {
+  if (scrollBottom + screenBottom >= document.body.offsetHeight && event.deltaY > 300) {
     setTimeout(() => {
       cat.classList.add('show');
-    }, 2000);
+    }, 1000);
   }
-
-  let cat = document.querySelector('.herecomesbitcoin-cat');
 })
