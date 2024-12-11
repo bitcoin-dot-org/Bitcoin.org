@@ -1208,8 +1208,22 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     width: 250px;
 }
 .herecomesbitcoin-cat {
-  height: 400px;
-  width: 400px;
+  width: 300px;
+  height: 300px;
+  /* only show and animate once user scrolls to the bottom */
+  display: none;
+}
+.herecomesbitcoin-cat.show {
+  display: block;
+  animation: scale-up 2s forwards;
+}
+@keyframes scale-up {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 .herecomesbitcoin-astronaut-container {
   display: flex;

@@ -777,3 +777,15 @@ function sortTableColumn(selectedOption) {
     } else cell.classList.add('hidden');
   }
 }
+
+window.addEventListener('wheel', (event) => {
+  const screenBottom = window.innerHeight;
+  const scrollBottom = window.scrollY + window.innerHeight;
+    if (scrollBottom + screenBottom >= document.body.offsetHeight && event.deltaY > 300) {
+    setTimeout(() => {
+      cat.classList.add('show');
+    }, 2000);
+  }
+
+  let cat = document.querySelector('.herecomesbitcoin-cat');
+})
