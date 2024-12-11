@@ -28,8 +28,10 @@
     </a>
     <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}" class="maincard">
         <img id="flower-heads-hoverable" class="maincard-img" src="/img/icons/ico_business.svg?{{site.time | date: '%s'}}" alt="Icon">
-        <p class="maincard-title">{% translate menu-bitcoin-for-businesses layout %}</p>
-        <p class="maincard-link">{% translate learn-more layout %}</p>
+        <div>
+          <p class="maincard-title">{% translate menu-bitcoin-for-businesses layout %}</p>
+          <p class="maincard-link">{% translate learn-more layout %}</p>
+        </div>
         <div class="herecomesbitcoin-flower-heads">
           {% include animations/herecomesbitcoin/flower_heads.html %}
         </div>
