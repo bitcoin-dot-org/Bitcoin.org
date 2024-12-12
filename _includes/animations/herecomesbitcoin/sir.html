@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>
+      #animation-sir {
+        width: 100%;
+        height: 100%;
+        display: block;
+        overflow: hidden;
+        transform: translate3d(0, 0, 0);
+        text-align: center;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="animation-sir"></div>
+    <script type="text/javascript" src="/js/lottie.min.js"></script>
+    <script>
+      fetch("/json/sir.json")
+        .then((response) => response.json())
+        .then((animationData) => {
+          var params = {
+            container: document.getElementById("animation-sir"),
+            renderer: "html",
+            loop: true,
+            autoplay: true,
+            animationData,
+          };
+
+          var animSir;
+
+          animSir = lottie.loadAnimation(params);
+        })
+        .catch((e) => console.error("Error loading animation data: ", e));
+    </script>
+  </body>
+</html>

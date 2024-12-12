@@ -7,9 +7,19 @@ id: faq
 ---
 
 <div class="toccontent-intro">
-  <h2 id="{% translate general anchor.faq %}">{% translate general %}</h2>
-  
-  <h3 id="{% translate whatisbitcoin anchor.faq %}">{% translate whatisbitcoin %}</h3>
+  <div class="herecomesbitcoin-container">
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <h2 id="{% translate general anchor.faq %}">{% translate general %}</h2>
+      <h3 id="{% translate whatisbitcoin anchor.faq %}">
+        {% translate whatisbitcoin %}
+      </h3>
+    </div>
+
+    <div class="herecomesbitcoin-fancy">
+      {% include animations/herecomesbitcoin/fancy.html %}
+    </div>
+  </div>
+
   <p>{% translate whatisbitcointxt1 %}</p>
   
   <h3 id="{% translate creator anchor.faq %}">{% translate creator %}</h3>

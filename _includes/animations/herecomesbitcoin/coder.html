@@ -1,0 +1,40 @@
+<html xmlns="http://www.w4.org/1999/xhtml">
+<meta charset="UTF-8">
+<head>
+    <style>
+        #animation-coder{
+            width:100%;
+            height:100%;
+            display:block;
+            overflow: hidden;
+            transform: translate3d(0,0,0);
+            text-align: center;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+<div id="animation-coder"></div>
+<script type="text/javascript" src="/js/lottie.min.js"></script>
+<script>
+	fetch("/json/coder.json")
+		.then((response) => response.json())
+		.then((animationData) => {
+
+		    var params = {
+			container: document.getElementById('animation-coder'),
+			renderer: 'svg',
+			loop: true,
+			autoplay: true,
+			animationData
+		    };
+
+		    var anim;
+
+		    anim = lottie.loadAnimation(params);
+	})
+	.catch((e) => console.error("Error loading animation data: ", e));
+</script>
+</body>
+</html>
