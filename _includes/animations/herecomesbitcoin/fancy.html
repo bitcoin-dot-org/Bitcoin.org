@@ -19,19 +19,19 @@
       fetch("/json/fancy.json")
         .then((response) => response.json())
         .then((animationData) => {
-	    var params = {
-		container: document.getElementById('animation-fancy'),
-		renderer: 'svg',
-		loop: true,
-		autoplay: true,
-		animationData
-	    };
+          var params = {
+            container: document.getElementById('animation-fancy'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            animationData
+          };
 
-	    var anim;
+          var anim;
 
-	    anim = lottie.loadAnimation(params);
-    })
-    .catch((e) => console.error("Error loading animation data: ", e));
-</script>
+          anim = lottie.loadAnimation(params);
+        })
+        .catch((e) => console.error("Error loading animation data: ", e));
+    </script>
 </body>
 </html>

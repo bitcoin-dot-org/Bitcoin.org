@@ -17,38 +17,41 @@
   </div>
 </div>
 <div class="mainoverview-parent">
-<div class="mainoverview">
-  <div class="container">
-    <div class="mainoverview-title">{% translate overview %}</div>
-    <a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}" class="maincard">
-      <img class="maincard-img" src="/img/icons/ico_individuals.svg?{{site.time | date: '%s'}}" alt="Icon">
-      <div>
-        <p class="maincard-title">{% translate menu-bitcoin-for-individuals layout %}</p>
-        <p class="maincard-link">{% translate learn-more layout %}</p>
-      </div>
-    </a>
-    <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}" class="maincard">
-        <img id="flower-heads-hoverable" class="maincard-img" src="/img/icons/ico_business.svg?{{site.time | date: '%s'}}" alt="Icon">
+  <div class="herecomesbitcoin-hungry">
+    {% include animations/herecomesbitcoin/hungry.html %}
+  </div>
+  <div class="mainoverview">
+    <div class="container">
+      <div class="mainoverview-title">{% translate overview %}</div>
+      <a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}" class="maincard">
+        <img class="maincard-img" src="/img/icons/ico_individuals.svg?{{site.time | date: '%s'}}" alt="Icon">
         <div>
-          <p class="maincard-title">{% translate menu-bitcoin-for-businesses layout %}</p>
+          <p class="maincard-title">{% translate menu-bitcoin-for-individuals layout %}</p>
           <p class="maincard-link">{% translate learn-more layout %}</p>
         </div>
-        <div class="herecomesbitcoin-flower-heads">
-          {% include animations/herecomesbitcoin/flower_heads.html %}
+      </a>
+      <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}" class="maincard">
+          <img id="flower-heads-hoverable" class="maincard-img" src="/img/icons/ico_business.svg?{{site.time | date: '%s'}}" alt="Icon">
+          <div>
+            <p class="maincard-title">{% translate menu-bitcoin-for-businesses layout %}</p>
+            <p class="maincard-link">{% translate learn-more layout %}</p>
+          </div>
+          <div class="herecomesbitcoin-flower-heads">
+            {% include animations/herecomesbitcoin/flower_heads.html %}
+          </div>
+      </a>
+      <a href="https://developer.bitcoin.org/" class="maincard">
+        <img class="maincard-img" src="/img/icons/ico_developers.svg?{{site.time | date: '%s'}}" alt="Icon">
+        <div>
+          <p class="maincard-title">{% translate menu-bitcoin-for-developers layout %}</p>
+          <p class="maincard-link">{% translate learn-more layout %}</p>
         </div>
-    </a>
-    <a href="https://developer.bitcoin.org/" class="maincard">
-      <img class="maincard-img" src="/img/icons/ico_developers.svg?{{site.time | date: '%s'}}" alt="Icon">
-      <div>
-        <p class="maincard-title">{% translate menu-bitcoin-for-developers layout %}</p>
-        <p class="maincard-link">{% translate learn-more layout %}</p>
-      </div>
+      </a>
+    </div>
+    <a class="btn-down" href="#maindesc-title">
+      <img src="/img/icons/ico_arrow_down.svg?{{site.time | date: '%s'}}" alt="Link">
     </a>
   </div>
-  <a class="btn-down" href="#maindesc-title">
-    <img src="/img/icons/ico_arrow_down.svg?{{site.time | date: '%s'}}" alt="Link">
-  </a>
-</div>
 </div>
 <div class="maindesc">
   <div class="container">

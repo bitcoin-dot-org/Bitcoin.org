@@ -1241,12 +1241,6 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
   pointer-events: none;
   z-index: 10;
 }
-.herecomesbitcoin-container {
-    display: flex;
-    align-items: center; 
-    margin-right: 10px; 
-    align-items: end; 
-}
 .herecomesbitcoin-fairy {
     width: 503px;
     height: 503px;
@@ -1254,6 +1248,19 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .herecomesbitcoin-fairy-container {
     flex: 1;
+}
+.herecomesbitcoin-container {
+    display: flex;
+    align-items: center; 
+    margin-right: 10px; 
+    align-items: end; 
+}
+.herecomesbitcoin-hungry {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: 83px;
+    left: 2px;
 }
 /* Animation styles end */
 /* Bitcoin paper page start */
