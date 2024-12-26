@@ -155,6 +155,7 @@ zh_CN:
     walletbitbox: "BitBox02是一款硬件钱包，在瑞士研发和制造。它配备了OLED显示屏、隐形触摸传感器、支持USB-C和USB-A接口、可通过microSD卡和BIP39助记词进行离线备份。通过配套的BitBoxApp，您可以轻松设置BitBox02钱包并进行数字货币的管理。"
     walletbither: "Bither 是一个可以运行在许多平台上的简单又安全的钱包。使用了具体的冷/热方法设计，用户可以使用2种安全方法并且简单易用。Bither的XRANDOM使用了不同的加密源来生成真随机数字给用户。同时使用HDM，用户可以拥有HD的优势与多重签名的安全性。"
     walletwasabi: "Wasabi软件是一个着重于隐私保护的比特币钱包工具。"
+    walletginger: "GingerWallet 是一款适用于桌面的开源非托管比特币钱包。功能包括默认协调器的 CoinJoin、带钱包加密的双因素认证 (2FA)、多语言支持、区块过滤器、Tor 集成以及二维码功能。兼容多种硬件钱包，确保安全使用。"
     walletdownload: "安装"
     walletvisit: "访问网站"
     walletsourcecode: "源代码"
