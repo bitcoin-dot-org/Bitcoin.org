@@ -34,6 +34,14 @@
     </div>
     {% include layout/base/footer-license.html %}
   </div>
+  
+  {% if page.id == 'index' %}
+    <div class="herecomesbitcoin-container" style="justify-content: center">
+      <div class="herecomesbitcoin-cat">
+        {% include animations/herecomesbitcoin/cat.html %}
+      </div>
+    </div>
+  {% endif %}
 </div>
 
 {% include layout/base/footer-js.html %}
