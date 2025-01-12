@@ -281,7 +281,7 @@ followed by the argument `xzf` followed by the file name. The argument
 
 This will create the directory `bitcoin-{{site.DOWNLOAD_VERSION}}` within your current
 working directory. We will install the contents of its `bin`
-subdirectory into the `/usr/local/bin` directory using the the `install`
+subdirectory into the `/usr/local/bin` directory using the `install`
 command. The install command is part of the GNU coreutils available on
 nearly every Linux distribution, and the `/usr/local/bin` directory is a
 standard location for self-installed executables (you may edit the
@@ -330,7 +330,7 @@ following message will be displayed:
     /usr/local/bin/bitcoin-qt: error while loading shared libraries: libQtGui.so.4: cannot open shared object file: No such file or directory
 
 Search your distribution's package database for the missing file
-missing and install package containing that file.  Then re-run
+and install package containing that file.  Then re-run
 `/usr/local/bin/bitcoin-qt` to see if it's missing another file.
 Repeat until Bitcoin Core GUI starts.
 
