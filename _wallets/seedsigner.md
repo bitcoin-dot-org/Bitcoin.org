@@ -2,9 +2,9 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-id: bitbox
-title: "BitBox02"
-titleshort: "BitBox02"
+id: seedsigner
+title: "Seedsigner"
+titleshort: "Seedsigner"
 compat: "hardware"
 level: 2
 platform:
@@ -12,16 +12,16 @@ platform:
     name: hardware
     os:
       - name: hardware
-        text: "walletbitbox"
-        link: "https://shiftcrypto.ch/bitbox02/"
-        source: "https://github.com/BitBoxSwiss/bitbox02-firmware"
-        screenshot: "bitbox02.png"
+        text: "walletseedsigner"
+        link: "https://seedsigner.com/hardware/"
+        source: "https://github.com/SeedSigner/seedsigner"
+        screenshot: "seedsigner.png"
         features: "bech32 hardware_wallet legacy_addresses multisig segwit"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
           transparency: "checkgoodtransparencydeterministic"
-          environment: "checkgoodenvironmenthardware"
+          environment: "checkpassenvironmentbyod"
           privacy: "checkneutralprivacyvariable"
           fees: "checkneutralfeecontrolvariable"
 ---

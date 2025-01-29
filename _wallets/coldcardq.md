@@ -2,9 +2,9 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-id: bitbox
-title: "BitBox02"
-titleshort: "BitBox02"
+id: coldcardq
+title: "Coldcard Q"
+titleshort: "Coldcard Q"
 compat: "hardware"
 level: 2
 platform:
@@ -12,10 +12,10 @@ platform:
     name: hardware
     os:
       - name: hardware
-        text: "walletbitbox"
-        link: "https://shiftcrypto.ch/bitbox02/"
-        source: "https://github.com/BitBoxSwiss/bitbox02-firmware"
-        screenshot: "bitbox02.png"
+        text: "walletcoldcardq"
+        link: "https://coldcard.com/"
+        source: "https://github.com/Coldcard/firmware"
+        screenshot: "coldcardq.png"
         features: "bech32 hardware_wallet legacy_addresses multisig segwit"
         check:
           control: "checkgoodcontrolfull"

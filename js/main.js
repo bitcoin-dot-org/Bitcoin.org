@@ -731,6 +731,60 @@ function changeAccordionButtonText(button, text) {
   button.textContent = text;
 }
 
+function showBuySellWidgets() {
+
+  var buyWidget = window.MoonPayWebSdk.init({
+    flow: 'buy',
+    environment: 'production',
+    containerNodeSelector: '.buy-widget',
+    variant: 'embedded',
+    params: {
+      apiKey: 'pk_live_QWvwDl3WJAq7S8fDjsOUMfjn09DSw8R',
+      theme: 'light',
+      colorCode: '#FF9500'
+    }
+  });
+
+  buyWidget.show();
+}
+
+function handlePageRedirect(isBuyPage) {
+    if (isBuyPage === undefined) {
+        isBuyPage = false;
+    }
+
+    $.get('/cdn-cgi/trace')
+        .done(function(response) {
+            var data = {};
+            var lines = response.split('\n');
+            for (var i = 0; i < lines.length; i++) {
+                var line = lines[i];
+                var parts = line.split('=');
+                if (parts.length === 2) {
+                    var key = parts[0];
+                    var value = decodeURIComponent(parts[1] || '');
+                    data[key] = value;
+                }
+            }
+
+            if (isBuyPage) {
+                if (data.loc === 'GB') {
+                    window.location.href = '/';
+                } else {
+                    showBuySellWidgets();
+                }
+            } else {
+                  if (data.loc === 'GB') {
+                    $('#buybitcoinbutton').hide();
+                    $('#buybitcoinmenulink').hide();
+                    $('#buybitcoinfootermenulink').hide();
+                    $('#getstartedbuybutton').hide();
+                }
+            }
+        });
+}
+
+
 function sortTableColumn(selectedOption) {
   var tableAccordion = document.getElementById('tableAccordion');
   var tableAccordionButton = document.getElementById('tableAccordionButton');
