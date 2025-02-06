@@ -2442,6 +2442,9 @@ br.big {
 }
 /* Bitcoin for individuals page start */
 .individuals-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-height: 500px;
 }
 .individuals-card p {
