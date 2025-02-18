@@ -1,0 +1,59 @@
+<html xmlns="http://www.w4.org/1999/xhtml">
+<meta charset="UTF-8">
+<head>
+    <style>
+        #animation-construction{
+            width:100%;
+            height:100%;
+            display:block;
+            overflow: hidden;
+            transform: translate3d(0,0,0);
+            text-align: center;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+<div id="animation-construction"></div>
+<script type="text/javascript" src="/js/lottie.min.js"></script>
+<script>
+	fetch("/json/construction.json")
+		.then((response) => response.json())
+		.then((animationData) => {
+      var params = {
+        container: document.getElementById('animation-construction'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        animationData
+      };
+
+      var animConstruction;
+
+	    animConstruction = lottie.loadAnimation(params);
+
+	    function playConstructionAnimation() {
+        if (
+            animConstruction.firstFrame === animConstruction.currentFrame || 
+            animConstruction.currentFrame === animConstruction.totalFrames - 1
+        ) {
+            animConstruction.goToAndPlay(animConstruction.firstFrame);
+        }
+	    }
+
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && entry.intersectionRatio > 0.8) {
+                playConstructionAnimation();
+            }
+          });
+      }, { threshold: [0.8] });
+
+      const element = document.querySelector('#animation-construction');
+      observer.observe(element);
+	})
+	.catch((e) => console.error("Error loading animation data: ", e));
+</script>
+</body>
+</html>

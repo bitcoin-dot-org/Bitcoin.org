@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<head>
+    <style>
+        #animation-hungry {
+            width: 100%;
+            height: 100%;
+            display: block;
+            overflow: hidden;
+            transform: translate3d(0,0,0);
+            text-align: center;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div id="animation-hungry"></div>
+<script type="text/javascript" src="/js/lottie.min.js"></script>
+<script>
+	fetch("/json/hungry.json")
+	.then((response) => response.json())
+	.then((animationData) => {
+	    var params = {
+        container: document.getElementById('animation-hungry'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        animationData
+	    };
+
+	    var animHungry;
+
+	    animHungry = lottie.loadAnimation(params);
+
+	    function playHungryAnimation() {
+        if (
+            animHungry.firstFrame === animHungry.currentFrame || 
+            animHungry.currentFrame === animHungry.totalFrames - 1
+        ) {
+            animHungry.goToAndPlay(animHungry.firstFrame);
+        }
+	    }
+
+	    document.querySelector('#animation-hungry').addEventListener('click', playHungryAnimation);
+    })
+    .catch((e) => console.error("Error loading animation data: ", e));
+</script>
+</body>
+</html>

@@ -1,5 +1,4 @@
-{% comment %} This file is licensed under the MIT License (MIT) available on http://opensource.org/licenses/MIT. {% endcomment
-%}
+{% comment %} This file is licensed under the MIT License (MIT) available on http://opensource.org/licenses/MIT. {% endcomment %}
 
 
 <div class="mainhero">
@@ -17,34 +16,43 @@
 
   </div>
 </div>
-<div class="mainoverview">
-  <div class="container">
-    <div class="mainoverview-title">{% translate overview %}</div>
-    <a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}" class="maincard">
-      <img class="maincard-img" src="/img/icons/ico_individuals.svg?{{site.time | date: '%s'}}" alt="Icon">
-      <div>
-        <p class="maincard-title">{% translate menu-bitcoin-for-individuals layout %}</p>
-        <p class="maincard-link">{% translate learn-more layout %}</p>
-      </div>
-    </a>
-    <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}" class="maincard">
-      <img class="maincard-img" src="/img/icons/ico_business.svg?{{site.time | date: '%s'}}" alt="Icon">
-      <div>
-        <p class="maincard-title">{% translate menu-bitcoin-for-businesses layout %}</p>
-        <p class="maincard-link">{% translate learn-more layout %}</p>
-      </div>
-    </a>
-    <a href="https://developer.bitcoin.org/" class="maincard">
-      <img class="maincard-img" src="/img/icons/ico_developers.svg?{{site.time | date: '%s'}}" alt="Icon">
-      <div>
-        <p class="maincard-title">{% translate menu-bitcoin-for-developers layout %}</p>
-        <p class="maincard-link">{% translate learn-more layout %}</p>
-      </div>
+<div class="mainoverview-parent">
+  <div class="herecomesbitcoin-hungry">
+    {% include animations/herecomesbitcoin/hungry.html %}
+    <img class="herecomesbitcoin-hungry-hands" src="/img/animations/herecomesbitcoin/hungry_hands.svg?{{site.time | date: '%s'}}" alt="hands"/>
+  </div>
+  <div class="mainoverview">
+    <div class="container">
+      <div class="mainoverview-title">{% translate overview %}</div>
+      <a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}" class="maincard">
+        <img class="maincard-img" src="/img/icons/ico_individuals.svg?{{site.time | date: '%s'}}" alt="Icon">
+        <div>
+          <p class="maincard-title">{% translate menu-bitcoin-for-individuals layout %}</p>
+          <p class="maincard-link">{% translate learn-more layout %}</p>
+        </div>
+      </a>
+      <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}" class="maincard">
+          <img id="flower-heads-hoverable" class="maincard-img" src="/img/icons/ico_business.svg?{{site.time | date: '%s'}}" alt="Icon">
+          <div>
+            <p class="maincard-title">{% translate menu-bitcoin-for-businesses layout %}</p>
+            <p class="maincard-link">{% translate learn-more layout %}</p>
+          </div>
+          <div class="herecomesbitcoin-flower-heads">
+            {% include animations/herecomesbitcoin/flower_heads.html %}
+          </div>
+      </a>
+      <a href="https://developer.bitcoin.org/" class="maincard">
+        <img class="maincard-img" src="/img/icons/ico_developers.svg?{{site.time | date: '%s'}}" alt="Icon">
+        <div>
+          <p class="maincard-title">{% translate menu-bitcoin-for-developers layout %}</p>
+          <p class="maincard-link">{% translate learn-more layout %}</p>
+        </div>
+      </a>
+    </div>
+    <a class="btn-down" href="#maindesc-title">
+      <img src="/img/icons/ico_arrow_down.svg?{{site.time | date: '%s'}}" alt="Link">
     </a>
   </div>
-  <a class="btn-down" href="#maindesc-title">
-    <img src="/img/icons/ico_arrow_down.svg?{{site.time | date: '%s'}}" alt="Link">
-  </a>
 </div>
 <div class="maindesc">
   <div class="container">
@@ -73,8 +81,12 @@
           
         </ul>
       </div>
-      <img class="maindesc-img" src="/img/home/bitcoin-img.svg?{{site.time | date: '%s'}}" alt="Bitcoin image">
-    </div>
+      <div class="herecomesbitcoin-fairy-container">
+        <div class="herecomesbitcoin-fairy">
+          {% include animations/herecomesbitcoin/fairy.html %}
+        </div>
+      </div>
+   </div>
     <div class="btn-container">
       <a class="btn btn-dark btn-home center" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
     </div>
