@@ -200,18 +200,18 @@ please read /home/myusername/.rvm/log/1739938091_ruby-2.5.8/make.log
 There has been an error while running make. Halting the installation.
 ```
 
-And if the the `make.log` file has this lines at the end:
+And if the the `make.log` file has these lines at the end:
 ```
 make: *** [uncommon.mk:240: build-ext] Error 2
 ++ return 2
 ```
 
-Probably you need to run the following command to install a specific openssl dependency needed to compile ruby-2.5.8:
+Probably you need to run the following command to install a specific openssl dependency needed by ruby-2.5.8 compilation:
 ```
 rvm pkg install openssl
 ```
 
-And then install/compile ruby with the following command:
+Then install/compile ruby with the following command:
 ```
 rvm install ruby-2.5.8 --with-openssl-dir=$HOME/.rvm/usr
 ```
