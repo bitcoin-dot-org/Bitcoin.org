@@ -1278,12 +1278,21 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     top: 83px;
     left: 2px;
 }
-.herecomesbitcoin-hungry-hands {
+.herecomesbitcoin-hungry-left-hand {
     display: block;
     position: relative;
-    width: 250px;
-    height: 250px;
-    bottom: 249px;
+    width: 20px;
+    height: 20px;
+    left: 60px;
+    bottom: 177px;
+}
+.herecomesbitcoin-hungry-right-hand {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 170px;
+    bottom: 147px;
 }
 /* Animation styles end */
 /* Bitcoin paper page start */
