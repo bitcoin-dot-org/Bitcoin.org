@@ -1,6 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <meta charset="UTF-8">
 <head>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <style>
         #animation-fairy {
             width:100%;
@@ -15,36 +16,20 @@
 </head>
 <body>
 
-<div id="animation-fairy"></div>
-<script type="text/javascript" src="/js/lottie.min.js"></script>
+<lottie-player id="animation-fairy" src="/json/fairy.json"></lottie-player>
+
 <script>
-	fetch("/json/fairy.json")
-	.then((response) => response.json())
-	.then((animationData) => {
-	    var params = {
-        container: document.getElementById('animation-fairy'),
-        renderer: 'html',
-        loop: false,
-        autoplay: false,
-        animationData
-	    };
+	const animFairy = document.querySelector('#animation-fairy');
+  animFairy.addEventListener('click', playFairyAnimation);
+  animFairy.addEventListener('complete', stopFairyAnimation());
 
-	    var animFairy;
+  function stopFairyAnimation() {
+    animFairy.stop();
+  }
 
-	    animFairy = lottie.loadAnimation(params);
-
-	    function playFairyAnimation() {
-        if (
-            animFairy.firstFrame === animFairy.currentFrame || 
-            animFairy.currentFrame === animFairy.totalFrames - 1
-        ) {
-            animFairy.goToAndPlay(animFairy.firstFrame);
-        }
-	    }
-
-	    document.querySelector('#animation-fairy').addEventListener('click', playFairyAnimation);
-    })
-    .catch((e) => console.error("Error loading animation data: ", e));
+  function playFairyAnimation() {
+    animFairy.play(animFairy.firstFrame);
+  }
 </script>
 </body>
 </html>

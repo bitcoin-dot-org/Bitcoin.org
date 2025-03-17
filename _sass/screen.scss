@@ -1261,6 +1261,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     width: 503px;
     height: 503px;
     margin-bottom: 35px;
+    border: 1px solid red;
 }
 .herecomesbitcoin-fairy-container {
     flex: 1;
@@ -4026,6 +4027,11 @@ html[data-theme="dark"] .dark-theme-toggle::before {
     }
     .two-column-list li:nth-child(2n+1) {
         margin-right: 20px;
+    }
+    .herecomesbitcoin-fairy {
+      width: 311px;
+      height: 312px;
+      border: 1px solid red;
     }
 }
 
