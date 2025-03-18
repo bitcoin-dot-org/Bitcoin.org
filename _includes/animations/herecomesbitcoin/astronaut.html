@@ -1,8 +1,8 @@
-<html xmlns="http://www.w4.org/1999/xhtml"
+<html xmlns="http://www.w4.org/1999/xhtml">
 <meta charset="UTF-8">
 <head>
     <style>
-        #animation-astronaut{
+        #animation-astronaut {
             width:100%;
             height:100%;
             display:block;
@@ -11,30 +11,9 @@
             text-align: center;
             opacity: 1;
         }
-
     </style>
 </head>
 <body>
-<div id="animation-astronaut"></div>
-<script type="text/javascript" src="/js/lottie.min.js"></script>
-<script>
-	fetch("/json/astronaut.json")
-		.then((response) => response.json())
-		.then((animationData) => {
-
-		    var params = {
-                container: document.getElementById('animation-astronaut'),
-                renderer: 'svg',
-                loop: false,
-                autoplay: true,
-                animationData
-		    };
-
-		    var anim;
-
-		    anim = lottie.loadAnimation(params);
-	})
-	.catch((e) => console.error("Error loading animation data: ", e));
-</script>
+  <lottie-player id="animation-astronaut" src="/json/astronaut.json" autoplay></lottie-player>
 </body>
 </html>
