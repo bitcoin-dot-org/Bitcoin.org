@@ -14,26 +14,6 @@
     </style>
 </head>
 <body>
-<div id="animation-cat"></div>
-<script type="text/javascript" src="/js/lottie.min.js"></script>
-<script>
-	fetch("/json/cat.json")
-		.then((response) => response.json())
-		.then((animationData) => {
-
-		    var params = {
-                container: document.getElementById('animation-cat'),
-                renderer: 'svg',
-                loop: true,
-                autoplay: true,
-                animationData
-		    };
-
-		    var anim;
-
-		    anim = lottie.loadAnimation(params);
-	})
-	.catch((e) => console.error("Error loading animation data: ", e));
-</script>
+  <lottie-player id="animation-cat" src="/json/cat.json" autoplay loop></lottie-player>
 </body>
 </html>

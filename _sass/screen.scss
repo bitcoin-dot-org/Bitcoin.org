@@ -991,6 +991,9 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 .mainoverview-parent {
   background: url(../img/hero/overview-bg-repeat.png);
   position: relative;
+  background-repeat: no-repeat;
+  background-color: #13161F;
+  top: -2px;
 }
 .mainoverview {
     position: relative;
@@ -4027,6 +4030,13 @@ html[data-theme="dark"] .dark-theme-toggle::before {
     .two-column-list li:nth-child(2n+1) {
         margin-right: 20px;
     }
+    .herecomesbitcoin-fairy {
+      width: 311px;
+      height: 312px;
+    }
+    .herecomesbitcoin-flower-heads {
+      display: none;
+    }
 }
 
 @media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ){
@@ -5162,9 +5172,7 @@ html[data-theme="dark"] .dark-theme-toggle::before {
     .donate-btn {
         display: none;
     }
-    .herecomesbitcoin-flower-heads {
-      display: none;
-    }
+    
 }
 
 @import 'wallet-menu-noscript';
