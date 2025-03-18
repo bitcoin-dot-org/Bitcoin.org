@@ -988,11 +988,16 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     color:#fff;
     border-radius:1px;
 }
+.mainoverview-parent {
+  background: url(../img/hero/overview-bg-repeat.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-color: #13161F;
+  top: -2px;
+}
 .mainoverview {
     position: relative;
-    padding: 375px 0 130px;
-    background: url(../img/hero/overview-bg.svg?1528322191) top no-repeat;
-    background-size: cover;
+    padding: 150px 0 130px;
     text-align: center;
 }
 .btn-down {
@@ -1213,7 +1218,86 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
   padding: 6px 72px;
 }
 /* Buy bitcoin page end */
-
+/* Animation styles start */ 
+.herecomesbitcoin-fancy, .herecomesbitcoin-sir, .herecomesbitcoin-coder, .herecomesbitcoin-astronaut {
+    height: 250px;
+    width: 250px;
+}
+.herecomesbitcoin-coder-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.herecomesbitcoin-cat {
+  width: 300px;
+  height: 300px;
+  /* only show and animate once user scrolls to the bottom */
+  display: none;
+}
+.herecomesbitcoin-cat.show {
+  display: block;
+  animation: scale-up 2s forwards;
+}
+@keyframes scale-up {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.herecomesbitcoin-astronaut-container {
+  display: flex;
+  justify-content: center;
+}
+.herecomesbitcoin-flower-heads {
+  position: relative;
+  height: 800px;
+  width: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -67%);
+  pointer-events: none;
+  z-index: 10;
+}
+.herecomesbitcoin-fairy {
+    width: 503px;
+    height: 503px;
+    margin-bottom: 35px;
+}
+.herecomesbitcoin-fairy-container {
+    flex: 1;
+}
+.herecomesbitcoin-container {
+    display: flex;
+    align-items: center; 
+    margin-right: 10px; 
+    align-items: end; 
+}
+.herecomesbitcoin-hungry {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: 83px;
+    left: 2px;
+}
+.herecomesbitcoin-hungry-left-hand {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 60px;
+    bottom: 177px;
+}
+.herecomesbitcoin-hungry-right-hand {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 170px;
+    bottom: 147px;
+}
+/* Animation styles end */
 /* Bitcoin paper page start */
 .bitcoin-paper {
     padding: 20px 0 50px;
@@ -2382,6 +2466,9 @@ br.big {
 }
 /* Bitcoin for individuals page start */
 .individuals-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-height: 500px;
 }
 .individuals-card p {
@@ -3670,15 +3757,10 @@ html[data-theme="dark"] .dark-theme-toggle::before {
     }
     .mainoverview {
         padding: 225px 0 115px;
-        background: url(../img/hero/overview-tablet.svg?1528322191) top no-repeat;
         background-size: cover;
     }
     .maindesc {
         padding: 85px 0 60px;
-    }
-    .maindesc-img {
-        width: 311px;
-        height: 312px;
     }
     .maindesc-text {
         margin: 0 0 25px;
@@ -3947,6 +4029,13 @@ html[data-theme="dark"] .dark-theme-toggle::before {
     }
     .two-column-list li:nth-child(2n+1) {
         margin-right: 20px;
+    }
+    .herecomesbitcoin-fairy {
+      width: 311px;
+      height: 312px;
+    }
+    .herecomesbitcoin-flower-heads {
+      display: none;
     }
 }
 
@@ -4550,7 +4639,6 @@ html[data-theme="dark"] .dark-theme-toggle::before {
     }
     .mainoverview {
         padding: 110px 0 50px;
-        background: url(../img/hero/overview-mob.svg?1528322191) top no-repeat;
         background-size: cover;
     }
     .mainoverview-title {
@@ -4585,9 +4673,6 @@ html[data-theme="dark"] .dark-theme-toggle::before {
         flex-direction: column-reverse;
         margin: 0 0 35px;
     }
-    .maindesc-img {
-        margin-bottom: 35px;
-    }
     .maindesc-text {
         max-width: 100%;
         font-size: 112.5%;
@@ -4596,7 +4681,7 @@ html[data-theme="dark"] .dark-theme-toggle::before {
         margin: 0 0 30px;
     }
     .card-row {
-        margin: 50px 0;
+      margin: 50px 0px;
     }
     .card {
         width: 100%;
@@ -5087,6 +5172,7 @@ html[data-theme="dark"] .dark-theme-toggle::before {
     .donate-btn {
         display: none;
     }
+    
 }
 
 @import 'wallet-menu-noscript';
