@@ -30,3 +30,447 @@ The following quick guides will help you get started:
 ### Code of Conduct
 
 Participation in this project is subject to a [Code of Conduct](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/CODE_OF_CONDUCT.md).
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: base
+id: bitcoin-paper
+---
+<div class="hero">
+  <div class="container hero-container">
+    <h1>{% translate pagetitle %}</h1>
+    <p class="summary">{% translate summary %}</p>
+  </div>
+</div>
+
+<div class="bitcoin-paper">
+  <div class="container">
+    <p>{% translate description %} {% comment %} NOTE: before adding a new file,
+    follow these steps: 1. Make sure it has been uploaded in ODT form to
+    https://github.com/wbnns/bitcoinwhitepaper 2. Ask a site maintainer to
+    generate the PDF format from the ODT format. 3. Scan the PDF using
+    VirusTotal.com and post a link to the scan report on GitHub (this provides a
+    sha256sum of the file, so it can be verified that the file was scanned). The
+    files should be listed in this order: English original first; then UTF-8
+    alphabetical order {% endcomment %}</p>
+      <ul class="row card-row">
+
+        <li class="card bitcoin-paper-card">
+          <b>
+            <a class="language-link" href="/bitcoin.pdf">English (Original)</a>
+          </b>
+        </li>
+        
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_am.pdf">Հայերեն</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <span>Diana Sisakian</span>, sponsored by <a href="https://cleartalks.com">ClearTalks</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_id.pdf">Bahasa Indonesia</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/christahir">Christopher Tahir</a>,
+            Gregorius Airlangga, <a href="https://github.com/khendraw">K
+            Hendrawan</a>
+          </div>
+        </li>
+        
+         <li class="card bitcoin-paper-card">
+         <a class="language-link"
+           href="/files/bitcoin-paper/bitcoin_cz.pdf">Czech</a>
+         <div>
+           <span>{% translate translated_by %}</span>
+           <a href="https://braiins.com/">braiins.com</a>
+         </div>
+        </li>
+        
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_de.pdf">Deutsch</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <span>Daniel Deckner</span>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_es.pdf">Español</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/breathingdog">Breathingdog</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_fr.pdf">Français</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/Arnaud-Francois-Fausse">Arnaud-François
+              Fausse</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_it.pdf">Italiano</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/terzim">Terzim</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_lt.pdf">Lietuvių Kalba</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/DDomas">Domas Dranginis</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_hu.pdf">Magyar Nyelv</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/Balaxi">Balaxi</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_mr.pdf">मराठी</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/shivajiambedkar">Shivaji Ambedkar</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_nl.pdf">Nederlands</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/Giftbitnl">GiftBitNL</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_no.pdf">Norsk (Bokmål)</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://kryptografen.no">Kryptografen.no</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_is.pdf">Íslenska</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://www.pega-pool.com/">PEGA Pool</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_pl.pdf">Polski</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/meeDamian">meeDamian</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_pt.pdf">Português</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/rhlinden">rhlinden</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_pt_br.pdf">Português
+            Brasileiro</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://www.linkedin.com/in/rodrigosilvap">Rodrigo Silva
+              Pinto</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_ro.pdf">Română</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://bitcointalk.org/index.php?action=profile;u=1285797">Gazeta Bitcoin</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_sk.pdf">Slovenčina</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/OndroS">Ondrej Sarnecký</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_sl.pdf">Slovenščina</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://bitcoin.si/">Bitcoin Association Slovenia</a>
+          </div>
+        </li>
+        
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_sr.pdf">српски</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <span>Božo Popović</span>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_fi.pdf">Suomen kieli</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://twitter.com/bio_bitcoin">Biocycle</a>,
+            <a href="https://twitter.com/LohkoKettu">LohkoKettu</a>,
+            <a href="https://twitter.com/locusf">Aleksi Suomalainen</a>,
+            <a href="https://twitter.com/AnttiMay">Antti Majakivi</a>,
+            <a href="https://twitter.com/OmniFinn">Niko Laamanen</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_se.pdf">Svenska</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/hanspandeya">hanspandeya</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_tr.pdf">Türkçe</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://www.linkedin.com/in/efecini/">Efe Cini</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_gr.pdf">ελληνικά</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/chdimosthenis">chdimosthenis</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_hi.pdf">मानक हिन्दी </a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="http://twitter.com/blockbitmedia">Praneet Jain</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_te.pdf">తెలుగు </a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <span>Charaen</span>
+          </div>
+        </li>
+        
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_ur.pdf">اُردُو</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://aharix.com/MSJ">Muhammad Safdar Jamal</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_ta.pdf">தமிழ்</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://twitter.com/rajasahayajose">Raja Sahaya Jose</a>
+          </div>
+        </li>
+        
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_ml.pdf">മലയാളം</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://www.linkedin.com/in/neeludan">Hyder Ali Abdulla</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_iw.pdf">עברית</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://twitter.com/MeniRosenfeld">Meni Rosenfeld</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_ru.pdf">Русский</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/arvicco">Ar Vicco</a>, <a
+              href="https://github.com/nik0x01">Ivan Nikolaev</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_vi.pdf">Tiếng Việt</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/pcdinh">Pham Cong Dinh</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_uk.pdf">Yкраїнська</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://t.me/wtfbit">WTFBit</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_ar.pdf">العربية</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/alsayadi">Ahmed Alsayadi</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_fa.pdf">پارسی</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/ZeeAmini">ZeeAmini</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_ko.pdf">한국어</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/mincheolim">Mincheol Im</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_jp.pdf">日本語</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/cryptohakka">hakka</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_th.pdf">ภาษาไทย</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/PeeraphatHan">Peeraphat Hankongkaew</a>
+          </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+          <a class="language-link"
+            href="/files/bitcoin-paper/bitcoin_zh_cn.pdf">简化字</a>
+          <div>
+            <span>{% translate translated_by %}</span>
+            <a href="https://github.com/shdxiang">shdxiang</a>,
+            <span>Bill Zhao</span>
+          </div>
+        </li>
+        
+        <li class="card bitcoin-paper-card">
+         <a class="language-link"
+           href="/files/bitcoin-paper/bitcoin_bn.pdf">বাংলা</a>
+         <div>
+           <span>{% translate translated_by %}</span>
+           <a href="https://twitter.com/shafiunmiraz0">Shafiun Miraz</a>,
+           <a href="https://github.com/tonmoy10ms">Tonmoy Sarkar</a>
+         </div>
+        </li>
+        
+        <li class="card bitcoin-paper-card">
+         <a class="language-link"
+           href="/files/bitcoin-paper/bitcoin_et.pdf">Estonian</a>
+         <div>
+           <span>{% translate translated_by %}</span>
+           <a href="https://github.com/ekukxs">ekukxs</a>
+         </div>
+        </li>
+        
+        <li class="card bitcoin-paper-card">
+         <a class="language-link"
+           href="/files/bitcoin-paper/bitcoin_al.pdf">Albanian</a>
+         <div>
+           <span>{% translate translated_by %}</span>
+           <a href="https://twitter.com/TonyXhufi">Tony Xhufi</a>
+         </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+         <a class="language-link"
+           href="/files/bitcoin-paper/bitcoin_amh.pdf">አማርኛ</a>
+         <div>
+           <span>{% translate translated_by %}</span>
+           <a href="https://x.com/Ecryptofficial">Ξ c r y p t o</a>
+         </div>
+        </li>
+        
+        <li class="card bitcoin-paper-card">
+         <a class="language-link"
+           href="/files/bitcoin-paper/bitcoin_hr.pdf">Croatian</a>
+         <div>
+           <span>{% translate translated_by %}</span>
+           <a href="https://twitter.com/LuxBTC">LuxBTC</a>
+         </div>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+         <a class="language-link"
+           href="/files/
+           
