@@ -1062,7 +1062,7 @@ For confirmation that you accept inbound connections, you can use
 Bitcoin Core. Bitcoin Core can't tell you directly whether you allow
 inbound connections, but it can tell you whether or not you currently
 have any inbound connections. If your node has been online for at least
-30 minutes, it should normally have inbound connections. If want to
+30 minutes, it should normally have inbound connections. If you want to
 check your peer info using Bitcoin Core, choose the appropriate
 instructions below:
 
