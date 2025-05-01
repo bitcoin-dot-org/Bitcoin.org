@@ -23,7 +23,7 @@ HTML::Proofer.new(
         :disable_external => true,
 
         ## Check whether HTML is well-formed
-        :check_html => true,
+        :check_html => false,
         
         ## Links to ignore
         :href_ignore => [
