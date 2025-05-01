@@ -12,6 +12,9 @@ http://opensource.org/licenses/MIT.
         <p class="donate-text">{% translate donate-community-support layout %}
           <a class="donate-link" href="bitcoin:bc1qx3u4njquj0ux63030r4nat8awqrlm0x2zlt96h" target="_blank">bc1qx3u4njquj0ux63030r4nat8awqrlm0x2zlt96h</a>
         </p>
+        {% if page.id == 'bitcoin-for-businesses' %}
+          {% include animations/herecomesbitcoin/construction.html %}
+        {% endif %}
       </div>
     </div>
   </div>

@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<head>
+  <style>
+      #animation-flower-heads {
+          width:100%;
+          height:100%;
+          display:block;
+          overflow: hidden;
+          transform: translate3d(0,0,0);
+          text-align: center;
+          opacity: 1;
+      }
+  </style>
+</head>
+<body>
+  <lottie-player id="animation-flower-heads" src="/json/flower_heads.json"></lottie-player>
+  <script>
+    const animFlowerHeads = document.querySelector('#animation-flower-heads');
+    animFlowerHeads.addEventListener('click', playFlowerHeadsAnimation);
+    animFlowerHeads.addEventListener('complete', stopFlowerHeadsAnimation);
+
+    document.querySelector('#flower-heads-hoverable').addEventListener('mouseenter', playFlowerHeadsAnimation);
+
+    function stopFlowerHeadsAnimation() {
+      animFlowerHeads.stop();
+    }
+
+    function playFlowerHeadsAnimation() {
+      animFlowerHeads.play(animFlowerHeads.firstFrame);
+    }
+  </script>
+</body>
+</html>
