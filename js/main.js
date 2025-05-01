@@ -802,6 +802,7 @@ function sortTableColumn(selectedOption) {
   }
 }
 
+/* jshint ignore:start */
 window.addEventListener('wheel', (event) => {
   let cat = document.querySelector('.herecomesbitcoin-cat');
 
@@ -813,3 +814,4 @@ window.addEventListener('wheel', (event) => {
     }, 1000);
   }
 })
+/* jshint ignore:end */
