@@ -437,7 +437,7 @@ Core right now:
    power users, businesses, and programmers. The [user interface][bcc
    user interface] page provides an overview, the [installation
    instructions][bandwidth sharing guide] can help you get started, and
-   the [RPC](https://developer.bitcoin.org/reference/rpc/)documentation can help you find specific
+   the [RPC](https://developer.bitcoin.org/reference/rpc/) documentation can help you find specific
    commands. If you're using [`getnewaddress`](https://developer.bitcoin.org/reference/rpc/getnewaddress.html) to
    create receiving addresses, your received transactions will be fully
    validated.
