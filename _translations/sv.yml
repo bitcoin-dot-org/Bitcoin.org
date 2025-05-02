@@ -281,6 +281,7 @@ sv:
     walletbitbox: "BitBox02 är en hårdvaruplånbok som utvecklas och tillverkas i Schweiz. Den är utrustad med en OLED-skärm, osynliga peksensorer, stöd för USB-C och USB-A, säkerhetskopiering offline till både micro-SD-kort och BIP39-minnesfras. Det är enkelt att konfigurera en BitBox02-plånbok och hantera sina mynt, via den kompletterande appen BitBoxApp."
     walletbither: "Bither är en enkel och säker plånbok för flera plattformar. Den har speciellt utformade arbetslägen för varm- och kallagring, vilket gör det både enkelt och säkert för användaren. Bithers XRANDOM använder olika entropikällor för att generera äkta slumptal åt användaren. HDM gör det också möjligt för användaren att få fördelarna av HD och säkerheten hos multisig."
     walletwasabi: "Wasabi är en integritetsfokuserad Bitcoinplånbok för Windows, Linux och Mac som är baserad på öppen källkod och inte kräver förvaring hos tredje part. Den har inbyggt stöd för Tor, CoinJoin och funktioner för myntkontroll. "
+    walletginger: "GingerWallet är en open-source, icke-förvarad Bitcoin-plånbok för skrivbordet. Funktioner inkluderar CoinJoin med standardkoordinatorn, 2FA med plånbokskryptering, flerspråkigt stöd, blockfilter, Tor-integration och QR-kodfunktionalitet. Kompatibel med olika hårdvaruplånböcker för säker användning."
     walletdownload: "Installera"
     walletvisit: "Besök webbplatsen"
     walletsourcecode: "Källkod"
