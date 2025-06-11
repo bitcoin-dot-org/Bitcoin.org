@@ -731,7 +731,7 @@ function changeAccordionButtonText(button, text) {
   button.textContent = text;
 }
 
-function showBuySellWidgets() {
+function showBuyWidget() {
 
   var buyWidget = window.MoonPayWebSdk.init({
     flow: 'buy',
@@ -748,9 +748,29 @@ function showBuySellWidgets() {
   buyWidget.show();
 }
 
-function handlePageRedirect(isBuyPage) {
+function showSellWidget() {
+
+  var sellWidget = window.MoonPayWebSdk.init({
+    flow: 'sell',
+    environment: 'production',
+    containerNodeSelector: '.sell-widget',
+    variant: 'embedded',
+    params: {
+      apiKey: 'pk_live_QWvwDl3WJAq7S8fDjsOUMfjn09DSw8R',
+      theme: 'light',
+      colorCode: '#FF9500'
+    }
+  });
+
+  sellWidget.show();
+}
+
+function handlePageRedirect(isBuyPage, isSellPage) {
     if (isBuyPage === undefined) {
         isBuyPage = false;
+    }
+    if (isSellPage === undefined) {
+        isSellPage = false;
     }
 
     $.get('/cdn-cgi/trace')
@@ -771,19 +791,26 @@ function handlePageRedirect(isBuyPage) {
                 if (data.loc === 'GB') {
                     window.location.href = '/';
                 } else {
-                    showBuySellWidgets();
+                    showBuyWidget();
+                }
+            } else if (isSellPage) {
+                if (data.loc === 'GB') {
+                    window.location.href = '/';
+                } else {
+                    showSellWidget();
                 }
             } else {
-                  if (data.loc === 'GB') {
+                if (data.loc === 'GB') {
                     $('#buybitcoinbutton').hide();
                     $('#buybitcoinmenulink').hide();
                     $('#buybitcoinfootermenulink').hide();
                     $('#getstartedbuybutton').hide();
+                    $('#sellbitcoinmenulink').hide();
+                    $('#sellbitcoinfootermenulink').hide();
                 }
             }
         });
 }
-
 
 function sortTableColumn(selectedOption) {
   var tableAccordion = document.getElementById('tableAccordion');
