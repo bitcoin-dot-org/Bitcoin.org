@@ -748,6 +748,23 @@ function showBuyWidget() {
   buyWidget.show();
 }
 
+function showSellWidget() {
+
+  var sellWidget = window.MoonPayWebSdk.init({
+    flow: 'sell',
+    environment: 'production',
+    containerNodeSelector: '.sell-widget',
+    variant: 'embedded',
+    params: {
+      apiKey: 'pk_live_QWvwDl3WJAq7S8fDjsOUMfjn09DSw8R',
+      theme: 'light',
+      colorCode: '#FF9500'
+    }
+  });
+
+  sellWidget.show();
+}
+
 function handlePageRedirect(isBuyPage) {
     if (isBuyPage === undefined) {
         isBuyPage = false;
