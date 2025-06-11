@@ -731,7 +731,7 @@ function changeAccordionButtonText(button, text) {
   button.textContent = text;
 }
 
-function showBuySellWidgets() {
+function showBuyWidget() {
 
   var buyWidget = window.MoonPayWebSdk.init({
     flow: 'buy',
@@ -771,7 +771,7 @@ function handlePageRedirect(isBuyPage) {
                 if (data.loc === 'GB') {
                     window.location.href = '/';
                 } else {
-                    showBuySellWidgets();
+                    showBuyWidget();
                 }
             } else {
                   if (data.loc === 'GB') {
