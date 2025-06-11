@@ -102,14 +102,12 @@ http://opensource.org/licenses/MIT.
       <ul class="footermenu-list">
         <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a>
-        {% if page.lang == 'en' %}
         <li id="buybitcoinfootermenulink" {% if page.id == 'buy' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate buy url %}">{% translate menu-buy layout %}</a>
         </li>
         <li id="sellbitcoinfootermenulink" {% if page.id == 'sell' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate sell url %}">{% translate menu-sell layout %}</a>
         </li>
-        {% endif %}
         {% if page.lang == 'en' %}
         <li{% if page.id == 'full-node' %} class="active"{% endif %}>
           <a href="/en/full-node">{% translate menu-full-node layout %}</a>
