@@ -625,6 +625,13 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     top: 0;
     transform: translateY(-100%);
 }
+.sell-widget{
+    width: 400px;
+    height: 650px;
+}
+.sell-widget iframe {
+   border: 0;
+}
 .buy-widget{
     width: 400px;
     height: 650px;
