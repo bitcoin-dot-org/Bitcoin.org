@@ -765,9 +765,12 @@ function showSellWidget() {
   sellWidget.show();
 }
 
-function handlePageRedirect(isBuyPage) {
+function handlePageRedirect(isBuyPage, isSellPage) {
     if (isBuyPage === undefined) {
         isBuyPage = false;
+    }
+    if (isSellPage === undefined) {
+        isSellPage = false;
     }
 
     $.get('/cdn-cgi/trace')
@@ -790,17 +793,24 @@ function handlePageRedirect(isBuyPage) {
                 } else {
                     showBuyWidget();
                 }
+            } else if (isSellPage) {
+                if (data.loc === 'GB') {
+                    window.location.href = '/';
+                } else {
+                    showSellWidget();
+                }
             } else {
-                  if (data.loc === 'GB') {
+                if (data.loc === 'GB') {
                     $('#buybitcoinbutton').hide();
                     $('#buybitcoinmenulink').hide();
                     $('#buybitcoinfootermenulink').hide();
                     $('#getstartedbuybutton').hide();
+                    $('#sellbitcoinmenulink').hide();
+                    $('#sellbitcoinfootermenulink').hide();
                 }
             }
         });
 }
-
 
 function sortTableColumn(selectedOption) {
   var tableAccordion = document.getElementById('tableAccordion');
