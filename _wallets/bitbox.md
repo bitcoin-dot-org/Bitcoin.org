@@ -14,7 +14,7 @@ platform:
       - name: hardware
         text: "walletbitbox"
         link: "https://shiftcrypto.ch/bitbox02/"
-        source: "https://github.com/digitalbitbox/bitbox02-firmware"
+        source: "https://github.com/BitBoxSwiss/bitbox02-firmware"
         screenshot: "bitbox02.png"
         features: "bech32 hardware_wallet legacy_addresses multisig segwit"
         check:

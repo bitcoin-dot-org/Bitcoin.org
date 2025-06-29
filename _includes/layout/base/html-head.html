@@ -16,10 +16,11 @@ http://opensource.org/licenses/MIT.
 {% if page.lang == 'bg' or page.lang == 'el' or page.lang == 'ko' or page.lang == 'hi' or page.lang == 'pl' or page.lang == 'sl' or page.lang == 'ro' or page.lang == 'ru' or page.lang == 'tr' or page.lang == 'uk' or page.lang == 'zh_CN' or page.lang == 'zh_TW' %}<link rel="stylesheet" href="/css/sans.css?{{site.time | date: '%s'}}">{% endif %}
 <script type="text/javascript" src="/js/base.js?{{site.time | date: '%s'}}"></script>
 <script type="text/javascript" src="/js/main.js?{{site.time | date: '%s'}}"></script>
+<script type="text/javascript" src="/js/lottie-player.js?{{site.time | date: '%s'}}"></script>
 <script src="/js/jquery/jquery-1.11.2.min.js"></script>
 <script src="/js/jquery/jquery-ui.min.js"></script>
 <script src="/js/jquery/jquery.qrcode.min.js"></script>
-{% if page.id == "buy" %}
+{% if page.id == "buy" or page.id == "sell" %}
 <script src="https://static.moonpay.com/web-sdk/v1/moonpay-web-sdk.min.js"></script>
 {% endif %}
 <link rel="shortcut icon" href="/favicon.png?{{site.time | date: '%s'}}">

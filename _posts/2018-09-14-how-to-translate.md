@@ -78,7 +78,7 @@ when helping translate Bitcoin.org.
 
 ### Team Leaders
 
-Team Leaders are currently Simon AKA “[Komodorpudel](https://telegram.me/komodorpudel)” and Hendrawan AKA “[khendraw](https://telegram.me/khendraw)”.
+Team Leaders are currently George AKA “[BitcoinTranslations](https://telegram.me/bitcointranslations)” and Hendrawan AKA “[khendraw](https://telegram.me/khendraw)”.
 
 **Responsibilities and Tasks**
 

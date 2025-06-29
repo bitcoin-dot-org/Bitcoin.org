@@ -144,6 +144,9 @@ en:
   whitepaper-mirrors:
     title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
     summary: "Mirrors of the Bitcoin whitepaper"
+  sell:
+    title: "Sell Bitcoin"
+    pagetitle: "Sell Bitcoin"
   buy:
     title: "Buy Bitcoin"
     pagetitle: "Buy Bitcoin"
@@ -291,13 +294,17 @@ en:
     walletmyceliumwallet: "Mycelium Bitcoin Wallet for Android is designed for security, speed, and ease of use. It has unique features to manage your keys and for cold storage and offers compatibility with Trezor and others."
     wallettrezorone: "Trezor is a hardware wallet providing a high level of security without sacrificing convenience. Unlike cold storage, Trezor is able to sign transactions while connected to an online device. That means spending bitcoins is secure even when using a compromised computer."
     wallettrezormodelt: "Trezor Model T is a next-generation hardware wallet, designed with the benefits of the original Trezor in mind, combined with a modern and intuitive interface for improved user experience and security. It features a touchscreen, faster processor, as well as all the features of the Trezor One."
-    walletcoldcard: "Coldcard is an easy to use, ultra-secure, open-source and affordable hardware wallet that is easy to back up via an encrypted microSD card. Your private key is stored in a dedicated security chip. MicroPython software design allows you to make changes."
+    walletcoldcard: "Coldcard is an easy to use, ultra-secure and affordable hardware wallet with verifiable source code that is easy to back up via an encrypted microSD card. Your private key is stored in a dedicated security chip. MicroPython software design allows you to make changes."
+    walletcoldcardq: "Coldcard Q is a hardware wallet featuring dual secure elements. It includes a QWERTY keyboard and a large LCD screen for simple passphrase entry, two MicroSD slots, a QR Code scanner, and offers optional NFC and USB-C connectivity. This device supports AAA batteries or USB-C power."
     walletkeepkey: "KeepKey is a hardware wallet that makes bitcoin security simple. When you entrust KeepKey with your money, every bitcoin transaction you make must be reviewed and approved via its OLED display and confirmation button."
+    walletseedsigner: "SeedSigner is a stateless, air-gapped signing device running open-source software that can be built with off-the-shelf hardware or purchased pre-built. The device securely creates Bitcoin private keys, sets up Bitcoin wallets, and signs Bitcoin transactions via QR codes."
+    walletkrux: "Krux is an open-source firmware that transforms off-the-shelf generic devices into versatile Bitcoin transaction signers. It allows offline airgapped signing through QR codes and SD cards."
     walletbitpay: "BitPay Wallet is the HD-multisignature wallet originally built to secure BitPay's funds. BitPay supports multiple personal and shared wallets, testnet, and the full Payment Protocol. A private <a href=\"https://github.com/bitpay/bitcore-wallet-service\">BWS</a> node can be used for enhanced security and privacy."
     walletledgernanos: "Ledger Nano S is a secure Bitcoin hardware wallet. It connects to any computer through USB and embeds a built-in OLED display to double-check and confirm each transaction with a single tap on its buttons."
     walletbitbox: "The BitBox02 is a hardware wallet, developed and manufactured in Switzerland. It is equipped with an OLED display, invisible touch sensors, USB-C and USB-A support, offline backups to both microSD card and BIP39 mnemonic. Setting up a BitBox02 wallet and managing your coins is made easy via the companion BitBoxApp."
     walletpassport: "Passport is a secure, easy-to-use, air-gapped, Bitcoin-only hardware wallet designed to help you reclaim your sovereignty. Passport is fully open source and manufactured in the US. It includes a color IPS display, a rechargeable battery, and an advanced secure element chip to secure your private seed."
     walletjade: "Blockstream Jade is a versatile, open-source hardware wallet designed for your entire self-custody journey. Jade offers a dedicated companion app on mobile and desktop for a seamless, step-by-step onboarding experience - while advanced users can utilize Jade's built-in camera to perform air-gapped transactions."
+    walletcypherockx1: "Cypherock X1 is an open source and audited hardware wallet, which implements ‘Shamir Secret Sharing’ to split crypto private keys into 5 shards cryptographically and houses them in 5 tamper proof components - 4 X1 cards and a vault device. Users just need 1 X1 card and a vault to make a transaction."
     walletgreen: "Blockstream Green is a simple to use, multi-platform and open-source bitcoin wallet designed to adapt to your needs as they evolve through your self-custody journey. Green offers singlesig, as well as 2FA protected multisig accounts, and it can be paired with your favorite hardware wallet."
     walletbither: "Bither is a simple and secure wallet on many platforms. With special designed cold/hot modes, user can easily get both safety and simplicity. Bither's XRANDOM uses different entropy sources to generate true random number for users. Also with HDM, users can have HD's advantages and multisig's security."
     walletwasabi: "Wasabi is an open-source, non-custodial, privacy focused Bitcoin wallet for Windows, Linux and Mac. It includes built-in Tor, CoinJoin and coin control features."
@@ -337,7 +344,7 @@ en:
     checkfailvalidationcentralized: "Centralized validation"
     checkfailvalidationcentralizedtxt: "This wallet relies on a centralized service by default. This means a third party must be trusted to not hide or simulate payments."
     checkgoodtransparencydeterministic: "Complete transparency"
-    checkgoodtransparencydeterministictxt: "This wallet is open-source and built deterministically. This means any developer in the world can audit the code and make sure the final software isn't hiding any secrets."
+    checkgoodtransparencydeterministictxt: "The source code for this wallet is public and the build process is deterministic. This means any developer in the world can audit the code and make sure the final software isn't hiding any secrets."
     checkpasstransparencyopensource: "Basic transparency"
     checkpasstransparencyopensourcetxt: "The developers of this wallet publish the source code for the client. This means any developer in the world can audit the code. However, you still need to trust developers of this wallet when installing or updating the final software because it was not built deterministically like <a href=\"#download#\">Bitcoin Core</a>."
     checkpasstransparencyopensourcehardware: "Basic transparency"
@@ -352,6 +359,8 @@ en:
     checkfailtransparencynewtxt: "This wallet has not been tested and publicly reviewed by a significant number of people. This means this app might be more at risk of hiding dangerous code or doing something you wouldn't agree to."
     checkgoodenvironmenthardware: "Very secure environment"
     checkgoodenvironmenthardwaretxt: "This wallet is loaded from a secure specialized environment provided by the device. This provides very strong protection against computer vulnerabilities and malware since no software can be installed on this environment."
+    checkpassenvironmentbyod: "User sourced environment"
+    checkpassenvironmentbyodtxt: "This wallet is loaded on a device sourced by the user. This can provide reasonable protection against malware as long as you source your hardware correctly and secure it sufficiently."
     checkpassenvironmentmobile: "Secure environment"
     checkpassenvironmentmobiletxt: "This wallet is loaded on mobiles where apps are usually isolated. This provides a good protection against malware, although mobiles are usually easier to steal or lose. Encrypting your mobile and backing up your wallet can reduce that risk."
     checkpassenvironmenttwofactor: "Two-factor authentication"
@@ -1159,6 +1168,7 @@ en:
     menu-scams: "Avoid Scams"
     menu-support-bitcoin: "Support Bitcoin"
     menu-buy: "Buy Bitcoin"
+    menu-sell: "Sell Bitcoin"
     menu-full-node: "Running a full node"
     menu-other: "Other"
     menu-vocabulary: Vocabulary
@@ -1192,6 +1202,7 @@ en:
     bitcoin-for-individuals: bitcoin-for-individuals
     bitcoin-for-businesses: bitcoin-for-businesses
     buy: buy
+    sell: sell
     choose-your-wallet: choose-your-wallet
     community: community
     developer-documentation: developer-documentation

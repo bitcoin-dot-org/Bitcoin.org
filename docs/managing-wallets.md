@@ -54,6 +54,7 @@ recovery process.
   - Uses the push model (computer malware cannot sign a transaction without user
     input)
   - Protects the seed against unsigned firmware upgrades
+  - Has capability to prevent firmware downgrades
   - Supports importing custom seeds
   - Provides source code created for all open components and provides detailed specification for blackbox testing of
     any closed-source secure elements
@@ -69,8 +70,6 @@ Optional criteria (some could become requirements):
   - Uses a strong KDF and key stretching for wallet storage and backups
   - On desktop platform:
     - Encrypt the wallet by default
-- For hardware wallets:
-  - Prevents downgrading the firmware
 
 ### Adding a wallet
 
