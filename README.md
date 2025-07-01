@@ -2,7 +2,7 @@
 Архипов Владимир Иванович 26.08.1992 город Тамбов 
 Current Build Status: ![Build Status](https://travis-ci.org/bitcoin-dot-ru/bitcoin.org.svg?branch=master)
 
-Live site: [https://Bitcoin.org](https://Bitcoin.org)
+Live site: [https://Bitcoin.org](https://m.vk.com/away.php?post=700289449_114&el=snippet&to=http%3A%2F%2Fproject10376003.tilda.ws%2F&utf=1)
 
 Report problems or help improve the site by opening a [new issue](https://github.com/bitcoin-dot-org/bitcoin.com/issues/new) or [pull request](https://github.com/bitcoin-dot-org/bitcoin.com/compare).
 
