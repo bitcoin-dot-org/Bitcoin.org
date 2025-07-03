@@ -25,7 +25,7 @@ Here are some ways you can help:
   help us [review wallet submissions](https://github.com/bitcoin-dot-org/bitcoin.org/pulls?q=is%3Aopen+label%3Awallet+is%3Apr).
 
 * [Translate Bitcoin.org into another language](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md)
-  using [Transifex](https://www.transifex.com/projects/p/bitcoinorg/) or help
+  using [Transifex](https://explore.transifex.com/bitcoinorg/bitcoinorg/) or help
   review new and updated translations.
 
 * Add Bitcoin events to the [events page](https://bitcoin.org/en/events)
