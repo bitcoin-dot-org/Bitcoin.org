@@ -13,7 +13,7 @@ platform:
     name: mobile
     os:
       - name: android
-        text: 'mewmobile'
+        text: 'walletmewmobile'
         link: 'https://play.google.com/store/apps/details?id=com.myetherwallet.mewwallet'
         source: 'https://github.com/MyEtherWallet/mew-wallet-android-kit'
         screenshot: 'mewmobile.png'
@@ -30,7 +30,7 @@ platform:
           privacydisclosure: 'checkfailprivacydisclosurespv'
           privacynetwork: 'checkfailprivacynetworknosupporttor'
       - name: ios
-        text: 'mewmobile'
+        text: 'walletmewmobile'
         link: 'https://apps.apple.com/us/app/mew-crypto-wallet-defi-web3/id1464614025'
         source: 'https://github.com/MyEtherWallet/mew-wallet-ios-kit'
         screenshot: 'mewmobile.png'
