@@ -5,30 +5,13 @@
 id: mewmobile
 title: 'MEW Mobile'
 titleshort: 'MEW Mobile'
-compat: 'mobile android ios'
+compat: 'mobile ios'
 user: beginner
 level: 2
 platform:
   - mobile:
     name: mobile
     os:
-      - name: android
-        text: 'walletmewmobile'
-        link: 'https://play.google.com/store/apps/details?id=com.myetherwallet.mewwallet'
-        source: 'https://github.com/MyEtherWallet/mew-wallet-android-kit'
-        screenshot: 'mewmobile.png'
-        features: 'bech32 legacy_addresses segwit'
-        check:
-          control: 'checkgoodcontrolfull'
-          validation: 'checkpassvalidationspvp2p'
-          transparency: 'checkpasstransparencyopensource'
-          environment: 'checkpassenvironmentmobile'
-          privacy: 'checkpassprivacybasic'
-          fees: 'checkgoodfeecontrolfull'
-        privacycheck:
-          privacyaddressreuse: 'checkpassprivacyaddressrotation'
-          privacydisclosure: 'checkfailprivacydisclosurespv'
-          privacynetwork: 'checkfailprivacynetworknosupporttor'
       - name: ios
         text: 'walletmewmobile'
         link: 'https://apps.apple.com/us/app/mew-crypto-wallet-defi-web3/id1464614025'
