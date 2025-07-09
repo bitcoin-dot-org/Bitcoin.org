@@ -265,8 +265,7 @@ en:
     wallet-selector-criteria: "Criteria"
     wallet-selector-features: "Features"
     wallet-selector-browse: "Browse wallets"
-    wallet-selector-browse-cta: "Use the wallet selector to find wallets that
-    match your search criteria."
+    wallet-selector-browse-cta: "Use the wallet selector to find wallets that match your search criteria."
     wallet-selector-results: "Below is a list of wallets available for your operating system"
     wallet-selector-results-wallets: "Wallets"
     wallet-selector-results-no-match: "No matching wallets found"
@@ -311,6 +310,7 @@ en:
     walletunstoppable: "Unstoppable is a non-custodial and intuitive mobile wallet for Bitcoin and other cryptocurrencies. This wallet packs some essential features to store, exchange and monitor cryptocurrency  performance while staying private."
     walletspecterdesktop: "Specter Desktop is a desktop wallet interface for Bitcoin Core with a focus on privacy, coin control, single and multisig setups. Specter is non-custodial and works with all major hardware wallets."
     walletsparrow: "Sparrow is a Bitcoin wallet with a focus on security, privacy and usability. Sparrow supports single and multisig script types, connects to an Electrum server or Bitcoin Core, interacts with popular hardware wallets, provides full coin and fee control, and contains a transaction editor and a blockchain explorer."
+    walletmewmobile: "MEW Mobile is a true, self-custodial Bitcoin and Ethereum wallet. This means that you and only you have access to your funds. As a trusted web3 wallet, MEW allows you to securely manage your assets, including serving as a reliable Tether wallet for USDT and other ERC-20 tokens."
     walletdownload: "Install"
     walletvisit: "Visit website"
     walletsourcecode: "Source code"
