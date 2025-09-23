@@ -618,11 +618,21 @@ function onScrollButton() {
   function showSidebar() {
     sidebar.classList.add("is-open");
     button.classList.add("hide");
+    // Force reflow to ensure the animation plays
+    sidebar.offsetHeight;
   }
 
   function hideSidebar() {
-    sidebar.classList.remove("is-open");
-    button.classList.remove("hide");
+    sidebar.classList.add("is-closing");
+    
+    setTimeout(function() {
+      button.classList.remove("hide");
+    }, 150); 
+    
+    setTimeout(function() {
+      sidebar.classList.remove("is-open");
+      sidebar.classList.remove("is-closing");
+    }, 300); // Matched with CSS transition duration
   }
 
   window.addEventListener("scroll", stickyButton);

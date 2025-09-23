@@ -625,6 +625,13 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     top: 0;
     transform: translateY(-100%);
 }
+.sell-widget{
+    width: 400px;
+    height: 650px;
+}
+.sell-widget iframe {
+   border: 0;
+}
 .buy-widget{
     width: 400px;
     height: 650px;
@@ -4698,66 +4705,83 @@ html[data-theme="dark"] .dark-theme-toggle::before {
     .glossary_term {
         margin: 0 auto 30px;
     }
-    .mob-sidebar-open {
-        display: block;
-        width: 100%;
-        height: 55px;
-        padding: 0 0 0 60px;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        margin-bottom: 25px;
-        text-align: left;
-        background: #F7931A url(../img/icons/ico_burger_light.svg?1528322191) 26px 22px no-repeat;;
-        font-size: 100%;
-        font-weight: 600;
-        color: #FFFFFF;
-        border-radius: 1px;
-        border: none;
-    }
-    .mob-sidebar-open.hide {
-        display: none;
-    }
-    .mob-sidebar-open.is-fixed {
-        position: fixed;
-        top: 0;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%);
-        z-index: 100;
-        outline: none;
-    }
-    .sidebar {
-        display: none;
-    }
-    .sidebar-inner {
-        max-height: 100vh;
-        overflow-y: auto;
-    }
-    .sidebar.is-open {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 265px;
-        height: 100%;
-        background: #1d2028;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        z-index: 100;
-    }
-    .mob-sidebar-close {
-        display: block;
-        position: absolute;
-        right: -55px;
-        width: 55px;
-        height: 55px;
-        background: #F7931A url(../img/icons/ico_angle_light.svg?1528322191) center no-repeat;
-        background-size: 18px;
-        -webkit-transform: rotate(90deg);
-                transform: rotate(90deg);
-        border-radius: 1px;
-        border: none;
-    }
+   .mob-sidebar-open {
+    display: block;
+    width: 100%;
+    height: 55px;
+    padding: 0 0 0 60px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 25px;
+    text-align: left;
+    background: #F7931A url(../img/icons/ico_burger_light.svg?1528322191) 26px 22px no-repeat;
+    font-size: 100%;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 1px;
+    border: none;  
+    -webkit-transition: opacity 0.25s ease-out;
+    transition: opacity 0.25s ease-out;
+    opacity: 1;
+}
+.mob-sidebar-open.hide {
+    opacity: 0;
+    pointer-events: none; 
+}
+.mob-sidebar-open.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 100;
+    outline: none;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 265px;
+    height: 100%;
+    background: #1d2028;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 100;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+        -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s;
+}
+.sidebar-inner {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+.sidebar.is-open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+.sidebar.is-closing {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+}
+.mob-sidebar-close {
+    display: block;
+    position: absolute;
+    right: -55px;
+    width: 55px;
+    height: 55px;
+    background: #F7931A url(../img/icons/ico_angle_light.svg?1528322191) center no-repeat;
+    background-size: 18px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    border-radius: 1px;
+    border: none;
+}
     .footer {
         padding-top: 70px;
     }
