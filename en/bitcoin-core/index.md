@@ -23,7 +23,7 @@ breadcrumbs:
 
 <div class="hero core-hero">
   <div class="container hero-container">
-    <h1>Bitcoin Core</h1>
+    <h1>Bitcoin Node Software</h1>
     <p class="summary">Helping you keep Bitcoin decentralized.</p>
   </div>
 </div>
@@ -33,11 +33,12 @@ breadcrumbs:
 
 <div class="show_less_more core-column-right">
   <div class="show_less" markdown="block">
-  Bitcoin Core is programmed to decide which block chain contains
-  valid transactions. The users of Bitcoin Core only accept
-  transactions for that block chain, making it the Bitcoin block
-  chain that everyone else wants to use. For the latest developments related to
-  Bitcoin Core, be sure to visit the project's <a href="https://bitcoincore.org">official website</a>.
+  Bitcoin Core is the further development of the original 'Bitcoin App' created by Satoshi Nakamoto 
+  and still, October 2025, the de-facto Bitcoin node software. It still includes wallet and mining functionality, but over time 
+  many other wallet software was created and the Bitcoin Core wallet is probably not used very much anymore, at least not by retail users. 
+  The node part is programmed to decide which block chain contains
+  valid transactions. Bitcoin node software only accepts
+  transactions for the Bitcoin blockchain, making that blockchain the Bitcoin blockchain that everyone wants to use.
   </div>
 
   <div class="show_more" markdown="block">
@@ -46,9 +47,8 @@ breadcrumbs:
       <img class="show_more-icon" src="/img/bitcoin-core/decentralized.svg?{{site.time | date: '%s'}}" alt="icon">
       <p class="show_more-title">Decentralized</p>
       <p>
-      It is these users who keep Bitcoin decentralized. They
-      individually run their own Bitcoin Core full nodes, and each of
-      those full nodes separately follows the exact same rules to decide
+      It is people running node software that keep Bitcoin decentralized. They
+      individually run their own Bitcoin nodes, and each of those full nodes separately is supposed to follow the exact same rules to decide
       which block chain is valid.
       </p>
     </div>
@@ -65,7 +65,7 @@ breadcrumbs:
   </div>
 
   <p>
-  This shared agreement (called consensus) allows people like you to only accept valid bitcoins, enforcing Bitcoin's rules against even the most powerful miners.In addition to improving Bitcoin's decentralization, Bitcoin Core users get:
+  This shared agreement (called consensus) allows people like you to only accept valid bitcoins, enforcing Bitcoin's rules against even the most powerful miners.In addition to improving Bitcoin's decentralization, Bitcoin node users get:
   </p>
   
   <div class="show_more-list" markdown="block">
