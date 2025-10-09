@@ -269,6 +269,9 @@ http://opensource.org/licenses/MIT.
 [bcc validation do you validate]: /en/bitcoin-core/features/validation#do-you-validate
 [bcc validation protection]: /en/bitcoin-core/features/validation#how-validation-protects-your-bitcoins
 [bcc version history]: /en/version-history
+[bck contribute]: https://github.com/bitcoinknots/bitcoin/blob/29.x-knots/CONTRIBUTING.md
+[bck contribute issues]: https://github.com/bitcoinknots/bitcoin/issues
+[bck help]: /en/bitcoin-knots/help
 
 [Bitcoin Core 0.6.0]: /en/release/v0.6.0
 [Bitcoin Core 0.6.1]: /en/release/v0.6.1
@@ -464,6 +467,7 @@ http://opensource.org/licenses/MIT.
 [native irc client]: https://en.wikipedia.org/wiki/List_of_IRC_clients
 [netcat]: https://en.wikipedia.org/wiki/Netcat
 [nop opcodes]: https://en.bitcoin.it/wiki/Script#Reserved_words
+[#OCEAN]: https://webchat.freenode.net/?channels=OCEAN&uio=d4
 [offline transactions]: http://bitcoin.stackexchange.com/a/34122/21052
 [open a pull request]: https://github.com/bitcoin-dot-org/bitcoin.org#working-with-github
 [open an issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
