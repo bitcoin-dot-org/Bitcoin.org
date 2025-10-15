@@ -1,0 +1,51 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+---
+<!DOCTYPE HTML>
+<html lang="{{ page.lang }}">
+
+{% comment %}
+<!-- on non-translated pages (e.g. Download page), use conditionals to
+use the base template -->
+{% endcomment %}
+
+<head>
+{% include layout/base-knots/html-head-jquery-css.html %}
+{% include layout/base/html-head.html %}
+</head>
+
+<body>
+{% include layout/base/pagetop-donation.html %}
+{% include layout/base/pagetop-detect-mobile.html %}
+{% include layout/base/pagetop-alert.html %}
+{% include layout/base-knots/pagetop-moved-notice.html %}
+
+<div class="head"><div>
+  {% include layout/base/head-mobile-menu.html %}
+  {% if page.lang == 'en' %}
+    {% include layout/base-knots/head-logo.html %}
+    {% include layout/base-knots/head-menu.html %}
+  {% else %}
+    {% include layout/base/head-logo.html %}
+    {% include layout/base/head-menu.html %}
+  {% endif %}
+    {% include layout/base/head-language-dropdown.html %}
+    {% include layout/base/head-language-select.html %}
+</div></div>
+
+<div class="body">
+  {% include layout/base-knots/content.html %}
+  <div class="footer">
+    <div class="container">
+      {% include layout/base/footer-logo.html %}
+      {% include layout/base/footer-menu.html %}
+    </div>
+    {% include layout/base-knots/footer-license.html %}
+  </div>
+</div>
+
+{% include layout/base/footer-js.html %}
+</body>
+
+</html>
