@@ -43,4 +43,5 @@ platform:
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized" # the default reveals addresses to Bull electrum server, but it could be used with custom electrum servers
+          privacynetwork: "checkfailprivacynetworknosupporttor" # soon
 ---
