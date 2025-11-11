@@ -18,10 +18,10 @@ platform:
       features: "bech32 hardware_wallet multisig segwit"
       check: &DEFAULT-CHECK
         control: "checkgoodcontrolfull"
-        validation: "checkpassvalidationservers"
+        validation: "checkfailvalidationcentralized"
         transparency: "checkpasstransparencyopensource"
         environment: "checkfailenvironmentdesktop"
-        privacy: "checkgoodprivacyimproved"
+        privacy: "checkpassprivacybasic"
         fees: "checkgoodfeecontrolfull"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
