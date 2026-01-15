@@ -8,7 +8,7 @@ http://opensource.org/licenses/MIT.
   addAnchorLinks();
   trackOutgoingLinks();
   toggleDarkMode();
-  handlePageRedirect({% if page.id == 'buy' %} true {% else %} false {% endif %})
+  handlePageRedirect({% if page.id == 'buy' %} true {% else %} false {% endif %}, {% if page.id == 'sell' %} true {% else %} false {% endif %});
 </script>
 
 {% comment %}

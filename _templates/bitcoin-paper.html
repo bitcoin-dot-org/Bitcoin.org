@@ -5,12 +5,17 @@
 layout: base
 id: bitcoin-paper
 ---
-<div class="hero">
+<div class="hero" style="padding-bottom: 10px">
   <div class="container hero-container">
     <h1>{% translate pagetitle %}</h1>
     <p class="summary">{% translate summary %}</p>
   </div>
-</div>
+  <div class="herecomesbitcoin-astronaut-container">
+    <div class="herecomesbitcoin-astronaut">
+      {% include animations/herecomesbitcoin/astronaut.html %}
+    </div>
+  </div>
+  </div>
 
 <div class="bitcoin-paper">
   <div class="container">
@@ -28,6 +33,15 @@ id: bitcoin-paper
           <b>
             <a class="language-link" href="/bitcoin.pdf">English (Original)</a>
           </b>
+        </li>
+
+        <li class="card bitcoin-paper-card">
+         <a class="language-link"
+           href="/files/bitcoin-paper/bitcoin_so.pdf">Af Soomaali</a>
+         <div>
+           <span>{% translate translated_by %}</span>
+           <a href="https://cryptoYahan.com">CryptoYahan</a>, <a href="/files/bitcoin-paper/bitcoin_so_explanation.pdf">supplemental explanatory document</a>
+         </div>
         </li>
         
         <li class="card bitcoin-paper-card">
