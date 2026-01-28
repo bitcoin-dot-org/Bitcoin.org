@@ -601,7 +601,7 @@ en:
     consensus: "The Impossibility of Instant Consensus"
     consensustext1: "A fundamental property of decentralized systems is that instant global consensus is impossible. Information takes time to propagate, and different nodes may have different views of the current state at any given moment."
     consensustext2: "Bitcoin's solution is to use proof-of-work mining to establish consensus over time. Each block represents agreement on the ordering of transactions, but this agreement only emerges after the fact - not instantly."
-    consensustext3: "This is why confirmations matter: they represent increasing confidence that the network has reached consensus about a transaction's validity and ordering. Zero confirmations means no consensus has been reached."
+    consensustext3: "This is why confirmations matter: they represent increasing confidence that the network has reached consensus about a transaction's validity and ordering. Having zero confirmations means no consensus has been reached."
     bestpractices: "Best Practices"
     bestpracticestext: "When dealing with unconfirmed transactions:"
     bestpractice1: "For high-value transactions, always wait for at least one confirmation (6+ confirmations for very high values)"
