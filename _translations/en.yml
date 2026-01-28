@@ -570,7 +570,7 @@ en:
     content: "Content Creation"
     contenttext: "Create content and get paid in Bitcoin for your work."
     fountaindesc: "Earn Bitcoin for listening to podcasts and creating clips"
-    publish0xdesc: "Earn cryptocurrency for writing and reading articles"
+    publish0xdesc: "Earn Bitcoin for writing and reading articles"
     bounties: "Bug Bounties & Open Source"
     bountiestext: "Contribute to open source projects and earn Bitcoin for fixing bugs or adding features."
     lightningbountiesdesc: "Earn sats for fixing GitHub issues via Lightning Network"
@@ -1200,6 +1200,7 @@ en:
     menu-support-bitcoin: "Support Bitcoin"
     menu-buy: "Buy Bitcoin"
     menu-sell: "Sell Bitcoin"
+    menu-earn: "Earn Bitcoin"
     menu-full-node: "Running a full node"
     menu-other: "Other"
     menu-vocabulary: Vocabulary
