@@ -1059,6 +1059,33 @@ en:
     business-map-text: "There are also many local businesses, like cafes and restaurants, that accept Bitcoin. You can use <a href=\"https://btcmap.org/\">btcmap.org</a> to browse thousands of businesses across the globe."
     business-search: "Global local and online business search"
     business-search-text: "<a href=\"https://bitcoinwide.com/\">BitcoinWide.com</a> is a global, open and free platform to search businesses, organizations or individuals who accept Bitcoin and other Cryptocurrency."
+  submit-your-business:
+    title: "Submit Your Business - Bitcoin"
+    pagetitle: "Submit Your Business"
+    pagedesc: "List your business in Bitcoin directories to reach customers who want to spend Bitcoin."
+    introtext: "Getting your business listed in Bitcoin directories is free and helps customers find you. Below are the most popular directories where you can submit your business."
+    coinmap: "Coinmap"
+    coinmaptext: "Coinmap is one of the oldest and most popular Bitcoin maps. It displays businesses on an interactive world map, making it easy for travelers to find places that accept Bitcoin nearby."
+    coinmapbut: "Add to Coinmap"
+    btcmap: "BTC Map"
+    btcmaptext: "BTC Map is an open-source Bitcoin business map built on OpenStreetMap data. Listings are community-verified and updated regularly."
+    btcmapbut: "Add to BTC Map"
+    bitcoinwide: "BitcoinWide"
+    bitcoinwidetext: "BitcoinWide is a global directory for businesses accepting Bitcoin and other cryptocurrencies. It supports both physical locations and online businesses."
+    bitcoinwidebut: "Add to BitcoinWide"
+    acceptedhere: "AcceptedHere"
+    acceptedheretext: "AcceptedHere is a directory focused on helping consumers find businesses that accept cryptocurrency payments worldwide."
+    acceptedherebut: "Submit Listing"
+    tipstitle: "Tips for a Great Listing"
+    tip1: "Include accurate business hours and contact information"
+    tip2: "Specify which Bitcoin payment methods you accept (on-chain, Lightning Network, etc.)"
+    tip3: "Add photos of your storefront or products to help customers identify your business"
+    tip4: "Keep your listing updated - remove it if you stop accepting Bitcoin"
+    benefitstitle: "Benefits of Accepting Bitcoin"
+    benefitstext: "Accepting Bitcoin can help your business in several ways:"
+    benefit1: "Reach new customers who prefer paying with Bitcoin"
+    benefit2: "Lower transaction fees compared to credit cards"
+    benefit3: "No chargebacks - Bitcoin payments are irreversible once confirmed"
   support-bitcoin:
     title: "Support Bitcoin - Bitcoin"
     pagetitle: "Support Bitcoin"
@@ -1239,6 +1266,7 @@ en:
     bitcoin-paper: bitcoin-paper
     whitepaper-mirrors: whitepaper-mirrors
     spend-bitcoin: spend-bitcoin
+    submit-your-business: submit-your-business
   anchor:
     community:
       non-profit: non-profit
