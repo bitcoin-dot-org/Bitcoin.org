@@ -18,15 +18,16 @@ platform:
         screenshot: "bull.png"
         features: "bech32 hardware_wallet legacy_addresses lightning segwit"
         check:
-            control: "checkgoodcontrolfull"
-            validation: "checkpassvalidationservers" # default Bull Bitcoin electrum server but support custom servers
-            transparency: "checkpasstransparencyopensource"
-            environment: "checkpassenvironmentmobile"
-            privacy: "checkgoodprivacyimproved" # Payjoin v2 
-            fees: "checkgoodfeecontrolfull" # rbf
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationservers" # default Bull Bitcoin electrum server but support custom servers
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkgoodprivacyimproved" # Payjoin v2 
+          fees: "checkgoodfeecontrolfull" # rbf
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized" # the default reveals addresses to Bull electrum server, but it could be used with custom electrum servers
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
       - name: ios
         text: "walletbull"
         link: "https://apps.apple.com/us/app/bull-bitcoin/id6743380972"
@@ -34,14 +35,14 @@ platform:
         screenshot: "bull.png"
         features: "bech32 hardware_wallet legacy_addresses lightning segwit"
         check:
-            control: "checkgoodcontrolfull"
-            validation: "checkpassvalidationservers" # default Bull Bitcoin electrum server but support custom servers
-            transparency: "checkpasstransparencyopensource"
-            environment: "checkpassenvironmentmobile"
-            privacy: "checkgoodprivacyimproved" # Payjoin v2 
-            fees: "checkgoodfeecontrolfull" # rbf
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationservers" # default Bull Bitcoin electrum server but support custom servers
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkgoodprivacyimproved" # Payjoin v2 
+          fees: "checkgoodfeecontrolfull" # rbf
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized" # the default reveals addresses to Bull electrum server, but it could be used with custom electrum servers
-          privacynetwork: "checkfailprivacynetworknosupporttor" # soon
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 ---
