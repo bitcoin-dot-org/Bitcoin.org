@@ -287,6 +287,7 @@ de:
     walletbitbox: "Die BitBox02 ist eine in der Schweiz entwickelte und gefertigte Hardware-Wallet. Sie ist mit einem OLED-Display und unsichtbaren Touch-Sensoren ausgestattet, unterstützt USB-C und USB-A sowie Offline-Backups auf microSD-Karte und BIP39-Mnemonic. Die Einrichtung einer BitBox02-Wallet und die Verwaltung ihrer Coins ist dank der zugehörigen BitBoxApp recht einfach."
     walletbither: "Bither ist eine einfache und sichere Wallet für verschiedene Plattformen. Dank speziell entworfener Cold/Hot-Modi ist sie für Nutzer sowohl sicher, als auch einfach. Bithers XRANDOM verwendet verschiedene Entropie-Quellen, um echte Zufallszahlen für die Nutzer zu generieren. Mittels HDM können Anwender die Vorteile von HD und die Sicherheit von Multisigs nutzen."
     walletwasabi: "Wasabi ist eine Open-Source-Bitcoin-Wallet für Windows, Linux und Mac. Sie fokusiert sich auf Freiheitsrechte und Privatsphäre und hat Kontrollfunktionen für Tor, CoinJoin und Coins integriert."
+    walletginger: "GingerWallet ist eine Open-Source, nicht-verwahrte Bitcoin-Wallet für den Desktop. Zu den Funktionen gehören CoinJoin mit dem Standardkoordinator, 2FA mit Wallet-Verschlüsselung, mehrsprachige Unterstützung, Blockfilter, Tor-Integration und QR-Code-Funktionalität. Kompatibel mit verschiedenen Hardware-Wallets für eine sichere Nutzung."
     walletdownload: "Installieren"
     walletvisit: "Website besuchen"
     walletsourcecode: "Quellcode"

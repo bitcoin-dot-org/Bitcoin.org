@@ -113,6 +113,7 @@ pl:
     wallettrezorone: "TREZOR to portfel sprzętowy, który zapewnia wysoki poziom bezpieczeństwa bez kompromisów w zakresie wygody. W przeciwieństwie do portfeli offline, TREZOR jest w stanie podpisywać transakcje będąc podłączonym do urządzenia online. Oznacza to, że wydawanie bitcoinów  jest bezpieczne nawet podczas korzystania z zagrożonego komputera."
     walletnano: "Ledger Nano jest portelem sprzętowym zbudowanym na platformie bankowej kart elektronicznych ST23YT66. Bezpiecznie przechowuje on prywatne klucze użytkownika, waliduje transakcje, może być użyty jako bezpieczna karta prepaid lub strona multipodpisu. Choć nie ma otwartego źródła, może być walidowany deterministycznie."
     walletwasabi: "Wasabi jest bitcoinowym portfelem skoncentrowanym na prywatności."
+    walletginger: "GingerWallet to open-source, niepowierniczy portfel Bitcoin na komputer. Funkcje obejmują CoinJoin z domyślnym koordynatorem, uwierzytelnianie dwuskładnikowe (2FA) z szyfrowaniem portfela, obsługę wielu języków, filtry bloków, integrację z Tor i funkcjonalność kodów QR. Kompatybilny z różnymi portfelami sprzętowymi dla bezpiecznego użytkowania."
     walletdownload: "Instaluj"
     walletvisit: "Odwiedź witrynę"
     walletsourcecode: "Kod źródłowy"

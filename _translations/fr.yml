@@ -113,6 +113,7 @@ fr:
     wallettrezorone: "TREZOR est un portefeuille matériel qui fournit un haut niveau de sécurité sans sacrifier la commodité. Contrairement au stockage à froid, TREZOR peut signer des transactions tout en étant connecté sur un appareil en ligne. Cela signifie que dépenser des bitcoins est sans risque même lorsque vous utilisez un ordinateur compromis."
     walletnano: "Ledger Nano est un portefeuille matériel conçu avec avec une carte à puce bancaire ST23YT66. Il conserve les clé privées en sécurité, valide les transactions et peut être utilisé en tant que carte prépayée ou comme tiers multi-signature. Bien que n'étant pas \"open-source\", il peut être validé de manière pré-déterminée."
     walletwasabi: "Wasabi est un portefeuille Bitcoin protégeant votre vie privée."
+    walletginger: "GingerWallet est un portefeuille Bitcoin open-source et non-custodial pour desktop. Ses fonctionnalités incluent CoinJoin avec le coordinateur par défaut, 2FA avec chiffrement du portefeuille, prise en charge multilingue, filtres de blocs, intégration Tor et fonctionnalité QR code. Compatible avec divers portefeuilles matériels pour une utilisation sécurisée."
     walletdownload: "Installer"
     walletvisit: "Visiter le site Web"
     walletsourcecode: "Code source"
