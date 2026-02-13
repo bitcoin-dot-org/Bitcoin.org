@@ -1445,6 +1445,8 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 95px 0 50px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .toc {
     min-width: 370px;
@@ -1538,7 +1540,7 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     width: 100%;
     min-width: 290px;
     word-wrap: break-word;
-    padding: 18px;
+    padding: 18px 0;
 }
 .toccontent-block {
     border-top: 1px solid #dfdfdf;
