@@ -408,7 +408,7 @@ http://opensource.org/licenses/MIT.
 [Bitcoin Core issue #2381]: https://github.com/bitcoin/bitcoin/issues/2381
 [Bitcoin Core master]: https://github.com/bitcoin/bitcoin
 [Bitcoin Core pull #4468]: https://github.com/bitcoin/bitcoin/pull/4468
-[Bitcoin core transifex]: https://www.transifex.com/projects/p/bitcoin/
+[Bitcoin core transifex]: https://explore.transifex.com/bitcoin/bitcoin/
 [Bitcoin reddit]: http://www.reddit.com/r/Bitcoin
 [Bitcoin reddit new]: http://www.reddit.com/r/Bitcoin/new
 [Bitcoin Seeder]: https://github.com/sipa/bitcoin-seeder
@@ -481,7 +481,7 @@ http://opensource.org/licenses/MIT.
 [Stratum mining protocol]: http://mining.bitcoin.cz/stratum-mining
 [study of SPV privacy over tor]: http://arxiv.org/abs/1410.6079
 [Tor]: https://en.wikipedia.org/wiki/Tor_%28anonymity_network%29
-[transifex]: https://www.transifex.com/projects/p/bitcoinorg/
+[transifex]: https://explore.transifex.com/bitcoinorg/bitcoinorg/
 [unix epoch time]: https://en.wikipedia.org/wiki/Unix_time
 [URI encoded]: https://tools.ietf.org/html/rfc3986
 [wiki bitcoin core compatible devices arm]: https://en.bitcoin.it/wiki/Bitcoin_Core_compatible_devices#ARM-based_Chipsets
