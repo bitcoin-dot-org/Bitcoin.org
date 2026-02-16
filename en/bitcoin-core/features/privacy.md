@@ -231,7 +231,7 @@ maximum of five content rows in each category. -->
 
 ## Perfect Privacy for Received Transactions
 
-There are {{site.text.total_tx_count_in_millions}} million transactions on the Bitcoin block
+There are {{site.text.total_tx_count_in_billions}} billion transactions on the Bitcoin block
 chain. How do you find which ones pay you?  Here are some common
 options:
 
@@ -251,13 +251,13 @@ options:
       (Actually, some do care about privacy)<br><br>
       <button class="popup js" data-container="electrum_style_receiving">Client lightweight wallets</button></td>
 
-    <td class="center" markdown="span">**Get all {{site.text.total_tx_count_in_millions}} million transactions**{:.fggreen}<br>
+    <td class="center" markdown="span">**Get all {{site.text.total_tx_count_in_billions}} billion transactions**{:.fggreen}<br>
       For **perfect** receiving privacy<br><br>
       **Bitcoin Core**</td>
   </tr>
 </table>
 
-Bitcoin Core downloads all {{site.text.total_tx_count_in_millions}} million transactions on the Bitcoin block
+Bitcoin Core downloads all {{site.text.total_tx_count_in_billions}} billion transactions on the Bitcoin block
 chain and processes them to find which transactions pay you.
 
 This currently takes about {{site.text.typical_ibd_time_in_hours}} hours the first time
