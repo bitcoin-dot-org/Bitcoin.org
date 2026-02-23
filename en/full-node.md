@@ -1284,6 +1284,218 @@ instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin
 
 <div class="toccontent-block boxexpand expanded" markdown="1">
 
+## Running as a Tor Hidden Service
+
+Running your Bitcoin full node as a Tor hidden service provides enhanced privacy by hiding your node's IP address from the network. This also allows users behind restrictive firewalls or NAT to run accessible full nodes without port forwarding.
+
+### Why Run a Tor Hidden Service?
+
+- **Privacy**: Your home IP address is not exposed to the Bitcoin network
+- **Censorship resistance**: Tor makes it harder for ISPs or governments to block your node
+- **No port forwarding required**: Hidden services work behind NAT without router configuration
+- **Support network diversity**: Tor nodes help users who can only connect via Tor
+
+### Installing Tor
+
+<div class="box" markdown="1">
+*Linux Instructions*
+
+Install Tor from your distribution's package manager:
+
+{% highlight bash %}
+## Debian/Ubuntu
+sudo apt update
+sudo apt install tor
+
+## Fedora
+sudo dnf install tor
+
+## Arch Linux
+sudo pacman -S tor
+{% endhighlight %}
+
+Enable and start the Tor service:
+
+{% highlight bash %}
+sudo systemctl enable tor
+sudo systemctl start tor
+{% endhighlight %}
+
+</div>
+
+<div class="box" markdown="1">
+*Windows Instructions*
+
+1. Download the Tor Expert Bundle from the [Tor Project website](https://www.torproject.org/download/tor/)
+2. Extract it to a permanent location (e.g., `C:\Tor`)
+3. Open a Command Prompt as Administrator
+4. Navigate to the Tor directory and run: `tor.exe --service install`
+
+Alternatively, if you have the Tor Browser installed, you can configure it to run in the background.
+
+</div>
+
+<div class="box" markdown="1">
+*macOS Instructions*
+
+Install Tor using Homebrew:
+
+{% highlight bash %}
+brew install tor
+{% endhighlight %}
+
+Start Tor as a service:
+
+{% highlight bash %}
+brew services start tor
+{% endhighlight %}
+
+</div>
+
+### Configuring the Tor Hidden Service
+
+You need to edit the Tor configuration file (`torrc`) to create a hidden service for your Bitcoin node.
+
+<div class="box" markdown="1">
+*Linux*
+
+The torrc file is typically located at `/etc/tor/torrc`. Edit it with root privileges:
+
+{% highlight bash %}
+sudo nano /etc/tor/torrc
+{% endhighlight %}
+
+</div>
+
+<div class="box" markdown="1">
+*Windows*
+
+The torrc file is in your Tor installation directory. Edit it with a text editor running as Administrator.
+
+</div>
+
+<div class="box" markdown="1">
+*macOS*
+
+The torrc file is at `/opt/homebrew/etc/tor/torrc` (Apple Silicon) or `/usr/local/etc/tor/torrc` (Intel).
+
+{% highlight bash %}
+nano /opt/homebrew/etc/tor/torrc
+{% endhighlight %}
+
+</div>
+
+Add the following lines to create a hidden service for Bitcoin:
+
+    HiddenServiceDir /var/lib/tor/bitcoin-service/
+    HiddenServicePort 8333 127.0.0.1:8333
+
+On Windows, use a path like `C:\Tor\bitcoin-service\` instead.
+
+After editing, restart Tor:
+
+{% highlight bash %}
+## Linux
+sudo systemctl restart tor
+
+## macOS
+brew services restart tor
+{% endhighlight %}
+
+Tor will automatically create your hidden service directory and generate your `.onion` address. Find your address with:
+
+{% highlight bash %}
+## Linux
+sudo cat /var/lib/tor/bitcoin-service/hostname
+
+## macOS
+cat /var/lib/tor/bitcoin-service/hostname
+{% endhighlight %}
+
+Your address will look like: `abc123...xyz.onion`
+
+### Configuring Bitcoin Core for Tor
+
+Add the following lines to your Bitcoin Core configuration file (`bitcoin.conf`):
+
+    ## Enable listening for incoming connections
+    listen=1
+
+    ## Connect through the Tor SOCKS proxy
+    proxy=127.0.0.1:9050
+
+    ## Bind to localhost for the hidden service
+    bind=127.0.0.1
+
+    ## Tell Bitcoin Core about your onion address (replace with your actual .onion address)
+    externalip=youronionaddress.onion
+
+    ## Only connect to .onion addresses (optional, for maximum privacy)
+    #onlynet=onion
+
+If you want your node to connect to both regular IPv4/IPv6 nodes AND Tor nodes, use this configuration instead:
+
+    listen=1
+    bind=127.0.0.1
+    proxy=127.0.0.1:9050
+    externalip=youronionaddress.onion
+
+    ## Explicitly allow connections to IPv4 and onion networks
+    onlynet=ipv4
+    onlynet=onion
+
+### Verifying Your Hidden Service
+
+After restarting Bitcoin Core, verify your Tor hidden service is working:
+
+{% highlight bash %}
+bitcoin-cli getnetworkinfo
+{% endhighlight %}
+
+Look for the `localaddresses` section in the output. You should see your `.onion` address listed:
+
+    "localaddresses": [
+      {
+        "address": "youronionaddress.onion",
+        "port": 8333,
+        "score": 4
+      }
+    ]
+
+You can also check that Tor connections are working by looking at your peer connections:
+
+{% highlight bash %}
+bitcoin-cli getpeerinfo | grep "\.onion"
+{% endhighlight %}
+
+If you see other `.onion` addresses in your peer list, your node is successfully connecting through Tor.
+
+### Troubleshooting
+
+**Tor service not running**: Ensure Tor is started and check its status:
+{% highlight bash %}
+sudo systemctl status tor
+{% endhighlight %}
+
+**Hidden service directory permissions**: Tor requires specific permissions on the hidden service directory. If you see permission errors, the directory should be owned by the Tor user (usually `debian-tor` on Debian/Ubuntu or `tor` on other systems):
+{% highlight bash %}
+sudo chown -R debian-tor:debian-tor /var/lib/tor/bitcoin-service/
+sudo chmod 700 /var/lib/tor/bitcoin-service/
+{% endhighlight %}
+
+**Bitcoin Core can't connect through proxy**: Verify Tor is listening on port 9050:
+{% highlight bash %}
+ss -tlnp | grep 9050
+{% endhighlight %}
+
+**No incoming Tor connections**: Hidden services can take up to 30 minutes to be fully published. Be patient and check again later.
+
+For additional help, please consult the [Bitcoin Core documentation](https://github.com/bitcoin/bitcoin/blob/master/doc/tor.md) or ask in the [Bitcoin community](/en/community).
+
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
+
 ## Configuration Tuning
 
 This section contains advice about how to change your Bitcoin Core
