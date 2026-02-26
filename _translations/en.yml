@@ -559,6 +559,37 @@ en:
     ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">IRC Channel #bitcoin-core-dev</a> on freenode."
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
+  earn:
+    title: "Earn Bitcoin - Bitcoin"
+    pagetitle: "Earn Bitcoin"
+    pagedesc: "Not everyone can buy Bitcoin. Discover ways to earn it through work, content creation, and contributions."
+    freelancing: "Freelancing & Microtasks"
+    freelancingtext: "Complete tasks and freelance work paid in Bitcoin via the Lightning Network."
+    microlancerdesc: "Complete small tasks for instant Bitcoin payments via Lightning"
+    stackernewsdesc: "Earn sats by posting valuable content and comments"
+    jobs4bitcoinsdesc: "Reddit community for finding freelance work paid in Bitcoin"
+    content: "Content Creation"
+    contenttext: "Create content and get paid in Bitcoin for your work."
+    fountaindesc: "Earn Bitcoin for listening to podcasts and creating clips"
+    publish0xdesc: "Earn Bitcoin for writing and reading articles"
+    bounties: "Bug Bounties & Open Source"
+    bountiestext: "Contribute to open source projects and earn Bitcoin for fixing bugs or adding features."
+    lightningbountiesdesc: "Earn sats for fixing GitHub issues via Lightning Network"
+    bitcoinbountiesdesc: "Directory of active Bitcoin bounties across projects"
+    bitcoinorgdesc: "Earn Bitcoin for contributing to this website"
+    mining: "Mining"
+    miningtext: "Earn Bitcoin by providing computational power to secure the network."
+    oceandesc: "Decentralized Bitcoin mining pool"
+    nicehashdesc: "Marketplace for buying and selling hashpower"
+    rewards: "Shopping Rewards"
+    rewardstext: "Earn Bitcoin back when you shop at participating retailers."
+    folddesc: "Earn Bitcoin rewards when shopping with the Fold card"
+    lollidesc: "Browser extension that gives Bitcoin back on online purchases"
+    important: "Important Warnings"
+    importanttext: "Be cautious when earning Bitcoin online:"
+    warning1: "Never pay money upfront to earn Bitcoin - legitimate opportunities don't require deposits"
+    warning2: "Research any platform thoroughly before providing personal information"
+    warning3: "Be skeptical of promises of high returns with little effort"
   download:
     title: "Download - Bitcoin"
     pagetitle: "Download Bitcoin Core"
@@ -1163,6 +1194,7 @@ en:
     menu-support-bitcoin: "Support Bitcoin"
     menu-buy: "Buy Bitcoin"
     menu-sell: "Sell Bitcoin"
+    menu-earn: "Earn Bitcoin"
     menu-full-node: "Running a full node"
     menu-other: "Other"
     menu-vocabulary: Vocabulary
@@ -1213,6 +1245,7 @@ en:
     transactions-guide: transactions-guide
     wallets-guide: wallets-guide
     development: development
+    earn: earn
     download: download
     exchanges: exchanges
     events: events
