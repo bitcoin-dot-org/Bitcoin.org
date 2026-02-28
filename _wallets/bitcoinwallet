@@ -1,18 +1,19 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
-
+=== application info ===
+Version: 8.16 (816)
 id: bitcoinwallet
 title: "Bitcoin Wallet"
 titleshort: "Bitcoin Wallet"
 compat: "mobile android"
-user: beginner
+user: thongngo
 level: 2
 platform:
-  - mobile:
+  - mobile: android
     name: mobile
     os:
-      - name: android
+      - name: 
         text: "walletbitcoinwallet"
         link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
         source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
