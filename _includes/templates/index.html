@@ -1,30 +1,5 @@
-{% comment %} This file is licensed under the MIT License (MIT) available on http://opensource.org/licenses/MIT. {% endcomment
-%}
+{% comment %} This file is licensed under the MIT License (MIT) available on http://opensource.org/licenses/MIT. {% endcomment %}
 
-<div id="legal-notice" style="margin-top: 20px;max-width: 770px;margin: 0 auto;color: black;border-bottom: 1px solid #ececec;display: none;"><p style="font-size: 1.2em;padding: 20px;">On 28 June 2021 the High Court of England and Wales made an order in
-Claim No. IL-2021-000008 between Dr Craig Wright and the person or
-persons responsible for the publication of this website whereby such person
-or persons were restrained from infringing Dr Wright’s copyright in the
-Bitcoin White Paper. The claim was not defended, and judgment was entered
-in default. A copy of the order is available at the following link: <a href="https://bitcoin.org/IL-2021-000008-Wright-v-Cobra.pdf">https://bitcoin.org/IL-2021-000008-Wright-v-Cobra.pdf</a>.</p></div>
-
-<script>
-  var request = new XMLHttpRequest();
-
-  request.open('GET', 'https://bitcoin.org/getip.txt');
-
-  request.onreadystatechange = function () {
-  if (this.readyState === 4) {
-    if(request.getResponseHeader('is_allowed') === "no") {
-    	document.getElementById("legal-notice").style.display = "block";
-     }
-   }
-    
-  };
-
-request.send();
-  
-</script>
 
 <div class="mainhero">
   <div class="container hero-container">
@@ -32,7 +7,7 @@ request.send();
     <div class="btn-container">
       <a class="btn btn-bright btn-home" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
       <a class="btn btn-light btn-home" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate choosebut getting-started %}</a>
-      <a class="btn btn-light btn-home" href="/{{ page.lang }}/{% translate buy url %}">{% translate menu-buy layout %}</a>
+      <a id="buybitcoinbutton" class="btn btn-light btn-home" href="/{{ page.lang }}/{% translate buy url %}">{% translate menu-buy layout %}</a>
     </div>
 
     <div class="mainvideo">
@@ -41,34 +16,44 @@ request.send();
 
   </div>
 </div>
-<div class="mainoverview">
-  <div class="container">
-    <div class="mainoverview-title">{% translate overview %}</div>
-    <a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}" class="maincard">
-      <img class="maincard-img" src="/img/icons/ico_individuals.svg?{{site.time | date: '%s'}}" alt="Icon">
-      <div>
-        <p class="maincard-title">{% translate menu-bitcoin-for-individuals layout %}</p>
-        <p class="maincard-link">{% translate learn-more layout %}</p>
-      </div>
-    </a>
-    <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}" class="maincard">
-      <img class="maincard-img" src="/img/icons/ico_business.svg?{{site.time | date: '%s'}}" alt="Icon">
-      <div>
-        <p class="maincard-title">{% translate menu-bitcoin-for-businesses layout %}</p>
-        <p class="maincard-link">{% translate learn-more layout %}</p>
-      </div>
-    </a>
-    <a href="https://developer.bitcoin.org/" class="maincard">
-      <img class="maincard-img" src="/img/icons/ico_developers.svg?{{site.time | date: '%s'}}" alt="Icon">
-      <div>
-        <p class="maincard-title">{% translate menu-bitcoin-for-developers layout %}</p>
-        <p class="maincard-link">{% translate learn-more layout %}</p>
-      </div>
+<div class="mainoverview-parent">
+  <div class="herecomesbitcoin-hungry">
+    {% include animations/herecomesbitcoin/hungry.html %}
+    <img class="herecomesbitcoin-hungry-right-hand" src="/img/animations/herecomesbitcoin/hungry_right_hand.svg?{{site.time | date: '%s'}}" alt="right-hand"/>
+    <img class="herecomesbitcoin-hungry-left-hand" src="/img/animations/herecomesbitcoin/hungry_left_hand.svg?{{site.time | date: '%s'}}" alt="left-hand"/>
+  </div>
+  <div class="mainoverview">
+    <div class="container">
+      <div class="mainoverview-title">{% translate overview %}</div>
+      <a href="/{{ page.lang }}/{% translate bitcoin-for-individuals url %}" class="maincard">
+        <img class="maincard-img" src="/img/icons/ico_individuals.svg?{{site.time | date: '%s'}}" alt="Icon">
+        <div>
+          <p class="maincard-title">{% translate menu-bitcoin-for-individuals layout %}</p>
+          <p class="maincard-link">{% translate learn-more layout %}</p>
+        </div>
+      </a>
+      <a href="/{{ page.lang }}/{% translate bitcoin-for-businesses url %}" class="maincard">
+          <img id="flower-heads-hoverable" class="maincard-img" src="/img/icons/ico_business.svg?{{site.time | date: '%s'}}" alt="Icon">
+          <div>
+            <p class="maincard-title">{% translate menu-bitcoin-for-businesses layout %}</p>
+            <p class="maincard-link">{% translate learn-more layout %}</p>
+          </div>
+          <div class="herecomesbitcoin-flower-heads">
+            {% include animations/herecomesbitcoin/flower_heads.html %}
+          </div>
+      </a>
+      <a href="https://developer.bitcoin.org/" class="maincard">
+        <img class="maincard-img" src="/img/icons/ico_developers.svg?{{site.time | date: '%s'}}" alt="Icon">
+        <div>
+          <p class="maincard-title">{% translate menu-bitcoin-for-developers layout %}</p>
+          <p class="maincard-link">{% translate learn-more layout %}</p>
+        </div>
+      </a>
+    </div>
+    <a class="btn-down" href="#maindesc-title">
+      <img src="/img/icons/ico_arrow_down.svg?{{site.time | date: '%s'}}" alt="Link">
     </a>
   </div>
-  <a class="btn-down" href="#maindesc-title">
-    <img src="/img/icons/ico_arrow_down.svg?{{site.time | date: '%s'}}" alt="Link">
-  </a>
 </div>
 <div class="maindesc">
   <div class="container">
@@ -97,8 +82,12 @@ request.send();
           
         </ul>
       </div>
-      <img class="maindesc-img" src="/img/home/bitcoin-img.svg?{{site.time | date: '%s'}}" alt="Bitcoin image">
-    </div>
+      <div class="herecomesbitcoin-fairy-container">
+        <div class="herecomesbitcoin-fairy">
+          {% include animations/herecomesbitcoin/fairy.html %}
+        </div>
+      </div>
+   </div>
     <div class="btn-container">
       <a class="btn btn-dark btn-home center" href="/{{ page.lang }}/{% translate getting-started url %}">{% translate getstarted layout %}</a>
     </div>

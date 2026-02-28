@@ -181,6 +181,7 @@ properties:
                     type: string
                     enum:
                       - checkgoodenvironmenthardware
+                      - checkpassenvironmentbyod
                       - checkpassenvironmentmobile
                       - checkpassenvironmenttwofactor
                       - checkfailenvironmentdesktop

@@ -1,5 +1,6 @@
 langsorder:
 - 'id'
+- 'ca'
 - 'da'
 - 'de'
 - 'en'
@@ -19,11 +20,13 @@ langsorder:
 - 'bg'
 - 'ru'
 - 'uk'
+- 'hy'
 - 'ar'
 - 'fa'
 - 'he'
 - 'hi'
 - 'ko'
+- 'km'
 - 'ja'
 - 'zh_CN'
 - 'zh_TW'
@@ -31,6 +34,7 @@ langsorder:
 langs:
   'ar': 'العربية'
   'bg': 'български'
+  'ca': 'Català'
   'da': 'Dansk'
   'de': 'Deutsch'
   'en': 'English'
@@ -40,8 +44,10 @@ langs:
   'fr': 'Français'
   'he': 'עברית'
   'hi': 'हिन्दी'
+  'hy': 'Հայերեն'
   'hu': 'Magyar'
   'id': 'Bahasa Indonesia'
+  'km': 'ខ្មែរ'
   'it': 'Italiano'
   'ja': '日本語'
   'ko': '한국어'
@@ -646,12 +652,12 @@ collections:
     output: false
 
 donation_banner:
-  address: 3E8ociqZa9mZUSwGdSmAEMAoAxBK3FNDcd
+  address: bc1qp6ejw8ptj9l9pkscmlf8fhhkrrjeawgpyjvtq8
   display: true
   amounts_in_usd:
-    - 5
-    - 25
     - 50
+    - 100
+    - 200
 
 defaults:
   - scope:

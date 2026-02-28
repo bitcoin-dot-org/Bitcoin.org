@@ -731,6 +731,87 @@ function changeAccordionButtonText(button, text) {
   button.textContent = text;
 }
 
+function showBuyWidget() {
+
+  var buyWidget = window.MoonPayWebSdk.init({
+    flow: 'buy',
+    environment: 'production',
+    containerNodeSelector: '.buy-widget',
+    variant: 'embedded',
+    params: {
+      apiKey: 'pk_live_QWvwDl3WJAq7S8fDjsOUMfjn09DSw8R',
+      theme: 'light',
+      colorCode: '#FF9500'
+    }
+  });
+
+  buyWidget.show();
+}
+
+function showSellWidget() {
+
+  var sellWidget = window.MoonPayWebSdk.init({
+    flow: 'sell',
+    environment: 'production',
+    containerNodeSelector: '.sell-widget',
+    variant: 'embedded',
+    params: {
+      apiKey: 'pk_live_QWvwDl3WJAq7S8fDjsOUMfjn09DSw8R',
+      theme: 'light',
+      colorCode: '#FF9500'
+    }
+  });
+
+  sellWidget.show();
+}
+
+function handlePageRedirect(isBuyPage, isSellPage) {
+    if (isBuyPage === undefined) {
+        isBuyPage = false;
+    }
+    if (isSellPage === undefined) {
+        isSellPage = false;
+    }
+
+    $.get('/cdn-cgi/trace')
+        .done(function(response) {
+            var data = {};
+            var lines = response.split('\n');
+            for (var i = 0; i < lines.length; i++) {
+                var line = lines[i];
+                var parts = line.split('=');
+                if (parts.length === 2) {
+                    var key = parts[0];
+                    var value = decodeURIComponent(parts[1] || '');
+                    data[key] = value;
+                }
+            }
+
+            if (isBuyPage) {
+                if (data.loc === 'GB') {
+                    window.location.href = '/';
+                } else {
+                    showBuyWidget();
+                }
+            } else if (isSellPage) {
+                if (data.loc === 'GB') {
+                    window.location.href = '/';
+                } else {
+                    showSellWidget();
+                }
+            } else {
+                if (data.loc === 'GB') {
+                    $('#buybitcoinbutton').hide();
+                    $('#buybitcoinmenulink').hide();
+                    $('#buybitcoinfootermenulink').hide();
+                    $('#getstartedbuybutton').hide();
+                    $('#sellbitcoinmenulink').hide();
+                    $('#sellbitcoinfootermenulink').hide();
+                }
+            }
+        });
+}
+
 function sortTableColumn(selectedOption) {
   var tableAccordion = document.getElementById('tableAccordion');
   var tableAccordionButton = document.getElementById('tableAccordionButton');
@@ -747,3 +828,17 @@ function sortTableColumn(selectedOption) {
     } else cell.classList.add('hidden');
   }
 }
+
+/* jshint ignore:start */
+window.addEventListener('wheel', (event) => {
+  let cat = document.querySelector('.herecomesbitcoin-cat');
+
+  const screenBottom = window.innerHeight;
+  const scrollBottom = window.scrollY + window.innerHeight;
+  if (scrollBottom + screenBottom >= document.body.offsetHeight && event.deltaY > 200) {
+    setTimeout(() => {
+      cat.classList.add('show');
+    }, 1000);
+  }
+})
+/* jshint ignore:end */
