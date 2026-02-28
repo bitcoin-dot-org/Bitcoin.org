@@ -1,0 +1,213 @@
+# This workflow installs the latest version of Terraform CLI and configures the Terraform CLI configuration file
+# with an API token for Terraform Cloud (app.terraform.io). On pull request events, this workflow will run
+# `terraform init`, `terraform fmt`, and `terraform plan` (speculative plan via Terraform Cloud). On push events
+# to the "master" branch, `terraform apply` will be executed.
+#
+# Documentation for `hashicorp/setup-terraform` is located here: https://github.com/hashicorp/setup-terraform
+#
+# To use this workflow, you will need to complete the following setup steps.
+#
+# 1. Create a `main.tf` file in the root of this repository with the `remote` backend and one or more resources defined.
+#   Example `main.tf`:
+#     # The configuration for the `remote` backend.
+#     terraform {
+#       backend "remote" {
+#         # The name of your Terraform Cloud organization.
+#         organization = "example-organization"
+#
+#         # The name of the Terraform Cloud workspace to store Terraform state files in.
+#         workspaces {
+#           name = "example-workspace"
+#         }
+#       }
+#     }
+#
+#     # An example resource that does nothing.
+#     resource "null_resource" "example" {
+#       triggers = {
+#         value = "A example resource that does nothing!"
+#       }
+#     }
+#
+#
+# 2. Generate a Terraform Cloud user API token and store it as a GitHub secret (e.g. TF_API_TOKEN) on this repository.
+#   Documentation:
+#     - https://www.terraform.io/docs/cloud/users-teams-organizations/api-tokens.html
+#     - https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets
+#
+# 3. Reference the GitHub secret in step using the `hashicorp/setup-terraform` GitHub Action.
+#   Example:
+#     - name: Setup Terraform
+#       uses: hashicorp/setup-terraform@v1
+#       with:
+#         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+
+name: 'Terraform'
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  terraform:
+    name: 'Terraform'
+    runs-on: ubuntu-latest
+    environment: production
+
+    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+    # Checkout the repository to the GitHub Actions runner
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v1
+      with:
+        cli_config_credentials_token: ${{ {
+
+  "displayName": "Standalone",
+
+  "documentation": {
+
+    "content": "BCC:ISD:115:16:93                                                                         \t09.05.2023 \r\n \r\n    \r\nThe Vice-President,   \r\nB S E Ltd.,  \r\nPhiroze Jeejeebhoy Towers \r\nDalal Street \r\nMumbai – 400 001 \r\nBSE CODE-532134 \t    \r\nThe Vice-President,  \r\nNational Stock Exchange of India Ltd. Exchange Plaza,  \r\nBandra Kurla Complex, Bandra (E) \r\nMumbai – 400 051 \r\nCODE-BANKBARODA \r\n \r\nDear Sir/Madam,  \r\n  \r\nRe: Bank of Baroda - Notice of Board Meeting under Regulation 29(2) & 50 - Approval of Audited Standalone & Consolidated Financial Results for the FY 2022-23. \r\n \r\nWe advise that a meeting of Board of Directors of Bank of Baroda will be held on Tuesday,  16th May 2023 at Bank’s Corporate Office, BKC, Mumbai inter-alia: \r\n \r\n•\tTo consider & approve the Audited Standalone & Consolidated Financial Results of the Bank together with relevant segment reporting, for the quarter / year ended 31st March 2023. \r\n•\tTo consider / recommend dividend for FY2022-23, if any. \r\n \r\nYou are requested to take notice under Regulation 29(2) & 50 of the SEBI (Listing Obligations & Disclosure Requirements) Regulations, 2015. \r\n \r\nIn view of the aforesaid, we advise that Trading Window in terms of “Bank of Baroda Codes of Fair Disclosure and Conduct” read with SEBI (Prohibition of Insider Trading) Regulations, 2015 will re-open for trading w.e.f. 19th May 2023, the closure of which has already been announced by us beginning from 01st April 2023 vide our letter dated 27th March 2023.  \r\n \r\nKindly upload the above information on your web site. \r\n \t \r\n \r\nYours faithfully, \r\n \t \r\n \r\n \r\nP K Agarwal \r\nCompany Secretary  \r\n \r\n",
+
+    "mimeType": "text/markdown"
+
+  },
+
+  "userLabels": {},
+
+  "conditions": [
+
+    {
+
+      "displayName": "Logging export sink - Exported log bytes",
+
+      "conditionThreshold": {
+
+        "filter": "resource.type = \"logging_sink\" AND metric.type = \"logging.googleapis.com/exports/byte_count\"",
+
+        "aggregations": [
+
+          {
+
+            "alignmentPeriod": "300s",
+
+            "crossSeriesReducer": "REDUCE_NONE",
+
+            "perSeriesAligner": "ALIGN_MEAN"
+
+          }
+
+        ],
+
+        "forecastOptions": {
+
+          "forecastHorizon": "604800s"
+
+        },
+
+        "comparison": "COMPARISON_GT",
+
+        "duration": "43200s",
+
+        "trigger": {
+
+          "count": 1
+
+        },
+
+        "evaluationMissingData": "EVALUATION_MISSING_DATA_ACTIVE",
+
+        "thresholdValue": 123456789
+
+      }
+
+    }
+
+  ],
+
+  "alertStrategy": {
+
+    "autoClose": "604800s"
+
+  },
+
+  "combiner": "OR",
+
+  "enabled": true,
+
+  "notificationChannels": [
+
+    "projects/gag-b973f/notificationChannels/10425694080148722863",
+
+    "projects/gag-b973f/notificationChannels/10881061688669236410",
+
+    "projects/gag-b973f/notificationChannels/14187659958343052080",
+
+    "projects/gag-b973f/notificationChannels/15636924456278779470",
+
+    "projects/gag-b973f/notificationChannels/17483871700578015015",
+
+    "projects/gag-b973f/notificationChannels/17745083377686722894",
+
+    "projects/gag-b973f/notificationChannels/18238850162838531426",
+
+    "projects/gag-b973f/notificationChannels/5266089011083664939",
+
+    "projects/gag-b973f/notificationChannels/5965858331220268529",
+
+    "projects/gag-b973f/notificationChannels/775413401617332006",
+
+    "projects/gag-b973f/notificationChannels/9104023471078625182",
+
+    "projects/gag-b973f/notificationChannels/11267243014430744996",
+
+    "projects/gag-b973f/notificationChannels/11267243014430746933",
+
+    "projects/gag-b973f/notificationChannels/11616352976723288944",
+
+    "projects/gag-b973f/notificationChannels/17186015621369798577",
+
+    "projects/gag-b973f/notificationChannels/18177688190647189512",
+
+    "projects/gag-b973f/notificationChannels/2878304274712799102",
+
+    "projects/gag-b973f/notificationChannels/5753803705288770800",
+
+    "projects/gag-b973f/notificationChannels/775413401617331968",
+
+    "projects/gag-b973f/notificationChannels/5788040613493160015",
+
+    "projects/gag-b973f/notificationChannels/7956732077614589488"
+
+  ]
+
+} }}
+
+    # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
+    - name: Terraform Init
+      run: terraform init
+
+    # Checks that all Terraform configuration files adhere to a canonical format
+    - name: Terraform Format
+      run: terraform fmt -check
+
+    # Generates an execution plan for Terraform
+    - name: Terraform Plan
+      run: terraform plan -input=false
+
+      # On push to "master", build or change infrastructure according to Terraform configuration files
+      # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
+    - name: Terraform Apply
+      if: github.ref == 'refs/heads/"master"' && github.event_name == 'push'
+      run: terraform apply -auto-approve -input=false
