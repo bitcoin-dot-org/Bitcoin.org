@@ -1,0 +1,24 @@
+name: Reporter Node Lint
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+      - name: Install dependencies
+        run: npm ci
+      - name: Install dev dependencies
+        run: npm install --only=dev
+      - name: Run lint script
+        run: npm run lint

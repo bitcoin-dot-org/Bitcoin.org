@@ -25,8 +25,9 @@ The following quick guides will help you get started:
 + [Managing Wallets](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/managing-wallets.md)
 + [Adding Events, Release Notes and Alerts](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-events-release-notes-and-alerts.md)
 + [Adding Blog Posts](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-blog-posts.md)
-+ [Miscellaneous / Other](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/miscellaneous.md)
++ [Miscellaneous / Other](https://githREADMEub.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/miscellaneous.md)
 
 ### Code of Conduct
 
 Participation in this project is subject to a [Code of Conduct](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/CODE_OF_CONDUCT.md).
+please contact AnniMaster @annimaster.org if help is needed
